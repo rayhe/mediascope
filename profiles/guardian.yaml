@@ -42,17 +42,23 @@ editorial_leadership:
 
 key_journalists:
   - name: "Alex Hern"
-    beat: "Technology editor"
-    known_patterns: "Critical of Big Tech, surveillance, AI hype"
+    beat: "UK technology editor"
+    known_patterns: "Critical of Big Tech, surveillance, AI hype. 12+ year tenure."
   - name: "Dan Milmo"
     beat: "Global technology editor"
-    known_patterns: "EU tech regulation, social media harms"
-  - name: "Kiran Stacey"
-    beat: "US tech policy"
-    known_patterns: "Antitrust, regulation"
+    known_patterns: "EU tech regulation, social media harms, AI policy"
+  - name: "Blake Montgomery"
+    beat: "US technology editor"
+    known_patterns: "US tech news editing. Previously at Gizmodo, Daily Beast, BuzzFeed News. Stanford BA."
+  - name: "Johana Bhuiyan"
+    beat: "Tech accountability, surveillance of marginalized communities"
+    known_patterns: "Investigative work on surveillance tech used against BIPOC, Muslim, immigrant communities. ICE surveillance investigations. Previously at LA Times, Recode, BuzzFeed News."
   - name: "Julia Carrie Wong"
-    beat: "Technology and society (former)"
-    known_patterns: "Facebook criticism, misinformation"
+    beat: "Technology and society (former, left tech beat 2021)"
+    known_patterns: "Facebook criticism, whistleblowers (Sophie Zhang), misinformation, Myanmar genocide coverage. Still at Guardian on other beats."
+  - name: "Kari Paul"
+    beat: "Technology (former, departed 2024)"
+    known_patterns: "Meta, Elon Musk, AI, social media, privacy. West Coast bureau. Left for art school in Paris."
 
 known_conflicts:
   - type: "editorial_bias"
@@ -114,7 +120,48 @@ editorial_history:
       role: "editor"
       beat: "global technology"
       notes: "Internal promotion to global tech editor."
+    - journalist: "Johana Bhuiyan"
+      from: "Los Angeles Times"
+      date: "2021-08"
+      role: "senior_editor"
+      beat: "tech accountability, surveillance"
+      notes: "Senior tech reporter and editor, Guardian US. Specializes in surveillance of marginalized communities."
+    - journalist: "Blake Montgomery"
+      from: "Gizmodo"
+      date: "2023-09"
+      role: "editor"
+      beat: "US technology"
+      notes: "US tech editor. Previously deputy editor/tech news editor at Gizmodo, reporter at Daily Beast and BuzzFeed News."
+    - journalist: "Samantha Oltman"
+      from: "Good Luck Media"
+      date: "2026-02"
+      role: "editor"
+      beat: "AI, future of work"
+      notes: "Led 'Reworked' AI/work series. Former Recode EIC, Vox editorial director. Very brief tenure — left for Bloomberg June 2026."
 
-  notable_departures: []
+  notable_departures:
+    - journalist: "Julia Carrie Wong"
+      to: "Guardian (other beats)"
+      date: "2021-06"
+      notes: "Left tech beat to cover other topics. 6-year tech tenure. Known for Facebook whistleblower/Sophie Zhang coverage."
+    - journalist: "Kari Paul"
+      to: "Paris College of Art (MFA)"
+      date: "2024-06"
+      notes: "Left journalism for art school. 5-year tenure as West Coast tech reporter."
+    - journalist: "Hibaq Farah"
+      to: "New York Times (Opinion, audience editor)"
+      date: "2024-01"
+      notes: "Brief UK tech reporter stint (~6 months). Led TikTok moderation investigation. Scott Trust Bursary recipient."
+    - journalist: "Samantha Oltman"
+      to: "Bloomberg (editor, AI/VC/startups)"
+      date: "2026-06"
+      notes: "Left after only ~4 months to join Bloomberg under Sarah Frier. Started June 15, 2026. Guardian's Reworked AI series left without its founding editor."
 
-  notes: "The Guardian is useful as a CONTROL CASE for editorial history analysis because of exceptional leadership stability (Viner since 2015) and low journalist turnover on the tech desk. Alex Hern has been tech editor since 2013."
+  notes: |
+    The Guardian tech desk has experienced significant turnover 2021-2026: Julia Carrie Wong
+    left tech beat (2021), Kari Paul departed entirely (2024), Hibaq Farah left for NYT (2024),
+    and Samantha Oltman's "Reworked" AI series lost its founding editor after only 4 months (2026).
+    Core stability comes from Alex Hern (UK, since 2013) and Dan Milmo (global, since 2021).
+    Blake Montgomery (US editor, since 2023) and Johana Bhuiyan (US reporter, since 2021) now
+    anchor the US desk. NOTE: Kiran Stacey is the Guardian's UK POLICY editor covering British
+    politics — NOT a tech reporter. Previously incorrectly listed as "US tech policy."

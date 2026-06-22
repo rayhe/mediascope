@@ -48,6 +48,20 @@ _GUILT_BY_ASSOCIATION_PATTERNS: list[re.Pattern] = [
         r"\b(?:has|have|had) (?:close |deep )?(?:ties|links|connections?) (?:to|with)\b",
         re.IGNORECASE,
     ),
+    # Military/intelligence credential stacking — listing multiple defense/intel
+    # affiliations to create an ominous impression
+    re.compile(
+        r"\b(?:former (?:CIA|FBI|NSA|Pentagon|military|intelligence|defense|DIA|NRO))\b"
+        r".{0,120}?"
+        r"\b(?:former (?:CIA|FBI|NSA|Pentagon|military|intelligence|defense|DIA|NRO))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "Pentagon supplier" / "government contractor" as loaded association
+    re.compile(
+        r"\b(?:Pentagon|military|defense|intelligence|government)\s+"
+        r"(?:supplier|contractor|vendor|partner)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _ANONYMOUS_AUTHORITY_PATTERNS: list[re.Pattern] = [
@@ -185,6 +199,90 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"(?:so-called|self-proclaimed|self-styled|self-described)\s+\w+",
         re.IGNORECASE,
     ),
+    # Surveillance/security-state language applied to commercial entities
+    re.compile(
+        r"\b(?:surveillance|wiretap|spying|spy|mass.?identification|"
+        r"biometric|facial recognition|face.?recognition|faceprint|"
+        r"tracking|monitor(?:ing)?|eavesdrop(?:ping)?)\b"
+        r".{0,60}?"
+        r"\b(?:consumer|commercial|app|phone|device|glasses|product)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "Quietly" as editorial signal of secrecy
+    re.compile(
+        r"\b(?:quietly|secretly|covertly|surreptitiously|"
+        r"without (?:notice|disclosure|announcing|telling)|"
+        r"behind (?:closed doors|the scenes))\b",
+        re.IGNORECASE,
+    ),
+    # "Dormant" / hidden capability language
+    re.compile(
+        r"\b(?:dormant|hidden|buried|unreleased|inactive|"
+        r"undisclosed|unannounced|under.?the.?radar)\b",
+        re.IGNORECASE,
+    ),
+]
+
+
+# Refusal-to-comment amplification: editorial device highlighting non-cooperation
+_REFUSAL_AMPLIFICATION_PATTERNS: list[re.Pattern] = [
+    re.compile(
+        r"\b(?:declined? to comment|refused? to comment|"
+        r"would(?:n't| not) (?:say|comment|respond|answer|address|confirm|deny)|"
+        r"did not (?:respond|reply|answer|address)|"
+        r"could not be reached|"
+        r"say almost nothing|said almost nothing|"
+        r"declined? to answer)\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:no(?:t| )willing to|unwilling to)\s+(?:say|comment|explain|address|clarify|elaborate)\b",
+        re.IGNORECASE,
+    ),
+]
+
+# Military/government juxtaposition with consumer: editorial device
+_JUXTAPOSITION_PATTERNS: list[re.Pattern] = [
+    # Military/law enforcement juxtaposed with consumer context
+    re.compile(
+        r"\b(?:military|Pentagon|law enforcement|police|intelligence|"
+        r"surveillance|defense|government|FBI|CIA|NSA|"
+        r"special operations|marshals?)\b"
+        r".{0,120}?"
+        r"\b(?:consumer|mass.?market|commercial|everyday|"
+        r"everyone else|ordinary|public|civilian|retail)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    re.compile(
+        r"\b(?:consumer|mass.?market|commercial|everyday|"
+        r"everyone else|ordinary|public|civilian)\b"
+        r".{0,120}?"
+        r"\b(?:military|Pentagon|law enforcement|police|intelligence|"
+        r"surveillance|defense|government|FBI|CIA|NSA|"
+        r"special operations|marshals?)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+
+# Timeline implication: editorial technique suggesting cover-up or reactive behavior
+_TIMELINE_IMPLICATION_PATTERNS: list[re.Pattern] = [
+    # "deleted/removed/pulled X after Y reported/revealed"
+    re.compile(
+        r"\b(?:deleted?|removed?|pulled|scrubbed|stripped|purged)\b"
+        r".{0,80}?"
+        r"\b(?:after|once|when|following)\b"
+        r".{0,60}?"
+        r"\b(?:reported?|revealed?|published|discovered|exposed|found|uncovered)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "a day after" / "hours after" / "days after" pattern
+    re.compile(
+        r"\b(?:a day|hours?|days?|shortly|immediately|within)\s+"
+        r"(?:after|before|of)\b"
+        r".{0,60}?"
+        r"\b(?:reported?|revealed?|published|discovered|exposed|found)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
 ]
 
 
@@ -198,6 +296,9 @@ _DEVICE_PATTERNS: dict[str, list[re.Pattern]] = {
     "emotional_appeal": _EMOTIONAL_APPEAL_PATTERNS,
     "straw_man": _STRAW_MAN_PATTERNS,
     "loaded_language": _LOADED_LANGUAGE_PATTERNS,
+    "refusal_amplification": _REFUSAL_AMPLIFICATION_PATTERNS,
+    "juxtaposition": _JUXTAPOSITION_PATTERNS,
+    "timeline_implication": _TIMELINE_IMPLICATION_PATTERNS,
 }
 
 

@@ -96,6 +96,12 @@ key_journalists:
   - name: "Kate Knibbs"
     beat: "Culture, internet culture"
     known_patterns: "Cultural criticism of tech"
+  - name: "Dell Cameron"
+    beat: "National security, surveillance, privacy, Big Tech"
+    known_patterns: "Investigative reporting on surveillance tech, law enforcement use of data. Won Edward R. Murrow Award for Investigative Reporting. Consistently frames commercial tech through surveillance/military lens."
+  - name: "Dhruv Mehrotra"
+    beat: "Investigative data, surveillance tech, privacy"
+    known_patterns: "Computational journalism — builds tools to find and analyze datasets. Known for Epstein Island phone tracking, JD Vance Venmo, ShotSpotter investigations. Collaborative cobylines."
 
 known_conflicts:
   - type: "investment"

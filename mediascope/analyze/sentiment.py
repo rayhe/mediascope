@@ -32,6 +32,12 @@ ANONYMOUS_SOURCE_PATTERNS: list[re.Pattern] = [
     re.compile(r"\bsomeone (?:close to|briefed on|with knowledge)\b", re.IGNORECASE),
     re.compile(r"\binsiders?\b", re.IGNORECASE),
     re.compile(r"\ba (?:former|current) (?:employee|executive|official) who\b", re.IGNORECASE),
+    # Publication-as-source patterns (journalist withholding their own source)
+    re.compile(r"\b\w+ has learned\b", re.IGNORECASE),
+    re.compile(r"\bobtained by \w+\b", re.IGNORECASE),
+    re.compile(r"\breviewed by \w+\b", re.IGNORECASE),
+    re.compile(r"\ba source (?:with knowledge|close|familiar|briefed|told|said|confirmed)\b", re.IGNORECASE),
+    re.compile(r"\bmultiple sources (?:confirm|said|told)\b", re.IGNORECASE),
 ]
 
 # Named source patterns — look for "Name said", "said Name", "according to Name"
@@ -89,6 +95,10 @@ PASSIVE_FRAMING: list[str] = [
     "struggled", "stumbled", "faltered", "fumbled",
     "failed to", "refused to", "declined to comment",
     "came under fire", "was accused of", "was blamed for",
+    "would say almost nothing", "would not say",
+    "declined to answer", "declined to respond",
+    "quietly built", "quietly removed", "quietly deleted",
+    "secretly", "covertly", "surreptitiously",
 ]
 
 ACTIVE_FRAMING: list[str] = [

@@ -16,9 +16,11 @@ logger = logging.getLogger(__name__)
 # Default entity clusters: canonical name -> list of aliases/variants
 DEFAULT_ENTITY_CLUSTERS: dict[str, list[str]] = {
     "Meta": [
-        "Meta Platforms", "Facebook", "Instagram", "WhatsApp", "Threads",
-        "Mark Zuckerberg", "Zuckerberg", "Meta AI", "Reality Labs", "Oculus",
-        "Ray-Ban Meta",
+        "Meta", "Meta Platforms", "Facebook", "Instagram", "WhatsApp",
+        "Threads", "Mark Zuckerberg", "Zuckerberg", "Meta AI",
+        "Reality Labs", "Oculus", "Ray-Ban Meta", "Ray-Ban",
+        "Oakley smart glasses", "Andrew Bosworth", "Boz",
+        "Meta's smart glasses", "Meta's Ray-Ban",
     ],
     "Google": [
         "Alphabet", "Google", "YouTube", "DeepMind", "Waymo",
@@ -46,6 +48,16 @@ DEFAULT_ENTITY_CLUSTERS: dict[str, list[str]] = {
     ],
     "Palantir": [
         "Palantir", "Alex Karp", "Peter Thiel", "Palantir Technologies",
+    ],
+    "US Government": [
+        "Pentagon", "Department of Defense", "FBI", "CIA",
+        "NSA", "US Marshals Service", "US Special Operations Command",
+        "Naval Criminal Investigative Service", "NCIS",
+        "Commerce Department", "FTC",
+    ],
+    "Surveillance/Biometrics": [
+        "Rank One Computing", "Rank One", "Clearview AI", "Clearview",
+        "NEC", "Cognitec", "Idemia", "Palantir Technologies",
     ],
 }
 

@@ -59,6 +59,27 @@ editorial_changes:
       source_url: "https://www.theguardian.com/media/2015/mar/20/katharine-viner-guardian-editor-in-chief"
       notes: "Viner became the first female editor-in-chief of the Guardian. Under her leadership, the paper has taken a strongly critical stance on Big Tech and AI. Still serving as of 2026."
 
+    - position: "us_tech_editor"
+      outgoing: null
+      incoming: "Blake Montgomery"
+      date: "2023-09"
+      source_url: "https://talkingbiznews.com/they-re-hiring/guardian-hires-montgomery-to-be-us-tech-editor/"
+      notes: "New US tech editor role. Montgomery came from Gizmodo (previously Daily Beast, BuzzFeed News). Signals Guardian US investing in dedicated tech editorial leadership."
+
+    - position: "ai_series_editor"
+      outgoing: null
+      incoming: "Samantha Oltman"
+      date: "2026-02"
+      source_url: "https://www.editorandpublisher.com/stories/guardian-launches-reporting-initiative-ai-work-power,262263"
+      notes: "Hired to lead 'Reworked' year-long AI/work series. Former Recode EIC, Vox editorial director."
+
+    - position: "ai_series_editor"
+      outgoing: "Samantha Oltman"
+      incoming: null
+      date: "2026-06"
+      source_url: "https://talkingbiznews.com/they-re-hiring/bloomberg-hires-oltman-as-editor-for-ai-vc-and-startups/"
+      notes: "KEY EVENT: Oltman departed after only ~4 months for Bloomberg (editor for AI/VC/startups under Sarah Frier). Reworked series lost its founding editor mid-run. Tests Guardian's editorial resilience when a key hire departs quickly."
+
   atlantic:
     - position: "eic"
       outgoing: "James Bennet"
