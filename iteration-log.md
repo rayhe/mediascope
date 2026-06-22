@@ -4,6 +4,57 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-22 07:00 PT — Hour Type A: Article Deep Dive (Guardian Meta/Hay Festival Whistleblower)
+
+**Focus:** Guardian article on Meta silencing Facebook whistleblower Sarah Wynn-Williams at Hay Festival (Jun 1, 2026) — first non-Wired example.
+
+### What was improved:
+
+1. **New annotated example: Guardian Meta Whistleblower Hay Festival (Jun 1, 2026):**
+   - Reconstructed from 7+ secondary sources (ExecReview, Infralog, The Times, PPC Land, AOB News, Global Arbitration Review, LinkedIn Journalism Today)
+   - Full 8-dimension manual sentiment analysis: overall tone -0.45, emotional intensity 0.55
+   - 8 framing devices manually identified (loaded_language, emotional_appeal, power_asymmetry, timeline_implication, source_deployment, outsourced_intensity, refusal_by_absence, scene_setting)
+   - Source analysis: 100% anti-Meta named sources, 0% pro-Meta or neutral sources, no Meta spokesperson quote
+   - Conflict disclosure assessment: Guardian is the CONTROL CASE — no financial conflicts (Scott Trust non-profit structure), but structural competitive conflict exists. Cadwalladr's personal adversarial history with Meta undisclosed.
+   - First Guardian article in sample corpus — diversifies beyond Wired
+
+2. **Emotional language vocabulary expanded (+16 terms):**
+   - Legal/censorship/power-abuse terms: censorship, silenced, silencing, gagged, gag order, muzzled, hostage, hostage situation, despotic, tyranny, tyrannical, oppressive, oppression, trolling, intimidate, intimidation, bankrupt, bankruptcy, sanctioned, sanctions motion, punitive, chilling, chilling effect, suppress, suppression, retaliation, retaliatory, stifle, stifled
+   - These terms were completely absent from the emotional vocabulary, causing 0.0 emotional intensity on a clearly emotionally charged article
+
+3. **Passive framing vocabulary expanded (+13 patterns):**
+   - Legal silencing patterns: "forced to sit in silence", "unable to speak", "unable even to nod", "forced into silence", "sat in silence", "sit in silence", "threatened with bankruptcy", "threatened her", "on the eve of publication", "fines of", "formally sanctioned", "legal order", "legal restrictions", "mounting legal restrictions", "legal action", "emergency legal order", "emergency arbitration", "arbitration order", "sanctions motion"
+
+4. **Framing detection improvements (framing.py):**
+   - **Fixed catastrophizing false positive**: "end of" pattern now requires abstract/institutional objects (democracy, freedom, privacy, journalism, era, civilization) rather than matching any "end of" (was triggering on "end of the event")
+   - **New loaded_language patterns**: Legal censorship language (censorship, silenced, gagged, hostage situation, despotic, trolling, suppression, retaliation, chilling effect) — catches editorial language framing legal action as speech suppression
+   - **New loaded_language patterns**: Corporate-as-state framing (sovereign affect, assert their power, nation states, kings/emperors, bankruptcy, formally sanctioned, sanctions motion) — catches language comparing corporate power to government authority
+   - **New emotional_appeal patterns**: Sympathy-eliciting personal impact (moved to tears, standing ovation, act of solidarity, unable to speak/nod, threatened with bankruptcy) — catches emotional scenes designed to generate reader sympathy
+   - **New timeline_implication pattern**: "on the eve of" preemptive action constructions (on the eve of, on the verge of, just before, shortly before, the night before) followed by event nouns — classic editorial timing device suggesting suppression
+
+5. **Entity detection expanded (+1 cluster):**
+   - New "Whistleblowers/Critics" cluster: Sarah Wynn-Williams, Frances Haugen, Sophie Zhang, Christopher Wylie, Carole Cadwalladr, Tim Wu
+   - Critical for articles about corporate accountability where source identity determines framing
+
+6. **README updated**: Sample Output Gallery now includes the Guardian example with key findings.
+
+### Key findings from manual-vs-toolkit gap analysis:
+
+**Toolkit improvements:**
+- Emotional intensity: 0.0 → 1.0 (was completely blind to legal/censorship emotional vocabulary)
+- Framing devices: 1 false positive → 20 real detections (15 loaded_language, 4 emotional_appeal, 1 timeline_implication)
+- Entity detection: Meta-only → Meta (19) + Whistleblowers/Critics (16)
+
+**Remaining critical gaps:**
+1. **Source authority metric** scores 1.0 (all named) when the real issue is 100% adversarial source deployment — all 7 quotes are anti-Meta, with Meta getting only 1 passive paraphrase. The metric measures named/anonymous ratio, not whose authority is being invoked against whom.
+2. **Headline-body alignment** shows -1.0 (contradictory) when headline and body are perfectly aligned — VADER sign-conflict artifact when both are negative but at different magnitudes.
+3. **Comparative framing** misses political/power comparisons (Wu comparing corporations to "despotic nation states") — vocabulary only catches business competitor language.
+4. **Outsourced intensity** not detectable — journalistic technique of deploying emotional quotes from sources while maintaining measured editorial prose. The strongest language ("censorship", "despotic", "hostage", "asshole") all come from quotes, not the journalist.
+5. **Power asymmetry framing** not a recognized device type — article's core frame is $1.5T corporation crushing individual through legal machinery ($50K/breach, bankruptcy threat).
+
+### Commit: `94843f5`
+### Sources: ExecReview, Infralog, The Times (×2), PPC Land, AOB News, Global Arbitration Review, LinkedIn Journalism Today
+
 ## 2026-06-22 06:00 PT — Hour Type A: Article Deep Dive (Wired NameTag Investigation)
 
 **Focus:** Wired investigation into Meta embedding unreleased "NameTag" facial recognition system in Meta AI app for smart glasses (~June 5, 2026)
