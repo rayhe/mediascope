@@ -4,6 +4,91 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-22 09:00 PT — Hour Type C: MIT Technology Review Ownership & Funding Deep Dive
+
+**Focus:** Comprehensive ownership, governance, and institutional funding deep dive on MIT Technology Review — the publication with the thinnest existing profile and the most structurally complex conflict of interest among all 5 tracked publications.
+
+### What was improved:
+
+1. **Complete corporate structure documented from IRS 990 filings:**
+   - Technology Review Inc., 501(c)(3) nonprofit, EIN 95-4893200
+   - Revenue: $22.3M (FY2024 ending June 2024), $22.3M expenses, $6.5M total assets
+   - Revenue model: ~33% from events (CEO stated Digiday 2020), plus subscriptions, advertising/brand partnerships, custom content
+   - CEO/Publisher Elizabeth Bramson-Boudreau: $420K + $71K benefits (FY2024)
+   - EIC Mat Honan: $292K + $74K benefits (FY2024)
+   - Filing flags: "Provided first-class or charter travel" + "Reported conflict of interest transactions" in FY2024
+
+2. **MIT-controlled board of directors fully mapped:**
+   - 4 of 8 members are MIT administrators compensated $333K-$1.05M by MIT
+   - Cynthia Barnhart (Co-Chair, MIT Provost, $987K from MIT) — oversees academic partnerships with Google, Amazon, etc.
+   - David Schmittlein (Director, MIT Sloan Dean, $1.05M) — leads corporate education programs
+   - Glen Shor (Director, MIT EVP/Treasurer, $883K) — manages MIT's finances
+   - Whitney Espich (Director, $333K from MIT)
+   - 4 external members: Alan Spoon (Co-Chair), Josh Macht, Lara Boro, Peter Caruso (Clerk)
+   - **No structural editorial independence mechanism** (no Scott Trust, no dual-class shares)
+
+3. **Former board members with Epstein connections documented:**
+   - Joichi Ito (Director FY2018-2020) — resigned over Epstein funding scandal, was on TR board WHILE soliciting Epstein donations
+   - Israel Ruiz (Director FY2019-2020) — one of three MIT VPs who approved Epstein's post-conviction donations
+   - Martin Schmidt (Chair through FY2022) — MIT Provost tasked with investigating Epstein donations
+
+4. **MIT institutional research funding quantified:**
+   - $762M total research expenditures (FY2020), $174M (23%) from industry
+   - MIT-IBM Watson AI Lab: $240M/10yr ($90M to MIT directly), established 2017
+   - MIT Schwarzman College of Computing: $1.1B total, $350M from Stephen Schwarzman/Blackstone (2018), houses MIT-Google and MIT-Amazon programs
+   - MIT-Google Program for Computing Innovation: Up to $130K/project, must show "relevance to Google"
+   - MIT-Amazon Science Hub: Formal bilateral research hub
+   - MIT-SenseTime Alliance (2018): Chinese AI company, funded 27 research projects, LATER sanctioned by US (Entity List Oct 2019, CMIC list Dec 2021)
+   - Eric & Wendy Schmidt personal gift to MIT Intelligence Quest
+   - Meta: Funds MIT research through FAIR collaborations (reverse conflict — MIT parent RECEIVES Meta money)
+
+5. **robots.txt analysis (verified Jun 22, 2026):**
+   - Blocks 25+ named AI bots — one of the most aggressive blockers in the tracking set
+   - Full list: GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot, Claude-Web, anthropic-ai, Google-Extended, Google-CloudVertexBot, Meta-ExternalAgent, Meta-ExternalFetcher, FacebookBot, Amazonbot, Applebot-Extended, PerplexityBot, CCBot, cohere-ai, Bytespider, DuckAssistBot, Diffbot, YouBot, and more
+   - No known AI licensing deals
+   - Blocks EVERY major AI company's bot — including those that fund MIT research
+
+6. **Mat Honan career history expanded:**
+   - Wired senior writer/columnist → BuzzFeed News executive editor (SF bureau chief, led to Pulitzer 2021) → MIT TR EIC (Aug 17, 2021)
+   - Three-institution chain creates editorial culture bridge analysis opportunity
+
+7. **Gideon Lichfield career history added (new):**
+   - Quartz founding editor → MIT TR EIC (2017-2020) → Wired EIC (2020-2023)
+   - HIGHEST-VALUE MIGRATION IN DATASET: same person leading two tracked publications sequentially
+   - Enables direct DiD regression to decompose individual from institutional editorial effects
+
+8. **Jason Pontin → Bramson-Boudreau CEO transition documented:**
+   - Pontin was President/Publisher/CEO ($515K on FY2018 990)
+   - Bramson-Boudreau took over ~Oct 2017 from Atlantic Media/Economist Group background
+   - Drove digital-first strategy and event revenue expansion
+
+9. **Editorial changes updated:**
+   - Added Pontin → Bramson-Boudreau publisher/CEO transition (2017-10)
+   - Updated Lichfield hire date and details
+   - Updated Honan hire with correct Aug 2021 start date and compensation from 990
+
+10. **Analytical framework significantly advanced:**
+    - Identified MIT TR as MOST STRUCTURALLY CONFLICTED publication despite appearing least so
+    - Conflict type is COOPERATIVE (parent receives money FROM covered companies) vs COMPETITIVE (Wired's parent owns Meta's competitor)
+    - No structural editorial independence mechanism — board controlled by MIT administrators whose primary jobs require maintaining corporate funding relationships
+    - Key testable hypothesis: Does MIT TR coverage of companies that fund MIT differ from coverage of companies that don't?
+
+### Key discovery:
+- **MIT Technology Review's conflicts are the inverse of Wired's.** Wired/Condé Nast has COMPETITIVE conflicts (Advance owns Reddit, a Meta competitor; has AI deals with OpenAI, Amazon, Apple — all Meta competitors). MIT TR has COOPERATIVE conflicts (MIT RECEIVES money FROM Google, Amazon, IBM, Microsoft, Apple, Meta — all companies MIT TR covers). This means the expected bias direction is opposite: Wired has incentive to cover Meta negatively, while MIT TR has incentive (structurally, not editorially) to SOFTEN coverage of its parent's funders. The toolkit should be able to detect this through sentiment asymmetry analysis comparing coverage of MIT funders vs non-funders.
+
+### Sources:
+- ProPublica Nonprofit Explorer: Technology Review Inc. Form 990 filings FY2018-2024
+- MIT Facts: Research Expenditures FY2020
+- MIT Schwarzman College of Computing: Industry Programs page
+- MIT News: IBM Watson AI Lab announcement (Sep 2017), Schwarzman College announcement (Oct 2018), SenseTime Alliance announcement (Feb 2018), Eric Schmidt gift (May 2018), Epstein fact-finding release (Jan 2020)
+- MIT Technology Review: Ito resignation coverage, Epstein report coverage, Honan hire announcement
+- Digiday: Bramson-Boudreau interview on event revenue (Apr 2020)
+- Talking Biz News: Honan hire announcement
+- Mission.org: Bramson-Boudreau interview on editorial independence
+- technologyreview.com/robots.txt: Direct verification (Jun 22, 2026)
+- Wikipedia: MIT Schwarzman College of Computing
+- Blackstone.com: Schwarzman biography
+
 ## 2026-06-22 07:00 PT — Hour Type A: Article Deep Dive (Guardian Meta/Hay Festival Whistleblower)
 
 **Focus:** Guardian article on Meta silencing Facebook whistleblower Sarah Wynn-Williams at Hay Festival (Jun 1, 2026) — first non-Wired example.

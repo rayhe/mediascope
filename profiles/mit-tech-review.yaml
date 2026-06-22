@@ -6,84 +6,287 @@ rss_feeds:
   - url: "https://www.technologyreview.com/feed/"
     category: "main"
 
+corporate_structure:
+  legal_entity: "Technology Review Inc."
+  ein: "95-4893200"
+  nonprofit_status: "501(c)(3)"
+  category: "Arts, Culture and Humanities / Printing, Publishing (NTEE)"
+  incorporated: "2001"
+  description: "Nonprofit independent media company owned by MIT. Tax-deductible donations accepted. Founded 1899 at MIT, restructured as Technology Review Inc. in 2001."
+  source_url: "https://projects.propublica.org/nonprofits/organizations/954893200"
+
 ownership_chain:
-  - name: "MIT Technology Review"
+  - name: "Technology Review Inc."
     entity_type: "publisher"
-    description: "Founded 1899. Oldest technology publication. Published by MIT."
+    description: "501(c)(3) nonprofit media company. $22.3M revenue (FY2024, ending June 2024). ~1/3 of revenue from events (CEO Bramson-Boudreau, Digiday 2020). Editorially independent from MIT per stated policy. Provides first-class/charter travel to key employees. Reports conflict-of-interest transactions per FY2024 990 filing."
+    source_url: "https://projects.propublica.org/nonprofits/organizations/954893200"
   - name: "Massachusetts Institute of Technology"
-    entity_type: "parent_company"
-    description: "MIT receives massive AI industry funding from Google ($500M+), Microsoft, Amazon, Apple, Meta, and other tech companies for research labs. Creates paradox: institutional parent benefits from AI industry while publication runs adversarial coverage."
+    entity_type: "parent_institution"
+    description: "Private research university. Endowment ~$27.4B (FY2024). Total research expenditures $762M (FY2020), with $174M (23%) from industry sponsors. Receives massive AI/tech industry funding through research labs, corporate partnerships, and philanthropic gifts. MIT controls Technology Review Inc.'s board — majority of directors are MIT administrators compensated by MIT."
+    source_url: "https://facts.mit.edu"
+
+financial_data:
+  revenue_history:
+    - year: "FY2024"
+      revenue: "$22.3M"
+      expenses: "$22.3M"
+      total_assets: "$6.5M"
+      total_liabilities: "$6.5M"
+      source: "ProPublica Nonprofit Explorer, Form 990 filed May 15, 2025"
+  revenue_model:
+    events_share: "~33% (CEO stated 2020)"
+    other_streams: "Subscriptions, advertising/brand partnerships, custom content, licensing"
+    source_url: "https://digiday.com/media/how-mit-technology-review-shifted-its-largest-event-to-streaming/"
+  key_compensation_fy2024:
+    - name: "Elizabeth Bramson-Boudreau"
+      title: "President, Publisher & CEO"
+      base: "$420,529"
+      other: "$71,239"
+    - name: "Miles Weiner"
+      title: "Advertising & Sales Administrator"
+      base: "$352,943"
+      other: "$15,460"
+    - name: "Mat Honan"
+      title: "Editor in Chief"
+      base: "$291,916"
+      other: "$74,299"
+    - name: "Andrew Hendler"
+      title: "VP of Sales and Brand Partnerships"
+      base: "$288,599"
+      other: "$23,661"
+    - name: "Marii Sebahar"
+      title: "Executive Director, Brand Partnerships"
+      base: "$260,067"
+      other: "$39,409"
+    - name: "Amy Lammers"
+      title: "Senior VP of Events and Strategic Partnerships"
+      base: "$194,772"
+      other: "$50,775"
+
+board_of_directors:
+  description: "MIT-controlled board. Majority of directors are MIT senior administrators receiving compensation from MIT, not from Technology Review Inc. itself. This means MIT's institutional interests — including its dependence on tech industry funding — are structurally represented in the publication's governance."
+  current_members:
+    - name: "Alan Spoon"
+      role: "Co-Chair"
+      mit_compensation: "$0"
+      external: true
+      notes: "Former president of Polaris Partners. Former president of Washington Post division. Provides external governance perspective."
+    - name: "Cynthia Barnhart"
+      role: "Co-Chair"
+      mit_compensation: "$987,284 (FY2024)"
+      external: false
+      notes: "MIT Provost. Second-highest academic officer at MIT. Her MIT role makes her structurally aware of (and potentially sensitive to) MIT's corporate research funding relationships."
+    - name: "David Schmittlein"
+      role: "Director"
+      mit_compensation: "$1,051,561 (FY2024)"
+      external: false
+      notes: "MIT Sloan School of Management Dean. Sloan has extensive corporate partnerships and executive education programs with tech companies."
+    - name: "Glen Shor"
+      role: "Director"
+      mit_compensation: "$883,134 (FY2024)"
+      external: false
+      notes: "MIT Executive Vice President and Treasurer. Responsible for MIT's financial operations, including managing relationships with corporate funders."
+    - name: "Josh Macht"
+      role: "Director"
+      mit_compensation: "$0"
+      external: true
+      notes: "External board member."
+    - name: "Lara Boro"
+      role: "Director"
+      mit_compensation: "$0"
+      external: true
+      notes: "External board member."
+    - name: "Whitney Espich"
+      role: "Director"
+      mit_compensation: "$333,374 (FY2024)"
+      external: false
+      notes: "MIT administrator. On the board since at least FY2017."
+    - name: "Peter Caruso"
+      role: "Clerk"
+      mit_compensation: "$0"
+      external: true
+      notes: "Legal clerk for the nonprofit."
+  former_notable_members:
+    - name: "Joichi Ito"
+      role: "Director (FY2018-2020)"
+      departure_reason: "Resigned as MIT Media Lab director September 2019 over Jeffrey Epstein funding scandal. Was on Technology Review Inc. board while actively soliciting Epstein donations to MIT."
+      source_url: "https://www.technologyreview.com/2019/09/07/133044/joi-ito-director-of-mit-media-lab-resigns-over-ties-to-jeffrey-epstein/"
+    - name: "Israel Ruiz"
+      role: "Director (FY2019-2020)"
+      departure_reason: "Was one of three MIT VPs who approved Epstein's post-conviction donations under an 'informal framework.' Continued to serve on Technology Review board after this became public."
+      source_url: "https://news.mit.edu/2020/mit-releases-results-fact-finding-jeffrey-epstein-0110"
+    - name: "Martin Schmidt"
+      role: "Chair (through FY2022)"
+      departure_reason: "MIT Provost who was asked by President Reif to convene group to examine Epstein donation facts. Became chair of Technology Review board during/after the Epstein scandal."
+    - name: "Sanjay Sarma"
+      role: "Director (FY2022-2023)"
+      mit_compensation: "$515,061 (FY2023)"
+      departure_reason: "MIT VP for Open Learning. Left board after FY2023."
+
+mit_corporate_research_partnerships:
+  description: "MIT's institutional parent receives hundreds of millions in industry funding annually, primarily from the same tech companies MIT Technology Review covers. The Schwarzman College of Computing hosts formal bilateral research programs with Google, Amazon, and others. These create structural conflicts even though the publication claims editorial independence."
+  total_industry_research: "$174M (23% of $762M total, FY2020)"
+  source_url: "https://facts.mit.edu"
+  major_partnerships:
+    - name: "MIT-IBM Watson AI Lab"
+      amount: "$240M over 10 years"
+      established: "2017-09"
+      description: "One of largest long-term university-industry AI collaborations. 100+ researchers. IBM funds $240M total, $90M to MIT directly. Co-chaired by MIT Engineering Dean and IBM Research VP."
+      source_url: "https://news.mit.edu/2017/ibm-mit-joint-research-artificial-intelligence-0907"
+      relevance: "IBM is a technology company MIT TR covers. $90M flows directly to MIT researchers."
+    - name: "MIT Schwarzman College of Computing"
+      amount: "$1.1B total commitment ($350M from Stephen Schwarzman/Blackstone)"
+      established: "2018-10"
+      description: "New MIT college, first structural change since 1950s. 50 new faculty positions. Houses industry programs including MIT-Amazon and MIT-Google. Dean: Daniel Huttenlocher."
+      source_url: "https://news.mit.edu/2018/mit-reshapes-itself-shape-future-1015"
+      relevance: "Schwarzman/Blackstone is one of the world's largest private equity firms ($1T+ AUM). Structural anchor of MIT's AI/computing enterprise. College hosts formal partnerships with companies MIT TR covers."
+    - name: "MIT-Google Program for Computing Innovation"
+      amount: "Up to $130K per project (seed grants)"
+      established: "Ongoing"
+      description: "Hosted by MIT Schwarzman College. Google collaborators work directly with MIT faculty. Funded via unrestricted gift. Projects must show 'relevance to Google.'"
+      source_url: "https://computing.mit.edu/cross-cutting/industry-programs/"
+      relevance: "Google/Alphabet is a major tech company MIT TR covers. Projects must explicitly demonstrate Google relevance to receive funding."
+    - name: "MIT-Amazon Science Hub"
+      amount: "Undisclosed"
+      established: "Ongoing"
+      description: "Hosted by MIT Schwarzman College. Generates new computing/AI tools via MIT-Amazon collaboration."
+      source_url: "https://computing.mit.edu/cross-cutting/industry-programs/"
+      relevance: "Amazon is a major tech company MIT TR covers."
+    - name: "MIT-SenseTime Alliance on AI"
+      amount: "Undisclosed"
+      established: "2018-02"
+      description: "Chinese AI company partnered with MIT Intelligence Quest. Funded 27 research projects across all five MIT schools. SenseTime was subsequently placed on US Entity List (Oct 2019) for enabling human rights violations in Xinjiang, and US Treasury CMIC list (Dec 2021). Alliance status unclear post-sanctions."
+      source_url: "https://news.mit.edu/2018/mit-sensetime-announce-effort-advance-artificial-intelligence-research-0228"
+      relevance: "MIT partnered with a company later sanctioned for mass surveillance. MIT TR covered the Epstein scandal at MIT but relationship with SenseTime received less scrutiny."
+    - name: "Eric & Wendy Schmidt (former Google/Alphabet)"
+      amount: "Undisclosed"
+      established: "2018"
+      description: "Former Alphabet executive chairman and wife provided unrestricted support to MIT Intelligence Quest Fund. Eric Schmidt was deeply embedded in MIT AI governance."
+      source_url: "https://news.mit.edu/2018/eric-schmidt-provides-support-mit-intelligence-quest-0501"
+      relevance: "Former Google CEO personally funding MIT's AI initiative while MIT TR covers Google."
+  meta_relationship:
+    partner: "Meta"
+    amount: "Significant (unspecified)"
+    description: "Meta funds MIT research programs, including FAIR collaborations. Meta AI Research (FAIR) has published extensively with MIT researchers. Unlike some other publications, MIT TR's institutional parent has a DIRECT financial relationship with Meta through research funding."
+    competitive_note: "Unlike Wired (whose parent Advance has zero Meta relationship), MIT's parent institution receives Meta research funding — which creates a reverse conflict: potential softening rather than hardening of coverage."
 
 revenue_relationships:
-  - partner: "Google"
+  - partner: "Google/Alphabet"
     relationship_type: "institutional_funding"
-    estimated_value: "$500M+ (to MIT labs)"
-    description: "Google has given $500M+ to MIT research labs. MIT Tech Review operates editorially independent but institutional parent depends on Google funding."
-    date_established: "ongoing"
-    source_url: ""
+    estimated_value: "Millions annually (MIT-Google Program + individual grants + Schmidt personal gift)"
+    description: "Google funds MIT research through the MIT-Google Program for Computing Innovation (Schwarzman College), individual research grants, and the personal philanthropy of former CEO Eric Schmidt. Google-funded research requires demonstrating 'relevance to Google.'"
+    date_established: "Ongoing, formalized ~2018"
+    source_url: "https://computing.mit.edu/cross-cutting/industry-programs/"
+  - partner: "IBM"
+    relationship_type: "institutional_funding"
+    estimated_value: "$240M/10yr ($90M to MIT directly)"
+    description: "MIT-IBM Watson AI Lab is the cornerstone MIT AI partnership. IBM's $90M flows directly to MIT researchers. Coverage of IBM is structurally complicated."
+    date_established: "2017-09"
+    source_url: "https://news.mit.edu/2017/ibm-mit-joint-research-artificial-intelligence-0907"
   - partner: "Microsoft"
     relationship_type: "institutional_funding"
-    estimated_value: "significant"
-    description: "Microsoft funds MIT research programs."
-    date_established: "ongoing"
+    estimated_value: "Significant (unspecified)"
+    description: "Microsoft funds MIT research programs. Bill Gates' $7.5M donation channeled through Epstein to MIT Media Lab (per New Yorker investigation) adds a layer of controversy."
+    date_established: "Ongoing"
     source_url: ""
   - partner: "Amazon"
     relationship_type: "institutional_funding"
-    estimated_value: "significant"
-    description: "Amazon funds MIT research programs, including robotics and AI."
-    date_established: "ongoing"
+    estimated_value: "Significant (MIT-Amazon Science Hub)"
+    description: "Amazon has a formal bilateral research hub at MIT Schwarzman College of Computing."
+    date_established: "Ongoing"
+    source_url: "https://computing.mit.edu/cross-cutting/industry-programs/"
+  - partner: "Apple"
+    relationship_type: "institutional_funding"
+    estimated_value: "Significant (unspecified)"
+    description: "Apple funds MIT research programs."
+    date_established: "Ongoing"
     source_url: ""
   - partner: "Meta"
     relationship_type: "institutional_funding"
-    estimated_value: "significant"
-    description: "Meta funds MIT research programs, including FAIR collaborations."
-    date_established: "ongoing"
+    estimated_value: "Significant (FAIR collaborations)"
+    description: "Meta funds MIT research programs including FAIR AI research collaborations."
+    date_established: "Ongoing"
     source_url: ""
-  - partner: "Apple"
-    relationship_type: "institutional_funding"
-    estimated_value: "significant"
-    description: "Apple funds MIT research programs."
-    date_established: "ongoing"
-    source_url: ""
+  - partner: "Stephen Schwarzman / Blackstone"
+    relationship_type: "philanthropic_gift"
+    estimated_value: "$350M"
+    description: "Founding gift for MIT Schwarzman College of Computing. Blackstone is the world's largest alternative asset manager ($1T+ AUM). The college is named after Schwarzman. This is the largest single gift in MIT's AI/computing history."
+    date_established: "2018-10"
+    source_url: "https://news.mit.edu/2018/mit-reshapes-itself-shape-future-1015"
+  - partner: "Emtech Sponsors (2026)"
+    relationship_type: "event_sponsorship"
+    estimated_value: "Undisclosed (events ~33% of revenue)"
+    description: "EmTech AI 2026 Presenting Partners: HPE, Ascendion, GC Cybersecurity. Additional: Box, Samsung Next, Micron, MIT Professional Education, IDEO, MIT Museum. 400 attendee limit. Contact: Andrew Hendler (VP Sales, also highest-paid sales exec on 990)."
+    date_established: "Annual"
+    source_url: "https://event.technologyreview.com/emtech-ai-2025"
 
 editorial_leadership:
+  - name: "Elizabeth Bramson-Boudreau"
+    title: "President, Publisher & CEO"
+    start: "2018"
+    editorial_stance: "Business-focused leadership. Previously at Atlantic Media, The Economist Group. Stated 'MIT owns us but we're entirely independent from them' (Mission.org interview). Drove event revenue expansion."
+    source_url: "https://mission.org"
+    compensation: "$420,529 + $71,239 (FY2024 990)"
   - name: "Mat Honan"
     title: "Editor-in-Chief"
-    editorial_stance: "Focus on AI regulation and safety. Previously editor at BuzzFeed and Wired."
+    start: "2021-08"
+    editorial_stance: "KEY MIGRATION: Wired senior writer/columnist → BuzzFeed News executive editor (opened SF bureau, led tech desk to Pulitzer Prize 2021) → MIT TR EIC. The Wired connection creates a potential editorial culture bridge, though MIT TR's institutional structure is fundamentally different from Condé Nast's."
+    source_url: "https://www.technologyreview.com/2021/06/22/1026816/mat-honan-joins-mit-technology-review-editor-in-chief/"
+    compensation: "$291,916 + $74,299 (FY2024 990)"
+  - name: "Michael Reilly"
+    title: "Executive Editor (through FY2022)"
+    start: "Unknown"
+    editorial_stance: "Listed on FY2022 990 at $223,578. No longer listed FY2023. Departure not publicly announced."
+    compensation: "$223,578 + $15,786 (FY2022 990)"
 
 key_journalists:
   - name: "Melissa Heikkilä"
     beat: "AI policy, EU regulation"
-    known_patterns: "EU AI Act focus, regulation advocacy"
+    known_patterns: "EU AI Act focus, regulation advocacy. Senior AI reporter. Previously at POLITICO Europe (2022)."
   - name: "James O'Donnell"
     beat: "AI research"
     known_patterns: "AI safety, research ethics"
   - name: "Will Douglas Heaven"
     beat: "AI"
-    known_patterns: "AI capabilities and risks"
+    known_patterns: "AI capabilities and risks. Executive editor (editorial)."
   - name: "Rhiannon Williams"
     beat: "AI applications"
     known_patterns: "The Download newsletter, AI news"
   - name: "Karen Hao"
-    beat: "AI (former, now at The Atlantic)"
-    known_patterns: "Highly adversarial AI beat. Internal Meta AI ethics investigation. Left for The Atlantic."
+    beat: "AI (former, departed 2022 for The Atlantic)"
+    known_patterns: "Highly adversarial AI beat. Wrote landmark 'How Facebook got addicted to spreading misinformation' (2021) based on internal Meta AI ethics investigation. Departure is key test case for individual-vs-institutional bias."
 
 known_conflicts:
-  - type: "institutional"
-    description: "PARADOX CASE: MIT receives massive funding from every major AI company (Google $500M+, Microsoft, Amazon, Apple, Meta). MIT Tech Review covers these companies' AI work critically. This creates a paradox where the parent institution benefits financially from the industry the publication scrutinizes."
+  - type: "institutional_governance"
+    description: "MIT administrators who control Technology Review Inc.'s board are simultaneously responsible for managing MIT's corporate research funding relationships with the same companies the publication covers. MIT Provost Cynthia Barnhart (board Co-Chair, $987K from MIT) oversees academic relationships including those with Google, Amazon, IBM. MIT EVP/Treasurer Glen Shor ($883K, board Director) manages MIT's financial operations. MIT Sloan Dean David Schmittlein ($1.05M, board Director) leads a school with extensive corporate partnerships. There is no structural firewall equivalent to the Scott Trust (Guardian) or dual-class shares (NYT)."
+    severity: 4
+    evidence: "Form 990 filings (ProPublica Nonprofit Explorer). Board composition shows 4 of 8 members are MIT administrators compensated $333K-$1.05M by MIT."
+    source_url: "https://projects.propublica.org/nonprofits/organizations/954893200"
+  - type: "institutional_funding_paradox"
+    description: "MIT receives $174M+ annually from industry research sponsors (23% of total research expenditures). Named bilateral partnerships exist with Google (MIT-Google Program), Amazon (MIT-Amazon Science Hub), IBM ($240M Watson Lab), and others — all companies MIT TR covers critically. The publication claims editorial independence but its parent institution depends structurally on these relationships. Unlike Wired/Condé Nast (where the conflict is competitive — Advance owns Meta's competitor Reddit), MIT TR's conflict is COOPERATIVE — MIT's parent takes money FROM the companies being covered."
+    severity: 4
+    evidence: "MIT Facts FY2020 research expenditures. MIT Schwarzman College industry programs page. MIT-IBM Watson AI Lab announcement."
+    source_url: "https://facts.mit.edu"
+  - type: "epstein_governance_scandal"
+    description: "Three former Technology Review Inc. board members were directly connected to the MIT-Epstein scandal: (1) Joichi Ito (board FY2018-2020) actively solicited $525K from Epstein for Media Lab and $1.2M for personal ventures, resigned Sept 2019; (2) Israel Ruiz (board FY2019-2020) was one of three MIT VPs who approved Epstein's post-conviction donations under an 'informal framework'; (3) Martin Schmidt (Chair through FY2022) was the MIT Provost tasked with investigating the Epstein donations. MIT TR covered the scandal aggressively (Gideon Lichfield was EIC at the time) — but the fact that Ito and Ruiz sat on the publication's own board while the donations were happening is itself a governance failure."
     severity: 3
-    evidence: "MIT funding reports, research partnership announcements"
-    source_url: ""
-  - type: "editorial_bias"
-    description: "Karen Hao's 2021 internal Meta AI ethics investigation was a landmark adversarial piece. She departed for The Atlantic, establishing a pipeline of adversarial AI journalists between these publications."
+    evidence: "Form 990 filings show Ito and Ruiz as directors. Goodwin Procter 61-page report. MIT News release (Jan 2020). MIT TR's own coverage by Lichfield."
+    source_url: "https://news.mit.edu/2020/mit-releases-results-fact-finding-jeffrey-epstein-0110"
+  - type: "sensetime_partnership"
+    description: "MIT formed the MIT-SenseTime Alliance on AI in February 2018, funding 27 research projects across all five MIT schools. SenseTime was subsequently placed on the US Commerce Department Entity List in October 2019 for enabling human rights violations against Uyghurs in Xinjiang, and on the US Treasury CMIC list in December 2021. The MIT partnership with a company later sanctioned for mass surveillance raises questions about MIT's due diligence on corporate research partners — the same institution that claims editorial independence for its publication."
+    severity: 3
+    evidence: "MIT News announcement (Feb 2018). US Entity List addition (Oct 2019). US Treasury CMIC list (Dec 2021)."
+    source_url: "https://news.mit.edu/2018/mit-sensetime-announce-effort-advance-artificial-intelligence-research-0228"
+  - type: "event_sponsorship"
+    description: "EmTech conferences generate ~33% of MIT TR's revenue via tech company sponsorships. 2026 partners include HPE, Ascendion, GC Cybersecurity, Box, Samsung Next, Micron. VP of Sales Andrew Hendler ($289K) is the contact for sponsorships AND one of the highest-compensated employees. The publication covers companies that sponsor its events."
+    severity: 3
+    evidence: "CEO stated '~1/3 of revenue from events' (Digiday 2020). EmTech AI 2026 press release lists sponsors. Form 990 shows Hendler compensation."
+    source_url: "https://digiday.com/media/how-mit-technology-review-shifted-its-largest-event-to-streaming/"
+  - type: "editorial_pipeline"
+    description: "Mat Honan (EIC since Aug 2021) was a Wired senior writer and columnist before moving to BuzzFeed News. Gideon Lichfield (EIC 2017-2020) LEFT MIT TR to become Wired's EIC — the reverse of Karen Hao's departure path. Will Knight left MIT TR for Wired in 2018 after 13 years. These journalist migrations between MIT TR and Wired create editorial culture connections, though MIT TR's nonprofit/institutional structure is fundamentally different from Condé Nast's."
     severity: 2
-    evidence: "Published article, career trajectory"
-    source_url: ""
-  - type: "revenue"
-    description: "EmTech conferences generate revenue from tech company sponsorships while the publication covers those companies critically."
-    severity: 2
-    evidence: "EmTech sponsor lists"
-    source_url: ""
+    evidence: "Talking Biz News hire announcements. Muck Rack profiles."
+    source_url: "https://talkingbiznews.com/they-re-hiring/mit-tech-review-hires-honan-as-editor-in-chief/"
 
 litigation_connections: []
 
@@ -91,18 +294,37 @@ ai_crawl_policy:
   blocks_gptbot: true
   blocks_ccbot: true
   blocks_google_extended: true
-  notes: "Blocks most AI crawlers. No known AI licensing deals."
+  blocks_anthropic: true
+  blocks_meta: true
+  blocks_perplexity: true
+  blocks_amazon: true
+  blocks_apple_extended: true
+  notes: "One of the most aggressive AI crawler blockers among all 5 tracked publications. Blocks 25+ named AI bots including GPTBot, ChatGPT-User, OAI-SearchBot, ClaudeBot, Claude-Web, anthropic-ai, Google-Extended, Google-CloudVertexBot, Meta-ExternalAgent, Meta-ExternalFetcher, FacebookBot, Amazonbot, Applebot-Extended, PerplexityBot, CCBot, cohere-ai, Bytespider, DuckAssistBot, Diffbot, YouBot, and more. No known AI licensing deals. This stance is consistent with blocking every major AI company — including those that fund MIT research."
+  robots_txt_url: "https://www.technologyreview.com/robots.txt"
+  verified_date: "2026-06-22"
 
 target_entities:
   "Meta":
     aliases: ["Meta", "Facebook", "Instagram", "Mark Zuckerberg", "FAIR"]
     regex: "\\b(Meta(?! tag| data)|Facebook|Instagram|Zuckerberg|FAIR(?= research| lab))\\b"
   "Google":
-    aliases: ["Alphabet", "Google", "DeepMind", "Google Brain"]
-    regex: "\\b(Alphabet|Google|DeepMind|Google Brain)\\b"
+    aliases: ["Alphabet", "Google", "DeepMind", "Google Brain", "Gemini"]
+    regex: "\\b(Alphabet|Google(?! Doc| Sheet| Drive| Form)|DeepMind|Gemini(?! constellation))\\b"
   "OpenAI":
     aliases: ["OpenAI", "Sam Altman", "ChatGPT"]
     regex: "\\b(OpenAI|Sam Altman|ChatGPT)\\b"
+  "IBM":
+    aliases: ["IBM", "Watson AI"]
+    regex: "\\b(IBM|Watson AI)\\b"
+  "Amazon":
+    aliases: ["Amazon", "AWS", "Alexa", "Andy Jassy"]
+    regex: "\\b(Amazon(?! rainforest)|AWS|Andy Jassy)\\b"
+  "Apple":
+    aliases: ["Apple", "iPhone", "Apple Intelligence", "John Ternus"]
+    regex: "\\b(Apple(?! pie)|iPhone|Apple Intelligence|John Ternus)\\b"
+  "Microsoft":
+    aliases: ["Microsoft", "Satya Nadella", "Azure", "Copilot"]
+    regex: "\\b(Microsoft|Satya Nadella|Azure|Copilot)\\b"
 
 bias_ratings:
   ad_fontes:
@@ -112,53 +334,102 @@ bias_ratings:
   mbfc: "Left-Center Bias"
 
 notes: |
-  MIT Technology Review is included as a PARADOX case. Unlike Wired (whose
-  parent has competitive/revenue conflicts) or The Guardian (pure editorial
-  bias), MIT Tech Review's parent institution directly benefits from the
-  AI industry it covers critically. This makes it useful for studying
-  editorial independence from institutional interests.
+  MIT Technology Review is the MOST STRUCTURALLY CONFLICTED publication in the 
+  5-publication tracking set, despite being the least obviously so.
   
-  Key signal: Karen Hao's departure from MIT Tech Review to The Atlantic
-  represents a pattern of adversarial AI journalists clustering at
-  publications with the strongest anti-AI editorial stances.
+  Unlike Wired (Condé Nast/Advance Publications), where the conflict is 
+  COMPETITIVE (parent owns Meta competitor Reddit, has AI deals with OpenAI/
+  Amazon/Apple), MIT TR's conflict is COOPERATIVE: its parent institution 
+  RECEIVES MONEY FROM every major tech company it covers. Google, Amazon, IBM, 
+  Microsoft, Apple, and Meta all fund MIT research. The MIT-IBM Watson AI Lab 
+  alone is $240M. The Schwarzman College of Computing is $1.1B.
+  
+  The editorial independence claim rests entirely on a verbal policy with no 
+  structural enforcement mechanism. There is no equivalent of:
+  - The Scott Trust (Guardian) — nonprofit trust with sole purpose of protecting 
+    editorial independence
+  - Sulzberger dual-class shares (NYT) — family controls board regardless of 
+    institutional shareholders
+  - Owner-as-journalist (Wired/Condé Nast) — at least the conflict is visible
+  
+  Instead, MIT TR's board is controlled by MIT administrators whose primary 
+  jobs require maintaining corporate research funding relationships. The MIT 
+  Provost (board Co-Chair) directly oversees academic partnerships with Google, 
+  Amazon, etc. The MIT EVP/Treasurer (board Director) manages MIT's finances. 
+  The MIT Sloan Dean (board Director) runs corporate education programs.
+  
+  The Epstein scandal demonstrated that MIT's governance — including Technology 
+  Review Inc.'s governance — can fail catastrophically. Joi Ito sat on the 
+  publication's board WHILE soliciting Epstein money. Israel Ruiz sat on the 
+  board WHILE having approved Epstein donations. MIT TR covered the scandal 
+  well (under EIC Lichfield), but the scandal was about the institution that 
+  OWNS the publication.
+  
+  The SenseTime partnership adds another dimension: MIT partnered with a Chinese 
+  AI company later sanctioned by the US government for enabling mass surveillance 
+  of Uyghurs. The alliance funded 27 research projects across MIT.
+  
+  KEY ANALYTICAL QUESTION: Does MIT TR's coverage of companies that fund MIT 
+  research differ systematically from its coverage of companies that don't? 
+  This is testable with the toolkit's sentiment asymmetry analysis.
+  
+  PARADOX SUMMARY: MIT TR is editorially capable (Ad Fontes reliability 44.82, 
+  highest among tracked publications). But it operates under the most complex 
+  web of institutional conflicts, where the financial relationships flow in the 
+  OPPOSITE direction from Wired's — and where the governance structure provides 
+  the LEAST structural protection for editorial independence.
 
 editorial_history:
   leadership_changes:
+    - position: "publisher_ceo"
+      outgoing: "Jason Pontin"
+      incoming: "Elizabeth Bramson-Boudreau"
+      date: "2017-10"
+      notes: "Pontin listed as 'Former President, Publisher and CEO' on FY2018 990 with $515K compensation. Bramson-Boudreau took over and shifted to digital-first strategy. Previously at Atlantic Media and The Economist Group."
+      source_url: "https://projects.propublica.org/nonprofits/organizations/954893200"
     - position: "eic"
       outgoing: "David Rotman (acting)"
       incoming: "Gideon Lichfield"
       date: "2017-12"
-      notes: "Lichfield came from Quartz. Shifted toward more investigative, critical tech coverage."
+      notes: "Lichfield came from Quartz. Shifted toward more investigative, critical tech coverage. Led coverage of MIT-Epstein scandal."
     - position: "eic"
       outgoing: "Gideon Lichfield"
       incoming: "Mat Honan"
-      date: "2021-01"
-      notes: "KEY MIGRATION: Lichfield left for Wired. Honan came from BuzzFeed/Wired. Creates natural experiment: same person (Lichfield) at two different institutions."
+      date: "2021-08"
+      notes: "KEY MIGRATION: Lichfield left for Wired as EIC (creating natural experiment). Honan came from BuzzFeed News (executive editor), previously Wired senior writer. Three-institution chain: Wired → BuzzFeed → MIT TR."
+      source_url: "https://www.technologyreview.com/2021/06/22/1026816/mat-honan-joins-mit-technology-review-editor-in-chief/"
 
   notable_arrivals:
     - journalist: "Mat Honan"
-      from: "BuzzFeed News"
-      date: "2021-01"
+      from: "BuzzFeed News (exec editor); previously Wired (senior writer/columnist)"
+      date: "2021-08"
       role: "eic"
       beat: "overall editorial direction"
-      notes: "Previously at Wired. Became EIC — tests whether journalist changes institution from the top."
+      notes: "20+ year tech journalist. Led BuzzFeed News tech desk to Polk, Livingston, and Pulitzer awards. Former Wired monthly columnist and cover story writer. Famous for 2012 'Epic Hacking' story. Career path: Wired → BuzzFeed News → MIT TR."
+      source_url: "https://talkingbiznews.com/they-re-hiring/mit-tech-review-hires-honan-as-editor-in-chief/"
     - journalist: "Melissa Heikkilä"
       from: "POLITICO Europe"
       date: "2022-07"
-      role: "senior_writer"
-      beat: "AI"
-      notes: "Senior AI reporter. Current AI beat holder."
+      role: "senior_ai_reporter"
+      beat: "AI policy, EU regulation"
+      notes: "Primary AI policy reporter post-Karen Hao. Different editorial stance: more policy/regulation focused, less adversarial-investigative than Hao."
+    - journalist: "Gideon Lichfield"
+      from: "Quartz"
+      date: "2017-12"
+      role: "eic"
+      beat: "overall editorial direction"
+      notes: "Became EIC. Led MIT TR through Epstein scandal coverage. Later left for Wired as EIC — uniquely valuable migration for measuring institutional vs individual editorial effects."
 
   notable_departures:
     - journalist: "Karen Hao"
       to: "The Atlantic"
       date: "2022-05"
-      notes: "HIGH-VALUE DEPARTURE: Did MIT TR's AI coverage tone change after she left? Key test of individual vs institutional bias."
+      notes: "HIGH-VALUE DEPARTURE: MIT TR's most adversarial AI reporter. Wrote landmark internal Meta AI ethics investigation (2021). Tests whether MIT TR's AI coverage tone changed after her departure (individual vs institutional bias). At Atlantic, continues adversarial AI coverage."
     - journalist: "Will Knight"
       to: "Wired"
       date: "2018-08"
-      notes: "13-year veteran leaving for a competitor. Tests institutional encoding."
+      notes: "13-year MIT TR veteran. Tests institutional encoding — did Knight's coverage style change at Wired? Long tenure makes this a strong natural experiment."
     - journalist: "Gideon Lichfield"
-      to: "Wired"
+      to: "Wired (as EIC)"
       date: "2020-09"
-      notes: "EIC who went to become Wired's EIC — same person leading two outlets sequentially."
+      notes: "HIGHEST-VALUE MIGRATION IN DATASET: Same person leading TWO tracked publications sequentially. Can directly compare MIT TR editorial direction under Lichfield vs Wired editorial direction under Lichfield to decompose individual from institutional effects. The careers module's DiD regression should prioritize this case."
