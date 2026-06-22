@@ -1,0 +1,96 @@
+TITLE: Wired Investigation: Meta Quietly Embedded Facial Recognition System "NameTag" in AI App for Smart Glasses
+PUBLICATION: Wired
+DATE: ~June 5, 2026
+AUTHOR: Wired investigation (byline not recovered from paywalled original)
+ORIGINAL URL: https://www.wired.com (paywalled; reconstructed from 6+ secondary sources)
+
+NOTE: Original Wired article is paywalled. This text is reconstructed from
+secondary reporting by Engadget, Gizmodo, Android Authority, Digital Trends,
+INCYBER NEWS, 9to5Google, and the civil rights coalition letter coverage.
+All quoted material appears in multiple secondary sources, attributed to the
+Wired original. Quoted statements from Meta spokesperson Ryan Daniels and
+security researcher Cooper Quintin are exact quotes replicated across sources.
+
+---
+
+Code discreetly added to Meta's AI app over multiple updates this year shows
+that the feature, internally called "NameTag," identifies people captured by
+the glasses' camera and, when activated, alerts the wearer when it recognizes
+someone.
+
+The Meta AI app, which is used with the company's Ray-Ban and Oakley smart
+glasses and has been downloaded more than 50 million times, contains core
+components of a face-recognition system that were added as early as January
+2026, including three AI models that now sit on users' phones. One model
+detects faces, another crops them from images, and a third converts them into
+biometric data that can be checked against faceprints stored on the phone.
+
+If activated, the system would alert the wearer when it recognizes someone.
+Faces that are recognized trigger notifications, while unrecognized faces are
+cropped, indexed, and saved to a folder marked "pending."
+
+A May version of the app appears to rebrand the feature as "Connections,"
+with user-facing text inviting people to "remember the people you met."
+
+Cooper Quintin, a security researcher and senior public interest technologist
+with the Electronic Frontier Foundation's Threat Lab, who was asked to review
+the code by Wired, said the system was "nearly ready to go." Security
+researchers cited in the report independently recreated portions of the
+system and found that the recognition pipeline appeared nearly functional.
+
+The state of near-readiness seems contradictory compared to Meta's previous
+messaging. In April, Meta had publicly described facial recognition as
+something the company was still "thinking through" before rolling anything
+out. However, the investigation shows some code was already added as early as
+January — before Meta made its official comment.
+
+This is not the first time NameTag has surfaced. In February, The New York
+Times reported on internal Meta documents showing that the company had planned
+a face-recognition feature for its smart glasses. Those documents reportedly
+described how the current "dynamic political environment" could leave critics
+of the feature preoccupied.
+
+Per a memo reviewed during reporting, Meta was interested in launching the
+feature during a "dynamic political environment" in the US because "civil
+society groups that we would expect to attack us would have their resources
+focused on other concerns."
+
+Meta has already faced legal action over the unlawful collection of biometric
+data and the creation of facial recognition profiles without users' explicit
+consent. In 2020 and 2024, as part of two class actions in Illinois and
+Texas, the company paid $650 million and $1.4 billion respectively to settle
+the cases.
+
+Meta pushed back on the framing of the report. Company spokesperson Ryan
+Daniels stated: "Regardless of any sensational reporting, the facts are
+simple: We've said before we're exploring these types of features, and what
+you're seeing is just evidence of that exploration. Nothing has shipped to
+consumers and no final decision has been made on what to do here, if anything.
+If we do decide to roll something out, we will take a thoughtful approach and
+do so with full transparency. One decision we can be clear about — we are not
+building a central face database."
+
+Wired notes that code reviewed suggests NameTag would be pulling information
+from Meta servers and storing it on a user's device, raising questions about
+Daniels' assertion of "not building a central face database."
+
+The underlying technology already present in the app people use with Meta's
+smart glasses suggests a potential rollout is moving closer.
+
+[Civil rights response, covered in follow-up reporting:]
+
+A coalition of over 70 civil liberties, domestic violence, reproductive
+rights, and LGBTQ+ organizations, including the ACLU, Fight for the Future,
+and Access Now, subsequently sent a letter to Meta CEO Mark Zuckerberg
+demanding the company kill the facial recognition feature before it ever
+reaches consumers. The coalition called Meta's internal memo about the
+"dynamic political environment" "vile behavior."
+
+Engineers at Meta were reportedly weighing two versions of the feature: one
+that identifies people the wearer is already connected with on Meta platforms,
+and a broader version that could recognize anyone with a public Facebook or
+Instagram account.
+
+On June 8, 2026, Meta released an update to its Meta AI app removing the
+facial recognition features linked to its smart glasses, following the
+investigation.

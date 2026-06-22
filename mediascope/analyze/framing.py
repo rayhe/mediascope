@@ -210,7 +210,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
     ),
     # "Quietly" as editorial signal of secrecy
     re.compile(
-        r"\b(?:quietly|secretly|covertly|surreptitiously|"
+        r"\b(?:quietly|secretly|covertly|surreptitiously|discreetly|"
         r"without (?:notice|disclosure|announcing|telling)|"
         r"behind (?:closed doors|the scenes))\b",
         re.IGNORECASE,
@@ -282,7 +282,7 @@ _TIMELINE_IMPLICATION_PATTERNS: list[re.Pattern] = [
         r".{0,80}?"
         r"\b(?:after|once|when|following)\b"
         r".{0,60}?"
-        r"\b(?:reported?|revealed?|published|discovered|exposed|found|uncovered)\b",
+        r"\b(?:reported?|revealed?|published|discovered|exposed|found|uncovered|investigation)\b",
         re.IGNORECASE | re.DOTALL,
     ),
     # "a day after" / "hours after" / "days after" pattern
@@ -292,6 +292,24 @@ _TIMELINE_IMPLICATION_PATTERNS: list[re.Pattern] = [
         r".{0,60}?"
         r"\b(?:reported?|revealed?|published|discovered|exposed|found)\b",
         re.IGNORECASE | re.DOTALL,
+    ),
+    # Say-one-thing-do-another: "said X was still Y, but/however/yet Z was already"
+    re.compile(
+        r"\b(?:publicly|officially)\b"
+        r".{0,80}?"
+        r"\b(?:still|yet)\b"
+        r".{0,80}?"
+        r"\b(?:but|however|yet|even as|while|despite)\b"
+        r".{0,80}?"
+        r"\b(?:already|as early as|months before|before|prior to|long before)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "contradictory" / inconsistency language
+    re.compile(
+        r"\b(?:contradictory|contradicts?|inconsistent|at odds with|"
+        r"raises questions about|undermines?|belies?|"
+        r"despite (?:previous|prior|earlier|public) (?:claims?|statements?|messaging|assurances?))\b",
+        re.IGNORECASE,
     ),
 ]
 

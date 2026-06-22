@@ -105,6 +105,25 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "NEC", "Cognitec", "Idemia", "Palantir Technologies",
         ],
     },
+    "Privacy/Civil Liberties Orgs": {
+        "aliases": [
+            "Electronic Frontier Foundation", "EFF",
+            "ACLU", "American Civil Liberties Union",
+            "Access Now", "Fight for the Future",
+            "Electronic Privacy Information Center", "EPIC",
+        ],
+    },
+    "Media/Publications": {
+        "aliases": [
+            "The New York Times", "New York Times", "NYT",
+            "The Washington Post", "Washington Post",
+            "The Guardian", "Guardian",
+            "Reuters", "Associated Press", "AP",
+            "Bloomberg", "Financial Times",
+            "TechCrunch", "The Verge", "Ars Technica",
+            "The Information",
+        ],
+    },
 }
 
 
@@ -186,6 +205,9 @@ def _build_patterns(
     alias_patterns: list[tuple[re.Pattern, str, str]] = []
     for alias, canonical, cluster in alias_entries:
         escaped = re.escape(alias)
+        # Replace escaped literal spaces with \s+ to handle line breaks and
+        # multiple whitespace in article text (e.g. "The New York\nTimes")
+        escaped = re.sub(r"\\ ", r"\\s+", escaped)
         pattern = re.compile(
             rf"(?<!\w){escaped}(?!\w)",
             re.IGNORECASE,

@@ -100,6 +100,11 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "disposable", "demoralized", "demoralizing", "disgruntled",
     "fury", "furious", "revolt", "rage", "nightmare",
     "horror", "excruciating", "hellish", "grueling",
+    # Privacy/surveillance emotional terms
+    "surveillance", "biometric surveillance", "mass identification",
+    "faceprints", "faceprint", "vacuum up", "weaponized",
+    "stalkers", "stalking", "abusers", "covert filming",
+    "vile", "vile behavior", "invasive",
 ]
 
 # Passive/victim vs. active/powerful framing indicators
@@ -113,7 +118,7 @@ PASSIVE_FRAMING: list[str] = [
     "would say almost nothing", "would not say",
     "declined to answer", "declined to respond",
     "quietly built", "quietly removed", "quietly deleted",
-    "secretly", "covertly", "surreptitiously",
+    "secretly", "covertly", "surreptitiously", "discreetly",
     # Workplace/organizational passive framing
     "felt they had to", "had little choice", "had little real choice",
     "felt coerced", "were drafted", "were reassigned",

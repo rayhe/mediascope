@@ -4,6 +4,52 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-22 05:00 PT — Hour Type D: Toolkit Quality & Documentation
+
+**Focus:** Fix all test failures, improve entity detection architecture, add real-world annotated example, improve documentation.
+
+### What was improved:
+
+1. **All 5 test failures resolved (73/73 pass):**
+   - `test_large_effect`: `cohens_d()` returns signed value; test fixed to use `abs(d) > 0.8`
+   - `test_custom_clusters`: `detect_entities()` only accepted list-format clusters but test/docs used dict format; overhauled to support both
+   - `test_empty_mentions`: `get_primary_entity([])` returned `""`, fixed to return `None`
+   - `test_each_cluster_has_aliases`: `DEFAULT_ENTITY_CLUSTERS` upgraded from plain list format to dict format with `aliases` key
+   - `test_each_cluster_has_regex`: Updated test to treat `regex` as optional (clusters auto-generate patterns from aliases when `regex` absent)
+
+2. **Entity detection architecture overhaul (`entities.py`):**
+   - Added `_normalize_cluster()` function to handle both dict format (`{aliases: [...], regex: "..."}`) and list format (`["alias1", "alias2"]`)
+   - `DEFAULT_ENTITY_CLUSTERS` now uses dict format with custom regex for Meta, Google, Apple, Amazon — includes negative lookahead for common false positives (Meta tag, Apple pie, Amazon rainforest, Google Sheets)
+   - New aliases: Android (Google), AirPods/Apple Watch/John Ternus/macOS (Apple), Prime Video (Amazon), GPT-4o (OpenAI), Windows (Microsoft)
+   - Added `ClusterEntry`/`ClusterDict` type aliases for type safety
+   - `get_primary_entity()` return type changed from `str` to `str | None`
+
+3. **New annotated example: Wired Meta Applied AI Revolt (2026-06-13):**
+   - Reconstructed article text from 6+ secondary sources (NY Post, Memeburn, People Matters, Wired24 ZA, Digital Trends, Reuters)
+   - Full 8-dimension manual sentiment analysis: overall tone -0.72, emotional intensity 0.78
+   - 5/7 framing devices detected (anonymous authority, catastrophizing, selective omission, emotional appeal, loaded language)
+   - Source analysis: 80% anonymous sources, 0% pro-Meta sources
+   - Conflict disclosure: Advance Publications' 33.5% Reddit stake undisclosed
+   - Counterarguments section: dissatisfaction is real, anonymous sourcing standard for internal reporting, etc.
+   - Two new files: `*_article.txt` + `*_analysis.md` pair
+
+4. **Framing detection improvements (`framing.py`):**
+   - Added workplace-specific loaded language patterns: soul-crushing, drudgery, gulag, draftees, menial, dehumanizing, atrocious, brutal, sweatshop
+   - These patterns surfaced from manual analysis of the Wired Applied AI article
+
+5. **README.md improvements:**
+   - Added Troubleshooting section: false positives, signed Cohen's d, dual cluster formats, import errors
+   - Added Sample Output Gallery table describing all annotated example files
+
+6. **ADDING_PUBLICATIONS.md improvements:**
+   - Updated Target Entity Clusters section to document both dict format (recommended) and list format (shorthand)
+   - Added guidance on when to use custom regex vs. auto-generation
+
+### Commit: `c60c709`
+### Sources: Wired (paywalled), NY Post, Memeburn, People Matters, Wired24 ZA, Digital Trends, Reuters
+
+---
+
 ## 2026-06-22 02:00 PT — Hour Type C: NYT Ownership & Funding Deep Dive
 
 **Focus:** Ownership & Funding Deep Dive — The New York Times Company
