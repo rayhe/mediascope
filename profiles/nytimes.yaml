@@ -10,92 +10,324 @@ rss_feeds:
   - url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
     category: "main"
 
+# ===================================================================
+# OWNERSHIP CHAIN — updated 2026-06-22 from SEC filings & proxy data
+# ===================================================================
 ownership_chain:
   - name: "The New York Times"
     entity_type: "publisher"
-    description: "Paper of record, founded 1851. Digital subscription model."
+    description: >
+      Founded 1851, paper of record. Digital-first subscription model.
+      FY2025: $2,824.9M total revenue (+9.2% YoY), $431.6M operating profit (+22.9%),
+      $344.0M net income. Q1 2026: $712.2M revenue (+12% YoY), $0.61 EPS (beat $0.49 consensus).
+      12.52M digital-only subscribers (Q1 2026), 13.08M total subscribers.
+      Includes NYT Cooking, Games, Wirecutter, The Athletic, Audio.
   - name: "The New York Times Company"
     entity_type: "parent_company"
-    description: "Publicly traded (NYSE: NYT). Sulzberger family controls through dual-class shares."
-  - name: "Sulzberger Family"
-    entity_type: "family_office"
-    description: "A.G. Sulzberger is current publisher. Family controls Class B shares with super-voting rights."
+    description: >
+      Publicly traded (NYSE: NYT). Market cap ~$11.83B (Jun 2026). Stock ~$73/share.
+      Dual-class share structure gives Sulzberger family control despite ~11% economic ownership.
+      95.37% of Class A stock held by institutional investors.
+    sec_filings:
+      - type: "10-K"
+        period: "FY2025"
+        source_url: "https://www.tradingview.com/news/te_press_release:nyt-20250228/"
+        notes: "Total revenue $2,824.9M, digital-only subscription revenue +14.3%"
+      - type: "10-Q"
+        period: "Q1 2026"
+        source_url: "https://www.zacks.com/stock/news/2473290/the-new-york-times-q1-earnings-beat-on-digital-ads-subscriber-growth"
+        notes: "Revenue $712.2M (+12%), digital ad +31.6%, 310K net new digital subs"
+  - name: "Ochs-Sulzberger Family / 1997 Trust"
+    entity_type: "controlling_family"
+    description: >
+      Descended from Adolph S. Ochs (acquired NYT 1896). Control passes through
+      the 1997 Trust, which holds 738,810 shares of Class B stock and 1,400,000 shares
+      of Class A stock (plus ~4.3M more Class A indirectly). Class B stockholders
+      elect ~70% of the Board of Directors. Eight trustees act by supermajority (6 of 8).
+      Primary trust objective: "maintain the editorial independence and integrity of
+      The New York Times." Family aggregate holdings: ~11% of total outstanding equity.
+      A.G. Sulzberger is current publisher and chairman.
+    source_url: "https://www.sec.gov/Archives/edgar/data/71691/000119312517102289/d297033ddef14a.htm"
+    notes: "From DEF 14A proxy statement; trust indenture structure described therein."
 
+# ===================================================================
+# INSTITUTIONAL SHAREHOLDERS — from MarketBeat, SEC 13F filings
+# Updated 2026-06-22
+# ===================================================================
+institutional_shareholders:
+  total_institutional_ownership_pct: 95.37
+  top_holders:
+    - name: "Vanguard Group Inc."
+      value: "$1.09B"
+      notes: "Passive index fund; largest institutional holder"
+    - name: "T. Rowe Price Investment Management Inc."
+      value: "$727.45M"
+      notes: "Active manager; has been SELLING (largest seller at $4.57M in 24mo)"
+    - name: "AQR Capital Management LLC"
+      value: "$433.28M"
+      notes: "Quant hedge fund; BUYING ($5.27M in 24mo, largest buyer)"
+    - name: "Wellington Management Group LLP"
+      value: "$361.81M"
+    - name: "Berkshire Hathaway Inc"
+      value: "$351.66M"
+      notes: "Warren Buffett's conglomerate; BUYING ($5.07M in 24mo)"
+    - name: "State Street Corp"
+      value: "$348.99M"
+    - name: "Darsana Capital Partners LP"
+      value: "$299.29M"
+  source_url: "https://www.marketbeat.com/stocks/NYSE/NYT/institutional-ownership/"
+  last_updated: "2026-06-22"
+
+# ===================================================================
+# REVENUE RELATIONSHIPS — significantly expanded 2026-06-22
+# ===================================================================
 revenue_relationships:
   - partner: "Google"
     relationship_type: "advertising"
     estimated_value: "significant (programmatic ad revenue)"
-    description: "Google is major programmatic ad partner. Complex relationship: depends on Google for revenue, covers Google critically."
+    description: >
+      Google is major programmatic ad partner. Complex relationship: NYT depends
+      on Google for significant ad revenue while covering Google critically.
+      NYT digital ad revenue hit $93.3M in Q1 2026 alone (+31.6% YoY),
+      significant portion flows through Google's ad tech stack.
     date_established: "ongoing"
     source_url: ""
+
+  - partner: "Amazon"
+    relationship_type: "ai_licensing"
+    estimated_value: "$20-25M/year"
+    description: >
+      NYT's FIRST AI content licensing deal, signed May 29, 2025. Multi-year agreement.
+      Amazon products (Alexa, etc.) can use summaries and short excerpts from NYT
+      stories and recipes. Amazon can also use NYT content (news, Cooking, The Athletic)
+      to train its proprietary AI models. CEO Meredith Kopit Levien: "It aligns with
+      our deliberate approach to ensuring that our work is valued appropriately,
+      whether through commercial deals or through the enforcement of our IP rights."
+      NOTABLY: NYT chose Amazon over OpenAI (which it is suing) and Microsoft (also
+      named in the suit). Amazon is the only AI company NYT has licensed to.
+    date_established: "2025-05-29"
+    source_url: "https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/"
+    supplementary_source: "https://www.livemint.com/technology/amazon-to-pay-new-york-times-at-least-20-million-a-year-in-ai-deal-11724443000000.html"
+
   - partner: "OpenAI"
     relationship_type: "litigation"
     estimated_value: "billions (claimed damages)"
-    description: "NYT sued OpenAI and Microsoft in Dec 2023 for copyright infringement. Claims billions in damages. NYT content was used to train GPT models."
+    description: >
+      NYT sued OpenAI and Microsoft in Dec 2023 for copyright infringement (Case No.
+      1:23-cv-11195, S.D.N.Y.). Claims billions in statutory/actual damages. Alleges
+      millions of NYT articles used to train GPT models without permission. As of
+      mid-2026: discovery phase ongoing, no trial date set. Key rulings: Judge Stein
+      denied OpenAI's motion to dismiss (Apr 2025); Magistrate Judge Wang issued
+      sweeping preservation order for ChatGPT output logs affecting 400M+ users
+      (May 2025); Judge Stein affirmed preservation order (Jun 2025). NYT now
+      searching preserved logs for evidence of users generating infringing articles.
+      Consolidated with Author Actions (Authors Guild v. OpenAI, etc.) for pretrial.
+      OpenAI approved internally by NYT staff via non-ChatGPT API (irony noted).
     date_established: "2023-12"
     source_url: "https://nytco-assets.nytimes.com/2023/12/NYT_Complaint_Dec2023.pdf"
-  - partner: "Apple"
-    relationship_type: "partnership"
-    estimated_value: "undisclosed"
-    description: "NYT app deeply integrated with Apple ecosystem. Apple News+ partnership."
-    date_established: "ongoing"
-    source_url: ""
+    supplementary_sources:
+      - "https://www.mondaq.com/unitedstates/new-technology/1650832/from-copyright-case-to-ai-data-crisis-how-the-new-york-times-v-openai-reshapes-companies-data-governance-and-ediscovery-strategy"
+      - "https://www.courtlistener.com/docket/68117049/1/the-new-york-times-company-v-microsoft-corporation/"
 
+  - partner: "Apple"
+    relationship_type: "former_partnership_and_ongoing_selective"
+    estimated_value: "minimal direct"
+    description: >
+      NYT ENDED its Apple News partnership in June 2020. Never joined Apple News+.
+      COO Levien: "Our relationship with Apple News does not fit within these
+      parameters" (re: building direct subscriber relationships). Apple keeps readers
+      in-app, unlike Google News which sends them to publisher sites. As of late 2025,
+      NYT joined Apple Podcasts subscription program (The Daily, Hard Fork, etc.) —
+      paywalling older episodes behind subscription. Only Wirecutter and The Athletic
+      available on ad-backed Apple News. Apple approached publishers with multi-year
+      $50M AI licensing deals (Dec 2024 per INMA) — unclear if NYT is negotiating.
+    date_established: "2015 (original); ended 2020-06-29; podcasts 2025-10"
+    source_url: "https://www.thestreet.com/technology/nytimes-ends-partnership-with-apple-news"
+    supplementary_source: "https://9to5mac.com/2025/09/24/apple-podcasts-adds-the-new-york-times-to-subscription-program/"
+
+  - partner: "Meta"
+    relationship_type: "no_relationship"
+    estimated_value: "$0"
+    description: >
+      Meta has NO revenue relationship with The New York Times. Meta signed AI
+      content licensing deals with 7 publishers in Dec 2025 (CNN, Fox News,
+      People Inc., USA Today Co., etc.) but NYT was not among them. NYT's
+      adversarial editorial posture toward Meta (Sheera Frenkel's "An Ugly Truth,"
+      Mike Isaac's deep sourcing) makes a licensing deal unlikely. Zero advertising
+      partnership, zero licensing — NYT coverage of Meta has no financial counterweight.
+    date_established: "n/a"
+    source_url: "https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/"
+    notes: "Meta signed with 7 publishers Dec 5 2025, NYT conspicuously absent"
+
+# ===================================================================
+# EDITORIAL LEADERSHIP
+# ===================================================================
 editorial_leadership:
+  - name: "A.G. Sulzberger"
+    title: "Publisher and Chairman"
+    editorial_stance: "Emphasizes journalism as essential democratic infrastructure"
   - name: "Joseph Kahn"
     title: "Executive Editor"
-    editorial_stance: "Emphasis on AI threatening journalism business model"
+    editorial_stance: "AI-skeptical: under his tenure NYT sued OpenAI. Emphasis on AI threatening journalism business model."
+  - name: "Meredith Kopit Levien"
+    title: "CEO"
+    editorial_stance: "Subscription-first strategy. Willing to license to 'right' AI partners (Amazon) while litigating against others (OpenAI)."
+  - name: "Zach Seward"
+    title: "Editorial Director of AI Initiatives"
+    editorial_stance: >
+      Leads AI Issues team. Co-founded Quartz. Built Echo (AI summarization tool),
+      Stet (AI copy evaluation framework), Cheat Sheet (investigations tool).
+      Pro-AI-for-journalism but within strict editorial guardrails.
+    source_url: "https://wan-ifra.org/insight/divining-data-how-ai-invigorates-the-new-york-times-approach-to-investigative-reporting/"
 
+# ===================================================================
+# INTERNAL AI TOOLS — new section, 2026-06-22
+# ===================================================================
+internal_ai_tools:
+  - name: "Echo"
+    description: "Internal AI summarization tool. Connects NYT content archive to LLMs. Single user-defined prompt summarizes/transforms/extracts from any Times-owned content."
+    source_url: "https://ire.org/resource-center/inside-the-new-york-times-ai-toolkit/"
+  - name: "Stet"
+    description: "AI copy evaluation framework for quality measurement at scale. Ensures AI-generated copy meets editorial standards across parallel processing of hundreds of articles."
+    source_url: "https://ire.org/resource-center/inside-the-new-york-times-ai-toolkit/"
+  - name: "Cheat Sheet"
+    description: "Spreadsheet-based AI tool for investigative journalism. Lets reporters choose LLM models, process massive datasets (10K names, 500 hours of video). Used by several dozen reporters."
+    source_url: "https://digiday.com/media/inside-the-new-york-times-ai-newsroom-strategy/"
+  approved_external_tools:
+    - "GitHub Copilot (coding)"
+    - "Google Vertex AI (product development)"
+    - "NotebookLM"
+    - "Amazon AI products"
+    - "OpenAI non-ChatGPT API (via business account)"
+  guidelines: >
+    AI cannot draft or significantly revise articles. No AI-generated images/videos in stories.
+    No confidential source information in AI tools. Journalists ultimately responsible for
+    everything published. AI used for: research, brainstorming, suggesting edits, summarization,
+    SEO headlines, social copy, code.
+  source_url: "https://techcrunch.com/2025/02/17/the-new-york-times-has-greenlit-ai-tools-for-product-and-edit-staff/"
+
+# ===================================================================
+# KEY JOURNALISTS
+# ===================================================================
 key_journalists:
   - name: "Cade Metz"
     beat: "AI research and industry"
-    known_patterns: "Critical of AI industry practices, worker exploitation"
+    known_patterns: "Critical of AI industry practices, worker exploitation. Migrated from Wired (Condé Nast) in 2017."
   - name: "Karen Weise"
     beat: "Big Tech, Microsoft, Amazon"
     known_patterns: "Investigative focus on tech company power"
   - name: "Mike Isaac"
     beat: "Social media, Meta"
-    known_patterns: "Deep sourcing inside Meta, wrote 'Super Pumped' on Uber"
+    known_patterns: "Deep sourcing inside Meta, wrote 'Super Pumped' on Uber. Joined from Recode 2014."
   - name: "Nico Grant"
     beat: "Google, AI"
     known_patterns: "Google AI development and competition"
   - name: "Kevin Roose"
     beat: "Technology and society"
-    known_patterns: "Experiential AI coverage, Bing Sydney incident"
+    known_patterns: "Experiential AI coverage, Bing Sydney incident. 'Hard Fork' podcast co-host."
   - name: "Kashmir Hill"
     beat: "Privacy, facial recognition"
-    known_patterns: "Clearview AI investigation, privacy advocacy"
+    known_patterns: "Clearview AI investigation, privacy advocacy, author of 'Your Face Belongs to Us'"
   - name: "Sheera Frenkel"
     beat: "Online misinformation, Meta"
-    known_patterns: "Co-wrote 'An Ugly Truth' about Facebook"
+    known_patterns: "Co-wrote 'An Ugly Truth' about Facebook. Major adversarial Meta reporter."
+  - name: "Kate Conger"
+    beat: "Tech labor, social media"
+    known_patterns: "Joined from TechCrunch 2018. Co-authored 'Character Limit' on Elon Musk's Twitter."
 
+# ===================================================================
+# KNOWN CONFLICTS — expanded 2026-06-22
+# ===================================================================
 known_conflicts:
   - type: "litigation"
-    description: "Actively suing OpenAI and Microsoft for copyright infringement while building AI products internally (Climate Answers, AI search). Covers AI industry as plaintiff, not neutral observer."
+    description: >
+      Actively suing OpenAI and Microsoft for copyright infringement (Case 1:23-cv-11195,
+      S.D.N.Y., filed Dec 2023). Claims billions in damages. Simultaneously building
+      internal AI products (Echo, Stet, Cheat Sheet) and licensing to Amazon for
+      $20-25M/yr. Discovery phase ongoing: landmark preservation order forcing
+      OpenAI to retain 400M+ users' ChatGPT logs (May 2025, affirmed Jun 2025).
+      No trial date set. NYT's legal team is now searching preserved output logs.
     severity: 5
-    evidence: "Court filing NYT v. OpenAI, Microsoft, Dec 2023"
-    source_url: "https://nytco-assets.nytimes.com/2023/12/NYT_Complaint_Dec2023.pdf"
+    evidence: "Court filings, SEC disclosures, Mondaq analysis"
+    source_urls:
+      - "https://nytco-assets.nytimes.com/2023/12/NYT_Complaint_Dec2023.pdf"
+      - "https://www.mondaq.com/unitedstates/new-technology/1650832/"
   - type: "competitive"
-    description: "NYT AI strategy creates incentive to frame AI companies as IP thieves. Building own AI while suing others for doing the same."
-    severity: 4
-    evidence: "NYT product launches, internal AI initiatives"
-    source_url: ""
+    description: >
+      NYT's dual AI strategy creates structural conflict: suing OpenAI/Microsoft for
+      using NYT content without payment, while licensing same content to Amazon ($20-25M/yr)
+      and using OpenAI's own non-ChatGPT API internally. Incentive structure: frame
+      AI companies as IP thieves (supports lawsuit), while monetizing content through
+      'approved' channels. Covers AI industry as plaintiff, not neutral observer.
+    severity: 5
+    evidence: "Amazon deal announcement May 2025, internal AI tools approval Feb 2025, lawsuit ongoing"
+    source_urls:
+      - "https://digiday.com/media/nyts-amazon-deal-signals-a-new-wave-of-publisher-partnerships/"
+      - "https://techcrunch.com/2025/02/17/the-new-york-times-has-greenlit-ai-tools-for-product-and-edit-staff/"
   - type: "revenue"
-    description: "Depends on Google for significant ad revenue while covering Google critically. Complex dual-interest."
+    description: >
+      Depends on Google for significant programmatic ad revenue (total digital ads
+      $93.3M in Q1 2026 alone) while covering Google critically. Google also signed
+      AI pilot partnerships with publishers in Dec 2025 — NYT conspicuously absent.
     severity: 3
-    evidence: "Digital ad revenue reporting"
-    source_url: ""
+    evidence: "Q1 2026 10-Q filing, digital advertising revenue reporting"
+    source_url: "https://www.zacks.com/stock/news/2473290/the-new-york-times-q1-earnings-beat-on-digital-ads-subscriber-growth"
+  - type: "no_meta_counterweight"
+    description: >
+      Zero financial relationship with Meta — no advertising, no licensing, no partnership.
+      Meta signed AI licensing deals with 7 other publishers in Dec 2025 but not NYT.
+      This means NYT's critical Meta coverage has absolutely no financial counterweight
+      or "client-sparing" incentive. Compare: Amazon ($20-25M/yr) gets softer coverage
+      framing; Meta ($0) gets Sheera Frenkel and Mike Isaac.
+    severity: 4
+    evidence: "Digiday 2025 AI deals timeline, Meta Dec 2025 publisher deals"
+    source_url: "https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/"
 
+# ===================================================================
+# LITIGATION CONNECTIONS — expanded 2026-06-22
+# ===================================================================
 litigation_connections:
   - type: "plaintiff"
-    description: "Direct plaintiff in NYT v. OpenAI et al. Financial outcome directly tied to coverage framing of AI copyright issues."
+    description: >
+      Direct plaintiff in The New York Times Company v. Microsoft Corporation et al.,
+      Case No. 1:23-cv-11195, S.D.N.Y. Filed Dec 27, 2023. Judge Sidney Stein presiding,
+      Magistrate Judge Ona T. Wang handling discovery. Consolidated with Author Actions
+      (Authors Guild v. OpenAI No. 23-CV-8292, Alter v. OpenAI No. 23-CV-10211,
+      Basbanes v. Microsoft No. 24-CV-84) for pretrial purposes.
     case_reference: "1:23-cv-11195, S.D.N.Y."
+    judges:
+      presiding: "Judge Sidney H. Stein"
+      magistrate: "Magistrate Judge Ona T. Wang"
+    key_rulings:
+      - date: "2025-04-04"
+        ruling: "Judge Stein denied OpenAI's motion to dismiss copyright claims; removed some DMCA claims"
+        source_url: "https://www.globallegalpost.com/news/us-judge-refuses-openais-motion-to-dismiss-new-york-times-copyright-infringement-claims-96281580"
+      - date: "2025-05-13"
+        ruling: "Judge Wang issued sweeping preservation order for ChatGPT output logs affecting 400M+ users"
+        source_url: "https://www.mondaq.com/unitedstates/new-technology/1650832/"
+      - date: "2025-05-27"
+        ruling: "Court clarified preservation applies to certain ChatGPT plans only, not wholesale"
+      - date: "2025-06-26"
+        ruling: "Judge Stein affirmed preservation order, rejected OpenAI's privacy-based objections"
+        source_url: "https://www.mondaq.com/unitedstates/new-technology/1650832/"
+    status_as_of_jun_2026: >
+      Discovery phase. No trial date set. NYT searching preserved ChatGPT output logs.
+      OpenAI may appeal preservation ruling. Case likely to go to trial or settlement.
+      Precedent-setting for all publisher-vs-AI copyright disputes.
+  - type: "co_plaintiff_related"
+    description: >
+      NYT and Daily News plaintiffs consolidated. Daily News encompasses 8 news
+      organizations including NY Daily News and Chicago Tribune with similar
+      copyright infringement claims.
 
 ai_crawl_policy:
   blocks_gptbot: true
   blocks_ccbot: true
   blocks_google_extended: true
-  notes: "Aggressively blocks AI crawlers. Consistent with litigation strategy."
+  notes: >
+    Aggressively blocks AI crawlers. Consistent with litigation strategy against OpenAI.
+    robots.txt blocks are part of the evidence in the copyright case — NYT argues it
+    clearly signaled 'no training' before and after filing suit.
 
 target_entities:
   "Meta":
@@ -105,28 +337,46 @@ target_entities:
     aliases: ["Alphabet", "Google", "YouTube", "DeepMind", "Sundar Pichai"]
     regex: "\\b(Alphabet|Google|YouTube|DeepMind|Pichai)\\b"
   "OpenAI":
-    aliases: ["OpenAI", "Sam Altman", "ChatGPT", "GPT-4"]
+    aliases: ["OpenAI", "Sam Altman", "ChatGPT", "GPT-4", "GPT-5"]
     regex: "\\b(OpenAI|Sam Altman|ChatGPT|GPT-[45o])\\b"
+  "Amazon":
+    aliases: ["Amazon", "Alexa", "AWS", "Jeff Bezos", "Andy Jassy"]
+    regex: "\\b(Amazon|Alexa|AWS|Bezos|Andy Jassy)\\b"
+    notes: "Amazon is now a LICENSING PARTNER — coverage asymmetry worth monitoring"
+  "Apple":
+    aliases: ["Apple", "iPhone", "Apple News", "Apple Intelligence"]
+    regex: "\\b(Apple(?! pie)|iPhone|Apple News|Apple Intelligence)\\b"
+    notes: "Former Apple News partner (ended 2020). Podcast sub partner (2025)."
 
 bias_ratings:
   ad_fontes:
     reliability: 45.56
     bias: -5.94
+    source_url: "https://adfontesmedia.com/new-york-times-bias-and-reliability/"
   allsides: "Lean Left"
   mbfc: "Left-Center Bias"
 
+# ===================================================================
+# EDITORIAL HISTORY — expanded 2026-06-22
+# ===================================================================
 editorial_history:
   leadership_changes:
     - position: "executive_editor"
       outgoing: "Dean Baquet"
       incoming: "Joseph Kahn"
       date: "2022-06"
-      notes: "Under Kahn, NYT sued OpenAI (Dec 2023). Emphasis on AI threatening journalism."
+      notes: "Under Kahn, NYT sued OpenAI (Dec 2023). Emphasis on AI threatening journalism. Under his leadership, digital subs grew from ~9M to 12.5M+."
     - position: "managing_editor"
       outgoing: "Joseph Kahn"
       incoming: "Marc Lacey"
       date: "2022-06"
       notes: "Lacey promoted when Kahn became executive editor."
+    - position: "editorial_director_ai"
+      outgoing: null
+      incoming: "Zach Seward"
+      date: "2024-02"
+      notes: "NEW POSITION CREATED. Seward is NYT's first editorial director of AI initiatives. Co-founded Quartz. Leads AI Issues team."
+      source_url: "https://wan-ifra.org/insight/divining-data-how-ai-invigorates-the-new-york-times-approach-to-investigative-reporting/"
 
   notable_arrivals:
     - journalist: "Cade Metz"
@@ -134,29 +384,37 @@ editorial_history:
       date: "2017-10"
       role: "correspondent"
       beat: "AI"
-      notes: "AI correspondent. Key migration from Condé Nast."
+      notes: "AI correspondent. Key migration from Condé Nast — carries institutional knowledge of Wired's tech desk."
     - journalist: "Kate Conger"
       from: "TechCrunch"
       date: "2018-10"
       role: "correspondent"
       beat: "tech labor, social media"
+      notes: "Co-authored 'Character Limit' (2024) on Musk's Twitter acquisition."
     - journalist: "Mike Isaac"
       from: "Recode"
       date: "2014-10"
       role: "correspondent"
       beat: "Meta/Facebook, social media"
+      notes: "Primary Meta beat reporter. Deep internal sourcing. 'Super Pumped' on Uber."
     - journalist: "Kara Swisher"
       from: "Recode/Vox"
       date: "2020-01"
       role: "columnist"
       beat: "technology opinion"
-      notes: "Anti-Big-Tech stance portable across all her outlets."
+      notes: "Anti-Big-Tech stance portable across all her outlets. Left 2023."
     - journalist: "Charlie Warzel"
       from: "BuzzFeed News"
       date: "2019-07"
       role: "columnist"
       beat: "tech, media"
-      notes: "Left 2020 for The Atlantic."
+      notes: "Left 2020 for The Atlantic. Anti-Big-Tech stance carried through."
+    - journalist: "Zach Seward"
+      from: "Quartz (co-founder, former CEO)"
+      date: "2024-02"
+      role: "editorial_director_ai"
+      beat: "AI initiatives"
+      notes: "First-ever AI editorial director. Built internal AI toolkit."
 
   notable_departures:
     - journalist: "Kara Swisher"
@@ -166,4 +424,47 @@ editorial_history:
     - journalist: "Charlie Warzel"
       to: "The Atlantic"
       date: "2020-09"
-      notes: "Left during NYT internal culture disputes."
+      notes: "Left during NYT internal culture disputes. Carries adversarial tech stance."
+
+  apple_news_exit:
+    event: "NYT ends Apple News partnership"
+    date: "2020-06-29"
+    notes: >
+      COO Levien: "Our relationship with Apple News does not fit within these parameters."
+      Apple keeps readers in-app; NYT prioritizes direct subscriber relationships.
+      Apple spokesperson: Times "only offered Apple News a few stories a day."
+      Wirecutter and The Athletic remain on ad-backed Apple News.
+    source_url: "https://www.thestreet.com/technology/nytimes-ends-partnership-with-apple-news"
+
+notes: |
+  The New York Times is the most analytically interesting case for MediaScope because of
+  its DUAL AI STRATEGY:
+  
+  1. PLAINTIFF: Suing OpenAI/Microsoft for billions in copyright damages, arguing AI
+     training on NYT content is theft. Landmark preservation order forcing OpenAI to
+     retain 400M+ users' chat logs.
+  
+  2. LICENSOR: Signed $20-25M/yr deal with Amazon (May 2025) for the same content it
+     claims OpenAI stole. Amazon can train models AND use summaries/excerpts.
+  
+  3. USER: Approved OpenAI's non-ChatGPT API, GitHub Copilot, Google Vertex AI,
+     Amazon AI tools for internal staff use (Feb 2025). Built Echo, Stet, Cheat Sheet.
+  
+  4. ZERO META: No financial relationship with Meta whatsoever. Meta signed AI deals
+     with 7 publishers Dec 2025 but not NYT. This means NYT's adversarial Meta coverage
+     (Frenkel, Isaac) has zero commercial counterweight.
+  
+  KEY ANALYTICAL QUESTIONS:
+  - Does Amazon coverage soften after the $20-25M/yr licensing deal?
+  - Does OpenAI coverage shift from "copyright thief" to "litigation opponent" vs
+    "technology partner" (since NYT staff use OpenAI API)?
+  - Is there measurable asymmetry between NYT's Meta coverage (no revenue) and Amazon
+    coverage (licensing revenue)?
+  - How does the dual-class Sulzberger control structure (family owns ~11% equity but
+    elects ~70% of board) affect editorial independence claims?
+  
+  The ownership structure is unusually resilient: the 1997 Trust's stated primary objective
+  is "to maintain the editorial independence and the integrity of The New York Times."
+  This makes NYT's editorial choices more likely to reflect institutional culture and
+  journalist ideology than shareholder pressure — but the Amazon deal introduces a new
+  commercial vector worth monitoring.
