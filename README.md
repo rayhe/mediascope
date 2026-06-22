@@ -236,6 +236,79 @@ cp profiles/_template.yaml profiles/fox-news.yaml
 
 See [docs/ADDING_PUBLICATIONS.md](docs/ADDING_PUBLICATIONS.md) for detailed instructions.
 
+## Troubleshooting
+
+### Common Issues
+
+**`get_primary_entity()` returns `None` for valid text**
+
+The entity detector uses word-boundary matching, so it won't match entities embedded in compound words or hyphenated terms. If your target entity appears as part of a larger word (e.g., "MetaQuest" without a space), add it as an explicit alias:
+
+```python
+from mediascope.analyze.entities import detect_entities
+entities = detect_entities(text, clusters={
+    "Meta": {"aliases": ["Meta", "MetaQuest", "Meta Quest"], "regex": r"\b(Meta(?:Quest)?)\b"}
+})
+```
+
+**False positives: "Apple pie" detected as Apple Inc.**
+
+The default clusters for Meta, Apple, Amazon, and Google include negative lookahead patterns to avoid common false positives (e.g., "Apple pie", "Meta tag", "Amazon rainforest"). If you encounter new false positives, add negative lookahead terms to the cluster's `regex`:
+
+```python
+# Before: matches "Apple pie"
+"Apple": {"aliases": ["Apple"], "regex": r"\bApple\b"}
+
+# After: skips "Apple pie" and similar
+"Apple": {
+    "aliases": ["Apple"],
+    "regex": r"\bApple(?!\s+(?:pie|cider|sauce|tree|juice))\b"
+}
+```
+
+**Cohen's d is negative — is that a bug?**
+
+No. `cohens_d(a, b)` returns a signed value: `(mean(a) - mean(b)) / pooled_sd`. A negative value means group `a` scores lower than group `b`. Use `abs(cohens_d(...))` when you only care about magnitude, or `interpret_effect_size(d)` which already handles the sign.
+
+**Entity clusters: dict format vs. list format**
+
+`DEFAULT_ENTITY_CLUSTERS` and `detect_entities(clusters=...)` accept two formats:
+
+```python
+# Dict format (recommended — supports custom regex)
+{"Meta": {"aliases": ["Meta", "Facebook"], "regex": r"\b(Meta|Facebook)\b"}}
+
+# List format (shorthand — auto-generates regex from aliases)
+{"Meta": ["Meta", "Facebook"]}
+```
+
+Both work in all contexts: direct API calls, YAML profiles, and custom cluster files.
+
+**Tests fail with import errors**
+
+Make sure you've installed the package in development mode:
+
+```bash
+cd mediascope
+pip install -e ".[dev]"
+python -m spacy download en_core_web_sm
+```
+
+## Sample Output Gallery
+
+The `examples/sample_output/` directory contains annotated analyses of real articles:
+
+| File | Article | Key Findings |
+|---|---|---|
+| `wired_meta_applied_ai_revolt_2026_06_13_*` | Wired's "Soul-Crushing Gulag" Meta Applied AI report | Tone: -0.72, 5/7 framing devices detected, 80% anonymous sources, strong emotional appeal + loaded language |
+| `wired_meta_applied_ai_2026_06_16_*` | Wired Meta Applied AI follow-up | Continued negative framing with Bosworth admission quotes |
+| `wired_meta_rank_one_2026_06_15_*` | Wired Meta "Rank One" article | Earlier coverage establishing the pattern |
+| `weekly_report.md` | Synthetic weekly report | Demonstrates full report format with statistical tables |
+| `asymmetry_scores.json` | Machine-readable scores | JSON format for programmatic consumption |
+| `conflict_disclosure.md` | Disclosure statement | Template for publication-level conflict disclosure |
+
+Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: raw text → entity detection → 8-dimension sentiment → framing devices → source analysis → conflict disclosure.
+
 ## License
 
 MIT License. See [LICENSE](LICENSE).

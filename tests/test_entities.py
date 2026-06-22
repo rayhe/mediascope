@@ -117,6 +117,12 @@ class TestDefaultClusters:
             assert len(cluster["aliases"]) > 0, f"Cluster {name} has empty aliases"
 
     def test_each_cluster_has_regex(self):
+        """Clusters should either have a 'regex' key or auto-generate from aliases."""
         for name, cluster in DEFAULT_ENTITY_CLUSTERS.items():
-            assert "regex" in cluster, f"Cluster {name} missing regex"
-            assert len(cluster["regex"]) > 0, f"Cluster {name} has empty regex"
+            # regex is optional — when absent, patterns are auto-built from aliases
+            if "regex" in cluster:
+                assert len(cluster["regex"]) > 0, f"Cluster {name} has empty regex"
+            else:
+                # Must have aliases for auto-generation to work
+                assert "aliases" in cluster, f"Cluster {name} has neither regex nor aliases"
+                assert len(cluster["aliases"]) > 0, f"Cluster {name} has empty aliases and no regex"

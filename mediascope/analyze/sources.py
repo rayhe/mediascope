@@ -218,6 +218,14 @@ def extract_sources(text: str) -> list[SourceMention]:
         re.compile(r"\bpeople (?:briefed on|with knowledge of)", re.IGNORECASE),
         re.compile(r"\binsiders? (?:said|told|indicated|suggested)", re.IGNORECASE),
         re.compile(r"\ba (?:former|current) (?:employee|executive|official) who", re.IGNORECASE),
+        # Unnamed/unidentified source descriptor patterns — common in tech/workplace reporting
+        re.compile(r"\ban? unnamed (?:worker|employee|executive|official|source|person|staffer|engineer)", re.IGNORECASE),
+        re.compile(r"\ban? (?:second|third|fourth|another) (?:worker|employee|source|person|engineer)", re.IGNORECASE),
+        re.compile(r"\b(?:one|another|a) (?:worker|employee|engineer|staffer) (?:said|told|called|described|complained)", re.IGNORECASE),
+        re.compile(r"\ban? (?:worker|employee|engineer|staffer) (?:was quoted|was reported)", re.IGNORECASE),
+        re.compile(r"\b(?:some|several|multiple|many) (?:workers|employees|engineers|staffers) (?:said|told|described|called|complained)", re.IGNORECASE),
+        # Publication-as-investigator patterns
+        re.compile(r"\b\w+ (?:found|reported|revealed) (?:widespread|significant|extensive|growing)", re.IGNORECASE),
     ]
 
     for pat in anon_patterns:

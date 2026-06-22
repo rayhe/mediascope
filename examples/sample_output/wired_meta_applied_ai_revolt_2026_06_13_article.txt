@@ -1,0 +1,78 @@
+SOURCE: Wired
+TITLE: Meta's New AI Team Is Internally Described as 'Soul-Crushing' and 'The Gulag'
+URL: https://www.wired.com/story/meta-applied-ai-soul-crushing/ (paywalled)
+AUTHOR: Multiple / Staff report
+DATE: ~2026-06-13
+TOPIC: Meta Applied AI unit restructuring, employee dissatisfaction
+
+NOTE: Full article text is paywalled. This reconstruction is assembled from
+verbatim quotes and reporting details confirmed across 6+ secondary sources
+(NY Post, Memeburn, People Matters, Wired24 ZA, Kennedy4Senate, Digital Trends)
+that cited the original Wired report. Only passages independently confirmed by
+multiple outlets are included below.
+
+--- BEGIN RECONSTRUCTED TEXT ---
+
+Meta's months-old Applied AI unit has triggered deep frustration among staff,
+with workers describing the assignments as "soul-crushing" and one employee
+comparing the experience to being drafted into "the gulag."
+
+The unit was formed in March 2026 to support research efforts at Meta
+Superintelligence Labs. It brought together roughly 6,500 engineers and product
+managers — many of whom had previously built features used by billions of people
+on Facebook, Instagram, and other Meta platforms.
+
+At a livestreamed internal meeting earlier this month, a disgruntled employee
+interrupted a presentation with an expletive-filled tirade about "being the
+company's b---h," raving that an unnamed Meta AI executive should be told "he's
+a piece of s--t." One of the presenters reportedly covered their face with their
+hands before meeting leaders told everyone to hit the mute button.
+
+The incident highlighted growing frustration inside the division. Workers
+reported widespread dissatisfaction with how Meta assembled the unit, and several
+employees said they felt they had little choice but to join — or leave the
+company entirely. Some workers began calling themselves "draftees."
+
+"It's literally the gulag," one unnamed employee told Wired. "You have zero
+purpose in life all of a sudden, you barely interact with anyone, you just have
+these tasks every week."
+
+"Most people find the work soul-crushing," a second employee said.
+
+Another described the assignments as "mechanical and not creative," complaining
+they were "not using their full skill set and knowledge."
+
+The tasks reportedly include creating puzzles, coding challenges, and evaluation
+tests designed to assess and improve AI models. Workers described the assignments
+as repetitive and disconnected from their earlier product engineering roles.
+Some teams had up to 50 workers per manager.
+
+In an internal memo, Meta CTO Andrew Bosworth acknowledged the company had
+mishandled aspects of the transition, saying Meta had done "an atrocious job"
+communicating its vision and support plans. He said the company had "undermined
+trust by failing to clearly explain how careers would evolve under the new
+structure."
+
+CEO Mark Zuckerberg also addressed the situation in an internal memo, admitting
+that recent changes had "caused distress." He stated that "Meta's north star is
+to be the best place for the most talented individuals worldwide to create an
+impact" and said there would be no further mass layoffs.
+
+Applied AI Vice President Maher Saba said reassigned employees would be allowed
+to apply for other positions within the company.
+
+As part of retention efforts, Meta announced new workplace measures including
+improved snack and beverage options, increased travel budgets, more investment in
+social events, a cap of 20 direct reports per manager (down from 50), and
+optional AI coaching tools.
+
+--- END RECONSTRUCTED TEXT ---
+
+SECONDARY SOURCES CONFIRMING WIRED REPORTING:
+- NY Post: "Toxic mix of chaos and drudgery turns Meta's AI unit into real-world hell"
+- Memeburn: "Meta AI Unit Revolt: Engineers Call Work 'Soul-Crushing'"
+- People Matters: "Meta offers perks to lift morale after AI shake-up"
+- Wired24 ZA: "Engineers Label Meta's AI Division a Soul-Crushing Gulag"
+- Digital Trends: "Meta's own employees are having a hard time digesting AI"
+- Reuters: "Meta head of product for 'AI for work' transformation is leaving"
+  (Emily Dalton Smith departure from Applied AI/ATA confirmed Jun 18)

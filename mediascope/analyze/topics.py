@@ -115,6 +115,20 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "damages", "penalty", "fine", "fined", "consent order",
         "appeals court", "Supreme Court", "district court",
     ],
+    "workplace_culture": [
+        "morale", "employee morale", "employees", "workers",
+        "dissatisfaction", "frustration", "burnout", "turnover",
+        "soul-crushing", "soul crushing", "draftees", "drudge",
+        "drudgery", "menial", "attrition", "retention",
+        "workplace", "culture", "toxic culture", "work environment",
+        "internal revolt", "petition", "union", "union drive",
+        "reassignment", "reassigned", "laid off", "layoffs",
+        "internal memo", "all-hands", "livestream",
+        "remote work", "return to office", "RTO",
+        "team morale", "job satisfaction", "disgruntled",
+        "demoralizing", "demoralized", "onboarding",
+        "manager ratio", "direct reports",
+    ],
 }
 
 

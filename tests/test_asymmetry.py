@@ -126,7 +126,8 @@ class TestCohensD:
         a = [-0.8, -0.7, -0.9, -0.6, -0.85]
         b = [0.3, 0.4, 0.2, 0.5, 0.35]
         d = cohens_d(a, b)
-        assert d > 0.8, f"Expected large effect, got {d}"
+        # cohens_d returns signed value (a - b); these groups are far apart
+        assert abs(d) > 0.8, f"Expected large effect, got {d}"
 
     def test_small_effect(self):
         a = [0.0, 0.1, -0.1, 0.05, -0.05]

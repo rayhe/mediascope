@@ -221,6 +221,16 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"undisclosed|unannounced|under.?the.?radar)\b",
         re.IGNORECASE,
     ),
+    # Workplace-specific loaded language — terms that characterize
+    # organizational decisions as oppressive or dehumanizing
+    re.compile(
+        r"\b(?:soul.?crushing|drudge|drudgery|gulag|"
+        r"assembly line|human assembly line|data factory|"
+        r"draftees?|drafted|disposable|"
+        r"menial|dehumanizing|atrocious|brutal|"
+        r"exploitation|slave|sweatshop)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 

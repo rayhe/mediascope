@@ -38,6 +38,15 @@ ANONYMOUS_SOURCE_PATTERNS: list[re.Pattern] = [
     re.compile(r"\breviewed by \w+\b", re.IGNORECASE),
     re.compile(r"\ba source (?:with knowledge|close|familiar|briefed|told|said|confirmed)\b", re.IGNORECASE),
     re.compile(r"\bmultiple sources (?:confirm|said|told)\b", re.IGNORECASE),
+    # Unnamed/unidentified descriptor patterns — catch anonymous sources described
+    # by role rather than by the standard "spoke on condition of anonymity" phrases
+    re.compile(r"\ban? unnamed (?:worker|employee|executive|official|source|person|staffer|engineer)\b", re.IGNORECASE),
+    re.compile(r"\ban? (?:second|third|fourth|another) (?:worker|employee|source|person|engineer)\b", re.IGNORECASE),
+    re.compile(r"\b(?:one|another|a) (?:worker|employee|engineer|staffer) (?:said|told|called|described|complained)\b", re.IGNORECASE),
+    re.compile(r"\ban? (?:worker|employee|engineer|staffer) (?:was quoted|was reported)\b", re.IGNORECASE),
+    re.compile(r"\b(?:some|several|multiple|many|other) (?:workers|employees|engineers|staffers|people) (?:said|told|described|complained|called)\b", re.IGNORECASE),
+    # Publication-investigative patterns
+    re.compile(r"\b\w+ (?:found|reported|revealed) (?:widespread|significant|extensive|growing)\b", re.IGNORECASE),
 ]
 
 # Named source patterns — look for "Name said", "said Name", "according to Name"
@@ -45,11 +54,11 @@ NAMED_SOURCE_PATTERNS: list[re.Pattern] = [
     # "Name said" / "Name told" — capitalized name followed by attribution verb
     re.compile(
         r"\b([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+)\s+"
-        r"(?:said|told|stated|noted|explained|argued|claimed|insisted|warned|added|commented)\b"
+        r"(?:said|told|stated|noted|explained|argued|claimed|insisted|warned|added|commented|confirmed|acknowledged|revealed|described)\b"
     ),
     # "said Name" — attribution verb followed by capitalized name
     re.compile(
-        r"\b(?:said|told|stated|noted|explained|argued|claimed|insisted|warned|added|commented)\s+"
+        r"\b(?:said|told|stated|noted|explained|argued|claimed|insisted|warned|added|commented|confirmed|acknowledged|revealed|described)\s+"
         r"([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+)\b"
     ),
     # "according to Name"
@@ -85,6 +94,12 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "under siege", "slammed", "blasted", "hammered", "crushed",
     "destroyed", "eviscerated", "torched", "ripped", "grilled",
     "excoriated", "lambasted",
+    # Workplace/organizational emotional terms
+    "soul-crushing", "soul crushing", "brutal", "atrocious",
+    "drudge", "drudgery", "gulag", "hell", "humiliation",
+    "disposable", "demoralized", "demoralizing", "disgruntled",
+    "fury", "furious", "revolt", "rage", "nightmare",
+    "horror", "excruciating", "hellish", "grueling",
 ]
 
 # Passive/victim vs. active/powerful framing indicators
@@ -99,6 +114,11 @@ PASSIVE_FRAMING: list[str] = [
     "declined to answer", "declined to respond",
     "quietly built", "quietly removed", "quietly deleted",
     "secretly", "covertly", "surreptitiously",
+    # Workplace/organizational passive framing
+    "felt they had to", "had little choice", "had little real choice",
+    "felt coerced", "were drafted", "were reassigned",
+    "dropped to levels", "morale dropped", "anxiety has lingered",
+    "dissatisfaction", "frustration", "unrest",
 ]
 
 ACTIVE_FRAMING: list[str] = [

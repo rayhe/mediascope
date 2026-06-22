@@ -97,7 +97,9 @@ Relationship types: `licensing`, `advertising`, `partnership`, `investment`, `in
 
 ### Target Entity Clusters
 
-Define how to recognize mentions of companies in articles:
+Define how to recognize mentions of companies in articles. Two formats are supported:
+
+**Dict format (recommended)** — explicit aliases and optional custom regex:
 
 ```yaml
 target_entities:
@@ -106,10 +108,24 @@ target_entities:
     regex: "\\b(Meta(?! tag| data)|Facebook|Instagram|WhatsApp)\\b"
 ```
 
+**List format (shorthand)** — auto-generates word-boundary regex from aliases:
+
+```yaml
+target_entities:
+  "Meta":
+    - "Meta Platforms"
+    - "Facebook"
+    - "Instagram"
+    - "WhatsApp"
+```
+
+The dict format is preferred for entities with common false positives (Apple, Meta, Amazon) because the `regex` field lets you add negative lookahead patterns.
+
 **Tips**:
 - Include subsidiary names, product names, and executive names
 - Use negative lookahead to avoid false positives (e.g., `Meta(?! tag)` avoids matching "meta tag")
 - Word boundaries (`\b`) prevent partial matches
+- The `regex` key is optional — omit it to auto-generate patterns from the alias list
 
 ## Research Guide
 

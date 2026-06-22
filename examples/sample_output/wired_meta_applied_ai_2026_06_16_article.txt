@@ -1,0 +1,39 @@
+Meta's Applied AI Unit Has Employees Calling Their Work 'Soul-Crushing'
+
+The unit was formed to support Meta's AI ambitions, but employees say the reality is demoralizing.
+
+At a live-streamed meeting earlier this month, an employee interrupted speakers to go on an expletive-filled tirade, raving that an unnamed Meta AI exec should be told, "he's a piece of shit." One of the presenters covered their face with their hands before the meeting's leaders told everyone to hit the mute button.
+
+The incident highlights growing frustration inside Meta's Applied AI team, which was formed in March to support the work of AI researchers at Meta Superintelligence Labs, and comes as anxiety has lingered after a brutal round of layoffs targeting 8,000 employees last month.
+
+WIRED found widespread dissatisfaction with how Mark Zuckerberg's Meta assembled the unit of about 6,500 engineers and product managers, finding employees are fed up with the drudge work they say is required of them to improve AI models.
+
+"It's literally the gulag," an unnamed worker told WIRED. "You have zero purpose in life all of a sudden, you barely interact with anyone, you just have these tasks every week."
+
+The tasks reportedly include creating puzzles to test the reliability of Meta and others' AI models. Meta workers called the work easy compared to the software development they previously did, but complained that it's menial and say "almost all" employees seem unhappy.
+
+"Most people find the work soul-crushing," a second employee was quoted as saying.
+
+Another worker called their job "mechanical and not creative," complaining they're "not using their full skill set and knowledge."
+
+Some employees reportedly felt they had to join the team or leave Meta. WIRED reported that some engineers called themselves "draftees" because they had little real choice in the move.
+
+The unit sits under Maher Saba, a longtime Reality Labs veteran, and ultimately reports to CTO Andrew Bosworth. The org chart was aggressively flat — on some teams the ratio hit 50 individual contributors to one manager. New arrivals described onboarding as watching colleagues experience the same dawning horror they had felt weeks earlier.
+
+"We went from building for billions of users to assembling data for hundreds of AI scientists to feed to computer chips," one employee said.
+
+Meta had also rolled out a program that captured clicks and keystrokes from U.S. employees to generate still more training data for its models. It had no easy opt-out at first. One office started calling it the Employee Data Extraction Factory. More than 1,600 employees signed a petition demanding it stop.
+
+The company eventually offered small concessions — pauses of up to 30 minutes, case-by-case exemptions — but the message had already landed. The same organization asking its people to pour their creativity into AI was also quietly harvesting their everyday digital exhaust to feed it.
+
+In May, Meta had cut roughly 8,000 jobs — 10 percent of the company — in a restructuring explicitly tied to its AI pivot. The Applied AI reassignments were part of the same wave. Stress rippled outward: data-center teams, Instagram, other divisions all felt the aftershocks. Morale company-wide dropped to levels Bosworth would later compare to the Cambridge Analytica period. He called the rollout itself "atrocious."
+
+Mark Zuckerberg's internal memo landed Friday, after the livestream story had already begun circulating. "Given the complexity of these changes, we've made mistakes and will almost certainly make more," the CEO said. He reiterated that there would be no additional company-wide mass layoffs this year. He promised to address the manager-to-employee ratios that had ballooned. He framed the Applied AI work as important but temporary — a waypoint while the company created better long-term roles for the people inside it.
+
+Chief Product Officer Chris Cox, speaking to Instagram employees, was more colloquial. The environment was "brutal," he said. It felt like "running a marathon in the middle of a hailstorm and then, like, your teammate gets replaced and then we're recording you."
+
+Meta plans to cap managers at around 20 direct reports. Meta also announced more budget for team events, a big hackathon next month, and assigned desks by year-end.
+
+In the UK, staff were reportedly exploring a union drive. On internal forums and in private channels, employees kept asking: How many more people would quietly leave? What was the actual output of this human assembly line compared with the human cost? And why did the people building the future feel so disposable inside the company that claimed to be building it?
+
+Meta declined to comment to WIRED on the livestream incident.
