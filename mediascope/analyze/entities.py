@@ -124,6 +124,16 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "The Information",
         ],
     },
+    "Whistleblowers/Critics": {
+        "aliases": [
+            "Sarah Wynn-Williams", "Wynn-Williams",
+            "Frances Haugen", "Haugen",
+            "Sophie Zhang",
+            "Christopher Wylie", "Wylie",
+            "Carole Cadwalladr", "Cadwalladr",
+            "Tim Wu",
+        ],
+    },
 }
 
 

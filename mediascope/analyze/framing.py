@@ -88,7 +88,14 @@ _CATASTROPHIZING_PATTERNS: list[re.Pattern] = [
     re.compile(
         r"\b(?:could destroy|will destroy|threatens to destroy|"
         r"threatens to upend|could wipe out|"
-        r"end of|death of|demise of|downfall of)\b",
+        r"death of|demise of|downfall of)\b",
+        re.IGNORECASE,
+    ),
+    # "end of" only when followed by abstract/institutional objects, not events
+    re.compile(
+        r"\bend of\s+(?:the\s+)?(?:democracy|freedom|privacy|"
+        r"journalism|an? era|civilization|the world|humanity|"
+        r"civil liberties|free speech|the internet)\b",
         re.IGNORECASE,
     ),
     re.compile(
@@ -153,6 +160,16 @@ _EMOTIONAL_APPEAL_PATTERNS: list[re.Pattern] = [
     # Emphatic rhetorical questions
     re.compile(
         r"\b(?:how (?:can|could|dare)|why (?:won't|wouldn't|hasn't|should))\b.{5,80}\?",
+        re.IGNORECASE,
+    ),
+    # Sympathy-eliciting personal impact — individual suffering from institutional action
+    re.compile(
+        r"\b(?:moved to tears|brought to tears|broke down|"
+        r"standing ovation|applause|"
+        r"solidarity (?:for|with)|act of solidarity|"
+        r"forced into silence|sat in silence|"
+        r"unable (?:even )?to (?:speak|nod|respond)|"
+        r"threatened (?:her|him|them|with) (?:bankruptcy|ruin))\b",
         re.IGNORECASE,
     ),
 ]
@@ -229,6 +246,27 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"draftees?|drafted|disposable|"
         r"menial|dehumanizing|atrocious|brutal|"
         r"exploitation|slave|sweatshop)\b",
+        re.IGNORECASE,
+    ),
+    # Legal silencing / corporate censorship language — terms that frame
+    # legal action as suppression of free expression
+    re.compile(
+        r"\b(?:censorship|silenced?|silencing|gagged|gag.?order|"
+        r"muzzled|hostage(?:\s+situation)?|"
+        r"despotic|tyrann(?:y|ical)|"
+        r"trolling(?:\-like)?|"
+        r"suppress(?:ion|ing|ed)?|"
+        r"retaliatory|retaliation|chilling\s+effect)\b",
+        re.IGNORECASE,
+    ),
+    # Corporate power framing — language positioning corporations as
+    # state-like or authoritarian actors
+    re.compile(
+        r"\b(?:sovereign\s+affect|assert\s+their\s+power|"
+        r"nation\s+states?|"
+        r"kings?,?\s+emperors?|"
+        r"bankrupt(?:cy|ed|ing)?|"
+        r"formally\s+sanctioned|sanctions?\s+motion)\b",
         re.IGNORECASE,
     ),
 ]
@@ -310,6 +348,15 @@ _TIMELINE_IMPLICATION_PATTERNS: list[re.Pattern] = [
         r"raises questions about|undermines?|belies?|"
         r"despite (?:previous|prior|earlier|public) (?:claims?|statements?|messaging|assurances?))\b",
         re.IGNORECASE,
+    ),
+    # "on the eve of" / "shortly before" — editorial timing device suggesting
+    # preemptive or premeditated suppression/action
+    re.compile(
+        r"\b(?:on the eve of|on the verge of|just before|shortly before|"
+        r"the night before|the day before)\b"
+        r".{0,60}?"
+        r"\b(?:publication|launch|release|announcement|hearing|trial|vote|event|festival)\b",
+        re.IGNORECASE | re.DOTALL,
     ),
 ]
 

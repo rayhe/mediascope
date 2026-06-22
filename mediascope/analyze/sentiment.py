@@ -105,6 +105,14 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "faceprints", "faceprint", "vacuum up", "weaponized",
     "stalkers", "stalking", "abusers", "covert filming",
     "vile", "vile behavior", "invasive",
+    # Legal/censorship/power-abuse emotional terms
+    "censorship", "silenced", "silencing", "gagged", "gag order",
+    "muzzled", "hostage", "hostage situation",
+    "despotic", "tyranny", "tyrannical", "oppressive", "oppression",
+    "trolling", "intimidate", "intimidation", "bankrupt", "bankruptcy",
+    "sanctioned", "sanctions motion", "punitive",
+    "chilling", "chilling effect", "suppress", "suppression",
+    "retaliation", "retaliatory", "stifle", "stifled",
 ]
 
 # Passive/victim vs. active/powerful framing indicators
@@ -124,6 +132,15 @@ PASSIVE_FRAMING: list[str] = [
     "felt coerced", "were drafted", "were reassigned",
     "dropped to levels", "morale dropped", "anxiety has lingered",
     "dissatisfaction", "frustration", "unrest",
+    # Legal silencing / corporate power framing
+    "forced to sit in silence", "unable to speak", "unable even to nod",
+    "forced into silence", "sat in silence", "sit in silence",
+    "threatened with bankruptcy", "threatened her",
+    "on the eve of publication", "fines of",
+    "formally sanctioned", "legal order", "legal restrictions",
+    "mounting legal restrictions", "legal action",
+    "emergency legal order", "emergency arbitration",
+    "arbitration order", "sanctions motion",
 ]
 
 ACTIVE_FRAMING: list[str] = [

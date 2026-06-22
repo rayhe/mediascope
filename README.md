@@ -300,6 +300,8 @@ The `examples/sample_output/` directory contains annotated analyses of real arti
 
 | File | Article | Key Findings |
 |---|---|---|
+| `guardian_meta_whistleblower_hay_festival_2026_06_01_*` | Guardian: Meta silences Facebook whistleblower at Hay Festival | Tone: -0.45 manual/-0.57 toolkit, 20 framing devices (15 loaded_language + 4 emotional_appeal + 1 timeline_implication), 0 anonymous sources, 100% anti-Meta source deployment. First Guardian example — control case for editorial bias without financial conflicts. |
+| `wired_meta_nametag_facial_recognition_2026_06_05_*` | Wired: Meta "NameTag" facial recognition investigation | Tone: -0.65, 8+ framing devices, critical VADER positive-bias gap identified |
 | `wired_meta_applied_ai_revolt_2026_06_13_*` | Wired's "Soul-Crushing Gulag" Meta Applied AI report | Tone: -0.72, 5/7 framing devices detected, 80% anonymous sources, strong emotional appeal + loaded language |
 | `wired_meta_applied_ai_2026_06_16_*` | Wired Meta Applied AI follow-up | Continued negative framing with Bosworth admission quotes |
 | `wired_meta_rank_one_2026_06_15_*` | Wired Meta "Rank One" article | Earlier coverage establishing the pattern |
