@@ -26,6 +26,9 @@ This is not an attack tool. It works equally well pointed at Fox News covering r
 7. **Generates disclosure statements** — ready-to-post conflict of interest disclosures
 8. **Produces reports** — weekly Markdown reports and HTML dashboards
 9. **Tracks editorial histories** — journalist migrations between publications as causal signal for bias attribution **(novel contribution — no prior work does this)**
+10. **Detects outsourced intensity** — when journalists outsource emotional language to quotes while keeping prose neutral **(new)**
+11. **Analyzes source stance** — measures whether sources are deployed adversarially or supportively, beyond just named/anonymous **(new)**
+12. **Detects power asymmetry framing** — editorial device positioning institutional power against individual vulnerability **(new)**
 
 ## ✨ Novel: Editorial Histories
 

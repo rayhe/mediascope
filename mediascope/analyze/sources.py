@@ -358,3 +358,137 @@ def classify_attribution_verb(verb: str) -> str:
     elif v in LOADED_VERBS:
         return "loaded"
     return "unknown"
+
+
+# --- Source stance analysis ---
+
+# Negative stance indicators in quotes/context — signals the source is
+# positioned to undermine or criticize the subject entity.
+_NEGATIVE_STANCE_TERMS: list[str] = [
+    "harmful", "dangerous", "reckless", "irresponsible", "unacceptable",
+    "outrageous", "appalling", "unethical", "deceptive", "misleading",
+    "violated", "violating", "violation", "abuse", "abusive",
+    "exploiting", "exploitation", "surveillance", "invasion",
+    "threatening", "threatened", "scary", "alarming", "disturbing",
+    "catastrophic", "devastating", "shameful", "disgraceful",
+    "failure", "failed", "broken", "corrupt", "toxic",
+    "censorship", "silencing", "suppression", "retaliation",
+    "monopoly", "anti-competitive", "predatory", "bullying",
+    "inadequate", "insufficient", "negligent", "negligence",
+    "soul-crushing", "dehumanizing", "atrocious", "brutal",
+    "lied", "lying", "dishonest", "hypocrisy", "hypocritical",
+    "demand", "demanded", "must stop", "should stop", "must be held",
+    "accountability", "hold accountable", "ban", "block", "kill",
+]
+
+# Positive stance indicators in quotes/context — signals the source is
+# positioned to validate or defend the subject entity.
+_POSITIVE_STANCE_TERMS: list[str] = [
+    "innovative", "groundbreaking", "revolutionary", "pioneering",
+    "impressive", "remarkable", "excellent", "outstanding", "world-class",
+    "responsible", "committed", "dedicated", "thoughtful", "careful",
+    "improved", "improving", "progress", "achievement", "milestone",
+    "beneficial", "positive", "constructive", "helpful", "empowering",
+    "proud", "excited", "thrilled", "delighted", "pleased",
+    "safe", "safety", "secure", "security", "privacy-focused",
+    "transparent", "transparency", "open", "collaborative",
+    "leading", "leader", "best-in-class", "state-of-the-art",
+]
+
+
+def analyze_source_stance(
+    sources: list[SourceMention],
+    target_entity: str = "",
+) -> dict:
+    """Analyse the collective stance of sources toward a subject entity.
+
+    Unlike ``grade_source_authority`` (which measures source quality),
+    this function measures *whose side* the sources are on.  An article
+    can have 100% named, high-authority sources — all deployed to
+    undermine the subject.  That's high authority but adversarial stance.
+
+    Args:
+        sources: Extracted source mentions from the article.
+        target_entity: Optional target entity name for context-aware
+            stance detection (unused in current version; reserved for
+            future entity-coref-based stance detection).
+
+    Returns:
+        Dict with:
+        - ``adversarial_count``: sources positioned against the subject
+        - ``supportive_count``: sources positioned supporting the subject
+        - ``neutral_count``: sources with no clear stance
+        - ``stance_balance``: -1.0 (all adversarial) to +1.0 (all supportive)
+        - ``total_sources``: total source count
+        - ``adversarial_sources``: list of adversarial source names/descriptors
+        - ``supportive_sources``: list of supportive source names/descriptors
+    """
+    if not sources:
+        return {
+            "adversarial_count": 0,
+            "supportive_count": 0,
+            "neutral_count": 0,
+            "stance_balance": 0.0,
+            "total_sources": 0,
+            "adversarial_sources": [],
+            "supportive_sources": [],
+        }
+
+    adversarial: list[str] = []
+    supportive: list[str] = []
+    neutral: list[str] = []
+
+    for source in sources:
+        # Combine quote and attribution verb context for stance detection
+        context_text = (source.quote + " " + source.attribution_verb).lower()
+
+        neg_count = sum(
+            1 for term in _NEGATIVE_STANCE_TERMS
+            if re.search(rf"\b{re.escape(term)}\b", context_text)
+        )
+        pos_count = sum(
+            1 for term in _POSITIVE_STANCE_TERMS
+            if re.search(rf"\b{re.escape(term)}\b", context_text)
+        )
+
+        # Also consider the attribution verb: loaded verbs with negative
+        # connotation shift the stance adversarial
+        verb = source.attribution_verb.lower().strip() if source.attribution_verb else ""
+        if verb in {"warned", "blasted", "slammed", "demanded", "accused",
+                     "alleged", "charged", "complained", "fumed", "lamented",
+                     "ranted", "scoffed", "sneered", "threatened"}:
+            neg_count += 1
+        elif verb in {"confirmed", "acknowledged", "noted", "explained"}:
+            # These are neutral-to-positive — don't shift
+            pass
+
+        if neg_count > pos_count:
+            adversarial.append(source.name)
+        elif pos_count > neg_count:
+            supportive.append(source.name)
+        else:
+            neutral.append(source.name)
+
+    total = len(sources)
+    adversarial_count = len(adversarial)
+    supportive_count = len(supportive)
+    neutral_count = len(neutral)
+
+    # Stance balance: -1.0 (all adversarial) to +1.0 (all supportive)
+    if adversarial_count + supportive_count == 0:
+        stance_balance = 0.0
+    else:
+        stance_balance = (supportive_count - adversarial_count) / (
+            adversarial_count + supportive_count
+        )
+    stance_balance = round(max(-1.0, min(1.0, stance_balance)), 4)
+
+    return {
+        "adversarial_count": adversarial_count,
+        "supportive_count": supportive_count,
+        "neutral_count": neutral_count,
+        "stance_balance": stance_balance,
+        "total_sources": total,
+        "adversarial_sources": adversarial,
+        "supportive_sources": supportive,
+    }

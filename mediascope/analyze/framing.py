@@ -361,6 +361,76 @@ _TIMELINE_IMPLICATION_PATTERNS: list[re.Pattern] = [
 ]
 
 
+# Power asymmetry framing: editorial device positioning a large entity's
+# resources as crushing a smaller/individual entity, emphasising the
+# imbalance of power (financial, legal, institutional) rather than the
+# substantive dispute.  Common in whistleblower, antitrust, and labor
+# coverage where the frame is "giant vs little guy."
+_POWER_ASYMMETRY_PATTERNS: list[re.Pattern] = [
+    # Financial/legal power vs individual — "$X corporation", "worth $X billion",
+    # "multi-billion-dollar" near individual/person/whistleblower/worker/employee
+    re.compile(
+        r"\b(?:(?:trillion|billion|multi.?billion|multi.?million).?dollar|"
+        r"\$\d+(?:\.\d+)?\s*(?:trillion|billion|million)|"
+        r"worth\s+\$\d+|valued at\s+\$\d+)\b"
+        r".{0,120}?"
+        r"\b(?:individual|person|worker|employee|whistleblower|"
+        r"activist|critic|plaintiff|woman|man|mother|father|"
+        r"her\b|him\b|she\b|he\b)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse direction: individual near corporate financial scale
+    re.compile(
+        r"\b(?:individual|person|worker|employee|whistleblower|"
+        r"activist|critic|plaintiff|woman|man|single mother|single father)\b"
+        r".{0,120}?"
+        r"\b(?:(?:trillion|billion|multi.?billion|multi.?million).?dollar|"
+        r"\$\d+(?:\.\d+)?\s*(?:trillion|billion|million)|"
+        r"worth\s+\$\d+|valued at\s+\$\d+)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Legal army / legal machinery language
+    re.compile(
+        r"\b(?:army of (?:lawyers|attorneys)|legal (?:team|machinery|muscle|firepower|juggernaut)|"
+        r"deep.?pocket(?:ed|s)?|"
+        r"outspent|outgunned|outmatched|outlawyered|"
+        r"unlimited (?:resources|legal|funds|budget)|"
+        r"vastly (?:outspend|outresource|outmatch))\b",
+        re.IGNORECASE,
+    ),
+    # David vs Goliath / explicit power asymmetry language
+    re.compile(
+        r"\b(?:David (?:and|vs?\.?|versus|against) Goliath|"
+        r"David.?and.?Goliath|"
+        r"power (?:imbalance|asymmetry|disparity|differential)|"
+        r"punching (?:up|down)|"
+        r"crushing|steamroll(?:ed|ing)?|"
+        r"bulldoz(?:ed?|ing)|"
+        r"overwhelm(?:ed|ing)?(?:\s+by)?(?:\s+(?:corporate|legal|financial)))\b",
+        re.IGNORECASE,
+    ),
+    # "cannot afford" / "could not afford" near legal/fight/defense
+    re.compile(
+        r"\b(?:cannot|couldn't|could not|can't)\s+afford\b"
+        r".{0,60}?"
+        r"\b(?:legal|lawyer|attorney|fight|defense|defend|litigation|battle|challenge)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Fine/penalty amounts framed against individual capacity
+    re.compile(
+        r"\b(?:fines?\s+of|penalty\s+of|penalties\s+of|damages\s+of|"
+        r"liable\s+for|facing\s+up\s+to|risking)\b"
+        r".{0,40}?"
+        r"\$\d+"
+        r".{0,60}?"
+        r"\b(?:per\s+(?:violation|breach|instance|day)|"
+        r"each\s+(?:violation|breach|instance)|"
+        r"bankrupt|ruin|devastat)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+
+
 # Map device type to its pattern list
 _DEVICE_PATTERNS: dict[str, list[re.Pattern]] = {
     "guilt_by_association": _GUILT_BY_ASSOCIATION_PATTERNS,
@@ -374,16 +444,18 @@ _DEVICE_PATTERNS: dict[str, list[re.Pattern]] = {
     "refusal_amplification": _REFUSAL_AMPLIFICATION_PATTERNS,
     "juxtaposition": _JUXTAPOSITION_PATTERNS,
     "timeline_implication": _TIMELINE_IMPLICATION_PATTERNS,
+    "power_asymmetry": _POWER_ASYMMETRY_PATTERNS,
 }
 
 
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for patterns associated with 8 types of editorial framing:
+    Scans for patterns associated with 12 types of editorial framing:
     guilt_by_association, anonymous_authority, catastrophizing,
     false_balance, selective_omission_signal, emotional_appeal,
-    straw_man, and loaded_language.
+    straw_man, loaded_language, refusal_amplification,
+    juxtaposition, timeline_implication, and power_asymmetry.
 
     Args:
         text: The article text to analyze.

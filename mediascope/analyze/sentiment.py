@@ -171,7 +171,10 @@ class SentimentResult:
     """Multi-dimensional sentiment analysis result.
 
     Eight dimensions capture different aspects of media framing
-    beyond simple positive/negative sentiment.
+    beyond simple positive/negative sentiment.  When adversarial
+    framing is strong enough to override VADER/TextBlob polarity,
+    ``framing_corrected`` is set to ``True`` and ``raw_tone``
+    preserves the uncorrected composite for comparison.
     """
 
     overall_tone: float = 0.0                  # -1.0 to 1.0
@@ -182,6 +185,9 @@ class SentimentResult:
     anonymous_source_ratio: float = 0.0        # 0.0 to 1.0
     speculative_language_ratio: float = 0.0    # 0.0 to 1.0
     comparative_framing: float = 0.0           # -1.0 to 1.0
+    # Framing-correction metadata
+    framing_corrected: bool = False            # True when framing override fired
+    raw_tone: float = 0.0                      # uncorrected VADER+TextBlob blend
 
 
 def analyze_vader(text: str) -> dict:
@@ -339,6 +345,12 @@ def _measure_headline_alignment(headline: str, body: str) -> float:
 
     Compares sentiment direction between headline and body.
     Returns -1.0 (contradictory) to 1.0 (aligned).
+
+    Fix (Jun 22, 2026): previous version returned negative scores when
+    both headline and body were negative but at different magnitudes
+    due to VADER assigning opposite signs to headline-length vs body-
+    length text.  Now uses a sign-aware check with a neutral zone
+    (|compound| < 0.05 treated as zero) to avoid sign-flip artifacts.
     """
     if not headline or not body:
         return 0.0
@@ -349,26 +361,35 @@ def _measure_headline_alignment(headline: str, body: str) -> float:
     h_compound = headline_vader["compound"]
     b_compound = body_vader["compound"]
 
-    # If both have the same sign and similar magnitude, they're aligned
-    # If opposite signs, they're misaligned
-    if h_compound == 0 and b_compound == 0:
+    # Treat very small magnitudes as neutral to prevent sign-flip artifacts
+    h_sign = 0 if abs(h_compound) < 0.05 else (1 if h_compound > 0 else -1)
+    b_sign = 0 if abs(b_compound) < 0.05 else (1 if b_compound > 0 else -1)
+
+    # Both neutral
+    if h_sign == 0 and b_sign == 0:
         return 0.0
 
-    # Check if same direction
-    if (h_compound >= 0 and b_compound >= 0) or (h_compound < 0 and b_compound < 0):
-        # Same direction — alignment is based on magnitude similarity
-        if max(abs(h_compound), abs(b_compound)) == 0:
-            return 0.0
-        magnitude_ratio = min(abs(h_compound), abs(b_compound)) / max(abs(h_compound), abs(b_compound))
+    # One is neutral, the other has a direction — weak alignment
+    if h_sign == 0 or b_sign == 0:
+        return 0.3
 
-        # If headline is much more extreme than body, slight penalty
+    # Same direction — alignment score based on magnitude similarity
+    if h_sign == b_sign:
+        mag_min = min(abs(h_compound), abs(b_compound))
+        mag_max = max(abs(h_compound), abs(b_compound))
+        if mag_max == 0:
+            return 0.0
+        magnitude_ratio = mag_min / mag_max
+
+        # Penalise if headline is much more extreme than body (clickbait)
         if abs(h_compound) > abs(b_compound) * 2:
             return round(magnitude_ratio * 0.5, 4)
         return round(magnitude_ratio, 4)
-    else:
-        # Opposite directions — misalignment
-        diff = abs(h_compound - b_compound)
-        return round(-min(diff, 1.0), 4)
+
+    # Opposite directions — misalignment (but cap at -0.8 to avoid
+    # overly harsh scores from VADER noise)
+    diff = abs(h_compound - b_compound)
+    return round(-min(diff, 0.8), 4)
 
 
 def _measure_comparative_framing(text: str) -> float:
@@ -399,11 +420,238 @@ def _measure_comparative_framing(text: str) -> float:
     return round(score, 4)
 
 
+# --- Adversarial framing device types ---
+# These device types signal the editorial is positioned *against* the subject.
+# Used by _compute_framing_correction to detect VADER-unreliable articles.
+_ADVERSARIAL_DEVICE_TYPES: set[str] = {
+    "loaded_language",
+    "timeline_implication",
+    "guilt_by_association",
+    "juxtaposition",
+    "refusal_amplification",
+    "emotional_appeal",
+    "catastrophizing",
+    "power_asymmetry",
+}
+
+# Minimum thresholds for framing correction activation
+_FRAMING_MIN_ADVERSARIAL_DEVICES = 3  # at least 3 adversarial framing devices
+_FRAMING_MAX_AGENCY = -0.3            # agency must be negative (passive/adversarial)
+
+
+# --- Outsourced intensity detection ---
+# Quote extraction patterns for splitting quoted vs editorial text.
+_QUOTE_PATTERNS: list[re.Pattern] = [
+    re.compile(r'\u201c([^\u201d]+)\u201d'),  # smart double quotes
+    re.compile(r'"([^"]+)"'),                  # straight double quotes
+    re.compile(r"\u2018([^\u2019]+)\u2019"),   # smart single quotes (long-form)
+]
+
+
+def measure_outsourced_intensity(text: str) -> dict:
+    """Measure outsourced emotional intensity — the editorial technique of
+    deploying emotional quotes from sources while keeping prose measured.
+
+    Returns a dict with:
+    - ``quoted_intensity``: emotional language density in quoted text (0–1)
+    - ``editorial_intensity``: emotional language density in non-quoted text (0–1)
+    - ``outsourced_ratio``: how much more emotional quoted text is vs editorial.
+      0.0 = no outsourcing (equal or editorial is more emotional).
+      1.0 = all emotional language is in quotes, none in editorial prose.
+    - ``quoted_word_count``: total words in quoted segments.
+    - ``editorial_word_count``: total words in editorial (non-quoted) segments.
+
+    Journalists who maintain neutral prose while deploying quotes like
+    "this is censorship", "soul-crushing", "despotic" achieve high
+    outsourced_ratio scores — the emotional punch is real but the
+    journalist's byline text reads as measured and professional.
+    """
+    if not text:
+        return {
+            "quoted_intensity": 0.0,
+            "editorial_intensity": 0.0,
+            "outsourced_ratio": 0.0,
+            "quoted_word_count": 0,
+            "editorial_word_count": 0,
+        }
+
+    # Extract all quoted segments
+    quoted_segments: list[str] = []
+    quote_spans: list[tuple[int, int]] = []
+
+    for pattern in _QUOTE_PATTERNS:
+        for m in pattern.finditer(text):
+            content = m.group(1).strip()
+            if len(content.split()) >= 3:  # Skip very short quotes (titles, etc.)
+                quoted_segments.append(content)
+                quote_spans.append((m.start(), m.end()))
+
+    # Build editorial text by removing quoted spans
+    if quote_spans:
+        # Sort spans and merge overlapping
+        quote_spans.sort()
+        editorial_parts: list[str] = []
+        prev_end = 0
+        for start, end in quote_spans:
+            if start > prev_end:
+                editorial_parts.append(text[prev_end:start])
+            prev_end = max(prev_end, end)
+        if prev_end < len(text):
+            editorial_parts.append(text[prev_end:])
+        editorial_text = " ".join(editorial_parts)
+    else:
+        editorial_text = text
+
+    quoted_text = " ".join(quoted_segments)
+
+    # Measure emotional intensity in each segment
+    quoted_intensity = _measure_emotional_intensity(quoted_text) if quoted_text else 0.0
+    editorial_intensity = _measure_emotional_intensity(editorial_text) if editorial_text else 0.0
+
+    quoted_word_count = len(quoted_text.split()) if quoted_text else 0
+    editorial_word_count = len(editorial_text.split()) if editorial_text else 0
+
+    # Compute outsourced ratio:
+    # If quoted text is more emotional than editorial, the journalist is
+    # "outsourcing" emotional impact to sources.
+    if quoted_intensity <= editorial_intensity or quoted_intensity == 0:
+        outsourced_ratio = 0.0
+    else:
+        # How much of the emotional differential is outsourced
+        # 1.0 when editorial_intensity = 0 and quoted_intensity > 0
+        outsourced_ratio = 1.0 - (editorial_intensity / quoted_intensity)
+        outsourced_ratio = round(max(0.0, min(1.0, outsourced_ratio)), 4)
+
+    return {
+        "quoted_intensity": round(quoted_intensity, 4),
+        "editorial_intensity": round(editorial_intensity, 4),
+        "outsourced_ratio": outsourced_ratio,
+        "quoted_word_count": quoted_word_count,
+        "editorial_word_count": editorial_word_count,
+    }
+
+
+def _compute_framing_correction(
+    raw_tone: float,
+    agency: float,
+    emotional_intensity: float,
+    framing_summary: dict[str, int],
+) -> tuple[float, bool]:
+    """Compute a framing-aware tone correction.
+
+    VADER and TextBlob assign positive polarity to factual, measured
+    investigative prose even when the editorial stance is clearly
+    adversarial (loaded_language, timeline_implication, passive agency).
+    This function detects that situation and returns a corrected tone
+    derived primarily from the framing signals rather than the lexical
+    polarity scores.
+
+    The correction fires ONLY when:
+    1. The raw VADER+TextBlob composite is non-negative (VADER got it wrong)
+    2. At least ``_FRAMING_MIN_ADVERSARIAL_DEVICES`` adversarial framing
+       devices are detected
+    3. Agency attribution is below ``_FRAMING_MAX_AGENCY`` (subject is
+       framed passively / as target of scrutiny)
+
+    When the raw composite is already negative, VADER got the direction
+    right and no correction is applied.
+
+    Returns:
+        (corrected_tone, was_corrected) — the tone and whether the
+        correction was activated.
+    """
+    adversarial_count = sum(
+        framing_summary.get(dt, 0) for dt in _ADVERSARIAL_DEVICE_TYPES
+    )
+
+    # Guard: only correct when raw is non-negative AND framing is adversarial
+    if (
+        raw_tone < 0
+        or adversarial_count < _FRAMING_MIN_ADVERSARIAL_DEVICES
+        or agency >= _FRAMING_MAX_AGENCY
+    ):
+        return raw_tone, False
+
+    # --- Compute framing-derived tone estimate ---
+    # Base: agency score captures how the subject is portrayed
+    # (-1.0 = fully passive/scrutinised, 0.0 = neutral)
+    base = agency  # -1.0 to ~-0.3
+
+    # Amplify by emotional intensity (higher emotional charge = stronger
+    # adversarial framing even when VADER reads it as "positive")
+    amplified = base * (0.6 + 0.4 * emotional_intensity)
+
+    # Amplify by adversarial device density (more devices = stronger signal)
+    density_factor = min(adversarial_count / 8.0, 1.0)
+    framing_tone = amplified * (0.7 + 0.3 * density_factor)
+    framing_tone = max(-1.0, min(0.0, framing_tone))
+
+    # --- Blend: heavily trust framing, lightly retain raw ---
+    # When framing correction fires, raw_tone is positive but wrong.
+    # Give 90% weight to framing estimate, 10% to raw (to avoid
+    # complete signal loss from the lexical models).
+    corrected = 0.10 * raw_tone + 0.90 * framing_tone
+    corrected = max(-1.0, min(1.0, round(corrected, 4)))
+
+    return corrected, True
+
+
+def _measure_source_authority_v2(text: str) -> float:
+    """Improved source authority that considers attribution verb stance.
+
+    Version 1 (``_measure_source_authority``) only measured named-vs-
+    anonymous ratio.  This version also penalises heavy use of loaded
+    attribution verbs (``claimed``, ``insisted``, ``admitted``), which
+    signal that sources are deployed to *undermine* rather than validate
+    the subject — even when all sources are named.
+
+    Returns:
+        -1.0 (sources deployed to undermine) to +1.0 (sources validate).
+    """
+    from mediascope.analyze.sources import (
+        extract_sources,
+        NEUTRAL_VERBS,
+        LOADED_VERBS,
+    )
+
+    sources = extract_sources(text)
+    if not sources:
+        return 0.0
+
+    anon_count = sum(1 for s in sources if s.is_anonymous)
+    named_count = len(sources) - anon_count
+
+    # Named/anonymous component (existing logic)
+    identity_score = (named_count - anon_count) / len(sources)
+
+    # Attribution verb stance component
+    neutral_count = 0
+    loaded_count = 0
+    for s in sources:
+        v = s.attribution_verb.lower().strip() if s.attribution_verb else ""
+        if v in NEUTRAL_VERBS:
+            neutral_count += 1
+        elif v in LOADED_VERBS:
+            loaded_count += 1
+
+    verb_total = neutral_count + loaded_count
+    verb_score = 0.0
+    if verb_total > 0:
+        verb_score = (neutral_count - loaded_count) / verb_total
+
+    # Blend: identity 60%, verb stance 40%
+    blended = 0.6 * identity_score + 0.4 * verb_score
+    return round(max(-1.0, min(1.0, blended)), 4)
+
+
 def analyze_composite(text: str, headline: str = "") -> SentimentResult:
     """Run composite multi-dimensional sentiment analysis.
 
     Combines VADER, TextBlob, and custom dimension analyzers to produce
-    an 8-dimension SentimentResult.
+    an 8-dimension SentimentResult.  When adversarial framing is detected
+    and VADER produces a misleading positive score, a framing-aware
+    correction overrides the raw composite (see
+    ``_compute_framing_correction``).
 
     Args:
         text: Full article text.
@@ -415,22 +663,25 @@ def analyze_composite(text: str, headline: str = "") -> SentimentResult:
     if not text:
         return SentimentResult()
 
+    # Import framing detection lazily to avoid circular imports
+    from mediascope.analyze.framing import detect_framing_devices, summarize_framing
+
     # 1. Overall tone: blend VADER compound and TextBlob polarity
     vader = analyze_vader(text)
     tb = analyze_textblob(text)
-    overall_tone = round(0.6 * vader["compound"] + 0.4 * tb["polarity"], 4)
-    overall_tone = max(-1.0, min(1.0, overall_tone))
+    raw_tone = round(0.6 * vader["compound"] + 0.4 * tb["polarity"], 4)
+    raw_tone = max(-1.0, min(1.0, raw_tone))
 
     # 2. Emotional language intensity
     emotional_intensity = _measure_emotional_intensity(text)
 
-    # 3. Source authority framing
-    source_authority = _measure_source_authority(text)
+    # 3. Source authority framing (v2: includes attribution verb stance)
+    source_authority = _measure_source_authority_v2(text)
 
     # 4. Agency attribution
     agency = _measure_agency(text)
 
-    # 5. Headline-body alignment
+    # 5. Headline-body alignment (use framing-aware check)
     alignment = _measure_headline_alignment(headline, text)
 
     # 6. Anonymous source ratio
@@ -443,6 +694,19 @@ def analyze_composite(text: str, headline: str = "") -> SentimentResult:
     # 8. Comparative framing
     comparative = _measure_comparative_framing(text)
 
+    # --- Framing-aware tone correction ---
+    # When VADER reads factual investigative prose as positive but framing
+    # signals are clearly adversarial, override with framing-derived tone.
+    devices = detect_framing_devices(text)
+    framing_summary = summarize_framing(devices)
+
+    overall_tone, framing_corrected = _compute_framing_correction(
+        raw_tone=raw_tone,
+        agency=agency,
+        emotional_intensity=emotional_intensity,
+        framing_summary=framing_summary,
+    )
+
     return SentimentResult(
         overall_tone=overall_tone,
         emotional_language_intensity=emotional_intensity,
@@ -452,4 +716,6 @@ def analyze_composite(text: str, headline: str = "") -> SentimentResult:
         anonymous_source_ratio=anon_ratio,
         speculative_language_ratio=spec_ratio,
         comparative_framing=comparative,
+        framing_corrected=framing_corrected,
+        raw_tone=raw_tone,
     )

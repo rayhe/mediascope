@@ -171,6 +171,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 | **Selective Omission Signal** | Notable absences detectable in text | "declined to comment" without context, missing competitor comparison |
 | **Emotional Appeal** | Using emotional language instead of evidence | "heartbreaking," "chilling," "disturbing," "alarming" |
 | **Loaded Language** | Word choices that carry implicit judgment | "admitted," "conceded," "insisted," "claimed" (vs neutral "said") |
+| **Power Asymmetry** | Framing institutional/financial power against individual vulnerability | Dollar-magnitude near individual, "army of lawyers," David vs Goliath language, fine-per-violation-could-bankrupt patterns |
 
 ### 4.2 Attribution Verb Analysis
 
@@ -204,7 +205,90 @@ Anonymous sources are not inherently problematic, but their ratio affects reliab
 | 40–60% | High — majority claims rest on anonymous sources |
 | > 60% | Extreme — article is substantially unverifiable |
 
-## 6. Quality Control
+## 6. Source Stance Analysis
+
+### 6.1 Beyond Authority: Who Sources Are Deployed Against
+
+Source authority analysis (§5) answers: "How credible are these sources?"  Source *stance* analysis answers a different question: "Whose side are these sources on?"
+
+An article can score perfectly on source authority (all named, all expert-credentialed, all with direct quotes) while deploying every single source to undermine the subject entity.  This is the editorial technique of adversarial source deployment — assembling a one-sided roster of critics, whistleblowers, and advocacy organizations, each individually credible, to construct a unanimously negative framing.
+
+### 6.2 Stance Classification
+
+For each extracted source, stance is determined by:
+
+1. **Quote content analysis:** The source's quoted text is scanned for negative stance terms (harmful, reckless, censorship, exploitation, etc.) and positive stance terms (innovative, beneficial, safe, transparent, etc.).
+
+2. **Attribution verb weighting:** Adversarial verbs (warned, blasted, accused, fumed, threatened) contribute +1 to the negative stance count, further distinguishing editorial intent.
+
+3. **Classification:** If negative indicators > positive indicators → adversarial.  If positive > negative → supportive.  Otherwise → neutral.
+
+### 6.3 Stance Balance Metric
+
+```
+stance_balance = (supportive_count − adversarial_count) / (supportive_count + adversarial_count)
+```
+
+| Score | Interpretation |
+|---|---|
+| −1.0 | All sources positioned against the subject |
+| −0.5 | ~75% adversarial |
+| 0.0 | Balanced source deployment |
+| +0.5 | ~75% supportive |
+| +1.0 | All sources validate/defend the subject |
+
+**Note:** A stance_balance of −1.0 is not inherently bad journalism — it could reflect a genuine consensus among experts.  But combined with undisclosed financial conflicts (e.g., the publication's parent owns a competitor of the subject), it becomes evidence of *editorial selection bias*: the journalist chose only sources that support the preferred frame.
+
+### 6.4 Interaction with Authority Score
+
+The most analytically interesting articles score HIGH on source authority AND LOW (negative) on stance balance:
+
+| Authority | Stance | Interpretation |
+|---|---|---|
+| High | Balanced | Professional, balanced reporting |
+| High | Adversarial | Credible but one-sided sourcing |
+| Low | Adversarial | Anonymous pile-on |
+| Low | Balanced | Poorly sourced but neutral |
+
+The "High authority + Adversarial stance" combination is the hallmark of sophisticated editorial bias — it looks like rigorous journalism because every source is named and credentialed, but the roster is editorially curated to present only one perspective.
+
+## 7. Outsourced Intensity Detection
+
+### 7.1 The Technique
+
+"Outsourced intensity" is the editorial practice of maintaining measured, professional prose in the journalist's own voice while deploying emotionally charged quotes from sources.  The byline text reads as neutral reporting; the emotional impact comes entirely from the quotes.  This lets the journalist (and publication) maintain plausible objectivity while framing coverage adversarially.
+
+Example from a real article (Guardian, Jun 1 2026):
+> The strongest language — "censorship", "despotic", "hostage", "asshole" — all comes from quotes, not the journalist.
+
+### 7.2 Detection Method
+
+MediaScope splits article text into **quoted segments** (text within quotation marks) and **editorial prose** (everything else), then measures emotional language intensity in each:
+
+```
+outsourced_ratio = 1 − (editorial_intensity / quoted_intensity)
+```
+
+Where `editorial_intensity` and `quoted_intensity` are the standard emotional language density scores (§1.2, dimension 2) applied to each text segment independently.
+
+| Outsourced Ratio | Interpretation |
+|---|---|
+| 0.0 | No outsourcing — editorial prose is equally or more emotional than quotes |
+| 0.3–0.5 | Moderate — some emotional language in both, but quotes carry more |
+| 0.5–0.8 | Significant — emotional impact primarily via source quotes |
+| 0.8–1.0 | High — virtually all emotional language is in quotes; editorial prose is measured |
+
+### 7.3 Analytical Value
+
+High outsourced intensity is a *red flag* for editorial bias detection because:
+
+1. It defeats lexical sentiment analysis: VADER and TextBlob score the overall text as neutral/positive because the journalist's prose *is* neutral
+2. It provides plausible deniability: the journalist can claim to be "just reporting what sources said"
+3. It correlates with adversarial source stance: publications that outsource intensity typically also deploy one-sided sources
+
+**Combined signal:** When `outsourced_ratio > 0.5` AND `stance_balance < −0.5`, the article is using the most sophisticated form of editorial bias — credible-looking, measured prose that reads as professional journalism, with the adversarial framing entirely delegated to a one-sided source roster.
+
+## 8. Quality Control
 
 ### 6.1 MediaScope's Own Output Standards
 
@@ -226,7 +310,7 @@ When evaluating articles from target publications, MediaScope applies a quality 
 - Headline-body alignment
 - Counterargument presence
 
-## 7. Limitations
+## 9. Limitations
 
 ### What MediaScope Can Do
 - Measure coverage sentiment asymmetry with statistical rigor
@@ -246,7 +330,7 @@ When evaluating articles from target publications, MediaScope applies a quality 
 - English-language only in current version
 - RSS feeds may not capture all articles (paywalled content, newsletters)
 
-## 8. References
+## 10. References
 
 1. Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences* (2nd ed.). Lawrence Erlbaum.
 2. Hutto, C.J. & Gilbert, E.E. (2014). "VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text." *ICWSM*.
@@ -259,7 +343,7 @@ When evaluating articles from target publications, MediaScope applies a quality 
 
 ---
 
-## 9. Causal Identification Through Journalist Migration Analysis
+## 11. Causal Identification Through Journalist Migration Analysis
 
 *This section documents MediaScope's novel methodological contribution. For the full treatment, see [EDITORIAL_HISTORIES.md](EDITORIAL_HISTORIES.md).*
 
