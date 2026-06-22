@@ -758,6 +758,429 @@ def status():
 # Entry point
 # ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------
+# careers — Editorial Histories subcommand group
+# ---------------------------------------------------------------------------
+
+@cli.group()
+def careers():
+    """Track journalist migrations and editorial leadership changes.
+
+    Uses difference-in-differences methodology to decompose media bias
+    into institutional and individual components based on journalist
+    movements between publications.
+
+    See docs/EDITORIAL_HISTORIES.md for the full methodology.
+    """
+    pass
+
+
+@careers.command("list")
+def careers_list():
+    """List all tracked journalists and their current outlets."""
+    from mediascope.careers.tracker import CareerTracker
+
+    tracker = CareerTracker()
+    try:
+        tracker.load()
+    except FileNotFoundError as e:
+        console.print(f"[red]Error:[/red] {e}")
+        console.print("Create profiles/careers/journalists.yaml with career data.")
+        raise SystemExit(1)
+
+    journalists = tracker.all_journalists()
+    if not journalists:
+        console.print("[yellow]No journalists loaded.[/yellow]")
+        return
+
+    table = Table(
+        title="Tracked Journalists",
+        box=box.ROUNDED,
+        show_header=True,
+        header_style="bold cyan",
+    )
+    table.add_column("Name", style="bold")
+    table.add_column("Current Outlet")
+    table.add_column("Current Role")
+    table.add_column("Publications")
+    table.add_column("Migrations", justify="right")
+    table.add_column("Career Span", justify="right")
+
+    for j in sorted(journalists, key=lambda x: x.name):
+        table.add_row(
+            j.name,
+            j.current_publication or "[dim]—[/dim]",
+            j.current_role or "[dim]—[/dim]",
+            ", ".join(j.publications_worked_at),
+            str(len(j.migrations)),
+            f"{j.career_span_years:.0f}y",
+        )
+
+    console.print(table)
+    console.print(f"\n[dim]{len(journalists)} journalists tracked.[/dim]")
+
+
+@careers.command("show")
+@click.argument("journalist_name")
+def careers_show(journalist_name):
+    """Show a journalist's full career timeline.
+
+    JOURNALIST_NAME is case-insensitive.
+    """
+    from mediascope.careers.tracker import CareerTracker
+
+    tracker = CareerTracker()
+    tracker.load()
+
+    profile = tracker.get(journalist_name)
+    if not profile:
+        console.print(f"[red]Error:[/red] No profile found for '{journalist_name}'.")
+        console.print("Available journalists:")
+        for j in tracker.all_journalists():
+            console.print(f"  • {j.name}")
+        raise SystemExit(1)
+
+    console.print(
+        Panel(
+            f"[bold]{profile.name}[/bold]\n"
+            f"Current: {profile.current_publication or 'unknown'} "
+            f"({profile.current_role or 'unknown'})\n"
+            f"Career span: {profile.career_span_years:.1f} years  •  "
+            f"Publications: {profile.n_publications}  •  "
+            f"Migrations: {len(profile.migrations)}",
+            title="Journalist Profile",
+            border_style="cyan",
+        )
+    )
+
+    # Career timeline
+    table = Table(
+        title="Career Timeline",
+        box=box.SIMPLE_HEAVY,
+        show_header=True,
+        header_style="bold",
+    )
+    table.add_column("Period")
+    table.add_column("Publication", style="bold")
+    table.add_column("Role")
+    table.add_column("Beat")
+    table.add_column("Notes")
+
+    for ev in profile.events:
+        end = ev.date_end.strftime("%Y-%m") if ev.date_end else "present"
+        table.add_row(
+            f"{ev.date_start.strftime('%Y-%m')} → {end}",
+            ev.publication_slug,
+            ev.role,
+            ev.beat or "[dim]—[/dim]",
+            (ev.notes or "")[:80],
+        )
+
+    console.print(table)
+
+    # Migrations
+    if profile.migrations:
+        console.print("\n[bold]Detected Migrations:[/bold]")
+        for m in profile.migrations:
+            console.print(
+                f"  • {m.from_publication} → {m.to_publication} "
+                f"({m.departure_date.strftime('%Y-%m')} → "
+                f"{m.arrival_date.strftime('%Y-%m')}, "
+                f"gap: {m.gap_days}d, "
+                f"{'lateral' if m.is_lateral else 'promotion' if m.is_promotion else 'move'})"
+            )
+
+
+@careers.command("migrations")
+@click.option("--from-pub", default=None, help="Filter by source publication slug.")
+@click.option("--to-pub", default=None, help="Filter by destination publication slug.")
+def careers_migrations(from_pub, to_pub):
+    """List all detected migration events between tracked publications."""
+    from mediascope.careers.tracker import CareerTracker
+
+    tracker = CareerTracker()
+    tracker.load()
+
+    migrations = tracker.find_migrations(from_pub=from_pub, to_pub=to_pub)
+
+    if not migrations:
+        console.print("[yellow]No migration events found.[/yellow]")
+        return
+
+    table = Table(
+        title="Journalist Migrations",
+        box=box.ROUNDED,
+        show_header=True,
+        header_style="bold cyan",
+    )
+    table.add_column("Journalist", style="bold")
+    table.add_column("From")
+    table.add_column("To")
+    table.add_column("Departed")
+    table.add_column("Arrived")
+    table.add_column("Gap", justify="right")
+    table.add_column("Type")
+
+    for m in migrations:
+        mtype = "lateral" if m.is_lateral else ("promotion" if m.is_promotion else "move")
+        table.add_row(
+            m.journalist_name,
+            m.from_publication,
+            m.to_publication,
+            m.departure_date.strftime("%Y-%m"),
+            m.arrival_date.strftime("%Y-%m"),
+            f"{m.gap_days}d",
+            mtype,
+        )
+
+    console.print(table)
+    console.print(f"\n[dim]{len(migrations)} migrations found.[/dim]")
+
+
+@careers.command("leadership")
+@click.argument("publication_slug")
+def careers_leadership(publication_slug):
+    """Show editorial leadership changes at a publication.
+
+    PUBLICATION_SLUG is the publication identifier (e.g. 'wired', 'nytimes').
+    """
+    from mediascope.careers.editorial_leadership import LeadershipAnalyzer
+
+    analyzer = LeadershipAnalyzer()
+    try:
+        changes = analyzer.load_changes()
+    except FileNotFoundError as e:
+        console.print(f"[red]Error:[/red] {e}")
+        raise SystemExit(1)
+
+    pub_changes = [
+        c for c in changes
+        if c.publication_slug.lower() == publication_slug.lower()
+    ]
+
+    if not pub_changes:
+        console.print(
+            f"[yellow]No leadership changes found for '{publication_slug}'.[/yellow]"
+        )
+        return
+
+    table = Table(
+        title=f"Editorial Leadership Changes: {publication_slug}",
+        box=box.ROUNDED,
+        show_header=True,
+        header_style="bold cyan",
+    )
+    table.add_column("Date")
+    table.add_column("Position", style="bold")
+    table.add_column("Outgoing")
+    table.add_column("Incoming", style="bold green")
+    table.add_column("Notes")
+
+    for ch in pub_changes:
+        table.add_row(
+            ch.effective_date.strftime("%Y-%m"),
+            ch.position,
+            ch.outgoing_name or "[dim]—[/dim]",
+            ch.incoming_name,
+            (ch.notes or "")[:60],
+        )
+
+    console.print(table)
+
+
+@careers.command("diff")
+@click.argument("journalist_name")
+@click.option(
+    "--window", "-w",
+    type=int,
+    default=180,
+    help="Analysis window in days before/after migration (default 180).",
+)
+@click.option(
+    "--target", "-t",
+    default=None,
+    help="Target entity to filter articles by (e.g. 'Meta').",
+)
+@click.option(
+    "--output", "-o",
+    type=click.Path(),
+    default=None,
+    help="Write JSON results to file.",
+)
+def careers_diff(journalist_name, window, target, output):
+    """Run difference-in-differences analysis for a journalist's migration.
+
+    Requires that articles have been ingested and analysed for the relevant
+    publications. If the journalist has multiple migrations, each is analysed
+    separately.
+
+    JOURNALIST_NAME is case-insensitive.
+    """
+    from mediascope.careers.tracker import CareerTracker
+    from mediascope.careers.migrations import MigrationAnalyzer
+
+    tracker = CareerTracker()
+    tracker.load()
+    profile = tracker.get(journalist_name)
+
+    if not profile:
+        console.print(f"[red]Error:[/red] No profile for '{journalist_name}'.")
+        raise SystemExit(1)
+
+    if not profile.migrations:
+        console.print(f"[yellow]{profile.name} has no detected migrations.[/yellow]")
+        return
+
+    db = _get_db()
+    analyzer = MigrationAnalyzer(window_days=window)
+
+    results = []
+    for migration in profile.migrations:
+        console.print(
+            f"\n[bold]Analysing:[/bold] {migration.from_publication} → "
+            f"{migration.to_publication} "
+            f"({migration.departure_date.strftime('%Y-%m')})"
+        )
+
+        # Fetch articles
+        src_articles = db.get_articles(
+            publication=migration.from_publication,
+            entity_mention=target,
+        )
+        dst_articles = db.get_articles(
+            publication=migration.to_publication,
+            entity_mention=target,
+        )
+        j_articles = db.get_articles(author=profile.name)
+
+        if not src_articles and not dst_articles:
+            console.print(
+                "  [yellow]No articles found. Run 'mediascope ingest' for the "
+                "relevant publications first.[/yellow]"
+            )
+            continue
+
+        try:
+            result = analyzer.analyze_migration(
+                migration=migration,
+                source_articles=src_articles,
+                dest_articles=dst_articles,
+                journalist_articles=j_articles,
+                control_articles=None,  # would need a control publication
+                window_days=window,
+            )
+            results.append(result)
+
+            # Display result
+            sig = "[bold red]SIGNIFICANT[/bold red]" if result.did_is_significant else "[dim]not significant[/dim]"
+            console.print(f"  DiD estimate: {result.did_estimate:+.3f} ({sig}, p={result.did_p_value:.4f})")
+            console.print(f"  Source change: {result.source_raw_change:+.3f}")
+            console.print(f"  Dest change:   {result.dest_raw_change:+.3f}")
+            console.print(f"  Journalist Δ:  {result.journalist_tone_change:+.3f}")
+            console.print(f"  Portable bias: {result.portable_bias_estimate:.3f}")
+            console.print(f"  Articles: {result.n_articles_pre} pre, {result.n_articles_post} post")
+
+        except Exception as e:
+            console.print(f"  [red]Error:[/red] {e}")
+
+    if output and results:
+        import json as _json
+        Path(output).parent.mkdir(parents=True, exist_ok=True)
+        Path(output).write_text(
+            _json.dumps([r.to_dict() for r in results], indent=2, default=str)
+        )
+        console.print(f"\n[green]Results written to {output}[/green]")
+
+
+@careers.command("analyze")
+@click.argument("journalist_name")
+@click.option(
+    "--output", "-o",
+    type=click.Path(),
+    default=None,
+    help="Write JSON decomposition to file.",
+)
+def careers_analyze(journalist_name, output):
+    """Run bias decomposition for a journalist.
+
+    Decomposes the journalist's coverage tone into institutional, individual,
+    and interaction components. Requires the journalist to have worked at
+    ≥2 tracked publications with ≥5 analysed articles each.
+
+    JOURNALIST_NAME is case-insensitive.
+    """
+    from mediascope.careers.tracker import CareerTracker
+    from mediascope.careers.influence import InfluenceScorer
+
+    tracker = CareerTracker()
+    tracker.load()
+    profile = tracker.get(journalist_name)
+
+    if not profile:
+        console.print(f"[red]Error:[/red] No profile for '{journalist_name}'.")
+        raise SystemExit(1)
+
+    if profile.n_publications < 2:
+        console.print(
+            f"[yellow]{profile.name} has articles at only "
+            f"{profile.n_publications} publication(s). Need ≥2 for decomposition.[/yellow]"
+        )
+        return
+
+    db = _get_db()
+    scorer = InfluenceScorer()
+
+    # Gather articles by publication
+    articles_by_pub: dict[str, list[dict]] = {}
+    for pub in profile.publications_worked_at:
+        articles = db.get_articles(publication=pub, author=profile.name)
+        if articles:
+            articles_by_pub[pub] = articles
+
+    if len(articles_by_pub) < 2:
+        console.print(
+            "[yellow]Insufficient data: need analysed articles at ≥2 publications. "
+            "Run 'mediascope ingest' and 'mediascope analyze' first.[/yellow]"
+        )
+        return
+
+    result = scorer.decompose(
+        journalist_name=profile.name,
+        articles_by_pub=articles_by_pub,
+    )
+
+    console.print(
+        Panel(
+            f"[bold]{result.journalist_name}[/bold]\n"
+            f"Publications: {result.n_publications}  •  "
+            f"Articles: {result.n_articles}  •  "
+            f"Confidence: {result.confidence:.2f}\n\n"
+            f"Institutional: [cyan]{result.institutional_component:.3f}[/cyan]  "
+            f"({result.institutional_component * 100:.1f}% of variance)\n"
+            f"Individual:    [magenta]{result.individual_component:.3f}[/magenta]  "
+            f"({result.individual_component * 100:.1f}% of variance)\n"
+            f"Interaction:   [yellow]{result.interaction_effect:.3f}[/yellow]  "
+            f"({result.interaction_effect * 100:.1f}% of variance)\n\n"
+            f"Portable Bias Score: [bold]"
+            f"{'[red]' if result.portable_bias_score > 0.7 else '[green]'}"
+            f"{result.portable_bias_score:.3f}[/bold]\n"
+            f"Dominant source: {result.dominant_source}",
+            title="Bias Decomposition",
+            border_style="magenta",
+        )
+    )
+
+    if output:
+        import json as _json
+        Path(output).parent.mkdir(parents=True, exist_ok=True)
+        Path(output).write_text(_json.dumps(result.to_dict(), indent=2))
+        console.print(f"\n[green]Results written to {output}[/green]")
+
+
+# ---------------------------------------------------------------------------
+# Entry point
+# ---------------------------------------------------------------------------
+
 def main():
     """Entry point for the mediascope CLI."""
     try:

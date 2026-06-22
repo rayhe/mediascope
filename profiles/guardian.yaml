@@ -98,3 +98,23 @@ notes: |
   Research note: Bunz & Braghieri 2021 found Guardian had only 29% positive AI
   coverage vs 49% for WSJ, making it a useful benchmark for editorial AI skepticism
   independent of ownership conflicts.
+
+editorial_history:
+  leadership_changes:
+    - position: "eic"
+      outgoing: "Alan Rusbridger"
+      incoming: "Katharine Viner"
+      date: "2015-06"
+      notes: "CONTROL: Viner has been EIC since 2015 — exceptional stability. Useful baseline."
+
+  notable_arrivals:
+    - journalist: "Dan Milmo"
+      from: "Guardian business desk"
+      date: "2021-01"
+      role: "editor"
+      beat: "global technology"
+      notes: "Internal promotion to global tech editor."
+
+  notable_departures: []
+
+  notes: "The Guardian is useful as a CONTROL CASE for editorial history analysis because of exceptional leadership stability (Viner since 2015) and low journalist turnover on the tech desk. Alex Hern has been tech editor since 2013."

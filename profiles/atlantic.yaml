@@ -90,3 +90,42 @@ bias_ratings:
     bias: -7.45
   allsides: "Lean Left"
   mbfc: "Left-Center Bias"
+
+editorial_history:
+  leadership_changes:
+    - position: "eic"
+      outgoing: "James Bennet"
+      incoming: "Jeffrey Goldberg"
+      date: "2016-10"
+      notes: "Goldberg has been EIC since 2016. Emerson Collective acquired majority ownership under his tenure (2017)."
+    - position: "executive_editor"
+      outgoing: null
+      incoming: "Adrienne LaFrance"
+      date: "2021-01"
+      notes: "LaFrance promoted from staff. Known for anti-tech-platforms investigations."
+
+  notable_arrivals:
+    - journalist: "Karen Hao"
+      from: "MIT Technology Review"
+      date: "2022-06"
+      role: "staff_writer"
+      beat: "AI, technology"
+      notes: "HIGH-VALUE MIGRATION: Adversarial AI reporter. Did her viral anti-Meta tone from MIT TR carry over?"
+    - journalist: "Charlie Warzel"
+      from: "NYT Opinion"
+      date: "2020-10"
+      role: "staff_writer"
+      beat: "technology, internet culture"
+      notes: "Galaxy Brain newsletter. Anti-Big-Tech stance across 3 outlets."
+    - journalist: "Ian Bogost"
+      from: "Georgia Tech (academia)"
+      date: "2017-01"
+      role: "contributor"
+      beat: "technology criticism"
+
+  notable_departures: []
+
+  ownership_change:
+    - event: "Emerson Collective acquisition"
+      date: "2017-07"
+      notes: "Laurene Powell Jobs' Emerson Collective acquired majority stake. LPJ holds ~$16B in Apple stock (Meta competitor). Key question: did coverage tone toward Apple competitors change after this ownership change?"

@@ -121,3 +121,44 @@ notes: |
   Key signal: Karen Hao's departure from MIT Tech Review to The Atlantic
   represents a pattern of adversarial AI journalists clustering at
   publications with the strongest anti-AI editorial stances.
+
+editorial_history:
+  leadership_changes:
+    - position: "eic"
+      outgoing: "David Rotman (acting)"
+      incoming: "Gideon Lichfield"
+      date: "2017-12"
+      notes: "Lichfield came from Quartz. Shifted toward more investigative, critical tech coverage."
+    - position: "eic"
+      outgoing: "Gideon Lichfield"
+      incoming: "Mat Honan"
+      date: "2021-01"
+      notes: "KEY MIGRATION: Lichfield left for Wired. Honan came from BuzzFeed/Wired. Creates natural experiment: same person (Lichfield) at two different institutions."
+
+  notable_arrivals:
+    - journalist: "Mat Honan"
+      from: "BuzzFeed News"
+      date: "2021-01"
+      role: "eic"
+      beat: "overall editorial direction"
+      notes: "Previously at Wired. Became EIC — tests whether journalist changes institution from the top."
+    - journalist: "Melissa Heikkilä"
+      from: "POLITICO Europe"
+      date: "2022-07"
+      role: "senior_writer"
+      beat: "AI"
+      notes: "Senior AI reporter. Current AI beat holder."
+
+  notable_departures:
+    - journalist: "Karen Hao"
+      to: "The Atlantic"
+      date: "2022-05"
+      notes: "HIGH-VALUE DEPARTURE: Did MIT TR's AI coverage tone change after she left? Key test of individual vs institutional bias."
+    - journalist: "Will Knight"
+      to: "Wired"
+      date: "2018-08"
+      notes: "13-year veteran leaving for a competitor. Tests institutional encoding."
+    - journalist: "Gideon Lichfield"
+      to: "Wired"
+      date: "2020-09"
+      notes: "EIC who went to become Wired's EIC — same person leading two outlets sequentially."

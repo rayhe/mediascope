@@ -1,0 +1,89 @@
+# MediaScope — Editorial Leadership Changes
+#
+# Tracks EIC, managing editor, and section editor transitions at
+# each publication.  These are the "big knob" changes that can shift
+# a publication's entire editorial direction.
+#
+# Used by the LeadershipAnalyzer to detect tone shifts correlated
+# with leadership transitions (interrupted time-series analysis).
+
+editorial_changes:
+
+  wired:
+    - position: "eic"
+      outgoing: "Chris Anderson"
+      incoming: "Scott Dadich"
+      date: "2012-07"
+      notes: "Anderson left to run 3D Robotics. Dadich was Wired's creative director."
+
+    - position: "eic"
+      outgoing: "Scott Dadich"
+      incoming: "Nicholas Thompson"
+      date: "2017-02"
+      source_url: "https://www.nytimes.com/2017/01/17/business/media/wired-nicholas-thompson-editor.html"
+      notes: "Thompson came from The New Yorker (another CN title). Expanded Wired's political coverage significantly."
+
+    - position: "eic"
+      outgoing: "Nicholas Thompson"
+      incoming: "Gideon Lichfield"
+      date: "2020-09"
+      source_url: "https://www.wired.com/story/gideon-lichfield-new-editor-wired/"
+      notes: "Thompson left for The Atlantic. Lichfield came from MIT Technology Review (Quartz before that)."
+
+    - position: "editorial_director"
+      outgoing: "Gideon Lichfield"
+      incoming: "Katie Drummond"
+      date: "2023-09"
+      source_url: "https://www.nytimes.com/2023/09/11/business/media/wired-katie-drummond.html"
+      notes: "KEY EVENT: Drummond became Global Editorial Director. Previously ran WIRED's science team. Explicitly adversarial framing toward tech-government alignment. This is the most important leadership change for detecting Wired's anti-Meta editorial shift."
+
+  nytimes:
+    - position: "executive_editor"
+      outgoing: "Dean Baquet"
+      incoming: "Joseph Kahn"
+      date: "2022-06"
+      source_url: "https://www.nytimes.com/2022/04/13/business/media/joseph-kahn-new-york-times-executive-editor.html"
+      notes: "Kahn previously served as managing editor. Known for emphasizing investigative and explanatory journalism. Under his leadership, NYT sued OpenAI (Dec 2023)."
+
+    - position: "managing_editor"
+      outgoing: "Joseph Kahn"
+      incoming: "Marc Lacey"
+      date: "2022-06"
+      notes: "Lacey became managing editor when Kahn was promoted."
+
+  guardian:
+    - position: "eic"
+      outgoing: "Alan Rusbridger"
+      incoming: "Katharine Viner"
+      date: "2015-06"
+      source_url: "https://www.theguardian.com/media/2015/mar/20/katharine-viner-guardian-editor-in-chief"
+      notes: "Viner became the first female editor-in-chief of the Guardian. Under her leadership, the paper has taken a strongly critical stance on Big Tech and AI. Still serving as of 2026."
+
+  atlantic:
+    - position: "eic"
+      outgoing: "James Bennet"
+      incoming: "Jeffrey Goldberg"
+      date: "2016-10"
+      source_url: "https://www.theatlantic.com/press-releases/archive/2016/10/jeffrey-goldberg-atlantic-editor-chief/504920/"
+      notes: "Goldberg has been EIC since 2016. During his tenure, Laurene Powell Jobs' Emerson Collective acquired majority ownership (2017)."
+
+    - position: "executive_editor"
+      outgoing: null
+      incoming: "Adrienne LaFrance"
+      date: "2021-01"
+      notes: "LaFrance promoted from staff writer to executive editor. Known for anti-tech-platforms investigations (QAnon coverage). Signals further editorial turn against Big Tech."
+
+  mit-tech-review:
+    - position: "eic"
+      outgoing: "Gideon Lichfield"
+      incoming: "Mat Honan"
+      date: "2021-01"
+      source_url: "https://www.technologyreview.com/2020/12/14/1014614/mat-honan-editor-in-chief/"
+      notes: "KEY MIGRATION: Lichfield left for Wired. Honan came from BuzzFeed News (previously at Wired). Wired → MIT Tech Review → Wired editorial pipeline creates a natural experiment."
+
+    - position: "eic"
+      outgoing: "David Rotman (acting)"
+      incoming: "Gideon Lichfield"
+      date: "2017-12"
+      source_url: "https://www.technologyreview.com/2017/12/05/3720/a-letter-from-mit-technology-reviews-new-editor-in-chief/"
+      notes: "Lichfield came from Quartz. Shifted MIT Tech Review toward more investigative, critical tech coverage."

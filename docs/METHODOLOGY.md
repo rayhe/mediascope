@@ -256,3 +256,111 @@ When evaluating articles from target publications, MediaScope applies a quality 
 6. Welch, B.L. (1947). "The generalization of 'Student's' problem when several different population variances are involved." *Biometrika*, 34(1-2), 28-35.
 7. Gentzkow, M. & Shapiro, J.M. (2010). "What Drives Media Slant? Evidence from U.S. Daily Newspapers." *Econometrica*, 78(1), 35-71.
 8. Hamborg, F., et al. (2019). "Automated identification of media bias in news articles: an interdisciplinary literature review." *International Journal on Digital Libraries*, 20, 391-415.
+
+---
+
+## 9. Causal Identification Through Journalist Migration Analysis
+
+*This section documents MediaScope's novel methodological contribution. For the full treatment, see [EDITORIAL_HISTORIES.md](EDITORIAL_HISTORIES.md).*
+
+### 9.1 The Problem of Causal Attribution
+
+Standard sentiment asymmetry analysis (§§1-3) measures *that* coverage is asymmetric, but cannot identify *why*. An asymmetry score tells us Wired covers Meta 0.28 points more negatively than peers — it cannot distinguish:
+
+- **Institutional bias** — Advance Publications' 33.5% Reddit stake creates financial incentive for anti-Meta coverage, and editorial culture enforces it regardless of who writes
+- **Individual bias** — specific journalists carry adversarial stances toward certain companies
+- **Interaction effects** — certain journalist × publication pairings amplify bias beyond what either would produce alone
+
+MediaScope's Editorial Histories module provides causal identification by exploiting journalist migrations as natural experiments.
+
+### 9.2 Difference-in-Differences (DiD) Framework
+
+We adapt the canonical DiD estimator from labor economics (Card & Krueger, 1994):
+
+**Setup:** Journalist J departs Publication A at time *t* for Publication B.
+
+**Treatment group:** Publication A (experienced the personnel change)
+**Control group:** Publication C (no personnel change in the same window)
+
+**Model:**
+```
+Y_ij = β₀ + β₁·Treatment_i + β₂·Post_j + β₃·(Treatment_i × Post_j) + ε_ij
+```
+
+| Parameter | Interpretation |
+|---|---|
+| β₀ | Baseline tone at control publication, pre-migration |
+| β₁ | Structural difference between treatment and control pubs |
+| β₂ | Secular trend in coverage tone (e.g., from news events) |
+| **β₃** | **The causal effect of the journalist's departure on coverage tone** |
+
+**Key assumption: Parallel trends.** In the absence of the journalist's departure, Publication A and Publication C would have followed the same tone trajectory. This is untestable but can be assessed visually by checking pre-migration trend similarity.
+
+**Standard errors** are computed from the OLS DiD regression with Huber-White robust variance estimation.
+
+### 9.3 Portable Bias Score
+
+For journalists who have worked at ≥2 tracked publications, we measure how much of their coverage tone is *portable* (carried from outlet to outlet) versus *adaptive* (shaped by each outlet's culture):
+
+```
+Portable_Bias = 1 − |Cohen's d(tone_pub_A, tone_pub_B)| / 2
+```
+
+| Score | Interpretation |
+|---|---|
+| 0.0 | Fully adaptive — tone matches each publication's norms |
+| 0.5 | Mixed — some portable, some adaptive |
+| 1.0 | Fully portable — identical tone regardless of outlet |
+
+Example: If Kara Swisher's average tone toward Meta is −0.45 at Recode, −0.42 at NYT, and −0.40 at WSJ, while the publication baselines are −0.10, −0.15, and +0.05 respectively, her portable bias score would be high (she carries her stance everywhere).
+
+### 9.4 Bias Decomposition (Two-Way ANOVA)
+
+For journalists with multi-publication coverage, total tone variance is decomposed:
+
+```
+SS_total = SS_institutional + SS_individual + SS_interaction
+
+Institutional = SS_pub_baseline / SS_total
+Individual = SS_journalist_deviation / SS_total
+Interaction = SS_residual / SS_total
+```
+
+Where:
+- SS_pub_baseline = Σ nⱼ × (publication_baseline_j − grand_mean)²
+- SS_journalist_deviation = Σ nⱼ × (journalist_mean_at_j − publication_baseline_j)²
+- SS_residual = SS_total − SS_pub − SS_journalist
+
+### 9.5 Interrupted Time-Series for Leadership Changes
+
+Editorial leadership changes (new EIC, managing editor) are analysed with segmented regression:
+
+```
+Y_t = β₀ + β₁·T + β₂·D_t + β₃·(D_t × T_post) + ε_t
+```
+
+| Parameter | Interpretation |
+|---|---|
+| β₁ | Pre-change monthly trend |
+| **β₂** | **Immediate level shift when new leader takes over** |
+| **β₃** | **Change in monthly trend under new leadership** |
+| β₁ + β₃ | Post-change monthly trend |
+
+### 9.6 Academic Novelty
+
+To our knowledge, **no prior work applies difference-in-differences methodology to journalist-level editorial migration data** to decompose media bias into institutional and individual components. The closest related literature:
+
+| Paper | What They Did | How We Extend |
+|---|---|---|
+| Gentzkow & Shapiro (2010) | Decomposed newspaper slant into demand/supply components | We decompose at journalist level, not publication level |
+| Groseclose & Milyo (2005) | Measured bias via think-tank citation patterns | We use NLP tone scoring instead of manual citation coding |
+| Puglisi & Snyder (2011) | Studied partisan coverage of political scandals | We exploit personnel changes as natural experiments |
+| Card & Krueger (1994) | Established DiD for minimum wage/employment | We adapt their framework from labor economics to media analysis |
+
+### 9.7 Additional References
+
+9. Card, D. & Krueger, A.B. (1994). "Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania." *American Economic Review*, 84(4), 772-793.
+10. Groseclose, T. & Milyo, J. (2005). "A Measure of Media Bias." *Quarterly Journal of Economics*, 120(4), 1191-1237.
+11. Puglisi, R. & Snyder, J.M. (2011). "Newspaper Coverage of Political Scandals." *Journal of Politics*, 73(3), 931-950.
+12. Martin, G.J. & Yurukoglu, A. (2017). "Bias in Cable News: Persuasion and Polarization." *American Economic Review*, 107(9), 2565-2599.
+13. Angrist, J.D. & Pischke, J.-S. (2009). *Mostly Harmless Econometrics*. Princeton University Press.

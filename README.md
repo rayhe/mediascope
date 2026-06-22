@@ -25,6 +25,34 @@ This is not an attack tool. It works equally well pointed at Fox News covering r
 6. **Tracks litigation funding** — who profits from lawsuits against covered companies?
 7. **Generates disclosure statements** — ready-to-post conflict of interest disclosures
 8. **Produces reports** — weekly Markdown reports and HTML dashboards
+9. **Tracks editorial histories** — journalist migrations between publications as causal signal for bias attribution **(novel contribution — no prior work does this)**
+
+## ✨ Novel: Editorial Histories
+
+MediaScope's most original contribution is the **Editorial Histories** module. When a journalist moves from Publication A to Publication B, it creates a natural experiment:
+
+- **Does Publication A's coverage change after they leave?** → Institutional vs. individual bias
+- **Does the journalist's tone change at Publication B?** → Editorial capture vs. portable bias
+- **Does Publication B shift after they arrive?** → Measures the journalist's editorial influence
+
+This is a [difference-in-differences](https://en.wikipedia.org/wiki/Difference_in_differences) approach (Card & Krueger, 1994) applied to media analysis. No prior work applies DiD to journalist-level editorial migration data at scale. See [docs/EDITORIAL_HISTORIES.md](docs/EDITORIAL_HISTORIES.md) for the full methodology.
+
+```bash
+# List tracked journalists and their migrations
+mediascope careers list
+mediascope careers migrations
+
+# Run DiD analysis on a journalist's move
+mediascope careers diff "Karen Hao" --window 180
+
+# Decompose a journalist's bias into institutional vs. individual
+mediascope careers analyze "Karen Hao"
+
+# Show leadership changes that may have shifted coverage
+mediascope careers leadership wired
+```
+
+Ships with verified career data for **17 journalists** across 10+ publications, including high-value migrations like Karen Hao (MIT Tech Review → Atlantic), Cade Metz (Wired → NYT), and Zoë Schiffer (The Verge → Platformer → Wired).
 
 ## Quick Start
 
@@ -116,14 +144,14 @@ Full methodology: https://github.com/mediascope/mediascope/blob/main/docs/METHOD
 │             │    │ • Sources    │    │ • Bootstrap │    │              │
 └─────────────┘    └──────────────┘    └─────────────┘    └──────────────┘
                                                                 │
-┌─────────────┐    ┌──────────────┐                             │
-│  CONFLICTS  │───▶│   QUALITY    │◀────────────────────────────┘
-│             │    │              │
-│ • Ownership │    │ • Citations  │
-│ • Revenue   │    │ • Claims     │
-│ • Litigation│    │ • Standards  │
-│ • Disclosure│    │ • AI slop    │
-└─────────────┘    └──────────────┘
+┌─────────────┐    ┌──────────────┐    ┌──────────────┐         │
+│  CONFLICTS  │───▶│   QUALITY    │◀───│   CAREERS    │─────────┘
+│             │    │              │    │  (novel)     │
+│ • Ownership │    │ • Citations  │    │ • Migrations │
+│ • Revenue   │    │ • Claims     │    │ • DiD causal │
+│ • Litigation│    │ • Standards  │    │ • Bias decomp│
+│ • Disclosure│    │ • AI slop    │    │ • Leadership │
+└─────────────┘    └──────────────┘    └──────────────┘
 ```
 
 ## Publication Profiles
