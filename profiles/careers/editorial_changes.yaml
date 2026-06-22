@@ -91,8 +91,30 @@ editorial_changes:
     - position: "executive_editor"
       outgoing: null
       incoming: "Adrienne LaFrance"
-      date: "2021-01"
-      notes: "LaFrance promoted from staff writer to executive editor. Known for anti-tech-platforms investigations (QAnon coverage). Signals further editorial turn against Big Tech."
+      date: "2019-05"
+      source_url: "https://en.wikipedia.org/wiki/The_Atlantic"
+      notes: "LaFrance promoted from staff. Known for anti-tech-platforms investigations (QAnon coverage). Wrote 'Facebook is a Doomsday Machine' (Dec 2020). Signals further editorial turn against Big Tech."
+
+    - position: "ceo"
+      outgoing: null
+      incoming: "Nicholas Thompson"
+      date: "2020-12"
+      source_url: "https://en.wikipedia.org/wiki/The_Atlantic"
+      notes: "KEY MIGRATION: Former Wired EIC (2017-2020) becomes Atlantic CEO. Creates direct Condé Nast → Atlantic editorial culture bridge. Thompson wrote two Facebook cover stories cited in Congress while at Wired. Under his leadership at Atlantic: profitability achieved, record subscriptions, 3 Pulitzer Prizes, OpenAI licensing deal (May 2024). Co-founded Speakeasy AI, The Atavist."
+
+    - position: "senior_tech_editor"
+      outgoing: null
+      incoming: "Ellen Cushing"
+      date: "2018-05"
+      source_url: "https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-buzzfeeds-cushing-as-senior-tech-editor/"
+      notes: "Built Atlantic's SF tech bureau. Came from BuzzFeed News. Shaped tech desk that Tiffany, Wong, and others joined. Pivoted to food/culture staff writer May 2024."
+
+    - position: "vice_chairman"
+      outgoing: null
+      incoming: "Peter Lattman"
+      date: "2017-07"
+      source_url: "https://en.wikipedia.org/wiki/The_Atlantic"
+      notes: "Emerson Collective staffer placed as vice chairman at acquisition. Direct LPJ representative in Atlantic governance."
 
   mit-tech-review:
     - position: "eic"

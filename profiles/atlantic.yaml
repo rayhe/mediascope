@@ -11,50 +11,99 @@ rss_feeds:
 ownership_chain:
   - name: "The Atlantic"
     entity_type: "publisher"
-    description: "Founded 1857. Digital-first pivot under current ownership. 1M+ subscribers."
+    description: "Founded 1857. Digital-first pivot under current ownership. 1M+ subscribers. Circulation grew 14% in 2023 and 2024; 20%+ readership gain in 2025."
   - name: "Atlantic Media"
     entity_type: "parent_company"
-    description: "Majority owned by Emerson Collective since 2017."
+    description: "Majority owned by Emerson Collective since July 2017. David G. Bradley retained minority share initially; Emerson likely acquired full ownership."
   - name: "Emerson Collective"
     entity_type: "holding_company"
-    description: "Founded and led by Laurene Powell Jobs. Impact-focused organization. Also invests in Axios, education ventures."
+    description: "Founded and led by Laurene Powell Jobs. Impact-focused (education, environment, healthcare). 130+ investments, majority in technology. KEY: $1B+ invested in AI startups since 2022."
     investments:
       - entity: "Apple"
-        relationship: "Laurene Powell Jobs is Steve Jobs' widow. Holds massive Apple stock (~$16B+). LPJ Trust is among Apple's largest individual shareholders."
+        relationship: "Laurene Powell Jobs is Steve Jobs' widow. LPJ Trust holds massive Apple stock (~$16B+). Among Apple's largest individual shareholders."
         competitive_with: ["Meta"]
+      - entity: "Mistral AI"
+        relationship: "Emerson Collective participated in Mistral's $415M Series A (Dec 2023) and/or $640M Series B (Jun 2024). Mistral is a direct Meta AI competitor (open-source LLMs vs Llama)."
+        competitive_with: ["Meta"]
+        source_url: "https://siliconangle.com/2023/12/11/open-source-generative-ai-startup-mistral-ai-raises-415m-funding/"
+      - entity: "World Labs"
+        relationship: "Emerson Collective participated in World Labs' $1B fundraising (2025/2026). World Labs builds 3D AI world models (Marble product)."
+        competitive_with: ["Meta"]
+        source_url: "https://intellectia.ai/laurene-powell-jobs-invests-in-ai-startups-amid-bubble-fears"
+      - entity: "Formation Bio"
+        relationship: "Emerson Collective participated in Formation Bio's $372M round. AI-driven pharmaceutical company."
+        competitive_with: []
+      - entity: "Zap Energy"
+        relationship: "Emerson Collective invested in $130M round (2024). Fusion energy startup."
+        competitive_with: []
+        source_url: "https://techcrunch.com/2024/10/07/zap-energy-investors/"
+      - entity: "Axios"
+        relationship: "Early Emerson Collective investment in news startup Axios. Axios competes with Atlantic for digital news audience."
+        competitive_with: []
   - name: "Laurene Powell Jobs"
     entity_type: "individual"
-    description: "Net worth ~$16B (Forbes 2024). Apple connection through inheritance. Also invested in Axios via Emerson Collective."
+    description: "Net worth ~$11.5-16B (estimates vary). Apple connection through inheritance. Deep AI investment portfolio through Emerson Collective. Also invested in education, environment, social justice."
 
 revenue_relationships:
   - partner: "Apple"
     relationship_type: "indirect_financial"
     estimated_value: "~$16B+ (stock holdings)"
-    description: "Owner LPJ holds massive Apple stock. Apple competes with Meta in hardware (Vision Pro vs Quest), AI, and privacy positioning. Apple's 'privacy' narrative directly undermines Meta's advertising business."
+    description: "Owner LPJ holds massive Apple stock. Apple competes with Meta in hardware (Vision Pro vs Quest), AI (Apple Intelligence vs Meta AI), and privacy positioning. Apple's 'privacy' narrative directly undermines Meta's advertising business."
     date_established: "1997 (Jobs era)"
     source_url: ""
+  - partner: "OpenAI"
+    relationship_type: "licensing_deal"
+    estimated_value: "Undisclosed (News Corp deal was $250M/5yr for reference)"
+    description: "Multi-year licensing and product development deal announced May 29, 2024. OpenAI can display Atlantic content in ChatGPT and use archived content for model training. Atlantic gets OpenAI tech access and feedback channel. Also includes 'Atlantic Labs' experimental microsite development. OpenAI is a direct Meta AI competitor."
+    date_established: "2024-05"
+    source_url: "https://www.thewrap.com/vox-media-atlantic-openai-licensing-partnerships/"
+    competitive_with: ["Meta"]
 
 editorial_leadership:
   - name: "Jeffrey Goldberg"
     title: "Editor-in-Chief"
-    editorial_stance: "Anti-AI editorial direction. Focuses on AI threats to democracy, labor, creative industries."
+    start: "2016-10"
+    editorial_stance: "Anti-AI-hype editorial direction. Focuses on AI threats to democracy, labor, creative industries. Notably backed union demand for OpenAI deal transparency despite greenlighting the deal."
+  - name: "Nicholas Thompson"
+    title: "CEO"
+    start: "2020-12"
+    editorial_stance: "CRITICAL: Former Wired EIC (2017-2020). Creates direct Condé Nast → Atlantic editorial pipeline. Wrote two Facebook cover stories cited in Congress while at Wired. At Atlantic: drove profitability, record subscriptions, 3 Pulitzer Prizes, and the OpenAI licensing deal. Co-founded Speakeasy AI. 'I'm absolutely convinced these deals can be beneficial.'"
+    source_url: "https://www.weforum.org/people/nicholas-thompson/"
+  - name: "Adrienne LaFrance"
+    title: "Executive Editor"
+    start: "2019-05"
+    editorial_stance: "Promoted from staff writer. Known for anti-tech-platforms investigations. Wrote 'Facebook is a Doomsday Machine' (Dec 2020). QAnon coverage. Signals further editorial turn against Big Tech."
+  - name: "Peter Lattman"
+    title: "Vice Chairman"
+    start: "2017-07"
+    editorial_stance: "Emerson Collective staffer placed as vice chairman at acquisition. Direct LPJ representative in Atlantic governance."
+    source_url: "https://en.wikipedia.org/wiki/The_Atlantic"
 
 key_journalists:
   - name: "Ian Bogost"
     beat: "Technology criticism"
-    known_patterns: "Philosophical/cultural criticism of tech industry. Anti-AI-hype stance."
+    known_patterns: "Philosophical/cultural criticism of tech industry. Anti-AI-hype stance. Georgia Tech academic background."
   - name: "Charlie Warzel"
     beat: "Technology, media, politics"
-    known_patterns: "Former NYT, critical of tech platforms, disinformation"
+    known_patterns: "Former NYT Opinion, BuzzFeed News. Critical of tech platforms, disinformation. Galaxy Brain newsletter. Anti-Big-Tech stance across 3 outlets."
   - name: "Adrienne LaFrance"
-    beat: "Technology (former exec editor)"
-    known_patterns: "Wrote 'Facebook is a Doomsday Machine' (2020), foundational anti-Facebook framing"
+    beat: "Technology (exec editor + writer)"
+    known_patterns: "Wrote 'Facebook is a Doomsday Machine' (2020), foundational anti-Facebook framing."
   - name: "Karen Hao"
     beat: "AI (from MIT Tech Review)"
-    known_patterns: "Highly critical AI coverage. Joined Atlantic from MIT Tech Review."
+    known_patterns: "Highly critical AI coverage. 'How Facebook got addicted to spreading misinformation' (2021) at MIT TR. Tests whether adversarial tone is portable."
   - name: "Matteo Wong"
     beat: "AI and technology"
-    known_patterns: "AI labor displacement, creative industry impacts"
+    known_patterns: "Atlantic's primary AI voice. Covers chatbot harms (Grok, ChatGPT), AI safety tensions (Anthropic), labor displacement. Rose from assistant editor to staff writer. Harvard Crimson → Atlantic pipeline."
+  - name: "Alex Reisner"
+    beat: "AI training data investigations"
+    known_patterns: "Atlantic's AI Watchdog project lead. Broke Books3 story (190K pirated books in Meta/LLaMA training). Built searchable databases for Books3 and YouTube AI training data. Programmer-journalist hybrid. Contributing writer 2023 → staff writer Oct 2025."
+  - name: "Kaitlyn Tiffany"
+    beat: "Internet culture, online platforms"
+    known_patterns: "Covers platform power, fandom, internet culture. Author of 'Everything I Need I Get From You' (2022). Verge → Vox → Atlantic pipeline. Co-writes Famous People newsletter."
+  - name: "Ali Breland"
+    beat: "Disinformation, extremism, tech-politics"
+    known_patterns: "Nick Fuentes specialist. Mother Jones → Atlantic. Covers far-right digital infrastructure, platform manipulation, extremism-technology intersection. Livingston Award finalist."
 
 known_conflicts:
   - type: "investment"
@@ -62,11 +111,26 @@ known_conflicts:
     severity: 4
     evidence: "Forbes wealth estimates, Apple shareholder records"
     source_url: ""
+  - type: "investment"
+    description: "Emerson Collective has invested $1B+ in AI startups since 2022, including Mistral AI ($415M round), World Labs ($1B round), and Formation Bio ($372M round). Mistral's open-source LLMs directly compete with Meta's Llama. These investments create financial incentive for Atlantic coverage that benefits OpenAI-alternative/anti-Meta-AI narratives."
+    severity: 3
+    evidence: "CNBC/Fintrx data, TechCrunch, Intellectia.ai. 9+ AI startup investments since 2022."
+    source_url: "https://futurefamilyoffice.net/emerson-collective-fuels-ai-revolution-with-1b-in-startup-backing/"
+  - type: "licensing_deal"
+    description: "Atlantic has a multi-year licensing deal with OpenAI (May 2024). OpenAI is Meta's direct AI competitor. Financial terms undisclosed but News Corp's comparable deal was $250M/5yr. Creates financial incentive to cover OpenAI favorably and Meta AI negatively."
+    severity: 3
+    evidence: "VentureBeat, Bloomberg Tax, The Wrap, Axios reporting. Atlantic union demanded transparency on deal terms."
+    source_url: "https://www.thewrap.com/the-atlantic-union-demands-transparency-of-openai-deal-terms/"
   - type: "editorial_bias"
     description: "Adrienne LaFrance's 2020 'Facebook is a Doomsday Machine' article established The Atlantic's adversarial editorial posture toward Meta specifically."
     severity: 3
     evidence: "Published article, subsequent editorial direction"
     source_url: "https://www.theatlantic.com/technology/archive/2020/12/facebook-doomsday-machine/617384/"
+  - type: "executive_pipeline"
+    description: "CEO Nicholas Thompson was Wired EIC (2017-2020) — the same publication with the strongest anti-Meta editorial stance. He wrote two Facebook cover stories cited in Congress while at Wired. Creates a direct Condé Nast → Atlantic editorial culture bridge."
+    severity: 2
+    evidence: "Thompson career history, Wired Facebook coverage, Congressional citations"
+    source_url: "https://www.nytimes.com/2017/01/17/business/media/wired-nicholas-thompson-editor.html"
 
 litigation_connections: []
 
@@ -74,7 +138,7 @@ ai_crawl_policy:
   blocks_gptbot: false
   blocks_ccbot: true
   blocks_google_extended: true
-  notes: "Allows some AI crawlers. No known AI licensing deals."
+  notes: "Has licensing deal with OpenAI (May 2024). Allows GPTBot. Blocks Common Crawl and Google-Extended. Atlantic union demanded deal transparency; EIC Goldberg backed union's statement."
 
 target_entities:
   "Meta":
@@ -83,6 +147,9 @@ target_entities:
   "Apple":
     aliases: ["Apple", "iPhone", "Tim Cook", "Apple Intelligence"]
     regex: "\\b(Apple(?! pie)|iPhone|Tim Cook|Apple Intelligence)\\b"
+  "OpenAI":
+    aliases: ["OpenAI", "ChatGPT", "Sam Altman", "GPT"]
+    regex: "\\b(OpenAI|ChatGPT|Sam Altman|GPT-[0-9])\\b"
 
 bias_ratings:
   ad_fontes:
@@ -101,8 +168,15 @@ editorial_history:
     - position: "executive_editor"
       outgoing: null
       incoming: "Adrienne LaFrance"
-      date: "2021-01"
-      notes: "LaFrance promoted from staff. Known for anti-tech-platforms investigations."
+      date: "2019-05"
+      source_url: "https://en.wikipedia.org/wiki/The_Atlantic"
+      notes: "LaFrance promoted from staff. Known for anti-tech-platforms investigations. QAnon coverage."
+    - position: "ceo"
+      outgoing: null
+      incoming: "Nicholas Thompson"
+      date: "2020-12"
+      source_url: "https://en.wikipedia.org/wiki/The_Atlantic"
+      notes: "KEY EVENT: Former Wired EIC becomes Atlantic CEO. Creates direct Condé Nast → Atlantic editorial pipeline. Thompson drove Atlantic to profitability, record subs, 3 Pulitzers. Negotiated OpenAI licensing deal."
 
   notable_arrivals:
     - journalist: "Karen Hao"
@@ -116,16 +190,63 @@ editorial_history:
       date: "2020-10"
       role: "staff_writer"
       beat: "technology, internet culture"
-      notes: "Galaxy Brain newsletter. Anti-Big-Tech stance across 3 outlets."
+      notes: "Galaxy Brain newsletter. Anti-Big-Tech stance across 3 outlets (BuzzFeed → NYT → Atlantic)."
     - journalist: "Ian Bogost"
       from: "Georgia Tech (academia)"
       date: "2017-01"
       role: "contributor"
       beat: "technology criticism"
+    - journalist: "Kaitlyn Tiffany"
+      from: "Vox (The Goods)"
+      date: "2019-08"
+      role: "staff_writer"
+      beat: "internet culture, platforms"
+      source_url: "https://talkingbiznews.com/they-re-hiring/kaitlyn-tiffany-joins-the-atlantics-tech-team/"
+      notes: "Joined tech team under Ellen Cushing. Verge → Vox → Atlantic pipeline. Internet culture specialist."
+    - journalist: "Matteo Wong"
+      from: "Harvard Crimson"
+      date: "2022-06"
+      role: "assistant_editor"
+      beat: "science, technology, health → AI"
+      source_url: "https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-wong-as-assistant-editor/"
+      notes: "Joined straight from Harvard. Rapidly became Atlantic's lead AI voice. Promoted to staff writer May 2024."
+    - journalist: "Ali Breland"
+      from: "Mother Jones"
+      date: "2024-05"
+      role: "staff_writer"
+      beat: "disinformation, extremism, tech-politics"
+      source_url: "https://www.editorandpublisher.com/stories/the-atlantic-announces-news-about-four-new-staff-writers,254095"
+      notes: "Covers far-right digital infrastructure. Nick Fuentes specialist. Livingston Award finalist."
+    - journalist: "Alex Reisner"
+      from: "Freelance (programmer-journalist)"
+      date: "2025-10"
+      role: "staff_writer"
+      beat: "AI training data, AI Watchdog"
+      source_url: "https://talkingbiznews.com/they-re-hiring/reisner-named-staff-writer-at-the-atlantic/"
+      notes: "Atlantic's AI Watchdog project lead. Broke Books3 story. Contributing writer since Aug 2023, staff writer Oct 2025."
+    - journalist: "Ellen Cushing"
+      from: "BuzzFeed News"
+      date: "2018-05"
+      role: "senior_tech_editor"
+      beat: "technology → food/culture"
+      source_url: "https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-buzzfeeds-cushing-as-senior-tech-editor/"
+      notes: "Built Atlantic's SF tech bureau. Led tech desk 2018-2024, shaping coverage that Tiffany, Wong, and others joined. Pivoted to food/culture staff writer May 2024."
 
-  notable_departures: []
+  notable_departures:
+    - journalist: "Taylor Lorenz"
+      to: "Independent (Substack)"
+      date: "2022-03"
+      role: "technology_culture_reporter"
+      notes: "Internet culture reporter who joined Atlantic in 2018 (same time as Cushing). Left for Washington Post, then Substack. Her departure tested whether Atlantic's internet culture coverage could survive without a viral-content specialist."
+    - journalist: "Ellen Cushing (role change)"
+      to: "Internal (tech editor → food staff writer)"
+      date: "2024-05"
+      notes: "Not a departure but a critical role change: Atlantic's tech desk architect left tech for food/culture. This left the tech desk without its founding SF bureau editor."
 
   ownership_change:
     - event: "Emerson Collective acquisition"
       date: "2017-07"
-      notes: "Laurene Powell Jobs' Emerson Collective acquired majority stake. LPJ holds ~$16B in Apple stock (Meta competitor). Key question: did coverage tone toward Apple competitors change after this ownership change?"
+      notes: "Laurene Powell Jobs' Emerson Collective acquired majority stake from David G. Bradley (retained minority). Peter Lattman (Emerson Collective staffer) named vice chairman immediately. LPJ holds ~$16B in Apple stock (Meta competitor). Key question: did coverage tone toward Apple competitors change after this ownership change?"
+    - event: "Nicholas Thompson named CEO"
+      date: "2020-12"
+      notes: "Former Wired EIC hired as CEO. Creates direct Condé Nast editorial culture bridge. Under Thompson: profitability achieved, record subscriptions, 3 Pulitzer Prizes, OpenAI licensing deal (May 2024). Also poached ~20 journalists from Washington Post."
