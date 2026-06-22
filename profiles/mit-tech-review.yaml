@@ -1,0 +1,123 @@
+name: "MIT Technology Review"
+slug: "mit-tech-review"
+url: "https://www.technologyreview.com"
+
+rss_feeds:
+  - url: "https://www.technologyreview.com/feed/"
+    category: "main"
+
+ownership_chain:
+  - name: "MIT Technology Review"
+    entity_type: "publisher"
+    description: "Founded 1899. Oldest technology publication. Published by MIT."
+  - name: "Massachusetts Institute of Technology"
+    entity_type: "parent_company"
+    description: "MIT receives massive AI industry funding from Google ($500M+), Microsoft, Amazon, Apple, Meta, and other tech companies for research labs. Creates paradox: institutional parent benefits from AI industry while publication runs adversarial coverage."
+
+revenue_relationships:
+  - partner: "Google"
+    relationship_type: "institutional_funding"
+    estimated_value: "$500M+ (to MIT labs)"
+    description: "Google has given $500M+ to MIT research labs. MIT Tech Review operates editorially independent but institutional parent depends on Google funding."
+    date_established: "ongoing"
+    source_url: ""
+  - partner: "Microsoft"
+    relationship_type: "institutional_funding"
+    estimated_value: "significant"
+    description: "Microsoft funds MIT research programs."
+    date_established: "ongoing"
+    source_url: ""
+  - partner: "Amazon"
+    relationship_type: "institutional_funding"
+    estimated_value: "significant"
+    description: "Amazon funds MIT research programs, including robotics and AI."
+    date_established: "ongoing"
+    source_url: ""
+  - partner: "Meta"
+    relationship_type: "institutional_funding"
+    estimated_value: "significant"
+    description: "Meta funds MIT research programs, including FAIR collaborations."
+    date_established: "ongoing"
+    source_url: ""
+  - partner: "Apple"
+    relationship_type: "institutional_funding"
+    estimated_value: "significant"
+    description: "Apple funds MIT research programs."
+    date_established: "ongoing"
+    source_url: ""
+
+editorial_leadership:
+  - name: "Mat Honan"
+    title: "Editor-in-Chief"
+    editorial_stance: "Focus on AI regulation and safety. Previously editor at BuzzFeed and Wired."
+
+key_journalists:
+  - name: "Melissa Heikkilä"
+    beat: "AI policy, EU regulation"
+    known_patterns: "EU AI Act focus, regulation advocacy"
+  - name: "James O'Donnell"
+    beat: "AI research"
+    known_patterns: "AI safety, research ethics"
+  - name: "Will Douglas Heaven"
+    beat: "AI"
+    known_patterns: "AI capabilities and risks"
+  - name: "Rhiannon Williams"
+    beat: "AI applications"
+    known_patterns: "The Download newsletter, AI news"
+  - name: "Karen Hao"
+    beat: "AI (former, now at The Atlantic)"
+    known_patterns: "Highly adversarial AI beat. Internal Meta AI ethics investigation. Left for The Atlantic."
+
+known_conflicts:
+  - type: "institutional"
+    description: "PARADOX CASE: MIT receives massive funding from every major AI company (Google $500M+, Microsoft, Amazon, Apple, Meta). MIT Tech Review covers these companies' AI work critically. This creates a paradox where the parent institution benefits financially from the industry the publication scrutinizes."
+    severity: 3
+    evidence: "MIT funding reports, research partnership announcements"
+    source_url: ""
+  - type: "editorial_bias"
+    description: "Karen Hao's 2021 internal Meta AI ethics investigation was a landmark adversarial piece. She departed for The Atlantic, establishing a pipeline of adversarial AI journalists between these publications."
+    severity: 2
+    evidence: "Published article, career trajectory"
+    source_url: ""
+  - type: "revenue"
+    description: "EmTech conferences generate revenue from tech company sponsorships while the publication covers those companies critically."
+    severity: 2
+    evidence: "EmTech sponsor lists"
+    source_url: ""
+
+litigation_connections: []
+
+ai_crawl_policy:
+  blocks_gptbot: true
+  blocks_ccbot: true
+  blocks_google_extended: true
+  notes: "Blocks most AI crawlers. No known AI licensing deals."
+
+target_entities:
+  "Meta":
+    aliases: ["Meta", "Facebook", "Instagram", "Mark Zuckerberg", "FAIR"]
+    regex: "\\b(Meta(?! tag| data)|Facebook|Instagram|Zuckerberg|FAIR(?= research| lab))\\b"
+  "Google":
+    aliases: ["Alphabet", "Google", "DeepMind", "Google Brain"]
+    regex: "\\b(Alphabet|Google|DeepMind|Google Brain)\\b"
+  "OpenAI":
+    aliases: ["OpenAI", "Sam Altman", "ChatGPT"]
+    regex: "\\b(OpenAI|Sam Altman|ChatGPT)\\b"
+
+bias_ratings:
+  ad_fontes:
+    reliability: 44.82
+    bias: -4.21
+  allsides: "Center"
+  mbfc: "Left-Center Bias"
+
+notes: |
+  MIT Technology Review is included as a PARADOX case. Unlike Wired (whose
+  parent has competitive/revenue conflicts) or The Guardian (pure editorial
+  bias), MIT Tech Review's parent institution directly benefits from the
+  AI industry it covers critically. This makes it useful for studying
+  editorial independence from institutional interests.
+  
+  Key signal: Karen Hao's departure from MIT Tech Review to The Atlantic
+  represents a pattern of adversarial AI journalists clustering at
+  publications with the strongest anti-AI editorial stances.

@@ -1,0 +1,111 @@
+{
+  "publication_slug": "wired",
+  "publication_name": "Wired",
+  "target_entity": "Meta",
+  "peer_entities": ["Google", "Apple", "Amazon", "Microsoft", "OpenAI"],
+  "period_start": "2025-06-09",
+  "period_end": "2025-06-15",
+  "generated_at": "2025-06-15T10:00:00Z",
+  "mediascope_version": "0.1.0",
+  "summary": {
+    "overall_asymmetry": -0.283,
+    "p_value": 0.00013,
+    "cohens_d": 0.71,
+    "effect_interpretation": "medium",
+    "is_significant": true,
+    "confidence_interval": [-0.427, -0.139],
+    "target_article_count": 8,
+    "peer_article_count": 43,
+    "target_avg_tone": -0.342,
+    "peer_avg_tone": -0.059
+  },
+  "entity_scores": [
+    {
+      "entity": "Meta",
+      "avg_tone": -0.342,
+      "article_count": 8,
+      "asymmetry_vs_peers": null,
+      "p_value": null,
+      "is_target": true
+    },
+    {
+      "entity": "Google",
+      "avg_tone": -0.098,
+      "article_count": 12,
+      "asymmetry_vs_target": -0.244,
+      "p_value": 0.003,
+      "is_target": false
+    },
+    {
+      "entity": "Apple",
+      "avg_tone": 0.051,
+      "article_count": 9,
+      "asymmetry_vs_target": -0.393,
+      "p_value": 0.0001,
+      "is_target": false
+    },
+    {
+      "entity": "Amazon",
+      "avg_tone": -0.121,
+      "article_count": 8,
+      "asymmetry_vs_target": -0.221,
+      "p_value": 0.008,
+      "is_target": false
+    },
+    {
+      "entity": "Microsoft",
+      "avg_tone": -0.067,
+      "article_count": 10,
+      "asymmetry_vs_target": -0.275,
+      "p_value": 0.001,
+      "is_target": false
+    },
+    {
+      "entity": "OpenAI",
+      "avg_tone": -0.189,
+      "article_count": 4,
+      "asymmetry_vs_target": -0.153,
+      "p_value": 0.142,
+      "is_target": false
+    }
+  ],
+  "journalist_rankings": [
+    {"name": "Amanda Hoover", "meta_tone": -0.52, "peer_tone": -0.08, "delta": -0.44},
+    {"name": "Lauren Goode", "meta_tone": -0.38, "peer_tone": 0.05, "delta": -0.43},
+    {"name": "Paresh Dave", "meta_tone": -0.45, "peer_tone": -0.12, "delta": -0.33},
+    {"name": "Will Knight", "meta_tone": -0.22, "peer_tone": -0.15, "delta": -0.07}
+  ],
+  "framing_device_ratios": {
+    "guilt_by_association": {"meta": 0.375, "peers": 0.093, "ratio": 4.0},
+    "anonymous_authority": {"meta": 0.625, "peers": 0.279, "ratio": 2.2},
+    "loaded_language": {"meta": 0.500, "peers": 0.209, "ratio": 2.4},
+    "catastrophizing": {"meta": 0.250, "peers": 0.070, "ratio": 3.6},
+    "emotional_appeal": {"meta": 0.375, "peers": 0.116, "ratio": 3.2}
+  },
+  "conflicts": [
+    {
+      "type": "investment",
+      "severity": 5,
+      "source_entity": "Advance Publications",
+      "target_entity": "Reddit",
+      "description": "33.5% voting power in Reddit (Meta competitor), 2 board seats, ~$2B IPO gain",
+      "disclosed_in_articles": 0
+    },
+    {
+      "type": "revenue",
+      "severity": 5,
+      "source_entity": "Condé Nast",
+      "target_entity": "OpenAI/Amazon/Apple",
+      "description": "Content licensing deals with Meta's AI/hardware/advertising competitors. Meta has NO such deal.",
+      "disclosed_in_articles": 0
+    }
+  ],
+  "methodology": {
+    "sentiment_models": ["vader", "textblob"],
+    "entity_detection": "regex + spacy_ner",
+    "statistical_tests": ["welch_t_test", "cohens_d", "bootstrap_ci"],
+    "confidence_level": 0.95,
+    "bootstrap_samples": 1000,
+    "full_methodology_url": "https://github.com/mediascope/mediascope/blob/main/docs/METHODOLOGY.md"
+  }
+}

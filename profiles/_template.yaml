@@ -1,0 +1,83 @@
+# MediaScope Publication Profile Template
+# Copy this file and fill in the details for your target publication.
+# See docs/ADDING_PUBLICATIONS.md for detailed instructions.
+
+# Basic Information
+name: ""                    # Full publication name
+slug: ""                    # URL-safe identifier (lowercase, hyphens)
+url: ""                     # Publication homepage URL
+
+# RSS Feeds
+rss_feeds:
+  - url: ""                 # Primary RSS feed
+    category: "main"
+  # Add more feeds for specific sections:
+  # - url: ""
+  #   category: "technology"
+
+# Ownership Chain (from publication up to ultimate parent)
+ownership_chain:
+  - name: ""
+    entity_type: "publisher"      # publisher, parent_company, holding_company, family_office, individual
+    description: ""
+  # - name: ""
+  #   entity_type: "parent_company"
+  #   description: ""
+
+# Revenue Relationships
+revenue_relationships: []
+  # - partner: ""
+  #   relationship_type: ""      # licensing, advertising, partnership, investment
+  #   estimated_value: ""        # e.g., "$50M+" or "undisclosed"
+  #   description: ""
+  #   date_established: ""
+  #   source_url: ""
+
+# Editorial Leadership
+editorial_leadership:
+  - name: ""
+    title: ""
+    # editorial_stance: ""      # optional: known editorial positions
+
+# Key Journalists (covering your target beat)
+key_journalists: []
+  # - name: ""
+  #   beat: ""                  # e.g., "AI", "Big Tech", "Social Media"
+  #   known_patterns: ""        # optional: observed coverage tendencies
+
+# Known Conflicts of Interest
+known_conflicts: []
+  # - type: ""                  # revenue, investment, board_seat, competitive, litigation
+  #   description: ""
+  #   severity: 3               # 1-5 scale
+  #   evidence: ""
+  #   source_url: ""
+
+# Litigation Connections
+litigation_connections: []
+  # - type: ""                  # funder, plaintiff, connected_party
+  #   description: ""
+  #   case_reference: ""
+
+# AI Crawl Policy
+ai_crawl_policy:
+  blocks_gptbot: false
+  blocks_ccbot: false
+  blocks_google_extended: false
+  notes: ""
+
+# Target Entity Clusters (for entity detection)
+# These define how to recognize mentions of specific companies/entities
+target_entities:
+  # Example:
+  # "Meta":
+  #   aliases: ["Meta Platforms", "Facebook", "Instagram", "WhatsApp"]
+  #   regex: "\\b(Meta|Facebook|Instagram|WhatsApp)\\b"
+
+# Media Bias Ratings (from third-party raters)
+bias_ratings: {}
+  # ad_fontes:
+  #   reliability: null        # 0-64 scale
+  #   bias: null               # -42 to +42 scale
+  # allsides: ""               # "Left", "Lean Left", "Center", "Lean Right", "Right"
+  # mbfc: ""                   # Media Bias/Fact Check rating

@@ -1,0 +1,52 @@
+[
+  {
+    "title": "Meta's AI Ambitions Hit Privacy Wall",
+    "text": "Meta's latest AI model has drawn criticism from privacy advocates who say the company trained it on user data without adequate consent. According to sources familiar with the matter, internal documents show Meta engineers raised concerns about the data collection practices months before launch. The move puts Meta further behind rivals like Google and Microsoft, whose AI models have been praised for their responsible data practices. Apple, meanwhile, has positioned its AI strategy around on-device processing that avoids the privacy pitfalls Meta faces. 'This is exactly the kind of reckless behavior we have come to expect from Meta,' claimed one former employee who requested anonymity. Critics argue the company has learned nothing from its Cambridge Analytica scandal.",
+    "url": "https://www.wired.com/story/meta-ai-privacy-wall/",
+    "author": "Amanda Hoover",
+    "published": "2025-06-12T14:00:00Z",
+    "publication_slug": "wired",
+    "expected_primary_entity": "Meta",
+    "expected_tone_range": [-0.8, -0.2]
+  },
+  {
+    "title": "Google's Gemini 2.0 Sets New Benchmark",
+    "text": "Google announced Gemini 2.0 today, its most capable AI model yet. The model outperforms competitors across multiple benchmarks, according to the company. Sundar Pichai said in a blog post that Gemini 2.0 represents a fundamental leap in AI capabilities. Independent researchers confirmed the model's strong performance on reasoning tasks. The launch comes as Alphabet continues to invest heavily in AI infrastructure, with plans to spend $30 billion on data centers this year.",
+    "url": "https://www.wired.com/story/google-gemini-2-benchmark/",
+    "author": "Will Knight",
+    "published": "2025-06-11T10:00:00Z",
+    "publication_slug": "wired",
+    "expected_primary_entity": "Google",
+    "expected_tone_range": [0.0, 0.6]
+  },
+  {
+    "title": "Apple Vision Pro Gets Enterprise Upgrade",
+    "text": "Apple today unveiled a major enterprise update for Vision Pro, adding features that make the headset more useful for business customers. Tim Cook announced the update at a special event, saying Apple Vision Pro is now used by 80% of Fortune 100 companies. The new features include enhanced collaboration tools and improved security for enterprise deployments. Analysts praised the update as a smart move that positions Apple well in the enterprise AR market.",
+    "url": "https://www.wired.com/story/apple-vision-pro-enterprise/",
+    "author": "Lauren Goode",
+    "published": "2025-06-13T12:00:00Z",
+    "publication_slug": "wired",
+    "expected_primary_entity": "Apple",
+    "expected_tone_range": [0.1, 0.7]
+  },
+  {
+    "title": "Inside Meta's Struggle to Keep Teens Safe",
+    "text": "Internal Meta documents obtained by WIRED reveal the company knew its platforms were harmful to teenagers but delayed implementing safety features. Sources who spoke on condition of anonymity described a culture where growth metrics took precedence over user safety. A former trust and safety employee admitted that proposed teen protection features were repeatedly shelved due to concerns about engagement metrics. The revelations come as Meta faces lawsuits from 42 state attorneys general over alleged harms to minors. Mark Zuckerberg has insisted the company takes teen safety seriously, but critics argue these internal documents tell a different story.",
+    "url": "https://www.wired.com/story/meta-teens-safety-struggle/",
+    "author": "Paresh Dave",
+    "published": "2025-06-10T08:00:00Z",
+    "publication_slug": "wired",
+    "expected_primary_entity": "Meta",
+    "expected_tone_range": [-0.9, -0.3]
+  },
+  {
+    "title": "Amazon Expands Same-Day Delivery to 50 New Cities",
+    "text": "Amazon announced today that its same-day delivery service will expand to 50 new cities across the United States. Andy Jassy said the expansion reflects Amazon's continued investment in logistics infrastructure. The company has built 15 new fulfillment centers in the past year, creating an estimated 25,000 jobs. Customer satisfaction scores for same-day delivery are at 94%, according to Amazon's internal data.",
+    "url": "https://www.wired.com/story/amazon-same-day-expansion/",
+    "author": "Brian Barrett",
+    "published": "2025-06-14T09:00:00Z",
+    "publication_slug": "wired",
+    "expected_primary_entity": "Amazon",
+    "expected_tone_range": [0.0, 0.5]
+  }
+]

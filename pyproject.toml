@@ -1,0 +1,83 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mediascope"
+version = "0.1.0"
+description = "Open-source toolkit for tracking editorial bias, ownership conflicts, and coverage asymmetry in media publications"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "MediaScope Contributors"}
+]
+keywords = ["media-bias", "journalism", "transparency", "coverage-analysis", "conflicts-of-interest"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Text Processing :: Linguistic",
+]
+dependencies = [
+    "click>=8.1",
+    "pyyaml>=6.0",
+    "feedparser>=6.0",
+    "newspaper3k>=0.2.8",
+    "requests>=2.31",
+    "beautifulsoup4>=4.12",
+    "spacy>=3.6",
+    "textblob>=0.18",
+    "vaderSentiment>=3.3",
+    "scipy>=1.11",
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "jinja2>=3.1",
+    "rich>=13.0",
+    "sqlalchemy>=2.0",
+]
+
+[project.optional-dependencies]
+gpu = [
+    "transformers>=4.30",
+    "torch>=2.0",
+]
+openai = [
+    "openai>=1.0",
+]
+dev = [
+    "pytest>=7.4",
+    "pytest-cov>=4.1",
+    "ruff>=0.1",
+    "mypy>=1.5",
+]
+
+[project.scripts]
+mediascope = "mediascope.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/mediascope/mediascope"
+Documentation = "https://github.com/mediascope/mediascope/tree/main/docs"
+Repository = "https://github.com/mediascope/mediascope"
+Issues = "https://github.com/mediascope/mediascope/issues"
+
+[tool.setuptools.packages.find]
+include = ["mediascope*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

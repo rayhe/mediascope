@@ -1,0 +1,32 @@
+# Core
+click>=8.1
+pyyaml>=6.0
+feedparser>=6.0
+newspaper3k>=0.2.8
+requests>=2.31
+beautifulsoup4>=4.12
+lxml>=4.9
+
+# NLP
+spacy>=3.6
+textblob>=0.18
+vaderSentiment>=3.3
+
+# Statistics
+scipy>=1.11
+numpy>=1.24
+pandas>=2.0
+
+# Templating & Display
+jinja2>=3.1
+rich>=13.0
+
+# Storage
+sqlalchemy>=2.0
+
+# Optional: GPU-accelerated transformer models
+# transformers>=4.30
+# torch>=2.0
+
+# Optional: OpenAI API for editorial tone analysis
+# openai>=1.0

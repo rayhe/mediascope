@@ -1,0 +1,116 @@
+name: "The New York Times"
+slug: "nytimes"
+url: "https://www.nytimes.com"
+
+rss_feeds:
+  - url: "https://rss.nytimes.com/services/xml/rss/nyt/Technology.xml"
+    category: "technology"
+  - url: "https://rss.nytimes.com/services/xml/rss/nyt/Business.xml"
+    category: "business"
+  - url: "https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+    category: "main"
+
+ownership_chain:
+  - name: "The New York Times"
+    entity_type: "publisher"
+    description: "Paper of record, founded 1851. Digital subscription model."
+  - name: "The New York Times Company"
+    entity_type: "parent_company"
+    description: "Publicly traded (NYSE: NYT). Sulzberger family controls through dual-class shares."
+  - name: "Sulzberger Family"
+    entity_type: "family_office"
+    description: "A.G. Sulzberger is current publisher. Family controls Class B shares with super-voting rights."
+
+revenue_relationships:
+  - partner: "Google"
+    relationship_type: "advertising"
+    estimated_value: "significant (programmatic ad revenue)"
+    description: "Google is major programmatic ad partner. Complex relationship: depends on Google for revenue, covers Google critically."
+    date_established: "ongoing"
+    source_url: ""
+  - partner: "OpenAI"
+    relationship_type: "litigation"
+    estimated_value: "billions (claimed damages)"
+    description: "NYT sued OpenAI and Microsoft in Dec 2023 for copyright infringement. Claims billions in damages. NYT content was used to train GPT models."
+    date_established: "2023-12"
+    source_url: "https://nytco-assets.nytimes.com/2023/12/NYT_Complaint_Dec2023.pdf"
+  - partner: "Apple"
+    relationship_type: "partnership"
+    estimated_value: "undisclosed"
+    description: "NYT app deeply integrated with Apple ecosystem. Apple News+ partnership."
+    date_established: "ongoing"
+    source_url: ""
+
+editorial_leadership:
+  - name: "Joseph Kahn"
+    title: "Executive Editor"
+    editorial_stance: "Emphasis on AI threatening journalism business model"
+
+key_journalists:
+  - name: "Cade Metz"
+    beat: "AI research and industry"
+    known_patterns: "Critical of AI industry practices, worker exploitation"
+  - name: "Karen Weise"
+    beat: "Big Tech, Microsoft, Amazon"
+    known_patterns: "Investigative focus on tech company power"
+  - name: "Mike Isaac"
+    beat: "Social media, Meta"
+    known_patterns: "Deep sourcing inside Meta, wrote 'Super Pumped' on Uber"
+  - name: "Nico Grant"
+    beat: "Google, AI"
+    known_patterns: "Google AI development and competition"
+  - name: "Kevin Roose"
+    beat: "Technology and society"
+    known_patterns: "Experiential AI coverage, Bing Sydney incident"
+  - name: "Kashmir Hill"
+    beat: "Privacy, facial recognition"
+    known_patterns: "Clearview AI investigation, privacy advocacy"
+  - name: "Sheera Frenkel"
+    beat: "Online misinformation, Meta"
+    known_patterns: "Co-wrote 'An Ugly Truth' about Facebook"
+
+known_conflicts:
+  - type: "litigation"
+    description: "Actively suing OpenAI and Microsoft for copyright infringement while building AI products internally (Climate Answers, AI search). Covers AI industry as plaintiff, not neutral observer."
+    severity: 5
+    evidence: "Court filing NYT v. OpenAI, Microsoft, Dec 2023"
+    source_url: "https://nytco-assets.nytimes.com/2023/12/NYT_Complaint_Dec2023.pdf"
+  - type: "competitive"
+    description: "NYT AI strategy creates incentive to frame AI companies as IP thieves. Building own AI while suing others for doing the same."
+    severity: 4
+    evidence: "NYT product launches, internal AI initiatives"
+    source_url: ""
+  - type: "revenue"
+    description: "Depends on Google for significant ad revenue while covering Google critically. Complex dual-interest."
+    severity: 3
+    evidence: "Digital ad revenue reporting"
+    source_url: ""
+
+litigation_connections:
+  - type: "plaintiff"
+    description: "Direct plaintiff in NYT v. OpenAI et al. Financial outcome directly tied to coverage framing of AI copyright issues."
+    case_reference: "1:23-cv-11195, S.D.N.Y."
+
+ai_crawl_policy:
+  blocks_gptbot: true
+  blocks_ccbot: true
+  blocks_google_extended: true
+  notes: "Aggressively blocks AI crawlers. Consistent with litigation strategy."
+
+target_entities:
+  "Meta":
+    aliases: ["Meta Platforms", "Facebook", "Instagram", "WhatsApp", "Mark Zuckerberg"]
+    regex: "\\b(Meta(?! tag| data)|Facebook|Instagram|WhatsApp|Zuckerberg)\\b"
+  "Google":
+    aliases: ["Alphabet", "Google", "YouTube", "DeepMind", "Sundar Pichai"]
+    regex: "\\b(Alphabet|Google|YouTube|DeepMind|Pichai)\\b"
+  "OpenAI":
+    aliases: ["OpenAI", "Sam Altman", "ChatGPT", "GPT-4"]
+    regex: "\\b(OpenAI|Sam Altman|ChatGPT|GPT-[45o])\\b"
+
+bias_ratings:
+  ad_fontes:
+    reliability: 45.56
+    bias: -5.94
+  allsides: "Lean Left"
+  mbfc: "Left-Center Bias"

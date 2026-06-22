@@ -1,0 +1,100 @@
+name: "The Guardian"
+slug: "guardian"
+url: "https://www.theguardian.com"
+
+rss_feeds:
+  - url: "https://www.theguardian.com/technology/rss"
+    category: "technology"
+  - url: "https://www.theguardian.com/business/rss"
+    category: "business"
+  - url: "https://www.theguardian.com/world/rss"
+    category: "world"
+
+ownership_chain:
+  - name: "The Guardian"
+    entity_type: "publisher"
+    description: "Founded 1821. Reader-funded model. No paywall."
+  - name: "Guardian Media Group"
+    entity_type: "parent_company"
+    description: "Media company. Also operates The Observer."
+  - name: "Scott Trust Limited"
+    entity_type: "holding_company"
+    description: "Non-profit trust. Purpose: secure financial and editorial independence of The Guardian in perpetuity. No corporate parent with tech/AI interests."
+
+revenue_relationships:
+  - partner: "Meta"
+    relationship_type: "none"
+    estimated_value: "$0"
+    description: "No significant revenue relationship. Guardian has been critical of Facebook's impact on journalism since 2016."
+    date_established: "n/a"
+    source_url: ""
+  - partner: "Google"
+    relationship_type: "advertising"
+    estimated_value: "significant (programmatic)"
+    description: "Google is major ad revenue source via programmatic advertising."
+    date_established: "ongoing"
+    source_url: ""
+
+editorial_leadership:
+  - name: "Katharine Viner"
+    title: "Editor-in-Chief"
+    editorial_stance: "Strong editorial stance on AI threats to journalism, labor, and democracy. The Guardian style guide explicitly warns about tech industry framing."
+
+key_journalists:
+  - name: "Alex Hern"
+    beat: "Technology editor"
+    known_patterns: "Critical of Big Tech, surveillance, AI hype"
+  - name: "Dan Milmo"
+    beat: "Global technology editor"
+    known_patterns: "EU tech regulation, social media harms"
+  - name: "Kiran Stacey"
+    beat: "US tech policy"
+    known_patterns: "Antitrust, regulation"
+  - name: "Julia Carrie Wong"
+    beat: "Technology and society (former)"
+    known_patterns: "Facebook criticism, misinformation"
+
+known_conflicts:
+  - type: "editorial_bias"
+    description: "CONTROL CASE: No significant corporate conflicts. Editorial bias is purely ideological/editorial, not financial. Useful baseline for distinguishing financial conflicts from editorial stance."
+    severity: 1
+    evidence: "Scott Trust non-profit structure eliminates corporate interest conflicts"
+    source_url: ""
+  - type: "competitive"
+    description: "Guardian's reader-funded model is threatened by social media platforms that capture attention and advertising. Structural incentive to frame social media negatively."
+    severity: 2
+    evidence: "Guardian reader fundraising campaigns explicitly cite Big Tech as threat to journalism"
+    source_url: ""
+
+litigation_connections: []
+
+ai_crawl_policy:
+  blocks_gptbot: true
+  blocks_ccbot: true
+  blocks_google_extended: true
+  notes: "Blocks most AI crawlers. Has not entered licensing deals with AI companies."
+
+target_entities:
+  "Meta":
+    aliases: ["Meta", "Facebook", "Instagram", "WhatsApp", "Mark Zuckerberg"]
+    regex: "\\b(Meta(?! tag| data)|Facebook|Instagram|WhatsApp|Zuckerberg)\\b"
+  "Google":
+    aliases: ["Alphabet", "Google", "YouTube", "DeepMind"]
+    regex: "\\b(Alphabet|Google|YouTube|DeepMind)\\b"
+
+bias_ratings:
+  ad_fontes:
+    reliability: 40.23
+    bias: -6.89
+  allsides: "Lean Left"
+  mbfc: "Left-Center Bias"
+
+notes: |
+  The Guardian is included as a CONTROL case. Its non-profit ownership structure
+  means editorial bias stems from ideological/editorial choices rather than
+  financial conflicts. Comparing Wired (financial conflicts) to Guardian (pure
+  editorial bias) helps isolate the financial incentive signal.
+  
+  Research note: Bunz & Braghieri 2021 found Guardian had only 29% positive AI
+  coverage vs 49% for WSJ, making it a useful benchmark for editorial AI skepticism
+  independent of ownership conflicts.

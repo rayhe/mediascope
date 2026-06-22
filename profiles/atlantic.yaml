@@ -1,0 +1,92 @@
+name: "The Atlantic"
+slug: "atlantic"
+url: "https://www.theatlantic.com"
+
+rss_feeds:
+  - url: "https://www.theatlantic.com/feed/all/"
+    category: "main"
+  - url: "https://www.theatlantic.com/feed/channel/technology/"
+    category: "technology"
+
+ownership_chain:
+  - name: "The Atlantic"
+    entity_type: "publisher"
+    description: "Founded 1857. Digital-first pivot under current ownership. 1M+ subscribers."
+  - name: "Atlantic Media"
+    entity_type: "parent_company"
+    description: "Majority owned by Emerson Collective since 2017."
+  - name: "Emerson Collective"
+    entity_type: "holding_company"
+    description: "Founded and led by Laurene Powell Jobs. Impact-focused organization. Also invests in Axios, education ventures."
+    investments:
+      - entity: "Apple"
+        relationship: "Laurene Powell Jobs is Steve Jobs' widow. Holds massive Apple stock (~$16B+). LPJ Trust is among Apple's largest individual shareholders."
+        competitive_with: ["Meta"]
+  - name: "Laurene Powell Jobs"
+    entity_type: "individual"
+    description: "Net worth ~$16B (Forbes 2024). Apple connection through inheritance. Also invested in Axios via Emerson Collective."
+
+revenue_relationships:
+  - partner: "Apple"
+    relationship_type: "indirect_financial"
+    estimated_value: "~$16B+ (stock holdings)"
+    description: "Owner LPJ holds massive Apple stock. Apple competes with Meta in hardware (Vision Pro vs Quest), AI, and privacy positioning. Apple's 'privacy' narrative directly undermines Meta's advertising business."
+    date_established: "1997 (Jobs era)"
+    source_url: ""
+
+editorial_leadership:
+  - name: "Jeffrey Goldberg"
+    title: "Editor-in-Chief"
+    editorial_stance: "Anti-AI editorial direction. Focuses on AI threats to democracy, labor, creative industries."
+
+key_journalists:
+  - name: "Ian Bogost"
+    beat: "Technology criticism"
+    known_patterns: "Philosophical/cultural criticism of tech industry. Anti-AI-hype stance."
+  - name: "Charlie Warzel"
+    beat: "Technology, media, politics"
+    known_patterns: "Former NYT, critical of tech platforms, disinformation"
+  - name: "Adrienne LaFrance"
+    beat: "Technology (former exec editor)"
+    known_patterns: "Wrote 'Facebook is a Doomsday Machine' (2020), foundational anti-Facebook framing"
+  - name: "Karen Hao"
+    beat: "AI (from MIT Tech Review)"
+    known_patterns: "Highly critical AI coverage. Joined Atlantic from MIT Tech Review."
+  - name: "Matteo Wong"
+    beat: "AI and technology"
+    known_patterns: "AI labor displacement, creative industry impacts"
+
+known_conflicts:
+  - type: "investment"
+    description: "Owner Laurene Powell Jobs holds ~$16B+ in Apple stock. Apple directly competes with Meta in hardware, AI, and uses 'privacy' narrative that undermines Meta's advertising model."
+    severity: 4
+    evidence: "Forbes wealth estimates, Apple shareholder records"
+    source_url: ""
+  - type: "editorial_bias"
+    description: "Adrienne LaFrance's 2020 'Facebook is a Doomsday Machine' article established The Atlantic's adversarial editorial posture toward Meta specifically."
+    severity: 3
+    evidence: "Published article, subsequent editorial direction"
+    source_url: "https://www.theatlantic.com/technology/archive/2020/12/facebook-doomsday-machine/617384/"
+
+litigation_connections: []
+
+ai_crawl_policy:
+  blocks_gptbot: false
+  blocks_ccbot: true
+  blocks_google_extended: true
+  notes: "Allows some AI crawlers. No known AI licensing deals."
+
+target_entities:
+  "Meta":
+    aliases: ["Meta", "Facebook", "Instagram", "WhatsApp", "Mark Zuckerberg"]
+    regex: "\\b(Meta(?! tag| data)|Facebook|Instagram|WhatsApp|Zuckerberg)\\b"
+  "Apple":
+    aliases: ["Apple", "iPhone", "Tim Cook", "Apple Intelligence"]
+    regex: "\\b(Apple(?! pie)|iPhone|Tim Cook|Apple Intelligence)\\b"
+
+bias_ratings:
+  ad_fontes:
+    reliability: 42.58
+    bias: -7.45
+  allsides: "Lean Left"
+  mbfc: "Left-Center Bias"

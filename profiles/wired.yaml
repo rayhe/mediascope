@@ -1,0 +1,153 @@
+name: "Wired"
+slug: "wired"
+url: "https://www.wired.com"
+
+rss_feeds:
+  - url: "https://www.wired.com/feed/rss"
+    category: "main"
+  - url: "https://www.wired.com/feed/category/business/latest/rss"
+    category: "business"
+  - url: "https://www.wired.com/feed/category/gear/latest/rss"
+    category: "gear"
+  - url: "https://www.wired.com/feed/category/science/latest/rss"
+    category: "science"
+  - url: "https://www.wired.com/feed/category/security/latest/rss"
+    category: "security"
+  - url: "https://www.wired.com/feed/category/politics/latest/rss"
+    category: "politics"
+
+ownership_chain:
+  - name: "Wired"
+    entity_type: "publisher"
+    description: "Digital and print technology publication, founded 1993"
+  - name: "Condé Nast"
+    entity_type: "parent_company"
+    description: "Global media company. Also publishes Vogue, The New Yorker, Vanity Fair, GQ, Pitchfork, Ars Technica, Bon Appétit"
+  - name: "Advance Publications"
+    entity_type: "holding_company"
+    description: "Private media holding company founded 1922. Also owns American City Business Journals, Brightspot CMS"
+    investments:
+      - entity: "Reddit"
+        stake: "33.5% voting power"
+        board_seats: 2
+        ipo_gain: "~$2B"
+        competitive_with: ["Meta", "X/Twitter"]
+      - entity: "Charter Communications"
+        stake: "significant minority"
+      - entity: "Discovery (formerly)"
+        stake: "divested"
+  - name: "Newhouse Family"
+    entity_type: "family_office"
+    description: "Si Newhouse Jr. (d. 2017) and Donald Newhouse. Third generation now manages. Estimated family wealth $25B+ (Forbes)"
+
+revenue_relationships:
+  - partner: "OpenAI"
+    relationship_type: "licensing"
+    estimated_value: "undisclosed, multi-year"
+    description: "Condé Nast content licensing deal for AI training and retrieval. OpenAI is Meta's direct AI competitor."
+    date_established: "2024"
+    source_url: "https://www.condenast.com/news/conde-nast-and-openai-announce-partnership"
+  - partner: "Amazon"
+    relationship_type: "licensing"
+    estimated_value: "undisclosed"
+    description: "Amazon Rufus AI shopping assistant content deal. Amazon competes with Meta in advertising and AI."
+    date_established: "2024"
+    source_url: ""
+  - partner: "Apple"
+    relationship_type: "licensing"
+    estimated_value: "~$50M+ (archive negotiations)"
+    description: "Apple Intelligence archive access negotiations. Apple competes with Meta in hardware (Vision Pro vs Quest), AI, and privacy positioning."
+    date_established: "2024-2025 (negotiations)"
+    source_url: ""
+  - partner: "Meta"
+    relationship_type: "none"
+    estimated_value: "$0"
+    description: "NO revenue relationship exists. Meta is the one major tech company NOT paying Condé Nast for content licensing. This creates a structural incentive for adversarial coverage."
+    date_established: "n/a"
+    source_url: ""
+
+editorial_leadership:
+  - name: "Katie Drummond"
+    title: "Global Editorial Director"
+    editorial_stance: "Explicitly adversarial toward Big Tech's political alignment. Described tech industry as engaging in 'increasingly grotesque displays of submission' to political power."
+
+key_journalists:
+  - name: "Paresh Dave"
+    beat: "AI, Big Tech"
+    known_patterns: "Focuses on AI company practices, data use"
+  - name: "Lauren Goode"
+    beat: "Consumer tech, Big Tech"
+    known_patterns: "Product reviews with editorial commentary"
+  - name: "Steven Levy"
+    beat: "Tech industry, Silicon Valley culture"
+    known_patterns: "Long-form features on tech power dynamics"
+  - name: "Zoë Schiffer"
+    beat: "Tech labor, workplace"
+    known_patterns: "Internal company culture exposés"
+  - name: "Brian Barrett"
+    beat: "Politics, DOGE, government tech"
+    known_patterns: "Government technology oversight"
+  - name: "Amanda Hoover"
+    beat: "Social media, AI"
+    known_patterns: "Social media platform criticism"
+  - name: "Will Knight"
+    beat: "AI research and policy"
+    known_patterns: "AI safety and regulation focus"
+  - name: "Kate Knibbs"
+    beat: "Culture, internet culture"
+    known_patterns: "Cultural criticism of tech"
+
+known_conflicts:
+  - type: "investment"
+    description: "Parent company Advance Publications holds 33.5% voting power in Reddit, a direct competitor to Meta's social media platforms. Advance gained ~$2B from Reddit's 2024 IPO."
+    severity: 5
+    evidence: "Reddit SEC filing, Advance board representation"
+    source_url: "https://www.sec.gov/cgi-bin/browse-edgar?company=reddit&CIK=&type=S-1&dateb=&owner=include&count=40&search_text=&action=getcompany"
+  - type: "revenue"
+    description: "Condé Nast has content licensing deals with OpenAI, Amazon, and Apple — all Meta competitors in AI, advertising, or hardware. Meta has NO such deal."
+    severity: 5
+    evidence: "Condé Nast press releases, industry reporting"
+    source_url: "https://www.condenast.com/news/conde-nast-and-openai-announce-partnership"
+  - type: "competitive"
+    description: "Reddit (33.5% owned by Advance) directly competes with Meta for user attention, advertiser spend, and community engagement."
+    severity: 4
+    evidence: "Reddit S-1, advertising market analysis"
+    source_url: ""
+
+litigation_connections:
+  - type: "connected_party"
+    description: "Flashlight Capital funds Social Media Victims Law Center (SMVLC), lead counsel in bellwether Meta addiction trial. No direct Advance/Condé Nast link confirmed, but unnamed UK PE firm behind Flashlight's $250M fund is unidentified."
+    case_reference: "MDL 3047, N.D. Cal."
+
+ai_crawl_policy:
+  blocks_gptbot: false
+  blocks_ccbot: true
+  blocks_google_extended: false
+  notes: "Allows GPTBot (consistent with OpenAI licensing deal), blocks CCBot"
+
+target_entities:
+  "Meta":
+    aliases: ["Meta Platforms", "Facebook", "Instagram", "WhatsApp", "Threads", "Mark Zuckerberg", "Zuckerberg", "Meta AI", "Reality Labs", "Oculus", "Ray-Ban Meta"]
+    regex: "\\b(Meta(?! tag| data| description| key)|Facebook|Instagram(?!.com/p/)|WhatsApp|Threads(?! of)|Zuckerberg|Reality Labs|Oculus|Ray-Ban Meta)\\b"
+  "Google":
+    aliases: ["Alphabet", "Google", "YouTube", "DeepMind", "Waymo", "Sundar Pichai", "Gemini", "Google Cloud"]
+    regex: "\\b(Alphabet|Google|YouTube|DeepMind|Waymo|Pichai|Gemini(?! zodiac)|Google Cloud)\\b"
+  "Apple":
+    aliases: ["Apple", "iPhone", "iPad", "Tim Cook", "Apple Intelligence", "Apple Vision Pro", "Siri"]
+    regex: "\\b(Apple(?! pie| sauce| cider)|iPhone|iPad|Tim Cook|Apple Intelligence|Vision Pro|Siri)\\b"
+  "Amazon":
+    aliases: ["Amazon", "AWS", "Alexa", "Andy Jassy", "Amazon Web Services", "Kindle", "Ring"]
+    regex: "\\b(Amazon(?! rain)|AWS|Alexa|Andy Jassy|Kindle|Ring(?= doorbell| camera))\\b"
+  "Microsoft":
+    aliases: ["Microsoft", "Satya Nadella", "Azure", "Bing", "LinkedIn", "GitHub", "Copilot", "Xbox"]
+    regex: "\\b(Microsoft|Satya Nadella|Azure|Bing|LinkedIn|GitHub|Copilot|Xbox)\\b"
+  "OpenAI":
+    aliases: ["OpenAI", "Sam Altman", "ChatGPT", "GPT-4", "GPT-5", "DALL-E", "Sora"]
+    regex: "\\b(OpenAI|Sam Altman|ChatGPT|GPT-[45o]|DALL-E|Sora)\\b"
+
+bias_ratings:
+  ad_fontes:
+    reliability: 37.13
+    bias: -7.19
+  allsides: "Lean Left"
+  mbfc: "Left-Center Bias"
