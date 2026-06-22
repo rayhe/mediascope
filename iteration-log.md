@@ -4,6 +4,50 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-22 06:00 PT — Hour Type A: Article Deep Dive (Wired NameTag Investigation)
+
+**Focus:** Wired investigation into Meta embedding unreleased "NameTag" facial recognition system in Meta AI app for smart glasses (~June 5, 2026)
+
+### What was improved:
+
+1. **New annotated example: Wired Meta NameTag Facial Recognition (~Jun 5, 2026):**
+   - Reconstructed from 6+ secondary sources (Engadget, Gizmodo, Android Authority, Digital Trends ×2, INCYBER NEWS)
+   - Full 8-dimension manual sentiment analysis: overall tone -0.65, emotional intensity 0.55
+   - 8+ framing devices manually identified (loaded_language, timeline_implication, refusal_amplification, juxtaposition, emotional_appeal, guilt_by_association)
+   - Source analysis: 85% critical, 15% defensive (Meta spokesperson only)
+   - Conflict disclosure assessment: Condé Nast/Advance Publications financial interests in Meta competitors undisclosed
+   - Two new files: article reconstruction + comprehensive analysis with toolkit comparison
+
+2. **Entity detection expanded with 2 new clusters:**
+   - **Privacy/Civil Liberties Orgs:** EFF, ACLU, Access Now, Fight for the Future, EPIC — critical for privacy/surveillance coverage where advocacy orgs are key sources
+   - **Media/Publications:** NYT, WaPo, Guardian, Reuters, AP, Bloomberg, FT, TechCrunch, The Verge, Ars Technica, The Information — tracks cross-publication citation patterns
+
+3. **Whitespace handling fix in alias pattern builder (`entities.py`):**
+   - `re.escape(alias)` now replaces escaped literal spaces with `\s+`
+   - Fixes "The New York\nTimes" across line breaks not matching "The New York Times" alias
+   - All multi-word entity aliases now tolerant of newlines, tabs, and multiple spaces
+
+4. **Framing detection improvements (`framing.py`):**
+   - Added "discreetly" to loaded_language secrecy patterns (was missing alongside quietly/secretly/covertly/surreptitiously)
+   - Added "say-one-thing-do-another" timeline_implication pattern: catches editorial constructions where public statements contradict private actions
+   - Added "contradictory/inconsistent/at odds with/undermines/belies" to timeline_implication vocabulary
+   - Extended timeline removal pattern to include "investigation" as trigger word
+
+5. **Sentiment analysis improvements (`sentiment.py`):**
+   - Added "discreetly" to PASSIVE_FRAMING list
+   - Added 13 privacy/surveillance emotional vocabulary terms to EMOTIONAL_LANGUAGE: surveillance, biometric surveillance, mass identification, faceprints/faceprint, vacuum up, weaponized, stalkers/stalking, abusers, covert filming, vile/vile behavior, invasive
+   - Emotional intensity on NameTag article improved from 0.0 → 0.43
+
+### Key findings from manual-vs-toolkit gap analysis:
+
+**Critical gap identified — VADER positive-bias on investigative journalism:**
+The toolkit scored overall_tone +0.61 on a clearly adversarial (-0.65 manual) article. VADER/TextBlob interpret factual prose as positive even when editorial framing (word choice, source deployment, timeline juxtaposition) is deeply negative. This is the toolkit's single biggest scoring failure and needs a framing-aware correction factor: when loaded_language + timeline_implication + agency_attribution all indicate adversarial framing, apply a negative adjustment to the VADER/TextBlob composite. Priority for next D iteration.
+
+**Source balance gap:** Current source_authority_framing doesn't distinguish whether sources validate or undermine the subject. In this article, 100% of non-Meta sources are critical; Meta's spokesperson is positioned as defensive and immediately contradicted by code evidence. The toolkit scores source_authority as +1.0 (all named sources = high authority) when the real question is whose authority is being invoked against whom.
+
+### Commit: `1991b5c`
+### Sources: Gizmodo, Android Authority, Digital Trends (×2), INCYBER NEWS, Engadget, 9to5Google (search snippets)
+
 ## 2026-06-22 05:00 PT — Hour Type D: Toolkit Quality & Documentation
 
 **Focus:** Fix all test failures, improve entity detection architecture, add real-world annotated example, improve documentation.
