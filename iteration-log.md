@@ -257,3 +257,53 @@ The toolkit scored overall_tone +0.61 on a clearly adversarial (-0.65 manual) ar
 - Editor & Publisher (editorandpublisher.com) — Guardian Reworked launch, Farah→NYT move
 - RocketReach (rocketreach.co) — Kari Paul career dates
 - NYT Company blog (nytco.com) — Farah hire announcement
+
+---
+
+## 2026-06-22 08:00 PT — Hour Type B: Atlantic Tech Desk Deep Dive
+
+**Focus:** Journalist/Publication Research — Atlantic technology desk expansion + conflict-of-interest mapping
+
+### What was improved:
+
+1. **6 new journalist career histories** added to `profiles/careers/journalists.yaml`:
+   - **Matteo Wong** — Harvard Crimson → Atlantic assistant editor (Jun 2022) → staff writer (May 2024). Atlantic's primary AI voice. Covers chatbot harms, AI safety tensions, labor displacement.
+   - **Alex Reisner** — Freelance programmer-journalist → Atlantic contributing writer (Aug 2023) → staff writer (Oct 2025). Broke Books3 story (190K pirated books in Meta/LLaMA training). Built AI Watchdog searchable database. YouTube AI training data investigation.
+   - **Kaitlyn Tiffany** — The Verge → Vox/The Goods → Atlantic (Aug 2019). Internet culture/platforms specialist. Author of 'Everything I Need I Get From You' (2022).
+   - **Ali Breland** — FCC tech reporter → Mother Jones → Atlantic (May 2024). Disinformation/extremism reporter. Nick Fuentes specialist. Livingston Award finalist.
+   - **Ellen Cushing** — East Bay Express → SF Magazine → BuzzFeed News → Atlantic senior tech editor (May 2018) → food/culture staff writer (May 2024). KEY: Built the SF tech bureau that shaped Atlantic's entire tech desk.
+   - **Nicholas Thompson** — Washington Monthly → New Yorker → Wired EIC (2017-2020) → Atlantic CEO (Dec 2020). CRITICAL MIGRATION: Creates direct Condé Nast → Atlantic editorial culture pipeline.
+
+2. **Atlantic profile (`profiles/atlantic.yaml`) major overhaul:**
+   - Key journalists: 5 → 8 (added Reisner, Tiffany, Breland)
+   - Known conflicts: 2 → 5 (added Emerson Collective AI investments $1B+, OpenAI licensing deal, Thompson executive pipeline)
+   - Revenue relationships: Added OpenAI licensing deal (May 2024)
+   - Ownership chain: Added 5 Emerson Collective investments (Mistral, World Labs, Formation Bio, Zap Energy, Axios)
+   - Editorial leadership: Added Thompson (CEO), LaFrance (corrected date), Lattman (vice chairman)
+   - Fixed ai_crawl_policy: Was "No known AI licensing deals" — corrected
+   - Added OpenAI as target entity
+   - Notable arrivals: 3 → 8; added notable departures
+   - LaFrance start date corrected from 2021-01 to 2019-05
+
+3. **Editorial changes (`profiles/careers/editorial_changes.yaml`):**
+   - Added 5 Atlantic entries: Goldberg (EIC), LaFrance (exec editor, corrected), Thompson (CEO), Cushing (tech editor), Lattman (vice chairman)
+
+### Key discovery:
+- **The Atlantic's layered conflicts are deeper than initially mapped.** Emerson Collective's $1B+ AI investments (especially Mistral, a direct Meta Llama competitor) combine with the OpenAI licensing deal, $16B Apple stock, and a CEO who wrote adversarial Facebook coverage at Wired to create multi-level financial incentives. The Atlantic's own union demanding transparency on the OpenAI deal — with EIC Goldberg backing the demand — is itself evidence of internal recognition of potential conflicts. This makes Atlantic potentially a more interesting analytical target than originally anticipated.
+
+### Sources:
+- Editor & Publisher (editorandpublisher.com) — all hire/promotion announcements
+- Talking Biz News (talkingbiznews.com) — Tiffany, Wong, Reisner, Cushing hire announcements
+- VentureBeat (venturebeat.com) — OpenAI-Atlantic deal, Mistral Series B
+- The Wrap (thewrap.com) — OpenAI deal terms, union transparency demand
+- Bloomberg Tax (news.bloombergtax.com) — deal confirmation
+- CNBC/Fintrx via FutureFamilyOffice.net — Emerson Collective $1B+ AI investments
+- Intellectia.ai — World Labs $1B round
+- TechCrunch — Zap Energy $130M round
+- SiliconAngle — Mistral $415M Series A
+- NPR, Wikipedia — Emerson Collective Atlantic acquisition (2017)
+- WEF, Infosys, WebSummit — Thompson career details
+- Muck Rack — Wong, Cushing, Breland byline verification
+- Cascade PBS, Authors Guild — Reisner Books3 investigation impact
+- The Brief (thebrief.news) — Reisner YouTube AI training data investigation
+- Agility PR Solutions — Cushing/Lorenz 2018 hires
