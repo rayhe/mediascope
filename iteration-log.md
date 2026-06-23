@@ -4,6 +4,73 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-22 20:00 PT — Hour Type C: Guardian Ownership & Funding Deep Dive
+
+**Focus:** Complete structural mapping of The Guardian's ownership chain, governance boards, financial data, AI licensing deals, venture capital arm, and industry coalition memberships. Critical reappraisal of Guardian's role as "control case" in the MediaScope framework.
+
+### What was improved:
+
+1. **Guardian profile (`profiles/guardian.yaml`) — massive expansion (+249 lines, near-complete rewrite):**
+   - **Ownership chain overhauled:** 4 entities → 5 (added Scott Trust Endowment Ltd as distinct entity). Each entry rewritten with precise operational descriptions. GNM (operating company) distinguished from GMG (parent company).
+   - **Scott Trust board fully mapped (14 members):** First complete board listing with roles, backgrounds, and source URLs. Key discovery: **Vivian Schiller** — former Twitter Global Chair of News (Meta competitor), NPR CEO, NYTimes.com GM, now Aspen Institute + Thomson Reuters Foundation board. Significant tech-media connections.
+   - **Scott Trust Endowment board fully mapped (7 members):** Tracy Corrigan (chair), Jonathan Evans (CIO), and 5 directors. Source: STEL 2024-25 performance report.
+   - **STEL financials:** £1,245.6M value (March 2025), 10-year return 6.3% (below 8.2% target), diversified across PE/VC (£276M NAV, £352M committed across 28 managers), public equity, emerging markets, hedge funds, credit, gold, bonds. Source: official STEL report.
+   - **FY2024-25 financials added:** £275M record revenue (+6.7%), digital reader revenue £100M+ (20%+ growth), 1.3M recurring digital supporters, operating loss below £25M. Source: Tomorrow's Publisher.
+   - **FY2023-24 financials added:** £257.8M revenue (-2.5%), digital reader revenue £88.2M (+8%), advertising £62.2M (-13%), operating loss £33.9M. Source: The Media Leader/InPublishing.
+   - **OpenAI licensing deal documented:** Strategic partnership Feb 19, 2025. Guardian archive + real-time journalism in ChatGPT. Also rolling out ChatGPT Enterprise internally. Source: Editor & Publisher.
+   - **ProRata licensing deal documented:** Revenue share model (50% of revenue to publishers). Source: INMA webinar with Robert Hahn.
+   - **Google advertising relationship expanded:** Programmatic revenue up 25%+, Guardian seeing "less demand through Google's pipes," integrated with The Trade Desk OpenPath. Source: AdExchanger.
+   - **GMG Ventures / Mercuri VC arm fully documented:** Fund 1: £42M (Scott Trust sole LP, 1.5x TVPI), Fund 2: £50M (British Business Bank cornerstone). B Corp certified. Focus: AI-enabled media-tech startups. Source: British Business Bank press release.
+   - **SPUR coalition membership:** Founding member (Feb 2026) alongside BBC, FT, Sky News, Telegraph. 36 total members. "Operation Leaky Bucket" internal compliance. Source: journalism.co.uk.
+   - **Anna Bateson added as CEO** to editorial leadership. Keith Underwood (CFO/COO) documented with OpenAI deal quotes.
+   - **OpenAI added as target entity** with coverage asymmetry hypothesis (does coverage soften post-deal?).
+   - **4 ownership change events documented:** Scott Trust 2008 conversion, STEL separation, Observer sale, OpenAI partnership.
+
+2. **Editorial changes (`profiles/careers/editorial_changes.yaml`) — 5 new Guardian entries:**
+   - Anna Bateson CEO appointment
+   - OpenAI licensing deal (2025-02-19) — marked as "CRITICAL BUSINESS EVENT"
+   - SPUR coalition founding (2026-02)
+   - Dr Jonathan Paine Scott Trust board appointment (2024-11) — Rothschild TMT specialist
+   - Jane Martinson Scott Trust board appointment (2025-07)
+
+3. **Tests: 134/134 passing**
+
+### Key analytical discovery:
+
+**The Guardian is no longer a clean control case.** The previous assumption — non-profit trust with $0 AI deals and no corporate parent with tech/AI interests — was WRONG on a critical dimension. The OpenAI licensing deal (Feb 2025) creates a direct commercial relationship with Meta's #1 AI competitor. Combined with the ProRata deal, Mercuri VC fund investing in AI media-tech startups, and SPUR coalition membership creating structural opposition to non-licensing AI companies (including Meta), the Guardian has real financial incentives that could influence coverage.
+
+However, the Guardian's conflicts DIFFER IN KIND from the other four publications:
+- **Wired/Condé Nast:** Advance Publications owns 33.5% of Reddit (direct Meta competitor equity)
+- **Atlantic:** Emerson Collective holds $16B Apple stock + Mistral AI investment (concentrated competitor equity)
+- **NYT:** Amazon AI deal ($20-25M/yr) + actively suing OpenAI/Microsoft (litigation-driven conflict)
+- **MIT TR:** Parent MIT receives $174M/yr from industry including Meta itself (research dependency)
+- **Guardian:** Licensing deals with AI companies, but NO equity ownership in specific competitors. £1.2B endowment diversified across 28+ PE/VC managers, not concentrated.
+
+**RECLASSIFICATION:** Guardian moved from "clean control case" to "partial control." Still the closest thing to a baseline in the 5-publication set, but with documented caveats. Pre-Feb 2025 Guardian coverage is cleaner than post-deal coverage for analytical purposes.
+
+**Three testable hypotheses generated:**
+1. Did Guardian coverage of OpenAI change after Feb 2025 deal?
+2. Does Guardian cover Meta differently from its licensing partners vs non-partners?
+3. Did SPUR coalition formation (Feb 2026) shift editorial framing of AI companies?
+
+### Sources:
+- Scott Trust Endowment 2024/25 performance report: `uploads.guim.co.uk/2025/09/11/Scott_Trust_Endowment_performance_report_24_25_(1).pdf`
+- Editor & Publisher (editorandpublisher.com) — OpenAI deal, Jane Martinson board appointment
+- INMA (inma.org) — Robert Hahn webinar: OpenAI + ProRata + pipeline deals
+- InPublishing (inpublishing.co.uk) — Dr Jonathan Paine board appointment, Scott Trust board list (Nov 2024)
+- journalism.co.uk — SPUR coalition founding announcement
+- televisual.com — SPUR coalition expansion
+- Tomorrow's Publisher (tomorrowspublisher.today) — FY2024-25 results
+- The Media Leader (uk.themedialeader.com) — FY2023-24 results with advertising revenue breakdown
+- British Business Bank press release — GMG Ventures / Mercuri Fund 2
+- Global Venturing — Mercuri Fund 2 details
+- AdExchanger — Guardian programmatic revenue, Google relationship
+- Reuters Institute / Thomson Reuters Foundation — Vivian Schiller biography
+- UKSIF — Scott Trust Endowment ESG/investment description
+- Wikipedia — Guardian history, Scott Trust structure, conversion timeline
+
+---
+
 ## 2026-06-22 19:00 PT — Hour Type B: Journalist/Publication Research — Katie Drummond + Leah Feiger Career Profiles
 
 **Focus:** Deep career research on the two most analytically important figures in Wired's post-2023 editorial transformation: Katie Drummond (Global Editorial Director) and Leah Feiger (first-ever politics editor, now Director of Politics & Science). Drummond was already flagged in `editorial_changes.yaml` as "the most important leadership change" but had NO entry in `journalists.yaml`. Feiger was entirely untracked despite being the person who built Wired's politics desk from scratch.
@@ -78,7 +145,7 @@ Tracks every improvement cycle run on the toolkit.
 - NYT: "Wired's New Editor Doesn't Care if the Tech Bros Are Mad" by Katie Robertson (Mar 2026) — cited via Wikipedia ref
 - Pivot podcast transcript: Drummond guest, DOGE coverage discussion (Feb 2025)
 
-### Commit: pending
+### Commit: `d4b5f49`
 ### Tests: 134/134 passing
 ### Files modified: 4 (profiles/careers/journalists.yaml, profiles/careers/editorial_changes.yaml, profiles/wired.yaml, iteration-log.md)
 

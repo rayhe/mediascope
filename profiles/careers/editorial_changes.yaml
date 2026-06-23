@@ -87,6 +87,41 @@ editorial_changes:
       source_url: "https://talkingbiznews.com/they-re-hiring/bloomberg-hires-oltman-as-editor-for-ai-vc-and-startups/"
       notes: "KEY EVENT: Oltman departed after only ~4 months for Bloomberg (editor for AI/VC/startups under Sarah Frier). Reworked series lost its founding editor mid-run. Tests Guardian's editorial resilience when a key hire departs quickly."
 
+    - position: "ceo"
+      outgoing: "David Pemsel"
+      incoming: "Anna Bateson"
+      date: "~2023"
+      source_url: ""
+      notes: "Bateson led record revenue growth (£275M FY2024-25), OpenAI licensing deal (Feb 2025), SPUR coalition founding (Feb 2026), and Observer sale to Tortoise Media."
+
+    - position: "openai_licensing_deal"
+      outgoing: null
+      incoming: null
+      date: "2025-02-19"
+      source_url: "https://editorandpublisher.com/stories/guardian-media-group-announces-strategic-partnership-with-openai,254405"
+      notes: "CRITICAL BUSINESS EVENT: Guardian-OpenAI strategic partnership. Archive + real-time journalism powers ChatGPT. Guardian rolls out ChatGPT Enterprise internally. Destroys 'pure control case' status — creates direct commercial relationship with Meta's #1 AI competitor."
+
+    - position: "spur_coalition_founding"
+      outgoing: null
+      incoming: null
+      date: "2026-02"
+      source_url: "https://journalism.co.uk/stories/bbc-ft-guardian-sky-and-the-times-unite-in-spur-coalition-for-ai-protection"
+      notes: "Guardian is founding member of SPUR (Standards for Publisher Usage Rights) alongside BBC, FT, Sky News, Telegraph. Anna Bateson is named signatory. Coalition creates structural publisher-vs-AI-companies framework."
+
+    - position: "scott_trust_board_member"
+      outgoing: null
+      incoming: "Dr Jonathan Paine"
+      date: "2024-11"
+      source_url: "https://inpublishing.co.uk/articles/dr-jonathan-paine-joins-scott-trust-board-24775"
+      notes: "25-year Rothschild TMT specialist. D.Phil Oxford. Also joins STEL board and Joint Audit Committee. Signals Scott Trust investing in financial/media expertise for AI licensing era."
+
+    - position: "scott_trust_board_member"
+      outgoing: null
+      incoming: "Jane Martinson"
+      date: "2025-07"
+      source_url: "https://editorandpublisher.com/stories/jane-martinson-joins-the-scott-trust-board,255553"
+      notes: "20+ year Guardian veteran joins Scott Trust board."
+
   atlantic:
     - position: "eic"
       outgoing: "James Bennet"

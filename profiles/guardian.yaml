@@ -13,72 +13,242 @@ rss_feeds:
 ownership_chain:
   - name: "The Guardian"
     entity_type: "publisher"
-    description: "Founded 1821. Reader-funded model. No paywall."
-  - name: "Guardian Media Group"
+    description: "Founded 1821. Reader-funded model. No paywall. Print circulation 105,134 (Jul 2021). 1.3M recurring digital supporters (FY2024-25). Readership over 23M UK adults/month."
+  - name: "Guardian News & Media (GNM)"
+    entity_type: "operating_company"
+    description: "Core operating subsidiary. Publisher of theguardian.com — one of the largest English-speaking quality news websites. UK, US (2011), Australian (2013), European (2023), and International editions."
+  - name: "Guardian Media Group (GMG)"
     entity_type: "parent_company"
-    description: "Media company. Also operates The Observer."
+    description: "Media company. CEO: Anna Bateson. CFO/COO: Keith Underwood. Sold The Observer to Tortoise Media in 2024-25. Previously also operated GMG Ventures (now Mercuri)."
   - name: "Scott Trust Limited"
     entity_type: "holding_company"
-    description: "Non-profit trust. Purpose: secure financial and editorial independence of The Guardian in perpetuity. No corporate parent with tech/AI interests."
+    description: "Non-profit limited company (converted from trust in 2008). Purpose: 'to secure the financial and editorial independence of The Guardian in perpetuity and to safeguard the journalistic freedom and liberal values of The Guardian free from commercial or political interference.' Profits reinvested in journalism, not distributed. No shareholders, no corporate parent."
+  - name: "Scott Trust Endowment Ltd (STEL)"
+    entity_type: "endowment_fund"
+    description: "Became independent subsidiary of Scott Trust in 2023/24 (previously part of GMG). Value: £1,245.6M as of 31 March 2025 (up from £1.01B in 2018). Investment objective: CPI + 5% annual return over 10+ years, net of fees. 10-year return: 6.3% (below 8.2% target, below 6.7% benchmark). 1-year return: 1.5% (FY2024-25). Advisors: Cardano (SAA, public markets), Cambridge Associates (private investments), Redington (environmental sustainability). Diversified across global public equity, emerging markets, PE & VC (£276M NAV, £352M committed across 28 managers), diversifiers (£47M NAV, £125M committed across 11 managers), hedge funds (reducing), credit, gold, government bonds, cash."
+    source_url: "https://uploads.guim.co.uk/2025/09/11/Scott_Trust_Endowment_performance_report_24_25_%281%29.pdf"
+
+scott_trust_board:
+  description: "Board of Scott Trust Limited. 14 members as of mid-2025. Notably includes media-tech executives alongside journalists, historians, lawyers, and publishing professionals."
+  members:
+    - name: "Ole Jacob Sunde"
+      role: "Chair"
+      notes: "Also on STEL board."
+    - name: "Katharine Viner"
+      role: "Director (also EIC)"
+      notes: "Editor-in-chief since 2015."
+    - name: "Tracy Corrigan"
+      role: "Director"
+      notes: "Also chairs STEL board."
+    - name: "David Olusoga"
+      role: "Director"
+      notes: "Historian, writer, broadcaster. Oversaw Guardian Legacies of Enslavement project."
+    - name: "Dr Jonathan Paine"
+      role: "Director (appointed Nov 2024)"
+      notes: "25 years as MD/senior adviser at Rothschild & Co., specializing in telecoms, media, and technology. D.Phil from Oxford. Also on STEL board and Joint Audit Committee."
+      source_url: "https://inpublishing.co.uk/articles/dr-jonathan-paine-joins-scott-trust-board-24775"
+    - name: "Stuart Proffitt"
+      role: "Director"
+    - name: "Matthew Ryder KC"
+      role: "Director"
+      notes: "Barrister, former deputy mayor of London."
+    - name: "Vivian Schiller"
+      role: "Director"
+      notes: "KEY TECH CONNECTIONS: Executive Director, Aspen Institute (media, tech, cybersecurity programs). Former: President & CEO of NPR, Global Chair of News at Twitter (Meta social media competitor), GM of NYTimes.com, CDO of NBC News, Chief of Discovery Times Channel, Head of CNN documentary. Also: Thomson Reuters Foundation board, Reuters Institute Advisory Board, Council on Foreign Relations. Strategic advisor to Craig Newmark Philanthropies."
+      source_url: "https://reutersinstitute.politics.ox.ac.uk/people/vivian-schiller"
+    - name: "Russell Scott"
+      role: "Senior Independent Director"
+      notes: "Runs digital transformation consultancy. Senior roles in publishing, digital, and broadcast."
+    - name: "Haroon Siddique"
+      role: "Director"
+    - name: "Margaret Simons"
+      role: "Director"
+    - name: "Nabiha Syed"
+      role: "Director"
+    - name: "Jane Martinson"
+      role: "Director (appointed Jul 2025)"
+      notes: "20+ years at the Guardian. Welcomed for digital transformation experience."
+      source_url: "https://editorandpublisher.com/stories/jane-martinson-joins-the-scott-trust-board,255553"
+    - name: "Stephen Godsell"
+      role: "Group General Counsel & Company Secretary"
+
+scott_trust_endowment_board:
+  members:
+    - name: "Tracy Corrigan"
+      role: "Chair"
+      notes: "Also Scott Trust board director."
+    - name: "Jonathan Evans"
+      role: "Chief Investment Officer"
+    - name: "Stephen Godsell"
+      role: "Group General Counsel & Company Secretary"
+    - name: "Chris Hitchen"
+      role: "Director"
+    - name: "Dr Jonathan Paine"
+      role: "Director"
+      notes: "Also Scott Trust board + Joint Audit Committee."
+    - name: "Gayle Schumacher"
+      role: "Director"
+    - name: "Ole Jacob Sunde"
+      role: "Director"
+      notes: "Also chairs Scott Trust board."
+  source_url: "https://uploads.guim.co.uk/2025/09/11/Scott_Trust_Endowment_performance_report_24_25_%281%29.pdf"
+
+financial_data:
+  fy_2024_25:
+    revenue: "£275M (record)"
+    revenue_growth: "+6.7% from £257.8M"
+    digital_reader_revenue: "£100M+ (20%+ growth)"
+    digital_supporters: "1.3M recurring (up 150K+)"
+    us_revenue: "£50M+ (20%+ growth)"
+    international_revenue: "£100M+"
+    operating_loss: "below £25M (improved from £33.9M)"
+    source_url: "https://tomorrowspublisher.today/the-guardian-halves-losses-and-hits-record-275m-revenue/"
+  fy_2023_24:
+    revenue: "£257.8M (-2.5% YoY)"
+    digital_reader_revenue: "£88.2M (+8%)"
+    print_reader_revenue: "£66.9M (-2.6%)"
+    advertising_revenue: "£62.2M (-13%)"
+    other_revenue: "£40.5M (-4.7%)"
+    operating_loss: "£33.9M"
+    cash_outflow: "£36.5M adjusted"
+    source_url: "https://uk.themedialeader.com/guardian-ad-revenue-plunges-as-it-plans-observer-sale/"
+  revenue_model: "~1/3 digital reader revenue, ~1/3 print revenue, ~1/3 advertising + licensing + other. Licensing described as 'significant and growing revenue stream' alongside reader revenue and advertising."
+  endowment_subsidy: "Annual subsidy must fall within ~£25M of interest returned on Scott Trust Endowment investments."
 
 revenue_relationships:
   - partner: "Meta"
     relationship_type: "none"
     estimated_value: "$0"
-    description: "No significant revenue relationship. Guardian has been critical of Facebook's impact on journalism since 2016."
+    description: "No significant revenue relationship. Guardian has been critical of Facebook's impact on journalism since Cambridge Analytica (2018, Carole Cadwalladr). No AI licensing deal with Meta."
     date_established: "n/a"
     source_url: ""
+  - partner: "OpenAI"
+    relationship_type: "licensing_deal"
+    estimated_value: "Undisclosed"
+    description: "Strategic partnership announced Feb 19, 2025. Guardian reporting and archive journalism available as news source in ChatGPT. Attributed short summaries and article extracts. Guardian also rolling out ChatGPT Enterprise internally for new products, features, and tools. OpenAI is Meta's #1 AI competitor."
+    date_established: "2025-02"
+    competitive_with: ["Meta"]
+    source_url: "https://editorandpublisher.com/stories/guardian-media-group-announces-strategic-partnership-with-openai,254405"
+  - partner: "ProRata"
+    relationship_type: "licensing_deal"
+    estimated_value: "Undisclosed (revenue share model — ProRata pays 50% of all revenue to publisher partners based on content usage)"
+    description: "AI licensing deal. ProRata is an AI startup that shares 50% of revenue with publisher partners proportional to content usage in AI responses. Additional AI revenue stream beyond OpenAI."
+    date_established: "~2025"
+    source_url: "https://www.inma.org/blogs/product-initiative/post.cfm/the-guardian-makes-a-strategic-push-into-ai-content-licencing"
   - partner: "Google"
     relationship_type: "advertising"
-    estimated_value: "significant (programmatic)"
-    description: "Google is major ad revenue source via programmatic advertising."
+    estimated_value: "Significant (programmatic)"
+    description: "Google is major ad revenue source via programmatic advertising and serves as their ad server. Guardian seeing 'less demand coming through Google's pipes' as of late 2024/early 2025. Programmatic revenue overall up 25%+ YoY. Integrated with The Trade Desk's OpenPath for direct programmatic access."
     date_established: "ongoing"
-    source_url: ""
+    source_url: "https://adexchanger.com/publishers/the-guardian-us-is-following-programmatic-budgets-to-private-marketplaces/"
+
+gmg_ventures_mercuri:
+  description: "Scott Trust's venture capital arm. Founded 2017 as GMG Ventures, rebranded to Mercuri in 2023."
+  fund_1:
+    name: "GMG Ventures Fund I"
+    size: "£42M"
+    lp: "Scott Trust Endowment Ltd (sole LP)"
+    status: "7 years into 10-year term"
+    distributions: "£3.3M (9% of paid-in capital)"
+    nav: "£55.1M"
+    tvpi: "1.5x net"
+    portfolio_companies: ["Founders Factory", "Betaworks Ventures", "Signal Media", "Vidsy", "Seated", "A Million Ads", "The Narrative", "Dirty Lemon", "Vizual.ai", "Decoded"]
+  fund_2:
+    name: "Mercuri II LP"
+    size: "£50M"
+    scott_trust_commitment: "£4M"
+    other_lps: ["British Business Bank (ECF cornerstone)", "unnamed blue chip strategic investors"]
+    launch: "2023-05"
+    investments: "12 initial investments + 1 follow-on as of Mar 2025"
+  focus: "Early-stage UK companies at intersection of media, entertainment, and technology. Pre-seed and seed. AI-enabled content creation, distribution, consumption, monetization."
+  certifications: "B Corp certified. Co-founder of VentureESG (650 members). Climate pledge."
+  source_url: "https://www.british-business-bank.co.uk/press-release/mercuri-formerly-gmg-ventures-raises-50-million-second-fund"
+
+spur_coalition:
+  description: "Guardian is a FOUNDING member of SPUR (Standards for Publisher Usage Rights), launched Feb 2026. Coalition of 36 publishers and affiliate organizations developing technical standards and licensing frameworks for AI."
+  founding_members: ["BBC", "Financial Times", "Guardian Media Group", "Sky News", "Telegraph Media Group", "CMA Media", "Mediahuis"]
+  guardian_signatory: "Anna Bateson, CEO"
+  purpose: "Shape 'the rules, standards and infrastructure that enable publishers and AI platforms to do business.' Create shared technical standards, streamline licensing, identify IP protection gaps, promote transparent rights-cleared access."
+  operation_leaky_bucket: "Guardian's internal compliance program ('Operation Leaky Bucket') to identify and close access points for unauthorized content scraping, strengthen negotiating position for licensing deals."
+  source_url: "https://journalism.co.uk/stories/bbc-ft-guardian-sky-and-the-times-unite-in-spur-coalition-for-ai-protection"
 
 editorial_leadership:
   - name: "Katharine Viner"
     title: "Editor-in-Chief"
-    editorial_stance: "Strong editorial stance on AI threats to journalism, labor, and democracy. The Guardian style guide explicitly warns about tech industry framing."
+    start: "2015-06"
+    editorial_stance: "Strong editorial stance on AI threats to journalism, labor, and democracy. The Guardian style guide warns about tech industry framing. Under Viner: Cambridge Analytica investigation (2018), Facebook whistleblower coverage, Hay Festival/Meta censorship coverage. CONTROL BASELINE: exceptional leadership stability (10+ years)."
+  - name: "Anna Bateson"
+    title: "CEO, Guardian Media Group"
+    start: "~2023"
+    editorial_stance: "Business-side leader. Drove record revenue growth, SPUR coalition founding, OpenAI licensing deal, Observer sale to Tortoise Media. Quoted: 'Welcoming 30 new members gives SPUR the scale required to turn its mission into a global mandate.'"
+  - name: "Keith Underwood"
+    title: "Chief Financial and Operating Officer"
+    notes: "Quoted on OpenAI deal: 'This new partnership with OpenAI reflects the intellectual property rights and value associated with our award-winning journalism.' Manages licensing strategy alongside Robert Hahn (Director of Business Affairs & Licensing)."
 
 key_journalists:
   - name: "Alex Hern"
     beat: "UK technology editor"
-    known_patterns: "Critical of Big Tech, surveillance, AI hype. 12+ year tenure."
+    known_patterns: "Critical of Big Tech, surveillance, AI hype. 12+ year tenure. Core stability anchor."
   - name: "Dan Milmo"
     beat: "Global technology editor"
-    known_patterns: "EU tech regulation, social media harms, AI policy"
+    known_patterns: "EU tech regulation, social media harms, AI policy. Since 2021."
   - name: "Blake Montgomery"
     beat: "US technology editor"
-    known_patterns: "US tech news editing. Previously at Gizmodo, Daily Beast, BuzzFeed News. Stanford BA."
+    known_patterns: "US tech news editing. Previously at Gizmodo, Daily Beast, BuzzFeed News. Stanford BA. Since Sep 2023."
   - name: "Johana Bhuiyan"
     beat: "Tech accountability, surveillance of marginalized communities"
-    known_patterns: "Investigative work on surveillance tech used against BIPOC, Muslim, immigrant communities. ICE surveillance investigations. Previously at LA Times, Recode, BuzzFeed News."
+    known_patterns: "Investigative work on surveillance tech used against BIPOC, Muslim, immigrant communities. ICE surveillance investigations. Previously at LA Times, Recode, BuzzFeed News. Since Aug 2021."
   - name: "Julia Carrie Wong"
     beat: "Technology and society (former, left tech beat 2021)"
     known_patterns: "Facebook criticism, whistleblowers (Sophie Zhang), misinformation, Myanmar genocide coverage. Still at Guardian on other beats."
   - name: "Kari Paul"
     beat: "Technology (former, departed 2024)"
     known_patterns: "Meta, Elon Musk, AI, social media, privacy. West Coast bureau. Left for art school in Paris."
+  - name: "Carole Cadwalladr"
+    beat: "Investigations"
+    known_patterns: "KEY: Cambridge Analytica/Facebook investigation (2018). Personal adversarial history with Meta. TED talk. Sued by Arron Banks (won). Not formally tech desk but her work fundamentally shaped Guardian's posture toward Meta."
 
 known_conflicts:
-  - type: "editorial_bias"
-    description: "CONTROL CASE: No significant corporate conflicts. Editorial bias is purely ideological/editorial, not financial. Useful baseline for distinguishing financial conflicts from editorial stance."
-    severity: 1
-    evidence: "Scott Trust non-profit structure eliminates corporate interest conflicts"
-    source_url: ""
-  - type: "competitive"
-    description: "Guardian's reader-funded model is threatened by social media platforms that capture attention and advertising. Structural incentive to frame social media negatively."
+  - type: "licensing_deal"
+    description: "OpenAI licensing deal (Feb 2025). OpenAI is Meta's #1 AI competitor. Creates direct commercial relationship with Meta's competitor, undermining 'control case' status. Guardian archive + real-time journalism powers ChatGPT, which competes with Meta AI."
+    severity: 3
+    evidence: "Official announcement Feb 19, 2025. Keith Underwood (CFO/COO) and Brad Lightcap (OpenAI COO) quoted. INMA webinar confirms deal is part of broader AI licensing strategy."
+    source_url: "https://editorandpublisher.com/stories/guardian-media-group-announces-strategic-partnership-with-openai,254405"
+  - type: "licensing_deal"
+    description: "ProRata AI licensing deal. ProRata is an AI startup that pays publishers 50% of revenue based on content usage. Additional financial entanglement with the AI ecosystem."
     severity: 2
-    evidence: "Guardian reader fundraising campaigns explicitly cite Big Tech as threat to journalism"
+    evidence: "Robert Hahn (Director of Business Affairs & Licensing) confirmed at INMA webinar. More deals 'in pipeline.'"
+    source_url: "https://www.inma.org/blogs/product-initiative/post.cfm/the-guardian-makes-a-strategic-push-into-ai-content-licencing"
+  - type: "investment"
+    description: "GMG Ventures/Mercuri: Scott Trust Endowment has direct VC investments in AI/media-tech startups. Fund 1 (£42M, sole LP) + Fund 2 (£50M, £4M from Scott Trust). 12+ portfolio companies in AI-enabled content. Creates financial interest in AI ecosystem dynamics — specifically in companies that may benefit from Meta competitors or that compete with Meta's AI offerings."
+    severity: 2
+    evidence: "Scott Trust Endowment 2024/25 performance report. British Business Bank press release."
+    source_url: "https://uploads.guim.co.uk/2025/09/11/Scott_Trust_Endowment_performance_report_24_25_%281%29.pdf"
+  - type: "board_connections"
+    description: "Vivian Schiller sits on Scott Trust board. Former Global Chair of News at Twitter (direct Meta social media competitor). Also former NPR CEO, NYTimes.com GM, NBC News CDO. Current: Aspen Institute exec (media/tech/cybersecurity), Thomson Reuters Foundation board, Council on Foreign Relations. Extensive tech industry connections may influence governance decisions."
+    severity: 1
+    evidence: "Multiple bios: Reuters Institute, Thomson Reuters Foundation, Aspen Institute, EPIC."
+    source_url: "https://reutersinstitute.politics.ox.ac.uk/people/vivian-schiller"
+  - type: "competitive"
+    description: "Guardian's reader-funded model is threatened by social media platforms that capture attention and advertising. Structural incentive to frame social media negatively. Guardian reader fundraising campaigns explicitly cite Big Tech as threat to journalism."
+    severity: 2
+    evidence: "Guardian reader fundraising campaigns, reader revenue pop-ups"
     source_url: ""
+  - type: "coalition"
+    description: "SPUR coalition founding member (Feb 2026). Coalition shapes AI licensing standards that create structural opposition between publishers and AI companies. SPUR members include BBC, FT, Telegraph, Mediahuis. Guardian CEO Anna Bateson is active signatory. Coalition explicitly frames AI companies as extracting value from journalism."
+    severity: 1
+    evidence: "SPUR open letter, INMA, journalism.co.uk, Ringier announcement"
+    source_url: "https://journalism.co.uk/stories/bbc-ft-guardian-sky-and-the-times-unite-in-spur-coalition-for-ai-protection"
 
 litigation_connections: []
 
 ai_crawl_policy:
-  blocks_gptbot: true
+  blocks_gptbot: "Previously yes; likely updated post-OpenAI deal (Feb 2025)"
   blocks_ccbot: true
   blocks_google_extended: true
-  notes: "Blocks most AI crawlers. Has not entered licensing deals with AI companies."
+  has_openai_deal: true
+  has_prorata_deal: true
+  notes: "Guardian has licensing deals with OpenAI (Feb 2025) and ProRata, with more in pipeline. Previously blocked most AI crawlers. 'Operation Leaky Bucket' internal compliance program identifies and closes unauthorized access points. SPUR coalition member working on industry-wide standards. Robert Hahn (Director of Business Affairs & Licensing): 'It is not a one-size-fits-all' — licensing strategy is tailored per AI company/use case."
 
 target_entities:
   "Meta":
@@ -87,6 +257,10 @@ target_entities:
   "Google":
     aliases: ["Alphabet", "Google", "YouTube", "DeepMind"]
     regex: "\\b(Alphabet|Google|YouTube|DeepMind)\\b"
+  "OpenAI":
+    aliases: ["OpenAI", "ChatGPT", "Sam Altman", "GPT"]
+    regex: "\\b(OpenAI|ChatGPT|Sam Altman|GPT-[0-9])\\b"
+    notes: "Added as target entity. OpenAI is Guardian licensing partner — coverage asymmetry question: does OpenAI coverage soften post-deal (Feb 2025)?"
 
 bias_ratings:
   ad_fontes:
@@ -96,14 +270,40 @@ bias_ratings:
   mbfc: "Left-Center Bias"
 
 notes: |
-  The Guardian is included as a CONTROL case. Its non-profit ownership structure
-  means editorial bias stems from ideological/editorial choices rather than
-  financial conflicts. Comparing Wired (financial conflicts) to Guardian (pure
-  editorial bias) helps isolate the financial incentive signal.
-  
-  Research note: Bunz & Braghieri 2021 found Guardian had only 29% positive AI
-  coverage vs 49% for WSJ, making it a useful benchmark for editorial AI skepticism
-  independent of ownership conflicts.
+  ⚠️ REVISED: The Guardian is NO LONGER a clean control case.
+
+  PREVIOUS ASSUMPTION: No corporate conflicts. Only ideological/editorial bias.
+  Scott Trust non-profit = clean. Useful baseline for isolating financial incentive signals.
+
+  NEW REALITY (updated Jun 22, 2026):
+  1. OpenAI licensing deal (Feb 2025) — direct commercial relationship with Meta's #1 AI competitor
+  2. ProRata licensing deal — additional AI revenue stream from Meta competitor ecosystem
+  3. Mercuri/GMG Ventures — Scott Trust has direct VC investments in AI media-tech startups (£42M + £50M funds)
+  4. Vivian Schiller — board member with Twitter (Meta competitor) + extensive tech industry history
+  5. SPUR coalition — Guardian actively shaping AI licensing ecosystem, structural opposition to non-licensing AI companies (which includes Meta)
+
+  However, Guardian's conflicts DIFFER IN KIND from the other publications:
+  - Wired/Condé Nast: Advance Publications owns 33.5% of Reddit (direct Meta competitor)
+  - Atlantic: Emerson Collective holds $16B+ Apple stock + Mistral AI investment
+  - NYT: Amazon AI deal ($20-25M/yr) + actively suing OpenAI/Microsoft
+  - MIT TR: Parent MIT receives $174M/yr from industry including Meta itself
+  - Guardian: Licensing deals with AI companies (same direction as Wired/Atlantic — OpenAI is a Meta competitor) but NO equity ownership in competitors. The £1.2B endowment is diversified across 28+ PE/VC managers, not concentrated in specific Meta competitors.
+
+  Guardian is STILL the closest thing to a control case among the 5 publications:
+  - Non-profit trust structure genuinely eliminates shareholder profit motive
+  - No single corporate owner with concentrated competitive interests
+  - No $16B Apple stake (Atlantic), no 33.5% Reddit stake (Wired), no MIT research funding dependency
+  - Conflicts are INDUSTRY-LEVEL (publisher vs AI companies) not COMPANY-SPECIFIC (we want Meta to lose)
+
+  RECLASSIFICATION: Partial control. Financial conflicts exist but are smaller, more diffuse, and more industry-structural than entity-specific. Still the best comparator for isolating financial vs editorial bias signals, but with a documented caveat. For pure editorial baseline, pre-Feb 2025 Guardian coverage is cleaner than post-Feb 2025 coverage.
+
+  KEY TESTABLE HYPOTHESES:
+  1. Did Guardian coverage of OpenAI change after Feb 2025 deal? Compare pre-deal vs post-deal sentiment.
+  2. Does Guardian cover Meta differently from non-licensing AI companies vs licensing AI companies?
+  3. Did the SPUR coalition (Feb 2026) change editorial framing of AI companies generally?
+
+  Research note: Bunz & Braghieri 2021 found Guardian had only 29% positive AI coverage vs 49% for WSJ,
+  making it still useful as benchmark for editorial AI skepticism independent of ownership conflicts.
 
 editorial_history:
   leadership_changes:
@@ -111,7 +311,12 @@ editorial_history:
       outgoing: "Alan Rusbridger"
       incoming: "Katharine Viner"
       date: "2015-06"
-      notes: "CONTROL: Viner has been EIC since 2015 — exceptional stability. Useful baseline."
+      notes: "Viner has been EIC since 2015 — exceptional stability."
+    - position: "ceo"
+      outgoing: "David Pemsel"
+      incoming: "Anna Bateson"
+      date: "~2023"
+      notes: "Bateson led record revenue growth (£275M FY2024-25), OpenAI deal, SPUR founding, Observer sale."
 
   notable_arrivals:
     - journalist: "Dan Milmo"
@@ -156,6 +361,20 @@ editorial_history:
       to: "Bloomberg (editor, AI/VC/startups)"
       date: "2026-06"
       notes: "Left after only ~4 months to join Bloomberg under Sarah Frier. Started June 15, 2026. Guardian's Reworked AI series left without its founding editor."
+
+  ownership_change:
+    - event: "Scott Trust conversion to limited company"
+      date: "2008"
+      notes: "Trust replaced by limited company with same core purpose. Constitution written to maintain same protections."
+    - event: "Scott Trust Endowment separated from GMG"
+      date: "2023-24"
+      notes: "Endowment became independent subsidiary of Scott Trust. Separates investment asset management from Guardian editorial operations. New STEL board appointed."
+    - event: "Observer sold to Tortoise Media"
+      date: "2024-25"
+      notes: "World's oldest Sunday newspaper sold. Tortoise (James Harding, former Times editor) pledged £25M investment over 5 years."
+    - event: "OpenAI licensing partnership"
+      date: "2025-02-19"
+      notes: "CRITICAL: First major AI licensing deal. Creates direct commercial relationship with Meta's #1 AI competitor. Guardian archive + real-time journalism powers ChatGPT."
 
   notes: |
     The Guardian tech desk has experienced significant turnover 2021-2026: Julia Carrie Wong
