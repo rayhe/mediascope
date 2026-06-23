@@ -91,6 +91,12 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Palantir", "Alex Karp", "Peter Thiel", "Palantir Technologies",
         ],
     },
+    "Anthropic": {
+        "aliases": [
+            "Anthropic", "Dario Amodei", "Daniela Amodei", "Claude",
+            "Mythos", "Project Glasswing",
+        ],
+    },
     "US Government": {
         "aliases": [
             "Pentagon", "Department of Defense", "FBI", "CIA",
@@ -132,6 +138,41 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Christopher Wylie", "Wylie",
             "Carole Cadwalladr", "Cadwalladr",
             "Tim Wu",
+        ],
+    },
+    "Defense Tech": {
+        "aliases": [
+            "Anduril", "Anduril Industries", "Palmer Luckey", "Luckey",
+            "Elbit Systems", "Elbit", "Rivet",
+            "L3Harris", "Northrop Grumman", "Lockheed Martin",
+            "Raytheon", "General Dynamics", "BAE Systems",
+            "Shield AI", "Skydio",
+        ],
+    },
+    "Policy Research": {
+        "aliases": [
+            "RAND Corporation", "RAND",
+            "Brookings Institution", "Brookings",
+            "Center for Strategic and International Studies", "CSIS",
+            "Council on Foreign Relations", "CFR",
+            "Carnegie Endowment",
+        ],
+    },
+    "Political Figures": {
+        "aliases": [
+            "Donald Trump", "Trump",
+            "Joe Biden", "Biden",
+            "Kamala Harris",
+        ],
+        "regex": r"(?<!\w)(Donald Trump|Trump(?!\s+(?:Tower|Hotel|Organization|National|International))|Joe Biden|Biden|Kamala Harris)(?!\w)",
+    },
+    "Labor/Unions": {
+        "aliases": [
+            "United Tech and Allied Workers", "United Tech & Allied Workers",
+            "Communication Workers Union", "CWU",
+            "Alphabet Workers Union",
+            "SEIU", "AFL-CIO",
+            "unionize", "unionization", "labor union",
         ],
     },
 }

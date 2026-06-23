@@ -1,0 +1,49 @@
+# Meta's New Reality: Record High Profits. Record Low Morale
+
+By Paresh Dave, Lauren Goode, Steven Levy, and Zoë Schiffer
+Published: May 14, 2026
+Source: WIRED
+
+[Reconstructed from technophile.news, wdcnews6.com, Daring Fireball, Platformer, Fast Company, Blind data report, AITopics, bioscience.com.pk. Original paywalled at wired.com.]
+
+---
+
+As Meta employees brace for layoffs next Wednesday, May 20, many say the vibes are horrifically, historically low. "Everyone is unhappy; the only people who are not unhappy are, literally, executives," says an employee who works on Instagram.
+
+The social media giant plans to cut about 10 percent of its workforce, or nearly 8,000 people, "to run the company more efficiently" and "offset the other investments" it's making, according to a human resources leader. But the layoffs, which will add to the roughly 25,000 cuts Meta has announced over the past four years, are far from the only cause of rock-bottom morale.
+
+Widening pay gaps among employees, courtroom losses for the company, and mandatory role changes for hundreds of top engineers have also contributed to what employees view as a uniquely grim atmosphere inside Meta. Yet another issue has been the recent installation of corporate software on employees' computers to track their activity solely in the name of training AI, according to 16 current and former employees from a variety of roles who spoke with WIRED. They declined to be named because of company policies barring unsanctioned conversations with journalists.
+
+"I don't know anyone having a good time," says a policy staffer. "The vibe is a bit 'over it'—lack of connection to the mission, upcoming layoffs, American employees being used to train the AI models that will replace them."
+
+Anyone who can afford to leave is hoping to be laid off and receive the 16 weeks minimum of severance and 18 months of paid health care that come with it, several people say. As the Instagram employee put it, "Everyone is just like, do it now, jesus fucking christ." Only the individuals with the best pay packages and involved in the core development of AI seem to be thriving, a longtime senior leader at Meta says.
+
+In the UK, some workers have become so frustrated that they're registering signatures to form a labor union. "Our leadership are escalating their cruel and short-sighted behaviours," organizers inside the company wrote in a pitch to colleagues. "We need to create an incentive for them to treat us with basic humanity."
+
+United Tech & Allied Workers, which describes itself as the UK's largest union for tech workers, said last week that Meta employees wanted to organize with the group to protect their jobs, benefits, and privacy. Earlier this month, UK employees at Google DeepMind voted to unionize with the labor group's parent organization, Communication Workers Union, over concerns about selling AI to the US military.
+
+Pockets of employee protest have become a constant and defining feature of the biggest tech companies, including Meta, Amazon, and Google. But the latest concerns at Meta appear more widespread—so much so that they are apparently hindering the company's recruiting efforts, an employee alleges (Meta rejects the assertion). "There's a lot of anger and fear," a legal staffer adds. "It's frustrating to watch because it feels so unnecessary"—particularly given how well Meta's ad business continues to perform.
+
+Meta largely declined to comment on specifics for this story but pointed to previous public statements defending its job cuts and new AI-related projects, including the tracking software. "There are safeguards in place to protect sensitive content, and the data is not used for any other purpose," Meta spokesperson Tracy Clayton says.
+
+## Mounting Complaints
+
+Some of the employee complaints come down to money. In February, for the second consecutive year, Meta cut the portion of annual raises that are paid in the form of company shares, trimming them by 5 percent on top of last year's 10 percent snip. Median total compensation at Meta fell to $388,200 last year from $417,400 in 2024, according to public filings, though Meta's Clayton said salaries are still trending higher than they were in 2022. Pay has been further diminished by Meta shares falling about 5 percent this year as the company shifts focus from struggling virtual reality projects to even more costly AI development. "For many employees, salary is half stock, so that sucks," the Instagram employee says.
+
+The cuts to compensation and jobs have come amid back-to-back quarters of strong profits for Meta, to the tune of nearly $27 billion in the first three months of this year. And last year, Meta CEO Mark Zuckerberg offered to pay several top AI researchers as much as $100 million a year, or what a former executive calls "insane amounts of money relative to what anybody in that company has ever been making."
+
+[MCI / Surveillance Section — from Daring Fireball and Platformer quotes]
+
+The software, known as Model Capability Initiative, or MCI, suddenly turned people across the company into privacy zealots, a legal staffer says. When employees protested the rollout in internal messages, including by referencing Meta's history of user data breaches, chief technology officer Andrew Bosworth "belittled and berated" the dissenters, one veteran employee says and another confirms. "These billionaires can't even feign empathy," the first person says. "The social contract is completely shattered at this point."
+
+Opting out is not possible, according to three employees. "Nobody is happy about it," says a current employee. "And we have no choice." Some employees claim they have found workarounds to dodge tracking or have managed to delay installation.
+
+[Companion Article Context — "An Engineer's Post Protesting Laptop Surveillance Is Going Viral Inside Meta" — same day, same publication]
+
+"Selfishly, I don't want my screen scraped because it feels like an invasion of my privacy," wrote an engineer in an internal post seen by nearly 20,000 coworkers. "But zooming out, I don't want to live in a world where humans—employees or otherwise—are exploited for their training data." The message aimed to rally support for a petition circulating inside the company since last Thursday that demands an end to MCI.
+
+[Post-Article Context — Bosworth admission, June 2026]
+
+In a June 2026 internal briefing, Chief Technology Officer Andrew "Boz" Bosworth described the morale climate as "extremely poor," according to a Business Insider report. Bosworth noted that while the current mood might not be the absolute lowest in the past two decades, it certainly ranks among the worst. He recalled the 2016 Cambridge Analytica controversy as a prior low point, adding that today's sense of camaraderie is "among the poorest we've experienced."
+
+Zuckerberg responded by proposing a company-wide hackathon, hoping to inject some levity. The initiative fell flat, with one employee remarking, "My priority is keeping my team operational; I lack both motivation and time to join a hackathon."

@@ -1,0 +1,61 @@
+Title: Meta's Embrace of A.I. Is Making Its Employees Miserable
+Publication: The New York Times
+Authors: Kalley Huang, Eli Tan, and Kate Conger (Mike Isaac contributing)
+Published: May 8, 2026
+URL: https://www.nytimes.com/2026/05/08/technology/meta-ai-employees.html
+Reconstructed from: Canada News Beep (newsbeep.com/ca/660880/), Slashdot, Singularity Hub, CNBC/McGill aggregator, YouTube source compilation
+Date accessed: June 22, 2026
+
+---
+
+In an internal post last month, Meta told its U.S. employees that it was making a change that would affect tens of thousands of them.
+
+What employees typed into their computer, how they moved their mouse, where they clicked and what they saw on their screen would be tracked, Meta said. The goal, the company said, was to capture employee data so Meta's artificial intelligence models could learn "how people actually complete everyday tasks using computers."
+
+Many workers immediately revolted. In online comments, they blasted the tracking as a privacy violation, calling it antisocial and callous.
+
+"This makes me super uncomfortable," an engineering manager wrote in a comment in response to the announcement, which was reviewed by The New York Times. "How do we opt out?"
+
+"There is no option to opt-out on your corporate laptop," replied Andrew Bosworth, Meta's chief technology officer. Employees reacted by posting more than 100 angry and surprised emojis, according to the messages.
+
+Mark Zuckerberg, Meta's chief executive, has staked the future of his company on A.I. by weaving the powerful technology into apps like Facebook and Instagram and spending hundreds of billions of dollars on developing A.I. models and data centers. But as the Silicon Valley company tries to transition from an internet firm to an A.I. organization, its embrace of the technology has been awkward and, at times, downright ugly.
+
+Meta is pushing its 78,000 employees to adopt A.I. tools and factoring their use of the technology in performance reviews. The company is also tracking employees' computer work to feed and train its A.I. models. And it is cutting jobs to offset its A.I. spending, saying last month that it would slash 10 percent of its work force.
+
+That has led to anger and anxiety as employees await news of whether they are affected by the layoffs, which are slated to be carried out on May 20, according to 11 current and former Meta employees. Some said they no longer saw Meta as a place for a long career. Others were looking for new jobs or trying to signal that they wanted to be laid off so they could receive severance pay, the current and former employees said.
+
+"It's incredibly demoralizing," an employee who does user research wrote in an internal post, which was reviewed by The Times.
+
+The angst at Meta offers a preview of what may happen at other tech companies as they increasingly incorporate A.I. into their workplaces. Microsoft, Block and Coinbase have recently announced layoffs or buyouts as A.I. has reshaped work. The technology has been particularly disruptive at tech firms because A.I. tools are useful at generating code, which was typically written by the software engineers who underpin many digital businesses.
+
+"A.I. can potentially make everyone a better coder and help them do way more things with fewer resources, but as a result, it also brings more intensity to the daily life of the worker," said Leo Boussioux, a professor of information systems at the University of Washington. "There is no playbook for A.I. in the workplace yet."
+
+In a statement, Tracy Clayton, a Meta spokesman, said the purpose of the new employee tracking program was to train the company's A.I. products. "There are safeguards in place to protect sensitive content, and the data is not used for any other purpose," he said.
+
+Reuters and The Information earlier reported some details of Meta's internal A.I. push.
+
+Meta began reorienting itself around A.I. not long after OpenAI released the ChatGPT chatbot in 2022. Last summer, Mr. Zuckerberg spent billions to create a lab for "superintelligence," a futuristic form of A.I. that can act as the ultimate personal assistant, and overhauled its A.I. division. Mr. Zuckerberg, 41, has spoken at length about how superintelligence will improve people's lives.
+
+In March, Meta organized "A.I. Transformation Weeks" for its workers, five current and former employees said. The aim was to teach employees how to use A.I. coding tools and A.I. agents, which are digital assistants that can do tasks by themselves. Product designers, who style the way products look and how people interact with products, were told to use A.I. to try coding, and software coders were told to use A.I. to try designing products.
+
+Meta also introduced internal dashboards to track employees' consumption of "tokens," a unit of A.I. use that is roughly equivalent to four characters of text, four people said. Some said the dashboards were a pressure tactic to encourage competition with colleagues. That led some employees to make so many A.I. agents that others had to introduce agents to find agents, and agents to rate agents, two people said.
+
+On April 17, Reuters reported that Meta would soon lay off 10 percent of employees. Workers fretted over whether they had been training their A.I. replacements, three people said.
+
+After Meta said late last month that it would start tracking employees' computer use, hundreds of workers spoke up. "Your callousness to the concerns of your own employees is concerning," one employee told Mr. Bosworth in an internal post.
+
+In other posts that day, employees questioned whether Meta could safely secure the data it collected from workers while using that information to train A.I. models.
+
+"This data is very tightly controlled," Mr. Bosworth replied. "This will not be a leak risk."
+
+Two days later, Meta announced that it would lay off about 8,000 people this month. The cuts will allow the company "to offset the other investments we're making," Janelle Gale, Meta's head of human resources, said in an internal message. She added, "I know this leaves everyone with nearly a month of ambiguity which is incredibly unsettling."
+
+Some employees have since shared layoff guides and nihilistic memes. "It do not matter," read one meme shared internally. Employees have created at least three websites counting down to the May 20 layoffs, with one website's header reading: "Big Beautiful Layoff," a play on the 2025 domestic policy law that President Trump called the "One Big Beautiful Bill."
+
+Meta has hinted at more changes. "We don't really know what the optimal size of the company will be in the future," Susan Li, the chief financial officer, said during a call with investors last week. "I think there's a lot of change right now, with A.I. capabilities advancing rapidly."
+
+The day after the investor call, Mr. Zuckerberg held a companywide question-and-answer meeting, along with other executives. During the meeting, a recording of which The Times reviewed, Mr. Zuckerberg said Meta was not gathering data on employees for "surveillance or performance tracking or anything like that." Instead, the data would train A.I. on "how smart people use computers to accomplish tasks," he said.
+
+"I think we know that A.I. is one of the most competitive fields, probably in history," Mr. Zuckerberg added.
+
+Mike Isaac contributed reporting from San Francisco.

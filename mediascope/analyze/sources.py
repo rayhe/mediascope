@@ -18,6 +18,15 @@ NEUTRAL_VERBS: set[str] = {
     "added", "commented", "remarked", "observed", "reported",
     "confirmed", "acknowledged", "responded", "replied",
     "mentioned", "indicated", "described", "recalled",
+    # Present-tense forms — many publications use present tense for
+    # attribution ("says Gong", "notes Ji") especially in analytical and
+    # explainer articles.  Missing these caused zero-source detection on
+    # MIT Technology Review, Nature, and similar outlets.
+    "says", "tells", "notes", "explains", "states",
+    "adds", "comments", "remarks", "observes", "reports",
+    "confirms", "acknowledges", "responds", "replies",
+    "mentions", "indicates", "describes", "recalls",
+    "agrees", "points",  # "agrees" / "points out" — common neutral verbs
 }
 
 LOADED_VERBS: set[str] = {
@@ -27,6 +36,13 @@ LOADED_VERBS: set[str] = {
     "boasted", "bragged", "complained", "fumed", "lamented",
     "ranted", "scoffed", "sneered", "vowed", "threatened",
     "confessed", "revealed", "declared", "proclaimed",
+    # Present-tense forms
+    "claims", "argues", "warns", "insists", "admits",
+    "concedes", "denies", "blasts", "slams", "demands",
+    "charges", "accuses", "alleges", "suggests", "hints",
+    "boasts", "brags", "complains", "fumes", "laments",
+    "rants", "scoffs", "sneers", "vows", "threatens",
+    "confesses", "reveals", "declares", "proclaims",
 }
 
 ALL_VERBS: set[str] = NEUTRAL_VERBS | LOADED_VERBS
@@ -43,6 +59,30 @@ EXPERT_TITLES: list[str] = [
     "expert", "specialist", "consultant", "fellow",
     "scholar", "academic", "strategist", "adviser", "advisor",
 ]
+
+# Stop-words that look like names in source extraction regex patterns.
+# These are common English words that start with a capital letter when
+# they begin a sentence and would match the ``[A-Z][a-z]+ [A-Z][a-z]+``
+# pattern for "First Last" names, producing false-positive source
+# extractions like "After Meta said" → source = "After Meta".
+_NAME_STOP_FIRST_WORDS: set[str] = {
+    "After", "Before", "Because", "Since", "While", "During",
+    "Despite", "Although", "Though", "Until", "Unless",
+    "Where", "When", "Whether", "Within", "Without",
+    "Under", "Behind", "Beyond", "Between", "Among",
+    "About", "Above", "Below", "Around", "Outside",
+    "Inside", "Against", "Across", "Along", "Among",
+    "Through", "Toward", "Towards",
+    "Instead", "However", "Meanwhile", "Furthermore",
+    "Moreover", "Therefore", "Thus", "Hence",
+    "Early", "Later", "Earlier", "Overall",
+    "Some", "Many", "Most", "Several", "Other",
+    "Both", "Each", "Every", "Either", "Neither",
+    "Last", "Next", "That", "This", "These", "Those",
+    "But", "And", "Also", "Still", "Yet", "Then", "Now",
+    "Such", "Much", "Not", "Just", "Only", "Even",
+    "Already", "Perhaps", "Maybe", "Certainly",
+}
 
 # Anonymous source indicators
 ANONYMOUS_INDICATORS: list[str] = [
@@ -144,6 +184,13 @@ def extract_sources(text: str) -> list[SourceMention]:
         verb = m.group(2).strip().lower()
         if name in seen_names:
             continue
+
+        # Filter out false-positive names where the first word is a common
+        # English word that happened to be capitalised at sentence start
+        first_word = name.split()[0]
+        if first_word in _NAME_STOP_FIRST_WORDS:
+            continue
+
         seen_names.add(name)
 
         # Get surrounding context (100 chars each side)
@@ -207,6 +254,40 @@ def extract_sources(text: str) -> list[SourceMention]:
             attribution_verb="according to",
         ))
 
+    # Pattern 5: "[Name], [appositive clause], [verb]"
+    # Catches "Jessica Ji, a senior research analyst at Georgetown, agrees."
+    # The appositive is a comma-delimited descriptor between name and verb.
+    name_appositive_verb = re.compile(
+        rf"\b([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+)"
+        rf",\s+(?:an? |the )?[a-z]{{2,}}"  # start of appositive
+        rf"[^.\"]*?"                         # rest of appositive (no sentence-end or quote)
+        rf",\s*({verb_alternation})\b",
+    )
+    for m in name_appositive_verb.finditer(text):
+        name = m.group(1).strip()
+        verb = m.group(2).strip().lower()
+        if name in seen_names:
+            continue
+
+        first_word = name.split()[0]
+        if first_word in _NAME_STOP_FIRST_WORDS:
+            continue
+
+        seen_names.add(name)
+
+        ctx_start = max(0, m.start() - 100)
+        ctx_end = min(len(text), m.end() + 300)
+        context = text[ctx_start:ctx_end]
+
+        sources.append(SourceMention(
+            name=name,
+            is_anonymous=False,
+            is_expert=_is_expert_by_title(context),
+            affiliation=_extract_affiliation(context),
+            quote=_extract_nearby_quote(text, m.start(), m.end()),
+            attribution_verb=verb,
+        ))
+
     # Pattern 4: Anonymous sources
     anon_patterns = [
         re.compile(r"\baccording to (?:people|sources|individuals)", re.IGNORECASE),
@@ -223,7 +304,53 @@ def extract_sources(text: str) -> list[SourceMention]:
         re.compile(r"\ban? (?:second|third|fourth|another) (?:worker|employee|source|person|engineer)", re.IGNORECASE),
         re.compile(r"\b(?:one|another|a) (?:worker|employee|engineer|staffer) (?:said|told|called|described|complained)", re.IGNORECASE),
         re.compile(r"\ban? (?:worker|employee|engineer|staffer) (?:was quoted|was reported)", re.IGNORECASE),
-        re.compile(r"\b(?:some|several|multiple|many) (?:workers|employees|engineers|staffers) (?:said|told|described|called|complained)", re.IGNORECASE),
+        re.compile(r"\b(?:some|several|multiple|many) (?:workers|employees|engineers|staffers|people) (?:said|told|described|called|complained|say|tell)", re.IGNORECASE),
+        # Role-descriptor + attribution verb patterns — common in tech/workplace
+        # reporting where anonymous sources are described by job role:
+        # "a policy staffer says", "a legal staffer adds", "the Instagram employee says"
+        re.compile(
+            r"\b(?:an?|the|one|another)"
+            r" (?:[a-z]+[ -])?"  # optional adjective: "policy", "legal", "longtime", "veteran"
+            r"(?:[a-z]+[ -])?"   # second optional adjective: "senior", "current"
+            r"(?:worker|employee|staffer|engineer|executive|official|leader|manager|person|researcher|analyst|source)"
+            r"(?:\s+(?:who\s+works?\s+(?:on|at|in|for)\s+\w+|at\s+\w+|inside\s+\w+))?"  # optional "who works on X" / "at X"
+            r"\s+(?:" + verb_alternation + r")\b",
+            re.IGNORECASE,
+        ),
+        # Reverse pattern: verb + role descriptor
+        # "says a policy staffer", "says an employee who works on Instagram"
+        re.compile(
+            r"\b(?:" + verb_alternation + r")"
+            r"\s+(?:an?|the|one|another)"
+            r" (?:[a-z]+[ -])?"
+            r"(?:[a-z]+[ -])?"
+            r"(?:worker|employee|staffer|engineer|executive|official|leader|manager|person|researcher|analyst|source)"
+            r"(?:\s+(?:who\s+works?\s+(?:on|at|in|for)\s+\w+|at\s+\w+|inside\s+\w+))?",
+            re.IGNORECASE,
+        ),
+        # "[number] employees/sources" — "according to three employees", "16 current and former employees"
+        # Use (?<![,\d]) negative lookbehind to avoid matching partial numbers like "000" from "8,000"
+        re.compile(
+            r"(?<![,\d])\b(?:\d{1,3}|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|sixteen|twenty|dozen)"
+            r" (?:current\s+(?:and\s+)?(?:former\s+)?)?"
+            r"(?:workers|employees|staffers|engineers|executives|officials|sources|people)"
+            r"\s+(?:" + verb_alternation + r"|familiar|briefed|close)\b",
+            re.IGNORECASE,
+        ),
+        # "several people say" — quantifier + generic people noun + verb
+        re.compile(
+            r"\b(?:some|several|multiple|many|numerous|various|a few|a handful of|a number of)"
+            r" (?:current\s+(?:and\s+)?(?:former\s+)?)?"
+            r"(?:workers|employees|staffers|engineers|people|sources|individuals)"
+            r"(?:\s+(?:" + verb_alternation + r"))?\b",
+            re.IGNORECASE,
+        ),
+        # "organizers inside the company wrote" — collective group sources
+        re.compile(
+            r"\b(?:organizers?|critics?|activists?|dissidents?|protestors?|complainants?)"
+            r" (?:inside|within|at|from) (?:the )?(?:company|firm|organization|group)\b",
+            re.IGNORECASE,
+        ),
         # Publication-as-investigator patterns
         re.compile(r"\b\w+ (?:found|reported|revealed) (?:widespread|significant|extensive|growing)", re.IGNORECASE),
     ]
@@ -274,6 +401,35 @@ def _extract_nearby_quote(text: str, ref_start: int, ref_end: int) -> str:
             return m.group(1).strip()
 
     return ""
+
+
+def _collect_all_quotes_for_source(text: str, source_name: str) -> str:
+    """Aggregate ALL quoted text attributed to a named source.
+
+    The standard ``extract_sources`` deduplicates by name, keeping only
+    the first quote from each source.  For stance analysis, we need the
+    COMPLETE set of quotes — a source who says "that's surprising" in
+    paragraph 3 and "it's a very dangerous thing" in paragraph 12
+    should have both quotes contribute to stance scoring.
+
+    Strategy: find every position where the source's LAST name appears,
+    then extract any nearby quoted text within 300 chars.
+    """
+    if not text or not source_name:
+        return ""
+
+    # Use the last name (most specific) for matching
+    parts = source_name.strip().split()
+    last_name = parts[-1] if parts else source_name
+
+    all_quotes: list[str] = []
+    # Find all occurrences of the last name
+    for m in re.finditer(re.escape(last_name), text):
+        quote = _extract_nearby_quote(text, m.start(), m.end())
+        if quote and quote not in all_quotes:
+            all_quotes.append(quote)
+
+    return " ".join(all_quotes)
 
 
 def grade_source_authority(sources: list[SourceMention]) -> float:
@@ -365,10 +521,11 @@ def classify_attribution_verb(verb: str) -> str:
 # Negative stance indicators in quotes/context — signals the source is
 # positioned to undermine or criticize the subject entity.
 _NEGATIVE_STANCE_TERMS: list[str] = [
+    # Strong adversarial / harm language
     "harmful", "dangerous", "reckless", "irresponsible", "unacceptable",
     "outrageous", "appalling", "unethical", "deceptive", "misleading",
     "violated", "violating", "violation", "abuse", "abusive",
-    "exploiting", "exploitation", "surveillance", "invasion",
+    "exploiting", "exploitation", "exploited", "surveillance", "invasion",
     "threatening", "threatened", "scary", "alarming", "disturbing",
     "catastrophic", "devastating", "shameful", "disgraceful",
     "failure", "failed", "broken", "corrupt", "toxic",
@@ -379,6 +536,31 @@ _NEGATIVE_STANCE_TERMS: list[str] = [
     "lied", "lying", "dishonest", "hypocrisy", "hypocritical",
     "demand", "demanded", "must stop", "should stop", "must be held",
     "accountability", "hold accountable", "ban", "block", "kill",
+    # Workplace dissatisfaction & complaint — common in employee-sourced
+    # tech reporting where anonymous insiders describe morale, conditions,
+    # or management behavior.  Without these, articles like Wired's
+    # "Dark Mood Inside Meta" register zero adversarial sources despite
+    # 16/18 sources being clearly critical of the company.
+    "unhappy", "miserable", "anger", "angry", "fear", "fearful",
+    "frustrated", "frustrating", "furious", "disgruntled",
+    "demoralized", "demoralizing", "depressed", "degrading",
+    "belittled", "berated", "disrespected", "mistreated",
+    "humiliated", "humiliating", "betrayed", "betrayal",
+    "shattered", "cruel", "short-sighted",
+    "no choice", "no option", "not possible", "cannot opt out",
+    "forced", "mandatory", "not voluntary",
+    "replaced", "replace us", "replace them",
+    "unnecessary", "pointless", "unfair", "unjust",
+    "sucks", "awful", "terrible", "horrible", "horrific",
+    "worst", "rock-bottom", "historically low", "historically poor",
+    # Privacy/surveillance complaint
+    "screen scraped", "scraping", "privacy violation",
+    "invasion of privacy", "big brother", "spying",
+    "tracked", "tracking", "no opt-out",
+    # Negative personal/emotional
+    "empathy", "feign empathy", "can't even feign",
+    "contempt", "arrogant", "arrogance", "condescending",
+    "callous", "indifferent", "dismissive",
 ]
 
 # Positive stance indicators in quotes/context — signals the source is
@@ -395,10 +577,80 @@ _POSITIVE_STANCE_TERMS: list[str] = [
     "leading", "leader", "best-in-class", "state-of-the-art",
 ]
 
+# Security/safety terms that are positive ONLY when used as features
+# (e.g. "our product ensures security"), not when discussing failures
+# (e.g. "security vulnerability", "safety concerns").  The positive
+# match is suppressed when the quote also contains a vulnerability-
+# context signal.
+_POSITIVE_TERMS_CONTEXT_DEPENDENT: set[str] = {
+    "safe", "safety", "secure", "security",
+}
+_VULNERABILITY_CONTEXT_SIGNALS: set[str] = {
+    # When ANY of these appear alongside "security"/"safe" in a quote,
+    # suppress the positive stance credit — the source is discussing
+    # problems, not praising the subject.
+    "vulnerability", "vulnerabilities", "vulnerable",
+    "hack", "hacked", "hacking", "hacker", "hackers",
+    "breach", "breached", "breaches",
+    "exploit", "exploits", "exploited", "exploiting",
+    "attack", "attacks", "attacker", "attackers", "attacked",
+    "flaw", "flaws", "weakness", "weaknesses",
+    "bug", "bugs", "glitch",
+    "compromise", "compromised",
+    "risk", "risks", "risky",
+    "threat", "threats",
+    "incident", "incidents",
+    "injection", "prompt injection",
+    "hijack", "hijacked", "hijacking",
+    "steal", "stolen", "stole", "stealing",
+    "mistake", "mistakes", "error", "errors",
+    "trade-off", "tradeoff",
+    "concern", "concerns", "concerning",
+    "guardrail", "guardrails",
+    "red-teaming", "red-team",
+}
+
+# Indirect criticism patterns — sources that criticize through
+# rhetorical questions, expressions of surprise/disbelief, or
+# analogies rather than direct negative vocabulary.
+_INDIRECT_CRITICISM_PATTERNS: list[re.Pattern] = [
+    # Rhetorical questions implying negligence
+    re.compile(r"\bwere there even\b", re.IGNORECASE),
+    re.compile(r"\bdid anyone (?:think|bother|try)\b", re.IGNORECASE),
+    re.compile(r"\bwhy (?:didn't|did they not|wouldn't|did not)\b", re.IGNORECASE),
+    re.compile(r"\bhow (?:could|did|can) they not\b", re.IGNORECASE),
+    re.compile(r"\bhow is (?:it|that) (?:possible|acceptable)\b", re.IGNORECASE),
+    # Expressions of surprise / disbelief as criticism
+    re.compile(r"\bi don'?t understand (?:why|how)\b", re.IGNORECASE),
+    re.compile(r"\bit'?s (?:really |quite |very |most |particularly )?surprising\b", re.IGNORECASE),
+    re.compile(r"\bit'?s (?:really |quite |very |most |particularly )?striking\b", re.IGNORECASE),
+    re.compile(r"\b(?:really |quite |very |most |particularly )?surprising (?:that|coming|from)\b", re.IGNORECASE),
+    re.compile(r"\bshould have been (?:uncovered|caught|found|detected|prevented|stopped|fixed)\b", re.IGNORECASE),
+    re.compile(r"\bshould not have (?:happened|occurred|been (?:deployed|released|launched))\b", re.IGNORECASE),
+    re.compile(r"\b(?:simple|basic|elementary|trivial|obvious) (?:problem|issue|flaw|mistake|error|bug|oversight)\b", re.IGNORECASE),
+    re.compile(r"\braises (?:serious |real )?questions\b", re.IGNORECASE),
+    # Analogies/metaphors deployed as criticism
+    re.compile(r"\belementary school\b", re.IGNORECASE),
+    re.compile(r"\bjust wants to please\b", re.IGNORECASE),
+    re.compile(r"\blike (?:a |an )?(?:child|toddler|student|amateur|intern)\b", re.IGNORECASE),
+    # "Embarrassing" / "concerning" as criticism
+    re.compile(r"\bembarrassing\b", re.IGNORECASE),
+    re.compile(r"\bconcerning\b", re.IGNORECASE),
+    re.compile(r"\bworrying\b", re.IGNORECASE),
+    re.compile(r"\btroubling\b", re.IGNORECASE),
+    # "Dangerous thing" / "very dangerous"
+    re.compile(r"\b(?:very |really |extremely |quite )?dangerous\b", re.IGNORECASE),
+    # "Without careful scrutiny"
+    re.compile(r"\bwithout (?:careful |proper |adequate |sufficient )?(?:scrutiny|testing|review|oversight|vetting)\b", re.IGNORECASE),
+    re.compile(r"\bpush(?:ing|ed)? (?:things |it )?out without\b", re.IGNORECASE),
+]
+
 
 def analyze_source_stance(
-    sources: list[SourceMention],
+    sources_or_text: "list[SourceMention] | str",
     target_entity: str = "",
+    *,
+    full_text: str = "",
 ) -> dict:
     """Analyse the collective stance of sources toward a subject entity.
 
@@ -408,7 +660,9 @@ def analyze_source_stance(
     undermine the subject.  That's high authority but adversarial stance.
 
     Args:
-        sources: Extracted source mentions from the article.
+        sources_or_text: Either a list of extracted SourceMention objects,
+            or raw article text (which will be run through extract_sources
+            first for convenience).
         target_entity: Optional target entity name for context-aware
             stance detection (unused in current version; reserved for
             future entity-coref-based stance detection).
@@ -423,6 +677,13 @@ def analyze_source_stance(
         - ``adversarial_sources``: list of adversarial source names/descriptors
         - ``supportive_sources``: list of supportive source names/descriptors
     """
+    # Accept raw text for convenience
+    if isinstance(sources_or_text, str):
+        if not full_text:
+            full_text = sources_or_text
+        sources = extract_sources(sources_or_text)
+    else:
+        sources = sources_or_text
     if not sources:
         return {
             "adversarial_count": 0,
@@ -434,21 +695,70 @@ def analyze_source_stance(
             "supportive_sources": [],
         }
 
+    # Check for vulnerability-context signals in the FULL ARTICLE text.
+    # When the article is fundamentally about security failures/hacks,
+    # "security" in any source quote is NOT a positive endorsement —
+    # it's discussing the problem domain, not praising the subject.
+    full_text_lower = full_text.lower() if full_text else ""
+    article_has_vulnerability_context = any(
+        re.search(rf"\b{re.escape(signal)}\b", full_text_lower)
+        for signal in _VULNERABILITY_CONTEXT_SIGNALS
+    ) if full_text_lower else False
+
     adversarial: list[str] = []
     supportive: list[str] = []
     neutral: list[str] = []
 
     for source in sources:
-        # Combine quote and attribution verb context for stance detection
-        context_text = (source.quote + " " + source.attribution_verb).lower()
+        # For stance analysis, aggregate ALL quotes attributed to this
+        # source across the full article, not just the first one captured
+        # by ``extract_sources``.
+        if full_text and not source.is_anonymous:
+            aggregated_quotes = _collect_all_quotes_for_source(
+                full_text, source.name
+            )
+        else:
+            aggregated_quotes = source.quote
+
+        # Combine all quotes + attribution verb for stance detection
+        context_text = (aggregated_quotes + " " + source.attribution_verb).lower()
+
+        # Check for vulnerability-context signals at two levels:
+        # 1. Quote-level: the individual quote mentions vulnerabilities
+        # 2. Article-level: the article is about security failures
+        # Either suppresses positive matches on "security"/"safety" etc.
+        quote_has_vulnerability_context = any(
+            re.search(rf"\b{re.escape(signal)}\b", context_text)
+            for signal in _VULNERABILITY_CONTEXT_SIGNALS
+        )
+        has_vulnerability_context = (
+            quote_has_vulnerability_context
+            or article_has_vulnerability_context
+        )
 
         neg_count = sum(
             1 for term in _NEGATIVE_STANCE_TERMS
             if re.search(rf"\b{re.escape(term)}\b", context_text)
         )
+
+        # Indirect criticism patterns — rhetorical questions, surprise,
+        # analogies — contribute to adversarial stance
+        indirect_hits = sum(
+            1 for pat in _INDIRECT_CRITICISM_PATTERNS
+            if pat.search(context_text)
+        )
+        neg_count += indirect_hits
+
         pos_count = sum(
             1 for term in _POSITIVE_STANCE_TERMS
             if re.search(rf"\b{re.escape(term)}\b", context_text)
+            # Suppress context-dependent terms when vulnerability context
+            # is present — "security" in "security vulnerability" is not
+            # a positive endorsement
+            and not (
+                has_vulnerability_context
+                and term in _POSITIVE_TERMS_CONTEXT_DEPENDENT
+            )
         )
 
         # Also consider the attribution verb: loaded verbs with negative

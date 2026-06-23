@@ -35,7 +35,14 @@ editorial_changes:
       incoming: "Katie Drummond"
       date: "2023-09"
       source_url: "https://www.nytimes.com/2023/09/11/business/media/wired-katie-drummond.html"
-      notes: "KEY EVENT: Drummond became Global Editorial Director. Previously ran WIRED's science team. Explicitly adversarial framing toward tech-government alignment. This is the most important leadership change for detecting Wired's anti-Meta editorial shift."
+      notes: "KEY EVENT: Drummond became Global Editorial Director. Previously ran VICE's digital reporting globally (SVP, 2019-2023), was Gizmodo EIC (2015-2017), and started career as Wired intern (2009). Explicitly adversarial framing: 'If you do wrong, I want the world to know.' Created first-ever Wired politics team (Nov 2023). DOGE coverage drove 62,500 new US subs in 2 weeks (Feb 2025). Won Sidney Hillman Prize. Launched 'Story Zero' newsroom ethos. Reports to Anna Wintour. Freedom of the Press Foundation board (2024). This is the most important leadership change for detecting Wired's adversarial editorial shift — her entire career (Gizmodo → Vice → Wired) is an adversarial-journalism pipeline."
+
+    - position: "politics_editor"
+      outgoing: null
+      incoming: "Leah Feiger"
+      date: "2023-11"
+      source_url: "https://talkingbiznews.com/they-re-hiring/wired-is-launching-a-political-coverage-team/"
+      notes: "KEY STRUCTURAL CHANGE: First-ever Wired politics editor. Feiger hired from Vice News (where she overlapped with Drummond). Team also included William Turton (Bloomberg, cybersecurity) and David Gilbert (online extremism). Reports to Meg Marco (exec editor of news). Promoted to 'Director of Politics & Science' by 2025-2026. Feiger on Drummond: 'I cannot state enough how farsighted Katie Drummond was.' This hire represents Wired's institutional pivot from tech-centric publication to tech-politics hybrid."
 
   nytimes:
     - position: "executive_editor"

@@ -52,13 +52,20 @@ ANONYMOUS_SOURCE_PATTERNS: list[re.Pattern] = [
 # Named source patterns — look for "Name said", "said Name", "according to Name"
 NAMED_SOURCE_PATTERNS: list[re.Pattern] = [
     # "Name said" / "Name told" — capitalized name followed by attribution verb
+    # Includes both past and present tense forms (see sources.py for rationale)
     re.compile(
         r"\b([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+)\s+"
-        r"(?:said|told|stated|noted|explained|argued|claimed|insisted|warned|added|commented|confirmed|acknowledged|revealed|described)\b"
+        r"(?:said|says|told|tells|stated|states|noted|notes|explained|explains|"
+        r"argued|argues|claimed|claims|insisted|insists|warned|warns|added|adds|"
+        r"commented|comments|confirmed|confirms|acknowledged|acknowledges|"
+        r"revealed|reveals|described|describes|agreed|agrees)\b"
     ),
     # "said Name" — attribution verb followed by capitalized name
     re.compile(
-        r"\b(?:said|told|stated|noted|explained|argued|claimed|insisted|warned|added|commented|confirmed|acknowledged|revealed|described)\s+"
+        r"\b(?:said|says|told|tells|stated|states|noted|notes|explained|explains|"
+        r"argued|argues|claimed|claims|insisted|insists|warned|warns|added|adds|"
+        r"commented|comments|confirmed|confirms|acknowledged|acknowledges|"
+        r"revealed|reveals|described|describes|agreed|agrees)\s+"
         r"([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+)\b"
     ),
     # "according to Name"
@@ -99,7 +106,28 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "drudge", "drudgery", "gulag", "hell", "humiliation",
     "disposable", "demoralized", "demoralizing", "disgruntled",
     "fury", "furious", "revolt", "rage", "nightmare",
-    "horror", "excruciating", "hellish", "grueling",
+    "horror", "excoriated", "excruciating", "hellish", "grueling",
+    # Workplace morale/dysfunction emotional terms — needed for corporate
+    # reporting on layoffs, restructuring, and internal dissent
+    "horrifically", "grim", "grimly", "cruel", "cruelty",
+    "belittled", "belittling", "berated", "berating",
+    "shattered", "shattering", "zealots", "zealotry",
+    "insane", "rock-bottom", "rock bottom",
+    "anger", "angry", "angst", "fearful", "frustrating",
+    "frustrated", "frustration", "unhappy", "unhappiness",
+    "miserable", "misery", "despair", "despairing", "morale",
+    "plummeted", "plunging", "collapsed", "collapse",
+    "feign empathy", "dark mood", "historically low",
+    "severed", "broken", "eroded", "erosion",
+    "widespread dissatisfaction", "widespread discontent",
+    "recruiting crisis", "talent exodus", "brain drain",
+    # Workplace revolt / dissent emotional terms
+    "revolted", "revolt", "rebellion", "rebel",
+    "callous", "callousness", "antisocial",
+    "nihilistic", "nihilism", "dystopian", "Orwellian",
+    "downright ugly", "ugly truth",
+    "train your own replacement", "training their replacements",
+    "Big Beautiful Layoff",
     # Privacy/surveillance emotional terms
     "surveillance", "biometric surveillance", "mass identification",
     "faceprints", "faceprint", "vacuum up", "weaponized",
@@ -113,6 +141,38 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "sanctioned", "sanctions motion", "punitive",
     "chilling", "chilling effect", "suppress", "suppression",
     "retaliation", "retaliatory", "stifle", "stifled",
+    # Military/defense/weapons emotional terms — needed for coverage of
+    # military-tech partnerships, defense contracts, and armed systems
+    # where the language of violence reads as factual to VADER but carries
+    # strong editorial weight in a consumer-tech publication context
+    "drone strike", "drone strikes", "ordering drone strikes",
+    "weapons system", "weapons systems", "weapon system",
+    "cyborg", "cyborg-inspired",
+    "lethal", "lethal force", "lethal autonomous",
+    "kill chain", "kill box",
+    "escalation", "major escalation",
+    "massive new risks", "massive risks",
+    "imperfect AI", "imperfect AI systems",
+    "ousted", "ousting",
+    "information overload",
+    "money pit",
+    "colossal",
+    "wasted",
+    # Cybersecurity / data-breach emotional terms — needed for security
+    # reporting which uses domain-specific loaded language that reads as
+    # neutral to VADER but carries strong negative editorial framing
+    "hack", "hacked", "hacking", "hacker", "hackers",
+    "breach", "breached", "breaches",
+    "exploit", "exploited", "exploits", "exploiting",
+    "vulnerability", "vulnerabilities", "vulnerable",
+    "steal", "stolen", "stealing", "stole",
+    "attack", "attackers", "attacked", "attacking",
+    "hijack", "hijacked", "hijacking",
+    "compromised", "compromise",
+    "malicious", "malware",
+    "embarrassing", "embarrassment",
+    "negligent", "negligence",
+    "reckless", "recklessness",
 ]
 
 # Passive/victim vs. active/powerful framing indicators
@@ -141,6 +201,22 @@ PASSIVE_FRAMING: list[str] = [
     "mounting legal restrictions", "legal action",
     "emergency legal order", "emergency arbitration",
     "arbitration order", "sanctions motion",
+    # Workplace coercion / compulsion passive framing
+    "no option to opt-out", "no option to opt out",
+    "there is no option", "there is no opt-out",
+    "cannot opt out", "cannot opt-out",
+    "opt-out is not possible", "no way to opt out",
+    "opting out is not possible",
+    # Tech responsibility / security failure framing — common in
+    # cybersecurity and product safety reporting where the subject is
+    # framed as negligently passive
+    "slipped through", "fell through the cracks",
+    "should have been", "could have been prevented",
+    "did not respond", "has not commented",
+    "did not respond to a request",
+    "were there even", "raises questions",
+    "tricked", "was tricked", "can be tricked",
+    "did not mention", "has not addressed",
 ]
 
 ACTIVE_FRAMING: list[str] = [
@@ -149,6 +225,24 @@ ACTIVE_FRAMING: list[str] = [
     "innovated", "invested", "expanded", "committed to",
     "doubled down on", "accelerated", "delivered",
     "outperformed", "exceeded expectations", "set a record",
+]
+
+# Active-NEGATIVE framing: the subject is the agent, but the actions are
+# harmful, coercive, or destructive.  These are NOT "passive/victim" framing
+# (the subject isn't being *done to*); the subject is *doing* things that
+# the editorial presents as harmful.  Counting these as positive-agency
+# inflates the score on articles about corporate actions like layoffs,
+# surveillance, forced adoption, etc.
+ACTIVE_NEGATIVE_FRAMING: list[str] = [
+    "tracking", "tracked", "surveilling", "monitoring",
+    "laying off", "laid off", "slashing", "slashed", "cutting jobs",
+    "cutting staff", "cutting workers", "eliminating jobs",
+    "eliminating positions", "firing", "downsizing",
+    "forcing", "forced", "mandating", "mandated",
+    "requiring", "required employees", "compelling",
+    "harvesting", "capturing", "extracting",
+    "pushing employees", "pressuring employees",
+    "factoring their use",
 ]
 
 # Comparative framing indicators
@@ -271,10 +365,50 @@ def measure_speculative_language(text: str) -> float:
     return round(ratio, 4)
 
 
+# Technical/domain vocabulary that should be downweighted when the article
+# context is clearly about that domain (e.g. a cybersecurity article using
+# "hack", "exploit", "vulnerability" as neutral technical terms).
+_SECURITY_TECHNICAL_TERMS: set[str] = {
+    "hack", "hacked", "hacking", "hacker", "hackers",
+    "attack", "attacks", "attacked", "attacker", "attackers",
+    "exploit", "exploits", "exploited",
+    "vulnerability", "vulnerabilities", "vulnerable",
+    "hijack", "hijacked", "hijacking",
+    "breach", "breached", "breaches",
+    "malware", "phishing", "spyware", "ransomware",
+    "threat", "threats",
+}
+
+# Signals that an article is primarily about cybersecurity/security topics
+_SECURITY_CONTEXT_SIGNALS: set[str] = {
+    "cybersecurity", "red-teaming", "red teaming", "prompt injection",
+    "guardrails", "agent security", "ai security", "ai agent",
+    "account recovery", "account takeover", "credential",
+    "two-factor authentication", "multi-factor authentication",
+}
+
+
+def _is_security_context(text_lower: str) -> bool:
+    """Detect whether article is primarily about cybersecurity topics.
+
+    When True, standard security vocabulary (hack, attack, exploit, etc.)
+    should be downweighted in emotional intensity scoring because these
+    terms are neutral technical language in this domain.
+    """
+    signal_count = sum(
+        1 for term in _SECURITY_CONTEXT_SIGNALS
+        if term in text_lower
+    )
+    return signal_count >= 2
+
+
 def _measure_emotional_intensity(text: str) -> float:
     """Measure emotional/loaded language intensity.
 
     Returns a 0.0–1.0 score based on density of emotional terms.
+    Domain-aware: in cybersecurity articles, standard security vocabulary
+    (hack, attack, exploit, vulnerability) is downweighted because these
+    are neutral technical terms, not emotional language.
     """
     if not text:
         return 0.0
@@ -282,21 +416,32 @@ def _measure_emotional_intensity(text: str) -> float:
     text_lower = text.lower()
     word_count = max(len(text.split()), 1)
     emotional_count = 0
+    is_security = _is_security_context(text_lower)
 
     for term in EMOTIONAL_LANGUAGE:
         escaped = re.escape(term)
         matches = re.findall(rf"\b{escaped}\b", text_lower)
-        emotional_count += len(matches)
+        match_count = len(matches)
+        if match_count > 0:
+            # Downweight security technical terms in security-context articles
+            if is_security and term.lower() in _SECURITY_TECHNICAL_TERMS:
+                match_count = match_count * 0.15  # 85% discount
+            emotional_count += match_count
 
-    # Normalize: emotional terms per 100 words, capped at 1.0
-    intensity = min(emotional_count / (word_count / 100), 1.0)
+    # Normalize: scale so 2.5 emotional terms per 100 words = 1.0
+    # (previous threshold of 1/100 was far too sensitive — any article
+    # with standard descriptive language maxed out immediately)
+    intensity = min(emotional_count / (word_count / 100) / 2.5, 1.0)
     return round(intensity, 4)
 
 
 def _measure_agency(text: str) -> float:
     """Measure agency attribution framing.
 
-    Returns -1.0 (passive/victim) to 1.0 (active/powerful).
+    Returns -1.0 (passive/victim OR active-negative) to 1.0 (active/powerful/positive).
+    Active-negative framing (the subject is the agent but performs harmful
+    actions) counts as negative agency because the editorial effect is
+    the same as passive framing: the subject is positioned unfavourably.
     """
     if not text:
         return 0.0
@@ -304,6 +449,7 @@ def _measure_agency(text: str) -> float:
     text_lower = text.lower()
     passive_count = 0
     active_count = 0
+    active_neg_count = 0
 
     for phrase in PASSIVE_FRAMING:
         escaped = re.escape(phrase)
@@ -313,12 +459,18 @@ def _measure_agency(text: str) -> float:
         escaped = re.escape(phrase)
         active_count += len(re.findall(rf"\b{escaped}\b", text_lower))
 
-    total = passive_count + active_count
+    for phrase in ACTIVE_NEGATIVE_FRAMING:
+        escaped = re.escape(phrase)
+        active_neg_count += len(re.findall(rf"\b{escaped}\b", text_lower))
+
+    # Active-negative counts against the subject (like passive framing)
+    negative_total = passive_count + active_neg_count
+    total = negative_total + active_count
     if total == 0:
         return 0.0
 
-    # Scale from -1 (all passive) to +1 (all active)
-    score = (active_count - passive_count) / total
+    # Scale from -1 (all passive/active-negative) to +1 (all active-positive)
+    score = (active_count - negative_total) / total
     return round(score, 4)
 
 
@@ -706,6 +858,19 @@ def analyze_composite(text: str, headline: str = "") -> SentimentResult:
         emotional_intensity=emotional_intensity,
         framing_summary=framing_summary,
     )
+
+    # When framing correction fired, the body's true direction is negative
+    # even though VADER scored it positive.  Recalculate alignment against
+    # the corrected direction so that a negative headline + corrected-negative
+    # body reads as aligned rather than contradictory.
+    if framing_corrected and headline:
+        headline_vader = analyze_vader(headline)
+        h_compound = headline_vader["compound"]
+        # If headline is also negative (or neutral), alignment is positive
+        if h_compound <= 0.05:
+            # Both headline and (corrected) body are negative — good alignment
+            # Scale by how negative the headline is (stronger = more aligned)
+            alignment = round(min(abs(h_compound) * 2.0, 0.9), 4) if h_compound < -0.05 else 0.3
 
     return SentimentResult(
         overall_tone=overall_tone,

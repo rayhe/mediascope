@@ -29,6 +29,9 @@ This is not an attack tool. It works equally well pointed at Fox News covering r
 10. **Detects outsourced intensity** — when journalists outsource emotional language to quotes while keeping prose neutral **(new)**
 11. **Analyzes source stance** — measures whether sources are deployed adversarially or supportively, beyond just named/anonymous **(new)**
 12. **Detects power asymmetry framing** — editorial device positioning institutional power against individual vulnerability **(new)**
+13. **Active-negative agency detection** — distinguishes "actively doing harmful things" (tracking, cutting, forcing) from positive active agency (launching, innovating) **(new)**
+14. **Framing-aware tone correction** — when VADER scores factual investigative prose as positive but framing devices signal adversarial editorial stance, overrides with framing-derived tone **(new)**
+15. **Source extraction stop-word filtering** — prevents false-positive extractions like "After Meta said" → source "After Meta" **(new)**
 
 ## ✨ Novel: Editorial Histories
 
@@ -308,6 +311,7 @@ The `examples/sample_output/` directory contains annotated analyses of real arti
 | `wired_meta_applied_ai_revolt_2026_06_13_*` | Wired's "Soul-Crushing Gulag" Meta Applied AI report | Tone: -0.72, 5/7 framing devices detected, 80% anonymous sources, strong emotional appeal + loaded language |
 | `wired_meta_applied_ai_2026_06_16_*` | Wired Meta Applied AI follow-up | Continued negative framing with Bosworth admission quotes |
 | `wired_meta_rank_one_2026_06_15_*` | Wired Meta "Rank One" article | Earlier coverage establishing the pattern |
+| `nyt_meta_ai_employees_miserable_2026_05_08_*` | NYT: "Meta's Embrace of A.I. Is Making Its Employees Miserable" | First NYT example. Tone: +0.61 VADER (WRONG) → -0.37 corrected. **5 critical fixes:** active-negative agency detection, workplace coercion/revolt loaded language, investment-near-layoffs juxtaposition, source stop-word filter, framing-corrected headline alignment. Pre/post comparison demonstrates framing correction mechanism. |
 | `weekly_report.md` | Synthetic weekly report | Demonstrates full report format with statistical tables |
 | `asymmetry_scores.json` | Machine-readable scores | JSON format for programmatic consumption |
 | `conflict_disclosure.md` | Disclosure statement | Template for publication-level conflict disclosure |

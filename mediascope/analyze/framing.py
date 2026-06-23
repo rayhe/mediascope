@@ -172,6 +172,21 @@ _EMOTIONAL_APPEAL_PATTERNS: list[re.Pattern] = [
         r"threatened (?:her|him|them|with) (?:bankruptcy|ruin))\b",
         re.IGNORECASE,
     ),
+    # Workplace collective despair — mass dissatisfaction + helplessness
+    # language deployed to evoke sympathy for employees against institution.
+    # Common in tech workplace reporting (e.g., Wired "Dark Mood Inside Meta").
+    re.compile(
+        r"\b(?:everyone is (?:unhappy|miserable|afraid|terrified)|"
+        r"nobody is happy|no one is happy|"
+        r"morale (?:is |has |at )(?:rock.?bottom|historically low|all.time low|an? low)|"
+        r"no(?:body has a)? choice|we have no choice|"
+        r"social contract (?:is |has been )?(?:broken|shattered|dead)|"
+        r"can.t (?:even )?feign (?:empathy|concern|care)|"
+        r"used to train.{0,20}(?:replace|replacement)|"
+        r"train (?:your|their|our) own replacement|"
+        r"vibes are (?:horrifically|historically|extremely) (?:low|bad|poor))\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _STRAW_MAN_PATTERNS: list[re.Pattern] = [
@@ -245,7 +260,14 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"assembly line|human assembly line|data factory|"
         r"draftees?|drafted|disposable|"
         r"menial|dehumanizing|atrocious|brutal|"
-        r"exploitation|slave|sweatshop)\b",
+        r"exploitation|slave|sweatshop|"
+        r"belittled?|berated?|belittling|berating|"
+        r"cruel|cruelty|grim|grimly|"
+        r"rock.?bottom|historically low|"
+        r"shattered|privacy zealots?|"
+        r"insane amounts?|"
+        r"horrifically|horrific)"
+        r"\b",
         re.IGNORECASE,
     ),
     # Legal silencing / corporate censorship language — terms that frame
@@ -267,6 +289,60 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"kings?,?\s+emperors?|"
         r"bankrupt(?:cy|ed|ing)?|"
         r"formally\s+sanctioned|sanctions?\s+motion)\b",
+        re.IGNORECASE,
+    ),
+    # Workplace coercion / compulsion language — editorial device framing
+    # management decisions as authoritarian mandates, emphasising the
+    # absence of employee consent or agency
+    re.compile(
+        r"\b(?:no\s+(?:option|way|ability|choice)\s+to\s+opt[\-\s]?out|"
+        r"opt[\-\s]?out\s+is\s+not\s+(?:possible|an option|available)|"
+        r"cannot\s+opt[\-\s]?out|"
+        r"no\s+(?:opt[\-\s]?out|escape|recourse|alternative)|"
+        r"not\s+(?:possible|optional|voluntary)|"
+        r"mandatory|compulsory|forced\s+to\s+(?:install|use|adopt|accept))\b",
+        re.IGNORECASE,
+    ),
+    # Employee revolt / organised dissent language — loaded terms
+    # characterising employee responses as rebellion or crisis
+    re.compile(
+        r"\b(?:revolt(?:ed|ing|s)?|"
+        r"rebellion|rebel(?:led|ling)?|"
+        r"protest(?:ed|ing|s)?|petition(?:ed|ing|s)?|"
+        r"flyers?|leaflets?|"
+        r"countdown\s+to\s+(?:layoff|the\s+layoff)|"
+        r"counting\s+down\s+to|"
+        r"nihilistic|dystopian|Orwellian|Kafkaesque|"
+        r"train(?:ing)?\s+(?:their|your|our|its)\s+(?:own\s+)?replacements?|"
+        r"training\s+(?:the\s+)?AI\s+(?:that\s+)?(?:will\s+)?replace)\b",
+        re.IGNORECASE,
+    ),
+    # Idiomatic dismissal / incompetence framing — editorial language
+    # implying negligence, failure, or embarrassment through idioms
+    re.compile(
+        r"\b(?:practically\s+mindless|mindless(?:ly)?|"
+        r"slipped?\s+through\s+the\s+cracks?|"
+        r"embarrass(?:ing|ed|ment)|humiliat(?:ing|ed|ion)|"
+        r"should\s+have\s+been\s+(?:caught|found|discovered|obvious)|"
+        r"dropped?\s+the\s+ball|"
+        r"asleep\s+at\s+the\s+wheel|"
+        r"basic(?:ally)?\s+(?:failure|negligence|oversight|incompetence)|"
+        r"stunning(?:ly)?\s+(?:simple|basic|obvious)|"
+        r"shockingly\s+(?:simple|basic|easy)|"
+        r"beggars?\s+belief|"
+        r"unconscionable)\b",
+        re.IGNORECASE,
+    ),
+    # Analogy/diminishment — comparing sophisticated entities to children,
+    # students, or naive actors to undermine their competence
+    re.compile(
+        r"\b(?:elementary\s+school|kindergarten|toddler|child(?:ish|like)?|"
+        r"naive|naively|"
+        r"eager\s+to\s+(?:please|finish|comply|complete)|"
+        r"just\s+wants?\s+to\s+please|"
+        r"puppy\s+(?:eager|like)|"
+        r"blindly\s+(?:follow|obey|comply)|"
+        r"rubber.?stamp(?:ing|ed)?)\b",
         re.IGNORECASE,
     ),
 ]
@@ -308,6 +384,70 @@ _JUXTAPOSITION_PATTERNS: list[re.Pattern] = [
         r"\b(?:military|Pentagon|law enforcement|police|intelligence|"
         r"surveillance|defense|government|FBI|CIA|NSA|"
         r"special operations|marshals?)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Profit-vs-cuts juxtaposition: record/strong/high profits near layoffs/cuts/job losses
+    # Central framing device in corporate accountability reporting
+    re.compile(
+        r"\b(?:record|strong|robust|soaring|surging|back.?to.?back|"
+        r"billion.?dollar|quarterly|annual)\b"
+        r".{0,80}?"
+        r"\b(?:profit|profits|revenue|earnings|income)\b"
+        r".{0,120}?"
+        r"\b(?:layoff|layoffs|lay off|laid off|cut(?:ting|s)?|"
+        r"slash(?:ed|ing|es)?|eliminat(?:ed?|ing|ion)|"
+        r"fired?|firing|downsiz(?:ed?|ing)|restructur(?:ed?|ing)|"
+        r"headcount|workforce reduction)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse: layoffs near profits
+    re.compile(
+        r"\b(?:layoff|layoffs|lay off|laid off|cut(?:ting|s)?|"
+        r"slash(?:ed|ing|es)?|eliminat(?:ed?|ing|ion)|"
+        r"fired?|firing|downsiz(?:ed?|ing)|restructur(?:ed?|ing))\b"
+        r".{0,120}?"
+        r"\b(?:record|strong|robust|soaring|surging|back.?to.?back)\b"
+        r".{0,40}?"
+        r"\b(?:profit|profits|revenue|earnings|income)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Executive compensation vs. rank-and-file cuts
+    re.compile(
+        r"\b(?:\$\d+\s*(?:million|billion)|compensation|pay packages?)\b"
+        r".{0,120}?"
+        r"\b(?:layoff|layoffs|cut(?:ting|s)?|median\s+(?:compensation|pay|salary)|"
+        r"fell|declined?|dropped?|reduced?)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # AI/tech spending/investment near layoffs — editorial framing that
+    # juxtaposes massive capital expenditure with workforce reductions,
+    # implying employees are being sacrificed for technology
+    re.compile(
+        r"\b(?:spending|invest(?:ing|ment|s)?|"
+        r"(?:hundreds?\s+of\s+)?billions?|"
+        r"billions?\s+of\s+dollars|"
+        r"\$\d+\s*(?:billion|B)|"
+        r"capex|capital\s+expenditure)\b"
+        r".{0,160}?"
+        r"\b(?:layoff|layoffs|lay\s+off|laid\s+off|"
+        r"cut(?:ting|s)?\s+(?:jobs?|workers?|staff|employees?|workforce|positions?|headcount)|"
+        r"slash(?:ed|ing|es)?\s+\d+\s*(?:%|percent)|"
+        r"eliminat(?:ed?|ing|ion)\s+(?:jobs?|workers?|roles?|positions?)|"
+        r"workforce\s+reduction|"
+        r"offset\s+(?:the\s+)?(?:other\s+)?investments?)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse: layoffs near investment/spending
+    re.compile(
+        r"\b(?:layoff|layoffs|lay\s+off|laid\s+off|"
+        r"cut(?:ting)?\s+(?:\d+\s*(?:%|percent)|jobs?|workers?|staff)|"
+        r"slash(?:ed|ing)?\s+\d+\s*(?:%|percent)|"
+        r"10\s*(?:%|percent)\s+of\s+(?:its|the|their)\s+work\s*force)\b"
+        r".{0,160}?"
+        r"\b(?:spending|invest(?:ing|ment|s)?|"
+        r"(?:hundreds?\s+of\s+)?billions?|"
+        r"\$\d+\s*(?:billion|B)|"
+        r"(?:A\.?I\.?|AI)\s+(?:spending|infrastructure|investment|initiative))\b",
         re.IGNORECASE | re.DOTALL,
     ),
 ]
@@ -448,14 +588,142 @@ _DEVICE_PATTERNS: dict[str, list[re.Pattern]] = {
 }
 
 
+# Military techno-optimism: editorial framing that normalises violence
+# through technology language.  Phrases like "optimize the human as a
+# weapons system" or "ordering drone strikes via eye-tracking" present
+# military killing as a user-experience problem.  The language is factual
+# (the subjects really are building weapons) but the editorial choice to
+# lead with UX-style language over ethical/risk language reveals framing.
+_MILITARY_TECHNO_OPTIMISM_PATTERNS: list[re.Pattern] = [
+    # UX/consumer language applied to weapons/military
+    re.compile(
+        r"\b(?:optimize|optimise|streamline|seamless(?:ly)?|"
+        r"user.?friendly|intuitive|clean interface|"
+        r"eye.?tracking|voice command|gesture|"
+        r"plain language|natural language)\b"
+        r".{0,100}?"
+        r"\b(?:weapon|strike|combat|warfare|soldier|military|"
+        r"battle|kill|lethal|drone|artillery|target)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse: weapons near UX language
+    re.compile(
+        r"\b(?:weapon|strike|combat|warfare|soldier|military|"
+        r"drone|artillery|target|lethal)\b"
+        r".{0,100}?"
+        r"\b(?:optimize|optimise|seamless(?:ly)?|"
+        r"user.?experience|UX|intuitive|"
+        r"eye.?tracking|voice command|gesture|"
+        r"plain language|natural language)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "Human as weapons system" / cyborg framing
+    re.compile(
+        r"\b(?:human\s+as\s+a?\s*weapon|"
+        r"cyborg.?inspired|"
+        r"man.?machine\s+(?:teaming|integration|interface)|"
+        r"soldier.?(?:drone|robot|AI)\s+(?:team|integration|fusion|pairing)|"
+        r"drones?\s+and\s+soldiers?\s+(?:see|act|decide|operate)\s+together)\b",
+        re.IGNORECASE,
+    ),
+    # Euphemistic framing of military AI decision-making
+    re.compile(
+        r"\b(?:recommend\s+(?:courses?\s+of\s+action|strikes?|targets?)|"
+        r"(?:AI|system|algorithm).?(?:driven|assisted|powered)\s+"
+        r"(?:recognition|identification|targeting|engagement)|"
+        r"approve\s+(?:via|through|by)\s+(?:the|a)\s+(?:chain|normal)\b)",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["military_techno_optimism"] = _MILITARY_TECHNO_OPTIMISM_PATTERNS
+
+
+# Selective rehabilitation: editorial device that juxtaposes a figure's
+# past controversy or ouster with their current acceptance/rehabilitation,
+# implying opportunism or moral flexibility.
+_SELECTIVE_REHABILITATION_PATTERNS: list[re.Pattern] = [
+    re.compile(
+        r"\b(?:ousted|fired|forced out|departed|left)\b"
+        r".{0,150}?"
+        r"\b(?:now|today|currently|once again|back (?:in|to|at|together))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    re.compile(
+        r"\b(?:previously|formerly|once|at one time)\b"
+        r".{0,60}?"
+        r"\b(?:critic|opponent|rival|adversary|enemy)\b"
+        r".{0,100}?"
+        r"\b(?:now|today|currently|has since|have since)\b"
+        r".{0,60}?"
+        r"\b(?:partner|ally|collaborat|work(?:ing)? (?:with|together))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "friendlier posture" / "warmed to" / "softened stance" editorial language
+    re.compile(
+        r"\b(?:friendlier\s+posture|warmed?\s+(?:to|toward)|"
+        r"soften(?:ed|ing)?\s+(?:stance|posture|position|approach|tone)|"
+        r"embrace(?:d|s|ing)?\s+(?:the|a)?\s*(?:administration|government|regime|party)|"
+        r"cozy(?:ing)?(?:\s+up)?\s+(?:to|with)\s+(?:the|a)?\s*(?:administration|government|regime))\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["selective_rehabilitation"] = _SELECTIVE_REHABILITATION_PATTERNS
+
+
+# Rhetorical question framing: questions that imply negligence, incompetence,
+# or failure without directly asserting it.  "Were there even guardrails?"
+# is more devastating than "there were no guardrails" because it positions
+# the audience to draw the negative conclusion themselves.  Common in
+# accountability journalism where sources use interrogative form to
+# maximize impact while maintaining deniability.
+_RHETORICAL_QUESTION_PATTERNS: list[re.Pattern] = [
+    # "Were there even X?" / "Was there even X?"
+    re.compile(
+        r"\b(?:were|was|is|are) there even\b.{3,60}?\?",
+        re.IGNORECASE,
+    ),
+    # "Did anyone think to X?" / "Did anyone bother to X?"
+    re.compile(
+        r"\bdid anyone (?:think|bother|try|stop|consider|check)\b.{3,60}?\?",
+        re.IGNORECASE,
+    ),
+    # "Why didn't they X?" / "Why did they not X?"
+    re.compile(
+        r"\bwhy (?:didn'?t|did(?:n'?| not)|wouldn'?t|hasn'?t|haven'?t) .{3,60}?\?",
+        re.IGNORECASE,
+    ),
+    # "How could/did they not X?"
+    re.compile(
+        r"\bhow (?:could|did|can) .{3,40}? not .{3,40}?\?",
+        re.IGNORECASE,
+    ),
+    # "How is that/this acceptable/possible?"
+    re.compile(
+        r"\bhow is (?:it|that|this) (?:possible|acceptable|okay|responsible)\?",
+        re.IGNORECASE,
+    ),
+    # "What was X even doing?" / "What were they even thinking?"
+    re.compile(
+        r"\bwhat (?:was|were|is|are) .{3,30}? even .{3,30}?\?",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["rhetorical_question"] = _RHETORICAL_QUESTION_PATTERNS
+
+
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for patterns associated with 12 types of editorial framing:
+    Scans for patterns associated with 15 types of editorial framing:
     guilt_by_association, anonymous_authority, catastrophizing,
     false_balance, selective_omission_signal, emotional_appeal,
     straw_man, loaded_language, refusal_amplification,
-    juxtaposition, timeline_implication, and power_asymmetry.
+    juxtaposition, timeline_implication, power_asymmetry,
+    military_techno_optimism, selective_rehabilitation,
+    and rhetorical_question.
 
     Args:
         text: The article text to analyze.

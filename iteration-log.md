@@ -4,6 +4,147 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-22 19:00 PT — Hour Type B: Journalist/Publication Research — Katie Drummond + Leah Feiger Career Profiles
+
+**Focus:** Deep career research on the two most analytically important figures in Wired's post-2023 editorial transformation: Katie Drummond (Global Editorial Director) and Leah Feiger (first-ever politics editor, now Director of Politics & Science). Drummond was already flagged in `editorial_changes.yaml` as "the most important leadership change" but had NO entry in `journalists.yaml`. Feiger was entirely untracked despite being the person who built Wired's politics desk from scratch.
+
+### What was improved:
+
+1. **Katie Drummond — Complete career history added to `journalists.yaml` (8 career entries):**
+   - Wired intern (2009–2012): national security blog, military research during Iraq/Afghanistan. First career job.
+   - The Verge (2013-04 – 2014-11): Hired to run new science section. Promoted to assistant managing editor. Part of Josh Topolsky orbit.
+   - Bloomberg Businessweek (2014-11 – 2015-10): Deputy editor. Followed Josh Topolsky (third time).
+   - Gizmodo (2015-11 – 2017-04): EIC/executive managing editor. ~17 months. First top-editor role.
+   - The Outline (2017-04 – 2018-03): First executive editor. Topolsky's startup. ~11 months.
+   - Medium (2018-04 – 2019-02): Deputy editor. ~11 months.
+   - Vice Media (2019-03 – 2023-08): SVP of Global News & Entertainment. Her longest pre-Wired stint (4.5 years). Led global expansion of Vice News across Latin America, Europe, Asia. Oversaw all Vice digital brands. Teams won Emmys, OJAs, SOPA Awards, Peabody. Left day after Fortress bankruptcy acquisition.
+   - Wired (2023-08 – present): Global Editorial Director. Announced Aug 10, started Aug 28. Replaced Gideon Lichfield. Reports to Anna Wintour.
+   - Key metadata: Born 1985/1986, Calgary, Alberta. Queen's University BA in Philosophy (2008). Married, one daughter, Brooklyn. Freedom of the Press Foundation board (2024).
+
+2. **Leah Feiger — Complete career history added to `journalists.yaml` (3 career entries):**
+   - Freelance (2016-01 – 2020-09): Atlantic (editorial fellow), NYT, WaPo/The Lily, The Forward, Fodor's, OZY, Atlas Obscura, Bitch Media, Culture Trip, Segal Family Foundation. Education: Dartmouth BA (African Studies + Gender Studies), UCT MS (Gender Studies), Columbia MS (Journalism).
+   - Vice News (2020-09 – 2023-11): Senior features editor → managing editor. Led politics and gender coverage. Vice News Reports podcast credits. Direct overlap with Drummond at Vice (Drummond was SVP Mar 2019 – Aug 2023).
+   - Wired (2023-11 – present): First day Nov 13, 2023. First-ever politics editor. Part of 3-reporter, 2-editor politics team (with William Turton, David Gilbert). Reports to Meg Marco. Promoted to Director of Politics & Science by 2025-2026. Hosts WIRED Politics Lab podcast. 252+ articles.
+
+3. **`editorial_changes.yaml` — Wired section massively expanded:**
+   - Drummond entry rewritten: full career context (Gizmodo EIC → Vice SVP → Wired GED), editorial philosophy quote, DOGE metrics (62,500 subs in 2 weeks), Sidney Hillman Prize, Story Zero ethos, FPF board, Anna Wintour reporting line.
+   - New entry: Leah Feiger politics editor hire (2023-11). Documents creation of first-ever Wired politics team (3 reporters + 2 editors). Names full team: Feiger, William Turton (Bloomberg), David Gilbert.
+
+4. **`profiles/wired.yaml` — editorial_leadership section overhauled:**
+   - Drummond entry expanded with start_date, full editorial stance documentation, key metrics
+   - Added Leah Feiger (Director of Politics & Science) with editorial stance
+   - Added Brian Barrett (Executive Editor, News)
+   - Added Zoë Schiffer (Director of Business & Industry)
+   - Added Meg Marco (Executive Editor of News — Feiger's boss)
+   - key_journalists section expanded: added Leah Feiger, William Turton, David Gilbert entries; updated existing entries with podcast/title details
+
+5. **Key analytical insights documented in journalist notes:**
+
+   **The Drummond→Feiger Vice pipeline:** Drummond was Vice SVP (Mar 2019 – Aug 2023). Feiger was Vice features editor (Sep 2020 – Nov 2023). They overlapped for 3 years. When Drummond took the Wired job in Aug 2023, she recruited Feiger from Vice within 3 months (Nov 2023 first day). This is a direct personnel pipeline from Vice's adversarial editorial culture into Wired's newsroom.
+
+   **The Josh Topolsky orbit:** Drummond followed Josh Topolsky across THREE publications: The Verge → Bloomberg (2014) → The Outline (2017). This is a unique pattern in the dataset — no other tracked journalist shows this kind of serial affiliation with a single editorial mentor.
+
+   **Career-arc bias signal:** Drummond's entire career progression — Gizmodo (tech-adversarial by founding DNA) → Vice (explicitly adversarial brand identity) → Wired (now explicitly adversarial under her leadership) — represents a consistent selection effect: she has chosen, and been chosen by, publications with confrontational editorial postures. Her stated philosophy confirms this: "If you do wrong, I want to find out, and then I want the world to know."
+
+   **Institutional transformation quantified:** Under Drummond + Feiger, Wired achieved: (1) first-ever politics team (Nov 2023), (2) first-ever politics issue (2025), (3) 62,500 new US subs in 2 weeks from DOGE coverage (Feb 2025), (4) Sidney Hillman Prize, (5) CBS Mornings, Pivot podcast, Business Insider profiles, (6) Uncanny Valley podcast franchise + KQED radio, (7) first dedicated Musk beat reporter, (8) political billboard campaigns in Brooklyn/DC/LA/Austin/SF. This is not a gradual editorial drift — it's a deliberate structural pivot executed by two leaders with adversarial-journalism backgrounds.
+
+### Sources:
+- Wikipedia: Katie Drummond (en.wikipedia.org/wiki/Katie_Drummond)
+- Depth Perception by Long Lead: "If you do wrong, I want the world to know" (depthperceptionbyll.substack.com/p/katie-drummond-journalist-interview-wired)
+- The Wrap: "Katie Drummond Named Wired Top Editor After Exit From Vice" (thewrap.com, Aug 2023)
+- The Org: Katie Drummond profile (theorg.com/org/wired/org-chart/katie-drummond)
+- Freedom of the Press Foundation: Board announcement (freedom.press, 2024)
+- ONA23: Katie Drummond bio (ona23.journalists.org)
+- MMA Global: Katie Drummond bio (mmaglobal.com)
+- PPA: Condé Nast appointment (ppa.co.uk, Aug 2023)
+- Condé Nast: Official announcement (condenast.com, Aug 2023)
+- AP/Boston Globe: "Not known for political coverage, Wired takes a leading role" by David Bauder (Feb 26, 2025)
+- Business Insider/Talking Biz News: "How DOGE and Trump helped Wired add 62K subs in two weeks" by Peter Kafka
+- Talking Biz News: "Wired is launching a political coverage team" (Nov 2023)
+- Talking Biz News: "Vice hires Feiger as senior features editor" (Sep 2020)
+- Talking Biz News: "Wired magazine wins Hillman Prize" (2025)
+- Mediatrends.it: Leah Feiger interview at Wired Italy Big Interview, Bocconi University Milan (Jun 2025)
+- Muck Rack: Leah Feiger profile
+- JournalistHunt: Leah Feiger profile
+- Nieman Lab: "Wired is teaming up with KQED" (2026)
+- Talking Biz News: "Wired seeks a staff editor" job listing (2026) — confirms "director, science, politics, and security" title
+- Adweek: "As Wired Journalists Become Influencers, Subscriptions Surge" (2025)
+- Adweek: "Wired Sees Commercial Gains and Editorial Traction" (2025)
+- Variety: "Vice Names Katie Drummond Senior VP of Digital" (Mar 2019)
+- Vox/Recode: "The Outline has hired Gizmodo Media's Katie Drummond" by Peter Kafka (Apr 2017)
+- Observer: "It's Always Some Gawker Season Somewhere" (Nov 2015) — Gizmodo hire
+- Talking Biz News: "Businessweek hires Drummond from The Verge" (Nov 2014)
+- Knight Science Journalism @ MIT: "The Verge launches new science vertical with Wired's Drummond" (Apr 2013)
+- NYT: "Wired's New Editor Doesn't Care if the Tech Bros Are Mad" by Katie Robertson (Mar 2026) — cited via Wikipedia ref
+- Pivot podcast transcript: Drummond guest, DOGE coverage discussion (Feb 2025)
+
+### Commit: pending
+### Tests: 134/134 passing
+### Files modified: 4 (profiles/careers/journalists.yaml, profiles/careers/editorial_changes.yaml, profiles/wired.yaml, iteration-log.md)
+
+## 2026-06-22 11:00 PT — Hour Type D: Toolkit Quality — Source Stance, Outsourced Intensity, Power Asymmetry
+
+**Focus:** Implement three critical analytical features identified as gaps across multiple prior iteration cycles (Type A: Guardian Hay Festival, Wired NameTag, Wired Applied AI Revolt). These were the most-cited open issues in the codebase.
+
+### What was improved:
+
+1. **Source Stance Analysis (`sources.py: analyze_source_stance()`):**
+   - New function that classifies each extracted source as adversarial, supportive, or neutral
+   - Uses quote content analysis: scans source quotes for negative stance terms (harmful, reckless, censorship, exploitation, etc.) and positive stance terms (innovative, beneficial, safe, transparent, etc.)
+   - Weights adversarial attribution verbs (warned, blasted, fumed, accused, threatened, etc.)
+   - Produces `stance_balance` metric: -1.0 (all adversarial) to +1.0 (all supportive)
+   - Returns named lists of adversarial/supportive sources for auditing
+   - Solves the repeatedly-identified gap where `source_authority` scored 1.0 (all named = high quality) even when 100% of sources were deployed to attack the subject
+
+2. **Outsourced Intensity Detection (`sentiment.py: measure_outsourced_intensity()`):**
+   - New function that splits article text into quoted segments and editorial prose
+   - Measures emotional language density in each segment independently
+   - Computes `outsourced_ratio`: 0.0 (balanced) to 1.0 (all emotional language in quotes)
+   - Handles both smart (curly) quotes and straight quotes
+   - Returns word counts for quoted vs editorial segments
+   - Solves the "outsourced intensity not detectable" gap first identified in the Guardian Hay Festival analysis
+
+3. **Power Asymmetry Framing Device (`framing.py: power_asymmetry`):**
+   - New framing device type with 6 pattern families:
+     - Financial magnitude near individual ($1.5T corporation vs. whistleblower)
+     - Legal army / deep pockets / unlimited resources language
+     - David vs Goliath explicit framing
+     - Cannot-afford-legal-fight patterns
+     - Fine-per-violation-could-bankrupt patterns
+     - Reverse direction (individual near corporate financial scale)
+   - Added to `_ADVERSARIAL_DEVICE_TYPES` set so it contributes to framing correction
+   - False-positive guard: doesn't fire on routine earnings reports with dollar figures
+   - Solves the "power asymmetry not a recognized device type" gap
+
+4. **22 new tests (`tests/test_source_stance.py`):**
+   - TestAnalyzeSourceStance: 7 tests (adversarial, supportive, mixed, empty, neutral, loaded verb shift, source name lists)
+   - TestOutsourcedIntensity: 6 tests (high outsourcing, no outsourcing, empty, balanced, smart quotes, word counts)
+   - TestPowerAsymmetryFraming: 6 tests (financial asymmetry, legal army, David vs Goliath, cannot afford, no false positive, fine per violation)
+   - TestIntegrationWhistleblowerArticle: 3 end-to-end tests (realistic whistleblower article scenario triggering all three features)
+   - Total test suite: 106/106 passing (84 existing + 22 new)
+
+5. **METHODOLOGY.md expanded with 2 new sections:**
+   - §6 Source Stance Analysis: scoring formula, interpretation table, interaction-with-authority matrix (High authority + Adversarial stance = sophisticated editorial bias)
+   - §7 Outsourced Intensity Detection: detection method, outsourced_ratio interpretation table, combined signal analysis
+   - Power Asymmetry added to §4.1 framing device taxonomy table
+   - Section numbering updated (§9 Limitations, §10 References, §11 Causal Identification)
+
+6. **README.md updated:**
+   - Items 10-12 added to "What It Does" list: outsourced intensity, source stance, power asymmetry framing
+
+### Key analytical insight documented:
+
+The most sophisticated form of editorial bias combines three signals:
+- **High source authority** (all named, credentialed sources)
+- **Adversarial source stance** (all sources deployed against subject)
+- **High outsourced intensity** (emotional language in quotes, not editorial prose)
+
+This combination reads as professional journalism — measured prose, named sources, direct quotes — while the entire frame is adversarial. No single metric detects it; only the combination reveals the pattern.
+
+### Commit: `6f77768`
+### Tests: 106/106 passing
+### Files modified: 7 (sources.py, sentiment.py, framing.py, METHODOLOGY.md, README.md, test_sentiment.py, test_source_stance.py [new])
+
 ## 2026-06-22 09:00 PT — Hour Type C: MIT Technology Review Ownership & Funding Deep Dive
 
 **Focus:** Comprehensive ownership, governance, and institutional funding deep dive on MIT Technology Review — the publication with the thinnest existing profile and the most structurally complex conflict of interest among all 5 tracked publications.
