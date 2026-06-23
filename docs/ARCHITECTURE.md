@@ -2,12 +2,17 @@
 
 ## System Overview
 
-MediaScope is a modular Python toolkit organized into six functional layers:
+MediaScope is a modular Python toolkit organized into seven functional layers, plus a dedicated Editorial Histories subsystem for causal bias attribution:
 
 ```
 ┌──────────────────────────────────────────────────────────────────────┐
 │                        CLI / Agent Interface                        │
 │                     mediascope/cli.py                                │
+│                                                                      │
+│   Commands: ingest, analyze, score, report, disclose,               │
+│             add-publication, list-publications, status               │
+│   Subgroups: careers (list, show, migrations, leadership, diff,     │
+│              analyze)                                                │
 └──────────────┬───────────────────────────────────────┬───────────────┘
                │                                       │
 ┌──────────────▼───────────────┐     ┌─────────────────▼──────────────┐
@@ -27,6 +32,10 @@ MediaScope is a modular Python toolkit organized into six functional layers:
 │  sentiment.py → 8-dim score  │
 │  framing.py   → device detect│
 │  sources.py   → source auth  │
+│               + stance       │
+│               + outsourced   │
+│                 intensity    │
+│               + power asym   │
 └──────────────┬───────────────┘
                │
 ┌──────────────▼───────────────┐     ┌────────────────────────────────┐
@@ -44,9 +53,23 @@ MediaScope is a modular Python toolkit organized into six functional layers:
 │  dashboard.py → HTML dash    │     │  db.py     → CRUD operations   │
 │  disclosure.py → re-export   │     │                                │
 └──────────────────────────────┘     └────────────────────────────────┘
+
+┌──────────────────────────────────────────────────────────────────────┐
+│              CAREERS — Editorial Histories (Novel)                   │
+│                                                                      │
+│  models.py              → Data models (JournalistProfile, Migration, │
+│                            CareerEvent, LeadershipChange)            │
+│  tracker.py             → Career data loader + journalist lookup     │
+│  migrations.py          → DiD analysis on journalist moves           │
+│  editorial_leadership.py→ ITS analysis on leadership changes         │
+│  influence.py           → Bias decomposition (two-way ANOVA),        │
+│                            portable bias scoring                     │
+└──────────────────────────────────────────────────────────────────────┘
 ```
 
 ## Data Flow
+
+### Primary Analysis Pipeline
 
 ```
 RSS Feeds ──→ Article Text ──→ Entity Detection ──→ Sentiment Analysis
@@ -55,6 +78,16 @@ RSS Feeds ──→ Article Text ──→ Entity Detection ──→ Sentiment 
                               Topic Classification   Framing Detection
                                       │                     │
                                       └──────┬──────────────┘
+                                             │
+                                             ▼
+                                    ┌─────────────────┐
+                                    │ Source Analysis  │
+                                    │  • Authority     │
+                                    │  • Stance        │
+                                    │  • Outsourced    │
+                                    │    intensity     │
+                                    │  • Power asymm   │
+                                    └────────┬────────┘
                                              │
                                              ▼
                                     Asymmetry Scoring
@@ -66,11 +99,135 @@ RSS Feeds ──→ Article Text ──→ Entity Detection ──→ Sentiment 
                               (MD/HTML/JSON)     Statement
 ```
 
+### Sentiment Correction Pipeline
+
+The toolkit uses a multi-layer correction pipeline that addresses known VADER/TextBlob blind spots when scoring editorial prose:
+
+```
+Raw Text
+  │
+  ├── VADER baseline score ──────┐
+  ├── TextBlob baseline score ───┤
+  │                              ├──→ Composite raw score
+  └── (Optional) LLM score ─────┘
+                                        │
+                                        ▼
+                              Framing Device Detection
+                              (loaded language, emotional
+                               appeal, guilt by association,
+                               etc.)
+                                        │
+                                        ▼
+                              Active-Negative Agency Check
+                              ("tracking," "cutting," "forcing"
+                               vs. "launching," "innovating")
+                                        │
+                                        ▼
+                              Framing-Aware Tone Correction
+                              (overrides positive VADER when
+                               framing signals are adversarial)
+                                        │
+                                        ▼
+                              Corrected Composite Score
+```
+
+This pipeline solves a specific failure mode: VADER often scores investigative/adversarial journalism as positive because the prose is lexically measured (the journalist uses professional language). The framing correction layer detects editorial stance through structural signals and overrides the lexical score when warranted.
+
+### Editorial Histories Pipeline (Causal Analysis)
+
+```
+Journalist YAML ──→ Career Tracker ──→ Migration Detection
+                                              │
+                              ┌────────────────┼────────────────┐
+                              ▼                ▼                ▼
+                      Source-Side DiD    Portable Bias    Dest-Side DiD
+                      (did Publication   (did journalist   (did Publication
+                       A change after    carry tone to     B change after
+                       journalist left?) new outlet?)      journalist arrived?)
+                              │                │                │
+                              └────────┬───────┘                │
+                                       ▼                        ▼
+                              Bias Decomposition         Leadership ITS
+                              (Two-Way ANOVA:            (Interrupted
+                               institutional vs.          Time-Series for
+                               individual vs.             EIC/ME changes)
+                               interaction)
+```
+
+## Analyze Layer — Module Detail
+
+### `entities.py`
+- Regex-based entity detection with word-boundary matching
+- Configurable entity clusters (dict format with custom regex, or list shorthand)
+- Negative lookahead patterns to avoid false positives (e.g., "Apple pie", "Meta tag")
+- `get_primary_entity()` returns the dominant entity in an article
+
+### `sentiment.py`
+- Three-layer sentiment: VADER (0.25), TextBlob (0.25), optional LLM (0.5)
+- Eight-dimension scoring: overall tone, emotional intensity, source authority, agency attribution, headline-body alignment, anonymous source ratio, speculative language ratio, comparative framing
+- **Active-negative agency detection**: Distinguishes "tracking users" (harmful active) from "launching products" (positive active), feeding into tone correction
+- **Framing-aware tone correction**: When VADER scores prose as positive but framing devices and agency signals are adversarial, the corrected score reflects the editorial stance. The `SentimentResult` includes both `raw_overall_tone` and `overall_tone` (corrected) plus metadata fields documenting when and why correction fired
+- **Security context adjustment**: Technical security/hacking articles use domain-specific language that inflates emotional intensity; the scorer reduces intensity for articles matching security topic patterns
+
+### `framing.py`
+- Eight framing device types: guilt by association, anonymous authority, catastrophizing, false balance, selective omission signal, emotional appeal, loaded language, power asymmetry
+- Attribution verb analysis: neutral ("said"), undermining ("claimed"), concessive ("admitted"), adversarial ("warned")
+- **Workplace coercion/revolt language detection**: Terms like "no opt-out," "revolt," "nihilistic," "training their own replacements" detected as loaded language specific to labor/workplace framing
+- **Investment-near-layoffs juxtaposition detection**: Pattern where large spending figures ($X billion) appear near workforce cuts, an editorial device implying corporate indifference
+
+### `sources.py`
+- **Source extraction**: Named and anonymous source detection with stop-word filtering (prevents false extractions like "After Meta said" → source "After Meta")
+- **Appositive source extraction**: Handles "Name, Title at Company, said" patterns
+- **Source authority grading**: Primary (SEC, court records) > Secondary (Reuters, AP) > Tertiary (blogs, social media)
+- **Source stance analysis**: Classifies each source as adversarial, supportive, or neutral based on quote content + attribution verbs. Computes `stance_balance` from −1.0 (all adversarial) to +1.0 (all supportive)
+- **Outsourced intensity detection**: Splits text into quoted vs. editorial prose, measures emotional intensity in each. High outsourced ratio (>0.5) means the journalist delegates emotional impact to sources while maintaining measured prose — a sophisticated editorial technique that defeats lexical sentiment analysis
+- **Power asymmetry framing detection**: Dollar-magnitude near individual vulnerability, "army of lawyers" language, David vs Goliath constructions, fine-per-violation-could-bankrupt patterns
+
+### `topics.py`
+- TF-IDF weighted keyword classification into 10 topic buckets
+- Multi-label (top 3 by confidence retained)
+- Topics: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, financial_results, product_launch, executive_behavior, litigation
+
+## Careers Layer — Module Detail
+
+### `models.py`
+Data classes for the Editorial Histories subsystem:
+- `CareerEvent`: A single position (publication, role, beat, dates, notes)
+- `JournalistProfile`: Full career with events, computed properties (current outlet, migrations, publications worked at, career span)
+- `Migration`: Movement between two publications with gap analysis and type classification (lateral, promotion, move)
+- `LeadershipChange`: Editorial leadership transition at a publication (position, incoming/outgoing, date, notes)
+
+### `tracker.py`
+- Loads career data from `profiles/careers/journalists.yaml`
+- Case-insensitive journalist lookup
+- Migration detection: scans career events for consecutive positions at different tracked publications
+- Filters by source/destination publication
+
+### `migrations.py` — `MigrationAnalyzer`
+- Implements the DiD framework from Card & Krueger (1994) adapted for editorial analysis
+- Configurable analysis window (default 180 days before/after)
+- Computes: DiD estimate, p-value, source-side raw change, destination-side raw change, journalist tone change, portable bias estimate
+- Huber-White robust standard errors
+
+### `editorial_leadership.py` — `LeadershipAnalyzer`
+- Loads leadership changes from `profiles/careers/editorial_changes.yaml`
+- Interrupted Time-Series (segmented regression): level shift (β₂) and slope change (β₃) when a new editor takes over
+- Tests statistical significance of both immediate and gradual effects
+
+### `influence.py` — `InfluenceScorer`
+- Two-way ANOVA bias decomposition: SS_institutional + SS_individual + SS_interaction
+- Portable Bias Score (0-1): 1 − |Cohen's d|/2 across publications
+- Requires ≥2 publications with ≥5 articles each
+- Confidence metric based on data volume
+
 ## Configuration
 
 All configuration flows through `config.py`:
 
 - **Publication profiles**: YAML files in `profiles/` directory
+- **Career data**: YAML files in `profiles/careers/` directory
+  - `journalists.yaml` — journalist career histories
+  - `editorial_changes.yaml` — leadership transitions
 - **Global config**: Environment variables or `mediascope.yaml` in working directory
 - **Database**: SQLite (default) or PostgreSQL via `MEDIASCOPE_DB_URL`
 
@@ -82,7 +239,9 @@ MediaScope uses SQLAlchemy with the following tables:
 |---|---|
 | `articles` | Ingested article text and metadata |
 | `entity_mentions` | Detected entity mentions per article |
-| `sentiment_scores` | 8-dimension sentiment scores per article |
+| `sentiment_scores` | 8-dimension sentiment scores per article (raw + corrected) |
+| `framing_results` | Detected framing devices per article |
+| `source_analyses` | Source authority, stance, and outsourced intensity per article |
 | `asymmetry_results` | Calculated asymmetry scores per period |
 | `conflict_records` | Mapped conflicts of interest |
 
@@ -126,6 +285,14 @@ from mediascope.quality.standards import BANNED_PHRASES
 BANNED_PHRASES.extend(["my_custom_banned_phrase"])
 ```
 
+### Custom Framing Devices
+
+Extend the framing detection by adding new device patterns. The framing detector uses regex patterns and keyword lists, so new devices can be added without changing the core logic.
+
+### Custom Source Stance Terms
+
+The source stance classifier uses configurable lists of negative and positive stance terms plus adversarial attribution verbs. Add domain-specific terms for specialized coverage areas (e.g., environmental, financial, defense).
+
 ## Dependencies
 
 ### Required
@@ -140,3 +307,83 @@ BANNED_PHRASES.extend(["my_custom_banned_phrase"])
 ### Optional
 - transformers + torch (GPU-accelerated sentiment analysis)
 - openai (GPT-4o-mini editorial tone analysis)
+
+## File Layout
+
+```
+mediascope/
+├── mediascope/
+│   ├── __init__.py
+│   ├── cli.py              # Click CLI with commands + careers subgroup
+│   ├── config.py            # Profile loading, env vars, paths
+│   ├── analyze/
+│   │   ├── entities.py      # Entity detection + clustering
+│   │   ├── sentiment.py     # 8-dim scoring + framing correction
+│   │   ├── framing.py       # Framing device detection
+│   │   ├── sources.py       # Source authority, stance, outsourced intensity
+│   │   └── topics.py        # Topic classification
+│   ├── careers/
+│   │   ├── models.py        # CareerEvent, JournalistProfile, Migration, etc.
+│   │   ├── tracker.py       # Career data loading + lookup
+│   │   ├── migrations.py    # DiD analysis
+│   │   ├── editorial_leadership.py  # ITS analysis
+│   │   └── influence.py     # Bias decomposition + portable bias
+│   ├── conflicts/
+│   │   ├── ownership.py     # Ownership chain parsing
+│   │   ├── revenue.py       # Revenue relationship mapping
+│   │   ├── litigation.py    # Litigation funding network
+│   │   └── disclosure.py    # Disclosure statement generation
+│   ├── ingest/
+│   │   ├── rss.py           # RSS feed fetching
+│   │   ├── scraper.py       # Full-text extraction
+│   │   └── archive.py       # Wayback Machine integration
+│   ├── quality/
+│   │   ├── standards.py     # AI slop detection, banned phrases
+│   │   ├── citations.py     # Citation density + source grading
+│   │   └── claims.py        # Claim-to-source mapping
+│   ├── report/
+│   │   ├── weekly.py        # Markdown report generation
+│   │   ├── dashboard.py     # HTML dashboard generation
+│   │   └── disclosure.py    # Disclosure re-export
+│   ├── score/
+│   │   ├── asymmetry.py     # Asymmetry Score formula
+│   │   ├── byline.py        # Per-journalist profiling
+│   │   └── statistical.py   # Welch's t, Cohen's d, bootstrap CI
+│   └── storage/
+│       ├── models.py        # SQLAlchemy table definitions
+│       └── db.py            # CRUD operations
+├── profiles/
+│   ├── _template.yaml
+│   ├── wired.yaml
+│   ├── nytimes.yaml
+│   ├── guardian.yaml
+│   ├── atlantic.yaml
+│   ├── mit-tech-review.yaml
+│   └── careers/
+│       ├── journalists.yaml
+│       └── editorial_changes.yaml
+├── docs/
+│   ├── METHODOLOGY.md
+│   ├── EDITORIAL_HISTORIES.md
+│   ├── AGENT_GUIDE.md
+│   ├── ADDING_PUBLICATIONS.md
+│   ├── QUALITY_STANDARDS.md
+│   └── ARCHITECTURE.md      # (this file)
+├── examples/
+│   ├── quick_start.py
+│   ├── full_pipeline.py
+│   ├── agent_integration.py
+│   └── sample_output/       # Annotated real-article analyses
+├── tests/
+│   ├── test_entities.py
+│   ├── test_sentiment.py
+│   ├── test_source_stance.py
+│   ├── test_nyt_article_improvements.py
+│   ├── test_asymmetry.py
+│   ├── test_careers.py
+│   └── fixtures/
+├── pyproject.toml
+├── requirements.txt
+├── iteration-log.md
+└── LICENSE
+```

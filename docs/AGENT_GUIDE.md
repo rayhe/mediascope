@@ -132,6 +132,87 @@ mediascope status
 
 **Output**: Article counts, last ingest dates, analysis coverage.
 
+### `mediascope careers list`
+
+Lists all tracked journalists, their current outlets, roles, publication count, and migration count.
+
+```bash
+mediascope careers list
+```
+
+**Output**: Table of journalists with career metadata.
+
+### `mediascope careers show`
+
+Shows a journalist's full career timeline with all positions, migrations, and beat changes.
+
+```bash
+mediascope careers show "Karen Hao"
+```
+
+**Input**: Journalist name (case-insensitive)
+**Output**: Career timeline table + detected migration events
+
+### `mediascope careers migrations`
+
+Lists all detected migration events between tracked publications.
+
+```bash
+# All migrations
+mediascope careers migrations
+
+# Filter by source publication
+mediascope careers migrations --from-pub mit-tech-review
+
+# Filter by destination
+mediascope careers migrations --to-pub wired
+```
+
+**Input**: Optional `--from-pub` and `--to-pub` filters
+**Output**: Table of journalist moves with dates, gap days, and type (lateral/promotion/move)
+
+### `mediascope careers leadership`
+
+Shows editorial leadership changes at a publication.
+
+```bash
+mediascope careers leadership wired
+```
+
+**Input**: Publication slug
+**Output**: Table of leadership transitions with dates, positions, incoming/outgoing names
+
+### `mediascope careers diff`
+
+Runs difference-in-differences (DiD) causal analysis on a journalist's migration.
+
+```bash
+# Default 180-day window
+mediascope careers diff "Karen Hao"
+
+# Custom window, filtered to Meta coverage
+mediascope careers diff "Karen Hao" --window 365 --target Meta
+
+# Save results to JSON
+mediascope careers diff "Karen Hao" -o results.json
+```
+
+**Input**: Journalist name, optional `--window` (days), `--target` (entity filter), `--output` (JSON file)
+**Output**: DiD estimate with p-value, source/dest raw changes, journalist tone delta, portable bias estimate, article counts
+**Prerequisites**: Articles must be ingested and analysed for the relevant publications
+
+### `mediascope careers analyze`
+
+Runs bias decomposition (two-way ANOVA) for a journalist with multi-publication coverage.
+
+```bash
+mediascope careers analyze "Karen Hao"
+mediascope careers analyze "Karen Hao" -o decomposition.json
+```
+
+**Input**: Journalist name (requires ≥2 publications with ≥5 analysed articles each)
+**Output**: Institutional/individual/interaction variance components, portable bias score (0-1), dominant source of bias, confidence metric
+
 ## Python API
 
 For agents that prefer direct Python integration over CLI:
@@ -143,7 +224,7 @@ from mediascope.ingest.scraper import extract_article
 from mediascope.analyze.entities import detect_entities, get_primary_entity
 from mediascope.analyze.sentiment import analyze_composite
 from mediascope.analyze.framing import detect_framing_devices
-from mediascope.analyze.sources import extract_sources
+from mediascope.analyze.sources import extract_sources, analyze_source_stance, measure_outsourced_intensity, detect_power_asymmetry
 from mediascope.score.asymmetry import calculate_asymmetry
 from mediascope.score.byline import build_journalist_profiles
 from mediascope.conflicts.ownership import parse_ownership_chain, find_conflicts
@@ -152,6 +233,10 @@ from mediascope.quality.standards import check_quality
 from mediascope.quality.citations import extract_citations, grade_source
 from mediascope.report.weekly import generate_weekly_report
 from mediascope.storage.db import init_db, store_article
+from mediascope.careers.tracker import CareerTracker
+from mediascope.careers.migrations import MigrationAnalyzer
+from mediascope.careers.editorial_leadership import LeadershipAnalyzer
+from mediascope.careers.influence import InfluenceScorer
 ```
 
 ### Full Pipeline Example
@@ -278,6 +363,84 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
 }
 ```
 
+### careers_diff
+
+```json
+{
+    "name": "careers_diff",
+    "description": "Run difference-in-differences causal analysis on a journalist's migration between publications",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "journalist_name": {
+                "type": "string",
+                "description": "Full journalist name (case-insensitive)"
+            },
+            "window_days": {
+                "type": "integer",
+                "default": 180,
+                "description": "Analysis window in days before/after migration"
+            },
+            "target_entity": {
+                "type": "string",
+                "description": "Optional: entity to filter articles by (e.g. 'Meta')"
+            }
+        },
+        "required": ["journalist_name"]
+    }
+}
+```
+
+### careers_analyze
+
+```json
+{
+    "name": "careers_analyze",
+    "description": "Run bias decomposition (two-way ANOVA) for a journalist with multi-publication coverage",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "journalist_name": {
+                "type": "string",
+                "description": "Full journalist name (case-insensitive). Requires coverage at ≥2 publications."
+            }
+        },
+        "required": ["journalist_name"]
+    }
+}
+```
+
+### careers_list
+
+```json
+{
+    "name": "careers_list",
+    "description": "List all tracked journalists with current outlets, roles, publication count, and migration count"
+}
+```
+
+### careers_migrations
+
+```json
+{
+    "name": "careers_migrations",
+    "description": "List all detected journalist migration events between tracked publications",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "from_pub": {
+                "type": "string",
+                "description": "Filter by source publication slug"
+            },
+            "to_pub": {
+                "type": "string",
+                "description": "Filter by destination publication slug"
+            }
+        }
+    }
+}
+```
+
 ## Sample Agent Prompts
 
 ### For a general-purpose AI agent
@@ -292,6 +455,12 @@ asks about media coverage, bias, or conflicts of interest:
 4. Use `mediascope score --publication <slug> --target <entity>` for statistics
 5. Use `mediascope disclose --publication <slug> --target <entity>` for disclosures
 
+For journalist-level causal analysis:
+6. Use `mediascope careers list` to see tracked journalists
+7. Use `mediascope careers migrations` to find personnel changes between publications
+8. Use `mediascope careers diff "<name>"` for difference-in-differences analysis
+9. Use `mediascope careers analyze "<name>"` for bias decomposition
+
 Always include the methodology link and limitations in your response.
 ```
 
@@ -302,12 +471,15 @@ You are a media accountability researcher using MediaScope. Your workflow:
 
 1. Identify the publication and target entity
 2. Ingest 90 days of articles
-3. Run full analysis pipeline
+3. Run full analysis pipeline (entities, sentiment, framing, source stance)
 4. Check quality standards on your output
 5. Generate disclosure statements
-6. Write a report with counterarguments and limitations
+6. Check if any journalist migrations are relevant (careers diff)
+7. Write a report with counterarguments and limitations
 
 Never claim causation from correlation. Always state what you cannot prove.
+The DiD careers analysis is the only path to causal claims — and even then,
+state the parallel trends assumption and sample size limitations.
 ```
 
 ## Input/Output Formats
@@ -360,6 +532,68 @@ Never claim causation from correlation. Always state what you cannot prove.
     "confidence_interval_lower": -0.427,
     "confidence_interval_upper": -0.139,
     "is_significant": true
+}
+```
+
+### Source Stance Output (JSON)
+
+```json
+{
+    "sources": [
+        {
+            "name": "Sarah Miller",
+            "role": "privacy researcher at Stanford",
+            "stance": "adversarial",
+            "quote_excerpt": "This is reckless disregard for user safety...",
+            "attribution_verb": "warned"
+        },
+        {
+            "name": "Meta spokesperson",
+            "role": "company representative",
+            "stance": "supportive",
+            "quote_excerpt": "We take user privacy seriously...",
+            "attribution_verb": "said"
+        }
+    ],
+    "stance_balance": -0.33,
+    "adversarial_count": 4,
+    "supportive_count": 2,
+    "neutral_count": 1,
+    "outsourced_intensity": {
+        "outsourced_ratio": 0.72,
+        "editorial_intensity": 0.15,
+        "quoted_intensity": 0.54,
+        "editorial_word_count": 890,
+        "quoted_word_count": 340
+    },
+    "power_asymmetry": {
+        "detected": true,
+        "patterns": ["financial_magnitude_near_individual", "fine_per_violation"]
+    }
+}
+```
+
+### DiD Analysis Output (JSON)
+
+```json
+{
+    "journalist_name": "Karen Hao",
+    "migration": {
+        "from_publication": "mit-tech-review",
+        "to_publication": "atlantic",
+        "departure_date": "2022-04",
+        "arrival_date": "2022-06"
+    },
+    "did_estimate": -0.187,
+    "did_p_value": 0.023,
+    "did_is_significant": true,
+    "source_raw_change": -0.092,
+    "dest_raw_change": -0.041,
+    "journalist_tone_change": -0.033,
+    "portable_bias_estimate": 0.82,
+    "n_articles_pre": 23,
+    "n_articles_post": 18,
+    "window_days": 180
 }
 ```
 
