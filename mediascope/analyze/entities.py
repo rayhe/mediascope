@@ -43,8 +43,13 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Meta's smart glasses", "Meta's Ray-Ban",
             "Chris Cox", "Maher Saba", "Meta Superintelligence Labs",
             "Applied AI", "Cambridge Analytica",
+            "Model Capability Initiative", "MCI",
+            "Agent Transformation Accelerator", "ATA",
+            "Stephane Kasriel", "Kasriel",
+            "Tracy Clayton", "Dave Arnold", "Andy Stone",
+            "NameTag",
         ],
-        "regex": r"(?<!\w)(Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport))|Meta Platforms|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|Meta AI|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Meta Superintelligence Labs|Applied AI|Cambridge Analytica)(?!\w)",
+        "regex": r"(?<!\w)(Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport))|Meta Platforms|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|Meta AI|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Meta Superintelligence Labs|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag)(?!\w)",
     },
     "Google": {
         "aliases": [
@@ -77,13 +82,13 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
     "OpenAI": {
         "aliases": [
             "OpenAI", "Sam Altman", "ChatGPT", "GPT-4", "GPT-5",
-            "DALL-E", "Sora", "GPT-4o",
+            "DALL-E", "Sora", "GPT-4o", "Stargate",
         ],
     },
     "X/Twitter": {
         "aliases": [
             "Twitter", "X Corp", "Elon Musk", "Musk", "SpaceX", "Tesla",
-            "xAI", "Grok", "Starlink", "Neuralink",
+            "xAI", "Grok", "Starlink", "Neuralink", "Colossus", "Colossus II",
         ],
     },
     "Palantir": {
@@ -117,6 +122,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "ACLU", "American Civil Liberties Union",
             "Access Now", "Fight for the Future",
             "Electronic Privacy Information Center", "EPIC",
+            "NOYB", "Irish Council for Civil Liberties", "ICCL",
         ],
     },
     "Media/Publications": {
@@ -193,6 +199,13 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
     "EssilorLuxottica": {
         "aliases": [
             "EssilorLuxottica", "Essilor", "Luxottica",
+        ],
+    },
+    "EU Regulatory": {
+        "aliases": [
+            "GDPR", "General Data Protection Regulation",
+            "DPC", "Data Protection Commission",
+            "European Commission", "EU Commission",
         ],
     },
 }

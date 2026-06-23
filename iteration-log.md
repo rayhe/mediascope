@@ -645,3 +645,41 @@ The toolkit scored overall_tone +0.61 on a clearly adversarial (-0.65 manual) ar
 - Cascade PBS, Authors Guild — Reisner Books3 investigation impact
 - The Brief (thebrief.news) — Reisner YouTube AI training data investigation
 - Agility PR Solutions — Cushing/Lorenz 2018 hires
+
+---
+
+## 2026-06-23 10:00 PT — Hour Type A (Article Deep Dive)
+
+### Article: The Atlantic — "Inside the Dirty, Dystopian World of AI Data Centers"
+- **Author:** Matteo Wong
+- **Published:** March 13, 2026 (April 2026 issue)
+- **URL:** https://www.theatlantic.com/technology/archive/2026/03/ai-data-center-energy-water-environmental-impact/681930/
+- **Archived:** https://web.archive.org/web/2026/https://www.theatlantic.com/technology/archive/2026/03/ai-data-center-energy-water-environmental-impact/681930/
+- **Length:** ~4,200 words
+
+### Manual Analysis Summary
+- **Overall tone:** -0.40 (moderately negative, sustained rather than inflammatory)
+- **Per-entity tone:** Meta -0.55, Google -0.40, Microsoft -0.35, OpenAI/Stargate -0.50, X/Colossus -0.30, Amazon -0.25
+- **Framing devices:** 12 total — 6 loaded_language, 3 scale_metaphor, 2 environmental_justice, 1 dystopian_imagery
+- **Source analysis:** 0 anonymous sources; sources lean critical (environmental advocates, affected residents, academics) with minimal industry rebuttal
+- **Conflict disclosure:** OpenAI licensing deal disclosed inline ("The Atlantic has a business relationship with OpenAI"). Emerson Collective ownership ($1B+ AI investments including Mistral, Apple $16B stake) NOT disclosed. Apple partnership on Siri/Gemini NOT disclosed despite Apple being a data center builder discussed in article.
+
+### Code Changes
+1. **Entity alias expansion (`mediascope/analyze/entities.py`):**
+   - Added "Stargate" to OpenAI cluster — Stargate is the $500B OpenAI/SoftBank/Oracle data center joint venture prominently discussed in the article. Without this alias, mentions of "the Stargate Project" and "Stargate data centers" would miss the OpenAI attribution.
+   - Added "Colossus", "Colossus II" to X/Twitter cluster — Colossus is xAI's Memphis data center (100K Nvidia GPUs), described in the article as consuming as much power as a medium-sized US city. Without these aliases, Colossus references would not roll up to the X/Twitter entity.
+
+2. **README sample output gallery:** Added Atlantic article entry with tone score, framing device breakdown, source count, and conflict disclosure note.
+
+### Toolkit Improvement Recommendations (documented in analysis, not implemented this hour)
+- Priority 2: Per-entity tone scoring module (current toolkit computes document-level only)
+- Priority 3: Environmental justice frame detector (water stress, emissions rebound, NEPA exemptions)
+- Priority 4: Conflict disclosure completeness tracker (disclosed vs. undisclosed per entity)
+- Priority 5: Scale metaphor extraction ("enough power to run X," "equivalent to Y homes")
+
+### Test Results
+- 143/143 passing (was 134 last checked; additional tests from prior iterations)
+
+### Files
+- `examples/sample_output/atlantic_ai_data_centers_dirty_dystopian_2026_03_article.txt`
+- `examples/sample_output/atlantic_ai_data_centers_dirty_dystopian_2026_03_analysis.md`

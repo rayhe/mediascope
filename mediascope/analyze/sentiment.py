@@ -790,7 +790,10 @@ def _compute_framing_correction(
        framed passively / as target of scrutiny)
 
     When the raw composite is already negative, VADER got the direction
-    right and no correction is applied.
+    right.  However, if the framing signal is strong (many adversarial
+    devices + strongly negative agency), the raw score may understate the
+    true negativity.  In that case, a lighter *amplification* blend
+    nudges the score toward the framing estimate without fully overriding.
 
     Returns:
         (corrected_tone, was_corrected) — the tone and whether the
@@ -800,33 +803,46 @@ def _compute_framing_correction(
         framing_summary.get(dt, 0) for dt in _ADVERSARIAL_DEVICE_TYPES
     )
 
-    # Guard: only correct when raw is non-negative AND framing is adversarial
+    # --- Path A: Full correction (raw non-negative, VADER got it wrong) ---
+    if (
+        raw_tone >= 0
+        and adversarial_count >= _FRAMING_MIN_ADVERSARIAL_DEVICES
+        and agency < _FRAMING_MAX_AGENCY
+    ):
+        # Compute framing-derived tone estimate
+        base = agency
+        amplified = base * (0.6 + 0.4 * emotional_intensity)
+        density_factor = min(adversarial_count / 8.0, 1.0)
+        framing_tone = amplified * (0.7 + 0.3 * density_factor)
+        framing_tone = max(-1.0, min(0.0, framing_tone))
+        corrected = 0.10 * raw_tone + 0.90 * framing_tone
+        corrected = max(-1.0, min(1.0, round(corrected, 4)))
+        return corrected, True
+
+    # --- Path B: Amplification (raw negative but understated) ---
+    # When VADER gets direction right but framing signals indicate
+    # the article is more adversarial than the lexical score reflects.
+    # Uses a lighter blend (50/50) to nudge toward framing estimate
+    # without fully overriding the lexical signal.
+    _AMPLIFICATION_MIN_DEVICES = 6  # higher threshold than full correction
     if (
         raw_tone < 0
-        or adversarial_count < _FRAMING_MIN_ADVERSARIAL_DEVICES
-        or agency >= _FRAMING_MAX_AGENCY
+        and raw_tone > -0.5  # only amplify mildly-negative scores
+        and adversarial_count >= _AMPLIFICATION_MIN_DEVICES
+        and agency < _FRAMING_MAX_AGENCY
     ):
-        return raw_tone, False
+        base = agency
+        amplified = base * (0.6 + 0.4 * emotional_intensity)
+        density_factor = min(adversarial_count / 8.0, 1.0)
+        framing_tone = amplified * (0.7 + 0.3 * density_factor)
+        framing_tone = max(-1.0, min(0.0, framing_tone))
+        # Lighter blend: 50% raw, 50% framing estimate
+        corrected = 0.50 * raw_tone + 0.50 * framing_tone
+        corrected = max(-1.0, min(1.0, round(corrected, 4)))
+        return corrected, True
 
-    # --- Compute framing-derived tone estimate ---
-    # Base: agency score captures how the subject is portrayed
-    # (-1.0 = fully passive/scrutinised, 0.0 = neutral)
-    base = agency  # -1.0 to ~-0.3
-
-    # Amplify by emotional intensity (higher emotional charge = stronger
-    # adversarial framing even when VADER reads it as "positive")
-    amplified = base * (0.6 + 0.4 * emotional_intensity)
-
-    # Amplify by adversarial device density (more devices = stronger signal)
-    density_factor = min(adversarial_count / 8.0, 1.0)
-    framing_tone = amplified * (0.7 + 0.3 * density_factor)
-    framing_tone = max(-1.0, min(0.0, framing_tone))
-
-    # --- Blend: heavily trust framing, lightly retain raw ---
-    # When framing correction fires, raw_tone is positive but wrong.
-    # Give 90% weight to framing estimate, 10% to raw (to avoid
-    # complete signal loss from the lexical models).
-    corrected = 0.10 * raw_tone + 0.90 * framing_tone
+    # --- No correction needed ---
+    return raw_tone, False
     corrected = max(-1.0, min(1.0, round(corrected, 4)))
 
     return corrected, True

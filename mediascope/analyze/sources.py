@@ -896,6 +896,18 @@ def analyze_source_stance(
                         ):
                             is_spokesperson = True
                             break
+                    # Possessive pattern: "[Name], [Org]'s [title]"
+                    # e.g. "Andy Stone, Meta's vice president of communications"
+                    if not is_spokesperson:
+                        for title in _SPOX_TITLES:
+                            # Match "[name], <any org>'s [title]"
+                            poss_pattern = re.compile(
+                                rf"{re.escape(last_name)},\s+\w+[''']s\s+{re.escape(title)}",
+                                re.IGNORECASE,
+                            )
+                            if poss_pattern.search(ft_lower):
+                                is_spokesperson = True
+                                break
 
         if is_spokesperson and neg_count < 3:
             # Spokesperson classified as supportive unless overwhelmingly

@@ -306,6 +306,7 @@ The `examples/sample_output/` directory contains annotated analyses of real arti
 
 | File | Article | Key Findings |
 |---|---|---|
+| `atlantic_ai_data_centers_dirty_dystopian_2026_03_*` | Atlantic: "Inside the Dirty, Dystopian World of AI Data Centers" | Tone: -0.40 manual. 12 framing devices (6 loaded_language + 3 scale_metaphor + 2 environmental_justice + 1 dystopian_imagery). 0 anonymous sources. OpenAI partnership disclosed in-text; Emerson Collective/Apple conflicts undisclosed. First Atlantic example — Matteo Wong byline. |
 | `guardian_meta_whistleblower_hay_festival_2026_06_01_*` | Guardian: Meta silences Facebook whistleblower at Hay Festival | Tone: -0.45 manual/-0.57 toolkit, 20 framing devices (15 loaded_language + 4 emotional_appeal + 1 timeline_implication), 0 anonymous sources, 100% anti-Meta source deployment. First Guardian example — control case for editorial bias without financial conflicts. |
 | `mit_tr_anduril_meta_smart_glasses_warfare_2026_05_18_*` | MIT TR: Inside Anduril and Meta's Quest to Make Smart Glasses for Warfare | Tone: -0.10 manual/+0.64 toolkit (VADER positive bias persists). 0 anonymous sources, 2 expert sources. Microsoft IVAS $22B failure used as implicit risk frame. Military/weapons vocabulary with editorial restraint — demonstrates the limits of lexical sentiment on defense-tech reporting. First MIT TR example. |
 | `wired_meta_nametag_facial_recognition_2026_06_05_*` | Wired: Meta "NameTag" facial recognition investigation | Tone: -0.65, 8+ framing devices, critical VADER positive-bias gap identified |
