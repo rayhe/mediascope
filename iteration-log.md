@@ -4,6 +4,51 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-22 21:00 PT — Hour Type D: Toolkit Quality & Documentation Overhaul
+
+**Focus:** Systematic audit of all 6 documentation files against the actual codebase. Found 5 issues across 4 files — stale content, missing modules, broken numbering, and absent CLI documentation for the careers subsystem.
+
+### What was improved:
+
+1. **ARCHITECTURE.md — Complete rewrite (+251 lines):**
+   - **careers/ module documented:** All 5 files (models.py, tracker.py, migrations.py, editorial_leadership.py, influence.py) with detailed descriptions of data models, algorithms, and API
+   - **sources.py analysis layer expanded:** Source stance analysis, outsourced intensity detection, and power asymmetry framing now documented with module-level detail
+   - **New: Sentiment Correction Pipeline diagram:** Shows the multi-layer flow from raw VADER/TextBlob scores → framing device detection → active-negative agency check → framing-aware tone correction → corrected composite score. Documents the specific failure mode this solves (VADER positive-bias on measured editorial prose)
+   - **New: Editorial Histories Pipeline diagram:** Career Tracker → Migration Detection → Source-Side DiD / Portable Bias / Dest-Side DiD → Bias Decomposition / Leadership ITS
+   - **New: Analyze Layer Module Detail section:** Every module in `mediascope/analyze/` documented with features including active-negative agency detection, security context adjustment, appositive source extraction, source stop-word filtering, workplace coercion language, investment-near-layoffs juxtaposition
+   - **New: Careers Layer Module Detail section:** All 5 careers modules documented with algorithms (DiD + Huber-White robust SEs, ITS segmented regression, two-way ANOVA decomposition, portable bias scoring)
+   - **New: Complete File Layout tree:** Actual filesystem structure reflecting all modules, profiles (including careers/), docs, examples, and tests
+   - **New: Extension Points:** Custom framing devices and custom source stance terms sections
+   - **Configuration section expanded:** Added career data YAML paths (journalists.yaml, editorial_changes.yaml)
+   - **Storage tables updated:** Added framing_results, source_analyses tables; noted raw+corrected sentiment scores
+
+2. **METHODOLOGY.md — Section numbering fix (9 edits):**
+   - §8 "Quality Control" subsections were numbered 6.1/6.2 → corrected to 8.1/8.2
+   - §11 "Causal Identification Through Journalist Migration Analysis" subsections were numbered 9.1-9.7 → corrected to 11.1-11.7
+   - Root cause: sections were added incrementally across multiple iterations without renumbering. §§6-7 (Source Stance Analysis, Outsourced Intensity) were inserted before what was originally §6 Quality Control, pushing it to §8 without updating its internal numbering
+
+3. **README.md — Two updates:**
+   - **Guardian reclassification:** Publication profiles table updated from "Control case" / "Pure editorial bias, no financial conflicts" → "Partial control" / "OpenAI + ProRata licensing deals, but no equity in specific competitors. Closest to baseline in the 5-pub set (pre-Feb 2025 coverage cleaner)." This aligns the README with the Type C iteration that discovered the OpenAI licensing deal and reclassified the Guardian
+   - **Sample output gallery:** Added MIT TR Anduril article entry (Tone: -0.10 manual/+0.64 toolkit, VADER positive-bias failure mode, 0 anonymous sources, Microsoft IVAS $22B comparison frame). The article + analysis pair existed on disk since the earlier analysis but was not listed in the gallery
+
+4. **AGENT_GUIDE.md — Careers CLI documentation (+240 lines):**
+   - **6 new CLI command docs:** `mediascope careers list`, `show`, `migrations`, `leadership`, `diff`, `analyze` — each with syntax, input/output descriptions, and usage examples including option flags
+   - **4 new function calling schemas:** `careers_diff` (journalist_name, window_days, target_entity), `careers_analyze` (journalist_name), `careers_list`, `careers_migrations` (from_pub, to_pub) — JSON schemas matching the existing OpenAI/Anthropic format used for analyze_publication and generate_disclosure
+   - **Python API imports expanded:** Added `analyze_source_stance`, `measure_outsourced_intensity`, `detect_power_asymmetry` from sources.py; added `CareerTracker`, `MigrationAnalyzer`, `LeadershipAnalyzer`, `InfluenceScorer` from careers/
+   - **2 new JSON output format examples:** Source stance output (stance_balance, outsourced_intensity, power_asymmetry) and DiD analysis output (did_estimate, p-value, portable_bias_estimate)
+   - **Agent prompts updated:** General-purpose prompt expanded with 4 careers workflow steps; research agent prompt updated to mention framing correction, source stance analysis, and DiD caveats
+
+### Also committed (from prior Type C iteration that failed to push):
+- Guardian profile expansion: Scott Trust board (14 members), STEL board (7), FY2024-25/2023-24 financials, OpenAI/ProRata deals, GMG Ventures/Mercuri, SPUR coalition, 4 ownership changes, 5 editorial changes entries
+
+### Tests: 134/134 passing
+
+### Commits:
+- `3e8a03d` — Type C: Guardian ownership deep dive (previously uncommitted)
+- `dc2078e` — Type D: Documentation overhaul (this iteration)
+
+---
+
 ## 2026-06-22 20:00 PT — Hour Type C: Guardian Ownership & Funding Deep Dive
 
 **Focus:** Complete structural mapping of The Guardian's ownership chain, governance boards, financial data, AI licensing deals, venture capital arm, and industry coalition memberships. Critical reappraisal of Guardian's role as "control case" in the MediaScope framework.
