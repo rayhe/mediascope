@@ -58,6 +58,30 @@ editorial_changes:
       date: "2022-06"
       notes: "Lacey became managing editor when Kahn was promoted."
 
+    - position: "technology_editor"
+      incoming: "Pui-Wing Tam"
+      date: "2015-01"
+      source_url: "https://nytco.com/press/pui-wing-tam-named-deputy-business-editor/"
+      notes: "Tam joined from Bloomberg (US tech coverage chief 2013-2015). Previously WSJ reporter/editor — HP hired PIs to surveil her phone/text records and trash in 2006. Promoted to deputy Business editor (2018). Built NYT's tech team — recruiters love her. Responsible for hiring Mike Isaac, Sheera Frenkel, Kashmir Hill, Karen Weise, Nico Grant, Tripp Mickle, and most of the SF tech bureau. 'The strength of our tech team is largely a testament to her.'"
+
+    - position: "editorial_director_ai"
+      incoming: "Zach Seward"
+      date: "2024-02"
+      source_url: "https://wan-ifra.org/insight/divining-data-how-ai-invigorates-the-new-york-times-approach-to-investigative-reporting/"
+      notes: "First editorial director of AI initiatives. Co-founded Quartz. Built Echo (AI summarization), Stet (AI quality evaluation), Cheat Sheet (AI investigations tool). Pro-AI-for-journalism within strict editorial guardrails."
+
+    - position: "technology_reporter_meta"
+      incoming: "Eli Tan"
+      date: "2026-01"
+      source_url: "https://nytco.com/press/staff-news-from-business/"
+      notes: "Second dedicated Meta reporter alongside Mike Isaac. Promoted from NYT fellowship. Signals NYT's continued investment in Meta beat coverage."
+
+    - position: "technology_reporter_google"
+      outgoing: "Nico Grant"
+      date: "2025-05"
+      source_url: "https://talkingbiznews.com/they-move/ny-times-biz-reporter-grant-departs/"
+      notes: "DEPARTURE: Grant left journalism entirely after 3 years covering Google/Alphabet. 'Working there was a dream come true, but now, it's time to chase other dreams outside of journalism.' Creates gap on NYT's Google beat."
+
   guardian:
     - position: "eic"
       outgoing: "Alan Rusbridger"

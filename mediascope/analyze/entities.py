@@ -208,6 +208,16 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "European Commission", "EU Commission",
         ],
     },
+    "VR/Metaverse": {
+        "aliases": [
+            "Horizon Worlds", "Horizon", "Quest", "Meta Quest",
+            "Quest 3S", "Quest 3", "Quest Pro",
+            "VRChat", "metaverse",
+            "Reality Labs",
+        ],
+        "regex": r"(?<!\w)(Horizon Worlds|Horizon(?:\s+(?:Spaces|Central|Unity))|"
+                 r"(?:Meta\s+)?Quest(?:\s+(?:3S?|Pro))?|VRChat|metaverse|Reality Labs)(?!\w)",
+    },
 }
 
 

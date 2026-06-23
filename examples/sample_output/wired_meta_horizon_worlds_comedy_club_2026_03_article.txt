@@ -1,0 +1,90 @@
+SOURCE: Wired
+URL: https://www.wired.com/story/the-last-comedy-club-at-the-end-of-the-metaverse/
+TITLE: The Comedy Club at the End of the Metaverse
+AUTHOR: Boone Ashworth
+DATE: ~March 25, 2026 (archived March 25, 2026)
+RECONSTRUCTED FROM: web.archive.org cached copy of wired.com article
+
+---
+
+It's Sunday, and I'm onstage at the Soapstone Comedy Club in the metaverse. My VR avatar is clad in a black suit, tie, sunglasses, and an unfortunate fedora I've selected from the pool of free clothes for your virtual dolls in Meta's Horizon Worlds. After the show, a guy whose username is Large Phenis pops up in the bar next to me. "Hey there, Blues Brothers," he cackles—tough crowd.
+
+Soapstone's adults-only digital comedy club has been around since nearly the beginning of Meta's Horizon Worlds. It has hosted more than 5,000 events, from improv and stand-up to trivia nights and open-mic singing. It's had partnerships with famous comedians like Natasha Leggero, Ron Funches, and Pete Holmes. It has also served as a hub for ragtag regulars who seem to really like the place.
+
+Last week, Meta announced it would shut down Horizon Worlds in VR to focus on its mobile version; it pivoted the next day after community blowback to keep it running indefinitely. Now, the service is on life support. Come June 15, Meta plans to cut creation features in VR and stop allowing users to build updates or new content on the platform—no more new worlds or seasonal updates, except on mobile.
+
+"Soapstone is a world built by a third-party creator and is currently available as both a mobile world and a VR world," wrote a Meta representative in an email to WIRED. "The VR version was built on Horizon Unity Runtime (HUR), and all HUR worlds will live in VR for the foreseeable future as our CTO, Andrew Bosworth, said in his AMA."
+
+For the past year and a half, Soapstone user Miss Del Rey has hosted these Sunday improv shows. She is from Sweden, and her avatar sports bright red hair, a red dress and cap, and knee-high gold boots.
+
+"It came as a shock that they were shutting this down so soon," Miss Del Rey says about the initial VR news. "It's been this massive production, and now it's just disappearing."
+
+Soapstone is an adults-only digital comedy club in Meta's Horizon Worlds.
+
+At the first Soapstone Sunday improv show since Meta's shutdown whiplash, folks here to joke around with their brightly colored avatars aren't sure what comes next. Soapstone says it will continue into the mobile era, but it's not clear whether the users will follow.
+
+"People are just terrified of the uncertainty," Del Rey says. "This might not be profitable to do on VR, but I don't think Meta understands how important this place is to so many people. I don't know what my life would have been like today without Soapstone."
+
+For the next hour, Del Rey and her cohost Millsbertc run volunteers through classic improv games—pulling scenes from a hat or asking a group to tell a story one word at a time that quickly delves into debauchery. ("My anacondas are small and dirty," the group decides.)
+
+The show is about as silly and occasionally cringey as you'd expect a comedy open-mic night to be, but there's an extra sheen of uncanny weirdness that comes from being VR avatars who can't make eye contact. Sometimes the jokes don't land, are delayed by lag, or don't arrive at all because users are muted or have stepped away from their headsets.
+
+Still, everybody seems to be having a good time. And the show gets a good turnout. Nearly two dozen people show up throughout, which is a lot for one of these Horizon Spaces.
+
+It's not nearly enough to help Meta find much of a return on its roughly $80 billion investment into its Reality Labs division and Quest VR headsets, including the development of Horizon Worlds. An unmistakable tension permeates the night. The people here are anxious that this might all be going away, and they're not sure where they'll go next.
+
+"When they announced they were killing it for good, I just broke down in tears," Millsbertc says, the cohost with a blue-skinned avatar in a nice suit. Millsbertc has been performing at Soapstone regularly for the past 10 months. "This is my home."
+
+The Last Laugh
+
+After the show, avatars congregate at the virtual bar in the back or outside on a digital deck overlooking a skybox view of what appears to be a legally distinct version of New York City or Chicago.
+
+"I find I socialize more here than I do in real life," says a user named Strikerace.
+
+The main topic of socialization tonight seems to be the uncertainty about what Meta's moves mean for the future of Soapstone. Comedy in VR may not be exactly highbrow, but the spatial flexibility enables certain creative explorations that wouldn't work the same on mobile or desktop. Del Rey says she will stick with the platform as long as possible but is hesitant about the focus on mobile.
+
+"I don't feel as connected to the show as in VR," Del Rey says. "We do a bunch of comedy that would only work in VR, too. I once accidentally held a bagel for 15 minutes without noticing."
+
+On a nearby fountain sits a guy called Kitchen Knife. He wears an upside-down red colander as a hat. He says he doesn't mind the change to a mobile-first environment, which could come with quality-of-life improvements.
+
+"I'm all for it," Knife says. "There will be a lot of positive changes for the capabilities—the amount of people that can actually get in here, the world sizes in general."
+
+Knife's a volunteer who has been involved with Soapstone for four years. He sings at some events and helps out at others, answering questions or helping with technical issues. He says he is disabled and comes to Soapstone and other places in Horizon Worlds because these spaces are easier to access with limited mobility.
+
+"I've never felt that the headset was necessary," Knife says. "Most of us just use this as a social platform. You don't really need to have a headset on and all these little controllers for hours on end just to sit around the fire and talk to each other."
+
+Others feel more reluctant to move to mobile. VR's immersion is the whole appeal for many, and a mobile version of Horizon Worlds doesn't entice them at all.
+
+Millsbertc sought this outlet for comedy, as there were no real options for performing comedy anywhere nearby in the real world.
+
+"When I heard they were backtracking, I was like OK, our voices are being heard at least," Millsbertc says. "It's fine if I can still come here and hang out and stuff. I'm going to try to stay and support, because I trust this place. They welcomed me with open arms."
+
+Rickii, a Soapstone user who says she is 63 years old and lives in Montana, regularly pilots a purple-haired avatar across Horizon Worlds because it's a socializing opportunity. She likes singing onstage in Soapstone or gathering around a virtual bar called Gatsby's.
+
+After the Soapstone show, Rickii invites me to check out Gatsby's. We zap through a portal, and the new room appears, a warm, wooded space with trees beside a lake. Rickii greets me, both arms pointing at the fire pit where people are gathered.
+
+"This is where we have discussions about anything to everything," Rickii says.
+
+Over the top of her, one of the guys is shouting by the bonfire, "You think Jane Goodall's out there teaching 'em sign language and shit?"
+
+In the couple of hours we're there, around five different people are standing or sitting in virtual Adirondack chairs at the fire pit at a time. (By sitting, I mean their avatars are just clipped down to half height, sticking out of the chair from the waist up.) A few of these people are very clearly drunk in real life. One woman sits down and captures everyone's attention immediately, talking about lost love, assisted suicide in Colorado, and the death of her first son.
+
+Aside from the myriad horrors of real life that cannot be forgotten in the virtual realm, the other topic that keeps coming up is many users' reluctance to switch to mobile or try a different, often more intense service like VRChat.
+
+"It's a different culture in VRChat," a guy called Enzo says. "It's like the fuck-boy culture and the furry thing. There's some kind of opulence to it."
+
+"If you're going to VRChat, you have to have a buddy bring you there," someone else says. "They have to show you around, it's—it's a lot." (VRChat has its own offerings of comedy clubs like Unknown Theater and Failed to Render.)
+
+I spent the rest of that Sunday in the metaverse. Mostly in Soapstone and Gatsby's, but also I dip into a VR church, which is empty aside from one floating profile. MetDonald's, a world usually filled with very loud children throwing burger patties at one another, is eerily silent. Horizon Worlds is slowing down; it's not hard to see why Meta is pulling away.
+
+"You can come here even if you have a disability or social anxiety or depression," Del Rey says. "You can hang out with people even from your bed in your pajamas. And if you only have energy to go in and be social for 15 minutes, there's no barrier."
+
+I think about that as I run my virtual hands through the virtual water in the lake at Gatsby's, looking up at the virtual stars, listening to the faraway voices of real people hollering near the bonfire.
+
+Surely there is a version of this that people can get right. There could have been something to this. Something that lets humans connect, laugh, and have a space if they have nowhere else, without getting lost in the darkness. "This might be the only thing Meta has done that has been good for people's mental health," Del Rey said. "That's why people are just so devastated."
+
+I stare off into the distance. Rickii comes over to check on me. Both of us now stand waist-deep in the virtual water. She looks at me, arms stretched straight out in my direction.
+
+"You're not peeing yourself over there, are you?" she asks.
+
+I laugh. Then heave a sigh. Maybe I am, Rickii. Maybe I am.

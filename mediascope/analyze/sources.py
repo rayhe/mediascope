@@ -849,7 +849,7 @@ def analyze_source_stance(
             # These are neutral-to-positive — don't shift
             pass
 
-        # --- Spokesperson-by-role detection ---
+        # --- Spokesperson / Executive-by-role detection ---
         # Named spokesperson sources (e.g. "Meta spokesperson Tracy Clayton")
         # are inherently supportive of the entity they represent — that's
         # their job function.  Classify as supportive unless the quote
@@ -857,6 +857,14 @@ def analyze_source_stance(
         # This prevents PR/communications statements ("safeguards in place",
         # "data is not used for any other purpose") from being coded as
         # neutral when they are clearly defensive of the entity.
+        #
+        # C-suite executives (CTO, CEO, CFO, etc.) quoted defending or
+        # explaining their company's position are similarly supportive by
+        # role.  Their quotes often contain negative *domain* terms
+        # ("risk", "opt-out", "leak") that they are *denying* or
+        # *downplaying*, which tricks pure term-counting into adversarial.
+        # Treat them like spokespersons: supportive unless overwhelmingly
+        # adversarial (3+ negative terms = possible whistleblower/dissident).
         is_spokesperson = False
         if not source.is_anonymous:
             source_context = (source.name + " " + source.affiliation).lower()
@@ -872,20 +880,42 @@ def analyze_source_stance(
                 "director of communications",
                 "communications chief",
             )
+            _EXECUTIVE_TITLES = (
+                "chief executive officer", "chief technology officer",
+                "chief financial officer", "chief operating officer",
+                "chief product officer", "chief marketing officer",
+                "chief information officer", "chief legal officer",
+                "chief revenue officer", "chief strategy officer",
+                "chief people officer", "chief human resources officer",
+                "chief data officer", "chief science officer",
+                "chief ai officer",
+                "ceo", "cto", "cfo", "coo", "cpo", "cmo", "cio", "clo",
+                "president", "vice president", "senior vice president",
+                "executive vice president", "evp", "svp",
+                "vp of", "head of", "director of",
+                "general counsel", "managing director",
+            )
             is_spokesperson = any(
                 term in source_context or term in context_text
                 for term in _SPOX_TITLES
             )
+            # Check executive titles only if not already matched as spox
+            if not is_spokesperson:
+                is_spokesperson = any(
+                    term in source_context or term in context_text
+                    for term in _EXECUTIVE_TITLES
+                )
             # Also search full article text for "[title] ... [Name]" or
             # "[Name], a/the [title]" patterns — the affiliation field
-            # may not capture the spokesperson descriptor.
+            # may not capture the spokesperson/executive descriptor.
             if not is_spokesperson and full_text:
                 name_parts = source.name.strip().split()
                 last_name = name_parts[-1].lower() if name_parts else ""
                 full_name_lower = source.name.strip().lower()
                 if last_name:
                     ft_lower = full_text.lower()
-                    for title in _SPOX_TITLES:
+                    all_role_titles = _SPOX_TITLES + _EXECUTIVE_TITLES
+                    for title in all_role_titles:
                         # "[title] [FirstName] [LastName]" or "[title] [LastName]"
                         if (
                             f"{title} {full_name_lower}" in ft_lower
@@ -898,8 +928,9 @@ def analyze_source_stance(
                             break
                     # Possessive pattern: "[Name], [Org]'s [title]"
                     # e.g. "Andy Stone, Meta's vice president of communications"
+                    # e.g. "Andrew Bosworth, Meta's chief technology officer"
                     if not is_spokesperson:
-                        for title in _SPOX_TITLES:
+                        for title in all_role_titles:
                             # Match "[name], <any org>'s [title]"
                             poss_pattern = re.compile(
                                 rf"{re.escape(last_name)},\s+\w+[''']s\s+{re.escape(title)}",

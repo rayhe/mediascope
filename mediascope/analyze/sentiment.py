@@ -182,6 +182,30 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "backlash",
     "inconspicuous",
     "frictionless",
+    # Platform death / community displacement emotional terms — needed for
+    # coverage of platform shutdowns where editorial language frames corporate
+    # decisions as community destruction or abandonment
+    "devastated", "devastation", "devastating",
+    "on life support", "life support",
+    "eerily silent", "eerily", "eerie",
+    "abandoned", "abandoning", "abandonment",
+    "displaced", "displacement",
+    "shutdown whiplash", "whiplash",
+    "killed", "killing",
+    "broke down in tears", "broke down",
+    "going away", "disappearing",
+    "terrified", "terrifying",
+    "anxious", "anxiety",
+    "reluctance", "reluctant",
+    "hesitant",
+    # Vulnerability / accessibility emotional terms — disability, elderly,
+    # isolation, and mental health framing deployed to create sympathy
+    "disability", "disabled",
+    "limited mobility", "mobility",
+    "social anxiety", "depression",
+    "nowhere else", "no barrier",
+    "mental health",
+    "from your bed", "in your pajamas",
     # Cybersecurity / data-breach emotional terms — needed for security
     # reporting which uses domain-specific loaded language that reads as
     # neutral to VADER but carries strong negative editorial framing
@@ -241,6 +265,17 @@ PASSIVE_FRAMING: list[str] = [
     "were there even", "raises questions",
     "tricked", "was tricked", "can be tricked",
     "did not mention", "has not addressed",
+    # Platform death / corporate abandonment passive framing — editorial
+    # language positioning users as victims of corporate platform shutdowns,
+    # pivots, or community abandonments
+    "on life support", "just disappearing", "going away",
+    "shutting down", "shut down", "pulling away",
+    "killing it", "killed it",
+    "slowing down", "winding down",
+    "no more new", "no longer be able",
+    "nowhere else to go", "nowhere else",
+    "not sure where", "aren't sure what comes next",
+    "terrified of the uncertainty",
 ]
 
 ACTIVE_FRAMING: list[str] = [

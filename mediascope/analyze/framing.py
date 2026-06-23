@@ -187,6 +187,50 @@ _EMOTIONAL_APPEAL_PATTERNS: list[re.Pattern] = [
         r"vibes are (?:horrifically|historically|extremely) (?:low|bad|poor))\b",
         re.IGNORECASE,
     ),
+    # Vulnerability/accessibility framing — editorial deployment of disability,
+    # age, isolation, or mental health conditions to elicit sympathy for
+    # affected users/communities. Common in platform-shutdown and community-
+    # displacement coverage where vulnerable users are positioned as
+    # dependents losing essential services.
+    re.compile(
+        r"\b(?:disabled?|disability|limited mobility|wheelchair|"
+        r"social anxiety|depression|mental health|"
+        r"(?:\d{2,3}) years? old|elderly|"
+        r"isolated|lives? (?:alone|in (?:rural|remote))|"
+        r"from (?:your|their|her|his) bed|"
+        r"nowhere else (?:to go)?|no(?:where| )?(?:other|else)|"
+        r"no barrier|"
+        r"energy to go in|only (?:energy|strength) (?:to|for))\b",
+        re.IGNORECASE,
+    ),
+    # Platform death / community displacement — editorial language framing
+    # corporate platform shutdowns, pivots, or sunsets as destruction of
+    # human communities. Distinct from workplace revolt (employees) — this
+    # targets USER communities being abandoned by platform operators.
+    re.compile(
+        r"\b(?:on life support|"
+        r"(?:this|it) is my home|this is (?:our|their) home|"
+        r"just disappearing|"
+        r"(?:killing|shutting|winding|closing) (?:it|this|them) (?:down|for good)|"
+        r"all (?:be )?going away|might all be going away|"
+        r"(?:so )?devastated|"
+        r"broke(?:n)? down in tears|"
+        r"terrified of the uncertainty|"
+        r"don't (?:know|think).{0,30}what (?:my|our|their) life)\b",
+        re.IGNORECASE,
+    ),
+    # Desolation scene-setting — descriptive environmental emptiness deployed
+    # as indirect editorial argument for failure or abandonment. The writer
+    # describes empty spaces rather than making explicit claims.
+    re.compile(
+        r"\b(?:eerily (?:silent|quiet|empty|still|deserted)|"
+        r"empty aside from|"
+        r"(?:was|is|stood|sat) (?:completely |largely |mostly )?(?:empty|deserted|abandoned)|"
+        r"ghost town|ghostly|"
+        r"not a (?:soul|person|one) (?:in sight|around|there)|"
+        r"(?:tumbleweeds?|crickets?))\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _STRAW_MAN_PATTERNS: list[re.Pattern] = [

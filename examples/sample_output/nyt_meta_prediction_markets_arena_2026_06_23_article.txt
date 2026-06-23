@@ -1,0 +1,80 @@
+NYT Article Reconstruction: Meta / Prediction Markets / Arena App
+Date: 2026-06-23
+Publication: The New York Times
+Probable author: Mike Isaac (NYT Meta beat reporter) or Sheera Frenkel
+URL: https://www.nytimes.com (exact URL unconfirmed; blocked by policy)
+
+NOTE: Original NYT article is paywalled. This reconstruction is based on
+extensive quotation and cross-referencing across 5 secondary sources:
+Reuters, NY Post, IBD (Investor's Business Daily), Engadget, and CNN.
+All claims below are attributable to at least 2 independent secondary sources
+unless otherwise noted.
+
+---
+
+RECONSTRUCTED CONTENT (composite from secondary sources):
+
+Mark Zuckerberg recently directed a small team at Meta to build a
+smartphone app similar to Polymarket and Kalshi, according to the New York
+Times, citing two employees with knowledge of the matter.
+
+The app, internally referred to as "Arena," would function independently from
+Meta's social networking apps — Facebook, Instagram, WhatsApp, and Messenger.
+It is described as a "top priority" for Zuckerberg and Meta.
+
+The app is expected to rely on a video-game-like points system rather than
+users wagering real money, though Meta has not ruled out eventually
+incorporating real-money betting, according to one person familiar with the
+plans.
+
+Meta reportedly hopes to leverage its massive user base (3.5+ billion daily
+active users across its apps) to drive adoption of the new service.
+
+The effort is described as part of a broader push by Zuckerberg to identify
+emerging online behaviors and build new products around them, as growth on
+Meta's established platforms matures. Zuckerberg said in April that the
+company could leverage leaner teams and AI tools to create more products,
+after Meta announced layoffs of 10% of its staff.
+
+Arena is one of several experimental projects currently under development.
+Another initiative, dubbed "Meta Photos," focuses on creating new forms of
+media using artificial intelligence.
+
+The article also notes that prediction markets have surged in popularity,
+with operators handling more than $50 billion in trades last year, and
+volume already exceeding $130 billion this year. Combined monthly global
+trading volume on Kalshi and Polymarket reached $24 billion in April,
+compared to less than $5 billion in September 2025 (per Pew Research Center
+analysis using data from The Block).
+
+The report described the project as a "top priority" within Meta, but also
+said the app could ultimately remain unreleased.
+
+---
+
+ADDITIONAL CONTEXT (from Engadget's editorial overlay, not in NYT original):
+
+- Meta previously launched Forecast, a prediction market app, in 2020. It
+  used a points system and shut down in 2022 without gaining traction.
+- Engadget explicitly frames this as Meta's pattern of following trends:
+  Instagram Stories → Snapchat, Reels → TikTok, Dating → Tinder,
+  Threads → Twitter/X.
+- Engadget's headline: "Meta Reportedly Dips Its Pathetic Toes Into The
+  Prediction Market Space" — a strongly editorial framing not present in
+  the NYT original.
+
+---
+
+KEY SOURCING:
+- Primary source: Two anonymous employees ("two employees with knowledge
+  of the matter," "one person familiar with the plans," "company insiders")
+- No named sources quoted in any secondary reconstruction
+- No Meta spokesperson comment in initial coverage (multiple outlets note
+  "Meta did not immediately respond to a request for comment")
+- Market data attributed to Pew Research Center / The Block
+
+SECONDARY SOURCE URLS:
+- Reuters: https://www.reuters.com (Mark Zuckerberg directed Meta to create a prediction markets app, NYT reports)
+- NY Post: https://nypost.com (Meta is building a prediction markets app to rival Polymarket, Kalshi)
+- IBD: https://investors.com (Zuckerberg Wants Meta To Build Predictions Market Competitor)
+- Engadget: https://www.engadget.com/2199962/meta-reportedly-dips-its-pathetic-toes-into-the-prediction-market-space/
