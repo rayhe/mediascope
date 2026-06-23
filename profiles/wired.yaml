@@ -16,54 +16,270 @@ rss_feeds:
   - url: "https://www.wired.com/feed/category/politics/latest/rss"
     category: "politics"
 
+# ===================================================================
+# OWNERSHIP CHAIN — updated 2026-06-23 from SEC filings, Wikipedia,
+# Companies House, proxy statements, and financial reporting
+# ===================================================================
 ownership_chain:
   - name: "Wired"
     entity_type: "publisher"
-    description: "Digital and print technology publication, founded 1993"
+    description: >
+      Digital and print technology publication, founded 1993 by Louis Rossetto and Jane Metcalfe.
+      Acquired by Condé Nast (via Advance) in 1998 for ~$80M. One of Condé Nast's 7 "marquee brands"
+      that account for 85% of company revenue (FT, Feb 2026). Wired Italy edition shuttered Apr 2026.
+      Wired Consulting and live events continue across Europe via UK team.
+      Global Editorial Director: Katie Drummond (since Aug 2023).
+    source_url: "https://www.ft.com/content/conde-nast-seven-brands-85-percent-revenue"
+
   - name: "Condé Nast"
     entity_type: "parent_company"
-    description: "Global media company. Also publishes Vogue, The New Yorker, Vanity Fair, GQ, Pitchfork, Ars Technica, Bon Appétit"
-  - name: "Advance Publications"
+    description: >
+      Global media company, 100% subsidiary of Advance Publications. HQ: One World Trade Center, NYC.
+      CEO: Roger Lynch (since Apr 2019). Chief Content Officer: Anna Wintour (stepped down as US Vogue EIC
+      in 2025, retains global editorial director and CCO role; successor search for "Head of Editorial Content"
+      announced). Chief Revenue Officer: Elizabeth Herbst-Brady (since Aug 2024).
+      7 marquee brands (85% of revenue, FT Feb 2026): Vogue, GQ, The New Yorker, Wired, Vanity Fair,
+      Architectural Digest, Condé Nast Traveler.
+      Also publishes (digital): Ars Technica, Epicurious, Glamour (US/UK only after Apr 2026 restructuring),
+      Allure, La Cucina Italiana. Formerly: Pitchfork (folded into GQ 2024), Teen Vogue (folded into Vogue 2025),
+      Self (shut down Apr 2026), Them (sold to Equalpride Feb 2026), Glamour editions in Germany/Spain/Mexico
+      (winding down). Wired Italy (ending publishing Apr 2026).
+      PRIVATE — no SEC filings for parent entity. UK subsidiary data available via Companies House.
+    source_url: "https://www.condenast.com"
+
+  - name: "Condé Nast (UK subsidiary)"
+    entity_type: "operating_subsidiary"
+    description: >
+      Companies House filings. FY2023: Turnover £244.8M (down from £247.9M in 2022). Pre-tax profit
+      £8.3M (down from £23.3M in 2022). Profit collapse driven by cost increases: paper/printing, events
+      infrastructure, staff increases (editorial +3.5%, commercial +4.5%). UK turnover fell £93.1M→£89.0M,
+      European £132.2M→£119.2M, rest of world rose £28.8M→£36.6M. Advertising revenue down £211.8M→£200.5M.
+      Consumer/other revenue up £42.3M→£44.2M.
+    source_url: "https://business-live.co.uk/enterprise/vogue-publisher-conde-nasts-profit-30360321"
+
+  - name: "Condé Nast (consolidated, per CEO)"
+    entity_type: "operating_subsidiary"
+    description: >
+      Roger Lynch memo, Apr 16, 2026: "Our overall business was profitable in 2025 and ended the year with
+      revenue growth" that "has continued into the first quarter [of 2026]." No public revenue figure for
+      global consolidated entity. Restructuring ongoing: Self shut down, Glamour international editions closing,
+      Wired Italy ending, technology division restructured "reflecting the rapid advancement of AI."
+      Multiple layoff rounds: 270 jobs (Nov 2023), C-suite cuts (Jan 2025, 14+ executives including 2 CBOs),
+      16 unionized employees (Apr 2026). Condé Nast Union (NewsGuild/CWA) active; contentious bargaining sessions.
+    source_url: "https://www.thewrap.com/conde-nast-shuts-down-self-magazine/"
+
+  - name: "Advance Publications, Inc."
     entity_type: "holding_company"
-    description: "Private media holding company founded 1922. Also owns American City Business Journals, Brightspot CMS"
-    investments:
-      - entity: "Reddit"
-        stake: "33.5% voting power"
-        board_seats: 2
-        ipo_gain: "~$2B"
-        competitive_with: ["Meta", "X/Twitter"]
-      - entity: "Charter Communications"
-        stake: "significant minority"
-      - entity: "Discovery (formerly)"
-        stake: "divested"
+    description: >
+      Private media holding company, incorporated in New York, founded 1922 by Samuel Irving Newhouse Sr.
+      HQ: One World Trade Center, New York, NY 10007. Wholly owned by the Newhouse family.
+      Board of Directors (per Reddit 2025 proxy): Michael A. Newhouse, Steven O. Newhouse,
+      Samuel I. Newhouse III, Thomas S. Summer, Victor F. Ganzi.
+      KEY: Advance is the indirect parent making ALL voting and investment decisions for its subsidiaries'
+      holdings (including Reddit shares), per SEC filings.
+      Portfolio spans media, communications, technology, education, and sports.
+    source_url: "https://www.advance.com"
+
   - name: "Newhouse Family"
     entity_type: "family_office"
-    description: "Si Newhouse Jr. (d. 2017) and Donald Newhouse. Third generation now manages. Estimated family wealth $25B+ (Forbes)"
+    description: >
+      SUCCESSION EVENT: Donald Edward Newhouse died May 26, 2026 (aged 96, lymphoma) at his estate in
+      Lambertville, NJ. Forbes estimated his net worth at $15.4B (May 2026). He was the last surviving
+      second-generation Newhouse — his brother Si Newhouse Jr. died in 2017 of frontotemporal dementia.
+      Third generation now fully in control:
+      - Steven O. Newhouse (b. ~1957): Chairman & Co-President of Advance Publications. Serves on Reddit board
+        as Advance Designee. Resigned from WBD board March 29, 2024.
+      - Michael Andrew Newhouse: Advance board member. AP (Associated Press) board member since 2017.
+      - Samuel I. Newhouse III: Advance board member.
+      - Katherine Irene Newhouse: Donald's daughter.
+      Family office serves 35 adult households and 100+ individual family members (per LinkedIn profile
+      of former CIO, Institutional Investor reporting).
+      CIO: Bei Saville (hired from Northern Trust Asset Management's OCIO division).
+      Samuel I. Newhouse Foundation: $132M+ in investments (as of Oct 2016).
+      Donald's $75M donation to Syracuse University's S.I. Newhouse School of Public Communications (Jan 2020).
+      $20M donation to Association for Frontotemporal Degeneration (Mar 2021).
+      Forbes family wealth estimate: $25B+ (historically varied; $18.5B in 2016, $26B per Bloomberg in 2024).
+    source_url: "https://en.wikipedia.org/wiki/Donald_Newhouse"
+    nyt_obituary_url: "https://www.nytimes.com/2026/05/26/business/donald-newhouse-dead.html"
 
+# ===================================================================
+# ADVANCE PUBLICATIONS INVESTMENT PORTFOLIO — with current valuations
+# ===================================================================
+advance_investments:
+  - entity: "Reddit (RDDT)"
+    stake: "42,191,092 shares Class B + 16,182 shares Class A = 33.5% voting power"
+    board_seats: 2
+    board_designees: ["Steven O. Newhouse", "Robert A. Sauerberg"]
+    board_observer: 1
+    board_veto: "Any increase >10 directors requires Advance's prior written approval"
+    voting_agreement: >
+      Steven Huffman holds irrevocable proxy to vote all Advance shares on most matters,
+      per Voting Agreement dated March 19, 2024 between Advance Magazine Publishers Inc.
+      and Huffman (SEC Exhibit 2).
+    investment_history: >
+      Original $10M investment in 2006. Reddit was part of Condé Nast, moved to Advance
+      Publications in 2011, spun off as independent entity in early 2012 (keeping Advance
+      ownership stake but allowing VC fundraising). IPO March 21, 2024 at $34/share,
+      opened at $47, valued at $6.4B. Return: 5,800%+ (Bloomberg Billionaires Index).
+      Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
+      gains) and Sequoia Capital (17x larger gains).
+    current_value_estimate: "~$7.0B at $165.63/share (Jun 23, 2026)"
+    competitive_with: ["Meta", "X/Twitter"]
+    meta_competition: >
+      Reddit is a direct Meta competitor for user attention, advertiser spend, and community
+      engagement. Reddit's advertising business (~$1.3B FY2025 rev) competes directly with
+      Meta's ad platform for performance advertising dollars.
+    sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance+magazine&CIK=&type=SC+13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
+    source_url: "https://www.thewrap.com/conde-nast-reddit-ipo-advance-publications-nearly-2-billion/"
+
+  - entity: "Charter Communications (CHTR)"
+    stake: "~20,635,147 shares beneficially owned (12.3% of Class A, per Oct 2023 13D/A)"
+    entity_structure: >
+      Held through complex multi-entity structure: Advance/Newhouse Partnership (A/N, NY general
+      partnership), Newhouse Broadcasting Corporation (NBCo, NY corp), Advance Publications Inc. (API,
+      NY corp), Newhouse Family Holdings L.P. (NFH, DE limited partnership), Advance Long-Term Management
+      Trust (NJ trust). A/N grants up to 6% vote proxy to Liberty Broadband for most matters.
+    investment_history: >
+      Came from Bright House Networks merger into Charter (May 2016). A/N initially held 26.3% of
+      Charter Holdings partnership; Class B stock provided as-if-converted voting. Stake has diluted
+      from 26.3% (2016) to 12.3% (2023) via share repurchases and conversions.
+    current_value_estimate: "~$2.7B at $131.75/share (Jun 23, 2026). Down from $8.7B at 52-week high of $422."
+    competitive_with: []
+    sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
+
+  - entity: "Warner Bros. Discovery (WBD)"
+    stake: "~98M shares remaining (~4% after sales, down from 198.18M / ~8%)"
+    investment_history: >
+      Carried over from Advance's investment in Discovery Communications (1990s). After AT&T spin-off
+      and Discovery merger (April 2022), Advance held 198,181,749 shares of WBD Series A Common Stock
+      (~8.1% of outstanding). Original Discovery investment valued at ~$10B+ at WBD formation.
+      Steven A. Miron and Steven O. Newhouse resigned from WBD board March 29, 2024.
+      Advance sold 100M shares in June 2024 at $10.97/share, generating $1.1B. Those shares now worth
+      ~$2.7B at current price — a $1.6B opportunity cost from premature sale (per Bethel Clarion analysis).
+      Remaining ~98M shares worth ~$2.6B at $26.88/share (Jun 23, 2026).
+      WBD under potential Paramount Skydance acquisition (bids at $19-$30/share range).
+    current_value_estimate: "~$2.6B remaining stake + $1.1B realized = ~$3.7B total"
+    competitive_with: ["Meta (streaming/content)"]
+    sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse+programming&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
+
+  - entity: "Condé Nast"
+    stake: "100% subsidiary"
+    competitive_with: []
+
+  - entity: "American City Business Journals (ACBJ)"
+    stake: "100% subsidiary (acquired 1995 for $250M+)"
+    description: >
+      Nation's largest publisher of local business news. 43 metro business newspapers/websites,
+      500+ journalists across 43 US cities. Includes bizjournals.com. Also owns Hemmings Motor News
+      and AmericanInno. HQ: Charlotte, NC.
+    competitive_with: []
+
+  - entity: "Leaders Group / Street & Smith's"
+    stake: "100% subsidiary"
+    description: >
+      Sports media division. Sports Business Journal, The Esports Observer, SportTechie, Newzoo.
+      Street & Smith trademark resurrected 2017 by ACBJ, later transferred to standalone Leaders Group.
+    competitive_with: []
+
+  - entity: "The IRONMAN Group"
+    stake: "100% (acquired March 2020)"
+    description: "Global endurance sports brand. IRONMAN, IRONMAN 70.3, 5150 Triathlon Series."
+    competitive_with: []
+
+  - entity: "Turnitin"
+    stake: "investment (details undisclosed)"
+    description: "Internet-based plagiarism detection service. Used by educational institutions worldwide."
+    competitive_with: []
+
+  - entity: "Regional Newspapers"
+    stake: "100% (various)"
+    description: >
+      Multiple newspaper groups: The Star-Ledger (NJ), The Plain Dealer (Cleveland),
+      The Oregonian (Portland), Staten Island Advance, The Patriot-News (Harrisburg),
+      and others via Advance Local subsidiary. ~12 newspaper titles.
+    competitive_with: []
+
+  - entity: "Brightspot CMS"
+    stake: "100% subsidiary"
+    description: "Enterprise content management system. Used by media companies and brands."
+    competitive_with: []
+
+# ===================================================================
+# TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (estimated Jun 2026)
+# ===================================================================
+# Reddit (RDDT): ~$7.0B (42.2M shares @ $165.63)
+# Charter (CHTR): ~$2.7B (20.6M shares @ $131.75)
+# WBD remaining: ~$2.6B (98M shares @ $26.88) + $1.1B realized
+# Condé Nast: Private (profitable 2025, 7 marquee brands = 85% of undisclosed rev)
+# ACBJ: Private
+# IRONMAN Group: Private
+# Other holdings: Private
+# TOTAL PUBLIC EQUITY: ~$12.3B+ (before private holdings)
+# Donald Newhouse net worth at death: $15.4B (Forbes May 2026)
+
+# ===================================================================
+# REVENUE RELATIONSHIPS — Condé Nast AI licensing deals
+# ===================================================================
 revenue_relationships:
   - partner: "OpenAI"
     relationship_type: "licensing"
     estimated_value: "undisclosed, multi-year"
-    description: "Condé Nast content licensing deal for AI training and retrieval. OpenAI is Meta's direct AI competitor."
-    date_established: "2024"
+    date_established: "2024-08-20"
+    description: >
+      Multi-year content licensing partnership announced Aug 20, 2024. Gives OpenAI license to display
+      content from ALL Condé Nast brands (Wired, The New Yorker, Vogue, GQ, Vanity Fair, Architectural
+      Digest, Bon Appétit, Condé Nast Traveler) within ChatGPT and SearchGPT products. Condé Nast
+      receives access to OpenAI technology for publishing operations and content creation. CEO Roger
+      Lynch memo to staff: "crucial that we meet audiences where they are and embrace new technologies
+      while also ensuring proper attribution and compensation for use of our intellectual property."
+      OpenAI is Meta's direct AI competitor (ChatGPT vs Meta AI, GPT vs Llama).
+    competitive_with: ["Meta"]
     source_url: "https://www.condenast.com/news/conde-nast-and-openai-announce-partnership"
-  - partner: "Amazon"
+    secondary_sources:
+      - "https://siliconangle.com/2024/08/20/openai-agrees-content-licensing-deal-conde-nast-feed-searchgpt-chatgpt/"
+      - "https://www.adweek.com/media/conde-nast-openai-multiyear-partnership/"
+      - "https://www.thewrap.com/conde-nast-openai-multiyear-deal/"
+
+  - partner: "Amazon (Rufus)"
     relationship_type: "licensing"
-    estimated_value: "undisclosed"
-    description: "Amazon Rufus AI shopping assistant content deal. Amazon competes with Meta in advertising and AI."
-    date_established: "2024"
-    source_url: ""
+    estimated_value: "undisclosed, multi-year"
+    date_established: "2025-07-10"
+    description: >
+      Multi-year agreement for Amazon's Rufus AI shopping assistant to access Condé Nast's content
+      archive. Rufus is Amazon's LLM-powered shopping assistant trained on product catalog, customer
+      reviews, and web content. The strong commerce angle in Condé Nast content (fashion, home, gear)
+      makes it a natural match. First activations expected summer 2025. Amazon competes with Meta in
+      digital advertising (~$50B+ Amazon ad rev vs Meta's ~$160B+) and AI (Alexa/Rufus vs Meta AI).
+    competitive_with: ["Meta"]
+    source_url: "https://digiday.com/media/conde-nast-and-hearst-strike-amazon-ai-licensing-deals-for-rufus/"
+    secondary_sources:
+      - "https://engadget.com/ai/amazon-strikes-ai-licensing-deal-with-hearst-and-conde-nast-194535641.html"
+      - "https://glossy.co/fashion/conde-nast-and-hearst-strike-amazon-ai-licensing-deals-for-rufus/"
+
   - partner: "Apple"
-    relationship_type: "licensing"
-    estimated_value: "~$50M+ (archive negotiations)"
-    description: "Apple Intelligence archive access negotiations. Apple competes with Meta in hardware (Vision Pro vs Quest), AI, and privacy positioning."
-    date_established: "2024-2025 (negotiations)"
+    relationship_type: "licensing (negotiations)"
+    estimated_value: "~$50M+ (archive negotiations, per industry reporting)"
+    date_established: "2024-2025 (negotiations ongoing)"
+    description: >
+      Apple Intelligence archive access negotiations reported 2024-2025. Apple competes with Meta
+      in hardware (Vision Pro vs Quest), AI (Apple Intelligence vs Meta AI), and privacy positioning.
+      Status unclear — no formal announcement as of Jun 2026. If completed, Condé Nast would have
+      revenue relationships with OpenAI, Amazon, AND Apple — all Meta competitors.
+    competitive_with: ["Meta"]
     source_url: ""
+
   - partner: "Meta"
     relationship_type: "none"
     estimated_value: "$0"
-    description: "NO revenue relationship exists. Meta is the one major tech company NOT paying Condé Nast for content licensing. This creates a structural incentive for adversarial coverage."
     date_established: "n/a"
+    description: >
+      NO revenue relationship exists between Condé Nast and Meta. Meta is the one major tech company
+      NOT paying Condé Nast for content licensing. OpenAI, Amazon, and Apple (in negotiations) all pay.
+      This creates a structural financial incentive for adversarial Meta coverage: companies that pay
+      Condé Nast receive favorable content licensing relationships; the one that doesn't receives
+      coverage from a publication whose parent company's largest single investment ($7B+ Reddit) is
+      a direct Meta competitor. The absence of a Meta deal is the most important single data point
+      in the entire Wired conflict-of-interest analysis.
     source_url: ""
 
 editorial_leadership:
@@ -128,25 +344,105 @@ key_journalists:
 
 known_conflicts:
   - type: "investment"
-    description: "Parent company Advance Publications holds 33.5% voting power in Reddit, a direct competitor to Meta's social media platforms. Advance gained ~$2B from Reddit's 2024 IPO."
+    description: >
+      Parent company Advance Publications holds 33.5% voting power in Reddit (42.2M shares Class B +
+      16K shares Class A), currently worth ~$7.0B. Advance has 2 board seats (Steven O. Newhouse,
+      Robert A. Sauerberg) plus 1 nonvoting observer, and veto power over board expansion >10 members.
+      Reddit is a direct competitor to Meta's social media platforms for user attention, advertiser spend,
+      and community engagement. Original investment: $10M in 2006 (5,800%+ return). This is the single
+      largest investment in Advance's portfolio and the most direct financial conflict.
     severity: 5
-    evidence: "Reddit SEC filing, Advance board representation"
+    evidence: "Reddit S-1, proxy statements, SEC Schedule 13D, Advance board representation"
     source_url: "https://www.sec.gov/cgi-bin/browse-edgar?company=reddit&CIK=&type=S-1&dateb=&owner=include&count=40&search_text=&action=getcompany"
+
+  - type: "investment"
+    description: >
+      Advance holds ~98M shares of Warner Bros. Discovery (WBD), worth ~$2.6B. WBD competes with
+      Meta in streaming and content. Advance already realized $1.1B from selling 100M WBD shares
+      in June 2024. Steven O. Newhouse and Steven A. Miron resigned from WBD board March 2024.
+      Potential Paramount Skydance acquisition could realize remaining value at $19-30/share.
+    severity: 2
+    evidence: "SEC Schedule 13D/A (April 2024), WBD proxy filings"
+    source_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse+programming&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
+
   - type: "revenue"
-    description: "Condé Nast has content licensing deals with OpenAI, Amazon, and Apple — all Meta competitors in AI, advertising, or hardware. Meta has NO such deal."
+    description: >
+      Condé Nast has multi-year content licensing deals with OpenAI (Aug 2024), Amazon Rufus (Jul 2025),
+      and Apple Intelligence (in negotiations) — all Meta competitors in AI, advertising, or hardware.
+      Meta has NO such deal with Condé Nast. The financial incentive is clear: companies paying Condé
+      Nast get content partnerships; Meta, the only major tech company not paying, gets adversarial
+      coverage from a publication whose parent's $7B Reddit stake directly benefits from Meta's struggles.
     severity: 5
-    evidence: "Condé Nast press releases, industry reporting"
+    evidence: "Condé Nast press releases, Digiday/Engadget/Adweek reporting, industry sources"
     source_url: "https://www.condenast.com/news/conde-nast-and-openai-announce-partnership"
+
   - type: "competitive"
-    description: "Reddit (33.5% owned by Advance) directly competes with Meta for user attention, advertiser spend, and community engagement."
+    description: >
+      Reddit (33.5% owned by Advance) directly competes with Meta for user attention, advertiser spend,
+      and community engagement. Reddit FY2025 revenue ~$1.3B, growing rapidly, in direct competition
+      for the same performance advertising dollars Meta commands. Reddit's market cap ~$32.8B. Every
+      Meta stumble (regulatory, reputational, or financial) potentially benefits Reddit's competitive
+      position and therefore Advance's $7B+ stake.
     severity: 4
-    evidence: "Reddit S-1, advertising market analysis"
+    evidence: "Reddit S-1, earnings reports, advertising market analysis"
     source_url: ""
+
+  - type: "succession_risk"
+    description: >
+      Donald Newhouse's death (May 26, 2026) means the third generation now fully controls Advance
+      for the first time. Steven O. Newhouse (chairman/co-president) sits on the Reddit board. Any
+      estate settlement, tax events, or generational strategic realignment could affect Advance's
+      media and investment strategy. The family office serves 100+ family members across 35 households,
+      creating potential governance complexity.
+    severity: 3
+    evidence: "Wikipedia, NYT obituary (May 26, 2026), Forbes wealth estimate"
+    source_url: "https://en.wikipedia.org/wiki/Donald_Newhouse"
 
 litigation_connections:
   - type: "connected_party"
-    description: "Flashlight Capital funds Social Media Victims Law Center (SMVLC), lead counsel in bellwether Meta addiction trial. No direct Advance/Condé Nast link confirmed, but unnamed UK PE firm behind Flashlight's $250M fund is unidentified."
+    description: >
+      Flashlight Capital funds Social Media Victims Law Center (SMVLC), lead counsel in bellwether
+      Meta addiction trial. No direct Advance/Condé Nast link confirmed, but unnamed UK PE firm behind
+      Flashlight's $250M fund is unidentified. MDL 3047: 2,527+ claims, 42 state AGs active.
+      IMPORTANT: Wired's extensive coverage of teen social media harm (Drummond's editorial priority)
+      aligns with the litigation narrative. No disclosure of Advance's potential indirect interests
+      in Meta's litigation outcomes has ever appeared in Wired coverage.
     case_reference: "MDL 3047, N.D. Cal."
+
+# ===================================================================
+# CONDÉ NAST RESTRUCTURING TIMELINE — updated Jun 2026
+# ===================================================================
+restructuring_timeline:
+  - date: "2024-01"
+    event: "Pitchfork folded into GQ. 12 full-time staffers cut."
+    source_url: "https://www.thewrap.com/conde-nast-layoffs-2024/"
+
+  - date: "2024-11"
+    event: "270 jobs cut (~5% of 5,400 employees). CEO Lynch cited digital advertising pressures and social media traffic decline."
+    source_url: "https://www.thewrap.com/conde-nast-layoffs-more-jobs/"
+
+  - date: "2024-08"
+    event: "CRO Elizabeth Herbst-Brady joins, combines commercial and consumer revenue divisions. Begins budget rebalancing."
+    source_url: "https://www.adweek.com/media/conde-nast-culls-c-suite-layoffs/"
+
+  - date: "2025-01"
+    event: "C-suite cuts: 14+ executives including 2 CBOs (Eric Gillin, Craig Kostelic), SVPs, VPs. GQ editorial team cuts. Allure EIC Jessica Cruel adds Self EIC duties."
+    source_url: "https://www.adweek.com/media/conde-nast-culls-c-suite-layoffs/"
+
+  - date: "2025"
+    event: "Teen Vogue folded into Vogue. Anna Wintour steps down as US Vogue EIC (retains CCO and global editorial director roles). New 'Head of Editorial Content' role created."
+    source_url: "https://fashionista.com/anna-wintour-leaves-vogue-editor-in-chief"
+
+  - date: "2026-02"
+    event: "Them sold to Equalpride. GQ top editor Will Welch departs."
+    source_url: "https://www.thewrap.com/conde-nast-shuts-down-self-magazine/"
+
+  - date: "2026-04-16"
+    event: >
+      Self shut down entirely. Wired Italy ending publishing. Glamour editions in Germany, Spain,
+      Mexico winding down. 16 unionized employees laid off. Technology division restructured for AI.
+      Lynch memo: affected titles = 1% of revenue, "remain unprofitable." Glamour EIC Samantha Barry departs.
+    source_url: "https://www.thewrap.com/conde-nast-shuts-down-self-magazine/"
 
 ai_crawl_policy:
   blocks_gptbot: false

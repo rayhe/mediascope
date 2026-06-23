@@ -4,6 +4,143 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-23 16:00 PT — Hour Type C: Wired/Condé Nast/Advance Publications Ownership & Funding Deep Dive
+
+**Focus:** Comprehensive ownership chain, investment portfolio, financial data, and conflict-of-interest analysis for Wired's parent companies. This is the most critical publication in the 5-pub set for Ray's research, yet its profile had the thinnest ownership data. Now massively expanded.
+
+### What was improved:
+
+1. **MAJOR FINDING — Donald Newhouse died May 26, 2026 (aged 96, lymphoma):**
+   - Last surviving second-generation Newhouse
+   - Forbes net worth at death: $15.4B
+   - Third generation now fully in control for the first time
+   - Steven O. Newhouse (chairman/co-president) is the key figure: sits on Advance board, Reddit board (as Advance Designee)
+   - Advance Publications board identified from Reddit proxy: Michael A. Newhouse, Steven O. Newhouse, Samuel I. Newhouse III, Thomas S. Summer, Victor F. Ganzi
+   - Michael Andrew Newhouse on AP (Associated Press) board since 2017
+   - Family office: 35 adult households, 100+ family members
+   - CIO: Bei Saville (from Northern Trust Asset Management OCIO division)
+   - Source: Wikipedia (with NYT obituary citation), Institutional Investor
+
+2. **Advance Publications full investment portfolio with current valuations:**
+   - **Reddit (RDDT):** 42.2M shares Class B + 16K Class A = 33.5% voting power. ~$7.0B at $165.63/share. 2 board seats (Steven O. Newhouse, Robert A. Sauerberg) + 1 observer. Board expansion veto >10 members. Huffman holds irrevocable proxy on Advance shares. Original $10M investment (5,800%+ return). Sources: SEC Exhibit 2 (Voting Agreement), Reddit proxy, TheWrap, Bloomberg
+   - **Charter Communications (CHTR):** ~20.6M shares, 12.3% of Class A. ~$2.7B at $131.75/share. Complex multi-entity structure (A/N, NBCo, API, NFH, Advance Long-Term Trust). A/N grants 6% vote proxy to Liberty Broadband. From Bright House Networks merger (2016). Sources: SEC Schedule 13D/A (Oct 2023)
+   - **Warner Bros. Discovery (WBD):** ~98M shares remaining (~4%), ~$2.6B at $26.88/share. Originally 198.18M shares (~8.1%). Newhouse resigned from WBD board Mar 2024. Sold 100M shares Jun 2024 at $10.97 for $1.1B (now worth $2.7B — $1.6B opportunity cost). Sources: SEC Schedule 13D/A (Apr 2024), Bethel Clarion
+   - **Other holdings:** ACBJ (43 local business papers, 500+ journalists), Leaders Group (Sports Business Journal, Newzoo), IRONMAN Group (acquired 2020), Turnitin, Brightspot CMS, regional newspapers (~12 titles)
+   - **Total public equity: ~$12.3B+** (before private holdings)
+
+3. **Revenue relationships — all three AI deals fully sourced:**
+   - **OpenAI:** Multi-year, announced Aug 20, 2024. ChatGPT + SearchGPT. Lynch memo to staff quoted. Sources: Condé Nast press release, SiliconAngle, Adweek, TheWrap, Decrypt
+   - **Amazon Rufus:** Multi-year, announced Jul 10, 2025. Shopping assistant content licensing. Commerce angle. Sources: Digiday (original), Engadget, Glossy, The Decoder, AdExchanger
+   - **Apple Intelligence:** Negotiations reported 2024-2025, ~$50M+ archive access. No formal announcement yet.
+   - **Meta: $0.** NO revenue relationship. The only major tech company not paying. This is the most important data point.
+
+4. **Condé Nast financial data and restructuring timeline (8 events, 2024-2026):**
+   - UK subsidiary: £244.8M turnover FY2023, £8.3M pre-tax profit (collapsed from £23.3M). Source: Companies House via Business Live
+   - Lynch memo (Apr 2026): Profitable in 2025 with revenue growth continuing into Q1 2026
+   - 7 marquee brands = 85% of revenue (FT, Feb 2026): Vogue, GQ, New Yorker, Wired, VF, AD, CN Traveler
+   - Restructuring: Pitchfork→GQ (2024), 270 layoffs (Nov 2024), C-suite cuts (Jan 2025, 14+ execs), Wintour steps down as EIC (2025), Teen Vogue→Vogue (2025), Them sold (Feb 2026), Self shut down (Apr 2026), Wired Italy ending, Glamour Germany/Spain/Mexico closing, 16 unionized layoffs (Apr 2026)
+   - CRO Elizabeth Herbst-Brady (joined Aug 2024) driving cost restructuring
+
+5. **Known conflicts expanded from 3 to 5 entries:**
+   - Investment (Reddit): Upgraded with $7B valuation, board seat details, voting agreement
+   - Investment (WBD): NEW — ~$2.6B remaining, streaming/content competition with Meta
+   - Revenue: Upgraded with all three AI deal details and the $0 Meta relationship
+   - Competitive: Upgraded with Reddit FY2025 revenue data
+   - Succession risk: NEW — Donald Newhouse death, third generation transition, 100+ family members
+
+### Key analytical insights:
+
+1. **The $7B Reddit conflict is larger than previously documented:** At $165.63/share, Advance's Reddit stake is worth ~$7.0B — triple the $2B IPO gain originally noted. This is by far the largest single asset in Advance's portfolio. Every negative Meta story potentially benefits Reddit's competitive position and therefore this $7B stake.
+
+2. **The "revenue asymmetry" is now fully sourced:** Condé Nast has multi-year deals with OpenAI (Aug 2024), Amazon (Jul 2025), and Apple (in negotiations). All are Meta competitors. Meta pays $0. The structural incentive is clear: companies paying Condé Nast get partnerships; Meta gets adversarial coverage from a publication whose parent's $7B investment benefits from Meta's struggles.
+
+3. **Donald Newhouse's death creates succession uncertainty:** The last second-generation patriarch died May 26, 2026. Steven O. Newhouse (third gen) now leads, but the family office spans 100+ people across 35 households. Estate settlements, tax events, or strategic realignment could alter Advance's media and investment posture.
+
+4. **Advance's total public equity portfolio (~$12.3B+) creates multiple potential conflicts:** It's not just Reddit. WBD ($2.6B) competes with Meta in streaming. Charter ($2.7B) is in the content distribution chain. These cross-holdings create a web of incentives that standard editorial conflict disclosures don't capture.
+
+5. **The Wired Italy closure coincides with profit pressure:** Condé Nast's UK profits fell 64% (£23.3M→£8.3M) on flat revenue. The parent is "profitable" but under visible cost pressure, making the AI licensing deals (OpenAI, Amazon) increasingly important revenue diversification — and making the absence of a Meta deal more consequential.
+
+### Commit: (pending push)
+### Sources: SEC EDGAR (Schedule 13D filings for Charter, WBD, Reddit), Reddit DEF 14A proxy (2025), Wikipedia, Companies House (UK), TheWrap, Adweek, Digiday, Engadget, SiliconAngle, Business Live (City AM), Institutional Investor, Bloomberg Billionaires Index, FT (paywalled, referenced via TheWrap), Status.news, Fashionista, MediaPost, SPMG Media
+
+## 2026-06-23 15:00 PT — Hour Type B: NYT Tech Desk Deep Dive — 8 Journalist Career Histories
+
+**Focus:** Comprehensive career research on the New York Times tech desk — the LARGEST gap remaining in the journalist tracking database. 6 key reporters listed in the NYT profile had zero career histories; Mike Isaac's entry was minimal (2 positions). This iteration fills the entire NYT tech desk.
+
+### What was improved:
+
+1. **Mike Isaac — EXPANDED (2 entries → 5 career entries):**
+   - Added Forbes contributor (2009-2010): music journalism roots (Paste Magazine, Performer Magazine)
+   - Added Wired staff writer (2010-2012): mobile/Google beat, editor was Brian X. Chen (now NYT). KEY: First position in Condé Nast/Advance Publications orbit
+   - Split AllThingsD (2012-2013, hired by Kara Swisher/Walt Mossberg) and Re/code (2014) as separate entries
+   - Massively expanded NYT entry (2014-present): Gerald Loeb Award details, Super Pumped (W.W. Norton 2019, NYT/WSJ bestseller), Showtime series (2022, JGL, cameo), MSNBC contract, 2018 Facebook team Loeb Award, covered Meta metaverse/AI race/Musk Twitter/OpenAI crisis. 12+ year tenure — longest-serving current NYT tech reporter
+   - Education: UC Berkeley 2010, English Literature. From Fort Worth, TX
+
+2. **Sheera Frenkel — NEW (5 career entries):**
+   - McClatchy foreign correspondent (2005-2009): Middle East, Arab Spring, Iran nuclear, Syria. Hebrew fluent, conversational Arabic
+   - NPR correspondent (2009-2012): continued Middle East coverage
+   - Times of London (2012-2015): final foreign correspondent role
+   - BuzzFeed News (2015-2017): originated cybersecurity beat, profiled Fancy Bear, ISIS internet use, Myanmar. CAREER PIVOT: foreign correspondent → cybersecurity
+   - NYT (2017-present): hired by Ellen Pollock and Pui-Wing Tam alongside Nicole Perlroth. 2018 "Delay, Deny and Deflect" Facebook exposé (6 months, 50+ interviews). Awards: Pulitzer finalist 2019, George Polk, Gerald Loeb, Mirror Award 2022. Co-wrote "An Ugly Truth" (2021) — NYT/international bestseller. Education: Boston University
+   - Analytical insight: foreign correspondent framing toolkit (covert actors, hidden motivations, institutional deception) maps directly onto Big Tech coverage
+
+3. **Kashmir Hill — NEW (5 career entries):**
+   - Above the Law blogger (2008-2009): first journalism role, legal news
+   - Forbes writer/editor (2010-2014): 4-year tenure, started "Not-So Private Parts" blog (pioneered privacy reporting genre), Bitcoin week experiment (viral), Google Plus pressure story (Google hired PIs). SABEW innovation award
+   - Fusion editor (2014-2017): editor of "Real Future" tech vertical. Overlap period with Kevin Roose (VP/co-EP of Real Future TV)
+   - Gizmodo investigative reporter (2017-2019): Special Projects Desk. "Goodbye Big Five" experiment (cut off all 5 major tech companies). Experimental journalism
+   - NYT enterprise reporter (2019-present): Clearview AI investigation (Jan 2020) changed facial recognition policy nationwide. "Your Face Belongs to Us" (Random House 2023) — FT Best Books 2023 Technology, Royal Society Trivedi Science Book Prize shortlist 2024. Mar 2024: exposed GM/Honda/Kia/Hyundai sharing driver data with LexisNexis — GM ended practice in 11 days. Born March 5, 1981. Partner: Trevor Timm (FPF co-founder). Education: Duke BA, NYU MA Magazine Journalism
+
+4. **Kevin Roose — NEW (4 career entries):**
+   - NYT finance reporter (2011-2012): first NYT stint, ~1 year covering Wall Street. Straight from Brown University
+   - New York Magazine lead business writer (2012-2014): Daily Intel blog, Silicon Valley coverage. Published "Young Money" (2014, NYT bestseller)
+   - Fusion senior editor/VP (2014-2017): VP overseeing editorial projects and strategy. Co-executive producer of "Real Future" TV. NOTE: Kashmir Hill also at Fusion during this period
+   - NYT columnist (2017-present): second stint. "The Shift" column. Created "Rabbit Hole" podcast (2020, internet radicalization). Co-hosts "Hard Fork" with Casey Newton. Feb 2023: viral Bing/Sydney conversation. "Futureproof" (2021). Writing "The AGI Chronicles" (coming 2026). Forbes 30 Under 30. 2018 Gerald Loeb team award. Lives in Oakland, CA
+
+5. **Karen Weise — NEW (3 career entries):**
+   - ProPublica intern (2009): early career. Previously public radio (SoCal), briefly management consultant
+   - Bloomberg Businessweek/News (2010-2018): long tenure. Started in NYC (policy, consumer finance, housing), moved to Seattle for tech. Won SABEW for 2015 Dan Price/Gravity Payments exposé. Ellen Pollock was top editor at Businessweek when the story ran
+   - NYT Seattle tech correspondent (2018-present): covers Amazon, Microsoft, richest people. CONFLICT ANGLE: covers Amazon, which pays NYT $20-25M/yr in AI licensing since May 2025. Testable hypothesis: does Amazon coverage tone shift post-deal? Education: Yale, UC Berkeley J-School
+
+6. **Tripp Mickle — NEW (2 career entries):**
+   - Wall Street Journal (2014-2022): 8 years covering Apple, Google. Previously sportswriter. Broke Jony Ive departure, Tim Cook/Trump relationship
+   - NYT Apple reporter (2022-present): hired with Nico Grant. "After Steve" (William Morrow, May 2022) — 200+ interviews, thesis: Apple lost its soul under Cook. WSJ → NYT migration for Apple beat
+
+7. **Nico Grant — NEW, DEPARTED (2 career entries):**
+   - Bloomberg (2019-2022): enterprise tech → Google beat (early 2021). Broke discrimination/harassment in Google ethical AI group, mental health toll stories. Born in Trinidad, raised in NYC. Hunter College, CUNY MS
+   - NYT (2022-2025): Google/Alphabet. DEPARTED: "Working there was a dream come true, but now, it's time to chase other dreams outside of journalism." Creates gap on NYT Google/AI beat
+
+8. **Eli Tan — NEW (1 entry):**
+   - NYT (2026-present): promoted from fellowship to Meta beat reporter. Second dedicated Meta reporter alongside Mike Isaac. Editor: Jim Kerstetter. Covered data centers, AI dating, AI and pastors during fellowship. "A knack for telling stories that make us understand technology's impact on regular people"
+
+### NYT Profile updates (nytimes.yaml):
+- key_journalists expanded: 8 → 11 entries with full career context, books, awards, known patterns
+- Added notable_departures section: Nico Grant (left journalism 2025), Nicole Perlroth (to CISA 2021)
+- Added CONFLICT NOTE on Karen Weise covering Amazon (NYT's $20-25M/yr licensing partner)
+
+### Editorial changes (editorial_changes.yaml) — 4 new NYT entries:
+- Pui-Wing Tam: technology editor (2015) — built the entire NYT tech team
+- Zach Seward: editorial director of AI initiatives (2024) — first role of its kind
+- Eli Tan: Meta reporter hire (2026) — second dedicated Meta reporter
+- Nico Grant: Google reporter departure (2025) — gap on Google beat
+
+### Key analytical discoveries:
+
+1. **The Pui-Wing Tam pipeline:** Nearly every major NYT tech reporter was hired by Tam (joined 2015 from Bloomberg). She is the single most important architect of NYT's tech coverage posture — her hiring choices determine whose editorial DNA enters the newsroom. Previously at WSJ where HP hired PIs to surveil her phone records.
+
+2. **The Fusion connection:** Kevin Roose AND Kashmir Hill both worked at Fusion during 2014-2017. Roose was VP/co-EP of Real Future (TV); Hill was editor of Real Future (web). This shared institutional experience at a young, experimental outlet may create editorial affinity at NYT.
+
+3. **The 'Ugly Truth' / 'Super Pumped' parallel:** NYT's two primary Meta-adjacent reporters (Frenkel and Isaac) both wrote adversarial bestsellers about their beat companies. Book-writing creates a financial incentive to maintain adversarial framing — their expertise is marketable precisely because they are adversarial.
+
+4. **The foreign correspondent → tech pipeline:** Frenkel's decade in the Middle East gave her a framing toolkit (hidden actors, institutional deception, covert operations) that maps directly onto tech coverage. Compare: Drummond's adversarial journalism at Wired, but with war-correspondent credibility.
+
+5. **Karen Weise's Amazon conflict:** She covers Amazon, which pays NYT $20-25M/yr in AI licensing since May 2025. Most direct testable revenue/coverage conflict on the NYT tech desk.
+
+### Commit: `b9ec6c0`
+### Tests: 173/173 passing
+### Files modified: 3 core (journalists.yaml +239 lines, nytimes.yaml +53/-27 lines, editorial_changes.yaml +24 lines)
+### Sources: nytco.com (×7 staff announcements), Poynter (×2), Talking Biz News (×8), AllThingsD (×2), Adweek, Editor & Publisher, HarperCollins, Penguin Random House, kevinroose.com, Princeton ISC, FedSoc, USENIX, Jewish Journal, NPR, University of Colorado, University of Michigan, Goodreads, MacRumors, BuzzSumo
+
 ## 2026-06-22 21:00 PT — Hour Type D: Toolkit Quality & Documentation Overhaul
 
 **Focus:** Systematic audit of all 6 documentation files against the actual codebase. Found 5 issues across 4 files — stale content, missing modules, broken numbering, and absent CLI documentation for the careers subsystem.
