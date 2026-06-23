@@ -22,7 +22,7 @@ _vader = SentimentIntensityAnalyzer()
 ANONYMOUS_SOURCE_PATTERNS: list[re.Pattern] = [
     re.compile(r"\baccording to (?:people|sources|individuals|persons)\b", re.IGNORECASE),
     re.compile(r"\bpeople familiar with\b", re.IGNORECASE),
-    re.compile(r"\bspoke on (?:the )?condition (?:of )?(?:anonymity)?\b", re.IGNORECASE),
+    re.compile(r"\bspoke (?:with \w+ )?on (?:the )?condition (?:of )?(?:anonymity)?\b", re.IGNORECASE),
     re.compile(r"\basked not to be identified\b", re.IGNORECASE),
     re.compile(r"\bpeople who requested anonymity\b", re.IGNORECASE),
     re.compile(r"\ba person with (?:direct )?knowledge\b", re.IGNORECASE),
@@ -158,6 +158,30 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "money pit",
     "colossal",
     "wasted",
+    # Consumer privacy / wearable-tech emotional terms — needed for
+    # coverage of smart glasses, facial recognition, and surveillance tech
+    # where editorial language deploys pejorative labels and predatory
+    # framing that VADER reads as neutral
+    "creep", "creepy", "creepier", "creepiest", "creeps",
+    "pervert", "perverted", "perversion", "pervert glasses",
+    "prowling", "prowl",
+    "infested", "infestation",
+    "violation", "violated", "violating",
+    "unsettling", "unsettled",
+    "contemptuous", "contempt",
+    "harassment", "harassing", "harassed", "harass",
+    "sexist", "sexism",
+    "disturbing", "disturbed", "disturbingly",
+    "off-putting",
+    "pestering", "pester",
+    "corny",
+    "stealth mode",
+    "bystander", "bystanders",
+    "authoritarian",
+    "trolls", "troll",
+    "backlash",
+    "inconspicuous",
+    "frictionless",
     # Cybersecurity / data-breach emotional terms — needed for security
     # reporting which uses domain-specific loaded language that reads as
     # neutral to VADER but carries strong negative editorial framing
@@ -256,7 +280,11 @@ NEGATIVE_COMPARISON: list[str] = [
 POSITIVE_COMPARISON: list[str] = [
     "leads", "ahead of", "outperforms", "surpasses",
     "dominates", "eclipses", "outshines", "beats",
-    "better than", "more than", "exceeds", "tops",
+    "better than", "exceeds", "tops",
+    # NOTE: "more than" REMOVED (2026-06-23) — it false-positives on
+    # quantitative phrases like "more than 50 million phones" which are
+    # not comparative framing.  Detected in WIRED NameTag deep dive:
+    # "more than 50 million phones" scored as positive comparison.
 ]
 
 
@@ -319,12 +347,31 @@ def analyze_textblob(text: str) -> dict:
 def count_anonymous_sources(text: str) -> tuple[int, int]:
     """Count anonymous and total source attributions in text.
 
+    Delegates to the comprehensive ``extract_sources()`` in the sources
+    module, which uses role-descriptor patterns, reverse-order attribution,
+    and other structural heuristics that catch far more anonymous sources
+    than simple regex patterns (e.g. "a policy staffer says", "the
+    Instagram employee says").
+
+    Falls back to the legacy regex-based counter if the sources module
+    import fails (e.g. during isolated unit testing).
+
     Args:
         text: Article text to analyze.
 
     Returns:
         Tuple of (anonymous_source_count, total_source_count).
     """
+    try:
+        from mediascope.analyze.sources import extract_sources
+        sources = extract_sources(text)
+        anonymous_count = sum(1 for s in sources if s.is_anonymous)
+        total = len(sources)
+        return anonymous_count, total
+    except ImportError:
+        pass
+
+    # Legacy fallback: regex-based counting
     anonymous_count = 0
     for pattern in ANONYMOUS_SOURCE_PATTERNS:
         anonymous_count += len(pattern.findall(text))
@@ -503,6 +550,15 @@ def _measure_headline_alignment(headline: str, body: str) -> float:
     due to VADER assigning opposite signs to headline-length vs body-
     length text.  Now uses a sign-aware check with a neutral zone
     (|compound| < 0.05 treated as zero) to avoid sign-flip artifacts.
+
+    Fix (Jun 23, 2026): VADER assigns positive scores to editorially
+    negative headlines containing technical/neutral vocabulary
+    (e.g., "Meta Deletes Face-Recognition System From Smart Glasses App
+    After WIRED Report" → compound +0.40 due to "Smart").  When a
+    headline contains loaded framing signals (face-recognition, surveillance,
+    biometric, quietly, secretly, deleted, removed, stripped, scrubbed)
+    near tech-company/product context, override VADER's positive score
+    and treat the headline as editorially negative.
     """
     if not headline or not body:
         return 0.0
@@ -512,6 +568,34 @@ def _measure_headline_alignment(headline: str, body: str) -> float:
 
     h_compound = headline_vader["compound"]
     b_compound = body_vader["compound"]
+
+    # --- Headline framing override ---
+    # When VADER reads a headline as positive but it contains loaded
+    # editorial signals (surveillance tech, deletions, removals, quiet
+    # actions, after-report framing), the editorial direction is negative.
+    # Override h_compound to a synthetic negative value.
+    if h_compound > 0.05:
+        headline_lower = headline.lower()
+        _HEADLINE_NEGATIVE_SIGNALS = [
+            "face-recognition", "face recognition", "facial recognition",
+            "surveillance", "biometric", "faceprint", "tracking",
+            "quietly", "secretly", "covertly", "surreptitiously",
+            "deletes", "deleted", "removes", "removed", "strips",
+            "stripped", "scrubbed", "purged", "pulled",
+            "after report", "after investigation", "after wired",
+            "after nyt", "after times", "after guardian",
+            "under fire", "under siege", "under scrutiny",
+            "backlash", "controversy", "scandal",
+            "pauses", "paused", "halts", "halted", "suspends",
+        ]
+        signal_count = sum(
+            1 for sig in _HEADLINE_NEGATIVE_SIGNALS
+            if sig in headline_lower
+        )
+        if signal_count >= 2:
+            # Strong editorial signal: treat as negative
+            h_compound = -0.3 * signal_count  # scale with signal density
+            h_compound = max(-0.9, h_compound)
 
     # Treat very small magnitudes as neutral to prevent sign-flip artifacts
     h_sign = 0 if abs(h_compound) < 0.05 else (1 if h_compound > 0 else -1)

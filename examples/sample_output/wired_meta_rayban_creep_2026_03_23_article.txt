@@ -1,0 +1,57 @@
+Title: The Rise of the Ray-Ban Meta Creep
+Publication: Wired
+Date: March 23, 2026
+URL: https://www.wired.com/story/the-rise-of-the-ray-ban-meta-creep/
+Byline: [Not explicitly shown in archived version]
+
+---
+
+Joy Hui Lin, a book researcher living in Paris, was walking through the trendy Le Marais district last summer when two male university students chased her down to ask about her outfit.
+
+Lin wasn't surprised. It's common for Instagram accounts to do street photography in the area and she prides herself on her fashion—that day, she was in "a nice sundress and a very big stylish hat," she tells WIRED.
+
+"It was all very cute until the end of the conversation, when one of them was like, 'So, these glasses have been recording this whole time.'" She clocked the device, a black-framed pair of Ray-Ban Meta smart glasses (commonly referred to as Meta Ray-Bans), which can record video from the user's point of view.
+
+Lin was taken aback at the young man not asking permission to film her—especially as he was now inquiring whether he could share the video online. It felt like a "violation," Lin says. The man in the glasses, she adds, "didn't seem to understand that it could be very off-putting to record someone first without asking."
+
+This type of encounter is becoming more common, to judge by a proliferation of social media accounts in which content creators use smart glasses to record their public interactions for huge audiences. These conversations aren't always so innocent as an interview about personal style. Instagram Reels and TikTok are infested with footage of users pulling juvenile pranks on retail workers, for example. And many of the top influencers in the Meta Ray-Ban scene, including Sayed Kaghazi (@itspolokid) and Cameron John (@rizzzcam), who have more than 3 million Instagram followers combined, are men prowling sun-soaked beaches and corridors of city nightlife so they can showcase their attempts to pick up women.
+
+Their unsolicited, occasionally pestering flirtations in public spaces with these women have helped to inspire a contemptuous nickname for the Meta specs: "pervert glasses." (Neither Kaghazi nor John returned a request for comment.)
+
+Like their forerunner, the doomed Google Glass, the Meta Ray-Ban (and Oakley) glasses, which range in price from $299 to $499, are up against a privacy-minded backlash. But the picture today is complicated by a few factors. For a start, Meta's glasses automatically send footage to the company, which has overseas contract workers review it, as an investigation by Swedish newspapers found. The videos described in that February report included sensitive content people may not have realized they were recording and uploading, such as nudity, sex, and bathroom activities. This has already prompted an ongoing consumer protection lawsuit.
+
+On top of that, Meta's glasses are equipped with potentially invasive AI services—already, the Meta app that runs on the device can collect your videos for further AI training—that it plans to continue expanding. They are far more popular than any other smart glasses to date, with Meta selling 8 million pairs in 2025 alone, and are rather inconspicuous compared to their nakedly futuristic predecessors.
+
+Lin told the man who filmed her that she didn't want the footage to appear on his Instagram account, and later confirmed he hadn't uploaded it. But the "unsettling" experience, she says, led her to reflect on how most people don't necessarily recognize that a stranger talking to them face-to-face could be quietly capturing their likeness. It has made her a little warier of anyone in glasses who approaches her on the street.
+
+Lin is hopeful, however, that more nations will begin to follow Denmark's lead as it pioneers individual copyright protections over one's own likeness, a move that guards against unwanted AI deepfakes and possibly invasive recording, including with smart glasses.
+
+Other governments have taken notice of the privacy implications of wearables like Meta's glasses, raising concerns about more advanced capabilities they may have in the near future. On Tuesday, Democratic senators Ron Wyden, Ed Markey, and Jeff Merkley addressed an open letter to Meta CEO Mark Zuckerberg about the company's reported plans to integrate face-recognition technology into these devices.
+
+"Given Meta's vast data collections, its smart glasses could capture images of thousands of people without their knowledge or consent and then instantly link those faces to names, workplaces, or personal profiles, creating serious risks of stalking, harassment, and targeted intimidation," the lawmakers wrote. They noted "how easily real-time identification technologies can be repurposed to discourage political expression, target vulnerable communities, and chill lawful dissent." The trio demanded Meta detail its biometric data practices and explain how it could hope to obtain "express affirmative consent" from every bystander whose face happens to be captured through a user's glasses.
+
+Meanwhile, communities are organizing to protect themselves from harassment by self-styled pickup artists with Meta glasses. Earlier this month, a redditor posted on a forum for residents of Vancouver, British Columbia, that a man was frequenting the clubbing district downtown at night to record, via smart glasses, his techniques for chatting with women. "In many of his videos women are very uncomfortable and are clearly rejecting his advances and saying no," the redditor wrote. The videos appear on the man's Instagram account, @vibrophone, which has some 12,000 followers, identifies him by the first name Sherif, and advertises him as a "rizz" coach. Other videos show him "curling" the women he meets, lifting them horizontally to his chest like barbells. (The owner of the account did not respond to a request for comment.)
+
+On multiple Reddit threads, Vancouver locals have shared their frustration that Sherif might be monetizing his content, though it's not clear whether he is. One objective of such channels seems to be to attract opportunities for cross-promotional branding: Kaghazi, for example, has a link on his profile for a "dating assistant" AI app, while John offers a promo code for the nicotine product Nic Nac.
+
+One woman, who spoke with WIRED on condition of anonymity so that he would not have her personal information, says that Sherif approached her near an arts and recreation center last fall.
+
+After stopping, he asked her, "Who let the dogs out?" He repeated the question when she expressed confusion. "And when I still paused, he did that little hand motion people do to mean 'continue,' and said, 'Who, who, who?'" she says. "I laughed a little and kept walking. I'm a millenial, I obviously know that song, but the interaction was so corny, I just blanked. I remember noticing that he had those camera glasses and thinking 'Oh, he probably just filmed that.'"
+
+She later saw the recent Reddit posts about him. While he didn't upload a video of her, she's nonetheless disturbed by the other Meta Ray-Ban clips. "They seem predatory," she says. "I have no expectation of privacy when out in public. But if a person is approaching strangers with a hidden camera and interacting with them without disclosing that they are filming for content, that's a problem."
+
+Ray-Ban's parent company, EssilorLuxottica, did not return a request for comment. Tracy Clayton, a Meta spokesperson, tells WIRED, "Our terms of service clearly state that users are responsible for complying with all applicable laws and for using Ray-Ban Meta glasses in a safe, respectful manner." He adds that "as with any recording device, people shouldn't use them for engaging in harmful activities like harassment, infringing on privacy rights, or capturing sensitive information." Clayton points out that the glasses come equipped with an LED light in the upper corner of the frames "that activates when recording, making it unequivocally clear that content is being captured."
+
+But the internet abounds with simple guides on how to keep recording while the light is covered. "It's already difficult enough to film in public—I don't want to have a blinking light on my face," said Spencer Willhite, who demonstrated his light-blocking hack on his YouTube channel, where he has 23,000 followers. (He did not respond to a request for comment.)
+
+A TikTokker in Southern California with the handle @asodcutz posts videos to his 62,000 followers that show him physically removing the LED light from Meta Ray-Ban glasses for a cash fee. "Stealth mode service is $120 please let me know if you are interested," @asodcutz wrote in reply to a direct message from me, calling himself "the creator of 'stealth' mode." He stopped responding once asked for his name, though an Instagram account with the same handle, profile picture, and "stealth mode" content identifies him as Andres Rodriguez.
+
+In parallel to this burgeoning black market, some are fighting back. Yves Jeanrenaud, a sociologist and programmer currently at the Osnabrück University of Applied Sciences in Germany, made headlines this month with an open-source Android app called Nearby Glasses. It scans for a Bluetooth signal unique to Meta's smart glasses hardware (as well as a signal from Snap's similar product, Spectacles), to alert the user to possible surveillance.
+
+The app has been downloaded more than 59,000 times, and an iOS version is currently in progress.
+
+Despite his app's success, Jeanrenaud believes that the arms war over privacy is already lost. "Personal surveillance tech is just the next step after digitally linked surveillance and data collection is all over the place," he says. "Those offers of going stealth mode for the Ray-Bans are just a symptom of a culture where entertainment and exploitation are often linked very closely."
+
+Without stronger regulation that directly addresses the ways we spy on each other, he adds, countering the many possible abuses of surveillance will be virtually impossible. "I don't think my app is the solution," he says. "The law seems to be not on the side of those who want privacy."
+
+All of which makes this a promising moment for the early adopters of a technology as appealing to authoritarian government agencies as garden-variety sexist trolls. Smartphones normalized our constant, often aggressive recording of one another, and now there's just a more convenient, frictionless, and secretive means to accomplish the same result. Not everyone is going to put the glasses on, but one way or another, you'll be keeping a close eye out.

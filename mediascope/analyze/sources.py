@@ -18,6 +18,7 @@ NEUTRAL_VERBS: set[str] = {
     "added", "commented", "remarked", "observed", "reported",
     "confirmed", "acknowledged", "responded", "replied",
     "mentioned", "indicated", "described", "recalled",
+    "wrote", "addressed", "pointed",  # "wrote"/"addressed" for letters, "pointed out"
     # Present-tense forms — many publications use present tense for
     # attribution ("says Gong", "notes Ji") especially in analytical and
     # explainer articles.  Missing these caused zero-source detection on
@@ -27,6 +28,7 @@ NEUTRAL_VERBS: set[str] = {
     "confirms", "acknowledges", "responds", "replies",
     "mentions", "indicates", "describes", "recalls",
     "agrees", "points",  # "agrees" / "points out" — common neutral verbs
+    "writes", "addresses",  # present-tense of added verbs
 }
 
 LOADED_VERBS: set[str] = {
@@ -36,6 +38,7 @@ LOADED_VERBS: set[str] = {
     "boasted", "bragged", "complained", "fumed", "lamented",
     "ranted", "scoffed", "sneered", "vowed", "threatened",
     "confessed", "revealed", "declared", "proclaimed",
+    "called", "dismissed", "rejected", "downplayed",
     # Present-tense forms
     "claims", "argues", "warns", "insists", "admits",
     "concedes", "denies", "blasts", "slams", "demands",
@@ -43,6 +46,7 @@ LOADED_VERBS: set[str] = {
     "boasts", "brags", "complains", "fumes", "laments",
     "rants", "scoffs", "sneers", "vows", "threatens",
     "confesses", "reveals", "declares", "proclaims",
+    "calls", "dismisses", "rejects", "downplays",
 }
 
 ALL_VERBS: set[str] = NEUTRAL_VERBS | LOADED_VERBS
@@ -82,6 +86,20 @@ _NAME_STOP_FIRST_WORDS: set[str] = {
     "But", "And", "Also", "Still", "Yet", "Then", "Now",
     "Such", "Much", "Not", "Just", "Only", "Even",
     "Already", "Perhaps", "Maybe", "Certainly",
+}
+
+# Publication / organization partial names that look like "First Last"
+# and would false-positive as a source name.  E.g. "The New York Times
+# reported" → the named-source regex might match "York Times" as a name.
+_NAME_STOP_NAMES: set[str] = {
+    "York Times", "York Post", "Wall Street",
+    "Street Journal", "Washington Post",
+    "New York", "Los Angeles", "San Francisco",
+    "Silicon Valley", "United States", "United Kingdom",
+    "South Korea", "North Korea", "South China",
+    "North America", "South America", "East Asia",
+    "Hong Kong", "Saudi Arabia", "Costa Rica",
+    "Puerto Rico", "El Salvador",
 }
 
 # Anonymous source indicators
@@ -128,16 +146,64 @@ def _extract_affiliation(context: str) -> str:
 
     Looks for patterns like "of [Organization]", "at [Organization]",
     "from [Organization]", "[Organization]'s".
+
+    Handles complex institution names with hyphens (Urbana-Champaign),
+    em dashes (Wisconsin–Madison), possessives (Georgetown's), and
+    lowercase connecting words (Center for Security and Emerging Technology).
     """
+    # Character class for institution names: letters, spaces, ampersands,
+    # hyphens, en/em dashes, apostrophes/smart quotes, and periods (for
+    # abbreviations like "U.S." or "St.").
+    _INST_CHARS = r"A-Za-z &\-\u2013\u2014''\."
+
     patterns = [
-        re.compile(r"\b(?:of|at|from|with)\s+(?:the\s+)?([A-Z][A-Za-z\s&]+?)(?:[,.]|\s+(?:said|told|who))", re.DOTALL),
-        re.compile(r"([A-Z][A-Za-z\s&]+?)(?:'s|'s)\s+(?:CEO|president|director|chief|head|spokesperson)", re.DOTALL),
+        # Pattern 0 (most specific): "[Organization]'s CEO/president/director/etc."
+        # Must be tried first — prevents false positives from the broader
+        # "of [Organization]" pattern that can match junk from context window.
+        # E.g., "Meta's vice president of communications" should extract "Meta",
+        # not "NameTag system into the Meta AI app" from "portions of the NameTag..."
+        re.compile(
+            r"([A-Z][" + _INST_CHARS + r"]+?)"
+            r"(?:'s|'s|\u2019s)\s+"
+            r"(?:(?:chief|vice|deputy|senior|executive|associate|assistant|managing)\s+)*"
+            r"(?:CEO|president|officer|director|chief|head|spokesperson|editor|counsel)",
+            re.DOTALL,
+        ),
+        # Pattern 1: "at [the] [Institution Name][,. or attribution verb]"
+        # Non-greedy match capped at 60 chars to prevent spanning
+        # across paragraph boundaries when _INST_CHARS includes spaces.
+        re.compile(
+            r"\b(?:of|at|from|with)\s+(?:the\s+)?"
+            r"([A-Z][" + _INST_CHARS + r"]{1,60}?)"
+            r"(?:[,.\n]|\s+(?:" + "|".join([
+                "said", "told", "who", "says", "tells", "noted", "notes",
+                "agrees", "adds", "added", "explained", "explains",
+                "confirmed", "warned", "argues", "recalled", "reported",
+            ]) + r"))",
+            re.DOTALL,
+        ),
+        # Pattern 2: Possessive: "Georgetown's Center for ..."
+        # Captures the full name after the possessive through to a
+        # sentence-ending or attribution cue.
+        re.compile(
+            r"([A-Z][A-Za-z]+)['\u2019]s\s+"
+            r"([A-Z][" + _INST_CHARS + r"]{1,60}?)"
+            r"(?:[,.\n]|\s+(?:" + "|".join([
+                "said", "told", "who", "says", "tells", "noted", "notes",
+                "agrees", "adds", "added", "explained", "explains",
+            ]) + r"))",
+            re.DOTALL,
+        ),
     ]
-    for pat in patterns:
+    for i, pat in enumerate(patterns):
         m = pat.search(context)
         if m:
-            aff = m.group(1).strip()
-            # Filter out generic words
+            if i == 2:
+                # Possessive pattern: combine "Georgetown" + "Center for ..."
+                aff = m.group(1).strip() + "'s " + m.group(2).strip()
+            else:
+                aff = m.group(1).strip()
+            # Filter out generic words and overly short matches
             if len(aff) > 2 and aff not in {"The", "A", "An", "This", "That"}:
                 return aff
     return ""
@@ -189,6 +255,9 @@ def extract_sources(text: str) -> list[SourceMention]:
         # English word that happened to be capitalised at sentence start
         first_word = name.split()[0]
         if first_word in _NAME_STOP_FIRST_WORDS:
+            continue
+        # Filter out publication/organization partial names
+        if name in _NAME_STOP_NAMES:
             continue
 
         seen_names.add(name)
@@ -256,10 +325,11 @@ def extract_sources(text: str) -> list[SourceMention]:
 
     # Pattern 5: "[Name], [appositive clause], [verb]"
     # Catches "Jessica Ji, a senior research analyst at Georgetown, agrees."
+    # Also catches "Tracy Clayton, a Meta spokesperson, tells WIRED."
     # The appositive is a comma-delimited descriptor between name and verb.
     name_appositive_verb = re.compile(
         rf"\b([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+)"
-        rf",\s+(?:an? |the )?[a-z]{{2,}}"  # start of appositive
+        rf",\s+(?:an? |the )?[A-Za-z]{{2,}}"  # start of appositive (may have capitalized org names)
         rf"[^.\"]*?"                         # rest of appositive (no sentence-end or quote)
         rf",\s*({verb_alternation})\b",
     )
@@ -271,6 +341,8 @@ def extract_sources(text: str) -> list[SourceMention]:
 
         first_word = name.split()[0]
         if first_word in _NAME_STOP_FIRST_WORDS:
+            continue
+        if name in _NAME_STOP_NAMES:
             continue
 
         seen_names.add(name)
@@ -292,7 +364,7 @@ def extract_sources(text: str) -> list[SourceMention]:
     anon_patterns = [
         re.compile(r"\baccording to (?:people|sources|individuals)", re.IGNORECASE),
         re.compile(r"\bpeople familiar with (?:the )?(?:matter|situation|plans|discussions?)", re.IGNORECASE),
-        re.compile(r"\bspoke on (?:the )?condition (?:of )?anonymity", re.IGNORECASE),
+        re.compile(r"\bspoke (?:with \w+ )?on (?:the )?condition (?:of )?anonymity", re.IGNORECASE),
         re.compile(r"\basked not to be (?:identified|named)", re.IGNORECASE),
         re.compile(r"\bsources (?:said|told|indicated|close to|inside|within|briefed on)", re.IGNORECASE),
         re.compile(r"\ba person with (?:direct )?knowledge", re.IGNORECASE),
@@ -326,6 +398,11 @@ def extract_sources(text: str) -> list[SourceMention]:
             r"(?:[a-z]+[ -])?"
             r"(?:worker|employee|staffer|engineer|executive|official|leader|manager|person|researcher|analyst|source)"
             r"(?:\s+(?:who\s+works?\s+(?:on|at|in|for)\s+\w+|at\s+\w+|inside\s+\w+))?",
+            re.IGNORECASE,
+        ),
+        # "People who requested/declined/asked for anonymity"
+        re.compile(
+            r"\b(?:people|persons|individuals|sources?) who (?:requested|declined|asked for|demanded|insisted on) anonymity\b",
             re.IGNORECASE,
         ),
         # "[number] employees/sources" — "according to three employees", "16 current and former employees"
@@ -772,7 +849,59 @@ def analyze_source_stance(
             # These are neutral-to-positive — don't shift
             pass
 
-        if neg_count > pos_count:
+        # --- Spokesperson-by-role detection ---
+        # Named spokesperson sources (e.g. "Meta spokesperson Tracy Clayton")
+        # are inherently supportive of the entity they represent — that's
+        # their job function.  Classify as supportive unless the quote
+        # contains strong adversarial language (rare whistleblower edge case).
+        # This prevents PR/communications statements ("safeguards in place",
+        # "data is not used for any other purpose") from being coded as
+        # neutral when they are clearly defensive of the entity.
+        is_spokesperson = False
+        if not source.is_anonymous:
+            source_context = (source.name + " " + source.affiliation).lower()
+            _SPOX_TITLES = (
+                "spokesperson", "spokesman", "spokeswoman",
+                "communications director", "press secretary",
+                "media representative", "pr representative",
+                "public relations",
+                "vice president of communications",
+                "vp of communications",
+                "head of communications",
+                "chief communications officer",
+                "director of communications",
+                "communications chief",
+            )
+            is_spokesperson = any(
+                term in source_context or term in context_text
+                for term in _SPOX_TITLES
+            )
+            # Also search full article text for "[title] ... [Name]" or
+            # "[Name], a/the [title]" patterns — the affiliation field
+            # may not capture the spokesperson descriptor.
+            if not is_spokesperson and full_text:
+                name_parts = source.name.strip().split()
+                last_name = name_parts[-1].lower() if name_parts else ""
+                full_name_lower = source.name.strip().lower()
+                if last_name:
+                    ft_lower = full_text.lower()
+                    for title in _SPOX_TITLES:
+                        # "[title] [FirstName] [LastName]" or "[title] [LastName]"
+                        if (
+                            f"{title} {full_name_lower}" in ft_lower
+                            or f"{title} {last_name}" in ft_lower
+                            or f"{last_name}, a {title}" in ft_lower
+                            or f"{last_name}, the {title}" in ft_lower
+                            or f"{last_name}, {title}" in ft_lower
+                        ):
+                            is_spokesperson = True
+                            break
+
+        if is_spokesperson and neg_count < 3:
+            # Spokesperson classified as supportive unless overwhelmingly
+            # adversarial (3+ negative terms = possible whistleblower)
+            supportive.append(source.name)
+        elif neg_count > pos_count:
             adversarial.append(source.name)
         elif pos_count > neg_count:
             supportive.append(source.name)

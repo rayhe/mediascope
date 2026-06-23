@@ -67,7 +67,7 @@ _GUILT_BY_ASSOCIATION_PATTERNS: list[re.Pattern] = [
 _ANONYMOUS_AUTHORITY_PATTERNS: list[re.Pattern] = [
     re.compile(r"\baccording to (?:people|sources|individuals|persons)\b", re.IGNORECASE),
     re.compile(r"\bpeople familiar with (?:the )?(?:matter|situation|plans|discussions?)\b", re.IGNORECASE),
-    re.compile(r"\bspoke on (?:the )?condition (?:of )?anonymity\b", re.IGNORECASE),
+    re.compile(r"\bspoke (?:with \w+ )?on (?:the )?condition (?:of )?anonymity\b", re.IGNORECASE),
     re.compile(r"\basked not to be (?:identified|named)\b", re.IGNORECASE),
     re.compile(r"\bpeople who (?:requested|declined|asked for) anonymity\b", re.IGNORECASE),
     re.compile(r"\bsources (?:close to|inside|within|briefed on)\b", re.IGNORECASE),
@@ -267,6 +267,25 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"shattered|privacy zealots?|"
         r"insane amounts?|"
         r"horrifically|horrific)"
+        r"\b",
+        re.IGNORECASE,
+    ),
+    # Privacy-violation and social-predation language — terms that frame
+    # commercial products or their users as threats to personal safety
+    re.compile(
+        r"\b(?:pervert|perverted|perverts|"
+        r"predatory|predator|predators|"
+        r"prowling|prowl|prowls|"
+        r"creep|creepy|creeps|"
+        r"stalking|stalker|stalkers|stalk|"
+        r"harassment|harassing|harasser|"
+        r"intimidation|intimidating|"
+        r"violation|violating|"
+        r"unsettling|disturbing|"
+        r"invasive|"
+        r"doomed|dystopian|"
+        r"pestering|"
+        r"juvenile)"
         r"\b",
         re.IGNORECASE,
     ),
@@ -714,16 +733,148 @@ _RHETORICAL_QUESTION_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["rhetorical_question"] = _RHETORICAL_QUESTION_PATTERNS
 
 
+# --- Analogy stacking ---
+# Detects when an article uses multiple distinct analogies/comparisons for the
+# same subject.  Three or more stacked analogies is a persuasion technique that
+# amplifies perceived severity beyond what any single comparison conveys.
+# Pattern: comparison markers ("like," "the equivalent of," "compared to,"
+# "likened it to," etc.).  Individual matches are collected and the device
+# fires as a post-pass in detect_framing_devices when 3+ are found.
+_ANALOGY_MARKER_PATTERNS: list[re.Pattern] = [
+    # "the [digital/modern/online] equivalent of"
+    re.compile(
+        r"\bthe (?:\w+ )?equivalent of\b.{3,80}",
+        re.IGNORECASE,
+    ),
+    # "likened it to" / "I've likened it to"
+    re.compile(
+        r"\b(?:I(?:'ve)? )?liken(?:ed|s)? (?:it |this |them |that )?to\b.{3,60}",
+        re.IGNORECASE,
+    ),
+    # "compared it to" / "others have compared it to"
+    re.compile(
+        r"\b(?:have |has )?compare[sd]? (?:it |this |them |that )?to\b.{3,60}",
+        re.IGNORECASE,
+    ),
+    # "like [a/an/the] [noun]" used as simile — requires article or determiner
+    # to avoid matching "like" as a verb
+    re.compile(
+        r"\blike (?:a|an|the|another|some) (?:\w+ ){0,3}\w+",
+        re.IGNORECASE,
+    ),
+    # "is [essentially/basically] [a/an]" — metaphor construction
+    re.compile(
+        r"\bis (?:essentially |basically |effectively )?(?:a|an) .{3,60}?(?:\.|,|;)",
+        re.IGNORECASE,
+    ),
+    # "think of it as" / "think of slop as"
+    re.compile(
+        r"\bthink of (?:it|this|them|that|\w+) as\b.{3,60}",
+        re.IGNORECASE,
+    ),
+    # "reminiscent of" / "evokes" / "echoes of"
+    re.compile(
+        r"\b(?:reminiscent of|evokes?|echoes? of)\b.{3,60}",
+        re.IGNORECASE,
+    ),
+]
+
+# Note: analogy_stacking patterns are NOT registered in _DEVICE_PATTERNS
+# because the device fires only when 3+ distinct analogy markers are found.
+# Individual markers are collected by _detect_analogy_stacking() and injected
+# into the results if threshold is met.
+
+
+# --- Ironic quotation ---
+# Detects when a direct quote from a tech/corporate figure is immediately
+# undercut by editorial contradiction — a rhetorical device where the
+# subject's own words are deployed against them.
+# Pattern: quoted text followed within ~2 sentences by a contradiction marker.
+_IRONIC_QUOTATION_PATTERNS: list[re.Pattern] = [
+    # Quote ending followed by contradiction — smart quotes
+    re.compile(
+        r'[\u201d"].{0,10}?'     # end of quote
+        r'(?:\.\s+|\s*[;:]\s*)'  # sentence boundary
+        r'(?:But |Yet |However,? |In (?:other words|reality|practice|fact),? |'
+        r'The (?:idea|reality|truth|problem|trouble) is |'
+        r'What .{3,40}? (?:is actually|actually|really) |'
+        r'(?:That|This|It) (?:is|was|sounds) .{0,20}?(?:wrong|misleading|naive|'
+        r'simplistic|misguided|disingenuous|absurd|laughable|delusional))',
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "seems to elide" / "seems to ignore" / "seems to forget" — undercut via
+    # polite intellectual dismissal (common in Atlantic/NYT essay prose)
+    re.compile(
+        r'[\u201d"].{0,200}?'
+        r'\bseems? to (?:elide|ignore|forget|overlook|miss|gloss over|paper over|'
+        r'conflate|sidestep|obscure|downplay|minimize)',
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "wrongly believe" / "wrongly assume" — editorial verdict after quote
+    re.compile(
+        r'[\u201d"].{0,200}?'
+        r'\b(?:wrongly|mistakenly|naively|incorrectly) '
+        r'(?:believe|assume|suggest|claim|imply|argue)',
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+
+_DEVICE_PATTERNS["ironic_quotation"] = _IRONIC_QUOTATION_PATTERNS
+
+
+def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
+    """Detect analogy stacking — 3+ distinct analogies for the same subject.
+
+    Returns a list of FramingDevice objects (one per matched analogy marker)
+    only if the threshold (3+) is met.  If fewer than 3 markers are found,
+    returns an empty list.
+    """
+    markers: list[FramingDevice] = []
+    seen_spans: set[tuple[int, int]] = set()
+
+    for pattern in _ANALOGY_MARKER_PATTERNS:
+        for match in pattern.finditer(text):
+            start, end = match.start(), match.end()
+
+            # Deduplicate overlapping matches
+            overlap = False
+            for ex_start, ex_end in seen_spans:
+                if not (end <= ex_start or start >= ex_end):
+                    overlap = True
+                    break
+            if overlap:
+                continue
+
+            seen_spans.add((start, end))
+            evidence = match.group().strip()
+            if len(evidence) > 200:
+                evidence = evidence[:200] + "..."
+
+            markers.append(
+                FramingDevice(
+                    device_type="analogy_stacking",
+                    evidence_text=evidence,
+                    start=start,
+                    end=end,
+                )
+            )
+
+    # Only fire if 3+ distinct analogy markers are found
+    if len(markers) >= 3:
+        return markers
+    return []
+
+
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for patterns associated with 15 types of editorial framing:
+    Scans for patterns associated with 17 types of editorial framing:
     guilt_by_association, anonymous_authority, catastrophizing,
     false_balance, selective_omission_signal, emotional_appeal,
     straw_man, loaded_language, refusal_amplification,
     juxtaposition, timeline_implication, power_asymmetry,
     military_techno_optimism, selective_rehabilitation,
-    and rhetorical_question.
+    rhetorical_question, ironic_quotation, and analogy_stacking.
 
     Args:
         text: The article text to analyze.

@@ -44,7 +44,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Chris Cox", "Maher Saba", "Meta Superintelligence Labs",
             "Applied AI", "Cambridge Analytica",
         ],
-        "regex": r"(?<!\w)(Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport))|Meta Platforms|Facebook|Instagram|WhatsApp|Threads|Mark Zuckerberg|Zuckerberg|Meta AI|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Meta Superintelligence Labs|Applied AI|Cambridge Analytica)(?!\w)",
+        "regex": r"(?<!\w)(Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport))|Meta Platforms|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|Meta AI|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Meta Superintelligence Labs|Applied AI|Cambridge Analytica)(?!\w)",
     },
     "Google": {
         "aliases": [
@@ -124,10 +124,14 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "The New York Times", "New York Times", "NYT",
             "The Washington Post", "Washington Post",
             "The Guardian", "Guardian",
+            "WIRED", "Wired",
+            "The Atlantic", "Atlantic",
+            "MIT Technology Review",
             "Reuters", "Associated Press", "AP",
             "Bloomberg", "Financial Times",
             "TechCrunch", "The Verge", "Ars Technica",
             "The Information",
+            "Business Insider", "404 Media",
         ],
     },
     "Whistleblowers/Critics": {
@@ -175,6 +179,22 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "unionize", "unionization", "labor union",
         ],
     },
+    "TikTok": {
+        "aliases": [
+            "TikTok", "ByteDance", "Shou Zi Chew",
+        ],
+    },
+    "Snap": {
+        "aliases": [
+            "Snap", "Snapchat", "Spectacles", "Evan Spiegel",
+        ],
+        "regex": r"(?<!\w)(Snap(?:chat)?|Spectacles|Evan Spiegel)(?!\w)",
+    },
+    "EssilorLuxottica": {
+        "aliases": [
+            "EssilorLuxottica", "Essilor", "Luxottica",
+        ],
+    },
 }
 
 
@@ -216,10 +236,14 @@ def _build_patterns(
     - List format: ``["alias1", "alias2", ...]``
 
     When a cluster provides a ``regex`` key, that pattern is compiled once for
-    the whole cluster.  Otherwise, individual alias patterns are built with
-    word-boundary matching (longest-first).
+    the whole cluster.  The canonical name for each match is resolved at match
+    time (see ``detect_entities``); the tuple stores the alias list so the
+    closest alias can be found.
 
-    Returns a list of (compiled_pattern, canonical_name, cluster_name) tuples.
+    Returns a list of (compiled_pattern, canonical_name_or_aliases, cluster_name)
+    tuples.  For cluster-level regex patterns, canonical_name_or_aliases is the
+    alias list (as a ``|``-joined string prefixed with ``__ALIASES__:``); for
+    individual alias patterns, it is the alias string itself.
     """
     # Phase 1: clusters that supply their own regex — one pattern per cluster
     cluster_patterns: list[tuple[re.Pattern, str, str]] = []
@@ -234,9 +258,9 @@ def _build_patterns(
         if custom_regex:
             try:
                 compiled = re.compile(custom_regex, re.IGNORECASE)
-                # Use the first alias as the canonical name for cluster-level regex
-                canonical = aliases[0] if aliases else cluster_name
-                cluster_patterns.append((compiled, canonical, cluster_name))
+                # Store aliases for later canonical-name resolution
+                aliases_tag = "__ALIASES__:" + "|".join(aliases)
+                cluster_patterns.append((compiled, aliases_tag, cluster_name))
             except re.error as exc:
                 logger.warning(
                     "Invalid regex for cluster %s, falling back to alias matching: %s",
@@ -267,6 +291,42 @@ def _build_patterns(
 
     # Cluster-level patterns first (they tend to be more precise), then alias patterns
     return cluster_patterns + alias_patterns
+
+
+def _resolve_canonical(matched_text: str, aliases_tag: str) -> str:
+    """Resolve the canonical name for a cluster-level regex match.
+
+    When a cluster uses a custom regex, the matched text could be any
+    entity in the cluster (e.g., "Andrew Bosworth" from the Meta cluster).
+    This function finds the closest alias to use as the canonical name,
+    preserving individual entity identity instead of collapsing everything
+    to the first alias.
+
+    Args:
+        matched_text: The actual text matched by the regex.
+        aliases_tag: The ``__ALIASES__:...`` string from ``_build_patterns``.
+
+    Returns:
+        The best canonical name — either an exact alias match or the
+        matched text itself if no alias matches.
+    """
+    aliases_str = aliases_tag.removeprefix("__ALIASES__:")
+    aliases = aliases_str.split("|")
+
+    # Try exact match (case-insensitive) first
+    matched_lower = matched_text.lower()
+    for alias in aliases:
+        if alias.lower() == matched_lower:
+            return alias
+
+    # Try substring containment — e.g., matched "Bosworth" is contained in
+    # alias "Andrew Bosworth"
+    for alias in aliases:
+        if matched_lower in alias.lower() or alias.lower() in matched_lower:
+            return alias
+
+    # Fallback: return matched text as-is (preserves entity identity)
+    return matched_text
 
 
 def _extract_sentence(text: str, start: int, end: int) -> str:
@@ -331,10 +391,15 @@ def detect_entities(
             covered.append((start, end))
             context = _extract_sentence(text, start, end)
 
+            # Resolve canonical name for cluster-level regex matches
+            resolved_canonical = canonical
+            if canonical.startswith("__ALIASES__:"):
+                resolved_canonical = _resolve_canonical(match.group(), canonical)
+
             mentions.append(
                 EntityMention(
                     entity=match.group(),
-                    canonical_name=canonical,
+                    canonical_name=resolved_canonical,
                     cluster=cluster,
                     start=start,
                     end=end,

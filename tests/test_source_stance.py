@@ -15,6 +15,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
 from mediascope.analyze.sources import (
     SourceMention,
+    _extract_affiliation,
     analyze_source_stance,
     extract_sources,
 )
@@ -147,6 +148,85 @@ class TestAnalyzeSourceStance:
         ]
         result = analyze_source_stance(sources)
         assert "Sarah Wynn-Williams" in result["adversarial_sources"]
+
+
+# ===================================================================
+# Affiliation Extraction Tests (Jun 22, 2026 regex rewrite)
+# ===================================================================
+
+class TestAffiliationExtraction:
+    """Test _extract_affiliation handles complex institution names:
+    em dashes, hyphens, possessives, and present-tense attribution verbs.
+    These patterns were missing and caused 3/4 missed affiliations on the
+    MIT TR AI security hack article (Jun 5, 2026).
+    """
+
+    def test_at_institution_with_past_tense_verb(self):
+        """Standard 'at [Institution] said' pattern."""
+        ctx = "a professor at Georgetown University said the findings"
+        assert "Georgetown University" in _extract_affiliation(ctx)
+
+    def test_at_institution_with_present_tense_verb(self):
+        """Present-tense attribution: 'at [Institution] says' — the main
+        pattern MIT TR uses throughout the AI security hack article."""
+        ctx = "an expert at MIT Lincoln Laboratory says this is concerning"
+        aff = _extract_affiliation(ctx)
+        assert "MIT Lincoln Laboratory" in aff
+
+    def test_em_dash_institution_name(self):
+        """Em dash in institution name: 'Wisconsin\u2013Madison'."""
+        ctx = "a researcher at the University of Wisconsin\u2013Madison said"
+        aff = _extract_affiliation(ctx)
+        assert "Wisconsin" in aff
+        assert "Madison" in aff
+
+    def test_hyphenated_institution_name(self):
+        """Hyphen in institution name: 'Urbana-Champaign'."""
+        ctx = "faculty at the University of Illinois Urbana-Champaign said"
+        aff = _extract_affiliation(ctx)
+        assert "Illinois" in aff
+        assert "Champaign" in aff
+
+    def test_possessive_institution(self):
+        """Possessive form: \"Georgetown's Center for Security\"."""
+        ctx = (
+            "a fellow at Georgetown's Center for Security and "
+            "Emerging Technology said the risk is real"
+        )
+        aff = _extract_affiliation(ctx)
+        assert "Georgetown" in aff
+        assert "Center" in aff
+
+    def test_agrees_as_attribution_verb(self):
+        """'agrees' should terminate affiliation capture."""
+        ctx = "a senior researcher at the University of Chicago agrees"
+        aff = _extract_affiliation(ctx)
+        assert "University of Chicago" in aff
+
+    def test_notes_as_attribution_verb(self):
+        """'notes' should terminate affiliation capture."""
+        ctx = "an analyst at Stanford Internet Observatory notes"
+        aff = _extract_affiliation(ctx)
+        assert "Stanford" in aff
+
+    def test_no_affiliation_in_plain_text(self):
+        """No false positives on text with no institutional pattern."""
+        ctx = "The company was founded in 2019 and has grown rapidly"
+        assert _extract_affiliation(ctx) == ""
+
+    def test_full_extract_sources_captures_affiliation(self):
+        """End-to-end: extract_sources should populate affiliation for
+        a source at an institution with present-tense attribution."""
+        text = (
+            '"The vulnerability was more severe than they let on," '
+            "says Yisroel Mirsky at Ben Gurion University."
+        )
+        sources = extract_sources(text)
+        matched = [s for s in sources if "Mirsky" in s.name]
+        assert len(matched) >= 1, f"Expected Mirsky in sources: {sources}"
+        assert matched[0].affiliation, (
+            f"Expected affiliation for Mirsky, got empty: {matched[0]}"
+        )
 
 
 # ===================================================================
