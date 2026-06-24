@@ -203,3 +203,29 @@ editorial_changes:
       date: "2021-08"
       source_url: "https://www.technologyreview.com/2021/06/22/1026816/mat-honan-joins-mit-technology-review-editor-in-chief/"
       notes: "KEY DOUBLE MIGRATION: Lichfield left for Wired as EIC (creating natural experiment). Honan came from BuzzFeed News (executive editor), previously Wired senior writer/columnist. Career: Wired → BuzzFeed → MIT TR. $292K + $74K benefits (FY2024 990). Start date Aug 17, 2021."
+
+    - position: "executive_editor_operations"
+      incoming: "Amy Nordrum"
+      date: "2020-07"
+      source_url: "https://amynordrum.com"
+      notes: "Joined as commissioning editor, promoted to executive editor of operations. Oversees 10 Breakthrough Technologies, Innovators Under 35, 15 Climate Tech Companies to Watch. Previously news manager at IEEE Spectrum. BA Ohio University, MA SHERP NYU, MBA NYU Stern. Science Friday contributor for 6 years."
+
+    - position: "senior_ai_editor"
+      incoming: "Will Douglas Heaven"
+      date: "2020-01"
+      source_url: "https://www.technologyreview.com/author/will-douglas-heaven/"
+      notes: "Senior editor for AI — shapes entire AI editorial direction. PhD Computer Science (Imperial College London). Previously founding editor BBC Future Now, chief tech editor New Scientist. UK-based (London). 219+ articles. Co-led FT partnership 'State of AI' newsletter series (Oct 2025)."
+
+    - position: "ft_editorial_partnership"
+      outgoing: null
+      incoming: null
+      date: "2025-10-29"
+      source_url: "https://morningstar.com"
+      notes: "STRATEGIC PARTNERSHIP: MIT TR × Financial Times 'State of AI' newsletter series. 6-part series pairing MIT TR reporters with FT correspondents: Chen+Thornhill (US vs China), Crownhart+Clark (Energy), O'Donnell+Warrell (War), Guo+Heikkilä (Privacy), Rotman+Waters (Economy), Heaven+Bradshaw (2030). Signals MIT TR positioning itself alongside FT for AI geopolitics authority."
+
+    - position: "national_magazine_award_finalist"
+      outgoing: null
+      incoming: null
+      date: "2026-03-09"
+      source_url: "https://ca.advfn.com"
+      notes: "EDITORIAL MILESTONE: National Magazine Award finalist (ASME Reporting) for 'Power Hungry: AI and our energy future' — James O'Donnell and Casey Crownhart's 6-month investigation into AI's energy footprint. Prompted OpenAI, Mistral, and Google to disclose energy/water usage data."
