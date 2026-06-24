@@ -4,6 +4,79 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-24 04:00 PT — Hour Type C: Ownership & Funding Deep Dive
+
+**Focus:** The Atlantic / Emerson Collective — expanded ownership chain, investment portfolio, corporate structure, and financial conflicts. Committed as `a887d94`.
+
+### What was improved:
+
+1. **MAJOR FINDING — io Products / OpenAI exit (severity 5):**
+   - Emerson Collective was a founding backer of io Products (Jony Ive's AI hardware startup), which OpenAI acquired for $6.5 BILLION in 2025 — OpenAI's largest acquisition ever
+   - Other backers: Thrive Capital, SV Angel, Sutter Hill Ventures. ~55 employees. $5B equity + $1.5B from prior 23% stake
+   - This creates a COMPOUND financial relationship: EC receives licensing revenue from OpenAI (since May 2024) AND realized a capital gain from OpenAI via the io exit
+   - No other tracked publication has an owner that both licenses content to AND has an equity exit through the same AI company
+   - Also creates Apple tension: LPJ holds $16B+ Apple stock, but io Products was designed to compete with Apple
+   - Sources: PitchBook, TechCrunch, The Information, Bloomberg, thehindubusinessline.com
+
+2. **Emerson Collective LLC structure documented:**
+   - EC is an LLC (not a 501(c)(3) nonprofit) — deliberate legal choice for flexibility
+   - The LLC is owned by the Emerson Collective Foundation (a 501(c)(3))
+   - Foundation operates Waverley Street Foundation as philanthropic arm (~$2.74B assets, May 2026)
+   - LLC-inside-foundation structure shields for-profit investments from public 990 disclosure
+   - Inside Philanthropy named LPJ "Least Transparent Mega-Giver" of 2019
+   - Sources: InfluenceWatch, Devex, ProPublica Nonprofit Explorer
+
+3. **Expanded investment portfolio (8 new entries):**
+   - io Products (Jony Ive, acquired by OpenAI $6.5B)
+   - Commonwealth Fusion Systems (2021, fusion)
+   - Boom Supersonic (2019, aerospace)
+   - Gimlet Media (2017, exited via Spotify ~$230M)
+   - Midi Health (2024, $60M Series B lead)
+   - Teal Health (2025, $10M seed, cancer screening device)
+   - Amplify (2015, edtech)
+   - Axios updated: exited 2022 when sold to Cox Enterprises for $525M
+   - Sources: Wikipedia (Emerson Collective article), PitchBook
+
+4. **Reed Jobs / Yosemite spinoff:**
+   - Cancer-focused VC spun out of EC in Aug 2023
+   - Fund I: $263M. Fund II: target $350M, raised $200M+
+   - ~20 portfolio companies (Tune Therapeutics, Chai Discovery)
+   - LPs: MIT, Memorial Sloan Kettering, Amgen, John Doerr
+   - CROSS-PUBLICATION LINK: MIT is both a Yosemite LP and parent of MIT Technology Review
+   - Sources: TechCrunch, Forbes India, Milken Institute bio, DealBook
+
+5. **Waverley Street Foundation grants:**
+   - $2.74B in assets (May 2026)
+   - Major grants: Climate Imperative Foundation ($36M x2, $18M x4), Conservation International ($21M), Thousand Currents ($20M), European Climate Foundation ($10M x2)
+   - Source: InfluenceWatch, Instrumentl
+
+6. **Atlantic business metrics updated:**
+   - 1.4M+ subscribers (Feb 2026, up from 1M+ mid-2024)
+   - Revenue over $100M, profitable since March 2024
+   - 15% subscriber growth YoY, 70%+ retention rate
+   - 3 tiers: Digital $79.99, Print+Digital $89.99, Premium $120
+   - Chief Growth Officer: Megha Garibaldi
+   - Sources: Press Gazette podcast, WAN-IFRA, pugpig.com, Editor & Publisher
+
+7. **Apple stock price updated:** AAPL at $294.30/share (Jun 24, 2026), market cap ~$4.37T
+
+8. **New conflict types added:**
+   - `investment_exit` (severity 5): io Products/OpenAI compound relationship
+   - `transparency` (severity 3): LLC structure opacity problem
+   - `cross_publication_link` (severity 1): Yosemite/MIT LP relationship
+
+### Stats:
+- Profile expanded by 275 lines (16 removed, 275 added)
+- New investment entries: 8
+- New conflict types: 3
+- Severity-5 conflict discovered: io Products / OpenAI exit
+- Date corrections: 0
+- Tests: 202 passing, YAML validated
+- Sources cited: 15+ unique URLs
+- Commit: `a887d94`
+
+---
+
 ## 2026-06-24 03:00 PT — Hour Type B: Journalist Career Research
 
 **Focus:** Expand career histories for 5 journalists across 3 publications (Wired, Atlantic, Guardian). Committed prior unstaged work (Alex Hern + Dan Milmo expansions), then deep-researched Steven Levy, Adrienne LaFrance, and Ian Bogost.
