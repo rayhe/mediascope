@@ -178,7 +178,7 @@ _EMOTIONAL_APPEAL_PATTERNS: list[re.Pattern] = [
     re.compile(
         r"\b(?:everyone is (?:unhappy|miserable|afraid|terrified)|"
         r"nobody is happy|no one is happy|"
-        r"morale (?:is |has |at )(?:rock.?bottom|historically low|all.time low|an? low)|"
+        r"morale.{0,40}(?:rock.?bottom|historically low|all.time low|an? all.time low)|"
         r"no(?:body has a)? choice|we have no choice|"
         r"social contract (?:is |has been )?(?:broken|shattered|dead)|"
         r"can.t (?:even )?feign (?:empathy|concern|care)|"
@@ -193,7 +193,7 @@ _EMOTIONAL_APPEAL_PATTERNS: list[re.Pattern] = [
     # displacement coverage where vulnerable users are positioned as
     # dependents losing essential services.
     re.compile(
-        r"\b(?:disabled?|disability|limited mobility|wheelchair|"
+        r"\b(?:disabled|disability|limited mobility|wheelchair|"
         r"social anxiety|depression|mental health|"
         r"(?:\d{2,3}) years? old|elderly|"
         r"isolated|lives? (?:alone|in (?:rural|remote))|"
@@ -267,7 +267,8 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"\b(?:embattled|beleaguered|troubled|scandal-plagued|"
         r"controversial|notorious|disgraced|under fire|"
         r"under siege|besieged|defiant|brazen|arrogant|"
-        r"tone-deaf|out of touch)\b",
+        r"tone-deaf|out of touch|nefarious|"
+        r"comically|laughably|absurdly)\b",
         re.IGNORECASE,
     ),
     # Scare quotes / hedging language that undermines
@@ -957,6 +958,107 @@ _PRESSURE_LANGUAGE_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["pressure_language"] = _PRESSURE_LANGUAGE_PATTERNS
 
 
+# ---------------------------------------------------------------------------
+# Kicker framing: editorial technique of ending an article on a discordant
+# negative note — the last paragraph introduces a critical context (workforce
+# turmoil, regulatory threat, ethical concern) that was NOT the article's
+# main topic.  This ensures the reader's final impression is negative
+# regardless of otherwise balanced or positive coverage.  Detected by
+# checking the final ~300 characters for negative signals when the article
+# body tone is neutral-to-positive.
+# ---------------------------------------------------------------------------
+_KICKER_NEGATIVE_SIGNALS: list[re.Pattern] = [
+    re.compile(
+        r"\b(?:turbulent|turmoil|at an all.time low|all.time low|"
+        r"rock.?bottom|historically low|historically poor|"
+        r"troubled|troubled times?|controversy|controversial|"
+        r"under fire|under siege|scandal|crisis|investigation|"
+        r"lawsuit|lawsuits|regulatory|regulators?|"
+        r"backlash|criticism|critics?|"
+        r"morale|workforce|layoff|layoffs|"
+        r"privacy concern|safety concern|"
+        r"employees? (?:are|were) (?:unhappy|miserable|angry|frustrated)|"
+        r"dark clouds?|uncertain|uncertainty)\b",
+        re.IGNORECASE,
+    ),
+]
+
+
+# ---------------------------------------------------------------------------
+# Speculative framing: editorial device deploying cumulative conditional
+# language ("could potentially," "might be able to," "in principle") to
+# construct a narrative of inevitability while maintaining individual
+# hedges.  A single hedge is good journalism; 10+ hedges in one article
+# is a framing technique that converts possibility into implied certainty.
+# Like analogy_stacking, this fires as a post-pass when the count exceeds
+# a threshold (5+ instances), since individual hedges are unremarkable.
+# ---------------------------------------------------------------------------
+_SPECULATIVE_FRAMING_PATTERNS: list[re.Pattern] = [
+    # "could potentially" / "could conceivably" / "could feasibly"
+    re.compile(
+        r"\bcould\s+(?:potentially|conceivably|feasibly|theoretically|"
+        r"in theory|in principle|plausibly|arguably|effectively|easily|"
+        r"very well|quite possibly)\b",
+        re.IGNORECASE,
+    ),
+    # "might be able to" / "might make it" / "might enable"
+    re.compile(
+        r"\bmight\s+(?:be able to|make it|enable|allow|permit|lead to|"
+        r"result in|facilitate|open the door|give)\b",
+        re.IGNORECASE,
+    ),
+    # "in principle" / "in theory" (standalone)
+    re.compile(
+        r"\b(?:in principle|in theory|hypothetically|theoretically)\b",
+        re.IGNORECASE,
+    ),
+    # "it's possible that" / "it is possible that" / "there's a chance"
+    re.compile(
+        r"\b(?:it(?:'s| is) (?:possible|conceivable|plausible|likely|not impossible)"
+        r"|there(?:'s| is) (?:a chance|a possibility|a risk|reason to (?:think|believe|fear))"
+        r"|there(?:'s| is) early evidence)\b",
+        re.IGNORECASE,
+    ),
+    # "not yet any" / "not yet evidence" / "no smoking gun"
+    re.compile(
+        r"\b(?:not yet any|no(?:t yet| ) (?:smoking.?gun|direct|clear|definitive|concrete)"
+        r"\s+evidence)\b",
+        re.IGNORECASE,
+    ),
+    # "could change that" / "could alter" / "could transform" / "could reshape"
+    re.compile(
+        r"\bcould\s+(?:change|alter|transform|reshape|upend|shift|undermine|"
+        r"erode|weaken|eliminate|remove|lessen)\b",
+        re.IGNORECASE,
+    ),
+    # "suggests that X could/might/may" — indirect evidence framing
+    re.compile(
+        r"\b(?:suggests?|indicates?|implies?|hints?)\s+that\b"
+        r".{0,60}?"
+        r"\b(?:could|might|may|can)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "raises the possibility" / "opens the door to" / "paves the way for"
+    re.compile(
+        r"\b(?:raises? the possibility|opens? the door|paves? the way"
+        r"|lays? the groundwork|sets? the stage)\b",
+        re.IGNORECASE,
+    ),
+    # Conditional "if X were to" / "if X wanted to" / "were X to"
+    re.compile(
+        r"\b(?:if\s+(?:\w+\s+){0,3}(?:were to|wanted to|chose to|decided to)"
+        r"|were\s+(?:\w+\s+){0,2}to\s+(?:\w+))\b",
+        re.IGNORECASE,
+    ),
+]
+
+# Note: speculative_framing patterns are NOT registered in _DEVICE_PATTERNS
+# because the device fires only when 5+ distinct speculative markers are
+# found (cumulative effect threshold).  Individual hedges are normal
+# journalism.  Detection happens in _detect_speculative_framing() and
+# results are injected by detect_framing_devices() when threshold is met.
+
+
 def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
     """Detect analogy stacking — 3+ distinct analogies for the same subject.
 
@@ -1000,16 +1102,65 @@ def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
     return []
 
 
+def _detect_speculative_framing(text: str) -> list[FramingDevice]:
+    """Detect speculative framing — 5+ cumulative speculative hedges.
+
+    Individual hedges ("could potentially," "might be able to") are standard
+    journalism.  When an article accumulates 5+ such constructions, the
+    cumulative effect converts possibility into implied inevitability — this
+    is an editorial framing technique distinct from individual cautious
+    language.
+
+    Returns a list of FramingDevice objects (one per matched hedge) only if
+    the threshold (5+) is met.  Below threshold, returns an empty list.
+    """
+    markers: list[FramingDevice] = []
+    seen_spans: set[tuple[int, int]] = set()
+
+    for pattern in _SPECULATIVE_FRAMING_PATTERNS:
+        for match in pattern.finditer(text):
+            start, end = match.start(), match.end()
+
+            # Deduplicate overlapping matches
+            overlap = False
+            for ex_start, ex_end in seen_spans:
+                if not (end <= ex_start or start >= ex_end):
+                    overlap = True
+                    break
+            if overlap:
+                continue
+
+            seen_spans.add((start, end))
+            evidence = match.group().strip()
+            if len(evidence) > 200:
+                evidence = evidence[:200] + "..."
+
+            markers.append(
+                FramingDevice(
+                    device_type="speculative_framing",
+                    evidence_text=evidence,
+                    start=start,
+                    end=end,
+                )
+            )
+
+    # Only fire if 5+ distinct speculative markers are found
+    if len(markers) >= 5:
+        return markers
+    return []
+
+
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for patterns associated with 17 types of editorial framing:
+    Scans for patterns associated with 19 types of editorial framing:
     guilt_by_association, anonymous_authority, catastrophizing,
     false_balance, selective_omission_signal, emotional_appeal,
     straw_man, loaded_language, refusal_amplification,
     juxtaposition, timeline_implication, power_asymmetry,
     military_techno_optimism, selective_rehabilitation,
-    rhetorical_question, ironic_quotation, and analogy_stacking.
+    rhetorical_question, ironic_quotation, analogy_stacking,
+    speculative_framing, and isolation_framing.
 
     Args:
         text: The article text to analyze.
@@ -1062,6 +1213,28 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
 
     # Sort by position in text
     devices.sort(key=lambda d: d.start)
+
+    # Post-pass: kicker framing detection
+    # Check if the final paragraph introduces negative context discordant
+    # from the article body.  Only fires if the last ~400 characters contain
+    # negative signals not present in the article's primary topic.
+    kicker_region = text[-400:] if len(text) > 400 else text
+    for pattern in _KICKER_NEGATIVE_SIGNALS:
+        for match in pattern.finditer(kicker_region):
+            # Calculate absolute position in text
+            abs_start = len(text) - len(kicker_region) + match.start()
+            abs_end = len(text) - len(kicker_region) + match.end()
+            evidence = match.group().strip()
+            devices.append(
+                FramingDevice(
+                    device_type="kicker_framing",
+                    evidence_text=evidence,
+                    start=abs_start,
+                    end=abs_end,
+                )
+            )
+            break  # One detection per article is sufficient
+
     return devices
 
 

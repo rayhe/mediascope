@@ -661,3 +661,135 @@ class TestRegulatoryPassiveFraming:
         text = "The administration is pressing the company to comply."
         agency = _measure_agency(text)
         assert agency < 0, f"Agency should be negative for 'is pressing', got {agency}"
+
+
+class TestProductNameStopFilter:
+    """Tests that product names like 'Meta Glasses' don't false-positive as sources."""
+
+    def test_meta_glasses_not_detected_as_source(self):
+        text = (
+            'Instead of Ray-Ban or Oakley branding to entice customers, '
+            'these are just called Meta Glasses.'
+        )
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Meta Glasses" not in names, (
+            f"'Meta Glasses' should be filtered as a product name, got: {names}"
+        )
+
+    def test_meta_quest_not_detected_as_source(self):
+        text = 'The device was called Meta Quest by reviewers.'
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Meta Quest" not in names
+
+    def test_real_names_still_detected(self):
+        text = 'Andrew Bosworth says it is a tremendous effort.'
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Andrew Bosworth" in names
+
+
+class TestKickerFraming:
+    """Tests for kicker framing detection — negative endings in otherwise neutral articles."""
+
+    def test_kicker_detected_in_product_review(self):
+        body = 'The new product launches with great features. ' * 20
+        kicker = 'The launch arrives at a turbulent time for the company.'
+        text = body + kicker
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "kicker_framing" in types
+
+    def test_no_kicker_in_short_text(self):
+        text = 'The launch arrives at a turbulent time for the company.'
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(text)
+        # Short text still detects the signal
+        types = [d.device_type for d in devices]
+        assert "kicker_framing" in types
+
+    def test_nefarious_as_loaded_language(self):
+        text = 'People have found ways to use it for nefarious purposes.'
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "loaded_language" in types
+
+    def test_comically_as_loaded_language(self):
+        text = 'Comically huge and bulky spectacles.'
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "loaded_language" in types
+
+    def test_disable_no_false_positive(self):
+        text = 'People have found ways to disable or block the light.'
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "emotional_appeal" not in types, (
+            f"'disable' should not trigger emotional_appeal, got: {types}"
+        )
+
+    def test_morale_with_intervening_clause(self):
+        text = 'Morale, which is at an all-time low, has been a problem.'
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "emotional_appeal" in types
+
+
+class TestWiredGlassesArticleIntegration:
+    """Integration test using the Wired Meta Glasses launch article."""
+
+    @staticmethod
+    def _load_article():
+        import os
+        path = os.path.join(
+            os.path.dirname(os.path.dirname(__file__)),
+            "examples", "sample_output",
+            "wired_meta_glasses_launch_self_branded_2026_06_23_article.txt"
+        )
+        with open(path) as f:
+            return f.read()
+
+    def test_meta_glasses_not_a_source(self):
+        article = self._load_article()
+        sources = extract_sources(article)
+        names = [s.name for s in sources]
+        assert "Meta Glasses" not in names
+
+    def test_bosworth_detected(self):
+        article = self._load_article()
+        sources = extract_sources(article)
+        names = [s.name for s in sources]
+        assert "Andrew Bosworth" in names
+
+    def test_brahmbhatt_detected(self):
+        article = self._load_article()
+        sources = extract_sources(article)
+        names = [s.name for s in sources]
+        assert "Ankit Brahmbhatt" in names
+
+    def test_kicker_framing_detected(self):
+        article = self._load_article()
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(article)
+        types = [d.device_type for d in devices]
+        assert "kicker_framing" in types
+
+    def test_surveillance_juxtaposition_detected(self):
+        article = self._load_article()
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(article)
+        types = [d.device_type for d in devices]
+        assert "juxtaposition" in types
+
+    def test_nefarious_loaded_language_detected(self):
+        article = self._load_article()
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(article)
+        evidence = [d.evidence_text for d in devices if d.device_type == "loaded_language"]
+        assert any("nefarious" in e.lower() for e in evidence)

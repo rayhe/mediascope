@@ -1,0 +1,38 @@
+SOURCE: Reuters (via KRRO syndication + Hindu Business Line repost, confirmed identical text)
+TITLE: Meta to pause internal mouse-tracking tech while examining data security issues
+DATE: 2026-06-22
+AUTHORS: Katie Paul and Jaspreet Singh
+SECTION: Legal / Litigation
+URL: https://www.reuters.com/legal/litigation/meta-pause-internal-mouse-tracking-tech-while-examining-data-security-issues-2026-06-22/
+WIRE SERVICE: Reuters
+CORRECTION: Corrects to say 'documentation showed' not 'document said' in paragraph 12
+
+---
+
+Meta said on Monday it will pause an internal program that tracks employee mouse movements and digital activity for AI training as the social media giant investigates data security concerns.
+
+The company's announcement follows revelations that sensitive employee data, intended to monitor digital interactions within Meta's internal systems, was accessible to all Meta staffers, according to documents reviewed by Reuters.
+
+The pause was first reported by Business Insider.
+
+While Meta confirmed the investigation, it declined to say how long Meta planned to halt the program.
+
+"We have carefully designed this program with privacy safeguards and while we have no indication at this time that any data was improperly accessed by Meta employees, we're pausing it while we investigate," said company spokesperson Tracy Clayton.
+
+The tool, Model Capability Initiative, or MCI, rolled out in April, captures mouse movements, clicks and keystrokes on U.S.-based employees' computers to train Meta's AI models.
+
+The tool was still recording as of Monday afternoon, a source told Reuters.
+
+The company spokesperson said the pause was rolling out and it would take time to halt the program for everyone.
+
+Meta's decision to pause MCI came after an employee filed an SEV, or high-priority security incident report, over its exposure of employee data.
+
+Data exposed included "full prompts and transcriptions, private conversations, people & performance data, DSS sensitivity ratings (1-4)," according to the internal documentation.
+
+Reuters reported in May the program was collecting more information than initially described and storing that data in unencrypted form, raising privacy concerns among employees.
+
+The internal documentation showed that an employee commented on the SEV discussion, asking for a deeper investigation into the issues.
+
+"I have accessed both personal tax and medical information through my work computer, as have many thousands of employees. We were told this data would be protected and only used for valid business purposes after aggressive filtering," the employee wrote.
+
+(Reporting by Jaspreet Singh in Bengaluru; Editing by Vijay Kishore)

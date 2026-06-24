@@ -105,10 +105,30 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
     "US Government": {
         "aliases": [
             "Pentagon", "Department of Defense", "FBI", "CIA",
-            "NSA", "US Marshals Service", "US Special Operations Command",
+            "NSA", "National Security Agency",
+            "US Marshals Service", "US Special Operations Command",
             "Naval Criminal Investigative Service", "NCIS",
             "Commerce Department", "FTC",
+            "ICE", "Immigration and Customs Enforcement",
+            "Drug Enforcement Administration", "DEA",
+            "Department of Government Efficiency", "DOGE",
+            "Internal Revenue Service", "IRS",
+            "Centers for Medicare & Medicaid Services", "CMS",
+            "Edward Snowden", "Snowden",
+            "Bureau of Alcohol Tobacco Firearms", "ATF",
         ],
+        "regex": r"(?<!\w)(Pentagon|Department of Defense|FBI|CIA"
+                 r"|NSA|National Security Agency"
+                 r"|US Marshals Service|US Special Operations Command"
+                 r"|Naval Criminal Investigative Service|(?-i:NCIS)"
+                 r"|Commerce Department|(?-i:FTC)"
+                 r"|(?-i:ICE)|Immigration and Customs Enforcement"
+                 r"|Drug Enforcement Administration|(?-i:DEA)"
+                 r"|Department of Government Efficiency|(?-i:DOGE)"
+                 r"|Internal Revenue Service|(?-i:IRS)"
+                 r"|Centers for Medicare & Medicaid Services|(?-i:CMS)"
+                 r"|Edward Snowden|Snowden"
+                 r"|Bureau of Alcohol Tobacco Firearms|(?-i:ATF))(?!\w)",
     },
     "Surveillance/Biometrics": {
         "aliases": [
@@ -206,6 +226,14 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "GDPR", "General Data Protection Regulation",
             "DPC", "Data Protection Commission",
             "European Commission", "EU Commission",
+        ],
+    },
+    "Data/Intelligence Industry": {
+        "aliases": [
+            "ShadowDragon", "Babel Street", "LexisNexis",
+            "Thomson Reuters CLEAR", "Voyager Labs", "Dataminr",
+            "Recorded Future", "Cellebrite", "NSO Group",
+            "Pegasus", "S2 Global", "Pen-Link",
         ],
     },
     "VR/Metaverse": {

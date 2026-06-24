@@ -100,6 +100,10 @@ _NAME_STOP_NAMES: set[str] = {
     "North America", "South America", "East Asia",
     "Hong Kong", "Saudi Arabia", "Costa Rica",
     "Puerto Rico", "El Salvador",
+    # Product names that look like "First Last"
+    "Meta Glasses", "Meta Adventurer", "Meta Fury",
+    "Meta Starfire", "Meta Quest", "Meta Horizon",
+    "Ray Ban", "Smart Glasses", "Gentle Monster",
 }
 
 # Anonymous source indicators
@@ -286,6 +290,49 @@ def extract_sources(text: str) -> list[SourceMention]:
         name = m.group(2).strip()
         if name in seen_names:
             continue
+
+        # Filter out false-positive names
+        first_word = name.split()[0]
+        if first_word in _NAME_STOP_FIRST_WORDS:
+            continue
+        if name in _NAME_STOP_NAMES:
+            continue
+
+        seen_names.add(name)
+
+        ctx_start = max(0, m.start() - 100)
+        ctx_end = min(len(text), m.end() + 100)
+        context = text[ctx_start:ctx_end]
+
+        sources.append(SourceMention(
+            name=name,
+            is_anonymous=False,
+            is_expert=_is_expert_by_title(context),
+            affiliation=_extract_affiliation(context),
+            quote=_extract_nearby_quote(text, m.start(), m.end()),
+            attribution_verb=verb,
+        ))
+
+    # Pattern 2b: "said/told [title/role phrase] [Name]" — verb, then a
+    # title like "company spokesperson" or "Meta official", then a proper
+    # name.  Wire services (Reuters, AP, AFP) routinely place the role
+    # between the verb and the name:  ``said company spokesperson Tracy
+    # Clayton``, ``told Reuters correspondent Jane Smith``.  Pattern 2
+    # misses these because it requires the name immediately after the verb.
+    verb_title_named = re.compile(
+        rf"\b({verb_alternation})\s+"
+        r"(?:(?:company|corporate|government|senior|chief|lead|former|a|an|the|its)\s+)?"
+        r"(?:spokesperson|spokeswoman|spokesman|representative|official|"
+        r"executive|director|analyst|correspondent|reporter|attorney|lawyer|"
+        r"vice\s+president|president|editor|manager|officer|adviser|advisor|"
+        r"chair(?:man|woman|person)?|commissioner|counsel)\s+"
+        r"([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+)\b",
+    )
+    for m in verb_title_named.finditer(text):
+        verb = m.group(1).strip().lower()
+        name = m.group(2).strip()
+        if name in seen_names:
+            continue
         seen_names.add(name)
 
         ctx_start = max(0, m.start() - 100)
@@ -309,6 +356,14 @@ def extract_sources(text: str) -> list[SourceMention]:
         name = m.group(1).strip()
         if name in seen_names:
             continue
+
+        # Filter out false-positive names
+        first_word = name.split()[0]
+        if first_word in _NAME_STOP_FIRST_WORDS:
+            continue
+        if name in _NAME_STOP_NAMES:
+            continue
+
         seen_names.add(name)
 
         ctx_start = max(0, m.start() - 100)
@@ -540,7 +595,7 @@ def extract_sources(text: str) -> list[SourceMention]:
     }
 
     for pat in org_source_patterns:
-        for m in org_source_patterns[0].finditer(text):
+        for m in pat.finditer(text):
             org_name = m.group(1).strip()
             # Only match if it looks like an organization name
             if org_name.lower() not in _KNOWN_ORGS:
