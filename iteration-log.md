@@ -4,6 +4,73 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-24 16:00 PT — Hour Type B: Journalist/Publication Research
+
+**Focus:** The Guardian — expanded from 8 to 10 tracked journalists and 9 to 12 editorial changes. Guardian had the biggest coverage gap: only 3 active tech journalists tracked (Dan Milmo, Johana Bhuiyan, Blake Montgomery) despite being one of the most analytically important publications for the Meta coverage bias project. Four journalists had departed since 2024 (Alex Hern → Economist, Kari Paul → art school, Samantha Oltman → Bloomberg, Hibaq Farah → NYT).
+
+### What was improved:
+
+1. **Dara Kerr — new journalist entry (journalists.yaml):**
+   - Guardian US tech reporter (Dec 2024–present)
+   - Career: freelance → CNET/CBS Interactive (Sep 2014–Jan 2021) → The Markup (Jan 2021–Jan 2023) → NPR (Jan 2023–Nov 2024) → Guardian (Dec 2024–)
+   - Education: NYU BA, Columbia SIPA (International Relations), UC Berkeley Graduate School of Journalism
+   - Beat: tech labor, gig economy, surveillance, Big Tech accountability
+   - Based in Bay Area. Originally from Colorado, lived in Latin America
+   - Replaces Kari Paul's West Coast tech reporter role
+   - Analytical value: Career arc shows consistent move toward public-interest, accountability-focused journalism models — each employer operates further from advertising-revenue dependency (CNET → nonprofit Markup → public media NPR → reader-funded Guardian). The Markup's data-driven investigative methodology is the analytical template she brings
+   - Sources: TalkingBizNews (4 articles: CNET departure, Markup hire, Markup departure, NPR hire, NPR departure, Guardian hire), DIARY directory (Jan 6 2025 announcement), AeroLeads profile
+
+2. **Robert Booth — new journalist entry (journalists.yaml):**
+   - Guardian UK Technology Editor (replaced Alex Hern, ~Oct 2024)
+   - NOT a cross-publication migration — 24-year Guardian veteran, internal beat change
+   - Previous beat: housing, homelessness, social affairs (20+ years)
+   - Known for: Grenfell Tower fire coverage (7-year inquiry, 72 deaths, corporate dishonesty exposé with Emine Sinmaz), FOI-intensive investigative methodology, Orwell Foundation panelist
+   - Analytical value: Guardian deliberately chose investigative rigor over tech-domain expertise. His Grenfell template (systemic corporate failure → government negligence → vulnerable population harm) maps directly onto tech accountability narratives. Tests whether an investigative/social affairs frame produces different tech coverage than tech-native reporters
+   - Sources: Orwell Foundation profile, Muck Rack (confirms current UK Technology Editor title), TalkingBizNews (Hern departure notice), WhatDoTheyKnow (FOI to Cabinet Office re: Grenfell companies, Sep 2024), Guardian Grenfell coverage
+
+3. **Caspar Llewellyn Smith — new editorial change entry (editorial_changes.yaml):**
+   - Guardian Chief AI Officer (~Jan 2024)
+   - 20+ year Guardian veteran: Daily Telegraph → Observer Music Monthly (2003) → Head of Culture → editor of theguardian.com → Director of Digital Strategy → executive committee (2015) → Chief Product Officer (~5 years) → CAIO
+   - Among first major UK newspapers to appoint a dedicated CAIO
+   - 4 focus areas: (1) external AI licensing agreements (making sure Guardian gets paid), (2) internal AI tool deployment, (3) strategic thinking about AI/journalism future, (4) org-wide AI training
+   - Set up Guardian AI Council (senior editors + technologists)
+   - Participated in Globe and Mail Foundation "Editing Democracy" panel (2026)
+   - Analytical value: CAIO role creates institutional AI strategy at executive level — separate from editorial coverage of AI. Dual positioning (covering AI critically while commercially licensing content to OpenAI) is the central tension in Guardian's AI posture
+   - Sources: The Org (title/career), The Media Stack interview (role details, 4 focus areas), BusinessWire (panel appearance)
+
+4. **Robert Booth — UK Technology Editor editorial change (editorial_changes.yaml):**
+   - Hern (11 years, tech-specialist) → Booth (24 years, zero tech journalism experience)
+   - Signal: Guardian values investigative methodology over subject-matter expertise
+
+5. **Dara Kerr — US Technology Reporter editorial change (editorial_changes.yaml):**
+   - Paul (departed mid-2024) → Kerr (Dec 2024), West Coast/Bay Area role continuity
+
+### Guardian tech desk current active roster:
+- **UK:** Dan Milmo (global tech editor), Robert Booth (UK tech editor)
+- **US:** Blake Montgomery (US tech editor, NY), Johana Bhuiyan (senior reporter, surveillance/accountability), Dara Kerr (reporter, Bay Area)
+- **Leadership:** Caspar Llewellyn Smith (Chief AI Officer), Katharine Viner (EIC)
+- **Departed 2024:** Alex Hern (→ Economist), Kari Paul (→ art school), Samantha Oltman (→ Bloomberg, after only 4 months), Hibaq Farah (→ NYT Opinion)
+
+### Editorial turnover analysis:
+The Guardian's tech desk experienced ~50% personnel turnover in 2024 alone (4 departures from ~8 active tech journalists). The replacements reveal a clear editorial strategy:
+- **UK:** Replaced a tech-native specialist (Hern) with an investigative generalist (Booth) — prioritizing accountability methodology over domain expertise
+- **US:** Replaced a departing reporter (Paul) with a labor/accountability specialist (Kerr) — deepening the accountability-journalism pipeline that Johana Bhuiyan already represents
+- **Structural:** Created a CAIO role to manage the commercial/editorial AI tension, rather than leaving it to editorial leaders
+
+### Files modified:
+- `profiles/careers/journalists.yaml` — 2 new journalist entries (Dara Kerr, Robert Booth)
+- `profiles/careers/editorial_changes.yaml` — 3 new entries (Llewellyn Smith CAIO, Booth UK tech editor, Kerr US tech reporter)
+
+### Stats:
+- Guardian journalists tracked: 8 → 10 (+25%)
+- Guardian editorial changes: 9 → 12 (+33%)
+- Total journalists: 51 → 53
+- Tests: 236/236 passing (no code changes)
+- Commit: `cc9da1e`
+- Pushed to GitHub: ✅
+
+---
+
 ## 2026-06-24 15:00 PT — Hour Type A: Article Deep Dive
 
 **Focus:** NYT — "U.S. Presses Meta to Agree to A.I. Reviews" (June 23, 2026). Manual analysis vs toolkit comparison, with 3 pattern fixes (2 anonymous source patterns, 1 juxtaposition false positive) and 20 new tests.
