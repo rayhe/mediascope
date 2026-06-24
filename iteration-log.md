@@ -4,6 +4,54 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-24 11:00 PT — Hour Type A: Article Deep Dive
+
+**Focus:** Wired — "Meta CTO Andrew Bosworth Admits the Company's AI Reorg Was 'Atrocious'" (~2026-06-16). Manual analysis vs toolkit comparison, with framing pattern fix and 6 new tests.
+
+### What was improved:
+
+1. **Committed prior unstaged work (`ae58a7e`):**
+   - self_referential_investigation framing device (21st type)
+   - Anchor correction path (Path C) for product reviews with embedded adversarial devices
+   - 15 new tests for anchor correction logic
+
+2. **Self-referential investigation — 2 new passive-voice patterns:**
+   - Pattern 4 (passive investigative): `VERB by PUBLICATION` — catches "reporting by WIRED," "investigation by The New York Times," "analysis by The Guardian"
+   - Pattern 5 (document access): `ACCESS_VERB by PUBLICATION` — catches "seen by WIRED," "obtained by The Guardian," "reviewed by MIT Technology Review," "leaked to WSJ"
+   - **Impact:** Bosworth article went from 0 → 3 self_referential_investigation detections, correctly identifying: "seen by WIRED" (×2), "reporting by WIRED" (×1)
+   - These passive/document-access constructions are extremely common in Wired and NYT reporting — the existing 3 active-voice patterns missed them entirely
+
+3. **Manual tone assessment: -0.30 vs toolkit -0.66:**
+   - Raw VADER: +0.62 — inflated by Bosworth's aspirational management-speak ("personalized attention," "better explaining," "fun and enjoyable," "invest responsibly")
+   - These are "damage control" hedges — they read positive to lexicon-based sentiment but function as admission-of-failure language
+   - Correction overcorrects from +0.62 → -0.66 (should be ~-0.30)
+   - Root cause documented: no "management-speak / damage-control language" detection to moderate correction magnitude
+
+4. **Source analysis gaps documented:**
+   - Lede "a top executive told" classified as anonymous — but IS Bosworth, named in the very next sentence. Needs paragraph-level coreference.
+   - Anonymous employee who called work "a gulag" — the article's most adversarial source — completely missed by source extractor. Needs attributive construction patterns: `one to describe it as "X"`, `workers described`.
+   - Stance balance shows 1.0 (fully supportive) when manual assessment is ~0.0 (balanced). The "gulag" employee is adversarial; Bosworth is self-critical, not supportive.
+
+5. **Framing gaps documented:**
+   - "Zuckerberg loyalist" loaded characterization not detected (primes reader to see Bosworth as aligned, not independent)
+   - Ironic juxtaposition in kicker (mass layoffs → fix with snacks) not distinguished from generic kicker_framing
+   - Selective quotation: choosing "a gulag" as the employee quote over presumably many less inflammatory options
+
+6. **6 new tests in `test_sentiment.py`:**
+   - `TestSelfReferentialInvestigationPassive` class: reporting_by_publication, investigation_by_nyt, seen_by_publication, obtained_by_guardian, reviewed_by_mit_tech_review, bosworth_article_full
+   - All pass. Full suite: **216 passed**
+
+### Stats:
+- Framing device types: 20 → 22 (self_referential_investigation patterns 3 → 5)
+- Manual tone: -0.30 (moderately negative)
+- Toolkit tone: -0.66 (overcorrected; direction correct, magnitude too aggressive)
+- Source analysis: 2 false positives, 1 missed adversarial anonymous source
+- Tests: 210 → 216 (+6)
+- Commits: `ae58a7e` (prior unstaged work), `2563cd1` (article deep dive + pattern fix)
+- Pushed to GitHub: ✅
+
+---
+
 ## 2026-06-24 05:00 PT — Hour Type D: Toolkit Quality & Documentation
 
 **Focus:** Massive documentation gap — METHODOLOGY.md documented only 8 of 20 framing device types. Added active-negative agency and tone correction pipeline documentation. Updated README sample gallery and journalist count.
