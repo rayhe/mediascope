@@ -170,10 +170,10 @@ Journalist YAML ──→ Career Tracker ──→ Migration Detection
 - **Security context adjustment**: Technical security/hacking articles use domain-specific language that inflates emotional intensity; the scorer reduces intensity for articles matching security topic patterns
 
 ### `framing.py`
-- **20 framing device types** organized in three tiers:
+- **22 framing device types** organized in three tiers:
   - **Core (12):** guilt by association, anonymous authority, catastrophizing, false balance, selective omission signal, emotional appeal, straw man, loaded language (including workplace coercion/revolt terms), refusal amplification, juxtaposition (including investment-near-layoffs), timeline implication, power asymmetry
-  - **Extended (6):** military techno-optimism, selective rehabilitation, rhetorical question, ironic quotation, isolation framing, pressure language
-  - **Structural post-pass (2):** kicker framing (checks final ~400 chars for discordant negative note), analogy stacking (fires when 3+ distinct analogy markers found)
+  - **Extended (7):** military techno-optimism, selective rehabilitation, rhetorical question, ironic quotation, isolation framing, pressure language, self-referential investigation (publication citing its own prior reporting as evidence within adversarial coverage)
+  - **Structural post-pass (3):** kicker framing (checks final ~400 chars for discordant negative note), analogy stacking (fires when 3+ distinct analogy markers found), speculative framing (fires when 5+ cumulative speculative hedges found — individual hedges are normal journalism; stacked hedges convert possibility into implied certainty)
 - Attribution verb analysis: neutral ("said"), undermining ("claimed"), concessive ("admitted"), adversarial ("warned")
 - **Workplace coercion/revolt language detection**: Terms like "no opt-out," "revolt," "nihilistic," "training their own replacements" detected as loaded language specific to labor/workplace framing
 - **Investment-near-layoffs juxtaposition detection**: Pattern where large spending figures ($X billion) appear near workforce cuts, an editorial device implying corporate indifference

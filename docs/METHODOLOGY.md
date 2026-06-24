@@ -162,7 +162,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 20 framing device types, organized into three tiers: core devices (the original 8, pattern-matched), extended devices (added from real-article analysis), and structural devices (detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 22 framing device types, organized into three tiers: core devices (the original 8, pattern-matched), extended devices (added from real-article analysis), and structural devices (detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -193,6 +193,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Ironic Quotation** | Deploying a source's own words, then immediately undercutting them editorially | Quote followed by "But," "Yet," "In reality," or verdict like "wrongly believe" | Atlantic AI slop article |
 | **Isolation Framing** | Singling out a company as "the only" one not doing what peers have done | "The only major company that has not," "unlike its peers," "singled out," "out of step" | NYT AI voluntary review article |
 | **Pressure Language** | Editorial word choices that frame actions as coercive | "Pressing," "pushing," "strong-arming," "confidential request," "private demand" | NYT AI voluntary review article |
+| **Self-Referential Investigation** | Publication citing its own prior reporting as evidence within adversarial coverage, creating a closed feedback loop | "reporting by WIRED," "a WIRED investigation found," "as WIRED previously reported," "WIRED has learned" patterns with 5+ tracked publication names | Wired Meta coverage pattern — publication becomes both investigator and source authority |
 
 #### Structural Devices (Post-Pass)
 
@@ -202,6 +203,7 @@ These devices are detected through structural analysis of the article rather tha
 |---|---|---|
 | **Kicker Framing** | Ending an article on a discordant negative note unrelated to the article's main topic | Scans the final ~400 characters for negative signals (morale crisis, regulatory threat, ethical concern) when the body tone is neutral-to-positive. Ensures the reader's final impression is negative regardless of otherwise balanced coverage. |
 | **Analogy Stacking** | Using 3+ distinct analogies/comparisons for the same subject to amplify perceived severity | Collects analogy markers ("the equivalent of," "likened it to," "compared it to," "like a/an") across the full text. Fires only when 3+ distinct markers are found. Individual analogies are not framing; stacking them is a persuasion technique. |
+| **Speculative Framing** | Deploying cumulative conditional language to construct a narrative of inevitability while maintaining individual hedges | Collects speculative hedges ("could potentially," "might be able to," "in principle," "could feasibly," "could conceivably") across the full text. Fires only when 5+ distinct speculative markers are found. A single hedge is good journalism; 10+ hedges in one article is a framing technique that converts possibility into implied certainty. |
 
 ### 4.2 Attribution Verb Analysis
 

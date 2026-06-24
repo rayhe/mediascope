@@ -184,7 +184,7 @@ print(f"Portable: {decomp.portable_bias_score:.3f}")
 
 ## Starter Data
 
-MediaScope ships with career data for 17 journalists across the 5 starter publications plus notable feeder outlets (The Verge, BuzzFeed News, Platformer, Reuters, Recode, WSJ):
+MediaScope ships with career data for **51 journalists** across the 5 starter publications plus notable feeder outlets (The Verge, BuzzFeed News, Platformer, Reuters, Recode, WSJ, Bloomberg, The Telegraph, New Scientist, Gizmodo, The Daily Beast, Politico, and others). 48 of these have multi-publication careers suitable for migration analysis.
 
 ### High-Value Migration Events
 
@@ -197,16 +197,35 @@ MediaScope ships with career data for 17 journalists across the 5 starter public
 | **Charlie Warzel** | BuzzFeed → NYT | The Atlantic | 2020 | Anti-Big-Tech stance across three outlets — high portable bias candidate |
 | **Mat Honan** | Wired/BuzzFeed | MIT Tech Review (EIC) | 2021 | Became EIC — tests whether a journalist changes an institution from the top |
 | **Kara Swisher** | WSJ → Recode | NYT | 2020 | Anti-Big-Tech across every outlet — the ultimate portable bias test case |
+| **Mike Isaac** | Wired → Recode | NYT | 2014 | 5-outlet career (Wired→AllThingsD→Forbes→Recode→NYT) — rich decomposition |
+| **Kashmir Hill** | Above the Law → Forbes → Fusion → Gizmodo | NYT | 2019 | 5-outlet career covering privacy/surveillance — portable stance test |
+| **Katie Drummond** | Bloomberg → Gizmodo → Medium → The Outline → Vice | Wired | 2022 | 7-outlet career ending as Wired editorial director — highest migration count in dataset |
+| **Jessica Hamzelou** | New Scientist (13 years) | MIT Tech Review | ~2023 | Longest single-outlet tenure before migration — deep institutional encoding test |
+| **Paresh Dave** | Reuters | Wired | ~2023 | Wire service → magazine — tests whether news-wire objectivity survives editorial culture |
+| **Johana Bhuiyan** | BuzzFeed → Recode → Politico | Guardian | ~2021 | 5-outlet career across investigative beats — tests stance portability across national contexts |
+| **Hibaq Farah** | NYT | Guardian | ~2023 | Reverse Atlantic crossing — US institutional norms meeting UK editorial culture |
+| **Kaitlyn Tiffany** | Vox → The Verge | The Atlantic | ~2020 | Digital-native → legacy prestige publication adaptation |
+| **Dell Cameron** | The Daily Dot → Vice → Gizmodo | Wired | ~2023 | Investigative security reporter across 4 outlets — consistent adversarial posture test |
 
 ### Editorial Leadership Changes
 
 | Publication | Change | When | Key Question |
 |---|---|---|---|
-| **Wired** | Katie Drummond → Editorial Director | Sept 2023 | Did Meta coverage get more adversarial? |
-| **Wired** | Nicholas Thompson → EIC | 2017 | Did political coverage expand? |
-| **MIT Tech Review** | Mat Honan → EIC | 2021 | Did AI coverage tone shift under ex-Wired writer? |
-| **The Atlantic** | Adrienne LaFrance → Executive Editor | 2021 | Did anti-tech stance intensify? |
-| **The Guardian** | Katharine Viner → EIC | 2015 | Control: long-stable leadership |
+| **Wired** | Katie Drummond → Global Editorial Director | Sept 2023 | Did Meta coverage get more adversarial? Most important change — career-long adversarial pipeline (Gizmodo→Vice→Wired) |
+| **Wired** | Leah Feiger → first-ever Politics Editor | Nov 2023 | Did Wired structurally shift from tech publication to tech-politics hybrid? |
+| **Wired** | Nicholas Thompson → EIC | Feb 2017 | Did political coverage expand? (Thompson later became Atlantic CEO) |
+| **Wired** | Gideon Lichfield → EIC | Sept 2020 | Double natural experiment: left MIT TR, arrived at Wired — test both source-side and dest-side effects |
+| **NYT** | Joseph Kahn → Executive Editor | June 2022 | Under his leadership, NYT sued OpenAI (Dec 2023). Did AI/Meta coverage shift? |
+| **NYT** | Pui-Wing Tam → Technology Editor | Jan 2015 | Built entire NYT tech team — recruited Isaac, Frenkel, Hill, Weise, Grant, Mickle. Institutional architect |
+| **NYT** | Zach Seward → Editorial Director of AI | Feb 2024 | First AI editorial role. Pro-AI-for-journalism within guardrails. Built Echo, Stet, Cheat Sheet |
+| **The Atlantic** | Nicholas Thompson → CEO | Dec 2020 | Former Wired EIC becoming Atlantic CEO — direct editorial culture bridge between Condé Nast and Emerson Collective |
+| **The Atlantic** | Adrienne LaFrance → Executive Editor | May 2019 | Wrote "Facebook is a Doomsday Machine" (2020). Did anti-tech-platforms framing intensify? |
+| **MIT Tech Review** | Mat Honan → EIC | Aug 2021 | Double migration: Wired→BuzzFeed→MIT TR. Did AI coverage tone shift under ex-Wired writer? |
+| **MIT Tech Review** | Gideon Lichfield → EIC | Dec 2017 | From Quartz/Economist — more investigative direction. Led MIT-Epstein scandal coverage |
+| **MIT Tech Review** | Will Douglas Heaven → Senior AI Editor | Jan 2020 | BBC/New Scientist veteran shaping entire AI editorial direction. UK-based |
+| **The Guardian** | Katharine Viner → EIC | June 2015 | Control: longest-stable leadership (11+ years). Best baseline for DiD analysis |
+| **The Guardian** | OpenAI licensing deal | Feb 2025 | Destroys "pure control case" status — creates direct commercial relationship with Meta's #1 AI competitor |
+| **The Guardian** | Samantha Oltman → "Reworked" AI editor | Feb 2026 | 4-month tenure before departure to Bloomberg — tests editorial resilience |
 
 ## Limitations
 
@@ -240,7 +259,7 @@ MediaScope's Editorial Histories module fills this gap by:
 1. Treating journalist migrations as natural experiments (novel application of DiD)
 2. Building a reusable career tracking infrastructure that any AI agent can extend
 3. Producing decomposition scores that are interpretable, comparable, and auditable
-4. Shipping with verified starter data for 17 journalists across 10+ publications
+4. Shipping with verified starter data for **51 journalists** across 10+ publications, with 48 having multi-publication careers suitable for migration analysis
 
 ## References
 
