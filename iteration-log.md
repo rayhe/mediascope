@@ -4,6 +4,69 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-24 15:00 PT — Hour Type A: Article Deep Dive
+
+**Focus:** NYT — "U.S. Presses Meta to Agree to A.I. Reviews" (June 23, 2026). Manual analysis vs toolkit comparison, with 3 pattern fixes (2 anonymous source patterns, 1 juxtaposition false positive) and 20 new tests.
+
+### What was improved:
+
+1. **New anonymous source pattern: numbered government officials**
+   - Problem: "two government officials said" (paragraph 8) was not detected by any anonymous source pattern in either `sentiment.py` or `framing.py`
+   - Root cause: patterns covered "people familiar with," "sources close to," "a person with knowledge of" — but NOT numbered institutional officials as anonymous sources
+   - Pattern added to both files: `N government/administration/intelligence/defense/senior/federal/White House/Commerce officials/aides/advisers said/told/confirmed`
+   - Impact: anonymous_authority framing devices 3 → 5 in this article; anonymous source detection 6 → 8
+   - This pattern type is extremely common in NYT/WaPo government-pressure reporting
+
+2. **New anonymous source pattern: person-involved proximity**
+   - Problem: "one person involved in the process said" (paragraph 10) was missed
+   - Root cause: existing patterns required "knowledge of" but not "involved in" / "close to" / "inside" / "privy to" — different semantic category (proximity vs knowledge)
+   - Pattern added to both files: `one/a person involved in|close to|inside|with the|within the|privy to|briefed on|engaged in` + context nouns (process, matter, talks, discussions, negotiations, deliberations, effort, planning)
+   - Impact: catches a common attribution construction in regulatory and diplomatic reporting
+
+3. **Juxtaposition false positive fix: "government" + "public" in policy context**
+   - Problem: "government up to 30 days to evaluate A.I. models before their release to the public" triggered military/consumer juxtaposition
+   - Root cause: "government" was in the military/enforcement term list, and "public" was in the consumer/civilian term list. Both are too generic — in policy reporting "government" means "federal regulator" (not military apparatus), and "public" means "general populace" (not consumer market)
+   - Fix: removed "government" from military/enforcement terms and "public" from consumer/civilian terms in both forward and reverse juxtaposition patterns
+   - Verified: legitimate military+consumer and Pentagon+civilian juxtapositions still fire correctly
+   - Impact: false positive juxtaposition 1 → 0 in this article
+
+### Manual tone assessment: -0.15 (mildly adversarial)
+
+The article positions Meta as a laggard/holdout using:
+- **Isolation framing** ("the only major U.S. developer") — centerpiece device
+- **Pressure language** ("pressing," 2x "confidential request") — government as active authority
+- **Dense anonymous sourcing** (5 distinct anonymous groups, 3 named sources)
+- **Implicit threat via Anthropic section** — even cooperators face consequences ("less than 90 minutes")
+- Diplomatic language ("advancing," "leadership," "secure") masks adversarial structure
+
+### Toolkit tone: +0.9856 (VADER)
+
+VADER is wildly wrong (+0.9856 vs manual -0.15). Root cause: diplomatic/policy language scans positive. "Advancing U.S. leadership on robust and secure frontier A.I." reads as strongly positive to VADER but is a corporate damage-control quote. This is a known VADER failure mode for institutional reporting — the sentiment correction system should catch it via isolation_framing + pressure_language adversarial device counts.
+
+### Entity detection notes:
+- Anthropic: 7 mentions (most mentioned entity — the cautionary example dominates)
+- Meta: 6 mentions (primary subject but fewer mentions than Anthropic)
+- Trump: 3 mentions (detected correctly)
+- Government entities not in cluster system: CAISI, White House, Commerce Department (partially caught via custom), Biden administration
+- Model names not tracked: Muse Spark, Fable 5
+
+### Files modified:
+- `mediascope/analyze/framing.py` — 2 new anonymous_authority patterns, juxtaposition fix
+- `mediascope/analyze/sentiment.py` — 2 new anonymous source patterns
+- `tests/test_nyt_ai_reviews.py` — NEW: 20 tests across 5 classes
+- `examples/sample_output/nyt_meta_ai_voluntary_review_2026_06_23_analysis.md` — updated with iteration 2 findings
+
+### Stats:
+- Framing devices: 8 → 9 (was 8 with false positive; now 9 without it: +2 anonymous_authority, -1 juxtaposition FP)
+- Manual tone: -0.15 (mildly adversarial)
+- Toolkit raw VADER: +0.9856 (wrong direction — known VADER limitation)
+- Anonymous source detection: 6 → 8 (+2 new patterns)
+- Tests: 216 → 236 (+20)
+- Commit: `835750e`
+- Pushed to GitHub: ✅
+
+---
+
 ## 2026-06-24 14:00 PT — Hour Type D: Toolkit Quality & Documentation
 
 **Focus:** Documentation reconciliation — audited all 6 docs + README against actual codebase and fixed systematic drift in framing device counts, journalist counts, and editorial leadership coverage.
