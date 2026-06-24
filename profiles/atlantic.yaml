@@ -11,19 +11,78 @@ rss_feeds:
 ownership_chain:
   - name: "The Atlantic"
     entity_type: "publisher"
-    description: "Founded 1857. Digital-first pivot under current ownership. 1M+ subscribers. Circulation grew 14% in 2023 and 2024; 20%+ readership gain in 2025."
+    description: >
+      Founded 1857. Digital-first pivot under current ownership. 1.4M+ subscribers (Feb 2026),
+      up from 1M+ in mid-2024. Revenue over $100M (2024), profitable since March 2024.
+      Subscription revenue up 15% YoY, overall revenue up 10%. 70%+ retention rate.
+      3 tiers: Digital $79.99/yr, Print+Digital $89.99/yr, Premium ad-free $120/yr.
+      Circulation grew 14% in 2023 and 2024; 20%+ readership gain in 2025.
+      Chief Growth Officer: Megha Garibaldi.
+    financial_sources:
+      - "https://www.editorandpublisher.com/stories/atlantic-tops-1-million-subscriptions/254812"
+      - "https://pugpig.com/the-atlantic-turnaround/"
+      - "https://wan-ifra.org/insight/how-the-atlantic-keeps-subscribers/"
   - name: "Atlantic Media"
     entity_type: "parent_company"
     description: "Majority owned by Emerson Collective since July 2017. David G. Bradley retained minority share initially; Emerson likely acquired full ownership."
   - name: "Emerson Collective"
     entity_type: "holding_company"
-    description: "Founded and led by Laurene Powell Jobs. Impact-focused (education, environment, healthcare). 130+ investments, majority in technology. KEY: $1B+ invested in AI startups since 2022."
+    description: >
+      Founded 2004 by Laurene Powell Jobs. Structured as a Limited Liability Corporation (LLC),
+      NOT a 501(c)(3) nonprofit — this is a deliberate legal choice that allows for-profit
+      investing, political advocacy, and reduced disclosure compared to a traditional foundation.
+      The LLC is owned by the Emerson Collective Foundation (a 501(c)(3)), which in turn operates
+      the Waverley Street Foundation as its philanthropic arm (~$2.74B assets as of May 2026).
+      This nested LLC-inside-foundation structure means EC's financial activities — including
+      for-profit investments and The Atlantic — are shielded from public 990 disclosure.
+      Inside Philanthropy named LPJ its "Least Transparent Mega-Giver" of the year (2019).
+      Venture team invests across AI, climate, healthcare, fintech, edtech, future of work,
+      and media. 130+ investments, majority in technology. $1B+ invested in AI startups since 2022.
+    legal_structure:
+      type: "LLC (Limited Liability Corporation)"
+      parent_entity: "Emerson Collective Foundation (501(c)(3))"
+      philanthropic_arm: "Waverley Street Foundation"
+      waverley_assets: "$2.74B (May 2026)"
+      transparency_note: >
+        LLC structure shields investment activities from public disclosure.
+        Foundation 990 shows grants but not LLC investment portfolio.
+        Named "Least Transparent Mega-Giver" by Inside Philanthropy (2019).
+      source_urls:
+        - "https://influencewatch.org/non-profit/emerson-collective/"
+        - "https://devex.com/news/inside-emerson-collective-s-vision-of-frictionless-support-for-grantees-93745"
+        - "https://projects.propublica.org/nonprofits/organizations/954893200"
     investments:
-      - entity: "Apple"
-        relationship: "Laurene Powell Jobs is Steve Jobs' widow. LPJ Trust holds massive Apple stock (~$16B+). Among Apple's largest individual shareholders."
+      - entity: "Apple (via LPJ Trust)"
+        relationship: >
+          Laurene Powell Jobs is Steve Jobs' widow. LPJ Trust holds massive Apple stock.
+          Apple (AAPL) at $294.30/share (Jun 24, 2026), market cap ~$4.37T.
+          LPJ estimated to hold ~$16B+ in Apple stock. Among Apple's largest individual shareholders.
         competitive_with: ["Meta"]
+        notes: "Apple competes with Meta in hardware (Vision Pro vs Quest), AI (Apple Intelligence vs Meta AI), and uses 'privacy' narrative that undermines Meta's advertising model."
+      - entity: "io Products (Jony Ive / OpenAI)"
+        relationship: >
+          Emerson Collective was a founding backer of io Products, the AI hardware startup
+          co-founded by Jony Ive (former Apple design chief) and Sam Altman. Team included
+          former Apple designers Tang Tan and Evans Hankey. OpenAI acquired io Products for
+          $6.5 BILLION in 2025 — OpenAI's largest acquisition ever. Other backers: Thrive Capital,
+          SV Angel, Sutter Hill Ventures. $5B in equity + $1.5B from prior 23% stake.
+          EC's exact investment size undisclosed but exit likely worth hundreds of millions.
+          Ive became head of design at OpenAI. First devices slated to debut 2026.
+        competitive_with: ["Meta", "Apple"]
+        source_urls:
+          - "https://pitchbook.com/news/articles/openai-jony-ive-io-products-acquisition"
+          - "https://techcrunch.com/2025/04/07/openai-reportedly-mulls-buying-jony-ive-and-sam-altmans-ai-hardware-startup/"
+          - "https://thehindubusinessline.com/openai-acquires-jony-ive-ai-device-io-6-5-billion/"
+        notes: >
+          CRITICAL: This creates a DIRECT FINANCIAL EXIT for Emerson Collective from OpenAI,
+          deepening the financial relationship far beyond the content licensing deal. EC profited
+          directly from OpenAI's growth. Also puts OpenAI in direct competition with Apple
+          (where LPJ holds $16B+ stock) — an internal portfolio tension.
       - entity: "Mistral AI"
-        relationship: "Emerson Collective participated in Mistral's $415M Series A (Dec 2023) and/or $640M Series B (Jun 2024). Mistral is a direct Meta AI competitor (open-source LLMs vs Llama)."
+        relationship: >
+          Emerson Collective participated in Mistral's $415M Series A (Dec 2023) and/or
+          $640M Series B (Jun 2024). Mistral is a direct Meta AI competitor (open-source
+          LLMs competing with Meta's Llama).
         competitive_with: ["Meta"]
         source_url: "https://siliconangle.com/2023/12/11/open-source-generative-ai-startup-mistral-ai-raises-415m-funding/"
       - entity: "World Labs"
@@ -37,27 +96,116 @@ ownership_chain:
         relationship: "Emerson Collective invested in $130M round (2024). Fusion energy startup."
         competitive_with: []
         source_url: "https://techcrunch.com/2024/10/07/zap-energy-investors/"
-      - entity: "Axios"
-        relationship: "Early Emerson Collective investment in news startup Axios. Axios competes with Atlantic for digital news audience."
+      - entity: "Commonwealth Fusion Systems"
+        relationship: "Emerson Collective invested in 2021. Fusion energy company."
         competitive_with: []
+        source_url: "https://en.wikipedia.org/wiki/Emerson_Collective"
+      - entity: "Boom Supersonic"
+        relationship: "Emerson Collective led funding round in 2019. Supersonic commercial flight."
+        competitive_with: []
+        source_url: "https://en.wikipedia.org/wiki/Emerson_Collective"
+      - entity: "Midi Health"
+        relationship: "Emerson Collective led $60M Series B round in 2024. Women's midlife health platform."
+        competitive_with: []
+        source_url: "https://en.wikipedia.org/wiki/Emerson_Collective"
+      - entity: "Teal Health"
+        relationship: "Emerson Collective co-led $10M seed extension in 2025. At-home cervical cancer self-collection device (Teal Wand)."
+        competitive_with: []
+        source_url: "https://en.wikipedia.org/wiki/Emerson_Collective"
+      - entity: "Amplify"
+        relationship: "Emerson Collective became lead investor in 2015. Education technology company."
+        competitive_with: []
+        source_url: "https://en.wikipedia.org/wiki/Emerson_Collective"
+      - entity: "Axios"
+        relationship: >
+          Emerson Collective invested in Series A (Sep 2016). Exited in 2022 when Axios was
+          sold to Cox Enterprises for $525M. Axios competed with Atlantic for digital news audience.
+        competitive_with: []
+        source_url: "https://en.wikipedia.org/wiki/Emerson_Collective"
+        notes: "EC invested in a competitor to its own publication (The Atlantic), then exited profitably."
+      - entity: "Gimlet Media"
+        relationship: "Emerson Collective invested in 2017 alongside Stripes Group. Podcasting startup (StartUp, Reply All, Homecoming). Later acquired by Spotify (2019) for ~$230M."
+        competitive_with: []
+        source_url: "https://en.wikipedia.org/wiki/Emerson_Collective"
+    spinoffs:
+      - name: "Yosemite"
+        founder: "Reed Jobs (LPJ's son)"
+        spun_out: "2023-08"
+        description: >
+          Cancer-focused venture capital firm spun out from Emerson Collective.
+          Reed Jobs was Managing Director of Health at EC for 8 years before founding.
+          Fund I: $263M. Fund II: target $350M, raised $200M+.
+          ~20 portfolio companies including Tune Therapeutics and Chai Discovery.
+          LPs include MIT, Memorial Sloan Kettering, Amgen, John Doerr.
+          2.5% of fund goes to donor-advised fund for grants (no IP strings).
+          Has supported ~500 labs across the academic ecosystem.
+        source_urls:
+          - "https://techcrunch.com/2023/08/01/reed-jobs-yosemite/"
+          - "https://forbesindia.com/article/2024-billionaires/reed-jobs-living-legacy/"
+        notes: >
+          MIT is a Yosemite LP AND parent of MIT Technology Review (another tracked publication).
+          This creates a cross-publication investment connection between the Atlantic's owner
+          family and MIT TR's parent institution.
+    waverley_street_foundation:
+      description: >
+        Philanthropic arm of Emerson Collective Foundation. $2.74B in assets (May 2026).
+        Major grantmaking focused on climate, education, conservation, human services.
+      assets: "$2,738,173,726"
+      top_grants:
+        - recipient: "Climate Imperative Foundation"
+          amounts: ["$36M (2021)", "$36M (2022)", "$18M x2 (2023)", "$18M x2 (2024)"]
+        - recipient: "Conservation International"
+          amounts: ["$21M (2020)", "$8.5M (2021)"]
+        - recipient: "Thousand Currents"
+          amounts: ["$10M (2021)", "$10M (2023)", "$20M (2024)"]
+        - recipient: "European Climate Foundation"
+          amounts: ["$10M (2023)", "$10M (2024)"]
+      source_url: "https://influencewatch.org/non-profit/emerson-collective/"
   - name: "Laurene Powell Jobs"
     entity_type: "individual"
-    description: "Net worth ~$11.5-16B (estimates vary). Apple connection through inheritance. Deep AI investment portfolio through Emerson Collective. Also invested in education, environment, social justice."
+    description: >
+      Net worth ~$11.5-16B (estimates vary, Forbes India 2024: $13.5B). Apple connection
+      through inheritance from Steve Jobs (d. 2011). Deep AI investment portfolio through
+      Emerson Collective. Also invested in education, environment, social justice.
+      Reportedly signaled intent to give away her wealth ("My kids know that. Steve wasn't
+      interested in legacy. I'm not going to use it as a shield against criticism.").
+      Three children: Reed (b. 1991, runs Yosemite), Erin (b. 1995), Eve (b. 1998,
+      equestrian). Stepdaughter Lisa Brennan-Jobs (b. 1978).
 
 revenue_relationships:
   - partner: "Apple"
     relationship_type: "indirect_financial"
-    estimated_value: "~$16B+ (stock holdings)"
-    description: "Owner LPJ holds massive Apple stock. Apple competes with Meta in hardware (Vision Pro vs Quest), AI (Apple Intelligence vs Meta AI), and privacy positioning. Apple's 'privacy' narrative directly undermines Meta's advertising business."
+    estimated_value: "~$16B+ (stock holdings, AAPL at $294.30 Jun 24 2026)"
+    description: >
+      Owner LPJ holds massive Apple stock. Apple competes with Meta in hardware (Vision Pro
+      vs Quest), AI (Apple Intelligence vs Meta AI), and privacy positioning. Apple's 'privacy'
+      narrative directly undermines Meta's advertising business. AAPL market cap ~$4.37T.
     date_established: "1997 (Jobs era)"
     source_url: ""
   - partner: "OpenAI"
-    relationship_type: "licensing_deal"
-    estimated_value: "Undisclosed (News Corp deal was $250M/5yr for reference)"
-    description: "Multi-year licensing and product development deal announced May 29, 2024. OpenAI can display Atlantic content in ChatGPT and use archived content for model training. Atlantic gets OpenAI tech access and feedback channel. Also includes 'Atlantic Labs' experimental microsite development. OpenAI is a direct Meta AI competitor."
-    date_established: "2024-05"
-    source_url: "https://www.thewrap.com/vox-media-atlantic-openai-licensing-partnerships/"
+    relationship_type: "licensing_deal + investment_exit"
+    estimated_value: "Licensing: undisclosed (News Corp deal was $250M/5yr for reference). Investment exit: undisclosed (EC backed io Products, acquired by OpenAI for $6.5B)"
+    description: >
+      TWO SEPARATE FINANCIAL CONNECTIONS:
+      1. Multi-year licensing and product development deal announced May 29, 2024. OpenAI can
+         display Atlantic content in ChatGPT and use archived content for model training.
+         Atlantic gets OpenAI tech access and feedback channel. Includes 'Atlantic Labs'
+         experimental microsite development. Atlantic union demanded transparency on deal terms.
+      2. Emerson Collective was a founding backer of io Products (Jony Ive's AI hardware
+         startup), which OpenAI acquired for $6.5B in 2025. This means The Atlantic's owner
+         PROFITED DIRECTLY from OpenAI's expansion. The licensing deal and the investment exit
+         create a compound financial relationship — EC has both ongoing revenue from and a
+         realized capital gain through OpenAI.
+    date_established: "2024-05 (licensing), 2025 (io exit)"
+    source_urls:
+      - "https://www.thewrap.com/vox-media-atlantic-openai-licensing-partnerships/"
+      - "https://pitchbook.com/news/articles/openai-jony-ive-io-products-acquisition"
     competitive_with: ["Meta"]
+    notes: >
+      OpenAI is a direct Meta AI competitor. The compound relationship (licensing + investment
+      exit) makes the Atlantic's financial ties to OpenAI deeper than any other tracked
+      publication. Even the NYT, which has a $20-25M/yr Amazon deal, has no comparable
+      equity exit from an AI company.
 
 editorial_leadership:
   - name: "Jeffrey Goldberg"
@@ -107,10 +255,30 @@ key_journalists:
 
 known_conflicts:
   - type: "investment"
-    description: "Owner Laurene Powell Jobs holds ~$16B+ in Apple stock. Apple directly competes with Meta in hardware, AI, and uses 'privacy' narrative that undermines Meta's advertising model."
+    description: "Owner Laurene Powell Jobs holds ~$16B+ in Apple stock (AAPL at $294.30, Jun 2026). Apple directly competes with Meta in hardware, AI, and uses 'privacy' narrative that undermines Meta's advertising model."
     severity: 4
     evidence: "Forbes wealth estimates, Apple shareholder records"
     source_url: ""
+  - type: "investment_exit"
+    description: >
+      CRITICAL NEW FINDING: Emerson Collective was a founding backer of io Products (Jony Ive's
+      AI hardware startup), which OpenAI acquired for $6.5 BILLION in 2025. This creates a
+      DIRECT FINANCIAL EXIT for The Atlantic's owner from the AI company that also has a content
+      licensing deal with The Atlantic. EC profited from OpenAI's growth while The Atlantic
+      covers OpenAI. No other tracked publication has an owner that both licenses content to
+      AND has an equity exit through the same AI company. The compound financial relationship
+      (licensing revenue + capital gain) makes any Atlantic coverage of OpenAI structurally
+      compromised.
+    severity: 5
+    evidence: "PitchBook, TechCrunch, The Information, Bloomberg. io Products backers: Emerson Collective, Thrive Capital, SV Angel, Sutter Hill Ventures."
+    source_urls:
+      - "https://pitchbook.com/news/articles/openai-jony-ive-io-products-acquisition"
+      - "https://techcrunch.com/2025/04/07/openai-reportedly-mulls-buying-jony-ive-and-sam-altmans-ai-hardware-startup/"
+    notes: >
+      Also creates Apple tension: LPJ holds $16B+ Apple stock, but io Products
+      was explicitly designed to compete with Apple. Jony Ive's OpenAI device is
+      positioned as the next iPhone. EC profits from both sides of the
+      Apple-vs-OpenAI hardware competition.
   - type: "investment"
     description: "Emerson Collective has invested $1B+ in AI startups since 2022, including Mistral AI ($415M round), World Labs ($1B round), and Formation Bio ($372M round). Mistral's open-source LLMs directly compete with Meta's Llama. These investments create financial incentive for Atlantic coverage that benefits OpenAI-alternative/anti-Meta-AI narratives."
     severity: 3
@@ -131,6 +299,33 @@ known_conflicts:
     severity: 2
     evidence: "Thompson career history, Wired Facebook coverage, Congressional citations"
     source_url: "https://www.nytimes.com/2017/01/17/business/media/wired-nicholas-thompson-editor.html"
+  - type: "transparency"
+    description: >
+      Emerson Collective's LLC structure (owned by the Emerson Collective Foundation, a 501(c)(3))
+      deliberately shields its investment activities from public disclosure. The Foundation's
+      990 shows philanthropic grants but not the LLC's for-profit investments. This means the
+      full extent of EC's tech industry investments — and potential conflicts — cannot be
+      independently verified. Inside Philanthropy named LPJ "Least Transparent Mega-Giver" of 2019.
+      The Atlantic's coverage decisions are influenced by an investment portfolio that is
+      structurally opaque to public scrutiny.
+    severity: 3
+    evidence: "InfluenceWatch analysis, Inside Philanthropy 2019, Devex reporting on LLC structure."
+    source_urls:
+      - "https://influencewatch.org/non-profit/emerson-collective/"
+      - "https://devex.com/news/inside-emerson-collective-s-vision-of-frictionless-support-for-grantees-93745"
+  - type: "cross_publication_link"
+    description: >
+      Reed Jobs' Yosemite VC (spun out of Emerson Collective in 2023) has MIT as a limited
+      partner. MIT is the parent institution of MIT Technology Review, another publication in
+      our tracked set. This creates a financial link between The Atlantic's owner family and
+      MIT TR's parent institution through the Yosemite LP relationship. While the connection
+      is indirect, it illustrates how Emerson Collective's investment web creates cross-
+      publication entanglements within our very tracking set.
+    severity: 1
+    evidence: "TechCrunch, DealBook, Forbes India reporting on Yosemite Fund I and II investors."
+    source_urls:
+      - "https://techcrunch.com/2023/08/01/reed-jobs-yosemite/"
+      - "https://forbesindia.com/article/2024-billionaires/reed-jobs-living-legacy/"
 
 litigation_connections: []
 
@@ -249,4 +444,68 @@ editorial_history:
       notes: "Laurene Powell Jobs' Emerson Collective acquired majority stake from David G. Bradley (retained minority). Peter Lattman (Emerson Collective staffer) named vice chairman immediately. LPJ holds ~$16B in Apple stock (Meta competitor). Key question: did coverage tone toward Apple competitors change after this ownership change?"
     - event: "Nicholas Thompson named CEO"
       date: "2020-12"
-      notes: "Former Wired EIC hired as CEO. Creates direct Condé Nast editorial culture bridge. Under Thompson: profitability achieved, record subscriptions, 3 Pulitzer Prizes, OpenAI licensing deal (May 2024). Also poached ~20 journalists from Washington Post."
+      notes: "Former Wired EIC hired as CEO. Creates direct Condé Nast editorial culture bridge. Under Thompson: profitability achieved, record subscriptions (1.4M+ by Feb 2026), 3 Pulitzer Prizes, OpenAI licensing deal (May 2024). Revenue over $100M. Also poached ~20 journalists from Washington Post."
+
+notes: |
+  UPDATED 2026-06-24: The Atlantic is now the MOST DENSELY FINANCIALLY CONFLICTED
+  publication in the 5-publication tracking set per entity (Meta/OpenAI/Apple).
+
+  OWNERSHIP STRUCTURE — THE LLC OPACITY PROBLEM:
+  Emerson Collective is structured as an LLC owned by the Emerson Collective Foundation
+  (501(c)(3)). This deliberate legal architecture shields its for-profit investments from
+  public 990 disclosure. The Foundation's filings show philanthropic grants through the
+  Waverley Street Foundation (~$2.74B assets), but the LLC's actual investment portfolio
+  — which includes The Atlantic, all AI startup investments, and the Apple stock — is
+  opaque. Inside Philanthropy named LPJ its "Least Transparent Mega-Giver" in 2019.
+  This means the full map of EC's financial conflicts cannot be independently verified.
+
+  COMPOUND OPENAI RELATIONSHIP (NEW):
+  The io Products acquisition by OpenAI ($6.5B, 2025) transforms the Atlantic's
+  relationship with OpenAI from a simple licensing deal to a COMPOUND financial
+  entanglement. Emerson Collective:
+  1. Receives ongoing licensing revenue from OpenAI (since May 2024)
+  2. Realized a capital gain from OpenAI via the io Products exit (2025)
+  3. Invested in io Products (Jony Ive's AI device), which competes with BOTH
+     Meta (smart glasses) and Apple (where LPJ holds $16B+ stock)
+
+  This triple-entanglement is UNIQUE among tracked publications. Not even the NYT
+  (Amazon deal, OpenAI lawsuit) has an owner that both receives licensing revenue
+  from AND has an equity exit through the same AI company.
+
+  EMERSON COLLECTIVE INVESTMENT PORTFOLIO (expanded):
+  - Apple stock (~$16B+, via LPJ Trust) — competes with Meta
+  - io Products ($6.5B OpenAI exit) — competes with Meta AND Apple
+  - Mistral AI ($415M/$640M rounds) — open-source LLM competitor to Meta's Llama
+  - World Labs ($1B round) — 3D AI, competes with Meta
+  - Formation Bio ($372M round) — AI pharma
+  - Zap Energy ($130M, 2024) — fusion
+  - Commonwealth Fusion Systems (2021) — fusion
+  - Boom Supersonic (2019) — aerospace
+  - Midi Health ($60M Series B lead, 2024) — women's health
+  - Teal Health ($10M seed, 2025) — cancer screening
+  - Gimlet Media (2017, exited via Spotify ~$230M)
+  - Axios (2016, exited 2022 via Cox Enterprises $525M) — NOTE: competitor to Atlantic
+  - Amplify (2015) — edtech
+
+  YOSEMITE CROSS-PUBLICATION LINK:
+  Reed Jobs' Yosemite VC (EC spinoff, Aug 2023) has MIT as an LP. MIT owns MIT
+  Technology Review. This creates a financial link between The Atlantic's owner family
+  and another tracked publication's parent institution. Fund I: $263M. Fund II: $350M
+  target. Cancer-focused (Tune Therapeutics, Chai Discovery). Other LPs: Memorial Sloan
+  Kettering, Amgen, John Doerr.
+
+  ATLANTIC BUSINESS (updated Feb 2026):
+  1.4M+ subscribers. Revenue over $100M. Profitable since March 2024. 15% subscriber
+  growth YoY. 70%+ retention rate. Thompson: "profitable for the first time" and "more
+  than doubled total paid subscriptions" since digital launch.
+
+  KEY ANALYTICAL QUESTIONS (updated):
+  1. Does Atlantic coverage of OpenAI soften after the io Products exit? Compare
+     pre-exit vs post-exit tone.
+  2. Does Atlantic frame Apple and OpenAI hardware competition differently given
+     EC profits from both sides?
+  3. Does the LLC opacity problem mean we're missing even more conflicts?
+  4. Can we measure an "Emerson portfolio effect" — systematically softer coverage
+     of EC portfolio companies across all Atlantic content?
+  5. The Yosemite/MIT LP connection: any detectable editorial cooperation between
+     Atlantic and MIT TR?
