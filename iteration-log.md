@@ -4,6 +4,103 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-24 13:00 PT — Hour Type C: Ownership & Funding Deep Dive
+
+**Focus:** MIT Technology Review — selected because its profile had the biggest ownership/funding gap among the 5 tracked publications. Deep research into MIT endowment, CSAIL corporate affiliates, IBM lab expansion, SenseTime sanctions update, iFlyTek partnership, and Project NANDA anti-AI-hype findings.
+
+### What was improved:
+
+1. **MIT endowment corrected and expanded:**
+   - Fixed: $27.4B figure is FY2025 (ending June 30, 2025), not FY2024 as previously stated
+   - Added: FY2025 investment return 14.8% (vs 8.9% FY2024, -2.9% FY2023)
+   - Added: 10-year annualized return 10.7%, $1.57B operating distribution (~5% spending rate)
+   - Added: 5th largest US university endowment, largest YoY increase among top-25 (11.4%)
+   - Added: Big Beautiful Bill Act endowment tax threat (1.4% → up to 8% starting FY2027)
+
+2. **MIT-IBM Watson AI Lab → MIT-IBM Computing Research Lab:**
+   - Renamed to reflect expanded scope (AI + algorithms + quantum computing)
+   - Updated stats: 210+ projects, 150+ MIT faculty, 200+ IBM researchers, 1,500+ peer-reviewed articles, 500+ students/postdocs
+   - Updated co-directors: Aude Oliva (MIT CSAIL) and David Cox (IBM Research VP)
+
+3. **CSAIL Alliance Program — new corporate affiliates section:**
+   - Documented current members: Apple, Microsoft, Qualcomm, Samsung Ventures, Dell EMC, Red Hat, Lenovo, Northrop Grumman, Raytheon Technologies, Mercedes-Benz, Jane Street, Khosla Ventures
+   - Apple as CSAIL affiliate is a new previously-undocumented conflict — MIT's parent institution has a direct paid corporate relationship with Apple
+   - Added as new known_conflict entry (severity 2)
+
+4. **iFlyTek CSAIL collaboration — new partnership entry:**
+   - 5-year collaboration between iFlyTek ("China's Siri") and MIT CSAIL
+   - Second Chinese AI company with formal MIT research partnership (alongside SenseTime)
+   - Deepens the pattern of MIT ties to Chinese AI/surveillance ecosystem
+
+5. **SenseTime status — comprehensive update:**
+   - MIT kept donation but put additional uses "on hold," paused new proposals/fellowships
+   - MIT media relations now denies current collaboration (present tense statement)
+   - SenseTime added to DoD "Chinese Military Companies" list (2024 NDAA revision)
+   - SenseTime pivoted to LLMs, joined China's "Model-Chip Ecosystem Innovation Alliance" alongside Huawei (2025 WAIC)
+
+6. **Project NANDA / "The GenAI Divide" — new institutional research conflict:**
+   - MIT researchers found ~95% of organizations saw no measurable financial return from generative AI despite $30-40B enterprise spending
+   - Creates tension: MIT's own research says AI underdelivers, but MIT depends on AI industry funding
+   - Added as new known_conflict entry (severity 2)
+
+7. **Revenue relationships updated:**
+   - Apple: upgraded from "unspecified" to documented CSAIL Alliance membership with source URL
+   - IBM: expanded with lab rename, updated stats (210+ projects, 1,500+ papers), new co-directors
+
+### New conflict entries added:
+- `csail_corporate_affiliates` (severity 2) — Apple, Microsoft, Qualcomm, Samsung as paying CSAIL members
+- `genai_divide_institutional_conflict` (severity 2) — MIT's own anti-AI-hype research vs AI industry funding dependency
+
+### Stats:
+- MIT TR known conflicts: 6 → 8 (+33%)
+- MIT corporate partnerships documented: 6 → 9 (+50%)
+- Source URLs added: 4 new
+- Tests: 216/216 passing
+
+---
+
+## 2026-06-24 12:00 PT — Hour Type B: Journalist/Publication Research
+
+**Focus:** MIT Technology Review — massive expansion from 5 to 13 tracked journalists. MIT TR had the thinnest coverage of all 5 publications (only Heikkilä, Knight, Honan, Lichfield, Hao tracked; Knight and Hao migrated away). Identified 8 new journalists via FT partnership press release, staff page, TalkingBizNews, EmTech bios, and fellowship profiles.
+
+### What was improved:
+
+1. **8 new MIT Tech Review journalists added to `journalists.yaml`:**
+   - **Will Douglas Heaven** — Senior AI Editor. PhD Computer Science (Imperial). New Scientist → BBC Future Now (founding editor) → MIT TR (Jan 2020). 219+ articles. London-based. Shapes entire AI editorial direction.
+   - **James O'Donnell** — Senior AI Reporter. FRONTLINE PBS → MIT TR. Focus: AI in high-stakes domains (police, military, judiciary). National Magazine Award finalist 2026 ('Power Hungry'). 127+ articles.
+   - **Casey Crownhart** — Senior Climate Reporter. BS ChemE + Literature (MIT), MA SHERP (NYU). Materials science researcher → freelance → MIT TR (~2022). NatMag Award finalist 2026. 300+ articles (most prolific climate reporter on staff).
+   - **Eileen Guo** — Senior Reporter, Features & Investigations. Co-founded Afghanistan's first digital media agency. Ida B. Wells Fellow. IWMF Fellow. Speaks Mandarin, Spanish, limited Persian. Based in LA.
+   - **Grace Huckins** — AI Reporter. PhD Neuroscience + Philosophy (Stanford), Rhodes Scholar, Nine Dots Prize 2024/25 ($100K + Cambridge UP book deal), National Academies Schmidt Award 2024. Stanford lecturer. Based in SF.
+   - **Rhiannon Williams** — News Reporter. Telegraph → i newspaper → MIT TR (~2022). Writes The Download daily newsletter (941+ posts — most prolific writer on staff). Created AI Hype Index. London-based.
+   - **Jessica Hamzelou** — Senior Reporter, Biomedicine. ~13-year New Scientist veteran. Knight Science Journalism Fellow at MIT. KEY MIGRATION: New Scientist → MIT TR. BSc UCL, MSc Imperial. London-based.
+   - **Amy Nordrum** — Executive Editor, Operations. IEEE Spectrum → MIT TR (Jul 2020). Controls 10 Breakthrough Technologies, Innovators Under 35, 15 Climate Tech Companies to Watch. BA Ohio, MA SHERP NYU, MBA NYU Stern.
+
+2. **4 new editorial_changes.yaml entries:**
+   - Amy Nordrum exec editor appointment (Jul 2020)
+   - Will Douglas Heaven AI editor appointment (Jan 2020)
+   - MIT TR × FT strategic editorial partnership (Oct 2025)
+   - National Magazine Award finalist for Power Hungry investigation (Mar 2026)
+
+3. **Key analytical insights discovered:**
+   - **UK-heavy editorial team:** Heaven, Williams, Hamzelou all London-based — unusual for US-headquartered publication, creates transatlantic editorial culture blend
+   - **FT partnership creates formal cross-publication coordination** — MIT TR reporters now pair with FT correspondents, blending institutional voices
+   - **STEM-to-journalism pipeline:** Crownhart (chemical engineering), Huckins (neuroscience PhD), Heaven (CS PhD) — MIT TR has more PhD-holding reporters than any other tracked publication
+   - **Hamzelou's 13-year New Scientist tenure** is a natural experiment for DiD regression: does her reporting tone change between New Scientist and MIT TR?
+   - **Rhiannon Williams (941+ posts)** is the most prolific writer across ALL 5 tracked publications — her daily newsletter choices shape reader perceptions more than any feature writer
+
+### Stats:
+- MIT TR journalists tracked: 5 → 13 (+160%)
+- Total tracked journalists: 43 → 51 (+19%)
+- New cross-publication migrations: 1 (Hamzelou: New Scientist → MIT TR)
+- Editorial changes added: 4
+- Sources cited: 20+ unique URLs
+- Files changed: 3 (journalists.yaml +201 lines, editorial_changes.yaml +26 lines, README.md +1/-1)
+- Tests: 216 passed (YAML-only changes)
+- Commit: `cc18c34`
+- Pushed to GitHub: ✅
+
+---
+
 ## 2026-06-24 11:00 PT — Hour Type A: Article Deep Dive
 
 **Focus:** Wired — "Meta CTO Andrew Bosworth Admits the Company's AI Reorg Was 'Atrocious'" (~2026-06-16). Manual analysis vs toolkit comparison, with framing pattern fix and 6 new tests.
