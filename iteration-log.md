@@ -4,6 +4,58 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-24 05:00 PT — Hour Type D: Toolkit Quality & Documentation
+
+**Focus:** Massive documentation gap — METHODOLOGY.md documented only 8 of 20 framing device types. Added active-negative agency and tone correction pipeline documentation. Updated README sample gallery and journalist count.
+
+### What was improved:
+
+1. **METHODOLOGY.md §4.1 — Framing Device Taxonomy (8 → 20):**
+   - METHODOLOGY.md had not been updated since the original 8 core devices were written
+   - Code has evolved through 11+ real-article iterations, adding 12 new device types
+   - Reorganized into three tiers: Core (12 pattern-matched), Extended (6 from real articles), Structural (2 post-pass)
+   - Extended devices documented with the source article that motivated each addition
+   - New types: straw_man, refusal_amplification, juxtaposition, timeline_implication, military_techno_optimism, selective_rehabilitation, rhetorical_question, ironic_quotation, isolation_framing, pressure_language, kicker_framing, analogy_stacking
+
+2. **METHODOLOGY.md §5.2 — Anonymous Source Scoring:**
+   - Documented counted anonymous source patterns ("two employees said," "three people familiar")
+   - Documented no-comment signal exclusion (source_type="no_comment" filtered from counts)
+   - Both discovered through NYT Meta Arena and voluntary review article analyses
+
+3. **METHODOLOGY.md §8-9 — New sections:**
+   - §8: Active-Negative Agency Detection — verb categories (surveillance/extraction, workforce harm, coercion), impact on tone correction
+   - §9: Framing-Aware Tone Correction — VADER positive-bias problem, correction activation conditions (3+ adversarial devices, agency ≤ -0.3, positive raw VADER), headline framing override, security context adjustment
+   - These were the toolkit's most impactful analytical improvements with zero methodology documentation
+
+4. **METHODOLOGY.md — Section renumbering:**
+   - Renumbered §§8-11 → §§10-13 to accommodate new sections. 13 sections total now.
+
+5. **ARCHITECTURE.md — framing.py section:**
+   - Updated from "Eight framing device types" to "20 framing device types" with tier breakdown
+   - Added kicker_framing and analogy_stacking post-pass descriptions
+
+6. **ARCHITECTURE.md — sources.py section:**
+   - Added counted anonymous source detection documentation
+   - Added no-comment signal tagging documentation
+
+7. **README.md — Sample Output Gallery:**
+   - Added 8 missing sample analyses: atlantic_meta_ai_slop_vibes, mit_tr_llms_mass_surveillance, mit_tr_meta_ai_security_hack, wired_meta_dark_mood, wired_meta_horizon_worlds_comedy_club, wired_meta_mci_data_exposure, wired_meta_nametag_removal, wired_meta_rayban_creep
+   - Gallery now lists all 19 annotated analyses
+
+8. **README.md — Journalist count:**
+   - Updated from 17 to 43 tracked journalists
+
+### Stats:
+- Files changed: 3 (METHODOLOGY.md, ARCHITECTURE.md, README.md)
+- Lines: +117, -16
+- New METHODOLOGY.md sections: 2 (§8 Active-Negative Agency, §9 Framing-Aware Tone Correction)
+- Framing devices documented: 8 → 20 (+150%)
+- Sample analyses documented in README: 11 → 19 (+73%)
+- Tests: 202 passing (documentation-only, no code changes)
+- Commit: `fa09204`
+
+---
+
 ## 2026-06-24 04:00 PT — Hour Type C: Ownership & Funding Deep Dive
 
 **Focus:** The Atlantic / Emerson Collective — expanded ownership chain, investment portfolio, corporate structure, and financial conflicts. Committed as `a887d94`.
