@@ -4,6 +4,53 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-23 17:00 PT — Hour Type D: Documentation + Source Extractor Improvements
+
+**Focus:** Fix incorrect import paths in docs, add missing function calling schemas, update examples to demonstrate newer features, analyze the NYT Arena article (missing analysis), and fix a critical source extraction blind spot discovered during analysis.
+
+### What was improved:
+
+1. **Fixed incorrect import path in AGENT_GUIDE.md:**
+   - `measure_outsourced_intensity` was listed as importing from `mediascope.analyze.sources` but actually lives in `mediascope.analyze.sentiment`
+   - `detect_power_asymmetry` was listed as a standalone function but is actually a framing device type detected by `detect_framing_devices` in `mediascope.analyze.framing`
+   - Any agent following the AGENT_GUIDE would have gotten ImportError on these
+
+2. **Added missing function calling schemas to AGENT_GUIDE.md:**
+   - `analyze_source_stance`: JSON schema with article_text, target_entity parameters
+   - `measure_outsourced_intensity`: JSON schema with article_text parameter and note about correct module location
+   - These features were documented in README and METHODOLOGY but had no agent-callable schemas
+
+3. **Updated examples/quick_start.py:**
+   - Added source stance analysis (adversarial/supportive/neutral counts, stance_balance)
+   - Added outsourced intensity demonstration (outsourced_ratio, editorial vs quoted intensity)
+   - Previously only showed sentiment and entities — newer features were undocumented in examples
+
+4. **Updated examples/full_pipeline.py:**
+   - Fixed imports: added `analyze_source_stance` from sources, `measure_outsourced_intensity` from sentiment
+   - Added stance and outsourced_intensity to per-article analysis dict
+   - Added Source Stance Summary output section: avg stance balance, total adversarial/supportive counts, avg outsourced intensity across target-entity articles
+
+5. **Created NYT Arena prediction markets analysis (new article):**
+   - File: `examples/sample_output/nyt_meta_prediction_markets_arena_2026_06_23_analysis.md`
+   - Article reconstructed from 5 secondary sources (Reuters, NY Post, IBD, Engadget, CNN)
+   - Manual tone assessment: -0.10 (near-neutral business scoop)
+   - **KEY FINDING:** Toolkit was completely blind to counted-anonymous source patterns — "two employees with knowledge of the matter" and "one person familiar with the plans" were not detected, causing 100% anonymous sourcing to read as 0%
+   - Cross-publication comparison of same event, same day: Engadget (-0.70) vs Reuters (+0.05) — quantifies how editorial culture drives coverage asymmetry independent of financial conflicts
+
+6. **Source extractor improvements (mediascope/analyze/sources.py):**
+   - Added "X employees/people with knowledge of" pattern — catches "two employees with knowledge of the matter" and similar constructions common in NYT/WSJ product-leak scoops
+   - Added singular "one person/employee familiar with" pattern — catches "one person familiar with the plans" and similar
+   - Added no-comment detection: "did not immediately respond to a request for comment," "declined to comment," and variants — meaningful editorial signal that the entity chose not to provide its side
+
+7. **6 new tests (tests/test_source_stance.py):**
+   - `TestCountedAnonymousSources` class: employees_with_knowledge, one_person_familiar, three_people_said, no_comment_detection, nyt_arena_full_article (integration), declined_to_comment_variant
+   - All 6 pass. Full suite: **179 passed** (up from 173)
+
+8. **Updated README.md:** Added NYT Arena article to Sample Output Gallery
+
+### Commit: `1509e6a`
+### Pushed to GitHub: ✅
+
 ## 2026-06-23 16:00 PT — Hour Type C: Wired/Condé Nast/Advance Publications Ownership & Funding Deep Dive
 
 **Focus:** Comprehensive ownership chain, investment portfolio, financial data, and conflict-of-interest analysis for Wired's parent companies. This is the most critical publication in the 5-pub set for Ray's research, yet its profile had the thinnest ownership data. Now massively expanded.
