@@ -111,6 +111,27 @@ editorial_changes:
       source_url: "https://talkingbiznews.com/they-re-hiring/bloomberg-hires-oltman-as-editor-for-ai-vc-and-startups/"
       notes: "KEY EVENT: Oltman departed after only ~4 months for Bloomberg (editor for AI/VC/startups under Sarah Frier). Reworked series lost its founding editor mid-run. Tests Guardian's editorial resilience when a key hire departs quickly."
 
+    - position: "chief_ai_officer"
+      outgoing: null
+      incoming: "Caspar Llewellyn Smith"
+      date: "2024-01"
+      source_url: "https://theorg.com/org/guardian-media-group/org-chart/caspar-llewellyn-smith"
+      notes: "KEY STRUCTURAL CHANGE: Guardian among first major UK newspapers to appoint a dedicated Chief AI Officer. Llewellyn Smith is a 20+ year Guardian veteran: joined from Daily Telegraph (2003) to launch Observer Music Monthly, then Head of Culture → editor of theguardian.com → Director of Digital Strategy → executive committee (2015) → Chief Product Officer (~5 years) → CAIO. Four focus areas: (1) external AI licensing agreements, (2) internal AI tool deployment, (3) strategic thinking about AI/journalism future, (4) org-wide AI training. Set up Guardian AI Council (senior editors + technologists). Participated in Globe and Mail Foundation 'Editing Democracy' panel (2026). ANALYTICAL VALUE: The CAIO role creates institutional AI strategy at the executive level — separate from editorial coverage of AI. This dual positioning (covering AI critically while commercially licensing content to AI companies) is the central tension in the Guardian's AI posture."
+
+    - position: "uk_technology_editor"
+      outgoing: "Alex Hern"
+      incoming: "Robert Booth"
+      date: "2024-10"
+      source_url: "https://talkingbiznews.com/they-re-hiring/guardian-tech-editor-hern-is-departing/"
+      notes: "KEY EDITORIAL SIGNAL: Guardian replaced an 11-year tech-specialist editor (Hern: economics→tech pipeline, TechScape newsletter founder, Technology Journalist of the Year 2020) with a 24-year housing/homelessness investigative reporter who had zero tech journalism experience. This is a deliberate institutional choice: investigative instincts and accountability framing over subject-matter expertise. Booth's Grenfell Tower coverage (exposing systemic corporate dishonesty and government failure that killed 72 people) is the template he brings to tech accountability. Tests the hypothesis that tech coverage quality depends more on investigative methodology than tech fluency."
+
+    - position: "us_technology_reporter"
+      outgoing: "Kari Paul"
+      incoming: "Dara Kerr"
+      date: "2024-12"
+      source_url: "https://talkingbiznews.com/media-news/guardian-hires-kerr-as-a-tech-reporter/"
+      notes: "Kerr replaced Kari Paul (departed mid-2024 for art school) as Guardian's West Coast/Bay Area tech reporter. Career arc: CNET → The Markup → NPR → Guardian — consistent move toward accountability-focused, public-interest journalism models. Each institution operates outside traditional advertising-revenue dependency. Labor/surveillance specialist."
+
     - position: "ceo"
       outgoing: "David Pemsel"
       incoming: "Anna Bateson"
