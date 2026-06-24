@@ -431,3 +431,61 @@ class TestSelfReferentialInvestigation:
         assert "self_referential_investigation" not in device_types, (
             "Simple 'Wired reports' should not trigger self_referential_investigation"
         )
+
+
+class TestSelfReferentialInvestigationPassive:
+    """Test passive voice and document-access patterns for
+    self_referential_investigation framing device."""
+
+    def test_reporting_by_publication(self):
+        """'reporting by WIRED' triggers self_referential_investigation."""
+        from mediascope.analyze.framing import detect_framing_devices
+        text = "The comments follow reporting by WIRED last week."
+        hits = [f for f in detect_framing_devices(text)
+                if f.device_type == "self_referential_investigation"]
+        assert len(hits) >= 1
+        assert "reporting by WIRED" in hits[0].evidence_text
+
+    def test_investigation_by_nyt(self):
+        """'investigation by The New York Times' matches."""
+        from mediascope.analyze.framing import detect_framing_devices
+        text = "An investigation by The New York Times revealed the scheme."
+        hits = [f for f in detect_framing_devices(text)
+                if f.device_type == "self_referential_investigation"]
+        assert len(hits) >= 1
+
+    def test_seen_by_publication(self):
+        """'seen by WIRED' triggers document access pattern."""
+        from mediascope.analyze.framing import detect_framing_devices
+        text = "an internal post seen by WIRED on Monday revealed the plan."
+        hits = [f for f in detect_framing_devices(text)
+                if f.device_type == "self_referential_investigation"]
+        assert len(hits) >= 1
+        assert "seen by WIRED" in hits[0].evidence_text
+
+    def test_obtained_by_guardian(self):
+        """'obtained by The Guardian' triggers document access pattern."""
+        from mediascope.analyze.framing import detect_framing_devices
+        text = "A memo obtained by The Guardian shows the company knew."
+        hits = [f for f in detect_framing_devices(text)
+                if f.device_type == "self_referential_investigation"]
+        assert len(hits) >= 1
+
+    def test_reviewed_by_mit_tech_review(self):
+        """'reviewed by MIT Technology Review' triggers document access."""
+        from mediascope.analyze.framing import detect_framing_devices
+        text = "Documents reviewed by MIT Technology Review suggest problems."
+        hits = [f for f in detect_framing_devices(text)
+                if f.device_type == "self_referential_investigation"]
+        assert len(hits) >= 1
+
+    def test_bosworth_article_full(self):
+        """Integration: Wired Bosworth article has 3 self-ref instances."""
+        from mediascope.analyze.framing import detect_framing_devices
+        article = open(
+            "examples/sample_output/"
+            "wired_meta_bosworth_atrocious_reorg_2026_06_16_article.txt"
+        ).read()
+        hits = [f for f in detect_framing_devices(article)
+                if f.device_type == "self_referential_investigation"]
+        assert len(hits) >= 3

@@ -1019,6 +1019,44 @@ _SELF_REFERENTIAL_INVESTIGATION_PATTERNS: list[re.Pattern] = [
         r"reported|confirmed|identified|exposed))\b",
         re.IGNORECASE,
     ),
+    # Passive voice: "reporting/investigation by [PUBLICATION]"
+    # Catches: "follow reporting by WIRED", "an investigation by NYT",
+    # "research by The Guardian", "analysis by MIT Technology Review"
+    re.compile(
+        r"\b(?:report(?:ing|ed)?|investigat(?:ion|ed)|analysis|review|"
+        r"research|expos[eé]|findings?|inquiry|examination|scoop)"
+        r"\s+by\s+"
+        r"(?:WIRED|Wired|The Guardian|Guardian|"
+        r"(?:The )?New York Times|NYT|"
+        r"(?:The )?Atlantic|"
+        r"MIT Technology Review|"
+        r"Reuters|Bloomberg|"
+        r"(?:The )?Washington Post|"
+        r"(?:The )?Wall Street Journal|WSJ|"
+        r"Business Insider|Insider|"
+        r"(?:The )?Verge|(?:The )?Information)\b",
+        re.IGNORECASE,
+    ),
+    # Document access claim: "seen/obtained/reviewed by [PUBLICATION]"
+    # Catches: "an internal post seen by WIRED", "a memo obtained by NYT",
+    # "documents reviewed by The Guardian"
+    # This positions the publication as having privileged access to internal
+    # or confidential materials, lending authority to the reporting.
+    re.compile(
+        r"\b(?:seen|obtained|reviewed|viewed|acquired|accessed|"
+        r"received|provided to|shared with|leaked to)"
+        r"\s+by\s+"
+        r"(?:WIRED|Wired|The Guardian|Guardian|"
+        r"(?:The )?New York Times|NYT|"
+        r"(?:The )?Atlantic|"
+        r"MIT Technology Review|"
+        r"Reuters|Bloomberg|"
+        r"(?:The )?Washington Post|"
+        r"(?:The )?Wall Street Journal|WSJ|"
+        r"Business Insider|Insider|"
+        r"(?:The )?Verge|(?:The )?Information)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["self_referential_investigation"] = (
@@ -1221,7 +1259,7 @@ def _detect_speculative_framing(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for patterns associated with 20 types of editorial framing:
+    Scans for patterns associated with 22 types of editorial framing:
     guilt_by_association, anonymous_authority, catastrophizing,
     false_balance, selective_omission_signal, emotional_appeal,
     straw_man, loaded_language, refusal_amplification,
