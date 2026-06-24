@@ -162,6 +162,10 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
+MediaScope detects 20 framing device types, organized into three tiers: core devices (the original 8, pattern-matched), extended devices (added from real-article analysis), and structural devices (detected via post-pass heuristics rather than simple pattern matching).
+
+#### Core Devices
+
 | Device | Description | Detection Pattern |
 |---|---|---|
 | **Guilt by Association** | Linking entity to controversial actors/events | Entity + controversial entity in same paragraph |
@@ -170,8 +174,34 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 | **False Balance** | Presenting fringe views as equivalent to mainstream | "some say... others say" with asymmetric evidence |
 | **Selective Omission Signal** | Notable absences detectable in text | "declined to comment" without context, missing competitor comparison |
 | **Emotional Appeal** | Using emotional language instead of evidence | "heartbreaking," "chilling," "disturbing," "alarming" |
-| **Loaded Language** | Word choices that carry implicit judgment | "admitted," "conceded," "insisted," "claimed" (vs neutral "said") |
+| **Loaded Language** | Word choices that carry implicit judgment | "admitted," "conceded," "insisted," "claimed" (vs neutral "said"); also workplace coercion language ("no opt-out," "revolt," "training their own replacements") |
 | **Power Asymmetry** | Framing institutional/financial power against individual vulnerability | Dollar-magnitude near individual, "army of lawyers," David vs Goliath language, fine-per-violation-could-bankrupt patterns |
+
+#### Extended Devices
+
+These were added through systematic analysis of real articles from the five tracked publications. Each addresses a framing technique not captured by the core 8.
+
+| Device | Description | Detection Pattern | Discovered From |
+|---|---|---|---|
+| **Straw Man** | Misrepresenting an entity's position to make it easier to attack | Simplified-claim-then-rebut constructions | General pattern |
+| **Refusal Amplification** | Emphasizing an entity's refusal/non-cooperation beyond its news value | "declined," "refused," "would not say," positioned to imply guilt | General pattern |
+| **Juxtaposition** | Placing contrasting facts side-by-side for editorial effect | Investment/spending figures adjacent to layoffs/harm; surveillance tech near consumer product language | NYT Meta AI employees article; Wired glasses launch |
+| **Timeline Implication** | Using temporal sequencing to imply causation | "After X happened, Y occurred" (when X did not cause Y) | Guardian whistleblower article |
+| **Military Techno-Optimism** | Editorial framing that normalizes violence through technology language | "Optimize the human as a weapons system," "AI-driven targeting," UX language for weapons | MIT TR Anduril/Meta glasses article |
+| **Selective Rehabilitation** | Juxtaposing a figure's past controversy with current acceptance to imply opportunism | "Ousted from X... now welcomed at Y," "friendlier posture," "softened stance" | General pattern |
+| **Rhetorical Question** | Questions that imply negligence without directly asserting it | "Were there even guardrails?" "Did anyone think to...?" "Why didn't they...?" | General pattern |
+| **Ironic Quotation** | Deploying a source's own words, then immediately undercutting them editorially | Quote followed by "But," "Yet," "In reality," or verdict like "wrongly believe" | Atlantic AI slop article |
+| **Isolation Framing** | Singling out a company as "the only" one not doing what peers have done | "The only major company that has not," "unlike its peers," "singled out," "out of step" | NYT AI voluntary review article |
+| **Pressure Language** | Editorial word choices that frame actions as coercive | "Pressing," "pushing," "strong-arming," "confidential request," "private demand" | NYT AI voluntary review article |
+
+#### Structural Devices (Post-Pass)
+
+These devices are detected through structural analysis of the article rather than simple pattern matching, and are injected in a post-processing pass.
+
+| Device | Description | Detection Method |
+|---|---|---|
+| **Kicker Framing** | Ending an article on a discordant negative note unrelated to the article's main topic | Scans the final ~400 characters for negative signals (morale crisis, regulatory threat, ethical concern) when the body tone is neutral-to-positive. Ensures the reader's final impression is negative regardless of otherwise balanced coverage. |
+| **Analogy Stacking** | Using 3+ distinct analogies/comparisons for the same subject to amplify perceived severity | Collects analogy markers ("the equivalent of," "likened it to," "compared it to," "like a/an") across the full text. Fires only when 3+ distinct markers are found. Individual analogies are not framing; stacking them is a persuasion technique. |
 
 ### 4.2 Attribution Verb Analysis
 
@@ -204,6 +234,16 @@ Anonymous sources are not inherently problematic, but their ratio affects reliab
 | 20–40% | Elevated — significant anonymous sourcing |
 | 40–60% | High — majority claims rest on anonymous sources |
 | > 60% | Extreme — article is substantially unverifiable |
+
+#### Counted Anonymous Source Patterns
+
+Standard anonymous-source detection catches phrases like "sources say" and "people familiar with the matter." A harder pattern to detect is **counted anonymous sourcing**: phrases like "two employees said," "three people familiar with," "one person close to." These are anonymous sources disguised as specificity — the count creates an illusion of transparency without revealing identity.
+
+MediaScope's `count_anonymous_sources()` delegates to the comprehensive `extract_sources()` function, which uses role-descriptor patterns, reverse-order attribution, and structural heuristics to catch counted anonymous patterns. This addresses a blind spot discovered in the NYT Meta "Arena" prediction markets article, where 100% of sourcing was anonymous via counted patterns but the original regex-only counter reported 0%.
+
+#### No-Comment Signal Exclusion
+
+"Declined to comment" and similar no-comment signals (e.g., "did not respond to a request for comment," "could not be reached for comment") are tagged as `source_type="no_comment"` and **excluded** from both anonymous and named source counts. These are editorial signals — they communicate that the journalist attempted to contact the entity — but they are not source attributions and should not inflate the anonymous source ratio.
 
 ## 6. Source Stance Analysis
 
@@ -288,9 +328,57 @@ High outsourced intensity is a *red flag* for editorial bias detection because:
 
 **Combined signal:** When `outsourced_ratio > 0.5` AND `stance_balance < −0.5`, the article is using the most sophisticated form of editorial bias — credible-looking, measured prose that reads as professional journalism, with the adversarial framing entirely delegated to a one-sided source roster.
 
-## 8. Quality Control
+## 8. Active-Negative Agency Detection
 
-### 8.1 MediaScope's Own Output Standards
+### 8.1 The Problem
+
+Standard agency attribution (§1.2, dimension 4) distinguishes between entities framed as active/powerful (+1.0) and passive/victim (−1.0). But this misses a critical distinction: **active agency can be negative**. "Meta is tracking users" and "Meta is launching a product" both frame Meta as active, but the editorial valence is opposite. VADER scores both as moderately positive because they use confident, active-voice construction.
+
+### 8.2 Active-Negative Verb Categories
+
+MediaScope maintains a list of verbs and phrases that signal active agency with negative editorial valence:
+
+| Category | Examples |
+|---|---|
+| **Surveillance/extraction** | "tracking," "surveilling," "monitoring," "harvesting," "capturing," "extracting" |
+| **Workforce harm** | "laying off," "slashing," "cutting jobs," "cutting staff," "eliminating positions," "downsizing" |
+| **Coercion** | "forcing," "mandating," "compelling," "requiring," "pushing employees," "pressuring employees" |
+
+When these phrases are detected, the agency attribution score is adjusted downward — the entity is active, but the activity is framed as harmful.
+
+### 8.3 Impact on Tone Correction
+
+Active-negative agency feeds into the framing-aware tone correction pipeline (§9). When an article has multiple active-negative agency indicators AND adversarial framing devices, the combination signals editorial stance more reliably than VADER's lexical analysis.
+
+## 9. Framing-Aware Tone Correction
+
+### 9.1 The VADER Positive-Bias Problem
+
+VADER (§1.1) systematically misprices editorial tone in investigative journalism. Professional prose uses measured, confident language that VADER scores as positive. An article stating "Meta is the only major company that has not agreed to voluntary AI safety reviews" scores positive on VADER because the sentence structure is declarative and the vocabulary is neutral. But the editorial stance is clearly adversarial — the framing isolates Meta from peers.
+
+This is not a VADER bug; it is a fundamental limitation of lexical sentiment analysis applied to professional prose. TextBlob has the same blind spot.
+
+### 9.2 Correction Pipeline
+
+MediaScope's tone correction fires when three conditions are met:
+
+1. **Adversarial framing density:** ≥3 framing devices from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language)
+2. **Negative agency signal:** Agency attribution score ≤ −0.3 (from active-negative detection or passive framing)
+3. **Positive raw VADER score:** The uncorrected composite score is positive
+
+When all three conditions hold, the corrected `overall_tone` is computed from framing device signals rather than VADER's lexical score. The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overall_tone` (corrected) with metadata documenting when and why correction fired.
+
+### 9.3 Headline Framing Override
+
+A secondary correction addresses headline-body alignment (§1.2, dimension 5). When VADER reads a headline as positive but it contains loaded editorial signals (surveillance terms, deletion/removal language, "after report"/"after investigation" constructions, "under fire"/"backlash"), the headline compound score is overridden to negative. This prevents headlines like "Meta Deletes Face-Recognition System After WIRED Report" from scoring as positive.
+
+### 9.4 Security Context Adjustment
+
+Technical security/hacking articles use domain-specific language ("exploit," "vulnerability," "breach," "attack") that inflates emotional intensity scores. When an article matches security topic patterns, the emotional intensity scorer reduces its score to avoid false-positive alarmism signals.
+
+## 10. Quality Control
+
+### 10.1 MediaScope's Own Output Standards
 
 All reports generated by MediaScope must pass internal quality checks:
 
@@ -300,7 +388,7 @@ All reports generated by MediaScope must pass internal quality checks:
 4. **Limitations**: Every report must state what it cannot prove
 5. **Methodology transparency**: Every report links to this document
 
-### 8.2 Article Quality Scoring
+### 10.2 Article Quality Scoring
 
 When evaluating articles from target publications, MediaScope applies a quality score based on:
 - Source diversity and authority
@@ -310,7 +398,7 @@ When evaluating articles from target publications, MediaScope applies a quality 
 - Headline-body alignment
 - Counterargument presence
 
-## 9. Limitations
+## 11. Limitations
 
 ### What MediaScope Can Do
 - Measure coverage sentiment asymmetry with statistical rigor
@@ -330,7 +418,7 @@ When evaluating articles from target publications, MediaScope applies a quality 
 - English-language only in current version
 - RSS feeds may not capture all articles (paywalled content, newsletters)
 
-## 10. References
+## 12. References
 
 1. Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences* (2nd ed.). Lawrence Erlbaum.
 2. Hutto, C.J. & Gilbert, E.E. (2014). "VADER: A Parsimonious Rule-based Model for Sentiment Analysis of Social Media Text." *ICWSM*.
@@ -343,11 +431,11 @@ When evaluating articles from target publications, MediaScope applies a quality 
 
 ---
 
-## 11. Causal Identification Through Journalist Migration Analysis
+## 13. Causal Identification Through Journalist Migration Analysis
 
 *This section documents MediaScope's novel methodological contribution. For the full treatment, see [EDITORIAL_HISTORIES.md](EDITORIAL_HISTORIES.md).*
 
-### 11.1 The Problem of Causal Attribution
+### 13.1 The Problem of Causal Attribution
 
 Standard sentiment asymmetry analysis (§§1-3) measures *that* coverage is asymmetric, but cannot identify *why*. An asymmetry score tells us Wired covers Meta 0.28 points more negatively than peers — it cannot distinguish:
 
@@ -357,7 +445,7 @@ Standard sentiment asymmetry analysis (§§1-3) measures *that* coverage is asym
 
 MediaScope's Editorial Histories module provides causal identification by exploiting journalist migrations as natural experiments.
 
-### 11.2 Difference-in-Differences (DiD) Framework
+### 13.2 Difference-in-Differences (DiD) Framework
 
 We adapt the canonical DiD estimator from labor economics (Card & Krueger, 1994):
 
@@ -382,7 +470,7 @@ Y_ij = β₀ + β₁·Treatment_i + β₂·Post_j + β₃·(Treatment_i × Post_
 
 **Standard errors** are computed from the OLS DiD regression with Huber-White robust variance estimation.
 
-### 11.3 Portable Bias Score
+### 13.3 Portable Bias Score
 
 For journalists who have worked at ≥2 tracked publications, we measure how much of their coverage tone is *portable* (carried from outlet to outlet) versus *adaptive* (shaped by each outlet's culture):
 
@@ -398,7 +486,7 @@ Portable_Bias = 1 − |Cohen's d(tone_pub_A, tone_pub_B)| / 2
 
 Example: If Kara Swisher's average tone toward Meta is −0.45 at Recode, −0.42 at NYT, and −0.40 at WSJ, while the publication baselines are −0.10, −0.15, and +0.05 respectively, her portable bias score would be high (she carries her stance everywhere).
 
-### 11.4 Bias Decomposition (Two-Way ANOVA)
+### 13.4 Bias Decomposition (Two-Way ANOVA)
 
 For journalists with multi-publication coverage, total tone variance is decomposed:
 
@@ -415,7 +503,7 @@ Where:
 - SS_journalist_deviation = Σ nⱼ × (journalist_mean_at_j − publication_baseline_j)²
 - SS_residual = SS_total − SS_pub − SS_journalist
 
-### 11.5 Interrupted Time-Series for Leadership Changes
+### 13.5 Interrupted Time-Series for Leadership Changes
 
 Editorial leadership changes (new EIC, managing editor) are analysed with segmented regression:
 
@@ -430,7 +518,7 @@ Y_t = β₀ + β₁·T + β₂·D_t + β₃·(D_t × T_post) + ε_t
 | **β₃** | **Change in monthly trend under new leadership** |
 | β₁ + β₃ | Post-change monthly trend |
 
-### 11.6 Academic Novelty
+### 13.6 Academic Novelty
 
 To our knowledge, **no prior work applies difference-in-differences methodology to journalist-level editorial migration data** to decompose media bias into institutional and individual components. The closest related literature:
 
@@ -441,7 +529,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 | Puglisi & Snyder (2011) | Studied partisan coverage of political scandals | We exploit personnel changes as natural experiments |
 | Card & Krueger (1994) | Established DiD for minimum wage/employment | We adapt their framework from labor economics to media analysis |
 
-### 11.7 Additional References
+### 13.7 Additional References
 
 9. Card, D. & Krueger, A.B. (1994). "Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania." *American Economic Review*, 84(4), 772-793.
 10. Groseclose, T. & Milyo, J. (2005). "A Measure of Media Bias." *Quarterly Journal of Economics*, 120(4), 1191-1237.

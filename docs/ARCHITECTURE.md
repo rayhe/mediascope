@@ -170,7 +170,10 @@ Journalist YAML ──→ Career Tracker ──→ Migration Detection
 - **Security context adjustment**: Technical security/hacking articles use domain-specific language that inflates emotional intensity; the scorer reduces intensity for articles matching security topic patterns
 
 ### `framing.py`
-- Eight framing device types: guilt by association, anonymous authority, catastrophizing, false balance, selective omission signal, emotional appeal, loaded language, power asymmetry
+- **20 framing device types** organized in three tiers:
+  - **Core (12):** guilt by association, anonymous authority, catastrophizing, false balance, selective omission signal, emotional appeal, straw man, loaded language (including workplace coercion/revolt terms), refusal amplification, juxtaposition (including investment-near-layoffs), timeline implication, power asymmetry
+  - **Extended (6):** military techno-optimism, selective rehabilitation, rhetorical question, ironic quotation, isolation framing, pressure language
+  - **Structural post-pass (2):** kicker framing (checks final ~400 chars for discordant negative note), analogy stacking (fires when 3+ distinct analogy markers found)
 - Attribution verb analysis: neutral ("said"), undermining ("claimed"), concessive ("admitted"), adversarial ("warned")
 - **Workplace coercion/revolt language detection**: Terms like "no opt-out," "revolt," "nihilistic," "training their own replacements" detected as loaded language specific to labor/workplace framing
 - **Investment-near-layoffs juxtaposition detection**: Pattern where large spending figures ($X billion) appear near workforce cuts, an editorial device implying corporate indifference
@@ -178,6 +181,8 @@ Journalist YAML ──→ Career Tracker ──→ Migration Detection
 ### `sources.py`
 - **Source extraction**: Named and anonymous source detection with stop-word filtering (prevents false extractions like "After Meta said" → source "After Meta")
 - **Appositive source extraction**: Handles "Name, Title at Company, said" patterns
+- **Counted anonymous source detection**: Identifies "two employees said," "three people familiar with" patterns that standard regex misses — anonymous sources disguised as specificity
+- **No-comment signal tagging**: "Declined to comment," "did not respond to a request for comment" tagged as `source_type="no_comment"` and excluded from source counts — these are editorial signals, not source attributions
 - **Source authority grading**: Primary (SEC, court records) > Secondary (Reuters, AP) > Tertiary (blogs, social media)
 - **Source stance analysis**: Classifies each source as adversarial, supportive, or neutral based on quote content + attribution verbs. Computes `stance_balance` from −1.0 (all adversarial) to +1.0 (all supportive)
 - **Outsourced intensity detection**: Splits text into quoted vs. editorial prose, measures emotional intensity in each. High outsourced ratio (>0.5) means the journalist delegates emotional impact to sources while maintaining measured prose — a sophisticated editorial technique that defeats lexical sentiment analysis
