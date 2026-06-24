@@ -296,3 +296,138 @@ class TestSourceAuthorityV2:
 
     def test_empty_text_returns_zero(self):
         assert _measure_source_authority_v2("") == 0.0
+
+
+class TestPathCEmbeddedAnchorCorrection:
+    """Tests for Path C: product reviews with positive agency but embedded
+    adversarial anchor devices (kicker_framing, self_referential_investigation,
+    juxtaposition) that shift the reader's final impression."""
+
+    def test_wired_glasses_review_triggers_path_c(self):
+        """The Wired glasses launch review (Jun 23) has positive agency (+0.67)
+        but kicker_framing + self_referential_investigation + juxtaposition
+        should trigger Path C correction."""
+        import os
+        article_path = os.path.join(
+            os.path.dirname(__file__), "..",
+            "examples", "sample_output",
+            "wired_meta_glasses_launch_self_branded_2026_06_23_article.txt"
+        )
+        if not os.path.exists(article_path):
+            import pytest
+            pytest.skip("Article file not found")
+
+        with open(article_path) as f:
+            text = f.read()
+        result = analyze_composite(text)
+
+        # Path C should fire: corrected tone < raw tone
+        assert result.framing_corrected, "Path C should have fired"
+        assert result.overall_tone < result.raw_tone, (
+            f"Corrected tone ({result.overall_tone}) should be less "
+            f"than raw tone ({result.raw_tone})"
+        )
+        # Should still be positive (it IS partly a positive review)
+        assert result.overall_tone > 0, (
+            f"Corrected tone should stay positive, got {result.overall_tone}"
+        )
+        # But significantly less positive than raw
+        assert result.overall_tone < 0.55, (
+            f"Corrected tone ({result.overall_tone}) should be < 0.55"
+        )
+
+    def test_path_c_does_not_fire_on_negative_agency_article(self):
+        """Articles with negative agency should use Path A/B, not Path C."""
+        import os
+        article_path = os.path.join(
+            os.path.dirname(__file__), "..",
+            "examples", "sample_output",
+            "wired_meta_mci_data_exposure_2026_06_22_article.txt"
+        )
+        if not os.path.exists(article_path):
+            import pytest
+            pytest.skip("Article file not found")
+
+        with open(article_path) as f:
+            text = f.read()
+        result = analyze_composite(text)
+
+        # Path A should fire (negative agency), result should be negative
+        assert result.framing_corrected, "Framing correction should fire"
+        assert result.overall_tone < 0, (
+            f"MCI article should have negative corrected tone, got {result.overall_tone}"
+        )
+
+
+class TestSelfReferentialInvestigation:
+    """Tests for the self_referential_investigation framing device."""
+
+    def test_detects_wired_discovered(self):
+        """'WIRED discovered code' should be detected as
+        self_referential_investigation."""
+        from mediascope.analyze.framing import detect_framing_devices
+        text = (
+            "Earlier this month, WIRED discovered code in the public-facing "
+            "Meta AI app, suggesting that Meta was gearing up to debut a "
+            "face-recognition feature."
+        )
+        devices = detect_framing_devices(text)
+        device_types = {d.device_type for d in devices}
+        assert "self_referential_investigation" in device_types, (
+            f"Expected 'self_referential_investigation' in {device_types}"
+        )
+
+    def test_detects_after_publication_report(self):
+        """'After WIRED's report' should be detected."""
+        from mediascope.analyze.framing import detect_framing_devices
+        text = (
+            "After WIRED's report, Meta deleted the code, and none of "
+            "this technology is present in the new Meta Glasses."
+        )
+        devices = detect_framing_devices(text)
+        device_types = {d.device_type for d in devices}
+        assert "self_referential_investigation" in device_types, (
+            f"Expected 'self_referential_investigation' in {device_types}"
+        )
+
+    def test_detects_guardian_learned(self):
+        """'The Guardian has learned' should be detected."""
+        from mediascope.analyze.framing import detect_framing_devices
+        text = "The Guardian has learned that the company planned to expand."
+        devices = detect_framing_devices(text)
+        device_types = {d.device_type for d in devices}
+        assert "self_referential_investigation" in device_types
+
+    def test_detects_nyt_first_reported(self):
+        """'The New York Times first reported' should be detected."""
+        from mediascope.analyze.framing import detect_framing_devices
+        text = "The New York Times first reported the internal program."
+        devices = detect_framing_devices(text)
+        device_types = {d.device_type for d in devices}
+        assert "self_referential_investigation" in device_types
+
+    def test_detects_our_investigation(self):
+        """Reflexive 'our investigation' should be detected."""
+        from mediascope.analyze.framing import detect_framing_devices
+        text = "Our investigation found that the data was stored unencrypted."
+        devices = detect_framing_devices(text)
+        device_types = {d.device_type for d in devices}
+        assert "self_referential_investigation" in device_types
+
+    def test_no_false_positive_simple_mention(self):
+        """Simple 'Wired reports' (no investigative verb) should NOT trigger."""
+        from mediascope.analyze.framing import detect_framing_devices
+        text = "Wired reports that Meta has launched new glasses."
+        devices = detect_framing_devices(text)
+        device_types = {d.device_type for d in devices}
+        # 'reports' is not in the first pattern's verb list (it's in the
+        # second pattern but only after 'as/after' prepositions)
+        # Actually 'reported' IS in the list. Let me check.
+        # The first pattern includes 'reported' as an investigative verb.
+        # 'reports' (present tense) — let me check if the regex matches
+        # both. The pattern uses (?:discovered|...reported...) which
+        # matches 'reported' but not 'reports'.
+        # So 'Wired reports' should NOT match.
+        assert "self_referential_investigation" not in device_types, (
+            "Simple 'Wired reports' should not trigger self_referential_investigation"
+        )

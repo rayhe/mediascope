@@ -726,6 +726,29 @@ _ADVERSARIAL_DEVICE_TYPES: set[str] = {
     # editorially adversarial piece because these were excluded.
     "isolation_framing",
     "pressure_language",
+    # Self-referential investigation positions the publication as
+    # investigative authority, anchoring credibility to prior adversarial
+    # reporting.  Detected in Wired glasses launch review (Jun 23) where
+    # "WIRED discovered code" references the NameTag facial recognition
+    # investigation, embedding surveillance framing into a product review.
+    "self_referential_investigation",
+    # Kicker framing ends the article on a discordant negative note,
+    # overriding the reader's impression regardless of the article's
+    # overall positive content.  Critical for product reviews that end
+    # on workforce morale or privacy concerns.
+    "kicker_framing",
+}
+
+# Anchor device types that create negative reader takeaway even when
+# the subject has positive agency (e.g. product reviews where the
+# company is actively launching things).  These devices change what
+# the reader *remembers* — kickers anchor the final impression, and
+# self-referential investigation links the product to prior adversarial
+# reporting by the same publication.
+_ANCHOR_DEVICE_TYPES: set[str] = {
+    "kicker_framing",
+    "self_referential_investigation",
+    "juxtaposition",
 }
 
 # Minimum thresholds for framing correction activation
@@ -900,10 +923,42 @@ def _compute_framing_correction(
         return corrected, True
 
     # --- No correction needed ---
-    return raw_tone, False
-    corrected = max(-1.0, min(1.0, round(corrected, 4)))
+    # --- Path C: Embedded adversarial anchor ---
+    # Product review articles where the subject has positive agency
+    # (actively launching products, designing things) but specific
+    # "anchor" devices shift the reader's final impression negative.
+    # Kicker framing + self-referential investigation + juxtaposition
+    # create a "Trojan horse" effect: the article looks positive on
+    # the surface but anchors the reader's takeaway negatively.
+    #
+    # Example: Wired glasses launch review (Jun 23, 2026) — agency
+    # +0.67, raw tone +0.67, but the kicker ("morale at an all-time
+    # low"), self-referential investigation ("WIRED discovered code
+    # suggesting facial recognition"), and juxtaposition ("consumer
+    # smart glasses...surveillance tools for the US military") anchor
+    # the reader's final impression at ~+0.15 (neutral-to-slight-positive).
+    #
+    # Lighter blend than Path A: 60% raw, 40% toward neutral, because
+    # the article IS partly positive — the correction nudges toward
+    # the manual assessment, not a full adversarial override.
+    anchor_count = sum(
+        framing_summary.get(dt, 0) for dt in _ANCHOR_DEVICE_TYPES
+    )
+    if (
+        raw_tone > 0.3        # strongly positive raw score
+        and anchor_count >= 2  # at least 2 anchor devices
+        and adversarial_count >= 4  # overall framing is adversarial-heavy
+        and agency >= 0        # positive agency (product review context)
+    ):
+        # Nudge toward neutral: blend raw score toward 0.15
+        # (typical manual assessment for product reviews with embedded
+        # adversarial anchors — not negative, just much less positive)
+        anchor_target = 0.15
+        corrected = 0.55 * raw_tone + 0.45 * anchor_target
+        corrected = max(-0.2, min(raw_tone, round(corrected, 4)))
+        return corrected, True
 
-    return corrected, True
+    return raw_tone, False
 
 
 def _measure_source_authority_v2(text: str) -> float:

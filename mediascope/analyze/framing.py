@@ -959,6 +959,74 @@ _DEVICE_PATTERNS["pressure_language"] = _PRESSURE_LANGUAGE_PATTERNS
 
 
 # ---------------------------------------------------------------------------
+# Self-referential investigation: editorial device where a publication
+# cites its own prior investigations or discoveries within an article,
+# positioning itself as an investigative authority.  Common in Wired,
+# NYT, and Guardian articles that cross-reference their own scoops.
+# Example: "WIRED discovered code..." or "The Guardian has learned..."
+# This is distinct from simple self-mentions ("Wired reports") because it
+# claims an active investigative role, lending the publication's authority
+# to the framing of the current article.
+# ---------------------------------------------------------------------------
+_SELF_REFERENTIAL_INVESTIGATION_PATTERNS: list[re.Pattern] = [
+    # Publication + investigative verb (active voice)
+    # Covers: "WIRED discovered", "The Guardian has learned",
+    # "The New York Times first reported", "MIT Technology Review found"
+    re.compile(
+        r"\b(?:WIRED|Wired|The Guardian|Guardian|"
+        r"(?:The )?New York Times|NYT|"
+        r"(?:The )?Atlantic|"
+        r"MIT Technology Review|"
+        r"Reuters|Bloomberg|"
+        r"(?:The )?Washington Post|"
+        r"(?:The )?Wall Street Journal|WSJ|"
+        r"Business Insider|Insider|"
+        r"(?:The )?Verge|(?:The )?Information)"
+        r"\s+"
+        r"(?:has |had |have )?"
+        r"(?:first )?"
+        r"(?:discovered|uncovered|revealed|learned|found|obtained|"
+        r"reported|confirmed|identified|exposed|unearthed|"
+        r"determined|established|documented|verified)\b",
+        re.IGNORECASE,
+    ),
+    # "as [PUBLICATION] reported" / "according to a [PUBLICATION] investigation"
+    re.compile(
+        r"\b(?:as|after|following|since)\s+"
+        r"(?:WIRED|Wired|The Guardian|Guardian|"
+        r"(?:The )?New York Times|NYT|"
+        r"(?:The )?Atlantic|"
+        r"MIT Technology Review|"
+        r"Reuters|Bloomberg|"
+        r"(?:The )?Washington Post|"
+        r"(?:The )?Wall Street Journal|WSJ|"
+        r"Business Insider|Insider|"
+        r"(?:The )?Verge|(?:The )?Information)"
+        r"(?:'s)?\s+"
+        r"(?:earlier |prior |previous |recent )?"
+        r"(?:report|investigation|analysis|review|expose|story|"
+        r"reporting|findings?|inquiry|examination|scoop)",
+        re.IGNORECASE,
+    ),
+    # Reflexive: "our investigation" / "our reporting" / "this publication"
+    re.compile(
+        r"\b(?:our\s+(?:investigation|reporting|analysis|findings?|"
+        r"review|examination|inquiry|report)|"
+        r"this (?:publication|outlet|newsroom|paper)\s+"
+        r"(?:has |had |have )?"
+        r"(?:first )?"
+        r"(?:discovered|uncovered|revealed|learned|found|"
+        r"reported|confirmed|identified|exposed))\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["self_referential_investigation"] = (
+    _SELF_REFERENTIAL_INVESTIGATION_PATTERNS
+)
+
+
+# ---------------------------------------------------------------------------
 # Kicker framing: editorial technique of ending an article on a discordant
 # negative note — the last paragraph introduces a critical context (workforce
 # turmoil, regulatory threat, ethical concern) that was NOT the article's
@@ -1153,14 +1221,15 @@ def _detect_speculative_framing(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for patterns associated with 19 types of editorial framing:
+    Scans for patterns associated with 20 types of editorial framing:
     guilt_by_association, anonymous_authority, catastrophizing,
     false_balance, selective_omission_signal, emotional_appeal,
     straw_man, loaded_language, refusal_amplification,
     juxtaposition, timeline_implication, power_asymmetry,
     military_techno_optimism, selective_rehabilitation,
     rhetorical_question, ironic_quotation, analogy_stacking,
-    speculative_framing, and isolation_framing.
+    speculative_framing, isolation_framing, pressure_language,
+    and self_referential_investigation.
 
     Args:
         text: The article text to analyze.
