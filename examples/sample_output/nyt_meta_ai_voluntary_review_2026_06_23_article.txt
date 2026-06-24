@@ -1,0 +1,40 @@
+TITLE: U.S. Presses Meta to Agree to AI Reviews as Security Concerns Rise
+PUBLICATION: The New York Times
+DATE: June 23, 2026
+BYLINE: [Reconstructed from 5 secondary sources — original NYT article paywalled]
+URL: https://www.nytimes.com/2026/06/23/technology/meta-ai-voluntary-review.html
+
+---
+ARTICLE TEXT (reconstructed from Reuters, CNN, NPR, WSJ, and other secondary coverage):
+
+The Trump administration is pressing Meta to submit its artificial intelligence models for voluntary government review, which would allow federal agencies to evaluate the models' abilities and vulnerabilities before they are released to the public, according to four people familiar with the confidential request.
+
+The request was made in a series of emails between government officials and the social media giant, as the administration steps up oversight of the AI industry following the signing of an executive order on June 2 that established a framework for voluntary pre-release testing of advanced AI systems.
+
+Meta is the only major U.S. developer of AI technology that has not reached an agreement to voluntarily share its models with the federal government for review. OpenAI, Anthropic, Google, Microsoft and xAI have all signed agreements with the U.S. Center for AI Standards and Innovation, or CAISI, the Commerce Department body tasked with evaluating frontier models.
+
+The holdout is notable given that Meta has actively sought to position itself as a responsible AI leader. The company recently made its Llama models available to U.S. government agencies and defense contractors, including Lockheed Martin, Booz Allen Hamilton and Palantir, for national security applications. Yet it has not agreed to the pre-release review process that its peers have accepted.
+
+The request comes amid rising security concerns across the AI industry. Earlier this month, the U.S. government ordered Anthropic to suspend access to its most advanced AI models, including Mythos, for foreign nationals, citing national security concerns. The Pentagon had previously blacklisted Anthropic and deemed it a "supply chain risk" after a disagreement over guardrails in its models on classified military systems.
+
+Meta's open-source approach to AI complicates the voluntary review framework. Unlike OpenAI, Google and Anthropic, which develop proprietary models behind closed doors, Meta releases its Llama models as open-weight software that can be freely downloaded and modified by anyone. Once released, the models cannot be recalled or controlled, raising questions about the practicality of a pre-release review window.
+
+Security researchers have warned that open-source AI models are particularly vulnerable to misuse. A joint study by SentinelOne and Censys found that hackers and criminals were using variants of Meta's Llama and other open-weight models for spam, phishing, disinformation and other illicit purposes, with guardrails explicitly removed in hundreds of instances.
+
+"We share the administration's goal of advancing U.S. leadership on robust and secure frontier AI," Meta said in a statement. "While we are working through the details, we hope to sign the agreement soon."
+
+The U.S. Commerce Department did not immediately respond to a request for comment.
+
+The executive order Trump signed on June 2 asks AI companies to voluntarily submit their most powerful models for government testing up to 30 days before releasing them to the public. The order was a slimmed-down version of an earlier draft that had called for a 90-day review period, which Trump had scrapped over concerns it would stifle innovation and American companies' lead in the global AI race.
+
+---
+RECONSTRUCTION NOTES:
+- Core reporting from NYT as summarized by Reuters (Jun 23, 2026)
+- Background on June 2 EO from NPR/WAMC (Jun 2, 2026)
+- CAISI agreements context from Reuters (May 12, 2026)
+- Anthropic Mythos/security context from CNN (Jun 2, 2026) and Reuters
+- Open-source vulnerability data from Reuters/SentinelOne-Censys study (Jan 2026)
+- Meta defense contractor partnerships from Reuters (Sep 2025) and Bloomberg Law
+- Paragraphs 4-7 are editorial reconstruction drawing on confirmed secondary facts;
+  they represent the kind of contextual framing NYT tech reporters typically provide
+  but may not reflect the exact structure of the original article.

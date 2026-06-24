@@ -127,6 +127,7 @@ class SourceMention:
     affiliation: str = ""       # Organization or affiliation if detected
     quote: str = ""             # The quoted text, if any
     attribution_verb: str = ""  # The verb used for attribution
+    source_type: str = "named"  # "named", "anonymous", or "no_comment"
 
 
 def _is_anonymous_descriptor(text: str) -> bool:
@@ -446,8 +447,12 @@ def extract_sources(text: str) -> list[SourceMention]:
         ),
         # Publication-as-investigator patterns
         re.compile(r"\b\w+ (?:found|reported|revealed) (?:widespread|significant|extensive|growing)", re.IGNORECASE),
-        # No-comment / declined-to-comment patterns — signals the entity chose not
-        # to provide its side, leaving narrative to anonymous sources only
+    ]
+
+    # No-comment / declined-to-comment patterns — signals the entity chose not
+    # to provide its side.  These are NOT anonymous sources; they are editorial
+    # signals about the target entity's engagement with the reporter.
+    no_comment_patterns: list[re.Pattern] = [
         re.compile(
             r"\b(?:did not|declined to|chose not to|refused to|would not|couldn't)"
             r" (?:immediately )?"
@@ -478,6 +483,86 @@ def extract_sources(text: str) -> list[SourceMention]:
                 affiliation="",
                 quote=_extract_nearby_quote(text, m.start(), m.end()),
                 attribution_verb=_find_attribution_verb(context),
+                source_type="anonymous",
+            ))
+
+    # Detect no-comment signals separately — tagged as source_type="no_comment"
+    # so they can be excluded from source counts and stance analysis
+    for pat in no_comment_patterns:
+        for m in pat.finditer(text):
+            descriptor = m.group().strip()
+            if descriptor.lower() in {n.lower() for n in seen_names}:
+                continue
+            seen_names.add(descriptor)
+
+            sources.append(SourceMention(
+                name=descriptor,
+                is_anonymous=False,
+                is_expert=False,
+                affiliation="",
+                quote="",
+                attribution_verb="",
+                source_type="no_comment",
+            ))
+
+    # Pattern 6: Organizational sources — "Meta said", "Google confirmed",
+    # "the company said in a statement", "a spokesperson told Reuters"
+    # These are named non-anonymous sources where the speaker is an entity
+    # rather than a person.  They are important for stance analysis because
+    # company statements often represent the target entity's official position.
+    org_source_patterns: list[re.Pattern] = [
+        # "[Company] said/told/confirmed in [a statement/an emailed response]"
+        re.compile(
+            rf"\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)"
+            rf"\s+({verb_alternation})"
+            rf"\s+(?:in (?:a|an|the|its)\s+(?:statement|emailed? (?:response|statement|comment)|"
+            rf"blog post|press release|filing|report|letter|memo|announcement))\b",
+        ),
+        # "a [Company] spokesperson/representative said/told"
+        re.compile(
+            rf"\ban?\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s+"
+            rf"(?:spokesperson|spokeswoman|spokesman|representative|official)\s+"
+            rf"({verb_alternation})\b",
+        ),
+        # "[Company] spokesperson [Name] said" — skip if name already captured
+        re.compile(
+            rf"\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s+"
+            rf"(?:spokesperson|spokeswoman|spokesman)\s+"
+            rf"[A-Z][a-z]+ [A-Z][a-z]+\b",
+        ),
+    ]
+
+    # Known tech company names to validate organizational matches
+    _KNOWN_ORGS = {
+        "meta", "google", "apple", "microsoft", "amazon", "openai",
+        "anthropic", "nvidia", "tesla", "spacex", "x", "twitter",
+        "alphabet", "ibm", "oracle", "palantir", "samsung",
+    }
+
+    for pat in org_source_patterns:
+        for m in org_source_patterns[0].finditer(text):
+            org_name = m.group(1).strip()
+            # Only match if it looks like an organization name
+            if org_name.lower() not in _KNOWN_ORGS:
+                # Also allow if followed by spokesperson-type words
+                continue
+            if org_name.lower() in {n.lower() for n in seen_names}:
+                continue
+            seen_names.add(org_name)
+
+            verb = m.group(2).strip().lower() if m.lastindex >= 2 else ""
+            ctx_start = max(0, m.start() - 100)
+            ctx_end = min(len(text), m.end() + 200)
+            context = text[ctx_start:ctx_end]
+
+            sources.append(SourceMention(
+                name=org_name,
+                is_anonymous=False,
+                is_expert=False,
+                affiliation=org_name,
+                quote=_extract_nearby_quote(text, m.start(), m.end()),
+                attribution_verb=verb,
+                source_type="organizational",
             ))
 
     return sources
@@ -788,6 +873,11 @@ def analyze_source_stance(
         sources = extract_sources(sources_or_text)
     else:
         sources = sources_or_text
+
+    # Filter out no_comment signals — they are not sources and should
+    # not count toward adversarial/supportive/neutral tallies
+    sources = [s for s in sources if getattr(s, "source_type", "named") != "no_comment"]
+
     if not sources:
         return {
             "adversarial_count": 0,

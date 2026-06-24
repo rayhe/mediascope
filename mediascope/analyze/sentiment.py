@@ -249,6 +249,18 @@ PASSIVE_FRAMING: list[str] = [
     "mounting legal restrictions", "legal action",
     "emergency legal order", "emergency arbitration",
     "arbitration order", "sanctions motion",
+    # Regulatory non-cooperation / compliance holdout framing — common in
+    # government-pressure articles where the subject is positioned as the
+    # sole non-cooperator.  Detected in NYT voluntary-review article where
+    # "has not agreed to" and "holdout" were unmatched by any framing list.
+    "has not agreed to", "has not agreed",
+    "has not reached an agreement", "has not reached agreement",
+    "has not signed", "has not signed an agreement",
+    "has not accepted", "has not submitted",
+    "holdout", "lone holdout",
+    "has not complied", "has not cooperated",
+    "has not committed", "has not joined",
+    "is pressing", "pressing it to",
     # Workplace coercion / compulsion passive framing
     "no option to opt-out", "no option to opt out",
     "there is no option", "there is no opt-out",
@@ -400,6 +412,10 @@ def count_anonymous_sources(text: str) -> tuple[int, int]:
     try:
         from mediascope.analyze.sources import extract_sources
         sources = extract_sources(text)
+        # Exclude no_comment signals (e.g. "did not respond to a request
+        # for comment") — these are editorial signals, not source attributions,
+        # and should not inflate named/anonymous counts.
+        sources = [s for s in sources if getattr(s, "source_type", "named") != "no_comment"]
         anonymous_count = sum(1 for s in sources if s.is_anonymous)
         total = len(sources)
         return anonymous_count, total
@@ -703,6 +719,13 @@ _ADVERSARIAL_DEVICE_TYPES: set[str] = {
     "emotional_appeal",
     "catastrophizing",
     "power_asymmetry",
+    # Isolation and pressure framing are adversarial: "Meta is the ONLY
+    # major company that has not..." and "pressing Meta to..." position
+    # the subject as a non-cooperator under authority pressure.  Detected
+    # in NYT voluntary-review article where toolkit scored +0.61 on an
+    # editorially adversarial piece because these were excluded.
+    "isolation_framing",
+    "pressure_language",
 }
 
 # Minimum thresholds for framing correction activation

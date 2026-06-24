@@ -291,10 +291,14 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"behind (?:closed doors|the scenes))\b",
         re.IGNORECASE,
     ),
-    # "Dormant" / hidden capability language
+    # "Dormant" / hidden capability language — require proximity to feature/code
+    # context to avoid flagging literal uses like "dormant account" or
+    # "hidden in websites" (describing where prompt injection commands live)
     re.compile(
-        r"\b(?:dormant|hidden|buried|unreleased|inactive|"
-        r"undisclosed|unannounced|under.?the.?radar)\b",
+        r"\b(?:dormant|hidden|buried|unreleased|undisclosed|unannounced|under.?the.?radar)"
+        r"(?=\s+(?:feature|capability|code|function|tool|mode|setting|option|"
+        r"flag|parameter|toggle|endpoint|API|module|interface|app|"
+        r"product|project|initiative|plan|prototype|design|system)s?\b)",
         re.IGNORECASE,
     ),
     # Workplace-specific loaded language — terms that characterize
@@ -864,6 +868,93 @@ _IRONIC_QUOTATION_PATTERNS: list[re.Pattern] = [
 ]
 
 _DEVICE_PATTERNS["ironic_quotation"] = _IRONIC_QUOTATION_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Isolation framing: editorial technique that singles out a company/entity
+# as "the only" one not doing something that peers/industry has adopted.
+# Creates implicit pressure and negative framing through exclusion language.
+# Common in NYT-style institutional tech reporting.
+# ---------------------------------------------------------------------------
+_ISOLATION_FRAMING_PATTERNS: list[re.Pattern] = [
+    # "X is the only major/significant/leading company/developer/firm that has not..."
+    re.compile(
+        r"\b(?:is|remains?|was|stands? as)\s+the\s+only\s+"
+        r"(?:major|significant|leading|big|large|prominent|remaining)?\s*"
+        r"(?:U\.?S\.?|American|European|Western|global)?\s*"
+        r"(?:company|developer|firm|maker|provider|platform|tech giant|"
+        r"lab|laboratory|operator|player|vendor|manufacturer)\b",
+        re.IGNORECASE,
+    ),
+    # "the lone/sole holdout" / "the last holdout"
+    re.compile(
+        r"\b(?:the\s+)?(?:lone|sole|last(?:\s+remaining)?|only)\s+"
+        r"(?:holdout|outlier|exception|refuser|dissenter|resister)\b",
+        re.IGNORECASE,
+    ),
+    # "alone among its peers/rivals/competitors"
+    re.compile(
+        r"\b(?:alone|isolated|standing alone|standing apart)\s+"
+        r"(?:among|from)\s+(?:its\s+)?(?:peers|rivals|competitors|counterparts|"
+        r"fellow|other|industry)\b",
+        re.IGNORECASE,
+    ),
+    # "while every other / all other / its peers have..."
+    re.compile(
+        r"\b(?:while|whereas|even as|although)\s+"
+        r"(?:every other|all other|all of its|its\s+(?:peers|rivals|competitors)|"
+        r"the rest of the industry|other major)\b"
+        r".{0,80}?"
+        r"\b(?:have|has|had|agreed|signed|accepted|adopted|complied|committed)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "unlike its peers" / "unlike every other"
+    re.compile(
+        r"\b(?:unlike)\s+(?:its\s+)?(?:peers|rivals|competitors|counterparts|"
+        r"every other|all other|the rest)\b",
+        re.IGNORECASE,
+    ),
+    # "X has not/refused to X that Y, Z, and W already have"
+    re.compile(
+        r"\bhas\s+(?:not\s+(?:yet\s+)?)?(?:agreed|signed|accepted|adopted|committed|submitted)\b"
+        r".{0,120}?"
+        r"\b(?:that|which|while)\s+(?:\w+,?\s+){1,6}(?:and\s+\w+\s+)?(?:have|has|had)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "singled out" / "set apart" / "left behind"
+    re.compile(
+        r"\b(?:singled out|set apart|left behind|left out|out of step|"
+        r"lagging behind|falling behind|dragging (?:its |their )?feet)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["isolation_framing"] = _ISOLATION_FRAMING_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Pressure language: editorial word choices that frame actions as coercive
+# or resistant — "pressing," "urging," "demanding" applied to institutional
+# actors create an implied power dynamic beyond neutral reporting.
+# ---------------------------------------------------------------------------
+_PRESSURE_LANGUAGE_PATTERNS: list[re.Pattern] = [
+    # Government/institution "pressing" / "pushing" / "urging" a company
+    re.compile(
+        r"\b(?:is |are |has been |was |were )?(?:pressing|pushing|pressuring|urging|"
+        r"leaning on|squeezing|nudging|strong-?arming|arm-?twisting|"
+        r"calling on|bearing down on)\s+"
+        r"(?:\w+\s+){0,3}(?:to|into)\b",
+        re.IGNORECASE,
+    ),
+    # "confidential request" / "private demand" — escalation through secrecy
+    re.compile(
+        r"\b(?:confidential|private|secret|behind.?the.?scenes?|quiet|discreet)\s+"
+        r"(?:request|demand|ultimatum|warning|communication|message|pressure)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["pressure_language"] = _PRESSURE_LANGUAGE_PATTERNS
 
 
 def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
