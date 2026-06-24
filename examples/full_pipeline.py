@@ -13,7 +13,8 @@ from mediascope.ingest.scraper import extract_articles
 from mediascope.analyze.entities import detect_entities, get_primary_entity
 from mediascope.analyze.sentiment import analyze_composite
 from mediascope.analyze.framing import detect_framing_devices
-from mediascope.analyze.sources import extract_sources, grade_source_authority
+from mediascope.analyze.sources import extract_sources, grade_source_authority, analyze_source_stance
+from mediascope.analyze.sentiment import measure_outsourced_intensity
 from mediascope.analyze.topics import classify_topic
 from mediascope.score.asymmetry import calculate_asymmetry, generate_asymmetry_report
 from mediascope.score.byline import build_journalist_profiles, rank_by_asymmetry
@@ -79,6 +80,12 @@ def main():
         sources = extract_sources(article.text)
         authority = grade_source_authority(sources)
 
+        # Source stance analysis (new: measures adversarial vs supportive deployment)
+        stance = analyze_source_stance(sources, TARGET_ENTITY, full_text=article.text)
+
+        # Outsourced intensity (new: detects emotional language delegation to quotes)
+        outsourced = measure_outsourced_intensity(article.text)
+
         # Topic classification
         topics = classify_topic(article.text)
 
@@ -92,6 +99,8 @@ def main():
             "framing_devices": framing,
             "sources": sources,
             "source_authority": authority,
+            "source_stance": stance,
+            "outsourced_intensity": outsourced,
             "topics": topics,
         })
 
@@ -153,6 +162,27 @@ def main():
         print(f"\n  Journalist Asymmetry Rankings:")
         for name, score in rankings[:5]:
             print(f"    {name}: {score:.3f}")
+
+    # Source Stance Summary (new)
+    meta_articles = [a for a in analyzed if a["primary_entity"] == TARGET_ENTITY]
+    if meta_articles:
+        avg_stance = sum(
+            a["source_stance"]["stance_balance"] for a in meta_articles
+        ) / len(meta_articles)
+        avg_outsourced = sum(
+            a["outsourced_intensity"]["outsourced_ratio"] for a in meta_articles
+        ) / len(meta_articles)
+        total_adversarial = sum(
+            a["source_stance"]["adversarial_count"] for a in meta_articles
+        )
+        total_supportive = sum(
+            a["source_stance"]["supportive_count"] for a in meta_articles
+        )
+        print(f"\n  Source Stance Summary ({TARGET_ENTITY} articles):")
+        print(f"    Avg stance balance: {avg_stance:.3f} (-1=adversarial, +1=supportive)")
+        print(f"    Total adversarial sources: {total_adversarial}")
+        print(f"    Total supportive sources: {total_supportive}")
+        print(f"    Avg outsourced intensity: {avg_outsourced:.3f}")
 
     # 5. Disclosure
     print(f"\n[DISCLOSE] Generating conflict disclosure...")

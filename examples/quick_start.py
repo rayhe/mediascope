@@ -6,7 +6,8 @@ and generate a disclosure statement.
 
 from mediascope.config import load_profile
 from mediascope.analyze.entities import detect_entities, get_primary_entity, get_entity_distribution
-from mediascope.analyze.sentiment import analyze_composite
+from mediascope.analyze.sentiment import analyze_composite, measure_outsourced_intensity
+from mediascope.analyze.sources import extract_sources, analyze_source_stance
 from mediascope.conflicts.disclosure import generate_disclosure
 
 
@@ -54,6 +55,26 @@ def main():
     print(f"  Anonymous source ratio:    {sentiment.anonymous_source_ratio:.3f}")
     print(f"  Speculative language:      {sentiment.speculative_language_ratio:.3f}")
     print(f"  Comparative framing:       {sentiment.comparative_framing:.3f}")
+    print()
+
+    # Source stance analysis (who are sources deployed against?)
+    sources = extract_sources(sample_text)
+    stance = analyze_source_stance(sources, "Meta", full_text=sample_text)
+    print(f"Source Stance Analysis:")
+    print(f"  Adversarial sources: {stance['adversarial_count']}")
+    print(f"  Supportive sources:  {stance['supportive_count']}")
+    print(f"  Neutral sources:     {stance['neutral_count']}")
+    print(f"  Stance balance:      {stance['stance_balance']:.3f} (-1=adversarial, +1=supportive)")
+    print()
+
+    # Outsourced intensity (does the journalist delegate emotional language to quotes?)
+    outsourced = measure_outsourced_intensity(sample_text)
+    print(f"Outsourced Intensity:")
+    print(f"  Outsourced ratio:    {outsourced['outsourced_ratio']:.3f}")
+    print(f"  Editorial intensity: {outsourced['editorial_intensity']:.3f}")
+    print(f"  Quoted intensity:    {outsourced['quoted_intensity']:.3f}")
+    print(f"  Editorial words:     {outsourced['editorial_word_count']}")
+    print(f"  Quoted words:        {outsourced['quoted_word_count']}")
     print()
 
     # 3. Generate conflict disclosure

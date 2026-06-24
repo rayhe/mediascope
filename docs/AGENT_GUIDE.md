@@ -224,7 +224,9 @@ from mediascope.ingest.scraper import extract_article
 from mediascope.analyze.entities import detect_entities, get_primary_entity
 from mediascope.analyze.sentiment import analyze_composite
 from mediascope.analyze.framing import detect_framing_devices
-from mediascope.analyze.sources import extract_sources, analyze_source_stance, measure_outsourced_intensity, detect_power_asymmetry
+from mediascope.analyze.sources import extract_sources, analyze_source_stance
+from mediascope.analyze.sentiment import measure_outsourced_intensity
+from mediascope.analyze.framing import detect_framing_devices  # power_asymmetry is a framing device type
 from mediascope.score.asymmetry import calculate_asymmetry
 from mediascope.score.byline import build_journalist_profiles
 from mediascope.conflicts.ownership import parse_ownership_chain, find_conflicts
@@ -416,6 +418,48 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
 {
     "name": "careers_list",
     "description": "List all tracked journalists with current outlets, roles, publication count, and migration count"
+}
+```
+
+### analyze_source_stance
+
+```json
+{
+    "name": "analyze_source_stance",
+    "description": "Analyze the collective stance of sources in an article toward the subject entity. Measures whether sources are deployed adversarially (to undermine) or supportively (to defend). Returns stance_balance from -1.0 (all adversarial) to +1.0 (all supportive).",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "article_text": {
+                "type": "string",
+                "description": "Full article text. Sources are automatically extracted."
+            },
+            "target_entity": {
+                "type": "string",
+                "description": "Optional entity name for context-aware stance detection"
+            }
+        },
+        "required": ["article_text"]
+    }
+}
+```
+
+### measure_outsourced_intensity
+
+```json
+{
+    "name": "measure_outsourced_intensity",
+    "description": "Detect outsourced emotional intensity — the editorial technique of deploying emotional quotes from sources while keeping prose neutral. Returns outsourced_ratio from 0.0 (no outsourcing) to 1.0 (all emotional language in quotes). Located in mediascope.analyze.sentiment, not sources.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "article_text": {
+                "type": "string",
+                "description": "Full article text. Splits into quoted vs editorial segments automatically."
+            }
+        },
+        "required": ["article_text"]
+    }
 }
 ```
 

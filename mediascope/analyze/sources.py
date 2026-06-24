@@ -414,6 +414,22 @@ def extract_sources(text: str) -> list[SourceMention]:
             r"\s+(?:" + verb_alternation + r"|familiar|briefed|close)\b",
             re.IGNORECASE,
         ),
+        # "[number] employees/sources with knowledge of" — "two employees with knowledge of the matter"
+        # Variant of above that catches "with knowledge of" qualifier
+        re.compile(
+            r"(?<![,\d])\b(?:\d{1,3}|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|sixteen|twenty|dozen)"
+            r" (?:current\s+(?:and\s+)?(?:former\s+)?)?"
+            r"(?:workers|employees|staffers|engineers|executives|officials|sources|people|persons?)"
+            r" with (?:direct\s+)?knowledge of\b",
+            re.IGNORECASE,
+        ),
+        # "one person/employee familiar with" — singular counted source with "familiar with" qualifier
+        # Catches: "one person familiar with the plans", "one employee familiar with the discussions"
+        re.compile(
+            r"\bone (?:person|employee|source|official|executive|staffer|engineer|worker)"
+            r" (?:familiar with|with knowledge of|close to|briefed on)\b",
+            re.IGNORECASE,
+        ),
         # "several people say" — quantifier + generic people noun + verb
         re.compile(
             r"\b(?:some|several|multiple|many|numerous|various|a few|a handful of|a number of)"
@@ -430,6 +446,17 @@ def extract_sources(text: str) -> list[SourceMention]:
         ),
         # Publication-as-investigator patterns
         re.compile(r"\b\w+ (?:found|reported|revealed) (?:widespread|significant|extensive|growing)", re.IGNORECASE),
+        # No-comment / declined-to-comment patterns — signals the entity chose not
+        # to provide its side, leaving narrative to anonymous sources only
+        re.compile(
+            r"\b(?:did not|declined to|chose not to|refused to|would not|couldn't)"
+            r" (?:immediately )?"
+            r"(?:respond|comment|reply|return|answer|provide)"
+            r"(?: to)?"
+            r"(?: (?:a|the|our|multiple))?"
+            r"(?: (?:request|call|email|query|inquiry|message|questions?))?",
+            re.IGNORECASE,
+        ),
     ]
 
     for pat in anon_patterns:

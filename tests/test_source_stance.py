@@ -445,3 +445,109 @@ class TestIntegrationWhistleblowerArticle:
         assert "power_asymmetry" in summary, (
             f"Expected power_asymmetry in devices: {summary}"
         )
+
+
+# ===================================================================
+# Counted Anonymous Source Pattern Tests
+# ===================================================================
+
+class TestCountedAnonymousSources:
+    """Test detection of counted anonymous source patterns common in
+    tech scoops and product-leak journalism.
+
+    Added in Jun 23, 2026 Type D iteration after NYT Arena article
+    analysis revealed the toolkit was blind to patterns like
+    "two employees with knowledge of the matter" and
+    "one person familiar with the plans".
+    """
+
+    def test_employees_with_knowledge(self):
+        """'two employees with knowledge of the matter' should be detected."""
+        text = (
+            "Mark Zuckerberg recently directed a small team at Meta to "
+            "build a smartphone app similar to Polymarket, according to "
+            "two employees with knowledge of the matter."
+        )
+        sources = extract_sources(text)
+        anon_sources = [s for s in sources if s.is_anonymous]
+        assert len(anon_sources) >= 1, (
+            f"Expected at least 1 anonymous source, got {len(anon_sources)}: "
+            f"{[s.name for s in sources]}"
+        )
+        # Verify the specific pattern is captured
+        names_lower = [s.name.lower() for s in anon_sources]
+        assert any("employees with knowledge" in n for n in names_lower), (
+            f"Expected 'employees with knowledge' in source names: {names_lower}"
+        )
+
+    def test_one_person_familiar(self):
+        """'one person familiar with the plans' should be detected."""
+        text = (
+            "The app would probably rely on a video game-like points "
+            "system, one person familiar with the plans told the Times."
+        )
+        sources = extract_sources(text)
+        anon_sources = [s for s in sources if s.is_anonymous]
+        assert len(anon_sources) >= 1, (
+            f"Expected at least 1 anonymous source, got {len(anon_sources)}: "
+            f"{[s.name for s in sources]}"
+        )
+
+    def test_three_people_said(self):
+        """'three people said' with counted + verb should be detected."""
+        text = (
+            "The project is considered experimental, three people said, "
+            "though Zuckerberg views it as a top priority."
+        )
+        sources = extract_sources(text)
+        anon_sources = [s for s in sources if s.is_anonymous]
+        assert len(anon_sources) >= 1, (
+            f"Expected at least 1 anonymous source: {[s.name for s in sources]}"
+        )
+
+    def test_no_comment_detection(self):
+        """'did not immediately respond to a request for comment' should be detected."""
+        text = (
+            "Meta did not immediately respond to a request for comment. "
+            "Reuters could not independently verify the report."
+        )
+        sources = extract_sources(text)
+        anon_sources = [s for s in sources if s.is_anonymous]
+        assert len(anon_sources) >= 1, (
+            f"Expected no-comment pattern to be detected as anonymous source: "
+            f"{[s.name for s in sources]}"
+        )
+
+    def test_nyt_arena_full_article(self):
+        """Full NYT Arena reconstruction should detect multiple anonymous sources."""
+        article_path = os.path.join(
+            os.path.dirname(__file__), "..",
+            "examples", "sample_output",
+            "nyt_meta_prediction_markets_arena_2026_06_23_article.txt",
+        )
+        if not os.path.exists(article_path):
+            pytest.skip("NYT Arena article not found")
+
+        with open(article_path) as f:
+            text = f.read()
+
+        sources = extract_sources(text)
+        anon_sources = [s for s in sources if s.is_anonymous]
+        # Should detect at least: "two employees", "one person", "did not respond"
+        assert len(anon_sources) >= 2, (
+            f"Expected at least 2 anonymous sources in NYT Arena article, "
+            f"got {len(anon_sources)}: {[s.name for s in anon_sources]}"
+        )
+
+    def test_declined_to_comment_variant(self):
+        """'declined to comment' should be detected."""
+        text = (
+            "A spokesperson for the company declined to comment on the "
+            "specifics of the arrangement."
+        )
+        sources = extract_sources(text)
+        anon_sources = [s for s in sources if s.is_anonymous]
+        assert len(anon_sources) >= 1, (
+            f"Expected 'declined to comment' to be detected: "
+            f"{[s.name for s in sources]}"
+        )
