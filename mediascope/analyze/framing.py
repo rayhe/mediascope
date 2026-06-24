@@ -74,6 +74,22 @@ _ANONYMOUS_AUTHORITY_PATTERNS: list[re.Pattern] = [
     re.compile(r"\ba person with (?:direct )?knowledge\b", re.IGNORECASE),
     re.compile(r"\bpeople (?:briefed on|with knowledge of)\b", re.IGNORECASE),
     re.compile(r"\binsiders? (?:said|told|indicated|suggested)\b", re.IGNORECASE),
+    # Numbered officials/people as anonymous sources — common in NYT-style
+    # government/policy reporting: "two government officials said"
+    re.compile(
+        r"\b(?:two|three|four|five|six|seven|several|multiple)\s+"
+        r"(?:government|administration|intelligence|defense|senior|federal|"
+        r"White House|Commerce|State Department)\s+"
+        r"(?:officials?|aides?|advisers?|staffers?)\s+"
+        r"(?:said|told|confirmed|added|indicated)\b",
+        re.IGNORECASE,
+    ),
+    # "one/a person involved in / close to" — person described by proximity
+    re.compile(
+        r"\b(?:one|a) person (?:involved in|close to|inside|with the|within the|"
+        r"privy to|briefed on|engaged in)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _CATASTROPHIZING_PATTERNS: list[re.Pattern] = [
@@ -436,21 +452,26 @@ _REFUSAL_AMPLIFICATION_PATTERNS: list[re.Pattern] = [
 # Military/government juxtaposition with consumer: editorial device
 _JUXTAPOSITION_PATTERNS: list[re.Pattern] = [
     # Military/law enforcement juxtaposed with consumer context
+    # NOTE: "government" removed — too generic, fires on policy/regulatory
+    # articles where "government" means "federal regulator" not "military."
+    # "public" removed from consumer side — too generic, fires on standard
+    # "release to the public" language.  Kept "civilian" as the correct
+    # military/civilian divide marker.
     re.compile(
         r"\b(?:military|Pentagon|law enforcement|police|intelligence|"
-        r"surveillance|defense|government|FBI|CIA|NSA|"
+        r"surveillance|defense|FBI|CIA|NSA|"
         r"special operations|marshals?)\b"
         r".{0,120}?"
         r"\b(?:consumer|mass.?market|commercial|everyday|"
-        r"everyone else|ordinary|public|civilian|retail)\b",
+        r"everyone else|ordinary|civilian|retail)\b",
         re.IGNORECASE | re.DOTALL,
     ),
     re.compile(
         r"\b(?:consumer|mass.?market|commercial|everyday|"
-        r"everyone else|ordinary|public|civilian)\b"
+        r"everyone else|ordinary|civilian)\b"
         r".{0,120}?"
         r"\b(?:military|Pentagon|law enforcement|police|intelligence|"
-        r"surveillance|defense|government|FBI|CIA|NSA|"
+        r"surveillance|defense|FBI|CIA|NSA|"
         r"special operations|marshals?)\b",
         re.IGNORECASE | re.DOTALL,
     ),

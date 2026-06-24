@@ -47,6 +47,13 @@ ANONYMOUS_SOURCE_PATTERNS: list[re.Pattern] = [
     re.compile(r"\b(?:some|several|multiple|many|other) (?:workers|employees|engineers|staffers|people) (?:said|told|described|complained|called)\b", re.IGNORECASE),
     # Publication-investigative patterns
     re.compile(r"\b\w+ (?:found|reported|revealed) (?:widespread|significant|extensive|growing)\b", re.IGNORECASE),
+    # Numbered officials/people as anonymous sources — very common in NYT-style
+    # government and policy reporting: "two government officials said",
+    # "four people familiar with", "three administration officials confirmed"
+    re.compile(r"\b(?:two|three|four|five|six|seven|several|multiple) (?:government|administration|intelligence|defense|senior|federal|White House|Commerce|State Department) (?:officials?|aides?|advisers?|staffers?) (?:said|told|confirmed|added|indicated)\b", re.IGNORECASE),
+    # "one/a person involved in / close to / inside / with the" — person described
+    # by proximity/involvement rather than by "knowledge of"
+    re.compile(r"\b(?:one|a) person (?:involved in|close to|inside|with the|within the|privy to|briefed on|engaged in) (?:the )?(?:process|matter|talks?|discussions?|negotiations?|deliberations?|effort|planning)\b", re.IGNORECASE),
 ]
 
 # Named source patterns — look for "Name said", "said Name", "according to Name"

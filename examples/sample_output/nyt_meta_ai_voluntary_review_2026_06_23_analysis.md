@@ -140,3 +140,47 @@ This article is analytically significant for the MediaScope framework because:
 - `TestRegulatoryPassiveFraming` (3 tests): "has not agreed," "holdout," "is pressing"
 
 **Full suite: 187 passed** (up from 179)
+
+---
+
+## Iteration 2 Fixes (2026-06-24 15:00 PT)
+
+Re-analyzed this article with the full mirror text (digitalsolucen.com). Found 3 additional gaps:
+
+### Fix 5: Government officials anonymous source pattern
+**Files:** `mediascope/analyze/sentiment.py`, `mediascope/analyze/framing.py`
+**Problem:** "two government officials said" (paragraph 8) was missed. No pattern covered
+numbered government/administration/intelligence officials as anonymous sources.
+**Pattern added:** `N government/administration/intelligence/defense/senior/federal/White House/Commerce officials said/told/confirmed`
+**Impact:** Anonymous source detection: 6 → 8 in this article (+2)
+
+### Fix 6: Person-involved anonymous source pattern
+**Files:** `mediascope/analyze/sentiment.py`, `mediascope/analyze/framing.py`
+**Problem:** "one person involved in the process said" (paragraph 10) was missed. Existing
+patterns required "knowledge of" but not "involved in" / "close to" / "inside."
+**Pattern added:** `one/a person involved in|close to|inside|with the|within the|privy to|briefed on|engaged in` + context nouns
+**Impact:** anonymous_authority framing devices: 3 → 5 in this article (+2)
+
+### Fix 7: Juxtaposition false positive for government + public
+**File:** `mediascope/analyze/framing.py`
+**Problem:** "government up to 30 days to evaluate A.I. models before their release to the
+public" falsely triggered military/consumer juxtaposition because "government" was in the
+military terms list and "public" was in the consumer terms list.
+**Root cause:** "government" is too generic — in policy reporting it means "federal regulator,"
+not "military/intelligence apparatus." And "public" means "general populace," not "consumer market."
+**Fix:** Removed "government" from military/enforcement term list and "public" from consumer/civilian
+term list. Kept all specific terms: military, Pentagon, FBI, CIA, NSA, etc. and consumer, commercial,
+civilian, retail, etc.
+**Impact:** False positive juxtaposition eliminated (1 → 0 in this article). All legitimate
+military/consumer juxtapositions still fire (verified: military+consumer ✓, Pentagon+civilian ✓).
+
+### Fix 8: 20 new tests
+**File:** `tests/test_nyt_ai_reviews.py`
+**Test classes:**
+- `TestGovernmentOfficialsAnonymousSource` (5 tests): government, administration, senior, intelligence, federal
+- `TestPersonInvolvedAnonymousSource` (4 tests): involved in, close to, briefed on, inside
+- `TestJuxtapositionFalsePositiveFix` (4 tests): policy context no-fire + legitimate still-fires
+- `TestAnonymousAuthorityFramingPatterns` (2 tests): framing device integration
+- `TestNYTAIReviewsArticleFullAnalysis` (5 tests): full article framing validation
+
+**Full suite: 236 passed** (up from 216)
