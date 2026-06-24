@@ -4,6 +4,47 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-24 03:00 PT — Hour Type B: Journalist Career Research
+
+**Focus:** Expand career histories for 5 journalists across 3 publications (Wired, Atlantic, Guardian). Committed prior unstaged work (Alex Hern + Dan Milmo expansions), then deep-researched Steven Levy, Adrienne LaFrance, and Ian Bogost.
+
+### What was improved:
+
+1. **Committed prior unstaged work (Alex Hern + Dan Milmo):**
+   - Alex Hern: Expanded from 2 entries to 6 (Left Foot Forward → New Statesman → Guardian reporter → features writer → senior correspondent → Economist AI Writer). KEY MIGRATION: Guardian → Economist (Oct 2024), 11-year Guardian veteran. Won Technology Journalist of the Year 2020. Founded TechScape newsletter.
+   - Dan Milmo: Expanded from 2 entries to 4 (Guardian trainee → transport correspondent → deputy business editor → global technology editor). Unusual transport-to-tech beat change.
+   - Sources: speakout.uk, theguardian.com/profile, xriskobservatory.org, various LinkedIn/press profiles
+   - Commit: `a7f53f3`
+
+2. **Steven Levy (Wired) — expanded from 2 to 7 entries:**
+   - Full career arc: freelance (Rolling Stone, Esquire, 1975–1983) → Newsweek senior editor (1984–2008, 24 years) → Wired senior staff writer (2008–2014) → founded Backchannel on Medium (2014) → Condé Nast acquired Backchannel (Jun 2016) → Backchannel editor at Wired (2016–2017) → editor at large (2017–present)
+   - Critical insight: Levy has been at Wired since its 1993 founding (as contributing writer), making him the longest-tenured writer. His 50-year career arc from Rolling Stone counterculture to Condé Nast editor at large is unique.
+   - Sources: ubiquity.acm.org, edge.org/memberbio, computerhistory.org, digiday.com, mnacritique.mergersindia.com, wired.com/author
+
+3. **Adrienne LaFrance (Atlantic) — expanded from 2 to 10 entries:**
+   - Full pre-Atlantic career: WBUR (Boston NPR) → Hawaii Public Radio → Honolulu Weekly managing editor → Honolulu Civil Beat (ran DC bureau for Omidyar's nonprofit) → Nieman Journalism Lab (Harvard) → Digital First Media / Project Thunderdome
+   - Atlantic career expanded: staff writer (2014) → editor of TheAtlantic.com (2017) → executive editor (May 2019, first woman in 162-year history)
+   - **DATE CORRECTION:** Promotion to executive editor was May 2019, not "2021-01" as previously listed. Confirmed via FIPP, Wikipedia, and multiple sources.
+   - Key work: "The Prophecies of Q" (Jun 2020 cover), "Facebook Is a Doomsday Machine" (Dec 2020)
+   - Sources: chqdaily.com, fipp.com, niemanlab.org, theatlantic.com/author, en.wikipedia.org
+
+4. **Ian Bogost (Atlantic) — expanded from 1 to 6 entries:**
+   - Pre-journalism career: software engineer at US Interactive (1997) → CTO at Media Revolution / Hans Zimmer's media group → founded Persuasive Games LLC (2003)
+   - Academic career: Georgia Tech Ivan Allen College Distinguished Chair (2004–2021) → WashU Barbara and David Thomas Distinguished Professor (2021–present, directs Film & Media Studies)
+   - **DATE CORRECTION:** Atlantic contributing editor since 2013, not 2017 as previously listed. Confirmed via bogost.com and Atlantic author page.
+   - Rare pipeline: tech industry → academia (PhD Comparative Literature, not CS) → journalism. Humanities lens on technology is distinctive among tech writers.
+   - 11 books including Racing the Beam (2009), Alien Phenomenology (2012)
+   - Sources: bogost.com, engineering.washu.edu, edge.org/memberbio, theatlantic.com/author
+
+### Stats:
+- Journalist entries expanded: 5 (Hern 2→6, Milmo 2→4, Levy 2→7, LaFrance 2→10, Bogost 1→6)
+- Total new career entries added: 27
+- Date corrections: 2 (LaFrance exec editor 2021→2019, Bogost Atlantic start 2017→2013)
+- Tests: 202 passing
+- Sources cited: 20+ unique URLs across all expansions
+
+---
+
 ## 2026-06-23 17:00 PT — Hour Type D: Documentation + Source Extractor Improvements
 
 **Focus:** Fix incorrect import paths in docs, add missing function calling schemas, update examples to demonstrate newer features, analyze the NYT Arena article (missing analysis), and fix a critical source extraction blind spot discovered during analysis.
