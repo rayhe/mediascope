@@ -4,6 +4,55 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-24 14:00 PT — Hour Type D: Toolkit Quality & Documentation
+
+**Focus:** Documentation reconciliation — audited all 6 docs + README against actual codebase and fixed systematic drift in framing device counts, journalist counts, and editorial leadership coverage.
+
+### What was improved:
+
+1. **Framing device count reconciliation (20 → 22):**
+   - Audited actual `_DEVICE_PATTERNS` dict (19 pattern-based types) + 3 structural post-pass detectors = 22 total
+   - Two devices were in code but missing from all documentation:
+     - `self_referential_investigation` (pattern-based, 5 patterns): publication citing its own prior reporting as evidence within adversarial coverage, creating a closed feedback loop
+     - `speculative_framing` (structural post-pass, 5+ threshold): cumulative conditional language converting possibility into implied inevitability
+   - Updated METHODOLOGY.md: Added both devices to their respective tables (Extended Devices + Structural Devices)
+   - Updated ARCHITECTURE.md: Changed "20 framing device types" → 22, Extended tier 6→7, Structural tier 2→3
+
+2. **Journalist count reconciliation (17 → 51):**
+   - Audited `journalists.yaml`: 51 journalists tracked, 48 with multi-publication careers suitable for migration analysis
+   - Updated EDITORIAL_HISTORIES.md from "17 journalists" to "51 journalists" in both Starter Data section and Academic Novelty section
+   - README.md already had the correct count (51) from a prior update
+
+3. **Migration table expansion (7 → 16 entries):**
+   - Added 9 high-value migration events to EDITORIAL_HISTORIES.md:
+     - Mike Isaac: 5-outlet career (Wired→AllThingsD→Forbes→Recode→NYT) — rich decomposition
+     - Kashmir Hill: 5-outlet privacy/surveillance career — portable stance test
+     - Katie Drummond: 7-outlet career ending as Wired editorial director — highest migration count in dataset
+     - Jessica Hamzelou: 13-year New Scientist tenure → MIT TR — deepest institutional encoding test
+     - Paresh Dave: Reuters → Wired — wire service objectivity vs editorial culture
+     - Johana Bhuiyan: 5-outlet cross-national career — stance portability across national contexts
+     - Hibaq Farah: NYT → Guardian — reverse Atlantic crossing
+     - Kaitlyn Tiffany: Vox → The Verge → Atlantic — digital-native to legacy adaptation
+     - Dell Cameron: 4-outlet investigative security reporter — consistent adversarial posture test
+
+4. **Editorial leadership changes table expansion (5 → 15 entries):**
+   - Added 10 entries from the rich `editorial_changes.yaml` data:
+     - Wired: Leah Feiger (first-ever politics editor, Nov 2023), Gideon Lichfield (double natural experiment with MIT TR)
+     - NYT: Joseph Kahn (exec editor, sued OpenAI), Pui-Wing Tam (tech team architect — recruited Isaac, Frenkel, Hill, Weise, Grant, Mickle), Zach Seward (first AI editorial director)
+     - Atlantic: Nicholas Thompson (ex-Wired EIC → Atlantic CEO — direct editorial culture bridge)
+     - MIT TR: Gideon Lichfield (investigative shift), Will Douglas Heaven (AI editorial direction)
+     - Guardian: OpenAI licensing deal (destroys pure control-case status), Samantha Oltman (4-month tenure departure — editorial resilience test)
+
+### Files modified:
+- `docs/METHODOLOGY.md` — 2 new framing device entries
+- `docs/ARCHITECTURE.md` — updated counts and tier descriptions
+- `docs/EDITORIAL_HISTORIES.md` — journalist count, migration table, leadership table
+
+### Stats:
+- Tests: 216/216 passing (no code changes)
+- Commit: `3e698df`
+- Documentation discrepancies resolved: 4 (framing count ×2, journalist count ×2)
+
 ## 2026-06-24 13:00 PT — Hour Type C: Ownership & Funding Deep Dive
 
 **Focus:** MIT Technology Review — selected because its profile had the biggest ownership/funding gap among the 5 tracked publications. Deep research into MIT endowment, CSAIL corporate affiliates, IBM lab expansion, SenseTime sanctions update, iFlyTek partnership, and Project NANDA anti-AI-hype findings.
