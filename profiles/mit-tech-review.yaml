@@ -22,8 +22,64 @@ ownership_chain:
     source_url: "https://projects.propublica.org/nonprofits/organizations/954893200"
   - name: "Massachusetts Institute of Technology"
     entity_type: "parent_institution"
-    description: "Private research university. Endowment $27.4B (FY2025, ending June 30 2025; up from $24.6B FY2024). 14.8% investment return FY2025; 10-year annualized 10.7%. 5th largest US university endowment. $1.57B distributed to operations FY2025 (~5% spending rate). Endowment supports 50% of undergraduate tuition. Largest YoY increase among top-25 US endowments at 11.4%. NEW THREAT: Big Beautiful Bill Act proposes endowment tax increase from 1.4% to up to 8% starting FY2027 — could cost MIT hundreds of millions annually. Total research expenditures $762M (FY2020), with $174M (23%) from industry sponsors. Receives massive AI/tech industry funding through research labs, corporate partnerships, and philanthropic gifts. MIT controls Technology Review Inc.'s board — majority of directors are MIT administrators compensated by MIT."
+    description: >
+      Private research university. Endowment $27.4B (FY2025, ending June 30 2025; up from
+      $24.6B FY2024). 14.8% investment return FY2025; 10-year annualized 10.7%. 5th largest
+      US university endowment. $1.57B distributed to operations FY2025 (~5% spending rate).
+      Endowment supports 50% of undergraduate tuition. Largest YoY increase among top-25 US
+      endowments at 11.4%.
+      
+      ENROLLMENT (2025-2026): 11,816 total students (4,561 UG + 7,255 grad). 3,475
+      international (529 UG + 2,946 grad). 8,341 domestic students (70.6%). Students come
+      from all 50 states, DC, 4 territories, and 137 countries.
+      
+      ENDOWMENT TAX — NOW LAW (signed July 4, 2025): The One Big Beautiful Bill Act (OBBBA)
+      replaced the flat 1.4% endowment excise tax (IRC §4968) with a tiered structure
+      effective for taxable years beginning after Dec 31, 2025. MIT is in the HIGHEST tier:
+      $27.4B / 11,816 students = ~$2,318,340 per student → 8% rate (applies to >$2M/student).
+      MIT's tax year ends June 30, so the new rate first applies starting July 1, 2026.
+      Under the old 1.4% rate, MIT's tax liability was relatively modest; the 8% rate
+      represents a ~5.7x increase. Congressional tax analysts estimate the new tiered rates
+      will bring in $761M over 10 years across all 15 affected institutions. In 2023, all 56
+      schools subject to the prior 1.4% tax paid $381M combined.
+      
+      CRITICAL: The OBBBA includes "Federally-Subsidized Royalty Income" in net investment
+      income — royalties from ANY patent, copyright, or IP that (1) resulted from student/faculty
+      work at the institution AND (2) was developed with ANY federal research funding. This
+      DIRECTLY taxes the output of MIT's massive federally funded research enterprise ($762M
+      total research, $174M from industry sponsors FY2020). MIT's patent portfolio generates
+      significant royalties from inventions developed with NSF, DOD, NIH, and DARPA funding.
+      
+      RELATED ORGANIZATIONS: The OBBBA includes assets and NII of "related organizations"
+      (entities controlled by the institution) in the endowment tax calculation. Technology
+      Review Inc. ($6.5M assets) is a MIT-controlled nonprofit and likely qualifies as a related
+      organization whose assets are included in MIT's endowment-per-student calculation.
+      
+      ANTI-AVOIDANCE: Treasury directed to promulgate regulations to "prevent avoidance of such
+      tax through the restructuring of endowment funds or other arrangements."
+      
+      EXECUTIVE COMPENSATION: The OBBBA expands IRC §4960 excise tax — now applies to ANY
+      employee/former employee paid >$1M (previously only top 5). MIT administrators on the
+      MIT TR board who exceed $1M: David Schmittlein ($1.05M), Cynthia Barnhart ($987K, close
+      to threshold). Could affect future board composition and compensation structures.
+      
+      PORTFOLIO: MIT has 30-40% allocation to private investments (PE + VC). Among Ivy/elite
+      endowments, MIT has one of the HIGHEST VC exposures (alongside Brown, Dartmouth, Princeton
+      per MPI/Institutional Investor analysis). High VC exposure means MIT has significant
+      financial interest in tech startups — many of which are covered by MIT TR. MIT EVP/Treasurer
+      Glen Shor (who sits on MIT TR board) manages these investments.
+      
+      Total research expenditures $762M (FY2020), with $174M (23%) from industry sponsors.
+      Receives massive AI/tech industry funding through research labs, corporate partnerships,
+      and philanthropic gifts. MIT controls Technology Review Inc.'s board — majority of
+      directors are MIT administrators compensated by MIT.
     source_url: "https://facts.mit.edu"
+    enrollment_source_url: "https://registrar.mit.edu/stats-reports/enrollment-statistics"
+    obbba_source_urls:
+      - "https://www.faegredrinker.com/en/insights/publications/2025/7/college-and-university-endowment-tax-in-the-obbba"
+      - "https://www.foley.com/p/102ktmm/changes-to-the-college-and-university-endowment-tax/"
+      - "https://en.wikipedia.org/wiki/Endowment_tax"
+    portfolio_source_url: "https://www.institutionalinvestor.com/article/2d7c5l5p06m1yw3x5awjk/portfolio/ivy-league-endowment-returns-depended-on-one-decision-vc-or-pe"
 
 financial_data:
   revenue_history:
@@ -176,6 +232,12 @@ mit_corporate_research_partnerships:
       description: "Former Alphabet executive chairman and wife provided unrestricted support to MIT Intelligence Quest Fund. Eric Schmidt was deeply embedded in MIT AI governance."
       source_url: "https://news.mit.edu/2018/eric-schmidt-provides-support-mit-intelligence-quest-0501"
       relevance: "Former Google CEO personally funding MIT's AI initiative while MIT TR covers Google."
+    - name: "MIT-Honeywell Energy Research"
+      amount: "Undisclosed"
+      established: "2026-06"
+      description: "Honeywell collaboration with MIT Center for Sustainability Science and Strategy. Joint research titled 'Accelerating Energy Expansion' modeling AI-enabled cost reductions in fuel production ($225B in oil-based fuels, $80B in LNG by 2050). Published June 24, 2026. Honeywell is a major industrial tech company — its AI/automation products compete in the same enterprise space MIT TR covers."
+      source_url: "https://www.prnewswire.com/news-releases/honeywell-and-mit-find-digital-technologies-can-help-increase-energy-supply-reduce-energy-production-cost-by-tens-of-billions-annually-302463974.html"
+      relevance: "New corporate research partnership announced June 2026. Honeywell is an industrial AI company that MIT TR covers. Partnership involves MIT Center (not CSAIL/Schwarzman), showing how MIT-industry ties extend beyond the computing college."
   meta_relationship:
     partner: "Meta"
     amount: "Significant (unspecified)"
@@ -231,6 +293,13 @@ revenue_relationships:
     description: "EmTech AI 2026 Presenting Partners: HPE, Ascendion, GC Cybersecurity. Additional: Box, Samsung Next, Micron, MIT Professional Education, IDEO, MIT Museum. 400 attendee limit. Contact: Andrew Hendler (VP Sales, also highest-paid sales exec on 990)."
     date_established: "Annual"
     source_url: "https://event.technologyreview.com/emtech-ai-2025"
+
+  - partner: "Honeywell"
+    relationship_type: "institutional_funding"
+    estimated_value: "Undisclosed"
+    description: "MIT Center for Sustainability Science and Strategy collaboration with Honeywell. Joint report 'Accelerating Energy Expansion' published June 24, 2026 — models AI-enabled cost reductions in fuel production. Honeywell is a major industrial tech/AI company whose products (process automation, building management, industrial IoT) overlap with MIT TR's technology coverage. New partnership extends MIT's corporate research ties beyond pure tech (Google, IBM, Amazon) into industrial technology."
+    date_established: "2026-06"
+    source_url: "https://www.prnewswire.com/news-releases/honeywell-and-mit-find-digital-technologies-can-help-increase-energy-supply-reduce-energy-production-cost-by-tens-of-billions-annually-302463974.html"
 
 editorial_leadership:
   - name: "Elizabeth Bramson-Boudreau"
@@ -304,6 +373,32 @@ known_conflicts:
     severity: 3
     evidence: "CEO stated '~1/3 of revenue from events' (Digiday 2020). EmTech AI 2026 press release lists sponsors. Form 990 shows Hendler compensation."
     source_url: "https://digiday.com/media/how-mit-technology-review-shifted-its-largest-event-to-streaming/"
+  - type: "obbba_royalty_tax_feedback_loop"
+    description: >
+      The OBBBA's inclusion of "Federally-Subsidized Royalty Income" in the endowment tax
+      base creates a novel FEEDBACK LOOP between MIT's corporate research partnerships and
+      its tax liability. MIT's bilateral research programs with Google ($130K/project),
+      Amazon (MIT-Amazon Science Hub), IBM ($240M Watson Lab), Apple (CSAIL Alliance), and
+      others generate patents and IP developed with federal co-funding. Royalties from these
+      patents are now TAXED at 8% under the OBBBA. This means the SAME corporate partnerships
+      that create editorial conflicts for MIT TR also generate taxable royalty income for MIT.
+      MIT now has a financial incentive to either (a) reduce royalty-generating research
+      (unlikely), (b) restructure IP ownership (blocked by anti-avoidance regulations), or
+      (c) increase enrollment to lower the per-student endowment ratio below $2M (also
+      unlikely for MIT). The institutional budget pressure from the ~5.7x tax increase may
+      make MIT MORE dependent on corporate research funding and event sponsorship revenue
+      (which flows through MIT TR) — potentially DEEPENING existing editorial conflicts rather
+      than reducing them. Technology Review Inc. itself is likely a "related organization"
+      under the OBBBA, meaning its $6.5M in assets are counted in MIT's endowment calculation.
+    severity: 3
+    evidence: >
+      OBBBA signed July 4, 2025. MIT endowment $27.4B / 11,816 students = $2.32M/student
+      (8% tier). "Federally-Subsidized Royalty Income" defined in amended IRC §4968.
+      Congressional estimate: $761M over 10 years across all 15 affected institutions.
+      MIT patent portfolio generates royalties from inventions co-funded by federal agencies.
+    source_urls:
+      - "https://www.faegredrinker.com/en/insights/publications/2025/7/college-and-university-endowment-tax-in-the-obbba"
+      - "https://www.foley.com/p/102ktmm/changes-to-the-college-and-university-endowment-tax/"
   - type: "editorial_pipeline"
     description: "Mat Honan (EIC since Aug 2021) was a Wired senior writer and columnist before moving to BuzzFeed News. Gideon Lichfield (EIC 2017-2020) LEFT MIT TR to become Wired's EIC — the reverse of Karen Hao's departure path. Will Knight left MIT TR for Wired in 2018 after 13 years. These journalist migrations between MIT TR and Wired create editorial culture connections, though MIT TR's nonprofit/institutional structure is fundamentally different from Condé Nast's."
     severity: 2
@@ -377,8 +472,20 @@ notes: |
   Instead, MIT TR's board is controlled by MIT administrators whose primary 
   jobs require maintaining corporate research funding relationships. The MIT 
   Provost (board Co-Chair) directly oversees academic partnerships with Google, 
-  Amazon, etc. The MIT EVP/Treasurer (board Director) manages MIT's finances. 
-  The MIT Sloan Dean (board Director) runs corporate education programs.
+  Amazon, etc. The MIT EVP/Treasurer (board Director) manages MIT's finances, 
+  including the $27.4B endowment with 30-40% VC/PE exposure.
+  
+  NEW STRUCTURAL PRESSURE (OBBBA, signed July 4, 2025): MIT is now in the 
+  HIGHEST tier of the expanded endowment excise tax at 8% (up from 1.4%). With 
+  $27.4B endowment and 11,816 students (~$2.32M/student), MIT faces a ~5.7x 
+  increase in endowment tax liability. The OBBBA also taxes "Federally-
+  Subsidized Royalty Income" — patents developed with federal co-funding — 
+  which directly links MIT's corporate research partnerships (the source of 
+  editorial conflicts) to its tax burden. Technology Review Inc. is likely a 
+  "related organization" whose $6.5M assets count toward MIT's endowment 
+  calculation. This tax pressure may make MIT MORE dependent on corporate 
+  research funding and event sponsorship revenue (which flows through MIT TR), 
+  potentially DEEPENING existing editorial conflicts.
   
   The Epstein scandal demonstrated that MIT's governance — including Technology 
   Review Inc.'s governance — can fail catastrophically. Joi Ito sat on the 
@@ -391,6 +498,13 @@ notes: |
   AI company later sanctioned by the US government for enabling mass surveillance 
   of Uyghurs. The alliance funded 27 research projects across MIT.
   
+  MIT's endowment portfolio compounds the conflict: with 30-40% allocated to 
+  private investments (PE + VC), MIT has one of the highest VC exposures among 
+  elite endowments (per MPI/Institutional Investor analysis). This means MIT 
+  has direct financial interest in the success of tech startups — many of which 
+  MIT TR covers. Glen Shor (MIT EVP/Treasurer and TR board Director, $883K) 
+  manages these investments.
+  
   KEY ANALYTICAL QUESTION: Does MIT TR's coverage of companies that fund MIT 
   research differ systematically from its coverage of companies that don't? 
   This is testable with the toolkit's sentiment asymmetry analysis.
@@ -399,7 +513,8 @@ notes: |
   highest among tracked publications). But it operates under the most complex 
   web of institutional conflicts, where the financial relationships flow in the 
   OPPOSITE direction from Wired's — and where the governance structure provides 
-  the LEAST structural protection for editorial independence.
+  the LEAST structural protection for editorial independence. The OBBBA endowment 
+  tax increase adds a NEW structural pressure that could intensify these dynamics.
 
 editorial_history:
   leadership_changes:
