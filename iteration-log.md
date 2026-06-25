@@ -1730,3 +1730,45 @@ The toolkit scored overall_tone +0.61 on a clearly adversarial (-0.65 manual) ar
 ### Files
 - `examples/sample_output/atlantic_ai_data_centers_dirty_dystopian_2026_03_article.txt`
 - `examples/sample_output/atlantic_ai_data_centers_dirty_dystopian_2026_03_analysis.md`
+
+---
+
+## 2026-06-25 02:00 PT — Hour Type A (Article Deep Dive)
+
+### Comparative Analysis: Gizmodo vs Wired — Meta Smart Glasses Launch (June 23, 2026)
+
+**Approach:** Direct comparison of two articles covering the identical event (Meta's self-branded AI glasses launch, June 23, 2026) from publications with different editorial postures. This surfaces framing differences that single-article analysis cannot reveal.
+
+- **Gizmodo** (James Pero): ~890 words, neutral-positive product review. **0 framing devices detected.** Clean consumer journalism with one honest business-question paragraph about Meta's privacy track record.
+- **Wired** (Julian Chokkattu): ~1,200 words, neutral-leaning-negative. **10 framing devices detected:**
+  - 4× loaded_language ("Comically," "nefarious," "discreetly," "face-recognition feature")
+  - 2× self_referential_investigation (WIRED's own NameTag exposé, twice cited)
+  - 1× catastrophizing ("disastrous" re: Snap launch)
+  - 1× juxtaposition (consumer glasses + military surveillance tech)
+  - 1× emotional_appeal (employee morale injected into product review)
+  - 1× kicker_framing (unrelated workforce turmoil closing)
+
+**Key finding:** 0.25 manual tone gap (+0.10 Gizmodo vs -0.15 Wired) driven entirely by editorial injection — privacy concern paragraphs (~12% of Wired article), self-referential investigation loop, and negative kicker. Both articles are factually accurate; the framing difference is in what is *included* and where it is *placed*.
+
+**Toolkit validation:** Zero false positives on Gizmodo article is a critical calibration result. The toolkit correctly distinguished Gizmodo's honest analytical observation ("poor track record when it comes to privacy") from Wired's editorial framing.
+
+### Code Changes
+
+1. **New framing device: `scale_magnitude` (27th type)**
+   - 7 regex pattern groups: calculated maximums, dollar-impact projections, scale analogies, country/city comparisons, cumulative loss totals, victim/case rosters, comparison amplifiers
+   - Implements Priority 5 recommendation from prior Type A iteration (Atlantic data centers analysis)
+   - Carefully scoped to avoid false positives on simple number mentions (e.g., "$299 price," "8 hours battery life," "3.5 billion users" without amplifier)
+   - Pattern fixes: possessive pronouns before qualifiers ("their global annual sales"), adverb placement flexibility ("enough to roughly power"), optional country qualifiers ("U.S. homes")
+
+2. **Registry and documentation updates:**
+   - `tests/test_nyt_ai_reviews.py` registry test: 23→24 pattern-based types
+   - `docs/METHODOLOGY.md`: 26→27 total types, added Scale/Magnitude Framing row to Extended Devices table
+
+### Test Results
+- **255/255 passing** (was 239; +16 new scale_magnitude tests)
+- New test file: `tests/test_scale_magnitude.py` — 16 tests (3 calculated maximum, 2 scale analogy, 2 cumulative total, 3 victim roster, 2 comparison amplifier, 3 negative/false-positive checks, 1 integration)
+
+### Files
+- `examples/sample_output/gizmodo_vs_wired_glasses_launch_2026_06_23_analysis.md` (comparative analysis)
+- `tests/test_scale_magnitude.py` (new test file)
+- Modified: `mediascope/analyze/framing.py`, `docs/METHODOLOGY.md`, `tests/test_nyt_ai_reviews.py`

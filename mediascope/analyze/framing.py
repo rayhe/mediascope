@@ -1275,6 +1275,89 @@ _DEVICE_PATTERNS["sovereignty_framing"] = _SOVEREIGNTY_FRAMING_PATTERNS
 
 
 # ---------------------------------------------------------------------------
+# Scale/magnitude framing: editorial device that deploys large raw numbers,
+# calculated maximums, or scale analogies to create impressions of excess,
+# danger, or harm.  Individual numbers are facts; the framing occurs when
+# they are amplified via contextual techniques:
+#   1. Calculated maximums: "fines of up to 6%... about $12 billion"
+#   2. Cumulative totals: "$70 billion in losses since 2020"
+#   3. Scale analogies: "enough to power 750,000 homes"
+#   4. Comparison amplifiers: "a 76% spike," "more than double"
+#   5. Victim/case roster: "2,000 lawsuits," "1,300 school districts"
+# Distinct from loaded_language because the emotional charge comes from
+# the number itself, not from adjectives or pejorative vocabulary.
+# ---------------------------------------------------------------------------
+_SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
+    # "up to X%" or "as much as X%" of revenue/turnover/sales — calculated
+    # maximum penalty/fine projections
+    re.compile(
+        r"\b(?:up to|as much as|as high as)\s+"
+        r"(?:\$?\d[\d,.]*\s*(?:billion|million|trillion|[BMT])\b|"
+        r"\d+(?:\.\d+)?%\s*(?:of|in)\s+"
+        r"(?:\w+\s+)?"  # optional possessive pronoun ("their", "its")
+        r"(?:global|annual|worldwide|total)?\s*"
+        r"(?:(?:global|annual|worldwide|total)\s+)?"  # allow "global annual"
+        r"(?:revenue|turnover|sales|income))",
+        re.IGNORECASE,
+    ),
+    # "that would mean a fine/penalty of ~$X" — spelled-out dollar impact
+    re.compile(
+        r"\b(?:that (?:would|could) mean|meaning|amounting to|"
+        r"which (?:would|could) (?:total|reach|amount to|mean))\s+"
+        r"(?:a )?(?:potential |possible |estimated )?"
+        r"(?:fine|penalty|cost|loss|bill|payout|damages?)\s+"
+        r"(?:of\s+)?(?:about |roughly |approximately |nearly |~)?"
+        r"\$?\d[\d,.]*\s*(?:billion|million|trillion|[BMT])\b",
+        re.IGNORECASE,
+    ),
+    # Scale analogies: "enough to power/run/supply X homes/cities/countries"
+    re.compile(
+        r"\b(?:enough to|sufficient to|capable of)\s+"
+        r"(?:roughly |about |approximately |nearly |more than )?"
+        r"(?:power|run|supply|fuel|serve|feed|heat|cool)\s+"
+        r"(?:roughly |about |approximately |nearly |more than )?"
+        r"[\d,.]+\s*(?:thousand |million )?"
+        r"(?:[\w.]+\s+)?"  # optional qualifier ("U.S.", "American", "British")
+        r"(?:homes?|households?|cities|countries|"
+        r"(?:small|medium|large)[\s-]+(?:sized? )?(?:cit(?:y|ies)|countr(?:y|ies)|town|state))",
+        re.IGNORECASE,
+    ),
+    # "as much as a small country/city" without specific number
+    re.compile(
+        r"\b(?:as much (?:electricity|energy|power|water) as)\s+"
+        r"(?:a\s+)?(?:small|medium|large)[\s-]+"
+        r"(?:sized? )?(?:city|country|town|state|nation)",
+        re.IGNORECASE,
+    ),
+    # Cumulative loss/spending totals: "$X billion in losses/spending since YYYY"
+    re.compile(
+        r"\$\d[\d,.]*\s*(?:billion|million|trillion|[BMT])\s+"
+        r"(?:in\s+)(?:cumulative |combined |total |aggregate )?"
+        r"(?:losses?|spending|expenditure|investment|costs?|damages?|fines?|penalties)"
+        r"(?:\s+since\s+\d{4}|\s+over\s+(?:the\s+)?(?:past|last|previous)\s+\d+\s+"
+        r"(?:years?|months?|quarters?|decades?))?",
+        re.IGNORECASE,
+    ),
+    # Victim/case roster: "X,000+ lawsuits/cases/complaints/claims"
+    re.compile(
+        r"\b(?:more than|over|nearly|approximately|at least|roughly|about)\s+"
+        r"[\d,]+\s+"
+        r"(?:lawsuits?|cases?|complaints?|claims?|families|school districts?"
+        r"|plaintiffs?|victims?|students?|children|parents?|users?)",
+        re.IGNORECASE,
+    ),
+    # Comparison amplifiers: "more than double/triple" or "X% spike/surge/jump"
+    re.compile(
+        r"\b(?:more than (?:double|triple|quadruple)|"
+        r"\d+(?:\.\d+)?%\s+(?:spike|surge|jump|increase|rise|hike|growth))",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["scale_magnitude"] = _SCALE_MAGNITUDE_PATTERNS
+
+
+# ---------------------------------------------------------------------------
 # Kicker framing: editorial technique of ending an article on a discordant
 # negative note — the last paragraph introduces a critical context (workforce
 # turmoil, regulatory threat, ethical concern) that was NOT the article's

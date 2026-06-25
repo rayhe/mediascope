@@ -264,8 +264,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 23, (
-            f"Expected 23 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 24, (
+            f"Expected 24 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -286,6 +286,8 @@ class TestFramingDeviceRegistry:
             "ironic_quotation", "isolation_framing", "pressure_language",
             "self_referential_investigation", "geopolitical_regulatory_pressure",
             "sovereignty_framing",
+            # Scale/magnitude (1)
+            "scale_magnitude",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual

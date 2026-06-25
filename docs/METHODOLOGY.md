@@ -162,7 +162,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 26 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (added from real-article analysis), and structural devices (detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 27 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (added from real-article analysis), and structural devices (detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -198,6 +198,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Self-Referential Investigation** | Publication citing its own prior reporting as evidence within adversarial coverage, creating a closed feedback loop | "reporting by WIRED," "a WIRED investigation found," "as WIRED previously reported," "WIRED has learned" patterns with 5+ tracked publication names | Wired Meta coverage pattern — publication becomes both investigator and source authority |
 | **Geopolitical Regulatory Pressure** | Framing international regulatory tensions as geopolitical confrontation, using diplomatic/sovereignty language | Embassy/diplomatic submissions as pressure tools, sovereignty/defiance rhetoric ("will not be deterred"), transatlantic tension language, "singles out American tech" patterns | Guardian UK tech crackdown article — framing US-UK regulatory disputes as international confrontation rather than policy debate |
 | **Sovereignty Framing** | Deploying national/patriotic identity language to delegitimize foreign corporate or government positions | "British families," "American innovation," "our children" in tech regulation context; "national interest/security" near tech entities; "act in the UK's national interest" | Guardian UK tech crackdown article — distinct from loaded_language because it strategically invokes national identity rather than just emotional vocabulary |
+| **Scale/Magnitude Framing** | Deploying large raw numbers, calculated maximums, scale analogies, or victim/case rosters to create impressions of excess, danger, or harm beyond what a neutral factual reference would convey | "up to 6% of global revenue," "enough to power 750,000 homes," "$70 billion in losses since 2020," "more than 2,000 lawsuits," "76% spike" — calculated maximums, cumulative totals, scale analogies, victim rosters, comparison amplifiers | Cross-article pattern — Atlantic data centers, NYT/Reuters child-safety litigation, EU DSA coverage. Distinct from loaded_language because the emotional charge comes from the number itself, not from adjectives or pejorative vocabulary |
 
 #### Structural Devices (Post-Pass)
 
