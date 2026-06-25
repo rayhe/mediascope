@@ -4,6 +4,36 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-25 16:00 PT — Hour Type A: Article Deep Dive
+
+**Article:** "Whistleblower Sarah Wynn-Williams sues Meta over attempts to 'silence' her"
+**Publication:** The Guardian
+**Date:** June 25, 2026
+**Sequel to:** Guardian Hay Festival coverage (June 1, 2026)
+
+### Article summary:
+Wynn-Williams filed a 57-page complaint in US District Court (N.D. Cal.) challenging the arbitration gag order Meta obtained in March 2025 after publication of her memoir "Careless People." Claims: arbitration agreement signed under duress ($300K expense reimbursement and healthcare as leverage), "coercive surveillance" (Meta rep traveled to Hay Festival to build sanctions case), First Amendment violation. Seeking: void severance agreement, lift arbitration order, compensatory damages. Meta had sought $50K per violation including each book sale.
+
+### Manual vs toolkit comparison — 6 bugs found and fixed:
+
+#### Source extraction (2 bugs):
+1. **"Thursday" extracted as source** — "on Thursday argues" matched `[A-Z][a-z]+ (verb)` pattern. Fixed: added all day names (Mon-Sun) and month names (Jan-Dec) to `_NAME_STOP_FIRST_WORDS`.
+2. **"Careless People" extracted as source** — book title + "alleges" verb. Fixed: added book/media title false positives to `_NAME_STOP_NAMES`.
+
+#### Framing detection (2 bugs):
+3. **litigation_framing: 0 detections on an article ABOUT a lawsuit** — pattern only knew "lawsuit", "legal action", "court challenge", "injunction", "class action". "Complaint", "suit", "arbitration" were all missing. Fixed: added complaint/suit/counter-suit/arbitration/petition to filing vocabulary. Added "is suing/sued/sues [entity]" pattern. Added "arbitration/severance + ruling/order/agreement/clause/hearing" pattern. Result: 0 → 10 detections.
+4. **power_asymmetry missed "$50K per violation"** — pattern required `each\s+(?:violation|breach)` but article said "each purported violation". Fixed: changed to `each\s+(?:\w+\s+)?(?:violation|breach|instance)` to allow one adjective. Result: 0 → 1 detection.
+
+#### Entity detection (2 bugs):
+5. **Joel Kaplan and Sheryl Sandberg not in Meta cluster** — both are senior Meta executives central to whistleblower coverage. Fixed: added to aliases + regex, along with Nick Clegg and Dina Powell McCormick.
+6. **SEC and DOJ not in any cluster** — Wynn-Williams filed with both but neither was tracked. Fixed: added to US Government cluster.
+
+### Tests: 464 passing (446 → 464, +18 new in `test_wynn_williams_fixes.py`)
+### Commit: `5c5c21f` — 6 files changed, 339 insertions, 6 deletions
+### Pushed to GitHub
+
+---
+
 ## 2026-06-25 14:00 PT — Hour Type D: Toolkit Quality & Documentation
 
 **Focus:** Comprehensive documentation sync across 4 files (ARCHITECTURE.md, README.md, METHODOLOGY.md, EDITORIAL_HISTORIES.md) — all had stale numbers from weeks of rapid iteration. ARCHITECTURE.md was the most outdated, still showing numbers from ~15 iterations ago.
