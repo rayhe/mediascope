@@ -319,6 +319,7 @@ The `examples/sample_output/` directory contains annotated analyses of real arti
 | `wired_meta_horizon_worlds_comedy_club_2026_03_*` | Wired: The Comedy Club at the End of the Metaverse | Platform eulogy / immersive narrative journalism by Boone Ashworth. Tone: -0.30 (melancholic, not hostile). 0.85 source balance toward community members; Meta gets one boilerplate email quote. Active vs passive framing: Meta "announced," "pulling away" vs users "broke down in tears," "terrified." |
 | `wired_meta_applied_ai_revolt_2026_06_13_*` | Wired's "Soul-Crushing Gulag" Meta Applied AI report | Tone: -0.72, 5/7 framing devices detected, 80% anonymous sources, strong emotional appeal + loaded language |
 | `wired_meta_applied_ai_2026_06_16_*` | Wired Meta Applied AI follow-up | Continued negative framing with Bosworth admission quotes |
+| `wired_meta_bosworth_atrocious_reorg_2026_06_16_*` | Wired: Bosworth's "Atrocious" Reorg | Tone: -0.55 manual. Bosworth's own "atrocious" quote weaponized editorially. Tests ironic quotation framing — executive's candor reframed as damning admission. Self-referential investigation: cites own prior Applied AI reports as evidence. |
 | `wired_meta_rank_one_2026_06_15_*` | Wired Meta "Rank One" article | Earlier coverage establishing the pattern |
 | `wired_meta_mci_data_exposure_2026_06_22_*` | Wired: Meta Exposed Data Internally From Employee-Tracking Program | Breaking news piece on MCI security incident. Well-sourced factual reporting with embedded editorial choices that amplify institutional failure narrative. "We told you so" structure — positions data exposure as vindication of employee concerns. |
 | `nyt_meta_ai_employees_miserable_2026_05_08_*` | NYT: "Meta's Embrace of A.I. Is Making Its Employees Miserable" | First NYT example. Tone: +0.61 VADER (WRONG) → -0.37 corrected. **5 critical fixes:** active-negative agency detection, workplace coercion/revolt loaded language, investment-near-layoffs juxtaposition, source stop-word filter, framing-corrected headline alignment. Pre/post comparison demonstrates framing correction mechanism. |
@@ -330,6 +331,34 @@ The `examples/sample_output/` directory contains annotated analyses of real arti
 | `conflict_disclosure.md` | Disclosure statement | Template for publication-level conflict disclosure |
 
 Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: raw text → entity detection → 8-dimension sentiment → framing devices → source analysis → conflict disclosure.
+
+## Testing
+
+MediaScope has **236 tests** across 8 test files, each covering a different analytical capability:
+
+| Test File | Tests | What It Covers |
+|---|---|---|
+| `test_entities.py` | Entity detection, regex patterns, false-positive exclusion, cluster formats |
+| `test_sentiment.py` | 8-dimension scoring, VADER/TextBlob composite, framing correction pipeline, active-negative agency, headline override, security context adjustment, self-referential investigation detection |
+| `test_source_stance.py` | Source extraction, stance classification, outsourced intensity, power asymmetry, counted anonymous sources, no-comment exclusion, product name stop-filter, kicker framing, isolation/pressure as adversarial devices |
+| `test_asymmetry.py` | Asymmetry score calculation, Welch's t-test, Cohen's d, bootstrap confidence intervals |
+| `test_careers.py` | Career data loading, migration detection, DiD analysis, leadership change analysis, bias decomposition |
+| `test_nyt_article_improvements.py` | NYT-specific article analysis fixes: active-negative agency, workplace coercion language, investment-near-layoffs juxtaposition, source stop-word filter |
+| `test_nyt_ai_reviews.py` | NYT AI voluntary review article: isolation framing, pressure language, regulatory passive framing, VADER positive-bias correction |
+| `test_platform_death.py` | Platform eulogy detection, melancholic vs hostile tone distinction, community source framing |
+
+```bash
+# Run all tests
+python3 -m pytest tests/ -v
+
+# Run a specific test file
+python3 -m pytest tests/test_source_stance.py -v
+
+# Run tests matching a keyword
+python3 -m pytest tests/ -k "kicker" -v
+```
+
+Every article analysis improvement requires at least one regression test before it can be committed. Tests use real article excerpts from the `examples/sample_output/` directory.
 
 ## License
 

@@ -379,13 +379,15 @@ mediascope/
 │   ├── full_pipeline.py
 │   ├── agent_integration.py
 │   └── sample_output/       # Annotated real-article analyses
-├── tests/
-│   ├── test_entities.py
-│   ├── test_sentiment.py
-│   ├── test_source_stance.py
-│   ├── test_nyt_article_improvements.py
-│   ├── test_asymmetry.py
-│   ├── test_careers.py
+├── tests/                       # 236 tests (all from real articles)
+│   ├── test_entities.py         # Entity detection, regex, false-positive exclusion
+│   ├── test_sentiment.py        # 8-dim scoring, framing correction, self-referential detection
+│   ├── test_source_stance.py    # Source extraction, stance, outsourced intensity, kicker framing
+│   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
+│   ├── test_careers.py          # Career loading, migration detection, DiD, leadership ITS
+│   ├── test_nyt_article_improvements.py  # NYT-specific: agency, coercion, juxtaposition
+│   ├── test_nyt_ai_reviews.py   # Isolation framing, pressure language, VADER correction
+│   ├── test_platform_death.py   # Platform eulogy detection, tone distinction
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt
