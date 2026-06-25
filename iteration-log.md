@@ -4,6 +4,93 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-25 09:00 PT — Hour Type D: Toolkit Quality & Documentation
+
+**Focus:** Test coverage expansion — 4 previously-untested core modules now have comprehensive regression tests. Test count: 268 → 398 (+130 tests, 48.5% increase).
+
+### What was improved:
+
+#### 1. `test_quality_standards.py` (35 tests) — NEW
+Tests for `mediascope/quality/standards.py`, the quality enforcement layer that checks MediaScope's own output for AI slop, structural quality, and analytical rigor.
+
+- **Banned phrase detection (9 tests):** Case-insensitive matching for lowercase phrases (`delve`, `tapestry`, `landscape`), case-sensitive for capitalized phrases (`Moreover,`, `Furthermore,`). Multiple phrase detection, deduction scoring (-5 per occurrence), error severity classification, line number reporting.
+- **Em dash enforcement (4 tests):** Under-limit no-issue, over-limit warning, -3 per excess scoring, count tracking.
+- **Counterargument detection (6 tests):** Detects `however`, `critics argue`, `on the other hand`, `opposing view`. Missing counterargument costs -10 points.
+- **Limitations detection (4 tests):** Detects `limitation`, `caveat`, `this analysis does not`. Missing costs -8 points.
+- **Methodology detection (4 tests):** Detects `methodology`, `we analyzed`, `statistical`. Missing costs -5 points (info severity, not warning).
+- **Scoring & pass/fail (6 tests):** Perfect text → 100, empty text → 77 (missing all three signals), pass threshold at 60 + no errors, single banned phrase (error) causes fail regardless of score, score clamped to 0-100, multiple violations compound.
+- **Report structure (2 tests):** All `QualityReport` fields populated with correct types, all `QualityIssue` entries have required fields.
+
+#### 2. `test_citations.py` (35 tests) — NEW
+Tests for `mediascope/quality/citations.py`, the citation extraction and source grading layer.
+
+- **Source grading (19 tests):** 7 primary domains tested (sec.gov, ftc.gov, arxiv.org, pubmed, courtlistener, doi.org + subdomain inheritance), 6 secondary domains (reuters, nytimes, wsj, bbc, guardian, bloomberg), 4 tertiary domains (wordpress, substack, twitter, medium), plus Wikipedia as tertiary.
+- **Domain extraction (5 tests):** `www.` stripping, subdomain preservation, no-scheme handling, empty string, complex URLs with query params.
+- **Citation extraction (11 tests):** URL extraction with trailing punctuation stripping, grade assignment from URLs, "according to" attribution patterns, "as reported by" patterns, formal bracketed citations `[1]`, parenthetical citations `(Author 2024)`, URL deduplication, empty text, no-citation text, combined multi-type extraction, trailing punctuation stripping.
+- **Citation report (5 tests):** Empty list, type counts, primary ratio, domain breakdown, verified count.
+
+#### 3. `test_topics.py` (28 tests) — NEW
+Tests for `mediascope/analyze/topics.py`, the topic classification engine that assigns articles to standardized topic buckets for confound control (METHODOLOGY.md §3).
+
+- **Topic bucket detection (13 tests):** Every standardized bucket tested with representative text: layoffs (2 patterns), ai_development (2), privacy_data, antitrust_regulation, child_safety, content_moderation, financial_results, product_launch, executive_behavior, litigation, workplace_culture.
+- **Confidence scoring (3 tests):** More keywords → higher confidence, confidence in [0, 1], matched_keywords populated.
+- **Top-N filtering (4 tests):** Default top-3, custom top-N, top-1, descending sort verified.
+- **Custom topics (2 tests):** Custom topic detected, custom + standard coexist in results.
+- **Edge cases (4 tests):** Empty text → [], no matches → [], short text still works, all 11 keyword sets exist and are non-empty.
+- **Multi-topic articles (2 tests):** layoffs + financial_results co-detected, privacy_data + litigation co-detected.
+
+#### 4. `test_claims.py` (32 tests) — NEW
+Tests for `mediascope/quality/claims.py`, the claim extraction and evidence mapping engine.
+
+- **Statistic detection (4 tests):** Percentages (33%), dollar amounts ($4.03 billion, $5 million), multipliers (3x).
+- **Quote detection (2 tests):** Straight quotes, curly quotes (U+201C/U+201D).
+- **Citation signals (3 tests):** `according to`, `as reported by`, `study by`.
+- **Assertion detection (3 tests):** Superlatives ("most adversarial"), proves/demonstrates, "has never".
+- **Source attribution (3 tests):** URLs as sources, "according to" as sources, bare assertions correctly unsourced.
+- **Claim mapping (4 tests):** sourced/unsourced partition, by_type grouping, sourced_ratio in [0, 1], empty list → zeroes.
+- **Unsupported claims ratio (4 tests):** All sourced → 0.0, all unsourced → 1.0, mixed → 0.5, empty → 0.0.
+- **Confidence scoring (2 tests):** Statistics get higher confidence (≥0.5), all scores in [0, 1].
+- **Edge cases (3 tests):** Empty text → [], short sentences skipped, narrative text → no claims.
+
+### Coverage gap analysis:
+
+Before this iteration, 8 of 17 Python modules in `mediascope/` had test files. After:
+
+| Module | Lines | Tests Before | Tests After |
+|--------|-------|-------------|-------------|
+| `analyze/entities.py` | — | ✅ | ✅ |
+| `analyze/framing.py` | — | ✅ (in sentiment) | ✅ |
+| `analyze/sentiment.py` | — | ✅ | ✅ |
+| `analyze/sources.py` | — | ✅ (source_stance) | ✅ |
+| `analyze/topics.py` | 221 | ❌ | ✅ 28 tests |
+| `quality/standards.py` | 207 | ❌ | ✅ 35 tests |
+| `quality/citations.py` | 252 | ❌ | ✅ 35 tests |
+| `quality/claims.py` | 267 | ❌ | ✅ 32 tests |
+| `score/asymmetry.py` | — | ✅ | ✅ |
+| `careers/*` | — | ✅ | ✅ |
+| `conflicts/*` | 876 | ❌ | ❌ (next D target) |
+| `ingest/*` | — | ❌ | ❌ |
+| `report/*` | — | ❌ | ❌ |
+
+Still untested: `conflicts/` (ownership, disclosure, litigation, revenue — 876 lines), `ingest/`, `report/`, `storage/`. The `conflicts/` module is the next priority for a Type D iteration.
+
+### Test results:
+- **398/398 passing** (268 existing + 130 new, all green)
+
+### README updates:
+- Test count: 268 → 398
+- Test table expanded with 4 new entries
+- Test run examples expanded with quality and topic-specific commands
+
+### Files:
+- `tests/test_quality_standards.py` — NEW (35 tests)
+- `tests/test_citations.py` — NEW (35 tests)
+- `tests/test_topics.py` — NEW (28 tests)
+- `tests/test_claims.py` — NEW (32 tests)
+- `README.md` — test count and table updated
+
+---
+
 ## 2026-06-25 09:00 PT — Hour Type C: Ownership & Funding Deep Dive
 
 **Focus:** The Atlantic — first dedicated Type C iteration for this publication. Six major expansions: new EC investments (X-Energy, Xcimer, LoveFrom chain), civic governance entanglements (Partnership for San Francisco), litigation landscape (strategic non-litigation + union bargaining), new revenue relationships (NewsGuard AI, CivicScience, Atlantic Labs), and cross-publication OpenAI licensing map.
