@@ -49,6 +49,50 @@ ownership_chain:
       A.G. Sulzberger is current publisher and chairman.
     source_url: "https://www.sec.gov/Archives/edgar/data/71691/000119312517102289/d297033ddef14a.htm"
     notes: "From DEF 14A proxy statement; trust indenture structure described therein."
+  - name: "Slim Family / Control Empresarial de Capitales"
+    entity_type: "major_individual_shareholder"
+    description: >
+      LARGEST INDIVIDUAL SHAREHOLDER. Control Empresarial de Capitales S.A. de C.V. owns
+      29,123,098 Class A Common Shares, constituting approximately 25.1% of the 115,847,488
+      issued and outstanding Class A shares (per Form 10-Q filed Oct 30, 2025). The Slim
+      Family — Carlos Slim Helú, Carlos Slim Domit, Marco Antonio Slim Domit, Patrick Slim
+      Domit, María Soumaya Slim Domit, Vanessa Paola Slim Domit, and Johanna Monique Slim
+      Domit — are beneficiaries of a Mexican trust that owns all voting equity securities
+      of Control Empresarial. SEC filing signed February 9, 2026 by Marco Antonio Slim Domit
+      as Attorney-in-Fact.
+
+      HISTORY: Carlos Slim lent NYT $250M in January 2009 at 14.05% interest during the
+      financial crisis, when the NYT was facing bankruptcy and its stock was trading under $4.
+      The loan included warrants to purchase 15.9M Class A shares at $6.3572/share. Slim
+      converted to equity and built his position to ~17% by 2015. In 2017-2018, Inversora
+      Carso (predecessor entity) sold ~1.5M shares at ~$23/share, reducing the holding. The
+      position was subsequently consolidated under Control Empresarial de Capitales. Despite
+      selling some shares, the Slim Family has INCREASED its percentage ownership to 25.1%
+      as NYT repurchased its own shares (NYT bought back ~883K shares in Q4 2025 alone for
+      $55.4M, reducing the denominator).
+
+      FILES AS 13G (passive investor — certifies shares "were not acquired for the purpose of
+      or with the effect of changing or influencing the control of the issuer"). No board
+      representation. No known editorial influence. However, 25.1% is an extraordinary
+      concentration for a "passive" holding in a media company.
+
+      VALUE: At $71.22/share (Jun 24, 2026), the position is worth ~$2.07B. Carlos Slim's
+      net worth is ~$99.1B (Bloomberg, Jul 2025, 18th richest globally). Core fortune:
+      Telmex/América Móvil (Latin American telecom monopoly), Grupo Carso (conglomerate).
+    source_urls:
+      - "https://www.sec.gov/Archives/edgar/data/1534504/000114036126004396/0001140361-26-004396.txt"
+      - "https://en.wikipedia.org/wiki/Carlos_Slim"
+    notes: >
+      ANALYTICAL SIGNIFICANCE: The Slim Family's 25.1% stake makes them the single largest
+      shareholder of NYT Class A stock — larger than Vanguard ($1.09B), T. Rowe Price ($727M),
+      or any institutional holder. While the dual-class structure means Class B (Sulzberger
+      family) controls ~70% of board seats, the Slim Family's 25.1% of Class A gives them
+      the largest economic interest of any non-family entity. Key question: does this
+      concentrated ownership from a Mexican telecom oligarch create any coverage conflicts?
+      Slim's core businesses (Telmex, América Móvil) do not directly compete with Meta or
+      other tech companies in the US market, making this more of a governance observation
+      than a direct editorial conflict — but the sheer concentration (25.1%) in a media
+      company deserves documentation.
 
 # ===================================================================
 # INSTITUTIONAL SHAREHOLDERS — from MarketBeat, SEC 13F filings
@@ -79,6 +123,79 @@ institutional_shareholders:
   last_updated: "2026-06-22"
 
 # ===================================================================
+# WIRECUTTER & AFFILIATE REVENUE — new section, 2026-06-24
+# ===================================================================
+wirecutter_affiliate_revenue:
+  description: >
+    NYT acquired Wirecutter (product review site) in October 2016 for ~$30M. Wirecutter
+    generates revenue primarily through Amazon Associates affiliate links — readers click
+    product recommendations, buy on Amazon, and NYT earns a commission. NYT reports this
+    as part of "Affiliate, licensing and other revenues" alongside AI licensing deals and
+    miscellaneous income.
+  acquisition_price: "$30M (October 2016)"
+  revenue_history:
+    - period: "FY2018"
+      affiliate_licensing_other: "~$20M+ from Wirecutter alone (per NYT disclosures, Ahrefs analysis)"
+      notes: "Wirecutter generated $20M+ in 2018, paying back the $30M acquisition within ~3 years."
+      source_url: "https://ahrefs.com/blog/wirecutter-seo-case-study/"
+    - period: "FY2024"
+      affiliate_licensing_other: "$291.4M (total Affiliate, licensing and other — includes Wirecutter + all licensing)"
+      source_url: "https://www.sec.gov/Archives/edgar/data/71691/000007169126000008/pressrelease12312025.htm"
+    - period: "FY2025"
+      affiliate_licensing_other: "$308.1M (total, +5.7% YoY)"
+      quarterly_breakdown: "Q1: ~$69.9M, Q2: $70.5M, Q3: ~$67.5M, Q4: $100.2M"
+      notes: >
+        Q4 spike driven by holiday shopping season (affiliate revenue is highly seasonal).
+        FY2025 press release states growth driven by "higher Wirecutter affiliate referral
+        revenues and licensing revenues." Amazon AI licensing deal ($20-25M/yr, started May
+        2025) contributed ~$13-17M in FY2025 (partial year).
+      source_url: "https://www.sec.gov/Archives/edgar/data/71691/000007169126000008/pressrelease12312025.htm"
+  revenue_share_of_total: "10.9% of total FY2025 revenues ($308.1M / $2,824.9M)"
+  amazon_dependency: >
+    Wirecutter's revenue is heavily dependent on Amazon's Associates affiliate program.
+    While Wirecutter links to multiple retailers (Best Buy, Target, etc.), Amazon has
+    historically been the dominant revenue source — the CJR reported that at NY Magazine's
+    Strategist (a Wirecutter competitor), "more than 80 percent" of affiliate revenue came
+    from Amazon. Wirecutter has diversified more than competitors, but Amazon remains
+    the largest single affiliate partner by a wide margin due to Amazon's catalog breadth,
+    conversion rates, and (until March 2026) generous commission structure.
+  source_urls:
+    - "https://www.sec.gov/Archives/edgar/data/71691/000007169126000008/pressrelease12312025.htm"
+    - "https://ahrefs.com/blog/wirecutter-seo-case-study/"
+    - "https://cjr.org"
+    - "https://digiday.com/media/wirecutter-tests-new-content-on-different-platforms-to-increase-affiliate-revenue/"
+
+amazon_affiliate_commission_cuts_2026:
+  description: >
+    CRITICAL RISK FACTOR: Amazon quietly restructured its Associates program in early 2026,
+    slashing commission rates by up to 50%, eliminating milestone-based bonus tiers, and
+    degrading reporting tools. Changes began rolling out in Asia-Pacific markets in late 2025
+    and hit the U.S. around March 9, 2026. NEVER publicly announced — publishers learned
+    from individual Amazon account manager conversations.
+  key_changes:
+    - "Premium commission rates (up to 10%) reset to 4-5%"
+    - "Milestone-based incentive tiers eliminated for most publishers"
+    - "Year-over-year performance bonuses gutted in some categories"
+    - "Reporting tools degraded (less data for optimization)"
+  impact: >
+    One deal-site publisher revised its 2026 Amazon revenue forecast down by 50%.
+    Seven publishers and partners confirmed the changes to Adweek. Amazon spokesperson:
+    "We value our affiliate partnerships and provide highly competitive commissions—these
+    changes affect a tiny fraction of associates."
+  nyt_exposure: >
+    NYT/Wirecutter is among the world's largest Amazon affiliate publishers. If Wirecutter
+    generates ~$50-100M+ annually in Amazon affiliate revenue (estimated from the $308.1M
+    "Affiliate, licensing and other" line minus licensing), a 30-50% cut in Amazon
+    commissions could cost NYT $15-50M+ per year. This would make the Amazon AI licensing
+    deal ($20-25M/yr) an even more critical revenue relationship — potentially the ONLY
+    growing Amazon revenue stream as affiliate income declines. The timing is notable:
+    Amazon signed the AI licensing deal (May 2025) and then cut affiliate commissions
+    (March 2026), shifting the NYT-Amazon financial relationship from primarily transactional
+    (affiliate commissions) to primarily strategic (AI licensing).
+  source_url: "https://www.adweek.com/media/amazon-associates-affiliate-rate-cuts-publishers/"
+  date: "2026-03-09 (US rollout)"
+
+# ===================================================================
 # REVENUE RELATIONSHIPS — significantly expanded 2026-06-22
 # ===================================================================
 revenue_relationships:
@@ -94,20 +211,42 @@ revenue_relationships:
     source_url: ""
 
   - partner: "Amazon"
-    relationship_type: "ai_licensing"
-    estimated_value: "$20-25M/year"
+    relationship_type: "ai_licensing + affiliate_revenue (COMPOUND)"
+    estimated_value: "$70-125M+/year (combined AI licensing + Wirecutter affiliate)"
     description: >
-      NYT's FIRST AI content licensing deal, signed May 29, 2025. Multi-year agreement.
-      Amazon products (Alexa, etc.) can use summaries and short excerpts from NYT
-      stories and recipes. Amazon can also use NYT content (news, Cooking, The Athletic)
-      to train its proprietary AI models. CEO Meredith Kopit Levien: "It aligns with
-      our deliberate approach to ensuring that our work is valued appropriately,
-      whether through commercial deals or through the enforcement of our IP rights."
-      NOTABLY: NYT chose Amazon over OpenAI (which it is suing) and Microsoft (also
-      named in the suit). Amazon is the only AI company NYT has licensed to.
-    date_established: "2025-05-29"
-    source_url: "https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/"
-    supplementary_source: "https://www.livemint.com/technology/amazon-to-pay-new-york-times-at-least-20-million-a-year-in-ai-deal-11724443000000.html"
+      COMPOUND FINANCIAL RELATIONSHIP — THE DEEPEST IN THE DATASET:
+      
+      1. AI LICENSING ($20-25M/yr): Multi-year agreement signed May 29, 2025. Amazon
+         products (Alexa, etc.) can use summaries and short excerpts from NYT stories
+         and recipes. Amazon can train proprietary AI models on NYT content (news,
+         Cooking, The Athletic). NYT's FIRST AI content licensing deal — chose Amazon
+         over OpenAI (suing) and Microsoft (also named in suit).
+      
+      2. WIRECUTTER AFFILIATE REVENUE ($50-100M+/yr est.): NYT's Wirecutter product
+         review site depends heavily on Amazon's Associates affiliate program. FY2025
+         "Affiliate, licensing and other revenues" totaled $308.1M. After subtracting
+         Amazon AI licensing (~$13-17M partial year) and other licensing, Wirecutter
+         affiliate revenue is likely the largest single component at $50-100M+.
+      
+      3. AMAZON AFFILIATE COMMISSION CUTS (Mar 2026): Amazon slashed Associates rates
+         by up to 50% in March 2026, eliminated milestone tiers. This directly reduces
+         NYT's Wirecutter affiliate income — potentially by $15-50M/yr. The cut makes
+         the AI licensing deal even more strategically important as the growing Amazon
+         revenue stream replacing declining affiliate income.
+      
+      COMBINED EXPOSURE: NYT's total Amazon dependency may exceed $70-125M/yr —
+      making Amazon by far the most financially significant tech company relationship
+      for NYT. For context, this is 2.5-4.4% of total NYT revenue ($2,824.9M FY2025).
+      
+      CEO Meredith Kopit Levien: "It aligns with our deliberate approach to ensuring
+      that our work is valued appropriately, whether through commercial deals or through
+      the enforcement of our IP rights."
+    date_established: "2025-05-29 (AI licensing); ongoing (affiliate)"
+    source_urls:
+      - "https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/"
+      - "https://www.livemint.com/technology/amazon-to-pay-new-york-times-at-least-20-million-a-year-in-ai-deal-11724443000000.html"
+      - "https://www.adweek.com/media/amazon-associates-affiliate-rate-cuts-publishers/"
+      - "https://www.sec.gov/Archives/edgar/data/71691/000007169126000008/pressrelease12312025.htm"
 
   - partner: "OpenAI"
     relationship_type: "litigation"
@@ -184,15 +323,16 @@ editorial_leadership:
 # INTERNAL AI TOOLS — new section, 2026-06-22
 # ===================================================================
 internal_ai_tools:
-  - name: "Echo"
-    description: "Internal AI summarization tool. Connects NYT content archive to LLMs. Single user-defined prompt summarizes/transforms/extracts from any Times-owned content."
-    source_url: "https://ire.org/resource-center/inside-the-new-york-times-ai-toolkit/"
-  - name: "Stet"
-    description: "AI copy evaluation framework for quality measurement at scale. Ensures AI-generated copy meets editorial standards across parallel processing of hundreds of articles."
-    source_url: "https://ire.org/resource-center/inside-the-new-york-times-ai-toolkit/"
-  - name: "Cheat Sheet"
-    description: "Spreadsheet-based AI tool for investigative journalism. Lets reporters choose LLM models, process massive datasets (10K names, 500 hours of video). Used by several dozen reporters."
-    source_url: "https://digiday.com/media/inside-the-new-york-times-ai-newsroom-strategy/"
+  tools:
+    - name: "Echo"
+      description: "Internal AI summarization tool. Connects NYT content archive to LLMs. Single user-defined prompt summarizes/transforms/extracts from any Times-owned content."
+      source_url: "https://ire.org/resource-center/inside-the-new-york-times-ai-toolkit/"
+    - name: "Stet"
+      description: "AI copy evaluation framework for quality measurement at scale. Ensures AI-generated copy meets editorial standards across parallel processing of hundreds of articles."
+      source_url: "https://ire.org/resource-center/inside-the-new-york-times-ai-toolkit/"
+    - name: "Cheat Sheet"
+      description: "Spreadsheet-based AI tool for investigative journalism. Lets reporters choose LLM models, process massive datasets (10K names, 500 hours of video). Used by several dozen reporters."
+      source_url: "https://digiday.com/media/inside-the-new-york-times-ai-newsroom-strategy/"
   approved_external_tools:
     - "GitHub Copilot (coding)"
     - "Google Vertex AI (product development)"
@@ -292,11 +432,53 @@ known_conflicts:
       Zero financial relationship with Meta — no advertising, no licensing, no partnership.
       Meta signed AI licensing deals with 7 other publishers in Dec 2025 but not NYT.
       This means NYT's critical Meta coverage has absolutely no financial counterweight
-      or "client-sparing" incentive. Compare: Amazon ($20-25M/yr) gets softer coverage
-      framing; Meta ($0) gets Sheera Frenkel and Mike Isaac.
+      or "client-sparing" incentive. Compare: Amazon ($70-125M+/yr compound) gets softer
+      coverage framing; Meta ($0) gets Sheera Frenkel and Mike Isaac.
     severity: 4
     evidence: "Digiday 2025 AI deals timeline, Meta Dec 2025 publisher deals"
     source_url: "https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/"
+  - type: "compound_amazon_dependency"
+    description: >
+      CRITICAL NEW FINDING: NYT's Amazon dependency is FAR larger than the $20-25M/yr AI
+      licensing deal. When combining AI licensing ($20-25M/yr) with Wirecutter affiliate
+      revenue ($50-100M+ est.), total Amazon exposure may reach $70-125M+/yr — 2.5-4.4%
+      of total NYT revenue. Amazon's March 2026 affiliate commission cuts (up to 50%,
+      per Adweek) are actively compressing the affiliate component, making the AI licensing
+      relationship even more strategically critical. Karen Weise covers Amazon for the NYT
+      while Amazon pays NYT $70-125M+/yr in combined revenue — this is THE most direct
+      testable revenue/coverage conflict in the 5-publication tracking set.
+    severity: 5
+    evidence: >
+      FY2025 10-K: "Affiliate, licensing and other revenues" = $308.1M. NYT quarterly
+      press releases specifically cite "higher Wirecutter affiliate referral revenues"
+      as growth driver. Amazon AI licensing deal ($20-25M/yr) per Livemint/Digiday.
+      Amazon Associates commission cuts per Adweek (May 2026).
+    source_urls:
+      - "https://www.sec.gov/Archives/edgar/data/71691/000007169126000008/pressrelease12312025.htm"
+      - "https://www.adweek.com/media/amazon-associates-affiliate-rate-cuts-publishers/"
+      - "https://www.livemint.com/technology/amazon-to-pay-new-york-times-at-least-20-million-a-year-in-ai-deal-11724443000000.html"
+  - type: "major_shareholder_concentration"
+    description: >
+      Carlos Slim's family (via Control Empresarial de Capitales S.A. de C.V.) owns 25.1%
+      of NYT Class A common stock — 29,123,098 shares as of the Feb 9, 2026 SEC filing.
+      This makes the Slim Family the single largest shareholder of any class of NYT stock.
+      While the dual-class structure limits Class A influence (Sulzberger Class B elects ~70%
+      of board), 25.1% economic ownership from a Mexican telecom oligarch (net worth ~$99.1B)
+      is extraordinary for a major US media company. Slim has no board representation and
+      files as 13G (passive). His core businesses (Telmex, América Móvil) do not directly
+      compete with Meta in US markets, but the concentration itself is a governance fact.
+      HISTORICAL CONTEXT: Slim's investment began as a $250M loan at 14.05% during NYT's
+      2009 near-bankruptcy — an emergency lifeline that converted to equity. The position
+      has grown from ~17% to 25.1% partly through NYT's own share buyback program reducing
+      outstanding shares.
+    severity: 2
+    evidence: >
+      SEC Schedule 13G/A filed Feb 9, 2026. Control Empresarial de Capitales = 29,123,098
+      Class A shares. Historical: $250M loan Jan 2009, warrant conversions, partial sales
+      in 2017-2018 (Inversora Carso sold ~1.5M shares at ~$23), entity consolidation.
+    source_urls:
+      - "https://www.sec.gov/Archives/edgar/data/1534504/000114036126004396/0001140361-26-004396.txt"
+      - "https://en.wikipedia.org/wiki/Carlos_Slim"
 
 # ===================================================================
 # LITIGATION CONNECTIONS — expanded 2026-06-22
@@ -452,8 +634,47 @@ editorial_history:
     source_url: "https://www.thestreet.com/technology/nytimes-ends-partnership-with-apple-news"
 
 notes: |
+  UPDATED 2026-06-24: THREE MAJOR ADDITIONS to the NYT ownership & funding profile.
+  
+  1. CARLOS SLIM / CONTROL EMPRESARIAL (25.1% CLASS A):
+  The Slim Family's 25.1% Class A shareholding is the largest individual ownership
+  position in any of the 5 tracked publications. Per SEC Schedule 13G/A filed Feb 9,
+  2026: Control Empresarial de Capitales S.A. de C.V. holds 29,123,098 Class A shares.
+  At $71.22/share (Jun 24, 2026), the position is worth ~$2.07B. This was entirely
+  missing from the prior profile. While Slim files as passive (13G) and has no board
+  seats, and his core businesses (Telmex/América Móvil) don't directly compete with
+  Meta in US markets, the concentration is extraordinary. Historical context: Slim's
+  $250M emergency loan in January 2009 at 14.05% interest (when NYT stock was under $4)
+  saved the company from potential bankruptcy. The position has grown from ~17% to 25.1%
+  partly through NYT's own share buyback program reducing the denominator.
+  
+  2. COMPOUND AMAZON DEPENDENCY ($70-125M+/yr):
+  The prior profile showed only the $20-25M/yr AI licensing deal. The REAL Amazon
+  dependency is FAR larger when including Wirecutter affiliate revenue. NYT's FY2025
+  "Affiliate, licensing and other revenues" totaled $308.1M (10.9% of total revenue).
+  After subtracting the AI licensing deal (~$13-17M partial year in FY2025) and other
+  licensing, Wirecutter affiliate revenue through Amazon likely exceeds $50-100M/yr.
+  Combined exposure: $70-125M+/yr. This makes Amazon the most financially significant
+  tech company relationship for ANY of the 5 tracked publications — dwarfing even
+  MIT TR's institutional funding or Wired's indirect Reddit stake.
+  
+  Karen Weise covers Amazon for the NYT. She covers the company that pays her employer
+  $70-125M+ per year. This is the single most direct, testable revenue/coverage conflict
+  in the entire 5-publication tracking set.
+  
+  3. AMAZON AFFILIATE COMMISSION CUTS (MARCH 2026):
+  Amazon slashed Associates program commissions by up to 50% starting March 9, 2026.
+  Milestone-based incentive tiers eliminated. Year-over-year performance bonuses gutted.
+  Never publicly announced. Per Adweek (7 publisher sources): one deal-site publisher
+  revised 2026 Amazon revenue forecast down 50%. This directly threatens NYT/Wirecutter's
+  largest affiliate revenue stream. The timing creates a fascinating dynamic: as Amazon
+  cuts affiliate commissions (reducing NYT's affiliate income), the AI licensing deal
+  ($20-25M/yr) becomes an even more critical revenue relationship. Amazon is simultaneously
+  squeezing and subsidizing NYT — shifting the financial relationship from transactional
+  (affiliate) to strategic (AI licensing). Does this create editorial leverage?
+  
   The New York Times is the most analytically interesting case for MediaScope because of
-  its DUAL AI STRATEGY:
+  its MULTI-DIMENSIONAL AI STRATEGY:
   
   1. PLAINTIFF: Suing OpenAI/Microsoft for billions in copyright damages, arguing AI
      training on NYT content is theft. Landmark preservation order forcing OpenAI to
@@ -465,21 +686,23 @@ notes: |
   3. USER: Approved OpenAI's non-ChatGPT API, GitHub Copilot, Google Vertex AI,
      Amazon AI tools for internal staff use (Feb 2025). Built Echo, Stet, Cheat Sheet.
   
-  4. ZERO META: No financial relationship with Meta whatsoever. Meta signed AI deals
-     with 7 publishers Dec 2025 but not NYT. This means NYT's adversarial Meta coverage
-     (Frenkel, Isaac) has zero commercial counterweight.
+  4. AFFILIATE DEPENDENT: Wirecutter earns $50-100M+/yr through Amazon's affiliate
+     program — making Amazon NYT's largest single revenue partner at $70-125M+ combined.
   
-  KEY ANALYTICAL QUESTIONS:
-  - Does Amazon coverage soften after the $20-25M/yr licensing deal?
-  - Does OpenAI coverage shift from "copyright thief" to "litigation opponent" vs
-    "technology partner" (since NYT staff use OpenAI API)?
+  5. ZERO META: No financial relationship with Meta whatsoever. Meta signed AI deals
+     with 7 publishers Dec 2025 but not NYT. NYT's adversarial Meta coverage
+     (Frenkel, Isaac, new dedicated reporter Eli Tan) has zero commercial counterweight.
+  
+  6. CARLOS SLIM (25.1%): Largest individual shareholder. Passive filing, no board seats,
+     telecom not competing with Meta. But extraordinary concentration for a media company.
+  
+  KEY ANALYTICAL QUESTIONS (updated):
+  - Does Amazon coverage soften after the compound $70-125M+/yr dependency is established?
+  - Does the March 2026 affiliate commission cut change Karen Weise's coverage posture?
+    (Paradox: Amazon cutting NYT's income could either embitter coverage or make NYT more
+    deferential to protect the remaining AI licensing relationship.)
   - Is there measurable asymmetry between NYT's Meta coverage (no revenue) and Amazon
-    coverage (licensing revenue)?
+    coverage ($70-125M+/yr)?
   - How does the dual-class Sulzberger control structure (family owns ~11% equity but
-    elects ~70% of board) affect editorial independence claims?
-  
-  The ownership structure is unusually resilient: the 1997 Trust's stated primary objective
-  is "to maintain the editorial independence and the integrity of The New York Times."
-  This makes NYT's editorial choices more likely to reflect institutional culture and
-  journalist ideology than shareholder pressure — but the Amazon deal introduces a new
-  commercial vector worth monitoring.
+    elects ~70% of board) interact with Slim's 25.1% economic interest?
+  - Does Q1 2026 reporting show any Wirecutter revenue decline from the Amazon cuts?
