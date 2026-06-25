@@ -1974,3 +1974,33 @@ The toolkit was designed primarily for news-article framing (journalistic implic
 - `mediascope/analyze/framing.py` — loaded_language +1 pattern (dismissive/trivializing), rhetorical_question +8 patterns, speculative_framing +1 pattern, predation/workplace term additions
 - `examples/sample_output/atlantic_ai_not_conscious_2026_06_article.txt` — new article text
 - `examples/sample_output/atlantic_ai_not_conscious_2026_06_analysis.md` — new analysis with pre/post comparison
+
+---
+
+## Iteration: 2026-06-25T07:00 PT — Type B: Journalist Research
+
+### Focus
+Added 3 new journalists to `profiles/careers/journalists.yaml`: Andy Greenberg (Wired security), Cecilia Kang (NYT tech policy), Emily Mullin (MIT TR → Wired biotech). Total journalist count: 56 → 59.
+
+### What Was Improved
+
+**Andy Greenberg** — Wired's longest-serving security/privacy journalist (~12 years, Forbes → Wired 2014). Author of 3 books (*This Machine Kills Secrets*, *Sandworm*, *Tracers in the Dark*). Two Gerald Loeb Awards. His Jeep hack article prompted 1.4M vehicle recall + Senate bill. Added to Investigative Journalists section. Analytical value: institutional control case for measuring Drummond-era editorial drift in security beat.
+
+**Cecilia Kang** — NYT national technology correspondent (AP-Dow Jones → SJMN → WaPo → NYT 2014). Co-authored *An Ugly Truth* (2021) with tracked journalist Sheera Frenkel. Gerald Loeb + George Polk Awards, Pulitzer finalist. Added to NYT Tech Desk section. Analytical value: covers antitrust/regulation — her framing of DOJ v. Google and FTC v. Meta shapes reader understanding of whether Big Tech should be broken up. Cross-reference with Frenkel entry.
+
+**Emily Mullin** — Third MIT TR → Wired migration (after Will Knight 2018, Zeyi Yang 2025). Career: MIT TR associate editor (biomedicine, ~2017-2019) → freelance → Pittsburgh Post-Gazette (COVID) → MIT Knight Science Journalism Fellow → Wired (Jan 2022). Added to Cross-Publication Migrations section. Analytical value: three MIT TR → Wired moves is statistically notable — this is the highest-frequency inter-publication pipeline in the corpus. Biotech beat may be insulated from editorial tone pressure (less politically charged than AI/surveillance), making her a control case for beat-specific editorial pressure.
+
+### Source URLs
+- Andy Greenberg: https://www.wired.com/author/andy-greenberg/, https://www.forbes.com/sites/andygreenberg/, https://en.wikipedia.org/wiki/Andy_Greenberg
+- Cecilia Kang: https://www.nytimes.com/by/cecilia-kang, https://www.linkedin.com/in/cecilia-kang-b28711/, https://www.washingtonpost.com/people/cecilia-kang/
+- Emily Mullin: https://www.wired.com/author/emily-mullin/, https://www.technologyreview.com/author/emily-mullin/, https://ksj.mit.edu/emily-mullin/, https://onezero.medium.com/@emilymullin
+
+### Key Insight
+The MIT Technology Review → Wired pipeline is now the single most-documented inter-publication migration channel in the corpus (3 journalists: Knight, Yang, Mullin), spanning AI, China tech, and biotech beats. This pattern suggests a systematic institutional relationship rather than coincidence — possibly Condé Nast recruiting from MIT TR's talent pool, or MIT TR's culture/compensation driving departures. Each migration covers a different beat, ruling out beat-specific pull factors and pointing to institutional-level dynamics.
+
+### Test Results
+- Tests run after changes (see below)
+
+### Files
+- `profiles/careers/journalists.yaml` — +3 journalists (Greenberg, Kang, Mullin), total 59
+- `README.md` — journalist count updated 56 → 59
