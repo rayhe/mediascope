@@ -4,6 +4,81 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-25 13:00 PT — Hour Type C: Ownership & Funding Deep Dive
+
+**Focus:** MIT Technology Review — OBBBA endowment tax (now signed law, not proposed), federally-subsidized royalty income provision, MIT endowment portfolio VC/PE exposure, new Honeywell corporate partnership. Six major profile expansions.
+
+### What was improved:
+
+1. **OBBBA endowment tax — corrected from "proposed" to ENACTED LAW (signed July 4, 2025):**
+   - The profile previously said "Big Beautiful Bill Act proposes endowment tax increase" — this is now LAW
+   - Tiered structure: 1.4% ($500K-$750K/student), 4% ($750K-$2M), 8% (>$2M/student)
+   - MIT classification: $27.4B endowment / 11,816 students = ~$2,318,340/student → **8% tier** (highest)
+   - ~5.7x increase from prior 1.4% flat rate
+   - Effective for taxable years beginning after Dec 31, 2025 (MIT's FY starts July 1, 2026)
+   - Student threshold raised from 500 to 3,000 (MIT at 11,816, well above)
+   - MIT is one of 15 institutions subject to new rates (5 at 8% or 4%, 5 at 1.4%)
+   - Congressional estimate: $761M total additional revenue over 10 years across all affected schools
+   - In 2023, all 56 previously affected schools paid $381M combined at the old 1.4% rate
+   - Sources: Faegre Drinker (Jul 2025), Foley & Lardner, Wikipedia, Broadridge/Peterson, Tax Policy Center
+
+2. **"Federally-Subsidized Royalty Income" provision — NEW SECTION:**
+   - The OBBBA includes royalties from any patent/copyright/IP in the endowment tax base IF:
+     (a) IP resulted from student/faculty work at the institution, AND
+     (b) any federal funds were used in research/development/creation
+   - This DIRECTLY taxes the output of MIT's massive federally funded research enterprise
+   - MIT's $762M total research expenditures generate patents developed with NSF, DOD, NIH, DARPA funding
+   - Creates a novel FEEDBACK LOOP: same corporate partnerships (Google, IBM, Amazon) that create editorial conflicts for MIT TR also generate taxable royalty income for MIT
+   - Sources: Faegre Drinker detailed analysis, OBBBA text (amended IRC §4968)
+
+3. **"Related organizations" provision:**
+   - OBBBA includes assets and NII of entities controlled by the institution in the endowment tax calculation
+   - Technology Review Inc. ($6.5M total assets) is a MIT-controlled nonprofit
+   - Its assets are likely counted toward MIT's endowment-per-student calculation
+   - Source: Faegre Drinker analysis
+
+4. **Executive compensation excise tax expansion (IRC §4960):**
+   - OBBBA broadens "covered employee" definition: now ANY employee/former employee paid >$1M in any year (previously only top 5)
+   - MIT administrators on MIT TR board already near/above threshold: David Schmittlein ($1.05M, MIT Sloan Dean), Cynthia Barnhart ($987K, MIT Provost)
+   - Could affect future board composition and compensation structures
+   - Source: Foley & Lardner
+
+5. **MIT endowment portfolio composition — NEW DATA:**
+   - 30-40% allocation to private investments (PE + VC) per MPI/Institutional Investor analysis
+   - MIT has one of the HIGHEST VC exposures among elite endowments (alongside Brown, Dartmouth, Princeton)
+   - High VC exposure = direct financial interest in tech startups covered by MIT TR
+   - Glen Shor (MIT EVP/Treasurer, $883K, MIT TR board Director) manages these investments
+   - MPI analysis: "MIT is very well diversified" but VC retrenchment drove negative returns in FY2023
+   - Sources: Institutional Investor, PitchBook
+
+6. **MIT-Honeywell partnership (June 24, 2026) — NEW ENTRY:**
+   - MIT Center for Sustainability Science and Strategy collaboration with Honeywell
+   - Joint report "Accelerating Energy Expansion" published June 24, 2026
+   - Models AI-enabled cost reductions: $225B in oil-based fuels, $80B in LNG by 2050
+   - Added as 9th corporate partnership and 9th revenue relationship
+   - Extends MIT corporate ties beyond pure tech into industrial technology
+   - Source: PR Newswire (Jun 24, 2026)
+
+### New known_conflict entry:
+- **obbba_royalty_tax_feedback_loop** (severity 3): The OBBBA's royalty income provision creates a feedback loop — the same corporate partnerships that create editorial conflicts also generate taxable royalty income, and the ~5.7x tax increase may make MIT MORE dependent on corporate research funding and event sponsorship, potentially DEEPENING existing conflicts
+
+### MIT enrollment data added (2025-2026):
+- 11,816 total students (4,561 UG + 7,255 grad)
+- 3,475 international (529 UG + 2,946 grad)
+- 8,341 domestic (70.6%)
+- Source: MIT Registrar (registrar.mit.edu)
+
+### Key analytical insight:
+The OBBBA endowment tax creates a structural INTENSIFICATION of MIT TR's existing editorial conflicts. The ~5.7x tax increase pressures MIT's institutional budget, which may increase dependence on (a) corporate research funding, (b) event sponsorship revenue (flows through MIT TR), and (c) endowment returns (30-40% VC/PE, including investments in companies MIT TR covers). The "Federally-Subsidized Royalty Income" provision is the first federal tax mechanism that directly links university-corporate research partnerships to tax liability — making the editorial conflict and the financial conflict the SAME thing.
+
+### Anti-avoidance provisions:
+Treasury directed to promulgate regulations to "prevent avoidance of such tax through the restructuring of endowment funds or other arrangements" — meaning MIT cannot restructure to escape the 8% tier.
+
+### Commit: `bee1b08` — 1 file changed, 119 insertions, 4 deletions
+### Tests: 429/429 passing
+
+---
+
 ## 2026-06-25 12:00 PT — Hour Type B: Journalist/Publication Research (Guardian US)
 
 **Focus:** Guardian US desk expansion — new journalist Jeremy Barr (WaPo → Guardian), Betsy Reed EIC entry, editorial_changes.yaml updates. 70 journalists now tracked.
