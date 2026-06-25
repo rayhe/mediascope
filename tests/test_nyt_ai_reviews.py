@@ -238,10 +238,12 @@ Ana Swanson contributed reporting from Washington."""
         )
 
     def test_total_device_types(self):
-        """Article should have exactly 3 device types: anonymous_authority,
-        isolation_framing, pressure_language."""
+        """Article should have exactly 4 device types: anonymous_authority,
+        isolation_framing, pressure_language, sovereignty_framing.
+        sovereignty_framing fires because the article frames the AI review
+        request through national security language near Meta."""
         devices = detect_framing_devices(self.ARTICLE)
         types = set(d.device_type for d in devices)
-        assert types == {"anonymous_authority", "isolation_framing", "pressure_language"}, (
-            f"Expected exactly 3 device types, got: {types}"
+        assert types == {"anonymous_authority", "isolation_framing", "pressure_language", "sovereignty_framing"}, (
+            f"Expected exactly 4 device types, got: {types}"
         )

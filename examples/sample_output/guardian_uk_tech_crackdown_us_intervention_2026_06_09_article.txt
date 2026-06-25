@@ -1,0 +1,41 @@
+Title: Crackdown on tech platforms will go ahead despite US intervention, says No 10
+Publication: The Guardian
+Authors: Dan Milmo and Jessica Elgot
+Date: June 9, 2026
+URL: https://www.theguardian.com/technology/2026/jun/09/crackdown-on-tech-platforms-will-go-ahead-despite-us-intervention-says-no-10
+
+---
+
+White House displeasure over the prospect of an under-16 social media ban will not deter the UK from cracking down on tech platforms, the British government has said.
+
+The technology secretary, Liz Kendall, told the Guardian she was not concerned "in the slightest" by the Trump administration's intervention in the debate over restrictions, after the US embassy in London posted a notice warning against a ban.
+
+Kendall added that nine out of 10 respondents to a government poll supported an under-16 ban.
+
+Kendall said she was "very happy to read any submission anybody makes" but her priority was "British young people". Kendall denied there was any tension between seeking investment into the UK from US AI companies and implementing regulations that affect major American tech firms.
+
+"I think companies will continue investing in Britain," she said.
+
+"My focus is on what is right for British parents and British families," Kendall added.
+
+The government is set to announce some form of social media ban for under-16s next week, alongside other restrictions such as a possible block on conversations with strangers on gaming platforms. Limits on AI chatbot use are also under consideration.
+
+Asked about the Trump administration's intervention, a Downing Street spokesperson said: "We will always act in the UK's national interest and protecting young people is no different."
+
+In a submission to a government consultation on online safety, the US government came out against "prescribed one-size-fits-all government restrictions" and "blunt regulatory instruments" to address online harms to children.
+
+The notice, published by the US embassy in London, added that age-gating for 13- to 16-year-olds would not work. "Technical methods developed to distinguish minors from adults cannot simply be repurposed for younger thresholds," it said.
+
+Instead, the Trump administration called on the UK to give parents "robust tools" to manage their children's privacy settings and account controls, as well as requiring platforms to offer a healthy online experience "rather than outright bans".
+
+The UK approach to online safety has been a source of tension between the White House and Downing Street, with the Online Safety Act (OSA) attracting criticism from across the Atlantic because of free speech concerns. JD Vance, the US vice-president, has said free speech in the UK is "in retreat", while one senior Republican congressman described the act as the "UK's online censorship law".
+
+The White House has expressed concern that the UK and EU are taking a legislative and regulatory path that singles out US tech firms. The US embassy notice said: "We have concerns about regulations that impose disproportionate compliance burdens on American companies or that apply to one platform but not similar services."
+
+However, it is understood that ministers are mindful of the threat of a judicial review of the process. Plans for restrictions have been drawn up quickly, ready for an announcement next week, following the end of a consultation into online child safety that closed only two weeks ago.
+
+Mark Zuckerberg's Meta, the parent company of Facebook and Instagram – platforms that will be affected by the outcome of the consultation – is already seeking a judicial review of one aspect of the OSA. It has launched a legal challenge against the UK's media regulator over the fees and fines regime it is enforcing under the act.
+
+The imminent UK government announcement follows the implementation of an under-16 ban in Australia, where there is a blanket ban on under-16s accessing social media, meaning popular platforms such as TikTok, Facebook, Instagram and Snapchat are blocked. Previously, Kendall has said nine out of 10 parents responding to the consultation support an under-16 ban.
+
+The Molly Rose Foundation, an influential voice in the UK online safety debate, has warned against an immediate ban for apps deemed to be highly risky. Instead, it has said the government should set strict safety standards for social media apps, such as curbing personalised algorithms that curate the content a teenager sees. Apps would then be banned only after they have shown they do not meet those requirements.

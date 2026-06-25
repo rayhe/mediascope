@@ -47,6 +47,13 @@ ANONYMOUS_SOURCE_PATTERNS: list[re.Pattern] = [
     re.compile(r"\b(?:some|several|multiple|many|other) (?:workers|employees|engineers|staffers|people) (?:said|told|described|complained|called)\b", re.IGNORECASE),
     # Publication-investigative patterns
     re.compile(r"\b\w+ (?:found|reported|revealed) (?:widespread|significant|extensive|growing)\b", re.IGNORECASE),
+    # UK-style passive institutional attribution — common in Guardian/UK press.
+    # "it is understood that ministers are mindful" positions an institutional
+    # claim as background knowledge without naming any source at all.
+    re.compile(r"\bit is understood (?:that )?\b", re.IGNORECASE),
+    re.compile(r"\bit is believed (?:that )?\b", re.IGNORECASE),
+    re.compile(r"\bit is thought (?:that )?\b", re.IGNORECASE),
+    re.compile(r"\bit has emerged (?:that )?\b", re.IGNORECASE),
     # Numbered officials/people as anonymous sources — very common in NYT-style
     # government and policy reporting: "two government officials said",
     # "four people familiar with", "three administration officials confirmed"
@@ -54,6 +61,20 @@ ANONYMOUS_SOURCE_PATTERNS: list[re.Pattern] = [
     # "one/a person involved in / close to / inside / with the" — person described
     # by proximity/involvement rather than by "knowledge of"
     re.compile(r"\b(?:one|a) person (?:involved in|close to|inside|with the|within the|privy to|briefed on|engaged in) (?:the )?(?:process|matter|talks?|discussions?|negotiations?|deliberations?|effort|planning)\b", re.IGNORECASE),
+    # "one/a senior [party/adjective]? [title]" — unnamed political/industry
+    # figures described by seniority + role: "one senior Republican congressman",
+    # "a senior Meta executive", "one prominent industry analyst".
+    re.compile(
+        r"\b(?:one|a)\s+(?:senior|prominent|high-ranking|top|leading|key)\s+"
+        r"(?:Republican|Democrat|Democratic|Labour|Conservative|Tory|"
+        r"White House|Pentagon|administration|government|industry|tech|"
+        r"Meta|Google|Apple|Amazon|Microsoft|intelligence|military|"
+        r"congressional|Senate|House)?\s*"
+        r"(?:congressman|congresswoman|senator|lawmaker|legislator|"
+        r"official|executive|adviser|advisor|aide|diplomat|analyst|"
+        r"figure|member|source|insider|person)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 # Named source patterns — look for "Name said", "said Name", "according to Name"

@@ -90,6 +90,19 @@ _ANONYMOUS_AUTHORITY_PATTERNS: list[re.Pattern] = [
         r"privy to|briefed on|engaged in)\b",
         re.IGNORECASE,
     ),
+    # "one/a senior [party/adjective]? [title]" — unnamed political/industry
+    # figures described by seniority + role: "one senior Republican congressman"
+    re.compile(
+        r"\b(?:one|a)\s+(?:senior|prominent|high-ranking|top|leading|key)\s+"
+        r"(?:Republican|Democrat|Democratic|Labour|Conservative|Tory|"
+        r"White House|Pentagon|administration|government|industry|tech|"
+        r"Meta|Google|Apple|Amazon|Microsoft|intelligence|military|"
+        r"congressional|Senate|House)?\s*"
+        r"(?:congressman|congresswoman|senator|lawmaker|legislator|"
+        r"official|executive|adviser|advisor|aide|diplomat|analyst|"
+        r"figure|member|source|insider|person)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _CATASTROPHIZING_PATTERNS: list[re.Pattern] = [
@@ -418,9 +431,13 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         re.IGNORECASE,
     ),
     # Analogy/diminishment — comparing sophisticated entities to children,
-    # students, or naive actors to undermine their competence
+    # students, or naive actors to undermine their competence.
+    # NOTE: changed child(?:ish|like)? → child(?:ish|like) to require suffix.
+    # Bare "child" is a neutral policy term in regulatory/safety reporting
+    # (e.g., "online child safety", "child protection") and was generating
+    # false positives on every child-safety policy article.
     re.compile(
-        r"\b(?:elementary\s+school|kindergarten|toddler|child(?:ish|like)?|"
+        r"\b(?:elementary\s+school|kindergarten|toddler|child(?:ish|like)|"
         r"naive|naively|"
         r"eager\s+to\s+(?:please|finish|comply|complete)|"
         r"just\s+wants?\s+to\s+please|"
@@ -660,6 +677,54 @@ _POWER_ASYMMETRY_PATTERNS: list[re.Pattern] = [
 ]
 
 
+# CEO personalization: editorial choice to name the CEO before the company,
+# personalizing corporate actions ("Mark Zuckerberg's Meta" vs just "Meta").
+# This framing makes the company's actions feel like one person's decisions,
+# which can amplify negative coverage or imply authoritarian control.
+_CEO_PERSONALIZATION_PATTERNS: list[re.Pattern] = [
+    # "[CEO]'s [Company]" — possessive CEO-company naming
+    re.compile(
+        r"\b(?:Mark Zuckerberg|Zuckerberg|Elon Musk|Musk|Tim Cook|Cook|"
+        r"Sundar Pichai|Pichai|Satya Nadella|Nadella|Jeff Bezos|Bezos|"
+        r"Sam Altman|Altman|Jensen Huang|Huang|Andy Jassy|Jassy)'s\s+"
+        r"(?:Meta|Facebook|Instagram|WhatsApp|Tesla|Apple|Google|Alphabet|"
+        r"Microsoft|Amazon|OpenAI|Nvidia|X|Twitter)\b",
+        re.IGNORECASE,
+    ),
+    # "[CEO]-led [Company]" or "[Company], led by [CEO]"
+    re.compile(
+        r"\b(?:Mark Zuckerberg|Zuckerberg|Elon Musk|Musk|Tim Cook|Cook|"
+        r"Sundar Pichai|Pichai|Satya Nadella|Nadella|Sam Altman|Altman)"
+        r"(?:-led|[\s,]+led)\s+\w+\b",
+        re.IGNORECASE,
+    ),
+]
+
+# Litigation framing: editorial positioning of a company/entity as fighting
+# regulation or using courts adversarially rather than cooperating.
+_LITIGATION_FRAMING_PATTERNS: list[re.Pattern] = [
+    # "[entity] seeking/launching/filing legal/judicial action"
+    re.compile(
+        r"\b(?:seeking|launched?|filed?|pursuing|mounting|initiated?|"
+        r"brought|bringing|challenging|fighting)\s+"
+        r"(?:a\s+)?(?:judicial review|legal challenge|legal action|lawsuit|"
+        r"court challenge|legal battle|antitrust challenge|"
+        r"constitutional challenge|injunction|appeal|class action)\b",
+        re.IGNORECASE,
+    ),
+    # "legal challenge against" — adversarial preposition
+    re.compile(
+        r"\blegal (?:challenge|battle|fight|action|war|assault)\s+"
+        r"(?:against|over|targeting|aimed at|directed at)\b",
+        re.IGNORECASE,
+    ),
+    # "took/taking [entity] to court"
+    re.compile(
+        r"\b(?:took|taking|take|drag(?:ged|ging)?)\s+\w+\s+to\s+court\b",
+        re.IGNORECASE,
+    ),
+]
+
 # Map device type to its pattern list
 _DEVICE_PATTERNS: dict[str, list[re.Pattern]] = {
     "guilt_by_association": _GUILT_BY_ASSOCIATION_PATTERNS,
@@ -674,6 +739,8 @@ _DEVICE_PATTERNS: dict[str, list[re.Pattern]] = {
     "juxtaposition": _JUXTAPOSITION_PATTERNS,
     "timeline_implication": _TIMELINE_IMPLICATION_PATTERNS,
     "power_asymmetry": _POWER_ASYMMETRY_PATTERNS,
+    "ceo_personalization": _CEO_PERSONALIZATION_PATTERNS,
+    "litigation_framing": _LITIGATION_FRAMING_PATTERNS,
 }
 
 
@@ -980,6 +1047,71 @@ _DEVICE_PATTERNS["pressure_language"] = _PRESSURE_LANGUAGE_PATTERNS
 
 
 # ---------------------------------------------------------------------------
+# Geopolitical regulatory pressure: editorial framing of international
+# regulatory tensions as geopolitical confrontation.  Distinct from
+# generic pressure_language because it involves cross-border dynamics:
+# embassy/diplomatic submissions as pressure tools, sovereignty/defiance
+# rhetoric, trade-tension language, and "singles out" accusations.
+# Common in Guardian and UK press coverage of US-UK tech regulation
+# disputes (e.g., Online Safety Act vs. Trump administration pushback).
+# ---------------------------------------------------------------------------
+_GEOPOLITICAL_REGULATORY_PRESSURE_PATTERNS: list[re.Pattern] = [
+    # Embassy/diplomatic submissions as pressure tools
+    re.compile(
+        r"\b(?:embassy|consulate|ambassador|diplomat(?:ic)?|envoy)\b"
+        r".{0,80}?"
+        r"\b(?:warn(?:ing|ed)?|submission|notice|statement|intervention|"
+        r"concern|object(?:ion|ed)?|oppos(?:e[ds]?|ition)|urg(?:e[ds]?|ing)|"
+        r"caution(?:ed)?|advis(?:e[ds]?|ory))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse: pressure verbs near diplomatic actors
+    re.compile(
+        r"\b(?:warn(?:ing|ed)?|submission|notice|intervention|"
+        r"concern|object(?:ion|ed)?|oppos(?:e[ds]?|ition))\b"
+        r".{0,80}?"
+        r"\b(?:embassy|consulate|ambassador|diplomat(?:ic)?|envoy|"
+        r"White House|State Department|administration)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Sovereignty/defiance rhetoric — editorial positioning of a government
+    # as defiant against foreign pressure
+    re.compile(
+        r"\b(?:not concerned|not deterred|will not (?:be )?(?:deterred|swayed|"
+        r"intimidated|bullied)|undeterred|defiant|defy|defied|defying|"
+        r"will always act in .{0,30}?national interest|"
+        r"sovereign(?:ty)?|"
+        r"will go ahead despite|"
+        r"will not back down|standing firm|stood firm)\b",
+        re.IGNORECASE,
+    ),
+    # Trade tension / regulatory friction language
+    re.compile(
+        r"\b(?:source of tension|trade (?:tension|friction|war|dispute|conflict)|"
+        r"regulatory (?:friction|tension|clash|conflict|divergence|dispute)|"
+        r"disproportionate (?:compliance )?burden|"
+        r"singles? out (?:\w+ )?(?:tech |technology |American |US |U\.S\. )?"
+        r"(?:firm|compan|platform|giant)|"
+        r"(?:target(?:s|ed|ing)?) (?:\w+ )?(?:American |US |U\.S\. )?"
+        r"(?:firm|compan|platform|giant))\b",
+        re.IGNORECASE,
+    ),
+    # "across the Atlantic" / "transatlantic" regulatory language
+    re.compile(
+        r"\b(?:(?:from |across )?(?:the )?Atlantic|transatlantic)\b"
+        r".{0,60}?"
+        r"\b(?:criticism|concern|pressure|tension|friction|pushback|"
+        r"free speech|censorship|regulation)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+
+_DEVICE_PATTERNS["geopolitical_regulatory_pressure"] = (
+    _GEOPOLITICAL_REGULATORY_PRESSURE_PATTERNS
+)
+
+
+# ---------------------------------------------------------------------------
 # Self-referential investigation: editorial device where a publication
 # cites its own prior investigations or discoveries within an article,
 # positioning itself as an investigative authority.  Common in Wired,
@@ -1083,6 +1215,63 @@ _SELF_REFERENTIAL_INVESTIGATION_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["self_referential_investigation"] = (
     _SELF_REFERENTIAL_INVESTIGATION_PATTERNS
 )
+
+
+# ---------------------------------------------------------------------------
+# Sovereignty framing: editorial device deploying national/patriotic
+# identity language ("British families", "American innovation",
+# "our children") to reframe tech regulation (or its opposition) as
+# patriotic duty vs foreign interference.  Common in Guardian UK-centric
+# coverage and NYT US-exceptionalism coverage.  Distinct from loaded
+# language — sovereignty framing is a strategic deployment of national
+# identity to delegitimize foreign corporate/government positions, not
+# mere emotional vocabulary.
+# ---------------------------------------------------------------------------
+_SOVEREIGNTY_FRAMING_PATTERNS: list[re.Pattern] = [
+    # "British/American/our [families/children/citizens/consumers/workers]"
+    # in tech regulation context
+    re.compile(
+        r"\b(?:British|American|our|this country'?s|the nation'?s)\s+"
+        r"(?:families|children|kids|young people|parents|consumers|"
+        r"citizens|workers|people|users|public|interests?|sovereignty|"
+        r"national interest|values)\b",
+        re.IGNORECASE,
+    ),
+    # "national interest" / "national security" near tech/regulation
+    re.compile(
+        r"\b(?:national interest|national security|sovereign(?:ty)?|"
+        r"domestic (?:regulation|law|standards|policy))\b"
+        r".{0,120}?"
+        r"\b(?:tech|platform|social media|Silicon Valley|"
+        r"big tech|American (?:tech|compan)|"
+        r"Meta|Google|Apple|Amazon|Microsoft|Facebook)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse: tech companies near sovereignty language
+    re.compile(
+        r"\b(?:tech|platform|social media|Silicon Valley|"
+        r"big tech|American (?:tech|compan)|"
+        r"Meta|Google|Apple|Amazon|Microsoft|Facebook)\b"
+        r".{0,120}?"
+        r"\b(?:national interest|national security|sovereign(?:ty)?|"
+        r"domestic (?:regulation|law|standards|policy))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "act in the [UK's/nation's/country's] interest"
+    re.compile(
+        r"\bact in (?:the )?(?:UK'?s|Britain'?s|America'?s|nation'?s|"
+        r"country'?s|our|the) (?:national )?interest\b",
+        re.IGNORECASE,
+    ),
+    # "will not deter/stop/prevent [the UK/us/Britain/America]"
+    re.compile(
+        r"\bwill not (?:deter|stop|prevent|intimidate|pressure)\s+"
+        r"(?:the UK|Britain|us|America|this (?:government|country))\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["sovereignty_framing"] = _SOVEREIGNTY_FRAMING_PATTERNS
 
 
 # ---------------------------------------------------------------------------
@@ -1280,7 +1469,7 @@ def _detect_speculative_framing(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for patterns associated with 22 types of editorial framing:
+    Scans for patterns associated with 23 types of editorial framing:
     guilt_by_association, anonymous_authority, catastrophizing,
     false_balance, selective_omission_signal, emotional_appeal,
     straw_man, loaded_language, refusal_amplification,
@@ -1288,7 +1477,8 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     military_techno_optimism, selective_rehabilitation,
     rhetorical_question, ironic_quotation, analogy_stacking,
     speculative_framing, isolation_framing, pressure_language,
-    and self_referential_investigation.
+    geopolitical_regulatory_pressure,
+    self_referential_investigation, and kicker_framing.
 
     Args:
         text: The article text to analyze.
