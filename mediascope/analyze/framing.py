@@ -296,8 +296,9 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"\b(?:embattled|beleaguered|troubled|scandal-plagued|"
         r"controversial|notorious|disgraced|under fire|"
         r"under siege|besieged|defiant|brazen|arrogant|"
-        r"tone-deaf|out of touch|nefarious|"
-        r"comically|laughably|absurdly)\b",
+        r"tone-deaf|out of touch|nefarious|scandalous|"
+        r"comically|laughably|absurdly|laughable|"
+        r"dishonest|dishonesty|fundamentally\s+(?:dishonest|unethical|flawed|problematic))\b",
         re.IGNORECASE,
     ),
     # Scare quotes / hedging language that undermines
@@ -338,7 +339,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"assembly line|human assembly line|data factory|"
         r"draftees?|drafted|disposable|"
         r"menial|dehumanizing|atrocious|brutal|"
-        r"exploitation|slave|sweatshop|"
+        r"exploitation|slave|slavery|sweatshop|"
         r"belittled?|berated?|belittling|berating|"
         r"cruel|cruelty|grim|grimly|"
         r"rock.?bottom|historically low|"
@@ -353,6 +354,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
     re.compile(
         r"\b(?:pervert|perverted|perverts|"
         r"predatory|predator|predators|"
+        r"preying|preys?\s+on|prey\s+on|"
         r"prowling|prowl|prowls|"
         r"creep|creepy|creeps|"
         r"stalking|stalker|stalkers|stalk|"
@@ -447,6 +449,22 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"puppy\s+(?:eager|like)|"
         r"blindly\s+(?:follow|obey|comply)|"
         r"rubber.?stamp(?:ing|ed)?)\b",
+        re.IGNORECASE,
+    ),
+    # Dismissive / trivializing language — terms that reduce serious claims,
+    # products, or positions to performance, pretence, or marketing noise
+    re.compile(
+        r"\b(?:hype(?:d(?:\s+up)?)?|"
+        r"make.?believe|game\s+of\s+make.?believe|"
+        r"play\s+along|playing\s+pretend|"
+        r"fantas(?:y|ies|ize)|indulge|indulging|"
+        r"abdicate(?:d|s|ing)?\s+(?:their|its|his|her|our|your|the)?\s*responsibilit|"
+        r"abdicat(?:ed?|ing|ion)|"
+        r"charade|theatre|theater|"
+        r"parlor\s+trick|party\s+trick|"
+        r"hand.?wav(?:ing|y)|smoke\s+and\s+mirrors|"
+        r"window\s+dressing|lip\s+service|"
+        r"fig\s+leaf)\b",
         re.IGNORECASE,
     ),
 ]
@@ -866,6 +884,41 @@ _RHETORICAL_QUESTION_PATTERNS: list[re.Pattern] = [
     # "What was X even doing?" / "What were they even thinking?"
     re.compile(
         r"\bwhat (?:was|were|is|are) .{3,30}? even .{3,30}?\?",
+        re.IGNORECASE,
+    ),
+    # "Should we (seriously/really) consider/believe/accept...?" — philosophical challenge
+    re.compile(
+        r"\bshould (?:we|anyone|one|you) (?:seriously |really |actually )?(?:consider|believe|think|accept|take|trust|pretend|worry)\b.{3,80}?\?",
+        re.IGNORECASE,
+    ),
+    # "Has anything (fundamentally/really) changed/shifted...?" — dismissive
+    re.compile(
+        r"\bhas (?:anything|something|this|that|it) (?:fundamentally |really |actually |truly )?(?:changed|shifted|improved|altered)\b.{3,60}?\?",
+        re.IGNORECASE,
+    ),
+    # "How is this/that [adj], given that...?" — incredulous challenge
+    re.compile(
+        r"\bhow is (?:this|that|it) (?:\w+ )?(?:appropriate|reasonable|justified|ethical|acceptable|responsible|honest|defensible).{0,60}?\?",
+        re.IGNORECASE,
+    ),
+    # "What are we to make of...?" — reflective/judgmental
+    re.compile(
+        r"\bwhat (?:are|is) (?:we|one|anyone) to (?:make|think) of\b.{3,60}?\?",
+        re.IGNORECASE,
+    ),
+    # "So why are/is/do/does...?" — dismissive "So" opener
+    re.compile(
+        r"\bso why (?:are|is|do|does|did|would|should|hasn't|haven't|isn't|aren't)\b.{3,80}?\?",
+        re.IGNORECASE,
+    ),
+    # "Is [entity] going to...?" — accountability challenge
+    re.compile(
+        r"\bis \w+ going to\b.{3,60}?\?",
+        re.IGNORECASE,
+    ),
+    # "Who is [X]'s [Y]?" — legalistic/categorical challenge
+    re.compile(
+        r"\bwho is .{3,40}?\?",
         re.IGNORECASE,
     ),
 ]
@@ -1540,6 +1593,15 @@ _SPECULATIVE_FRAMING_PATTERNS: list[re.Pattern] = [
     re.compile(
         r"\b(?:if\s+(?:\w+\s+){0,3}(?:were to|wanted to|chose to|decided to)"
         r"|were\s+(?:\w+\s+){0,2}to\s+(?:\w+))\b",
+        re.IGNORECASE,
+    ),
+    # Explicit hypothetical markers — "for the sake of argument", "let's pretend"
+    re.compile(
+        r"\b(?:for the sake of argument|purely for the sake of argument|"
+        r"let'?s (?:pretend|imagine|suppose|say|assume|hypothesize)|"
+        r"(?:in (?:a|this|that|such a) )?hypothetical (?:scenario|situation|world|case)|"
+        r"thought experiment|"
+        r"just for argument'?s? sake)\b",
         re.IGNORECASE,
     ),
 ]

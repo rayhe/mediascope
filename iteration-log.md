@@ -1863,3 +1863,66 @@ The toolkit scored overall_tone +0.61 on a clearly adversarial (-0.65 manual) ar
 ### Files
 - `examples/sample_output/wired_vs_reuters_mci_data_exposure_2026_06_22_cross_analysis.md` (new)
 - Modified: `mediascope/analyze/framing.py`, `tests/test_nyt_ai_reviews.py`, `docs/METHODOLOGY.md`, `README.md`
+
+---
+
+## 2026-06-25 05:00 PT — Hour Type A: Article Deep Dive
+
+### Focus: The Atlantic — "No, Artificial Intelligence Is Not Conscious" by Ted Chiang (~June 3, 2026)
+
+### Article Profile
+~4,200-word philosophical essay arguing LLMs aren't conscious. Critiques Anthropic's Claude "constitution" (84-page document governing Claude's behavior) as dishonest anthropomorphism. Uses extensive analogies (slot machines, RPG character sheets, Alpha Centauri thought experiment) and rhetorical questions to build argument. Author is a MacArthur Fellow and fiction writer known for "Story of Your Life" (basis for Arrival).
+
+Source: The Atlantic, retrieved via Wayback Machine.
+
+### Gaps Found & Fixed
+
+#### 1. Entity detection (`mediascope/analyze/entities.py`):
+- **Amanda Askell** added to Anthropic cluster (Anthropic's in-house philosopher, mentioned 4x)
+- **AlphaFold** added to Google cluster + Google regex expanded to match compound product names
+- **New Yorker** added to Media/Publications cluster
+- **IBM cluster** created (IBM, Deep Blue, Watson, Red Hat) — not in this article but referenced in analysis
+- **Sora 2** added to OpenAI cluster
+
+#### 2. Loaded language expansion (`mediascope/analyze/framing.py`):
+- Added `preying` / `preys on` / `prey on` to privacy-predation pattern (was missing despite `predatory` being present)
+- Added `slavery` to workplace loaded terms (only `slave` existed — `\bslave\b` doesn't match "slavery")
+- **New dismissive/trivializing pattern** (12 terms): `hype`, `make-believe`, `game of make-believe`, `play along`, `playing pretend`, `fantasy/fantasies/fantasize`, `indulge/indulging`, `abdicate responsibilities`, `charade`, `theatre/theater`, `parlor trick`, `hand-waving`, `smoke and mirrors`, `window dressing`, `lip service`, `fig leaf`
+
+#### 3. Rhetorical question expansion:
+Added 8 new patterns for philosophical/essay-form questions:
+- "Should we (seriously/really) consider/believe/accept...?" — philosophical challenge
+- "Has anything (fundamentally) changed/shifted...?" — dismissive rhetorical
+- "How is this/that [adj], given that...?" — incredulous challenge
+- "What are we to make of...?" — reflective/judgmental
+- "So why are/is/do/does...?" — dismissive "So" opener
+- "Is [entity] going to...?" — accountability challenge
+- "Who is...?" — legalistic/categorical challenge
+
+#### 4. Speculative framing expansion:
+Added explicit hypothetical markers pattern:
+- "for the sake of argument" / "purely for the sake of argument"
+- "let's pretend/imagine/suppose/say/assume/hypothesize"
+- "hypothetical scenario/situation/world/case"
+- "thought experiment"
+- "just for argument's sake"
+
+### Results
+| Metric | Before fixes | After fixes |
+|--------|-------------|-------------|
+| Entity mentions | ~53 | 58 (+5) |
+| Entity clusters | 3 | 4 (+Media/Pubs) |
+| Framing devices | 1 | 20 (+19) |
+| Framing device types firing | 1 | 3 (+rhetorical_question, +analogy_stacking) |
+
+### Key Insight
+The toolkit was designed primarily for news-article framing (journalistic implications, editorial positioning). Long-form opinion essays by named authors use a different framing vocabulary — philosophical argument, rhetorical questions, and analogy stacking rather than anonymous sourcing and selective omission. This iteration bridges that gap, making the toolkit useful for analyzing essay-form AI criticism alongside standard news coverage.
+
+### Test Results
+- **268/268 passing** (all existing tests pass with new patterns)
+
+### Files
+- `mediascope/analyze/entities.py` — 5 entity cluster additions
+- `mediascope/analyze/framing.py` — loaded_language +1 pattern (dismissive/trivializing), rhetorical_question +8 patterns, speculative_framing +1 pattern, predation/workplace term additions
+- `examples/sample_output/atlantic_ai_not_conscious_2026_06_article.txt` — new article text
+- `examples/sample_output/atlantic_ai_not_conscious_2026_06_analysis.md` — new analysis with pre/post comparison

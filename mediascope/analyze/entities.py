@@ -55,8 +55,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         "aliases": [
             "Alphabet", "Google", "YouTube", "DeepMind", "Waymo",
             "Sundar Pichai", "Gemini", "Google Cloud", "Android",
+            "AlphaFold",
         ],
-        "regex": r"(?<!\w)(Alphabet|Google(?!\s+(?:Sheet|Doc|Drive|Form|Search))|YouTube|DeepMind|Waymo|Sundar Pichai|Gemini|Google Cloud|Android)(?!\w)",
+        "regex": r"(?<!\w)(Alphabet|Google(?!\s+(?:Sheet|Doc|Drive|Form|Search))|YouTube|DeepMind|Waymo|Sundar Pichai|Gemini|Google Cloud|Android|AlphaFold)(?!\w)",
     },
     "Apple": {
         "aliases": [
@@ -82,7 +83,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
     "OpenAI": {
         "aliases": [
             "OpenAI", "Sam Altman", "ChatGPT", "GPT-4", "GPT-5",
-            "DALL-E", "Sora", "GPT-4o", "Stargate",
+            "DALL-E", "Sora", "GPT-4o", "Stargate", "Sora 2",
         ],
     },
     "X/Twitter": {
@@ -99,8 +100,14 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
     "Anthropic": {
         "aliases": [
             "Anthropic", "Dario Amodei", "Daniela Amodei", "Claude",
-            "Mythos", "Project Glasswing",
+            "Mythos", "Project Glasswing", "Amanda Askell",
         ],
+    },
+    "IBM": {
+        "aliases": [
+            "IBM", "Deep Blue", "Watson", "Red Hat",
+        ],
+        "regex": r"(?<!\w)((?-i:IBM)|Deep Blue|Watson|Red Hat)(?!\w)",
     },
     "US Government": {
         "aliases": [
@@ -158,6 +165,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "TechCrunch", "The Verge", "Ars Technica",
             "The Information",
             "Business Insider", "404 Media",
+            "The New Yorker", "New Yorker",
         ],
     },
     "Whistleblowers/Critics": {
