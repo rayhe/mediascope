@@ -4,6 +4,55 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-24 18:00 PT — Hour Type D: Toolkit Quality & Documentation
+
+**Focus:** Comprehensive overhaul of ADDING_PUBLICATIONS.md (weakest doc file, 68 → 678 lines), plus README Testing section and ARCHITECTURE test annotations.
+
+### What was improved:
+
+1. **ADDING_PUBLICATIONS.md — complete rewrite (10x expansion):**
+   - **Complete reference for ALL 12 profile sections** (was documenting only 5):
+     - `known_conflicts`: severity scale (1-5), conflict types, evidence requirements, real examples from Wired profile
+     - `editorial_leadership`: field descriptions, why ITS analysis needs stance documentation
+     - `key_journalists`: what to document, who to prioritize
+     - `bias_ratings`: Ad Fontes (0-64 reliability, -42/+42 bias), AllSides (5-point), MBFC scales documented
+     - `ai_crawl_policy`: what crawler permissions imply about licensing deals
+     - `litigation_connections`: types (funder/plaintiff/connected_party), PACER/UK CAT sources
+     - `internal_ai_tools`: "hypocrisy index" analytical value, NYT as example
+     - `editorial_stance`: how to document positions with evidence
+   - **New section: Adding Career Data** — complete documentation of:
+     - `journalists.yaml` format: career event fields (8 fields documented with types/requirements), publication slugs for tracked publications, how non-tracked publications work
+     - Priority order for who to add: cross-publication migrants > multi-outlet > beat leads > recent hires
+     - `editorial_changes.yaml` format: leadership change fields, why notes matter for ITS
+   - **Research workflow:** step-by-step (5 steps, ~6 hours), specific sources for each section
+   - **Expanded validation:** YAML validity check commands, 10-item completeness checklist, 8 quality standards for repo contributions
+   - **Revenue relationships:** compound relationship documentation (NYT Amazon example), documenting absence of relationships as analytically significant
+   - **FAQ:** 5 questions covering paywalled pubs, opaque ownership, complex corporate structures, false-positive entity detection, departed journalists
+   - **Examples:** minimal profile (Fox News, 3-entity chain) + reference to wired.yaml as complete profile
+
+2. **README.md — Testing section + gallery update:**
+   - New "Testing" section: 236 tests across 8 test files, table describing each file's coverage
+   - Test execution commands (pytest -v, -k keyword, specific file)
+   - Regression test requirement noted for all analysis improvements
+   - Bosworth reorg article added to Sample Output Gallery (was missing — `wired_meta_bosworth_atrocious_reorg_2026_06_16_*`)
+
+3. **ARCHITECTURE.md — test file annotations:**
+   - File Layout tree updated: 8 test files annotated with analytical coverage areas
+   - Explicit test count (236) added to tests directory entry
+
+### Why ADDING_PUBLICATIONS.md:
+This was the weakest documentation file — the actual Wired profile uses 12 different YAML sections, but the guide only documented 5. Anyone trying to add a new publication would have to reverse-engineer the existing profiles to figure out `known_conflicts`, `editorial_leadership`, career data formats, etc. The guide is now comprehensive enough that a contributor (human or AI agent) can build a complete profile from scratch without examining existing profiles.
+
+### Stats:
+- ADDING_PUBLICATIONS.md: 68 → 678 lines (+897%)
+- README.md: +29 lines (Testing section + gallery entry)
+- ARCHITECTURE.md: +9 lines (test annotations)
+- Tests: 236/236 passing (no code changes)
+- Commit: `5aab6be`
+- Pushed to GitHub: ✅
+
+---
+
 ## 2026-06-24 17:00 PT — Hour Type C: Ownership & Funding Deep Dive
 
 **Focus:** NYT — three major gaps in the ownership/funding profile. Carlos Slim's 25.1% Class A shareholding (entirely missing), compound Amazon dependency via Wirecutter affiliate revenue ($70-125M+/yr, previously documented at only $20-25M/yr AI deal), and Amazon's March 2026 affiliate commission cuts (up to 50%, directly impacting NYT revenue).
