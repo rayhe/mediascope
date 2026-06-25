@@ -4,6 +4,79 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-24 17:00 PT — Hour Type C: Ownership & Funding Deep Dive
+
+**Focus:** NYT — three major gaps in the ownership/funding profile. Carlos Slim's 25.1% Class A shareholding (entirely missing), compound Amazon dependency via Wirecutter affiliate revenue ($70-125M+/yr, previously documented at only $20-25M/yr AI deal), and Amazon's March 2026 affiliate commission cuts (up to 50%, directly impacting NYT revenue).
+
+### What was improved:
+
+1. **Carlos Slim / Control Empresarial de Capitales — new ownership_chain entry:**
+   - SEC Schedule 13G/A filed February 9, 2026 (signed by Marco Antonio Slim Domit as Attorney-in-Fact)
+   - Control Empresarial de Capitales S.A. de C.V. owns 29,123,098 Class A Common Shares
+   - = 25.1% of 115,847,488 outstanding Class A shares (per Form 10-Q filed Oct 30, 2025)
+   - LARGEST INDIVIDUAL SHAREHOLDER of any tracked publication
+   - Value: ~$2.07B at $71.22/share (Jun 24, 2026)
+   - Slim Family: Carlos Slim Helú, Carlos/Marco Antonio/Patrick Slim Domit, 3 daughters — beneficiaries of Mexican trust owning all voting equity of Control Empresarial
+   - History: $250M emergency loan at 14.05% interest (Jan 2009) during NYT near-bankruptcy, converted to equity, sold ~1.5M shares in 2017-18, position grew from ~17% to 25.1% partly via NYT share buybacks reducing denominator
+   - Files as 13G (passive) — no board seats, no known editorial influence
+   - Carlos Slim: net worth ~$99.1B (Bloomberg Jul 2025, 18th globally), core fortune from Telmex/América Móvil telecom monopoly
+   - Sources: SEC EDGAR (0001140361-26-004396), Wikipedia
+   - Added as new known_conflict entry (severity 2)
+
+2. **Compound Amazon dependency ($70-125M+/yr) — new wirecutter_affiliate_revenue section + amazon_affiliate_commission_cuts_2026 section:**
+   - FY2025 "Affiliate, licensing and other revenues" = $308.1M (10.9% of total $2,824.9M revenue)
+   - Quarterly breakdown: Q1 ~$69.9M, Q2 $70.5M, Q3 ~$67.5M, Q4 $100.2M (holiday spike)
+   - Amazon AI licensing deal ($20-25M/yr, started May 2025) contributed ~$13-17M in FY2025 (partial year)
+   - Remaining $291-295M is primarily Wirecutter affiliate + other licensing
+   - Wirecutter acquired for $30M (2016), made $20M+ in 2018 alone (Ahrefs)
+   - CJR reported NY Mag's Strategist got 80%+ of affiliate revenue from Amazon — Wirecutter likely similar
+   - Combined Amazon exposure: $70-125M+/yr = LARGEST tech company dependency in 5-publication set
+   - Sources: NYT FY2025 10-K (SEC EDGAR), Ahrefs case study, CJR, Digiday, Poynter
+
+3. **Amazon affiliate commission cuts (March 2026) — new section:**
+   - Amazon restructured Associates program starting March 9, 2026 (U.S.)
+   - Premium rates (up to 10%) reset to 4-5%
+   - Milestone-based incentive tiers eliminated for most publishers
+   - Year-over-year performance bonuses gutted
+   - Reporting tools degraded
+   - NEVER publicly announced — publishers learned from account manager conversations
+   - One deal-site publisher revised 2026 Amazon revenue forecast down 50%
+   - 7 publishers/partners confirmed to Adweek
+   - Source: Adweek (Mark Stenberg, ~May 17 2026)
+   - Creates a dynamic where Amazon is simultaneously squeezing (affiliate cuts) and subsidizing (AI licensing) NYT
+
+4. **Revenue relationship upgraded — Amazon:**
+   - Changed from `relationship_type: "ai_licensing"` to `"ai_licensing + affiliate_revenue (COMPOUND)"`
+   - Changed from `estimated_value: "$20-25M/year"` to `"$70-125M+/year (combined)"`
+   - Added 4 source URLs including SEC filing and Adweek
+   - Documented the timing dynamic: AI licensing signed May 2025, affiliate cuts March 2026
+
+5. **New conflict entries:**
+   - `compound_amazon_dependency` (severity 5) — Karen Weise covers Amazon while it pays NYT $70-125M+/yr. Most direct testable revenue/coverage conflict in dataset
+   - `major_shareholder_concentration` (severity 2) — Slim Family's 25.1% Class A stake, governance observation
+   - `no_meta_counterweight` updated to reference $70-125M+ compound figure
+
+6. **YAML parse fix:**
+   - Fixed pre-existing YAML validity error in `internal_ai_tools` section (mixed list/mapping under same key)
+   - Changed to `tools:` sub-key for the list entries
+   - YAML now parses cleanly
+
+### New analytical questions:
+1. Does Amazon coverage soften under the compound $70-125M+/yr dependency? Compare Karen Weise's pre-May-2025 vs post-May-2025 Amazon coverage tone
+2. Does the March 2026 affiliate commission cut change coverage posture? (Paradox: Amazon cutting NYT's income could embitter OR make NYT more deferential to protect AI deal)
+3. Does Q1 2026 reporting show Wirecutter revenue decline from affiliate cuts?
+4. How does Slim's 25.1% interact with Sulzberger dual-class control?
+
+### Stats:
+- NYT ownership chain: 3 → 4 entities (+33%)
+- NYT known conflicts: 4 → 6 (+50%)
+- YAML validity: FIXED (pre-existing parse error corrected)
+- Tests: 236/236 passing (no code changes, profile-only update)
+- Commit: `1817131`
+- Pushed to GitHub: ✅
+
+---
+
 ## 2026-06-24 16:00 PT — Hour Type B: Journalist/Publication Research
 
 **Focus:** The Guardian — expanded from 8 to 10 tracked journalists and 9 to 12 editorial changes. Guardian had the biggest coverage gap: only 3 active tech journalists tracked (Dan Milmo, Johana Bhuiyan, Blake Montgomery) despite being one of the most analytically important publications for the Meta coverage bias project. Four journalists had departed since 2024 (Alex Hern → Economist, Kari Paul → art school, Samantha Oltman → Bloomberg, Hibaq Farah → NYT).
