@@ -335,7 +335,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **268 tests** across 8 test files, each covering a different analytical capability:
+MediaScope has **398 tests** across 14 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -347,6 +347,10 @@ MediaScope has **268 tests** across 8 test files, each covering a different anal
 | `test_nyt_article_improvements.py` | NYT-specific article analysis fixes: active-negative agency, workplace coercion language, investment-near-layoffs juxtaposition, source stop-word filter |
 | `test_nyt_ai_reviews.py` | NYT AI voluntary review article: isolation framing, pressure language, regulatory passive framing, VADER positive-bias correction |
 | `test_platform_death.py` | Platform eulogy detection, melancholic vs hostile tone distinction, community source framing |
+| `test_quality_standards.py` | Quality enforcement: banned AI-slop phrase detection (case-sensitive/insensitive), em dash limit enforcement, counterargument/limitations/methodology signal detection, score calculation, pass/fail logic |
+| `test_citations.py` | Citation extraction: URL detection, source grading (primary/secondary/tertiary domain lists), domain extraction, attribution patterns ("according to"), formal citations ([1], (Author 2024)), deduplication, citation report statistics |
+| `test_topics.py` | Topic classification: all 11 standardized topic buckets, confidence scoring (keyword coverage + density), top-N filtering, custom topic injection, multi-topic articles, edge cases |
+| `test_claims.py` | Claim-evidence mapping: statistic detection (percentages, dollar amounts, multipliers), quote detection, citation signal detection, assertion detection, source attribution, claim mapping, unsupported claims ratio, confidence scoring |
 
 ```bash
 # Run all tests
@@ -357,6 +361,12 @@ python3 -m pytest tests/test_source_stance.py -v
 
 # Run tests matching a keyword
 python3 -m pytest tests/ -k "kicker" -v
+
+# Run only quality enforcement tests
+python3 -m pytest tests/test_quality_standards.py tests/test_citations.py tests/test_claims.py -v
+
+# Run only topic classification tests
+python3 -m pytest tests/test_topics.py -v
 ```
 
 Every article analysis improvement requires at least one regression test before it can be committed. Tests use real article excerpts from the `examples/sample_output/` directory.
