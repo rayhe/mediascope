@@ -335,7 +335,7 @@ def _build_patterns(
         # multiple whitespace in article text (e.g. "The New York\nTimes")
         escaped = re.sub(r"\\ ", r"\\s+", escaped)
         pattern = re.compile(
-            rf"(?<!\w){escaped}(?!\w)",
+            rf"(?<!\w){escaped}(?![\w]|-(?:like|esque|style|inspired|adjacent)\b)",
             re.IGNORECASE,
         )
         alias_patterns.append((pattern, canonical, cluster))

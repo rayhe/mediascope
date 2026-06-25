@@ -1772,3 +1772,52 @@ The toolkit scored overall_tone +0.61 on a clearly adversarial (-0.65 manual) ar
 - `examples/sample_output/gizmodo_vs_wired_glasses_launch_2026_06_23_analysis.md` (comparative analysis)
 - `tests/test_scale_magnitude.py` (new test file)
 - Modified: `mediascope/analyze/framing.py`, `docs/METHODOLOGY.md`, `tests/test_nyt_ai_reviews.py`
+
+---
+
+## 2026-06-25 03:00 PT — Hour Type A: Article Deep Dive
+
+### Focus: Reuters × Emily Dalton Smith Departure (2026-06-17)
+
+**Article:** "Meta head of product for 'AI for work' transformation is leaving company" — Reuters wire story reporting Emily Dalton Smith's departure from Meta, where she led the "AI for Work" initiative and Metamate internal AI assistant. First Reuters article analyzed in the toolkit; provides a natural comparison baseline against Wired's editorial coverage of the same Meta restructuring events.
+
+### Manual Assessment
+- Overall tone: -0.15 (mildly negative — facts are inherently negative but Reuters maintains flat emotional register)
+- Key loaded language: "uproar" (employee characterization), "tantamount to helping design their own bot replacements" (employee-attributed framing)
+- Framing comparison: Reuters tone gap from neutral (-0.15) is less than half of Wired's (-0.30 to -0.45) on the same events, confirming the publication DNA hypothesis
+
+### Toolkit Gaps Found
+1. **"Uproar"** and **"backlash"** were not in loaded_language patterns
+2. **"Tantamount to"** (legitimacy-stripping equivalence construction) was missing
+3. **"Helping design their own bot replacements"** variant of "training their own replacements" was missing
+4. **Twitter-like false positive:** "Twitter-like microblogging app Threads" incorrectly triggered X/Twitter entity match — descriptive comparison, not entity reference
+5. **Sentiment overcorrection:** Post-fix overall_tone -0.452 overcorrects from raw +0.275 (manual: -0.15). Framing correction magnitude needs severity weighting.
+6. **Headline-body alignment:** 0.300 score on a genuinely well-aligned neutral article — metric calibrated for editorial articles, not neutral wire-service reporting
+7. **Missing entities:** Emily Dalton Smith (7 mentions), Manus, Metamate, China/Chinese government — not in default clusters
+
+### Code Changes
+
+1. **Loaded language pattern expansion** (`mediascope/analyze/framing.py`):
+   - Added `uproar|backlash` to employee revolt pattern
+   - Added `tantamount\s+to` to employee revolt pattern
+   - Added `(?:help(?:ing)?|design(?:ing)?)\s+(?:their|your|our|its)\s+(?:own\s+)?(?:bot\s+)?replacements?` variant
+
+2. **Entity false positive fix** (`mediascope/analyze/entities.py`):
+   - Changed alias pattern lookahead from `(?!\w)` to `(?![\w]|-(?:like|esque|style|inspired|adjacent)\b)`
+   - Prevents entity matches in descriptive comparisons (Twitter-like, Uber-esque, Apple-style)
+
+3. **New test file: `tests/test_loaded_language_uproar.py`** — 13 tests covering:
+   - Uproar/backlash detection (3 tests)
+   - Tantamount detection (2 tests)
+   - Helping/designing replacements (2 tests)
+   - Twitter-like false positive fix (4 tests)
+   - Negative false positive checks (2 tests)
+
+### Test Results
+- **268/268 passing** (was 255; +13 new)
+
+### Files
+- `examples/sample_output/reuters_meta_dalton_smith_departure_2026_06_17_article.txt`
+- `examples/sample_output/reuters_meta_dalton_smith_departure_2026_06_17_analysis.md`
+- `tests/test_loaded_language_uproar.py` (new)
+- Modified: `mediascope/analyze/framing.py`, `mediascope/analyze/entities.py`

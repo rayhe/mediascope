@@ -405,12 +405,15 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
     re.compile(
         r"\b(?:revolt(?:ed|ing|s)?|"
         r"rebellion|rebel(?:led|ling)?|"
+        r"uproar|backlash|"
         r"protest(?:ed|ing|s)?|petition(?:ed|ing|s)?|"
         r"flyers?|leaflets?|"
         r"countdown\s+to\s+(?:layoff|the\s+layoff)|"
         r"counting\s+down\s+to|"
         r"nihilistic|dystopian|Orwellian|Kafkaesque|"
+        r"tantamount\s+to|"
         r"train(?:ing)?\s+(?:their|your|our|its)\s+(?:own\s+)?replacements?|"
+        r"(?:help(?:ing)?|design(?:ing)?)\s+(?:their|your|our|its)\s+(?:own\s+)?(?:bot\s+)?replacements?|"
         r"training\s+(?:the\s+)?AI\s+(?:that\s+)?(?:will\s+)?replace)\b",
         re.IGNORECASE,
     ),

@@ -1,0 +1,33 @@
+Meta head of product for 'AI for work' transformation is leaving company
+
+Reuters | June 17, 2026
+
+A Meta (META.O) executive overseeing a key piece of its AI-related restructuring is leaving the company, according to an internal announcement seen by Reuters on Wednesday.
+
+Emily Dalton Smith, who has been with the Facebook owner since 2015, previously held roles as a vice president of product management and head of product for Meta's Twitter-like microblogging app Threads.
+
+Her departure comes about two months after Meta told employees she would be leading product work to improve internal AI tooling as part of a company-wide overhaul to center AI in both its user-facing offerings and its approach to internal work.
+
+The restructuring, aimed at developing AI agents that could autonomously carry out tasks currently performed by human staffers, has caused an uproar among Meta employees.
+
+Staffers have openly criticized executives in company meetings and on message boards regarding the initiative, which has involved laying off 10% of the workforce, transferring nearly as many employees to new units, and introducing mouse-tracking software that many employees see as tantamount to helping design their own bot replacements.
+
+Dalton Smith's unit, or "pod," would be focused on "the interfaces, platform components, memory systems, automations and shared product experiences that make AI useful for everyone," Meta CTO Andrew Bosworth said in a memo laying out the Agent Transformation Accelerator (ATA) plan in April.
+
+That included responsibility for Metamate, Meta's main internal enterprise AI assistant.
+
+A Meta spokesperson declined to comment on whether Dalton Smith was leaving the company, but said Meta was continuing to incorporate AI tooling into Metamate.
+
+Dalton Smith told Meta employees in a separate memo about ATA last month that executives were aiming to consolidate the company's internal-use AI tools into Metamate, recognizing that its existing set of tools was fragmented.
+
+"Our goal is to make Metamate the starting point for all kinds of work — from doing deep research to prototyping a new feature to putting together a sales presentation," she wrote.
+
+Her team was planning to pull in functionality from AI systems that can navigate work files, enable coding coordination from chats, and retain "persistent memory" of people's work, she said.
+
+She said the team would also incorporate "polished dashboards and microsites" including those from Manus, a Singapore-based AI agent startup Meta acquired for around $2 billion in December.
+
+The inclusion of Manus-like features in the project has made it especially sensitive, as the Chinese government ordered the unwinding of the deal in April and Meta subsequently cut off the tool's access to its internal systems while working through its response.
+
+Dalton Smith said in her memo that her team was expecting the new features to be available inside Metamate as of June 1.
+
+In her announcement on Wednesday, she said that she would stay on at Meta to work with Bosworth on transitioning the team to "what's next," without elaborating.
