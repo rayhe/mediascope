@@ -271,3 +271,17 @@ editorial_changes:
       date: "2025-01"
       source_url: "https://www.technologyreview.com/author/zeyi-yang/"
       notes: "DEPARTURE: Zeyi Yang left MIT TR for Wired as senior writer (~Jan 2025). MIT TR author page uses past tense ('covered'). Created China Report newsletter. Won 2024 ASME NEXT Award. His departure leaves MIT TR without a dedicated China tech correspondent — a significant editorial gap given US-China tech competition is the decade's defining geopolitical tech story. 144 posts during tenure."
+
+    - position: "senior_ai_reporter"
+      outgoing: "Melissa Heikkilä"
+      incoming: "James O'Donnell"
+      date: "2025-01"
+      source_url: "https://talkingbiznews.com/media-news/financial-times-hires-heikkila-as-ai-correspondent/"
+      notes: "KEY DEPARTURE + REPLACEMENT: Heikkilä departed for Financial Times as AI correspondent (started Jan 27, 2025) after 2.5 years at MIT TR (May 2022 – Jan 2025). Previously at POLITICO Europe, The Economist, Helsingin Sanomat. O'Donnell took over as senior AI reporter — his Brookings/Princeton policy background contrasts sharply with Heikkilä's EU regulatory lens. This is a notable editorial frame shift: from European regulatory analysis to American institutional power dynamics. MIT TR posted AI reporter job listing around this time. NOTE: Heikkilä then appeared as FT correspondent in MIT TR + FT 'State of AI' partnership (Oct 2025), paired with her former MIT TR colleague Eileen Guo — her departure may have catalyzed the partnership."
+
+    - position: "china_tech_reporter"
+      outgoing: null
+      incoming: "Caiwei Chen"
+      date: "2024-01"
+      source_url: "https://talkingbiznews.com/media-news/mit-tech-review-hires-chen-as-tech-reporter/"
+      notes: "REPLACEMENT: Chen hired from Rest of World to cover China tech. Filled gap created by Zeyi Yang's departure (or preceded it — timing unclear). Columbia MA. 5+ years covering Chinese internet. Part of Chaoyang Trap newsletter. Part of MIT TR + FT 'State of AI' partnership (paired with FT's John Thornhill on 'The US vs. China')."
