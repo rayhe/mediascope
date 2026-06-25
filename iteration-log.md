@@ -4,6 +4,58 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-24 22:00 PT — Hour Type A: Article Deep Dive
+
+**Focus:** Guardian article "Crackdown on tech platforms will go ahead despite US intervention, says No 10" (Dan Milmo & Jessica Elgot, 2026-06-09). Previously had article text but no analysis. Deep dive revealed a novel framing device pattern — sovereignty_framing — warranting new toolkit detection capability.
+
+### What was improved:
+
+1. **Full article analysis (134 lines):**
+   - 8-dimension manual sentiment scoring vs toolkit expectations
+   - 9 framing devices identified manually (4 not in toolkit vocabulary)
+   - Entity distribution: UK Govt 48%, US Govt 32%, Tech/Meta 20%
+   - Source imbalance: 6 pro-regulation voices, 0 tech company voices
+   - Conflict of interest assessment: Guardian's OpenAI licensing deal relevant but undisclosed (AI chatbot restrictions part of UK consultation)
+   - Comparison with how peer publications would frame the same story
+   - 3 toolkit improvement recommendations
+
+2. **NEW framing device type — sovereignty_framing (framing.py):**
+   - 5 regex patterns detecting national/patriotic identity language in tech regulation contexts
+   - Pattern 1: National adjective + people/families/interest ("British families", "our children", "American innovation")
+   - Pattern 2-3: "national interest/security" near tech entities (bidirectional)
+   - Pattern 4: "act in the [nation's] interest"
+   - Pattern 5: "will not deter/stop [nation]"
+   - Fires 5× on Guardian article (all true positives): "British young people", "British parents", "British families", "act in the UK's national interest", "will not deter the UK"
+   - Also fires on NYT AI reviews article (true positive: "national security" near Meta)
+   - Distinct from loaded_language — sovereignty framing is a strategic rhetorical technique that deploys national identity to delegitimize foreign corporate/government positions
+
+3. **Anonymous source detection improvements (sentiment.py):**
+   - Added UK-style passive institutional attribution: "it is understood that", "it is believed that", "it is thought that", "it has emerged that" — standard Guardian/UK press Lobby sourcing construction
+   - Added "one/a senior [party]? [title]" pattern for unnamed political/industry figures described by seniority + role (e.g., "one senior Republican congressman")
+
+4. **Test update (test_nyt_ai_reviews.py):**
+   - `test_total_device_types` updated from 3 → 4 expected device types to include sovereignty_framing (true positive match)
+
+### Why this article:
+The Guardian UK tech crackdown article was one of 4 articles with text but no analysis in the sample_output directory. As a co-byline from Guardian's global tech editor Dan Milmo, it reveals core Guardian editorial DNA: sovereignty framing, source imbalance, CEO personalization, and kicker positioning — all patterns that generalize across the Guardian's tech coverage.
+
+### Analytical insights:
+- **Sovereignty framing is the Guardian's primary rhetorical tool** for UK tech regulation coverage. By framing regulation as patriotic duty ("British families"), the article transforms corporate regulation into national defense, making any opposition (US government, Meta) appear anti-British.
+- **100% source imbalance** is not accidental. The article is ABOUT regulating tech platforms, yet no tech platform spokesperson is quoted. This "refusal by absence" is subtler than "declined to comment" and is not currently detected by the toolkit.
+- **Meta as kicker:** Meta appears only in the final paragraph, introduced solely as a legal challenger. The reader's last impression is Meta-as-litigant, regardless of the article's actual topic (UK-US diplomatic tension). Combined with CEO personalization ("Mark Zuckerberg's Meta"), this isolates Meta from the generic "tech platforms" discussed earlier.
+
+### Stats:
+- Analysis file: 134 lines, 15,271 bytes
+- framing.py: +64 lines (sovereignty_framing patterns)
+- sentiment.py: +21 lines (UK anonymous source patterns)
+- test_nyt_ai_reviews.py: +3/-1 lines (updated assertion)
+- Tests: 236/236 passing
+- Total device types: 22 → 23 (+sovereignty_framing)
+- Commit: `ebcf8e3`
+- Pushed to GitHub: ✅
+
+---
+
 ## 2026-06-24 18:00 PT — Hour Type D: Toolkit Quality & Documentation
 
 **Focus:** Comprehensive overhaul of ADDING_PUBLICATIONS.md (weakest doc file, 68 → 678 lines), plus README Testing section and ARCHITECTURE test annotations.
