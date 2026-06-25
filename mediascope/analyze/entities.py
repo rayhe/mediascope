@@ -53,8 +53,12 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Will Cathcart", "Cathcart",
             "Peter Bristol", "Bristol",
             "Muse Spark",
+            "Joel Kaplan", "Kaplan",
+            "Sheryl Sandberg", "Sandberg",
+            "Nick Clegg", "Clegg",
+            "Dina Powell McCormick",
         ],
-        "regex": r"(?<!\w)(Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport))|Meta Platforms|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|Meta AI|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Meta Superintelligence Labs|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark)(?!\w)",
+        "regex": r"(?<!\w)(Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport))|Meta Platforms|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|Meta AI|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Meta Superintelligence Labs|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark|Joel Kaplan|Kaplan|Sheryl Sandberg|Sandberg|Nick Clegg|Clegg|Dina Powell McCormick)(?!\w)",
     },
     "Google": {
         "aliases": [
@@ -128,6 +132,8 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Centers for Medicare & Medicaid Services", "CMS",
             "Edward Snowden", "Snowden",
             "Bureau of Alcohol Tobacco Firearms", "ATF",
+            "Securities and Exchange Commission", "SEC",
+            "Justice Department", "Department of Justice", "DOJ",
         ],
         "regex": r"(?<!\w)(Pentagon|Department of Defense|FBI|CIA"
                  r"|NSA|National Security Agency"
@@ -140,7 +146,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|Internal Revenue Service|(?-i:IRS)"
                  r"|Centers for Medicare & Medicaid Services|(?-i:CMS)"
                  r"|Edward Snowden|Snowden"
-                 r"|Bureau of Alcohol Tobacco Firearms|(?-i:ATF))(?!\w)",
+                 r"|Bureau of Alcohol Tobacco Firearms|(?-i:ATF)"
+                 r"|Securities and Exchange Commission|(?-i:SEC)"
+                 r"|Justice Department|Department of Justice|(?-i:DOJ))(?!\w)",
     },
     "Surveillance/Biometrics": {
         "aliases": [

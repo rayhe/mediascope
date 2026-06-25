@@ -696,8 +696,8 @@ _POWER_ASYMMETRY_PATTERNS: list[re.Pattern] = [
         r".{0,40}?"
         r"\$\d+"
         r".{0,60}?"
-        r"\b(?:per\s+(?:violation|breach|instance|day)|"
-        r"each\s+(?:violation|breach|instance)|"
+        r"\b(?:per\s+(?:\w+\s+)?(?:violation|breach|instance|day)|"
+        r"each\s+(?:\w+\s+)?(?:violation|breach|instance)|"
         r"bankrupt|ruin|devastat)\b",
         re.IGNORECASE | re.DOTALL,
     ),
@@ -747,8 +747,9 @@ _LITIGATION_FRAMING_PATTERNS: list[re.Pattern] = [
         r"\b(?:seeking|launched?|filed?|pursuing|mounting|initiated?|"
         r"brought|bringing|challenging|fighting)\s+"
         r"(?:a\s+)?(?:judicial review|legal challenge|legal action|lawsuit|"
-        r"court challenge|legal battle|antitrust challenge|"
-        r"constitutional challenge|injunction|appeal|class action)\b",
+        r"complaint|suit|counter.?suit|court challenge|legal battle|"
+        r"antitrust challenge|constitutional challenge|injunction|appeal|"
+        r"class action|arbitration|petition)\b",
         re.IGNORECASE,
     ),
     # "legal challenge against" — adversarial preposition
@@ -760,6 +761,17 @@ _LITIGATION_FRAMING_PATTERNS: list[re.Pattern] = [
     # "took/taking [entity] to court"
     re.compile(
         r"\b(?:took|taking|take|drag(?:ged|ging)?)\s+\w+\s+to\s+court\b",
+        re.IGNORECASE,
+    ),
+    # "is suing / sued / sues [entity]"
+    re.compile(
+        r"\b(?:is\s+)?su(?:ing|ed?|es)\s+(?:the\s+)?(?:[A-Z]\w+)",
+        re.IGNORECASE,
+    ),
+    # "arbitration ruling/order/process" — legal mechanism framing
+    re.compile(
+        r"\b(?:arbitration|arbitrator|severance)\s+"
+        r"(?:ruling|order|process|agreement|clause|hearing|proceeding)\b",
         re.IGNORECASE,
     ),
 ]

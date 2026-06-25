@@ -92,6 +92,12 @@ _NAME_STOP_FIRST_WORDS: set[str] = {
     "But", "And", "Also", "Still", "Yet", "Then", "Now",
     "Such", "Much", "Not", "Just", "Only", "Even",
     "Already", "Perhaps", "Maybe", "Certainly",
+    # Day names — "on Thursday argues" should not extract "Thursday" as source
+    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
+    "Saturday", "Sunday",
+    # Month names — "In January reported" should not extract "January"
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
 }
 
 # Publication / organization partial names that look like "First Last"
@@ -110,6 +116,9 @@ _NAME_STOP_NAMES: set[str] = {
     "Meta Glasses", "Meta Adventurer", "Meta Fury",
     "Meta Starfire", "Meta Quest", "Meta Horizon",
     "Ray Ban", "Smart Glasses", "Gentle Monster",
+    # Book/media titles that look like "First Last"
+    "Careless People", "Brave New", "Dark Web",
+    "Social Dilemma", "Social Network", "Deep State",
 }
 
 # Anonymous source indicators
