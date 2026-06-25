@@ -322,6 +322,7 @@ The `examples/sample_output/` directory contains annotated analyses of real arti
 | `wired_meta_bosworth_atrocious_reorg_2026_06_16_*` | Wired: Bosworth's "Atrocious" Reorg | Tone: -0.55 manual. Bosworth's own "atrocious" quote weaponized editorially. Tests ironic quotation framing — executive's candor reframed as damning admission. Self-referential investigation: cites own prior Applied AI reports as evidence. |
 | `wired_meta_rank_one_2026_06_15_*` | Wired Meta "Rank One" article | Earlier coverage establishing the pattern |
 | `wired_meta_mci_data_exposure_2026_06_22_*` | Wired: Meta Exposed Data Internally From Employee-Tracking Program | Breaking news piece on MCI security incident. Well-sourced factual reporting with embedded editorial choices that amplify institutional failure narrative. "We told you so" structure — positions data exposure as vindication of employee concerns. |
+| `wired_vs_reuters_mci_data_exposure_2026_06_22_*` | Cross-publication: Wired vs. Reuters MCI data exposure | Same-day, same-event framing comparison. Wired: 7+ framing devices (loaded headline, vindication narrative, CEO personalization, kicker framing). Reuters: 1 device (mild corporate_reassurance_undercut). Validates new `corporate_reassurance_undercut` device — fires on both with appropriate intensity differentiation. Demonstrates wire-service-as-baseline methodology. |
 | `nyt_meta_ai_employees_miserable_2026_05_08_*` | NYT: "Meta's Embrace of A.I. Is Making Its Employees Miserable" | First NYT example. Tone: +0.61 VADER (WRONG) → -0.37 corrected. **5 critical fixes:** active-negative agency detection, workplace coercion/revolt loaded language, investment-near-layoffs juxtaposition, source stop-word filter, framing-corrected headline alignment. Pre/post comparison demonstrates framing correction mechanism. |
 | `nyt_meta_prediction_markets_arena_2026_06_23_*` | NYT: Meta "Arena" prediction markets app scoop | Reconstructed from 5 secondary sources (Reuters, NY Post, IBD, Engadget, CNN). Tone: -0.10 manual. Near-neutral business scoop. **Key finding: toolkit blind spot on counted-anonymous source patterns** ("two employees said," "one person familiar") — 100% anonymous sourcing reads as 0%. Cross-publication comparison of same event: Engadget -0.70 vs Reuters +0.05 on same story, same day. |
 | `nyt_meta_ai_voluntary_review_2026_06_23_*` | NYT: U.S. presses Meta on AI reviews | Reconstructed from Reuters + secondary sources. Manual tone: -0.20. **Critical toolkit failure: VADER scored +0.61 (strongly positive)** on a clearly adversarial article using isolation framing ("the only major company that has not") and regulatory pressure language. **4 fixes applied:** isolation_framing + pressure_language added to adversarial device types; count_anonymous_sources excludes no_comment; 14 regulatory passive framing phrases added. Corrected tone: -0.57. 8 new tests (187 total). |
@@ -334,7 +335,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **239 tests** across 8 test files, each covering a different analytical capability:
+MediaScope has **268 tests** across 8 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|

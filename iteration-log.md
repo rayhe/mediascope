@@ -1821,3 +1821,45 @@ The toolkit scored overall_tone +0.61 on a clearly adversarial (-0.65 manual) ar
 - `examples/sample_output/reuters_meta_dalton_smith_departure_2026_06_17_analysis.md`
 - `tests/test_loaded_language_uproar.py` (new)
 - Modified: `mediascope/analyze/framing.py`, `mediascope/analyze/entities.py`
+
+---
+
+## 2026-06-25 04:00 PT — Hour Type A: Article Deep Dive
+
+**Focus:** Cross-publication framing comparison — Wired vs. Reuters on Meta MCI data exposure (2026-06-22)
+
+### Improvements
+
+1. **New framing device: `corporate_reassurance_undercut`** (`mediascope/analyze/framing.py`):
+   - Detects when corporate PR reassurance language ("carefully designed with privacy safeguards," "no indication of improper access," "committed to / takes seriously") is immediately undercut by adversarial conjunctions and contradicting evidence
+   - 5 regex patterns covering: careful-design + contradiction, privacy-safeguards + failure, no-indication + contradiction, committed-to + failure, not-primary-objective + contradiction
+   - Validated on both Wired and Reuters MCI articles — fires on both with appropriate intensity differentiation (strong in Wired's adversarial context, mild in Reuters' neutral context)
+
+2. **Updated `detect_framing_devices()` docstring** — now accurately lists all 25 pattern-matched types + 3 structural post-pass types (28 total). Previous docstring was stale at 23.
+
+3. **Registry test updates** (`tests/test_nyt_ai_reviews.py`):
+   - `test_pattern_based_device_count`: 24 → 25
+   - `test_all_expected_types_registered`: added `corporate_reassurance_undercut` to expected set
+
+4. **METHODOLOGY.md §4.1 updated** — framing device count 27 → 28; `corporate_reassurance_undercut` added to Extended Devices table with description, detection patterns, and provenance (Wired/Reuters MCI coverage).
+
+5. **Cross-publication analysis written** — `wired_vs_reuters_mci_data_exposure_2026_06_22_cross_analysis.md`:
+   - Structural comparison: headline framing ("Exposed" vs "Pause"), source architecture, employee voice selection, quantification strategy
+   - Framing device density: Wired 7+ devices vs Reuters 1 device
+   - Validates `corporate_reassurance_undercut` device on real cross-publication data
+   - Establishes wire-service-as-baseline methodology for future comparisons
+   - Documents Wired's "Model Compatibility Initiative" naming error (caught by Computerworld)
+
+6. **README.md updated** — test count 239 → 268; new example entry for cross-analysis
+
+### Test Results
+- **268/268 passing** (unchanged count; 2 registry tests fixed to match new device)
+
+### Stats
+- Pattern-based framing devices: 24 → 25
+- Total framing device types: 27 → 28 (25 pattern + 3 structural)
+- Example analyses: +1 cross-publication comparison
+
+### Files
+- `examples/sample_output/wired_vs_reuters_mci_data_exposure_2026_06_22_cross_analysis.md` (new)
+- Modified: `mediascope/analyze/framing.py`, `tests/test_nyt_ai_reviews.py`, `docs/METHODOLOGY.md`, `README.md`

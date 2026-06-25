@@ -1361,6 +1361,96 @@ _DEVICE_PATTERNS["scale_magnitude"] = _SCALE_MAGNITUDE_PATTERNS
 
 
 # ---------------------------------------------------------------------------
+# Corporate reassurance undercut: editorial device where a corporate PR
+# statement expressing safety, care, or responsible design is immediately
+# followed by adversarial conjunction ("but," "however," "yet," "despite,"
+# "while") and contradicting evidence.  The juxtaposition creates a
+# "said one thing, reality shows another" reading that undermines the
+# corporate claim without the journalist explicitly editorializing.
+#
+# Example from Wired MCI coverage (2026-06-22):
+#   "We have carefully designed this program with privacy safeguards"
+#   → "and while we have no indication..."
+#   → next paragraph: "the data... was accessible to all Meta staffers"
+#
+# Example from Reuters MCI coverage:
+#   "There are safeguards in place to protect sensitive content"
+#   → "In the weeks since its launch, however, Meta employees have
+#   complained that MCI was consuming so much data..."
+#
+# Distinct from loaded_language (which uses pejorative vocabulary) and
+# ironic_quotation (which uses scare quotes).  This device is structural:
+# the journalist deploys the corporate statement AS the setup for its
+# contradiction, creating irony through sequence rather than vocabulary.
+# ---------------------------------------------------------------------------
+_CORPORATE_REASSURANCE_UNDERCUT_PATTERNS: list[re.Pattern] = [
+    # "carefully designed/built/crafted" near "but/however/yet/while/despite"
+    re.compile(
+        r"\b(?:carefully|thoughtfully|responsibly|diligently)\s+"
+        r"(?:designed|built|crafted|developed|implemented|considered|"
+        r"constructed|engineered|created)\b"
+        r".{0,200}?"
+        r"\b(?:but|however|yet|despite|while|nevertheless|nonetheless|"
+        r"even so|still|in fact|in reality)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "privacy/safety safeguards/protections" near contradiction
+    re.compile(
+        r"\b(?:privacy|safety|security|data)\s+"
+        r"(?:safeguards?|protections?|controls?|measures?|guardrails?|"
+        r"protocols?|standards?|policies)\b"
+        r".{0,200}?"
+        r"\b(?:but|however|yet|despite|while|nevertheless|nonetheless|"
+        r"even so|still|in fact|in reality)\b"
+        r".{0,120}?"
+        r"\b(?:expos(?:ed|ure|ing)|accessible|leaked?|breach(?:ed)?|"
+        r"fail(?:ed|ure|ing)|broke|compromis(?:ed|ing)|"
+        r"vulnerab(?:le|ility)|inadequat(?:e|ely)|"
+        r"complain(?:ed|ing|ts?)|concern(?:s|ed)?)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "no indication of improper/unauthorized" near contradicting context
+    re.compile(
+        r"\bno (?:indication|evidence|sign)\s+"
+        r"(?:at this time\s+)?(?:that|of)\s+"
+        r"(?:any )?(?:data was |information was )?"
+        r"(?:improperly|unauthorized|inappropriately|illegally)\b"
+        r".{0,200}?"
+        r"\b(?:but|however|yet|despite|while|nevertheless|nonetheless|"
+        r"even so|still|in fact|in reality)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "committed to / takes X seriously" near contradiction
+    re.compile(
+        r"\b(?:committed to|takes?\s+(?:\w+\s+)?seriously|"
+        r"invested heavily in|prioritiz(?:es?|ing)|"
+        r"deeply committed|strongly committed)\b"
+        r".{0,200}?"
+        r"\b(?:but|however|yet|despite|while|nevertheless|nonetheless|"
+        r"even so|still|in fact|in reality)\b"
+        r".{0,120}?"
+        r"\b(?:fail(?:ed|ure|ing)|breach(?:ed)?|"
+        r"expos(?:ed|ure|ing)|inadequat(?:e|ely)|"
+        r"complain(?:ed|ing|ts?)|concern(?:s|ed)?|"
+        r"fell short|shortcoming|deficien(?:t|cy|cies))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Corporate "not the primary objective/focus" near evidence of exactly that
+    re.compile(
+        r"\b(?:not (?:the |its )?(?:primary|main|intended|core) "
+        r"(?:objective|focus|purpose|goal|aim))\b"
+        r".{0,200}?"
+        r"\b(?:but|however|yet|despite|while|nevertheless)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+
+_DEVICE_PATTERNS["corporate_reassurance_undercut"] = (
+    _CORPORATE_REASSURANCE_UNDERCUT_PATTERNS
+)
+
+
+# ---------------------------------------------------------------------------
 # Kicker framing: editorial technique of ending an article on a discordant
 # negative note — the last paragraph introduces a critical context (workforce
 # turmoil, regulatory threat, ethical concern) that was NOT the article's
@@ -1555,16 +1645,22 @@ def _detect_speculative_framing(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for patterns associated with 23 types of editorial framing:
-    guilt_by_association, anonymous_authority, catastrophizing,
-    false_balance, selective_omission_signal, emotional_appeal,
-    straw_man, loaded_language, refusal_amplification,
+    Scans for 25 pattern-matched device types plus 3 structural
+    post-pass types (28 total).
+
+    Pattern-matched (25): guilt_by_association, anonymous_authority,
+    catastrophizing, false_balance, selective_omission_signal,
+    emotional_appeal, straw_man, loaded_language, refusal_amplification,
     juxtaposition, timeline_implication, power_asymmetry,
     military_techno_optimism, selective_rehabilitation,
-    rhetorical_question, ironic_quotation, analogy_stacking,
-    speculative_framing, isolation_framing, pressure_language,
-    geopolitical_regulatory_pressure,
-    self_referential_investigation, and kicker_framing.
+    rhetorical_question, ironic_quotation, isolation_framing,
+    pressure_language, geopolitical_regulatory_pressure,
+    self_referential_investigation, sovereignty_framing,
+    scale_magnitude, ceo_personalization, litigation_framing,
+    and corporate_reassurance_undercut.
+
+    Structural post-pass (3): kicker_framing, analogy_stacking,
+    speculative_framing.
 
     Args:
         text: The article text to analyze.
