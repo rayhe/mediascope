@@ -180,6 +180,22 @@ def _extract_affiliation(context: str) -> str:
             r"(?:CEO|president|officer|director|chief|head|spokesperson|editor|counsel)",
             re.DOTALL,
         ),
+        # Pattern 0b: "[Organization] [title phrase] [Name]" — non-possessive
+        # "Meta chief technology officer Andrew Bosworth" → "Meta"
+        # Catches the common pattern where an org name directly precedes a
+        # title without possessive, followed by a person's name.  Must
+        # precede Pattern 2 (possessive "[Org]'s [Noun]") to prevent
+        # false matches like "Snap's Specs" beating "Meta" in context.
+        re.compile(
+            r"\b([A-Z][A-Za-z]+)"
+            r"\s+(?:(?:chief|vice|deputy|senior|executive|associate|assistant|managing|former|acting)\s+)*"
+            r"(?:(?:technology|financial|operating|product|marketing|information|legal|revenue|strategy|"
+            r"science|data|communications?|creative|editorial|content|policy|engineering|research|design|"
+            r"industrial|human\s+resources)\s+)*"
+            r"(?:officer|director|president|counsel|spokesperson|spokesman|spokeswoman|editor|secretary|"
+            r"manager|head|executive)\s+[A-Z]",
+            re.DOTALL,
+        ),
         # Pattern 1: "at [the] [Institution Name][,. or attribution verb]"
         # Non-greedy match capped at 60 chars to prevent spanning
         # across paragraph boundaries when _INST_CHARS includes spaces.
@@ -209,8 +225,8 @@ def _extract_affiliation(context: str) -> str:
     for i, pat in enumerate(patterns):
         m = pat.search(context)
         if m:
-            if i == 2:
-                # Possessive pattern: combine "Georgetown" + "Center for ..."
+            if i == 3:
+                # Possessive pattern (Pattern 2): combine "Georgetown" + "Center for ..."
                 aff = m.group(1).strip() + "'s " + m.group(2).strip()
             else:
                 aff = m.group(1).strip()
@@ -459,6 +475,63 @@ def extract_sources(text: str) -> list[SourceMention]:
             attribution_verb=verb,
         ))
 
+    # Pattern 5b: "[LastName] says/told/etc." — single-name source
+    # Common journalism convention: after introducing a source by full
+    # name ("Peter Bristol, VP of..."), subsequent references use just
+    # the last name.  This catches sources that are ONLY referred to by
+    # a single capitalized name + attribution verb in the article.
+    # Filtered aggressively to prevent false positives from org names,
+    # common English words, and product names.
+    _SINGLE_NAME_ORG_STOPS = {
+        "Meta", "Google", "Apple", "Amazon", "Microsoft", "Facebook",
+        "Instagram", "WhatsApp", "Snapchat", "Tesla", "Samsung",
+        "Nvidia", "Oracle", "Palantir", "Intel", "Adobe", "Netflix",
+        "Spotify", "Twitter", "TikTok", "Uber", "Lyft", "Airbnb",
+        "Pinterest", "Reddit", "Discord", "Slack", "Zoom", "Stripe",
+        "Square", "Block", "Shopify", "Congress", "Pentagon",
+        "Reuters", "Bloomberg", "WIRED", "Wired",
+        # Common words that start sentences
+        "People", "Everyone", "Somebody", "Someone", "Something",
+        "Today", "Tomorrow", "Yesterday", "Here", "There",
+        "First", "Second", "Third", "Finally", "Overall",
+        "Like", "Similar", "Another", "According", "Rather",
+        "True", "False", "None", "Yes", "Yeah",
+    }
+    single_name_verb = re.compile(
+        rf"\b([A-Z][a-z]{{2,}})\s+({verb_alternation})\b",
+    )
+    for m in single_name_verb.finditer(text):
+        name = m.group(1).strip()
+        verb = m.group(2).strip().lower()
+        if name in seen_names:
+            continue
+        if name in _NAME_STOP_FIRST_WORDS:
+            continue
+        if name in _SINGLE_NAME_ORG_STOPS:
+            continue
+        if name in _NAME_STOP_NAMES:
+            continue
+        # Skip if this single name is the last word of an already-seen
+        # full name — e.g., skip "Bosworth" if "Andrew Bosworth" already
+        # captured.  Prevents duplicate source entries for the same person.
+        if any(seen.endswith(" " + name) for seen in seen_names):
+            continue
+
+        seen_names.add(name)
+
+        ctx_start = max(0, m.start() - 100)
+        ctx_end = min(len(text), m.end() + 200)
+        context = text[ctx_start:ctx_end]
+
+        sources.append(SourceMention(
+            name=name,
+            is_anonymous=False,
+            is_expert=_is_expert_by_title(context),
+            affiliation=_extract_affiliation(context),
+            quote=_extract_nearby_quote(text, m.start(), m.end()),
+            attribution_verb=verb,
+        ))
+
     # Pattern 4: Anonymous sources
     anon_patterns = [
         re.compile(r"\baccording to (?:people|sources|individuals)", re.IGNORECASE),
@@ -530,11 +603,13 @@ def extract_sources(text: str) -> list[SourceMention]:
             re.IGNORECASE,
         ),
         # "several people say" — quantifier + generic people noun + verb
+        # Verb is REQUIRED to prevent false positives from editorial
+        # narration like "Many people are still concerned" (no attribution).
         re.compile(
             r"\b(?:some|several|multiple|many|numerous|various|a few|a handful of|a number of)"
             r" (?:current\s+(?:and\s+)?(?:former\s+)?)?"
             r"(?:workers|employees|staffers|engineers|people|sources|individuals)"
-            r"(?:\s+(?:" + verb_alternation + r"))?\b",
+            r"\s+(?:" + verb_alternation + r")\b",
             re.IGNORECASE,
         ),
         # "organizers inside the company wrote" — collective group sources

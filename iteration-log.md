@@ -2552,3 +2552,37 @@ The new "Wired Security Desk" section now provides comprehensive desk-level staf
 ### Files
 - `profiles/careers/journalists.yaml` — +2 journalists (Burgess, Newman), new section, total 69
 - `README.md` — journalist count updated 67 → 69
+
+
+---
+
+## Iteration: 2026-06-25T15:00 PT — Type A: Article Deep Dive
+
+### Focus
+Wired article: "Meta's Very Own Smart Glasses Go on Sale Today for $299" by Julian Chokkattu (Jun 23, 2026). Manual analysis vs toolkit prediction comparison. 4 bugs found and fixed, 17 new tests added.
+
+### What Was Improved
+
+**Bug 1 — Entity miss: Peter Bristol.** Meta's VP of Industrial Design, quoted 2x in the article, was not in `DEFAULT_ENTITY_CLUSTERS`. Added "Peter Bristol" and "Bristol" to Meta aliases and regex. Trade-off: "Bristol" (city) may false-positive in non-tech articles — accepted as consistent with existing single-name aliases.
+
+**Bug 2 — Affiliation misattribution: Bosworth → "Snap's Specs".** The text "On Snap's Specs, Meta chief technology officer Andrew Bosworth says..." caused the possessive pattern to extract "Snap's Specs" instead of "Meta". Root cause: no pattern existed for non-possessive title constructions like "Meta chief technology officer [Name]". Fix: added Pattern 0b (non-possessive title → org affiliation), inserted before the over-broad possessive Pattern 2. Also added "executive" to the title word list to handle "chief executive" (regex backtracking fix).
+
+**Bug 3 — False anonymous source: "Many people are still concerned".** Editorial narration misclassified as anonymous source. Root cause: catch-all anonymous pattern made the attribution verb optional (`?`), allowing "Many people" alone to match. Fix: made verb required. Existing specific patterns (e.g., "people familiar with the matter") are unaffected.
+
+**Bug 4 — Source miss: single-name attribution.** "Bristol says" was invisible because all source patterns required "First Last" two-word names. Added Pattern 5b for single-name sources (`[A-Z][a-z]{2,} [verb]`) with aggressive false-positive filtering: stop words, organization names, and full-name dedup (skip "Bosworth" if "Andrew Bosworth" already captured).
+
+### Source URLs
+- Article text: `examples/sample_output/wired_meta_glasses_launch_self_branded_2026_06_23_article.txt`
+- Deep dive: `examples/sample_output/wired_meta_glasses_launch_self_branded_2026_06_23_deep_dive.md`
+
+### Key Insight
+The affiliation extraction pipeline had a blind spot for the most common title construction in tech journalism: "[Company] [title] [Name] says..." — non-possessive, no preposition. This pattern is more frequent than possessive ("[Company]'s [title]") or prepositional ("at [Company]") forms in product launch and executive interview articles. The fix (Pattern 0b) addresses an entire class of misattributions, not just this one article.
+
+### Test Results
+- 446 tests passing (429 + 17 new, zero regressions)
+
+### Files
+- `mediascope/analyze/entities.py` — +Peter Bristol/Bristol in Meta cluster
+- `mediascope/analyze/sources.py` — 4 source extraction fixes (affiliation, false anon, single-name, dedup)
+- `tests/test_glasses_deep_dive.py` — 17 new tests
+- `examples/sample_output/wired_meta_glasses_launch_self_branded_2026_06_23_deep_dive.md` — full annotated analysis
