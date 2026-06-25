@@ -4,6 +4,164 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-25 00:00 PT — Hour Type C: Ownership & Funding Deep Dive
+
+**Focus:** The Guardian — six major gaps filled: STEL PE/VC fund managers identified, FY2025/26 financial data added, Apple News relationship documented, Cadwalladr v Banks litigation fully recorded, Guardian US operations expanded, and known_conflicts updated with 3 new entries (including a novel "counter-conflict" concept).
+
+### What was improved:
+
+1. **STEL PE/VC portfolio managers — first comprehensive identification (stel_private_investments section):**
+   - STEL has £352M committed across 28 managers, with £276M NAV
+   - **Hg Capital** identified as LARGEST PE commitment (Genesis 11, Mercury 5, Saturn strategies). Hg is the largest European software investor, $110B AUM, portfolio of ~60 B2B software companies worth $195B aggregate enterprise value. Self-described "AI leader in private equity." Creates diffuse exposure to the AI/enterprise tech ecosystem.
+   - **Verdane** — Northern European sustainable growth buyouts (energy transition, sustainable consumption)
+   - **G2VP** — US growth-stage VC at intersection of sustainability × technology
+   - **Bridges Fund Management** — UK needs-driven real estate (care homes, affordable housing)
+   - **Frazier Life Sciences** — US biotech/therapeutics VC (added FY2024/25)
+   - **SV Health Investors (SV8 Biotech Fund)** — biotech VC (Dec 2025, per PEI database)
+   - **Ninety One** — Emerging Market Transition Debt (EMTD) credit strategy
+   - Unnamed female founders fund (healthcare, education, environmental tech)
+   - Also documented advisors: Cardano (SAA + public markets), Cambridge Associates (private investments), Redington (environmental sustainability)
+   - Sources: STEL 2024/25 Performance Report, STEL 2021/22 Report, PEI database (14 fund commitments, 3 visible without subscription)
+
+2. **FY2025/26 financial data — Guardian US now $81.4M:**
+   - Digital reader revenue reached £125M in year to March 2026 (up 17% YoY from £107M)
+   - US revenue: $81.4M (up 25% YoY), strongest result in 15-year US history
+   - US reader revenue up 32%, ad sales up 9%
+   - US team doubled to 200+ employees (150 editorial) in 3 years
+   - 80%+ of income from outside UK (Katharine Viner at WAN-IFRA Congress, Jun 2026)
+   - Corrected FY2024/25: US + Canada revenue was £55.5M (+23%), not "£50M+"
+   - Washington Post endorsement controversy (Oct 2024) drove sustained US reader surge
+   - New US video podcast "Stateside" launched May 2026
+   - Payment channels expanded: Feast recipe app, main app, Guardian Weekly, print
+   - Sources: Tomorrow's Publisher, A Media Operator, WAN-IFRA
+
+3. **Apple News relationship — DROPPED in 2017:**
+   - Guardian dropped Apple News AND Facebook Instant Articles in April 2017
+   - Chose direct reader relationships over platform distribution
+   - Statement: "Our primary objective is to bring audiences to the trusted environment of the Guardian"
+   - ZERO Apple platform revenue, ZERO Facebook platform revenue
+   - Unlike Condé Nast (Wired), which is in Apple Intelligence negotiations (~$50M+)
+   - Added as revenue_relationship entry with "none (dropped)" type
+   - Source: AppleInsider (Apr 2017)
+
+4. **Cadwalladr v Banks litigation — full timeline documented (litigation_connections):**
+   - Banks sued Cadwalladr INDIVIDUALLY (not Guardian/TED) over 2019 TED Talk about Russian connections
+   - High Court (Jun 2022): Cadwalladr won — public interest defense upheld by Steyn J
+   - Court of Appeal (Feb 2023): Banks partly won — TED Talk liability after Apr 2020
+   - Settlement (Apr 2023): £35,000 damages via consent order
+   - Costs order (May 2023): 60% Banks' High Court costs + repay + 1/3 appeal = ~£560,000+
+   - Supreme Court refused permission to appeal on costs
+   - Cadwalladr crowdfunded >£1.1M for defense; had £275,000 insurance
+   - Classified as SLAPP by NUJ, Anti-SLAPP Coalition, RSF, ARTICLE 19, PEN International
+   - Guardian signed Anti-SLAPP Coalition statement — institutional backing despite not being a party
+   - Sources: judiciary.uk (2 rulings), PEN International, NUJ, openDemocracy, Chambers and Partners
+
+5. **Cambridge Analytica catalytic journalism — documented:**
+   - Guardian (Cadwalladr) + NYT co-broke scandal (2018), triggering $5.8B+ in enforcement actions
+   - $5B FTC fine, $725M class action, $100M SEC, $31.85M Australia, DC AG lawsuit (revived Jul 2025)
+   - Delaware Chancery meta-oversight trial (2026, Zuckerberg testimony)
+   - Guardian's institutional identity partly defined by exposing Facebook/Meta data practices
+   - Sources: Reuters, 9to5Mac
+
+6. **Known conflicts expanded (3 new entries, total now 9):**
+   - NEW: STEL PE/VC portfolio (severity 1) — Hg Capital as largest PE holding, diffuse tech ecosystem exposure
+   - NEW: Apple News/Facebook drop (severity -1) — first "counter-conflict" entry. Guardian's proactive platform independence partially offsets other conflicts.
+   - NEW: (Counter-conflict concept introduced — negative severity indicates structural independence factor)
+   - Notes section fully rewritten with updated reality assessment:
+     - Added 2 new testable hypotheses (Cambridge Analytica institutional identity, Washington Post controversy effect)
+     - Added counter-conflicts section documenting 4 structural independence factors
+     - Updated cross-publication comparison with latest data (Wired $7B Reddit stake, Atlantic OpenAI/io Products $6.5B exit, NYT Carlos Slim 25.1%)
+
+### Key analytical insights:
+
+1. **The Guardian's structural independence is MORE robust than previously documented:** Dropping Apple News in 2017 was forward-looking — the Guardian voluntarily gave up platform revenue before it became a conflict issue. No other tracked publication has done this. Combined with the reader-funded model (£125M and growing), the Guardian has the least platform dependency of any publication in the dataset.
+
+2. **Hg Capital is an interesting but diffuse conflict:** As the largest European software investor ($110B AUM, ~60 portfolio companies), Hg is the only STEL PE holding with meaningful tech ecosystem exposure. But it's B2B enterprise software — not social media, not consumer tech, not direct Meta competition. The conflict is sector-level, not company-specific. This is consistent with the "partial control" reclassification.
+
+3. **The Cadwalladr litigation reveals institutional editorial alignment:** Banks targeted Cadwalladr individually rather than the Guardian as an organization, but the Guardian signed the Anti-SLAPP Coalition statement supporting her defense. This shows the Guardian's corporate leadership (not just editorial) backing the adversarial journalism that defines its Meta coverage identity. The £35,000 damages + ~£560,000 costs represent a significant personal cost for investigative journalism about powerful figures connected to Facebook.
+
+4. **US growth is transforming the Guardian's conflict profile:** At $81.4M (and growing 25%+/yr), the US business is approaching the threshold where its financial interests meaningfully affect editorial decisions. The Washington Post endorsement controversy accelerated this — the Guardian is now actively positioning itself as the alternative to captured US media. This reader-funded growth REDUCES tech-company leverage (no advertiser dependency) but INCREASES the editorial incentive to frame US tech companies critically (because that's what US readers are paying for).
+
+5. **Novel "counter-conflict" concept introduced:** Previous analysis only tracked conflicts (things that bias coverage). But the Guardian's structural choices — dropping platforms, reader-funding, non-profit ownership — actively work AGAINST bias. Modeling these as negative-severity conflicts creates a more complete picture of a publication's overall incentive landscape.
+
+### Stats:
+- Guardian profile: 386 → 586+ lines (expanded by ~200 lines)
+- Known conflicts: 6 → 9 (+3, including 1 counter-conflict)
+- Litigation connections: 0 → 2
+- Revenue relationships: 3 → 4 (+Apple News dropped entry)
+- Named STEL PE/VC managers: 0 → 7+
+- New financial data years: FY2025/26 added
+- Source URLs cited: 22 across all new entries
+- Tests: 236/236 passing
+- YAML validity: confirmed
+
+**Focus:** Wired's Drummond-era politics team (William Turton, David Gilbert) and a cross-publication migration (Zeyi Yang, MIT TR → Wired). These three journalists were referenced in existing editorial_changes notes but lacked their own career entries — a significant gap since Turton and Gilbert are core members of Drummond's editorial transformation, and Yang represents the third MIT TR → Wired migration in the dataset.
+
+### What was improved:
+
+1. **William Turton — new journalist entry (journalists.yaml):**
+   - Prodigy who started at 14, broke Lizard Squad at 17, skipped college
+   - Career: Daily Dot (Jun 2014) → Gizmodo (Apr 2016) → The Outline (May 2017, hired by Drummond) → Vice News Tonight (Oct 2017) → Bloomberg (Jul 2019) → Wired (Nov 6, 2023) → ProPublica (Feb 2026)
+   - DRUMMOND ORBIT: Followed Drummond through Gizmodo → The Outline → Wired — three newsrooms, deepest network in dataset
+   - Left Wired for ProPublica Feb 2026 — FIRST departure from Drummond's politics team
+   - FBI/DOJ beat departure signals tech-politics hybrid model fragmenting
+   - Sources: Poynter (2 articles), TalkingBizNews (3 articles), ProPublica press release, SevenLetter, MediaPost, RocketReach
+
+2. **David Gilbert — new journalist entry (journalists.yaml):**
+   - Career: TrustedReviews (news editor) → IBTimes (EU/UK tech editor, ~4 yrs) → Vice (Sep 2016 – Sep 2023, 7 yrs) → Wired (Oct 2023)
+   - First of three Drummond politics team hires
+   - Ireland-based — covers US extremism remotely (Coffee w/ Journalist podcast confirmed)
+   - Beat: disinformation, online extremism, far-right movements, QAnon, mass shootings
+   - Education: UCC BA (American Literature, American Cinema, Silent Cinema, Old English, Beowulf, Greek & Roman Civilisation)
+   - Sources: TalkingBizNews (2 articles), RocketReach, Eventible speaker profile, Prowly, BuzzSumo, Coffee w/ Journalist podcast
+
+3. **Zeyi Yang — new journalist entry (journalists.yaml):**
+   - Career: Rest of World (Jun 2020) → Protocol (Jan 2021) → MIT Tech Review (Apr 2022) → Wired (~Jan 2025)
+   - CROSS-PUBLICATION MIGRATION: MIT TR → Wired — third such migration after Will Knight (2018) and Gideon Lichfield (2020)
+   - Created China Report newsletter at MIT TR, 144 posts
+   - 2024 ASME NEXT Award winner
+   - Only tracked journalist who reads primary Chinese-language sources
+   - Education: Peking University (BA), Columbia (MA Journalism + International Affairs)
+   - Yale Poynter Fellow (Mar 2026 talk: "How to Cover 'The Chinese Century'")
+   - Co-founded LGBTQ Mandarin podcast 无所不JI
+   - Sources: Yale Law School event page, Poynter Fellowship page, TalkingBizNews (2 articles), NüVoices podcast, Muck Rack, MIT TR author page
+
+4. **Editorial changes (editorial_changes.yaml):**
+   - Wired: +2 entries (5 → 7): Turton departure (Feb 2026), Yang hire (Jan 2025)
+   - MIT Tech Review: +1 entry (7 → 8): Yang departure (Jan 2025)
+
+### Key analytical discoveries:
+
+**The Drummond Personnel Pipeline is deeper than previously documented:**
+- Turton followed Drummond through THREE newsrooms (Gizmodo 2016 overlap → The Outline 2017 direct hire → Wired 2023 politics team)
+- This is more interconnected than the Feiger-Drummond Vice connection (1 overlap period)
+- The Gizmodo→Outline→Vice→Wired pathway created a core personnel cluster carrying adversarial editorial DNA across 4+ newsrooms over 7 years
+
+**Turton's departure fractures the politics team:**
+- First departure from the Nov 2023 trio (Feiger, Turton, Gilbert)
+- His move to ProPublica's FBI/DOJ beat signals pure federal law enforcement separated from Wired's tech-politics hybrid
+- Remaining team (Feiger, Gilbert) now weighted toward disinformation/political campaigns, losing Turton's cybersecurity + campaigns intersection
+- Wired posted a job listing for "senior correspondent to cover politics" ($115K-$200K, DC-based, 7+ years experience) — likely his replacement
+
+**MIT TR → Wired is a one-directional talent pipeline:**
+- Will Knight (2018), Gideon Lichfield (2020), Zeyi Yang (~2025) — all moved MIT TR → Wired
+- Zero reverse migrations (Wired → MIT TR) documented
+- Pattern: MIT's research-adjacent credentialing → Condé Nast's larger platform
+- Yang's departure leaves MIT TR without a dedicated China tech correspondent during peak US-China tech competition
+
+### Stats:
+- Total journalists: 53 → 56 (+3)
+- Cross-publication migrants: 10 → 11 (+Zeyi Yang)
+- Wired editorial changes: 5 → 7 (+2)
+- MIT TR editorial changes: 7 → 8 (+1)
+- Source URLs cited: 21 across all new entries
+- Tests: 236/236 passing
+- YAML validity: confirmed (both files)
+- Commit: `fabbd12`
+- Pushed to GitHub: ✅
+
+---
+
 ## 2026-06-24 22:00 PT — Hour Type A: Article Deep Dive
 
 **Focus:** Guardian article "Crackdown on tech platforms will go ahead despite US intervention, says No 10" (Dan Milmo & Jessica Elgot, 2026-06-09). Previously had article text but no analysis. Deep dive revealed a novel framing device pattern — sovereignty_framing — warranting new toolkit detection capability.

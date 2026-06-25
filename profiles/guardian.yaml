@@ -91,15 +91,123 @@ scott_trust_endowment_board:
     - name: "Ole Jacob Sunde"
       role: "Director"
       notes: "Also chairs Scott Trust board."
+  advisors:
+    - name: "Cardano"
+      role: "Strategic and tactical asset allocation, public-market investments, day-to-day management"
+    - name: "Cambridge Associates"
+      role: "Private investments advisor"
+    - name: "Redington"
+      role: "Environmental sustainability advisor"
   source_url: "https://uploads.guim.co.uk/2025/09/11/Scott_Trust_Endowment_performance_report_24_25_%281%29.pdf"
 
+# ===================================================================
+# STEL PRIVATE EQUITY & VENTURE CAPITAL PORTFOLIO — updated 2026-06-25
+# from 2024/25 STEL Performance Report + PEI + 2021/22 report
+# ===================================================================
+stel_private_investments:
+  overview:
+    pe_vc_nav: "£276M"
+    pe_vc_commitments: "£352M across 28 managers since inception"
+    pe_vc_distributions: "£122M since inception"
+    pe_vc_cost_basis: "£254M"
+    pe_vc_return: "1.6x total net cash-on-cash return (0.5x realised)"
+    pe_vc_10yr_return: "14.4% GBP / 13.4% USD"
+    diversifiers_nav: "£47M"
+    diversifiers_commitments: "£125M across 11 managers since inception"
+    diversifiers_distributions: "£41M since inception"
+    environmental_solutions: "£104.4M (8.4% of Endowment)"
+    source_url: "https://uploads.guim.co.uk/2025/09/11/Scott_Trust_Endowment_performance_report_24_25_%281%29.pdf"
+  named_managers:
+    - name: "Hg Capital"
+      type: "pe"
+      strategies: ["Genesis 11 (mid-cap, Oct 2025)", "Mercury 5 (small-cap, Oct 2025)", "Saturn (large-cap, earlier commitment)"]
+      description: >
+        LARGEST IDENTIFIED PE COMMITMENT. Hg is the largest European software investor,
+        $110B AUM, portfolio of ~60 B2B software companies worth $195B aggregate enterprise
+        value with 140,000+ employees. Focuses on mission-critical B2B enterprise software
+        in financial services, healthcare, tax/legal, and government sectors. Self-described
+        "AI leader in private equity." STEL has committed to at least 3 strategies (Saturn,
+        Genesis, Mercury) covering small to large cap European and transatlantic software.
+        KEY: Hg's portfolio companies provide "intelligent automation" — some compete in the
+        same AI/enterprise software space as Meta's workplace tools and AI offerings.
+      conflict_relevance: "Low-moderate. Sector-level overlap with Meta in enterprise/AI software. No direct competitive holdings identified, but broad portfolio of 60+ companies creates diffuse exposure to the AI/tech ecosystem."
+      source_urls:
+        - "https://www.privateequityinternational.com/institution-profiles/scott-trust-endowment-fund.html"
+        - "https://hgcapital.com/approach/"
+        - "https://www.proskauer.com/insights/private-market-talks-navigating-pe-realization-hg-capital"
+    - name: "Verdane"
+      type: "pe"
+      strategies: ["Sustainable growth buyouts"]
+      description: "Northern European growth PE firm investing in sustainable consumption, energy transition, and resilient communities. Added 2021/22."
+      conflict_relevance: "Minimal. Environmental/sustainability focus, no tech platform overlap."
+      source_url: "https://uploads.guim.co.uk/2022/07/20/Scott_Trust_Endowment_Report_2021_22.pdf"
+    - name: "G2VP"
+      type: "vc"
+      strategies: ["Growth-stage sustainability × technology"]
+      description: "US venture fund targeting companies at the intersection of sustainability and technology in transport, industrials, manufacturing, energy, agriculture, logistics. Added 2021/22."
+      conflict_relevance: "Minimal. Clean-tech/industrial focus."
+      source_url: "https://uploads.guim.co.uk/2022/07/20/Scott_Trust_Endowment_Report_2021_22.pdf"
+    - name: "Bridges Fund Management"
+      type: "real_estate"
+      strategies: ["UK needs-driven property development"]
+      description: "UK real estate fund investing in alternative sectors (care homes, assisted living, affordable housing), growth locations, and turnaround projects. First real estate manager in STEL portfolio. Added 2021/22."
+      conflict_relevance: "None. Real estate, no tech overlap."
+      source_url: "https://uploads.guim.co.uk/2022/07/20/Scott_Trust_Endowment_Report_2021_22.pdf"
+    - name: "Frazier Life Sciences"
+      type: "vc"
+      strategies: ["Biotech/therapeutics VC"]
+      description: "US-based healthcare investment firm focused on novel therapeutics, investing in private and public biotech. Commitment to Frazier's venture capital fund added FY2024/25."
+      conflict_relevance: "None. Healthcare/biotech, no tech overlap."
+      source_url: "https://uploads.guim.co.uk/2025/09/11/Scott_Trust_Endowment_performance_report_24_25_%281%29.pdf"
+    - name: "SV Health Investors (SV8 Biotech Fund)"
+      type: "vc"
+      strategies: ["Biotech Fund"]
+      description: "Biotech-focused venture fund. Commitment Dec 2025 per PEI database."
+      conflict_relevance: "None. Healthcare/biotech."
+      source_url: "https://www.privateequityinternational.com/institution-profiles/scott-trust-endowment-fund.html"
+    - name: "Ninety One"
+      type: "credit"
+      strategies: ["Emerging Market Transition Debt (EMTD)"]
+      description: "Active global investment manager with strong emerging markets presence. STEL invested in EMTD strategy — finances infrastructure and solutions accelerating the energy transition in emerging markets. New manager relationship FY2024/25."
+      conflict_relevance: "None. Emerging market debt/credit."
+      source_url: "https://uploads.guim.co.uk/2025/09/11/Scott_Trust_Endowment_performance_report_24_25_%281%29.pdf"
+    - name: "Unnamed female founders fund"
+      type: "vc"
+      strategies: ["Technology for healthcare, education, environmental sustainability"]
+      description: "STEL backed their second fund. Invests in companies using technology to solve healthcare, education, and environmental problems. Female founder focus."
+      conflict_relevance: "Low. Tech exposure through small VC fund."
+      source_url: "https://uploads.guim.co.uk/2025/09/11/Scott_Trust_Endowment_performance_report_24_25_%281%29.pdf"
+  notes: >
+    28 PE/VC managers total; only 7+ named publicly. 11 diversifier managers, 2 named (Ninety One, plus
+    Bridges under real estate). Remaining ~14 unnamed PE/VC managers are not publicly disclosed.
+    The Insight credit portfolio manages the Operating Reserve (short-duration credit).
+    PEI (Private Equity International) database shows 14 total fund commitments but only 3 visible
+    without subscription (Hg Genesis 11, Hg Mercury 5, SV8 Biotech Fund).
+
 financial_data:
+  fy_2025_26:
+    revenue: "Not yet disclosed (year ended 31 March 2026)"
+    digital_reader_revenue: "£125M (up 17% from £107M in FY2024-25)"
+    us_revenue: "$81.4M (up 25% YoY), strongest result in 15-year US history"
+    us_reader_revenue_growth: "+32% YoY"
+    us_ad_revenue_growth: "+9% YoY"
+    us_staff: "200+ employees, 150 editorial (doubled in 3 years)"
+    international_share: "80%+ of income from outside UK"
+    source_urls:
+      - "https://tomorrowspublisher.today/the-guardian-halves-losses-and-hits-record-275m-revenue/"
+      - "https://amediaoperator.com/the-guardian-launching-first-us-podcast-amid-reader-revenue-growth/"
+    notes: >
+      Katharine Viner at WAN-IFRA Congress (Jun 2026): "more than 80% of our income from outside
+      the UK is a phenomenon that did not exist 10 years ago." Axios reported US revenue of $81.4M.
+      Washington Post Kamala Harris endorsement pull (Oct 2024) drove sustained US reader surge.
+      New US video podcast "Stateside" launched May 2026 (Kai Wright, Carter Sherman). Moving
+      to new US offices. Payment channels expanded: Feast recipe app, main app, Guardian Weekly, print.
   fy_2024_25:
     revenue: "£275M (record)"
     revenue_growth: "+6.7% from £257.8M"
-    digital_reader_revenue: "£100M+ (20%+ growth)"
+    digital_reader_revenue: "£107M (previously reported as £100M+)"
     digital_supporters: "1.3M recurring (up 150K+)"
-    us_revenue: "£50M+ (20%+ growth)"
+    us_canada_revenue: "£55.5M (+23% YoY)"
     international_revenue: "£100M+"
     operating_loss: "below £25M (improved from £33.9M)"
     source_url: "https://tomorrowspublisher.today/the-guardian-halves-losses-and-hits-record-275m-revenue/"
@@ -122,6 +230,19 @@ revenue_relationships:
     description: "No significant revenue relationship. Guardian has been critical of Facebook's impact on journalism since Cambridge Analytica (2018, Carole Cadwalladr). No AI licensing deal with Meta."
     date_established: "n/a"
     source_url: ""
+  - partner: "Apple"
+    relationship_type: "none (dropped)"
+    estimated_value: "$0"
+    description: >
+      Guardian DROPPED Apple News AND Facebook Instant Articles in April 2017, choosing direct
+      reader relationships over platform distribution. Statement: "Our primary objective is to
+      bring audiences to the trusted environment of the Guardian to support building deeper
+      relationships with our readers." This is significant: Guardian proactively rejected Apple's
+      platform revenue, prioritizing editorial independence. No Apple AI licensing deal either.
+      Unlike Condé Nast (Wired's parent, in Apple Intelligence negotiations ~$50M+), Guardian
+      has ZERO Apple platform revenue.
+    date_established: "2017-04 (dropped)"
+    source_url: "https://appleinsider.com/articles/17/04/21/uk-site-the-guardian-drops-apple-news-in-bid-to-boost-ad-subscription-revenues"
   - partner: "OpenAI"
     relationship_type: "licensing_deal"
     estimated_value: "Undisclosed"
@@ -239,8 +360,80 @@ known_conflicts:
     severity: 1
     evidence: "SPUR open letter, INMA, journalism.co.uk, Ringier announcement"
     source_url: "https://journalism.co.uk/stories/bbc-ft-guardian-sky-and-the-times-unite-in-spur-coalition-for-ai-protection"
+  - type: "investment"
+    description: >
+      STEL PE/VC portfolio: £352M committed across 28 managers, £276M NAV. Hg Capital is the
+      largest identified PE commitment (Genesis 11, Mercury 5, Saturn strategies). Hg is the
+      largest European software investor ($110B AUM), portfolio of ~60 B2B software companies
+      worth $195B, focused on mission-critical enterprise software and AI transformation.
+      Creates diffuse exposure to the AI/enterprise tech ecosystem. Other managers (Verdane,
+      G2VP, Bridges, Frazier Life Sciences, Ninety One, SV8 Biotech) have minimal tech overlap.
+    severity: 1
+    evidence: "STEL 2024/25 Performance Report, STEL 2021/22 Report, PEI database, Hg Capital website"
+    source_urls:
+      - "https://uploads.guim.co.uk/2025/09/11/Scott_Trust_Endowment_performance_report_24_25_%281%29.pdf"
+      - "https://www.privateequityinternational.com/institution-profiles/scott-trust-endowment-fund.html"
+      - "https://hgcapital.com/approach/"
+  - type: "platform_independence"
+    description: >
+      Guardian dropped Apple News AND Facebook Instant Articles in April 2017. This is a
+      COUNTER-CONFLICT: unlike Condé Nast (Wired), NYT, and Atlantic, the Guardian proactively
+      rejected platform revenue to maintain editorial independence and direct reader relationships.
+      Guardian has ZERO Apple platform revenue and ZERO Facebook platform revenue. This structural
+      independence partially offsets other conflicts — the Guardian is not financially dependent
+      on any single tech company's platform distribution.
+    severity: -1
+    evidence: "April 2017 Guardian statement to Digiday"
+    source_url: "https://appleinsider.com/articles/17/04/21/uk-site-the-guardian-drops-apple-news-in-bid-to-boost-ad-subscription-revenues"
+    notes: "Severity -1 indicates this is a counter-conflict (reduces overall conflict profile)"
 
-litigation_connections: []
+litigation_connections:
+  - case: "Banks v Cadwalladr"
+    type: "institutional_support"
+    description: >
+      The Guardian's star investigative journalist Carole Cadwalladr broke the Cambridge
+      Analytica scandal (2018, with NYT). Brexit donor Arron Banks sued Cadwalladr INDIVIDUALLY
+      (not Guardian/TED) over her 2019 TED Talk alleging he lied about Russian state connections.
+      High Court (Jun 2022): Cadwalladr won — public interest defense upheld by Steyn J.
+      Court of Appeal (Feb 2023): Banks partly won — TED Talk liability after Apr 2020
+      (when Electoral Commission/NCA exonerated Banks). Settlement (Apr 2023): £35,000 damages
+      via consent order. Costs order (May 2023): Cadwalladr must pay 60% of Banks' High Court
+      costs + repay costs + 1/3 appeal costs — totaling ~£560,000+. Supreme Court refused
+      permission to appeal on costs. Cadwalladr crowdfunded >£1.1M for defense; had £275,000
+      insurance. Classified as SLAPP (Strategic Lawsuit Against Public Participation) by NUJ,
+      UK Anti-SLAPP Coalition, RSF, ARTICLE 19, PEN International. The Guardian signed the
+      UK Anti-SLAPP Coalition statement supporting Cadwalladr — institutional backing despite
+      not being a named party. RELEVANCE: Banks targeted the individual journalist rather than
+      her employer (Guardian/Observer) or platform (TED), creating power asymmetry. This has
+      chilling effects on investigative journalism about wealthy and powerful interests.
+    status: "Resolved (damages paid, costs ordered)"
+    dates:
+      filed: "2019"
+      high_court_judgment: "2022-06-13"
+      court_of_appeal: "2023-02-28"
+      settlement: "2023-04-28"
+      costs_order: "2023-05-17"
+    source_urls:
+      - "https://www.judiciary.uk/judgments/banks-v-cadwalladr-costs-order/"
+      - "https://pen-international.org/news/the-uk-anti-slapp-coalition-reiterates-its-support-for-carole-cadwalladr"
+      - "https://www.nuj.org.uk/resource/arron-banks-loses-two-libel-claim-challenges.html"
+      - "https://www.opendemocracy.net/en/carole-cadwalladr-arron-banks-libel/"
+      - "https://www.chambers.com/articles/carol-cadwalladr-liable-for-defamation"
+  - case: "Cambridge Analytica / Facebook data privacy wave"
+    type: "catalytic_journalism"
+    description: >
+      Guardian (Cadwalladr) and NYT co-broke the Cambridge Analytica scandal (2018), revealing
+      Facebook allowed harvesting of 87 million users' data for political targeting. This
+      triggered: $5B FTC fine, $725M class action settlement, $100M SEC settlement, $31.85M
+      Australian privacy settlement, DC AG lawsuit (revived by appeals court Jul 2025), Delaware
+      Chancery meta-oversight trial (2026, Zuckerberg testimony). Guardian did not sue Facebook
+      directly but its journalism catalyzed the largest privacy enforcement actions in history
+      against Meta. RELEVANCE: The Guardian's institutional identity is partially defined by its
+      role in exposing Facebook/Meta's data practices — creating lasting editorial orientation.
+    status: "Ongoing (multiple derivative cases, DE Chancery trial 2026)"
+    source_urls:
+      - "https://www.reuters.com/article/facebook-meta-privacy-australia-idUSKBN2KC0V6"
+      - "https://9to5mac.com/2022/12/23/cambridge-analytica-lawsuit-settled/"
 
 ai_crawl_policy:
   blocks_gptbot: "Previously yes; likely updated post-OpenAI deal (Feb 2025)"
@@ -275,32 +468,36 @@ notes: |
   PREVIOUS ASSUMPTION: No corporate conflicts. Only ideological/editorial bias.
   Scott Trust non-profit = clean. Useful baseline for isolating financial incentive signals.
 
-  NEW REALITY (updated Jun 22, 2026):
+  NEW REALITY (updated Jun 25, 2026):
   1. OpenAI licensing deal (Feb 2025) — direct commercial relationship with Meta's #1 AI competitor
   2. ProRata licensing deal — additional AI revenue stream from Meta competitor ecosystem
   3. Mercuri/GMG Ventures — Scott Trust has direct VC investments in AI media-tech startups (£42M + £50M funds)
   4. Vivian Schiller — board member with Twitter (Meta competitor) + extensive tech industry history
   5. SPUR coalition — Guardian actively shaping AI licensing ecosystem, structural opposition to non-licensing AI companies (which includes Meta)
+  6. STEL PE/VC portfolio — £352M committed across 28 managers; Hg Capital ($110B AUM, ~60 B2B software cos worth $195B) is largest identified PE holding. Diffuse tech ecosystem exposure, no concentrated Meta-competitive positions.
+  7. Cambridge Analytica identity — Guardian's journalism (Cadwalladr 2018) catalyzed $5.8B+ in enforcement actions against Meta. Institutional identity partly defined by opposition to Facebook/Meta data practices. Banks v Cadwalladr litigation (2019-2023) reinforced this editorial posture; Guardian signed Anti-SLAPP Coalition supporting Cadwalladr.
+
+  COUNTER-CONFLICTS (structural independence factors):
+  A. Dropped Apple News AND Facebook Instant Articles (Apr 2017) — ZERO platform revenue from Apple or Meta. Only tracked publication with no major platform revenue dependency.
+  B. Non-profit trust structure genuinely eliminates shareholder profit motive.
+  C. Reader-funded model (£125M digital reader revenue FY2025/26) reduces advertising dependency and thus tech-company leverage over editorial.
+  D. No single corporate owner with concentrated competitive interests.
 
   However, Guardian's conflicts DIFFER IN KIND from the other publications:
-  - Wired/Condé Nast: Advance Publications owns 33.5% of Reddit (direct Meta competitor)
-  - Atlantic: Emerson Collective holds $16B+ Apple stock + Mistral AI investment
-  - NYT: Amazon AI deal ($20-25M/yr) + actively suing OpenAI/Microsoft
+  - Wired/Condé Nast: Advance Publications owns 33.5% of Reddit (direct Meta competitor), $7B stake
+  - Atlantic: Emerson Collective holds $16B+ Apple stock + OpenAI/io Products $6.5B exit
+  - NYT: Carlos Slim 25.1% stake + $70-125M+/yr Amazon compound dependency
   - MIT TR: Parent MIT receives $174M/yr from industry including Meta itself
-  - Guardian: Licensing deals with AI companies (same direction as Wired/Atlantic — OpenAI is a Meta competitor) but NO equity ownership in competitors. The £1.2B endowment is diversified across 28+ PE/VC managers, not concentrated in specific Meta competitors.
+  - Guardian: Licensing deals with AI companies but NO equity ownership in competitors. £1.25B endowment diversified across 28+ PE/VC managers, not concentrated in specific Meta competitors.
 
-  Guardian is STILL the closest thing to a control case among the 5 publications:
-  - Non-profit trust structure genuinely eliminates shareholder profit motive
-  - No single corporate owner with concentrated competitive interests
-  - No $16B Apple stake (Atlantic), no 33.5% Reddit stake (Wired), no MIT research funding dependency
-  - Conflicts are INDUSTRY-LEVEL (publisher vs AI companies) not COMPANY-SPECIFIC (we want Meta to lose)
-
-  RECLASSIFICATION: Partial control. Financial conflicts exist but are smaller, more diffuse, and more industry-structural than entity-specific. Still the best comparator for isolating financial vs editorial bias signals, but with a documented caveat. For pure editorial baseline, pre-Feb 2025 Guardian coverage is cleaner than post-Feb 2025 coverage.
+  RECLASSIFICATION: Partial control. Financial conflicts exist but are smaller, more diffuse, and more industry-structural than entity-specific. Still the best comparator for isolating financial vs editorial bias signals, but with documented caveats. For pure editorial baseline, pre-Feb 2025 Guardian coverage is cleaner than post-Feb 2025.
 
   KEY TESTABLE HYPOTHESES:
   1. Did Guardian coverage of OpenAI change after Feb 2025 deal? Compare pre-deal vs post-deal sentiment.
   2. Does Guardian cover Meta differently from non-licensing AI companies vs licensing AI companies?
   3. Did the SPUR coalition (Feb 2026) change editorial framing of AI companies generally?
+  4. NEW: Does the Cambridge Analytica institutional identity create a self-reinforcing editorial posture toward Meta independent of financial incentives?
+  5. NEW: Has the Washington Post endorsement controversy (Oct 2024) and subsequent US reader surge altered Guardian US editorial positioning?
 
   Research note: Bunz & Braghieri 2021 found Guardian had only 29% positive AI coverage vs 49% for WSJ,
   making it still useful as benchmark for editorial AI skepticism independent of ownership conflicts.
