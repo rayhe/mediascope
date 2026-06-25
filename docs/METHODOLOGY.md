@@ -141,7 +141,7 @@ More coverage ≠ more bias. We normalize by:
 
 ### 3.1 Standardized Topic Buckets
 
-Articles are classified into 10 topic buckets to enable apples-to-apples comparison:
+Articles are classified into 12 topic buckets to enable apples-to-apples comparison:
 
 | Topic | Keywords |
 |---|---|
@@ -151,12 +151,16 @@ Articles are classified into 10 topic buckets to enable apples-to-apples compari
 | `antitrust_regulation` | antitrust, monopoly, regulation, FTC, DOJ, market power, dominance, consent decree |
 | `child_safety` | children, teens, youth, minor, addiction, mental health, COPPA, age verification |
 | `content_moderation` | moderation, misinformation, disinformation, hate speech, policy, removal, censorship |
+| `ai_generated_content` | slop, AI slop, synthetic content, AI-generated, generative AI content, deepfake, AI art, model collapse, engagement bait, hallucination |
 | `financial_results` | earnings, revenue, profit, stock, market cap, quarterly, fiscal, guidance |
 | `product_launch` | launch, release, announce, unveil, new feature, update, rollout, beta |
 | `executive_behavior` | CEO, executive, leadership, management, culture, workplace, internal |
 | `litigation` | lawsuit, sued, settlement, verdict, court, judge, plaintiff, damages |
+| `workplace_culture` | morale, employee morale, burnout, attrition, retention, toxic culture, internal revolt, soul-crushing, return to office, disgruntled |
 
 Classification uses keyword matching with TF-IDF weighting. An article can match multiple topics; the top 3 by confidence are retained.
+
+**Note on topic design:** The 12 buckets are designed for apples-to-apples comparison within a topic across companies. The `ai_generated_content` topic captures coverage of AI output quality and generative AI byproducts, distinct from `ai_development` (technology creation). The `workplace_culture` topic captures internal organizational dynamics (morale, burnout, culture), distinct from `layoffs` (formal workforce actions) and `executive_behavior` (leadership decisions).
 
 ## 4. Framing Device Detection
 

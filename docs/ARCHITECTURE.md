@@ -170,9 +170,9 @@ Journalist YAML ──→ Career Tracker ──→ Migration Detection
 - **Security context adjustment**: Technical security/hacking articles use domain-specific language that inflates emotional intensity; the scorer reduces intensity for articles matching security topic patterns
 
 ### `framing.py`
-- **22 framing device types** organized in three tiers:
-  - **Core (12):** guilt by association, anonymous authority, catastrophizing, false balance, selective omission signal, emotional appeal, straw man, loaded language (including workplace coercion/revolt terms), refusal amplification, juxtaposition (including investment-near-layoffs), timeline implication, power asymmetry
-  - **Extended (7):** military techno-optimism, selective rehabilitation, rhetorical question, ironic quotation, isolation framing, pressure language, self-referential investigation (publication citing its own prior reporting as evidence within adversarial coverage)
+- **28 framing device types** organized in three tiers:
+  - **Core (10):** guilt by association, anonymous authority, catastrophizing, false balance, selective omission signal, emotional appeal, loaded language (including workplace coercion/revolt terms), power asymmetry, CEO personalization, litigation framing
+  - **Extended (15):** straw man, refusal amplification, juxtaposition (including investment-near-layoffs), timeline implication, military techno-optimism, selective rehabilitation, rhetorical question, ironic quotation, isolation framing, pressure language, self-referential investigation (publication citing its own prior reporting as evidence within adversarial coverage), geopolitical regulatory pressure, sovereignty framing, scale/magnitude framing, corporate reassurance undercut
   - **Structural post-pass (3):** kicker framing (checks final ~400 chars for discordant negative note), analogy stacking (fires when 3+ distinct analogy markers found), speculative framing (fires when 5+ cumulative speculative hedges found — individual hedges are normal journalism; stacked hedges convert possibility into implied certainty)
 - Attribution verb analysis: neutral ("said"), undermining ("claimed"), concessive ("admitted"), adversarial ("warned")
 - **Workplace coercion/revolt language detection**: Terms like "no opt-out," "revolt," "nihilistic," "training their own replacements" detected as loaded language specific to labor/workplace framing
@@ -189,9 +189,9 @@ Journalist YAML ──→ Career Tracker ──→ Migration Detection
 - **Power asymmetry framing detection**: Dollar-magnitude near individual vulnerability, "army of lawyers" language, David vs Goliath constructions, fine-per-violation-could-bankrupt patterns
 
 ### `topics.py`
-- TF-IDF weighted keyword classification into 10 topic buckets
+- TF-IDF weighted keyword classification into 12 topic buckets
 - Multi-label (top 3 by confidence retained)
-- Topics: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, financial_results, product_launch, executive_behavior, litigation
+- Topics: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, workplace_culture
 
 ## Careers Layer — Module Detail
 
@@ -379,15 +379,22 @@ mediascope/
 │   ├── full_pipeline.py
 │   ├── agent_integration.py
 │   └── sample_output/       # Annotated real-article analyses
-├── tests/                       # 236 tests (all from real articles)
-│   ├── test_entities.py         # Entity detection, regex, false-positive exclusion
+├── tests/                       # 429 tests (all from real articles)
+│   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
+│   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
+│   ├── test_careers.py          # Career loading, migration detection, DiD, leadership ITS
+│   ├── test_citations.py       # Citation extraction, source grading, domain classification
+│   ├── test_claims.py          # Claim-to-source mapping, statistic/quote detection
+│   ├── test_entities.py        # Entity detection, regex, false-positive exclusion
+│   ├── test_loaded_language_uproar.py # Loaded language detection, workplace coercion terms
+│   ├── test_nyt_ai_reviews.py   # Isolation framing, pressure language, VADER correction
+│   ├── test_nyt_article_improvements.py  # NYT-specific: agency, coercion, juxtaposition
+│   ├── test_platform_death.py   # Platform eulogy detection, tone distinction
+│   ├── test_quality_standards.py # Quality enforcement: banned phrases, em dashes, scoring
+│   ├── test_scale_magnitude.py  # Scale/magnitude framing, raw number amplification
 │   ├── test_sentiment.py        # 8-dim scoring, framing correction, self-referential detection
 │   ├── test_source_stance.py    # Source extraction, stance, outsourced intensity, kicker framing
-│   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
-│   ├── test_careers.py          # Career loading, migration detection, DiD, leadership ITS
-│   ├── test_nyt_article_improvements.py  # NYT-specific: agency, coercion, juxtaposition
-│   ├── test_nyt_ai_reviews.py   # Isolation framing, pressure language, VADER correction
-│   ├── test_platform_death.py   # Platform eulogy detection, tone distinction
+│   ├── test_topics.py           # Topic classification, all 12 buckets, confidence scoring
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt
