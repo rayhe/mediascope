@@ -198,6 +198,8 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Center for Strategic and International Studies", "CSIS",
             "Council on Foreign Relations", "CFR",
             "Carnegie Endowment",
+            "Pew Research Center", "Pew Research",
+            "Graphite",
         ],
     },
     "Political Figures": {
@@ -205,8 +207,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Donald Trump", "Trump",
             "Joe Biden", "Biden",
             "Kamala Harris",
+            "J.D. Vance", "Vance",
         ],
-        "regex": r"(?<!\w)(Donald Trump|Trump(?!\s+(?:Tower|Hotel|Organization|National|International))|Joe Biden|Biden|Kamala Harris)(?!\w)",
+        "regex": r"(?<!\w)(Donald Trump|Trump(?!\s+(?:Tower|Hotel|Organization|National|International))|Joe Biden|Biden|Kamala Harris|J\.?\s*D\.?\s+Vance|Vance)(?!\w)",
     },
     "Labor/Unions": {
         "aliases": [
@@ -220,6 +223,11 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
     "TikTok": {
         "aliases": [
             "TikTok", "ByteDance", "Shou Zi Chew",
+        ],
+    },
+    "Spotify": {
+        "aliases": [
+            "Spotify", "Daniel Ek",
         ],
     },
     "Snap": {
@@ -268,6 +276,16 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Brilliant Labs",
         ],
         "regex": r"(?<!\w)(Gentle Monster|(?-i:XREAL)|Even Realities|(?-i:Halo)|Solos|Brilliant Labs)(?!\w)",
+    },
+    "VC/Tech Investors": {
+        "aliases": [
+            "Marc Andreessen", "Andreessen",
+            "Andreessen Horowitz", "a16z",
+            "Sequoia Capital", "Sequoia",
+            "Benchmark", "Kleiner Perkins",
+            "Y Combinator", "YC",
+        ],
+        "regex": r"(?<!\w)(Marc Andreessen|Andreessen(?!\s+Horowitz)|Andreessen Horowitz|(?-i:a16z)|Sequoia(?:\s+Capital)?|Benchmark|Kleiner Perkins|Y Combinator|(?-i:YC))(?!\w)",
     },
     "Celebrity/Influencer": {
         "aliases": [

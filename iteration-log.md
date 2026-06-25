@@ -4,6 +4,60 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-25 10:00 PT — Hour Type A: Article Deep Dive (Atlantic)
+
+**Focus:** "A Tool That Crushes Creativity" by Charlie Warzel (The Atlantic, Oct 2025) — opinion essay on AI slop as cultural phenomenon. Full 5-module analysis with manual comparison, gap identification, and systematic fixes.
+
+### Key Metrics Improvement
+
+| Dimension | Before | After |
+|---|---|---|
+| Entity clusters | 8 | 11 (+3: VC/Tech Investors, Spotify, Policy Research) |
+| Entity mentions | 30 | 38 (+8) |
+| Source detection | 2 | 7 (+5 named sources) |
+| Framing devices | 23 | 27 (+4) |
+| Emotional intensity | 0.22 | 0.95 (correctly high for adversarial essay) |
+| Primary topic | ai_development (0.21) | ai_generated_content (0.79) — NEW bucket |
+| Tests | 398 | 429 (+31) |
+
+### Fixes Applied (16 total)
+
+**entities.py:**
+- Added J.D. Vance to Political Figures (regex handles "J. D.", "J.D.", "JD")
+- Created VC/Tech Investors cluster (Marc Andreessen, a16z, Sequoia, Benchmark, etc.)
+- Created Spotify cluster (Spotify, Daniel Ek)
+- Added Graphite + Pew Research Center to Policy Research cluster
+
+**sources.py:**
+- Added 12 neutral attribution verbs: mused/muses, quipped/quips, reflected/reflects, pondered/ponders, dubbed/dubs, coined/coins, pleaded/pleads, implored/implores, beseeched
+- New Pattern 3b: "[Name] has/have/had [verb]" for auxiliary + main verb (caught "Angelos Arnis has dubbed")
+- Pattern 5: Added optional adverb (`\w+ly`) before verb in appositives (caught "convincingly argued")
+
+**framing.py:**
+- Straight-quote ironic quotation patterns (article uses `"` not `""`/"`)
+- "nightmarish" added to catastrophizing patterns
+- "cultural dead end", "model collapse", "ecological harm" added to catastrophizing
+- CEO personalization broadened: `[CEO]'s [plan/vision/strategy/obsession/agenda/initiative/push]`
+
+**sentiment.py:**
+- Added 18 AI-criticism/cultural-criticism emotional terms (narcotic, stupefying, soulless, nihilism, meaninglessness, disorientation, recursive, corrosive, sinister, pervasive, polluted, degrade, slop, unsatisfying, contextless, never-ending, frictionlessness)
+
+**topics.py:**
+- NEW topic bucket `ai_generated_content` (28 keywords: slop, synthetic content, AI-generated, model collapse, ultra-processed, engagement bait, etc.)
+
+### Known Limitations Documented
+
+1. **Ironic quotation at paragraph distance:** 200-char window misses essay-style editorial undercuts that operate across paragraph boundaries. Needs coreference-aware paragraph-level detector.
+2. **Stance misclassification in opinion essays:** Source quoted "supportively" by text content can be deployed ironically by editorial context. Needs ironic deployment detection.
+3. **X (single-letter platform):** Not detected as entity; regex can't disambiguate "X" the platform from "X" the letter without context.
+4. **Scale/magnitude for content production:** "5,000 shows" not in current scale patterns (focused on fines/losses).
+
+### Outputs
+- `examples/sample_output/atlantic_tool_crushes_creativity_2025_10_analysis.md` — Full analysis
+- `tests/test_atlantic_analysis.py` — 31 regression tests
+
+---
+
 ## 2026-06-25 09:00 PT — Hour Type D: Toolkit Quality & Documentation
 
 **Focus:** Test coverage expansion — 4 previously-untested core modules now have comprehensive regression tests. Test count: 268 → 398 (+130 tests, 48.5% increase).

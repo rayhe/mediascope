@@ -226,6 +226,28 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "anxious", "anxiety",
     "reluctance", "reluctant",
     "hesitant",
+    # Cultural criticism / AI slop emotional terms — needed for coverage
+    # of AI-generated content flooding, synthetic media critique, and
+    # cultural erosion framing where editorial deploys visceral language
+    # that VADER reads as neutral
+    "narcotic", "narcotic effect",
+    "stupefying", "stupefied",
+    "soulless", "soul-less",
+    "nightmarish",
+    "nihilism", "nihilistic",
+    "meaninglessness", "meaningless",
+    "disorientation", "disorienting",
+    "recursive", "recursiveness",
+    "corrosive", "corroding", "erode", "erosion",
+    "sinister",
+    "pervasive",
+    "polluted", "pollution", "polluting",
+    "degrade", "degraded", "degrading",
+    "slop", "sloppy",
+    "unsatisfying", "wholly unsatisfying",
+    "contextless",
+    "never-ending",
+    "frictionless", "frictionlessness",
     # Vulnerability / accessibility emotional terms — disability, elderly,
     # isolation, and mental health framing deployed to create sympathy
     "disability", "disabled",

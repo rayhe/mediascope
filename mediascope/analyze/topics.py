@@ -81,6 +81,18 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "trust and safety", "trust & safety", "deepfake", "deepfakes",
         "election interference", "election integrity", "propaganda",
     ],
+    "ai_generated_content": [
+        "slop", "AI slop", "synthetic content", "AI-generated",
+        "AI generated", "generative AI content", "generated content",
+        "generated video", "generated image", "generated text",
+        "generated article", "AI art", "AI video", "AI image",
+        "model collapse", "training data", "feedback loop",
+        "ultra-processed", "frictionless", "dopamine",
+        "engagement bait", "engagement", "viral",
+        "spam", "spammy", "junk", "meaninglessness",
+        "hallucination", "hallucinations",
+        "watermark", "deepfake",
+    ],
     "financial_results": [
         "earnings", "quarterly results", "revenue", "profit",
         "net income", "operating income", "earnings per share", "EPS",

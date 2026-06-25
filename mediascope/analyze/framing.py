@@ -128,8 +128,14 @@ _CATASTROPHIZING_PATTERNS: list[re.Pattern] = [
         re.IGNORECASE,
     ),
     re.compile(
-        r"\b(?:nightmare|horror|terrifying|apocalyptic|"
+        r"\b(?:nightmare|nightmarish|horror|terrifying|apocalyptic|"
         r"cataclysmic|seismic shift|tectonic shift)\b",
+        re.IGNORECASE,
+    ),
+    # "cultural dead end" / "dead end" as terminal-trajectory framing
+    re.compile(
+        r"\b(?:cultural dead end|dead end|cultural collapse|"
+        r"model collapse|ecological harm|ecological collapse)\b",
         re.IGNORECASE,
     ),
 ]
@@ -712,6 +718,18 @@ _CEO_PERSONALIZATION_PATTERNS: list[re.Pattern] = [
         r"Microsoft|Amazon|OpenAI|Nvidia|X|Twitter)\b",
         re.IGNORECASE,
     ),
+    # "[CEO]'s [plan/vision/strategy/initiative]" — personalizing corporate
+    # strategy under the CEO's name, implying individual authoritarian control
+    # over institutional decisions.  Common in Atlantic/NYT coverage.
+    re.compile(
+        r"\b(?:Mark Zuckerberg|Zuckerberg|Elon Musk|Musk|Tim Cook|Cook|"
+        r"Sundar Pichai|Pichai|Satya Nadella|Nadella|Jeff Bezos|Bezos|"
+        r"Sam Altman|Altman|Jensen Huang|Huang|Andy Jassy|Jassy)'s\s+"
+        r"(?:plan|vision|strategy|initiative|ambition|quest|mission|"
+        r"push|drive|bet|gamble|gambit|dream|pitch|promise|agenda|"
+        r"obsession|fixation|crusade|campaign)\b",
+        re.IGNORECASE,
+    ),
     # "[CEO]-led [Company]" or "[Company], led by [CEO]"
     re.compile(
         r"\b(?:Mark Zuckerberg|Zuckerberg|Elon Musk|Musk|Tim Cook|Cook|"
@@ -986,7 +1004,7 @@ _ANALOGY_MARKER_PATTERNS: list[re.Pattern] = [
 _IRONIC_QUOTATION_PATTERNS: list[re.Pattern] = [
     # Quote ending followed by contradiction — smart quotes
     re.compile(
-        r'[\u201d"].{0,10}?'     # end of quote
+        r'[\u201d"].{0,10}?'     # end of quote (smart or straight)
         r'(?:\.\s+|\s*[;:]\s*)'  # sentence boundary
         r'(?:But |Yet |However,? |In (?:other words|reality|practice|fact),? |'
         r'The (?:idea|reality|truth|problem|trouble) is |'
@@ -1003,9 +1021,23 @@ _IRONIC_QUOTATION_PATTERNS: list[re.Pattern] = [
         r'conflate|sidestep|obscure|downplay|minimize)',
         re.IGNORECASE | re.DOTALL,
     ),
+    # Same pattern for straight quotes
+    re.compile(
+        r'".{0,200}?'
+        r'\bseems? to (?:elide|ignore|forget|overlook|miss|gloss over|paper over|'
+        r'conflate|sidestep|obscure|downplay|minimize)',
+        re.IGNORECASE | re.DOTALL,
+    ),
     # "wrongly believe" / "wrongly assume" — editorial verdict after quote
     re.compile(
         r'[\u201d"].{0,200}?'
+        r'\b(?:wrongly|mistakenly|naively|incorrectly) '
+        r'(?:believe|assume|suggest|claim|imply|argue)',
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Same pattern for straight quotes
+    re.compile(
+        r'".{0,200}?'
         r'\b(?:wrongly|mistakenly|naively|incorrectly) '
         r'(?:believe|assume|suggest|claim|imply|argue)',
         re.IGNORECASE | re.DOTALL,

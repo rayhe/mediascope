@@ -19,6 +19,9 @@ NEUTRAL_VERBS: set[str] = {
     "confirmed", "acknowledged", "responded", "replied",
     "mentioned", "indicated", "described", "recalled",
     "wrote", "addressed", "pointed",  # "wrote"/"addressed" for letters, "pointed out"
+    "mused", "quipped", "reflected", "pondered",  # reflective/conversational attribution
+    "dubbed", "coined",  # naming/labeling attribution
+    "pleaded", "implored", "beseeched",  # urgent appeal attribution
     # Present-tense forms — many publications use present tense for
     # attribution ("says Gong", "notes Ji") especially in analytical and
     # explainer articles.  Missing these caused zero-source detection on
@@ -29,6 +32,9 @@ NEUTRAL_VERBS: set[str] = {
     "mentions", "indicates", "describes", "recalls",
     "agrees", "points",  # "agrees" / "points out" — common neutral verbs
     "writes", "addresses",  # present-tense of added verbs
+    "muses", "quips", "reflects", "ponders",  # present-tense reflective
+    "dubs", "coins",  # present-tense labeling
+    "pleads", "implores",  # present-tense urgent appeal
 }
 
 LOADED_VERBS: set[str] = {
@@ -379,15 +385,52 @@ def extract_sources(text: str) -> list[SourceMention]:
             attribution_verb="according to",
         ))
 
+    # Pattern 3b: "[Name] has/have/had [verb]" — auxiliary + main verb
+    # Catches: "Angelos Arnis has dubbed", "Will Manidis had argued",
+    # "Joe Weisenthal has noted"
+    name_aux_verb = re.compile(
+        rf"\b([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+)\s+"
+        rf"(?:has|have|had)\s+"
+        rf"(?:\w+ly\s+)?"  # optional adverb
+        rf"({verb_alternation})\b",
+    )
+    for m in name_aux_verb.finditer(text):
+        name = m.group(1).strip()
+        verb = m.group(2).strip().lower()
+        if name in seen_names:
+            continue
+
+        first_word = name.split()[0]
+        if first_word in _NAME_STOP_FIRST_WORDS:
+            continue
+        if name in _NAME_STOP_NAMES:
+            continue
+
+        seen_names.add(name)
+
+        ctx_start = max(0, m.start() - 100)
+        ctx_end = min(len(text), m.end() + 100)
+        context = text[ctx_start:ctx_end]
+
+        sources.append(SourceMention(
+            name=name,
+            is_anonymous=False,
+            is_expert=_is_expert_by_title(context),
+            affiliation=_extract_affiliation(context),
+            quote=_extract_nearby_quote(text, m.start(), m.end()),
+            attribution_verb=verb,
+        ))
+
     # Pattern 5: "[Name], [appositive clause], [verb]"
     # Catches "Jessica Ji, a senior research analyst at Georgetown, agrees."
     # Also catches "Tracy Clayton, a Meta spokesperson, tells WIRED."
+    # Also catches adverb+verb: "Will Manidis, a start-up founder, convincingly argued..."
     # The appositive is a comma-delimited descriptor between name and verb.
     name_appositive_verb = re.compile(
         rf"\b([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+)"
         rf",\s+(?:an? |the )?[A-Za-z]{{2,}}"  # start of appositive (may have capitalized org names)
         rf"[^.\"]*?"                         # rest of appositive (no sentence-end or quote)
-        rf",\s*({verb_alternation})\b",
+        rf",\s*(?:\w+ly\s+)?({verb_alternation})\b",  # optional adverb before verb
     )
     for m in name_appositive_verb.finditer(text):
         name = m.group(1).strip()
