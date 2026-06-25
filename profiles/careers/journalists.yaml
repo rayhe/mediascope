@@ -2166,3 +2166,84 @@ journalists:
         start: "2021-07"
         source_url: "https://talkingbiznews.com/media-news/hamzelou-joins-mit-tech-review-as-senior-reporter/"
         notes: "Senior reporter covering health, biomedicine, and biotechnology. KEY: Second New Scientist → MIT TR migration (after Will Douglas Heaven). Both are British, both have Imperial College London connections (Heaven PhD, Hamzelou MSc). New Scientist → MIT TR is an underappreciated editorial pipeline."
+
+
+  # ====================================================================
+  # WIRED SECURITY DESK — CURRENT STAFF (added 2026-06-25)
+  # ====================================================================
+  # Wired's security desk is a major source of adversarial-frame tech
+  # coverage. Led by Andrew Couts (Senior Editor, Security &
+  # Investigations), the desk produces high-impact surveillance,
+  # privacy, and cybersecurity reporting. These entries complement
+  # the investigative journalists section (Dell Cameron, Dhruv Mehrotra,
+  # Andy Greenberg) with desk-level staffing data.
+  # ====================================================================
+
+  - name: "Matt Burgess"
+    notes: "Wired UK's primary security/privacy reporter. British journalist based in London. Career: press agencies/national UK newspapers → B2B digital magazines (Progressive Digital Media Group) → Factor magazine (deputy editor) → Wired UK (staff writer → acting commissioning editor → senior editor → deputy digital editor → senior writer). Author of 3 books including WIRED Guides: Artificial Intelligence (Penguin Random House, 2021). Created FOI Directory (2012) — 10,000+ UK public authorities. ANALYTICAL VALUE: Burgess is the longest-serving current security reporter at Wired UK, with a career arc showing upward mobility within the publication (rare — most lateral-hire from other outlets). His beat spans GDPR enforcement, deepfake ecosystems, border surveillance, and submarine internet cables. His Wired UK base means his editorial posture is shaped by both UK/EU regulatory context AND Condé Nast International editorial standards — a useful comparison point for US-based Wired security coverage. His FOI Directory background signals a transparency-activist orientation predating his journalism career."
+    career:
+      - publication: "uk-press"
+        event_type: "hired"
+        role: "journalist"
+        beat: "general news"
+        start: "2010-01"
+        end: "2013-12"
+        source_url: "https://talkingbiznews.com/they-re-hiring/wired-uk-hires-burgess-as-staff-writer/"
+        notes: "Early career at press agencies and national UK newspapers. University of Sheffield, journalism degree. Created FOI Directory (2012), a comprehensive database of 10,000+ UK public authorities for freedom of information requests — signals transparency/accountability orientation. Also freelanced for The Economist, Business Life, Creative Review during this period."
+      - publication: "progressive-digital-media"
+        event_type: "hired"
+        role: "journalist"
+        beat: "B2B digital media"
+        start: "2014-01"
+        end: "2015-06"
+        source_url: "https://theorg.com/org/wired-uk/org-chart/matt-burgess"
+        notes: "B2B digital magazines at Progressive Digital Media Group. Pre-Wired trade press experience."
+      - publication: "factor-magazine"
+        event_type: "hired"
+        role: "deputy_editor"
+        beat: "technology, digital"
+        start: "2015-07"
+        end: "2016-06"
+        source_url: "https://theorg.com/org/wired-uk/org-chart/matt-burgess"
+        notes: "Deputy editor at Factor magazine. First editorial leadership role."
+      - publication: "wired"
+        event_type: "hired"
+        role: "staff_writer"
+        beat: "technology, internet rights, privacy"
+        start: "2016-07"
+        source_url: "https://talkingbiznews.com/they-re-hiring/wired-uk-hires-burgess-as-staff-writer/"
+        notes: "Hired as staff writer at Wired UK. Beat: cybersecurity, internet rights, privacy, transparency, data, GDPR. Published first book Freedom of Information (Routledge, 2015) before joining Wired."
+      - publication: "wired"
+        event_type: "promoted"
+        role: "acting_commissioning_editor"
+        beat: "security, privacy, technology"
+        start: "2018-01"
+        end: "2019-06"
+        source_url: "https://www.cision.co.uk/blog/media-briefing-matt-burgess-wired-uk/"
+        notes: "Acting commissioning editor. Cision media briefing described him as 'senior editor' during this period. Indicates editorial management responsibilities alongside reporting."
+      - publication: "wired"
+        event_type: "promoted"
+        role: "senior_writer"
+        beat: "security, privacy, surveillance, deepfakes, EU regulation"
+        start: "2019-07"
+        source_url: "https://www.wired.com/author/matt-burgess/"
+        notes: "Current role: senior writer, security desk (Wired UK). Key coverage areas: GDPR enforcement failures (2022 investigation), UK Home Office web surveillance trial, Clearview AI/GDPR, deepfake nudify ecosystem (reported 1.4M+ Telegram accounts using nudify bots), North Korean animators working on Western TV shows, submarine internet cables (Egypt), passport-free travel via facial recognition. Wired Explains video: 'How does facial recognition work?' Published Reed Hastings: Building Netflix (W&N, 2020) and WIRED Guides: Artificial Intelligence (Penguin Random House, 2021). Contact: matt_burgess@wired.com, @mattburgess1 (Bluesky). Also published in The Guardian, HuffPost, TechCrunch per Muck Rack."
+
+  - name: "Lily Hay Newman"
+    notes: "Wired's senior security/privacy writer. Based in New York City. Career: Slate/Future Tense → Wired (~2017). ~7+ years at Wired as of 2024, making her one of the security desk's longest-serving current staff alongside Andy Greenberg. ANALYTICAL VALUE: Newman's Slate/Future Tense background (a collaboration between Slate, New America Foundation, and Arizona State University) means she entered Wired from a think-tank-adjacent environment focused on technology's societal implications — a more advocacy-oriented pipeline than typical journalism-to-journalism moves. Her beat (cybersecurity, hacking, digital privacy, protest surveillance, teen digital safety) overlaps heavily with Matt Burgess's but from a US lens vs. his UK/EU lens, enabling cross-continental editorial comparison within the same desk. Hosts Wired video series 'Incognito Mode' and 'The Big Interview.' Works closely with Andrew Couts (Senior Editor, Security & Investigations)."
+    career:
+      - publication: "slate"
+        event_type: "hired"
+        role: "technology_reporter"
+        beat: "technology, digital policy"
+        start: "2014-01"
+        end: "2017-06"
+        source_url: "https://www.wired.com/author/lily-hay-newman/"
+        notes: "Technology reporter at Slate magazine. Also staff writer for Future Tense, Slate's partnership with New America Foundation and Arizona State University exploring emerging technology policy. The Future Tense pipeline signals exposure to think-tank framing of technology issues — policy-first, societally focused. Prior work also in Gizmodo, Fast Company, IEEE Spectrum, Popular Mechanics."
+      - publication: "wired"
+        event_type: "hired"
+        role: "senior_writer"
+        beat: "security, privacy, hacking, digital safety"
+        start: "2017-07"
+        source_url: "https://www.wired.com/author/lily-hay-newman/"
+        notes: "Senior writer, security desk. ~7+ year tenure (as of 2024). Key coverage: Trickbot Russian cybercriminals (Fletcher School/Tufts speaker on this topic), Okta/Lapsus$ hack, CISA/Jen Easterly interview, protest surveillance, airport security vulnerabilities, digital opsec for teenagers. Hosts/appears on Wired video series 'Incognito Mode' and 'The Big Interview.' Works with Andrew Couts (Senior Editor, Security & Investigations). Also contributes to IEEE Spectrum and Popular Mechanics. Fletcher School (Tufts) speaker on Russian cybercriminals. KEY: One of few Wired writers with both long tenure AND video presence — bridges print authority with audience-facing brand building."

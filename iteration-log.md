@@ -2332,3 +2332,31 @@ The MIT Technology Review → Wired pipeline is now the single most-documented i
 ### Files
 - `profiles/careers/journalists.yaml` — +3 journalists (Greenberg, Kang, Mullin), total 59
 - `README.md` — journalist count updated 56 → 59
+
+
+---
+
+## Iteration: 2026-06-25T11:00 PT — Type B: Journalist Research
+
+### Focus
+Added 2 new journalists to `profiles/careers/journalists.yaml`: Matt Burgess (Wired UK security), Lily Hay Newman (Wired US security). New section: "WIRED SECURITY DESK — CURRENT STAFF." Total journalist count: 67 → 69.
+
+### What Was Improved
+
+**Matt Burgess** — Wired UK's primary security/privacy reporter, based in London. Career: UK press agencies/national newspapers → Progressive Digital Media Group (B2B) → Factor magazine (deputy editor) → Wired UK (staff writer → acting commissioning editor → senior editor → deputy digital editor → senior writer, ~2016–present). University of Sheffield journalism degree. Author of 3 books: *Freedom of Information* (Routledge, 2015), *Reed Hastings: Building Netflix* (W&N, 2020), *WIRED Guides: Artificial Intelligence* (Penguin Random House, 2021). Created FOI Directory (2012) — 10,000+ UK public authorities. Key coverage: GDPR enforcement failures, Clearview AI/GDPR, deepfake nudify ecosystem (1.4M+ Telegram accounts), UK Home Office web surveillance, submarine internet cables, passport-free travel/facial recognition. Also published in The Guardian, HuffPost, TechCrunch. Analytical value: longest-serving current security reporter at Wired UK with upward mobility within publication (rare); UK/EU regulatory lens enables cross-continental comparison with US-based security desk.
+
+**Lily Hay Newman** — Wired US senior security/privacy writer, based in NYC. Career: Slate/Future Tense (technology reporter, ~2014–2017) → Wired (senior writer, ~2017–present). ~7+ year tenure makes her one of the security desk's longest-serving current staff alongside Andy Greenberg. Slate's Future Tense was a collaboration with New America Foundation and Arizona State University — think-tank-adjacent pipeline. Key coverage: Trickbot Russian cybercriminals, Okta/Lapsus$ hack, CISA/Jen Easterly interview, protest surveillance, airport security vulnerabilities, digital opsec for teens. Hosts/appears on Wired video series "Incognito Mode" and "The Big Interview." Works closely with Andrew Couts (Senior Editor, Security & Investigations). Fletcher School (Tufts) speaker. Analytical value: US-lens counterpart to Burgess — same desk, same beat, different regulatory contexts. Think-tank pipeline via Future Tense signals policy-first framing orientation.
+
+### Source URLs
+- Matt Burgess: https://www.wired.com/author/matt-burgess/, https://talkingbiznews.com/they-re-hiring/wired-uk-hires-burgess-as-staff-writer/, https://theorg.com/org/wired-uk/org-chart/matt-burgess, https://www.cision.co.uk/blog/media-briefing-matt-burgess-wired-uk/, https://muckrack.com/mattburgess
+- Lily Hay Newman: https://www.wired.com/author/lily-hay-newman/, https://fletcher.tufts.edu/ (speaker panel reference)
+
+### Key Insight
+The new "Wired Security Desk" section now provides comprehensive desk-level staffing data: Andy Greenberg (~12 years, investigative), Dell Cameron (Gizmodo → Wired, surveillance), Dhruv Mehrotra (data/computational), Matt Burgess (Wired UK, EU lens), and Lily Hay Newman (US lens, think-tank pipeline). This enables desk-level editorial analysis — do all five writers exhibit similar adversarial-frame intensity toward Big Tech, or does it vary by beat sub-specialization (cybercrime vs. surveillance vs. GDPR vs. digital safety)? The Burgess/Newman pairing is particularly useful: same employer, same beat, different continents and regulatory contexts.
+
+### Test Results
+- 429 tests passing (all green)
+
+### Files
+- `profiles/careers/journalists.yaml` — +2 journalists (Burgess, Newman), new section, total 69
+- `README.md` — journalist count updated 67 → 69
