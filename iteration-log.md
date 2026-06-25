@@ -4,6 +4,193 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-25 09:00 PT — Hour Type C: Ownership & Funding Deep Dive
+
+**Focus:** The Atlantic — first dedicated Type C iteration for this publication. Six major expansions: new EC investments (X-Energy, Xcimer, LoveFrom chain), civic governance entanglements (Partnership for San Francisco), litigation landscape (strategic non-litigation + union bargaining), new revenue relationships (NewsGuard AI, CivicScience, Atlantic Labs), and cross-publication OpenAI licensing map.
+
+### What was improved:
+
+1. **New Emerson Collective investments (3 additions + 1 chain deepening):**
+   - **X-Energy** — $700M Series C (Feb 2025). EC co-invested with AMAZON. Nuclear SMR startup. Creates financial alignment with Meta's cloud/advertising/device competitor. Source: TechCrunch.
+   - **Xcimer** — $100M round. Fusion laser energy. Other investors: Hedosophia, Breakthrough Energy Ventures, Lowercarbon Capital. Source: TechCrunch.
+   - **California Forever** — LPJ investor in planned city, 66,000 acres in Solano County. Source: Wikipedia (cited).
+   - **LoveFrom/io Products chain deepened:** EC didn't just invest in io Products — LPJ backed Jony Ive's LoveFrom BEFORE it birthed io Products. Ive: "If it wasn't for Laurene, there wouldn't be LoveFrom." LPJ hosted Ive/Altman prototype reveal at EC Demo Day. Full chain: EC backed LoveFrom (2019) → LoveFrom birthed io Products → OpenAI acquired io Products ($6.5B, 2025). LPJ is an ENABLER, not merely an investor. Sources: 9to5Mac (2 articles).
+   - **MSE divestiture documented:** LPJ divested 20% stake in Monumental Sports (Dec 2025).
+
+2. **Civic governance entanglements (new section):**
+   - **Partnership for San Francisco** (March 2025): 26-member civic coalition led by Katherine August-deWilde.
+   - Co-chairs: LPJ + Ruth Porat (Alphabet/Google President & CIO)
+   - Members include: Sam Altman (OpenAI CEO), Jony Ive (LoveFrom)
+   - Quarterly meetings creating DIRECT PERSONAL GOVERNANCE LINKS between Atlantic's owner and:
+     (a) Meta's #1 advertising competitor (Google/Alphabet)
+     (b) Atlantic's content licensing partner + investment exit company (OpenAI)
+     (c) The designer whose company Atlantic's owner funded → became OpenAI's $6.5B acquisition
+   - No other publication owner in the dataset has this density of civic governance links
+   - Sources: FA Magazine, Bloomberg, Mace Magazine
+
+3. **Litigation connections (0 → 2 entries):**
+   - **Strategic non-litigation:** Atlantic has ZERO lawsuits against AI companies. Chose licensing (May 2024) over litigation — 5 months after NYT sued (Dec 2023). Conspicuously absent from 400-newspaper OpenAI/Microsoft suit (June 2026, SDNY). Alex Reisner's Books3 investigation exposed Meta/LLaMA training data but Atlantic didn't sue. Revenue alignment with AI companies rather than fellow publishers.
+   - **Union bargaining dispute:** Atlantic Union (NewsGuild of NY) demanded OpenAI deal transparency. ~60 journalists signed letter. Thompson/OpenAI refused full disclosure. Bargaining for AI contract protections ongoing.
+   - Sources: Bloomberg Law, The Wrap, NYGuild, TechCrunch
+
+4. **New revenue relationships (3 entries):**
+   - **NewsGuard AI** (June 2026): Launch co-marketing partner. Revenue-share model. CRITICAL TENSION — NewsGuard positions itself AGAINST LLMs that "shoplift journalism" while Atlantic licenses content TO one of those LLMs. Thompson promotes both without acknowledging contradiction.
+   - **CivicScience** (Sep 2025): Advertising partnership for real-time consumer insights and targeting. Shows Atlantic building ad-tech capabilities alongside subscription revenue.
+   - **Atlantic Labs**: Expanded from mention to full revenue_relationship entry. Atlantic's product team has "privileged access" to OpenAI tech — deeper than standard licensing. Co-developing news features in ChatGPT.
+   - Sources: CNN, NewsGuard, Editor & Publisher, Morningstar/PR Newswire, OpenAI blog, Maginative
+
+5. **Known conflicts expanded (8 → 11):**
+   - NEW: Civic governance (severity 3) — Partnership for SF links to Porat/Altman/Ive
+   - NEW: Co-investment alignment (severity 2) — EC + Amazon co-investing in X-Energy
+   - NEW: AI partnership tension (severity 1) — simultaneous OpenAI deal + anti-LLM NewsGuard partnership
+
+6. **Cross-publication OpenAI licensing map (new analytical section):**
+   - 4 of 5 tracked publications have financial relationships with OpenAI
+   - Atlantic: Licensing + product + equity exit (deepest)
+   - Condé Nast/Wired: Licensing (Aug 2024)
+   - Guardian: Licensing (Feb 2025)
+   - NYT: Lawsuit (only litigant)
+   - MIT TR: No documented relationship
+   - 3 of 5 chose revenue over enforcement
+
+### Key analytical discoveries:
+
+1. **LPJ's civic governance links create an unprecedented concentration of AI industry power around a media owner.** She co-chairs a quarterly-meeting civic organization with Google's president, sits at the same table as OpenAI's CEO, and already has the deepest financial relationship with OpenAI of any publication in the dataset. No disclosure of these relationships has been observed in Atlantic coverage.
+
+2. **The Atlantic's "dual AI monetization" strategy is unique in the dataset.** No other tracked publication simultaneously licenses content to OpenAI AND co-markets a product positioned against ChatGPT's approach. Thompson's messaging is strategically contradictory — promoting both revenue streams without acknowledging the tension. This suggests sophisticated hedging: maximizing revenue regardless of which side of the AI-vs-journalism debate prevails.
+
+3. **EC's X-Energy co-investment with Amazon adds a FIFTH Meta competitor to the financial alignment list.** The Atlantic's owner now has financial connections to: Apple ($16B+ stock), OpenAI (licensing + equity exit), Mistral AI (open-source LLM competitor), Google/Alphabet (civic governance), and Amazon (X-Energy co-investment). Five of the six largest Meta competitors have financial links to Atlantic's owner.
+
+4. **The LoveFrom chain deepens the io Products conflict beyond equity.** LPJ is not merely an investor — she backed the design firm in 2019, personally facilitated the Ive-Altman relationship, and hosted their product reveal at EC's own Demo Day. The chain (EC funds LoveFrom → LoveFrom creates io Products → OpenAI acquires io Products) shows LPJ's involvement at every stage of what became OpenAI's $6.5B acquisition.
+
+5. **Strategic non-litigation reveals incentive alignment.** Atlantic chose revenue over enforcement at the exact moment its peers were filing suits. The 400-newspaper OpenAI/Microsoft suit (June 2026) makes Atlantic's absence more conspicuous. This is consistent with the compound OpenAI relationship — Atlantic benefits when OpenAI succeeds.
+
+### New analytical questions added:
+6. Google/Alphabet coverage bias (via Porat civic link)?
+7. Amazon coverage bias (via X-Energy co-investment)?
+8. NewsGuard vs OpenAI messaging consistency?
+9. Cross-publication OpenAI licensing effect on coverage?
+
+### Stats:
+- Atlantic profile: 511 → 761 lines (+250 lines, 49% expansion)
+- Known conflicts: 8 → 11 (+3)
+- Litigation connections: 0 → 2
+- Revenue relationships: 2 → 5 (+3: NewsGuard AI, CivicScience, Atlantic Labs)
+- Investment entities: 13 → 17 (+4: X-Energy, Xcimer, LoveFrom expanded, California Forever)
+- Civic connections section: NEW (Partnership for SF, SF Art Institute)
+- Cross-publication OpenAI map: NEW analytical section in notes
+- Source URLs cited: 18 across all new entries
+- Tests: 268/268 passing
+- YAML validity: confirmed
+
+---
+
+## 2026-06-25 08:00 PT — Hour Type B: Journalist/Publication Research
+
+**Focus:** MIT Technology Review staff expansion — 8 new journalists tracked (7 new entries + 1 major update), total journalists 59 → 67. Previously MIT TR had only 3 tracked staff (Honan, Heikkilä, Knight); now 10 current/former staff with full career histories.
+
+### Key Discovery: Melissa Heikkilä departed MIT TR for Financial Times
+
+**Major correction:** Heikkilä was listed as MIT TR's "current beat holder" for AI, but she departed in January 2025 for the Financial Times as AI correspondent. Her full career chain was incomplete — now expanded:
+- Helsingin Sanomat (Finland's largest daily, ~2016-2018)
+- The Economist (assistant news editor, ~2019-2020) — **previously unknown**
+- POLITICO Europe (AI correspondent, ~2020-2022)
+- MIT Technology Review (senior AI reporter, May 2022 – Jan 2025)
+- Financial Times (AI correspondent, started Jan 27, 2025)
+
+Notable irony: MIT TR + FT formed "The State of AI" editorial partnership (Oct 2025), where Heikkilä was paired with her former MIT TR colleague Eileen Guo on "The End of Privacy" edition.
+
+### New journalists added (7):
+
+1. **James O'Donnell** — Senior AI Reporter (Heikkilä's replacement)
+   - Villanova BA (Econ/PoliSci) → Fulbright to Finland → Brookings → EIG → Princeton MPA → FRONTLINE PBS Tow Fellow → MIT TR
+   - 2026 ASME National Magazine Award finalist (AI energy investigation with Casey Crownhart)
+   - Policy/institutional power lens vs. Heikkilä's EU regulatory frame — measurable editorial shift
+   - Sources: technologyreview.com/author/james-odonnell/, jrc.princeton.edu, pbs.org/wgbh/frontline
+
+2. **Will Douglas Heaven** — Senior AI Editor
+   - PhD CS Imperial College London → New Scientist chief tech editor → BBC Future Now founding editor → MIT TR (~2020)
+   - Only MIT TR senior editor with a CS PhD — genuine technical depth
+   - Shapes entire AI editorial direction, 219+ articles
+   - Based in London — one of MIT TR's UK-based staff
+   - Sources: technologyreview.com/author/will-douglas-heaven/, theorg.com, sciencefriday.com
+
+3. **Eileen Guo** — Senior Reporter, Features & Investigations
+   - Tufts BA → co-founded Impassion Afghanistan + Paiwandgah (Kabul, 2.5 years) → MIT Press Innovations → freelance (NYT, WaPo, NatGeo, Wired) → MIT TR (~2021)
+   - Ida B. Wells Fellow (Type Investigations). Work sparked EU antitrust investigation (Amazon/iRobot), contract suspensions, US AI bias standards
+   - MIT TR's primary accountability journalist — most explicitly critical editorial stance
+   - Sources: eileenguo.com, muckrack.com/eileen-guo, talkingbiznews.com, ire.org
+
+4. **Casey Crownhart** — Senior Climate & Energy Reporter
+   - MIT BS ChemE + Literature → materials science startup → NYU SHERP MA → freelance → MIT TR (~2022)
+   - 300+ articles. Writes The Spark climate newsletter. Science Friday regular contributor
+   - ASME finalist with O'Donnell for AI energy investigation — cross-beat collaboration
+   - Sources: technologyreview.com/author/casey-crownhart/, popsci.com, talkingbiznews.com
+
+5. **Amy Nordrum** — Executive Editor of Operations
+   - Ohio Univ BA → NYU SHERP MA → IEEE Spectrum news manager → MIT TR (Jul 2020) → NYU Stern MBA
+   - Oversees franchise lists (10 Breakthrough Technologies, Innovators Under 35)
+   - Not a reporter but shapes editorial ops and standards
+   - Sources: amynordrum.com, technologyreview.com/author/amy-nordrum/, theorg.com
+
+6. **Tate Ryan-Mosley** — Senior Tech Policy Reporter
+   - Kellogg Institute fellow (conflict/post-war development, 2012) → tech strategy consultant → MIT TR researcher → MIT TR reporter (~2019/2020)
+   - 113+ articles. The Technocrat newsletter. In Machines We Trust podcast
+   - Covers tech policy, democracy, elections, facial recognition regulation
+   - Sources: event.technologyreview.com/emtech-next/speakers, itgo.me (author page), muckrack.com
+
+7. **Caiwei Chen** — China Reporter
+   - Columbia MA → Rest of World → MIT TR (~2024)
+   - 5+ years covering Chinese internet/tech. Part of Chaoyang Trap newsletter
+   - Sources: talkingbiznews.com
+
+8. **Jessica Hamzelou** — Senior Health/Biomedicine/Biotech Reporter
+   - UCL BSc → Imperial College London MSc → 12+ years at New Scientist → MIT TR (~2021)
+   - Second New Scientist → MIT TR pipeline (after Will Douglas Heaven)
+   - Sources: talkingbiznews.com
+
+### Analytical insights discovered:
+
+1. **MIT TR is a net exporter of journalism talent:**
+   - MIT TR → Wired: Will Knight (2018), Zeyi Yang (~2025), Emily Mullin (MIT TR → Knight SJF → Wired)
+   - MIT TR → Atlantic: Karen Hao (2022)
+   - MIT TR → Financial Times: Melissa Heikkilä (Jan 2025)
+   - 5+ departures to other tracked/major publications in ~7 years
+
+2. **New Scientist → MIT TR is an underappreciated British pipeline:**
+   - Will Douglas Heaven (chief tech editor → senior AI editor)
+   - Jessica Hamzelou (biomed reporter → senior reporter)
+   - Both British, both Imperial College London connections (PhD, MSc)
+
+3. **NYU SHERP is institutional pipeline to MIT TR:**
+   - Amy Nordrum (MA → MIT TR)
+   - Casey Crownhart (MA → MIT TR)
+   - Same graduate program feeding both editorial and reporting staff
+
+4. **O'Donnell replacing Heikkilä = editorial frame shift:**
+   - Heikkilä: Finnish → EU regulatory beat (POLITICO Europe → MIT TR) → covered AI through European regulatory lens
+   - O'Donnell: American → policy research (Brookings/Princeton) → FRONTLINE → covers AI through institutional power dynamics
+   - Measurable difference in framing should appear in post-Jan-2025 MIT TR AI coverage
+
+5. **Heikkilä's presence at FT may have catalyzed MIT TR + FT partnership:**
+   - She departed Jan 2025, partnership announced Oct 2025
+   - She was paired with former colleague Eileen Guo — pre-existing relationship
+
+### Editorial changes updated:
+- Added Heikkilä departure + O'Donnell replacement entry
+- Added Caiwei Chen hire entry
+- Connected to Zeyi Yang departure timeline
+
+### Stats:
+- journalists.yaml: +287 lines (8 new entries, 1 major update)
+- editorial_changes.yaml: +14 lines (2 new entries)
+- README.md: journalist count 59 → 67, added Heikkilä migration to examples
+- Tests: 268 (all passing, no new tests — changes are career data additions)
+- Commit: `0dab417`
+- Pushed to GitHub: ✅
+
+---
+
 ## 2026-06-25 06:00 PT — Hour Type A: Article Deep Dive
 
 **Focus:** Entity detection coverage expansion — 3 new entity clusters and expanded aliases for 2 existing clusters, validated against Wired's "Meta's Very Own Smart Glasses Go on Sale Today for $299" (Julian Chokkattu, June 23, 2026).

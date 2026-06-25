@@ -100,6 +100,57 @@ ownership_chain:
         relationship: "Emerson Collective invested in 2021. Fusion energy company."
         competitive_with: []
         source_url: "https://en.wikipedia.org/wiki/Emerson_Collective"
+      - entity: "X-Energy"
+        relationship: >
+          Emerson Collective participated in X-Energy's expanded $700M Series C round (Feb 2025).
+          X-Energy is a small modular nuclear reactor (SMR) startup building Xe-100 reactors (80 MW each)
+          using TRISO fuel. Other investors in the round: AMAZON (development agreements for 300 MW of
+          nuclear power in Pacific Northwest), Ares Management, Jane Street, Segra Capital Management.
+          First reactor for Amazon expected early 2030s. EC's co-investment with Amazon creates a
+          financial alignment between The Atlantic's owner and a major Meta competitor.
+        competitive_with: ["Meta"]
+        source_urls:
+          - "https://techcrunch.com/2025/02/07/laurene-powell-jobs-joins-amazon-in-backing-nuclear-startup-x-energy-in-700m-round/"
+        notes: >
+          CRITICAL: EC is co-investing alongside Amazon, which competes with Meta in AI/cloud (AWS),
+          consumer devices (Ring/Alexa vs Meta devices), and advertising. This financial alignment
+          adds Amazon to the list of Meta competitors EC has financial connections with (Apple, OpenAI,
+          Mistral, Google/Alphabet via civic partnership). Amazon's nuclear-for-data-centers thesis
+          directly supports AI infrastructure competition with Meta.
+      - entity: "Xcimer"
+        relationship: >
+          Emerson Collective participated in Xcimer's $100M round. Colorado-based fusion energy
+          startup building a 10-megajoule laser system (5x more powerful than NIF). Other investors:
+          Hedosophia, Breakthrough Energy Ventures, Gigascale Capital, Lowercarbon Capital.
+          Turned on Phoenix prototype (most powerful privately owned laser) in June 2025.
+        competitive_with: []
+        source_url: "https://techcrunch.com/2024/09/15/every-fusion-startup-that-has-raised-over-100m/"
+      - entity: "LoveFrom / io Products"
+        relationship: >
+          Emerson Collective / LPJ BACKED Jony Ive's LoveFrom design firm after he left Apple in 2019.
+          Ive has stated: 'If it wasn't for Laurene, there wouldn't be LoveFrom.' LoveFrom later
+          birthed io Products (AI hardware startup co-founded by Ive and Sam Altman), which OpenAI
+          acquired for $6.5 BILLION in 2025. This creates the COMPLETE FINANCIAL CHAIN: EC backed
+          LoveFrom → LoveFrom birthed io Products → io Products acquired by OpenAI. EC's investment
+          predates and enabled the entity that became OpenAI's largest acquisition. At Emerson Collective's
+          Demo Day, LPJ personally interviewed Ive and Altman about their first hardware prototypes.
+        competitive_with: ["Meta", "Apple"]
+        source_urls:
+          - "https://9to5mac.com/2025/11/jony-ive-and-sam-altman-have-first-prototype-of-mysterious-ai-hardware/"
+          - "https://9to5mac.com/2025/06/jony-ive-and-laurene-powell-jobs-admit-to-dark-side-of-tech/"
+        notes: >
+          This deepens the io Products conflict beyond the equity exit. LPJ is not merely an investor
+          but an ENABLER — she backed the design firm before it pivoted to AI hardware, personally
+          facilitated the Ive-Altman relationship, and hosted their product reveal at EC's own Demo Day.
+          The financial and personal entanglement with OpenAI runs deeper than any other media owner's
+          relationship with an AI company in the dataset.
+      - entity: "California Forever"
+        relationship: >
+          LPJ is an investor in California Forever, a company building a planned sustainable city
+          in Solano County, California. Has purchased over 66,000 acres. Goals: new energy
+          infrastructure, homes, walkable neighborhoods, parks, cultural venues.
+        competitive_with: []
+        source_url: "https://en.wikipedia.org/wiki/Laurene_Powell_Jobs"
       - entity: "Boom Supersonic"
         relationship: "Emerson Collective led funding round in 2019. Supersonic commercial flight."
         competitive_with: []
@@ -171,6 +222,36 @@ ownership_chain:
       interested in legacy. I'm not going to use it as a shield against criticism.").
       Three children: Reed (b. 1991, runs Yosemite), Erin (b. 1995), Eve (b. 1998,
       equestrian). Stepdaughter Lisa Brennan-Jobs (b. 1978).
+      Divested 20% stake in Monumental Sports & Entertainment (Wizards, Capitals, Capital One Arena)
+      in December 2025 — previously second-largest shareholder behind Ted Leonsis.
+      Chiba Institute of Technology honorary doctorate (May 2025, alongside Reid Hoffman).
+    civic_connections:
+      - name: "The Partnership for San Francisco"
+        role: "Co-Chair (alongside Ruth Porat, Alphabet/Google President)"
+        established: "March 2025"
+        description: >
+          26-member civic coalition appointed by SF Mayor Daniel Lurie to bolster the city's
+          economy and address public safety/drug crisis. Led by Katherine August-deWilde (former
+          First Republic Bank president). Meets quarterly. CRITICAL: Members include Sam Altman
+          (OpenAI CEO), Jony Ive (LoveFrom), and Ruth Porat (Alphabet/Google). This creates
+          DIRECT GOVERNANCE LINKS between The Atlantic's owner and the CEOs of OpenAI (content
+          licensing partner + investment exit) and Google/Alphabet (Meta's primary competitor in
+          advertising and AI). These are not merely investment relationships but a shared civic
+          table with quarterly meetings where these leaders interact personally.
+        source_urls:
+          - "https://www.fa-mag.com/news/san-francisco-revival-gets-boost-from-altman--porat--powell-jobs-79997.html"
+          - "https://macemagazine.com/tech-titans-join-forces-with-san-franciscos-new-mayor-to-revitalize-the-city/"
+        competitive_with: ["Meta"]
+        notes: >
+          Ruth Porat (Alphabet President & CIO) co-chairing with LPJ means The Atlantic's owner
+          shares a leadership role with an executive of Meta's #1 advertising competitor. Google
+          controls ~29% of global digital ad revenue vs Meta's ~21%. No disclosure of this civic
+          relationship exists in The Atlantic's coverage of Google or Alphabet.
+      - name: "San Francisco Art Institute"
+        description: >
+          LPJ purchased the bankrupt San Francisco Art Institute through a nonprofit. Demonstrates
+          deep civic embedding in San Francisco but not a conflict.
+        competitive_with: []
 
 revenue_relationships:
   - partner: "Apple"
@@ -206,6 +287,65 @@ revenue_relationships:
       exit) makes the Atlantic's financial ties to OpenAI deeper than any other tracked
       publication. Even the NYT, which has a $20-25M/yr Amazon deal, has no comparable
       equity exit from an AI company.
+  - partner: "NewsGuard"
+    relationship_type: "co-marketing_partnership"
+    estimated_value: "Revenue share (cut of subscriptions sold through Atlantic)"
+    description: >
+      Atlantic is a launch co-marketing partner for NewsGuard AI (announced June 2026).
+      NewsGuard AI is a chatbot explicitly positioned as an alternative to ChatGPT for news,
+      built on verified sources with publisher compensation. The Atlantic will promote NewsGuard AI
+      to its readers and receive a cut of subscriptions generated. Thompson quote: 'Few things
+      will matter more in the near future than the ability of humans to figure out what's real,
+      what's false, and what's confabulated nonsense.' NewsGuard describes LLMs as 'shoplifting
+      journalism' — yet Atlantic licenses its content to one of those LLMs (OpenAI).
+    date_established: "2026-06"
+    source_urls:
+      - "https://www.cnn.com/2026/06/23/media/newsguard-ai-chatbot-news/index.html"
+      - "https://www.newsguardtech.com/press/newsguard-launches-first-ai-chatbot-built-to-deliver-trusted-journalism/"
+      - "https://www.editorandpublisher.com/stories/newsguard-launches-first-ai-chatbot-built-to-deliver-trusted-journalism/329117"
+    competitive_with: []
+    notes: >
+      STRATEGIC TENSION: Atlantic simultaneously monetizes content through OpenAI (license)
+      AND through a product that positions itself against OpenAI's approach. Thompson promotes
+      both without acknowledging the contradiction. This dual positioning suggests the Atlantic
+      is hedging — maximizing revenue from both sides of the AI-vs-journalism debate.
+  - partner: "CivicScience"
+    relationship_type: "advertising_partnership"
+    estimated_value: "Undisclosed"
+    description: >
+      Partnership with CivicScience announced September 25, 2025 to integrate real-time survey
+      data and consumer insights into Atlantic's advertising operations. CivicScience's proprietary
+      methodology generates millions of daily survey responses. Enhances targeting, measurement,
+      and advanced advertising capabilities for Atlantic's brand partners.
+    date_established: "2025-09"
+    source_url: "https://www.morningstar.com/news/pr-newswire/20250925ny30654/civicscience-and-the-atlantic-partner-to-enhance-advertising-with-real-time-consumer-insights"
+    competitive_with: []
+    notes: >
+      Signals Atlantic's advertising business is active and growing despite subscription-first
+      positioning. Unlike the Guardian (which dropped Apple News and Facebook distribution to
+      prioritize reader revenue), the Atlantic is building BOTH ad-tech capabilities and
+      subscription revenue simultaneously.
+  - partner: "OpenAI (Atlantic Labs)"
+    relationship_type: "product_collaboration"
+    estimated_value: "Included in OpenAI licensing deal"
+    description: >
+      Atlantic Labs is an experimental microsite where Atlantic's product team pilots OpenAI
+      technology for new products and features. Atlantic's team has 'privileged access' to
+      OpenAI tech, provides feedback, and shares use-cases to shape news experiences in
+      ChatGPT. This goes beyond passive licensing — Atlantic is actively co-developing
+      OpenAI's news product capabilities, making it a development partner, not just a content
+      supplier.
+    date_established: "2024-05"
+    source_urls:
+      - "https://openai.com/index/enhancing-news-in-chatgpt-with-the-atlantic/"
+      - "https://www.maginative.com/article/the-atlantic-announces-partnership-with-openai/"
+    competitive_with: ["Meta"]
+    notes: >
+      'Privileged access' to OpenAI tech creates a deeper entanglement than a standard
+      licensing deal. Atlantic's product team is shaping how ChatGPT surfaces news — giving
+      Atlantic editorial influence over a competitor's AI product. This is comparable to
+      Condé Nast/Wired having content in ChatGPT but with an additional product development
+      layer that neither Condé Nast nor any other publisher has disclosed.
 
 editorial_leadership:
   - name: "Jeffrey Goldberg"
@@ -327,7 +467,75 @@ known_conflicts:
       - "https://techcrunch.com/2023/08/01/reed-jobs-yosemite/"
       - "https://forbesindia.com/article/2024-billionaires/reed-jobs-living-legacy/"
 
-litigation_connections: []
+  - type: "civic_governance"
+    description: >
+      LPJ co-chairs The Partnership for San Francisco (March 2025) alongside Ruth Porat
+      (Alphabet/Google President & CIO). Fellow members include Sam Altman (OpenAI CEO) and
+      Jony Ive (LoveFrom). This creates a DIRECT CIVIC GOVERNANCE LINK between The Atlantic's
+      owner and executives of Meta's two largest competitors: Google/Alphabet (#1 in digital
+      advertising, AI search) and OpenAI (AI products, ChatGPT). These quarterly meetings
+      create personal relationships between Atlantic's owner and the leaders of companies
+      the publication covers. No disclosure of this civic relationship has been observed in
+      Atlantic coverage of Google, OpenAI, or San Francisco policy.
+    severity: 3
+    evidence: "Bloomberg, FA Magazine, Mace Magazine. 26-member coalition appointed by Mayor Daniel Lurie."
+    source_urls:
+      - "https://www.fa-mag.com/news/san-francisco-revival-gets-boost-from-altman--porat--powell-jobs-79997.html"
+      - "https://macemagazine.com/tech-titans-join-forces-with-san-franciscos-new-mayor-to-revitalize-the-city/"
+  - type: "co-investment_alignment"
+    description: >
+      Emerson Collective co-invested with AMAZON in X-Energy's $700M Series C (Feb 2025).
+      Amazon competes with Meta in AI/cloud (AWS), consumer devices (Ring/Alexa vs Meta devices),
+      and advertising. EC's co-investment creates financial alignment — both parties benefit
+      from X-Energy's success in nuclear-for-data-centers, which directly supports Amazon's
+      AI infrastructure buildout competing with Meta's.
+    severity: 2
+    evidence: "TechCrunch (Feb 7, 2025). Other investors: Ares Management, Jane Street, Segra Capital."
+    source_url: "https://techcrunch.com/2025/02/07/laurene-powell-jobs-joins-amazon-in-backing-nuclear-startup-x-energy-in-700m-round/"
+  - type: "ai_partnership_tension"
+    description: >
+      The Atlantic simultaneously: (1) licenses content TO OpenAI/ChatGPT (May 2024 deal),
+      and (2) is a launch co-marketing partner for NewsGuard AI (June 2026), a product
+      explicitly positioned AGAINST ChatGPT and LLMs that 'shoplift journalism'. Thompson
+      promotes both. This is not a conflict per se but reveals strategic opportunism —
+      monetizing the same content through both the AI disruptor AND the anti-AI-disruptor.
+    severity: 1
+    evidence: "CNN, Editor & Publisher, NewsGuard press release (June 2026). Thompson quotes in both announcements."
+    source_urls:
+      - "https://www.cnn.com/2026/06/23/media/newsguard-ai-chatbot-news/index.html"
+      - "https://www.newsguardtech.com/press/newsguard-launches-first-ai-chatbot-built-to-deliver-trusted-journalism/"
+
+litigation_connections:
+  - type: "strategic_non-litigation"
+    description: >
+      CRITICAL NEGATIVE FINDING: The Atlantic has ZERO active litigation against AI companies.
+      This is analytically significant because: (1) NYT sued OpenAI in Dec 2023 — 5 months later
+      Atlantic signed a licensing deal (May 2024), choosing the opposite approach. (2) Atlantic's
+      own Alex Reisner exposed that Meta's LLaMA was trained on 190K pirated books (Books3), but
+      the publication did not sue Meta — it reported the story while its owner invested in Meta's
+      AI competitors. (3) Nearly 400 newspapers sued OpenAI/Microsoft (June 2026, SDNY), but
+      Atlantic is conspicuously absent from the plaintiff list. (4) The Atlantic chose revenue
+      (OpenAI licensing fees) over enforcement (copyright litigation). This strategic alignment
+      with AI companies rather than with fellow publishers shapes the Atlantic's incentive
+      structure: it benefits when OpenAI succeeds, unlike litigating publishers.
+    evidence: "Bloomberg Law (June 2026 publisher lawsuit), NYT v. OpenAI (Dec 2023), Books3 investigation."
+    source_urls:
+      - "https://news.bloomberglaw.com/ip-law/openai-microsoft-sued-by-publishers-for-scraping-articles"
+  - type: "union_bargaining_dispute"
+    description: >
+      Atlantic Union (NewsGuild of New York) demanded transparency on OpenAI deal terms (May 30,
+      2024). ~60 journalists signed letter to Goldberg and Thompson demanding AI contract
+      protections (July 2024). Union statement: 'deeply troubled by the opaque agreement' and
+      'management's complete lack of transparency.' Thompson and OpenAI refused to answer questions,
+      directing staff to outside reporting. Union demands: make deal terms available immediately,
+      address questions 'without spin,' and negotiate contract language protecting jobs from AI.
+      EIC Goldberg backed union's transparency demand publicly but the deal proceeded without
+      full disclosure to staff. Bargaining for AI contract language ongoing as of late 2024.
+    evidence: "The Wrap, NYGuild press release, TechCrunch, Ars Technica."
+    source_urls:
+      - "https://www.thewrap.com/the-atlantic-union-demands-transparency-of-openai-deal-terms/"
+      - "https://nyguild.org/news/the-atlantic-union-we-must-have-a-voice-in-how-ai-affects-our-work"
+      - "https://techcrunch.com/2024/06/whats-in-it-for-us-journalists-ask-as-publications-sign-content-deals-with-ai-firms/"
 
 ai_crawl_policy:
   blocks_gptbot: false
@@ -472,20 +680,54 @@ notes: |
   (Amazon deal, OpenAI lawsuit) has an owner that both receives licensing revenue
   from AND has an equity exit through the same AI company.
 
-  EMERSON COLLECTIVE INVESTMENT PORTFOLIO (expanded):
+  EMERSON COLLECTIVE INVESTMENT PORTFOLIO (expanded 2026-06-25):
   - Apple stock (~$16B+, via LPJ Trust) — competes with Meta
-  - io Products ($6.5B OpenAI exit) — competes with Meta AND Apple
+  - LoveFrom backing (2019) → io Products → OpenAI exit ($6.5B, 2025) — competes with Meta AND Apple
   - Mistral AI ($415M/$640M rounds) — open-source LLM competitor to Meta's Llama
   - World Labs ($1B round) — 3D AI, competes with Meta
+  - X-Energy ($700M Series C, Feb 2025, co-invested with AMAZON) — nuclear SMR, competes with Meta via Amazon alignment
+  - Xcimer ($100M round) — fusion laser energy
   - Formation Bio ($372M round) — AI pharma
   - Zap Energy ($130M, 2024) — fusion
   - Commonwealth Fusion Systems (2021) — fusion
   - Boom Supersonic (2019) — aerospace
   - Midi Health ($60M Series B lead, 2024) — women's health
   - Teal Health ($10M seed, 2025) — cancer screening
+  - California Forever (2023+) — planned city, 66,000 acres in Solano County
   - Gimlet Media (2017, exited via Spotify ~$230M)
   - Axios (2016, exited 2022 via Cox Enterprises $525M) — NOTE: competitor to Atlantic
   - Amplify (2015) — edtech
+  - Monumental Sports & Entertainment (2017-2025, DIVESTED Dec 2025) — 20% stake in Wizards/Capitals
+
+  CROSS-PUBLICATION OPENAI LICENSING MAP (new 2026-06-25):
+  4 of 5 tracked publications now have financial relationships with OpenAI:
+  - The Atlantic: Licensing + product collaboration + owner equity exit (May 2024)
+  - Condé Nast/Wired: Licensing (Aug 2024) — content from ALL Condé Nast brands in ChatGPT
+  - The Guardian: Licensing (Feb 2025)
+  - NYT: LAWSUIT (Dec 2023) — only tracked publication that sued
+  - MIT Technology Review: No documented OpenAI relationship
+  The Atlantic has the DEEPEST OpenAI entanglement (licensing + product dev + equity exit).
+  Condé Nast deal covers Wired specifically — same publication with strongest anti-Meta
+  editorial stance in the dataset. 3 of 5 publications chose revenue over enforcement.
+
+  CIVIC GOVERNANCE ENTANGLEMENTS (new 2026-06-25):
+  Partnership for San Francisco (March 2025) creates an unprecedented concentration of
+  AI industry power sharing a civic table with a media owner:
+  - LPJ (Atlantic owner) + Ruth Porat (Google/Alphabet President) = co-chairs
+  - Sam Altman (OpenAI CEO) + Jony Ive (LoveFrom/OpenAI hardware) = members
+  This means Atlantic's owner sits in quarterly meetings with the leaders of the TWO
+  companies it has the deepest financial ties to (Apple via stock, OpenAI via licensing +
+  exit), PLUS the leader of Meta's #1 advertising rival (Google). No other publication
+  owner in the dataset has this density of personal relationships with the subjects of
+  their publication's tech coverage.
+
+  DUAL AI MONETIZATION STRATEGY (new 2026-06-25):
+  Atlantic is hedging the AI-vs-journalism debate by monetizing BOTH sides:
+  1. PRO-AI: OpenAI licensing deal (content in ChatGPT) + Atlantic Labs (product development)
+  2. ANTI-AI: NewsGuard AI co-marketing partnership (June 2026, revenue share)
+  Thompson promotes both without acknowledging the tension. NewsGuard explicitly describes
+  LLMs as 'shoplifting journalism' while the Atlantic licenses content to one of those LLMs.
+  This dual positioning maximizes revenue regardless of which side wins.
 
   YOSEMITE CROSS-PUBLICATION LINK:
   Reed Jobs' Yosemite VC (EC spinoff, Aug 2023) has MIT as an LP. MIT owns MIT
@@ -499,7 +741,7 @@ notes: |
   growth YoY. 70%+ retention rate. Thompson: "profitable for the first time" and "more
   than doubled total paid subscriptions" since digital launch.
 
-  KEY ANALYTICAL QUESTIONS (updated):
+  KEY ANALYTICAL QUESTIONS (updated 2026-06-25):
   1. Does Atlantic coverage of OpenAI soften after the io Products exit? Compare
      pre-exit vs post-exit tone.
   2. Does Atlantic frame Apple and OpenAI hardware competition differently given
@@ -509,3 +751,11 @@ notes: |
      of EC portfolio companies across all Atlantic content?
   5. The Yosemite/MIT LP connection: any detectable editorial cooperation between
      Atlantic and MIT TR?
+  6. Does Atlantic coverage of Google/Alphabet differ from coverage of other Big Tech
+     given LPJ's direct civic governance link with Ruth Porat?
+  7. Does Atlantic coverage of Amazon differ from coverage of other Big Tech given
+     EC's X-Energy co-investment alignment?
+  8. How does the NewsGuard AI partnership language compare to OpenAI deal language?
+     Is Thompson's messaging consistent or contradictory?
+  9. Cross-publication: do the 3 OpenAI-licensing publications (Atlantic, Wired, Guardian)
+     show systematically different coverage of OpenAI vs the NYT (which sued)?

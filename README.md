@@ -169,7 +169,7 @@ MediaScope ships with detailed profiles for five publications, chosen to illustr
 | **Wired** | Advance Publications | Financial + Competitive | 33.5% Reddit stake, AI licensing with Meta's competitors |
 | **NY Times** | Sulzberger Family | Litigation | Suing OpenAI while building AI internally |
 | **The Guardian** | Scott Trust (non-profit) | Partial control | OpenAI + ProRata licensing deals, but no equity in specific competitors. Closest to baseline in the 5-pub set (pre-Feb 2025 coverage cleaner). |
-| **The Atlantic** | Emerson Collective (LPJ) | Investment | Owner holds ~$16B in Apple stock (Meta competitor) |
+| **The Atlantic** | Emerson Collective (LPJ) | Investment + Licensing + Civic | Owner holds ~$16B Apple stock, $6.5B OpenAI equity exit, co-chairs civic org with Google/Alphabet president and OpenAI CEO |
 | **MIT Tech Review** | MIT | Institutional paradox | Parent receives $500M+ from companies it covers |
 
 Add your own with `mediascope add-publication` or copy `profiles/_template.yaml`.
