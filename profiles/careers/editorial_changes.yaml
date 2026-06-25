@@ -44,6 +44,20 @@ editorial_changes:
       source_url: "https://talkingbiznews.com/they-re-hiring/wired-is-launching-a-political-coverage-team/"
       notes: "KEY STRUCTURAL CHANGE: First-ever Wired politics editor. Feiger hired from Vice News (where she overlapped with Drummond). Team also included William Turton (Bloomberg, cybersecurity) and David Gilbert (online extremism). Reports to Meg Marco (exec editor of news). Promoted to 'Director of Politics & Science' by 2025-2026. Feiger on Drummond: 'I cannot state enough how farsighted Katie Drummond was.' This hire represents Wired's institutional pivot from tech-centric publication to tech-politics hybrid."
 
+    - position: "politics_team_departure"
+      outgoing: "William Turton"
+      incoming: null
+      date: "2026-02"
+      source_url: "https://propublica.org/article/william-turton-joins-propublica-as-national-reporter"
+      notes: "FIRST POLITICS TEAM DEPARTURE: Turton left for ProPublica as national reporter covering FBI/DOJ after ~2.3 years at Wired. The first departure from Drummond's Nov 2023 politics team (Feiger, Turton, Gilbert). His exit is analytically significant: he moved from tech-politics intersection to pure federal law enforcement, suggesting his beat evolved beyond Wired's tech-first editorial framing. Also breaks the Drummond orbit — Turton had followed Drummond through Gizmodo → The Outline → Wired. Wired's DOGE coverage likely continues through Feiger (now Director of Politics & Science) but loses Turton's cybersecurity + political campaigns hybrid expertise."
+
+    - position: "senior_writer_china"
+      outgoing: null
+      incoming: "Zeyi Yang"
+      date: "2025-01"
+      source_url: "https://law.yale.edu/yls-today/yale-law-school-events/paul-tsai-china-center-conversation-poynter-fellow-zeyi-yang"
+      notes: "KEY HIRE: Zeyi Yang joined from MIT Technology Review as senior writer covering China technology and business. CROSS-PUBLICATION MIGRATION — second MIT TR → Wired migration after Will Knight (2018). 2024 ASME NEXT Award winner. Created MIT TR's China Report newsletter. Yale Poynter Fellow (Mar 2026). Only tracked journalist who can read primary Chinese-language sources. Tests whether MIT TR's nuanced China coverage framing changes under Wired's Drummond-era adversarial editorial posture."
+
   nytimes:
     - position: "executive_editor"
       outgoing: "Dean Baquet"
@@ -250,3 +264,10 @@ editorial_changes:
       date: "2026-03-09"
       source_url: "https://ca.advfn.com"
       notes: "EDITORIAL MILESTONE: National Magazine Award finalist (ASME Reporting) for 'Power Hungry: AI and our energy future' — James O'Donnell and Casey Crownhart's 6-month investigation into AI's energy footprint. Prompted OpenAI, Mistral, and Google to disclose energy/water usage data."
+
+    - position: "china_tech_reporter"
+      outgoing: "Zeyi Yang"
+      incoming: null
+      date: "2025-01"
+      source_url: "https://www.technologyreview.com/author/zeyi-yang/"
+      notes: "DEPARTURE: Zeyi Yang left MIT TR for Wired as senior writer (~Jan 2025). MIT TR author page uses past tense ('covered'). Created China Report newsletter. Won 2024 ASME NEXT Award. His departure leaves MIT TR without a dedicated China tech correspondent — a significant editorial gap given US-China tech competition is the decade's defining geopolitical tech story. 144 posts during tenure."
