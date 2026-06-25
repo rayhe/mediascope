@@ -30,16 +30,19 @@ This is a press-event hands-on review of Meta's new self-branded smart glasses �
 | Speculative language ratio | 0.1121 | Low — factual product description |
 
 ### Entity Distribution
-| Entity | Mentions | Role |
+| Entity Cluster | Mentions | Role |
 |---|---|---|
-| Meta | 53 | Primary subject |
+| Meta | 56 | Primary subject (now includes Muse Spark ×1, Ankit Brahmbhatt ×1, previously unclustered) |
 | WIRED | 5 | Self-reference (publication) |
 | Snap | 4 | Competitor comparison |
-| EssilorLuxottica | 1 | Manufacturing partner |
+| Celebrity/Influencer | 3 | Kylie Jenner ×1, Jenner ×2 — Starfire designer collaboration |
+| EssilorLuxottica | 2 | Manufacturing partner (now includes LensCrafters ×1) |
+| Smart Glasses Competitors | 1 | Gentle Monster ×1 — competitor reference |
 | Google | 1 | Competitor mention |
 
-**Missing entities (toolkit limitation):**
-- **Kylie Jenner** — 6+ mentions as Starfire designer, celebrity collaboration. Not detected because personal names without organization context aren't clustered.
+**Total: 71 entity mentions across 7 clusters** (previously 5 clusters, 64 mentions — entity expansion added Celebrity/Influencer, Smart Glasses Competitors, and expanded Meta + EssilorLuxottica aliases)
+
+**Remaining missing entities (toolkit limitation):**
 - **Bristol** — Meta employee quoted twice (single last name only, no first name given in article). Source extractor requires "First Last" format.
 
 ### Framing Devices Detected

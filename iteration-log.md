@@ -4,6 +4,54 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-25 06:00 PT — Hour Type A: Article Deep Dive
+
+**Focus:** Entity detection coverage expansion — 3 new entity clusters and expanded aliases for 2 existing clusters, validated against Wired's "Meta's Very Own Smart Glasses Go on Sale Today for $299" (Julian Chokkattu, June 23, 2026).
+
+### What was improved:
+
+1. **Meta cluster expanded (+4 aliases):**
+   - Alex Himel / Himel (Meta VP)
+   - Ankit Brahmbhatt / Brahmbhatt (Sr. Dir. PM, quoted in glasses article)
+   - Will Cathcart / Cathcart (WhatsApp head)
+   - Muse Spark (Meta's first closed AI model)
+   - Also removed "Horizon Worlds" and "Meta Horizon" from Meta cluster to avoid shadowing VR/Metaverse cluster
+
+2. **EssilorLuxottica cluster expanded (+2 aliases):**
+   - Francesco Milleri / Milleri (CEO)
+   - LensCrafters (retail subsidiary)
+
+3. **New "Smart Glasses Competitors" cluster (6 aliases):**
+   - Gentle Monster, XREAL, Even Realities, Halo, Solos, Brilliant Labs
+   - Explicit regex to avoid false positives (e.g., "frame" ≠ Brilliant Labs "Frame" product)
+
+4. **New "Celebrity/Influencer" cluster (2 aliases):**
+   - Kylie Jenner, Jenner (with possessive support: `Jenner's`)
+   - Previously unclustered — Kylie Jenner had 3+ mentions in glasses article as Starfire designer
+
+5. **New "Indian Fintech" cluster (4 aliases):**
+   - CRED, Kunal Shah, PhonePe, UPI
+   - Case-sensitive regex for CRED and UPI to avoid false positives
+
+### Validation — Wired glasses article re-analysis:
+
+| Metric | Before | After |
+|---|---|---|
+| Entity clusters detected | 5 | 7 |
+| Total entity mentions | 64 | 71 |
+| New detections | — | Kylie Jenner ×1, Jenner ×2, LensCrafters ×1, Gentle Monster ×1, Muse Spark ×1, Ankit Brahmbhatt ×1 |
+
+Previously, "Kylie Jenner" was flagged as a known limitation ("personal names without organization context aren't clustered"). Now resolved with the Celebrity/Influencer cluster. Analysis file updated to reflect 7-cluster entity distribution.
+
+### Total entity clusters: 25 → 28
+
+### Stats:
+- Files modified: `mediascope/analyze/entities.py`, `examples/sample_output/wired_meta_glasses_launch_self_branded_2026_06_23_analysis.md`
+- Tests: 268 (all passing, no new tests this iteration — changes are additive aliases, covered by existing cluster-format tests)
+- Lines changed: +29/-1 in entities.py
+
+---
+
 ## 2026-06-25 01:00 PT — Hour Type D: Toolkit Quality & Documentation
 
 **Focus:** Documentation-code synchronization — METHODOLOGY.md framing device taxonomy was 4 types behind the codebase (22 documented vs 26 implemented), README had stale journalist count (51 vs 56), and no automated guard against future drift.
