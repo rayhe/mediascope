@@ -4,6 +4,47 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-25 01:00 PT — Hour Type D: Toolkit Quality & Documentation
+
+**Focus:** Documentation-code synchronization — METHODOLOGY.md framing device taxonomy was 4 types behind the codebase (22 documented vs 26 implemented), README had stale journalist count (51 vs 56), and no automated guard against future drift.
+
+### What was improved:
+
+1. **METHODOLOGY.md §4.1 — Framing device taxonomy synchronized (22 → 26 types):**
+   - Core devices expanded from 8 → 10:
+     - **CEO Personalization** added: possessive/led constructions attributing corporate actions to the CEO personally ("Zuckerberg's Meta," "Musk-led Tesla"). 2 regex patterns. Makes institutional decisions feel like personal edicts, amplifying negative framing.
+     - **Litigation Framing** added: positioning entities as adversarially using courts ("seeking/filing legal challenge," "legal battle against," "took X to court"). 3 regex patterns. Frames litigation as aggression rather than legitimate dispute resolution.
+   - Extended devices expanded from 11 → 13:
+     - **Geopolitical Regulatory Pressure** added: framing international regulatory tensions as geopolitical confrontation. 5 regex patterns covering embassy/diplomatic submissions, sovereignty/defiance rhetoric, trade-tension language, transatlantic framing. Discovered from Guardian UK tech crackdown article.
+     - **Sovereignty Framing** added: deploying national/patriotic identity language to delegitimize foreign positions ("British families," "our children," "national interest" near tech entities). 5 regex patterns. Discovered from Guardian UK tech crackdown article. Distinct from loaded_language — strategic national identity deployment vs emotional vocabulary.
+   - Structural (post-pass) unchanged at 3: kicker_framing, analogy_stacking, speculative_framing
+   - Updated tier count text: "core devices (10 pattern-matched types)" and "not captured by the core devices"
+
+2. **README.md — Stale numbers corrected:**
+   - Journalist count: 51 → 56 (added Turton, Gilbert, Yang in recent Type B iterations, plus prior additions)
+   - Added Zeyi Yang to named migration examples
+   - Test count: 236 → 239
+
+3. **New registry tests (3 tests in TestFramingDeviceRegistry class):**
+   - `test_pattern_based_device_count`: asserts exactly 23 pattern-based types in `_DEVICE_PATTERNS`
+   - `test_all_expected_types_registered`: enumerates all 23 expected types (10 core + 13 extended) and asserts each exists in the registry — catches both missing and undocumented types
+   - `test_structural_types_in_detect_function`: verifies all 3 structural types (kicker_framing, analogy_stacking, speculative_framing) appear in `detect_framing_devices()` source
+   - These tests will **automatically catch future doc-code drift** — adding a framing type without updating docs (or vice versa) will fail the test suite
+
+### Key insight:
+
+**Documentation drift is a real problem in rapidly-iterated research toolkits.** The 4 missing types were added across 3 separate iteration cycles (Jun 22-24), each with proper code and code-level comments, but nobody updated METHODOLOGY.md. The registry tests solve this structurally — the test suite now enforces documentation-code synchronization. This is especially important for MediaScope because the methodology documentation IS the academic credibility: a tool that claims to detect 22 framing types but actually implements 26 looks sloppy if anyone audits it.
+
+### Stats:
+- METHODOLOGY.md: 4 new device type entries, count updated 22→26
+- README.md: journalist count 51→56, test count 236→239
+- Tests: 236 → 239 (+3 registry tests)
+- All 239 tests passing
+- Commit: `5ebd1de`
+- Pushed to GitHub: ✅
+
+---
+
 ## 2026-06-25 00:00 PT — Hour Type C: Ownership & Funding Deep Dive
 
 **Focus:** The Guardian — six major gaps filled: STEL PE/VC fund managers identified, FY2025/26 financial data added, Apple News relationship documented, Cadwalladr v Banks litigation fully recorded, Guardian US operations expanded, and known_conflicts updated with 3 new entries (including a novel "counter-conflict" concept).
