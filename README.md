@@ -58,7 +58,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **51 journalists** across 10+ publications, including high-value migrations like Karen Hao (MIT Tech Review → Atlantic), Cade Metz (Wired → NYT), and Zoë Schiffer (The Verge → Platformer → Wired).
+Ships with verified career data for **56 journalists** across 10+ publications, including high-value migrations like Karen Hao (MIT Tech Review → Atlantic), Cade Metz (Wired → NYT), Zoë Schiffer (The Verge → Platformer → Wired), and Zeyi Yang (MIT Tech Review → Wired).
 
 ## Quick Start
 
@@ -334,7 +334,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **236 tests** across 8 test files, each covering a different analytical capability:
+MediaScope has **239 tests** across 8 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|

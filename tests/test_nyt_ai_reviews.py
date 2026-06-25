@@ -247,3 +247,59 @@ Ana Swanson contributed reporting from Washington."""
         assert types == {"anonymous_authority", "isolation_framing", "pressure_language", "sovereignty_framing"}, (
             f"Expected exactly 4 device types, got: {types}"
         )
+
+
+class TestFramingDeviceRegistry:
+    """Validate total framing device count stays in sync with documentation.
+
+    METHODOLOGY.md documents 26 framing device types:
+      - 10 core (pattern-matched)
+      - 13 extended (pattern-matched, added from real-article analysis)
+      - 3 structural (post-pass heuristics: kicker, analogy stacking, speculative)
+
+    The 23 pattern-based types are registered in _DEVICE_PATTERNS.
+    The 3 structural types are detected in the post-pass of detect_framing_devices().
+    Update this test when adding new device types.
+    """
+
+    def test_pattern_based_device_count(self):
+        from mediascope.analyze.framing import _DEVICE_PATTERNS
+        assert len(_DEVICE_PATTERNS) == 23, (
+            f"Expected 23 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+            f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
+            f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
+        )
+
+    def test_all_expected_types_registered(self):
+        """Every documented device type must be present in the registry."""
+        from mediascope.analyze.framing import _DEVICE_PATTERNS
+        expected_pattern_types = {
+            # Core (10)
+            "guilt_by_association", "anonymous_authority", "catastrophizing",
+            "false_balance", "selective_omission_signal", "emotional_appeal",
+            "loaded_language", "power_asymmetry", "ceo_personalization",
+            "litigation_framing",
+            # Extended (13)
+            "straw_man", "refusal_amplification", "juxtaposition",
+            "timeline_implication", "military_techno_optimism",
+            "selective_rehabilitation", "rhetorical_question",
+            "ironic_quotation", "isolation_framing", "pressure_language",
+            "self_referential_investigation", "geopolitical_regulatory_pressure",
+            "sovereignty_framing",
+        }
+        actual = set(_DEVICE_PATTERNS.keys())
+        missing = expected_pattern_types - actual
+        extra = actual - expected_pattern_types
+        assert not missing, f"Missing documented types from registry: {missing}"
+        assert not extra, f"Undocumented types in registry: {extra}"
+
+    def test_structural_types_in_detect_function(self):
+        """The 3 structural/post-pass types must be produced by detect_framing_devices."""
+        import inspect
+        from mediascope.analyze.framing import detect_framing_devices
+        src = inspect.getsource(detect_framing_devices)
+        for structural_type in ["kicker_framing", "analogy_stacking", "speculative_framing"]:
+            assert structural_type in src, (
+                f"Structural device type '{structural_type}' not found in "
+                f"detect_framing_devices() source. Update METHODOLOGY.md if removed."
+            )

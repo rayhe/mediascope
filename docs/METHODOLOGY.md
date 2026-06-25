@@ -162,7 +162,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 22 framing device types, organized into three tiers: core devices (the original 8, pattern-matched), extended devices (added from real-article analysis), and structural devices (detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 26 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (added from real-article analysis), and structural devices (detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -176,10 +176,12 @@ MediaScope detects 22 framing device types, organized into three tiers: core dev
 | **Emotional Appeal** | Using emotional language instead of evidence | "heartbreaking," "chilling," "disturbing," "alarming" |
 | **Loaded Language** | Word choices that carry implicit judgment | "admitted," "conceded," "insisted," "claimed" (vs neutral "said"); also workplace coercion language ("no opt-out," "revolt," "training their own replacements") |
 | **Power Asymmetry** | Framing institutional/financial power against individual vulnerability | Dollar-magnitude near individual, "army of lawyers," David vs Goliath language, fine-per-violation-could-bankrupt patterns |
+| **CEO Personalization** | Attributing a company's institutional actions to its CEO personally, implying one-person authoritarian control | Possessive constructions ("Zuckerberg's Meta," "Musk's Tesla"), CEO-led constructions ("Zuckerberg-led Meta"). Makes corporate decisions feel like personal edicts, amplifying negative framing. |
+| **Litigation Framing** | Positioning an entity as adversarially using courts rather than cooperating with regulators or peers | "Seeking/filing/mounting legal challenge," "legal battle against," "took X to court." Distinct from neutral legal reporting — frames litigation as aggression rather than legitimate dispute resolution. |
 
 #### Extended Devices
 
-These were added through systematic analysis of real articles from the five tracked publications. Each addresses a framing technique not captured by the core 8.
+These were added through systematic analysis of real articles from the five tracked publications. Each addresses a framing technique not captured by the core devices.
 
 | Device | Description | Detection Pattern | Discovered From |
 |---|---|---|---|
@@ -194,6 +196,8 @@ These were added through systematic analysis of real articles from the five trac
 | **Isolation Framing** | Singling out a company as "the only" one not doing what peers have done | "The only major company that has not," "unlike its peers," "singled out," "out of step" | NYT AI voluntary review article |
 | **Pressure Language** | Editorial word choices that frame actions as coercive | "Pressing," "pushing," "strong-arming," "confidential request," "private demand" | NYT AI voluntary review article |
 | **Self-Referential Investigation** | Publication citing its own prior reporting as evidence within adversarial coverage, creating a closed feedback loop | "reporting by WIRED," "a WIRED investigation found," "as WIRED previously reported," "WIRED has learned" patterns with 5+ tracked publication names | Wired Meta coverage pattern — publication becomes both investigator and source authority |
+| **Geopolitical Regulatory Pressure** | Framing international regulatory tensions as geopolitical confrontation, using diplomatic/sovereignty language | Embassy/diplomatic submissions as pressure tools, sovereignty/defiance rhetoric ("will not be deterred"), transatlantic tension language, "singles out American tech" patterns | Guardian UK tech crackdown article — framing US-UK regulatory disputes as international confrontation rather than policy debate |
+| **Sovereignty Framing** | Deploying national/patriotic identity language to delegitimize foreign corporate or government positions | "British families," "American innovation," "our children" in tech regulation context; "national interest/security" near tech entities; "act in the UK's national interest" | Guardian UK tech crackdown article — distinct from loaded_language because it strategically invokes national identity rather than just emotional vocabulary |
 
 #### Structural Devices (Post-Pass)
 
