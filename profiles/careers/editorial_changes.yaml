@@ -111,6 +111,20 @@ editorial_changes:
       source_url: "https://talkingbiznews.com/they-re-hiring/guardian-hires-montgomery-to-be-us-tech-editor/"
       notes: "New US tech editor role. Montgomery came from Gizmodo (previously Daily Beast, BuzzFeed News). Signals Guardian US investing in dedicated tech editorial leadership."
 
+    - position: "us_eic"
+      outgoing: "John Mulholland"
+      incoming: "Betsy Reed"
+      date: "2022-09"
+      source_url: "https://en.wikipedia.org/wiki/Betsy_Reed"
+      notes: "KEY LEADERSHIP CHANGE: Betsy Reed became Guardian US EIC, succeeding John Mulholland. Reed's career arc (The Nation exec editor 2006-2014 → The Intercept EIC 2015-2022 → Guardian US EIC 2022-) is a pipeline from the institutional American left: The Nation (oldest weekly progressive magazine), The Intercept (adversarial investigative, founded by Glenn Greenwald/Jeremy Scahill/Laura Poitras with Omidyar funding), Guardian US. Under Reed: major expansion adding 50+ journalists, 60% growth in supporting readers, new coverage areas (investigations, US soccer, wellness). Launched 'The Whole Picture' US marketing campaign (fall 2025) emphasizing Guardian independence vs US press's declining capacity. Harvard BA (1990, history and literature). Edited Scahill's 'Blackwater' and 'Dirty Wars'. CUNY Newmark J-School 2025 commencement speaker. ANALYTICAL VALUE: Her Intercept background is the most adversarial institutional origin of any EIC in our dataset. The Intercept was built on the Snowden disclosures — surveillance, government overreach, corporate complicity. This editorial DNA directly shapes Guardian US coverage of Big Tech surveillance, data practices, and government-tech relationships during the entire study period."
+
+    - position: "us_media_power_reporter"
+      outgoing: null
+      incoming: "Jeremy Barr"
+      date: "2025-10"
+      source_url: "https://editorandpublisher.com/stories/jeremy-barr-joins-the-guardian-as-its-first-media-reporter-in-the-us,256127"
+      notes: "KEY STRUCTURAL CHANGE: Guardian's first-ever dedicated US media reporter. Barr came from Washington Post (5 years covering media industry, including Smartmatic v. Fox News). Reports to US business editor Dominic Rushe. Beat: media, politics, corporate influence — how powerful institutions shape information flows. Works closely with UK media editor Michael Savage. Previously: AdAge, Hollywood Reporter (media/politics), Politico Media. Emory BA + U Maryland MA journalism. ANALYTICAL VALUE: This hire signals Guardian US expanding beyond tech coverage into structural media criticism — ownership, regulation, lawsuits. His beat is precisely what MediaScope studies. The irony: a reporter covering media conflicts at other institutions, working for a publication with its own undisclosed OpenAI/Google licensing deals."
+
     - position: "ai_series_editor"
       outgoing: null
       incoming: "Samantha Oltman"
