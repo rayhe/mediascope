@@ -4,6 +4,62 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-25 14:00 PT — Hour Type D: Toolkit Quality & Documentation
+
+**Focus:** Comprehensive documentation sync across 4 files (ARCHITECTURE.md, README.md, METHODOLOGY.md, EDITORIAL_HISTORIES.md) — all had stale numbers from weeks of rapid iteration. ARCHITECTURE.md was the most outdated, still showing numbers from ~15 iterations ago.
+
+### What was improved:
+
+#### 1. ARCHITECTURE.md — most stale, 7 corrections:
+
+| Item | Before | After | Verification |
+|---|---|---|---|
+| Framing device count | 22 | 28 | `len(_DEVICE_PATTERNS) + 3 = 25 + 3 = 28` |
+| Core device tier | 12 | 10 | Audit against METHODOLOGY.md taxonomy |
+| Extended device tier | 7 | 15 | Audit against METHODOLOGY.md taxonomy |
+| Topic bucket count | 10 | 12 | `len(TOPIC_KEYWORDS) = 12` |
+| Test count | 236 | 429 | `pytest --tb=no -q` |
+| Test file count | 8 | 15 | `ls tests/test_*.py \| wc -l` |
+| Test file list | 8 entries (unsorted) | 15 entries (alphabetically sorted with descriptions) | Per-file pytest counts |
+
+**Tier reclassification rationale:** straw_man, refusal_amplification, juxtaposition, timeline_implication were listed as Core but are extended devices by definition (added from real-article analysis, not fundamental pattern types). ceo_personalization and litigation_framing are Core (fundamental editorial techniques).
+
+**Missing test files added:** test_atlantic_analysis.py (31), test_citations.py (39), test_claims.py (28), test_loaded_language_uproar.py (13), test_quality_standards.py (35), test_scale_magnitude.py (16), test_topics.py (28)
+
+#### 2. README.md — test table modernization:
+
+- Test count: 398 → 429
+- Test file count: 14 → 15
+- Added per-file test counts to table column (previously not shown)
+- Added 3 new test file rows: test_atlantic_analysis.py, test_loaded_language_uproar.py, test_scale_magnitude.py
+- Topic reference: 11 → 12
+
+#### 3. METHODOLOGY.md — topic classification expansion:
+
+- Topic bucket count: 10 → 12
+- Added `ai_generated_content` with verified keywords from implementation: slop, AI slop, synthetic content, AI-generated, deepfake, AI art, model collapse, engagement bait, hallucination
+- Added `workplace_culture` with verified keywords from implementation: morale, burnout, attrition, retention, toxic culture, internal revolt, soul-crushing, return to office, disgruntled
+- Added analytical note explaining topic design: `ai_generated_content` vs `ai_development` (output vs creation), `workplace_culture` vs `layoffs` (culture vs formal actions) vs `executive_behavior` (culture vs leadership)
+
+#### 4. EDITORIAL_HISTORIES.md — journalist count sync:
+
+- Journalist count: 51 → 70 (verified via `grep "^  - name:" journalists.yaml | wc -l`)
+- Multi-publication count: 48 → 66 (verified via Python analysis of career events: 66 of 70 journalists have career events at ≥2 distinct publications)
+
+### Cross-verification method:
+
+Every updated number was verified against the actual implementation:
+- Framing devices: `python3 -c "from mediascope.analyze.framing import _DEVICE_PATTERNS; print(len(_DEVICE_PATTERNS))"`
+- Topics: `python3 -c "from mediascope.analyze.topics import TOPIC_KEYWORDS; print(len(TOPIC_KEYWORDS))"`
+- Tests: `python3 -m pytest tests/ --tb=no -q` → 429 passed
+- Journalists: `grep "^  - name:" profiles/careers/journalists.yaml | wc -l` → 70
+- Multi-pub: Python script checking `len(set(pubs)) >= 2` per journalist → 66
+
+### Commit: `1367171` — 4 files changed, 40 insertions, 26 deletions
+### Tests: 429/429 passing
+
+---
+
 ## 2026-06-25 13:00 PT — Hour Type C: Ownership & Funding Deep Dive
 
 **Focus:** MIT Technology Review — OBBBA endowment tax (now signed law, not proposed), federally-subsidized royalty income provision, MIT endowment portfolio VC/PE exposure, new Honeywell corporate partnership. Six major profile expansions.
