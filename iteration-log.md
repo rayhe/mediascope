@@ -4,6 +4,67 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-25 12:00 PT — Hour Type B: Journalist/Publication Research (Guardian US)
+
+**Focus:** Guardian US desk expansion — new journalist Jeremy Barr (WaPo → Guardian), Betsy Reed EIC entry, editorial_changes.yaml updates. 70 journalists now tracked.
+
+### New Journalist: Jeremy Barr (70th tracked)
+
+**Career timeline (7 positions, 4 publications before Guardian):**
+
+| Period | Publication | Role | Beat |
+|---|---|---|---|
+| 2012-01 → 2013-06 | Pew Research Center | Researcher | Research |
+| 2013-07 → 2014-06 | Poynter.org | Contributor (freelance) | Media criticism, journalism |
+| 2014-07 → 2015-10 | Politico Media | Associate editor | Media |
+| 2015-11 → 2017-05 | AdAge | Digital media reporter | Advertising trends |
+| 2017-06 → 2020-06 | Hollywood Reporter | Senior media & politics writer | Media, politics, Trump admin |
+| 2020-06 → 2025-09 | Washington Post | Media reporter | Media industry, regulation, lawsuits |
+| 2025-10 → present | Guardian US | Media & power reporter | Media, politics, corporate influence |
+
+**Education:** Emory University BA (political science + sociology), University of Maryland MA (journalism). Native of Rockville, MD. Participated in WaPo's young journalist development program as a teenager. Taught English in Hungary pre-journalism.
+
+**Why this journalist matters for MediaScope:**
+- His beat at Guardian US DIRECTLY overlaps with MediaScope's mission — he covers media ownership, regulation, lawsuits, and how powerful institutions shape information flows
+- Covered Smartmatic v. Fox News at WaPo — exactly the type of media-ownership-shapes-coverage story we analyze
+- First-ever US media reporter at Guardian — structural expansion beyond tech into media criticism
+- Reports to Dominic Rushe (US business editor); coordinates with UK media editor Michael Savage
+- Central analytical question: does he cover the Guardian's own OpenAI/Google licensing deals with the same scrutiny he'd apply to rival publications?
+- POLITICO connection: contemporaneous with Johana Bhuiyan at Politico NY (2013-2015) — two journalists who overlapped at the same publication now both at Guardian US
+
+**Sources:**
+- Editor & Publisher hiring announcement (Oct 2025)
+- Talking Biz News (WaPo hire 2020, THR hire 2017, AdAge move 2015)
+- Poynter (career beat, contributor archive 2013-2014)
+- AdAge author bio page
+- Muck Rack verified profile
+
+### New Editorial Changes Entry: Betsy Reed as Guardian US EIC
+
+**Career arc:** The Nation (exec editor 2006-2014) → The Intercept (EIC 2015-2022) → Guardian US (EIC Sep 2022-)
+
+**Key facts:**
+- Succeeded John Mulholland as Guardian US editor-in-chief
+- Under her leadership: 50+ journalists added, 60% growth in supporting readers
+- New coverage areas: investigations, US soccer, wellness
+- Launched "The Whole Picture" US marketing campaign (fall 2025) — positioning Guardian independence against US press decline
+- Harvard BA 1990 (history and literature). Edited Scahill's 'Blackwater' and 'Dirty Wars'
+- CUNY Newmark J-School 2025 commencement speaker
+- Most adversarial institutional origin of any EIC in dataset (The Intercept was built on Snowden disclosures)
+
+**Sources:** Wikipedia, CUNY J-School announcement (Oct 2025), CJR interview (Nov 2025), LittleSis, Agorapp
+
+### Other Discoveries
+
+1. **Kari Paul departure date confirmed:** Left Guardian August 2024 for Paris College of Art MFA (Transdisciplinary New Media, 2024-2026). RocketReach profile confirms. Entry already correctly shows end date 2024-06.
+
+2. **Johana Bhuiyan entry verified:** All dates confirmed accurate. Senior Tech Reporter and Editor since Aug 2021. Education: Lehigh University BA Journalism. Continues to publish actively (Apple/ICE tracking apps story, border patrol DNA collection, 2025-2026).
+
+### Commit: `c9fb5ba` — 3 files changed, 77 insertions, 1 deletion
+### Tests: 429/429 passing
+
+---
+
 ## 2026-06-25 10:00 PT — Hour Type A: Article Deep Dive (Atlantic)
 
 **Focus:** "A Tool That Crushes Creativity" by Charlie Warzel (The Atlantic, Oct 2025) — opinion essay on AI slop as cultural phenomenon. Full 5-module analysis with manual comparison, gap identification, and systematic fixes.
