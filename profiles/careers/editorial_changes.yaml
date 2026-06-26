@@ -1,301 +1,380 @@
-# MediaScope — Editorial Leadership Changes
-#
-# Tracks EIC, managing editor, and section editor transitions at
-# each publication.  These are the "big knob" changes that can shift
-# a publication's entire editorial direction.
-#
-# Used by the LeadershipAnalyzer to detect tone shifts correlated
-# with leadership transitions (interrupted time-series analysis).
-
 editorial_changes:
-
   wired:
-    - position: "eic"
-      outgoing: "Chris Anderson"
-      incoming: "Scott Dadich"
-      date: "2012-07"
-      notes: "Anderson left to run 3D Robotics. Dadich was Wired's creative director."
-
-    - position: "eic"
-      outgoing: "Scott Dadich"
-      incoming: "Nicholas Thompson"
-      date: "2017-02"
-      source_url: "https://www.nytimes.com/2017/01/17/business/media/wired-nicholas-thompson-editor.html"
-      notes: "Thompson came from The New Yorker (another CN title). Expanded Wired's political coverage significantly."
-
-    - position: "eic"
-      outgoing: "Nicholas Thompson"
-      incoming: "Gideon Lichfield"
-      date: "2020-09"
-      source_url: "https://www.wired.com/story/gideon-lichfield-new-editor-wired/"
-      notes: "Thompson left for The Atlantic. Lichfield came from MIT Technology Review (Quartz before that)."
-
-    - position: "editorial_director"
-      outgoing: "Gideon Lichfield"
-      incoming: "Katie Drummond"
-      date: "2023-09"
-      source_url: "https://www.nytimes.com/2023/09/11/business/media/wired-katie-drummond.html"
-      notes: "KEY EVENT: Drummond became Global Editorial Director. Previously ran VICE's digital reporting globally (SVP, 2019-2023), was Gizmodo EIC (2015-2017), and started career as Wired intern (2009). Explicitly adversarial framing: 'If you do wrong, I want the world to know.' Created first-ever Wired politics team (Nov 2023). DOGE coverage drove 62,500 new US subs in 2 weeks (Feb 2025). Won Sidney Hillman Prize. Launched 'Story Zero' newsroom ethos. Reports to Anna Wintour. Freedom of the Press Foundation board (2024). This is the most important leadership change for detecting Wired's adversarial editorial shift — her entire career (Gizmodo → Vice → Wired) is an adversarial-journalism pipeline."
-
-    - position: "politics_editor"
-      outgoing: null
-      incoming: "Leah Feiger"
-      date: "2023-11"
-      source_url: "https://talkingbiznews.com/they-re-hiring/wired-is-launching-a-political-coverage-team/"
-      notes: "KEY STRUCTURAL CHANGE: First-ever Wired politics editor. Feiger hired from Vice News (where she overlapped with Drummond). Team also included William Turton (Bloomberg, cybersecurity) and David Gilbert (online extremism). Reports to Meg Marco (exec editor of news). Promoted to 'Director of Politics & Science' by 2025-2026. Feiger on Drummond: 'I cannot state enough how farsighted Katie Drummond was.' This hire represents Wired's institutional pivot from tech-centric publication to tech-politics hybrid."
-
-    - position: "politics_team_departure"
-      outgoing: "William Turton"
-      incoming: null
-      date: "2026-02"
-      source_url: "https://propublica.org/article/william-turton-joins-propublica-as-national-reporter"
-      notes: "FIRST POLITICS TEAM DEPARTURE: Turton left for ProPublica as national reporter covering FBI/DOJ after ~2.3 years at Wired. The first departure from Drummond's Nov 2023 politics team (Feiger, Turton, Gilbert). His exit is analytically significant: he moved from tech-politics intersection to pure federal law enforcement, suggesting his beat evolved beyond Wired's tech-first editorial framing. Also breaks the Drummond orbit — Turton had followed Drummond through Gizmodo → The Outline → Wired. Wired's DOGE coverage likely continues through Feiger (now Director of Politics & Science) but loses Turton's cybersecurity + political campaigns hybrid expertise."
-
-    - position: "senior_writer_china"
-      outgoing: null
-      incoming: "Zeyi Yang"
-      date: "2025-01"
-      source_url: "https://law.yale.edu/yls-today/yale-law-school-events/paul-tsai-china-center-conversation-poynter-fellow-zeyi-yang"
-      notes: "KEY HIRE: Zeyi Yang joined from MIT Technology Review as senior writer covering China technology and business. CROSS-PUBLICATION MIGRATION — second MIT TR → Wired migration after Will Knight (2018). 2024 ASME NEXT Award winner. Created MIT TR's China Report newsletter. Yale Poynter Fellow (Mar 2026). Only tracked journalist who can read primary Chinese-language sources. Tests whether MIT TR's nuanced China coverage framing changes under Wired's Drummond-era adversarial editorial posture."
-
+  - position: eic
+    outgoing: Chris Anderson
+    incoming: Scott Dadich
+    date: 2012-07
+    notes: Anderson left to run 3D Robotics. Dadich was Wired's creative director.
+  - position: eic
+    outgoing: Scott Dadich
+    incoming: Nicholas Thompson
+    date: 2017-02
+    source_url: https://www.nytimes.com/2017/01/17/business/media/wired-nicholas-thompson-editor.html
+    notes: Thompson came from The New Yorker (another CN title). Expanded Wired's political coverage significantly.
+  - position: eic
+    outgoing: Nicholas Thompson
+    incoming: Gideon Lichfield
+    date: 2020-09
+    source_url: https://www.wired.com/story/gideon-lichfield-new-editor-wired/
+    notes: Thompson left for The Atlantic. Lichfield came from MIT Technology Review (Quartz before that).
+  - position: platforms_power_reporter
+    outgoing: null
+    incoming: Vittoria Elliott
+    date: 2022-07
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-elliott-to-cover-platforms-and-power/
+    notes: 'Hired from Rest of World to cover technology platforms and their power. Background: international development
+      (Ghana, Kenya, India) → freelance (Al Jazeera, ProPublica, The New Humanitarian) → Rest of World → Wired. Non-traditional
+      pipeline into Wired tech journalism. Led Wired''s AI Elections Project (2024). Promoted to senior writer by 2025-2026.
+      Tufts BA, Columbia Journalism MS.'
+  - position: editorial_director
+    outgoing: Gideon Lichfield
+    incoming: Katie Drummond
+    date: 2023-09
+    source_url: https://www.nytimes.com/2023/09/11/business/media/wired-katie-drummond.html
+    notes: 'KEY EVENT: Drummond became Global Editorial Director. Previously ran VICE''s digital reporting globally (SVP,
+      2019-2023), was Gizmodo EIC (2015-2017), and started career as Wired intern (2009). Explicitly adversarial framing:
+      ''If you do wrong, I want the world to know.'' Created first-ever Wired politics team (Nov 2023). DOGE coverage drove
+      62,500 new US subs in 2 weeks (Feb 2025). Won Sidney Hillman Prize. Launched ''Story Zero'' newsroom ethos. Reports
+      to Anna Wintour. Freedom of the Press Foundation board (2024). This is the most important leadership change for detecting
+      Wired''s adversarial editorial shift — her entire career (Gizmodo → Vice → Wired) is an adversarial-journalism pipeline.'
+  - position: politics_editor
+    outgoing: null
+    incoming: Leah Feiger
+    date: 2023-11
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-is-launching-a-political-coverage-team/
+    notes: 'KEY STRUCTURAL CHANGE: First-ever Wired politics editor. Feiger hired from Vice News (where she overlapped with
+      Drummond). Team also included William Turton (Bloomberg, cybersecurity) and David Gilbert (online extremism). Reports
+      to Meg Marco (exec editor of news). Promoted to ''Director of Politics & Science'' by 2025-2026. Feiger on Drummond:
+      ''I cannot state enough how farsighted Katie Drummond was.'' This hire represents Wired''s institutional pivot from
+      tech-centric publication to tech-politics hybrid.'
+  - position: politics_team_writer
+    outgoing: null
+    incoming: Makena Kelly
+    date: '2023-11-27'
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-kelly-for-politics-team/
+    notes: 'POLITICS TEAM EXPANSION: Kelly hired as senior writer from The Verge, same month as Leah Feiger (politics editor)
+      and alongside William Turton (Bloomberg) and David Gilbert. Kelly covers intersection of politics, power, and technology.
+      Writes Politics Lab newsletter. Background: CQ Roll Call (Congress reporter) → The Verge (politics reporter) → Wired.
+      Part of Drummond''s unprecedented creation of Wired''s first politics team.'
+  - position: director_consumer_tech_culture
+    outgoing: null
+    incoming: Michael Calore
+    date: 2024-01
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-names-barrett-its-executive-editor/
+    notes: Promoted to Director, Consumer Tech & Culture — first of three Director positions Drummond created to restructure
+      Wired's newsroom. Oversees all Wired Gear, Culture, and Service coverage across US and UK. Longtime Wired editor. Announced
+      alongside Barrett's executive editor hire.
+  - position: executive_editor_news
+    outgoing: null
+    incoming: Brian Barrett
+    date: '2024-01-16'
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-names-barrett-its-executive-editor/
+    notes: 'KEY STRUCTURAL HIRE: Barrett returned to Wired as executive editor of news after ~8 years first stint (2014-2022)
+      and interim at Gizmodo. Recruited by Drummond to oversee US and UK news teams. Drummond''s announcement: ''his humor,
+      compassionate leadership style, general appreciation of weirdness, and proven track record writing and editing stories
+      that are smart, thoughtful, and often painfully clever, make him the perfect person for this role.'' Same announcement
+      promoted Michael Calore to Director, Consumer Tech & Culture.'
+  - position: senior_writer_china
+    outgoing: null
+    incoming: Zeyi Yang
+    date: 2025-01
+    source_url: https://law.yale.edu/yls-today/yale-law-school-events/paul-tsai-china-center-conversation-poynter-fellow-zeyi-yang
+    notes: 'KEY HIRE: Zeyi Yang joined from MIT Technology Review as senior writer covering China technology and business.
+      CROSS-PUBLICATION MIGRATION — second MIT TR → Wired migration after Will Knight (2018). 2024 ASME NEXT Award winner.
+      Created MIT TR''s China Report newsletter. Yale Poynter Fellow (Mar 2026). Only tracked journalist who can read primary
+      Chinese-language sources. Tests whether MIT TR''s nuanced China coverage framing changes under Wired''s Drummond-era
+      adversarial editorial posture.'
+  - position: politics_team_departure
+    outgoing: William Turton
+    incoming: null
+    date: 2026-02
+    source_url: https://propublica.org/article/william-turton-joins-propublica-as-national-reporter
+    notes: 'FIRST POLITICS TEAM DEPARTURE: Turton left for ProPublica as national reporter covering FBI/DOJ after ~2.3 years
+      at Wired. The first departure from Drummond''s Nov 2023 politics team (Feiger, Turton, Gilbert). His exit is analytically
+      significant: he moved from tech-politics intersection to pure federal law enforcement, suggesting his beat evolved beyond
+      Wired''s tech-first editorial framing. Also breaks the Drummond orbit — Turton had followed Drummond through Gizmodo
+      → The Outline → Wired. Wired''s DOGE coverage likely continues through Feiger (now Director of Politics & Science) but
+      loses Turton''s cybersecurity + political campaigns hybrid expertise.'
   nytimes:
-    - position: "executive_editor"
-      outgoing: "Dean Baquet"
-      incoming: "Joseph Kahn"
-      date: "2022-06"
-      source_url: "https://www.nytimes.com/2022/04/13/business/media/joseph-kahn-new-york-times-executive-editor.html"
-      notes: "Kahn previously served as managing editor. Known for emphasizing investigative and explanatory journalism. Under his leadership, NYT sued OpenAI (Dec 2023)."
-
-    - position: "managing_editor"
-      outgoing: "Joseph Kahn"
-      incoming: "Marc Lacey"
-      date: "2022-06"
-      notes: "Lacey became managing editor when Kahn was promoted."
-
-    - position: "technology_editor"
-      incoming: "Pui-Wing Tam"
-      date: "2015-01"
-      source_url: "https://nytco.com/press/pui-wing-tam-named-deputy-business-editor/"
-      notes: "Tam joined from Bloomberg (US tech coverage chief 2013-2015). Previously WSJ reporter/editor — HP hired PIs to surveil her phone/text records and trash in 2006. Promoted to deputy Business editor (2018). Built NYT's tech team — recruiters love her. Responsible for hiring Mike Isaac, Sheera Frenkel, Kashmir Hill, Karen Weise, Nico Grant, Tripp Mickle, and most of the SF tech bureau. 'The strength of our tech team is largely a testament to her.'"
-
-    - position: "editorial_director_ai"
-      incoming: "Zach Seward"
-      date: "2024-02"
-      source_url: "https://wan-ifra.org/insight/divining-data-how-ai-invigorates-the-new-york-times-approach-to-investigative-reporting/"
-      notes: "First editorial director of AI initiatives. Co-founded Quartz. Built Echo (AI summarization), Stet (AI quality evaluation), Cheat Sheet (AI investigations tool). Pro-AI-for-journalism within strict editorial guardrails."
-
-    - position: "technology_reporter_meta"
-      incoming: "Eli Tan"
-      date: "2026-01"
-      source_url: "https://nytco.com/press/staff-news-from-business/"
-      notes: "Second dedicated Meta reporter alongside Mike Isaac. Promoted from NYT fellowship. Signals NYT's continued investment in Meta beat coverage."
-
-    - position: "technology_reporter_google"
-      outgoing: "Nico Grant"
-      date: "2025-05"
-      source_url: "https://talkingbiznews.com/they-move/ny-times-biz-reporter-grant-departs/"
-      notes: "DEPARTURE: Grant left journalism entirely after 3 years covering Google/Alphabet. 'Working there was a dream come true, but now, it's time to chase other dreams outside of journalism.' Creates gap on NYT's Google beat."
-
+  - position: executive_editor
+    outgoing: Dean Baquet
+    incoming: Joseph Kahn
+    date: 2022-06
+    source_url: https://www.nytimes.com/2022/04/13/business/media/joseph-kahn-new-york-times-executive-editor.html
+    notes: Kahn previously served as managing editor. Known for emphasizing investigative and explanatory journalism. Under
+      his leadership, NYT sued OpenAI (Dec 2023).
+  - position: managing_editor
+    outgoing: Joseph Kahn
+    incoming: Marc Lacey
+    date: 2022-06
+    notes: Lacey became managing editor when Kahn was promoted.
+  - position: technology_editor
+    incoming: Pui-Wing Tam
+    date: 2015-01
+    source_url: https://nytco.com/press/pui-wing-tam-named-deputy-business-editor/
+    notes: Tam joined from Bloomberg (US tech coverage chief 2013-2015). Previously WSJ reporter/editor — HP hired PIs to
+      surveil her phone/text records and trash in 2006. Promoted to deputy Business editor (2018). Built NYT's tech team —
+      recruiters love her. Responsible for hiring Mike Isaac, Sheera Frenkel, Kashmir Hill, Karen Weise, Nico Grant, Tripp
+      Mickle, and most of the SF tech bureau. 'The strength of our tech team is largely a testament to her.'
+  - position: editorial_director_ai
+    incoming: Zach Seward
+    date: 2024-02
+    source_url: https://wan-ifra.org/insight/divining-data-how-ai-invigorates-the-new-york-times-approach-to-investigative-reporting/
+    notes: First editorial director of AI initiatives. Co-founded Quartz. Built Echo (AI summarization), Stet (AI quality
+      evaluation), Cheat Sheet (AI investigations tool). Pro-AI-for-journalism within strict editorial guardrails.
+  - position: technology_reporter_meta
+    incoming: Eli Tan
+    date: 2026-01
+    source_url: https://nytco.com/press/staff-news-from-business/
+    notes: Second dedicated Meta reporter alongside Mike Isaac. Promoted from NYT fellowship. Signals NYT's continued investment
+      in Meta beat coverage.
+  - position: technology_reporter_google
+    outgoing: Nico Grant
+    date: 2025-05
+    source_url: https://talkingbiznews.com/they-move/ny-times-biz-reporter-grant-departs/
+    notes: 'DEPARTURE: Grant left journalism entirely after 3 years covering Google/Alphabet. ''Working there was a dream
+      come true, but now, it''s time to chase other dreams outside of journalism.'' Creates gap on NYT''s Google beat.'
   guardian:
-    - position: "eic"
-      outgoing: "Alan Rusbridger"
-      incoming: "Katharine Viner"
-      date: "2015-06"
-      source_url: "https://www.theguardian.com/media/2015/mar/20/katharine-viner-guardian-editor-in-chief"
-      notes: "Viner became the first female editor-in-chief of the Guardian. Under her leadership, the paper has taken a strongly critical stance on Big Tech and AI. Still serving as of 2026."
-
-    - position: "us_tech_editor"
-      outgoing: null
-      incoming: "Blake Montgomery"
-      date: "2023-09"
-      source_url: "https://talkingbiznews.com/they-re-hiring/guardian-hires-montgomery-to-be-us-tech-editor/"
-      notes: "New US tech editor role. Montgomery came from Gizmodo (previously Daily Beast, BuzzFeed News). Signals Guardian US investing in dedicated tech editorial leadership."
-
-    - position: "us_eic"
-      outgoing: "John Mulholland"
-      incoming: "Betsy Reed"
-      date: "2022-09"
-      source_url: "https://en.wikipedia.org/wiki/Betsy_Reed"
-      notes: "KEY LEADERSHIP CHANGE: Betsy Reed became Guardian US EIC, succeeding John Mulholland. Reed's career arc (The Nation exec editor 2006-2014 → The Intercept EIC 2015-2022 → Guardian US EIC 2022-) is a pipeline from the institutional American left: The Nation (oldest weekly progressive magazine), The Intercept (adversarial investigative, founded by Glenn Greenwald/Jeremy Scahill/Laura Poitras with Omidyar funding), Guardian US. Under Reed: major expansion adding 50+ journalists, 60% growth in supporting readers, new coverage areas (investigations, US soccer, wellness). Launched 'The Whole Picture' US marketing campaign (fall 2025) emphasizing Guardian independence vs US press's declining capacity. Harvard BA (1990, history and literature). Edited Scahill's 'Blackwater' and 'Dirty Wars'. CUNY Newmark J-School 2025 commencement speaker. ANALYTICAL VALUE: Her Intercept background is the most adversarial institutional origin of any EIC in our dataset. The Intercept was built on the Snowden disclosures — surveillance, government overreach, corporate complicity. This editorial DNA directly shapes Guardian US coverage of Big Tech surveillance, data practices, and government-tech relationships during the entire study period."
-
-    - position: "us_media_power_reporter"
-      outgoing: null
-      incoming: "Jeremy Barr"
-      date: "2025-10"
-      source_url: "https://editorandpublisher.com/stories/jeremy-barr-joins-the-guardian-as-its-first-media-reporter-in-the-us,256127"
-      notes: "KEY STRUCTURAL CHANGE: Guardian's first-ever dedicated US media reporter. Barr came from Washington Post (5 years covering media industry, including Smartmatic v. Fox News). Reports to US business editor Dominic Rushe. Beat: media, politics, corporate influence — how powerful institutions shape information flows. Works closely with UK media editor Michael Savage. Previously: AdAge, Hollywood Reporter (media/politics), Politico Media. Emory BA + U Maryland MA journalism. ANALYTICAL VALUE: This hire signals Guardian US expanding beyond tech coverage into structural media criticism — ownership, regulation, lawsuits. His beat is precisely what MediaScope studies. The irony: a reporter covering media conflicts at other institutions, working for a publication with its own undisclosed OpenAI/Google licensing deals."
-
-    - position: "ai_series_editor"
-      outgoing: null
-      incoming: "Samantha Oltman"
-      date: "2026-02"
-      source_url: "https://www.editorandpublisher.com/stories/guardian-launches-reporting-initiative-ai-work-power,262263"
-      notes: "Hired to lead 'Reworked' year-long AI/work series. Former Recode EIC, Vox editorial director."
-
-    - position: "ai_series_editor"
-      outgoing: "Samantha Oltman"
-      incoming: null
-      date: "2026-06"
-      source_url: "https://talkingbiznews.com/they-re-hiring/bloomberg-hires-oltman-as-editor-for-ai-vc-and-startups/"
-      notes: "KEY EVENT: Oltman departed after only ~4 months for Bloomberg (editor for AI/VC/startups under Sarah Frier). Reworked series lost its founding editor mid-run. Tests Guardian's editorial resilience when a key hire departs quickly."
-
-    - position: "chief_ai_officer"
-      outgoing: null
-      incoming: "Caspar Llewellyn Smith"
-      date: "2024-01"
-      source_url: "https://theorg.com/org/guardian-media-group/org-chart/caspar-llewellyn-smith"
-      notes: "KEY STRUCTURAL CHANGE: Guardian among first major UK newspapers to appoint a dedicated Chief AI Officer. Llewellyn Smith is a 20+ year Guardian veteran: joined from Daily Telegraph (2003) to launch Observer Music Monthly, then Head of Culture → editor of theguardian.com → Director of Digital Strategy → executive committee (2015) → Chief Product Officer (~5 years) → CAIO. Four focus areas: (1) external AI licensing agreements, (2) internal AI tool deployment, (3) strategic thinking about AI/journalism future, (4) org-wide AI training. Set up Guardian AI Council (senior editors + technologists). Participated in Globe and Mail Foundation 'Editing Democracy' panel (2026). ANALYTICAL VALUE: The CAIO role creates institutional AI strategy at the executive level — separate from editorial coverage of AI. This dual positioning (covering AI critically while commercially licensing content to AI companies) is the central tension in the Guardian's AI posture."
-
-    - position: "uk_technology_editor"
-      outgoing: "Alex Hern"
-      incoming: "Robert Booth"
-      date: "2024-10"
-      source_url: "https://talkingbiznews.com/they-re-hiring/guardian-tech-editor-hern-is-departing/"
-      notes: "KEY EDITORIAL SIGNAL: Guardian replaced an 11-year tech-specialist editor (Hern: economics→tech pipeline, TechScape newsletter founder, Technology Journalist of the Year 2020) with a 24-year housing/homelessness investigative reporter who had zero tech journalism experience. This is a deliberate institutional choice: investigative instincts and accountability framing over subject-matter expertise. Booth's Grenfell Tower coverage (exposing systemic corporate dishonesty and government failure that killed 72 people) is the template he brings to tech accountability. Tests the hypothesis that tech coverage quality depends more on investigative methodology than tech fluency."
-
-    - position: "us_technology_reporter"
-      outgoing: "Kari Paul"
-      incoming: "Dara Kerr"
-      date: "2024-12"
-      source_url: "https://talkingbiznews.com/media-news/guardian-hires-kerr-as-a-tech-reporter/"
-      notes: "Kerr replaced Kari Paul (departed mid-2024 for art school) as Guardian's West Coast/Bay Area tech reporter. Career arc: CNET → The Markup → NPR → Guardian — consistent move toward accountability-focused, public-interest journalism models. Each institution operates outside traditional advertising-revenue dependency. Labor/surveillance specialist."
-
-    - position: "ceo"
-      outgoing: "David Pemsel"
-      incoming: "Anna Bateson"
-      date: "~2023"
-      source_url: ""
-      notes: "Bateson led record revenue growth (£275M FY2024-25), OpenAI licensing deal (Feb 2025), SPUR coalition founding (Feb 2026), and Observer sale to Tortoise Media."
-
-    - position: "openai_licensing_deal"
-      outgoing: null
-      incoming: null
-      date: "2025-02-19"
-      source_url: "https://editorandpublisher.com/stories/guardian-media-group-announces-strategic-partnership-with-openai,254405"
-      notes: "CRITICAL BUSINESS EVENT: Guardian-OpenAI strategic partnership. Archive + real-time journalism powers ChatGPT. Guardian rolls out ChatGPT Enterprise internally. Destroys 'pure control case' status — creates direct commercial relationship with Meta's #1 AI competitor."
-
-    - position: "spur_coalition_founding"
-      outgoing: null
-      incoming: null
-      date: "2026-02"
-      source_url: "https://journalism.co.uk/stories/bbc-ft-guardian-sky-and-the-times-unite-in-spur-coalition-for-ai-protection"
-      notes: "Guardian is founding member of SPUR (Standards for Publisher Usage Rights) alongside BBC, FT, Sky News, Telegraph. Anna Bateson is named signatory. Coalition creates structural publisher-vs-AI-companies framework."
-
-    - position: "scott_trust_board_member"
-      outgoing: null
-      incoming: "Dr Jonathan Paine"
-      date: "2024-11"
-      source_url: "https://inpublishing.co.uk/articles/dr-jonathan-paine-joins-scott-trust-board-24775"
-      notes: "25-year Rothschild TMT specialist. D.Phil Oxford. Also joins STEL board and Joint Audit Committee. Signals Scott Trust investing in financial/media expertise for AI licensing era."
-
-    - position: "scott_trust_board_member"
-      outgoing: null
-      incoming: "Jane Martinson"
-      date: "2025-07"
-      source_url: "https://editorandpublisher.com/stories/jane-martinson-joins-the-scott-trust-board,255553"
-      notes: "20+ year Guardian veteran joins Scott Trust board."
-
+  - position: eic
+    outgoing: Alan Rusbridger
+    incoming: Katharine Viner
+    date: 2015-06
+    source_url: https://www.theguardian.com/media/2015/mar/20/katharine-viner-guardian-editor-in-chief
+    notes: Viner became the first female editor-in-chief of the Guardian. Under her leadership, the paper has taken a strongly
+      critical stance on Big Tech and AI. Still serving as of 2026.
+  - position: us_tech_editor
+    outgoing: null
+    incoming: Blake Montgomery
+    date: 2023-09
+    source_url: https://talkingbiznews.com/they-re-hiring/guardian-hires-montgomery-to-be-us-tech-editor/
+    notes: New US tech editor role. Montgomery came from Gizmodo (previously Daily Beast, BuzzFeed News). Signals Guardian
+      US investing in dedicated tech editorial leadership.
+  - position: us_eic
+    outgoing: John Mulholland
+    incoming: Betsy Reed
+    date: 2022-09
+    source_url: https://en.wikipedia.org/wiki/Betsy_Reed
+    notes: 'KEY LEADERSHIP CHANGE: Betsy Reed became Guardian US EIC, succeeding John Mulholland. Reed''s career arc (The
+      Nation exec editor 2006-2014 → The Intercept EIC 2015-2022 → Guardian US EIC 2022-) is a pipeline from the institutional
+      American left: The Nation (oldest weekly progressive magazine), The Intercept (adversarial investigative, founded by
+      Glenn Greenwald/Jeremy Scahill/Laura Poitras with Omidyar funding), Guardian US. Under Reed: major expansion adding
+      50+ journalists, 60% growth in supporting readers, new coverage areas (investigations, US soccer, wellness). Launched
+      ''The Whole Picture'' US marketing campaign (fall 2025) emphasizing Guardian independence vs US press''s declining capacity.
+      Harvard BA (1990, history and literature). Edited Scahill''s ''Blackwater'' and ''Dirty Wars''. CUNY Newmark J-School
+      2025 commencement speaker. ANALYTICAL VALUE: Her Intercept background is the most adversarial institutional origin of
+      any EIC in our dataset. The Intercept was built on the Snowden disclosures — surveillance, government overreach, corporate
+      complicity. This editorial DNA directly shapes Guardian US coverage of Big Tech surveillance, data practices, and government-tech
+      relationships during the entire study period.'
+  - position: us_media_power_reporter
+    outgoing: null
+    incoming: Jeremy Barr
+    date: 2025-10
+    source_url: https://editorandpublisher.com/stories/jeremy-barr-joins-the-guardian-as-its-first-media-reporter-in-the-us,256127
+    notes: 'KEY STRUCTURAL CHANGE: Guardian''s first-ever dedicated US media reporter. Barr came from Washington Post (5 years
+      covering media industry, including Smartmatic v. Fox News). Reports to US business editor Dominic Rushe. Beat: media,
+      politics, corporate influence — how powerful institutions shape information flows. Works closely with UK media editor
+      Michael Savage. Previously: AdAge, Hollywood Reporter (media/politics), Politico Media. Emory BA + U Maryland MA journalism.
+      ANALYTICAL VALUE: This hire signals Guardian US expanding beyond tech coverage into structural media criticism — ownership,
+      regulation, lawsuits. His beat is precisely what MediaScope studies. The irony: a reporter covering media conflicts
+      at other institutions, working for a publication with its own undisclosed OpenAI/Google licensing deals.'
+  - position: ai_series_editor
+    outgoing: null
+    incoming: Samantha Oltman
+    date: 2026-02
+    source_url: https://www.editorandpublisher.com/stories/guardian-launches-reporting-initiative-ai-work-power,262263
+    notes: Hired to lead 'Reworked' year-long AI/work series. Former Recode EIC, Vox editorial director.
+  - position: ai_series_editor
+    outgoing: Samantha Oltman
+    incoming: null
+    date: 2026-06
+    source_url: https://talkingbiznews.com/they-re-hiring/bloomberg-hires-oltman-as-editor-for-ai-vc-and-startups/
+    notes: 'KEY EVENT: Oltman departed after only ~4 months for Bloomberg (editor for AI/VC/startups under Sarah Frier). Reworked
+      series lost its founding editor mid-run. Tests Guardian''s editorial resilience when a key hire departs quickly.'
+  - position: chief_ai_officer
+    outgoing: null
+    incoming: Caspar Llewellyn Smith
+    date: 2024-01
+    source_url: https://theorg.com/org/guardian-media-group/org-chart/caspar-llewellyn-smith
+    notes: 'KEY STRUCTURAL CHANGE: Guardian among first major UK newspapers to appoint a dedicated Chief AI Officer. Llewellyn
+      Smith is a 20+ year Guardian veteran: joined from Daily Telegraph (2003) to launch Observer Music Monthly, then Head
+      of Culture → editor of theguardian.com → Director of Digital Strategy → executive committee (2015) → Chief Product Officer
+      (~5 years) → CAIO. Four focus areas: (1) external AI licensing agreements, (2) internal AI tool deployment, (3) strategic
+      thinking about AI/journalism future, (4) org-wide AI training. Set up Guardian AI Council (senior editors + technologists).
+      Participated in Globe and Mail Foundation ''Editing Democracy'' panel (2026). ANALYTICAL VALUE: The CAIO role creates
+      institutional AI strategy at the executive level — separate from editorial coverage of AI. This dual positioning (covering
+      AI critically while commercially licensing content to AI companies) is the central tension in the Guardian''s AI posture.'
+  - position: uk_technology_editor
+    outgoing: Alex Hern
+    incoming: Robert Booth
+    date: 2024-10
+    source_url: https://talkingbiznews.com/they-re-hiring/guardian-tech-editor-hern-is-departing/
+    notes: 'KEY EDITORIAL SIGNAL: Guardian replaced an 11-year tech-specialist editor (Hern: economics→tech pipeline, TechScape
+      newsletter founder, Technology Journalist of the Year 2020) with a 24-year housing/homelessness investigative reporter
+      who had zero tech journalism experience. This is a deliberate institutional choice: investigative instincts and accountability
+      framing over subject-matter expertise. Booth''s Grenfell Tower coverage (exposing systemic corporate dishonesty and
+      government failure that killed 72 people) is the template he brings to tech accountability. Tests the hypothesis that
+      tech coverage quality depends more on investigative methodology than tech fluency.'
+  - position: us_technology_reporter
+    outgoing: Kari Paul
+    incoming: Dara Kerr
+    date: 2024-12
+    source_url: https://talkingbiznews.com/media-news/guardian-hires-kerr-as-a-tech-reporter/
+    notes: 'Kerr replaced Kari Paul (departed mid-2024 for art school) as Guardian''s West Coast/Bay Area tech reporter. Career
+      arc: CNET → The Markup → NPR → Guardian — consistent move toward accountability-focused, public-interest journalism
+      models. Each institution operates outside traditional advertising-revenue dependency. Labor/surveillance specialist.'
+  - position: ceo
+    outgoing: David Pemsel
+    incoming: Anna Bateson
+    date: ~2023
+    source_url: ''
+    notes: Bateson led record revenue growth (£275M FY2024-25), OpenAI licensing deal (Feb 2025), SPUR coalition founding
+      (Feb 2026), and Observer sale to Tortoise Media.
+  - position: openai_licensing_deal
+    outgoing: null
+    incoming: null
+    date: '2025-02-19'
+    source_url: https://editorandpublisher.com/stories/guardian-media-group-announces-strategic-partnership-with-openai,254405
+    notes: 'CRITICAL BUSINESS EVENT: Guardian-OpenAI strategic partnership. Archive + real-time journalism powers ChatGPT.
+      Guardian rolls out ChatGPT Enterprise internally. Destroys ''pure control case'' status — creates direct commercial
+      relationship with Meta''s #1 AI competitor.'
+  - position: spur_coalition_founding
+    outgoing: null
+    incoming: null
+    date: 2026-02
+    source_url: https://journalism.co.uk/stories/bbc-ft-guardian-sky-and-the-times-unite-in-spur-coalition-for-ai-protection
+    notes: Guardian is founding member of SPUR (Standards for Publisher Usage Rights) alongside BBC, FT, Sky News, Telegraph.
+      Anna Bateson is named signatory. Coalition creates structural publisher-vs-AI-companies framework.
+  - position: scott_trust_board_member
+    outgoing: null
+    incoming: Dr Jonathan Paine
+    date: 2024-11
+    source_url: https://inpublishing.co.uk/articles/dr-jonathan-paine-joins-scott-trust-board-24775
+    notes: 25-year Rothschild TMT specialist. D.Phil Oxford. Also joins STEL board and Joint Audit Committee. Signals Scott
+      Trust investing in financial/media expertise for AI licensing era.
+  - position: scott_trust_board_member
+    outgoing: null
+    incoming: Jane Martinson
+    date: 2025-07
+    source_url: https://editorandpublisher.com/stories/jane-martinson-joins-the-scott-trust-board,255553
+    notes: 20+ year Guardian veteran joins Scott Trust board.
   atlantic:
-    - position: "eic"
-      outgoing: "James Bennet"
-      incoming: "Jeffrey Goldberg"
-      date: "2016-10"
-      source_url: "https://www.theatlantic.com/press-releases/archive/2016/10/jeffrey-goldberg-atlantic-editor-chief/504920/"
-      notes: "Goldberg has been EIC since 2016. During his tenure, Laurene Powell Jobs' Emerson Collective acquired majority ownership (2017)."
-
-    - position: "executive_editor"
-      outgoing: null
-      incoming: "Adrienne LaFrance"
-      date: "2019-05"
-      source_url: "https://en.wikipedia.org/wiki/The_Atlantic"
-      notes: "LaFrance promoted from staff. Known for anti-tech-platforms investigations (QAnon coverage). Wrote 'Facebook is a Doomsday Machine' (Dec 2020). Signals further editorial turn against Big Tech."
-
-    - position: "ceo"
-      outgoing: null
-      incoming: "Nicholas Thompson"
-      date: "2020-12"
-      source_url: "https://en.wikipedia.org/wiki/The_Atlantic"
-      notes: "KEY MIGRATION: Former Wired EIC (2017-2020) becomes Atlantic CEO. Creates direct Condé Nast → Atlantic editorial culture bridge. Thompson wrote two Facebook cover stories cited in Congress while at Wired. Under his leadership at Atlantic: profitability achieved, record subscriptions, 3 Pulitzer Prizes, OpenAI licensing deal (May 2024). Co-founded Speakeasy AI, The Atavist."
-
-    - position: "senior_tech_editor"
-      outgoing: null
-      incoming: "Ellen Cushing"
-      date: "2018-05"
-      source_url: "https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-buzzfeeds-cushing-as-senior-tech-editor/"
-      notes: "Built Atlantic's SF tech bureau. Came from BuzzFeed News. Shaped tech desk that Tiffany, Wong, and others joined. Pivoted to food/culture staff writer May 2024."
-
-    - position: "vice_chairman"
-      outgoing: null
-      incoming: "Peter Lattman"
-      date: "2017-07"
-      source_url: "https://en.wikipedia.org/wiki/The_Atlantic"
-      notes: "Emerson Collective staffer placed as vice chairman at acquisition. Direct LPJ representative in Atlantic governance."
-
+  - position: eic
+    outgoing: James Bennet
+    incoming: Jeffrey Goldberg
+    date: 2016-10
+    source_url: https://www.theatlantic.com/press-releases/archive/2016/10/jeffrey-goldberg-atlantic-editor-chief/504920/
+    notes: Goldberg has been EIC since 2016. During his tenure, Laurene Powell Jobs' Emerson Collective acquired majority
+      ownership (2017).
+  - position: executive_editor
+    outgoing: null
+    incoming: Adrienne LaFrance
+    date: 2019-05
+    source_url: https://en.wikipedia.org/wiki/The_Atlantic
+    notes: LaFrance promoted from staff. Known for anti-tech-platforms investigations (QAnon coverage). Wrote 'Facebook is
+      a Doomsday Machine' (Dec 2020). Signals further editorial turn against Big Tech.
+  - position: ceo
+    outgoing: null
+    incoming: Nicholas Thompson
+    date: 2020-12
+    source_url: https://en.wikipedia.org/wiki/The_Atlantic
+    notes: 'KEY MIGRATION: Former Wired EIC (2017-2020) becomes Atlantic CEO. Creates direct Condé Nast → Atlantic editorial
+      culture bridge. Thompson wrote two Facebook cover stories cited in Congress while at Wired. Under his leadership at
+      Atlantic: profitability achieved, record subscriptions, 3 Pulitzer Prizes, OpenAI licensing deal (May 2024). Co-founded
+      Speakeasy AI, The Atavist.'
+  - position: senior_tech_editor
+    outgoing: null
+    incoming: Ellen Cushing
+    date: 2018-05
+    source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-buzzfeeds-cushing-as-senior-tech-editor/
+    notes: Built Atlantic's SF tech bureau. Came from BuzzFeed News. Shaped tech desk that Tiffany, Wong, and others joined.
+      Pivoted to food/culture staff writer May 2024.
+  - position: vice_chairman
+    outgoing: null
+    incoming: Peter Lattman
+    date: 2017-07
+    source_url: https://en.wikipedia.org/wiki/The_Atlantic
+    notes: Emerson Collective staffer placed as vice chairman at acquisition. Direct LPJ representative in Atlantic governance.
   mit-tech-review:
-    - position: "publisher_ceo"
-      outgoing: "Jason Pontin"
-      incoming: "Elizabeth Bramson-Boudreau"
-      date: "2017-10"
-      source_url: "https://projects.propublica.org/nonprofits/organizations/954893200"
-      notes: "Pontin listed as 'Former President, Publisher and CEO' on FY2018 990 ($515K). Bramson-Boudreau came from Atlantic Media/Economist Group. Shifted to digital-first strategy, expanded event revenue to ~33% of total. $421K compensation (FY2024)."
-
-    - position: "eic"
-      outgoing: "David Rotman (acting)"
-      incoming: "Gideon Lichfield"
-      date: "2017-12"
-      source_url: "https://www.technologyreview.com/2017/12/05/3720/a-letter-from-mit-technology-reviews-new-editor-in-chief/"
-      notes: "Lichfield came from Quartz (previously The Economist for 15 years). Shifted MIT Tech Review toward more investigative, critical tech coverage. Led coverage of MIT-Epstein scandal (2019). $269K-$278K compensation."
-
-    - position: "eic"
-      outgoing: "Gideon Lichfield"
-      incoming: "Mat Honan"
-      date: "2021-08"
-      source_url: "https://www.technologyreview.com/2021/06/22/1026816/mat-honan-joins-mit-technology-review-editor-in-chief/"
-      notes: "KEY DOUBLE MIGRATION: Lichfield left for Wired as EIC (creating natural experiment). Honan came from BuzzFeed News (executive editor), previously Wired senior writer/columnist. Career: Wired → BuzzFeed → MIT TR. $292K + $74K benefits (FY2024 990). Start date Aug 17, 2021."
-
-    - position: "executive_editor_operations"
-      incoming: "Amy Nordrum"
-      date: "2020-07"
-      source_url: "https://amynordrum.com"
-      notes: "Joined as commissioning editor, promoted to executive editor of operations. Oversees 10 Breakthrough Technologies, Innovators Under 35, 15 Climate Tech Companies to Watch. Previously news manager at IEEE Spectrum. BA Ohio University, MA SHERP NYU, MBA NYU Stern. Science Friday contributor for 6 years."
-
-    - position: "senior_ai_editor"
-      incoming: "Will Douglas Heaven"
-      date: "2020-01"
-      source_url: "https://www.technologyreview.com/author/will-douglas-heaven/"
-      notes: "Senior editor for AI — shapes entire AI editorial direction. PhD Computer Science (Imperial College London). Previously founding editor BBC Future Now, chief tech editor New Scientist. UK-based (London). 219+ articles. Co-led FT partnership 'State of AI' newsletter series (Oct 2025)."
-
-    - position: "ft_editorial_partnership"
-      outgoing: null
-      incoming: null
-      date: "2025-10-29"
-      source_url: "https://morningstar.com"
-      notes: "STRATEGIC PARTNERSHIP: MIT TR × Financial Times 'State of AI' newsletter series. 6-part series pairing MIT TR reporters with FT correspondents: Chen+Thornhill (US vs China), Crownhart+Clark (Energy), O'Donnell+Warrell (War), Guo+Heikkilä (Privacy), Rotman+Waters (Economy), Heaven+Bradshaw (2030). Signals MIT TR positioning itself alongside FT for AI geopolitics authority."
-
-    - position: "national_magazine_award_finalist"
-      outgoing: null
-      incoming: null
-      date: "2026-03-09"
-      source_url: "https://ca.advfn.com"
-      notes: "EDITORIAL MILESTONE: National Magazine Award finalist (ASME Reporting) for 'Power Hungry: AI and our energy future' — James O'Donnell and Casey Crownhart's 6-month investigation into AI's energy footprint. Prompted OpenAI, Mistral, and Google to disclose energy/water usage data."
-
-    - position: "china_tech_reporter"
-      outgoing: "Zeyi Yang"
-      incoming: null
-      date: "2025-01"
-      source_url: "https://www.technologyreview.com/author/zeyi-yang/"
-      notes: "DEPARTURE: Zeyi Yang left MIT TR for Wired as senior writer (~Jan 2025). MIT TR author page uses past tense ('covered'). Created China Report newsletter. Won 2024 ASME NEXT Award. His departure leaves MIT TR without a dedicated China tech correspondent — a significant editorial gap given US-China tech competition is the decade's defining geopolitical tech story. 144 posts during tenure."
-
-    - position: "senior_ai_reporter"
-      outgoing: "Melissa Heikkilä"
-      incoming: "James O'Donnell"
-      date: "2025-01"
-      source_url: "https://talkingbiznews.com/media-news/financial-times-hires-heikkila-as-ai-correspondent/"
-      notes: "KEY DEPARTURE + REPLACEMENT: Heikkilä departed for Financial Times as AI correspondent (started Jan 27, 2025) after 2.5 years at MIT TR (May 2022 – Jan 2025). Previously at POLITICO Europe, The Economist, Helsingin Sanomat. O'Donnell took over as senior AI reporter — his Brookings/Princeton policy background contrasts sharply with Heikkilä's EU regulatory lens. This is a notable editorial frame shift: from European regulatory analysis to American institutional power dynamics. MIT TR posted AI reporter job listing around this time. NOTE: Heikkilä then appeared as FT correspondent in MIT TR + FT 'State of AI' partnership (Oct 2025), paired with her former MIT TR colleague Eileen Guo — her departure may have catalyzed the partnership."
-
-    - position: "china_tech_reporter"
-      outgoing: null
-      incoming: "Caiwei Chen"
-      date: "2024-01"
-      source_url: "https://talkingbiznews.com/media-news/mit-tech-review-hires-chen-as-tech-reporter/"
-      notes: "REPLACEMENT: Chen hired from Rest of World to cover China tech. Filled gap created by Zeyi Yang's departure (or preceded it — timing unclear). Columbia MA. 5+ years covering Chinese internet. Part of Chaoyang Trap newsletter. Part of MIT TR + FT 'State of AI' partnership (paired with FT's John Thornhill on 'The US vs. China')."
+  - position: publisher_ceo
+    outgoing: Jason Pontin
+    incoming: Elizabeth Bramson-Boudreau
+    date: 2017-10
+    source_url: https://projects.propublica.org/nonprofits/organizations/954893200
+    notes: Pontin listed as 'Former President, Publisher and CEO' on FY2018 990 ($515K). Bramson-Boudreau came from Atlantic
+      Media/Economist Group. Shifted to digital-first strategy, expanded event revenue to ~33% of total. $421K compensation
+      (FY2024).
+  - position: eic
+    outgoing: David Rotman (acting)
+    incoming: Gideon Lichfield
+    date: 2017-12
+    source_url: https://www.technologyreview.com/2017/12/05/3720/a-letter-from-mit-technology-reviews-new-editor-in-chief/
+    notes: Lichfield came from Quartz (previously The Economist for 15 years). Shifted MIT Tech Review toward more investigative,
+      critical tech coverage. Led coverage of MIT-Epstein scandal (2019). $269K-$278K compensation.
+  - position: eic
+    outgoing: Gideon Lichfield
+    incoming: Mat Honan
+    date: 2021-08
+    source_url: https://www.technologyreview.com/2021/06/22/1026816/mat-honan-joins-mit-technology-review-editor-in-chief/
+    notes: 'KEY DOUBLE MIGRATION: Lichfield left for Wired as EIC (creating natural experiment). Honan came from BuzzFeed
+      News (executive editor), previously Wired senior writer/columnist. Career: Wired → BuzzFeed → MIT TR. $292K + $74K benefits
+      (FY2024 990). Start date Aug 17, 2021.'
+  - position: executive_editor_operations
+    incoming: Amy Nordrum
+    date: 2020-07
+    source_url: https://amynordrum.com
+    notes: Joined as commissioning editor, promoted to executive editor of operations. Oversees 10 Breakthrough Technologies,
+      Innovators Under 35, 15 Climate Tech Companies to Watch. Previously news manager at IEEE Spectrum. BA Ohio University,
+      MA SHERP NYU, MBA NYU Stern. Science Friday contributor for 6 years.
+  - position: senior_ai_editor
+    incoming: Will Douglas Heaven
+    date: 2020-01
+    source_url: https://www.technologyreview.com/author/will-douglas-heaven/
+    notes: Senior editor for AI — shapes entire AI editorial direction. PhD Computer Science (Imperial College London). Previously
+      founding editor BBC Future Now, chief tech editor New Scientist. UK-based (London). 219+ articles. Co-led FT partnership
+      'State of AI' newsletter series (Oct 2025).
+  - position: ft_editorial_partnership
+    outgoing: null
+    incoming: null
+    date: '2025-10-29'
+    source_url: https://morningstar.com
+    notes: 'STRATEGIC PARTNERSHIP: MIT TR × Financial Times ''State of AI'' newsletter series. 6-part series pairing MIT TR
+      reporters with FT correspondents: Chen+Thornhill (US vs China), Crownhart+Clark (Energy), O''Donnell+Warrell (War),
+      Guo+Heikkilä (Privacy), Rotman+Waters (Economy), Heaven+Bradshaw (2030). Signals MIT TR positioning itself alongside
+      FT for AI geopolitics authority.'
+  - position: national_magazine_award_finalist
+    outgoing: null
+    incoming: null
+    date: '2026-03-09'
+    source_url: https://ca.advfn.com
+    notes: 'EDITORIAL MILESTONE: National Magazine Award finalist (ASME Reporting) for ''Power Hungry: AI and our energy future''
+      — James O''Donnell and Casey Crownhart''s 6-month investigation into AI''s energy footprint. Prompted OpenAI, Mistral,
+      and Google to disclose energy/water usage data.'
+  - position: china_tech_reporter
+    outgoing: Zeyi Yang
+    incoming: null
+    date: 2025-01
+    source_url: https://www.technologyreview.com/author/zeyi-yang/
+    notes: 'DEPARTURE: Zeyi Yang left MIT TR for Wired as senior writer (~Jan 2025). MIT TR author page uses past tense (''covered'').
+      Created China Report newsletter. Won 2024 ASME NEXT Award. His departure leaves MIT TR without a dedicated China tech
+      correspondent — a significant editorial gap given US-China tech competition is the decade''s defining geopolitical tech
+      story. 144 posts during tenure.'
+  - position: senior_ai_reporter
+    outgoing: Melissa Heikkilä
+    incoming: James O'Donnell
+    date: 2025-01
+    source_url: https://talkingbiznews.com/media-news/financial-times-hires-heikkila-as-ai-correspondent/
+    notes: 'KEY DEPARTURE + REPLACEMENT: Heikkilä departed for Financial Times as AI correspondent (started Jan 27, 2025)
+      after 2.5 years at MIT TR (May 2022 – Jan 2025). Previously at POLITICO Europe, The Economist, Helsingin Sanomat. O''Donnell
+      took over as senior AI reporter — his Brookings/Princeton policy background contrasts sharply with Heikkilä''s EU regulatory
+      lens. This is a notable editorial frame shift: from European regulatory analysis to American institutional power dynamics.
+      MIT TR posted AI reporter job listing around this time. NOTE: Heikkilä then appeared as FT correspondent in MIT TR +
+      FT ''State of AI'' partnership (Oct 2025), paired with her former MIT TR colleague Eileen Guo — her departure may have
+      catalyzed the partnership.'
+  - position: china_tech_reporter
+    outgoing: null
+    incoming: Caiwei Chen
+    date: 2024-01
+    source_url: https://talkingbiznews.com/media-news/mit-tech-review-hires-chen-as-tech-reporter/
+    notes: 'REPLACEMENT: Chen hired from Rest of World to cover China tech. Filled gap created by Zeyi Yang''s departure (or
+      preceded it — timing unclear). Columbia MA. 5+ years covering Chinese internet. Part of Chaoyang Trap newsletter. Part
+      of MIT TR + FT ''State of AI'' partnership (paired with FT''s John Thornhill on ''The US vs. China'').'

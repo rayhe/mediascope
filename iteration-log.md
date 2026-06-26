@@ -2616,3 +2616,102 @@ The affiliation extraction pipeline had a blind spot for the most common title c
 - `mediascope/analyze/sources.py` — 4 source extraction fixes (affiliation, false anon, single-name, dedup)
 - `tests/test_glasses_deep_dive.py` — 17 new tests
 - `examples/sample_output/wired_meta_glasses_launch_self_branded_2026_06_23_deep_dive.md` — full annotated analysis
+
+## 2026-06-25 17:00 PT — Hour Type B: Journalist/Publication Research
+
+**Focus:** 3 new journalists added + 1 factual error fixed
+**Commit:** `c05cae2`
+**Journalists:** 70 → 73 total, 69 multi-publication (up from 66)
+
+### New journalists added:
+
+#### 1. Ryan Mac (Forbes → BuzzFeed News → NYT)
+- **Why this matters:** Mac is arguably NYT's most important tech accountability reporter covering Meta, Zuckerberg, and Musk. He was the single biggest gap in the dataset — his co-author Kate Conger was tracked but he wasn't.
+- **Career:** Stanford BA (2011) → Forbes staff writer (2011-2017, billionaires list → tech startups) → BuzzFeed News senior reporter (Jun 2017-Jun 2021, Facebook/Musk accountability) → NYT correspondent (Jul 2021-present, tech accountability)
+- **Awards:** 2019 Mirror Award, 2020 George Polk Award (both for Facebook coverage at BuzzFeed), 2017 Gerald Loeb Award finalist (Thiel/Gawker)
+- **Book:** Co-authored "Character Limit: How Elon Musk Destroyed Twitter" (Penguin Press, Sept 2024) with Kate Conger
+- **Analytical value:** Same beat (tech billionaire accountability) across 3 institutional contexts — strongest controlled comparison in dataset. Forbes → BuzzFeed → NYT pipeline represents increasing-prestige trajectory amplifying same adversarial instinct. Paired with Kate Conger via shared book creates dual-pipeline natural experiment (Conger: Gizmodo → TechCrunch → NYT vs Mac: Forbes → BuzzFeed → NYT).
+- **Sources:** Wikipedia (`en.wikipedia.org/wiki/Ryan_Mac`), nytco.com announcement (Jun 24, 2021), Poynter (May 16, 2017), Penguin Random House author bio, TalkingBizNews (May 2017, Jun 2021), Muck Rack, Web Summit speaker profile
+
+#### 2. Nitasha Tiku (NYmag → NY Observer → Valleywag → Verge → BuzzFeed → Wired → WaPo)
+- **Why this matters:** Tiku's Wired → WaPo migration is one of the most analytically valuable transitions in the dataset — she moved FROM a tracked publication (Wired, Condé Nast) to an untracked one (WaPo, Bezos-owned). Her 7-publication career spans nearly every major digital media era.
+- **Career:** NYmag assistant editor (~2009-2011) → NY Observer senior editor/Betabeat (~2011-2013) → Valleywag/Gawker editor (~2013-2014) → The Verge West Coast senior editor (~2015) → BuzzFeed News senior writer (~2015-2017) → Wired senior writer (May 8, 2017-Aug 2019) → Washington Post tech culture reporter (Sep 16, 2019-Feb 2026)
+- **At Wired:** Under Nicholas Thompson (tracked EIC). Hired same day as features editor Mark Robinson. Wrote cover story on Google turmoil during Trump administration.
+- **Laid off:** WaPo Feb 2026 layoffs
+- **Sources:** TalkingBizNews hiring announcements (May 2017 Wired hire, Sept 2019 WaPo hire, Feb 2026 layoff), TheOrg.com profile, Poynter (Verge hire ~2015), Longform Podcast #286 (Mar 2018), Podchaser, Data & Society
+
+#### 3. Natasha Singer (Russian Vogue → The Forward → Outside → NYT)
+- **Why this matters:** Longest-tenured NYT tech reporter (~17+ years). Non-traditional pipeline (international journalism/literary magazines → NYT tech) with orthogonal beat (education tech, student privacy, consumer data) compared to Meta/platform accountability reporters.
+- **Career:** Russian Vogue founding editor (~1998-2001) → The Forward Moscow bureau chief (~2002-2004) → Outside Magazine correspondent (~2005-2007) → NYT reporter (~2008-present)
+- **Awards:** 2019 George Polk Award (team, privacy coverage), 2019 Pulitzer finalist (National Reporting)
+- **Fellowship:** Knight Science Journalism fellow at MIT (2021-22, alongside Karen Hao — also tracked)
+- **Impact:** "You For Sale" series prompted congressional/federal investigations. Coverage led to California's Student Online Personal Information Protection Act of 2014.
+- **Sources:** Cornell Milstein Program speaker bio, Clay.earth profile, Data & Society Research Institute page, Podchaser, TalkingBizNews (Knight fellowship), National Education Policy Center
+
+### Bug fix: Kate Conger co-author error
+- **Before:** Kate Conger's NYT career entry listed "Character Limit" co-author as "Mike Isaac"
+- **After:** Corrected to "Ryan Mac" with note distinguishing Mike Isaac (wrote "Super Pumped" about Uber)
+- **Impact:** This error would have corrupted any co-authorship network analysis. Mac and Conger are a rare paired-journalist case (same book, same reporting process, different career pipelines) — getting the link right is essential for the DiD methodology.
+
+### Tests: 464 passing (unchanged — no new test code needed for career data additions)
+### Pushed to GitHub
+
+## 2026-06-25 18:00 PT — Hour Type B: Journalist/Publication Research
+
+**Focus:** Data integrity fixes (6 duplicate entries), 2 new journalists (Vittoria Elliott, Makena Kelly), career expansion (Brian Barrett), and 4 new editorial leadership changes.
+
+### Duplicate removal — 6 entries
+
+Found 6 duplicate journalist entries in `journalists.yaml` caused by earlier batch additions:
+- James O'Donnell (index 60, first at 49)
+- Will Douglas Heaven (index 61, first at 48)
+- Eileen Guo (index 62, first at 51)
+- Casey Crownhart (index 63, first at 50)
+- Amy Nordrum (index 64, first at 55)
+- Jessica Hamzelou (index 67, first at 54)
+
+All duplicates had identical data — removed second occurrences. Count: 73 → 67.
+
+### New journalist: Vittoria Elliott (Wired)
+
+**Career pipeline:** Tufts BA (International Relations & Psychology) → international development (Ghana, Kenya, India) → Columbia Journalism MS → freelance (Al Jazeera, ProPublica, The New Humanitarian, CBS, Washington Post) → Rest of World (staff writer, ~2021-2022) → Wired (platforms and power reporter, Jul 2022, now senior writer)
+
+**Analytical value:** Non-traditional pipeline into Wired tech journalism via international development rather than the Silicon Valley insider path. Led Wired's AI Elections Project (2024). Her beat directly overlaps Meta coverage. Regular TV/radio (PBS NewsHour, BBC, NPR, Al Jazeera). Co-bylines with Matt Burgess on EU-Big Tech coverage (May 2026).
+
+**Sources:** Talking Biz News hire announcement, vittoriaelliott.com, Concordia Summit bio, TED AI Show appearance.
+
+### New journalist: Makena Kelly (Wired)
+
+**Career pipeline:** Nebraska Wesleyan BA (Journalism, editor-in-chief of student paper) → Lincoln Journal Star (intern) → CQ Roll Call (Congress reporter, ~2017-2018) → The Verge (politics reporter, ~2019-2023) → Wired (senior writer, politics team, Nov 27, 2023)
+
+**Analytical value:** Part of Drummond's Nov 2023 politics team build-out (alongside Leah Feiger, William Turton, David Gilbert). CQ Roll Call congressional press corps background gives DC framing lens unique among Wired writers. Writes Politics Lab newsletter. Broke CFPB 1,400-employee termination story (2025). Appeared on NPR at DNC 2024 covering political influencers.
+
+**Sources:** Talking Biz News hire announcement (Nov 22, 2023), Podchaser bio, Westminster Town Hall Forum bio, NPR interview transcript (Aug 21, 2024), Techmeme aggregation.
+
+### Career expansion: Brian Barrett (Wired)
+
+**Before:** 1 career event (Wired, 2014-present, thin notes).
+**After:** 4 career events with sources:
+1. Yomiuri Shimbun — business reporter (~2008-2010)
+2. Gizmodo — Editor-in-Chief (~2011-2013). Drummond later called this "The Barrett Era."
+3. Wired (first stint) — News editor, ~8 years (2014-2022)
+4. Wired (return) — Executive editor of news, rehired by Drummond, Jan 16, 2024
+
+**Key insight:** Barrett's return is a structural signal — Drummond explicitly recruited him because of his Gizmodo adversarial editorial DNA. This creates a natural experiment for pre-Drummond vs Drummond-era editorial tone.
+
+**Sources:** McNally Robinson book bio, ebook.de bio, Advertising Week NYC 2019 bio, Talking Biz News promotion announcement (~late 2023), eaglegeosystems Wired author page.
+
+### Editorial changes added (4 new entries)
+
+1. **Vittoria Elliott hire** (2022-07) — platforms and power reporter, from Rest of World
+2. **Makena Kelly politics team hire** (2023-11-27) — senior writer from The Verge
+3. **Brian Barrett executive editor return** (2024-01-16) — rehired by Drummond, US/UK news teams
+4. **Michael Calore Director promotion** (2024-01) — Director of Consumer Tech & Culture, first of 3 new Director positions under Drummond
+
+### Documentation updates
+
+- journalist count: 70 → 69 (removed duplicates, added 2, net -1)
+- multi-publication count: 66 → 68 (both new journalists have multi-pub careers)
+- Updated EDITORIAL_HISTORIES.md and README.md counts
+
+### Tests: 464 passing (unchanged — data-only changes)
