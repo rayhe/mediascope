@@ -4,6 +4,70 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-26 10:00 PT — Hour Type A: Article Deep Dive
+
+**Focus:** Engadget coverage of Wynn-Williams v. Meta lawsuit (June 26, 2026). New framing device: `sarcastic_correction`. Cross-publication comparison with Guardian's June 25 coverage of the same lawsuit.
+
+### Source Article
+- **Engadget:** "'Careless People' Author Accuses Meta Of 'Punishing' Whistleblower" (June 26, 2026)
+- **Companion:** Guardian's "Whistleblower Sarah Wynn-Williams Sues Meta Over Attempts to 'Silence' Her" (June 25, 2026) — already in sample_output
+
+### What was improved:
+
+#### 1. New Framing Device: `sarcastic_correction` (device #27 pattern-based, #30 total)
+
+Detected explicit editorial sarcasm — a technique where the journalist mockingly concedes a positive outcome before retracting it. The Engadget article contained a textbook example:
+
+> "Of course, when Careless People was published, it instantly caused the company to go out of business... oh hang on, wait, no."
+
+This is pure editorial voice — no source, no quote, no attribution. Added 7 regex pattern families covering:
+- "Of course... oh hang on/wait/no" concede-then-retract
+- "Just kidding" / "Not really" / "Spoiler: it didn't" retractions
+- "...right? Wrong." / "...right? Nope." rhetorical undercuts
+- "(Narrator: it did not.)" TV-trope narrator asides
+- "Color me surprised" / "Who could have predicted" feigned surprise
+- "What could possibly go wrong" / "Nothing to see here" dismissive sarcasm
+
+Distinct from `ironic_quotation` (which undercuts *sources'* words via editorial framing) because `sarcastic_correction` is pure editorial voice deploying rhetorical sarcasm without quoting anyone.
+
+#### 2. Loaded Language Expansion (+7 terms)
+
+Added to first loaded_language regex: `staggering`, `mastermind(ed)?`, `turned a blind eye`, `strike fear`/`struck fear`, `indefensible`, `abusive`, `defamatory`.
+
+**Engadget detection improvement:** 2 → 10 devices (8 loaded_language + 1 litigation_framing + 1 sarcastic_correction).
+**Guardian collateral improvement:** 28 → 29 devices (+1 loaded_language from "defamatory").
+
+#### 3. Files Created/Modified
+
+**New files:**
+- `examples/sample_output/engadget_meta_wynn_williams_lawsuit_2026_06_26_article.txt` — raw article
+- `examples/sample_output/engadget_meta_wynn_williams_lawsuit_2026_06_26_analysis.md` — full manual vs. toolkit annotation with cross-publication comparison
+- `tests/test_sarcastic_correction.py` — 15 tests (2 registry, 10 detection, 3 false-positive guards)
+
+**Modified files:**
+- `mediascope/analyze/framing.py` — sarcastic_correction patterns + loaded_language expansion + docstring update
+- `tests/test_nyt_ai_reviews.py` — device count assertion 26 → 27, added sarcastic_correction to expected types
+- `docs/METHODOLOGY.md` — §4.1 total 29 → 30, sarcastic_correction added to Extended Devices table
+- `docs/ARCHITECTURE.md` — framing devices 29 → 30, extended 16 → 17
+
+#### 4. Cross-Publication Analysis (Engadget vs. Guardian)
+
+Key finding: same lawsuit, dramatically different editorial approaches.
+- **Guardian:** Volume + structure — 9 device types, 20+ instances, measured prose, strongest language outsourced to complaint quotes
+- **Engadget:** Density + editorial voice — 4 device types, 11 instances, loaded language density 3× Guardian's, explicit editorial sarcasm
+
+Both reach the same conclusion (Meta is retaliating) but by fundamentally different editorial paths. The sarcastic_correction device captures a technique exclusive to opinion-inflected news coverage that previous devices missed entirely.
+
+### Test results
+- **495 passed** (480 → 495, +15 from test_sarcastic_correction.py)
+- 19 test files
+- 0 failures
+
+### Commit
+- Hash: (see below)
+
+---
+
 ## 2026-06-26 09:00 PT — Hour Type D: Toolkit Quality & Documentation
 
 **Focus:** Documentation count synchronization across all docs, CLI import chain fix, and orchestrator shim modules for CLI-to-subpackage integration.

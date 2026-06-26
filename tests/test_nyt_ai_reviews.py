@@ -252,20 +252,20 @@ Ana Swanson contributed reporting from Washington."""
 class TestFramingDeviceRegistry:
     """Validate total framing device count stays in sync with documentation.
 
-    METHODOLOGY.md documents 26 framing device types:
+    METHODOLOGY.md documents 27 framing device types:
       - 10 core (pattern-matched)
-      - 13 extended (pattern-matched, added from real-article analysis)
+      - 14 extended (pattern-matched, added from real-article analysis)
       - 3 structural (post-pass heuristics: kicker, analogy stacking, speculative)
 
-    The 23 pattern-based types are registered in _DEVICE_PATTERNS.
+    The 27 pattern-based types are registered in _DEVICE_PATTERNS.
     The 3 structural types are detected in the post-pass of detect_framing_devices().
     Update this test when adding new device types.
     """
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 26, (
-            f"Expected 26 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 27, (
+            f"Expected 27 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -292,6 +292,8 @@ class TestFramingDeviceRegistry:
             "corporate_reassurance_undercut",
             # Hypocrisy (1)
             "hypocrisy_frame",
+            # Sarcastic correction (1)
+            "sarcastic_correction",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual

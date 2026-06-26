@@ -312,7 +312,10 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
     re.compile(
         r"\b(?:slammed|blasted|hammered|torched|eviscerated|"
         r"lambasted|excoriated|ripped|grilled|destroyed|"
-        r"crushed|obliterated|demolished|annihilated)\b",
+        r"crushed|obliterated|demolished|annihilated|"
+        r"staggering|mastermind(?:ed)?|"
+        r"turned a blind eye|strike fear|struck fear|"
+        r"indefensible|abusive|defamatory)\b",
         re.IGNORECASE,
     ),
     # Loaded adjectives/nouns characterizing people or organizations
@@ -1695,6 +1698,79 @@ _DEVICE_PATTERNS["corporate_reassurance_undercut"] = (
 
 
 # ---------------------------------------------------------------------------
+# Sarcastic correction: editorial device where the writer states something
+# obviously false or absurd as if reporting it straight, then immediately
+# corrects themselves — creating a rhetorical whiplash that editorialises
+# without explicitly stating an opinion.  Very common in tech journalism
+# (Engadget, Wired, The Verge, Guardian tech desk).
+#
+# Examples:
+#   "Of course, when Careless People was published, it instantly caused the
+#    company to go out of business... oh hang on, wait, no."
+#   "Naturally, this led to sweeping reforms. Just kidding."
+#   "I'm sure this will be fine. (Spoiler: it was not fine.)"
+#
+# Distinct from ironic_quotation (which undercuts someone else's quoted
+# words) — sarcastic_correction is the writer's OWN voice deploying mock
+# sincerity followed by a correction that reveals the absurdity.
+# ---------------------------------------------------------------------------
+_SARCASTIC_CORRECTION_PATTERNS: list[re.Pattern] = [
+    # "Of course, [absurd claim]... oh hang on / wait / oh wait / wait, no"
+    re.compile(
+        r"\b(?:of course|naturally|unsurprisingly|predictably|"
+        r"surely|obviously|no doubt),?\s+"
+        r".{10,200}?"
+        r"(?:\.\.\.|…)\s*"
+        r"(?:oh\s+)?(?:hang on|wait|hold on|actually|except|but|"
+        r"no|nope|scratch that)",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "[Statement]. Just kidding." / "...kidding." / "Not really."
+    re.compile(
+        r"(?:\.|\!)\s+"
+        r"(?:Just kidding|Kidding|Not really|Not exactly|"
+        r"Except (?:it|that|this|they) (?:didn.?t|wasn.?t|aren.?t|isn.?t|won.?t)|"
+        r"Spoiler(?:\s*:\s*|\s+)(?:it|that|this|they) (?:didn.?t|wasn.?t|won.?t|isn.?t|weren.?t)|"
+        r"(?:That|This) (?:did|has|was)(?:n.?t)?\s+(?:not\s+)?happen(?:ed)?|"
+        r"None of (?:that|this|which) (?:happened|is true|occurred|materialised|materialized))",
+        re.IGNORECASE,
+    ),
+    # "...right? Wrong." / "...right? Nope." / "...correct? Not quite."
+    re.compile(
+        r"\bright\?\s*(?:Wrong|Nope|Not (?:quite|exactly|really|so fast))\b",
+        re.IGNORECASE,
+    ),
+    # "(Narrator: it did not.)" / "[Narrator: they did not.]" — TV-trope
+    # sarcasm style used in online-native journalism
+    re.compile(
+        r"[\(\[]\s*(?:Narrator|Spoiler|Reader)[\s:]+.{5,80}?[\)\]]",
+        re.IGNORECASE,
+    ),
+    # "Color me surprised" / "Colour me shocked" / "Who could have predicted"
+    # — standalone sarcastic phrases
+    re.compile(
+        r"\b(?:colou?r me (?:surprised|shocked|stunned)|"
+        r"who could (?:have )?(?:predicted|foreseen|guessed|imagined|seen that coming)|"
+        r"shocking(?:ly)?,? I know|"
+        r"what a (?:surprise|shock|concept)|"
+        r"I.?m sure (?:this|that|it) will (?:be|go|work out|end well|turn out) (?:just )?fine)\b",
+        re.IGNORECASE,
+    ),
+    # "And everyone lived happily ever after" / "problem solved" —
+    # fairy-tale or finality sarcasm after describing an ongoing problem
+    re.compile(
+        r"\b(?:and (?:they all |everyone )?lived happily ever after|"
+        r"problem solved|crisis averted|nothing to see here|"
+        r"move along|all is well|everything is fine|"
+        r"what could (?:possibly )?go wrong)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["sarcastic_correction"] = _SARCASTIC_CORRECTION_PATTERNS
+
+
+# ---------------------------------------------------------------------------
 # Kicker framing: editorial technique of ending an article on a discordant
 # negative note — the last paragraph introduces a critical context (workforce
 # turmoil, regulatory threat, ethical concern) that was NOT the article's
@@ -1910,7 +1986,7 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     pressure_language, geopolitical_regulatory_pressure,
     self_referential_investigation, sovereignty_framing,
     scale_magnitude, ceo_personalization, litigation_framing,
-    and corporate_reassurance_undercut.
+    and corporate_reassurance_undercut, sarcastic_correction.
 
     Structural post-pass (3): kicker_framing, analogy_stacking,
     speculative_framing.
