@@ -95,6 +95,45 @@ editorial_changes:
       Wired''s tech-first editorial framing. Also breaks the Drummond orbit — Turton had followed Drummond through Gizmodo
       → The Outline → Wired. Wired''s DOGE coverage likely continues through Feiger (now Director of Politics & Science) but
       loses Turton''s cybersecurity + political campaigns hybrid expertise.'
+  - position: uk_print_edition
+    outgoing: null
+    incoming: null
+    date: '2026-01-01'
+    source_url: https://talkingbiznews.com/media-news/wired-pulls-plug-on-uk-print-edition/
+    notes: 'STRUCTURAL: Wired pulled UK print edition for 2026. 7 editorial staff left London office at end of 2025. Team
+      rebuilt to focus on audience development roles and some UK/Europe-focused reporting. Global editorial director Katie
+      Drummond: "creating a sustainable and growing subscription business is the future of Wired." Digital-only subscribers
+      doubled in 2025, direct-to-publisher subscribers up 20%. Significant because it reduces Wired''s London editorial capacity
+      while Joel Khalili and Matt Burgess still report from UK. Signals Condé Nast cost-cutting that may affect editorial
+      independence.'
+  - position: senior_editor_science
+    outgoing: null
+    incoming: Brian Kahn
+    date: '2026-05-04'
+    source_url: https://talkingbiznews.com/media-news/wired-hires-editors-from-business-insider-bloomberg/
+    notes: Brian Kahn hired as senior editor on science desk, reports to Tim Marchman. Previously at Bloomberg (climate team
+      editor, flagship newsletter), Protocol (climate coverage), Earther. Based in San Francisco office. Oversaw clean tech
+      coverage, decommissioning satellites, Australia-Singapore power cable, firefighting planes competition. Climate/clean
+      tech expertise adds to Wired's science desk capacity.
+  - position: senior_editor_business
+    outgoing: null
+    incoming: Sophie Kleeman
+    date: '2026-05-11'
+    source_url: https://talkingbiznews.com/media-news/wired-hires-editors-from-business-insider-bloomberg/
+    notes: 'Sophie Kleeman hired as senior editor on business desk, reports to Zoë Schiffer. Previously deputy enterprise
+      editor at Business Insider — edited award-winning stories on data centers, C-sections, transgender violence, Elon Musk''s
+      Tesla empire. Also followed Pelosi''s ice-cream-and-hot-dog diet for a week. Before BI: reporter and editor at Gizmodo,
+      freelance. Based in New York office. KEY: reports to Zoë Schiffer, who herself migrated from The Verge → Platformer
+      → Wired. Business desk editorial hierarchy now has Drummond → Schiffer → Kleeman for enterprise tech.'
+  - position: acting_business_editor_uk
+    outgoing: Peter Guest
+    incoming: null
+    date: '2025-12-01'
+    source_url: https://talkingbiznews.com/media-news/guest-departs-wired-for-coda-story/
+    notes: Peter Guest departed Wired London for Coda Story as senior editor. Was acting business editor for Wired UK. Previously
+      enterprise editor at Rest of World (Singapore), features editor at Nikkei Asia (Tokyo). Written for Bloomberg Businessweek,
+      The Atlantic, GQ, FT, WSJ, MIT Tech Review. Won Society of Publishers in Asia award (2022). Departure part of broader
+      Wired UK contraction — his exit + 7 other UK staff departures at end of 2025 coincide with UK print edition cancellation.
   nytimes:
   - position: executive_editor
     outgoing: Dean Baquet

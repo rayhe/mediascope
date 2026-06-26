@@ -2881,3 +2881,209 @@ journalists:
       Turton from Bloomberg, David Gilbert). Writes the Politics Lab newsletter. Appeared on NPR covering DNC 2024 political
       influencers. Broke CFPB 1,400-employee termination story (2025). CROSS-PUBLICATION: The Verge → Wired migration — second
       politics reporter to join from a Vox Media property after Zoë Schiffer.'
+- name: David McCabe
+  notes: 'NYT tech policy/antitrust correspondent based in Washington. Career: The Hill → Axios → NYT (2019–present).
+    Covers Big Tech regulation, antitrust enforcement, FTC, Google monopoly trial. Co-covers with Cecilia Kang. Guest
+    on The Daily podcast for landmark Google antitrust ruling. ANALYTICAL VALUE: Washington-based policy lens gives
+    regulatory framing to tech coverage. His reporting on lobbying (Tim Cook calls to Pelosi, Amazon antitrust) directly
+    shapes public understanding of tech company political power. Key for Meta antitrust/FTC coverage. Before journalism:
+    politics intern at HuffPost, radio intern.'
+  career:
+  - publication: huffington-post
+    event_type: intern
+    role: intern
+    beat: politics
+    start: 2016-01
+    end: 2016-06
+    source_url: https://nytco.com/press/new-tech-policy-reporter/
+    notes: Politics intern. Early career before moving to tech policy.
+  - publication: the-hill
+    event_type: hired
+    role: reporter
+    beat: tech policy, breaking news
+    start: 2016-07
+    end: 2017-12
+    source_url: https://nytco.com/press/new-tech-policy-reporter/
+    notes: Covered tech policy and breaking news. First beat reporting position.
+  - publication: axios
+    event_type: hired
+    role: reporter
+    beat: tech policy
+    start: 2018-01
+    end: 2019-08
+    source_url: https://nytco.com/press/new-tech-policy-reporter/
+    notes: 'Covered tech policy. Spotted early backlash against Big Tech, including conversations on the left about Amazon''s
+      reach. Scooped behind-the-scenes White House efforts to calm tech companies'' trade fears. Led to NYT hire.'
+  - publication: nytimes
+    event_type: hired
+    role: correspondent
+    beat: tech policy, antitrust, Big Tech regulation
+    start: 2019-09
+    source_url: https://nytco.com/press/new-tech-policy-reporter/
+    notes: 'Tech policy correspondent in Washington. Joined Cecilia Kang covering regulation of Big Tech. Co-bylined landmark
+      stories: Google antitrust trial (guest on The Daily podcast, Sep 2023), FTC AI chatbot child safety inquiry, Tim Cook
+      lobbying against antitrust bills with Pelosi. Lina Khan coverage. Key question for MediaScope: does his Washington
+      policy lens produce systematically different framing of Meta vs Silicon Valley-based reporters?'
+- name: Tiffany Hsu
+  notes: 'NYT disinformation/misinformation reporter. Career: LA Times → NYT media desk (2017) → NYT misinformation desk
+    (2022). Won Mirror Award with Sheera Frenkel for vaccine/mask misinformation reporting. Covers deepfakes, AI-generated
+    content, influence campaigns, content moderation. Education: UC Berkeley BA (English + Mass Comm), Columbia Journalism
+    MS, Columbia MBA. ANALYTICAL VALUE: Her beat (misinformation, AI detection, content moderation) is ground zero for
+    Meta coverage bias — every content moderation decision Meta makes is filtered through her lens. Co-bylines with
+    Stuart Thompson on Sora deepfake coverage. Based in San Francisco.'
+  career:
+  - publication: los-angeles-times
+    event_type: hired
+    role: reporter
+    beat: California economy, retail, restaurants
+    start: 2008-01
+    end: 2017-06
+    source_url: https://pen.org/people/tiffany-hsu/
+    notes: 'Multiple beats: California economy reporter, retail business reporter, fast food/restaurants reporter. Long
+      tenure at LA Times before NYT move.'
+  - publication: nytimes
+    event_type: hired
+    role: reporter
+    beat: media, advertising
+    start: 2017-07
+    end: 2022-05
+    source_url: https://nytco.com/press/a-new-beat-for-tiffany-hsu/
+    notes: 'Business desk, media group. Covered advertising industry, computer-generated influencers, J&J baby powder,
+      Subway franchisees. Versatile reporter — "never met a story she wouldn''t jump at enthusiastically."'
+  - publication: nytimes
+    event_type: beat_change
+    role: reporter
+    beat: disinformation, misinformation, AI-generated content
+    start: 2022-06
+    source_url: https://nytco.com/press/a-new-beat-for-tiffany-hsu/
+    notes: 'Moved to misinformation team. Won Mirror Award with Sheera Frenkel for vaccine/mask mandate misinformation
+      reporting. Based in San Francisco. Works with Stuart Thompson and Steven Lee Myers. Co-authored Sora deepfake
+      investigation (Oct 2025). Key for MediaScope: covers AI content moderation, deepfakes, platform trust/safety — all
+      central to Meta coverage. PEN America speaker on quality of information.'
+- name: Stuart A. Thompson
+  notes: 'NYT misinformation reporter and visual journalist. Career: WSJ (graphics director) → NYT Opinion (2017) → NYT
+    news desk misinformation (2021). Pulitzer Prize winner (WSJ Medicare Unmasked). Data visualization specialist who
+    brought visual/interactive skills to misinformation beat. Created QAnon chatroom immersive, Privacy Project,
+    Trump''s Lies. ANALYTICAL VALUE: Unusual background — visual/data journalist turned beat reporter. His visual
+    investigation skills (bystander video analysis, AI deepfake detection) give his coverage a forensic quality distinct
+    from traditional reporters. Co-bylines with Tiffany Hsu on Sora coverage.'
+  career:
+  - publication: wall-street-journal
+    event_type: hired
+    role: graphics_director
+    beat: data visualization, interactive journalism
+    start: 2012-01
+    end: 2017-06
+    source_url: https://nytco.com/press/stuart-thompson-joins-business/
+    notes: 'Graphics director overseeing 24+ editors and developers. Won Pulitzer Prize for "Medicare Unmasked" series.
+      Finalist for Pulitzer for "The Home Front" domestic gun violence series (2018). Steve Duenes praised his "big impact
+      on quality and ambition of the Journal''s visual work."'
+  - publication: nytimes
+    event_type: hired
+    role: writer_editor
+    beat: visual journalism, interactive features (Opinion section)
+    start: 2017-07
+    end: 2021-11
+    source_url: https://nytco.com/press/stuart-thompson-joins-business/
+    notes: 'Built Opinion''s interactive graphics unit. Award-winning features: Privacy Project, Trump''s Lies, QAnon audio
+      chatroom piece (immersive first-person with audio). Vaccine rollout tracker. Katie Kingsbury called him "incredibly
+      talented."'
+  - publication: nytimes
+    event_type: beat_change
+    role: reporter
+    beat: misinformation, disinformation, AI-generated content
+    start: 2021-12
+    source_url: https://nytco.com/press/stuart-thompson-joins-business/
+    notes: 'Moved from Opinion to news side as misinformation reporter on business/tech desk. Joined Ellen Pollock/Pui-Wing
+      Tam''s team. "The chance to focus on beat reporting and writing, while also deploying the other tools in my toolkit,
+      was an attractive proposal." Co-bylined with Tiffany Hsu on OpenAI Sora deepfake investigation. Visual/data skills
+      differentiate his coverage from traditional misinformation beat reporters.'
+- name: David Yaffe-Bellany
+  notes: 'NYT crypto/fintech/tech reporter. Career: Texas Tribune → NYT fellow (2019-20) → Bloomberg/Businessweek →
+    NYT (Jan 2022). Broke Trump/UAE crypto investigation ($2B World Liberty Financial deal). Former David Carr fellow.
+    Based in San Francisco, later New York. ANALYTICAL VALUE: Crypto/fintech beat intersects with Meta when covering
+    Libra/Diem cryptocurrency, stablecoin regulation, and Trump-era tech policy. His investigative style (FTX collapse,
+    Trump crypto deals) signals deep-dig reporter. Yale education (Yale Daily News). Bloomberg Businessweek magazine
+    features experience gives longform investigative capability.'
+  career:
+  - publication: texas-tribune
+    event_type: intern
+    role: intern
+    beat: politics, border policy
+    start: 2018-01
+    end: 2019-05
+    source_url: https://nytco.com/press/david-yaffe-bellany-joins-the-technology-desk/
+    notes: Covered family separation crisis at US-Mexico border. Highly recommended by editors.
+  - publication: nytimes
+    event_type: fellowship
+    role: david_carr_fellow
+    beat: food industry, business
+    start: 2019-06
+    end: 2020-06
+    source_url: https://nytco.com/press/david-yaffe-bellany/
+    notes: 'David Carr reporting fellow on Business desk. Covered food industry: virtual restaurants, Popeyes chicken
+      sandwich, Scottish haggis black market. Broke Carlos Ghosn escape news. Investigated Equinox working conditions.
+      Pandemic food industry impact coverage.'
+  - publication: bloomberg
+    event_type: hired
+    role: reporter
+    beat: courts, legal industry
+    start: 2020-07
+    end: 2021-12
+    source_url: https://nytco.com/press/david-yaffe-bellany-joins-the-technology-desk/
+    notes: 'Bloomberg News and Businessweek magazine features. Texas AG Ken Paxton investigation. Right-wing extremist
+      deprogramming feature. "Monster talent" — Michael Corkery.'
+  - publication: nytimes
+    event_type: hired
+    role: reporter
+    beat: crypto, fintech, tech
+    start: 2022-01
+    source_url: https://nytco.com/press/david-yaffe-bellany-joins-the-technology-desk/
+    notes: 'Rejoined NYT for crypto/fintech beat. Based initially in San Francisco, later New York. Major stories: FTX
+      collapse and SBF trial, Trump/UAE $2B crypto deal (World Liberty Financial + AI chip export), crypto comeback after
+      Bitcoin ETFs. Guest on Hard Fork and The Daily podcasts. Covers intersection of crypto, politics, and national
+      security.'
+- name: Joel Khalili
+  notes: 'Wired reporter covering crypto, Web3, and fintech. Career: Red Lorry Yellow Lorry (PR) → ITProPortal → TechRadar
+    Pro → Wired (Oct 2022). Based in London. UCL English Literature degree. ANALYTICAL VALUE: UK-based reporter covering
+    crypto/fintech from a European regulatory perspective. Previous TechRadar Pro experience (B2B tech) gives him an
+    enterprise/business lens different from Silicon Valley consumer tech reporters. His crypto/regulation coverage
+    intersects with Meta''s Libra/Diem history and stablecoin regulatory debates. The PR agency background (Red Lorry
+    Yellow Lorry) is unusual — moved from tech PR to tech journalism, giving insider knowledge of PR strategies.'
+  career:
+  - publication: red-lorry-yellow-lorry
+    event_type: hired
+    role: content_executive
+    beat: tech PR, communications
+    start: 2018-08
+    end: 2020-01
+    source_url: https://theorg.com/org/wired/org-chart/joel-khalili
+    notes: 'Tech PR agency. Roles: content executive, then account coordinator. Pre-journalism career in tech communications.
+      UCL English Literature BA (2018).'
+  - publication: itproportal
+    event_type: hired
+    role: staff_writer
+    beat: business technology
+    start: 2020-01
+    end: 2020-06
+    source_url: https://techradar.com/author/joel-khalili
+    notes: Staff writer at B2B technology publication. Part of Future plc portfolio (same parent company as TechRadar).
+  - publication: techradar
+    event_type: hired
+    role: news_features_editor
+    beat: cybersecurity, cloud, AI, blockchain, data, computing
+    start: 2020-06
+    end: 2022-09
+    source_url: https://techradar.com/author/joel-khalili
+    notes: 'News and Features Editor at TechRadar Pro. Curated news content, commissioned features on business technology.
+      Covered cybersecurity, data privacy, cloud, AI, blockchain, 5G, computing. Also produced profile series on people
+      with material tech impact. Sub-edited ITProPortal content.'
+  - publication: wired
+    event_type: hired
+    role: reporter
+    beat: crypto, Web3, fintech, tech regulation
+    start: 2022-10
+    source_url: https://theorg.com/org/wired/org-chart/joel-khalili
+    notes: 'Reporter covering crypto, Web3, and fintech. Based in London. Also contributed to Ars Technica and WIRED Middle
+      East. Coverage focuses on cryptocurrency regulation, intersection of technology with politics. Global perspective
+      (Berlin, Stockholm, Paris datelines). Part of Wired''s London team after UK print edition was pulled in 2026.'
