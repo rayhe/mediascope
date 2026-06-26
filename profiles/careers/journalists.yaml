@@ -3310,3 +3310,168 @@ journalists:
       Announced by executive editor Brian Barrett. Works closely with editor Manisha day-to-day. Covers ''the weird, unexpected,
       and inexplicable corners of the internet.'' First major Wired hire from outside the traditional tech journalism pipeline —
       brings Rolling Stone/MEL''s gonzo internet-culture approach to Wired''s Drummond-era editorial expansion.'
+- name: Gilad Edelman
+  notes: 'Key migration: Washington Monthly → Wired → FTC → Atlantic. Yale JD (2012-2015) brings legal/regulatory lens to
+    tech policy coverage. Rare government-to-journalism-to-government-to-journalism career arc. At Wired, covered intersection
+    of tech, politics, and law — Section 230, content moderation, disinformation. FTC stint (Sep 2022) as communications
+    strategist under Chair Lina Khan gave insider regulatory perspective. Now senior editor at Atlantic covering economics
+    and political economy with tech policy focus. Covers Google antitrust, Epstein associations, libertarian authoritarianism.
+    Critical DiD test case: did his framing shift when moving from Condé Nast (Wired) to Emerson Collective (Atlantic)?'
+  career:
+  - publication: washington-monthly
+    event_type: hired
+    role: editor
+    beat: politics, policy
+    start: 2016-09
+    end: 2019-11
+    source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-edelman-as-a-senior-editor-for-economics-coverage/
+    notes: 'Editor, then executive editor. Progressive policy magazine. Covered intersection of politics and policy.
+      Columbia BA (2005-2009), Yale JD (2012-2015). Legal training shapes regulatory analysis lens.'
+  - publication: wired
+    event_type: hired
+    role: senior_writer
+    beat: tech policy, politics, law
+    start: 2019-11
+    end: 2022-09
+    source_url: https://www.wired.com/author/gilad-edelman/
+    notes: 'Politics writer covering tech-politics-law intersection. Section 230 expert. Covered content moderation,
+      disinformation, social media censorship. Appeared on podcasts as Wired''s tech policy voice. Overlapped with
+      Nicholas Thompson (EIC) and early Lichfield era. Left for FTC under Chair Lina Khan.'
+  - publication: ftc
+    event_type: hired
+    role: communications_strategist
+    beat: government communications
+    start: 2022-09
+    end: 2023-04
+    source_url: https://theorg.com/org/the-atlantic/people/gilad-edelman
+    notes: 'Communications strategist at Federal Trade Commission under Chair Lina Khan. Brief government stint
+      (~7 months). Rare journalist-to-regulator move gives insider perspective on tech enforcement.'
+  - publication: atlantic
+    event_type: hired
+    role: senior_editor
+    beat: economics, political economy, tech policy
+    start: 2023-04
+    source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-edelman-as-a-senior-editor-for-economics-coverage/
+    notes: 'Senior editor expanding economics and political economy coverage. Also contributes to Slate. Recent articles:
+      "Will Google Ever Have to Pay for Its Sins?" (Jan 2026), "Guilt by Association With Epstein" (Feb 2026),
+      "The Rise of Libertarian Authoritarianism" (Jan 2026). 307+ total articles across career per JournalistHunt.
+      Key question: does Atlantic''s Emerson Collective ownership shape coverage differently than Condé Nast?'
+- name: Amanda Hoover
+  notes: 'Key migration: NJ Advance Media → Morning Brew → Wired → Business Insider. General assignment tech reporter
+    who covered Meta/Facebook (Marketplace scams, layoffs), TikTok Shop, social media platforms, AI workplace displacement.
+    Promoted within Wired under Katie Drummond (Aug 2024). Cross-publication migration through Condé Nast orbit makes her
+    a good DiD subject — did Wired''s institutional culture shape her coverage tone?'
+  career:
+  - publication: nj-advance-media
+    event_type: hired
+    role: reporter
+    beat: state government, general assignment
+    start: 2019-01
+    end: 2021-10
+    source_url: https://talkingbiznews.com/they-re-hiring/morning-brew-hires-hoover-as-tech-reporter/
+    notes: 'Reporter at NJ Advance Media (Star-Ledger). Covered NJ state government. Also had prior stints at
+      Boston Globe (breaking crime news), Christian Science Monitor (rapid response), Boston Magazine (intern).
+      Northeastern University BA in journalism.'
+  - publication: morning-brew
+    event_type: hired
+    role: reporter
+    beat: technology
+    start: 2021-11
+    end: 2022-10
+    source_url: https://talkingbiznews.com/they-re-hiring/morning-brew-hires-hoover-as-tech-reporter/
+    notes: 'Technology reporter. ~1 year tenure at the newsletter-first publication. Covered tech industry news.
+      Transition from state government reporting to dedicated tech beat.'
+  - publication: wired
+    event_type: hired
+    role: staff_writer
+    beat: technology, social media, e-commerce
+    start: 2022-11
+    end: 2025-02
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-morning-brews-hoover/
+    notes: 'General assignment staff writer. Covered Facebook Marketplace scams, TikTok Shop, Airbnb, layoff culture,
+      AI workplace displacement. Promoted by Katie Drummond in Aug 2024 editorial promotions alongside Dhruv Mehrotra
+      and Reece Rogers. Appeared on Wired''s Gadget Lab and Uncanny Valley podcasts. Wrote about Mastodon,
+      social media platform shifts. Left after ~2.5 years for Business Insider senior correspondent role.'
+  - publication: business-insider
+    event_type: hired
+    role: senior_correspondent
+    beat: technology
+    start: 2025-03
+    source_url: https://talkingbiznews.com/they-re-hiring/business-insider-hires-hoover-to-cover-tech/
+    notes: 'Senior correspondent covering technology. Covers AI workplace impacts ("vibe working"), consumer tech
+      (Friend wearable review), social media trends. Key question: how does her coverage tone differ from Wired era
+      now that she''s outside Condé Nast?'
+- name: Adam Satariano
+  notes: 'Key migration: Bloomberg → NYT. EU-based tech regulation correspondent. Covers DMA, DSA enforcement against
+    Meta, TikTok, Google. 11-year Bloomberg veteran who moved to London for European tech beat. Critical reporter for
+    understanding how NYT frames EU regulatory action against Big Tech — his coverage directly shapes perception of
+    whether EU enforcement is justified oversight or anti-American protectionism.'
+  career:
+  - publication: congressional-quarterly
+    event_type: hired
+    role: reporter
+    beat: congressional coverage
+    start: 2005-01
+    end: 2007-06
+    source_url: https://talkingbiznews.com/they-re-hiring/ny-times-hires-bloombergs-satariano-to-cover-tech-in-europe/
+    notes: 'Early career in Washington covering Congress. UC Santa Cruz graduate. San Francisco Bay Area native.'
+  - publication: bloomberg
+    event_type: hired
+    role: reporter
+    beat: technology, entertainment, environment
+    start: 2007-07
+    end: 2018-03
+    source_url: https://talkingbiznews.com/they-re-hiring/ny-times-hires-bloombergs-satariano-to-cover-tech-in-europe/
+    notes: '11-year tenure. Started in San Francisco covering environment and entertainment, transitioned to Silicon
+      Valley tech (Apple iPhone growth, post-Jobs era, AI in finance, startup flameouts). Moved to London in 2016
+      to cover European tech for Bloomberg. Wrote for Bloomberg News and Bloomberg Businessweek. TV appearances.'
+  - publication: nytimes
+    event_type: hired
+    role: correspondent
+    beat: EU tech regulation, data privacy, antitrust
+    start: 2018-03
+    source_url: https://talkingbiznews.com/they-re-hiring/ny-times-hires-bloombergs-satariano-to-cover-tech-in-europe/
+    notes: 'Technology correspondent based in London. Primary beat: EU tech regulation — DMA, DSA enforcement,
+      data privacy (GDPR), antitrust. Covers EU cases against Meta (DSA children''s safety, addictive design),
+      TikTok (addictive design, Jun 2026), Google (antitrust). Recent: EU preliminary findings on TikTok''s
+      "addictive design" (Jun 2026). Key framing question: does his coverage position EU regulation as justified
+      consumer protection or as overreach against US tech companies?'
+- name: Sapna Maheshwari
+  notes: 'Key migration: Bloomberg → BuzzFeed → NYT. Covers TikTok and emerging media — direct Meta competitor
+    coverage. Award-winning investigative reporter (SABEW Best in Business, Front Page Award). Her retail/advertising
+    background gives her deep understanding of platform business models. Critical for analyzing NYT''s comparative
+    framing of Meta vs TikTok — does she apply the same critical scrutiny to both platforms?'
+  career:
+  - publication: bloomberg
+    event_type: hired
+    role: reporter
+    beat: corporate credit, stocks, insurance, retail
+    start: 2011-01
+    end: 2013-06
+    source_url: https://talkingbiznews.com/they-re-hiring/buzzfeeds-maheshwari-to-join-ny-times-biz-desk/
+    notes: 'Bloomberg News reporter covering corporate credit, stocks, insurance companies and retail.
+      UNC-Chapel Hill graduate (business journalism program).'
+  - publication: buzzfeed
+    event_type: hired
+    role: reporter
+    beat: retail, e-commerce
+    start: 2013-07
+    end: 2016-07
+    source_url: https://talkingbiznews.com/they-re-hiring/buzzfeeds-maheshwari-to-join-ny-times-biz-desk/
+    notes: 'Distinguished herself with aggressive retail/e-commerce coverage. JustFab investigation won SABEW
+      Best in Business. Chinese Facebook knockoff clothing piece was most-read investigative feature ever on
+      BuzzFeed (3.6M views). Victoria''s Secret on-call shifts investigation won Front Page Award (Newswomen''s
+      Club of New York). Named by Time as one of "140 Best Twitter Feeds" (2014).'
+  - publication: nytimes
+    event_type: hired
+    role: reporter
+    beat: advertising, then retail, then TikTok/emerging media
+    start: 2016-08
+    source_url: https://nytco.com/press/a-new-role-for-sapna-maheshwari/
+    notes: 'Three distinct beats at NYT: (1) Advertising (Aug 2016 - 2019) — wrote about inappropriate YouTube
+      videos served to children, viral misinformation, got "programmatic advertising" onto front page. (2) Retail
+      (2019 - ~2022) — Victoria''s Secret scandal, Outdoor Voices internal clashes, Forever 21 downfall.
+      (3) TikTok/emerging media (~2022 - present) — covers TikTok as primary social media/platform reporter.
+      Editor: Connor Ennis ("Sapna is an editor''s dream"). Critical for meta-analysis: as NYT''s TikTok reporter,
+      her framing of TikTok vs Meta coverage provides natural experiment for platform-level bias detection.
+      Appeared in Netflix documentary "White Hot: The Rise & Fall of Abercrombie & Fitch" (2022).'

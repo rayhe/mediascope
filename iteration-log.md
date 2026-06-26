@@ -4,6 +4,68 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-25 21:00 PT — Hour Type B: Journalist/Publication Research
+
+**Focus:** 4 new journalists added (83 total, up from 79), 1 new editorial change. All 4 have multi-publication careers critical for DiD (difference-in-differences) migration analysis. One is a rare journalist→government→journalist arc.
+
+### New journalists added:
+
+#### 1. Gilad Edelman — Washington Monthly → Wired → FTC → Atlantic
+- **Career:** Columbia BA (2005-2009) → Yale JD (2012-2015) → Washington Monthly (editor/exec editor, Sep 2016 - Nov 2019) → Wired (politics writer, Nov 2019 - Sep 2022) → FTC (comms strategist under Lina Khan, Sep 2022 - Apr 2023) → Atlantic (senior editor, Apr 2023 - present)
+- **Significance:** Rarest career arc in the dataset: journalist → government regulator → journalist. Yale JD gives legal/regulatory lens unique among tracked journalists. At Wired covered Section 230, content moderation, disinformation. FTC stint under Lina Khan gives insider regulatory perspective. Now covers economics/political economy with tech antitrust focus at Atlantic.
+- **DiD value:** HIGH — crossed from Condé Nast (Wired) to Emerson Collective (Atlantic) with a government stint in between. Does his framing shift with institutional change?
+- **Recent articles:** "Will Google Ever Have to Pay for Its Sins?" (Jan 2026), "Guilt by Association With Epstein" (Feb 2026), "The Rise of Libertarian Authoritarianism" (Jan 2026)
+- **Sources:** BuzzSumo journalist profile, TheOrg, TalkingBizNews, JournalistHunt, Orchid/Priv8 Podcast
+- **Source URLs:**
+  - https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-edelman-as-a-senior-editor-for-economics-coverage/
+  - https://theorg.com/org/the-atlantic/people/gilad-edelman
+  - https://buzzsumo.com/journalist/gilad-edelman-148776732/
+  - https://journalisthunt.com/journalists/gilad-edelman
+
+#### 2. Amanda Hoover — NJ Advance Media → Morning Brew → Wired → Business Insider
+- **Career:** Northeastern BA journalism → Boston Globe (breaking news) → Christian Science Monitor (rapid response) → NJ Advance Media/Star-Ledger (state govt reporter, ~2019-2021) → Morning Brew (tech reporter, Nov 2021 - Oct 2022) → Wired (staff writer, Nov 2022 - Feb 2025) → Business Insider (senior correspondent, Mar 2025 - present)
+- **Significance:** Promoted within Wired by Katie Drummond (Aug 2024). Covered Facebook Marketplace scams, TikTok Shop, AI workplace impact, Airbnb, layoff culture. Appeared on Wired Gadget Lab and Uncanny Valley podcasts.
+- **DiD value:** HIGH — entered and exited Condé Nast ecosystem. Does her tech coverage tone differ now at BI vs Wired?
+- **Sources:** TalkingBizNews (3 articles: Morning Brew hire, Wired hire, BI hire), Wired editorial promotions announcement, sxyngh.com Wired author page, Techmeme
+- **Source URLs:**
+  - https://talkingbiznews.com/they-re-hiring/wired-hires-morning-brews-hoover/
+  - https://talkingbiznews.com/they-re-hiring/business-insider-hires-hoover-to-cover-tech/
+  - https://talkingbiznews.com/they-re-hiring/morning-brew-hires-hoover-as-tech-reporter/
+
+#### 3. Adam Satariano — Bloomberg → NYT (London)
+- **Career:** UC Santa Cruz → Congressional Quarterly (Washington, ~2005-2007) → Bloomberg (11 years, ~2007-2018: SF→London transition 2016) → NYT (tech correspondent London, Mar 2018 - present)
+- **Significance:** EU tech regulation beat — covers DMA, DSA enforcement against Meta, TikTok, Google. His coverage directly shapes perception of whether EU enforcement is justified oversight or anti-American protectionism. Recent: EU preliminary findings on TikTok "addictive design" (Jun 2026). Longtime Bloomberg-to-NYT migration (11 years → NYT).
+- **DiD value:** MEDIUM — single clean migration (Bloomberg → NYT), less institutional contrast than Edelman but critical for EU regulatory framing analysis.
+- **Sources:** TalkingBizNews NYT hire announcement, Techmeme (TikTok DSA coverage), nytco.com
+- **Source URLs:**
+  - https://talkingbiznews.com/they-re-hiring/ny-times-hires-bloombergs-satariano-to-cover-tech-in-europe/
+  - https://techmeme.com/search (TikTok DSA coverage)
+
+#### 4. Sapna Maheshwari — Bloomberg → BuzzFeed → NYT
+- **Career:** UNC-Chapel Hill (business journalism) → Bloomberg News (reporter, ~2011-2013) → BuzzFeed (reporter, 2013-2016) → NYT (Aug 2016 - present: advertising → retail → TikTok/emerging media)
+- **Significance:** Award-winning investigative reporter (SABEW Best in Business, Front Page Award). 3.6M views on BuzzFeed's most-read investigative feature ever. Now NYT's TikTok/emerging media reporter — direct Meta competitor coverage. Her retail/advertising background gives deep platform business model understanding.
+- **DiD value:** MEDIUM-HIGH — covers TikTok (Meta competitor) at NYT. Natural experiment: does she apply same critical scrutiny to TikTok as NYT applies to Meta?
+- **Sources:** Wikipedia, nytco.com press release, TalkingBizNews (3 articles: BuzzFeed→NYT hire, retail beat move, TikTok beat move), me.sh profile
+- **Source URLs:**
+  - https://en.wikipedia.org/wiki/Sapna_Maheshwari
+  - https://nytco.com/press/a-new-role-for-sapna-maheshwari/
+  - https://talkingbiznews.com/they-re-hiring/buzzfeeds-maheshwari-to-join-ny-times-biz-desk/
+
+### Editorial changes added:
+
+1. **Atlantic: Gilad Edelman hired as senior editor, economics** (Apr 2023) — first journalist in dataset with government regulator (FTC) experience. Adds legal/regulatory authority to Atlantic's tech coverage.
+
+### Updated statistics:
+- **Journalists:** 79 → 83
+- **Multi-publication:** 77 → 80 (80/83 = 96.4%)
+- **Tests:** 464 passing (unchanged)
+
+### Analytical notes:
+
+**Key insight — NYT TikTok coverage gap:** Sapna Maheshwari is NYT's dedicated TikTok reporter. Adding her enables a critical comparison: how does NYT frame TikTok (a Meta competitor whose product directly competes with Instagram Reels) versus how NYT frames Meta? If NYT applies consistently critical scrutiny to both platforms, that's evidence of principled reporting. If TikTok gets softer treatment despite similar children's safety concerns, that reveals platform-level bias in the newsroom.
+
+**Key insight — Edelman's unique career arc:** No other journalist in the dataset has moved from journalism → government regulation → journalism. His FTC tenure under Lina Khan (who brought the most aggressive Big Tech enforcement cases in decades) means he has insider knowledge of how regulators actually build cases. This makes his Atlantic coverage of Google antitrust and tech policy uniquely authoritative — and uniquely testable for institutional bias, since he wrote about the same topics from inside Condé Nast just 2 years earlier.
+
 ## 2026-06-25 16:00 PT — Hour Type A: Article Deep Dive
 
 **Article:** "Whistleblower Sarah Wynn-Williams sues Meta over attempts to 'silence' her"
@@ -2773,3 +2835,90 @@ All duplicates had identical data — removed second occurrences. Count: 73 → 
 
 ### Commit: `88f2459` — 2 files changed, 245 insertions
 ### Pushed to GitHub
+
+---
+
+## 2026-06-25 20:00 PT — Hour Type B: Journalist/Publication Research
+
+**Focus:** 5 new Wired journalists added, expanding roster from 74 → 79. Three new editorial_changes entries. Major analytical finding: Gizmodo/G/O Media as dominant feeder network.
+
+### New journalists added:
+
+#### 1. Tim Marchman — Director, Science, Politics, and Security at Wired (2024–present)
+- **Career:** sportswriter (Chicago baseball) → Deadspin EIC (Gawker Media, 2013–2014) → Gizmodo Media special projects editor (2018–2019) → Vice Media features director (2019–2024, through Vice bankruptcy) → Wired (2024–present)
+- **Significance:** Recruited by Katie Drummond. Oversees politics desk (Leah Feiger), science desk, security. Led Wired's DOGE scoops that consistently beat NYT/WaPo despite no DC bureau. Philadelphia-based.
+- **Gizmodo connection:** ✅ Special projects editor at Gizmodo (2018–2019), overlapping with Drummond's Gizmodo tenure (EIC 2015–2017)
+- **Sources:** Bulletin of Atomic Scientists interview (Mar 2025), RocketReach profile, The Org, Talking Biz News, Podchaser
+- **Source URLs:**
+  - https://thebulletin.org/2025/03/staring-into-the-doge-abyss-with-wireds-tim-marchman/
+  - https://rocketreach.co/tim-marchman-email_51918440
+  - https://theorg.com/org/wired/org-chart/tim-marchman
+
+#### 2. Sophie Kleeman — Senior editor, business desk at Wired (May 2026–present)
+- **Career:** NYU BA journalism & anthropology → Mic (editorial fellow → staff writer, 2014–2015) → Gizmodo (staff writer → news editor, 2016–2018) → Business Insider (essays/features editor → senior investigations editor → deputy enterprise editor, 2018–2026) → Wired (May 2026)
+- **Reports to:** Zoë Schiffer
+- **Significance:** Enterprise investigative editing specialty — data centers, C-sections, Musk's Tesla empire at BI. Editorial hierarchy now: Drummond → Schiffer → Kleeman for Big Tech enterprise coverage.
+- **Gizmodo connection:** ✅ Staff writer/news editor at Gizmodo (2016–2018)
+- **Sources:** Talking Biz News, CityBiz, Muck Rack, me.sh, Gizmodo author pages
+- **Source URLs:**
+  - https://talkingbiznews.com/they-re-hiring/kleeman-joins-insiders-investigations-team-as-senior-editor/
+  - https://talkingbiznews.com/media-news/wired-hires-editors-from-business-insider-bloomberg/
+  - https://citybiz.co/article/wired-expands-editorial-team-with-hires-from-business-insider-and-bloomberg/
+
+#### 3. Brian Kahn — Senior editor, science desk at Wired (May 2026–present)
+- **Career:** Earther managing editor (2017–2021) → Protocol climate editor (2022–2023) → Bloomberg climate team editor (2023–2026) → Wired (May 2026)
+- **Reports to:** Tim Marchman
+- **Significance:** Climate/clean tech specialist who moved through advocacy-adjacent journalism (Earther) to institutional business journalism (Bloomberg) to Wired. Fourth Earther/Gizmodo connection at Wired alongside Taft, Marchman, Drummond.
+- **Sources:** Talking Biz News, CityBiz
+- **Source URLs:**
+  - https://talkingbiznews.com/media-news/wired-hires-editors-from-business-insider-bloomberg/
+
+#### 4. Molly Taft — Senior writer, science desk at Wired (Mar 2025–present)
+- **Career:** Bowdoin BA → Columbia Journalism MS (Stabile investigative fellow) → Center for Public Integrity fellow (2020) → Gizmodo/Earther staff writer (2021–2023, won 2023 SEAL Environmental Award) → The New Republic contributing senior editor, climate (2023) → Drilled Media reporter/editor (2023–2025) → Wired (Mar 2025)
+- **Reports to:** Tim Marchman. They/them.
+- **Significance:** Climate beat. Drilled Media known for adversarial fossil fuel industry coverage — pipeline mirrors Drummond's recruitment of adversarial-journalism talent.
+- **Gizmodo connection:** ✅ Earther/Gizmodo staff writer (2021–2023)
+- **Sources:** The Org, Talking Biz News, Rainforest Journalism Fund, Muck Rack, BuzzSumo, Undark Magazine
+- **Source URLs:**
+  - https://talkingbiznews.com/media-news/wired-hires-taft-as-senior-writer/
+  - https://theorg.com/org/wired/org-chart/molly-taft
+  - https://rainforestjournalismfund.org/journalists/molly-taft
+
+#### 5. Miles Klee — Senior writer, culture desk at Wired (Feb 2026–present)
+- **Career:** Williams College BA English & Philosophy → financial trade pub copy editor → Daily Dot staff writer (2014–2016) → MEL Magazine senior staff writer (2017–2022) → Rolling Stone culture writer (2022–2026) → Wired (Feb 2026)
+- **Reports to:** Michael Calore (Director, Consumer Tech & Culture)
+- **Significance:** Non-traditional pipeline — no prior tech journalism. Covers internet culture, conspiracy theories, memes, digital subcultures. Author: "Ivyland," "True False," "Double Black Diamond." First major hire from outside traditional tech-journalism pipeline, signals Wired's editorial expansion beyond pure tech coverage.
+- **Sources:** Editor & Publisher, Talking Biz News, DIARY directory, The Org, MEL Magazine, Rolling Stone
+- **Source URLs:**
+  - https://editorandpublisher.com/stories/wired-adds-senior-writer-to-the-culture-desk/
+  - https://diarydirectory.com/stories/wired-usa-appoints-senior-writer/
+
+### New editorial_changes entries (3):
+- Tim Marchman: director_science_politics_security (2024-01)
+- Molly Taft: senior_writer_climate (2025-03-24)
+- Miles Klee: senior_writer_culture (2026-02-02)
+- (Brian Kahn and Sophie Kleeman already had entries from prior iteration)
+
+### Key analytical finding: Gizmodo/G/O Media as dominant feeder network
+
+Of the 5 new journalists, 3 have Gizmodo in their career histories:
+- Tim Marchman: Gizmodo special projects editor (2018–2019)
+- Sophie Kleeman: Gizmodo staff writer → news editor (2016–2018)
+- Molly Taft: Gizmodo/Earther staff writer (2021–2023)
+
+Combined with Katie Drummond (Gizmodo EIC 2015–2017) and the broader G/O Media diaspora, Gizmodo is now the single largest feeder network into Wired's current editorial structure. This matters for the adversarial-journalism pipeline thesis: Gizmodo was known for confrontational tech coverage, and its alumni are now in editorial leadership (Drummond), desk director (Marchman), and reporting/editing (Kleeman, Taft) positions at Wired.
+
+The full Gizmodo → Wired pipeline now includes at least:
+1. Katie Drummond (Gizmodo EIC → Wired Global Editorial Director)
+2. Tim Marchman (Gizmodo special projects → Wired Director, Science/Politics/Security)
+3. Sophie Kleeman (Gizmodo news editor → Wired senior editor, business)
+4. Molly Taft (Gizmodo/Earther staff → Wired senior writer, climate)
+5. Brian Barrett (Gizmodo EIC → Wired executive editor, returned 2024)
+Plus Brian Kahn's Earther connection (Earther was Gizmodo's climate vertical).
+
+### Stats:
+- Total journalists: 79 (was 74)
+- Multi-publication: 76 of 79 (was 71 of 74)
+- Tests: 464/464 passing
+- Commit: `bf081ea` — 4 files changed, 261 insertions, 3 deletions
+- Pushed to GitHub

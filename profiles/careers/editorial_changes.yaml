@@ -368,6 +368,15 @@ editorial_changes:
     date: 2017-07
     source_url: https://en.wikipedia.org/wiki/The_Atlantic
     notes: Emerson Collective staffer placed as vice chairman at acquisition. Direct LPJ representative in Atlantic governance.
+  - position: senior_editor_economics
+    outgoing: null
+    incoming: Gilad Edelman
+    date: 2023-04
+    source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-edelman-as-a-senior-editor-for-economics-coverage/
+    notes: 'Edelman hired as senior editor to expand economics and political economy coverage. Came from brief FTC stint
+      (communications strategist under Lina Khan, Sep 2022 - Apr 2023). Before that, politics writer at Wired (Nov 2019 -
+      Sep 2022). Yale JD, Columbia BA. Rare journalist → government → journalist career arc. Now covers tech antitrust
+      (Google), political economy, and broader tech policy with legal/regulatory expertise.'
   mit-tech-review:
   - position: publisher_ceo
     outgoing: Jason Pontin
