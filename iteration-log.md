@@ -3449,3 +3449,28 @@ Plus Brian Kahn's Earther connection (Earther was Gizmodo's climate vertical).
 - Tests: 464/464 passing
 - Commit: `bf081ea` — 4 files changed, 261 insertions, 3 deletions
 - Pushed to GitHub
+
+---
+
+## 2026-06-26 06:00 PT — Type B: Journalist Research
+
+**Focus:** Will Oremus — WaPo → Atlantic migration
+
+**New journalist added:**
+- **Will Oremus** — 4-position career: Slate (senior writer, 2012-2020) → OneZero/Medium (senior writer, 2020-2021) → Washington Post (tech reporter, 2021-2026) → The Atlantic (tech reporter, 2026-present). BA Philosophy Stanford, MA Politics Columbia. Co-wrote WaPo "Tech 202" newsletter. Departed amid WaPo's Feb 2026 layoffs (~1/3 of staff). Covers online speech, AI, information economy at Atlantic.
+
+**Editorial changes entry:**
+- Atlantic: tech_reporter hire — Will Oremus (2026-04)
+
+**Migration significance:**
+- WaPo (Bezos-owned, unstable post-layoffs) → Atlantic (Emerson Collective-owned, profitable under CEO Nicholas Thompson — himself former Wired EIC)
+- Thompson's presence at Atlantic creates a Condé Nast editorial culture bridge
+- Tests: (1) Does Oremus's explanatory/analysis style shift toward Atlantic's longer-form essay voice? (2) Does coverage of Meta/AI carry different framing under Emerson Collective vs Bezos ownership?
+
+**Other findings:**
+- Wired actively hiring 5 roles: chief business correspondent, staff editor, senior writer (investigations), staff writer (business), senior writer (climate). No completed hires beyond those already tracked.
+
+**Stats:**
+- Total journalists: 86 (was 85)
+- Tests: pending this cycle
+- Commit: pending
