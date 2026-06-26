@@ -4,6 +4,44 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-26 13:00 PT — Hour Type D: Toolkit Quality & Documentation
+
+**Focus:** Comprehensive documentation consistency sweep — fixing stale counts, missing entries, and outdated references across all 6 doc files.
+
+### Issues Found & Fixed
+
+**12 stale values across 5 files**, all caused by toolkit improvements (new tests, new framing devices, new journalists) where the corresponding documentation wasn't updated:
+
+| File | Issue | Old Value | New Value | Root Cause |
+|------|-------|-----------|-----------|------------|
+| README.md | Test count | 480 | 495 | 15 tests added in test_sarcastic_correction.py |
+| README.md | Test file count | 18 | 19 | test_sarcastic_correction.py added |
+| README.md | Missing test table entry | — | test_sarcastic_correction.py (15 tests) | File existed but wasn't added to table |
+| README.md | Missing sample output entry | — | atlantic_emotion_ai_workplace_surveillance | File existed on disk |
+| README.md | Missing sample output entry | — | engadget_meta_wynn_williams_lawsuit | File existed on disk |
+| AGENT_GUIDE.md | Framing device count | 29 | 30 | sarcastic_correction added but schema not updated |
+| AGENT_GUIDE.md | Extended device count | 16 | 17 | Same — sarcastic_correction is extended tier |
+| ARCHITECTURE.md | Test count in file layout | 480 | 495 | Same as README |
+| ARCHITECTURE.md | Missing test in file layout | — | test_sarcastic_correction.py | File existed but not in layout |
+| ARCHITECTURE.md | Missing examples in layout | — | same_event_comparison.py, framing_correction_demo.py | Both existed but weren't listed |
+| METHODOLOGY.md | Framing taxonomy reference | "28-type" | "30-type" | §13.2 was never updated when devices 29-30 added |
+| EDITORIAL_HISTORIES.md | Journalist count | 87 | 90 | 3 journalists added in Type B iterations |
+| EDITORIAL_HISTORIES.md | Multi-pub career count | 84 | 87 | Verified via YAML parse: 87/90 have ≥2 pubs |
+
+### Verification
+- **495 tests passed** (no regressions — doc-only changes)
+- YAML journalist count verified programmatically (90 total, 87 multi-pub)
+- All sample output files confirmed to exist on disk
+
+### Commit
+- Hash: 55a245d
+- Pushed to GitHub
+
+### Observations
+The documentation drift pattern is consistent: every Type A/B/C iteration adds tests, devices, or data, but the doc updates only propagate to the directly-edited file. Cross-file references (README test count, METHODOLOGY framing taxonomy count, ARCHITECTURE file layout) accumulate staleness. A doc-consistency check should be part of every iteration's commit checklist, not just Type D's job.
+
+---
+
 ## 2026-06-26 12:00 PT — Hour Type C: Ownership & Funding Deep Dive
 
 **Focus:** Wired/Condé Nast/Advance Publications — Turnitin dual-sided AI conflict (NEW severity-5 finding), HawkEye 360 surveillance investment exit, 6 new portfolio entities, Reddit valuation update.
