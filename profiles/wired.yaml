@@ -140,7 +140,7 @@ advance_investments:
       opened at $47, valued at $6.4B. Return: 5,800%+ (Bloomberg Billionaires Index).
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
-    current_value_estimate: "~$6.97B at $158.02/share (Jun 26, 2026). Down from $7.0B Jun 23."
+    current_value_estimate: "~$6.81B at $161.37/share (Jun 26, 2026). Reddit now ~56% of Advance's public equity."
     competitive_with: ["Meta", "X/Twitter"]
     meta_competition: >
       Reddit is a direct Meta competitor for user attention, advertiser spend, and community
@@ -247,9 +247,54 @@ advance_investments:
     competitive_with: []
 
   - entity: "Turnitin"
-    stake: "investment (details undisclosed)"
-    description: "Internet-based plagiarism detection service. Used by educational institutions worldwide."
+    stake: "100% subsidiary (acquired April 30, 2019 for ~$1.75B)"
+    description: >
+      MAJOR SUBSIDIARY: Leading academic integrity SaaS platform. Founded 1998 at UC Berkeley by John M.
+      Barrie, Christian Storm, Emmanuel Briand, Melissa Lipscomb (as iParadigms LLC). Previous ownership:
+      Warburg Pincus (2008, undisclosed price) → GIC/Insight Venture Partners (2014, $752M) → Advance (2019, ~$1.75B).
+      CEO: Chris Caren (since ~2009). HQ: Oakland, CA, 2101 Webster Street Suite 1800.
+      SCALE: 16,000+ institutions, 71M+ students enrolled, 1.9B+ paper submissions in database (as of Jun 2025).
+      Used in 153 countries. Cashflow positive since 2004.
+      PRODUCTS: Turnitin Originality (plagiarism + AI detection), GradeMark (grading), PeerMark (peer review),
+      Gradescope (AI-assisted grading, acquired 2018 from Berkeley), iThenticate (publisher plagiarism detection).
+      Also runs plagiarism.org informational site.
+      ACQUISITIONS UNDER ADVANCE: VeriCite (2018, pre-acquisition), Unicheck (2020), Ouriginal (2021, merger
+      of Urkund + PlagScan). Each consolidated Turnitin's global monopoly position in academic integrity software.
+      AI WRITING DETECTION (launched Apr 2023): Claims <1% false positive rate for documents >20% AI-written.
+      Processes 200M+ papers through AI detector. Data shows ~11% of submissions have ≥20% AI writing, ~3% have
+      ≥80% AI writing. Higher false positive rates for documents <20% AI-written (asterisk added to those scores).
+      CONTROVERSIES: Stanford researchers found AI detectors biased against non-native English speakers (May 2023).
+      OpenAI withdrew its own AI detector due to "low rate of accuracy" (26% detection rate). A July 2023 study
+      of 14 AI detection tools found none scored above 80% accuracy. LA Times (Jun 21, 2026): "Inside College
+      AI Cheating Wars: Extreme Surveillance, False Accusations, Jarring Confusion" — documenting false
+      accusation cases, students deliberately inserting errors to avoid AI detection, and policy chaos.
+      Turnitin's own disclaimer: model "may not always be accurate" and "should not be used as the sole basis
+      for adverse actions against a student."
+      REVENUE DATA: Private (no public financials). Estimated >$200M ARR based on $1.75B acquisition price
+      and typical SaaS multiples. Revenue likely growing substantially since 2023 as AI detection became
+      a must-have for universities. The $1.75B price was the largest edtech acquisition of 2019 and among
+      the largest in the sector's history (EdSurge noted it exceeded total VC raised by all edtech startups
+      the prior year).
     competitive_with: []
+    ai_conflict_note: >
+      CRITICAL DUAL-SIDED AI CONFLICT: Advance Publications simultaneously profits from BOTH sides of the
+      AI content arms race:
+      (1) Condé Nast LICENSES content TO AI companies (OpenAI, Amazon Rufus, Perplexity, Apple Intelligence)
+          — generating revenue from AI content generation and training.
+      (2) Turnitin DETECTS and flags AI-generated content — generating revenue from the fear of AI writing
+          and the institutional response to it.
+      This creates a structural financial incentive for Advance to amplify the perceived threat of AI in education
+      (benefiting Turnitin's sales) while simultaneously feeding AI models with premium content (benefiting
+      Condé Nast's licensing revenue). No Condé Nast publication — including Wired, which covers AI extensively —
+      has ever disclosed that its parent company owns the world's dominant AI writing detection platform.
+      When Wired covers AI-generated content, AI detection technology, or academic integrity, it is covering
+      a market in which its parent company has a $1.75B investment at stake.
+    source_urls:
+      - "https://www.edsurge.com/news/2019-03-06-turnitin-to-be-acquired-by-advance-publications-for-1-75b"
+      - "https://turnitin.com/about/advance-acquires-turnitin"
+      - "https://en.wikipedia.org/wiki/Turnitin"
+      - "https://www.paloaltoonline.com/2025/07/california-colleges-spend-millions-turnitin-ai-faulty-tech/"
+      - "https://cshe.berkeley.edu/la-times-article-trust-colleges-decaying-over-ai-cheating"
 
   - entity: "Regional Newspapers"
     stake: "100% (various)"
@@ -264,18 +309,77 @@ advance_investments:
     description: "Enterprise content management system. Used by media companies and brands."
     competitive_with: []
 
+  - entity: "POP (digital marketing agency)"
+    stake: "100% subsidiary"
+    description: >
+      Digital marketing agency founded 1996 in Seattle. Works with Fortune 1000 brands including
+      Target, Toyota, Microsoft, and Nike. Acquired by Advance to diversify into digital services.
+      Offices in Seattle and San José, Costa Rica. 200+ employees. Listed on advance.com as a
+      core portfolio company.
+    competitive_with: []
+    source_url: "https://advance.com"
+
+  - entity: "PADI (Professional Association of Diving Instructors)"
+    stake: "Acquired January 7, 2025"
+    description: >
+      World's largest recreational diving membership and diver training organization. Certifies
+      more divers than any other diving organization worldwide. Advance's acquisition expands
+      its portfolio into recreational sports/education, complementing The IRONMAN Group (endurance
+      sports) and National Sports Forum.
+    competitive_with: []
+    source_url: "https://pitchbook.com/profiles/advance-publications-investments"
+
+  - entity: "HawkEye 360 (EXITED)"
+    stake: "Venture investment (exited via IPO May 7, 2026)"
+    description: >
+      Space-based RF signal intelligence company. Operates satellite constellation that detects,
+      geolocates, and analyzes radio frequency emissions globally. Customers: NRO, NGA, Space Force,
+      allied nations (61% of $117.6M 2025 revenue from US govt). IPO'd on NYSE under HAWK ticker
+      at ~$2.4B valuation (April 2026). Revenue: $117.6M (2025, +74% YoY). 395 employees.
+      Net income: $2.6M in 2025 (turnaround from $29M loss in 2024). Backlog: $302.7M.
+      Advance's exit realized gains from this defense/intelligence investment. Current stock: ~$19.66.
+    competitive_with: []
+    source_urls:
+      - "https://www.reuters.com/hawkeye-360-targets-2-4-billion-valuation-us-ipo/"
+      - "https://spacenews.com/hawkeye-360-files-to-go-public/"
+
+  - entity: "Steam Data Suite"
+    stake: "Acquired March 15, 2024"
+    description: "Gaming analytics platform. Advance's entry into gaming data and intelligence."
+    competitive_with: []
+    source_url: "https://pitchbook.com/profiles/advance-publications-investments"
+
+  - entity: "National Sports Forum"
+    stake: "Acquired March 31, 2025"
+    description: >
+      Sports industry events and conferences. Complements Leaders Group (sports media) and
+      IRONMAN Group (endurance sports) in Advance's growing sports portfolio.
+    competitive_with: []
+    source_url: "https://pitchbook.com/profiles/advance-publications-investments"
+
+  - entity: "Stage Entertainment"
+    stake: "100% subsidiary"
+    description: >
+      International theater and live entertainment company. Produces musicals and shows
+      across Europe (Germany, Netherlands, UK). Part of Advance's diversified entertainment portfolio.
+    competitive_with: []
+    source_url: "https://advance.com"
+
 # ===================================================================
-# TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (updated Jun 25, 2026)
+# TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (updated Jun 26, 2026)
 # ===================================================================
-# Reddit (RDDT): ~$6.66B (42.2M shares @ $157.82, down from $7.0B on Jun 23)
+# Reddit (RDDT): ~$6.81B (42.2M shares @ $161.37, Jun 26 2026)
 # Charter (CHTR): ~$2.67B (20.6M shares @ $129.65, STEEP DECLINE: -67% 1yr, -82% 5yr)
+# Turnitin: ~$1.75B+ (acquired 2019, likely appreciated given AI detection boom)
 # WBD remaining: ~$2.65B at market ($26.98) or ~$2.94B at Paramount $30 tender + $1.1B realized
 # Condé Nast: Private (profitable 2025, events rev +40%, 7 marquee brands = 85% of undisclosed rev)
 # ACBJ: Private
 # IRONMAN Group: Private
 # Other holdings: Private
-# TOTAL PUBLIC EQUITY: ~$12.0B at market (down from ~$12.3B on Jun 23)
-# TOTAL PUBLIC EQUITY (if Paramount closes at $30): ~$12.3B
+# TOTAL PUBLIC EQUITY: ~$12.1B at market (Reddit + Charter + WBD market prices Jun 26)
+# TOTAL PUBLIC EQUITY (if Paramount closes at $30): ~$12.4B
+# TOTAL PRIVATE SUBSIDIARIES: Turnitin (~$1.75B+ est.), Condé Nast, ACBJ, IRONMAN, PADI, POP, Stage, NSF
+# HawkEye 360: EXITED via IPO May 2026 at ~$2.4B valuation
 # Donald Newhouse net worth at death: $15.4B (Forbes May 2026)
 #
 # KEY PORTFOLIO SHIFT: Charter's steep decline (~$6B loss in 12 months) and the pending
@@ -529,6 +633,58 @@ known_conflicts:
     source_urls:
       - "https://www.marketbeat.com/stocks/NYSE/RDDT/chart/"
       - "https://www.marketbeat.com/stocks/NASDAQ/CHTR/chart/"
+
+  - type: "dual_sided_ai_conflict"
+    description: >
+      NEW CONFLICT (identified Jun 26, 2026): Advance Publications simultaneously profits from BOTH sides of
+      the AI content arms race through two wholly-owned subsidiaries:
+      (1) Condé Nast LICENSES content TO AI companies — revenue-generating deals with OpenAI (Aug 2024),
+          Amazon Rufus (Jul 2025), Perplexity (2025), Apple Intelligence (in negotiations). These deals
+          provide training data and real-time content to AI systems that GENERATE text.
+      (2) Turnitin ($1.75B acquisition, Apr 2019) DETECTS AI-generated text — 16,000+ institutions,
+          71M+ students, 200M+ papers processed through AI detector since Apr 2023. Turnitin's AI writing
+          detection tool is the de facto industry standard, and its revenue grows as AI content generation
+          increases and institutions respond with detection mandates.
+      THE STRUCTURAL INCENTIVE: Advance's financial interests are served by BOTH the proliferation of AI
+      writing (which drives Condé Nast licensing revenue) AND the institutional panic about AI writing
+      (which drives Turnitin subscription revenue). This is an arms-dealer-selling-to-both-sides dynamic.
+      DISCLOSURE FAILURE: No Condé Nast publication has ever disclosed this dual-sided conflict. When Wired
+      covers AI writing detection, academic integrity technology, student cheating, or AI content generation,
+      it is covering markets in which its parent company holds a combined investment exceeding $1.75B+
+      (Turnitin acquisition alone) plus ongoing AI licensing revenue. Wired's extensive AI coverage —
+      a core editorial pillar under Drummond — directly touches markets where Advance has material financial
+      interests on both the supply and detection sides.
+      COMPARISON: This is structurally similar to a pharmaceutical company owning both a drug manufacturer
+      and a drug-testing lab, then running a magazine that covers drug safety without disclosing either interest.
+    severity: 5
+    evidence: >
+      Turnitin acquisition: EdSurge Mar 6, 2019; WSJ estimated $1.75B. Condé Nast/OpenAI deal: Reuters
+      Aug 20, 2024. Condé Nast/Amazon: Jul 2025. Turnitin AI detection: turnitin.com/ai-writing, Wikipedia.
+      LA Times Jun 21 2026 AI cheating wars article references Turnitin false accusations.
+    source_urls:
+      - "https://www.edsurge.com/news/2019-03-06-turnitin-to-be-acquired-by-advance-publications-for-1-75b"
+      - "https://www.reuters.com/technology/openai-signs-content-deal-with-conde-nast-2024-08-20/"
+      - "https://en.wikipedia.org/wiki/Turnitin"
+      - "https://advance.com"
+
+  - type: "hawkeye_360_surveillance"
+    description: >
+      CONTEXTUAL CONFLICT (exited May 7, 2026): Advance Publications was an investor in HawkEye 360, a
+      space-based RF signal intelligence company that IPO'd at ~$2.4B valuation (NYSE: HAWK). HawkEye 360
+      provides satellite-based radio frequency surveillance, geolocation, and signal intelligence primarily
+      to US defense/intelligence customers (NRO, NGA, Space Force = 61% of $117.6M 2025 revenue).
+      RELEVANCE: Condé Nast properties — especially Wired and Ars Technica — cover surveillance, government
+      intelligence capabilities, and privacy extensively. During Advance's investment period (pre-May 2026),
+      these publications were covering the surveillance market while their parent company had a financial
+      stake in a company selling surveillance capabilities to intelligence agencies. Advance's exit via IPO
+      resolves the forward-looking conflict but the undisclosed historical conflict during the investment
+      period remains unexamined. PitchBook lists HawkEye 360 exit on May 7, 2026.
+    severity: 2
+    evidence: "PitchBook exit record May 7, 2026; HawkEye 360 S-1 filing; Reuters Apr 27, 2026 IPO report"
+    source_urls:
+      - "https://www.reuters.com/hawkeye-360-targets-2-4-billion-valuation-us-ipo/"
+      - "https://spacenews.com/hawkeye-360-files-to-go-public/"
+      - "https://pitchbook.com/profiles/advance-publications-investments"
 
 litigation_connections:
   - type: "connected_party"
