@@ -3087,3 +3087,226 @@ journalists:
     notes: 'Reporter covering crypto, Web3, and fintech. Based in London. Also contributed to Ars Technica and WIRED Middle
       East. Coverage focuses on cryptocurrency regulation, intersection of technology with politics. Global perspective
       (Berlin, Stockholm, Paris datelines). Part of Wired''s London team after UK print edition was pulled in 2026.'
+- name: Tim Marchman
+  notes: 'Key editorial gatekeeper: Director of Science, Politics, and Security at Wired (2024-present). Unusual career arc
+    from sportswriting to investigative politics editor. Recruited by Katie Drummond to build Wired''s politics coverage capacity.
+    Led Wired''s DOGE scoops that outpaced outlets with dedicated DC bureaus. His Vice/Gizmodo pipeline parallels Drummond''s
+    own adversarial-journalism trajectory.'
+  career:
+  - publication: deadspin
+    event_type: hired
+    role: editor_in_chief
+    beat: sports
+    start: 2013-01
+    end: 2014-12
+    source_url: https://listennotes.com/podcasts/hang-up-and-listen/the-sterlings-reputation-edition-yWcKTzRNq3I/
+    notes: 'EIC of Deadspin (Gawker Media). Covered sports with an irreverent, investigative approach. Chicago baseball background.
+      Part of the original Gawker Media ecosystem before its dissolution.'
+  - publication: gizmodo
+    event_type: hired
+    role: special_projects_editor
+    beat: investigations, features
+    start: 2018-01
+    end: 2019-06
+    source_url: https://rocketreach.co/tim-marchman-email_51918440
+    notes: 'Editor in Chief of Special Projects Desk at Gizmodo Media Group (post-Gawker successor). Overlap with Drummond
+      who was Gizmodo EIC (2015-2017). This institutional connection is a key link in the adversarial-journalism pipeline —
+      both Marchman and Drummond passed through Gizmodo in the same era.'
+  - publication: vice
+    event_type: hired
+    role: editorial_director_features
+    beat: features, investigations
+    start: 2019-07
+    end: 2024-01
+    source_url: https://rocketreach.co/tim-marchman-email_51918440
+    notes: 'Features Director / Editorial Director at Vice Media for ~5 years. Vice under financial distress during this period
+      (filed bankruptcy May 2023). Marchman''s departure to Wired in 2024 is part of the Vice diaspora — multiple Vice alumni
+      landing at Condé Nast titles. Vice was known for adversarial, counter-establishment reporting culture.'
+  - publication: wired
+    event_type: hired
+    role: director_science_politics_security
+    beat: politics, science, cybersecurity, national security
+    start: 2024-01
+    source_url: https://thebulletin.org/2025/03/staring-into-the-doge-abyss-with-wireds-tim-marchman/
+    notes: 'Director of Science, Politics, and Security at Wired. Recruited by Katie Drummond. Oversees three desks: politics
+      (Leah Feiger), science, and security. Hires under him: Brian Kahn (senior editor science, May 2025), Molly Taft (senior
+      writer climate, Mar 2025). Led Wired''s DOGE coverage that broke stories ahead of NYT/WaPo. Philadelphia-based. Interview
+      with Bulletin of Atomic Scientists (Mar 2025) reveals editorial philosophy: sees DOGE as core tech-politics story because
+      Silicon Valley''s power now flows through government. Hosts WIRED Politics Lab podcast episodes. email: timothy_marchman@wired.com'
+- name: Sophie Kleeman
+  notes: 'Recent hire (May 2025): Senior editor on Wired business desk. Reports to Zoë Schiffer. Career pipeline Mic → Gizmodo
+    → Insider/BI → Wired continues adversarial-tech-journalism lineage. Specializes in enterprise investigative editing — data
+    centers, corporate power, tech industry.'
+  career:
+  - publication: mic
+    event_type: hired
+    role: staff_writer
+    beat: technology, internet culture
+    start: 2014-01
+    end: 2015-12
+    source_url: https://talkingbiznews.com/they-re-hiring/kleeman-joins-insiders-investigations-team-as-senior-editor/
+    notes: 'Editorial fellow → news desk staff writer → tech staff writer at Mic (digital media startup). Early career stage.
+      NYU BA in journalism and anthropology. Also interned at New York Times Magazine, MSNBC, Gothamist, and The New Presence
+      Magazine.'
+  - publication: gizmodo
+    event_type: hired
+    role: news_editor
+    beat: technology, social media, internet
+    start: 2016-01
+    end: 2018-06
+    source_url: https://gizmodo.com/author/sophie-kleeman/
+    notes: 'Staff writer, then news editor at Gizmodo. Covered social media, tech industry, internet culture. Part of Gizmodo
+      Media Group during the post-Gawker era — institutional overlap with both Drummond (EIC 2015-2017) and Marchman (special
+      projects 2018-2019).'
+  - publication: business-insider
+    event_type: hired
+    role: deputy_enterprise_editor
+    beat: enterprise investigations, tech, corporate power
+    start: 2018-07
+    end: 2026-05
+    source_url: https://talkingbiznews.com/they-re-hiring/kleeman-joins-insiders-investigations-team-as-senior-editor/
+    notes: 'Multiple promotions at BI/Insider: essays & features editor → senior investigations editor → deputy enterprise
+      editor. Edited award-winning stories on data center impacts, C-sections epidemic, transgender violence, Elon Musk''s
+      Tesla empire. Longest career stop (~8 years). Moved from Gizmodo''s tech-adversarial culture to BI''s enterprise
+      investigative culture.'
+  - publication: wired
+    event_type: hired
+    role: senior_editor
+    beat: business, enterprise tech, corporate influence
+    start: 2026-05
+    source_url: https://talkingbiznews.com/media-news/wired-hires-editors-from-business-insider-bloomberg/
+    notes: 'Senior editor on business desk. Reports to Zoë Schiffer. New York office. Hired alongside Brian Kahn (science
+      desk). Announced by executive editor Brian Barrett. Editorial hierarchy: Drummond → Schiffer → Kleeman for enterprise
+      tech coverage. KEY: her specialty in corporate power and tech industry investigations directly serves Wired''s adversarial
+      Big Tech coverage posture.'
+- name: Brian Kahn
+  notes: 'Recent hire (May 2025): Senior editor on Wired science desk. Climate/clean tech specialist. Career path Earther →
+    Protocol → Bloomberg → Wired tracks through multiple climate-focused outlets.'
+  career:
+  - publication: earther
+    event_type: hired
+    role: managing_editor
+    beat: climate, environment
+    start: 2017-01
+    end: 2021-12
+    notes: 'Managing editor at Earther (Gizmodo Media climate vertical). Oversaw climate coverage. Earther was known for
+      aggressive, accessible climate journalism. Part of G/O Media portfolio.'
+  - publication: protocol
+    event_type: hired
+    role: climate_editor
+    beat: climate, clean tech
+    start: 2022-01
+    end: 2023-06
+    notes: 'Oversaw climate coverage at Protocol (tech media startup). Protocol shut down in Nov 2022 (Insider acquisition).
+      Brief tenure during outlet''s final months/wind-down period.'
+  - publication: bloomberg
+    event_type: hired
+    role: editor
+    beat: climate, clean tech, energy
+    start: 2023-07
+    end: 2026-04
+    notes: 'Editor on Bloomberg''s climate team. Oversaw clean tech coverage. Ran flagship climate newsletter. Edited stories
+      on satellite decommissioning, Australia-Singapore power cable, firefighting plane competition. Moved from advocacy-adjacent
+      climate journalism (Earther) to Bloomberg''s institutional business journalism.'
+  - publication: wired
+    event_type: hired
+    role: senior_editor
+    beat: science, climate, clean tech
+    start: 2026-05
+    source_url: https://talkingbiznews.com/media-news/wired-hires-editors-from-business-insider-bloomberg/
+    notes: 'Senior editor on science desk. Reports to Tim Marchman. San Francisco office. Hired alongside Sophie Kleeman
+      (business desk). Announced by executive editor Brian Barrett.'
+- name: Molly Taft
+  notes: 'Recent hire (Mar 2025): Senior writer on Wired science desk covering climate. Career path Earther → New Republic
+    → Drilled → Wired. Won 2023 SEAL Environmental Award. Pronouns: they/them.'
+  career:
+  - publication: center-for-public-integrity
+    event_type: fellowship
+    role: fellow
+    beat: investigative journalism
+    start: 2020-06
+    end: 2020-12
+    source_url: https://rainforestjournalismfund.org/journalists/molly-taft
+    notes: 'Fellow at Center for Public Integrity. Columbia Journalism MS (Stabile investigative fellow). Bowdoin BA in history
+      and German.'
+  - publication: gizmodo
+    event_type: hired
+    role: staff_writer
+    beat: climate, tech, Big Oil
+    start: 2021-02
+    end: 2023-06
+    source_url: https://gizmodo.com/author/molly-taft/
+    notes: 'Staff writer at Earther (Gizmodo''s climate vertical). Covered climate, tech industry environmental impact, Big
+      Oil. Won 2023 SEAL Environmental Award. Part of G/O Media. Overlap with Brian Kahn who previously led Earther.'
+  - publication: new-republic
+    event_type: hired
+    role: contributing_senior_editor
+    beat: climate vertical
+    start: 2023-07
+    end: 2023-10
+    source_url: https://buzzsumo.com/journalist/molly-taft/
+    notes: 'Contributing senior editor at The New Republic, focused on climate vertical. Wrote on offshore wind, climate
+      misinformation, fossil fuel industry. Brief stint — continued freelancing simultaneously.'
+  - publication: drilled-media
+    event_type: hired
+    role: reporter_editor
+    beat: climate, fossil fuel industry, environmental investigations
+    start: 2023-11
+    end: 2025-03
+    source_url: https://theorg.com/org/wired/org-chart/molly-taft
+    notes: 'Reporter/editor at Drilled Media (climate investigative podcast/outlet focused on fossil fuel industry accountability).
+      Drilled is known for adversarial coverage of oil/gas industry. Pipeline from Drilled to Wired mirrors Drummond''s recruitment
+      of adversarial-journalism talent.'
+  - publication: wired
+    event_type: hired
+    role: senior_writer
+    beat: climate, energy, environment
+    start: 2025-03
+    source_url: https://talkingbiznews.com/media-news/wired-hires-taft-as-senior-writer/
+    notes: 'Senior writer on science desk covering climate. Reports to Tim Marchman. New York office. Focus: new energy
+      technologies, who profits, and impact on average people. Announcement by Tim Marchman. Also written for Vice, The
+      Intercept, The Guardian, Teen Vogue, BuzzFeed. Contact: molly_taft@wired.com, Signal: mollytaft.76'
+- name: Miles Klee
+  notes: 'Recent hire (Feb 2026): Senior writer on Wired culture desk. Internet culture specialist — conspiracy theories,
+    memes, fandoms, digital subcultures. Author of novels and story collections. Unusual non-traditional pipeline into Wired:
+    no prior tech journalism background, coming from Rolling Stone culture beat and MEL Magazine.'
+  career:
+  - publication: daily-dot
+    event_type: hired
+    role: staff_writer
+    beat: internet culture
+    start: 2014-01
+    end: 2016-12
+    source_url: https://iheart.com/podcast/moral-panic-over-trafficking/
+    notes: 'Early internet culture journalism at The Daily Dot. Covered weird niche subcultures, memes, viral content. Self-described
+      start of his internet coverage career (~10 years before 2024 interview).'
+  - publication: mel-magazine
+    event_type: hired
+    role: senior_staff_writer
+    beat: internet culture, memes, digital life
+    start: 2017-01
+    end: 2022-07
+    source_url: https://melmagazine.com/en/author/miles-klee/
+    notes: 'Senior staff writer at MEL Magazine (Dollar Shave Club''s editorial arm). Self-described as ''resident tank-top
+      dirtbag, shitposter and meme expert.'' Prolific output covering internet culture, conspiracy theories, political movements,
+      digital subcultures. MEL was an unusual editorial experiment — a men''s magazine funded by a DTC razor company.'
+  - publication: rolling-stone
+    event_type: hired
+    role: culture_writer
+    beat: internet culture, conspiracy theories, digital subcultures
+    start: 2022-08
+    end: 2026-01
+    source_url: https://theorg.com/org/rolling-stone/org-chart/miles-klee
+    notes: 'Culture writer at Rolling Stone covering internet subcultures, conspiracy theories, online moral panics. Also
+      written for Washington Post, Vanity Fair, Slate, Vulture. Author: ''Ivyland'' (novel), ''True False'' (story collection),
+      ''Double Black Diamond'' (fiction, co-written with Mads Gobbo). Williams College BA in English & Philosophy.'
+  - publication: wired
+    event_type: hired
+    role: senior_writer
+    beat: internet culture, digital culture, online subcultures
+    start: 2026-02
+    source_url: https://editorandpublisher.com/stories/wired-adds-senior-writer-to-the-culture-desk/
+    notes: 'Senior writer on culture desk. Reports to Michael Calore (Director, Consumer Tech & Culture). Los Angeles-based.
+      Announced by executive editor Brian Barrett. Works closely with editor Manisha day-to-day. Covers ''the weird, unexpected,
+      and inexplicable corners of the internet.'' First major Wired hire from outside the traditional tech journalism pipeline —
+      brings Rolling Stone/MEL''s gonzo internet-culture approach to Wired''s Drummond-era editorial expansion.'
