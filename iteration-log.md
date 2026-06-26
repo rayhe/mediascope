@@ -4,6 +4,88 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-26 08:00 PT — Hour Type C: Ownership & Funding Deep Dive
+
+**Focus:** NYT Board of Directors — first comprehensive governance analysis. Full board composition, individual career research for all 13 directors, tech company cross-directorships, Ariel Investments 13F analysis, 5 new severity 4-5 conflicts.
+
+### What was improved:
+
+#### 1. Complete Board of Directors Section (NEW — 250+ lines):
+
+Full profiles for all 13 NYT board members with career histories, committee memberships, other board seats, and conflict analysis:
+
+**Family/Insiders (3):**
+- A.G. Sulzberger (Publisher & Chairman)
+- Meredith Kopit Levien (President & CEO)
+- David Perpich (Vice Chairman, Publisher of The Athletic)
+
+**Sulzberger Family Trust (2):**
+- Arthur Golden (Author, Memoirs of a Geisha)
+- Margot Golden Tishler (Chair of Ochs-Sulzberger Trust — structurally the most powerful board member after Sulzberger himself)
+
+**Tech Executives (5 of 13 = 38% of board):**
+- Manuel Bronstein: 7yr Alphabet/Google (VP YouTube 2014-2018, VP Google Assistant 2018-2021), CPO Roblox 2021-2025. Nom & Gov committee. Now also joining Match Group board.
+- Rebecca Van Dyck: 10yr Meta (VP Marketing 2012-2017 → CMO AR/VR 2017-2020 → COO Reality Labs 2020-2022). Compensation + Nom & Gov committees. Now CMO Airbnb.
+- Amanpal Bhutani: CEO GoDaddy (since 2019), former Expedia Group President. Audit + Finance committees.
+- Brian McAndrews: Former SVP Microsoft (2007-2008), CEO aQuantive (sold to MSFT for $6.3B). CEO Pandora (2013-2016). Compensation Committee Chair. Also on Xero and Frontdoor boards.
+- Rachel Glaser: Former CFO Etsy (2017-2024), SVP Finance Yahoo!, 19yr Disney. Presiding Director. Audit + Compensation.
+
+**Finance (1):**
+- John W. Rogers Jr.: Founder/Chairman/Co-CEO/CIO Ariel Investments. Nom & Gov Chair + Finance Chair. Also on Nike (retiring Sept 2026), McDonald's, Ryan Specialty, Obama Foundation boards.
+
+**Media/Digital (1):**
+- Anuradha Subramanian: CFO Beast Industries (MrBeast's $5B company, since Apr 2025). Former CFO Bumble, VICE, Univision Digital. Audit + Finance.
+
+Sources: nytco.com board bios, SEC filings, PitchBook, Wikipedia, The Org, WEF, Frontdoor, Civic News, Adweek, Bloomberg Law
+
+#### 2. Five New Severity 4-5 Conflicts:
+
+**a. board_tech_concentration (severity 4):** 38% of NYT board seats held by former Big Tech executives. No comparable concentration exists at any other tracked publication.
+
+**b. board_nomgov_capture (severity 5):** ALL 4 members of the Nominating & Governance Committee have career or financial ties to tech companies NYT covers. Self-perpetuating structural influence over board composition.
+
+**c. board_ariel_meta_position (severity 5):** Rogers' firm holds 750K shares of META ($254M), $480M+ in Alphabet, $101M Amazon, $208M Apple, $96M Netflix — over $1.1B total. He chairs the committee that picks the board while managing $254M in Meta stock. NYT claims ZERO Meta financial relationship.
+
+**d. board_van_dyck_meta_paradox (severity 4):** Former Meta Reality Labs COO (the exact division generating $4B/quarter losses and constant critical NYT coverage) now sits on the board, helps set CEO pay, and chooses future board members. Paradox: insider knowledge could sharpen or soften coverage.
+
+**e. McAndrews/Microsoft conflict (severity 4, in board entry):** The person chairing the Compensation Committee (setting CEO pay) made his career at a company NYT is currently suing for billions.
+
+#### 3. Committee Structure Documented:
+
+Full committee composition with structural analysis:
+- Audit: Brooke (Chair), Bhutani, Glaser, Subramanian
+- Compensation: McAndrews (Chair), Brooke, Glaser, Van Dyck
+- Finance: Rogers (Chair), Bhutani, Arthur Golden, Subramanian
+- Nominating & Governance: Rogers (Chair), Bronstein, McAndrews, Van Dyck
+
+#### 4. Ariel Investments 13F Analysis:
+
+First-ever analysis of NYT board member's institutional investment holdings via SEC 13F filings. Confirmed Ariel Investments holds:
+- META: 750,000 shares (~$254M)
+- GOOGL Class A: 2,500,000 shares (~$342M) + Class C: 1,850,000 shares (~$256M) = $598M+
+- AMZN: 703,000 shares (~$101M)
+- AAPL: 670,000 + 423,000 shares (~$208M combined)
+- NFLX: 201,000 shares (~$96M)
+- Also: Berkshire, Salesforce, Vertex, PayPal, ServiceNow, Spotify, Twilio, Visa, Sea Ltd, MercadoLibre
+
+Total Big Tech exposure: >$1.1B
+
+Sources: SEC EDGAR 13F filings for Ariel Investments
+
+#### 5. Profile Notes Updated:
+
+Added findings 7-10 to top of notes section, preserving prior updates 1-6.
+
+### Stats After This Cycle
+
+- NYT profile expanded: 800 → **1,269 lines** (+469 lines, largest single expansion)
+- Known conflicts: 6 → **11** (+5 new severity 4-5 entries)
+- Board members documented: 0 → **13** (complete)
+- Tests: 480 across 18 files — all passing, zero regressions
+- YAML validated
+
+---
+
 ## 2026-06-26 07:00 PT — Hour Type B: Journalist/Publication Research
 
 **Focus:** Kate Knibbs (Wired senior writer) — AI copyright, prediction markets, media impact of AI. Previously untracked despite being Wired's primary AI copyright litigation reporter.
