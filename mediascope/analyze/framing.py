@@ -220,7 +220,8 @@ _EMOTIONAL_APPEAL_PATTERNS: list[re.Pattern] = [
         r"(?:hospitalized|hospitalised)\s+(?:during|after|following|for)|"
         r"during\s+childbirth|complications?\s+(?:during|from)\s+(?:child)?birth|"
         r"(?:denied|withheld|conditional)\s+(?:health\s*care|medical|insurance|coverage)|"
-        r"health\s*care\s+(?:as\s+)?(?:leverage|contingent|conditional|hostage)|"
+        r"health\s*care\s+(?:coverage\s+)?(?:as\s+)?(?:leverage|contingent|conditional|hostage)|"
+        r"(?:coverage|insurance|health\s*care)\s+(?:made\s+)?contingent\s+on|"
         r"dependent\s+on\s+(?:employer|company|corporate)\s+(?:health|medical|insurance))\b",
         re.IGNORECASE,
     ),
@@ -1046,7 +1047,8 @@ _HYPOCRISY_FRAME_PATTERNS: list[re.Pattern] = [
     # when preceded by cooperative framing for peers
     re.compile(
         r"\b(?:the only|the sole|the last)\s+(?:major|significant|large|big|prominent)?\s*"
-        r"(?:company|developer|firm|organization|publisher|platform|player|entity|tech giant)\s+"
+        r"(?:company|developer|firm|organization|publisher|platform|player|entity|tech giant)"
+        r"(?:\s+(?:of|in|for|on|behind)\s+\w+(?:\s+\w+){0,4})?\s+"
         r"(?:that |which |to )?"
         r"(?:has not|have not|hasn't|haven't|did not|didn't|refused to|"
         r"declined to|failed to|has yet to|have yet to)\b",

@@ -507,15 +507,75 @@ litigation_connections:
       - date: "2025-06-26"
         ruling: "Judge Stein affirmed preservation order, rejected OpenAI's privacy-based objections"
         source_url: "https://www.mondaq.com/unitedstates/new-technology/1650832/"
+      - date: "2025-07"
+        ruling: "NYT and co-plaintiffs moved to compel OpenAI to produce sample of 120M ChatGPT chat logs"
+        notes: "Plaintiffs seeking to analyze how user interactions reproduced copyrighted content"
+      - date: "2025-08"
+        ruling: "OpenAI offered 20M anonymized chat log sample (0.5% of preserved logs); plaintiffs agreed to reduced sample"
+      - date: "2025-10"
+        ruling: "OpenAI proposed running search terms across 20M sample instead of full production; plaintiffs moved to compel full sample"
+      - date: "2025-11-07"
+        ruling: "Magistrate Judge Wang granted motion to compel production of entire 20M chat log sample"
+        source_url: "https://www.law.com/legaltechnews/"
+      - date: "2025-12-03"
+        ruling: >
+          Judge Wang denied OpenAI's reconsideration motion, affirmed 20M log production order.
+          Rejected privacy objections: 'multiple layers of protection precisely because of the
+          highly sensitive and private nature of much of the discovery.' OpenAI CISO Dane Stuckey
+          blogged that demand 'disregards long-standing privacy protections.'
+        source_url: "https://www.reuters.com/legal/government/openai-loses-fight-keep-chatgpt-logs-secret-copyright-case-2025-12-03/"
+      - date: "2026-01"
+        ruling: >
+          District Judge Sidney Stein affirmed both of Wang's orders (Nov 7 + Dec 5). Rejected
+          OpenAI's appeal arguing insufficient privacy weighing. Stein found Wang 'sufficiently
+          considered privacy concerns against the material's relevance.' OpenAI stated it has
+          complied with the order.
+        source_url: "https://news.bloomberglaw.com/"
+        notes: "Definitive: OpenAI must produce and has produced the 20M anonymized chat logs"
+    consolidated_mdl_status: >
+      Case is part of consolidated pretrial proceedings for 16 copyright lawsuits against OpenAI
+      in the U.S. District Court for the Southern District of New York. This multidistrict
+      litigation (MDL) represents the largest clump of AI copyright cases. Co-plaintiffs include
+      Chicago Tribune Co. LLC and other Alden Global Capital newspapers. NYT is the lead plaintiff
+      and the most resource-rich litigant, setting the discovery and legal precedent template for
+      all other cases. Sources: Bloomberg Law, Law.com, Reuters.
     status_as_of_jun_2026: >
-      Discovery phase. No trial date set. NYT searching preserved ChatGPT output logs.
-      OpenAI may appeal preservation ruling. Case likely to go to trial or settlement.
-      Precedent-setting for all publisher-vs-AI copyright disputes.
+      ADVANCED DISCOVERY PHASE. 20M anonymized ChatGPT logs produced to plaintiffs. No trial
+      date set yet. NYT searching/analyzing the chat log data for evidence of copyrighted content
+      reproduction. OpenAI has complied with production order per its public blog statement. Case
+      is precedent-setting for all publisher-vs-AI copyright disputes. Microsoft's express license
+      affirmative defense is being contested — NYT moved to strike it. Meanwhile, the litigation
+      coalition is EXPANDING: on June 24, 2026, nearly 400 local/regional newspapers filed a
+      separate SDNY lawsuit (Richner Communications v. Microsoft Corp., No. 1:26-cv-05320) led
+      by former NJ AG Matthew Platkin via Platkin LLP. This expansion vindicates NYT's first-mover
+      strategy and increases pressure for an industry-wide resolution.
   - type: "co_plaintiff_related"
     description: >
       NYT and Daily News plaintiffs consolidated. Daily News encompasses 8 news
       organizations including NY Daily News and Chicago Tribune with similar
       copyright infringement claims.
+  - type: "expanding_coalition"
+    description: >
+      Richner Communications, Inc. v. Microsoft Corp., S.D.N.Y., No. 1:26-cv-05320,
+      filed June 24, 2026. Nearly 400 local and regional newspapers vs. OpenAI + Microsoft.
+      Led by Platkin LLP (former NJ AG Matthew Platkin). Claims: copyright infringement +
+      DMCA violations. Alleges defendants crawled publisher websites, copied articles onto
+      their own systems, removed copyright management information, and reproduced content
+      in AI responses without authorization or compensation. Seeks statutory damages +
+      injunctive relief. Platkin quoted: 'This lawsuit is not about stopping AI innovation,
+      but ensuring that innovation happens fairly and within the bounds of the law.'
+      SIGNIFICANCE: This is the LARGEST legal effort by local/regional newspapers. Filed in
+      same SDNY court as NYT case. Together with NYT (Dec 2023) + Alden Global Capital
+      newspapers (Apr 2024) + CNN v Perplexity (2025) + Britannica/Merriam-Webster v
+      OpenAI (2025), the coalition now encompasses 400+ individual newspaper titles. NYT's
+      first-mover litigation is validated — local publishers are following its lead rather
+      than choosing licensing deals. OpenAI response via Drew Pusateri: models 'trained on
+      publicly available data, based on fair use and designed to support innovation.'
+    case_reference: "1:26-cv-05320, S.D.N.Y."
+    source_urls:
+      - "https://www.pymnts.com/legal/2026/400-newspapers-sue-microsoft-and-openai-alleging-content-theft-for-ai/"
+      - "https://news.bloomberglaw.com/ip-law/openai-microsoft-sued-by-publishers-for-scraping-articles"
+      - "https://storyboard18.com/publishers-sue-openai-microsoft/"
 
 ai_crawl_policy:
   blocks_gptbot: true
@@ -706,3 +766,35 @@ notes: |
   - How does the dual-class Sulzberger control structure (family owns ~11% equity but
     elects ~70% of board) interact with Slim's 25.1% economic interest?
   - Does Q1 2026 reporting show any Wirecutter revenue decline from the Amazon cuts?
+
+  CROSS-PUBLICATION AI COPYRIGHT LITIGATION LANDSCAPE (as of June 26, 2026):
+  
+  Of the 5 tracked publications, the litigation/licensing divide is now definitive:
+  
+  LITIGANTS (1 of 5):
+  - NYT: Lead plaintiff, SDNY Case 1:23-cv-11195. Advanced discovery. 20M chat logs
+    produced. 16-lawsuit MDL. The trailblazer. Also has Amazon AI licensing deal ($20-25M/yr).
+  
+  LICENSORS (4 of 5):
+  - Atlantic: OpenAI licensing (May 2024). ZERO lawsuits. Deepest OpenAI relationship
+    (licensing + product access + equity exit via LoveFrom/io Products chain). Conspicuously
+    absent from 400-newspaper June 2026 suit.
+  - Condé Nast/Wired: OpenAI (Aug 2024), Amazon, Perplexity, Apple (negotiating).
+    ZERO lawsuits. EXCLUDED from Meta's Dec 2025 AI licensing round ($0 from Meta).
+  - Guardian: OpenAI (Feb 2025), ProRata. ZERO lawsuits. But co-founded SPUR coalition
+    for standards-based approach. 'Operation Leaky Bucket' anti-scraping enforcement.
+    Third path between pure litigation and pure licensing.
+  - MIT Tech Review: No known AI licensing deals or litigation. Institutionally constrained
+    by MIT's own relationships with AI companies (Google, Amazon, IBM).
+  
+  THE EXPANDING WAVE:
+  - Dec 2023: NYT sues (1 publisher)
+  - Apr 2024: Alden Global Capital/Daily News papers join (8 publishers)
+  - 2024-2025: Individual suits accumulate (Authors Guild, Getty, etc.)
+  - 2025: CNN v Perplexity, Britannica/Merriam-Webster v OpenAI
+  - Jun 24, 2026: ~400 local/regional newspapers file Richner v. Microsoft (SDNY 1:26-cv-05320)
+  - Total: 16 consolidated SDNY cases + expanding coalition = 400+ newspaper titles suing
+  
+  The publishers that chose licensing are becoming MORE ISOLATED as the litigation wave grows.
+  Sources: Reuters (Dec 2025 chat logs), Bloomberg Law (Jun 2026 400-newspaper suit),
+  PYMNTS (Jun 2026), Law.com (Stein affirmation).

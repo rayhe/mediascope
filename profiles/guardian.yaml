@@ -434,6 +434,26 @@ litigation_connections:
     source_urls:
       - "https://www.reuters.com/article/facebook-meta-privacy-australia-idUSKBN2KC0V6"
       - "https://9to5mac.com/2022/12/23/cambridge-analytica-lawsuit-settled/"
+  - type: "strategic_licensing_over_litigation"
+    description: >
+      Like the Atlantic and Condé Nast, the Guardian chose AI licensing (OpenAI Feb 2025, ProRata)
+      over copyright litigation. However, the Guardian's non-litigation posture is more nuanced
+      than Atlantic's: (1) Guardian co-founded SPUR coalition (Feb 2026) to shape AI licensing
+      STANDARDS rather than pursuing bilateral deals only, (2) Guardian runs 'Operation Leaky
+      Bucket' to identify and close unauthorized scraping access points — using enforcement
+      mechanisms short of litigation, (3) Guardian's licensing deals were signed 14 months after
+      NYT sued (vs Atlantic's 5 months), suggesting more deliberation.
+      CONTEXT AS OF JUNE 26, 2026: The AI copyright litigation wave continues to expand.
+      Nearly 400 local/regional newspapers filed Richner v. Microsoft (SDNY 1:26-cv-05320,
+      Jun 24, 2026), the largest local newspaper legal action against AI companies. Combined
+      with NYT (Dec 2023), Alden Global Capital papers (Apr 2024), CNN v Perplexity (2025),
+      and Britannica v OpenAI (2025), the litigant coalition is massive. Guardian's licensing-
+      plus-standards approach represents a distinct THIRD PATH between pure litigation (NYT)
+      and pure licensing (Atlantic, Condé Nast). Of the 5 tracked publications, only NYT chose
+      enforcement; the other 4 chose various forms of licensing/accommodation.
+    source_urls:
+      - "https://www.pymnts.com/legal/2026/400-newspapers-sue-microsoft-and-openai-alleging-content-theft-for-ai/"
+      - "https://news.bloomberglaw.com/ip-law/openai-microsoft-sued-by-publishers-for-scraping-articles"
 
 ai_crawl_policy:
   blocks_gptbot: "Previously yes; likely updated post-OpenAI deal (Feb 2025)"

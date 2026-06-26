@@ -140,7 +140,7 @@ advance_investments:
       opened at $47, valued at $6.4B. Return: 5,800%+ (Bloomberg Billionaires Index).
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
-    current_value_estimate: "~$7.0B at $165.63/share (Jun 23, 2026)"
+    current_value_estimate: "~$6.97B at $158.02/share (Jun 26, 2026). Down from $7.0B Jun 23."
     competitive_with: ["Meta", "X/Twitter"]
     meta_competition: >
       Reddit is a direct Meta competitor for user attention, advertiser spend, and community
@@ -195,13 +195,20 @@ advance_investments:
         Paramount's $30/share offer as "superior."
       - Jun 2026 (early): DOJ approves the Paramount-WBD acquisition.
       - Jun 24, 2026: Paramount submits formal EU antitrust remedy proposal — divesting Universal Pictures
-        film distribution JV to clear EU concerns. EU Commission preliminary review deadline extended from
-        July 7 to July 21, 2026.
-      - Jun 25, 2026 (current): NY and California state AGs may sue to block the merger (regulatory risk).
-      - Larry Ellison/CNN controversy: WSJ reports Oracle co-founder Larry Ellison privately told Trump that
-        Paramount could "remake" CNN post-acquisition. Paramount denies any CNN editorial commitments.
-        Gerry Cardinale (RedBird Capital, Skydance partner) calls himself a "huge believer" in CNN and
-        praises CEO Mark Thompson.
+        film distribution JV to clear EU concerns. EU Commission Phase I decision deadline is July 7, 2026.
+        If no decision by then, deal moves into full-scale Phase II investigation (adds months).
+      - Jun 25, 2026: NY and California state AGs preparing separate lawsuit to block the merger.
+        WSJ reports Oracle co-founder Larry Ellison privately told Trump that Paramount could "remake"
+        CNN post-acquisition. Paramount denies any CNN editorial commitments. Gerry Cardinale (RedBird
+        Capital, Skydance partner): "huge believer" in CNN, praises CEO Mark Thompson.
+      - REGULATORY STATUS (Jun 26): DOJ cleared. EU Phase I deadline July 7. SEPARATE EU Foreign
+        Subsidies Regulation investigation (Saudi PIF, Abu Dhabi L'imad, Qatar IA backing the bid).
+        Also cleared by South Africa, China, Australia, NZ, Saudi Arabia, Ukraine, Serbia, North
+        Macedonia + FDI authorities in Spain, Germany, Slovenia, Belgium, Czechia, Italy, France, Romania.
+        Canada: no statutory impediment after Competition Act waiting period expired.
+      - DEAL PROTECTIONS: If transaction does not close by Sept 30, 2026, WBD shareholders receive
+        $0.25/share "ticking fee" per quarter until closing. If deal fails due to regulatory matters,
+        Paramount pays WBD a $7B termination fee.
       IF PARAMOUNT CLOSES AT $30/SHARE: Advance realizes ~$2.94B from remaining ~98M shares + $1.1B already
       realized from June 2024 sale = ~$4.04B total from WBD investment. This would be Advance's largest
       single liquidity event since the Reddit IPO and could significantly alter the family office's capital
@@ -533,6 +540,28 @@ litigation_connections:
       aligns with the litigation narrative. No disclosure of Advance's potential indirect interests
       in Meta's litigation outcomes has ever appeared in Wired coverage.
     case_reference: "MDL 3047, N.D. Cal."
+  - type: "strategic_non-litigation"
+    description: >
+      CRITICAL NEGATIVE FINDING: Condé Nast/Wired has ZERO active copyright litigation against
+      AI companies despite being one of the most-scraped publishers on the internet. As of June
+      2026, Condé Nast has chosen licensing deals with OpenAI (Aug 2024), Amazon, Apple
+      (negotiating), and Perplexity over copyright enforcement.
+      CONTEXT: The AI copyright litigation wave is accelerating rapidly:
+      - NYT sued OpenAI/Microsoft Dec 2023 (trailblazer, now in advanced discovery, 20M chat logs produced)
+      - Alden Global Capital newspapers joined Apr 2024
+      - 16 lawsuits consolidated in SDNY MDL
+      - CNN sued Perplexity AI (2025)
+      - Britannica/Merriam-Webster sued OpenAI (2025)
+      - ~400 local/regional newspapers filed Richner v. Microsoft (SDNY 1:26-cv-05320, June 24, 2026)
+      EVERY major publisher group is either suing or licensing. Condé Nast chose licensing — and
+      conspicuously receives $0 from Meta (the Dec 2025 Meta AI licensing exclusion, documented as
+      severity-5 conflict) while receiving revenue from OpenAI, Amazon, Perplexity, Apple — all
+      Meta's competitors. The non-litigation posture creates a financial incentive alignment with
+      AI companies that also happen to be Meta's competitors.
+    source_urls:
+      - "https://www.pymnts.com/legal/2026/400-newspapers-sue-microsoft-and-openai-alleging-content-theft-for-ai/"
+      - "https://news.bloomberglaw.com/ip-law/openai-microsoft-sued-by-publishers-for-scraping-articles"
+      - "https://www.reuters.com/legal/government/openai-loses-fight-keep-chatgpt-logs-secret-copyright-case-2025-12-03/"
 
 # ===================================================================
 # CONDÉ NAST RESTRUCTURING TIMELINE — updated Jun 2026
