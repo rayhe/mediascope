@@ -3959,3 +3959,35 @@ Plus Brian Kahn's Earther connection (Earther was Gizmodo's climate vertical).
 - Total test files: 20 (was 19)
 - Tests: 518/518 passing (was 495)
 - Device types functional: 30/30 (was 28/30 — analogy_stacking + speculative_framing were dead code)
+
+## 2026-06-26 16:00 PT — Hour Type B: Journalist/Publication Research
+
+**Focus:** Cade Metz career expansion + Jeff Horwitz addition
+
+### Changes
+1. **Cade Metz career expanded (2 → 4 entries):**
+   - Added PC Magazine (1994–2007): researcher → writer → Senior Writer and Editor. ~13-year tenure. First job after Duke BA English 1994. Source: Duke English dept interview, CHM bio, champions-speakers
+   - Added The Register (2007–2011): US Editor, San Francisco bureau chief. Moved to West Coast for this role. Adversarial Wikipedia coverage, appeared in "Truth in Numbers?" documentary. Source: CHM bio, theregister.com archives (last byline Sep 2011)
+   - Fixed Wired start date: 2012-03 → 2011-10 (champions-speakers confirms "In 2011"; Register bylines end Sep 2011)
+   - Enriched NYT entry with SF bureau, wife Taylor, two daughters, Genius Makers publication details, DiD analysis question
+   - Enriched notes with father (IBM engineer, UPC barcode inventor), freelance work (Metro Magazine, Encarta, American Baby), playwright credits
+
+2. **Jeff Horwitz added as journalist #91 (7 career entries):**
+   - Washington City Paper → San Bernardino Sun → Legal Times → American Banker → AP → WSJ → Reuters
+   - Led 2021 Facebook Files investigation (Frances Haugen whistleblower docs)
+   - Won George Polk Award, Gerald Loeb Award (x2), 2026 Pulitzer Prize (with Engen Tham)
+   - Author of "Broken Code" (2023); basis for Aaron Sorkin film "The Social Reckoning"
+   - Rationale: most consequential single Meta investigator. Not at a tracked publication (WSJ/Reuters) but upstream source for derivative coverage across all 5 tracked outlets
+
+### Sources
+- https://english.duke.edu/news/cade-metz-duke-english-alum-technology-correspondent
+- https://computerhistory.org/profile/cade-metz/
+- https://champions-speakers.co.uk/speaker-agent/cade-metz
+- theregister.com/Author/Cade-Metz (archive pages, articles through Sep 2011)
+- https://www.reuters.com/media-center/reuters-enterprise-team-expands-with-hires-of-jeff-horwitz-and-gavin-finch/
+- https://talkingbiznews.com/media-news/reuters-hires-wsjs-horwitz/
+- https://www.pulitzer.org/winners/jeff-horwitz-and-engen-tham-reuters
+- en.wikipedia.org/wiki/Jeff_Horwitz
+
+### Test Results
+516 passed, 2 failed (pre-existing: outsourced_intensity framing device count mismatch from prior iteration, unrelated to this change)

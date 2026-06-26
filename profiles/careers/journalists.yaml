@@ -20,23 +20,60 @@ journalists:
     source_url: https://www.theatlantic.com/author/karen-hao/
     notes: Continued AI ethics/harms focus. Key test case for portable bias — did her adversarial tone carry to a new outlet?
 - name: Cade Metz
-  notes: 'Key migration: Wired → NYT. AI/tech reporter who crossed from Condé Nast to Sulzberger orbit.'
+  notes: 'Key migration: PC Magazine → The Register → Wired → NYT. AI/tech reporter with 30+ years in tech journalism
+    who crossed from Condé Nast to Sulzberger orbit. Duke BA English (1994). Father was IBM engineer who helped develop the
+    Universal Product Code (barcode). Also wrote freelance for Metro Magazine, Companion to Southern Literature, Microsoft
+    Encarta, American Baby; and was a playwright (''The Parlour Game'', ''The Roof''). Author of ''Genius Makers'' (2021,
+    Dutton/Penguin). Controversial NYT piece revealing Scott Alexander''s real identity (Slate Star Codex). KEY for MediaScope:
+    one of the longest continuous careers in tech journalism — his framing evolution across PC Magazine (product reviews) →
+    Register (adversarial British tabloid tech) → Wired (Condé Nast longform) → NYT (institutional prestige) traces the
+    entire arc of how AI coverage went from niche to front-page.'
   career:
+  - publication: pc-magazine
+    event_type: hired
+    role: researcher
+    beat: technology, product reviews
+    start: 1994-07
+    end: 2007-01
+    source_url: https://english.duke.edu/news/cade-metz-duke-english-alum-technology-correspondent
+    notes: 'First job after Duke graduation. Moved to NYC. Started as researcher, became writer after 6 months, promoted to
+      Senior Writer and Editor by 1998. Approximately 13-year tenure. PC Magazine was then one of the world''s largest tech
+      publications. Also did concurrent freelance writing: Metro Magazine, Companion to Southern Literature, Microsoft Encarta
+      encyclopedia, American Baby.'
+  - publication: the-register
+    event_type: hired
+    role: us_editor
+    beat: tech giants, cloud, enterprise
+    start: 2007-01
+    end: 2011-09
+    source_url: https://computerhistory.org/profile/cade-metz/
+    notes: 'US Editor (San Francisco bureau chief) of the British science and technology news site. Moved from NYC to West
+      Coast for this role. Covered Amazon, Google, Facebook, Yahoo. Known for adversarial Wikipedia coverage — appeared in
+      ''Truth in Numbers?'' documentary (2010). Last bylines September 2011. The Register''s tabloid-adversarial house style
+      is a notable framing influence.'
   - publication: wired
     event_type: hired
     role: senior_writer
-    beat: AI, enterprise tech
-    start: 2012-03
+    beat: AI, enterprise tech, bitcoin, cloud
+    start: 2011-10
     end: 2017-09
-    source_url: https://www.wired.com/author/cade-metz/
-    notes: Covered AI, cloud computing, open source. 5+ year tenure at Wired.
+    source_url: https://champions-speakers.co.uk/speaker-agent/cade-metz
+    notes: 'Senior Staff Writer at Condé Nast''s Wired. Covered Google, Facebook, Microsoft, AI, bitcoin, computer chips,
+      programming languages, data centers. Cover stories on Google''s AlphaGo race and Zuckerberg''s disaster response.
+      Appeared on NPR, CNBC, MSNBC. AI beat crystallized here — transitioned from general enterprise tech to AI-focused
+      reporting that would define his NYT tenure.'
   - publication: nytimes
     event_type: hired
     role: correspondent
-    beat: AI, technology
+    beat: AI, emerging technology
     start: 2017-10
-    source_url: https://www.nytimes.com/by/cade-metz
-    notes: AI correspondent. Wrote 'Genius Makers' (2021). Controversial NYT piece on Scott Alexander/Slate Star Codex.
+    source_url: https://computerhistory.org/profile/cade-metz/
+    notes: 'Technology correspondent in San Francisco bureau covering AI, driverless cars, robotics, VR. Author of ''Genius
+      Makers: The Mavericks Who Brought AI to Google, Facebook, and the World'' (2021, Dutton/Penguin). Controversial 2021
+      piece revealing Scott Alexander''s identity (Slate Star Codex blog). Lives across the bay from SF with wife Taylor
+      and two daughters. KEY MIGRATION: Wired → NYT represents Condé Nast → Sulzberger pipeline for AI coverage framing.
+      Question for DiD analysis: did his AI framing shift when he moved from Wired''s tech-enthusiast audience to NYT''s
+      general readership?'
 - name: Will Knight
   notes: 'Key migration: MIT Tech Review → Wired. AI reporter moving within the tech-critical pipeline.'
   career:
@@ -3935,3 +3972,77 @@ journalists:
       Guardian (housing investigator → tech editor) — both prioritize investigative methodology over tech subject-matter
       expertise. Third Guardian-connected Wired hire in 2023-2026 (after Blake Montgomery via Gizmodo + Guardian, and Hugo
       Lowell).'
+- name: Jeff Horwitz
+  notes: 'The most consequential single journalist for Meta coverage. Led the 2021 Facebook Files investigation at WSJ —
+    the largest leak-driven exposé in social media history. Won George Polk Award, Gerald Loeb Award (x2), Pulitzer Prize
+    (2026 with Engen Tham). Author of ''Broken Code: Inside Facebook and the Fight to Expose Its Toxic Secrets'' (2023) —
+    basis for upcoming Aaron Sorkin film ''The Social Reckoning.'' Education: The College Preparatory School (Oakland, 1999),
+    Pomona College (BA), Knight Bagehot fellow at Columbia University. NOT at a tracked publication (WSJ → Reuters), but his
+    reporting is the single largest external source of negative Meta coverage framing across ALL publications. His Facebook
+    Files directly sourced stories at NYT, Guardian, Wired, and Atlantic — making him an upstream influence on all 5 tracked
+    outlets. ANALYTICAL VALUE: Horwitz is the canonical example of how a single investigative reporter can set industry-wide
+    framing. His leaked documents became the raw material for derivative coverage across every tracked publication. Tracking
+    his output allows MediaScope to measure how upstream investigative work propagates into institutional framing.'
+  career:
+  - publication: washington-city-paper
+    event_type: hired
+    role: reporter
+    beat: general
+    start: 2003-01
+    end: 2005-01
+    source_url: https://talkingbiznews.com/media-news/reuters-hires-wsjs-horwitz/
+    notes: Early career. Also freelanced from Rwanda during this period.
+  - publication: san-bernardino-sun
+    event_type: hired
+    role: reporter
+    beat: general
+    start: 2005-01
+    end: 2007-01
+    source_url: https://talkingbiznews.com/media-news/reuters-hires-wsjs-horwitz/
+    notes: Regional newspaper reporting.
+  - publication: legal-times
+    event_type: hired
+    role: reporter
+    beat: legal
+    start: 2007-01
+    end: 2009-01
+    source_url: https://talkingbiznews.com/media-news/reuters-hires-wsjs-horwitz/
+    notes: Legal trade publication. Transitioned to financial/enterprise reporting.
+  - publication: american-banker
+    event_type: hired
+    role: reporter
+    beat: financial services
+    start: 2009-01
+    end: 2011-01
+    source_url: https://talkingbiznews.com/media-news/reuters-hires-wsjs-horwitz/
+    notes: Financial trade press. Built financial reporting expertise before AP.
+  - publication: associated-press
+    event_type: hired
+    role: reporter
+    beat: financial, enterprise
+    start: 2011-01
+    end: 2017-01
+    source_url: https://talkingbiznews.com/media-news/reuters-hires-wsjs-horwitz/
+    notes: 'Financial and enterprise reporter in Washington. Broke stories about Paul Manafort secretly working to advance
+      Russian interests. Wire service experience gave him document-driven investigative methodology.'
+  - publication: wall-street-journal
+    event_type: hired
+    role: investigative_reporter
+    beat: technology, Meta/Facebook
+    start: 2017-01
+    end: 2025-05
+    source_url: https://www.reuters.com/media-center/reuters-enterprise-team-expands-with-hires-of-jeff-horwitz-and-gavin-finch/
+    notes: 'Led the Facebook Files investigation (2021) — exposed how Meta was aware its platforms harmed teenage girls and
+      other users but failed to act. Worked with whistleblower Frances Haugen. Won George Polk Award for Business Reporting
+      and Gerald Loeb Award for Beat Reporting. 2024: shared Loeb Award for ''The Dark Side of Meta''s Algorithms'' (Instagram/
+      Facebook pedophile networks). Author of ''Broken Code'' (2023). Film adaptation ''The Social Reckoning'' by Aaron Sorkin
+      in development.'
+  - publication: reuters
+    event_type: hired
+    role: tech_investigations_reporter
+    beat: technology investigations
+    start: 2025-06
+    source_url: https://www.reuters.com/media-center/reuters-enterprise-team-expands-with-hires-of-jeff-horwitz-and-gavin-finch/
+    notes: 'Joined Reuters Enterprise team as tech investigations reporter. Reports to Steve Stecklow. Won 2026 Pulitzer
+      Prize (with Engen Tham) for reporting on Meta''s Chinese ad agency system and tolerance of policy-violating advertisers.
+      Continues to be the single most impactful investigative reporter covering Meta. Based in San Francisco area.'

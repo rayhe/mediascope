@@ -1046,13 +1046,18 @@ _HYPOCRISY_FRAME_PATTERNS: list[re.Pattern] = [
         re.IGNORECASE | re.DOTALL,
     ),
     # "We do not [policy claim]..." near contradiction evidence
-    # Catches formal policy denial followed by evidence of exactly that behavior
+    # Catches formal policy denial followed by evidence of exactly that behavior.
+    # Uses wider window (400 chars) because policy statements and their
+    # contradictions often span multiple paragraphs in legal/regulatory
+    # articles (e.g., Guardian Wynn-Williams Jun 25, 2026: Meta's 2022
+    # proxy statement "We do not require our personnel..." is several
+    # paragraphs away from the article's evidence of enforcement).
     re.compile(
         r"\b(?:we do not|we don't|we never|the company does not|"
         r"the company doesn't|it does not|it doesn't)\s+"
         r"(?:require|force|mandate|compel|demand|engage in|practice|use|"
         r"employ|conduct|perform|utilize|impose)\b"
-        r".{10,200}?"
+        r".{10,400}?"
         r"\b(?:but|however|yet|despite|although|in fact|actually|"
         r"contradicting|contradict(?:ed|s)|belied? by|"
         r"enforc(?:ed|ing|es)|requir(?:ed|ing|es)|"
@@ -1187,6 +1192,43 @@ _IRONIC_QUOTATION_PATTERNS: list[re.Pattern] = [
         r'".{0,200}?'
         r'\b(?:wrongly|mistakenly|naively|incorrectly) '
         r'(?:believe|assume|suggest|claim|imply|argue)',
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # ---------------------------------------------------------------------------
+    # Ironic attribution verbs: editorial word choices that signal the
+    # journalist considers the quoted statement self-important, inflated,
+    # or performative.  "Touted" means the subject praised it but the
+    # journalist implies skepticism; "boasted" implies bravado the
+    # journalist doesn't share.  These are distinct from neutral attribution
+    # ("said", "stated", "noted") and from loaded language (which
+    # characterizes the subject directly).  The irony is in the verb choice:
+    # the quote is deployed as evidence of the subject's disconnect.
+    #
+    # Identified in Guardian Wynn-Williams (Jun 25, 2026):
+    #   "Facebook's vice president of people touted this policy change as
+    #    'the right thing to do' and 'a pivotal moment for our industry'"
+    #   — "touted" is not neutral attribution; it frames the quote as
+    #   self-congratulatory, setting up the article's later reveal that
+    #   Meta still enforces the 2017 arbitration agreement.
+    # ---------------------------------------------------------------------------
+    # [entity] touted/boasted/trumpeted + quoted text
+    re.compile(
+        r"\b(?:touted|boasted|bragged|trumpeted|proclaimed|heralded|"
+        r"crowed|gushed|enthused|effused|celebrated|hailed|"
+        r"paraded|flaunted|lauded|glorified)\b"
+        r".{0,60}?"
+        r'(?:["\u201c])',
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # [entity] called/described X as + quoted text with ironic framing
+    # Only when the article later undercuts: requires proximity to
+    # "but"/"however"/"yet"/"while" within ~300 chars after the quote
+    re.compile(
+        r"\b(?:touted|boasted|bragged|trumpeted|proclaimed|heralded|"
+        r"crowed|gushed|celebrated|hailed)\s+"
+        r"(?:this|that|the|it|its|his|her|their)?\s*"
+        r"(?:\w+\s+){0,4}"
+        r"(?:as\b)",
         re.IGNORECASE | re.DOTALL,
     ),
 ]
@@ -1773,6 +1815,98 @@ _DEVICE_PATTERNS["sarcastic_correction"] = _SARCASTIC_CORRECTION_PATTERNS
 
 
 # ---------------------------------------------------------------------------
+# Outsourced intensity: editorial technique where the journalist maintains
+# a measured, neutral voice while deploying legal filings, complaints,
+# whistleblower reports, or direct quotes to carry the article's emotional
+# and characterizational weight.  The writer never calls the company
+# "coercive" or its behavior "blatant" — the complaint does.  This creates
+# plausible editorial neutrality while ensuring the reader absorbs
+# maximally negative language.  The technique is structurally distinct from
+# loaded_language (where the journalist's own voice is loaded) and from
+# anonymous_authority (where unnamed sources provide claims, not emotional
+# intensity).
+#
+# Identified as a gap in Guardian Wynn-Williams analysis (Jun 25, 2026):
+#   - "blatant violation of the first amendment" — complaint language
+#   - "coercive surveillance" — complaint language
+#   - "improper and unlawful" — complaint language
+#   The journalist's own prose is neutral: "files complaint", "argues that",
+#   "accuses the company of".  All emotional charge is outsourced.
+# ---------------------------------------------------------------------------
+_OUTSOURCED_INTENSITY_PATTERNS: list[re.Pattern] = [
+    # "the complaint/filing/lawsuit alleges/states [loaded language]"
+    re.compile(
+        r"\b(?:the\s+)?(?:complaint|filing|lawsuit|petition|motion|brief|"
+        r"affidavit|declaration|deposition|testimony|"
+        r"whistleblower\s+(?:complaint|report))\s+"
+        r"(?:also\s+)?(?:alleges?|states?|claims?|asserts?|contends?|"
+        r"charges?|describes?|details?|accuses?|argues?)\b"
+        r".{0,150}?"
+        r"\b(?:blatant|egregious|flagrant|willful|deliberate|systematic|"
+        r"coercive|retaliatory|unlawful|improper|outrageous|unconscionable|"
+        r"malicious|reckless|brazen|predatory|abusive|corrupt|"
+        r"fraudulent|deceptive|oppressive|threatening|intimidating)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "according to the complaint/filing" + loaded language
+    re.compile(
+        r"\baccording to (?:the\s+)?(?:complaint|filing|lawsuit|petition|"
+        r"motion|brief|affidavit|declaration|testimony|"
+        r"whistleblower\s+(?:complaint|report)|"
+        r"court\s+(?:documents?|records?|filings?))\b"
+        r".{0,150}?"
+        r"\b(?:blatant|egregious|flagrant|willful|deliberate|systematic|"
+        r"coercive|retaliatory|unlawful|improper|outrageous|unconscionable|"
+        r"malicious|reckless|brazen|predatory|abusive|corrupt|"
+        r"fraudulent|deceptive|oppressive|threatening|intimidating|"
+        r"silenced?|censorship|violation)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Quoted loaded characterization in legal/complaint context
+    # Pattern: quote containing high-intensity legal language, attributed
+    # to a complaint/filing rather than editorial voice
+    re.compile(
+        r'["\u201c]'
+        r'(?:[^"\u201d]{0,50}?)'
+        r'\b(?:blatant|egregious|flagrant|coercive|retaliatory|unlawful|'
+        r'improper|outrageous|unconscionable|malicious|reckless|brazen|'
+        r'predatory|abusive|corrupt|fraudulent|deceptive|oppressive|'
+        r'intimidating|violation|silencing|censorship|surveillance)\b'
+        r'(?:[^"\u201d]{0,80}?)'
+        r'["\u201d]',
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "she/he alleges [entity] [loaded verb/characterization]"
+    # Individual whistleblower/plaintiff allegations carrying intensity
+    re.compile(
+        r"\b(?:she|he|they|the plaintiff|the complainant|"
+        r"the whistleblower|the former employee)\s+"
+        r"(?:also\s+)?(?:alleges?|claims?|asserts?|contends?|charges?|accuses?)\b"
+        r".{0,120}?"
+        r"\b(?:coercive|retaliatory|unlawful|improper|"
+        r"malicious|reckless|deliberate|systematic|"
+        r"intimidating|threatening|discriminatory|"
+        r"fraudulent|deceptive|oppressive|"
+        r"silenced?|censorship|surveillance|retaliation)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "in the complaint/filing, [entity] is described/characterized as"
+    re.compile(
+        r"\bin (?:the|her|his|their)\s+(?:complaint|filing|lawsuit|petition|"
+        r"testimony|statement|affidavit)\b"
+        r".{0,120}?"
+        r"\b(?:described|characterized|portrayed|depicted|framed|cast|labelled|labeled)\b"
+        r".{0,40}?"
+        r"\b(?:coercive|retaliatory|unlawful|improper|abusive|"
+        r"predatory|oppressive|hostile|toxic)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+
+_DEVICE_PATTERNS["outsourced_intensity"] = _OUTSOURCED_INTENSITY_PATTERNS
+
+
+# ---------------------------------------------------------------------------
 # Kicker framing: editorial technique of ending an article on a discordant
 # negative note — the last paragraph introduces a critical context (workforce
 # turmoil, regulatory threat, ethical concern) that was NOT the article's
@@ -1979,10 +2113,10 @@ def _detect_speculative_framing(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 25 pattern-matched device types plus 3 structural
-    post-pass types (28 total).
+    Scans for 27 pattern-matched device types plus 3 structural
+    post-pass types (30 total).
 
-    Pattern-matched (25): guilt_by_association, anonymous_authority,
+    Pattern-matched (27): guilt_by_association, anonymous_authority,
     catastrophizing, false_balance, selective_omission_signal,
     emotional_appeal, straw_man, loaded_language, refusal_amplification,
     juxtaposition, timeline_implication, power_asymmetry,
@@ -1991,7 +2125,8 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     pressure_language, geopolitical_regulatory_pressure,
     self_referential_investigation, sovereignty_framing,
     scale_magnitude, ceo_personalization, litigation_framing,
-    and corporate_reassurance_undercut, sarcastic_correction.
+    corporate_reassurance_undercut, sarcastic_correction,
+    and outsourced_intensity.
 
     Structural post-pass (3): kicker_framing, analogy_stacking,
     speculative_framing.
