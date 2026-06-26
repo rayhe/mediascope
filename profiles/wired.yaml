@@ -66,7 +66,24 @@ ownership_chain:
       Wired Italy ending, technology division restructured "reflecting the rapid advancement of AI."
       Multiple layoff rounds: 270 jobs (Nov 2023), C-suite cuts (Jan 2025, 14+ executives including 2 CBOs),
       16 unionized employees (Apr 2026). Condé Nast Union (NewsGuild/CWA) active; contentious bargaining sessions.
-    source_url: "https://www.thewrap.com/conde-nast-shuts-down-self-magazine/"
+    commercial_pivot: >
+      STRATEGIC REVENUE SHIFT (Adweek, May 2026): Condé Nast is executing a fundamental pivot away from
+      advertising as a growth engine. CEO Lynch (Oct 2025): advertising is "no longer expected to be a
+      growth engine." Strategy now centers on four non-ad pillars:
+      1. EVENTS: Revenue grew 40% in 2025, projecting +22% in 2026. Marquee franchise growth:
+         Vanity Fair Oscars Party +65% YoY, The New Yorker Festival +86% YoY, Vogue World +48% YoY
+         (heading to Milan for 5th edition). Client event at The Metropolitan Museum of Art (May 2026).
+         CRO Herbst-Brady: events are "a differentiator for us."
+      2. AI LICENSING: Deals with OpenAI (Aug 2024), Amazon Rufus (Jul 2025), Perplexity (2025),
+         Apple Intelligence (in negotiations). Lynch explicitly named these as strategic revenue pillars.
+      3. COMMERCE: $600M in product sales in 2024 via editorial affiliate content.
+      4. SUBSCRIPTIONS: DOGE coverage drove 62,500 new US subs in 2 weeks (Feb 2025).
+      Also: 28 billion video views in 2024 across longform, shortform, and film.
+      CRO Herbst-Brady (Thread Podcast, 2026): "AI didn't kill premium media — it made it more valuable."
+      Herbst-Brady career: Yahoo → Snap → Viacom → Condé Nast (joined Aug 2024).
+    source_urls:
+      - "https://www.adweek.com/how-conde-nast-grew-events-revenue/"
+      - "https://www.thewrap.com/conde-nast-shuts-down-self-magazine/"
 
   - name: "Advance Publications, Inc."
     entity_type: "holding_company"
@@ -143,7 +160,15 @@ advance_investments:
       Came from Bright House Networks merger into Charter (May 2016). A/N initially held 26.3% of
       Charter Holdings partnership; Class B stock provided as-if-converted voting. Stake has diluted
       from 26.3% (2016) to 12.3% (2023) via share repurchases and conversions.
-    current_value_estimate: "~$2.7B at $131.75/share (Jun 23, 2026). Down from $8.7B at 52-week high of $422."
+    deterioration_note: >
+      CHTR is in steep long-term decline: -67.49% over 1 year, -82.03% over 5 years (as of Jun 25, 2026).
+      Stock down from 52-week high of $422.29 to $129.65 — a 69% drop. Wall Street consensus rating is
+      "Reduce" (6 sell, 9 hold, 5 buy out of 20 analysts). Q1 2026 earnings missed: EPS $9.17 vs consensus
+      $10.01 (missed by $0.84), revenue down 1.0% YoY at $13.60B. Charter faces structural headwinds from
+      cord-cutting, fiber overbuilds, and fixed wireless competition. This represents a significant
+      wealth destruction event for Advance: stake worth ~$2.67B now vs ~$8.7B at 52-week high — a ~$6B
+      loss in paper value over 12 months.
+    current_value_estimate: "~$2.67B at $129.65/share (Jun 25, 2026). Down from $8.7B at 52-week high of $422.29."
     competitive_with: []
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
 
@@ -156,11 +181,39 @@ advance_investments:
       Steven A. Miron and Steven O. Newhouse resigned from WBD board March 29, 2024.
       Advance sold 100M shares in June 2024 at $10.97/share, generating $1.1B. Those shares now worth
       ~$2.7B at current price — a $1.6B opportunity cost from premature sale (per Bethel Clarion analysis).
-      Remaining ~98M shares worth ~$2.6B at $26.88/share (Jun 23, 2026).
-      WBD under potential Paramount Skydance acquisition (bids at $19-$30/share range).
-    current_value_estimate: "~$2.6B remaining stake + $1.1B realized = ~$3.7B total"
+      Remaining ~98M shares worth ~$2.65B at $26.98/share (Jun 25, 2026).
+    pending_acquisition: >
+      MAJOR PORTFOLIO REALIZATION EVENT: Paramount Skydance has an all-cash tender offer at $30/share for
+      100% of WBD, including Global Networks segment. Timeline:
+      - Nov 13, 2025: WBD Board initiates Strategic Review of alternatives.
+      - Dec 4, 2025: WBD signs Agreement and Plan of Merger with Netflix ($23.25 cash + ~$4.50 in Netflix
+        stock per share = ~$27.75 total; WBD would separate Streaming & Studios from Global Networks/SpinCo,
+        Netflix acquires the Streaming & Studios side).
+      - Dec 2025 (post-Netflix announcement): Paramount Skydance commences unsolicited all-cash tender offer
+        at $30/share. WBD Board unanimously recommends shareholders REJECT Paramount's offer in favor of Netflix.
+      - Feb 27, 2026: Netflix officially declines to raise its bid and withdraws. WBD Board then deems
+        Paramount's $30/share offer as "superior."
+      - Jun 2026 (early): DOJ approves the Paramount-WBD acquisition.
+      - Jun 24, 2026: Paramount submits formal EU antitrust remedy proposal — divesting Universal Pictures
+        film distribution JV to clear EU concerns. EU Commission preliminary review deadline extended from
+        July 7 to July 21, 2026.
+      - Jun 25, 2026 (current): NY and California state AGs may sue to block the merger (regulatory risk).
+      - Larry Ellison/CNN controversy: WSJ reports Oracle co-founder Larry Ellison privately told Trump that
+        Paramount could "remake" CNN post-acquisition. Paramount denies any CNN editorial commitments.
+        Gerry Cardinale (RedBird Capital, Skydance partner) calls himself a "huge believer" in CNN and
+        praises CEO Mark Thompson.
+      IF PARAMOUNT CLOSES AT $30/SHARE: Advance realizes ~$2.94B from remaining ~98M shares + $1.1B already
+      realized from June 2024 sale = ~$4.04B total from WBD investment. This would be Advance's largest
+      single liquidity event since the Reddit IPO and could significantly alter the family office's capital
+      allocation and media strategy.
+    current_value_estimate: "~$2.65B remaining at market ($26.98) or ~$2.94B at Paramount tender ($30/share) + $1.1B already realized = ~$3.75-4.04B total"
     competitive_with: ["Meta (streaming/content)"]
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse+programming&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
+    source_urls:
+      - "https://www.stocktitan.net/overview/WBD/"
+      - "https://sacnilk.com/news/paramount-set-to-win-warner-bros-discovery"
+      - "https://nypost.com/paramount-denies-larry-ellison-pledged-overhaul-cnn/"
+      - "https://stocktwits.com/paramount-divest-universal-pictures-jv/"
 
   - entity: "Condé Nast"
     stake: "100% subsidiary"
@@ -205,17 +258,24 @@ advance_investments:
     competitive_with: []
 
 # ===================================================================
-# TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (estimated Jun 2026)
+# TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (updated Jun 25, 2026)
 # ===================================================================
-# Reddit (RDDT): ~$7.0B (42.2M shares @ $165.63)
-# Charter (CHTR): ~$2.7B (20.6M shares @ $131.75)
-# WBD remaining: ~$2.6B (98M shares @ $26.88) + $1.1B realized
-# Condé Nast: Private (profitable 2025, 7 marquee brands = 85% of undisclosed rev)
+# Reddit (RDDT): ~$6.66B (42.2M shares @ $157.82, down from $7.0B on Jun 23)
+# Charter (CHTR): ~$2.67B (20.6M shares @ $129.65, STEEP DECLINE: -67% 1yr, -82% 5yr)
+# WBD remaining: ~$2.65B at market ($26.98) or ~$2.94B at Paramount $30 tender + $1.1B realized
+# Condé Nast: Private (profitable 2025, events rev +40%, 7 marquee brands = 85% of undisclosed rev)
 # ACBJ: Private
 # IRONMAN Group: Private
 # Other holdings: Private
-# TOTAL PUBLIC EQUITY: ~$12.3B+ (before private holdings)
+# TOTAL PUBLIC EQUITY: ~$12.0B at market (down from ~$12.3B on Jun 23)
+# TOTAL PUBLIC EQUITY (if Paramount closes at $30): ~$12.3B
 # Donald Newhouse net worth at death: $15.4B (Forbes May 2026)
+#
+# KEY PORTFOLIO SHIFT: Charter's steep decline (~$6B loss in 12 months) and the pending
+# WBD-Paramount liquidity event could significantly alter Advance's capital allocation.
+# If Paramount closes, Advance will have ~$4B+ cash from WBD to redeploy. Meanwhile,
+# Reddit ($6.66B) is now by far the dominant public holding — making the conflict between
+# Advance's Reddit investment and Wired's Meta coverage even more material.
 
 # ===================================================================
 # REVENUE RELATIONSHIPS — Condé Nast AI licensing deals
@@ -264,7 +324,7 @@ revenue_relationships:
       Apple Intelligence archive access negotiations reported 2024-2025. Apple competes with Meta
       in hardware (Vision Pro vs Quest), AI (Apple Intelligence vs Meta AI), and privacy positioning.
       Status unclear — no formal announcement as of Jun 2026. If completed, Condé Nast would have
-      revenue relationships with OpenAI, Amazon, AND Apple — all Meta competitors.
+      revenue relationships with OpenAI, Amazon, Perplexity, AND Apple — all Meta competitors.
     competitive_with: ["Meta"]
     source_url: ""
 
@@ -274,13 +334,38 @@ revenue_relationships:
     date_established: "n/a"
     description: >
       NO revenue relationship exists between Condé Nast and Meta. Meta is the one major tech company
-      NOT paying Condé Nast for content licensing. OpenAI, Amazon, and Apple (in negotiations) all pay.
-      This creates a structural financial incentive for adversarial Meta coverage: companies that pay
-      Condé Nast receive favorable content licensing relationships; the one that doesn't receives
-      coverage from a publication whose parent company's largest single investment ($7B+ Reddit) is
-      a direct Meta competitor. The absence of a Meta deal is the most important single data point
-      in the entire Wired conflict-of-interest analysis.
-    source_url: ""
+      NOT paying Condé Nast for content licensing. OpenAI, Amazon, Perplexity, and Apple (in negotiations)
+      all pay. CRITICAL UPDATE (Dec 5, 2025): Meta entered the AI content licensing market by signing
+      multi-year deals with SEVEN publishers — CNN, Fox News, Fox Sports, Le Monde Group, People Inc.,
+      The Daily Caller, The Washington Examiner, USA Today, and the USA Today Network — to incorporate
+      their content into its Llama LLM and Meta AI chatbot. Condé Nast was EXCLUDED from this round.
+      By Q1 2026, these Meta deals were producing "meaningful" and "notable" revenue for publishers
+      (per USA Today Co. and People Inc. Q1 2026 earnings reports, Digiday May 2026). The exclusion of
+      Condé Nast from Meta's publisher licensing program — while Meta actively pays its competitors —
+      DEEPENS the financial incentive for adversarial coverage: Condé Nast receives $0 from Meta while
+      its competitors receive growing AI licensing revenue from Meta deals.
+    competitive_with: ["Meta"]
+    source_urls:
+      - "https://www.reuters.com/meta-strikes-multiple-ai-deals-news-publishers/"
+      - "https://digiday.com/media/meta-enters-ai-licensing-fray-striking-deals-people-inc-usa-today/"
+      - "https://digiday.com/media/publishers-cautiously-see-ai-licensing-meaningful-revenue/"
+
+  - partner: "Perplexity AI"
+    relationship_type: "licensing"
+    estimated_value: "undisclosed"
+    date_established: "2025 (referenced by CEO Lynch Oct 2025)"
+    description: >
+      Condé Nast CEO Roger Lynch cited Perplexity alongside OpenAI as an AI licensing partner in an
+      October 2025 statement about the company's strategic pivot: "it plans to lean on events,
+      subscriptions, commerce, and licensing deals with AI players including OpenAI and Perplexity"
+      (Adweek, May 2026 article referencing Oct 2025 Lynch comments). Perplexity AI is an AI-powered
+      search engine that competes with Google Search, Meta AI search, and OpenAI's SearchGPT. It is
+      backed by Jeff Bezos and Nvidia, among others. Perplexity's Publishers Program launched mid-2024
+      with revenue-sharing after plagiarism allegations. This adds a FIFTH Meta competitor to Condé
+      Nast's AI licensing portfolio (after OpenAI, Amazon, Apple, and now Perplexity), while Meta
+      remains the sole major tech company with no Condé Nast revenue relationship.
+    competitive_with: ["Meta"]
+    source_url: "https://www.adweek.com/how-conde-nast-grew-events-revenue/"
 
 editorial_leadership:
   - name: "Katie Drummond"
@@ -368,13 +453,35 @@ known_conflicts:
   - type: "revenue"
     description: >
       Condé Nast has multi-year content licensing deals with OpenAI (Aug 2024), Amazon Rufus (Jul 2025),
-      and Apple Intelligence (in negotiations) — all Meta competitors in AI, advertising, or hardware.
-      Meta has NO such deal with Condé Nast. The financial incentive is clear: companies paying Condé
-      Nast get content partnerships; Meta, the only major tech company not paying, gets adversarial
-      coverage from a publication whose parent's $7B Reddit stake directly benefits from Meta's struggles.
+      Perplexity (2025), and Apple Intelligence (in negotiations) — all Meta competitors in AI, advertising,
+      or hardware. Meta has NO such deal with Condé Nast. CRITICAL: In Dec 2025, Meta entered the AI
+      licensing market by signing deals with 7 OTHER publishers (CNN, Fox News, People Inc., USA Today, etc.)
+      but explicitly excluded Condé Nast. By Q1 2026, these Meta deals were producing "meaningful" revenue
+      for participating publishers. The financial incentive structure is now: companies paying Condé Nast
+      for AI licensing (OpenAI, Amazon, Perplexity, Apple) = favorable content partnerships; Meta, the only
+      major tech company not paying Condé Nast = adversarial coverage from a publication whose parent's
+      $6.66B Reddit stake directly benefits from Meta's struggles.
     severity: 5
-    evidence: "Condé Nast press releases, Digiday/Engadget/Adweek reporting, industry sources"
+    evidence: "Condé Nast press releases, Reuters Dec 2025, Digiday Q1 2026 publisher AI revenue reporting"
     source_url: "https://www.condenast.com/news/conde-nast-and-openai-announce-partnership"
+
+  - type: "meta_licensing_exclusion"
+    description: >
+      NEW CONFLICT (Dec 2025): Meta signed AI licensing deals with 7 publishers (CNN, Fox News, Fox Sports,
+      Le Monde, People Inc., Daily Caller, Washington Examiner, USA Today Network) for its Llama LLM and
+      Meta AI chatbot — but Condé Nast was EXCLUDED. This is not just an absence of a deal; it's an active
+      exclusion from a round of deals that included direct Condé Nast competitors (CNN competes with
+      Ars Technica/Wired for tech news, USA Today for general news). The exclusion deepens the structural
+      financial conflict because: (a) Condé Nast's competitors are earning revenue from Meta that Condé
+      Nast is not, (b) this compounds the existing OpenAI/Amazon/Perplexity revenue asymmetry, and
+      (c) it gives Condé Nast/Wired zero financial stake in Meta's AI success while giving them financial
+      stake in every Meta AI competitor's success via licensing revenue. Not a single Condé Nast property
+      has ever disclosed this revenue asymmetry in any Meta coverage.
+    severity: 5
+    evidence: "Reuters Dec 5, 2025; Digiday Dec 5, 2025; Digiday Q1 2026 AI licensing revenue report"
+    source_urls:
+      - "https://www.reuters.com/meta-strikes-multiple-ai-deals-news-publishers/"
+      - "https://digiday.com/media/meta-enters-ai-licensing-fray-striking-deals-people-inc-usa-today/"
 
   - type: "competitive"
     description: >
@@ -397,6 +504,24 @@ known_conflicts:
     severity: 3
     evidence: "Wikipedia, NYT obituary (May 26, 2026), Forbes wealth estimate"
     source_url: "https://en.wikipedia.org/wiki/Donald_Newhouse"
+
+  - type: "portfolio_concentration"
+    description: >
+      NEW STRUCTURAL SHIFT (Jun 2026): As Charter Communications collapses (-67% 1yr, -82% 5yr) and WBD
+      approaches a Paramount Skydance acquisition at $30/share, Reddit is becoming an ever-larger share
+      of Advance's public portfolio. Reddit now represents ~56% of Advance's public equity ($6.66B of
+      ~$12.0B), up from ~40% at time of IPO. If Paramount closes and WBD cash is redeployed, and Charter
+      continues declining, Reddit could represent 65-70%+ of Advance's public portfolio. This
+      CONCENTRATION makes the conflict-of-interest between Reddit (direct Meta competitor) and Wired's
+      Meta coverage even more acute — the Newhouse family's wealth is increasingly tied to Reddit's
+      success, which inversely correlates with Meta's competitive position. No Condé Nast property
+      has ever disclosed that the family controlling Wired derives an increasingly dominant share of
+      its wealth from a direct Meta competitor.
+    severity: 5
+    evidence: "RDDT, CHTR, WBD stock data Jun 25 2026; Paramount tender offer SEC filings"
+    source_urls:
+      - "https://www.marketbeat.com/stocks/NYSE/RDDT/chart/"
+      - "https://www.marketbeat.com/stocks/NASDAQ/CHTR/chart/"
 
 litigation_connections:
   - type: "connected_party"
