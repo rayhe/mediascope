@@ -4,6 +4,78 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-26 12:00 PT — Hour Type C: Ownership & Funding Deep Dive
+
+**Focus:** Wired/Condé Nast/Advance Publications — Turnitin dual-sided AI conflict (NEW severity-5 finding), HawkEye 360 surveillance investment exit, 6 new portfolio entities, Reddit valuation update.
+
+### Major Finding: Turnitin Dual-Sided AI Conflict
+
+**This is the most structurally novel conflict discovered in the MediaScope project to date.** Advance Publications simultaneously profits from BOTH sides of the AI content arms race:
+
+1. **Condé Nast LICENSES content TO AI companies** (OpenAI Aug 2024, Amazon Rufus Jul 2025, Perplexity 2025, Apple Intelligence in negotiations) — generating revenue from AI content generation/training
+2. **Turnitin DETECTS AI-generated content** ($1.75B acquisition Apr 2019, 16K+ institutions, 71M+ students, 1.9B submissions in database) — generating revenue from institutional detection of AI writing
+
+This is an arms-dealer-selling-to-both-sides dynamic: Advance's financial interests are served by BOTH the proliferation of AI writing (drives Condé Nast licensing revenue) AND the institutional panic about AI writing (drives Turnitin subscription revenue). No Condé Nast publication has ever disclosed this dual interest.
+
+The Turnitin entry was previously a 3-line stub:
+```yaml
+entity: "Turnitin"
+stake: "investment (details undisclosed)"
+description: "Internet-based plagiarism detection service."
+```
+
+Now expanded to ~45 lines with full acquisition chain (iParadigms → Warburg Pincus $undisclosed 2008 → GIC/Insight $752M 2014 → Advance $1.75B 2019), scale metrics, AI detection controversy documentation (Stanford ELL bias study, LA Times Jun 21 2026 "Inside College AI Cheating Wars"), and revenue estimates.
+
+### HawkEye 360 Surveillance Investment (exited)
+
+New finding from PitchBook: Advance exited HawkEye 360 via IPO on May 7, 2026. HawkEye 360 is a space-based RF signal intelligence company (satellite constellation for radio frequency surveillance/geolocation). IPO'd at ~$2.4B valuation (NYSE: HAWK). Revenue: $117.6M in 2025 (+74% YoY). Primary customers: NRO, NGA, Space Force (61% of revenue). Added as severity-2 contextual conflict: Condé Nast properties (especially Wired, Ars Technica) cover surveillance/privacy while parent company had financial stake in SIGINT provider.
+
+### 6 New Portfolio Entities Added
+
+1. **POP** — digital marketing agency (100% subsidiary, works with Microsoft, Nike, Target, Toyota)
+2. **PADI** — Professional Association of Diving Instructors (acquired Jan 7, 2025)
+3. **Stage Entertainment** — European theater/live entertainment (100% subsidiary)
+4. **National Sports Forum** — sports events/conferences (acquired Mar 31, 2025)
+5. **Steam Data Suite** — gaming analytics (acquired Mar 15, 2024)
+6. **HawkEye 360** — RF signal intelligence satellites (exited via IPO May 7, 2026)
+
+All sourced from advance.com corporate portfolio page and PitchBook investment records (59 total investments, 14 active portfolio companies, 22 exits).
+
+### Updated Valuations
+- **Reddit (RDDT):** $6.81B at $161.37/share (Jun 26, 2026 market data)
+- **Total public equity:** ~$12.1B (Reddit + Charter + WBD at market)
+- **Total private:** Turnitin (~$1.75B+ est.), Condé Nast, ACBJ, IRONMAN, PADI, POP, Stage, NSF
+- **Portfolio summary** now includes Turnitin valuation line
+
+### Profile Stats
+- `wired.yaml`: 691 → 847 lines (+156 lines, +22.6%)
+- `known_conflicts`: 7 → 9 entries (added `dual_sided_ai_conflict` severity 5, `hawkeye_360_surveillance` severity 2)
+- `advance_investments`: 9 → 15 entities
+
+### Test Results
+- **495 passed** (no change)
+- 19 test files
+- 0 failures
+
+### Commit
+- Hash: 35cb8bd
+
+### Sources
+- EdSurge: https://www.edsurge.com/news/2019-03-06-turnitin-to-be-acquired-by-advance-publications-for-1-75b
+- Turnitin announcement: https://turnitin.com/about/advance-acquires-turnitin
+- Wikipedia (Turnitin): https://en.wikipedia.org/wiki/Turnitin
+- Palo Alto Online (Turnitin AI controversy): https://www.paloaltoonline.com/2025/07/california-colleges-spend-millions-turnitin-ai-faulty-tech/
+- CSHE Berkeley (LA Times AI cheating article): https://cshe.berkeley.edu/la-times-article-trust-colleges-decaying-over-ai-cheating
+- Reuters (OpenAI-Condé Nast deal): https://www.reuters.com/technology/openai-signs-content-deal-with-conde-nast-2024-08-20/
+- Reuters (HawkEye 360 IPO): https://www.reuters.com/hawkeye-360-targets-2-4-billion-valuation-us-ipo/
+- SpaceNews (HawkEye 360 filing): https://spacenews.com/hawkeye-360-files-to-go-public/
+- Washington Technology (HawkEye 360 S-1 financials): https://washingtontechnology.com/hawkeye-360-ipo-s1-details
+- PitchBook (Advance portfolio): https://pitchbook.com/profiles/advance-publications-investments
+- Advance.com (portfolio page): https://advance.com
+- Stocktitan.net (HAWK financials): https://stocktitan.net/HAWK
+
+---
+
 ## 2026-06-26 11:00 PT — Hour Type B: Journalist/Publication Research
 
 **Focus:** 3 new journalist profiles (Erin Griffith, Hugo Lowell, Rosie Swash) + 2 new Wired editorial changes. Guardian → Wired migration pipeline pattern identified.
