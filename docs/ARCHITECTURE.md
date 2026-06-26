@@ -383,9 +383,11 @@ mediascope/
 ├── examples/
 │   ├── quick_start.py
 │   ├── full_pipeline.py
+│   ├── same_event_comparison.py
+│   ├── framing_correction_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # Annotated real-article analyses
-├── tests/                       # 480 tests (all from real articles)
+├── tests/                       # 495 tests (all from real articles)
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
 │   ├── test_careers.py          # Career loading, migration detection, DiD, leadership ITS
@@ -404,6 +406,7 @@ mediascope/
 │   ├── test_source_stance.py    # Source extraction, stance, outsourced intensity, kicker framing
 │   ├── test_topics.py           # Topic classification, all 12 buckets, confidence scoring
 │   ├── test_wynn_williams_fixes.py # Litigation framing, source extraction false positives, power asymmetry
+│   ├── test_sarcastic_correction.py # Sarcastic correction framing: concede-then-retract, standalone sarcasm, false-positive exclusion
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt
