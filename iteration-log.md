@@ -4,6 +4,63 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-26 11:00 PT — Hour Type B: Journalist/Publication Research
+
+**Focus:** 3 new journalist profiles (Erin Griffith, Hugo Lowell, Rosie Swash) + 2 new Wired editorial changes. Guardian → Wired migration pipeline pattern identified.
+
+### New Journalist Profiles
+
+#### 1. Erin Griffith — Fortune → Wired → NYT
+
+- **Career path:** Buyouts magazine (2008, Great Recession financial reporting) → peHub → Adweek → Pando.com → **Fortune** (senior writer 2014-2017, Term Sheet newsletter, Brainstorm Tech conference) → **Wired** (senior writer Sep 2017 – Jul 2018, hired by Nicholas Thompson) → **NYT** (tech reporter Aug 2018 – present, SF bureau, startups/VC)
+- **Wired highlights:** "The Other Tech Bubble" (Dec 2017, widely discussed), "Pro-Gun Russian Bots Flood Twitter After Parkland Shooting" (Feb 2018), crypto/blockchain series, June 2018 AI sex robot feature
+- **DiD value:** Clean 3-publication pipeline across two tracked outlets. Short ~10 month Wired stint under pre-Drummond Thompson era. Finance-native analytical lens (rare among tech reporters). Allows comparison: Fortune (institutional finance voice) vs. Wired (tech-critical under Thompson) vs. NYT (explanatory under Kahn).
+- **Sources:** nytco.com hire announcement, talkingbiznews.com (×2), zinio.com (Wired June 2018 issue bio), shortyawards.com
+
+#### 2. Hugo Lowell — Guardian → Wired (Apr 2026)
+
+- **Career path:** Zetland Capital (PE distressed desk, London) → i newspaper (sports politics/doping 2017-2020, covered 2016 Olympics, 2018 World Cup) → **Guardian** US (freelance congressional correspondent 2021 → senior political correspondent/White House correspondent, Trump/DOJ/Jan 6 beat) → **Wired** (senior correspondent, politics desk, Apr 27 2026)
+- **Born:** March 30, 1999, NYC. Youngest journalist in dataset.
+- **Education:** Dalton School (NYC) + St. Paul's School (London) + BSc Economics & Philosophy, University of Bristol
+- **Awards:** National Press Club Sandy Hume Memorial Award 2022, National Press Foundation Paul Miller Fellow
+- **Key:** ZERO tech journalism background. Pure political investigator. Reports to Leah Feiger. Leads Trump coverage + politics newsletter. Replaces William Turton (departed Feb 2026).
+- **Sources:** Wikipedia, Politicon bio, talkingbiznews.com, citybiz.co
+
+#### 3. Rosie Swash — Guardian → Wired (May 2026)
+
+- **Career path:** Observer (reporter 2007-2009) → **Guardian** (17 years, senior news editor: tech/environment/science/health desks; Afghanistan/Iran/Ukraine conflict reporting) → Mill Media (editor, brief) → **Wired** (Deputy Editor London, May 5 2026)
+- **Awards:** 2024 Amnesty Media Prize for "The Mystery of Bangladesh's Missing Children"
+- **Reports to:** Brian Barrett (exec editor of news). Newly created Deputy Editor London role.
+- **Sources:** talkingbiznews.com
+
+### New Editorial Changes (Wired section)
+
+1. **Hugo Lowell** → `senior_correspondent_politics` (Apr 27, 2026)
+2. **Rosie Swash** → `deputy_editor_london` (May 5, 2026)
+
+### Pattern: Guardian → Wired Migration Pipeline
+
+Key finding from this iteration: Wired is systematically recruiting from the Guardian. 3+ Guardian-connected Wired hires in 2023-2026:
+- **Blake Montgomery** (Gizmodo/Guardian → Wired US tech editor, Sep 2023)
+- **Hugo Lowell** (Guardian → Wired politics desk, Apr 2026)
+- **Rosie Swash** (Guardian → Wired Deputy Editor London, May 2026)
+
+This Guardian → Wired pipeline mirrors the Gizmodo → Wired pipeline already documented (Drummond, Barrett, Marchman, Cameron, Mehrotra, Schiffer-via-Vice). Both Guardian and Gizmodo are adversarial/investigative newsrooms. Wired under Drummond is building editorial capacity by recruiting from accountability-first institutions rather than tech-subject-matter-expert outlets.
+
+### Documentation Updates
+- `EDITORIAL_HISTORIES.md`: journalist count 87 → 90, migration-suitable 84 → 87
+- `README.md`: journalist count 87 → 90, added Griffith + Lowell to migration examples
+
+### Test results
+- **495 passed** (no change from prior iteration)
+- 19 test files
+- 0 failures
+
+### Commit
+- Hash: d37817d
+
+---
+
 ## 2026-06-26 10:00 PT — Hour Type A: Article Deep Dive
 
 **Focus:** Engadget coverage of Wynn-Williams v. Meta lawsuit (June 26, 2026). New framing device: `sarcastic_correction`. Cross-publication comparison with Guardian's June 25 coverage of the same lawsuit.
