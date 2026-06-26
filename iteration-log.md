@@ -4,6 +4,115 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-26 02:00 PT — Hour Type C: Ownership & Funding Deep Dive
+
+**Focus:** Cross-publication AI copyright litigation landscape update — mapping all 5 publications' positions relative to the accelerating litigation wave, with major NYT discovery timeline expansion, 400-newspaper lawsuit integration, and 2 code fixes.
+
+### What was improved:
+
+#### 1. NYT Litigation Discovery Timeline (8 new key_rulings entries):
+
+The prior profile had 4 discovery rulings (Apr-Jun 2025). Expanded to 12 rulings covering the full timeline through Jan 2026:
+
+- **Jul 2025:** NYT and co-plaintiffs moved to compel 120M ChatGPT log sample for analysis of copyrighted content reproduction
+- **Aug 2025:** OpenAI offered reduced 20M sample (0.5% of preserved logs); plaintiffs agreed
+- **Oct 2025:** OpenAI proposed running search terms across sample instead of full production; plaintiffs moved to compel entire sample
+- **Nov 7, 2025:** Magistrate Judge Wang granted motion to compel full 20M log production
+- **Dec 3, 2025:** Wang denied OpenAI's reconsideration motion. Key quote: "multiple layers of protection precisely because of the highly sensitive and private nature of much of the discovery." OpenAI CISO blogged protest.
+- **Jan 2026:** District Judge Stein affirmed both Wang orders. Found Wang "sufficiently considered privacy concerns against the material's relevance." OpenAI stated compliance.
+
+**New consolidated_mdl_status field:** Case is part of 16-lawsuit MDL in SDNY — the largest consolidation of AI copyright cases. NYT is lead plaintiff setting discovery and legal precedent for all cases.
+
+Sources: Reuters (Dec 3, 2025), Bloomberg Law, Law.com, PYMNTS
+
+#### 2. Richner v. Microsoft — 400-Newspaper Lawsuit (NEW entry in NYT, Wired, Guardian):
+
+**Case:** Richner Communications, Inc. v. Microsoft Corp., S.D.N.Y., No. 1:26-cv-05320, filed June 24, 2026.
+
+**Facts:**
+- Nearly 400 local and regional newspapers vs. OpenAI + Microsoft
+- Led by Platkin LLP (former NJ AG Matthew Platkin, founded firm this year)
+- Claims: copyright infringement + DMCA violations
+- Alleges defendants crawled publisher websites, removed copyright management information, reproduced content in AI responses without authorization or compensation
+- Seeks statutory damages + injunctive relief
+- Same SDNY court as NYT case
+- OpenAI response via Drew Pusateri: models "trained on publicly available data, based on fair use"
+
+**Cross-profile integration:**
+- **nytimes.yaml:** Added as `expanding_coalition` litigation entry. Notes that this validates NYT's first-mover strategy.
+- **wired.yaml:** Added as context in new `strategic_non-litigation` entry documenting Condé Nast's absence from ALL copyright suits.
+- **guardian.yaml:** Added as context in new `strategic_licensing_over_litigation` entry.
+- **atlantic.yaml:** Already had reference (added in prior Jun 25 09:00 iteration).
+
+Sources: Bloomberg Law, PYMNTS, Storyboard18
+
+#### 3. Cross-Publication AI Copyright Litigation Landscape (NEW analytical section in nytimes.yaml):
+
+Comprehensive map of all 5 publications' litigation/licensing positions as of June 26, 2026:
+
+**LITIGANTS (1 of 5):**
+- NYT: Lead plaintiff, advanced discovery, 20M chat logs produced, 16-lawsuit MDL
+
+**LICENSORS (4 of 5):**
+- Atlantic: OpenAI licensing (May 2024), deepest OpenAI relationship, ZERO lawsuits
+- Condé Nast/Wired: OpenAI (Aug 2024), Amazon, Perplexity, Apple — ZERO lawsuits, EXCLUDED from Meta's Dec 2025 round
+- Guardian: OpenAI (Feb 2025), ProRata — ZERO lawsuits but co-founded SPUR coalition (third path)
+- MIT Tech Review: No known deals or suits (institutionally constrained)
+
+**Expanding litigation wave timeline:**
+- Dec 2023: NYT sues (1 publisher)
+- Apr 2024: Alden Global Capital joins (8 publishers)
+- 2024-2025: Individual suits accumulate
+- 2025: CNN v Perplexity, Britannica v OpenAI
+- Jun 24, 2026: ~400 local/regional newspapers file (Richner v. Microsoft)
+- Total: 16 consolidated SDNY cases + expanding coalition = 400+ newspaper titles suing
+
+Key insight: Publishers that chose licensing are becoming MORE ISOLATED as the litigation wave grows.
+
+#### 4. Wired Profile — Strategic Non-Litigation + WBD-Paramount Regulatory Update:
+
+**New `strategic_non-litigation` entry:** Documents Condé Nast/Wired's zero copyright litigation against AI companies alongside the full context of Meta's Dec 2025 licensing exclusion (severity-5 conflict) — Condé Nast receives $0 from Meta while receiving revenue from Meta's competitors (OpenAI, Amazon, Perplexity, Apple).
+
+**WBD-Paramount regulatory update (8 new data points):**
+- EU Phase I decision deadline: July 7, 2026 (not July 21 as previously stated)
+- Separate EU Foreign Subsidies Regulation investigation (Saudi PIF, Abu Dhabi, Qatar IA)
+- Cleared in 15+ jurisdictions (South Africa, China, Australia, NZ, Saudi, Ukraine, etc.)
+- Canada: no statutory impediment
+- Deal protections: $0.25/share ticking fee after Sept 30, $7B termination fee
+- Reddit valuation updated: $158.02/share (Jun 26)
+
+Sources: The Wrap, StockTwits, CoinCentral, NYPost, Sacnilk
+
+#### 5. Guardian Profile — Third-Path Analysis:
+
+New `strategic_licensing_over_litigation` entry documenting Guardian's distinct positioning:
+- Not pure litigation (like NYT) nor pure licensing (like Atlantic/Condé Nast)
+- Third path: licensing + SPUR coalition standards + Operation Leaky Bucket enforcement
+- Licensing deals signed 14 months after NYT sued (vs Atlantic's 5 months) — more deliberation
+- SPUR shapes industry-wide standards rather than pursuing bilateral deals only
+
+#### 6. Code Fixes — 2 Pre-Existing Test Failures Resolved:
+
+**Fix 1: healthcare_as_leverage regex (framing.py):**
+- Pattern didn't match "health care coverage contingent on" (word "coverage" between "health care" and "contingent")
+- Added optional `(?:coverage\s+)?` to existing pattern
+- Added separate `(?:coverage|insurance|health\s*care)\s+(?:made\s+)?contingent\s+on` pattern
+- Tests passing: test_healthcare_as_leverage now green
+
+**Fix 2: hypocrisy_frame "the only" regex (framing.py):**
+- Pattern didn't match "the only major developer of AI technology that has not" (prepositional phrase "of AI technology" between entity noun and negation)
+- Added optional `(?:\s+(?:of|in|for|on|behind)\s+\w+(?:\s+\w+){0,4})?` to allow up to 5 additional words in prepositional phrases
+- Tests passing: test_the_only_company_that_has_not now green
+
+**Fix 3: test registry count (test_nyt_ai_reviews.py):**
+- Updated expected pattern count 25→26 (hypocrisy_frame was added but count wasn't updated)
+- Added "hypocrisy_frame" to expected_pattern_types set
+
+### Test results: 480 passed (was 478 passing + 2 failing)
+### Commit: 47faab0 — pushed to GitHub
+### Journalist count: 72 (unchanged)
+### Framing device types: 26 pattern-based + 3 structural = 29 total
+
 ## 2026-06-26 01:00 PT — Hour Type B: Journalist/Publication Research
 
 **Focus:** Two new journalist profiles (Meg Marco, Andrew Couts) + correction of stale reporting-chain references across 5 existing entries.
