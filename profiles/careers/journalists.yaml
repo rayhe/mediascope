@@ -3765,3 +3765,173 @@ journalists:
       tracked in MediaScope. She covers lawsuits filed by publishers who chose NOT to license — while her employer chose
       licensing over litigation. Does her framing favor the licensing path? Does she disclose Condé Nast''s own deals when
       covering AI copyright battles? These questions are testable.'
+- name: Erin Griffith
+  notes: 'KEY MIGRATION: Fortune → Wired → NYT. Clean three-publication pipeline traversing two of MediaScope''s tracked
+    outlets. Short Wired tenure (~10 months under Nicholas Thompson) produced notable pieces including "The Other Tech Bubble"
+    (Dec 2017). Now NYT''s primary startups/VC reporter. Tests portability of editorial framing across institutions with
+    very different ownership structures (Condé Nast → Sulzberger). Earlier career in financial trade press (Buyouts magazine,
+    peHub) gives her a finance-native analytical lens distinct from most tech reporters.'
+  career:
+  - publication: buyouts-magazine
+    event_type: hired
+    role: reporter
+    beat: private equity, leveraged finance
+    start: 2008-01
+    end: 2011-12
+    notes: Business reporter at Buyouts magazine during the Great Recession. Covered unscrupulous financial firms. Early career
+      — pre-dates tech journalism.
+  - publication: pehub
+    event_type: hired
+    role: reporter
+    beat: private equity deals
+    start: 2012-01
+    end: 2012-12
+    source_url: https://www.pehub.com/
+    notes: PE Hub is a private equity industry news site. Early career financial journalism.
+  - publication: adweek
+    event_type: hired
+    role: reporter
+    beat: advertising, media
+    start: 2013-01
+    end: 2013-06
+    notes: Brief stint covering advertising/media business. Transition from financial to media-focused journalism.
+  - publication: pando
+    event_type: hired
+    role: reporter
+    beat: startups, Silicon Valley
+    start: 2013-06
+    end: 2014-06
+    source_url: https://pando.com/
+    notes: Pando Daily — Sarah Lacy's Silicon Valley investigative outlet. First dedicated tech/startup beat. Published reporting
+      on Valley culture and VC.
+  - publication: fortune
+    event_type: hired
+    role: senior_writer
+    beat: startups, venture capital, tech finance
+    start: 2014-06
+    end: 2017-08
+    source_url: https://shortyawards.com/
+    notes: 'Senior writer at Fortune. Edited Term Sheet newsletter (~2016). Co-chaired Fortune Brainstorm Tech conference. Co-wrote
+      2015 cover story on "unicorn" startups. 2016 cover story on driverless cars race (Silicon Valley vs Detroit). Wrote regular
+      "Boom with a View" column. KEY PERIOD: 3+ years producing finance-flavored tech coverage with Fortune''s institutional
+      voice — provides pre-Wired baseline for DiD migration analysis.'
+  - publication: wired
+    event_type: hired
+    role: senior_writer
+    beat: tech companies, tech trends, crypto
+    start: 2017-09
+    end: 2018-07
+    source_url: https://talkingbiznews.com/they-re-hiring/fortunes-griffith-is-joining-wired-magazine/
+    notes: 'Senior writer, started Sep 11, 2017. Hired by Nicholas Thompson (then EIC). Based in Wired''s New York office.
+      KEY PIECES: (1) "The Other Tech Bubble" (Dec 2017) — incisive column on Silicon Valley''s insulation from criticism,
+      widely discussed; (2) "Pro-Gun Russian Bots Flood Twitter After Parkland Shooting" (Feb 2018); (3) crypto/blockchain
+      coverage; (4) AI sex robot feature (Jun 2018 issue). SHORT TENURE (~10 months) but high-impact output. Thompson''s
+      personal recruitment: "Erin is smart, she''s sourced, and she''s a terrific writer." ANALYTICAL VALUE: Her Wired stint
+      is under Thompson (pre-Drummond era) — tests whether the institutional voice shaped her output differently than Fortune
+      or NYT.'
+  - publication: nytimes
+    event_type: hired
+    role: technology_reporter
+    beat: startups, venture capital, Silicon Valley
+    start: 2018-08
+    source_url: https://nytco.com/press/erin-griffith-joins-the-new-york-times/
+    notes: 'Covers startups and venture capital from NYT''s San Francisco bureau. Hired by tech editor Pui-Wing Tam and business
+      editor Ellen Pollock. KEY COVERAGE: AI startup economics ("one-person billion-dollar company" Feb 2025), Silicon Valley
+      GPU arms race, startup ecosystem shifts. Guest on Hard Fork podcast. Active as of 2026. ANALYTICAL VALUE: Post-Wired
+      career allows comparison of her coverage framing at Fortune (finance-native) vs. Wired (tech-critical under Thompson)
+      vs. NYT (institutional/explanatory under Kahn). Clean three-outlet migration for DiD.'
+- name: Hugo Lowell
+  notes: 'GUARDIAN → WIRED MIGRATION (2026): Pure political journalist with zero tech reporting background joining Wired''s
+    politics desk. Born 1999, one of the youngest journalists in the dataset. His hire signals Wired''s evolution from tech
+    magazine with politics coverage into a politics-and-tech hybrid publication. No prior tech journalism experience — his
+    entire career is political investigations and sports doping.'
+  career:
+  - publication: zetland-capital
+    event_type: other
+    role: analyst
+    beat: distressed debt, special situations
+    start: 2017-01
+    end: 2018-12
+    source_url: https://politicon.com/speaker/hugo-lowell/
+    notes: Pre-journalism career at Zetland Capital, a London-based private equity firm (£2bn AUM). Worked on distressed desk
+      and special situations desk. Finance background — unusual for a political journalist.
+  - publication: i-newspaper
+    event_type: hired
+    role: reporter
+    beat: sports politics, doping
+    start: 2017-01
+    end: 2020-12
+    source_url: https://en.wikipedia.org/wiki/Hugo_Lowell
+    notes: 'Sports politics and doping reporter for the i newspaper (London). Covered 2016 Olympics in Rio, 2018 FIFA World
+      Cup in Moscow, IAAF World Athletics Championships in London. Finalist at British Sports Journalism Awards. Overlapped
+      with Zetland Capital — may have been freelance initially.'
+  - publication: guardian
+    event_type: hired
+    role: senior_political_correspondent
+    beat: Trump, DOJ, January 6, White House
+    start: 2021-01
+    end: 2026-04
+    source_url: https://en.wikipedia.org/wiki/Hugo_Lowell
+    notes: 'Joined Guardian US as freelance congressional correspondent (2021), promoted to senior political correspondent
+      and White House correspondent. Led coverage of Trump criminal trials, Jack Smith investigations, Jan 6 select committee.
+      Broke stories on Mark Meadows advising Trump to declare national security emergency, Trump directing officials to ignore
+      congressional subpoenas, PowerPoint presentation. Won National Press Club Sandy Hume Memorial Award 2022. National
+      Press Foundation Paul Miller Fellow. Regular on MSNBC, CNN, BBC News, PBS NewsHour. DC-based.'
+  - publication: wired
+    event_type: hired
+    role: senior_correspondent
+    beat: Trump, White House, Washington politics
+    start: 2026-04
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-lowell-as-senior-correspondent/
+    notes: 'Senior correspondent on politics desk. Reports to Leah Feiger (Director, Politics & Science). Leads Trump/White
+      House coverage and takes over Wired politics newsletter. Replaces William Turton (departed Feb 2026 for ProPublica).
+      DC-based. ANALYTICAL VALUE: Pure Guardian → Wired pipeline. Zero tech journalism background — his entire career is
+      political investigation and sports doping. Tests whether Wired''s politics desk operates as a standalone political
+      newsroom rather than tech-inflected political coverage. His Guardian DNA + Feiger''s Vice DNA + Marchman''s Deadspin/Vice
+      DNA = three non-tech editorial lineages converging on Wired''s politics desk.'
+- name: Rosie Swash
+  notes: 'GUARDIAN → WIRED MIGRATION (2026): 17-year Guardian veteran hired as Deputy Editor in London — a newly created role
+    rebuilding Wired UK editorial after print cancellation and staff departures. Her appointment signals Wired UK reconstruction
+    with Guardian-trained investigative leadership rather than tech-native journalists.'
+  career:
+  - publication: observer
+    event_type: hired
+    role: reporter
+    beat: general assignment
+    start: 2007-01
+    end: 2009-12
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-swash-as-deputy-editor-in-london/
+    notes: Started career at The Observer (Guardian's Sunday sister paper). Early career.
+  - publication: guardian
+    event_type: hired
+    role: senior_news_editor
+    beat: technology, environment, science, health, investigations
+    start: 2009-01
+    end: 2025-12
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-swash-as-deputy-editor-in-london/
+    notes: '17-year tenure at the Guardian, progressing from reporter to senior news editor. Led coverage across technology,
+      environment, science, and health desks. Reported from Afghanistan, Iran, and Ukraine for the Guardian''s award-winning
+      ''Rights and Freedoms'' series. Led ''The Mystery of Bangladesh''s Missing Children'' investigation — won 2024 Amnesty
+      Media Prize for "excellence in human rights reporting." LONG TENURE gives her deep institutional Guardian DNA.'
+  - publication: mill-media
+    event_type: hired
+    role: editor
+    beat: local news
+    start: 2026-01
+    end: 2026-04
+    notes: Brief stint as editor at Mill Media, an award-winning subscription news platform focused on high-quality local coverage.
+      Transition role between Guardian and Wired.
+  - publication: wired
+    event_type: hired
+    role: deputy_editor
+    beat: UK editorial oversight, breaking news
+    start: 2026-05
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-swash-as-deputy-editor-in-london/
+    notes: 'Deputy Editor in London — a newly created role. Reports to Brian Barrett (exec editor of news). Works closely with
+      London staff + new general assignment staff writer (TBD hire). Responsibilities: UK time zone breaking news coverage
+      and elevating Wired''s editorial presence in the region. Started May 5, 2026. ANALYTICAL VALUE: Guardian → Wired
+      pipeline. Her 17-year Guardian investigative DNA (conflict reporting, human rights investigations, multi-desk editorial
+      leadership) shapes Wired UK''s editorial direction post-print-cancellation. Mirrors the Robert Booth appointment at
+      Guardian (housing investigator → tech editor) — both prioritize investigative methodology over tech subject-matter
+      expertise. Third Guardian-connected Wired hire in 2023-2026 (after Blake Montgomery via Gizmodo + Guardian, and Hugo
+      Lowell).'
