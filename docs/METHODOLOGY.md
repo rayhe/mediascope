@@ -443,11 +443,72 @@ When evaluating articles from target publications, MediaScope applies a quality 
 
 ---
 
-## 13. Causal Identification Through Journalist Migration Analysis
+## 13. Cross-Publication Same-Event Comparison
+
+### 13.1 The Method
+
+The most powerful evidence for editorial framing bias comes from comparing how different publications cover **the same event on the same day**. When two journalists attend the same press conference, read the same press release, or report on the same court filing, the raw facts are held constant — any difference in tone, framing device density, source selection, or structural choices is attributable to editorial DNA rather than event severity.
+
+This is the media analysis equivalent of a controlled experiment: the "treatment" is the publication's editorial culture and financial incentive structure, and the "outcome" is the framing of identical facts.
+
+### 13.2 Comparison Dimensions
+
+For each same-event pair, MediaScope compares:
+
+| Dimension | What to Measure | Why It Matters |
+|---|---|---|
+| **Word count** | Total article length | Editorial investment — longer = more resources allocated |
+| **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
+| **Framing device count** | Total devices from the 28-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
+| **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
+| **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
+| **Outsourced intensity** | Editorial prose intensity vs quoted intensity (§7) | Who carries the emotional weight — journalist or sources |
+| **Structural choices** | Headline framing, kicker, paragraph ordering | How information is architecturally arranged |
+
+### 13.3 Wire-Service Baseline
+
+Wire services (Reuters, AP) serve as the analytical baseline. Their editorial mandate is factual neutrality — no commentary, minimal framing, rapid dissemination. When a wire service and a magazine cover the same event:
+
+- **Wire-service tone ≈ event severity.** If Reuters scores an event at −0.15, that's approximately the "neutral" reading of the facts.
+- **Magazine tone − wire-service tone ≈ editorial framing contribution.** If Wired scores the same event at −0.65, the −0.50 gap is attributable to editorial choices, not the facts themselves.
+- **Framing device differential.** Reuters typically deploys 0-1 framing devices on a given story. If Wired deploys 7+ on the same story, those 6+ additional devices are editorial signal.
+
+### 13.4 Validated Examples
+
+MediaScope's sample output gallery includes three same-event comparisons that demonstrate the method:
+
+| Event | Publications | Tone Gap | Framing Gap | Key Finding |
+|---|---|---|---|---|
+| MCI data exposure (Jun 22, 2026) | Wired (−0.60) vs Reuters (−0.10) | −0.50 | 7 vs 1 | Wired: vindication narrative, CEO personalization, kicker framing. Reuters: factual, one mild corporate reassurance undercut. Same facts, radically different framing density. |
+| Meta glasses launch (Jun 23, 2026) | Wired (−0.15) vs Gizmodo (+0.10) | −0.25 | 10 vs 0 | Wired: surveillance-consumer juxtaposition, self-referential investigation ×2, kicker framing (unrelated morale crisis). Gizmodo: neutral product-first structure, privacy raised as business question not moral failing. Same press event, same Bosworth Q&A. |
+| Meta "Arena" prediction markets (Jun 23, 2026) | Reuters (+0.05) vs Engadget (−0.70) | −0.75 | — | Same-day scoop: Reuters treated as neutral business news, Engadget deployed heavy adversarial framing. Demonstrates how publication DNA transforms identical news items. |
+
+### 13.5 Analytical Value
+
+Same-event comparisons are more persuasive than aggregate asymmetry scores because they control for the most important confound: **event severity**. A critic can always argue that a publication's negative aggregate tone reflects genuine corporate wrongdoing. But when two publications cover the identical event with a 0.50-point tone gap and a 6x framing device differential, the editorial framing contribution is directly observable.
+
+These comparisons also reveal **publication-specific framing fingerprints**. Wired's characteristic patterns include:
+- Self-referential investigation (citing its own prior exposés as evidence)
+- Kicker framing (ending product reviews with unrelated workforce morale crises)
+- Surveillance-consumer juxtaposition (linking consumer products to military applications)
+
+These patterns are invisible in aggregate scores but become unmistakable in side-by-side comparison.
+
+### 13.6 Limitations
+
+- **Selection bias in article pairs.** Not every event gets covered by multiple publications, and the events that do (major launches, scandals) may not be representative.
+- **Genre differences.** Wire services write breaking news; magazines write features. Some framing differences reflect genre conventions, not editorial bias.
+- **Timing.** Same-day coverage may differ because one outlet had more time (later publication) or more access (exclusive sources).
+- **Byline variation.** Different journalists within the same publication may cover the same event differently. The comparison measures publication-level editorial culture but may conflate it with individual journalist style.
+
+---
+
+## 14. Causal Identification Through Journalist Migration Analysis
 
 *This section documents MediaScope's novel methodological contribution. For the full treatment, see [EDITORIAL_HISTORIES.md](EDITORIAL_HISTORIES.md).*
 
-### 13.1 The Problem of Causal Attribution
+### 14.1 The Problem of Causal Attribution
 
 Standard sentiment asymmetry analysis (§§1-3) measures *that* coverage is asymmetric, but cannot identify *why*. An asymmetry score tells us Wired covers Meta 0.28 points more negatively than peers — it cannot distinguish:
 
@@ -457,7 +518,7 @@ Standard sentiment asymmetry analysis (§§1-3) measures *that* coverage is asym
 
 MediaScope's Editorial Histories module provides causal identification by exploiting journalist migrations as natural experiments.
 
-### 13.2 Difference-in-Differences (DiD) Framework
+### 14.2 Difference-in-Differences (DiD) Framework
 
 We adapt the canonical DiD estimator from labor economics (Card & Krueger, 1994):
 
@@ -482,7 +543,7 @@ Y_ij = β₀ + β₁·Treatment_i + β₂·Post_j + β₃·(Treatment_i × Post_
 
 **Standard errors** are computed from the OLS DiD regression with Huber-White robust variance estimation.
 
-### 13.3 Portable Bias Score
+### 14.3 Portable Bias Score
 
 For journalists who have worked at ≥2 tracked publications, we measure how much of their coverage tone is *portable* (carried from outlet to outlet) versus *adaptive* (shaped by each outlet's culture):
 
@@ -498,7 +559,7 @@ Portable_Bias = 1 − |Cohen's d(tone_pub_A, tone_pub_B)| / 2
 
 Example: If Kara Swisher's average tone toward Meta is −0.45 at Recode, −0.42 at NYT, and −0.40 at WSJ, while the publication baselines are −0.10, −0.15, and +0.05 respectively, her portable bias score would be high (she carries her stance everywhere).
 
-### 13.4 Bias Decomposition (Two-Way ANOVA)
+### 14.4 Bias Decomposition (Two-Way ANOVA)
 
 For journalists with multi-publication coverage, total tone variance is decomposed:
 
@@ -515,7 +576,7 @@ Where:
 - SS_journalist_deviation = Σ nⱼ × (journalist_mean_at_j − publication_baseline_j)²
 - SS_residual = SS_total − SS_pub − SS_journalist
 
-### 13.5 Interrupted Time-Series for Leadership Changes
+### 14.5 Interrupted Time-Series for Leadership Changes
 
 Editorial leadership changes (new EIC, managing editor) are analysed with segmented regression:
 
@@ -530,7 +591,7 @@ Y_t = β₀ + β₁·T + β₂·D_t + β₃·(D_t × T_post) + ε_t
 | **β₃** | **Change in monthly trend under new leadership** |
 | β₁ + β₃ | Post-change monthly trend |
 
-### 13.6 Academic Novelty
+### 14.6 Academic Novelty
 
 To our knowledge, **no prior work applies difference-in-differences methodology to journalist-level editorial migration data** to decompose media bias into institutional and individual components. The closest related literature:
 
@@ -541,7 +602,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 | Puglisi & Snyder (2011) | Studied partisan coverage of political scandals | We exploit personnel changes as natural experiments |
 | Card & Krueger (1994) | Established DiD for minimum wage/employment | We adapt their framework from labor economics to media analysis |
 
-### 13.7 Additional References
+### 14.7 Additional References
 
 9. Card, D. & Krueger, A.B. (1994). "Minimum Wages and Employment: A Case Study of the Fast-Food Industry in New Jersey and Pennsylvania." *American Economic Review*, 84(4), 772-793.
 10. Groseclose, T. & Milyo, J. (2005). "A Measure of Media Bias." *Quarterly Journal of Economics*, 120(4), 1191-1237.

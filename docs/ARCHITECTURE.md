@@ -379,13 +379,14 @@ mediascope/
 │   ├── full_pipeline.py
 │   ├── agent_integration.py
 │   └── sample_output/       # Annotated real-article analyses
-├── tests/                       # 429 tests (all from real articles)
+├── tests/                       # 464 tests (all from real articles)
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
 │   ├── test_careers.py          # Career loading, migration detection, DiD, leadership ITS
 │   ├── test_citations.py       # Citation extraction, source grading, domain classification
 │   ├── test_claims.py          # Claim-to-source mapping, statistic/quote detection
 │   ├── test_entities.py        # Entity detection, regex, false-positive exclusion
+│   ├── test_glasses_deep_dive.py # Glasses launch fixes: kicker framing, product-name stop-filter, emotional_appeal exclusion
 │   ├── test_loaded_language_uproar.py # Loaded language detection, workplace coercion terms
 │   ├── test_nyt_ai_reviews.py   # Isolation framing, pressure language, VADER correction
 │   ├── test_nyt_article_improvements.py  # NYT-specific: agency, coercion, juxtaposition
@@ -395,6 +396,7 @@ mediascope/
 │   ├── test_sentiment.py        # 8-dim scoring, framing correction, self-referential detection
 │   ├── test_source_stance.py    # Source extraction, stance, outsourced intensity, kicker framing
 │   ├── test_topics.py           # Topic classification, all 12 buckets, confidence scoring
+│   ├── test_wynn_williams_fixes.py # Litigation framing, source extraction false positives, power asymmetry
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt
