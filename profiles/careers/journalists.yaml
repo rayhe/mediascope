@@ -1881,7 +1881,8 @@ journalists:
     start: 2023-11
     source_url: https://talkingbiznews.com/they-re-hiring/wired-is-launching-a-political-coverage-team/
     notes: 'First day Nov 13, 2023. First-ever Wired politics editor. Hired as part of Drummond''s new 3-reporter, 2-editor
-      politics team (alongside William Turton from Bloomberg, David Gilbert). Reports into Meg Marco (exec editor of news).
+      politics team (alongside William Turton from Bloomberg, David Gilbert). Initially reported to Meg Marco (exec editor
+      of news, Mar-Dec 2023); after Marco''s departure, reports to Brian Barrett (exec editor of news, Jan 2024-present).
       Subsequently promoted to ''Director of Politics & Science'' (title per Nieman Lab 2026 KQED announcement) / ''Director,
       Science, Politics, and Security'' (per TBN job listing). Hosts WIRED Politics Lab podcast. Co-hosts Uncanny Valley podcast
       news segments with Brian Barrett and Zoë Schiffer. 252+ articles as of Muck Rack. Led DOGE coverage that drove 62,500
@@ -2279,7 +2280,8 @@ journalists:
     end: 2026-02
     source_url: https://talkingbiznews.com/they-re-hiring/wired-is-launching-a-political-coverage-team/
     notes: 'DRUMMOND HIRE #2: Part of Drummond''s 3-person politics team launch. First day Nov 6, 2023 (one week before Feiger).
-      Assignment: intersection of digital ecosystems and political campaigns. Reports to Meg Marco (exec editor of news).
+      Assignment: intersection of digital ecosystems and political campaigns. Initially reported to Meg Marco (exec editor
+      of news); after Marco''s departure (Dec 2023), reported to Brian Barrett.
       Major stories: Charlie Kirk''s plans to discredit MLK Jr. and the Civil Rights Act; shadowy company registering thousands
       of fake businesses across America. DOGE coverage contributed to Wired''s 62,500 new US subs in 2 weeks (Feb 2025). Left
       for ProPublica after ~2.3 years — first departure from Drummond''s politics team.'
@@ -2339,8 +2341,8 @@ journalists:
     beat: disinformation, online extremism, election manipulation
     start: 2023-09
     source_url: https://talkingbiznews.com/media-news/wired-hires-gilbert-to-cover-extremism-and-disinformation/
-    notes: 'First of three Drummond politics team hires. TBN reported Sep 29, 2023: ''starts Monday.'' Reports to Meg Marco
-      (exec editor of news). Beat: online extremism and disinformation spreading on social media platforms. Based in Ireland
+    notes: 'First of three Drummond politics team hires. TBN reported Sep 29, 2023: ''starts Monday.'' Initially reported to
+      Meg Marco (exec editor of news, Mar-Dec 2023); after Marco''s departure, reports to Brian Barrett (Jan 2024-present). Beat: online extremism and disinformation spreading on social media platforms. Based in Ireland
       — reports on American politics remotely, giving him an outsider''s analytical distance that he describes as both an
       advantage and challenge (Coffee with a Journalist podcast, Mar 2025). Major stories include far-right influencer power
       analysis, Elon Musk/Tommy Robinson connection. Signal contact: @DavidGilbert.01. Education: University College Cork
@@ -3475,3 +3477,174 @@ journalists:
       Editor: Connor Ennis ("Sapna is an editor''s dream"). Critical for meta-analysis: as NYT''s TikTok reporter,
       her framing of TikTok vs Meta coverage provides natural experiment for platform-level bias detection.
       Appeared in Netflix documentary "White Hot: The Rise & Fall of Abercrombie & Fitch" (2022).'
+- name: Meg Marco
+  notes: 'KEY EDITORIAL GATEKEEPER (DEPARTED): Wired''s first executive editor of news under Drummond (Mar-Dec 2023, ~9 months).
+    Career arc: Consumerist (Gawker Media → Consumer Reports) → WSJ → Axios → ProPublica → Observer → Wired → Harvard Berkman
+    Klein Center. NOT a reporter — an editorial operations/strategy/product person with a consumer advocacy and audience strategy
+    background. Her Gawker Media connection (Consumerist) links her to the adversarial media ecosystem. Founded WSJ Media
+    Science Lab (AI/ML in the newsroom). Pulitzer finalist 2021 (ProPublica, Public Interest). Author of "Field Guide to
+    the Apocalypse" (Simon & Schuster). Her very brief Wired tenure (~9 months) is analytically significant — she was hired
+    by Drummond as the first exec editor of news, set up the politics team reporting structure (Feiger, Turton, Gilbert all
+    reported to her), but departed almost immediately after those hires were made. Replaced by Brian Barrett (Jan 16, 2024).
+    Currently at Harvard''s Applied Social Media Lab, Berkman Klein Center + ASML. Awards: Consumer Education Leadership
+    Award (National Consumers League + United Church of Christ), 2015 Journalist of the Year (Consumer Federation of California).
+    Bluesky: @meghann.bsky.social.'
+  career:
+  - publication: consumerist
+    event_type: hired
+    role: editor_head_of_product
+    beat: consumer advocacy, consumer rights
+    start: 2008-01
+    end: 2015-12
+    source_url: https://talkingbiznews.com/they-re-hiring/axios-hires-wsjs-marco-as-deep-dive-editor/
+    notes: 'Editor and head of product at Consumerist, originally a Gawker Media property later acquired by Consumer Reports.
+      Dual editorial/product role — unusual for a journalist, more typical of digital media. At Consumer Reports, also served
+      on team that designed new membership platform and co-created The Digital Standard, an open-source framework for evaluating
+      privacy, security, and quality of digital products. GAWKER CONNECTION: Consumerist was part of Gawker Media, the same
+      ecosystem that produced Gizmodo (where Drummond, Barrett, Marchman, Couts, and multiple Wired hires worked). Consumer
+      advocacy → adversarial journalism pipeline.'
+  - publication: wall-street-journal
+    event_type: hired
+    role: masthead_editor
+    beat: digital content strategy
+    start: 2016-01
+    end: 2018-10
+    source_url: https://talkingbiznews.com/they-re-hiring/axios-hires-wsjs-marco-as-deep-dive-editor/
+    notes: 'Masthead editor overseeing digital content strategy. Key achievements: (1) Multi-platform expansion of "Future
+      of Everything" franchise, (2) Digital launch of weekend section Exchange, (3) Founded and staffed WSJ Media Science Lab
+      — a center for AI and machine learning experimentation within the newsroom, (4) Team relaunched 30+ newsletters. The
+      Media Science Lab is notable — she was building AI/ML tools for journalism years before it became mainstream. Dow Jones/News
+      Corp ownership.'
+  - publication: axios
+    event_type: hired
+    role: deep_dive_editor
+    beat: longform newsletters
+    start: 2018-11
+    end: 2019-06
+    source_url: https://talkingbiznews.com/they-re-hiring/axios-hires-wsjs-marco-as-deep-dive-editor/
+    notes: 'Led Axios'' expansion into longform with its biweekly Deep Dive newsletter, applying Axios'' "Smart Brevity"
+      methodology to deeper analysis. Brief tenure (~8 months). Axios owned by Cox Enterprises (since 2022 acquisition).'
+  - publication: propublica
+    event_type: hired
+    role: senior_editor
+    beat: audience strategy, newsletters, COVID-19 coverage
+    start: 2019-07
+    end: 2021-06
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-marco-as-executive-editor-of-news/
+    notes: 'Senior editor managing audience strategy, social media, and editorial newsletters. Co-editor of ProPublica''s
+      coronavirus coverage that was a finalist for the 2021 Pulitzer Prize for Public Interest. ProPublica is a nonprofit
+      investigative newsroom — exposure to public-interest, accountability-driven journalism culture. The Pulitzer finalist
+      credential strengthened her subsequent hiring appeal.'
+  - publication: observer
+    event_type: hired
+    role: eic
+    beat: overall editorial direction
+    start: 2021-07
+    end: 2023-02
+    notes: 'Editor-in-chief of the Observer (observer.com) for ~2 years. During her tenure, wrote articles critical of Facebook/Meta
+      (e.g., "Instagram research is serious; Facebook''s response is insufficient" and "Facebook ''Has Known This Forever''").
+      The Observer is a center-right publication owned by Jared Kushner''s brother-in-law — unusual institutional home for
+      someone with Gawker Media/ProPublica background.'
+  - publication: wired
+    event_type: hired
+    role: executive_editor_news
+    beat: news operations, politics team, editorial management
+    start: 2023-03
+    end: 2023-12
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-marco-as-executive-editor-of-news/
+    notes: 'BRIEF BUT PIVOTAL TENURE: Executive editor of news for ~9 months. Hired by Katie Drummond as first exec editor
+      of news in Drummond era. Key structural achievement: oversaw launch of Wired''s first-ever politics team (Nov 2023) —
+      Feiger, Turton, and Gilbert all reported to her. Announced: "I''m proud of the all the amazing work we accomplished
+      in what felt like an instant." Departure so soon after politics team launch raises questions about editorial alignment
+      or strategic disagreement. Replaced by Brian Barrett (Jan 16, 2024, returning from Gizmodo). ANALYTICAL VALUE: Her
+      departure means the politics team she built was immediately handed to Barrett, whose Gizmodo adversarial DNA aligned
+      more closely with Drummond''s editorial vision. The Marco → Barrett succession may represent a course correction —
+      from audience/strategy leadership to adversarial-journalism-native leadership.'
+  - publication: harvard-berkman-klein
+    event_type: hired
+    role: researcher
+    beat: applied social media, AI policy
+    start: 2024-01
+    notes: 'Currently at Applied Social Media Lab, Berkman Klein Center at Harvard. Also associated with ASML. Post-Wired
+      pivot to academic/research role. Bluesky bio: "Previously: ProPublica, WSJ, WIRED, Consumerist (RIP)." Self-description:
+      "I compulsively take pictures of signs and post really good news articles."'
+- name: Andrew Couts
+  notes: 'KEY EDITORIAL GATEKEEPER: Director, Security & Investigations at Wired (promoted from Senior Editor). Oversees
+    cybersecurity, privacy, surveillance, policing, crime, and national security coverage PLUS all investigations across
+    Wired''s entire newsroom. Career arc: The Week → Digital Trends → Daily Dot (politics editor) → Gizmodo (executive editor,
+    4+ years) → Wired (2022-present). Based in New York. The GIZMODO → WIRED pipeline is central to his profile — he was
+    executive editor at Gizmodo from Dec 2017 to Mar 2022, overlapping with the post-Drummond Gizmodo era (Drummond left
+    Gizmodo EIC role in Apr 2017, but the adversarial culture she helped build persisted). His security desk manages Andy
+    Greenberg, Lily Hay Newman, Dell Cameron, Dhruv Mehrotra, and Matt Burgess (UK). Awards with teams: 2024 Sigma Award,
+    2023 Philip Meyer Journalism Award, 2022 Edward R. Murrow Award. Hosts Wired''s "Incognito Mode" video series. Appears
+    on "Uncanny Valley" podcast. Title upgraded from Senior Editor to Director circa 2025-2026, paralleling other Director
+    promotions under Drummond (Feiger, Calore, Marchman). His dual role — security desk lead AND newsroom-wide investigations
+    overseer — makes him one of the most editorially powerful figures at Wired after Drummond and Barrett. ANALYTICAL VALUE:
+    The Daily Dot connection is significant — William Turton also started at the Daily Dot (2014-2016) when Couts was politics
+    editor there (2014-2017). Couts may have been Turton''s editor, creating a mentorship lineage that feeds into the Drummond
+    orbit. His investigations oversight means any cross-desk investigative story (including Meta coverage) passes through
+    his editorial judgment.'
+  career:
+  - publication: the-week
+    event_type: hired
+    role: associate_editor
+    beat: general news
+    start: 2009-11
+    end: 2010-11
+    source_url: https://theorg.com/org/wired/org-chart/andrew-couts
+    notes: 'Associate editor at The Week magazine. ~1 year tenure. The Week is owned by Future plc (UK-based media company).
+      Earliest career position identified.'
+  - publication: digital-trends
+    event_type: hired
+    role: features_editor
+    beat: technology
+    start: 2011-01
+    end: 2014-03
+    source_url: https://theorg.com/org/wired/org-chart/andrew-couts
+    notes: 'Features editor at DigitalTrends.com. ~3 year tenure. Consumer tech/features role. Digital Trends is independently
+      owned — not part of any tracked publication ecosystem.'
+  - publication: the-daily-dot
+    event_type: hired
+    role: politics_editor
+    beat: politics, technology, cybersecurity
+    start: 2014-04
+    end: 2017-12
+    source_url: https://theorg.com/org/wired/org-chart/andrew-couts
+    notes: 'Politics editor. ~3.5 year tenure covering intersection of technology, politics, and cybersecurity. KEY CONNECTION:
+      William Turton (later Drummond''s politics team at Wired) was a staff reporter at the Daily Dot from Jun 2014 to Apr
+      2016 — overlapping with Couts''s entire Daily Dot tenure. Couts as politics editor would have edited or supervised
+      Turton''s work, including the Lizard Squad cybersecurity scoops that launched Turton''s career. This creates a mentor-protégé
+      lineage: Couts (Daily Dot) → Turton (Daily Dot → Gizmodo → Wired via Drummond).'
+  - publication: gizmodo
+    event_type: hired
+    role: executive_editor
+    beat: technology, investigations, news operations
+    start: 2017-12
+    end: 2022-03
+    source_url: https://theorg.com/org/wired/org-chart/andrew-couts
+    notes: 'Executive editor of Gizmodo.com for ~4.3 years. This is his longest and most formative career stint. Gizmodo
+      under G/O Media (post-Gawker bankruptcy). Drummond had left Gizmodo EIC in Apr 2017 — Couts arrived 8 months later,
+      inheriting the adversarial editorial culture she helped establish. Tim Marchman (now Wired Director of Science, Politics,
+      Security) was Special Projects Editor at Gizmodo from Jan 2018 to Jun 2019 — they overlapped for ~18 months. Dell
+      Cameron and Dhruv Mehrotra (both now on his Wired security desk) also worked at Gizmodo during his tenure. The Gizmodo
+      executive editorship creates a network of professional relationships that later reassembled at Wired under Drummond.
+      Part of team that won 2022 Edward R. Murrow Award for Investigative Reporting ("Prediction: Bias" — police crime-prediction
+      software investigation with Dell Cameron).'
+  - publication: wired
+    event_type: hired
+    role: senior_editor
+    beat: security, investigations
+    start: 2022-04
+    source_url: https://muckrack.com/andrew-couts/articles
+    notes: 'Initially hired as Senior Editor, Security & Investigations before Drummond arrived (Drummond started Aug 2023).
+      Oversees cybersecurity, privacy, surveillance, policing, crime, national security coverage. Also oversees investigations
+      across Wired''s entire newsroom — the only editor with cross-desk investigative authority besides Drummond and Barrett.
+      Security desk reporters: Andy Greenberg, Lily Hay Newman, Dell Cameron, Dhruv Mehrotra (returned May 2026), Matt Burgess
+      (UK). Title upgraded to "Director, Security & Investigations" by 2025-2026 (confirmed via obstracts.com Apr 2026 masthead).
+      Hosts "Incognito Mode" Wired video series (e.g., "Does Airport Security Even Work?" with Lily Hay Newman). Appears
+      on "Uncanny Valley" podcast news segments. Part of teams winning 2024 Sigma Award, 2023 Philip Meyer Journalism Award.
+      ANALYTICAL VALUE: Couts is the editorial gatekeeper for all security/privacy coverage AND all cross-desk investigations.
+      Any investigative story about Meta''s data practices, surveillance tools, or facial recognition technology passes through
+      his editorial judgment. His Gizmodo adversarial DNA, combined with his investigations authority, makes him a key vector
+      for adversarial framing at Wired — not through his own writing, but through his editorial choices about which investigations
+      to pursue, how to frame them, and what evidence standard to apply.'

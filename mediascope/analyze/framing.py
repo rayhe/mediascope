@@ -207,6 +207,23 @@ _EMOTIONAL_APPEAL_PATTERNS: list[re.Pattern] = [
         r"threatened (?:her|him|them|with) (?:bankruptcy|ruin))\b",
         re.IGNORECASE,
     ),
+    # Medical/health duress — editorial deployment of health emergencies,
+    # life-threatening conditions, or medical vulnerability as leverage
+    # context to amplify power asymmetry.  Common in whistleblower coverage
+    # where employers are framed as exploiting employees' medical situations
+    # (e.g., "life-threatening health condition during childbirth" in the
+    # Guardian's Wynn-Williams coverage, implying Meta used healthcare
+    # dependency as severance leverage).
+    re.compile(
+        r"\b(?:life.?threatening\s+(?:health\s+)?(?:condition|illness|complication|emergency|diagnosis)|"
+        r"medical\s+(?:emergency|crisis|condition|complication)|"
+        r"(?:hospitalized|hospitalised)\s+(?:during|after|following|for)|"
+        r"during\s+childbirth|complications?\s+(?:during|from)\s+(?:child)?birth|"
+        r"(?:denied|withheld|conditional)\s+(?:health\s*care|medical|insurance|coverage)|"
+        r"health\s*care\s+(?:as\s+)?(?:leverage|contingent|conditional|hostage)|"
+        r"dependent\s+on\s+(?:employer|company|corporate)\s+(?:health|medical|insurance))\b",
+        re.IGNORECASE,
+    ),
     # Workplace collective despair — mass dissatisfaction + helplessness
     # language deployed to evoke sympathy for employees against institution.
     # Common in tech workplace reporting (e.g., Wired "Dark Mood Inside Meta").
@@ -954,6 +971,90 @@ _RHETORICAL_QUESTION_PATTERNS: list[re.Pattern] = [
 ]
 
 _DEVICE_PATTERNS["rhetorical_question"] = _RHETORICAL_QUESTION_PATTERNS
+
+
+# --- Hypocrisy frame / stated-vs-actual contradiction ---
+# Detects editorial juxtaposition of an entity's stated position, policy,
+# or public commitment against its actual behavior, creating an ironic
+# contrast that implies dishonesty or self-contradiction.  Distinct from
+# `corporate_reassurance_undercut` (which catches PR damage control language
+# being structurally undermined) and `timeline_implication` (which catches
+# temporal sequencing that implies cover-ups).  The hypocrisy frame specifically
+# catches the "say one thing, do another" construction where both the stated
+# and actual positions are explicitly present in the text.
+#
+# Identified as a gap in:
+# - NYT voluntary review (Jun 23): "actively sought to position itself as a
+#   responsible AI leader... Yet it has not agreed to the pre-release review"
+# - Guardian Wynn-Williams (Jun 25): "We do not require our personnel to enter
+#   into employment agreements that include non-disparagement clauses" vs.
+#   Meta enforcing exactly such a clause from a 2017 agreement
+# - Guardian Wynn-Williams (Jun 25): Facebook VP calling end of forced
+#   arbitration "the right thing to do" while still enforcing the 2017 deal
+_HYPOCRISY_FRAME_PATTERNS: list[re.Pattern] = [
+    # "positioned/presented/portrayed itself as X... yet/but/however Y"
+    re.compile(
+        r"\b(?:position(?:ed|ing|s)?|present(?:ed|ing|s)?|portray(?:ed|ing|s)?|"
+        r"brand(?:ed|ing|s)?|market(?:ed|ing|s)?|promot(?:ed|ing|es)?|"
+        r"tout(?:ed|ing|s)?|champion(?:ed|ing|s)?|advocat(?:ed|ing|es)?)\s+"
+        r"(?:itself|himself|herself|themselves|the company|the organization)\s+"
+        r"(?:as\s+)?.{5,100}?"
+        r"(?:yet|but|however|even as|while|despite|although|nonetheless|nevertheless|"
+        r"at the same time|in contrast|ironically|paradoxically)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "publicly said/stated/claimed X... privately/internally/in practice Y"
+    re.compile(
+        r"\b(?:publicly|officially|openly|formally)\s+"
+        r"(?:said|stated|claimed|declared|promised|pledged|committed|vowed|insisted)\b"
+        r".{10,150}?"
+        r"\b(?:privately|internally|in practice|in reality|behind the scenes|"
+        r"behind closed doors|in fact|actually|meanwhile)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "We do not [policy claim]..." near contradiction evidence
+    # Catches formal policy denial followed by evidence of exactly that behavior
+    re.compile(
+        r"\b(?:we do not|we don't|we never|the company does not|"
+        r"the company doesn't|it does not|it doesn't)\s+"
+        r"(?:require|force|mandate|compel|demand|engage in|practice|use|"
+        r"employ|conduct|perform|utilize|impose)\b"
+        r".{10,200}?"
+        r"\b(?:but|however|yet|despite|although|in fact|actually|"
+        r"contradicting|contradict(?:ed|s)|belied? by|"
+        r"enforc(?:ed|ing|es)|requir(?:ed|ing|es)|"
+        r"was (?:doing|requiring|enforcing|demanding)|"
+        r"had been (?:doing|requiring|enforcing))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "the right thing to do" / "pivotal moment" / progressive language
+    # near evidence of the opposite behavior — catches ironic self-congratulation
+    re.compile(
+        r"\b(?:the right thing (?:to do)?|a pivotal moment|"
+        r"historic step|important step|"
+        r"leading (?:the way|by example)|"
+        r"set(?:ting)? (?:the|an?) (?:standard|example|precedent)|"
+        r"commitment to|dedicated to|committed to)\b"
+        r".{10,200}?"
+        r"\b(?:but|however|yet|despite|ironically|paradoxically|"
+        r"while (?:still|simultaneously|continuing|also)|"
+        r"even as|at the same time|"
+        r"continued to|continues to|still (?:enforces?|requires?|demands?|uses?))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "the only [entity] that has not" — isolation/holdout as implicit hypocrisy
+    # when preceded by cooperative framing for peers
+    re.compile(
+        r"\b(?:the only|the sole|the last)\s+(?:major|significant|large|big|prominent)?\s*"
+        r"(?:company|developer|firm|organization|publisher|platform|player|entity|tech giant)\s+"
+        r"(?:that |which |to )?"
+        r"(?:has not|have not|hasn't|haven't|did not|didn't|refused to|"
+        r"declined to|failed to|has yet to|have yet to)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["hypocrisy_frame"] = _HYPOCRISY_FRAME_PATTERNS
 
 
 # --- Analogy stacking ---

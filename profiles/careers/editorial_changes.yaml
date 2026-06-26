@@ -37,14 +37,28 @@ editorial_changes:
       62,500 new US subs in 2 weeks (Feb 2025). Won Sidney Hillman Prize. Launched ''Story Zero'' newsroom ethos. Reports
       to Anna Wintour. Freedom of the Press Foundation board (2024). This is the most important leadership change for detecting
       Wired''s adversarial editorial shift — her entire career (Gizmodo → Vice → Wired) is an adversarial-journalism pipeline.'
+  - position: senior_editor_security_investigations
+    outgoing: null
+    incoming: Andrew Couts
+    date: 2022-04
+    source_url: https://theorg.com/org/wired/org-chart/andrew-couts
+    notes: 'FOUNDATIONAL HIRE: Couts joined as Senior Editor, Security & Investigations ~18 months before Drummond arrived.
+      Previously executive editor at Gizmodo (4+ years), politics editor at The Daily Dot (3.5 years). Oversees cybersecurity,
+      privacy, surveillance, policing, crime, and national security — PLUS all cross-desk investigations. His security desk
+      manages Andy Greenberg, Lily Hay Newman, Dell Cameron, Dhruv Mehrotra, Matt Burgess (UK). His Gizmodo executive
+      editorship overlapped with Tim Marchman, Dell Cameron, and Dhruv Mehrotra — all of whom he would later work with again
+      at Wired. The Daily Dot overlap with William Turton creates a mentor-protégé lineage. Title upgraded to "Director,
+      Security & Investigations" by 2025-2026, paralleling other Director promotions under Drummond. Awards with teams:
+      2024 Sigma Award, 2023 Philip Meyer Journalism Award, 2022 Edward R. Murrow Award.'
   - position: politics_editor
     outgoing: null
     incoming: Leah Feiger
     date: 2023-11
     source_url: https://talkingbiznews.com/they-re-hiring/wired-is-launching-a-political-coverage-team/
     notes: 'KEY STRUCTURAL CHANGE: First-ever Wired politics editor. Feiger hired from Vice News (where she overlapped with
-      Drummond). Team also included William Turton (Bloomberg, cybersecurity) and David Gilbert (online extremism). Reports
-      to Meg Marco (exec editor of news). Promoted to ''Director of Politics & Science'' by 2025-2026. Feiger on Drummond:
+      Drummond). Team also included William Turton (Bloomberg, cybersecurity) and David Gilbert (online extremism). Initially
+      reported to Meg Marco (exec editor of news, Mar-Dec 2023); after Marco''s rapid departure, reports to Brian Barrett
+      (exec editor of news, Jan 2024-present). Promoted to ''Director of Politics & Science'' by 2025-2026. Feiger on Drummond:
       ''I cannot state enough how farsighted Katie Drummond was.'' This hire represents Wired''s institutional pivot from
       tech-centric publication to tech-politics hybrid.'
   - position: politics_team_writer
@@ -66,14 +80,39 @@ editorial_changes:
       alongside Barrett's executive editor hire.
   - position: executive_editor_news
     outgoing: null
+    incoming: Meg Marco
+    date: 2023-03
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-marco-as-executive-editor-of-news/
+    notes: 'KEY HIRE: Drummond''s first executive editor of news. Marco came from Observer (EIC, 2 years) and before that
+      ProPublica (senior editor, Pulitzer finalist 2021 for COVID coverage), WSJ (masthead editor, founded Media Science Lab),
+      Axios (Deep Dive editor), Consumerist (Gawker Media → Consumer Reports). Consumer advocacy and audience strategy background
+      — not a traditional newsroom operator. Her Gawker Media connection (Consumerist) links her to the adversarial media
+      ecosystem that later populated Wired''s senior ranks. Oversaw launch of politics team (Feiger, Turton, Gilbert).'
+  - position: executive_editor_news
+    outgoing: Meg Marco
+    incoming: null
+    date: 2023-12
+    source_url: https://talkingbiznews.com/media-news/executive-editor-marco-is-leaving-wired/
+    notes: 'RAPID DEPARTURE: Marco left after only ~9 months. "I''m proud of the all the amazing work we accomplished in
+      what felt like an instant, and can''t thank everyone enough." Departed to Harvard Berkman Klein Center (Applied Social
+      Media Lab). Her departure so soon after launching the politics team raises questions: editorial alignment issues,
+      strategic disagreement with Drummond, or planned short-term engagement? The politics team she built was immediately
+      handed to Barrett (a more adversarial-journalism-native leader). SUCCESSION: Brian Barrett rehired as executive editor
+      of news Jan 16, 2024 — Barrett''s Gizmodo adversarial DNA aligned more closely with Drummond''s editorial vision than
+      Marco''s audience-strategy background.'
+  - position: executive_editor_news
+    outgoing: Meg Marco
     incoming: Brian Barrett
     date: '2024-01-16'
     source_url: https://talkingbiznews.com/they-re-hiring/wired-names-barrett-its-executive-editor/
-    notes: 'KEY STRUCTURAL HIRE: Barrett returned to Wired as executive editor of news after ~8 years first stint (2014-2022)
-      and interim at Gizmodo. Recruited by Drummond to oversee US and UK news teams. Drummond''s announcement: ''his humor,
-      compassionate leadership style, general appreciation of weirdness, and proven track record writing and editing stories
-      that are smart, thoughtful, and often painfully clever, make him the perfect person for this role.'' Same announcement
-      promoted Michael Calore to Director, Consumer Tech & Culture.'
+    notes: 'KEY STRUCTURAL HIRE: Barrett returned to Wired as executive editor of news, REPLACING Meg Marco who departed
+      after only ~9 months. Barrett had a prior ~8 year stint at Wired (2014-2022) and was EIC of Gizmodo before/after.
+      Recruited by Drummond to oversee US and UK news teams. Drummond''s announcement: ''his humor, compassionate leadership
+      style, general appreciation of weirdness, and proven track record writing and editing stories that are smart, thoughtful,
+      and often painfully clever, make him the perfect person for this role.'' Same announcement promoted Michael Calore to
+      Director, Consumer Tech & Culture. MARCO → BARRETT SUCCESSION: The transition from an audience-strategy-focused exec
+      editor (Marco: ProPublica/WSJ/Axios) to an adversarial-journalism-native exec editor (Barrett: Gizmodo EIC) represents
+      a course correction — Drummond chose editorial-DNA alignment over operational expertise.'
   - position: senior_writer_china
     outgoing: null
     incoming: Zeyi Yang

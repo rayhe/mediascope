@@ -688,6 +688,19 @@ def _measure_headline_alignment(headline: str, body: str) -> float:
             "under fire", "under siege", "under scrutiny",
             "backlash", "controversy", "scandal",
             "pauses", "paused", "halts", "halted", "suspends",
+            # Government pressure / regulatory compliance language —
+            # editorially negative headlines where "presses", "demands",
+            # "concerns rise" are adversarial despite VADER scoring them
+            # as neutral/positive.  Detected in NYT voluntary review
+            # (Jun 23): "U.S. Presses Meta" scored +0.60 by VADER.
+            "presses", "pressed", "pressing",
+            "demands", "demanded",
+            "concerns rise", "concerns mount", "concerns grow",
+            "raises concerns", "raises questions",
+            "warns", "warned", "warning",
+            "threatens", "threatened",
+            "holdout", "lone holdout",
+            "only company", "the only",
         ]
         signal_count = sum(
             1 for sig in _HEADLINE_NEGATIVE_SIGNALS
@@ -787,6 +800,13 @@ _ADVERSARIAL_DEVICE_TYPES: set[str] = {
     # overall positive content.  Critical for product reviews that end
     # on workforce morale or privacy concerns.
     "kicker_framing",
+    # Hypocrisy frame juxtaposes an entity's stated position, policy,
+    # or public commitment against its actual behavior, creating ironic
+    # self-contradiction.  Detected in Guardian Wynn-Williams (Jun 25):
+    # "We do not require non-disparagement clauses" vs enforcing one;
+    # and NYT voluntary review (Jun 23): "positioned itself as responsible"
+    # yet being the only holdout.
+    "hypocrisy_frame",
 }
 
 # Anchor device types that create negative reader takeaway even when

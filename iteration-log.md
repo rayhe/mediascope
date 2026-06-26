@@ -4,6 +4,195 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-26 01:00 PT — Hour Type B: Journalist/Publication Research
+
+**Focus:** Two new journalist profiles (Meg Marco, Andrew Couts) + correction of stale reporting-chain references across 5 existing entries.
+
+**Infrastructure note:** exec and browser_search had ~70% failure rate (session disappearances). Git commit/push deferred to next stable session. All changes written via edit tool and verified by reading file contents.
+
+### What was improved:
+
+#### 1. NEW Profile: Meg Marco (71st journalist tracked)
+
+**Career arc:** Consumerist (Gawker Media → Consumer Reports) → WSJ (masthead editor, founded Media Science Lab for AI/ML) → Axios (Deep Dive editor) → ProPublica (senior editor, Pulitzer finalist 2021 Public Interest) → Observer (EIC, ~2 years) → **Wired** (executive editor of news, Mar-Dec 2023, ~9 months) → Harvard Berkman Klein Center (current)
+
+**Key finding — rapid departure:** Marco was Drummond's FIRST executive editor of news. She set up the politics team reporting structure (Feiger, Turton, Gilbert all reported to her) but left after only ~9 months — almost immediately after those Nov 2023 hires. Replaced by Brian Barrett (Jan 16, 2024).
+
+**Analytical significance:**
+- The Marco → Barrett succession represents a **course correction** from audience-strategy leadership (Marco: ProPublica/WSJ/Axios background) to adversarial-journalism-native leadership (Barrett: Gizmodo EIC). Drummond chose editorial-DNA alignment over operational expertise.
+- Her Gawker Media connection (Consumerist) links her to the adversarial ecosystem, but her actual career is in editorial operations/product/audience strategy — distinct from the reporter/editor adversarial pipeline.
+- Her Observer EIC tenure is an unusual institutional choice for someone with Gawker/ProPublica background — Observer is center-right (Kushner family ownership).
+- The "felt like an instant" departure language and subsequent move to Harvard's Berkman Klein Center suggests either planned short-term engagement or editorial alignment issues.
+
+**Sources:** TalkingBizNews (3 articles: hire Mar 2023, departure Dec 2023, Axios hire Nov 2018), Muck Rack, BuzzSumo, Bluesky profile (@meghann.bsky.social).
+
+#### 2. NEW Profile: Andrew Couts (72nd journalist tracked)
+
+**Career arc:** The Week (associate editor) → Digital Trends (features editor) → **Daily Dot** (politics editor, 2014-2017) → **Gizmodo** (executive editor, Dec 2017 - Mar 2022) → **Wired** (Senior Editor → **Director**, Security & Investigations, Apr 2022 - present)
+
+**Key findings:**
+1. **Title upgraded:** Now "Director, Security & Investigations" (confirmed via obstracts.com Apr 2026 masthead) — paralleling other Drummond-era Director promotions (Feiger, Calore, Marchman).
+2. **Dual authority:** Oversees security desk (Greenberg, Newman, Cameron, Mehrotra, Burgess) AND all cross-desk investigations — the only editor besides Drummond/Barrett with newsroom-wide investigative oversight.
+3. **Daily Dot → Turton connection:** Couts was politics editor at the Daily Dot (2014-2017) when William Turton was a staff reporter there (2014-2016). This creates a **mentor-protégé lineage** that later feeds into the Drummond orbit at Wired.
+4. **Gizmodo network hub:** His 4+ year Gizmodo executive editorship overlapped with Tim Marchman (special projects, 2018-2019), Dell Cameron, and Dhruv Mehrotra — all of whom he would later work with again at Wired. The Gizmodo newsroom was a **talent incubator** that reassembled at Wired.
+
+**Awards:** Part of teams winning 2024 Sigma Award, 2023 Philip Meyer Journalism Award, 2022 Edward R. Murrow Award (Prediction: Bias, with Dell Cameron).
+
+**Sources:** TheOrg.com org chart, Muck Rack, Intelligent Relations profile, obstracts.com masthead data (Apr 2026), Wired YouTube/podcast credits.
+
+#### 3. CORRECTIONS: Stale Reporting-Chain References (5 entries updated)
+
+Fixed 5 entries across `journalists.yaml` and `editorial_changes.yaml` that incorrectly stated reporters "report to Meg Marco (exec editor of news)" — Marco departed Dec 2023 and was replaced by Brian Barrett Jan 2024:
+
+**journalists.yaml corrections:**
+- Leah Feiger (Wired politics editor): "Reports into Meg Marco" → "Initially reported to Meg Marco (Mar-Dec 2023); after Marco's departure, reports to Brian Barrett (Jan 2024-present)"
+- William Turton (Wired senior writer): Same correction
+- David Gilbert (Wired reporter): Same correction
+
+**editorial_changes.yaml corrections:**
+- Feiger politics_editor entry: Updated reporting chain
+- Barrett executive_editor_news entry: Changed `outgoing: null` → `outgoing: Meg Marco` with succession analysis
+
+#### 4. NEW editorial_changes.yaml entries (3 added)
+
+- Meg Marco hired as executive_editor_news (Mar 2023)
+- Meg Marco departed as executive_editor_news (Dec 2023) — with succession analysis
+- Andrew Couts hired as senior_editor_security_investigations (Apr 2022) — with network analysis
+
+### Journalist count: 72 (was 70)
+
+### Updated Wired editorial org chart (Drummond era, as of Jun 2026):
+
+```
+Katie Drummond (Global Editorial Director, Aug 2023-)
+├── Brian Barrett (Executive Editor of News, Jan 2024-)
+│   ├── Leah Feiger (Director, Politics & Science)
+│   │   ├── Makena Kelly (senior writer)
+│   │   └── David Gilbert (reporter)
+│   ├── Tim Marchman (Director, Science, Politics & Security)
+│   │   ├── Brian Kahn (senior editor, science)
+│   │   └── Molly Taft (senior writer, climate)
+│   └── Andrew Couts (Director, Security & Investigations) ← NEW PROFILE
+│       ├── Andy Greenberg (senior writer, security)
+│       ├── Lily Hay Newman (senior writer, security)
+│       ├── Dell Cameron (senior writer, national security)
+│       ├── Dhruv Mehrotra (senior writer, investigative data)
+│       └── Matt Burgess (senior writer, security, UK)
+├── Michael Calore (Director, Consumer Tech & Culture)
+│   ├── Lauren Goode (senior writer, consumer tech)
+│   └── Miles Klee (senior writer, internet culture)
+├── Zoë Schiffer (senior writer / business editor)
+│   └── Sophie Kleeman (senior editor, business)
+├── Will Knight (senior writer, AI)
+├── Paresh Dave (staff writer, AI/Big Tech)
+├── Vittoria Elliott (senior writer, platforms & power)
+├── Joel Khalili (reporter, crypto/fintech, UK)
+├── Emily Mullin (staff writer, biotech)
+└── Steven Levy (editor at large)
+    [Former: Meg Marco (exec editor of news, Mar-Dec 2023) ← NEW PROFILE]
+    [Former: William Turton (senior writer, Nov 2023 - Feb 2026 → ProPublica)]
+    [Former: Amanda Hoover (staff writer, Nov 2022 - Feb 2025 → BI)]
+    [Former: Zeyi Yang from MIT TR (Jan 2025)]
+```
+
+### Remaining gaps for future iterations:
+1. **Caroline Haskins** — business reporter at Wired covering war/defense contractors, surveillance industry, corporate accountability. Mentioned in obstracts.com alongside Couts. Former Business Insider, BuzzFeed News, Vice Motherboard. Not yet tracked.
+2. **Maxwell Zeff** — Wired AI reporter (dispatches from the world of AI). Not yet tracked.
+3. **Ali Winston** — Wired reporter on DHS/immigration enforcement investigations. Not yet tracked.
+4. **Michael Calore** — Director, Consumer Tech & Culture. Tracked in editorial_changes but not as a journalist profile.
+
+### Commit/Push: BLOCKED
+- exec infrastructure too unstable for git operations (~70% failure rate on session creation)
+- All changes written to journalists.yaml (2 new profiles + 3 corrections), editorial_changes.yaml (3 new entries + 2 corrections)
+- Unpushed changes accumulating from multiple iterations
+
+---
+
+## 2026-06-26 00:00 PT — Hour Type A: Article Deep Dive (Code Improvement Focus)
+
+**Focus:** Cross-article gap analysis + 3 code improvements: new `hypocrisy_frame` framing device, medical/health duress `emotional_appeal` expansion, and headline negative signal expansion.
+
+**Infrastructure note:** exec, browser_search, and browser_open were intermittently/fully down throughout this iteration (~95% failure rate on session creation). Could not fetch new articles from the web, run tests, or git commit/push. All changes verified by manual code review against existing article texts.
+
+### What was improved:
+
+#### 1. NEW Framing Device: `hypocrisy_frame` (mediascope/analyze/framing.py)
+
+Added a new framing device type detecting **stated-vs-actual contradictions** — where an entity's public position, policy statement, or commitment is editorially juxtaposed against their actual behavior. This was identified as a recurring gap across multiple articles:
+
+- **Guardian Wynn-Williams (Jun 25):** Meta's 2022 proxy statement "We do not require our personnel to enter into employment agreements that include non-disparagement clauses" vs. enforcing exactly that from a 2017 agreement.
+- **Guardian Wynn-Williams (Jun 25):** Facebook VP calling end of forced arbitration "the right thing to do" / "a pivotal moment for our industry" while still enforcing the 2017 arbitration deal.
+- **NYT voluntary review (Jun 23):** "actively sought to position itself as a responsible AI leader... Yet it has not agreed to the pre-release review process that its peers have accepted."
+
+**5 detection patterns:**
+1. `positioned/presented/branded itself as X... yet/but/however Y` — self-identification contradicted
+2. `publicly said/stated X... privately/internally Y` — public-private divergence
+3. `we do not require/force... but/however enforced/required` — formal policy denial contradicted by evidence
+4. `the right thing to do... while still enforcing/continuing` — ironic self-congratulation
+5. `the only major company that has not` — isolation-as-hypocrisy (holdout framing)
+
+**Added to `_ADVERSARIAL_DEVICE_TYPES`** in sentiment.py — hypocrisy framing is inherently adversarial and should trigger framing correction.
+
+#### 2. Medical/Health Duress Emotional Appeal (mediascope/analyze/framing.py)
+
+Added new pattern to `_EMOTIONAL_APPEAL_PATTERNS` for medical emergency language used as sympathy/leverage framing. Gap identified in Guardian Wynn-Williams (Jun 25) where "life-threatening health condition during childbirth" was not detected.
+
+**Pattern covers:**
+- `life-threatening health/condition/illness/complication/emergency/diagnosis`
+- `medical emergency/crisis/condition/complication`
+- `hospitalized during/after/following`
+- `during childbirth`, `complications during/from birth`
+- `denied/withheld/conditional healthcare/medical/insurance/coverage`
+- `healthcare as leverage/contingent/conditional/hostage`
+- `dependent on employer/company/corporate health/medical/insurance`
+
+**Distinct from existing patterns:** The existing vulnerability/accessibility pattern handles chronic conditions (disability, depression, elderly). This new pattern handles acute medical emergencies deployed as editorial leverage framing — the editorial effect is "the entity exploited their medical vulnerability."
+
+#### 3. Headline Negative Signal Expansion (mediascope/analyze/sentiment.py)
+
+Expanded `_HEADLINE_NEGATIVE_SIGNALS` in `_measure_headline_alignment()` with government pressure and regulatory concern language. Gap identified in NYT voluntary review (Jun 23) where headline "U.S. Presses Meta to Agree to AI Reviews as Security Concerns Rise" scored +0.60 by VADER despite being editorially adversarial.
+
+**14 new signals added:**
+- Pressure language: `presses`, `pressed`, `pressing`, `demands`, `demanded`
+- Concern language: `concerns rise`, `concerns mount`, `concerns grow`, `raises concerns`, `raises questions`
+- Warning/threat: `warns`, `warned`, `warning`, `threatens`, `threatened`
+- Holdout: `holdout`, `lone holdout`, `only company`, `the only`
+
+**Expected impact:** NYT voluntary review headline alignment should now fire the override (signal_count ≥ 2 from "presses" + "concerns rise"), flipping h_compound from +0.60 to negative, which aligns with the body's adversarial tone.
+
+#### 4. New Test File: test_hypocrisy_medical_duress.py (15 tests)
+
+**Test classes:**
+- `TestMedicalDuressEmotionalAppeal` (5 tests): life-threatening condition, medical emergency, healthcare as leverage, during childbirth, no false positive on routine medical
+- `TestHypocrisyFrame` (7 tests): positioned-yet, we-do-not-but-enforced, right-thing-while-still, the-only-company, publicly-privately, no false positive on genuine progress, adversarial types membership
+- `TestHeadlineNegativeSignals` (3 tests): presses headline, demands headline, holdout headline, neutral headline no-override
+
+**Tests could not be run** due to exec infrastructure failures. Tests are syntactically valid (reviewed manually) and follow established patterns from test_glasses_deep_dive.py and test_wynn_williams_fixes.py.
+
+### Cross-Article Gap Analysis (analytical work)
+
+Reviewed 4 existing articles and analyses for systematic toolkit gaps:
+
+| Article | Gap Found | Fix |
+|---------|-----------|-----|
+| Guardian Wynn-Williams (Jun 25) | emotional_appeal misses "life-threatening health condition" | New medical duress pattern |
+| Guardian Wynn-Williams (Jun 25) | corporate_reassurance_undercut can't span paragraphs | New hypocrisy_frame handles paragraph-distant contradictions |
+| NYT voluntary review (Jun 23) | Headline alignment +0.61 for adversarial headline | Expanded headline negative signals |
+| NYT voluntary review (Jun 23) | Hypocrisy frame undetected ("positioned as responsible... Yet") | New hypocrisy_frame device |
+
+### Remaining gaps for future iterations:
+1. **Vulnerability contextualization** — "particularly vulnerable to misuse" and "cannot be recalled or controlled" in NYT voluntary review. These are negative contextual framing but don't match any existing device. Would need a new "vulnerability_positioning" device type.
+2. **Corrected tone overshoot** — NYT voluntary review corrected to -0.57 vs manual -0.20. Correction formula heavily weights agency, overshooting on measured adversarial pieces.
+3. **Cross-paragraph corporate_reassurance_undercut** — Guardian Wynn-Williams has the reassurance ("We do not require...") and the contradiction several paragraphs apart. Current corporate_reassurance_undercut requires ~200 char proximity. The new hypocrisy_frame partially addresses this with longer match windows (150-200 chars) but won't catch multi-paragraph gaps.
+
+### Commit/Push: BLOCKED
+- All 3 code files changed + 1 new test file created
+- Git commit and GitHub push deferred to next iteration due to exec infrastructure failures
+- **Unpushed changes:** framing.py (~40 lines added), sentiment.py (~15 lines added), test_hypocrisy_medical_duress.py (new, ~260 lines)
+- Previous unpushed commits: `e9c1075` (Type D), `3ed1d26` (Type C)
+
+---
+
 ## 2026-06-25 23:00 PT — Hour Type D: Toolkit Quality & Documentation
 
 **Focus:** Comprehensive documentation updates — new methodology section, test/gallery sync, cross-doc consistency.
