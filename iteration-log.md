@@ -4,6 +4,45 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-26 07:00 PT — Hour Type B: Journalist/Publication Research
+
+**Focus:** Kate Knibbs (Wired senior writer) — AI copyright, prediction markets, media impact of AI. Previously untracked despite being Wired's primary AI copyright litigation reporter.
+
+### What was improved:
+
+#### 1. New Journalist Profile: Kate Knibbs (journalists.yaml)
+
+Full career history with 5 career entries, source URLs, and analytical notes:
+
+- **Teaching/Mobilia (~2009-2012):** Taught English in South Korea, then blogged for now-defunct tech blog Mobilia. Self-described "not glamorous" aggregation work.
+- **The Daily Dot (2012-2014):** Staff writer covering internet culture. Connects to Andrew Couts (Wired Dir. Security) and Miles Klee (Wired senior writer) — three Daily Dot alumni at Wired.
+- **Gizmodo/Gawker Media (2014-2016):** Senior writer covering NSA surveillance, Apple vs FBI, CISA legislation, internet policy. Concurrent contributing writer at The Onion/AV Club, Time, Digital Trends.
+- **The Ringer (2017-2019):** Staff writer doing culture features. Recruited by Sean Fennessy. Long-form Vice cocaine ring investigation, Taylor Swift retrospective, CollegeHumor profile.
+- **Wired (2020-present):** Senior writer. AI copyright beat: Mark Lemley/Meta exit interview (Kadrey v. Meta), Thomson Reuters v. Ross Intelligence ruling, AI copyright for AI-generated text, AI slop music. Beat shift Feb 2026: prediction markets (Polymarket, Kalshi, insider trading).
+
+**Analytical value:** She covers AI copyright — the exact intersection of Condé Nast's undisclosed licensing deals. Does her framing favor the licensing path? Does she disclose Condé Nast's own deals when covering the litigation wave?
+
+Sources: TalkingBizNews, RocketReach, The Org, Intelligent Relations, Muck Rack, Techmeme, Adam Pierno podcast interview, kateknibbs.blog, Gizmodo author pages, The Ringer author page
+
+#### 2. Editorial Changes: 2 New Wired Entries (editorial_changes.yaml)
+
+- **Kate Knibbs beat shift (Feb 2026):** Moved from AI copyright/media to prediction markets. Tests whether editorial leadership reassigned her because AI copyright coverage was getting too close to Condé Nast's own licensing deals. Reduces dedicated AI copyright coverage capacity during the Richner v. Microsoft 400-newspaper lawsuit.
+- **Chief Business Correspondent (open position, Mar 2026):** 12+ year experience requirement, "authority on the business of tech," reports to Zoë Schiffer. Most senior open editorial position at Wired — whoever fills it shapes Big Tech coverage framing.
+
+#### 3. README Updated
+
+Journalist count: 86 → **87 tracked journalists**.
+
+### Stats After This Cycle
+
+- Framing device types: 29 (26 pattern-based + 3 structural) — unchanged
+- Journalists tracked: **87** (was 86, +1 Kate Knibbs)
+- Tests: 480 across 18 files — all passing, zero regressions
+- Publications with deep dives: 5 (all tracked)
+- Editorial changes tracked: +2 new Wired entries
+
+---
+
 ## 2026-06-26 05:00 PT — Hour Type A: Article Deep Dive
 
 **Focus:** The Atlantic, "The Rise of Emotional Surveillance" by Ellen Cushing (~May 2026) — emotion AI / affective computing in workplace surveillance.
@@ -3472,5 +3511,6 @@ Plus Brian Kahn's Earther connection (Earther was Gizmodo's climate vertical).
 
 **Stats:**
 - Total journalists: 86 (was 85)
-- Tests: pending this cycle
-- Commit: pending
+- Tests: 480/480 passing
+- Commit: `ebb8552` — 4 files changed, 83 insertions, 1 deletion
+- Pushed to GitHub

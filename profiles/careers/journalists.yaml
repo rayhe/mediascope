@@ -3694,3 +3694,74 @@ journalists:
       culture bridge. Tests: (1) Does Oremus''s explanatory/analysis style shift toward Atlantic''s longer-form essay voice?
       (2) Does coverage of Meta/AI carry different framing under Emerson Collective vs Bezos ownership? Education: BA
       Philosophy (Stanford), MA Politics (Columbia).'
+- name: Kate Knibbs
+  notes: 'Wired''s primary AI copyright reporter and newly minted prediction markets beat writer. Career arc: teaching in
+    South Korea → Mobilia (defunct tech blog) → Daily Dot → Gizmodo (Gawker Media) → The Ringer → Wired. Non-traditional
+    pipeline: English/culture background, not a tech-industry journalist by training. KEY for MediaScope: she covers AI
+    copyright litigation — the legal battlefield where Condé Nast''s licensing deals (OpenAI, Amazon, Apple) create undisclosed
+    conflicts. Her Mark Lemley/Meta interview (Jan 2025) — a Stanford IP lawyer quitting Meta''s AI copyright defense in
+    Kadrey v. Meta — is a direct framing data point. Also covers AI slop, AI''s impact on media/arts, and prediction markets.
+    Based in Chicago (remote from Wired''s SF/NY offices). Approached by Sean Fennessy to join The Ringer (former Grantland
+    people). Education: McGill University BA Honours (English major, Political Science minor) 2005-2009. Saint Ignatius
+    College Prep 2001-2005 (Chicago).'
+  career:
+  - publication: freelance
+    event_type: hired
+    role: teacher_then_blogger
+    beat: tech aggregation
+    start: 2009-01
+    end: 2012-06
+    notes: 'Taught English in South Korea for ~2 years. Began writing restaurant reviews for expat community magazines. Then
+      hired at Mobilia, a now-defunct tech blog, for ~1.5 years doing pure aggregated blog posts. Used Mobilia clips to move
+      to better publications. Self-described: "A decade ago, I was teaching English in South Korea."'
+    source_url: https://adampierno.com/kate-knibbs-is-making-things-interesting/
+  - publication: daily-dot
+    event_type: hired
+    role: staff_writer
+    beat: internet culture
+    start: 2012-06
+    end: 2014-06
+    notes: Staff writer at The Daily Dot, covering internet culture. First serious journalism role. The Daily Dot pipeline
+      also produced Andrew Couts (Wired''s Director of Security & Investigations) and Miles Klee (Wired senior writer) —
+      three Daily Dot alumni at Wired creates an informal editorial network.
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-knibbs-as-senior-writer/
+  - publication: gizmodo
+    event_type: hired
+    role: senior_writer
+    beat: technology, policy, security, culture
+    start: 2014-06
+    end: 2016-12
+    notes: 'Senior writer at Gizmodo (Gawker Media). Covered NSA surveillance, Apple vs FBI encryption fight, Microsoft vs
+      DOJ on secret data requests, CISA legislation, internet policy. Self-described: "I was very excited about [Gizmodo]
+      because I love the Gawker Media family blogs." Earliest Gizmodo bylines ~Jun 2014, latest ~Apr 2016. Concurrent:
+      contributing writer at The Onion/AV Club (2013-2016). Also contributed to Time Magazine and Digital Trends.'
+    source_url: https://rocketreach.co
+  - publication: the-ringer
+    event_type: hired
+    role: staff_writer
+    beat: culture, internet, features
+    start: 2017-01
+    end: 2019-12
+    notes: 'Staff writer at The Ringer (Bill Simmons'' sports/culture media company). Recruited by Sean Fennessy (now head of
+      content). Wrote long-form features: Vice cocaine ring investigation ("Worked at Vice Then Went to Jail," 36 min read),
+      Taylor Swift retrospective, CollegeHumor/ClickHole profiles, Disney+ content analysis. Regular podcast guest (Ringer
+      Dish). Last bylined article Dec 17, 2019. Primarily culture/entertainment, not tech — career reset before Wired.'
+    source_url: https://theringer.com/author/kate-knibbs
+  - publication: wired
+    event_type: hired
+    role: senior_writer
+    beat: AI copyright, AI impact on media, prediction markets
+    start: 2020-01
+    source_url: https://www.wired.com/author/kate-knibbs/
+    notes: 'Hired as senior writer (announced Jan 6, 2020). Initially covered "the human side of the generative AI boom and
+      the impact of new technology on the arts, entertainment, and media industries." KEY COVERAGE: (1) Mark Lemley/Meta
+      exit interview (Jan 2025) — Stanford IP lawyer on quitting Meta''s AI copyright defense in Kadrey v. Meta; (2) Thomson
+      Reuters v. Ross Intelligence ruling — first major US AI copyright verdict; (3) AI-generated text copyright (US Copyright
+      Office); (4) AI slop music on Spotify; (5) Wired AI copyright livestream Q&A with readers. Beat shift Feb 2026:
+      prediction markets (Polymarket, Kalshi — insider trading, regulatory battles, Zelensky suit). Current beat description:
+      "prediction markets, the future of media, and how AI is changing the internet." Also covers "digital grey markets and
+      regulatory battles over new tech." Contact: kate_knibbs@wired.com, Signal: Kateknibbs.09. ANALYTICAL VALUE: Her AI
+      copyright beat is the intersection of (a) Condé Nast''s undisclosed AI licensing deals and (b) the litigation wave
+      tracked in MediaScope. She covers lawsuits filed by publishers who chose NOT to license — while her employer chose
+      licensing over litigation. Does her framing favor the licensing path? Does she disclose Condé Nast''s own deals when
+      covering AI copyright battles? These questions are testable.'
