@@ -58,7 +58,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **79 journalists** across 10+ publications, including high-value migrations like Karen Hao (MIT Tech Review → Atlantic), Cade Metz (Wired → NYT), Zoë Schiffer (The Verge → Platformer → Wired), Zeyi Yang (MIT Tech Review → Wired), Melissa Heikkilä (MIT Tech Review → Financial Times), Emily Mullin (MIT Tech Review → Wired), David McCabe (Axios → NYT), Stuart A. Thompson (WSJ → NYT), and David Yaffe-Bellany (Bloomberg → NYT).
+Ships with verified career data for **85 journalists** across 10+ publications, including high-value migrations like Karen Hao (MIT Tech Review → Atlantic), Cade Metz (Wired → NYT), Zoë Schiffer (The Verge → Platformer → Wired), Zeyi Yang (MIT Tech Review → Wired), Melissa Heikkilä (MIT Tech Review → Financial Times), Emily Mullin (MIT Tech Review → Wired), David McCabe (Axios → NYT), Stuart A. Thompson (WSJ → NYT), and David Yaffe-Bellany (Bloomberg → NYT).
 
 ## Quick Start
 
@@ -341,7 +341,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **464 tests** across 17 test files, each covering a different analytical capability:
+MediaScope has **480 tests** across 18 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -361,6 +361,7 @@ MediaScope has **464 tests** across 17 test files, each covering a different ana
 | `test_loaded_language_uproar.py` | 13 | Loaded language detection edge cases: workplace coercion terms, revolt vocabulary, "uproar" word variants, false-positive exclusion for neutral contexts |
 | `test_scale_magnitude.py` | 16 | Scale/magnitude framing: raw number amplification, calculated maximums, cumulative totals, scale analogies, victim roster detection, comparison amplifiers |
 | `test_glasses_deep_dive.py` | 17 | Wired glasses launch deep dive fixes: kicker framing (negative final paragraph detection), product-name stop-filter for source extraction ("Meta Glasses"), emotional_appeal false-positive exclusion (question marks), loaded language expansion (nefarious, comically, discreetly) |
+| `test_hypocrisy_medical_duress.py` | 16 | Hypocrisy frame detection: "the only company that has not" patterns, medical duress framing, healthcare-as-leverage patterns, prepositional phrase tolerance in entity–negation gaps |
 | `test_wynn_williams_fixes.py` | 18 | Guardian Wynn-Williams lawsuit fixes: source extraction false positives (day names "Wednesday", book titles "Careless People"), litigation framing expansion (complaint, suing, arbitration patterns), power_asymmetry per-violation fines with intervening adjectives |
 
 ```bash

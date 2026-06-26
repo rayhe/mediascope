@@ -166,7 +166,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 28 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (added from real-article analysis), and structural devices (detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 29 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (added from real-article analysis), and structural devices (detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -204,6 +204,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Sovereignty Framing** | Deploying national/patriotic identity language to delegitimize foreign corporate or government positions | "British families," "American innovation," "our children" in tech regulation context; "national interest/security" near tech entities; "act in the UK's national interest" | Guardian UK tech crackdown article — distinct from loaded_language because it strategically invokes national identity rather than just emotional vocabulary |
 | **Scale/Magnitude Framing** | Deploying large raw numbers, calculated maximums, scale analogies, or victim/case rosters to create impressions of excess, danger, or harm beyond what a neutral factual reference would convey | "up to 6% of global revenue," "enough to power 750,000 homes," "$70 billion in losses since 2020," "more than 2,000 lawsuits," "76% spike" — calculated maximums, cumulative totals, scale analogies, victim rosters, comparison amplifiers | Cross-article pattern — Atlantic data centers, NYT/Reuters child-safety litigation, EU DSA coverage. Distinct from loaded_language because the emotional charge comes from the number itself, not from adjectives or pejorative vocabulary |
 | **Corporate Reassurance Undercut** | Quoting a corporate entity's reassurance or responsibility language and immediately undercutting it with contradicting evidence or adversarial conjunctions | "carefully designed with privacy safeguards" + "but/however/yet" + failure evidence; "no indication of improper" + contradiction; "committed to / takes seriously" + contradiction + exposure/failure | Wired/Reuters MCI data exposure coverage — Meta's corporate communications reframed as hollow through editorial juxtaposition of reassurance language with reported failures |
+| **Hypocrisy Frame** | Singling out an entity as the sole holdout that has not done what all peers have, framing inaction as hypocrisy or defiance rather than legitimate disagreement | "the only major company/developer that has not," "uniquely among its peers," "alone in refusing" — entity isolation + negation patterns with optional prepositional phrases between entity noun and negation clause | NYT AI voluntary review article — framing Meta as uniquely defiant among tech companies. Distinct from isolation_framing because hypocrisy_frame specifically implies moral failing (not just being different), and from pressure_language because the frame comes from peer comparison rather than institutional demands |
 
 #### Structural Devices (Post-Pass)
 
