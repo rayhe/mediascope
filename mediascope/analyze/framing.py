@@ -719,6 +719,33 @@ _POWER_ASYMMETRY_PATTERNS: list[re.Pattern] = [
         r"bankrupt|ruin|devastat)\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # Surveillance / consent-violation power asymmetry — editorial language
+    # framing institutional monitoring of individuals as unavoidable, non-
+    # consensual, or coercive.  Common in workplace-surveillance coverage
+    # (Meta MCI, emotion AI, bossware) and platform-data-harvesting coverage.
+    # Distinct from loaded_language surveillance terms: power_asymmetry
+    # requires a consent/choice/resistance element showing the power gap.
+    re.compile(
+        r"\b(?:could\s+not|couldn't|cannot|can't|unable\s+to|no\s+way\s+to)\s+"
+        r"(?:opt\s+out|refuse|decline|resist|escape|avoid|stop|prevent|object|"
+        r"consent|withdraw|block)"
+        r".{0,80}?"
+        r"\b(?:monitor|surveillance|tracking|recording|collecting|scraping|"
+        r"watching|logging|capturing|training)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse: monitoring/surveillance near powerlessness language
+    re.compile(
+        r"\b(?:monitor|surveillance|tracking|recording|collecting|"
+        r"watching|logging|capturing)\b"
+        r".{0,80}?"
+        r"\b(?:(?:could|can)(?:n't|\s+not)\s+(?:opt\s+out|refuse|decline|resist|escape|object)|"
+        r"(?:no|without)\s+(?:consent|choice|option|recourse|way\s+out|escape|alternative)|"
+        r"(?:won't|wouldn't|will\s+not)\s+have\s+(?:much\s+)?power\s+to\s+resist|"
+        r"involuntar(?:y|ily)|mandatory|compulsory|non.?optional|"
+        r"(?:employees?|workers?|staff)\s+(?:likely\s+)?(?:won't|will\s+not)\s+have\s+(?:much\s+)?power)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
 ]
 
 
@@ -1553,6 +1580,23 @@ _SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
     re.compile(
         r"\b(?:more than (?:double|triple|quadruple)|"
         r"\d+(?:\.\d+)?%\s+(?:spike|surge|jump|increase|rise|hike|growth))",
+        re.IGNORECASE,
+    ),
+    # Market-size growth projections: "$X billion market", "expected to
+    # triple/double/grow to $X by YYYY".  Scale implied through projected
+    # magnitude to frame an industry as unstoppable or rapidly expanding.
+    re.compile(
+        r"\b(?:market|industry|sector|category)\s+"
+        r"(?:is\s+)?(?:expected|projected|forecast|estimated|set|poised)\s+to\s+"
+        r"(?:reach|grow\s+to|hit|top|surpass|exceed|triple|double|quadruple)\b",
+        re.IGNORECASE,
+    ),
+    # Reverse: "expected to triple/double to $X" without explicit market word
+    re.compile(
+        r"\b(?:expected|projected|forecast|estimated|poised|set)\s+to\s+"
+        r"(?:triple|double|quadruple|grow\s+(?:\d+[xX]|\d+.?fold))\s+"
+        r"(?:by\s+\d{4}\s*,?\s*)?(?:to\s+)?"
+        r"\$?\d[\d,.]*\s*(?:billion|million|trillion|[BMT])\b",
         re.IGNORECASE,
     ),
 ]

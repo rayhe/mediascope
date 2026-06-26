@@ -134,6 +134,10 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Bureau of Alcohol Tobacco Firearms", "ATF",
             "Securities and Exchange Commission", "SEC",
             "Justice Department", "Department of Justice", "DOJ",
+            "US Army", "the Army", "Army",
+            "US Navy", "US Marine Corps", "US Air Force",
+            "US Special Operations Command",
+            "White House",
         ],
         "regex": r"(?<!\w)(Pentagon|Department of Defense|FBI|CIA"
                  r"|NSA|National Security Agency"
@@ -148,7 +152,10 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|Edward Snowden|Snowden"
                  r"|Bureau of Alcohol Tobacco Firearms|(?-i:ATF)"
                  r"|Securities and Exchange Commission|(?-i:SEC)"
-                 r"|Justice Department|Department of Justice|(?-i:DOJ))(?!\w)",
+                 r"|Justice Department|Department of Justice|(?-i:DOJ)"
+                 r"|(?:US |U\.S\. |the )Army"
+                 r"|(?:US |U\.S\. )(?:Navy|Marine Corps|Air Force)"
+                 r"|White House)(?!\w)",
     },
     "Surveillance/Biometrics": {
         "aliases": [
@@ -198,6 +205,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "L3Harris", "Northrop Grumman", "Lockheed Martin",
             "Raytheon", "General Dynamics", "BAE Systems",
             "Shield AI", "Skydio",
+            "Quay Barnett", "Barnett",
+            "Lattice", "EagleEye",
+            "SBMC", "Soldier Born Mission Command",
         ],
     },
     "Policy Research": {
@@ -209,6 +219,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Carnegie Endowment",
             "Pew Research Center", "Pew Research",
             "Graphite",
+            "Jonathan Wong",
         ],
     },
     "Political Figures": {

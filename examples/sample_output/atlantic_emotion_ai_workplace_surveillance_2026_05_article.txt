@@ -1,0 +1,33 @@
+The Rise of Emotional Surveillance
+
+The Atlantic | May 2026 | By Ellen Cushing
+
+The good news, for me at least, is that the computer thinks I have a nice personality. According to an app called MorphCast, I was, in a recent meeting with my boss, generally "amused," "determined," and "interested," though — sue me — occasionally "impatient." MorphCast, you see, purports to glean insights into the depths and vagaries of human emotion using AI. It found that my affect was "positive" and "active," as opposed to negative and/or passive. My attention was reasonably high. Also, the AI informed me that I wear glasses — revelatory!
+
+The bad news is that software now purports to glean insights into the depths and vagaries of human emotion using AI, and it is coming to watch you. If it isn't already: MorphCast, for example, has licensed its technology to a mental-health app, a program that monitors schoolchildren's attention, and McDonald's, which launched a promotional campaign in Portugal that scanned app users' faces and offered them personalized coupons based on their (supposed) mood. It is one of many, many such companies doing similar work — the industry term is emotion AI or sometimes affective computing.
+
+Some products analyze video of meetings or job interviews or focus groups; others listen to audio for pitch, tone, and word choice; still others can scan chat transcripts or emails and spit out a report about worker sentiment. Sometimes, the emotion AI is baked in as a feature in multiuse software, or sold as part of an expensive analytics package marketed to businesses. But it's also available as a stand-alone product, and the barrier to entry is shin-high: I used MorphCast at no cost, taking advantage of a free trial, and with no special software. At no point was I compelled to ask my interlocutors if they consented to being analyzed in this way (though I did ask, because of my good personality).
+
+Every successful technology needs to find a problem that people are willing to pay money to solve. In the case of emotion AI, that problem appears largely, so far, to be worker performance and productivity.
+
+The technology, referred to in the industry as "emotion AI" or "affective computing," can monitor an employee through their company devices to draw conclusions on their attitude and morale in the workplace. The Slack integration Aware advertises its ability to continuously monitor messages for "sentiment and toxicity"; Microsoft's cloud-computing software Azure also allows employers to, theoretically, use AI to batch-analyze workers' chat messages. MorphCast's Zoom extension tracks, in real time, meeting participants' attention, excitement, and positivity.
+
+But the idea that emotions can be objectively measured or analyzed at all is fantasy. Hundreds of studies show how difficult it is to derive objective analysis on human emotion given its inherent variability; other studies show that AI replicates the biases of the data it's trained on. In addition, many emotion-AI products base their rubrics on the clinical psychologist Paul Ekman's theory of basic emotions — but that theory has been widely challenged as oversimplistic and methodologically flawed.
+
+The neuroscientist Lisa Feldman Barrett has argued that movements "whether it's on your face or in your body or the tones that you emit, don't have inherent emotional meaning. They have relational meaning." In the U.S., she notes, people scowl when angry only about 35 percent of the time. A study by Lauren Rhue found that emotion-recognition AI judged Black NBA players to be angrier than their white teammates, "even, in some cases, if they were smiling."
+
+The questionable science and unchecked surveillance are already causing real harm. According to a 2022 New York Times investigation, social workers at UnitedHealth were downgraded for keyboard inactivity while they were talking to patients. The ACLU has alleged that the screening platform HireVue and its client Intuit denied a deaf accessibility-team employee a promotion, with the rejection email advising her to "practice active listening." Both HireVue and Intuit have disputed the claims.
+
+MetLife monitors its call center agents' pitch and tone of voice. Burger King is piloting a headset chatbot called "Patty" that evaluates fast-food workers' interactions for friendliness. Furniture maker Framery has tested office chairs equipped with biosensors that can measure heart rate, breathing rate, and nervousness.
+
+The EU has already banned this kind of emotion AI in the workplace under the AI Act, with exceptions only for medical and safety purposes. MorphCast responded by moving its headquarters from Florence to the Bay Area.
+
+The global emotion-AI market is expected to triple by 2030, to $9 billion, as the technology becomes more sophisticated and more available. "It is not that hard for me to imagine a near future in which workers in all industries are pushed to work not only harder and more, but more happily and more agreeably. This is the new era of employee surveillance: invisible, AI-supercharged, always on."
+
+Whether AI will replace white-collar workers is the hottest debate in economics at the moment. But though the tech isn't taking jobs en masse yet, it is already threatening to turn our existing jobs into a dystopian nightmare.
+
+It's hard to overstate what a disquieting change this would represent to modern work. Employers already determine so much about where and how employees spend their time. Now they are on the verge of being able to meticulously track and shape how their employees emote. And with the hiring rate at its lowest level since the Great Recession, and the looming specter of AI-fueled job displacement, employees likely won't have much power to resist these changes.
+
+Of course, this isn't a preordained outcome. The European Union has already banned the use of emotion-AI tools in the workplace in most cases. If the United States doesn't do something similar, things could start looking really Orwellian, really fast.
+
+More troubling than flawed systems would be a future where the software actually works — and workers would have, on top of their actual job, "the work of making the emotion robot think that I'm sufficiently cheerful."
