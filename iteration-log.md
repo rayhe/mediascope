@@ -4,6 +4,63 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-26 09:00 PT — Hour Type D: Toolkit Quality & Documentation
+
+**Focus:** Documentation count synchronization across all docs, CLI import chain fix, and orchestrator shim modules for CLI-to-subpackage integration.
+
+### What was improved:
+
+#### 1. Documentation Count Fixes (4 files, 7 stale counts corrected):
+
+**ARCHITECTURE.md:**
+- Test count: 464 → 480 (18 test files)
+- Framing device types: 28 → 29 (Extended 15 → 16, added hypocrisy_frame)
+- Added missing `test_hypocrisy_medical_duress.py` to file layout
+- Added 6 new shim modules to file layout diagram
+
+**EDITORIAL_HISTORIES.md:**
+- Journalist count: 79 → 87
+- Multi-publication careers: 76 → 84
+- Publications referenced: "10+" → "130+" (actual: 137 unique publication slugs in journalists.yaml)
+
+**README.md:**
+- Publications count in Editorial Histories section: "10+" → "130+"
+
+**Verification method:** Direct count from `journalists.yaml` via Python script, `grep -c "def test_"` across all test files, regex extraction of `_DEVICE_PATTERNS` keys + `device_type=` assignments in `framing.py`.
+
+#### 2. CLI Import Chain Fix (7 new files):
+
+The CLI (`cli.py`) imports from 7 top-level modules that didn't exist — causing `ImportError` on any CLI invocation (even `--help`). Created orchestrator shim modules that bridge the CLI's expected interface to the actual subpackage implementations:
+
+| New File | Wraps | Key Class/Function |
+|---|---|---|
+| `config.py` (extended) | — | `load_config()`, `get_profiles_dir()`, `get_db_path()` |
+| `profiles.py` | `config.py` | `validate_profile()` + re-exports |
+| `analysis.py` | `analyze/` subpackage | `ArticleAnalyzer` (entities → sentiment → framing → sources → topics pipeline) |
+| `scoring.py` | `score/` subpackage | `AsymmetryScorer` |
+| `reports.py` | `report/` subpackage | `ReportGenerator` |
+| `disclosure.py` | `conflicts/` subpackage | `DisclosureGenerator` |
+| `db.py` | `storage/` subpackage | `MediaScopeDB` (graceful fallback when SQLAlchemy not installed) |
+| `ingest/__init__.py` (extended) | `ingest/rss.py`, `ingest/scraper.py` | `ArticleIngester` (graceful fallback when feedparser not installed) |
+
+All shims use `try/except` for optional dependencies so the CLI can load even without the full dependency tree (SQLAlchemy, feedparser, newspaper3k).
+
+**Key fix detail:** `count_anonymous_sources()` lives in `analyze/sentiment.py`, not `analyze/sources.py` — the `analysis.py` orchestrator corrects this import. `classify_topics` is actually `classify_topic` (singular) in `topics.py` — aliased at import.
+
+#### 3. Example Script (from previous uncommitted work):
+
+`examples/framing_correction_demo.py` — demonstrates the VADER positive-bias problem and how framing-aware tone correction works on three real article excerpts. Serves as a hands-on tutorial for the core innovation in §9 of METHODOLOGY.md.
+
+### Stats After This Cycle
+
+- **Commit:** `f9ea69d` — 13 files changed, 916 insertions, 7 deletions
+- **Tests:** 480 passed (no regressions)
+- **Framing devices:** 29 (10 core + 16 extended + 3 structural)
+- **Journalists:** 87 (84 multi-publication)
+- **Publications referenced:** 137
+
+---
+
 ## 2026-06-26 08:00 PT — Hour Type C: Ownership & Funding Deep Dive
 
 **Focus:** NYT Board of Directors — first comprehensive governance analysis. Full board composition, individual career research for all 13 directors, tech company cross-directorships, Ariel Investments 13F analysis, 5 new severity 4-5 conflicts.

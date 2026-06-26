@@ -202,7 +202,9 @@ def analyze_with_details(text: str, headline: str, label: str) -> None:
     adversarial_types = {
         "loaded_language", "emotional_appeal", "guilt_by_association",
         "catastrophizing", "power_asymmetry", "isolation_framing",
-        "pressure_language", "hypocrisy_frame",
+        "pressure_language", "hypocrisy_frame", "timeline_implication",
+        "juxtaposition", "refusal_amplification",
+        "self_referential_investigation", "kicker_framing",
     }
     adversarial_count = sum(
         1 for d in framing_devices if d.device_type in adversarial_types
