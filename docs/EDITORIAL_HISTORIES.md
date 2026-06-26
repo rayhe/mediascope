@@ -259,7 +259,7 @@ MediaScope's Editorial Histories module fills this gap by:
 1. Treating journalist migrations as natural experiments (novel application of DiD)
 2. Building a reusable career tracking infrastructure that any AI agent can extend
 3. Producing decomposition scores that are interpretable, comparable, and auditable
-4. Shipping with verified starter data for **69 journalists** across 10+ publications, with 68 having multi-publication careers suitable for migration analysis
+4. Shipping with verified starter data for **74 journalists** across 10+ publications, with 71 having multi-publication careers suitable for migration analysis
 
 ## References
 

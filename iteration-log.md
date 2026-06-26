@@ -2715,3 +2715,61 @@ All duplicates had identical data — removed second occurrences. Count: 73 → 
 - Updated EDITORIAL_HISTORIES.md and README.md counts
 
 ### Tests: 464 passing (unchanged — data-only changes)
+
+---
+
+## 2026-06-25 19:00 PT — Hour Type B: Journalist/Publication Research
+
+**Focus:** 5 new journalists (NYT×4, Wired×1) + 4 Wired editorial changes + Wired UK structural contraction
+
+### New journalists added (69 → 74):
+
+| Journalist | Publication | Career Path | Career Events | Source URLs |
+|---|---|---|---|---|
+| David McCabe | NYT | HuffPost → The Hill → Axios → NYT (2019) | 4 | nytco.com, Benton Institute, Muck Rack |
+| Tiffany Hsu | NYT | LA Times → NYT media (2017) → NYT misinfo (2022) | 3 | PEN America, nytco.com, Editor & Publisher |
+| Stuart A. Thompson | NYT | WSJ (graphics dir) → NYT Opinion (2017) → NYT misinfo (2021) | 3 | nytco.com, Talking Biz News, Storybench |
+| David Yaffe-Bellany | NYT | TX Tribune → NYT fellow → Bloomberg → NYT crypto (2022) | 4 | nytco.com, Talking Biz News, BuzzSumo |
+| Joel Khalili | Wired | PR agency → ITProPortal → TechRadar → Wired (2022) | 4 | The Org, TechRadar, Intelligent Relations |
+
+### Why these 5:
+
+1. **McCabe** — NYT's primary tech antitrust/regulation reporter in Washington. Essential for Meta antitrust coverage analysis. Co-covers with Cecilia Kang (already tracked). The Google monopoly trial coverage, FTC AI chatbot inquiry, and Tim Cook/Pelosi lobbying stories are all in MediaScope's analysis scope.
+
+2. **Hsu** — NYT's misinformation reporter covers AI-generated content, deepfakes, platform content moderation — ground zero for Meta coverage bias analysis. Won Mirror Award with Sheera Frenkel (already tracked). Her beat makes every Meta trust & safety story go through her lens.
+
+3. **Thompson** — NYT's other misinformation reporter, unusual visual/data journalist background. WSJ Pulitzer winner turned beat reporter. Co-bylines with Hsu on Sora deepfake investigation. His visual forensic approach is distinct from traditional reporters — relevant for MediaScope's framing analysis.
+
+4. **Yaffe-Bellany** — NYT crypto/fintech reporter. Covers Trump crypto deals ($2B UAE/World Liberty Financial). Intersects with Meta's Libra/Diem history. Texas Tribune → Bloomberg → NYT pipeline is a natural experiment for DiD analysis.
+
+5. **Khalili** — Wired's London-based crypto/fintech reporter. PR agency background (Red Lorry Yellow Lorry) is unusual — insider knowledge of tech PR strategies. His European regulatory perspective on crypto intersects with Meta/Libra coverage.
+
+### Editorial changes documented (Wired, 11 → 15):
+
+1. **UK print edition pulled (2026):** 7 editorial staff left London end of 2025. Team rebuilt for audience development. Katie Drummond quote: "creating a sustainable and growing subscription business is the future of Wired." Digital subscribers doubled. Signals Condé Nast cost-cutting.
+
+2. **Brian Kahn hired (May 4, 2026):** Senior editor, science desk. From Bloomberg climate team. Reports to Tim Marchman. SF office.
+
+3. **Sophie Kleeman hired (May 11, 2026):** Senior editor, business desk. From Business Insider (deputy enterprise editor). Reports to Zoë Schiffer. Creates Drummond → Schiffer → Kleeman editorial hierarchy for enterprise tech/Big Tech coverage.
+
+4. **Peter Guest departed (~Dec 2025):** Acting business editor UK → Coda Story. Part of broader UK contraction alongside 7 other staff departures.
+
+### Analytical observations:
+
+- **Wired UK contraction is significant:** 8 departures (Guest + 7 staff) + print cancellation means Wired's UK/European editorial capacity is sharply reduced. Matt Burgess and Joel Khalili remain but with less editorial infrastructure around them. This could affect Wired's European regulatory coverage quality.
+
+- **Sophie Kleeman reporting to Zoë Schiffer** creates a notable editorial chain: Drummond (EIC, ex-Vice) → Schiffer (senior writer, ex-Verge/Platformer) → Kleeman (senior editor, ex-BI). All three came from adversarial tech media. The business desk's editorial DNA is now almost entirely critical-by-default.
+
+- **NYT misinformation cluster:** Adding Hsu + Thompson completes the NYT misinformation team picture alongside Steven Lee Myers (not yet tracked). All three regularly co-byline. Their beat is inherently about platform accountability — every Meta content moderation decision becomes their story.
+
+- **Multi-publication count:** 66 → 71 (all 5 new journalists have careers at 2+ distinct publications, strengthening DiD regression dataset).
+
+### Stats after this iteration:
+- Total journalists: 74
+- Multi-publication journalists: 71
+- Total career events: 18 new (total ~360+)
+- Wired editorial changes: 15
+- Tests: 464/464 passing
+
+### Commit: `88f2459` — 2 files changed, 245 insertions
+### Pushed to GitHub
