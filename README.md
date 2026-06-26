@@ -58,7 +58,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **87 journalists** across 10+ publications, including high-value migrations like Karen Hao (MIT Tech Review → Atlantic), Cade Metz (Wired → NYT), Zoë Schiffer (The Verge → Platformer → Wired), Zeyi Yang (MIT Tech Review → Wired), Melissa Heikkilä (MIT Tech Review → Financial Times), Emily Mullin (MIT Tech Review → Wired), David McCabe (Axios → NYT), Stuart A. Thompson (WSJ → NYT), and David Yaffe-Bellany (Bloomberg → NYT).
+Ships with verified career data for **87 journalists** across 130+ publications, including high-value migrations like Karen Hao (MIT Tech Review → Atlantic), Cade Metz (Wired → NYT), Zoë Schiffer (The Verge → Platformer → Wired), Zeyi Yang (MIT Tech Review → Wired), Melissa Heikkilä (MIT Tech Review → Financial Times), Emily Mullin (MIT Tech Review → Wired), David McCabe (Axios → NYT), Stuart A. Thompson (WSJ → NYT), and David Yaffe-Bellany (Bloomberg → NYT).
 
 ## Quick Start
 
@@ -299,6 +299,18 @@ cd mediascope
 pip install -e ".[dev]"
 python -m spacy download en_core_web_sm
 ```
+
+## Examples
+
+The `examples/` directory contains runnable demos that walk through MediaScope's key capabilities:
+
+| File | What It Demonstrates |
+|---|---|
+| [`quick_start.py`](examples/quick_start.py) | Minimal workflow: load profile → analyze article → generate disclosure |
+| [`full_pipeline.py`](examples/full_pipeline.py) | Complete pipeline: RSS ingest → entity detection → sentiment → framing → asymmetry scoring → report |
+| [`same_event_comparison.py`](examples/same_event_comparison.py) | Cross-publication comparison of the same event (wire service vs magazine), isolating editorial framing from event severity |
+| [`framing_correction_demo.py`](examples/framing_correction_demo.py) | **NEW:** How MediaScope corrects VADER's positive bias on investigative journalism using framing device signals, active-negative agency detection, and source stance analysis |
+| [`agent_integration.py`](examples/agent_integration.py) | Integration patterns for LangChain, CrewAI, and raw function calling |
 
 ## Sample Output Gallery
 

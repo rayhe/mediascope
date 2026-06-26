@@ -170,9 +170,9 @@ Journalist YAML ──→ Career Tracker ──→ Migration Detection
 - **Security context adjustment**: Technical security/hacking articles use domain-specific language that inflates emotional intensity; the scorer reduces intensity for articles matching security topic patterns
 
 ### `framing.py`
-- **28 framing device types** organized in three tiers:
+- **29 framing device types** organized in three tiers:
   - **Core (10):** guilt by association, anonymous authority, catastrophizing, false balance, selective omission signal, emotional appeal, loaded language (including workplace coercion/revolt terms), power asymmetry, CEO personalization, litigation framing
-  - **Extended (15):** straw man, refusal amplification, juxtaposition (including investment-near-layoffs), timeline implication, military techno-optimism, selective rehabilitation, rhetorical question, ironic quotation, isolation framing, pressure language, self-referential investigation (publication citing its own prior reporting as evidence within adversarial coverage), geopolitical regulatory pressure, sovereignty framing, scale/magnitude framing, corporate reassurance undercut
+  - **Extended (16):** straw man, refusal amplification, juxtaposition (including investment-near-layoffs), timeline implication, military techno-optimism, selective rehabilitation, rhetorical question, ironic quotation, isolation framing, pressure language, self-referential investigation (publication citing its own prior reporting as evidence within adversarial coverage), geopolitical regulatory pressure, sovereignty framing, scale/magnitude framing, corporate reassurance undercut, hypocrisy frame (singling out an entity as the sole holdout among peers, framing inaction as moral failing)
   - **Structural post-pass (3):** kicker framing (checks final ~400 chars for discordant negative note), analogy stacking (fires when 3+ distinct analogy markers found), speculative framing (fires when 5+ cumulative speculative hedges found — individual hedges are normal journalism; stacked hedges convert possibility into implied certainty)
 - Attribution verb analysis: neutral ("said"), undermining ("claimed"), concessive ("admitted"), adversarial ("warned")
 - **Workplace coercion/revolt language detection**: Terms like "no opt-out," "revolt," "nihilistic," "training their own replacements" detected as loaded language specific to labor/workplace framing
@@ -320,7 +320,13 @@ mediascope/
 ├── mediascope/
 │   ├── __init__.py
 │   ├── cli.py              # Click CLI with commands + careers subgroup
-│   ├── config.py            # Profile loading, env vars, paths
+│   ├── config.py            # Profile loading, env vars, paths, global config
+│   ├── profiles.py          # Profile re-exports + validation (CLI shim)
+│   ├── analysis.py          # ArticleAnalyzer orchestrator (CLI shim)
+│   ├── scoring.py           # AsymmetryScorer orchestrator (CLI shim)
+│   ├── reports.py           # ReportGenerator orchestrator (CLI shim)
+│   ├── disclosure.py        # DisclosureGenerator orchestrator (CLI shim)
+│   ├── db.py                # MediaScopeDB re-export (CLI shim)
 │   ├── analyze/
 │   │   ├── entities.py      # Entity detection + clustering
 │   │   ├── sentiment.py     # 8-dim scoring + framing correction
@@ -379,7 +385,7 @@ mediascope/
 │   ├── full_pipeline.py
 │   ├── agent_integration.py
 │   └── sample_output/       # Annotated real-article analyses
-├── tests/                       # 464 tests (all from real articles)
+├── tests/                       # 480 tests (all from real articles)
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
 │   ├── test_careers.py          # Career loading, migration detection, DiD, leadership ITS
@@ -387,6 +393,7 @@ mediascope/
 │   ├── test_claims.py          # Claim-to-source mapping, statistic/quote detection
 │   ├── test_entities.py        # Entity detection, regex, false-positive exclusion
 │   ├── test_glasses_deep_dive.py # Glasses launch fixes: kicker framing, product-name stop-filter, emotional_appeal exclusion
+│   ├── test_hypocrisy_medical_duress.py # Hypocrisy frame detection, medical duress framing, healthcare-as-leverage patterns
 │   ├── test_loaded_language_uproar.py # Loaded language detection, workplace coercion terms
 │   ├── test_nyt_ai_reviews.py   # Isolation framing, pressure language, VADER correction
 │   ├── test_nyt_article_improvements.py  # NYT-specific: agency, coercion, juxtaposition

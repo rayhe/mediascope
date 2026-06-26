@@ -145,3 +145,47 @@ def load_all_profiles(profiles_dir: str | None = None) -> dict[str, PublicationP
 
     logger.info("Loaded %d profiles from %s", len(profiles), profiles_dir)
     return profiles
+
+
+def load_config() -> MediaScopeConfig:
+    """Load global MediaScope configuration from environment.
+
+    Convenience wrapper around ``MediaScopeConfig.from_env()`` for use
+    by the CLI and other top-level callers.
+    """
+    return MediaScopeConfig.from_env()
+
+
+def get_profiles_dir(config: MediaScopeConfig | None = None) -> str:
+    """Return the resolved profiles directory path.
+
+    Uses the ``profiles_dir`` from *config* (or from ``load_config()``
+    when *config* is ``None``), and resolves it as an absolute path.
+    """
+    if config is None:
+        config = load_config()
+    profiles_dir = config.profiles_dir
+    # If relative, anchor to the package/project root
+    if not os.path.isabs(profiles_dir):
+        # Try relative to CWD first, then fallback to package location
+        if os.path.isdir(profiles_dir):
+            return os.path.abspath(profiles_dir)
+        pkg_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        candidate = os.path.join(pkg_root, profiles_dir)
+        if os.path.isdir(candidate):
+            return candidate
+    return profiles_dir
+
+
+def get_db_path(config: MediaScopeConfig | None = None) -> str:
+    """Return the resolved database path from config.
+
+    Extracts the filesystem path from the ``db_url`` (strips the
+    ``sqlite:///`` prefix for SQLite URLs).
+    """
+    if config is None:
+        config = load_config()
+    db_url = config.db_url
+    if db_url.startswith("sqlite:///"):
+        return db_url[len("sqlite:///"):]
+    return db_url

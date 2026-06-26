@@ -421,6 +421,86 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
 }
 ```
 
+### careers_leadership
+
+```json
+{
+    "name": "careers_leadership",
+    "description": "Show editorial leadership changes at a publication — EIC transitions, new editorial roles, managing editor changes",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "publication_slug": {
+                "type": "string",
+                "description": "Publication identifier (e.g., 'wired', 'nytimes', 'guardian')"
+            }
+        },
+        "required": ["publication_slug"]
+    }
+}
+```
+
+### detect_framing_devices
+
+```json
+{
+    "name": "detect_framing_devices",
+    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 29 device types across three tiers: core (10 pattern-matched), extended (16 from real-article analysis), and structural post-pass (3 heuristic-based).",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "text": {
+                "type": "string",
+                "description": "Full article text to scan for framing devices"
+            }
+        },
+        "required": ["text"]
+    }
+}
+```
+
+### classify_topic
+
+```json
+{
+    "name": "classify_topic",
+    "description": "Classify an article into standardized topic buckets using keyword-based matching with confidence scoring. Returns TopicScore objects with topic name, confidence (0.0-1.0), and matched keywords. Articles can match multiple topics; the top 3 by confidence are retained. 12 topic buckets: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, workplace_culture.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "text": {
+                "type": "string",
+                "description": "Full article text to classify"
+            }
+        },
+        "required": ["text"]
+    }
+}
+```
+
+### check_quality
+
+```json
+{
+    "name": "check_quality",
+    "description": "Run quality standards checks on MediaScope output text. Detects banned AI-slop phrases ('delve', 'tapestry', 'landscape', etc.), excessive em dashes (limit 3), missing counterargument/limitations/methodology sections. Returns a QualityReport with pass/fail, score (0-100), and itemized issues.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "text": {
+                "type": "string",
+                "description": "Text to check against quality standards"
+            },
+            "metadata": {
+                "type": "object",
+                "description": "Optional metadata for context-aware checks"
+            }
+        },
+        "required": ["text"]
+    }
+}
+```
+
 ### analyze_source_stance
 
 ```json
@@ -667,6 +747,160 @@ state the parallel trends assumption and sample size limitations.
     "methodology_url": "https://github.com/mediascope/mediascope/blob/main/docs/METHODOLOGY.md"
 }
 ```
+
+## Same-Event Comparison Workflow
+
+The most powerful evidence technique in MediaScope is comparing how different publications cover the **same event on the same day**. When the raw facts are held constant, any difference in tone, framing density, source selection, or structural choices is attributable to editorial DNA rather than event severity. This is the media-analysis equivalent of a controlled experiment.
+
+See `METHODOLOGY.md` §13 for the full theoretical framework and `examples/same_event_comparison.py` for a runnable demo.
+
+### Agent Workflow
+
+```
+1. Identify a shared event (same press release, court filing, earnings report)
+
+2. Ingest both articles:
+   mediascope ingest -p wired --since YYYY-MM-DD
+   mediascope ingest -p reuters --since YYYY-MM-DD
+
+3. Analyze both articles against the same target entity:
+   mediascope analyze -p wired -t Meta --since YYYY-MM-DD
+   mediascope analyze -p reuters -t Meta --since YYYY-MM-DD
+
+4. Compare across seven dimensions:
+   - Word count (editorial investment)
+   - Tone score (8-dimension sentiment)
+   - Framing device count and types (technique fingerprint)
+   - Source roster (named vs anonymous, count, affiliations)
+   - Source stance balance (adversarial vs supportive)
+   - Outsourced intensity (who carries the emotional weight)
+   - Structural choices (headline, kicker, paragraph order)
+
+5. Use wire-service baseline:
+   Wire tone ≈ event severity
+   Magazine tone − wire tone ≈ editorial framing contribution
+```
+
+### Python API
+
+```python
+from mediascope.analyze.entities import detect_entities, get_primary_entity
+from mediascope.analyze.sentiment import analyze_composite, measure_outsourced_intensity
+from mediascope.analyze.framing import detect_framing_devices
+from mediascope.analyze.sources import extract_sources, analyze_source_stance
+
+# Analyze both articles through the same pipeline
+wire_result = {
+    "sentiment": analyze_composite(reuters_text, reuters_headline),
+    "framing": detect_framing_devices(reuters_text),
+    "stance": analyze_source_stance(
+        extract_sources(reuters_text), "Meta", full_text=reuters_text
+    ),
+    "outsourced": measure_outsourced_intensity(reuters_text),
+}
+magazine_result = {
+    "sentiment": analyze_composite(wired_text, wired_headline),
+    "framing": detect_framing_devices(wired_text),
+    "stance": analyze_source_stance(
+        extract_sources(wired_text), "Meta", full_text=wired_text
+    ),
+    "outsourced": measure_outsourced_intensity(wired_text),
+}
+
+# The gap between wire and magazine isolates editorial contribution
+tone_gap = magazine_result["sentiment"].overall_tone - wire_result["sentiment"].overall_tone
+framing_gap = len(magazine_result["framing"]) - len(wire_result["framing"])
+```
+
+### Function Calling Schema
+
+```json
+{
+    "name": "compare_same_event",
+    "description": "Compare how two publications covered the same event. Runs the full analysis pipeline on both articles and produces a structured comparison across tone, framing, source deployment, and outsourced intensity. Uses wire-service coverage as the neutral baseline.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "article_a_text": {
+                "type": "string",
+                "description": "Full text of the first article (typically the magazine/newspaper)"
+            },
+            "article_a_headline": {
+                "type": "string",
+                "description": "Headline of the first article"
+            },
+            "article_a_publication": {
+                "type": "string",
+                "description": "Publication name or slug for article A"
+            },
+            "article_b_text": {
+                "type": "string",
+                "description": "Full text of the second article (typically the wire-service baseline)"
+            },
+            "article_b_headline": {
+                "type": "string",
+                "description": "Headline of the second article"
+            },
+            "article_b_publication": {
+                "type": "string",
+                "description": "Publication name or slug for article B"
+            },
+            "target_entity": {
+                "type": "string",
+                "description": "Entity to focus the comparison on (e.g. 'Meta')"
+            },
+            "event_description": {
+                "type": "string",
+                "description": "Brief description of the shared event"
+            }
+        },
+        "required": [
+            "article_a_text", "article_a_headline", "article_a_publication",
+            "article_b_text", "article_b_headline", "article_b_publication",
+            "event_description"
+        ]
+    }
+}
+```
+
+## Framing-Aware Tone Correction Workflow
+
+VADER and TextBlob systematically misprice editorial tone in investigative journalism. Professional prose uses measured, confident language that lexical sentiment models score as positive — even when the editorial stance is clearly adversarial. MediaScope's tone correction pipeline fixes this by detecting structural editorial signals.
+
+See `METHODOLOGY.md` §9 and `examples/framing_correction_demo.py` for a hands-on walkthrough.
+
+### When Correction Fires
+
+Three conditions must all be met:
+
+1. **Adversarial framing density** — 3+ adversarial framing devices detected (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, hypocrisy_frame)
+2. **Negative agency signal** — Active-negative agency (tracking, cutting, forcing) or passive victim framing
+3. **Positive raw VADER score** — The uncorrected composite score misleadingly reads as positive
+
+### Key Outputs
+
+The `SentimentResult` preserves both scores for transparency:
+
+```python
+result = analyze_composite(text, headline)
+
+# Raw VADER/TextBlob composite (often wrong on investigative prose)
+result.raw_tone           # e.g., +0.42
+
+# Corrected score from framing analysis (what the editorial stance actually is)
+result.overall_tone       # e.g., -0.35
+
+# Metadata: whether framing correction fired
+result.framing_corrected  # True/False
+```
+
+### Validated Examples
+
+| Article | VADER Raw | Corrected | Gap | Root Cause |
+|---|---|---|---|---|
+| NYT "Meta AI Employees Miserable" | +0.61 | −0.37 | 0.98 | 5 adversarial devices + active-negative agency |
+| NYT "US Presses Meta on AI Reviews" | +0.61 | −0.57 | 1.18 | Isolation framing + pressure language |
+| Wired "Applied AI Soul-Crushing" | +0.30 | −0.72 | 1.02 | Loaded language + emotional appeal + outsourced intensity |
 
 ## Integration Patterns
 
