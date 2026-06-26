@@ -325,7 +325,9 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"under siege|besieged|defiant|brazen|arrogant|"
         r"tone-deaf|out of touch|nefarious|scandalous|"
         r"comically|laughably|absurdly|laughable|"
-        r"dishonest|dishonesty|fundamentally\s+(?:dishonest|unethical|flawed|problematic))\b",
+        r"dishonest|dishonesty|fundamentally\s+(?:dishonest|unethical|flawed|problematic)|"
+        r"deceptive|misleading|disingenuous|"
+        r"unprecedented\s+(?:\w+\s+)?(?:breach|breaches|violation|exposure|threat|risk|danger|harm|crisis|failure))\b",
         re.IGNORECASE,
     ),
     # Scare quotes / hedging language that undermines
@@ -1838,9 +1840,12 @@ _SPECULATIVE_FRAMING_PATTERNS: list[re.Pattern] = [
         re.IGNORECASE,
     ),
     # "could change that" / "could alter" / "could transform" / "could reshape"
+    # Allows one optional intervening adverb: "could later influence",
+    # "could easily affect", "could ultimately determine"
     re.compile(
-        r"\bcould\s+(?:change|alter|transform|reshape|upend|shift|undermine|"
-        r"erode|weaken|eliminate|remove|lessen)\b",
+        r"\bcould\s+(?:\w+\s+)?(?:change|alter|transform|reshape|upend|shift|undermine|"
+        r"erode|weaken|eliminate|remove|lessen|"
+        r"influence|affect|impact|leak|seep|expose|enable|allow|determine|shape)\b",
         re.IGNORECASE,
     ),
     # "suggests that X could/might/may" — indirect evidence framing
@@ -2063,6 +2068,15 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
                 )
             )
             break  # One detection per article is sufficient
+
+    # Post-pass: analogy stacking (fires when 3+ distinct analogy markers found)
+    devices.extend(_detect_analogy_stacking(text))
+
+    # Post-pass: speculative framing (fires when 5+ cumulative hedges found)
+    devices.extend(_detect_speculative_framing(text))
+
+    # Re-sort after adding post-pass results
+    devices.sort(key=lambda d: d.start)
 
     return devices
 

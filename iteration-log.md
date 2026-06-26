@@ -3884,3 +3884,78 @@ Plus Brian Kahn's Earther connection (Earther was Gizmodo's climate vertical).
 - Tests: 480/480 passing
 - Commit: `ebb8552` — 4 files changed, 83 insertions, 1 deletion
 - Pushed to GitHub
+
+---
+
+## 2026-06-26 14:00 PT — Hour Type A: Article Deep Dive
+
+**Focus:** MIT Technology Review op-ed "What AI 'remembers' about you is privacy's next frontier" (2026-01-28) by Miranda Bogen & Ruchika Joshi (CDT)
+
+**Article analysis:**
+- Saved: `examples/sample_output/mit_tr_ai_memory_privacy_frontier_2026_01_article.txt`
+- Analysis: `examples/sample_output/mit_tr_ai_memory_privacy_frontier_2026_01_analysis.md`
+- Framing: 6 devices detected (4 true positives, 2 known false positives documented)
+- CDT affiliation: Center for Democracy & Technology — established digital rights org, not activist fringe
+
+**Bug fix (HIGH SEVERITY): analogy_stacking and speculative_framing post-passes never called**
+- `_detect_analogy_stacking()` and `_detect_speculative_framing()` were fully defined with patterns, thresholds, and deduplication logic, but `detect_framing_devices()` never called them
+- Root cause: these were added as post-passes (like `kicker_framing`) but the calls were never wired into the main detection function
+- Fix: added `devices.extend(_detect_analogy_stacking(text))` and `devices.extend(_detect_speculative_framing(text))` after kicker_framing post-pass, with re-sort
+- Impact: 2 of 30 device types were completely non-functional before this fix
+
+**Pattern improvements (4 edits to `mediascope/analyze/framing.py`):**
+1. loaded_language: added "deceptive", "misleading", "disingenuous" adjectives
+2. loaded_language: added `unprecedented [adj]? (breach|violation|exposure|threat|risk|danger|harm|crisis|failure)` pattern
+3. speculative_framing: expanded verb list with influence, affect, impact, leak, seep, expose, enable, allow, determine, shape
+4. speculative_framing: added optional intervening adverb (`(?:\w+\s+)?`) to "could [adv] verb" pattern for phrases like "could later influence"
+
+**New test file:** `tests/test_postpass_activation.py` — 23 tests covering:
+- analogy_stacking above/below threshold (6 tests)
+- speculative_framing above/below threshold (4 tests)
+- Expanded speculative verbs (leak, seep, expose, influence, etc.) (2 tests)
+- loaded_language new patterns (deceptive, misleading, disingenuous, unprecedented+noun) (9 tests)
+- Integration: both post-passes firing together (1 test)
+- Key learning: analogy pattern tests need well-spaced markers (80+ chars apart) to avoid overlap deduplication from greedy `.{3,80}` regex tails
+
+**Stats:**
+- Total test files: 20 (was 19)
+- Tests: 518/518 passing (was 495)
+- Device types functional: 30/30 (was 28/30 — analogy_stacking + speculative_framing were dead code)
+
+
+---
+
+## 2026-06-26 14:00 PT — Hour Type A: Article Deep Dive
+
+**Focus:** MIT Technology Review op-ed "What AI 'remembers' about you is privacy's next frontier" (2026-01-28) by Miranda Bogen & Ruchika Joshi (CDT)
+
+**Article analysis:**
+- Saved: `examples/sample_output/mit_tr_ai_memory_privacy_frontier_2026_01_article.txt`
+- Analysis: `examples/sample_output/mit_tr_ai_memory_privacy_frontier_2026_01_analysis.md`
+- Framing: 6 devices detected (4 true positives, 2 known false positives documented)
+- CDT affiliation: Center for Democracy & Technology — established digital rights org, not activist fringe
+
+**Bug fix (HIGH SEVERITY): analogy_stacking and speculative_framing post-passes never called**
+- `_detect_analogy_stacking()` and `_detect_speculative_framing()` were fully defined with patterns, thresholds, and deduplication logic, but `detect_framing_devices()` never called them
+- Root cause: these were added as post-passes (like `kicker_framing`) but the calls were never wired into the main detection function
+- Fix: added `devices.extend(_detect_analogy_stacking(text))` and `devices.extend(_detect_speculative_framing(text))` after kicker_framing post-pass, with re-sort
+- Impact: 2 of 30 device types were completely non-functional before this fix
+
+**Pattern improvements (4 edits to `mediascope/analyze/framing.py`):**
+1. loaded_language: added "deceptive", "misleading", "disingenuous" adjectives
+2. loaded_language: added `unprecedented [adj]? (breach|violation|exposure|threat|risk|danger|harm|crisis|failure)` pattern
+3. speculative_framing: expanded verb list with influence, affect, impact, leak, seep, expose, enable, allow, determine, shape
+4. speculative_framing: added optional intervening adverb (`(?:\w+\s+)?`) to "could [adv] verb" pattern for phrases like "could later influence"
+
+**New test file:** `tests/test_postpass_activation.py` — 23 tests covering:
+- analogy_stacking above/below threshold (6 tests)
+- speculative_framing above/below threshold (4 tests)
+- Expanded speculative verbs (leak, seep, expose, influence, etc.) (2 tests)
+- loaded_language new patterns (deceptive, misleading, disingenuous, unprecedented+noun) (9 tests)
+- Integration: both post-passes firing together (1 test)
+- Key learning: analogy pattern tests need well-spaced markers (80+ chars apart) to avoid overlap deduplication from greedy `.{3,80}` regex tails
+
+**Stats:**
+- Total test files: 20 (was 19)
+- Tests: 518/518 passing (was 495)
+- Device types functional: 30/30 (was 28/30 — analogy_stacking + speculative_framing were dead code)
