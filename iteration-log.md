@@ -4,6 +4,66 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 02:00 PT — Hour Type B: Guardian Journalist Expansion + Nellie Bowles & Danny Yadron
+
+**Focus:** Strengthening the Guardian journalism pipeline. Guardian was the weakest of the 5 tracked publications (13 journalists). Expanded 3 existing journalists with richer career data and added 2 new journalists from the 2015 Guardian US West Coast bureau expansion trio. Added 3 Guardian editorial changes documenting the West Coast bureau buildout.
+
+### Journalists Expanded
+
+**1. Dan Milmo (4 entries, enriched notes)**
+- Added Japan Foreign Press Center fellowship detail (2011 — visited Toyota, Nissan, Hitachi, Komatsu, Renesas)
+- Updated global technology editor entry with 2026 coverage focus: UK under-16 social media ban series, SpaceX/Anysphere, JLR cyber hack, AI stock bubble
+- Source: fpcj.jp, BuzzSumo
+
+**2. Kari Paul (3 → 5 entries)**
+- Added Complex magazine elections contributor role (2016)
+- Added post-Guardian freelance period from Paris (2024-)
+- Enriched education: University of Missouri-Columbia (BA journalism + intl studies, 2014), Universidad Austral Buenos Aires (2013 exchange), Paris College of Art (MFA Transdisciplinary New Media, 2024-2026)
+- Source: TalkingBizNews (hire/departure), RocketReach, MuckRack
+
+**3. Julia Carrie Wong (3 → 4 entries)**
+- Added pre-SF Weekly freelance period (Salon, In These Times, New Yorker, USA Today, Vice)
+- Enriched Guardian entry: Dec 2015 trio hire context, Sophie Zhang whistleblower series, Myanmar genocide coverage
+- Added education: Harvard (BA), University of Iowa (MFA writing)
+- Source: Adweek, TalkingBizNews, TechPolicy.Press
+
+### New Journalists Added
+
+**4. Nellie Bowles (#100, 6 entries)**
+- SF Chronicle → Recode → Guardian (2016-2017, West Coast bureau) → Vice News → NYT (Gerald Loeb Award, RFK Award) → The Free Press (co-founder with Bari Weiss, $150M acquisition by Paramount Skydance)
+- Tests Guardian → NYT pipeline. Politically shifted from progressive to independent/anti-woke.
+- Columbia BA, Fulbright. Author: "Morning After the Revolution" (2024).
+- Source: Wikipedia, Adweek (Dec 2015 hire), MuckRack, YouTube interviews
+
+**5. Danny Yadron (#101, 5 entries)**
+- Austin American-Statesman → WSJ (politics/cybersecurity, 5 years) → Guardian (2015-2016, West Coast bureau) → Stanford Law → federal public defender (current)
+- Tests WSJ → Guardian pipeline. Rare example: journalist exits for public interest law, not another publication.
+- Northwestern BS+MS Journalism, Stanford Law.
+- Covered Apple/FBI San Bernardino, first Tesla Autopilot death, Iranian hackers at WSJ
+- Source: TalkingBizNews (WSJ hire, Guardian hire), BuzzSumo, MuckRack
+
+### Guardian Editorial Changes Added (3 new)
+
+**6. West Coast Bureau Buildout (mid-2015)**
+- Paul Lewis: Washington correspondent → West Coast bureau chief (Jul 2015). Later became Head of Investigations (current). Cambridge BA, Harvard intl law. 12 journalism awards. Co-author "Undercover."
+- Merope Mills: Executive editor (London) → West Coast editor (Jun 2015). Previously Saturday editor, Weekend magazine, film and music.
+- Jemima Kiss: Head of technology, West Coast (Aug 2015). Led tech trends, gadgets, gaming, startups coverage.
+- Source: Adweek ("Guardian US Selects West Coast Bureau Team", "Guardian US Boosts Tech Reporter Ranks")
+
+### Updated Documentation
+- README.md: 97 → 101 journalists, 155+ → 170+ publications, added Bowles and Yadron to migration examples
+- EDITORIAL_HISTORIES.md: updated journalist count (97→101), publication count (155+→170+), multi-publication careers (95→99)
+
+### Stats After This Iteration
+- Total journalists: 101
+- Multi-publication careers: 99
+- Guardian-affiliated journalists: 15 (was 13)
+- Guardian editorial changes: 17 (was 14)
+- Unique publications referenced: 172
+- Tests: 535 (all passing)
+
+---
+
 ## 2026-06-27 00:00 PT — Hour Type A: Article Deep Dive (Wired Meta AI "Gulag" Engineer Revolt)
 
 **Focus:** Wired's June 12–16, 2026 rolling coverage of Meta's Applied AI unit revolt — employees calling it "the gulag," CTO Bosworth admitting rollout was "atrocious," 6,500 engineers conscripted into AI data labeling. Article reconstructed from secondary sources (TechCrunch, WebProNews, Inc, TechTimes, CryptoRank, Barchart, Mother Jones) due to Wired paywall.
@@ -32,7 +92,7 @@ Tracks every improvement cycle run on the toolkit.
 - `examples/sample_output/wired_meta_ai_gulag_engineer_revolt_2026_06_analysis.md` — NEW: full analysis
 
 ### Commit
-- Hash: a4d6536
+- Hash: 3bd7884
 - Pushed to GitHub
 
 ### Observations
