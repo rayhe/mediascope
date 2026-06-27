@@ -133,23 +133,72 @@ journalists:
     (adversarial British tabloid tech) → Wired (Condé Nast longform) → NYT (institutional prestige) traces the entire arc
     of how AI coverage went from niche to front-page.'
 - career:
-  - beat: AI, robotics
-    end: 2018-08
+  - beat: technology, science
+    end: 2008-01
     event_type: hired
-    notes: 13-year tenure. Senior editor for AI. One of the longest-serving AI beat reporters.
+    notes: 'Editor and writer on the technology team. Joined straight out of university (studied anthropology and journalism
+      in the UK). Prolific output: ~1,280+ articles across technology, space, and science. Earliest archived articles date
+      to 2002. Covered AI during the "AI winter" period — bought grad-school AI textbooks where neural networks were "a small
+      chapter." Covered Deep Blue vs Kasparov (1997), interviewed Kasparov. Also reported on early machine learning (Bayesian
+      spam filtering), robotics, cybersecurity, space (Hubble servicing missions, SpaceShipOne), and the dot-com boom. New
+      Scientist''s technology team gave him broad science-tech coverage before he specialized in AI. The magazine''s UK science-weekly
+      institutional norms (evidence-based, skeptical of hype) shaped his reporting style — visible in his persistent skepticism
+      about AGI claims at Wired.'
+    publication: new-scientist
+    role: editor
+    source_url: https://www.newscientist.com/author/will-knight/
+    start: 2001-01
+  - beat: technology
+    end: 2008-01
+    event_type: hired
+    notes: Brief stint at CNET. Exact dates and role unclear; mentioned in TalkingBizNews hire announcement alongside New
+      Scientist. Likely overlapping or short-term position during New Scientist tenure. CNET's consumer-tech product-review
+      culture contrasts with New Scientist's science focus.
+    publication: cnet
+    role: writer
+    source_url: https://talkingbiznews.com/they-move/wired-hires-knight-to-cover-artificial-intelligence/
+  - beat: AI, robotics, machine learning, China tech
+    end: 2019-09
+    event_type: hired
+    notes: 'Senior editor for AI. 11-year tenure — one of the longest-serving AI beat reporters at any major publication.
+      Joined from New Scientist in 2008. Also served as online managing editor. Covered fundamental advances in AI, machine
+      learning, automated driving, and robotics. Wrote extensively about China''s AI boom. Witnessed the transition from AI
+      winter to the deep learning revolution: was already covering the beat when AlexNet (2012), AlphaGo (2016), and early
+      transformer work happened. MIT Tech Review''s institutional culture (academic-adjacent, MIT affiliation, research-focused)
+      reinforced evidence-based skepticism about AI claims. This 11-year foundation means Knight arrived at Wired with deeper
+      AI domain knowledge than almost any journalist in the field.'
     publication: mit-tech-review
-    role: senior_writer
+    role: senior_editor
     source_url: https://www.technologyreview.com/author/will-knight/
-    start: 2005-01
-  - beat: AI
+    start: 2008-01
+  - beat: AI, machine learning, robotics, military tech, computing
     event_type: hired
-    notes: Continued AI coverage at Wired. Tests whether MIT Tech Review tone carries over.
+    notes: 'Senior writer covering artificial intelligence. Hired September 2019 (TalkingBizNews announcement Sep 17, 2019:
+      "he starts next week"). Writes the AI Lab newsletter, "a weekly dispatch from the cutting edge of AI." Based in Cambridge,
+      Massachusetts. Notable work includes: major feature on autonomous military systems and Navy AI testing in Gulf of Oman
+      (praised by Carnegie Council), coverage of ChatGPT/LLM hype cycle with persistent skepticism about AGI timelines, EUV
+      lithography and Moore''s Law feature. Poynter Fellowship in Journalism speaker at Yale (2024/25, on AI in journalism).
+      Carnegie Council for Ethics podcast (Oct 2023, "Tales from the Hype Beat"). News Literacy Project featured guest (S3E1,
+      on AI chatbots and search). KEY MIGRATION: MIT Tech Review → Wired represents academic-adjacent → Condé Nast pipeline.
+      His 20+ year career covering AI (since the AI winter through deep learning revolution) makes him Wired''s most experienced
+      AI reporter. Tests whether long beat experience produces different framing than journalists who arrived during the hype.
+      Carnegie interview reveals his framing approach: explicitly skeptical of AGI extrapolation, focused on immediate harms
+      (AI persuasion, subtle bias) over existential risk theater. Notably calls for more transparency from AI companies, not
+      less regulation. Self-describes covering AI as "outsider perspective." Signal handle: wak.01. @wiredunion member.'
     publication: wired
     role: senior_writer
     source_url: https://www.wired.com/author/will-knight/
-    start: 2018-09
+    start: 2019-09
   name: Will Knight
-  notes: 'Key migration: MIT Tech Review → Wired. AI reporter moving within the tech-critical pipeline.'
+  notes: 'Key migration: New Scientist → CNET (brief) → MIT Tech Review → Wired. One of the longest-serving AI beat reporters
+    in journalism — covering AI since the early 2000s AI winter through the deep learning revolution and LLM hype cycle. Studied
+    anthropology and journalism in the UK. Based in Cambridge, Massachusetts. 11 years at MIT Tech Review gave him deep technical
+    grounding; 20+ year total AI coverage makes him Wired''s most experienced AI reporter. Writes the AI Lab newsletter at
+    Wired. Poynter Fellowship lecturer at Yale. Framing signature: persistent AGI skepticism, focus on immediate AI harms
+    over existential risk, calls for transparency. KEY for MediaScope: his New Scientist science-journalism training and MIT
+    Tech Review academic-adjacent institutional norms provide a strong control for measuring whether Wired''s Condé Nast editorial
+    culture shifts his framing. Unlike most Wired AI writers who arrived during the hype, Knight has covered every AI cycle
+    since the winter.'
 - career:
   - beat: tech labor, workplace
     end: 2022-06
@@ -301,10 +350,10 @@ journalists:
   - beat: local news
     end: 2015-12
     event_type: hired
-    notes: 'Early career in San Francisco local journalism. Began at SF Weekly, then San Francisco Examiner. Also worked at
+    notes: Early career in San Francisco local journalism. Began at SF Weekly, then San Francisco Examiner. Also worked at
       Ratter (a Gawker Media local news venture), where she helped start three local news sites and edited all of them. The
       Ratter connection is her first entry into the Gawker Media ecosystem, which would shape her next two career moves. Born
-      April 1989 (Kate Adelia Conger).'
+      April 1989 (Kate Adelia Conger).
     publication: sf-weekly
     role: reporter
     start: 2014-01
@@ -330,13 +379,13 @@ journalists:
     start: 2017-07
   - beat: tech labor, social media, Twitter/X, Elon Musk
     event_type: hired
-    notes: 'General assignment technology reporter, based in San Francisco. Hired by Pui-Wing Tam and Ellen Pollock (with Adrienne
-      Carter). Described as "ferocious" by colleagues Sheera Frenkel and Mike Isaac. Beat expanded from general tech to Twitter/X
-      and Elon Musk coverage. 2019 Gerald Loeb Award finalist (beat reporting) with Daisuke Wakabayashi and Katie Benner for
-      coverage of Andy Rubin''s $90M Google severance after sexual harassment allegations. Co-authored ''Character Limit: How
-      Elon Musk Destroyed Twitter'' with colleague Ryan Mac (Penguin, Sep 2024). Covers: hackers, AI in autonomous weapons,
-      labor uprisings in the gig economy. Part of the Gizmodo → NYT pipeline that also produced Dell Cameron (Gizmodo → Wired)
-      and Dhruv Mehrotra (Gizmodo → Wired).'
+    notes: 'General assignment technology reporter, based in San Francisco. Hired by Pui-Wing Tam and Ellen Pollock (with
+      Adrienne Carter). Described as "ferocious" by colleagues Sheera Frenkel and Mike Isaac. Beat expanded from general tech
+      to Twitter/X and Elon Musk coverage. 2019 Gerald Loeb Award finalist (beat reporting) with Daisuke Wakabayashi and Katie
+      Benner for coverage of Andy Rubin''s $90M Google severance after sexual harassment allegations. Co-authored ''Character
+      Limit: How Elon Musk Destroyed Twitter'' with colleague Ryan Mac (Penguin, Sep 2024). Covers: hackers, AI in autonomous
+      weapons, labor uprisings in the gig economy. Part of the Gizmodo → NYT pipeline that also produced Dell Cameron (Gizmodo
+      → Wired) and Dhruv Mehrotra (Gizmodo → Wired).'
     publication: nytimes
     role: correspondent
     source_url: https://nytco.com/press/kate-conger-joins-the-new-york-times/
@@ -346,10 +395,10 @@ journalists:
     → SF Examiner → Ratter (Gawker Media local news) → TechCrunch → Gizmodo → NYT. Co-author of ''Character Limit: How Elon
     Musk Destroyed Twitter'' (2024, Penguin) with Ryan Mac. 2019 Gerald Loeb Award finalist. First to publish the Damore Google
     Memo (2017). Broke Google Project Maven employee activism. The Gawker Media ecosystem (Ratter → Gizmodo) shaped her tech
-    accountability instincts — adversarial framing toward Big Tech internal culture was established before she joined NYT. KEY
-    for MediaScope: her career is a case study of the Gawker → NYT talent pipeline. Her beat (Twitter/X, Musk) makes her coverage
-    directly comparable to Zoë Schiffer (who co-authored ''Extremely Hardcore'' at Platformer before joining Wired). Both wrote
-    definitive Musk/Twitter books from different institutional homes.'
+    accountability instincts — adversarial framing toward Big Tech internal culture was established before she joined NYT.
+    KEY for MediaScope: her career is a case study of the Gawker → NYT talent pipeline. Her beat (Twitter/X, Musk) makes her
+    coverage directly comparable to Zoë Schiffer (who co-authored ''Extremely Hardcore'' at Platformer before joining Wired).
+    Both wrote definitive Musk/Twitter books from different institutional homes.'
 - career:
   - beat: technology, security, column
     end: 2014-12
@@ -412,30 +461,105 @@ journalists:
     sequentially. Can directly compare editorial direction under same individual across different institutional structures
     to decompose individual from institutional effects.'
 - career:
-  - beat: technology
-    end: 2014-06
+  - beat: general, local news
+    end: 1986-01
     event_type: hired
-    notes: Long-tenured tech columnist. Co-founded AllThingsD.
+    notes: First job after Columbia Journalism School (MS 1985). Editor at Washington's alternative weekly. Early career in
+      DC local/alternative press. Had interned at Washington Post during sophomore and junior years at Georgetown.
+    publication: washington-city-paper
+    role: editor
+    source_url: https://en.wikipedia.org/wiki/Kara_Swisher
+    start: 1985-06
+  - beat: retail, technology, AOL, dot-com
+    end: 1997-01
+    event_type: hired
+    notes: 'Returned to the Post (where she had interned) in 1986 as a news aide for the Style desk, then became a reporter
+      covering the local retail beat. Pivotal period: began extensively using technology ("carried a suitcase cell phone"),
+      received national attention for covering AOL and the beginning of the dot-com era in the 1990s. Left the Post to write
+      her first book, "aol.com: How Steve Case Beat Bill Gates" (Times Business Books, 1998). Met Walt Mossberg during this
+      period — the partnership that would define her career. Also worked at The McLaughlin Group early in her career (later
+      alleged host John McLaughlin abused staff and sexually harassed women, in 2018 Slate article). Cited by Industry Standard
+      as "most influential reporter covering the internet."'
+    publication: washington-post
+    role: reporter
+    source_url: https://en.wikipedia.org/wiki/Kara_Swisher
+    start: 1986-01
+  - beat: technology, Silicon Valley, internet
+    end: 2013-12
+    event_type: hired
+    notes: 'San Francisco bureau. Created and wrote "BoomTown" column — front page of Marketplace section and WSJ.com. Also
+      wrote "Home Economics" weekly column on home tech. Co-launched D: All Things Digital conference with Walt Mossberg (2003)
+      — premiered as the country''s leading tech conference, interviewing Gates, Jobs, Zuckerberg, Bezos, Cook, Dorsey. Co-founded
+      AllThingsD.com blog with Mossberg (2007). Gerald Loeb Award for Blogging (2011) for liveblogging Yahoo earnings calls.
+      Wrote sequel book "There Must Be a Pony in Here Somewhere: The AOL Time Warner Debacle" (Crown Business, 2003). KEY:
+      16-year WSJ tenure established her as Silicon Valley''s most feared/respected reporter. Her adversarial style was already
+      fully formed here — Sheryl Sandberg once said "It is a constant joke in the Valley when people write memos for them
+      to say, I hope Kara never sees this."'
     publication: wsj
     role: columnist
+    source_url: https://www.wsj.com/news/author/kara-swisher
     start: 1997-01
-  - beat: technology, Big Tech
-    end: 2019-12
+  - beat: technology, Big Tech, media
+    end: 2022-06
     event_type: hired
-    notes: Founded Recode (spun off from The Verge/Vox Media). Anti-Meta, anti-Big-Tech editorial.
+    notes: Co-founded Recode (Jan 1, 2014) with Walt Mossberg after leaving WSJ/AllThingsD. Based in San Francisco. Vox Media
+      acquired Recode in May 2015. Launched Recode Decode podcast (June 2015) with Stewart Butterfield as first guest. Co-launched
+      Pivot podcast with Scott Galloway (Sep 2018) — became one of the most popular tech/business podcasts. Also held inaugural
+      Code Conference near LA (spring 2014), succeeding the D conference. Executive producer of Code conference. Anti-Meta,
+      anti-Big-Tech editorial stance. By her own admission (May 2020 tweet), had "not been involved in editing or assigning
+      stories on Recode for many years." In April 2020, Pivot moved to New York Magazine properties, dropping Recode branding.
+      Swisher remained connected to Vox Media throughout NYT period. Founded Revere Digital (holding company for Recode and
+      Code). MSNBC "Revolution" special series on technology's impact.
     publication: recode
     role: eic
-    start: 2014-07
-  - beat: technology opinion
-    end: 2023-12
+    source_url: https://en.wikipedia.org/wiki/Kara_Swisher
+    start: 2014-01
+  - beat: technology opinion, Big Tech
+    end: 2022-06
     event_type: hired
-    notes: Opinion columnist. Maintained anti-Big-Tech stance. Left to focus on Pivot podcast.
+    notes: 'Contributing opinion writer (2018-2022, not 2020 as previously listed). Wrote on Elon Musk, Kevin Systrom''s Instagram
+      departure, Google''s China censorship consideration, Ro Khanna''s internet Bill of Rights. Hosted "Sway" podcast (premiered
+      Sep 21, 2020, Salesforce-sponsored) — Nancy Pelosi was first guest. Had weekly NYT newsletter. Left in June 2022 (Bloomberg
+      report) to return to Vox Media. Maintained anti-Big-Tech stance. CONCURRENT with Recode/Vox Media roles — she was splitting
+      time between NYT and Vox. KEY: NYT Opinion gave her the most prestigious institutional platform for her anti-tech-platform
+      views, but she functioned as a columnist rather than a reporter, meaning her framing was explicitly opinion from the
+      start.'
     publication: nytimes
     role: columnist
     source_url: https://www.nytimes.com/by/kara-swisher
-    start: 2020-01
+    start: 2018-01
+  - beat: technology, Silicon Valley, longevity
+    event_type: transition
+    notes: 'Editor-at-large at New York Magazine (Sep 2022-present). Host of "On with Kara Swisher" podcast (premiered Sep
+      26, 2022). Co-host of "Pivot" podcast with Scott Galloway (ongoing). Published memoir "Burn Book: A Tech Love Story"
+      (Simon & Schuster, Feb 2024) — received criticism for being "anti-worker." CNN Original Series "Kara Swisher Wants to
+      Live Forever" (6-part longevity documentary, premiered April 11, 2026) — explored longevity science, tech billionaires''
+      anti-aging pursuits, underwent ketamine infusion, hyperbaric chamber, red-light therapy. Livingston Awards judge since
+      2014. Appeared as herself in HBO''s "Silicon Valley" (2015). Hosted companion podcast for "Succession" S3 (2021) and
+      S4 (2023). Elected to American Academy of Arts and Sciences (2021). Known for wearing dark aviator sunglasses indoors
+      ("I have light sensitivity"). Born Dec 11, 1962, grew up in Princeton, NJ (moved from Roslyn Harbor, LI after father''s
+      death at age 5). Georgetown SFS (BS 1984), Columbia Journalism (MS 1985). Married Megan Smith (1999, ex-US CTO, divorced
+      2017), married Amanda Katz (2020). Four children. Suffered mini-stroke on flight to Hong Kong (2011). Announced plan
+      to run for SF mayor in 2023 (announced 2016, never ran). KEY for MediaScope: Swisher is the ultimate test case for PORTABLE
+      individual bias vs institutional bias. Her anti-Big-Tech stance has been consistent across FIVE outlets (Washington
+      Post, WSJ, Recode, NYT, Vox/NY Mag) spanning 40 years. If her tone doesn''t shift across outlets with different institutional
+      cultures, it strongly supports the individual-bias hypothesis in the DiD analysis. Her book "Burn Book" provides a first-person
+      account of her framing development.'
+    publication: vox-media
+    role: editor_at_large
+    source_url: https://en.wikipedia.org/wiki/Kara_Swisher
+    start: 2022-09
   name: Kara Swisher
-  notes: Anti-Big-Tech stance across every outlet she's worked at. The ultimate test of portable individual bias.
+  notes: 'Key migration: Washington City Paper → Washington Post → WSJ (16 years) → Recode (co-founder) → NYT Opinion → Vox
+    Media/New York Magazine. Born Dec 11, 1962. Georgetown SFS (BS 1984), Columbia Journalism (MS 1985). Anti-Big-Tech stance
+    has been consistent across five outlets and 40 years — the ultimate test case for portable individual bias vs institutional
+    editorial influence. Co-created the D: All Things Digital conference (2003) and AllThingsD.com (2007) with Walt Mossberg.
+    Founded Recode (2014). Co-hosts Pivot podcast with Scott Galloway (since 2018). Author of "aol.com" (1998), "There Must
+    Be a Pony" (2003), "Burn Book: A Tech Love Story" (2024). CNN documentary "Kara Swisher Wants to Live Forever" (April
+    2026). Gerald Loeb Award (2011). American Academy of Arts and Sciences (2021). Sheryl Sandberg: "It is a constant joke
+    in the Valley when people write memos to say, I hope Kara never sees this." KEY for MediaScope DiD analysis: if her framing
+    doesn''t modulate across outlets with radically different institutional cultures, it provides strong evidence that individual
+    bias dominates institutional bias for established columnists.'
 - career:
   - beat: technology, startups
     end: 2010-06
@@ -1153,12 +1277,12 @@ journalists:
   - beat: technology, cybersecurity, LA tech, Silicon Beach
     end: 2017-09
     event_type: hired
-    notes: 'Started as business reporting intern (May 2013) covering cybersecurity, online privacy for Tech Now blog. Rotated
+    notes: Started as business reporting intern (May 2013) covering cybersecurity, online privacy for Tech Now blog. Rotated
       through sports business (Oct-Dec 2013), criminal courts for LA Now (winter 2013), national breaking news (spring 2014).
       From summer 2014, established LA tech industry beat (Silicon Beach) focusing on entertainment/media convergence with
       tech startups. ~4.5-year tenure. SABEW honorable mention for team coverage of Snap IPO (2017). The LA Times tenure represents
       the traditional local-paper-to-wire-service pipeline — Dave built his beat from an intern rotation into a standalone
-      tech correspondent role.'
+      tech correspondent role.
     publication: la-times
     role: reporter
     source_url: https://pareshdave.com/resume.php
@@ -1168,8 +1292,8 @@ journalists:
     event_type: hired
     notes: 'Covered Google, YouTube, Waymo, and the rest of the Alphabet family. Also covered machine learning, AI, and "the
       use and abuse of emerging technologies across the technology industry." Helped cover Facebook for a year during privacy/security
-      crisis period. Maynard Institute Investigative Reporting Fellow (2022). Nominee for Reuters enterprise reporting of the
-      year (2020). Broke story on Google telling European publishers it would cut off ad tools if they blocked data harvesting
+      crisis period. Maynard Institute Investigative Reporting Fellow (2022). Nominee for Reuters enterprise reporting of
+      the year (2020). Broke story on Google telling European publishers it would cut off ad tools if they blocked data harvesting
       (Jul 2020). Also broke Zuckerberg deposition detail: he considered naming Cambridge Analytica in a 2017 speech. ~5.5-year
       tenure at Reuters, based in Oakland/SF Bay Area.'
     publication: reuters
@@ -1178,12 +1302,12 @@ journalists:
     start: 2017-09
   - beat: Big Tech (AAPL, AMZN, GOOGL, META, MSFT), AI
     event_type: hired
-    notes: 'Senior writer covering "the inner workings of big tech companies." Expanded from Google-focused at Reuters to all
-      Big Five (Apple, Amazon, Google, Meta, Microsoft). Broke stories on AI training data disputes, Alphabet layoffs, OpenAI/Sam
-      Altman. Examined biases in ChatGPT and generative AI. First journalist to use transit dashcam footage to illustrate
-      autonomous vehicle faults. Collaborated on SVB collapse and Amazon drone delivery investigations. Broke OpenAI for-profit
-      conversion advocacy group story. Based in San Francisco, reports on business desk. @wiredunion member. Contact: paresh_dave@wired.com,
-      415-565-1302 (Signal/WhatsApp/Telegram).'
+    notes: 'Senior writer covering "the inner workings of big tech companies." Expanded from Google-focused at Reuters to
+      all Big Five (Apple, Amazon, Google, Meta, Microsoft). Broke stories on AI training data disputes, Alphabet layoffs,
+      OpenAI/Sam Altman. Examined biases in ChatGPT and generative AI. First journalist to use transit dashcam footage to
+      illustrate autonomous vehicle faults. Collaborated on SVB collapse and Amazon drone delivery investigations. Broke OpenAI
+      for-profit conversion advocacy group story. Based in San Francisco, reports on business desk. @wiredunion member. Contact:
+      paresh_dave@wired.com, 415-565-1302 (Signal/WhatsApp/Telegram).'
     publication: wired
     role: senior_writer
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-dave-as-a-senior-writer-covering-big-tech/
@@ -1192,15 +1316,15 @@ journalists:
   notes: 'Wired senior writer covering all Big Five tech companies (Apple, Amazon, Google, Meta, Microsoft) and AI. Career
     arc: Neon Tommy (USC) → LA Times → Reuters → Wired. USC Annenberg BA summa cum laude (2013), minors in business law and
     web technologies. Lifelong Californian. Maynard Institute Investigative Reporting Fellow (2022). SABEW honorable mention
-    (Snap IPO team, 2017). KEY for MediaScope: his career represents a distinctly NON-Gizmodo/Vice pipeline into Wired —
-    the traditional local newspaper (LA Times) → wire service (Reuters) → magazine path. He arrived at Wired in Jan 2023, the
+    (Snap IPO team, 2017). KEY for MediaScope: his career represents a distinctly NON-Gizmodo/Vice pipeline into Wired — the
+    traditional local newspaper (LA Times) → wire service (Reuters) → magazine path. He arrived at Wired in Jan 2023, the
     same month Drummond became editorial director candidate (she started Sep 2023). His hiring under the pre-Drummond editorial
     regime (Lichfield era) and continuation under Drummond makes him a natural control for measuring editorial tone shifts:
     does his Big Tech coverage framing change after Drummond''s arrival? His Reuters background (wire service neutrality norms)
     is the opposite of the Gizmodo/Vice adversarial DNA that Drummond, Barrett, Marchman, and Feiger share. ANALYTICAL VALUE:
-    As the sole Wired reporter covering ALL five Big Tech companies, his framing decisions have outsized influence on how Wired''s
-    readers perceive each company''s relative accountability. Compare his Meta coverage against his Google coverage (his original
-    beat at Reuters) to test for company-specific framing bias.'
+    As the sole Wired reporter covering ALL five Big Tech companies, his framing decisions have outsized influence on how
+    Wired''s readers perceive each company''s relative accountability. Compare his Meta coverage against his Google coverage
+    (his original beat at Reuters) to test for company-specific framing bias.'
 - career:
   - beat: business
     end: 2010-12
