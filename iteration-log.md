@@ -4242,5 +4242,6 @@ All 518 tests pass (no regressions).
 4. **The cross-analysis file already existed** (`wired_vs_reuters_mci_data_exposure_2026_06_22_cross_analysis.md`) — this standalone analysis completes the pair by providing detailed toolkit validation for the Reuters side.
 
 ### Commit
-- Hash: TBD (pending push)
+- Hash: 3f16877
+- Pushed to GitHub
 - Changes: `mediascope/analyze/framing.py` (3 pattern additions), `examples/sample_output/reuters_meta_mci_pause_2026_06_22_analysis.md` (new file)

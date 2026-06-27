@@ -58,7 +58,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **97 journalists** across 155+ publications, including high-value migrations like Karen Hao (MIT Tech Review → Atlantic), Cade Metz (Wired → NYT), Zoë Schiffer (The Verge → Platformer → Wired), Zeyi Yang (MIT Tech Review → Wired), Melissa Heikkilä (MIT Tech Review → Financial Times), Emily Mullin (MIT Tech Review → Wired), David McCabe (Axios → NYT), Stuart A. Thompson (WSJ → NYT), David Yaffe-Bellany (Bloomberg → NYT), Erin Griffith (Fortune → Wired → NYT), Hugo Lowell (Guardian → Wired), Tom Simonite (MIT Tech Review → Wired → Washington Post), Noah Shachtman (Wired ↔ Daily Beast ↔ Rolling Stone ↔ Wired), Morgan Meaker (Telegraph → Wired → Bloomberg), and Paris Martineau (The Outline → Wired → The Information → Consumer Reports).
+Ships with verified career data for **97 journalists** across 155+ publications, including high-value migrations like Karen Hao (MIT Tech Review → Atlantic), Cade Metz (Wired → NYT), Zoë Schiffer (The Verge → Platformer → Wired), Zeyi Yang (MIT Tech Review → Wired), Melissa Heikkilä (MIT Tech Review → Financial Times), Emily Mullin (MIT Tech Review → Wired), David McCabe (Axios → NYT), Stuart A. Thompson (WSJ → NYT), David Yaffe-Bellany (Bloomberg → NYT), Erin Griffith (Fortune → Wired → NYT), Hugo Lowell (Guardian → Wired), Tom Simonite (MIT Tech Review → Wired → Washington Post), Noah Shachtman (Wired ↔ Daily Beast ↔ Rolling Stone ↔ Wired), Morgan Meaker (Telegraph → Wired → Bloomberg), Paris Martineau (The Outline → Wired → The Information → Consumer Reports), and Eli Tan (CoinDesk → Washington Post → NYT).
 
 ## Quick Start
 

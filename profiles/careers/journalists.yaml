@@ -350,10 +350,11 @@ journalists:
     source_url: https://www.nytimes.com/by/kara-swisher
     notes: Opinion columnist. Maintained anti-Big-Tech stance. Left to focus on Pivot podcast.
 - name: Mike Isaac
-  notes: 'NYT''s primary Meta/Facebook beat reporter and Silicon Valley institution. Career arc: music journalism → Wired
-    → AllThingsD/Re/code → NYT. Key migration from Condé Nast (Wired) to NYT. Author of ''Super Pumped'' (2019, adapted into
-    Showtime series 2022). Gerald Loeb Award winner. 10+ year NYT tenure. UC Berkeley 2010, English Lit. From Fort Worth,
-    TX.'
+  notes: 'NYT''s longest-serving Meta/Facebook beat reporter and Silicon Valley institution. Career arc: music journalism
+    → Wired → AllThingsD/Re/code → NYT. Key migration from Condé Nast (Wired) to NYT. Author of ''Super Pumped'' (2019, adapted
+    into Showtime series 2022). Gerald Loeb Award winner. 12+ year NYT tenure. UC Berkeley 2010, English Lit. From Fort Worth,
+    TX. In 2026, role expanded from dedicated Meta reporter to broader Silicon Valley correspondent with mentoring responsibilities
+    — Eli Tan took over day-to-day Meta beat. Isaac now covers broader SV while mentoring the next generation of tech reporters.'
   career:
   - publication: forbes
     event_type: hired
@@ -398,12 +399,14 @@ journalists:
     beat: Meta/Facebook, Uber, Big Tech
     start: 2014-10
     source_url: https://www.nytimes.com/by/mike-isaac
-    notes: Hired by Dean Murphy and Suzanne Spector to replace Jenna Wortham. Initially moved to Brooklyn, later returned
-      to SF. Uber coverage won Gerald Loeb Award for distinguished business reporting. Travis Kalanick reporting became 'Super
-      Pumped' (W.W. Norton, 2019) — NYT and WSJ bestseller. Adapted to Showtime series (2022) starring Joseph Gordon-Levitt;
+    notes: 'Hired by Dean Murphy and Suzanne Spector to replace Jenna Wortham. Initially moved to Brooklyn, later returned
+      to SF. Uber coverage won Gerald Loeb Award for distinguished business reporting. Travis Kalanick reporting became ''Super
+      Pumped'' (W.W. Norton, 2019) — NYT and WSJ bestseller. Adapted to Showtime series (2022) starring Joseph Gordon-Levitt;
       Isaac made a cameo. MSNBC on-air tech correspondent. 2018 team coverage of Facebook won Gerald Loeb Award. Has covered
       Meta metaverse pivot, AI race, Musk/Twitter acquisition, OpenAI leadership crisis. Known for deep sourcing inside Meta.
-      12+ year tenure as of 2026 — longest-serving current NYT tech reporter.
+      12+ year tenure as of 2026 — longest-serving current NYT tech reporter. ROLE EXPANDED (Jan 2026): shifted from dedicated
+      Meta reporter to broader Silicon Valley correspondent. Mentoring new reporters including Eli Tan, who took over the
+      day-to-day Meta beat. Still covers Meta but now also ''keep[s] the Tech group on the pulse of news'' per NYTCo announcement.'
 - name: Sheera Frenkel
   notes: 'NYT cybersecurity and Meta/Facebook reporter. Former Middle East foreign correspondent (decade). Co-wrote ''An Ugly
     Truth'' (2021), the definitive adversarial Facebook book from a NYT journalist. Pulitzer Prize finalist, George Polk Award,
@@ -649,20 +652,73 @@ journalists:
       who covers the Google/AI beat after him? NYT''s AI coverage is now distributed across Kevin Roose (columnist), Cade
       Metz (AI correspondent), and others.'
 - name: Eli Tan
-  notes: Newest NYT Meta beat reporter (2026). Hired from NYT fellowship. Covers Meta alongside Mike Isaac. 'Eli has a knack
-    for telling stories that make us understand technology's impact on regular people.'
+  notes: 'Key migration: CoinDesk → Columbia → Washington Post → NYT. NYT''s newest dedicated Meta reporter (2026), assigned
+    alongside Mike Isaac. Represents a new generation of tech journalism that arrived through the crypto/Web3 pipeline rather
+    than the traditional Wired/Verge → NYT path. His CoinDesk tenure (2021-2023) covering NFTs, gaming, and the metaverse
+    during the boom/bust cycle gives him firsthand experience with the hype dynamics around ''the metaverse'' — the same narrative
+    Meta bet its corporate identity on. KEY for MediaScope: his assignment signals NYT''s institutional doubling-down on Meta
+    as a coverage priority. Having two dedicated Meta reporters (Isaac since 2014, Tan since 2026) is unusual — comparable
+    to having two dedicated Apple reporters. DiD analysis opportunity: compare his early Meta coverage tone against his CoinDesk/WaPo
+    baseline to measure how quickly NYT''s institutional framing shapes a new reporter.'
   career:
+  - publication: coindesk
+    event_type: hired
+    role: news_reporter
+    beat: NFTs, gaming, metaverse, Web3
+    start: 2021-10
+    end: 2023-02
+    source_url: https://www.coindesk.com/author/eli-tan/
+    notes: 'First professional journalism role after St. Olaf College (BA English). Covered the NFT boom and crypto winter
+      from NYC. Beat included NFTs, play-to-earn gaming, metaverse projects, and blockchain startups. Published prolifically
+      — articles from Nov 2021 through Jan 2023 visible in CoinDesk archives. Held ETH, SOL, AVAX and NFTs above $1,000 (CoinDesk
+      disclosure policy). St. Olaf College: played baseball (hit grand slam in final game), wrote for college and state newspapers.
+      The Bush School (Seattle) ''17.'
+  - publication: columbia-journalism
+    event_type: education
+    role: graduate_student
+    beat: journalism
+    start: 2023-06
+    end: 2024-05
+    source_url: https://nytco.com/press/staff-news-from-business/
+    notes: MA Journalism from Columbia University Graduate School of Journalism in New York. Transitioned from trade press
+      (CoinDesk) to institutional journalism track. Columbia's program is a common credentialing pipeline into prestige outlets
+      (NYT, WaPo, WSJ). Education listed on NYT Company bio page.
+  - publication: washington-post
+    event_type: hired
+    role: reporter
+    beat: business, Congress
+    start: 2024-06
+    end: 2024-12
+    source_url: https://nytco.com/press/staff-news-from-business/
+    notes: 'Business reporter covering Congress and business from Washington DC. Short tenure — listed as ''most recent position''
+      on NYTCo bio. Moved to DC after Columbia. Beat shift: from crypto/Web3 trade reporting to general business/politics
+      at a prestige outlet. The WaPo stint demonstrates the CoinDesk → Columbia → WaPo → NYT credentialing pipeline. Bush
+      School alumni profile confirms: ''moved to Washington D.C., to work at the Washington Post, where he covered business
+      and Congress.'''
+  - publication: nytimes
+    event_type: fellowship
+    role: fellow
+    beat: technology (general)
+    start: 2025-01
+    end: 2025-12
+    source_url: https://nytco.com/press/staff-news-from-business/
+    notes: 'NYT technology fellowship, based in San Francisco. Described as having ''distinguished himself'' during the fellowship.
+      Covered diverse tech topics: data center debate in Peculiar, Missouri; AI-fueled dating (story turned into Modern Love
+      podcast episode); how AI changed pastors'' work; Uber/Lyft/DoorDash; LA wildfires. Also co-bylined with Mike Isaac:
+      OpenAI video app piece, Facebook Dating''s surprise success (21M+ daily users). Editor: Jim Kerstetter (deputy tech
+      editor). The fellowship is NYT''s talent-evaluation pipeline — he was being tested for the Meta beat.'
   - publication: nytimes
     event_type: hired
     role: technology_reporter
     beat: Meta
     start: 2026-01
     source_url: https://nytco.com/press/staff-news-from-business/
-    notes: 'Promoted from NYT fellowship to full reporter. Assigned to Meta beat. During fellowship: covered data centers
-      in Missouri, AI dating, AI and pastors, Uber/Lyft/DoorDash, LA wildfires. Editor: Jim Kerstetter (deputy tech editor).
-      Announcement describes him as having ''a knack for telling stories that make us understand technology''s impact on regular
-      people.'' KEY: Second dedicated Meta reporter alongside Mike Isaac — signals NYT''s continued investment in adversarial
-      Meta coverage.'
+    notes: 'Promoted from fellowship to full reporter. Assigned specifically to cover Meta — second dedicated Meta reporter
+      alongside Mike Isaac (who shifted to broader Silicon Valley coverage in the same announcement). Editor: Jim Kerstetter.
+      Announcement quote: ''Eli has a knack for telling stories that make us understand technology''s impact on regular people.''
+      KEY SIGNAL: NYT doubling Meta coverage capacity — Isaac mentoring while covering broader SV, Tan handling day-to-day
+      Meta beat. Recent bylines include Meta capex forecast ($70B+), Instagram teen safety features, Meta glasses coverage,
+      Facebook Dating. Based in San Francisco.'
 - name: Cecilia Kang
   notes: 'NYT national technology correspondent covering tech policy, regulation, and antitrust. Career: AP-Dow Jones (Seoul)
     → San Jose Mercury News → Washington Post (~8 years) → NYT (late 2014). Co-authored ''An Ugly Truth'' (2021, Crown/Random

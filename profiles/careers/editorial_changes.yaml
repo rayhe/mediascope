@@ -333,6 +333,15 @@ editorial_changes:
     source_url: https://talkingbiznews.com/they-move/ny-times-biz-reporter-grant-departs/
     notes: 'DEPARTURE: Grant left journalism entirely after 3 years covering Google/Alphabet. ''Working there was a dream
       come true, but now, it''s time to chase other dreams outside of journalism.'' Creates gap on NYT''s Google beat.'
+  - position: silicon_valley_correspondent
+    outgoing: null
+    incoming: Mike Isaac
+    date: 2026-01
+    source_url: https://nytco.com/press/staff-news-from-business/
+    notes: 'EXPANDED ROLE: Isaac promoted from dedicated Meta reporter to broader Silicon Valley coverage with mentoring responsibilities.
+      Previously covered Meta exclusively since joining NYT in 2014. Career: Wired → AllThingsD → Recode → NYT. Author of
+      ''Super Pumped'' (2019 book, 2022 Showtime series). The shift from Meta-specific to broader SV plus mentoring of Eli
+      Tan suggests NYT is building a Meta coverage pipeline rather than relying on a single reporter.'
   guardian:
   - position: eic
     outgoing: Alan Rusbridger
