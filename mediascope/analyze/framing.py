@@ -2142,6 +2142,94 @@ _SPECULATIVE_FRAMING_PATTERNS: list[re.Pattern] = [
 # results are injected by detect_framing_devices() when threshold is met.
 
 
+# Confession framing: editorial device using attribution verbs that frame
+# a subject's statement as an admission of guilt or failure, rather than
+# a neutral communication.  "X admits Y" vs. "X said Y" imposes a
+# confession frame before the reader encounters the content.  Common in
+# Wired/Guardian Meta coverage.  Distinct from loaded_language (which
+# flags individual words): this device detects the editorial *structure*
+# of framing via attribution verb choice.
+#
+# The asymmetry is the key signal: employees "describe" or "say" while
+# executives "admit" or "concede" — identical speech acts receive
+# different editorial treatment based on who is speaking.
+_CONFESSION_FRAMING_PATTERNS: list[re.Pattern] = [
+    # Core confession attribution verbs in editorial voice.
+    # These verbs impose guilt/concealment on the speaker when used as
+    # attribution: "Bosworth admits" ≠ "Bosworth said."
+    # Requires subject-verb proximity (name/title + verb within 30 chars)
+    # to avoid matching content where someone literally confesses to a crime.
+    # The (?:that |") lookahead ensures the verb is introducing reported
+    # speech or a characterization, not describing a legal/literal confession.
+    re.compile(
+        r"\b(?:[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?|"
+        r"the (?:CEO|CTO|COO|CFO|chief|executive|company|firm|"
+        r"spokesperson|official|director|president|chairman|VP|"
+        r"vice president|head|manager|leader))"
+        r"\s+"
+        r"(?:also\s+)?"
+        r"(?:admit(?:ted|s)?|conced(?:ed|es|ing)|acknowledg(?:ed|es|ing))"
+        r"\s+(?:that\b|\")",
+        re.IGNORECASE,
+    ),
+    # Headline-style: "X Admits Y" — title case suggests headline placement.
+    # Headline confession framing is especially impactful because it sets
+    # the reader's interpretive frame before they encounter the article body.
+    re.compile(
+        r"\b(?:[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s+"
+        r"Admits?\s+",
+        re.MULTILINE,
+    ),
+    # "Was forced to admit/acknowledge/concede" — amplified confession frame.
+    # Editorial language positioning the admission as involuntary, implying
+    # the subject would have preferred to conceal.
+    re.compile(
+        r"\b(?:was |were |been )?"
+        r"(?:forced|compelled|pressured|pushed)\s+"
+        r"(?:to |into )?"
+        r"(?:admit|acknowledge|concede|come clean|own up)",
+        re.IGNORECASE,
+    ),
+    # "Finally admitted/acknowledged/conceded" — delayed confession.
+    # Editorial signal that the admission was overdue, implying prior
+    # concealment or resistance to transparency.
+    re.compile(
+        r"\b(?:finally|eventually|at last|belatedly|only then|"
+        r"only after|reluctantly|grudgingly|begrudgingly)\s+"
+        r"(?:admit(?:ted|s)?|acknowledg(?:ed|es|ing)|conced(?:ed|es|ing))",
+        re.IGNORECASE,
+    ),
+    # "Comes/came clean about" — informal confession framing
+    re.compile(
+        r"\b(?:com(?:es?|ing)|came)\s+clean\s+(?:about|on|over)\b",
+        re.IGNORECASE,
+    ),
+    # "Owned up to" — informal confession framing
+    re.compile(
+        r"\b(?:own(?:ed|s|ing)?)\s+up\s+to\b",
+        re.IGNORECASE,
+    ),
+    # "Mea culpa" — direct confession framing applied to corporate
+    # communications.  When a journalist labels a memo or statement
+    # as a "mea culpa," they impose a penitential frame.
+    re.compile(
+        r"\bmea culpa\b",
+        re.IGNORECASE,
+    ),
+    # "In a rare admission" / "in a candid admission" — editorial
+    # meta-framing that explicitly labels the statement as an admission,
+    # priming the reader to interpret what follows as a confession.
+    re.compile(
+        r"\bin (?:a |an )?(?:rare|unusual|candid|remarkable|stunning|"
+        r"surprising|extraordinary|notable|frank|startling)\s+"
+        r"(?:admission|acknowledgment|acknowledgement|concession|confession)",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["confession_framing"] = _CONFESSION_FRAMING_PATTERNS
+
+
 def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
     """Detect analogy stacking — 3+ distinct analogies for the same subject.
 
@@ -2236,10 +2324,10 @@ def _detect_speculative_framing(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 28 pattern-matched device types plus 3 structural
-    post-pass types (31 total).
+    Scans for 30 pattern-matched device types plus 3 structural
+    post-pass types (32 total).
 
-    Pattern-matched (28): guilt_by_association, anonymous_authority,
+    Pattern-matched (29): guilt_by_association, anonymous_authority,
     catastrophizing, false_balance, selective_omission_signal,
     emotional_appeal, straw_man, loaded_language, refusal_amplification,
     juxtaposition, timeline_implication, power_asymmetry,
@@ -2249,7 +2337,7 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     self_referential_investigation, sovereignty_framing,
     scale_magnitude, ceo_personalization, litigation_framing,
     corporate_reassurance_undercut, sarcastic_correction,
-    hypocrisy_frame, and outsourced_intensity.
+    hypocrisy_frame, outsourced_intensity, and confession_framing.
 
     Structural post-pass (3): kicker_framing, analogy_stacking,
     speculative_framing.

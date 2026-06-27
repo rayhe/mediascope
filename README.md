@@ -385,7 +385,7 @@ MediaScope has **585 tests** across 24 test files, each covering a different ana
 | `test_wired_gulag_patterns.py` | 17 | Wired "gulag" engineer revolt coverage: conscript/conscription workplace loaded language, keystroke/screen-recording surveillance detection, Scale AI entity detection, full article-context loaded language density |
 | `test_postpass_activation.py` | 32 | Post-pass device activation: analogy_stacking threshold (3+ markers), speculative_framing threshold (5+ hedges), expanded loaded_language patterns, analogy_stacking false-positive regression (factual "is a" constructions vs qualified metaphors) |
 | `test_jun27_regression.py` | 9 | Jun 27 regression tests: topic "fine" ambiguity (fine-tuned ≠ litigation), source extraction stop words ("Any"/"All" not person names), fined still matches litigation |
-| `test_structural_consistency.py` | 13 | Structural consistency guards: framing device type count (32 total = 29 pattern + 3 structural), `precedent_analogy` exists, `__main__.py` entry point works, doc counts match across METHODOLOGY.md/ARCHITECTURE.md/AGENT_GUIDE.md/CLI/README (framing types, banned phrases, Advance/Reddit voting power) |
+| `test_structural_consistency.py` | 13 | Structural consistency guards: framing device type count (33 total = 30 pattern + 3 structural), `precedent_analogy` exists, `__main__.py` entry point works, doc counts match across METHODOLOGY.md/ARCHITECTURE.md/AGENT_GUIDE.md/CLI/README (framing types, banned phrases, Advance/Reddit voting power) |
 
 ```bash
 # Run all tests

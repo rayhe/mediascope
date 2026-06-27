@@ -45,11 +45,11 @@ def _all_device_types_from_code() -> set[str]:
 class TestFramingDeviceTypeCount:
     """Guard: total framing device types in code match documented count."""
 
-    def test_total_device_types_is_32(self):
-        """Code should define exactly 32 unique framing device types."""
+    def test_total_device_types_is_33(self):
+        """Code should define exactly 33 unique framing device types."""
         types = _all_device_types_from_code()
-        assert len(types) == 32, (
-            f"Expected 32 framing device types, got {len(types)}.\n"
+        assert len(types) == 33, (
+            f"Expected 33 framing device types, got {len(types)}.\n"
             f"Types: {sorted(types)}\n"
             "If you added a new device, update this test AND the docs:\n"
             "  - docs/METHODOLOGY.md §4.1 total and tier counts\n"
@@ -59,14 +59,14 @@ class TestFramingDeviceTypeCount:
             "  - README.md (if framing count is mentioned)"
         )
 
-    def test_pattern_matched_types_is_29(self):
-        """29 types should come from regex patterns (core + extended)."""
+    def test_pattern_matched_types_is_30(self):
+        """30 types should come from regex patterns (core + extended)."""
         src = (_REPO_ROOT / "mediascope" / "analyze" / "framing.py").read_text()
         pattern_keys = set(re.findall(r'_DEVICE_PATTERNS\["(\w+)"\]', src))
         initial_keys = set(re.findall(r'"(\w+)":\s*_[A-Z_]+_PATTERNS', src))
         pattern_types = initial_keys | pattern_keys
-        assert len(pattern_types) == 29, (
-            f"Expected 29 pattern-matched device types, got {len(pattern_types)}.\n"
+        assert len(pattern_types) == 30, (
+            f"Expected 30 pattern-matched device types, got {len(pattern_types)}.\n"
             f"Types: {sorted(pattern_types)}"
         )
 
@@ -125,24 +125,24 @@ class TestDocCountConsistency:
     """Guard: documented counts match across files."""
 
     def test_architecture_device_count(self):
-        """ARCHITECTURE.md must say 32 framing device types."""
+        """ARCHITECTURE.md must say 33 framing device types."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
-        assert "**32 framing device types**" in doc, (
-            "ARCHITECTURE.md framing device count is stale. Should be 32."
+        assert "**33 framing device types**" in doc, (
+            "ARCHITECTURE.md framing device count is stale. Should be 33."
         )
 
     def test_methodology_device_count(self):
-        """METHODOLOGY.md must say 32 framing device types."""
+        """METHODOLOGY.md must say 33 framing device types."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
-        assert "32 framing device types" in doc, (
-            "METHODOLOGY.md framing device count is stale. Should be 32."
+        assert "33 framing device types" in doc, (
+            "METHODOLOGY.md framing device count is stale. Should be 33."
         )
 
     def test_agent_guide_device_count(self):
-        """AGENT_GUIDE.md must say 32 device types."""
+        """AGENT_GUIDE.md must say 33 device types."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
-        assert "32 device types" in doc, (
-            "AGENT_GUIDE.md framing device count is stale. Should be 32."
+        assert "33 device types" in doc, (
+            "AGENT_GUIDE.md framing device count is stale. Should be 33."
         )
 
     def test_cli_analyze_device_count(self):

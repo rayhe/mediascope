@@ -4,6 +4,76 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 12:00 PT — Hour Type D: Toolkit Quality & Documentation — __main__.py, Doc/Code Count Sync, Structural Consistency Tests
+
+**Focus:** Six classes of documentation/code consistency issues identified and fixed. Added `__main__.py` for CLI usability, corrected stale data references propagated from earlier ownership research, and created 13 structural tests to guard against future doc/code drift.
+
+### 1. CLI Entry Point: `__main__.py` (NEW)
+
+`python -m mediascope` failed with "No module named mediascope.__main__" — a real usability gap for anyone not installing via pip. Created `mediascope/__main__.py` that imports and invokes the Click CLI entry point. Verified: `python -m mediascope --help` now returns the full command listing.
+
+### 2. Advance/Reddit Voting Power Correction (33.5% → 65.2%)
+
+Three references still used the pre-2026-proxy figure of 33.5%:
+- README.md conflict disclosure example
+- README.md publication profiles table
+- `profiles/wired.yaml` competitive conflict narrative (line 698)
+
+The profile's authoritative `ownership_chain.stake` field (line 160) had already been updated to 65.2% in a prior Type C iteration using the 2026 proxy and Schedule 13G (Nov 14, 2024, reporting Sep 30, 2024 ownership): 42.2M Class B shares (83.5% of Class B, 10 votes/share) + 16K Class A = 65.2% total voting power. The downstream references were simply never propagated.
+
+### 3. Banned Phrase Count (README)
+
+README said "20+ other markers" — actually 25 total (synced in 08:00 PT iteration). Updated to "22 other markers (25 total)" for precision.
+
+### 4. Framing Device Type Count Fixes
+
+ARCHITECTURE.md and CLI analyze docstring both said 31 framing device types. Actual code has 32 (29 pattern-matched + 3 structural post-pass). The missing type was `precedent_analogy`, added during the Reuters insurance-defense article iteration but never reflected in ARCHITECTURE.md's extended device list.
+
+**Fixed:**
+- ARCHITECTURE.md: 31 → 32, added `precedent_analogy` to extended list with description ("editorial device importing settled villainy from prior crises — opioid, tobacco, asbestos — onto a current subject via era-based comparisons"), changed Extended count from (18) to (19)
+- `mediascope/cli.py` analyze docstring: 31 → 32
+- METHODOLOGY.md (already 32) and AGENT_GUIDE.md (already 32) confirmed correct
+
+### 5. Test Count Updates
+
+README: 572 → 585 tests, 23 → 24 test files. Added new `test_structural_consistency.py` entry to test file table.
+ARCHITECTURE.md file layout: 572 → 585, 23 → 24.
+
+### 6. Structural Consistency Tests (NEW, 13 tests)
+
+Created `tests/test_structural_consistency.py` with three test classes:
+
+**TestFramingDeviceTypeCount (4 tests):**
+- Total device types == 32 (with helpful error listing all types and which docs to update)
+- Pattern-matched types == 29
+- Structural post-pass types == {kicker_framing, analogy_stacking, speculative_framing}
+- `precedent_analogy` exists
+
+**TestMainModuleEntryPoint (3 tests):**
+- `__main__.py` file exists
+- `__main__.py` imports `cli` from `mediascope.cli`
+- `python -m mediascope --help` returns exit code 0 with "MediaScope" in output
+
+**TestDocCountConsistency (6 tests):**
+- ARCHITECTURE.md says "32 framing device types"
+- METHODOLOGY.md says "32 framing device types"
+- AGENT_GUIDE.md says "32 device types"
+- CLI source says "32 types"
+- README says "25 total" (banned phrases)
+- README has "65.2%" and NOT "33.5%" (Advance/Reddit)
+
+These guards prevent the drift pattern that caused issues today: code gets updated in Type A/B/C iterations but documentation lags behind. Future iterations that add a framing device or change a count will fail these tests with a message listing every doc file to update.
+
+### Metrics
+- Tests: 572 → 585 (+13 new)
+- All passing
+- New file: `mediascope/__main__.py` (18 lines)
+- New file: `tests/test_structural_consistency.py` (169 lines)
+- 6 files modified, 199 insertions, 10 deletions
+- Commit: `cdce081` — pushed to GitHub
+
+---
+
 ## 2026-06-27 11:00 PT — Hour Type C: Ownership & Funding Deep Dive — MIT Technology Review (Engine Ventures, MITIMCo, ILP)
 
 **Focus:** MIT TR had the shortest profile at 572 lines. Prior Type C iterations covered Wired (3x), Guardian, NYT (2x), Atlantic. MIT TR hadn't had a dedicated Type C since the initial build. Targeted MIT's venture capital, direct investment, and broad corporate funding channels — dimensions entirely missing from the profile.
@@ -4853,5 +4923,44 @@ Alison Frankel's legal analysis column examines a parallel battle to Meta's soci
 
 ### Test Results
 All 563 tests pass (541 existing + 22 new, no regressions).
+
+### Commit
+
+---
+
+## 2026-06-27 13:00 PT — Type A: Article Deep Dive (Confession Framing)
+
+### Focus
+Added `confession_framing` as framing device type #33 (30th pattern-matched, 20th extended). Grounded in the Wired Bosworth "Admits" headline analysis and cross-publication attribution verb asymmetry.
+
+### Problem
+The toolkit detected loaded individual words ("atrocious," "gulag") but missed the editorial *structure* of framing statements as confessions via attribution verb choice. "Bosworth admits" ≠ "Bosworth said" — the verb choice imposes a confession frame before the reader encounters the content. This asymmetry (employees "describe" while executives "admit") was documented in §4.2 of METHODOLOGY.md but not actually detected.
+
+### Implementation
+8 regex pattern families in `mediascope/analyze/framing.py`:
+1. **Core confession verbs:** `[Person/Title] admits/admitted/concedes/acknowledged that "..."`
+2. **Headline-style:** Title-case `X Admits Y` for headline detection
+3. **Amplified confession:** `was forced/compelled/pressured to admit/acknowledge/concede`
+4. **Delayed confession:** `finally/eventually/reluctantly/grudgingly admitted/conceded`
+5. **Informal:** `came/comes clean about/on`
+6. **Informal:** `owned up to`
+7. **Direct label:** `mea culpa`
+8. **Meta-framing:** `in a rare/stunning/candid admission/acknowledgment/concession`
+
+### Files Changed
+- `mediascope/analyze/framing.py` — +95 lines: 8 pattern families, docstring 28→29→30 pattern-matched types
+- `tests/test_confession_framing.py` — 31 new tests (15 positive, 6 negative, 5 Bosworth integration, 5 cross-publication)
+- `tests/test_structural_consistency.py` — 29→30 pattern-matched, 32→33 total
+- `tests/test_nyt_ai_reviews.py` — 29→30 pattern count, confession_framing in expected set
+- `docs/METHODOLOGY.md` — 32→33 device types, 19→20 extended devices, new table entry
+
+### Source Articles
+- Wired "Meta CTO Andrew Bosworth Admits the Company's AI Reorg Was 'Atrocious'" (Jun 16, 2026)
+- Wired Applied AI revolt (Jun 13, 2026) — attribution verb asymmetry documented
+- Reuters Dalton/Smith departure (Jun 17, 2026) — comparison: "Reuters would never lead with 'admits'"
+- Fast Company Meta reversal (Jun 25, 2026) — validation target
+
+### Test Results
+All 616 tests pass (585 existing + 31 new, no regressions).
 
 ### Commit
