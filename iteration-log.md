@@ -4,6 +4,61 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 11:00 PT — Hour Type C: Ownership & Funding Deep Dive — MIT Technology Review (Engine Ventures, MITIMCo, ILP)
+
+**Focus:** MIT TR had the shortest profile at 572 lines. Prior Type C iterations covered Wired (3x), Guardian, NYT (2x), Atlantic. MIT TR hadn't had a dedicated Type C since the initial build. Targeted MIT's venture capital, direct investment, and broad corporate funding channels — dimensions entirely missing from the profile.
+
+### Engine Ventures (The Engine) — MIT's Institutional VC Arm
+- Founded 2016 by Israel Ruiz (MIT EVP/Treasurer). 4 VC funds, $1B+ AUM
+- MIT provided anchor capital: $25M (Fund I, $200M) + $35M (Fund II, $230M; Harvard also LP)
+- 65+ active portfolio companies, 134 total investments, 8 exits (PitchBook)
+- CEO: Katie Rae. Focus: climate, human health, advanced systems (AI infrastructure)
+- **Key exit:** Celestial AI → Marvell Technology for $3.25B (Feb 2, 2026). Photonic interconnect for AI data centers. MIT directly profits from AI infrastructure while MIT TR covers the AI/chip industry.
+- **Portfolio overlaps:** Commonwealth Fusion Systems (~$3B raised from Google, Nvidia, Gates), DG Matrix ($60M Series A LED by Engine for AI data center power)
+- **Israel Ruiz three-way intersection:** Founded Engine Ventures + sat on MIT TR board (FY2019-2020) + approved Epstein post-conviction donations
+
+### MITIMCo Direct Investments
+- ~40 professionals managing $27.4B endowment. 18 investments, 9 exits (PitchBook)
+- Recent: Substrate (semiconductors, Oct 2025), Bitwise (asset management, Feb 2025)
+- Additional tech/semiconductor exposure beyond Engine Ventures
+
+### MIT ILP (Industrial Liaison Program)
+- Founded 1948, ~240 member companies paying annual fees
+- Access to faculty, research, recruiting, tech transfer
+- Executive Director: Gayathri Srinivasan. Recent member: Wipro (Feb 2026)
+- Broadest corporate funding channel — complements CSAIL Alliance and bilateral partnerships
+
+### CSAIL Alliance Program Update (Verified June 27, 2026)
+- Full 27-member list documented (previously only ~12 listed)
+- New additions: Nebius (Yandex AI spinoff), Acbel, Accenture, Akamai, Balyasny, Bayer, BNY, Caterpillar, Ferrovial, Quanta Computer, Rokt, STMicro, Underscore VC, UPS, UST, Wistron
+- Confirmed absences: Google, Amazon, Meta (have separate bilateral programs)
+
+### MIT OBBBA Public Response
+- Official statement: tax "would seriously damage our ability to conduct research" and "cut hundreds of millions from our budget each year"
+- Endowment supports 40%+ of annual campus budget
+- Universities announcing hiring freezes and cost-cutting (Aon report)
+
+### New Conflict Entries
+1. **engine_ventures_ai_exits** (severity 3): MIT profits from AI infrastructure exits (Celestial AI $3.25B → Marvell) while MIT TR covers AI industry. Israel Ruiz three-way governance intersection.
+2. **engine_ventures_portfolio_coverage_overlap** (severity 2): Portfolio companies' investors (Google, Nvidia, Gates) create indirect financial alignment with companies MIT TR covers.
+
+### Metrics
+- Profile: 572 → 783 lines (+37%, +211 lines)
+- Known conflicts: 9 → 11 entries
+- Tests: 572/572 passing
+- Commit: `027c4a5` — pushed to GitHub
+
+### Sources
+- Engine Ventures: engine.xyz/about, PitchBook profile
+- Celestial AI exit: Marvell newsroom (Feb 2, 2026)
+- MIT founding announcement: news.mit.edu (Oct 2016)
+- CSAIL Alliance: csail.mit.edu/about/alliance-program (verified Jun 27, 2026)
+- MITIMCo: PitchBook profile
+- ILP: ilp.mit.edu
+- OBBBA response: MIT News (Jul 2025)
+
+---
+
 ## 2026-06-27 10:00 PT — Hour Type B: Journalist Profile Expansion — Will Knight + Kara Swisher
 
 **Focus:** Expanding the two thinnest journalist profiles remaining in the database after the 06:00 PT session: Will Knight (was 2 entries, 256 total chars — the thinnest) and Kara Swisher (was 3 entries, 325 total chars — third thinnest).
