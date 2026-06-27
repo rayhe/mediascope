@@ -33,7 +33,7 @@ The toolkit failed to detect ANY sources in this interview article (0 detected v
 - All passing
 - 3 code files modified: framing.py, topics.py, sources.py
 - New example: `mit_tr_lecun_ami_labs_contrarian_2026_01_22_analysis.md`
-- Commit: (see below)
+- Commit: 4eca80c
 
 ---
 
