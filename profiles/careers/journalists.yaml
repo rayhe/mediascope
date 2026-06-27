@@ -20,14 +20,14 @@ journalists:
     source_url: https://www.theatlantic.com/author/karen-hao/
     notes: Continued AI ethics/harms focus. Key test case for portable bias — did her adversarial tone carry to a new outlet?
 - name: Cade Metz
-  notes: 'Key migration: PC Magazine → The Register → Wired → NYT. AI/tech reporter with 30+ years in tech journalism
-    who crossed from Condé Nast to Sulzberger orbit. Duke BA English (1994). Father was IBM engineer who helped develop the
-    Universal Product Code (barcode). Also wrote freelance for Metro Magazine, Companion to Southern Literature, Microsoft
-    Encarta, American Baby; and was a playwright (''The Parlour Game'', ''The Roof''). Author of ''Genius Makers'' (2021,
-    Dutton/Penguin). Controversial NYT piece revealing Scott Alexander''s real identity (Slate Star Codex). KEY for MediaScope:
-    one of the longest continuous careers in tech journalism — his framing evolution across PC Magazine (product reviews) →
-    Register (adversarial British tabloid tech) → Wired (Condé Nast longform) → NYT (institutional prestige) traces the
-    entire arc of how AI coverage went from niche to front-page.'
+  notes: 'Key migration: PC Magazine → The Register → Wired → NYT. AI/tech reporter with 30+ years in tech journalism who
+    crossed from Condé Nast to Sulzberger orbit. Duke BA English (1994). Father was IBM engineer who helped develop the Universal
+    Product Code (barcode). Also wrote freelance for Metro Magazine, Companion to Southern Literature, Microsoft Encarta,
+    American Baby; and was a playwright (''The Parlour Game'', ''The Roof''). Author of ''Genius Makers'' (2021, Dutton/Penguin).
+    Controversial NYT piece revealing Scott Alexander''s real identity (Slate Star Codex). KEY for MediaScope: one of the
+    longest continuous careers in tech journalism — his framing evolution across PC Magazine (product reviews) → Register
+    (adversarial British tabloid tech) → Wired (Condé Nast longform) → NYT (institutional prestige) traces the entire arc
+    of how AI coverage went from niche to front-page.'
   career:
   - publication: pc-magazine
     event_type: hired
@@ -47,10 +47,10 @@ journalists:
     start: 2007-01
     end: 2011-09
     source_url: https://computerhistory.org/profile/cade-metz/
-    notes: 'US Editor (San Francisco bureau chief) of the British science and technology news site. Moved from NYC to West
+    notes: US Editor (San Francisco bureau chief) of the British science and technology news site. Moved from NYC to West
       Coast for this role. Covered Amazon, Google, Facebook, Yahoo. Known for adversarial Wikipedia coverage — appeared in
-      ''Truth in Numbers?'' documentary (2010). Last bylines September 2011. The Register''s tabloid-adversarial house style
-      is a notable framing influence.'
+      'Truth in Numbers?' documentary (2010). Last bylines September 2011. The Register's tabloid-adversarial house style
+      is a notable framing influence.
   - publication: wired
     event_type: hired
     role: senior_writer
@@ -58,10 +58,10 @@ journalists:
     start: 2011-10
     end: 2017-09
     source_url: https://champions-speakers.co.uk/speaker-agent/cade-metz
-    notes: 'Senior Staff Writer at Condé Nast''s Wired. Covered Google, Facebook, Microsoft, AI, bitcoin, computer chips,
-      programming languages, data centers. Cover stories on Google''s AlphaGo race and Zuckerberg''s disaster response.
-      Appeared on NPR, CNBC, MSNBC. AI beat crystallized here — transitioned from general enterprise tech to AI-focused
-      reporting that would define his NYT tenure.'
+    notes: Senior Staff Writer at Condé Nast's Wired. Covered Google, Facebook, Microsoft, AI, bitcoin, computer chips, programming
+      languages, data centers. Cover stories on Google's AlphaGo race and Zuckerberg's disaster response. Appeared on NPR,
+      CNBC, MSNBC. AI beat crystallized here — transitioned from general enterprise tech to AI-focused reporting that would
+      define his NYT tenure.
   - publication: nytimes
     event_type: hired
     role: correspondent
@@ -70,10 +70,9 @@ journalists:
     source_url: https://computerhistory.org/profile/cade-metz/
     notes: 'Technology correspondent in San Francisco bureau covering AI, driverless cars, robotics, VR. Author of ''Genius
       Makers: The Mavericks Who Brought AI to Google, Facebook, and the World'' (2021, Dutton/Penguin). Controversial 2021
-      piece revealing Scott Alexander''s identity (Slate Star Codex blog). Lives across the bay from SF with wife Taylor
-      and two daughters. KEY MIGRATION: Wired → NYT represents Condé Nast → Sulzberger pipeline for AI coverage framing.
-      Question for DiD analysis: did his AI framing shift when he moved from Wired''s tech-enthusiast audience to NYT''s
-      general readership?'
+      piece revealing Scott Alexander''s identity (Slate Star Codex blog). Lives across the bay from SF with wife Taylor and
+      two daughters. KEY MIGRATION: Wired → NYT represents Condé Nast → Sulzberger pipeline for AI coverage framing. Question
+      for DiD analysis: did his AI framing shift when he moved from Wired''s tech-enthusiast audience to NYT''s general readership?'
 - name: Will Knight
   notes: 'Key migration: MIT Tech Review → Wired. AI reporter moving within the tech-critical pipeline.'
   career:
@@ -2318,10 +2317,10 @@ journalists:
     source_url: https://talkingbiznews.com/they-re-hiring/wired-is-launching-a-political-coverage-team/
     notes: 'DRUMMOND HIRE #2: Part of Drummond''s 3-person politics team launch. First day Nov 6, 2023 (one week before Feiger).
       Assignment: intersection of digital ecosystems and political campaigns. Initially reported to Meg Marco (exec editor
-      of news); after Marco''s departure (Dec 2023), reported to Brian Barrett.
-      Major stories: Charlie Kirk''s plans to discredit MLK Jr. and the Civil Rights Act; shadowy company registering thousands
-      of fake businesses across America. DOGE coverage contributed to Wired''s 62,500 new US subs in 2 weeks (Feb 2025). Left
-      for ProPublica after ~2.3 years — first departure from Drummond''s politics team.'
+      of news); after Marco''s departure (Dec 2023), reported to Brian Barrett. Major stories: Charlie Kirk''s plans to discredit
+      MLK Jr. and the Civil Rights Act; shadowy company registering thousands of fake businesses across America. DOGE coverage
+      contributed to Wired''s 62,500 new US subs in 2 weeks (Feb 2025). Left for ProPublica after ~2.3 years — first departure
+      from Drummond''s politics team.'
   - publication: propublica
     event_type: hired
     role: national_reporter
@@ -2378,13 +2377,14 @@ journalists:
     beat: disinformation, online extremism, election manipulation
     start: 2023-09
     source_url: https://talkingbiznews.com/media-news/wired-hires-gilbert-to-cover-extremism-and-disinformation/
-    notes: 'First of three Drummond politics team hires. TBN reported Sep 29, 2023: ''starts Monday.'' Initially reported to
-      Meg Marco (exec editor of news, Mar-Dec 2023); after Marco''s departure, reports to Brian Barrett (Jan 2024-present). Beat: online extremism and disinformation spreading on social media platforms. Based in Ireland
-      — reports on American politics remotely, giving him an outsider''s analytical distance that he describes as both an
-      advantage and challenge (Coffee with a Journalist podcast, Mar 2025). Major stories include far-right influencer power
-      analysis, Elon Musk/Tommy Robinson connection. Signal contact: @DavidGilbert.01. Education: University College Cork
-      BA (American Literature, American Cinema, Silent Cinema, Old English, Beowulf, Greek and Roman Civilisation — an unusually
-      humanities-heavy background for a tech journalist), Coláiste Stiofáin Naofa Media Studies Level 5 with Distinction (2006-2007).'
+    notes: 'First of three Drummond politics team hires. TBN reported Sep 29, 2023: ''starts Monday.'' Initially reported
+      to Meg Marco (exec editor of news, Mar-Dec 2023); after Marco''s departure, reports to Brian Barrett (Jan 2024-present).
+      Beat: online extremism and disinformation spreading on social media platforms. Based in Ireland — reports on American
+      politics remotely, giving him an outsider''s analytical distance that he describes as both an advantage and challenge
+      (Coffee with a Journalist podcast, Mar 2025). Major stories include far-right influencer power analysis, Elon Musk/Tommy
+      Robinson connection. Signal contact: @DavidGilbert.01. Education: University College Cork BA (American Literature, American
+      Cinema, Silent Cinema, Old English, Beowulf, Greek and Roman Civilisation — an unusually humanities-heavy background
+      for a tech journalist), Coláiste Stiofáin Naofa Media Studies Level 5 with Distinction (2006-2007).'
 - name: Zeyi Yang
   notes: 'KEY CROSS-PUBLICATION MIGRATION: MIT Technology Review → Wired. China tech correspondent who left MIT TR for Wired
     (~2025). Covers the US-China technology landscape — the single most important geopolitical tech beat of the decade. Created
@@ -2921,12 +2921,12 @@ journalists:
       influencers. Broke CFPB 1,400-employee termination story (2025). CROSS-PUBLICATION: The Verge → Wired migration — second
       politics reporter to join from a Vox Media property after Zoë Schiffer.'
 - name: David McCabe
-  notes: 'NYT tech policy/antitrust correspondent based in Washington. Career: The Hill → Axios → NYT (2019–present).
-    Covers Big Tech regulation, antitrust enforcement, FTC, Google monopoly trial. Co-covers with Cecilia Kang. Guest
-    on The Daily podcast for landmark Google antitrust ruling. ANALYTICAL VALUE: Washington-based policy lens gives
-    regulatory framing to tech coverage. His reporting on lobbying (Tim Cook calls to Pelosi, Amazon antitrust) directly
-    shapes public understanding of tech company political power. Key for Meta antitrust/FTC coverage. Before journalism:
-    politics intern at HuffPost, radio intern.'
+  notes: 'NYT tech policy/antitrust correspondent based in Washington. Career: The Hill → Axios → NYT (2019–present). Covers
+    Big Tech regulation, antitrust enforcement, FTC, Google monopoly trial. Co-covers with Cecilia Kang. Guest on The Daily
+    podcast for landmark Google antitrust ruling. ANALYTICAL VALUE: Washington-based policy lens gives regulatory framing
+    to tech coverage. His reporting on lobbying (Tim Cook calls to Pelosi, Amazon antitrust) directly shapes public understanding
+    of tech company political power. Key for Meta antitrust/FTC coverage. Before journalism: politics intern at HuffPost,
+    radio intern.'
   career:
   - publication: huffington-post
     event_type: intern
@@ -2951,8 +2951,8 @@ journalists:
     start: 2018-01
     end: 2019-08
     source_url: https://nytco.com/press/new-tech-policy-reporter/
-    notes: 'Covered tech policy. Spotted early backlash against Big Tech, including conversations on the left about Amazon''s
-      reach. Scooped behind-the-scenes White House efforts to calm tech companies'' trade fears. Led to NYT hire.'
+    notes: Covered tech policy. Spotted early backlash against Big Tech, including conversations on the left about Amazon's
+      reach. Scooped behind-the-scenes White House efforts to calm tech companies' trade fears. Led to NYT hire.
   - publication: nytimes
     event_type: hired
     role: correspondent
@@ -2961,15 +2961,15 @@ journalists:
     source_url: https://nytco.com/press/new-tech-policy-reporter/
     notes: 'Tech policy correspondent in Washington. Joined Cecilia Kang covering regulation of Big Tech. Co-bylined landmark
       stories: Google antitrust trial (guest on The Daily podcast, Sep 2023), FTC AI chatbot child safety inquiry, Tim Cook
-      lobbying against antitrust bills with Pelosi. Lina Khan coverage. Key question for MediaScope: does his Washington
-      policy lens produce systematically different framing of Meta vs Silicon Valley-based reporters?'
+      lobbying against antitrust bills with Pelosi. Lina Khan coverage. Key question for MediaScope: does his Washington policy
+      lens produce systematically different framing of Meta vs Silicon Valley-based reporters?'
 - name: Tiffany Hsu
-  notes: 'NYT disinformation/misinformation reporter. Career: LA Times → NYT media desk (2017) → NYT misinformation desk
-    (2022). Won Mirror Award with Sheera Frenkel for vaccine/mask misinformation reporting. Covers deepfakes, AI-generated
-    content, influence campaigns, content moderation. Education: UC Berkeley BA (English + Mass Comm), Columbia Journalism
-    MS, Columbia MBA. ANALYTICAL VALUE: Her beat (misinformation, AI detection, content moderation) is ground zero for
-    Meta coverage bias — every content moderation decision Meta makes is filtered through her lens. Co-bylines with
-    Stuart Thompson on Sora deepfake coverage. Based in San Francisco.'
+  notes: 'NYT disinformation/misinformation reporter. Career: LA Times → NYT media desk (2017) → NYT misinformation desk (2022).
+    Won Mirror Award with Sheera Frenkel for vaccine/mask misinformation reporting. Covers deepfakes, AI-generated content,
+    influence campaigns, content moderation. Education: UC Berkeley BA (English + Mass Comm), Columbia Journalism MS, Columbia
+    MBA. ANALYTICAL VALUE: Her beat (misinformation, AI detection, content moderation) is ground zero for Meta coverage bias
+    — every content moderation decision Meta makes is filtered through her lens. Co-bylines with Stuart Thompson on Sora deepfake
+    coverage. Based in San Francisco.'
   career:
   - publication: los-angeles-times
     event_type: hired
@@ -2978,8 +2978,8 @@ journalists:
     start: 2008-01
     end: 2017-06
     source_url: https://pen.org/people/tiffany-hsu/
-    notes: 'Multiple beats: California economy reporter, retail business reporter, fast food/restaurants reporter. Long
-      tenure at LA Times before NYT move.'
+    notes: 'Multiple beats: California economy reporter, retail business reporter, fast food/restaurants reporter. Long tenure
+      at LA Times before NYT move.'
   - publication: nytimes
     event_type: hired
     role: reporter
@@ -2987,25 +2987,25 @@ journalists:
     start: 2017-07
     end: 2022-05
     source_url: https://nytco.com/press/a-new-beat-for-tiffany-hsu/
-    notes: 'Business desk, media group. Covered advertising industry, computer-generated influencers, J&J baby powder,
-      Subway franchisees. Versatile reporter — "never met a story she wouldn''t jump at enthusiastically."'
+    notes: Business desk, media group. Covered advertising industry, computer-generated influencers, J&J baby powder, Subway
+      franchisees. Versatile reporter — "never met a story she wouldn't jump at enthusiastically."
   - publication: nytimes
     event_type: beat_change
     role: reporter
     beat: disinformation, misinformation, AI-generated content
     start: 2022-06
     source_url: https://nytco.com/press/a-new-beat-for-tiffany-hsu/
-    notes: 'Moved to misinformation team. Won Mirror Award with Sheera Frenkel for vaccine/mask mandate misinformation
-      reporting. Based in San Francisco. Works with Stuart Thompson and Steven Lee Myers. Co-authored Sora deepfake
-      investigation (Oct 2025). Key for MediaScope: covers AI content moderation, deepfakes, platform trust/safety — all
-      central to Meta coverage. PEN America speaker on quality of information.'
+    notes: 'Moved to misinformation team. Won Mirror Award with Sheera Frenkel for vaccine/mask mandate misinformation reporting.
+      Based in San Francisco. Works with Stuart Thompson and Steven Lee Myers. Co-authored Sora deepfake investigation (Oct
+      2025). Key for MediaScope: covers AI content moderation, deepfakes, platform trust/safety — all central to Meta coverage.
+      PEN America speaker on quality of information.'
 - name: Stuart A. Thompson
-  notes: 'NYT misinformation reporter and visual journalist. Career: WSJ (graphics director) → NYT Opinion (2017) → NYT
-    news desk misinformation (2021). Pulitzer Prize winner (WSJ Medicare Unmasked). Data visualization specialist who
-    brought visual/interactive skills to misinformation beat. Created QAnon chatroom immersive, Privacy Project,
-    Trump''s Lies. ANALYTICAL VALUE: Unusual background — visual/data journalist turned beat reporter. His visual
-    investigation skills (bystander video analysis, AI deepfake detection) give his coverage a forensic quality distinct
-    from traditional reporters. Co-bylines with Tiffany Hsu on Sora coverage.'
+  notes: 'NYT misinformation reporter and visual journalist. Career: WSJ (graphics director) → NYT Opinion (2017) → NYT news
+    desk misinformation (2021). Pulitzer Prize winner (WSJ Medicare Unmasked). Data visualization specialist who brought visual/interactive
+    skills to misinformation beat. Created QAnon chatroom immersive, Privacy Project, Trump''s Lies. ANALYTICAL VALUE: Unusual
+    background — visual/data journalist turned beat reporter. His visual investigation skills (bystander video analysis, AI
+    deepfake detection) give his coverage a forensic quality distinct from traditional reporters. Co-bylines with Tiffany
+    Hsu on Sora coverage.'
   career:
   - publication: wall-street-journal
     event_type: hired
@@ -3014,9 +3014,9 @@ journalists:
     start: 2012-01
     end: 2017-06
     source_url: https://nytco.com/press/stuart-thompson-joins-business/
-    notes: 'Graphics director overseeing 24+ editors and developers. Won Pulitzer Prize for "Medicare Unmasked" series.
-      Finalist for Pulitzer for "The Home Front" domestic gun violence series (2018). Steve Duenes praised his "big impact
-      on quality and ambition of the Journal''s visual work."'
+    notes: Graphics director overseeing 24+ editors and developers. Won Pulitzer Prize for "Medicare Unmasked" series. Finalist
+      for Pulitzer for "The Home Front" domestic gun violence series (2018). Steve Duenes praised his "big impact on quality
+      and ambition of the Journal's visual work."
   - publication: nytimes
     event_type: hired
     role: writer_editor
@@ -3033,17 +3033,17 @@ journalists:
     beat: misinformation, disinformation, AI-generated content
     start: 2021-12
     source_url: https://nytco.com/press/stuart-thompson-joins-business/
-    notes: 'Moved from Opinion to news side as misinformation reporter on business/tech desk. Joined Ellen Pollock/Pui-Wing
-      Tam''s team. "The chance to focus on beat reporting and writing, while also deploying the other tools in my toolkit,
-      was an attractive proposal." Co-bylined with Tiffany Hsu on OpenAI Sora deepfake investigation. Visual/data skills
-      differentiate his coverage from traditional misinformation beat reporters.'
+    notes: Moved from Opinion to news side as misinformation reporter on business/tech desk. Joined Ellen Pollock/Pui-Wing
+      Tam's team. "The chance to focus on beat reporting and writing, while also deploying the other tools in my toolkit,
+      was an attractive proposal." Co-bylined with Tiffany Hsu on OpenAI Sora deepfake investigation. Visual/data skills differentiate
+      his coverage from traditional misinformation beat reporters.
 - name: David Yaffe-Bellany
-  notes: 'NYT crypto/fintech/tech reporter. Career: Texas Tribune → NYT fellow (2019-20) → Bloomberg/Businessweek →
-    NYT (Jan 2022). Broke Trump/UAE crypto investigation ($2B World Liberty Financial deal). Former David Carr fellow.
-    Based in San Francisco, later New York. ANALYTICAL VALUE: Crypto/fintech beat intersects with Meta when covering
-    Libra/Diem cryptocurrency, stablecoin regulation, and Trump-era tech policy. His investigative style (FTX collapse,
-    Trump crypto deals) signals deep-dig reporter. Yale education (Yale Daily News). Bloomberg Businessweek magazine
-    features experience gives longform investigative capability.'
+  notes: 'NYT crypto/fintech/tech reporter. Career: Texas Tribune → NYT fellow (2019-20) → Bloomberg/Businessweek → NYT (Jan
+    2022). Broke Trump/UAE crypto investigation ($2B World Liberty Financial deal). Former David Carr fellow. Based in San
+    Francisco, later New York. ANALYTICAL VALUE: Crypto/fintech beat intersects with Meta when covering Libra/Diem cryptocurrency,
+    stablecoin regulation, and Trump-era tech policy. His investigative style (FTX collapse, Trump crypto deals) signals deep-dig
+    reporter. Yale education (Yale Daily News). Bloomberg Businessweek magazine features experience gives longform investigative
+    capability.'
   career:
   - publication: texas-tribune
     event_type: intern
@@ -3060,9 +3060,9 @@ journalists:
     start: 2019-06
     end: 2020-06
     source_url: https://nytco.com/press/david-yaffe-bellany/
-    notes: 'David Carr reporting fellow on Business desk. Covered food industry: virtual restaurants, Popeyes chicken
-      sandwich, Scottish haggis black market. Broke Carlos Ghosn escape news. Investigated Equinox working conditions.
-      Pandemic food industry impact coverage.'
+    notes: 'David Carr reporting fellow on Business desk. Covered food industry: virtual restaurants, Popeyes chicken sandwich,
+      Scottish haggis black market. Broke Carlos Ghosn escape news. Investigated Equinox working conditions. Pandemic food
+      industry impact coverage.'
   - publication: bloomberg
     event_type: hired
     role: reporter
@@ -3070,25 +3070,24 @@ journalists:
     start: 2020-07
     end: 2021-12
     source_url: https://nytco.com/press/david-yaffe-bellany-joins-the-technology-desk/
-    notes: 'Bloomberg News and Businessweek magazine features. Texas AG Ken Paxton investigation. Right-wing extremist
-      deprogramming feature. "Monster talent" — Michael Corkery.'
+    notes: Bloomberg News and Businessweek magazine features. Texas AG Ken Paxton investigation. Right-wing extremist deprogramming
+      feature. "Monster talent" — Michael Corkery.
   - publication: nytimes
     event_type: hired
     role: reporter
     beat: crypto, fintech, tech
     start: 2022-01
     source_url: https://nytco.com/press/david-yaffe-bellany-joins-the-technology-desk/
-    notes: 'Rejoined NYT for crypto/fintech beat. Based initially in San Francisco, later New York. Major stories: FTX
-      collapse and SBF trial, Trump/UAE $2B crypto deal (World Liberty Financial + AI chip export), crypto comeback after
-      Bitcoin ETFs. Guest on Hard Fork and The Daily podcasts. Covers intersection of crypto, politics, and national
-      security.'
+    notes: 'Rejoined NYT for crypto/fintech beat. Based initially in San Francisco, later New York. Major stories: FTX collapse
+      and SBF trial, Trump/UAE $2B crypto deal (World Liberty Financial + AI chip export), crypto comeback after Bitcoin ETFs.
+      Guest on Hard Fork and The Daily podcasts. Covers intersection of crypto, politics, and national security.'
 - name: Joel Khalili
   notes: 'Wired reporter covering crypto, Web3, and fintech. Career: Red Lorry Yellow Lorry (PR) → ITProPortal → TechRadar
-    Pro → Wired (Oct 2022). Based in London. UCL English Literature degree. ANALYTICAL VALUE: UK-based reporter covering
-    crypto/fintech from a European regulatory perspective. Previous TechRadar Pro experience (B2B tech) gives him an
-    enterprise/business lens different from Silicon Valley consumer tech reporters. His crypto/regulation coverage
-    intersects with Meta''s Libra/Diem history and stablecoin regulatory debates. The PR agency background (Red Lorry
-    Yellow Lorry) is unusual — moved from tech PR to tech journalism, giving insider knowledge of PR strategies.'
+    Pro → Wired (Oct 2022). Based in London. UCL English Literature degree. ANALYTICAL VALUE: UK-based reporter covering crypto/fintech
+    from a European regulatory perspective. Previous TechRadar Pro experience (B2B tech) gives him an enterprise/business
+    lens different from Silicon Valley consumer tech reporters. His crypto/regulation coverage intersects with Meta''s Libra/Diem
+    history and stablecoin regulatory debates. The PR agency background (Red Lorry Yellow Lorry) is unusual — moved from tech
+    PR to tech journalism, giving insider knowledge of PR strategies.'
   career:
   - publication: red-lorry-yellow-lorry
     event_type: hired
@@ -3114,18 +3113,18 @@ journalists:
     start: 2020-06
     end: 2022-09
     source_url: https://techradar.com/author/joel-khalili
-    notes: 'News and Features Editor at TechRadar Pro. Curated news content, commissioned features on business technology.
-      Covered cybersecurity, data privacy, cloud, AI, blockchain, 5G, computing. Also produced profile series on people
-      with material tech impact. Sub-edited ITProPortal content.'
+    notes: News and Features Editor at TechRadar Pro. Curated news content, commissioned features on business technology.
+      Covered cybersecurity, data privacy, cloud, AI, blockchain, 5G, computing. Also produced profile series on people with
+      material tech impact. Sub-edited ITProPortal content.
   - publication: wired
     event_type: hired
     role: reporter
     beat: crypto, Web3, fintech, tech regulation
     start: 2022-10
     source_url: https://theorg.com/org/wired/org-chart/joel-khalili
-    notes: 'Reporter covering crypto, Web3, and fintech. Based in London. Also contributed to Ars Technica and WIRED Middle
-      East. Coverage focuses on cryptocurrency regulation, intersection of technology with politics. Global perspective
-      (Berlin, Stockholm, Paris datelines). Part of Wired''s London team after UK print edition was pulled in 2026.'
+    notes: Reporter covering crypto, Web3, and fintech. Based in London. Also contributed to Ars Technica and WIRED Middle
+      East. Coverage focuses on cryptocurrency regulation, intersection of technology with politics. Global perspective (Berlin,
+      Stockholm, Paris datelines). Part of Wired's London team after UK print edition was pulled in 2026.
 - name: Tim Marchman
   notes: 'Key editorial gatekeeper: Director of Science, Politics, and Security at Wired (2024-present). Unusual career arc
     from sportswriting to investigative politics editor. Recruited by Katie Drummond to build Wired''s politics coverage capacity.
@@ -3139,8 +3138,8 @@ journalists:
     start: 2013-01
     end: 2014-12
     source_url: https://listennotes.com/podcasts/hang-up-and-listen/the-sterlings-reputation-edition-yWcKTzRNq3I/
-    notes: 'EIC of Deadspin (Gawker Media). Covered sports with an irreverent, investigative approach. Chicago baseball background.
-      Part of the original Gawker Media ecosystem before its dissolution.'
+    notes: EIC of Deadspin (Gawker Media). Covered sports with an irreverent, investigative approach. Chicago baseball background.
+      Part of the original Gawker Media ecosystem before its dissolution.
   - publication: gizmodo
     event_type: hired
     role: special_projects_editor
@@ -3148,9 +3147,9 @@ journalists:
     start: 2018-01
     end: 2019-06
     source_url: https://rocketreach.co/tim-marchman-email_51918440
-    notes: 'Editor in Chief of Special Projects Desk at Gizmodo Media Group (post-Gawker successor). Overlap with Drummond
-      who was Gizmodo EIC (2015-2017). This institutional connection is a key link in the adversarial-journalism pipeline —
-      both Marchman and Drummond passed through Gizmodo in the same era.'
+    notes: Editor in Chief of Special Projects Desk at Gizmodo Media Group (post-Gawker successor). Overlap with Drummond
+      who was Gizmodo EIC (2015-2017). This institutional connection is a key link in the adversarial-journalism pipeline
+      — both Marchman and Drummond passed through Gizmodo in the same era.
   - publication: vice
     event_type: hired
     role: editorial_director_features
@@ -3158,9 +3157,9 @@ journalists:
     start: 2019-07
     end: 2024-01
     source_url: https://rocketreach.co/tim-marchman-email_51918440
-    notes: 'Features Director / Editorial Director at Vice Media for ~5 years. Vice under financial distress during this period
-      (filed bankruptcy May 2023). Marchman''s departure to Wired in 2024 is part of the Vice diaspora — multiple Vice alumni
-      landing at Condé Nast titles. Vice was known for adversarial, counter-establishment reporting culture.'
+    notes: Features Director / Editorial Director at Vice Media for ~5 years. Vice under financial distress during this period
+      (filed bankruptcy May 2023). Marchman's departure to Wired in 2024 is part of the Vice diaspora — multiple Vice alumni
+      landing at Condé Nast titles. Vice was known for adversarial, counter-establishment reporting culture.
   - publication: wired
     event_type: hired
     role: director_science_politics_security
@@ -3174,8 +3173,8 @@ journalists:
       Silicon Valley''s power now flows through government. Hosts WIRED Politics Lab podcast episodes. email: timothy_marchman@wired.com'
 - name: Sophie Kleeman
   notes: 'Recent hire (May 2025): Senior editor on Wired business desk. Reports to Zoë Schiffer. Career pipeline Mic → Gizmodo
-    → Insider/BI → Wired continues adversarial-tech-journalism lineage. Specializes in enterprise investigative editing — data
-    centers, corporate power, tech industry.'
+    → Insider/BI → Wired continues adversarial-tech-journalism lineage. Specializes in enterprise investigative editing —
+    data centers, corporate power, tech industry.'
   career:
   - publication: mic
     event_type: hired
@@ -3184,9 +3183,9 @@ journalists:
     start: 2014-01
     end: 2015-12
     source_url: https://talkingbiznews.com/they-re-hiring/kleeman-joins-insiders-investigations-team-as-senior-editor/
-    notes: 'Editorial fellow → news desk staff writer → tech staff writer at Mic (digital media startup). Early career stage.
+    notes: Editorial fellow → news desk staff writer → tech staff writer at Mic (digital media startup). Early career stage.
       NYU BA in journalism and anthropology. Also interned at New York Times Magazine, MSNBC, Gothamist, and The New Presence
-      Magazine.'
+      Magazine.
   - publication: gizmodo
     event_type: hired
     role: news_editor
@@ -3194,9 +3193,9 @@ journalists:
     start: 2016-01
     end: 2018-06
     source_url: https://gizmodo.com/author/sophie-kleeman/
-    notes: 'Staff writer, then news editor at Gizmodo. Covered social media, tech industry, internet culture. Part of Gizmodo
+    notes: Staff writer, then news editor at Gizmodo. Covered social media, tech industry, internet culture. Part of Gizmodo
       Media Group during the post-Gawker era — institutional overlap with both Drummond (EIC 2015-2017) and Marchman (special
-      projects 2018-2019).'
+      projects 2018-2019).
   - publication: business-insider
     event_type: hired
     role: deputy_enterprise_editor
@@ -3206,8 +3205,8 @@ journalists:
     source_url: https://talkingbiznews.com/they-re-hiring/kleeman-joins-insiders-investigations-team-as-senior-editor/
     notes: 'Multiple promotions at BI/Insider: essays & features editor → senior investigations editor → deputy enterprise
       editor. Edited award-winning stories on data center impacts, C-sections epidemic, transgender violence, Elon Musk''s
-      Tesla empire. Longest career stop (~8 years). Moved from Gizmodo''s tech-adversarial culture to BI''s enterprise
-      investigative culture.'
+      Tesla empire. Longest career stop (~8 years). Moved from Gizmodo''s tech-adversarial culture to BI''s enterprise investigative
+      culture.'
   - publication: wired
     event_type: hired
     role: senior_editor
@@ -3219,8 +3218,8 @@ journalists:
       tech coverage. KEY: her specialty in corporate power and tech industry investigations directly serves Wired''s adversarial
       Big Tech coverage posture.'
 - name: Brian Kahn
-  notes: 'Recent hire (May 2025): Senior editor on Wired science desk. Climate/clean tech specialist. Career path Earther →
-    Protocol → Bloomberg → Wired tracks through multiple climate-focused outlets.'
+  notes: 'Recent hire (May 2025): Senior editor on Wired science desk. Climate/clean tech specialist. Career path Earther
+    → Protocol → Bloomberg → Wired tracks through multiple climate-focused outlets.'
   career:
   - publication: earther
     event_type: hired
@@ -3228,33 +3227,33 @@ journalists:
     beat: climate, environment
     start: 2017-01
     end: 2021-12
-    notes: 'Managing editor at Earther (Gizmodo Media climate vertical). Oversaw climate coverage. Earther was known for
-      aggressive, accessible climate journalism. Part of G/O Media portfolio.'
+    notes: Managing editor at Earther (Gizmodo Media climate vertical). Oversaw climate coverage. Earther was known for aggressive,
+      accessible climate journalism. Part of G/O Media portfolio.
   - publication: protocol
     event_type: hired
     role: climate_editor
     beat: climate, clean tech
     start: 2022-01
     end: 2023-06
-    notes: 'Oversaw climate coverage at Protocol (tech media startup). Protocol shut down in Nov 2022 (Insider acquisition).
-      Brief tenure during outlet''s final months/wind-down period.'
+    notes: Oversaw climate coverage at Protocol (tech media startup). Protocol shut down in Nov 2022 (Insider acquisition).
+      Brief tenure during outlet's final months/wind-down period.
   - publication: bloomberg
     event_type: hired
     role: editor
     beat: climate, clean tech, energy
     start: 2023-07
     end: 2026-04
-    notes: 'Editor on Bloomberg''s climate team. Oversaw clean tech coverage. Ran flagship climate newsletter. Edited stories
+    notes: Editor on Bloomberg's climate team. Oversaw clean tech coverage. Ran flagship climate newsletter. Edited stories
       on satellite decommissioning, Australia-Singapore power cable, firefighting plane competition. Moved from advocacy-adjacent
-      climate journalism (Earther) to Bloomberg''s institutional business journalism.'
+      climate journalism (Earther) to Bloomberg's institutional business journalism.
   - publication: wired
     event_type: hired
     role: senior_editor
     beat: science, climate, clean tech
     start: 2026-05
     source_url: https://talkingbiznews.com/media-news/wired-hires-editors-from-business-insider-bloomberg/
-    notes: 'Senior editor on science desk. Reports to Tim Marchman. San Francisco office. Hired alongside Sophie Kleeman
-      (business desk). Announced by executive editor Brian Barrett.'
+    notes: Senior editor on science desk. Reports to Tim Marchman. San Francisco office. Hired alongside Sophie Kleeman (business
+      desk). Announced by executive editor Brian Barrett.
 - name: Molly Taft
   notes: 'Recent hire (Mar 2025): Senior writer on Wired science desk covering climate. Career path Earther → New Republic
     → Drilled → Wired. Won 2023 SEAL Environmental Award. Pronouns: they/them.'
@@ -3266,8 +3265,8 @@ journalists:
     start: 2020-06
     end: 2020-12
     source_url: https://rainforestjournalismfund.org/journalists/molly-taft
-    notes: 'Fellow at Center for Public Integrity. Columbia Journalism MS (Stabile investigative fellow). Bowdoin BA in history
-      and German.'
+    notes: Fellow at Center for Public Integrity. Columbia Journalism MS (Stabile investigative fellow). Bowdoin BA in history
+      and German.
   - publication: gizmodo
     event_type: hired
     role: staff_writer
@@ -3275,8 +3274,8 @@ journalists:
     start: 2021-02
     end: 2023-06
     source_url: https://gizmodo.com/author/molly-taft/
-    notes: 'Staff writer at Earther (Gizmodo''s climate vertical). Covered climate, tech industry environmental impact, Big
-      Oil. Won 2023 SEAL Environmental Award. Part of G/O Media. Overlap with Brian Kahn who previously led Earther.'
+    notes: Staff writer at Earther (Gizmodo's climate vertical). Covered climate, tech industry environmental impact, Big
+      Oil. Won 2023 SEAL Environmental Award. Part of G/O Media. Overlap with Brian Kahn who previously led Earther.
   - publication: new-republic
     event_type: hired
     role: contributing_senior_editor
@@ -3284,8 +3283,8 @@ journalists:
     start: 2023-07
     end: 2023-10
     source_url: https://buzzsumo.com/journalist/molly-taft/
-    notes: 'Contributing senior editor at The New Republic, focused on climate vertical. Wrote on offshore wind, climate
-      misinformation, fossil fuel industry. Brief stint — continued freelancing simultaneously.'
+    notes: Contributing senior editor at The New Republic, focused on climate vertical. Wrote on offshore wind, climate misinformation,
+      fossil fuel industry. Brief stint — continued freelancing simultaneously.
   - publication: drilled-media
     event_type: hired
     role: reporter_editor
@@ -3293,18 +3292,18 @@ journalists:
     start: 2023-11
     end: 2025-03
     source_url: https://theorg.com/org/wired/org-chart/molly-taft
-    notes: 'Reporter/editor at Drilled Media (climate investigative podcast/outlet focused on fossil fuel industry accountability).
-      Drilled is known for adversarial coverage of oil/gas industry. Pipeline from Drilled to Wired mirrors Drummond''s recruitment
-      of adversarial-journalism talent.'
+    notes: Reporter/editor at Drilled Media (climate investigative podcast/outlet focused on fossil fuel industry accountability).
+      Drilled is known for adversarial coverage of oil/gas industry. Pipeline from Drilled to Wired mirrors Drummond's recruitment
+      of adversarial-journalism talent.
   - publication: wired
     event_type: hired
     role: senior_writer
     beat: climate, energy, environment
     start: 2025-03
     source_url: https://talkingbiznews.com/media-news/wired-hires-taft-as-senior-writer/
-    notes: 'Senior writer on science desk covering climate. Reports to Tim Marchman. New York office. Focus: new energy
-      technologies, who profits, and impact on average people. Announcement by Tim Marchman. Also written for Vice, The
-      Intercept, The Guardian, Teen Vogue, BuzzFeed. Contact: molly_taft@wired.com, Signal: mollytaft.76'
+    notes: 'Senior writer on science desk covering climate. Reports to Tim Marchman. New York office. Focus: new energy technologies,
+      who profits, and impact on average people. Announcement by Tim Marchman. Also written for Vice, The Intercept, The Guardian,
+      Teen Vogue, BuzzFeed. Contact: molly_taft@wired.com, Signal: mollytaft.76'
 - name: Miles Klee
   notes: 'Recent hire (Feb 2026): Senior writer on Wired culture desk. Internet culture specialist — conspiracy theories,
     memes, fandoms, digital subcultures. Author of novels and story collections. Unusual non-traditional pipeline into Wired:
@@ -3317,8 +3316,8 @@ journalists:
     start: 2014-01
     end: 2016-12
     source_url: https://iheart.com/podcast/moral-panic-over-trafficking/
-    notes: 'Early internet culture journalism at The Daily Dot. Covered weird niche subcultures, memes, viral content. Self-described
-      start of his internet coverage career (~10 years before 2024 interview).'
+    notes: Early internet culture journalism at The Daily Dot. Covered weird niche subcultures, memes, viral content. Self-described
+      start of his internet coverage career (~10 years before 2024 interview).
   - publication: mel-magazine
     event_type: hired
     role: senior_staff_writer
@@ -3326,9 +3325,9 @@ journalists:
     start: 2017-01
     end: 2022-07
     source_url: https://melmagazine.com/en/author/miles-klee/
-    notes: 'Senior staff writer at MEL Magazine (Dollar Shave Club''s editorial arm). Self-described as ''resident tank-top
-      dirtbag, shitposter and meme expert.'' Prolific output covering internet culture, conspiracy theories, political movements,
-      digital subcultures. MEL was an unusual editorial experiment — a men''s magazine funded by a DTC razor company.'
+    notes: Senior staff writer at MEL Magazine (Dollar Shave Club's editorial arm). Self-described as 'resident tank-top dirtbag,
+      shitposter and meme expert.' Prolific output covering internet culture, conspiracy theories, political movements, digital
+      subcultures. MEL was an unusual editorial experiment — a men's magazine funded by a DTC razor company.
   - publication: rolling-stone
     event_type: hired
     role: culture_writer
@@ -3345,17 +3344,17 @@ journalists:
     beat: internet culture, digital culture, online subcultures
     start: 2026-02
     source_url: https://editorandpublisher.com/stories/wired-adds-senior-writer-to-the-culture-desk/
-    notes: 'Senior writer on culture desk. Reports to Michael Calore (Director, Consumer Tech & Culture). Los Angeles-based.
-      Announced by executive editor Brian Barrett. Works closely with editor Manisha day-to-day. Covers ''the weird, unexpected,
-      and inexplicable corners of the internet.'' First major Wired hire from outside the traditional tech journalism pipeline —
-      brings Rolling Stone/MEL''s gonzo internet-culture approach to Wired''s Drummond-era editorial expansion.'
+    notes: Senior writer on culture desk. Reports to Michael Calore (Director, Consumer Tech & Culture). Los Angeles-based.
+      Announced by executive editor Brian Barrett. Works closely with editor Manisha day-to-day. Covers 'the weird, unexpected,
+      and inexplicable corners of the internet.' First major Wired hire from outside the traditional tech journalism pipeline
+      — brings Rolling Stone/MEL's gonzo internet-culture approach to Wired's Drummond-era editorial expansion.
 - name: Gilad Edelman
   notes: 'Key migration: Washington Monthly → Wired → FTC → Atlantic. Yale JD (2012-2015) brings legal/regulatory lens to
     tech policy coverage. Rare government-to-journalism-to-government-to-journalism career arc. At Wired, covered intersection
-    of tech, politics, and law — Section 230, content moderation, disinformation. FTC stint (Sep 2022) as communications
-    strategist under Chair Lina Khan gave insider regulatory perspective. Now senior editor at Atlantic covering economics
-    and political economy with tech policy focus. Covers Google antitrust, Epstein associations, libertarian authoritarianism.
-    Critical DiD test case: did his framing shift when moving from Condé Nast (Wired) to Emerson Collective (Atlantic)?'
+    of tech, politics, and law — Section 230, content moderation, disinformation. FTC stint (Sep 2022) as communications strategist
+    under Chair Lina Khan gave insider regulatory perspective. Now senior editor at Atlantic covering economics and political
+    economy with tech policy focus. Covers Google antitrust, Epstein associations, libertarian authoritarianism. Critical
+    DiD test case: did his framing shift when moving from Condé Nast (Wired) to Emerson Collective (Atlantic)?'
   career:
   - publication: washington-monthly
     event_type: hired
@@ -3364,8 +3363,8 @@ journalists:
     start: 2016-09
     end: 2019-11
     source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-edelman-as-a-senior-editor-for-economics-coverage/
-    notes: 'Editor, then executive editor. Progressive policy magazine. Covered intersection of politics and policy.
-      Columbia BA (2005-2009), Yale JD (2012-2015). Legal training shapes regulatory analysis lens.'
+    notes: Editor, then executive editor. Progressive policy magazine. Covered intersection of politics and policy. Columbia
+      BA (2005-2009), Yale JD (2012-2015). Legal training shapes regulatory analysis lens.
   - publication: wired
     event_type: hired
     role: senior_writer
@@ -3373,9 +3372,9 @@ journalists:
     start: 2019-11
     end: 2022-09
     source_url: https://www.wired.com/author/gilad-edelman/
-    notes: 'Politics writer covering tech-politics-law intersection. Section 230 expert. Covered content moderation,
-      disinformation, social media censorship. Appeared on podcasts as Wired''s tech policy voice. Overlapped with
-      Nicholas Thompson (EIC) and early Lichfield era. Left for FTC under Chair Lina Khan.'
+    notes: Politics writer covering tech-politics-law intersection. Section 230 expert. Covered content moderation, disinformation,
+      social media censorship. Appeared on podcasts as Wired's tech policy voice. Overlapped with Nicholas Thompson (EIC)
+      and early Lichfield era. Left for FTC under Chair Lina Khan.
   - publication: ftc
     event_type: hired
     role: communications_strategist
@@ -3383,8 +3382,8 @@ journalists:
     start: 2022-09
     end: 2023-04
     source_url: https://theorg.com/org/the-atlantic/people/gilad-edelman
-    notes: 'Communications strategist at Federal Trade Commission under Chair Lina Khan. Brief government stint
-      (~7 months). Rare journalist-to-regulator move gives insider perspective on tech enforcement.'
+    notes: Communications strategist at Federal Trade Commission under Chair Lina Khan. Brief government stint (~7 months).
+      Rare journalist-to-regulator move gives insider perspective on tech enforcement.
   - publication: atlantic
     event_type: hired
     role: senior_editor
@@ -3392,14 +3391,14 @@ journalists:
     start: 2023-04
     source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-edelman-as-a-senior-editor-for-economics-coverage/
     notes: 'Senior editor expanding economics and political economy coverage. Also contributes to Slate. Recent articles:
-      "Will Google Ever Have to Pay for Its Sins?" (Jan 2026), "Guilt by Association With Epstein" (Feb 2026),
-      "The Rise of Libertarian Authoritarianism" (Jan 2026). 307+ total articles across career per JournalistHunt.
-      Key question: does Atlantic''s Emerson Collective ownership shape coverage differently than Condé Nast?'
+      "Will Google Ever Have to Pay for Its Sins?" (Jan 2026), "Guilt by Association With Epstein" (Feb 2026), "The Rise of
+      Libertarian Authoritarianism" (Jan 2026). 307+ total articles across career per JournalistHunt. Key question: does Atlantic''s
+      Emerson Collective ownership shape coverage differently than Condé Nast?'
 - name: Amanda Hoover
-  notes: 'Key migration: NJ Advance Media → Morning Brew → Wired → Business Insider. General assignment tech reporter
-    who covered Meta/Facebook (Marketplace scams, layoffs), TikTok Shop, social media platforms, AI workplace displacement.
-    Promoted within Wired under Katie Drummond (Aug 2024). Cross-publication migration through Condé Nast orbit makes her
-    a good DiD subject — did Wired''s institutional culture shape her coverage tone?'
+  notes: 'Key migration: NJ Advance Media → Morning Brew → Wired → Business Insider. General assignment tech reporter who
+    covered Meta/Facebook (Marketplace scams, layoffs), TikTok Shop, social media platforms, AI workplace displacement. Promoted
+    within Wired under Katie Drummond (Aug 2024). Cross-publication migration through Condé Nast orbit makes her a good DiD
+    subject — did Wired''s institutional culture shape her coverage tone?'
   career:
   - publication: nj-advance-media
     event_type: hired
@@ -3408,9 +3407,9 @@ journalists:
     start: 2019-01
     end: 2021-10
     source_url: https://talkingbiznews.com/they-re-hiring/morning-brew-hires-hoover-as-tech-reporter/
-    notes: 'Reporter at NJ Advance Media (Star-Ledger). Covered NJ state government. Also had prior stints at
-      Boston Globe (breaking crime news), Christian Science Monitor (rapid response), Boston Magazine (intern).
-      Northeastern University BA in journalism.'
+    notes: Reporter at NJ Advance Media (Star-Ledger). Covered NJ state government. Also had prior stints at Boston Globe
+      (breaking crime news), Christian Science Monitor (rapid response), Boston Magazine (intern). Northeastern University
+      BA in journalism.
   - publication: morning-brew
     event_type: hired
     role: reporter
@@ -3418,8 +3417,8 @@ journalists:
     start: 2021-11
     end: 2022-10
     source_url: https://talkingbiznews.com/they-re-hiring/morning-brew-hires-hoover-as-tech-reporter/
-    notes: 'Technology reporter. ~1 year tenure at the newsletter-first publication. Covered tech industry news.
-      Transition from state government reporting to dedicated tech beat.'
+    notes: Technology reporter. ~1 year tenure at the newsletter-first publication. Covered tech industry news. Transition
+      from state government reporting to dedicated tech beat.
   - publication: wired
     event_type: hired
     role: staff_writer
@@ -3427,24 +3426,24 @@ journalists:
     start: 2022-11
     end: 2025-02
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-morning-brews-hoover/
-    notes: 'General assignment staff writer. Covered Facebook Marketplace scams, TikTok Shop, Airbnb, layoff culture,
-      AI workplace displacement. Promoted by Katie Drummond in Aug 2024 editorial promotions alongside Dhruv Mehrotra
-      and Reece Rogers. Appeared on Wired''s Gadget Lab and Uncanny Valley podcasts. Wrote about Mastodon,
-      social media platform shifts. Left after ~2.5 years for Business Insider senior correspondent role.'
+    notes: General assignment staff writer. Covered Facebook Marketplace scams, TikTok Shop, Airbnb, layoff culture, AI workplace
+      displacement. Promoted by Katie Drummond in Aug 2024 editorial promotions alongside Dhruv Mehrotra and Reece Rogers.
+      Appeared on Wired's Gadget Lab and Uncanny Valley podcasts. Wrote about Mastodon, social media platform shifts. Left
+      after ~2.5 years for Business Insider senior correspondent role.
   - publication: business-insider
     event_type: hired
     role: senior_correspondent
     beat: technology
     start: 2025-03
     source_url: https://talkingbiznews.com/they-re-hiring/business-insider-hires-hoover-to-cover-tech/
-    notes: 'Senior correspondent covering technology. Covers AI workplace impacts ("vibe working"), consumer tech
-      (Friend wearable review), social media trends. Key question: how does her coverage tone differ from Wired era
-      now that she''s outside Condé Nast?'
+    notes: 'Senior correspondent covering technology. Covers AI workplace impacts ("vibe working"), consumer tech (Friend
+      wearable review), social media trends. Key question: how does her coverage tone differ from Wired era now that she''s
+      outside Condé Nast?'
 - name: Adam Satariano
-  notes: 'Key migration: Bloomberg → NYT. EU-based tech regulation correspondent. Covers DMA, DSA enforcement against
-    Meta, TikTok, Google. 11-year Bloomberg veteran who moved to London for European tech beat. Critical reporter for
-    understanding how NYT frames EU regulatory action against Big Tech — his coverage directly shapes perception of
-    whether EU enforcement is justified oversight or anti-American protectionism.'
+  notes: 'Key migration: Bloomberg → NYT. EU-based tech regulation correspondent. Covers DMA, DSA enforcement against Meta,
+    TikTok, Google. 11-year Bloomberg veteran who moved to London for European tech beat. Critical reporter for understanding
+    how NYT frames EU regulatory action against Big Tech — his coverage directly shapes perception of whether EU enforcement
+    is justified oversight or anti-American protectionism.'
   career:
   - publication: congressional-quarterly
     event_type: hired
@@ -3453,7 +3452,7 @@ journalists:
     start: 2005-01
     end: 2007-06
     source_url: https://talkingbiznews.com/they-re-hiring/ny-times-hires-bloombergs-satariano-to-cover-tech-in-europe/
-    notes: 'Early career in Washington covering Congress. UC Santa Cruz graduate. San Francisco Bay Area native.'
+    notes: Early career in Washington covering Congress. UC Santa Cruz graduate. San Francisco Bay Area native.
   - publication: bloomberg
     event_type: hired
     role: reporter
@@ -3461,25 +3460,25 @@ journalists:
     start: 2007-07
     end: 2018-03
     source_url: https://talkingbiznews.com/they-re-hiring/ny-times-hires-bloombergs-satariano-to-cover-tech-in-europe/
-    notes: '11-year tenure. Started in San Francisco covering environment and entertainment, transitioned to Silicon
-      Valley tech (Apple iPhone growth, post-Jobs era, AI in finance, startup flameouts). Moved to London in 2016
-      to cover European tech for Bloomberg. Wrote for Bloomberg News and Bloomberg Businessweek. TV appearances.'
+    notes: 11-year tenure. Started in San Francisco covering environment and entertainment, transitioned to Silicon Valley
+      tech (Apple iPhone growth, post-Jobs era, AI in finance, startup flameouts). Moved to London in 2016 to cover European
+      tech for Bloomberg. Wrote for Bloomberg News and Bloomberg Businessweek. TV appearances.
   - publication: nytimes
     event_type: hired
     role: correspondent
     beat: EU tech regulation, data privacy, antitrust
     start: 2018-03
     source_url: https://talkingbiznews.com/they-re-hiring/ny-times-hires-bloombergs-satariano-to-cover-tech-in-europe/
-    notes: 'Technology correspondent based in London. Primary beat: EU tech regulation — DMA, DSA enforcement,
-      data privacy (GDPR), antitrust. Covers EU cases against Meta (DSA children''s safety, addictive design),
-      TikTok (addictive design, Jun 2026), Google (antitrust). Recent: EU preliminary findings on TikTok''s
-      "addictive design" (Jun 2026). Key framing question: does his coverage position EU regulation as justified
-      consumer protection or as overreach against US tech companies?'
+    notes: 'Technology correspondent based in London. Primary beat: EU tech regulation — DMA, DSA enforcement, data privacy
+      (GDPR), antitrust. Covers EU cases against Meta (DSA children''s safety, addictive design), TikTok (addictive design,
+      Jun 2026), Google (antitrust). Recent: EU preliminary findings on TikTok''s "addictive design" (Jun 2026). Key framing
+      question: does his coverage position EU regulation as justified consumer protection or as overreach against US tech
+      companies?'
 - name: Sapna Maheshwari
-  notes: 'Key migration: Bloomberg → BuzzFeed → NYT. Covers TikTok and emerging media — direct Meta competitor
-    coverage. Award-winning investigative reporter (SABEW Best in Business, Front Page Award). Her retail/advertising
-    background gives her deep understanding of platform business models. Critical for analyzing NYT''s comparative
-    framing of Meta vs TikTok — does she apply the same critical scrutiny to both platforms?'
+  notes: 'Key migration: Bloomberg → BuzzFeed → NYT. Covers TikTok and emerging media — direct Meta competitor coverage. Award-winning
+    investigative reporter (SABEW Best in Business, Front Page Award). Her retail/advertising background gives her deep understanding
+    of platform business models. Critical for analyzing NYT''s comparative framing of Meta vs TikTok — does she apply the
+    same critical scrutiny to both platforms?'
   career:
   - publication: bloomberg
     event_type: hired
@@ -3488,8 +3487,8 @@ journalists:
     start: 2011-01
     end: 2013-06
     source_url: https://talkingbiznews.com/they-re-hiring/buzzfeeds-maheshwari-to-join-ny-times-biz-desk/
-    notes: 'Bloomberg News reporter covering corporate credit, stocks, insurance companies and retail.
-      UNC-Chapel Hill graduate (business journalism program).'
+    notes: Bloomberg News reporter covering corporate credit, stocks, insurance companies and retail. UNC-Chapel Hill graduate
+      (business journalism program).
   - publication: buzzfeed
     event_type: hired
     role: reporter
@@ -3497,35 +3496,34 @@ journalists:
     start: 2013-07
     end: 2016-07
     source_url: https://talkingbiznews.com/they-re-hiring/buzzfeeds-maheshwari-to-join-ny-times-biz-desk/
-    notes: 'Distinguished herself with aggressive retail/e-commerce coverage. JustFab investigation won SABEW
-      Best in Business. Chinese Facebook knockoff clothing piece was most-read investigative feature ever on
-      BuzzFeed (3.6M views). Victoria''s Secret on-call shifts investigation won Front Page Award (Newswomen''s
-      Club of New York). Named by Time as one of "140 Best Twitter Feeds" (2014).'
+    notes: Distinguished herself with aggressive retail/e-commerce coverage. JustFab investigation won SABEW Best in Business.
+      Chinese Facebook knockoff clothing piece was most-read investigative feature ever on BuzzFeed (3.6M views). Victoria's
+      Secret on-call shifts investigation won Front Page Award (Newswomen's Club of New York). Named by Time as one of "140
+      Best Twitter Feeds" (2014).
   - publication: nytimes
     event_type: hired
     role: reporter
     beat: advertising, then retail, then TikTok/emerging media
     start: 2016-08
     source_url: https://nytco.com/press/a-new-role-for-sapna-maheshwari/
-    notes: 'Three distinct beats at NYT: (1) Advertising (Aug 2016 - 2019) — wrote about inappropriate YouTube
-      videos served to children, viral misinformation, got "programmatic advertising" onto front page. (2) Retail
-      (2019 - ~2022) — Victoria''s Secret scandal, Outdoor Voices internal clashes, Forever 21 downfall.
-      (3) TikTok/emerging media (~2022 - present) — covers TikTok as primary social media/platform reporter.
-      Editor: Connor Ennis ("Sapna is an editor''s dream"). Critical for meta-analysis: as NYT''s TikTok reporter,
-      her framing of TikTok vs Meta coverage provides natural experiment for platform-level bias detection.
-      Appeared in Netflix documentary "White Hot: The Rise & Fall of Abercrombie & Fitch" (2022).'
+    notes: 'Three distinct beats at NYT: (1) Advertising (Aug 2016 - 2019) — wrote about inappropriate YouTube videos served
+      to children, viral misinformation, got "programmatic advertising" onto front page. (2) Retail (2019 - ~2022) — Victoria''s
+      Secret scandal, Outdoor Voices internal clashes, Forever 21 downfall. (3) TikTok/emerging media (~2022 - present) —
+      covers TikTok as primary social media/platform reporter. Editor: Connor Ennis ("Sapna is an editor''s dream"). Critical
+      for meta-analysis: as NYT''s TikTok reporter, her framing of TikTok vs Meta coverage provides natural experiment for
+      platform-level bias detection. Appeared in Netflix documentary "White Hot: The Rise & Fall of Abercrombie & Fitch" (2022).'
 - name: Meg Marco
   notes: 'KEY EDITORIAL GATEKEEPER (DEPARTED): Wired''s first executive editor of news under Drummond (Mar-Dec 2023, ~9 months).
     Career arc: Consumerist (Gawker Media → Consumer Reports) → WSJ → Axios → ProPublica → Observer → Wired → Harvard Berkman
     Klein Center. NOT a reporter — an editorial operations/strategy/product person with a consumer advocacy and audience strategy
     background. Her Gawker Media connection (Consumerist) links her to the adversarial media ecosystem. Founded WSJ Media
-    Science Lab (AI/ML in the newsroom). Pulitzer finalist 2021 (ProPublica, Public Interest). Author of "Field Guide to
-    the Apocalypse" (Simon & Schuster). Her very brief Wired tenure (~9 months) is analytically significant — she was hired
-    by Drummond as the first exec editor of news, set up the politics team reporting structure (Feiger, Turton, Gilbert all
-    reported to her), but departed almost immediately after those hires were made. Replaced by Brian Barrett (Jan 16, 2024).
-    Currently at Harvard''s Applied Social Media Lab, Berkman Klein Center + ASML. Awards: Consumer Education Leadership
-    Award (National Consumers League + United Church of Christ), 2015 Journalist of the Year (Consumer Federation of California).
-    Bluesky: @meghann.bsky.social.'
+    Science Lab (AI/ML in the newsroom). Pulitzer finalist 2021 (ProPublica, Public Interest). Author of "Field Guide to the
+    Apocalypse" (Simon & Schuster). Her very brief Wired tenure (~9 months) is analytically significant — she was hired by
+    Drummond as the first exec editor of news, set up the politics team reporting structure (Feiger, Turton, Gilbert all reported
+    to her), but departed almost immediately after those hires were made. Replaced by Brian Barrett (Jan 16, 2024). Currently
+    at Harvard''s Applied Social Media Lab, Berkman Klein Center + ASML. Awards: Consumer Education Leadership Award (National
+    Consumers League + United Church of Christ), 2015 Journalist of the Year (Consumer Federation of California). Bluesky:
+    @meghann.bsky.social.'
   career:
   - publication: consumerist
     event_type: hired
@@ -3548,10 +3546,10 @@ journalists:
     end: 2018-10
     source_url: https://talkingbiznews.com/they-re-hiring/axios-hires-wsjs-marco-as-deep-dive-editor/
     notes: 'Masthead editor overseeing digital content strategy. Key achievements: (1) Multi-platform expansion of "Future
-      of Everything" franchise, (2) Digital launch of weekend section Exchange, (3) Founded and staffed WSJ Media Science Lab
-      — a center for AI and machine learning experimentation within the newsroom, (4) Team relaunched 30+ newsletters. The
-      Media Science Lab is notable — she was building AI/ML tools for journalism years before it became mainstream. Dow Jones/News
-      Corp ownership.'
+      of Everything" franchise, (2) Digital launch of weekend section Exchange, (3) Founded and staffed WSJ Media Science
+      Lab — a center for AI and machine learning experimentation within the newsroom, (4) Team relaunched 30+ newsletters.
+      The Media Science Lab is notable — she was building AI/ML tools for journalism years before it became mainstream. Dow
+      Jones/News Corp ownership.'
   - publication: axios
     event_type: hired
     role: deep_dive_editor
@@ -3559,8 +3557,8 @@ journalists:
     start: 2018-11
     end: 2019-06
     source_url: https://talkingbiznews.com/they-re-hiring/axios-hires-wsjs-marco-as-deep-dive-editor/
-    notes: 'Led Axios'' expansion into longform with its biweekly Deep Dive newsletter, applying Axios'' "Smart Brevity"
-      methodology to deeper analysis. Brief tenure (~8 months). Axios owned by Cox Enterprises (since 2022 acquisition).'
+    notes: Led Axios' expansion into longform with its biweekly Deep Dive newsletter, applying Axios' "Smart Brevity" methodology
+      to deeper analysis. Brief tenure (~8 months). Axios owned by Cox Enterprises (since 2022 acquisition).
   - publication: propublica
     event_type: hired
     role: senior_editor
@@ -3568,20 +3566,20 @@ journalists:
     start: 2019-07
     end: 2021-06
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-marco-as-executive-editor-of-news/
-    notes: 'Senior editor managing audience strategy, social media, and editorial newsletters. Co-editor of ProPublica''s
-      coronavirus coverage that was a finalist for the 2021 Pulitzer Prize for Public Interest. ProPublica is a nonprofit
-      investigative newsroom — exposure to public-interest, accountability-driven journalism culture. The Pulitzer finalist
-      credential strengthened her subsequent hiring appeal.'
+    notes: Senior editor managing audience strategy, social media, and editorial newsletters. Co-editor of ProPublica's coronavirus
+      coverage that was a finalist for the 2021 Pulitzer Prize for Public Interest. ProPublica is a nonprofit investigative
+      newsroom — exposure to public-interest, accountability-driven journalism culture. The Pulitzer finalist credential strengthened
+      her subsequent hiring appeal.
   - publication: observer
     event_type: hired
     role: eic
     beat: overall editorial direction
     start: 2021-07
     end: 2023-02
-    notes: 'Editor-in-chief of the Observer (observer.com) for ~2 years. During her tenure, wrote articles critical of Facebook/Meta
-      (e.g., "Instagram research is serious; Facebook''s response is insufficient" and "Facebook ''Has Known This Forever''").
-      The Observer is a center-right publication owned by Jared Kushner''s brother-in-law — unusual institutional home for
-      someone with Gawker Media/ProPublica background.'
+    notes: Editor-in-chief of the Observer (observer.com) for ~2 years. During her tenure, wrote articles critical of Facebook/Meta
+      (e.g., "Instagram research is serious; Facebook's response is insufficient" and "Facebook 'Has Known This Forever'").
+      The Observer is a center-right publication owned by Jared Kushner's brother-in-law — unusual institutional home for
+      someone with Gawker Media/ProPublica background.
   - publication: wired
     event_type: hired
     role: executive_editor_news
@@ -3590,13 +3588,13 @@ journalists:
     end: 2023-12
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-marco-as-executive-editor-of-news/
     notes: 'BRIEF BUT PIVOTAL TENURE: Executive editor of news for ~9 months. Hired by Katie Drummond as first exec editor
-      of news in Drummond era. Key structural achievement: oversaw launch of Wired''s first-ever politics team (Nov 2023) —
-      Feiger, Turton, and Gilbert all reported to her. Announced: "I''m proud of the all the amazing work we accomplished
+      of news in Drummond era. Key structural achievement: oversaw launch of Wired''s first-ever politics team (Nov 2023)
+      — Feiger, Turton, and Gilbert all reported to her. Announced: "I''m proud of the all the amazing work we accomplished
       in what felt like an instant." Departure so soon after politics team launch raises questions about editorial alignment
-      or strategic disagreement. Replaced by Brian Barrett (Jan 16, 2024, returning from Gizmodo). ANALYTICAL VALUE: Her
-      departure means the politics team she built was immediately handed to Barrett, whose Gizmodo adversarial DNA aligned
-      more closely with Drummond''s editorial vision. The Marco → Barrett succession may represent a course correction —
-      from audience/strategy leadership to adversarial-journalism-native leadership.'
+      or strategic disagreement. Replaced by Brian Barrett (Jan 16, 2024, returning from Gizmodo). ANALYTICAL VALUE: Her departure
+      means the politics team she built was immediately handed to Barrett, whose Gizmodo adversarial DNA aligned more closely
+      with Drummond''s editorial vision. The Marco → Barrett succession may represent a course correction — from audience/strategy
+      leadership to adversarial-journalism-native leadership.'
   - publication: harvard-berkman-klein
     event_type: hired
     role: researcher
@@ -3606,21 +3604,20 @@ journalists:
       pivot to academic/research role. Bluesky bio: "Previously: ProPublica, WSJ, WIRED, Consumerist (RIP)." Self-description:
       "I compulsively take pictures of signs and post really good news articles."'
 - name: Andrew Couts
-  notes: 'KEY EDITORIAL GATEKEEPER: Director, Security & Investigations at Wired (promoted from Senior Editor). Oversees
-    cybersecurity, privacy, surveillance, policing, crime, and national security coverage PLUS all investigations across
-    Wired''s entire newsroom. Career arc: The Week → Digital Trends → Daily Dot (politics editor) → Gizmodo (executive editor,
-    4+ years) → Wired (2022-present). Based in New York. The GIZMODO → WIRED pipeline is central to his profile — he was
-    executive editor at Gizmodo from Dec 2017 to Mar 2022, overlapping with the post-Drummond Gizmodo era (Drummond left
-    Gizmodo EIC role in Apr 2017, but the adversarial culture she helped build persisted). His security desk manages Andy
-    Greenberg, Lily Hay Newman, Dell Cameron, Dhruv Mehrotra, and Matt Burgess (UK). Awards with teams: 2024 Sigma Award,
-    2023 Philip Meyer Journalism Award, 2022 Edward R. Murrow Award. Hosts Wired''s "Incognito Mode" video series. Appears
-    on "Uncanny Valley" podcast. Title upgraded from Senior Editor to Director circa 2025-2026, paralleling other Director
-    promotions under Drummond (Feiger, Calore, Marchman). His dual role — security desk lead AND newsroom-wide investigations
-    overseer — makes him one of the most editorially powerful figures at Wired after Drummond and Barrett. ANALYTICAL VALUE:
-    The Daily Dot connection is significant — William Turton also started at the Daily Dot (2014-2016) when Couts was politics
-    editor there (2014-2017). Couts may have been Turton''s editor, creating a mentorship lineage that feeds into the Drummond
-    orbit. His investigations oversight means any cross-desk investigative story (including Meta coverage) passes through
-    his editorial judgment.'
+  notes: 'KEY EDITORIAL GATEKEEPER: Director, Security & Investigations at Wired (promoted from Senior Editor). Oversees cybersecurity,
+    privacy, surveillance, policing, crime, and national security coverage PLUS all investigations across Wired''s entire
+    newsroom. Career arc: The Week → Digital Trends → Daily Dot (politics editor) → Gizmodo (executive editor, 4+ years) →
+    Wired (2022-present). Based in New York. The GIZMODO → WIRED pipeline is central to his profile — he was executive editor
+    at Gizmodo from Dec 2017 to Mar 2022, overlapping with the post-Drummond Gizmodo era (Drummond left Gizmodo EIC role in
+    Apr 2017, but the adversarial culture she helped build persisted). His security desk manages Andy Greenberg, Lily Hay
+    Newman, Dell Cameron, Dhruv Mehrotra, and Matt Burgess (UK). Awards with teams: 2024 Sigma Award, 2023 Philip Meyer Journalism
+    Award, 2022 Edward R. Murrow Award. Hosts Wired''s "Incognito Mode" video series. Appears on "Uncanny Valley" podcast.
+    Title upgraded from Senior Editor to Director circa 2025-2026, paralleling other Director promotions under Drummond (Feiger,
+    Calore, Marchman). His dual role — security desk lead AND newsroom-wide investigations overseer — makes him one of the
+    most editorially powerful figures at Wired after Drummond and Barrett. ANALYTICAL VALUE: The Daily Dot connection is significant
+    — William Turton also started at the Daily Dot (2014-2016) when Couts was politics editor there (2014-2017). Couts may
+    have been Turton''s editor, creating a mentorship lineage that feeds into the Drummond orbit. His investigations oversight
+    means any cross-desk investigative story (including Meta coverage) passes through his editorial judgment.'
   career:
   - publication: the-week
     event_type: hired
@@ -3629,8 +3626,8 @@ journalists:
     start: 2009-11
     end: 2010-11
     source_url: https://theorg.com/org/wired/org-chart/andrew-couts
-    notes: 'Associate editor at The Week magazine. ~1 year tenure. The Week is owned by Future plc (UK-based media company).
-      Earliest career position identified.'
+    notes: Associate editor at The Week magazine. ~1 year tenure. The Week is owned by Future plc (UK-based media company).
+      Earliest career position identified.
   - publication: digital-trends
     event_type: hired
     role: features_editor
@@ -3638,8 +3635,8 @@ journalists:
     start: 2011-01
     end: 2014-03
     source_url: https://theorg.com/org/wired/org-chart/andrew-couts
-    notes: 'Features editor at DigitalTrends.com. ~3 year tenure. Consumer tech/features role. Digital Trends is independently
-      owned — not part of any tracked publication ecosystem.'
+    notes: Features editor at DigitalTrends.com. ~3 year tenure. Consumer tech/features role. Digital Trends is independently
+      owned — not part of any tracked publication ecosystem.
   - publication: the-daily-dot
     event_type: hired
     role: politics_editor
@@ -3649,8 +3646,8 @@ journalists:
     source_url: https://theorg.com/org/wired/org-chart/andrew-couts
     notes: 'Politics editor. ~3.5 year tenure covering intersection of technology, politics, and cybersecurity. KEY CONNECTION:
       William Turton (later Drummond''s politics team at Wired) was a staff reporter at the Daily Dot from Jun 2014 to Apr
-      2016 — overlapping with Couts''s entire Daily Dot tenure. Couts as politics editor would have edited or supervised
-      Turton''s work, including the Lizard Squad cybersecurity scoops that launched Turton''s career. This creates a mentor-protégé
+      2016 — overlapping with Couts''s entire Daily Dot tenure. Couts as politics editor would have edited or supervised Turton''s
+      work, including the Lizard Squad cybersecurity scoops that launched Turton''s career. This creates a mentor-protégé
       lineage: Couts (Daily Dot) → Turton (Daily Dot → Gizmodo → Wired via Drummond).'
   - publication: gizmodo
     event_type: hired
@@ -3659,14 +3656,14 @@ journalists:
     start: 2017-12
     end: 2022-03
     source_url: https://theorg.com/org/wired/org-chart/andrew-couts
-    notes: 'Executive editor of Gizmodo.com for ~4.3 years. This is his longest and most formative career stint. Gizmodo
-      under G/O Media (post-Gawker bankruptcy). Drummond had left Gizmodo EIC in Apr 2017 — Couts arrived 8 months later,
-      inheriting the adversarial editorial culture she helped establish. Tim Marchman (now Wired Director of Science, Politics,
-      Security) was Special Projects Editor at Gizmodo from Jan 2018 to Jun 2019 — they overlapped for ~18 months. Dell
-      Cameron and Dhruv Mehrotra (both now on his Wired security desk) also worked at Gizmodo during his tenure. The Gizmodo
-      executive editorship creates a network of professional relationships that later reassembled at Wired under Drummond.
-      Part of team that won 2022 Edward R. Murrow Award for Investigative Reporting ("Prediction: Bias" — police crime-prediction
-      software investigation with Dell Cameron).'
+    notes: 'Executive editor of Gizmodo.com for ~4.3 years. This is his longest and most formative career stint. Gizmodo under
+      G/O Media (post-Gawker bankruptcy). Drummond had left Gizmodo EIC in Apr 2017 — Couts arrived 8 months later, inheriting
+      the adversarial editorial culture she helped establish. Tim Marchman (now Wired Director of Science, Politics, Security)
+      was Special Projects Editor at Gizmodo from Jan 2018 to Jun 2019 — they overlapped for ~18 months. Dell Cameron and
+      Dhruv Mehrotra (both now on his Wired security desk) also worked at Gizmodo during his tenure. The Gizmodo executive
+      editorship creates a network of professional relationships that later reassembled at Wired under Drummond. Part of team
+      that won 2022 Edward R. Murrow Award for Investigative Reporting ("Prediction: Bias" — police crime-prediction software
+      investigation with Dell Cameron).'
   - publication: wired
     event_type: hired
     role: senior_editor
@@ -3678,8 +3675,8 @@ journalists:
       across Wired''s entire newsroom — the only editor with cross-desk investigative authority besides Drummond and Barrett.
       Security desk reporters: Andy Greenberg, Lily Hay Newman, Dell Cameron, Dhruv Mehrotra (returned May 2026), Matt Burgess
       (UK). Title upgraded to "Director, Security & Investigations" by 2025-2026 (confirmed via obstracts.com Apr 2026 masthead).
-      Hosts "Incognito Mode" Wired video series (e.g., "Does Airport Security Even Work?" with Lily Hay Newman). Appears
-      on "Uncanny Valley" podcast news segments. Part of teams winning 2024 Sigma Award, 2023 Philip Meyer Journalism Award.
+      Hosts "Incognito Mode" Wired video series (e.g., "Does Airport Security Even Work?" with Lily Hay Newman). Appears on
+      "Uncanny Valley" podcast news segments. Part of teams winning 2024 Sigma Award, 2023 Philip Meyer Journalism Award.
       ANALYTICAL VALUE: Couts is the editorial gatekeeper for all security/privacy coverage AND all cross-desk investigations.
       Any investigative story about Meta''s data practices, surveillance tools, or facial recognition technology passes through
       his editorial judgment. His Gizmodo adversarial DNA, combined with his investigations authority, makes him a key vector
@@ -3687,8 +3684,8 @@ journalists:
       to pursue, how to frame them, and what evidence standard to apply.'
 - name: Will Oremus
   notes: 'Key migration: Washington Post → Atlantic. Analysis-oriented tech reporter who crossed from Bezos-owned WaPo to
-    Emerson Collective-owned Atlantic amid WaPo instability. Tests whether his measured, explanatory framing adapts to
-    Atlantic''s institutional voice under Thompson/Goldberg.'
+    Emerson Collective-owned Atlantic amid WaPo instability. Tests whether his measured, explanatory framing adapts to Atlantic''s
+    institutional voice under Thompson/Goldberg.'
   career:
   - publication: slate
     event_type: hired
@@ -3715,10 +3712,10 @@ journalists:
     start: 2021-06-21
     end: 2026-03
     source_url: https://www.washingtonpost.com/people/will-oremus/
-    notes: 'Technology news analysis writer. Part of major WaPo tech coverage expansion. Co-wrote "Tech 202" newsletter with
-      Cristiano Lima-Strong. Covered AI, online speech, conspiracy theories, AI copyright disputes (Disney/Midjourney).
-      Under deputy biz editor Zachary Goldfarb and tech editor Christina Passariello. Departed amid WaPo''s Feb 2026 layoffs
-      (~1/3 of staff), though unclear if laid off or departed voluntarily.'
+    notes: Technology news analysis writer. Part of major WaPo tech coverage expansion. Co-wrote "Tech 202" newsletter with
+      Cristiano Lima-Strong. Covered AI, online speech, conspiracy theories, AI copyright disputes (Disney/Midjourney). Under
+      deputy biz editor Zachary Goldfarb and tech editor Christina Passariello. Departed amid WaPo's Feb 2026 layoffs (~1/3
+      of staff), though unclear if laid off or departed voluntarily.
   - publication: atlantic
     event_type: hired
     role: tech_reporter
@@ -3727,20 +3724,20 @@ journalists:
     source_url: https://www.theatlantic.com/author/will-oremus/
     notes: 'Tech reporter covering "online speech, the information economy and AI weirdness" (per Bluesky bio, 78.1K followers).
       KEY MIGRATION: WaPo (Bezos-owned, unstable post-layoffs) → Atlantic (Emerson Collective-owned, profitable under CEO
-      Nicholas Thompson — himself a former Wired EIC). Thompson''s presence at Atlantic creates a Condé Nast editorial
-      culture bridge. Tests: (1) Does Oremus''s explanatory/analysis style shift toward Atlantic''s longer-form essay voice?
-      (2) Does coverage of Meta/AI carry different framing under Emerson Collective vs Bezos ownership? Education: BA
-      Philosophy (Stanford), MA Politics (Columbia).'
+      Nicholas Thompson — himself a former Wired EIC). Thompson''s presence at Atlantic creates a Condé Nast editorial culture
+      bridge. Tests: (1) Does Oremus''s explanatory/analysis style shift toward Atlantic''s longer-form essay voice? (2) Does
+      coverage of Meta/AI carry different framing under Emerson Collective vs Bezos ownership? Education: BA Philosophy (Stanford),
+      MA Politics (Columbia).'
 - name: Kate Knibbs
   notes: 'Wired''s primary AI copyright reporter and newly minted prediction markets beat writer. Career arc: teaching in
-    South Korea → Mobilia (defunct tech blog) → Daily Dot → Gizmodo (Gawker Media) → The Ringer → Wired. Non-traditional
-    pipeline: English/culture background, not a tech-industry journalist by training. KEY for MediaScope: she covers AI
-    copyright litigation — the legal battlefield where Condé Nast''s licensing deals (OpenAI, Amazon, Apple) create undisclosed
-    conflicts. Her Mark Lemley/Meta interview (Jan 2025) — a Stanford IP lawyer quitting Meta''s AI copyright defense in
-    Kadrey v. Meta — is a direct framing data point. Also covers AI slop, AI''s impact on media/arts, and prediction markets.
-    Based in Chicago (remote from Wired''s SF/NY offices). Approached by Sean Fennessy to join The Ringer (former Grantland
-    people). Education: McGill University BA Honours (English major, Political Science minor) 2005-2009. Saint Ignatius
-    College Prep 2001-2005 (Chicago).'
+    South Korea → Mobilia (defunct tech blog) → Daily Dot → Gizmodo (Gawker Media) → The Ringer → Wired. Non-traditional pipeline:
+    English/culture background, not a tech-industry journalist by training. KEY for MediaScope: she covers AI copyright litigation
+    — the legal battlefield where Condé Nast''s licensing deals (OpenAI, Amazon, Apple) create undisclosed conflicts. Her
+    Mark Lemley/Meta interview (Jan 2025) — a Stanford IP lawyer quitting Meta''s AI copyright defense in Kadrey v. Meta —
+    is a direct framing data point. Also covers AI slop, AI''s impact on media/arts, and prediction markets. Based in Chicago
+    (remote from Wired''s SF/NY offices). Approached by Sean Fennessy to join The Ringer (former Grantland people). Education:
+    McGill University BA Honours (English major, Political Science minor) 2005-2009. Saint Ignatius College Prep 2001-2005
+    (Chicago).'
   career:
   - publication: freelance
     event_type: hired
@@ -3759,8 +3756,8 @@ journalists:
     start: 2012-06
     end: 2014-06
     notes: Staff writer at The Daily Dot, covering internet culture. First serious journalism role. The Daily Dot pipeline
-      also produced Andrew Couts (Wired''s Director of Security & Investigations) and Miles Klee (Wired senior writer) —
-      three Daily Dot alumni at Wired creates an informal editorial network.
+      also produced Andrew Couts (Wired''s Director of Security & Investigations) and Miles Klee (Wired senior writer) — three
+      Daily Dot alumni at Wired creates an informal editorial network.
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-knibbs-as-senior-writer/
   - publication: gizmodo
     event_type: hired
@@ -3770,8 +3767,8 @@ journalists:
     end: 2016-12
     notes: 'Senior writer at Gizmodo (Gawker Media). Covered NSA surveillance, Apple vs FBI encryption fight, Microsoft vs
       DOJ on secret data requests, CISA legislation, internet policy. Self-described: "I was very excited about [Gizmodo]
-      because I love the Gawker Media family blogs." Earliest Gizmodo bylines ~Jun 2014, latest ~Apr 2016. Concurrent:
-      contributing writer at The Onion/AV Club (2013-2016). Also contributed to Time Magazine and Digital Trends.'
+      because I love the Gawker Media family blogs." Earliest Gizmodo bylines ~Jun 2014, latest ~Apr 2016. Concurrent: contributing
+      writer at The Onion/AV Club (2013-2016). Also contributed to Time Magazine and Digital Trends.'
     source_url: https://rocketreach.co
   - publication: the-ringer
     event_type: hired
@@ -3779,8 +3776,8 @@ journalists:
     beat: culture, internet, features
     start: 2017-01
     end: 2019-12
-    notes: 'Staff writer at The Ringer (Bill Simmons'' sports/culture media company). Recruited by Sean Fennessy (now head of
-      content). Wrote long-form features: Vice cocaine ring investigation ("Worked at Vice Then Went to Jail," 36 min read),
+    notes: 'Staff writer at The Ringer (Bill Simmons'' sports/culture media company). Recruited by Sean Fennessy (now head
+      of content). Wrote long-form features: Vice cocaine ring investigation ("Worked at Vice Then Went to Jail," 36 min read),
       Taylor Swift retrospective, CollegeHumor/ClickHole profiles, Disney+ content analysis. Regular podcast guest (Ringer
       Dish). Last bylined article Dec 17, 2019. Primarily culture/entertainment, not tech — career reset before Wired.'
     source_url: https://theringer.com/author/kate-knibbs
@@ -3791,23 +3788,23 @@ journalists:
     start: 2020-01
     source_url: https://www.wired.com/author/kate-knibbs/
     notes: 'Hired as senior writer (announced Jan 6, 2020). Initially covered "the human side of the generative AI boom and
-      the impact of new technology on the arts, entertainment, and media industries." KEY COVERAGE: (1) Mark Lemley/Meta
-      exit interview (Jan 2025) — Stanford IP lawyer on quitting Meta''s AI copyright defense in Kadrey v. Meta; (2) Thomson
-      Reuters v. Ross Intelligence ruling — first major US AI copyright verdict; (3) AI-generated text copyright (US Copyright
-      Office); (4) AI slop music on Spotify; (5) Wired AI copyright livestream Q&A with readers. Beat shift Feb 2026:
-      prediction markets (Polymarket, Kalshi — insider trading, regulatory battles, Zelensky suit). Current beat description:
-      "prediction markets, the future of media, and how AI is changing the internet." Also covers "digital grey markets and
-      regulatory battles over new tech." Contact: kate_knibbs@wired.com, Signal: Kateknibbs.09. ANALYTICAL VALUE: Her AI
-      copyright beat is the intersection of (a) Condé Nast''s undisclosed AI licensing deals and (b) the litigation wave
-      tracked in MediaScope. She covers lawsuits filed by publishers who chose NOT to license — while her employer chose
-      licensing over litigation. Does her framing favor the licensing path? Does she disclose Condé Nast''s own deals when
-      covering AI copyright battles? These questions are testable.'
+      the impact of new technology on the arts, entertainment, and media industries." KEY COVERAGE: (1) Mark Lemley/Meta exit
+      interview (Jan 2025) — Stanford IP lawyer on quitting Meta''s AI copyright defense in Kadrey v. Meta; (2) Thomson Reuters
+      v. Ross Intelligence ruling — first major US AI copyright verdict; (3) AI-generated text copyright (US Copyright Office);
+      (4) AI slop music on Spotify; (5) Wired AI copyright livestream Q&A with readers. Beat shift Feb 2026: prediction markets
+      (Polymarket, Kalshi — insider trading, regulatory battles, Zelensky suit). Current beat description: "prediction markets,
+      the future of media, and how AI is changing the internet." Also covers "digital grey markets and regulatory battles
+      over new tech." Contact: kate_knibbs@wired.com, Signal: Kateknibbs.09. ANALYTICAL VALUE: Her AI copyright beat is the
+      intersection of (a) Condé Nast''s undisclosed AI licensing deals and (b) the litigation wave tracked in MediaScope.
+      She covers lawsuits filed by publishers who chose NOT to license — while her employer chose licensing over litigation.
+      Does her framing favor the licensing path? Does she disclose Condé Nast''s own deals when covering AI copyright battles?
+      These questions are testable.'
 - name: Erin Griffith
-  notes: 'KEY MIGRATION: Fortune → Wired → NYT. Clean three-publication pipeline traversing two of MediaScope''s tracked
-    outlets. Short Wired tenure (~10 months under Nicholas Thompson) produced notable pieces including "The Other Tech Bubble"
-    (Dec 2017). Now NYT''s primary startups/VC reporter. Tests portability of editorial framing across institutions with
-    very different ownership structures (Condé Nast → Sulzberger). Earlier career in financial trade press (Buyouts magazine,
-    peHub) gives her a finance-native analytical lens distinct from most tech reporters.'
+  notes: 'KEY MIGRATION: Fortune → Wired → NYT. Clean three-publication pipeline traversing two of MediaScope''s tracked outlets.
+    Short Wired tenure (~10 months under Nicholas Thompson) produced notable pieces including "The Other Tech Bubble" (Dec
+    2017). Now NYT''s primary startups/VC reporter. Tests portability of editorial framing across institutions with very different
+    ownership structures (Condé Nast → Sulzberger). Earlier career in financial trade press (Buyouts magazine, peHub) gives
+    her a finance-native analytical lens distinct from most tech reporters.'
   career:
   - publication: buyouts-magazine
     event_type: hired
@@ -3848,10 +3845,10 @@ journalists:
     start: 2014-06
     end: 2017-08
     source_url: https://shortyawards.com/
-    notes: 'Senior writer at Fortune. Edited Term Sheet newsletter (~2016). Co-chaired Fortune Brainstorm Tech conference. Co-wrote
-      2015 cover story on "unicorn" startups. 2016 cover story on driverless cars race (Silicon Valley vs Detroit). Wrote regular
-      "Boom with a View" column. KEY PERIOD: 3+ years producing finance-flavored tech coverage with Fortune''s institutional
-      voice — provides pre-Wired baseline for DiD migration analysis.'
+    notes: 'Senior writer at Fortune. Edited Term Sheet newsletter (~2016). Co-chaired Fortune Brainstorm Tech conference.
+      Co-wrote 2015 cover story on "unicorn" startups. 2016 cover story on driverless cars race (Silicon Valley vs Detroit).
+      Wrote regular "Boom with a View" column. KEY PERIOD: 3+ years producing finance-flavored tech coverage with Fortune''s
+      institutional voice — provides pre-Wired baseline for DiD migration analysis.'
   - publication: wired
     event_type: hired
     role: senior_writer
@@ -3862,10 +3859,9 @@ journalists:
     notes: 'Senior writer, started Sep 11, 2017. Hired by Nicholas Thompson (then EIC). Based in Wired''s New York office.
       KEY PIECES: (1) "The Other Tech Bubble" (Dec 2017) — incisive column on Silicon Valley''s insulation from criticism,
       widely discussed; (2) "Pro-Gun Russian Bots Flood Twitter After Parkland Shooting" (Feb 2018); (3) crypto/blockchain
-      coverage; (4) AI sex robot feature (Jun 2018 issue). SHORT TENURE (~10 months) but high-impact output. Thompson''s
-      personal recruitment: "Erin is smart, she''s sourced, and she''s a terrific writer." ANALYTICAL VALUE: Her Wired stint
-      is under Thompson (pre-Drummond era) — tests whether the institutional voice shaped her output differently than Fortune
-      or NYT.'
+      coverage; (4) AI sex robot feature (Jun 2018 issue). SHORT TENURE (~10 months) but high-impact output. Thompson''s personal
+      recruitment: "Erin is smart, she''s sourced, and she''s a terrific writer." ANALYTICAL VALUE: Her Wired stint is under
+      Thompson (pre-Drummond era) — tests whether the institutional voice shaped her output differently than Fortune or NYT.'
   - publication: nytimes
     event_type: hired
     role: technology_reporter
@@ -3899,9 +3895,9 @@ journalists:
     start: 2017-01
     end: 2020-12
     source_url: https://en.wikipedia.org/wiki/Hugo_Lowell
-    notes: 'Sports politics and doping reporter for the i newspaper (London). Covered 2016 Olympics in Rio, 2018 FIFA World
+    notes: Sports politics and doping reporter for the i newspaper (London). Covered 2016 Olympics in Rio, 2018 FIFA World
       Cup in Moscow, IAAF World Athletics Championships in London. Finalist at British Sports Journalism Awards. Overlapped
-      with Zetland Capital — may have been freelance initially.'
+      with Zetland Capital — may have been freelance initially.
   - publication: guardian
     event_type: hired
     role: senior_political_correspondent
@@ -3909,11 +3905,11 @@ journalists:
     start: 2021-01
     end: 2026-04
     source_url: https://en.wikipedia.org/wiki/Hugo_Lowell
-    notes: 'Joined Guardian US as freelance congressional correspondent (2021), promoted to senior political correspondent
+    notes: Joined Guardian US as freelance congressional correspondent (2021), promoted to senior political correspondent
       and White House correspondent. Led coverage of Trump criminal trials, Jack Smith investigations, Jan 6 select committee.
       Broke stories on Mark Meadows advising Trump to declare national security emergency, Trump directing officials to ignore
-      congressional subpoenas, PowerPoint presentation. Won National Press Club Sandy Hume Memorial Award 2022. National
-      Press Foundation Paul Miller Fellow. Regular on MSNBC, CNN, BBC News, PBS NewsHour. DC-based.'
+      congressional subpoenas, PowerPoint presentation. Won National Press Club Sandy Hume Memorial Award 2022. National Press
+      Foundation Paul Miller Fellow. Regular on MSNBC, CNN, BBC News, PBS NewsHour. DC-based.
   - publication: wired
     event_type: hired
     role: senior_correspondent
@@ -3922,10 +3918,10 @@ journalists:
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-lowell-as-senior-correspondent/
     notes: 'Senior correspondent on politics desk. Reports to Leah Feiger (Director, Politics & Science). Leads Trump/White
       House coverage and takes over Wired politics newsletter. Replaces William Turton (departed Feb 2026 for ProPublica).
-      DC-based. ANALYTICAL VALUE: Pure Guardian → Wired pipeline. Zero tech journalism background — his entire career is
-      political investigation and sports doping. Tests whether Wired''s politics desk operates as a standalone political
-      newsroom rather than tech-inflected political coverage. His Guardian DNA + Feiger''s Vice DNA + Marchman''s Deadspin/Vice
-      DNA = three non-tech editorial lineages converging on Wired''s politics desk.'
+      DC-based. ANALYTICAL VALUE: Pure Guardian → Wired pipeline. Zero tech journalism background — his entire career is political
+      investigation and sports doping. Tests whether Wired''s politics desk operates as a standalone political newsroom rather
+      than tech-inflected political coverage. His Guardian DNA + Feiger''s Vice DNA + Marchman''s Deadspin/Vice DNA = three
+      non-tech editorial lineages converging on Wired''s politics desk.'
 - name: Rosie Swash
   notes: 'GUARDIAN → WIRED MIGRATION (2026): 17-year Guardian veteran hired as Deputy Editor in London — a newly created role
     rebuilding Wired UK editorial after print cancellation and staff departures. Her appointment signals Wired UK reconstruction
@@ -3946,43 +3942,42 @@ journalists:
     start: 2009-01
     end: 2025-12
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-swash-as-deputy-editor-in-london/
-    notes: '17-year tenure at the Guardian, progressing from reporter to senior news editor. Led coverage across technology,
-      environment, science, and health desks. Reported from Afghanistan, Iran, and Ukraine for the Guardian''s award-winning
-      ''Rights and Freedoms'' series. Led ''The Mystery of Bangladesh''s Missing Children'' investigation — won 2024 Amnesty
-      Media Prize for "excellence in human rights reporting." LONG TENURE gives her deep institutional Guardian DNA.'
+    notes: 17-year tenure at the Guardian, progressing from reporter to senior news editor. Led coverage across technology,
+      environment, science, and health desks. Reported from Afghanistan, Iran, and Ukraine for the Guardian's award-winning
+      'Rights and Freedoms' series. Led 'The Mystery of Bangladesh's Missing Children' investigation — won 2024 Amnesty Media
+      Prize for "excellence in human rights reporting." LONG TENURE gives her deep institutional Guardian DNA.
   - publication: mill-media
     event_type: hired
     role: editor
     beat: local news
     start: 2026-01
     end: 2026-04
-    notes: Brief stint as editor at Mill Media, an award-winning subscription news platform focused on high-quality local coverage.
-      Transition role between Guardian and Wired.
+    notes: Brief stint as editor at Mill Media, an award-winning subscription news platform focused on high-quality local
+      coverage. Transition role between Guardian and Wired.
   - publication: wired
     event_type: hired
     role: deputy_editor
     beat: UK editorial oversight, breaking news
     start: 2026-05
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-swash-as-deputy-editor-in-london/
-    notes: 'Deputy Editor in London — a newly created role. Reports to Brian Barrett (exec editor of news). Works closely with
-      London staff + new general assignment staff writer (TBD hire). Responsibilities: UK time zone breaking news coverage
-      and elevating Wired''s editorial presence in the region. Started May 5, 2026. ANALYTICAL VALUE: Guardian → Wired
-      pipeline. Her 17-year Guardian investigative DNA (conflict reporting, human rights investigations, multi-desk editorial
-      leadership) shapes Wired UK''s editorial direction post-print-cancellation. Mirrors the Robert Booth appointment at
-      Guardian (housing investigator → tech editor) — both prioritize investigative methodology over tech subject-matter
-      expertise. Third Guardian-connected Wired hire in 2023-2026 (after Blake Montgomery via Gizmodo + Guardian, and Hugo
-      Lowell).'
+    notes: 'Deputy Editor in London — a newly created role. Reports to Brian Barrett (exec editor of news). Works closely
+      with London staff + new general assignment staff writer (TBD hire). Responsibilities: UK time zone breaking news coverage
+      and elevating Wired''s editorial presence in the region. Started May 5, 2026. ANALYTICAL VALUE: Guardian → Wired pipeline.
+      Her 17-year Guardian investigative DNA (conflict reporting, human rights investigations, multi-desk editorial leadership)
+      shapes Wired UK''s editorial direction post-print-cancellation. Mirrors the Robert Booth appointment at Guardian (housing
+      investigator → tech editor) — both prioritize investigative methodology over tech subject-matter expertise. Third Guardian-connected
+      Wired hire in 2023-2026 (after Blake Montgomery via Gizmodo + Guardian, and Hugo Lowell).'
 - name: Jeff Horwitz
-  notes: 'The most consequential single journalist for Meta coverage. Led the 2021 Facebook Files investigation at WSJ —
-    the largest leak-driven exposé in social media history. Won George Polk Award, Gerald Loeb Award (x2), Pulitzer Prize
-    (2026 with Engen Tham). Author of ''Broken Code: Inside Facebook and the Fight to Expose Its Toxic Secrets'' (2023) —
-    basis for upcoming Aaron Sorkin film ''The Social Reckoning.'' Education: The College Preparatory School (Oakland, 1999),
-    Pomona College (BA), Knight Bagehot fellow at Columbia University. NOT at a tracked publication (WSJ → Reuters), but his
-    reporting is the single largest external source of negative Meta coverage framing across ALL publications. His Facebook
-    Files directly sourced stories at NYT, Guardian, Wired, and Atlantic — making him an upstream influence on all 5 tracked
-    outlets. ANALYTICAL VALUE: Horwitz is the canonical example of how a single investigative reporter can set industry-wide
-    framing. His leaked documents became the raw material for derivative coverage across every tracked publication. Tracking
-    his output allows MediaScope to measure how upstream investigative work propagates into institutional framing.'
+  notes: 'The most consequential single journalist for Meta coverage. Led the 2021 Facebook Files investigation at WSJ — the
+    largest leak-driven exposé in social media history. Won George Polk Award, Gerald Loeb Award (x2), Pulitzer Prize (2026
+    with Engen Tham). Author of ''Broken Code: Inside Facebook and the Fight to Expose Its Toxic Secrets'' (2023) — basis
+    for upcoming Aaron Sorkin film ''The Social Reckoning.'' Education: The College Preparatory School (Oakland, 1999), Pomona
+    College (BA), Knight Bagehot fellow at Columbia University. NOT at a tracked publication (WSJ → Reuters), but his reporting
+    is the single largest external source of negative Meta coverage framing across ALL publications. His Facebook Files directly
+    sourced stories at NYT, Guardian, Wired, and Atlantic — making him an upstream influence on all 5 tracked outlets. ANALYTICAL
+    VALUE: Horwitz is the canonical example of how a single investigative reporter can set industry-wide framing. His leaked
+    documents became the raw material for derivative coverage across every tracked publication. Tracking his output allows
+    MediaScope to measure how upstream investigative work propagates into institutional framing.'
   career:
   - publication: washington-city-paper
     event_type: hired
@@ -4023,8 +4018,8 @@ journalists:
     start: 2011-01
     end: 2017-01
     source_url: https://talkingbiznews.com/media-news/reuters-hires-wsjs-horwitz/
-    notes: 'Financial and enterprise reporter in Washington. Broke stories about Paul Manafort secretly working to advance
-      Russian interests. Wire service experience gave him document-driven investigative methodology.'
+    notes: Financial and enterprise reporter in Washington. Broke stories about Paul Manafort secretly working to advance
+      Russian interests. Wire service experience gave him document-driven investigative methodology.
   - publication: wall-street-journal
     event_type: hired
     role: investigative_reporter
@@ -4043,6 +4038,187 @@ journalists:
     beat: technology investigations
     start: 2025-06
     source_url: https://www.reuters.com/media-center/reuters-enterprise-team-expands-with-hires-of-jeff-horwitz-and-gavin-finch/
-    notes: 'Joined Reuters Enterprise team as tech investigations reporter. Reports to Steve Stecklow. Won 2026 Pulitzer
-      Prize (with Engen Tham) for reporting on Meta''s Chinese ad agency system and tolerance of policy-violating advertisers.
-      Continues to be the single most impactful investigative reporter covering Meta. Based in San Francisco area.'
+    notes: Joined Reuters Enterprise team as tech investigations reporter. Reports to Steve Stecklow. Won 2026 Pulitzer Prize
+      (with Engen Tham) for reporting on Meta's Chinese ad agency system and tolerance of policy-violating advertisers. Continues
+      to be the single most impactful investigative reporter covering Meta. Based in San Francisco area.
+- name: Tom Simonite
+  notes: 'Key multi-pub migration: New Scientist → MIT Tech Review → Wired → Washington Post. Led Wired''s AI coverage before
+    becoming business editor. Launched Wired''s Fast Forward AI newsletter. His departure from Wired (Jun 2024) removed a
+    senior Silicon Valley editor mid-Drummond restructuring. Imperial College London MSc.'
+  career:
+  - publication: new-scientist
+    event_type: hired
+    role: technology_editor
+    beat: emerging technology
+    start: '2008'
+    end: '2013'
+    source_url: https://talkingbiznews.com/media-news/simonite-moves-to-editing-role-at-wired/
+    notes: Wrote and edited emerging technology coverage. Based in London.
+  - publication: mit-tech-review
+    event_type: hired
+    role: bureau_chief
+    beat: technology, AI
+    start: '2013'
+    end: 2017-06
+    source_url: https://talkingbiznews.com/media-news/simonite-moves-to-editing-role-at-wired/
+    notes: San Francisco bureau chief. Covered AI and its societal effects. Led west coast reporting for MIT TR.
+  - publication: wired
+    event_type: hired
+    role: senior_writer
+    beat: AI, machine learning
+    start: 2017-06
+    end: '2022'
+    source_url: https://talkingbiznews.com/media-news/simonite-moves-to-editing-role-at-wired/
+    notes: Senior writer leading AI/ML coverage. Focused on artificial intelligence and its effects on the world.
+  - publication: wired
+    event_type: promoted
+    role: senior_editor_business
+    beat: Silicon Valley, Big Tech, AI, startups
+    start: '2022'
+    end: 2024-06
+    source_url: https://editorandpublisher.com/stories/tom-simonite-joins-the-washington-post-as-tech-companies-editor,256005
+    notes: Senior editor for business coverage. Led team of reporters covering Silicon Valley. Launched and edited Wired's
+      Fast Forward AI newsletter. Broke stories on OpenAI chip deals, robotaxis, Tesla aftermarket in Ukraine.
+  - publication: washington-post
+    event_type: hired
+    role: tech_companies_editor
+    beat: Big Tech, Silicon Valley, creator economy
+    start: 2024-07
+    source_url: https://editorandpublisher.com/stories/tom-simonite-joins-the-washington-post-as-tech-companies-editor,256005
+    notes: Drives coverage of biggest Silicon Valley players and creator economy. Reports to Lori Montgomery (business editor).
+- name: Noah Shachtman
+  notes: 'Wired OG — freelanced for Wired.com since 1998, co-founded Danger Room national security blog (2006). Left to run
+    Foreign Policy, Daily Beast, Rolling Stone before returning to Wired as contributing editor (Mar 2024) under Katie Drummond.
+    His return signals Drummond consolidating an adversarial-journalism alumni network. Georgetown BA. Born Sep 15, 1970.
+    Grandfather: theater impresario Lee Guber; step-grandmother: Barbara Walters.'
+  career:
+  - publication: wired
+    event_type: hired
+    role: freelancer
+    beat: national security, technology
+    start: '1998'
+    end: '2006'
+    source_url: https://mediapost.com/publications/article/394143/former-rolling-stone-eic-noah-shachtman-reunites.html
+    notes: Freelance writer for Wired.com starting 1998.
+  - publication: wired
+    event_type: promoted
+    role: contributing_editor
+    beat: national security, defense technology
+    start: '2006'
+    end: '2014'
+    source_url: https://concordia.net/community/noah-shachtman/
+    notes: Contributing editor. Co-founded Danger Room national security blog — won 2007 Online Journalism Award for Best
+      Beat Reporting and 2012 National Magazine Award for reporting in digital media. Non-resident fellow at Brookings Institution.
+      Reported from Afghanistan, Iraq, Russia, Israel.
+  - publication: foreign-policy
+    event_type: hired
+    role: executive_editor_news
+    beat: national security, foreign affairs
+    start: '2014'
+    end: '2018'
+    source_url: https://en.wikipedia.org/wiki/Noah_Shachtman
+    notes: Executive editor for news at Foreign Policy magazine.
+  - publication: the-daily-beast
+    event_type: hired
+    role: editor_in_chief
+    beat: general news, investigations
+    start: '2018'
+    end: 2021-07
+    source_url: https://en.wikipedia.org/wiki/Noah_Shachtman
+    notes: Editor-in-chief. Uncovered Rep. Matt Gaetz payments to convicted sex trafficker, broke Jeffrey Epstein arrest news,
+      exposed key players in Trump first impeachment plot. Poynter called it a 'journalistic scoop factory.'
+  - publication: rolling-stone
+    event_type: hired
+    role: editor_in_chief
+    beat: general, music, politics, tech, investigations
+    start: 2021-09
+    end: 2024-02
+    source_url: https://pmc.com/press-releases/rolling-stone-names-noah-shachtman-editor-in-chief/
+    notes: Editor-in-chief. Won Polk Award and first-ever Rolling Stone Emmy nomination. Departed over differences with CEO
+      Gus Wenner about brand direction.
+  - publication: wired
+    event_type: hired
+    role: contributing_editor
+    beat: features, politics, enterprise
+    start: 2024-03
+    source_url: https://mediapost.com/publications/article/394143/former-rolling-stone-eic-noah-shachtman-reunites.html
+    notes: Returned to Wired as contributing editor under Katie Drummond. Writes features and shorter enterprise pieces. Contributes
+      to podcasts, newsletters, talent scouting. Drummond personally announced his return — he joins Brendan Koerner, Lauren
+      Smily, Virginia Heffernan, Samanth Subramanian as contributing editors.
+- name: Charlotte Jee
+  notes: MIT Technology Review news editor and author of The Download, MIT TR's flagship daily newsletter. Long UK tech journalism
+    career. Founded Jeneo (tech diversity org). Based in London. UCL BA (Politics & East European Studies), City University
+    London MA (Political Journalism).
+  career:
+  - publication: progressive-digital-media
+    event_type: hired
+    role: journalist
+    beat: government technology, computing
+    start: '2011'
+    end: '2015'
+    source_url: https://missionnorth.com/blog/charlotte-jee-at-mit-tech-review-on-finding-unique-stories-and-working-with-pr-and-tech-companies/
+    notes: Worked at Computerworld and Government Computing covering tech, politics, pharma and government. Also had stints
+      at PR and polling companies.
+  - publication: techworld
+    event_type: hired
+    role: editor
+    beat: enterprise technology
+    start: '2015'
+    end: 2018-08
+    source_url: https://me.sh/Charlotte+Jee
+    notes: Editor of Techworld magazine (IDG/Foundry publication). Based in London.
+  - publication: mit-tech-review
+    event_type: hired
+    role: reporter
+    beat: technology, mental health, society
+    start: 2018-09
+    end: 2021-12
+    source_url: https://missionnorth.com/blog/charlotte-jee-at-mit-tech-review-on-finding-unique-stories-and-working-with-pr-and-tech-companies/
+    notes: Reporter covering broad tech topics. Growing focus on mental health and tech-society intersection. Began writing
+      The Download newsletter. COVID coverage accelerated her development as journalist.
+  - publication: mit-tech-review
+    event_type: promoted
+    role: news_editor
+    beat: technology news, daily newsletter
+    start: 2021-12
+    source_url: https://me.sh/Charlotte+Jee
+    notes: Promoted to news editor. Writes The Download, MIT TR's flagship daily newsletter. Ensures steady stream of high-quality
+      news stories. Regular BBC contributor. Also a public speaker. 1,266+ total articles. Based in London.
+- name: Niall Firth
+  notes: MIT Technology Review's executive editor of newsroom — oversees all online journalism and manages the entire reporting
+    team from London. Career mirrors Tom Simonite's UK-to-MIT-TR pipeline via New Scientist. Key editorial gatekeeper for
+    what gets published on MIT TR's website.
+  career:
+  - publication: daily-mail
+    event_type: hired
+    role: science_editor
+    beat: science, general news
+    start: '2008'
+    end: '2012'
+    source_url: https://talkingbiznews.com/media-news/firth-named-executive-editor-newsroom-of-mit-tech-review/
+    notes: Science editor and assistant news editor at MailOnline (Daily Mail's digital arm).
+  - publication: new-scientist
+    event_type: hired
+    role: technology_editor
+    beat: technology
+    start: '2012'
+    end: '2017'
+    source_url: https://theorg.com/org/wired/org-chart/niall-firth
+    notes: Technology editor, later promoted to chief news editor at New Scientist. Based in London.
+  - publication: mit-tech-review
+    event_type: hired
+    role: editorial_director_digital
+    beat: online journalism, editorial management
+    start: '2017'
+    end: 2022-08
+    source_url: https://talkingbiznews.com/media-news/firth-named-executive-editor-newsroom-of-mit-tech-review/
+    notes: Editorial director of digital. Oversaw all online journalism and managed reporting team.
+  - publication: mit-tech-review
+    event_type: promoted
+    role: executive_editor_newsroom
+    beat: editorial management, online journalism
+    start: 2022-08
+    source_url: https://talkingbiznews.com/media-news/firth-named-executive-editor-newsroom-of-mit-tech-review/
+    notes: Promoted to executive editor, newsroom. Oversees all MIT TR online journalism and manages reporting team including
+      Will Douglas Heaven (AI), Melissa Heikkilä (AI, until Jan 2025), Rhiannon Williams, Charlotte Jee, others. Manages newsletters
+      from London. 179+ published articles/edits. Based in London.

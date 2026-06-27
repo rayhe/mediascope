@@ -45,11 +45,11 @@ editorial_changes:
     notes: 'FOUNDATIONAL HIRE: Couts joined as Senior Editor, Security & Investigations ~18 months before Drummond arrived.
       Previously executive editor at Gizmodo (4+ years), politics editor at The Daily Dot (3.5 years). Oversees cybersecurity,
       privacy, surveillance, policing, crime, and national security — PLUS all cross-desk investigations. His security desk
-      manages Andy Greenberg, Lily Hay Newman, Dell Cameron, Dhruv Mehrotra, Matt Burgess (UK). His Gizmodo executive
-      editorship overlapped with Tim Marchman, Dell Cameron, and Dhruv Mehrotra — all of whom he would later work with again
-      at Wired. The Daily Dot overlap with William Turton creates a mentor-protégé lineage. Title upgraded to "Director,
-      Security & Investigations" by 2025-2026, paralleling other Director promotions under Drummond. Awards with teams:
-      2024 Sigma Award, 2023 Philip Meyer Journalism Award, 2022 Edward R. Murrow Award.'
+      manages Andy Greenberg, Lily Hay Newman, Dell Cameron, Dhruv Mehrotra, Matt Burgess (UK). His Gizmodo executive editorship
+      overlapped with Tim Marchman, Dell Cameron, and Dhruv Mehrotra — all of whom he would later work with again at Wired.
+      The Daily Dot overlap with William Turton creates a mentor-protégé lineage. Title upgraded to "Director, Security &
+      Investigations" by 2025-2026, paralleling other Director promotions under Drummond. Awards with teams: 2024 Sigma Award,
+      2023 Philip Meyer Journalism Award, 2022 Edward R. Murrow Award.'
   - position: politics_editor
     outgoing: null
     incoming: Leah Feiger
@@ -93,26 +93,26 @@ editorial_changes:
     incoming: null
     date: 2023-12
     source_url: https://talkingbiznews.com/media-news/executive-editor-marco-is-leaving-wired/
-    notes: 'RAPID DEPARTURE: Marco left after only ~9 months. "I''m proud of the all the amazing work we accomplished in
-      what felt like an instant, and can''t thank everyone enough." Departed to Harvard Berkman Klein Center (Applied Social
-      Media Lab). Her departure so soon after launching the politics team raises questions: editorial alignment issues,
-      strategic disagreement with Drummond, or planned short-term engagement? The politics team she built was immediately
-      handed to Barrett (a more adversarial-journalism-native leader). SUCCESSION: Brian Barrett rehired as executive editor
-      of news Jan 16, 2024 — Barrett''s Gizmodo adversarial DNA aligned more closely with Drummond''s editorial vision than
-      Marco''s audience-strategy background.'
+    notes: 'RAPID DEPARTURE: Marco left after only ~9 months. "I''m proud of the all the amazing work we accomplished in what
+      felt like an instant, and can''t thank everyone enough." Departed to Harvard Berkman Klein Center (Applied Social Media
+      Lab). Her departure so soon after launching the politics team raises questions: editorial alignment issues, strategic
+      disagreement with Drummond, or planned short-term engagement? The politics team she built was immediately handed to
+      Barrett (a more adversarial-journalism-native leader). SUCCESSION: Brian Barrett rehired as executive editor of news
+      Jan 16, 2024 — Barrett''s Gizmodo adversarial DNA aligned more closely with Drummond''s editorial vision than Marco''s
+      audience-strategy background.'
   - position: executive_editor_news
     outgoing: Meg Marco
     incoming: Brian Barrett
     date: '2024-01-16'
     source_url: https://talkingbiznews.com/they-re-hiring/wired-names-barrett-its-executive-editor/
-    notes: 'KEY STRUCTURAL HIRE: Barrett returned to Wired as executive editor of news, REPLACING Meg Marco who departed
-      after only ~9 months. Barrett had a prior ~8 year stint at Wired (2014-2022) and was EIC of Gizmodo before/after.
-      Recruited by Drummond to oversee US and UK news teams. Drummond''s announcement: ''his humor, compassionate leadership
-      style, general appreciation of weirdness, and proven track record writing and editing stories that are smart, thoughtful,
-      and often painfully clever, make him the perfect person for this role.'' Same announcement promoted Michael Calore to
-      Director, Consumer Tech & Culture. MARCO → BARRETT SUCCESSION: The transition from an audience-strategy-focused exec
-      editor (Marco: ProPublica/WSJ/Axios) to an adversarial-journalism-native exec editor (Barrett: Gizmodo EIC) represents
-      a course correction — Drummond chose editorial-DNA alignment over operational expertise.'
+    notes: 'KEY STRUCTURAL HIRE: Barrett returned to Wired as executive editor of news, REPLACING Meg Marco who departed after
+      only ~9 months. Barrett had a prior ~8 year stint at Wired (2014-2022) and was EIC of Gizmodo before/after. Recruited
+      by Drummond to oversee US and UK news teams. Drummond''s announcement: ''his humor, compassionate leadership style,
+      general appreciation of weirdness, and proven track record writing and editing stories that are smart, thoughtful, and
+      often painfully clever, make him the perfect person for this role.'' Same announcement promoted Michael Calore to Director,
+      Consumer Tech & Culture. MARCO → BARRETT SUCCESSION: The transition from an audience-strategy-focused exec editor (Marco:
+      ProPublica/WSJ/Axios) to an adversarial-journalism-native exec editor (Barrett: Gizmodo EIC) represents a course correction
+      — Drummond chose editorial-DNA alignment over operational expertise.'
   - position: senior_writer_china
     outgoing: null
     incoming: Zeyi Yang
@@ -169,22 +169,21 @@ editorial_changes:
     incoming: Tim Marchman
     date: 2024-01
     source_url: https://thebulletin.org/2025/03/staring-into-the-doge-abyss-with-wireds-tim-marchman/
-    notes: 'KEY STRUCTURAL HIRE: Marchman recruited by Katie Drummond as Director of Science, Politics, and Security —
-      the second of three Director positions created. Oversees politics desk (Leah Feiger), science desk (Brian Kahn), and
-      security coverage. Career: sportswriter (Chicago baseball) → Deadspin EIC (Gawker Media) → Gizmodo Media special
-      projects editor (2018-2019, overlapping with Drummond''s Gizmodo tenure) → Vice Media features director (2019-2024,
-      during Vice''s bankruptcy) → Wired. Philadelphia-based. Led Wired''s DOGE scoops that consistently beat NYT/WaPo.
-      His Gizmodo → Vice → Wired trajectory parallels Drummond''s own adversarial-journalism pipeline (Wired intern →
-      Gizmodo EIC → Vice SVP → Wired editorial director). Third Gizmodo/Vice alumnus in Wired leadership alongside
-      Drummond and Leah Feiger.'
+    notes: 'KEY STRUCTURAL HIRE: Marchman recruited by Katie Drummond as Director of Science, Politics, and Security — the
+      second of three Director positions created. Oversees politics desk (Leah Feiger), science desk (Brian Kahn), and security
+      coverage. Career: sportswriter (Chicago baseball) → Deadspin EIC (Gawker Media) → Gizmodo Media special projects editor
+      (2018-2019, overlapping with Drummond''s Gizmodo tenure) → Vice Media features director (2019-2024, during Vice''s bankruptcy)
+      → Wired. Philadelphia-based. Led Wired''s DOGE scoops that consistently beat NYT/WaPo. His Gizmodo → Vice → Wired trajectory
+      parallels Drummond''s own adversarial-journalism pipeline (Wired intern → Gizmodo EIC → Vice SVP → Wired editorial director).
+      Third Gizmodo/Vice alumnus in Wired leadership alongside Drummond and Leah Feiger.'
   - position: senior_writer_climate
     outgoing: null
     incoming: Molly Taft
     date: '2025-03-24'
     source_url: https://talkingbiznews.com/media-news/wired-hires-taft-as-senior-writer/
     notes: 'Molly Taft hired as senior writer covering climate on science desk. Reports to Tim Marchman. Previously reporter/editor
-      at Drilled Media (climate investigative outlet), contributing senior editor at The New Republic (climate vertical), staff
-      writer at Earther/Gizmodo (won 2023 SEAL Environmental Award), Center for Public Integrity fellow. Columbia Journalism
+      at Drilled Media (climate investigative outlet), contributing senior editor at The New Republic (climate vertical),
+      staff writer at Earther/Gizmodo (won 2023 SEAL Environmental Award), Center for Public Integrity fellow. Columbia Journalism
       MS. New York office. Focus: new energy technologies, who profits, and impact on average people. Another Earther/Gizmodo
       alumnus — the fourth Earther connection at Wired alongside Brian Kahn, plus broader Gizmodo network (Drummond, Marchman,
       Schiffer via Vice overlap).'
@@ -193,12 +192,12 @@ editorial_changes:
     incoming: Miles Klee
     date: '2026-02-02'
     source_url: https://editorandpublisher.com/stories/wired-adds-senior-writer-to-the-culture-desk/
-    notes: 'Miles Klee hired as senior writer on culture desk. Reports to Michael Calore (Director, Consumer Tech & Culture).
+    notes: Miles Klee hired as senior writer on culture desk. Reports to Michael Calore (Director, Consumer Tech & Culture).
       Previously culture writer at Rolling Stone (~3.5 years), senior staff writer at MEL Magazine (~5 years), staff writer
       at The Daily Dot. Also written for Washington Post, Vanity Fair, Slate, Vulture. Los Angeles-based. Covers internet
       culture, conspiracy theories, memes, digital subcultures. Announced by executive editor Brian Barrett. Author of novels
       and story collections. Unusual hire — non-traditional pipeline from cultural criticism and internet culture journalism,
-      not from tech reporting. Signals Wired''s editorial expansion beyond pure tech coverage under Drummond.'
+      not from tech reporting. Signals Wired's editorial expansion beyond pure tech coverage under Drummond.
   - position: senior_writer_beat_shift
     outgoing: null
     incoming: Kate Knibbs
@@ -218,8 +217,8 @@ editorial_changes:
     notes: 'OPEN POSITION: Wired seeking a chief business correspondent — 12+ years experience, "break high-impact news,"
       "deep and extensive sourcing within the tech world," "authority on the business of tech" for video, events, podcasts.
       Must "work closely with the Executive Editor and the Senior Director to define and shape editorial strategy for the
-      business desk." Guild position. Reports to Zoë Schiffer (Director, Business & Industry). This is the most senior
-      open editorial position at Wired as of mid-2026 — whoever fills it shapes business/Big Tech coverage framing.'
+      business desk." Guild position. Reports to Zoë Schiffer (Director, Business & Industry). This is the most senior open
+      editorial position at Wired as of mid-2026 — whoever fills it shapes business/Big Tech coverage framing.'
   - position: acting_business_editor_uk
     outgoing: Peter Guest
     incoming: null
@@ -250,15 +249,34 @@ editorial_changes:
     date: '2026-05-05'
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-swash-as-deputy-editor-in-london/
     notes: 'GUARDIAN → WIRED MIGRATION: Rosie Swash hired as Deputy Editor in London — a newly created role. Previously 17+
-      years at the Guardian (Observer → Guardian, senior news editor leading tech/environment/science/health desks), then editor
-      at Mill Media. Reports to Brian Barrett (exec editor of news). Won 2024 Amnesty Media Prize for ''The Mystery of Bangladesh''s
-      Missing Children'' investigation. Covered Afghanistan, Iran, Ukraine for Guardian''s ''Rights and Freedoms'' series.
-      ANALYTICAL VALUE: Third Guardian → Wired pipeline hire in 2025-2026 (after Blake Montgomery as US tech editor Sep 2023
-      via Gizmodo, and Hugo Lowell Apr 2026). The Deputy Editor role is new — Swash shapes UK editorial output directly.
+      years at the Guardian (Observer → Guardian, senior news editor leading tech/environment/science/health desks), then
+      editor at Mill Media. Reports to Brian Barrett (exec editor of news). Won 2024 Amnesty Media Prize for ''The Mystery
+      of Bangladesh''s Missing Children'' investigation. Covered Afghanistan, Iran, Ukraine for Guardian''s ''Rights and Freedoms''
+      series. ANALYTICAL VALUE: Third Guardian → Wired pipeline hire in 2025-2026 (after Blake Montgomery as US tech editor
+      Sep 2023 via Gizmodo, and Hugo Lowell Apr 2026). The Deputy Editor role is new — Swash shapes UK editorial output directly.
       Paired with a new London general assignment staff writer (TBD hire). Her Guardian investigative and accountability DNA
       (Grenfell-era newsroom, conflict reporting) entering Wired''s London desk mirrors the Robert Booth appointment at Guardian
       (housing investigator → tech editor). Signals Wired UK rebuilding post-print-cancellation with Guardian-trained editorial
       leadership rather than tech-native journalists.'
+  - position: senior_editor_business_departure
+    outgoing: Tom Simonite
+    incoming: null
+    date: 2024-06
+    source_url: https://editorandpublisher.com/stories/tom-simonite-joins-the-washington-post-as-tech-companies-editor,256005
+    notes: 'DEPARTURE: Simonite left for Washington Post as Tech Companies Editor. Had been at Wired since Jun 2017 (7 years),
+      rising from senior writer (AI/ML) to senior editor for business coverage. Launched Fast Forward AI newsletter. His departure
+      removed a senior Silicon Valley business editor during Drummond''s restructuring — a knowledge/source network loss for
+      Wired''s Big Tech coverage.'
+  - position: contributing_editor
+    outgoing: null
+    incoming: Noah Shachtman
+    date: 2024-03
+    source_url: https://mediapost.com/publications/article/394143/former-rolling-stone-eic-noah-shachtman-reunites.html
+    notes: 'RETURN: Shachtman returned to Wired as contributing editor, announced personally by Katie Drummond. Previously
+      at Wired 1998-2014 (freelancer, then contributing editor; co-founded Danger Room blog). Interim career: Foreign Policy
+      exec editor → Daily Beast EIC (2018-2021) → Rolling Stone EIC (2021-2024, departed over brand direction dispute with
+      Gus Wenner). Joins Brendan Koerner, Lauren Smily, Virginia Heffernan, Samanth Subramanian as contributing editors. Writes
+      features, enterprise, assists with politics coverage talent scouting.'
   nytimes:
   - position: executive_editor
     outgoing: Dean Baquet
@@ -463,10 +481,10 @@ editorial_changes:
     incoming: Gilad Edelman
     date: 2023-04
     source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-edelman-as-a-senior-editor-for-economics-coverage/
-    notes: 'Edelman hired as senior editor to expand economics and political economy coverage. Came from brief FTC stint
-      (communications strategist under Lina Khan, Sep 2022 - Apr 2023). Before that, politics writer at Wired (Nov 2019 -
-      Sep 2022). Yale JD, Columbia BA. Rare journalist → government → journalist career arc. Now covers tech antitrust
-      (Google), political economy, and broader tech policy with legal/regulatory expertise.'
+    notes: Edelman hired as senior editor to expand economics and political economy coverage. Came from brief FTC stint (communications
+      strategist under Lina Khan, Sep 2022 - Apr 2023). Before that, politics writer at Wired (Nov 2019 - Sep 2022). Yale
+      JD, Columbia BA. Rare journalist → government → journalist career arc. Now covers tech antitrust (Google), political
+      economy, and broader tech policy with legal/regulatory expertise.
   - position: tech_reporter
     outgoing: null
     incoming: Will Oremus
@@ -562,3 +580,19 @@ editorial_changes:
     notes: 'REPLACEMENT: Chen hired from Rest of World to cover China tech. Filled gap created by Zeyi Yang''s departure (or
       preceded it — timing unclear). Columbia MA. 5+ years covering Chinese internet. Part of Chaoyang Trap newsletter. Part
       of MIT TR + FT ''State of AI'' partnership (paired with FT''s John Thornhill on ''The US vs. China'').'
+  - position: news_editor_promotion
+    outgoing: null
+    incoming: Charlotte Jee
+    date: 2021-12
+    source_url: https://me.sh/Charlotte+Jee
+    notes: 'PROMOTION: Jee promoted from reporter to news editor. Had joined as reporter Sep 2018 from Techworld (editor).
+      Now responsible for ensuring steady stream of high-quality news stories. Writes The Download, MIT TR''s flagship daily
+      newsletter. Based in London.'
+  - position: executive_editor_newsroom
+    outgoing: null
+    incoming: Niall Firth
+    date: 2022-08
+    source_url: https://talkingbiznews.com/media-news/firth-named-executive-editor-newsroom-of-mit-tech-review/
+    notes: 'PROMOTION: Firth promoted from editorial director of digital to executive editor, newsroom. Oversees all online
+      journalism and manages entire reporting team. Previously chief news editor at New Scientist. Key editorial gatekeeper
+      — all MIT TR online reporting passes through his desk. Based in London, managing US and UK reporters.'
