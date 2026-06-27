@@ -126,8 +126,9 @@ Publication: Wired (wired.com)
 Owner: Condé Nast → Advance Publications (Newhouse Family)
 
 FINANCIAL CONFLICTS (5 identified):
-1. [SEVERITY 5] Advance Publications holds 33.5% voting power in Reddit,
-   a direct Meta competitor, with 2 board seats and ~$2B IPO gain.
+1. [SEVERITY 5] Advance Publications holds 65.2% voting power in Reddit
+   (83.5% of Class B shares, 10 votes/share), a direct Meta competitor,
+   with 2 board seats and ~$7B stake value.
 2. [SEVERITY 5] Condé Nast has content licensing deals with OpenAI, Amazon,
    and Apple (all Meta competitors). Meta has NO such deal.
 3. [SEVERITY 4] Reddit competes directly with Meta for user attention,
@@ -166,7 +167,7 @@ MediaScope ships with detailed profiles for five publications, chosen to illustr
 
 | Publication | Owner | Conflict Type | Key Conflict |
 |---|---|---|---|
-| **Wired** | Advance Publications | Financial + Competitive | 33.5% Reddit stake, AI licensing with Meta's competitors |
+| **Wired** | Advance Publications | Financial + Competitive | 65.2% Reddit voting power (83.5% Class B), AI licensing with Meta's competitors |
 | **NY Times** | Sulzberger Family | Litigation | Suing OpenAI while building AI internally |
 | **The Guardian** | Scott Trust (non-profit) | Partial control | OpenAI + ProRata licensing deals, but no equity in specific competitors. Closest to baseline in the 5-pub set (pre-Feb 2025 coverage cleaner). |
 | **The Atlantic** | Emerson Collective (LPJ) | Investment + Licensing + Civic | Owner holds ~$16B Apple stock, $6.5B OpenAI equity exit, co-chairs civic org with Google/Alphabet president and OpenAI CEO |
@@ -202,7 +203,7 @@ articles = fetch_all_feeds(profile)
 MediaScope enforces rigorous quality standards on all generated output:
 
 - **Every factual claim requires a verifiable source.** Primary sources (SEC filings, court records) preferred.
-- **No AI slop.** Banned phrase detection catches "delve," "tapestry," "landscape," and 20+ other markers.
+- **No AI slop.** Banned phrase detection catches "delve," "tapestry," "landscape," and 22 other markers (25 total).
 - **Strongest counterargument required.** Every analysis must address the best argument against its thesis.
 - **Limitations section required.** What the analysis cannot prove, where evidence is circumstantial.
 - **Source grading.** Primary > Secondary > Tertiary, with automated classification.
@@ -358,7 +359,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **572 tests** across 23 test files, each covering a different analytical capability:
+MediaScope has **585 tests** across 24 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -384,6 +385,7 @@ MediaScope has **572 tests** across 23 test files, each covering a different ana
 | `test_wired_gulag_patterns.py` | 17 | Wired "gulag" engineer revolt coverage: conscript/conscription workplace loaded language, keystroke/screen-recording surveillance detection, Scale AI entity detection, full article-context loaded language density |
 | `test_postpass_activation.py` | 32 | Post-pass device activation: analogy_stacking threshold (3+ markers), speculative_framing threshold (5+ hedges), expanded loaded_language patterns, analogy_stacking false-positive regression (factual "is a" constructions vs qualified metaphors) |
 | `test_jun27_regression.py` | 9 | Jun 27 regression tests: topic "fine" ambiguity (fine-tuned ≠ litigation), source extraction stop words ("Any"/"All" not person names), fined still matches litigation |
+| `test_structural_consistency.py` | 13 | Structural consistency guards: framing device type count (32 total = 29 pattern + 3 structural), `precedent_analogy` exists, `__main__.py` entry point works, doc counts match across METHODOLOGY.md/ARCHITECTURE.md/AGENT_GUIDE.md/CLI/README (framing types, banned phrases, Advance/Reddit voting power) |
 
 ```bash
 # Run all tests
