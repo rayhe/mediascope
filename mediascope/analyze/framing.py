@@ -340,6 +340,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
     re.compile(
         r"\b(?:surveillance|wiretap|spying|spy|mass.?identification|"
         r"biometric|facial recognition|face.?recognition|faceprint|"
+        r"keystroke.?(?:tracking|monitoring|logging)|screen.?recording|"
         r"tracking|monitor(?:ing)?|eavesdrop(?:ping)?)\b"
         r".{0,60}?"
         r"\b(?:consumer|commercial|app|phone|device|glasses|product|"
@@ -382,7 +383,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
     re.compile(
         r"\b(?:soul.?crushing|drudge|drudgery|gulag|"
         r"assembly line|human assembly line|data factory|"
-        r"draftees?|drafted|disposable|"
+        r"draftees?|drafted|conscript(?:ed|ing|ion|s)?|disposable|"
         r"menial|dehumanizing|atrocious|brutal|"
         r"exploitation|slave|slavery|sweatshop|"
         r"belittled?|berated?|belittling|berating|"

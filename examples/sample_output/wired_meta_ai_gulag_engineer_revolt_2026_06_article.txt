@@ -1,0 +1,120 @@
+Title: Meta's AI Unit Is a 'Gulag,' Engineers Say, as Bosworth Admits Shake-Up Was 'Atrocious'
+Publication: Wired
+Date: June 12-16, 2026 (rolling coverage)
+Authors: Multiple Wired reporters (referenced by TechCrunch, WebProNews, Inc, TechTimes, CryptoRank as "Wired report")
+URL: https://www.wired.com/ (paywalled; reconstructed from extensive secondary sourcing)
+Section: Business / Tech
+
+NOTE: This article text is reconstructed from extensive quoting in secondary sources
+(TechCrunch, WebProNews/WIRED review, Inc, TechTimes, CryptoRank, Barchart) because
+the original Wired article is behind a paywall. All quoted text is attributed to Wired's
+original reporting by these secondary sources. The reconstruction preserves direct
+quotes, attributed facts, and editorial framing as reported by these outlets.
+
+---
+
+ARTICLE TEXT (RECONSTRUCTED):
+
+Meta's three-month-old Applied AI unit of roughly 6,500 engineers and product managers
+is on the verge of revolt, with employees describing their forced reassignment as
+"literally the gulag" and the assigned work as "soul-crushing."
+
+The drama kicked off when someone hijacked a livestreamed, employee-only presentation
+open to thousands of employees with an expletive-filled outburst. The interloper
+demanded that attendees write to a senior Meta AI executive and "tell him that he's a
+piece of sh*t." One presenter reportedly covered their face with their hands. The
+incident was described by Wired as "an expletive-filled outburst about 'being the
+company's bitch.'"
+
+The anger reflects simmering rage inside the Applied AI Engineering unit. Many employees
+learned they would be moved into the group through a surprise email, a process that one
+self-described draftee later described on Reddit as "quite random." According to an
+internal announcement reviewed by Business Insider, the reason they were enlisted is
+that Meta's AI models still lacked the knowledge to outperform humans at technical
+tasks like coding. "For agents to understand how people actually complete everyday tasks
+using computers, we need to train our models on real examples," the announcement read.
+
+In a leaked audio recording from an internal meeting, CEO Mark Zuckerberg offered his
+reasoning for drafting employees rather than outside contractors. Alexandr Wang — who
+sold his data-labeling startup Scale AI to Meta for $14.3 billion before taking the
+role of chief AI officer and heading up Meta Superintelligence Labs — knows the
+data-labeling world well, Zuckerberg said. And candidly, the average Meta employee has
+"significantly higher" intelligence than third-party contractors, he added, making them
+the better choice.
+
+Employees describe being forced into the group with no real choice: join or quit. Many
+call themselves "draftees." Their assigned work? Generating puzzles and coding problems
+to train AI models.
+
+"It's literally the gulag," one employee told Wired. "You have zero purpose in life all
+of a sudden, you barely interact with anyone, you just have these tasks every week."
+
+"Most people find the work soul-crushing," said another.
+
+It's not just the Applied AI group where morale is lousy. More than 1,600 Meta employees
+company-wide have reportedly signed a petition protesting a program that monitors their
+clicks and keystrokes for AI training data — the Model Capability Initiative (MCI). The
+mood across the company is dark enough that Meta's chief product officer, Chris Cox, felt
+compelled to address the "brutal" environment on a call with employees this week.
+
+Cox compared the situation staff face to "running a marathon in the middle of a hailstorm
+and then, like, your teammate gets replaced and then we're recording you." Then, for
+emphasis, he added, "It's like what the f*ck?"
+
+The Applied AI team is led by Maher Saba, a 12-year veteran of Meta who was previously
+a vice president in its Reality Labs division — the division that burned through $83
+billion on the metaverse before Meta moved on to AI. The new organization reports up to
+Meta CTO Andrew Bosworth. Originally, the unit was structured in such a way that up to
+50 employees reported to one manager.
+
+In an internal post reviewed by Wired, Bosworth conceded that Meta handled its recent
+AI reorganization poorly. He called the rollout "atrocious."
+
+"We've undermined the trust you have that your specific expertise and contribution will
+be valued, that you will grow and advance your career, and that this will be a place
+where you can actually have an impact," Bosworth wrote. The rapid shifts in strategy,
+combined with earlier hiring surges followed by cuts, left teams unstable. Managers
+changed. Priorities flipped. Confidence eroded.
+
+"(Morale) maybe not the worst it's ever been in 20 years here, but it's probably up
+there," Bosworth told staff. "It's definitely up there."
+
+Regarding the keystroke monitoring program, employees reacted with alarm. When asked
+about an opt-out, Bosworth replied simply: no. To those worried about privacy he offered
+practical advice: Don't open personal email on company devices. As he put it in earlier
+memos, the future involves AI agents that "primarily do the work" while humans direct,
+review and improve them.
+
+"We should heed the saying, 'AI won't take your job but someone who knows AI might,'"
+Bosworth wrote. Performance reviews, he suggested, would increasingly reflect impact on
+AI initiatives.
+
+A departing staffer even posted a biting anti-AI video that name-checked Bosworth and
+the monitoring program known as the Model Capability Initiative, according to Mother
+Jones.
+
+Zuckerberg himself addressed the broader situation in an internal memo Friday,
+acknowledging that recent changes had "caused distress" and admitting the company had
+made mistakes that it plans to address. He added in his memo that "Meta's north star is
+to be the best place for the most talented people in the world to make an impact." He
+also proposed a company hackathon in July.
+
+The hackathon proposal drew swift backlash. "I'm literally preoccupied with keeping the
+lights on for my team," one employee replied in an internal message Wired reported. "I
+have no incentive to participate, let alone have the time to do so."
+
+"I'm not sure that this company supports a hackathon culture anymore," another worker
+noted. "People are being asked to cover more work with less support while their
+colleagues get laid off."
+
+Bosworth's latest message attempts to address the fallout with promises of greater
+stability, better communication, improved microkitchens, higher travel budgets for team
+events, restored social gatherings, clearer management expectations capped around 20
+direct reports, and AI coaching tools.
+
+"I hope we can rekindle the best of the culture we joined," Bosworth wrote.
+
+[UPDATE: By June 25-26, Meta reversed course. An internal memo obtained by Business
+Insider stated the company would "defer to each individual's choice" on whether to
+remain in the Applied AI task force, effectively ending the mandatory reassignment
+policy. Fast Company and others reported the reversal.]

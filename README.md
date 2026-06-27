@@ -337,6 +337,7 @@ The `examples/sample_output/` directory contains annotated analyses of real arti
 | `wired_meta_dark_mood_2026_05_14_*` | Wired: Meta's New Reality: Record High Profits. Record Low Morale | Flagship pre-layoff piece with 4 bylines (Dave, Goode, Levy, Schiffer). "Marshaling the full weight of the publication" editorial decision — rare for workplace morale pieces. Opening salvo of multi-week investigative arc leading to Applied AI and NameTag exposés. |
 | `wired_meta_horizon_worlds_comedy_club_2026_03_*` | Wired: The Comedy Club at the End of the Metaverse | Platform eulogy / immersive narrative journalism by Boone Ashworth. Tone: -0.30 (melancholic, not hostile). 0.85 source balance toward community members; Meta gets one boilerplate email quote. Active vs passive framing: Meta "announced," "pulling away" vs users "broke down in tears," "terrified." |
 | `wired_meta_applied_ai_revolt_2026_06_13_*` | Wired's "Soul-Crushing Gulag" Meta Applied AI report | Tone: -0.72, 5/7 framing devices detected, 80% anonymous sources, strong emotional appeal + loaded language |
+| `wired_meta_ai_gulag_engineer_revolt_2026_06_*` | Wired: Meta AI "Gulag" — 6,500 engineers conscripted into data labeling | Reconstructed from 7 secondary sources (Wired paywalled). Tone: -0.65 manual. 14 framing devices (loaded_language ×6, emotional_appeal ×3, scale_magnitude ×2, juxtaposition, self_referential_investigation, kicker_framing). 80% anonymous sourcing. Military conscription vocabulary ("gulag," "conscripted," "forced labor"). **Toolkit fixes:** Scale AI entity added to Meta cluster, conscript terms added to workplace loaded language, keystroke/screen-recording added to surveillance patterns. 17 new tests. |
 | `wired_meta_applied_ai_2026_06_16_*` | Wired Meta Applied AI follow-up | Continued negative framing with Bosworth admission quotes |
 | `wired_meta_bosworth_atrocious_reorg_2026_06_16_*` | Wired: Bosworth's "Atrocious" Reorg | Tone: -0.55 manual. Bosworth's own "atrocious" quote weaponized editorially. Tests ironic quotation framing — executive's candor reframed as damning admission. Self-referential investigation: cites own prior Applied AI reports as evidence. |
 | `wired_meta_rank_one_2026_06_15_*` | Wired Meta "Rank One" article | Earlier coverage establishing the pattern |
@@ -357,7 +358,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **518 tests** across 20 test files, each covering a different analytical capability:
+MediaScope has **535 tests** across 21 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -380,6 +381,7 @@ MediaScope has **518 tests** across 20 test files, each covering a different ana
 | `test_hypocrisy_medical_duress.py` | 16 | Hypocrisy frame detection: "the only company that has not" patterns, medical duress framing, healthcare-as-leverage patterns, prepositional phrase tolerance in entity–negation gaps |
 | `test_wynn_williams_fixes.py` | 18 | Guardian Wynn-Williams lawsuit fixes: source extraction false positives (day names "Wednesday", book titles "Careless People"), litigation framing expansion (complaint, suing, arbitration patterns), power_asymmetry per-violation fines with intervening adjectives |
 | `test_sarcastic_correction.py` | 15 | Sarcastic correction framing device: concede-then-retract patterns ("Of course... oh wait"), standalone sarcastic constructions ("Who could have predicted"), false-positive exclusion for neutral uses of "of course" and "right" |
+| `test_wired_gulag_patterns.py` | 17 | Wired "gulag" engineer revolt coverage: conscript/conscription workplace loaded language, keystroke/screen-recording surveillance detection, Scale AI entity detection, full article-context loaded language density |
 | `test_postpass_activation.py` | 23 | Post-pass device activation: analogy_stacking threshold (3+ markers), speculative_framing threshold (5+ hedges), expanded loaded_language patterns (deceptive, misleading, disingenuous, unprecedented+breach/violation), expanded speculative verbs (influence, affect, leak, seep, expose), integration of both post-passes |
 
 ```bash

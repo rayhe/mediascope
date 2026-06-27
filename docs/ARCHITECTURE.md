@@ -387,7 +387,7 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # Annotated real-article analyses
-├── tests/                       # 518 tests across 20 test files (all from real articles)
+├── tests/                       # 535 tests across 21 test files (all from real articles)
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
 │   ├── test_careers.py          # Career loading, migration detection, DiD, leadership ITS
@@ -407,6 +407,7 @@ mediascope/
 │   ├── test_topics.py           # Topic classification, all 12 buckets, confidence scoring
 │   ├── test_wynn_williams_fixes.py # Litigation framing, source extraction false positives, power asymmetry
 │   ├── test_sarcastic_correction.py # Sarcastic correction framing: concede-then-retract, standalone sarcasm, false-positive exclusion
+│   ├── test_wired_gulag_patterns.py # Wired "gulag" coverage: conscript terms, keystroke surveillance, Scale AI entity, article-context loaded language
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

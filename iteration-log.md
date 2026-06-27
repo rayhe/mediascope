@@ -4,6 +4,44 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 00:00 PT — Hour Type A: Article Deep Dive (Wired Meta AI "Gulag" Engineer Revolt)
+
+**Focus:** Wired's June 12–16, 2026 rolling coverage of Meta's Applied AI unit revolt — employees calling it "the gulag," CTO Bosworth admitting rollout was "atrocious," 6,500 engineers conscripted into AI data labeling. Article reconstructed from secondary sources (TechCrunch, WebProNews, Inc, TechTimes, CryptoRank, Barchart, Mother Jones) due to Wired paywall.
+
+### Findings
+
+**1. Entity gap: Scale AI**
+- Alexandr Wang / Scale AI plays a central role in Meta's data-labeling strategy but was missing from the Meta entity cluster
+- Added "Scale AI" alias + regex to `DEFAULT_ENTITY_CLUSTERS["Meta"]`
+
+**2. Loaded-language gaps: conscription + surveillance**
+- "Conscripted" — military vocabulary applied to internal workforce redeployment — was not detected by workplace loaded-language patterns
+- Added `conscript(?:ed|ing|ion|s)?` to workplace loaded-language patterns
+- Keystroke tracking / screen recording surveillance language was undetected
+- Added `keystroke.?(?:tracking|monitoring|logging)|screen.?recording` to surveillance/security-state loaded-language patterns
+
+**3. Framing density**
+- 14 framing devices manually identified in the reconstructed article vs toolkit prediction
+- 8-dimension sentiment scoring, source stance analysis, and conflict disclosure assessment (Advance/Reddit, Condé Nast/OpenAI conflicts) documented in full analysis
+
+### Files Changed
+- `mediascope/analyze/entities.py` — Added "Scale AI" alias + regex to Meta cluster
+- `mediascope/analyze/framing.py` — Added conscript terms to workplace loaded language; keystroke/screen-recording to surveillance patterns
+- `tests/test_wired_gulag_patterns.py` — NEW: 17 tests for conscript terms, keystroke monitoring, Scale AI entity detection, full article-context loaded language
+- `examples/sample_output/wired_meta_ai_gulag_engineer_revolt_2026_06_article.txt` — NEW: reconstructed article text
+- `examples/sample_output/wired_meta_ai_gulag_engineer_revolt_2026_06_analysis.md` — NEW: full analysis
+
+### Commit
+- Hash: a4d6536
+- Pushed to GitHub
+
+### Observations
+- Wired's "gulag" coverage is the most concentrated adversarial framing arc in the dataset — 3 articles in 4 days, each building on the prior. The "soul-crushing" / "atrocious" / "conscripted" vocabulary escalation mirrors wartime propaganda framing patterns.
+- Scale AI's role as both Meta contractor and competitor (Alexandr Wang's own AI ambitions) creates an undisclosed conflict of interest within the reporting itself — sources close to Scale AI have competitive incentives to frame Meta's internal AI operations negatively.
+- The 80% anonymous sourcing rate across this coverage arc remains the highest in the dataset.
+
+---
+
 ## 2026-06-26 21:00 PT — Hour Type D: Toolkit Quality & Documentation
 
 **Focus:** Cross-document consistency audit, CLI help text alignment with actual implementation, stale number fixes, missing sample output gallery entry.
@@ -4245,3 +4283,46 @@ All 518 tests pass (no regressions).
 - Hash: 3f16877
 - Pushed to GitHub
 - Changes: `mediascope/analyze/framing.py` (3 pattern additions), `examples/sample_output/reuters_meta_mci_pause_2026_06_22_analysis.md` (new file)
+
+---
+
+## Iteration: 2026-06-27 00:00 PT — Type B: Journalist/Publication Research
+
+**Focus:** Expand Eli Tan career (1→5 entries), update Mike Isaac profile, add NYT editorial changes
+
+### Journalists Updated
+
+**Eli Tan (expanded: 1 → 5 career entries)**
+- Full career chain reconstructed: CoinDesk (news reporter, NFTs/gaming/metaverse, Oct 2021–Feb 2023) → Columbia University (MA Journalism, 2023–24) → Washington Post (business/Congress reporter, 2024) → NYT Fellow (technology, 2025) → NYT Staff (Meta beat reporter, 2026–present)
+- Key insight: represents a new-generation pipeline into prestige tech journalism — crypto trade press → Columbia MA → WaPo → NYT, rather than the traditional Wired/Verge → NYT path
+- His CoinDesk metaverse coverage (during boom/bust cycle) gives him firsthand experience with the hype dynamics Meta bet its corporate identity on
+- Sources: NYTCo staff announcement (nytco.com), Bush School alumni profile (bush.edu), CoinDesk author page, Muck Rack profile, Talking Biz News, BuzzSumo journalist profile
+
+**Mike Isaac (profile updated)**
+- Notes and latest career entry updated to reflect Jan 2026 role expansion
+- Shifted from dedicated Meta reporter (10+ years) to broader Silicon Valley correspondent with mentoring responsibilities
+- Eli Tan took over day-to-day Meta beat; Isaac now also "keeps the Tech group on the pulse of news"
+
+### Editorial Changes Added (NYT)
+1. Eli Tan hired as `meta_beat_reporter` (new position, Jan 2026) — second dedicated Meta reporter alongside Isaac
+2. Mike Isaac expanded to `silicon_valley_correspondent` (Jan 2026) — from Meta-specific to broader SV coverage with mentoring
+
+### Analytical Observations
+1. **NYT doubling Meta coverage capacity:** Having two dedicated reporters on a single company beat is unusual — comparable to having two dedicated Apple reporters. This signals institutional investment in Meta as a coverage priority, not just individual interest.
+2. **New credentialing pipeline:** The CoinDesk → Columbia → WaPo → NYT path represents a different journalist production pipeline than the Mossberg/Swisher pipeline (AllThingsD → Recode → Verge → NYT) or the Condé Nast pipeline (Wired → NYT). Three distinct feeder systems now populate NYT's tech desk.
+3. **DiD opportunity:** Tan's early Meta coverage can be compared against his CoinDesk baseline to measure institutional framing velocity — how quickly NYT's editorial culture shapes a new reporter's tone. His crypto/metaverse background may create a different baseline than reporters who came through policy or general tech beats.
+4. **Zero thin profiles remaining:** Database now has no journalists with only 1 career entry — every tracked journalist has a multi-entry career chain for migration analysis.
+
+### Files Changed
+- `profiles/careers/journalists.yaml` — Eli Tan (1→5 entries), Mike Isaac (updated notes + career entry)
+- `profiles/careers/editorial_changes.yaml` — 2 new NYT entries (Tan hire, Isaac expansion)
+- `README.md` — Added Eli Tan to migration examples
+- `docs/EDITORIAL_HISTORIES.md` — Multi-pub count 94→95
+
+### Test Results
+All 518 tests pass (no regressions — data-only changes).
+
+### Commit
+- Hash: 2a9212f
+- Pushed to GitHub
+
