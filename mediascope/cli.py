@@ -214,10 +214,11 @@ def analyze(publication, target, since, force):
 
     \b
     • Entity detection and co-occurrence mapping
-    • Per-sentence and per-article sentiment scoring
-    • Narrative framing classification (threat / neutral / positive)
-    • Source attribution analysis (named sources, anonymous, none)
-    • Headline vs. body sentiment comparison
+    • 8-dimension sentiment scoring (tone, emotional intensity, agency, etc.)
+    • Framing device detection (30 types: loaded language, CEO personalization, etc.)
+    • Source extraction with stance analysis (adversarial / supportive / neutral)
+    • Outsourced intensity measurement (editorial prose vs. quoted intensity)
+    • Headline vs. body sentiment comparison with framing-aware correction
     """
     profile = _resolve_profile(publication)
     db = _get_db()
@@ -326,15 +327,15 @@ def analyze(publication, target, since, force):
 def score(publication, target, period, compare, output):
     """Calculate coverage asymmetry scores.
 
-    Computes the Asymmetric Coverage Index (ACI) by comparing how the publication
-    treats the target entity vs. comparators.  Statistical tests include:
+    Computes the Asymmetry Score (AS) by comparing how the publication treats
+    the target entity vs. peers.  Statistical tests include:
 
     \b
-    • Sentiment differential (Mann-Whitney U)
-    • Framing distribution (chi-squared)
-    • Source quality comparison (Kruskal-Wallis)
-    • Headline sensationalism index
-    • Coverage volume normalisation (articles per market-cap-dollar)
+    • Welch's t-test for sentiment differential (unequal variance)
+    • Cohen's d effect size (practical significance)
+    • Bootstrap confidence intervals (1,000 resamples, 95% CI)
+    • Framing device density comparison
+    • Source stance balance analysis
     """
     profile = _resolve_profile(publication)
     db = _get_db()
@@ -400,11 +401,11 @@ def _render_scores(scores: dict, target: str, publication: str, period: str):
 
     console.print(table)
 
-    aci = scores.get("aci")
+    aci = scores.get("aci") or scores.get("asymmetry_score")
     if aci is not None:
         color = "red" if aci > 0.6 else ("yellow" if aci > 0.3 else "green")
         console.print(
-            f"\n  Asymmetric Coverage Index (ACI): [{color}]{aci:.3f}[/{color}]"
+            f"\n  Asymmetry Score (AS): [{color}]{aci:.3f}[/{color}]"
         )
 
 
