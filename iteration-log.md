@@ -4,6 +4,49 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 08:00 PT — Hour Type D: Toolkit Quality & Documentation — Banned Phrases Sync, Taxonomy Count Fix, Test Expansion
+
+**Focus:** Audit of documentation-to-code consistency, found and fixed three classes of issues: missing banned phrases in the quality checker, a stale framing device count in METHODOLOGY.md, and outdated test counts across docs.
+
+### 1. Banned Phrases Doc→Code Sync (20 → 25 phrases)
+
+QUALITY_STANDARDS.md listed 25 banned AI-slop phrases but `mediascope/quality/standards.py` only enforced 20. Five phrases were documented as banned but not actually caught by the checker:
+
+- `in today's digital age` — classic AI throat-clearing
+- `it is important to note` — filler preamble
+- `needless to say` — redundant hedging
+- `it goes without saying` — paradoxical filler (says the thing it claims doesn't need saying)
+- `without further ado` — ceremonial filler
+
+All five added to `BANNED_PHRASES` list. List reorganized into three logical groups with comments:
+1. **Filler nouns/verbs** (12): delve, tapestry, landscape, game-changer, paradigm shift, synergy, leverage, ecosystem, deep dive, unpack, robust, holistic
+2. **Sentence-starter throat-clearing** (5): Moreover, Furthermore, In conclusion, It's worth noting, It bears mentioning
+3. **Cliché connective phrases** (8): at the end of the day, moving forward, circle back, in today's digital age, it is important to note, needless to say, it goes without saying, without further ado
+
+### 2. METHODOLOGY.md Taxonomy Count Fix
+
+§13.2 (Same-Event Comparison Dimensions table) referenced "the 30-type taxonomy (§4)" — but §4.1 correctly documents 31 framing device types (10 core + 18 extended + 3 structural). All other docs (ARCHITECTURE.md, AGENT_GUIDE.md) correctly say 31. Fixed the single stale reference.
+
+### 3. Test Expansion (+6 tests)
+
+Added 6 tests to `test_quality_standards.py`:
+- 5 individual detection tests for each new banned phrase
+- 1 structural test asserting `len(BANNED_PHRASES) == 25` — guards against future doc/code drift
+
+### 4. Doc Count Updates
+
+Updated test counts across all documentation:
+- README.md: 535 → 541 total tests, test_quality_standards row: 35 → 41
+- ARCHITECTURE.md: 535 → 541 in file layout comment
+
+### Stats After This Iteration
+- Total banned phrases: 25 (up from 20)
+- Tests: 541 (up from 535, +6 new)
+- All passing
+- Commit: 36d8316
+
+---
+
 ## 2026-06-27 07:00 PT — Hour Type C: Wired/Condé Nast Ownership Deep Dive — Google AI Traffic Crisis, 2026 Proxy, Revenue Data, CNIL Fine
 
 **Focus:** Six major expansions to the Wired/Condé Nast/Advance Publications profile from primary sources: Reddit 2026 DEF 14A (SEC EDGAR), FT Lynch interview (Feb 27, 2026), Adweek events revenue reporting (May 2026), Bloomberg Law collateralized lending (Nov 2024), PPC Land traffic analysis, and CNIL enforcement.
