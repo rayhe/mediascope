@@ -4194,3 +4194,53 @@ All 518 tests pass (no regressions — data-only changes).
 1. **Mossberg/Swisher pipeline:** Lauren Goode's expanded career reveals a talent pipeline from AllThingsD/Recode that fed reporters into both The Verge (Vox Media) and Wired (Condé Nast). Mike Isaac also came through this pipeline before landing at NYT. This cohort shares editorial DNA worth tracking across publications.
 2. **Wired Europe coverage gap:** Morgan Meaker's departure (Sep 2024) with no replacement signals Wired deprioritizing dedicated EU tech regulation coverage. This matters for MediaScope because EU regulatory framing (DSA/DMA enforcement, AI Act) is a major vector for anti-Meta coverage.
 3. **Funding model natural experiment:** Paris Martineau's 5-publication career spanning 3 distinct funding models (ad, subscription, nonprofit) is a rare natural experiment for DiD analysis of how funding structure shapes editorial framing, independent of individual journalist identity.
+
+---
+
+## Iteration: 2026-06-26 22:00 PT — Type A: Article Deep Dive
+
+**Focus:** Reuters × Meta MCI Pause (2026-06-22) — article already stored, missing analysis file
+
+### Article Analyzed
+- **Source:** Reuters (wire service)
+- **Title:** "Meta to pause internal mouse-tracking tech while examining data security issues"
+- **Authors:** Katie Paul and Jaspreet Singh
+- **Date:** 2026-06-22
+- **URL:** https://www.reuters.com/legal/litigation/meta-pause-internal-mouse-tracking-tech-while-examining-data-security-issues-2026-06-22/
+
+### Analysis Created
+`reuters_meta_mci_pause_2026_06_22_analysis.md` — Full manual analysis with:
+- Entity audit (toolkit vs. manual) — 2 clusters correctly detected, no significant gaps
+- Framing device deep dive — 6→9 devices after fixes (50% improvement)
+- Sentiment scoring root cause analysis — VADER wire-service inflation pattern confirmed
+- Cross-publication comparison with Wired's parallel MCI coverage
+
+### Code Improvements (3 changes to `mediascope/analyze/framing.py`)
+
+**1. Surveillance loaded_language: workplace context extension**
+- Extended surveillance pattern to match employee/workplace contexts (`employee|worker|staff|intern(?:al)?|workplace|computer`) in addition to consumer/commercial
+- Previously: only fired on "tracking... consumer/app/device/glasses"
+- Now: fires on "tracking/monitoring... employees' computers" (critical for MCI coverage)
+
+**2. Data-negligence loaded_language pattern (NEW)**
+- Added new pattern for technical-negligence indicators: `unencrypted|plaintext|plain.?text|without\s+encryption|not\s+encrypted|stored?\s+in\s+plain` near data/information context
+- These terms carry strong editorial valence — naming the absence of encryption implies negligence
+- Fires on: "unencrypted form" in MCI article
+
+**3. Claim-vs-reality hypocrisy_frame pattern (NEW)**
+- Added wire-service form of stated-vs-actual contradiction: "said/announced it will pause/stop/halt..." (with up to 4 intervening words for temporal phrases) + ".{10,1200}?" + "was still recording/running/..."
+- Window of 1200 chars accommodates wire-service structure where contradiction spans 3-6 paragraphs of factual context
+- Fires on: "said on Monday it will pause...The tool was still recording" (991 chars apart)
+
+### Test Results
+All 518 tests pass (no regressions).
+
+### Key Findings
+1. **VADER wire-service inflation confirmed as systematic:** raw_tone +0.498 on a data-exposure article. This is the same class of error as the Dalton Smith analysis (+0.275). Corporate PR language ("carefully designed", "privacy safeguards", "no indication") registers as positive in VADER's lexicon. Two-article pattern now documented.
+2. **Wire-service loaded language is subtler than magazine style:** Reuters uses single words ("sensitive", "unencrypted") where Wired would use full sentences. The loaded_language patterns needed workplace surveillance and data-negligence sub-patterns to catch this.
+3. **Structural contradiction without conjunction:** Wire services juxtapose claim and reality through paragraph sequencing rather than explicit "yet/but/however" conjunctions. The new claim-vs-reality pattern detects this at paragraph distances up to 1200 chars.
+4. **The cross-analysis file already existed** (`wired_vs_reuters_mci_data_exposure_2026_06_22_cross_analysis.md`) — this standalone analysis completes the pair by providing detailed toolkit validation for the Reuters side.
+
+### Commit
+- Hash: TBD (pending push)
+- Changes: `mediascope/analyze/framing.py` (3 pattern additions), `examples/sample_output/reuters_meta_mci_pause_2026_06_22_analysis.md` (new file)

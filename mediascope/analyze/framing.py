@@ -336,12 +336,28 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         re.IGNORECASE,
     ),
     # Surveillance/security-state language applied to commercial entities
+    # or workplace/employee contexts
     re.compile(
         r"\b(?:surveillance|wiretap|spying|spy|mass.?identification|"
         r"biometric|facial recognition|face.?recognition|faceprint|"
         r"tracking|monitor(?:ing)?|eavesdrop(?:ping)?)\b"
         r".{0,60}?"
-        r"\b(?:consumer|commercial|app|phone|device|glasses|product)\b",
+        r"\b(?:consumer|commercial|app|phone|device|glasses|product|"
+        r"employee|worker|staff|intern(?:al)?|workplace|computer)s?\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Data-negligence language — technical terms that imply security
+    # negligence when applied to data handling (encryption absence,
+    # plaintext storage).  These carry strong editorial valence: naming
+    # the absence of standard security practice frames the subject as
+    # falling below baseline competence.
+    re.compile(
+        r"\b(?:unencrypted|plaintext|plain.?text|"
+        r"without\s+encryption|not\s+encrypted|"
+        r"stored?\s+in\s+plain)\b"
+        r".{0,40}?"
+        r"\b(?:data|information|records?|form|storage|database|"
+        r"files?|logs?|credentials?|passwords?|tokens?)\b",
         re.IGNORECASE | re.DOTALL,
     ),
     # "Quietly" as editorial signal of secrecy
@@ -1090,6 +1106,27 @@ _HYPOCRISY_FRAME_PATTERNS: list[re.Pattern] = [
         r"(?:has not|have not|hasn't|haven't|did not|didn't|refused to|"
         r"declined to|failed to|has yet to|have yet to)\b",
         re.IGNORECASE,
+    ),
+    # Claim-vs-reality structural contradiction — wire-service form where
+    # an entity's announced action is juxtaposed against observed reality
+    # in sequential paragraphs, without explicit conjunction ("yet", "but").
+    # E.g., "Meta said it will pause the program... The tool was still
+    # recording as of Monday afternoon."
+    # Identified in Reuters MCI Pause analysis (Jun 2026).
+    re.compile(
+        r"\b(?:said|announced|stated|confirmed|promised|pledged|vowed|committed)"
+        r"(?:\s+\w+){0,4}?\s+"
+        r"(?:it\s+)?(?:will|would|has|had|is|was)\s+"
+        r"(?:pause|stop|halt|end|suspend|discontinue|shut down|wind down|"
+        r"terminate|cease|phase out|pull|remove|disable|restrict|limit)"
+        r"\b.{10,1200}?"
+        r"\b(?:(?:was|were|is|are)\s+still\s+(?:\w+ing)|"
+        r"still\s+(?:running|recording|collecting|tracking|monitoring|operating|active|accessible|available)|"
+        r"continued\s+to\s+(?:\w+)|"
+        r"continues\s+to\s+(?:\w+)|"
+        r"has\s+not\s+(?:yet\s+)?(?:stopped|paused|halted|ended|ceased)|"
+        r"had\s+not\s+(?:yet\s+)?(?:stopped|paused|halted|ended|ceased))\b",
+        re.IGNORECASE | re.DOTALL,
     ),
 ]
 
