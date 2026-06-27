@@ -298,30 +298,58 @@ journalists:
   notes: 'Key departure: The Verge → independent (Platformer). Tests what happens when a journalist leaves institutional control
     entirely.'
 - career:
-  - beat: tech labor, content moderation
+  - beat: local news
+    end: 2015-12
+    event_type: hired
+    notes: 'Early career in San Francisco local journalism. Began at SF Weekly, then San Francisco Examiner. Also worked at
+      Ratter (a Gawker Media local news venture), where she helped start three local news sites and edited all of them. The
+      Ratter connection is her first entry into the Gawker Media ecosystem, which would shape her next two career moves. Born
+      April 1989 (Kate Adelia Conger).'
+    publication: sf-weekly
+    role: reporter
+    start: 2014-01
+  - beat: tech policy, cybersecurity
     end: 2017-06
     event_type: hired
-    notes: Covered tech labor and platform moderation at Gizmodo (then Gawker Media).
-    publication: gizmodo
-    role: staff_writer
-    start: 2016-01
-  - beat: tech labor
-    end: 2018-09
-    event_type: hired
-    notes: Brief tenure covering tech labor issues.
+    notes: Tech policy and cybersecurity reporter at TechCrunch. Early tech beat reporting before moving to Gizmodo.
     publication: techcrunch
     role: staff_writer
-    start: 2017-07
-  - beat: tech labor, social media
+    source_url: https://talkingbiznews.com/they-re-hiring/ny-times-hires-conger-to-cover-tech/
+    start: 2016-01
+  - beat: tech policy, cybersecurity, employee activism
+    end: 2018-06
     event_type: hired
-    notes: 'Co-authored ''Character Limit'' (2024) on Musk''s Twitter/X acquisition with Ryan Mac. (NOTE: Mike Isaac is a
-      separate NYT reporter who wrote ''Super Pumped'' about Uber.)'
+    notes: 'Tech policy and cybersecurity reporter at Gizmodo (by then part of Gizmodo Media Group, post-Gawker). KEY SCOOPS:
+      First to publish James Damore''s controversial Google Memo on perceived gender differences (Aug 2017) — Damore''s subsequent
+      lawsuit was dismissed in 2020. Broke employee dissatisfaction at Google over Project Maven (Pentagon AI contract). Covered
+      Uber, encryption, political data breaches. The Damore memo scoop established her as a go-to reporter for internal tech
+      company culture stories.'
+    publication: gizmodo
+    role: staff_writer
+    source_url: https://nytco.com/press/kate-conger-joins-the-new-york-times/
+    start: 2017-07
+  - beat: tech labor, social media, Twitter/X, Elon Musk
+    event_type: hired
+    notes: 'General assignment technology reporter, based in San Francisco. Hired by Pui-Wing Tam and Ellen Pollock (with Adrienne
+      Carter). Described as "ferocious" by colleagues Sheera Frenkel and Mike Isaac. Beat expanded from general tech to Twitter/X
+      and Elon Musk coverage. 2019 Gerald Loeb Award finalist (beat reporting) with Daisuke Wakabayashi and Katie Benner for
+      coverage of Andy Rubin''s $90M Google severance after sexual harassment allegations. Co-authored ''Character Limit: How
+      Elon Musk Destroyed Twitter'' with colleague Ryan Mac (Penguin, Sep 2024). Covers: hackers, AI in autonomous weapons,
+      labor uprisings in the gig economy. Part of the Gizmodo → NYT pipeline that also produced Dell Cameron (Gizmodo → Wired)
+      and Dhruv Mehrotra (Gizmodo → Wired).'
     publication: nytimes
     role: correspondent
-    source_url: https://www.nytimes.com/by/kate-conger
-    start: 2018-10
+    source_url: https://nytco.com/press/kate-conger-joins-the-new-york-times/
+    start: 2018-07
   name: Kate Conger
-  notes: 'Key migration: Gizmodo → TechCrunch → NYT.'
+  notes: 'NYT technology reporter specializing in Twitter/X, Elon Musk, and tech labor. Born April 1989. Career arc: SF Weekly
+    → SF Examiner → Ratter (Gawker Media local news) → TechCrunch → Gizmodo → NYT. Co-author of ''Character Limit: How Elon
+    Musk Destroyed Twitter'' (2024, Penguin) with Ryan Mac. 2019 Gerald Loeb Award finalist. First to publish the Damore Google
+    Memo (2017). Broke Google Project Maven employee activism. The Gawker Media ecosystem (Ratter → Gizmodo) shaped her tech
+    accountability instincts — adversarial framing toward Big Tech internal culture was established before she joined NYT. KEY
+    for MediaScope: her career is a case study of the Gawker → NYT talent pipeline. Her beat (Twitter/X, Musk) makes her coverage
+    directly comparable to Zoë Schiffer (who co-authored ''Extremely Hardcore'' at Platformer before joining Wired). Both wrote
+    definitive Musk/Twitter books from different institutional homes.'
 - career:
   - beat: technology, security, column
     end: 2014-12
@@ -1106,22 +1134,73 @@ journalists:
     — tests how institutional culture shapes a journalist who has never worked elsewhere. As of June 2026, consistently covers
     UK tech regulation, AI policy, and Big Tech from London.'
 - career:
-  - beat: technology
-    end: 2022-06
+  - beat: student journalism, general
+    end: 2013-05
     event_type: hired
-    notes: Technology correspondent at Reuters.
+    notes: 'Executive Director of Neon Tommy, USC Annenberg''s award-winning online news outlet. Oversaw ~200 staff across
+      news, social media, and PR teams. Regularly covered politics, transportation, and technology. Multiple awards under
+      his leadership: SPJ Region 11 Mark of Excellence Award (2013), LA Press Club online news 1st place (2013), LA Press
+      Club online news 2nd place (2012). Also interned at Marketplace (American Public Media) editing audio for host Kai Ryssdal
+      (Jan-May 2013), summered at Sacramento Bee Capitol Bureau (2011, 60 online + 30 print articles) and SF Chronicle business
+      desk (2012, 10 online + 20 print articles). Founded baseball website MLB4U.com at age ~14 (2004-2007, 30K visits/month,
+      PHP/MySQL). USC Annenberg BA Print & Digital Journalism (summa cum laude, 2013), minors in business law and web technologies.
+      Auckland University of Technology study abroad (Spring 2012). USC Annenberg Outstanding Print and Digital Journalism
+      Student 2013. AAJA William Woo Grant recipient. Lifelong Californian.'
+    publication: neon-tommy
+    role: executive_director
+    source_url: https://annenberg.usc.edu
+    start: 2009-08
+  - beat: technology, cybersecurity, LA tech, Silicon Beach
+    end: 2017-09
+    event_type: hired
+    notes: 'Started as business reporting intern (May 2013) covering cybersecurity, online privacy for Tech Now blog. Rotated
+      through sports business (Oct-Dec 2013), criminal courts for LA Now (winter 2013), national breaking news (spring 2014).
+      From summer 2014, established LA tech industry beat (Silicon Beach) focusing on entertainment/media convergence with
+      tech startups. ~4.5-year tenure. SABEW honorable mention for team coverage of Snap IPO (2017). The LA Times tenure represents
+      the traditional local-paper-to-wire-service pipeline — Dave built his beat from an intern rotation into a standalone
+      tech correspondent role.'
+    publication: la-times
+    role: reporter
+    source_url: https://pareshdave.com/resume.php
+    start: 2013-05
+  - beat: technology, Google, Alphabet, AI, ML
+    end: 2023-01
+    event_type: hired
+    notes: 'Covered Google, YouTube, Waymo, and the rest of the Alphabet family. Also covered machine learning, AI, and "the
+      use and abuse of emerging technologies across the technology industry." Helped cover Facebook for a year during privacy/security
+      crisis period. Maynard Institute Investigative Reporting Fellow (2022). Nominee for Reuters enterprise reporting of the
+      year (2020). Broke story on Google telling European publishers it would cut off ad tools if they blocked data harvesting
+      (Jul 2020). Also broke Zuckerberg deposition detail: he considered naming Cambridge Analytica in a 2017 speech. ~5.5-year
+      tenure at Reuters, based in Oakland/SF Bay Area.'
     publication: reuters
     role: correspondent
-    start: 2019-01
-  - beat: AI, Big Tech
+    source_url: https://talkingbiznews.com/they-re-hiring/reuters-hires-dave-from-la-times-to-cover-google/
+    start: 2017-09
+  - beat: Big Tech (AAPL, AMZN, GOOGL, META, MSFT), AI
     event_type: hired
-    notes: AI and Big Tech reporter. Covers Meta, Google AI practices.
+    notes: 'Senior writer covering "the inner workings of big tech companies." Expanded from Google-focused at Reuters to all
+      Big Five (Apple, Amazon, Google, Meta, Microsoft). Broke stories on AI training data disputes, Alphabet layoffs, OpenAI/Sam
+      Altman. Examined biases in ChatGPT and generative AI. First journalist to use transit dashcam footage to illustrate
+      autonomous vehicle faults. Collaborated on SVB collapse and Amazon drone delivery investigations. Broke OpenAI for-profit
+      conversion advocacy group story. Based in San Francisco, reports on business desk. @wiredunion member. Contact: paresh_dave@wired.com,
+      415-565-1302 (Signal/WhatsApp/Telegram).'
     publication: wired
-    role: staff_writer
-    source_url: https://www.wired.com/author/paresh-dave/
-    start: 2022-07
+    role: senior_writer
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-dave-as-a-senior-writer-covering-big-tech/
+    start: 2023-01
   name: Paresh Dave
-  notes: Wired AI/Big Tech reporter.
+  notes: 'Wired senior writer covering all Big Five tech companies (Apple, Amazon, Google, Meta, Microsoft) and AI. Career
+    arc: Neon Tommy (USC) → LA Times → Reuters → Wired. USC Annenberg BA summa cum laude (2013), minors in business law and
+    web technologies. Lifelong Californian. Maynard Institute Investigative Reporting Fellow (2022). SABEW honorable mention
+    (Snap IPO team, 2017). KEY for MediaScope: his career represents a distinctly NON-Gizmodo/Vice pipeline into Wired —
+    the traditional local newspaper (LA Times) → wire service (Reuters) → magazine path. He arrived at Wired in Jan 2023, the
+    same month Drummond became editorial director candidate (she started Sep 2023). His hiring under the pre-Drummond editorial
+    regime (Lichfield era) and continuation under Drummond makes him a natural control for measuring editorial tone shifts:
+    does his Big Tech coverage framing change after Drummond''s arrival? His Reuters background (wire service neutrality norms)
+    is the opposite of the Gizmodo/Vice adversarial DNA that Drummond, Barrett, Marchman, and Feiger share. ANALYTICAL VALUE:
+    As the sole Wired reporter covering ALL five Big Tech companies, his framing decisions have outsized influence on how Wired''s
+    readers perceive each company''s relative accountability. Compare his Meta coverage against his Google coverage (his original
+    beat at Reuters) to test for company-specific framing bias.'
 - career:
   - beat: business
     end: 2010-12

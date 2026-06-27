@@ -4,6 +4,99 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 06:00 PT — Hour Type B: Journalist Profile Expansion — Paresh Dave + Kate Conger
+
+**Focus:** Expanding the two thinnest journalist profiles in the database: Paresh Dave (was 2 entries, 27 char notes) and Kate Conger (was 3 entries, 42 char notes). Both are active reporters at tracked publications (Wired, NYT) with significant analytical value.
+
+### Paresh Dave (2 → 4 entries, 27 → 1392 char notes)
+
+**Career arc uncovered:** Neon Tommy (USC student journalism) → LA Times → Reuters → Wired
+
+- **Neon Tommy (2009-2013):** Executive Director of USC Annenberg's online news outlet, overseeing ~200 staff. Founded MLB4U.com baseball website at age ~14 (2004-2007, PHP/MySQL, 30K visits/month). USC Annenberg BA Print & Digital Journalism (summa cum laude, 2013), minors in business law and web technologies. Multiple awards: SPJ Region 11 Mark of Excellence, LA Press Club 1st and 2nd place, AAJA William Woo Grant. Also interned at Marketplace (American Public Media), Sacramento Bee Capitol Bureau (2011), and SF Chronicle (2012).
+- **LA Times (2013-2017):** Started as business intern covering cybersecurity. Rotated through sports business, criminal courts, national breaking news. Established Silicon Beach tech beat (summer 2014). SABEW honorable mention for Snap IPO team coverage (2017).
+- **Reuters (2017-2023):** Covered Google/Alphabet, YouTube, Waymo, ML/AI. Also covered Facebook during privacy crisis. Maynard Institute Investigative Reporting Fellow (2022). Nominee for Reuters enterprise reporting of the year (2020). Broke Google-European publisher data harvesting story. ~5.5-year tenure.
+- **Wired (Jan 2023-present):** Senior writer covering all Big Five (AAPL, AMZN, GOOGL, META, MSFT). Broke AI training data disputes, Alphabet layoffs, OpenAI/Altman, ChatGPT biases. First to use transit dashcam footage for AV faults. @wiredunion member.
+
+**Analytical value:** Paresh Dave represents the ONLY non-Gizmodo/Vice pipeline into Wired's current reporter corps — the traditional local newspaper → wire service → magazine path. He arrived in Jan 2023, nine months before Drummond became editorial director (Sep 2023). His Reuters background (wire service neutrality norms) makes him a natural control for measuring editorial tone shifts under Drummond. As the sole reporter covering ALL five Big Tech companies, his framing decisions have outsized influence.
+
+**Sources:** pareshdave.com/resume.php (self-published resume), TalkingBizNews (LA Times → Reuters hire, Reuters → Wired hire), Muck Rack (current beat/contact), USC Annenberg (Neon Tommy SPJ awards), The Org (Wired bio), Techmeme (article aggregation).
+
+### Kate Conger (3 → 4 entries, 42 → 916 char notes)
+
+**Career arc corrected:** SF Weekly → SF Examiner → Ratter (Gawker Media) → TechCrunch → Gizmodo → NYT
+
+**Critical corrections to old entry:**
+1. **Timeline was reversed** — old entry had Gizmodo (2016-2017) before TechCrunch (2017-2018). Actual order: TechCrunch (2016-2017) → Gizmodo (2017-2018)
+2. **NYT start date was wrong** — old entry said Oct 2018; actual start was Jul 2018 (NYTCo announcement: "She starts next week")
+3. **Missing early career** — SF Weekly, SF Examiner, and Ratter (Gawker Media local news sites) were not captured
+4. **Missing awards and key scoops** — 2019 Gerald Loeb Award finalist, first to publish Damore Google Memo, Project Maven scoop
+
+- **Early career (2014-2016):** SF Weekly, San Francisco Examiner, Ratter (Gawker Media local news venture — helped start three local news sites). Born April 1989 (Kate Adelia Conger).
+- **TechCrunch (2016-2017):** Tech policy and cybersecurity.
+- **Gizmodo (2017-2018):** First to publish James Damore's Google Memo (Aug 2017, subsequent lawsuit dismissed 2020). Broke employee activism at Google over Project Maven (Pentagon AI). Covered Uber, encryption, political data breaches.
+- **NYT (Jul 2018-present):** General assignment tech → Twitter/X and Elon Musk beat. Hired by Pui-Wing Tam and Ellen Pollock. Colleagues (Sheera Frenkel, Mike Isaac) call her "ferocious." 2019 Gerald Loeb Award finalist (with Wakabayashi and Benner, Andy Rubin $90M Google severance coverage). Co-authored "Character Limit: How Elon Musk Destroyed Twitter" with Ryan Mac (Penguin, Sep 2024).
+
+**Analytical value:** Kate Conger is a case study of the Gawker → NYT talent pipeline (Ratter → Gizmodo → NYT). Her Twitter/X beat makes her coverage directly comparable to Zoë Schiffer (who co-authored "Extremely Hardcore" at Platformer before joining Wired) — both wrote definitive Musk/Twitter books from different institutional homes.
+
+**Sources:** Wikipedia (Kate Conger), NYTCo announcement, TalkingBizNews (NYT hire), Penguin Random House (author bio), Penguin UK (author bio).
+
+### Stats After This Iteration
+- Total journalists: 101 (no new additions)
+- Multi-publication careers: 101 (Conger timeline correction revealed 4 distinct employers)
+- Kate Conger: 4 entries, 916 char notes (was 3 entries, 42 chars)
+- Paresh Dave: 4 entries, 1,392 char notes (was 2 entries, 27 chars)
+- Unique publications referenced: 173
+- Tests: 535 (all passing)
+
+---
+
+## 2026-06-27 05:00 PT — Hour Type A: Article Deep Dive — MIT TR Meta AI Hack Agent Security + Kicker Framing Fix
+
+**Focus:** Deep analysis of MIT Technology Review article "The Meta hack shows there's more to AI security than Mythos" (Jun 5, 2026). Article covers the Instagram account takeover exploit where attackers socially engineered Meta's AI customer support agent into changing email addresses on high-value accounts (including Obama White House).
+
+### Article Summary
+
+MIT Technology Review uses the hack as a springboard to examine broader AI agent security vulnerabilities. 4 academic experts (Neil Gong / Duke, Jessica Ji / Georgetown CSET, Somesh Jha / UW-Madison, Bo Li / UIUC) all criticize Meta's oversight. No defending voices. Meta's only contribution: "did not respond" + belated X post saying vulnerability was "resolved."
+
+### Toolkit Results
+
+- **Composite sentiment:** -0.43 (corrected from raw +0.65) — the largest framing correction in the sample corpus (1.09 points)
+- **Framing devices:** 13 total (post-fix): loaded_language ×7, rhetorical_question ×2, refusal_amplification ×1, isolation_framing ×1, emotional_appeal ×1, kicker_framing ×1
+- **Source authority:** 1.0 (maximum — all credentialed academics)
+- **Agency attribution:** -0.8 (Meta depicted as passive/failing)
+- **Outsourced intensity:** 0.0 ratio — editorial carries all emotional weight; expert quotes use understatement
+
+### Bug Found: Missing Kicker Pattern
+
+The article's kicker — Jha's "I think it's a very dangerous thing" — was not detected because "dangerous" was absent from `_KICKER_NEGATIVE_SIGNALS`.
+
+**Fix:** Added 10 new expert-warning terms to kicker patterns: "very/extremely/incredibly dangerous", "dangerous thing/path/precedent", "alarming", "reckless", "irresponsible", "wake-up call", "cautionary", "warning sign", "red flag".
+
+Previous patterns focused on institutional distress signals; expert-warning kickers are equally common in tech journalism.
+
+### Source Extraction Bugs Catalogued (4 issues, not fixed)
+
+1. "404 Media reported" → false positive name="Media" (publication name not blocklisted)
+2. "She notes" → false positive name="She" (pronoun, no anaphora resolution)
+3. Jessica Ji attributed Gong's quote via "agrees" verb (backward quote matching)
+4. No_comment name="did not respond to a request" instead of "Meta"
+
+### Notable Cross-Reference: Bo Li
+
+Bo Li is quoted in this Jun 5 article criticizing Meta's AI security. On Jun 25, Meta hired her as part of the Virtue AI acqui-hire (with Dawn Song and Sanmi Koyejo) to join FAIR for agentic AI safety. The article's critic became Meta's hire — validates the critique's seriousness.
+
+### Files Changed
+- `mediascope/analyze/framing.py` — expanded `_KICKER_NEGATIVE_SIGNALS` (10 new terms)
+- `examples/sample_output/mit_tr_meta_ai_hack_agent_security_2026_06_05_article.txt` — full article text
+- `examples/sample_output/mit_tr_meta_ai_hack_agent_security_2026_06_05_analysis.md` — full annotated analysis
+
+### Verification
+- 535 tests pass (no logic changes to code — only pattern expansion)
+- Commit: `403a657`
+- Pushed to GitHub
+
+---
+
 ## 2026-06-27 04:00 PT — Hour Type D: Documentation Consistency Audit — Framing Device Count Fix + AGENT_GUIDE Schema Expansion
 
 **Focus:** Cross-document consistency audit of all 6 documentation files, CLI help text, and code docstrings. Found and fixed a systematic undercounting of framing device types, and expanded the AGENT_GUIDE with missing function calling schemas.
