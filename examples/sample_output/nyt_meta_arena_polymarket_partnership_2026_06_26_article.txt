@@ -1,0 +1,69 @@
+NYT Article Reconstruction: Meta / Arena / Polymarket & Kalshi Partnerships
+Date: 2026-06-26
+Publication: The New York Times
+Probable author: Mike Isaac (NYT Meta beat reporter)
+URL: https://www.nytimes.com (exact URL unconfirmed; behind paywall)
+
+NOTE: Original NYT article is paywalled. This reconstruction is based on
+extensive quotation and cross-referencing across 4 secondary sources:
+Reuters (2 wire versions), Seoul Economic Daily, and TheStreet. All claims
+below are attributable to at least 2 independent secondary sources unless
+otherwise noted. This is a FOLLOW-UP to the June 23 NYT scoop about Arena.
+
+---
+
+RECONSTRUCTED CONTENT (composite from secondary sources):
+
+Meta CEO Mark Zuckerberg has urged his lieutenants to explore partnerships
+with the popular prediction markets Polymarket and Kalshi as his company
+builds a similar app, the New York Times reported on Friday, citing three
+employees with knowledge of the matter.
+
+The social media company's executives have said Arena, Meta's new prediction
+market app under development, will differ from Polymarket and Kalshi, which
+accept real-money wagers, because it will instead rely on video-game-like
+"points," the report said.
+
+Zuckerberg's target demographic for Arena is 18- to 34-year-olds and Meta
+is aiming to reach at least 100 million monthly active "predictors" for the
+app, according to the report.
+
+Arena is being tested internally and may not be released, the report said,
+adding that Meta plans to eventually integrate parts of Arena into Facebook
+and Messenger.
+
+The Times first reported on Tuesday that Zuckerberg recently dispatched a
+small team at his company to create a smartphone app similar to Polymarket
+and Kalshi.
+
+Prediction markets surged in popularity during the 2024 U.S. presidential
+election and have evolved into an asset class that lets investors wager on
+a variety of events, from monetary policy to sports tournaments. But they
+have also drawn increasing scrutiny as well-timed trades ahead of U.S.
+President Donald Trump's major policy surprises have potentially led to
+millions of dollars in profits for unknown traders.
+
+Meta and Kalshi did not immediately respond to requests for comment, while
+Polymarket declined to comment when contacted by Reuters. Reuters could not
+independently verify the report.
+
+---
+
+KEY NEW DETAILS vs June 23 original:
+1. Zuckerberg exploring PARTNERSHIPS with Polymarket and Kalshi (not just building competitor)
+2. Target demographic: 18-34 year-olds (new detail)
+3. Target: 100 million monthly active "predictors" (new detail, ambitious)
+4. Plans to integrate parts of Arena into Facebook and Messenger (new detail)
+5. Source count increased from "two employees" (Jun 23) to "three employees" (Jun 26)
+6. Meta and Kalshi both "did not immediately respond to requests for comment"
+7. Polymarket "declined to comment" (active refusal vs. silence)
+
+SECONDARY CONTEXT (from Seoul Economic Daily, TheStreet):
+- Kalshi's annualized revenue run rate just crossed $2 billion, backed by
+  $1B Series F round led by Coatue at $22B valuation, in early IPO talks
+- Polymarket recorded $26.2 billion in Q1 2026 trading volume, raising
+  capital at ~$15B valuation
+- Arena arrives same week as reports of "Meta Photos" app (AI-generated media)
+- Meta's core social metrics show DAP declining for first time QoQ (Q1 2026)
+- Meta previously attempted prediction market with "Forecast" app (2020-2022)
+- Zuckerberg's strategy: copy successful models, leverage 3.5B DAU distribution

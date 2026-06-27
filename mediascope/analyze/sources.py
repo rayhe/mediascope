@@ -599,9 +599,9 @@ def extract_sources(text: str) -> list[SourceMention]:
         # Variant of above that catches "with knowledge of" qualifier
         re.compile(
             r"(?<![,\d])\b(?:\d{1,3}|two|three|four|five|six|seven|eight|nine|ten|eleven|twelve|sixteen|twenty|dozen)"
-            r" (?:current\s+(?:and\s+)?(?:former\s+)?)?"
+            r"\s+(?:current\s+(?:and\s+)?(?:former\s+)?)?"
             r"(?:workers|employees|staffers|engineers|executives|officials|sources|people|persons?)"
-            r" with (?:direct\s+)?knowledge of\b",
+            r"\s+with\s+(?:direct\s+)?knowledge\s+of\b",
             re.IGNORECASE,
         ),
         # "one person/employee familiar with" — singular counted source with "familiar with" qualifier

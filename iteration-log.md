@@ -4,6 +4,38 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-26 17:00 PT — Hour Type A: Article Deep Dive
+
+**Article:** NYT follow-up (June 26, 2026) — "Zuckerberg asks Meta to explore working with Polymarket and Kalshi"
+
+Follow-up to the June 23 NYT Arena scoop already in the toolkit. Reconstructed from Reuters wire, Seoul Economic Daily, TheStreet, and Gizmodo secondary sources.
+
+### Analysis Produced
+- `examples/sample_output/nyt_meta_arena_polymarket_partnership_2026_06_26_article.txt`
+- `examples/sample_output/nyt_meta_arena_polymarket_partnership_2026_06_26_analysis.md`
+- Manual tone: -0.05 (near-neutral expansion scoop)
+- 6 framing devices identified
+- Cross-publication comparison: Gizmodo -0.35 (adversarial) vs Reuters +0.05 (neutral wire)
+
+### Toolkit Improvements
+
+1. **New entity cluster: Prediction Markets/Fintech** — Polymarket, Kalshi, Robinhood, Interactive Brokers, PredictIt, Metaculus, Manifold Markets, CFTC, Coatue, Tarun Chitra (31 clusters total)
+2. **Meta cluster alias expansion** — Added `Arena`, `Francis Brennan`, `Alexandr Wang` with appropriate regex (Arena uses lookahead `(?=\s+(?:app|prediction|market|is|was|would|will|being|the))` to avoid false positives)
+3. **Source extraction \s+ fix** — Anonymous source pattern `"[number] employees with knowledge of"` used literal spaces instead of `\s+`, missing line-wrapped text. Now detects 5 sources including "three employees with knowledge of"
+4. **Test count fix** — `test_pattern_based_device_count` expected 27 but registry had 28 (`guilt_by_association` added without test update). Updated to 28, added `outsourced_intensity` to expected types set
+
+### Files Changed
+- `mediascope/analyze/entities.py` — New Prediction Markets/Fintech cluster + Meta alias updates
+- `mediascope/analyze/sources.py` — `\s+` fix for anonymous source extraction
+- `tests/test_nyt_ai_reviews.py` — Count fix 27→28, added outsourced_intensity
+- `README.md` — New sample output table entry
+- `iteration-log.md` — This entry
+
+### Test Results
+All 518 tests pass.
+
+---
+
 ## 2026-06-26 13:00 PT — Hour Type D: Toolkit Quality & Documentation
 
 **Focus:** Comprehensive documentation consistency sweep — fixing stale counts, missing entries, and outdated references across all 6 doc files.
