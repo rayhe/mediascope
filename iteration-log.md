@@ -4964,3 +4964,46 @@ The toolkit detected loaded individual words ("atrocious," "gulag") but missed t
 All 616 tests pass (585 existing + 31 new, no regressions).
 
 ### Commit
+`d0cb040` → `3fea382`
+
+---
+
+## 2026-06-27 15:00 PT — Type A: Article Deep Dive (MIT TR Anthropic Feud)
+
+### Focus
+Deep dive on MIT Technology Review's "Three things to watch amid Anthropic's latest feud with the government" (The Algorithm newsletter, Jun 2026). Covers Anthropic Fable/Mythos models, US export controls, Amazon CEO Jassy flagging Fable as dangerous, and AI nonproliferation framing.
+
+### Problem
+Initial analysis detected only 2 framing devices. The article uses subtle framing through speculative questions, scare quotes, first-person hedges, and cross-domain analogies (nuclear/pharmaceutical nonproliferation applied to AI) — all patterns the toolkit underdetected.
+
+### Implementation
+
+**Entity improvements:**
+- Added `Fable` as Anthropic cluster alias (entity mentioned prominently but unrecognized)
+- New `Chinese AI` entity cluster: Zhipu, DeepSeek, Baidu, Qwen, Yi, 01.AI, SenseTime, iFlytek, Megvii, 4Paradigm, Moonshot AI, MiniMax, Zhipu AI
+
+**Framing pattern expansions (5 categories):**
+1. **rhetorical_question** — 3 new patterns: speculative questions ("is it possible...?", max 200 chars), cliffhanger questions ("What will X bring?"), capability-challenge questions ("Can X really...?")
+2. **ironic_quotation** — 3 scare-quote patterns: lowercase words in quotes, smart-quote equivalent, "broadly labeled" attribution
+3. **loaded_language** — 5 new terms: drastic(ally), superficial(ly), reckless(ly), egregious(ly), flagrant(ly)
+4. **speculative_framing** — question-form "is it possible" threshold pattern; first-person hedges ("I wouldn't write it off", "Playing this forward")
+5. **precedent_analogy** — cross-domain analogy pattern ("in the manner of" / "applying the concept of" + nuclear/pharmaceutical/military domain terms)
+
+### Results
+Article detection improved from 2 → 17 framing devices across 7 types. No new device *types* added (still 33 total), only expanded pattern coverage within existing types.
+
+### Files Changed
+- `mediascope/analyze/entities.py` — Fable alias + Chinese AI cluster
+- `mediascope/analyze/framing.py` — 5 pattern category expansions
+- `tests/test_mittr_anthropic_feud.py` — 25 new tests (all pass)
+- `examples/sample_output/mittr_anthropic_feud_jun2026.txt` — article text
+- `examples/sample_output/mittr_anthropic_feud_jun2026_annotation.md` — full annotation
+- `README.md` — test count 585→641, new test file entry
+
+### Test Results
+All 641 tests pass (616 existing + 25 new, no regressions).
+
+### Commit
+`3fea382`
+
+---
