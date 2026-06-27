@@ -1,0 +1,89 @@
+Gizmodo Article: "Betting on People's Worst Instincts Has Kind of Always Been Mark Zuckerberg's Thing"
+Date: 2026-06-24
+Publication: Gizmodo (G/O Media)
+Author: Not specified in byline (Gizmodo staff)
+URL: https://gizmodo.com/betting-on-peoples-worst-instincts-has-kind-of-always-been-mark-zuckerbergs-thing-2000622918
+
+---
+
+FULL TEXT:
+
+In an effort to get in on the massive amount of cash changing hands on
+Kalshi and Polymarket, Meta is allegedly working on a predictions market
+app, according to a report from the New York Times. The app, dubbed
+"Arena," would allow users across the company's network of social
+apps—including Facebook, Instagram, and WhatsApp—to place bets on
+anything and everything.
+
+It's another example of Mark Zuckerberg's company flipping to its
+favorite page in the playbook—but not the one you think. Arena is
+unmistakably another case of Meta copying a successful app and hoping its
+knockoff catches on—joining Lasso, Hobbi, Bulletin, and plenty of other
+forgotten clones. But more than that, it's Meta assuming the worst of
+people, which has been arguably its most profitable business proposition.
+
+You can track that back to the company's origins. While things may not
+have played out exactly as depicted in The Social Network, Zuckerberg's
+proto-Facebook started with a privacy violation that people ignored
+because they let their horniness get the best of them. The notorious
+Facemash used ID photos scraped from Harvard's student websites and
+fundamentally pitted people against each other, asking visitors to vote
+on who is the hottest. The site received criticism from the moment it
+became popular, but it did get very popular, racking up tens of thousands
+of engagements in a short period. To be clear, getting tens of thousands
+of engagements was like the Super Bowl of the internet in 2003.
+
+When Zuck did eventually start "The Facebook" proper, his opinion of
+people clearly hadn't changed. After launching the website on the
+Harvard campus and requiring people to provide a school email to get in,
+Zuck found himself sitting on a trove of personal information about the
+student body. In a now-notorious series of texts to a friend, Zuck said
+that he had "over 4,000 emails, pictures, addresses" of people from
+Harvard. When asked how he got that information, he replied, "I don't
+know…they 'trust me.' Dumb fucks." He'd soon expand to other colleges
+and eventually amass more than three billion active users on the
+platform today.
+
+As Facebook grew, Zuck continued to lean into the idea that he could
+maximize interest and profit by letting people lean into their worst
+impulses. Frances Haugen, a whistleblower who spent two years at
+Facebook, said the company juiced its algorithm to encourage engagement,
+knowing full well that negative interactions generate more attention.
+When the company expanded its reactions on posts, it implemented a
+weighting system to determine what content gets promoted, giving one
+"point" for a "like" and five points for an angry emoji.
+
+Meta has repeatedly leaned into engagement-first design at the expense of
+its users. Earlier this year, the company was found liable for damage
+done to minors who use platforms like Instagram after a court agreed with
+the argument that the apps are designed to be addictive. Zuckerberg has
+denied such accusations, but the company has undeniably researched how
+to keep people on its platforms for as long as possible—including
+running experiments on unwitting users to see how they respond to
+different inputs. Former Facebook employees have claimed the platform
+is built to provide a "dopamine hit" at the expense of their overall
+mental health.
+
+Given that, it's only right that Meta gets into the business of betting
+and gambling, the current plague that is destroying the futures of young
+people who mostly lose but find themselves addicted to the rush and
+increasingly desperate for ways to make money. After all, why should
+others get to cash in on addictions and destructive behaviors when
+that's been Meta's bread and butter since day one?
+
+---
+
+EMBEDDED LINKS (external references):
+1. NYT report on Meta Arena (source article)
+2. Lasso (Wikipedia — failed Meta TikTok clone)
+3. Hobbi (TechCrunch — failed Meta Pinterest clone)
+4. Bulletin (Wikipedia — failed Meta newsletter platform)
+5. Facemash (Harvard Crimson — original account)
+6. "Dumb fucks" texts (Yahoo — Zuckerberg texts)
+7. Engagement weighting system (Washington Post — reaction weights)
+8. Found liable (The Conversation — child harm verdict)
+9. Apps designed to be addictive (CNN — court ruling)
+10. Running experiments on unwitting users (NYT — 2014 mood manipulation)
+11. Dopamine hit (Guardian — former employee quote)
+12. Destroying the futures of young people (CNBC — gambling addiction)
+13. Find themselves addicted (CNN — gambling/prediction market addiction)

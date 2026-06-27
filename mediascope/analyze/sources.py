@@ -689,6 +689,76 @@ def extract_sources(text: str) -> list[SourceMention]:
                 source_type="no_comment",
             ))
 
+    # Pattern 7: Group expert sources — named collective groups whose
+    # individual members are not named but whose professional identity
+    # gives them expert authority.  Examples:
+    # - "cybersecurity experts have said as much in an open letter"
+    # - "leading AI researchers argued in a joint statement"
+    # - "top economists wrote in a letter to Congress"
+    # These are NOT anonymous (the group identity is public and carries
+    # authority) and NOT individual named sources.  source_type="group_expert".
+    _EXPERT_GROUP_NOUNS = (
+        r"(?:cybersecurity|security|AI|machine[ -]learning|climate|privacy|"
+        r"nuclear|bioethics?|public[ -]health|economics?|legal|policy|"
+        r"national[ -]security|computer[ -]science|data[ -]science|"
+        r"technology|human[ -]rights|civil[ -](?:rights|liberties))"
+        r"\s+"
+        r"(?:experts?|researchers?|scientists?|scholars?|analysts?|"
+        r"specialists?|professionals?|academics?|authorities|fellows?|"
+        r"advisers?|advisors?)"
+    )
+    group_expert_patterns: list[re.Pattern] = [
+        # "[adjective] [domain] experts have said/argued/warned/wrote"
+        re.compile(
+            rf"\b(?:leading|top|prominent|senior|independent|renowned|noted|respected|"
+            rf"former|veteran)?\s*{_EXPERT_GROUP_NOUNS}"
+            rf"\s+(?:have\s+)?(?:{verb_alternation})"
+            rf"(?:\s+(?:as much|similarly|likewise|that|in))?\b",
+            re.IGNORECASE,
+        ),
+        # "[domain] experts ... in an open letter / joint statement / letter to"
+        re.compile(
+            rf"\b(?:leading|top|prominent|senior|independent|renowned|noted|respected|"
+            rf"former|veteran)?\s*{_EXPERT_GROUP_NOUNS}"
+            rf"[^.{{0,80}}]"
+            rf"(?:in (?:a|an|the|their)\s+"
+            rf"(?:open\s+letter|joint\s+statement|letter\s+to|petition|report|"
+            rf"white\s+paper|brief|amicus\s+brief|public\s+letter|"
+            rf"signed\s+letter|statement|declaration|communiqu[eé]))\b",
+            re.IGNORECASE,
+        ),
+        # "an open letter signed by [N] [domain] experts/researchers"
+        re.compile(
+            r"\b(?:an?\s+)?(?:open\s+letter|joint\s+statement|petition|letter)"
+            r"\s+(?:signed\s+)?by\s+"
+            r"(?:\d+|many|several|dozens?\s+of|hundreds?\s+of|a\s+group\s+of)?\s*"
+            rf"(?:leading|top|prominent|senior)?\s*{_EXPERT_GROUP_NOUNS}\b",
+            re.IGNORECASE,
+        ),
+    ]
+
+    for pat in group_expert_patterns:
+        for m in pat.finditer(text):
+            descriptor = m.group().strip()
+            # Deduplicate
+            if descriptor.lower() in {n.lower() for n in seen_names}:
+                continue
+            seen_names.add(descriptor)
+
+            ctx_start = max(0, m.start() - 100)
+            ctx_end = min(len(text), m.end() + 200)
+            context = text[ctx_start:ctx_end]
+
+            sources.append(SourceMention(
+                name=descriptor,
+                is_anonymous=False,
+                is_expert=True,
+                affiliation="",
+                quote=_extract_nearby_quote(text, m.start(), m.end()),
+                attribution_verb=_find_attribution_verb(context),
+                source_type="group_expert",
+            ))
+
     # Pattern 6: Organizational sources — "Meta said", "Google confirmed",
     # "the company said in a statement", "a spokesperson told Reuters"
     # These are named non-anonymous sources where the speaker is an entity

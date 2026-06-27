@@ -4,6 +4,82 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 16:00 PT — Hour Type A: Article Deep Dive — MIT TR "Three things to watch amid Anthropic's latest feud with the government" (cont.)
+
+**Article:** MIT Technology Review, "The Algorithm" newsletter — "Three things to watch amid Anthropic's latest feud with the government" (late June 2026).
+**Focus:** Two critical toolkit gaps identified in 15:00 manual-vs-toolkit comparison: topic misclassification and missing group expert source detection.
+
+### 1. New Topic Bucket: `government_oversight` (35+ keywords)
+
+**Problem:** The MIT TR article — fundamentally about government intervention in AI via export controls and national security designations — was misclassified with `product_launch` (0.22) as the top topic because keywords like "introduced", "released", and "release" triggered that bucket. No `government_oversight` or `national_security` topic existed.
+
+**Fix:** Added `government_oversight` to `TOPIC_KEYWORDS` in `mediascope/analyze/topics.py` with 35+ keywords spanning:
+- National security: "national security", "threat to national security", "risk to national security"
+- Export controls: "export control", "export controls", "nonproliferation", "non-proliferation", "sanctions", "embargo", "arms control"
+- Government action: "government intervention", "government ban", "government crackdown", "government scrutiny", "regulatory crackdown"
+- Federal regulation: "federal regulation", "federal legislation", "executive order", "bipartisan bill", "congressional hearing"
+- Military/defense: "military AI", "defense AI", "defense department", "pentagon"
+- AI governance: "AI regulation", "AI governance", "AI safety regulation"
+- Actors: "government officials", "lawmakers", "policymakers"
+
+**Result:** Article now correctly classifies as `government_oversight` (confidence 0.54, 11 keyword matches) beating `product_launch` (0.22).
+
+### 2. New Source Type: `group_expert` (Pattern 7)
+
+**Problem:** "Leading cybersecurity experts have said as much in an open letter to the government" was not detected by any source extraction pattern. The toolkit found only 2 sources (Bruno Retailleau, Zhipu) vs. the manually identified 3. Existing patterns only handle: individual named sources (Patterns 1-3b, 5, 5b), anonymous sources (Pattern 4), and organizational sources (Pattern 6). Named professional collectives — where the group identity is public and carries expert authority but individual members aren't listed — had no pattern.
+
+**Fix:** Added Pattern 7 (`group_expert`) to `mediascope/analyze/sources.py` with three sub-patterns:
+1. `[adjective] [domain] experts have [verb]` — catches "leading cybersecurity experts have said", "top AI researchers warned"
+2. `[domain] experts ... in an open letter/joint statement/petition` — catches group statements and open letters
+3. `a petition signed by [N] [domain] experts` — catches petitions and signed letters
+
+Domain coverage: cybersecurity, security, AI, machine learning, climate, privacy, nuclear, bioethics, public health, economics, legal, policy, national security, computer science, data science, technology, human rights, civil rights/liberties.
+
+Expert noun coverage: experts, researchers, scientists, scholars, analysts, specialists, professionals, academics, authorities, fellows, advisers.
+
+`source_type="group_expert"`, `is_anonymous=False`, `is_expert=True` — correctly distinguishing from anonymous sources.
+
+**Result:** Article now detects 3 sources (Retailleau, Zhipu, cybersecurity experts collective).
+
+### 3. Regression Tests (15 new, `test_government_oversight_topic.py`)
+
+**TestGovernmentOversightTopicDetection (7 tests):**
+- Topic keywords registered in TOPIC_KEYWORDS
+- National security article → government_oversight (top ranked)
+- Export controls article → government_oversight
+- AI regulation article → government_oversight
+- Military AI article → government_oversight
+- government_oversight beats product_launch on regulation-context articles
+- MIT TR Anthropic feud article → government_oversight (top ranked)
+
+**TestGroupExpertSourceDetection (8 tests):**
+- Cybersecurity experts open letter → group_expert
+- AI researchers joint statement → group_expert
+- Security experts warned → group_expert (is_expert=True)
+- Economists letter to Congress → group_expert
+- Group expert sources NOT classified as anonymous
+- Petition by experts → group_expert
+- Privacy experts argued → group_expert
+- National security analysts → group_expert (is_expert=True)
+
+### 4. Updated Annotation
+
+Updated `mittr_anthropic_feud_jun2026_annotation.md` with "Gaps Fixed by 16:00 PT Iteration" section documenting both fixes with before/after results.
+
+### 5. Updated Existing Tests
+
+Updated `test_topics.py::TestEdgeCases::test_all_topic_keywords_exist` to include `government_oversight` and `ai_generated_content` in expected topic list.
+
+### Test Count
+
+656 passing (641 → 656, +15 from `test_government_oversight_topic.py`). 26 test files.
+
+### Commit
+
+`git commit -m "Add government_oversight topic + group_expert source detection (Type A MIT TR Anthropic, 16:00)"`
+
+---
+
 ## 2026-06-27 12:00 PT — Hour Type D: Toolkit Quality & Documentation — __main__.py, Doc/Code Count Sync, Structural Consistency Tests
 
 **Focus:** Six classes of documentation/code consistency issues identified and fixed. Added `__main__.py` for CLI usability, corrected stale data references propagated from earlier ownership research, and created 13 structural tests to guard against future doc/code drift.

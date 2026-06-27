@@ -359,7 +359,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **641 tests** across 25 test files, each covering a different analytical capability:
+MediaScope has **656 tests** across 26 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -373,7 +373,7 @@ MediaScope has **641 tests** across 25 test files, each covering a different ana
 | `test_platform_death.py` | 30 | Platform eulogy detection, melancholic vs hostile tone distinction, community source framing |
 | `test_quality_standards.py` | 41 | Quality enforcement: banned AI-slop phrase detection (25 phrases, case-sensitive/insensitive), em dash limit enforcement, counterargument/limitations/methodology signal detection, score calculation, pass/fail logic |
 | `test_citations.py` | 39 | Citation extraction: URL detection, source grading (primary/secondary/tertiary domain lists), domain extraction, attribution patterns ("according to"), formal citations ([1], (Author 2024)), deduplication, citation report statistics |
-| `test_topics.py` | 28 | Topic classification: all 12 standardized topic buckets, confidence scoring (keyword coverage + density), top-N filtering, custom topic injection, multi-topic articles, edge cases |
+| `test_topics.py` | 28 | Topic classification: all 13 standardized topic buckets, confidence scoring (keyword coverage + density), top-N filtering, custom topic injection, multi-topic articles, edge cases |
 | `test_claims.py` | 28 | Claim-evidence mapping: statistic detection (percentages, dollar amounts, multipliers), quote detection, citation signal detection, assertion detection, source attribution, claim mapping, unsupported claims ratio, confidence scoring |
 | `test_atlantic_analysis.py` | 31 | Atlantic-specific coverage analysis: Emerson Collective ownership conflicts, Apple/OpenAI financial interest detection, AI coverage framing patterns, data center environmental articles |
 | `test_loaded_language_uproar.py` | 13 | Loaded language detection edge cases: workplace coercion terms, revolt vocabulary, "uproar" word variants, false-positive exclusion for neutral contexts |
@@ -387,6 +387,7 @@ MediaScope has **641 tests** across 25 test files, each covering a different ana
 | `test_jun27_regression.py` | 9 | Jun 27 regression tests: topic "fine" ambiguity (fine-tuned ≠ litigation), source extraction stop words ("Any"/"All" not person names), fined still matches litigation |
 | `test_structural_consistency.py` | 13 | Structural consistency guards: framing device type count (33 total = 30 pattern + 3 structural), `precedent_analogy` exists, `__main__.py` entry point works, doc counts match across METHODOLOGY.md/ARCHITECTURE.md/AGENT_GUIDE.md/CLI/README (framing types, banned phrases, Advance/Reddit voting power) |
 | `test_mittr_anthropic_feud.py` | 25 | MIT TR "Three things to watch amid Anthropic's feud" article deep dive: entity detection (Fable, Mythos, Zhipu, Chinese AI cluster), scare quotes (doomers, exporting, wake-up call), speculative rhetorical questions (is it possible...?), cliffhanger questions (What will X bring?), loaded language (drastic, superficial), cross-domain precedent analogy (nuclear nonproliferation), speculative framing threshold, sovereignty framing, pattern unit tests |
+| `test_government_oversight_topic.py` | 15 | government_oversight topic bucket (national security, export controls, AI regulation, military AI, beats product_launch on regulation articles, MIT TR Anthropic feud article), group_expert source detection (cybersecurity experts open letter, AI researchers joint statement, petition signed by experts, not anonymous) |
 
 ```bash
 # Run all tests

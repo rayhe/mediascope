@@ -316,7 +316,8 @@ class TestEdgeCases:
             "layoffs", "ai_development", "privacy_data",
             "antitrust_regulation", "child_safety", "content_moderation",
             "financial_results", "product_launch", "executive_behavior",
-            "litigation", "workplace_culture",
+            "litigation", "workplace_culture", "government_oversight",
+            "ai_generated_content",
         ]
         for topic in expected_topics:
             assert topic in TOPIC_KEYWORDS
