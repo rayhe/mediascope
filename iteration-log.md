@@ -4,6 +4,69 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-26 21:00 PT — Hour Type D: Toolkit Quality & Documentation
+
+**Focus:** Cross-document consistency audit, CLI help text alignment with actual implementation, stale number fixes, missing sample output gallery entry.
+
+### Issues Found & Fixed
+
+**1. Stale test count in ARCHITECTURE.md**
+- Was: "495 tests (all from real articles)"
+- Actual: 518 tests across 20 test files (verified via `pytest --co`)
+- Fixed to: "518 tests across 20 test files (all from real articles)"
+
+**2. Stale publication count in README.md and EDITORIAL_HISTORIES.md**
+- Was: "130+ publications"
+- Actual: 158 unique publications referenced in `profiles/careers/journalists.yaml` (verified via YAML parse + set count)
+- Fixed to: "155+ publications"
+
+**3. Stale multi-publication career count in EDITORIAL_HISTORIES.md**
+- Was: "96 having multi-publication careers suitable for migration analysis"
+- Actual: 94 journalists with ≥2 distinct publications (verified via YAML parse)
+- Fixed to: "94 having multi-publication careers"
+
+**4. Missing sample output entry in README.md**
+- `mit_tr_ai_memory_privacy_frontier_2026_01_*` (article + analysis) existed on disk but was never added to the sample output gallery table
+- Added with description: CDT policy op-ed, industry-wide critique, tests toolkit on policy/prescriptive genre
+
+**5. CLI `analyze` help text outdated (mediascope/cli.py)**
+- Was: "Narrative framing classification (threat / neutral / positive)" — a 3-class categorization that hasn't existed since the framing device taxonomy was built
+- Fixed to: accurate description of actual capabilities (30 framing device types, 8-dimension sentiment, source stance analysis, outsourced intensity, framing-aware correction)
+
+**6. CLI `score` help text described phantom statistical tests (mediascope/cli.py)**
+- Was: "Sentiment differential (Mann-Whitney U)", "Framing distribution (chi-squared)", "Source quality comparison (Kruskal-Wallis)", "Headline sensationalism index", "Coverage volume normalisation (articles per market-cap-dollar)"
+- None of these exist in the codebase. Actual tests in `mediascope/score/asymmetry.py` and `statistical.py`: Welch's t-test, Cohen's d, Bootstrap CI
+- Fixed to match actual implementation
+
+**7. CLI `score` output label mismatched METHODOLOGY.md terminology**
+- Was: "Asymmetric Coverage Index (ACI)" — a term that appears nowhere in the methodology docs
+- METHODOLOGY.md uses: "Asymmetry Score (AS)"
+- Fixed display label to "Asymmetry Score (AS)" and added fallback key lookup for both `aci` and `asymmetry_score`
+
+### Verification
+- Verified all numbers against actual data files (YAML parse, pytest --co, file listings)
+- All 518 tests pass after changes (no regressions — changes are documentation/strings only)
+- CLI help text verified via `--help` output
+
+### Files Changed
+- `docs/ARCHITECTURE.md` — test count fix
+- `README.md` — publication count fix, missing sample output entry
+- `docs/EDITORIAL_HISTORIES.md` — publication count and multi-pub career count fixes
+- `mediascope/cli.py` — analyze help text, score help text, score output label
+
+### Commit
+- Hash: 078f9c8
+- Pushed to GitHub
+
+### Observations
+1. **Documentation drift is cumulative.** Each iteration that adds tests or journalists without updating all cross-references compounds the inconsistency. The test count drifted from 495 to 518 (23 tests added across ~6 iterations) without any doc update. Future iterations should grep for stale numbers when adding tests or data.
+
+2. **CLI help text was from an early prototype.** The `analyze` and `score` commands were written before the framing device taxonomy, source stance analysis, and framing-aware correction pipeline existed. The CLI descriptions described a *planned* system ("Mann-Whitney U", "chi-squared", "Headline sensationalism index") that was never built — the actual implementation took a different statistical path (Welch's t, Cohen's d, bootstrap CI). This is a common pattern in evolving codebases: help text is written speculatively and never updated when implementation diverges.
+
+3. **The "ACI" vs "AS" naming gap** suggests the toolkit's public-facing terminology was never formalized. METHODOLOGY.md uses "Asymmetry Score (AS)" consistently, but the CLI used "Asymmetric Coverage Index (ACI)" — likely from a different design iteration. Now aligned.
+
+---
+
 ## 2026-06-26 20:00 PT — Hour Type C: Ownership & Funding Deep Dive
 
 **Focus:** Wired/Condé Nast/Advance Publications — Advance's collateralized Reddit lending (NEW severity-5 finding), Reddit governance deep dive from 2025 proxy, Condé Nast commercial pivot away from advertising, Reddit valuation and financials update.
