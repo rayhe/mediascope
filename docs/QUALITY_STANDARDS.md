@@ -33,14 +33,25 @@ All factual claims must cite a source. Sources are graded by reliability:
 
 ### Banned Phrases
 
-The following phrases are markers of AI-generated filler content and must not appear in MediaScope output:
+The following 25 phrases are markers of AI-generated filler content and must not appear in MediaScope output. Organized by category:
 
+**Filler nouns and verbs** (case-insensitive):
 ```
-delve, tapestry, landscape, Moreover, Furthermore, In conclusion,
-It's worth noting, It bears mentioning, game-changer, paradigm shift,
-synergy, leverage (as verb), ecosystem (metaphorical), deep dive,
-unpack (metaphorical), robust, holistic, at the end of the day,
-moving forward, circle back, in today's digital age, it is important to note,
+delve, tapestry, landscape, game-changer, paradigm shift, synergy,
+leverage (as verb), ecosystem (metaphorical), deep dive,
+unpack (metaphorical), robust, holistic
+```
+
+**Sentence-starter throat-clearing** (case-sensitive — only the capitalized form is banned):
+```
+Moreover, Furthermore, In conclusion,
+It's worth noting, It bears mentioning
+```
+
+**Cliché connective phrases** (case-insensitive):
+```
+at the end of the day, moving forward, circle back,
+in today's digital age, it is important to note,
 needless to say, it goes without saying, without further ado
 ```
 

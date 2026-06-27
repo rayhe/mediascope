@@ -122,6 +122,56 @@ class TestBannedPhrases:
         phrase_issues = [i for i in report.issues if i.category == "banned_phrase"]
         assert any(i.line_number == 2 for i in phrase_issues)
 
+    def test_detects_in_todays_digital_age(self):
+        """'in today's digital age' is a classic AI throat-clearing phrase."""
+        text = (
+            "In today's digital age, media bias is pervasive. "
+            "However, critics argue measurement is imprecise. "
+            "Limitations include small samples. Our methodology is VADER."
+        )
+        report = check_quality(text)
+        assert "in today's digital age" in report.banned_phrases_found
+
+    def test_detects_it_is_important_to_note(self):
+        text = (
+            "It is important to note that the data has gaps. "
+            "However, the trend is clear. "
+            "Limitations exist. We measured carefully."
+        )
+        report = check_quality(text)
+        assert "it is important to note" in report.banned_phrases_found
+
+    def test_detects_needless_to_say(self):
+        text = (
+            "Needless to say, the coverage was overwhelmingly negative. "
+            "However, alternative interpretations exist. "
+            "There are limitations. Statistical tests were used."
+        )
+        report = check_quality(text)
+        assert "needless to say" in report.banned_phrases_found
+
+    def test_detects_it_goes_without_saying(self):
+        text = (
+            "It goes without saying that editorial independence matters. "
+            "However, financial incentives complicate this. "
+            "Limitation: we cannot prove intent. Methodology: DiD."
+        )
+        report = check_quality(text)
+        assert "it goes without saying" in report.banned_phrases_found
+
+    def test_detects_without_further_ado(self):
+        text = (
+            "Without further ado, here are the results. "
+            "However, counterarguments apply. "
+            "Limitations: sample size. We analyzed 50 articles."
+        )
+        report = check_quality(text)
+        assert "without further ado" in report.banned_phrases_found
+
+    def test_total_banned_phrase_count(self):
+        """BANNED_PHRASES list should contain exactly 25 phrases."""
+        assert len(BANNED_PHRASES) == 25
+
 
 # ── Em dash enforcement ──────────────────────────────────────────────
 

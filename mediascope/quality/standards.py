@@ -13,14 +13,10 @@ from typing import Optional
 
 
 BANNED_PHRASES: list[str] = [
+    # Filler verbs and nouns
     "delve",
     "tapestry",
     "landscape",
-    "Moreover,",
-    "Furthermore,",
-    "In conclusion,",
-    "It's worth noting",
-    "It bears mentioning",
     "game-changer",
     "paradigm shift",
     "synergy",
@@ -30,9 +26,21 @@ BANNED_PHRASES: list[str] = [
     "unpack",
     "robust",
     "holistic",
+    # Sentence-starter throat-clearing (case-sensitive — uppercase forms only)
+    "Moreover,",
+    "Furthermore,",
+    "In conclusion,",
+    "It's worth noting",
+    "It bears mentioning",
+    # Cliché connective phrases
     "at the end of the day",
     "moving forward",
     "circle back",
+    "in today's digital age",
+    "it is important to note",
+    "needless to say",
+    "it goes without saying",
+    "without further ado",
 ]
 
 EM_DASH_LIMIT: int = 3
