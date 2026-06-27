@@ -336,6 +336,30 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|event contracts|prediction market"
                  r"|Coatue|Tarun Chitra)(?!\w)",
     },
+    "Insurance/Litigation Finance": {
+        "aliases": [
+            "The Hartford", "Hartford", "Chubb", "ACE American",
+            "Flashlight Capital", "Innsworth Capital", "Burford Capital",
+            "Marsh", "AIG", "Zurich Insurance", "Lloyd's",
+            "Reed Smith", "Calfee Halter",
+        ],
+        "regex": r"(?<!\w)(The Hartford|Hartford Insurance|Chubb"
+                 r"|ACE American|Flashlight Capital|Innsworth Capital"
+                 r"|Burford Capital|Reed Smith|Calfee,?\s*Halter"
+                 r"|litigation fund(?:ing|er)|third.?party fund(?:ing|er))(?!\w)",
+    },
+    "Legal/Judicial": {
+        "aliases": [
+            "Delaware Superior Court", "Delaware Supreme Court",
+            "Section 230", "Communications Decency Act",
+            "Digital Services Act", "DSA",
+        ],
+        "regex": r"(?<!\w)(Delaware (?:Superior|Supreme) Court"
+                 r"|Section 230|Communications Decency Act"
+                 r"|Digital Services Act|(?-i:DSA)"
+                 r"|(?-i:MDL)\s*\d+"
+                 r"|bellwether (?:trial|verdict|case))(?!\w)",
+    },
 }
 
 

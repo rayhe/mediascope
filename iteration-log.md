@@ -4678,3 +4678,50 @@ All 518 tests pass (no regressions — data-only changes).
 - Hash: 2a9212f
 - Pushed to GitHub
 
+
+## Iteration: 2026-06-27 08:00 PT — Type A: Article Deep Dive
+
+**Focus:** Reuters "In Meta's social media litigation, who pays the lawyers?" (Jun 23, 2026) — insurance companies refusing to cover Meta's defense in 3,300+ child addiction lawsuits
+
+### Article Summary
+Alison Frankel's legal analysis column examines a parallel battle to Meta's social media addiction litigation: whether 20+ insurers led by The Hartford and Chubb must cover Meta's defense costs. Delaware Superior Court ruled they don't (deliberate conduct ≠ accident), now on appeal to Delaware Supreme Court. Article draws explicit opioid-era precedent analogy and quantifies Meta's legal exposure ($6M bellwether verdict, 3,300 CA state + 2,400 federal MDL lawsuits).
+
+### Toolkit Gaps Found & Fixed
+
+**A. New entity clusters (entities.py)**
+1. **Insurance/Litigation Finance:** The Hartford, Chubb, ACE American, Flashlight Capital, Innsworth Capital, Burford Capital, Reed Smith, Calfee Halter, plus "litigation funder/funding" and "third-party funder/funding" generic patterns
+2. **Legal/Judicial:** Delaware Superior/Supreme Court, Section 230, Communications Decency Act, Digital Services Act, DSA, MDL numbers, bellwether trial/verdict/case
+
+**Impact:** Article had 14 undetected entity mentions (7 insurance + 7 legal) — now all correctly clustered.
+
+**B. New framing device: `precedent_analogy` (framing.py)**
+- Detects explicit comparison of current controversy to well-known historical case
+- 5 regex patterns: era-based precedent, "much like / akin to" comparisons, "following the playbook from", "as was the case with", noun-subject echoes/mirrors/parallels
+- Threshold: 1 (fires on single occurrence, unlike analogy_stacking's 3+)
+- Rationale: Single strong precedent analogies import settled moral weight — the opioid comparison makes readers evaluate Meta through the lens of opioid villains without argument
+- Source pattern: "echoes opioid-era coverage fights involving drugmakers and pharmacies"
+
+**C. Expanded `scale_magnitude` patterns (framing.py)**
+- "hundreds/tens/dozens of millions/billions" — vague large-scale amounts (previously undetected)
+- "more than N [institutional entities]" — insurers, companies, corporations, firms, agencies, banks, investors, institutions, organizations (previously only caught victim/case rosters)
+
+**D. Fixed analogy marker regex (framing.py)**
+- "echoes" no longer requires "of" — `echoes? of` → `echoes?(?: of)?`
+- Added "harks back to / mirrors / parallels / recalls / conjures" to marker patterns
+
+**Detection improvement:** Before: 8 framing devices, 3 entity clusters. After: 12 framing devices, 5 entity clusters.
+
+### Files Changed
+- `mediascope/analyze/framing.py` — precedent_analogy device, scale_magnitude expansion, analogy marker fix
+- `mediascope/analyze/entities.py` — Insurance/Litigation Finance and Legal/Judicial clusters
+- `docs/METHODOLOGY.md` — 31→32 device types, precedent_analogy in Extended Devices table
+- `docs/AGENT_GUIDE.md` — 31→32 device types, 18→19 extended devices
+- `tests/test_nyt_ai_reviews.py` — 28→29 pattern count, precedent_analogy in expected set
+- `tests/test_precedent_analogy.py` — 22 new tests (6 precedent_analogy, 5 insurance entities, 4 legal entities, 4 scale_magnitude expansions, 2 analogy marker fixes, 1 false-positive check)
+- `examples/sample_output/reuters_meta_insurance_defense_2026_06_23_article.txt` — reconstructed article
+- `examples/sample_output/reuters_meta_insurance_defense_2026_06_23_analysis.md` — full analysis
+
+### Test Results
+All 563 tests pass (541 existing + 22 new, no regressions).
+
+### Commit

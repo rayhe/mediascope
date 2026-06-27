@@ -1173,9 +1173,14 @@ _ANALOGY_MARKER_PATTERNS: list[re.Pattern] = [
         r"\bthink of (?:it|this|them|that|\w+) as\b.{3,60}",
         re.IGNORECASE,
     ),
-    # "reminiscent of" / "evokes" / "echoes of"
+    # "reminiscent of" / "evokes" / "echoes of" / "echoes [noun]"
     re.compile(
-        r"\b(?:reminiscent of|evokes?|echoes? of)\b.{3,60}",
+        r"\b(?:reminiscent of|evokes?|echoes?(?: of)?)\b.{3,60}",
+        re.IGNORECASE,
+    ),
+    # "harks back to" / "hark back to" / "mirrors" / "parallels"
+    re.compile(
+        r"\b(?:harks? back to|mirrors?|parallels?|recalls?|conjures?)\b.{3,60}",
         re.IGNORECASE,
     ),
 ]
@@ -1590,6 +1595,56 @@ _DEVICE_PATTERNS["sovereignty_framing"] = _SOVEREIGNTY_FRAMING_PATTERNS
 
 
 # ---------------------------------------------------------------------------
+# Precedent analogy: editorial device where a current controversy is framed
+# through explicit comparison to a prior, well-known case — often one with
+# settled public opinion (opioid crisis, tobacco litigation, Enron).  Unlike
+# analogy_stacking (which requires 3+ stacked analogies), a single strong
+# precedent analogy is itself a framing device: it imports the moral weight
+# of the precedent onto the current story without the reader needing to
+# evaluate the current facts independently.
+#
+# Identified in Reuters "who pays the lawyers" (Jun 23, 2026):
+#   "echoes opioid-era coverage fights" — imports the settled villainy of
+#   opioid manufacturers onto Meta's insurance dispute.
+# ---------------------------------------------------------------------------
+_PRECEDENT_ANALOGY_PATTERNS: list[re.Pattern] = [
+    # "echoes [adj]-era [noun]" — era-based precedent
+    re.compile(
+        r"\b(?:echoes?|recalls?|mirrors?|parallels?|evokes?|conjures?|reprises?)\s+"
+        r"(?:the\s+)?(?:\w+[- ])?(?:era|age|epoch|period|wave|cycle)\b.{3,80}",
+        re.IGNORECASE,
+    ),
+    # "much like / just as / similar to [known precedent]"
+    re.compile(
+        r"\b(?:much like|just as|similar to|akin to|not unlike|in a reprise of)\s+"
+        r"(?:the\s+)?(?:\w+\s+){1,4}"
+        r"(?:litigation|lawsuits?|cases?|crisis|scandal|battle|fight|dispute|prosecution)",
+        re.IGNORECASE,
+    ),
+    # "following [the/a] playbook from / borrowed from"
+    re.compile(
+        r"\b(?:following|borrowing|taking)\s+(?:the\s+|a\s+)?"
+        r"(?:playbook|template|script|blueprint|approach|strategy)\s+"
+        r"(?:from|of|used in)\b.{3,80}",
+        re.IGNORECASE,
+    ),
+    # "as was the case with/in [precedent]"
+    re.compile(
+        r"\bas (?:was|is) the case (?:with|in)\b.{3,80}",
+        re.IGNORECASE,
+    ),
+    # "[noun] dispute/battle/fight echoes / is reminiscent of"
+    re.compile(
+        r"\b(?:dispute|battle|fight|clash|struggle|confrontation|reckoning)\s+"
+        r"(?:echoes?|is reminiscent of|recalls?|mirrors?|parallels?|evokes?)\b.{3,80}",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["precedent_analogy"] = _PRECEDENT_ANALOGY_PATTERNS
+
+
+# ---------------------------------------------------------------------------
 # Scale/magnitude framing: editorial device that deploys large raw numbers,
 # calculated maximums, or scale analogies to create impressions of excess,
 # danger, or harm.  Individual numbers are facts; the framing occurs when
@@ -1682,6 +1737,22 @@ _SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
         r"(?:triple|double|quadruple|grow\s+(?:\d+[xX]|\d+.?fold))\s+"
         r"(?:by\s+\d{4}\s*,?\s*)?(?:to\s+)?"
         r"\$?\d[\d,.]*\s*(?:billion|million|trillion|[BMT])\b",
+        re.IGNORECASE,
+    ),
+    # Vague large-scale amounts: "hundreds of millions", "tens of billions"
+    re.compile(
+        r"\b(?:hundreds|tens|dozens)\s+of\s+"
+        r"(?:billions?|millions?|thousands?)\s+"
+        r"(?:of\s+)?(?:dollars?|euros?|pounds?|yen)?",
+        re.IGNORECASE,
+    ),
+    # "more than N [institutional entities]" — not victims/plaintiffs but
+    # institutional actors (insurers, companies, agencies, firms)
+    re.compile(
+        r"\b(?:more than|over|nearly|at least)\s+"
+        r"[\d,]+\s+"
+        r"(?:insurers?|companies|corporations?|firms?|agencies|banks?|"
+        r"underwriters?|carriers?|investors?|institutions?|organizations?)",
         re.IGNORECASE,
     ),
 ]

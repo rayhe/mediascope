@@ -1,0 +1,47 @@
+SOURCE: Reuters
+TITLE: In Meta's social media litigation, who pays the lawyers?
+AUTHOR: Alison Frankel
+DATE: June 23, 2026
+URL: https://www.reuters.com/legal/litigation/metas-social-media-litigation-who-pays-lawyers-2026-06-23/
+
+---
+
+As Meta and other tech companies face thousands of lawsuits over allegations that they designed social media platforms to addict young users, a parallel big-money battle is unfolding in Delaware: whether insurers will be required to bankroll the industry's legal defense.
+
+Led by The Hartford and Chubb, more than 20 insurers argue they have no duty to pay defense costs that could reach hundreds of millions of dollars or more. While companies typically buy liability insurance to cover the cost of defending lawsuits, the insurers say those policies don't apply here because Meta's alleged misconduct was deliberate.
+
+In a preemptive strike, the insurers sued Meta in late 2024 in Delaware Superior Court. Earlier this year, they won the first round, when the court ruled they had no duty to defend the Facebook and Instagram parent — teeing up a major battle now on appeal before the Delaware Supreme Court.
+
+Meta, which did not respond to a request for comment, denies wrongdoing in the social media addiction cases and argues in court papers that its defense should be covered.
+
+The Hartford also did not respond to a request for comment. A spokesperson for Chubb said, "As a matter of policy, we do not comment on individual claims."
+
+At the center of the dispute is a familiar but high-stakes insurance question: when are allegations of negligence enough to trigger a defense?
+
+The underlying social media complaints accuse Meta of intentionally designing features to exploit teenagers' developing brains and foster compulsive social media use — conduct insurers say was not accidental and therefore falls outside coverage.
+
+Meta counters that the social media addiction suits also allege negligence, or the failure to use reasonable care, and that it never intended to harm its users. Under governing California law, Meta argues, these factors should require its insurers to fund its defense.
+
+The insurance dispute echoes opioid-era coverage fights involving drugmakers and pharmacies, where courts often held that insurers were not required to defend lawsuits that alleged deliberate conduct or sought public-harm damages. Those rulings left companies paying their own legal bills — in some cases, hundreds of millions of dollars — shaping how aggressively they litigated and when they chose to settle.
+
+Here, the initial Delaware decision, if it stands, bodes ill for social media defendants. "It is a major threat to companies facing high-tech addiction claims if affirmed or adopted elsewhere," Benjamin Fliegel, a partner at Reed Smith who specializes in insurance recovery litigation and is not involved in the case, told me.
+
+Underscoring the stakes, a Los Angeles jury in late March held Meta and YouTube liable for $6 million in damages in an early test of the plaintiffs' theories. A 20-year-old woman alleged she became addicted to the companies' social media products at a young age because of their manipulative design, leading to depression, anxiety and other mental health issues.
+
+A judge on June 9 denied the defendants' motion for a new trial, and the companies said they plan to appeal the case.
+
+The "bellwether" verdict offers what some lawyers describe as a potential roadmap for future injury claims by youth and their families, as well as school districts, local governments and state attorneys general alleging widespread harm from social media addiction.
+
+Meta and other tech companies face about 3,300 lawsuits consolidated in California state court, as well as about 2,400 lawsuits in federal multi-district litigation in Oakland, California.
+
+In a 58-page opinion issued in February, Delaware Superior Court Judge Sheldon Rennie held that the insurers have no duty to defend the cases. The court found that the conduct alleged in the social media litigation describes deliberate acts rather than accidents under the policies. Because the court's determination regarding Meta's intent is based strictly on the face of the underlying complaints, it does not overlap with the factual truth of the allegations to be litigated in California.
+
+The ruling applies only to the duty to defend, and not to indemnification, which could require discovery into the facts. Meta has appealed to the Delaware Supreme Court.
+
+Insurance policyholder attorney Tae Andrews of the firm Calfee, Halter & Griswold LLP noted the outcome fits a broader Delaware trend tightening the duty-to-defend standard. Andrews pointed to a 2022 opinion in which the Delaware Supreme Court held that Chubb insurers had no duty to defend the Rite Aid pharmacy against suits brought by Ohio counties over the cost of responding to the opioid epidemic because the underlying actions only sought recovery of economic losses.
+
+For insurers, the ruling could be a major victory setting a precedent that claims like those in the social media addiction litigation do not trigger defense or indemnity coverage under standard policies. An insurer's duty to defend must be assessed at the outset of a case. Just as the insured is entitled to a prompt defense if coverage is possible, an insurer is entitled to a prompt exit when there is no potential for coverage.
+
+Under Section 230 of the Communications Decency Act, internet companies are largely shielded from liability for material their users post to their sites. As part of their argument, the plaintiffs maintain the 1996 law does not shield the firms from responsibility for their designs and algorithms.
+
+[Reconstructed from Reuters article text, Bloomberg Law reporting, CDT analysis, Insurance Journal coverage, and beinsure.com reporting. Original article published June 23, 2026.]
