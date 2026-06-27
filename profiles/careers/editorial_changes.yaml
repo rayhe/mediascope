@@ -277,6 +277,23 @@ editorial_changes:
       exec editor → Daily Beast EIC (2018-2021) → Rolling Stone EIC (2021-2024, departed over brand direction dispute with
       Gus Wenner). Joins Brendan Koerner, Lauren Smily, Virginia Heffernan, Samanth Subramanian as contributing editors. Writes
       features, enterprise, assists with politics coverage talent scouting.'
+  - position: senior_writer_europe
+    outgoing: Morgan Meaker
+    incoming: null
+    date: 2024-09
+    source_url: https://talkingbiznews.com/media-news/wired-senior-writer-meaker-is-departing/
+    notes: 'DEPARTURE: Meaker left after 3 years covering Europe. Joined Bloomberg Weekend as senior writer. Won BSME ''best
+      of best'' 2023 during Wired tenure. Her departure leaves Wired without a dedicated Europe correspondent — significant
+      gap given EU tech regulation (DSA, DMA, AI Act) is increasingly relevant to Meta/Big Tech coverage. No replacement announced
+      as of Jun 2026.'
+  - position: staff_writer_business
+    outgoing: Paris Martineau
+    incoming: null
+    date: 2020-06
+    source_url: https://talkingbiznews.com/media-news/wired-hires-martineau-as-a-staff-writer/
+    notes: 'DEPARTURE: Martineau left Wired''s business desk after ~2 years to join The Information as tech/investigative
+      reporter. Part of a broader pattern of Wired reporters leaving for paywalled or specialized outlets during the Thompson-to-Drummond
+      editorial transition period. She was hired Oct 2018 (Thompson era) and departed before Drummond''s arrival (Jan 2023).'
   nytimes:
   - position: executive_editor
     outgoing: Dean Baquet

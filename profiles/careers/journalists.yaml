@@ -118,23 +118,82 @@ journalists:
     notes: 'Joined Wired''s business team. Key question: does Wired''s institutional culture shape her coverage differently
       than Platformer?'
 - name: Lauren Goode
-  notes: 'Key migration: The Verge → Wired.'
+  notes: 'Key migration chain: ESPN → A&E Networks → Wall Street Journal → AllThingsD → Recode → The Verge → Wired. Protégé
+    of Walt Mossberg and Kara Swisher — followed them through every entity transition. Clark University BA English, Stanford
+    MA Communications. Emmy Award winner (Next Level video series, NorCal 2018). Co-hosts WIRED''s Gadget Lab and Get WIRED
+    podcasts. At Wired, covers consumer tech, apps, services, and Big Tech issues. KEY for MediaScope: her entire career was
+    shaped inside the Mossberg/Swisher talent pipeline — a lineage that includes Mike Isaac (now NYT), Peter Kafka, Ina Fried,
+    and others who went through AllThingsD/Recode. This cohort shares editorial DNA forged in the WSJ''s tech orbit before
+    Vox Media absorption. Her migration to Wired (Condé Nast) represents a clean break from the Vox/Recode lineage into a
+    different institutional frame.'
   career:
+  - publication: espn
+    event_type: hired
+    role: production_assistant
+    beat: sports media
+    start: 2003-06
+    end: 2005-06
+    source_url: https://allthingsd.com/20110824/introducing-lauren-goode/
+    notes: First job out of Clark University. Production assistant in New York. Early career in cable television.
+  - publication: ae-networks
+    event_type: hired
+    role: producer
+    beat: documentary, biography
+    start: 2005-06
+    end: 2008-06
+    source_url: https://allthingsd.com/20110824/introducing-lauren-goode/
+    notes: Producer and writer for A&E Television Networks' award-winning 'Biography' documentary series. Developed video
+      production skills that would become her signature.
+  - publication: wall-street-journal
+    event_type: hired
+    role: video_producer
+    beat: consumer tech
+    start: 2008-06
+    end: 2011-08
+    source_url: https://allthingsd.com/20110824/introducing-lauren-goode/
+    notes: Multimedia producer and reporter at WSJ Digital Network. Helped launch live-streaming video programming. Produced
+      and co-hosted daily 'Digits' technology show. Contributing writer to WSJ's Digits blog. This is where she first connected
+      with Walt Mossberg and Kara Swisher.
+  - publication: allthingsd
+    event_type: hired
+    role: senior_reviewer
+    beat: consumer tech
+    start: 2011-09
+    end: 2013-12
+    source_url: https://allthingsd.com/20110824/introducing-lauren-goode/
+    notes: Senior tech reviewer under Mossberg and Swisher. Covered consumer tech products. Transitioned to Recode when AllThingsD
+      split from Dow Jones/WSJ on Jan 1, 2014. Listed among the full team that moved to Recode (alongside Mike Isaac, Peter
+      Kafka, John Paczkowski, Ina Fried, and others).
+  - publication: recode
+    event_type: continuation
+    role: managing_editor
+    beat: consumer tech reviews
+    start: 2014-01
+    end: 2015-05
+    source_url: https://www.recode.net/
+    notes: Managing editor of consumer tech coverage at Recode (the AllThingsD successor). Co-hosted 'Too Embarrassed to Ask'
+      podcast with Kara Swisher. When Vox Media acquired Recode (~May 2015), Recode's reviews team (Goode, Katie Boehret,
+      Bonnie Cha) was moved to The Verge, while Recode maintained as a separate business news site.
   - publication: the-verge
     event_type: hired
-    role: senior_writer
-    beat: consumer tech
-    start: 2012-10
-    end: 2017-06
+    role: senior_editor
+    beat: consumer tech, wearables, smartphones
+    start: 2015-06
+    end: 2018-03
     source_url: https://www.theverge.com/authors/lauren-goode
-    notes: Senior editor, consumer tech. Executive producer of Verge video.
+    notes: Senior technology editor for ~3 years. Created and hosted Emmy-winning video series 'Next Level' (NorCal Emmy Award
+      for technology reporting, 2018). Covered Apple Watch, wearables, smartphones. Discovered Apple Watch Series 3 LTE bug
+      that led to Apple issuing a public fix. Also hosted 'Screen Drive' auto-tech series.
   - publication: wired
     event_type: hired
     role: senior_writer
-    beat: consumer tech, Big Tech
-    start: 2017-07
-    source_url: https://www.wired.com/author/lauren-goode/
-    notes: Gear/consumer tech coverage. Co-hosts WIRED's 'Have a Nice Future' podcast.
+    beat: consumer tech, apps, services, Big Tech trends
+    start: 2018-04
+    source_url: https://talkingbiznews.com/media-news/wired-hires-goode-from-the-verge-as-senior-writer/
+    notes: Senior gear/staff writer. Covers products, apps, services, and consumer tech issues and trends. Co-hosts WIRED's
+      flagship Gadget Lab podcast and Get WIRED podcast. Hired to write online and print plus develop a new video series.
+      Based in San Francisco/Bay Area. 8+ years and counting — her longest single-publication tenure. Condé Nast institutional
+      DNA has replaced her Mossberg/Swisher lineage frame.
 - name: Charlie Warzel
   notes: 'Key migration: BuzzFeed News → NYT Opinion → Atlantic. Anti-tech-platforms stance across outlets.'
   career:
@@ -4222,3 +4281,100 @@ journalists:
     notes: Promoted to executive editor, newsroom. Oversees all MIT TR online journalism and manages reporting team including
       Will Douglas Heaven (AI), Melissa Heikkilä (AI, until Jan 2025), Rhiannon Williams, Charlotte Jee, others. Manages newsletters
       from London. 179+ published articles/edits. Based in London.
+- name: Morgan Meaker
+  notes: 'Key migration: Telegraph → Wired → Bloomberg Weekend. Award-winning EU tech/policy journalist based in London. City
+    University London MA International Journalism. Forbes 30 Under 30 (European media). Won ''best of best'' and ''best specialist
+    writer'' at 2023 BSME magazine awards. WIRED''s primary Europe correspondent for 3 years. KEY for MediaScope: her departure
+    from Wired (mid 2024) to Bloomberg represents brain drain from Condé Nast''s European coverage. She covered EU tech regulation
+    (DSA, DMA), NATO tech, migration tech — topics where Wired''s framing of Big Tech intersects with European regulatory
+    posture. Her replacement (if any) would indicate whether Wired is maintaining or deprioritizing EU regulatory coverage.'
+  career:
+  - publication: the-telegraph
+    event_type: hired
+    role: reporter
+    beat: tech, business
+    start: 2018-01
+    end: 2021-10
+    source_url: https://talkingbiznews.com/media-news/meaker-joins-wired-as-senior-european-business-writer/
+    notes: Technology reporter, later business reporter at The Telegraph (London). Also ran daily markets live blog. Prior
+      to Telegraph, freelanced for BBC, Guardian, Reuters, Politico, Financial Times, DR (Danish Broadcasting Corporation),
+      and others. Also worked at De Correspondent (Dutch magazine). Started career in arts/fashion magazines (Time Out, Dazed
+      & Confused, 1883 Magazine) before pivoting to global affairs.
+  - publication: wired
+    event_type: hired
+    role: senior_writer
+    beat: Europe, EU tech policy, innovation
+    start: 2021-11
+    end: 2024-09
+    source_url: https://talkingbiznews.com/media-news/meaker-joins-wired-as-senior-european-business-writer/
+    notes: 'Senior European business/innovation writer. Covered EU tech regulation (DSA, DMA, AI Act), NATO tech investments,
+      migration, GPS jamming in Scandinavia, anti-American consumer tech sentiment in Europe, Big Tech lobbying. Won BSME
+      ''best of best'' and ''best specialist writer'' (2023). Also produced TikTok videos for WIRED. Notable coverage: Meta
+      lobbyist-turned-regulator EU piece (Nov 2024 was her last byline). Based in London. Departure announced via Talking
+      Biz News: ''departing after three years.'''
+  - publication: bloomberg
+    event_type: hired
+    role: senior_writer
+    beat: weekend features, Europe, defense tech
+    start: 2025-01
+    source_url: https://morgan-meaker.com/
+    notes: Senior writer for Bloomberg Weekend. Covers European security, defense tech, trade wars, consumer culture. Early
+      Bloomberg coverage includes Arctic military exercises, anti-US consumer boycotts in Europe. Migration from Condé Nast
+      (Wired) to Bloomberg LP — different ownership, different editorial culture.
+- name: Paris Martineau
+  notes: 'Key migration: New York Magazine → The Outline → Wired → The Information → Consumer Reports. NYU BA Comparative
+    Literature. Investigative tech reporter who moved through 5 publications in ~8 years. KEY for MediaScope: her Wired tenure
+    (~2 years, business desk) was during the Nicholas Thompson era, making her a data point for pre-Drummond Wired editorial
+    posture. Her move from Wired to The Information (a paywalled insider outlet) reflects a broader pattern of investigative
+    reporters leaving Condé Nast for specialized/subscriber-funded outlets. Her eventual landing at Consumer Reports (nonprofit)
+    is a third distinct institutional frame — useful for comparing how the same reporter''s framing shifts across advertising-funded
+    (Wired), subscriber-funded (The Information), and nonprofit (Consumer Reports) models.'
+  career:
+  - publication: new-york-magazine
+    event_type: hired
+    role: writer
+    beat: internet culture, tech
+    start: 2017-01
+    end: 2017-12
+    source_url: https://talkingbiznews.com/media-news/wired-hires-martineau-as-a-staff-writer/
+    notes: Writer for Select All — New York Magazine's tech blog. Covered internet culture, 'dank memes,' and life online.
+      Early career establishing voice in tech culture criticism.
+  - publication: the-outline
+    event_type: hired
+    role: staff_writer
+    beat: tech, social media manipulation, privacy
+    start: 2018-01
+    end: 2018-09
+    source_url: https://talkingbiznews.com/media-news/wired-hires-martineau-as-a-staff-writer/
+    notes: Staff writer covering tech news, social media manipulation, and privacy. The Outline (founded by Josh Topolsky)
+      was a digital media startup that eventually shut down in 2020.
+  - publication: wired
+    event_type: hired
+    role: staff_writer
+    beat: business, platforms, tech policy
+    start: 2018-10
+    end: 2020-06
+    source_url: https://talkingbiznews.com/media-news/wired-hires-martineau-as-a-staff-writer/
+    notes: Staff writer on WIRED's business desk. First day Oct 8, 2018. Covered Airbnb (NYC data fight), PG&E blackouts and
+      Big Tech power resilience, YouTube right-wing radicalization, platform accountability. Nicholas Thompson era (pre-Drummond).
+      ~2-year tenure during Wired's shift toward more adversarial Big Tech coverage.
+  - publication: the-information
+    event_type: hired
+    role: reporter
+    beat: tech, investigative
+    start: 2020-07
+    end: 2024-12
+    source_url: https://talkingbiznews.com/media-news/martineau-departs-the-information/
+    notes: Tech and investigative reporter for nearly 5 years. Long-form investigative work behind paywall — spent ~1 month
+      per story. Covered Life House CEO departure, healthcare startup exposés (Carbon Health), Sam Altman/OpenAI boardroom
+      drama. Paywalled outlet with focused readership (industry insiders + journalists). Departure announced via Talking Biz
+      News.
+  - publication: consumer-reports
+    event_type: hired
+    role: senior_investigative_reporter
+    beat: investigative, tech, consumer protection
+    start: 2025-01
+    source_url: https://talkingbiznews.com/media-news/consumer-reports-hires-martineau-as-senior-investigative-reporter/
+    notes: Senior investigative reporter on special projects team. Nonprofit institutional context — Consumer Reports has
+      no advertising revenue, funded by subscriptions and donations. Third distinct funding model in her career (ad-funded
+      Wired → subscriber-funded Information → nonprofit CR). Based in Brooklyn.
