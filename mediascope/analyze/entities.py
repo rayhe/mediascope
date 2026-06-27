@@ -111,7 +111,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
     "Anthropic": {
         "aliases": [
             "Anthropic", "Dario Amodei", "Daniela Amodei", "Claude",
-            "Mythos", "Project Glasswing", "Amanda Askell",
+            "Mythos", "Fable", "Project Glasswing", "Amanda Askell",
         ],
     },
     "IBM": {
@@ -245,6 +245,13 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
     "TikTok": {
         "aliases": [
             "TikTok", "ByteDance", "Shou Zi Chew",
+        ],
+    },
+    "Chinese AI": {
+        "aliases": [
+            "Zhipu", "Z.ai", "GLM", "DeepSeek", "Baidu", "Alibaba Cloud",
+            "Qwen", "Yi", "01.AI", "Moonshot AI", "Kimi",
+            "SenseTime", "iFLYTEK",
         ],
     },
     "Spotify": {

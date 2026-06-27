@@ -359,7 +359,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **585 tests** across 24 test files, each covering a different analytical capability:
+MediaScope has **641 tests** across 25 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -386,6 +386,7 @@ MediaScope has **585 tests** across 24 test files, each covering a different ana
 | `test_postpass_activation.py` | 32 | Post-pass device activation: analogy_stacking threshold (3+ markers), speculative_framing threshold (5+ hedges), expanded loaded_language patterns, analogy_stacking false-positive regression (factual "is a" constructions vs qualified metaphors) |
 | `test_jun27_regression.py` | 9 | Jun 27 regression tests: topic "fine" ambiguity (fine-tuned ≠ litigation), source extraction stop words ("Any"/"All" not person names), fined still matches litigation |
 | `test_structural_consistency.py` | 13 | Structural consistency guards: framing device type count (33 total = 30 pattern + 3 structural), `precedent_analogy` exists, `__main__.py` entry point works, doc counts match across METHODOLOGY.md/ARCHITECTURE.md/AGENT_GUIDE.md/CLI/README (framing types, banned phrases, Advance/Reddit voting power) |
+| `test_mittr_anthropic_feud.py` | 25 | MIT TR "Three things to watch amid Anthropic's feud" article deep dive: entity detection (Fable, Mythos, Zhipu, Chinese AI cluster), scare quotes (doomers, exporting, wake-up call), speculative rhetorical questions (is it possible...?), cliffhanger questions (What will X bring?), loaded language (drastic, superficial), cross-domain precedent analogy (nuclear nonproliferation), speculative framing threshold, sovereignty framing, pattern unit tests |
 
 ```bash
 # Run all tests

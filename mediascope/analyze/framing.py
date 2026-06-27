@@ -315,7 +315,10 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"crushed|obliterated|demolished|annihilated|"
         r"staggering|mastermind(?:ed)?|"
         r"turned a blind eye|strike fear|struck fear|"
-        r"indefensible|abusive|defamatory)\b",
+        r"indefensible|abusive|defamatory|"
+        r"drastic(?:ally)?|superficial(?:ly)?|"
+        r"reckless(?:ly)?|egregious(?:ly)?|flagrant(?:ly)?"
+        r")\b",
         re.IGNORECASE,
     ),
     # Loaded adjectives/nouns characterizing people or organizations
@@ -1018,6 +1021,34 @@ _RHETORICAL_QUESTION_PATTERNS: list[re.Pattern] = [
         r"\bwho is .{3,40}?\?",
         re.IGNORECASE,
     ),
+    # ---------------------------------------------------------------------------
+    # Speculative/reflective rhetorical questions — columnists posing
+    # "what if" or "is it possible" questions that frame unstated
+    # conclusions as open-ended speculation.  Distinct from the accusatory
+    # patterns above; these invite the reader to draw the conclusion.
+    #
+    # Identified in MIT TR "Three things to watch amid Anthropic's latest
+    # feud" (Jun 2026): "is it possible the government's next drastic
+    # decision will be to say that US companies using models from China
+    # pose a threat to national security?"
+    # ---------------------------------------------------------------------------
+    # "is it possible (that)...?" — speculative question inversion
+    re.compile(
+        r"\bis it (?:possible|conceivable|likely|plausible|realistic|naive to think)\b.{10,200}?\?",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "What will/would/could [X] bring/mean/look like?" — open-ended
+    # cliffhanger question, often used at paragraph/article endings
+    re.compile(
+        r"\bwhat (?:will|would|could|might|does|did) .{3,60}?"
+        r"(?:bring|mean|look like|hold|entail|portend|change|happen)\?",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "Can [entity/we] really/afford to...?" — challenging capability/cost
+    re.compile(
+        r"\bcan (?:\w+ )?(?:really|afford to|actually|ever)\b.{3,80}?\?",
+        re.IGNORECASE | re.DOTALL,
+    ),
 ]
 
 _DEVICE_PATTERNS["rhetorical_question"] = _RHETORICAL_QUESTION_PATTERNS
@@ -1278,6 +1309,42 @@ _IRONIC_QUOTATION_PATTERNS: list[re.Pattern] = [
         r"(?:this|that|the|it|its|his|her|their)?\s*"
         r"(?:\w+\s+){0,4}"
         r"(?:as\b)",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # ---------------------------------------------------------------------------
+    # Scare quotes / distancing quotes: single words or short phrases
+    # placed in quotation marks to signal the author considers the term
+    # loaded, contested, borrowed, or inapplicable.  Distinct from direct
+    # quotations (full sentences attributed to named sources) and from
+    # ironic attribution verbs above.  The author is not quoting a person;
+    # they are marking a word as not their own, or casting doubt on its
+    # standard meaning.
+    #
+    # Identified in MIT TR "Three things to watch" (Jun 2026):
+    #   - "doomers" — loaded label placed in quotes to distance
+    #   - "exporting" — legal term questioned via scare quotes
+    #   - "wake-up call" — attributed idiom placed in quotes
+    #
+    # Pattern: 1-4 word phrase in quotes that does NOT start with a
+    # capital letter (to exclude proper nouns and sentence-start quotes)
+    # or starts lowercase explicitly.
+    # ---------------------------------------------------------------------------
+    # Straight-quote scare quotes: "word" or "short phrase" in mid-sentence
+    re.compile(
+        r'(?<=\s)"([a-z][^"]{0,40}?)"(?=[\s,;.\-—\)])',
+        re.DOTALL,
+    ),
+    # Smart-quote scare quotes: \u201c word \u201d
+    re.compile(
+        r'(?<=\s)\u201c([a-z][^\u201d]{0,40}?)\u201d(?=[\s,;.\-—\)])',
+        re.DOTALL,
+    ),
+    # Scare quotes around terms preceded by "broadly labeled/called/termed/dubbed"
+    re.compile(
+        r'\b(?:broadly|commonly|widely|often|sometimes|loosely|derisively|'
+        r'pejoratively|affectionately|ironically|sarcastically)\s+'
+        r'(?:labeled|called|termed|dubbed|known as|referred to as)\s+'
+        r'["\u201c]([^"\u201d]{1,40}?)["\u201d]',
         re.IGNORECASE | re.DOTALL,
     ),
 ]
@@ -1644,6 +1711,28 @@ _PRECEDENT_ANALOGY_PATTERNS: list[re.Pattern] = [
         r"\b(?:dispute|battle|fight|clash|struggle|confrontation|reckoning)\s+"
         r"(?:echoes?|is reminiscent of|recalls?|mirrors?|parallels?|evokes?)\b.{3,80}",
         re.IGNORECASE,
+    ),
+    # ---------------------------------------------------------------------------
+    # Cross-domain analogy: "in the manner of" / "the way [domain] handles"
+    # imports frames from a known high-stakes domain (nuclear, military,
+    # pharmaceutical, etc.) onto the current subject.  Distinct from the
+    # era-based patterns above; this catches direct domain-transference.
+    #
+    # Identified in MIT TR "Three things to watch" (Jun 2026):
+    #   "applying the concept of nonproliferation to software—trying to
+    #    control and restrict dangerous AI models in the manner of the
+    #    uranium used for nuclear weapons"
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b(?:in the manner of|in the (?:same )?way (?:that )?(?:\w+ ){0,3}"
+        r"(?:handles?|treats?|regulates?|controls?|restricts?)|"
+        r"(?:the concept|the logic|the framework|the model) of\s+\w+\s+(?:applied|extended|imported) to|"
+        r"applying the (?:concept|logic|framework|model|principle) of)\b"
+        r".{3,120}?"
+        r"\b(?:nuclear|uranium|weapons?|arms|munitions?|pharmaceuticals?|"
+        r"drugs?|tobacco|opioid|asbestos|chemical|biological|classified|"
+        r"controlled substance|narcotics?|explosives?)\b",
+        re.IGNORECASE | re.DOTALL,
     ),
 ]
 
@@ -2087,7 +2176,8 @@ _SPECULATIVE_FRAMING_PATTERNS: list[re.Pattern] = [
     re.compile(
         r"\b(?:it(?:'s| is) (?:possible|conceivable|plausible|likely|not impossible)"
         r"|there(?:'s| is) (?:a chance|a possibility|a risk|reason to (?:think|believe|fear))"
-        r"|there(?:'s| is) early evidence)\b",
+        r"|there(?:'s| is) early evidence"
+        r"|is it (?:possible|conceivable|plausible|likely|naive to think))\b",
         re.IGNORECASE,
     ),
     # "not yet any" / "not yet evidence" / "no smoking gun"
@@ -2131,6 +2221,22 @@ _SPECULATIVE_FRAMING_PATTERNS: list[re.Pattern] = [
         r"(?:in (?:a|this|that|such a) )?hypothetical (?:scenario|situation|world|case)|"
         r"thought experiment|"
         r"just for argument'?s? sake)\b",
+        re.IGNORECASE,
+    ),
+    # First-person hedge / dismissal-by-author — columnists inserting
+    # personal speculation as editorial voice rather than reporting.
+    # "I wouldn't write it off", "I wouldn't rule it out", "I wouldn't bet against"
+    re.compile(
+        r"\bI wouldn'?t (?:write it off|rule it out|rule that out|bet against|"
+        r"bet on|be surprised|count on|dismiss|underestimate|overstate)\b",
+        re.IGNORECASE,
+    ),
+    # "Playing this forward" / "playing this out" / "extend this logic" —
+    # explicit speculative projection framing
+    re.compile(
+        r"\b(?:playing this forward|playing this out|play this forward|"
+        r"play this out|extend(?:ing)? this logic|follow(?:ing)? this logic|"
+        r"take this (?:to its logical|a step further))\b",
         re.IGNORECASE,
     ),
 ]
