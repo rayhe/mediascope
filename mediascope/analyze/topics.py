@@ -124,7 +124,7 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "court", "judge", "ruling", "verdict", "settlement",
         "class action", "injunction", "subpoena", "deposition",
         "plaintiff", "defendant", "complaint", "filed suit",
-        "damages", "penalty", "fine", "fined", "consent order",
+        "damages", "penalty", "fined", "consent order",
         "appeals court", "Supreme Court", "district court",
     ],
     "workplace_culture": [

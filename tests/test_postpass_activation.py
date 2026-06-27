@@ -296,3 +296,55 @@ class TestPostPassIntegration:
         types = _device_types(text)
         assert "analogy_stacking" in types, "analogy_stacking should fire"
         assert "speculative_framing" in types, "speculative_framing should fire"
+
+
+# ===================================================================
+# analogy_stacking — false positive regression tests (Jun 27 2026)
+# ===================================================================
+
+class TestAnalogyStackingFalsePositives:
+    """Verify 'is a [noun]' factual descriptions do NOT trigger analogy_stacking.
+
+    Before the fix, a Q&A interview with many "is a [role/credential]"
+    constructions (e.g. "is a Turing Award recipient", "is a serial
+    entrepreneur") would produce 8+ false-positive analogy markers,
+    exceeding the 3-marker threshold and incorrectly firing.
+    """
+
+    QA_INTERVIEW_TEXT = (
+        "He is a Turing Award recipient and a top AI researcher. "
+        "There is a very high concentration of talent in Europe. "
+        "This is a strategic mistake. "
+        "JEPA is a system that learns to represent videos really well. "
+        "He is a serial entrepreneur who has built three companies. "
+        "Silicon Valley is a bit of a monoculture. "
+        "She is a brilliant researcher with deep expertise. "
+        "This is a global company headquartered in Paris."
+    )
+
+    def test_factual_descriptions_no_analogy(self):
+        """Factual 'is a [noun]' constructions should NOT fire analogy_stacking."""
+        types = _device_types(self.QA_INTERVIEW_TEXT)
+        assert "analogy_stacking" not in types
+
+    def test_qualified_metaphors_still_fire(self):
+        """'is essentially/basically a [X]' SHOULD count as analogy markers."""
+        text = (
+            "The platform is essentially a surveillance apparatus. "
+            "The program is basically a digital sweatshop. "
+            "The system is really just a glorified search engine. "
+            "Critics have likened it to a runaway train."
+        )
+        types = _device_types(text)
+        assert "analogy_stacking" in types
+
+    def test_mixed_real_and_factual_below_threshold(self):
+        """One genuine 'like a' analogy mixed with factual 'is a' should not fire."""
+        text = (
+            "He is a professor at NYU. "
+            "She is a talented engineer. "
+            "The robot moves like a cat in the dark. "
+            "The company is a global leader in AI."
+        )
+        types = _device_types(text)
+        assert "analogy_stacking" not in types

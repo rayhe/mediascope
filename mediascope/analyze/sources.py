@@ -92,6 +92,8 @@ _NAME_STOP_FIRST_WORDS: set[str] = {
     "But", "And", "Also", "Still", "Yet", "Then", "Now",
     "Such", "Much", "Not", "Just", "Only", "Even",
     "Already", "Perhaps", "Maybe", "Certainly",
+    # Short common words that look like names when capitalized
+    "Any", "All", "Our", "His", "Her", "Its",
     # Day names — "on Thursday argues" should not extract "Thursday" as source
     "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
     "Saturday", "Sunday",

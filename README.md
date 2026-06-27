@@ -358,7 +358,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **541 tests** across 21 test files, each covering a different analytical capability:
+MediaScope has **572 tests** across 23 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -382,7 +382,8 @@ MediaScope has **541 tests** across 21 test files, each covering a different ana
 | `test_wynn_williams_fixes.py` | 18 | Guardian Wynn-Williams lawsuit fixes: source extraction false positives (day names "Wednesday", book titles "Careless People"), litigation framing expansion (complaint, suing, arbitration patterns), power_asymmetry per-violation fines with intervening adjectives |
 | `test_sarcastic_correction.py` | 15 | Sarcastic correction framing device: concede-then-retract patterns ("Of course... oh wait"), standalone sarcastic constructions ("Who could have predicted"), false-positive exclusion for neutral uses of "of course" and "right" |
 | `test_wired_gulag_patterns.py` | 17 | Wired "gulag" engineer revolt coverage: conscript/conscription workplace loaded language, keystroke/screen-recording surveillance detection, Scale AI entity detection, full article-context loaded language density |
-| `test_postpass_activation.py` | 23 | Post-pass device activation: analogy_stacking threshold (3+ markers), speculative_framing threshold (5+ hedges), expanded loaded_language patterns (deceptive, misleading, disingenuous, unprecedented+breach/violation), expanded speculative verbs (influence, affect, leak, seep, expose), integration of both post-passes |
+| `test_postpass_activation.py` | 32 | Post-pass device activation: analogy_stacking threshold (3+ markers), speculative_framing threshold (5+ hedges), expanded loaded_language patterns, analogy_stacking false-positive regression (factual "is a" constructions vs qualified metaphors) |
+| `test_jun27_regression.py` | 9 | Jun 27 regression tests: topic "fine" ambiguity (fine-tuned ≠ litigation), source extraction stop words ("Any"/"All" not person names), fined still matches litigation |
 
 ```bash
 # Run all tests

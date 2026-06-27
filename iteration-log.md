@@ -4,6 +4,39 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 09:00 PT — Hour Type A: Article Deep Dive — MIT TR LeCun/AMI Labs Q&A Interview
+
+**Focus:** MIT Technology Review's Jan 22, 2026 Q&A interview with Yann LeCun about leaving Meta and launching AMI Labs. This interview-format article exposed three toolkit bugs and one major structural limitation (Q&A format blind spot).
+
+**Article:** [Yann LeCun's new venture is a contrarian bet against large language models](https://www.technologyreview.com/2026/01/22/1131661/yann-lecuns-new-venture-ami-labs/)
+
+### 1. Fix: Analogy Stacking False Positives (framing.py)
+
+The "is a/an" metaphor marker pattern had an OPTIONAL qualifier, causing factual descriptions ("is a Turing Award recipient," "is a serial entrepreneur") to match as analogy markers. In the LeCun Q&A article, 8 such false positives exceeded the 3-marker threshold and incorrectly fired `analogy_stacking`.
+
+**Fix:** Made the qualifier REQUIRED and expanded the qualifier set from 3 words to 10: essentially, basically, effectively, really, fundamentally, nothing more/less than, just, merely, in effect, quite. Genuine metaphors ("is essentially a surveillance apparatus") still match; factual descriptions don't.
+
+### 2. Fix: Topic "fine" Ambiguity (topics.py)
+
+"fine" in the litigation keywords matched "fine-tuned" via `\bfine\b` (hyphen is a non-word boundary character). Also matches adjective sense ("everything is fine"). Removed standalone "fine"; kept unambiguous "fined."
+
+### 3. Fix: Source Extraction "Any" False Positive (sources.py)
+
+"Any comments?" matched the verb-before-named pattern, extracting "Any" as a person name. Added "Any", "All", "Our", "His", "Her", "Its" to `_NAME_STOP_FIRST_WORDS`.
+
+### 4. Structural Limitation Identified: Q&A Format Blind Spot
+
+The toolkit failed to detect ANY sources in this interview article (0 detected vs 1 actual — Turing Award winner Yann LeCun). Source extraction, framing detection, and sentiment analysis all assume standard news format with attribution verbs and third-person narration. Q&A interviews break all three assumptions. This is the highest-priority structural gap, but requires significant design work beyond a single iteration.
+
+### Stats After This Iteration
+- Tests: 572 (up from 563, +9 new regression tests)
+- All passing
+- 3 code files modified: framing.py, topics.py, sources.py
+- New example: `mit_tr_lecun_ami_labs_contrarian_2026_01_22_analysis.md`
+- Commit: (see below)
+
+---
+
 ## 2026-06-27 08:00 PT — Hour Type D: Toolkit Quality & Documentation — Banned Phrases Sync, Taxonomy Count Fix, Test Expansion
 
 **Focus:** Audit of documentation-to-code consistency, found and fixed three classes of issues: missing banned phrases in the quality checker, a stale framing device count in METHODOLOGY.md, and outdated test counts across docs.

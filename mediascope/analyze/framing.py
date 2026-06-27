@@ -1163,9 +1163,15 @@ _ANALOGY_MARKER_PATTERNS: list[re.Pattern] = [
         r"\blike (?:a|an|the|another|some) (?:\w+ ){0,3}\w+",
         re.IGNORECASE,
     ),
-    # "is [essentially/basically] [a/an]" — metaphor construction
+    # "is [qualifier] [a/an]" — metaphor construction
+    # Qualifier is REQUIRED to avoid false positives on factual descriptions
+    # like "is a Turing Award recipient" or "is a serial entrepreneur".
+    # Without the qualifier, "is a [noun]" is almost always a factual
+    # statement, not a rhetorical comparison.
     re.compile(
-        r"\bis (?:essentially |basically |effectively )?(?:a|an) .{3,60}?(?:\.|,|;)",
+        r"\bis (?:essentially |basically |effectively |really |fundamentally |"
+        r"nothing (?:more |less )than |just |merely |in effect |quite )"
+        r"(?:a|an) .{3,60}?(?:\.|,|;)",
         re.IGNORECASE,
     ),
     # "think of it as" / "think of slop as"
