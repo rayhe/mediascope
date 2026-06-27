@@ -80,6 +80,17 @@ ownership_chain:
       - "https://www.foley.com/p/102ktmm/changes-to-the-college-and-university-endowment-tax/"
       - "https://en.wikipedia.org/wiki/Endowment_tax"
     portfolio_source_url: "https://www.institutionalinvestor.com/article/2d7c5l5p06m1yw3x5awjk/portfolio/ivy-league-endowment-returns-depended-on-one-decision-vc-or-pe"
+    obbba_institutional_response: >
+      MIT public statement on OBBBA endowment tax: "A tax of this magnitude would
+      seriously damage our ability to conduct research that strengthens our nation's
+      security and economic competitiveness... would cut hundreds of millions of dollars
+      from our budget each year." MIT notes endowment supports 40%+ of annual campus
+      budget. Aon consulting reports universities already announcing hiring freezes and
+      cost-cutting measures in anticipation of the tax. This statement underscores the
+      financial pressure the 8% tax creates — pressure that could increase MIT's
+      dependence on corporate research partnerships (the same partnerships creating
+      editorial conflicts for MIT TR).
+    obbba_response_source_url: "https://news.mit.edu/2025/07/mit-statement-endowment-tax"
 
 financial_data:
   revenue_history:
@@ -223,9 +234,24 @@ mit_corporate_research_partnerships:
     - name: "CSAIL Alliance Program"
       amount: "Annual membership fees (undisclosed per member)"
       established: "Ongoing"
-      description: "MIT's Computer Science and Artificial Intelligence Laboratory runs a corporate alliance program. Current members include Apple, Microsoft, Qualcomm, Samsung Ventures, Dell EMC, Red Hat, Lenovo, Northrop Grumman, Raytheon Technologies, Mercedes-Benz, Jane Street, and Khosla Ventures. These companies get access to CSAIL research, recruiting pipelines, and faculty. Apple's membership is particularly notable — MIT's parent institution has a direct corporate research relationship with Apple."
+      description: >
+        MIT's Computer Science and Artificial Intelligence Laboratory runs a corporate
+        alliance program. Full current member list (verified June 2026): Acbel, Accenture,
+        Akamai, Apple, Balyasny Asset Management, Bayer, BNY (Bank of New York Mellon),
+        Caterpillar, Dell EMC, Ferrovial, Jane Street, Khosla Ventures, Lenovo, Microsoft,
+        Nebius (Yandex AI spinoff — notable new addition), Northrop Grumman, Qualcomm,
+        Quanta Computer, Raytheon Technologies, Red Hat, Rokt, Samsung Ventures,
+        STMicroelectronics, Underscore VC, UPS, UST, Wistron. These companies get access
+        to CSAIL research, recruiting pipelines, and faculty. Apple's membership is
+        particularly notable — MIT's parent institution has a direct corporate research
+        relationship with Apple. NOTABLE ABSENCES: Google, Amazon, and Meta are NOT CSAIL
+        Alliance members — they have separate bilateral programs (MIT-Google Program,
+        MIT-Amazon Science Hub, FAIR collaborations). Nebius (formerly part of Yandex) is
+        a significant addition given Yandex's Russian origins and Nebius's pivot to AI
+        infrastructure for European/global markets.
       source_url: "https://www.csail.mit.edu/about/alliance-program"
-      relevance: "CSAIL affiliates include Apple, Microsoft, Qualcomm, Samsung — all companies MIT TR covers. The affiliate relationship provides recruiting access and research previews, creating potential soft conflicts across a wide range of tech coverage."
+      verified_date: "2026-06-27"
+      relevance: "27 corporate affiliates, including Apple, Microsoft, Qualcomm, Samsung — all companies MIT TR covers. The affiliate relationship provides recruiting access and research previews, creating potential soft conflicts across a wide range of tech coverage."
     - name: "Eric & Wendy Schmidt (former Google/Alphabet)"
       amount: "Undisclosed"
       established: "2018"
@@ -238,6 +264,126 @@ mit_corporate_research_partnerships:
       description: "Honeywell collaboration with MIT Center for Sustainability Science and Strategy. Joint research titled 'Accelerating Energy Expansion' modeling AI-enabled cost reductions in fuel production ($225B in oil-based fuels, $80B in LNG by 2050). Published June 24, 2026. Honeywell is a major industrial tech company — its AI/automation products compete in the same enterprise space MIT TR covers."
       source_url: "https://www.prnewswire.com/news-releases/honeywell-and-mit-find-digital-technologies-can-help-increase-energy-supply-reduce-energy-production-cost-by-tens-of-billions-annually-302463974.html"
       relevance: "New corporate research partnership announced June 2026. Honeywell is an industrial AI company that MIT TR covers. Partnership involves MIT Center (not CSAIL/Schwarzman), showing how MIT-industry ties extend beyond the computing college."
+
+  engine_ventures:
+    description: >
+      The Engine (rebranded Engine Ventures) is MIT's institutional venture capital arm,
+      founded 2016 by MIT leadership. MIT provided anchor capital: $25M to Fund I ($200M
+      total) and $35M to Fund II ($230M total, Harvard also an LP). 4 VC funds, $1B+ under
+      management, 65+ active portfolio companies, 134 total investments (PitchBook). 8 exits
+      including 2 out-of-business. CEO: Katie Rae.
+
+      FOUNDING CONNECTION: The Engine was launched under the leadership of Israel Ruiz, then
+      MIT Executive Vice President and Treasurer — the SAME person who (1) sat on the MIT TR
+      board (FY2019-2020) and (2) was one of three MIT VPs who approved Jeffrey Epstein's
+      post-conviction donations under an "informal framework." This means the person who
+      launched MIT's venture arm also sat on the publication's board and approved tainted
+      donations — a three-way governance intersection.
+
+      FOCUS AREAS: Climate tech, human health, advanced systems (includes AI infrastructure,
+      quantum computing, advanced materials).
+
+      CRITICAL — AI INFRASTRUCTURE EXIT: Celestial AI was acquired by Marvell Technology for
+      $3.25B on February 2, 2026. Celestial AI developed photonic interconnect technology for
+      AI data centers — the exact infrastructure powering the AI industry MIT TR covers.
+      Engine Ventures was an investor. This is a DIRECT case of MIT profiting from an AI
+      infrastructure exit while MIT TR covers the AI industry.
+
+      OTHER NOTABLE PORTFOLIO COMPANIES:
+      - Commonwealth Fusion Systems: Nuclear fusion company, raised ~$3B from Google, Nvidia,
+        Bill Gates, Eni, Khosla Ventures. Google and Nvidia are both companies MIT TR covers.
+      - DG Matrix: AI data center power solutions, $60M Series A LED by Engine Ventures.
+        Directly serves the AI infrastructure market.
+      - Boston Metal: Industrial decarbonization via electrolysis.
+      - Axiomatic_AI: AI company in Engine portfolio.
+      - TeraDAR: Radar technology company.
+
+      CONFLICT SIGNIFICANCE: MIT's parent institution directly profits from tech/AI startup
+      exits through Engine Ventures while MIT TR covers the AI industry. The Celestial AI →
+      Marvell $3.25B exit is particularly significant because (1) it's in AI infrastructure,
+      (2) it's MIT's single largest known venture exit, and (3) MIT TR covers Marvell and the
+      AI chip/infrastructure industry. Additionally, portfolio companies that have raised
+      from Google, Nvidia, and Gates create indirect financial alignment between MIT and
+      companies MIT TR covers.
+
+      OBBBA INTERACTION: Engine Ventures exits may generate taxable royalty/investment income
+      under the OBBBA's expanded endowment tax. If MIT's venture returns flow through the
+      endowment, they increase net investment income subject to the 8% tax. This creates a
+      novel dynamic: MIT's successful venture exits in AI (which benefit the endowment) also
+      increase its tax burden — potentially making MIT MORE dependent on corporate research
+      partnerships and event sponsorship (MIT TR) to offset the tax.
+    fund_details:
+      - fund: "Fund I"
+        size: "$200M"
+        mit_anchor: "$25M"
+        year: "2016"
+      - fund: "Fund II"
+        size: "$230M"
+        mit_anchor: "$35M"
+        lps: ["MIT ($35M)", "Harvard (undisclosed)"]
+        year: "~2019"
+      - fund: "Fund III"
+        size: "Undisclosed"
+      - fund: "Fund IV"
+        size: "Undisclosed"
+    total_aum: "$1B+"
+    portfolio_companies: "65+"
+    total_investments: "134 (PitchBook)"
+    total_exits: "8 (including 2 out-of-business)"
+    ceo: "Katie Rae"
+    founded_by: "Israel Ruiz (MIT EVP/Treasurer, also on MIT TR board FY2019-2020, also approved Epstein donations)"
+    key_exits:
+      - company: "Celestial AI"
+        acquirer: "Marvell Technology"
+        value: "$3.25B"
+        date: "2026-02-02"
+        relevance: "Photonic interconnect for AI data centers. MIT profits from AI infrastructure exit while MIT TR covers AI industry."
+        source_url: "https://www.marvell.com/company/newsroom/marvell-to-acquire-celestial-ai.html"
+    source_urls:
+      - "https://www.engine.xyz/about"
+      - "https://pitchbook.com/profiles/engine-ventures"
+      - "https://news.mit.edu/2016/mit-new-enterprise-the-engine-1026"
+
+  mitimco_direct_investments:
+    description: >
+      MIT Investment Management Company (MITIMCo) manages MIT's $27.4B endowment with ~40
+      investment professionals. In addition to the endowment's 30-40% allocation to private
+      investments (PE + VC), MITIMCo makes direct investments in companies. PitchBook shows
+      18 investments and 9 exits. Recent direct investments include: Substrate (semiconductors,
+      Oct 2025) and Bitwise (asset management, Feb 2025). These direct investments, separate
+      from Engine Ventures, give MIT ADDITIONAL exposure to the tech/semiconductor industry
+      that MIT TR covers. MITIMCo direct investments compound the institutional conflict:
+      MIT is not just a research partner of tech companies but a DIRECT INVESTOR in the
+      broader technology ecosystem.
+    staff: "~40 professionals"
+    investments: "18 (PitchBook)"
+    exits: "9 (PitchBook)"
+    recent_investments:
+      - company: "Substrate"
+        sector: "Semiconductors"
+        date: "2025-10"
+      - company: "Bitwise"
+        sector: "Asset management"
+        date: "2025-02"
+    source_url: "https://pitchbook.com/profiles/mitimco"
+
+  mit_ilp:
+    description: >
+      MIT Industrial Liaison Program (ILP), founded 1948, is one of the oldest
+      university-industry bridge programs in the world. ~240 member companies pay annual
+      fees for access to MIT faculty, research, recruiting pipelines, and technology
+      transfer. Executive Director: Gayathri Srinivasan. Recent member: Wipro (joined
+      Feb 2026). The ILP is a BROAD institutional funding channel — 240 companies across
+      industries — that complements the more targeted bilateral partnerships (Google,
+      Amazon, IBM) and lab-specific programs (CSAIL Alliance). Many ILP members are
+      technology companies whose products and strategies MIT TR covers.
+    founded: "1948"
+    member_count: "~240"
+    executive_director: "Gayathri Srinivasan"
+    recent_members:
+      - company: "Wipro"
+        date: "2026-02"
+    source_url: "https://ilp.mit.edu"
   meta_relationship:
     partner: "Meta"
     amount: "Significant (unspecified)"
@@ -359,10 +505,22 @@ known_conflicts:
     evidence: "MIT News announcement (Feb 2018). US Entity List addition (Oct 2019). US Treasury CMIC list (Dec 2021). DoD CMC list (2024 NDAA). MIT media relations statement on frozen funds. iFlyTek CSAIL collaboration confirmed via Alliance Program page."
     source_url: "https://news.mit.edu/2018/mit-sensetime-announce-effort-advance-artificial-intelligence-research-0228"
   - type: "csail_corporate_affiliates"
-    description: "MIT CSAIL Alliance Program members include Apple, Microsoft, Qualcomm, Samsung Ventures, Dell EMC, Red Hat, Lenovo, Northrop Grumman, Raytheon Technologies, Mercedes-Benz, Jane Street, and Khosla Ventures. These companies get research access and recruiting pipelines. MIT TR covers many of these companies — particularly Apple, Microsoft, Samsung, Qualcomm — while MIT's premier CS lab has a paid affiliate relationship with them. Apple's membership is especially notable as it is rarely disclosed as a conflict in MIT TR's Apple coverage."
+    description: >
+      MIT CSAIL Alliance Program has 27 corporate members (verified June 2026): Acbel,
+      Accenture, Akamai, Apple, Balyasny, Bayer, BNY, Caterpillar, Dell EMC, Ferrovial,
+      Jane Street, Khosla Ventures, Lenovo, Microsoft, Nebius (Yandex AI spinoff),
+      Northrop Grumman, Qualcomm, Quanta Computer, Raytheon, Red Hat, Rokt, Samsung
+      Ventures, STMicroelectronics, Underscore VC, UPS, UST, Wistron. These companies
+      get research access and recruiting pipelines. MIT TR covers many of these companies
+      — particularly Apple, Microsoft, Samsung, Qualcomm. Apple's membership is especially
+      notable as it is rarely disclosed as a conflict in MIT TR's Apple coverage. Nebius
+      (formerly part of Yandex) is a significant new addition given its Russian-origin
+      AI infrastructure business. Notable absences: Google, Amazon, Meta are NOT CSAIL
+      members — they have separate bilateral programs.
     severity: 2
-    evidence: "CSAIL Alliance Program membership page. Cross-referenced with MIT TR coverage of Apple, Microsoft, Qualcomm, Samsung."
+    evidence: "CSAIL Alliance Program membership page (verified June 27, 2026). Cross-referenced with MIT TR coverage of Apple, Microsoft, Qualcomm, Samsung."
     source_url: "https://www.csail.mit.edu/about/alliance-program"
+    verified_date: "2026-06-27"
   - type: "genai_divide_institutional_conflict"
     description: "MIT researchers published 'The GenAI Divide' (Project NANDA, 2025): ~95% of organizations saw no measurable financial return from generative AI despite $30-40B in enterprise spending. This is one of the most significant anti-AI-hype research findings from any institution — and it comes from MIT TR's own parent. MIT TR's AI coverage must navigate between its parent institution's skeptical research findings and the fact that the same parent institution receives hundreds of millions from AI companies (Google, IBM, Amazon, Microsoft, Apple, Meta). The tension between MIT research showing AI underdelivers and MIT's financial dependence on AI industry funding is a unique institutional conflict."
     severity: 2
@@ -404,6 +562,49 @@ known_conflicts:
     severity: 2
     evidence: "Talking Biz News hire announcements. Muck Rack profiles."
     source_url: "https://talkingbiznews.com/they-re-hiring/mit-tech-review-hires-honan-as-editor-in-chief/"
+  - type: "engine_ventures_ai_exits"
+    description: >
+      MIT's institutional venture arm, Engine Ventures (formerly The Engine), has $1B+
+      under management across 4 funds, with MIT providing $60M+ in anchor capital ($25M
+      Fund I, $35M Fund II). Engine Ventures' portfolio includes AI infrastructure
+      companies, and its largest known exit — Celestial AI acquired by Marvell Technology
+      for $3.25B (Feb 2, 2026) — is a photonic interconnect company for AI data centers.
+      MIT directly profits from AI infrastructure exits while MIT TR covers the AI/chip
+      industry including Marvell. Engine was founded under Israel Ruiz (MIT EVP/Treasurer),
+      who also sat on MIT TR's board (FY2019-2020) AND approved Epstein's post-conviction
+      donations — a three-way governance intersection between MIT's venture arm, its
+      publication, and its most significant governance scandal.
+    severity: 3
+    evidence: >
+      Engine Ventures website and PitchBook profile ($1B+ AUM, 134 investments, 65+
+      active companies). MIT News founding announcement (Oct 2016). Marvell newsroom
+      ($3.25B Celestial AI acquisition, Feb 2, 2026). Israel Ruiz role confirmed via
+      MIT News and Goodwin Procter Epstein report (Jan 2020). MIT TR board composition
+      from Form 990 filings.
+    source_urls:
+      - "https://www.engine.xyz/about"
+      - "https://www.marvell.com/company/newsroom/marvell-to-acquire-celestial-ai.html"
+      - "https://news.mit.edu/2016/mit-new-enterprise-the-engine-1026"
+      - "https://news.mit.edu/2020/mit-releases-results-fact-finding-jeffrey-epstein-0110"
+  - type: "engine_ventures_portfolio_coverage_overlap"
+    description: >
+      Engine Ventures portfolio companies have direct overlap with MIT TR's technology
+      coverage surface. Commonwealth Fusion Systems (nuclear fusion, ~$3B raised from
+      Google, Nvidia, Bill Gates, Eni, Khosla Ventures) ties MIT's venture returns to
+      the success of companies MIT TR covers (Google, Nvidia). DG Matrix ($60M Series A
+      LED by Engine) serves AI data center power — the same AI infrastructure market MIT
+      TR reports on. MIT has a financial interest in the success of these portfolio
+      companies and their investors/customers, creating a soft conflict when MIT TR
+      covers the AI infrastructure buildout, fusion energy, or the companies funding
+      Engine portfolio startups.
+    severity: 2
+    evidence: >
+      Engine Ventures portfolio page. PitchBook investment records. Commonwealth Fusion
+      Systems funding rounds (Google, Nvidia, Gates involvement confirmed via multiple
+      press releases). DG Matrix $60M Series A (2025, Engine-led).
+    source_urls:
+      - "https://www.engine.xyz/portfolio"
+      - "https://pitchbook.com/profiles/engine-ventures"
 
 litigation_connections: []
 
@@ -497,6 +698,16 @@ notes: |
   The SenseTime partnership adds another dimension: MIT partnered with a Chinese 
   AI company later sanctioned by the US government for enabling mass surveillance 
   of Uyghurs. The alliance funded 27 research projects across MIT.
+  
+  ENGINE VENTURES (added June 27, 2026): MIT's institutional venture arm ($1B+ AUM,
+  65+ companies) adds a THIRD dimension to the conflict structure. MIT doesn't just
+  RECEIVE money from tech companies (research funding) — it INVESTS in tech companies
+  through Engine Ventures and MITIMCo ($27.4B endowment, 30-40% PE/VC). The Celestial
+  AI → Marvell $3.25B exit (Feb 2026) is a direct case of MIT profiting from AI
+  infrastructure while MIT TR covers the AI industry. The Israel Ruiz thread ties
+  three failures together: he launched Engine Ventures, sat on MIT TR's board, AND
+  approved Epstein's post-conviction donations. MIT's ILP (~240 member companies)
+  further broadens the corporate funding surface beyond bilateral partnerships.
   
   MIT's endowment portfolio compounds the conflict: with 30-40% allocated to 
   private investments (PE + VC), MIT has one of the highest VC exposures among 
