@@ -4023,3 +4023,50 @@ Plus Brian Kahn's Earther connection (Earther was Gizmodo's climate vertical).
 
 ### Test Results
 516 passed, 2 failed (pre-existing: outsourced_intensity framing device count mismatch from prior iteration, unrelated to this change)
+
+## 2026-06-26 19:00 PT — Hour Type B: Journalist/Publication Research
+
+**Focus:** Expand Lauren Goode career (2→7 entries), add 2 new journalists (Morgan Meaker, Paris Martineau), add 2 Wired editorial changes.
+
+### Journalists Updated
+
+**Lauren Goode (expanded: 2 → 7 career entries)**
+- Full career chain reconstructed: ESPN (production assistant, 2003-05) → A&E Networks (producer on Biography series, 2005-08) → Wall Street Journal (video producer, Digits show, 2008-11) → AllThingsD (senior tech reviewer under Mossberg/Swisher, 2011-13) → Recode (managing editor reviews, 2014-15) → The Verge (senior editor, Emmy Award winner, 2015-18) → Wired (senior writer, 2018-present)
+- Key insight: entire career shaped inside the Mossberg/Swisher talent pipeline (AllThingsD → Recode → Verge). She followed them through every entity transition before breaking to Condé Nast.
+- Sources: AllThingsD intro post (allthingsd.com/20110824/introducing-lauren-goode/), Talking Biz News hire announcement, Clark University profile (clarku.edu), Vox Media/Recode acquisition coverage (webpronews.com), CHM speaker profile
+
+### Journalists Added
+
+**Morgan Meaker (#96) — Telegraph → Wired → Bloomberg**
+- Career: Telegraph reporter (2018-21) → Wired senior writer covering Europe (Nov 2021-Sep 2024) → Bloomberg Weekend senior writer (2025-present)
+- City University London MA International Journalism. Forbes 30 Under 30 (European media). BSME 'best of best' + 'best specialist writer' (2023)
+- ANALYTICAL VALUE: Her departure from Wired creates a gap in EU regulatory coverage (DSA, DMA, AI Act). No replacement announced as of Jun 2026. Wired → Bloomberg migration = Condé Nast → Bloomberg LP ownership transition.
+- Sources: morgan-meaker.com, Talking Biz News hire (Nov 2021) and departure articles, Muck Rack, BuzzSumo, Veryan Studio interview
+
+**Paris Martineau (#97) — Outline → Wired → Information → Consumer Reports**
+- Career: NY Magazine/Select All (2017) → The Outline (staff writer, 2018) → Wired (business desk staff writer, Oct 2018-Jun 2020) → The Information (tech/investigative reporter, ~5 years, 2020-24) → Consumer Reports (senior investigative reporter, 2025-present)
+- NYU BA Comparative Literature. Known for month-long investigative deep dives at The Information.
+- ANALYTICAL VALUE: Pre-Drummond era Wired data point (Thompson era business desk). Crossed 3 distinct funding models: ad-funded (Wired), subscriber-funded (The Information), nonprofit (Consumer Reports) — natural experiment for how funding model shapes framing.
+- Sources: Talking Biz News hire/departure announcements, BuzzSumo profile, Better Offline podcast appearance, Techmeme archives
+
+### Editorial Changes Added
+1. Morgan Meaker departure from Wired (2024-09) — senior_writer_europe position, no replacement
+2. Paris Martineau departure from Wired (2020-06) — staff_writer_business position, joined The Information
+
+### Files Changed
+- `profiles/careers/journalists.yaml` — Expanded Goode (7 entries), added Meaker (3 entries), added Martineau (5 entries)
+- `profiles/careers/editorial_changes.yaml` — 2 new Wired departures
+- `README.md` — Journalist count 95→97, added Meaker and Martineau to migration examples
+- `docs/EDITORIAL_HISTORIES.md` — Journalist count 95→97, multi-pub count 92→96
+
+### Commit
+- Hash: e2e95b3
+- Pushed to GitHub
+
+### Test Results
+All 518 tests pass (no regressions — data-only changes).
+
+### Observations
+1. **Mossberg/Swisher pipeline:** Lauren Goode's expanded career reveals a talent pipeline from AllThingsD/Recode that fed reporters into both The Verge (Vox Media) and Wired (Condé Nast). Mike Isaac also came through this pipeline before landing at NYT. This cohort shares editorial DNA worth tracking across publications.
+2. **Wired Europe coverage gap:** Morgan Meaker's departure (Sep 2024) with no replacement signals Wired deprioritizing dedicated EU tech regulation coverage. This matters for MediaScope because EU regulatory framing (DSA/DMA enforcement, AI Act) is a major vector for anti-Meta coverage.
+3. **Funding model natural experiment:** Paris Martineau's 5-publication career spanning 3 distinct funding models (ad, subscription, nonprofit) is a rare natural experiment for DiD analysis of how funding structure shapes editorial framing, independent of individual journalist identity.
