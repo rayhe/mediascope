@@ -1964,7 +1964,15 @@ _KICKER_NEGATIVE_SIGNALS: list[re.Pattern] = [
         r"morale|workforce|layoff|layoffs|"
         r"privacy concern|safety concern|"
         r"employees? (?:are|were) (?:unhappy|miserable|angry|frustrated)|"
-        r"dark clouds?|uncertain|uncertainty)\b",
+        r"dark clouds?|uncertain|uncertainty|"
+        # Expert-warning kicker patterns: concluding expert quote that
+        # frames the subject as dangerous, reckless, or alarming.
+        # Discovered via MIT TR Meta AI hack analysis (Jun 2026) where
+        # "I think it's a very dangerous thing" was the kicker quote.
+        r"very dangerous|extremely dangerous|incredibly dangerous|"
+        r"dangerous thing|dangerous path|dangerous precedent|"
+        r"alarming|reckless|irresponsible|"
+        r"wake.?up call|cautionary|warning sign|red flag)\b",
         re.IGNORECASE,
     ),
 ]
