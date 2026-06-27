@@ -4,6 +4,46 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 10:00 PT — Hour Type B: Journalist Profile Expansion — Will Knight + Kara Swisher
+
+**Focus:** Expanding the two thinnest journalist profiles remaining in the database after the 06:00 PT session: Will Knight (was 2 entries, 256 total chars — the thinnest) and Kara Swisher (was 3 entries, 325 total chars — third thinnest).
+
+### Will Knight (2 → 4 entries, 256 → 4,318 chars, 17x expansion)
+
+**Career arc uncovered:** New Scientist (UK) → CNET (brief) → MIT Technology Review → Wired
+
+- **New Scientist (~2001-2008):** Editor and writer on the technology team. Joined straight out of university (studied anthropology and journalism in the UK). Prolific output: ~1,280+ articles across technology, space, and science (107 pages of archive). Covered AI during the "AI winter" — bought grad-school textbooks where neural networks were "a small chapter." Covered Deep Blue vs Kasparov (1997), interviewed Kasparov. UK science-weekly institutional norms (evidence-based, skeptical of hype) shaped his reporting style.
+- **CNET (dates unclear):** Brief stint mentioned in TalkingBizNews hire announcement alongside New Scientist.
+- **MIT Technology Review (2008-Sep 2019):** Senior editor for AI. 11-year tenure. Also online managing editor. Covered China's AI boom, witnessed AlexNet→AlphaGo→transformer arc. **Date correction:** Old entry said start 2005, end 2018 — corrected to 2008-2019.
+- **Wired (Sep 2019-present):** Senior writer. AI Lab newsletter. **Date correction:** Was 2018-09, corrected to 2019-09. Military AI feature (Gulf of Oman), Poynter Fellowship Yale speaker, Carnegie Council podcast (Oct 2023). 20+ year AI beat experience — Wired's most senior AI reporter.
+
+**Sources:** Yale Poynter Fellowship bio, Carnegie Council podcast transcript (Oct 2023), TalkingBizNews (Sep 17, 2019), New Scientist author archive (107 pages), Muck Rack.
+
+### Kara Swisher (3 → 6 entries, 325 → 6,337 chars, 19x expansion)
+
+**Career arc expanded:** City Paper (DC) → Washington Post → WSJ (16 years) → Recode → NYT Opinion → Vox Media/NY Mag
+
+- **Washington City Paper (1985-1986):** First job after Columbia MS.
+- **Washington Post (1986-~1997):** Style desk → retail reporter → dot-com/AOL national coverage. Met Walt Mossberg.
+- **WSJ (1997-2013):** "BoomTown" + "Home Economics" columns. D:ATD conference (2003), AllThingsD.com (2007). Gerald Loeb Award (2011). 16-year tenure.
+- **Recode (2014-2022):** Co-founded Jan 1, 2014. Vox acquired May 2015. Recode Decode + Pivot (Sep 2018) podcasts. Code Conference. MSNBC "Revolution."
+- **NYT (2018-2022):** Opinion writer. **Date correction:** Old entry had start 2020; actual 2018. Sway podcast (Sep 2020).
+- **Vox Media (Sep 2022-present):** NY Mag editor-at-large. "On with KS" + Pivot podcasts. Burn Book (Feb 2024). CNN "Wants to Live Forever" (6-part, Apr 11, 2026). AAAS 2021. Born 1962, Georgetown/Columbia.
+
+**KEY:** Ultimate portable-bias test case — anti-Big-Tech stance consistent across 5 outlets spanning 40 years.
+
+**Sources:** Wikipedia (67 citations), AAAS bio, Wallace House bio, NPR/WBUR, AP, Hachette UK, UC Berkeley Journalism, Edge.org.
+
+### Stats After This Iteration
+- Will Knight: 4 entries (up from 2), 4,318 total chars (up from 256, 17x)
+- Kara Swisher: 6 entries (up from 3), 6,337 total chars (up from 325, 19x)
+- Total journalists: 101 (unchanged)
+- Tests: 572 (all passing, unchanged)
+- Key corrections: 4 date errors fixed (WK MIT TR start/end, WK Wired start, KS NYT start)
+- Commit: 7a136f8
+
+---
+
 ## 2026-06-27 09:00 PT — Hour Type A: Article Deep Dive — MIT TR LeCun/AMI Labs Q&A Interview
 
 **Focus:** MIT Technology Review's Jan 22, 2026 Q&A interview with Yann LeCun about leaving Meta and launching AMI Labs. This interview-format article exposed three toolkit bugs and one major structural limitation (Q&A format blind spot).
