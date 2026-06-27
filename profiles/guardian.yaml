@@ -19,7 +19,7 @@ ownership_chain:
     description: "Core operating subsidiary. Publisher of theguardian.com — one of the largest English-speaking quality news websites. UK, US (2011), Australian (2013), European (2023), and International editions."
   - name: "Guardian Media Group (GMG)"
     entity_type: "parent_company"
-    description: "Media company. CEO: Anna Bateson. CFO/COO: Keith Underwood. Sold The Observer to Tortoise Media in 2024-25. Previously also operated GMG Ventures (now Mercuri)."
+    description: "Media company. CEO: Anna Bateson. CFO/COO: Keith Underwood. Sold The Observer to Tortoise Media in 2024-25. Previously also operated GMG Ventures (now Mercuri). B Corp certified since Oct 2019 (Companies House company 00094531)."
   - name: "Scott Trust Limited"
     entity_type: "holding_company"
     description: "Non-profit limited company (converted from trust in 2008). Purpose: 'to secure the financial and editorial independence of The Guardian in perpetuity and to safeguard the journalistic freedom and liberal values of The Guardian free from commercial or political interference.' Profits reinvested in journalism, not distributed. No shareholders, no corporate parent."
@@ -282,6 +282,78 @@ gmg_ventures_mercuri:
     launch: "2023-05"
     investments: "12 initial investments + 1 follow-on as of Mar 2025"
   focus: "Early-stage UK companies at intersection of media, entertainment, and technology. Pre-seed and seed. AI-enabled content creation, distribution, consumption, monetization."
+  total_investments: 84
+  total_exits: 12
+  notable_portfolio_companies:
+    - name: "Faculty AI"
+      status: "EXITED — acquired by Accenture (Mar 2026)"
+      description: >
+        Controversial UK government AI contractor. Built NHS COVID test-and-trace AI system.
+        Connection allegations to Cambridge Analytica via SCL Group (Ben Warner, brother of
+        CEO Marc Warner, reportedly worked at SCL). ~400 staff. CEO Marc Warner became
+        Accenture CTO post-acquisition. Faculty's 'Frontier' product synthesizes business data.
+      conflict_relevance: >
+        HIGH: Cambridge Analytica connection allegations create a circular ownership link —
+        Guardian's (Cadwalladr) journalism exposed Cambridge Analytica/Facebook, and the
+        Guardian's own VC arm invested in a company with alleged connections to the same
+        SCL Group network. Faculty was also the subject of critical journalism about government
+        AI procurement. Accenture exit likely generated returns for Mercuri Fund I.
+      source_urls:
+        - "https://www.ft.com/content/faculty-accenture-acquisition-2026"
+        - "https://www.theguardian.com/politics/2020/may/04/how-a-small-ai-company-faculty-helped-uk-government-with-covid-19"
+    - name: "Signal AI"
+      status: "PARTIAL EXIT — Battery Ventures acquired majority stake for $165M (Sept 2025). Mercuri retains minority position."
+      description: >
+        Media intelligence and monitoring platform. Operates across 226 markets, 75 languages.
+        Tracks and analyzes news media coverage for corporate clients. Processes millions of
+        articles daily for sentiment analysis, trend detection, and competitive intelligence.
+      conflict_relevance: >
+        MODERATE: Signal AI monitors and analyzes media coverage — including potentially
+        the Guardian itself and its competitors. Guardian's VC arm invested in a company
+        that algorithmically evaluates news quality and coverage patterns. This creates a
+        structural conflict: the Guardian has financial interest in a media monitoring company
+        that could provide intelligence about how publications (including itself) cover
+        technology companies.
+      source_urls:
+        - "https://www.businesswire.com/news/home/20250915signal-ai-battery-ventures"
+        - "https://signal-ai.com/about"
+    - name: "Founders Factory"
+      status: "Active (Fund I)"
+      description: "Startup incubator and accelerator. Co-founded by Henry Lane Fox and Brent Hoberman."
+    - name: "Betaworks Ventures"
+      status: "Active (Fund I)"
+      description: "NYC-based early-stage VC fund. AI camp operator."
+    - name: "Vidsy"
+      status: "Active (Fund I)"
+      description: "Video advertising platform connecting brands with creators."
+    - name: "Decoded"
+      status: "Active (Fund I)"
+      description: "Technology education company. Teaches coding and data skills to professionals."
+  recent_investments_2025_2026:
+    - name: "Lichen AI"
+      date: "2026-06"
+      description: "AI company (details limited)"
+    - name: "Memo"
+      date: "2026-03"
+      description: "Media/content company"
+    - name: "Made With Intent"
+      date: "2026-02"
+      description: "Intent-based commerce platform"
+    - name: "Electric Twin"
+      date: "2026-02"
+      round: "seed"
+      description: "Digital twin technology"
+    - name: "Unbox Commerce"
+      date: "2026-02"
+      description: "E-commerce platform"
+    - name: "Arthos"
+      date: "2025"
+      description: "Multimedia/design software"
+    - name: "Minitap"
+      date: "2025-12"
+      description: "Mobile content platform"
+  co_investors: ["Phoenix Court (5 deals)", "Atomico", "Betaworks", "Oxford Capital Partners"]
+  source_pitchbook: "PitchBook profile: 84 total investments, 12 exits as of Jun 2026"
   certifications: "B Corp certified. Co-founder of VentureESG (650 members). Climate pledge."
   source_url: "https://www.british-business-bank.co.uk/press-release/mercuri-formerly-gmg-ventures-raises-50-million-second-fund"
 
@@ -293,7 +365,46 @@ spur_coalition:
   operation_leaky_bucket: "Guardian's internal compliance program ('Operation Leaky Bucket') to identify and close access points for unauthorized content scraping, strengthen negotiating position for licensing deals."
   source_url: "https://journalism.co.uk/stories/bbc-ft-guardian-sky-and-the-times-unite-in-spur-coalition-for-ai-protection"
 
-editorial_leadership:
+tortoise_media_observer:
+  description: >
+    The Observer — world's oldest Sunday newspaper (founded 1791) — was sold by GMG to
+    Tortoise Media in late 2024/early 2025 as part of a £25M, 5-year investment commitment.
+    Scott Trust retained a 9% stake in Tortoise and secured seats on both the editorial board
+    (chaired by Richard Lambert, former FT editor) and the commercial board (chaired by
+    Matthew Barzun, former US Ambassador to UK). CEO James Harding (former Times editor,
+    former BBC News director) holds "significant control" per Companies House.
+  scott_trust_stake: "9%"
+  scott_trust_investment: "£5M (part of £25M total investment round)"
+  tortoise_investors:
+    - name: "Woodbridge Investments"
+      description: "Thomson family holding company — controlling shareholders of Thomson Reuters. Early backer of Tortoise Media."
+      conflict_relevance: "Thomson Reuters is a major global news/data provider. Creates cross-media ownership link: Guardian sold the Observer to a company backed by the Thomson Reuters controlling family."
+    - name: "Lansdowne Partners"
+      description: "London-based hedge fund. Led Tortoise's £10M Series A (2022)."
+      conflict_relevance: "Financial sector investor with broad portfolio positions."
+    - name: "Karl-Johan Persson (via Philian AB)"
+      description: "H&M family heir. Investor in Tortoise via Swedish holding company Philian AB."
+      conflict_relevance: "Minimal — retail/fashion, no direct tech/media competitive overlap."
+    - name: "Tom Persson (via Co-Made STHLM)"
+      description: "Another H&M family member. Investor via Co-Made STHLM."
+      conflict_relevance: "Minimal."
+    - name: "Standard Investments"
+      description: "US-based investment firm described as 'backer of media startups in the US.' New investor for Observer acquisition round."
+      conflict_relevance: "Low — media startup investor, no known Meta/tech overlap."
+    - name: "This Day (Gary Lubner Foundation)"
+      description: "Philanthropic foundation of Gary Lubner (former CEO of Belron/Autoglass). New investor for Observer acquisition round."
+      conflict_relevance: "Minimal — philanthropic investor."
+  boards:
+    editorial:
+      chair: "Richard Lambert"
+      chair_notes: "Former editor of the Financial Times (1991-2001), former Director General of the CBI (2006-2011)."
+    commercial:
+      chair: "Matthew Barzun"
+      chair_notes: "Former US Ambassador to the United Kingdom (2013-2017), former US Ambassador to Sweden (2009-2011). Obama campaign digital strategist."
+  source_urls:
+    - "https://www.theguardian.com/media/2024/sep/12/guardian-media-group-agrees-deal-to-sell-observer-to-tortoise-media"
+    - "https://find-and-update.company-information.service.gov.uk/company/11721596"
+    - "https://pressgazette.co.uk/publishers/tortoise-media-series-a-funding/"
   - name: "Katharine Viner"
     title: "Editor-in-Chief"
     start: "2015-06"
@@ -386,6 +497,46 @@ known_conflicts:
     evidence: "April 2017 Guardian statement to Digiday"
     source_url: "https://appleinsider.com/articles/17/04/21/uk-site-the-guardian-drops-apple-news-in-bid-to-boost-ad-subscription-revenues"
     notes: "Severity -1 indicates this is a counter-conflict (reduces overall conflict profile)"
+  - type: "investment"
+    description: >
+      Faculty AI / Cambridge Analytica connection: Mercuri (GMG Ventures) portfolio included
+      Faculty AI, a UK government AI contractor with alleged connections to the SCL Group
+      network (Cambridge Analytica's parent). Ben Warner (brother of CEO Marc Warner) reportedly
+      worked at SCL. Faculty was acquired by Accenture in Mar 2026, generating returns for
+      Mercuri Fund I. This creates a circular ownership link: Guardian's journalism (Cadwalladr
+      2018) exposed Cambridge Analytica/Facebook, while the Guardian's own VC arm invested in
+      a company with alleged ties to the same SCL network. Faculty was also itself a subject
+      of Guardian investigative reporting about government AI procurement.
+    severity: 2
+    evidence: "PitchBook exit data (Accenture acquisition Mar 2026). Guardian's own reporting on Faculty and government AI contracts. SCL/Warner connection reporting by multiple outlets."
+    source_urls:
+      - "https://www.theguardian.com/politics/2020/may/04/how-a-small-ai-company-faculty-helped-uk-government-with-covid-19"
+      - "https://pitchbook.com/profiles/faculty-company/investors"
+  - type: "investment"
+    description: >
+      Signal AI media monitoring conflict: Mercuri portfolio included Signal AI, a media
+      intelligence platform that monitors and analyzes news coverage across 226 markets and
+      75 languages. Battery Ventures acquired majority stake ($165M, Sept 2025); Mercuri
+      retains minority position. Guardian's VC arm invested in a company that algorithmically
+      evaluates news quality and media coverage patterns — potentially including the Guardian's
+      own coverage and that of its competitors.
+    severity: 2
+    evidence: "PitchBook data. Battery Ventures acquisition announcement (Sept 2025). Signal AI website describes media monitoring capabilities."
+    source_urls:
+      - "https://signal-ai.com/about"
+      - "https://www.businesswire.com/news/home/20250915signal-ai-battery-ventures"
+  - type: "ownership_link"
+    description: >
+      Thomson Reuters / Tortoise Media cross-ownership: Scott Trust holds 9% stake in Tortoise
+      Media (Observer buyer). Woodbridge Investments — the Thomson family holding company that
+      controls Thomson Reuters — is an early backer of Tortoise Media. Creates an indirect
+      ownership connection between the Guardian ecosystem and the Thomson Reuters controlling
+      family. Thomson Reuters is a major global news and data provider.
+    severity: 1
+    evidence: "Companies House filings for Tortoise Media. Press Gazette reporting on Tortoise Series A investors. Scott Trust 9% stake announced in Observer sale."
+    source_urls:
+      - "https://pressgazette.co.uk/publishers/tortoise-media-series-a-funding/"
+      - "https://find-and-update.company-information.service.gov.uk/company/11721596"
 
 litigation_connections:
   - case: "Banks v Cadwalladr"
@@ -488,14 +639,17 @@ notes: |
   PREVIOUS ASSUMPTION: No corporate conflicts. Only ideological/editorial bias.
   Scott Trust non-profit = clean. Useful baseline for isolating financial incentive signals.
 
-  NEW REALITY (updated Jun 25, 2026):
+  NEW REALITY (updated Jun 27, 2026):
   1. OpenAI licensing deal (Feb 2025) — direct commercial relationship with Meta's #1 AI competitor
   2. ProRata licensing deal — additional AI revenue stream from Meta competitor ecosystem
-  3. Mercuri/GMG Ventures — Scott Trust has direct VC investments in AI media-tech startups (£42M + £50M funds)
+  3. Mercuri/GMG Ventures — Scott Trust has direct VC investments in AI media-tech startups (£42M + £50M funds). 84 total investments, 12 exits per PitchBook. Notable: Faculty AI (Accenture exit, Cambridge Analytica/SCL connection), Signal AI ($165M Battery Ventures majority acquisition, media monitoring conflict)
   4. Vivian Schiller — board member with Twitter (Meta competitor) + extensive tech industry history
   5. SPUR coalition — Guardian actively shaping AI licensing ecosystem, structural opposition to non-licensing AI companies (which includes Meta)
   6. STEL PE/VC portfolio — £352M committed across 28 managers; Hg Capital ($110B AUM, ~60 B2B software cos worth $195B) is largest identified PE holding. Diffuse tech ecosystem exposure, no concentrated Meta-competitive positions.
   7. Cambridge Analytica identity — Guardian's journalism (Cadwalladr 2018) catalyzed $5.8B+ in enforcement actions against Meta. Institutional identity partly defined by opposition to Facebook/Meta data practices. Banks v Cadwalladr litigation (2019-2023) reinforced this editorial posture; Guardian signed Anti-SLAPP Coalition supporting Cadwalladr.
+  8. Tortoise Media / Observer sale — Scott Trust retains 9% stake + board seats. Tortoise backed by Woodbridge Investments (Thomson family, Thomson Reuters controlling shareholders), creating indirect cross-media ownership link.
+  9. Faculty AI circular conflict — Guardian's VC arm (Mercuri) invested in Faculty AI, which had alleged ties to SCL Group (Cambridge Analytica's parent), while Guardian journalism exposed Cambridge Analytica. Faculty also subject of Guardian investigative reporting on government AI procurement.
+  10. Signal AI media monitoring — Mercuri invested in a platform that algorithmically monitors and analyzes news coverage across 226 markets — potential conflict when the monitored includes the investor's own parent publication.
 
   COUNTER-CONFLICTS (structural independence factors):
   A. Dropped Apple News AND Facebook Instant Articles (Apr 2017) — ZERO platform revenue from Apple or Meta. Only tracked publication with no major platform revenue dependency.
@@ -516,8 +670,10 @@ notes: |
   1. Did Guardian coverage of OpenAI change after Feb 2025 deal? Compare pre-deal vs post-deal sentiment.
   2. Does Guardian cover Meta differently from non-licensing AI companies vs licensing AI companies?
   3. Did the SPUR coalition (Feb 2026) change editorial framing of AI companies generally?
-  4. NEW: Does the Cambridge Analytica institutional identity create a self-reinforcing editorial posture toward Meta independent of financial incentives?
-  5. NEW: Has the Washington Post endorsement controversy (Oct 2024) and subsequent US reader surge altered Guardian US editorial positioning?
+  4. Does the Cambridge Analytica institutional identity create a self-reinforcing editorial posture toward Meta independent of financial incentives?
+  5. Has the Washington Post endorsement controversy (Oct 2024) and subsequent US reader surge altered Guardian US editorial positioning?
+  6. NEW: Does Mercuri's Faculty AI investment (and its Cambridge Analytica/SCL connection) represent a blind spot in the Guardian's own investigative coverage?
+  7. NEW: Did Signal AI's Battery Ventures acquisition ($165M, Sept 2025) generate coverage in the Guardian, and was that coverage disclosed?
 
   Research note: Bunz & Braghieri 2021 found Guardian had only 29% positive AI coverage vs 49% for WSJ,
   making it still useful as benchmark for editorial AI skepticism independent of ownership conflicts.

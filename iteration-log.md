@@ -4,6 +4,47 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 03:00 PT — Hour Type C: Guardian Ownership Deep Dive — Tortoise, Mercuri Portfolio, Cross-Media Links
+
+**Focus:** Expanding the Guardian's ownership/funding profile — the smallest of the 5 tracked publications (603 lines, last Type C was Jun 22). Three research threads: Tortoise Media investor network, Mercuri/GMG Ventures portfolio expansion via PitchBook, and Guardian US corporate structure.
+
+### New Sections Added
+
+**1. tortoise_media_observer (new section)**
+- Documented Scott Trust's 9% retained stake in Tortoise Media + £5M investment
+- Mapped 6 Tortoise investors: Woodbridge Investments (Thomson family — Thomson Reuters controlling shareholders), Lansdowne Partners (£10M Series A lead), Karl-Johan Persson + Tom Persson (H&M family via Philian AB / Co-Made STHLM), Standard Investments, This Day (Gary Lubner Foundation)
+- Documented editorial board (chair: Richard Lambert, former FT editor) and commercial board (chair: Matthew Barzun, former US Ambassador)
+- James Harding "significant control" per Companies House
+
+**2. Mercuri portfolio expansion (84 investments, 12 exits)**
+- **Faculty AI** — EXITED via Accenture acquisition (Mar 2026). UK government AI contractor with Cambridge Analytica/SCL Group connection allegations (Ben Warner / Marc Warner). ~400 staff. HIGH conflict relevance: circular ownership link (Guardian journalism exposed Cambridge Analytica, Guardian VC invested in SCL-linked company)
+- **Signal AI** — PARTIAL EXIT: Battery Ventures majority stake $165M (Sept 2025), Mercuri retains minority. Media intelligence platform across 226 markets, 75 languages. MODERATE conflict: media monitoring platform potentially evaluating its own investor-parent's coverage
+- Added 7 recent 2025-2026 investments from PitchBook: Lichen AI, Memo, Made With Intent, Electric Twin, Unbox Commerce, Arthos, Minitap
+- Co-investors identified: Phoenix Court (5 deals), Atomico, Betaworks, Oxford Capital Partners
+- Updated total from "12+ portfolio companies" to verified "84 investments, 12 exits"
+
+### New Known Conflicts
+
+3 new entries added:
+1. **Faculty AI / Cambridge Analytica circular conflict** (severity 2): Guardian's VC invested in company with alleged SCL ties while Guardian journalism exposed Cambridge Analytica
+2. **Signal AI media monitoring conflict** (severity 2): Guardian's VC invested in a platform that algorithmically monitors news coverage across 226 markets — potential self-monitoring conflict
+3. **Thomson Reuters / Tortoise cross-ownership** (severity 1): Woodbridge Investments (Thomson Reuters controlling family) backs Tortoise Media, which received the Observer from Guardian
+
+### Other Updates
+- Added B Corp certification (Oct 2019) to GMG entity description (Companies House #00094531)
+- Updated notes section to items 8-10 (Tortoise, Faculty, Signal AI)
+- Added 2 new testable hypotheses (#6: Faculty AI coverage blind spot, #7: Signal AI acquisition coverage disclosure)
+- Guardian profile: 603 → 759 lines (+26% expansion)
+
+### Sources
+- Companies House: Tortoise Media (11721596), GMG (00094531)
+- Press Gazette: Tortoise Series A funding round
+- PitchBook: Mercuri/GMG Ventures investment history (84 investments, 12 exits)
+- Guardian own reporting: Faculty AI and government AI contracts (2020)
+- Signal AI website + BusinessWire acquisition announcement
+
+---
+
 ## 2026-06-27 02:00 PT — Hour Type B: Guardian Journalist Expansion + Nellie Bowles & Danny Yadron
 
 **Focus:** Strengthening the Guardian journalism pipeline. Guardian was the weakest of the 5 tracked publications (13 journalists). Expanded 3 existing journalists with richer career data and added 2 new journalists from the 2015 Guardian US West Coast bureau expansion trio. Added 3 Guardian editorial changes documenting the West Coast bureau buildout.
