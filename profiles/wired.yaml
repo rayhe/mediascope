@@ -140,12 +140,55 @@ advance_investments:
       opened at $47, valued at $6.4B. Return: 5,800%+ (Bloomberg Billionaires Index).
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
-    current_value_estimate: "~$6.81B at $161.37/share (Jun 26, 2026). Reddit now ~56% of Advance's public equity."
+    current_value_estimate: "~$7.04B at $166.94/share (Jun 26, 2026 close). Reddit now ~57% of Advance's public equity."
+    q1_2026_financials: >
+      Q1 2026: Revenue $663.41M (+69.1% YoY), EPS $1.01 (vs $0.13 YoY, +677%).
+      Beat consensus: revenue +8.03%, EPS +62.9%. Beat consensus all 4 trailing quarters.
+      FY2026 projected: $3.25B (+47.6%), FY2027: $4.31B (+32.5%).
+      Market cap $30.42B. 52-week range $119.27-$282.95. Beta 2.06 (high volatility).
+    source_urls_financials:
+      - "https://www.zacks.com/stock/news/2478500/reddit-inc-rddt-is-attracting-investor-attention-here-is-what-you-should-know"
+      - "https://www.marketbeat.com/stocks/NYSE/RDDT/institutional-ownership/"
+    governance_control: >
+      FAR DEEPER THAN 2 BOARD SEATS. Per Reddit 2025 proxy (SEC filing rddt-20250428),
+      Advance has consent/veto rights over Reddit's most consequential decisions:
+      (1) Establishing new securities classes >10% of Advance's voting power
+      (2) Amending Certificate of Incorporation or Bylaws affecting Advance
+      (3) Change of control, M&A, business combinations, or asset sales changing shareholder rights
+      (4) Liquidation, dissolution, or winding up
+      (5) Terminating, reducing responsibilities of, or removing the CEO (Steve Huffman)
+      (6) Submitting Class C→A conversion proposals to shareholders
+      (7) Board size increases beyond 10 directors
+      These rights continue until: (a) change of control; (b) Advance drops below 5% of
+      Class A+B; or (c) Advance drops below 50% of IPO equity AND Class B <7.5% of total.
+      This is near-controlling governance, NOT mere "significant influence."
+    governance_source_url: "https://www.sec.gov/Archives/edgar/data/1713445/000162828025017808/rddt-20250428.htm"
+    collateralized_lending: >
+      NEW FINDING (Bloomberg Law, Nov 22, 2024): Advance Magazine Publishers Inc. established
+      a credit facility pledging 7.8M Reddit shares as collateral (~$1.2B at $145.38-$148.54/share,
+      ~8% discount to $158.02 market price). Simultaneously purchased derivatives on the same
+      shares to maintain economic exposure while borrowing. This means Advance is using Reddit
+      as a FINANCIAL INSTRUMENT: its access to capital is directly tied to Reddit's stock price.
+      A Reddit share price drop could trigger margin calls or tighter credit terms, creating
+      an even more acute incentive for Wired to support narratives that benefit Reddit (and
+      harm Meta, Reddit's direct competitor for ad dollars). This also means Advance likely
+      has NOT reduced its economic exposure to Reddit despite the share pledge — the derivative
+      purchases maintain upside participation.
+    collateralized_lending_source_urls:
+      - "https://news.bloomberglaw.com/mergers-and-acquisitions/advance-magazine-said-to-seek-1-2-billion-in-reddit-share-sale"
+    insider_selling_context: >
+      Reddit insiders (excluding Advance) sold 326,144 shares ($48.8M) in last 3 months
+      (as of Jun 2026). CEO Huffman sold 18,000 shares May 15 at $157.15 and Feb 27 at
+      $145.12. COO Jennifer Wong sold 39,167 shares Apr 16 at $161.47. CTO Christopher Slowe
+      sold 15,500 shares Apr 8 at $150.67. Corporate insiders own 34.25% of stock.
+      SOURCE: MarketBeat institutional ownership data, SEC Form 144 filings.
+    insider_selling_source_url: "https://www.marketbeat.com/stocks/NYSE/RDDT/institutional-ownership/"
     competitive_with: ["Meta", "X/Twitter"]
     meta_competition: >
       Reddit is a direct Meta competitor for user attention, advertiser spend, and community
-      engagement. Reddit's advertising business (~$1.3B FY2025 rev) competes directly with
-      Meta's ad platform for performance advertising dollars.
+      engagement. Reddit's advertising business (~$1.3B FY2025 rev, projected $3.25B FY2026)
+      competes directly with Meta's ad platform for performance advertising dollars. Reddit's
+      69.1% YoY revenue growth means the competitive threat is ACCELERATING.
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance+magazine&CIK=&type=SC+13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
     source_url: "https://www.thewrap.com/conde-nast-reddit-ipo-advance-publications-nearly-2-billion/"
 
@@ -366,27 +409,38 @@ advance_investments:
     source_url: "https://advance.com"
 
 # ===================================================================
-# TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (updated Jun 26, 2026)
+# TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (updated Jun 26, 2026 close)
 # ===================================================================
-# Reddit (RDDT): ~$6.81B (42.2M shares @ $161.37, Jun 26 2026)
+# Reddit (RDDT): ~$7.04B (42.2M shares @ $166.94, Jun 26 2026 close, +5.64% on the day)
 # Charter (CHTR): ~$2.67B (20.6M shares @ $129.65, STEEP DECLINE: -67% 1yr, -82% 5yr)
 # Turnitin: ~$1.75B+ (acquired 2019, likely appreciated given AI detection boom)
 # WBD remaining: ~$2.65B at market ($26.98) or ~$2.94B at Paramount $30 tender + $1.1B realized
-# Condé Nast: Private (profitable 2025, events rev +40%, 7 marquee brands = 85% of undisclosed rev)
+# Condé Nast: Private (profitable 2025, events rev +40% YoY, projecting +22% in 2026)
+#   - CEO Roger Lynch (Oct 2025): "no longer expects advertising to be a growth engine"
+#   - Pivoting to: events, subscriptions, commerce, AI licensing (OpenAI, Perplexity)
+#   - Events highlights: VF Oscars Party +65% rev, New Yorker Festival +86%, Vogue World +48%
 # ACBJ: Private
 # IRONMAN Group: Private
 # Other holdings: Private
-# TOTAL PUBLIC EQUITY: ~$12.1B at market (Reddit + Charter + WBD market prices Jun 26)
-# TOTAL PUBLIC EQUITY (if Paramount closes at $30): ~$12.4B
+# TOTAL PUBLIC EQUITY: ~$12.4B at market (Reddit + Charter + WBD market prices Jun 26 close)
+# TOTAL PUBLIC EQUITY (if Paramount closes at $30): ~$12.7B
 # TOTAL PRIVATE SUBSIDIARIES: Turnitin (~$1.75B+ est.), Condé Nast, ACBJ, IRONMAN, PADI, POP, Stage, NSF
 # HawkEye 360: EXITED via IPO May 2026 at ~$2.4B valuation
 # Donald Newhouse net worth at death: $15.4B (Forbes May 2026)
 #
-# KEY PORTFOLIO SHIFT: Charter's steep decline (~$6B loss in 12 months) and the pending
-# WBD-Paramount liquidity event could significantly alter Advance's capital allocation.
-# If Paramount closes, Advance will have ~$4B+ cash from WBD to redeploy. Meanwhile,
-# Reddit ($6.66B) is now by far the dominant public holding — making the conflict between
-# Advance's Reddit investment and Wired's Meta coverage even more material.
+# KEY PORTFOLIO CONCENTRATION: Reddit is now 57% of Advance's public equity (~$7.04B of ~$12.4B).
+# Advance is also LEVERAGING Reddit for capital (Nov 2024: $1.2B credit facility collateralized
+# by 7.8M Reddit shares). This means Advance's capital access — which could fund Condé Nast
+# operations — is directly tied to Reddit's stock price. Combined with Reddit's Q1 2026
+# revenue growth of +69.1% YoY (projected $3.25B FY2026), Reddit is both the dominant asset
+# AND the dominant revenue growth story in the Advance portfolio.
+#
+# CONFLICT ESCALATION: Reddit's accelerating revenue growth makes the conflict between
+# Advance's Reddit investment and Wired's Meta coverage MORE MATERIAL over time, not less.
+# Every dollar Reddit wins in advertising is partially a dollar Meta loses. Advance's
+# collateralized lending means even Advance's SHORT-TERM LIQUIDITY depends on Reddit's
+# stock price remaining high. The Newhouse family's wealth, Condé Nast's financial backing,
+# and Advance's credit facility are all increasingly tied to Reddit outcompeting Meta.
 
 # ===================================================================
 # REVENUE RELATIONSHIPS — Condé Nast AI licensing deals
@@ -620,8 +674,8 @@ known_conflicts:
     description: >
       NEW STRUCTURAL SHIFT (Jun 2026): As Charter Communications collapses (-67% 1yr, -82% 5yr) and WBD
       approaches a Paramount Skydance acquisition at $30/share, Reddit is becoming an ever-larger share
-      of Advance's public portfolio. Reddit now represents ~56% of Advance's public equity ($6.66B of
-      ~$12.0B), up from ~40% at time of IPO. If Paramount closes and WBD cash is redeployed, and Charter
+      of Advance's public portfolio. Reddit now represents ~57% of Advance's public equity ($7.04B of
+      ~$12.4B), up from ~40% at time of IPO. If Paramount closes and WBD cash is redeployed, and Charter
       continues declining, Reddit could represent 65-70%+ of Advance's public portfolio. This
       CONCENTRATION makes the conflict-of-interest between Reddit (direct Meta competitor) and Wired's
       Meta coverage even more acute — the Newhouse family's wealth is increasingly tied to Reddit's
@@ -629,10 +683,69 @@ known_conflicts:
       has ever disclosed that the family controlling Wired derives an increasingly dominant share of
       its wealth from a direct Meta competitor.
     severity: 5
-    evidence: "RDDT, CHTR, WBD stock data Jun 25 2026; Paramount tender offer SEC filings"
+    evidence: "RDDT, CHTR, WBD stock data Jun 26 2026 close; Paramount tender offer SEC filings"
     source_urls:
       - "https://www.marketbeat.com/stocks/NYSE/RDDT/chart/"
       - "https://www.marketbeat.com/stocks/NASDAQ/CHTR/chart/"
+
+  - type: "collateralized_financial_dependency"
+    description: >
+      NEW FINDING (Jun 26, 2026 iteration): Bloomberg Law revealed (Nov 22, 2024) that
+      Advance Magazine Publishers Inc. pledged 7.8M Reddit shares (~$1.2B at $145.38-$148.54/share)
+      as collateral for a credit facility. Simultaneously purchased derivatives on the same shares
+      to maintain economic exposure. This transforms Advance's relationship with Reddit from
+      passive investment to ACTIVE FINANCIAL DEPENDENCY:
+      (1) CAPITAL ACCESS: Advance's ability to borrow is now directly tied to Reddit's stock price.
+          A Reddit share decline could trigger margin calls, tighter credit terms, or forced share sales.
+      (2) LIQUIDITY CONDUIT: Capital raised through Reddit-collateralized borrowing could fund
+          Condé Nast operations (events expansion, editorial staffing, AI licensing deals) — meaning
+          Wired's operational budget may be indirectly supported by Reddit's stock performance.
+      (3) DERIVATIVE MAINTENANCE: The simultaneous derivative purchase shows Advance wants to keep
+          Reddit upside while borrowing against the shares — indicating NO intention to reduce exposure.
+      (4) CONFLICT AMPLIFICATION: A media company whose parent uses Reddit shares as collateral for
+          credit has an even more acute short-term incentive to support Reddit-friendly narratives than
+          a passive investor would. Passive investors can wait out downturns; a collateralized borrower
+          faces immediate liquidity consequences from share price drops.
+      The 7.8M pledged shares represent ~18.5% of Advance's 42.2M total Reddit holdings, suggesting
+      this may be just the first tranche of a larger collateralization strategy.
+    severity: 5
+    evidence: >
+      Bloomberg Law (Nov 22, 2024): "Advance Plans to Borrow Against $1.2 Billion Reddit Stake."
+      Advance Magazine Publishers Inc. offered 7.8M shares at $145.38-$148.54 (~8% discount to $158.02
+      market price). Separately buying derivatives to maintain economic exposure.
+    source_urls:
+      - "https://news.bloomberglaw.com/mergers-and-acquisitions/advance-magazine-said-to-seek-1-2-billion-in-reddit-share-sale"
+    notes: >
+      This finding is particularly significant because it reveals Advance's ACTIVE financial
+      engineering around Reddit, not mere passive holding. The credit facility structure means
+      Advance's financial health has a time-dependent sensitivity to Reddit's stock price that
+      a pure equity investor would not have. Combined with the governance control (CEO veto,
+      M&A veto, board size control), Advance is both the most powerful governance actor AND a
+      leveraged financial participant in Reddit — a combination that maximizes the conflict
+      with Wired's editorial coverage of Meta, Reddit's primary competitor.
+
+  - type: "conde_nast_commercial_pivot"
+    description: >
+      NEW CONTEXT (Adweek, May 19, 2026): Condé Nast CEO Roger Lynch explicitly stated (Oct 2025)
+      that "the company no longer expects advertising to be a growth engine." Condé Nast is
+      pivoting to four non-advertising revenue streams: (1) events (+40% rev YoY in 2025,
+      projecting +22% in 2026), (2) subscriptions, (3) commerce, and (4) AI licensing deals
+      with OpenAI and Perplexity. Events highlights: Vanity Fair Oscars Party +65% rev YoY,
+      New Yorker Festival +86%, Vogue World +48%. CRO Elizabeth Herbst-Brady confirmed overall
+      revenue is up YoY but declined to share specifics.
+      CONFLICT RELEVANCE: If Condé Nast's advertising business is declining and AI licensing
+      deals are filling the gap, Wired has an even stronger financial incentive to avoid
+      alienating its AI licensing partners (OpenAI, Perplexity, Amazon Rufus, potentially Apple).
+      These are the same companies that compete directly with Meta in AI. The commercial pivot
+      means Wired's parent company's revenue health is increasingly dependent on maintaining
+      good relationships with Meta's competitors.
+    severity: 3
+    evidence: >
+      Adweek (May 19, 2026): "How Condé Nast Grew Its Events Revenue 40% Last Year."
+      CRO Elizabeth Herbst-Brady interview. CEO Roger Lynch October 2025 statement on
+      advertising growth expectations.
+    source_urls:
+      - "https://www.adweek.com/media/how-conde-nast-grew-its-events-revenue-40-last-year/"
 
   - type: "dual_sided_ai_conflict"
     description: >
