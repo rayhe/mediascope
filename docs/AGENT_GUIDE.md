@@ -227,12 +227,14 @@ from mediascope.analyze.framing import detect_framing_devices
 from mediascope.analyze.sources import extract_sources, analyze_source_stance
 from mediascope.analyze.sentiment import measure_outsourced_intensity
 from mediascope.analyze.framing import detect_framing_devices  # power_asymmetry is a framing device type
+from mediascope.analyze.topics import classify_topic
 from mediascope.score.asymmetry import calculate_asymmetry
 from mediascope.score.byline import build_journalist_profiles
 from mediascope.conflicts.ownership import parse_ownership_chain, find_conflicts
 from mediascope.conflicts.disclosure import generate_disclosure
 from mediascope.quality.standards import check_quality
 from mediascope.quality.citations import extract_citations, grade_source
+from mediascope.quality.claims import extract_claims, map_claims_to_evidence
 from mediascope.report.weekly import generate_weekly_report
 from mediascope.storage.db import init_db, store_article
 from mediascope.careers.tracker import CareerTracker
@@ -445,7 +447,7 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
 ```json
 {
     "name": "detect_framing_devices",
-    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 30 device types across three tiers: core (10 pattern-matched), extended (17 from real-article analysis), and structural post-pass (3 heuristic-based).",
+    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 31 device types across three tiers: core (10 pattern-matched), extended (18 from real-article analysis), and structural post-pass (3 heuristic-based).",
     "parameters": {
         "type": "object",
         "properties": {
@@ -561,6 +563,63 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
                 "description": "Filter by destination publication slug"
             }
         }
+    }
+}
+```
+
+### extract_citations
+
+```json
+{
+    "name": "extract_citations",
+    "description": "Extract citations and source attributions from text. Detects URLs, 'according to' attributions, formal citation formats ([1], (Author 2024)), and in-text attributions. Each citation is graded by source authority: primary (SEC filings, court records, .gov), secondary (Reuters, AP, WSJ), or tertiary (blogs, social media, opinion). Returns a list of Citation objects with text, URL, source_type, and domain.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "text": {
+                "type": "string",
+                "description": "Text to extract citations from"
+            }
+        },
+        "required": ["text"]
+    }
+}
+```
+
+### extract_claims
+
+```json
+{
+    "name": "extract_claims",
+    "description": "Identify factual claims in text and classify by evidence type. Scans for statistics (percentages, dollar amounts, multipliers), quotes (attributed statements), citations (URLs, 'according to'), and bare assertions (unsupported factual claims). Each claim gets a confidence score (0.0-1.0) based on evidence strength. Use with map_claims_to_evidence() to get sourced/unsourced ratios.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "text": {
+                "type": "string",
+                "description": "Article or report text to scan for claims"
+            }
+        },
+        "required": ["text"]
+    }
+}
+```
+
+### map_claims_to_evidence
+
+```json
+{
+    "name": "map_claims_to_evidence",
+    "description": "Map extracted claims to their evidence status. Takes the output of extract_claims() and returns a structured summary: sourced claims, unsourced claims, claims grouped by evidence type (statistic, quote, citation, assertion), total count, and sourced_ratio (fraction of claims with verifiable sources). The sourced_ratio is a key quality metric — articles below 0.5 have more unsourced claims than sourced ones.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "claims": {
+                "type": "array",
+                "description": "List of Claim objects from extract_claims()"
+            }
+        },
+        "required": ["claims"]
     }
 }
 ```

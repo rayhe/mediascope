@@ -2151,10 +2151,10 @@ def _detect_speculative_framing(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 27 pattern-matched device types plus 3 structural
-    post-pass types (30 total).
+    Scans for 28 pattern-matched device types plus 3 structural
+    post-pass types (31 total).
 
-    Pattern-matched (27): guilt_by_association, anonymous_authority,
+    Pattern-matched (28): guilt_by_association, anonymous_authority,
     catastrophizing, false_balance, selective_omission_signal,
     emotional_appeal, straw_man, loaded_language, refusal_amplification,
     juxtaposition, timeline_implication, power_asymmetry,
@@ -2164,7 +2164,7 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     self_referential_investigation, sovereignty_framing,
     scale_magnitude, ceo_personalization, litigation_framing,
     corporate_reassurance_undercut, sarcastic_correction,
-    and outsourced_intensity.
+    hypocrisy_frame, and outsourced_intensity.
 
     Structural post-pass (3): kicker_framing, analogy_stacking,
     speculative_framing.

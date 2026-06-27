@@ -166,7 +166,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 30 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (added from real-article analysis), and structural devices (detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 31 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (18 added from real-article analysis), and structural devices (3 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -206,6 +206,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Corporate Reassurance Undercut** | Quoting a corporate entity's reassurance or responsibility language and immediately undercutting it with contradicting evidence or adversarial conjunctions | "carefully designed with privacy safeguards" + "but/however/yet" + failure evidence; "no indication of improper" + contradiction; "committed to / takes seriously" + contradiction + exposure/failure | Wired/Reuters MCI data exposure coverage — Meta's corporate communications reframed as hollow through editorial juxtaposition of reassurance language with reported failures |
 | **Hypocrisy Frame** | Singling out an entity as the sole holdout that has not done what all peers have, framing inaction as hypocrisy or defiance rather than legitimate disagreement | "the only major company/developer that has not," "uniquely among its peers," "alone in refusing" — entity isolation + negation patterns with optional prepositional phrases between entity noun and negation clause | NYT AI voluntary review article — framing Meta as uniquely defiant among tech companies. Distinct from isolation_framing because hypocrisy_frame specifically implies moral failing (not just being different), and from pressure_language because the frame comes from peer comparison rather than institutional demands |
 | **Sarcastic Correction** | Editorial sarcasm that mockingly concedes a positive outcome before immediately retracting it, weaponizing irony to undermine a company's position | "Of course... oh hang on/wait/no," "Just kidding," "Spoiler: it didn't," "...right? Wrong/Nope," "(Narrator: it did not.)," "Color me surprised," "Who could have predicted," "What could possibly go wrong," "Nothing to see here" — concede-then-retract and standalone sarcastic constructions | Engadget Meta/Wynn-Williams lawsuit article — explicit editorial sarcasm mocking Meta's market resilience after whistleblower book. Distinct from ironic_quotation (which undercuts *sources'* words) because sarcastic_correction is pure editorial voice deploying rhetorical sarcasm without quoting anyone |
+| **Outsourced Intensity** | Loaded emotional language appearing in legal filings, complaint text, or whistleblower allegations quoted by the journalist, while the journalist's own prose remains neutral — outsourcing the emotional charge to authoritative documents | "the complaint alleges [loaded term]," "according to the filing... blatant/egregious/coercive," quoted legal language containing high-intensity characterizations, plaintiff/whistleblower allegations carrying emotional weight | Guardian Wynn-Williams lawsuit article (Jun 25, 2026) — all loaded language ("blatant violation," "coercive surveillance," "improper and unlawful") came from the complaint, not the journalist. Distinct from loaded_language (editorial voice) and anonymous_authority (unnamed sources). See also §7 for the separate quantitative outsourced intensity ratio measure |
 
 #### Structural Devices (Post-Pass)
 
@@ -311,6 +312,12 @@ The "High authority + Adversarial stance" combination is the hallmark of sophist
 ### 7.1 The Technique
 
 "Outsourced intensity" is the editorial practice of maintaining measured, professional prose in the journalist's own voice while deploying emotionally charged quotes from sources.  The byline text reads as neutral reporting; the emotional impact comes entirely from the quotes.  This lets the journalist (and publication) maintain plausible objectivity while framing coverage adversarially.
+
+**Note:** Outsourced intensity is analyzed in two complementary ways in MediaScope:
+1. **As a framing device** (§4.1, Extended Devices): pattern-based detection of specific instances where legal filings, complaints, or whistleblower allegations carry loaded emotional language while the journalist's prose remains neutral. This detects individual occurrences and contributes to framing device counts.
+2. **As a quantitative metric** (this section): a ratio measuring the overall balance of emotional language between quoted segments and editorial prose across the full article. This provides a continuous score from 0.0 to 1.0.
+
+Both are valuable: the framing device flags specific outsourcing patterns as evidence, while the ratio quantifies the technique's overall prevalence in an article.
 
 Example from a real article (Guardian, Jun 1 2026):
 > The strongest language — "censorship", "despotic", "hostage", "asshole" — all comes from quotes, not the journalist.
