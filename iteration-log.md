@@ -4,6 +4,52 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 04:00 PT — Hour Type D: Documentation Consistency Audit — Framing Device Count Fix + AGENT_GUIDE Schema Expansion
+
+**Focus:** Cross-document consistency audit of all 6 documentation files, CLI help text, and code docstrings. Found and fixed a systematic undercounting of framing device types, and expanded the AGENT_GUIDE with missing function calling schemas.
+
+### Bug Found: Framing Device Count Off by 1
+
+**Root cause:** The `outsourced_intensity` device type was added to `_DEVICE_PATTERNS` (framing.py line 1944) during the Guardian Wynn-Williams lawsuit analysis (Jun 25, commit in test_wynn_williams_fixes.py context), but the docstring and all documentation files continued to say "30 total (27 pattern + 3 post-pass)."
+
+**Actual count:** 28 pattern-matched + 3 structural post-pass = **31 total**.
+
+**The 28 pattern-matched types:**
+guilt_by_association, anonymous_authority, catastrophizing, false_balance, selective_omission_signal, emotional_appeal, straw_man, loaded_language, refusal_amplification, juxtaposition, timeline_implication, power_asymmetry, ceo_personalization, litigation_framing (14 initial dict) + military_techno_optimism, selective_rehabilitation, rhetorical_question, hypocrisy_frame, ironic_quotation, isolation_framing, pressure_language, geopolitical_regulatory_pressure, self_referential_investigation, sovereignty_framing, scale_magnitude, corporate_reassurance_undercut, sarcastic_correction, outsourced_intensity (14 later-added)
+
+**The 3 post-pass types:** kicker_framing, analogy_stacking, speculative_framing
+
+### Files Fixed (30→31)
+
+1. **`mediascope/analyze/framing.py`** — `detect_framing_devices()` docstring: 27→28 pattern, 30→31 total, outsourced_intensity added to enumeration
+2. **`docs/METHODOLOGY.md`** — §4.1: Extended tier 17→18, total 30→31; new outsourced_intensity row in Extended Devices table with full description and discovery context; §7 cross-reference note explaining dual nature (pattern detection ≠ ratio metric)
+3. **`docs/ARCHITECTURE.md`** — framing.py module detail: 30→31, outsourced_intensity added to extended tier list
+4. **`docs/AGENT_GUIDE.md`** — detect_framing_devices schema: 30→31, extended 17→18
+5. **`mediascope/cli.py`** — analyze command help text: 30→31
+
+### AGENT_GUIDE: 3 New Function Calling Schemas
+
+Three quality module functions were available in the Python API and fully tested (39 + 28 = 67 tests) but had no function-calling schemas for agent integration:
+
+1. **`extract_citations`** — URL detection, "according to" attributions, formal citations, domain-based source grading (primary/secondary/tertiary)
+2. **`extract_claims`** — Statistic/quote/citation/assertion classification with confidence scoring
+3. **`map_claims_to_evidence`** — Sourced vs unsourced ratios, evidence type grouping, sourced_ratio metric
+
+Also added `classify_topic` and `claims` module imports to the Python API section.
+
+### Outsourced Intensity: Dual Nature Documented
+
+Added a cross-reference note in METHODOLOGY.md §7 explaining the two complementary ways MediaScope analyzes outsourced intensity:
+1. **As a framing device** (§4.1): pattern-based detection of specific instances where legal filings/complaints carry loaded language while editorial prose stays neutral. Returns individual `FramingDevice` objects.
+2. **As a quantitative metric** (§7): ratio measuring overall balance of emotional language between quoted segments and editorial prose. Returns a continuous 0.0–1.0 score.
+
+### Verification
+- 535 tests pass (no code logic changes — docstrings, docs, CLI text only)
+- Commit: `d63fb4a`
+- Pushed to GitHub
+
+---
+
 ## 2026-06-27 03:00 PT — Hour Type C: Guardian Ownership Deep Dive — Tortoise, Mercuri Portfolio, Cross-Media Links
 
 **Focus:** Expanding the Guardian's ownership/funding profile — the smallest of the 5 tracked publications (603 lines, last Type C was Jun 22). Three research threads: Tortoise Media investor network, Mercuri/GMG Ventures portfolio expansion via PitchBook, and Guardian US corporate structure.
