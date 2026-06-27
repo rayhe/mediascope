@@ -4,6 +4,75 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 07:00 PT — Hour Type C: Wired/Condé Nast Ownership Deep Dive — Google AI Traffic Crisis, 2026 Proxy, Revenue Data, CNIL Fine
+
+**Focus:** Six major expansions to the Wired/Condé Nast/Advance Publications profile from primary sources: Reddit 2026 DEF 14A (SEC EDGAR), FT Lynch interview (Feb 27, 2026), Adweek events revenue reporting (May 2026), Bloomberg Law collateralized lending (Nov 2024), PPC Land traffic analysis, and CNIL enforcement.
+
+### 1. Condé Nast Revenue (~$2B)
+
+First public revenue estimate since 2021. WSJ previously reported 2021 revenue was nearly $2B. Lynch told FT that 2025 revenue was "similar to 2021 levels" but "far more profitable now." Gross margins climbed ~3 percentage points over 2-3 years. Operating expenses "relatively flat" — profit improvement is structural, not just cost-cutting. The New Yorker hit record revenue, profits, and subscribers in 2025. Digital operations now generate majority of revenue.
+
+**Sources:** Financial Times interview (Feb 27, 2026), WSJ (2021 revenue reporting)
+
+### 2. Google AI Traffic Crisis
+
+CEO Lynch declared Google search "no longer a meaningful driver" of Condé Nast traffic — down from majority to approximately 25% by 2025. Called AI summaries "another sort of death blow." Described Google's opt-out arrangement as "pernicious" — publishers must exit Google Search entirely to prevent content from appearing in AI summaries. No mechanism to remain indexed in traditional search while excluding from AI Overviews.
+
+**Critical:** Condé Nast has NOT reached a licensing deal with Google (confirmed by Lynch). Has deals with OpenAI, Amazon, Perplexity. Google's Dec 10, 2025 pilot with Der Spiegel/Guardian/WaPo EXCLUDED Condé Nast. This means Google joins Meta as the ONLY two major tech companies with no revenue relationship with Condé Nast — both adversarial for different reasons (Google: traffic destruction; Meta: competitor to Advance's Reddit).
+
+Added as new severity-4 `google_ai_traffic_crisis` conflict entry.
+
+**Regulatory context added:** EC formal antitrust probe (Dec 9, 2025), CMA binding conduct requirements (Jan 28, 2026), Google's Sulina Connal admission that content exclusion is "huge engineering project" (Feb 11, 2026).
+
+**Sources:** PPC Land analysis, FT interview, NewzDash traffic data, Reuters Institute survey
+
+### 3. Reddit 2026 Proxy (DEF 14A)
+
+Updated all references from "Reddit 2025 proxy" to "Reddit 2026 proxy" (SEC filing 0001713445-26-000060, filed Apr 23, 2026). Key updates:
+
+- **Voting power corrected:** 65.2% total voting power (was listed as 33.5%, which was the S-1 economic ownership percentage, not the post-IPO voting power). 83.5% of Class B common stock (10 votes/share).
+- **Outstanding shares:** 141,867,916 Class A + 50,543,398 Class B = 192,411,314 total (as of March 31, 2026).
+- **Board:** Steven O. Newhouse (Director, since March 2024), Robert A. Sauerberg Jr. (Vice Chairperson, since April 2012 — former Condé Nast CEO).
+- **AP board confirmed:** Michael A. Newhouse, Steven O. Newhouse, Samuel I. Newhouse III, Thomas S. Summer, Jamie Miller, Victor F. Ganzi.
+- **Huffman voting proxy** (dated March 19, 2024): Irrevocable proxy over all Advance shares; also covers Tencent shares (Voting Agreement dated March 19, 2024).
+
+**Source:** SEC EDGAR DEF 14A, https://www.sec.gov/Archives/edgar/data/1713445/000171344526000060/rddt-20260423.htm
+
+### 4. Reddit TTM Financials
+
+Added trailing 12 month data (as of Q1 2026):
+- Revenue: $2.2B (TTM)
+- Net income: $530M (net margin 24.1%)
+- Operating income: $442M (operating margin 20.1%)
+- Gross profit: $2.0B (gross margin 91.2%)
+- Operating cash flow: $690.9M
+- Current ratio: 11.56
+- Market cap: ~$32.1B at $166.94/share (Jun 26, 2026 close)
+
+Reddit is now **profitable at scale** with over $500M net income TTM.
+
+**Sources:** MarketBeat, StockTitan, Zacks
+
+### 5. EU/UK Regulatory Context
+
+Added formal regulatory actions against Google's AI content practices:
+- European Commission opened formal antitrust probe (Dec 9, 2025)
+- UK CMA proposed binding conduct requirements under Digital Markets, Competition and Consumers Act 2024 (Jan 28, 2026)
+- Google's Sulina Connal told publishers that content exclusion from AI Overviews is "a huge engineering project" (Feb 11, 2026)
+
+### 6. CNIL Enforcement
+
+France's CNIL fined Condé Nast's French entity €750,000 on November 20, 2025 for cookie consent violations on vanityfair.fr, affecting ~7.4M visitors (Jun–Oct 2023). Added as new severity-2 `cnil_enforcement` conflict entry.
+
+### Stats After This Iteration
+- Wired profile: 1,042 lines (up from 960, +82 lines)
+- Known conflicts: 15 entries (up from 13, +2 new: google_ai_traffic_crisis, cnil_enforcement)
+- Total journalists: 101
+- Tests: 535 (all passing)
+- Commit: f51391e
+
+---
+
 ## 2026-06-27 06:00 PT — Hour Type B: Journalist Profile Expansion — Paresh Dave + Kate Conger
 
 **Focus:** Expanding the two thinnest journalist profiles in the database: Paresh Dave (was 2 entries, 27 char notes) and Kate Conger (was 3 entries, 42 char notes). Both are active reporters at tracked publications (Wired, NYT) with significant analytical value.
