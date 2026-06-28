@@ -5430,3 +5430,68 @@ All 694 tests pass (34 new, 660 existing, 0 regressions).
 `c155627`
 
 ---
+
+## 2026-06-28 00:00 PT — Type C: Guardian Ownership & Funding Deep Dive
+
+### Focus
+Guardian publication profile: ownership, revenue relationships, AI licensing, regulatory developments.
+
+### Findings
+
+1. **Google News AI Pilot (Dec 2025):** Guardian is an INITIAL PARTNER alongside Washington Post, Der Spiegel, El País. Google pays direct fees for AI-powered article overviews. As of Jun 25-26, 2026, Google pushing broader content-use terms including potential AI training rights. Added as new `revenue_relationship` and `known_conflict` (severity 3).
+
+2. **SPUR Coalition expansion (Jun 3, 2026):** 30 new members at WAN-IFRA Congress in Marseille, total now 36 (7 founding, 14 standard, 3 associate, 13 affiliate). Full membership list added.
+
+3. **UK CMA Google Strategic Market Status (Jun 2, 2026):** Publishers can opt out of AI Overviews separately from Search. Added as regulatory conflict entry (severity 0).
+
+4. **Guardian FY2025/26 financials updated:** US revenue $81.4M (+25%), digital reader revenue £125M (+17%), 83% revenue from outside UK.
+
+5. **YAML structural fix:** Pre-existing parse error where `editorial_leadership` entries were incorrectly nested inside `tortoise_media_observer` mapping.
+
+### Files Changed
+- `profiles/guardian.yaml` — 197 insertions (759 → 935 lines)
+
+### Test Results
+All 694 tests pass (0 new, 0 regressions).
+
+### Commit
+`e242be6`
+
+---
+
+## 2026-06-28 01:00 PT — Type D: Toolkit Quality — Test File Listing Guards
+
+### Focus
+Doc/code sync: test file listing completeness in ARCHITECTURE.md, plus structural guards to prevent future drift.
+
+### Problem Found
+ARCHITECTURE.md tree listed 27 test files while the header claimed 28. `test_avclub_sardonic_framing.py` was missing from the listing after the AV Club iteration (commit `c155627`) added the file but didn't update the tree. Classic doc/code drift that should be caught automatically.
+
+### Improvements
+
+**ARCHITECTURE.md sync fix:**
+- Added `test_avclub_sardonic_framing.py` entry (alphabetical, between atlantic_analysis and careers)
+- Updated test count header: 694 → 697
+- Updated structural_consistency description to include new guards
+
+**New TestTestFileListingConsistency class (3 tests):**
+1. `test_architecture_lists_all_test_files` — every `test_*.py` on disk must appear in ARCHITECTURE.md (would have caught the AV Club bug)
+2. `test_architecture_has_no_phantom_test_files` — no stale entries for removed files
+3. `test_architecture_test_file_count_header` — header "N tests across M test files" count matches actual file count
+
+**README.md updates:**
+- Test count: 694 → 697
+- `test_structural_consistency.py` count: 17 → 20 with updated description
+
+### Files Changed
+- `docs/ARCHITECTURE.md` — test listing + count update + description update
+- `README.md` — test count + structural_consistency row update
+- `tests/test_structural_consistency.py` — 3 new tests (TestTestFileListingConsistency class)
+
+### Test Results
+All 697 tests pass (3 new, 694 existing, 0 regressions).
+
+### Commit
+`e2a52a5`
+
+---
