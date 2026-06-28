@@ -399,3 +399,122 @@ class TestCrossReferenceConsistency:
             f"README.md contains stale 'all 13 topic' reference(s): {stale_refs}. "
             f"Should be 'all 15' — prediction_markets and corporate_strategy were added."
         )
+
+
+class TestInlineTopicListConsistency:
+    """Guard: inline topic name lists in docs match actual code topics.
+
+    The primary count guards (TestTopicBucketConsistency) check numeric counts
+    like '15 topic buckets'. These tests validate the *actual topic names*
+    listed inline in documentation against the TOPIC_KEYWORDS dict in code.
+    Catches cases where a count is updated but the inline list isn't.
+
+    Added: 2026-06-28 14:00 PT, Type D iteration.
+    """
+
+    def _code_topic_names(self) -> set[str]:
+        """Get all topic bucket names from code."""
+        from mediascope.analyze.topics import TOPIC_KEYWORDS
+        return set(TOPIC_KEYWORDS.keys())
+
+    def test_architecture_inline_topics_complete(self):
+        """ARCHITECTURE.md topics.py description must list all topic buckets."""
+        doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
+        code_topics = self._code_topic_names()
+        # Find the inline topics list (comma-separated after "Topics:")
+        match = re.search(r"Topics:\s*(.+)", doc)
+        assert match, (
+            "ARCHITECTURE.md is missing the 'Topics: ...' inline list "
+            "in the topics.py section."
+        )
+        listed_topics = {t.strip() for t in match.group(1).split(",")}
+        missing = code_topics - listed_topics
+        extra = listed_topics - code_topics
+        assert not missing, (
+            f"ARCHITECTURE.md topics.py inline list is missing topic(s): "
+            f"{sorted(missing)}.\nAll code topics: {sorted(code_topics)}"
+        )
+        assert not extra, (
+            f"ARCHITECTURE.md topics.py inline list has extra topic(s) not in code: "
+            f"{sorted(extra)}.\nAll code topics: {sorted(code_topics)}"
+        )
+
+    def test_agent_guide_inline_topics_complete(self):
+        """AGENT_GUIDE.md classify_topic schema must list all topic buckets."""
+        doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
+        code_topics = self._code_topic_names()
+        # Find the topic list in the classify_topic JSON schema description
+        match = re.search(
+            r"15 topic buckets:\s*([\w_]+(?:,\s*[\w_]+)*)\.",
+            doc,
+        )
+        assert match, (
+            "AGENT_GUIDE.md classify_topic description is missing the "
+            "inline topic bucket list."
+        )
+        listed_topics = {t.strip() for t in match.group(1).split(",")}
+        missing = code_topics - listed_topics
+        extra = listed_topics - code_topics
+        assert not missing, (
+            f"AGENT_GUIDE.md classify_topic inline list is missing topic(s): "
+            f"{sorted(missing)}.\nAll code topics: {sorted(code_topics)}"
+        )
+        assert not extra, (
+            f"AGENT_GUIDE.md classify_topic inline list has extra topic(s) "
+            f"not in code: {sorted(extra)}.\n"
+            f"All code topics: {sorted(code_topics)}"
+        )
+
+    def test_methodology_topic_table_complete(self):
+        """METHODOLOGY.md §3.1 topic table must have a row for every topic bucket."""
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        code_topics = self._code_topic_names()
+        # Extract topic names from the table rows (backtick-enclosed names)
+        table_topics = set(re.findall(r"`(\w+)`\s*\|", doc))
+        # Filter to only actual topic names (intersection with code)
+        # The table has other backtick values; check coverage
+        missing = code_topics - table_topics
+        assert not missing, (
+            f"METHODOLOGY.md §3.1 topic table is missing row(s) for: "
+            f"{sorted(missing)}.\nAll code topics: {sorted(code_topics)}"
+        )
+
+
+class TestQualityStandardsConsistency:
+    """Guard: QUALITY_STANDARDS.md banned phrases match code.
+
+    Added: 2026-06-28 14:00 PT, Type D iteration.
+    """
+
+    def test_banned_phrase_count_matches_doc(self):
+        """QUALITY_STANDARDS.md must reference the correct banned phrase count."""
+        from mediascope.quality.standards import BANNED_PHRASES
+        doc = (_REPO_ROOT / "docs" / "QUALITY_STANDARDS.md").read_text()
+        match = re.search(r"(\d+)\s+phrases?\s+are\s+markers", doc)
+        assert match, (
+            "QUALITY_STANDARDS.md is missing the banned phrase count declaration."
+        )
+        claimed = int(match.group(1))
+        actual = len(BANNED_PHRASES)
+        assert claimed == actual, (
+            f"QUALITY_STANDARDS.md claims {claimed} banned phrases but code "
+            f"has {actual}. Update the doc or the code."
+        )
+
+    def test_all_banned_phrases_documented(self):
+        """Every banned phrase in code should appear in QUALITY_STANDARDS.md."""
+        from mediascope.quality.standards import BANNED_PHRASES
+        doc = (_REPO_ROOT / "docs" / "QUALITY_STANDARDS.md").read_text()
+        missing = []
+        for phrase in BANNED_PHRASES:
+            # Case-sensitive check for capitalized phrases, insensitive for others
+            if phrase[0].isupper():
+                if phrase not in doc:
+                    missing.append(phrase)
+            else:
+                if phrase.lower() not in doc.lower():
+                    missing.append(phrase)
+        assert not missing, (
+            f"Banned phrases in code but missing from QUALITY_STANDARDS.md: "
+            f"{missing}"
+        )

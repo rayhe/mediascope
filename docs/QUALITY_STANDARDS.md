@@ -158,3 +158,53 @@ MediaScope's `quality/standards.py` module automatically checks output against t
 - **FAIL**: Critical issues that must be fixed before publication
 
 Reports that FAIL quality checks should not be published without manual review and correction.
+
+## 7. Automated Scoring Accuracy
+
+### The VADER Positive-Bias Problem
+
+VADER and TextBlob — the toolkit's fast baseline sentiment models — systematically misprice editorial tone in investigative and adversarial journalism. Professional prose uses measured, confident language that lexical sentiment models score as positive, even when the editorial stance is clearly adversarial. This is not a bug in VADER; it is a fundamental limitation of lexical sentiment analysis applied to professional-grade prose.
+
+**Validated failure cases:**
+
+| Article | VADER Raw | Corrected | Gap | Root Cause |
+|---|---|---|---|---|
+| NYT "Meta AI Employees Miserable" | +0.61 | −0.37 | 0.98 | Active-negative agency + workplace coercion language |
+| NYT "US Presses Meta on AI Reviews" | +0.61 | −0.57 | 1.18 | Isolation framing + regulatory pressure language |
+| MIT TR "Meta AI Hack" | +0.65 | −0.43 | 1.08 | Expert-loaded adversarial sourcing with neutral prose |
+| Wired "Applied AI Soul-Crushing" | +0.30 | −0.72 | 1.02 | Loaded language + emotional appeal + outsourced intensity |
+
+These gaps demonstrate that **raw VADER scores on investigative journalism are unreliable** and should never be presented without framing correction.
+
+### Tone Correction Pipeline
+
+MediaScope's framing-aware correction fires when three conditions are all met:
+
+1. **Adversarial framing density:** ≥3 devices from the adversarial set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, hypocrisy_frame, juxtaposition, self_referential_investigation, kicker_framing, and others)
+2. **Negative agency signal:** Active-negative agency (tracking, cutting, forcing) or passive victim framing
+3. **Positive raw VADER score:** The uncorrected composite score misleadingly reads as positive
+
+When all three fire, the corrected `overall_tone` is derived from structural framing signals rather than VADER's lexical analysis. Both raw and corrected scores are preserved in the `SentimentResult` for transparency — the consumer can inspect when and why correction was applied.
+
+### Known Scoring Limitations
+
+| Limitation | Impact | Mitigation |
+|---|---|---|
+| **Q&A format** | Zero source extraction; VADER positive bias on conversational prose | Manual annotation required for interview-format articles |
+| **Legal/judicial context** | "Admitted" and "conceded" used neutrally in court proceedings score as confession framing | Confession framing false-positive exclusion for legal contexts |
+| **Security/hacking articles** | Domain-specific vocabulary ("exploit," "breach," "attack") inflates emotional intensity | Security context adjustment reduces intensity scores |
+| **Wire-service vs. magazine genre** | Different genre conventions (length, framing density) affect comparisons | Use same-event comparison methodology to control for genre |
+| **Counted anonymous sources** | "Two employees said" reads as zero anonymous sources to simple regex | `count_anonymous_sources()` delegates to comprehensive `extract_sources()` |
+| **Product-name entities** | "Meta Glasses" extracted as a source name | Product-name stop-filter in source extraction |
+
+### Scoring Calibration Validation
+
+Every article analysis that introduces a toolkit correction must include:
+
+1. **Manual tone assessment** — human-assigned tone score with brief justification
+2. **Pre-correction toolkit score** — what VADER/TextBlob produced raw
+3. **Post-correction toolkit score** — what the framing pipeline corrected to
+4. **Gap analysis** — why the gap exists and which specific framing devices or detection failures caused it
+5. **Regression tests** — at least one test per correction to prevent future regressions
+
+This ensures the correction pipeline is validated against real articles, not synthetic examples. All 56 annotated articles in `examples/sample_output/` follow this pattern.
