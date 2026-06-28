@@ -5534,3 +5534,48 @@ All 697 tests pass (3 new, 694 existing, 0 regressions).
 `e2a52a5`
 
 ---
+
+## 2026-06-28 02:00 PT — Type D: Toolkit Quality — Career Data & Documentation Fixes
+
+### Focus
+Career data correctness, documentation accuracy, and parser robustness. Multiple issues found spanning METHODOLOGY.md, README.md, sample output gallery, journalist career YAML, event type validation, and date parsing.
+
+### Problems Found
+
+**Documentation drift (3 issues):**
+1. METHODOLOGY.md line 164 claimed "12 topic buckets" — actual count is 13 (Religion/Spirituality was the 13th)
+2. README.md test counts stale: `test_jun27_regression` listed 9 (actual 6), `test_postpass_activation` listed 32 (actual 26)
+3. README.md sample output gallery missing 9 entries added in recent iterations
+
+**Career data errors (10 fixes in journalists.yaml):**
+- 2 invalid event_types: Karen Hao had `transition` (→`freelance`), Kara Swisher had `transition` (→`hired`)
+- 2 incorrect event_types: Lauren Goode and Casey Newton had `continuation` (→`editorial_role_change`)
+- 6 missing `start` dates: Will Knight/CNET (→2007-01), Kristen V. Brown ×4 (albany→2012-06, sfchronicle→2014-01, gizmodo→2016-09, bloomberg→2019-01), Will Gottsegen ×3 (spin→2018-01, billboard→2020-01, coindesk→2022-01) — all approximate
+
+**Code gaps (2 fixes):**
+- `VALID_EVENT_TYPES` in models.py only had 5 types; data used 14. Added: beat_change, fellowship, career_change, intern, founded, returned, rehired, education, other
+- `_parse_date()` in tracker.py crashed on bare year values (int `2008` or string `'2008'`) found in some YAML entries
+
+### Improvements
+
+**METHODOLOGY.md:** "12 buckets" → "13 buckets" (line 164)
+
+**README.md:** Corrected test counts for 2 test files. Added 9 missing sample output gallery entries: reuters_mci_pause, reuters_insurance, mit_tr_lecun, mit_tr_hack_deep_dive, mittr_anthropic_feud, avclub_arena, fastco_draft_reversal, gizmodo_arena, mit_tr_meta_ai_hack_agent_security.
+
+**journalists.yaml:** 10 career data corrections (event types + missing dates).
+
+**models.py:** Expanded VALID_EVENT_TYPES from 5 → 14 to match actual data vocabulary.
+
+**tracker.py:** `_parse_date()` now handles bare year integers and strings by converting to `YYYY-01` format before parsing.
+
+### Files Changed
+- `docs/METHODOLOGY.md` — topic bucket count fix
+- `README.md` — test count corrections + 9 gallery entries
+- `profiles/careers/journalists.yaml` — 10 career data fixes
+- `mediascope/careers/models.py` — expanded VALID_EVENT_TYPES (5→14)
+- `mediascope/careers/tracker.py` — _parse_date bare year support
+
+### Test Results
+All 697 tests pass (0 new, 697 existing, 0 regressions). CareerTracker loads all 101 journalists and detects 283 migrations.
+
+### Commit

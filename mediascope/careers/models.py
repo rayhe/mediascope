@@ -54,6 +54,15 @@ class CareerEvent:
         "promoted",
         "freelance",
         "editorial_role_change",
+        "beat_change",
+        "fellowship",
+        "career_change",
+        "intern",
+        "founded",
+        "returned",
+        "rehired",
+        "education",
+        "other",
     })
 
     # Valid roles (ordered roughly by seniority)

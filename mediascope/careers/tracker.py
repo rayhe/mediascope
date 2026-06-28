@@ -245,11 +245,18 @@ class CareerTracker:
 
 
 def _parse_date(val) -> date:
-    """Parse a date from YAML — handles date objects, strings, and year-month."""
+    """Parse a date from YAML — handles date objects, strings, year-month, and bare years."""
     if isinstance(val, date):
         return val
+    if isinstance(val, (int, float)):
+        # Bare year as number (e.g. 2008)
+        return date(int(val), 1, 1)
     if isinstance(val, str):
+        val = val.strip().strip("'\"")
         parts = val.split("-")
+        if len(parts) == 1:
+            # Bare year string → January 1
+            return date(int(parts[0]), 1, 1)
         if len(parts) == 2:
             # Year-month only → first of month
             return date(int(parts[0]), int(parts[1]), 1)

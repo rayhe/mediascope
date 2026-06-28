@@ -60,7 +60,7 @@ journalists:
     source_url: https://karendhao.com/about
     start: 2023-01
   - beat: AI, technology ethics
-    event_type: transition
+    event_type: freelance
     notes: 'Currently freelance. Contributes to The Atlantic and More Perfect Union. Co-hosts BBC podcast "The Interface."
       Published "Empire of AI: Dreams and Nightmares in Sam Altman''s OpenAI" (Penguin Press, May 20 2025, instant NYT bestseller).
       Awards: Helen Bernstein Book Award for Excellence in Journalism (2026), TIME100 AI honoree (2025), American Humanist
@@ -153,10 +153,11 @@ journalists:
     event_type: hired
     notes: Brief stint at CNET. Exact dates and role unclear; mentioned in TalkingBizNews hire announcement alongside New
       Scientist. Likely overlapping or short-term position during New Scientist tenure. CNET's consumer-tech product-review
-      culture contrasts with New Scientist's science focus.
+      culture contrasts with New Scientist's science focus. Start date approximate.
     publication: cnet
     role: writer
     source_url: https://talkingbiznews.com/they-move/wired-hires-knight-to-cover-artificial-intelligence/
+    start: 2007-01
   - beat: AI, robotics, machine learning, China tech
     end: 2019-09
     event_type: hired
@@ -265,7 +266,7 @@ journalists:
     start: 2011-09
   - beat: consumer tech reviews
     end: 2015-05
-    event_type: continuation
+    event_type: editorial_role_change
     notes: Managing editor of consumer tech coverage at Recode (the AllThingsD successor). Co-hosted 'Too Embarrassed to Ask'
       podcast with Kara Swisher. When Vox Media acquired Recode (~May 2015), Recode's reviews team (Goode, Katie Boehret,
       Bonnie Cha) was moved to The Verge, while Recode maintained as a separate business news site.
@@ -399,7 +400,7 @@ journalists:
     source_url: https://www.platformer.news/
     start: 2020-11
   - beat: Big Tech, social media platforms, AI
-    event_type: continuation
+    event_type: editorial_role_change
     notes: 'Platformer on Ghost (self-hosted, open source). Solo editorial control again after Schiffer''s departure to Wired.
       2026 strategic pivot: announced plans to focus on original reporting and scoops, reducing aggregation and link roundups,
       to compete with AI. "We''re betting that the value in tech journalism is moving away from aggregation and predictability
@@ -623,7 +624,7 @@ journalists:
     source_url: https://www.nytimes.com/by/kara-swisher
     start: 2018-01
   - beat: technology, Silicon Valley, longevity
-    event_type: transition
+    event_type: hired
     notes: 'Editor-at-large at New York Magazine (Sep 2022-present). Host of "On with Kara Swisher" podcast (premiered Sep
       26, 2022). Co-host of "Pivot" podcast with Scott Galloway (ongoing). Published memoir "Burn Book: A Tech Love Story"
       (Simon & Schuster, Feb 2024) — received criticism for being "anti-worker." CNN Original Series "Kara Swisher Wants to
@@ -4889,31 +4890,35 @@ journalists:
 - career:
   - beat: education
     event_type: hired
-    notes: Education reporter. Early career before tech pivot.
+    notes: Education reporter. Early career before tech pivot. Start date approximate (post-Columbia MA 2012).
     publication: albany-times-union
     role: education_reporter
     source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-bloombergs-brown/
+    start: 2012-06
   - beat: technology
     event_type: hired
-    notes: Tech reporter. San Francisco base.
+    notes: Tech reporter. San Francisco base. Start date approximate.
     publication: san-francisco-chronicle
     role: tech_reporter
     source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-bloombergs-brown/
+    start: 2014-01
   - beat: technology
     event_type: hired
     notes: Tech reporter at Gizmodo. Part of the Gizmodo → larger-outlet pipeline that also produced Katie Drummond (Wired
       EIC), Dell Cameron, Dhruv Mehrotra, Tim Marchman. Shared institutional culture with other Gawker Media alumni now at
-      Wired.
+      Wired. Start date approximate (earliest archived bylines ~late 2016).
     publication: gizmodo
     role: tech_reporter
     source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-bloombergs-brown/
+    start: 2016-09
   - beat: health tech, genetics, biotech
     event_type: hired
     notes: Covered genetics, biohacking, vaccine psychology, reproductive health. Charted rise of Hims and fall of 23andMe.
-      Launched "Misconception" podcast about the fertility industry.
+      Launched "Misconception" podcast about the fertility industry. Start date approximate.
     publication: bloomberg
     role: reporter
     source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-bloombergs-brown/
+    start: 2019-01
   - beat: health, technology
     event_type: hired
     notes: 'Staff writer hired as part of Atlantic''s continued newsroom expansion under Jeffrey Goldberg. KEY MIGRATION:
@@ -4931,22 +4936,25 @@ journalists:
 - career:
   - beat: music
     event_type: hired
-    notes: Music critic. Early career in music journalism.
+    notes: Music critic. Early career in music journalism. Start date approximate.
     publication: spin
     role: writer
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-emily-bobrow-and-katie-zezima-as-senior-editors-will-gottsegen-and-jonathan-lemire-join-as-staff-writers,261030
+    start: 2018-01
   - beat: music, entertainment
     event_type: hired
-    notes: Music/entertainment industry journalist.
+    notes: Music/entertainment industry journalist. Start date approximate.
     publication: billboard
     role: writer
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-emily-bobrow-and-katie-zezima-as-senior-editors-will-gottsegen-and-jonathan-lemire-join-as-staff-writers,261030
+    start: 2020-01
   - beat: cryptocurrency, tech
     event_type: hired
-    notes: Crypto and tech reporter. Beat pivot from music journalism to tech/finance.
+    notes: Crypto and tech reporter. Beat pivot from music journalism to tech/finance. Start date approximate.
     publication: coindesk
     role: reporter
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-emily-bobrow-and-katie-zezima-as-senior-editors-will-gottsegen-and-jonathan-lemire-join-as-staff-writers,261030
+    start: 2022-01
   - beat: technology, crypto, daily newsletter
     event_type: hired
     notes: 'Staff writer on The Atlantic Daily newsletter team alongside David A. Graham. Interviewed SBF weeks before arrest,

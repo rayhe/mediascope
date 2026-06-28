@@ -161,7 +161,7 @@ Articles are classified into 13 topic buckets to enable apples-to-apples compari
 
 Classification uses keyword matching with TF-IDF weighting. An article can match multiple topics; the top 3 by confidence are retained.
 
-**Note on topic design:** The 12 buckets are designed for apples-to-apples comparison within a topic across companies. The `ai_generated_content` topic captures coverage of AI output quality and generative AI byproducts, distinct from `ai_development` (technology creation). The `workplace_culture` topic captures internal organizational dynamics (morale, burnout, culture), distinct from `layoffs` (formal workforce actions) and `executive_behavior` (leadership decisions).
+**Note on topic design:** The 13 buckets are designed for apples-to-apples comparison within a topic across companies. The `ai_generated_content` topic captures coverage of AI output quality and generative AI byproducts, distinct from `ai_development` (technology creation). The `workplace_culture` topic captures internal organizational dynamics (morale, burnout, culture), distinct from `layoffs` (formal workforce actions) and `executive_behavior` (leadership decisions).
 
 ## 4. Framing Device Detection
 
