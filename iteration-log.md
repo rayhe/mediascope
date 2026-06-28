@@ -5704,3 +5704,48 @@ All **715 tests pass** (18 new, 697 existing, 0 regressions).
 `10ce0dc`
 
 ---
+
+---
+
+## 2026-06-28 06:00 PT — Hour Type A: Article Deep Dive — Meta/Virtue AI Acqui-Hire
+
+**Article:** "META Stock Drops For Fourth Session: Meta Recruits Cybersecurity Experts To Fortify AI Agents" (Stocktwits/TradingView, syndicated from Axios, Jun 25, 2026)
+**Commit:** 225d875
+
+### Article Selection
+
+Searched for recent articles from the 5 tracked publications (Wired, NYT, Guardian, Atlantic, MIT Tech Review). Most domains blocked by policy. MIT TR Meta hack article already double-covered. Selected the Virtue AI acqui-hire story for its high entity density and fresh entities not yet in the toolkit.
+
+### Entity Detection: 6 New Patterns
+
+| Entity | Cluster | Rationale |
+|--------|---------|-----------|
+| Virtue AI | Meta | AI safety startup absorbed by Meta |
+| Bo Li | Meta | Virtue AI co-founder joining FAIR |
+| Dawn Song | Meta | Virtue AI co-founder joining FAIR/MSL |
+| Sanmi Koyejo | Meta | Virtue AI co-founder joining FAIR |
+| Fundamental AI Research / FAIR | Meta | Meta's core AI research lab (regex requires Lab/research/team/group context to avoid "fair" adjective false positives) |
+| Bureau of Industry and Security / BIS | US Government | Key regulatory body issuing AI export controls |
+| Center for AI Standards and Innovation / CAISI | US Government | Proactive addition from NYT/Reuters coverage |
+| Howard Lutnick | US Government | Commerce Secretary, proactive addition |
+
+### Framing: ironic_quotation Tech Jargon Filter
+
+**Problem:** 4 false positives — "agentic AI", "agents", "agentic", "acqui-hire" flagged as scare quotes when they're standard industry terminology.
+
+**Fix:** Added `_TECH_JARGON` exclusion set (20 terms) in the ironic_quotation filter. Quotes matching these terms are suppressed before the existing product-naming context check. Terms cover: agentic ai, agentic, agents, agent, acqui-hire, acquihire, zero-day, zero day, open source, open-source, fine-tune, fine-tuning, red team, red teaming, guardrails, alignment, frontier, frontier ai, model, models.
+
+### Sentiment: 9 New Emotional Language Terms
+
+Added: shockwaves, shockwave, sent shockwaves, tumultuous, crackdown, upheaval, fortify, fortified, fortifying. These fill a gap in security/regulatory coverage vocabulary.
+
+### Analysis Findings
+
+- **VADER sentiment bias:** 0.65 positive tone for an article with ominous regulatory framing. Corporate PR quotes ("safe, reliable, trustworthy") inflate the score. Known VADER limitation.
+- **Arms race metaphor:** Too ubiquitous in tech journalism to flag as framing device without noise. Left as-is.
+- **government_oversight topic:** 0.18 confidence too low for article where regulatory context is central. Candidate for future topic weight tuning.
+
+### Test Results
+
+- 29 new tests in `test_virtue_ai_acquihire.py`
+- **751 tests passing across 30 test files** (up from 722/29)
