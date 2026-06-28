@@ -4,6 +4,79 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 17:00 PT — Hour Type B: Journalist/Publication Research — Casey Newton Deep Profile + Kevin Roose Departure
+
+**Journalist:** Casey Newton (Platformer founder, Hard Fork co-host)
+**Previous state:** 2 career entries, 128-char notes — one of the thinnest profiles despite being one of the most influential platform journalists.
+**New state:** 7 career entries, 1,687-char notes. Full career arc with source URLs.
+
+### 1. Career History Expansion (2 → 7 entries)
+
+**Arizona Republic (2002–2010):** First job after Northwestern Medill (BSJ 2002). Political reporter covering Arizona State Legislature and Phoenix city hall for ~6.5 years. No tech background — technology was "purely a hobby." Recruited to San Francisco by Kristen Go, a former Arizona Republic colleague.
+- Source: [AZ Central profile (Mar 2022)](https://www.azcentral.com/story/entertainment/media/2022/03/20/casey-newton-arizona-reporter-launched-silicon-valley-newsletter/7073714001/)
+- Source: [Medill Magazine Q&A](https://magazine.medill.northwestern.edu/2020/qa-with-casey-newton-bsj02-founder-of-platformer/)
+
+**San Francisco Chronicle (2010–2011):** First tech beat. Covered mobile devices and Apple, blogged for "The Tech Chronicles."
+- Source: [Editor & Publisher (Dec 2010)](https://www.editorandpublisher.com/stories/sf-chronicle-adds-tech-writer,42206)
+
+**CNET (2011–2013):** Senior writer/blogger. Broke Twitter music app scoop. Cited in Stephanie Diamond's "The Visual Marketing Revolution" (Pearson, 2013).
+- Source: [Talking Biz News — CNET reporter joins The Verge](https://talkingbiznews.com/they-re-hiring/cnet-reporter-joins-the-verge/)
+
+**The Verge (2013–2020):** Senior reporter → Silicon Valley editor (promoted ~2017 by Nilay Patel). The Interface newsletter (2017, 20K+ subscribers). Converge podcast. KEY: 2019 content moderation investigation at Cognizant (Phoenix, Tampa) — exposed PTSD, depression, addiction among Facebook moderators reviewing graphic content. Selena Scola v. Facebook → $52M preliminary settlement (San Mateo Superior Court, May 2020, 11,250+ moderators). Cognizant exited content moderation market entirely. 2020 National Magazine Award (Ellie) finalist for reporting. Newton: "I've talked to more than a hundred moderators."
+- Source: [Poynter — Silicon Valley editor appointment](https://poynter.org/business-work/2017/the-verge-appoints-a-silicon-valley-editor/)
+- Source: [TechCrunch — $52M settlement](https://techcrunch.com/2020/05/12/facebook-content-moderators-ptsd-settlement/)
+- Source: [Wikipedia](https://en.wikipedia.org/wiki/Casey_Newton)
+- Source: [Leigh Bureau speaker bio](https://leighbureau.com/speakers/casey-newton/)
+
+**Platformer on Substack (2020–2024):** Founded October 2020. Took Verge mailing list (unusual Vox Media concession). 30K free subscribers in first weeks → 170K by Jan 2024. Hired Zoë Schiffer as managing editor. Co-founded Sidechannel Discord (April 2021) with 7 independent journalists — hosted Mark Zuckerberg interview. Twitter employees learned of Musk layoffs from Platformer, not internal channels. Left Substack January 2024 over pro-Nazi content moderation dispute → migrated to Ghost.
+- Source: [The Wrap — Platformer quits Substack](https://thewrap.com/platformer-leaves-substack-pro-nazi-content/)
+- Source: [Columbia Journalism Review](https://www.cjr.org/the_media_today/casey-newton-on-dismantling-the-platforms-and-taking-facebooks-cash.php)
+- Source: [Mediagazer — Sidechannel launch](https://mediagazer.com/)
+- Source: [Meta Tech@Facebook — Boz to the Future Episode 3](https://tech.facebook.com/engineering/2021/06/boz-to-the-future-ep3/)
+
+**Platformer on Ghost (2024–present):** Solo editorial control after Schiffer departure to Wired (Oct 2024, Director of Business & Industry). 2026 strategic pivot: original reporting over aggregation to compete with AI. Nieman Lab (Apr 29, 2026) profiled this shift. Jun 2026 scoop: OpenAI disbanded mission alignment team.
+- Source: [Nieman Lab via Wayback Machine (Apr 2026)](https://web.archive.org/web/20260429/https://www.niemanlab.org/2026/04/more-scoops-less-aggregation-and-analysis-how-casey-newton-is-revamping-his-newsletter-to-compete-with-ai/)
+- Source: [Techmeme — OpenAI mission alignment scoop](https://techmeme.com/)
+
+**Hard Fork / NYT podcast (2022–2026):** Co-host with Kevin Roose. Weekly, TOP 0.05% globally, ~403 episodes. Video-first expansion 2026 (hired Vjeran Pavic from The Verge). Newton is the only non-NYT employee co-hosting a major NYT podcast — independent while under NYT brand. Ending August 2026 when Roose leaves NYT for independent venture with Newton.
+- Source: [NYT Company announcement](https://nytco.com/press/hard-fork-live-returns-to-the-stage-on-june-10/)
+- Source: [Talking Biz News — Roose departure](https://talkingbiznews.com/they-move/tech-columnist-roose-departing-ny-times/)
+
+### 2. Personal Details Added
+
+- Born: June 19, 1980, La Habra, California
+- Education: Northwestern University Medill School of Journalism (BSJ, 2002). Sonora High School (student board member, debate club president, paper editor).
+- Personal: Gay, lives in San Francisco. Engaged (announced February 2026 on Hard Fork) — fiancé works at Anthropic.
+- Social: @CaseyNewton (X), @crumbler (Instagram/Threads). Website: cnewton.org. Speaker rep: Leigh Bureau.
+- Sources: [Wikipedia](https://en.wikipedia.org/wiki/Casey_Newton), [cnewton.org](https://cnewton.org), [Medill Magazine](https://magazine.medill.northwestern.edu/2020/qa-with-casey-newton-bsj02-founder-of-platformer/)
+
+### 3. Kevin Roose Profile Updated
+
+Added June 2026 departure from NYT and independent media venture with Newton. Updated notes with transition analysis — Roose leaving NYT mirrors Newton's 2020 Verge departure: individual brand over institutional platform.
+- Source: [Talking Biz News](https://talkingbiznews.com/they-move/tech-columnist-roose-departing-ny-times/)
+
+### 4. Editorial Changes Updated
+
+Added NYT editorial change: Hard Fork podcast ending (2026-08) — Roose and Newton (external co-host) departing. Significant loss for NYT: most popular tech podcast, audience bridge to tech-insider demographic.
+
+### 5. MediaScope Analytical Notes
+
+Newton is the single most important test case for individual vs. institutional framing:
+- **5 institutional contexts:** Political newspaper (Arizona Republic) → General tech press (SF Chronicle, CNET) → Digital media (The Verge/Vox) → Independent newsletter (Platformer) → NYT podcast (Hard Fork)
+- **Key natural experiments:** Did his framing change when he left institutional control? The content moderation investigation shows he can produce accountability journalism against Meta without employer backing.
+- **Anthropic engagement disclosure:** Creates a personal conflict disclosure obligation. Mainstream outlets would require this. Tests whether independent journalists hold themselves to the same standard.
+- **Roose/Newton independent venture (post-Aug 2026):** First fully independent AI journalism operation at scale with no institutional editorial oversight from either host.
+
+### Metrics
+- Tests: 656 passing (unchanged)
+- Casey Newton: 2 → 7 career entries, 128 → 1,687 char notes
+- Kevin Roose: notes updated with departure analysis
+- editorial_changes.yaml: +1 NYT entry (Hard Fork ending)
+- 2 files changed, 125 insertions, 15 deletions
+- Commit: `ab1cd12` — pushed to GitHub
+
+---
+
 ## 2026-06-27 16:00 PT — Hour Type A: Article Deep Dive — MIT TR "Three things to watch amid Anthropic's latest feud with the government" (cont.)
 
 **Article:** MIT Technology Review, "The Algorithm" newsletter — "Three things to watch amid Anthropic's latest feud with the government" (late June 2026).
