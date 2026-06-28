@@ -492,6 +492,37 @@ known_conflicts:
     severity: 2
     evidence: "TechCrunch (Feb 7, 2025). Other investors: Ares Management, Jane Street, Segra Capital."
     source_url: "https://techcrunch.com/2025/02/07/laurene-powell-jobs-joins-amazon-in-backing-nuclear-startup-x-energy-in-700m-round/"
+  - type: "political_editorial_alignment"
+    description: >
+      LPJ is a 100% Democratic donor (1,218 FEC records, zero Republican contributions), a close
+      personal confidant of Kamala Harris, visited the Biden-Harris White House 9 times, and played
+      a key role in mobilizing donors against Biden's 2024 re-election bid. Her top aide David Simas
+      (former Obama WH staff) runs political research operations. LPJ co-hosted fundraisers with
+      Marc Benioff (Salesforce) and Sean Parker (former Facebook). This creates a POLITICAL INFLUENCE
+      CHANNEL alongside the Atlantic's editorial coverage: LPJ has direct access to the highest levels
+      of Democratic political power, meaning the Atlantic's coverage of tech regulation, antitrust,
+      and AI policy may be influenced not just by EC's financial positions but by LPJ's personal
+      political relationships and advocacy goals. The FWD.us divergence (Zuckerberg retreated from
+      immigration advocacy in Dec 2025 while LPJ leads it) creates additional editorial incentive
+      to frame Meta/Zuckerberg's political pivot negatively.
+    severity: 3
+    evidence: "NYT investigation (Oct 2024), OpenSecrets FEC data (1,218 records), AfroTech reporting."
+    source_urls:
+      - "https://www.nytimes.com/2024/10/behind-harriss-rise-laurene-powell-jobs.html"
+      - "https://www.opensecrets.org/donor-lookup/results?name=Laurene+Powell+Jobs"
+      - "https://afrotech.com/laurene-powell-jobs-kamala-harris"
+  - type: "lobbying_absence_as_editorial_substitute"
+    description: >
+      Emerson Collective lobbies EXCLUSIVELY on education policy ($60-120K/year via Amplify/BGR Group),
+      with ZERO lobbying on AI, tech regulation, antitrust, or copyright — despite owning a major
+      publication covering these topics and having $1B+ invested in AI companies. This contrasts with
+      Meta ($20M+), Google ($13M+), Apple ($9.4M+), and OpenAI ($2.6M+). The absence suggests that
+      any EC influence on tech policy operates through EDITORIAL COVERAGE rather than traditional
+      lobbying, making the Atlantic's editorial positioning a potential substitute for direct lobbying.
+    severity: 2
+    evidence: "OpenSecrets lobbying profile, zero tech/AI/copyright bills lobbied."
+    source_urls:
+      - "https://www.opensecrets.org/federal-lobbying/clients/summary?cycle=2026&id=D000072893"
   - type: "ai_partnership_tension"
     description: >
       The Atlantic simultaneously: (1) licenses content TO OpenAI/ChatGPT (May 2024 deal),
@@ -504,6 +535,217 @@ known_conflicts:
     source_urls:
       - "https://www.cnn.com/2026/06/23/media/newsguard-ai-chatbot-news/index.html"
       - "https://www.newsguardtech.com/press/newsguard-launches-first-ai-chatbot-built-to-deliver-trusted-journalism/"
+
+political_activity:
+  owner_political_giving:
+    total_fec_records: 1218
+    party_alignment: "100% Democratic — no Republican or third-party contributions across entire history"
+    employer_listed_as: ["College Track", "Emerson Collective", "Emerson Collective, LLC", "Not employed"]
+    notable_contributions:
+      - recipient: "Senate Majority PAC"
+        amount: "$500,000"
+        date: "2014-09-30"
+        type: "Super PAC"
+        notes: "Largest single disclosed contribution. Senate Majority PAC is the main Democratic Senate super PAC."
+      - recipient: "Local Voices (Super PAC)"
+        amount: "$400,000"
+        date: "2016-09-22"
+        type: "Super PAC"
+      - recipient: "Future Forward (Super PAC)"
+        amount: "Millions (exact undisclosed)"
+        date: "2024"
+        type: "Super PAC"
+        notes: "NYT reported LPJ 'donated millions' to Future Forward supporting Democrats/Harris 2024 campaign."
+        source_url: "https://www.nytimes.com/2024/10/behind-harriss-rise-laurene-powell-jobs.html"
+      - recipient: "State Democratic Parties (10+ states)"
+        amount: "$10,000 each"
+        date: "2024-08-29"
+        type: "Party committees"
+        notes: >
+          Simultaneous $10K donations to Democratic parties in NH, TX, NV, WY, SD, NM, MI, ID, DC, VA, PA,
+          ME, NJ — a state-party distribution pattern typical of max-giving bundling to national committees.
+    tech_adjacent_recipients:
+      - "Ro Khanna (D-CA17) — $4,100 (tech policy, Silicon Valley rep)"
+      - "Raja Krishnamoorthi (D-IL08) — $6,600 (House AI/tech policy)"
+      - "Kamala Harris (D-CA) — $500+ (2009, early donor pre-Senate)"
+      - "Gavin Newsom (D-CA) — $6,500+ (2010, gubernatorial/AG races)"
+      - "Cory Booker (D-NJ) — $6,650"
+      - "Alexandria Ocasio-Cortez (D-NY14) — $305"
+      - "EMILY's List — $250"
+      - "People for the American Way — $5,000"
+    source_urls:
+      - "https://www.opensecrets.org/donor-lookup/results?name=Laurene+Powell+Jobs"
+      - "https://www.opensecrets.org/donor-lookup/results?name=Laurene+Jobs"
+
+  harris_confidant_relationship:
+    description: >
+      LPJ is a close personal confidant of Kamala Harris. Their relationship dates to at least 2009-2010
+      (LPJ donated $500 to Harris's AG campaign). LPJ visited the Biden-Harris White House 9 times.
+      After Biden's June 2024 debate performance, LPJ expressed deep concerns about Biden's ability to
+      win, and her top aide David Simas (former Obama staff) circulated focus-group and polling data to
+      other major Democratic donors that NYT described as 'influential in encouraging them to mobilize
+      against Biden.' Harris turned to LPJ for counsel during the transition. LPJ co-hosted fundraisers
+      alongside Marc Benioff (Salesforce CEO) and Sean Parker (former Facebook exec). LPJ's team shared
+      a list of 17 organizations backing Harris that megadonors could contribute to.
+    conflict_relevance: >
+      CRITICAL: LPJ's personal political influence — including the power to help push a sitting president
+      out of the race — demonstrates that the Atlantic's owner has DIRECT ACCESS to the highest levels
+      of Democratic political power. This access creates an additional layer of editorial pressure beyond
+      financial conflicts: the Atlantic may self-censor on Democratic politicians or policies that LPJ
+      supports, and may amplify narratives aligned with LPJ's political network. The Benioff/Parker
+      co-hosting is notable: Parker is a FORMER FACEBOOK EXEC, creating a rare social bridge between
+      Meta's founding network and the Atlantic's owner despite their financial adversarial position.
+    source_urls:
+      - "https://www.nytimes.com/2024/10/behind-harriss-rise-laurene-powell-jobs.html"
+      - "https://afrotech.com/laurene-powell-jobs-kamala-harris"
+
+  white_house_access:
+    visits: 9
+    period: "Biden-Harris administration (2021-2025)"
+    notable_events:
+      - "Presidential Medal of Freedom ceremony (on behalf of Steve Jobs), 2022"
+      - "State Dinner for French President Macron, Dec 1, 2022 (attended with son Reed)"
+    notes: >
+      LPJ has expressed frustration with Biden policy positions she considers 'anti-tech' and
+      'hostile rhetoric about rich people and Silicon Valley.' This tension between supporting
+      Harris personally while bristling at Biden's populist tech rhetoric may influence the
+      Atlantic's editorial positioning on tech regulation and antitrust.
+    source_urls:
+      - "https://www.nytimes.com/2024/10/behind-harriss-rise-laurene-powell-jobs.html"
+
+  political_staff:
+    - name: "David Simas"
+      role: "Top political aide overseeing political research"
+      background: "Former Obama White House staff"
+      notes: >
+        Simas circulated focus-group and polling data to Democratic donors post-Biden debate
+        (June 2024) that was 'influential in encouraging them to mobilize against Biden.'
+        A former WH staffer running political intelligence for a media owner creates an
+        unusually sophisticated political operation behind a publication.
+
+lobbying_profile:
+  total_2026: "$60,000 (Q1 only, via Amplify Education)"
+  total_2024: "$120,000 (full year, via Amplify Education)"
+  total_2025: "Not yet reported"
+  lobbying_firm: "BGR Group"
+  lobbyists:
+    - name: "Jennifer Larkin Lukawski"
+      revolving_door: true
+    - name: "Loren Monroe"
+      revolving_door: true
+    - name: "Fred Turner"
+      revolving_door: true
+  lobbying_subsidiary: "Amplify Education (100% of lobbying spend)"
+  industry_focus: "For-Profit Education (100%)"
+  bills_lobbied:
+    - bill: "H.R.5 (114th Congress)"
+      title: "Student Success Act"
+      reports: 2
+    - bill: "S.1177 (114th Congress)"
+      title: "Every Student Succeeds Act"
+      reports: 2
+    - bill: "S.2690 (113th Congress)"
+      title: "Protecting Student Privacy Act of 2014"
+      reports: 1
+    - bill: "H.R.2092 (114th Congress)"
+      title: "Student Digital Privacy and Parental Rights Act of 2015"
+      reports: 1
+    - bill: "H.R.3157 (114th Congress)"
+      title: "Student Privacy Protection Act"
+      reports: 1
+  analytical_note: >
+    CRITICAL ABSENCE: Emerson Collective lobbies EXCLUSIVELY on education policy through its
+    Amplify subsidiary. It has ZERO lobbying on AI policy, technology regulation, antitrust,
+    or copyright law — despite owning a publication (The Atlantic) that covers these topics
+    extensively and having $1B+ invested in AI companies (Mistral, World Labs, io Products/OpenAI).
+    This absence is analytically significant: compared to Meta ($20M+ lobbying/year), Google
+    ($13M+), Apple ($9.4M+), and OpenAI ($2.6M+), EC's zero tech-policy lobbying footprint
+    means any Atlantic editorial influence on tech policy operates through EDITORIAL COVERAGE
+    rather than through traditional lobbying channels. This makes the Atlantic's editorial
+    positioning a potential substitute for — or complement to — direct lobbying on AI/tech issues.
+  source_urls:
+    - "https://www.opensecrets.org/federal-lobbying/clients/summary?cycle=2026&id=D000072893"
+    - "https://www.opensecrets.org/federal-lobbying/clients/summary?cycle=2024&id=D000072893"
+    - "https://www.opensecrets.org/federal-lobbying/clients/lobbyists?cycle=2024&id=D000072893"
+    - "https://www.opensecrets.org/federal-lobbying/clients/bills?cycle=2026&id=D000072893"
+
+immigration_advocacy:
+  abundant_futures_fund:
+    role: "Founding donor"
+    co_founders: ["Ford Foundation", "JPB Foundation"]
+    additional_funders: ["Heising-Simons Foundation"]
+    target: "$100M"
+    raised: "$60M (as of 2024)"
+    grants_distributed: "$30M+"
+    description: >
+      Donor collaborative launched in 2022 to expand immigration philanthropy and widen the
+      circle of funders supporting the immigrant rights movement. LPJ's Emerson Collective is
+      a founding donor alongside two of the largest US foundations.
+    source_url: "https://insidephilanthropy.com/home/2024/10/abundant-futures-fund-immigration"
+  college_track_origins:
+    description: >
+      College Track, co-founded by LPJ in 1997, was the ORIGIN POINT for Emerson Collective.
+      LPJ has stated: 'Working with the students, families and staff of College Track enriched
+      my understanding of our country... The understanding of just how interconnected these issues
+      are was fundamental to the creation of Emerson Collective.' College Track's mission focuses
+      on improving college access for students from under-resourced communities, with significant
+      immigrant student population.
+    source_url: "https://en.wikipedia.org/wiki/Emerson_Collective"
+  zuckerberg_fwd_us_divergence:
+    description: >
+      ANALYTICALLY SIGNIFICANT: Mark Zuckerberg founded FWD.us in 2013 as the tech industry's
+      flagship immigration advocacy organization. In December 2025, the Chan Zuckerberg Initiative
+      formally cut all funding to FWD.us following Trump's re-election — FWD.us's 'primary funding
+      source' eliminated. Meanwhile, LPJ's Emerson Collective CONTINUES leading immigration
+      philanthropy through the Abundant Futures Fund. This creates a narrative inversion: Meta's
+      founder RETREATED from immigration advocacy under political pressure, while the Atlantic's
+      owner LEADS the same cause. This divergence shapes editorial incentives — the Atlantic can
+      frame Zuckerberg/Meta's retreat from social advocacy as cowardice or capitulation, while its
+      own owner maintains the progressive position. Coverage of tech industry immigration policy
+      is structurally biased by this positioning.
+    source_urls:
+      - "https://www.bloomberg.com/news/articles/2025-12-19/zuckerberg-cuts-ties-with-fwd-us"
+      - "https://webpronews.com/zuckerbergs-philanthropy-severs-fwd-us-lifeline"
+
+ec_organizational_ecosystem:
+  - name: "College Track"
+    type: "nonprofit (co-founded by LPJ, 1997)"
+    description: "Improves college access for underserved students. LPJ's first organization and origin point for Emerson Collective."
+    status: "Active"
+  - name: "XQ Institute"
+    type: "501(c)(3) (co-founded 2015 with Russlynn Ali)"
+    total_contributions: "$530M (2015-2024, predominantly from LPJ)"
+    ceo: "Russlynn Ali (also Managing Director, Education Fund at Emerson Collective)"
+    description: >
+      Nation's leading organization dedicated to rethinking high school education. Independent
+      affiliate of Emerson Collective. 14 grants totaling $14.1M in 2024. Partnership with
+      The 74 Million education publication.
+    governance_issues:
+      date_reported: "2026-06 (Inside Philanthropy investigation)"
+      allegations: >
+        Anonymous whistleblower email to Inside Philanthropy: 'XQ Institute is a $60M Ponzi scheme.'
+        Allegations include: leadership instability and staff harm, financial stewardship questions,
+        high turnover and suppression, board inaction. Glassdoor reviews: 'Veep, but meaner',
+        'Mission undermined by dysfunctional leadership', 'Compelling mission overshadowed by
+        toxic leadership and high turnover.' One review: 'The irony is almost farcical: an
+        organization dedicated to high school run by people who act like they're still in
+        high school.'
+      analytical_relevance: >
+        $530M of LPJ's wealth flowing into an organization facing whistleblower allegations raises
+        questions about governance and accountability that parallel the Atlantic's own LLC opacity
+        problem. If XQ's board is inactive on $530M in contributions, what governance exists over
+        the Atlantic's editorial independence from its owner's financial interests?
+      source_url: "https://insidephilanthropy.com/home/2026/06/xq-institute-laurene-powell-jobs"
+  - name: "Amplify"
+    type: "For-profit edtech (lead investor 2015)"
+    description: "Education technology company. Sole entity through which EC conducts federal lobbying."
+    lobbying: "$60K-$120K/year via BGR Group"
+  - name: "Waverley Street Foundation"
+    type: "Philanthropic arm ($2.74B assets)"
+    description: "Already documented in ownership_chain section."
+  - name: "Yosemite (Reed Jobs)"
+    type: "VC fund (spun out 2023)"
+    description: "Already documented in ownership_chain section."
 
 litigation_connections:
   - type: "strategic_non-litigation"
@@ -655,8 +897,51 @@ editorial_history:
       notes: "Former Wired EIC hired as CEO. Creates direct Condé Nast editorial culture bridge. Under Thompson: profitability achieved, record subscriptions (1.4M+ by Feb 2026), 3 Pulitzer Prizes, OpenAI licensing deal (May 2024). Revenue over $100M. Also poached ~20 journalists from Washington Post."
 
 notes: |
-  UPDATED 2026-06-24: The Atlantic is now the MOST DENSELY FINANCIALLY CONFLICTED
+  UPDATED 2026-06-28: The Atlantic is now the MOST DENSELY FINANCIALLY CONFLICTED
   publication in the 5-publication tracking set per entity (Meta/OpenAI/Apple).
+  ALSO NOW THE MOST POLITICALLY CONNECTED — owner LPJ has direct access to
+  the highest levels of Democratic political power (9 WH visits, Harris confidant,
+  key role in mobilizing donors against Biden's 2024 re-election bid).
+
+  NEW DIMENSIONS ADDED (Jun 28):
+
+  POLITICAL ACTIVITY & INFLUENCE:
+  LPJ has 1,218 FEC contribution records, 100% Democratic. Major giving: $500K to
+  Senate Majority PAC, $400K to Local Voices super PAC, millions to Future Forward
+  (Harris 2024). State party distribution pattern ($10K each to 10+ state parties on
+  Aug 29, 2024) typical of max-giving bundling. Close Harris confidant since at least
+  2009. Aide David Simas (former Obama WH) runs political research — his focus-group
+  data post-Biden debate was 'influential' in mobilizing donors against Biden. LPJ
+  co-hosted fundraisers with Marc Benioff and former FB exec Sean Parker.
+
+  FEDERAL LOBBYING — THE ABSENCE:
+  EC lobbies through Amplify Education only ($60-120K/year via BGR Group, 3 revolving-
+  door lobbyists). Bills: Student Success Act, ESSA, student privacy. ZERO lobbying on
+  AI, tech regulation, antitrust, or copyright. Compared to Meta ($20M+), Google ($13M+),
+  Apple ($9.4M+), OpenAI ($2.6M+). This means any EC influence on tech policy operates
+  through EDITORIAL COVERAGE rather than lobbying — making the Atlantic's editorial
+  positioning a potential substitute for direct lobbying on AI/tech issues.
+
+  IMMIGRATION ADVOCACY — FWD.US DIVERGENCE:
+  EC is a founding donor of Abundant Futures Fund ($60M raised toward $100M target,
+  alongside Ford Foundation and JPB Foundation). Zuckerberg's CZI formally cut FWD.us
+  funding in Dec 2025 post-Trump re-election — FWD.us's main lifeline eliminated.
+  EC CONTINUES leading immigration philanthropy. This divergence creates editorial
+  incentive: Atlantic can frame Zuckerberg/Meta's retreat from social advocacy as
+  capitulation while its own owner maintains the progressive position.
+
+  XQ INSTITUTE GOVERNANCE:
+  $530M in contributions (2015-2024), facing Inside Philanthropy investigation (Jun 2026)
+  based on whistleblower allegations: 'leadership instability,' 'financial stewardship
+  questions,' 'high turnover and suppression,' 'board inaction.' If XQ's governance
+  is questioned on $530M, what governance exists over the Atlantic's editorial independence?
+
+  ORGANIZATIONAL ECOSYSTEM:
+  College Track (1997, origin of EC) → XQ Institute ($530M, 2015) → Amplify (2015,
+  sole lobbying entity) → Emerson Collective (2011) → Waverley Street Foundation ($2.74B)
+  → Yosemite VC (Reed Jobs, 2023). This nested structure is deliberately opaque —
+  LLC shields investment portfolio, Foundation shows only grants, XQ operates as
+  'independent affiliate' despite being funded almost entirely by LPJ.
 
   OWNERSHIP STRUCTURE — THE LLC OPACITY PROBLEM:
   Emerson Collective is structured as an LLC owned by the Emerson Collective Foundation
