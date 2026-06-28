@@ -996,32 +996,61 @@ journalists:
     strategy than the average tech correspondent. The ''culture of corporate omertà'' phrase is his signature and has been
     adopted widely in Apple journalism.'
 - career:
-  - beat: enterprise tech, then Google/Alphabet
-    end: 2022-04
+  - beat: N/A (education)
+    end: 2017-01
+    event_type: education
+    notes: 'Born in Trinidad, raised in New York. Hunter College BA in Media Studies. Then CUNY Graduate School of Journalism
+      MA in Journalism. Taught by Ben Casselman (later NYT) and Mo Hadi (NYT deputy business editor) at CUNY. Hadi: "Nico
+      was the kind of student who made life easy, because he understood why business reporting matters and he was clearly
+      passionate about it. Plus, he''s a really good writer."'
+    publication: hunter-college-cuny
+    role: student
+    source_url: https://www.editorandpublisher.com/stories/new-york-times-technology-welcomes-two-new-team-members,244437
+    start: 2013-01
+  - beat: enterprise tech (Oracle, Dell, Salesforce, HP)
+    end: 2021-01
     event_type: hired
-    notes: 'Started covering enterprise tech (Oracle, Dell, Salesforce, HP). Pivoted to Google beat early 2021. Broke news
-      on discrimination/harassment in Google''s ethical AI group, mental health toll of Google workplace. Covered Alphabet
-      businesses from self-driving cars to drone deliveries to YouTube. Education: Hunter College (media studies), CUNY (MS
-      journalism). Born in Trinidad, raised in New York.'
+    notes: 'Reporter on Bloomberg''s Global Technology team covering enterprise technology companies: Oracle, Dell, Salesforce,
+      HP. "Became a speed reader of corporate financial reports and balance sheets" (per NYT hiring announcement). Key scoop:
+      Oracle disclosure of CEO Mark Hurd''s illness (Sept 2019). Wrote for Bloomberg terminal, web, Bloomberg Businessweek,
+      and Bloomberg TV/QuickTake.'
     publication: bloomberg
     role: reporter
-    source_url: https://talkingbiznews.com/they-move/ny-times-hires-two-new-tech-reporters/
+    source_url: https://www.bloomberg.com/news/articles/2019-09-11/oracle-grappled-for-months-over-disclosure-of-ceo-hurd-s-illness
     start: 2019-01
+  - beat: Google, Alphabet
+    end: 2022-04
+    event_type: beat_change
+    notes: 'Pivoted from enterprise tech to Google/Alphabet beat at Bloomberg (early 2021). Key scoops: Google Ethical AI
+      group turmoil — discrimination and sexual harassment allegations in research division (Apr 2021, preceded Timnit Gebru
+      controversy by months). Google''s brewing mental health crisis — toxic work environment claims (Jan 2022 feature). Also
+      covered the gamut of Alphabet businesses: self-driving cars (Waymo), drone deliveries (Wing), YouTube. This beat change
+      positioned him as the leading wire-service Google reporter, making him NYT''s top recruitment target.'
+    publication: bloomberg
+    role: reporter
+    source_url: https://www.bloomberg.com/news/articles/2021-04-21/google-ethical-ai-group-s-turmoil-began-long-before-public-unraveling
+    start: 2021-01
   - beat: Google, Alphabet, AI
     end: 2025-05
     event_type: hired
-    notes: 'Hired with Tripp Mickle. Covered Google/Alphabet for ~3 years. DEPARTED JOURNALISM ENTIRELY (~May 2025): ''Working
-      there was a dream come true, but now, it''s time to chase other dreams outside of journalism.'' Creates analytical gap:
-      who covers the Google/AI beat after him? NYT''s AI coverage is now distributed across Kevin Roose (columnist), Cade
-      Metz (AI correspondent), and others.'
+    notes: 'Hired alongside Tripp Mickle (Apple beat). Covered Google/Alphabet for ~3 years, based in San Francisco. Key coverage:
+      Sergey Brin AGI memo (60 hours/week "sweet spot"), YouTube piracy, Google AI/Gemini development. Announced by Pui-Wing
+      Tam, Jim Kerstetter, Joe Plambeck, and Ellen Pollock. DEPARTED JOURNALISM ENTIRELY (~May 2025): "Working there was a
+      dream come true, but now, it''s time to chase other dreams outside of journalism." Relocated to Los Angeles. Creates
+      analytical gap: NYT''s Google/AI beat was redistributed across Kevin Roose (columnist), Cade Metz (AI correspondent),
+      and others.'
     publication: nytimes
     role: technology_reporter
     source_url: https://talkingbiznews.com/they-move/ny-times-biz-reporter-grant-departs/
     start: 2022-05
   name: Nico Grant
-  notes: 'DEPARTED. Former NYT Google/Alphabet reporter (2022-2025). Left journalism entirely: ''Working there was a dream
-    come true, but now, it''s time to chase other dreams outside of journalism.'' Analytically important: creates a gap on
-    NYT''s Google beat. Career: Bloomberg → NYT → left journalism.'
+  notes: 'DEPARTED. Former NYT Google/Alphabet reporter (2022-2025). Born in Trinidad, raised in New York. Education: Hunter
+    College BA Media Studies, CUNY MA Journalism (taught by Ben Casselman and Mo Hadi of NYT). Left journalism entirely (~May
+    2025): "Working there was a dream come true, but now, it''s time to chase other dreams outside of journalism." Now based
+    in Los Angeles. Career: CUNY → Bloomberg enterprise tech → Bloomberg Google beat → NYT → left journalism. Analytically
+    important: his departure creates a gap on NYT''s Google beat. Key Bloomberg scoops: Google AI group turmoil (discrimination/harassment),
+    Google mental health crisis. Key NYT coverage: Brin AGI memo, YouTube piracy investigation. ANALYTICAL VALUE: Bloomberg
+    → NYT pipeline tests whether framing shifts from wire-service neutral to NYT institutional posture.'
 - career:
   - beat: NFTs, gaming, metaverse, Web3
     end: 2023-02
@@ -1739,39 +1768,63 @@ journalists:
     Builds custom tools to analyze datasets. Known for high-impact investigations (Epstein Island phone data, JD Vance Venmo,
     ShotSpotter).'
 - career:
-  - beat: security, privacy, hacking
+  - beat: N/A (education)
+    end: 2007-01
+    event_type: education
+    notes: North Carolina School of Science and Mathematics (high school). Haverford College BA in History. Studied at Beijing
+      Foreign Studies University (abroad). NYU Arthur L. Carter Journalism Institute, MA in Business and Economic Reporting.
+      Father was an IBM engineer who helped develop the Universal Product Code (barcode). Lives in Brooklyn with wife Malika
+      Zouhali-Worrall (documentary filmmaker).
+    publication: haverford-nyu
+    role: student
+    source_url: https://engineering.nyu.edu/news/inaugural-award-cybersecurity-journalism-honors-wireds-andy-greenberg
+    start: 2002-01
+  - beat: technology, security, privacy, digital civil liberties
     end: 2014-06
     event_type: hired
-    notes: 'Early career at Forbes covering security and privacy. Published first book ''This Machine Kills Secrets'' (2012)
-      on WikiLeaks, cypherpunks, and digital whistleblowing. Named SANS Top Cybersecurity Journalist 2014. Education: Haverford
-      College BA, NYU MA (Business and Economic Reporting). Based in Brooklyn.'
+    notes: 'Staff writer at Forbes magazine and contributor to Forbes.com. Focus on technology, information security, and
+      digital civil liberties. His late 2010 Forbes cover story was the first magazine cover to feature Julian Assange. Published
+      "This Machine Kills Secrets: How WikiLeakers, Hacktivists and Cypherpunks Aim to Free the World''s Information" (Dutton/Penguin,
+      2012) — NYT Editors'' Choice, later named one of Verge''s top 10 "greatest tech books of all time." Nominated (with
+      Ryan Mac) for Gerald Loeb Award (2014) for Forbes article "Big Brother''s Brain." Won "Single Best Blog Post of the
+      Year" from Security Bloggers Network (2013) for "Meet The Hackers Who Sell Spies The Tools To Crack Your PC (And Get
+      Paid Six-Figure Fees)." Named SANS Institute Top Cybersecurity Journalist (2014). Featured in 2015 documentary "Deep
+      Web" about Ross Ulbricht trial. Role described as "senior reporter" by later bios. Forbes is outside the 5 tracked publications
+      but provides a pre-Condé Nast baseline for his framing.'
     publication: forbes
     role: staff_writer
-    source_url: https://www.forbes.com/sites/andygreenberg/
+    source_url: https://en.wikipedia.org/wiki/Andy_Greenberg
     start: 2007-01
-  - beat: security, privacy, hacking, cybercrime
+  - beat: security, privacy, hacking, cybercrime, cyberwar
     event_type: hired
-    notes: '12+ year tenure (ongoing). Wired''s primary security/privacy/hacking writer. Major investigations: Jeep hack (Jul
-      2015) — demonstrated remote vehicle takeover with Charlie Miller and Chris Valasek, prompting Chrysler to recall 1.4
-      million vehicles and contributing to the SPY Car Act Senate bill. Published ''Sandworm'' (2019) on Russia''s GRU hackers
-      (named a NYT Book of the Year). Published ''Tracers in the Dark'' (2022) on cryptocurrency-tracing and dark web takedowns.
-      Won Gerald Loeb Award for international reporting (2019) and feature reporting (2023). Wife: Malika Zouhali-Worrall
-      (documentary filmmaker). KEY: His institutional longevity at Wired (~12 years) makes him comparable to Steven Levy as
-      a control for measuring editorial drift. Security/privacy beat gives him natural adversarial framing toward Big Tech
-      — the question is whether Drummond-era Wired amplifies or simply inherits that posture.'
+    notes: '12+ year tenure (ongoing). Wired''s primary security/privacy/hacking writer. Also contributed to The Atlantic.
+      MAJOR INVESTIGATIONS: (1) Jeep hack (Jul 2015) — demonstrated remote vehicle takeover with Charlie Miller and Chris
+      Valasek, prompting Chrysler to recall 1.4M vehicles; SPY Car Act bill introduced in Senate same day. (2) "Lights Out"
+      (Jul 2017 cover story) — Russia''s hack of Ukraine power grid; won inaugural NYU CSAW Cyber Journalism Award; six months
+      of investigative reporting in US and Ukraine. (3) "The Code that Crashed the World" — NotPetya cyberattack; won Gerald
+      Loeb Award for International Reporting (2019). BOOKS: "Sandworm: A New Era of Cyberwar" (Doubleday, Nov 2019) — traced
+      GRU''s Olympic Destroyer malware; won Gerald Loeb (international), Sigma Delta Chi (SPJ), 3 Deadline Club Awards (NY
+      SPJ), Cornelius Ryan Citation for Excellence (Overseas Press Club). "Tracers in the Dark: The Global Hunt for the Crime
+      Lords of Cryptocurrency" (Doubleday, Nov 2022) — cryptocurrency tracing/dark web; won second Gerald Loeb Award for Feature
+      Reporting (2023). Total: 2 Gerald Loeb Awards, Sigma Delta Chi, Cornelius Ryan Citation, 3 Deadline Club Awards. 2026
+      National Magazine Award finalist (Service Journalism) with Lily Hay Newman for government surveillance article. KEY:
+      Institutional longevity (~12 years) makes him a control case for Drummond-era editorial drift. Forbes → Wired is a cross-ownership
+      test (Forbes independent; Wired = Condé Nast). His security beat gives natural adversarial framing toward Big Tech —
+      the question is whether Drummond-era Wired amplifies or simply inherits that posture.'
     publication: wired
     role: senior_writer
     source_url: https://www.wired.com/author/andy-greenberg/
     start: 2014-07
   name: Andy Greenberg
-  notes: 'Wired''s longest-serving security/privacy journalist (~12 years). Not a cross-publication migration — came from
-    Forbes, which is outside tracked publications. Author of three books: This Machine Kills Secrets (2012), Sandworm (2019),
-    Tracers in the Dark (2022). Two Gerald Loeb Awards (2019 international, 2023 feature). SANS Top Cybersecurity Journalist
-    2014. His 2015 Jeep hack article prompted Chrysler to recall 1.4 million vehicles and contributed to a Senate bill. ANALYTICAL
-    VALUE: Like Steven Levy, Greenberg is an institutional fixture — his continuous 12+ year tenure at Wired makes him a control
-    case for measuring Drummond-era editorial posture changes in the security/privacy beat. Did his framing shift after Drummond
-    took over in 2023, or does his long-tenured beat independence insulate him from editorial pressure? Forbes → Wired migration
-    is also a cross-ownership test (Forbes is independent; Wired is Condé Nast).'
+  notes: 'Wired''s longest-serving security/privacy journalist (~12 years). Education: NCSSM (HS), Haverford College BA History,
+    Beijing Foreign Studies Univ (abroad), NYU MA Business & Economic Reporting. Father was IBM engineer (co-developed barcode/UPC).
+    Author of three books: This Machine Kills Secrets (2012), Sandworm (2019), Tracers in the Dark (2022). 2× Gerald Loeb
+    Awards (2019 international, 2023 feature), Sigma Delta Chi, Cornelius Ryan Citation, 3 Deadline Club Awards, SANS Top
+    Cybersecurity Journalist 2014, NYU CSAW Cyber Journalism Award (inaugural, 2017). 2026 National Magazine Award finalist
+    with Lily Hay Newman. His 2015 Jeep hack article prompted 1.4M vehicle recall + Senate bill. Lives in Brooklyn with wife
+    Malika Zouhali-Worrall (filmmaker). ANALYTICAL VALUE: Like Steven Levy, Greenberg is an institutional fixture whose continuous
+    12+ year tenure makes him a control case for measuring Drummond-era editorial posture changes. Forbes → Wired migration
+    is also a cross-ownership test.'
 - career:
   - beat: media
     end: 2015-06
@@ -3268,38 +3321,74 @@ journalists:
     Wired security coverage. His FOI Directory background signals a transparency-activist orientation predating his journalism
     career.'
 - career:
-  - beat: technology, digital policy
+  - beat: N/A (education)
+    end: 2012-06
+    event_type: education
+    notes: Johns Hopkins University, double major in Writing and History of Science and Technology. Editor-in-chief of The
+      Hopkins News-Letter (student newspaper). Internships at Metro New York, Baltimore City Paper, and Gizmodo. Self-described
+      as having "pretended she wanted to be a science writer so her college applications would be more convincing. Then she
+      got sucked in." Interests included supernovae, colony collapse disorder, and battery technology.
+    publication: johns-hopkins
+    role: student
+    source_url: https://scienceline.org/author/lnewman/
+    start: 2008-09
+  - beat: science reporting
+    end: 2013-06
+    event_type: education
+    notes: NYU Arthur L. Carter Journalism Institute, Science, Health and Environmental Reporting Program (SHERP). Class of
+      2013. Published on Scienceline (SHERP student magazine) — articles dated late 2012 through mid-2013 covering battery
+      technology, quartz crystal data storage, clinical trials. Classmates included Arielle Duhaime-Ross, Sarah Jacoby, Naveena
+      Sadasivam, Nick Stockton. SHERP is a pipeline for science journalists into prestige outlets — the program has produced
+      multiple National Magazine Award winners and NYT fellows. Newman's SHERP cohort year (2013) also produced Joss Fong
+      (YouTube/Vox, 2025 National Academies prize).
+    publication: nyu-sherp
+    role: graduate_student
+    source_url: https://journalism.nyu.edu/about/awards/
+    start: 2012-09
+  - beat: technology, digital policy, emerging tech
     end: 2017-06
     event_type: hired
-    notes: Technology reporter at Slate magazine. Also staff writer for Future Tense, Slate's partnership with New America
-      Foundation and Arizona State University exploring emerging technology policy. The Future Tense pipeline signals exposure
-      to think-tank framing of technology issues — policy-first, societally focused. Prior work also in Gizmodo, Fast Company,
-      IEEE Spectrum, Popular Mechanics.
+    notes: 'Technology reporter at Slate magazine. Also staff writer and lead blogger for Future Tense, a collaboration between
+      Slate, the New America Foundation, and Arizona State University exploring emerging technology policy. Featured as special
+      guest on MediaShift podcast (2016). Prior freelance/contributing work appeared in Gizmodo, Fast Company, IEEE Spectrum,
+      Popular Mechanics, and Metro New York. The Future Tense pipeline is analytically significant: it signals exposure to
+      think-tank framing of technology issues — policy-first, societally focused, with institutional ties to New America (a
+      center-left think tank led at the time by Anne-Marie Slaughter). This ideological formation predates and likely shapes
+      her Wired security coverage.'
     publication: slate
     role: technology_reporter
-    source_url: https://www.wired.com/author/lily-hay-newman/
+    source_url: https://mediashift.org/2016/05/mediashift-podcast-197/
     start: 2014-01
-  - beat: security, privacy, hacking, digital safety
+  - beat: information security, digital privacy, hacking, digital safety
     event_type: hired
-    notes: 'Senior writer, security desk. ~7+ year tenure (as of 2024). Key coverage: Trickbot Russian cybercriminals (Fletcher
-      School/Tufts speaker on this topic), Okta/Lapsus$ hack, CISA/Jen Easterly interview, protest surveillance, airport security
-      vulnerabilities, digital opsec for teenagers. Hosts/appears on Wired video series ''Incognito Mode'' and ''The Big Interview.''
-      Works with Andrew Couts (Senior Editor, Security & Investigations). Also contributes to IEEE Spectrum and Popular Mechanics.
-      Fletcher School (Tufts) speaker on Russian cybercriminals. KEY: One of few Wired writers with both long tenure AND video
-      presence — bridges print authority with audience-facing brand building.'
+    notes: 'Senior writer (promoted from staff writer), security desk. ~9-year tenure as of 2026. Based in New York City.
+      KEY INVESTIGATIONS: (1) Trickbot/Bentley — unmasked Maksim Galochkin as "Bentley," a key Trickbot cybercriminal, from
+      leaked chat logs ("Trickleaks"); presented findings at Fletcher School/Tufts. (2) Okta/Lapsus$ hack coverage. (3) CISA/Jen
+      Easterly interview. (4) Protest surveillance. (5) Airport security vulnerabilities. (6) Digital opsec for teenagers.
+      (7) Government surveillance protection (co-authored with Andy Greenberg — 2026 National Magazine Award finalist, Service
+      Journalism). Hosts/appears on Wired video series "Incognito Mode" and "The Big Interview." Works with Andrew Couts (Senior
+      Editor, Security & Investigations). Also appears in GQ Brazil and Ars Technica (syndication). NPR All Things Considered
+      guest (2019) on IoT privacy. Signal contact: +1 (347) 722-1347 (per Muck Rack bio). Mastodon: @lhn@mastodon.online.
+      KEY: One of few Wired writers with both long tenure AND video presence — bridges print authority with audience-facing
+      brand. Her SHERP + Slate/New America formation means she entered Wired from a think-tank-adjacent environment focused
+      on technology''s societal implications — a more advocacy-oriented pipeline than typical journalism-to-journalism moves.
+      Her beat overlaps heavily with Matt Burgess (Wired UK) but from US lens vs. UK/EU lens, enabling cross-continental editorial
+      comparison within the same desk.'
     publication: wired
     role: senior_writer
     source_url: https://www.wired.com/author/lily-hay-newman/
     start: 2017-07
   name: Lily Hay Newman
-  notes: 'Wired''s senior security/privacy writer. Based in New York City. Career: Slate/Future Tense → Wired (~2017). ~7+
-    years at Wired as of 2024, making her one of the security desk''s longest-serving current staff alongside Andy Greenberg.
-    ANALYTICAL VALUE: Newman''s Slate/Future Tense background (a collaboration between Slate, New America Foundation, and
-    Arizona State University) means she entered Wired from a think-tank-adjacent environment focused on technology''s societal
-    implications — a more advocacy-oriented pipeline than typical journalism-to-journalism moves. Her beat (cybersecurity,
-    hacking, digital privacy, protest surveillance, teen digital safety) overlaps heavily with Matt Burgess''s but from a
-    US lens vs. his UK/EU lens, enabling cross-continental editorial comparison within the same desk. Hosts Wired video series
-    ''Incognito Mode'' and ''The Big Interview.'' Works closely with Andrew Couts (Senior Editor, Security & Investigations).'
+  notes: 'Wired''s senior security/privacy writer. Education: Johns Hopkins Univ (BA Writing + History of Science & Technology,
+    editor-in-chief of Hopkins News-Letter), NYU SHERP 2013. Career: JHU → NYU SHERP → intern at Metro NY, Baltimore City
+    Paper, Gizmodo → Slate/Future Tense (2014-2017) → Wired (2017-present). ~9 years at Wired as of 2026, making her one of
+    the security desk''s longest-serving current staff alongside Andy Greenberg. 2026 National Magazine Award finalist (Service
+    Journalism) with Andy Greenberg for government surveillance article. ANALYTICAL VALUE: Newman''s Slate/Future Tense background
+    (Slate + New America Foundation + Arizona State University) means she entered Wired from a think-tank-adjacent environment
+    focused on technology''s societal implications — a more advocacy-oriented pipeline than typical journalism-to-journalism
+    moves. Her beat overlaps with Matt Burgess (Wired UK) but from US lens, enabling cross-continental editorial comparison
+    within the same desk. Hosts Wired video "Incognito Mode" and "The Big Interview." Works with Andrew Couts (Senior Editor,
+    Security & Investigations).'
 - career:
   - beat: billionaires, tech startups, wealth
     end: 2017-05
