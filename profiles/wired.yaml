@@ -38,6 +38,10 @@ ownership_chain:
       CEO: Roger Lynch (since Apr 2019). Chief Content Officer: Anna Wintour (stepped down as US Vogue EIC
       in 2025, retains global editorial director and CCO role; successor search for "Head of Editorial Content"
       announced). Chief Revenue Officer: Elizabeth Herbst-Brady (since Aug 2024).
+      Chief Product & Technology Officer: Vasanth Williams (started Dec 8, 2025). Hired from Major League
+      Baseball where he was CPO and EVP of Engineering. Prior: Amazon, Microsoft, Yodle. Mandate: advance
+      Condé Nast's digital ecosystem with AI-driven personalization, new tools and platforms, and editorial
+      product integration. Reports to Lynch. Appointment announced alongside Microsoft Copilot licensing pilot.
       7 marquee brands (85% of revenue, FT Feb 2026): Vogue, GQ, The New Yorker, Wired, Vanity Fair,
       Architectural Digest, Condé Nast Traveler.
       Also publishes (digital): Ars Technica, Epicurious, Glamour (US/UK only after Apr 2026 restructuring),
@@ -177,7 +181,11 @@ advance_investments:
     q1_2026_financials: >
       Q1 2026: Revenue $663.41M (+69.1% YoY), EPS $1.01 (vs $0.13 YoY, +677%).
       Beat consensus: revenue +8.03%, EPS +62.9%. Beat consensus all 4 trailing quarters.
+      AD REVENUE DETAIL: Q1 2026 ad revenues $625M (+74% YoY), accounting for the vast majority of
+      top-line expansion. Active advertiser count +75% YoY. Retail advertiser investment in Reddit grew
+      over 8x between 2023-2025 in EMEA alone.
       FY2026 projected: $3.25B (+47.6%), FY2027: $4.31B (+32.5%).
+      Q2 2026 GUIDANCE: $715M-$725M, representing 43-45% YoY revenue growth (~44% at midpoint).
       Market cap ~$32.1B at $166.94/share (Jun 26, 2026 close). 52-week range $119.27-$282.95. Beta 2.06.
       TTM (trailing 12 months): Revenue $2.2B, net income $530M (net margin 24.1%), operating income
       $442M (operating margin 20.1%), gross profit $2.0B (gross margin 91.2%), operating cash flow $690.9M.
@@ -189,6 +197,8 @@ advance_investments:
       - "https://www.zacks.com/stock/news/2478500/reddit-inc-rddt-is-attracting-investor-attention-here-is-what-you-should-know"
       - "https://www.marketbeat.com/stocks/NYSE/RDDT/institutional-ownership/"
       - "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000060/rddt-20260423.htm"
+      - "https://www.zacks.com/stock/news/reddit-expands-partnership-shopify-boost-ad-revenue"
+      - "https://www.mediapost.com/publications/article/reddit-expands-shopify-integration-all-advertisers/"
     governance_control: >
       FAR DEEPER THAN 2 BOARD SEATS. Per Reddit 2026 proxy (SEC filing rddt-20260423, DEF 14A filed Apr 23, 2026),
       Advance has consent/veto rights over Reddit's most consequential decisions:
@@ -229,6 +239,16 @@ advance_investments:
       engagement. Reddit's advertising business (~$1.3B FY2025 rev, projected $3.25B FY2026)
       competes directly with Meta's ad platform for performance advertising dollars. Reddit's
       69.1% YoY revenue growth means the competitive threat is ACCELERATING.
+      SHOPIFY PARTNERSHIP (Mar-May 2026): Reddit announced Shopify integration at Shoptalk (March 25,
+      2026), expanded globally to all advertisers (May 29, 2026). Merchants can link Shopify storefronts
+      directly to Reddit Ads, with automated product catalog syncing, codeless Reddit Pixel for conversion
+      tracking, and Dynamic Product Ads (DPA). Reddit DPAs delivered +91% higher ROAS YoY (Q4 2025).
+      Fospha study found Reddit improved cost per purchase by 34% while increasing ROAS and helping
+      advertisers scale spend by 2.5x YoY. Reddit also partnered with WooCommerce. COO Jen Wong:
+      "We're excited about how this can build a deeper presence with mid-market and SMBs."
+      40% YoY boost in high-intent shopping conversations; 84% of Reddit shoppers report feeling more
+      secure in purchases after researching on platform. This ecommerce push directly competes with
+      Meta's Shops, Marketplace, and Instagram Shopping for merchant ad spend and product discovery.
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance+magazine&CIK=&type=SC+13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
     source_url: "https://www.thewrap.com/conde-nast-reddit-ipo-advance-publications-nearly-2-billion/"
 
@@ -449,18 +469,25 @@ advance_investments:
     source_url: "https://advance.com"
 
 # ===================================================================
-# TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (updated Jun 26, 2026 close)
+# TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (updated Jun 27, 2026)
 # ===================================================================
 # Reddit (RDDT): ~$7.04B (42.2M shares @ $166.94, Jun 26 2026 close, +5.64% on the day)
+#   Q2 2026 GUIDANCE: $715M-$725M (~44% YoY at midpoint). Q1 ad revenue $625M (+74% YoY).
+#   Shopify partnership expanded globally (May 2026): DPA, automated catalog sync, codeless Pixel.
+#   Active advertiser count +75% YoY. Fospha study: 34% improved cost per purchase, 2.5x spend scaling.
+#   Reddit's ecommerce push (Shopify + WooCommerce + Collection Ads + Community Intelligence) directly
+#   competes with Meta's commerce platforms (Shops, Marketplace, Instagram Shopping).
 # Charter (CHTR): ~$2.67B (20.6M shares @ $129.65, STEEP DECLINE: -67% 1yr, -82% 5yr)
 # Turnitin: ~$1.75B+ (acquired 2019, likely appreciated given AI detection boom)
 # WBD remaining: ~$2.65B at market ($26.98) or ~$2.94B at Paramount $30 tender + $1.1B realized
 # Condé Nast: Private (~$1.9-2.0B revenue, profitable 2025, events rev +40% YoY, projecting +22% in 2026)
 #   - CEO Roger Lynch (Oct 2025): "no longer expects advertising to be a growth engine"
 #   - Lynch (FT, Feb 27 2026): Google search "no longer a meaningful driver" — from majority to ~25%
-#   - Pivoting to: events, subscriptions, commerce, AI licensing (OpenAI, Amazon, Perplexity)
+#   - Pivoting to: events, subscriptions, commerce, AI licensing (OpenAI, Amazon, Perplexity, Microsoft)
 #   - Events highlights: VF Oscars Party +65% rev, New Yorker Festival +86%, Vogue World +48%
 #   - New Yorker: record revenue, profits, and subscribers (2025)
+#   - CPTO Vasanth Williams hired Dec 2025 from MLB (Amazon, Microsoft background) — AI product mandate
+#   - Microsoft Copilot pilot partner (Dec 2025/Feb 2026): 6TH Meta competitor licensing deal
 #   - NO Google AI licensing deal. No Meta revenue relationship. Google + Meta = only 2 major tech cos excluded.
 #   - Gross margins up ~3pp over 2-3 years. Revenue "similar to 2021" (~$2B WSJ) but "far more profitable"
 #   - CNIL fined French entity €750,000 for cookie consent violations (Nov 2025)
@@ -477,8 +504,18 @@ advance_investments:
 # Advance is also LEVERAGING Reddit for capital (Nov 2024: $1.2B credit facility collateralized
 # by 7.8M Reddit shares). This means Advance's capital access — which could fund Condé Nast
 # operations — is directly tied to Reddit's stock price. Combined with Reddit's Q1 2026
-# revenue growth of +69.1% YoY (projected $3.25B FY2026), Reddit is both the dominant asset
-# AND the dominant revenue growth story in the Advance portfolio.
+# revenue growth of +69.1% YoY (projected $3.25B FY2026, Q2 guided $715-725M), Reddit is both
+# the dominant asset AND the dominant revenue growth story in the Advance portfolio.
+#
+# AI LICENSING PORTFOLIO (6 deals, all Meta competitors):
+# 1. OpenAI (Aug 2024) — ChatGPT/SearchGPT
+# 2. Amazon Rufus (Jul 2025) — AI shopping assistant
+# 3. Perplexity AI (2025) — AI search engine
+# 4. Apple Intelligence (in negotiations) — on-device AI
+# 5. Microsoft Copilot (Dec 2025 pilot) — enterprise AI assistant
+# 6. Google — NO deal (adversarial, "death blow" traffic collapse)
+# 7. Meta — NO deal (excluded from Dec 2025 round, $0 revenue)
+# Net: Every major AI platform except Meta and Google pays Condé Nast.
 #
 # CONFLICT ESCALATION: Reddit's accelerating revenue growth makes the conflict between
 # Advance's Reddit investment and Wired's Meta coverage MORE MATERIAL over time, not less.
@@ -486,6 +523,7 @@ advance_investments:
 # collateralized lending means even Advance's SHORT-TERM LIQUIDITY depends on Reddit's
 # stock price remaining high. The Newhouse family's wealth, Condé Nast's financial backing,
 # and Advance's credit facility are all increasingly tied to Reddit outcompeting Meta.
+# Reddit's Shopify/WooCommerce ecommerce partnerships directly attack Meta's commerce ecosystem.
 
 # ===================================================================
 # REVENUE RELATIONSHIPS — Condé Nast AI licensing deals
@@ -544,16 +582,18 @@ revenue_relationships:
     date_established: "n/a"
     description: >
       NO revenue relationship exists between Condé Nast and Meta. Meta is the one major tech company
-      NOT paying Condé Nast for content licensing. OpenAI, Amazon, Perplexity, and Apple (in negotiations)
-      all pay. CRITICAL UPDATE (Dec 5, 2025): Meta entered the AI content licensing market by signing
-      multi-year deals with SEVEN publishers — CNN, Fox News, Fox Sports, Le Monde Group, People Inc.,
-      The Daily Caller, The Washington Examiner, USA Today, and the USA Today Network — to incorporate
-      their content into its Llama LLM and Meta AI chatbot. Condé Nast was EXCLUDED from this round.
-      By Q1 2026, these Meta deals were producing "meaningful" and "notable" revenue for publishers
-      (per USA Today Co. and People Inc. Q1 2026 earnings reports, Digiday May 2026). The exclusion of
-      Condé Nast from Meta's publisher licensing program — while Meta actively pays its competitors —
-      DEEPENS the financial incentive for adversarial coverage: Condé Nast receives $0 from Meta while
-      its competitors receive growing AI licensing revenue from Meta deals.
+      NOT paying Condé Nast for content licensing. OpenAI, Amazon, Perplexity, Microsoft (Copilot),
+      and Apple (in negotiations) all pay. CRITICAL UPDATE (Dec 5, 2025): Meta entered the AI content
+      licensing market by signing multi-year deals with SEVEN publishers — CNN, Fox News, Fox Sports,
+      Le Monde Group, People Inc., The Daily Caller, The Washington Examiner, USA Today, and the USA
+      Today Network — to incorporate their content into its Llama LLM and Meta AI chatbot. Condé Nast
+      was EXCLUDED from this round. By Q1 2026, these Meta deals were producing "meaningful" and
+      "notable" revenue for publishers (per USA Today Co. and People Inc. Q1 2026 earnings reports,
+      Digiday May 2026). The exclusion of Condé Nast from Meta's publisher licensing program — while
+      Meta actively pays its competitors — DEEPENS the financial incentive for adversarial coverage:
+      Condé Nast receives $0 from Meta while its competitors receive growing AI licensing revenue from
+      Meta deals. As of June 2026, Condé Nast has licensing deals with SIX Meta competitors (OpenAI,
+      Amazon, Perplexity, Microsoft, Apple in negotiations, plus Google excluded) and zero with Meta.
     competitive_with: ["Meta"]
     source_urls:
       - "https://www.reuters.com/meta-strikes-multiple-ai-deals-news-publishers/"
@@ -571,11 +611,34 @@ revenue_relationships:
       (Adweek, May 2026 article referencing Oct 2025 Lynch comments). Perplexity AI is an AI-powered
       search engine that competes with Google Search, Meta AI search, and OpenAI's SearchGPT. It is
       backed by Jeff Bezos and Nvidia, among others. Perplexity's Publishers Program launched mid-2024
-      with revenue-sharing after plagiarism allegations. This adds a FIFTH Meta competitor to Condé
-      Nast's AI licensing portfolio (after OpenAI, Amazon, Apple, and now Perplexity), while Meta
-      remains the sole major tech company with no Condé Nast revenue relationship.
+      with revenue-sharing after plagiarism allegations. Combined with OpenAI, Amazon, Apple (in negotiations),
+      and Microsoft Copilot, this makes SIX Meta competitors in Condé Nast's AI licensing portfolio, while
+      Meta remains the sole major tech company with no Condé Nast revenue relationship.
     competitive_with: ["Meta"]
     source_url: "https://www.adweek.com/how-conde-nast-grew-events-revenue/"
+
+  - partner: "Microsoft (Copilot)"
+    relationship_type: "licensing (pilot)"
+    estimated_value: "undisclosed"
+    date_established: "2025-12-03 (announced), formal press release 2026-02-09"
+    description: >
+      Condé Nast became a pilot partner in Microsoft's new two-sided content marketplace designed to
+      compensate publishers when their content is used in AI-generated responses. Under the agreement,
+      Condé Nast's U.S. text-based editorial content is licensed for use in grounding AI-generated
+      summary responses across Microsoft Copilot experiences. Announced Dec 3, 2025 alongside CPTO
+      Vasanth Williams hire; formal partnership press release via Condé Nast newsroom Feb 9, 2026.
+      CEO Roger Lynch: "Our technology and product ambitions are central to how we serve audiences today."
+      Microsoft competes directly with Meta in AI (Copilot vs Meta AI), social/professional networking
+      (LinkedIn vs Facebook/Instagram), enterprise (Azure/Teams vs Workplace from Meta), and advertising
+      (Microsoft Advertising vs Meta Ads). This is the SIXTH Meta competitor to establish a content
+      licensing deal with Condé Nast (after OpenAI, Amazon Rufus, Perplexity, Apple in negotiations,
+      and now Microsoft), further isolating Meta as the only major tech company with no revenue
+      relationship with Condé Nast.
+    competitive_with: ["Meta"]
+    source_urls:
+      - "https://www.adweek.com/media/conde-nast-names-chief-product-technology-officer-vasanth-williams/"
+      - "https://www.condenast.com/news/conde-nast-joins-microsoft-pilot-partner-ai-content-marketplace"
+      - "https://www.editorandpublisher.com/stories/vasanth-williams-named-chief-product-and-technology-officer-at-conde-nast/"
 
 editorial_leadership:
   - name: "Katie Drummond"
@@ -663,14 +726,17 @@ known_conflicts:
   - type: "revenue"
     description: >
       Condé Nast has multi-year content licensing deals with OpenAI (Aug 2024), Amazon Rufus (Jul 2025),
-      Perplexity (2025), and Apple Intelligence (in negotiations) — all Meta competitors in AI, advertising,
-      or hardware. Meta has NO such deal with Condé Nast. CRITICAL: In Dec 2025, Meta entered the AI
-      licensing market by signing deals with 7 OTHER publishers (CNN, Fox News, People Inc., USA Today, etc.)
-      but explicitly excluded Condé Nast. By Q1 2026, these Meta deals were producing "meaningful" revenue
-      for participating publishers. The financial incentive structure is now: companies paying Condé Nast
-      for AI licensing (OpenAI, Amazon, Perplexity, Apple) = favorable content partnerships; Meta, the only
+      Perplexity (2025), Microsoft Copilot (Dec 2025 pilot), and Apple Intelligence (in negotiations) —
+      all Meta competitors in AI, advertising, or hardware. Meta has NO such deal with Condé Nast.
+      CRITICAL: In Dec 2025, Meta entered the AI licensing market by signing deals with 7 OTHER
+      publishers (CNN, Fox News, People Inc., USA Today, etc.) but explicitly excluded Condé Nast.
+      By Q1 2026, these Meta deals were producing "meaningful" revenue for participating publishers.
+      The financial incentive structure is now: companies paying Condé Nast for AI licensing
+      (OpenAI, Amazon, Perplexity, Microsoft, Apple) = favorable content partnerships; Meta, the only
       major tech company not paying Condé Nast = adversarial coverage from a publication whose parent's
-      $6.66B Reddit stake directly benefits from Meta's struggles.
+      $7B+ Reddit stake directly benefits from Meta's struggles. The Microsoft Copilot deal (announced
+      Dec 2025, formalized Feb 2026) adds a SIXTH Meta competitor to Condé Nast's licensing portfolio,
+      making the revenue asymmetry even more stark.
     severity: 5
     evidence: "Condé Nast press releases, Reuters Dec 2025, Digiday Q1 2026 publisher AI revenue reporting"
     source_url: "https://www.condenast.com/news/conde-nast-and-openai-announce-partnership"

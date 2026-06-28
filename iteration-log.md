@@ -4,6 +4,63 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 18:00 PT — Hour Type C: Ownership & Funding Deep Dive — Wired/Advance Publications Update
+
+**Publication:** Wired (via Advance Publications / Condé Nast)
+**Rationale:** Wired/Advance profile last updated June 23 (oldest among all 5 publications). Multiple fresh data points discovered via web research.
+
+### 1. NEW Revenue Relationship: Microsoft Copilot Licensing (Dec 2025 / Feb 2026)
+
+**MAJOR FINDING:** Condé Nast became a pilot partner in Microsoft's new two-sided content marketplace designed to compensate publishers when their content is used in AI-generated responses. U.S. text-based editorial content licensed for use across Microsoft Copilot experiences. Announced Dec 3, 2025 (Adweek) alongside CPTO hire; formal Condé Nast press release Feb 9, 2026.
+
+This is the **SIXTH Meta competitor** to establish a content licensing deal with Condé Nast:
+1. OpenAI (Aug 2024) — ChatGPT/SearchGPT
+2. Amazon Rufus (Jul 2025) — AI shopping assistant
+3. Perplexity AI (2025) — AI search engine
+4. Apple Intelligence (in negotiations) — on-device AI
+5. Microsoft Copilot (Dec 2025 pilot) — enterprise AI assistant
+6. Google and Meta remain the ONLY major tech companies with NO Condé Nast revenue relationship.
+
+Microsoft competes with Meta across AI (Copilot vs Meta AI), social/professional networking (LinkedIn vs Facebook/Instagram), enterprise (Teams vs Workplace), and advertising. This deepens the financial asymmetry documented in the profile.
+- Source: [Adweek — Condé Nast Names New CPTO](https://www.adweek.com/media/conde-nast-names-chief-product-technology-officer-vasanth-williams/)
+- Source: [Condé Nast Newsroom — Microsoft Pilot](https://www.condenast.com/news/conde-nast-joins-microsoft-pilot-partner-ai-content-marketplace)
+- Source: [WebWire press release (Feb 9, 2026)](https://www.webwire.com/ViewPressRel.asp?aId=350303)
+- Source: [Editor & Publisher](https://www.editorandpublisher.com/stories/vasanth-williams-named-chief-product-and-technology-officer-at-conde-nast/)
+
+### 2. Condé Nast CPTO Hire: Vasanth Williams
+
+New C-suite executive added to Condé Nast leadership:
+- **Vasanth Williams** — Chief Product & Technology Officer (started Dec 8, 2025)
+- Previously: CPO & EVP of Engineering at Major League Baseball; prior roles at Amazon, Microsoft, Yodle
+- Mandate: advance digital ecosystem with AI-driven personalization, new tools/platforms, editorial product integration
+- Reports to CEO Roger Lynch
+- Source: [Adweek](https://www.adweek.com/media/conde-nast-names-chief-product-technology-officer-vasanth-williams/)
+
+### 3. Reddit Q2 2026 Guidance & Shopify Partnership
+
+Updated Reddit financials entry with:
+- **Q2 2026 guidance:** $715M-$725M (~44% YoY growth at midpoint)
+- **Ad revenue detail:** Q1 2026 ad revenues $625M (+74% YoY), active advertiser count +75% YoY
+- **Shopify partnership:** Announced at Shoptalk (March 25, 2026), expanded globally to all advertisers (May 29, 2026). Merchants link Shopify storefronts to Reddit Ads with automated catalog sync, codeless Pixel, Dynamic Product Ads. DPA delivered +91% higher ROAS YoY (Q4 2025). Fospha study: 34% improved cost per purchase, 2.5x spend scaling YoY.
+- **WooCommerce partnership** also noted (separate ecommerce platform integration)
+- **Ecommerce metrics:** 40% YoY boost in high-intent shopping conversations; 84% of Reddit shoppers report feeling more secure after platform research; EMEA retail advertisers invested 8x more between 2023-2025
+- **Conflict significance:** Reddit's ecommerce push directly competes with Meta's Shops, Marketplace, and Instagram Shopping for merchant ad spend and product discovery
+- Sources: [Zacks (Jun 2, 2026)](https://www.zacks.com/stock/news/reddit-expands-partnership-shopify-boost-ad-revenue), [MediaPost (May 29, 2026)](https://www.mediapost.com/publications/article/reddit-expands-shopify-integration-all-advertisers/), [Reddit Q1 2026 earnings transcript (MarketBeat)](https://www.marketbeat.com/stocks/NYSE/RDDT/earnings/)
+
+### 4. Profile Updates Summary
+
+- Added `Microsoft (Copilot)` to `revenue_relationships` section with full details
+- Updated `Meta` revenue relationship entry to reflect 6 competitor deals (was 4+1 negotiating)
+- Updated `Perplexity AI` description to correct deal count
+- Updated `revenue` conflict entry to include Microsoft and count 6 deals
+- Updated `Condé Nast` parent_company description with CPTO Vasanth Williams
+- Updated Reddit `q1_2026_financials` with Q2 guidance, ad revenue breakdown, advertiser growth
+- Updated Reddit `meta_competition` with Shopify/WooCommerce partnership details and ecommerce metrics
+- Updated Reddit `source_urls_financials` with 2 new sources
+- Updated portfolio valuation comment block with: Q2 guidance, Shopify data, CPTO hire, Microsoft Copilot deal, AI licensing portfolio summary (6 deals enumerated)
+
+---
+
 ## 2026-06-27 17:00 PT — Hour Type B: Journalist/Publication Research — Casey Newton Deep Profile + Kevin Roose Departure
 
 **Journalist:** Casey Newton (Platformer founder, Hard Fork co-host)
