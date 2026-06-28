@@ -1,0 +1,25 @@
+Title: Meta reverses decision to reassign employees to AI training roles
+Source: Fast Company
+Author: Not attributed (staff/wire)
+Date: June 25, 2026
+URL: https://www.fastcompany.com/91565257/meta-reverses-decision-to-reassign-employees-to-ai-training-roles
+
+Meta is reversing its decision to reassign 7,000 employees to different AI-focused units, like the Applied AI (AAI) task force, to help train the company's models, one month after those plans were announced.
+
+According to an internal memo obtained by Business Insider, Meta explained that it would now "defer to each individual's choice" on whether to join the task force. The email was sent to employees who had been "drafted" to the AAI task force, Business Insider reported.
+
+"As I emphasized before, personal agency will remain at the heart of all opportunities at Meta: We will support employees in whatever decisions they make," the memo said. "Of course, we'd prefer everyone to stay and push to SOTA (state of the art) together, but we defer to each individual's choice."
+
+"For any transition, we'll partner tightly across teams to minimize disruption," said part of the memo, shared with Fast Company from sources close to the company. "We're sharing for transparency, and don't mean this to be taken as saying AAI's work to advance the models is any less critical."
+
+The memo also said that the task force "remains a key priority for this company, alongside other core priority work at Meta."
+
+Meta declined Fast Company's request for comment.
+
+The decision could be part of Meta's broader initiative to boost employee morale.
+
+In May, Meta laid off 10% of its workforce. Just this week, the company paused tracking employee keystrokes to train its AI models after an internal leak. Earlier this month, the company's CTO, Andrew Bosworth, said that employee morale was "probably [at] one of the worst [points] it's ever been."
+
+Other companies have also walked back on their AI policies for employees. Duolingo CEO Luis von Ahn backtracked on the company's "AI-first" policy and reversed requirements to evaluate employees based on their AI use. This week, Amazon shut down its AI leaderboard tracking employee token usage, telling staffers not to use AI "just for the sake of using AI."
+
+Some companies are also placing limitations on how employees use AI tools. Uber capped its employees' monthly AI spend, and Microsoft canceled its Claude Code licenses in part to mitigate spend. Some companies across varying sectors have also recently rehired for positions they eliminated due to AI, sparking a trend called the "AI boomerang."

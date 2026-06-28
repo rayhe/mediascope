@@ -120,6 +120,18 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         ],
         "regex": r"(?<!\w)((?-i:IBM)|Deep Blue|Watson|Red Hat)(?!\w)",
     },
+    "Uber": {
+        "aliases": [
+            "Uber", "Uber Technologies", "Dara Khosrowshahi",
+        ],
+        "regex": r"(?<!\w)(Uber(?!\s+Eats)|Uber Technologies|Dara Khosrowshahi)(?!\w)",
+    },
+    "Duolingo": {
+        "aliases": [
+            "Duolingo", "Luis von Ahn",
+        ],
+        "regex": r"(?<!\w)(Duolingo|Luis von Ahn)(?!\w)",
+    },
     "US Government": {
         "aliases": [
             "Pentagon", "Department of Defense", "FBI", "CIA",
@@ -188,6 +200,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "The Information",
             "Business Insider", "404 Media",
             "The New Yorker", "New Yorker",
+            "Fast Company",
         ],
     },
     "Whistleblowers/Critics": {

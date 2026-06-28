@@ -5272,3 +5272,47 @@ All 641 tests pass (616 existing + 25 new, no regressions).
 `3fea382`
 
 ---
+
+## 2026-06-27 21:00 PT — Type A: Article Deep Dive (Fast Company Meta AI Draft Reversal)
+
+### Focus
+Fast Company: "Meta reverses decision to reassign employees to AI training roles" (June 25, 2026). Not one of the 5 tracked publications, but directly follows up on Wired's "soul-crushing gulag" coverage. Chosen because initial toolkit analysis revealed a missing framing device category.
+
+### What Improved
+
+**New framing device type #34: `trend_bundling` (structural post-pass)**
+- Detects when an article bundles a target company's action with 3+ other companies doing similar things — a normalising/amplifying frame
+- Implementation: `_detect_trend_bundling()` post-pass function in `framing.py`
+- Two detection modes:
+  1. Transition-phrase scanning: "Other companies have also…," "Similarly, X…," "X also walked back…," "a broader trend…," "Some companies are also…," "across varying sectors"
+  2. Paragraph-level bundling: 3+ company names in a single paragraph with comparison/action language (avoids false positives on factual enumerations)
+- Threshold: fires only when 3+ distinct companies are mentioned in bundling contexts
+- Discovered from Fast Company article that bundles Meta's reversal with Duolingo, Amazon, Uber, Microsoft in final 40% of article
+
+**Entity cluster additions:**
+- `Duolingo`: ["Duolingo", "Luis von Ahn"]
+- `Uber`: ["Uber", "Uber Technologies", "Dara Khosrowshahi"]
+- `Fast Company` added to Media/Publications aliases
+
+**False positive prevention:**
+- Paragraph-level bundling requires comparison/action language (`also`, `walked back`, `reversed`, `trend`, etc.), not just 3+ company names
+- Validated against NYT AI reviews article (lists 5+ companies in factual government-review context — correctly does NOT fire)
+
+### Files Changed
+- `mediascope/analyze/framing.py` — `_detect_trend_bundling()` function + transition patterns + company pattern + docstring update (34 total)
+- `mediascope/analyze/entities.py` — Uber, Duolingo clusters + Fast Company alias
+- `tests/test_structural_consistency.py` — updated counts (33→34 total, 3→4 post-pass)
+- `docs/ARCHITECTURE.md` — 34 framing device types, trend_bundling in structural tier
+- `docs/METHODOLOGY.md` — 34 framing device types, trend_bundling row in structural devices table
+- `docs/AGENT_GUIDE.md` — 34 device types
+- `mediascope/cli.py` — 34 types in analyze docstring
+- `examples/sample_output/fastco_meta_ai_draft_reversal_2026_06_25_analysis.md` — full annotation
+- `run_analysis.py` — cleaned up (temporary script from prior iteration)
+
+### Test Results
+All 660 tests pass (0 regressions). New trend_bundling correctly fires on Fast Company article (4 markers), correctly suppressed on NYT AI reviews article (factual enumeration, not bundling).
+
+### Commit
+(see below)
+
+---

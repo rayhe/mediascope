@@ -2427,13 +2427,197 @@ def _detect_speculative_framing(text: str) -> list[FramingDevice]:
     return []
 
 
+# ---------------------------------------------------------------------------
+# Trend-Bundling Detection (Post-Pass)
+# ---------------------------------------------------------------------------
+# Editorial technique where an article groups a target company's action with
+# 3+ other companies doing similar things.  The bundling *normalises* the
+# target ("everyone is doing it") or *amplifies* ("this is a pattern of
+# failure").  Either way the editorial choice to assemble the bundle is a
+# framing device, not neutral reporting — a different journalist could
+# report the same reversal without surveying the industry.
+#
+# Trigger: transition phrases ("Other companies have also…", "Similarly,…",
+# "X also…", "A broader trend…") that introduce company names not belonging
+# to the article's primary subject.  Fires when 3+ distinct company
+# comparison markers are found.
+#
+# Like analogy_stacking, this fires as a post-pass; individual comparisons
+# are normal, stacking them is editorial.
+
+_TREND_BUNDLING_TRANSITION_PATTERNS: list[re.Pattern] = [
+    # "Other companies have also…"
+    re.compile(
+        r"\b(?:other\s+compan(?:y|ies)|other\s+(?:tech\s+)?firms|"
+        r"other\s+(?:tech\s+)?giants|other\s+organisations?|other\s+organizations?)"
+        r"\s+(?:have\s+)?(?:also\s+)?\w+",
+        re.IGNORECASE,
+    ),
+    # "X also walked back / reversed / backtracked / scaled back / paused"
+    re.compile(
+        r"\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?\s+also\s+"
+        r"(?:walked\s+back|reversed|backtracked|scaled\s+back|paused|"
+        r"abandoned|retreated|shelved|pulled\s+back|cut\s+back|"
+        r"rolled\s+back|suspended|canceled|cancelled|shut\s+down|"
+        r"capped|limited|restricted)\b",
+        re.IGNORECASE,
+    ),
+    # "Similarly, X…" / "Likewise, X…" / "In a similar move, X…"
+    re.compile(
+        r"(?:^|\.\s+)(?:Similarly|Likewise|In\s+a\s+similar\s+"
+        r"(?:move|vein|fashion|spirit|step))\s*,?\s+[A-Z]",
+        re.IGNORECASE | re.MULTILINE,
+    ),
+    # "A broader trend…" / "Part of a broader…" / "a growing trend…"
+    re.compile(
+        r"\b(?:a\s+)?(?:broader|growing|wider|emerging|larger|accelerating)\s+"
+        r"(?:trend|pattern|movement|shift|wave|backlash|reversal|retreat)",
+        re.IGNORECASE,
+    ),
+    # "sparking a trend called…" / "dubbed the…"
+    re.compile(
+        r"\b(?:sparking|fueling|feeding|driving|dubbed|called|known\s+as)\s+"
+        r"(?:a\s+)?(?:trend|movement|backlash|reversal|phenomenon)",
+        re.IGNORECASE,
+    ),
+    # "Some companies are also…" / "Several firms have…"
+    re.compile(
+        r"\b(?:some|several|many|numerous|a\s+number\s+of|a\s+handful\s+of)\s+"
+        r"(?:compan(?:y|ies)|firms?|(?:tech\s+)?giants?|organizations?|organisations?)\s+"
+        r"(?:are|have|were)\s+(?:also\s+)?",
+        re.IGNORECASE,
+    ),
+    # "across varying sectors" / "across the industry" / "industry-wide"
+    re.compile(
+        r"\b(?:across\s+(?:varying|different|multiple|the)\s+"
+        r"(?:sectors?|industries|companies|firms)|"
+        r"industry.?wide|sector.?wide)\b",
+        re.IGNORECASE,
+    ),
+]
+
+# Company names used as comparison targets — we look for these in
+# sentences containing transition markers.  We use a broad list of
+# well-known tech and non-tech companies likely to appear in trend
+# bundles.  Matches are case-sensitive to avoid false positives from
+# common words.
+_TREND_BUNDLING_COMPANY_PATTERN: re.Pattern = re.compile(
+    r"\b("
+    r"Google|Alphabet|Amazon|Microsoft|Apple|Meta|Facebook|"
+    r"Netflix|Nvidia|Tesla|SpaceX|OpenAI|Anthropic|"
+    r"Uber|Lyft|Airbnb|Spotify|Snap|Snapchat|Pinterest|"
+    r"Salesforce|Adobe|IBM|Oracle|Intel|AMD|Qualcomm|"
+    r"Twitter|X Corp|TikTok|ByteDance|Samsung|Sony|"
+    r"Duolingo|Shopify|Stripe|Square|Block|Palantir|"
+    r"Zoom|Slack|Dropbox|Coinbase|Robinhood|"
+    r"Goldman Sachs|JPMorgan|Morgan Stanley|"
+    r"Disney|Warner|Comcast|Paramount|"
+    r"Boeing|Lockheed|Raytheon|General Electric|"
+    r"Walmart|Target|Costco|Home Depot"
+    r")\b"
+)
+
+
+def _detect_trend_bundling(text: str) -> list[FramingDevice]:
+    """Detect trend bundling — 3+ distinct companies bundled as comparisons.
+
+    Returns a list of FramingDevice objects (one per transition-marker
+    match) only if the article contains 3+ distinct company-comparison
+    mentions in transition contexts.  If fewer than 3 distinct companies
+    are found in bundling contexts, returns an empty list.
+    """
+    markers: list[FramingDevice] = []
+    bundled_companies: set[str] = set()
+
+    # For each transition pattern, find its matches and check for company
+    # names within the surrounding sentence (±300 chars).
+    for pattern in _TREND_BUNDLING_TRANSITION_PATTERNS:
+        for match in pattern.finditer(text):
+            start, end = match.start(), match.end()
+
+            # Expand to sentence-level context (±300 chars)
+            ctx_start = max(0, start - 100)
+            ctx_end = min(len(text), end + 300)
+            context = text[ctx_start:ctx_end]
+
+            # Find company names in the context
+            companies_in_ctx = set()
+            for co_match in _TREND_BUNDLING_COMPANY_PATTERN.finditer(context):
+                companies_in_ctx.add(co_match.group())
+
+            if companies_in_ctx:
+                bundled_companies.update(companies_in_ctx)
+
+                evidence = match.group().strip()
+                if len(evidence) > 200:
+                    evidence = evidence[:200] + "..."
+
+                markers.append(
+                    FramingDevice(
+                        device_type="trend_bundling",
+                        evidence_text=evidence,
+                        start=start,
+                        end=end,
+                    )
+                )
+
+    # Also scan for paragraph-level company bundles without explicit
+    # transition phrases.  If a single paragraph names 3+ companies in
+    # constructions like "X did A. Y did B. Z did C." the paragraph
+    # itself is a trend bundle.  To avoid false positives on factual
+    # enumerations (e.g. "OpenAI, Google, and Microsoft have submitted
+    # their models"), we require the paragraph to also contain comparison
+    # or reversal language — evidence that the enumeration is being used
+    # to normalise or amplify a pattern, not just report a list.
+    _BUNDLING_ACTION_RE = re.compile(
+        r"\b(?:also|similarly|likewise|too|as\s+well|in\s+turn|"
+        r"walked\s+back|reversed|backtracked|retreated|"
+        r"scaled\s+back|pulled\s+back|rolled\s+back|"
+        r"shut\s+down|capped|limited|restricted|"
+        r"paused|suspended|canceled|cancelled|"
+        r"rehired|boomerang|trend|pattern|wave|backlash)\b",
+        re.IGNORECASE,
+    )
+    paragraphs = text.split("\n\n")
+    offset = 0
+    for para in paragraphs:
+        companies_in_para = set(
+            m.group() for m in _TREND_BUNDLING_COMPANY_PATTERN.finditer(para)
+        )
+        if len(companies_in_para) >= 3 and _BUNDLING_ACTION_RE.search(para):
+            bundled_companies.update(companies_in_para)
+            # Only add a marker if we haven't already captured this region
+            para_start = text.find(para, offset)
+            if para_start >= 0:
+                already_covered = any(
+                    m.start >= para_start and m.start < para_start + len(para)
+                    for m in markers
+                )
+                if not already_covered:
+                    evidence = para[:200] + "..." if len(para) > 200 else para
+                    markers.append(
+                        FramingDevice(
+                            device_type="trend_bundling",
+                            evidence_text=evidence.strip(),
+                            start=para_start,
+                            end=para_start + len(para),
+                        )
+                    )
+        offset = text.find(para, offset) + len(para) if text.find(para, offset) >= 0 else offset
+
+    # Only fire if 3+ distinct companies are bundled
+    if len(bundled_companies) >= 3:
+        return markers
+    return []
+
+
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 30 pattern-matched device types plus 3 structural
-    post-pass types (32 total).
+    Scans for 30 pattern-matched device types plus 4 structural
+    post-pass types (34 total).
 
-    Pattern-matched (29): guilt_by_association, anonymous_authority,
+    Pattern-matched (30): guilt_by_association, anonymous_authority,
     catastrophizing, false_balance, selective_omission_signal,
     emotional_appeal, straw_man, loaded_language, refusal_amplification,
     juxtaposition, timeline_implication, power_asymmetry,
@@ -2443,10 +2627,11 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     self_referential_investigation, sovereignty_framing,
     scale_magnitude, ceo_personalization, litigation_framing,
     corporate_reassurance_undercut, sarcastic_correction,
-    hypocrisy_frame, outsourced_intensity, and confession_framing.
+    hypocrisy_frame, outsourced_intensity, confession_framing,
+    and precedent_analogy.
 
-    Structural post-pass (3): kicker_framing, analogy_stacking,
-    speculative_framing.
+    Structural post-pass (4): kicker_framing, analogy_stacking,
+    speculative_framing, trend_bundling.
 
     Args:
         text: The article text to analyze.
@@ -2526,6 +2711,10 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
 
     # Post-pass: speculative framing (fires when 5+ cumulative hedges found)
     devices.extend(_detect_speculative_framing(text))
+
+    # Post-pass: trend bundling (fires when 3+ distinct companies are
+    # bundled in comparison context — normalising/contextualising frame)
+    devices.extend(_detect_trend_bundling(text))
 
     # Re-sort after adding post-pass results
     devices.sort(key=lambda d: d.start)

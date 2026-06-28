@@ -45,11 +45,11 @@ def _all_device_types_from_code() -> set[str]:
 class TestFramingDeviceTypeCount:
     """Guard: total framing device types in code match documented count."""
 
-    def test_total_device_types_is_33(self):
-        """Code should define exactly 33 unique framing device types."""
+    def test_total_device_types_is_34(self):
+        """Code should define exactly 34 unique framing device types."""
         types = _all_device_types_from_code()
-        assert len(types) == 33, (
-            f"Expected 33 framing device types, got {len(types)}.\n"
+        assert len(types) == 34, (
+            f"Expected 34 framing device types, got {len(types)}.\n"
             f"Types: {sorted(types)}\n"
             "If you added a new device, update this test AND the docs:\n"
             "  - docs/METHODOLOGY.md §4.1 total and tier counts\n"
@@ -70,14 +70,14 @@ class TestFramingDeviceTypeCount:
             f"Types: {sorted(pattern_types)}"
         )
 
-    def test_structural_post_pass_types_is_3(self):
-        """3 types should come from structural post-pass (not pattern dict)."""
+    def test_structural_post_pass_types_is_4(self):
+        """4 types should come from structural post-pass (not pattern dict)."""
         src = (_REPO_ROOT / "mediascope" / "analyze" / "framing.py").read_text()
         pattern_keys = set(re.findall(r'_DEVICE_PATTERNS\["(\w+)"\]', src))
         initial_keys = set(re.findall(r'"(\w+)":\s*_[A-Z_]+_PATTERNS', src))
         post_pass = set(re.findall(r'device_type="(\w+)"', src))
         structural_only = post_pass - initial_keys - pattern_keys
-        assert structural_only == {"kicker_framing", "analogy_stacking", "speculative_framing"}, (
+        assert structural_only == {"kicker_framing", "analogy_stacking", "speculative_framing", "trend_bundling"}, (
             f"Unexpected structural types: {structural_only}"
         )
 
@@ -125,31 +125,31 @@ class TestDocCountConsistency:
     """Guard: documented counts match across files."""
 
     def test_architecture_device_count(self):
-        """ARCHITECTURE.md must say 33 framing device types."""
+        """ARCHITECTURE.md must say 34 framing device types."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
-        assert "**33 framing device types**" in doc, (
-            "ARCHITECTURE.md framing device count is stale. Should be 33."
+        assert "**34 framing device types**" in doc, (
+            "ARCHITECTURE.md framing device count is stale. Should be 34."
         )
 
     def test_methodology_device_count(self):
-        """METHODOLOGY.md must say 33 framing device types."""
+        """METHODOLOGY.md must say 34 framing device types."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
-        assert "33 framing device types" in doc, (
-            "METHODOLOGY.md framing device count is stale. Should be 33."
+        assert "34 framing device types" in doc, (
+            "METHODOLOGY.md framing device count is stale. Should be 34."
         )
 
     def test_agent_guide_device_count(self):
-        """AGENT_GUIDE.md must say 33 device types."""
+        """AGENT_GUIDE.md must say 34 device types."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
-        assert "33 device types" in doc, (
-            "AGENT_GUIDE.md framing device count is stale. Should be 33."
+        assert "34 device types" in doc, (
+            "AGENT_GUIDE.md framing device count is stale. Should be 34."
         )
 
     def test_cli_analyze_device_count(self):
-        """CLI analyze docstring must say 33 types."""
+        """CLI analyze docstring must say 34 types."""
         cli_src = (_REPO_ROOT / "mediascope" / "cli.py").read_text()
-        assert "33 types" in cli_src, (
-            "CLI analyze command docstring framing device count is stale. Should be 33."
+        assert "34 types" in cli_src, (
+            "CLI analyze command docstring framing device count is stale. Should be 34."
         )
 
     def test_readme_banned_phrases_count(self):

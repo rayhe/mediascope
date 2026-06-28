@@ -167,7 +167,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 33 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (20 added from real-article analysis), and structural devices (3 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 34 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (20 added from real-article analysis), and structural devices (4 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -220,6 +220,7 @@ These devices are detected through structural analysis of the article rather tha
 | **Kicker Framing** | Ending an article on a discordant negative note unrelated to the article's main topic | Scans the final ~400 characters for negative signals (morale crisis, regulatory threat, ethical concern) when the body tone is neutral-to-positive. Ensures the reader's final impression is negative regardless of otherwise balanced coverage. |
 | **Analogy Stacking** | Using 3+ distinct analogies/comparisons for the same subject to amplify perceived severity | Collects analogy markers ("the equivalent of," "likened it to," "compared it to," "like a/an") across the full text. Fires only when 3+ distinct markers are found. Individual analogies are not framing; stacking them is a persuasion technique. |
 | **Speculative Framing** | Deploying cumulative conditional language to construct a narrative of inevitability while maintaining individual hedges | Collects speculative hedges ("could potentially," "might be able to," "in principle," "could feasibly," "could conceivably") across the full text. Fires only when 5+ distinct speculative markers are found. A single hedge is good journalism; 10+ hedges in one article is a framing technique that converts possibility into implied certainty. |
+| **Trend Bundling** | Grouping a target company's action with 3+ other companies doing similar things to normalise or amplify the narrative | Scans for transition phrases ("Other companies have also…," "Similarly, X…," "X also walked back…") and paragraph-level company bundles. Fires only when 3+ distinct companies are mentioned in comparison/bundling contexts. Individual comparisons are normal reporting; stacking them is an editorial framing technique that imports an industry-wide pattern onto a single company's story. Discovered from Fast Company Meta AI draft reversal article (2026-06-25). |
 
 ### 4.2 Attribution Verb Analysis
 
