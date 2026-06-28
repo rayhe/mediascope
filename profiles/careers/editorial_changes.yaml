@@ -81,6 +81,26 @@ editorial_changes:
     outgoing: null
     position: staff_writer_ai_investigations
     source_url: https://talkingbiznews.com/they-re-hiring/reisner-named-staff-writer-at-the-atlantic/
+  - date: 2025-10
+    incoming: Paul Beckett
+    notes: 'KEY MIGRATION: WSJ Washington bureau chief (7 years) → Atlantic senior editor for national security and foreign
+      policy. Led WSJ''s campaign to free Evan Gershkovich from Russia. 25+ year WSJ career spanning New York (financial industry),
+      London, Mexico City, New Delhi (South Asia bureau chief, OPC Award), Hong Kong (Asia Editor), and ran coverage of 1MDB
+      scandal (Pulitzer finalist 2016). WSJ → Atlantic represents Murdoch/Dow Jones → Emerson Collective pipeline. Significant
+      because national security framing shapes AI policy coverage — Wong''s "White House vs Anthropic" (Jun 2026) and "Trump
+      Seizes AI Companies" (Apr 2026) pieces fall squarely in national security/AI intersection that Beckett''s desk now oversees.
+      Announced alongside Simon Shuster (Time), Lily Meyer, Alex Reisner, and Yvonne Wingett Sanchez (WaPo).'
+    outgoing: null
+    position: senior_editor_national_security
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-paul-beckett-as-senior-editor-and-staff-writers-lily-meyer-alex-reisner,258204
+  - date: 2025-10
+    incoming: Yvonne Wingett Sanchez
+    notes: 'CROSS-PUBLICATION MIGRATION: WaPo → Atlantic (same ownership pattern as Will Oremus Apr 2026). Covered threats
+      to democracy at WaPo for 3 years. 20+ years at Arizona Republic before WaPo. Part of continued WaPo → Atlantic talent
+      drain (at least 2 tech-adjacent reporters moved in 6 months: Wingett Sanchez Oct 2025, Oremus Apr 2026).'
+    outgoing: null
+    position: staff_writer_politics
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-paul-beckett-as-senior-editor-and-staff-writers-lily-meyer-alex-reisner,258204
   guardian:
   - date: 2015-06
     incoming: Katharine Viner

@@ -2148,32 +2148,85 @@ journalists:
     shape media, media regulation, ownership structures, and media lawsuits (including the Smartmatic v. Fox News case at
     WaPo). He is positioned to be the most analytically relevant Guardian journalist for our undisclosed-conflicts research.'
 - career:
-  - beat: general, then magazine chair
+  - beat: general, culture, diversity, university affairs
     end: 2022-05
     event_type: hired
-    notes: Writer, associate magazine editor, then magazine chair at The Harvard Crimson. Harvard University BA.
+    notes: 'Writer, associate magazine editor, then magazine chair of Fifteen Minutes (the Crimson''s weekly magazine). Harvard
+      University BA in History and Literature (class of 2022, @histlit ''22). Co-hosted "Under Review" podcast about Harvard
+      diversity reviews spanning 40 years of university history — early evidence of systemic-critique instinct that carries
+      into AI coverage. Also wrote about affirmative action (SFFA case), George Floyd protests, policing. POC perspective
+      on newsroom diversity: wrote/spoke at Poynter about lack of diverse newsrooms and "the trauma that comes of being a
+      POC in a predominantly white media organization." The Crimson is a critical pipeline for elite journalism: 25 Pulitzer
+      Prize winners among alumni, alumni at NYT, WaPo, Politico, NPR.'
     publication: harvard-crimson
-    role: writer_then_editor
+    role: writer_then_magazine_chair
+    source_url: https://thecrimson.com
     start: 2019-09
-  - beat: science, technology, health
+  - beat: university affairs, public health, policing
+    end: 2022-05
     event_type: hired
-    notes: Joined Atlantic's science, technology and health team as assistant editor straight out of Harvard. Quickly established
-      himself as lead AI voice.
+    notes: Concurrent with Crimson work. Wrote about Harvard policing debates, George Floyd protests at Harvard, and public
+      health commencement coverage. Published under matteowong@college.harvard.edu.
+    publication: harvard-magazine
+    role: contributor
+    source_url: https://harvardmagazine.com
+    start: 2020-01
+  - beat: science, technology, health
+    end: 2024-04
+    event_type: hired
+    notes: 'Joined Atlantic''s science, technology and health team as assistant editor straight out of Harvard (announced
+      June 13, 2022 on Twitter). Quickly established himself as lead AI voice. Deputy editor Paul Bisceglio oversaw his
+      onboarding. Also served as associate editor (intermediate step before staff writer promotion). Early work covered
+      electric vehicles, robot chicken sandwiches, rice cookers, and synthetic smell — demonstrating range beyond AI.
+      Twitter/X: @matteo_wong.'
     publication: atlantic
     role: assistant_editor
     source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-wong-as-assistant-editor/
     start: 2022-06
-  - beat: AI, technology
+  - beat: AI, technology, chatbots, AI safety, AI policy
     event_type: promoted
-    notes: 'Promoted to staff writer. Deputy editor Paul Bisceglio praised his ''conversation-setting AI coverage.'' Key pieces:
-      Friend wearable founder profile, OpenAI teen safety, Grok chatbot analysis, Anthropic safety-vs-speed tensions.'
+    notes: 'Promoted from associate editor to staff writer (~April 2024). Deputy editor Paul Bisceglio praised his "conversation-setting
+      AI coverage" and called him "the full package: a skilled writer, prodigiously talented." Announced alongside Ali Breland
+      hire (from Mother Jones) and Ellen Cushing/Julie Beck moves to staff writer. Has become The Atlantic''s most prolific
+      AI byline. KEY BODY OF WORK: (1) Platform AI exposés — multi-part Grok series (Holocaust calls, racism, "good races,"
+      erotic content), Friend wearable founder profile, OpenAI teen problem (Senate testimony), Moltbook AI-only social
+      network. (2) AI industry analysis — "The GPT Era Is Already Ending" (Dec 2024, discussed on Critical Media Studies
+      podcast Ep. 83), ARC-AGI/François Chollet intelligence test, AlphaGo legacy, self-improving AI frenzy, AI cancer
+      cure promises (sourced MIT Gómez-Bombarelli), Pangram AI writing detection. (3) AI safety/policy — "AI Has Broken
+      Containment" (May 2026), "What Happens if Trump Seizes AI Companies," Trump AI Action Plan analysis, "Claude Mythos
+      Is Everyone''s Problem." (4) Company profiles — Anthropic as "the AI sector''s superego" (safety vs commercial tensions),
+      "Anthropic''s Little Brother" (OpenAI catching up), "When Claude Met Claude" (Anthropic/Monet sponsorship). (5) Meta-specific
+      — "Meta Swears This Time Is Different" (Jul 2025, flagship piece): FAIR history from 2013, Yann LeCun recruitment,
+      Llama 4 benchmarking failure (ranked 32nd vs claimed 2nd), Meta trailing OpenAI/Google/Anthropic/xAI/DeepSeek. Also:
+      Zuckerberg-as-Musk-copyist analysis (MMA, fact-checking removal, $900K watch, "rehearsed and ostentatious"). (6)
+      Altman-Musk trial coverage — "Sam Altman and Elon Musk Sure Dislike Each Other," "Elon Musk Gets a Reality Check."
+      (7) Culture/art — AI vs Ted Chiang art debate (Sep 2024), Terence Tao Q&A on AI and mathematics (Oct 2024). (8) AI
+      policy — "Donald Trump''s Gift to AI Companies," White House vs Anthropic export controls (Jun 2026).'
     publication: atlantic
     role: staff_writer
-    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-news-about-four-new-staff-writers,254095
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-news-about-four-new-staff-writers,249577
     start: 2024-05
   name: Matteo Wong
-  notes: Atlantic's lead AI voice. Rose from assistant editor to staff writer in under 2 years. Covers AI safety, labor displacement,
-    chatbot harms, platform AI (Grok, ChatGPT). Harvard Crimson pedigree.
+  notes: 'The Atlantic''s lead AI voice and most prolific AI byline. Harvard BA in History and Literature (2022). Rose from
+    assistant editor to staff writer in under 2 years — fastest such ascent on the Atlantic tech team. Magazine chair at
+    Harvard Crimson''s Fifteen Minutes; co-hosted "Under Review" diversity podcast; also contributed to Harvard Magazine.
+    Twitter/X: @matteo_wong. FRAMING SIGNATURE: Institutional critique with consumer harm focus. Less technical skepticism
+    than Will Knight (who has 20+ years on the AI beat); more political-structural analysis. Grok coverage is the most
+    adversarial in his portfolio — multiple pieces on racism, anti-Semitism, and erotic content failures. Meta coverage
+    focuses on AI race failure narrative and Zuckerberg-as-follower-not-leader thesis. Anthropic coverage more nuanced
+    — explores genuine safety-vs-speed tensions rather than pure adversarial framing. KEY for MediaScope: Wong is the
+    primary conduit for The Atlantic''s AI framing. His rapid rise means he shaped the beat as he grew into it — no prior
+    institutional framing habits to shed. His "Under Review" podcast at Harvard shows systemic-critique instinct predating
+    AI coverage. META COVERAGE ANALYSIS: "Meta Swears This Time Is Different" (Jul 2025) is the definitive Wong/Meta
+    piece — frames FAIR history as wasted potential, Llama 4 as benchmarking failure, and Zuckerberg as reactive rather
+    than visionary. Separately, his Zuckerberg-Musk comparison coverage portrays Zuckerberg as "rehearsed and ostentatious"
+    — copying Musk''s politics, MMA persona, and anti-establishment posture but "not leading the conversation." This
+    framing aligns with The Atlantic''s broader institutional skepticism toward Big Tech leadership but is notably more
+    negative toward Meta than toward Anthropic (which gets sympathetic "caught between pressures" framing). For DiD
+    analysis: Wong has never worked at another publication post-graduation, so he offers no migration signal. However,
+    his exclusively-Atlantic career means his framing is a clean measurement of Atlantic institutional culture without
+    cross-pollination from other newsrooms. Emerson Collective ownership context (Laurene Powell Jobs) relevant — The
+    Atlantic received $100M+ investment in 2017 and majority ownership by 2021.'
 - career:
   - beat: technology, AI, data investigations
     end: 2023-07
