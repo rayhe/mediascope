@@ -192,16 +192,29 @@ financial_data:
     us_reader_revenue_growth: "+32% YoY"
     us_ad_revenue_growth: "+9% YoY"
     us_staff: "200+ employees, 150 editorial (doubled in 3 years)"
-    international_share: "80%+ of income from outside UK"
+    international_share: "83% of revenue from outside UK (Viner at WAN-IFRA, Jun 2026)"
+    us_podcast: >
+      "Stateside with Kai and Carter" — first US video podcast, premiered May 13, 2026.
+      Video-first, 3 episodes/week, 30-40 min. Hosts: Kai Wright (Peabody Award winner,
+      former WNYC host/managing editor, Notes From America) and Carter Sherman (Emmy-nominated
+      Guardian journalist, author of 'The Second Coming'). Available on YouTube (dedicated US
+      channel — first for Guardian US), Apple Podcasts, Spotify, all major platforms.
+      Social presence: Instagram, TikTok. Betsy Reed (Guardian US editor): "This project is
+      a major step toward bringing audio and video journalism to American audiences."
     source_urls:
       - "https://tomorrowspublisher.today/the-guardian-halves-losses-and-hits-record-275m-revenue/"
       - "https://amediaoperator.com/the-guardian-launching-first-us-podcast-amid-reader-revenue-growth/"
+      - "https://talkers.com/guardian-prepares-to-launch-us-podcast/"
     notes: >
-      Katharine Viner at WAN-IFRA Congress (Jun 2026): "more than 80% of our income from outside
-      the UK is a phenomenon that did not exist 10 years ago." Axios reported US revenue of $81.4M.
+      Katharine Viner at WAN-IFRA Congress (Jun 2026): "83 percent of our revenue outside of
+      the UK didn't exist 10 years ago." Axios reported US revenue of $81.4M.
       Washington Post Kamala Harris endorsement pull (Oct 2024) drove sustained US reader surge.
-      New US video podcast "Stateside" launched May 2026 (Kai Wright, Carter Sherman). Moving
-      to new US offices. Payment channels expanded: Feast recipe app, main app, Guardian Weekly, print.
+      Moving to new US offices. Payment channels expanded: Feast recipe app, main app,
+      Guardian Weekly, print. The US expansion is directly relevant to the media-conflicts
+      analysis: as the Guardian becomes more US-revenue-dependent, its coverage of US tech
+      companies (Meta, Google, OpenAI) becomes more commercially consequential. The US reader
+      revenue surge ($81.4M) may create pressure to maintain adversarial-but-engaging tech
+      coverage that drives subscriptions, independent of any specific financial conflict.
   fy_2024_25:
     revenue: "£275M (record)"
     revenue_growth: "+6.7% from £257.8M"
@@ -262,6 +275,41 @@ revenue_relationships:
     description: "Google is major ad revenue source via programmatic advertising and serves as their ad server. Guardian seeing 'less demand coming through Google's pipes' as of late 2024/early 2025. Programmatic revenue overall up 25%+ YoY. Integrated with The Trade Desk's OpenPath for direct programmatic access."
     date_established: "ongoing"
     source_url: "https://adexchanger.com/publishers/the-guardian-us-is-following-programmatic-budgets-to-private-marketplaces/"
+  - partner: "Google (News AI Pilot)"
+    relationship_type: "ai_licensing_pilot"
+    estimated_value: "Undisclosed (direct payments from Google; replaces/extends Google Showcase fees)"
+    description: >
+      CRITICAL NEW FINDING: Guardian is an INITIAL PARTNER in Google's News AI pilot program,
+      launched December 2025. Partners include The Washington Post, Der Spiegel, El País, Folha,
+      Infobae, Kompas, Times of India, and The Washington Examiner. The program tests AI-powered
+      article overviews on participating publications' Google News pages and in Google's Gemini
+      chatbot. Google pays publishers directly for participation.
+      As of June 25-26, 2026 (The Information, MediaPost, NY Post reporting): Google is now
+      pushing participating publishers to agree to BROADER content-use terms, potentially
+      including rights to train AI models on publisher content. Publishers who don't join will
+      eventually lose Google Showcase annual payments when Google ends that program. Jason Kint
+      (DCN CEO) criticized Google for bundling the AI training opt-out with Search opt-out:
+      "If you're opting out of Search, then you're opting out of the internet."
+      This transforms the Guardian's relationship with Google from purely advertising to a
+      COMPOUND relationship: advertising + AI content licensing + potential AI training rights.
+      The Guardian simultaneously participates in this Google AI pilot AND co-founded the SPUR
+      coalition (Feb 2026) to control publisher content rights in AI — creating a tension between
+      collective standards-setting and bilateral deal-making with Google.
+    date_established: "2025-12"
+    competitive_with: ["Meta"]
+    source_urls:
+      - "https://techcrunch.com/2025/12/18/google-is-testing-ai-powered-article-overviews-on-select-publications-google-news-pages/"
+      - "https://www.mediapost.com/publications/article/402918/google-eyes-broader-publisher-licensing.html"
+      - "https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/"
+    notes: >
+      STRATEGIC TENSION: Guardian is now in FOUR separate AI-related financial relationships:
+      (1) OpenAI licensing (Feb 2025), (2) ProRata AI licensing (~2025), (3) Google News AI
+      pilot (Dec 2025), (4) SPUR coalition (Feb 2026, standards-setting). The Google pilot
+      is especially significant because Google accounts for >90% of UK search queries and is
+      a major advertising revenue source — making the Guardian financially dependent on Google
+      in a way that's structurally different from the OpenAI/ProRata licensing deals. The June
+      2026 push for broader terms (including AI training) represents an escalation that could
+      deepen this dependency or force the Guardian to exit the pilot.
 
 gmg_ventures_mercuri:
   description: "Scott Trust's venture capital arm. Founded 2017 as GMG Ventures, rebranded to Mercuri in 2023."
@@ -358,12 +406,57 @@ gmg_ventures_mercuri:
   source_url: "https://www.british-business-bank.co.uk/press-release/mercuri-formerly-gmg-ventures-raises-50-million-second-fund"
 
 spur_coalition:
-  description: "Guardian is a FOUNDING member of SPUR (Standards for Publisher Usage Rights), launched Feb 2026. Coalition of 36 publishers and affiliate organizations developing technical standards and licensing frameworks for AI."
-  founding_members: ["BBC", "Financial Times", "Guardian Media Group", "Sky News", "Telegraph Media Group", "CMA Media", "Mediahuis"]
+  description: >
+    Guardian is a FOUNDING member of SPUR (Standards for Publisher Usage Rights), launched Feb
+    2026. MAJOR EXPANSION announced June 3, 2026 at WAN-IFRA World News Media Congress in
+    Marseille: 30 new members joined, bringing total to 36 publishers and affiliate organizations.
+    Developing technical standards, licensing frameworks, and a telemetry standard (usage
+    tracking) for real-time monitoring of how AI systems use publisher content. SPUR expects
+    to launch the telemetry standard "soon" as of June 2026.
+  founding_members: ["BBC", "Financial Times", "Guardian Media Group", "Sky News", "Telegraph Media Group", "CMA Media (France, joined Jun 2026 as founding member)", "Mediahuis"]
+  standard_members_jun_2026:
+    canadian: ["The Globe and Mail", "Quebecor", "Postmedia", "Torstar", "CBC/Radio-Canada", "La Presse", "TVO Media Education Group"]
+    european: ["SIPA Ouest-France Group", "Ringier (Switzerland)", "Citywire (UK)", "Sanoma Media Finland", "Der Standard (Austria)", "Bonnier News (Sweden)", "FD Mediagroep (Netherlands)"]
+  associate_members: ["Times Higher Education", "RNZ (New Zealand)", "AML Intelligence"]
+  affiliate_members: ["WAN-IFRA/FIPP", "European Publishers Council (EPC)", "Digital Content Next (DCN)", "Association of Online Publishers (AOP)", "Independent Publishers Alliance", "Newsworks", "News/Media Alliance (NMA US)", "Independent Media Association (IMA)", "News Media Canada", "Hungarian Publishers' Association", "Hebdos Québec", "PPA (Professional Publishers Association)", "PPA Magnetic"]
   guardian_signatory: "Anna Bateson, CEO"
+  bateson_quote: "Welcoming 30 new members, including our first founding member from France, gives SPUR the scale required to turn its mission into a global mandate. This collective strength will help legitimise the standards we create, safeguarding the intellectual property of publishers and providing AI developers with a route to scalable, sustainable licensing."
   purpose: "Shape 'the rules, standards and infrastructure that enable publishers and AI platforms to do business.' Create shared technical standards, streamline licensing, identify IP protection gaps, promote transparent rights-cleared access."
+  telemetry_standard: "Technical infrastructure for publishers to monitor in real-time how AI systems use their content. Ensures transparent and fairly compensated usage. Expected to launch soon as of June 2026."
+  wan_ifra_partnership: "WAN-IFRA formed a strategic partnership with SPUR at the June 2026 Congress in Marseille."
   operation_leaky_bucket: "Guardian's internal compliance program ('Operation Leaky Bucket') to identify and close access points for unauthorized content scraping, strengthen negotiating position for licensing deals."
-  source_url: "https://journalism.co.uk/stories/bbc-ft-guardian-sky-and-the-times-unite-in-spur-coalition-for-ai-protection"
+  source_urls:
+    - "https://journalism.co.uk/stories/bbc-ft-guardian-sky-and-the-times-unite-in-spur-coalition-for-ai-protection"
+    - "https://spurcoalition.org"
+    - "https://wan-ifra.org/insight/wan-ifra-strategic-partnership-spur-coalition/"
+    - "https://ringier.com/en/news/ringier-joins-international-spur-coalition/"
+    - "https://editorandpublisher.com/stories/leading-canadian-news-organizations-join-spurs-global-coalition/"
+
+uk_cma_google_ruling:
+  description: >
+    UK Competition and Markets Authority (CMA) designated Google with "strategic market status"
+    under the Digital Markets Competition Regime (June 2, 2026). New conduct requirements imposed
+    on Google Search, giving publishers more control and stronger bargaining power:
+    (1) Publishers can opt out of having their content used in AI Overviews and AI Mode
+        (separate from opting out of traditional Search — previously bundled together)
+    (2) Google required to properly attribute content from publishers in AI-generated search results
+        using clear links
+    (3) Google to increase number of links in AI responses
+    (4) Google to roll out new publisher insights about AI feature usage
+    This is significant for the Guardian: it provides regulatory backing for the Guardian's
+    SPUR-based negotiating position on AI content rights, while potentially conflicting with the
+    Guardian's participation in Google's News AI pilot (which gives Google broad content-use rights).
+  date: "2026-06-02"
+  source_urls:
+    - "https://reuters.com/technology/google-must-let-uk-publishers-opt-out-ai-search-under-new-rules-2026-06-02/"
+  notes: >
+    STRATEGIC CONTEXT: The CMA ruling creates a regulatory floor that benefits the Guardian
+    both as a SPUR founding member (collective bargaining leverage) and as an individual publisher
+    (opt-out rights). However, the Guardian's participation in Google's News AI pilot (Dec 2025)
+    may complicate this: pilot participants effectively waive their opt-out rights by agreeing to
+    broader content-use terms. The Guardian is navigating three simultaneous Google relationships:
+    (1) advertising (programmatic revenue), (2) AI pilot (direct payments for content), (3) CMA
+    opt-out rights (regulatory protection). These create both leverage and dependency.
 
 tortoise_media_observer:
   description: >
@@ -405,6 +498,8 @@ tortoise_media_observer:
     - "https://www.theguardian.com/media/2024/sep/12/guardian-media-group-agrees-deal-to-sell-observer-to-tortoise-media"
     - "https://find-and-update.company-information.service.gov.uk/company/11721596"
     - "https://pressgazette.co.uk/publishers/tortoise-media-series-a-funding/"
+
+editorial_leadership:
   - name: "Katharine Viner"
     title: "Editor-in-Chief"
     start: "2015-06"
@@ -537,6 +632,40 @@ known_conflicts:
     source_urls:
       - "https://pressgazette.co.uk/publishers/tortoise-media-series-a-funding/"
       - "https://find-and-update.company-information.service.gov.uk/company/11721596"
+  - type: "google_ai_pilot"
+    description: >
+      CRITICAL NEW FINDING (Jun 2026): Guardian is an INITIAL PARTNER in Google's News AI pilot
+      program (Dec 2025). Google pays publishers directly for allowing AI-powered article
+      overviews on Google News pages and in Gemini chatbot. As of June 25-26, 2026, Google is
+      pushing broader content-use terms potentially including AI model training rights.
+      Publishers who decline risk losing Google Showcase annual payments when Google ends
+      that program. This creates a compound Google dependency: (1) programmatic advertising,
+      (2) News AI pilot direct payments, (3) potential AI training rights. Google accounts for
+      >90% of UK search queries and is a major programmatic ad revenue source, making the
+      Guardian structurally dependent on Google in ways that transcend any single deal.
+      TENSION WITH SPUR: The Guardian simultaneously co-founded SPUR to collectively negotiate
+      publisher content rights against AI companies, while bilaterally participating in Google's
+      AI pilot that grants Google broad content-use terms. This dual positioning mirrors the
+      Atlantic's OpenAI/NewsGuard contradiction — monetizing content through both AI enablement
+      and AI resistance.
+    severity: 3
+    evidence: "TechCrunch (Dec 2025), The Information (Jun 2026), MediaPost (Jun 2026), NY Post (Jun 2026)."
+    source_urls:
+      - "https://techcrunch.com/2025/12/18/google-is-testing-ai-powered-article-overviews-on-select-publications-google-news-pages/"
+      - "https://www.mediapost.com/publications/article/402918/google-eyes-broader-publisher-licensing.html"
+  - type: "uk_regulatory"
+    description: >
+      UK CMA designated Google with "strategic market status" (June 2, 2026) and imposed
+      requirements giving publishers opt-out rights from AI Overviews and AI Mode — separate
+      from opting out of traditional Search (previously bundled). This creates regulatory
+      backing for the Guardian's SPUR-based negotiating position, but may conflict with the
+      Guardian's Google News AI pilot participation (which grants Google broader content rights).
+      CMA also required: proper attribution with clear links, increased link density in AI
+      responses, and new publisher insights about AI feature usage.
+    severity: 0
+    evidence: "Reuters reporting (June 2, 2026). CMA Digital Markets Competition Regime."
+    source_url: "https://reuters.com/technology/google-must-let-uk-publishers-opt-out-ai-search-under-new-rules-2026-06-02/"
+    notes: "Severity 0 — regulatory action, not a conflict per se, but shapes the conflict landscape. Creates leverage that benefits the Guardian while potentially contradicting its pilot participation."
 
 litigation_connections:
   - case: "Banks v Cadwalladr"
@@ -609,10 +738,21 @@ litigation_connections:
 ai_crawl_policy:
   blocks_gptbot: "Previously yes; likely updated post-OpenAI deal (Feb 2025)"
   blocks_ccbot: true
-  blocks_google_extended: true
+  blocks_google_extended: "Previously yes; status uncertain post-Google News AI pilot (Dec 2025)"
   has_openai_deal: true
   has_prorata_deal: true
-  notes: "Guardian has licensing deals with OpenAI (Feb 2025) and ProRata, with more in pipeline. Previously blocked most AI crawlers. 'Operation Leaky Bucket' internal compliance program identifies and closes unauthorized access points. SPUR coalition member working on industry-wide standards. Robert Hahn (Director of Business Affairs & Licensing): 'It is not a one-size-fits-all' — licensing strategy is tailored per AI company/use case."
+  has_google_ai_pilot: true
+  notes: >
+    Guardian now has THREE AI content partnerships: OpenAI (Feb 2025), ProRata (~2025), and
+    Google News AI pilot (Dec 2025, initial partner). 'Operation Leaky Bucket' internal compliance
+    program identifies unauthorized access points. SPUR coalition founding member (Feb 2026, 36
+    members as of Jun 2026) working on industry-wide telemetry standard. Robert Hahn (Director of
+    Business Affairs & Licensing): 'It is not a one-size-fits-all' — licensing strategy tailored
+    per AI company/use case. UK CMA ruling (Jun 2, 2026) gives publishers opt-out rights from
+    Google AI Overviews, strengthening negotiating position.
+    ANALYTICAL NOTE: The Guardian's Google-Extended robots.txt status is now analytically
+    important. If still blocked, it creates a contradiction with the Google News AI pilot
+    participation. If unblocked, it would represent a significant policy reversal.
 
 target_entities:
   "Meta":
@@ -639,17 +779,27 @@ notes: |
   PREVIOUS ASSUMPTION: No corporate conflicts. Only ideological/editorial bias.
   Scott Trust non-profit = clean. Useful baseline for isolating financial incentive signals.
 
-  NEW REALITY (updated Jun 27, 2026):
+  NEW REALITY (updated Jun 28, 2026):
   1. OpenAI licensing deal (Feb 2025) — direct commercial relationship with Meta's #1 AI competitor
   2. ProRata licensing deal — additional AI revenue stream from Meta competitor ecosystem
-  3. Mercuri/GMG Ventures — Scott Trust has direct VC investments in AI media-tech startups (£42M + £50M funds). 84 total investments, 12 exits per PitchBook. Notable: Faculty AI (Accenture exit, Cambridge Analytica/SCL connection), Signal AI ($165M Battery Ventures majority acquisition, media monitoring conflict)
-  4. Vivian Schiller — board member with Twitter (Meta competitor) + extensive tech industry history
-  5. SPUR coalition — Guardian actively shaping AI licensing ecosystem, structural opposition to non-licensing AI companies (which includes Meta)
-  6. STEL PE/VC portfolio — £352M committed across 28 managers; Hg Capital ($110B AUM, ~60 B2B software cos worth $195B) is largest identified PE holding. Diffuse tech ecosystem exposure, no concentrated Meta-competitive positions.
-  7. Cambridge Analytica identity — Guardian's journalism (Cadwalladr 2018) catalyzed $5.8B+ in enforcement actions against Meta. Institutional identity partly defined by opposition to Facebook/Meta data practices. Banks v Cadwalladr litigation (2019-2023) reinforced this editorial posture; Guardian signed Anti-SLAPP Coalition supporting Cadwalladr.
-  8. Tortoise Media / Observer sale — Scott Trust retains 9% stake + board seats. Tortoise backed by Woodbridge Investments (Thomson family, Thomson Reuters controlling shareholders), creating indirect cross-media ownership link.
-  9. Faculty AI circular conflict — Guardian's VC arm (Mercuri) invested in Faculty AI, which had alleged ties to SCL Group (Cambridge Analytica's parent), while Guardian journalism exposed Cambridge Analytica. Faculty also subject of Guardian investigative reporting on government AI procurement.
-  10. Signal AI media monitoring — Mercuri invested in a platform that algorithmically monitors and analyzes news coverage across 226 markets — potential conflict when the monitored includes the investor's own parent publication.
+  3. Google News AI pilot (Dec 2025) — INITIAL PARTNER alongside Washington Post, Der Spiegel, etc.
+     Google paying direct fees for AI-powered article overviews. As of Jun 2026, Google pushing
+     broader content-use terms potentially including AI model training rights. Creates compound
+     Google dependency (advertising + AI pilot + potential training rights). Severity 3.
+  4. Mercuri/GMG Ventures — Scott Trust has direct VC investments in AI media-tech startups (£42M + £50M funds). 84 total investments, 12 exits per PitchBook. Notable: Faculty AI (Accenture exit, Cambridge Analytica/SCL connection), Signal AI ($165M Battery Ventures majority acquisition, media monitoring conflict)
+  5. Vivian Schiller — board member with Twitter (Meta competitor) + extensive tech industry history
+  6. SPUR coalition — Guardian co-founded (Feb 2026), expanded to 36 members (Jun 3, 2026 at WAN-IFRA).
+     Developing telemetry standard for real-time monitoring of AI content usage. BUT: Guardian
+     simultaneously participates in Google's AI pilot (bilateral deal-making that bypasses
+     SPUR's collective framework). This dual positioning creates a SPUR credibility tension.
+  7. UK CMA Google ruling (Jun 2, 2026) — Publishers can now opt out of AI Overviews separately from
+     Search. Creates regulatory leverage that benefits Guardian as SPUR member, but may conflict with
+     Google News AI pilot participation.
+  8. STEL PE/VC portfolio — £352M committed across 28 managers; Hg Capital ($110B AUM, ~60 B2B software cos worth $195B) is largest identified PE holding. Diffuse tech ecosystem exposure, no concentrated Meta-competitive positions.
+  9. Cambridge Analytica identity — Guardian's journalism (Cadwalladr 2018) catalyzed $5.8B+ in enforcement actions against Meta. Institutional identity partly defined by opposition to Facebook/Meta data practices. Banks v Cadwalladr litigation (2019-2023) reinforced this editorial posture; Guardian signed Anti-SLAPP Coalition supporting Cadwalladr.
+  10. Tortoise Media / Observer sale — Scott Trust retains 9% stake + board seats. Tortoise backed by Woodbridge Investments (Thomson family, Thomson Reuters controlling shareholders), creating indirect cross-media ownership link.
+  11. Faculty AI circular conflict — Guardian's VC arm (Mercuri) invested in Faculty AI, which had alleged ties to SCL Group (Cambridge Analytica's parent), while Guardian journalism exposed Cambridge Analytica. Faculty also subject of Guardian investigative reporting on government AI procurement.
+  12. Signal AI media monitoring — Mercuri invested in a platform that algorithmically monitors and analyzes news coverage across 226 markets — potential conflict when the monitored includes the investor's own parent publication.
 
   COUNTER-CONFLICTS (structural independence factors):
   A. Dropped Apple News AND Facebook Instant Articles (Apr 2017) — ZERO platform revenue from Apple or Meta. Only tracked publication with no major platform revenue dependency.
@@ -672,11 +822,37 @@ notes: |
   3. Did the SPUR coalition (Feb 2026) change editorial framing of AI companies generally?
   4. Does the Cambridge Analytica institutional identity create a self-reinforcing editorial posture toward Meta independent of financial incentives?
   5. Has the Washington Post endorsement controversy (Oct 2024) and subsequent US reader surge altered Guardian US editorial positioning?
-  6. NEW: Does Mercuri's Faculty AI investment (and its Cambridge Analytica/SCL connection) represent a blind spot in the Guardian's own investigative coverage?
-  7. NEW: Did Signal AI's Battery Ventures acquisition ($165M, Sept 2025) generate coverage in the Guardian, and was that coverage disclosed?
+  6. Does Mercuri's Faculty AI investment (and its Cambridge Analytica/SCL connection) represent a blind spot in the Guardian's own investigative coverage?
+  7. Did Signal AI's Battery Ventures acquisition ($165M, Sept 2025) generate coverage in the Guardian, and was that coverage disclosed?
+  8. NEW: Does Guardian coverage of Google differ pre/post-Dec 2025 (Google News AI pilot start)?
+     The Guardian is now receiving DIRECT PAYMENTS from Google for AI content access while
+     simultaneously being Google's biggest advertising customer and a SPUR founding member
+     advocating collective bargaining. This triple relationship is unique in the dataset.
+  9. NEW: How does the Guardian's SPUR leadership position (collective standards) coexist with
+     its bilateral Google AI pilot deal (individual monetization)? Does SPUR membership give the
+     Guardian rhetorical cover ("we're fighting for publisher rights") while it simultaneously
+     grants Google broad content-use terms?
+  10. NEW: As US revenue becomes dominant (83% international, $81.4M US), does the Guardian's
+      coverage of US tech companies shift to match US-reader subscription demand patterns?
+      If adversarial Big Tech coverage drives US reader subscriptions (post-WaPo endorsement
+      controversy), there's a commercial incentive for adversarial framing independent of any
+      specific financial conflict.
+  11. NEW: Cross-publication comparison: Guardian and Washington Post are BOTH Google News AI
+      pilot initial partners AND have OpenAI relationships. Does their coverage of Google differ
+      systematically from non-pilot publications? The Guardian is the only one of the 5 tracked
+      publications in the Google pilot.
 
   Research note: Bunz & Braghieri 2021 found Guardian had only 29% positive AI coverage vs 49% for WSJ,
   making it still useful as benchmark for editorial AI skepticism independent of ownership conflicts.
+
+  UPDATED CONFLICT COUNT (Jun 28, 2026):
+  The Guardian now has FOUR AI-related financial relationships (OpenAI, ProRata, Google News AI
+  pilot, SPUR). This is one fewer than The Atlantic (OpenAI + OpenAI Labs + NewsGuard + io exit +
+  Apple stock) but represents a qualitative shift from the Guardian's previous "clean control"
+  status. The key difference: Guardian's conflicts are all licensing/content-access deals with
+  no equity positions in Meta competitors, while Atlantic/Wired have direct equity investments
+  ($16B Apple stock, $7B Reddit stake). Guardian's conflicts are structurally diffuse; Atlantic's
+  and Wired's are structurally concentrated.
 
 editorial_history:
   leadership_changes:
