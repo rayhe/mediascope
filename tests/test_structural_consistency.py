@@ -204,3 +204,54 @@ class TestTopicBucketConsistency:
         assert "13 topic buckets" in doc, (
             "ARCHITECTURE.md topic count is stale. Should be 13."
         )
+
+
+class TestTestFileListingConsistency:
+    """Guard: every test file on disk must appear in ARCHITECTURE.md listing."""
+
+    def _test_files_on_disk(self) -> set[str]:
+        """Get all test_*.py filenames from the tests/ directory."""
+        tests_dir = _REPO_ROOT / "tests"
+        return {f.name for f in tests_dir.glob("test_*.py")}
+
+    def _test_files_in_architecture(self) -> set[str]:
+        """Extract test file names listed in ARCHITECTURE.md tree."""
+        doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
+        return set(re.findall(r"(test_\w+\.py)", doc))
+
+    def test_architecture_lists_all_test_files(self):
+        """Every test file on disk must appear in ARCHITECTURE.md tree."""
+        on_disk = self._test_files_on_disk()
+        in_docs = self._test_files_in_architecture()
+        missing = on_disk - in_docs
+        assert not missing, (
+            f"Test files on disk but missing from ARCHITECTURE.md:\n"
+            f"  {sorted(missing)}\n"
+            "Add an entry for each missing file in the tests/ tree section."
+        )
+
+    def test_architecture_has_no_phantom_test_files(self):
+        """ARCHITECTURE.md should not list test files that don't exist."""
+        on_disk = self._test_files_on_disk()
+        in_docs = self._test_files_in_architecture()
+        phantom = in_docs - on_disk
+        assert not phantom, (
+            f"Test files in ARCHITECTURE.md but not on disk:\n"
+            f"  {sorted(phantom)}\n"
+            "Remove stale entries from the tests/ tree section."
+        )
+
+    def test_architecture_test_file_count_header(self):
+        """The '# tests across N test files' header must match actual count."""
+        on_disk = self._test_files_on_disk()
+        doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
+        match = re.search(r"(\d+) tests across (\d+) test files", doc)
+        assert match, (
+            "ARCHITECTURE.md is missing the 'N tests across M test files' header."
+        )
+        claimed_file_count = int(match.group(2))
+        actual_file_count = len(on_disk)
+        assert claimed_file_count == actual_file_count, (
+            f"ARCHITECTURE.md claims {claimed_file_count} test files, "
+            f"but {actual_file_count} exist on disk."
+        )

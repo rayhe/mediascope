@@ -387,9 +387,10 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # Annotated real-article analyses
-├── tests/                       # 694 tests across 28 test files (all from real articles)
+├── tests/                       # 697 tests across 28 test files (all from real articles)
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
+│   ├── test_avclub_sardonic_framing.py # AV Club sardonic framing: sarcastic_correction sub-patterns, loaded_language ad hominem/industry-as-vice, ironic denial regex
 │   ├── test_careers.py          # Career loading, migration detection, DiD, leadership ITS
 │   ├── test_citations.py       # Citation extraction, source grading, domain classification
 │   ├── test_claims.py          # Claim-to-source mapping, statistic/quote detection
@@ -414,7 +415,7 @@ mediascope/
 │   ├── test_mittr_anthropic_feud.py # MIT Tech Review Anthropic feud article: entity detection, framing, topic classification
 │   ├── test_postpass_activation.py # Structural post-pass framing activation: analogy stacking, speculative framing thresholds
 │   ├── test_precedent_analogy.py # Precedent analogy framing: opioid/tobacco/asbestos crisis comparisons, era-based villainy import
-│   ├── test_structural_consistency.py # Structural consistency: framing device type registry completeness, ARCHITECTURE.md sync
+│   ├── test_structural_consistency.py # Structural consistency: framing device type registry completeness, ARCHITECTURE.md sync, test file listing guards
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

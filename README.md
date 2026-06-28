@@ -359,7 +359,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **694 tests** across 28 test files, each covering a different analytical capability:
+MediaScope has **697 tests** across 28 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -385,7 +385,7 @@ MediaScope has **694 tests** across 28 test files, each covering a different ana
 | `test_wired_gulag_patterns.py` | 17 | Wired "gulag" engineer revolt coverage: conscript/conscription workplace loaded language, keystroke/screen-recording surveillance detection, Scale AI entity detection, full article-context loaded language density |
 | `test_postpass_activation.py` | 32 | Post-pass device activation: analogy_stacking threshold (3+ markers), speculative_framing threshold (5+ hedges), expanded loaded_language patterns, analogy_stacking false-positive regression (factual "is a" constructions vs qualified metaphors) |
 | `test_jun27_regression.py` | 9 | Jun 27 regression tests: topic "fine" ambiguity (fine-tuned ≠ litigation), source extraction stop words ("Any"/"All" not person names), fined still matches litigation |
-| `test_structural_consistency.py` | 17 | Structural consistency guards: framing device type count (34 total = 30 pattern + 4 structural), `precedent_analogy` exists, `__main__.py` entry point works, doc counts match across METHODOLOGY.md/ARCHITECTURE.md/AGENT_GUIDE.md/CLI/README (framing types, banned phrases, Advance/Reddit voting power, topic bucket counts) |
+| `test_structural_consistency.py` | 20 | Structural consistency guards: framing device type count (34 total = 30 pattern + 4 structural), `precedent_analogy` exists, `__main__.py` entry point works, doc counts match across METHODOLOGY.md/ARCHITECTURE.md/AGENT_GUIDE.md/CLI/README (framing types, banned phrases, Advance/Reddit voting power, topic bucket counts), test file listing completeness (every test file on disk appears in ARCHITECTURE.md, no phantoms, header count matches) |
 | `test_mittr_anthropic_feud.py` | 25 | MIT TR "Three things to watch amid Anthropic's feud" article deep dive: entity detection (Fable, Mythos, Zhipu, Chinese AI cluster), scare quotes (doomers, exporting, wake-up call), speculative rhetorical questions (is it possible...?), cliffhanger questions (What will X bring?), loaded language (drastic, superficial), cross-domain precedent analogy (nuclear nonproliferation), speculative framing threshold, sovereignty framing, pattern unit tests |
 | `test_government_oversight_topic.py` | 15 | government_oversight topic bucket (national security, export controls, AI regulation, military AI, beats product_launch on regulation articles, MIT TR Anthropic feud article), group_expert source detection (cybersecurity experts open letter, AI researchers joint statement, petition signed by experts, not anonymous) |
 | `test_confession_framing.py` | 31 | Confession framing (#33): "admitted," "conceded," "finally acknowledged," "was forced to admit" reframing corporate statements as confessions. Cross-publication patterns (Guardian, NYT, Atlantic, MIT TR). False-positive exclusion for legal/judicial confessions, direct-quote self-description. Attribution asymmetry detection. |
