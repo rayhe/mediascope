@@ -4,6 +4,72 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-28 11:00 PT — Hour Type A: Article Deep Dive — Reuters/FT "Google Limits Meta's Gemini AI" + Plural Keyword Fix
+
+**Focus:** Breaking story analysis (Jun 28, 2026) + systematic fix for plural keyword matching gap in topic classification.
+
+### Article Analyzed
+
+**Title:** "Google limits Meta's use of its Gemini AI models, FT reports"
+**Source:** Reuters (repackaging Financial Times paywalled report)
+**Date:** June 28, 2026
+**URL:** https://www.tbsnews.net/worldbiz/usa/google-limits-metas-use-its-gemini-ai-models-ft-1474126
+
+### Toolkit vs Manual Assessment
+
+**Entity Detection: ✅ Excellent.** All 9 entities correctly detected and clustered (Google/Alphabet/Gemini/Pichai → Google cluster; Meta/Facebook → Meta cluster; Reuters/FT → Media cluster). Primary entity assigned to Google by mention count (12 Google-cluster vs 9 Meta-cluster) — numerically correct, though Meta is the entity of analytical interest for MediaScope's conflict-detection purpose.
+
+**Sentiment: ✅ Accurate.** 0.5484 (near-neutral) — correct for Reuters wire service style. Speculative language ratio 0.57 correctly reflects the second-hand FT attribution chain ("the FT reported," "according to the report"), which is standard wire protocol, not true speculation.
+
+**Framing Devices: ⚠️ Partial.** Correctly detected `anonymous_authority` ("people familiar with the matter") and `trend_bundling`. Missed: (1) supply-constraint framing — article frames limitation as "shortfall" (natural supply shortage) rather than competitive restriction (Google wielding power), which is a significant editorial choice; (2) passive agency deflection — "the shortfall disrupted" uses the abstract "shortfall" as grammatical agent rather than Google.
+
+**Topic Classification: 🔴 Failed (pre-fix), ✅ Fixed.**
+
+### Bug: Plural Keyword Matching Gap
+
+**Root cause:** `\bAI model\b` regex does NOT match "AI models" because `\b` requires a word boundary between "model" and the next character, but the plural "s" is a word character, so no boundary exists.
+
+**Impact:** The article contains "AI models" (3×), "AI projects" (1×), "AI tokens" (1×), "AI usage" (1×), "AI services" (1×), "AI infrastructure" (1×), "computing capacity" (2×), "computing power" (1×) — nine relevant terms, only one ("artificial intelligence") matched pre-fix.
+
+**Fix applied in `mediascope/analyze/topics.py`:**
+
+`ai_development` (26 → 41 keywords): Added plurals (AI models, AI systems, AI agents, foundation models) + infrastructure terms (AI infrastructure, AI services, AI projects, AI tokens, AI usage, AI capacity, computing capacity, computing power, AI training, inference).
+
+`corporate_strategy` (31 → 42 keywords): Added supply-chain (supply chain, supplier, vendor) + infrastructure spending (computing capacity, capacity constraints, infrastructure spending, capex, capital expenditure, data centre/center/centres/centers).
+
+**Before fix:**
+| Topic | Score | Matched |
+|-------|-------|---------|
+| executive_behavior | 0.36 | chief executive, executive |
+| financial_results | 0.18 | revenue |
+| ai_development | 0.17 | artificial intelligence |
+
+**After fix:**
+| Topic | Score | Matched |
+|-------|-------|---------|
+| ai_development | 0.53 | artificial intelligence, AI models, AI projects, AI services, AI tokens, AI usage, AI infrastructure, computing capacity, computing power |
+| corporate_strategy | 0.43 | computing capacity, data centres |
+| executive_behavior | 0.36 | chief executive, executive |
+
+### Conflict Disclosure Relevance
+
+This article is a valuable baseline for future cross-publication asymmetry detection:
+- Advance Publications (Wired parent) has Condé Nast AI licensing deals with Google competitors
+- Google Cloud as Meta's AI supplier creates a power dynamic that Wired coverage could frame either as Google's responsible resource management or Meta's overreach
+- Wire service neutrality provides a clean comparison point for detecting editorial framing
+
+### Files Modified
+- `mediascope/analyze/topics.py`: Added 15 new keywords to `ai_development`, 11 to `corporate_strategy`
+- `examples/sample_output/reuters_google_limits_meta_gemini_2026_06_28_article.txt`: Full article text
+- `examples/sample_output/reuters_google_limits_meta_gemini_2026_06_28_analysis.md`: Comprehensive analysis annotation
+
+### Tests
+- 756 passed, 0 failed (unchanged — additive keyword changes only, no structural count changes)
+
+**Commit:** `22e498f` — pushed to main
+
+---
+
 ## 2026-06-28 10:00 PT — Hour Type D: Toolkit Quality & Documentation — Stale Cross-Reference Purge + New Structural Consistency Guards
 
 **Focus:** Fix stale cross-references in documentation that escaped existing structural consistency tests, then add new guard tests to prevent the same class of regression.
