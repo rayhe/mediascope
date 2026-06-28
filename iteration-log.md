@@ -4,6 +4,73 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-28 05:00 PT — Hour Type D: Toolkit Quality & Documentation — Doc/Code Sync Audit + Stale Voting Power Purge
+
+**Focus:** Comprehensive documentation accuracy audit across all 6 doc files + README + structural consistency test expansion.
+**Rationale:** Last Type D (Jun 27 19:00) caught framing device count drift and topic count drift. This iteration audited the next likely drift vector: data values referenced in example code and prose across documentation files that weren't updated when the source profile (wired.yaml) was corrected.
+
+### 1. REAL BUG FOUND: Stale Advance/Reddit Voting Power in 3 Doc Files
+
+The Wired profile (`profiles/wired.yaml`) was updated on Jun 18 to reflect the 2026 proxy / Schedule 13G (filed Nov 14, 2024): Advance Publications' Reddit voting power is **65.2%** (42.2M Class B + 16K Class A = 83.5% of Class B shares, 10 votes/share), not the original IPO-era figure of 33.5% (47.9M Class B).
+
+Three documentation files still referenced the old 33.5% figure:
+
+| File | Location | Old | New |
+|---|---|---|---|
+| `docs/ADDING_PUBLICATIONS.md` | §2 ownership_chain example | `stake: "33.5%"` + `shares: "47,888,690 Class B"` | `stake: "65.2% total voting power"` + full share breakdown |
+| `docs/ADDING_PUBLICATIONS.md` | §6 known_conflicts example | `33.5% voting power in Reddit via 47.9M Class B shares` | `65.2% total voting power via 42.2M Class B + 16K Class A (83.5% of Class B)` |
+| `docs/METHODOLOGY.md` | §11 bias decomposition prose | `33.5% Reddit stake` | `65.2% Reddit voting power` |
+| `docs/AGENT_GUIDE.md` | Disclosure Output JSON example | `"Advance Publications holds 33.5% voting power in Reddit..."` | Updated to 65.2% |
+
+The README.md and QUALITY_STANDARDS.md were already correct (the README `test_readme_advance_voting_power` guard caught 33.5% → 65.2% in an earlier iteration, but only guarded README.md — not the other doc files).
+
+### 2. Test Count Drift Fixed
+
+ARCHITECTURE.md claimed 715 tests (stale from multiple prior iterations that added tests without updating the header). README.md claimed 717 (set correctly at some point but then 5 more tests were added). Actual count: 722 (after adding 5 new guards in this iteration).
+
+| File | Was | Now |
+|---|---|---|
+| `docs/ARCHITECTURE.md` | 715 | 722 |
+| `README.md` | 717 | 722 |
+
+### 3. New Structural Consistency Guards (+5 tests)
+
+Added to `tests/test_structural_consistency.py`:
+
+**TestTestFileListingConsistency.test_readme_test_count_header:**
+- Guards that README's `**N tests** across M test files` header matches actual pytest collection count and test file count on disk
+- Catches the drift that occurred between 717 (README) and 722 (actual) — the existing ARCHITECTURE.md header guard didn't cover README
+
+**TestVotingPowerConsistency (4 tests, new class):**
+- `test_adding_publications_no_stale_voting_power` — ADDING_PUBLICATIONS.md must not contain "33.5%"
+- `test_agent_guide_no_stale_voting_power` — AGENT_GUIDE.md must not contain "33.5%"
+- `test_methodology_no_stale_voting_power` — METHODOLOGY.md must not contain "33.5%"
+- `test_editorial_histories_no_stale_voting_power` — EDITORIAL_HISTORIES.md must not contain "33.5%"
+
+These complement the existing `test_readme_advance_voting_power` guard which only checked README.md. Now all 5 doc files + README are guarded against the stale figure.
+
+### 4. Root Cause Analysis
+
+The data drift happened because the Type C iteration on Jun 18 correctly updated `profiles/wired.yaml` (the source of truth) and the README/disclosure examples, but didn't search-and-replace across the entire repository. The documentation example code in ADDING_PUBLICATIONS.md, METHODOLOGY.md, and AGENT_GUIDE.md used the 33.5% figure as illustrative data — technically "correct for the example's purpose" but factually stale. The new guards ensure that future profile data updates propagate to all surfaces.
+
+### 5. Test Suite
+
+- Before: 717 tests across 29 files (documented), 717 actual
+- After: 722 tests across 29 files (+5 structural guards)
+- All 722 passing
+
+### Files Modified
+- `docs/ADDING_PUBLICATIONS.md`: 3 stale voting power references fixed, share count and structure updated
+- `docs/AGENT_GUIDE.md`: 1 stale voting power reference fixed in disclosure output example
+- `docs/METHODOLOGY.md`: 1 stale voting power reference fixed in bias decomposition prose
+- `docs/ARCHITECTURE.md`: Test count 715 → 722, structural consistency test description updated
+- `README.md`: Test count 717 → 722, structural consistency test description updated
+- `tests/test_structural_consistency.py`: +5 tests (1 README test count header + 4 voting power purge guards)
+
+**Commit:** `d9473c9`
+
+---
+
 ## 2026-06-28 01:00 PT — Hour Type C: Ownership & Funding Deep Dive — NYT / Ariel Investments Exit + Amended Complaint
 
 **Focus:** NYT ownership profile update — SEC 13F verification of Ariel Investments holdings, amended complaint litigation developments, stock price update.
