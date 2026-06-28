@@ -146,10 +146,10 @@ class TestDocCountConsistency:
         )
 
     def test_cli_analyze_device_count(self):
-        """CLI analyze docstring must say 32 types."""
+        """CLI analyze docstring must say 33 types."""
         cli_src = (_REPO_ROOT / "mediascope" / "cli.py").read_text()
-        assert "32 types" in cli_src, (
-            "CLI analyze command docstring framing device count is stale. Should be 32."
+        assert "33 types" in cli_src, (
+            "CLI analyze command docstring framing device count is stale. Should be 33."
         )
 
     def test_readme_banned_phrases_count(self):
@@ -167,3 +167,40 @@ class TestDocCountConsistency:
             "Should be 65.2% per 2026 proxy / Schedule 13G."
         )
         assert "65.2%" in doc
+
+
+class TestTopicBucketConsistency:
+    """Guard: topic bucket counts match across code and docs."""
+
+    def test_topic_count_in_code(self):
+        """Code should define exactly 13 topic buckets."""
+        from mediascope.analyze.topics import TOPIC_KEYWORDS
+        assert len(TOPIC_KEYWORDS) == 13, (
+            f"Expected 13 topic buckets, got {len(TOPIC_KEYWORDS)}.\n"
+            f"Buckets: {sorted(TOPIC_KEYWORDS.keys())}\n"
+            "If you added a new topic, update this test AND the docs:\n"
+            "  - docs/METHODOLOGY.md §3.1 topic count and table\n"
+            "  - docs/ARCHITECTURE.md topics list\n"
+            "  - docs/AGENT_GUIDE.md classify_topic description"
+        )
+
+    def test_methodology_topic_count(self):
+        """METHODOLOGY.md must say 13 topic buckets."""
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        assert "13 topic buckets" in doc, (
+            "METHODOLOGY.md topic count is stale. Should be 13."
+        )
+
+    def test_agent_guide_topic_count(self):
+        """AGENT_GUIDE.md must list 13 topic buckets."""
+        doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
+        assert "13 topic buckets" in doc, (
+            "AGENT_GUIDE.md topic count is stale. Should be 13."
+        )
+
+    def test_architecture_topic_count(self):
+        """ARCHITECTURE.md must say 13 topic buckets."""
+        doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
+        assert "13 topic buckets" in doc, (
+            "ARCHITECTURE.md topic count is stale. Should be 13."
+        )

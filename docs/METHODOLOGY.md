@@ -141,7 +141,7 @@ More coverage ≠ more bias. We normalize by:
 
 ### 3.1 Standardized Topic Buckets
 
-Articles are classified into 12 topic buckets to enable apples-to-apples comparison:
+Articles are classified into 13 topic buckets to enable apples-to-apples comparison:
 
 | Topic | Keywords |
 |---|---|
@@ -157,6 +157,7 @@ Articles are classified into 12 topic buckets to enable apples-to-apples compari
 | `executive_behavior` | CEO, executive, leadership, management, culture, workplace, internal |
 | `litigation` | lawsuit, sued, settlement, verdict, court, judge, plaintiff, damages |
 | `workplace_culture` | morale, employee morale, burnout, attrition, retention, toxic culture, internal revolt, soul-crushing, return to office, disgruntled |
+| `government_oversight` | national security, export controls, classified, embargo, sanctions, nonproliferation, Pentagon, policymakers, lawmakers, AI regulation, military AI |
 
 Classification uses keyword matching with TF-IDF weighting. An article can match multiple topics; the top 3 by confidence are retained.
 
@@ -470,7 +471,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 31-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 33-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
