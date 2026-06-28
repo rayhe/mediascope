@@ -59,8 +59,10 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Dina Powell McCormick",
             "Arena", "Francis Brennan", "Alexandr Wang",
             "Scale AI",
+            "Virtue AI", "Bo Li", "Dawn Song", "Sanmi Koyejo",
+            "FAIR", "Fundamental AI Research",
         ],
-        "regex": r"(?<!\w)(Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport))|Meta Platforms|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|Meta AI|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Meta Superintelligence Labs|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark|Joel Kaplan|Kaplan|Sheryl Sandberg|Sandberg|Nick Clegg|Clegg|Dina Powell McCormick|(?-i:Arena)(?=\s+(?:app|prediction|market|is|was|would|will|being|the))|Francis Brennan|Alexandr Wang|Scale AI)(?!\w)",
+        "regex": r"(?<!\w)(Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport))|Meta Platforms|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|Meta AI|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Meta Superintelligence Labs|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark|Joel Kaplan|Kaplan|Sheryl Sandberg|Sandberg|Nick Clegg|Clegg|Dina Powell McCormick|(?-i:Arena)(?=\s+(?:app|prediction|market|is|was|would|will|being|the))|Francis Brennan|Alexandr Wang|Scale AI|Virtue AI|Bo Li|Dawn Song|Sanmi Koyejo|Fundamental AI Research|(?-i:FAIR)(?=\s+(?:Lab|lab|research|team|group)))(?!\w)",
     },
     "Google": {
         "aliases": [
@@ -148,6 +150,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Bureau of Alcohol Tobacco Firearms", "ATF",
             "Securities and Exchange Commission", "SEC",
             "Justice Department", "Department of Justice", "DOJ",
+            "Bureau of Industry and Security", "BIS",
+            "Center for AI Standards and Innovation", "CAISI",
+            "Howard Lutnick",
             "US Army", "the Army", "Army",
             "US Navy", "US Marine Corps", "US Air Force",
             "US Special Operations Command",
@@ -165,6 +170,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|Centers for Medicare & Medicaid Services|(?-i:CMS)"
                  r"|Edward Snowden|Snowden"
                  r"|Bureau of Alcohol Tobacco Firearms|(?-i:ATF)"
+                 r"|Bureau of Industry and Security|(?-i:BIS)"
+                 r"|Center for AI Standards and Innovation|(?-i:CAISI)"
+                 r"|Howard Lutnick"
                  r"|Securities and Exchange Commission|(?-i:SEC)"
                  r"|Justice Department|Department of Justice|(?-i:DOJ)"
                  r"|(?:US |U\.S\. |the )Army"

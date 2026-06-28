@@ -2757,6 +2757,26 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
                 if device_type == "ironic_quotation":
                     _quoted = match.group().strip('" \u201c\u201d')
                     _word_count = len(_quoted.split())
+                    # --- Tech/industry jargon filter -------------------------
+                    # Short quoted terms (≤3 words) that are established
+                    # industry terminology should not be flagged as scare
+                    # quotes.  Identified via Virtue AI acqui-hire article
+                    # (Jun 2026): "agentic AI", "agents", "agentic", and
+                    # "acqui-hire" are standard tech terms, not ironic usage.
+                    # ---------------------------------------------------------
+                    _TECH_JARGON = {
+                        "agentic ai", "agentic", "agents", "agent",
+                        "acqui-hire", "acquihire",
+                        "zero-day", "zero day",
+                        "open source", "open-source",
+                        "fine-tune", "fine-tuning",
+                        "red team", "red teaming",
+                        "guardrails", "alignment",
+                        "frontier", "frontier ai",
+                        "model", "models",
+                    }
+                    if _quoted.lower() in _TECH_JARGON:
+                        continue
                     # Short quotes (≤3 words): filter if in product-naming context
                     if _word_count <= 3:
                         _lookback = text[max(0, start - 60):start].lower()

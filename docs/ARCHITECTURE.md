@@ -387,7 +387,7 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # Annotated real-article analyses
-├── tests/                       # 722 tests across 29 test files (all from real articles)
+├── tests/                       # 751 tests across 30 test files (all from real articles)
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
 │   ├── test_avclub_sardonic_framing.py # AV Club sardonic framing: sarcastic_correction sub-patterns, loaded_language ad hominem/industry-as-vice, ironic denial regex
@@ -407,6 +407,7 @@ mediascope/
 │   ├── test_source_stance.py    # Source extraction, stance, outsourced intensity, kicker framing
 │   ├── test_topics.py           # Topic classification, all 13 buckets, confidence scoring
 │   ├── test_wynn_williams_fixes.py # Litigation framing, source extraction false positives, power asymmetry
+│   ├── test_virtue_ai_acquihire.py # Virtue AI entities, FAIR, BIS/CAISI, tech-jargon ironic_quotation filter
 │   ├── test_sarcastic_correction.py # Sarcastic correction framing: concede-then-retract, standalone sarcasm, false-positive exclusion
 │   ├── test_wired_gulag_patterns.py # Wired "gulag" coverage: conscript terms, keystroke surveillance, Scale AI entity, article-context loaded language
 │   ├── test_confession_framing.py # Confession framing: "admitted," "conceded," voluntary-to-forced-admission reframing, false-positive exclusion

@@ -367,7 +367,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **722 tests** across 29 test files, each covering a different analytical capability:
+MediaScope has **751 tests** across 30 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -389,6 +389,7 @@ MediaScope has **722 tests** across 29 test files, each covering a different ana
 | `test_glasses_deep_dive.py` | 17 | Wired glasses launch deep dive fixes: kicker framing (negative final paragraph detection), product-name stop-filter for source extraction ("Meta Glasses"), emotional_appeal false-positive exclusion (question marks), loaded language expansion (nefarious, comically, discreetly) |
 | `test_hypocrisy_medical_duress.py` | 16 | Hypocrisy frame detection: "the only company that has not" patterns, medical duress framing, healthcare-as-leverage patterns, prepositional phrase tolerance in entity–negation gaps |
 | `test_wynn_williams_fixes.py` | 18 | Guardian Wynn-Williams lawsuit fixes: source extraction false positives (day names "Wednesday", book titles "Careless People"), litigation framing expansion (complaint, suing, arbitration patterns), power_asymmetry per-violation fines with intervening adjectives |
+| `test_virtue_ai_acquihire.py` | 29 | Virtue AI acqui-hire entity detection (Virtue AI, Bo Li, Dawn Song, Sanmi Koyejo, FAIR, BIS, CAISI, Howard Lutnick), ironic_quotation tech-jargon filter, emotional language additions |
 | `test_sarcastic_correction.py` | 15 | Sarcastic correction framing device: concede-then-retract patterns ("Of course... oh wait"), standalone sarcastic constructions ("Who could have predicted"), false-positive exclusion for neutral uses of "of course" and "right" |
 | `test_wired_gulag_patterns.py` | 17 | Wired "gulag" engineer revolt coverage: conscript/conscription workplace loaded language, keystroke/screen-recording surveillance detection, Scale AI entity detection, full article-context loaded language density |
 | `test_postpass_activation.py` | 26 | Post-pass device activation: analogy_stacking threshold (3+ markers), speculative_framing threshold (5+ hedges), expanded loaded_language patterns, analogy_stacking false-positive regression (factual "is a" constructions vs qualified metaphors) |
