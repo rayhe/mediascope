@@ -2716,13 +2716,61 @@ def _detect_trend_bundling(text: str) -> list[FramingDevice]:
     return []
 
 
+# --- Social proof amplification ---
+# Detects when articles cite reaction counts (likes, thumbs-up, hearts,
+# upvotes, shares) to amplify a quoted position — converting one person's
+# opinion into collective sentiment.
+_SOCIAL_PROOF_PATTERNS: list[re.Pattern] = [
+    # "drew more than 200 thumbs-up and heart reactions"
+    re.compile(
+        r"(?:drew|received|garnered|got|attracted|earned|accumulated)"
+        r"\s+(?:more\s+than\s+|over\s+|nearly\s+|about\s+|around\s+)?"
+        r"\d[\d,]*\s+"
+        r"(?:thumbs[- ]?up|heart|like|reaction|upvote|share|retweet|repost|comment)",
+        re.IGNORECASE,
+    ),
+    # "a comment that drew more than N reactions"
+    re.compile(
+        r"(?:comment|post|message|reply)\s+that\s+"
+        r"(?:drew|received|garnered|got|attracted|earned)\s+"
+        r"(?:more\s+than\s+|over\s+|nearly\s+)?\d[\d,]*\s+"
+        r"(?:thumbs[- ]?up|heart|like|reaction|upvote|share)",
+        re.IGNORECASE,
+    ),
+    # "Dozens of people also reacted with X"
+    re.compile(
+        r"(?:dozens|hundreds|thousands|scores|many|numerous)\s+"
+        r"(?:of\s+)?(?:people|employees|users|workers|commenters|respondents)"
+        r"\s+(?:also\s+)?(?:reacted|responded|replied|commented)",
+        re.IGNORECASE,
+    ),
+]
+
+
+def _detect_social_proof_amplification(text: str) -> list[FramingDevice]:
+    """Detect social proof amplification — citing reaction counts
+    to amplify quoted positions."""
+    devices: list[FramingDevice] = []
+    for pattern in _SOCIAL_PROOF_PATTERNS:
+        for m in pattern.finditer(text):
+            devices.append(
+                FramingDevice(
+                    device_type="social_proof_amplification",
+                    evidence_text=m.group(0),
+                    start=m.start(),
+                    end=m.end(),
+                )
+            )
+    return devices
+
+
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 30 pattern-matched device types plus 4 structural
-    post-pass types (34 total).
+    Scans for 31 pattern-matched device types plus 5 structural
+    post-pass types (36 total).
 
-    Pattern-matched (30): guilt_by_association, anonymous_authority,
+    Pattern-matched (31): guilt_by_association, anonymous_authority,
     catastrophizing, false_balance, selective_omission_signal,
     emotional_appeal, straw_man, loaded_language, refusal_amplification,
     juxtaposition, timeline_implication, power_asymmetry,
@@ -2733,10 +2781,10 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     scale_magnitude, ceo_personalization, litigation_framing,
     corporate_reassurance_undercut, sarcastic_correction,
     hypocrisy_frame, outsourced_intensity, confession_framing,
-    and precedent_analogy.
+    precedent_analogy, and social_proof_amplification.
 
-    Structural post-pass (4): kicker_framing, analogy_stacking,
-    speculative_framing, trend_bundling.
+    Structural post-pass (5): kicker_framing, analogy_stacking,
+    speculative_framing, trend_bundling, social_proof_amplification.
 
     Args:
         text: The article text to analyze.
@@ -2883,6 +2931,12 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     # Post-pass: trend bundling (fires when 3+ distinct companies are
     # bundled in comparison context — normalising/contextualising frame)
     devices.extend(_detect_trend_bundling(text))
+
+    # Post-pass: social proof amplification — when articles cite reaction
+    # counts (likes, thumbs-up, hearts, shares, retweets) to quantify and
+    # amplify a quoted position, converting individual opinion into
+    # collective sentiment.
+    devices.extend(_detect_social_proof_amplification(text))
 
     # Re-sort after adding post-pass results
     devices.sort(key=lambda d: d.start)

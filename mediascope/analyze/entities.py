@@ -61,8 +61,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Scale AI",
             "Virtue AI", "Bo Li", "Dawn Song", "Sanmi Koyejo",
             "FAIR", "Fundamental AI Research",
+            "Ime Archibong", "Archibong",
         ],
-        "regex": r"(?<!\w)(Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport))|Meta Platforms|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|Meta AI|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Meta Superintelligence Labs|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark|Joel Kaplan|Kaplan|Sheryl Sandberg|Sandberg|Nick Clegg|Clegg|Dina Powell McCormick|(?-i:Arena)(?=\s+(?:app|prediction|market|is|was|would|will|being|the))|Francis Brennan|Alexandr Wang|Scale AI|Virtue AI|Bo Li|Dawn Song|Sanmi Koyejo|Fundamental AI Research|(?-i:FAIR)(?=\s+(?:Lab|lab|research|team|group)))(?!\w)",
+        "regex": r"(?<!\w)(Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport))|Meta Platforms|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|Meta AI|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Meta Superintelligence Labs|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark|Joel Kaplan|Kaplan|Sheryl Sandberg|Sandberg|Nick Clegg|Clegg|Dina Powell McCormick|(?-i:Arena)(?=\s+(?:app|prediction|market|is|was|would|will|being|the))|Francis Brennan|Alexandr Wang|Scale AI|Virtue AI|Bo Li|Dawn Song|Sanmi Koyejo|Fundamental AI Research|(?-i:FAIR)(?=\s+(?:Lab|lab|research|team|group))|Ime Archibong|Archibong)(?!\w)",
     },
     "Google": {
         "aliases": [

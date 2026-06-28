@@ -170,10 +170,10 @@ Journalist YAML ──→ Career Tracker ──→ Migration Detection
 - **Security context adjustment**: Technical security/hacking articles use domain-specific language that inflates emotional intensity; the scorer reduces intensity for articles matching security topic patterns
 
 ### `framing.py`
-- **34 framing device types** organized in three tiers:
+- **35 framing device types** organized in three tiers:
   - **Core (10):** guilt by association, anonymous authority, catastrophizing, false balance, selective omission signal, emotional appeal, loaded language (including workplace coercion/revolt terms), power asymmetry, CEO personalization, litigation framing
   - **Extended (20):** straw man, refusal amplification, juxtaposition (including investment-near-layoffs), timeline implication, military techno-optimism, selective rehabilitation, rhetorical question, ironic quotation, isolation framing, pressure language, self-referential investigation (publication citing its own prior reporting as evidence within adversarial coverage), geopolitical regulatory pressure, sovereignty framing, scale/magnitude framing, corporate reassurance undercut, hypocrisy frame (singling out an entity as the sole holdout among peers, framing inaction as moral failing), sarcastic correction (editorial sarcasm that mockingly concedes a point before retracting it), outsourced intensity (loaded language in legal filings/complaints quoted by neutral editorial prose), precedent analogy (editorial device importing settled villainy from prior crises — opioid, tobacco, asbestos — onto a current subject via era-based comparisons), confession framing (editorial device presenting corporate acknowledgments as forced admissions — "admitted," "conceded," "finally acknowledged" — reframing voluntary statements as reluctant confessions extracted under pressure)
-  - **Structural post-pass (4):** kicker framing (checks final ~400 chars for discordant negative note), analogy stacking (fires when 3+ distinct analogy markers found), speculative framing (fires when 5+ cumulative speculative hedges found — individual hedges are normal journalism; stacked hedges convert possibility into implied certainty), trend bundling (fires when 3+ distinct companies are bundled as comparisons — editorial technique of normalising or amplifying a target company's action by assembling an industry-wide pattern)
+  - **Structural post-pass (5):** kicker framing (checks final ~400 chars for discordant negative note), analogy stacking (fires when 3+ distinct analogy markers found), speculative framing (fires when 5+ cumulative speculative hedges found — individual hedges are normal journalism; stacked hedges convert possibility into implied certainty), trend bundling (fires when 3+ distinct companies are bundled as comparisons — editorial technique of normalising or amplifying a target company's action by assembling an industry-wide pattern), social proof amplification (detects when articles cite reaction counts — likes, thumbs-up, hearts — to convert individual opinion into collective sentiment)
 - Attribution verb analysis: neutral ("said"), undermining ("claimed"), concessive ("admitted"), adversarial ("warned")
 - **Workplace coercion/revolt language detection**: Terms like "no opt-out," "revolt," "nihilistic," "training their own replacements" detected as loaded language specific to labor/workplace framing
 - **Investment-near-layoffs juxtaposition detection**: Pattern where large spending figures ($X billion) appear near workforce cuts, an editorial device implying corporate indifference
@@ -387,7 +387,7 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # Annotated real-article analyses
-├── tests/                       # 761 tests across 30 test files (all from real articles)
+├── tests/                       # 787 tests across 31 test files (all from real articles)
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
 │   ├── test_avclub_sardonic_framing.py # AV Club sardonic framing: sarcastic_correction sub-patterns, loaded_language ad hominem/industry-as-vice, ironic denial regex
@@ -413,6 +413,7 @@ mediascope/
 │   ├── test_confession_framing.py # Confession framing: "admitted," "conceded," voluntary-to-forced-admission reframing, false-positive exclusion
 │   ├── test_government_oversight_topic.py # government_oversight topic bucket: national security, export controls, AI regulation, group_expert source detection
 │   ├── test_jun27_regression.py # Regression tests for Jun 27 fixes across multiple analysis modules
+│   ├── test_hackathon_revolt.py # Wired hackathon revolt: entity, sentiment, framing, topic tests
 │   ├── test_mittr_anthropic_feud.py # MIT Tech Review Anthropic feud article: entity detection, framing, topic classification
 │   ├── test_postpass_activation.py # Structural post-pass framing activation: analogy stacking, speculative framing thresholds
 │   ├── test_precedent_analogy.py # Precedent analogy framing: opioid/tobacco/asbestos crisis comparisons, era-based villainy import

@@ -48,6 +48,7 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "AI infrastructure", "AI services", "AI projects",
         "AI tokens", "AI usage", "AI capacity", "computing capacity",
         "computing power", "AI training", "inference",
+        "AI hackathon", "AI Innovation", "AI-focused",
     ],
     "privacy_data": [
         "privacy", "data breach", "data leak", "personal data",

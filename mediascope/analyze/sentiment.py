@@ -300,6 +300,14 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "liable", "found liable",
     "unwitting", "unwitting users",
     "worst of people",
+    # Workplace discontent / internal morale — moderate emotional language
+    # frequently used in employee dissent articles and leaked internal comms.
+    # Lower intensity than sensationalist terms but cumulatively shapes tone.
+    "disappointing", "disappointed", "demoralizing", "demoralized",
+    "discouraged", "disbelief", "skeptical", "skepticism",
+    "sarcastic", "pushback", "revolt", "unimpressed",
+    "fearful", "chaotic", "overburdened", "distress",
+    "preoccupied", "tone-deaf", "performative",
 ]
 
 # Passive/victim vs. active/powerful framing indicators

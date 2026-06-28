@@ -6227,3 +6227,47 @@ Added: shockwaves, shockwave, sent shockwaves, tumultuous, crackdown, upheaval, 
 
 - 29 new tests in `test_virtue_ai_acquihire.py`
 - **751 tests passing across 30 test files** (up from 722/29)
+
+---
+
+## 2026-06-28 15:00 PT — Type A: Article Deep Dive
+
+**Article:** Wired, "Meta Employees Absolutely Hate Mark Zuckerberg's Plan for a Companywide AI Hackathon" (June 13, 2026)
+
+### Code Changes
+
+1. **entities.py:** Added Ime Archibong (VP Product Management) to Meta cluster aliases + regex. Previously undetected despite being a key figure whose Workplace post drew the fiercest employee pushback.
+
+2. **sentiment.py:** Added 17 workplace-discontent emotional language terms: disappointing, disappointed, demoralizing, demoralized, discouraged, disbelief, skeptical, skepticism, sarcastic, pushback, revolt, unimpressed, fearful, chaotic, overburdened, distress, preoccupied, tone-deaf, performative. These fill a critical gap — the prior vocabulary was calibrated only for sensationalist terms (shocking, devastating, scandalous), completely missing the moderate emotional register of internal-morale coverage. Impact: `emotional_language_intensity` 0.318 → 0.698, `quoted_intensity` 0.0 → 0.485.
+
+3. **framing.py:** Added `social_proof_amplification` — 35th framing device type, 5th structural post-pass. Detects when articles cite reaction counts (likes, thumbs-up, hearts, upvotes) to convert individual opinion into collective sentiment. Three regex patterns: (a) verb + number + reaction-noun ("drew more than 200 thumbs-up"), (b) "comment/post that drew N reactions", (c) collective-noun + reaction-verb ("Dozens of people also reacted"). Found 3 instances in target article.
+
+4. **topics.py:** Added "AI hackathon", "AI Innovation", "AI-focused" to `ai_development` keyword list. Previously scored 0.0 on an article explicitly about an AI event.
+
+5. **tests/test_structural_consistency.py:** Updated total device type count (34→35), structural post-pass set (+social_proof_amplification), doc consistency guards (34→35 everywhere), stale-ref purge guards (added 34-type checks alongside existing 33-type checks).
+
+6. **All docs updated:** ARCHITECTURE.md (structural post-pass list, device type count, test count), METHODOLOGY.md (device type count, taxonomy reference), AGENT_GUIDE.md (device type count), CLI docstring (device type count), README.md (test count header, test table, device type counts).
+
+### Pipeline Verification
+
+| Module | Before | After | Notes |
+|--------|--------|-------|-------|
+| Entity: Archibong | 0 mentions | 2 mentions | Correctly clustered under Meta |
+| Sentiment: emotional intensity | 0.318 | 0.698 | Workplace-discontent terms filling the gap |
+| Sentiment: quoted intensity | 0.0 | 0.485 | Quotes now registering emotional content |
+| Framing: social proof | 0 devices | 3 devices | All three reaction-count patterns matched |
+| Topics: ai_development | 0.0 | 0.218 | "AI Innovation" and "AI hackathon" matched |
+
+### Key Analytical Insight
+
+The editorial intensity (0.774) exceeds the quoted intensity (0.485), meaning the journalist is doing the emotional heavy-lifting rather than outsourcing it to sources. The quotes themselves are mundane workplace complaints ("I don't have the time", "no incentive") while the editorial framing ("sparked frustration and disbelief", "swift pushback", "angry messages and sarcastic memes") manufactures the revolt narrative. This is the opposite of the outsourcing-to-sources pattern seen in the Wired "AI gulag" article.
+
+### Test Results
+
+- 26 new tests in `test_hackathon_revolt.py`
+- **787 tests passing across 31 test files** (up from 761/30)
+
+### Future Work Identified
+
+- **Structural voice imbalance:** No pattern for measuring column-inch ratios between dissenting/supporting voices
+- **Ironic juxtaposition:** "first companywide [hackathon] since 8,000 people were laid off" — subtler than existing juxtaposition pattern which requires explicit "but"/"however" pivots
