@@ -333,3 +333,69 @@ class TestVotingPowerConsistency:
             "EDITORIAL_HISTORIES.md still references stale 33.5% Advance/Reddit "
             "voting power. Should be 65.2% per 2026 proxy / Schedule 13G."
         )
+
+
+
+class TestCrossReferenceConsistency:
+    """Guard: cross-reference counts within doc sections stay in sync.
+
+    The primary count guards (TestDocCountConsistency, TestTopicBucketConsistency)
+    check the canonical declaration sites. These tests catch stale counts in
+    *secondary* references — tables, comparison sections, and inline mentions
+    that are easy to miss when the primary count is updated.
+
+    Added: 2026-06-28 10:00 PT, Type D iteration.
+    """
+
+    def test_methodology_same_event_table_uses_34_type(self):
+        """METHODOLOGY.md §13 same-event comparison must reference 34-type taxonomy."""
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        assert "33-type" not in doc, (
+            "METHODOLOGY.md still references stale '33-type' taxonomy in §13 "
+            "(same-event comparison). Should be '34-type' after trend_bundling "
+            "was added as framing device #34."
+        )
+
+    def test_readme_test_topics_description_says_15(self):
+        """README.md test_topics.py description must reference 15 topic buckets."""
+        doc = (_REPO_ROOT / "README.md").read_text()
+        # Find the test_topics.py row in the test table
+        match = re.search(r"test_topics\.py.*?(\d+)\s+standardized topic buckets", doc)
+        assert match, (
+            "README.md test_topics.py row is missing topic bucket count reference."
+        )
+        claimed = int(match.group(1))
+        assert claimed == 15, (
+            f"README.md test_topics.py description references {claimed} topic buckets, "
+            f"should be 15. The 'all 13' count is stale — prediction_markets and "
+            f"corporate_strategy were added."
+        )
+
+    def test_no_stale_33_type_in_any_doc(self):
+        """No documentation file should reference '33-type' (stale framing count)."""
+        for doc_file in (_REPO_ROOT / "docs").glob("*.md"):
+            content = doc_file.read_text()
+            assert "33-type" not in content, (
+                f"{doc_file.name} contains stale '33-type' reference. "
+                f"Should be '34-type' after trend_bundling was added."
+            )
+
+    def test_no_stale_33_framing_device_in_readme(self):
+        """README.md should not reference 33 framing devices anywhere."""
+        doc = (_REPO_ROOT / "README.md").read_text()
+        # Check for "33 framing" or "33-type" patterns
+        stale_refs = re.findall(r"\b33[- ](?:type|framing|device)", doc)
+        assert not stale_refs, (
+            f"README.md contains stale 33-count framing reference(s): {stale_refs}. "
+            f"Should be 34 after trend_bundling was added."
+        )
+
+    def test_readme_topic_count_in_description(self):
+        """README.md publication profiles table must reference correct topic patterns."""
+        doc = (_REPO_ROOT / "README.md").read_text()
+        # Ensure no "13 topic" reference anywhere in README
+        stale_refs = re.findall(r"\ball\s+13\s+(?:standardized\s+)?topic", doc, re.IGNORECASE)
+        assert not stale_refs, (
+            f"README.md contains stale 'all 13 topic' reference(s): {stale_refs}. "
+            f"Should be 'all 15' — prediction_markets and corporate_strategy were added."
+        )
