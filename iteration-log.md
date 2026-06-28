@@ -4,6 +4,50 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-28 10:00 PT — Hour Type D: Toolkit Quality & Documentation — Stale Cross-Reference Purge + New Structural Consistency Guards
+
+**Focus:** Fix stale cross-references in documentation that escaped existing structural consistency tests, then add new guard tests to prevent the same class of regression.
+
+### Stale References Found and Fixed
+
+1. **METHODOLOGY.md §13.2 (same-event comparison table):** Referenced "33-type taxonomy" — should be "34-type taxonomy" after `trend_bundling` was added as framing device #34. The existing `TestDocCountConsistency.test_methodology_device_count` caught the §4.1 canonical reference but missed this secondary reference in a different section.
+
+2. **README.md test_topics.py description:** Said "all 13 standardized topic buckets" — should be "all 15 standardized topic buckets" after `prediction_markets` and `corporate_strategy` were added. The existing `TestTopicBucketConsistency` tests checked METHODOLOGY.md, ARCHITECTURE.md, and AGENT_GUIDE.md but not the README test table descriptions.
+
+### Root Cause Analysis
+
+The existing guard tests (`TestDocCountConsistency`, `TestTopicBucketConsistency`) correctly guarded the **canonical declaration sites** — the sections where a count is first defined. But counts get echoed in secondary references (comparison tables, test descriptions, cross-section mentions) that weren't covered. The pattern is: when a new feature is added, the canonical count and the nearest mentions get updated, but distant echoes of the old count survive.
+
+### New Guard Tests (TestCrossReferenceConsistency class)
+
+5 new tests added to `test_structural_consistency.py`:
+
+| Test | What It Guards |
+|---|---|
+| `test_methodology_same_event_table_uses_34_type` | §13 cross-reference matches §4.1 canonical count |
+| `test_readme_test_topics_description_says_15` | Parses README test table, verifies test_topics.py description says 15 buckets |
+| `test_no_stale_33_type_in_any_doc` | Sweeps ALL docs/ for any "33-type" string (catches distant echoes) |
+| `test_no_stale_33_framing_device_in_readme` | README-specific guard against "33 framing/type/device" patterns |
+| `test_readme_topic_count_in_description` | Guards against "all 13 topic" appearing anywhere in README |
+
+### Count Updates
+- README.md test count header: 751 → **756**
+- ARCHITECTURE.md test count header: 751 → **756**
+- `test_structural_consistency.py` test count: 27 → **32**
+
+### Files Modified
+- `docs/METHODOLOGY.md`: Fixed "33-type" → "34-type" in §13.2 comparison table
+- `README.md`: Fixed test_topics.py description (13 → 15), updated test counts (751 → 756, 27 → 32), updated test_structural_consistency description
+- `docs/ARCHITECTURE.md`: Updated test count (751 → 756), updated test_structural_consistency description
+- `tests/test_structural_consistency.py`: Added `TestCrossReferenceConsistency` class with 5 new tests
+
+### Tests
+- 756 passed, 0 failed (up from 751)
+
+**Commit:** `a9504fd` — pushed to main
+
+---
+
 ## 2026-06-28 09:00 PT — Hour Type C: Ownership & Funding Deep Dive — Wired/Advance Portfolio: WBD EU Extension, Charter-SpaceX, Reddit Cannes Lions
 
 **Focus:** Three major ownership/funding updates to the Wired/Advance Publications profile: (1) WBD/Paramount merger EU timeline extension with UIP divestiture, (2) Charter Communications SpaceX mobile partnership talks, (3) Reddit Cannes Lions 2026 advertising momentum and commerce evolution.
