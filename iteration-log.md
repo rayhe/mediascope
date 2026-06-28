@@ -4,6 +4,64 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-28 12:00 PT — Hour Type B: Journalist/Publication Research
+
+**Focus:** Deep career expansion for 3 thin-profile journalists: Andy Greenberg (2→3 entries), Lily Hay Newman (2→4 entries), Nico Grant (2→4 entries).
+
+### Journalists Expanded
+
+**Andy Greenberg (Wired senior writer, security/privacy)**
+- Added education entry: North Carolina School of Science and Mathematics (HS), Haverford College BA History, Beijing Foreign Studies University (abroad), NYU MA Business & Economic Reporting
+- Father was IBM engineer who co-developed barcode/UPC
+- Expanded Forbes entry (2007-2014): Julian Assange cover story (first magazine cover, late 2010), "This Machine Kills Secrets" (2012, NYT Editors' Choice, Verge top 10 "greatest tech books of all time"), Gerald Loeb nomination with Ryan Mac for "Big Brother's Brain" (2014), Security Bloggers Network award (2013), SANS Top Cybersecurity Journalist (2014), "Deep Web" documentary (2015)
+- Expanded Wired entry (2014-present): "Lights Out" Ukraine grid cover story (Jul 2017, inaugural NYU CSAW Cyber Journalism Award), full award inventory (2× Gerald Loeb, Sigma Delta Chi, Cornelius Ryan Citation, 3 Deadline Club Awards), "Tracers in the Dark" (2022) details, 2026 National Magazine Award finalist (Service Journalism) with Lily Hay Newman for government surveillance article
+
+**Lily Hay Newman (Wired senior writer, security/privacy)**
+- Added Johns Hopkins education: double major Writing + History of Science & Technology, editor-in-chief of Hopkins News-Letter. Internships at Metro New York, Baltimore City Paper, Gizmodo
+- Added NYU SHERP 2013: Class of 2013 cohort (with Arielle Duhaime-Ross, Sarah Jacoby, Naveena Sadasivam, Nick Stockton, Joss Fong). Scienceline articles from late 2012-mid 2013
+- Expanded Slate entry (2014-2017): Future Tense partnership details (Slate + New America Foundation + ASU), MediaShift podcast guest (2016), New America ideological context (Anne-Marie Slaughter, center-left think tank)
+- Expanded Wired entry (2017-present): Updated tenure to ~9 years. Trickbot/Bentley unmasking investigation, 2026 National Magazine Award finalist with Greenberg, NPR All Things Considered guest (2019), GQ Brazil/Ars Technica syndication, Signal contact, Mastodon handle
+
+**Nico Grant (former NYT, departed journalism)**
+- Added education: Born in Trinidad, raised in New York. Hunter College BA Media Studies, CUNY MA Journalism. Instructors: Ben Casselman (later NYT), Mo Hadi (NYT deputy business editor)
+- Split Bloomberg into two entries: (1) Enterprise tech beat 2019-2021 (Oracle, Dell, Salesforce, HP; Oracle CEO Hurd illness scoop); (2) Google beat change 2021-2022 (Google AI group turmoil, mental health crisis feature)
+- Expanded NYT entry: Brin AGI memo scoop, YouTube piracy investigation. Relocation to Los Angeles after departure
+
+### Key Analytical Finding
+
+**Greenberg-Newman collaboration network:** Both are 2026 National Magazine Award finalists (Service Journalism) for a co-authored government surveillance article. This means Wired's two longest-serving security desk writers are producing joint work that receives institutional recognition — their collaboration represents a stable, experienced editorial nucleus that predates and likely resists Drummond-era editorial pressure. If their framing has shifted under Drummond, it's worth checking whether it happened before or after this collaboration.
+
+### Sources
+- Wikipedia (Andy Greenberg): https://en.wikipedia.org/wiki/Andy_Greenberg
+- NYU CSAW press release: https://engineering.nyu.edu/news/inaugural-award-cybersecurity-journalism-honors-wireds-andy-greenberg
+- Penguin Random House: https://www.penguinrandomhouse.com/authors/271367/andy-greenberg/
+- Goodreads Sandworm bio: https://www.goodreads.com/book/show/41436213-sandworm
+- Moody's Events bio: https://events.moodys.com (Haverford History degree confirmed)
+- Scienceline/NYU (Newman SHERP): https://scienceline.org/author/lnewman/
+- NYU Journalism Awards: https://journalism.nyu.edu/about/awards/ (SHERP 2013 confirmed, 2026 NMA finalist)
+- NYU Journalism Alumni: https://journalism.nyu.edu (alumni list confirmed "senior staff writer, Wired")
+- MediaShift podcast: https://mediashift.org/2016/05/mediashift-podcast-197/
+- Aspen Cyber Summit: https://aspencybersummit.org
+- RH Strategic: https://rhstrategic.com (cybersecurity reporters list)
+- Listen Notes / Popcast podcast: https://listennotes.com (Newman career summary)
+- Muck Rack (Newman): https://muckrack.com (bio, contact, publications)
+- Editor & Publisher (Grant hiring): https://www.editorandpublisher.com
+- Talking Biz News (Grant departure): https://talkingbiznews.com/they-move/ny-times-biz-reporter-grant-departs/
+- Bloomberg articles: Oracle/Hurd (Sept 2019), Google AI group turmoil (Apr 2021)
+- Muck Rack (Grant): https://muckrack.com (Los Angeles, former @nytimes and @business)
+- Techmeme (Grant/Brin memo): https://www.techmeme.com
+
+### Files Modified
+- `profiles/careers/journalists.yaml`: +148 lines, -59 lines (net +89 lines of career data)
+
+### Stats After
+- 101 journalists, 444 career entries, 99 multi-publication
+- 756 tests passed (unchanged)
+
+**Commit:** `a1d78b5` — pushed to main
+
+---
+
 ## 2026-06-28 11:00 PT — Hour Type A: Article Deep Dive — Reuters/FT "Google Limits Meta's Gemini AI" + Plural Keyword Fix
 
 **Focus:** Breaking story analysis (Jun 28, 2026) + systematic fix for plural keyword matching gap in topic classification.
