@@ -363,6 +363,18 @@ editorial_changes:
       in Meta beat coverage.
     position: technology_reporter_meta
     source_url: https://nytco.com/press/staff-news-from-business/
+  - date: 2026-08
+    incoming: null
+    notes: 'DEPARTURES: Kevin Roose (tech columnist) and Casey Newton (external co-host) leaving NYT. Roose announced June
+      2026 departure from NYT in August 2026 to start an independent media venture with Newton focused on AI. Hard Fork podcast
+      ending as an NYT production after ~4 years (~403 episodes, TOP 0.05% globally). Newton was never an NYT employee — he
+      co-hosted while remaining independent (Platformer). Roose: "start a new show together, under our own shingle." Significant
+      loss: Hard Fork was NYT''s most popular tech podcast and a major audience bridge to the tech-insider demographic that
+      doesn''t typically read NYT. The independent Roose/Newton AI venture creates a competitor in the AI journalism space that
+      combines Roose''s NYT institutional credibility with Newton''s independent platform audience.'
+    outgoing: Kevin Roose, Casey Newton (external co-host)
+    position: hard_fork_podcast
+    source_url: https://talkingbiznews.com/they-move/tech-columnist-roose-departing-ny-times/
   - date: 2025-05
     notes: 'DEPARTURE: Grant left journalism entirely after 3 years covering Google/Alphabet. ''Working there was a dream
       come true, but now, it''s time to chase other dreams outside of journalism.'' Creates gap on NYT''s Google beat.'

@@ -327,25 +327,119 @@ journalists:
   name: Charlie Warzel
   notes: 'Key migration: BuzzFeed News → NYT Opinion → Atlantic. Anti-tech-platforms stance across outlets.'
 - career:
-  - beat: Silicon Valley, social media
+  - beat: state politics, local government
+    end: 2010-11
+    event_type: hired
+    notes: 'First job after Northwestern (Medill BSJ, 2002). Covered Arizona State Legislature, Phoenix city hall, and state
+      government for approximately 6.5 years. No tech background — entered journalism as a political reporter. Described as
+      "bouncing around beats." Interest in technology was purely a hobby during this period. Kristen Go, a fellow Arizona Republic
+      editor, later recruited him to the San Francisco Chronicle. He had been job-hunting in SF for ~2 years before the Chronicle
+      opening materialized.'
+    publication: arizona-republic
+    role: reporter
+    source_url: https://www.azcentral.com/story/entertainment/media/2022/03/20/casey-newton-arizona-reporter-launched-silicon-valley-newsletter/7073714001/
+    start: 2002-06
+  - beat: technology, Apple, mobile devices
+    end: 2011-12
+    event_type: hired
+    notes: 'Moved to San Francisco in 2010 to cover technology for the Chronicle business desk. Covered mobile devices, Apple,
+      and emerging tech companies. Also blogged for "The Tech Chronicles." Recruited by Kristen Go, a former Arizona Republic
+      colleague who had moved to the Chronicle. This was his first tech beat — a complete career pivot from political reporting.
+      His editor pitched the role as "you just move here and write all about Apple and Google and Facebook and whatever seems
+      interesting." Newton later described it as "the greatest job in the world."'
+    publication: san-francisco-chronicle
+    role: tech_reporter
+    source_url: https://www.editorandpublisher.com/stories/sf-chronicle-adds-tech-writer,42206
+    start: 2010-12
+  - beat: technology, social media, mobile
+    end: 2013-02
+    event_type: hired
+    notes: 'Blogger and senior writer at CNET. Broke news that Twitter was working on a standalone music app (among other scoops).
+      Described as "senior writer at CNET" and "senior reporter" in departure announcements. ~1.5 year tenure. His CNET exit
+      was announced by Vox Media: "He was previously a senior writer at CNET, where he recently broke the news that Twitter
+      is working on a standalone music app." Cited in Stephanie Diamond''s "The Visual Marketing Revolution" (Pearson, 2013,
+      p. 288).'
+    publication: cnet
+    role: senior_writer
+    source_url: https://talkingbiznews.com/they-re-hiring/cnet-reporter-joins-the-verge/
+    start: 2011-12
+  - beat: Silicon Valley, social media, platform governance, content moderation
     end: 2020-10
     event_type: hired
-    notes: Silicon Valley editor. The Interface newsletter. Major Meta/Facebook beat reporter.
+    notes: 'Joined March 2013 as senior reporter. Promoted to Silicon Valley editor (~2017 — Nilay Patel, then newly EIC, formalized
+      Newton''s existing leadership: "What I realized was that Casey had been actually in charge for some time"). Authored "The
+      Interface," a daily newsletter (launched 2017, 20,000+ subscribers) on platforms and democracy. Hosted "Converge" podcast
+      with Silicon Valley entrepreneurs. KEY INVESTIGATION (2019): Series of investigative reports on Facebook content moderators
+      at Cognizant (Phoenix and Tampa offices) — exposed PTSD, depression, addiction among moderators reviewing graphic content.
+      Scola v. Facebook resulted in $52M preliminary settlement (San Mateo Superior Court, May 2020) covering 11,250+ moderators.
+      Cognizant subsequently exited the content moderation market entirely. 2020 National Magazine Award (Ellie) finalist for
+      reporting. NPR interview (All Things Considered): "I''ve talked to more than a hundred moderators who worked for companies
+      big and small." 7.5-year tenure — his longest institutional stint. Left October 2020 with his Verge mailing list (unusual
+      concession by Vox Media). Newton self-described the departure: "It should have felt like a really exciting day. But honestly,
+      mostly, it just felt very scary."'
     publication: the-verge
-    role: editor
-    source_url: https://www.theverge.com/authors/casey-newton
+    role: silicon_valley_editor
+    source_url: https://poynter.org/business-work/2017/the-verge-appoints-a-silicon-valley-editor/
     start: 2013-03
-  - beat: Big Tech, social media platforms
+  - beat: Big Tech, social media platforms, platform governance, AI
+    end: 2024-01
     event_type: hired
-    notes: Founded Platformer (Substack, later independent). Sole editorial control — the ultimate test of individual vs.
-      institutional bias.
+    notes: 'Founded Platformer October 2020 on Substack. Grew free list to 30,000 in first weeks (carried over from The Interface);
+      ~1,000 paying at $10/month within weeks. Turned down Substack advances, accepted healthcare stipends. Year 1: ~25,000
+      free. Year 2: ~50,000 free. Hired Zoë Schiffer as managing editor (became co-author of "Extremely Hardcore: Inside Elon
+      Musk''s Twitter," Penguin, Sep 2024). Had third staff member. By January 2024: 170,000 free subscribers. KEY SCOOPS: Twitter/X
+      employees during Musk''s takeover learned of their layoffs from Platformer, not internal channels — defining moment for
+      the newsletter''s influence. Also April 2021: co-founded Sidechannel, a "virtual newsroom" on Discord with seven other
+      independent journalists; hosted Mark Zuckerberg interview on Sidechannel Discord server. SUBSTACK DEPARTURE (Jan 2024):
+      left over Substack''s handling of pro-Nazi publications. Migrated to Ghost. Statement: "if Substack can grow a publication
+      like ours that quickly, it can grow other kinds of publication, too." Schiffer left Platformer in October 2024 to join
+      Wired as Director of Business & Industry.'
     publication: platformer
-    role: eic
+    role: founder_editor
     source_url: https://www.platformer.news/
     start: 2020-11
+  - beat: Big Tech, social media platforms, AI
+    event_type: continuation
+    notes: 'Platformer on Ghost (self-hosted, open source). Solo editorial control again after Schiffer''s departure to Wired.
+      2026 strategic pivot: announced plans to focus on original reporting and scoops, reducing aggregation and link roundups,
+      to compete with AI. "We''re betting that the value in tech journalism is moving away from aggregation and predictability
+      and toward original reporting and surprise." Nieman Lab (Apr 29, 2026) profiled this shift. KEY for MediaScope: the post-Substack,
+      post-Schiffer Platformer is the purest test of individual editorial framing — sole editorial control, independent platform,
+      no institutional employer. Continues breaking stories: Jun 2026 scoop on OpenAI disbanding its mission alignment team
+      and transferring employees (Joshua Achiam to "chief futurist" role).'
+    publication: platformer
+    role: founder_editor
+    source_url: https://web.archive.org/web/20260429/https://www.niemanlab.org/2026/04/more-scoops-less-aggregation-and-analysis-how-casey-newton-is-revamping-his-newsletter-to-compete-with-ai/
+    start: 2024-01
+  - beat: technology, AI, platform governance
+    end: 2026-08
+    event_type: hired
+    notes: 'Co-host of "Hard Fork" with Kevin Roose, launched late September 2022 as a weekly NYT podcast about "the future that''s
+      already here." TOP 0.05% globally on Listen Notes. ~403 episodes over nearly 4 years. Video-first expansion in 2026 (hired
+      Vjeran Pavic from The Verge as editor). Hard Fork Live events (San Francisco). NOTABLE: Newton is the only non-NYT employee
+      co-hosting a major NYT podcast — he remains independent (Platformer) while co-hosting under the NYT brand. ENDING (Jun
+      2026): Roose announced leaving NYT in August 2026 to start a new independent media venture with Newton focused on AI.
+      Hard Fork ending as an NYT show. KEY for MediaScope: Newton will co-host a show with Roose outside institutional control
+      — an independent AI journalism venture that removes the last NYT editorial oversight from his work.'
+    publication: nytimes
+    role: podcast_cohost
+    source_url: https://nytco.com/press/hard-fork-live-returns-to-the-stage-on-june-10/
+    start: 2022-09
   name: Casey Newton
-  notes: 'Key departure: The Verge → independent (Platformer). Tests what happens when a journalist leaves institutional control
-    entirely.'
+  notes: 'Born June 19, 1980, La Habra, California. Northwestern University Medill School of Journalism (BSJ, 2002). Editor
+    of Sonora High School paper. Worked at The Daily Northwestern starting sophomore year. Gay, lives in San Francisco. Engaged
+    (announced Feb 2026 on Hard Fork) — fiancé works at Anthropic. Social: @CaseyNewton (X), @crumbler (Instagram/Threads).
+    Speaker rep: Leigh Bureau. KEY CAREER ARC: Arizona Republic political reporter → SF Chronicle tech → CNET → The Verge (7.5
+    years, Silicon Valley editor) → Platformer (independent, Oct 2020). 2020 National Magazine Award finalist for content moderation
+    investigation that led to $52M Facebook/Cognizant settlement. Co-hosts Hard Fork (NYT, ending Aug 2026) with Kevin Roose
+    — launching independent AI-focused show together. KEY for MediaScope: Newton is the single most important test case for
+    individual vs. institutional framing. Career spans: institutional daily newspaper (Arizona Republic, Chronicle), institutional
+    digital media (CNET, The Verge/Vox), independent newsletter (Platformer/Substack, then Ghost), and hybrid (NYT podcast while
+    independent). Each transition strips one layer of institutional editorial control. His content moderation investigation shows
+    he can produce accountability journalism against Meta without institutional backing. His Anthropic engagement creates a personal
+    conflict disclosure obligation that mainstream outlets would require — tests whether independent journalists hold themselves
+    to the same standard. The Roose/Newton independent venture (post-Aug 2026) will be the first fully independent AI journalism
+    operation at scale, with no institutional editorial oversight from either host.'
 - career:
   - beat: local news
     end: 2015-12
@@ -766,17 +860,21 @@ journalists:
       AI interaction of the year. Published ''Futureproof: 9 Rules for Humans in the Age of Automation'' (2021). Currently
       writing ''The AGI Chronicles'' (coming 2026) on the race to build artificial general intelligence. Forbes ''30 Under
       30.'' Part of team that won 2018 Gerald Loeb Award for breaking news. Regular guest on ''The Daily'' podcast and CNBC.
-      Lives in Oakland, CA. Education: Brown University.'
+      Lives in Oakland, CA. Education: Brown University. DEPARTURE (Jun 2026): Announced leaving NYT in August 2026 to start
+      an independent media venture with Casey Newton focused on AI. Hard Fork ending as NYT production after ~4 years. "Start
+      a new show together, under our own shingle."'
     publication: nytimes
     role: columnist
     source_url: https://nytco.com/press/kevin-roose-joins-biz-day/
     start: 2017-03
   name: Kevin Roose
   notes: 'NYT''s most prominent AI/technology columnist. Unique career: NYT (finance) → NYMag → Fusion TV → NYT (tech columnist).
-    Author of 3 books, 4th (AGI Chronicles) coming 2026. Co-hosts Hard Fork podcast with Casey Newton. Known for experiential
-    journalism — went undercover at Liberty University, lived as a billionaire for a day, had viral Bing Sydney AI conversation.
-    Institutional importance: ''The Shift'' column shapes public discourse on AI/automation more than almost any other single
-    journalist.'
+    Author of 3 books, 4th (AGI Chronicles) coming 2026. Co-hosts Hard Fork podcast with Casey Newton — ending Aug 2026 when
+    Roose leaves NYT. Launching independent media venture with Newton focused on AI. Known for experiential journalism — went
+    undercover at Liberty University, lived as a billionaire for a day, had viral Bing Sydney AI conversation.  Institutional
+    importance: ''The Shift'' column shapes public discourse on AI/automation more than almost any other single journalist.
+    KEY TRANSITION: Roose leaving NYT for independence mirrors Newton''s 2020 Verge departure — both testing whether individual
+    brand > institutional platform in the AI journalism era.'
 - career:
   - beat: investigative
     end: 2009-06
