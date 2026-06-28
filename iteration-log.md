@@ -4,6 +4,71 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-28 08:00 PT — Hour Type B: Journalist/Publication Research — Tripp Mickle Deep Profile + NYT Beat Reorganization
+
+**Focus:** Deep career profile expansion for Tripp Mickle (NYT) plus 2 new NYT editorial change entries tracking his beat change and the resulting Apple beat vacancy.
+**Rationale:** Mickle's profile had only 2 career entries and 162 chars of notes — among the sparsest for any active reporter at a tracked publication. This is a critical gap because since May 2025 he covers BOTH Apple AND Google/Alphabet at NYT — the two companies that represent Meta's primary hardware and advertising competitors. Understanding his framing instincts requires knowing his full career arc.
+
+### 1. Tripp Mickle Career Profile Expansion (2 → 4 entries, 162 → 1,581 chars)
+
+**Education:**
+- Wake Forest University BA (class of 2003, WFU legacy: parents '72/'74, sister/BIL both MD '10/'11)
+- Columbia University Graduate School of Journalism (MS)
+- Professor mentor: Justin Catanoso (MALS '93) at Wake Forest — "opened my eyes to the things in journalism I'd never come across"
+
+**Career Timeline (verified):**
+1. **Newsday intern (~2005):** Sportswriter intern, assigned to "Steinbrenner watch" alongside then-NYT clerk Michael S. Schmidt. Also interned at Triad Business Journal (Greensboro, NC) via Prof. Catanoso.
+2. **Sports Business Journal (2006-2014):** Staff writer, 8 years. Charlotte → Atlanta. Covered Olympics business (IOC/Dow Chemical $140-170M TOP partnership), USOC network controversies, London 2012 on-ground coverage. Also motorsports (took over from Michael Smith), soccer, hockey, action sports. Freelanced for Our State magazine (NC features).
+3. **Wall Street Journal (2014-2022):** Reporter, 8 years. Atlanta → San Francisco. Initially "sin beat" (bourbon shortages, beer M&A, vaping, heavy metal whiskey investigations). Transitioned to tech: Apple (Ive departure, Cook-Trump ties, "the Blevinator"), Google, Elon Musk. Coined "culture of corporate omertà" phrase. Appeared on CNBC, NPR.
+4. **New York Times (May 2022-present):** Tech reporter. Hired with Nico Grant by Pui-Wing Tam. Initially Apple-only. Published "After Steve" (William Morrow, May 2022, 512pp, 200+ interviews, WaPo praised as "engrossing"). Added Nvidia and AI business (~2024). Epic v. Apple contempt investigation (May 2025). **Beat change May 2025:** took over Google/Alphabet after Nico Grant departed journalism. Continues Apple temporarily. Also covers Nvidia and AI business. Covered Meta Arena/Polymarket story (June 2026).
+
+**Biographical:** From Charlotte, NC. Lives in San Francisco with wife and German shorthaired pointer. #GoDeacs. Email: tripp.mickle@nytimes.com.
+
+### 2. NYT Editorial Changes (+2 entries)
+
+**Mickle Google/Alphabet beat change (May 2025):**
+- Concentrated coverage power: single reporter covering $4.7T+ market cap across Apple + Google
+- NYT's framing of BOTH Meta competitors now flows through one reporter's source network and editorial instincts
+- Watch for "operations eclipsed creativity" thesis migrating from Apple to Google coverage
+
+**Apple reporter vacancy (April 2025):**
+- NYT posted job listing April 24, 2025 (SF-based, Guild, 7+ years required)
+- No public hire announcement as of June 2026
+- Leaves NYT without a dedicated Apple reporter during the Apple/Meta glasses competition era
+- Mickle's bandwidth across Apple + Google + Nvidia creates coverage depth constraints
+
+### 3. Analytical Value
+
+Mickle's unique career arc — sports-business (8 yrs, IOC sponsorships/broadcast rights) → "sin beat" (regulated consumer products/supply chains) → tech (Apple/Google/Nvidia) — gives him unusually strong financial literacy for a tech reporter. He reads supply chains and corporate deal structures the way sports business reporters read broadcast contracts. This makes his coverage more focused on margin economics and corporate strategy than typical tech correspondents.
+
+The "culture of corporate omertà" phrase is his signature and has been adopted widely in Apple journalism. His "After Steve" thesis (innovation lost to operational excellence) is a recurring framing device — critical to monitor as it may now color his Google coverage.
+
+### Files Modified
+- `profiles/careers/journalists.yaml`: Tripp Mickle expanded (2→4 career entries, 162→1,581 chars notes)
+- `profiles/careers/editorial_changes.yaml`: +2 NYT entries (Mickle beat change + Apple vacancy)
+- `iteration-log.md`: this entry
+
+### Sources
+- Sonoma Valley Authors Festival bio: `https://svauthorsfest.org/tripp-mickle/`
+- Wake Forest Magazine interview: `https://magazine.wfu.edu/` (class of '03 confirmed)
+- Editor & Publisher NYT hire: `https://editorandpublisher.com/stories/new-york-times-technology-welcomes-two-new-team-members,220802`
+- TalkingBizNews beat change: `https://talkingbiznews.com/they-move/mickle-to-take-on-google-alphabet-beat-at-ny-times/`
+- TalkingBizNews Apple vacancy: `https://talkingbiznews.com/they-re-hiring/ny-times-seeks-a-reporter-to-cover-apple/`
+- NYT internal interview (Ocampo): `https://talkingbiznews.com/media-news/how-nyts-mickle-approaches-the-apple-beat/`
+- SBJ editorial changes: `https://sportsbusinessjournal.com` (multiple byline archives)
+- Our State magazine: `https://ourstate.com` (author page, NC features)
+- Kirkus Reviews: After Steve review
+- Muck Rack profile: verified beats and bio
+- 9to5Mac book review: After Steve analysis
+- Audible author page: book narration details (Will Damron, 14h42m)
+
+**Commit:** `38dfe80` — pushed to main
+
+### Tests
+- 751 passed, 0 failed (unchanged — data-only changes, no code modifications)
+
+---
+
 ## 2026-06-28 07:00 PT — Hour Type A: Article Deep Dive — Kotaku Sardonic Framing Gap
 
 **Article:** Kotaku — "Mark Zuckerberg Looking To Start His Own Polymarket Rival" (Jun 28, 2026)
