@@ -5313,6 +5313,6 @@ Fast Company: "Meta reverses decision to reassign employees to AI training roles
 All 660 tests pass (0 regressions). New trend_bundling correctly fires on Fast Company article (4 markers), correctly suppressed on NYT AI reviews article (factual enumeration, not bundling).
 
 ### Commit
-(see below)
+`5513ceb`
 
 ---
