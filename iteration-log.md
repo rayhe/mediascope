@@ -4,6 +4,65 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 19:00 PT — Hour Type D: Toolkit Quality & Documentation — Doc/Code Sync Audit
+
+**Focus:** Systematic audit and fix of documentation drift across all doc files, CLI, README, and structural consistency tests.
+**Rationale:** New features (confession_framing framing device, government_oversight topic bucket) were added to code and tests but not propagated to all documentation surfaces. The structural consistency test had a stale CLI assertion that masked the framing count drift.
+
+### 1. Documentation Drift Identified and Fixed
+
+Six drift instances found across 4 documentation files + CLI + test:
+
+| File | Issue | Before | After |
+|---|---|---|---|
+| `docs/ARCHITECTURE.md` | Extended framing device count | 19 | 20 (adds `confession_framing`) |
+| `docs/ARCHITECTURE.md` | Topic bucket count | 12 | 13 (adds `government_oversight`) |
+| `docs/ARCHITECTURE.md` | Test file count | 26 | 27 |
+| `docs/ARCHITECTURE.md` | Test count | 656 | 660 |
+| `docs/METHODOLOGY.md` | Topic bucket count (§3.1) | 12 | 13 |
+| `docs/METHODOLOGY.md` | Framing taxonomy reference (§13.2) | "31-type taxonomy" | "33-type taxonomy" |
+| `docs/AGENT_GUIDE.md` | classify_topic schema topic count | 12 | 13 |
+| `mediascope/cli.py` | analyze docstring framing count | "32 types" | "33 types" |
+
+### 2. Missing Test File Documentation
+
+7 test files were present in the repo but not listed in ARCHITECTURE.md's directory tree:
+- `test_confession_framing.py` (31 tests) — confession framing device detection
+- `test_government_oversight_topic.py` (15 tests) — government_oversight topic bucket
+- `test_jun27_regression.py` (9 tests) — Jun 27 regression fixes
+- `test_mittr_anthropic_feud.py` (25 tests) — MIT TR Anthropic feud article analysis
+- `test_postpass_activation.py` (32 tests) — post-pass device activation thresholds
+- `test_precedent_analogy.py` (22 tests) — precedent analogy framing + entity detection
+- `test_structural_consistency.py` (17 tests) — structural consistency guards
+
+All 7 added to ARCHITECTURE.md directory listing with descriptive annotations.
+
+README test table updated: `test_confession_framing.py` and `test_precedent_analogy.py` added (were missing from the 27 listed).
+
+### 3. New Structural Consistency Guards
+
+Added `TestTopicBucketConsistency` class to `test_structural_consistency.py` with 4 guards:
+- `test_topic_count_in_code` — verifies `TOPIC_KEYWORDS` has exactly 13 entries
+- `test_methodology_topic_count` — METHODOLOGY.md says "13 topic buckets"
+- `test_agent_guide_topic_count` — AGENT_GUIDE.md says "13 topic buckets"
+- `test_architecture_topic_count` — ARCHITECTURE.md says "13 topic buckets"
+
+These parallel the existing `TestDocCountConsistency` guards for framing device counts. Future topic additions will now fail CI if docs aren't updated.
+
+Also fixed the CLI framing count assertion: `test_cli_analyze_device_count` now checks for "33 types" (was checking for stale "32 types").
+
+### 4. Test Suite Growth
+
+- Before: 656 tests across 26 test files (per documentation; actual was 27 files)
+- After: 660 tests across 27 test files (+4 topic count guards)
+- All 660 passing
+
+### Root Cause Analysis
+
+The drift happened because `confession_framing` and `government_oversight` were added in Type A iterations that focused on article analysis and code changes. The doc updates for those iterations updated METHODOLOGY.md §4 (where framing counts live in prose) but missed the parallel references in ARCHITECTURE.md, AGENT_GUIDE.md, and the CLI docstring. The structural consistency test only guarded framing counts at the code and top-level doc level — not the CLI docstring or topic counts. Now both are guarded.
+
+---
+
 ## 2026-06-27 18:00 PT — Hour Type C: Ownership & Funding Deep Dive — Wired/Advance Publications Update
 
 **Publication:** Wired (via Advance Publications / Condé Nast)
