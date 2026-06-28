@@ -1,0 +1,22 @@
+Google limits Meta's use of its Gemini AI models, FT reports
+
+Reuters
+June 28, 2026
+
+Google has limited Meta's use of its Gemini artificial intelligence models after the Facebook parent sought more computing capacity than the company could provide, the Financial Times reported on Sunday.
+
+Google, owned by Alphabet, told Meta around March that it could not meet the full Gemini capacity the social media company had sought to purchase, the newspaper reported, citing people familiar with the matter.
+
+The shortfall disrupted and delayed some of Meta's internal AI projects, according to the report.
+
+Several other Google customers have also been affected, though to a lesser extent, the Financial Times said. Meta has been particularly affected because of its exceptionally high demand for Google's AI models, the newspaper added.
+
+Reuters could not immediately verify the report. Google and Meta did not immediately respond to requests for comment outside regular business hours.
+
+Meta has encouraged employees to use AI tokens more efficiently following the restrictions, according to the report. Tokens are units used to measure AI usage.
+
+The reported constraints highlight ongoing pressure on technology companies as demand for AI services continues to rise, despite billions of dollars in spending on chips and data centres.
+
+Google Cloud reported revenue of $20 billion for the quarter ended March. Chief Executive Sundar Pichai said constraints in computing capacity had prevented stronger growth and contributed to a cloud backlog that nearly doubled from the previous quarter.
+
+Technology companies have continued expanding AI infrastructure, but many are still facing challenges securing sufficient computing power to support rapidly increasing demand.
