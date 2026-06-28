@@ -516,6 +516,39 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"fig\s+leaf)\b",
         re.IGNORECASE,
     ),
+    # Ad hominem / character diminishment — personal characterizations
+    # that undermine a subject's credibility or seriousness through
+    # caricature rather than argument.  Distinct from analogy/diminishment
+    # (which compares entities to children/naive actors) — this targets
+    # personal attributes, physical descriptions, or social stereotypes.
+    #
+    # Identified as a gap in AV Club Meta Arena analysis (Jun 27, 2026):
+    #   - "gormless tech bros" — stereotype characterization
+    #   - "lumbering behemoth" — animalistic size-based dismissal
+    #   - "dopamine-seekers" — neuroscience-loaded user characterization
+    #   - "frequently sidelined wallflower" — diminishment through social metaphor
+    re.compile(
+        r"\b(?:tech\s+bro(?:s|ther)?|bro\s+culture|"
+        r"gormless|bumbling|clueless|hapless|inept|"
+        r"wallflower|boy.?king|man.?child|"
+        r"lumbering|bloated|"
+        r"dopamine.?seeker|attention.?seeker|"
+        r"acolytes?|sycophants?|lackeys?|"
+        r"megalomania(?:c|cal)?|narcissis(?:t|tic)|"
+        r"sociopath(?:ic)?)\b",
+        re.IGNORECASE,
+    ),
+    # Industry-as-vice framing — characterizing legitimate businesses
+    # or product categories as inherently predatory, addictive, or
+    # criminal through loaded categorical nouns
+    re.compile(
+        r"\b(?:(?:gambling|betting)\s+addict(?:s|ion)?|"
+        r"their\s+scams?|these?\s+scams?|"
+        r"(?:unquenchable|insatiable|omnidirectional)\s+(?:\w+\s+)?addiction|"
+        r"(?:hook(?:s|ed|ing)\s+(?:into|on|in))|"
+        r"sinking\s+(?:their|its)\s+hooks?\s+into)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 
@@ -2011,6 +2044,49 @@ _SARCASTIC_CORRECTION_PATTERNS: list[re.Pattern] = [
         r"problem solved|crisis averted|nothing to see here|"
         r"move along|all is well|everything is fine|"
         r"what could (?:possibly )?go wrong)\b",
+        re.IGNORECASE,
+    ),
+    # ---------------------------------------------------------------------------
+    # Ironic denial / mock-certainty: writer deploys exaggerated certainty
+    # or denials that clearly mean the opposite.  The technique relies on
+    # context making the literal reading absurd, so the reader infers sarcasm.
+    #
+    # Identified as a gap in AV Club Meta Arena analysis (Jun 27, 2026):
+    #   - "presumably has absolutely nothing to do with" — ironic denial
+    #   - "who we're sure are just thrilled" — mock-certainty/sympathy
+    #   - "You know, like how humans talk!" — post-quote sarcastic deflation
+    # ---------------------------------------------------------------------------
+    # "presumably / surely / undoubtedly + nothing to do with / no connection"
+    re.compile(
+        r"\b(?:presumably|surely|undoubtedly|certainly|"
+        r"obviously|of course|clearly|naturally)\s+"
+        r"(?:has\s+)?(?:absolutely\s+)?(?:nothing\s+to\s+do\s+with|"
+        r"no\s+(?:connection|relation|link|bearing)\s+(?:to|on|with)|"
+        r"(?:(?:is|are)\s+)?(?:entirely|completely|totally)\s+(?:unrelated|coincidental))\b",
+        re.IGNORECASE,
+    ),
+    # "we're sure / I'm sure + [positive claim]" — mock-certainty about
+    # something the reader knows is false or ironic
+    re.compile(
+        r"\b(?:we.re|I.m|they.re|he.s|she.s)\s+sure\s+"
+        r"(?:(?:that\s+)?(?:they|he|she|it|the|this|everyone)\s+)?"
+        r"(?:(?:are|is|will be|would be)\s+)?(?:just\s+)?(?:thrilled|delighted|"
+        r"overjoyed|ecstatic|happy|pleased|fine|great|wonderful)\b",
+        re.IGNORECASE,
+    ),
+    # "You know, like how [X]" — post-quote sarcastic aside, deflating
+    # the preceding quoted material by comparing to absurd normal
+    re.compile(
+        r"\b(?:You know,?\s+like how|"
+        r"You know,?\s+the way|"
+        r"Like (?:you|one|we) (?:do|does?)|"
+        r"As (?:one|you) (?:does?|do))\b",
+        re.IGNORECASE,
+    ),
+    # "a fact that presumably / which presumably / which surely"
+    re.compile(
+        r"\ba fact (?:that|which)\s+(?:presumably|surely|undoubtedly|"
+        r"obviously|certainly|clearly)\b",
         re.IGNORECASE,
     ),
 ]

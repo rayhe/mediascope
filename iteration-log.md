@@ -5316,3 +5316,40 @@ All 660 tests pass (0 regressions). New trend_bundling correctly fires on Fast C
 `5513ceb`
 
 ---
+
+## 2026-06-27 22:00 PT — Type A: AV Club Sardonic Framing Deep Dive
+
+### Focus
+Cross-publication stress test: AV Club "Mark Zuckerberg thinks Meta isn't doing enough to cater to gambling addicts" (2026-06-27). The AV Club uses sardonic, pop-culture-inflected editorial voice distinct from MediaScope's 5 tracked broadsheet publications — ideal for testing whether framing detection generalizes beyond prestige-press rhetoric.
+
+### Key Finding
+Pre-fix, only 6 framing devices detected (all `ironic_quotation`), with a misleadingly positive sentiment score (0.6283) for a heavily sardonic article. Post-fix: 16 devices across 3 types (167% improvement). Sentiment gap noted but deferred — it's a lexicon-based limitation that requires sarcasm-aware polarity inversion.
+
+### Improvements
+
+**New sarcastic_correction sub-patterns (3):**
+1. Ironic denial: "presumably has absolutely nothing to do with" — `adverb + nothing to do with / no connection / entirely unrelated`
+2. Mock-certainty: "we're sure are just thrilled" — `we're sure / I'm sure + positive adjective` (ironic faux-confidence)
+3. Post-quote sarcastic aside: "You know, like how humans talk!" — `You know, like how + clause`
+
+**New loaded_language sub-categories (2):**
+1. Ad hominem / character diminishment: tech bros, gormless, wallflower, lumbering, megalomania, hubris
+2. Industry-as-vice: their scams, gambling addiction, sinking their hooks into
+
+**Regex fix:** Made `(?:is|are)` optional in ironic denial pattern to handle both "obviously is entirely unrelated" and "obviously entirely unrelated" word orders.
+
+### Files Changed
+- `mediascope/analyze/framing.py` — 3 sarcastic_correction sub-patterns + 2 loaded_language sub-categories + ironic denial regex fix
+- `tests/test_avclub_sardonic_framing.py` — NEW: 34 tests across 9 classes (article integration + isolated unit tests)
+- `examples/sample_output/avclub_meta_arena_gambling_2026_06_27_article.txt` — raw article text
+- `examples/sample_output/avclub_meta_arena_gambling_2026_06_27_analysis.md` — full annotation
+- `docs/ARCHITECTURE.md` — test count 660→694, 27→28 test files
+- `README.md` — test count 660→694, 27→28 test files, new test file entry, structural consistency description fix (33→34)
+
+### Test Results
+All 694 tests pass (34 new, 660 existing, 0 regressions).
+
+### Commit
+(see below)
+
+---
