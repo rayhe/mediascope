@@ -466,7 +466,7 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
 ```json
 {
     "name": "classify_topic",
-    "description": "Classify an article into standardized topic buckets using keyword-based matching with confidence scoring. Returns TopicScore objects with topic name, confidence (0.0-1.0), and matched keywords. Articles can match multiple topics; the top 3 by confidence are retained. 13 topic buckets: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, workplace_culture, government_oversight.",
+    "description": "Classify an article into standardized topic buckets using keyword-based matching with confidence scoring. Returns TopicScore objects with topic name, confidence (0.0-1.0), and matched keywords. Articles can match multiple topics; the top 3 by confidence are retained. 15 topic buckets: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, prediction_markets, corporate_strategy, workplace_culture, government_oversight.",
     "parameters": {
         "type": "object",
         "properties": {

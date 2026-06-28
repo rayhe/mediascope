@@ -173,10 +173,10 @@ class TestTopicBucketConsistency:
     """Guard: topic bucket counts match across code and docs."""
 
     def test_topic_count_in_code(self):
-        """Code should define exactly 13 topic buckets."""
+        """Code should define exactly 15 topic buckets."""
         from mediascope.analyze.topics import TOPIC_KEYWORDS
-        assert len(TOPIC_KEYWORDS) == 13, (
-            f"Expected 13 topic buckets, got {len(TOPIC_KEYWORDS)}.\n"
+        assert len(TOPIC_KEYWORDS) == 15, (
+            f"Expected 15 topic buckets, got {len(TOPIC_KEYWORDS)}.\n"
             f"Buckets: {sorted(TOPIC_KEYWORDS.keys())}\n"
             "If you added a new topic, update this test AND the docs:\n"
             "  - docs/METHODOLOGY.md §3.1 topic count and table\n"
@@ -185,24 +185,24 @@ class TestTopicBucketConsistency:
         )
 
     def test_methodology_topic_count(self):
-        """METHODOLOGY.md must say 13 topic buckets."""
+        """METHODOLOGY.md must say 15 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
-        assert "13 topic buckets" in doc, (
-            "METHODOLOGY.md topic count is stale. Should be 13."
+        assert "15 topic buckets" in doc, (
+            "METHODOLOGY.md topic count is stale. Should be 15."
         )
 
     def test_agent_guide_topic_count(self):
-        """AGENT_GUIDE.md must list 13 topic buckets."""
+        """AGENT_GUIDE.md must list 15 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
-        assert "13 topic buckets" in doc, (
-            "AGENT_GUIDE.md topic count is stale. Should be 13."
+        assert "15 topic buckets" in doc, (
+            "AGENT_GUIDE.md topic count is stale. Should be 15."
         )
 
     def test_architecture_topic_count(self):
-        """ARCHITECTURE.md must say 13 topic buckets."""
+        """ARCHITECTURE.md must say 15 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
-        assert "13 topic buckets" in doc, (
-            "ARCHITECTURE.md topic count is stale. Should be 13."
+        assert "15 topic buckets" in doc, (
+            "ARCHITECTURE.md topic count is stale. Should be 15."
         )
 
 

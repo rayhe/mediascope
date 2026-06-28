@@ -1063,6 +1063,37 @@ def _compute_framing_correction(
         corrected = max(-0.2, min(raw_tone, round(corrected, 4)))
         return corrected, True
 
+    # --- Path D: Sardonic/mocking framing ---
+    # Active agency + overwhelmingly negative loaded language = article
+    # describes someone actively pursuing something but frames the pursuit
+    # as foolish, futile, or contemptible.  VADER reads active positive
+    # words literally ("looking to start," "booming," "interesting") while
+    # missing the editorial contempt conveyed entirely through loaded
+    # language ("ethically rancid," "failed metaverse," "search for a
+    # win," "AI slop").
+    #
+    # Key distinguishing signal: loaded_language dominance.  In sardonic
+    # pieces, loaded_language typically accounts for >70% of all adversarial
+    # devices — the writer isn't using structural framing (juxtaposition,
+    # kicker, isolation) but raw contemptuous word choice.
+    #
+    # Discovered in Kotaku Meta Arena article (Jun 28, 2026) where VADER
+    # scored +0.68 on a manually-assessed -0.55 to -0.65 piece.
+    _SARDONIC_MIN_LOADED = 7    # very high loaded language count
+    _SARDONIC_MIN_ADVERSARIAL = 8  # overall adversarial count
+    loaded_count = framing_summary.get("loaded_language", 0)
+    if (
+        raw_tone >= 0.3
+        and agency >= 0.3          # positive agency (contrast to Path A)
+        and loaded_count >= _SARDONIC_MIN_LOADED
+        and adversarial_count >= _SARDONIC_MIN_ADVERSARIAL
+    ):
+        density_factor = min(adversarial_count / 10.0, 1.0)
+        sardonic_tone = -(0.40 + 0.25 * density_factor)
+        corrected = 0.10 * raw_tone + 0.90 * sardonic_tone
+        corrected = max(-1.0, min(0.0, round(corrected, 4)))
+        return corrected, True
+
     return raw_tone, False
 
 

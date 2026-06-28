@@ -141,7 +141,7 @@ More coverage ≠ more bias. We normalize by:
 
 ### 3.1 Standardized Topic Buckets
 
-Articles are classified into 13 topic buckets to enable apples-to-apples comparison:
+Articles are classified into 15 topic buckets to enable apples-to-apples comparison:
 
 | Topic | Keywords |
 |---|---|
@@ -156,12 +156,14 @@ Articles are classified into 13 topic buckets to enable apples-to-apples compari
 | `product_launch` | launch, release, announce, unveil, new feature, update, rollout, beta |
 | `executive_behavior` | CEO, executive, leadership, management, culture, workplace, internal |
 | `litigation` | lawsuit, sued, settlement, verdict, court, judge, plaintiff, damages |
+| `prediction_markets` | prediction market, Polymarket, Kalshi, betting, gambling, wagering, event contract, CFTC, binary option |
+| `corporate_strategy` | acquisition, merger, M&A, partnership, diversification, pivot, market entry, rival, competitive, spin-off |
 | `workplace_culture` | morale, employee morale, burnout, attrition, retention, toxic culture, internal revolt, soul-crushing, return to office, disgruntled |
 | `government_oversight` | national security, export controls, classified, embargo, sanctions, nonproliferation, Pentagon, policymakers, lawmakers, AI regulation, military AI |
 
 Classification uses keyword matching with TF-IDF weighting. An article can match multiple topics; the top 3 by confidence are retained.
 
-**Note on topic design:** The 13 buckets are designed for apples-to-apples comparison within a topic across companies. The `ai_generated_content` topic captures coverage of AI output quality and generative AI byproducts, distinct from `ai_development` (technology creation). The `workplace_culture` topic captures internal organizational dynamics (morale, burnout, culture), distinct from `layoffs` (formal workforce actions) and `executive_behavior` (leadership decisions).
+**Note on topic design:** The 15 buckets are designed for apples-to-apples comparison within a topic across companies. The `ai_generated_content` topic captures coverage of AI output quality and generative AI byproducts, distinct from `ai_development` (technology creation). The `workplace_culture` topic captures internal organizational dynamics (morale, burnout, culture), distinct from `layoffs` (formal workforce actions) and `executive_behavior` (leadership decisions). The `prediction_markets` topic captures coverage of betting/wagering platforms and event contracts, distinct from `financial_results` (earnings/market performance). The `corporate_strategy` topic captures M&A, partnerships, and market entry decisions, distinct from `product_launch` (specific releases).
 
 ## 4. Framing Device Detection
 

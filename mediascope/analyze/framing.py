@@ -129,7 +129,7 @@ _CATASTROPHIZING_PATTERNS: list[re.Pattern] = [
     ),
     re.compile(
         r"\b(?:nightmare|nightmarish|horror|terrifying|apocalyptic|"
-        r"cataclysmic|seismic shift|tectonic shift)\b",
+        r"armageddon|cataclysmic|seismic shift|tectonic shift)\b",
         re.IGNORECASE,
     ),
     # "cultural dead end" / "dead end" as terminal-trajectory framing
@@ -330,6 +330,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"comically|laughably|absurdly|laughable|"
         r"dishonest|dishonesty|fundamentally\s+(?:dishonest|unethical|flawed|problematic)|"
         r"deceptive|misleading|disingenuous|"
+        r"exploitative|dubious|rancid|sordid|"
         r"unprecedented\s+(?:\w+\s+)?(?:breach|breaches|violation|exposure|threat|risk|danger|harm|crisis|failure))\b",
         re.IGNORECASE,
     ),
@@ -513,6 +514,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"parlor\s+trick|party\s+trick|"
         r"hand.?wav(?:ing|y)|smoke\s+and\s+mirrors|"
         r"window\s+dressing|lip\s+service|"
+        r"AI\s+slop|"
         r"fig\s+leaf)\b",
         re.IGNORECASE,
     ),
@@ -547,6 +549,33 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"(?:unquenchable|insatiable|omnidirectional)\s+(?:\w+\s+)?addiction|"
         r"(?:hook(?:s|ed|ing)\s+(?:into|on|in))|"
         r"sinking\s+(?:their|its)\s+hooks?\s+into)\b",
+        re.IGNORECASE,
+    ),
+    # Past-failure anchoring — opening or characterizing a subject by
+    # leading with their prior failures.  "Fresh off a failed X",
+    # "after a disastrous X", "following the collapse of" — anchors
+    # the reader's frame before any facts are presented.
+    re.compile(
+        r"\b(?:fresh off (?:a |the )?(?:failed|disastrous|botched|bungled|doomed)|"
+        r"(?:huge|massive|total|complete|spectacular|colossal|epic)\s+bust|"
+        r"(?:failed|botched|bungled|doomed)\s+(?:metaverse|pivot|rebrand|launch|venture|experiment|gambit)|"
+        r"search for (?:a |another )?win|"
+        r"chasing (?:the next|another|yet another) (?:trend|fad|gimmick)|"
+        r"desperate (?:attempt|bid|gambit|pivot|search))\b",
+        re.IGNORECASE,
+    ),
+    # Standalone vice/gambling reframing — using "gambling" as a verb
+    # or gerund to characterize non-gambling activities (prediction markets,
+    # trading, investing) as morally equivalent to casino betting.
+    # Distinct from "gambling addiction" (above) — catches stand-alone
+    # editorial reframing: "gambling over anything", "into gambling",
+    # "gamble on", "gambled away".
+    re.compile(
+        r"\b(?:gambling\s+over\s+(?:anything|everything)|"
+        r"(?:into|towards?|embracing)\s+gambling|"
+        r"gambled?\s+away|"
+        r"wagered?\s+away|"
+        r"betting\s+(?:over|on)\s+(?:anything|everything))\b",
         re.IGNORECASE,
     ),
 ]
