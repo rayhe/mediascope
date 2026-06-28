@@ -390,8 +390,8 @@ editorial_changes:
       ending as an NYT production after ~4 years (~403 episodes, TOP 0.05% globally). Newton was never an NYT employee — he
       co-hosted while remaining independent (Platformer). Roose: "start a new show together, under our own shingle." Significant
       loss: Hard Fork was NYT''s most popular tech podcast and a major audience bridge to the tech-insider demographic that
-      doesn''t typically read NYT. The independent Roose/Newton AI venture creates a competitor in the AI journalism space that
-      combines Roose''s NYT institutional credibility with Newton''s independent platform audience.'
+      doesn''t typically read NYT. The independent Roose/Newton AI venture creates a competitor in the AI journalism space
+      that combines Roose''s NYT institutional credibility with Newton''s independent platform audience.'
     outgoing: Kevin Roose, Casey Newton (external co-host)
     position: hard_fork_podcast
     source_url: https://talkingbiznews.com/they-move/tech-columnist-roose-departing-ny-times/
@@ -410,6 +410,31 @@ editorial_changes:
     outgoing: null
     position: silicon_valley_correspondent
     source_url: https://nytco.com/press/staff-news-from-business/
+  - date: 2025-05
+    incoming: Tripp Mickle
+    notes: 'BEAT CHANGE: Mickle took over Google/Alphabet beat from Nico Grant (departed May 2025). Will continue covering
+      Apple until a replacement is found — effectively running TWO major tech company beats simultaneously. Also covers Nvidia
+      and AI business. Previously Apple-only reporter since joining NYT in May 2022. His dual-beat role means NYT''s coverage
+      of both Google and Apple — Meta''s two primary competitors — flows through a single reporter''s source network and editorial
+      framing. Author of ''After Steve'' (2022), which established his ''innovation vs operations'' thesis for Apple. ANALYTICAL
+      VALUE: Concentrated coverage power — a single reporter covering $4.7T+ in market cap across two companies and shaping
+      NYT''s framing of both. Watch for whether his Apple ''lost its soul to operations'' lens migrates to Google coverage.'
+    outgoing: null
+    position: technology_reporter_google_apple
+    source_url: https://talkingbiznews.com/they-move/mickle-to-take-on-google-alphabet-beat-at-ny-times/
+  - date: 2025-04
+    incoming: null
+    notes: 'OPEN POSITION: NYT posted job listing for Apple reporter (April 24, 2025) after Mickle''s transition to Google/Alphabet
+      beat. San Francisco-based, Guild position, 7+ years tech beat experience required. Job description: ''cover Apple —
+      the tech giant that is a nation-state unto its own.'' Requires ''proven ability to break news, spot trends, develop
+      sources and produce deeply reported features.'' Reports to a Business Editor. Apple beat was previously held by Mickle
+      (2022-2025), who now covers it temporarily alongside Google. As of Jun 2026, no public hire announcement found — the
+      position may still be open. ANALYTICAL VALUE: The Apple beat vacancy leaves NYT without a dedicated Apple reporter during
+      the critical Apple/Meta glasses competition era. If unfilled, Mickle''s bandwidth constraints will determine the depth
+      of NYT''s Apple vs Meta hardware coverage.'
+    outgoing: null
+    position: technology_reporter_apple_open
+    source_url: https://talkingbiznews.com/they-re-hiring/ny-times-seeks-a-reporter-to-cover-apple/
   wired:
   - date: 2012-07
     incoming: Scott Dadich
