@@ -799,7 +799,7 @@ state the parallel trends assumption and sample size limitations.
         {
             "type": "investment",
             "severity": 5,
-            "description": "Advance Publications holds 33.5% voting power in Reddit...",
+            "description": "Advance Publications holds 65.2% voting power in Reddit (83.5% of Class B shares, ~$7B)...",
             "evidence": "Reddit SEC filing"
         }
     ],

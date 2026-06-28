@@ -5634,6 +5634,6 @@ Added post-detection filter in `detect_framing_devices()`:
 All **715 tests pass** (18 new, 697 existing, 0 regressions).
 
 ### Commit
-Pending.
+`10ce0dc`
 
 ---

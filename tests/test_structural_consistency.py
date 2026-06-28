@@ -219,6 +219,11 @@ class TestTestFileListingConsistency:
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
         return set(re.findall(r"(test_\w+\.py)", doc))
 
+    def _test_files_in_readme(self) -> set[str]:
+        """Extract test file names listed in README.md test table."""
+        doc = (_REPO_ROOT / "README.md").read_text()
+        return set(re.findall(r"`(test_\w+\.py)`", doc))
+
     def test_architecture_lists_all_test_files(self):
         """Every test file on disk must appear in ARCHITECTURE.md tree."""
         on_disk = self._test_files_on_disk()
@@ -254,4 +259,77 @@ class TestTestFileListingConsistency:
         assert claimed_file_count == actual_file_count, (
             f"ARCHITECTURE.md claims {claimed_file_count} test files, "
             f"but {actual_file_count} exist on disk."
+        )
+
+    def test_readme_lists_all_test_files(self):
+        """Every test file on disk must appear in README.md test table."""
+        on_disk = self._test_files_on_disk()
+        in_readme = self._test_files_in_readme()
+        missing = on_disk - in_readme
+        assert not missing, (
+            f"Test files on disk but missing from README.md test table:\n"
+            f"  {sorted(missing)}\n"
+            "Add an entry for each missing file in the README.md Testing section."
+        )
+
+    def test_readme_has_no_phantom_test_files(self):
+        """README.md should not list test files that don't exist."""
+        on_disk = self._test_files_on_disk()
+        in_readme = self._test_files_in_readme()
+        phantom = in_readme - on_disk
+        assert not phantom, (
+            f"Test files in README.md but not on disk:\n"
+            f"  {sorted(phantom)}\n"
+            "Remove stale entries from the README.md Testing section."
+        )
+
+    def test_readme_test_count_header(self):
+        """README.md 'N tests across M test files' must match actual counts."""
+        on_disk = self._test_files_on_disk()
+        doc = (_REPO_ROOT / "README.md").read_text()
+        match = re.search(r"\*\*(\d+) tests\*\* across (\d+) test files", doc)
+        assert match, (
+            "README.md is missing the '**N tests** across M test files' header."
+        )
+        claimed_file_count = int(match.group(2))
+        actual_file_count = len(on_disk)
+        assert claimed_file_count == actual_file_count, (
+            f"README.md claims {claimed_file_count} test files, "
+            f"but {actual_file_count} exist on disk."
+        )
+
+
+class TestVotingPowerConsistency:
+    """Guard: stale Advance/Reddit voting power (33.5%) is purged from all docs."""
+
+    def test_adding_publications_no_stale_voting_power(self):
+        """ADDING_PUBLICATIONS.md must not reference stale 33.5% voting power."""
+        doc = (_REPO_ROOT / "docs" / "ADDING_PUBLICATIONS.md").read_text()
+        assert "33.5%" not in doc, (
+            "ADDING_PUBLICATIONS.md still references stale 33.5% Advance/Reddit "
+            "voting power. Should be 65.2% per 2026 proxy / Schedule 13G."
+        )
+
+    def test_agent_guide_no_stale_voting_power(self):
+        """AGENT_GUIDE.md must not reference stale 33.5% voting power."""
+        doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
+        assert "33.5%" not in doc, (
+            "AGENT_GUIDE.md still references stale 33.5% Advance/Reddit "
+            "voting power. Should be 65.2% per 2026 proxy / Schedule 13G."
+        )
+
+    def test_methodology_no_stale_voting_power(self):
+        """METHODOLOGY.md must not reference stale 33.5% voting power."""
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        assert "33.5%" not in doc, (
+            "METHODOLOGY.md still references stale 33.5% Advance/Reddit "
+            "voting power. Should be 65.2% per 2026 proxy / Schedule 13G."
+        )
+
+    def test_editorial_histories_no_stale_voting_power(self):
+        """EDITORIAL_HISTORIES.md must not reference stale 33.5% voting power."""
+        doc = (_REPO_ROOT / "docs" / "EDITORIAL_HISTORIES.md").read_text()
+        assert "33.5%" not in doc, (
+            "EDITORIAL_HISTORIES.md still references stale 33.5% Advance/Reddit "
+            "voting power. Should be 65.2% per 2026 proxy / Schedule 13G."
         )

@@ -105,7 +105,7 @@ ownership_chain:
     source_url: "https://..."
     investments:
       - entity: "Company X"
-        stake: "33.5%"
+        stake: "65.2%"
         competitive_with: ["Meta", "Google"]
         source_url: "https://..."
 
@@ -147,11 +147,11 @@ ownership_chain:
       Private media holding company. Wholly owned by the Newhouse family.
     investments:
       - entity: "Reddit"
-        stake: "33.5% voting power"
-        shares: "47,888,690 Class B"
+        stake: "65.2% total voting power"
+        shares: "42,191,092 Class B + 16,182 Class A (83.5% of Class B, 10 votes/share)"
         competitive_with: ["Meta", "Google", "X/Twitter"]
         board_seats: 2
-        ipo_gain: "~$2B"
+        stake_value: "~$7B"
         source_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance+magazine"
 ```
 
@@ -266,10 +266,11 @@ known_conflicts:
     type: "investment"
     severity: 5
     description: >
-      Advance Publications holds 33.5% voting power in Reddit via 47.9M
-      Class B shares. Reddit competes directly with Meta for user attention,
-      advertiser spend, and community engagement.
-    evidence: "Reddit 2025 Proxy Statement, Schedule 14A"
+      Advance Publications holds 65.2% total voting power in Reddit via 42.2M
+      Class B shares (83.5% of Class B, 10 votes/share) plus 16K Class A shares,
+      worth ~$7B. Reddit competes directly with Meta for user attention,
+      advertiser spend, and community engagement. 2 board seats.
+    evidence: "Reddit 2026 Proxy Statement, Schedule 13G filed Nov 14, 2024"
     source_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=reddit"
     entities_affected: ["Meta", "Google", "X/Twitter"]
 

@@ -525,7 +525,7 @@ These patterns are invisible in aggregate scores but become unmistakable in side
 
 Standard sentiment asymmetry analysis (§§1-3) measures *that* coverage is asymmetric, but cannot identify *why*. An asymmetry score tells us Wired covers Meta 0.28 points more negatively than peers — it cannot distinguish:
 
-- **Institutional bias** — Advance Publications' 33.5% Reddit stake creates financial incentive for anti-Meta coverage, and editorial culture enforces it regardless of who writes
+- **Institutional bias** — Advance Publications' 65.2% Reddit voting power creates financial incentive for anti-Meta coverage, and editorial culture enforces it regardless of who writes
 - **Individual bias** — specific journalists carry adversarial stances toward certain companies
 - **Interaction effects** — certain journalist × publication pairings amplify bias beyond what either would produce alone
 
