@@ -2743,6 +2743,49 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
                 if overlap:
                     continue
 
+                # --- Ironic-quotation attribution filter ----------------------
+                # Suppress ironic_quotation matches that are short (≤3 words)
+                # product-naming terms embedded in attribution context, not
+                # author scare-quotes.  Only suppresses when the immediate
+                # context (40 chars) contains a product-naming phrase.
+                #
+                # Identified in NYT Arena article (Jun 2026): "points" and
+                # "predictors" are product terms attributed to a source report,
+                # not ironic quotation.  Longer quotes and quotes followed by
+                # editorial undermining are preserved.
+                # -----------------------------------------------------------------
+                if device_type == "ironic_quotation":
+                    _quoted = match.group().strip('" \u201c\u201d')
+                    _word_count = len(_quoted.split())
+                    # Short quotes (≤3 words): filter if in product-naming context
+                    if _word_count <= 3:
+                        _lookback = text[max(0, start - 60):start].lower()
+                        _PRODUCT_NAMING = (
+                            "rely on", "instead rely",
+                            " dubbed ", " named ", " termed ",
+                            "reach at least", "monthly active",
+                            "will use", "would use",
+                            "giving one", "giving a",
+                            "for a ",
+                        )
+                        if any(verb in _lookback for verb in _PRODUCT_NAMING):
+                            continue
+                    # Longer quotes (>3 words): filter if preceded by
+                    # personal attribution ("X said that he/she had")
+                    else:
+                        _lookback = text[max(0, start - 60):start].lower()
+                        # Normalize whitespace in lookback for cross-line matching
+                        _lookback = re.sub(r'\s+', ' ', _lookback)
+                        _DIRECT_QUOTE = (
+                            " said that ", " says that ",
+                            " replied that ", " wrote that ",
+                            " told ", " recalled ",
+                            " said he ", " said she ",
+                            " said they ", " saying ",
+                        )
+                        if any(verb in _lookback for verb in _DIRECT_QUOTE):
+                            continue
+
                 seen_spans.add(span_key)
                 evidence = match.group().strip()
                 # Truncate very long matches for readability

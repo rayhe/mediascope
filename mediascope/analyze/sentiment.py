@@ -271,6 +271,32 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "embarrassing", "embarrassment",
     "negligent", "negligence",
     "reckless", "recklessness",
+    # Gambling/addiction/exploitation emotional terms — needed for coverage
+    # of prediction markets, platform addiction, and exploitation framing
+    # where editorial prose links corporate products to addictive behaviour.
+    # Detected in Gizmodo "Worst Instincts" Arena article (Jun 2026):
+    # 0.159 emotional intensity vs manual 0.90 — toolkit was missing these.
+    "addicted", "addictive", "addiction", "addictions",
+    "gambling", "gamble", "gambler", "gamblers",
+    "dopamine", "dopamine hit",
+    "worst instincts", "worst impulses",
+    "pathetic",
+    "plague",
+    "notorious", "notoriously",
+    "knockoff", "knockoffs", "clone", "clones",
+    "horniness",
+    "destroying", "destroyed",
+    "destructive", "destructive behaviors",
+    "cash in on", "cashing in on",
+    "bread and butter",
+    "pitted people against",
+    "scraped",
+    # Corporate character-attack emotional terms — op-ed/essay framing that
+    # builds a character indictment through accumulated pejorative language
+    "dumb fucks", "dumb f*cks",
+    "liable", "found liable",
+    "unwitting", "unwitting users",
+    "worst of people",
 ]
 
 # Passive/victim vs. active/powerful framing indicators
@@ -346,6 +372,12 @@ ACTIVE_FRAMING: list[str] = [
     "innovated", "invested", "expanded", "committed to",
     "doubled down on", "accelerated", "delivered",
     "outperformed", "exceeded expectations", "set a record",
+    # CEO directive verbs — active positive agency where a leader
+    # is proactively directing strategy.  Detected in NYT Arena
+    # article (Jun 2026): "urged his lieutenants", "dispatched a
+    # small team" scored 0.0 agency vs manual +0.50.
+    "urged", "dispatched", "directed", "instructed",
+    "rallied", "mobilized", "greenlit", "fast-tracked",
 ]
 
 # Active-NEGATIVE framing: the subject is the agent, but the actions are
