@@ -4,6 +4,83 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-27 23:00 PT — Hour Type B: Journalist/Publication Research — Matteo Wong Deep Profile + Atlantic Editorial Changes
+
+**Focus:** Deep career profile expansion for Matteo Wong (The Atlantic's lead AI voice) plus 2 new editorial change entries.
+**Rationale:** Wong's existing profile had only 3 sparse career entries and a 2-line notes field despite being The Atlantic's most prolific AI byline. His body of work — especially Meta coverage — is critical for MediaScope's framing analysis. Also discovered untracked Oct 2025 Atlantic editorial hires (Paul Beckett from WSJ, Yvonne Wingett Sanchez from WaPo).
+
+### 1. Matteo Wong Career Profile Expansion
+
+Expanded from 3 career entries + 2-line notes → 4 detailed career entries + comprehensive framing analysis.
+
+**Education & Early Career:**
+- Harvard University BA in History and Literature (class of 2022, `@histlit '22`)
+- Harvard Crimson: writer → associate magazine editor → magazine chair of Fifteen Minutes (the weekly magazine)
+- Co-hosted "Under Review" podcast about Harvard diversity reviews spanning 40 years — systemic-critique instinct predating AI coverage
+- Contributed to Harvard Magazine (~2020): university affairs, policing, public health
+- Poynter: wrote about POC experience in predominantly white media organizations
+- Twitter/X: @matteo_wong
+
+**Atlantic Career Timeline (verified):**
+1. Assistant editor, science/tech/health (June 2022) — hired straight from Harvard
+2. Associate editor (intermediate, pre-2024)
+3. Staff writer (announced ~April 2024, announced by deputy editor Paul Bisceglio alongside Ali Breland hire)
+
+**Body of Work Catalogued (8 categories):**
+
+| Category | Key Pieces | Meta Relevance |
+|---|---|---|
+| Platform AI exposés | Grok series (Holocaust, racism, "good races," erotic), Friend wearable, OpenAI teen problem, Moltbook | High — adversarial framing on platform AI harms |
+| AI industry analysis | "The GPT Era Is Already Ending" (Dec 2024), ARC-AGI/Chollet, Pangram AI detection | Medium — benchmarking skepticism applies to Meta's Llama |
+| AI safety/policy | "AI Has Broken Containment" (May 2026), Trump seizes AI companies, Claude Mythos | Medium — regulatory framing intersects with Meta |
+| Company profiles | Anthropic "superego," "Anthropic's Little Brother," "When Claude Met Claude" | Comparative — Anthropic gets sympathetic framing vs Meta |
+| **Meta-specific** | **"Meta Swears This Time Is Different" (Jul 2025)** — FAIR history, Llama 4 failure, Zuckerberg-as-follower | **CRITICAL — definitive Wong/Meta piece** |
+| Altman-Musk trial | "Sure Dislike Each Other," "Musk Gets a Reality Check" | Low — mostly OpenAI/xAI |
+| Culture/art | AI vs Ted Chiang debate (Sep 2024), Terence Tao Q&A (Oct 2024) | Low |
+| AI policy | Trump AI Action Plan, White House vs Anthropic export controls (Jun 2026) | Medium — national security/AI intersection |
+
+**Framing Signature Analysis:**
+- **Institutional critique with consumer harm focus** — less technical skepticism than Will Knight (20+ years on AI beat), more political-structural analysis
+- Grok coverage is the most adversarial in his portfolio (multiple pieces on racism, anti-Semitism)
+- **Meta coverage focuses on AI race failure narrative** — Zuckerberg-as-reactive-not-visionary, FAIR-as-wasted-potential
+- **Anthropic gets notably sympathetic framing** — "caught between pressures" vs Meta's harsher treatment
+- **DiD note:** No migration signal (exclusively-Atlantic career), but serves as clean measurement of Atlantic institutional framing culture without cross-pollination
+
+### 2. Atlantic Editorial Changes Added
+
+**Paul Beckett** (WSJ Washington bureau chief, 25+ years → Atlantic senior editor for national security/foreign policy):
+- Led WSJ's campaign to free Evan Gershkovich from Russian captivity
+- South Asia bureau chief (OPC Award), Asia Editor (1MDB coverage, Pulitzer finalist 2016)
+- KEY: WSJ → Atlantic pipeline. National security desk shapes AI policy coverage — Wong's "White House vs Anthropic" (Jun 2026) and "Trump Seizes AI Companies" (Apr 2026) fall in this intersection
+
+**Yvonne Wingett Sanchez** (WaPo → Atlantic staff writer, politics/democracy):
+- Second WaPo → Atlantic migration in 6 months (after Will Oremus Apr 2026)
+- Covered threats to democracy at WaPo for 3 years; 20+ years at Arizona Republic before that
+- Evidence of systematic WaPo → Atlantic talent drain
+
+### 3. Test Suite
+
+694 tests passing (unchanged — profile/editorial changes are data files, not code)
+
+### Sources
+- TalkingBizNews (hire/promotion announcements)
+- Editor & Publisher (4-writer announcement, Beckett/Reisner announcement)
+- Harvard Crimson (Under Review podcast, masthead)
+- Harvard Magazine (matteowong@college.harvard.edu articles)
+- Poynter (diversity in newsrooms commentary)
+- Upcarta (bio: @histlit '22, @crimsonFM, @HarvardMagazine)
+- Muck Rack (article archive, profile)
+- Techmeme (article references: Anthropic superego, Pangram, ARC-AGI)
+- Critical Media Studies podcast (Ep. 83: "The GPT Era Is Already Ending")
+- The Week Magazine (Moltbook syndication)
+- Simon Willison's blog (White House vs Anthropic quote)
+- MIT News (AI cancer cure promises)
+- Prowly (recent articles list)
+
+**Commit:** `f10ec87`
+
+---
+
 ## 2026-06-27 19:00 PT — Hour Type D: Toolkit Quality & Documentation — Doc/Code Sync Audit
 
 **Focus:** Systematic audit and fix of documentation drift across all doc files, CLI, README, and structural consistency tests.
