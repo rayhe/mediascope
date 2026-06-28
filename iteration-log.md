@@ -4,6 +4,45 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-28 01:00 PT — Hour Type C: Ownership & Funding Deep Dive — NYT / Ariel Investments Exit + Amended Complaint
+
+**Focus:** NYT ownership profile update — SEC 13F verification of Ariel Investments holdings, amended complaint litigation developments, stock price update.
+**Rationale:** NYT hadn't had a Type C iteration since Jun 22 (6 days). Rogers/Ariel conflict was rated severity 5 based on claimed $1.1B+ Big Tech holdings — needed verification against actual SEC filings.
+
+### 1. MAJOR DISCOVERY: Ariel Investments EXITED All Big Tech Positions
+
+Pulled and verified Ariel Investments' Q1 2026 13F (CIK 0000936753-26-000025, period ending 2026-03-31, filed 2026-05-14) and Q4 2025 13F (CIK 0000936753-26-000017, period ending 2025-12-31, filed 2026-02-13) directly from SEC EDGAR.
+
+**Result:** Meta Platforms, Alphabet (Class A + C), Amazon, Apple, and Netflix are ALL ABSENT from BOTH filings. The $1.1B+ Big Tech portfolio (750K META/$254M, 3.5M+ GOOGL/$480M+, 703K AMZN/$101M, 1.09M AAPL/$208M, 201K NFLX/$96M) was divested no later than Q4 2025. Exact exit quarter in 2025 TBD (would require Q2/Q3 2025 13F review).
+
+**Impact on conflict analysis:**
+- `board_ariel_meta_position`: severity 5 → 2 (historical conflict only, no active financial interest)
+- `board_nomgov_capture`: severity 5 → 4 (Rogers' financial tie resolved; 3 of 4 members retain career ties)
+- Rogers individual `conflict_analysis`: severity 5 → 3 (structural committee power remains)
+
+**Sources:** SEC EDGAR 13F filings — `https://www.sec.gov/Archives/edgar/data/936753/000093675326000025/` (Q1 2026), `https://www.sec.gov/Archives/edgar/data/936753/000093675326000017/` (Q4 2025)
+
+### 2. NYT Amended Complaint — Cox Communications SCOTUS Impact
+
+NYT filed amended complaint in SDNY (late June 2026):
+- **DROPPED** contributory infringement claim against OpenAI after Supreme Court's Cox Communications ruling (Mar 25, 2026, 9-0) raised the bar for platform liability for customer piracy
+- **FORTIFIED** claims against Microsoft, accusing Microsoft of "actively encouraging OpenAI's infringement by providing the AI firm with a supercomputer platform specifically designed to infringe copyrighted works to train models"
+- Strategic pivot from diffuse platform liability to concentrated provider liability
+- CEO Levien at Axios event: "The stakes are really, really high here... These companies that make the LLMs have taken our work"
+
+**Source:** Bloomberg Law — `https://news.bloomberglaw.com/ip-law/new-york-times-narrows-openai-suit-targets-microsofts-conduct`
+
+### 3. Stock Price Update
+
+NYT trading at $70.88 (Jun 27, 2026), market cap ~$11.3B. Updated from prior $73/$11.83B.
+Source: Finnhub market data.
+
+### Files Modified
+- `profiles/nytimes.yaml`: Rogers conflict_analysis (sev 5→3), board_ariel_meta_position (sev 5→2), board_nomgov_capture (sev 5→4), new amended complaint key_ruling entry, updated status_as_of_jun_2026, stock price/market cap, notes section
+- `iteration-log.md`: this entry
+
+---
+
 ## 2026-06-27 23:00 PT — Hour Type B: Journalist/Publication Research — Matteo Wong Deep Profile + Atlantic Editorial Changes
 
 **Focus:** Deep career profile expansion for Matteo Wong (The Atlantic's lead AI voice) plus 2 new editorial change entries.

@@ -25,7 +25,7 @@ ownership_chain:
   - name: "The New York Times Company"
     entity_type: "parent_company"
     description: >
-      Publicly traded (NYSE: NYT). Market cap ~$11.83B (Jun 2026). Stock ~$73/share.
+      Publicly traded (NYSE: NYT). Market cap ~$11.3B (Jun 2026). Stock ~$70.88/share (Jun 27, 2026).
       Dual-class share structure gives Sulzberger family control despite ~11% economic ownership.
       95.37% of Class A stock held by institutional investors.
     sec_filings:
@@ -571,38 +571,41 @@ board_of_directors:
       - company: "Obama Foundation"
         role: "Director"
     conflict_analysis: >
-      SEVERITY 5: THE MOST STRUCTURALLY CONFLICTED BOARD SEAT IN THE 5-PUB SET.
+      SEVERITY 3 (REVISED DOWN from 5, Jun 28 2026): FORMERLY the most structurally
+      conflicted board seat; now a HISTORICAL conflict with residual structural power.
 
-      Ariel Investments' 13F filings show MASSIVE tech company holdings:
-      - META PLATFORMS: 750,000 shares (~$254M at $339/share as of Q1 2026 filing)
-      - ALPHABET (Class A + C combined): 3,500,000+ shares (~$480M+)
-      - AMAZON: 703,000 shares (~$101M)
-      - APPLE: 1,093,000 shares (~$208M combined filings)
-      - NETFLIX: 201,000 shares (~$96M)
+      SEC 13F FILINGS UPDATE (Jun 28, 2026): Ariel Investments' Q4 2025 filing
+      (period ending Dec 31, 2025, filed Feb 13, 2026, CIK 0000936753-26-000017)
+      and Q1 2026 filing (period ending Mar 31, 2026, filed May 14, 2026,
+      CIK 0000936753-26-000025) show ALL Big Tech positions have been EXITED:
+      - META PLATFORMS: ABSENT (previously 750,000 shares / ~$254M)
+      - ALPHABET (Class A + C): ABSENT (previously 3,500,000+ shares / ~$480M+)
+      - AMAZON: ABSENT (previously 703,000 shares / ~$101M)
+      - APPLE: ABSENT (previously 1,093,000+ shares / ~$208M)
+      - NETFLIX: ABSENT (previously 201,000 shares / ~$96M)
 
-      Rogers' firm holds over $1.1 BILLION in the tech companies NYT covers most
-      critically. As CIO of Ariel, Rogers personally oversees these investment
-      decisions. His duties to Ariel's investors include maximizing the value of
-      these holdings.
+      The $1.1B+ in Big Tech holdings that made Rogers the most conflicted board seat
+      are GONE as of at least Q4 2025 (exits occurred during 2025 — exact quarter TBD,
+      would require checking Q2/Q3 2025 13F filings). The active financial conflict
+      between Rogers' fiduciary duty to Ariel clients and NYT's adversarial tech
+      coverage no longer exists in its prior form.
 
-      STRUCTURAL POWER: Rogers chairs BOTH the Nominating & Governance Committee
-      (selects future board members) AND the Finance Committee (oversees NYT's
-      financial policies, investments, capital expenditures). The person who picks
-      who joins the NYT board and who oversees NYT's financial strategy personally
-      runs a firm with $254M in Meta stock and $480M+ in Alphabet stock.
+      REMAINING STRUCTURAL POWER: Rogers still chairs BOTH the Nominating & Governance
+      Committee (selects future board members) AND the Finance Committee (oversees NYT's
+      financial policies). These committee chairs give him outsized governance influence
+      regardless of Ariel's current portfolio. He also still runs a $20B+ AUM firm
+      whose portfolio composition could shift back into tech at any time.
 
-      The $254M Meta position is especially notable: NYT claims to have ZERO
-      financial relationship with Meta, yet the chair of its board nominating
-      committee has a $254M financial interest in Meta's stock price. Adverse NYT
-      coverage of Meta could theoretically damage a position Rogers is fiduciarily
-      obligated to manage for his clients.
-
-      This doesn't mean Rogers steers coverage — the dual-class structure gives
-      editorial control to the Sulzbergers. But it creates a governance-level
-      tension that is entirely undisclosed in NYT's coverage of these companies.
+      HISTORICAL NOTE: During Rogers' board tenure (since 2018), Ariel held over
+      $1.1B in Big Tech stocks for an unknown period. Whether this created actual
+      editorial influence is unknowable, but the structural tension was real and
+      entirely undisclosed. The exit itself is analytically significant — was it
+      portfolio rebalancing, or a response to the governance tension?
     source_urls:
       - "https://nytco.com/press/board-of-directors/john-w-rogers-jr/"
       - "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ariel+investments&type=13F&dateb=&owner=include&count=40"
+      - "https://www.sec.gov/Archives/edgar/data/936753/000093675326000025/ (Q1 2026 13F — Big Tech absent)"
+      - "https://www.sec.gov/Archives/edgar/data/936753/000093675326000017/ (Q4 2025 13F — Big Tech absent)"
       - "https://businesswire.com/ (Nike retirement announcement Jun 2026)"
 
   # --- MEDIA/DIGITAL ---
@@ -850,42 +853,51 @@ known_conflicts:
 
   - type: "board_nomgov_capture"
     description: >
-      ALL FOUR members of NYT's Nominating & Governance Committee — the committee that
-      selects future board members — have career or financial ties to tech companies NYT
-      covers critically:
-      - John W. Rogers Jr. (Chair): Ariel Investments holds $254M META, $480M+ GOOGL, $101M AMZN
-      - Manuel Bronstein: 7-year Alphabet/Google veteran
+      REVISED (Jun 28, 2026): ALL FOUR members of NYT's Nominating & Governance Committee
+      have career ties to tech companies NYT covers critically:
+      - John W. Rogers Jr. (Chair): Ariel Investments founder/CIO. FORMERLY held $254M META,
+        $480M+ GOOGL, $101M AMZN through Ariel (positions EXITED by Q4 2025 per SEC 13F).
+        Career/institutional ties remain; active financial conflict resolved.
+      - Manuel Bronstein: 7-year Alphabet/Google veteran (VP Product YouTube + Google Assistant)
       - Brian McAndrews: Microsoft veteran (MSFT is NYT lawsuit co-defendant)
       - Rebecca Van Dyck: 10-year Meta veteran, former Reality Labs COO
-      This means every new board candidate is evaluated by a committee where no member
-      is free from tech company ties. The committee has self-perpetuating structural
-      influence over NYT's governance composition.
-    severity: 5
+      Three of four members have CAREER ties to Big Tech; Rogers' FINANCIAL tie (previously
+      the strongest vector) has been resolved through Ariel's portfolio exits. The committee
+      still has no member free from tech company institutional affiliations, maintaining
+      structural influence over NYT's governance composition — but the severity is reduced
+      by the elimination of Rogers' $1.1B+ active financial positions.
+    severity: 4
     evidence: >
       NYT Committees and Charters page (nytco.com). Cross-referenced with individual
-      career histories and Ariel Investments 13F filings.
+      career histories. Ariel Investments Q4 2025 and Q1 2026 13F filings confirm
+      all Big Tech positions exited.
     source_urls:
       - "https://nytco.com/who-we-are/our-board/committees-and-charters/"
-      - "https://www.sec.gov/ (Ariel 13F filings)"
+      - "https://www.sec.gov/Archives/edgar/data/936753/000093675326000025/ (Q1 2026 13F)"
+      - "https://www.sec.gov/Archives/edgar/data/936753/000093675326000017/ (Q4 2025 13F)"
 
   - type: "board_ariel_meta_position"
     description: >
-      John W. Rogers Jr. chairs NYT's Nominating & Governance Committee AND Finance
-      Committee while his firm Ariel Investments holds 750,000 shares of Meta stock
-      (~$254M). NYT maintains ZERO financial relationship with Meta — no advertising,
-      no licensing, no partnership. Yet the person who picks the board and oversees
-      NYT's financial strategy has a $254M stake in Meta's stock price through his
-      fund management duties. Ariel's total tech holdings exceed $1.1B (Meta + Alphabet
-      + Amazon + Apple + Netflix). These positions are disclosed in SEC 13F filings
-      but not in NYT's coverage of these companies or its corporate governance materials.
-    severity: 5
+      REVISED (Jun 28, 2026): John W. Rogers Jr. chairs NYT's Nominating & Governance
+      Committee AND Finance Committee. His firm Ariel Investments PREVIOUSLY held massive
+      Big Tech positions (750K META shares/$254M, 3.5M+ GOOGL/$480M+, 703K AMZN/$101M,
+      1.09M AAPL/$208M, 201K NFLX/$96M — over $1.1B total). However, SEC 13F filings
+      confirm ALL positions were EXITED by Q4 2025 (period ending Dec 31, 2025) — absent
+      from both Q4 2025 (filed Feb 13, 2026) and Q1 2026 (filed May 14, 2026) filings.
+      The active financial conflict no longer exists, but the HISTORICAL conflict during
+      Rogers' board tenure (since 2018) is documented. Rogers still chairs both committees,
+      retaining structural governance power. The exit timing and motivation are unknown.
+    severity: 2
     evidence: >
-      Ariel Investments 13F filing (SEC EDGAR). Meta position: 750,000 shares CL A
-      ($254.2M). Alphabet: 2.5M CL A ($342M) + 1.85M CL C ($256M) = $598M+.
-      Amazon: 703,000 shares ($101M). Apple: 670K + 423K shares ($208M combined).
-      Netflix: 201,000 shares ($96M).
+      Ariel Investments Q1 2026 13F (SEC EDGAR, CIK 0000936753-26-000025, period
+      2026-03-31): Meta, Alphabet, Amazon, Apple, Netflix ALL ABSENT.
+      Ariel Investments Q4 2025 13F (CIK 0000936753-26-000017, period 2025-12-31):
+      Meta, Alphabet, Amazon, Apple, Netflix ALL ABSENT.
+      Prior filings showed: META 750K shares CL A ($254.2M), GOOGL 2.5M CL A + 1.85M
+      CL C ($598M+), AMZN 703K ($101M), AAPL 670K+423K ($208M), NFLX 201K ($96M).
     source_urls:
-      - "https://www.sec.gov/ (Ariel Investments 13F)"
+      - "https://www.sec.gov/Archives/edgar/data/936753/000093675326000025/ (Q1 2026 — absent)"
+      - "https://www.sec.gov/Archives/edgar/data/936753/000093675326000017/ (Q4 2025 — absent)"
       - "https://nytco.com/press/board-of-directors/john-w-rogers-jr/"
 
   - type: "board_van_dyck_meta_paradox"
@@ -960,6 +972,23 @@ litigation_connections:
           complied with the order.
         source_url: "https://news.bloomberglaw.com/"
         notes: "Definitive: OpenAI must produce and has produced the 20M anonymized chat logs"
+      - date: "2026-06 (late)"
+        ruling: >
+          NYT filed AMENDED COMPLAINT with two strategic pivots: (1) DROPPED contributory
+          infringement claim against OpenAI (re: ChatGPT users' infringement) after the
+          Supreme Court's Cox Communications ruling (March 25, 2026, 9-0 decision) raised
+          the bar for holding platforms liable for customers' piracy. (2) FORTIFIED claims
+          against Microsoft, accusing Microsoft of 'actively encouraging OpenAI's infringement
+          by providing the AI firm with a supercomputer platform specifically designed to
+          infringe copyrighted works to train models.' The amended complaint shifts legal
+          strategy from diffuse platform liability to concentrated provider liability —
+          targeting Microsoft's infrastructure role rather than OpenAI's end-user facilitation.
+        source_url: "https://news.bloomberglaw.com/ip-law/new-york-times-narrows-openai-suit-targets-microsofts-conduct"
+        notes: >
+          Cox Communications v. BMG Rights (SCOTUS, Mar 25, 2026, 9-0): raised the standard
+          for contributory infringement claims against platforms. NYT adapted by narrowing
+          its theory. CEO Levien at Axios event: 'The stakes are really, really high here...
+          These companies that make the LLMs have taken our work.'
     consolidated_mdl_status: >
       Case is part of consolidated pretrial proceedings for 16 copyright lawsuits against OpenAI
       in the U.S. District Court for the Southern District of New York. This multidistrict
@@ -968,15 +997,18 @@ litigation_connections:
       and the most resource-rich litigant, setting the discovery and legal precedent template for
       all other cases. Sources: Bloomberg Law, Law.com, Reuters.
     status_as_of_jun_2026: >
-      ADVANCED DISCOVERY PHASE. 20M anonymized ChatGPT logs produced to plaintiffs. No trial
-      date set yet. NYT searching/analyzing the chat log data for evidence of copyrighted content
-      reproduction. OpenAI has complied with production order per its public blog statement. Case
-      is precedent-setting for all publisher-vs-AI copyright disputes. Microsoft's express license
-      affirmative defense is being contested — NYT moved to strike it. Meanwhile, the litigation
-      coalition is EXPANDING: on June 24, 2026, nearly 400 local/regional newspapers filed a
-      separate SDNY lawsuit (Richner Communications v. Microsoft Corp., No. 1:26-cv-05320) led
-      by former NJ AG Matthew Platkin via Platkin LLP. This expansion vindicates NYT's first-mover
-      strategy and increases pressure for an industry-wide resolution.
+      ADVANCED DISCOVERY PHASE + AMENDED COMPLAINT (late Jun 2026). 20M anonymized ChatGPT
+      logs produced to plaintiffs. No trial date set yet. NYT searching/analyzing the chat
+      log data for evidence of copyrighted content reproduction. OpenAI has complied with
+      production order per its public blog statement. STRATEGIC PIVOT: NYT dropped contributory
+      infringement claim against OpenAI (post-Cox Communications SCOTUS ruling, Mar 25 2026,
+      9-0) and fortified direct infringement claims against Microsoft's infrastructure role.
+      Microsoft's express license affirmative defense is being contested — NYT moved to strike
+      it. Meanwhile, the litigation coalition is EXPANDING: on June 24, 2026, nearly 400
+      local/regional newspapers filed a separate SDNY lawsuit (Richner Communications v.
+      Microsoft Corp., No. 1:26-cv-05320) led by former NJ AG Matthew Platkin via Platkin LLP.
+      This expansion vindicates NYT's first-mover strategy and increases pressure for an
+      industry-wide resolution.
   - type: "co_plaintiff_related"
     description: >
       NYT and Daily News plaintiffs consolidated. Daily News encompasses 8 news
@@ -1122,6 +1154,34 @@ editorial_history:
     source_url: "https://www.thestreet.com/technology/nytimes-ends-partnership-with-apple-news"
 
 notes: |
+  UPDATED 2026-06-28: ARIEL INVESTMENTS EXIT + AMENDED COMPLAINT + STOCK PRICE
+
+  THREE MAJOR UPDATES:
+
+  11. ARIEL INVESTMENTS EXITED ALL BIG TECH POSITIONS (confirmed Jun 28 via SEC 13F):
+  John W. Rogers Jr.'s Ariel Investments has EXITED all Big Tech holdings as of at least
+  Q4 2025. SEC 13F filings for Q4 2025 (period Dec 31, 2025, filed Feb 13, 2026) AND
+  Q1 2026 (period Mar 31, 2026, filed May 14, 2026) show Meta, Alphabet, Amazon, Apple,
+  and Netflix ALL ABSENT from holdings. Previously held: $254M META, $480M+ GOOGL, $101M
+  AMZN, $208M AAPL, $96M NFLX — over $1.1B total. This dramatically changes the conflict
+  analysis: Rogers' board_ariel_meta_position drops from severity 5 to 2 (historical only),
+  board_nomgov_capture drops from 5 to 4 (career ties remain for 3 of 4 members). Rogers
+  retains structural power (chairs Nom&Gov + Finance) but the active financial conflict
+  with NYT's tech coverage is resolved. Exit timing (exact quarter in 2025) TBD.
+
+  12. NYT AMENDED COMPLAINT — COX COMMUNICATIONS SCOTUS IMPACT (late Jun 2026):
+  NYT filed amended complaint in SDNY: (a) DROPPED contributory infringement claim against
+  OpenAI after Supreme Court's Cox Communications ruling (Mar 25, 2026, 9-0) raised the bar
+  for platform liability for customer piracy. (b) FORTIFIED claims against Microsoft, accusing
+  it of "actively encouraging OpenAI's infringement" through purpose-built supercomputer
+  infrastructure. Strategic pivot from diffuse platform liability to concentrated provider
+  liability. CEO Levien at Axios: "The stakes are really, really high here."
+
+  13. STOCK PRICE UPDATE: $70.88/share (Jun 27, 2026), market cap ~$11.3B (down from
+  $73/$11.83B in prior update).
+
+  PRIOR UPDATES PRESERVED BELOW:
+
   UPDATED 2026-06-26: BOARD OF DIRECTORS — COMPREHENSIVE GOVERNANCE ANALYSIS.
 
   THE MOST SIGNIFICANT ADDITION TO THE NYT PROFILE SINCE INCEPTION.
