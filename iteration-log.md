@@ -4,6 +4,53 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-28 14:00 PT — Hour Type D: Toolkit Quality & Documentation — Inline Topic List Fix, Scoring Accuracy Docs, Structural Guards
+
+**Focus:** Fix stale ARCHITECTURE.md inline topic list, add QUALITY_STANDARDS.md §7 (Automated Scoring Accuracy), add 5 structural consistency tests for inline topic list and quality standards validation.
+**Rationale:** ARCHITECTURE.md's topics.py description listed only 13 of 15 topic buckets (missing `prediction_markets` and `corporate_strategy`). The numeric count "15 topic buckets" was correct, but the inline name list was stale — proving that numeric count guards are necessary but insufficient. Additionally, QUALITY_STANDARDS.md covered output text quality (banned phrases, citations, counterarguments) but said nothing about the accuracy of the automated sentiment scoring that produces the numbers in reports — a significant documentation gap.
+
+### 1. ARCHITECTURE.md Topic List Fix
+
+Line 194 listed: `layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, workplace_culture, government_oversight` (13 topics).
+
+Fixed to: all 15 topics including `prediction_markets` and `corporate_strategy`.
+
+The existing `TestTopicBucketConsistency.test_architecture_topic_count` guard only checked for the string "15 topic buckets" — it passed because the numeric count was correct even though the inline list was incomplete.
+
+### 2. QUALITY_STANDARDS.md §7: Automated Scoring Accuracy
+
+New section covering:
+- **VADER positive-bias problem:** Table of 4 validated failure cases with correction gaps of 0.98-1.18 points (NYT "Meta AI Employees Miserable" +0.61→−0.37, NYT "US Presses Meta on AI Reviews" +0.61→−0.57, MIT TR "Meta AI Hack" +0.65→−0.43, Wired "Applied AI Soul-Crushing" +0.30→−0.72)
+- **Tone correction pipeline:** 3-condition firing mechanism (adversarial framing density, negative agency signal, positive raw VADER score)
+- **Known scoring limitations:** Table of 6 documented limitations with mitigations (Q&A format, legal context, security articles, wire-vs-magazine genre, counted anonymous sources, product-name entities)
+- **Scoring calibration validation:** 5-step process (manual assessment, pre-correction score, post-correction score, gap analysis, regression tests) required for every new toolkit correction
+
+### 3. New Structural Consistency Tests (5 tests, 3 classes)
+
+**TestInlineTopicListConsistency (3 tests):**
+- `test_architecture_inline_topics_complete`: Parses the "Topics: ..." line in ARCHITECTURE.md and validates it contains exactly the same topic names as `TOPIC_KEYWORDS` in code
+- `test_agent_guide_inline_topics_complete`: Parses the classify_topic JSON schema description in AGENT_GUIDE.md and validates the topic list
+- `test_methodology_topic_table_complete`: Validates that METHODOLOGY.md §3.1 has a table row for every topic bucket in code
+
+**TestQualityStandardsConsistency (2 tests):**
+- `test_banned_phrase_count_matches_doc`: Validates QUALITY_STANDARDS.md's "25 phrases are markers" count matches `len(BANNED_PHRASES)` in code
+- `test_all_banned_phrases_documented`: Validates every phrase in the `BANNED_PHRASES` list appears in QUALITY_STANDARDS.md
+
+### Files Modified
+- `docs/ARCHITECTURE.md`: Fixed inline topic list (+2 topics), updated test count (756→761), updated structural consistency test description
+- `docs/QUALITY_STANDARDS.md`: Added §7 Automated Scoring Accuracy (+50 lines)
+- `tests/test_structural_consistency.py`: Added 3 new test classes with 5 tests (+119 lines)
+- `README.md`: Updated test count (756→761), updated structural consistency test description
+
+### Stats After
+- 761 tests passed (30 test files, +5 from 756)
+- 37 structural consistency tests (up from 32)
+- All cross-reference guards green
+
+**Commit:** `144274f` — pushed to main
+
+---
+
 ## 2026-06-28 13:00 PT — Hour Type C: Ownership & Funding Deep Dive — Atlantic Political Spending, Lobbying, Immigration Advocacy, XQ Scandal
 
 **Focus:** Four entirely new profile dimensions for The Atlantic / Emerson Collective: political activity & influence, federal lobbying, immigration advocacy network, and EC organizational ecosystem (including XQ Institute governance scandal).
