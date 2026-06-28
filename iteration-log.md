@@ -4,6 +4,97 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-28 09:00 PT — Hour Type C: Ownership & Funding Deep Dive — Wired/Advance Portfolio: WBD EU Extension, Charter-SpaceX, Reddit Cannes Lions
+
+**Focus:** Three major ownership/funding updates to the Wired/Advance Publications profile: (1) WBD/Paramount merger EU timeline extension with UIP divestiture, (2) Charter Communications SpaceX mobile partnership talks, (3) Reddit Cannes Lions 2026 advertising momentum and commerce evolution.
+**Rationale:** The Wired profile's last Type C update was Jun 23 — 5 days of significant developments across all three major Advance public portfolio holdings needed to be captured. Each development changes the conflict-of-interest calculus in distinct ways.
+
+### 1. WBD/Paramount Merger — EU Timeline Extension (3 new data points)
+
+**Paramount UIP divestiture (Reuters, Jun 24):**
+- Paramount prepared to divest 50% stake in United International Pictures (UIP) film distribution JV with Universal Pictures
+- Formal divestiture offer to be submitted by June 30
+- Extends EU Phase I deadline from July 7 to July 21 (10 working days)
+- Earlier concern about children's TV assets is now off the table — no issues on that front
+- David Ellison targeting July 15 close
+- FT: regulators expected to give green light provided remedies accepted
+
+**State AG lawsuit threat:**
+- NY, CA, and other states preparing separate lawsuit to block the deal (Reuters)
+- Could delay close into fall beyond Sep 30 deadline
+- Ticking fee: ~$627.5M/quarter (Morningstar estimate) after Sep 30 deadline
+
+**Options market:**
+- Barchart (Jun 26): bull call spreads on WBD suggest ~30% probability of deal closing before Jul 24
+- UK CMA approval expected August
+
+**CONFLICT RELEVANCE:** The WBD realization at $30/share would give Advance ~$4.04B total ($1.1B realized Jun 2024 + ~$2.94B remaining). This liquidity event could fund Condé Nast operations or new investments, further tying the editorial empire's resources to portfolio outcomes.
+
+### 2. Charter Communications — SpaceX Mobile Partnership (Bloomberg News, Jun 26)
+
+**Partnership talks:**
+- SpaceX and Charter in EXECUTIVE-LEVEL talks about consumer mobile phone offering in US
+- Charter would route SpaceX phone traffic through its ground-based internet infrastructure
+- Charter merged with Cox Communications (2025), now passes 43.2M locations — most of any US provider
+- AT&T, T-Mobile, and Verizon all declined MVNO deals with SpaceX
+- SpaceX acquired AWS-3 mobile spectrum rights via FCC auction + EchoStar spectrum assets
+- Gwynne Shotwell (Jun 2026): "Starlink Mobile will far exceed Starlink broadband" in user numbers
+
+**Stock update:**
+- CHTR: $133.64 (Jun 26 close), up from $129.65 — still in steep overall decline (-68% from 52-week high)
+- Advance stake value: ~$2.76B (up from ~$2.67B)
+
+**CONFLICT RELEVANCE:** While Charter is declining, the SpaceX partnership could represent a strategic inflection. If Charter pivots from declining cable to space-enabled mobile, Advance's ~$2.76B stake could see meaningful upside, potentially making the Charter holding more strategically important to the Newhouse family's portfolio.
+
+### 3. Reddit — Cannes Lions 2026 Advertising Momentum (B.Riley Jun 23, multiple sources)
+
+**Wall Street upgrade context:**
+- B.Riley maintained Buy rating with $250 target (Jun 23) — the single highest conviction call among recent Reddit ratings
+- Based on Cannes Lions events showcasing accelerating ad stack maturity
+
+**Key advertising data (4 new findings):**
+1. Reddit ROAS now ABOVE industry averages in key categories — a milestone for a platform that historically underperformed on conversion metrics vs Meta and Google
+2. Reddit white paper: ~20% of ALL shoppers include Reddit in product searches — mainstream consumer behavior, not niche
+3. 50% of US shoppers use Reddit to VERIFY AI-generated recommendations — positioning Reddit as the "trust layer" between AI search and purchase decisions
+4. Reddit testing AI-powered shopping search (TechCrunch): interactive product carousels with pricing, images, and direct where-to-buy links
+
+**Earnings date:**
+- Q2 2026 earnings: July 30 (after market close)
+- 30 analysts: consensus "Moderate Buy," avg 12-month target $230.75, high $300, low $110 (MarketBeat Jun 28)
+
+**CONFLICT AMPLIFICATION:**
+Reddit's evolution from social platform to COMMERCE PLATFORM makes the Advance/Wired conflict more acute. Reddit is no longer competing with Meta only for attention and ad impressions — it is competing for the entire purchase funnel:
+- AI shopping search competes with Meta Shops and Instagram Shopping
+- ROAS parity (or superiority) in key categories means advertiser dollars can shift from Meta to Reddit without performance sacrifice
+- The "trust layer" positioning (50% of US shoppers verifying AI recommendations on Reddit) represents a moat Meta doesn't have
+- Shopify/WooCommerce integrations give Reddit direct commerce infrastructure competing with Meta's merchant tools
+
+### Files Modified
+- `profiles/wired.yaml`: WBD Paramount EU timeline extension (+UIP divestiture, deadline Jul 21, state AG lawsuit, options market), Charter SpaceX mobile partnership (Bloomberg Jun 26, 43.2M locations, Gwynne Shotwell quote, stock $133.64), Reddit Cannes Lions ad momentum (B.Riley $250 target, ROAS above industry, 20% shopper searches, 50% AI verification, AI shopping search, Q2 earnings Jul 30, 30 analysts consensus), portfolio valuation updated, conflict escalation block updated
+- `iteration-log.md`: this entry
+
+### Sources
+- Reuters (Jun 24): Paramount UIP divestiture — https://www.reuters.com/paramount-skydance-divest-universal-pictures-eu/
+- TheStreet (Jun 26): WBD merger regulatory hurdle — https://www.thestreet.com/investing/paramount-wbd-merger-faces-major-regulatory-hurdle
+- Barchart (Jun 26): WBD options activity analysis — https://www.barchart.com/story/news/unusual-options-activity-wbd-paramount-deal-close
+- ainvest.com (Jun 26): EU regulatory analysis — https://ainvest.com/post/eu-regulatory-hurdle-paramount-warner-bros-acquisition/
+- NY Post (Jun 26): Larry Ellison/CNN denial — https://nypost.com/paramount-denies-larry-ellison-pledged-overhaul-cnn/
+- Bloomberg News via Reuters (Jun 26): SpaceX-Charter talks — https://www.reuters.com/spacex-charter-discuss-mobile-phone-partnership-us/
+- PhoneArena (Jun 27): SpaceX-Charter analysis — https://www.phonearena.com/news/spacex-charter-mobile-service-partner/
+- DevDiscourse (Jun 27): SpaceX-Charter overview — https://www.devdiscourse.com/article/technology/spacex-charter-communications-mobile/
+- Insider Monkey (Jun 26): B.Riley Reddit Buy $250 — https://www.insidermonkey.com/blog/wall-street-bullish-on-reddit-rddt-heres-why-1789767/
+- MarketBeat (Jun 28): RDDT/CHTR/WBD stock data — https://www.marketbeat.com/stocks/NYSE/RDDT/
+- TechCrunch: Reddit AI shopping search feature — https://techcrunch.com/reddit-testing-ai-search-feature-shopping/
+- Adweek (Jun 2026): Reddit as AI answer engine source — https://www.adweek.com/audience-strategy-unpredictable-consumer/
+- Finnhub: real-time stock data for RDDT ($166.94), CHTR ($133.64), WBD ($26.74)
+
+**Commit:** `4cbb160` — pushed to main
+
+### Tests
+- 751 passed, 0 failed (unchanged — data-only changes, no code modifications)
+
+---
+
 ## 2026-06-28 08:00 PT — Hour Type B: Journalist/Publication Research — Tripp Mickle Deep Profile + NYT Beat Reorganization
 
 **Focus:** Deep career profile expansion for Tripp Mickle (NYT) plus 2 new NYT editorial change entries tracking his beat change and the resulting Apple beat vacancy.
