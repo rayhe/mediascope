@@ -4,6 +4,32 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-28 07:00 PT — Hour Type A: Article Deep Dive — Kotaku Sardonic Framing Gap
+
+**Article:** Kotaku — "Mark Zuckerberg Looking To Start His Own Polymarket Rival" (Jun 28, 2026)
+**Cross-publication stress test** (Kotaku is not one of the 5 tracked pubs)
+
+### Gaps Found
+1. **Sentiment: +0.68 vs manual -0.55 to -0.65** — VADER read "booming," "interesting," "great" literally. Framing correction didn't fire because agency was +1.0 (Path A requires < -0.3) and no anchor devices present (Path C requires kicker/juxtaposition).
+2. **Framing: 2/12 detected** — missed "ethically rancid," "failed metaverse," "huge bust," "gambling over anything," "AI slop," "nuclear armageddon," "dubious, exploitative," "search for a win," "chasing trends"
+3. **Topic: `ai_generated_content` instead of `prediction_markets`** — no prediction market or corporate strategy topic buckets existed
+
+### Fixes Applied
+- **framing.py:** Added "armageddon" to catastrophizing. Added "exploitative|dubious|rancid|sordid" to loaded language. Added "AI slop" to dismissive. Added past-failure anchoring pattern ("fresh off a failed," "huge bust," "search for a win"). Added vice/gambling reframing pattern ("gambling over anything," "wagered away"). Result: 2 → 12 devices.
+- **sentiment.py:** New Path D (sardonic/mocking framing) — fires when raw_tone >= 0.3, agency >= 0.3, loaded_language >= 7, adversarial >= 8. Corrects sardonic articles where VADER misreads active-voice contempt as positive. Result: +0.68 → -0.517.
+- **topics.py:** Added `prediction_markets` (27 keywords) and `corporate_strategy` (28 keywords) topic buckets. Result: primary topic correctly classified as prediction_markets (0.50).
+- **Docs/tests:** METHODOLOGY.md, ARCHITECTURE.md, AGENT_GUIDE.md updated 13→15 topics. Structural consistency tests updated.
+
+### Results
+- **Tests:** 751 passed, 0 failed (up from 722 baseline)
+- **Analysis file:** `examples/sample_output/kotaku_meta_arena_polymarket_rival_2026_06_28_analysis.md`
+- **Commit:** 1177932 — pushed to main
+
+### Pattern Insight
+Sardonic active agency is a systematic VADER failure mode in gaming/culture press (Kotaku, AV Club). Both articles on the same Meta Arena story scored incorrectly positive. Path D addresses this by using loaded_language density as a proxy for editorial contempt when the subject has active voice but the framing is mocking.
+
+---
+
 ## 2026-06-28 05:00 PT — Hour Type D: Toolkit Quality & Documentation — Doc/Code Sync Audit + Stale Voting Power Purge
 
 **Focus:** Comprehensive documentation accuracy audit across all 6 doc files + README + structural consistency test expansion.
