@@ -4,6 +4,87 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-28 13:00 PT — Hour Type C: Ownership & Funding Deep Dive — Atlantic Political Spending, Lobbying, Immigration Advocacy, XQ Scandal
+
+**Focus:** Four entirely new profile dimensions for The Atlantic / Emerson Collective: political activity & influence, federal lobbying, immigration advocacy network, and EC organizational ecosystem (including XQ Institute governance scandal).
+**Rationale:** Atlantic profile (761 lines) had zero coverage of LPJ's political spending, federal lobbying data, immigration advocacy positioning, or EC's full organizational structure. These dimensions are critical for understanding non-financial editorial influence channels.
+
+### 1. LPJ Political Activity & Influence (NEW SECTION)
+
+Pulled and synthesized LPJ's full FEC disclosure history from OpenSecrets Donor Lookup:
+
+| Metric | Finding |
+|---|---|
+| Total FEC records | 1,218 |
+| Party alignment | 100% Democratic (zero Republican or third-party across entire history) |
+| Largest single contribution | $500,000 to Senate Majority PAC (Sep 2014) |
+| Second largest | $400,000 to Local Voices Super PAC (Sep 2016) |
+| 2024 Harris cycle | Millions to Future Forward super PAC + $10K each to 10+ state Democratic parties (Aug 29, 2024) |
+
+**Harris confidant relationship (NYT):** LPJ is a close personal confidant of Kamala Harris since at least 2009-2010 ($500 to Harris AG campaign). 9 White House visits during Biden-Harris administration. After Biden's June 2024 debate, LPJ's top aide David Simas (former Obama WH staff) circulated focus-group data that NYT described as "influential in encouraging [donors] to mobilize against Biden." LPJ co-hosted fundraisers with Marc Benioff (Salesforce CEO) and Sean Parker (former Facebook exec).
+
+**Analytical note:** This is the first media owner in the 5-pub tracking set with documented direct access to the highest levels of Democratic political power AND a sophisticated political research operation (Simas). Creates political influence channel beyond financial conflicts.
+
+### 2. Federal Lobbying Profile (NEW SECTION)
+
+From OpenSecrets Lobbying data:
+
+| Year | Amount | Entity | Firm | Industry |
+|---|---|---|---|---|
+| 2026 | $60,000 (Q1) | Amplify Education | BGR Group | For-Profit Education |
+| 2024 | $120,000 | Amplify Education | BGR Group | For-Profit Education |
+
+3 lobbyists, all with revolving-door profiles. Bills lobbied: Student Success Act (HR.5), ESSA (S.1177), student privacy bills (2014-2016).
+
+**CRITICAL ABSENCE:** EC has ZERO lobbying on AI policy, technology regulation, antitrust, or copyright law — despite owning a publication that covers these topics and having $1B+ invested in AI companies. Compare: Meta $20M+, Google $13M+, Apple $9.4M+, OpenAI $2.6M+. This means any EC influence on tech policy operates through EDITORIAL COVERAGE rather than traditional lobbying.
+
+### 3. Immigration Advocacy Network (NEW SECTION)
+
+**Abundant Futures Fund:** EC is a founding donor alongside Ford Foundation and JPB Foundation. Target: $100M. Raised: $60M. Grants distributed: $30M+. Donor collaborative to expand immigration philanthropy.
+
+**FWD.us divergence:** CZI formally cut FWD.us funding in Dec 2025 post-Trump re-election, eliminating FWD.us's primary funding source. EC CONTINUES leading immigration philanthropy. This creates narrative inversion: Meta's founder RETREATED from immigration advocacy while the Atlantic's owner LEADS it.
+
+**College Track origins:** LPJ co-founded College Track in 1997 — her first organization, focused on college access for underserved students. LPJ has stated this was "fundamental to the creation of Emerson Collective."
+
+### 4. EC Organizational Ecosystem (NEW SECTION)
+
+Mapped 6 entities: College Track (1997), XQ Institute (2015, $530M), Amplify (2015), EC itself (2011), Waverley Street Foundation ($2.74B), Yosemite VC (2023, Reed Jobs).
+
+**XQ Institute scandal:** Inside Philanthropy investigation published ~Jun 2026. Anonymous whistleblower: "XQ Institute is a $60M Ponzi scheme." Allegations: leadership instability, financial stewardship questions, high turnover, suppression, board inaction. Glassdoor reviews: "Veep, but meaner," "Mission undermined by dysfunctional leadership." $530M in LPJ contributions (2015-2024) under scrutiny.
+
+### 5. New Known Conflicts
+
+- **political_editorial_alignment (severity 3):** 100% Democratic giving + Harris confidant + WH access + FWD.us divergence creates political influence channel for editorial coverage
+- **lobbying_absence_as_editorial_substitute (severity 2):** Zero tech lobbying means editorial coverage substitutes for direct lobbying on AI/tech issues
+
+### Sources
+- OpenSecrets Donor Lookup (LPJ FEC records): https://www.opensecrets.org/donor-lookup/results?name=Laurene+Powell+Jobs
+- OpenSecrets Lobbying Profile (EC 2026): https://www.opensecrets.org/federal-lobbying/clients/summary?cycle=2026&id=D000072893
+- OpenSecrets Lobbying Profile (EC 2024): https://www.opensecrets.org/federal-lobbying/clients/summary?cycle=2024&id=D000072893
+- OpenSecrets Lobbyists (BGR Group): https://www.opensecrets.org/federal-lobbying/clients/lobbyists?cycle=2024&id=D000072893
+- OpenSecrets Bills Lobbied: https://www.opensecrets.org/federal-lobbying/clients/bills?cycle=2026&id=D000072893
+- OpenSecrets EC Summary (2024 cycle): https://www.opensecrets.org/orgs/emerson-collective/summary?id=D000072893
+- OpenSecrets EC Summary (2022 cycle): https://www.opensecrets.org/orgs/emerson-collective/summary?id=D000072893&cycle=2022
+- NYT (Harris/LPJ): https://www.nytimes.com/2024/10/behind-harriss-rise-laurene-powell-jobs.html
+- AfroTech (Harris/LPJ): https://afrotech.com/laurene-powell-jobs-kamala-harris
+- Inside Philanthropy (XQ scandal): https://insidephilanthropy.com/home/2026/06/xq-institute-laurene-powell-jobs
+- Inside Philanthropy (Abundant Futures Fund): https://insidephilanthropy.com/home/2024/10/abundant-futures-fund-immigration
+- Bloomberg Law (Zuckerberg/FWD.us): https://news.bloomberglaw.com/zuckerberg-cut-ties-fwd-us
+- WebProNews (FWD.us): https://webpronews.com/zuckerbergs-philanthropy-severs-fwd-us-lifeline
+- Wikipedia (Emerson Collective): https://en.wikipedia.org/wiki/Emerson_Collective
+- Grantable (XQ financials): https://grantable.co/xq-institute
+
+### Files Modified
+- `profiles/atlantic.yaml`: +286 lines (761 → 1046), 4 new sections, 2 new conflicts
+
+### Stats After
+- 756 tests passed (unchanged — profile changes are data files)
+- Atlantic profile now 2nd largest after NYT (1329 lines), surpassing Guardian (935) and MIT TR (783)
+
+**Commit:** `e767e00` — pushed to main
+
+---
+
 ## 2026-06-28 12:00 PT — Hour Type B: Journalist/Publication Research
 
 **Focus:** Deep career expansion for 3 thin-profile journalists: Andy Greenberg (2→3 entries), Lily Hay Newman (2→4 entries), Nico Grant (2→4 entries).
