@@ -2947,8 +2947,8 @@ def _detect_social_proof_amplification(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 33 pattern-matched device types plus 5 structural
-    post-pass types (38 total).
+    Scans for 32 pattern-matched device types plus 5 structural
+    post-pass types (37 total).
 
     Pattern-matched (33): guilt_by_association, anonymous_authority,
     catastrophizing, false_balance, selective_omission_signal,

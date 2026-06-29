@@ -533,3 +533,202 @@ class TestQualityStandardsConsistency:
             f"Banned phrases in code but missing from QUALITY_STANDARDS.md: "
             f"{missing}"
         )
+
+
+
+class TestFramingDocstringConsistency:
+    """Guard: framing.py detect_framing_devices docstring counts match code.
+
+    The docstring in framing.py states "Scans for N pattern-matched device
+    types plus M structural post-pass types (T total)". These counts must
+    match the actual device types registered in the module.
+
+    Added: 2026-06-28 21:00 PT, Type D iteration.
+    """
+
+    def test_docstring_pattern_count_matches_code(self):
+        """framing.py docstring must claim correct pattern-matched count."""
+        src = (_REPO_ROOT / "mediascope" / "analyze" / "framing.py").read_text()
+        # Extract actual pattern-matched types
+        pattern_keys = set(re.findall(r'_DEVICE_PATTERNS\["(\w+)"\]', src))
+        initial_keys = set(re.findall(r'"(\w+)":\s*_[A-Z_]+_PATTERNS', src))
+        actual_pattern = len(initial_keys | pattern_keys)
+        # Extract docstring claim
+        match = re.search(r"Scans for (\d+) pattern-matched", src)
+        assert match, (
+            "framing.py docstring is missing the 'Scans for N pattern-matched' line."
+        )
+        claimed = int(match.group(1))
+        assert claimed == actual_pattern, (
+            f"framing.py docstring claims {claimed} pattern-matched types but "
+            f"code has {actual_pattern}. Update the docstring."
+        )
+
+    def test_docstring_total_count_matches_code(self):
+        """framing.py docstring must claim correct total count."""
+        src = (_REPO_ROOT / "mediascope" / "analyze" / "framing.py").read_text()
+        all_types = _all_device_types_from_code()
+        actual_total = len(all_types)
+        match = re.search(r"\((\d+) total\)", src)
+        assert match, (
+            "framing.py docstring is missing the '(N total)' count."
+        )
+        claimed = int(match.group(1))
+        assert claimed == actual_total, (
+            f"framing.py docstring claims {claimed} total types but "
+            f"code has {actual_total}. Update the docstring."
+        )
+
+
+class TestMethodologyDeviceTableConsistency:
+    """Guard: METHODOLOGY.md §4.1 Extended and Structural device tables
+    contain all device types from code.
+
+    The numeric count guards (TestDocCountConsistency) catch stale totals.
+    These tests catch missing *table rows*: a count can be updated to 22
+    while the table still has only 20 entries.
+
+    Added: 2026-06-28 21:00 PT, Type D iteration.
+    """
+
+    def _extended_types_from_code(self) -> set[str]:
+        """Get pattern-matched types that are NOT in the core 10."""
+        src = (_REPO_ROOT / "mediascope" / "analyze" / "framing.py").read_text()
+        # Core types: those defined in the initial _DEVICE_PATTERNS dict literal
+        initial_keys = set(re.findall(r'"(\w+)":\s*_[A-Z_]+_PATTERNS', src))
+        # Dynamically added pattern types
+        dynamic_keys = set(re.findall(r'_DEVICE_PATTERNS\["(\w+)"\]', src))
+        return dynamic_keys - initial_keys
+
+    def _structural_types_from_code(self) -> set[str]:
+        """Get structural post-pass device types (not in _DEVICE_PATTERNS)."""
+        src = (_REPO_ROOT / "mediascope" / "analyze" / "framing.py").read_text()
+        pattern_keys = set(re.findall(r'_DEVICE_PATTERNS\["(\w+)"\]', src))
+        initial_keys = set(re.findall(r'"(\w+)":\s*_[A-Z_]+_PATTERNS', src))
+        post_pass = set(re.findall(r'device_type="(\w+)"', src))
+        return post_pass - initial_keys - pattern_keys
+
+    def _device_names_in_methodology_table(self, section_header: str) -> set[str]:
+        """Extract bold device names from a METHODOLOGY.md table section."""
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        # Find the section
+        start = doc.find(section_header)
+        assert start != -1, f"Section '{section_header}' not found in METHODOLOGY.md"
+        # Find the next section header (#### or ###)
+        remaining = doc[start + len(section_header):]
+        next_section = re.search(r"\n#{3,4} ", remaining)
+        section_text = remaining[:next_section.start()] if next_section else remaining
+        # Extract bold names from table rows: | **Name** |
+        names_raw = re.findall(r"\*\*(.+?)\*\*", section_text)
+        # Convert display names to code-style names for comparison
+        # e.g., "Latecomer Narrative" -> "latecomer_narrative"
+        # Handle hyphens ("Techno-Optimism" -> "techno_optimism")
+        # Handle slashes ("Scale/Magnitude" -> "scale_magnitude")
+        result = set()
+        for n in names_raw:
+            code_name = n.lower().replace(" ", "_").replace("/", "_").replace("-", "_")
+            result.add(code_name)
+        return result
+
+    def _normalize_for_matching(self, code_name: str, doc_names: set[str]) -> bool:
+        """Check if a code device name matches any doc device name,
+        handling suffix differences (e.g. 'scale_magnitude' vs 'scale_magnitude_framing')."""
+        if code_name in doc_names:
+            return True
+        # Check if code_name is a prefix of any doc name or vice versa
+        for dn in doc_names:
+            if dn.startswith(code_name) or code_name.startswith(dn):
+                return True
+        return False
+
+    def test_extended_table_has_all_extended_types(self):
+        """METHODOLOGY.md Extended Devices table must have a row for every
+        extended device type in code."""
+        code_extended = self._extended_types_from_code()
+        doc_extended = self._device_names_in_methodology_table("#### Extended Devices")
+        missing = {t for t in code_extended
+                   if not self._normalize_for_matching(t, doc_extended)}
+        assert not missing, (
+            f"METHODOLOGY.md Extended Devices table is missing row(s) for: "
+            f"{sorted(missing)}.\n"
+            f"All code extended types: {sorted(code_extended)}\n"
+            f"Found in doc table: {sorted(doc_extended)}"
+        )
+
+    def test_structural_table_has_all_structural_types(self):
+        """METHODOLOGY.md Structural Devices table must have a row for every
+        structural device type in code."""
+        code_structural = self._structural_types_from_code()
+        doc_structural = self._device_names_in_methodology_table(
+            "#### Structural Devices (Post-Pass)"
+        )
+        missing = {t for t in code_structural
+                   if not self._normalize_for_matching(t, doc_structural)}
+        assert not missing, (
+            f"METHODOLOGY.md Structural Devices table is missing row(s) for: "
+            f"{sorted(missing)}.\n"
+            f"All code structural types: {sorted(code_structural)}\n"
+            f"Found in doc table: {sorted(doc_structural)}"
+        )
+
+
+class TestAdversarialDeviceListConsistency:
+    """Guard: adversarial device type lists in docs match code.
+
+    The tone correction pipeline uses a specific set of adversarial device
+    types (_ADVERSARIAL_DEVICE_TYPES in sentiment.py). Documentation that
+    enumerates these types must stay in sync.
+
+    Added: 2026-06-28 21:00 PT, Type D iteration.
+    """
+
+    def _adversarial_types_from_code(self) -> set[str]:
+        """Get the adversarial device type set from sentiment.py."""
+        src = (_REPO_ROOT / "mediascope" / "analyze" / "sentiment.py").read_text()
+        # Find the _ADVERSARIAL_DEVICE_TYPES set definition
+        match = re.search(
+            r"_ADVERSARIAL_DEVICE_TYPES:\s*set\[str\]\s*=\s*\{(.*?)\}",
+            src,
+            re.DOTALL,
+        )
+        assert match, "Cannot find _ADVERSARIAL_DEVICE_TYPES in sentiment.py"
+        return set(re.findall(r'"(\w+)"', match.group(1)))
+
+    def test_methodology_adversarial_list_complete(self):
+        """METHODOLOGY.md §9 must list all adversarial device types from code."""
+        code_types = self._adversarial_types_from_code()
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        # Find the adversarial set enumeration
+        match = re.search(
+            r"adversarial device type set \(([^)]+)\)",
+            doc,
+        )
+        assert match, (
+            "METHODOLOGY.md is missing the adversarial device type set enumeration."
+        )
+        doc_types = set(re.findall(r"(\w+)", match.group(1)))
+        missing = code_types - doc_types
+        assert not missing, (
+            f"METHODOLOGY.md adversarial device list is missing: {sorted(missing)}.\n"
+            f"Code has: {sorted(code_types)}\n"
+            f"Doc has: {sorted(doc_types)}"
+        )
+
+    def test_quality_standards_adversarial_list_complete(self):
+        """QUALITY_STANDARDS.md must list all adversarial device types from code."""
+        code_types = self._adversarial_types_from_code()
+        doc = (_REPO_ROOT / "docs" / "QUALITY_STANDARDS.md").read_text()
+        match = re.search(
+            r"adversarial set \(([^)]+)\)",
+            doc,
+        )
+        assert match, (
+            "QUALITY_STANDARDS.md is missing the adversarial device set enumeration."
+        )
+        doc_types = set(re.findall(r"(\w+)", match.group(1)))
+        missing = code_types - doc_types
+        assert not missing, (
+            f"QUALITY_STANDARDS.md adversarial device list is missing: {sorted(missing)}.\n"
+            f"Code has: {sorted(code_types)}\n"
+            f"Doc has: {sorted(doc_types)}"
+        )
