@@ -4,6 +4,32 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-29 06:00 PT — Hour Type D: Toolkit Quality & Documentation — Careers Demo + Bug Fixes
+
+**Focus:** Create the first runnable example for the Editorial Histories module (the toolkit's most original contribution), fix a data validation bug that crashed CareerTracker, and correct an adversarial types inconsistency in the framing correction demo.
+
+**Changes:**
+
+1. **NEW: `examples/careers_demo.py`** — Comprehensive demo of the Editorial Histories module covering five sections:
+   - **Dataset overview:** 104 tracked journalists, 459 career events, 290 auto-detected migrations, 102 multi-publication journalists
+   - **Journalist profiles:** Karen Hao (7 pubs, 6 migrations — MIT TR → Atlantic high-value move), Zoë Schiffer (The Verge → Platformer → Wired), Steve Lohr (51-year NYT lifer — institutional baseline)
+   - **High-value migrations:** 135 migrations involving the 5 tracked publications, with publication-level flow matrix showing incoming talent sources
+   - **DiD natural experiment setup:** Full regression model explanation (Y = β₀ + β₁·Treatment + β₂·Post + β₃·(Treatment × Post) + ε) with CLI and Python API examples
+   - **Notable career pipelines:** Top 15 journalists by migration count (Katie Drummond 7, Karen Hao 6, Adrienne LaFrance 6, etc.)
+   - This was the only module without a dedicated example despite being the novel contribution (DiD applied to journalist migration data at scale — no prior work does this)
+
+2. **BUG FIX: `profiles/careers/journalists.yaml`** — `event_type: internship` on Tristan Mickle's Newsday entry was not a valid CareerEvent type. The valid values include `intern` (not `internship`). This caused `CareerTracker.all_journalists()` to crash with `ValueError: Invalid event_type 'internship'` on load, making the entire careers module non-functional from the API. Discovered when building the demo.
+
+3. **FIX: `examples/framing_correction_demo.py`** — The `adversarial_types` set listed 13 types but the code's `_ADVERSARIAL_DEVICE_TYPES` in `sentiment.py` has 14 members (missing: `military_techno_optimism`). This caused the demo to undercount adversarial devices when analyzing articles with military/defense framing (MIT TR Anduril/Meta article genre), making the "adversarial framing density" number in the demo output inconsistent with the actual correction pipeline's count.
+
+4. **Updated `README.md`** — Added `careers_demo.py` to the examples table with description.
+
+**Tests:** 888 passing (unchanged — no structural code changes).
+
+**Commit:** `a72dbea` — "Type D: careers_demo.py, bug fix, adversarial types fix"
+
+---
+
 ## 2026-06-29 05:00 PT — Hour Type C: Ownership & Funding Deep Dive — Guardian Board Completion + Dual Google Revolving Door
 
 **Focus:** Close three documented research gaps in the Guardian profile (James Goode, Patricia Cobian, Coram Williams — all marked "background not yet confirmed") and investigate board composition. Major new finding: Anna Bateson's 7-year Google career and explicit Google-relationship mandate.
