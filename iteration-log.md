@@ -7037,3 +7037,60 @@ This closes a significant gap in detecting editorial skepticism techniques that 
 - Quoted-framing false positives in framing module (needs attribution-aware detection — HIGH priority)
 - McEntarfer missed by source extractor (multi-clause attribution regex — MEDIUM priority)
 - "So-called" definitional vs delegitimizing distinction (LOW priority)
+
+---
+
+## 2026-06-29 08:00 PT — Hour Type A: Article Deep Dive
+
+### Article
+MIT Technology Review — "What even is the AI bubble?" (Alex Heath, 2025-12-15)
+URL: https://www.technologyreview.com/2025/12/15/1129183/what-even-is-the-ai-bubble/
+
+### Focus
+Entity detection gaps exposed by AI infrastructure/spending article. Nvidia, xAI, CoreWeave all missing or misclassified.
+
+### Key Findings
+
+**Entity Detection (CRITICAL fixes):**
+- Nvidia completely absent from DEFAULT_ENTITY_CLUSTERS — the #1 AI infrastructure company
+- X/Twitter cluster overloaded: xAI, Tesla, SpaceX, Starlink, Neuralink all mapped to X/Twitter. "Tesla burned $4B" counted as X/Twitter mention. "Elon Musk's xAI" counted as X/Twitter.
+- CoreWeave missing — key AI infrastructure company in circular-deal coverage
+
+**Sentiment (documented, not fixed):**
+- VADER compound = +0.9967 for a cautionary bubble article. Composite = +0.62. Manually assessed: +0.10 to +0.20.
+- Root cause: VADER inflates compound for long texts with business vocabulary. The 0.6 VADER / 0.4 TextBlob weighting overweights the broken signal.
+- Framing correction doesn't fire because article is cautionary, not adversarial — no correction path exists for "balanced but cautionary" articles.
+
+**Meta-specific framing:**
+- Zuckerberg quoted 2x. Both quotes position Meta favorably: financially safe, rational risk-taker, strong cash flow vs. "unprofitable startups." Most favorable positioning of any company in the article.
+- No adversarial framing, no editorial pushback. Consistent with MIT TR's generally analytical/neutral posture toward Meta.
+
+### Fixes Applied
+
+1. **Added Nvidia entity cluster:** Nvidia, NVIDIA, Jensen Huang, CUDA, H100, H200, A100, B200, GB200, DGX, GeForce, Omniverse, Isaac Sim, NVLink. Case-sensitive regex for NVIDIA/CUDA/GPU model numbers.
+
+2. **Split X/Twitter into 3 clusters:**
+   - X/Twitter: Twitter (with -like/-esque/-style/-inspired exclusion), X Corp, Elon Musk (with xAI exclusion), Musk
+   - xAI: xAI, Grok, Colossus, Colossus II
+   - Tesla/SpaceX: Tesla (with coil/tower/valve exclusion), SpaceX, Starlink, Neuralink
+
+3. **Added CoreWeave entity cluster:** CoreWeave, Mike Intrator.
+
+4. **Fixed X/Twitter regex false positives:** Negative lookahead for Twitter-like/esque/style/inspired compound adjectives.
+
+### Test Results
+888 passed, 0 failed
+
+### Analysis Files
+- `examples/sample_output/mit_tr_ai_bubble_meta_spending_2025_12_15_article.txt` (12,652 bytes)
+- `examples/sample_output/mit_tr_ai_bubble_meta_spending_2025_12_15_analysis.md` (10,782 bytes)
+
+### Commit
+`7d29ade` — pushed to origin/main
+
+### Known remaining gaps (documented, not fixed this iteration)
+- VADER compound inflation on long cautionary texts (HIGH priority — affects many articles)
+- scale_magnitude underdetection (1/6 instances found — MEDIUM priority)
+- ironic_quotation overcounting (7 found, ~3 genuinely ironic — MEDIUM priority)
+- Missing "strategic deflection" framing device type (LOW priority)
+- Missing "paradox kicker" framing device type (LOW priority)
