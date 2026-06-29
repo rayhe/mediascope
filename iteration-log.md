@@ -4,6 +4,43 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-29 03:00 PT — Hour Type B: Journalist/Publication Research — Maxwell Zeff (104th journalist) + Nov 2025 Wired Editorial Hires
+
+**Focus:** Research and profile Maxwell Zeff, Wired's newest AI business writer, who represents the fastest four-outlet pipeline in the dataset and the third Gizmodo → Wired migration under Brian Barrett. Also added two November 2025 Wired editorial changes.
+
+**New journalist: Maxwell Zeff**
+- Career: MSNBC (production assistant) → Connecticut Public Broadcasting (intern) → Bloomberg News (intern) → Gizmodo (reporter) → TechCrunch (senior AI reporter) → Wired (senior writer, AI business)
+- 6 career steps, 6 outlets in ~3 years — fastest multi-outlet arc in dataset
+- University of Massachusetts graduate, San Francisco-based, @wiredunion member
+- Hired by Brian Barrett, announced Nov 13 2025, started Nov 17 2025
+
+**Notable career highlights found:**
+- Bloomberg: Co-bylined SVB crisis coverage (March 2023) with Drew Singer — Barrett specifically cited this in hire announcement
+- Gizmodo: Meta's Project Ghostbusters (Onavo VPN data analytics on Snapchat/YouTube/Amazon), AI chatbot censorship systematic test (with Thomas Germain), 23 pages of articles in ~10 months
+- TechCrunch: OpenAI beat coverage (Sora, ChatGPT Atlas, apps-in-ChatGPT), SB 1047 aftermath, AI browser security risks
+- Wired: Claude Code ARR exclusive (Jun 23 2026 — broke $100M+ growth beyond $1B announced ARR, 12% of Anthropic total)
+
+**Analytical value (3 dimensions):**
+1. **Pipeline test:** Third Gizmodo → Wired migration under Barrett (after Dell Cameron, Dhruv Mehrotra) — establishes systematic talent pipeline, not anomaly
+2. **Speed test:** 4 outlets with very different institutional norms (wire service → Gawker-descendant → startup media → Condé Nast) during same AI hype cycle — tests institutional vs individual framing
+3. **Generational test:** Entire career during ChatGPT era — contrast with Will Knight (20+ years), Steve Lohr (47 years)
+
+**New editorial changes added (Wired, Nov 2025):**
+- Maxwell Zeff: senior writer, AI business (fills gap from Tom Simonite's Jun 2024 departure to Washington Post)
+- Alana Hope Levinson: features editor (from Medium/MEL Magazine consultancy, digital culture and longform)
+
+**Files modified:**
+- `profiles/careers/journalists.yaml` — Maxwell Zeff entry (6 career steps, full sourced notes)
+- `profiles/careers/editorial_changes.yaml` — 2 new Wired entries (Zeff, Levinson)
+- `README.md` — 103→104 journalists, added Zeff to migration list
+- `docs/EDITORIAL_HISTORIES.md` — 103→104, 101→102 multi-pub
+
+**Tests:** 888 passing (unchanged — no new structural test needed; Zeff passes existing multi-pub career validation).
+
+**Sources:** TalkingBizNews (hire/departure announcements Jun 2024, Jul 2024, Nov 2025), Editor & Publisher (Wired staff announcement Nov 2025), Bloomberg Línea (SVB co-byline Mar 2023), Techmeme (story aggregation across Gizmodo/TechCrunch/Wired), Muck Rack (profile), TechCrunch author bio page, Gizmodo author archive pages.
+
+---
+
 ## 2026-06-29 02:00 PT — Hour Type A: Article Deep Dive — Digital Trends NameTag Cross-Outlet + `denial_contradiction` Device
 
 **Focus:** Cross-outlet comparison of Digital Trends vs. Wired coverage of Meta NameTag facial recognition removal. Implemented new `denial_contradiction` framing device type to close critical toolkit gap.
