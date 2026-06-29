@@ -7394,3 +7394,30 @@ MIT Technology Review: "Data Centers Are Amazing. Everyone Hates Them." (Jan 14,
 
 ### Commit
 `55e5fd9` — pushed to `rayhe/mediascope` main
+
+---
+
+## 2026-06-29 16:00 PT — Type A: WebProNews Meta Dublin Contractors
+
+### Article
+"Meta Contractors Fight for Scraps as AI Replaces Dublin Content Moderators" (Victoria Mossi, WebProNews, May 29 2026). Non-tracked publication heavily sourcing WIRED (7 attributions), The Irish Times (3), The Journal (2), RTÉ (2). 720 Covalen contractor layoffs — workers trained the AI that replaced them.
+
+### Improvements
+- **New pattern: `worker_replacement_irony` (#39)** — 4 sub-patterns: forward (trained AI → replaced), reverse (replacements are the very models they built), compact, chant/slogan form. Plurals handled.
+- **New pattern: `two_tier_treatment` (#40)** — 4 sub-patterns: full-time vs contractor severance, reversed order, denied privileges of staff, using tools but not employees. Handles implicit contrast (no conjunction required).
+- **Fixed: `geopolitical_regulatory_pressure` false positive** — physical "stood firm" (security guards, police) now suppressed via lookback context filter.
+- **Expanded: `outsourced_intensity`** — 2 new sub-patterns for labor-law expert outsourced judgment (open season, cynical, utter inability near professor/researcher/academic).
+- **Fixed: `denial_contradiction` gaps** — "no evidence that/of", "there is no truth/basis" in denial vocab; post-quote combative denial pattern added.
+
+### Impact
+- Article detection: 12 → 15 devices (+25%), false positives: 1 → 0
+- Total framing device types: 41 (36 pattern-based + 5 structural)
+- 925 tests across 37 test files, all passing
+
+### Gaps Identified
+- Entity extraction misses Covalen, CPL Resources, Bain Capital, named workers/union officials, academic experts — optimized for tech companies and tracked publications, needs labor/outsourcing entity support
+- Sentiment -0.50 reasonable but possibly conservative for 10:2 critical-to-defensive source ratio
+- No pattern for protest-chant-as-literary-device (embedded poetry that reinforces editorial thesis)
+
+### Commit
+`0061ab6` — pushed to `rayhe/mediascope` main
