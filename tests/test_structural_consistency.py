@@ -46,10 +46,10 @@ class TestFramingDeviceTypeCount:
     """Guard: total framing device types in code match documented count."""
 
     def test_total_device_types_is_34(self):
-        """Code should define exactly 35 unique framing device types."""
+        """Code should define exactly 37 unique framing device types."""
         types = _all_device_types_from_code()
-        assert len(types) == 35, (
-            f"Expected 35 framing device types, got {len(types)}.\n"
+        assert len(types) == 37, (
+            f"Expected 37 framing device types, got {len(types)}.\n"
             f"Types: {sorted(types)}\n"
             "If you added a new device, update this test AND the docs:\n"
             "  - docs/METHODOLOGY.md §4.1 total and tier counts\n"
@@ -60,13 +60,13 @@ class TestFramingDeviceTypeCount:
         )
 
     def test_pattern_matched_types_is_30(self):
-        """30 types should come from regex patterns (core + extended)."""
+        """32 types should come from regex patterns (core + extended)."""
         src = (_REPO_ROOT / "mediascope" / "analyze" / "framing.py").read_text()
         pattern_keys = set(re.findall(r'_DEVICE_PATTERNS\["(\w+)"\]', src))
         initial_keys = set(re.findall(r'"(\w+)":\s*_[A-Z_]+_PATTERNS', src))
         pattern_types = initial_keys | pattern_keys
-        assert len(pattern_types) == 30, (
-            f"Expected 30 pattern-matched device types, got {len(pattern_types)}.\n"
+        assert len(pattern_types) == 32, (
+            f"Expected 32 pattern-matched device types, got {len(pattern_types)}.\n"
             f"Types: {sorted(pattern_types)}"
         )
 
@@ -125,31 +125,31 @@ class TestDocCountConsistency:
     """Guard: documented counts match across files."""
 
     def test_architecture_device_count(self):
-        """ARCHITECTURE.md must say 35 framing device types."""
+        """ARCHITECTURE.md must say 37 framing device types."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
-        assert "**35 framing device types**" in doc, (
-            "ARCHITECTURE.md framing device count is stale. Should be 35."
+        assert "**37 framing device types**" in doc, (
+            "ARCHITECTURE.md framing device count is stale. Should be 37."
         )
 
     def test_methodology_device_count(self):
-        """METHODOLOGY.md must say 35 framing device types."""
+        """METHODOLOGY.md must say 37 framing device types."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
-        assert "35 framing device types" in doc, (
-            "METHODOLOGY.md framing device count is stale. Should be 35."
+        assert "37 framing device types" in doc, (
+            "METHODOLOGY.md framing device count is stale. Should be 37."
         )
 
     def test_agent_guide_device_count(self):
-        """AGENT_GUIDE.md must say 35 device types."""
+        """AGENT_GUIDE.md must say 37 device types."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
-        assert "35 device types" in doc, (
-            "AGENT_GUIDE.md framing device count is stale. Should be 35."
+        assert "37 device types" in doc, (
+            "AGENT_GUIDE.md framing device count is stale. Should be 37."
         )
 
     def test_cli_analyze_device_count(self):
-        """CLI analyze docstring must say 35 types."""
+        """CLI analyze docstring must say 37 types."""
         cli_src = (_REPO_ROOT / "mediascope" / "cli.py").read_text()
-        assert "35 types" in cli_src, (
-            "CLI analyze command docstring framing device count is stale. Should be 35."
+        assert "37 types" in cli_src, (
+            "CLI analyze command docstring framing device count is stale. Should be 37."
         )
 
     def test_readme_banned_phrases_count(self):
@@ -348,17 +348,27 @@ class TestCrossReferenceConsistency:
     """
 
     def test_methodology_same_event_table_uses_34_type(self):
-        """METHODOLOGY.md §13 same-event comparison must reference 35-type taxonomy."""
+        """METHODOLOGY.md §13 same-event comparison must reference 37-type taxonomy."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
         assert "33-type" not in doc, (
             "METHODOLOGY.md still references stale '33-type' taxonomy in §13 "
-            "(same-event comparison). Should be '35-type' after social_proof_amplification "
-            "was added as framing device #35."
+            "(same-event comparison). Should be '37-type' after latecomer_narrative "
+            "and regulatory_shadow were added."
         )
         assert "34-type" not in doc, (
             "METHODOLOGY.md still references stale '34-type' taxonomy. "
-            "Should be '35-type' after social_proof_amplification "
-            "was added as framing device #35."
+            "Should be '37-type' after latecomer_narrative "
+            "and regulatory_shadow were added."
+        )
+        assert "35-type" not in doc, (
+            "METHODOLOGY.md still references stale '35-type' taxonomy. "
+            "Should be '37-type' after latecomer_narrative "
+            "and regulatory_shadow were added."
+        )
+        assert "36-type" not in doc, (
+            "METHODOLOGY.md still references stale '36-type' taxonomy. "
+            "Should be '37-type' after latecomer_narrative "
+            "and regulatory_shadow were added."
         )
 
     def test_readme_test_topics_description_says_15(self):
@@ -377,26 +387,22 @@ class TestCrossReferenceConsistency:
         )
 
     def test_no_stale_33_type_in_any_doc(self):
-        """No documentation file should reference '33-type' or '34-type' (stale framing count)."""
+        """No documentation file should reference stale framing count X-type strings."""
         for doc_file in (_REPO_ROOT / "docs").glob("*.md"):
             content = doc_file.read_text()
-            assert "33-type" not in content, (
-                f"{doc_file.name} contains stale '33-type' reference. "
-                f"Should be '35-type' after social_proof_amplification was added."
-            )
-            assert "34-type" not in content, (
-                f"{doc_file.name} contains stale '34-type' reference. "
-                f"Should be '35-type' after social_proof_amplification was added."
-            )
+            for stale in ("33-type", "34-type", "35-type", "36-type"):
+                assert stale not in content, (
+                    f"{doc_file.name} contains stale '{stale}' reference. "
+                    f"Should be '37-type' after latecomer_narrative and regulatory_shadow were added."
+                )
 
     def test_no_stale_33_framing_device_in_readme(self):
-        """README.md should not reference 33 or 34 framing devices anywhere."""
+        """README.md should not reference stale framing device counts."""
         doc = (_REPO_ROOT / "README.md").read_text()
-        # Check for "33 framing" or "33-type" patterns
-        stale_refs = re.findall(r"\b3[34][- ](?:type|framing|device)", doc)
+        stale_refs = re.findall(r"\b3[3-6][- ](?:type|framing|device)", doc)
         assert not stale_refs, (
             f"README.md contains stale framing reference(s): {stale_refs}. "
-            f"Should be 35 after social_proof_amplification was added."
+            f"Should be 37 after latecomer_narrative and regulatory_shadow were added."
         )
 
     def test_readme_topic_count_in_description(self):

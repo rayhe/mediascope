@@ -4,6 +4,23 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-28 18:00 PT — Hour Type A: Article Deep Dive — NYT Arena/Polymarket Partnership, Two New Framing Devices
+
+**Focus:** Deep analysis of NYT "Zuckerberg asks Meta to explore Polymarket/Kalshi partnership" article (June 26, 2026). Identified and implemented two new framing device types: `latecomer_narrative` (#36) and `regulatory_shadow` (#37).
+**Rationale:** Manual analysis of the Arena article revealed two editorial techniques not yet captured by the toolkit: (1) **Latecomer narrative** — framing Meta as entering a space after competitors (exploring partnerships with existing platforms vs. innovating independently, "market already dominated by," "playing catch-up"); (2) **Regulatory shadow** — inserting ambient regulatory/legal context into a product story where it's tangential (prediction market "scrutiny" and insider trading investigations applied to Meta's Arena product, not to Meta specifically). These are distinct from existing devices: latecomer_narrative is distinct from straw_man (it's not misrepresenting a position) and from juxtaposition (it's not placing two facts side by side for contrast); regulatory_shadow is distinct from litigation_framing (which captures explicit legal actions) and geopolitical_regulatory_pressure (which captures state-level pressure campaigns).
+**Changes:**
+- `mediascope/analyze/framing.py`: Added `_LATECOMER_NARRATIVE_PATTERNS` (8 patterns) and `_REGULATORY_SHADOW_PATTERNS` (8 patterns) with detailed docstrings explaining editorial mechanism and real-world source.
+- Updated `detect_framing_devices()` docstring: 31→33 pattern-matched, 36→38 total.
+- `docs/ARCHITECTURE.md`: 35→37 framing device types, Extended tier 20→22, added descriptions.
+- `docs/METHODOLOGY.md`: 35→37 total, 20→22 extended, updated §13 taxonomy reference.
+- `docs/AGENT_GUIDE.md`: 35→37 device types, 20→22 extended.
+- `mediascope/cli.py`: 35→37 types.
+- `tests/test_latecomer_regulatory_framing.py`: New test file (34 tests) — 13 positive + 2 negative for latecomer_narrative, 13 positive + 2 negative for regulatory_shadow, 3 integration tests on Arena article excerpt.
+- `tests/test_structural_consistency.py`: Updated all count guards (35→37 total, 30→32 pattern), stale-count purge guards extended to cover 35-type/36-type.
+- `tests/test_nyt_ai_reviews.py`: Updated pattern count (30→32), added new types to expected set.
+- `README.md`: Updated test table (added new test file row, updated structural consistency description), updated header (787→820 tests, 31→32 files).
+**Test results:** 820 tests across 32 files — all passing.
+
 ## 2026-06-28 14:00 PT — Hour Type D: Toolkit Quality & Documentation — Inline Topic List Fix, Scoring Accuracy Docs, Structural Guards
 
 **Focus:** Fix stale ARCHITECTURE.md inline topic list, add QUALITY_STANDARDS.md §7 (Automated Scoring Accuracy), add 5 structural consistency tests for inline topic list and quality standards validation.
@@ -6315,3 +6332,96 @@ The editorial intensity (0.774) exceeds the quoted intensity (0.485), meaning th
 - 787 tests passed (all green)
 - 102 journalists tracked
 - Commit `9921938` — pushed to main
+
+---
+
+## 2026-06-28 17:00 PT — Type C: Ownership & Funding Deep Dive — MIT Lincoln Laboratory, DAF-MIT AI Accelerator, Media Lab Consortium
+
+**Focus:** Three entirely new profile sections for MIT Technology Review: Lincoln Laboratory (DoD's largest FFRDC), DAF-MIT AI Accelerator (military AI bridge), and Media Lab corporate consortium (post-Epstein rebuild). Plus 3 new known conflicts and updated analytical notes.
+**Rationale:** MIT TR's profile (783 lines) had ZERO coverage of MIT Lincoln Laboratory — a $1.36B/year, 4,500-person defense research enterprise that is MIT's largest entity by far, dwarfing all campus research combined. The $12.2B contract renewal (April 2025) makes MIT one of the DoD's most important institutional partners. This is the single largest gap in any publication profile in the toolkit.
+
+### 1. Lincoln Laboratory (NEW SECTION — ~100 lines)
+
+| Metric | Finding |
+|---|---|
+| Annual federal R&D expenditures | $1.36B (FY2024, NSF data) |
+| DoD portion | $1.27B (93% of total) |
+| Current contract | $12,213,406,028 (FA8702-25-D-B002, April 1, 2025, through March 2030) |
+| Previous contract cycle | $20.14B cumulative over 10 years |
+| Staff | ~4,500 MIT employees + 475 subcontracted |
+| Status | DoD's LARGEST FFRDC R&D laboratory |
+| Director | Melissa G. Choi (since July 1, 2024, first woman director) |
+| Reports to | MIT Provost (Cynthia Barnhart — ALSO MIT TR board Co-Chair) |
+
+**TX-GAIN Supercomputer:** 600+ Nvidia H100 GPUs, 2 AI exaflops, Top500 #114 (June 2025). Most powerful AI-dedicated supercomputer at a US university. Applications: generative AI, radar signatures, biodefense protein modeling, materials discovery. Nvidia hardware dependency creates coverage conflict.
+
+**Critical governance link:** Lincoln Lab director reports to MIT Provost → MIT Provost co-chairs MIT TR board. Same person oversees $1.36B/year defense lab AND the publication.
+
+**Patent/tech transfer:** 945 patents by 2010 (548 licensed), spinoffs include MITRE Corporation and Digital Equipment Corporation.
+
+### 2. DAF-MIT AI Accelerator (NEW SECTION — ~40 lines)
+
+| Metric | Finding |
+|---|---|
+| Funding | ~$15M/year from Department of the Air Force |
+| Established | 2019 (Executive Order 13859) |
+| MIT-side director | Daniela Rus (ALSO CSAIL director + Defense Innovation Board) |
+| Projects | 20+ |
+| Participants | ~140 MIT faculty/researchers/students + 16 military personnel |
+| Cooperative Agreement | FA8750-19-2-1000 |
+
+**Triple role (Daniela Rus):** CSAIL director + AI Accelerator director + Defense Innovation Board member. Most concentrated defense-AI-academic nexus in the 5-pub set.
+
+### 3. Media Lab Consortium (NEW SECTION — ~35 lines)
+
+| Metric | Finding |
+|---|---|
+| Member count | 70+ corporate sponsors |
+| Consortium Research Sponsor fee | $400,000/year |
+| IP rights | Full, license-fee free, royalty-free |
+| Recent/current members | Mitsubishi Electric, SEALSQ, L&T Technology, Samsung, Hyundai, Castrol, NTT DATA, Kioxia, Dentsu, MuRata |
+
+**Samsung dual role:** Both EmTech event sponsor AND Media Lab consortium member — creating double-channel coverage conflict.
+
+### 4. Three New Known Conflicts (severity 4, 3, 2)
+
+- **lincoln_laboratory_defense_conflicts (severity 4):** $12.2B contract + $1.36B/yr budget + Provost→Board governance pipeline + TX-GAIN Nvidia dependency + ISR/surveillance/AI coverage overlap
+- **daf_ai_accelerator_military_ai_bridge (severity 3):** $15M/yr + Rus triple role + active AI-to-military technology transfer + 20+ projects
+- **media_lab_consortium_coverage_overlap (severity 2):** $400K/yr members + full IP rights + post-Epstein rebuild + Samsung dual channel
+
+### 5. Updated Analytical Notes
+
+Added **Conflict Taxonomy (4 dimensions)** to the notes section:
+1. COOPERATIVE CORPORATE (companies pay MIT for research)
+2. VENTURE/INVESTMENT (MIT profits from tech exits)
+3. DEFENSE/GOVERNMENT (MIT receives DoD funding — NEW)
+4. CONSORTIUM/EVENTS (companies pay for access — EXPANDED)
+
+"No other publication in the 5-pub tracking set has conflicts across ALL FOUR dimensions simultaneously."
+
+### Sources Used
+- NSF NCSES FFRDC expenditure data (FY2024): ncses.nsf.gov
+- DoD contract announcement (GlobalSecurity.org, April 1, 2025)
+- MIT News (Lincoln Lab workhorse article, contract renewal clip)
+- MIT Office of General Counsel (contract details, $20.14B cumulative)
+- Wikipedia: MIT Lincoln Laboratory (comprehensive history, org structure)
+- Data Center Dynamics / MIT News / New Atlas / HPCwire (TX-GAIN specs)
+- DAF-MIT AI Accelerator website (aia.mit.edu)
+- MIT News: AI Accelerator launch (May 2019, $15M/yr)
+- Air & Space Forces Magazine (AIA personnel profile)
+- MIT Media Lab website (member collaboration spotlights)
+- GlobeNewswire (SEALSQ membership, Oct 2025)
+- BusinessWire (L&T Technology Services membership, Sep 2025)
+- Finance Magnates (consortium fee $400K/yr)
+
+### Files Modified
+- `profiles/mit-tech-review.yaml`: +310 lines (783→1093). Three new sections, 3 new known conflicts, updated notes
+- `README.md`: Updated MIT TR conflict summary in publication profiles table
+
+### Stats After
+- 787 tests passed (31 test files, all green)
+- MIT TR profile: 1,093 lines (largest in toolkit, up from 783)
+- 14 known conflicts (up from 11)
+- 4 conflict dimensions documented (up from 2)
+- Commit pending — pushed to main
+

@@ -2441,6 +2441,186 @@ _CONFESSION_FRAMING_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["confession_framing"] = _CONFESSION_FRAMING_PATTERNS
 
 
+# ---------------------------------------------------------------------------
+# Latecomer narrative — editorial device that frames a company as entering
+# a space after competitors already established themselves, positioning the
+# subject as playing catch-up rather than innovating.  Common in tech
+# coverage: "Meta explores partnerships with Polymarket" (existing player)
+# vs "Meta launches prediction market" (innovator).  The editorial choice
+# to emphasize partnership/exploration with incumbents rather than
+# independent capability is itself a framing decision.
+#
+# Identified in NYT's Meta Arena/Polymarket partnership article (Jun 2026):
+# the article frames Meta as exploring working WITH existing platforms
+# rather than building a competing product, a latecomer construction.
+# ---------------------------------------------------------------------------
+
+_LATECOMER_NARRATIVE_PATTERNS: list[re.Pattern] = [
+    # "exploring partnerships with [Established Player]"
+    re.compile(
+        r"\bexplor(?:ing|es?|ed)\s+(?:a\s+)?(?:potential\s+)?"
+        r"(?:partnership|collaboration|deal|alliance|tie-up|arrangement)s?\s+"
+        r"with\b",
+        re.IGNORECASE,
+    ),
+    # "joining the race" / "entering the race"
+    re.compile(
+        r"\b(?:join(?:ing|ed|s)?|enter(?:ing|ed|s)?)\s+the\s+"
+        r"(?:race|competition|market|fray|arena|battle|fight)\b",
+        re.IGNORECASE,
+    ),
+    # "following in the footsteps of" / "taking a page from"
+    re.compile(
+        r"\b(?:follow(?:ing|ed|s)?\s+in\s+the\s+footsteps\s+of|"
+        r"tak(?:ing|es?|en)\s+a\s+(?:page|leaf|cue)\s+from)\b",
+        re.IGNORECASE,
+    ),
+    # "building a similar app/product/platform/feature" / "developing its own version"
+    re.compile(
+        r"\b(?:build(?:ing|s)?|develop(?:ing|s)?|creat(?:ing|es?)|"
+        r"roll(?:ing|s)?\s+out|launch(?:ing|es)?)\s+"
+        r"(?:a\s+)?(?:its?\s+own\s+)?(?:similar|competing|rival|copycat|"
+        r"comparable|equivalent|alternative)\s+"
+        r"(?:app|product|platform|feature|service|tool|version|offering)\b",
+        re.IGNORECASE,
+    ),
+    # "a market already dominated by" / "space already occupied by"
+    re.compile(
+        r"\b(?:market|space|field|sector|industry|category|arena)\s+"
+        r"(?:already\s+)?(?:dominated|occupied|led|controlled|cornered|"
+        r"owned)\s+by\b",
+        re.IGNORECASE,
+    ),
+    # "playing catch-up" / "trying to catch up"
+    re.compile(
+        r"\b(?:play(?:ing|s|ed)?\s+catch[- ]?up|"
+        r"try(?:ing|ies)?\s+to\s+catch\s+up|"
+        r"scrambl(?:ing|es?|ed)\s+to\s+(?:catch|keep)\s+up)\b",
+        re.IGNORECASE,
+    ),
+    # "late to the game" / "late entrant" / "latecomer"
+    re.compile(
+        r"\b(?:late(?:comer)?(?:\s+to\s+the\s+(?:game|party|market|race|space))?|"
+        r"late\s+entrant|johnny[- ]?come[- ]?lately|"
+        r"behind\s+(?:the\s+)?(?:curve|times|competitors|rivals|peers))\b",
+        re.IGNORECASE,
+    ),
+    # "still lacks" / "still doesn't have" / "yet to develop" — capability
+    # gap framing relative to established competitors.
+    re.compile(
+        r"\b(?:still\s+(?:lack(?:s|ing|ed)?|"
+        r"do(?:es)?n['\u2019]t\s+have|"
+        r"has(?:n['\u2019]t| not)\s+(?:developed|built|launched|created))|"
+        r"(?:has|have)\s+yet\s+to\s+(?:develop|build|launch|create|roll out))\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["latecomer_narrative"] = _LATECOMER_NARRATIVE_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Regulatory shadow — editorial device where regulatory, legal, or
+# investigative context is appended to or interwoven with a product or
+# business story, casting a shadow over the primary subject without
+# directly accusing it.  The juxtaposition of "increasing scrutiny,"
+# "drawn regulatory attention," or pending legal action near a product
+# announcement or business deal implies risk or wrongdoing by proximity.
+#
+# Distinct from litigation_framing (which captures explicit legal actions)
+# and geopolitical_regulatory_pressure (which captures state-level
+# pressure campaigns).  Regulatory shadow is the *ambient* technique of
+# inserting regulatory/legal context into stories where it is tangential
+# to the primary subject.
+#
+# Identified in NYT's Meta Arena/Polymarket partnership article (Jun 2026):
+# prediction markets context is shadowed by references to "increasing
+# scrutiny" and insider trading investigations — regulatory concerns
+# belonging to the broader prediction market industry, not to Meta's
+# product specifically.
+# ---------------------------------------------------------------------------
+
+_REGULATORY_SHADOW_PATTERNS: list[re.Pattern] = [
+    # "increasing/growing/heightened scrutiny" — ambient regulatory
+    # atmosphere applied to a company or product.
+    re.compile(
+        r"\b(?:increas(?:ing|ed)|growing|heightened|renewed|intensif(?:ied|ying)|"
+        r"mounting|escalat(?:ing|ed)|greater)\s+"
+        r"(?:regulatory\s+)?scrutiny\b",
+        re.IGNORECASE,
+    ),
+    # "drawn scrutiny from" / "attracted scrutiny from"
+    re.compile(
+        r"\b(?:draw(?:n|ing|s)?|attract(?:ed|ing|s)?|invit(?:ed|ing|es)?|"
+        r"garner(?:ed|ing|s)?)\s+(?:increased\s+|growing\s+|renewed\s+)?"
+        r"(?:regulatory\s+)?scrutiny\b",
+        re.IGNORECASE,
+    ),
+    # "facing regulatory" + noun — "facing regulatory hurdles/challenges/
+    # pressure/uncertainty/risk/headwinds"
+    re.compile(
+        r"\bfac(?:ing|es?|ed)\s+(?:potential\s+|new\s+|fresh\s+|additional\s+)?"
+        r"regulatory\s+"
+        r"(?:hurdle|challenge|pressure|uncertainty|risk|headwind|"
+        r"obstacle|barrier|concern|question|investigation|inquiry|probe|"
+        r"review|backlash|pushback|opposition)s?\b",
+        re.IGNORECASE,
+    ),
+    # "regulators have/are" + action — regulators framed as active agents
+    # moving against the subject.
+    re.compile(
+        r"\bregulators?\s+(?:have\s+|are\s+|had\s+|were\s+)?"
+        r"(?:investigat(?:ing|ed)|examin(?:ing|ed)|prob(?:ing|ed)|"
+        r"question(?:ing|ed)|warn(?:ing|ed)|target(?:ing|ed)|"
+        r"crack(?:ing|ed)\s+down|rais(?:ing|ed)\s+concerns?|"
+        r"express(?:ing|ed)\s+concerns?|signal(?:l?ing|l?ed))\b",
+        re.IGNORECASE,
+    ),
+    # "amid/despite/notwithstanding" + regulatory/legal context — the
+    # syntactic marker for shadow framing: product news presented "amid"
+    # regulatory developments.
+    re.compile(
+        r"\b(?:amid(?:st)?|despite|notwithstanding|even as|at a time when)\s+"
+        r"(?:\w+\s+){0,4}(?:regulat(?:ory|ion|ors?)|"
+        r"antitrust|investigation|probe|inquiry|enforcement|litigation|"
+        r"lawsuit|legal\s+(?:challenge|battle|threat|action|scrutiny)|"
+        r"compliance\s+(?:concern|issue|risk))\b",
+        re.IGNORECASE,
+    ),
+    # "raised concerns about" / "sparked concerns about" — editorial
+    # device that introduces worry without attributing it to a specific
+    # source.
+    re.compile(
+        r"\b(?:rais(?:ed|ing|es?)|spark(?:ed|ing|s)?|prompt(?:ed|ing|s)?|"
+        r"fuel(?:l?ed|l?ing|s)?|stok(?:ed|ing|es)?|stirr(?:ed|ing|s)?)\s+"
+        r"(?:fresh\s+|new\s+|renewed\s+)?concerns?\s+"
+        r"(?:about|over|regarding|that)\b",
+        re.IGNORECASE,
+    ),
+    # "potential fine/penalty/sanction" — implied legal consequences
+    # inserted into business coverage.
+    re.compile(
+        r"\b(?:potential|possible|looming|threatened|expected|anticipated|"
+        r"prospective)\s+"
+        r"(?:fine|penalty|penalt(?:ies)|sanction|enforcement\s+action|"
+        r"legal\s+action|regulatory\s+action|consent\s+(?:decree|order)|"
+        r"ban|restriction|crackdown)s?\b",
+        re.IGNORECASE,
+    ),
+    # "could face" / "may face" + legal/regulatory consequences —
+    # speculative-regulatory construction.
+    re.compile(
+        r"\b(?:could|may|might|would)\s+(?:potentially\s+)?face\s+"
+        r"(?:\w+\s+){0,3}(?:fine|penalty|penalt(?:ies)|sanction|"
+        r"enforcement|regulatory|legal|antitrust|investigation|"
+        r"scrutiny|backlash|action|challenge|lawsuit|litigation)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["regulatory_shadow"] = _REGULATORY_SHADOW_PATTERNS
+
+
 def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
     """Detect analogy stacking — 3+ distinct analogies for the same subject.
 
@@ -2767,10 +2947,10 @@ def _detect_social_proof_amplification(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 31 pattern-matched device types plus 5 structural
-    post-pass types (36 total).
+    Scans for 33 pattern-matched device types plus 5 structural
+    post-pass types (38 total).
 
-    Pattern-matched (31): guilt_by_association, anonymous_authority,
+    Pattern-matched (33): guilt_by_association, anonymous_authority,
     catastrophizing, false_balance, selective_omission_signal,
     emotional_appeal, straw_man, loaded_language, refusal_amplification,
     juxtaposition, timeline_implication, power_asymmetry,
@@ -2781,7 +2961,8 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     scale_magnitude, ceo_personalization, litigation_framing,
     corporate_reassurance_undercut, sarcastic_correction,
     hypocrisy_frame, outsourced_intensity, confession_framing,
-    precedent_analogy, and social_proof_amplification.
+    precedent_analogy, social_proof_amplification,
+    latecomer_narrative, and regulatory_shadow.
 
     Structural post-pass (5): kicker_framing, analogy_stacking,
     speculative_framing, trend_bundling, social_proof_amplification.
