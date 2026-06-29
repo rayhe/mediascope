@@ -102,9 +102,35 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
     },
     "X/Twitter": {
         "aliases": [
-            "Twitter", "X Corp", "Elon Musk", "Musk", "SpaceX", "Tesla",
-            "xAI", "Grok", "Starlink", "Neuralink", "Colossus", "Colossus II",
+            "Twitter", "X Corp", "Elon Musk", "Musk",
         ],
+        "regex": r"(?<!\w)(Twitter(?!-(?:like|esque|style|inspired))|X Corp|Elon Musk(?!'s xAI)|(?<!Elon\s)Musk(?!\s+(?:Ox|ox|melon|deer)))(?!\w)",
+    },
+    "xAI": {
+        "aliases": [
+            "xAI", "Grok", "Colossus", "Colossus II",
+        ],
+        "regex": r"(?<!\w)(xAI|Grok(?!\s+(?:the|TV|Network))|Colossus(?:\s+II)?)(?!\w)",
+    },
+    "Tesla/SpaceX": {
+        "aliases": [
+            "Tesla", "SpaceX", "Starlink", "Neuralink",
+        ],
+        "regex": r"(?<!\w)(Tesla(?!\s+(?:coil|tower|valve))|SpaceX|Starlink|Neuralink)(?!\w)",
+    },
+    "Nvidia": {
+        "aliases": [
+            "Nvidia", "NVIDIA", "Jensen Huang", "CUDA", "H100", "H200",
+            "A100", "B200", "GB200", "DGX", "GeForce", "Omniverse",
+            "Isaac Sim", "NVLink",
+        ],
+        "regex": r"(?<!\w)((?-i:NVIDIA)|Nvidia|Jensen Huang|(?-i:CUDA)|(?-i:H100|H200|A100|B200|GB200|DGX)|GeForce|Omniverse|Isaac Sim|NVLink)(?!\w)",
+    },
+    "CoreWeave": {
+        "aliases": [
+            "CoreWeave", "Mike Intrator",
+        ],
+        "regex": r"(?<!\w)(CoreWeave|Mike Intrator)(?!\w)",
     },
     "Palantir": {
         "aliases": [
