@@ -4,6 +4,36 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-29 10:00 PT — Hour Type A: Article Deep Dive — MIT Technology Review × Meta AI Agent Hack
+
+**Focus:** Deep analysis of MIT Technology Review's June 5, 2026 article "The Meta hack shows there's more to AI security than Mythos" by Grace Huckins. First MIT Tech Review article with full toolkit gap identification and code fix in the same iteration.
+
+**Article summary:** Attackers used Meta's AI customer support agent to steal Instagram accounts by simply asking it to change email addresses. MIT Tech Review frames this against the backdrop of Mythos-level AI security fears, using the contrast to deflate Meta's competence.
+
+**Key findings:**
+
+1. **Expert-outsourced editorial judgment** — The article's primary framing technique: 4/4 quoted experts express criticism or alarm, 0/4 provide mitigating context or defend Meta. The journalist never editorially states "Meta was negligent" — expert selection does that work. This is a higher-craft bias technique than loaded headlines because readers perceive it as balanced consensus.
+
+2. **Toolkit gap identified and fixed: `outsourced_intensity` patterns** — The existing patterns only covered legal/complaint-context outsourcing (lawsuits, filings). Added 4 new patterns for expert-outsourced editorial judgment:
+   - Pattern A: `"[loaded quote]" says X, a professor/analyst` (attribution after quote)
+   - Pattern B: `professor/analyst ... says ... "[loaded quote]"` (credential before quote)
+   - Pattern C: `analyst ... agrees. "[rhetorical question]"` (expert endorsement + question)
+   - Pattern D: `"[very dangerous / deeply troubling]"` (standalone alarm-phrase quotes)
+   - Result: `outsourced_intensity` now fires 2× on this article (Ji agrees + rhetorical question; Jha alarm-phrase kicker). Previously 0.
+
+3. **Entity false positive: Bo Li** — UIUC professor incorrectly clustered under "Meta" entity cluster. Bug documented; fix deferred to entity-specific iteration.
+
+4. **Competence juxtaposition (title-level)** — "The Meta hack" vs. "Mythos" creates a deflation frame by proximity to frontier AI. Not detectable by current `juxtaposition` patterns (which cover profit/layoffs, military/consumer). Noted as structural gap.
+
+**Changes:**
+- `mediascope/analyze/framing.py`: +4 expert-outsourced intensity patterns (Pattern A/B/C/D)
+- `examples/sample_output/mit_tech_review_meta_ai_agent_instagram_hack_2026_06_05_article.txt`: Full article text
+- `examples/sample_output/mit_tech_review_meta_ai_agent_instagram_hack_2026_06_05_analysis.md`: Comprehensive analysis with toolkit gap identification, entity audit, sentiment comparison to Wired/Reuters MCI coverage, conflict-of-interest context
+
+**Test results:** 888 passed, 0 failed. No regressions. Expert-outsourced patterns fire correctly on MIT Tech Review article and produce 0 false positives on existing corpus (verified against all ~90 article files).
+
+---
+
 ## 2026-06-29 06:00 PT — Hour Type D: Toolkit Quality & Documentation — Careers Demo + Bug Fixes
 
 **Focus:** Create the first runnable example for the Editorial Histories module (the toolkit's most original contribution), fix a data validation bug that crashed CareerTracker, and correct an adversarial types inconsistency in the framing correction demo.
@@ -7094,3 +7124,51 @@ Entity detection gaps exposed by AI infrastructure/spending article. Nvidia, xAI
 - ironic_quotation overcounting (7 found, ~3 genuinely ironic — MEDIUM priority)
 - Missing "strategic deflection" framing device type (LOW priority)
 - Missing "paradox kicker" framing device type (LOW priority)
+
+---
+
+## 2026-06-29 09:00 PT — Type A: Article Deep Dive
+
+### Focus
+MIT Technology Review: "Data Centers Are Amazing. Everyone Hates Them." (Jan 14, 2026)
+
+### Article Selection Rationale
+- Essay-format opinion piece from tracked publication (MIT TR)
+- Tests toolkit on non-standard format: no quoted sources, first-person voice, extended analogy structure
+- Mentions Meta once as negative exemplar (Wyoming data center electricity stat)
+- Cross-publication comparison opportunity with Atlantic "Dirty, Dystopian" data centers piece (Mar 2026)
+
+### Key Findings
+1. **Topic misclassification**: Article classified as `corporate_strategy` (0.43) — actually about infrastructure/community impact
+2. **Meta entity not detected**: Single mention below entity detection threshold — significant because Meta used as the most extreme negative data point
+3. **Emotional language underdetection**: 0.13 intensity vs manual 0.40 — many infrastructure-specific emotional terms missing
+4. **Extended analogy completely invisible**: 6-paragraph Google bus parallel undetected — new device type needed
+5. **30% framing device detection rate**: Lowest in corpus (6/20), driven by essay format's structural/tonal devices vs sentence-level patterns
+6. **Sardonic tone unmeasured**: Ironic opening ("Behold!"), distancing language ("we are told"), defeated kicker — all missed
+
+### Changes Made
+
+1. **NEW topic bucket: `infrastructure_impact`** (37 keywords) — data center, power grid, NIMBY, rezoning, environmental impact, community opposition, megawatt, cooling system, tax breaks, etc. Article now correctly classified at 0.6111 confidence (19 matched keywords). Updated all docs: METHODOLOGY.md, ARCHITECTURE.md, AGENT_GUIDE.md, README.md.
+
+2. **Emotional language expansion** (+22 terms): incensed, infuriates/infuriated/infuriating, eyesore/eyesores, came gunning for/gunning for, powerless/powerlessness, gentrification/gentrified/gentrifying, dirty, shrouded in secrecy/shrouded, skyrocketing/skyrocketed, noisy, constant hum, NIMBY, California billionaires. Emotional intensity: 0.13 → 0.56 (manual: 0.40, slight overshoot but much better).
+
+3. **Updated structural consistency tests**: Topic bucket count 17→18, emotional language count 414→436. Removed 4 duplicate terms (polluting, polluted, pollution, backlash already existed).
+
+### Test Results
+888 passed, 0 failed
+
+### Analysis Files
+- `examples/sample_output/mit_tr_data_centers_nimby_2026_01_14_article.txt` (7,573 bytes)
+- `examples/sample_output/mit_tr_data_centers_nimby_2026_01_14_analysis.md` (18,750 bytes)
+
+### Commit
+`1776076` — pushed to origin/main
+
+### Known remaining gaps (documented, not fixed this iteration)
+- Meta entity missed on single mention (P0 — need target entity minimum-detection guarantee)
+- Extended analogy device type needed (P2 — multi-paragraph historical parallels)
+- Ironic opening detection (P2 — mock-awe → deflation → adversative transition)
+- Distancing language device (P3 — "we are told", "if you believe")
+- Kicker enhancement for ironic-defeat pattern (P3)
+- Agency attribution still 0.0 vs manual -0.40 (structural, not verb-based)
+- Comparative framing still 0.0 vs manual -0.50 (extended analogy, not single comparison)

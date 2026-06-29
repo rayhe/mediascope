@@ -2239,6 +2239,77 @@ _OUTSOURCED_INTENSITY_PATTERNS: list[re.Pattern] = [
         r"predatory|oppressive|hostile|toxic)\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # --- Expert-outsourced editorial judgment patterns ---
+    # Expert quotes carrying loaded characterizations or strong negative
+    # evaluations that the journalist does not state editorially.  This
+    # captures a subtler form of outsourced intensity: academic/industry
+    # experts serve as the vehicle for criticism the publication endorses
+    # structurally (through source selection) without owning editorially.
+    #
+    # Key structural patterns in real articles:
+    #   A) "[loaded quote]" says/said X, a professor at University
+    #   B) X, a professor at University, says/said "[loaded quote]"
+    #   C) X says/said ... "[loaded quote]" (credential mentioned earlier)
+
+    # Pattern A: loaded quote followed by expert attribution
+    # "[...loaded word...]" says/said X, a professor/researcher/analyst
+    re.compile(
+        r'["\u201c]'
+        r"(?:[^\"\u201d]{0,200}?)"
+        r"\b(?:surprising|shocked|alarming|disturbing|troubling|"
+        r"striking|embarrassing|negligent|reckless|dangerous|"
+        r"unconscionable|egregious|inexcusable|incompetent|"
+        r"mindless|careless|sloppy|baffling|inexplicable|"
+        r"staggering|appalling)\b"
+        r"(?:[^\"\u201d]{0,80}?)"
+        r'["\u201d]'
+        r".{0,60}?"
+        r"\b(?:says?|said|warned|cautioned|argued|noted)\b"
+        r".{0,60}?"
+        r"\b(?:professor|researcher|analyst|expert|scholar|"
+        r"fellow|scientist|director|specialist)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Pattern B: expert credential then says then loaded quote
+    re.compile(
+        r"\b(?:professor|researcher|analyst|expert|scholar|"
+        r"fellow|scientist|director|specialist)\b"
+        r".{0,80}?"
+        r"\b(?:says?|said|told|warned|cautioned|argued)\b"
+        r".{0,40}?"
+        r'["\u201c]'
+        r"(?:[^\"\u201d]{0,200}?)"
+        r"\b(?:surprising|shocked|alarming|disturbing|troubling|"
+        r"striking|embarrassing|negligent|reckless|dangerous|"
+        r"unconscionable|egregious|inexcusable|incompetent|"
+        r"mindless|careless|sloppy|baffling|inexplicable|"
+        r"staggering|appalling)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Expert agrees + loaded question / alarm (handles "analyst ... agrees. '...'")
+    re.compile(
+        r"\b(?:senior\s+)?(?:research\s+)?(?:professor|researcher|analyst|"
+        r"expert|scholar|fellow|scientist|director|specialist)\b"
+        r".{0,100}?"
+        r"\b(?:agrees?|concurs?|echoes?|adds?)\b"
+        r".{0,10}?"
+        r'["\u201c]'
+        r"(?:[^\"\u201d]{0,200}?)"
+        r"(?:\?|surprising|striking|alarming|troubling|dangerous)",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Expert quote with alarm phrase (standalone — no trailing attribution
+    # needed since the credential may have been established earlier)
+    re.compile(
+        r'["\u201c]'
+        r"(?:[^\"\u201d]{0,200}?)"
+        r"\b(?:very dangerous|extremely dangerous|deeply troubling|"
+        r"deeply alarming|profoundly disturbing|a serious problem|"
+        r"a major concern|a real threat)\b"
+        r"(?:[^\"\u201d]{0,40}?)"
+        r'["\u201d]',
+        re.IGNORECASE | re.DOTALL,
+    ),
 ]
 
 _DEVICE_PATTERNS["outsourced_intensity"] = _OUTSOURCED_INTENSITY_PATTERNS
