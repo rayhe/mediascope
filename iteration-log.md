@@ -6996,3 +6996,44 @@ This closes a significant gap in detecting editorial skepticism techniques that 
 - 414 unique emotional language terms
 - 101 journalists tracked
 - All 5 publications have Type C deep dives — Guardian now the most comprehensive
+
+---
+
+## 2026-06-29 07:00 PT — Type A (Article Deep Dive)
+
+**Article:** MIT Technology Review — "A reality check on the AI jobs hysteria" by David Rotman (May 28, 2026)
+
+**Article summary:** Data-driven contrarian piece arguing AI has NOT caused mass white-collar job displacement. Cites BLS data, Stanford Digital Economy Lab research, Federal Reserve Board findings. Meta mentioned once (in layoffs list alongside Coinbase, Cisco). Key sources: Erika McEntarfer (former BLS commissioner), David Deming (Harvard), Erik Brynjolfsson (Stanford), Jed Kolko (Peterson Institute).
+
+### Toolkit Findings
+
+**Entities:** 8 mentions across 5 entities (MIT TR, Meta, Trump, ChatGPT×4, Biden). Primary entity assigned: OpenAI — WRONG. ChatGPT used as temporal marker only ("since the introduction of ChatGPT"), not as the article's subject. Root cause: mention-role conflation.
+
+**Sentiment:** VADER compound = -0.9878 — CATASTROPHICALLY WRONG. Article is measured-neutral with data-optimism (~0.55-0.65 manually). VADER triggered by doom language the article is debunking ("decimated," "apocalypse," "destroy"). Root cause: narrative inversion blindness. Composite overall_tone = -0.55 (still wrong by ~1.0 on sentiment scale).
+
+**Framing:** 21 detections. 6/21 correct (29%), 5/21 borderline (24%), 10/21 false positive (48%). Root causes: (1) "so-called" treated as always delegitimizing when often definitional, (2) catastrophizing/emotional_appeal detected in text being debunked, not in author's own framing.
+
+**Sources:** Only 4 of ~8 quoted sources detected. Erika McEntarfer (most quoted, 5+ attributions) completely missed. Deming not flagged as expert despite "professor" in text. Root cause: regex doesn't handle multi-clause attribution chains.
+
+**Topics (BEFORE fix):** workplace_culture (0.407), ai_development (0.122), layoffs (0.081). The article's actual subject — macroeconomic labor market dynamics — had no matching topic bucket.
+
+### Fixes Applied
+
+1. **Added `labor_market` topic bucket** (`mediascope/analyze/topics.py`): 28 keywords including "labor market," "employment growth," "unemployment," "BLS," "job displacement," "wage growth," "career model." After fix: `labor_market` = 0.877 confidence (correct primary topic).
+
+2. **Fixed `latecomer_narrative` date false positives** (`mediascope/analyze/framing.py`): Bare "late" no longer matches — requires "latecomer," "late to the [game|party|market|race|space]," or "late entrant." Eliminates false triggers on "in late 2022," "in late 2016."
+
+3. **Updated structural guards:** Test count (16→17), METHODOLOGY.md, ARCHITECTURE.md, AGENT_GUIDE.md, README.md all updated with new topic count and `labor_market` documentation.
+
+### Test Results
+888 passed, 0 failed (test count unchanged — new topic covered by existing bucket tests)
+
+### Analysis File
+`examples/sample_output/mit_tr_ai_jobs_hysteria_reality_check_2026_05_28_analysis.md` (20,884 bytes)
+
+### Known remaining gaps (documented, not fixed this iteration)
+- Narrative inversion blindness in VADER (needs setup-refute structure detector — HIGH priority)
+- Mention-role conflation in primary entity determination (needs semantic role weighting — HIGH priority)
+- Quoted-framing false positives in framing module (needs attribution-aware detection — HIGH priority)
+- McEntarfer missed by source extractor (multi-clause attribution regex — MEDIUM priority)
+- "So-called" definitional vs delegitimizing distinction (LOW priority)

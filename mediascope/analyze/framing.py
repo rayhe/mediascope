@@ -2547,9 +2547,12 @@ _LATECOMER_NARRATIVE_PATTERNS: list[re.Pattern] = [
         re.IGNORECASE,
     ),
     # "late to the game" / "late entrant" / "latecomer"
+    # NOTE: bare "late" is excluded — too broad (matches "in late 2022").
+    # Require "latecomer", "late to the …", "late entrant", or "late …" phrases.
     re.compile(
-        r"\b(?:late(?:comer)?(?:\s+to\s+the\s+(?:game|party|market|race|space))?|"
-        r"late\s+entrant|johnny[- ]?come[- ]?lately|"
+        r"\b(?:latecomer(?:\s+to\s+the\s+(?:game|party|market|race|space))?|"
+        r"late\s+(?:to\s+the\s+(?:game|party|market|race|space)|entrant)|"
+        r"johnny[- ]?come[- ]?lately|"
         r"behind\s+(?:the\s+)?(?:curve|times|competitors|rivals|peers))\b",
         re.IGNORECASE,
     ),
