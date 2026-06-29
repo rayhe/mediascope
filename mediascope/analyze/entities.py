@@ -208,6 +208,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "TechCrunch", "The Verge", "Ars Technica",
             "The Information",
             "Business Insider", "404 Media",
+            "Gizmodo",
             "The New Yorker", "New Yorker",
             "Fast Company",
         ],

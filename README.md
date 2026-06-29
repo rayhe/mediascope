@@ -368,7 +368,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **828 tests** across 32 test files, each covering a different analytical capability:
+MediaScope has **853 tests** across 33 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -404,6 +404,7 @@ MediaScope has **828 tests** across 32 test files, each covering a different ana
 | `test_avclub_sardonic_framing.py` | 34 | AV Club sardonic framing stress test: ironic quotation (scare quotes around "predictions," "points," "content"), sarcastic correction (ironic denial "presumably has absolutely nothing to do with," mock-certainty "we're sure are just thrilled," post-quote deflation "You know, like how humans talk!"), loaded language (ad hominem "tech bros"/"gormless"/"lumbering," industry-as-vice "gambling addiction"/"sinking their hooks into"), cross-publication sardonic tone detection. |
 | `test_arena_cross_analysis.py` | 18 | Cross-publication analysis: NYT vs Gizmodo on Arena prediction markets story — tone separation between neutral business scoop and adversarial entertainment coverage, emotional intensity scoring, ironic quotation filtering, agency detection on same-event coverage. |
 | `test_latecomer_regulatory_framing.py` | 34 | Latecomer narrative (#36) and regulatory shadow (#37) framing devices: "exploring partnerships with," "joining the race," "playing catch-up," "market already dominated by" (latecomer narrative); "increasing scrutiny," "drawn scrutiny from," "amid antitrust," "could face regulatory," "raised concerns about" (regulatory shadow). Integration test on Arena article excerpt triggers both devices. False-positive exclusion for neutral partnerships and compliance language. |
+| `test_memeburn_glasses_deep_dive.py` | 25 | Memeburn Meta glasses deep dive: open-ended-threat kicker patterns ("whether X catches up," "remains to be seen," "time will tell"), ubiquitous-camera loaded language ("camera on their face," "cameras everywhere," "recorded space," "no visible cue"), indirect/embedded rhetorical question ("critics ask what exactly...supposed to"), Gizmodo entity detection, full-article regression. |
 
 ```bash
 # Run all tests

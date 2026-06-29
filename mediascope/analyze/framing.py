@@ -351,6 +351,21 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"employee|worker|staff|intern(?:al)?|workplace|computer)s?\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # Ubiquitous-camera / stealth-recording language — editorial framing
+    # that emphasizes surveillance potential of consumer camera devices
+    # through ubiquity ("cameras everywhere"), body-worn framing ("camera
+    # on their face"), or involuntary-recording constructions ("recorded
+    # space").  Distinct from the proximity pattern above: these are
+    # self-contained phrases that carry surveillance valence without
+    # needing a nearby device term.
+    # Discovered via Memeburn Meta glasses article (Jun 2026).
+    re.compile(
+        r"\b(?:camera(?:s)?\s+(?:everywhere|always|running|"
+        r"on (?:your|their|every|each|someone'?s?) face)|"
+        r"recorded\s+space|"
+        r"no (?:visible|obvious|readable|clear) (?:cue|signal|indicator|sign))\b",
+        re.IGNORECASE,
+    ),
     # Data-negligence language — technical terms that imply security
     # negligence when applied to data handling (encryption absence,
     # plaintext storage).  These carry strong editorial valence: naming
@@ -1109,6 +1124,20 @@ _RHETORICAL_QUESTION_PATTERNS: list[re.Pattern] = [
     # "Can [entity/we] really/afford to...?" — challenging capability/cost
     re.compile(
         r"\bcan (?:\w+ )?(?:really|afford to|actually|ever)\b.{3,80}?\?",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Indirect/embedded rhetorical question — editorial device where a
+    # journalist attributes a challenging question to unnamed critics or
+    # sources as indirect speech, avoiding the question mark while
+    # preserving the full rhetorical force.  Example: "critics ask what
+    # exactly people are supposed to be adjusting to."
+    # Discovered via Memeburn Meta glasses article (Jun 2026).
+    re.compile(
+        r"\b(?:ask|asks|asked|asking|wonder|wonders|wondered|questioning|questioned)\s+"
+        r"(?:what|why|how|whether|who)\s+"
+        r"(?:exactly |really |precisely |actually )?"
+        r".{3,80}?"
+        r"(?:supposed to|meant to|expected to|going to)\b",
         re.IGNORECASE | re.DOTALL,
     ),
 ]
@@ -2244,6 +2273,25 @@ _KICKER_NEGATIVE_SIGNALS: list[re.Pattern] = [
         r"dangerous thing|dangerous path|dangerous precedent|"
         r"alarming|reckless|irresponsible|"
         r"wake.?up call|cautionary|warning sign|red flag)\b",
+        re.IGNORECASE,
+    ),
+    # Open-ended threat / unresolved-question kicker — the article ends
+    # by leaving a negative outcome as an open possibility rather than
+    # resolving it.  Classic editorial device: "whether X catches up,"
+    # "the part that's still open," "remains to be seen."  The reader's
+    # last impression is unresolved risk, regardless of earlier tone.
+    # Discovered via Memeburn Meta glasses article (Jun 2026): "Whether
+    # the privacy questions catch up before the adoption does is the part
+    # that's still open."
+    re.compile(
+        r"\b(?:whether .{5,80}?catch(?:es)? up|"
+        r"(?:the )?part that(?:'s| is) still (?:open|unclear|unresolved)|"
+        r"remains to be seen|time will tell|"
+        r"jury is still out|"
+        r"(?:an |the )?open question|"
+        r"yet to be (?:answered|resolved|determined|settled)|"
+        r"only time (?:will|can) tell|"
+        r"how (?:that|this|it) (?:plays|shakes|works) out)\b",
         re.IGNORECASE,
     ),
 ]

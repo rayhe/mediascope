@@ -6639,3 +6639,52 @@ Key insight: Fast Company depersonalizes Meta's response by not naming a spokesp
 - 414 unique emotional language terms (was 428 with duplicates / 411 without the new terms)
 - 37 framing device types (unchanged)
 - 3 cross-publication analyses on same event (first time)
+
+
+---
+
+## 2026-06-28 23:00 PT — Hour Type A: Article Deep Dive (Memeburn)
+
+### Article
+**Memeburn:** "Meta Is Betting We'll Stop Noticing the Cameras" (June 27, 2026)
+
+Privacy-angle editorial on Meta's new $299 self-branded smart glasses. Same launch event as the Wired analysis from the Jun 25 deep dive. Selected after primary publication domains (Wired, NYT, Guardian, Atlantic, MIT TR) were inaccessible.
+
+### Why This Article
+- Direct cross-publication comparison with existing Wired glasses analysis (Jun 23)
+- Different editorial genre (privacy editorial vs product review) on identical product
+- Exposed a systematic detection gap: the toolkit was calibrated for high-valence loaded vocabulary but missed lower-register surveillance constructions
+
+### Discoveries
+
+#### 1. Kicker detection blind spot: open-ended threat constructions (fixed)
+The article ends with "Whether the privacy questions catch up before the adoption does is the part that's still open." This is textbook kicker framing but was missed because existing patterns only match explicit negative vocabulary ("turbulent," "crisis"). Added new pattern for unresolved-question constructions: "whether X catches up," "remains to be seen," "time will tell," "the part that's still open," "yet to be resolved," "an open question."
+
+#### 2. Loaded language blind spot: ubiquitous-camera framing (fixed)
+The article deploys "cameras everywhere all the time," "recorded space," "no visible cue," "camera on their face" — surveillance-flavored language about consumer cameras that the existing proximity pattern missed because it requires `surveillance_term.{0,60}device_term`. Added self-contained pattern for ubiquitous-camera constructions that carry surveillance valence without needing a nearby device cluster.
+
+#### 3. Rhetorical question blind spot: indirect/embedded questions (fixed)
+"Critics point to that gap and ask what exactly people are supposed to be adjusting to" — an attributed rhetorical question in indirect speech with no question mark. All existing patterns required `?`. Added indirect pattern: `ask(s/ed) what/why/how [adverb] ... supposed to/meant to/expected to`.
+
+#### 4. Entity gap: Gizmodo (fixed)
+Gizmodo cited as a source in the article but not in the Media/Publications cluster. Added.
+
+### Cross-Publication Key Finding
+Same product launch, two publications, systematically different editorial techniques:
+- Wired: self-referential investigation insertion + off-topic negative kicker + high-valence loaded adjectives
+- Memeburn: alternating positive/negative structural rhythm + on-topic unresolved-threat kicker + ubiquity-language loaded constructions
+The toolkit went from detecting 2/~10 framing devices to 9/~10 after the pattern expansions.
+
+### Files Modified
+- `mediascope/analyze/framing.py`: +2 kicker patterns, +1 loaded language pattern, +1 rhetorical question pattern
+- `mediascope/analyze/entities.py`: +Gizmodo alias
+- `tests/test_memeburn_glasses_deep_dive.py`: New (25 tests)
+- `docs/ARCHITECTURE.md`: test count + listing update
+- `README.md`: test count + listing update
+- `examples/sample_output/memeburn_meta_glasses_cameras_2026_06_27_analysis.md`: New analysis file
+
+### Stats After
+- 853 tests passed (all green)
+- 37 framing device types (unchanged — patterns added to existing loaded_language, rhetorical_question, kicker_framing types)
+- 414 unique emotional language terms (unchanged)
+- 2 cross-publication analyses on same glasses launch event (Wired + Memeburn)

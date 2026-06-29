@@ -1,0 +1,65 @@
+Meta Is Betting We'll Stop Noticing the Cameras
+
+By: Memeburn Staff
+Published: June 27, 2026
+Source: Memeburn (memeburn.com)
+
+Meta just launched a new smart glasses lineup. The price is $299, and the name on the frame is just Meta. No Ray-Ban. No co-branding. Earlier smart glasses were easy to ignore. They cost too much and looked too odd. This time the price is closer to what you'd spend on a decent pair of sunglasses. That puts them in front of a completely different kind of buyer.
+
+Why The Price Tag Matters
+
+Consumer technology scales when the price stops feeling like a real decision. Smartphones hit that point. Wireless earbuds hit it. At $299, smart glasses are getting close.
+
+The fashion-first design does the rest. A product that looks like regular eyewear gets past the friction that killed earlier camera wearables. Most people who tried those earlier products looked strange wearing them. These don't.
+
+That's not a small thing when you're trying to get millions of people to put a camera on their face every day.
+
+More Than A Camera
+
+The new lineup reportedly includes models such as Meta Adventurer and Meta Fury, along with a collaboration model. Gizmodo reports the frame is surprisingly light given what's inside. There's a camera, audio hardware, and Meta AI built in.
+
+The AI piece is what separates this from earlier smart glasses. Ask it a question and it responds through the built-in speakers. Look at something and it can tell you what it is. Need directions or want to send a message? You don't touch your phone. It runs quietly while you go about your day.
+
+One other change worth noting: no Ray-Ban logo. Earlier Meta glasses leaned on Ray-Ban's brand to reach buyers who wouldn't normally consider a Meta product. That name carried real commercial weight. Without it, Meta is selling these on its own reputation.
+
+For a company with a complicated privacy history, that's a harder position.
+
+On the policy side, Meta's approach relies on a terms of service agreement and a small LED indicator to signal when recording is active. No additional hardware privacy features have been confirmed for this lineup.
+
+What "Social Learning" Really Means
+
+When asked about privacy concerns at a recent press event, Meta CTO Andrew Bosworth didn't announce new protections. He made a historical comparison instead.
+
+"I'm old enough to remember when there was controversy about phones having cameras. So, there is this social learning thing that has to happen."
+
+His point isn't without logic. Phone cameras genuinely did make people uncomfortable at first. That discomfort faded on its own, without regulation pushing it along. Some people will find that a fair parallel.
+
+Where the argument runs into trouble is the detail. The LED indicator meant to show when the camera is on can be physically removed. Bystanders are then left with no signal at all. No fix for that was announced at this launch.
+
+When Bosworth talks about society adjusting, critics point to that gap and ask what exactly people are supposed to be adjusting to.
+
+The Visibility Problem
+
+Phone cameras changed behavior in public, but they came with a readable signal. You could see when someone pointed one at you. The gesture was obvious enough that people developed instincts around it.
+
+Smart glasses remove that entirely. Think about sitting across from someone at a coffee shop. The glasses look like any other pair of frames. There's no raised phone, no obvious gesture, and nothing that tells you a camera is running.
+
+That's a different kind of situation, and it's the one detail that makes the phone camera comparison harder to accept.
+
+Cameras Everywhere, All The Time
+
+That shift shows up in specific ways. People in meetings speak more carefully when a phone is visible and recording. With smart glasses, there's no visible cue to trigger that awareness.
+
+Conversations that felt private can happen inside a recorded space without anyone making a conscious choice to start recording.
+
+It's not dramatic. It's incremental. But incremental is how these things tend to move.
+
+Where The Category Is Heading
+
+Google Glass gets brought up whenever smart glasses launch, and for good reason. It arrived around 2013 and was largely rejected. But the conditions were genuinely different.
+
+AI wasn't embedded in the hardware. Connectivity was slower. And wearing a camera on your face in public still felt socially strange in a way that's harder to argue today.
+
+Google has since re-entered the market. Other large technology companies are reported to be developing similar products. When several major players push a category at once, they collectively move consumer expectations in ways a single product launch can't.
+
+Meta's glasses sit at the center of that push right now. At $299, with AI built in and a design that doesn't draw attention, they're the most commercially credible version of this category yet. Whether the privacy questions catch up before the adoption does is the part that's still open.
