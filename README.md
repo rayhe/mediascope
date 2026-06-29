@@ -370,13 +370,14 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **889 tests** across 34 test files, each covering a different analytical capability:
+MediaScope has **903 tests** across 35 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
 | `test_entities.py` | 18 | Entity detection, regex patterns, false-positive exclusion, cluster formats |
 | `test_sentiment.py` | 46 | 8-dimension scoring, VADER/TextBlob composite, framing correction pipeline, active-negative agency, headline override, security context adjustment, self-referential investigation detection |
 | `test_source_stance.py` | 60 | Source extraction, stance classification, outsourced intensity, power asymmetry, counted anonymous sources, no-comment exclusion, product name stop-filter, kicker framing, isolation/pressure as adversarial devices |
+| `test_source_extraction_fixes.py` | 14 | Pattern 3 case-insensitivity fix, Pattern 5c verb-before-surname, attribution verb expansion (thinks/believes/considers/cautions) |
 | `test_asymmetry.py` | 22 | Asymmetry score calculation, Welch's t-test, Cohen's d, bootstrap confidence intervals |
 | `test_careers.py` | 19 | Career data loading, migration detection, DiD analysis, leadership change analysis, bias decomposition |
 | `test_nyt_article_improvements.py` | 28 | NYT-specific article analysis fixes: active-negative agency, workplace coercion language, investment-near-layoffs juxtaposition, source stop-word filter |

@@ -35,6 +35,8 @@ NEUTRAL_VERBS: set[str] = {
     "muses", "quips", "reflects", "ponders",  # present-tense reflective
     "dubs", "coins",  # present-tense labeling
     "pleads", "implores",  # present-tense urgent appeal
+    "thinks", "believes", "considers",  # cognitive/opinion attribution
+    "cautions",  # hedged warning attribution
 }
 
 LOADED_VERBS: set[str] = {
@@ -382,8 +384,11 @@ def extract_sources(text: str) -> list[SourceMention]:
         ))
 
     # Pattern 3: "according to [Name]"
+    # Use [Aa] prefix to handle sentence-initial capitalization without
+    # IGNORECASE (which would also make the name capture group case-
+    # insensitive, producing false positives like "four people").
     according_to = re.compile(
-        r"\baccording to ([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+)\b"
+        r"\b[Aa]ccording to ([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+)\b",
     )
     for m in according_to.finditer(text):
         name = m.group(1).strip()
@@ -525,6 +530,46 @@ def extract_sources(text: str) -> list[SourceMention]:
         # Skip if this single name is the last word of an already-seen
         # full name — e.g., skip "Bosworth" if "Andrew Bosworth" already
         # captured.  Prevents duplicate source entries for the same person.
+        if any(seen.endswith(" " + name) for seen in seen_names):
+            continue
+
+        seen_names.add(name)
+
+        ctx_start = max(0, m.start() - 100)
+        ctx_end = min(len(text), m.end() + 200)
+        context = text[ctx_start:ctx_end]
+
+        sources.append(SourceMention(
+            name=name,
+            is_anonymous=False,
+            is_expert=_is_expert_by_title(context),
+            affiliation=_extract_affiliation(context),
+            quote=_extract_nearby_quote(text, m.start(), m.end()),
+            attribution_verb=verb,
+        ))
+
+    # Pattern 5c: "says/told/etc. [LastName]" — verb before single surname
+    # Catches the extremely common journalistic convention where an
+    # attribution verb precedes a single surname: "says Shah", "notes Fox".
+    # Pattern 2 handles this for full names but not for single-word surnames
+    # (bug found via MIT TR DeepMind multi-agent article where ~5 "says Shah"
+    # instances were all missed).
+    verb_before_single = re.compile(
+        rf"\b({verb_alternation})\s+([A-Z][a-z]{{2,}})\b",
+    )
+    for m in verb_before_single.finditer(text):
+        verb = m.group(1).strip().lower()
+        name = m.group(2).strip()
+        if name in seen_names:
+            continue
+        if name in _NAME_STOP_FIRST_WORDS:
+            continue
+        if name in _SINGLE_NAME_ORG_STOPS:
+            continue
+        if name in _NAME_STOP_NAMES:
+            continue
+        # Skip if this single name is the last word of an already-seen
+        # full name — same dedup logic as Pattern 5b.
         if any(seen.endswith(" " + name) for seen in seen_names):
             continue
 
