@@ -311,6 +311,7 @@ The `examples/` directory contains runnable demos that walk through MediaScope's
 | [`full_pipeline.py`](examples/full_pipeline.py) | Complete pipeline: RSS ingest → entity detection → sentiment → framing → asymmetry scoring → report |
 | [`same_event_comparison.py`](examples/same_event_comparison.py) | Cross-publication comparison of the same event (wire service vs magazine), isolating editorial framing from event severity |
 | [`framing_correction_demo.py`](examples/framing_correction_demo.py) | **NEW:** How MediaScope corrects VADER's positive bias on investigative journalism using framing device signals, active-negative agency detection, and source stance analysis |
+| [`careers_demo.py`](examples/careers_demo.py) | **NEW:** Editorial Histories module: career timelines for 104 journalists, 290 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
 | [`agent_integration.py`](examples/agent_integration.py) | Integration patterns for LangChain, CrewAI, and raw function calling |
 
 ## Sample Output Gallery
