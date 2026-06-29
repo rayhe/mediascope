@@ -4,6 +4,44 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-29 11:00 PT — Hour Type B: Journalist/Publication Research — Charlie Warzel (Atlantic Galaxy Brain)
+
+**Focus:** Deep career research on Charlie Warzel, Atlantic staff writer and Galaxy Brain newsletter/podcast host. Prior entry had only 3 career events, 97 note chars, and significant date errors. Expanded to 7 career events and 1,913 note chars with corrected dates and full source documentation.
+
+**Date corrections (prior entry had major errors):**
+1. **BuzzFeed start:** Was 2014-01, corrected to 2013-01. He joined "2012, 2013" per his own account on the Big Technology podcast transcript. July 2014 BuzzFeed/CBS event confirms he was already "FWD Editor" by then.
+2. **NYT dates:** Was 2019-07/2020-09 (wrong both ends). Corrected to 2019-03/2021-04. NYTco announcement says "joining us in March" (2019). Mediagazer snapshot from April 12, 2021 shows him launching Substack that day.
+3. **Atlantic start:** Was 2020-10 (over a year too early). Corrected to 2021-11. E&P confirms "contributing writer with The Atlantic since November 2021."
+
+**New career events added:**
+1. **NBC News researcher (2008-2009):** Meet the Press intern during Hamilton College's D.C. Program. Also Morning Joe and NBC Nightly News. Source: hamilton.edu
+2. **InTheCapital staff writer (2010-2012):** First post-graduation job, DC-based. Source: about.me/charliewarzel
+3. **Adweek digital media reporter (2012-2013):** Covered digital media and 2012 election digital side. Source: nytco.com, Big Technology podcast transcript
+4. **Substack/Galaxy Brain (April-November 2021):** 7-month independent run. 16K subscribers, 1,400 paid, six-figure annualized revenue. KEY natural control for DiD analysis.
+
+**Key biographical findings:**
+- Education: The Shipley School (Bryn Mawr, PA, Class of 2006), Hamilton College BA Government (Class of 2010, January '07 admit). Alpha Delta Phi fraternity.
+- Book: "Out of Office" (Dec 2021, Knopf/PRH) co-authored with partner Anne Helen Petersen
+- Awards: 2019 Mirror Award, 2020 Livingston Award finalist, Netflix "Follow This" (2018)
+- Location trajectory: Bryn Mawr PA → NYC → Missoula MT → island off Washington state coast
+- Galaxy Brain now both newsletter AND podcast at Atlantic (recent episodes: AI in warfare with Will Knight, Netflix with David Sims)
+- Regular TV/podcast appearances: Jon Stewart (The Weekly Show), Peter Kafka (Channels), Bill Simmons (The Ringer), Offline (Crooked Media)
+
+**Analytical value for MediaScope:**
+- Career arc tests framing portability across 4 distinct institutional contexts: digital-native (BuzzFeed), institutional prestige (NYT), independent (Substack), subscriber-driven magazine (Atlantic)
+- His explicit Substack departure quote — "headlines as ammunition in a culture war battle... burned me out" — is a rare firsthand account of how institutional brands shape audience behavior
+- The 7-month Substack period is a natural control for the DiD analysis: same writer, same topics, no editorial hierarchy
+- At Atlantic, operates under Nicholas Thompson (ex-Wired EIC, now Atlantic CEO), creating an editorial culture bridge between Wired and Atlantic tech coverage
+- Part of BuzzFeed's original tech team (Herman, Buchanan, Ben Smith) that reimagined tech reporting from gadgets → platform accountability
+
+**Changes:**
+- `profiles/careers/journalists.yaml`: Charlie Warzel expanded (3 → 7 career events, 97 → 1,913 note chars, all source URLs verified)
+
+**Test results:** 888 passed, 0 failed. No regressions.
+**Commit:** `3c7f746`
+
+---
+
 ## 2026-06-29 10:00 PT — Hour Type A: Article Deep Dive — MIT Technology Review × Meta AI Agent Hack
 
 **Focus:** Deep analysis of MIT Technology Review's June 5, 2026 article "The Meta hack shows there's more to AI security than Mythos" by Grace Huckins. First MIT Tech Review article with full toolkit gap identification and code fix in the same iteration.
