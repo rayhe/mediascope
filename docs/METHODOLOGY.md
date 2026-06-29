@@ -169,7 +169,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 37 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (22 added from real-article analysis), and structural devices (5 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 38 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (23 added from real-article analysis), and structural devices (5 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -214,6 +214,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Confession Framing** | Using attribution verbs that frame a subject's statement as an admission of guilt or failure rather than neutral communication — "admits" vs. "said" imposes a confession frame before the reader encounters the content | "[Person/Title] admits/admitted/concedes/acknowledged that," "was forced to admit/acknowledge/concede," "finally/grudgingly admitted," "came clean about," "mea culpa," "in a rare/stunning admission/concession" | Wired "Meta CTO Andrew Bosworth Admits the Company's AI Reorg Was 'Atrocious'" (Jun 16, 2026) — headline frames a proactive internal memo as a forced confession. The attribution verb asymmetry (employees "describe" while executives "admit") is a systematic editorial stance technique documented in §4.2 |
 | **Latecomer Narrative** | Editorial framing positioning a company as entering a space after competitors, implying it is playing catch-up rather than innovating independently — converts a strategic decision into a story of being behind | "exploring partnerships with," "joining the race," "playing catch-up," "market already dominated by," "following in the footsteps of," "late to the game," "copycat," "me-too product" | NYT Arena/Polymarket article (Jun 26, 2026) — framing Meta's prediction market exploration as catch-up to Polymarket and Kalshi, positioning partnership-seeking as an admission of inability to build independently. Distinct from straw_man (not misrepresenting a position) and juxtaposition (not side-by-side fact contrast) |
 | **Regulatory Shadow** | Ambient editorial technique of inserting regulatory or legal context into product or business stories where it is tangential, casting a shadow over the primary subject without direct accusation | "increasing scrutiny," "drawn scrutiny from," "amid antitrust," "could face regulatory," "raised concerns about," "amid growing regulatory pressure," "watchdogs are watching," "under the eye of regulators" | NYT Arena article (Jun 26, 2026) — prediction market "scrutiny" and insider trading investigations inserted into a product story about Meta's Arena app, where the regulatory context applies to the prediction market industry broadly, not to Meta specifically. Distinct from litigation_framing (explicit legal actions) and geopolitical_regulatory_pressure (state-level pressure campaigns) |
+| **Editorial Deflation** | Editorial technique of building up an ambitious technological vision or corporate plan across multiple paragraphs, then puncturing it with a brief dismissive or hedging phrase that implies failure without explicit argument — the deflation is the writer's editorial choice, appearing as casual hedging but functioning as skepticism-by-implication | "That's the idea, anyway," "or so X claims/hopes," "so the argument goes," "if it ever actually works/ships," "in theory, anyway," "but that's a big if," "whether that actually pans out" | MIT TR Anduril/Meta smart glasses article (May 18, 2026) — three paragraphs build up Anduril's ambitious cyborg-inspired AR battlefield vision (eye tracking, voice commands, drone control), then "That's the idea, anyway" deflates the entire vision into implied impracticality. Distinct from corporate_reassurance_undercut (undercuts company's OWN reassurance), sarcastic_correction (overtly mocking), and speculative_framing (projects negative futures) |
 
 #### Structural Devices (Post-Pass)
 
@@ -477,7 +478,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 37-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 38-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |

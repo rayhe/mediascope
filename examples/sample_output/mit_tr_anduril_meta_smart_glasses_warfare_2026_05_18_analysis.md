@@ -55,10 +55,11 @@ The toolkit's overall_tone of **+0.6375** (positive) is the single biggest scori
 
 1. **Emotional intensity:** 0.0 → 0.3724 (17 new military/defense terms added)
 2. **Entity detection:** Missed Anduril entirely → 19 mentions detected (new "Defense Tech" cluster)
-3. **Framing devices:** 1 → 8 (two new device types: `military_techno_optimism`, `selective_rehabilitation`)
+3. **Framing devices:** 1 → 8 → 13 (six device types now: `military_techno_optimism`, `selective_rehabilitation`, `juxtaposition`, `analogy_stacking`, `ironic_quotation`, `editorial_deflation`)
 4. **Source parsing:** "But Barnett" false positive eliminated (18 new stop words)
 5. **Anonymous source:** "two people" false positive eliminated (now requires attribution verb)
 6. **analyze_source_stance:** Accepts raw text or source mentions (convenience wrapper)
+7. **editorial_deflation** (new, Jun 29): Detects build-up/puncture pattern — "That's the idea, anyway" — where writer constructs ambitious framing then deflates with brief dismissive clause
 
 ---
 
@@ -82,12 +83,15 @@ The toolkit's overall_tone of **+0.6375** (positive) is the single biggest scori
 
 ## 4. Framing Device Analysis
 
-### Detected Devices (8 total, 3 types)
+### Detected Devices (13 total, 6 types)
 
 | Device Type | Count | Key Evidence |
 |---|---|---|
 | **military_techno_optimism** | 5 | "ordering drone strikes via eye-tracking," "cyborg-inspired," "AI-driven recognition," "recommend courses of action," "plain language" near "target" |
+| **analogy_stacking** | 3 | Multiple analogies layered to frame military AR as familiar tech evolution |
 | **selective_rehabilitation** | 2 | Luckey "ousted" → "now back in business together"; Zuckerberg "friendlier posture toward the second Trump administration" |
+| **ironic_quotation** | 1 | Quoted language positioned to invite skeptical reading |
+| **editorial_deflation** | 1 | "That's the idea, anyway" — writer builds up ambitious multi-paragraph vision of AR battlefield superiority, then punctures it with a five-word dismissive clause. Classic build-up/deflate structure that signals editorial skepticism without explicit editorializing. |
 | **juxtaposition** | 1 | "unlike Meta's commercial smart glasses" — military vs consumer |
 
 ### Undetected Devices (Manual Assessment)

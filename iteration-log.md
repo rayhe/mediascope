@@ -6688,3 +6688,49 @@ The toolkit went from detecting 2/~10 framing devices to 9/~10 after the pattern
 - 37 framing device types (unchanged — patterns added to existing loaded_language, rhetorical_question, kicker_framing types)
 - 414 unique emotional language terms (unchanged)
 - 2 cross-publication analyses on same glasses launch event (Wired + Memeburn)
+
+---
+
+## 2026-06-29 00:00 PT — Type A: Article Deep Dive
+
+### Article
+**MIT Technology Review** — "Inside Anduril and Meta's quest to make smart glasses for warfare" (May 18, 2026)
+URL: https://www.technologyreview.com/2026/05/18/1137412/inside-anduril-and-metas-quest-to-make-smart-glasses-for-warfare/
+
+### Focus
+Re-analysis of previously-examined article to evaluate new framing device detection. Manual reading identified a previously undetected editorial technique: **editorial deflation** — where a writer builds up an ambitious vision across multiple paragraphs, then punctures it with a brief dismissive phrase ("That's the idea, anyway"). Distinct from existing devices like corporate_reassurance_undercut (which operates within corporate speech) or sarcastic_correction (which directly contradicts a claim).
+
+### New Framing Device: `editorial_deflation`
+- **Definition:** Writer constructs elaborate positive/ambitious framing, then deflates with a terse dismissive clause — signaling skepticism through structural anticlimax rather than explicit editorializing
+- **8 regex patterns:** "That's the idea, anyway", "At least, that's the pitch", "Or so the thinking goes", "In theory, at least", "Whether that holds up", "If it works", "Time will tell", "Remains to be seen"
+- **Category:** Extended tier (pattern-matched)
+- **Precedent:** Common in technology journalism; frequently used by Wired, MIT Tech Review, and The Atlantic when covering corporate ambitions
+
+### Key Finding
+The MIT Tech Review article went from **8 detected framing devices (3 types)** to **13 detected devices (6 types)**:
+- military_techno_optimism: 5 (unchanged)
+- analogy_stacking: 3 (newly detected — from prior toolkit improvements)
+- selective_rehabilitation: 2 (unchanged)
+- ironic_quotation: 1 (newly detected — from prior toolkit improvements)
+- editorial_deflation: 1 (new device type)
+- juxtaposition: 1 (unchanged)
+
+This closes a significant gap in detecting editorial skepticism techniques that don't use overt negative language.
+
+### Files Modified
+- `mediascope/analyze/framing.py`: +editorial_deflation device type (8 patterns), docstring 32→33 pattern-matched, 37→38 total
+- `tests/test_editorial_deflation.py`: New (25 tests — 18 positive, 5 negative, 2 integration)
+- `tests/test_structural_consistency.py`: Count assertions updated 37→38, 32→33, stale-count guard added
+- `tests/test_nyt_ai_reviews.py`: Pattern count 32→33, editorial_deflation in expected types
+- `docs/ARCHITECTURE.md`: 37→38 types, 853→878 tests, 33→34 files, editorial_deflation description
+- `docs/METHODOLOGY.md`: 37→38 types, editorial_deflation table row, §13 updated
+- `docs/AGENT_GUIDE.md`: 37→38 types
+- `mediascope/cli.py`: 37→38 types
+- `README.md`: 853→878 tests, 33→34 files, test table row
+- `examples/sample_output/mit_tr_anduril_meta_smart_glasses_warfare_2026_05_18_analysis.md`: Updated with 13 devices (6 types)
+
+### Stats After
+- 878 tests passed (all green)
+- 38 framing device types (33 pattern-matched + 5 structural)
+- 414 unique emotional language terms (unchanged)
+- 101 journalists tracked (unchanged)

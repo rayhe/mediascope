@@ -2669,6 +2669,90 @@ _REGULATORY_SHADOW_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["regulatory_shadow"] = _REGULATORY_SHADOW_PATTERNS
 
 
+# --------------------------------------------------------------------------- #
+#  Editorial Deflation                                                         #
+# --------------------------------------------------------------------------- #
+#
+# A recognizable editorial technique in which the writer builds up an
+# ambitious technological vision, corporate plan, or product promise across
+# one or more paragraphs, then punctures it with a brief dismissive or
+# hedging phrase that implies failure or impracticality without explicit
+# argument.  The deflation is the writer's editorial choice — it appears
+# as casual hedging but functions as skepticism-by-implication.
+#
+# Distinct from:
+#   - corporate_reassurance_undercut (undercuts a company's OWN reassurance)
+#   - sarcastic_correction (overtly mocking/ironic)
+#   - speculative_framing (projects negative futures)
+#   - loaded_language (uses emotionally charged vocabulary)
+#
+# The patterns below target the most distinctive deflation constructions
+# that are rarely neutral hedging and almost always serve an editorial
+# puncturing function.  Generic uncertainty phrases ("remains to be seen",
+# "time will tell") are excluded because they appear too frequently in
+# genuine neutral reporting.
+#
+# Discovered via manual analysis of MIT Technology Review "Inside Anduril
+# and Meta's quest to make smart glasses for warfare" (May 18, 2026),
+# where "That's the idea, anyway" deflates three paragraphs of ambitious
+# military AR vision into implied impracticality.
+
+_EDITORIAL_DEFLATION_PATTERNS: list[re.Pattern] = [
+    # "That's the idea/plan/pitch/theory/hope/promise/vision, anyway"
+    # or "at least" — the classic post-buildup deflation
+    re.compile(
+        r"\bthat'?s\s+the\s+(?:idea|plan|pitch|theory|hope|promise|vision|dream|goal)"
+        r",?\s+(?:anyway|at\s+least|so\s+far|for\s+now)\b",
+        re.IGNORECASE,
+    ),
+    # "At least, that's the plan/idea/hope/pitch" — inverted form
+    re.compile(
+        r"\b(?:at\s+least|anyway),?\s+that'?s\s+"
+        r"(?:the\s+)?(?:plan|idea|hope|pitch|promise|theory|vision|goal)\b",
+        re.IGNORECASE,
+    ),
+    # "or so X says/claims/hopes/argues/insists" — attribution-as-skepticism
+    re.compile(
+        r"\bor\s+so\s+(?:\w+\s+){0,3}"
+        r"(?:says?|claims?|hopes?|argues?|insists?|contends?|maintains?|promises?)\b",
+        re.IGNORECASE,
+    ),
+    # "so the argument/thinking/theory/logic goes" — dismissive framing
+    re.compile(
+        r"\b(?:or\s+)?so\s+the\s+"
+        r"(?:argument|thinking|theory|logic|idea|pitch|promise|narrative)\s+goes\b",
+        re.IGNORECASE,
+    ),
+    # "if [it/this/that] ever actually [works/ships/launches/happens]"
+    re.compile(
+        r"\bif\s+(?:it|this|that|the\s+\w+)\s+ever\s+actually\s+"
+        r"(?:works?|ships?|launches?|happens?|arrives?|materializes?|comes?\s+to\s+fruition)\b",
+        re.IGNORECASE,
+    ),
+    # "in theory, anyway/at least" — concedes theory, implies practice differs
+    re.compile(
+        r"\bin\s+theory,?\s+(?:anyway|at\s+least|sure|of\s+course)\b",
+        re.IGNORECASE,
+    ),
+    # "but that's/it's a big/tall/high/enormous if" — amplified uncertainty
+    re.compile(
+        r"\b(?:but\s+)?(?:that'?s?|it'?s?)\s+a\s+"
+        r"(?:big|tall|high|enormous|significant|very\s+big)\s+"
+        r"(?:if|ask|gamble|bet|assumption)\b",
+        re.IGNORECASE,
+    ),
+    # "whether [it/that/this] actually/really/ever pans out / works / materializes"
+    re.compile(
+        r"\bwhether\s+(?:that|this|it|any\s+of\s+(?:that|this|it))\s+"
+        r"(?:actually|really|ever)\s+"
+        r"(?:works?|happens?|materializes?|pans?\s+out|comes?\s+together|pays?\s+off)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["editorial_deflation"] = _EDITORIAL_DEFLATION_PATTERNS
+
+
 def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
     """Detect analogy stacking — 3+ distinct analogies for the same subject.
 
@@ -2995,8 +3079,8 @@ def _detect_social_proof_amplification(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 32 pattern-matched device types plus 5 structural
-    post-pass types (37 total).
+    Scans for 33 pattern-matched device types plus 5 structural
+    post-pass types (38 total).
 
     Pattern-matched (33): guilt_by_association, anonymous_authority,
     catastrophizing, false_balance, selective_omission_signal,
@@ -3010,7 +3094,7 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     corporate_reassurance_undercut, sarcastic_correction,
     hypocrisy_frame, outsourced_intensity, confession_framing,
     precedent_analogy, social_proof_amplification,
-    latecomer_narrative, and regulatory_shadow.
+    latecomer_narrative, regulatory_shadow, and editorial_deflation.
 
     Structural post-pass (5): kicker_framing, analogy_stacking,
     speculative_framing, trend_bundling, social_proof_amplification.
