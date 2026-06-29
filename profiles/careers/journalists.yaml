@@ -304,29 +304,119 @@ journalists:
     Vox Media absorption. Her migration to Wired (Condé Nast) represents a clean break from the Vox/Recode lineage into a
     different institutional frame.'
 - career:
-  - beat: tech, politics, information warfare
-    end: 2019-06
+  - beat: news production
+    end: 2009-12
+    event_type: intern
+    notes: 'Intern and researcher during Hamilton College''s Washington D.C. Program (junior year). Assisted production of
+      Meet the Press (with David Gregory). Also worked on MSNBC''s Morning Joe (Scarborough/Brzezinski/Geist) and NBC Nightly
+      News with Brian Williams. First exposure to journalism: "I immediately loved the feeling of being in the center of big
+      stories." TV production background shapes his later comfort as podcast host and TV commentator.'
+    publication: nbc-news
+    role: researcher
+    source_url: https://www.hamilton.edu/news/story/charlie-warzel-10-interns-at-meet-the-press
+    start: 2008-09
+  - beat: local news, politics
+    end: 2012-06
     event_type: hired
-    notes: Tech and media reporter. Covered online radicalization and platform manipulation.
+    notes: Staff writer at DC-based local publication. First post-graduation journalism job. Per his about.me page, listed
+      between NBC News researcher and Adweek digital media reporter. Approximate dates based on graduation (2010) and Adweek
+      start.
+    publication: inthecapital
+    role: staff_writer
+    source_url: https://about.me/charliewarzel
+    start: 2010-06
+  - beat: digital media, advertising
+    end: 2013-06
+    event_type: hired
+    notes: 'Digital media reporter covering the advertising industry and digital side of the 2012 election. Per podcast transcript
+      (Big Technology): "we were both writing about like the digital side of the 2012 election where it seemed like people
+      campaigning on Twitter was novel." This ad industry observer role gave him structural knowledge of platform business
+      models that later informed his platform accountability reporting.'
+    publication: adweek
+    role: digital_media_reporter
+    source_url: https://nytco.com/press/charlie-warzel-to-join-the-new-york-times-opinion-pages/
+    start: 2012-07
+  - beat: tech, platforms, disinformation, information warfare
+    end: 2019-02
+    event_type: hired
+    notes: 'Joined BuzzFeed ~2012-2013 per his own account ("2012, 2013, when I joined" — Big Technology podcast). Started
+      as deputy tech editor of BuzzFeed FWD (per about.me), then FWD Editor by July 2014 (confirmed by BuzzFeed/CBS video
+      event). Later became senior technology writer. Part of BuzzFeed''s original tech team with John Herman, Matt Buchanan
+      under Ben Smith, which reimagined tech reporting from gadgets → platform accountability. Covered Twitter''s harassment
+      failures, pro-Trump media ecosystem (profiled Bill Mitchell, Alex Jones), conspiracy theories, attention hacking, bots,
+      data voids. Featured in Netflix''s "Follow This" (2018), episode "The Future of Fakes" on deepfakes and audio/video
+      manipulation. 2019 Mirror Award for Facebook privacy reporting. Relocated from NYC to Missoula, Montana during later
+      BuzzFeed years. TV appearances on MSNBC, CNN, Good Morning America. KEY for MediaScope: BuzzFeed was the incubator for
+      his platform-as-threat framing — the "first time I ever thought critically about Facebook" happened here.'
     publication: buzzfeed-news
     role: senior_writer
-    start: 2014-01
-  - beat: technology, media
-    end: 2020-09
+    source_url: https://about.me/charliewarzel
+    start: 2013-01
+  - beat: technology, media, online extremism, politics, privacy
+    end: 2021-04
     event_type: hired
-    notes: Opinion columnist. Left during NYT internal culture disputes.
+    notes: 'Opinion writer-at-large (new role created for him). Announced January 2019, started March 2019. Led the Privacy
+      Project. Co-authored "One Nation Tracked," a 7-part investigative series on smartphone location tracking data — revealed
+      massive location data set and its security/privacy dangers. 2020 Livingston Award finalist for National Reporting. Part
+      of NYT tech opinion team with Farhad Manjoo, Sarah Jeong, Susan Fowler Rigetti, Alex Kingsbury, Kara Swisher, contributors
+      Zeynep Tufekci and Tim Wu. Based in Missoula, Montana (remote from NYC). Departed ~April 2021 for Substack. KEY MIGRATION:
+      BuzzFeed → NYT represents digital-native platform → paper of record transition. Tests whether framing formality and
+      citation patterns shift in institutional prestige context. His Opinion placement (not News) gave him editorial freedom
+      but also positioned his tech coverage as explicitly subjective/interpretive rather than straight reporting.'
     publication: nytimes
-    role: columnist
-    start: 2019-07
-  - beat: technology, internet culture
+    role: opinion_writer_at_large
+    source_url: https://nytco.com/press/charlie-warzel-to-join-the-new-york-times-opinion-pages/
+    start: 2019-03
+  - beat: technology, media, internet culture, politics
+    end: 2021-11
+    event_type: freelance
+    notes: 'Launched Galaxy Brain newsletter on Substack ~April 12, 2021 (Mediagazer snapshot). 7-month independent run. Grew
+      to 16,000 subscribers, 1,400 paid. Cracked six-figure annualized revenue — but "made considerably less" than NYT salary.
+      KEY QUOTE on departure from institutional media: "The last two places I worked were big, polarizing brands, which also
+      meant that a huge chunk of my readers on a given story were there because they wanted to use what I''d written — usually
+      just the headline — as ammunition in a culture war battle... And if I''m honest, it''s burned me out and left me feeling
+      grim about the role of mainstream media." ANALYTICAL VALUE: This 7-month Substack period is a natural control for measuring
+      institutional influence on framing. Same writer, same topics, no editorial hierarchy. Compare Galaxy Brain (Substack)
+      output to Galaxy Brain (Atlantic) for institutional effects on framing.'
+    publication: substack
+    role: independent_newsletter
+    source_url: https://warzel.substack.com/p/welcome-to-galaxy-brain
+    start: 2021-04
+  - beat: technology, online extremism, platforms, internet culture, media, AI
     event_type: hired
-    notes: Galaxy Brain newsletter. Anti-Big-Tech editorial stance. Tests portability across three outlets.
+    notes: 'Contributing writer from November 2021, promoted to staff writer (announced by Editor & Publisher, ~mid-2022).
+      Writes and hosts Galaxy Brain as both newsletter and podcast for Atlantic subscribers. Deputy editor Paul Bisceglio:
+      "a dazzling writer and a profound thinker. He has a remarkable ability to cut through the Silicon Valley hype and deliver
+      punchy ideas and real insights." Recent Galaxy Brain podcast guests include Will Knight (Wired senior writer, on AI
+      weapons), David Sims (Atlantic film critic, on Netflix). Regular guest on Jon Stewart (The Weekly Show), Peter Kafka
+      (Channels), Bill Simmons (The Ringer), Offline (Crooked Media). Formed Galaxy Brain Corp (LLC) for newsletter operations.
+      Now lives on island off Washington state coast. KEY MIGRATION: Substack → Atlantic represents independent → institutional
+      return. He chose Atlantic''s subscriber infrastructure and editorial brand over Substack independence despite six-figure
+      Substack revenue. Operates under Nicholas Thompson (ex-Wired EIC, now Atlantic CEO) editorial chain, which creates a
+      structural editorial culture bridge between Wired and Atlantic tech coverage. Tests whether institutional affiliation
+      re-introduces framing patterns he identified as problematic (headline weaponization, culture war ammunition) during
+      his Substack departure statement.'
     publication: atlantic
     role: staff_writer
-    source_url: https://www.theatlantic.com/author/charlie-warzel/
-    start: 2020-10
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-hire-of-charlie-warzel-as-staff-writer,249102
+    start: 2021-11
   name: Charlie Warzel
-  notes: 'Key migration: BuzzFeed News → NYT Opinion → Atlantic. Anti-tech-platforms stance across outlets.'
+  notes: 'Key migration chain: NBC News (intern) → InTheCapital → Adweek → BuzzFeed News → NYT Opinion → Substack (Galaxy
+    Brain) → Atlantic. The Shipley School (Bryn Mawr, PA, Class of 2006). Hamilton College BA Government (Class of 2010, January
+    ''07 admit). Alpha Delta Phi fraternity. Clubs: Adirondack Adventure, Buffers, Sino-American Relations Club, Untitled
+    @ Large, Urban Outwitters. Author of "Out of Office: The Big Problem and Bigger Promise of Working From Home" (Dec 2021,
+    Knopf/Penguin Random House, co-authored with Anne Helen Petersen). Lives on island off Washington state coast with partner
+    Anne Helen Petersen (former BuzzFeed senior culture writer, author of "Can''t Even," Culture Study newsletter). Awards:
+    2019 Mirror Award (Facebook privacy reporting at BuzzFeed), 2020 Livingston Award finalist for National Reporting ("One
+    Nation Tracked" at NYT). Netflix "Follow This" (2018), "The Future of Fakes." KEY for MediaScope: His career arc uniquely
+    tests framing portability across 4 institutional contexts — digital-native (BuzzFeed), institutional prestige (NYT), independent
+    (Substack), and subscriber-driven magazine (Atlantic). His explicit identification of burnout from institutional partisan
+    readership dynamics (headlines weaponized as "culture war ammunition") is a rare firsthand account of how institutional
+    brands shape audience behavior around tech journalism. The 7-month Substack experiment provides a natural control for
+    measuring institutional influence on his framing. At the Atlantic, he operates under Nicholas Thompson (ex-Wired EIC,
+    now Atlantic CEO), creating an editorial culture bridge between Wired and Atlantic tech coverage. His Galaxy Brain podcast
+    amplifies his framing influence beyond text into audio/video. Framing signature: platform-as-threat narrative, skepticism
+    of tech industry self-regulation, attention to information warfare and online radicalization dynamics.'
 - career:
   - beat: state politics, local government
     end: 2010-11
@@ -730,10 +820,10 @@ journalists:
   - beat: Middle East
     end: 2012-01
     event_type: hired
-    notes: 'Middle East foreign correspondent for NPR. Hebrew fluency helped land exclusives. Bylines include "West Bank
-      Beer Festival Attracts Jewish Israelis," "Stories Differ After Israeli Soldiers Kill Palestinian," and "Kafka''s Final
-      Absurdist Tale Plays Out In Tel Aviv." Concurrent with stringing for Times of London and McClatchy. ~10 years total
-      in Middle East across all three outlets.'
+    notes: Middle East foreign correspondent for NPR. Hebrew fluency helped land exclusives. Bylines include "West Bank Beer
+      Festival Attracts Jewish Israelis," "Stories Differ After Israeli Soldiers Kill Palestinian," and "Kafka's Final Absurdist
+      Tale Plays Out In Tel Aviv." Concurrent with stringing for Times of London and McClatchy. ~10 years total in Middle
+      East across all three outlets.
     publication: npr
     role: correspondent
     source_url: https://muckrack.com/sheeraf
@@ -5260,17 +5350,17 @@ journalists:
   - beat: lifestyle, DIY, homesteading
     end: 2019-06
     event_type: hired
-    notes: Marketing Associate and Online Editorial Assistant at Ogden Publications, which published Mother Earth News,
-      Grit, and similar homesteading titles. Based in Lawrence/Topeka, Kansas. Wrote DIY articles (elderberry syrup,
-      flavored butter). Pre-journalism career. Self-described as "lifelong Kansas resident" at the time.
+    notes: Marketing Associate and Online Editorial Assistant at Ogden Publications, which published Mother Earth News, Grit,
+      and similar homesteading titles. Based in Lawrence/Topeka, Kansas. Wrote DIY articles (elderberry syrup, flavored butter).
+      Pre-journalism career. Self-described as "lifelong Kansas resident" at the time.
     publication: ogden-publications
     role: marketing_associate
     source_url: https://www.motherearthnews.com/diy/homemade-elderberry-syrup/
     start: 2018-01
   - beat: technology, phone repair
     event_type: other
-    notes: Smartphone Repair Technician at SOPHIA GLOBAL, LLC. Non-journalism role. Likely concurrent with or between
-      other positions.
+    notes: Smartphone Repair Technician at SOPHIA GLOBAL, LLC. Non-journalism role. Likely concurrent with or between other
+      positions.
     publication: sophia-global
     role: technician
     source_url: https://theorg.com/org/wired-1/org-chart/reece-rogers
@@ -5287,37 +5377,36 @@ journalists:
     start: 2021-01
   - beat: AI, consumer technology, service journalism, video games
     event_type: hired
-    notes: 'Staff Writer (Staff Writer 2 in Condé Nast title hierarchy). WIRED''s designated service writer — focuses
-      on explaining technology and helping readers get the most out of their tech. Based in San Francisco. 952+ articles
-      per JournalistHunt. Regular contributor to Wired Gadget Lab podcast with Lauren Goode and Michael Calore. Appeared
-      on NPR All Things Considered (May 2026, egocentric data for robots). KEY META COVERAGE: Instagram "Your Algorithm"
-      feature, Instagram identity crisis (translated to Wired Italia + Wired En Español = significant reach), Meta Movie
-      Gen launch (Oct 2024). Also covers AI deepfakes, AI pricing, data privacy. Co-wrote "How to stop your data from
-      being used to train AI" with Matt Burgess (cited by Deloitte TMT Predictions 2025). FRAMING ANALYSIS: Occupies
-      service/generalist position — contrast with Wired adversarial investigators (Feiger, Cameron, Mehrotra). Meta
-      coverage is product-focused (features, launches) rather than corporate-adversarial. Provides within-publication
-      baseline for institutional framing analysis. Bluesky: @thiccreese.'
+    notes: 'Staff Writer (Staff Writer 2 in Condé Nast title hierarchy). WIRED''s designated service writer — focuses on explaining
+      technology and helping readers get the most out of their tech. Based in San Francisco. 952+ articles per JournalistHunt.
+      Regular contributor to Wired Gadget Lab podcast with Lauren Goode and Michael Calore. Appeared on NPR All Things Considered
+      (May 2026, egocentric data for robots). KEY META COVERAGE: Instagram "Your Algorithm" feature, Instagram identity crisis
+      (translated to Wired Italia + Wired En Español = significant reach), Meta Movie Gen launch (Oct 2024). Also covers AI
+      deepfakes, AI pricing, data privacy. Co-wrote "How to stop your data from being used to train AI" with Matt Burgess
+      (cited by Deloitte TMT Predictions 2025). FRAMING ANALYSIS: Occupies service/generalist position — contrast with Wired
+      adversarial investigators (Feiger, Cameron, Mehrotra). Meta coverage is product-focused (features, launches) rather
+      than corporate-adversarial. Provides within-publication baseline for institutional framing analysis. Bluesky: @thiccreese.'
     publication: wired
     role: staff_writer
     source_url: https://www.cointime.ai/journalist/reece-rogers
     start: 2022-07
   name: Reece Rogers
-  notes: 'Wired service writer and generalist covering AI, consumer tech, and video games. Career: Ogden Publications
-    (Mother Earth News) → SOPHIA GLOBAL (tech repair) → Insider streaming fellow → Wired staff writer. BA English/Creative
-    Writing from University of Kansas. Published poetry at Ghost City Press and book criticism at LA Review of Books (LARB/USC
-    Publishing Fellowship, ~2017) while at KU — won 2nd place in KU Snyder Book Collection competition (2017, "American
-    Socialist Literature and Printed Ephemera"). From Kansas originally. Interesting case: a service/explainer journalist
-    at the same publication as the adversarial investigation team (Drummond, Feiger, Cameron). His Meta coverage (Instagram
-    features, Movie Gen launch) is product-focused and consumer-oriented — no corporate-adversarial framing detected. Tests
-    whether Wired''s anti-Meta editorial posture is uniform across all desks or concentrated in the investigative/news team.
-    JournalistHunt total: 952+ articles. Syndicated to Wired En Español, Ars Technica, WSJ, Business Insider, Wired Italia,
-    Glamour, Flipboard, MSN, The Daily Beast.'
+  notes: 'Wired service writer and generalist covering AI, consumer tech, and video games. Career: Ogden Publications (Mother
+    Earth News) → SOPHIA GLOBAL (tech repair) → Insider streaming fellow → Wired staff writer. BA English/Creative Writing
+    from University of Kansas. Published poetry at Ghost City Press and book criticism at LA Review of Books (LARB/USC Publishing
+    Fellowship, ~2017) while at KU — won 2nd place in KU Snyder Book Collection competition (2017, "American Socialist Literature
+    and Printed Ephemera"). From Kansas originally. Interesting case: a service/explainer journalist at the same publication
+    as the adversarial investigation team (Drummond, Feiger, Cameron). His Meta coverage (Instagram features, Movie Gen launch)
+    is product-focused and consumer-oriented — no corporate-adversarial framing detected. Tests whether Wired''s anti-Meta
+    editorial posture is uniform across all desks or concentrated in the investigative/news team. JournalistHunt total: 952+
+    articles. Syndicated to Wired En Español, Ars Technica, WSJ, Business Insider, Wired Italia, Glamour, Flipboard, MSN,
+    The Daily Beast.'
 - career:
   - beat: local news
     end: 1979-01
     event_type: hired
-    notes: 'First journalism job after Columbia. Reporter at Bingham Press in Bingham, NY. Brief stint (~4 years) in local
-      journalism before joining the New York Times.'
+    notes: First journalism job after Columbia. Reporter at Bingham Press in Bingham, NY. Brief stint (~4 years) in local
+      journalism before joining the New York Times.
     publication: bingham-press
     role: reporter
     source_url: https://www.encyclopedia.com/arts/educational-magazines/lohr-steve
@@ -5325,11 +5414,11 @@ journalists:
   - beat: international, business, economics
     end: 1989-01
     event_type: hired
-    notes: 'Joined the Times in 1979 — one of the longest continuous tenures at any of the 5 tracked publications (~47 years
+    notes: Joined the Times in 1979 — one of the longest continuous tenures at any of the 5 tracked publications (~47 years
       and counting as of 2026). Spent his first decade as a foreign correspondent based in Tokyo, Manila, and London. He has
       quipped that he "basically missed the 1980s in the United States." This foreign correspondent decade gave him international
       business and economics context that later shaped his technology coverage — he understood globalization and supply chains
-      before covering Apple and Microsoft.'
+      before covering Apple and Microsoft.
     publication: nytimes
     role: foreign_correspondent
     source_url: https://computerhistory.org/profile/steve-lohr/
@@ -5337,9 +5426,9 @@ journalists:
   - beat: business, editing
     end: 1998-01
     event_type: editorial_role_change
-    notes: 'Returned to New York from foreign posting. Served as business editor at the Times. Transitioned from editing to
+    notes: Returned to New York from foreign posting. Served as business editor at the Times. Transitioned from editing to
       technology reporting as the tech beat expanded in the 1990s. Also wrote for magazines including the NYT Magazine, The
-      Atlantic Monthly, and The Washington Monthly during this period.'
+      Atlantic Monthly, and The Washington Monthly during this period.
     publication: nytimes
     role: business_editor
     source_url: https://www.Edge.org/memberbio/steve_lohr
@@ -5364,17 +5453,17 @@ journalists:
       to changes in Chinese factories). Also nominated for Pulitzer Prize a second time. 2015: Published "Data-ism" (Harper
       Business) on big data, data science, and decision-making. Coverage has expanded to encompass AI, automation, and their
       economic/geographic effects. Notable recent coverage: "A.I. Policy Is Tricky. From Around the World, They Came to Hash
-      It Out" (Jan 2019, MIT AI Policy Conference); "Economists Pin More Blame on Tech for Rising Inequality" (Jan 2022,
-      spotlighting Daron Acemoglu''s research on excessive automation); "How A.I. Could Reshape the Economic Geography of
-      America" (Dec 2024, with Frank Levy research on midsize cities); co-byline on June 2026 coverage of the Trump administration
-      pressing Meta to submit AI models for government review. Receives 150 emails/day and ~30 story pitches/week. Described
-      by Mission North interview as favoring the "active hunt" style of journalism. Lives in New York City. Education: Columbia
-      University Graduate School of Journalism (graduated 1975). KEY: His 47-year NYT tenure makes him the longest-serving
-      reporter at any of the 5 tracked publications — his framing has evolved across every era of tech coverage (mainframes
-      → PCs → internet → mobile → cloud → AI) within a single institutional context. His economic-structural lens
-      (automation → jobs → inequality → geographic redistribution) is distinct from the adversarial-investigative framing
-      of the NYT tech-accountability reporters (Frenkel, Kang, Mac, Isaac). Provides an important within-publication control
-      for measuring whether NYT''s institutional culture produces uniform framing or allows beat-specific variation.'
+      It Out" (Jan 2019, MIT AI Policy Conference); "Economists Pin More Blame on Tech for Rising Inequality" (Jan 2022, spotlighting
+      Daron Acemoglu''s research on excessive automation); "How A.I. Could Reshape the Economic Geography of America" (Dec
+      2024, with Frank Levy research on midsize cities); co-byline on June 2026 coverage of the Trump administration pressing
+      Meta to submit AI models for government review. Receives 150 emails/day and ~30 story pitches/week. Described by Mission
+      North interview as favoring the "active hunt" style of journalism. Lives in New York City. Education: Columbia University
+      Graduate School of Journalism (graduated 1975). KEY: His 47-year NYT tenure makes him the longest-serving reporter at
+      any of the 5 tracked publications — his framing has evolved across every era of tech coverage (mainframes → PCs → internet
+      → mobile → cloud → AI) within a single institutional context. His economic-structural lens (automation → jobs → inequality
+      → geographic redistribution) is distinct from the adversarial-investigative framing of the NYT tech-accountability reporters
+      (Frenkel, Kang, Mac, Isaac). Provides an important within-publication control for measuring whether NYT''s institutional
+      culture produces uniform framing or allows beat-specific variation.'
     publication: nytimes
     role: senior_writer
     source_url: https://www.missionnorth.com/dispatches/steve-lohr-at-the-new-york-times-on-covering-where-technology-shines-and-stumbles
@@ -5384,21 +5473,22 @@ journalists:
     correspondent for a decade (Tokyo, Manila, London) before transitioning to technology beat. Columbia J-School graduate
     (1975). Two Pulitzer Prize nominations; one win (2013, Explanatory Reporting, "iEconomy" series on Apple). Author of three
     books: "Go To" (Basic Books, 2001, history of programming), "U.S. v. Microsoft" with Joel Brinkley (McGraw-Hill, 2001),
-    and "Data-ism" (Harper Business, 2015, data science). Also written for NYT Magazine, The Atlantic Monthly, Washington Monthly.
-    Based in NYC. KEY for MediaScope: Lohr is the most important baseline journalist in the dataset. His 47-year single-institution
-    career at the NYT — spanning foreign correspondence, editing, and technology reporting across every tech era — makes him
-    the purest test of NYT institutional framing over time. Unlike the adversarial-investigative cohort (Frenkel, Kang, Mac,
-    Isaac) who arrived with pre-formed accountability instincts from other outlets, Lohr''s editorial identity was formed entirely
-    within the NYT. His economic-structural lens (tech → automation → jobs → inequality → geographic redistribution) is distinct
-    from both the adversarial camp and the product-focused reporters. His coverage of Meta specifically (e.g., co-byline on
-    June 2026 "US presses Meta to agree to AI reviews") provides a direct framing comparison with Frenkel/Kang on the same
-    subjects. If NYT institutional framing is uniform, Lohr and Frenkel should frame Meta stories similarly; if beat-specific
-    variation dominates, their framing should diverge significantly. This is a testable hypothesis for the DiD regression.'
+    and "Data-ism" (Harper Business, 2015, data science). Also written for NYT Magazine, The Atlantic Monthly, Washington
+    Monthly. Based in NYC. KEY for MediaScope: Lohr is the most important baseline journalist in the dataset. His 47-year
+    single-institution career at the NYT — spanning foreign correspondence, editing, and technology reporting across every
+    tech era — makes him the purest test of NYT institutional framing over time. Unlike the adversarial-investigative cohort
+    (Frenkel, Kang, Mac, Isaac) who arrived with pre-formed accountability instincts from other outlets, Lohr''s editorial
+    identity was formed entirely within the NYT. His economic-structural lens (tech → automation → jobs → inequality → geographic
+    redistribution) is distinct from both the adversarial camp and the product-focused reporters. His coverage of Meta specifically
+    (e.g., co-byline on June 2026 "US presses Meta to agree to AI reviews") provides a direct framing comparison with Frenkel/Kang
+    on the same subjects. If NYT institutional framing is uniform, Lohr and Frenkel should frame Meta stories similarly; if
+    beat-specific variation dominates, their framing should diverge significantly. This is a testable hypothesis for the DiD
+    regression.'
 - career:
   - beat: general, business
     end: 2023-03
     event_type: hired
-    notes: 'Production assistant. Early career in television news. Pre-journalism career stage. Exact dates approximate.'
+    notes: Production assistant. Early career in television news. Pre-journalism career stage. Exact dates approximate.
     publication: msnbc
     role: production_assistant
     source_url: https://talkingbiznews.com/they-re-hiring/techcrunch-hires-zeff-as-a-senior-writer/
@@ -5406,8 +5496,8 @@ journalists:
   - beat: general, business
     end: 2023-03
     event_type: hired
-    notes: 'Intern at Connecticut Public Broadcasting (public radio/TV). Dates approximate based on TalkingBizNews reporting.
-      Likely concurrent or adjacent to MSNBC production assistant role.'
+    notes: Intern at Connecticut Public Broadcasting (public radio/TV). Dates approximate based on TalkingBizNews reporting.
+      Likely concurrent or adjacent to MSNBC production assistant role.
     publication: connecticut-public
     role: intern
     source_url: https://talkingbiznews.com/they-re-hiring/techcrunch-hires-zeff-as-a-senior-writer/
@@ -5416,9 +5506,9 @@ journalists:
     end: 2023-06
     event_type: hired
     notes: 'Intern at Bloomberg News. Co-bylined coverage of the Silicon Valley Bank crisis (March 2023) — Brian Barrett specifically
-      praised this work in his Wired hire announcement: "wrote some of Bloomberg''s first stories about the Silicon Valley Bank
-      crisis." Co-byline on SVB stock drop article with Drew Singer (Bloomberg Línea, March 9, 2023). Internship during the
-      most dramatic financial crisis since 2008. University of Massachusetts graduate.'
+      praised this work in his Wired hire announcement: "wrote some of Bloomberg''s first stories about the Silicon Valley
+      Bank crisis." Co-byline on SVB stock drop article with Drew Singer (Bloomberg Línea, March 9, 2023). Internship during
+      the most dramatic financial crisis since 2008. University of Massachusetts graduate.'
     publication: bloomberg
     role: intern
     source_url: https://www.bloomberglinea.com/2023/03/10/silicon-valley-banks-owner-drops-most-on-record-as-clients-face-cash-crunch/
@@ -5427,14 +5517,14 @@ journalists:
     end: 2024-06
     event_type: hired
     notes: 'Reporter covering AI and technology at Gizmodo (then part of G/O Media). TalkingBizNews announced departure June
-      21, 2024. Prolific output — 23 pages of articles in ~10 months, covering Meta AI, OpenAI, Google Gemini, content
-      moderation, privacy. KEY SCOOPS AND STORIES: Meta''s Project Ghostbusters (filings revealing data analytics on
-      Snapchat/YouTube/Amazon via Onavo VPN, Mar 2024), AI chatbot censorship systematic testing (with Thomas Germain,
-      Mar 2024 — "We Tested AI Censorship: Here''s What Chatbots Won''t Tell You"), X making likes private (May 2024),
-      Threads "Trending now" feature (Mar 2024), Yann LeCun vs Elon Musk clash (May 2024), Meta and IBM AI Alliance launch
-      (Dec 2023), OpenAI board restructuring post-Altman crisis (Dec 2023), OpenAI DevDay ChatGPT-4 Turbo (Nov 2023),
-      33 states suing Meta over child addiction (Oct 2023), foreign government push notification surveillance (Dec 2023).
-      Gizmodo''s post-Gawker adversarial editorial culture shaped his accountability instincts on Big Tech coverage.'
+      21, 2024. Prolific output — 23 pages of articles in ~10 months, covering Meta AI, OpenAI, Google Gemini, content moderation,
+      privacy. KEY SCOOPS AND STORIES: Meta''s Project Ghostbusters (filings revealing data analytics on Snapchat/YouTube/Amazon
+      via Onavo VPN, Mar 2024), AI chatbot censorship systematic testing (with Thomas Germain, Mar 2024 — "We Tested AI Censorship:
+      Here''s What Chatbots Won''t Tell You"), X making likes private (May 2024), Threads "Trending now" feature (Mar 2024),
+      Yann LeCun vs Elon Musk clash (May 2024), Meta and IBM AI Alliance launch (Dec 2023), OpenAI board restructuring post-Altman
+      crisis (Dec 2023), OpenAI DevDay ChatGPT-4 Turbo (Nov 2023), 33 states suing Meta over child addiction (Oct 2023), foreign
+      government push notification surveillance (Dec 2023). Gizmodo''s post-Gawker adversarial editorial culture shaped his
+      accountability instincts on Big Tech coverage.'
     publication: gizmodo
     role: reporter
     source_url: https://talkingbiznews.com/media-news/gizmodo-reporter-zeff-is-departing/
@@ -5458,14 +5548,14 @@ journalists:
     notes: 'Senior writer covering the business of artificial intelligence. Hired by Executive Editor Brian Barrett, announced
       Nov 13, 2025, started Nov 17, 2025. Barrett announcement: "Few people have delivered more scoops at such a critical
       time for the industry. Max is relentless, well-sourced, and brings a deep understanding of both the technological and
-      financial intricacies of AI." Based in San Francisco office. NOTABLE WIRED WORK: Claude Code ARR exclusive (Jun 23, 2026
-      — broke that Claude Code''s ARR grew by $100M+ beyond announced $1B, making up 12% of Anthropic total ARR; exclusive
+      financial intricacies of AI." Based in San Francisco office. NOTABLE WIRED WORK: Claude Code ARR exclusive (Jun 23,
+      2026 — broke that Claude Code''s ARR grew by $100M+ beyond announced $1B, making up 12% of Anthropic total ARR; exclusive
       interview with Boris Cherny, head of Claude Code). Agentic AI culture coverage (noted by Barrett on WIRED podcast).
       @wiredunion member. KEY MIGRATION: Bloomberg → Gizmodo → TechCrunch → Wired represents the fastest four-outlet pipeline
       in the dataset (4 outlets in ~3 years). Tests whether framing stays consistent across wire service → Gawker-descendant
       → startup media → Condé Nast institutional contexts, all during the same AI hype cycle. Also the THIRD Gizmodo → Wired
-      migration under Barrett (after Dell Cameron and Dhruv Mehrotra), reinforcing Barrett''s talent network as a hiring
-      pipeline from Gizmodo''s adversarial culture into Wired.'
+      migration under Barrett (after Dell Cameron and Dhruv Mehrotra), reinforcing Barrett''s talent network as a hiring pipeline
+      from Gizmodo''s adversarial culture into Wired.'
     publication: wired
     role: senior_writer
     source_url: https://www.editorandpublisher.com/stories/wired-welcomes-two-new-staff-members-alana-hope-levinson-and-maxwell-zeff,252685
@@ -5482,9 +5572,9 @@ journalists:
     Four-outlet career in ~3 years is the fastest multi-outlet arc in the dataset. Each outlet has very different institutional
     norms: Bloomberg (wire service precision, attribution-heavy), Gizmodo (Gawker-descendant adversarial), TechCrunch (startup
     ecosystem booster → accountability), Wired (Condé Nast longform + Drummond-era adversarial pivot). If framing is portable
-    and individual, his writing should show consistent patterns across all four; if institutional framing dominates, each outlet
-    should show distinct framing fingerprints. (3) GENERATIONAL TEST: As a ChatGPT-era journalist, his baseline AI literacy
-    differs from pre-deep-learning veterans. Tests whether journalists who grew up with LLMs frame AI differently from those
-    who covered the AI winter through the hype cycle. His reporting scope (AI business at Wired) also enables direct comparison
-    with Lauren Goode (consumer tech at Wired) and Leah Feiger (politics at Wired) to test whether beat assignment or
-    institutional culture is the stronger framing determinant within a single publication.'
+    and individual, his writing should show consistent patterns across all four; if institutional framing dominates, each
+    outlet should show distinct framing fingerprints. (3) GENERATIONAL TEST: As a ChatGPT-era journalist, his baseline AI
+    literacy differs from pre-deep-learning veterans. Tests whether journalists who grew up with LLMs frame AI differently
+    from those who covered the AI winter through the hype cycle. His reporting scope (AI business at Wired) also enables direct
+    comparison with Lauren Goode (consumer tech at Wired) and Leah Feiger (politics at Wired) to test whether beat assignment
+    or institutional culture is the stronger framing determinant within a single publication.'
