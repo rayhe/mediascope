@@ -6864,3 +6864,38 @@ This closes a significant gap in detecting editorial skepticism techniques that 
 - 38 framing device types (unchanged)
 - 414 unique emotional language terms (unchanged)
 - 101 journalists tracked (unchanged)
+
+### 2026-06-29 04:00 PT — Type C: Guardian Ownership & Funding Deep Dive
+**Focus:** Guardian Media Group board turnover, Mercuri exit documentation, Matthew Brittin revolving door, Google AI pilot escalation, UK CMA ruling expansion
+**Commit:** d235a2f
+
+**Key findings:**
+
+1. **GMG Board Turnover (Companies House):** Major governance churn — 4 directors departed Jan-Mar 2026:
+   - **Matthew Brittin** (terminated Mar 24) — Google EMEA President for 18 years → GMG NED (~2025) → BBC Director-General (May 18, 2026). Had governance oversight of Guardian during Google News AI pilot launch. Creates Google→Guardian→BBC revolving door pathway.
+   - **Rene Rechtman** (terminated Mar 17) — Moonbug Entertainment CEO (CoComelon, Blippi), 6-year board tenure since Mar 2020.
+   - **Keith Underwood** (terminated Jan 30) — CFO/COO. Status of executive role post-departure unconfirmed. Key figure in AI licensing negotiations.
+   - **Coram Williams** (terminated Jan 26) — near-simultaneous departure with Underwood.
+   - New appointments: Patricia Cobian (Sep 2025), James Goode (May 2026).
+
+2. **Mercuri Exit Details (3 newly documented):**
+   - **Human Native → Cloudflare** (Jan 15, 2026): AI data marketplace for creator content licensing. £2.8M seed co-led by Mercuri+LocalGlobe (May 2024). $3.56M total raised. MODERATE-HIGH conflict relevance — directly aligned with Guardian's SPUR objectives and AI licensing strategy.
+   - **Streetbees → Administration** (Aug 2025): $56M raised, $200M valuation. Distressed exit. Low relevance.
+   - **Papercup → RWS Holdings IP acquisition** (Jun 26, 2025): AI dubbing tech. IP-only deal suggests financial difficulty. Low relevance.
+
+3. **Google AI Pilot Escalation:** Added Jun 29 Inshorts report confirming Google asking publishers to allow AI training or lose Showcase payments. Showcase confirmed being ended. Jason Kint (DCN): "There's no fair deal discussions that can happen with Google."
+
+4. **UK CMA Ruling Expansion:** Added 3 new source URLs (TechCrunch, Computer Weekly, TechXplore). Documented new Search Console toggle (UK subset first → global rollout), CMA CEO Sarah Cardell quote, Google's Mrinalini Loew quote, AI Overviews 2.5B MAU / AI Mode 1B+ MAU stats.
+
+5. **New Known Conflicts:** +2 (revolving_door: Brittin severity 2; investment: Human Native exit severity 2)
+
+6. **New Testable Hypotheses:** #12 (Brittin tenure × Google coverage), #13 (Guardian coverage of its own VC arm's Cloudflare exit)
+
+**Profile expansion:** Guardian YAML grew from 935 to ~1,200 lines (+264 insertions, -20 deletions).
+
+**Cumulative stats (unchanged except profile):**
+- 888 tests passing (34 test files)
+- 38 framing device types
+- 414 unique emotional language terms
+- 101 journalists tracked
+- All 5 publications have Type C deep dives — Guardian now the most comprehensive
