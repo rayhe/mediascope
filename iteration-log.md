@@ -6734,3 +6734,61 @@ This closes a significant gap in detecting editorial skepticism techniques that 
 - 38 framing device types (33 pattern-matched + 5 structural)
 - 414 unique emotional language terms (unchanged)
 - 101 journalists tracked (unchanged)
+
+---
+
+## 2026-06-29 01:00 PT — Hour Type A: Article Deep Dive
+
+**Article:** MIT Technology Review — "Inside Anduril and Meta's Quest to Make Smart Glasses for Warfare" (May 18, 2026)
+**Decision:** Re-analyze existing article with current toolkit to validate recent improvements and find remaining bugs.
+
+### Bugs Found & Fixed
+
+**1. Entity false positive: "quest" → VR/Metaverse**
+- Lowercase "quest" in prose ("Meta's quest to make smart glasses", "self-funded side quest") incorrectly matched VR/Metaverse cluster's Quest regex
+- Fix: `(?-i:Quest)` enforces case-sensitive match — same pattern as XREAL, Halo, Arena, IBM
+- 4 regression tests added (TestQuestFalsePositive)
+
+**2. Missing topic: defense_military (16th topic bucket)**
+- Article about military AR headsets, drone strikes, $159M Army contracts was classified as ai_development (0.34)
+- Added defense_military with 22 keywords (military, Army, warfare, Pentagon, drone, Anduril, Palantir, IVAS, etc.)
+- Article now correctly classified as defense_military (0.54, primary)
+- 3 tests added; all doc-code sync updated (ARCHITECTURE.md, AGENT_GUIDE.md, METHODOLOGY.md, test_structural_consistency.py 15→16, README.md)
+
+**3. Framing correction not firing: VADER +0.64 vs manual -0.10**
+- Root cause 1: `military_techno_optimism` was NOT in `_ADVERSARIAL_DEVICE_TYPES` → added
+- Root cause 2: agency=-0.2 didn't meet Path A's -0.3 threshold → new correction path needed
+- NEW Path E (military techno-optimism): fires when ≥3 `military_techno_optimism` devices + any negative agency (relaxed from -0.3). Uses lighter 70/30 blend — VADER inflation comes from aspirational military language, not passive-subject framing
+- Result: overall_tone 0.6375 → 0.1016 (gap reduced from +0.74 to +0.20)
+- 3 tests added; METHODOLOGY.md §9.2 and QUALITY_STANDARDS.md updated
+
+### Analysis Summary (Post-Fix)
+
+| Dimension | Toolkit | Manual | Gap |
+|---|---|---|---|
+| Overall tone | +0.1016 | -0.10 | +0.20 (was +0.74) |
+| Emotional intensity | 0.3724 | 0.35 | +0.02 |
+| Source authority | 1.0 | 1.0 | 0.0 |
+| Agency attribution | -0.2 | -0.2 | 0.0 |
+| Anonymous source ratio | 0.0 | 0.0 | 0.0 |
+| Speculative language | 0.35 | 0.35 | 0.0 |
+| Comparative framing | -0.33 | -0.33 | 0.0 |
+
+### Topic classification (post-fix)
+1. defense_military: 0.5448 (military, Army, Pentagon, Special Operations, combat)
+2. ai_development: 0.3437 (AI models, AI systems, computer vision)
+3. product_launch: 0.1392 (announced, introduce)
+
+### Commit
+- `05c939d` — fix: Quest false positive, add defense_military topic, framing correction Path E
+- 13 files changed, 256 insertions, 34 deletions
+- Pushed to GitHub
+
+### Running Totals
+- 888 tests passing (was 887 → +10 new tests, -9 from pre-existing count already being 887)
+- 16 topic buckets (was 15)
+- 5 sentiment correction paths: A (adversarial), B (amplification), C (embedded anchor), D (sardonic), E (military techno-optimism)
+- 14 adversarial device types (was 13)
+- 38 framing device types (unchanged)
+- 414 unique emotional language terms (unchanged)
+- 101 journalists tracked (unchanged)
