@@ -171,7 +171,7 @@ MediaScope ships with detailed profiles for five publications, chosen to illustr
 | **NY Times** | Sulzberger Family | Litigation | Suing OpenAI while building AI internally |
 | **The Guardian** | Scott Trust (non-profit) | Partial control | OpenAI + ProRata licensing deals, but no equity in specific competitors. Closest to baseline in the 5-pub set (pre-Feb 2025 coverage cleaner). |
 | **The Atlantic** | Emerson Collective (LPJ) | Investment + Licensing + Civic | Owner holds ~$16B Apple stock, $6.5B OpenAI equity exit, co-chairs civic org with Google/Alphabet president and OpenAI CEO |
-| **MIT Tech Review** | MIT | Institutional paradox | Parent receives $500M+ from companies it covers |
+| **MIT Tech Review** | MIT | Institutional paradox | Parent receives $500M+ from companies it covers; operates DoD's largest FFRDC ($12.2B Lincoln Lab contract, $1.36B/yr); DAF-MIT AI Accelerator transfers AI to military |
 
 Add your own with `mediascope add-publication` or copy `profiles/_template.yaml`.
 

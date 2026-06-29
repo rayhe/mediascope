@@ -6271,3 +6271,47 @@ The editorial intensity (0.774) exceeds the quoted intensity (0.485), meaning th
 
 - **Structural voice imbalance:** No pattern for measuring column-inch ratios between dissenting/supporting voices
 - **Ironic juxtaposition:** "first companywide [hackathon] since 8,000 people were laid off" — subtler than existing juxtaposition pattern which requires explicit "but"/"however" pivots
+
+---
+
+## 2026-06-28 16:00 PT — Hour Type B: Journalist/Publication Research — Reece Rogers (Wired Service Writer, #102)
+
+**Focus:** Add Reece Rogers, Wired's designated service writer, as journalist #102 with full career history and analytical framing notes.
+**Rationale:** Rogers occupies a uniquely valuable analytical position — he's a consumer-facing, product-focused writer at the same publication as Wired's adversarial investigation team (Drummond, Feiger, Cameron, Mehrotra). His Meta coverage (Instagram features, Movie Gen launch) is consistently product-focused rather than corporate-adversarial. This provides a within-publication baseline for testing whether Wired's anti-Meta editorial posture is uniform across all desks or concentrated in the news/investigation team.
+
+### Career Timeline
+
+| Period | Role | Publication | Notes |
+|---|---|---|---|
+| ~2017 | Publishing Fellow | LA Review of Books | LARB/USC Publishing Workshop. Wrote book review + poetry at Ghost City Press. KU undergrad. |
+| ~2018-2019 | Marketing Associate & Editorial Assistant | Ogden Publications (Mother Earth News) | Lawrence/Topeka, KS. Lifestyle/DIY content. |
+| ~2019-2020 | Smartphone Repair Technician | SOPHIA GLOBAL | Non-journalism role. |
+| ~2021-2022 | Streaming Fellow | Insider/Business Insider | Covered streaming industry. Fellowship pipeline. |
+| ~Jul 2022-present | Staff Writer (Level 2) | WIRED | Service writer. 952+ articles. San Francisco. |
+
+### Key Meta-Adjacent Coverage
+
+1. **Instagram "Your Algorithm" feature** — covered Instagram's transparency tool for Reels recommendations
+2. **Instagram identity crisis** — critical consumer piece translated to Wired Italia + Wired En Español (significant international reach)
+3. **Meta Movie Gen launch** (Oct 2024) — product-focused reporting, neutral framing (per Techmeme)
+4. **AI deepfakes** (Google Nano Banana Pro / ChatGPT Images) — adversarial but targets multiple companies, not Meta-specific
+5. **"How to stop your data from being used to train AI"** (w/ Matt Burgess) — privacy piece, cited by Deloitte TMT Predictions 2025
+
+### Analytical Value
+
+- **Within-publication framing baseline:** Same publication (Wired), same era (Drummond), but different desk and tone. His product-focused Meta coverage contrasts with the adversarial framing from the news/investigation team.
+- **High-volume output:** 952+ articles creates statistical base for automated framing analysis
+- **Broad syndication:** Wired En Español, Ars Technica, WSJ, BI, Wired Italia, Glamour, Flipboard, MSN, The Daily Beast — tests how Wired's institutional framing propagates through syndication
+- **Podcast presence:** Regular Gadget Lab contributor with Lauren Goode & Michael Calore — tests spoken vs. written framing differences
+
+### Sources Used
+- TheOrg profile, JournalistHunt (952 articles), Cointime journalist bio, LA Review of Books (author page + book review), Mother Earth News bylines, Ghost City Press poetry, KU Libraries Snyder 2017, NPR transcript (May 27, 2026), Techmeme references (4 stories), Muck Rack, Deloitte TMT Predictions 2025
+
+### Files Modified
+- `profiles/careers/journalists.yaml`: Added Reece Rogers with 4 career entries and comprehensive notes (+56 lines)
+- `README.md`: Updated journalist count from 101 to 102, added Rogers to migration examples
+
+### Stats After
+- 787 tests passed (all green)
+- 102 journalists tracked
+- Commit `9921938` — pushed to main
