@@ -44,30 +44,65 @@ gmg_board:
       action: "appointed"
       date: "2026-05-21"
       filing_date: "2026-05-22"
-      notes: "New director. Background not yet confirmed — research needed."
-      source_url: "https://find-and-update.company-information.service.gov.uk/company/00094531/filing-history"
+      role: "Chief Financial Officer (executive director)"
+      notes: >
+        NEW CFO OF GMG. James Goode joins as CFO and executive director, reporting directly to
+        CEO Anna Bateson. Responsible for GMG's global financial strategy and operations.
+        CAREER: PA Media Group (formerly Press Association — UK's national news agency) — Group
+        CFO and executive director for 6 years (2018-2025). At PA Group, he replaced Ed Ethelston
+        as CFO and was appointed to the board of directors alongside Paul Dacre (Chairman &
+        Editor-in-Chief of Associated Newspapers/Daily Mail). Before PA Group, Goode had
+        "background in strategic investments and acquisitions across a variety of public, private
+        and international organisations" per PA Group CEO Clive Marshall.
+        SIGNIFICANCE: Goode replaces Keith Underwood (terminated as GMG director Jan 30, 2026)
+        as the CFO figure on the GMG board. His PA Media Group background is analytically relevant:
+        PA Media (formerly Press Association) is the UK's largest domestic multimedia news agency,
+        owned by a consortium of UK newspaper publishers. Goode thus has deep insider knowledge
+        of the UK news industry's economics, distribution, and publisher relationships — including
+        how publishers negotiate with tech platforms.
+        Anna Bateson on appointment: "James brings extensive experience in the media sector and
+        has a proven track record of driving revenue growth and strengthening operational capabilities."
+      source_urls:
+        - "https://find-and-update.company-information.service.gov.uk/company/00094531/filing-history"
+        - "https://editorandpublisher.com/stories/the-guardian-appoints-james-goode-as-chief-finance-officer"
+        - "https://pamediagroup.com/james-goode-paul-dacre-added-to-board-of-directors/"
     - name: "Matthew John Brittin"
       action: "terminated"
       date: "2026-03-24"
       filing_date: "2026-03-25"
+      role: "Senior Independent Director (most senior governance role after Chair)"
       notes: >
-        MAJOR FINDING — TECH-MEDIA REVOLVING DOOR: Former Google EMEA President (2014-2025,
-        18 years at Google total). Appointed GMG non-executive director ~2025. Left GMG board
-        to become BBC Director-General (BBC board approved appointment Mar 23, 2026; confirmed
-        at £565,000 salary; started role from May 18, 2026). Previously also NED at Sainsbury's
-        (9 years). CBE in 2026 New Year's Honours for services to technology.
-        ANALYTICAL SIGNIFICANCE: Brittin's career trajectory — Google EMEA President → GMG
-        board → BBC Director-General — represents a direct Google→Guardian→BBC revolving door.
-        While his GMG tenure was brief (~1 year), the board connection means Google's former
-        top EMEA executive had governance oversight of the Guardian's operations (including
-        its AI licensing strategy and SPUR coalition) during a critical period when the Guardian
-        was negotiating its Google News AI pilot participation (Dec 2025). Jane Martinson
-        (Scott Trust board member) described Brittin as "razor sharp" with "real experience
+        MAJOR FINDING — TECH-MEDIA REVOLVING DOOR + SENIOR GOVERNANCE ROLE: Brittin was
+        specifically recruited as the SENIOR INDEPENDENT DIRECTOR of GMG — confirmed by the
+        Green Park executive search case study. This is the most senior governance position after
+        the Chair, responsible for serving as an intermediary between the Chair and board, leading
+        the Chair's performance evaluation, and being the board's voice of independence. Green Park
+        conducted a "global search" spanning both US coasts, Continental Europe, and Australia.
+        GMG Chair Charles Gurassa: "We successfully appointed Matt Brittin (former President of
+        Google EMEA), as our Senior Independent Director. His expertise will be a welcome addition
+        to the Board and management as we build out our strategy as a global, digital news media
+        organisation."
+        CAREER: Google EMEA President (2014-2025, 18 years at Google total). Joined GMG board
+        ~2025 as SID. Left GMG board Mar 24, 2026 to become BBC Director-General (BBC board
+        approved Mar 23, 2026; confirmed at £565,000 salary; started May 18, 2026). Previously
+        NED at Sainsbury's (9 years). CBE in 2026 New Year's Honours for services to technology.
+        ANALYTICAL SIGNIFICANCE (UPGRADED): Brittin's role as SID means he had the HIGHEST
+        independent governance oversight of GMG, not just a regular board seat. During his tenure
+        (~2025 to Mar 2026) he overlapped with: (1) Guardian's Google News AI pilot launch (Dec
+        2025), (2) SPUR coalition founding (Feb 2026), (3) OpenAI licensing deal (already in place).
+        As SID, Brittin would have been the board member most responsible for ensuring governance
+        independence — yet he was simultaneously a former 18-year Google executive while the
+        Guardian was negotiating AI content terms with Google. The irony: the person tasked with
+        ensuring independent governance was himself the most significant potential source of
+        conflicted governance. Google→Guardian→BBC represents a triple revolving door through
+        the SID position, not just a routine NED appointment.
+        Jane Martinson (Scott Trust board member): Brittin is "razor sharp" with "real experience
         managing the challenges of an unknown future."
       source_urls:
         - "https://find-and-update.company-information.service.gov.uk/company/00094531/filing-history"
         - "https://www.prolificnorth.co.uk/news/bbc-board-confirms-former-google-exec-and-guardian-board-member-matt-brittin-will-step-into-565k-director-general-role/"
         - "https://www.computing.co.uk/news/ex-google-executive-matt-brittin-confirmed-as-bbcs-new-director-general"
+        - "https://green-park.co.uk/case-studies/how-the-guardian-media-group-secured-googles-european-president-for-its-board/"
     - name: "Rene Efraim Rechtman"
       action: "terminated"
       date: "2026-03-17"
@@ -102,26 +137,151 @@ gmg_board:
       action: "terminated"
       date: "2026-01-26"
       filing_date: "2026-01-28"
+      role: "Non-Executive Director"
       notes: >
-        Background not yet fully confirmed. Companies House filing only. Departed 4 days before
-        Keith Underwood. The near-simultaneous departure of two directors in late January 2026
-        may indicate a planned board restructuring or governance change.
-      source_url: "https://find-and-update.company-information.service.gov.uk/company/00094531/filing-history"
+        FULL CAREER PROFILE: NED on GMG board from January 2017 to January 26, 2026 (9-year
+        tenure). Career: Autocar magazine (news reporter and road tester — a motoring journalist)
+        → Arthur Andersen (consulting, then Arthur Andersen Business Consulting and Arthur
+        Andersen Worldwide) → Pearson Education (financial strategy & planning manager → finance
+        & operations director ELT EMA → interim president Pearson Education Italia → head of
+        financial planning & analysis) → Penguin Group CFO (from Apr 2008) → Penguin Random
+        House CFO (managing 800-person finance team across 22 markets, ~$3.9B revenue joint
+        venture between Bertelsmann and Pearson) → Pearson plc Group CFO (Aug 2015-May 2020)
+        → Adecco Group CFO (May 2020-Jan 2026, SIX: ADEN, Switzerland-based global staffing
+        company) → CFO at an unnamed German automotive company (Jan 2026+).
+        BA (Hons) from Christ Church, Oxford. MBA from London Business School. WEF Agenda
+        Contributor. British born, based in Germany since Adecco (Zurich then Germany).
+        Adecco CEO Denis Machuel: "We wish him all the best as he assumes a role that connects
+        to his deep passion for cars." Williams on LinkedIn: "to return to my roots in the
+        automotive sector in my adopted home of Germany."
+        BOARD COMPOSITION: Appointed by then-chair Neil Berkett (Jan 2017). On the board when
+        Guardian pivoted from losses to profit. His financial expertise (FTSE 100 CFO, major
+        publishing groups) was instrumental during GMG's turnaround. 9-year tenure makes him
+        one of the longest-serving modern GMG NEDs.
+        TIMELINE: Departed GMG board Jan 26, 2026, 4 days before Keith Underwood (Jan 30).
+        Both departures coincide with board restructuring around Google News AI pilot (Dec 2025)
+        and SPUR coalition founding (Feb 2026). Adecco departure announced Nov 6, 2025.
+      source_urls:
+        - "https://find-and-update.company-information.service.gov.uk/company/00094531/filing-history"
+        - "https://inpublishing.co.uk/articles/coram-williams-joins-guardian-media-group-board"
+        - "https://weforum.org/people/coram-williams/"
+        - "https://morningstar.com/news/pr-newswire/20251106la63345b/the-adecco-group-announces-new-chief-financial-officer"
+        - "https://lse.co.uk/news/PSON/directorate-change-2015"
     - name: "Patricia Cobian"
       action: "appointed"
       date: "2025-09-29"
       filing_date: "2025-10-02"
-      notes: "New director. Background not yet confirmed — research needed."
-      source_url: "https://find-and-update.company-information.service.gov.uk/company/00094531/filing-history"
+      role: "Non-Executive Director"
+      notes: >
+        FULL CAREER PROFILE: Senior telecoms CFO with deep TMT M&A experience. Career:
+        Hewlett-Packard (early career) → McKinsey & Company (7 years in London, New York, Madrid,
+        TMT and corporate finance focus) → O2 UK/Telefónica UK (joined 2006, European Strategy,
+        Business Development, Chief of Staff; Strategy and Transformation Director and O2 UK
+        Executive Committee from 2014; CFO from 2016) → Supervisory Board of Telefónica
+        Deutschland (2012-2020, led multiple M&A transactions and strategic partnerships) →
+        CFO of Virgin Media O2 (June 2021-2025, created via £31B 50-50 joint venture between
+        Liberty Global and Telefónica; UK's second-largest integrated communications provider
+        with £11B annual turnover; drove 4.3% top-line CAGR and 10.0% operating cash flow CAGR;
+        delivered £6B synergies 18 months ahead of schedule) → BT Group CFO (announced Jul 24,
+        2025, starting summer 2026; joining BT Board and Executive Committee).
+        MSc Industrial Engineering, ICAI - Comillas Pontifical University. Deloitte Media &
+        Telecoms 2025 conference speaker.
+        ANALYTICAL SIGNIFICANCE: Cobian brings extensive UK telecoms and digital infrastructure
+        expertise to GMG governance. BT is the UK's biggest broadband and mobile services
+        provider (£20B+ market cap). Her presence on the GMG board while serving as incoming
+        BT Group CFO creates a governance link between the UK's largest telecom and its most
+        prominent reader-funded news publisher. BT's interests in digital infrastructure and
+        content distribution create potential alignment or tension with GMG's AI licensing and
+        content strategy.
+        Charles Gurassa: "Patricia's commercial acumen, international experience and leadership
+        skills will be crucial as we continue to build our global operation and respond to rapid
+        transformation in the news media industry."
+      source_urls:
+        - "https://find-and-update.company-information.service.gov.uk/company/00094531/filing-history"
+        - "https://inpublishing.co.uk/articles/patricia-cobian-to-join-guardian-media-group-board"
+        - "https://newsroom.bt.com/simon-lowth-to-retire-as-bts-group-cfo-with-patricia-cobian-appointed-as-successor/"
+        - "https://investegate.co.uk/bt-group-plc/rns/patricia-cobian-to-join-bt-as-group-cfo/"
+        - "https://deloitte.co.uk/media-telecoms-2025/speakers/patricia-cobian"
   analytical_notes: >
     BOARD TURNOVER SIGNIFICANCE: Four directors departed GMG board between Jan 26 and Mar 24,
     2026. This represents significant governance churn during a period of critical AI negotiations
     (Google pilot launched Dec 2025, SPUR expansion Jun 2026, UK CMA ruling Jun 2026). The
     Brittin departure is analytically most important: he bridged Google and GMG governance for
-    ~1 year, overlapping with the Guardian's Google News AI pilot launch. His subsequent
-    appointment as BBC DG extends the Google→media governance revolving door to the UK's largest
-    public broadcaster. Rechtman's departure removes digital entertainment expertise (Moonbug,
-    Disney). Underwood's departure may affect AI licensing negotiation continuity.
+    ~1 year AS THE SENIOR INDEPENDENT DIRECTOR (not just a regular NED), overlapping with the
+    Guardian's Google News AI pilot launch. His subsequent appointment as BBC DG extends the
+    Google→media governance revolving door to the UK's largest public broadcaster. Rechtman's
+    departure removes digital entertainment expertise (Moonbug, Disney). Underwood's departure
+    may affect AI licensing negotiation continuity. Coram Williams' 9-year tenure ending
+    coincides with the Adecco-to-automotive career move announced Nov 2025.
+    REPLACEMENTS: Patricia Cobian (NED, telecoms CFO) and James Goode (new GMG CFO, ex-PA Media
+    Group) restore financial/media expertise. Debbie Klein (NED, ex-Sky/Comcast) adds media
+    sector marketing expertise. Trei Brundrett (NED, ex-Vox Media) adds US digital media
+    operational knowledge. Net: the board lost its Google-connected SID and two long-tenured
+    directors, gaining telecoms, news agency, and digital media operations expertise.
+
+  other_current_board_members:
+    - name: "Debbie Klein"
+      role: "Non-Executive Director (appointed Sep 2023)"
+      notes: >
+        Over 20 years in media and advertising. Group Chief Marketing, Corporate Affairs and
+        People Officer at Sky (2018-2023, Comcast-owned), overseeing HR, diversity, communications,
+        public affairs and brand work across Europe. Previously CEO for Europe and Asia Pacific
+        at Engine Group (20 years), leading brand and creative work for clients including Sky.
+        Earlier career at Saatchi & Saatchi and Nielsen. Also NED at Nationwide Building Society.
+        CONFLICT RELEVANCE: Sky is owned by Comcast Corporation, which competes with Meta and
+        other tech platforms in streaming, news media, and digital advertising. Klein's Comcast/Sky
+        background adds another media-industry governance link.
+      source_urls:
+        - "https://editorandpublisher.com/stories/debbie-klein-to-join-guardian-media-group-board"
+        - "https://inpublishing.co.uk/articles/debbie-klein-to-join-gmg-board"
+        - "https://uk.themedialeader.com/debbie-klein-joins-guardian-media-group-board/"
+    - name: "Trei Brundrett"
+      role: "Non-Executive Director (appointed Sep 2023)"
+      notes: >
+        Digital media operations executive. Former COO and President of Vox Media, one of the
+        largest US digital media companies (The Verge, Vox, New York Magazine, Vulture, Eater).
+        Joined Vox Media in 2011 as CTO. Brings deep US digital media market knowledge.
+        Charles Gurassa: "expertise in digital media, and impressive knowledge of the US media
+        market at a national and local level." Brundrett joined alongside Debbie Klein as part
+        of a board refresh in Sept 2023.
+      source_url: "https://editorandpublisher.com/stories/trei-brundrett-to-join-guardian-media-group-board"
+    - name: "Emily Bell"
+      role: "Non-Executive Director"
+      notes: "Director, Tow Center for Digital Journalism at Columbia University. Former Director of Digital Content at Guardian News & Media."
+    - name: "Ete Davies"
+      role: "Non-Executive Director"
+      notes: "Digital and marketing executive."
+    - name: "Yasmin Jetha"
+      role: "Non-Executive Director"
+    - name: "Baroness Gail Rebuck"
+      role: "Non-Executive Director"
+      notes: "Former CEO and chair of Penguin Random House UK. Life peer. Major publishing industry figure."
+    - name: "Mary Ann Sieghart"
+      role: "Non-Executive Director"
+      notes: "Journalist, author, broadcaster. Former assistant editor of The Times."
+
+  board_composition_jun_2026:
+    description: >
+      RECONSTRUCTED GMG BOARD (as of June 2026): 13 members — 3 executive directors
+      (Bateson CEO, Viner EIC, Goode CFO), 1 Group General Counsel (Godsell), and 9 NEDs.
+      Net change since Jan 2023: +4 appointments (Klein Sep 2023, Brundrett Sep 2023,
+      Cobian Sep 2025, Goode May 2026), -4 departures (Williams Jan 2026, Underwood Jan 2026,
+      Rechtman Mar 2026, Brittin Mar 2026), and Brittin's brief SID appointment and departure
+      (~2025 to Mar 2026). SID position currently appears VACANT following Brittin's departure.
+    members:
+      - "Charles Gurassa (Chair, since Mar 2022)"
+      - "Anna Bateson (CEO, since Sep 2022)"
+      - "Katharine Viner (EIC, since 2015)"
+      - "James Goode (CFO, since May 2026)"
+      - "Stephen Godsell (Group General Counsel & Company Secretary)"
+      - "Emily Bell (NED)"
+      - "Ete Davies (NED)"
+      - "Yasmin Jetha (NED)"
+      - "Baroness Gail Rebuck (NED)"
+      - "Mary Ann Sieghart (NED)"
+      - "Debbie Klein (NED, since Sep 2023)"
+      - "Trei Brundrett (NED, since Sep 2023)"
+      - "Patricia Cobian (NED, since Sep 2025)"
 
 scott_trust_board:
   description: "Board of Scott Trust Limited. 14 members as of mid-2025. Notably includes media-tech executives alongside journalists, historians, lawyers, and publishing professionals."
@@ -683,9 +843,32 @@ editorial_leadership:
     start: "2015-06"
     editorial_stance: "Strong editorial stance on AI threats to journalism, labor, and democracy. The Guardian style guide warns about tech industry framing. Under Viner: Cambridge Analytica investigation (2018), Facebook whistleblower coverage, Hay Festival/Meta censorship coverage. CONTROL BASELINE: exceptional leadership stability (10+ years)."
   - name: "Anna Bateson"
-    title: "CEO, Guardian Media Group"
-    start: "~2023"
+    title: "CEO, Guardian Media Group (since Sep 2022)"
+    start: "~2016 (VP Platforms, CCO, interim CEO, departed 2020, returned 2022 as CEO)"
     editorial_stance: "Business-side leader. Drove record revenue growth, SPUR coalition founding, OpenAI licensing deal, Observer sale to Tortoise Media. Quoted: 'Welcoming 30 new members gives SPUR the scale required to turn its mission into a global mandate.'"
+    google_connection: >
+      CRITICAL REVOLVING DOOR FINDING: Anna Bateson spent SEVEN YEARS at Google and YouTube
+      before joining the Guardian in 2016, including three years running global consumer marketing
+      from Google's San Francisco HQ. Also worked at Bloomberg, ITV (brand and viewer marketing),
+      and MTV (VP of Marketing). When hired by GMG in 2016, her role was VP of Platforms and
+      Partnerships — explicitly tasked with managing the Guardian's "existing partnerships with
+      Facebook and Google" (per InPublishing announcement and David Pemsel quote). The Guardian
+      CEO who negotiated the Google News AI pilot (Dec 2025), signed the OpenAI licensing deal
+      (Feb 2025), co-founded SPUR (Feb 2026), and oversaw the Google/Brittin SID appointment is
+      herself a former senior Google employee who was originally hired specifically to manage the
+      Guardian-Google relationship. PPE degree from Oxford. Lives in West London.
+      ANALYTICAL SIGNIFICANCE: Combined with Brittin (Google EMEA President → GMG SID), there
+      were TWO former senior Google executives in Guardian governance simultaneously (~2025 to
+      Mar 2026): the CEO and the Senior Independent Director. This is the densest Google→publisher
+      revolving door in the dataset, and it coincides exactly with the period when the Guardian
+      joined Google's News AI pilot and co-founded SPUR to negotiate collective terms with AI
+      companies including Google.
+    source_urls:
+      - "https://reutersinstitute.politics.ox.ac.uk/people/anna-bateson"
+      - "https://inpublishing.co.uk/articles/guardian-appoints-anna-bateson-2016"
+      - "https://wan-ifra.org/people/anna-bateson/"
+      - "https://adweek.com/media/under-ceo-anna-bateson-the-guardian-is-quietly-thriving/"
+      - "https://digiday.com/media/balancing-act-facing-next-guardian-ceo/"
   - name: "Keith Underwood"
     title: "Chief Financial and Operating Officer (NOTE: terminated as GMG director Jan 30, 2026 per Companies House — may have departed executive role)"
     notes: "Quoted on OpenAI deal: 'This new partnership with OpenAI reflects the intellectual property rights and value associated with our award-winning journalism.' Manages licensing strategy alongside Robert Hahn (Director of Business Affairs & Licensing). Director termination filed at Companies House Feb 3, 2026. Status of executive role post-Jan 2026 unconfirmed."
@@ -895,8 +1078,39 @@ known_conflicts:
     evidence: "Reuters reporting (June 2, 2026). CMA Digital Markets Competition Regime."
     source_url: "https://reuters.com/technology/google-must-let-uk-publishers-opt-out-ai-search-under-new-rules-2026-06-02/"
     notes: "Severity 0 — regulatory action, not a conflict per se, but shapes the conflict landscape. Creates leverage that benefits the Guardian while potentially contradicting its pilot participation."
-
-litigation_connections:
+  - type: "revolving_door"
+    description: >
+      ANNA BATESON — GOOGLE → GMG CEO REVOLVING DOOR (NEW FINDING Jun 29, 2026): GMG CEO
+      Anna Bateson spent SEVEN YEARS at Google and YouTube before joining the Guardian in 2016,
+      including three years running global consumer marketing from Google's San Francisco HQ.
+      Her original hire at GMG (Dec 2016) was as VP of Platforms and Partnerships, with the
+      explicit mandate to manage the Guardian's "existing partnerships with Facebook and Google."
+      She rose to CCO (2017), interim CEO (2019), departed (2020), returned as CEO (Sep 2022).
+      DUAL GOOGLE REVOLVING DOOR: During ~2025 to Mar 2026, the Guardian simultaneously had
+      TWO former senior Google executives in governance: (1) CEO Anna Bateson (7 years at Google/
+      YouTube, hired to manage the Google relationship), and (2) SID Matt Brittin (18 years at
+      Google, EMEA President). This is the densest Google→publisher governance connection in the
+      entire 5-publication dataset, and it coincides with: Google News AI pilot launch (Dec 2025),
+      SPUR coalition founding (Feb 2026), and the UK CMA's Google strategic market status ruling
+      (Jun 2026). The CEO who signed the Google AI pilot deal had built her career at Google;
+      the SID who was supposed to ensure independent governance oversight was Google's most
+      senior European executive.
+      NOTE: No evidence of improper conduct. The structural conflict is what's analytically
+      significant — it creates a question about whether the Guardian's Google coverage and AI
+      strategy decisions benefit from true editorial independence when the top business executive
+      and (until Mar 2026) the most senior independent director both came from Google.
+    severity: 2
+    evidence: >
+      Reuters Institute profile (Bateson at Google/YouTube for 7 years, 3 years SF HQ).
+      InPublishing (Dec 2016 hire announcement — VP Platforms and Partnerships, managing Google/
+      Facebook relationships). Green Park case study (Brittin recruited as SID by Gurassa).
+      GlobalData executive profile (Bateson career: Google, MTV, Bloomberg, ITV, YouTube).
+      Adweek profile of Bateson as CEO (Guardian "quietly thriving" under her leadership).
+    source_urls:
+      - "https://reutersinstitute.politics.ox.ac.uk/people/anna-bateson"
+      - "https://inpublishing.co.uk/articles/guardian-appoints-anna-bateson-2016"
+      - "https://green-park.co.uk/case-studies/how-the-guardian-media-group-secured-googles-european-president-for-its-board/"
+      - "https://globaldata.com/companies/guardian-media-group-plc/executives/"
   - case: "Banks v Cadwalladr"
     type: "institutional_support"
     description: >
@@ -1085,18 +1299,29 @@ notes: |
   Research note: Bunz & Braghieri 2021 found Guardian had only 29% positive AI coverage vs 49% for WSJ,
   making it still useful as benchmark for editorial AI skepticism independent of ownership conflicts.
 
-  UPDATED CONFLICT COUNT (Jun 29, 2026):
+  UPDATED CONFLICT COUNT (Jun 29, 2026 — evening update):
   The Guardian now has FOUR AI-related financial relationships (OpenAI, ProRata, Google News AI
-  pilot, SPUR), TWO new structural conflicts (Brittin revolving door, Human Native AI licensing
-  exit), and significant GMG board turnover (4 departures Jan-Mar 2026). The Brittin finding is
-  analytically novel: no other tracked publication had a former Google executive on its governing
-  board during the Google News AI pilot negotiation period. The Human Native exit connects the
-  Guardian's VC arm directly to AI content licensing infrastructure — the exact domain where the
-  Guardian is simultaneously negotiating as a publisher and standard-setting as a SPUR founder.
-  The key difference from other publications: Guardian's conflicts are all licensing/content-access
-  deals with no equity positions in Meta competitors, while Atlantic/Wired have direct equity
-  investments ($16B Apple stock, $7B Reddit stake). Guardian's conflicts are structurally diffuse;
-  Atlantic's and Wired's are structurally concentrated.
+  pilot, SPUR), THREE revolving door conflicts (Bateson CEO ex-Google, Brittin SID ex-Google,
+  and Brittin onward to BBC DG), and significant GMG board turnover (4 departures Jan-Mar 2026).
+  NEW THIS ITERATION: (1) Anna Bateson's 7-year Google/YouTube career and explicit original
+  hire mandate to manage the Guardian-Google relationship discovered — elevates the Google
+  revolving door from one executive (Brittin) to TWO, with the CEO being the more consequential
+  because she is permanent and made the strategic decisions. (2) Brittin's role upgraded from
+  "NED" to "Senior Independent Director" — the most senior independent governance role,
+  recruited via global executive search (Green Park), making the Google→GMG→BBC pathway even
+  more structurally significant. (3) Full career profiles completed for James Goode (new CFO,
+  ex-PA Media Group), Patricia Cobian (NED, telecoms CFO Virgin Media O2 → BT Group), Coram
+  Williams (NED 2017-2026, Pearson CFO → Adecco CFO → German automotive CFO), and Debbie Klein
+  (NED, ex-Sky/Comcast). (4) Board composition fully reconstructed: 13 members as of Jun 2026.
+  SID position VACANT after Brittin's departure.
+  The dual Google revolving door (CEO + SID) during the Google News AI pilot period (Dec 2025
+  onward) is the most concentrated Google→publisher governance connection in the dataset.
+  No other tracked publication had even ONE former senior Google executive in governance during
+  AI content negotiations; the Guardian had TWO simultaneously.
+  The key difference from other publications remains: Guardian's conflicts are licensing/content-
+  access deals and revolving door connections with no equity positions in Meta competitors, while
+  Atlantic/Wired have direct equity investments ($16B Apple stock, $7B Reddit stake). Guardian's
+  conflicts are structurally diffuse; Atlantic's and Wired's are structurally concentrated.
 
 editorial_history:
   leadership_changes:
@@ -1108,8 +1333,13 @@ editorial_history:
     - position: "ceo"
       outgoing: "David Pemsel"
       incoming: "Anna Bateson"
-      date: "~2023"
-      notes: "Bateson led record revenue growth (£275M FY2024-25), OpenAI deal, SPUR founding, Observer sale."
+      date: "2022-09"
+      notes: >
+        Bateson first joined GMG Dec 2016 as VP Platforms and Partnerships (managing Google/Facebook
+        relationships, hired from Google/YouTube after 7 years). Rose to CCO (2017), interim CEO
+        (2019), departed (2020) to Reuters Institute fellowship then Josh Wood Colour CEO, returned
+        as GMG CEO Sep 2022. Led record revenue growth (£275M FY2024-25), OpenAI deal (Feb 2025),
+        SPUR founding (Feb 2026), Google News AI pilot (Dec 2025), Observer sale to Tortoise.
 
   notable_arrivals:
     - journalist: "Dan Milmo"
