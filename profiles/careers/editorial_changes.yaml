@@ -730,3 +730,24 @@ editorial_changes:
     outgoing: Paris Martineau
     position: staff_writer_business
     source_url: https://talkingbiznews.com/media-news/wired-hires-martineau-as-a-staff-writer/
+  - date: '2025-11-17'
+    incoming: Maxwell Zeff
+    notes: 'AI BUSINESS HIRE: Zeff hired as senior writer covering the business of AI. Announced by Brian Barrett Nov 13, 2025.
+      From TechCrunch (senior AI reporter), previously Gizmodo and Bloomberg. Barrett: "Few people have delivered more scoops
+      at such a critical time for the industry. Max is relentless, well-sourced, and brings a deep understanding of both the
+      technological and financial intricacies of AI." Based in San Francisco. THIRD Gizmodo → Wired migration under Barrett
+      (after Dell Cameron and Dhruv Mehrotra), reinforcing the Gizmodo talent pipeline. Reports to Zoë Schiffer on business desk.
+      @wiredunion member. Fills AI business coverage gap left after Tom Simonite''s June 2024 departure to Washington Post.'
+    outgoing: null
+    position: senior_writer_ai_business
+    source_url: https://www.editorandpublisher.com/stories/wired-welcomes-two-new-staff-members-alana-hope-levinson-and-maxwell-zeff,252685
+  - date: '2025-11-17'
+    incoming: Alana Hope Levinson
+    notes: 'FEATURES EDITOR HIRE: Levinson hired as features editor. Announced by Brian Barrett Nov 13, 2025. Career: writer/editor
+      at Medium and MEL Magazine (instrumental in building editorial teams), last five years ran her own consultancy launching
+      print publications, podcasts, and newsletters. Written for New York, GQ, Vogue, Dwell, Rolling Stone. Based in Wired
+      LA office. Barrett: "a sharp eye for digital culture, an entrepreneurial outlook, and a bottomless well of ideas."
+      Not a tech-journalism-pipeline hire — brings digital culture and longform editorial sensibility from magazine world.'
+    outgoing: null
+    position: features_editor
+    source_url: https://www.editorandpublisher.com/stories/wired-welcomes-two-new-staff-members-alana-hope-levinson-and-maxwell-zeff,252685

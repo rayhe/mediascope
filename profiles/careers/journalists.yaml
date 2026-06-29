@@ -5394,3 +5394,97 @@ journalists:
     June 2026 "US presses Meta to agree to AI reviews") provides a direct framing comparison with Frenkel/Kang on the same
     subjects. If NYT institutional framing is uniform, Lohr and Frenkel should frame Meta stories similarly; if beat-specific
     variation dominates, their framing should diverge significantly. This is a testable hypothesis for the DiD regression.'
+- career:
+  - beat: general, business
+    end: 2023-03
+    event_type: hired
+    notes: 'Production assistant. Early career in television news. Pre-journalism career stage. Exact dates approximate.'
+    publication: msnbc
+    role: production_assistant
+    source_url: https://talkingbiznews.com/they-re-hiring/techcrunch-hires-zeff-as-a-senior-writer/
+    start: 2022-01
+  - beat: general, business
+    end: 2023-03
+    event_type: hired
+    notes: 'Intern at Connecticut Public Broadcasting (public radio/TV). Dates approximate based on TalkingBizNews reporting.
+      Likely concurrent or adjacent to MSNBC production assistant role.'
+    publication: connecticut-public
+    role: intern
+    source_url: https://talkingbiznews.com/they-re-hiring/techcrunch-hires-zeff-as-a-senior-writer/
+    start: 2022-01
+  - beat: finance, technology
+    end: 2023-06
+    event_type: hired
+    notes: 'Intern at Bloomberg News. Co-bylined coverage of the Silicon Valley Bank crisis (March 2023) — Brian Barrett specifically
+      praised this work in his Wired hire announcement: "wrote some of Bloomberg''s first stories about the Silicon Valley Bank
+      crisis." Co-byline on SVB stock drop article with Drew Singer (Bloomberg Línea, March 9, 2023). Internship during the
+      most dramatic financial crisis since 2008. University of Massachusetts graduate.'
+    publication: bloomberg
+    role: intern
+    source_url: https://www.bloomberglinea.com/2023/03/10/silicon-valley-banks-owner-drops-most-on-record-as-clients-face-cash-crunch/
+    start: 2022-09
+  - beat: AI, content moderation, social media, tech policy
+    end: 2024-06
+    event_type: hired
+    notes: 'Reporter covering AI and technology at Gizmodo (then part of G/O Media). TalkingBizNews announced departure June
+      21, 2024. Prolific output — 23 pages of articles in ~10 months, covering Meta AI, OpenAI, Google Gemini, content
+      moderation, privacy. KEY SCOOPS AND STORIES: Meta''s Project Ghostbusters (filings revealing data analytics on
+      Snapchat/YouTube/Amazon via Onavo VPN, Mar 2024), AI chatbot censorship systematic testing (with Thomas Germain,
+      Mar 2024 — "We Tested AI Censorship: Here''s What Chatbots Won''t Tell You"), X making likes private (May 2024),
+      Threads "Trending now" feature (Mar 2024), Yann LeCun vs Elon Musk clash (May 2024), Meta and IBM AI Alliance launch
+      (Dec 2023), OpenAI board restructuring post-Altman crisis (Dec 2023), OpenAI DevDay ChatGPT-4 Turbo (Nov 2023),
+      33 states suing Meta over child addiction (Oct 2023), foreign government push notification surveillance (Dec 2023).
+      Gizmodo''s post-Gawker adversarial editorial culture shaped his accountability instincts on Big Tech coverage.'
+    publication: gizmodo
+    role: reporter
+    source_url: https://talkingbiznews.com/media-news/gizmodo-reporter-zeff-is-departing/
+    start: 2023-08
+  - beat: AI, startups, venture capital, Big Tech
+    end: 2025-11
+    event_type: hired
+    notes: 'Senior AI Reporter at TechCrunch. Hired ~July 2024 from Gizmodo. TechCrunch bio: "Previously with Gizmodo, Bloomberg,
+      and MSNBC, Zeff has covered the rise of AI and the Silicon Valley Bank crisis." Beat expanded from AI policy to include
+      AI business, startup funding, and venture capital dynamics. KEY SCOOPS: OpenAI Sora launch timeline and adult content
+      policy (Mar 2024), ChatGPT Atlas browser launch (Oct 2025), OpenAI apps inside ChatGPT (Oct 2025), AI browser agent
+      security risks (Oct 2025), SB 1047 aftermath with Scott Wiener (Oct 2025), Anthropic Claude Code web launch (Oct 2025),
+      AI lab data sourcing via Mercor (Oct 2025), ChatGPT suicide conversation volume (Oct 2025). Co-hosted Equity podcast
+      segments at TechCrunch Disrupt 2025. Based in San Francisco. Contact: maxwell.zeff@techcrunch.com, Signal: mzeff.88.'
+    publication: techcrunch
+    role: senior_reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/techcrunch-hires-zeff-as-a-senior-writer/
+    start: 2024-07
+  - beat: AI business, Big Tech, startups
+    event_type: hired
+    notes: 'Senior writer covering the business of artificial intelligence. Hired by Executive Editor Brian Barrett, announced
+      Nov 13, 2025, started Nov 17, 2025. Barrett announcement: "Few people have delivered more scoops at such a critical
+      time for the industry. Max is relentless, well-sourced, and brings a deep understanding of both the technological and
+      financial intricacies of AI." Based in San Francisco office. NOTABLE WIRED WORK: Claude Code ARR exclusive (Jun 23, 2026
+      — broke that Claude Code''s ARR grew by $100M+ beyond announced $1B, making up 12% of Anthropic total ARR; exclusive
+      interview with Boris Cherny, head of Claude Code). Agentic AI culture coverage (noted by Barrett on WIRED podcast).
+      @wiredunion member. KEY MIGRATION: Bloomberg → Gizmodo → TechCrunch → Wired represents the fastest four-outlet pipeline
+      in the dataset (4 outlets in ~3 years). Tests whether framing stays consistent across wire service → Gawker-descendant
+      → startup media → Condé Nast institutional contexts, all during the same AI hype cycle. Also the THIRD Gizmodo → Wired
+      migration under Barrett (after Dell Cameron and Dhruv Mehrotra), reinforcing Barrett''s talent network as a hiring
+      pipeline from Gizmodo''s adversarial culture into Wired.'
+    publication: wired
+    role: senior_writer
+    source_url: https://www.editorandpublisher.com/stories/wired-welcomes-two-new-staff-members-alana-hope-levinson-and-maxwell-zeff,252685
+    start: 2025-11
+  name: Maxwell Zeff
+  notes: 'Born circa late 1990s (based on career timeline). University of Massachusetts graduate (journalism). Based in San
+    Francisco. Career arc: MSNBC (production assistant) → Connecticut Public Broadcasting (intern) → Bloomberg News (intern,
+    SVB crisis coverage) → Gizmodo (AI/content moderation reporter) → TechCrunch (senior AI reporter) → Wired (senior writer,
+    AI business). Entire journalism career occurred during the ChatGPT/generative AI era — started at Gizmodo roughly when
+    GPT-4 launched (2023). This makes him a generational contrast with Wired colleagues Will Knight (20+ years covering AI)
+    and Steven Levy (40+ years in tech journalism), and with Cade Metz (30+ years). KEY for MediaScope: Zeff is analytically
+    valuable in three dimensions. (1) PIPELINE TEST: Third confirmed Gizmodo → Wired migration under Barrett (after Cameron
+    and Mehrotra), establishing the Gizmodo → Wired talent pipeline as a systematic pattern, not an anomaly. (2) SPEED TEST:
+    Four-outlet career in ~3 years is the fastest multi-outlet arc in the dataset. Each outlet has very different institutional
+    norms: Bloomberg (wire service precision, attribution-heavy), Gizmodo (Gawker-descendant adversarial), TechCrunch (startup
+    ecosystem booster → accountability), Wired (Condé Nast longform + Drummond-era adversarial pivot). If framing is portable
+    and individual, his writing should show consistent patterns across all four; if institutional framing dominates, each outlet
+    should show distinct framing fingerprints. (3) GENERATIONAL TEST: As a ChatGPT-era journalist, his baseline AI literacy
+    differs from pre-deep-learning veterans. Tests whether journalists who grew up with LLMs frame AI differently from those
+    who covered the AI winter through the hype cycle. His reporting scope (AI business at Wired) also enables direct comparison
+    with Lauren Goode (consumer tech at Wired) and Leah Feiger (politics at Wired) to test whether beat assignment or
+    institutional culture is the stronger framing determinant within a single publication.'
