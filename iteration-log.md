@@ -4,6 +4,53 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-28 20:00 PT — Hour Type C: Ownership & Funding Deep Dive — Condé Nast Labor Crisis + AI Licensing Arc
+
+**Focus:** Condé Nast internal labor dynamics ("Fired Four" settlement) and AI licensing deal landscape refinement (Perplexity adversarial→licensing arc).
+
+### 1. Condé Nast Union "Fired Four" Settlement (NEW)
+
+**What:** The most significant labor-management crisis at Condé Nast in recent history. Full chronology added to `profiles/wired.yaml`:
+
+| Date | Event |
+|------|-------|
+| Nov 5, 2025 | ~20 union members confront CPO Stan Duncan over Teen Vogue fold/layoffs |
+| Nov 6, 2025 | 4 union members fired: Jake Lahut (Wired), Jasper Lo (New Yorker), Alma Avalle (Bon Appétit), Ben Dewey (CNE). 5 more suspended. |
+| May 27, 2026 | Settlement: 3 of 4 get combined $400K+ (~2 yrs pay each), terminations → voluntary resignations + LORs. 5 suspended get back pay + records expunged. |
+
+**Key finding:** Jake Lahut (Wired senior politics reporter) **declined settlement** — pursuing NLRB unfair labor practice charge, still pending. He was on Drummond's inaugural politics team (Wired's first ever). NY AG Letitia James called the firings "union-busting."
+
+**Analytical significance:** Labor insecurity as a confounding variable for framing analysis — writers under constant layoff pressure may self-censor, complicating attribution of framing patterns to ownership conflicts vs. institutional editorial policy.
+
+**Structural additions:**
+- New `labor_union_relations` section with full Fired Four chronology, per-member outcomes, external pressure, and analytical significance
+- Three new `restructuring_timeline` entries (Nov 5, Nov 6, May 27)
+
+### 2. Perplexity AI Licensing Arc (UPDATED)
+
+**Previous state:** Entry listed as `relationship_type: licensing` with single Adweek source URL. No mention of the adversarial origin.
+
+**New state:** Updated to `licensing (post-C&D)` with full arc documented:
+1. **C&D phase (2024):** Condé Nast sent cease-and-desist to Perplexity after robots.txt violations and content plagiarism accusations (per The Information). Forbes CEO Mike Federle called Perplexity a "bad actor."
+2. **Publishers Program (mid-2024):** Perplexity launched revenue-sharing program to settle disputes
+3. **Comet Plus (Oct 2025):** 16 Condé Nast titles participating
+4. **Strategic pillar (Oct 2025):** Lynch cites Perplexity alongside OpenAI as licensing partner
+
+**Sources added:** The Information (C&D report), Digiday AI/media timeline (3 total, up from 1)
+
+### 3. Commercial Pivot AI Licensing Update (FIX)
+
+**Issue:** `commercial_pivot` section listed only 4 AI licensing partners (OpenAI, Amazon Rufus, Perplexity, Apple) despite Microsoft Copilot being documented in `revenue_relationships`.
+
+**Fix:** Added Microsoft Copilot (Dec 2025 pilot) to the `commercial_pivot` AI licensing enumeration. Now 5 named deals consistent with the revenue_relationships section.
+
+### Commit
+- `c13605b` — Hour C: Condé Nast labor crisis + AI licensing arc expansion
+- 1 file changed, 115 insertions, 11 deletions
+- 820 tests passing, YAML validated
+
+---
+
 ## 2026-06-28 19:00 PT — Hour Type B: Journalist/Publication Research — Sheera Frenkel Expansion + Steve Lohr (NEW)
 
 **Focus:** (1) Expanded Sheera Frenkel's profile with 2 previously missing source URLs, enriched career details from Muck Rack, Jewish Journal interview, USENIX/DCN bios, and Barnes & Noble book awards. (2) Added Steve Lohr as a new journalist — NYT's longest-serving technology reporter (~47 years), a critical institutional framing baseline.
