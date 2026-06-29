@@ -4,6 +4,120 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-29 12:00 PT — Hour Type C: Ownership & Funding Deep Dive — Reddit Governance: Sauerberg Revolving Door + Newhouse NCG Committee Chair + Jamie Miller AP Board
+
+**Focus:** Deep SEC proxy analysis of Reddit governance structure from the 2025 DEF 14A (filed April 28, 2025). Three major new findings that significantly deepen the documented Advance/Wired ↔ Reddit conflict.
+
+**Major findings:**
+
+### 1. Robert A. Sauerberg Revolving Door (NEW, severity 5)
+
+The former CEO of Condé Nast (which owns Wired) is now the **Vice Chairperson of Reddit's board** — the #2 governance position at a direct Meta competitor worth ~$7.3B to Advance.
+
+| Career at Advance subsidiaries | Position | Dates |
+|------|----------|-------|
+| Fairchild Publications | COO | Jan 2000 – Dec 2005 |
+| Condé Nast | Group President, Consumer Marketing | Jan 2005 – Dec 2010 |
+| Condé Nast | President | Jan 2011 – Dec 2015 |
+| Condé Nast | President & CEO | Jan 2016 – May 2019 |
+| Reddit | Board Director | April 2012 – present |
+| Reddit | Vice Chairperson | November 2023 – present |
+
+**Key details:**
+- 19 years at Advance subsidiaries (2000-2019)
+- When he left Condé Nast, Adweek reported Steve Newhouse explicitly stated Sauerberg would leave "to pursue other opportunities, **including representing Advance Publications on Reddit's board**" — confirming he was placed there by the Newhouse family
+- Sits on Reddit's **Audit Committee** (overseeing financial reporting)
+- Sits on Reddit's **Nominating and Corporate Governance Committee** (controlling board nominations)
+- Despite 19 years at Advance entities and being explicitly placed by Advance, Reddit's board determined him **"independent"** under NYSE rules — the 3-year lookback period expired in 2022
+- Holds 32,215 shares of Class A common stock (27,087 in Sauerberg 2002 Revocable Trust + 5,128 unvested RSUs)
+- Education: MBA Mercer University, BS Finance University of Arkansas at Fayetteville
+
+**Source:** Reddit 2025 DEF 14A (https://www.sec.gov/Archives/edgar/data/1713445/000171344525000092/rddt-20250428.htm), Adweek Nov 2019 (https://www.adweek.com/media/conde-nast-ceo-bob-sauerberg-step-down-amid-restructuring/), Be EPIC Podcast (https://listennotes.com/podcasts/be-epic/bob-sauerberg-on-how-curiosity-and-mentorship/)
+
+### 2. Steven O. Newhouse Governance Control (NEW, severity 5)
+
+Advance's co-president **CHAIRS** Reddit's Nominating and Corporate Governance Committee:
+
+| Committee | Members | Chair |
+|-----------|---------|-------|
+| Nominating & Corporate Governance | Newhouse, Sauerberg, Seibel | **Steven O. Newhouse** |
+| Audit | Farrell, Habiger, Sauerberg | David Habiger |
+| Compensation & Talent | Farrell, Fili-Krushel, Gale | Patricia Fili-Krushel |
+
+**What this means:** The co-president of the company that owns Wired directly controls who gets nominated to the board of Reddit, a $32B direct Meta competitor. The NCG Committee is responsible for:
+- Identifying and recommending ALL candidates for board membership
+- Recommending directors to serve on board committees
+- Periodically reviewing board leadership structure
+- Overseeing board performance evaluations
+
+**Per the Governance Agreement (March 19, 2024):**
+- Advance has the right to place one "Advance Designee" on every committee EXCEPT the Audit Committee (or any conflict-addressing committee)
+- No director can be selected as Chairperson without Advance's prior written approval (AND Huffman's, as CEO)
+
+**Source:** Reddit 2025 DEF 14A pages 3-11
+
+### 3. Jamie Miller Added to Advance Publications Board (NEW)
+
+The AP board that makes ALL voting and investment decisions regarding Advance's 42.2M Reddit shares now has 6 members (up from 5):
+
+| 2024 Proxy AP Board | 2025 Proxy AP Board |
+|---------------------|---------------------|
+| Michael A. Newhouse | Michael A. Newhouse |
+| Steven O. Newhouse | Steven O. Newhouse |
+| Samuel I. Newhouse III | Samuel I. Newhouse III |
+| Thomas S. Summer | Thomas S. Summer |
+| Victor F. Ganzi | Victor F. Ganzi |
+| — | **Jamie Miller (NEW)** |
+
+**Likely identification:** Jamie S. Miller, former GE CFO (Nov 2017–Feb 2020), GE Transportation President & CEO (Oct 2015–Nov 2017), GE CIO (Apr 2013–Oct 2015). Now CFO of Cargill, Inc. (since Mar 2021). Also serves on Qualcomm board (since May 2020) and International Paper board (since 2024). BS Accounting, Miami University. Brings heavy financial/audit/tech industry expertise.
+
+**Source:** Reddit 2025 DEF 14A footnote 16 (page 52), Qualcomm investor relations, The Org (Atheros/Qualcomm board records)
+
+### 4. Updated Ownership Data
+
+| Metric | 2024 Proxy | 2025 Proxy | Change |
+|--------|-----------|-----------|--------|
+| Advance Class B shares | 42,191,092 | 42,191,092 | **Unchanged** |
+| Advance Class A shares | 16,182 | 16,182 | **Unchanged** |
+| % of Class B | 83.5% | 76.5% | ↓ (dilution) |
+| Total voting power | 65.2% | 62.0% | ↓ (dilution) |
+| Total outstanding (Class A+B) | ~163M | 184,267,286 | ↑ 13% |
+| Record date | Mar 31, 2024 | Mar 31, 2025 | — |
+
+**Key insight:** Advance has NOT sold a single share. The voting power decrease (65.2% → 62.0%) is entirely due to dilution from equity compensation and secondary offerings increasing the total share count. Advance's economic ownership in absolute terms is unchanged.
+
+**Updated valuation:** ~$7.34B at $173.97/share (Jun 29, 2026), up from ~$7.04B at Jun 26 close.
+
+### 5. "Independence" Paradox
+
+Reddit's board determined that BOTH Newhouse and Sauerberg are "independent" for purposes of their service on the Board of Directors and all committees. This is technically correct under NYSE rules:
+- Newhouse: Never employed by Reddit (only by Advance, its parent)
+- Sauerberg: Left Condé Nast in 2019, satisfying the 3-year lookback by 2022
+
+But the practical reality is:
+- Sauerberg was *explicitly placed* on Reddit's board by Advance to "represent" them
+- Newhouse is the co-president of Reddit's largest shareholder
+- Together they control the committee that selects future directors
+- Sauerberg's entire 19-year career was at Advance subsidiaries
+
+**Analytical significance for MediaScope:**
+This is the deepest documented governance entanglement between a media company's parent and a direct Meta competitor in the 5-publication dataset. The Guardian's dual Google revolving door (CEO + SID) involved a governance link to a tech partner. The Advance/Reddit connection involves the same media parent's **former CEO and current co-president** in the #2 and #3 governance positions at a direct Meta competitor — while simultaneously owning the publication (Wired) that covers Meta most adversarially.
+
+**Changes:**
+- `profiles/wired.yaml`: +107 lines, -10 lines
+  - AP board updated: added Jamie Miller with full career details
+  - `board_designee_details` section added: expanded Sauerberg (career history, revolving door significance, committee roles, source URLs) and Newhouse (NCG Committee chair, Governance Agreement rights)
+  - Updated `stake` to reflect 62.0% voting power (2025 proxy) with dilution explanation
+  - Updated `current_value_estimate` to $7.34B at $173.97
+  - 2 new `known_conflicts` entries (revolving_door severity 5, governance_control severity 5)
+  - Updated existing investment conflict from 65.2% to 62.0%
+  - Updated competitive conflict from 65.2% to 62.0%
+
+**Test results:** 888 passed, 0 failed. YAML validated. No regressions.
+**Commit:** `f6c661a`
+
+---
+
 ## 2026-06-29 11:00 PT — Hour Type B: Journalist/Publication Research — Charlie Warzel (Atlantic Galaxy Brain)
 
 **Focus:** Deep career research on Charlie Warzel, Atlantic staff writer and Galaxy Brain newsletter/podcast host. Prior entry had only 3 career events, 97 note chars, and significant date errors. Expanded to 7 career events and 1,913 note chars with corrected dates and full source documentation.
