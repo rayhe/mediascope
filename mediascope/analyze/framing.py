@@ -313,7 +313,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"\b(?:slammed|blasted|hammered|torched|eviscerated|"
         r"lambasted|excoriated|ripped|grilled|destroyed|"
         r"crushed|obliterated|demolished|annihilated|"
-        r"staggering|mastermind(?:ed)?|"
+        r"staggering|mastermind(?:ed)?|explosive|"
         r"turned a blind eye|strike fear|struck fear|"
         r"indefensible|abusive|defamatory|"
         r"drastic(?:ally)?|superficial(?:ly)?|"
@@ -802,7 +802,7 @@ _POWER_ASYMMETRY_PATTERNS: list[re.Pattern] = [
         r"\$\d+"
         r".{0,60}?"
         r"\b(?:per\s+(?:\w+\s+)?(?:violation|breach|instance|day)|"
-        r"each\s+(?:\w+\s+)?(?:violation|breach|instance)|"
+        r"each\s+(?:\w+\s+)?(?:violation|breach|instance|time)|"
         r"bankrupt|ruin|devastat)\b",
         re.IGNORECASE | re.DOTALL,
     ),

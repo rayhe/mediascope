@@ -134,7 +134,7 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "drudge", "drudgery", "gulag", "hell", "humiliation",
     "disposable", "demoralized", "demoralizing", "disgruntled",
     "fury", "furious", "revolt", "rage", "nightmare",
-    "horror", "excoriated", "excruciating", "hellish", "grueling",
+    "horror", "excruciating", "hellish", "grueling",
     # Workplace morale/dysfunction emotional terms — needed for corporate
     # reporting on layoffs, restructuring, and internal dissent
     "horrifically", "grim", "grimly", "cruel", "cruelty",
@@ -150,7 +150,7 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "widespread dissatisfaction", "widespread discontent",
     "recruiting crisis", "talent exodus", "brain drain",
     # Workplace revolt / dissent emotional terms
-    "revolted", "revolt", "rebellion", "rebel",
+    "revolted", "rebellion", "rebel",
     "callous", "callousness", "antisocial",
     "nihilistic", "nihilism", "dystopian", "Orwellian",
     "downright ugly", "ugly truth",
@@ -162,13 +162,24 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "stalkers", "stalking", "abusers", "covert filming",
     "vile", "vile behavior", "invasive",
     # Legal/censorship/power-abuse emotional terms
-    "censorship", "silenced", "silencing", "gagged", "gag order",
+    "censorship", "silenced", "silencing", "silence", "gagged", "gag order",
     "muzzled", "hostage", "hostage situation",
     "despotic", "tyranny", "tyrannical", "oppressive", "oppression",
     "trolling", "intimidate", "intimidation", "bankrupt", "bankruptcy",
-    "sanctioned", "sanctions motion", "punitive",
+    "sanctioned", "sanctions motion", "punitive", "punishing",
     "chilling", "chilling effect", "suppress", "suppression",
-    "retaliation", "retaliatory", "stifle", "stifled",
+    "retaliation", "retaliatory", "retaliating", "stifle", "stifled",
+    # Legal/whistleblower coverage emotional terms — coercion, fear, and
+    # character-attack language frequently deployed in articles about
+    # corporate silencing of critics, NDAs, and whistleblower disputes.
+    # Gap discovered during Fast Company Wynn-Williams analysis (Jun 2026):
+    # outsourced_intensity returned 0.0 because quoted text containing
+    # "strike fear," "abusive," "greed," "unlawful" had no matching terms.
+    "abusive", "abuse", "fear", "greed", "greedy",
+    "unlawful", "strike fear", "struck fear",
+    "coercive", "coercion", "duress",
+    "defamatory", "disparaging", "indefensible",
+    "riddled",
     # Military/defense/weapons emotional terms — needed for coverage of
     # military-tech partnerships, defense contracts, and armed systems
     # where the language of violence reads as factual to VADER but carries
@@ -212,11 +223,10 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "trolls", "troll",
     "backlash",
     "inconspicuous",
-    "frictionless",
     # Platform death / community displacement emotional terms — needed for
     # coverage of platform shutdowns where editorial language frames corporate
     # decisions as community destruction or abandonment
-    "devastated", "devastation", "devastating",
+    "devastated", "devastation",
     "on life support", "life support",
     "eerily silent", "eerily", "eerie",
     "abandoned", "abandoning", "abandonment",
@@ -225,7 +235,7 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "killed", "killing",
     "broke down in tears", "broke down",
     "going away", "disappearing",
-    "terrified", "terrifying",
+    "terrified",
     "anxious", "anxiety",
     "reluctance", "reluctant",
     "hesitant",
@@ -237,12 +247,10 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "stupefying", "stupefied",
     "soulless", "soul-less",
     "nightmarish",
-    "nihilism", "nihilistic",
     "meaninglessness", "meaningless",
     "disorientation", "disorienting",
     "recursive", "recursiveness",
-    "corrosive", "corroding", "erode", "erosion",
-    "sinister",
+    "corrosive", "corroding", "erode",
     "pervasive",
     "polluted", "pollution", "polluting",
     "degrade", "degraded", "degrading",
@@ -273,7 +281,7 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "malicious", "malware",
     "embarrassing", "embarrassment",
     "negligent", "negligence",
-    "reckless", "recklessness",
+    "recklessness",
     # Gambling/addiction/exploitation emotional terms — needed for coverage
     # of prediction markets, platform addiction, and exploitation framing
     # where editorial prose links corporate products to addictive behaviour.
@@ -288,7 +296,7 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "notorious", "notoriously",
     "knockoff", "knockoffs", "clone", "clones",
     "horniness",
-    "destroying", "destroyed",
+    "destroying",
     "destructive", "destructive behaviors",
     "cash in on", "cashing in on",
     "bread and butter",
@@ -303,10 +311,10 @@ EMOTIONAL_LANGUAGE: list[str] = [
     # Workplace discontent / internal morale — moderate emotional language
     # frequently used in employee dissent articles and leaked internal comms.
     # Lower intensity than sensationalist terms but cumulatively shapes tone.
-    "disappointing", "disappointed", "demoralizing", "demoralized",
+    "disappointing", "disappointed",
     "discouraged", "disbelief", "skeptical", "skepticism",
-    "sarcastic", "pushback", "revolt", "unimpressed",
-    "fearful", "chaotic", "overburdened", "distress",
+    "sarcastic", "pushback", "unimpressed",
+    "chaotic", "overburdened", "distress",
     "preoccupied", "tone-deaf", "performative",
 ]
 

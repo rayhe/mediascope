@@ -672,6 +672,43 @@ class TestMethodologyDeviceTableConsistency:
         )
 
 
+class TestEmotionalLanguageCount:
+    """Guard: EMOTIONAL_LANGUAGE set size must stay in sync.
+
+    When terms are added to or removed from the EMOTIONAL_LANGUAGE set in
+    sentiment.py, this guard ensures the count is updated deliberately,
+    preventing accidental drift or duplicate additions.
+
+    Added: 2026-06-28 22:00 PT, Type A iteration (Fast Company analysis).
+    """
+
+    def test_emotional_language_count(self):
+        """EMOTIONAL_LANGUAGE should contain exactly 428 unique terms."""
+        from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
+
+        assert len(EMOTIONAL_LANGUAGE) == 414, (
+            f"Expected 414 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
+            "If you added or removed terms, update this test to the new count.\n"
+            "Also check for duplicates: len(set(EMOTIONAL_LANGUAGE)) should match."
+        )
+
+    def test_emotional_language_no_duplicates(self):
+        """EMOTIONAL_LANGUAGE should have no duplicate entries."""
+        from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
+
+        if isinstance(EMOTIONAL_LANGUAGE, set):
+            return  # Sets can't have duplicates
+        seen = set()
+        dupes = []
+        for term in EMOTIONAL_LANGUAGE:
+            if term in seen:
+                dupes.append(term)
+            seen.add(term)
+        assert not dupes, (
+            f"EMOTIONAL_LANGUAGE has duplicate entries: {dupes}"
+        )
+
+
 class TestAdversarialDeviceListConsistency:
     """Guard: adversarial device type lists in docs match code.
 

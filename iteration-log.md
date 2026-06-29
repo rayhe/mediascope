@@ -4,6 +4,63 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-28 21:00 PT — Hour Type D: Toolkit Quality & Documentation — Doc-Code Drift Fixes, 6 New Structural Guards
+
+**Focus:** Systematic audit of documentation-code consistency, discovering and fixing three categories of drift missed by existing structural guards, then adding 6 new tests to prevent recurrence.
+
+### 1. framing.py Docstring Count Error (FIX)
+
+**Problem:** The `detect_framing_devices()` docstring said "Scans for 33 pattern-matched device types plus 5 structural post-pass types (38 total)." Actual code has **32** pattern-matched + **5** structural = **37** total.
+
+**Root cause:** The 18:00 iteration (Type A) correctly updated all documentation files (ARCHITECTURE.md, METHODOLOGY.md, AGENT_GUIDE.md, cli.py) from 35→37, but missed the docstring in framing.py itself — the primary source of truth. The existing `TestDocCountConsistency` guards checked every doc file but not the code's own docstring.
+
+**Fix:** Corrected docstring to "Scans for 32 pattern-matched device types plus 5 structural post-pass types (37 total)."
+
+### 2. METHODOLOGY.md Missing Device Table Rows (FIX)
+
+**Problem:** Three device types existed in code but had no rows in the METHODOLOGY.md §4.1 tables:
+- **Extended table** (20 rows, should be 22): Missing `latecomer_narrative` and `regulatory_shadow`
+- **Structural table** (4 rows, should be 5): Missing `social_proof_amplification`
+
+**Root cause:** The 18:00 iteration updated the numeric count header ("22 added from real-article analysis") but didn't add the actual table entries. The existing guards checked numeric counts ("37 framing device types") but not table row completeness — a count can be correct while the content behind it is incomplete.
+
+**Fix:** Added full table rows for all three missing devices with descriptions, detection patterns, and discovery sources.
+
+### 3. Adversarial Device Type Enumeration Drift (FIX)
+
+**Problem:** The tone correction pipeline in `sentiment.py` uses 13 adversarial device types in `_ADVERSARIAL_DEVICE_TYPES`, but documentation listed fewer:
+- **METHODOLOGY.md §9:** Listed only 7 (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language). Missing 6: timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame.
+- **QUALITY_STANDARDS.md §7:** Listed 11 + "and others" — imprecise and incomplete.
+
+**Fix:** Both docs now enumerate all 13 types explicitly. No "and others" — the complete list is the spec.
+
+### 4. New Structural Guards (6 tests, 3 classes)
+
+| Class | Tests | What It Guards |
+|-------|-------|----------------|
+| `TestFramingDocstringConsistency` | 2 | framing.py docstring pattern-matched count and total count match actual `_DEVICE_PATTERNS` dict + structural types |
+| `TestMethodologyDeviceTableConsistency` | 2 | METHODOLOGY.md Extended and Structural device tables contain rows for every device type in code. Name normalization handles display-name differences (hyphens, slashes, suffixes like "Scale/Magnitude Framing" → `scale_magnitude`) |
+| `TestAdversarialDeviceListConsistency` | 2 | METHODOLOGY.md and QUALITY_STANDARDS.md adversarial type enumerations match `_ADVERSARIAL_DEVICE_TYPES` in sentiment.py |
+
+**Design insight:** The existing structural guards proved that numeric count checks are necessary but insufficient. A count of "22 extended devices" can pass while the table has only 20 rows. The new guards close this gap by validating content completeness, not just header counts.
+
+### Files Modified
+- `mediascope/analyze/framing.py`: Docstring fix (33→32 pattern-matched, 38→37 total)
+- `docs/METHODOLOGY.md`: Added 3 missing device table rows (latecomer_narrative, regulatory_shadow, social_proof_amplification), expanded adversarial set from 7 to 13 types
+- `docs/QUALITY_STANDARDS.md`: Replaced "and others" with complete 13-type adversarial list
+- `tests/test_structural_consistency.py`: Added 3 new test classes with 6 tests (+199 lines)
+- `README.md`: Updated test count (820→826), updated structural consistency test description
+- `docs/ARCHITECTURE.md`: Updated test count (820→826), updated structural consistency test description
+
+### Stats After
+- 826 tests passed (32 test files, +6 from 820)
+- 43 structural consistency tests (up from 37)
+- All cross-reference guards green
+
+**Commit:** `a69589a` — pushed to main
+
+---
+
 ## 2026-06-28 20:00 PT — Hour Type C: Ownership & Funding Deep Dive — Condé Nast Labor Crisis + AI Licensing Arc
 
 **Focus:** Condé Nast internal labor dynamics ("Fired Four" settlement) and AI licensing deal landscape refinement (Perplexity adversarial→licensing arc).
@@ -6527,3 +6584,58 @@ Added **Conflict Taxonomy (4 dimensions)** to the notes section:
 - 4 conflict dimensions documented (up from 2)
 - Commit pending — pushed to main
 
+
+---
+
+## 2026-06-28 22:00 PT — Hour Type A: Article Deep Dive (Fast Company)
+
+### Article
+**Fast Company:** "Meta faces lawsuit by 'Careless People' author and whistleblower" (June 26, 2026)
+
+Third coverage of the same Wynn-Williams v. Meta lawsuit event, joining Guardian (Jun 25) and Engadget (Jun 26) analyses. This is the first time the toolkit has been applied to three publications covering identical source material in a 48-hour window.
+
+### Why This Article
+- Completes a three-outlet controlled comparison on a single lawsuit event
+- Fast Company occupies a different editorial register than Guardian (legalistic) or Engadget (sarcastic) — middle-ground reportorial tone
+- The article heavily quotes the complaint, making it ideal for testing the outsourced_intensity fix from this session's earlier bug discovery
+
+### Discoveries
+
+#### 1. EMOTIONAL_LANGUAGE blind spot (fixed)
+Pre-fix, `measure_outsourced_intensity` returned `quoted_intensity=0.0` because legal/whistleblower complaint language ("strike fear," "abusive," "greed," "unlawful") had no matching terms in the 411-entry vocabulary. **18 terms added** covering coercion, fear, character attack, legal accusation, and retaliation clusters. After deduplication of the full list, net count: 414 unique terms.
+
+#### 2. EMOTIONAL_LANGUAGE duplicate cleanup
+The structural guard test exposed **14 pre-existing duplicate entries** across the list (some dating to the original build, others introduced in prior iterations). All 14 removed. Added structural consistency guard tests: `test_emotional_language_count` (exact count = 414) and `test_emotional_language_no_duplicates` (no duplicate entries allowed).
+
+#### 3. power_asymmetry pattern expansion
+Added "time" to the `each\s+(\w+\s+)?` pattern: `each time` now triggers alongside `each violation/breach/instance`. Fast Company's "$50,000 in damages for each time" was missed by the prior pattern.
+
+#### 4. loaded_language vocabulary expansion
+Added "explosive" to framing.py's `_LOADED_LANGUAGE_PATTERNS` — was present in sentiment.py's `EMOTIONAL_LANGUAGE` but missing from the framing module's independent loaded_language detection.
+
+### Cross-Publication Comparison Key Findings
+
+Three outlets on identical source material form a clear editorial spectrum:
+
+| | Guardian | Fast Company | Engadget |
+|---|---|---|---|
+| **Register** | Legalistic | Reportorial-sympathetic | Sarcastic-editorial |
+| **Length** | ~1,200 words | ~450 words | ~250 words |
+| **Loaded language density** | ~1/100 words | ~1/65 words | ~1/30 words |
+| **Novel technique** | corporate_reassurance_undercut | None (standard techniques) | sarcastic_correction |
+| **Meta response** | Named spokesperson + declination | Unnamed institutional statement | Historical quote recycled |
+| **Outsourced intensity** | Yes | Yes (closing complaint quote) | No (journalist's own voice) |
+
+Key insight: Fast Company depersonalizes Meta's response by not naming a spokesperson ("Meta said in a statement" vs. Guardian/Engadget's "Andy Stone"), making the corporate voice read as less credible in the David-vs-Goliath frame.
+
+### Files Modified
+- `mediascope/analyze/sentiment.py`: +18 terms, -14 duplicates, net 414 unique terms
+- `mediascope/analyze/framing.py`: +`time` to power_asymmetry pattern, +`explosive` to loaded_language
+- `tests/test_structural_consistency.py`: +2 new guard tests (EMOTIONAL_LANGUAGE count + duplicates)
+- `examples/sample_output/fastco_meta_wynn_williams_lawsuit_2026_06_26_analysis.md`: New analysis file
+
+### Stats After
+- 828 tests passed (all green)
+- 414 unique emotional language terms (was 428 with duplicates / 411 without the new terms)
+- 37 framing device types (unchanged)
+- 3 cross-publication analyses on same event (first time)
