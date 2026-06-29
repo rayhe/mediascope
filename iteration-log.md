@@ -4,6 +4,61 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-28 19:00 PT — Hour Type B: Journalist/Publication Research — Sheera Frenkel Expansion + Steve Lohr (NEW)
+
+**Focus:** (1) Expanded Sheera Frenkel's profile with 2 previously missing source URLs, enriched career details from Muck Rack, Jewish Journal interview, USENIX/DCN bios, and Barnes & Noble book awards. (2) Added Steve Lohr as a new journalist — NYT's longest-serving technology reporter (~47 years), a critical institutional framing baseline.
+
+### 1. Sheera Frenkel Profile Expansion
+
+**Previous state:** 5 career entries, 2 missing source_urls (NPR, Times of London), minimal notes on pre-BuzzFeed career.
+
+**New findings from primary sources:**
+- **Muck Rack profile** (https://muckrack.com/sheeraf): Reveals she was "based in the Middle East and stringing for the Times of London, NPR and McClatchy" — key insight that her pre-BuzzFeed career was as a freelance stringer, NOT sequential staff positions. Analytically significant: no single pre-BuzzFeed institution shaped her editorial identity, making her NYT institutional framing adoption a cleaner natural experiment.
+- **NPR bylines identified** from Muck Rack portfolio: "West Bank Beer Festival Attracts Jewish Israelis," "Stories Differ After Israeli Soldiers Kill Palestinian," "Kafka's Final Absurdist Tale Plays Out In Tel Aviv"
+- **Times of London bylines identified**: "We are begging for arms, says Free Syrian Army," "Dark days for child victims of regime" — front-line Syria civil war coverage
+- **Jewish Journal interview** (https://jewishjournal.com/culture/294850/...): Direct quotes about the "Delay, Deny and Deflect" reporting process — "Once we felt like we had built a pretty solid picture of what had happened at Facebook — namely, what they knew about Russian election interference and how they handled that information — we had meetings with our editors to discuss where we needed more details and more corroboration."
+- **Book awards** (from Barnes & Noble/USENIX): "An Ugly Truth" was SABEW Best in Business Award winner, Book of the Year at Fortune, Foreign Affairs, The Times (London), Cosmopolitan, TechCrunch, WIRED
+- **Personal details:** Grew up in Los Angeles (confirmed via NYT hire announcement and Jewish Journal), married, lives in Oakland (not just "Bay Area") with two kids and a cat (Muck Rack), email sheera.frenkel@nytimes.com
+- **Speaking:** USENIX Enigma 2022 keynote (fireside chat with Bob Lord), 2023 DCN Next Summit speaker
+
+**Changes:** All 5 career entries now have source_urls. Notes significantly expanded with sourced details. Summary notes expanded with stringer insight and full award list.
+
+### 2. Steve Lohr — NEW Journalist Profile (103rd)
+
+**Rationale:** Steve Lohr is the single longest-serving reporter at any of the 5 tracked publications (~47 years at NYT, joined 1979). His absence was a significant gap because he represents the purest test of NYT institutional framing — his entire editorial identity was formed within a single institution, unlike the adversarial-investigative cohort (Frenkel, Kang, Mac, Isaac) who arrived with pre-formed accountability instincts from other outlets.
+
+**Career arc (5 entries, all with source_urls):**
+
+| Period | Role | Publication | Key |
+|--------|------|-------------|-----|
+| 1975-1979 | Reporter | Bingham Press | First job after Columbia J-School (1975) |
+| 1979-1989 | Foreign correspondent | NYT | Decade in Tokyo, Manila, London |
+| 1989-1998 | Business editor | NYT | Returned to NYC, served as editor |
+| 1998-2001 | Technology reporter | NYT | Microsoft antitrust (Pulitzer nomination 1998) |
+| 2001-present | Senior writer | NYT | iEconomy Pulitzer (2013), Data-ism (2015), AI coverage |
+
+**Books:** "Go To" (Basic Books, 2001), "U.S. v. Microsoft" with Joel Brinkley (McGraw-Hill, 2001), "Data-ism" (Harper Business, 2015)
+
+**Awards:** Pulitzer Prize 2013 (Explanatory Reporting, iEconomy team), Pulitzer nomination 1998 (Microsoft antitrust), nominated twice total
+
+**KEY for MediaScope:** Lohr provides the most important control variable in the dataset:
+- His economic-structural framing lens (tech → automation → jobs → inequality → geographic redistribution) is **distinct** from the adversarial-investigative framing of Frenkel/Kang/Mac/Isaac
+- His June 2026 co-byline on "US presses Meta to agree to AI reviews" enables **direct within-publication framing comparison** with Frenkel on the same Meta subject
+- If NYT institutional framing is uniform, Lohr and Frenkel should frame Meta similarly; if beat-specific variation dominates, their framing should diverge significantly — this is a **testable DiD hypothesis**
+- As a ~47-year NYT lifer, he also tests whether institutional framing is stable over time or evolves with editorial leadership changes
+
+**Sources:** Computer History Museum bio, Edge.org bio, HarperCollins author page, World Science Festival bio, Encyclopedia.com entry, Mission North interview, Engadget/9to5Mac Pulitzer coverage
+
+### Files Modified
+- `profiles/careers/journalists.yaml`: Expanded Sheera Frenkel (2 source_urls added, all 5 career entries enriched), added Steve Lohr (5 career entries, all with source_urls)
+- `README.md`: Updated journalist count (102→103), added Steve Lohr to notable migrations list
+- `docs/EDITORIAL_HISTORIES.md`: Updated journalist count (101→103) and multi-pub count (99→101) in 2 locations
+
+### Stats After
+- 103 journalists tracked (101 multi-pub, up from 99)
+- 820 tests across 32 files — all passing
+- 0 missing source_urls in updated/new profiles
+
 ## 2026-06-28 18:00 PT — Hour Type A: Article Deep Dive — NYT Arena/Polymarket Partnership, Two New Framing Devices
 
 **Focus:** Deep analysis of NYT "Zuckerberg asks Meta to explore Polymarket/Kalshi partnership" article (June 26, 2026). Identified and implemented two new framing device types: `latecomer_narrative` (#36) and `regulatory_shadow` (#37).

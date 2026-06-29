@@ -718,55 +718,81 @@ journalists:
   - beat: Middle East
     end: 2009-01
     event_type: hired
-    notes: Earliest career phase. Middle East correspondent covering Arab Spring, Iran nuclear program, Syria. Based in Jerusalem,
-      Cairo, Tel Aviv. Fluent in Hebrew, conversational Arabic.
+    notes: 'Earliest career phase. Middle East correspondent covering Arab Spring, Iran nuclear program, Syria. Based in Jerusalem,
+      Cairo, Tel Aviv. Fluent in Hebrew, conversational Arabic. Grew up in Los Angeles. Education: Boston University. Her
+      Muck Rack profile describes her during this period as "based in the Middle East and stringing for the Times of London,
+      NPR and McClatchy" — suggesting she freelanced/strung for multiple outlets simultaneously rather than holding sequential
+      staff positions. The career entries below reflect her primary affiliations, but there was significant overlap.'
     publication: mcclatchy
     role: foreign_correspondent
-    source_url: https://nytco.com/press/sheera-frenkel-to-join-bizday-in-san-francisco/
+    source_url: https://www.nytco.com/press/sheera-frenkel-bizday-san-francisco/
     start: 2005-01
   - beat: Middle East
     end: 2012-01
     event_type: hired
-    notes: Continued Middle East foreign correspondence. Hebrew fluency helped land exclusives. ~10 years total in Middle
-      East across McClatchy/NPR/Times of London.
+    notes: 'Middle East foreign correspondent for NPR. Hebrew fluency helped land exclusives. Bylines include "West Bank
+      Beer Festival Attracts Jewish Israelis," "Stories Differ After Israeli Soldiers Kill Palestinian," and "Kafka''s Final
+      Absurdist Tale Plays Out In Tel Aviv." Concurrent with stringing for Times of London and McClatchy. ~10 years total
+      in Middle East across all three outlets.'
     publication: npr
     role: correspondent
+    source_url: https://muckrack.com/sheeraf
     start: 2009-01
-  - beat: Middle East
+  - beat: Middle East, Syria, armed conflict
     end: 2015-01
     event_type: hired
-    notes: Final foreign correspondent role before pivoting to tech/cybersecurity.
+    notes: 'Times of London Middle East correspondent. Final foreign correspondent role before pivoting to tech/cybersecurity.
+      Bylines include "We are begging for arms, says Free Syrian Army" and "Dark days for child victims of regime" — front-line
+      Syria civil war coverage. The stringer arrangement across McClatchy/NPR/Times of London gave her experience reporting
+      for three very different institutional styles: American wire service (McClatchy), US public radio (NPR), and British
+      broadsheet (Times of London).'
     publication: times-of-london
     role: correspondent
+    source_url: https://muckrack.com/sheeraf
     start: 2012-01
   - beat: cybersecurity
     end: 2017-05
     event_type: hired
     notes: 'Originated the cybersecurity beat at BuzzFeed News. Profiled Russian hackers (Fancy Bear), ISIS internet use,
-      developing nations coming online (Myanmar). Broke news on Facebook fake news countermeasures. CAREER PIVOT: foreign
-      correspondent → tech/cyber. She has said ''her time as a foreign correspondent aids her coverage of cybersecurity: People
-      are always speaking different languages and their motivations are often unclear.'''
+      developing nations coming online (Myanmar — chronicled how the country was slowly joining the internet age). Broke news
+      on Facebook fake news countermeasures. CAREER PIVOT: foreign correspondent → tech/cyber. She has said "her time as a
+      foreign correspondent aids her coverage of cybersecurity: People are always speaking different languages and their motivations
+      are often unclear." This framing — treating tech companies as opaque institutions with hidden motivations — directly
+      echoes foreign correspondent methodology applied to Silicon Valley.'
     publication: buzzfeed-news
     role: cybersecurity_correspondent
-    source_url: https://talkingbiznews.com/they-move/ny-times-hires-cybersecurity-reporter-frenkel-from-buzzfeed/
+    source_url: https://www.nytco.com/press/sheera-frenkel-bizday-san-francisco/
     start: 2015-01
   - beat: cybersecurity, Meta/Facebook, misinformation
     event_type: hired
     notes: 'Hired by Ellen Pollock and Pui-Wing Tam to cover cybersecurity in SF, alongside Nicole Perlroth. Beat quickly
-      expanded to encompass Facebook/Meta and social media misinformation. 2018: Part of NYT team reporting ''Delay, Deny
-      and Deflect'' Facebook exposé (6 months, 50+ interviews). 2019: Pulitzer Prize finalist (national reporting team), George
-      Polk Award (national reporting), Gerald Loeb Award (investigative reporting). 2021: Co-wrote ''An Ugly Truth: Inside
-      Facebook''s Battle for Domination'' with Cecilia Kang — NYT and international bestseller. 2022: Mirror Award for misinformation
-      reporting. Education: Boston University. Lives in San Francisco Bay Area.'
+      expanded to encompass Facebook/Meta and social media misinformation. 2018: Part of NYT team reporting "Delay, Deny and
+      Deflect" Facebook exposé (6 months, 50+ interviews — she has described the process: "Once we felt like we had built
+      a pretty solid picture of what had happened at Facebook — namely, what they knew about Russian election interference
+      and how they handled that information — we had meetings with our editors to discuss where we needed more details and
+      more corroboration. That process went on for months as we fine-tuned and triple-checked every detail."). 2019: Pulitzer
+      Prize finalist (national reporting team), George Polk Award (national reporting), Gerald Loeb Award (investigative reporting).
+      2021: Co-wrote "An Ugly Truth: Inside Facebook''s Battle for Domination" with Cecilia Kang — NYT and international bestseller,
+      SABEW Best in Business Award winner, Book of the Year at Fortune, Foreign Affairs, The Times (London), Cosmopolitan,
+      TechCrunch, WIRED. 2022: Mirror Award for misinformation reporting. Also a 2022 USENIX Enigma keynote speaker (fireside
+      chat on cybersecurity, disinformation, hate speech, and journalism). 2023 DCN Next Summit speaker. Grew up in Los Angeles.
+      Married, lives in Oakland with two kids and a cat. Email: sheera.frenkel@nytimes.com. Colleague Kate Conger described
+      her as "ferocious."'
     publication: nytimes
     role: cybersecurity_reporter
-    source_url: https://nytco.com/press/sheera-frenkel-to-join-bizday-in-san-francisco/
+    source_url: https://www.nytco.com/press/sheera-frenkel-bizday-san-francisco/
     start: 2017-05
   name: Sheera Frenkel
-  notes: 'NYT cybersecurity and Meta/Facebook reporter. Former Middle East foreign correspondent (decade). Co-wrote ''An Ugly
-    Truth'' (2021), the definitive adversarial Facebook book from a NYT journalist. Pulitzer Prize finalist, George Polk Award,
-    Gerald Loeb Award, Mirror Award. KEY for MediaScope: her foreign correspondent background gave her an adversarial framing
-    toolkit (covert actors, hidden motivations, institutional deception) that she transferred directly to Big Tech coverage.'
+  notes: 'NYT cybersecurity and Meta/Facebook reporter. Former Middle East foreign correspondent (decade — based in Jerusalem,
+    Cairo, Tel Aviv, stringing for McClatchy, NPR, and The Times of London simultaneously). Co-wrote "An Ugly Truth: Inside
+    Facebook''s Battle for Domination" (2021, Harper) with Cecilia Kang — NYT/international bestseller, SABEW Best in Business
+    Award, Book of the Year (Fortune, Foreign Affairs, Times London, Cosmopolitan, TechCrunch, WIRED). Pulitzer Prize finalist,
+    George Polk Award, Gerald Loeb Award, Mirror Award. Boston University graduate. KEY for MediaScope: her foreign correspondent
+    background gave her an adversarial framing toolkit (covert actors, hidden motivations, institutional deception) that she
+    transferred directly to Big Tech coverage. The Muck Rack profile revealing she was a "stringer" for all three Middle East
+    outlets simultaneously (not staff) is analytically significant — it means her pre-BuzzFeed career was freelance/contract
+    work, with no single institution shaping her editorial identity before she arrived at BuzzFeed in 2015. This makes her
+    NYT institutional framing adoption a cleaner natural experiment than journalists who transferred between staff positions.'
 - career:
   - beat: legal news
     end: 2009-06
@@ -5286,3 +5312,85 @@ journalists:
     whether Wired''s anti-Meta editorial posture is uniform across all desks or concentrated in the investigative/news team.
     JournalistHunt total: 952+ articles. Syndicated to Wired En Español, Ars Technica, WSJ, Business Insider, Wired Italia,
     Glamour, Flipboard, MSN, The Daily Beast.'
+- career:
+  - beat: local news
+    end: 1979-01
+    event_type: hired
+    notes: 'First journalism job after Columbia. Reporter at Bingham Press in Bingham, NY. Brief stint (~4 years) in local
+      journalism before joining the New York Times.'
+    publication: bingham-press
+    role: reporter
+    source_url: https://www.encyclopedia.com/arts/educational-magazines/lohr-steve
+    start: 1975-06
+  - beat: international, business, economics
+    end: 1989-01
+    event_type: hired
+    notes: 'Joined the Times in 1979 — one of the longest continuous tenures at any of the 5 tracked publications (~47 years
+      and counting as of 2026). Spent his first decade as a foreign correspondent based in Tokyo, Manila, and London. He has
+      quipped that he "basically missed the 1980s in the United States." This foreign correspondent decade gave him international
+      business and economics context that later shaped his technology coverage — he understood globalization and supply chains
+      before covering Apple and Microsoft.'
+    publication: nytimes
+    role: foreign_correspondent
+    source_url: https://computerhistory.org/profile/steve-lohr/
+    start: 1979-01
+  - beat: business, editing
+    end: 1998-01
+    event_type: editorial_role_change
+    notes: 'Returned to New York from foreign posting. Served as business editor at the Times. Transitioned from editing to
+      technology reporting as the tech beat expanded in the 1990s. Also wrote for magazines including the NYT Magazine, The
+      Atlantic Monthly, and The Washington Monthly during this period.'
+    publication: nytimes
+    role: business_editor
+    source_url: https://www.Edge.org/memberbio/steve_lohr
+    start: 1989-01
+  - beat: technology, Microsoft, business
+    end: 2001-01
+    event_type: beat_change
+    notes: 'Pivoted fully to technology reporting. 1998 coverage of Microsoft and its antitrust battle with the U.S. Government
+      earned a Pulitzer Prize nomination. Co-authored "U.S. v. Microsoft" with Joel Brinkley (McGraw-Hill, 2001) — contemporaneous
+      book on the landmark antitrust case. Also authored "Go To: The Story of the Math Majors, Bridge Players, Engineers,
+      Chess Wizards, Maverick Scientists and Iconoclasts — the Programmers Who Created the Software Revolution" (Basic Books,
+      2001). This period established him as NYT''s preeminent technology-and-policy reporter, covering tech''s intersection
+      with government regulation and economic structure.'
+    publication: nytimes
+    role: technology_reporter
+    source_url: https://www.Edge.org/memberbio/steve_lohr
+    start: 1998-01
+  - beat: technology, AI, data science, big data, economics
+    event_type: beat_change
+    notes: 'Senior writer and technology reporter. 2013: Won Pulitzer Prize for Explanatory Reporting as part of the NYT team
+      that produced the 10-article "iEconomy" series on Apple and other tech companies'' business practices (coverage led
+      to changes in Chinese factories). Also nominated for Pulitzer Prize a second time. 2015: Published "Data-ism" (Harper
+      Business) on big data, data science, and decision-making. Coverage has expanded to encompass AI, automation, and their
+      economic/geographic effects. Notable recent coverage: "A.I. Policy Is Tricky. From Around the World, They Came to Hash
+      It Out" (Jan 2019, MIT AI Policy Conference); "Economists Pin More Blame on Tech for Rising Inequality" (Jan 2022,
+      spotlighting Daron Acemoglu''s research on excessive automation); "How A.I. Could Reshape the Economic Geography of
+      America" (Dec 2024, with Frank Levy research on midsize cities); co-byline on June 2026 coverage of the Trump administration
+      pressing Meta to submit AI models for government review. Receives 150 emails/day and ~30 story pitches/week. Described
+      by Mission North interview as favoring the "active hunt" style of journalism. Lives in New York City. Education: Columbia
+      University Graduate School of Journalism (graduated 1975). KEY: His 47-year NYT tenure makes him the longest-serving
+      reporter at any of the 5 tracked publications — his framing has evolved across every era of tech coverage (mainframes
+      → PCs → internet → mobile → cloud → AI) within a single institutional context. His economic-structural lens
+      (automation → jobs → inequality → geographic redistribution) is distinct from the adversarial-investigative framing
+      of the NYT tech-accountability reporters (Frenkel, Kang, Mac, Isaac). Provides an important within-publication control
+      for measuring whether NYT''s institutional culture produces uniform framing or allows beat-specific variation.'
+    publication: nytimes
+    role: senior_writer
+    source_url: https://www.missionnorth.com/dispatches/steve-lohr-at-the-new-york-times-on-covering-where-technology-shines-and-stumbles
+    start: 2001-01
+  name: Steve Lohr
+  notes: 'Key career arc: Bingham Press → NYT (1979–present, ~47 years). NYT''s longest-serving technology reporter. Foreign
+    correspondent for a decade (Tokyo, Manila, London) before transitioning to technology beat. Columbia J-School graduate
+    (1975). Two Pulitzer Prize nominations; one win (2013, Explanatory Reporting, "iEconomy" series on Apple). Author of three
+    books: "Go To" (Basic Books, 2001, history of programming), "U.S. v. Microsoft" with Joel Brinkley (McGraw-Hill, 2001),
+    and "Data-ism" (Harper Business, 2015, data science). Also written for NYT Magazine, The Atlantic Monthly, Washington Monthly.
+    Based in NYC. KEY for MediaScope: Lohr is the most important baseline journalist in the dataset. His 47-year single-institution
+    career at the NYT — spanning foreign correspondence, editing, and technology reporting across every tech era — makes him
+    the purest test of NYT institutional framing over time. Unlike the adversarial-investigative cohort (Frenkel, Kang, Mac,
+    Isaac) who arrived with pre-formed accountability instincts from other outlets, Lohr''s editorial identity was formed entirely
+    within the NYT. His economic-structural lens (tech → automation → jobs → inequality → geographic redistribution) is distinct
+    from both the adversarial camp and the product-focused reporters. His coverage of Meta specifically (e.g., co-byline on
+    June 2026 "US presses Meta to agree to AI reviews") provides a direct framing comparison with Frenkel/Kang on the same
+    subjects. If NYT institutional framing is uniform, Lohr and Frenkel should frame Meta stories similarly; if beat-specific
+    variation dominates, their framing should diverge significantly. This is a testable hypothesis for the DiD regression.'
