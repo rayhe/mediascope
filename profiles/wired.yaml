@@ -110,7 +110,9 @@ ownership_chain:
          (heading to Milan for 5th edition). Client event at The Metropolitan Museum of Art (May 2026).
          CRO Herbst-Brady: events are "a differentiator for us."
       2. AI LICENSING: Deals with OpenAI (Aug 2024), Amazon Rufus (Jul 2025), Perplexity (2025),
-         Apple Intelligence (in negotiations). Lynch explicitly named these as strategic revenue pillars.
+         Microsoft Copilot (Dec 2025 pilot), Apple Intelligence (in negotiations). Lynch explicitly
+         named these as strategic revenue pillars. Microsoft partnership announced alongside CPTO
+         Vasanth Williams hire — signals AI licensing is now a C-suite priority, not just legal/BD.
       3. COMMERCE: $600M in product sales in 2024 via editorial affiliate content.
       4. SUBSCRIPTIONS: DOGE coverage drove 62,500 new US subs in 2 weeks (Feb 2025).
       Also: 28 billion video views in 2024 across longform, shortform, and film.
@@ -679,21 +681,31 @@ revenue_relationships:
       - "https://digiday.com/media/publishers-cautiously-see-ai-licensing-meaningful-revenue/"
 
   - partner: "Perplexity AI"
-    relationship_type: "licensing"
+    relationship_type: "licensing (post-C&D)"
     estimated_value: "undisclosed"
     date_established: "2025 (referenced by CEO Lynch Oct 2025)"
     description: >
-      Condé Nast CEO Roger Lynch cited Perplexity alongside OpenAI as an AI licensing partner in an
-      October 2025 statement about the company's strategic pivot: "it plans to lean on events,
+      ADVERSARIAL → LICENSING ARC: Condé Nast initially sent a cease-and-desist letter to Perplexity AI
+      in 2024 (reported by The Information) after Perplexity ignored robots.txt directives on Wired's
+      website and was accused of plagiarizing Wired and Forbes content in AI-generated summaries.
+      Forbes CEO Mike Federle publicly called Perplexity a "bad actor." Perplexity subsequently launched
+      its Publishers Program (mid-2024) with revenue-sharing to settle disputes.
+      By October 2025, Condé Nast CEO Roger Lynch cited Perplexity alongside OpenAI as an AI licensing
+      partner in a statement about the company's strategic pivot: "it plans to lean on events,
       subscriptions, commerce, and licensing deals with AI players including OpenAI and Perplexity"
-      (Adweek, May 2026 article referencing Oct 2025 Lynch comments). Perplexity AI is an AI-powered
-      search engine that competes with Google Search, Meta AI search, and OpenAI's SearchGPT. It is
-      backed by Jeff Bezos and Nvidia, among others. Perplexity's Publishers Program launched mid-2024
-      with revenue-sharing after plagiarism allegations. Combined with OpenAI, Amazon, Apple (in negotiations),
-      and Microsoft Copilot, this makes SIX Meta competitors in Condé Nast's AI licensing portfolio, while
-      Meta remains the sole major tech company with no Condé Nast revenue relationship.
+      (Adweek, May 2026 article referencing Oct 2025 Lynch comments). Perplexity's Comet Plus program
+      (Oct 1, 2025) included 16 Condé Nast titles — compensating based on human engagement, AI-driven
+      interactions, and content usage in training.
+      Perplexity AI is an AI-powered search engine backed by Jeff Bezos and Nvidia that competes with
+      Google Search, Meta AI search, and OpenAI's SearchGPT. Combined with OpenAI, Amazon, Apple
+      (in negotiations), and Microsoft Copilot, this makes SIX Meta competitors in Condé Nast's AI
+      licensing portfolio, while Meta remains the sole major tech company with no Condé Nast revenue
+      relationship.
     competitive_with: ["Meta"]
-    source_url: "https://www.adweek.com/how-conde-nast-grew-events-revenue/"
+    source_urls:
+      - "https://www.adweek.com/how-conde-nast-grew-events-revenue/"
+      - "https://www.theinformation.com/articles/conde-nast-sends-cease-and-desist-to-perplexity"
+      - "https://digiday.com/media/media-buying-briefing-an-updated-timeline-of-the-key-events-in-ai-and-media/"
 
   - partner: "Microsoft (Copilot)"
     relationship_type: "licensing (pilot)"
@@ -1098,6 +1110,98 @@ restructuring_timeline:
       Mexico winding down. 16 unionized employees laid off. Technology division restructured for AI.
       Lynch memo: affected titles = 1% of revenue, "remain unprofitable." Glamour EIC Samantha Barry departs.
     source_url: "https://www.thewrap.com/conde-nast-shuts-down-self-magazine/"
+
+  - date: "2025-11-05"
+    event: >
+      Approximately 20 Condé Nast Union (NewsGuild/CWA) members confronted Chief People Officer
+      Stan Duncan at Condé Nast offices over Teen Vogue fold and layoffs. Heated exchange during
+      contract bargaining session.
+    source_url: "https://www.thewrap.com/conde-nast-fired-four-union-members-settlement/"
+
+  - date: "2025-11-06"
+    event: >
+      FIRED FOUR: Condé Nast fires four union members the day after the confrontation with CPO Duncan:
+      Jake Lahut (Wired senior politics reporter), Jasper Lo (New Yorker fact-checker),
+      Alma Avalle (Bon Appétit), Ben Dewey (CNE video). Additionally, five other union
+      members suspended. NY AG Letitia James publicly threatened legal action, calling the firings
+      "union-busting." National attention from labor press and media reporters.
+    source_urls:
+      - "https://www.thewrap.com/conde-nast-fired-four-union-members-settlement/"
+      - "https://www.hrexecutive.com/conde-nast-settles-with-3-of-4-fired-union-members/"
+
+  - date: "2026-05-27"
+    event: >
+      FIRED FOUR SETTLEMENT: Three of the four fired workers (Lo, Avalle, Dewey) received combined
+      $400K+ in settlement — approximately 2 years' pay each. Terminations converted to voluntary
+      resignations with letters of recommendation. Five suspended workers received back pay and had
+      disciplinary records expunged. Jake Lahut (Wired) DECLINED settlement as probationary employee,
+      instead pursuing NLRB unfair labor practice charge — still pending as of June 2026.
+      WIRED EDITORIAL SIGNIFICANCE: Lahut was a senior politics reporter on Drummond's signature
+      politics team (the first in Wired history). His firing and ongoing NLRB case means Wired's
+      politics desk lost a key staffer in circumstances the NY AG characterized as union-busting.
+    source_urls:
+      - "https://www.thewrap.com/conde-nast-fired-four-union-members-settlement/"
+      - "https://www.hrexecutive.com/conde-nast-settles-with-3-of-4-fired-union-members/"
+
+# ===================================================================
+# LABOR & UNION RELATIONS — Condé Nast Union (NewsGuild/CWA)
+# ===================================================================
+labor_union_relations:
+  union_name: "Condé Nast Union (NewsGuild of New York / CWA)"
+  status: "Active, contentious bargaining"
+  description: >
+    Condé Nast Union represents editorial and production workers across multiple Condé Nast titles
+    including Wired, The New Yorker, Vanity Fair, GQ, Bon Appétit, Ars Technica, and others.
+    Affiliated with NewsGuild of New York (TNG-CWA Local 31003). Contract negotiations have been
+    contentious, particularly around layoff protections, AI use in editorial, and benefits.
+
+  fired_four_incident:
+    date: "2025-11-05 to 2026-05-27"
+    summary: >
+      The most significant labor-management crisis at Condé Nast in recent history. On November 5,
+      2025, approximately 20 union members confronted CPO Stan Duncan during bargaining over the
+      Teen Vogue fold and ongoing layoffs. The next day (Nov 6), four union members were fired:
+      Jake Lahut (Wired senior politics reporter), Jasper Lo (New Yorker fact-checker),
+      Alma Avalle (Bon Appétit), Ben Dewey (CNE video). Five additional members were suspended.
+    fired_members:
+      - name: "Jake Lahut"
+        title: "Senior Politics Reporter"
+        publication: "Wired"
+        outcome: "DECLINED settlement. Pursuing NLRB unfair labor practice charge (still pending Jun 2026). Was probationary employee — ineligible for standard severance terms."
+        editorial_significance: >
+          Part of Drummond's inaugural politics team — the first politics desk in Wired history,
+          launched Nov 2023. His firing removed a key member of Wired's signature editorial initiative.
+      - name: "Jasper Lo"
+        title: "Fact-Checker"
+        publication: "The New Yorker"
+        outcome: "Settled. Part of $400K+ combined settlement (~2 years' pay). Termination converted to voluntary resignation with letter of recommendation."
+      - name: "Alma Avalle"
+        title: "Staff"
+        publication: "Bon Appétit"
+        outcome: "Settled. Part of $400K+ combined settlement (~2 years' pay). Termination converted to voluntary resignation with letter of recommendation."
+      - name: "Ben Dewey"
+        title: "Video Staff"
+        publication: "CNE (Condé Nast Entertainment)"
+        outcome: "Settled. Part of $400K+ combined settlement (~2 years' pay). Termination converted to voluntary resignation with letter of recommendation."
+    suspended_members:
+      count: 5
+      outcome: "All received back pay; disciplinary records expunged as part of settlement."
+    external_pressure:
+      - entity: "NY AG Letitia James"
+        action: "Publicly threatened legal action, characterized the firings as 'union-busting'"
+    analytical_significance: >
+      The Fired Four incident reveals internal tension between Condé Nast management's cost-cutting
+      mandate (Self shutdown, Glamour closures, 16 unionized layoffs in Apr 2026) and its editorial
+      workforce's organized resistance. The $400K+ settlement and record-expungement suggest Condé Nast
+      recognized legal vulnerability. Lahut's pending NLRB case creates ongoing reputational and legal
+      risk. For MediaScope's framing analysis, this labor context is relevant: editorial workers at
+      Wired and other Condé Nast titles operate under acute job insecurity, which may influence
+      self-censorship dynamics (writers less likely to challenge editorial direction when layoffs are
+      constant and union protections are being tested). This is a confounding variable for any
+      analysis attributing framing patterns solely to institutional editorial policy or ownership conflicts.
+    source_urls:
+      - "https://www.thewrap.com/conde-nast-fired-four-union-members-settlement/"
+      - "https://www.hrexecutive.com/conde-nast-settles-with-3-of-4-fired-union-members/"
 
 ai_crawl_policy:
   blocks_gptbot: false
