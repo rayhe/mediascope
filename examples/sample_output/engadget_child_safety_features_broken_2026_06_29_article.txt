@@ -1,0 +1,32 @@
+TITLE: Half Of Social Media Child Safety Features Don't Work, Report Claims
+PUBLICATION: Engadget
+DATE: 2026-06-29
+URL: https://www.engadget.com/2203983/half-of-social-media-child-safety-features-dont-work-report-claims/
+AUTHOR: Not bylined (staff report)
+TOPIC: Child safety / social media platform accountability
+
+---
+
+The study examines safety features found on Instagram, Snapchat, TikTok and YouTube.
+
+A study from researchers at New York University and Northeastern University is claiming that at least half of the safety features meant to protect children on social media platforms don't deliver on their promises. The study, published by Heat Initiative and Cybersafety Research Center, tested 86 features across Instagram, Snapchat, TikTok and YouTube. According to the analysis, each of the social media platforms had a failure rate of at least 50 percent when it came to its advertised protective features, like those that prevent adults from messaging children or stop underage accounts from accessing harmful content.
+
+In the study, researchers created dummy accounts to mimic children of various ages, in addition to some adult accounts. The study examined three different scenarios: one where a child was using the social media platform naturally; another where a teen was trying to circumvent a safety feature; and a final case where a "malicious adult actor" would try to bypass the protection features of a separate teen account. Of the many safety features tested which were intended to be turned on by children themselves, the study considered it a failure if: the feature was either so difficult to find within various privacy setting menus as to make real-world use unlikely; or if it did not actually do what it described; or if the feature was completely missing from the platform.
+
+The study's testing showed that adult accounts were able to "search for, find and then message the child account with zero restrictions" on Snapchat. The study also found that TikTok would suggest anorexia-related searches to teen accounts.
+
+Spokespeople for Snap, Meta and YouTube contested the study's findings in statements to the New York Times, which reported that it was able to replicate the study's findings. A Meta spokesperson told Engadget that "teens are seeing less sensitive content, experiencing less unwanted contact, and spending less time on Instagram at night," thanks to Instagram's Teen Accounts. The spokesperson also noted that the study's authors "include vague claims that our features are broken but, in the vast majority of cases, either misrepresent those features or fail to provide any examples or evidence."
+
+Beyond this latest study, social media companies are facing lawsuits from school districts and individuals who claimed their platforms caused harm. On top of that, many countries are pursuing social media bans for children, with Australia also strengthening its ban recently by doubling its maximum penalty for companies found in non-compliance.
+
+Correction, June 29, 2026, 2:55PM ET: We've removed reference to an Instagram feature which the story implied was failing to prevent contact between teens and adults, but was, by the study's admission, working as intended. Engadget regrets the error.
+
+---
+
+CROSS-REFERENCE: CNN version of same story (same day) includes platform-specific failure rates:
+- Snapchat: 73%
+- Instagram: 66%
+- YouTube: 55%
+- TikTok: 50%
+
+CNN also includes Meta's counter-argument: "This report is fundamentally flawed and demonstrates a basic misunderstanding of how our tools work."

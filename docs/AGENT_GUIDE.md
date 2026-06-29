@@ -447,7 +447,7 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
 ```json
 {
     "name": "detect_framing_devices",
-    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 39 device types across three tiers: core (10 pattern-matched), extended (24 from real-article analysis), and structural post-pass (5 heuristic-based).",
+    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 41 device types across three tiers: core (10 pattern-matched), extended (26 from real-article analysis), and structural post-pass (5 heuristic-based).",
     "parameters": {
         "type": "object",
         "properties": {

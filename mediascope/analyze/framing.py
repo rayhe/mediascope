@@ -1559,7 +1559,12 @@ _GEOPOLITICAL_REGULATORY_PRESSURE_PATTERNS: list[re.Pattern] = [
         re.IGNORECASE | re.DOTALL,
     ),
     # Sovereignty/defiance rhetoric — editorial positioning of a government
-    # as defiant against foreign pressure
+    # as defiant against foreign pressure.
+    # Excludes literal physical "stood firm" / "standing firm" contexts
+    # (e.g., "security guards stood firm") via negative lookbehind for
+    # physical-actor nouns within 60 chars.  Identified in WebProNews
+    # Meta Dublin contractors article (May 2026): "security guards at
+    # Meta's gates stood firm, arms crossed" is literal, not geopolitical.
     re.compile(
         r"\b(?:not concerned|not deterred|will not (?:be )?(?:deterred|swayed|"
         r"intimidated|bullied)|undeterred|defiant|defy|defied|defying|"
@@ -2310,6 +2315,55 @@ _OUTSOURCED_INTENSITY_PATTERNS: list[re.Pattern] = [
         r'["\u201d]',
         re.IGNORECASE | re.DOTALL,
     ),
+    # --- Labor-law expert outsourced judgment patterns ---
+    # Expert quotes carrying cynicism, systemic critique, or strong
+    # negative evaluations of labor/employment conditions.  The journalist
+    # uses a credentialed source (professor, labor expert, legal scholar)
+    # as the vehicle for structural criticism the publication endorses
+    # through source selection without owning editorially.
+    #
+    # Identified in WebProNews Meta Dublin contractors article (May 2026):
+    #   "Call me cynical, but I don't believe much in morals when it
+    #    comes to labor rights." (Michael Doherty, Maynooth University)
+    #   "It's pretty much open season." (same)
+    #
+    # Pattern: expert credential near quote containing labor-specific
+    # loaded language (open season, cynical, rigged, stacked, toothless,
+    # worthless, powerless, etc.)
+
+    # Expert credential (professor, researcher, labor law) near loaded quote
+    re.compile(
+        r"\b(?:professor|researcher|analyst|scholar|fellow|"
+        r"expert|specialist|director|lecturer|academic)\b"
+        r".{0,120}?"
+        r'["\u201c]'
+        r'(?:[^"\u201d]{0,250}?)'
+        r"\b(?:open season|cynical|rigged|stacked|toothless|"
+        r"worthless|powerless|farce|sham|fiction|laughable|"
+        r"utter inability|utterly|impotent|useless|meaningless|"
+        r"race to the bottom|a joke|pretence|pretense|"
+        r"no real (?:obligation|power|leverage|teeth|recourse)|"
+        r"effective(?:ly)? (?:veto|nothing|zero|powerless|useless))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse: loaded quote then expert attribution
+    re.compile(
+        r'["\u201c]'
+        r'(?:[^"\u201d]{0,250}?)'
+        r"\b(?:open season|cynical|rigged|stacked|toothless|"
+        r"worthless|powerless|farce|sham|fiction|laughable|"
+        r"utter inability|utterly|impotent|useless|meaningless|"
+        r"race to the bottom|a joke|pretence|pretense|"
+        r"no real (?:obligation|power|leverage|teeth|recourse)|"
+        r"effective(?:ly)? (?:veto|nothing|zero|powerless|useless))\b"
+        r'(?:[^"\u201d]{0,80}?)'
+        r'["\u201d]'
+        r".{0,80}?"
+        r"\b(?:professor|researcher|analyst|scholar|fellow|"
+        r"expert|specialist|director|lecturer|academic|"
+        r"labou?r (?:law |rights? )?(?:professor|expert|scholar|specialist))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
 ]
 
 _DEVICE_PATTERNS["outsourced_intensity"] = _OUTSOURCED_INTENSITY_PATTERNS
@@ -2868,10 +2922,12 @@ _DENIAL_CONTRADICTION_PATTERNS: list[re.Pattern] = [
         r"purely (?:exploratory|theoretical|hypothetical|conceptual)|"
         r"merely (?:evidence|exploratory|an? exploration)|"
         r"no final decision|not (?:yet )?(?:been )?(?:decided|determined|finalized)|"
+        r"no evidence (?:that|of)|there is no truth|there is no basis|"
         r"not building|not developing|no plans? to)"
         r"[^\"]*?\")"
         r".{5,400}?"
         r"\b(?:found|revealed|showed|discovered|uncovered|confirmed|"
+        r"replicated?|verified|corroborated|validated|"
         r"analysis|investigation|code|evidence|documents?|data|"
         r"report(?:ed|ing)?|according to)\b",
         re.IGNORECASE | re.DOTALL,
@@ -2880,12 +2936,14 @@ _DENIAL_CONTRADICTION_PATTERNS: list[re.Pattern] = [
     # followed by evidence that supports the original claim.
     # Handles both full quoted sentences and short quoted fragments
     # ("incredibly misleading" or "absolutely dishonest").
+    # Pre-quote attribution form: "called/described it [combative quote]"
     re.compile(
         r"\b(?:called|described|labeled|termed|characterized|dismissed)\b"
         r".{0,60}?"
         r"(?:\"[^\"]*?"
         r"(?:misleading|dishonest|inaccurate|false|untrue|"
         r"irresponsible|reckless|unfounded|baseless|unfair|"
+        r"fundamentally flawed|flawed|misunderstanding|"
         r"mischaracteriz|misrepresent)"
         r"[^\"]*?\")"
         r".{5,600}?"
@@ -2893,8 +2951,33 @@ _DENIAL_CONTRADICTION_PATTERNS: list[re.Pattern] = [
         r"the (?:code|feature|system|data|software)|"
         r"the (?:next|following|very next) (?:day|morning|update|version)|"
         r"removes? (?:nearly )?all traces|"
+        r"replicated?|verified|corroborated|validated|"
         r"however|but|yet|in fact|nonetheless|nevertheless|"
         r"contradicting|confirming|proving|showing)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Post-quote combative denial: "[combative quote]" said/insisted ...
+    # [evidence counter].  Handles direct-quote form where attribution
+    # follows the denial rather than preceding it.
+    # Identified in Engadget child safety features article (Jun 2026):
+    #   '"The claims are baseless," a spokesperson insisted.
+    #    Researchers... verified the methodology.'
+    re.compile(
+        r"(?:\"[^\"]*?"
+        r"(?:misleading|dishonest|inaccurate|false|untrue|"
+        r"irresponsible|reckless|unfounded|baseless|unfair|"
+        r"fundamentally flawed|flawed|misunderstanding|"
+        r"mischaracteriz|misrepresent)"
+        r"[^\"]*?\")"
+        r".{0,40}?"
+        r"\b(?:said|insisted|maintained|declared|claimed|stated|"
+        r"responded|replied|countered|retorted|snapped|argued|"
+        r"asserted|contended|pushed back)\b"
+        r".{5,400}?"
+        r"\b(?:found|revealed|showed|discovered|uncovered|confirmed|"
+        r"replicated?|verified|corroborated|validated|"
+        r"analysis|investigation|code|evidence|documents?|data|"
+        r"report(?:ed|ing)?|according to)\b",
         re.IGNORECASE | re.DOTALL,
     ),
     # Evidence first, then denial — reverse order where the journalist
@@ -2910,6 +2993,7 @@ _DENIAL_CONTRADICTION_PATTERNS: list[re.Pattern] = [
         r".{0,60}?"
         r"(?:\"[^\"]*?"
         r"(?:does not exist|doesn.?t exist|misleading|dishonest|"
+        r"fundamentally flawed|flawed|misunderstanding|"
         r"purely exploratory|merely|not (?:a )?real|no (?:final )?decision|"
         r"not building|not developing)"
         r"[^\"]*?\")",
@@ -2959,6 +3043,171 @@ _DENIAL_CONTRADICTION_PATTERNS: list[re.Pattern] = [
 ]
 
 _DEVICE_PATTERNS["denial_contradiction"] = _DENIAL_CONTRADICTION_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Worker replacement irony: editorial framing device where the narrative
+# emphasizes that workers built/trained/created the very technology that
+# replaces them.  The irony is structural — the sentence or passage
+# juxtaposes the human contribution (training, labeling, moderating) with
+# the resulting AI system that now eliminates their roles.
+#
+# Distinct from juxtaposition (which contrasts profits vs. cuts) and
+# hypocrisy_frame (which contrasts stated policy vs. actual behavior).
+# Worker replacement irony specifically captures the recursive quality:
+# the workers' own labor produced the instrument of their displacement.
+#
+# Identified in WebProNews Meta Dublin contractors article (May 2026):
+#   "Content moderators who trained AI models now face replacement by
+#    those same systems"
+#   "Their replacements are the very models they helped build."
+#   "We trained the bots. We did the grind. Now we're being left behind."
+# ---------------------------------------------------------------------------
+_WORKER_REPLACEMENT_IRONY_PATTERNS: list[re.Pattern] = [
+    # "trained/built/created/labeled [AI/models/bots/systems] ...
+    #  replaced/eliminated/laid off/made redundant"
+    re.compile(
+        r"\b(?:train(?:ed|ing)|built|creat(?:ed|ing)|develop(?:ed|ing)|"
+        r"label(?:ed|ing|led|ling)|annotat(?:ed|ing)|"
+        r"power(?:ed|ing)|fed|taught|curated|moderat(?:ed|ing))\b"
+        r".{0,80}?"
+        r"\b(?:AI|artificial intelligence|model|algorithm|system|bot|"
+        r"machine learning|neural network|automation|software)s?\b"
+        r".{0,200}?"
+        r"\b(?:replac(?:ed?|ing|ement)|eliminat(?:ed?|ing)|"
+        r"laid off|made redundant|displac(?:ed?|ing)|"
+        r"automat(?:ed?|ing)|render(?:ed?|ing) (?:them |their )?obsolete|"
+        r"expendable|no longer need(?:ed)?|"
+        r"left behind|cut|job losses|losing their (?:jobs?|roles?))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse: "replaced/face replacement ... by the very/same/those
+    #  [models/systems/AI] they [trained/built/helped]"
+    re.compile(
+        r"\b(?:replac(?:ed?|ing|ement)|displac(?:ed?|ing)|"
+        r"made (?:them )?redundant|losing (?:their )?jobs?)\b"
+        r".{0,120}?"
+        r"\b(?:the very|those same|the same|those|the)\b"
+        r".{0,40}?"
+        r"\b(?:model|system|bot|AI|algorithm|tool|software|"
+        r"machine|technology|platform)s?\b"
+        r".{0,60}?"
+        r"\b(?:they |their |these workers |the workers )?"
+        r"(?:train(?:ed|ing)|built|creat(?:ed|ing)|develop(?:ed|ing)|"
+        r"help(?:ed)? (?:build|train|create|develop)|"
+        r"label(?:ed|led)|annotat(?:ed)|power(?:ed))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Compact form: "face replacement by those same systems" or
+    # "their replacements are the very models they helped build"
+    re.compile(
+        r"\b(?:replacements?|replaced)\b"
+        r".{0,30}?"
+        r"\b(?:by those same|by the very|are the very|are the same)\b"
+        r".{0,60}?"
+        r"\b(?:model|system|bot|AI|algorithm|tool|software|"
+        r"machine|technology)s?\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Chant/slogan form: "We trained the [bots/AI]. ... left behind"
+    re.compile(
+        r"\b[Ww]e\s+(?:train(?:ed)|built|creat(?:ed)|power(?:ed)|"
+        r"scrub(?:bed)?|label(?:ed|led))\s+the\s+"
+        r"(?:bots?|models?|systems?|AI|algorithms?|feeds?|data)\b"
+        r".{0,120}?"
+        r"\b(?:left behind|being (?:left|replaced|cut|let go|tossed)|"
+        r"now (?:we(?:'re| are)|they(?:'re| are))\b"
+        r".{0,40}?"
+        r"(?:expendable|redundant|unemployed|replaced|gone|out))",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+
+_DEVICE_PATTERNS["worker_replacement_irony"] = _WORKER_REPLACEMENT_IRONY_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Two-tier treatment: editorial framing that explicitly contrasts the
+# treatment of two classes of workers — typically full-time employees vs.
+# contractors, permanent staff vs. outsourced labor.  The device works by
+# laying out both packages/conditions side by side so the reader draws
+# the inequality conclusion.
+#
+# Distinct from juxtaposition (which contrasts company profits vs.
+# worker losses) and hypocrisy_frame (which contrasts stated values vs.
+# actual behavior).  Two-tier treatment is specifically about different
+# treatment of different groups of people within the same entity.
+#
+# Identified in WebProNews Meta Dublin contractors article (May 2026):
+#   "Full-time employees reportedly stand to receive four months' pay
+#    plus two weeks for every year served. Covalen workers get far less."
+#   "they're constantly using Meta tools, they're on Meta platforms ...
+#    But they're denied all the privileges and benefits of Meta staff."
+# ---------------------------------------------------------------------------
+_TWO_TIER_TREATMENT_PATTERNS: list[re.Pattern] = [
+    # "[full-time/permanent/direct] employees/staff ... [receive/get X] ...
+    #  [contractors/outsourced/temp] ... [get/receive far less/nothing]"
+    re.compile(
+        r"\b(?:full[- ]time|permanent|direct|internal|salaried)\s+"
+        r"(?:employee|staff|worker|personnel|team member)\w*\b"
+        r".{0,300}?"
+        r"\b(?:contract(?:or|ed)|outsourc(?:ed|ing)|temp(?:orary)?|"
+        r"third[- ]party|vendor|agency|gig|contingent)\s+"
+        r"(?:worker|employee|staff|personnel|labou?r)\w*\b"
+        r".{0,120}?"
+        r"\b(?:get|receive|earn|are (?:paid|given|offered|entitled to))\s+"
+        r"(?:far )?"
+        r"(?:less|nothing|no(?:thing| payout| severance| compensation)|"
+        r"the (?:bare |legal )?minimum)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse order: contractors described, then contrast with full-time
+    re.compile(
+        r"\b(?:contract(?:or|ed)|outsourc(?:ed|ing)|temp(?:orary)?|"
+        r"third[- ]party|vendor|agency)\s+"
+        r"(?:worker|employee|staff|personnel|labou?r)\w*\b"
+        r".{0,200}?"
+        r"\b(?:while|whereas|but|in contrast|unlike|compared to|"
+        r"could not be (?:more |starker|clearer)|"
+        r"the contrast|stark(?:er|ly)?)\b"
+        r".{0,150}?"
+        r"\b(?:full[- ]time|permanent|direct|internal|salaried)\s+"
+        r"(?:employee|staff|worker|personnel)\w*\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "denied all the privileges/benefits of [company] staff/employees"
+    re.compile(
+        r"\b(?:denied|excluded from|shut out of|lack(?:ing)?|"
+        r"without access to|not entitled to|ineligible for)\b"
+        r".{0,60}?"
+        r"\b(?:all |every )?(?:the )?"
+        r"(?:privileges?|benefits?|protections?|rights?|perks?|"
+        r"compensation|severance|healthcare)\b"
+        r".{0,60}?"
+        r"\b(?:of|that|available to|enjoyed by|afforded to|"
+        r"given to|provided to)\b"
+        r".{0,40}?"
+        r"\b(?:staff|employee|full[- ]time|permanent|direct|internal)\w*\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "using [company] tools/platforms ... but ... not [company] employees"
+    # Captures the ambiguity-of-employment frame.  Handles both explicit
+    # conjunction ("but not employees") and implicit contrast within the
+    # same sentence ("using X's tools... are not actually employees").
+    re.compile(
+        r"\b(?:using|on|work(?:ing)? (?:on|with|for)|access(?:ing)?)\b"
+        r".{0,40}?"
+        r"\b(?:tools?|platforms?|systems?|software|infrastructure|"
+        r"office|building|equipment)\b"
+        r".{0,200}?"
+        r"\b(?:not (?:actually )?(?:employees?|staff|workers?)|"
+        r"aren.?t (?:even )?(?:employees?|staff)|"
+        r"not (?:considered|treated as|classified as))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+
+_DEVICE_PATTERNS["two_tier_treatment"] = _TWO_TIER_TREATMENT_PATTERNS
 
 
 def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
@@ -3287,10 +3536,10 @@ def _detect_social_proof_amplification(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 34 pattern-matched device types plus 5 structural
-    post-pass types (39 total).
+    Scans for 36 pattern-matched device types plus 5 structural
+    post-pass types (41 total).
 
-    Pattern-matched (33): guilt_by_association, anonymous_authority,
+    Pattern-matched (36): guilt_by_association, anonymous_authority,
     catastrophizing, false_balance, selective_omission_signal,
     emotional_appeal, straw_man, loaded_language, refusal_amplification,
     juxtaposition, timeline_implication, power_asymmetry,
@@ -3302,7 +3551,9 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     corporate_reassurance_undercut, sarcastic_correction,
     hypocrisy_frame, outsourced_intensity, confession_framing,
     precedent_analogy, social_proof_amplification,
-    latecomer_narrative, regulatory_shadow, and editorial_deflation.
+    latecomer_narrative, regulatory_shadow, editorial_deflation,
+    denial_contradiction, worker_replacement_irony, and
+    two_tier_treatment.
 
     Structural post-pass (5): kicker_framing, analogy_stacking,
     speculative_framing, trend_bundling, social_proof_amplification.
@@ -3340,6 +3591,25 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
 
                 if overlap:
                     continue
+
+                # --- Geopolitical pressure: physical "stood/standing firm" ---
+                # Suppress geopolitical_regulatory_pressure when "stood firm"
+                # or "standing firm" is used literally (security guards, police,
+                # bouncers physically standing), not as geopolitical defiance.
+                # Identified in WebProNews Meta Dublin contractors article
+                # (May 2026): "security guards at Meta's gates stood firm."
+                # ---------------------------------------------------------
+                if device_type == "geopolitical_regulatory_pressure":
+                    _matched_lower = match.group().lower()
+                    if "stood firm" in _matched_lower or "standing firm" in _matched_lower:
+                        _lookback_geo = text[max(0, start - 80):start].lower()
+                        _PHYSICAL_ACTORS = (
+                            "guard", "security", "police", "officer",
+                            "soldier", "bouncer", "doorman", "sentry",
+                            "protester", "demonstrator", "picket",
+                        )
+                        if any(actor in _lookback_geo for actor in _PHYSICAL_ACTORS):
+                            continue
 
                 # --- Ironic-quotation attribution filter ----------------------
                 # Suppress ironic_quotation matches that are short (≤3 words)

@@ -7372,3 +7372,25 @@ MIT Technology Review: "Data Centers Are Amazing. Everyone Hates Them." (Jan 14,
 - Kicker enhancement for ironic-defeat pattern (P3)
 - Agency attribution still 0.0 vs manual -0.40 (structural, not verb-based)
 - Comparative framing still 0.0 vs manual -0.50 (extended analogy, not single comparison)
+
+## 2026-06-29 14:00 PT — Type A (Article Deep Dive)
+
+**Article:** "Google DeepMind is worried about what happens when millions of agents start to interact" — Will Douglas Heaven, MIT Technology Review, June 11, 2026
+**Focus:** Non-Meta piece testing source extraction on expert-heavy analytical journalism
+
+### Improvements
+- **Pattern 3 case fix:** `according to` → `[Aa]ccording to` to handle sentence-initial capitalization (was missing "According to Rohin Shah")
+- **Pattern 5c added:** verb-before-single-surname (`says Shah`) — reverse of existing Pattern 5b
+- **Attribution verb expansion:** Added `thinks`, `believes`, `considers`, `cautions` to NEUTRAL_VERBS
+- Source detection: 2/3 → 3/3 for this article
+- 14 new tests (test_source_extraction_fixes.py)
+- 903 total tests passing (was 889)
+
+### Remaining gaps documented
+- Expert detection misses verb-form titles ("directs" ≠ "director")
+- Affiliation extraction can't resolve coreference ("the company" → Google DeepMind)
+- Framing detector found only 2/9 devices (precautionary framing, humor deflection missing)
+- Topic classifier lacks "ai_safety" bucket; false-positive "product_launch"
+
+### Commit
+`55e5fd9` — pushed to `rayhe/mediascope` main

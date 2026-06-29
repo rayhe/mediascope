@@ -264,8 +264,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 34, (
-            f"Expected 34 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 36, (
+            f"Expected 36 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -308,6 +308,10 @@ class TestFramingDeviceRegistry:
             "editorial_deflation",
             # Denial contradiction (1)
             "denial_contradiction",
+            # Worker replacement irony (1)
+            "worker_replacement_irony",
+            # Two-tier treatment (1)
+            "two_tier_treatment",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual
