@@ -4,6 +4,54 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-29 13:00 PT — Hour Type D: Toolkit Quality & Documentation — Fix 9 stale doc counts + add per-file test count guard
+
+**Focus:** Documentation count consistency and new guard test to prevent future count drift.
+
+**Pre-check:** All 888 tests passing. Test suite healthy.
+
+### Issues Found
+
+9 stale count references across README.md and ARCHITECTURE.md, accumulated from prior iterations that added/removed tests without updating documentation tables:
+
+| File | Field | Was | Actual | Delta |
+|------|-------|-----|--------|-------|
+| README.md | test_entities.py count | 14 | 18 | +4 |
+| README.md | test_sentiment.py count | 43 | 46 | +3 |
+| README.md | test_topics.py count | 28 | 31 | +3 |
+| README.md | test_virtue_ai_acquihire.py count | 29 | 14 | -15 |
+| README.md | test_hackathon_revolt.py count | 26 | 13 | -13 |
+| README.md | test_latecomer_regulatory_framing.py count | 34 | 33 | -1 |
+| README.md | Total test header | 888 | 889 | +1 |
+| ARCHITECTURE.md | Total test header | 878 | 889 | +11 |
+| ARCHITECTURE.md | test_topics.py description | "all 17 buckets" | "all 18 buckets" | — |
+
+### Root Cause
+
+The structural consistency suite (`test_structural_consistency.py`) had guards for:
+- Total test file count header
+- Test file listing completeness (no missing or phantom files)
+- Framing device counts, topic bucket counts, banned phrase counts
+
+But NO guard for per-file test function counts in the README table. Prior iterations could add/remove test functions without triggering any CI failure for the stale table row.
+
+### Fix Applied
+
+1. **Fixed all 9 stale counts** in README.md and ARCHITECTURE.md
+2. **Added `test_readme_per_file_test_counts` guard** to `test_structural_consistency.py`:
+   - Parses README test table (`| test_foo.py | N | description |`)
+   - Counts `def test_` occurrences in each file on disk
+   - Asserts README count matches actual count
+   - Uses split-pattern trick (`"def " + "test_"`) to avoid self-matching when scanning its own file — the regex literal `"def test_"` would otherwise count as a false positive
+
+### Post-check
+
+889 tests passing across 34 files (889 = 888 prior + 1 new guard test).
+
+**Commit:** `2057cb6` — pushed to GitHub.
+
+---
+
 ## 2026-06-29 12:00 PT — Hour Type C: Ownership & Funding Deep Dive — Reddit Governance: Sauerberg Revolving Door + Newhouse NCG Committee Chair + Jamie Miller AP Board
 
 **Focus:** Deep SEC proxy analysis of Reddit governance structure from the 2025 DEF 14A (filed April 28, 2025). Three major new findings that significantly deepen the documented Advance/Wired ↔ Reddit conflict.
