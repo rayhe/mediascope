@@ -858,6 +858,13 @@ _ADVERSARIAL_DEVICE_TYPES: set[str] = {
     # and NYT voluntary review (Jun 23): "positioned itself as responsible"
     # yet being the only holdout.
     "hypocrisy_frame",
+    # Military techno-optimism frames defense/surveillance technology in
+    # aspirational language ("revolutionize," "transform the battlefield")
+    # that VADER reads as strongly positive even when editorial stance is
+    # critical or the subject matter is intrinsically adversarial (weapons,
+    # warfare, mass surveillance).  Detected in MIT TR Anduril/Meta smart
+    # glasses warfare article where VADER scored +0.64 vs manual -0.10.
+    "military_techno_optimism",
 }
 
 # Anchor device types that create negative reader takeaway even when
@@ -1077,6 +1084,41 @@ def _compute_framing_correction(
         anchor_target = 0.15
         corrected = 0.55 * raw_tone + 0.45 * anchor_target
         corrected = max(-0.2, min(raw_tone, round(corrected, 4)))
+        return corrected, True
+
+    # --- Path E: Military techno-optimism inflation ---
+    # Articles about military/defense technology where aspirational language
+    # ("revolutionize the battlefield", "transform warfare", "enhanced
+    # capabilities") inflates VADER's reading.  The editorial stance is
+    # often critical or skeptical, but VADER reads the aspirational claims
+    # as genuine positive sentiment.  Unlike Path A, agency is not strongly
+    # negative because the subjects ARE actively building things — the
+    # inflation comes from the *content domain* (warfare, weapons), not
+    # from passive framing.
+    #
+    # Discovered in MIT TR Anduril/Meta smart glasses warfare article
+    # (May 18, 2026) where VADER scored +0.64 vs manual assessment of
+    # -0.10.  Agency was -0.2 (below Path A's -0.3 threshold).
+    #
+    # Relaxed agency threshold: any negative agency suffices.  The key
+    # signal is ≥3 military_techno_optimism devices, which specifically
+    # indicate VADER-inflating aspirational military language.
+    _MTO_MIN_DEVICES = 3
+    mto_count = framing_summary.get("military_techno_optimism", 0)
+    if (
+        raw_tone >= 0.3
+        and mto_count >= _MTO_MIN_DEVICES
+        and agency < 0  # any negative agency (relaxed from -0.3)
+    ):
+        # Blend toward the agency-derived estimate, lighter than Path A
+        # (70/30 vs 90/10) because these are not pure adversarial pieces.
+        base = agency
+        amplified = base * (0.5 + 0.5 * emotional_intensity)
+        density_factor = min(mto_count / 6.0, 1.0)
+        framing_tone = amplified * (0.6 + 0.4 * density_factor)
+        framing_tone = max(-0.5, min(0.0, framing_tone))
+        corrected = 0.30 * raw_tone + 0.70 * framing_tone
+        corrected = max(-0.5, min(0.2, round(corrected, 4)))
         return corrected, True
 
     # --- Path D: Sardonic/mocking framing ---

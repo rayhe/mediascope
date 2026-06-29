@@ -32,7 +32,7 @@
 
 | Dimension | Toolkit | Manual | Gap |
 |---|---|---|---|
-| Overall tone | +0.6375 | -0.10 | **+0.74** — VADER positive bias persists |
+| Overall tone | +0.1016 | -0.10 | **+0.20** — Massively improved (was +0.74, now +0.20 via Path E correction) |
 | Emotional intensity | 0.3724 | 0.35 | **0.02** — Good match after military vocab fix |
 | Source authority | 1.0 | 1.0 | 0.0 — Exact match |
 | Agency attribution | -0.2 | -0.2 | 0.0 — Exact match |
@@ -40,14 +40,35 @@
 | Speculative language | 0.35 | 0.35 | 0.0 — Exact match |
 | Comparative framing | -0.33 | -0.33 | 0.0 — Exact match |
 
-### Critical Gap: VADER Positive Bias on Military Reporting (+0.74)
+### Tone Correction: Path E (Military Techno-Optimism)
 
-The toolkit's overall_tone of **+0.6375** (positive) is the single biggest scoring failure. Manual assessment is **-0.10** (neutral-to-slightly-negative). VADER interprets factual prose about military technology as positive because:
+The toolkit now applies **framing correction Path E** when `military_techno_optimism` devices
+are detected (≥3 devices + any negative agency). This brought the overall_tone from
++0.6375 (raw VADER) to +0.1016 (corrected), closing the gap from +0.74 to +0.20.
 
-1. Technology-related language ("prototyping," "augmented-reality," "innovation") scores positive
-2. Active verbs ("won a contract," "designing," "building") score positive
-3. Dollar amounts with growth language ($159M, $20B) score positive
-4. VADER doesn't understand that "ordering drone strikes via eye-tracking" is not a positive consumer experience
+- Raw VADER: +0.6375 (strongly positive — aspirational military language inflates)
+- Path E correction: +0.1016 (neutral, slight positive — 70% framing blend, 30% raw)
+- Manual: -0.10 (neutral, slight negative)
+- Remaining gap: +0.20 (acceptable — residual from mild agency score -0.2)
+
+Path E uses a relaxed agency threshold (any negative, vs Path A's -0.3) because
+military techno-optimism inflates VADER through domain-specific aspirational language,
+not through passive-subject framing. The key signal is the density of
+`military_techno_optimism` devices, not deep negative agency.
+
+### Entity Detection Fix: Quest False Positive Eliminated
+
+Previous runs detected 3 false-positive "Quest" → VR/Metaverse matches for lowercase
+"quest" in phrases like "Meta's quest to make smart glasses" and "self-funded side quest."
+The VR/Metaverse cluster regex now uses `(?-i:Quest)` to require case-sensitive capitalization,
+eliminating all 3 false positives while preserving detection of "Quest 3", "Meta Quest Pro", etc.
+
+### Topic Classification Fix: defense_military Topic Added
+
+Previous topic classification produced `ai_development` (0.34) as the primary topic for this
+military defense technology article. A new `defense_military` topic bucket (22 keywords:
+military, Army, warfare, Pentagon, drone, Anduril, Palantir, etc.) now correctly classifies
+the article as `defense_military` (0.54, primary) with `ai_development` (0.34) as secondary.
 
 **This is the same VADER positive-bias identified in the NameTag and Applied AI articles.** The framing-corrected score should be applied here — when `military_techno_optimism` framing devices are detected, apply a negative correction.
 

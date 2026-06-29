@@ -141,7 +141,7 @@ More coverage ≠ more bias. We normalize by:
 
 ### 3.1 Standardized Topic Buckets
 
-Articles are classified into 15 topic buckets to enable apples-to-apples comparison:
+Articles are classified into 16 topic buckets to enable apples-to-apples comparison:
 
 | Topic | Keywords |
 |---|---|
@@ -160,6 +160,7 @@ Articles are classified into 15 topic buckets to enable apples-to-apples compari
 | `corporate_strategy` | acquisition, merger, M&A, partnership, diversification, pivot, market entry, rival, competitive, spin-off |
 | `workplace_culture` | morale, employee morale, burnout, attrition, retention, toxic culture, internal revolt, soul-crushing, return to office, disgruntled |
 | `government_oversight` | national security, export controls, classified, embargo, sanctions, nonproliferation, Pentagon, policymakers, lawmakers, AI regulation, military AI |
+| `defense_military` | military, defense contractor, warfare, combat, Army, Pentagon, DoD, drone, weapons system, IVAS, Anduril, Palantir, Special Operations, tactical AI |
 
 Classification uses keyword matching with TF-IDF weighting. An article can match multiple topics; the top 3 by confidence are retained.
 
@@ -393,11 +394,17 @@ This is not a VADER bug; it is a fundamental limitation of lexical sentiment ana
 
 MediaScope's tone correction fires when three conditions are met:
 
-1. **Adversarial framing density:** ≥3 framing devices from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame)
+1. **Adversarial framing density:** ≥3 framing devices from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism)
 2. **Negative agency signal:** Agency attribution score ≤ −0.3 (from active-negative detection or passive framing)
 3. **Positive raw VADER score:** The uncorrected composite score is positive
 
 When all three conditions hold, the corrected `overall_tone` is computed from framing device signals rather than VADER's lexical score. The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overall_tone` (corrected) with metadata documenting when and why correction fired.
+
+Additional correction paths handle specific VADER failure modes that don't meet the primary conditions:
+
+- **Military techno-optimism (Path E):** When ≥3 `military_techno_optimism` devices are detected and agency is any negative value (relaxed from −0.3), VADER's positive inflation from aspirational military language ("revolutionize the battlefield," "enhanced capabilities") is corrected. This path uses a lighter blend (70% framing, 30% raw) since these are not pure adversarial pieces but rather articles where domain-specific language misleads VADER.
+- **Embedded anchor (Path C):** Product reviews where anchor devices (kicker framing, self-referential investigation, juxtaposition) shift the reader's final impression despite positive agency.
+- **Sardonic framing (Path D):** Articles with strong loaded language density (≥7 devices) and positive agency where editorial contempt is conveyed through word choice rather than structural framing.
 
 ### 9.3 Headline Framing Override
 

@@ -318,7 +318,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Reality Labs",
         ],
         "regex": r"(?<!\w)(Horizon Worlds|Horizon(?:\s+(?:Spaces|Central|Unity))|"
-                 r"(?:Meta\s+)?Quest(?:\s+(?:3S?|Pro))?|VRChat|metaverse|Reality Labs)(?!\w)",
+                 r"(?:Meta\s+)?(?-i:Quest)(?:\s+(?:3S?|Pro))?|VRChat|metaverse|Reality Labs)(?!\w)",
     },
     "Smart Glasses Competitors": {
         "aliases": [

@@ -180,7 +180,7 @@ These gaps demonstrate that **raw VADER scores on investigative journalism are u
 
 MediaScope's framing-aware correction fires when three conditions are all met:
 
-1. **Adversarial framing density:** ≥3 devices from the adversarial set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame)
+1. **Adversarial framing density:** ≥3 devices from the adversarial set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism)
 2. **Negative agency signal:** Active-negative agency (tracking, cutting, forcing) or passive victim framing
 3. **Positive raw VADER score:** The uncorrected composite score misleadingly reads as positive
 

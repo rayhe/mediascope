@@ -172,6 +172,49 @@ class TestLitigationTopicDetection:
         assert "litigation" in topic_names
 
 
+class TestDefenseMilitaryTopicDetection:
+    """Defense/military topic bucket detection."""
+
+    def test_detects_military_keywords(self):
+        text = (
+            "Anduril won a $159 million Army contract for smart glasses that give "
+            "soldiers enhanced battlefield awareness. The weapons system integrates "
+            "drone feeds and tactical AI for combat operations. Pentagon officials "
+            "praised the Special Operations prototype."
+        )
+        topics = classify_topic(text)
+        topic_names = [t.topic for t in topics]
+        assert "defense_military" in topic_names
+
+    def test_detects_defense_contractors(self):
+        text = (
+            "Anduril and Palantir are competing for defense contracts as the "
+            "Department of Defense modernizes its military AI capabilities. "
+            "The prototyping contract includes drone and autonomous weapons research."
+        )
+        topics = classify_topic(text)
+        topic_names = [t.topic for t in topics]
+        assert "defense_military" in topic_names
+
+    def test_beats_ai_development_on_military_article(self):
+        """Military AR article should rank defense_military above ai_development."""
+        text = (
+            "Meta's smart glasses are being adapted for military use by defense "
+            "contractor Anduril. The Army's IVAS program and Special Operations "
+            "Command are evaluating tactical AI headsets for soldiers in combat. "
+            "The defense technology prototyping contract was awarded by the Pentagon."
+        )
+        topics = classify_topic(text, top_n=5)
+        topic_names = [t.topic for t in topics]
+        assert "defense_military" in topic_names
+        dm_idx = topic_names.index("defense_military")
+        if "ai_development" in topic_names:
+            ai_idx = topic_names.index("ai_development")
+            assert dm_idx < ai_idx, (
+                "defense_military should rank above ai_development for military articles"
+            )
+
+
 class TestWorkplaceCultureTopicDetection:
     """Workplace culture topic bucket detection."""
 

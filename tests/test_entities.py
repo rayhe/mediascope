@@ -126,3 +126,57 @@ class TestDefaultClusters:
                 # Must have aliases for auto-generation to work
                 assert "aliases" in cluster, f"Cluster {name} has neither regex nor aliases"
                 assert len(cluster["aliases"]) > 0, f"Cluster {name} has empty aliases and no regex"
+
+
+class TestQuestFalsePositive:
+    """Regression tests for bare 'quest' in prose triggering VR/Metaverse cluster."""
+
+    def test_lowercase_quest_in_prose_not_detected(self):
+        """Lowercase 'quest' (generic English word) must not match VR/Metaverse."""
+        text = "Meta's quest to make smart glasses a mainstream product continues."
+        entities = detect_entities(text)
+        quest_matches = [
+            e for e in entities
+            if e.cluster == "VR/Metaverse" and "quest" in e.entity.lower()
+        ]
+        assert len(quest_matches) == 0, (
+            f"Bare lowercase 'quest' in prose matched VR/Metaverse: {quest_matches}"
+        )
+
+    def test_lowercase_quest_side_quest_not_detected(self):
+        """'side quest' in generic prose must not match VR/Metaverse."""
+        text = "This was a self-funded side quest that turned into a major defense program."
+        entities = detect_entities(text)
+        quest_matches = [
+            e for e in entities
+            if e.cluster == "VR/Metaverse" and "quest" in e.entity.lower()
+        ]
+        assert len(quest_matches) == 0, (
+            f"'side quest' matched VR/Metaverse: {quest_matches}"
+        )
+
+    def test_capitalized_quest_product_still_detected(self):
+        """Capitalized 'Quest 3' (the product, without 'Meta' prefix) should
+        match VR/Metaverse.  Note: 'Meta Quest 3' is captured as 'Meta' by
+        the Meta cluster first (known overlap — separate issue)."""
+        text = "He used a Quest 3 for virtual reality gaming."
+        entities = detect_entities(text)
+        quest_matches = [
+            e for e in entities
+            if e.cluster == "VR/Metaverse" and "Quest" in e.entity
+        ]
+        assert len(quest_matches) > 0, (
+            "Capitalized 'Quest 3' should match VR/Metaverse"
+        )
+
+    def test_bare_capitalized_quest_detected(self):
+        """Bare capitalized 'Quest' (referring to the product) should match."""
+        text = "The Quest is the best-selling VR headset on the market."
+        entities = detect_entities(text)
+        quest_matches = [
+            e for e in entities
+            if e.cluster == "VR/Metaverse" and "Quest" in e.entity
+        ]
+        assert len(quest_matches) > 0, (
+            "Bare capitalized 'Quest' should match VR/Metaverse"
+        )

@@ -257,6 +257,42 @@ class TestFramingCorrection:
 class TestFramingCorrectionMetadata:
     """Verify the SentimentResult carries correction metadata."""
 
+    def test_military_techno_optimism_counted_as_adversarial(self):
+        """military_techno_optimism must be in the adversarial device type set
+        so it contributes to framing correction activation."""
+        from mediascope.analyze.sentiment import _ADVERSARIAL_DEVICE_TYPES
+        assert "military_techno_optimism" in _ADVERSARIAL_DEVICE_TYPES, (
+            "military_techno_optimism should be in _ADVERSARIAL_DEVICE_TYPES "
+            "— VADER misreads military/defense language as positive"
+        )
+
+    def test_correction_fires_on_military_techno_optimism(self):
+        """Framing correction should fire when military_techno_optimism
+        devices are present alongside negative agency."""
+        tone, corrected = _compute_framing_correction(
+            raw_tone=0.6,
+            agency=-0.5,
+            emotional_intensity=0.3,
+            framing_summary={"military_techno_optimism": 4},
+        )
+        assert corrected is True, (
+            "4× military_techno_optimism + negative agency should trigger correction"
+        )
+        assert tone < 0, f"Expected negative corrected tone, got {tone}"
+
+    def test_path_e_military_techno_optimism_with_mild_agency(self):
+        """Path E fires with mild negative agency (above Path A's -0.3 threshold)."""
+        tone, corrected = _compute_framing_correction(
+            raw_tone=0.6,
+            agency=-0.2,
+            emotional_intensity=0.37,
+            framing_summary={"military_techno_optimism": 5, "juxtaposition": 1},
+        )
+        assert corrected is True, (
+            "Path E should fire with agency=-0.2 (above Path A's -0.3 threshold)"
+        )
+        assert tone < 0.3, f"Expected tone below 0.3, got {tone}"
+
     def test_result_has_framing_fields(self):
         result = analyze_composite("Meta announced new AI features today.")
         assert hasattr(result, "framing_corrected")

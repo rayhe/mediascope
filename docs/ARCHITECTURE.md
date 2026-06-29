@@ -189,9 +189,9 @@ Journalist YAML ──→ Career Tracker ──→ Migration Detection
 - **Power asymmetry framing detection**: Dollar-magnitude near individual vulnerability, "army of lawyers" language, David vs Goliath constructions, fine-per-violation-could-bankrupt patterns
 
 ### `topics.py`
-- TF-IDF weighted keyword classification into 15 topic buckets
+- TF-IDF weighted keyword classification into 16 topic buckets
 - Multi-label (top 3 by confidence retained)
-- Topics: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, prediction_markets, corporate_strategy, workplace_culture, government_oversight
+- Topics: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, prediction_markets, corporate_strategy, defense_military, workplace_culture, government_oversight
 
 ## Careers Layer — Module Detail
 
@@ -405,7 +405,7 @@ mediascope/
 │   ├── test_scale_magnitude.py  # Scale/magnitude framing, raw number amplification
 │   ├── test_sentiment.py        # 8-dim scoring, framing correction, self-referential detection
 │   ├── test_source_stance.py    # Source extraction, stance, outsourced intensity, kicker framing
-│   ├── test_topics.py           # Topic classification, all 15 buckets, confidence scoring
+│   ├── test_topics.py           # Topic classification, all 16 buckets, confidence scoring
 │   ├── test_wynn_williams_fixes.py # Litigation framing, source extraction false positives, power asymmetry
 │   ├── test_virtue_ai_acquihire.py # Virtue AI entities, FAIR, BIS/CAISI, tech-jargon ironic_quotation filter
 │   ├── test_sarcastic_correction.py # Sarcastic correction framing: concede-then-retract, standalone sarcasm, false-positive exclusion
