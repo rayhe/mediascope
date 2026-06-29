@@ -4,6 +4,77 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-29 05:00 PT — Hour Type C: Ownership & Funding Deep Dive — Guardian Board Completion + Dual Google Revolving Door
+
+**Focus:** Close three documented research gaps in the Guardian profile (James Goode, Patricia Cobian, Coram Williams — all marked "background not yet confirmed") and investigate board composition. Major new finding: Anna Bateson's 7-year Google career and explicit Google-relationship mandate.
+
+**Major findings:**
+
+1. **Anna Bateson — Google → GMG CEO revolving door (NEW):**
+   - GMG CEO spent 7 years at Google/YouTube including 3 years running global consumer marketing from SF HQ
+   - Originally hired by GMG Dec 2016 as VP Platforms and Partnerships — explicit mandate to manage "existing partnerships with Facebook and Google" (InPublishing, David Pemsel quote)
+   - Also worked at Bloomberg, ITV (brand/viewer marketing), MTV (VP Marketing)
+   - Combined with Brittin: TWO former senior Google executives in GMG governance simultaneously (~2025 to Mar 2026)
+   - Densest Google→publisher governance connection in the 5-publication dataset
+
+2. **Matt Brittin upgraded from NED to Senior Independent Director:**
+   - Green Park executive search case study confirms Brittin was the SID — most senior independent governance role after Chair
+   - Recruited via global search spanning both US coasts, Continental Europe, Australia
+   - Charles Gurassa: "We successfully appointed Matt Brittin (former President of Google EMEA), as our Senior Independent Director"
+   - SID responsible for board independence oversight — structurally ironic given 18-year Google tenure
+   - SID position currently VACANT after Brittin's Mar 2026 departure to BBC DG
+
+3. **James Goode (new CFO, appointed May 2026) — fully profiled:**
+   - Group CFO and executive director of PA Media Group (UK's national news agency) for 6 years (2018-2025)
+   - Joined PA Media Group board alongside Paul Dacre (Associated Newspapers/Daily Mail Chairman & EIC)
+   - "Background in strategic investments and acquisitions across public, private and international organisations"
+   - Reports to CEO Anna Bateson, responsible for GMG's global financial strategy
+   - Replaces Keith Underwood (terminated Jan 30, 2026)
+
+4. **Patricia Cobian (NED, appointed Sep 2025) — fully profiled:**
+   - CFO of Virgin Media O2 (2021-2025, £31B joint venture, £11B annual turnover, UK's 2nd-largest integrated comms provider)
+   - Delivered £6B synergies 18 months ahead of schedule, 4.3% top-line CAGR, 10.0% operating cash flow CAGR
+   - Previously CFO of O2 UK/Telefónica UK (2016-2021), Supervisory Board of Telefónica Deutschland (2012-2020)
+   - McKinsey & Company 7 years (London, New York, Madrid, TMT & corporate finance)
+   - Hewlett-Packard (early career)
+   - Now incoming BT Group CFO (announced Jul 24, 2025, starting summer 2026, £20B+ market cap company)
+   - MSc Industrial Engineering, ICAI - Comillas Pontifical University
+   - Dual GMG NED + BT Group CFO creates telecoms→news publisher governance link
+
+5. **Coram Williams (NED, departed Jan 2026 after 9-year tenure) — fully profiled:**
+   - Career: Autocar magazine (news reporter and road tester) → Arthur Andersen (consulting, then worldwide) → Pearson Education (multiple roles including interim president Pearson Education Italia) → Penguin Group CFO (from 2008, 800-person finance team, 22 markets) → Penguin Random House CFO → Pearson plc Group CFO (2015-2020) → Adecco Group CFO (May 2020-Jan 2026, SIX: ADEN, Switzerland) → German automotive company CFO (Jan 2026+, unnamed)
+   - BA (Hons) Christ Church Oxford, MBA London Business School, WEF Agenda Contributor
+   - Adecco CEO: "We wish him all the best as he assumes a role that connects to his deep passion for cars"
+   - LinkedIn: "to return to my roots in the automotive sector in my adopted home of Germany"
+   - NED on GMG board from Jan 2017 (appointed by chair Neil Berkett) through Jan 26, 2026
+
+6. **Debbie Klein (NED, since Sep 2023) — previously undocumented board member:**
+   - Ex-Sky Group Chief Marketing, Corporate Affairs and People Officer (2018-2023, Comcast-owned)
+   - 20 years at Engine Group (CEO Europe & Asia Pacific)
+   - Also NED at Nationwide Building Society
+   - Sky/Comcast competes with Meta in streaming, news media, digital advertising
+
+7. **Board composition fully reconstructed (13 members as of Jun 2026):**
+   - 3 executive directors: Bateson (CEO), Viner (EIC), Goode (CFO)
+   - 1 General Counsel: Godsell
+   - 9 NEDs: Gurassa (Chair), Bell, Davies, Jetha, Rebuck, Sieghart, Klein, Brundrett, Cobian
+   - Net 2025-2026: +4 appointments, -4 departures, SID vacancy
+
+**Analytical significance:**
+- The dual Google revolving door (CEO + SID simultaneously during Google News AI pilot period) is the most concentrated Google→publisher governance connection in the entire 5-publication dataset
+- No other tracked publication had even ONE former senior Google executive in governance during AI content negotiations; the Guardian had TWO
+- The CEO who signed the Google AI pilot deal built her career at Google; the SID supposed to ensure independent governance was Google's most senior European executive
+- New testable hypothesis (Hypothesis 12 updated): Compare Guardian Google coverage during Bateson's tenure as CEO (Sep 2022+) vs pre-Bateson era, controlling for Brittin board overlap period
+
+**Files modified:**
+- `profiles/guardian.yaml` — +271/-41 lines: Goode, Cobian, Williams full profiles; Brittin SID upgrade; Bateson Google career; Bateson revolving door conflict entry; Klein/Brundrett entries; board composition reconstruction; updated conflict count
+
+**Tests:** 888 passing (unchanged — profile data only, no structural changes).
+
+**Sources:** Green Park case study (Brittin SID recruitment, Gurassa quote), Reuters Institute (Bateson bio, 7 years Google/YouTube), InPublishing (Cobian Sep 2025, Goode May 2026, Klein Jun 2023, Brundrett Jun 2023, Bateson Dec 2016 announcements), Editor & Publisher (Goode, Klein, Brundrett announcements), WEF Agenda Contributors (Coram Williams profile), Adecco Group PR Newswire (Williams departure Nov 2025), CFO.com (Williams automotive company), BT Group RNS/Investegate/Newsroom (Cobian BT appointment Jul 2025), PA Media Group (Goode board appointment 2018), Reuters (Cobian BT appointment), Deloitte UK (Cobian conference bio), Adweek (Bateson CEO profile), Digiday (Guardian CEO succession 2019), WAN-IFRA (Bateson bio), GlobalData (GMG executive profiles).
+
+---
+
 ## 2026-06-29 03:00 PT — Hour Type B: Journalist/Publication Research — Maxwell Zeff (104th journalist) + Nov 2025 Wired Editorial Hires
 
 **Focus:** Research and profile Maxwell Zeff, Wired's newest AI business writer, who represents the fastest four-outlet pipeline in the dataset and the third Gizmodo → Wired migration under Brian Barrett. Also added two November 2025 Wired editorial changes.
