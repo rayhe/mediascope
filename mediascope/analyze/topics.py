@@ -227,6 +227,28 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "demoralizing", "demoralized", "onboarding",
         "manager ratio", "direct reports",
     ],
+    "infrastructure_impact": [
+        "data center", "data centers", "data centre", "data centres",
+        "hyperscale", "hyperscaler", "hyperscalers",
+        "power grid", "power grids", "electricity demand",
+        "power bills", "power bill", "electricity bills",
+        "rate hike", "rate hikes", "rate increase",
+        "water usage", "water consumption", "cooling water",
+        "NIMBY", "rezoning", "rezone", "rezoned",
+        "environmental impact", "environmental concerns",
+        "community opposition", "community impact",
+        "local consumers", "local residents",
+        "tax breaks", "tax incentives", "tax abatement",
+        "construction boom", "building boom",
+        "noise pollution", "constant hum",
+        "power-hungry", "energy-hungry",
+        "megawatt", "megawatts", "gigawatt", "gigawatts",
+        "nuclear energy", "nuclear power", "nuclear plant",
+        "grid capacity", "grid strain", "grid infrastructure",
+        "cooling system", "cooling infrastructure",
+        "public opposition", "organized opposition",
+        "resource-intensive", "land use",
+    ],
 }
 
 

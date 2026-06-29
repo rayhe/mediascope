@@ -316,6 +316,21 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "sarcastic", "pushback", "unimpressed",
     "chaotic", "overburdened", "distress",
     "preoccupied", "tone-deaf", "performative",
+    # Infrastructure / community-impact emotional terms — needed for
+    # coverage of data centers, resource extraction, environmental harm,
+    # and tech-industry impact on communities. Gap discovered during MIT TR
+    # "Data centers are amazing. Everyone hates them." analysis (Jan 2026).
+    "incensed", "infuriates", "infuriated", "infuriating",
+    "eyesore", "eyesores",
+    "came gunning for", "gunning for",
+    "powerless", "powerlessness",
+    "gentrification", "gentrified", "gentrifying",
+    "dirty",
+    "shrouded in secrecy", "shrouded",
+    "skyrocketing", "skyrocketed",
+    "noisy", "constant hum",
+    "NIMBY",
+    "California billionaires",
 ]
 
 # Passive/victim vs. active/powerful framing indicators

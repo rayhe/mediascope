@@ -189,9 +189,9 @@ Journalist YAML ──→ Career Tracker ──→ Migration Detection
 - **Power asymmetry framing detection**: Dollar-magnitude near individual vulnerability, "army of lawyers" language, David vs Goliath constructions, fine-per-violation-could-bankrupt patterns
 
 ### `topics.py`
-- TF-IDF weighted keyword classification into 17 topic buckets
+- TF-IDF weighted keyword classification into 18 topic buckets
 - Multi-label (top 3 by confidence retained)
-- Topics: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, prediction_markets, corporate_strategy, defense_military, labor_market, workplace_culture, government_oversight
+- Topics: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, prediction_markets, corporate_strategy, defense_military, labor_market, workplace_culture, government_oversight, infrastructure_impact
 
 ## Careers Layer — Module Detail
 
