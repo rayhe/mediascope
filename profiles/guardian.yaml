@@ -19,7 +19,7 @@ ownership_chain:
     description: "Core operating subsidiary. Publisher of theguardian.com — one of the largest English-speaking quality news websites. UK, US (2011), Australian (2013), European (2023), and International editions."
   - name: "Guardian Media Group (GMG)"
     entity_type: "parent_company"
-    description: "Media company. CEO: Anna Bateson. CFO/COO: Keith Underwood. Sold The Observer to Tortoise Media in 2024-25. Previously also operated GMG Ventures (now Mercuri). B Corp certified since Oct 2019 (Companies House company 00094531)."
+    description: "Media company. CEO: Anna Bateson. CFO/COO: Keith Underwood (note: terminated as GMG director Jan 30, 2026 per Companies House, but may retain executive role). Sold The Observer to Tortoise Media in 2024-25. Previously also operated GMG Ventures (now Mercuri). B Corp certified since Oct 2019 (Companies House company 00094531)."
   - name: "Scott Trust Limited"
     entity_type: "holding_company"
     description: "Non-profit limited company (converted from trust in 2008). Purpose: 'to secure the financial and editorial independence of The Guardian in perpetuity and to safeguard the journalistic freedom and liberal values of The Guardian free from commercial or political interference.' Profits reinvested in journalism, not distributed. No shareholders, no corporate parent."
@@ -27,6 +27,101 @@ ownership_chain:
     entity_type: "endowment_fund"
     description: "Became independent subsidiary of Scott Trust in 2023/24 (previously part of GMG). Value: £1,245.6M as of 31 March 2025 (up from £1.01B in 2018). Investment objective: CPI + 5% annual return over 10+ years, net of fees. 10-year return: 6.3% (below 8.2% target, below 6.7% benchmark). 1-year return: 1.5% (FY2024-25). Advisors: Cardano (SAA, public markets), Cambridge Associates (private investments), Redington (environmental sustainability). Diversified across global public equity, emerging markets, PE & VC (£276M NAV, £352M committed across 28 managers), diversifiers (£47M NAV, £125M committed across 11 managers), hedge funds (reducing), credit, gold, government bonds, cash."
     source_url: "https://uploads.guim.co.uk/2025/09/11/Scott_Trust_Endowment_performance_report_24_25_%281%29.pdf"
+
+# ===================================================================
+# GMG PLC BOARD — Companies House filing history (company 00094531)
+# Significant board turnover in early 2026: 4 directors departed Jan-Mar
+# ===================================================================
+gmg_board:
+  description: >
+    Board of Guardian Media Group plc. Companies House filings show major board turnover
+    in early 2026: four directors terminated between January and March 2026, only two
+    new appointments (Patricia Cobian Sep 2025, James Goode May 2026). The departure of
+    Matthew Brittin — former Google EMEA president — to become BBC Director-General is
+    especially significant for tech-media revolving door analysis.
+  recent_changes:
+    - name: "James Richard Goode"
+      action: "appointed"
+      date: "2026-05-21"
+      filing_date: "2026-05-22"
+      notes: "New director. Background not yet confirmed — research needed."
+      source_url: "https://find-and-update.company-information.service.gov.uk/company/00094531/filing-history"
+    - name: "Matthew John Brittin"
+      action: "terminated"
+      date: "2026-03-24"
+      filing_date: "2026-03-25"
+      notes: >
+        MAJOR FINDING — TECH-MEDIA REVOLVING DOOR: Former Google EMEA President (2014-2025,
+        18 years at Google total). Appointed GMG non-executive director ~2025. Left GMG board
+        to become BBC Director-General (BBC board approved appointment Mar 23, 2026; confirmed
+        at £565,000 salary; started role from May 18, 2026). Previously also NED at Sainsbury's
+        (9 years). CBE in 2026 New Year's Honours for services to technology.
+        ANALYTICAL SIGNIFICANCE: Brittin's career trajectory — Google EMEA President → GMG
+        board → BBC Director-General — represents a direct Google→Guardian→BBC revolving door.
+        While his GMG tenure was brief (~1 year), the board connection means Google's former
+        top EMEA executive had governance oversight of the Guardian's operations (including
+        its AI licensing strategy and SPUR coalition) during a critical period when the Guardian
+        was negotiating its Google News AI pilot participation (Dec 2025). Jane Martinson
+        (Scott Trust board member) described Brittin as "razor sharp" with "real experience
+        managing the challenges of an unknown future."
+      source_urls:
+        - "https://find-and-update.company-information.service.gov.uk/company/00094531/filing-history"
+        - "https://www.prolificnorth.co.uk/news/bbc-board-confirms-former-google-exec-and-guardian-board-member-matt-brittin-will-step-into-565k-director-general-role/"
+        - "https://www.computing.co.uk/news/ex-google-executive-matt-brittin-confirmed-as-bbcs-new-director-general"
+    - name: "Rene Efraim Rechtman"
+      action: "terminated"
+      date: "2026-03-17"
+      filing_date: "2026-03-18"
+      notes: >
+        Co-founder and CEO of Moonbug Entertainment (CoComelon, Blippi, Little Baby Bum —
+        second-most subscribed YouTube channel). Danish entrepreneur. Moonbug acquired by
+        Candle Media (Kevin Mayer/Tom Staggs, backed by Blackstone) in 2021. Also board member
+        of Better Collective (digital sports media, since 2023) and previously JP/Politikens Hus.
+        Joined GMG board March 2020. 6-year tenure focused on digital transformation.
+        Career: Tradedoubler (IPO 2005) → GoViral (sold to AOL for ~$100M, 2011) → AOL BeOn
+        CEO/SVP → Maker Studios President International (Disney acquisition $500M, 2014) →
+        Disney Head of Non-Linear Media → Moonbug (founded 2018, raised $285M+).
+      source_urls:
+        - "https://find-and-update.company-information.service.gov.uk/company/00094531/filing-history"
+        - "https://en.wikipedia.org/wiki/Ren%C3%A9_Rechtman"
+        - "https://inpublishing.co.uk/articles/anders-jensen-and-ren%C3%A9-rechtman-join-guardian-board"
+    - name: "Keith Robert Underwood"
+      action: "terminated"
+      date: "2026-01-30"
+      filing_date: "2026-02-03"
+      notes: >
+        Was CFO/COO of Guardian Media Group. Quoted on the OpenAI deal (Feb 2025). Director
+        termination may indicate departure from executive role as well, or transition to
+        non-director executive position. Underwood was key to the Guardian's AI licensing
+        strategy and was the business-side counterpart to Anna Bateson (CEO). If this represents
+        a full departure, it would be a significant loss of institutional knowledge on AI
+        licensing negotiations at a critical time (Google pilot escalation, SPUR expansion).
+        Research needed: confirm whether Underwood retained any executive role post-Jan 2026.
+      source_url: "https://find-and-update.company-information.service.gov.uk/company/00094531/filing-history"
+    - name: "Coram Williams"
+      action: "terminated"
+      date: "2026-01-26"
+      filing_date: "2026-01-28"
+      notes: >
+        Background not yet fully confirmed. Companies House filing only. Departed 4 days before
+        Keith Underwood. The near-simultaneous departure of two directors in late January 2026
+        may indicate a planned board restructuring or governance change.
+      source_url: "https://find-and-update.company-information.service.gov.uk/company/00094531/filing-history"
+    - name: "Patricia Cobian"
+      action: "appointed"
+      date: "2025-09-29"
+      filing_date: "2025-10-02"
+      notes: "New director. Background not yet confirmed — research needed."
+      source_url: "https://find-and-update.company-information.service.gov.uk/company/00094531/filing-history"
+  analytical_notes: >
+    BOARD TURNOVER SIGNIFICANCE: Four directors departed GMG board between Jan 26 and Mar 24,
+    2026. This represents significant governance churn during a period of critical AI negotiations
+    (Google pilot launched Dec 2025, SPUR expansion Jun 2026, UK CMA ruling Jun 2026). The
+    Brittin departure is analytically most important: he bridged Google and GMG governance for
+    ~1 year, overlapping with the Guardian's Google News AI pilot launch. His subsequent
+    appointment as BBC DG extends the Google→media governance revolving door to the UK's largest
+    public broadcaster. Rechtman's departure removes digital entertainment expertise (Moonbug,
+    Disney). Underwood's departure may affect AI licensing negotiation continuity.
 
 scott_trust_board:
   description: "Board of Scott Trust Limited. 14 members as of mid-2025. Notably includes media-tech executives alongside journalists, historians, lawyers, and publishing professionals."
@@ -284,12 +379,16 @@ revenue_relationships:
       Infobae, Kompas, Times of India, and The Washington Examiner. The program tests AI-powered
       article overviews on participating publications' Google News pages and in Google's Gemini
       chatbot. Google pays publishers directly for participation.
-      As of June 25-26, 2026 (The Information, MediaPost, NY Post reporting): Google is now
-      pushing participating publishers to agree to BROADER content-use terms, potentially
+      As of June 25-29, 2026 (The Information, MediaPost, NY Post, Inshorts reporting): Google
+      is now pushing participating publishers to agree to BROADER content-use terms, potentially
       including rights to train AI models on publisher content. Publishers who don't join will
-      eventually lose Google Showcase annual payments when Google ends that program. Jason Kint
-      (DCN CEO) criticized Google for bundling the AI training opt-out with Search opt-out:
-      "If you're opting out of Search, then you're opting out of the internet."
+      eventually lose Google Showcase annual payments — Google told some companies Showcase is
+      being ENDED. Jason Kint (DCN CEO) criticized Google: "This is Google's game. They're
+      gonna dominate here. There's no fair deal discussions that can happen with Google. It's
+      really a matter of how much money they want to drop on an individual organization."
+      Google spokesperson told NY Post: "As people's news preferences change, we've been
+      expanding our partnerships through our News AI pilot program, working with a wide range
+      of publishers to explore how AI can drive more engaged audiences."
       This transforms the Guardian's relationship with Google from purely advertising to a
       COMPOUND relationship: advertising + AI content licensing + potential AI training rights.
       The Guardian simultaneously participates in this Google AI pilot AND co-founded the SPUR
@@ -301,6 +400,7 @@ revenue_relationships:
       - "https://techcrunch.com/2025/12/18/google-is-testing-ai-powered-article-overviews-on-select-publications-google-news-pages/"
       - "https://www.mediapost.com/publications/article/402918/google-eyes-broader-publisher-licensing.html"
       - "https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/"
+      - "https://www.inshorts.com/en/news/google-asks-publishers-to-share-their-work-to-train-ai-or-risk-losing-payouts-report-1751156209310"
     notes: >
       STRATEGIC TENSION: Guardian is now in FOUR separate AI-related financial relationships:
       (1) OpenAI licensing (Feb 2025), (2) ProRata AI licensing (~2025), (3) Google News AI
@@ -349,6 +449,72 @@ gmg_ventures_mercuri:
       source_urls:
         - "https://www.ft.com/content/faculty-accenture-acquisition-2026"
         - "https://www.theguardian.com/politics/2020/may/04/how-a-small-ai-company-faculty-helped-uk-government-with-covid-19"
+    - name: "Human Native"
+      status: "EXITED — acquired by Cloudflare (NYSE: NET), Jan 15, 2026"
+      description: >
+        AI data marketplace connecting content creators/publishers with AI developers. Founded
+        2024 by Dr. James Smith (CEO) and Jack Galilee. Team included DeepMind, Google, Figma,
+        and Bloomberg veterans. Raised £2.8M seed round (May 2024), co-led by Mercuri and
+        LocalGlobe. Total raised $3.56M per Tracxn. Deal size undisclosed.
+        PURPOSE: Enabled creators to control, price, and monetize how their content is used
+        for AI training — making it discoverable, structureable, and purchasable through
+        transparent channels. Cloudflare acquired to build tools for AI content discovery
+        and licensing at internet scale.
+        Alan Hudson (Mercuri founding GP): "At Mercuri, we invest at the intersection of media
+        and AI, and Human Native has embodied this thesis from the outset. When we first invested
+        two years ago, we believed there was a clear need to reward creators fairly for their
+        data and to enable AI to progress with high-quality, ethically sourced data."
+      conflict_relevance: >
+        MODERATE-HIGH: Directly relevant to AI content licensing — the exact issue at the heart
+        of the Guardian's SPUR coalition, OpenAI deal, and Google News AI pilot. Mercuri invested
+        in a company building AI content marketplace infrastructure, then Cloudflare acquired it
+        to power AI content licensing at scale. This means the Guardian's VC arm had a financial
+        stake in building the plumbing of the AI-publisher licensing ecosystem while the Guardian
+        itself was negotiating its own AI licensing deals. The Human Native exit likely generated
+        returns for Mercuri Fund II (£2.8M seed investment in May 2024 → Cloudflare acquisition
+        Jan 2026, ~20 month hold).
+      source_urls:
+        - "https://www.cloudflare.com/press-releases/2026/cloudflare-strengthens-content-offering-to-ai-companies-with-acquisition-of-human-native/"
+        - "https://siliconangle.com/2026/01/15/cloudflare-buys-human-native-strengthen-licensed-data-access-ai-developers/"
+        - "https://finsmes.com/2026/01/cloudflare-acquires-human-native.html"
+        - "https://harbottle.com/news/harbottle-lewis-advises-mercuri-on-its-co-lead-investments-in-human-native-ai-and-ittybit/"
+    - name: "Streetbees"
+      status: "DISTRESSED EXIT — filed for administration Aug 2025; PitchBook lists exit Aug 25, 2025"
+      description: >
+        AI consumer insights platform. Founded 2015 (UK). Raised $56M total including $40M
+        Series B at $200M valuation. Investors: Atomico, Lakestar, LocalGlobe, Octopus Ventures,
+        Business Growth Fund. Worked with L'Oreal, Heineken, Unilever, Intel. Filed notice of
+        intention to appoint administrators Aug 2025 (court filings via Caseboard, reported by
+        Sifted). Sky News reported a buyer was being lined up. Headcount dropped from 314
+        employees (Oct 2021) to 139 (Jul 2025). PitchBook classifies as "exit" but this was
+        a distressed sale/administration, not a profitable exit. Mercuri was a minor co-investor
+        (not lead); primary investors were Atomico and Lakestar.
+      conflict_relevance: >
+        LOW: Consumer research platform with no direct AI-publisher or tech-platform relevance.
+        Distressed exit unlikely to have generated positive returns. Not analytically significant
+        for media-conflicts analysis.
+      source_urls:
+        - "https://sifted.eu/articles/streetbees-administrators/"
+        - "https://pitchbook.com/profiles/mercuri-london/investments"
+    - name: "Papercup"
+      status: "EXITED — IP acquired by RWS Holdings plc (AIM: RWS.L), Jun 26, 2025"
+      description: >
+        AI dubbing technology specialist. Breakthrough voice synthesis that replicates a
+        speaker's tone, pace, and emotion. Editorial tools for human language specialists to
+        fine-tune output. Deal size undisclosed. NOTE: RWS acquired only the intellectual
+        property, not the company itself — suggesting Papercup may have been in financial
+        difficulty. RWS integrated the technology into Language Weaver (neural machine
+        translation) and Trados platform. RWS CEO Ben Faes: "The acquisition of Papercup's
+        market-leading technology marks our intention to transform all forms of enterprise
+        content." RWS is a content solutions company (AIM-listed, headquarters Maidenhead UK)
+        with 1,800 in-house linguists and 40,000+ language experts globally.
+      conflict_relevance: >
+        LOW: Voice synthesis / content localization technology. No direct overlap with AI-publisher
+        licensing or tech-platform competition. IP-only acquisition suggests modest returns.
+      source_urls:
+        - "https://www.lse.co.uk/rns/RWS/acquisition-of-ip-of-papercup-ub2w8iy5p6dly2v.html"
+        - "https://www.businesswire.com/news/home/20250626rws-acquires-papercup-ip"
+        - "https://rws.com/newsroom/rws-acquires-papercup-ip/"
     - name: "Signal AI"
       status: "PARTIAL EXIT — Battery Ventures acquired majority stake for $165M (Sept 2025). Mercuri retains minority position."
       description: >
@@ -435,20 +601,32 @@ spur_coalition:
 uk_cma_google_ruling:
   description: >
     UK Competition and Markets Authority (CMA) designated Google with "strategic market status"
-    under the Digital Markets Competition Regime (June 2, 2026). New conduct requirements imposed
+    under the Digital Markets Competition Regime (June 2-4, 2026). New conduct requirements imposed
     on Google Search, giving publishers more control and stronger bargaining power:
     (1) Publishers can opt out of having their content used in AI Overviews and AI Mode
-        (separate from opting out of traditional Search — previously bundled together)
+        via a NEW TOGGLE in Google's Search Console (testing with UK subset first, then global)
+        — separate from opting out of traditional Search (previously bundled together)
     (2) Google required to properly attribute content from publishers in AI-generated search results
-        using clear links
-    (3) Google to increase number of links in AI responses
-    (4) Google to roll out new publisher insights about AI feature usage
+        using clear links; Google increased inline links within AI responses and added website
+        previews to encourage click-through
+    (3) Google to roll out new publisher insights about AI feature usage
+    CMA Chief Executive Sarah Cardell: "Today, we have introduced a world-first requirement on
+    Google's search services in the UK, enabling fair treatment, greater transparency and meaningful
+    choice for businesses and consumers."
+    Google's Mrinalini Loew (GM of Search Ecosystem): "Today, we're beginning to test a new control
+    that lets website owners manage how their links and content appear in generative AI Search
+    features."
+    CMA measures also apply to Google's May 2026 major Search changes that further embedded AI.
+    AI Overviews: 2.5B monthly active users; AI Mode: 1B+ monthly users (per Google).
     This is significant for the Guardian: it provides regulatory backing for the Guardian's
     SPUR-based negotiating position on AI content rights, while potentially conflicting with the
     Guardian's participation in Google's News AI pilot (which gives Google broad content-use rights).
   date: "2026-06-02"
   source_urls:
     - "https://reuters.com/technology/google-must-let-uk-publishers-opt-out-ai-search-under-new-rules-2026-06-02/"
+    - "https://www.computerweekly.com/news/366625518/Publishers-can-now-opt-out-of-Google-AI-summaries-and-training"
+    - "https://techcrunch.com/2026/06/03/publishers-will-be-able-to-opt-out-of-ai-search-thanks-to-new-regulation/"
+    - "https://techxplore.com/news/2026-06-uk-google-publishers-opt-ai.html"
   notes: >
     STRATEGIC CONTEXT: The CMA ruling creates a regulatory floor that benefits the Guardian
     both as a SPUR founding member (collective bargaining leverage) and as an individual publisher
@@ -509,8 +687,8 @@ editorial_leadership:
     start: "~2023"
     editorial_stance: "Business-side leader. Drove record revenue growth, SPUR coalition founding, OpenAI licensing deal, Observer sale to Tortoise Media. Quoted: 'Welcoming 30 new members gives SPUR the scale required to turn its mission into a global mandate.'"
   - name: "Keith Underwood"
-    title: "Chief Financial and Operating Officer"
-    notes: "Quoted on OpenAI deal: 'This new partnership with OpenAI reflects the intellectual property rights and value associated with our award-winning journalism.' Manages licensing strategy alongside Robert Hahn (Director of Business Affairs & Licensing)."
+    title: "Chief Financial and Operating Officer (NOTE: terminated as GMG director Jan 30, 2026 per Companies House — may have departed executive role)"
+    notes: "Quoted on OpenAI deal: 'This new partnership with OpenAI reflects the intellectual property rights and value associated with our award-winning journalism.' Manages licensing strategy alongside Robert Hahn (Director of Business Affairs & Licensing). Director termination filed at Companies House Feb 3, 2026. Status of executive role post-Jan 2026 unconfirmed."
 
 key_journalists:
   - name: "Alex Hern"
@@ -632,6 +810,57 @@ known_conflicts:
     source_urls:
       - "https://pressgazette.co.uk/publishers/tortoise-media-series-a-funding/"
       - "https://find-and-update.company-information.service.gov.uk/company/11721596"
+  - type: "revolving_door"
+    description: >
+      MATTHEW BRITTIN — GOOGLE → GMG → BBC REVOLVING DOOR: Matt Brittin served as Google's
+      EMEA President for 10 years (2014-2025, 18 years total at Google), then joined the GMG
+      board as a non-executive director (~2025), then left the GMG board (Mar 24, 2026) to
+      become BBC Director-General (confirmed at £565K salary, started May 18, 2026). His GMG
+      board tenure (~1 year) overlapped with: (1) Guardian's Google News AI pilot launch (Dec
+      2025), (2) SPUR coalition founding (Feb 2026), (3) OpenAI licensing deal (already in place
+      from Feb 2025). This means Google's former top EMEA executive had GOVERNANCE OVERSIGHT
+      of the Guardian during the period when it was negotiating AI content deals with Google,
+      OpenAI, and co-founding a publisher coalition against AI companies. Brittin's subsequent
+      appointment as BBC DG extends the revolving door to the UK's largest public broadcaster,
+      creating a Google→Guardian→BBC governance pathway. No evidence of direct interference,
+      but the structural conflict of interest is clear: a Google executive who spent 18 years
+      driving Google's European advertising and content strategy was simultaneously on the board
+      of a major publisher negotiating AI content terms with Google.
+    severity: 2
+    evidence: >
+      Companies House GMG filing (TM01, Mar 25, 2026). BBC board confirmation (Mar 23, 2026).
+      Prolific North, Computing.co.uk, Reuters, The Times, Financial News reporting. Better
+      Collective board bio confirms "board member of The Guardian." Jane Martinson (Scott Trust
+      board member): Brittin is "razor sharp" with "real experience managing the challenges of
+      an unknown future."
+    source_urls:
+      - "https://find-and-update.company-information.service.gov.uk/company/00094531/filing-history"
+      - "https://www.prolificnorth.co.uk/news/bbc-board-confirms-former-google-exec-and-guardian-board-member-matt-brittin-will-step-into-565k-director-general-role/"
+      - "https://www.computing.co.uk/news/ex-google-executive-matt-brittin-confirmed-as-bbcs-new-director-general"
+      - "https://www.bettercollective.com/about/board-of-directors/rene-rechtman"
+  - type: "investment"
+    description: >
+      HUMAN NATIVE / CLOUDFLARE EXIT — AI CONTENT LICENSING CONFLICT: Mercuri co-led a £2.8M
+      seed investment in Human Native (May 2024), an AI data marketplace that enables content
+      creators to control, price, and monetize AI use of their content. Cloudflare (NYSE: NET)
+      acquired Human Native on Jan 15, 2026 (undisclosed price). Human Native's mission —
+      building infrastructure for AI content licensing — is DIRECTLY aligned with the Guardian's
+      SPUR coalition objectives and its own AI licensing strategy (OpenAI, ProRata, Google pilot).
+      This means the Guardian's VC arm had a FINANCIAL STAKE in building AI content licensing
+      infrastructure while the Guardian itself was simultaneously negotiating its own AI content
+      deals and co-founding a publisher coalition to shape AI licensing standards. Mercuri
+      founding GP Alan Hudson: "At Mercuri, we invest at the intersection of media and AI,
+      and Human Native has embodied this thesis from the outset." The Cloudflare acquisition
+      likely generated returns for Mercuri Fund II (~20 month hold from seed to exit).
+    severity: 2
+    evidence: >
+      Cloudflare press release (Jan 15, 2026). SiliconANGLE, Mediabrief, FinSMEs reporting.
+      Harbottle & Lewis (Mercuri's law firm) confirmed co-lead investment. Tracxn data: $3.56M
+      total raised. PitchBook exit data (Jan 15, 2026).
+    source_urls:
+      - "https://www.cloudflare.com/press-releases/2026/cloudflare-strengthens-content-offering-to-ai-companies-with-acquisition-of-human-native/"
+      - "https://siliconangle.com/2026/01/15/cloudflare-buys-human-native-strengthen-licensed-data-access-ai-developers/"
+      - "https://harbottle.com/news/harbottle-lewis-advises-mercuri-on-its-co-lead-investments-in-human-native-ai-and-ittybit/"
   - type: "google_ai_pilot"
     description: >
       CRITICAL NEW FINDING (Jun 2026): Guardian is an INITIAL PARTNER in Google's News AI pilot
@@ -841,18 +1070,33 @@ notes: |
       pilot initial partners AND have OpenAI relationships. Does their coverage of Google differ
       systematically from non-pilot publications? The Guardian is the only one of the 5 tracked
       publications in the Google pilot.
+  12. NEW (Jun 29): Did the Guardian's coverage of Google change during Brittin's GMG board
+      tenure (~2025 to Mar 2026)? A former Google EMEA President with governance oversight of the
+      Guardian during its Google News AI pilot launch creates a natural experiment: compare
+      Guardian Google coverage during vs. before Brittin's board tenure. Confounding: multiple
+      simultaneous changes (Google pilot launch, SPUR founding, CMA proceedings) make causal
+      attribution difficult, but the temporal overlap is testable.
+  13. NEW (Jun 29): How does the Guardian's Mercuri portfolio (especially Human Native's mission
+      of AI content licensing) create an editorial blind spot? Does the Guardian cover Cloudflare's
+      AI content marketplace strategy differently from competitors' AI licensing infrastructure?
+      Human Native's Cloudflare acquisition was covered by SiliconANGLE, Mediabrief, Computing.co.uk
+      — but did the Guardian itself cover this exit of its own VC arm's portfolio company?
 
   Research note: Bunz & Braghieri 2021 found Guardian had only 29% positive AI coverage vs 49% for WSJ,
   making it still useful as benchmark for editorial AI skepticism independent of ownership conflicts.
 
-  UPDATED CONFLICT COUNT (Jun 28, 2026):
+  UPDATED CONFLICT COUNT (Jun 29, 2026):
   The Guardian now has FOUR AI-related financial relationships (OpenAI, ProRata, Google News AI
-  pilot, SPUR). This is one fewer than The Atlantic (OpenAI + OpenAI Labs + NewsGuard + io exit +
-  Apple stock) but represents a qualitative shift from the Guardian's previous "clean control"
-  status. The key difference: Guardian's conflicts are all licensing/content-access deals with
-  no equity positions in Meta competitors, while Atlantic/Wired have direct equity investments
-  ($16B Apple stock, $7B Reddit stake). Guardian's conflicts are structurally diffuse; Atlantic's
-  and Wired's are structurally concentrated.
+  pilot, SPUR), TWO new structural conflicts (Brittin revolving door, Human Native AI licensing
+  exit), and significant GMG board turnover (4 departures Jan-Mar 2026). The Brittin finding is
+  analytically novel: no other tracked publication had a former Google executive on its governing
+  board during the Google News AI pilot negotiation period. The Human Native exit connects the
+  Guardian's VC arm directly to AI content licensing infrastructure — the exact domain where the
+  Guardian is simultaneously negotiating as a publisher and standard-setting as a SPUR founder.
+  The key difference from other publications: Guardian's conflicts are all licensing/content-access
+  deals with no equity positions in Meta competitors, while Atlantic/Wired have direct equity
+  investments ($16B Apple stock, $7B Reddit stake). Guardian's conflicts are structurally diffuse;
+  Atlantic's and Wired's are structurally concentrated.
 
 editorial_history:
   leadership_changes:
