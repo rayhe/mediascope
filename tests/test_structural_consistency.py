@@ -299,6 +299,35 @@ class TestTestFileListingConsistency:
         )
 
 
+    def test_readme_per_file_test_counts(self):
+        """README.md per-file test counts must match actual test function counts."""
+        readme = (_REPO_ROOT / "README.md").read_text()
+        tests_dir = _REPO_ROOT / "tests"
+        # Parse README table: | `test_foo.py` | 42 | description |
+        readme_counts = {}
+        for m in re.finditer(r"\| `(test_\w+\.py)` \| (\d+) \|", readme):
+            readme_counts[m.group(1)] = int(m.group(2))
+        assert readme_counts, "No per-file test counts found in README.md table."
+        mismatches = []
+        # Split pattern to avoid self-matching when scanning this file
+        _TEST_FUNC = "def " + "test_"
+        for filename, claimed in sorted(readme_counts.items()):
+            path = tests_dir / filename
+            if not path.exists():
+                continue  # phantom-file guard handles this
+            content = path.read_text()
+            actual = content.count(_TEST_FUNC)
+            if actual != claimed:
+                mismatches.append(
+                    f"  {filename}: README says {claimed}, actual {actual}"
+                )
+        assert not mismatches, (
+            "README.md per-file test counts are stale:\n"
+            + "\n".join(mismatches)
+            + "\nUpdate the test count column in the README.md Testing table."
+        )
+
+
 class TestVotingPowerConsistency:
     """Guard: stale Advance/Reddit voting power (33.5%) is purged from all docs."""
 
