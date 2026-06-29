@@ -1,0 +1,21 @@
+Meta denied face scanning tech on AI smartglasses, and then silently wiped the evidence
+
+Meta's face-recognition history returns to haunt its AI smart glasses ambitions
+
+Meta's smart glasses privacy problem has taken another turn. After WIRED found inactive face-identification references inside the Meta AI app, the same code has now reportedly vanished in a follow-up app update.
+
+Meta's smart glasses app carried traces of face-ID work
+
+The code was reportedly connected to an internal effort called "NameTag." WIRED found that the system was not switched on for users, but its presence suggested Meta had gone beyond a loose concept and had started testing how face identification might work inside its smart glasses ecosystem.
+
+According to WIRED, the dormant system appeared to process faces into on-device identifiers that could be matched with previously saved information. That is still different from a public launch of facial recognition on Ray-Ban Meta smart glasses, but it shows why the discovery has drawn attention.
+
+The issue is more sensitive because this was not hidden in a research demo or developer-only build. It surfaced in the app ordinary smart glasses owners interact with. For a camera-equipped wearable meant to be worn in public spaces, even inactive face-recognition references are enough to raise questions about consent and how much users actually know about what is being tested behind the scenes.
+
+Civil rights groups were already sounding the alarm
+
+This was not the first warning sign around Meta's smart glasses ambitions. It was previously reported that civil rights groups were unhappy about Meta's reported plans to bring facial recognition to its AI glasses. Civil rights advocates argued that a feature capable of identifying people through wearable cameras could create privacy risks for bystanders who never agreed to be scanned, while also expanding the reach of surveillance in everyday public settings.
+
+That concern has only grown sharper after the code removal. Meta communications executive Andy Stone told WIRED that the feature was part of a pilot and that the company had not decided whether to use it. That may explain why the feature was not live, but it does not answer why face-ID code appeared in an app built for regular smart glasses owners.
+
+Meta's history with the technology also makes this harder to brush aside. In 2021, Facebook said it was shutting down its face-recognition system and deleting facial recognition templates for more than a billion users, citing privacy and regulatory concerns. The latest report does not prove facial recognition is coming to Meta glasses soon. But when dormant face-ID code appears in a consumer app and then disappears after being reported, it becomes harder to treat Meta's interest as purely theoretical.

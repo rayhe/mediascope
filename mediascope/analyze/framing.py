@@ -2753,6 +2753,140 @@ _EDITORIAL_DEFLATION_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["editorial_deflation"] = _EDITORIAL_DEFLATION_PATTERNS
 
 
+# ---------------------------------------------------------------------------
+# Denial contradiction: editorial device where a source's direct denial or
+# minimization is juxtaposed against evidence that contradicts it.  The
+# journalist quotes the denial, then within a short window presents code
+# evidence, document evidence, or factual reporting that shows the denial
+# was false or misleading.  This is one of the most powerful framing
+# techniques in investigative journalism because it lets the source
+# discredit themselves without the journalist having to editorialize.
+#
+# Distinct from:
+# - hypocrisy_frame: catches "say one thing, do another" across stated
+#   policy vs. actual behavior over time
+# - corporate_reassurance_undercut: catches PR language ("carefully designed",
+#   "committed to safety") being undermined
+# - refusal_amplification: catches repeated refusals to answer
+#
+# denial_contradiction specifically catches:
+# 1. Direct denial quotes contradicted by evidence in the same passage
+# 2. "does not exist" / "merely exploratory" / "no final decision" language
+#    followed by code/document/analysis evidence
+# 3. Combative pushback ("misleading", "dishonest") followed by proof
+#
+# Identified as critical gap in:
+# - Wired NameTag removal (Jun 8, 2026): "the feature does not exist" (Stone)
+#   → contradicted by code analysis showing fully built system
+# - Wired NameTag removal: "incredibly misleading" and "absolutely dishonest"
+#   (Bosworth) → Meta removed the code the next day
+# - Wired NameTag initial (Jun 5, 2026): "No final decision has been made"
+#   → code libraries explicitly named for face recognition already in app
+# - Digital Trends NameTag coverage (Jun 9, 2026): "part of a pilot" /
+#   "had not decided whether to use it" → code appeared in consumer app
+# ---------------------------------------------------------------------------
+_DENIAL_CONTRADICTION_PATTERNS: list[re.Pattern] = [
+    # Direct "does not exist" / "is not real" / "is purely exploratory"
+    # denial near evidence markers (found, revealed, showed, analysis)
+    re.compile(
+        r"(?:\"[^\"]*?"
+        r"(?:does not exist|doesn.?t exist|is not (?:a |an )?(?:real|actual|live|active)|"
+        r"purely (?:exploratory|theoretical|hypothetical|conceptual)|"
+        r"merely (?:evidence|exploratory|an? exploration)|"
+        r"no final decision|not (?:yet )?(?:been )?(?:decided|determined|finalized)|"
+        r"not building|not developing|no plans? to)"
+        r"[^\"]*?\")"
+        r".{5,400}?"
+        r"\b(?:found|revealed|showed|discovered|uncovered|confirmed|"
+        r"analysis|investigation|code|evidence|documents?|data|"
+        r"report(?:ed|ing)?|according to)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Combative denial ("misleading", "dishonest", "inaccurate", "false")
+    # followed by evidence that supports the original claim.
+    # Handles both full quoted sentences and short quoted fragments
+    # ("incredibly misleading" or "absolutely dishonest").
+    re.compile(
+        r"\b(?:called|described|labeled|termed|characterized|dismissed)\b"
+        r".{0,60}?"
+        r"(?:\"[^\"]*?"
+        r"(?:misleading|dishonest|inaccurate|false|untrue|"
+        r"irresponsible|reckless|unfounded|baseless|unfair|"
+        r"mischaracteriz|misrepresent)"
+        r"[^\"]*?\")"
+        r".{5,600}?"
+        r"\b(?:removed|stripped|deleted|pulled|eliminated|"
+        r"the (?:code|feature|system|data|software)|"
+        r"the (?:next|following|very next) (?:day|morning|update|version)|"
+        r"removes? (?:nearly )?all traces|"
+        r"however|but|yet|in fact|nonetheless|nevertheless|"
+        r"contradicting|confirming|proving|showing)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Evidence first, then denial — reverse order where the journalist
+    # presents findings and then quotes the denial, making it land as
+    # implausible.  "WIRED found/reported/revealed X... [source] said/called
+    # it 'denial'"
+    re.compile(
+        r"\b(?:found|revealed|reported|discovered|showed|uncovered|"
+        r"identified|detected|confirmed)\b"
+        r".{10,300}?"
+        r"(?:said|told|called|described|dismissed|characterized)\s+"
+        r"(?:the|it|this|that|these|those|WIRED.s|the (?:report|finding|investigation))"
+        r".{0,60}?"
+        r"(?:\"[^\"]*?"
+        r"(?:does not exist|doesn.?t exist|misleading|dishonest|"
+        r"purely exploratory|merely|not (?:a )?real|no (?:final )?decision|"
+        r"not building|not developing)"
+        r"[^\"]*?\")",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "had not decided whether to" / "part of a pilot" / "exploring"
+    # near "but" / "does not answer" / "does not explain" —
+    # catches softer minimization language being editorially undercut.
+    # Handles both direct quotes and indirect speech (no quote marks).
+    re.compile(
+        r"(?:\"[^\"]*?"
+        r"(?:part of a (?:pilot|test|experiment|trial)|"
+        r"had not (?:yet )?decided|"
+        r"still (?:exploring|evaluating|considering|assessing)|"
+        r"no (?:final |firm |definitive )?(?:decision|timeline|commitment)|"
+        r"thinking through|weighing|under consideration)"
+        r"[^\"]*?\")"
+        r".{5,250}?"
+        r"\b(?:does not (?:answer|explain|address|account for)|"
+        r"doesn.?t (?:answer|explain|address|account for)|"
+        r"but|however|yet|"
+        r"harder to (?:brush aside|dismiss|ignore|accept)|"
+        r"raises? (?:questions?|concerns?|doubts?))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Indirect-speech variant: "told X that [minimization]... but/however"
+    # For articles that paraphrase rather than directly quote the denial.
+    re.compile(
+        r"\b(?:told|said|stated|added|insisted|maintained|stressed)\b"
+        r".{0,40}?"
+        r"\b(?:that\s+)?"
+        r"(?:the feature was (?:part of|purely|merely|only)|"
+        r"(?:had|have|has) not (?:yet )?(?:decided|determined|finalized|made)|"
+        r"(?:was|were|is|are) (?:still |merely |purely )?"
+        r"(?:exploratory|exploring|evaluating|considering|"
+        r"experimental|a (?:pilot|test|experiment))|"
+        r"no (?:final |firm |definitive )?decision)\b"
+        r".{5,300}?"
+        r"\b(?:does not (?:answer|explain|address|account for)|"
+        r"doesn.?t (?:answer|explain|address|account for)|"
+        r"but|however|yet|"
+        r"harder to (?:brush aside|dismiss|ignore|accept)|"
+        r"raises? (?:questions?|concerns?|doubts?)|"
+        r"when .{5,80}? (?:appears?|surfaces?|disappears?|vanish))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+
+_DEVICE_PATTERNS["denial_contradiction"] = _DENIAL_CONTRADICTION_PATTERNS
+
+
 def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
     """Detect analogy stacking — 3+ distinct analogies for the same subject.
 
@@ -3079,8 +3213,8 @@ def _detect_social_proof_amplification(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 33 pattern-matched device types plus 5 structural
-    post-pass types (38 total).
+    Scans for 34 pattern-matched device types plus 5 structural
+    post-pass types (39 total).
 
     Pattern-matched (33): guilt_by_association, anonymous_authority,
     catastrophizing, false_balance, selective_omission_signal,

@@ -4,6 +4,41 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-29 02:00 PT — Hour Type A: Article Deep Dive — Digital Trends NameTag Cross-Outlet + `denial_contradiction` Device
+
+**Focus:** Cross-outlet comparison of Digital Trends vs. Wired coverage of Meta NameTag facial recognition removal. Implemented new `denial_contradiction` framing device type to close critical toolkit gap.
+
+**Article analyzed:** Digital Trends, "Meta denied face scanning tech on AI smartglasses, and then silently wiped the evidence" (~Jun 9, 2026) — secondary report covering Wired's NameTag investigation.
+
+**New framing device: `denial_contradiction`**
+- 5 regex patterns: direct "does not exist" denials near evidence, combative pushback ("misleading"/"dishonest") near removal evidence, reverse evidence→denial order, soft minimization ("part of a pilot") editorially undercut, and indirect-speech variant for paraphrased denials.
+- Cross-validated: 3 instances in Wired article (Pattern 0 ×2, Pattern 1 ×1), 1 instance in Digital Trends (Pattern 4).
+- Distinct from: hypocrisy_frame (behavior over time), corporate_reassurance_undercut (PR language), refusal_amplification (refusals to answer).
+- Closes the `contradiction_frame` gap identified in the original Wired NameTag analysis.
+
+**Counts updated:** 33→34 pattern-based, 38→39 total across all documentation (METHODOLOGY.md, ARCHITECTURE.md, AGENT_GUIDE.md, cli.py, README.md) and structural consistency tests.
+
+**Cross-outlet findings:**
+- Wired (primary investigator): 3 denial_contradictions, 5 refusal_amplifications, tone -0.60. Builds case from forensic evidence + direct corporate confrontation.
+- Digital Trends (secondary reporter): 1 denial_contradiction, 0 refusal_amplifications, tone -0.45. Compensates with hotter headline ("silently wiped the evidence") and historical precedent (2021 face-recognition shutdown).
+- Framing density: Wired 1 per 34 words vs DT 1 per 54 words (~60% higher for primary investigator).
+
+**Files modified:**
+- `mediascope/analyze/framing.py` — `denial_contradiction` patterns (5 regexes) + `_DEVICE_PATTERNS` registration
+- `docs/METHODOLOGY.md` — Extended Devices table row, 38→39 taxonomy count
+- `docs/ARCHITECTURE.md` — Extended 23→24, denial_contradiction description
+- `docs/AGENT_GUIDE.md` — Extended 23→24
+- `mediascope/cli.py` — 38→39
+- `tests/test_nyt_ai_reviews.py` — Added `denial_contradiction` to expected types
+- `tests/test_structural_consistency.py` — Updated all count assertions (38→39, 33→34), extended staleness guards through 38-type
+- `examples/sample_output/digitaltrends_meta_nametag_removal_2026_06_09_article.txt` — Article text
+- `examples/sample_output/digitaltrends_meta_nametag_removal_2026_06_09_analysis.md` — Full cross-outlet analysis
+- `examples/sample_output/wired_meta_nametag_removal_2026_06_08_analysis.md` — Updated with RESOLVED annotations
+
+**Tests:** 888 passing (unchanged count — no new test file this iteration, but structural guards updated).
+
+---
+
 ## 2026-06-28 21:00 PT — Hour Type D: Toolkit Quality & Documentation — Doc-Code Drift Fixes, 6 New Structural Guards
 
 **Focus:** Systematic audit of documentation-code consistency, discovering and fixing three categories of drift missed by existing structural guards, then adding 6 new tests to prevent recurrence.

@@ -28,7 +28,7 @@
 
 **Source authority framing (-0.40 manual vs 0.60 toolkit):** The toolkit scores 0.60 (high authority) because both sources are named and credentialed. But the sources are DEPLOYED defensively — Meta's VP of communications and CTO are both defending/minimizing, and the article immediately contradicts both with forensic evidence. The authority score measures source quality, not how the authority is used editorially. When high-authority sources are quoted primarily to be contradicted, the authority framing should be negative.
 
-**Comparative framing (-0.60 manual vs 0.00 toolkit):** The article's central technique is comparing Meta's statements against its own code. "The feature does not exist" vs. code removal the next day. "No final decision" vs. fully built system. This is a **contradiction-frame** — the most powerful framing device in the article — and the toolkit has no detector for it.
+**Comparative framing (-0.60 manual vs 0.00 toolkit):** The article's central technique is comparing Meta's statements against its own code. "The feature does not exist" vs. code removal the next day. "No final decision" vs. fully built system. This is a **contradiction-frame** — the most powerful framing device in the article. ~~The toolkit has no detector for it.~~ **RESOLVED (Jun 29, 2026):** Implemented as `denial_contradiction` device type. Now detects 3 instances in this article: Pattern 0 ×2 ("does not exist" + evidence) and Pattern 1 ("misleading"/"dishonest" + removal evidence). Cross-validated against Digital Trends secondary coverage (1 instance, Pattern 4). See `digitaltrends_meta_nametag_removal_2026_06_09_analysis.md`.
 
 ---
 
@@ -59,7 +59,7 @@
 | loaded_language | 9 | ✅ Detected | "quietly" (×2), "unreleased," "stalkers," "dormant," face-recognition terms |
 | refusal_amplification | 5 | ✅ Detected | "declined to answer," "did not respond" (×3), "did not answer" |
 | timeline_implication | 1 | ✅ Detected | "day after WIRED revealed" |
-| **contradiction_frame** | **3** | ❌ MISSED | **See below** |
+| **contradiction_frame** | **3** | ✅ NOW DETECTED | **Implemented as `denial_contradiction` (Jun 29).** Pattern 0 ×2 + Pattern 1 ×1. See cross-outlet comparison in `digitaltrends_meta_nametag_removal_2026_06_09_analysis.md`. |
 | **defensive_combativeness** | **2** | ❌ MISSED | Bosworth: "incredibly misleading," "absolutely dishonest" |
 
 ### Missing: Contradiction Frame (Critical Gap)
@@ -72,7 +72,7 @@ This article's most powerful framing technique is **forensic contradiction** —
 
 This pattern — quote a source's denial, then present contradicting evidence — is a recognized journalistic technique. The toolkit detects refusal_amplification (not answering) but not **contradiction_amplification** (answering but being contradicted).
 
-**Proposed new device type:** `contradiction_frame` — when a direct quote is followed within 2-3 sentences by evidence or claims that directly contradict it.
+**Proposed new device type:** `contradiction_frame` — when a direct quote is followed within 2-3 sentences by evidence or claims that directly contradict it. **RESOLVED (Jun 29, 2026):** Implemented as `denial_contradiction` with 5 regex patterns covering direct denials, combative pushback, reverse-order evidence→denial, soft minimization undercuts, and indirect-speech variants. Detects all 3 instances in this article.
 
 ### Missing: Defensive Combativeness
 
@@ -179,7 +179,7 @@ Bug in `sources.py` spokesperson detection: missing `f"{name}, {org}'s {title}"`
 In `sentiment.py`, when `raw_tone < 0` but adversarial framing device count is ≥ `_FRAMING_MIN_ADVERSARIAL_DEVICES` and agency ≤ `_FRAMING_MAX_AGENCY`, amplify the negative tone toward framing estimate rather than leaving raw VADER score unchanged. This addresses the systematic understatement of adversarial articles that VADER correctly identifies as negative but underestimates.
 
 ### Priority 4: Contradiction Frame Detection
-New framing device type: `contradiction_frame`. Detect pattern: direct quote from source → within 2-3 sentences → evidence/assertion contradicting the quote. This is the central technique in this article and common in accountability journalism.
+New framing device type: `contradiction_frame`. **RESOLVED (Jun 29, 2026):** Implemented as `denial_contradiction` (5 regex patterns). Detects 3 instances in this Wired article + 1 in Digital Trends cross-outlet secondary coverage. Added to `_DEVICE_PATTERNS` in `framing.py`, documented in METHODOLOGY.md §4.1 Extended Devices table, tested, and cross-validated.
 
 ### Priority 5: Source Quote Directionality
 When a source's quote contains negative terms directed at the reporting/reporter rather than the subject entity, classify as supportive/defensive rather than adversarial. This requires basic co-reference: is the negative language targeting the journalist, the reporting, or the subject?
