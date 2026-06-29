@@ -129,8 +129,14 @@ ownership_chain:
     description: >
       Private media holding company, incorporated in New York, founded 1922 by Samuel Irving Newhouse Sr.
       HQ: One World Trade Center, New York, NY 10007. Wholly owned by the Newhouse family.
-      Board of Directors (per Reddit 2025 proxy): Michael A. Newhouse, Steven O. Newhouse,
-      Samuel I. Newhouse III, Thomas S. Summer, Victor F. Ganzi.
+      Board of Directors (per Reddit 2025 proxy, DEF 14A filed Apr 28, 2025): Michael A. Newhouse,
+      Steven O. Newhouse, Samuel I. Newhouse III, Thomas S. Summer, Jamie Miller, and Victor F. Ganzi.
+      NEW (2025): Jamie Miller added to AP board between 2024 and 2025 proxy filings. Likely Jamie S.
+      Miller — former GE CFO (Nov 2017–Feb 2020), GE Transportation President & CEO (Oct 2015–Nov 2017),
+      GE CIO (Apr 2013–Oct 2015). Now CFO of Cargill, Inc. (since Mar 2021). Also serves on Qualcomm
+      board (since May 2020) and International Paper board (since 2024). Brings heavy
+      financial/audit/tech industry expertise to the AP board that makes ALL voting and investment
+      decisions regarding Advance's Reddit shares.
       KEY: Advance is the indirect parent making ALL voting and investment decisions for its subsidiaries'
       holdings (including Reddit shares), per SEC filings.
       Portfolio spans media, communications, technology, education, and sports.
@@ -163,9 +169,57 @@ ownership_chain:
 # ===================================================================
 advance_investments:
   - entity: "Reddit (RDDT)"
-    stake: "42,191,092 shares Class B + 16,182 shares Class A = 65.2% total voting power (per 2026 proxy, based on Schedule 13G filed Nov 14, 2024 reporting ownership as of Sep 30, 2024). 83.5% of Class B common stock. Class B carries 10 votes/share."
+    stake: >
+      42,191,092 shares Class B + 16,182 shares Class A (per Schedule 13G filed Nov 14, 2024,
+      reporting ownership as of Sep 30, 2024 — unchanged in 2025 proxy). 76.5% of Class B
+      common stock (55,121,821 total Class B as of March 31, 2025). Class B carries 10 votes/share.
+      TOTAL VOTING POWER: 62.0% (per 2025 proxy beneficial ownership table, March 31, 2025 record
+      date). NOTE: Voting power decreased from 65.2% (2024 proxy) to 62.0% (2025 proxy) due to
+      dilution from equity compensation and secondary offerings — Advance has NOT sold a single
+      share. Total outstanding shares as of March 31, 2025: 129,145,465 Class A + 55,121,821 Class B
+      = 184,267,286. Combined with Huffman's irrevocable voting proxy over Tencent's 8.0% voting
+      power, Huffman controls 75.8% of all votes — but Advance retains full economic ownership
+      and ALL investment/disposition decisions via the AP board.
     board_seats: 2
     board_designees: ["Steven O. Newhouse", "Robert A. Sauerberg"]
+    board_designee_details:
+      - name: "Steven O. Newhouse"
+        position: "Director (since March 2024, previously observer 2011-2024)"
+        committee: "Nominating and Corporate Governance Committee (CHAIR)"
+        notes: >
+          Co-President of Advance Publications. CHAIRS the committee that identifies and recommends
+          candidates for Reddit's board — meaning Advance's co-president directly controls who gets
+          nominated to the board of a company Advance owns 76.5% of Class B stock in. Also responsible
+          for recommending directors to serve on board committees and reviewing board leadership structure.
+          Per Governance Agreement (March 19, 2024): Advance has the right to have one "Advance Designee"
+          on every board committee EXCEPT the Audit Committee and any committee established solely to
+          address Advance conflicts. No director can be selected as Chairperson without Advance's
+          prior written approval (AND Huffman's approval, as CEO).
+        source_url: "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000092/rddt-20250428.htm"
+      - name: "Robert A. Sauerberg"
+        position: "Director (since April 2012), Vice Chairperson of Reddit Board (since November 2023)"
+        committees: ["Audit Committee", "Nominating and Corporate Governance Committee"]
+        career_at_conde_nast: >
+          CONDÉ NAST CEO (Jan 2016 – May 2019), President (Jan 2011 – Dec 2015), Group President of
+          Consumer Marketing (Jan 2005 – Dec 2010). Before Condé Nast: COO at Fairchild Publications
+          (Jan 2000 – Dec 2005), a media company also owned by Advance. TOTAL: 19 years at Advance
+          subsidiaries (2000-2019). When he left Condé Nast, Adweek reported Steve Newhouse explicitly
+          stated Sauerberg would leave "to pursue other opportunities, including representing Advance
+          Publications on Reddit's board." He was placed on Reddit's board BY Advance.
+        revolving_door_significance: >
+          CRITICAL: The former CEO of Condé Nast (which owns Wired) is now the #2 governance figure
+          at Reddit (Vice Chairperson), sits on the Audit Committee overseeing Reddit's financial
+          reporting, AND sits on the NCG Committee that controls board nominations — alongside
+          Newhouse, who chairs it. This creates a DIRECT Condé Nast → Reddit governance pipeline.
+          Despite 19 years at Advance subsidiaries and being explicitly placed on Reddit's board by
+          the Newhouse family, Reddit's board has determined Sauerberg is "independent" under NYSE rules.
+          The 3-year lookback period for NYSE independence expired in 2022 (3 years after his 2019
+          departure from Condé Nast), technically satisfying the rule while Sauerberg's entire
+          professional identity was shaped by Advance/Condé Nast.
+        source_urls:
+          - "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000092/rddt-20250428.htm"
+          - "https://www.adweek.com/media/conde-nast-ceo-bob-sauerberg-step-down-amid-restructuring/"
+          - "https://listennotes.com/podcasts/be-epic/bob-sauerberg-on-how-curiosity-and-mentorship/"
     board_observer: 1
     board_veto: "Any increase >10 directors requires Advance's prior written approval"
     voting_agreement: >
@@ -179,7 +233,11 @@ advance_investments:
       opened at $47, valued at $6.4B. Return: 5,800%+ (Bloomberg Billionaires Index).
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
-    current_value_estimate: "~$7.04B at $166.94/share (Jun 26, 2026 close). Reddit now ~57% of Advance's public equity. Market cap $32.1B."
+    current_value_estimate: >
+      ~$7.34B at $173.97/share (Jun 29, 2026 intraday). Reddit market cap ~$32.1B.
+      Reddit now ~57-60% of Advance's public equity. 42,207,274 total shares ×
+      $173.97 = $7.34B. Up from ~$7.04B at Jun 26 close ($166.94). RDDT up +4.2%
+      today (Jun 29). 52-week range $119.27-$282.95. Beta 2.06.
     q1_2026_financials: >
       Q1 2026: Revenue $663.41M (+69.1% YoY), EPS $1.01 (vs $0.13 YoY, +677%).
       Beat consensus: revenue +8.03%, EPS +62.9%. Beat consensus all 4 trailing quarters.
@@ -536,7 +594,7 @@ advance_investments:
 # ===================================================================
 # TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (updated Jun 28, 2026)
 # ===================================================================
-# Reddit (RDDT): ~$7.04B (42.2M shares @ $166.94, Jun 26 2026 close, +5.64% on the day)
+# Reddit (RDDT): ~$7.34B (42.2M shares @ $173.97, Jun 29 2026 intraday, +4.2% on the day)
 #   Q2 2026 GUIDANCE: $715M-$725M (~44% YoY at midpoint). Q2 earnings: Jul 30 after market close.
 #   Q1 ad revenue $625M (+74% YoY). ROAS now ABOVE industry averages in key categories (Cannes Lions).
 #   Reddit white paper: 20% of shoppers include Reddit in searches; 50% of US shoppers use Reddit
@@ -576,7 +634,7 @@ advance_investments:
 # HawkEye 360: EXITED via IPO May 2026 at ~$2.4B valuation
 # Donald Newhouse net worth at death: $15.4B (Forbes May 2026)
 #
-# KEY PORTFOLIO CONCENTRATION: Reddit is now 57% of Advance's public equity (~$7.04B of ~$12.4B).
+# KEY PORTFOLIO CONCENTRATION: Reddit is now 57-60% of Advance's public equity (~$7.34B of ~$12.7B).
 # Advance is also LEVERAGING Reddit for capital (Nov 2024: $1.2B credit facility collateralized
 # by 7.8M Reddit shares). This means Advance's capital access — which could fund Condé Nast
 # operations — is directly tied to Reddit's stock price. Combined with Reddit's Q1 2026
@@ -791,11 +849,50 @@ key_journalists:
     known_patterns: "Joined Sep 2023, part of politics team. Reports on extremism and disinfo spreading on social media platforms."
 
 known_conflicts:
+  - type: "revolving_door"
+    description: >
+      CRITICAL NEW (Jun 29, 2026): Robert A. Sauerberg Jr. — Condé Nast CEO (2016-2019) and President
+      (2011-2015), with 19 total years at Advance subsidiaries (Condé Nast + Fairchild Publications,
+      2000-2019) — now serves as VICE CHAIRPERSON of Reddit's board (since Nov 2023), the #2 governance
+      position. He was explicitly placed on Reddit's board by the Newhouse family when he left Condé Nast
+      (Adweek: Sauerberg would leave "to pursue other opportunities, including representing Advance
+      Publications on Reddit's board"). Sits on Reddit's AUDIT COMMITTEE (overseeing financial reporting)
+      AND Nominating and Corporate Governance Committee (controlling board nominations). Despite being
+      placed by Advance and spending his entire career at Advance subsidiaries, Reddit's board deems him
+      "independent" — the 3-year NYSE lookback period expired in 2022. This creates a DIRECT governance
+      pipeline between the company that owns Wired and its $7.3B+ competitor to Meta: the former CEO of
+      Wired's parent company is now the second-most-senior governance figure at a direct Meta competitor.
+      No Wired article has ever disclosed that the editorial decisions at Wired's parent company were
+      made by the same person who now serves as Vice Chairperson at Reddit.
+    severity: 5
+    evidence: "Reddit 2025 DEF 14A (SEC, Apr 28, 2025), Adweek (Nov 2019), Condé Nast press releases"
+    source_urls:
+      - "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000092/rddt-20250428.htm"
+      - "https://www.adweek.com/media/conde-nast-ceo-bob-sauerberg-step-down-amid-restructuring/"
+
+  - type: "governance_control"
+    description: >
+      CRITICAL NEW (Jun 29, 2026): Steven O. Newhouse (Advance co-president) CHAIRS Reddit's
+      Nominating and Corporate Governance Committee — the committee that identifies and recommends
+      ALL candidates for Reddit's board and recommends directors to serve on committees. This means
+      the co-president of the company that owns Wired directly controls who sits on the board of
+      Reddit, a $32B direct Meta competitor. Per the Governance Agreement (March 19, 2024), Advance
+      also has the right to place one "Advance Designee" on every Reddit board committee EXCEPT the
+      Audit Committee (or any committee established to address Advance conflicts). Additionally,
+      no director can be selected as Chairperson without Advance's prior written approval. Combined
+      with Sauerberg (Condé Nast ex-CEO) as Vice Chairperson and NCG Committee member, Advance
+      effectively controls Reddit's governance architecture through the very family that owns Wired.
+    severity: 5
+    evidence: "Reddit 2025 DEF 14A (SEC, Apr 28, 2025), Governance Agreement (March 19, 2024)"
+    source_url: "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000092/rddt-20250428.htm"
+
   - type: "investment"
     description: >
-      Parent company Advance Publications holds 65.2% total voting power in Reddit (42.2M shares Class B +
-      16K shares Class A = 83.5% of Class B, per 2026 proxy), currently worth ~$7.0B. Advance has 2 board seats (Steven O. Newhouse,
-      Robert A. Sauerberg) plus 1 nonvoting observer, and veto power over board expansion >10 members.
+      Parent company Advance Publications holds 62.0% total voting power in Reddit (42.2M shares Class B +
+      16K shares Class A = 76.5% of Class B, per 2025 proxy as of Mar 31, 2025), currently worth ~$7.3B.
+      Advance has 2 board seats (Steven O. Newhouse as NCG Committee Chair, Robert A. Sauerberg as
+      Vice Chairperson + Audit/NCG Committee member), plus governance veto rights over board size,
+      M&A, CEO removal, charter amendments, and more.
       Reddit is a direct competitor to Meta's social media platforms for user attention, advertiser spend,
       and community engagement. Original investment: $10M in 2006 (5,800%+ return). This is the single
       largest investment in Advance's portfolio and the most direct financial conflict.
@@ -851,7 +948,7 @@ known_conflicts:
 
   - type: "competitive"
     description: >
-      Reddit (65.2% voting power held by Advance via 83.5% of Class B shares) directly competes with Meta for user attention, advertiser spend,
+      Reddit (62.0% voting power held by Advance via 76.5% of Class B shares) directly competes with Meta for user attention, advertiser spend,
       and community engagement. Reddit FY2025 revenue ~$1.3B, growing rapidly, in direct competition
       for the same performance advertising dollars Meta commands. Reddit's market cap ~$32.8B. Every
       Meta stumble (regulatory, reputational, or financial) potentially benefits Reddit's competitive
