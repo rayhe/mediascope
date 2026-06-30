@@ -7779,3 +7779,54 @@ Annotation stated VADER compound of 0.634 for this article. Actual raw VADER com
 `47e8d5a`
 
 ---
+
+## 2026-06-30 03:00 PT — Hour Type A: Article Deep Dive
+
+### Article
+Gizmodo "Meta Fury AI Glasses Review: The Worst Company Still Makes the Best Smart Glasses" by Raymond Wong, June 29, 2026.
+
+### Focus
+Contradictory review pattern: positive 3.5/5 product assessment wrapped in deeply negative privacy/ethics editorial framing. VADER scored +0.680 (wildly positive) on a manually-assessed -0.35 article.
+
+### What Was Improved
+
+**Entity Detection (entities.py):**
+- Added Meta Fury, Fury (context-gated), Adventurer, Starfire, Meta Ray-Ban Display, Llama 4 as Meta cluster aliases
+- Added Garmin as new entity cluster
+- Both alias list and regex pattern updated
+
+**Emotional Language (sentiment.py):**
+- Added 29 new terms: icky, ickier, ickiest, ickiness, ick factor, glassholism, glasshole, glassholes, privacy minefield, minefield, spying, spy, spied, encroaching, encroach, intrusion, intrusions, paranoid, paranoia, bad actor, bad actors, problematic, conflicted, obnoxious, worst person, worst company, dirt under the rug, sweep under the rug, myriad
+- Emotional intensity improved: 0.418 → 0.749 (manual: 0.70)
+- Total terms: 537 → 566
+
+**Sentiment Correction Path F (sentiment.py):**
+- New "contradictory review framing" correction for mixed product reviews with editorial wrappers
+- Conditions: raw_tone ≥ 0.3, adversarial_count ≥ 4, emotional_intensity ≥ 0.5, mixed agency (-0.4 to 0.0), rhetorical kicker
+- Overall tone corrected: +0.680 → -0.199 (manual: -0.35)
+- Headline-body alignment fixed: -0.800 → +0.453 (manual: 0.90)
+
+### Files Changed
+- `mediascope/analyze/entities.py` — Meta Fury/Fury/Adventurer/Starfire/Llama 4 aliases, Garmin cluster
+- `mediascope/analyze/sentiment.py` — 29 emotional terms, Path F contradictory review correction
+- `tests/test_gizmodo_fury_review.py` — 19 new tests (entity, framing, sentiment, emotional terms, sources)
+- `tests/test_structural_consistency.py` — emotional language count 537 → 566
+- `examples/sample_output/gizmodo_meta_fury_review_2026_06_29_article.txt` — article text
+- `examples/sample_output/gizmodo_meta_fury_review_2026_06_29_analysis.md` — full analysis
+- `docs/ARCHITECTURE.md` — added test file entry, updated counts (978 → 997, 38 → 39 files)
+- `README.md` — added test file entry, updated counts (983 → 1002, 38 → 39 files)
+
+### Remaining Gaps Documented
+1. Overall tone gap: -0.199 vs manual -0.35 (0.15 delta from 20/80 blend ratio)
+2. Comparative framing: implicit Apple-as-alternative not detected
+3. analogy_stacking false positives ("like a bulkier look")
+4. Structural devices (editorial bookending, meme references) require paragraph-level analysis
+5. Institutional source detection (NYT/Wired as sources, not just entities)
+
+### Tests
+1002 passed (39 files) — up from 983 (+19 new tests)
+
+### Commit
+(pending)
+
+---

@@ -371,7 +371,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **983 tests** across 38 test files, each covering a different analytical capability:
+MediaScope has **1002 tests** across 39 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -392,6 +392,7 @@ MediaScope has **983 tests** across 38 test files, each covering a different ana
 | `test_loaded_language_uproar.py` | 13 | Loaded language detection edge cases: workplace coercion terms, revolt vocabulary, "uproar" word variants, false-positive exclusion for neutral contexts |
 | `test_scale_magnitude.py` | 16 | Scale/magnitude framing: raw number amplification, calculated maximums, cumulative totals, scale analogies, victim roster detection, comparison amplifiers |
 | `test_glasses_deep_dive.py` | 17 | Wired glasses launch deep dive fixes: kicker framing (negative final paragraph detection), product-name stop-filter for source extraction ("Meta Glasses"), emotional_appeal false-positive exclusion (question marks), loaded language expansion (nefarious, comically, discreetly) |
+| `test_gizmodo_fury_review.py` | 19 | Gizmodo Meta Fury contradictory review: entity detection (Fury, Adventurer, Starfire, Garmin, Llama 4), Path F framing correction for mixed product reviews, emotional terms (ickiness, glassholism, privacy minefield, spying, paranoid) |
 | `test_hypocrisy_medical_duress.py` | 16 | Hypocrisy frame detection: "the only company that has not" patterns, medical duress framing, healthcare-as-leverage patterns, prepositional phrase tolerance in entity–negation gaps |
 | `test_wynn_williams_fixes.py` | 18 | Guardian Wynn-Williams lawsuit fixes: source extraction false positives (day names "Wednesday", book titles "Careless People"), litigation framing expansion (complaint, suing, arbitration patterns), power_asymmetry per-violation fines with intervening adjectives |
 | `test_virtue_ai_acquihire.py` | 14 | Virtue AI acqui-hire entity detection (Virtue AI, Bo Li, Dawn Song, Sanmi Koyejo, FAIR, BIS, CAISI, Howard Lutnick), ironic_quotation tech-jargon filter, emotional language additions |

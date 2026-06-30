@@ -248,6 +248,25 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "trolls", "troll",
     "backlash",
     "inconspicuous",
+    # Product review visceral/disgust language — terms like "ickiness",
+    # "icky", "glassholism" deploy visceral disgust to frame consumer
+    # products as socially unacceptable.  VADER treats these as neutral
+    # (non-standard vocabulary).  Gap discovered during Gizmodo Meta Fury
+    # review analysis (Jun 2026): 0.418 emotional intensity vs manual 0.65.
+    "icky", "ickier", "ickiest", "ickiness", "ick factor",
+    "glassholism", "glasshole", "glassholes",
+    "privacy minefield", "minefield",
+    "spying", "spy", "spied",
+    "encroaching", "encroach",
+    "intrusion", "intrusions",
+    "paranoid", "paranoia",
+    "bad actor", "bad actors",
+    "problematic",
+    "conflicted",
+    "obnoxious",
+    "worst person", "worst company",
+    "dirt under the rug", "sweep under the rug",
+    "myriad",
     # Platform death / community displacement emotional terms — needed for
     # coverage of platform shutdowns where editorial language frames corporate
     # decisions as community destruction or abandonment
@@ -1234,6 +1253,41 @@ def _compute_framing_correction(
         sardonic_tone = -(0.40 + 0.25 * density_factor)
         corrected = 0.10 * raw_tone + 0.90 * sardonic_tone
         corrected = max(-1.0, min(0.0, round(corrected, 4)))
+        return corrected, True
+
+    # --- Path F: Contradictory review framing ---
+    # Product reviews where the reviewer gives a positive assessment
+    # (VADER reads the product-praise language as strongly positive) but
+    # wraps it in negative editorial context about privacy, ethics, or
+    # corporate behavior.  The result is a mixed-tone article where VADER's
+    # overall reading is inflated because positive product language
+    # outnumbers the negative editorial passages by sheer word count.
+    #
+    # Key signals: moderate-to-negative agency (between -0.4 and 0.0 —
+    # the company IS building good products but IS ALSO acting badly),
+    # high emotional intensity (privacy/ethics loaded language), and
+    # rhetorical question(s) in the kicker that undermine the positive
+    # assessment.
+    #
+    # Discovered in Gizmodo Meta Fury review (Jun 29, 2026): VADER scored
+    # +0.68 on a manually-assessed -0.35 article because the positive
+    # product review language dominated the word count, drowning out the
+    # negative privacy/ethics editorial wrapper.
+    rq_count = framing_summary.get("rhetorical_question", 0)
+    if (
+        raw_tone >= 0.3           # VADER inflated positive
+        and adversarial_count >= 4
+        and emotional_intensity >= 0.5
+        and -0.4 <= agency < 0.0  # mixed agency: not fully passive
+        and (rq_count >= 1 or loaded_count >= 3)  # kicker question or heavy loaded language
+    ):
+        # Blend toward a mildly negative tone — the article IS partly
+        # positive (the product really is good), but the editorial wrapper
+        # shifts the reader's takeaway.  Target: ~-0.30 to -0.40.
+        density_factor = min(adversarial_count / 8.0, 1.0)
+        review_tone = -(0.25 + 0.15 * density_factor + 0.10 * emotional_intensity)
+        corrected = 0.20 * raw_tone + 0.80 * review_tone
+        corrected = max(-0.6, min(0.0, round(corrected, 4)))
         return corrected, True
 
     return raw_tone, False
