@@ -4,6 +4,71 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-30 06:00 PT — Type C: Ownership & Funding Deep Dive — MIT TR Engine Ventures Exits + Boston Metal Self-Dealing + Yosemite Cross-Publication Link
+
+**Focus:** Three significant ownership/funding updates to MIT Technology Review profile — 2026 Engine Ventures portfolio expansion, full exits list, and previously undocumented cross-publication financial link via Yosemite VC.
+**Commit:** `e76ee09` — 182 insertions, 11 deletions, 1 file changed
+
+### Problem
+
+MIT TR profile had only 1 exit in key_exits (Celestial AI) despite Engine Ventures having 8 total exits (PitchBook). The Atlantic Quantum → Google acquisition (Oct 2025) was completely missing — a critical conflict because Google also funds MIT research. Six new 2026 Engine Ventures investments were not tracked. Most importantly, the Yosemite cross-publication connection (MIT as LP in an Emerson Collective spinoff VC fund, with EC owning The Atlantic) was documented in the Atlantic profile but NOT in the MIT TR profile.
+
+### Improvements
+
+**1. Engine Ventures Exits (1→8, all sourced via PitchBook)**
+
+| Exit | Acquirer | Date | Significance |
+|------|----------|------|-------------|
+| Celestial AI | Marvell Technology ($3.25B) | Feb 2, 2026 | Already tracked — AI data center photonics |
+| **Atlantic Quantum** | **Google Quantum AI** | **Oct 3, 2025** | **NEW — MIT-origin quantum startup sold to Google. Triple conflict: MIT research → startup → Engine → Google. Google also funds MIT via MIT-Google Program** |
+| Resonant Link Medical | Unknown | Feb 10, 2025 | Medical device wireless power |
+| Radix (Cambridge) | Unknown | Dec 30, 2024 | — |
+| Suono Bio | Unknown | Jun 26, 2024 | First Engine cohort (2017) |
+| Zapata Quantum | N/A (bankruptcy) | Mar 28, 2024 | SPAC failure |
+| Hedron | N/A | Dec 29, 2023 | Out of business |
+| E25Bio | N/A | Jan 27, 2023 | COVID testing, failed post-pandemic |
+
+**2. 2026 Engine Ventures Portfolio (6 new investments)**
+
+| Company | Date | Sector | Conflict Note |
+|---------|------|--------|--------------|
+| **Boston Metal** | **May 20, 2026** | **Green steel (MOE)** | **INSTITUTIONAL SELF-DEALING: Founded by MIT Prof. Sadoway, Prof. Allanore, Yurko PhD '01. Tech patented at MIT, licensed from MIT TLO. Engine investing in MIT faculty spinout. MIT earns both IP royalties AND venture returns.** |
+| Blue Energy | Apr 22, 2026 | Energy Production | — |
+| Sora Fuel | Mar 27, 2026 | Energy Production | — |
+| Terrestrial Bio | Mar 26, 2026 | Biotechnology | — |
+| AtmosZero | Mar 23, 2026 | Environmental Services | — |
+| Trener Robotics | Feb 10, 2026 | Hardware/Robotics | — |
+
+**3. New known_conflicts added:**
+
+- `engine_ventures_mit_origin_self_dealing` (severity 3): Boston Metal as institutional self-dealing — MIT's venture arm investing in MIT faculty spinout using MIT patents. MIT TLO quote: "All of the fundamental studies and the initial technologies came out of MIT. We spun out of research that was patented at MIT and licensed from MIT's Technology Licensing Office."
+
+- `cross_publication_yosemite_lp` (severity 2): MIT is LP in Yosemite Fund I ($200M cancer VC, Reed Jobs, EC spinoff). EC (Atlantic's parent) is also an LP. Two tracked publications' parent orgs are co-investors in the same fund.
+
+**4. Updated existing conflicts:**
+- `engine_ventures_ai_exits`: Added Atlantic Quantum→Google exit detail and Google research sponsor connection
+- `engine_ventures_portfolio_coverage_overlap`: Added Boston Metal coverage overlap, Atlantic Quantum Google pipeline, 2026 investment pace (6 in 5 months)
+
+### Key Analytical Insights
+
+**The Google Pipeline:** MIT research lab → MIT-origin startup (Atlantic Quantum) → Engine Ventures investment → Google acquisition → MIT profits from exit. BUT Google also funds MIT research through the MIT-Google Program at Schwarzman College. MIT profited from a venture exit TO one of its own research sponsors. MIT TR covers Google extensively. No disclosure.
+
+**The MIT Self-Investment Loop:** MIT professors (Sadoway, Allanore) develop technology at MIT → MIT patents it → MIT TLO licenses it to Boston Metal (co-founded by MIT faculty/alumni) → Engine Ventures (MIT's own VC arm) invests in Boston Metal → MIT potentially earns BOTH IP royalties and venture returns from the same innovation pipeline. MIT TR has covered Boston Metal without disclosing either connection.
+
+**The Cross-Publication Bridge:** MIT (MIT TR parent) and Emerson Collective (Atlantic parent) are co-investors in Yosemite Fund I. This is the FIRST documented financial relationship between parent organizations of two tracked publications in MediaScope.
+
+### Source URLs (15 references)
+- PitchBook Engine Ventures profile (134 investments, 8 exits, 304 co-investors)
+- Neowin, TheQuantumInsider, blog.google, StarupHub.ai, TechBuzz.ai, nerds.xyz (Atlantic Quantum acquisition)
+- MIT News, MIT TLO, Contrary Research, MIT climate.mit.edu (Boston Metal MIT origins)
+- Gunderson Dettmer, TechCrunch Disrupt, Entrepreneur.com, PitchBook, YourStory (Yosemite Fund I LPs)
+- MIT Technology Review (technologyreview.com article on Boston Metal, confirming coverage overlap)
+
+### Test Results
+- **1018 tests pass** (unchanged)
+- Profile: 1250→1421 lines (+171 net)
+
+---
 ## 2026-06-30 05:00 PT — Type B: Journalist/Publication Research — Gideon Lichfield Deep Expansion
 
 **Focus:** Complete career reconstruction of Gideon Lichfield — the highest-value migration case in the dataset (EIC of both MIT Tech Review and Wired).
