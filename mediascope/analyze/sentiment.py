@@ -47,6 +47,12 @@ ANONYMOUS_SOURCE_PATTERNS: list[re.Pattern] = [
     re.compile(r"\b(?:some|several|multiple|many|other) (?:workers|employees|engineers|staffers|people) (?:said|told|described|complained|called)\b", re.IGNORECASE),
     # Publication-investigative patterns
     re.compile(r"\b\w+ (?:found|reported|revealed) (?:widespread|significant|extensive|growing)\b", re.IGNORECASE),
+    # Internal documents / memos as unnamed sources — enterprise reporting pattern
+    # where the document is the source but whoever leaked it is protected.
+    # "according to internal documents", "an internal memo warned", etc.
+    re.compile(r"\binternal (?:documents?|memos?|emails?|guidelines?|presentations?|reports?) (?:obtained|reviewed|seen|viewed|shared|circulated|warned|instructed|showed|stated)\b", re.IGNORECASE),
+    re.compile(r"\baccording to (?:an? )?internal\b", re.IGNORECASE),
+    re.compile(r"\bconfirmed by multiple sources\b", re.IGNORECASE),
     # UK-style passive institutional attribution — common in Guardian/UK press.
     # "it is understood that ministers are mindful" positions an institutional
     # claim as background knowledge without naming any source at all.
@@ -419,6 +425,18 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "devaluing", "devalue", "devalued",
     "commodifying",
     "obsolete",
+    # Data contamination / competitive intelligence warfare — metaphorical
+    # language framing normal data flows as biological contamination, espionage,
+    # or military operations.  Common in enterprise AI coverage when companies
+    # restrict rival tools.  Discovered in Meta Claude Code/Codex restriction
+    # article (Jun 2026).
+    "contaminate", "contaminated", "contamination", "contaminating",
+    "seep into", "seeping into", "seeped into",
+    "leak into", "leaked into", "leaking into",
+    "infiltrate", "infiltrated", "infiltrating",
+    "exfiltrate", "exfiltrated", "exfiltrating", "exfiltration",
+    "ingested", "ingesting",
+    "rival", "rivals",
 ]
 
 # Passive/victim vs. active/powerful framing indicators
@@ -486,6 +504,19 @@ PASSIVE_FRAMING: list[str] = [
     "nowhere else to go", "nowhere else",
     "not sure where", "aren't sure what comes next",
     "terrified of the uncertainty",
+    # Data contamination / competitive intelligence warfare — metaphorical
+    # language framing normal data flows as biological contamination, espionage,
+    # or military operations.  Common in enterprise AI coverage when companies
+    # restrict rival tools.  Discovered in Meta Claude Code/Codex restriction
+    # article (Jun 2026): "contaminate", "seep into", "leak into" used to
+    # describe AI model output entering training data pipelines.
+    "contaminate", "contaminated", "contamination", "contaminating",
+    "seep into", "seeping into", "seeped into",
+    "leak into", "leaked into", "leaking into",
+    "infiltrate", "infiltrated", "infiltrating",
+    "exfiltrate", "exfiltrated", "exfiltrating", "exfiltration",
+    "ingested", "ingesting",
+    "rival", "rivals",
 ]
 
 ACTIVE_FRAMING: list[str] = [

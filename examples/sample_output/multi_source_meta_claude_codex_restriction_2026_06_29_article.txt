@@ -1,0 +1,29 @@
+Meta has quietly moved to restrict its engineers from using two of the most popular AI coding agents on the market: Anthropic's Claude Code and OpenAI's Codex. The policy, which appears to be in effect as of June 2026, is aimed at protecting the company's proprietary AI training data and internal codebases from potential exposure.
+
+Here's the thing about AI coding tools: they work by sending code context to external servers for processing. In English, that means when an engineer at Meta asks Claude Code to help debug a model training script, chunks of that codebase potentially travel outside Meta's walls.
+
+Anthropic updated its consumer terms in August and September of 2025 to allow opt-in training on select datasets, a revision that likely sharpened the attention of legal and security teams at companies like Meta.
+
+Both Anthropic and OpenAI have been competing aggressively through 2025 and into 2026, adjusting usage limits and pricing strategies. Current plans from both companies sit around the $20 per month range for Pro and Plus tiers. That accessible price point has accelerated adoption inside engineering organizations, which is precisely what makes the data exposure question harder to ignore at scale.
+
+The immediate competitive question is whether Anthropic and OpenAI can develop enterprise-grade deployment options that satisfy the data residency and privacy requirements of companies like Meta. Both have enterprise offerings, but the restrictions suggest those offerings either haven't been adopted internally at Meta or haven't addressed the specific concerns around AI training data exposure.
+
+Meta is limiting how its engineers use Anthropic's Claude Code and OpenAI's Codex to prevent outputs from these AI tools from ending up in its own training data. According to internal documents obtained by The Information, Meta has even temporarily halted certain work with these models.
+
+The company is worried about distillation — the unauthorized transfer of capabilities from rival AI models. An internal memo warned of "serious escalations with partner companies" if their model outputs were to leak into Meta's training data.
+
+Meta is currently building out its own coding assistant, MetaCode, and wants to cut its reliance on outside tools, partly because of rising costs. According to an internal memo, the company is on track to spend billions of dollars on internal AI use this year alone. Company policy bars engineers from using AI outputs to create test tasks or for code analysis. Human review is still required.
+
+Distillation is causing friction across the industry. Anthropic recently accused Alibaba of the largest known distillation attack to date, and Elon Musk had to admit in April that xAI had partially distilled OpenAI's models. Terms of service from OpenAI, Anthropic, and Google all explicitly ban using model outputs to build competing systems. Meta said it has clear rules for the responsible use of AI tools.
+
+Meta has restricted its engineers from using Anthropic's Claude Code and OpenAI's Codex — two of the leading AI coding assistants — over concerns that proprietary code and engineering logic produced with those tools could be ingested into the rival companies' training pipelines. The policy, reported by The Information and confirmed by multiple sources, applies specifically to agentic coding tools that send code context to external servers.
+
+The concern is structurally sound: when an engineer uses Claude Code, their codebase context, architectural patterns, and proprietary logic flow to Anthropic's infrastructure. Depending on data-retention and training agreements — which vary by enterprise tier and are rarely fully transparent — that material can become signal for future model training. Meta is treating this not as a data-leak risk in the traditional sense, but as competitive intelligence leakage at the model layer.
+
+Meta is not banning AI coding tools outright. Internal tools built on its own Code Llama and Llama stack remain available. The move effectively mandates that engineers route their AI-assisted coding through infrastructure Meta controls — a policy that doubles as a forcing function to improve Meta's own developer tooling.
+
+An internal memo reportedly instructed teams to pause certain tasks that relied on those models. The document warned that allowing rival AI outputs to seep into Meta's training data could trigger "serious escalations with partner companies," language that suggests the concern is partly contractual, not purely about competitive intelligence.
+
+The timing connects to a specific policy change at Anthropic. Anthropic updated its consumer terms in August and September of 2025 to allow opt-in training on select datasets, a revision that reportedly sharpened attention inside legal and security teams at companies like Meta. The mechanics are straightforward: when engineers use Claude Code to debug a model training script, chunks of that codebase potentially travel to external servers. That is a normal part of how AI coding tools function, but it becomes a meaningful risk when the codebase in question is proprietary AI training infrastructure.
+
+Meta has not publicly confirmed the scope or timeline of the restrictions, so take the specifics as reported rather than settled policy. What the reporting does not resolve is whether the limits apply broadly across Meta's engineering organization or specifically to teams working on AI model development.

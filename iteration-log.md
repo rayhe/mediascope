@@ -4,6 +4,95 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-30 14:00 PT — Type A: Article Deep Dive — Meta Claude Code/Codex Restriction
+
+**Article:** "Meta restricts engineers' use of Claude Code and Codex to protect AI training data"
+**Source:** The Information (Jun 29, 2026) — paywalled; composite assembled from 6 secondary sources
+**Example files:** `examples/sample_output/multi_source_meta_claude_codex_restriction_2026_06_29_{article,analysis}.md`
+
+### Toolkit Gaps Found & Fixed
+
+**1. Contamination / data-warfare metaphors (3 modules, 21 terms + 1 regex pattern)**
+- **Gap:** "seep into", "leak into", "contaminate", "rival" — language framing normal API data flows as biological contamination or espionage — undetected
+- **Fix:** Added to EMOTIONAL_LANGUAGE (566→587 terms), PASSIVE_FRAMING, and _LOADED_LANGUAGE_PATTERNS (+1 regex, 272→273)
+- **Impact:** emotional_language_intensity 0.047→0.332; overall_tone -0.26→-0.32; framing devices 5→8
+
+**2. Internal document / memo anonymous source detection (3 modules)**
+- **Gap:** "According to internal documents", "an internal memo warned", "confirmed by multiple sources" — core enterprise reporting attribution patterns — were invisible to both source extraction and anonymous source ratio
+- **Fix:** Added patterns to ANONYMOUS_SOURCE_PATTERNS (sentiment.py), ANONYMOUS_INDICATORS (sources.py), and extract_sources() anon_patterns
+- **Impact:** anonymous_source_ratio 0.0→0.857; source_authority_framing 0.6→-0.23; sources detected 2→7
+
+**3. Organization stop list expansion (sources.py)**
+- **Gap:** "Alibaba" falsely matched as named source by Pattern 5c ("accused Alibaba" parsed as Alibaba being a source, when it's the object of accusation)
+- **Fix:** Added Alibaba, Baidu, Tencent, Huawei, Xiaomi, ByteDance to _SINGLE_NAME_ORG_STOPS and _KNOWN_ORGS
+- **Impact:** False positive source eliminated
+
+### Analysis Summary
+
+| Dimension | Score | Note |
+|-----------|-------|------|
+| overall_tone | -0.32 | Corrected from raw +0.60 (framing_corrected=True) |
+| emotional_language_intensity | 0.33 | Contamination metaphors drive moderate intensity |
+| anonymous_source_ratio | 0.86 | 6 of 7 sources anonymous — internal docs + unnamed "multiple sources" |
+| agency_attribution | -0.60 | Passive: data "seeps" and "leaks" rather than being actively copied |
+| Framing devices | 8 | loaded_language (4), self_referential_investigation (2), trend_bundling (1), juxtaposition (1) |
+
+### Stats (post-iteration)
+- Framing device types: 47 (42 pattern-matched + 5 structural)
+- Total regex patterns: 273
+- Emotional language terms: 587
+- Annotated examples: 132 files
+- Tests: 1058 (all passing)
+
+---
+
+## 2026-06-30 13:00 PT — Type D: Toolkit Quality — Stale Count Purge + Regex Pattern Count Guard
+
+**Focus:** Cross-doc consistency audit — found and fixed 6 stale framing device count references that survived because primary count guards checked canonical declarations but not secondary inline references. Added a new structural guard for total regex pattern count.
+**Commit:** `e7fd9b7` — 39 insertions, 22 deletions, 4 files changed
+
+### Problem
+
+When the 47th framing device type (`failure_precedent`) was added, the canonical counts in §4.1 headers were updated correctly (caught by `TestDocCountConsistency`), but secondary references in other doc sections and test guard messages were NOT updated:
+
+1. **METHODOLOGY.md §13.2**: Said "46-type taxonomy" — the same-event comparison table referenced the old count
+2. **README.md test description**: Said "(44 total = 39 pattern + 5 structural)" — two iterations behind
+3. **Stale purge guard**: Blocklist stopped at "45-type", allowing "46-type" to persist unchecked
+4. **Test error messages**: Referenced "44-type" and "46-type" as expected values
+5. **Emotional language count**: Docstring said "537 unique terms" while assertion correctly used 566
+6. **ARCHITECTURE.md**: Total test count was 1048 (stale from a prior iteration)
+
+Root cause: The stale purge guard is manually maintained — when a new type is added, the developer updates `EXPECTED_TOTAL` (line 54) but may not add the previous count to the stale blocklist. This creates a window where old references survive.
+
+### Fixes
+
+| File | Change |
+|------|--------|
+| `docs/METHODOLOGY.md` | §13.2: "46-type taxonomy" → "47-type taxonomy" |
+| `README.md` | Test description: "(44 total = 39 pattern + 5 structural)" → "(47 total = 42 pattern-matched + 5 structural)" |
+| `README.md` | Total test count header: 1057 → 1058 |
+| `docs/ARCHITECTURE.md` | Test count: 1048 → 1058 |
+| `docs/ARCHITECTURE.md` | test_structural_consistency description: added regex pattern count mention |
+| `tests/test_structural_consistency.py` | Stale purge blocklist extended: now blocks "33-type" through "46-type" |
+| `tests/test_structural_consistency.py` | All error messages updated to reference "47-type" |
+| `tests/test_structural_consistency.py` | README stale regex broadened: `4[0-5]` → `4[0-6]` to catch through 46 |
+| `tests/test_structural_consistency.py` | Emotional language count docstring fixed: 537 → 566 |
+
+### New Test
+
+**`test_total_regex_pattern_count`**: Guards the sum of compiled regex patterns across all 42 device types in `_DEVICE_PATTERNS` (currently 272). When patterns are added or removed, this test fails and forces a deliberate count update. This prevents undocumented pattern drift — the previous count of 253 (from MEMORY.md) had drifted to 272 without any guard catching it.
+
+### Verified Stats (post-fix)
+- Framing device types: 47 (42 pattern-matched + 5 structural)
+- Total regex patterns: 272
+- Emotional language terms: 566
+- Journalists tracked: 105
+- Topic buckets: 19
+- Banned phrases: 25
+- Tests: 1058 (all passing)
+
+---
+
 ## 2026-06-30 10:00 PT — Type B: Journalist/Publication Research — Ryan Mac Deep Expansion (3→4 entries) + 2026 Beat Shift Discovery
 
 **Focus:** Complete career reconstruction and 2026 byline analysis of Ryan Mac — NYT's tech accountability reporter, the most analytically valuable cross-publication migration case for Meta coverage.

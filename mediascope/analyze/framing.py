@@ -577,6 +577,22 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"fig\s+leaf)\b",
         re.IGNORECASE,
     ),
+    # Data contamination / competitive espionage metaphors — biological or
+    # military language applied to normal data flows between AI services.
+    # "seep into training data", "contaminate the pipeline", "leaking
+    # proprietary logic" frame routine API interactions as warfare or
+    # pollution.  Discovered in multi-source Meta Claude Code/Codex
+    # restriction coverage (Jun 2026).
+    re.compile(
+        r"\b(?:contaminate[ds]?|contaminating|contamination|"
+        r"seep(?:s|ed|ing)?\s+into|"
+        r"leak(?:s|ed|ing)?\s+into|"
+        r"infiltrat(?:e[ds]?|ing|ion)|"
+        r"exfiltrat(?:e[ds]?|ing|ion)|"
+        r"competitive\s+intelligence\s+leakage|"
+        r"data\s+(?:poisoning|theft|siphoning|harvesting))\b",
+        re.IGNORECASE,
+    ),
     # Ad hominem / character diminishment — personal characterizations
     # that undermine a subject's credibility or seriousness through
     # caricature rather than argument.  Distinct from analogy/diminishment

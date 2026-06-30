@@ -170,6 +170,10 @@ ANONYMOUS_INDICATORS: list[str] = [
     "who declined to be identified",
     "who spoke anonymously",
     "granted anonymity",
+    # Internal document leaks — the document is named but the leaker is anonymous
+    "internal documents", "internal memo", "internal email",
+    "internal guidelines", "internal presentation",
+    "multiple sources",
 ]
 
 
@@ -544,6 +548,9 @@ def extract_sources(text: str) -> list[SourceMention]:
         "Pinterest", "Reddit", "Discord", "Slack", "Zoom", "Stripe",
         "Square", "Block", "Shopify", "Congress", "Pentagon",
         "Reuters", "Bloomberg", "WIRED", "Wired",
+        # Chinese / international tech companies
+        "Alibaba", "Baidu", "Tencent", "Huawei", "Xiaomi",
+        "ByteDance", "Bytedance",
         # Common words that start sentences
         "People", "Everyone", "Somebody", "Someone", "Something",
         "Today", "Tomorrow", "Yesterday", "Here", "There",
@@ -740,6 +747,26 @@ def extract_sources(text: str) -> list[SourceMention]:
         ),
         # Publication-as-investigator patterns
         re.compile(r"\b\w+ (?:found|reported|revealed) (?:widespread|significant|extensive|growing)", re.IGNORECASE),
+        # Internal document / memo as anonymous source — the leaked document
+        # is attributed but whoever provided it is unnamed.  Common in enterprise
+        # reporting: "according to internal documents", "an internal memo warned",
+        # "confirmed by multiple sources".
+        re.compile(
+            r"\b(?:according to|viewed by|obtained by|reviewed by|seen by)\s+"
+            r"(?:an?\s+)?internal\s+"
+            r"(?:documents?|memos?|emails?|guidelines?|presentations?|reports?|briefings?)",
+            re.IGNORECASE,
+        ),
+        re.compile(
+            r"\binternal\s+(?:documents?|memos?|emails?|guidelines?|presentations?|reports?|briefings?)\s+"
+            r"(?:obtained|reviewed|seen|viewed|shared|circulated|warned|instructed|showed|stated|revealed|indicated)",
+            re.IGNORECASE,
+        ),
+        re.compile(r"\bconfirmed by multiple sources\b", re.IGNORECASE),
+        re.compile(
+            r"\b(?:reported|confirmed)\s+by\s+(?:The\s+)?[A-Z]\w+\s+and\s+confirmed\s+by\s+multiple\s+sources\b",
+            re.IGNORECASE,
+        ),
     ]
 
     # No-comment / declined-to-comment patterns — signals the entity chose not
@@ -912,6 +939,7 @@ def extract_sources(text: str) -> list[SourceMention]:
         "bytedance", "reddit", "pinterest", "discord", "spotify",
         "netflix", "uber", "lyft", "airbnb", "stripe", "shopify",
         "reuters", "bloomberg",
+        "alibaba", "baidu", "tencent", "huawei", "xiaomi",
     }
 
     for pat in org_source_patterns:
