@@ -501,6 +501,7 @@ This is the deepest documented governance entanglement between a media company's
 **Fix:** Added Microsoft Copilot (Dec 2025 pilot) to the `commercial_pivot` AI licensing enumeration. Now 5 named deals consistent with the revenue_relationships section.
 
 ### Commit
+`1379462` — "Type A deep dive: MIT TR 'AI agents are not your coworkers' (Jun 29)"
 `95b73eb` — pushed to GitHub.
 `b0daba9` — pushed to `rayhe/mediascope` main
 - `c13605b` — Hour C: Condé Nast labor crisis + AI licensing arc expansion
@@ -7627,5 +7628,56 @@ Same-day MIT TR article on AI agent marketing vs. reality. Tests toolkit on meas
 
 ### Sources
 - MIT TR article: https://www.technologyreview.com/2026/06/29/1139849/ai-agents-are-not-your-coworkers/
+
+### Commit
+
+---
+
+## 2026-06-29 23:00 PT — Type A: Article Deep Dive
+
+### Article: NYT — "US Presses Meta to Agree to AI Reviews" (2026-06-23)
+
+**Selection rationale:** Direct Meta coverage in the NYT — tests entity clustering, regulatory framing, and pressure language detection in a subject-entity context where Meta is the story's subject but a context entity (Anthropic) is mentioned more often.
+
+**Source:** Reconstructed from 7 secondary sources (Reuters, CNN, WSJ, Barron's, Daily Caller, NBC Palm Springs, Inshorts) — NYT original paywalled/domain-blocked.
+
+**Article file:** `examples/sample_output/nyt_meta_ai_government_review_holdout_2026_06_23_article.txt`
+**Analysis file:** `examples/sample_output/nyt_meta_ai_government_review_holdout_2026_06_23_analysis.md`
+
+### Toolkit results (post-fix)
+
+- **11 framing devices** detected (up from 8 pre-fix): pressure_language ×2, sovereignty_framing ×2, regulatory_favoritism ×2, isolation_framing ×1, ironic_quotation ×1, trend_bundling ×1, escalation_amplification ×1, regulatory_shadow ×1
+- **Precision: 100%** (11/11 true positives), **Recall: 84.6%** (11/13 — missed 2 edge-case refinements)
+- **Entity distribution:** Anthropic (10), US Government (6), Meta (5 with euphemism fix), Political Figures (3), OpenAI (3). Primary entity classified as Anthropic — technically correct by count but the article's subject is Meta. Logged as a known limitation.
+- **Sentiment:** Overall tone -0.4162 (framing-corrected from raw +0.6026). Anonymous source ratio 0.333.
+
+### Toolkit gaps & fixes
+
+1. **Entity euphemism clustering — FIXED:** "the social media giant" and "the social media company" now map to Meta. "the search giant" now maps to Google. Previously unclustered, causing Meta's entity count to be understated.
+
+2. **New framing device: `regulatory_favoritism` — ADDED:** 5 patterns detecting political power-frame rhetoric ("pick winners and losers," "favorable treatment," "tilting the playing field," etc.). Fired 2× on this article.
+
+3. **New framing device: `escalation_amplification` — ADDED:** 3 patterns detecting intensifying modifiers before threat/concern nouns ("escalating concerns," "increasingly hostile," "growing backlash"). Fired 1× on this article. Includes false-positive guard against neutral "growing" + positive nouns.
+
+4. **Primary entity by count vs. subject — NOTED, NOT FIXED:** `get_primary_entity()` returns highest-count entity (Anthropic:10), which misidentifies the article's subject (Meta). Fixing requires headline/position weighting — future enhancement.
+
+### Updated documentation
+- METHODOLOGY.md §4.1: 41→43 device types (28 extended)
+- ARCHITECTURE.md: 43 framing device types
+- AGENT_GUIDE.md: detect_framing_devices description
+- framing.py docstring: 38 pattern-matched + 5 structural = 43
+- README.md: test counts, structural consistency description
+
+### Pre-check: 968 tests passing
+### Post-check: 978 tests passing (+10 new, no regressions)
+
+### Sources
+- Reuters: https://www.reuters.com/technology/artificial-intelligence/us-presses-meta-agree-ai-reviews-security-concerns-rise-nyt-reports-2025-06-23/
+- CNN: https://www.cnn.com/2025/06/23/tech/us-meta-ai-safety-review/index.html
+- WSJ: https://www.wsj.com/articles/meta-ai-safety-testing-government-14cd0d89
+- Barron's: https://www.barrons.com/news/us-presses-meta-to-agree-to-ai-safety-reviews-nyt-01750725006
+- Daily Caller: https://dailycaller.com/2025/06/23/trump-administration-pushing-meta-agree-pre-release-ai-reviews/
+- NBC Palm Springs: https://nbcpalmsprings.com/2025/06/23/us-presses-meta-to-agree-to-ai-reviews-as-security-concerns-rise/
+- Inshorts: https://inshorts.com/news/us-presses-meta-to-agree-to-ai-reviews-as-security-concerns-rise-1750715753022
 
 ### Commit

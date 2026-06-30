@@ -249,6 +249,114 @@ Ana Swanson contributed reporting from Washington."""
         )
 
 
+class TestRegulatoryFavoritismFraming:
+    """Tests for the regulatory_favoritism framing device type."""
+
+    def test_picking_winners_and_losers(self):
+        text = (
+            "Critics have raised concerns that the emerging framework "
+            "allows the government to pick winners and losers in the AI industry."
+        )
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "regulatory_favoritism" in types, (
+            f"Expected 'regulatory_favoritism' in {types}"
+        )
+
+    def test_favorable_treatment(self):
+        text = (
+            "OpenAI has received favorable treatment in the process, "
+            "while Anthropic faces restrictions."
+        )
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "regulatory_favoritism" in types
+
+    def test_tilting_playing_field(self):
+        text = (
+            "The new rules are tilting the playing field in favor of "
+            "companies aligned with the administration."
+        )
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "regulatory_favoritism" in types
+
+    def test_government_picking_customers(self):
+        text = (
+            "Sam Altman said he doesn't like the idea of the "
+            "government is picking customers for AI companies."
+        )
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "regulatory_favoritism" in types
+
+
+class TestEscalationAmplificationFraming:
+    """Tests for the escalation_amplification framing device type."""
+
+    def test_escalating_concerns(self):
+        text = (
+            "The development comes amid escalating concerns about "
+            "the cybersecurity capabilities of frontier AI systems."
+        )
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "escalation_amplification" in types
+
+    def test_increasingly_hostile(self):
+        text = (
+            "The administration has become increasingly hostile toward "
+            "companies that resist oversight."
+        )
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "escalation_amplification" in types
+
+    def test_growing_backlash(self):
+        text = (
+            "There is growing backlash from the tech industry against "
+            "the government's ad hoc approach to AI regulation."
+        )
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "escalation_amplification" in types
+
+    def test_no_false_positive_neutral_growing(self):
+        text = (
+            "The company reported growing revenue and expanding "
+            "market share in the third quarter."
+        )
+        from mediascope.analyze.framing import detect_framing_devices
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "escalation_amplification" not in types
+
+
+class TestEntityEuphemisms:
+    """Tests for journalistic euphemisms in entity clustering."""
+
+    def test_social_media_giant_maps_to_meta(self):
+        from mediascope.analyze.entities import detect_entities, get_entity_distribution
+        text = "The social media giant said it would comply with the new rules."
+        entities = detect_entities(text)
+        dist = get_entity_distribution(entities)
+        assert "Meta" in dist, f"Expected 'Meta' in distribution, got {dist}"
+
+    def test_search_giant_maps_to_google(self):
+        from mediascope.analyze.entities import detect_entities, get_entity_distribution
+        text = "The search giant has limited Meta's access to Gemini models."
+        entities = detect_entities(text)
+        dist = get_entity_distribution(entities)
+        assert "Google" in dist, f"Expected 'Google' in distribution, got {dist}"
+
+
 class TestFramingDeviceRegistry:
     """Validate total framing device count stays in sync with documentation.
 
@@ -264,8 +372,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 36, (
-            f"Expected 36 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 38, (
+            f"Expected 38 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -312,6 +420,10 @@ class TestFramingDeviceRegistry:
             "worker_replacement_irony",
             # Two-tier treatment (1)
             "two_tier_treatment",
+            # Regulatory favoritism (1)
+            "regulatory_favoritism",
+            # Escalation amplification (1)
+            "escalation_amplification",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual

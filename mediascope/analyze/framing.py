@@ -3312,6 +3312,85 @@ _TWO_TIER_TREATMENT_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["two_tier_treatment"] = _TWO_TIER_TREATMENT_PATTERNS
 
 
+# --- Regulatory favoritism: "picking winners and losers" and related ---
+# Detects political power-frame rhetoric used in regulatory/policy coverage.
+# Common in articles about government intervention in tech industries, where
+# the frame implies arbitrary or politically motivated selection.
+_REGULATORY_FAVORITISM_PATTERNS: list[re.Pattern] = [
+    # "pick(ing) winners and losers"
+    re.compile(
+        r"\bpick(?:ing|s|ed)?\s+winners?\s+and\s+losers?\b",
+        re.IGNORECASE,
+    ),
+    # "choosing/decide who wins" — paraphrases of the same frame
+    re.compile(
+        r"\b(?:choos(?:ing|es?)|decid(?:ing|es?)|determin(?:ing|es?))\s+"
+        r"(?:which\s+(?:companies?|firms?|players?)|who)\s+"
+        r"(?:wins?|loses?|succeeds?|fails?|survives?|thrives?)\b",
+        re.IGNORECASE,
+    ),
+    # "favorable/preferential treatment" — explicit favoritism framing
+    re.compile(
+        r"\b(?:favorable|favourable|preferential|special|privileged)\s+"
+        r"treatment\b",
+        re.IGNORECASE,
+    ),
+    # "tilting the playing field" / "uneven playing field"
+    re.compile(
+        r"\b(?:tilt(?:ing|ed|s)?|uneven|unlevel)\s+"
+        r"(?:the\s+)?playing\s+field\b",
+        re.IGNORECASE,
+    ),
+    # "the government is/was picking customers" — direct Altman quote pattern
+    re.compile(
+        r"\b(?:government|administration|White House|regulators?)\s+"
+        r"(?:is|are|was|were)\s+picking\s+"
+        r"(?:customers?|partners?|companies?)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["regulatory_favoritism"] = _REGULATORY_FAVORITISM_PATTERNS
+
+
+# --- Escalation amplification: intensifying modifiers before threat terms ---
+# Detects editorial amplification where modifiers like "escalating,"
+# "increasingly," "growing," "deepening" precede threat/concern/crisis
+# language, creating a sense of mounting danger that may exceed what the
+# sourced facts support.
+_ESCALATION_AMPLIFICATION_PATTERNS: list[re.Pattern] = [
+    # "escalating/growing/deepening" + threat noun
+    re.compile(
+        r"\b(?:escalat(?:ing|ed)|deepen(?:ing|ed)|intensif(?:ying|ied)|"
+        r"worsen(?:ing|ed)|compound(?:ing|ed))\s+"
+        r"(?:concern|threat|risk|danger|crisis|tension|conflict|"
+        r"fear|worry|alarm|anxiety|unease|backlash|pressure|"
+        r"confrontation|standoff|dispute)s?\b",
+        re.IGNORECASE,
+    ),
+    # "increasingly" + adjective describing negative state
+    re.compile(
+        r"\bincreasingly\s+"
+        r"(?:concerned|worried|alarmed|hostile|aggressive|"
+        r"adversarial|contentious|fraught|volatile|dangerous|"
+        r"uncomfortable|ominous|dire|urgent|desperate|anxious|"
+        r"combative|confrontational|polarized|skeptical|wary)\b",
+        re.IGNORECASE,
+    ),
+    # "growing/rising/surging" + negative abstract noun
+    re.compile(
+        r"\b(?:growing|rising|surging|swelling|ballooning|mushrooming)\s+"
+        r"(?:concern|unease|alarm|anxiety|distrust|suspicion|"
+        r"skepticism|opposition|resistance|backlash|hostility|"
+        r"frustration|anger|outrage|fear|worry|tension|"
+        r"discontent|resentment)s?\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["escalation_amplification"] = _ESCALATION_AMPLIFICATION_PATTERNS
+
+
 def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
     """Detect analogy stacking — 3+ distinct analogies for the same subject.
 
@@ -3670,10 +3749,10 @@ def _detect_social_proof_amplification(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 36 pattern-matched device types plus 5 structural
-    post-pass types (41 total).
+    Scans for 38 pattern-matched device types plus 5 structural
+    post-pass types (43 total).
 
-    Pattern-matched (36): guilt_by_association, anonymous_authority,
+    Pattern-matched (38): guilt_by_association, anonymous_authority,
     catastrophizing, false_balance, selective_omission_signal,
     emotional_appeal, straw_man, loaded_language, refusal_amplification,
     juxtaposition, timeline_implication, power_asymmetry,
@@ -3686,8 +3765,9 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     hypocrisy_frame, outsourced_intensity, confession_framing,
     precedent_analogy, social_proof_amplification,
     latecomer_narrative, regulatory_shadow, editorial_deflation,
-    denial_contradiction, worker_replacement_irony, and
-    two_tier_treatment.
+    denial_contradiction, worker_replacement_irony,
+    two_tier_treatment, regulatory_favoritism, and
+    escalation_amplification.
 
     Structural post-pass (5): kicker_framing, analogy_stacking,
     speculative_framing, trend_bundling, social_proof_amplification.

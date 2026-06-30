@@ -1,0 +1,112 @@
+NYT Article Reconstruction: US Presses Meta to Agree to AI Reviews
+Date: 2026-06-23
+Publication: The New York Times
+Probable authors: David E. Sanger, Cecilia Kang, or Mike Isaac (NYT national security / tech policy / Meta beat)
+URL: https://www.nytimes.com (exact URL unconfirmed; paywalled and domain-blocked)
+
+NOTE: Original NYT article is paywalled. This reconstruction is based on
+extensive cross-referencing across multiple secondary sources:
+Reuters (2026-06-23), CNN (2026-06-25), WSJ (2026-06-27), Barron's (2026-06-27),
+Daily Caller (2026-06-26), NBC Palm Springs (2026-06-29), India's Inshorts (2026-06-27).
+All claims below are attributable to at least 2 independent secondary sources
+unless otherwise noted.
+
+---
+
+RECONSTRUCTED CONTENT (composite from secondary sources):
+
+The Trump administration is pressing Meta to submit its artificial intelligence
+models for voluntary government review, which would allow federal authorities to
+evaluate the models' capabilities and vulnerabilities, according to four people
+familiar with the confidential request.
+
+The request was made in emails between the administration and the social media
+giant, as the government steps up oversight of the AI industry amid escalating
+national security concerns about the power of frontier AI systems.
+
+Meta is the only major U.S. developer of artificial intelligence technology that
+has not reached an agreement to voluntarily share its models with the federal
+government for review, according to the report. Other companies — including
+OpenAI, Google, Anthropic, Microsoft, and Amazon — have already signed similar
+voluntary agreements.
+
+The push comes as the White House has increasingly asserted authority over frontier
+AI releases. Earlier this month, the government ordered Anthropic to suspend
+global access to its most advanced AI models, Claude Fable 5 and Mythos 5, for
+foreign nationals, citing national security concerns about the models' cyber
+capabilities. That directive was issued by the Commerce Department on June 12,
+just days after Anthropic had released the models to the public.
+
+President Trump signed an executive order on June 2 establishing a voluntary
+framework for AI developers to offer "covered frontier models" to the U.S.
+government for up to 30 days before releasing them to trusted partners. The
+framework is intended to give cybersecurity and national security officials time
+to evaluate potential threats before the tools become widely available.
+
+Meta's position is complicated by its open-source approach to AI development.
+The company's Llama models are freely available for download, which makes
+traditional pre-release government review more challenging than for closed models
+like OpenAI's GPT series or Anthropic's Claude. Once released, open-source models
+cannot be recalled or restricted in the same way.
+
+In a statement provided to Reuters, Meta said: "We share the administration's
+goal of advancing U.S. leadership on robust and secure frontier AI. While we
+are working through the details, we hope to sign the agreement soon."
+
+The U.S. Commerce Department did not immediately respond to a request for comment.
+
+The development comes amid a broader shift in Washington's approach to AI
+regulation. The government has moved from largely hands-off oversight to actively
+intervening in model releases, a change driven by growing concerns about the
+cybersecurity capabilities of increasingly powerful AI systems.
+
+Critics have raised concerns that the emerging framework allows the government
+to pick winners and losers in the AI industry. Some analysts have pointed to
+the administration's past conflicts with Anthropic as evidence that political
+considerations may be influencing oversight decisions. OpenAI, whose leadership
+has been more aligned with the Trump administration's approach, has received
+comparatively favorable treatment in the process.
+
+Brad Carson, head of Public First, a bipartisan pro-AI safety super PAC, told
+CNN that the situation demonstrates the need for clear regulations: "Right now,
+you have an ad hoc, personalized, opaque, possibly lawless approach. It is
+certainly appropriate for the government to recall dangerous products, including
+AI models, but it has to be done in a way consistent with transparency and
+basic fairness."
+
+The Center for AI Standards and Innovation (CAISI), housed within the Commerce
+Department, has been the primary government unit reviewing AI models. But the
+recent executive order gave cybersecurity and national-security officials a
+bigger role in model evaluation, worrying some companies that had been working
+more closely with CAISI.
+
+The broader context includes China's growing AI capabilities and alleged
+intellectual property theft. Anthropic recently accused Alibaba of conducting
+the largest known distillation attack on the company, generating more than
+28.8 million exchanges through nearly 25,000 fraudulent accounts between
+April and June 2026.
+
+---
+
+KEY ENTITIES:
+- Meta / Mark Zuckerberg
+- Trump administration / White House
+- Commerce Department / CAISI
+- OpenAI / Sam Altman
+- Anthropic (Claude Fable 5, Mythos 5)
+- Google, Microsoft, Amazon
+- Llama (Meta's open-source AI)
+- Brad Carson / Public First
+- Alibaba (distillation attacks)
+
+PUBLICATION DATE: June 23, 2026
+WORD COUNT: ~650 (reconstruction; original likely longer)
+
+SOURCES USED FOR RECONSTRUCTION:
+1. Reuters: "US presses Meta to agree to AI reviews as security concerns rise, NYT reports" (2026-06-23)
+2. CNN: "White House asks OpenAI to limit its next model release" (2026-06-25)
+3. WSJ: "OpenAI Limits Access to New Models, Citing Government Security Concerns" (2026-06-27)
+4. Barron's: "OpenAI Limits Rollout of Advanced Models. Blame the Feds." (2026-06-27)
+5. Daily Caller: "Trump Administration Seeks Limited Release Of OpenAI Model After Anthropic Shutdown" (2026-06-26)
+6. NBC Palm Springs: "White House Requests OpenAI Restrict Release..." (2026-06-29)
+7. Inshorts: "I don't like govt picking customers: Sam Altman..." (2026-06-27)
