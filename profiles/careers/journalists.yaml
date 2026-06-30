@@ -3612,12 +3612,28 @@ journalists:
     within the same desk. Hosts Wired video "Incognito Mode" and "The Big Interview." Works with Andrew Couts (Senior Editor,
     Security & Investigations).'
 - career:
-  - beat: billionaires, tech startups, wealth
+  - beat: campus news, arts, music
+    end: 2011-06
+    event_type: education
+    notes: 'Staff writer at The Stanford Daily from end of freshman year (~2008). Initially pre-med, pivoted to journalism.
+      Published primarily in the arts section covering music releases and festivals. Co-broke story with Amy Julia Harris (now
+      NYT Metro investigative reporter) revealing Stanford athletes had access to a special list of classes widely regarded
+      as easy. Interned at Half Moon Bay Review, The New York Times, The Bay Citizen, OC Register, and Bloomberg LP/News during
+      college summers. Mac''s sourcing method — attending retirement and goodbye parties to make new contacts — was noted by
+      Harris and later cited in his NYT hiring announcement.'
+    publication: stanford-daily
+    role: staff_writer
+    source_url: https://en.wikipedia.org/wiki/Ryan_Mac
+    start: 2007-09
+  - beat: billionaires, tech startups, wealth, music
     end: 2017-05
     event_type: hired
-    notes: Compiled annual billionaires list, then transitioned to tech startups and companies. Broke Peter Thiel secretly
-      funding Hulk Hogan's Gawker lawsuits (2016). Also covered music industry (Calvin Harris, Steve Aoki, Avicii, Riff Raff).
-      2017 Gerald Loeb Award finalist (Breaking News) with Matt Drange for Gawker coverage.
+    notes: 'Compiled Forbes annual billionaires list, then transitioned to covering tech startups and companies. Also covered
+      music industry — interviewed Calvin Harris, Steve Aoki, Avicii, and rapper Riff Raff (2014) for Forbes video features.
+      Major scoop: broke that Peter Thiel was secretly funding Hulk Hogan''s lawsuits against Gawker (2016), one of the most
+      consequential media stories of the decade. 2017 Gerald Loeb Award finalist (Breaking News) with Matt Drange for Gawker/Thiel
+      coverage. At Forbes, Mac established the wealth-to-accountability pipeline that would define his career — he started tracking
+      how billionaires made money, then shifted to investigating how they wielded power.'
     publication: forbes
     role: staff_writer
     source_url: https://www.forbes.com/sites/ryanmac/
@@ -3626,36 +3642,67 @@ journalists:
     end: 2021-06
     event_type: hired
     notes: 'Senior technology reporter under Mat Honan (SF bureau chief/exec editor) and John Paczkowski (tech editor). Led
-      deep reporting on Facebook that won 2019 Mirror Award and 2020 George Polk Award. Key scoops: Facebook''s willful blindness
-      to content issues; Biden''s Venmo account; Elon Musk''s ''child rapist'' emails about Vernon Unsworth (Thai cave rescue).
-      Musk called Mac a ''f**king asshole'' in email correspondence. Account suspended on Twitter by Musk Dec 15, 2022 (unsuspended
-      2 days later). Worked with Craig Silverman on Polk-winning Facebook disinformation series.'
+      deep reporting on Facebook that won 2019 Mirror Award and 2020 George Polk Award (awarded Feb 2021 ceremony). Key scoops:
+      Facebook''s willful blindness to content issues and privacy failings; unearthed President Biden''s Venmo account and friend
+      network; Elon Musk''s "child rapist" emails about Vernon Unsworth (British cave diver, Tham Luang rescue, 2018). Musk
+      called Mac a "f**king asshole" in email correspondence — these emails were later referenced in Unsworth''s $190M defamation
+      suit against Musk. Worked with Craig Silverman on Polk-winning Facebook disinformation series. Account suspended on Twitter
+      by Musk Dec 15, 2022 (one of 10 journalists suspended; unsuspended 2 days later). In Sept 2020, published personal essay
+      about his Vietnamese grandmother losing her husband during COVID — rare autobiographical piece.'
     publication: buzzfeed-news
     role: senior_reporter
     source_url: https://poynter.org/commentary/2017/buzzfeed-news-hires-ryan-mac-to-join-growing-tech-team/
     start: '2017-06-05'
-  - beat: tech accountability, billionaires, corporate power
+  - beat: tech accountability, billionaires, SpaceX, Meta, corporate power
     event_type: hired
-    notes: 'Hired to cover ''tech accountability'' — tech companies, tech billionaires, and their ecosystems of influence.
-      Based in Los Angeles (previously SF). Recruited by Pui-Wing Tam''s tech team (Ellen, Pui-Wing, Jim, Joe signed announcement).
-      Co-authored ''Character Limit: How Elon Musk Destroyed Twitter'' (Penguin Press, Sept 2024) with Kate Conger. The NYT
-      announcement explicitly frames the role around scrutiny of tech industry power.'
+    notes: 'Hired to cover "tech accountability" — tech companies, tech billionaires, and their ecosystems of influence. Based
+      in Los Angeles (previously SF). Recruited by Pui-Wing Tam''s tech team (business editors Ellen Pollock, Pui-Wing Tam,
+      Jim, Joe signed announcement). Co-authored "Character Limit: How Elon Musk Destroyed Twitter" with Kate Conger (Penguin
+      Press, Sept 17 2024; hardcover ISBN 978-0-593-65613-6; 480pp). Book named Best of 2024 by Kirkus Reviews, Financial Times,
+      New Statesman. Endorsed by John Carreyrou (Bad Blood), Jia Tolentino (Trick Mirror), Taylor Lorenz. KEY 2026 BEAT SHIFT:
+      Mac''s 2026 bylines are dominated by SpaceX IPO coverage (9+ articles Apr-Jun 2026: IPO filing, S-1 financials, Gwynne
+      Shotwell profile, valuation skeptics, corporate governance, Musk compensation). Meta coverage reduced to occasional scoops
+      (Zuckerberg prediction markets "Arena" app Jun 24-27 2026, Meta AI government review Jun 24). This represents a significant
+      analytical shift — Mac was previously assumed to be the primary NYT Meta reporter, but 2026 data shows he now operates
+      more as a Musk/SpaceX specialist with intermittent Meta beats.'
     publication: nytimes
     role: correspondent
     source_url: https://www.nytco.com/press/ryan-mac-joining-technology-team/
     start: 2021-07
+  education:
+    degree: BA
+    institution: Stanford University
+    graduation: 2011
+    enrollment: 2007
+    notes: 'Initially pre-med. Pivoted to journalism via Stanford Daily staff writing (~2008). Summer internships: Half Moon
+      Bay Review, The New York Times, The Bay Citizen (now part of KQED), OC Register, Bloomberg LP/News. Stanford Daily classmate
+      Amy Julia Harris is now NYT Metro investigative reporter — Stanford pipeline to NYT.'
+    source_url: https://en.wikipedia.org/wiki/Ryan_Mac
   name: Ryan Mac
-  notes: 'Key migration: Forbes → BuzzFeed News → NYT. Primary NYT tech accountability reporter covering Meta, Zuckerberg,
-    Musk, and billionaire power. Co-authored ''Character Limit: How Elon Musk Destroyed Twitter'' (2024) with Kate Conger.
-    Vietnamese-American. Stanford BA 2011. Awards: 2019 Mirror Award, 2020 George Polk Award (both for Facebook coverage at
-    BuzzFeed), 2017 Gerald Loeb Award finalist (Thiel/Gawker). Contact: ryan.mac@nytimes.com, Signal: rmac.18. ANALYTICAL
-    VALUE: Mac is the most direct comparison case for Meta coverage across publications — his beat (tech billionaire accountability)
-    stayed constant while his institutional context changed three times. At Forbes he covered wealth; at BuzzFeed he shifted
-    to accountability investigations; at NYT he does the same with NYT''s institutional weight. The Forbes → BuzzFeed → NYT
-    pipeline represents an increasing-prestige trajectory where each move amplified the same adversarial instinct with more
-    institutional backing. His co-authorship of ''Character Limit'' with Kate Conger (also tracked) creates a paired-journalist
-    control: same book, same reporting process, but different career pipelines (Conger via Gizmodo → TechCrunch → NYT vs Mac
-    via Forbes → BuzzFeed → NYT). Worked under Mat Honan (tracked) at BuzzFeed SF bureau.'
+  notes: 'Key migration: Forbes → BuzzFeed News → NYT. Vietnamese-American (self-describes as "american vietnamese"). Education:
+    Stanford University BA 2011 (enrolled 2007, initially pre-med, pivoted to journalism via Stanford Daily staff writing ~2008).
+    Interned during college at Half Moon Bay Review, The New York Times, The Bay Citizen, OC Register, Bloomberg LP/News. Stanford
+    Daily classmate Amy Julia Harris is now NYT Metro investigative reporter — Stanford-to-NYT pipeline. Based in Los Angeles
+    (previously SF). Arsenal FC supporter. Contact: ryan.mac@nytimes.com, Signal rmac.18. Awards: 2017 Gerald Loeb Award finalist
+    (Breaking News, Thiel/Gawker, with Matt Drange; source: newsroom.ucla.edu), 2019 Mirror Award (Facebook coverage at BuzzFeed;
+    source: newhouse.syracuse.edu), 2020 George Polk Award (Facebook disinformation at BuzzFeed, with Craig Silverman; source:
+    buzzfeed.com/buzzfeednews/buzzfeed-news-wins-george-polk-award). Book: "Character Limit: How Elon Musk Destroyed Twitter"
+    with Kate Conger (Penguin Press, Sept 17 2024, hardcover ISBN 9780593656136, ebook ISBN 9780593656143, 480pp). Named Best
+    of 2024 by Kirkus Reviews, Financial Times, New Statesman. Endorsed by Carreyrou (Bad Blood), Tolentino (Trick Mirror),
+    Lorenz (Extremely Online). Goodreads: 4.24/5 avg (3,102 ratings). Personal essay: "At 82, My Grandmother Has Lost Her Husband
+    — and the World as She Knows It" (BuzzFeed News, Sept 2020) — rare autobiographical piece about his Vietnamese grandmother
+    during COVID. ANALYTICAL VALUE: Mac is the most direct comparison case for tech accountability coverage across publications
+    — his beat (billionaire/corporate power scrutiny) stayed constant while his institutional context changed three times. At
+    Forbes he tracked wealth; at BuzzFeed he shifted to accountability investigations; at NYT he does the same with institutional
+    weight. The Forbes → BuzzFeed → NYT pipeline represents an increasing-prestige trajectory where each move amplified the same
+    adversarial instinct with more institutional backing. KEY ANALYTICAL UPDATE (Jun 2026): 2026 byline analysis (via BuzzSumo)
+    reveals Mac''s output is now dominated by SpaceX IPO coverage (9+ articles Apr-Jun 2026: IPO filing, S-1 financials, Gwynne
+    Shotwell profile, $1.77T valuation skeptics, corporate governance). Meta coverage reduced to intermittent scoops (Zuckerberg
+    prediction markets "Arena" app Jun 24-27 2026, Meta AI government review Jun 24). This complicates the assumption that Mac
+    = "primary NYT Meta reporter" for DiD analysis — Mike Isaac may now carry more consistent Meta coverage volume at NYT. Co-authorship
+    of "Character Limit" with Kate Conger (tracked) creates a paired-journalist control: same book, same reporting process, different
+    career pipelines (Conger via Gizmodo → TechCrunch → NYT vs Mac via Forbes → BuzzFeed → NYT). Worked under Mat Honan (tracked)
+    at BuzzFeed SF bureau.'
 - career:
   - beat: general
     end: 2011-06
