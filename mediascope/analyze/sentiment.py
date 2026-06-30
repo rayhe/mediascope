@@ -331,6 +331,27 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "noisy", "constant hum",
     "NIMBY",
     "California billionaires",
+    # Political rhetoric / dismissive language — pejorative labels and
+    # loaded idioms common in political-tech intersection coverage where
+    # policy proposals are framed through partisan lens.  Gap discovered
+    # in Gizmodo "Kids Over Clicks" / Project 2029 article (Jun 2026):
+    # "hucksters", "robbed blind", "carved up" all went undetected.
+    "hucksters", "huckster",
+    "robbed blind", "robbing blind",
+    "carved up", "carving up",
+    "grifter", "grifters", "grift",
+    "con man", "con men", "con artist",
+    "shakedown",
+    "racket", "racketeer",
+    "swindler", "swindled",
+    "charlatans", "charlatan",
+    "snake oil", "snake-oil",
+    "peddling", "peddle",
+    "duped", "duping",
+    "bamboozled",
+    "fleeced", "fleecing",
+    "looted", "looting",
+    "plundered", "plundering",
 ]
 
 # Passive/victim vs. active/powerful framing indicators

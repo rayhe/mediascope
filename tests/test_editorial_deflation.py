@@ -218,3 +218,93 @@ class TestEditorialDeflationIntegration:
         devices = detect_framing_devices(text)
         types = [d.device_type for d in devices]
         assert "editorial_deflation" not in types
+
+
+class TestConcessionThenDismissal:
+    """Tests for the concession-then-dismissal variant of editorial_deflation.
+
+    Pattern: "Noble/Good/Fine X, indeed/sure, but Y" — acknowledges a point
+    only to immediately undercut it.  Discovered in Gizmodo's "Kids Over
+    Clicks" / Project 2029 article (Jun 2026).
+    """
+
+    def test_noble_efforts_indeed_but(self):
+        """The exact pattern from Gizmodo's Project 2029 article."""
+        text = (
+            "Noble efforts, indeed, but maybe not the most pressing concern "
+            "as President Trump dismantles democratic institutions."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "editorial_deflation" in types
+
+    def test_admirable_goal_sure_but(self):
+        """Variant with 'admirable goal, sure, but'."""
+        text = (
+            "Admirable goal, sure, but the company has shown no evidence "
+            "it can execute on privacy commitments."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "editorial_deflation" in types
+
+    def test_worthy_initiative_of_course_but(self):
+        """Variant with 'worthy initiative, of course, but'."""
+        text = (
+            "A worthy initiative, of course, but one that conveniently "
+            "distracts from the underlying business model."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "editorial_deflation" in types
+
+    def test_fine_idea_to_be_sure_but(self):
+        """Variant with 'fine idea, to be sure, but'."""
+        text = (
+            "A fine idea, to be sure, but the track record suggests "
+            "otherwise."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "editorial_deflation" in types
+
+    def test_reasonable_proposal_to_be_fair_but(self):
+        """Variant with 'reasonable proposal, to be fair, but'."""
+        text = (
+            "A reasonable proposal, to be fair, but it leaves the biggest "
+            "question unanswered."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "editorial_deflation" in types
+
+    def test_that_may_be_true_but(self):
+        """'That may be true, but' — explicit concession variant."""
+        text = (
+            "That may be true, but the company's history of broken promises "
+            "makes it difficult to take at face value."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "editorial_deflation" in types
+
+    def test_that_is_fair_but(self):
+        """'That's fair, but' — short concession variant."""
+        text = (
+            "That's fair, but the timing raises questions about whether "
+            "this is genuine concern or strategic positioning."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "editorial_deflation" in types
+
+    def test_no_false_positive_on_genuine_concession(self):
+        """Genuine analytical concession without dismissive intent."""
+        text = (
+            "The effort to protect children online is indeed a noble goal "
+            "that both parties can support. The bipartisan vote of 267-117 "
+            "reflects broad agreement on the need for action."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "editorial_deflation" not in types

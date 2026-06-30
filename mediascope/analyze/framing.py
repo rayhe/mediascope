@@ -2958,6 +2958,26 @@ _EDITORIAL_DEFLATION_PATTERNS: list[re.Pattern] = [
         r"(?:works?|happens?|materializes?|pans?\s+out|comes?\s+together|pays?\s+off)\b",
         re.IGNORECASE,
     ),
+    # Concession-then-dismissal: "Noble/Good/Fine/Admirable X, indeed/sure/
+    # of course, but [not/maybe not/hardly]" — acknowledges a point only to
+    # immediately undercut it.  Detected in Gizmodo's "Kids Over Clicks"
+    # article (Jun 2026): "Noble efforts, indeed, but maybe not the most
+    # pressing concern" went undetected.
+    re.compile(
+        r"\b(?:noble|admirable|good|fine|laudable|fair|worthy|reasonable|"
+        r"well-intentioned|well\s+intentioned)\s+"
+        r"(?:effort|goal|idea|aim|point|thought|gesture|ambition|initiative|proposal)s?"
+        r",?\s+(?:indeed|sure|of\s+course|certainly|to\s+be\s+(?:sure|fair))"
+        r",?\s+but\b",
+        re.IGNORECASE,
+    ),
+    # "That may be true/fair/right, but" — explicit concession before pivot
+    re.compile(
+        r"\bthat(?:'s|\s+is|\s+may\s+be|\s+might\s+be)\s+"
+        r"(?:true|fair|right|reasonable|understandable|valid)"
+        r",?\s+but\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["editorial_deflation"] = _EDITORIAL_DEFLATION_PATTERNS
