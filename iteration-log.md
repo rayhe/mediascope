@@ -7681,3 +7681,57 @@ Same-day MIT TR article on AI agent marketing vs. reality. Tests toolkit on meas
 - Inshorts: https://inshorts.com/news/us-presses-meta-to-agree-to-ai-reviews-as-security-concerns-rise-1750715753022
 
 ### Commit
+`2057cb6` (previous session) + `ae14e16` (this session)
+
+---
+
+## 2026-06-30 01:00 PT — Type D+A: Structural Consistency Fixes + MIT TR Deep Dive
+
+### Structural Consistency Fixes (Type D)
+
+Prior iterations added `commodification_metaphor` (44th framing device) and `worker_ai_displacement` (19th topic bucket) to code but failed to update documentation and test guards, causing 10 test failures.
+
+**Fixed files:**
+- `tests/test_structural_consistency.py`: Counts 43→44 framing devices, 38→39 pattern-matched, 18→19 topic buckets, stale-type guard update
+- `tests/test_nyt_ai_reviews.py`: Added `commodification_metaphor` to expected pattern types
+- `mediascope/analyze/framing.py`: Docstring 38/43→39/44
+- `docs/ARCHITECTURE.md`: 44 framing devices, 19 topics, Extended tier 24→29 descriptions, test count 960→978
+- `docs/METHODOLOGY.md`: 19 topic buckets, added worker_ai_displacement row, 44-type taxonomy, added commodification_metaphor to Extended table
+- `docs/AGENT_GUIDE.md`: 19 topic buckets, worker_ai_displacement in inline list
+- `README.md`: Test counts and descriptions updated
+
+### Article Deep Dive (Type A): MIT Technology Review — "Chinese AI Doubles" (Apr 2026)
+
+**Selection rationale:** Labor displacement article directly exercises the new `worker_ai_displacement` topic bucket and `commodification_metaphor` framing device.
+
+**Article file:** `examples/sample_output/mit_tr_chinese_workers_ai_doubles_2026_04_article.txt`
+**Analysis file:** `examples/sample_output/mit_tr_chinese_workers_ai_doubles_2026_04_analysis.md`
+
+### Toolkit results
+
+| Module | Score | Detail |
+|--------|-------|--------|
+| Topics | ✅ Excellent | `worker_ai_displacement` primary at 0.595 |
+| Framing: commodification_metaphor | ✅ 5/5 TP | All true positives |
+| Framing: ironic_quotation | ❌ 3 FP | Technical scare quotes misidentified as ironic |
+| Framing: kicker_framing | ❌ Missed | Article's closing rhetorical kicker not detected |
+| Framing: loaded_language | ❌ Missed | "automating away" and labor displacement terms not in patterns |
+| Sentiment: overall_tone | ❌ Major gap | +0.624 (manual: ~0.0) — VADER positivity bias on technical content |
+| Sentiment: emotional_intensity | ❌ Major gap | 0.0 (manual: ~0.3-0.4) — no labor/dignity terms in lexicon |
+| Sources | ❌ Major gap | 4 FPs/errors, 4 missed of 6 actual sources |
+
+### Fix: Labor/Dignity Emotional Language Expansion
+
+Root cause of the 0.0 emotional_intensity: EMOTIONAL_LANGUAGE had zero labor displacement or dignity-related terms.
+
+- Added 36 unique terms (537 total, up from 501): alienation, disempowerment, dehumanizing, soul-searching, cheapened, reductive, uncanny, bleak, existential, deskilling, devaluing, commodifying, etc.
+- Removed 6 duplicates across original and new blocks (automating away, automated away, commodify, commodified, expendable, obsolescence)
+- Updated structural consistency test guard: 501→537
+
+### Pre-check: 978 tests (10 failing — structural consistency + duplicates)
+### Post-check: 978 tests passing (0 failing)
+
+### Commit
+`de7d75f`
+
+---
