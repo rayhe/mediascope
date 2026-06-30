@@ -7735,3 +7735,47 @@ Root cause of the 0.0 emotional_intensity: EMOTIONAL_LANGUAGE had zero labor dis
 `de7d75f`
 
 ---
+
+## 2026-06-30 09:00 PT — Type A: Article Deep Dive (MIT TR Anthropic Feud)
+
+### Focus
+Complete systematic analysis of `mittr_anthropic_feud_jun2026.txt` against its manual annotation. Write the missing `_analysis.md` file. Fix source extraction false positives found during comparison.
+
+### Bug Found: "called" naming-context false positives
+**Problem:** Pattern 5c (verb-before-single-name) in `sources.py` was matching "called Mythos" and "called Fable" from naming constructions like "an AI model called Mythos". The verb "called" has dual meaning: attribution ("she called it reckless") and naming ("a model called X"). When a naming noun (model, version, product, system, etc.) precedes "called", the match is a naming construction, not a source attribution.
+
+**Fix:** Added `_CALLED_NAMING_LOOKBEHIND` regex that checks 60 characters before the match. If a naming noun is found at the end of the preceding context (where "called" is the matched verb), the match is skipped. Covers 50+ naming nouns across technology, organizational, and general categories.
+
+**Impact:** Sources reduced from 5 (false) to 3 (correct) on this article. No regressions — 983 tests pass.
+
+### Annotation Correction: VADER compound
+Annotation stated VADER compound of 0.634 for this article. Actual raw VADER compound is **0.9851**. The 0.634 appears to be from a different computation method (possibly per-sentence average, which is 0.073). Updated annotation to reflect the correct value. This makes the annotation's critique of VADER miscalibration even more valid — 0.9851 is a near-maximum positive score for an article that is clearly skeptical of government policy.
+
+### Analysis Results Summary
+- **Entities:** 25 mentions, 5 clusters — exact match to annotation cluster totals
+- **Topics:** government_oversight (0.54) primary ✓, with known product_launch false positive (0.22)
+- **Framing:** 7 types, 18 instances (vs annotation's 17; +1 defensible catastrophizing)
+- **Sources:** 3 sources after fix ✓ (Bruno Retailleau, Zhipu, cybersecurity experts)
+- **Sentiment:** VADER 0.9851 (dramatically misreads the skeptical editorial stance)
+- **Speculative language:** 0.255 (25.5% — very high, correctly detected)
+
+### Files Changed
+- `mediascope/analyze/sources.py` — added `_CALLED_NAMING_LOOKBEHIND` naming-context filter for Pattern 5c
+- `tests/test_source_extraction_fixes.py` — added `TestCalledNamingContextFilter` class (5 new tests)
+- `examples/sample_output/mittr_anthropic_feud_jun2026_analysis.md` — new full analysis file
+- `examples/sample_output/mittr_anthropic_feud_jun2026_annotation.md` — corrected VADER compound (0.634 → 0.9851)
+- `README.md` — updated test counts (978 → 983, test_source_extraction_fixes 14 → 19)
+
+### Remaining Gaps Documented
+1. VADER composite recalibration for speculative opinion pieces (spec_ratio > 0.20 + rhetorical questions)
+2. Amazon competitive conflict detection module
+3. Hypocrisy frame cross-sentence detection
+4. product_launch topic false positive suppression in regulatory context
+
+### Tests
+983 passed (38 files) — up from 978 (+5 new tests)
+
+### Commit
+`47e8d5a`
+
+---

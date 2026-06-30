@@ -554,6 +554,26 @@ def extract_sources(text: str) -> list[SourceMention]:
     # Pattern 2 handles this for full names but not for single-word surnames
     # (bug found via MIT TR DeepMind multi-agent article where ~5 "says Shah"
     # instances were all missed).
+    #
+    # Naming-context filter for "called": the verb "called" is a valid
+    # attribution verb ("she called it a disaster") but also means "named"
+    # ("a model called Mythos").  When the preceding context shows a naming
+    # construction (noun + "called"), skip the match.  This prevents AI model
+    # names, product names, and company names introduced with "called" from
+    # being misidentified as journalistic sources.
+    # The regex matches the text *before* the "called [Name]" match.
+    # Since m.start() is the start of "called", pre_ctx ends right before
+    # "called", so we look for the naming noun at the end of the context.
+    _CALLED_NAMING_LOOKBEHIND = re.compile(
+        r"\b(?:model|version|product|system|company|tool|app|service|platform|"
+        r"organization|group|device|feature|program|project|initiative|startup|"
+        r"firm|entity|technology|framework|protocol|standard|module|package|"
+        r"technique|method|approach|concept|plan|policy|operation|mission|"
+        r"variant|iteration|release|update|upgrade|fork|branch|build|suite|"
+        r"chip|processor|chatbot|assistant|agent|bot|AI|software|hardware|"
+        r"thing|one|it)\s*$",
+        re.IGNORECASE,
+    )
     verb_before_single = re.compile(
         rf"\b({verb_alternation})\s+([A-Z][a-z]{{2,}})\b",
     )
@@ -572,6 +592,12 @@ def extract_sources(text: str) -> list[SourceMention]:
         # full name — same dedup logic as Pattern 5b.
         if any(seen.endswith(" " + name) for seen in seen_names):
             continue
+        # Skip "called [Name]" when preceding context shows a naming
+        # construction (e.g. "a model called Mythos"), not an attribution.
+        if verb == "called":
+            pre_ctx = text[max(0, m.start() - 60):m.start()]
+            if _CALLED_NAMING_LOOKBEHIND.search(pre_ctx):
+                continue
 
         seen_names.add(name)
 

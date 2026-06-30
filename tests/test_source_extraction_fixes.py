@@ -118,3 +118,62 @@ class TestAttributionVerbExpansion:
         sources = extract_sources(text)
         names = [s.name for s in sources]
         assert "Miranda Chen" in names
+
+
+class TestCalledNamingContextFilter:
+    """'called' in naming context should not produce false-positive sources.
+
+    When text says "a model called Mythos" or "a version called Fable",
+    the word "called" means "named", not an attribution verb.  Pattern 5c
+    must skip these matches to avoid treating product/model names as
+    journalistic sources.  (Bug found via MIT TR Anthropic feud article
+    where Mythos and Fable were false-positive sources.)
+    """
+
+    def test_model_called_name_not_a_source(self):
+        """'an AI model called Mythos' — naming, not attribution."""
+        text = (
+            "The company said it had built an AI model called Mythos "
+            "that was so good at working with code it could pose a "
+            "global cybersecurity threat."
+        )
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Mythos" not in names
+
+    def test_version_called_name_not_a_source(self):
+        """'a modified version called Fable' — naming, not attribution."""
+        text = (
+            "Then it released a modified version called Fable which "
+            "it said was safer to the public on Tuesday."
+        )
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Fable" not in names
+
+    def test_product_called_name_not_a_source(self):
+        """'a product called Titan' — naming, not attribution."""
+        text = (
+            "Meta is reportedly working on a product called Titan "
+            "that would compete directly with existing wearables."
+        )
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Titan" not in names
+
+    def test_called_as_attribution_still_works(self):
+        """'Jassy called Fable dangerous' — real attribution, should work."""
+        text = (
+            "Amazon CEO Andy Jassy called Fable dangerous and urged "
+            "the government to take action."
+        )
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Andy Jassy" in names
+
+    def test_called_as_attribution_single_name(self):
+        """'Shah called it reckless' — real single-name attribution."""
+        text = "Shah called it reckless and irresponsible."
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Shah" in names

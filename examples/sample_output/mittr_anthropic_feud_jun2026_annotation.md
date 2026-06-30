@@ -38,7 +38,7 @@
 
 | Metric | Value | Notes |
 |--------|-------|-------|
-| overall_tone | 0.634 | VADER leans positive due to high hedged/speculative language vs. direct negativity |
+| overall_tone | 0.9851 | VADER full-document compound; dramatically misreads this skeptical article (see analysis) |
 | emotional_language_intensity | 0.059 | Low — article uses intellectual framing not emotional language |
 | speculative_language_ratio | 0.255 | HIGH — 25.5% of sentences contain speculative markers |
 | anonymous_source_ratio | 0.0 | No anonymous sources — newsletter opinion format |
@@ -49,7 +49,7 @@
 
 **Manual tone:** Mildly negative toward US government AI policy (−0.15), neutral-to-sympathetic toward Anthropic, skeptical of Amazon's motives. The article frames government action as reactive ("superficial reaction"), potentially counterproductive (making the US "more vulnerable"), and inconsistent (Trump deregulated then cracked down). Amazon's Jassy is cast as self-interested.
 
-**Toolkit VADER score (+0.634)** significantly misreads this article. The hedged, speculative prose avoids direct negative language (no "condemned", "attacked", "outraged") and uses intellectual framing that VADER reads as neutral-positive. But the editorial position is clearly skeptical of the government's approach. The composite scorer's high speculative_language_ratio (0.255) and negative headline-body alignment (-0.8) partially correct for this, but the overall tone still skews too positive.
+**Toolkit VADER score (+0.9851)** dramatically misreads this article. The hedged, speculative prose avoids direct negative language (no "condemned", "attacked", "outraged") and uses intellectual framing that VADER reads as neutral-positive. But the editorial position is clearly skeptical of the government's approach. The composite scorer's high speculative_language_ratio (0.255) and negative headline-body alignment (-0.8) partially correct for this, but the overall tone still skews too positive. The full-document VADER compound tends toward extremes (±1.0) on long texts, making it even less useful as a standalone sentiment measure for articles.
 
 **Key insight for toolkit improvement:** Opinion/newsletter pieces that argue through speculation rather than direct statement need different calibration. When speculative_language_ratio > 0.20 AND rhetorical_questions are present, the overall_tone should receive a larger downward framing correction.
 
