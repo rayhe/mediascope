@@ -5578,3 +5578,90 @@ journalists:
     from those who covered the AI winter through the hype cycle. His reporting scope (AI business at Wired) also enables direct
     comparison with Lauren Goode (consumer tech at Wired) and Leah Feiger (politics at Wired) to test whether beat assignment
     or institutional culture is the stronger framing determinant within a single publication.'
+- career:
+  - beat: Apple, consumer technology
+    end: 2009-01
+    event_type: hired
+    notes: Lab tester and associate editor at Macworld (IDG publication). Benchmarked Macs, wrote product reviews. Attended
+      first iPhone event (Jan 2007) shortly after starting, where Steve Jobs unveiled the original iPhone. Started the "From
+      the Lab" blog. UC Davis graduate in English Literature and Film Studies, news editor for The California Aggie student
+      newspaper. Grew up in Milpitas, Bay Area.
+    publication: macworld
+    role: associate_editor
+    source_url: https://www.macstories.net/msinterviews/macstories-interviews-brian-x-chen/
+    start: 2007-01
+  - beat: Apple, mobile, gadgets
+    end: 2011-09
+    event_type: hired
+    notes: 'Staff writer at Wired.com/Gadget Lab. Covered Apple, mobile phones, and cutting-edge gadgets. Notable incident:
+      Jan 2009 hackintosh video tutorial led to Apple legal confrontation with Condé Nast (Apple sent cease-and-desist, not
+      formal lawsuit — Chen initially misreported as lawsuit on Twitter). Published "Always On: How the iPhone Unlocked the
+      Anything-Anytime-Anywhere Future—And Locked Us In" (Da Capo Press, ~April 2011), his first book on the smartphone
+      revolution''s impact on society, business, and culture. KEY: First tracked publication at a Condé Nast outlet —
+      establishes baseline for institutional Condé Nast framing before NYT migration.'
+    publication: wired
+    role: staff_writer
+    source_url: https://www.macstories.net/msinterviews/macstories-interviews-brian-x-chen/
+    start: 2009-01
+  - beat: consumer technology
+    end: 2011-11
+    event_type: freelance
+    notes: '"Helped Mr. Lam start The Wirecutter when he was between jobs in 2011" (per NYT acquisition coverage, Sydney Ember,
+      Oct 25, 2016). Co-launched the product recommendation site with Brian Lam (former Gizmodo EIC). The Wirecutter was later
+      acquired by The New York Times for $30M in October 2016. KEY FINANCIAL CONNECTION: Chen co-founded Wirecutter, then
+      joined NYT, then NYT acquired Wirecutter — creating an unusual financial-editorial nexus. He was not on staff at
+      Wirecutter when NYT bought it, but his early involvement establishes a pre-existing relationship between Chen and Lam''s
+      product recommendation methodology, which later influenced NYT consumer tech coverage.'
+    publication: wirecutter
+    role: co_founder
+    source_url: https://talkingbiznews.com/they-move/ny-times-buys-tech-site-the-wirecutter/
+    start: 2011-06
+  - beat: Apple, wireless industry, mobile devices
+    end: 2015-07
+    event_type: hired
+    notes: 'Technology reporter for Business Day tech team. Hired alongside Nicole Perlroth (from Forbes). Reporting editors:
+      Damon Darlin (tech editor) and Larry Ingrassia (business editor). Wrote for expanded Bits blog and the newspaper. Covered
+      major tech companies (primarily Apple) and wireless carriers. Based in New York. KEY MIGRATION: Wired (Condé Nast) →
+      NYT represents a shift from specialist tech publication to prestige general newspaper. Tests whether consumer tech framing
+      modulates in NYT''s institutional context vs. Wired''s Condé Nast culture. Also crosses from ad-supported tech media
+      to NYT''s subscription/advertising hybrid model.'
+    publication: nytimes
+    role: technology_reporter
+    source_url: https://talkingbiznews.com/they-move/nyt-hires-two-for-tech-beat/
+    start: 2011-11
+  - beat: consumer technology, privacy, social implications of tech
+    event_type: promoted
+    notes: 'Promoted to Lead Consumer Technology Writer. Launched "Tech Fix" column (Aug 26, 2015) — weekly feature dissecting
+      causes of tech problems using data, reporting, and analysis. Column later pivoted (2022) from product-focused troubleshooting
+      to societal implications: privacy erosion, AI impact, surveillance cameras, phone ownership culture. Also led Personal
+      Tech newsletter; contributed to "On Tech" daily tech newsletter. Contributed to culture desk covering Asian and Asian
+      American cinema. Part of NYT staff winning 2019 George Polk Award for National Reporting — coverage showed "how tech
+      companies, including Facebook, empowered hucksters and propagandists, and deceived the public to maximize profit."
+      Polk citation: "reshaping public perceptions of Silicon Valley, generating calls to action from lawmakers." Also
+      National Magazine Award finalist. NOTABLE META COVERAGE: 2018 "I Downloaded the Information Facebook Has on Me"
+      article went viral, showing how Facebook collected vast personal data even from light users. 2024 Humane AI Pin review.
+      Daring Fireball (John Gruber, Mar 2024) critique: "Seven Years of Institutional Anti-''Big-Tech'' Bias at The New York
+      Times Might Lead to Cognitive Dissonance" — cited Chen''s contradictory positions on software updates (2017: planned
+      obsolescence is "a myth," slowdowns are caused by software upgrades; 2024: not getting software updates degrades
+      performance). Tests whether NYT institutional framing drives coverage direction regardless of factual consistency.'
+    publication: nytimes
+    role: lead_consumer_tech_writer
+    source_url: https://www.nytco.com/press/the-new-york-times-debuts-tech-fix-column-by-brian-chen/
+    start: 2015-07
+  name: Brian X. Chen
+  notes: 'Key migrations: Macworld (IDG) → Wired (Condé Nast) → NYT. Author of "Always On" (Da Capo Press, 2011). Co-founded
+    The Wirecutter with Brian Lam in 2011 (between Wired and NYT jobs); Wirecutter later acquired by NYT for $30M in 2016.
+    At NYT since November 2011; Lead Consumer Technology Writer since July 2015. Writes "Tech Fix" column on social implications
+    of technology. 2019 George Polk Award for National Reporting (team, Facebook/tech coverage). National Magazine Award
+    finalist. Email: brian.chen@nytimes.com. Social: @bxchen (Twitter), @bxchen@mstdn.social. KEY FOR MEDIASCOPE: (1) WIRED →
+    NYT MIGRATION is the primary DiD signal — tests whether consumer tech framing modulates when moving from Condé Nast
+    editorial culture (Wired under Mat Honan/later Drummond) to NYT institutional norms (Business Day desk, subscription model).
+    His Wired tenure was pre-Drummond adversarial pivot, so the comparison isolates NYT institutional effects. (2) WIRECUTTER
+    NEXUS: Co-founded Wirecutter, joined NYT, NYT bought Wirecutter — unusual financial-editorial intersection. (3) NYT LIFER
+    BASELINE: 14+ years at NYT (2011-present) makes him second only to Steve Lohr (~47 years) as an NYT institutional framing
+    baseline. Unlike Lohr (foreign → business → tech), Chen has stayed consumer tech throughout. (4) GRUBER CONTRADICTION TEST:
+    Daring Fireball''s documented factual contradiction (2017 vs 2024 on software update slowdowns) provides a rare external
+    falsification signal for institutional framing drift — the NYT''s editorial posture shifted from defending tech to critiquing
+    it, and Chen''s positions shifted in parallel, supporting the institutional-framing-dominance hypothesis. (5) COLUMN PIVOT:
+    Tech Fix evolved from product troubleshooting (2015-2021) to societal critique (2022+), tracking the broader NYT editorial
+    pivot toward adversarial tech coverage. Testable via pre/post tonal analysis anchored to the column''s stated reboot date.'

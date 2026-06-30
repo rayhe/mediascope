@@ -501,6 +501,7 @@ This is the deepest documented governance entanglement between a media company's
 **Fix:** Added Microsoft Copilot (Dec 2025 pilot) to the `commercial_pivot` AI licensing enumeration. Now 5 named deals consistent with the revenue_relationships section.
 
 ### Commit
+`b0daba9` — pushed to `rayhe/mediascope` main
 - `c13605b` — Hour C: Condé Nast labor crisis + AI licensing arc expansion
 - 1 file changed, 115 insertions, 11 deletions
 - 820 tests passing, YAML validated
