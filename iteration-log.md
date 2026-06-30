@@ -4,6 +4,52 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-30 05:00 PT — Type B: Journalist/Publication Research — Gideon Lichfield Deep Expansion
+
+**Focus:** Complete career reconstruction of Gideon Lichfield — the highest-value migration case in the dataset (EIC of both MIT Tech Review and Wired).
+**Commit:** `bb29283` — 127 insertions, 2 files changed
+
+### Problem
+
+Lichfield had only 3 career entries (Quartz, MIT TR, Wired) despite being the most analytically important profile in the toolkit — the only person who led two tracked publications sequentially. His 16-year Economist career (4 foreign bureaus + multiple NYC roles) was completely missing. No education data. No post-Wired career. Critical for DiD regression setup.
+
+### Improvements
+
+**Career entries expanded: 3 → 9**
+
+| # | Publication | Role | Period | Source |
+|---|------------|------|--------|--------|
+| 1 | The Economist | Science correspondent (London) | 1996-1998 | Wikipedia, Wikitia |
+| 2 | The Economist | Correspondent (Mexico City) | 1998-2002 | Beyond Intractability interview |
+| 3 | The Economist | Correspondent (Moscow) | 2002-2005 | Stern Strategy Group bio |
+| 4 | The Economist | Correspondent (Jerusalem) | 2005-2008 | WEF contributor page |
+| 5 | The Economist | Deputy Digital Editor + media editor + Economist Education head + Film Project director (NYC) | 2008-2012 | Morelia Film Festival bio |
+| 6 | Quartz | Global News Editor (founding) | 2012-2017 | Adweek announcement |
+| 7 | MIT Tech Review | EIC | 2017-2020 | MIT TR (expanded) |
+| 8 | Wired | Global Editorial Director | 2021-2023 | Wired.com (expanded) |
+| 9 | Independent | Democracy Futurist (Futurepolis, UC Berkeley, Harvard Ash Center, CUNY, stealth startup) | 2023-present | NEW |
+
+**Key new data:**
+- Education: BSc Physics & Philosophy (Bristol 1991-94), MSc Philosophy of Social Science (LSE 1994-95)
+- Born Aug 4, 1971, London. British, Jewish. 5 languages.
+- Economist tenure was 16 years (not "15" as previously stated)
+- Wired title was "Global Editorial Director" — responsible for all editions (US, UK, Italy, Japan), reported to Anna Wintour
+- Departure memo (May 31, 2023): missed "committing acts of journalism with my own two hands"
+- Post-Wired: Futurepolis Substack, CITRIS Tech Policy Fellow at UC Berkeley, Harvard Ash Center, CUNY AI Advisory Board, stealth startup co-founder
+- DiD insight: his post-Wired pivot to democratic governance reveals a pre-existing ideological thesis that predates his editorial leadership — must control for this in institutional framing analysis
+
+**Also updated `editorial_changes.yaml`:**
+- MIT TR entry: expanded background (16 years Economist, new mission statement context)
+- Wired entry: corrected title to Global Editorial Director, added departure context and Anna Wintour reporting line
+
+### Source URLs (14 references)
+- Wikipedia, Wikitia, Beyond Intractability (Mar 2026 interview), Stern Strategy Group, WEF, Morelia Film Festival, Adweek, The Org, RocketReach, Futurepolis Substack, Data & Society, ONA23, TalkingBizNews, TheWrap, MediaPost
+
+### Test Results
+- **1018 tests pass** (unchanged)
+
+---
+
 ## 2026-06-30 04:00 PT — Type A: Article Deep Dive (NYT Child Safety Study)
 
 **Article:** NYT coverage of "Broken, Buried, or Missing" child safety features study (Jun 29, 2026)
