@@ -294,9 +294,18 @@ mit_corporate_research_partnerships:
         Bill Gates, Eni, Khosla Ventures. Google and Nvidia are both companies MIT TR covers.
       - DG Matrix: AI data center power solutions, $60M Series A LED by Engine Ventures.
         Directly serves the AI infrastructure market.
-      - Boston Metal: Industrial decarbonization via electrolysis.
+      - Boston Metal: Industrial decarbonization via electrolysis. MIT-ORIGIN COMPANY —
+        founded by MIT Prof. Sadoway, Prof. Allanore, and James Yurko PhD '01. Technology
+        patented at MIT, licensed from MIT TLO. Engine investing in MIT faculty spinout is
+        institutional self-dealing. $370M+ raised (ArcelorMittal, BHP, Microsoft, etc.).
+        Engine invested May 2026 (Later Stage VC).
       - Axiomatic_AI: AI company in Engine portfolio.
       - TeraDAR: Radar technology company.
+      - Blue Energy: Energy production (Apr 2026 investment).
+      - Sora Fuel: Energy production (Mar 2026 investment).
+      - Terrestrial Bio: Biotechnology (Mar 2026 investment).
+      - AtmosZero: Environmental services, industrial heat decarbonization (Mar 2026).
+      - Trener Robotics: Hardware/robotics (Feb 2026 investment).
 
       CONFLICT SIGNIFICANCE: MIT's parent institution directly profits from tech/AI startup
       exits through Engine Ventures while MIT TR covers the AI industry. The Celestial AI →
@@ -339,6 +348,99 @@ mit_corporate_research_partnerships:
         date: "2026-02-02"
         relevance: "Photonic interconnect for AI data centers. MIT profits from AI infrastructure exit while MIT TR covers AI industry."
         source_url: "https://www.marvell.com/company/newsroom/marvell-to-acquire-celestial-ai.html"
+      - company: "Atlantic Quantum"
+        acquirer: "Google Quantum AI"
+        value: "Undisclosed"
+        date: "2025-10-03"
+        relevance: >
+          CRITICAL CONFLICT PIPELINE: Atlantic Quantum was an MIT-founded startup (emerged
+          from MIT in 2021, founded by team of physicists including CEO Bharath Kannan,
+          co-founders Will Oliver, Simon Gustavsson, Jonas Bylander, Tim Menke, Youngkyu Sung,
+          Leon Ding, Shereen Shermak). Developed modular chip stack combining qubits and
+          superconducting control electronics. Google acquired it to accelerate its quantum
+          computing roadmap (scale superconducting qubit hardware for error-corrected quantum
+          computers). This creates a TRIPLE conflict loop: (1) MIT research → MIT-origin startup
+          → Engine Ventures investment → Google acquisition → MIT profits from exit, (2) Google
+          ALSO funds MIT research through the MIT-Google Program at Schwarzman College of
+          Computing, so MIT profited from an exit TO one of its own research sponsors, (3) MIT TR
+          covers Google extensively and covers quantum computing as a major beat. The financial
+          pipeline from MIT research lab to Google's balance sheet via Engine Ventures is a
+          textbook institutional self-dealing loop that is never disclosed in MIT TR's Google or
+          quantum computing coverage.
+        source_urls:
+          - "https://blog.google/technology/research/atlantic-quantum-google-quantum-ai/"
+          - "https://neowin.net/news/google-quantum-ai-acquires-atlantic-quantum-unlocks-faster-chip-development/"
+          - "https://thequantuminsider.com/2025/10/03/atlantic-quantum-joins-google-quantum-ai/"
+      - company: "Resonant Link Medical"
+        acquirer: "Unknown"
+        value: "Undisclosed"
+        date: "2025-02-10"
+        relevance: "Medical device wireless power transfer company."
+      - company: "Radix (Cambridge)"
+        acquirer: "Unknown"
+        value: "Undisclosed"
+        date: "2024-12-30"
+        relevance: "Cambridge-based company."
+      - company: "Suono Bio"
+        acquirer: "Unknown"
+        value: "Undisclosed"
+        date: "2024-06-26"
+        relevance: "Ultrasonic therapeutics delivery. One of Engine's first 7 portfolio companies (2017 cohort)."
+      - company: "Zapata Quantum"
+        acquirer: "N/A (bankruptcy)"
+        value: "Out of business (SPAC failure)"
+        date: "2024-03-28"
+        relevance: "Quantum computing company that went public via SPAC then failed. Demonstrates Engine portfolio risk."
+      - company: "Hedron"
+        acquirer: "N/A"
+        value: "Out of business"
+        date: "2023-12-29"
+        relevance: "Failed portfolio company."
+      - company: "E25Bio"
+        acquirer: "N/A"
+        value: "Out of business"
+        date: "2023-01-27"
+        relevance: "COVID-19 testing platform. One of Engine's early portfolio companies. Failed post-pandemic."
+    recent_2026_investments:
+      - company: "Boston Metal"
+        date: "2026-05-20"
+        deal_type: "Later Stage VC"
+        sector: "Industrial decarbonization (green steel)"
+        mit_origin: true
+        relevance: >
+          INSTITUTIONAL SELF-DEALING: Boston Metal was FOUNDED by MIT Professor Emeritus
+          Donald Sadoway, Professor Antoine Allanore, and James Yurko PhD '01. Core MOE
+          (Molten Oxide Electrolysis) technology was developed at MIT, patented at MIT, and
+          licensed from MIT's Technology Licensing Office. Chief Scientist Guillaume Lambotte
+          is a former MIT postdoc. The technology originated from a NASA-funded project at MIT
+          in the mid-2000s to extract oxygen from lunar rocks. Engine Ventures investing in a
+          company founded by its own institution's professors, using its own institution's
+          patents, is a direct institutional self-dealing loop. Boston Metal has raised $370M+
+          from BHP Ventures, Breakthrough Energy Ventures, ArcelorMittal ($120M Series C lead),
+          Microsoft Climate Innovation Fund, plus a $51M convertible note (Jul 2025). MIT TR
+          has COVERED Boston Metal (technologyreview.com article "A new way to make steel could
+          cut 5% of CO2 emissions") — covering a company that is both an Engine Ventures
+          portfolio company AND founded by MIT professors, without disclosing either connection.
+        source_urls:
+          - "https://pitchbook.com/profiles/engine-ventures"
+          - "https://news.mit.edu/2024/making-steel-with-electricity-boston-metal-0613"
+          - "https://tlo.mit.edu/technologies/making-steel-electricity"
+          - "https://research.contrary.com/company/boston-metal"
+      - company: "Blue Energy"
+        date: "2026-04-22"
+        sector: "Energy Production"
+      - company: "Sora Fuel"
+        date: "2026-03-27"
+        sector: "Energy Production"
+      - company: "Terrestrial Bio"
+        date: "2026-03-26"
+        sector: "Biotechnology"
+      - company: "AtmosZero"
+        date: "2026-03-23"
+        sector: "Environmental Services (industrial heat decarbonization)"
+      - company: "Trener Robotics"
+        date: "2026-02-10"
+        sector: "Hardware/Robotics"
     source_urls:
       - "https://www.engine.xyz/about"
       - "https://pitchbook.com/profiles/engine-ventures"
@@ -752,12 +854,15 @@ known_conflicts:
     description: >
       MIT's institutional venture arm, Engine Ventures (formerly The Engine), has $1B+
       under management across 4 funds, with MIT providing $60M+ in anchor capital ($25M
-      Fund I, $35M Fund II). Engine Ventures' portfolio includes AI infrastructure
-      companies, and its largest known exit — Celestial AI acquired by Marvell Technology
-      for $3.25B (Feb 2, 2026) — is a photonic interconnect company for AI data centers.
-      MIT directly profits from AI infrastructure exits while MIT TR covers the AI/chip
-      industry including Marvell. Engine was founded under Israel Ruiz (MIT EVP/Treasurer),
-      who also sat on MIT TR's board (FY2019-2020) AND approved Epstein's post-conviction
+      Fund I, $35M Fund II). Engine Ventures has 8 exits total (PitchBook), including 2
+      out-of-business failures. Its largest known exit — Celestial AI acquired by Marvell
+      Technology for $3.25B (Feb 2, 2026) — is a photonic interconnect company for AI data
+      centers. The second most significant exit — Atlantic Quantum acquired by Google Quantum
+      AI (Oct 3, 2025) — is an MIT-founded quantum computing startup. The Google exit is
+      particularly problematic because Google ALSO funds MIT research through the MIT-Google
+      Program at Schwarzman College, meaning MIT profited from a venture exit TO one of its
+      own research sponsors. Engine was founded under Israel Ruiz (MIT EVP/Treasurer), who
+      also sat on MIT TR's board (FY2019-2020) AND approved Epstein's post-conviction
       donations — a three-way governance intersection between MIT's venture arm, its
       publication, and its most significant governance scandal.
     severity: 3
@@ -779,10 +884,13 @@ known_conflicts:
       Google, Nvidia, Bill Gates, Eni, Khosla Ventures) ties MIT's venture returns to
       the success of companies MIT TR covers (Google, Nvidia). DG Matrix ($60M Series A
       LED by Engine) serves AI data center power — the same AI infrastructure market MIT
-      TR reports on. MIT has a financial interest in the success of these portfolio
-      companies and their investors/customers, creating a soft conflict when MIT TR
-      covers the AI infrastructure buildout, fusion energy, or the companies funding
-      Engine portfolio startups.
+      TR reports on. Boston Metal (May 2026 investment) is an MIT faculty spinout that
+      MIT TR has directly covered ("A new way to make steel..."). Atlantic Quantum was
+      acquired by Google (Oct 2025) — meaning MIT profited from an exit to one of its
+      own research sponsors while MIT TR covers Google. The 2026 portfolio additions
+      (6 new investments in 5 months: Boston Metal, Blue Energy, Sora Fuel, Terrestrial
+      Bio, AtmosZero, Trener Robotics) show Engine is accelerating its investment pace,
+      expanding MIT's financial exposure to industries MIT TR covers.
     severity: 2
     evidence: >
       Engine Ventures portfolio page. PitchBook investment records. Commonwealth Fusion
@@ -791,6 +899,69 @@ known_conflicts:
     source_urls:
       - "https://www.engine.xyz/portfolio"
       - "https://pitchbook.com/profiles/engine-ventures"
+  - type: "engine_ventures_mit_origin_self_dealing"
+    description: >
+      Engine Ventures' May 2026 investment in Boston Metal represents a DIRECT
+      institutional self-dealing loop. Boston Metal was founded in 2012 by MIT Professor
+      Emeritus Donald Sadoway, Professor Antoine Allanore, and James Yurko PhD '01. The
+      core Molten Oxide Electrolysis (MOE) technology was developed at MIT, patented at MIT,
+      and licensed from MIT's Technology Licensing Office (TLO). Chief Scientist Guillaume
+      Lambotte is a former MIT postdoc who stated: "All of the fundamental studies and the
+      initial technologies came out of MIT. We spun out of research that was patented at MIT
+      and licensed from MIT's Technology Licensing Office." The technology originated from a
+      NASA-funded project at MIT in the mid-2000s. Engine Ventures (MIT's own venture arm)
+      is now investing in a company founded by MIT professors, built on MIT patents, licensed
+      through MIT's TLO. MIT potentially earns royalties on the IP AND venture returns from
+      the equity — double-dipping on the same innovation pipeline. MIT TR has covered Boston
+      Metal (technologyreview.com article "A new way to make steel could cut 5% of CO2
+      emissions") without disclosing that the subject is both an Engine portfolio company and
+      an MIT faculty spinout. Boston Metal has raised $370M+ from ArcelorMittal ($120M Series
+      C lead), BHP Ventures, Breakthrough Energy Ventures, Microsoft Climate Innovation Fund.
+    severity: 3
+    evidence: >
+      MIT News (Jun 2024): "The company, which was founded by MIT Professor Emeritus Donald
+      Sadoway, Professor Antoine Allanore, and James Yurko PhD '01." MIT TLO page confirms
+      IP origin. PitchBook: Engine Ventures invested May 20, 2026 (Later Stage VC). Contrary
+      Research business breakdown confirms founding story. Boston Metal total funding $370M+
+      (ArcelorMittal $120M Series C, BHP Ventures, Breakthrough Energy Ventures, Microsoft
+      Climate Innovation Fund, $51M convertible note Jul 2025).
+    source_urls:
+      - "https://news.mit.edu/2024/making-steel-with-electricity-boston-metal-0613"
+      - "https://tlo.mit.edu/technologies/making-steel-electricity"
+      - "https://pitchbook.com/profiles/engine-ventures"
+      - "https://research.contrary.com/company/boston-metal"
+      - "https://technologyreview.com/s/612322/a-new-way-to-make-steel-could-cut-5-of-co2-emissions/"
+  - type: "cross_publication_yosemite_lp"
+    description: >
+      MIT is a Limited Partner in Yosemite Fund I ($200M), the cancer-focused venture capital
+      fund founded by Reed Jobs (son of Steve Jobs and Laurene Powell Jobs) in August 2023.
+      Yosemite is a spinout of Emerson Collective — the SAME entity that owns The Atlantic,
+      another publication tracked by MediaScope. This creates a CROSS-PUBLICATION financial
+      link: MIT (parent of MIT Technology Review) and Emerson Collective (parent of The
+      Atlantic) are CO-INVESTORS in the same venture fund run by the Atlantic owner's son.
+      Other Yosemite LPs include Memorial Sloan Kettering Cancer Center, The Rockefeller
+      University, and venture capitalist John Doerr. Emerson Collective itself is also an LP.
+      Yosemite operates with a dual for-profit/philanthropic model (2.5% of fund allocated to
+      a donor-advised fund for no-strings-attached grants to cancer researchers). Reed Jobs
+      served as Managing Director of Health at Emerson Collective for 8 years before founding
+      Yosemite. While this connection is in the healthcare/cancer space (not directly tech
+      coverage), it creates an institutional relationship between the parent organizations of
+      two tracked publications that could affect editorial independence: MIT and Emerson
+      Collective share a financial interest in the same fund's success.
+    severity: 2
+    evidence: >
+      Gunderson Dettmer press release (Aug 2023): "institutions including Memorial Sloan
+      Kettering Cancer Center, The Rockefeller University, and MIT." PitchBook (Aug 2023):
+      "Yosemite Fund I has already secured $200 million, including commitments from MIT."
+      TechCrunch Disrupt (Oct 2023): Reed Jobs confirmed MIT as investor. Entrepreneur.com
+      (Aug 2023): confirmed LP roster. YourStory: "Emerson Collective...will be participating
+      as a Limited Partner." The Atlantic profile (atlantic.yaml) independently documents
+      this connection from the Emerson Collective side.
+    source_urls:
+      - "https://gunder.com/news/gunderson-dettmer-advises-yosemite-in-the-formation-of-yosemite-fund-i/"
+      - "https://techcrunch.com/2023/10/17/how-reed-jobs-venture-firm-tackles-cancer/"
+      - "https://www.entrepreneur.com/business-news/steve-jobs-son-reed-launches-a-vc-firm-yosemite/456675"
+      - "https://pitchbook.com/news/articles/steve-jobs-son-vc-specialist-healthcare-fund"
   - type: "lincoln_laboratory_defense_conflicts"
     description: >
       MIT Lincoln Laboratory — the DoD's LARGEST FFRDC R&D lab — operates under a
