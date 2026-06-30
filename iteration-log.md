@@ -4,6 +4,73 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-30 16:00 PT — Type C: Ownership & Funding Deep Dive — Atlantic / Emerson Collective
+
+**Focus:** World Labs $1B round expansion, Yosemite Fund II grants update, Atlantic subscription/business updates, Nicholas Thompson career expansion
+
+### World Labs Investment — Major Expansion
+
+Expanded the existing 1-line stub into a comprehensive entry with sourced details:
+
+| Detail | Finding |
+|--------|---------|
+| Round size | $1 BILLION (Feb 18, 2026) |
+| Valuation | ~$5B (Bloomberg, Jan 2026) |
+| Investors | AMD, Nvidia, Autodesk ($200M + advisor), Emerson Collective, Fidelity, Sea |
+| Prior round | $230M seed (Sep 2024) at $1B valuation |
+| Founder | Fei-Fei Li ("godmother of AI") |
+| Product | Marble — generates editable 3D environments via Gaussian splatting |
+| Competition | Spatial intelligence → AR/VR/robotics = DIRECT Meta Reality Labs competitor |
+
+**Key analytical addition:** Co-founder Justin Johnson previously deployed style transfer technology AT META, then left to co-found World Labs. Yann LeCun left Meta for AMI Labs to work on world models. This confirms spatial/world model AI as a core competitive frontier. EC now has financial positions in **FOUR** direct Meta AI/tech competitors: Apple ($16B+ stock), OpenAI (io Products exit + licensing), Mistral (open-source LLMs vs Llama), World Labs (spatial AI vs Reality Labs).
+
+### Yosemite Fund Update (Feb 12, 2026 PR Newswire)
+
+- $18M+ in grants deployed since 2023 launch
+- American Cancer Society partnership formalized for research area identification
+- Craig Crews/Yale preclinical research → Quarry Thera formation (concrete pipeline example)
+- Fund II: >$200M raised toward $350M target (Amgen, MSK, MIT, Doerr as LPs)
+- Reed Jobs title: "Founder and Managing Partner" (corrected from prior entry)
+
+### Atlantic Business Updates
+
+- **Premium Plus** ($199/yr) launched Jan 14, 2026 — first new subscription tier since 2019. Family sharing (up to 4 people), keepsake book, ad-free, tote.
+- **"Well over 1.4 million subscriptions"** (Jan 2026 official figure)
+- 4 tiers now: Digital $79, Print+Digital $89, Premium $120, Premium Plus $199
+- **Seabourn cruise partnership** (3-year, ~Mar 2026): Atlantic programming on select voyages, 12-day sailing Oct 2028, onboard libraries, free digital access + 3-month post-trip subscription
+- **Atlantic Across America** (launched Dec 2025): 3-year 50-state events initiative
+- **Chief Product Officer:** Jefferson Rabb (added)
+- **Dynamic pricing:** Smart meter paywall, $60-100 variable pricing based on behavioral data. Increased ARPU without impacting churn/bounce.
+
+### Nicholas Thompson Updates
+
+- "The Running Ground" published Oct 2025 (Penguin Random House) — national bestseller, Kirkus Reviews Best Book of the Year
+- American 50K record for men 45+ (2021); fastest 50-mile in world for age group (2025)
+- WEF "Meet the Leader" podcast appearance Jun 8, 2026
+- 4 consecutive NMA General Excellence nominations (won 2022, 2023)
+
+### Stats (post-iteration)
+- Tests: 1058 passed — no regressions
+- All 5 publications have Type C deep dives
+- Atlantic profile: +103 lines, -17 lines (net +86)
+- Commit: `acdefbc`
+
+### Sources
+- https://reuters.com/technology/ai-pioneer-fei-fei-lis-world-labs-raises-1-billion-funding-2026-02-18/
+- https://techcrunch.com/2026/02/18/world-labs-1b-autodesk/
+- https://news.crunchbase.com/ai/world-labs-biggest-funding-rounds-weekly/
+- https://spectrum.ieee.org/fei-fei-li-world-labs
+- https://subscriptioninsider.com/the-atlantic-launches-premium-plus/
+- https://subscriptioninsider.com/the-atlantic-builds-beyond-content/
+- https://www.morningstar.com/news/pr-newswire/20260212ny/yosemite-announces-more-than-18-million-deployed-in-grants
+- https://forbesindia.com/article/2024-billionaires/reed-jobs-living-legacy/
+- https://www.weforum.org/people/nicholas-thompson/
+- https://www.penguinrandomhouse.com/books/678434/the-running-ground-by-nicholas-thompson
+- https://en.wikipedia.org/wiki/Emerson_Collective
+- https://fastcompany.com/world-labs-marble-3d/
+
+---
+
 ## 2026-06-30 15:00 PT — Type B: Journalist/Publication Research — Isabella Ward (Bloomberg → Wired) + Allison Arieff MIT TR Departure
 
 **Focus:** New Wired London hire research + MIT Tech Review editorial departure tracking
