@@ -156,6 +156,31 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "downright ugly", "ugly truth",
     "train your own replacement", "training their replacements",
     "Big Beautiful Layoff",
+    # Labor dignity / worker displacement emotional terms — needed for
+    # coverage of AI replacing workers, skills commodification, and
+    # workplace dehumanization where editorial language uses existential
+    # vocabulary that VADER reads as neutral. Gap discovered during
+    # MIT TR Chinese AI doubles analysis (Jun 2026): emotional_intensity
+    # returned 0.0 on an article heavy with alienation/dignity language.
+    "alienation", "alienating", "alienated",
+    "disempowerment", "disempowered", "disempowering",
+    "dehumanizing", "dehumanized", "dehumanization",
+    "soul-searching", "soul searching",
+    "cheapened", "cheapening",
+    "reductive", "reductively",
+    "uncanny", "uncannily",
+    "bleak", "bleakly", "bleakness",
+    "existential", "existential anxiety", "existential crisis",
+    "commodified", "commodification", "commodify",
+    "interchangeable",
+    "expendable", "expendability",
+    "flattened", "flattening",
+    "erased", "erasure",
+    "stripping away",
+    "loss of dignity", "loss of identity",
+    "replaced by machines", "replaced by AI",
+    "automated away", "automating away",
+    "made obsolete", "obsolescence",
     # Privacy/surveillance emotional terms
     "surveillance", "biometric surveillance", "mass identification",
     "faceprints", "faceprint", "vacuum up", "weaponized",
@@ -371,12 +396,10 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "overhyped", "overhype", "over-hyped",
     "branding exercise",
     "job displacement",
-    "automating away", "automated away",
     "deskilling", "deskilled",
     "devaluing", "devalue", "devalued",
-    "commodify", "commodified", "commodifying",
-    "expendable",
-    "obsolete", "obsolescence",
+    "commodifying",
+    "obsolete",
 ]
 
 # Passive/victim vs. active/powerful framing indicators

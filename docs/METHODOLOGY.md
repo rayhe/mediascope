@@ -141,7 +141,7 @@ More coverage ≠ more bias. We normalize by:
 
 ### 3.1 Standardized Topic Buckets
 
-Articles are classified into 18 topic buckets to enable apples-to-apples comparison:
+Articles are classified into 19 topic buckets to enable apples-to-apples comparison:
 
 | Topic | Keywords |
 |---|---|
@@ -163,16 +163,17 @@ Articles are classified into 18 topic buckets to enable apples-to-apples compari
 | `defense_military` | military, defense contractor, warfare, combat, Army, Pentagon, DoD, drone, weapons system, IVAS, Anduril, Palantir, Special Operations, tactical AI |
 | `infrastructure_impact` | data center, hyperscale, power grid, electricity demand, power bills, NIMBY, rezoning, environmental impact, community opposition, tax breaks, megawatt, cooling system |
 | `labor_market` | labor market, employment growth, unemployment, job market, workforce, BLS, Bureau of Labor Statistics, wage growth, labor economist, job displacement, reskilling, career model, labor transition |
+| `worker_ai_displacement` | automate themselves, train their replacement, replace workers, worker dignity, alienation, dehumanizing, AI double, AI clones, sabotage, countermeasures, worker resistance, self-automation, flattened into modules, digital labor, AI replacement, replaced by AI |
 
 Classification uses keyword matching with TF-IDF weighting. An article can match multiple topics; the top 3 by confidence are retained.
 
-**Note on topic design:** The 18 buckets are designed for apples-to-apples comparison within a topic across companies. The `ai_generated_content` topic captures coverage of AI output quality and generative AI byproducts, distinct from `ai_development` (technology creation). The `workplace_culture` topic captures internal organizational dynamics (morale, burnout, culture), distinct from `layoffs` (formal workforce actions) and `executive_behavior` (leadership decisions). The `labor_market` topic captures macroeconomic employment and wage dynamics (BLS data, labor economists, job displacement), distinct from `workplace_culture` (company-internal dynamics) and `layoffs` (specific workforce actions). The `prediction_markets` topic captures coverage of betting/wagering platforms and event contracts, distinct from `financial_results` (earnings/market performance). The `corporate_strategy` topic captures M&A, partnerships, and market entry decisions, distinct from `product_launch` (specific releases). The `infrastructure_impact` topic captures coverage of data center construction, energy/water usage, community opposition (NIMBY), and environmental consequences of tech infrastructure, distinct from `corporate_strategy` (business decisions) and `ai_development` (technology itself).
+**Note on topic design:** The 19 buckets are designed for apples-to-apples comparison within a topic across companies. The `ai_generated_content` topic captures coverage of AI output quality and generative AI byproducts, distinct from `ai_development` (technology creation). The `workplace_culture` topic captures internal organizational dynamics (morale, burnout, culture), distinct from `layoffs` (formal workforce actions) and `executive_behavior` (leadership decisions). The `labor_market` topic captures macroeconomic employment and wage dynamics (BLS data, labor economists, job displacement), distinct from `workplace_culture` (company-internal dynamics) and `layoffs` (specific workforce actions). The `worker_ai_displacement` topic captures coverage of workers whose labor directly trains, builds, or enables the AI systems that replace them — the recursive irony of self-automation — distinct from `labor_market` (macro employment trends), `layoffs` (formal workforce actions), and `workplace_culture` (internal morale). The `prediction_markets` topic captures coverage of betting/wagering platforms and event contracts, distinct from `financial_results` (earnings/market performance). The `corporate_strategy` topic captures M&A, partnerships, and market entry decisions, distinct from `product_launch` (specific releases). The `infrastructure_impact` topic captures coverage of data center construction, energy/water usage, community opposition (NIMBY), and environmental consequences of tech infrastructure, distinct from `corporate_strategy` (business decisions) and `ai_development` (technology itself).
 
 ## 4. Framing Device Detection
 
 ### 4.1 Taxonomy
 
-MediaScope detects 43 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (28 added from real-article analysis), and structural devices (5 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 44 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (29 added from real-article analysis), and structural devices (5 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -224,6 +225,7 @@ These were added through systematic analysis of real articles from the five trac
 
 | **Regulatory Favoritism** | Frames government oversight as politically motivated selection of industry winners, implying arbitrary or self-interested intervention rather than neutral regulation | "picking winners and losers"; "favorable/preferential treatment"; "tilting the playing field"; "government is picking customers/partners" | NYT Meta AI government review holdout (Jun 2026) — "Critics have raised concerns that the emerging framework allows the government to pick winners and losers in the AI industry"; Sam Altman: "I don't like the idea of the government picking the customers" |
 | **Escalation Amplification** | Intensifying modifiers ("escalating," "increasingly," "growing," "deepening") preceding threat/concern language, creating editorial momentum beyond what sourced facts support | "escalating [concerns/threats/tensions]"; "increasingly [concerned/hostile/wary]"; "growing [alarm/suspicion/backlash/frustration]" | NYT Meta AI government review holdout (Jun 2026) — "escalating national security concerns about the power of frontier AI systems" |
+| **Commodification Metaphor** | Language that flattens human identity, work, or relationships into interchangeable modules, tokens, data points, or raw material — making humans sound like inputs to a system rather than people. Distinct from worker_replacement_irony (which emphasizes the recursive irony of building one's own replacement) because commodification_metaphor focuses on the dehumanizing language itself | "distill/extract/flatten [colleagues/workers] into [skills/modules/tokens]"; "reducing a person to a [skill/task]"; "a cold farewell can be turned into warm tokens"; "digital [human/worker/employee]" | MIT Tech Review Chinese tech workers article (Apr 2026) — "distill their colleagues' skills and personality traits," "flattened into modules in a way that made the worker easier to replace," "a cold farewell can be turned into warm tokens." Also: Nvidia "digital humans," corporate "digital twin" euphemisms |
 
 #### Structural Devices (Post-Pass)
 
@@ -493,7 +495,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 39-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 44-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |

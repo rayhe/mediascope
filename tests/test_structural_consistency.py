@@ -48,8 +48,8 @@ class TestFramingDeviceTypeCount:
     def test_total_device_types_is_43(self):
         """Code should define exactly 43 unique framing device types."""
         types = _all_device_types_from_code()
-        assert len(types) == 43, (
-            f"Expected 43 framing device types, got {len(types)}.\n"
+        assert len(types) == 44, (
+            f"Expected 44 framing device types, got {len(types)}.\n"
             f"Types: {sorted(types)}\n"
             "If you added a new device, update this test AND the docs:\n"
             "  - docs/METHODOLOGY.md §4.1 total and tier counts\n"
@@ -65,8 +65,8 @@ class TestFramingDeviceTypeCount:
         pattern_keys = set(re.findall(r'_DEVICE_PATTERNS\["(\w+)"\]', src))
         initial_keys = set(re.findall(r'"(\w+)":\s*_[A-Z_]+_PATTERNS', src))
         pattern_types = initial_keys | pattern_keys
-        assert len(pattern_types) == 38, (
-            f"Expected 38 pattern-matched device types, got {len(pattern_types)}.\n"
+        assert len(pattern_types) == 39, (
+            f"Expected 39 pattern-matched device types, got {len(pattern_types)}.\n"
             f"Types: {sorted(pattern_types)}"
         )
 
@@ -125,16 +125,16 @@ class TestDocCountConsistency:
     """Guard: documented counts match across files."""
 
     def test_architecture_device_count(self):
-        """ARCHITECTURE.md must say 43 framing device types."""
+        """ARCHITECTURE.md must say 44 framing device types."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
-        assert "**43 framing device types**" in doc, (
+        assert "**44 framing device types**" in doc, (
             "ARCHITECTURE.md framing device count is stale. Should be 43."
         )
 
     def test_methodology_device_count(self):
-        """METHODOLOGY.md must say 43 framing device types."""
+        """METHODOLOGY.md must say 44 framing device types."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
-        assert "43 framing device types" in doc, (
+        assert "44 framing device types" in doc, (
             "METHODOLOGY.md framing device count is stale. Should be 43."
         )
 
@@ -173,10 +173,10 @@ class TestTopicBucketConsistency:
     """Guard: topic bucket counts match across code and docs."""
 
     def test_topic_count_in_code(self):
-        """Code should define exactly 18 topic buckets."""
+        """Code should define exactly 19 topic buckets."""
         from mediascope.analyze.topics import TOPIC_KEYWORDS
-        assert len(TOPIC_KEYWORDS) == 18, (
-            f"Expected 18 topic buckets, got {len(TOPIC_KEYWORDS)}.\n"
+        assert len(TOPIC_KEYWORDS) == 19, (
+            f"Expected 19 topic buckets, got {len(TOPIC_KEYWORDS)}.\n"
             f"Buckets: {sorted(TOPIC_KEYWORDS.keys())}\n"
             "If you added a new topic, update this test AND the docs:\n"
             "  - docs/METHODOLOGY.md §3.1 topic count and table\n"
@@ -185,23 +185,23 @@ class TestTopicBucketConsistency:
         )
 
     def test_methodology_topic_count(self):
-        """METHODOLOGY.md must say 18 topic buckets."""
+        """METHODOLOGY.md must say 19 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
-        assert "18 topic buckets" in doc, (
+        assert "19 topic buckets" in doc, (
             "METHODOLOGY.md topic count is stale. Should be 17."
         )
 
     def test_agent_guide_topic_count(self):
-        """AGENT_GUIDE.md must list 18 topic buckets."""
+        """AGENT_GUIDE.md must list 19 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
-        assert "18 topic buckets" in doc, (
+        assert "19 topic buckets" in doc, (
             "AGENT_GUIDE.md topic count is stale. Should be 17."
         )
 
     def test_architecture_topic_count(self):
-        """ARCHITECTURE.md must say 18 topic buckets."""
+        """ARCHITECTURE.md must say 19 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
-        assert "18 topic buckets" in doc, (
+        assert "19 topic buckets" in doc, (
             "ARCHITECTURE.md topic count is stale. Should be 17."
         )
 
@@ -381,35 +381,35 @@ class TestCrossReferenceConsistency:
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
         assert "33-type" not in doc, (
             "METHODOLOGY.md still references stale '33-type' taxonomy in §13 "
-            "(same-event comparison). Should be '39-type' after latecomer_narrative "
+            "(same-event comparison). Should be '44-type' after latecomer_narrative "
             "and regulatory_shadow were added."
         )
         assert "34-type" not in doc, (
             "METHODOLOGY.md still references stale '34-type' taxonomy. "
-            "Should be '39-type' after latecomer_narrative "
+            "Should be '44-type' after latecomer_narrative "
             "and regulatory_shadow were added."
         )
         assert "35-type" not in doc, (
             "METHODOLOGY.md still references stale '35-type' taxonomy. "
-            "Should be '39-type' after latecomer_narrative "
+            "Should be '44-type' after latecomer_narrative "
             "and regulatory_shadow were added."
         )
         assert "36-type" not in doc, (
             "METHODOLOGY.md still references stale '36-type' taxonomy. "
-            "Should be '39-type' after latecomer_narrative "
+            "Should be '44-type' after latecomer_narrative "
             "and regulatory_shadow were added."
         )
         assert "37-type" not in doc, (
             "METHODOLOGY.md still references stale '37-type' taxonomy. "
-            "Should be '39-type' after denial_contradiction was added."
+            "Should be '44-type' after denial_contradiction was added."
         )
         assert "38-type" not in doc, (
             "METHODOLOGY.md still references stale '38-type' taxonomy. "
-            "Should be '39-type' after denial_contradiction was added."
+            "Should be '44-type' after denial_contradiction was added."
         )
 
     def test_readme_test_topics_description_says_16(self):
-        """README.md test_topics.py description must reference 18 topic buckets."""
+        """README.md test_topics.py description must reference 19 topic buckets."""
         doc = (_REPO_ROOT / "README.md").read_text()
         # Find the test_topics.py row in the test table
         match = re.search(r"test_topics\.py.*?(\d+)\s+standardized topic buckets", doc)
@@ -417,28 +417,28 @@ class TestCrossReferenceConsistency:
             "README.md test_topics.py row is missing topic bucket count reference."
         )
         claimed = int(match.group(1))
-        assert claimed == 18, (
+        assert claimed == 19, (
             f"README.md test_topics.py description references {claimed} topic buckets, "
-            f"should be 17. The count is stale — labor_market was added."
+            f"should be 19. The count is stale — worker_ai_displacement was added."
         )
 
     def test_no_stale_33_type_in_any_doc(self):
         """No documentation file should reference stale framing count X-type strings."""
         for doc_file in (_REPO_ROOT / "docs").glob("*.md"):
             content = doc_file.read_text()
-            for stale in ("33-type", "34-type", "35-type", "36-type", "37-type", "38-type"):
+            for stale in ("33-type", "34-type", "35-type", "36-type", "37-type", "38-type", "39-type"):
                 assert stale not in content, (
                     f"{doc_file.name} contains stale '{stale}' reference. "
-                    f"Should be '39-type' after denial_contradiction was added."
+                    f"Should be '44-type' after commodification_metaphor was added."
                 )
 
     def test_no_stale_33_framing_device_in_readme(self):
         """README.md should not reference stale framing device counts."""
         doc = (_REPO_ROOT / "README.md").read_text()
-        stale_refs = re.findall(r"\b3[3-8][- ](?:type|framing|device)", doc)
+        stale_refs = re.findall(r"\b3[3-9][- ](?:type|framing|device)", doc)
         assert not stale_refs, (
             f"README.md contains stale framing reference(s): {stale_refs}. "
-            f"Should be 43 after denial_contradiction was added."
+            f"Should be 44 after commodification_metaphor was added."
         )
 
     def test_readme_topic_count_in_description(self):
@@ -496,7 +496,7 @@ class TestInlineTopicListConsistency:
         code_topics = self._code_topic_names()
         # Find the topic list in the classify_topic JSON schema description
         match = re.search(
-            r"18 topic buckets:\s*([\w_]+(?:,\s*[\w_]+)*)\.",
+            r"19 topic buckets:\s*([\w_]+(?:,\s*[\w_]+)*)\.",
             doc,
         )
         assert match, (
@@ -719,11 +719,11 @@ class TestEmotionalLanguageCount:
     """
 
     def test_emotional_language_count(self):
-        """EMOTIONAL_LANGUAGE should contain exactly 501 unique terms."""
+        """EMOTIONAL_LANGUAGE should contain exactly 537 unique terms."""
         from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
 
-        assert len(EMOTIONAL_LANGUAGE) == 501, (
-            f"Expected 501 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
+        assert len(EMOTIONAL_LANGUAGE) == 537, (
+            f"Expected 537 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
             "If you added or removed terms, update this test to the new count.\n"
             "Also check for duplicates: len(set(EMOTIONAL_LANGUAGE)) should match."
         )

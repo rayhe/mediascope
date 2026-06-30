@@ -3391,6 +3391,80 @@ _ESCALATION_AMPLIFICATION_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["escalation_amplification"] = _ESCALATION_AMPLIFICATION_PATTERNS
 
 
+# ---------------------------------------------------------------------------
+# Commodification / dehumanization metaphor: framing that reduces human
+# qualities, labor, or identity to mechanical, digital, or industrial units.
+#
+# Distinct from worker_replacement_irony (which focuses on the irony of
+# workers training their own replacements). This device captures language
+# that flattens human identity or work into interchangeable modules, tokens,
+# data points, or raw material — making humans sound like inputs to a
+# system rather than people.
+#
+# Identified in MIT Tech Review "Chinese tech workers training AI doubles":
+#   "distill their colleagues' skills and personality traits"
+#   "flattened into modules in a way that made the worker easier to replace"
+#   "a cold farewell can be turned into warm tokens"
+#   "reducing a person to a skill"
+# Also: "digital humans" (Nvidia), "human capital" used literally,
+# workers described as "data", "inputs", "resources" interchangeable
+# with software.
+# ---------------------------------------------------------------------------
+_COMMODIFICATION_METAPHOR_PATTERNS: list[re.Pattern] = [
+    # "distill/extract [person/colleague/worker] ... into [skills/tasks/modules]"
+    re.compile(
+        r"\b(?:distill|extract|boil down|reduce|flatten|compress|"
+        r"condense|decompose|break down|abstract|encode|codify|"
+        r"serialize|tokenize|quantize)\b"
+        r".{0,80}?"
+        r"\b(?:colleague|coworker|co-worker|worker|employee|person|"
+        r"people|human|individual|teammate|staff)s?\b"
+        r".{0,80}?"
+        r"\b(?:skill|task|module|token|data|blueprint|manual|"
+        r"workflow|process|function|component|unit|input|asset)s?\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "reducing a person/worker to a [skill/module/function/task]"
+    re.compile(
+        r"\breducing\s+(?:a\s+)?(?:person|worker|employee|colleague|"
+        r"human|individual|coworker|co-worker)s?\s+"
+        r"to\s+(?:a\s+)?(?:skill|module|function|task|data\s+point|"
+        r"token|number|cog|input|unit|component|workflow)s?\b",
+        re.IGNORECASE,
+    ),
+    # "flattened/compressed into modules/tokens/tasks"
+    re.compile(
+        r"\b(?:their\s+work|their\s+job|their\s+role|"
+        r"the\s+worker|the\s+person|their\s+identity)\b"
+        r".{0,60}?"
+        r"\b(?:flatten(?:ed|ing)?|compress(?:ed|ing)?|"
+        r"reduc(?:ed|ing)?|boil(?:ed|ing)?\s+down)\b"
+        r".{0,40}?"
+        r"\b(?:into|to|as)\b\s+\b(?:module|token|data|"
+        r"component|unit|input|task|blueprint|workflow)s?\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "[farewell/goodbye/person/value] ... turned into ... tokens/data/modules"
+    re.compile(
+        r"\b(?:farewell|goodbye|person|personality|judgment|dignity|"
+        r"identity|value|humanity|individuality|experience)\b"
+        r".{0,60}?"
+        r"\b(?:turn(?:ed|ing)?|convert(?:ed|ing)?|transform(?:ed|ing)?)\b"
+        r".{0,40}?"
+        r"\b(?:into|to)\b\s+\b(?:warm\s+)?(?:token|data|module|"
+        r"code|signal|input|asset|commodity)s?\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "digital [human/worker/employee/colleague]" as euphemism
+    re.compile(
+        r"\bdigital\s+(?:human|worker|employee|colleague|"
+        r"co-worker|coworker|labou?r(?:er)?|twin)s?\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["commodification_metaphor"] = _COMMODIFICATION_METAPHOR_PATTERNS
+
 def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
     """Detect analogy stacking — 3+ distinct analogies for the same subject.
 
@@ -3749,10 +3823,10 @@ def _detect_social_proof_amplification(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 38 pattern-matched device types plus 5 structural
-    post-pass types (43 total).
+    Scans for 39 pattern-matched device types plus 5 structural
+    post-pass types (44 total).
 
-    Pattern-matched (38): guilt_by_association, anonymous_authority,
+    Pattern-matched (39): guilt_by_association, anonymous_authority,
     catastrophizing, false_balance, selective_omission_signal,
     emotional_appeal, straw_man, loaded_language, refusal_amplification,
     juxtaposition, timeline_implication, power_asymmetry,
@@ -3766,8 +3840,8 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     precedent_analogy, social_proof_amplification,
     latecomer_narrative, regulatory_shadow, editorial_deflation,
     denial_contradiction, worker_replacement_irony,
-    two_tier_treatment, regulatory_favoritism, and
-    escalation_amplification.
+    two_tier_treatment, regulatory_favoritism,
+    escalation_amplification, and commodification_metaphor.
 
     Structural post-pass (5): kicker_framing, analogy_stacking,
     speculative_framing, trend_bundling, social_proof_amplification.

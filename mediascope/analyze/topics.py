@@ -249,6 +249,24 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "public opposition", "organized opposition",
         "resource-intensive", "land use",
     ],
+    "worker_ai_displacement": [
+        "automate themselves", "train their replacement",
+        "training their replacement", "train their replacements",
+        "training their own replacement", "replace them",
+        "replacing workers", "replacing coworkers", "replace workers",
+        "worker dignity", "workers dignity",
+        "alienation", "disempowerment", "alienating",
+        "dehumanizing", "reduce to modules",
+        "distill colleagues", "distill their colleagues",
+        "anti-distillation", "human replacement",
+        "AI double", "AI doubles", "AI clone", "AI clones",
+        "sabotage", "countermeasure", "countermeasures",
+        "worker resistance", "pushing back",
+        "self-automation", "automate myself",
+        "value is being cheapened", "easier to replace",
+        "flattened into modules", "digital labor",
+        "AI replacement", "replaced by AI",
+    ],
 }
 
 

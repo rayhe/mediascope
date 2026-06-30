@@ -305,6 +305,20 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "SenseTime", "iFLYTEK",
         ],
     },
+    "OpenClaw": {
+        "aliases": [
+            "OpenClaw", "Hatch",
+        ],
+        "regex": r"(?<!\w)(OpenClaw|(?-i:Hatch)(?=\s+(?:agent|AI|platform|app|tool|agents)))(?!\w)",
+    },
+    "Chinese Tech Platforms": {
+        "aliases": [
+            "Lark", "DingTalk", "Rednote", "Xiaohongshu",
+            "WeChat", "Weibo", "Taobao", "Alipay",
+            "Tencent", "Alibaba",
+        ],
+        "regex": r"(?<!\w)((?-i:Lark|DingTalk|Rednote|Xiaohongshu|WeChat|Weibo|Taobao|Alipay)|Tencent|Alibaba(?!\s+Cloud))(?!\w)",
+    },
     "Spotify": {
         "aliases": [
             "Spotify", "Daniel Ek",
