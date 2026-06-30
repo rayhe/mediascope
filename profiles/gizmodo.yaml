@@ -1,0 +1,244 @@
+name: "Gizmodo"
+slug: "gizmodo"
+url: "https://gizmodo.com"
+
+rss_feeds:
+  - url: "https://gizmodo.com/rss"
+    category: "main"
+  - url: "https://gizmodo.com/tag/meta/rss"
+    category: "meta"
+  - url: "https://gizmodo.com/tag/ai/rss"
+    category: "ai"
+
+# ===================================================================
+# OWNERSHIP CHAIN
+# ===================================================================
+ownership_chain:
+  - name: "Gizmodo"
+    entity_type: "publisher"
+    description: >
+      Consumer technology and culture publication, founded 2002 as part of Gawker Media.
+      Covers gadgets, science, tech policy, AI, and digital culture.
+      Known for irreverent, sardonic editorial voice — more direct/sarcastic than
+      prestige publications like Wired or NYT. Editorial tone tends toward
+      sensationalism and click-driven framing. Part of the G/O Media portfolio.
+      Editor-in-Chief: Not publicly disclosed on masthead (G/O Media does not
+      consistently publish editorial leadership).
+    source_url: "https://gizmodo.com/about"
+
+  - name: "G/O Media"
+    entity_type: "parent_company"
+    description: >
+      Digital media company, acquired Gizmodo and other former Gawker Media properties
+      from Univision in April 2019. G/O Media portfolio includes: Gizmodo, The Onion,
+      The A.V. Club, Jalopnik, Jezebel (sold to Pastel Holdings Mar 2024), Deadspin
+      (sold to Linebacker Holdings Jun 2024), Quartz (acquired Jun 2022, sold to
+      G/On Mar 2024), The Root, Kotaku, and The Inventory.
+      CEO: Jim Spanfeller (since 2019, controversial tenure — multiple editorial
+      resignations, union disputes, and staff walkouts during his leadership).
+      HQ: New York, NY.
+      PRIVATE — no SEC filings. Revenue not publicly disclosed but estimated
+      in the $30-50M range based on industry reporting.
+      G/O Media has been steadily selling off properties (Jezebel, Deadspin, Quartz)
+      which suggests financial pressure or strategic downsizing.
+    source_url: "https://gomedianetwork.com"
+
+  - name: "Great Hill Partners"
+    entity_type: "private_equity_owner"
+    description: >
+      Private equity firm based in Boston, MA. Acquired G/O Media (then including
+      Gizmodo, The Onion, AV Club, Jalopnik, Jezebel, Deadspin, etc.) from Univision
+      in April 2019 for an undisclosed sum. Great Hill Partners manages ~$2.5B in
+      capital commitments across multiple funds.
+      Great Hill Partners portfolio includes companies in healthcare, technology,
+      media, and business services. Notable investments: G/O Media (digital media),
+      Dictionary.com, Zwift (gaming/fitness), among others.
+      KEY CONFLICT: As a private equity firm, Great Hill Partners' primary obligation
+      is to its limited partners (LPs) — meaning Gizmodo's editorial decisions exist
+      within a financial optimization framework. This creates structural pressure
+      toward engagement-driven, attention-economy journalism (sensational headlines,
+      hot takes, adversarial framing) that can bias coverage toward controversy.
+    source_urls:
+      - "https://www.greathillpartners.com"
+      - "https://www.nytimes.com/2019/04/08/business/media/gizmodo-gawker-g-o-media.html"
+
+# ===================================================================
+# REVENUE RELATIONSHIPS
+# ===================================================================
+revenue_relationships:
+  - partner: "Google (Advertising)"
+    relationship_type: "advertising"
+    estimated_value: "significant — Google ad network primary revenue for digital publishers"
+    description: >
+      G/O Media relies on programmatic advertising (Google AdSense/Ad Manager) as a
+      primary revenue stream. Google also drives search traffic to Gizmodo articles.
+      This creates a structural dependency on Google's advertising and search
+      infrastructure — adverse coverage of Google risks reducing ad revenue and
+      search referral traffic.
+    competitive_with: ["Meta (advertising competitor)"]
+
+  - partner: "Amazon (Affiliate)"
+    relationship_type: "affiliate_commerce"
+    estimated_value: "significant — affiliate links in product reviews and guides"
+    description: >
+      Gizmodo generates revenue through Amazon Associates affiliate links in product
+      reviews, buying guides, and deal posts. This creates financial incentive to
+      cover Amazon products favorably and to maintain good relations with Amazon's
+      affiliate program.
+    competitive_with: ["Meta (commerce competitor)"]
+
+  - partner: "Meta"
+    relationship_type: "none_direct"
+    estimated_value: "$0"
+    description: >
+      No known content licensing, partnership, or significant commercial relationship
+      between G/O Media/Gizmodo and Meta. Gizmodo does not appear in Meta's publisher
+      licensing program (which includes CNN, Fox News, USA Today, People Inc., etc.).
+      Unlike Condé Nast (which licenses to 5 of Meta's AI competitors), Gizmodo's
+      financial incentives are different — driven by advertising/affiliate revenue
+      rather than AI content licensing.
+      However, Gizmodo's editorial hostility toward Meta may reduce likelihood of
+      future Meta partnerships.
+
+# ===================================================================
+# EDITORIAL LEADERSHIP
+# ===================================================================
+editorial_leadership:
+  - name: "Jim Spanfeller"
+    title: "CEO, G/O Media"
+    start_date: "2019-04"
+    editorial_stance: >
+      Controversial media executive. His tenure has been marked by editorial
+      interference allegations, union disputes, and high staff turnover.
+      Multiple high-profile editors resigned citing editorial direction changes.
+      Business-first approach to digital journalism.
+
+# ===================================================================
+# KEY JOURNALISTS
+# ===================================================================
+key_journalists:
+  - name: "Raymond Wong"
+    beat: "Consumer tech reviews, AI products"
+    known_patterns: >
+      Senior reviews editor. Authored the "Meta Fury AI Glasses Review: The Worst
+      Company Still Makes the Best Smart Glasses" — exemplifies Gizmodo's
+      contradictory review framing pattern (positive product assessment inside
+      negative editorial wrapper). Previously at Gizmodo's AI coverage team.
+  - name: "James Pero"
+    beat: "Tech news, smart glasses"
+    known_patterns: >
+      Covered Meta glasses launch events. Neutral business-question framing
+      of privacy concerns (in contrast to Wired's adversarial framing of
+      same events).
+  - name: "Kyle Barr"
+    beat: "AI, tech policy"
+    known_patterns: >
+      Covers AI developments and tech industry dynamics. Has written about
+      Meta's AI initiatives with varying editorial framing.
+
+# ===================================================================
+# KNOWN CONFLICTS OF INTEREST
+# ===================================================================
+known_conflicts:
+  - type: "advertising_dependency"
+    description: >
+      G/O Media depends on Google's advertising infrastructure (Ad Manager/AdSense)
+      for a significant portion of its digital ad revenue. This creates structural
+      incentive to avoid adversarial coverage of Google while permitting adversarial
+      coverage of Google's competitors (including Meta, which competes with Google
+      in digital advertising).
+    severity: 3
+    evidence: >
+      Industry standard for digital publishers — Google controls ~90% of the
+      programmatic ad tech market. No G/O Media SEC filings (private company).
+    source_url: "https://www.gomedianetwork.com"
+
+  - type: "affiliate_commerce"
+    description: >
+      Gizmodo generates significant revenue from Amazon Associates affiliate links.
+      Amazon is a direct Meta competitor in smart home devices, AI assistants
+      (Alexa vs Meta AI), and e-commerce. Financial incentive to favor Amazon
+      products in reviews and comparisons.
+    severity: 3
+    evidence: >
+      Affiliate links visible in product review articles. Amazon Associates
+      is one of the largest affiliate programs for consumer tech publishers.
+    source_url: "https://gizmodo.com"
+
+  - type: "private_equity_pressure"
+    description: >
+      Great Hill Partners (private equity) ownership creates structural pressure
+      toward engagement-driven, sensationalist journalism. Private equity ownership
+      models typically prioritize short-term revenue optimization over editorial
+      independence. This can manifest as: click-bait headlines, adversarial framing
+      of controversial companies (Meta is a frequent target), and hot-take opinion
+      pieces presented as news coverage.
+    severity: 2
+    evidence: >
+      Great Hill Partners' acquisition of G/O Media and subsequent property selloffs
+      (Jezebel, Deadspin, Quartz) suggest financial pressure. High editorial turnover
+      under Spanfeller's leadership.
+    source_url: "https://www.nytimes.com/2019/04/08/business/media/gizmodo-gawker-g-o-media.html"
+
+  - type: "competitive_landscape"
+    description: >
+      Gizmodo competes for audience attention and advertising dollars with Meta's
+      own content ecosystem (Instagram, Facebook). As a digital publisher, every hour
+      users spend on Meta platforms is an hour not spent on Gizmodo. This creates
+      structural competitive tension that may influence editorial framing.
+    severity: 2
+    evidence: >
+      General digital media competitive dynamics. All digital publishers compete
+      with social media platforms for attention and ad revenue.
+
+# ===================================================================
+# LITIGATION CONNECTIONS
+# ===================================================================
+litigation_connections: []
+
+# ===================================================================
+# AI CRAWL POLICY
+# ===================================================================
+ai_crawl_policy:
+  blocks_gptbot: false
+  blocks_ccbot: false
+  blocks_google_extended: false
+  notes: "G/O Media has not publicly announced AI crawler restrictions. Likely permits indexing for search visibility."
+
+# ===================================================================
+# TARGET ENTITIES
+# ===================================================================
+target_entities:
+  "Meta":
+    aliases: ["Meta", "Meta Platforms", "Facebook", "Instagram", "WhatsApp", "Meta AI", "Meta Quest", "Ray-Ban Meta", "Meta Fury", "Llama"]
+    regex: "\\b(Meta(?:Quest|\\sAI)?|Facebook|Instagram|WhatsApp|Llama)\\b"
+
+  "Google":
+    aliases: ["Google", "Alphabet", "YouTube", "Gemini", "Android"]
+    regex: "\\b(Google|Alphabet|YouTube|Gemini|Android)\\b"
+
+  "Apple":
+    aliases: ["Apple", "iPhone", "iPad", "MacBook", "Apple Vision", "Apple Intelligence"]
+    regex: "\\bApple(?!\\s+(?:pie|cider|sauce|tree|juice))\\b"
+
+  "Amazon":
+    aliases: ["Amazon", "AWS", "Alexa", "Rufus", "Kindle"]
+    regex: "\\b(Amazon|AWS|Alexa|Rufus|Kindle)\\b"
+
+  "Microsoft":
+    aliases: ["Microsoft", "MSFT", "Azure", "Copilot", "Windows", "LinkedIn"]
+    regex: "\\b(Microsoft|Azure|Copilot|Windows|LinkedIn)\\b"
+
+  "OpenAI":
+    aliases: ["OpenAI", "ChatGPT", "GPT-4", "GPT-5", "DALL-E"]
+    regex: "\\b(OpenAI|ChatGPT|GPT-\\d|DALL-?E)\\b"
+
+# ===================================================================
+# BIAS RATINGS
+# ===================================================================
+bias_ratings:
+  ad_fontes:
+    reliability: 32
+    bias: -8
+  allsides: "Lean Left"
+  mbfc: "Left-Center"
