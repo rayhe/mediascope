@@ -4,6 +4,46 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-30 04:00 PT — Type A: Article Deep Dive (NYT Child Safety Study)
+
+**Article:** NYT coverage of "Broken, Buried, or Missing" child safety features study (Jun 29, 2026)
+**Source:** Reconstructed from Engadget, CNN, primary study PDF (NYT paywalled/blocked)
+**Commit:** `6d7a7b1` — 538 insertions, 13 files changed
+
+### Improvements
+
+**Entities (+7 clusters, 15→27 unique):**
+- US Congress, Academic/Research, Research Centers, Child Safety Legislation, Child Safety Researchers, Australia
+- Now detects university authors (NYU, Northeastern), individual researchers (Béjar, Edelson, McCoy, Matsumoto, Arar), legislative bodies, and regulatory actors
+
+**Source extraction (1→5 sources):**
+- Fixed case-sensitivity bug: `\ban?` → `\b[Aa]n?` — uppercase "A" in "A Meta spokesperson said" was not matching
+- Expanded `_KNOWN_ORGS` with 14 platform/media names (Instagram, Snapchat, Reuters, etc.)
+- Added direct "[Org] said" pattern without requiring "in a statement"
+- Added spokesperson/spokeswoman/spokesman to anonymous role-descriptor patterns
+- Fixed case-insensitive adjectives: `[a-z]+` → `[A-Za-z]+` for org-name adjectives
+
+**Framing (+2 devices, 44→46 total):**
+- `analogy_metaphor`: "like crash-testing", "akin to", "tantamount to", "as if"
+- `taxonomy_framing`: structured classification systems ("broken, buried, or missing"), "classified as N categories"
+
+**Agency attribution (sparse-data fix):**
+- When total hits < 3, dampens score by `total/3.0` — prevents -1.0 from single word match
+- Child safety article: -1.0 → -0.3333 (from 1 "requiring" hit)
+
+### Test Results
+- **1018 tests pass** (was 1002, +16 new)
+- New test file: `test_child_safety_analysis.py`
+
+### Remaining Gaps
+- "crash-testing" analogy in actual article text may use different construction than patterns match
+- Study-as-source attribution ("the study's authors noted") not captured
+- Collective attribution ("The platforms said") not captured
+- `self_referential_investigation` false positive on "Reuters reported" (wire attribution)
+- No "platform_accountability" topic bucket
+
+---
+
 ## 2026-06-29 13:00 PT — Hour Type D: Toolkit Quality & Documentation — Fix 9 stale doc counts + add per-file test count guard
 
 **Focus:** Documentation count consistency and new guard test to prevent future count drift.
