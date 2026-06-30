@@ -617,18 +617,89 @@ journalists:
     the boss. Former Wired monthly columnist and senior writer, then built BuzzFeed News tech desk to Pulitzer Prize level,
     then became MIT TR EIC.'
 - career:
-  - beat: global news, format innovation
+  - beat: science, technology
+    end: 1998-01
+    event_type: hired
+    notes: 'First journalism job after completing MSc at LSE (1994-1995). Started on the science desk in London. Covered quantum
+      computing, technology, and science. Education: BSc Physics and Philosophy, University of Bristol (1991-1994); MSc Philosophy
+      of Social Science, London School of Economics (1994-1995). Born August 4, 1971, London. Jewish. Left UK in 1998, citing
+      "an aversion to beer, Marmite, and football." Speaks 5 languages: English, Spanish, French, Russian, Hebrew.'
+    publication: economist
+    role: science_correspondent
+    source_url: https://en.wikipedia.org/wiki/Gideon_Lichfield
+    start: 1996-01
+  - beat: Latin America, international affairs
+    end: 2002-01
+    event_type: foreign_posting
+    notes: 'First foreign bureau posting. Mexico City correspondent covering Latin American affairs. Grew up in the 1970s-80s
+      — "I was 18 when the Berlin Wall came down" — and approached foreign reporting through the lens of post-Cold War democratic
+      transition: "Democracy has won, but how long is it going to take to actually appear?" (2026 Beyond Intractability interview).
+      This framing question — how democratic governance stalls or backslides — would eventually become the core of his post-journalism
+      career.'
+    publication: economist
+    role: correspondent
+    source_url: https://beyondintractability.org/gideon-lichfield-interview
+    start: 1998-01
+  - beat: Russia, Chechnya, international affairs
+    end: 2005-01
+    event_type: foreign_posting
+    notes: Moscow bureau. Covered the Chechnya conflict, Russian politics, and post-Soviet affairs. Career arc from Mexico
+      City to Moscow reflects The Economist's generalist-correspondent model where science/tech writers rotate into geopolitical
+      beats.
+    publication: economist
+    role: correspondent
+    source_url: https://sternstrategy.com/speakers/gideon-lichfield/
+    start: 2002-01
+  - beat: Middle East, international affairs
+    end: 2008-01
+    event_type: foreign_posting
+    notes: Jerusalem bureau. Third foreign posting. Covered Israel-Palestine, broader Middle East. A decade of foreign correspondent
+      work (Mexico City → Moscow → Jerusalem) gave him deep experience in geopolitics and democratic governance that distinguishes
+      him from tech-only editors.
+    publication: economist
+    role: correspondent
+    source_url: https://weforum.org/agenda/authors/gideon-lichfield
+    start: 2005-01
+  - beat: digital strategy, media, innovation, film
+    end: 2012-06
+    event_type: editorial_role_change
+    notes: 'Moved to New York City (~2009 per Rainforest Journalism Fund bio). Held multiple roles simultaneously: (1) Deputy
+      Digital Editor — responsible for online innovation and strategy. (2) Founding editorial director of Economist Education,
+      an internal startup/e-learning venture for business executives. (3) Media Editor (2012, final role before departure).
+      (4) Editorial Director of The Economist Film Project, a documentary initiative with PBS NewsHour showcasing independent
+      documentary filmmakers worldwide. Total Economist tenure: ~16 years (1996-2012). Also served as adjunct professor at
+      NYU Arthur L. Carter Journalism Institute (~2011), teaching graduate course in foreign reporting. His freelance writing
+      during this period appeared in The Atlantic, New York Times, New Republic, and Foreign Policy.'
+    publication: economist
+    role: deputy_digital_editor
+    source_url: https://moreliafilmfest.com/en/gideon-lichfield
+    start: 2008-01
+  - beat: global news, format innovation, editorial leadership
     end: 2017-11
     event_type: hired
-    notes: Founding editor at Quartz. Previously at The Economist (15 years). Known for innovative digital news formats.
+    notes: 'One of the founding editors of Quartz, hired at its inception in 2012. Atlantic Media Company appointed him Global
+      News Editor (Adweek, Jun 2012). Led the newsroom, developed the ethics policy and style guide, and edited the Quartz
+      Daily Brief newsletter — a pioneer in the email newsletter format. Quartz launched as a digital-native business news
+      outlet under EIC Kevin Delaney. Lichfield''s role was senior editorial — some sources list "senior editor." His innovative
+      approaches to digital news formats at Quartz built on his Economist deputy digital editor experience. CONCURRENT: One-year
+      fellowship at Data & Society Research Institute (2014-2015), where he was "Science Fiction Writer in Residence" writing
+      speculative fiction exploring social/political implications of technological advances. Published in MIT Technology Review
+      during this period.'
     publication: quartz
     role: global_news_editor
+    source_url: https://adweek.com/digital/the-atlantic-names-gideon-lichfield-global-news-editor-of-quartz/
     start: 2012-06
   - beat: overall editorial direction
     end: 2020-09
     event_type: hired
-    notes: EIC. Shifted MIT TR toward more investigative, critical tech coverage. Led aggressive coverage of MIT-Epstein scandal
-      (2019). $269K-$278K compensation (FY2019-2021 990s).
+    notes: 'Editor-in-Chief (announced Dec 2017, started Dec 2017). Gave the 120-year-old publication a new mission statement:
+      "to make technology a greater force for good." Oversaw major editorial transformation: moved to themed print issues,
+      launched first podcasts, added new newsletters and events, grew audience development team, began grant-funded journalism
+      and collaborations with investigative outlets, dramatically increased long-form online features. Improved diversity in
+      recruiting and hiring. Led aggressive coverage of MIT-Epstein scandal (2019). Edited "Make Shift: Dispatches from the
+      Post-Pandemic Future," a speculative-fiction anthology (MIT Press, May 2021) with stories by Madeline Ashby, Indrapramit
+      Das, Ken Liu, Malka Older, and Cory Doctorow. Compensation: $269K-$278K (FY2019-2021 990s). KEY: His shift of MIT TR
+      toward social-impact-of-tech framing was a precursor to the editorial posture he would attempt at Wired.'
     publication: mit-tech-review
     role: eic
     source_url: https://www.technologyreview.com/2017/12/05/3720/a-letter-from-mit-technology-reviews-new-editor-in-chief/
@@ -636,16 +707,51 @@ journalists:
   - beat: overall editorial direction
     end: 2023-09
     event_type: hired
-    notes: Succeeded Nicholas Thompson as Wired EIC. Replaced by Katie Drummond as Global Editorial Director in Sep 2023.
-      The Lichfield MIT-TR→Wired migration is the single most analytically valuable case in the dataset for DiD regression.
+    notes: 'Global Editorial Director (NOT just EIC — responsible for content strategy, vision and tone across all Wired editions:
+      US, UK, Italy, Japan). Appointed March 22, 2021. Reported to Anna Wintour (CCO, Condé Nast). Succeeded Nicholas Thompson
+      (who left for The Atlantic). Co-hosted "Have a Nice Future" podcast with Lauren Goode. Tenure: ~2.5 years. Announced
+      departure May 31, 2023, in internal memo: "I want to begin focusing more of my energies on a question that many of you
+      know is important to me... how societies can govern themselves peaceably and for the common good in an era of accelerating
+      technological change." Said he missed "committing acts of journalism with my own two hands." Replaced by Katie Drummond
+      (started Aug 28, 2023), who came from Vice Media SVP role and had been a 2009 Wired intern. The Lichfield MIT-TR→Wired
+      migration is the single most analytically valuable case in the dataset for DiD regression — same person leading two tracked
+      publications sequentially under different institutional structures (MIT-affiliated research pub vs Condé Nast commercial
+      media conglomerate).'
     publication: wired
-    role: eic
+    role: global_editorial_director
     source_url: https://www.wired.com/story/gideon-lichfield-new-editor-wired/
-    start: 2020-09
+    start: 2021-03
+  - beat: democracy, governance, technology and society
+    event_type: career_change
+    notes: 'Post-Wired career pivot to democracy and governance. Multiple concurrent roles: (1) Writes "Futurepolis" Substack
+      (launched ~Sep 2024) on "reinventing democracy, governance, and government for the 21st century" ($5/mo or $50/yr). Covers
+      participatory democracy, AI in governance (Japanese AI politician piece), citizens'' assemblies (Lexington experiment).
+      (2) CITRIS Tech Policy Fellow at UC Berkeley Goldman School of Public Policy (2024-present). (3) AI Advisory Board member
+      at CUNY Craig Newmark Graduate School of Journalism (2024-present). (4) Harvard Ash Center for Democratic Governance
+      (as of Mar 2026 — co-hosted webinar with Kim Stanley Robinson, Baratunde Thurston, Renee DiResta on pro-democracy ideas
+      in popular culture). (5) Co-Founder of stealth project (2025-present, per RocketReach). (6) Data & Society affiliate
+      (ongoing). Self-describes as "Democracy Futurist" on LinkedIn. Based in Berkeley, CA. Personal: "polyglot, climber, biker,
+      cocktailer, and vagabond" — collects languages, silver rings, and obscure cocktail ingredients. Speaker at SXSW, Aspen
+      Ideas Festival, WEF, FWD50. KEY for MediaScope: his post-Wired pivot reveals that his editorial framing at both MIT TR
+      and Wired was driven by a consistent personal thesis about technology''s impact on democratic governance — NOT by institutional
+      editorial culture. This means the DiD analysis must control for his pre-existing ideological orientation, not just institutional
+      effects.'
+    publication: independent
+    role: democracy_futurist
+    source_url: https://futurepolis.substack.com/
+    start: 2023-10
   name: Gideon Lichfield
-  notes: 'HIGHEST-VALUE MIGRATION IN DATASET: EIC of MIT Tech Review, then EIC of Wired. Same person leading two tracked publications
-    sequentially. Can directly compare editorial direction under same individual across different institutional structures
-    to decompose individual from institutional effects.'
+  notes: 'HIGHEST-VALUE MIGRATION IN DATASET: EIC of MIT Tech Review (2017-2020), then Global Editorial Director of Wired
+    (2021-2023). Same person leading two tracked publications sequentially — can directly compare editorial direction under
+    same individual across different institutional structures to decompose individual from institutional effects. Full career
+    arc: The Economist (16 years: science desk → Mexico City → Moscow → Jerusalem → NYC/deputy digital editor/media editor)
+    → Data & Society fellow (2014-15, concurrent with Quartz) → Quartz founding editor (2012-2017) → MIT Tech Review EIC (2017-2020)
+    → Wired GED (2021-2023) → independent democracy/governance work. Education: BSc Physics and Philosophy (Bristol, 1991-94),
+    MSc Philosophy of Social Science (LSE, 1994-95). Born Aug 4, 1971, London. British, Jewish. Speaks 5 languages. His post-Wired
+    pivot to democratic governance and the Futurepolis Substack reveals a consistent personal thesis about technology and democracy
+    that predates his editorial leadership roles — suggesting his editorial direction at MIT TR and Wired was ideologically
+    motivated, not purely institutional. KEY for DiD: must control for this pre-existing orientation when measuring institutional
+    framing effects. NYU adjunct professor. Speaker at WEF, SXSW, Aspen Ideas Festival. Now based in Berkeley, CA.'
 - career:
   - beat: general, local news
     end: 1986-01
