@@ -4,6 +4,59 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-30 07:00 PT — Type D: Toolkit Quality — Doc/Code Count Drift Fix + Self-Syncing Tests
+
+**Focus:** Systematic fix for framing device count drift across all documentation and structural consistency tests. The tests meant to prevent exactly this problem had themselves become stale, validating wrong numbers.
+**Commit:** `eb39e54` — 86 insertions, 52 deletions, 6 files changed
+
+### Problem
+
+The structural consistency tests accumulated layers of stale numbers across 7+ commits. Each time a new framing device was added, the assertion value was updated but the test name, docstring, and error message were left at the old number:
+
+| Test | Name says | Docstring says | Assertion checks | Error message says |
+|------|-----------|----------------|------------------|--------------------|
+| `test_total_device_types_is_43` | 43 | 43 | 46 | 44 |
+| `test_pattern_matched_types_is_36` | 36 | 36 | 41 | 39 |
+| `test_structural_post_pass_types_is_4` | 4 | 5 | 5 (correct) | — |
+
+Worse, the doc-validation tests (`TestDocCountConsistency`) each hardcoded a DIFFERENT expected count per file: ARCHITECTURE.md=44, METHODOLOGY.md=44, AGENT_GUIDE.md=43, CLI=41. This meant all four documentation surfaces showed different stale counts and the tests validated the staleness — the guard was broken.
+
+The actual code produces **46 framing device types** (41 pattern-matched + 5 structural) after `analogy_metaphor` and `taxonomy_framing` were added in the NYT child safety iteration, but no documentation reflected this.
+
+Additionally, the `framing.py` docstring for `detect_framing_devices()` had:
+- Parenthetical count "(39)" despite the header claiming 41
+- `social_proof_amplification` listed in BOTH pattern-matched AND structural sections (it is structural only)
+- `analogy_metaphor` and `taxonomy_framing` missing from the enumeration
+
+### Improvements
+
+**1. Structural consistency tests redesigned for single source of truth:**
+- `TestFramingDeviceTypeCount` now uses class constants (`EXPECTED_TOTAL=46`, `EXPECTED_PATTERN_MATCHED=41`, `EXPECTED_STRUCTURAL={set of 5}`) — one place to update
+- `TestDocCountConsistency` derives expected doc strings FROM those constants, so doc tests auto-fail when types are added without doc updates
+- Test names/docstrings cleaned to match actual semantics (removed stale numbers from method names)
+- Stale count purge test widened from catching 33–39 to 33–45
+
+**2. All documentation synchronized to 46:**
+- METHODOLOGY.md: "44 framing device types" → "46", "29 extended" → "31 extended", "44-type taxonomy" → "46-type taxonomy"
+- ARCHITECTURE.md: "44 framing device types" → "46"
+- AGENT_GUIDE.md: "43 device types" → "46", "28 from real-article" → "31", adversarial list alphabetized with `military_techno_optimism` added
+- CLI docstring: "41 types" → "46 types"
+
+**3. framing.py docstring fixed:**
+- All 41 pattern-matched types listed alphabetically (was ad-hoc order with 2 missing)
+- `social_proof_amplification` removed from pattern-matched list (structural only)
+- `analogy_metaphor` and `taxonomy_framing` added to list
+- Parenthetical count corrected from (39) to (41)
+
+### Key Insight
+
+The root cause is a design flaw in the original tests: they hardcoded expected values in BOTH the code-count tests AND the doc-count tests independently. When a device was added, the developer would update the code assertion but not the test name, docstring, error message, or doc-count test. The fix — making doc tests derive expectations from code constants — ensures that adding a new device type and bumping ONE constant will fail all stale doc references simultaneously.
+
+### Test Results
+- **1018 tests pass** (unchanged count)
+
+---
+
 ## 2026-06-30 06:00 PT — Type C: Ownership & Funding Deep Dive — MIT TR Engine Ventures Exits + Boston Metal Self-Dealing + Yosemite Cross-Publication Link
 
 **Focus:** Three significant ownership/funding updates to MIT Technology Review profile — 2026 Engine Ventures portfolio expansion, full exits list, and previously undocumented cross-publication financial link via Yosemite VC.
@@ -652,6 +705,9 @@ This is the deepest documented governance entanglement between a media company's
 **Fix:** Added Microsoft Copilot (Dec 2025 pilot) to the `commercial_pivot` AI licensing enumeration. Now 5 named deals consistent with the revenue_relationships section.
 
 ### Commit
+`3a62688`
+
+---
 `1379462` — "Type A deep dive: MIT TR 'AI agents are not your coworkers' (Jun 29)"
 `95b73eb` — pushed to GitHub.
 `b0daba9` — pushed to `rayhe/mediascope` main
@@ -7981,3 +8037,64 @@ Contradictory review pattern: positive 3.5/5 product assessment wrapped in deepl
 `ad4c956`
 
 ---
+
+## 2026-06-30 08:00 PT — Type A: Article Deep Dive
+
+### Article
+**MIT Technology Review: "Inside Anduril and Meta's quest to make smart glasses for warfare"**
+- Author: James O'Donnell
+- Published: 2026-05-18
+- Genre: Investigative/feature (defense technology)
+- URL: https://www.technologyreview.com/2026/05/18/inside-anduril-metas-quest-smart-glasses-warfare/
+
+### Key Findings
+- 12 framing devices detected (6 types): military_techno_optimism(5), failure_precedent(2), selective_rehabilitation(2), ironic_quotation(1), editorial_deflation(1), juxtaposition(1)
+- Defense Tech cluster dominant (32 mentions vs Meta's 10)
+- Overall tone: +0.10 toolkit vs ~0.0 manual (reasonable)
+- Source authority: 0.8 (named RAND analyst, named Anduril VP)
+- No anonymous sources
+
+### Improvements Applied (4 fixes)
+
+**Fix 1: `analogy_stacking` false-positive filters**
+- Problem: "like a truck" (target ID), "like an artillery unit" (classification), "recalls that as a platoon" all triggering analogy_stacking
+- Added factual-simile filter (40-char lookback for perception verbs) and memory-verb filter ("recalls that")
+- `mediascope/analyze/framing.py` — `_detect_analogy_stacking()` function
+
+**Fix 2: Context-gated "Llama" entity alias**
+- Added to Meta regex: `(?:Meta'?s? )(?-i:Llama)` + `(?-i:Llama)(?=\s+(?:model|AI|...))`
+- Fixed double-backslash bug (`\\s` → `\s`) preventing standalone pattern from matching
+- `mediascope/analyze/entities.py` — Meta cluster regex
+
+**Fix 3: New `failure_precedent` framing device (#47)**
+- Editorial device invoking prior failed attempt to cast implicit doubt on current effort
+- 3 regex patterns: cancelled contract, "after X lost/failed", "previous attempt didn't prove viable"
+- `mediascope/analyze/framing.py` — new `_DEVICE_PATTERNS["failure_precedent"]`
+
+**Fix 4: Documentation propagation**
+- Updated 46→47 framing types, 41→42 pattern-matched across: `framing.py`, `METHODOLOGY.md` (text + table), `ARCHITECTURE.md`, `AGENT_GUIDE.md`, `cli.py`
+- Updated test counts 1018→1048, 40→41 files in README + ARCHITECTURE
+
+### Files Changed
+- `mediascope/analyze/framing.py` — analogy_stacking FP filter + failure_precedent device + docstring counts
+- `mediascope/analyze/entities.py` — Llama context-gated alias + backslash fix
+- `mediascope/cli.py` — framing type count 46→47
+- `docs/METHODOLOGY.md` — device type count + failure_precedent Extended Devices table entry
+- `docs/ARCHITECTURE.md` — device type count + test file listing
+- `docs/AGENT_GUIDE.md` — device type count
+- `tests/test_structural_consistency.py` — expected counts 46→47, 41→42
+- `tests/test_nyt_ai_reviews.py` — pattern count 41→42 + failure_precedent in expected types
+- `tests/test_mit_tr_anduril_meta_warfare_glasses.py` — 30 new tests (entity, framing, sentiment, sources, topics, regression)
+- `examples/sample_output/mit_tech_review_anduril_meta_smart_glasses_warfare_2026_05_18_article.txt` — article text
+- `examples/sample_output/mit_tech_review_anduril_meta_smart_glasses_warfare_2026_05_18_analysis.md` — full analysis
+
+### Remaining Gaps
+1. Source affiliation misattribution: Barnett → "Meta" should be "Anduril"
+2. Source deduplication: "Jonathan Wong" vs "Jonathan" appearing as two separate sources
+3. Missing source quotes: Barnett has 5+ quotes, only 1 extracted
+4. Sentiment: raw VADER +0.637 too high for neutral-skeptical article
+
+### Tests
+1048 passed (41 files) — up from 1018 (+30 new tests)
+
+### Commit

@@ -51,8 +51,8 @@ class TestFramingDeviceTypeCount:
     """
 
     # --- Update ONLY this constant when adding new device types ---
-    EXPECTED_TOTAL = 46
-    EXPECTED_PATTERN_MATCHED = 41  # core + extended (in _DEVICE_PATTERNS)
+    EXPECTED_TOTAL = 47
+    EXPECTED_PATTERN_MATCHED = 42  # core + extended (in _DEVICE_PATTERNS)
     EXPECTED_STRUCTURAL = {"kicker_framing", "analogy_stacking",
                            "speculative_framing", "trend_bundling",
                            "social_proof_amplification"}

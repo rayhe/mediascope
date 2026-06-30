@@ -371,7 +371,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **1018 tests** across 40 test files, each covering a different analytical capability:
+MediaScope has **1048 tests** across 41 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -415,6 +415,7 @@ MediaScope has **1018 tests** across 40 test files, each covering a different an
 | `test_child_safety_denial.py` | 6 | Engadget child safety features: denial_contradiction with "no evidence" denials, post-quote combative attribution (said/insisted vs called/described), replicated/verified as evidence counter-keywords, "misunderstanding" soft-denial patterns. |
 | `test_worker_replacement_two_tier.py` | 16 | WebProNews Meta Dublin contractors: worker_replacement_irony patterns (forward/reverse/compact/chant forms, negative cases for generic layoffs and generic AI adoption), two_tier_treatment (denied privileges, full-time vs contractor severance, not-even-employees, negative case), geopolitical false positive fix (security guards/police "stood firm" suppressed, government still fires), outsourced_intensity expansion (labor-law expert "open season"/"cynical"/"utter inability"). |
 | `test_child_safety_analysis.py` | 16 | NYT child safety study: new entity clusters (US Congress, Academic/Research, Research Centers, Child Safety Researchers/Legislation, Australia), source extraction fixes (case-sensitive [Aa]n?, expanded _KNOWN_ORGS, direct org attribution), new framing devices (analogy_metaphor, taxonomy_framing), agency attribution sparse-data dampening. |
+| `test_mit_tr_anduril_meta_warfare_glasses.py` | 30 | MIT TR Anduril/Meta warfare glasses: defense-tech entity detection (Anduril, EagleEye, SBMC), failure_precedent framing device (new — Microsoft $22B cancelled contract), analogy_stacking false-positive filters (factual similes, memory-verb "recalls that"), context-gated Llama entity alias (case-sensitive with model/AI/LLM lookahead), selective_rehabilitation (Palmer Luckey), editorial_deflation ("That's the idea, anyway"), sentiment calibration for neutral-skeptical military reporting |
 
 ```bash
 # Run all tests

@@ -1086,6 +1086,45 @@ _SELECTIVE_REHABILITATION_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["selective_rehabilitation"] = _SELECTIVE_REHABILITATION_PATTERNS
 
 
+# Failure precedent: editorial device that invokes a prior failed attempt at
+# the same type of project to frame a current effort as likely to fail.
+# Common pattern: "[previous actor] tried X, [negative outcome]" placed near
+# description of a current effort to signal implicit doubt.  More effective
+# than direct criticism because the reader draws the analogy themselves.
+_FAILURE_PRECEDENT_PATTERNS: list[re.Pattern] = [
+    # "[entity] was set to receive $X ... cancelled/failed/abandoned"
+    re.compile(
+        r"\b(?:was set to|had been|was expected to|was supposed to)"
+        r".{0,100}?"
+        r"\b(?:cancell?ed|abandon(?:ed|ing)|scrap(?:ped|ping)|"
+        r"fail(?:ed|ing)|collaps(?:ed|ing)|"
+        r"didn'?t prove viable|couldn'?t deliver|fell apart|"
+        r"wasted|botched|stall(?:ed|ing)|shelved)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "after [previous entity] lost/failed/fumbled/stumbled"
+    re.compile(
+        r"\bafter\b"
+        r".{0,80}?"
+        r"\b(?:lost|fail(?:ed|ing)|fumbl(?:ed|ing)|stumbl(?:ed|ing)|"
+        r"abandon(?:ed|ing)|collaps(?:ed|ing)|was cancell?ed)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "the previous [effort/attempt/lead/version] ... [negative outcome]"
+    re.compile(
+        r"\b(?:the |a )?(?:previous|prior|earlier|former|last|original)\s+"
+        r"(?:effort|attempt|lead|leader|version|prototype|contract|program)\b"
+        r".{0,120}?"
+        r"\b(?:cancell?ed|fail(?:ed|ing)|abandon(?:ed|ing)|"
+        r"didn'?t (?:work|prove|deliver|succeed)|fell short|"
+        r"wasted|was scrap(?:ped|ping))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+
+_DEVICE_PATTERNS["failure_precedent"] = _FAILURE_PRECEDENT_PATTERNS
+
+
 # Rhetorical question framing: questions that imply negligence, incompetence,
 # or failure without directly asserting it.  "Were there even guardrails?"
 # is more devastating than "there were no guardrails" because it positions
@@ -3529,6 +3568,19 @@ def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
     markers: list[FramingDevice] = []
     seen_spans: set[tuple[int, int]] = set()
 
+    # Pre-compiled patterns for filtering false positives from analogy markers.
+    # Factual similes: "looks like a truck", "something that looks like an X"
+    _factual_simile_re = re.compile(
+        r"\b(?:look(?:s|ed|ing)?|resembl(?:e[sd]?|ing)|appear(?:s|ed|ing)?|"
+        r"seem(?:s|ed|ing)?|sound(?:s|ed|ing)?|found something that look)"
+        r"\s+like\b",
+        re.IGNORECASE,
+    )
+    # "recalls that" = memory verb, not evocation ("recalls the era" = evocation)
+    _recalls_memory_re = re.compile(
+        r"\brecalls?\s+that\b", re.IGNORECASE,
+    )
+
     for pattern in _ANALOGY_MARKER_PATTERNS:
         for match in pattern.finditer(text):
             start, end = match.start(), match.end()
@@ -3542,8 +3594,27 @@ def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
             if overlap:
                 continue
 
+            # --- False-positive filters ---
+
+            # 1. Factual simile: skip "like a X" when preceded by "looks",
+            #    "resembles", "appears", "something that looks", etc.
+            matched_text = match.group()
+            if "like " in matched_text.lower():
+                # Check 30 chars before match for perception verbs
+                lookback = text[max(0, start - 30):start + 10].lower()
+                if _factual_simile_re.search(lookback):
+                    continue
+
+            # 2. Memory "recalls": skip "recalls that" (= remembers),
+            #    keep "recalls the era" (= evokes).
+            if matched_text.lower().startswith("recalls"):
+                if _recalls_memory_re.search(
+                    text[start:min(len(text), start + 40)]
+                ):
+                    continue
+
             seen_spans.add((start, end))
-            evidence = match.group().strip()
+            evidence = matched_text.strip()
             if len(evidence) > 200:
                 evidence = evidence[:200] + "..."
 
@@ -3877,8 +3948,8 @@ def _detect_social_proof_amplification(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 41 pattern-matched device types plus 5 structural
-    post-pass types (46 total).
+    Scans for 42 pattern-matched device types plus 5 structural
+    post-pass types (47 total).
 
     Pattern-matched (41): analogy_metaphor, anonymous_authority,
     catastrophizing, ceo_personalization, commodification_metaphor,
