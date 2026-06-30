@@ -7556,3 +7556,42 @@ Sold Circle Internet Group and Samsara (IOT) entirely in Q1. Boston Omaha held v
 - Chronicle of Philanthropy: https://www.philanthropy.com
 
 ### Commit
+
+---
+
+## 2026-06-29 20:00 PT — Type A: Article Deep Dive
+
+### Article
+**Gizmodo: "Democrats Want to Do Their Own Project 2025. First Up: Kicking Kids Offline"** (Jun 29, 2026)
+- URL: https://gizmodo.com/democrats-want-to-do-their-own-project-2025-first-up-kicking-kids-offline-2000779191
+- Subject: Project 2029's "Kids Over Clicks" child safety proposal
+
+### Key Findings
+Article published same day as KIDS Act House vote (267-117 bipartisan) but ignores the legislative milestone entirely. Uses the smaller Project 2029 proposal as a vehicle for partisan political commentary, spending ~40% on a Booker→Trump nominees→Kushner→Iran tangent with zero relevance to child safety policy. The substantive policy questions (do child safety features work? what would effective regulation look like?) are never engaged.
+
+### Toolkit vs Manual
+
+**Before improvements:** 8 devices detected, 2 false positives, major gaps in editorial deflation and political loaded language.
+
+**Gaps discovered and fixed:**
+1. `editorial_deflation`: "Noble efforts, indeed, but" undetected → added concession-then-dismissal patterns (+2 regexes)
+2. `EMOTIONAL_LANGUAGE`: "hucksters", "robbed blind", "carved up" undetected → added 32 political rhetoric terms (436 → 468)
+
+**After improvements:** 9 devices detected (editorial_deflation now fires correctly). Emotional intensity correctly reports 1.0 for the loaded political paragraph.
+
+**Remaining gaps (no fix this iteration):**
+- Topic displacement detection (topic coherence drift measurement)
+- Association chain analysis (guilt-by-association constructions)
+- Size/significance minimization as delegitimization
+- geopolitical_regulatory_pressure false positives on non-regulatory "sovereign"
+
+### Pre-check: 960 tests passing
+### Post-check: 968 tests passing (+8 new editorial_deflation tests)
+
+### Sources
+- Gizmodo article: https://gizmodo.com/democrats-want-to-do-their-own-project-2025-first-up-kicking-kids-offline-2000779191
+- Same-day context: Reuters, "US House passes youth online safety legislation" (2026-06-29)
+- Same-day context: USA Today, "House passes bill to protect kids online" (2026-06-29)
+
+### Commit
+`70d9508` — "Type A deep dive: Gizmodo Project 2029 'Kids Over Clicks' (Jun 29)"
