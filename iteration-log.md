@@ -4,6 +4,93 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-30 10:00 PT — Type B: Journalist/Publication Research — Ryan Mac Deep Expansion (3→4 entries) + 2026 Beat Shift Discovery
+
+**Focus:** Complete career reconstruction and 2026 byline analysis of Ryan Mac — NYT's tech accountability reporter, the most analytically valuable cross-publication migration case for Meta coverage.
+**Commit:** `a2bf52a` — 84 insertions, 25 deletions, 2 files changed
+
+### Problem
+
+Ryan Mac had only 3 career entries (Forbes, BuzzFeed News, NYT) despite a much richer background: Stanford Daily staff writing, 5 college internships, and substantial unreported developments at each publication stop. His notes lacked book publication details (ISBN, publisher, Goodreads rating), personal biographical data, and — critically — any analysis of his 2026 beat allocation shift.
+
+### Improvements
+
+**1. Career entries expanded: 3 → 4**
+
+| # | Publication | Role | Period | Source |
+|---|------------|------|--------|--------|
+| 1 | **Stanford Daily** | **Staff writer** | **2007-2011** | **NEW — Wikipedia, NYTCo press release** |
+| 2 | Forbes | Staff writer | 2011-2017 | Expanded — music industry coverage, Thiel/Gawker context |
+| 3 | BuzzFeed News | Senior reporter | 2017-2021 | Expanded — Thai cave rescue, Musk suspension, Silverman collab |
+| 4 | NYT | Correspondent | 2021-present | Expanded — Character Limit details, **2026 beat shift** |
+
+**2. New education field:**
+- Stanford University BA 2011 (enrolled 2007, initially pre-med)
+- 5 summer internships: Half Moon Bay Review, NYT, Bay Citizen, OC Register, Bloomberg LP
+- Stanford Daily classmate Amy Julia Harris now NYT Metro investigative reporter — institutional pipeline
+
+**3. Character Limit book details:**
+- Publisher: Penguin Press, Sept 17 2024, 480pp
+- ISBN hardcover: 9780593656136, ebook: 9780593656143
+- Best of 2024: Kirkus Reviews, Financial Times, New Statesman
+- Goodreads: 4.24/5 average, 3,102 ratings
+- Endorsements: Carreyrou, Tolentino, Lorenz
+
+**4. KEY FINDING — 2026 Beat Shift:**
+
+BuzzSumo byline analysis reveals Mac's 2026 output is dominated by SpaceX IPO coverage:
+
+| Date | Article |
+|------|---------|
+| Jun 11 | Skeptics Question Whether SpaceX Is Worth $1.77 Trillion |
+| Jun 4 | Gwynne Shotwell, Musk's No. 2, Is SpaceX's Steady Hand |
+| Jun 3 | SpaceX IPO to Be Largest Ever at $135 Share Price |
+| May 26 | SpaceX's Unconventional Corporate Arrangements Favor Musk |
+| May 20 | Musk's SpaceX Pulls Back the Curtain on Its Finances |
+| Apr 28 | Musk Assails Altman on Social Media Before OpenAI Trial |
+| Apr 22 | Musk's SpaceX Goals Shift Ahead of Its I.P.O. |
+| Apr 12 | Musk, Who Owns X, Appears to Post on TikTok |
+| Apr 1 | Musk's SpaceX Files to Go Public, Setting Stage for Huge I.P.O. |
+
+Meta coverage in 2026 reduced to intermittent scoops:
+- Jun 24-27: Zuckerberg prediction markets "Arena" app (2 articles)
+- Jun 24: Meta AI government review
+
+**Analytical implication:** The toolkit assumed Mac = "primary NYT Meta reporter" for DiD regression. 2026 data shows he now functions primarily as a Musk/SpaceX specialist. Eli Tan (hired Jan 2026 as second dedicated Meta reporter) under Mike Isaac's expanded mentoring role may carry more consistent Meta coverage volume. This reweights the DiD control — Mac's institutional framing contribution to Meta coverage is now intermittent rather than continuous.
+
+**5. Editorial changes entry added:**
+- New `editorial_changes.yaml` entry for Mac's 2021 NYT hire with 2026 beat context annotation
+- Documents the accountability-specific framing of the hire and the subsequent beat drift
+
+### Personal details added
+- Vietnamese-American (self-describes as "american vietnamese")
+- Based in Los Angeles (previously SF)
+- Arsenal FC supporter
+- Personal essay: "At 82, My Grandmother Has Lost Her Husband" (BuzzFeed News, Sept 2020) — rare autobiographical COVID piece
+
+### Source URLs (15+ references)
+- Wikipedia (en.wikipedia.org/wiki/Ryan_Mac)
+- NYTCo press release (nytco.com/press/ryan-mac-joining-technology-team/)
+- Penguin Random House (penguinrandomhouse.com/books/710666/)
+- Penguin UK (penguin.co.uk) — Character Limit endorsements
+- Muck Rack profile (muckrack.com) — portfolio and bio
+- Web Summit speaker page (websummit.com)
+- Goodreads (goodreads.com) — 4.24 avg, 3,102 ratings
+- BuzzSumo journalist profile (buzzsumo.com) — 2026 byline analysis
+- Poynter (poynter.org) — 2017 BuzzFeed hire announcement
+- TalkingBizNews (talkingbiznews.com) — NYT hire announcement
+- BuzzFeed News (buzzfeednews.com) — George Polk Award, personal essay
+- UCLA Newsroom (newsroom.ucla.edu) — Gerald Loeb Award finalists
+- Syracuse Newhouse (newhouse.syracuse.edu) — Mirror Award past winners
+- Kirkus Reviews — Character Limit Best of 2024
+- Reuters — Arena/prediction markets reporting sourced to NYT
+
+### Test Results
+- **1057 tests pass** (unchanged count)
+- Notes expanded: ~1,800 → ~2,885 chars
+
+---
+
 ## 2026-06-30 07:00 PT — Type D: Toolkit Quality — Doc/Code Count Drift Fix + Self-Syncing Tests
 
 **Focus:** Systematic fix for framing device count drift across all documentation and structural consistency tests. The tests meant to prevent exactly this problem had themselves become stale, validating wrong numbers.
