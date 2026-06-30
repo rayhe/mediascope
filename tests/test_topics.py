@@ -393,3 +393,27 @@ class TestMultiTopicArticles:
         topic_names = [t.topic for t in topics]
         assert "privacy_data" in topic_names
         assert "litigation" in topic_names
+
+    def test_child_safety_addiction_framing(self):
+        """Child safety detected when article uses addiction framing."""
+        text = (
+            "State attorneys general accused Meta of designing Facebook "
+            "and Instagram to addict children. The lawsuit alleges social "
+            "media addiction has caused depression and self-harm in teens. "
+            "Meta violated the Children's Online Privacy Protection Act "
+            "for children under age 13."
+        )
+        topics = classify_topic(text, top_n=5)
+        topic_names = [t.topic for t in topics]
+        assert "child_safety" in topic_names
+
+    def test_child_safety_harm_framing(self):
+        """Child safety detected with harm-to-children language."""
+        text = (
+            "Research shows social media platforms are harmful to children "
+            "and adolescent mental health. Protecting children online requires "
+            "stronger age verification and children's mental health resources."
+        )
+        topics = classify_topic(text, top_n=5)
+        topic_names = [t.topic for t in topics]
+        assert "child_safety" in topic_names

@@ -67,6 +67,7 @@ EXPERT_TITLES: list[str] = [
     "president", "vice president", "vp",
     "chief executive", "ceo", "cto", "cfo", "coo",
     "secretary", "minister", "commissioner",
+    "judge", "justice", "magistrate", "chief justice",
     "spokesperson", "spokesman", "spokeswoman",
     "expert", "specialist", "consultant", "fellow",
     "scholar", "academic", "strategist", "adviser", "advisor",
@@ -77,6 +78,19 @@ EXPERT_TITLES: list[str] = [
 # they begin a sentence and would match the ``[A-Z][a-z]+ [A-Z][a-z]+``
 # pattern for "First Last" names, producing false-positive source
 # extractions like "After Meta said" → source = "After Meta".
+
+# Known tech company names (lowercase) — used to filter out company
+# names from "verb [Name]" patterns that would otherwise match
+# "rejected Meta Platforms" as a named human source.
+_KNOWN_ORGS_LOWER: set[str] = {
+    "meta", "google", "apple", "microsoft", "amazon", "openai",
+    "anthropic", "nvidia", "tesla", "spacex", "x", "twitter",
+    "alphabet", "ibm", "oracle", "palantir", "samsung",
+    "instagram", "snapchat", "snap", "tiktok", "youtube",
+    "bytedance", "reddit", "pinterest", "discord", "spotify",
+    "netflix", "uber", "lyft", "airbnb", "stripe", "shopify",
+    "reuters", "bloomberg",
+}
 _NAME_STOP_FIRST_WORDS: set[str] = {
     "After", "Before", "Because", "Since", "While", "During",
     "Despite", "Although", "Though", "Until", "Unless",
@@ -95,13 +109,32 @@ _NAME_STOP_FIRST_WORDS: set[str] = {
     "Such", "Much", "Not", "Just", "Only", "Even",
     "Already", "Perhaps", "Maybe", "Certainly",
     # Short common words that look like names when capitalized
-    "Any", "All", "Our", "His", "Her", "Its",
+    "Any", "All", "Our", "His", "Her", "Its", "The",
     # Day names — "on Thursday argues" should not extract "Thursday" as source
     "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
     "Saturday", "Sunday",
     # Month names — "In January reported" should not extract "January"
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December",
+    # US state names — "Oakland, California denied" should not extract
+    # "California" as a source; state names appear in datelines and venue
+    # descriptions, not as journalistic sources.
+    "California", "Texas", "Florida", "Georgia", "Virginia",
+    "Illinois", "Ohio", "Michigan", "Arizona", "Colorado",
+    "Pennsylvania", "Maryland", "Indiana", "Missouri", "Minnesota",
+    "Wisconsin", "Oregon", "Connecticut", "Massachusetts",
+    "Washington", "Tennessee", "Kentucky", "Louisiana",
+    "Carolina", "Alabama", "Oklahoma", "Nebraska", "Delaware",
+    "Montana", "Idaho", "Hawaii", "Alaska", "Nevada", "Utah",
+    "Arkansas", "Iowa", "Kansas", "Maine", "Wyoming", "Vermont",
+    # Common city names that appear in datelines
+    "Oakland", "Sacramento", "Austin", "Seattle", "Portland",
+    "Chicago", "Boston", "Denver", "Phoenix", "Atlanta",
+    "Dallas", "Houston", "Miami", "Orlando", "Detroit",
+    "Philadelphia", "Baltimore", "Cleveland", "Cincinnati",
+    "Pittsburgh", "Charlotte", "Nashville", "Memphis",
+    "Milwaukee", "Minneapolis", "Richmond", "Norfolk",
+    "Raleigh", "Tampa", "Jacksonville",
 }
 
 # Publication / organization partial names that look like "First Last"
@@ -331,6 +364,11 @@ def extract_sources(text: str) -> list[SourceMention]:
         if first_word in _NAME_STOP_FIRST_WORDS:
             continue
         if name in _NAME_STOP_NAMES:
+            continue
+        # Filter out known company names that look like "First Last" —
+        # e.g. "rejected Meta Platforms" should not parse "Meta Platforms"
+        # as a named human source.
+        if first_word.lower() in _KNOWN_ORGS_LOWER:
             continue
 
         seen_names.add(name)

@@ -76,6 +76,19 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "online predator", "grooming", "sextortion",
         "kids online", "children online", "youth mental health",
         "social media and kids", "social media and children",
+        # Addiction framing — common in child safety litigation and
+        # AG enforcement actions against social media platforms
+        "addict children", "addicting children", "addictive to children",
+        "social media addiction", "designed to addict",
+        "children's mental health", "children's health",
+        "children under age", "children under 13",
+        "harm to children", "harmful to children", "harming children",
+        "harm to kids", "harmful to kids",
+        "protect children", "protecting children",
+        "children's online privacy", "online safety for children",
+        "youth addiction", "teen addiction", "teen mental health",
+        "adolescent mental health", "adolescent safety",
+        "children's wellbeing", "children's well-being",
     ],
     "content_moderation": [
         "content moderation", "misinformation", "disinformation",

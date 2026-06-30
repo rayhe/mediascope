@@ -8098,3 +8098,45 @@ Contradictory review pattern: positive 3.5/5 product assessment wrapped in deepl
 1048 passed (41 files) — up from 1018 (+30 new tests)
 
 ### Commit
+
+---
+
+## Iteration — Type A: Article Deep Dive (2026-06-30 09:00 PT)
+
+### Article
+Reuters: "Meta loses bid to dismiss US states' claims that Facebook, Instagram addict children" (2026-06-30)
+- 29 state AGs, Judge Yvonne Gonzalez Rogers, Oakland CA
+- COPPA violations, summary judgment on notice/consent
+- Wire-service breaking news — tight facts, no editorial voice
+
+### Source Extraction Fixes (sources.py)
+Three false positive categories eliminated:
+1. **"The" added to `_NAME_STOP_FIRST_WORDS`** — "The states said" parsed "The" as source, "states" as verb
+2. **US states + city names added to `_NAME_STOP_FIRST_WORDS`** — "Oakland, California denied" parsed "California" as source
+3. **`_KNOWN_ORGS_LOWER` filter added to Pattern 2** — "rejected Meta Platforms" parsed company as human source
+   - New module-level constant with ~30 major tech/media company names
+   - Applied in `verb_before_named` pattern extraction loop
+4. **"judge", "justice", "magistrate" added to `EXPERT_TITLES`** — judges now recognized as expert sources
+
+Before: 5 sources (3 false positives). After: 2 sources (0 false positives).
+
+### Topic Classification Fix (topics.py)
+`child_safety` was ABSENT from topic results (only 1 keyword match: COPPA).
+Added 16 new keywords spanning:
+- Addiction framing: "addict children", "social media addiction", "designed to addict"
+- Age-specific: "children under age", "children under 13"
+- Health: "children's mental health", "teen mental health", "adolescent mental health"
+- Harm: "harm to children", "harmful to children", "harming children"
+- Safety: "protect children", "children's online privacy"
+
+After fix: child_safety ranks #2 (0.475), correctly identified alongside litigation (#1, 0.496).
+
+### Remaining Gaps (documented, not fixed)
+- Entity NER for judges/courts (requires spaCy or similar)
+- Harm escalation listing (new framing device type for ordered harm catalogues)
+- Defeat headline framing (new framing device type for "X loses" constructions)
+- Expert detection context window too narrow (100 chars misses distant title references)
+
+### Tests
+1048 passed — no regressions from 3 code changes
+

@@ -371,14 +371,14 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **1048 tests** across 41 test files, each covering a different analytical capability:
+MediaScope has **1057 tests** across 41 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
 | `test_entities.py` | 18 | Entity detection, regex patterns, false-positive exclusion, cluster formats |
 | `test_sentiment.py` | 46 | 8-dimension scoring, VADER/TextBlob composite, framing correction pipeline, active-negative agency, headline override, security context adjustment, self-referential investigation detection |
 | `test_source_stance.py` | 60 | Source extraction, stance classification, outsourced intensity, power asymmetry, counted anonymous sources, no-comment exclusion, product name stop-filter, kicker framing, isolation/pressure as adversarial devices |
-| `test_source_extraction_fixes.py` | 19 | Pattern 3 case-insensitivity fix, Pattern 5c verb-before-surname, attribution verb expansion (thinks/believes/considers/cautions), "called" naming-context filter |
+| `test_source_extraction_fixes.py` | 26 | Pattern 3 case-insensitivity fix, Pattern 5c verb-before-surname, attribution verb expansion (thinks/believes/considers/cautions), "called" naming-context filter, geographic/org false positives |
 | `test_asymmetry.py` | 22 | Asymmetry score calculation, Welch's t-test, Cohen's d, bootstrap confidence intervals |
 | `test_careers.py` | 19 | Career data loading, migration detection, DiD analysis, leadership change analysis, bias decomposition |
 | `test_nyt_article_improvements.py` | 28 | NYT-specific article analysis fixes: active-negative agency, workplace coercion language, investment-near-layoffs juxtaposition, source stop-word filter |
@@ -386,7 +386,7 @@ MediaScope has **1048 tests** across 41 test files, each covering a different an
 | `test_platform_death.py` | 30 | Platform eulogy detection, melancholic vs hostile tone distinction, community source framing |
 | `test_quality_standards.py` | 41 | Quality enforcement: banned AI-slop phrase detection (25 phrases, case-sensitive/insensitive), em dash limit enforcement, counterargument/limitations/methodology signal detection, score calculation, pass/fail logic |
 | `test_citations.py` | 39 | Citation extraction: URL detection, source grading (primary/secondary/tertiary domain lists), domain extraction, attribution patterns ("according to"), formal citations ([1], (Author 2024)), deduplication, citation report statistics |
-| `test_topics.py` | 31 | Topic classification: all 19 standardized topic buckets, confidence scoring (keyword coverage + density), top-N filtering, custom topic injection, multi-topic articles, edge cases |
+| `test_topics.py` | 33 | Topic classification: all 19 standardized topic buckets, confidence scoring (keyword coverage + density), top-N filtering, custom topic injection, multi-topic articles, child_safety addiction/harm framing, edge cases |
 | `test_claims.py` | 28 | Claim-evidence mapping: statistic detection (percentages, dollar amounts, multipliers), quote detection, citation signal detection, assertion detection, source attribution, claim mapping, unsupported claims ratio, confidence scoring |
 | `test_atlantic_analysis.py` | 31 | Atlantic-specific coverage analysis: Emerson Collective ownership conflicts, Apple/OpenAI financial interest detection, AI coverage framing patterns, data center environmental articles |
 | `test_loaded_language_uproar.py` | 13 | Loaded language detection edge cases: workplace coercion terms, revolt vocabulary, "uproar" word variants, false-positive exclusion for neutral contexts |

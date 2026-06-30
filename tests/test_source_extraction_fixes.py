@@ -177,3 +177,86 @@ class TestCalledNamingContextFilter:
         sources = extract_sources(text)
         names = [s.name for s in sources]
         assert "Shah" in names
+
+
+class TestGeographicAndOrgFalsePositives:
+    """Tests for geographic names, article 'The', and org-name false positives.
+
+    Fixes from 2026-06-30 Type A iteration (Reuters child addiction article).
+    """
+
+    def test_the_states_not_a_source(self):
+        """'The states said research...' — 'The' is not a source name."""
+        text = (
+            "The states said research has shown that teenagers' use of "
+            "Facebook and Instagram could lead to depression, anxiety, "
+            "and self-harm including suicide."
+        )
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "The" not in names
+
+    def test_california_not_a_source(self):
+        """'Oakland, California denied...' — geographic name, not a source."""
+        text = (
+            "U.S. District Judge Yvonne Gonzalez Rogers in Oakland, "
+            "California denied Meta's motion to dismiss claims based "
+            "on deception and unfair practices."
+        )
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "California" not in names
+
+    def test_rejected_meta_platforms_not_a_source(self):
+        """'judge rejected Meta Platforms' bid' — org name, not a person."""
+        text = (
+            "A federal judge rejected Meta Platforms' bid to dismiss "
+            "a lawsuit by 29 U.S. state attorneys general accusing it "
+            "of designing Facebook and Instagram to addict children."
+        )
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Meta Platforms" not in names
+
+    def test_valid_name_after_state_name_still_works(self):
+        """State names should not block extraction of nearby real names."""
+        text = (
+            "In Texas, John Smith said the regulations were overdue "
+            "and would protect consumers."
+        )
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "John Smith" in names
+        assert "Texas" not in names
+
+    def test_judge_expert_title(self):
+        """Judge should be recognized as an expert title."""
+        text = (
+            "Federal Judge Sarah Chen said the evidence was overwhelming "
+            "and granted summary judgment."
+        )
+        sources = extract_sources(text)
+        # Find the source
+        chen = [s for s in sources if "Chen" in s.name]
+        assert len(chen) >= 1, f"Expected Sarah Chen as source, got: {[s.name for s in sources]}"
+        assert chen[0].is_expert, "Judge should be flagged as expert"
+
+    def test_google_not_a_person(self):
+        """'rejected Google Appeals' — org name, not a person."""
+        text = (
+            "The court rejected Google Appeals to overturn the ruling, "
+            "saying the evidence was clear."
+        )
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Google Appeals" not in names
+
+    def test_bloomberg_reporting_not_a_source(self):
+        """'reported Bloomberg News' — org name, not person."""
+        text = (
+            "The merger was reportedly canceled, reported Bloomberg "
+            "News on Friday."
+        )
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Bloomberg News" not in names

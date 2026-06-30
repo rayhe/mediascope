@@ -1,0 +1,33 @@
+Reuters
+Published: June 30, 2026
+Section: Legal / Government
+
+Meta loses bid to dismiss US states' claims that Facebook, Instagram addict children
+
+A federal judge rejected Meta Platforms' bid to dismiss a lawsuit by 29 U.S. state attorneys general accusing it of designing Facebook and Instagram to addict children and knowingly concealing the harm from the public.
+
+In a decision late on Monday night, U.S. District Judge Yvonne Gonzalez Rogers in Oakland, California denied Meta's motion to dismiss claims based on deception, unfair practices and violations of the federal Children's Online Privacy Protection Act.
+
+The judge also said Meta did not comply with that law's notice and parental consent requirements, and granted summary judgment to the states on that issue.
+
+Meta and its lawyers did not immediately respond to requests for comment on Tuesday.
+
+Gonzalez Rogers also oversees related multidistrict litigation by more than 2,600 individuals, school districts and local governments over whether social media platforms such as Facebook, Instagram, Google and YouTube, Snapchat and TikTok addict children.
+
+META DOWNPLAYS HARMS
+
+The states said research has shown that children's use of Facebook and Instagram could lead to depression, anxiety, insomnia, interference with education and daily life, and self-harm including suicide.
+
+Meta countered that the attorneys general had no evidence it misled consumers about its platforms' alleged addictiveness, including in congressional testimony by Chief Executive Mark Zuckerberg.
+
+The Menlo Park, California-based company said this was because "social media addiction" is not an established psychiatric condition, and therefore statements that its platforms are not addictive could not be false.
+
+Meta also said it didn't violate the children's online privacy law because it directed Facebook and Instagram to a general audience, not just children under age 13.
+
+Gonzalez Rogers said the states had sufficient evidence that Meta's statements about the platforms' safety and their effects on children were deceptive.
+
+The judge found that Meta's "general audience" defense to COPPA was undermined by evidence that the company had actual knowledge that millions of children under 13 used its platforms.
+
+The ruling allows the case to proceed to trial, marking a significant escalation in legal pressure on Meta over the mental health effects of social media on young users.
+
+Source: https://www.reuters.com/legal/government/meta-loses-bid-dismiss-us-states-claims-that-facebook-instagram-addict-children-2026-06-30/
