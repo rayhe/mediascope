@@ -409,35 +409,35 @@ class TestCrossReferenceConsistency:
     """
 
     def test_methodology_same_event_table_uses_34_type(self):
-        """METHODOLOGY.md §13 same-event comparison must reference 37-type taxonomy."""
+        """METHODOLOGY.md §13 same-event comparison must reference 47-type taxonomy."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
         assert "33-type" not in doc, (
             "METHODOLOGY.md still references stale '33-type' taxonomy in §13 "
-            "(same-event comparison). Should be '44-type' after latecomer_narrative "
-            "and regulatory_shadow were added."
+            "(same-event comparison). Should be '47-type' after failure_precedent "
+            "was added."
         )
         assert "34-type" not in doc, (
             "METHODOLOGY.md still references stale '34-type' taxonomy. "
-            "Should be '44-type' after latecomer_narrative "
-            "and regulatory_shadow were added."
+            "Should be '47-type' after failure_precedent "
+            "was added."
         )
         assert "35-type" not in doc, (
             "METHODOLOGY.md still references stale '35-type' taxonomy. "
-            "Should be '44-type' after latecomer_narrative "
-            "and regulatory_shadow were added."
+            "Should be '47-type' after failure_precedent "
+            "was added."
         )
         assert "36-type" not in doc, (
             "METHODOLOGY.md still references stale '36-type' taxonomy. "
-            "Should be '44-type' after latecomer_narrative "
-            "and regulatory_shadow were added."
+            "Should be '47-type' after failure_precedent "
+            "was added."
         )
         assert "37-type" not in doc, (
             "METHODOLOGY.md still references stale '37-type' taxonomy. "
-            "Should be '44-type' after denial_contradiction was added."
+            "Should be '47-type' after failure_precedent was added."
         )
         assert "38-type" not in doc, (
             "METHODOLOGY.md still references stale '38-type' taxonomy. "
-            "Should be '44-type' after denial_contradiction was added."
+            "Should be '47-type' after failure_precedent was added."
         )
 
     def test_readme_test_topics_description_says_16(self):
@@ -460,19 +460,19 @@ class TestCrossReferenceConsistency:
             content = doc_file.read_text()
             for stale in ("33-type", "34-type", "35-type", "36-type", "37-type",
                           "38-type", "39-type", "40-type", "41-type", "42-type",
-                          "43-type", "44-type", "45-type"):
+                          "43-type", "44-type", "45-type", "46-type"):
                 assert stale not in content, (
                     f"{doc_file.name} contains stale '{stale}' reference. "
-                    f"Should be '46-type' after analogy_metaphor + taxonomy_framing."
+                    f"Should be '47-type' after failure_precedent was added."
                 )
 
     def test_no_stale_33_framing_device_in_readme(self):
         """README.md should not reference stale framing device counts."""
         doc = (_REPO_ROOT / "README.md").read_text()
-        stale_refs = re.findall(r"\b(?:3[3-9]|4[0-5])[- ](?:type|framing|device)", doc)
+        stale_refs = re.findall(r"\b(?:3[3-9]|4[0-6])[- ](?:type|framing|device)", doc)
         assert not stale_refs, (
             f"README.md contains stale framing reference(s): {stale_refs}. "
-            f"Should be 46 after analogy_metaphor + taxonomy_framing were added."
+            f"Should be 47 after failure_precedent was added."
         )
 
     def test_readme_topic_count_in_description(self):
@@ -753,11 +753,11 @@ class TestEmotionalLanguageCount:
     """
 
     def test_emotional_language_count(self):
-        """EMOTIONAL_LANGUAGE should contain exactly 537 unique terms."""
+        """EMOTIONAL_LANGUAGE should contain exactly 566 unique terms."""
         from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
 
         assert len(EMOTIONAL_LANGUAGE) == 566, (
-            f"Expected 537 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
+            f"Expected 566 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
             "If you added or removed terms, update this test to the new count.\n"
             "Also check for duplicates: len(set(EMOTIONAL_LANGUAGE)) should match."
         )
@@ -788,6 +788,23 @@ class TestAdversarialDeviceListConsistency:
 
     Added: 2026-06-28 21:00 PT, Type D iteration.
     """
+
+    # --- Total regex pattern count guard ---
+    # Track the total number of compiled regex patterns across all device
+    # types in _DEVICE_PATTERNS.  When patterns are added, this test fails
+    # and forces a deliberate count update, preventing undocumented drift.
+    EXPECTED_TOTAL_PATTERNS = 272  # sum(len(v) for v in _DEVICE_PATTERNS.values())
+
+    def test_total_regex_pattern_count(self):
+        """Total compiled regex patterns must match expected count."""
+        from mediascope.analyze.framing import _DEVICE_PATTERNS
+        actual = sum(len(v) for v in _DEVICE_PATTERNS.values())
+        assert actual == self.EXPECTED_TOTAL_PATTERNS, (
+            f"Expected {self.EXPECTED_TOTAL_PATTERNS} total regex patterns, "
+            f"got {actual}. If you added or removed patterns, update "
+            f"EXPECTED_TOTAL_PATTERNS in this test class.\n"
+            f"Per-type counts: {', '.join(f'{k}={len(v)}' for k, v in sorted(_DEVICE_PATTERNS.items()))}"
+        )
 
     def _adversarial_types_from_code(self) -> set[str]:
         """Get the adversarial device type set from sentiment.py."""
