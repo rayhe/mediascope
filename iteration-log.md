@@ -7595,3 +7595,37 @@ Article published same day as KIDS Act House vote (267-117 bipartisan) but ignor
 
 ### Commit
 `70d9508` — "Type A deep dive: Gizmodo Project 2029 'Kids Over Clicks' (Jun 29)"
+
+---
+
+## 2026-06-29 22:00 PT — Type A: Article Deep Dive
+
+**Focus:** MIT Technology Review, "AI agents are not your 'coworkers'" (Jun 29, 2026)
+
+### Selection rationale
+Same-day MIT TR article on AI agent marketing vs. reality. Tests toolkit on measured academic editorial tone — a register that's harder to detect than sensationalist framing because the emotional load is distributed across expert quotes rather than editorial prose.
+
+### Findings
+
+**Article technique:** Expert-outsourced editorial judgment. 2/2 quoted experts criticize AI-as-coworker framing, 0/2 defend. Nobel laureate (Acemoglu) delivers the sharpest editorial judgment ("losing proposition") while the writer maintains analytical distance. Study statistics (18% fewer errors, 44% more likely to escalate, 23% on org charts) function as rhetorical anchors for editorial conclusions.
+
+**Toolkit results:**
+- 8 entities detected (Nvidia, Jensen Huang, Microsoft, OpenAI, Anthropic, Google, Claude, MIT TR). Missing: Emma Wiles, Daron Acemoglu, Boston University, Stanford (by design — entity clusters are tech-industry scoped).
+- 9 framing devices: 4× ironic_quotation, 3× analogy_stacking, 1× emotional_appeal, 1× rhetorical_question.
+- VADER tone: +0.635 (misleading positive on editorially negative article).
+
+### Toolkit gaps & fixes
+
+1. **Outsourced intensity false negative — FIXED:** `_measure_emotional_intensity()` returned 0.0 for Acemoglu quote containing "losing proposition," "replace humans." Root cause: `EMOTIONAL_LANGUAGE` had no AI labor/displacement terms. Added 33 terms (468 → 501 total). Deliberately excluded too-common terms ("worse at," "questionable," "marketed as") that inflated scores in calibration testing. Result: quoted_intensity 0.0→1.0, outsourced_ratio 0.0→0.653.
+
+2. **Academic entity detection — noted, not fixed:** Design limitation. Entity detection uses hardcoded tech-company clusters, not NER. Researcher/institution detection would require spaCy or similar — future enhancement.
+
+3. **One-sided expert sourcing — noted, not fixed:** No mechanism to detect source balance (all critics, no defenders). The outsourced_intensity metric partially captures the effect but doesn't model the editorial choice of expert selection.
+
+### Pre-check: 968 tests passing
+### Post-check: 968 tests passing (count guard updated 468→501, no regressions)
+
+### Sources
+- MIT TR article: https://www.technologyreview.com/2026/06/29/1139849/ai-agents-are-not-your-coworkers/
+
+### Commit

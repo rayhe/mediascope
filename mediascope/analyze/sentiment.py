@@ -352,6 +352,31 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "fleeced", "fleecing",
     "looted", "looting",
     "plundered", "plundering",
+    # AI labor/displacement emotional terms — needed for coverage of AI
+    # agents, automation, and workforce disruption where editorial and
+    # quoted language deploys displacement anxiety, delegitimizing labels,
+    # and doom framing that reads as measured academic critique but carries
+    # strong emotional load.  Gap discovered during MIT TR "AI agents are
+    # not your coworkers" analysis (Jun 2026): outsourced_intensity returned
+    # 0.0 for Acemoglu quote containing "losing proposition," "replace
+    # humans" because these terms had no match.
+    "losing proposition", "losing propositions",
+    "replace humans", "replacing humans",
+    "replace workers", "replacing workers",
+    "replace employees", "replacing employees",
+    "unrealistic expectations",
+    "dump blame", "dumping blame", "offload blame",
+    "offload accountability", "offloading accountability",
+    "hot air",
+    "overhyped", "overhype", "over-hyped",
+    "branding exercise",
+    "job displacement",
+    "automating away", "automated away",
+    "deskilling", "deskilled",
+    "devaluing", "devalue", "devalued",
+    "commodify", "commodified", "commodifying",
+    "expendable",
+    "obsolete", "obsolescence",
 ]
 
 # Passive/victim vs. active/powerful framing indicators
