@@ -596,6 +596,19 @@ board_of_directors:
       regardless of Ariel's current portfolio. He also still runs a $20B+ AUM firm
       whose portfolio composition could shift back into tech at any time.
 
+      FUND-LEVEL DETAIL (Jun 30, 2026): SEC quarterly report (N-30B-2, Ariel Investment
+      Trust, CIK 798365, acc-no 0001193125-24-037590, period ending Dec 31, 2023) reveals
+      the Ariel Global Fund (Series S000035292, tickers AGLOX/AGLYX) specifically held
+      9,327 shares of Microsoft Corporation valued at $3,507,325 (~5.3% of the Global
+      Fund's $66.5M net assets). This is significant because MICROSOFT is a co-defendant
+      in NYT v. Microsoft Corp. (1:23-cv-11195), filed Dec 2023 — meaning Rogers' firm
+      held a material position in NYT's litigation target during the early stages of the
+      lawsuit. The position was exited by Q4 2025 per the aggregate 13F filings (which
+      cover all Ariel-managed accounts including mutual funds). The MSFT holding was in the
+      small Global Fund (~$67M AUM), not the flagship Ariel Fund (~$3.8B) or Appreciation
+      Fund (~$1.7B). No other Big Tech stocks appeared in the Global Fund's Dec 2023
+      schedule — META, GOOGL, AMZN, AAPL, NFLX were all held in Ariel's larger funds.
+
       HISTORICAL NOTE: During Rogers' board tenure (since 2018), Ariel held over
       $1.1B in Big Tech stocks for an unknown period. Whether this created actual
       editorial influence is unknowable, but the structural tension was real and
@@ -893,11 +906,15 @@ known_conflicts:
       2026-03-31): Meta, Alphabet, Amazon, Apple, Netflix ALL ABSENT.
       Ariel Investments Q4 2025 13F (CIK 0000936753-26-000017, period 2025-12-31):
       Meta, Alphabet, Amazon, Apple, Netflix ALL ABSENT.
+      Ariel Investment Trust N-30B-2 (CIK 798365, acc-no 0001193125-24-037590, period
+      2023-12-31): Ariel Global Fund held 9,327 shares MSFT at $3,507,325 (~5.3% of
+      fund NAV). MSFT was NYT co-defendant at the time of this holding.
       Prior filings showed: META 750K shares CL A ($254.2M), GOOGL 2.5M CL A + 1.85M
       CL C ($598M+), AMZN 703K ($101M), AAPL 670K+423K ($208M), NFLX 201K ($96M).
     source_urls:
       - "https://www.sec.gov/Archives/edgar/data/936753/000093675326000025/ (Q1 2026 — absent)"
       - "https://www.sec.gov/Archives/edgar/data/936753/000093675326000017/ (Q4 2025 — absent)"
+      - "https://www.sec.gov/Archives/edgar/data/798365/000119312524037590/ (Ariel Global Fund Dec 2023 — MSFT held)"
       - "https://nytco.com/press/board-of-directors/john-w-rogers-jr/"
 
   - type: "board_van_dyck_meta_paradox"
@@ -1168,6 +1185,14 @@ notes: |
   board_nomgov_capture drops from 5 to 4 (career ties remain for 3 of 4 members). Rogers
   retains structural power (chairs Nom&Gov + Finance) but the active financial conflict
   with NYT's tech coverage is resolved. Exit timing (exact quarter in 2025) TBD.
+
+  FUND-LEVEL GRANULARITY (added Jun 30 via N-30B-2 quarterly report): The Ariel Global Fund
+  (CIK 798365, Series S000035292) held 9,327 shares of Microsoft ($3,507,325) as of Dec 31,
+  2023 — the same month NYT filed its copyright suit against Microsoft. This means Rogers'
+  firm held a direct position in NYT's co-defendant during the lawsuit's earliest phase.
+  The position represented ~5.3% of the Global Fund's ~$66.5M NAV. Exited by Q4 2025 per
+  aggregate 13F. No other Big Tech appeared in the Global Fund — the large META/GOOGL/AMZN/
+  AAPL/NFLX positions were in Ariel's flagship funds (Ariel Fund, Appreciation Fund).
 
   12. NYT AMENDED COMPLAINT — COX COMMUNICATIONS SCOTUS IMPACT (late Jun 2026):
   NYT filed amended complaint in SDNY: (a) DROPPED contributory infringement claim against

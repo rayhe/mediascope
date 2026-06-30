@@ -8227,3 +8227,37 @@ After fix: child_safety ranks #2 (0.475), correctly identified alongside litigat
 ### Tests
 1048 passed — no regressions from 3 code changes
 
+
+---
+
+## 2026-06-30 11:00 PT — Type C: Ownership & Funding Deep Dive
+
+### Focus: NYT (Ariel Global Fund MSFT granularity) + Wired/Advance (WBD/Paramount UK intervention)
+
+### Improvements
+
+**NYT Profile — Ariel Global Fund MSFT Historical Holding:**
+- Discovered via SEC N-30B-2 quarterly report (Ariel Investment Trust, CIK 798365, acc-no 0001193125-24-037590, period ending Dec 31, 2023) that the Ariel Global Fund (Series S000035292) specifically held 9,327 shares of Microsoft at $3,507,325 (~5.3% of fund NAV)
+- This is significant because Microsoft is NYT's co-defendant (Case 1:23-cv-11195), and this holding existed during the lawsuit's filing month (Dec 2023)
+- The MSFT position was in the small Global Fund (~$67M AUM), NOT the flagship funds — the large META/GOOGL/AMZN/AAPL/NFLX positions were in Ariel Fund and Appreciation Fund
+- Confirmed via 13F aggregate that MSFT was exited by Q4 2025 along with all other Big Tech
+- This enriches rather than contradicts the existing "all Big Tech exited" finding — adds fund-level provenance
+- Updated: Rogers board section (fund-level detail block), conflict evidence (added N-30B-2 source URL), notes section (fund-level granularity addendum)
+
+**Wired/Advance Profile — WBD/Paramount UK Intervention:**
+- UK Culture Secretary Lisa Nandy issued "minded to intervene" notice on Jun 30, 2026 (today)
+- Cites media plurality and streaming service concerns; July 6 deadline for company responses
+- If she proceeds, triggers Ofcom + CMA review (up to 24 weeks possible)
+- CMA already has its own antitrust investigation with Aug 7 decision deadline
+- Corrected EU Phase I deadline from July 21 to July 22 (per Reuters/Times reporting)
+- Added CA AG Rob Bonta quote ("red flags in the air everywhere") from Jun 28
+
+### Research Process
+- Reviewed all 5 publication profiles extensively
+- Searched Ariel Investments Q1 2026 13F (confirmed $8.93B AUM, 106 stocks, Big Tech absent)
+- Traced MSFT holding to specific fund via N-30B-2 filing at CIK 798365 (Ariel Investment Trust, the mutual fund entity vs CIK 936753 for the investment adviser)
+- Confirmed filing period (Dec 31, 2023) via EDGAR filing index
+- Searched latest NYT v OpenAI and WBD/Paramount developments
+
+### Tests
+1057 passed — no regressions
