@@ -4,6 +4,52 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-30 15:00 PT — Type B: Journalist/Publication Research — Isabella Ward (Bloomberg → Wired) + Allison Arieff MIT TR Departure
+
+**Focus:** New Wired London hire research + MIT Tech Review editorial departure tracking
+
+### New Journalist Profile: Isabella Ward
+
+**Career:**
+- **Bloomberg News** (~2022–2026): Reporter across multiple desks — Tech, Economy, Government, Podcasts, Daybreak, Markets Today, Breaking News, EMEA equities (UK retail stocks, ECM). 539+ articles. Notable quantum computing coverage: Google Willow chip breakthrough (co-byline with Amy Thomson), Nu Quantum $60M Series A, JPMorgan quantum random number generation.
+- **Wired** (June 2026–): Staff writer, London. First byline: "Longevity Startup Doses First Human in Bid to Reverse Age-Related Sight Loss" — biotech/longevity covering Life Biosciences cellular rejuvenation FDA trial.
+- **Education:** MSci Physics, Imperial College London
+- **Fellowship:** 2025 John Schofield Trust Fellow (UK journalism mentoring charity for early-career journalists)
+- **Reports to:** Rosie Swash (deputy editor, London) → Brian Barrett (executive editor)
+
+**Analytical value:**
+1. Bloomberg → Wired is an unusual Drummond-era pipeline — most recent hires come from Gizmodo/Vice/Guardian adversarial-journalism orbit. Ward brings financial/markets institutional DNA.
+2. Physics MSci gives her hard-science depth comparable to Will Knight and Will Douglas Heaven — creates testable specialization signal.
+3. She IS the "general assignment staff writer (another new role, more on that soon)" that Barrett referenced in the Rosie Swash deputy editor announcement (April 2026). Updated Swash entry to cross-reference.
+4. London rebuild context: Ward + Swash are the two editorial hires reconstituting Wired's UK presence after print edition cancellation + 7 staff departures (end 2025).
+
+### Editorial Changes Added
+
+| Publication | Change | Date |
+|-------------|--------|------|
+| Wired | Isabella Ward hired as staff writer, London | 2026-06-03 |
+| MIT Tech Review | Allison Arieff departed (editorial director of print → SF Chronicle) | 2026-01 |
+| Wired (update) | Rosie Swash entry cross-referenced to identify Ward as TBD London hire | — |
+
+### Stats (post-iteration)
+- Journalists tracked: 106 (was 105)
+- Multi-publication careers: 104 (was 103)
+- Framing device types: 47 (42 pattern-matched + 5 structural)
+- Total regex patterns: 273
+- Emotional language terms: 587
+- Tests: 1058 (all passing)
+- Commit: `3e3ef38`
+
+### Sources
+- https://talkingbiznews.com/media-news/wired-hires-bloombergs-ward-as-a-staff-writer/
+- https://muckrack.com/isabella-ward-2 (Muck Rack verified profile)
+- https://journalisthunt.com (539 articles count)
+- https://singularityhub.com (Wired byline verification: longevity piece)
+- https://talkingbiznews.com/media-news/mit-techs-arieff-joins-sf-chronicle/
+- https://johnschofieldtrust.org.uk (fellowship details)
+
+---
+
 ## 2026-06-30 14:00 PT — Type A: Article Deep Dive — Meta Claude Code/Codex Restriction
 
 **Article:** "Meta restricts engineers' use of Claude Code and Codex to protect AI training data"
