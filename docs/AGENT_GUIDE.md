@@ -447,7 +447,7 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
 ```json
 {
     "name": "detect_framing_devices",
-    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 43 device types across three tiers: core (10 pattern-matched), extended (28 from real-article analysis), and structural post-pass (5 heuristic-based).",
+    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 46 device types across three tiers: core (10 pattern-matched), extended (31 from real-article analysis), and structural post-pass (5 heuristic-based).",
     "parameters": {
         "type": "object",
         "properties": {
@@ -932,7 +932,7 @@ See `METHODOLOGY.md` §9 and `examples/framing_correction_demo.py` for a hands-o
 
 Three conditions must all be met:
 
-1. **Adversarial framing density** — 3+ adversarial framing devices detected (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, hypocrisy_frame, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing)
+1. **Adversarial framing density** — 3+ adversarial framing devices detected (catastrophizing, emotional_appeal, guilt_by_association, hypocrisy_frame, isolation_framing, juxtaposition, kicker_framing, loaded_language, military_techno_optimism, power_asymmetry, pressure_language, refusal_amplification, self_referential_investigation, timeline_implication)
 2. **Negative agency signal** — Active-negative agency (tracking, cutting, forcing) or passive victim framing
 3. **Positive raw VADER score** — The uncorrected composite score misleadingly reads as positive
 

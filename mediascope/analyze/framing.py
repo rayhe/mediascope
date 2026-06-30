@@ -3880,22 +3880,22 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     Scans for 41 pattern-matched device types plus 5 structural
     post-pass types (46 total).
 
-    Pattern-matched (39): guilt_by_association, anonymous_authority,
-    catastrophizing, false_balance, selective_omission_signal,
-    emotional_appeal, straw_man, loaded_language, refusal_amplification,
-    juxtaposition, timeline_implication, power_asymmetry,
-    military_techno_optimism, selective_rehabilitation,
-    rhetorical_question, ironic_quotation, isolation_framing,
-    pressure_language, geopolitical_regulatory_pressure,
-    self_referential_investigation, sovereignty_framing,
-    scale_magnitude, ceo_personalization, litigation_framing,
-    corporate_reassurance_undercut, sarcastic_correction,
-    hypocrisy_frame, outsourced_intensity, confession_framing,
-    precedent_analogy, social_proof_amplification,
-    latecomer_narrative, regulatory_shadow, editorial_deflation,
-    denial_contradiction, worker_replacement_irony,
-    two_tier_treatment, regulatory_favoritism,
-    escalation_amplification, and commodification_metaphor.
+    Pattern-matched (41): analogy_metaphor, anonymous_authority,
+    catastrophizing, ceo_personalization, commodification_metaphor,
+    confession_framing, corporate_reassurance_undercut,
+    denial_contradiction, editorial_deflation, emotional_appeal,
+    escalation_amplification, false_balance,
+    geopolitical_regulatory_pressure, guilt_by_association,
+    hypocrisy_frame, ironic_quotation, isolation_framing,
+    juxtaposition, latecomer_narrative, litigation_framing,
+    loaded_language, military_techno_optimism, outsourced_intensity,
+    power_asymmetry, precedent_analogy, pressure_language,
+    refusal_amplification, regulatory_favoritism, regulatory_shadow,
+    rhetorical_question, sarcastic_correction, scale_magnitude,
+    selective_omission_signal, selective_rehabilitation,
+    self_referential_investigation, sovereignty_framing, straw_man,
+    taxonomy_framing, timeline_implication, two_tier_treatment,
+    and worker_replacement_irony.
 
     Structural post-pass (5): kicker_framing, analogy_stacking,
     speculative_framing, trend_bundling, social_proof_amplification.

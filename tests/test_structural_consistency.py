@@ -43,15 +43,27 @@ def _all_device_types_from_code() -> set[str]:
 
 
 class TestFramingDeviceTypeCount:
-    """Guard: total framing device types in code match documented count."""
+    """Guard: total framing device types in code match documented count.
 
-    def test_total_device_types_is_43(self):
-        """Code should define exactly 43 unique framing device types."""
+    When a new device type is added to framing.py, these tests will fail
+    and list every file that needs its count updated.  The expected count
+    is derived from code, so only the 'total' test assertion needs bumping.
+    """
+
+    # --- Update ONLY this constant when adding new device types ---
+    EXPECTED_TOTAL = 46
+    EXPECTED_PATTERN_MATCHED = 41  # core + extended (in _DEVICE_PATTERNS)
+    EXPECTED_STRUCTURAL = {"kicker_framing", "analogy_stacking",
+                           "speculative_framing", "trend_bundling",
+                           "social_proof_amplification"}
+
+    def test_total_device_types(self):
+        """Code should define exactly EXPECTED_TOTAL unique device types."""
         types = _all_device_types_from_code()
-        assert len(types) == 46, (
-            f"Expected 44 framing device types, got {len(types)}.\n"
+        assert len(types) == self.EXPECTED_TOTAL, (
+            f"Expected {self.EXPECTED_TOTAL} framing device types, got {len(types)}.\n"
             f"Types: {sorted(types)}\n"
-            "If you added a new device, update this test AND the docs:\n"
+            "If you added a new device, update EXPECTED_TOTAL above AND the docs:\n"
             "  - docs/METHODOLOGY.md §4.1 total and tier counts\n"
             "  - docs/ARCHITECTURE.md framing device list\n"
             "  - docs/AGENT_GUIDE.md detect_framing_devices description\n"
@@ -59,25 +71,26 @@ class TestFramingDeviceTypeCount:
             "  - README.md (if framing count is mentioned)"
         )
 
-    def test_pattern_matched_types_is_36(self):
-        """36 types should come from regex patterns (core + extended)."""
+    def test_pattern_matched_types(self):
+        """Pattern-matched types (core + extended) count matches expectation."""
         src = (_REPO_ROOT / "mediascope" / "analyze" / "framing.py").read_text()
         pattern_keys = set(re.findall(r'_DEVICE_PATTERNS\["(\w+)"\]', src))
         initial_keys = set(re.findall(r'"(\w+)":\s*_[A-Z_]+_PATTERNS', src))
         pattern_types = initial_keys | pattern_keys
-        assert len(pattern_types) == 41, (
-            f"Expected 39 pattern-matched device types, got {len(pattern_types)}.\n"
+        assert len(pattern_types) == self.EXPECTED_PATTERN_MATCHED, (
+            f"Expected {self.EXPECTED_PATTERN_MATCHED} pattern-matched device types, "
+            f"got {len(pattern_types)}.\n"
             f"Types: {sorted(pattern_types)}"
         )
 
-    def test_structural_post_pass_types_is_4(self):
-        """5 types should come from structural post-pass (not pattern dict)."""
+    def test_structural_post_pass_types(self):
+        """Structural post-pass types should be exactly the known set."""
         src = (_REPO_ROOT / "mediascope" / "analyze" / "framing.py").read_text()
         pattern_keys = set(re.findall(r'_DEVICE_PATTERNS\["(\w+)"\]', src))
         initial_keys = set(re.findall(r'"(\w+)":\s*_[A-Z_]+_PATTERNS', src))
         post_pass = set(re.findall(r'device_type="(\w+)"', src))
         structural_only = post_pass - initial_keys - pattern_keys
-        assert structural_only == {"kicker_framing", "analogy_stacking", "speculative_framing", "trend_bundling", "social_proof_amplification"}, (
+        assert structural_only == self.EXPECTED_STRUCTURAL, (
             f"Unexpected structural types: {structural_only}"
         )
 
@@ -122,34 +135,53 @@ class TestMainModuleEntryPoint:
 
 
 class TestDocCountConsistency:
-    """Guard: documented counts match across files."""
+    """Guard: documented counts match across files.
+
+    All documentation files must reference the same framing device count.
+    The expected count string is derived from TestFramingDeviceTypeCount
+    constants so there is exactly ONE place to update when types are added.
+    """
+
+    # Derived from the single source of truth above
+    _EXPECTED_TOTAL = TestFramingDeviceTypeCount.EXPECTED_TOTAL
+    _EXPECTED_EXTENDED = (_EXPECTED_TOTAL
+                          - 10  # core devices (stable)
+                          - len(TestFramingDeviceTypeCount.EXPECTED_STRUCTURAL))
 
     def test_architecture_device_count(self):
-        """ARCHITECTURE.md must say 44 framing device types."""
+        """ARCHITECTURE.md framing device count matches code."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
-        assert "**44 framing device types**" in doc, (
-            "ARCHITECTURE.md framing device count is stale. Should be 43."
+        expected = f"**{self._EXPECTED_TOTAL} framing device types**"
+        assert expected in doc, (
+            f"ARCHITECTURE.md framing device count is stale. "
+            f"Should contain '{expected}'."
         )
 
     def test_methodology_device_count(self):
-        """METHODOLOGY.md must say 44 framing device types."""
+        """METHODOLOGY.md framing device count matches code."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
-        assert "44 framing device types" in doc, (
-            "METHODOLOGY.md framing device count is stale. Should be 43."
+        expected = f"{self._EXPECTED_TOTAL} framing device types"
+        assert expected in doc, (
+            f"METHODOLOGY.md framing device count is stale. "
+            f"Should contain '{expected}'."
         )
 
     def test_agent_guide_device_count(self):
-        """AGENT_GUIDE.md must say 43 device types."""
+        """AGENT_GUIDE.md framing device count matches code."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
-        assert "43 device types" in doc, (
-            "AGENT_GUIDE.md framing device count is stale. Should be 43."
+        expected = f"{self._EXPECTED_TOTAL} device types"
+        assert expected in doc, (
+            f"AGENT_GUIDE.md framing device count is stale. "
+            f"Should contain '{expected}'."
         )
 
     def test_cli_analyze_device_count(self):
-        """CLI analyze docstring must say 41 types."""
+        """CLI analyze docstring framing device count matches code."""
         cli_src = (_REPO_ROOT / "mediascope" / "cli.py").read_text()
-        assert "41 types" in cli_src, (
-            "CLI analyze command docstring framing device count is stale. Should be 43."
+        expected = f"{self._EXPECTED_TOTAL} types"
+        assert expected in cli_src, (
+            f"CLI analyze command docstring framing device count is stale. "
+            f"Should contain '{expected}'."
         )
 
     def test_readme_banned_phrases_count(self):
@@ -426,19 +458,21 @@ class TestCrossReferenceConsistency:
         """No documentation file should reference stale framing count X-type strings."""
         for doc_file in (_REPO_ROOT / "docs").glob("*.md"):
             content = doc_file.read_text()
-            for stale in ("33-type", "34-type", "35-type", "36-type", "37-type", "38-type", "39-type"):
+            for stale in ("33-type", "34-type", "35-type", "36-type", "37-type",
+                          "38-type", "39-type", "40-type", "41-type", "42-type",
+                          "43-type", "44-type", "45-type"):
                 assert stale not in content, (
                     f"{doc_file.name} contains stale '{stale}' reference. "
-                    f"Should be '44-type' after commodification_metaphor was added."
+                    f"Should be '46-type' after analogy_metaphor + taxonomy_framing."
                 )
 
     def test_no_stale_33_framing_device_in_readme(self):
         """README.md should not reference stale framing device counts."""
         doc = (_REPO_ROOT / "README.md").read_text()
-        stale_refs = re.findall(r"\b3[3-9][- ](?:type|framing|device)", doc)
+        stale_refs = re.findall(r"\b(?:3[3-9]|4[0-5])[- ](?:type|framing|device)", doc)
         assert not stale_refs, (
             f"README.md contains stale framing reference(s): {stale_refs}. "
-            f"Should be 44 after commodification_metaphor was added."
+            f"Should be 46 after analogy_metaphor + taxonomy_framing were added."
         )
 
     def test_readme_topic_count_in_description(self):
