@@ -7421,3 +7421,39 @@ MIT Technology Review: "Data Centers Are Amazing. Everyone Hates Them." (Jan 14,
 
 ### Commit
 `0061ab6` — pushed to `rayhe/mediascope` main
+
+---
+
+## 2026-06-29 17:00 PT — Type A: MIT TR "Resistance: 10 Things That Matter in AI Right Now"
+
+### Article
+"Resistance: 10 Things That Matter in AI Right Now" (MIT Technology Review, Apr 21 2026). Listicle format cataloguing 10 threads of anti-AI sentiment: London protests, Pro-Human AI Declaration, Pentagon–OpenAI, ChatGPT uninstalls, Altman Molotov attack, Block/Atlassian layoffs, chatbot mental-health lawsuits, data center NIMBY activism, copyright battles, Trump's AI energy pledge.
+
+### Improvements
+- **Expanded: `catastrophizing`** — new "threat to humanity/civilization/democracy/society" pattern catching softer existential framing without the word "existential". Also "pose a threat to" variants.
+- **Expanded: `emotional_appeal`** — new alarm/anxiety idiom pattern: "sounding the alarm", "deep anxieties", "fierce blowback", "widespread anger", "sparked outrage", "growing unease", "raised the alarm", etc. (18 new phrase variants).
+- **Expanded: `loaded_language`** — 3 new sub-pattern groups:
+  - Intensity idioms: "in droves", "en masse", "in spades" (amplifying modifiers)
+  - Polemical nouns: "diatribe", "screed", "tirade", "rant", "harangue", "polemic", "manifesto" (characterize speech as extreme before reader encounters it)
+  - Violence references: "Molotov cocktail", "arson", "death threats", "swatting", "firebombed", etc. (editorial escalation through physical violence details)
+- **Expanded: `social_proof_amplification`** — 2 new sub-patterns for poll/survey-based social proof:
+  - Named poll with percentage: "A Pew poll found that 72% of..."
+  - Fraction-as-headline: "half of Americans are concerned", "three-quarters of Americans worry" (9 fraction forms × 11 verb forms)
+- **Expanded: `scale_magnitude`** — 2 new sub-patterns:
+  - Stalled/blocked dollar amounts: "stalled $98 billion in..." (7 action verbs)
+  - Percentage-based workforce impact: "lay off 40% of its staff" (6 action verbs)
+
+### Impact
+- Article detection: 5 → 17 devices (+240%), device types: 2 → 5
+- Total framing device types: 41 (unchanged — new patterns added to existing types)
+- Total patterns: 253 (248 in _DEVICE_PATTERNS + 5 in _SOCIAL_PROOF_PATTERNS)
+- 960 tests across 38 test files, all passing
+
+### Gaps Identified
+- Coalition construction framing: "unlikely coalition of MAGA Republicans, democratic socialists, labor activists, and church leaders" — bundling ideological opposites as evidence of correctness. New device type candidate.
+- Escalation narrative structure: sequential ordering from peaceful to violent acts naturalizes the escalation. Structural, not lexical.
+- Listicle-as-framing: 10 thematically distinct concerns bundled under one "resistance" label creates appearance of monolithic movement. Structural analysis needed.
+- Perspective balance metric: article presents zero counterexamples where AI resistance was premature or resolved. One-directional selection bias currently unquantifiable.
+- Entity gaps: Pew Research Center, Block/Square, Atlassian, school districts, environmental groups invisible to entity detection.
+
+### Commit

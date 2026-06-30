@@ -370,7 +370,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **925 tests** across 37 test files, each covering a different analytical capability:
+MediaScope has **960 tests** across 38 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -404,6 +404,7 @@ MediaScope has **925 tests** across 37 test files, each covering a different ana
 | `test_government_oversight_topic.py` | 15 | government_oversight topic bucket (national security, export controls, AI regulation, military AI, beats product_launch on regulation articles, MIT TR Anthropic feud article), group_expert source detection (cybersecurity experts open letter, AI researchers joint statement, petition signed by experts, not anonymous) |
 | `test_confession_framing.py` | 31 | Confession framing (#33): "admitted," "conceded," "finally acknowledged," "was forced to admit" reframing corporate statements as confessions. Cross-publication patterns (Guardian, NYT, Atlantic, MIT TR). False-positive exclusion for legal/judicial confessions, direct-quote self-description. Attribution asymmetry detection. |
 | `test_precedent_analogy.py` | 22 | Precedent analogy framing: opioid/tobacco/asbestos crisis import via "echoes of," "much like," "following the playbook" patterns. Insurance entity detection (Hartford, Chubb, Flashlight Capital). Legal entity detection (Section 230, DSA, bellwether). Scale/magnitude expansions ("hundreds of millions," "tens of billions"). Analogy marker boundary fixes. |
+| `test_resistance_patterns.py` | 35 | MIT TR Resistance article patterns: catastrophizing (threat to humanity), alarm/anxiety idioms, intensity/polemical/violence loaded language, poll-based social proof amplification, stalled-dollar and workforce-percentage scale magnitude. |
 | `test_avclub_sardonic_framing.py` | 34 | AV Club sardonic framing stress test: ironic quotation (scare quotes around "predictions," "points," "content"), sarcastic correction (ironic denial "presumably has absolutely nothing to do with," mock-certainty "we're sure are just thrilled," post-quote deflation "You know, like how humans talk!"), loaded language (ad hominem "tech bros"/"gormless"/"lumbering," industry-as-vice "gambling addiction"/"sinking their hooks into"), cross-publication sardonic tone detection. |
 | `test_arena_cross_analysis.py` | 18 | Cross-publication analysis: NYT vs Gizmodo on Arena prediction markets story — tone separation between neutral business scoop and adversarial entertainment coverage, emotional intensity scoring, ironic quotation filtering, agency detection on same-event coverage. |
 | `test_latecomer_regulatory_framing.py` | 33 | Latecomer narrative (#36) and regulatory shadow (#37) framing devices: "exploring partnerships with," "joining the race," "playing catch-up," "market already dominated by" (latecomer narrative); "increasing scrutiny," "drawn scrutiny from," "amid antitrust," "could face regulatory," "raised concerns about" (regulatory shadow). Integration test on Arena article excerpt triggers both devices. False-positive exclusion for neutral partnerships and compliance language. |

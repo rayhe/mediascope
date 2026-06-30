@@ -138,6 +138,18 @@ _CATASTROPHIZING_PATTERNS: list[re.Pattern] = [
         r"model collapse|ecological harm|ecological collapse)\b",
         re.IGNORECASE,
     ),
+    # "threat to humanity/civilization/democracy" — existential-risk framing
+    # without the word "existential".  Common in poll/survey reporting where
+    # a percentage of respondents are cited as believing AI/tech poses such
+    # a threat.  Discovered via MIT TR "Resistance" article (Apr 2026):
+    # "three-quarters of Americans worry AI could pose a threat to humanity."
+    re.compile(
+        r"\b(?:threat to humanity|threat to civilization|"
+        r"threat to (?:our |the )?(?:existence|survival|future|way of life)|"
+        r"(?:pose|poses|posed|posing) (?:a |an? )?(?:grave |serious |real |fundamental )?"
+        r"threat to (?:humanity|civilization|society|democracy))\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _FALSE_BALANCE_PATTERNS: list[re.Pattern] = [
@@ -182,6 +194,26 @@ _EMOTIONAL_APPEAL_PATTERNS: list[re.Pattern] = [
         r"heartbreaking|sickening|infuriating|appalling|"
         r"disgusting|shameful|disgraceful|deplorable|"
         r"unconscionable|unforgivable|inexcusable)\b",
+        re.IGNORECASE,
+    ),
+    # Alarm / anxiety idioms — editorial language that conveys urgency
+    # and collective fear without explicitly catastrophizing.  These are
+    # idiomatic phrases ("sounding the alarm", "deep anxieties") that
+    # work as emotional appeals through their connotation of crisis.
+    # Discovered via MIT TR "Resistance" article (Apr 2026):
+    #   "sounding the alarm"
+    #   "the backlash reflects deep anxieties"
+    #   "fierce blowback from artists"
+    re.compile(
+        r"\b(?:sounding the alarm|raise(?:d|s|ing)? the alarm|"
+        r"ring(?:s|ing|ed)? (?:the )?alarm bells?|"
+        r"deep(?:ly)? (?:anxious|anxieties|concerned|disturbing|troubling)|"
+        r"deep anxieties|growing (?:anxiety|anxieties|unease|alarm|panic)|"
+        r"fierce (?:blowback|opposition|resistance|backlash|criticism)|"
+        r"widespread (?:anxiety|fear|panic|outrage|alarm|concern|anger)|"
+        r"palpable (?:fear|anxiety|tension|anger|unease)|"
+        r"rising (?:anxiety|fear|panic|alarm|anger|frustration)|"
+        r"sparked? (?:outrage|fury|anger|backlash|uproar))\b",
         re.IGNORECASE,
     ),
     re.compile(
@@ -317,7 +349,12 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"turned a blind eye|strike fear|struck fear|"
         r"indefensible|abusive|defamatory|"
         r"drastic(?:ally)?|superficial(?:ly)?|"
-        r"reckless(?:ly)?|egregious(?:ly)?|flagrant(?:ly)?"
+        r"reckless(?:ly)?|egregious(?:ly)?|flagrant(?:ly)?|"
+        # Intensity idioms: "in droves" / "in spades" / "en masse" —
+        # amplifying modifiers that editorialize by exaggerating magnitude.
+        # Discovered via MIT TR "Resistance" article (Apr 2026):
+        # "users uninstalled ChatGPT in droves"
+        r"in droves|in spades|en masse|in drastic numbers"
         r")\b",
         re.IGNORECASE,
     ),
@@ -331,6 +368,13 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"dishonest|dishonesty|fundamentally\s+(?:dishonest|unethical|flawed|problematic)|"
         r"deceptive|misleading|disingenuous|"
         r"exploitative|dubious|rancid|sordid|"
+        # Polemical / invective nouns — nouns that characterize speech or
+        # documents as extreme, aggressive, or unhinged.  "diatribe",
+        # "screed", "tirade" etc. editorialize the quoted content before
+        # the reader encounters it.
+        # Discovered via MIT TR "Resistance" article (Apr 2026):
+        # "found carrying an anti-AI diatribe"
+        r"diatribe|screed|tirade|rant|harangue|polemic|manifesto|"
         r"unprecedented\s+(?:\w+\s+)?(?:breach|breaches|violation|exposure|threat|risk|danger|harm|crisis|failure))\b",
         re.IGNORECASE,
     ),
@@ -591,6 +635,22 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"gambled?\s+away|"
         r"wagered?\s+away|"
         r"betting\s+(?:over|on)\s+(?:anything|everything))\b",
+        re.IGNORECASE,
+    ),
+    # Violence / physical-threat references — editorial deployment of
+    # extreme physical acts (arson, assault, weapons) in coverage of
+    # technology disputes.  Including these details is factually accurate
+    # but their prominence in an article is an editorial choice that
+    # elevates the stakes of a policy debate to personal safety.
+    # Discovered via MIT TR "Resistance" article (Apr 2026):
+    # "threw a Molotov cocktail at the OpenAI CEO Sam Altman's home"
+    re.compile(
+        r"\b(?:Molotov cocktail|firebombed?|arson(?:ist)?|"
+        r"pipe bomb|explosive device|death threats?|"
+        r"bomb threats?|swatting|swatted|"
+        r"physically (?:attacked|assaulted|threatened)|"
+        r"shots? fired|gunfire|gunshots?|"
+        r"stabbed|stabbing)\b",
         re.IGNORECASE,
     ),
 ]
@@ -1944,6 +2004,28 @@ _SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
         r"[\d,]+\s+"
         r"(?:insurers?|companies|corporations?|firms?|agencies|banks?|"
         r"underwriters?|carriers?|investors?|institutions?|organizations?)",
+        re.IGNORECASE,
+    ),
+    # Standalone large dollar amounts — "$X billion/million" in contexts
+    # that frame institutional decisions (development, investment, spending,
+    # cuts) as enormous in scale.  Requires proximity to an action verb
+    # to avoid matching factual financial reporting where the number is
+    # the news itself (e.g., earnings reports).
+    # Discovered via MIT TR "Resistance" article (Apr 2026):
+    # "activists stalled $98 billion in data center development"
+    re.compile(
+        r"\b(?:stalled|blocked|halted|froze|frozen|delayed|scrapped|"
+        r"cancelled|canceled|killed|shelved|suspended|paused)\s+"
+        r"(?:more\s+than\s+|over\s+|nearly\s+|about\s+|approximately\s+)?"
+        r"\$\d[\d,.]*\s*(?:billion|million|trillion|[BMT])\b",
+        re.IGNORECASE,
+    ),
+    # Percentage-based workforce impact: "X% of its/the/their staff/workforce"
+    re.compile(
+        r"\b(?:lay\s+off|laid\s+off|cut|cutting|slashing|eliminating|axing)\s+"
+        r"(?:up\s+to\s+|about\s+|roughly\s+|approximately\s+|nearly\s+|more\s+than\s+)?"
+        r"\d+(?:\.\d+)?%\s+of\s+(?:its|the|their|his|her)\s+"
+        r"(?:staff|workforce|employees?|workers?|headcount|personnel)",
         re.IGNORECASE,
     ),
 ]
@@ -3511,6 +3593,38 @@ _SOCIAL_PROOF_PATTERNS: list[re.Pattern] = [
         r"(?:dozens|hundreds|thousands|scores|many|numerous)\s+"
         r"(?:of\s+)?(?:people|employees|users|workers|commenters|respondents)"
         r"\s+(?:also\s+)?(?:reacted|responded|replied|commented)",
+        re.IGNORECASE,
+    ),
+    # Poll/survey-based social proof — citing poll percentages or
+    # respondent fractions to amplify a position as collective sentiment.
+    # Distinct from reaction-count social proof: these cite formal surveys
+    # or polls rather than social media engagement metrics.
+    # Discovered via MIT TR "Resistance" article (Apr 2026):
+    #   "half of Americans are concerned"
+    #   "three-quarters of Americans worry"
+    # Also common in tech policy coverage citing Pew, Gallup, etc.
+    re.compile(
+        r"\b(?:a\s+)?(?:(?:Pew|Gallup|YouGov|Reuters|Harris|Morning\s+Consult|Ipsos)"
+        r"\s+)?(?:poll|survey|study|research|report)\s+"
+        r"(?:found|shows?|revealed?|indicates?|suggests?)\s+"
+        r"(?:that\s+)?(?:(?:half|a\s+(?:majority|quarter|third))\s+of|"
+        r"\d+(?:\.\d+)?%\s+of|"
+        r"(?:nearly|almost|more\s+than|over|roughly|about|approximately)\s+"
+        r"(?:half|a\s+(?:majority|quarter|third)))",
+        re.IGNORECASE,
+    ),
+    # Fraction-as-headline social proof: "half of Americans",
+    # "three-quarters of Americans", "two-thirds of respondents"
+    # deployed as standalone social proof without explicitly naming
+    # the survey (the source is implied by structure).
+    re.compile(
+        r"\b(?:half|a\s+majority|two[- ]thirds?|three[- ]quarters?|"
+        r"one[- ](?:third|quarter|half)|four[- ]fifths?|nine[- ]tenths?)\s+"
+        r"of\s+(?:Americans?|respondents?|(?:all\s+)?(?:adults?|voters?|"
+        r"people|consumers?|(?:US|U\.S\.|British|European)\s+(?:adults?|voters?|people)))"
+        r"\s+(?:are|were|say|said|believe|believed|worry|worried|think|thought|"
+        r"fear|feared|support|supported|oppose|opposed|"
+        r"(?:are|were)\s+concerned|(?:are|were)\s+worried|(?:have|has)\s+concerns?)",
         re.IGNORECASE,
     ),
 ]
