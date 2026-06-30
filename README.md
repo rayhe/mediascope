@@ -163,7 +163,7 @@ Full methodology: https://github.com/mediascope/mediascope/blob/main/docs/METHOD
 
 ## Publication Profiles
 
-MediaScope ships with detailed profiles for five publications, chosen to illustrate different conflict patterns:
+MediaScope ships with detailed profiles for six publications, chosen to illustrate different conflict patterns:
 
 | Publication | Owner | Conflict Type | Key Conflict |
 |---|---|---|---|
@@ -172,6 +172,7 @@ MediaScope ships with detailed profiles for five publications, chosen to illustr
 | **The Guardian** | Scott Trust (non-profit) | Partial control | OpenAI + ProRata licensing deals, but no equity in specific competitors. Closest to baseline in the 5-pub set (pre-Feb 2025 coverage cleaner). |
 | **The Atlantic** | Emerson Collective (LPJ) | Investment + Licensing + Civic | Owner holds ~$16B Apple stock, $6.5B OpenAI equity exit, co-chairs civic org with Google/Alphabet president and OpenAI CEO |
 | **MIT Tech Review** | MIT | Institutional paradox | Parent receives $500M+ from companies it covers; operates DoD's largest FFRDC ($12.2B Lincoln Lab contract, $1.36B/yr); DAF-MIT AI Accelerator transfers AI to military |
+| **Gizmodo** | G/O Media (Great Hill Partners) | Engagement economics | Google ad dependency + Amazon affiliate revenue; no Meta financial relationship; private equity pressure drives click-driven adversarial framing |
 
 Add your own with `mediascope add-publication` or copy `profiles/_template.yaml`.
 
