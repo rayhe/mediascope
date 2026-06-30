@@ -17,7 +17,9 @@ from mediascope.analyze.entities import detect_entities, DEFAULT_ENTITY_CLUSTERS
 from mediascope.analyze.framing import detect_framing_devices
 
 # --- Article text (MIT TR "The Algorithm" newsletter, Jun 2026) ---
-ARTICLE_TEXT = open("/home/hatch/workspace/repos/mediascope/examples/sample_output/mittr_anthropic_feud_jun2026.txt").read() if __import__("os").path.exists("/home/hatch/workspace/repos/mediascope/examples/sample_output/mittr_anthropic_feud_jun2026.txt") else ""
+from pathlib import Path as _Path
+_ARTICLE_FILE = _Path(__file__).parent.parent / "examples" / "sample_output" / "mittr_anthropic_feud_jun2026.txt"
+ARTICLE_TEXT = _ARTICLE_FILE.read_text() if _ARTICLE_FILE.exists() else ""
 
 # Inline fallback for CI without sample file
 _ARTICLE_INLINE = """Three things to watch amid Anthropic's latest feud with the government
