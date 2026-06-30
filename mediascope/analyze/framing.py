@@ -3465,6 +3465,60 @@ _COMMODIFICATION_METAPHOR_PATTERNS: list[re.Pattern] = [
 
 _DEVICE_PATTERNS["commodification_metaphor"] = _COMMODIFICATION_METAPHOR_PATTERNS
 
+# Analogy/metaphor framing: explicit comparisons using "like", "akin to",
+# "equivalent of", "as if" etc. that frame the subject via analogy.
+# Distinct from "analogy_stacking" (which requires 3+ analogies).
+# Captures single striking analogies used to frame understanding.
+_ANALOGY_METAPHOR_PATTERNS: list[re.Pattern] = [
+    # "like [verb]ing a [noun]" — simile construction
+    re.compile(
+        r"\blike\s+(?:crash[- ]testing|stress[- ]testing|auditing|grading|inspecting|"
+        r"checking|examining|evaluating|testing|rating|scoring|reviewing)\b",
+        re.IGNORECASE,
+    ),
+    # "akin to" / "equivalent of" / "tantamount to" — formal analogy
+    re.compile(
+        r"\b(?:akin to|equivalent of|tantamount to|reminiscent of|analogous to|"
+        r"comparable to)\s+[a-z]",
+        re.IGNORECASE,
+    ),
+    # "as if [subject] were [noun/adj]" — hypothetical comparison
+    re.compile(
+        r"\bas if\s+(?:they|it|the company|the platform|the app)\s+(?:were|was|had)\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["analogy_metaphor"] = _ANALOGY_METAPHOR_PATTERNS
+
+# Taxonomy framing: presenting findings or evidence using a structured
+# classification system (e.g. "broken, buried, or missing").  The editorial
+# choice to impose a taxonomy implies completeness and authority.
+_TAXONOMY_FRAMING_PATTERNS: list[re.Pattern] = [
+    # Three-part taxonomy: "X, Y, or Z" / "X, Y, and Z" with editorial categories
+    re.compile(
+        r"\b(?:broken|failed|missing|buried|hidden|disabled|absent|"
+        r"nonfunctional|ineffective|incomplete|inaccessible|"
+        r"inadequate|deficient|flawed|defective)"
+        r",?\s+(?:or|and)\s+"
+        r"(?:broken|failed|missing|buried|hidden|disabled|absent|"
+        r"nonfunctional|ineffective|incomplete|inaccessible|"
+        r"inadequate|deficient|flawed|defective)\b",
+        re.IGNORECASE,
+    ),
+    # "classified as" / "categorized as" / "fell into [N] categories"
+    re.compile(
+        r"\b(?:classified|categorized|sorted|grouped|divided)\s+"
+        r"(?:as|into)\s+(?:\d+\s+)?(?:categor(?:y|ies)|groups?|tiers?|types?|classes|buckets?)\b",
+        re.IGNORECASE,
+    ),
+    # Three-part comma-separated adjective taxonomy in quotes or emphasis
+    re.compile(
+        r'["\u201c](?:broken|failed|missing|buried|hidden|disabled|absent|ineffective)',
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["taxonomy_framing"] = _TAXONOMY_FRAMING_PATTERNS
+
 def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
     """Detect analogy stacking — 3+ distinct analogies for the same subject.
 
@@ -3823,8 +3877,8 @@ def _detect_social_proof_amplification(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 39 pattern-matched device types plus 5 structural
-    post-pass types (44 total).
+    Scans for 41 pattern-matched device types plus 5 structural
+    post-pass types (46 total).
 
     Pattern-matched (39): guilt_by_association, anonymous_authority,
     catastrophizing, false_balance, selective_omission_signal,

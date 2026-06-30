@@ -636,9 +636,9 @@ def extract_sources(text: str) -> list[SourceMention]:
         # "a policy staffer says", "a legal staffer adds", "the Instagram employee says"
         re.compile(
             r"\b(?:an?|the|one|another)"
-            r" (?:[a-z]+[ -])?"  # optional adjective: "policy", "legal", "longtime", "veteran"
-            r"(?:[a-z]+[ -])?"   # second optional adjective: "senior", "current"
-            r"(?:worker|employee|staffer|engineer|executive|official|leader|manager|person|researcher|analyst|source)"
+            r" (?:[A-Za-z]+[ -])?"  # optional adjective/org name: "policy", "Meta", "longtime"
+            r"(?:[A-Za-z]+[ -])?"   # second optional adjective: "senior", "current"
+            r"(?:worker|employee|staffer|engineer|executive|official|leader|manager|person|researcher|analyst|source|spokesperson|spokeswoman|spokesman)"
             r"(?:\s+(?:who\s+works?\s+(?:on|at|in|for)\s+\w+|at\s+\w+|inside\s+\w+))?"  # optional "who works on X" / "at X"
             r"\s+(?:" + verb_alternation + r")\b",
             re.IGNORECASE,
@@ -648,9 +648,9 @@ def extract_sources(text: str) -> list[SourceMention]:
         re.compile(
             r"\b(?:" + verb_alternation + r")"
             r"\s+(?:an?|the|one|another)"
-            r" (?:[a-z]+[ -])?"
-            r"(?:[a-z]+[ -])?"
-            r"(?:worker|employee|staffer|engineer|executive|official|leader|manager|person|researcher|analyst|source)"
+            r" (?:[A-Za-z]+[ -])?"
+            r"(?:[A-Za-z]+[ -])?"
+            r"(?:worker|employee|staffer|engineer|executive|official|leader|manager|person|researcher|analyst|source|spokesperson|spokeswoman|spokesman)"
             r"(?:\s+(?:who\s+works?\s+(?:on|at|in|for)\s+\w+|at\s+\w+|inside\s+\w+))?",
             re.IGNORECASE,
         ),
@@ -843,9 +843,17 @@ def extract_sources(text: str) -> list[SourceMention]:
             rf"\s+(?:in (?:a|an|the|its)\s+(?:statement|emailed? (?:response|statement|comment)|"
             rf"blog post|press release|filing|report|letter|memo|announcement))\b",
         ),
-        # "a [Company] spokesperson/representative said/told"
+        # "[Company] said/told/reported" — direct organizational attribution
+        # without requiring "in a statement" qualifier.  Validated against
+        # _KNOWN_ORGS below to prevent false positives from person surnames.
         re.compile(
-            rf"\ban?\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s+"
+            rf"\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)"
+            rf"\s+({verb_alternation})\b",
+        ),
+        # "a [Company] spokesperson/representative said/told"
+        # Use [Aa]n? instead of an? to match sentence-initial "A Meta spokesperson said"
+        re.compile(
+            rf"\b[Aa]n?\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s+"
             rf"(?:spokesperson|spokeswoman|spokesman|representative|official)\s+"
             rf"({verb_alternation})\b",
         ),
@@ -862,6 +870,10 @@ def extract_sources(text: str) -> list[SourceMention]:
         "meta", "google", "apple", "microsoft", "amazon", "openai",
         "anthropic", "nvidia", "tesla", "spacex", "x", "twitter",
         "alphabet", "ibm", "oracle", "palantir", "samsung",
+        "instagram", "snapchat", "snap", "tiktok", "youtube",
+        "bytedance", "reddit", "pinterest", "discord", "spotify",
+        "netflix", "uber", "lyft", "airbnb", "stripe", "shopify",
+        "reuters", "bloomberg",
     }
 
     for pat in org_source_patterns:

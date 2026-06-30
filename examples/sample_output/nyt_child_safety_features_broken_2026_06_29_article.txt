@@ -1,0 +1,53 @@
+# NYT: More Than Half of Social Media Child Safety Features Fail Independent Tests
+# Publication: The New York Times
+# Date: June 29, 2026
+# Reconstruction: Composite from primary source (Cybersafety Research Center study "Broken, Buried, or Missing")
+# plus secondary coverage (CNN, Engadget) that directly references and quotes the NYT investigation.
+# The NYT independently replicated the study's findings and obtained platform responses.
+# Probable reporter: Natasha Singer (NYT child safety beat)
+
+---
+
+More than half of the child safety features that social media companies have promised to parents and regulators do not work as advertised, according to a sweeping new study that tested 86 protections across four of the most popular platforms used by children.
+
+Researchers at the Cybersafety Research Center, a joint initiative of New York University and Northeastern University, created test accounts mimicking children of various ages and systematically attempted to trigger each platform's advertised safety features. Of the 86 features examined across Instagram, Snapchat, TikTok and YouTube, 51 failed — a rate of roughly 60 percent.
+
+The New York Times was able to replicate the study's key findings.
+
+The results present a stark challenge to the social media industry's central defense against a rising tide of lawsuits, regulatory actions and proposed legislation: that its platforms are safe for young users because of the protections it has put in place.
+
+The feature failure rates varied by platform. Snapchat had the worst performance, with 73 percent of its tested features failing. Instagram followed at 66 percent, YouTube at 55 percent and TikTok at 50 percent.
+
+The failures fell into three categories. Some features were "broken" — they existed but did not function as described, or could be circumvented with trivial, nontechnical effort. Others were "buried" — so deeply embedded in settings menus that it was unreasonable to expect a child to find and activate them. Nine features were classified as "missing" entirely: despite following the steps each company described, the researchers could find no evidence the features existed.
+
+Among the most alarming findings: on a TikTok account registered to a minor, once the account had searched for material about disordered eating and self-harm, the platform's search feature stopped blocking such content and instead started suggesting it. TikTok's autocomplete recommended that the teen account search for "anna food tips" and "how to pretend to eat your food" — phrases drawn from pro-anorexia communities — alongside "mentally suffering," "losing yourself to mental health" and "razor blade skin."
+
+Instagram's version of the same safety feature failed differently but no less plainly. As a tester began typing "eating disorder," the autocomplete offered back the deliberate misspellings that pro-eating-disorder communities use to evade the very blocklist the feature depends on. In each case, the bypass took under three minutes to find.
+
+On Snapchat, critical safeguards meant to prevent adults from messaging children they are not connected to failed during testing. Adult accounts were able to "search for, find and then message the child account with zero restrictions," the study found.
+
+All 10 of the conduct tools tested — the safeguards meant to govern how users treat one another, such as detecting and preventing cyberbullying — failed on all four platforms. Tools meant to curb compulsive use, like screen-time limits and break reminders, fared little better, with fewer than one in three succeeding.
+
+For example, comments between teen accounts on Instagram that included bullying language — including curse words and "no body likes you" — did not trigger the platform's advertised prompt for the user to rethink their comment. Instagram said the "pause to rethink" prompt is not designed to appear if the user who made the post and the user commenting follow each other.
+
+Researchers created two sets of test accounts: those with birthdates associated with minors to test child safety features, and adult accounts ages 25 and older to test restrictions on interactions with children. They tested three scenarios: whether a young person using the platforms normally would encounter the features; whether a teen attempting to circumvent the features would succeed; and whether an adult user could bypass restrictions on messaging minors.
+
+The report did not evaluate parental control features, reviewing only tools that could be activated directly by children and teens. The platforms said parental controls also contribute to youth safety and make it harder for kids and teens to bypass time restrictions and other features.
+
+"Safety features, in order to be effective, need to be on by default or easy to activate, be resilient to normal teenager use, and should demonstrably protect against harm," the report states. "If you are a parent, you should know that we have found systemic issues with the design and implementation of many of these features."
+
+The researchers compared their approach to crash-testing a car to assess real-world safety performance, rather than relying solely on how companies describe their products. "We believe that from a regulatory and academic perspective, online safety should be treated with the same rigor as we treat cybersecurity," they wrote.
+
+Spokespeople for Snap, Meta and YouTube contested the study's findings in statements to The New York Times.
+
+A Meta spokesperson said that "teens are seeing less sensitive content, experiencing less unwanted contact, and spending less time on Instagram at night" thanks to Instagram's Teen Accounts. The spokesperson also said the study's authors "include vague claims that our features are broken but, in the vast majority of cases, either misrepresent those features or fail to provide any examples or evidence."
+
+The findings come at a moment of intense political focus on children's online safety. The House of Representatives passed the Kids Internet and Digital Safety Act on Monday with a bipartisan 267-117 vote, requiring online platforms to offer settings that limit addictive features and implement policies to protect children from harms including sexual exploitation.
+
+The Senate is considering a separate bill that would impose a "duty of care" on social media companies — a more aggressive standard that the House version does not include. Executives from major social media companies are expected to testify before the Senate Judiciary Committee on July 28.
+
+Meta and Alphabet's Google were found liable in a landmark Los Angeles jury verdict in March for designing social media platforms harmful to youth. Meta faces more than 2,000 similar lawsuits. The company has lobbied Congress for legal immunity from child-harm claims, Reuters reported.
+
+The European Commission is also escalating a probe into Meta under the Digital Services Act over allegations that Facebook and Instagram use design practices that keep young users addicted, Bloomberg News reported this week. Australia recently doubled its maximum penalties for social media companies that fail to enforce its under-16 social media ban.
+
+The study's authors — Lexie Matsumoto, Arturo Béjar, Abdulraheem Arar, Damon McCoy and Laura Edelson — noted that their research focused on whether features function, not on how often children encounter harms. "We cannot say from our own experiences in the course of this research how often harms occur," they wrote, "but it is clear that they are not hypothetical, and that when they do occur the consequences can be irreversible."

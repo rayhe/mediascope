@@ -387,7 +387,7 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # Annotated real-article analyses
-├── tests/                       # 997 tests across 39 test files (all from real articles)
+├── tests/                       # 1018 tests across 40 test files (all from real articles)
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
 │   ├── test_avclub_sardonic_framing.py # AV Club sardonic framing: sarcastic_correction sub-patterns, loaded_language ad hominem/industry-as-vice, ironic denial regex
@@ -427,6 +427,7 @@ mediascope/
 │   ├── test_memeburn_glasses_deep_dive.py # Memeburn Meta glasses deep dive: open-ended-threat kicker patterns, ubiquitous-camera loaded language, indirect rhetorical question, Gizmodo entity detection
 │   ├── test_child_safety_denial.py # Engadget child safety features: denial_contradiction with "no evidence" denials, post-quote combative attribution (said/insisted), replicated/verified evidence counters
 │   ├── test_worker_replacement_two_tier.py # WebProNews Meta Dublin contractors: worker_replacement_irony (trained AI that replaced them), two_tier_treatment (contractor vs full-time), geopolitical false positive fix (physical "stood firm"), outsourced_intensity expansion (labor-law expert quotes)
+│   ├── test_child_safety_analysis.py # NYT child safety study analysis: new entity clusters (US Congress, Academic/Research, Research Centers, Child Safety Researchers/Legislation, Australia), source extraction fixes (case-sensitive [Aa]n?, expanded _KNOWN_ORGS, direct org attribution), new framing devices (analogy_metaphor, taxonomy_framing), agency attribution sparse-data dampening
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

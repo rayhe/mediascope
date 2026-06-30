@@ -48,7 +48,7 @@ class TestFramingDeviceTypeCount:
     def test_total_device_types_is_43(self):
         """Code should define exactly 43 unique framing device types."""
         types = _all_device_types_from_code()
-        assert len(types) == 44, (
+        assert len(types) == 46, (
             f"Expected 44 framing device types, got {len(types)}.\n"
             f"Types: {sorted(types)}\n"
             "If you added a new device, update this test AND the docs:\n"
@@ -65,7 +65,7 @@ class TestFramingDeviceTypeCount:
         pattern_keys = set(re.findall(r'_DEVICE_PATTERNS\["(\w+)"\]', src))
         initial_keys = set(re.findall(r'"(\w+)":\s*_[A-Z_]+_PATTERNS', src))
         pattern_types = initial_keys | pattern_keys
-        assert len(pattern_types) == 39, (
+        assert len(pattern_types) == 41, (
             f"Expected 39 pattern-matched device types, got {len(pattern_types)}.\n"
             f"Types: {sorted(pattern_types)}"
         )

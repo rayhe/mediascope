@@ -773,6 +773,15 @@ def _measure_agency(text: str) -> float:
 
     # Scale from -1 (all passive/active-negative) to +1 (all active-positive)
     score = (active_count - negative_total) / total
+
+    # When total hits are very low (< 3), dampen the score to avoid
+    # extreme -1.0 or +1.0 from sparse data.  Discovered Jun 2026:
+    # child safety study article scored -1.0 agency from a single
+    # "requiring" hit.  Dampening preserves direction while reducing
+    # confidence on thin evidence.
+    if total < 3:
+        score = score * (total / 3.0)
+
     return round(score, 4)
 
 

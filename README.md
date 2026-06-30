@@ -371,7 +371,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **1002 tests** across 39 test files, each covering a different analytical capability:
+MediaScope has **1018 tests** across 40 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -414,6 +414,7 @@ MediaScope has **1002 tests** across 39 test files, each covering a different an
 | `test_memeburn_glasses_deep_dive.py` | 25 | Memeburn Meta glasses deep dive: open-ended-threat kicker patterns ("whether X catches up," "remains to be seen," "time will tell"), ubiquitous-camera loaded language ("camera on their face," "cameras everywhere," "recorded space," "no visible cue"), indirect/embedded rhetorical question ("critics ask what exactly...supposed to"), Gizmodo entity detection, full-article regression. |
 | `test_child_safety_denial.py` | 6 | Engadget child safety features: denial_contradiction with "no evidence" denials, post-quote combative attribution (said/insisted vs called/described), replicated/verified as evidence counter-keywords, "misunderstanding" soft-denial patterns. |
 | `test_worker_replacement_two_tier.py` | 16 | WebProNews Meta Dublin contractors: worker_replacement_irony patterns (forward/reverse/compact/chant forms, negative cases for generic layoffs and generic AI adoption), two_tier_treatment (denied privileges, full-time vs contractor severance, not-even-employees, negative case), geopolitical false positive fix (security guards/police "stood firm" suppressed, government still fires), outsourced_intensity expansion (labor-law expert "open season"/"cynical"/"utter inability"). |
+| `test_child_safety_analysis.py` | 16 | NYT child safety study: new entity clusters (US Congress, Academic/Research, Research Centers, Child Safety Researchers/Legislation, Australia), source extraction fixes (case-sensitive [Aa]n?, expanded _KNOWN_ORGS, direct org attribution), new framing devices (analogy_metaphor, taxonomy_framing), agency attribution sparse-data dampening. |
 
 ```bash
 # Run all tests

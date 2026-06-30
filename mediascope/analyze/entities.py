@@ -441,6 +441,94 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|(?-i:MDL)\s*\d+"
                  r"|bellwether (?:trial|verdict|case))(?!\w)",
     },
+    "US Congress": {
+        "aliases": [
+            "Congress", "Senate", "House of Representatives",
+            "Senate Judiciary Committee", "Senate Commerce Committee",
+            "House Energy and Commerce Committee",
+            "lawmakers", "legislators",
+        ],
+        "regex": r"(?<!\w)(Congress(?:ional)?|(?:the )?Senate(?:\s+(?:Judiciary|Commerce|Intelligence|Armed Services)\s+Committee)?"
+                 r"|House of Representatives"
+                 r"|House Energy and Commerce Committee"
+                 r"|lawmakers|legislators)(?!\w)",
+    },
+    "Academic/Research": {
+        "aliases": [
+            "NYU", "New York University",
+            "Northeastern University", "Northeastern",
+            "Stanford University", "Stanford",
+            "MIT", "Massachusetts Institute of Technology",
+            "Georgetown University", "Georgetown",
+            "UC Berkeley", "University of California",
+            "Harvard University", "Harvard",
+            "Oxford University", "Oxford",
+            "Cambridge University",
+            "Columbia University",
+            "University of Michigan",
+            "Carnegie Mellon", "CMU",
+        ],
+        "regex": r"(?<!\w)((?-i:NYU)|New York University"
+                 r"|Northeastern(?:\s+University)?"
+                 r"|Stanford(?:\s+University)?"
+                 r"|(?-i:MIT)|Massachusetts Institute of Technology"
+                 r"|Georgetown(?:\s+University)?"
+                 r"|(?-i:UC)\s+Berkeley|University of California"
+                 r"|Harvard(?:\s+University)?"
+                 r"|Oxford(?:\s+University)?"
+                 r"|Cambridge(?:\s+University)?"
+                 r"|Columbia(?:\s+University)?"
+                 r"|University of Michigan"
+                 r"|Carnegie Mellon|(?-i:CMU))(?!\w)",
+    },
+    "Research Centers": {
+        "aliases": [
+            "Cybersafety Research Center",
+            "Center for Countering Digital Hate", "CCDH",
+            "Center for Humane Technology",
+            "Internet Watch Foundation", "IWF",
+            "National Center for Missing & Exploited Children", "NCMEC",
+            "Thorn",
+            "Family Online Safety Institute", "FOSI",
+        ],
+        "regex": r"(?<!\w)(Cybersafety Research Center"
+                 r"|Center for Countering Digital Hate|(?-i:CCDH)"
+                 r"|Center for Humane Technology"
+                 r"|Internet Watch Foundation|(?-i:IWF)"
+                 r"|National Center for Missing (?:&|and) Exploited Children|(?-i:NCMEC)"
+                 r"|Thorn"
+                 r"|Family Online Safety Institute|(?-i:FOSI))(?!\w)",
+    },
+    "Child Safety Legislation": {
+        "aliases": [
+            "KIDS Act", "Kids Internet Design and Safety Act",
+            "COPPA", "Children's Online Privacy Protection Act",
+            "KOSA", "Kids Online Safety Act",
+            "EARN IT Act",
+            "Age Appropriate Design Code",
+        ],
+        "regex": r"(?<!\w)((?-i:KIDS)\s+Act|Kids Internet Design and Safety Act"
+                 r"|(?-i:COPPA)|Children's Online Privacy Protection Act"
+                 r"|(?-i:KOSA)|Kids Online Safety Act"
+                 r"|(?-i:EARN\s+IT)\s+Act"
+                 r"|Age Appropriate Design Code)(?!\w)",
+    },
+    "Child Safety Researchers": {
+        "aliases": [
+            "Arturo Béjar", "Béjar",
+            "Lexie Matsumoto", "Matsumoto",
+            "Laura Edelson", "Edelson",
+            "Damon McCoy",
+            "Abdulraheem Arar",
+        ],
+    },
+    "Australia": {
+        "aliases": [
+            "Australia", "Australian government",
+            "eSafety Commissioner",
+        ],
+        "regex": r"(?<!\w)(Australia(?:n(?:\s+government)?)?|eSafety Commissioner)(?!\w)",
+    },
 }
 
 
