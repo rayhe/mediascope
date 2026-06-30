@@ -5818,3 +5818,48 @@ journalists:
     it, and Chen''s positions shifted in parallel, supporting the institutional-framing-dominance hypothesis. (5) COLUMN PIVOT:
     Tech Fix evolved from product troubleshooting (2015-2021) to societal critique (2022+), tracking the broader NYT editorial
     pivot toward adversarial tech coverage. Testable via pre/post tonal analysis anchored to the column''s stated reboot date.'
+- career:
+  - beat: tech, economy, government, markets
+    end: 2026-06
+    event_type: hired
+    notes: 'Reporter across multiple desks during tenure: Tech, Economy, Government, Podcasts, Daybreak (morning show),
+      Markets Today (live blog), Breaking News, and EMEA equities (UK retail stocks and ECM/equity capital markets). Prolific
+      output: 539+ articles (JournalistHunt count). Notable coverage: Google Willow quantum computing breakthrough (co-byline
+      with Amy Thomson), Nu Quantum $60M Series A (quantum networking), JPMorgan quantum random number generation. Her MSci
+      Physics from Imperial College London gives her hard-science fluency rare among financial/tech reporters. 2025 John
+      Schofield Trust Fellow — a UK journalism mentoring charity for early-career journalists, established 1996 in memory of
+      BBC journalist John Schofield killed reporting from Croatia.'
+    publication: bloomberg
+    role: reporter
+    source_url: https://muckrack.com/isabella-ward-2
+    start: ~2022
+  - beat: science, biotech, longevity, quantum computing
+    event_type: hired
+    notes: 'Staff writer in London. Hired June 3, 2026. Announced by TalkingBizNews. She is the "general assignment staff
+      writer (another new role, more on that soon)" that Brian Barrett referenced in the Rosie Swash deputy editor announcement
+      (April 2026). Reports via Rosie Swash (deputy editor, London) who reports to Brian Barrett (executive editor). London
+      is Wired''s rebuilding editorial beachhead after UK print cancellation (Jan 2026) and departure of 7 UK editorial staff
+      at end of 2025. First Wired byline: "Longevity Startup Doses First Human in Bid to Reverse Age-Related Sight Loss"
+      — covering Life Biosciences cellular rejuvenation therapy (FDA clinical trial), featuring Harvard geneticist David Sinclair.
+      Her physics background positions her uniquely for Wired''s science desk — she brings quantitative rigor to biotech and
+      quantum reporting that most Wired writers (typically humanities/journalism backgrounds) lack. KEY MIGRATION: Bloomberg
+      → Wired represents financial press → Condé Nast pipeline. Tests whether her Bloomberg data-driven reporting style
+      adapts under Wired''s Drummond-era editorial culture. Unlike most recent Wired hires (Gizmodo/Guardian/Vice pipeline),
+      Ward comes from business journalism — a different institutional DNA.'
+    publication: wired
+    role: staff_writer
+    source_url: https://talkingbiznews.com/media-news/wired-hires-bloombergs-ward-as-a-staff-writer/
+    start: 2026-06
+  name: Isabella Ward
+  notes: 'Key migration: Bloomberg → Wired. UK-based reporter with MSci Physics from Imperial College London and 2025 John
+    Schofield Trust Fellow. Covered multiple desks at Bloomberg (tech, economy, government, markets, equities) before joining
+    Wired as staff writer in London (June 2026). Notable for quantum computing coverage (Google Willow chip, Nu Quantum,
+    JPMorgan) and transition to science/biotech beat at Wired (longevity, cellular rejuvenation). Part of Wired''s post-print-
+    cancellation London editorial rebuild alongside deputy editor Rosie Swash (Guardian veteran). Unusual pipeline into Wired
+    — Bloomberg financial/markets background rather than the Gizmodo/Vice/Guardian adversarial-journalism pipeline that
+    characterizes most Drummond-era hires. Her hard-science training (physics MSci) gives her technical depth comparable
+    to Will Knight (anthropology) and Will Douglas Heaven (PhD computer science) at MIT Tech Review. KEY FOR MEDIASCOPE:
+    (1) Bloomberg → Wired migration offers a clean institutional comparison — business journalism norms vs Condé Nast editorial
+    culture. (2) Her physics background and quantum coverage create a testable specialization signal — does science expertise
+    produce different framing than generalist tech reporting? (3) London rebuild context — she and Swash are the two editorial
+    hires rebuilding Wired''s UK presence after the print edition cancellation and mass departures.'

@@ -353,6 +353,18 @@ editorial_changes:
     outgoing: null
     position: executive_editor_newsroom
     source_url: https://talkingbiznews.com/media-news/firth-named-executive-editor-newsroom-of-mit-tech-review/
+  - date: 2026-01
+    incoming: null
+    notes: 'DEPARTURE: Allison Arieff left MIT Technology Review for San Francisco Chronicle as editorial writer and columnist.
+      Was editorial director of print at MIT TR. Career: Dwell magazine EIC (won National Magazine Award for General Excellence)
+      → SPUR editorial director (Bay Area urban planning think tank) → NYT Opinion columnist (2007-2020, cities/design/tech)
+      → MIT TR editorial director of print. Author of ''Prefab'' and contributor to ''The Future of Public Space'' and ''Cars:
+      Accelerating the Modern World.'' Her departure from MIT TR''s print editorial leadership coincides with the broader
+      industry print contraction — Wired UK cancelled print edition same month (Jan 2026). Not a reporter/beat journalist but
+      an editorial production leader whose exit signals continued erosion of print infrastructure at MIT TR.'
+    outgoing: Allison Arieff
+    position: editorial_director_print
+    source_url: https://talkingbiznews.com/media-news/mit-techs-arieff-joins-sf-chronicle/
   nytimes:
   - date: 2022-06
     incoming: Joseph Kahn
@@ -706,7 +718,8 @@ editorial_changes:
       of Bangladesh''s Missing Children'' investigation. Covered Afghanistan, Iran, Ukraine for Guardian''s ''Rights and Freedoms''
       series. ANALYTICAL VALUE: Third Guardian → Wired pipeline hire in 2025-2026 (after Blake Montgomery as US tech editor
       Sep 2023 via Gizmodo, and Hugo Lowell Apr 2026). The Deputy Editor role is new — Swash shapes UK editorial output directly.
-      Paired with a new London general assignment staff writer (TBD hire). Her Guardian investigative and accountability DNA
+      Paired with Isabella Ward as London staff writer (hired June 2026 — Barrett''s "general assignment staff writer,
+      another new role" referenced in this announcement). Her Guardian investigative and accountability DNA
       (Grenfell-era newsroom, conflict reporting) entering Wired''s London desk mirrors the Robert Booth appointment at Guardian
       (housing investigator → tech editor). Signals Wired UK rebuilding post-print-cancellation with Guardian-trained editorial
       leadership rather than tech-native journalists.'
@@ -760,6 +773,23 @@ editorial_changes:
     outgoing: null
     position: senior_writer_ai_business
     source_url: https://www.editorandpublisher.com/stories/wired-welcomes-two-new-staff-members-alana-hope-levinson-and-maxwell-zeff,252685
+  - date: '2026-06-03'
+    incoming: Isabella Ward
+    notes: 'BLOOMBERG → WIRED MIGRATION: Isabella Ward hired as staff writer in London. Previously Bloomberg News reporter
+      covering multiple desks (Tech, Economy, Government, Markets Today, Breaking News, EMEA equities — UK retail stocks and
+      ECM). MSci Physics from Imperial College London. 2025 John Schofield Trust Fellow. Notable quantum computing coverage
+      (Google Willow chip, Nu Quantum, JPMorgan quantum random numbers). 539+ articles at Bloomberg. First Wired byline: biotech/
+      longevity piece on Life Biosciences cellular rejuvenation FDA trial. This is the "general assignment staff writer (another
+      new role, more on that soon)" that Brian Barrett referenced in the Rosie Swash deputy editor announcement (April 2026).
+      Reports to Rosie Swash (deputy editor, London) → Brian Barrett (exec editor). London rebuild: Ward + Swash are the two
+      editorial hires reconstituting Wired''s UK editorial presence after print edition cancellation and 7 staff departures
+      at end of 2025. ANALYTICAL VALUE: Unlike most Drummond-era hires (Gizmodo/Vice/Guardian adversarial-journalism pipeline),
+      Ward comes from Bloomberg — financial/markets institutional DNA rather than adversarial journalism. Her physics degree
+      gives her scientific depth unusual for Wired. Tests whether Wired London''s rebuilt desk inherits Drummond''s adversarial
+      editorial posture or develops a more data-driven/science-native framing through Ward''s Bloomberg training.'
+    outgoing: null
+    position: staff_writer_london
+    source_url: https://talkingbiznews.com/media-news/wired-hires-bloombergs-ward-as-a-staff-writer/
   - date: '2025-11-17'
     incoming: Alana Hope Levinson
     notes: 'FEATURES EDITOR HIRE: Levinson hired as features editor. Announced by Brian Barrett Nov 13, 2025. Career: writer/editor
