@@ -12,16 +12,44 @@ ownership_chain:
   - name: "The Atlantic"
     entity_type: "publisher"
     description: >
-      Founded 1857. Digital-first pivot under current ownership. 1.4M+ subscribers (Feb 2026),
-      up from 1M+ in mid-2024. Revenue over $100M (2024), profitable since March 2024.
-      Subscription revenue up 15% YoY, overall revenue up 10%. 70%+ retention rate.
-      3 tiers: Digital $79.99/yr, Print+Digital $89.99/yr, Premium ad-free $120/yr.
-      Circulation grew 14% in 2023 and 2024; 20%+ readership gain in 2025.
-      Chief Growth Officer: Megha Garibaldi.
+      Founded 1857. Digital-first pivot under current ownership. "Well over 1.4 million"
+      subscriptions (Jan 2026), up from 1M+ in mid-2024. Revenue over $100M (2024), profitable
+      since March 2024. Subscription revenue up 15% YoY, overall revenue up 10%. 70%+ retention
+      rate. 50M+ monthly readership. NPR described it as a "thinkpiece factory."
+      
+      4 subscription tiers (as of Jan 14, 2026):
+        - Digital: $79.99/yr
+        - Print+Digital: $89.99/yr  
+        - Premium: $120/yr (ad-free, includes 1 gift subscription). Legacy plan.
+        - Premium Plus: $199/yr (NEW, launched Jan 14, 2026 — first new tier since 2019).
+          Includes ad-free web/app for primary holder + 3 additional digital subscriptions
+          for friends/family (most requested feature). Includes keepsake coffee-table book
+          and Atlantic tote. Also offers academic rate for students/educators.
+      
+      Dynamic pricing (introduced early 2024): "smart meter" paywall, behavioral targeting,
+      variable pricing $60-100 based on likelihood to subscribe. Has increased ARPU without
+      impacting churn/bounce.
+      
+      EVENTS & PARTNERSHIPS (new revenue streams):
+        - AtlanticLIVE (longstanding events line)
+        - Atlantic Across America (launched Dec 2025): 3-year initiative bringing Atlantic
+          journalists to cities in all 50 states. Part of broader audience engagement push.
+        - Seabourn ultra-luxury cruise partnership (announced ~Mar 2026): 3-year deal with
+          Seabourn (6-ship fleet). Atlantic programming on select voyages 2026-2027,
+          culminating in 12-day Seabourn Quest sailing Montréal→Boston (Oct 4, 2028). Guests
+          receive free digital access onboard + complimentary 3-month post-trip subscription.
+          Atlantic curates onboard libraries with recent issues and writer books.
+        - Atlantic 57 (consulting division)
+        - CivicScience advertising partnership (Sep 2025)
+        - NewsGuard AI co-marketing partnership (Jun 2026)
+      
+      Chief Growth Officer: Megha Garibaldi. Chief Product Officer: Jefferson Rabb.
     financial_sources:
       - "https://www.editorandpublisher.com/stories/atlantic-tops-1-million-subscriptions/254812"
       - "https://pugpig.com/the-atlantic-turnaround/"
       - "https://wan-ifra.org/insight/how-the-atlantic-keeps-subscribers/"
+      - "https://subscriptioninsider.com/the-atlantic-launches-premium-plus/"
+      - "https://subscriptioninsider.com/the-atlantic-builds-beyond-content/"
   - name: "Atlantic Media"
     entity_type: "parent_company"
     description: "Majority owned by Emerson Collective since July 2017. David G. Bradley retained minority share initially; Emerson likely acquired full ownership."
@@ -86,9 +114,42 @@ ownership_chain:
         competitive_with: ["Meta"]
         source_url: "https://siliconangle.com/2023/12/11/open-source-generative-ai-startup-mistral-ai-raises-415m-funding/"
       - entity: "World Labs"
-        relationship: "Emerson Collective participated in World Labs' $1B fundraising (2025/2026). World Labs builds 3D AI world models (Marble product)."
+        relationship: >
+          Emerson Collective participated in World Labs' $1 BILLION funding round (announced Feb 18,
+          2026). World Labs, founded by AI pioneer Fei-Fei Li ("godmother of AI"), builds spatial
+          intelligence AI — foundational models that perceive, generate, and interact with 3D worlds.
+          Product: Marble world model (generates editable, downloadable 3D environments from image/text
+          prompts using Gaussian splatting). Tiered subscription: free → $95/month.
+          
+          Other investors in the $1B round: AMD, Nvidia, Autodesk ($200M strategic investment + advisor
+          role), Fidelity Management & Research, Sea. Valuation ~$5B (Bloomberg, Jan 2026 report).
+          Prior: $230M seed (Sep 2024) at $1B valuation. Co-founders: Ben Mildenhall (NeRF co-creator),
+          Justin Johnson (real-time style transfer, deployed by Meta/Snap), Christoph Lassner (Pulsar
+          renderer pioneer).
+          
+          CRITICAL META COMPETITION: Fei-Fei Li has explicitly stated spatial intelligence models
+          "could be put to use in the future for augmented and virtual reality or robotics" — this
+          puts World Labs in DIRECT COMPETITION with Meta's Reality Labs, which is spending $4B+/quarter
+          building AR/VR/spatial computing platforms. World Labs' Marble generates 3D environments
+          comparable to what Meta is building for Quest/Horizon Worlds. Justin Johnson (co-founder)
+          previously deployed style transfer tech AT Meta — he left to compete against them.
+          
+          ADDITIONAL CONTEXT: Yann LeCun left Meta to launch AMI Labs focusing on world models,
+          confirming that spatial/world model AI is a core competitive frontier between Meta and
+          AI startups. EC's investment in World Labs positions The Atlantic's owner financially
+          on the side of a direct Meta competitor in spatial computing.
         competitive_with: ["Meta"]
-        source_url: "https://intellectia.ai/laurene-powell-jobs-invests-in-ai-startups-amid-bubble-fears"
+        source_urls:
+          - "https://reuters.com/technology/ai-pioneer-fei-fei-lis-world-labs-raises-1-billion-funding-2026-02-18/"
+          - "https://techcrunch.com/2026/02/18/world-labs-1b-autodesk/"
+          - "https://news.crunchbase.com/ai/world-labs-biggest-funding-rounds-weekly/"
+          - "https://spectrum.ieee.org/fei-fei-li-world-labs"
+        notes: >
+          Strengthens the pattern: EC now has financial positions in FOUR direct Meta AI/tech
+          competitors — Apple (via LPJ Trust, $16B+ stock), OpenAI (via io Products exit + licensing),
+          Mistral (open-source LLMs vs Llama), and World Labs (spatial AI/3D vs Reality Labs). Each
+          investment creates editorial incentive for Atlantic coverage that frames Meta's competitive
+          position negatively.
       - entity: "Formation Bio"
         relationship: "Emerson Collective participated in Formation Bio's $372M round. AI-driven pharmaceutical company."
         competitive_with: []
@@ -184,15 +245,29 @@ ownership_chain:
         spun_out: "2023-08"
         description: >
           Cancer-focused venture capital firm spun out from Emerson Collective.
-          Reed Jobs was Managing Director of Health at EC for 8 years before founding.
-          Fund I: $263M. Fund II: target $350M, raised $200M+.
-          ~20 portfolio companies including Tune Therapeutics and Chai Discovery.
-          LPs include MIT, Memorial Sloan Kettering, Amgen, John Doerr.
-          2.5% of fund goes to donor-advised fund for grants (no IP strings).
-          Has supported ~500 labs across the academic ecosystem.
+          Reed Jobs (title: "Founder and Managing Partner") was Managing Director of Health
+          at EC for 8 years before founding. Named for Yosemite National Park where LPJ and
+          Steve Jobs married.
+          
+          Fund I: $263M (closed 2023). Fund II: target $350M, raised $200M+ as of early 2026.
+          ~20 portfolio companies including Tune Therapeutics (gene therapy) and Chai Discovery
+          (AI drug development). LPs include MIT, Memorial Sloan Kettering, Amgen, John Doerr
+          (personal capacity).
+          
+          PHILANTHROPIC ARM: 2.5% of fund goes to donor-advised charitable vehicle for grants
+          (no IP strings attached). As of Feb 12, 2026, Yosemite has deployed $18M+ in grants
+          since 2023 launch, supporting early-stage academic cancer research. Key partnership
+          with the American Cancer Society for identifying high-impact research areas. Example:
+          preclinical research by Craig Crews at Yale → led to formation of Quarry Thera
+          (small molecule drugs for cancer/autoimmune diseases). Has supported ~500 labs
+          across the academic ecosystem.
+          
+          Reed Jobs has been investing in health companies at Emerson Collective since ~2015.
+          Mission: "make cancer non-lethal in our lifetimes."
         source_urls:
           - "https://techcrunch.com/2023/08/01/reed-jobs-yosemite/"
           - "https://forbesindia.com/article/2024-billionaires/reed-jobs-living-legacy/"
+          - "https://www.morningstar.com/news/pr-newswire/20260212ny/yosemite-announces-more-than-18-million-deployed-in-grants"
         notes: >
           MIT is a Yosemite LP AND parent of MIT Technology Review (another tracked publication).
           This creates a cross-publication investment connection between the Atlantic's owner
@@ -215,7 +290,7 @@ ownership_chain:
   - name: "Laurene Powell Jobs"
     entity_type: "individual"
     description: >
-      Net worth ~$11.5-16B (estimates vary, Forbes India 2024: $13.5B). Apple connection
+      Net worth ~$13.5B (Forbes India 2024, other estimates range $11.5-16B). Apple connection
       through inheritance from Steve Jobs (d. 2011). Deep AI investment portfolio through
       Emerson Collective. Also invested in education, environment, social justice.
       Reportedly signaled intent to give away her wealth ("My kids know that. Steve wasn't
@@ -355,8 +430,19 @@ editorial_leadership:
   - name: "Nicholas Thompson"
     title: "CEO"
     start: "2020-12"
-    editorial_stance: "CRITICAL: Former Wired EIC (2017-2020). Creates direct Condé Nast → Atlantic editorial pipeline. Wrote two Facebook cover stories cited in Congress while at Wired. At Atlantic: drove profitability, record subscriptions, 3 Pulitzer Prizes, and the OpenAI licensing deal. Co-founded Speakeasy AI. 'I'm absolutely convinced these deals can be beneficial.'"
-    source_url: "https://www.weforum.org/people/nicholas-thompson/"
+    editorial_stance: >
+      CRITICAL: Former Wired EIC (2017-2020). Creates direct Condé Nast → Atlantic editorial
+      pipeline. Wrote two Facebook cover stories cited in Congress while at Wired. At Atlantic:
+      drove profitability, record subscriptions (well over 1.4M), 3 Pulitzer Prizes, 4 consecutive
+      National Magazine Award General Excellence nominations (won 2022, 2023), and the OpenAI
+      licensing deal. Co-founded Speakeasy AI. 'I'm absolutely convinced these deals can be
+      beneficial.' Published "The Running Ground" (Penguin Random House, Oct 2025) — national
+      bestseller, Kirkus Reviews Best Book of the Year. Set American 50K record for men 45+
+      in 2021; holds fastest 50-mile time in world for his age group (2025). WEF speaker (Jun 2026).
+      Calls himself the leader "driving digital transformation at a 169-year-old publication."
+    source_urls:
+      - "https://www.weforum.org/people/nicholas-thompson/"
+      - "https://www.penguinrandomhouse.com/books/678434/the-running-ground-by-nicholas-thompson"
   - name: "Adrienne LaFrance"
     title: "Executive Editor"
     start: "2019-05"
