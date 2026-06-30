@@ -7458,3 +7458,100 @@ MIT Technology Review: "Data Centers Are Amazing. Everyone Hates Them." (Jan 14,
 - Entity gaps: Pew Research Center, Block/Square, Atlassian, school districts, environmental groups invisible to entity detection.
 
 ### Commit
+
+## 2026-06-29 18:00 PT — Hour Type B: Journalist/Publication Research — Brian X. Chen (105th journalist, Macworld → Wired → NYT)
+
+**Focus:** Deep career profile research for Brian X. Chen, NYT's Lead Consumer Technology Writer and "Tech Fix" columnist. Valuable DiD subject with Wired → NYT migration, Wirecutter co-founding nexus, and documented external criticism (Gruber contradiction test).
+
+### New Journalist Added
+
+**Brian X. Chen** — 5 career positions spanning ~19 years:
+
+| Period | Publication | Role | Beat |
+|--------|------------|------|------|
+| ~2007-2009 | Macworld (IDG) | Associate Editor | Apple, consumer tech |
+| 2009-2011 | Wired (Condé Nast) | Staff Writer | Apple, mobile, gadgets |
+| 2011 | Wirecutter | Co-founder | Consumer tech |
+| Nov 2011-Jul 2015 | NYT | Technology Reporter | Apple, wireless, mobile |
+| Jul 2015-present | NYT | Lead Consumer Tech Writer | Privacy, AI, societal implications |
+
+**Key findings:**
+- Co-founded The Wirecutter with Brian Lam in 2011 "between jobs" — NYT later acquired Wirecutter for $30M (Oct 2016). Financial-editorial nexus.
+- Launched "Tech Fix" column Aug 26, 2015; pivoted from product troubleshooting to societal critique in 2022.
+- Part of NYT staff that won 2019 George Polk Award for National Reporting (tech/Facebook coverage).
+- John Gruber (Daring Fireball, Mar 2024) documented factual contradiction: 2017 "planned obsolescence is a myth" vs 2024 opposite claim. Supports institutional-framing-dominance hypothesis.
+- 14+ years at NYT makes him second-longest-serving NYT tech journalist tracked (after Steve Lohr ~47 yrs).
+
+**DiD value:** 5 dimensions — Wired→NYT migration, Wirecutter nexus, NYT lifer baseline, Gruber contradiction test, column pivot tracking.
+
+### Documentation Updates
+- README.md: 104 → 105 journalists, added Chen to migration examples
+- EDITORIAL_HISTORIES.md: 104 → 105 journalists, 102 → 103 multi-pub
+
+**Pre-check:** 960 tests passing.
+**Post-check:** 960 tests passing.
+**Commit:** `fcde935` — pushed to GitHub.
+
+**Sources:**
+- MacStories interview (Oct 2010): https://www.macstories.net/msinterviews/macstories-interviews-brian-x-chen/
+- FusionChat bio: https://fusionchat.ai/news/meet-brian-x-chen-uncovering-the-tech-world
+- TalkingBizNews NYT hire (Nov 2011): https://talkingbiznews.com/they-move/nyt-hires-two-for-tech-beat/
+- TalkingBizNews Wirecutter acquisition (Oct 2016): https://talkingbiznews.com/they-move/ny-times-buys-tech-site-the-wirecutter/
+- NYTCo Tech Fix launch (Aug 2015): https://www.nytco.com/press/the-new-york-times-debuts-tech-fix-column-by-brian-chen/
+- NYTCo Polk Awards (2019): https://www.nytco.com/press/the-new-york-times-wins-two-polk-awards/
+- Daring Fireball contradiction (Mar 2024): https://daringfireball.net/ (Seven Years of Institutional Anti-'Big-Tech' Bias)
+- me.sh profile: https://me.sh (LinkedIn/career aggregation)
+- Macworld "From the Lab" blog: https://www.macworld.com/article/169024/from_the_lab.html
+- AppleInsider hackintosh incident (Jan 2009): https://appleinsider.com/articles/09/01/14/apple_confronts_wired_over_mac_os_x_netbook_hacking_tutorial.html
+
+## 2026-06-29 19:00 PT — Type C: Ownership & Funding Deep Dive — MIT Technology Review
+
+### Focus
+Two new conflict dimensions for MIT Technology Review profile: (1) Schwarzman College of Computing / Blackstone AI infrastructure nexus, (2) MITIMCo SEC 13F public equity holdings (Q1 2026). Plus a standalone entry for Huttenlocher's corporate board seats.
+
+### New Conflicts Added (3)
+
+**1. `schwarzman_college_blackstone_nexus` (severity 4)**
+Stephen Schwarzman (Blackstone CEO/Chairman) donated $350M — largest gift in MIT's history — for the College of Computing (est. Jan 1, 2020). Dean Daniel Huttenlocher simultaneously serves on Amazon's board AND Corning's board, co-authored "The Age of AI" with Eric Schmidt and Henry Kissinger. Blackstone has invested ~$200B in AI data center infrastructure since 2018 (QTS $10B acquisition, capacity 12-14x growth; BDIT $1.75B IPO; sold Virginia data centers to Digital Realty for $3.5B Jun 2026). Huttenlocher spoke at MIT TR's "Future Compute 2024" event — direct editorial pipeline. Student/faculty protests at launch criticized Schwarzman's business practices, Trump advisory role, Saudi connections ($20B PIF commitment).
+
+**2. `huttenlocher_corporate_board_seats` (severity 3)**
+Schwarzman College dean Huttenlocher sits on Amazon AND Corning boards while directing MIT's AI/computing academic strategy. Amazon board compensation ~$380K+/year in stock. Dual conflict: MIT academic leader AND corporate director of a company MIT TR covers. Unlike Provost or EVP/Treasurer (MIT TR board members without external directorships), Huttenlocher has direct corporate governance obligations that coexist with his role shaping MIT's computing research agenda.
+
+**3. `mitimco_13f_public_holdings` (severity 2)**
+SEC EDGAR 13F-HR (CIK 0000351051, Q1 2026, signed by MITIMCo President Seth D. Alexander). Concentrated portfolio — only 5 positions totaling $576.96M:
+
+| Stock | Value | % Portfolio | Shares |
+|-------|-------|-------------|--------|
+| Coupang (CPNG) | $363M | 62.9% | 19.2M |
+| Carvana (CVNA) | $182M | 31.5% | 578K |
+| Boston Omaha (BOC) | $29M | 4.9% | 2.4M |
+| America's Car-Mart (CRMT) | $2.1M | 0.4% | 167K |
+| Textron (TXT) | $1.4M | 0.2% | 16K |
+
+Sold Circle Internet Group and Samsara (IOT) entirely in Q1. Boston Omaha held via 238 Plan Associates LLC through Magnolia BOC II, LP (Schedule 13G). Key tension: $363M in Coupang (Amazon's chief Asian competitor) while Huttenlocher sits on Amazon's board. Textron compounds Lincoln Lab defense conflicts.
+
+### Profile Updates
+- Conflict taxonomy expanded from 4 → 5 dimensions (new: MAJOR DONOR / NAMING RIGHTS)
+- Notes section updated with Schwarzman College, Huttenlocher, and MITIMCo 13F summaries
+- Profile grew from 1,093 → 1,250 lines, conflicts from 14 → 17
+
+### Impact
+- Total known conflicts: 14 → 17 (+3)
+- Conflict dimensions: 4 → 5 (added MAJOR DONOR / NAMING RIGHTS)
+- Profile is now the most extensively documented in the 5-publication set
+
+### Pre-check: 960 tests passing
+### Post-check: 960 tests passing
+
+### Sources
+- Wikipedia (Schwarzman College): https://en.wikipedia.org/wiki/MIT_Schwarzman_College_of_Computing
+- MIT News (Huttenlocher appointment): https://news.mit.edu/2019/dan-huttenlocher-named-dean-mit-schwarzman-college-computing
+- Wikipedia (Huttenlocher): https://en.wikipedia.org/wiki/Daniel_Huttenlocher
+- SEC EDGAR (MITIMCo 13F, CIK 0000351051): https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000351051&type=13F-HR
+- MarketBeat (MIT institutional holdings): https://www.marketbeat.com/stocks/CPNG/institutional-ownership/massachusetts-institute-of-technology/
+- Reuters (Blackstone/Digital Realty $3.5B): https://www.reuters.com
+- The Tech (MIT student paper, protests): https://thetech.com
+- EdSurge (Schwarzman College protests): https://www.edsurge.com
+- Chronicle of Philanthropy: https://www.philanthropy.com
+
+### Commit

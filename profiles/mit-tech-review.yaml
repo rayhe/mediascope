@@ -879,6 +879,134 @@ known_conflicts:
       - "https://www.globenewswire.com"
       - "https://www.businesswire.com"
     verified_date: "2026-06-28"
+  - type: "schwarzman_college_blackstone_nexus"
+    description: >
+      Stephen Schwarzman (Blackstone CEO/Chairman) donated $350M of the MIT
+      Schwarzman College of Computing's $1.1B budget — the largest single gift
+      in MIT's history. The college (established Jan 1, 2020) is the first new
+      school at MIT in nearly 70 years. Its dean, Daniel Huttenlocher,
+      simultaneously serves on Amazon's board of directors AND Corning's board
+      — direct corporate governance overlap with companies MIT TR covers.
+      Huttenlocher co-authored "The Age of AI" with Henry Kissinger and Eric
+      Schmidt (former Google CEO), embedding him in the AI industry's
+      intellectual leadership network.
+      
+      Blackstone has become the world's largest private investor in AI data
+      center infrastructure, with ~$200B invested in digital infrastructure
+      since 2018. Key holdings: QTS Realty (acquired ~$10B in 2021, capacity
+      grew 12-14x since); Blackstone Digital Infrastructure Trust ($1.75B IPO);
+      sold Virginia data centers to Digital Realty for $3.5B (June 2026). This
+      makes Schwarzman's gift not merely philanthropic but strategically aligned
+      with Blackstone's core AI infrastructure thesis.
+      
+      The editorial pipeline is direct: Huttenlocher spoke at MIT TR's "Future
+      Compute 2024" event — the dean of MIT's computing college (named for
+      Blackstone's CEO, while sitting on Amazon's board) addressing MIT TR's
+      audience on AI's future. Student and faculty protests at the college's
+      launch criticized Schwarzman's business practices, Trump advisory role,
+      and Saudi connections ($20B from MBS for Blackstone).
+      
+      The conflict operates at three levels: (1) Schwarzman's $350M shapes
+      MIT's AI academic structure and priorities; (2) Blackstone is the world's
+      largest private AI infrastructure investor, making Schwarzman financially
+      invested in AI optimism; (3) The dean of MIT's computing college serves
+      on Amazon's board while MIT TR covers Amazon's AI initiatives. No
+      structural firewall exists between the Schwarzman College's governance
+      and MIT TR's editorial decisions.
+    severity: 4
+    evidence: >
+      Schwarzman $350M gift: MIT News (Oct 2018), Wikipedia. College established
+      Jan 1, 2020. Huttenlocher Amazon board seat: Amazon proxy filings, Wikipedia.
+      Huttenlocher Corning board seat: Wikipedia, Aspen Ideas Festival bio.
+      Huttenlocher co-author "The Age of AI": publisher records, Wikipedia.
+      Blackstone AI infrastructure: Reuters ($3.5B Digital Realty sale, Jun 2026),
+      CoStar (BDIT $1.75B), PitchBook ($200B+ invested). QTS acquisition: SEC
+      filings, press releases. Future Compute 2024 speaker: MIT TR event page.
+      Student protests: The Tech (MIT student newspaper), EdSurge, Chronicle of
+      Philanthropy. Saudi connection: Bloomberg ($20B PIF commitment to Blackstone).
+    source_urls:
+      - "https://en.wikipedia.org/wiki/MIT_Schwarzman_College_of_Computing"
+      - "https://news.mit.edu/2019/dan-huttenlocher-named-dean-mit-schwarzman-college-computing"
+      - "https://en.wikipedia.org/wiki/Daniel_Huttenlocher"
+      - "https://www.reuters.com"
+      - "https://thetech.com"
+    verified_date: "2026-06-29"
+  - type: "huttenlocher_corporate_board_seats"
+    description: >
+      Daniel Huttenlocher, founding dean of the MIT Schwarzman College of
+      Computing (MIT's AI/computing academic center), simultaneously serves on
+      the boards of Amazon and Corning. This creates direct corporate governance
+      overlap: the person leading MIT's AI academic strategy has fiduciary duties
+      to Amazon — one of the most-covered companies in MIT TR's AI beat.
+      
+      Huttenlocher's position is uniquely conflicted: he shapes MIT's computing
+      research priorities (which feed MIT TR's coverage), co-authored "The Age
+      of AI" with Eric Schmidt (former Google CEO), and sits on the board of a
+      company (Amazon) that competes with Google, Meta, and other tech giants MIT
+      TR covers. His Amazon board compensation (~$380K+/year in stock, per proxy
+      filings) creates a personal financial interest in Amazon's success that
+      coexists with his role directing MIT's computing agenda.
+      
+      Unlike the MIT Provost or EVP/Treasurer (who sit on MIT TR's board but don't
+      have external corporate directorships), Huttenlocher's conflict is DUAL: he
+      is both an MIT academic leader AND a corporate director of a company MIT TR
+      covers. The Schwarzman College's influence on MIT's AI research agenda makes
+      this more than a personal conflict — it shapes the institutional context in
+      which MIT TR operates.
+    severity: 3
+    evidence: >
+      Amazon board membership: Amazon proxy statement, Wikipedia. Corning board
+      membership: Wikipedia, Aspen Ideas Festival bio. "The Age of AI" co-authorship:
+      publisher records. Schwarzman College dean appointment: MIT News (Jun 2019).
+      Amazon board compensation: Amazon DEF 14A proxy filings (SEC EDGAR).
+    source_urls:
+      - "https://en.wikipedia.org/wiki/Daniel_Huttenlocher"
+      - "https://news.mit.edu/2019/dan-huttenlocher-named-dean-mit-schwarzman-college-computing"
+    verified_date: "2026-06-29"
+  - type: "mitimco_13f_public_holdings"
+    description: >
+      MITIMCo (MIT Investment Management Company) manages MIT's $27.4B endowment.
+      Its SEC 13F filing (CIK 0000351051, Q1 2026, signed by President Seth D.
+      Alexander) reveals a concentrated public equity portfolio of only 5 positions
+      totaling $576.96M:
+      
+      Coupang (CPNG): $363M (62.9%, 19.2M shares) — South Korea's largest
+      e-commerce platform, a DIRECT Amazon competitor in Asia. Huttenlocher
+      (Schwarzman College dean) sits on Amazon's board while MIT holds $363M in
+      Amazon's primary Asian rival.
+      
+      Carvana (CVNA): $182M (31.5%, 578K shares) — used car marketplace.
+      
+      Boston Omaha (BOC): $29M (4.9%, 2.4M shares) — held via 238 Plan Associates
+      LLC (MIT retirement/welfare plan trusts) through Magnolia BOC II, LP, per
+      Schedule 13G filing.
+      
+      America's Car-Mart (CRMT): $2.1M (0.4%, 167K shares).
+      
+      Textron (TXT): $1.4M (0.2%, 16K shares) — defense/aerospace contractor
+      (Bell helicopters, Cessna aircraft, unmanned systems). Overlaps with
+      Lincoln Lab defense conflicts already documented.
+      
+      MIT sold its Circle Internet Group and Samsara (IOT) positions entirely
+      in Q1 2026 (both held in prior quarter). The 13F covers only public equities;
+      MIT's overwhelming allocation is in private investments (30-40% PE/VC).
+      
+      The Coupang-Amazon tension is the most significant editorial conflict:
+      MIT TR covers Amazon's AI and cloud strategy extensively while MIT's
+      endowment holds its largest public equity position ($363M) in Amazon's
+      chief e-commerce competitor. The Textron holding compounds Lincoln Lab
+      defense conflicts — MIT both operates the DoD's largest FFRDC AND invests
+      in defense contractors.
+    severity: 2
+    evidence: >
+      SEC EDGAR 13F-HR filing (CIK 0000351051, Q1 2026, filed May 2026).
+      MarketBeat institutional ownership tracker. Fintel 13F history. Schedule
+      13G for 238 Plan Associates LLC / Magnolia BOC II LP / Boston Omaha.
+      Coupang as Amazon competitor: industry analysis, press coverage.
+    source_urls:
+      - "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000351051&type=13F-HR"
+      - "https://www.marketbeat.com/stocks/CPNG/institutional-ownership/massachusetts-institute-of-technology/"
+    verified_date: "2026-06-29"
 
 litigation_connections: []
 
@@ -983,6 +1111,29 @@ notes: |
   approved Epstein's post-conviction donations. MIT's ILP (~240 member companies)
   further broadens the corporate funding surface beyond bilateral partnerships.
   
+  SCHWARZMAN COLLEGE / BLACKSTONE NEXUS (added June 29, 2026): Stephen Schwarzman's
+  $350M gift — the largest in MIT's history — established the College of Computing
+  (Jan 1, 2020). Dean Daniel Huttenlocher simultaneously sits on Amazon's board AND
+  Corning's board, co-authored "The Age of AI" with Eric Schmidt and Kissinger, and
+  spoke at MIT TR's Future Compute 2024 event. Blackstone (~$200B in AI data center
+  infrastructure, QTS $10B acquisition, $3.5B Digital Realty sale Jun 2026) is the
+  world's largest private AI infrastructure investor. The college's naming creates a
+  permanent visibility link between Blackstone's brand and MIT's AI academic identity.
+  Student protests at launch criticized Schwarzman's business practices, Trump advisory
+  role, and Saudi connections ($20B PIF commitment). This elevates the conflict taxonomy
+  from 4 to 5 dimensions: the MAJOR DONOR dimension is structurally distinct from
+  cooperative corporate funding because it carries naming rights, governance influence,
+  and permanent institutional branding.
+  
+  MITIMCO 13F PUBLIC HOLDINGS (added June 29, 2026): SEC filing (CIK 0000351051, Q1
+  2026) reveals MIT holds only 5 public equity positions totaling $577M, with extreme
+  concentration: $363M (62.9%) in Coupang (Amazon's Asian competitor) and $182M (31.5%)
+  in Carvana. The Coupang position creates a unique tension: Huttenlocher (Schwarzman
+  College dean) sits on Amazon's board while MIT's endowment holds $363M in Amazon's
+  chief e-commerce rival. Textron ($1.4M) compounds Lincoln Lab defense conflicts.
+  The 13F covers only public equities; MIT's overwhelming allocation is in private
+  investments not disclosed publicly.
+  
   MIT's endowment portfolio compounds the conflict: with 30-40% allocated to 
   private investments (PE + VC), MIT has one of the highest VC exposures among 
   elite endowments (per MPI/Institutional Investor analysis). This means MIT 
@@ -1017,17 +1168,23 @@ notes: |
   rebuild brought Samsung (also EmTech sponsor), Mitsubishi Electric, SEALSQ,
   L&T Technology Services, Kioxia, NTT DATA — tech companies MIT TR covers.
   
-  CONFLICT TAXONOMY (4 dimensions):
+  CONFLICT TAXONOMY (5 dimensions):
   1. COOPERATIVE CORPORATE: Companies pay MIT for research (Google $130K/project,
-     IBM $240M, Amazon, Apple CSAIL, Microsoft, Meta FAIR, Schwarzman $350M)
-  2. VENTURE/INVESTMENT: MIT profits from tech startup exits (Engine Ventures
-     $1B+ AUM, Celestial AI $3.25B exit, MITIMCo endowment 30-40% PE/VC)
-  3. DEFENSE/GOVERNMENT: MIT receives DoD funding ($12.2B Lincoln Lab contract,
+     IBM $240M, Amazon, Apple CSAIL, Microsoft, Meta FAIR)
+  2. MAJOR DONOR / NAMING RIGHTS: Schwarzman $350M (College of Computing) — 
+     donor's firm (Blackstone) is world's largest private AI infrastructure
+     investor (~$200B); college dean (Huttenlocher) sits on Amazon's board AND
+     co-authored with Eric Schmidt. Creates governance-funding-editorial pipeline.
+  3. VENTURE/INVESTMENT: MIT profits from tech startup exits (Engine Ventures
+     $1B+ AUM, Celestial AI $3.25B exit, MITIMCo endowment 30-40% PE/VC).
+     MITIMCo 13F (Q1 2026): $577M across 5 positions — $363M in Coupang
+     (Amazon's Asian competitor), $1.4M in Textron (defense contractor).
+  4. DEFENSE/GOVERNMENT: MIT receives DoD funding ($12.2B Lincoln Lab contract,
      DAF-MIT AI Accelerator $15M/year, $1.36B annual FFRDC expenditures)
-  4. CONSORTIUM/EVENTS: Companies pay for access (Media Lab $400K/yr members,
+  5. CONSORTIUM/EVENTS: Companies pay for access (Media Lab $400K/yr members,
      CSAIL Alliance 27 companies, ILP 240 companies, EmTech sponsors ~33% revenue)
   
-  No other publication in the 5-pub tracking set has conflicts across ALL FOUR
+  No other publication in the 5-pub tracking set has conflicts across ALL FIVE
   dimensions simultaneously.
   
   PARADOX SUMMARY: MIT TR is editorially capable (Ad Fontes reliability 44.82, 
