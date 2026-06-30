@@ -1,0 +1,1194 @@
+{
+  "analysis_date": "2026-06-30T16:01:02.130430",
+  "publication": "Gizmodo",
+  "target_entity": "Meta",
+  "meta_articles_analyzed": 13,
+  "comparison_articles_analyzed": 5,
+  "aggregate": {
+    "avg_tone": 0.136,
+    "avg_emotional_intensity": 0.412,
+    "avg_framing_devices": 7.5,
+    "tone_range": [
+      -0.593,
+      0.666
+    ],
+    "peer_mentions_in_meta_articles": {
+      "Google": 15,
+      "Apple": 3,
+      "Microsoft": 1,
+      "Amazon": 2,
+      "OpenAI": 2
+    },
+    "framing_device_frequency": {
+      "emotional_appeal": 6,
+      "catastrophizing": 1,
+      "loaded_language": 45,
+      "ironic_quotation": 25,
+      "trend_bundling": 1,
+      "anonymous_authority": 1,
+      "self_referential_investigation": 4,
+      "juxtaposition": 1,
+      "timeline_implication": 1,
+      "litigation_framing": 1,
+      "denial_contradiction": 1,
+      "escalation_amplification": 2,
+      "kicker_framing": 1,
+      "scale_magnitude": 2,
+      "straw_man": 1,
+      "analogy_stacking": 4,
+      "rhetorical_question": 1
+    }
+  },
+  "articles": [
+    {
+      "headline": "Meta's AI Is Getting Better at Reading Your Thoughts\u2014Without Cracking Open Your Skull",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Meta",
+      "entity_distribution": {
+        "Meta": 5,
+        "Media/Publications": 1,
+        "OpenAI": 1
+      },
+      "sentiment": {
+        "overall_tone": -0.12,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.312,
+        "source_authority": 1.0,
+        "agency_attribution": -0.333,
+        "headline_body_alignment": 0.442,
+        "anonymous_source_ratio": 0.0,
+        "speculative_language": 0.39,
+        "comparative_framing": -1.0
+      },
+      "framing_devices": {
+        "emotional_appeal": 1,
+        "catastrophizing": 1,
+        "loaded_language": 2,
+        "ironic_quotation": 2
+      },
+      "framing_evidence": {
+        "emotional_appeal": [
+          "unable to speak"
+        ],
+        "catastrophizing": [
+          "nightmare"
+        ],
+        "loaded_language": [
+          "invasive",
+          "invasive"
+        ],
+        "ironic_quotation": [
+          "\"auto-research\"",
+          "\"a substantial improvement\""
+        ]
+      },
+      "total_framing_devices": 6,
+      "source_analysis": {
+        "total_sources": 1,
+        "adversarial": 0,
+        "supportive": 0,
+        "neutral": 1,
+        "stance_balance": 0.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.174,
+        "editorial_intensity": 0.303,
+        "quoted_intensity": 0.367
+      },
+      "topic": [
+        "TopicScore(topic='ai_development', confidence=0.4818, matched_keywords=['AI agents', 'AI system', 'AI systems', 'LLM', 'large language model', 'training data'])",
+        "TopicScore(topic='product_launch', confidence=0.2253, matched_keywords=['announcement', 'introduced', 'released'])",
+        "TopicScore(topic='ai_generated_content', confidence=0.1234, matched_keywords=['training data'])"
+      ],
+      "word_count": 769,
+      "filename": "gizmodo_meta_brain_decode_jun2026_article.txt"
+    },
+    {
+      "headline": "Meta Reportedly Got Too Addicted to Google AI Tokens and Had to Be Cut Off",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Meta",
+      "entity_distribution": {
+        "Meta": 10,
+        "Google": 10,
+        "Media/Publications": 3,
+        "OpenClaw": 1,
+        "Tesla/SpaceX": 1,
+        "xAI": 1
+      },
+      "sentiment": {
+        "overall_tone": -0.115,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.539,
+        "source_authority": 0.1,
+        "agency_attribution": -0.333,
+        "headline_body_alignment": 0.883,
+        "anonymous_source_ratio": 0.75,
+        "speculative_language": 0.673,
+        "comparative_framing": 0.0
+      },
+      "framing_devices": {
+        "trend_bundling": 1,
+        "ironic_quotation": 1,
+        "anonymous_authority": 1
+      },
+      "framing_evidence": {
+        "trend_bundling": [
+          "Meta was reportedly minding its own business this past March, just trying to gorge itself on Gemini tokens, and all of a sudden Google said it was cut off. This is according to an anonymously sourced ..."
+        ],
+        "ironic_quotation": [
+          "\"three people familiar with the matter,\""
+        ],
+        "anonymous_authority": [
+          "people familiar with the matter"
+        ]
+      },
+      "total_framing_devices": 3,
+      "source_analysis": {
+        "total_sources": 4,
+        "adversarial": 0,
+        "supportive": 0,
+        "neutral": 4,
+        "stance_balance": 0.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.0,
+        "editorial_intensity": 0.658,
+        "quoted_intensity": 0.0
+      },
+      "topic": [
+        "TopicScore(topic='ai_development', confidence=0.4545, matched_keywords=['AI capacity', 'AI projects', 'AI tokens', 'AI usage'])",
+        "TopicScore(topic='workplace_culture', confidence=0.2979, matched_keywords=['employees', 'workplace'])"
+      ],
+      "word_count": 297,
+      "filename": "gizmodo_meta_google_ai_tokens_2026_06_29_article.txt"
+    },
+    {
+      "headline": "Meta Is Testing Police Surveillance Tech for Its Smart Glasses",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Meta",
+      "entity_distribution": {
+        "Meta": 15,
+        "Media/Publications": 8,
+        "Surveillance/Biometrics": 7,
+        "US Government": 1,
+        "US Congress": 1
+      },
+      "sentiment": {
+        "overall_tone": -0.211,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.718,
+        "source_authority": -0.4,
+        "agency_attribution": -0.333,
+        "headline_body_alignment": 0.413,
+        "anonymous_source_ratio": 0.5,
+        "speculative_language": 0.385,
+        "comparative_framing": 0.0
+      },
+      "framing_devices": {
+        "loaded_language": 7,
+        "self_referential_investigation": 1,
+        "ironic_quotation": 2,
+        "juxtaposition": 1
+      },
+      "framing_evidence": {
+        "loaded_language": [
+          "Surveillance Tech for Its Smart Glasses",
+          "surveillance-tech-for-its-smart-glasses",
+          "secretly",
+          "facial recognition feature for Meta's smart glasses",
+          "dormant",
+          "surveillance tech have a habit of trickling down to consumer",
+          "face recognition software in smart glasses"
+        ],
+        "self_referential_investigation": [
+          "obtained by Wired"
+        ],
+        "ironic_quotation": [
+          "\"liveness detection,\"",
+          "\"nearly ready to go.\""
+        ],
+        "juxtaposition": [
+          "military and surveillance tech have a habit of trickling down to consumer"
+        ]
+      },
+      "total_framing_devices": 11,
+      "source_analysis": {
+        "total_sources": 2,
+        "adversarial": 0,
+        "supportive": 0,
+        "neutral": 2,
+        "stance_balance": 0.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.0,
+        "editorial_intensity": 0.725,
+        "quoted_intensity": 0.0
+      },
+      "topic": [
+        "TopicScore(topic='privacy_data', confidence=0.45, matched_keywords=['facial recognition', 'surveillance'])",
+        "TopicScore(topic='defense_military', confidence=0.2258, matched_keywords=['Special Operations', 'military'])",
+        "TopicScore(topic='product_launch', confidence=0.1256, matched_keywords=['released'])"
+      ],
+      "word_count": 390,
+      "filename": "gizmodo_meta_police_surveillance_glasses_2026_06_15_article.txt"
+    },
+    {
+      "headline": "Meta's Facial Recognition Plans for Smart Glasses Are Worse Than We Thought",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Meta",
+      "entity_distribution": {
+        "Meta": 21,
+        "Media/Publications": 10,
+        "US Congress": 2,
+        "Privacy/Civil Liberties Orgs": 1
+      },
+      "sentiment": {
+        "overall_tone": -0.132,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.323,
+        "source_authority": 1.0,
+        "agency_attribution": -0.333,
+        "headline_body_alignment": 0.205,
+        "anonymous_source_ratio": 0.0,
+        "speculative_language": 0.162,
+        "comparative_framing": -1.0
+      },
+      "framing_devices": {
+        "loaded_language": 4,
+        "ironic_quotation": 7,
+        "timeline_implication": 1,
+        "litigation_framing": 1,
+        "denial_contradiction": 1
+      },
+      "framing_evidence": {
+        "loaded_language": [
+          "Facial Recognition Plans for Smart Glasses",
+          "facial recognition to its smart glasses",
+          "discreetly",
+          "facial recognition to its smart glasses"
+        ],
+        "ironic_quotation": [
+          "\"nearly ready to go.\"",
+          "\"thoughtful\"",
+          "\"unique biometric signatures\"",
+          "\"faceprints\"",
+          "\"trigger notifications\"",
+          "\"not building a central face database.\"",
+          "\"facial recognition\""
+        ],
+        "timeline_implication": [
+          "contradictory"
+        ],
+        "litigation_framing": [
+          "sued by"
+        ],
+        "denial_contradiction": [
+          "\"Regardless of any sensational reporting, the facts are simple: We've said before we're exploring these types of features, and what you're seeing is just evidence of that exploration\u2026 Nothing has ship..."
+        ]
+      },
+      "total_framing_devices": 14,
+      "source_analysis": {
+        "total_sources": 3,
+        "adversarial": 0,
+        "supportive": 2,
+        "neutral": 1,
+        "stance_balance": 1.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.0,
+        "editorial_intensity": 0.417,
+        "quoted_intensity": 0.0
+      },
+      "topic": [
+        "TopicScore(topic='privacy_data', confidence=0.475, matched_keywords=['consent', 'facial recognition', 'privacy'])",
+        "TopicScore(topic='litigation', confidence=0.0886, matched_keywords=['sued'])",
+        "TopicScore(topic='government_oversight', confidence=0.0774, matched_keywords=['lawmakers'])"
+      ],
+      "word_count": 619,
+      "filename": "gizmodo_meta_facial_recognition_worse_2026_06_05_article.txt"
+    },
+    {
+      "headline": "Meta Removes Face-Recognition System From Its Smart Glasses, Is Mad About it",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Meta",
+      "entity_distribution": {
+        "Meta": 24,
+        "Media/Publications": 11
+      },
+      "sentiment": {
+        "overall_tone": -0.554,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.128,
+        "source_authority": 0.5,
+        "agency_attribution": -0.333,
+        "headline_body_alignment": 0.13,
+        "anonymous_source_ratio": 0.25,
+        "speculative_language": 0.32,
+        "comparative_framing": 0.0
+      },
+      "framing_devices": {
+        "loaded_language": 18,
+        "self_referential_investigation": 2,
+        "ironic_quotation": 2
+      },
+      "framing_evidence": {
+        "loaded_language": [
+          "Face-Recognition System From Its Smart Glasses",
+          "face-recognition-system-from-its-smart-glasses",
+          "quietly",
+          "face-recognition system supposedly designed for the company's smart glasses",
+          "quietly",
+          "facial recognition system was available in an app",
+          "quietly",
+          "controversial",
+          "creepy",
+          "dishonest",
+          "violation",
+          "facial recognition in its smart glasses",
+          "misleading",
+          "dishonest",
+          "misleading",
+          "dishonest",
+          "facial recognition features in your products",
+          "facial recognition to your products"
+        ],
+        "self_referential_investigation": [
+          "Wired reported",
+          "The New York Times reported"
+        ],
+        "ironic_quotation": [
+          "\"not enabled,\"",
+          "\"looking at\""
+        ]
+      },
+      "total_framing_devices": 22,
+      "source_analysis": {
+        "total_sources": 4,
+        "adversarial": 2,
+        "supportive": 0,
+        "neutral": 2,
+        "stance_balance": -1.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.0,
+        "editorial_intensity": 0.138,
+        "quoted_intensity": 0.0
+      },
+      "topic": [
+        "TopicScore(topic='privacy_data', confidence=0.434, matched_keywords=['facial recognition', 'privacy'])",
+        "TopicScore(topic='product_launch', confidence=0.0871, matched_keywords=['released'])",
+        "TopicScore(topic='workplace_culture', confidence=0.0783, matched_keywords=['internal memo'])"
+      ],
+      "word_count": 625,
+      "filename": "gizmodo_meta_removes_facerec_mad_2026_06_08_article.txt"
+    },
+    {
+      "headline": "Meta Says Thousands of Instagram Accounts Were Breached Through Its AI Support Assistant",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Meta",
+      "entity_distribution": {
+        "Meta": 18,
+        "Media/Publications": 3,
+        "US Government": 2,
+        "Google": 1
+      },
+      "sentiment": {
+        "overall_tone": 0.528,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.258,
+        "source_authority": 0.7,
+        "agency_attribution": 0.0,
+        "headline_body_alignment": 0.468,
+        "anonymous_source_ratio": 0.25,
+        "speculative_language": 0.611,
+        "comparative_framing": 0.0
+      },
+      "framing_devices": {
+        "escalation_amplification": 1,
+        "emotional_appeal": 1
+      },
+      "framing_evidence": {
+        "escalation_amplification": [
+          "growing concern"
+        ],
+        "emotional_appeal": [
+          "disabled"
+        ]
+      },
+      "total_framing_devices": 2,
+      "source_analysis": {
+        "total_sources": 4,
+        "adversarial": 0,
+        "supportive": 0,
+        "neutral": 4,
+        "stance_balance": 0.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.0,
+        "editorial_intensity": 0.314,
+        "quoted_intensity": 0.0
+      },
+      "topic": [
+        "TopicScore(topic='ai_development', confidence=0.4036, matched_keywords=['AI agent', 'AI assistant', 'AI models', 'chatbot'])",
+        "TopicScore(topic='privacy_data', confidence=0.0948, matched_keywords=['data breach'])",
+        "TopicScore(topic='product_launch', confidence=0.0929, matched_keywords=['announced'])"
+      ],
+      "word_count": 573,
+      "filename": "gizmodo_meta_instagram_breach_ai_2026_06_08_article.txt"
+    },
+    {
+      "headline": "Meta Increases Social Media Safety Restrictions for Minors as Legal Backlash Intensifies",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Meta",
+      "entity_distribution": {
+        "Meta": 18,
+        "Australia": 2,
+        "Legal/Judicial": 2,
+        "Media/Publications": 1,
+        "Political Figures": 1
+      },
+      "sentiment": {
+        "overall_tone": 0.609,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.677,
+        "source_authority": 1.0,
+        "agency_attribution": 1.0,
+        "headline_body_alignment": 0.531,
+        "anonymous_source_ratio": 0.0,
+        "speculative_language": 0.154,
+        "comparative_framing": 0.0
+      },
+      "framing_devices": {
+        "loaded_language": 4,
+        "emotional_appeal": 3,
+        "kicker_framing": 1
+      },
+      "framing_evidence": {
+        "loaded_language": [
+          "Backlash",
+          "backlash",
+          "backlash",
+          "predators"
+        ],
+        "emotional_appeal": [
+          "sounding the alarm",
+          "mental health",
+          "mental health"
+        ],
+        "kicker_framing": [
+          "regulatory"
+        ]
+      },
+      "total_framing_devices": 8,
+      "source_analysis": {
+        "total_sources": 1,
+        "adversarial": 0,
+        "supportive": 1,
+        "neutral": 0,
+        "stance_balance": 1.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.0,
+        "editorial_intensity": 0.678,
+        "quoted_intensity": 0.667
+      },
+      "topic": [
+        "TopicScore(topic='child_safety', confidence=0.45, matched_keywords=['minors', 'social media addiction', 'teen', 'teens'])",
+        "TopicScore(topic='product_launch', confidence=0.4, matched_keywords=['announced', 'release', 'released', 'unveiled'])",
+        "TopicScore(topic='litigation', confidence=0.2566, matched_keywords=['court', 'lawsuit', 'litigation'])"
+      ],
+      "word_count": 650,
+      "filename": "gizmodo_meta_minor_safety_restrictions_2026_06_02_article.txt"
+    },
+    {
+      "headline": "Trump Administration to Meta: Pretty Please Let Us Vet Your AI Models?",
+      "target_entity": "Meta",
+      "primary_entity_detected": "US Government",
+      "entity_distribution": {
+        "US Government": 8,
+        "Meta": 7,
+        "Political Figures": 4,
+        "Media/Publications": 2,
+        "Anthropic": 2,
+        "OpenAI": 1,
+        "Google": 1,
+        "xAI": 1,
+        "Microsoft": 1
+      },
+      "sentiment": {
+        "overall_tone": 0.604,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.125,
+        "source_authority": 1.0,
+        "agency_attribution": -1.0,
+        "headline_body_alignment": 0.685,
+        "anonymous_source_ratio": 0.0,
+        "speculative_language": 0.467,
+        "comparative_framing": -1.0
+      },
+      "framing_devices": {
+        "loaded_language": 1,
+        "ironic_quotation": 2
+      },
+      "framing_evidence": {
+        "loaded_language": [
+          "behind the scenes"
+        ],
+        "ironic_quotation": [
+          "\"working through the details,\"",
+          "\"hope to sign the agreement soon.\""
+        ]
+      },
+      "total_framing_devices": 3,
+      "source_analysis": {
+        "total_sources": 4,
+        "adversarial": 0,
+        "supportive": 1,
+        "neutral": 3,
+        "stance_balance": 1.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.0,
+        "editorial_intensity": 0.141,
+        "quoted_intensity": 0.0
+      },
+      "topic": [
+        "TopicScore(topic='government_oversight', confidence=0.4383, matched_keywords=['executive order', 'government oversight', 'pentagon'])",
+        "TopicScore(topic='executive_behavior', confidence=0.4284, matched_keywords=['executive', 'leadership'])",
+        "TopicScore(topic='ai_development', confidence=0.2629, matched_keywords=['AI models'])"
+      ],
+      "word_count": 321,
+      "filename": "gizmodo_trump_admin_meta_ai_vet_2026_06_24_article.txt"
+    },
+    {
+      "headline": "Meta's New AI Smart Glasses Drop Ray-Ban Branding and Add Kylie Jenner",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Meta",
+      "entity_distribution": {
+        "Meta": 47,
+        "Celebrity/Influencer": 3,
+        "EssilorLuxottica": 2,
+        "Media/Publications": 2,
+        "Amazon": 1
+      },
+      "sentiment": {
+        "overall_tone": 0.666,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.216,
+        "source_authority": 1.0,
+        "agency_attribution": -0.333,
+        "headline_body_alignment": 0.154,
+        "anonymous_source_ratio": 0.0,
+        "speculative_language": 0.216,
+        "comparative_framing": 0.0
+      },
+      "framing_devices": {
+        "ironic_quotation": 2
+      },
+      "framing_evidence": {
+        "ironic_quotation": [
+          "\"expansion\"",
+          "\"racing green\""
+        ]
+      },
+      "total_framing_devices": 2,
+      "source_analysis": {
+        "total_sources": 1,
+        "adversarial": 0,
+        "supportive": 1,
+        "neutral": 0,
+        "stance_balance": 1.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.0,
+        "editorial_intensity": 0.235,
+        "quoted_intensity": 0.0
+      },
+      "topic": [
+        "TopicScore(topic='product_launch', confidence=0.176, matched_keywords=['launch', 'release'])",
+        "TopicScore(topic='corporate_strategy', confidence=0.1152, matched_keywords=['diversifying', 'expansion'])",
+        "TopicScore(topic='ai_development', confidence=0.1139, matched_keywords=['AI model', 'computer vision'])"
+      ],
+      "word_count": 924,
+      "filename": "gizmodo_meta_glasses_kylie_jenner_2026_06_23_article.txt"
+    },
+    {
+      "headline": "Meta Is Building a Prediction Markets App to Challenge Polymarket and Kalshi",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Prediction Markets/Fintech",
+      "entity_distribution": {
+        "Prediction Markets/Fintech": 16,
+        "Meta": 13,
+        "Political Figures": 2,
+        "VR/Metaverse": 1,
+        "Media/Publications": 1,
+        "US Government": 1,
+        "US Congress": 1
+      },
+      "sentiment": {
+        "overall_tone": 0.619,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.131,
+        "source_authority": 0.0,
+        "agency_attribution": 0.5,
+        "headline_body_alignment": 0.078,
+        "anonymous_source_ratio": 0.0,
+        "speculative_language": 0.408,
+        "comparative_framing": -1.0
+      },
+      "framing_devices": {
+        "loaded_language": 1
+      },
+      "framing_evidence": {
+        "loaded_language": [
+          "explosive"
+        ]
+      },
+      "total_framing_devices": 1,
+      "source_analysis": {
+        "total_sources": 0,
+        "adversarial": 0,
+        "supportive": 0,
+        "neutral": 0,
+        "stance_balance": 0.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.0,
+        "editorial_intensity": 0.131,
+        "quoted_intensity": 0.0
+      },
+      "topic": [
+        "TopicScore(topic='prediction_markets', confidence=0.5034, matched_keywords=['Kalshi', 'Polymarket', 'prediction market', 'prediction markets', 'wager'])",
+        "TopicScore(topic='defense_military', confidence=0.4232, matched_keywords=['Army', 'military', 'soldier'])",
+        "TopicScore(topic='product_launch', confidence=0.2422, matched_keywords=['announced', 'launched'])"
+      ],
+      "word_count": 612,
+      "filename": "gizmodo_meta_arena_prediction_markets_2026_06_23_article.txt"
+    },
+    {
+      "headline": "Gizmodo Article: \"Betting on People's Worst Instincts Has Kind of Always Been Mark Zuckerberg's Thing\"",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Meta",
+      "entity_distribution": {
+        "Meta": 25,
+        "Media/Publications": 10,
+        "Academic/Research": 4,
+        "Prediction Markets/Fintech": 3,
+        "Whistleblowers/Critics": 1,
+        "TikTok": 1
+      },
+      "sentiment": {
+        "overall_tone": -0.593,
+        "raw_overall_tone": null,
+        "emotional_intensity": 1.0,
+        "source_authority": 1.0,
+        "agency_attribution": 0.0,
+        "headline_body_alignment": 0.633,
+        "anonymous_source_ratio": 0.0,
+        "speculative_language": 0.198,
+        "comparative_framing": 0.0
+      },
+      "framing_devices": {
+        "loaded_language": 4,
+        "scale_magnitude": 2,
+        "straw_man": 1,
+        "ironic_quotation": 1,
+        "emotional_appeal": 1,
+        "escalation_amplification": 1
+      },
+      "framing_evidence": {
+        "loaded_language": [
+          "violation",
+          "notorious",
+          "notorious",
+          "gambling addiction"
+        ],
+        "scale_magnitude": [
+          "tens of thousands\nof",
+          "tens of thousands\nof"
+        ],
+        "straw_man": [
+          "the argument that the apps are designed to be addictive. Zuckerberg has\ndenied such accusations, but"
+        ],
+        "ironic_quotation": [
+          "\"dopamine hit\""
+        ],
+        "emotional_appeal": [
+          "mental health"
+        ],
+        "escalation_amplification": [
+          "increasingly desperate"
+        ]
+      },
+      "total_framing_devices": 10,
+      "source_analysis": {
+        "total_sources": 2,
+        "adversarial": 1,
+        "supportive": 0,
+        "neutral": 1,
+        "stance_balance": -1.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.0,
+        "editorial_intensity": 1.0,
+        "quoted_intensity": 1.0
+      },
+      "topic": [
+        "TopicScore(topic='prediction_markets', confidence=0.3998, matched_keywords=['Kalshi', 'Polymarket', 'gambling', 'prediction market'])",
+        "TopicScore(topic='ai_generated_content', confidence=0.3029, matched_keywords=['dopamine', 'engagement'])",
+        "TopicScore(topic='litigation', confidence=0.2834, matched_keywords=['court', 'ruling', 'verdict'])"
+      ],
+      "word_count": 757,
+      "filename": "gizmodo_meta_arena_worst_instincts_2026_06_24_article.txt"
+    },
+    {
+      "headline": "Meta Fury AI Glasses Review: The Worst Company Still Makes the Best Smart Glasses",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Meta",
+      "entity_distribution": {
+        "Meta": 90,
+        "Media/Publications": 5,
+        "Google": 3,
+        "Apple": 3,
+        "Spotify": 1,
+        "EssilorLuxottica": 1,
+        "Celebrity/Influencer": 1,
+        "Garmin": 1
+      },
+      "sentiment": {
+        "overall_tone": -0.199,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.749,
+        "source_authority": 1.0,
+        "agency_attribution": -0.2,
+        "headline_body_alignment": 0.453,
+        "anonymous_source_ratio": 0.0,
+        "speculative_language": 0.218,
+        "comparative_framing": 0.0
+      },
+      "framing_devices": {
+        "loaded_language": 4,
+        "ironic_quotation": 4,
+        "self_referential_investigation": 1,
+        "analogy_stacking": 4,
+        "rhetorical_question": 1
+      },
+      "framing_evidence": {
+        "loaded_language": [
+          "facial recognition to its smart glasses",
+          "facial recognition code dormant inside the Meta AI app",
+          "surveillance dystopia, and glassholism that abounds with Meta's smart glasses",
+          "crushed"
+        ],
+        "ironic_quotation": [
+          "\"dynamic political environment,\"",
+          "\"racing green\"",
+          "\"racing green\"",
+          "\"doing whatever the f*ck they want,\""
+        ],
+        "self_referential_investigation": [
+          "Wired found"
+        ],
+        "analogy_stacking": [
+          "like the semi",
+          "like the Fury",
+          "like a bulkier look",
+          "like the rest of Meta"
+        ],
+        "rhetorical_question": [
+          "who is and who isn't?"
+        ]
+      },
+      "total_framing_devices": 14,
+      "source_analysis": {
+        "total_sources": 1,
+        "adversarial": 0,
+        "supportive": 1,
+        "neutral": 0,
+        "stance_balance": 1.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.258,
+        "editorial_intensity": 0.742,
+        "quoted_intensity": 1.0
+      },
+      "topic": [
+        "TopicScore(topic='privacy_data', confidence=0.3189, matched_keywords=['facial recognition', 'privacy', 'surveillance'])",
+        "TopicScore(topic='product_launch', confidence=0.2086, matched_keywords=['launch', 'launching', 'released'])",
+        "TopicScore(topic='ai_development', confidence=0.0795, matched_keywords=['AI model', 'computer vision'])"
+      ],
+      "word_count": 2296,
+      "filename": "gizmodo_meta_fury_review_2026_06_29_article.txt"
+    },
+    {
+      "headline": "Meta's New AI Smart Glasses Drop Ray-Ban Branding and Add Kylie Jenner",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Meta",
+      "entity_distribution": {
+        "Meta": 46,
+        "Celebrity/Influencer": 3,
+        "Media/Publications": 2,
+        "EssilorLuxottica": 2,
+        "Amazon": 1
+      },
+      "sentiment": {
+        "overall_tone": 0.666,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.179,
+        "source_authority": 1.0,
+        "agency_attribution": -0.333,
+        "headline_body_alignment": 0.154,
+        "anonymous_source_ratio": 0.0,
+        "speculative_language": 0.223,
+        "comparative_framing": 0.0
+      },
+      "framing_devices": {
+        "ironic_quotation": 2
+      },
+      "framing_evidence": {
+        "ironic_quotation": [
+          "\"expansion\"",
+          "\"racing green\""
+        ]
+      },
+      "total_framing_devices": 2,
+      "source_analysis": {
+        "total_sources": 1,
+        "adversarial": 0,
+        "supportive": 1,
+        "neutral": 0,
+        "stance_balance": 1.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.0,
+        "editorial_intensity": 0.194,
+        "quoted_intensity": 0.0
+      },
+      "topic": [
+        "TopicScore(topic='product_launch', confidence=0.1801, matched_keywords=['launch', 'release'])",
+        "TopicScore(topic='corporate_strategy', confidence=0.1179, matched_keywords=['diversifying', 'expansion'])",
+        "TopicScore(topic='ai_development', confidence=0.1166, matched_keywords=['AI model', 'computer vision'])"
+      ],
+      "word_count": 896,
+      "filename": "gizmodo_meta_glasses_launch_2026_06_23_article.txt"
+    }
+  ],
+  "comparison_articles": [
+    {
+      "headline": "Australia Ups the Ante in Under-16 Social Media Ban as Kids Find Workarounds",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Australia",
+      "entity_distribution": {
+        "Australia": 17,
+        "Meta": 9,
+        "Snap": 5,
+        "TikTok": 5,
+        "Google": 4,
+        "Political Figures": 1,
+        "Legal/Judicial": 1
+      },
+      "sentiment": {
+        "overall_tone": -0.116,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.438,
+        "source_authority": 1.0,
+        "agency_attribution": 0.0,
+        "headline_body_alignment": 0.219,
+        "anonymous_source_ratio": 0.0,
+        "speculative_language": 0.157,
+        "comparative_framing": 1.0
+      },
+      "framing_devices": {
+        "trend_bundling": 3,
+        "emotional_appeal": 2,
+        "loaded_language": 1,
+        "kicker_framing": 1
+      },
+      "framing_evidence": {
+        "trend_bundling": [
+          "Australia is tightening the leash on social media companies. According to new legislation introduced in parliament, the Australian government will double the maximum penalty imposed on social media co...",
+          "Since then, dozens more governments around the globe have proposed bans inspired by Australia's crackdown, much to the chagrin of the Trump administration, which has made protecting Silicon Valley int...",
+          "Those stats shaped the government's recent decision to toughen the rules. \"I'm heartened by the shift in conversation and the global momentum we've seen since introducing the social media minimum age,..."
+        ],
+        "emotional_appeal": [
+          "mental health",
+          "mental health"
+        ],
+        "loaded_language": [
+          "shockingly simple"
+        ],
+        "kicker_framing": [
+          "lawsuits"
+        ]
+      },
+      "total_framing_devices": 7,
+      "source_analysis": {
+        "total_sources": 1,
+        "adversarial": 0,
+        "supportive": 0,
+        "neutral": 1,
+        "stance_balance": 0.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.0,
+        "editorial_intensity": 0.546,
+        "quoted_intensity": 0.0
+      },
+      "topic": [
+        "TopicScore(topic='product_launch', confidence=0.3196, matched_keywords=['introduced', 'introducing', 'release'])",
+        "TopicScore(topic='child_safety', confidence=0.2754, matched_keywords=['social media addiction', 'teens'])",
+        "TopicScore(topic='litigation', confidence=0.2598, matched_keywords=['litigation', 'penalty', 'verdict'])"
+      ],
+      "word_count": 639,
+      "filename": "gizmodo_australia_social_ban_2026_06_29_article.txt"
+    },
+    {
+      "headline": "The UK Announces Social Media Ban for Under-16s That's Even More Restrictive Than Australia",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Australia",
+      "entity_distribution": {
+        "Australia": 8,
+        "Meta": 6,
+        "TikTok": 2,
+        "Snap": 2,
+        "Google": 1,
+        "Media/Publications": 1
+      },
+      "sentiment": {
+        "overall_tone": -0.477,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.206,
+        "source_authority": 1.0,
+        "agency_attribution": 0.333,
+        "headline_body_alignment": 0.695,
+        "anonymous_source_ratio": 0.0,
+        "speculative_language": 0.193,
+        "comparative_framing": 0.0
+      },
+      "framing_devices": {
+        "emotional_appeal": 1,
+        "loaded_language": 1
+      },
+      "framing_evidence": {
+        "emotional_appeal": [
+          "depression"
+        ],
+        "loaded_language": [
+          "shockingly simple"
+        ]
+      },
+      "total_framing_devices": 2,
+      "source_analysis": {
+        "total_sources": 1,
+        "adversarial": 0,
+        "supportive": 0,
+        "neutral": 1,
+        "stance_balance": 0.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.0,
+        "editorial_intensity": 0.238,
+        "quoted_intensity": 0.0
+      },
+      "topic": [
+        "TopicScore(topic='child_safety', confidence=0.475, matched_keywords=['age verification', 'minors', 'protect children', 'teen', 'teenager', 'teens'])",
+        "TopicScore(topic='product_launch', confidence=0.4016, matched_keywords=['announced', 'introduced', 'introducing', 'release'])",
+        "TopicScore(topic='content_moderation', confidence=0.1281, matched_keywords=['banned'])"
+      ],
+      "word_count": 776,
+      "filename": "gizmodo_uk_social_ban_2026_06_15_article.txt"
+    },
+    {
+      "headline": "WhatsApp Is Getting a New CEO From The Fintech World",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Meta",
+      "entity_distribution": {
+        "Meta": 27,
+        "Indian Fintech": 7
+      },
+      "sentiment": {
+        "overall_tone": 0.677,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.0,
+        "source_authority": 1.0,
+        "agency_attribution": 1.0,
+        "headline_body_alignment": 0.3,
+        "anonymous_source_ratio": 0.0,
+        "speculative_language": 0.0,
+        "comparative_framing": 0.0
+      },
+      "framing_devices": {
+        "ironic_quotation": 1
+      },
+      "framing_evidence": {
+        "ironic_quotation": [
+          "\"build new products from the ground up,\""
+        ]
+      },
+      "total_framing_devices": 1,
+      "source_analysis": {
+        "total_sources": 3,
+        "adversarial": 0,
+        "supportive": 1,
+        "neutral": 2,
+        "stance_balance": 1.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.0,
+        "editorial_intensity": 0.0,
+        "quoted_intensity": 0.0
+      },
+      "topic": [
+        "TopicScore(topic='executive_behavior', confidence=0.5091, matched_keywords=['CEO', 'founder', 'leadership', 'leadership change'])",
+        "TopicScore(topic='product_launch', confidence=0.3925, matched_keywords=['announced', 'release', 'rolling out'])",
+        "TopicScore(topic='corporate_strategy', confidence=0.271, matched_keywords=['capital expenditure', 'investment'])"
+      ],
+      "word_count": 495,
+      "filename": "gizmodo_whatsapp_new_ceo_2026_06_22_article.txt"
+    },
+    {
+      "headline": "Smart Glasses Would Legally Require a Recording Light Under Proposed Law",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Meta",
+      "entity_distribution": {
+        "Meta": 5,
+        "US Congress": 2
+      },
+      "sentiment": {
+        "overall_tone": 0.561,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.196,
+        "source_authority": 1.0,
+        "agency_attribution": 0.333,
+        "headline_body_alignment": 0.526,
+        "anonymous_source_ratio": 0.0,
+        "speculative_language": 0.122,
+        "comparative_framing": -1.0
+      },
+      "framing_devices": {
+        "ironic_quotation": 3,
+        "emotional_appeal": 1,
+        "regulatory_shadow": 1,
+        "kicker_framing": 1,
+        "loaded_language": 1
+      },
+      "framing_evidence": {
+        "ironic_quotation": [
+          "\"manufactured, sold, and used\"",
+          "\"visual indicator\"",
+          "\"visual indicator\""
+        ],
+        "emotional_appeal": [
+          "disabled"
+        ],
+        "regulatory_shadow": [
+          "potential penalty"
+        ],
+        "kicker_framing": [
+          "remains to be seen"
+        ],
+        "loaded_language": [
+          "facial recognition to its smart glasses"
+        ]
+      },
+      "total_framing_devices": 7,
+      "source_analysis": {
+        "total_sources": 1,
+        "adversarial": 0,
+        "supportive": 0,
+        "neutral": 1,
+        "stance_balance": 0.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.804,
+        "editorial_intensity": 0.117,
+        "quoted_intensity": 0.597
+      },
+      "topic": [
+        "TopicScore(topic='privacy_data', confidence=0.3434, matched_keywords=['facial recognition', 'privacy'])",
+        "TopicScore(topic='government_oversight', confidence=0.2084, matched_keywords=['lawmakers'])",
+        "TopicScore(topic='litigation', confidence=0.1218, matched_keywords=['penalty'])"
+      ],
+      "word_count": 409,
+      "filename": "gizmodo_smart_glasses_recording_law_2026_06_08_article.txt"
+    },
+    {
+      "headline": "SOURCE: Gizmodo",
+      "target_entity": "Meta",
+      "primary_entity_detected": "Political Figures",
+      "entity_distribution": {
+        "Political Figures": 7,
+        "Media/Publications": 3,
+        "US Government": 2,
+        "Australia": 2,
+        "Meta": 1,
+        "Child Safety Legislation": 1
+      },
+      "sentiment": {
+        "overall_tone": 0.609,
+        "raw_overall_tone": null,
+        "emotional_intensity": 0.387,
+        "source_authority": 1.0,
+        "agency_attribution": 0.667,
+        "headline_body_alignment": 0.3,
+        "anonymous_source_ratio": 0.0,
+        "speculative_language": 0.06,
+        "comparative_framing": 0.0
+      },
+      "framing_devices": {
+        "ironic_quotation": 3,
+        "confession_framing": 1,
+        "loaded_language": 1,
+        "outsourced_intensity": 1,
+        "editorial_deflation": 1,
+        "geopolitical_regulatory_pressure": 1,
+        "sovereignty_framing": 1
+      },
+      "framing_evidence": {
+        "ironic_quotation": [
+          "\"additive apps,\"",
+          "\"cosplaying as licensed professionals,\"",
+          "\"not a silver bullet\""
+        ],
+        "confession_framing": [
+          "The group acknowledges that"
+        ],
+        "loaded_language": [
+          "predators"
+        ],
+        "outsourced_intensity": [
+          "\"A dismantling of the surveillance advertising business model that profits off targeting vulnerable teens.\""
+        ],
+        "editorial_deflation": [
+          "Noble efforts, indeed, but"
+        ],
+        "geopolitical_regulatory_pressure": [
+          "sovereign"
+        ],
+        "sovereignty_framing": [
+          "American public"
+        ]
+      },
+      "total_framing_devices": 9,
+      "source_analysis": {
+        "total_sources": 1,
+        "adversarial": 0,
+        "supportive": 0,
+        "neutral": 1,
+        "stance_balance": 0.0
+      },
+      "outsourced_intensity": {
+        "ratio": 0.77,
+        "editorial_intensity": 0.23,
+        "quoted_intensity": 1.0
+      },
+      "topic": [
+        "TopicScore(topic='child_safety', confidence=0.2307, matched_keywords=['child safety', 'kids online', 'teens'])",
+        "TopicScore(topic='privacy_data', confidence=0.1466, matched_keywords=['privacy', 'surveillance'])",
+        "TopicScore(topic='product_launch', confidence=0.1197, matched_keywords=['announced'])"
+      ],
+      "word_count": 828,
+      "filename": "gizmodo_project2029_kids_over_clicks_2026_06_29_article.txt"
+    }
+  ]
+}

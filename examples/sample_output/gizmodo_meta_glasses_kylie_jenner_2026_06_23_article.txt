@@ -1,0 +1,33 @@
+Meta's New AI Smart Glasses Drop Ray-Ban Branding and Add Kylie Jenner
+
+Remember when we said Meta had a ton of new smart glasses incoming? Well, the faucet is officially on. Meta took the wraps off several new pairs of AI glasses that focus on diversifying style, small hardware tweaks, and making the noteworthy move of dropping Ray-Ban branding.
+
+The new lineup consists of the Fury, the Adventurer, and the Starfire Kylie Edition, all of which have their own distinct frames. While the Fury are bigger, more rectangular, and have thick arms, the Adventurer have thinner arms and a much lower footprint overall. Both of those pairs are available in standard and large.
+
+Probably the most unique of the bunch is the Starfire Kylie Edition, which are designed in collaboration with Kylie Jenner and have a rounder, very not Ray-Ban profile. They also have (and I'm not kidding) a special voice for Meta AI that is meant to sound like Kylie herself. All of these pairs are prescription compatible. The charging case for the Kylie pair also has a mirror inside—for a quick check, of course.
+
+As I mentioned, not a single one of these pairs of smart glasses has "Ray-Ban" in the name, but Meta CTO Andrew Bosworth told press in a Q&A that the company still collaborated with EssilorLuxottica on manufacturing, lenses, and distribution for these glasses. To be honest, the explanation about the branding shift was a bit muddled, but Bosworth said it was mostly about "expansion" and price points.
+
+"For us, it's just about continuing to expand the choice that people have in the marketplace of what to pursue," Bosworth said in a Q&A. "Reaching people isn't just about even design or style, it's also about the price point that you can reach. So, if you're going to be wearing the Ray-Ban Wayfarer, it's the most popular style, and most frequently worn style of glasses in the world, and it's iconic; you pay a premium for that."
+
+The Adventurer has a smaller profile than the Fury. © James Pero / Gizmodo
+
+Frame colors will depend on the style, but there is a wide variety this go-around, including black, tortoise, linen, merlot, mahogany, sandstone, and probably the most eye-catching of them all: racing green. There are some new flourishes that focus on comfort, too, including nose tips that can be adjusted in a small, medium, and wide fit, as well as temple tips that are bendable. Overextension hinges that bend to larger head sizes are also a nice touch.
+
+One functional tweak in the hardware is the addition of a built-in action button on the right glasses arm. That button can launch Meta AI or be customized to launch a feature of your choosing, though I'm not sure what the full range of customization is there.
+
+I didn't get a ton of time with Meta's new AI smart glasses, but I did get to try each pair on for a bit. The Starfire Kylie Edition and the Adventurer are the most accessible, and I think the Fury will appeal to anyone who's looking for something louder style-wise. Adding to that loudness is the "racing green" pair with translucent frames that mimic previous Meta specs like the Ray-Ban Meta Wayfarer (Gen 2) Limited Edition, which came in a matte colorway that revealed the inside circuitry.
+
+I also think that people will be surprised at how thoughtfully designed the Kylie smart glasses are. Lots of people I saw try them on (including myself) preferred the size and fit, even if they have a rounder, distinctly less Ray-Ban profile.
+
+Thanks, Kylie Jenner? © James Pero / Gizmodo
+
+Feature-wise, just about everything—including the 12-megapixel camera with 3K-resolution video capture and 8 hours of battery life (32 hours with the case)—is the same here as second-gen Meta Ray-Ban AI glasses, though these three new models will be the first pairs to ship out of the box with Muse Spark, which is Meta's new AI model. I tried it for the first time since its release, and it's snappier than the old Meta AI. Muse Spark is more conversational, too; I was able to have a back-and-forth about a chicken wing magnet I saw during a demonstration and ask where I could buy one, and it felt smoother than usual.
+
+That being said, I still had some friction with computer vision. Muse Spark struggled to understand what I was looking at a few times and also misunderstood some of my queries. I'm not saying it's not an improvement over the last generation, but I don't know if it's a breakthrough quite yet.
+
+While there aren't a ton of new features or hardware in this generation of Meta smart glasses, the shedding of Ray-Ban branding could make it the biggest risk for the company in this department yet. Meta has a poor track record when it comes to privacy, and the Ray-Ban name has helped to insulate its smart glasses from taking on too much of that association. Will people be willing to buy Meta-forward smart glasses? Maybe, but we haven't really gotten a chance to test that theory—even the Meta Ray-Ban Display, while they put Meta's name first, have Ray-Ban branding front and center.
+
+All three models are available starting today at Meta.com, LensCrafters, Sunglasses Hut, Best Buy, Amazon, and select retailers. The Fury and the Adventurer both start at $299, while the Starfire Kylie AI glasses start at $399.
+
+This article has been updated to include additional pricing info on the Starfire Kylie Edition AI glasses.
