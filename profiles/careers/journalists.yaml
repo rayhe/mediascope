@@ -201,31 +201,96 @@ journalists:
     culture shifts his framing. Unlike most Wired AI writers who arrived during the hype, Knight has covered every AI cycle
     since the winter.'
 - career:
+  - beat: tech industry (non-journalism)
+    event_type: hired
+    notes: 'Pre-journalism career in tech. Content manager at an unnamed startup. First role after education.
+      Direct experience in tech industry provided foundation for later workplace/labor beat coverage.'
+    publication: tech-startup
+    role: content_manager
+    source_url: https://talkingbiznews.com/they-talk-biz-news/schiffer-departs-the-verge-for-nbc/amp/
+  - beat: tech industry (non-journalism)
+    event_type: hired
+    notes: 'UX writer at Uber. Second pre-journalism tech industry role. Insider experience at a major
+      tech company during Uber''s controversies (Travis Kalanick era, Susan Fowler memo) likely shaped
+      her later focus on tech labor and workplace culture.'
+    publication: uber
+    role: ux_writer
+    source_url: https://talkingbiznews.com/they-talk-biz-news/schiffer-departs-the-verge-for-nbc/amp/
+  - beat: various (freelance)
+    event_type: freelance
+    notes: 'Freelance writer for multiple San Francisco Bay Area publications: Vox, San Francisco Chronicle,
+      The Bold Italic, SFGate, SF Examiner, and Racked (Vox Media property, closed Nov 2018). Early
+      journalism career building clips across local and digital media after pivoting from tech industry.
+      Education: UC Berkeley BA (Political Science), Stanford University MA (Journalism), Liceo Scientifico
+      Galileo Galilei (Italian high school — suggests Italian heritage or period living abroad).'
+    publication: freelance
+    role: freelancer
+    source_url: https://rocketreach.co/zoe-schiffer-email_5073753
   - beat: tech labor, workplace
+    end: 2021-11
+    event_type: hired
+    notes: 'Senior reporter covering labor and workplace organizing in Silicon Valley. Broke multiple
+      major stories including Apple pay equity survey suppression (Aug 2021), Apple retail working conditions
+      (16 employee interviews, Aug 2021), and Clinc AI CEO sexual misconduct investigation (Feb 2020).
+      Key beat: tech company labor practices, employee activism, and corporate culture. Role described
+      as "senior reporter" per TalkingBizNews departure announcement.'
+    publication: the-verge
+    role: senior_reporter
+    source_url: https://talkingbiznews.com/they-talk-biz-news/schiffer-departs-the-verge-for-nbc/amp/
+    start: 2019-09
+  - beat: tech investigations
     end: 2022-06
     event_type: hired
-    notes: Tech labor reporter. Broke multiple Apple and Meta workplace stories.
-    publication: the-verge
-    role: staff_writer
-    source_url: https://www.theverge.com/authors/zoe-schiffer
-    start: 2019-09
+    notes: 'Joined NBC''s tech investigations team after departing The Verge. Brief stint (~7 months)
+      before moving to Platformer. Part of NBC Universal''s expansion of tech investigative coverage.'
+    publication: nbc-universal
+    role: reporter
+    source_url: https://talkingbiznews.com/they-talk-biz-news/schiffer-departs-the-verge-for-nbc/amp/
+    start: 2021-11
   - beat: tech labor, Big Tech workplace
-    end: 2024-03
+    end: 2024-12
     event_type: hired
-    notes: Co-author with Casey Newton. Wrote 'Extremely Hardcore' (2024) on Musk's Twitter takeover.
+    notes: 'Managing editor (editorial leadership role, NOT staff writer). Worked alongside Casey Newton
+      and Alex Heath. Published "Extremely Hardcore: Inside Elon Musk''s Twitter" (Portfolio/Penguin
+      Random House, Feb 13 2024, 352pp, ISBN 9780593716601) — drew on hundreds of hours of interviews
+      with 60+ employees and thousands of pages of internal docs. NYT praised her "crisp, matter-of-fact
+      style to excellent effect." Financial Times called it "a sharp and deeply sourced fly-on-the-wall
+      account." Platformer grew to ~50,000 free subscribers during her tenure. Still listed as managing
+      editor at announcement of Wired hire (Oct 31, 2024). KEY: managing editor role means editorial
+      oversight and direction, not just writing — she shaped Platformer''s institutional voice on Big
+      Tech coverage.'
     publication: platformer
-    role: senior_writer
+    role: managing_editor
+    source_url: https://talkingbiznews.com/media-news/wired-hires-schiffer-as-director-of-business-and-industry/
     start: 2022-07
-  - beat: tech labor, workplace culture
+  - beat: tech business, Big Tech
     event_type: hired
-    notes: 'Joined Wired''s business team. Key question: does Wired''s institutional culture shape her coverage differently
-      than Platformer?'
+    notes: 'Director, Business & Industry (editorial leadership, NOT staff writer). Reports to Executive
+      Editor Brian Barrett. Leads WIRED business desk across US and UK. Team includes Louise Matsakis
+      (senior editor), Sophie Kleeman (senior editor), Natasha Tiku, Maxwell Zeff. Co-host of "Uncanny
+      Valley" flagship podcast (launched Oct 31, 2024 — same day as hire announcement). Recruited by
+      Katie Drummond (Global Editorial Director). Drummond''s announcement explicitly frames the role
+      as "documenting the exploits and foibles of Silicon Valley''s companies and characters — and doing
+      it better than anybody else" — establishing adversarial Big Tech coverage as a hiring criterion.
+      Already breaking major scoops: reported Zuckerberg offering AI talent up to $300M/4yr packages
+      (Jul 2025). 252+ articles per Muck Rack. Threads: @reporterzoe.'
     publication: wired
-    role: senior_writer
-    source_url: https://www.wired.com/author/zoe-schiffer/
-    start: 2024-04
+    role: director_business_industry
+    source_url: https://talkingbiznews.com/media-news/wired-hires-schiffer-as-director-of-business-and-industry/
+    start: 2025-01
   name: Zoë Schiffer
-  notes: 'Key migration: The Verge → Platformer → Wired. Tech labor reporter tracking workplace culture across outlets.'
+  notes: 'Key migration: tech industry → freelance → The Verge → NBC → Platformer → Wired. Unusual
+    career arc: started in tech (content manager, Uber UX writer) before pivoting to journalism via
+    Stanford MA. Education: Liceo Scientifico Galileo Galilei (Italian HS), UC Berkeley BA (Political
+    Science), Stanford MA (Journalism). Published "Extremely Hardcore" (2024, Portfolio/PRH) on Musk/Twitter
+    takeover. Now directs Wired business desk — the highest editorial authority below Barrett/Drummond
+    for all business coverage. Analytically significant: (1) pre-journalism tech experience (Uber during
+    Kalanick era) gives insider knowledge but also personal experience with the workplace culture she
+    now covers; (2) career arc from labor reporter → newsletter editor → institutional director tracks
+    the indie-to-legacy pipeline; (3) Drummond hired her explicitly to lead adversarial Big Tech coverage;
+    (4) her Platformer tenure produced the most influential anti-Musk book of 2024; (5) the Director
+    role gives her editorial authority over Wired entire business desk, making her framing choices institutionally
+    amplified; (6) Italian high school background is unique among tracked journalists.'
 - career:
   - beat: sports media
     end: 2005-06

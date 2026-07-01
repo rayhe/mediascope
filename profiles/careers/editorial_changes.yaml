@@ -56,6 +56,27 @@ editorial_changes:
     outgoing: null
     position: tech_reporter
     source_url: https://www.theatlantic.com/author/will-oremus/
+  - date: 2024-10
+    incoming: Zoë Schiffer
+    notes: 'KEY LEADERSHIP HIRE: Schiffer hired as Director, Business & Industry — the top editorial
+      role for all business coverage. Reports to Executive Editor Brian Barrett. Joins Tim Marchman
+      (Director, Science) and Mike Calore (Director, Consumer Tech & Culture) to complete Drummond''s
+      newsroom leadership triumvirate. Previously managing editor at Platformer (Casey Newton''s
+      newsletter) and author of "Extremely Hardcore: Inside Elon Musk''s Twitter" (Portfolio/PRH,
+      Feb 2024). Before that, senior reporter at The Verge covering labor/workplace, and briefly on
+      NBC''s tech investigations team. Started in tech industry (content manager, UX writer at Uber)
+      before journalism. Stanford MA Journalism, UC Berkeley BA Political Science. Announced Oct 31,
+      2024; officially started January 2025. Co-host of "Uncanny Valley" podcast (launched same day
+      as announcement). Drummond''s memo explicitly frames the role as "documenting the exploits and
+      foibles of Silicon Valley''s companies and characters — and doing it better than anybody else"
+      — establishing adversarial Big Tech coverage as a stated hiring criterion. ANALYTICALLY SIGNIFICANT:
+      Schiffer brings the indie-newsletter adversarial voice directly into Wired''s institutional
+      structure, and her editorial authority over Wired''s entire business desk (Matsakis, Kleeman,
+      Tiku, Zeff, et al.) means her framing choices become institutionally amplified rather than
+      individually contained.'
+    outgoing: null
+    position: director_business_industry
+    source_url: https://talkingbiznews.com/media-news/wired-hires-schiffer-as-director-of-business-and-industry/
   - date: 2025-01
     incoming: Kristen V. Brown
     notes: Health/biotech staff writer hired from Bloomberg News. Covered genetics, biohacking, vaccine psychology, reproductive
