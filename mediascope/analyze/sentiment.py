@@ -1541,7 +1541,7 @@ def analyze_composite(text: str, headline: str = "") -> SentimentResult:
 
     # Sentence-level VADER for long texts
     # ---------------------------------------------------------------------------
-    # VADER long-text normalization fix (Jul 2026):
+    # --- Path G: VADER long-text normalization fix (Jul 2026) ---
     # VADER's compound score uses sum / sqrt(sum² + alpha) where alpha=15,
     # tuned for tweet-length texts.  For long articles (10+ sentences), this
     # normalization amplifies small biases — a few business words like "risk",

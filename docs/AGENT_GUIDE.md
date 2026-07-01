@@ -924,17 +924,29 @@ framing_gap = len(magazine_result["framing"]) - len(wire_result["framing"])
 
 ## Framing-Aware Tone Correction Workflow
 
-VADER and TextBlob systematically misprice editorial tone in investigative journalism. Professional prose uses measured, confident language that lexical sentiment models score as positive — even when the editorial stance is clearly adversarial. MediaScope's tone correction pipeline fixes this by detecting structural editorial signals.
+VADER and TextBlob systematically misprice editorial tone in investigative journalism. Professional prose uses measured, confident language that lexical sentiment models score as positive — even when the editorial stance is clearly adversarial. MediaScope's tone correction pipeline fixes this through **7 correction paths (A–G)**, each addressing a specific VADER failure mode.
 
 See `METHODOLOGY.md` §9 and `examples/framing_correction_demo.py` for a hands-on walkthrough.
 
-### When Correction Fires
+### Correction Paths
 
-Three conditions must all be met:
+The pipeline evaluates 7 paths in priority order — the first match fires:
 
-1. **Adversarial framing density** — 3+ adversarial framing devices detected (catastrophizing, emotional_appeal, guilt_by_association, hypocrisy_frame, isolation_framing, juxtaposition, kicker_framing, loaded_language, military_techno_optimism, power_asymmetry, pressure_language, refusal_amplification, self_referential_investigation, timeline_implication)
-2. **Negative agency signal** — Active-negative agency (tracking, cutting, forcing) or passive victim framing
-3. **Positive raw VADER score** — The uncorrected composite score misleadingly reads as positive
+| Path | Failure Mode | When It Fires | Agent Action |
+|---|---|---|---|
+| **A** | VADER scores adversarial prose positive | raw ≥ 0, agency < −0.3, ≥3 adversarial devices | Full override — trust corrected score, not raw |
+| **B** | VADER understates negative magnitude | raw ∈ (−0.5, 0), agency < −0.3, ≥6 adversarial devices | Magnitude adjustment — corrected score is more negative than raw |
+| **C** | Product reviews with embedded anchors | raw > 0.3, agency ≥ 0, ≥2 anchor devices + ≥4 adversarial | Mixed article — corrected score reflects reader takeaway, not word count |
+| **D** | Sardonic/mocking contempt | raw ≥ 0.3, agency ≥ 0.3, ≥7 loaded language + ≥8 adversarial | High-contempt override — loaded language is the dominant signal |
+| **E** | Military techno-optimism | raw ≥ 0.3, agency < 0, ≥3 MTO devices | Domain-specific fix — aspirational military language misleads VADER |
+| **F** | Contradictory review framing | raw ≥ 0.3, agency ∈ [−0.4, 0), emotional intensity ≥ 0.5 | Editorial wrapper overrides product praise — trust corrected score |
+| **G** | VADER long-text normalization | ≥10 sentences, compound-sentence divergence > 0.5 | Pre-correction — fixes VADER's alpha=15 distortion before composite |
+
+Only one framing path (A–F) fires per article. Path G runs independently before the composite is computed.
+
+**Adversarial device types** (14 types trigger Paths A/B): catastrophizing, emotional_appeal, guilt_by_association, hypocrisy_frame, isolation_framing, juxtaposition, kicker_framing, loaded_language, military_techno_optimism, power_asymmetry, pressure_language, refusal_amplification, self_referential_investigation, timeline_implication.
+
+**Anchor device types** (3 types trigger Path C): kicker_framing, self_referential_investigation, juxtaposition.
 
 ### Key Outputs
 
@@ -955,11 +967,15 @@ result.framing_corrected  # True/False
 
 ### Validated Examples
 
-| Article | VADER Raw | Corrected | Gap | Root Cause |
-|---|---|---|---|---|
-| NYT "Meta AI Employees Miserable" | +0.61 | −0.37 | 0.98 | 5 adversarial devices + active-negative agency |
-| NYT "US Presses Meta on AI Reviews" | +0.61 | −0.57 | 1.18 | Isolation framing + pressure language |
-| Wired "Applied AI Soul-Crushing" | +0.30 | −0.72 | 1.02 | Loaded language + emotional appeal + outsourced intensity |
+| Article | VADER Raw | Corrected | Gap | Path | Root Cause |
+|---|---|---|---|---|---|
+| NYT "Meta AI Employees Miserable" | +0.61 | −0.37 | 0.98 | A | 5 adversarial devices + active-negative agency |
+| NYT "US Presses Meta on AI Reviews" | +0.61 | −0.57 | 1.18 | A | Isolation framing + pressure language |
+| Wired "Applied AI Soul-Crushing" | +0.30 | −0.72 | 1.02 | A | Loaded language + emotional appeal + outsourced intensity |
+| Wired glasses launch review | +0.67 | +0.15 | 0.52 | C | Kicker + self-referential investigation anchored final impression |
+| MIT TR Anduril/Meta warfare | +0.64 | −0.10 | 0.74 | E | Military aspirational language ("revolutionize the battlefield") |
+| Kotaku Meta Arena gambling | +0.68 | −0.55 | 1.23 | D | Sardonic contempt ("ethically rancid," "AI slop") |
+| Gizmodo Meta Fury review | +0.68 | −0.35 | 1.03 | F | Positive product praise drowned out privacy editorial wrapper |
 
 ## Integration Patterns
 

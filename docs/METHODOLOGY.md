@@ -411,20 +411,132 @@ This is not a VADER bug; it is a fundamental limitation of lexical sentiment ana
 
 ### 9.2 Correction Pipeline
 
-MediaScope's tone correction fires when three conditions are met:
+MediaScope implements **7 distinct correction paths** (A–G), each addressing a specific VADER/TextBlob failure mode discovered through real article analysis. The paths are evaluated in priority order; the first match fires and returns the corrected score.
 
-1. **Adversarial framing density:** ≥3 framing devices from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism)
-2. **Negative agency signal:** Agency attribution score ≤ −0.3 (from active-negative detection or passive framing)
-3. **Positive raw VADER score:** The uncorrected composite score is positive
+The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overall_tone` (corrected) with metadata documenting when and why correction fired.
 
-When all three conditions hold, the corrected `overall_tone` is computed from framing device signals rather than VADER's lexical score. The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overall_tone` (corrected) with metadata documenting when and why correction fired.
+#### Path A: Full Correction (VADER Got Direction Wrong)
 
-Additional correction paths handle specific VADER failure modes that don't meet the primary conditions:
+**The primary path.** Fires when VADER scores investigative/adversarial journalism as positive because the prose is lexically measured.
 
-- **Military techno-optimism (Path E):** When ≥3 `military_techno_optimism` devices are detected and agency is any negative value (relaxed from −0.3), VADER's positive inflation from aspirational military language ("revolutionize the battlefield," "enhanced capabilities") is corrected. This path uses a lighter blend (70% framing, 30% raw) since these are not pure adversarial pieces but rather articles where domain-specific language misleads VADER.
-- **Embedded anchor (Path C):** Product reviews where anchor devices (kicker framing, self-referential investigation, juxtaposition) shift the reader's final impression despite positive agency.
-- **Sardonic framing (Path D):** Articles with strong loaded language density (≥7 devices) and positive agency where editorial contempt is conveyed through word choice rather than structural framing.
-- **Long-text normalization (Path G):** When VADER's full-text compound diverges from sentence-level mean by >0.5, full-text |compound| > 0.5, and sentence-level mean is near zero (|mean| < 0.05) or opposite sign, blend 70% sentence-level + 30% full-text. VADER's normalization (alpha=15, tuned for tweets) amplifies small biases in articles with 10+ sentences — business-neutral vocabulary like "risk", "pressure", "problem" can push compound to -0.85 when sentence-level mean is ~0. Only fires when VADER's *direction* is wrong; when both agree on direction (e.g. compound=-0.99, sentence_mean=-0.056), VADER's reading is preserved.
+| Trigger | Threshold |
+|---|---|
+| Raw composite tone | ≥ 0.0 (non-negative) |
+| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism)) |
+| Agency attribution | < −0.3 (passive/target of scrutiny) |
+
+**Blend:** 10% raw + 90% framing-derived estimate. The framing estimate is computed from agency, emotional intensity, and adversarial device density.
+
+**Discovery article:** NYT "Meta AI Government Review Holdout" (Jun 23, 2026) — VADER scored +0.61 on a piece that framed Meta as the sole holdout among peers refusing voluntary AI safety reviews.
+
+#### Path B: Amplification (VADER Got Direction Right but Understated)
+
+When VADER correctly identifies negative tone but the magnitude is too mild relative to the adversarial framing signal.
+
+| Trigger | Threshold |
+|---|---|
+| Raw composite tone | < 0.0 and > −0.5 (mildly negative) |
+| Adversarial framing devices | ≥ 6 (higher threshold than Path A) |
+| Agency attribution | < −0.3 |
+
+**Blend:** 50% raw + 50% framing-derived estimate. Lighter than Path A because VADER got the direction right — only nudging the magnitude.
+
+**Rationale:** A mildly negative VADER score (e.g., −0.12) on a piece with 8 adversarial framing devices and agency of −0.6 understates the editorial stance. Path B amplifies to match the structural signal.
+
+#### Path C: Embedded Adversarial Anchor
+
+Product review articles where the subject has positive agency (actively launching products) but specific anchor devices shift the reader's final impression negative.
+
+| Trigger | Threshold |
+|---|---|
+| Raw composite tone | > 0.3 (strongly positive) |
+| Anchor devices (kicker, self-referential investigation, juxtaposition) | ≥ 2 |
+| Overall adversarial count | ≥ 4 |
+| Agency attribution | ≥ 0.0 (positive — product review context) |
+
+**Blend:** 55% raw + 45% toward anchor target (0.15). The article IS partly positive, so the correction nudges toward the reader's likely takeaway rather than fully overriding.
+
+**Discovery article:** Wired glasses launch review (Jun 23, 2026) — agency +0.67, raw tone +0.67, but the kicker ("morale at an all-time low"), self-referential investigation ("WIRED discovered code suggesting facial recognition"), and juxtaposition ("consumer smart glasses… surveillance tools for the US military") anchored the reader's final impression at approximately +0.15.
+
+#### Path D: Sardonic/Mocking Framing
+
+Articles where editorial contempt is conveyed through raw word choice rather than structural framing. The subject has positive active agency (someone actively pursuing something) but the pursuit is framed as foolish, futile, or contemptible.
+
+| Trigger | Threshold |
+|---|---|
+| Raw composite tone | ≥ 0.3 |
+| Agency attribution | ≥ 0.3 (positive — key contrast to Path A) |
+| Loaded language count | ≥ 7 |
+| Overall adversarial count | ≥ 8 |
+
+**Blend:** 10% raw + 90% sardonic-derived estimate. Heavy override because VADER is maximally misled — positive agency words ("looking to start," "booming") combine with positive sentence structure to produce inflated scores while the editorial stance is unambiguously contemptuous.
+
+**Discovery article:** Kotaku Meta Arena article (Jun 28, 2026) — VADER scored +0.68 on a piece manually assessed at −0.55 to −0.65. Loaded language ("ethically rancid," "failed metaverse," "AI slop") accounted for >70% of adversarial devices — the contempt was purely lexical, not structural.
+
+#### Path E: Military Techno-Optimism Inflation
+
+Articles about military/defense technology where aspirational language inflates VADER's reading. Unlike Path A, agency is not strongly negative because the subjects ARE actively building things — the inflation comes from the content domain (warfare, weapons), not from passive framing.
+
+| Trigger | Threshold |
+|---|---|
+| Raw composite tone | ≥ 0.3 |
+| `military_techno_optimism` devices | ≥ 3 |
+| Agency attribution | < 0.0 (any negative — relaxed from −0.3) |
+
+**Blend:** 30% raw + 70% framing-derived estimate. Lighter than Path A because these are not pure adversarial pieces — the articles may include genuine technological achievements alongside critical editorial framing.
+
+**Discovery article:** MIT Tech Review Anduril/Meta smart glasses warfare article (May 18, 2026) — VADER scored +0.64 vs manual assessment of −0.10. Agency was −0.2 (too weak for Path A's −0.3 threshold). "Revolutionize the battlefield," "enhanced capabilities" inflated VADER's reading.
+
+#### Path F: Contradictory Review Framing
+
+Product reviews where the reviewer gives a positive assessment (VADER reads product-praise language as strongly positive) but wraps it in negative editorial context about privacy, ethics, or corporate behavior. Positive product language outnumbers negative editorial passages by sheer word count, drowning out the editorial stance.
+
+| Trigger | Threshold |
+|---|---|
+| Raw composite tone | ≥ 0.3 |
+| Overall adversarial count | ≥ 4 |
+| Emotional intensity | ≥ 0.5 |
+| Agency attribution | −0.4 ≤ agency < 0.0 (mixed: not fully passive) |
+| Rhetorical questions OR loaded language | ≥ 1 RQ or ≥ 3 loaded language |
+
+**Blend:** 20% raw + 80% review-derived estimate. The editorial wrapper is the dominant signal — the product praise is genuine but the article's *editorial position* is negative.
+
+**Discovery article:** Gizmodo Meta Fury review (Jun 29, 2026) — VADER scored +0.68 on a manually assessed −0.35 article. Positive product review language dominated the word count, drowning out the negative privacy/ethics editorial wrapper. Rhetorical question in the kicker undermined the positive assessment.
+
+#### Path G: VADER Long-Text Normalization
+
+Not a framing correction — this fixes a fundamental VADER math problem. VADER's compound score uses `sum / sqrt(sum² + alpha)` where `alpha=15`, tuned for tweet-length texts. For long articles (10+ sentences), this normalization amplifies small biases.
+
+| Trigger | Threshold |
+|---|---|
+| Article length | ≥ 10 sentences |
+| Full-text compound | \|compound\| > 0.5 (strong signal) |
+| Sentence-level mean | \|mean\| < 0.05 (near-zero) or opposite sign from compound |
+| Divergence | \|compound − sentence_mean\| > 0.5 |
+
+**Blend:** 70% sentence-level mean + 30% full-text compound.
+
+**Key constraint:** Only fires when VADER's *direction* is wrong (compound and sentence-level mean disagree on sign, or sentence-level is near zero). When both agree on direction, VADER's reading is preserved even if it exaggerates magnitude.
+
+**Mechanism:** Business-neutral vocabulary like "risk," "pressure," "problem" in otherwise neutral context can push full-text compound to −0.85 when the actual sentence-level sentiment is balanced around 0. The sentence-level mean, immune to the alpha normalization, provides the corrective signal.
+
+#### Path Evaluation Order and Priority
+
+The paths are evaluated in code order: **A → B → C → E → D → F**. Path G runs independently in the `analyze_composite` function before the framing correction pipeline, as it corrects VADER's input signal rather than overriding the composite output.
+
+**Only one framing path fires per article.** If Path A matches, Paths B–F are never evaluated. This prevents over-correction and ensures the strongest applicable correction takes precedence.
+
+#### Summary Table
+
+| Path | Failure Mode | Raw Tone | Agency | Key Signal | Blend |
+|---|---|---|---|---|---|
+| **A** | VADER wrong direction | ≥ 0.0 | < −0.3 | ≥3 adversarial devices | 10/90 (raw/framing) |
+| **B** | VADER understated | (−0.5, 0.0) | < −0.3 | ≥6 adversarial devices | 50/50 |
+| **C** | Anchor devices | > 0.3 | ≥ 0.0 | ≥2 anchor + ≥4 adversarial | 55/45 (raw/target) |
+| **D** | Sardonic contempt | ≥ 0.3 | ≥ 0.3 | ≥7 loaded + ≥8 adversarial | 10/90 (raw/sardonic) |
+| **E** | Military optimism | ≥ 0.3 | < 0.0 | ≥3 MTO devices | 30/70 (raw/framing) |
+| **F** | Contradictory review | ≥ 0.3 | [−0.4, 0.0) | ≥4 adversarial + ≥0.5 EI | 20/80 (raw/review) |
+| **G** | Long-text normalization | any | any | divergence > 0.5, ≥10 sentences | 30/70 (compound/sentence) |
 
 ### 9.3 Headline Framing Override
 

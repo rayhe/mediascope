@@ -1210,14 +1210,21 @@ class TestAgentGuideConsistency:
         """AGENT_GUIDE.md adversarial device list must match code."""
         code_types = self._adversarial_types_from_code()
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
-        # The list appears after "3+ adversarial framing devices detected"
+        # The list appears either as:
+        # Old: "adversarial framing devices detected (list)"
+        # New: "**Adversarial device types** (N types trigger Paths A/B): list."
         match = re.search(
             r"adversarial framing devices detected \(([^)]+)\)",
             doc,
         )
+        if not match:
+            match = re.search(
+                r"\*\*Adversarial device types\*\*[^:]*:\s*([^.]+)\.",
+                doc,
+            )
         assert match, (
             "AGENT_GUIDE.md is missing the adversarial framing devices "
-            "enumeration in the 'When Correction Fires' section."
+            "enumeration."
         )
         doc_types = set(re.findall(r"(\w+)", match.group(1)))
         # Remove stray words that aren't device types
@@ -1294,4 +1301,91 @@ class TestAgentGuideConsistency:
         assert claimed_structural == len(structural), (
             f"AGENT_GUIDE.md claims {claimed_structural} structural types "
             f"but code has {len(structural)}."
+        )
+
+
+
+class TestCorrectionPathDocumentation:
+    """Validate that all 7 sentiment correction paths (A-G) are documented
+    across METHODOLOGY.md, ARCHITECTURE.md, and AGENT_GUIDE.md.
+
+    The 7 paths are defined in ``_compute_framing_correction`` (Paths A-F)
+    and ``analyze_composite`` (Path G) in sentiment.py.  Each path has a
+    ``# --- Path X: ...`` comment in code.  These tests ensure documentation
+    stays in sync with code when paths are added, removed, or renamed.
+    """
+
+    EXPECTED_PATHS = {"A", "B", "C", "D", "E", "F", "G"}
+
+    @staticmethod
+    def _extract_code_paths():
+        """Extract path labels from sentiment.py comment markers."""
+        code = (
+            _REPO_ROOT / "mediascope" / "analyze" / "sentiment.py"
+        ).read_text()
+        # Match patterns like "# --- Path A: Full correction ..."
+        return set(re.findall(r"#\s*---\s*Path\s+([A-Z]):", code))
+
+    def test_code_has_all_expected_paths(self):
+        """sentiment.py should have comment markers for all 7 paths."""
+        code_paths = self._extract_code_paths()
+        missing = self.EXPECTED_PATHS - code_paths
+        assert not missing, (
+            f"Expected correction paths {missing} not found in sentiment.py "
+            f"comment markers. Found: {sorted(code_paths)}"
+        )
+
+    def test_methodology_documents_all_paths(self):
+        """METHODOLOGY.md section 9.2 should document all 7 correction paths."""
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        # Each path should appear as "#### Path X:" or "Path X" in text
+        documented = set(re.findall(r"(?:####\s+)?Path\s+([A-G])[\s:.]", doc))
+        missing = self.EXPECTED_PATHS - documented
+        assert not missing, (
+            f"METHODOLOGY.md is missing documentation for correction "
+            f"paths: {sorted(missing)}. Documented: {sorted(documented)}"
+        )
+
+    def test_architecture_documents_all_paths(self):
+        """ARCHITECTURE.md should reference all 7 correction paths."""
+        doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
+        documented = set(re.findall(r"Path\s+([A-G])[\s:.\|]", doc))
+        missing = self.EXPECTED_PATHS - documented
+        assert not missing, (
+            f"ARCHITECTURE.md is missing references to correction "
+            f"paths: {sorted(missing)}. Referenced: {sorted(documented)}"
+        )
+
+    def test_agent_guide_documents_all_paths(self):
+        """AGENT_GUIDE.md should reference all 7 correction paths."""
+        doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
+        documented = set(re.findall(r"Path\s+([A-G])[\s:.\|]", doc))
+        # Also check for "**G**" table format
+        table_paths = set(re.findall(r"\*\*([A-G])\*\*", doc))
+        all_documented = documented | table_paths
+        missing = self.EXPECTED_PATHS - all_documented
+        assert not missing, (
+            f"AGENT_GUIDE.md is missing references to correction "
+            f"paths: {sorted(missing)}. Referenced: {sorted(all_documented)}"
+        )
+
+    def test_summary_table_in_methodology(self):
+        """METHODOLOGY.md should have a summary table with all 7 paths."""
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        # Find the summary table by looking for "| **A**" through "| **G**"
+        table_paths = set(re.findall(r"\|\s*\*\*([A-G])\*\*\s*\|", doc))
+        missing = self.EXPECTED_PATHS - table_paths
+        assert not missing, (
+            f"METHODOLOGY.md summary table is missing paths: {sorted(missing)}. "
+            f"Table has: {sorted(table_paths)}"
+        )
+
+    def test_path_count_consistent(self):
+        """Code path count should match expected count of 7."""
+        code_paths = self._extract_code_paths()
+        assert len(code_paths) == len(self.EXPECTED_PATHS), (
+            f"Expected {len(self.EXPECTED_PATHS)} correction paths but "
+            f"code has {len(code_paths)}: {sorted(code_paths)}. "
+            f"If a path was added or removed, update EXPECTED_PATHS and "
+            f"all three documentation files."
         )
