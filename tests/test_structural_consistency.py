@@ -753,11 +753,11 @@ class TestEmotionalLanguageCount:
     """
 
     def test_emotional_language_count(self):
-        """EMOTIONAL_LANGUAGE should contain exactly 587 unique terms."""
+        """EMOTIONAL_LANGUAGE should contain exactly 612 unique terms."""
         from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
 
-        assert len(EMOTIONAL_LANGUAGE) == 587, (
-            f"Expected 587 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
+        assert len(EMOTIONAL_LANGUAGE) == 612, (
+            f"Expected 612 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
             "If you added or removed terms, update this test to the new count.\n"
             "Also check for duplicates: len(set(EMOTIONAL_LANGUAGE)) should match."
         )

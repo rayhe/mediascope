@@ -437,6 +437,27 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "exfiltrate", "exfiltrated", "exfiltrating", "exfiltration",
     "ingested", "ingesting",
     "rival", "rivals",
+    # Military conscription / coercion emotional terms — editorial prose
+    # deploying conscription, draft, and forced-labor metaphors to frame
+    # corporate workforce decisions as involuntary servitude.  Gap discovered
+    # during TechTimes Meta Applied AI "gulag" analysis (Jun 2026):
+    # emotional_intensity returned 0.3922 vs manual ~0.75, missing
+    # "conscript," "draftee," "shocked," "chaos," "discontent," "simmering."
+    "conscript", "conscripted", "conscripting", "conscripts", "conscription",
+    "draftee", "draftees",
+    "shocked", "shock",
+    "chaos",
+    "discontent",
+    "simmering",
+    "outburst",
+    "resent", "resentment",
+    "regret", "regretted",
+    "degraded visibly",
+    "petition",
+    "concession", "concessions",
+    "punishingly",
+    "keystroke", "keystrokes",
+    "involuntarily",
 ]
 
 # Passive/victim vs. active/powerful framing indicators
@@ -549,6 +570,18 @@ ACTIVE_NEGATIVE_FRAMING: list[str] = [
     "harvesting", "capturing", "extracting",
     "pushing employees", "pressuring employees",
     "factoring their use",
+    # Military conscription / involuntary reassignment — active verbs
+    # where the subject (company) performs coercive workforce actions.
+    # Gap discovered during TechTimes Meta Applied AI "gulag" analysis
+    # (Jun 2026): agency returned 0.0 because "conscript," "draft" (as
+    # standalone active verb), "reassigned" were not in any framing list.
+    "conscript", "conscripted", "conscripting", "conscripts",
+    "drafted", "drafting",
+    "reassigned", "reassigning",
+    "commandeered", "commandeering",
+    "involuntarily transferred",
+    "installing tracking", "installs tracking",
+    "seizing", "seized",
 ]
 
 # Comparative framing indicators
@@ -903,6 +936,44 @@ def _measure_headline_alignment(headline: str, body: str) -> float:
         if signal_count >= 2:
             # Strong editorial signal: treat as negative
             h_compound = -0.3 * signal_count  # scale with signal density
+            h_compound = max(-0.9, h_compound)
+
+    # --- Weak-negative headline boost ---
+    # When VADER reads a headline as weakly negative (between -0.3 and 0.0)
+    # but it contains strong editorial/military/coercion language that VADER
+    # under-weights, boost it toward the body's compound to improve magnitude
+    # alignment.  Gap discovered during TechTimes Meta Applied AI "gulag"
+    # (Jun 2026): "Conscripts" + "Revolt" → VADER -0.128, body -0.5527,
+    # alignment only 0.2316 despite perfect editorial match.
+    if -0.3 <= h_compound < -0.05:
+        headline_lower = headline.lower()
+        _HEADLINE_BOOST_SIGNALS = [
+            "conscripts", "conscript", "conscripted", "conscription",
+            "revolt", "revolts", "rebellion",
+            "gulag", "gulags",
+            "crisis", "crises",
+            "exposes", "exposed", "expose",
+            "exploits", "exploit", "exploited",
+            "slams", "slammed",
+            "fury", "furious",
+            "outrage", "outraged",
+            "chaos",
+            "drafted", "drafts",
+            "seizes", "seized",
+            "demands", "demanded",
+            "layoffs", "layoff", "fired", "fires",
+        ]
+        boost_count = sum(
+            1 for sig in _HEADLINE_BOOST_SIGNALS
+            if sig in headline_lower
+        )
+        if boost_count >= 2:
+            # Boost toward body compound — cap at body magnitude
+            boost_factor = min(0.25 * boost_count, 0.6)
+            h_compound = h_compound - boost_factor
+            # Don't overshoot body magnitude
+            if b_compound < 0:
+                h_compound = max(h_compound, b_compound)
             h_compound = max(-0.9, h_compound)
 
     # Treat very small magnitudes as neutral to prevent sign-flip artifacts
@@ -1455,7 +1526,12 @@ def analyze_composite(text: str, headline: str = "") -> SentimentResult:
         if h_compound <= 0.05:
             # Both headline and (corrected) body are negative — good alignment
             # Scale by how negative the headline is (stronger = more aligned)
-            alignment = round(min(abs(h_compound) * 2.0, 0.9), 4) if h_compound < -0.05 else 0.3
+            corrected_alignment = round(min(abs(h_compound) * 2.0, 0.9), 4) if h_compound < -0.05 else 0.3
+            # Keep the better of the original alignment (which benefits from
+            # headline boost for under-read loaded terms) and the corrected
+            # alignment.  Without this max(), the weak-negative boost from
+            # _measure_headline_alignment is thrown away by the recalculation.
+            alignment = max(alignment, corrected_alignment)
 
     return SentimentResult(
         overall_tone=overall_tone,

@@ -110,6 +110,7 @@ _NAME_STOP_FIRST_WORDS: set[str] = {
     "Already", "Perhaps", "Maybe", "Certainly",
     # Short common words that look like names when capitalized
     "Any", "All", "Our", "His", "Her", "Its", "The",
+    "They", "We", "You",
     # Day names — "on Thursday argues" should not extract "Thursday" as source
     "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
     "Saturday", "Sunday",
@@ -156,6 +157,14 @@ _NAME_STOP_NAMES: set[str] = {
     # Book/media titles that look like "First Last"
     "Careless People", "Brave New", "Dark Web",
     "Social Dilemma", "Social Network", "Deep State",
+    # Government agency / regulatory body partial names
+    "Relations Board", "Labor Relations", "National Labor",
+    "Trade Commission", "Federal Trade", "Federal Communications",
+    "Securities Exchange", "Exchange Commission",
+    # Publication names that match "First Last" name pattern
+    "Business Insider", "Tech Review", "Technology Review",
+    "Daily Beast", "Daily Mail", "Morning Post",
+    "Evening Standard",
 }
 
 # Anonymous source indicators
@@ -673,18 +682,18 @@ def extract_sources(text: str) -> list[SourceMention]:
         # Unnamed/unidentified source descriptor patterns — common in tech/workplace reporting
         re.compile(r"\ban? unnamed (?:worker|employee|executive|official|source|person|staffer|engineer)", re.IGNORECASE),
         re.compile(r"\ban? (?:second|third|fourth|another) (?:worker|employee|source|person|engineer)", re.IGNORECASE),
-        re.compile(r"\b(?:one|another|a) (?:worker|employee|engineer|staffer) (?:said|told|called|described|complained)", re.IGNORECASE),
-        re.compile(r"\ban? (?:worker|employee|engineer|staffer) (?:was quoted|was reported)", re.IGNORECASE),
-        re.compile(r"\b(?:some|several|multiple|many) (?:workers|employees|engineers|staffers|people) (?:said|told|described|called|complained|say|tell)", re.IGNORECASE),
+        re.compile(r"\b((?:one|another|a) (?:worker|employee|engineer|staffer)) (?:said|told|called|described|complained)", re.IGNORECASE),
+        re.compile(r"\b(an? (?:worker|employee|engineer|staffer)) (?:was quoted|was reported)", re.IGNORECASE),
+        re.compile(r"\b((?:some|several|multiple|many) (?:workers|employees|engineers|staffers|people)) (?:said|told|described|called|complained|say|tell)", re.IGNORECASE),
         # Role-descriptor + attribution verb patterns — common in tech/workplace
         # reporting where anonymous sources are described by job role:
         # "a policy staffer says", "a legal staffer adds", "the Instagram employee says"
         re.compile(
-            r"\b(?:an?|the|one|another)"
+            r"\b((?:an?|the|one|another)"
             r" (?:[A-Za-z]+[ -])?"  # optional adjective/org name: "policy", "Meta", "longtime"
             r"(?:[A-Za-z]+[ -])?"   # second optional adjective: "senior", "current"
             r"(?:worker|employee|staffer|engineer|executive|official|leader|manager|person|researcher|analyst|source|spokesperson|spokeswoman|spokesman)"
-            r"(?:\s+(?:who\s+works?\s+(?:on|at|in|for)\s+\w+|at\s+\w+|inside\s+\w+))?"  # optional "who works on X" / "at X"
+            r"(?:\s+(?:who\s+works?\s+(?:on|at|in|for)\s+\w+|at\s+\w+|inside\s+\w+))?)"  # optional "who works on X" / "at X"
             r"\s+(?:" + verb_alternation + r")\b",
             re.IGNORECASE,
         ),
@@ -692,11 +701,11 @@ def extract_sources(text: str) -> list[SourceMention]:
         # "says a policy staffer", "says an employee who works on Instagram"
         re.compile(
             r"\b(?:" + verb_alternation + r")"
-            r"\s+(?:an?|the|one|another)"
+            r"\s+((?:an?|the|one|another)"
             r" (?:[A-Za-z]+[ -])?"
             r"(?:[A-Za-z]+[ -])?"
             r"(?:worker|employee|staffer|engineer|executive|official|leader|manager|person|researcher|analyst|source|spokesperson|spokeswoman|spokesman)"
-            r"(?:\s+(?:who\s+works?\s+(?:on|at|in|for)\s+\w+|at\s+\w+|inside\s+\w+))?",
+            r"(?:\s+(?:who\s+works?\s+(?:on|at|in|for)\s+\w+|at\s+\w+|inside\s+\w+))?)",
             re.IGNORECASE,
         ),
         # "People who requested/declined/asked for anonymity"
@@ -786,7 +795,12 @@ def extract_sources(text: str) -> list[SourceMention]:
 
     for pat in anon_patterns:
         for m in pat.finditer(text):
-            descriptor = m.group().strip()
+            # Use captured group(1) if available (strips trailing verb),
+            # otherwise fall back to full match.
+            try:
+                descriptor = (m.group(1) or m.group()).strip()
+            except IndexError:
+                descriptor = m.group().strip()
             # Use the descriptor as a unique key
             if descriptor.lower() in {n.lower() for n in seen_names}:
                 continue
