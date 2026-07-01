@@ -152,7 +152,8 @@ ownership_chain:
       - Steven O. Newhouse (b. ~1957): Chairman & Co-President of Advance Publications. Serves on Reddit board
         as Advance Designee. Resigned from WBD board March 29, 2024.
       - Michael Andrew Newhouse: Advance board member. AP (Associated Press) board member since 2017.
-      - Samuel I. Newhouse III: Advance board member.
+        Syracuse University trustee.
+      - Samuel I. Newhouse III: Advance board member. Advance Long-Term Trust trustee.
       - Katherine Irene Newhouse: Donald's daughter.
       Family office serves 35 adult households and 100+ individual family members (per LinkedIn profile
       of former CIO, Institutional Investor reporting).
@@ -161,8 +162,28 @@ ownership_chain:
       Donald's $75M donation to Syracuse University's S.I. Newhouse School of Public Communications (Jan 2020).
       $20M donation to Association for Frontotemporal Degeneration (Mar 2021).
       Forbes family wealth estimate: $25B+ (historically varied; $18.5B in 2016, $26B per Bloomberg in 2024).
-    source_url: "https://en.wikipedia.org/wiki/Donald_Newhouse"
-    nyt_obituary_url: "https://www.nytimes.com/2026/05/26/business/donald-newhouse-dead.html"
+      LEGAL OWNERSHIP STRUCTURE (per Charter Communications DEF 14A, Reddit 2025 proxy, SEC filings):
+      Newhouse Family Holdings, L.P. ("NFH") owns 100% of Advance Publications, Inc. ("API").
+      Advance Long-Term Trust Management Trust is the SOLE GENERAL PARTNER of NFH — meaning this trust
+      makes all control decisions for the entire Advance empire. Trustees: Samuel I. Newhouse III,
+      Steven O. Newhouse, Michael A. Newhouse, Victor F. Ganzi, and Peter C. Gould. These 5 individuals
+      collectively control the trust that controls the LP that controls API that controls Condé Nast,
+      Reddit stake, Charter stake, WBD stake, and all other Advance assets. NOTE: The trust structure
+      means Donald's death does NOT trigger any change in the legal GP or trustees — succession was
+      already completed at the trust level. No probate-driven disruption to corporate control.
+      SUCCESSION ANALYSIS: Donald was president of Advance Publications (per Wikipedia, AP obituary) but
+      the Advance Long-Term Trust already had third-gen trustees in place. His death removes the final
+      patriarchal oversight but does NOT change the trust's composition. Steven O. Newhouse has been the
+      operational leader since at least 2017 (when Si died). The Reddit credit facility (reported 17 days
+      after Donald's death) and the accelerated monetization of WBD shares suggest the third generation
+      is more financially active than their father's generation.
+    source_urls:
+      - "https://en.wikipedia.org/wiki/Donald_Newhouse"
+      - "https://www.nytimes.com/2026/05/26/business/donald-newhouse-dead.html"
+      - "https://www.thewrap.com/culture-lifestyle/culture/donald-newhouse-dies-advance-publications-conde-nast-owner/"
+      - "https://www.barchart.com/story/news/newspaper-publisher-ap-board-chairman-donald-newhouse-dies-96"
+      - "https://news.syr.edu/2026/05/university-mourns-passing-donald-newhouse/"
+      - "https://www.editorandpublisher.com/stories/donald-e-newhouse-low-profile-heir-to-a-media-empire-dies-at-96/"
 
 # ===================================================================
 # ADVANCE PUBLICATIONS INVESTMENT PORTFOLIO — with current valuations
@@ -234,10 +255,35 @@ advance_investments:
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
     current_value_estimate: >
-      ~$7.34B at $173.97/share (Jun 29, 2026 intraday). Reddit market cap ~$32.1B.
+      ~$7.34B at $173.58/share (Jul 1, 2026). Reddit market cap ~$33.4B.
       Reddit now ~57-60% of Advance's public equity. 42,207,274 total shares ×
-      $173.97 = $7.34B. Up from ~$7.04B at Jun 26 close ($166.94). RDDT up +4.2%
-      today (Jun 29). 52-week range $119.27-$282.95. Beta 2.06.
+      $173.58 = $7.32B. 52-week range $119.27-$282.95. Beta 2.07.
+    credit_facility_monetization: >
+      REDDIT MARGIN LOAN (reported Jun 12, 2026, Bloomberg Law): Advance Magazine Publishers Inc.
+      — the specific Advance subsidiary that directly holds the Reddit shares — is establishing
+      a credit facility using 7.8 million Reddit shares (~18.5% of its 42.2M Reddit holding)
+      as collateral. Share offering price range: $145.38 to $148.54 each, valued at up to $1.2B.
+      This represents an ~8% discount to Reddit's then-closing price of $158.02.
+      DERIVATIVES COMPONENT: Advance is simultaneously purchasing derivatives on the same shares.
+      This is a classic variable prepaid forward (VPF) / collar structure — Advance receives
+      upfront cash while retaining economic exposure to Reddit upside (via the derivatives)
+      AND retaining voting control (shares are pledged as collateral, not sold). The VPF allows
+      Advance to monetize $1.2B of its Reddit position without triggering a taxable sale event
+      and without reducing its 42.2M share count or its 62.0% voting power.
+      TIMING SIGNIFICANCE: The credit facility was reported ~17 days after Donald Newhouse's death
+      (May 26, 2026). While it may have been in planning before his passing, the timing suggests
+      third-generation Newhouse leadership is actively managing liquidity. Combined with the
+      $1.1B WBD share sale (Jun 2024), Advance has extracted or collateralized ~$2.3B from its
+      public equity holdings within 12 months — a notable acceleration of monetization activity
+      for a historically conservative family office. The derivatives purchase is particularly
+      noteworthy: it suggests Advance is NOT bearish on Reddit (they'd simply sell if they were)
+      but rather needs current liquidity while maintaining long-term upside exposure.
+      CONFLICT IMPLICATION: The margin loan deepens Advance's financial entanglement with Reddit.
+      A Reddit stock decline would trigger margin calls, creating pressure to either inject more
+      collateral or sell shares. This makes Advance MORE sensitive to Reddit's stock price,
+      not less — intensifying the undisclosed conflict when Wired covers Meta (Reddit's competitor).
+    credit_facility_source_urls:
+      - "https://news.bloomberglaw.com/advance-plans-to-borrow-against-1-2-billion-reddit-stake"
     q1_2026_financials: >
       Q1 2026: Revenue $663.41M (+69.1% YoY), EPS $1.01 (vs $0.13 YoY, +677%).
       Beat consensus: revenue +8.03%, EPS +62.9%. Beat consensus all 4 trailing quarters.
@@ -418,19 +464,33 @@ advance_investments:
         July 7 to July 21 (10 working days extension). Earlier concern about children's TV assets is
         now off the table — no issues on that front. European cinema operators had expressed concerns
         about combined film distribution power. David Ellison targeting July 15 close.
-      - REGULATORY STATUS (Jun 30): DOJ cleared (Jun 19). EU Phase I deadline July 22 (extended from
-        July 7 via UIP divestiture remedy submission; Paramount discussing remedies package with EC).
+      - REGULATORY STATUS (Jul 1): DOJ cleared (Jun 19). EU Phase I deadline July 22 (extended from
+        July 7 via UIP divestiture remedy submission; Paramount discussing remedies package with EC;
+        EU Commission expected to approve without objection per analysts).
         UK: Culture Secretary Lisa Nandy issued "minded to intervene" notice on Jun 30, citing media
         plurality and streaming concerns — July 6 deadline for company responses. If she proceeds,
         deal goes to Ofcom + CMA review (could take up to 24 weeks). CMA already launched its own
         antitrust investigation with Aug 7 decision deadline. UK intervention is significant because
-        CMA blocked Microsoft/Activision in 2023 before concessions were made. SEPARATE EU Foreign
-        Subsidies Regulation investigation (Saudi PIF, Abu Dhabi L'imad, Qatar IA backing the bid) —
-        expected unconditional approval. Also cleared by South Africa, China, Australia, NZ, Saudi Arabia,
-        Ukraine, Serbia, North Macedonia + FDI authorities in Spain, Germany, Slovenia, Belgium, Czechia,
-        Italy, France, Romania. Canada: no statutory impediment after Competition Act waiting period expired.
-        NY, CA, and other states preparing separate lawsuit to block deal — CA AG Rob Bonta (Jun 28):
-        "red flags in the air everywhere," decision "in the coming weeks." Could delay close into fall.
+        CMA blocked Microsoft/Activision in 2023 before concessions were made. CNN reports the UK
+        review could trigger a $627M/quarter ticking fee (~$7M/day) for WBD shareholders if the deal
+        doesn't close by Sept 30, adding $0.25/share per quarter. Paramount says deal poses no UK
+        media plurality issues. Law firm Slaughter & May partner William Turtle noted the step was
+        "carefully considered" given "the profile of the transaction and the potential political
+        ramifications." If Nandy proceeds, Ofcom and CMA get a 40-day initial review period that
+        could extend to a full investigation of up to 24 weeks. UK assets at stake: Channel 5
+        (Paramount), CNN International (Warner). Streaming services Paramount+ and HBO Max have
+        small UK market share (~6% combined "other" bucket per 2025 Ofcom report vs Netflix 59%).
+        Nandy said she would introduce secondary legislation to cover streamers if needed.
+        SEPARATE EU Foreign Subsidies Regulation investigation (Saudi PIF, Abu Dhabi L'imad, Qatar IA
+        backing the bid) — expected unconditional approval. Also cleared by South Africa, China,
+        Australia, NZ, Saudi Arabia, Ukraine, Serbia, North Macedonia + FDI authorities in Spain,
+        Germany, Slovenia, Belgium, Czechia, Italy, France, Romania. Canada: no statutory impediment
+        after Competition Act waiting period expired. FCC chair Brendan Carr: "we will go where
+        the facts take us based on those reviews" (re: Middle Eastern financing).
+        NY, CA, and other state AGs preparing separate lawsuit to block deal — CA AG Rob Bonta (Jun 28):
+        "red flags in the air everywhere," decision "in the coming weeks." Analysts expect state AG
+        suit filing this summer. Could delay close into fall. Paramount executives have argued an
+        antitrust suit by the states would be meritless.
       - DEAL PROTECTIONS: If transaction does not close by Sept 30, 2026, WBD shareholders receive
         $0.25/share "ticking fee" per quarter (~$627.5M/quarter per Morningstar estimate based on
         ~192M WBD shares × $30 × 0.25/4 + overhead). If deal fails due to regulatory matters,
@@ -440,7 +500,7 @@ advance_investments:
       realized from June 2024 sale = ~$4.04B total from WBD investment. This would be Advance's largest
       single liquidity event since the Reddit IPO and could significantly alter the family office's capital
       allocation and media strategy.
-    current_value_estimate: "~$2.62B remaining at market ($26.74 Jun 27 close) or ~$2.94B at Paramount tender ($30/share) + $1.1B already realized = ~$3.72-4.04B total"
+    current_value_estimate: "~$2.61B remaining at market ($26.66 Jul 1) or ~$2.94B at Paramount tender ($30/share) + $1.1B already realized = ~$3.71-4.04B total. WBD market cap $67.0B."
     competitive_with: ["Meta (streaming/content)"]
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse+programming&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
     source_urls:

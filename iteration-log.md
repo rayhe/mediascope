@@ -4,6 +4,81 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-01 04:00 PT — Type C: Ownership & Funding Deep Dive — Advance Reddit Credit Facility + Newhouse Succession Structure + WBD UK Intervention Update
+
+**Focus:** Three ownership/funding developments for Wired/Advance profile: (1) Advance's $1.2B Reddit margin loan via variable prepaid forward, (2) Advance Long-Term Trust legal ownership structure from SEC filings, (3) WBD/Paramount UK "minded to intervene" notice detail expansion.
+
+### Finding 1: Reddit Credit Facility (Bloomberg Law, Jun 12, 2026)
+
+Advance Magazine Publishers Inc. — the specific subsidiary that directly holds Reddit shares — is establishing a credit facility using 7.8 million Reddit shares (~18.5% of its 42.2M total holding) as collateral. Key details:
+
+| Detail | Value |
+|--------|-------|
+| Shares pledged | 7.8M (of 42.2M total) |
+| Price range | $145.38 – $148.54/share |
+| Value | Up to $1.2B |
+| Discount to market | ~8% (Reddit closing $158.02 at time of report) |
+| Derivatives | Advance simultaneously purchasing derivatives on same shares |
+
+**Analytical significance:**
+1. **Variable prepaid forward (VPF) structure:** Classic monetization-without-selling. Advance gets upfront cash, retains voting control (shares pledged not sold), retains economic upside (derivatives), and avoids taxable sale event.
+2. **Timing:** Reported ~17 days after Donald Newhouse's death (May 26). Combined with $1.1B WBD share sale (Jun 2024), Advance has extracted or collateralized ~$2.3B from public equity within 12 months. This is a notable acceleration for a historically conservative family office.
+3. **Conflict deepening:** Margin loan makes Advance MORE price-sensitive to Reddit stock (margin calls possible on decline), intensifying the undisclosed conflict when Wired covers Meta.
+4. **Not bearish:** The derivatives purchase shows Advance wants continued Reddit upside exposure — they'd sell outright if bearish.
+
+### Finding 2: Advance Long-Term Trust Ownership Structure (SEC Filings)
+
+Traced the complete legal ownership chain from Charter Communications DEF 14A and Reddit 2025 proxy:
+
+```
+Advance Long-Term Trust Management Trust (SOLE GP)
+  └── Newhouse Family Holdings, L.P. ("NFH") (100% ownership)
+       └── Advance Publications, Inc. ("API")
+            ├── Condé Nast (including Wired)
+            ├── Advance Magazine Publishers Inc. (Reddit shares holder)
+            ├── Advance Local (newspapers)
+            └── Other subsidiaries
+```
+
+**Trustees of Advance Long-Term Trust:** Samuel I. Newhouse III, Steven O. Newhouse, Michael A. Newhouse, Victor F. Ganzi, Peter C. Gould.
+
+**Key insight:** Donald's death does NOT change the trust composition — succession was already completed at the trust level. No probate-driven disruption to corporate control. Steven O. Newhouse has been the operational leader since at least 2017.
+
+### Finding 3: WBD/Paramount UK Intervention Expansion (Jun 30 – Jul 1, 2026)
+
+Updated the regulatory status section with detailed findings from CNN, Reuters, and Devdiscourse:
+
+| Detail | Finding |
+|--------|---------|
+| Ticking fee | $627M/quarter (~$7M/day) if deal doesn't close by Sept 30 |
+| UK assets | Channel 5 (Paramount), CNN International (Warner) |
+| UK market share | Paramount+ + HBO Max in "other" bucket (6% combined) vs Netflix 59% |
+| Ofcom review | 40-day initial, could extend to 24 weeks |
+| Slaughter & May view | "Carefully considered" given "profile of the transaction" |
+| Secondary legislation | Nandy willing to introduce new law to cover streamers |
+| State AGs | Expected to file suit "this summer" per analysts |
+| FCC chair | "We will go where the facts take us" re: Middle Eastern financing |
+| Paramount position | "Does not pose any media plurality issues" |
+
+### Stats (post-iteration)
+- Tests: 1066 (all passing, no regressions)
+- Wired profile: +92 lines, -16 lines (net +76)
+- Files changed: 1 (profiles/wired.yaml)
+- Commit: pending
+
+### Sources
+- https://news.bloomberglaw.com/advance-plans-to-borrow-against-1-2-billion-reddit-stake
+- https://en.wikipedia.org/wiki/Donald_Newhouse
+- https://www.thewrap.com/culture-lifestyle/culture/donald-newhouse-dies-advance-publications-conde-nast-owner/
+- https://www.barchart.com/story/news/newspaper-publisher-ap-board-chairman-donald-newhouse-dies-96
+- https://news.syr.edu/2026/05/university-mourns-passing-donald-newhouse/
+- https://www.editorandpublisher.com/stories/donald-e-newhouse-low-profile-heir-to-a-media-empire-dies-at-96/
+- https://www.sec.gov/Archives/edgar/data/1713445/000171344525000092/rddt-20250428.htm (Reddit 2025 DEF 14A)
+- https://www.sec.gov/cgi-bin/browse-edgar?company=advance+magazine (Advance SEC filings)
+- https://www.cnn.com/2026/06/30/media/uk-paramount-warner-bros-discovery-merger (CNN UK intervention)
+- https://www.reuters.com/media-telecom/uk-may-intervene-in-110-billion-paramount-wbd-deal (Reuters UK intervention)
+
+
 ## 2026-06-30 17:00 PT — Type D: Toolkit Quality — Stale Count Cascade Fix + 4 New Structural Guards
 
 **Focus:** Cross-doc stale count audit found 3 categories of documentation drift that survived because existing guards validated canonical declarations but not secondary inline references. Fixed all stale references and added 4 new test guards to prevent recurrence.
@@ -8997,3 +9072,48 @@ Addresses the #1 open issue from the prior iteration (Malwarebytes article). Det
 - **Speculative language calibration for regulatory speech genre:** 0.85 is very high but genre-appropriate for forward-looking policy speech articles — may need genre-aware weighting.
 - **Causal blame chain framing** (from prior iteration) — still open.
 - **Compound-adjective matching for pathologizing_metaphor** ("-hungry" compounds) — still open.
+
+
+---
+
+## 2026-07-01 03:00 PT — Type A: Article Deep Dive
+
+### Article
+Guardian long-read profile: "'There's this deep mystery of what, actually, is this thing?': the philosopher inside Google DeepMind" (Iason Gabriel, ~7,500 words, Jun 28 2026)
+
+### Focus
+Interview-heavy profile article exposing ironic_quotation false positives from attributed direct speech, missing AI ethics/safety topic bucket, and sentiment Path D overcorrection on sympathetic profiles.
+
+### Changes
+1. **Ironic quotation attribution filters (framing.py):** Three new filters reduce false positives by 54% (24→11):
+   - Short-quote attribution filter: checks 80-char lookback for attribution verbs + 50-char lookahead for post-quote attribution
+   - Long-quote attribution expansion: added "calls", "called", "describes as", "what he/she/they call"; expanded lookback 60→80 chars
+   - Structural transition filter: suppresses pattern-0 matches starting with sentence boundary or containing attribution verbs
+
+2. **New `ai_ethics_safety` topic bucket (topics.py):** 22nd topic bucket with 32 keywords covering alignment, safety, ethics, and governance. Correctly classifies the article (0.30 confidence) that previously had no relevant topic match.
+
+3. **Sentiment Path D overcorrection documented:** Path D (sardonic) fires on this sympathetic profile because domain vocabulary ("catastrophic", "existential risk") inflates loaded_language/adversarial counts. Raw 0.64 → overcorrected -0.52 vs manual +0.40/+0.55. Future fix: discount domain vocabulary when topic is ai_ethics_safety.
+
+### Stats
+- Tests: 1062 → 1066 (all passing)
+- Topic buckets: 21 → 22
+- Commit: 265f07f, pushed to GitHub
+
+### Files Changed
+- `mediascope/analyze/framing.py` — 3 new ironic_quotation filters (+95 lines)
+- `mediascope/analyze/topics.py` — ai_ethics_safety bucket (+29 lines)
+- `tests/test_topics.py` — 2 new tests for ai_ethics_safety
+- `tests/test_structural_consistency.py` — topic count assertions 21→22
+- `docs/METHODOLOGY.md` — topic count, table row, design note
+- `docs/ARCHITECTURE.md` — topic count and list
+- `docs/AGENT_GUIDE.md` — topic count and list
+- `README.md` — test count and description
+- `examples/sample_output/guardian_deepmind_philosopher_gabriel_2026_06_article.txt` — new
+- `examples/sample_output/guardian_deepmind_philosopher_gabriel_2026_06_analysis.md` — new
+
+### Open Issues (Future Iterations)
+- **Path D sentiment overcorrection on profile articles:** loaded_language/catastrophizing from AI safety domain vocabulary inflates adversarial count. Need domain-aware discounting or genre detection (profile vs investigation).
+- **product_launch false positives in non-product articles:** Generic words ("launched", "released", "announced") fire on research papers, projects, initiatives. Needs semantic context.
+- **Named individual entity detection:** 24 named individuals missed in this article including the central subject. NER integration (spaCy) would fix this but is out of scope.
+- **Wire service ironic_quotation false positives:** (from prior iteration) — still open.
+- **Government/regulatory entity extraction gap:** (from prior iteration) — still open.
