@@ -9207,3 +9207,40 @@ Fix self-referential test counting bug and stale doc headers.
 ### Open Issues (Future Iterations)
 - **test_readme_test_topics_description_says_16 misleading name:** Test name references "16" but validates count of 22. Cosmetic, no logic bug.
 - **METHODOLOGY.md line 222 stale assertion message:** Error text says "Should be 17" but assertion itself correctly checks 22. Cosmetic.
+
+---
+
+## Iteration: 2026-07-01 08:00 PT — Type A: Article Deep Dive
+
+**Article:** Memeburn, "Meta's Qualcomm Deal Shows Why AI Infrastructure Is Going Multi-Vendor" (~Jun 29, 2026)
+**Commit:** c4345db
+
+### What Changed
+
+1. **VADER long-text normalization fix** (`sentiment.py`, +55 lines)
+   - Problem: VADER compound = -0.85 on a neutral/positive tech-business article. Sentence-level mean was ~0.006.
+   - Root cause: VADER's normalization (alpha=15) amplifies small biases in long texts (48 sentences). "risk", "pressure", "problem" are business-neutral but VADER-negative.
+   - Fix: sentence-level VADER aggregation as fallback. Fires only when full-text |compound| > 0.5, sentence mean near zero or opposite sign, divergence > 0.5. Does NOT fire when both agree on direction (Gizmodo: compound=-0.99, sentence_mean=-0.056, both negative).
+   - Before: overall_tone = -0.4824. After: -0.1245.
+
+2. **Semiconductor entity clusters** (`entities.py`, +40 lines)
+   - Added 6 clusters: Qualcomm, Intel, AMD, TSMC, Arm, Broadcom with aliases, leaders, and product lines.
+   - Qualcomm was the article's co-subject (14 mentions) but invisible before. Intel, AMD, Arm also detected.
+   - Arm regex carefully constrained to avoid false positives on common word "arm".
+
+3. **`source_publication` for self_referential_investigation** (`framing.py`, +48 lines)
+   - "Bloomberg reported" in a Memeburn article is cross-publication citation, not self-referential investigation.
+   - Added `source_publication: str | None = None` param to `detect_framing_devices()`.
+   - Post-filters self_referential matches when set. Reflexive patterns ("our investigation") always kept.
+   - Backward compatible (None = no filter, all callers unchanged).
+
+### Stats After
+- Tests: 1071 passed, 0 failed
+- Entity clusters: 21 (was 15)
+- Framing device types: 49 (unchanged count, improved precision on self_referential_investigation)
+- Sentiment correction paths: 7 (was 6 — added path G: long-text VADER)
+- Sample outputs: 132 files
+
+### Open Issues (Future Iterations)
+- **test_readme_test_topics_description_says_16 misleading name:** Test name references "16" but validates count of 22. Cosmetic, no logic bug.
+- **METHODOLOGY.md line 222 stale assertion message:** Error text says "Should be 17" but assertion itself correctly checks 22. Cosmetic.
