@@ -9566,3 +9566,57 @@ Checked for Anthropic (confidential IPO filing, no confirmed EC investment). Wor
 - Atlantic profile: 1,132 → 1,194 lines (+62)
 - Tests: 1,125 passed, 2 xfailed (unchanged)
 - Sources: SEC EDGAR, Cult of Mac, Bloomberg Billionaires Index, PitchBook, Wikipedia, NewsGuild
+
+---
+
+## 2026-07-01 15:00 PT — Type D: Toolkit Quality — Sentiment Correction Path Documentation (A–G)
+
+### Focus
+The 7 sentiment correction paths (A–G) were incompletely documented: METHODOLOGY.md §9.2 was missing Path B (Amplification) and Path F (Contradictory review framing), had no structured reference tables, and no summary table. ARCHITECTURE.md had only a generic flowchart with no individual path detail. AGENT_GUIDE.md said "see METHODOLOGY.md §9" with no path-specific guidance. No structural test validated documentation completeness.
+
+### Problem
+
+The correction paths are a core differentiator — they solve VADER's systematic positive-bias on professional editorial prose across 7 distinct failure modes, each discovered through real article analysis. But 2 of 7 paths were undocumented, and the remaining 5 were described in running prose without trigger conditions, blend ratios, or discovery articles.
+
+### Changes
+
+**METHODOLOGY.md §9.2 (major rewrite):**
+- Replaced generic prose with individual `#### Path X:` sections for all 7 paths
+- Each path now has: trigger condition table, blend ratio, design rationale, and discovery article
+- Added summary table with all paths' failure modes, raw tone thresholds, agency thresholds, key signals, and blend ratios
+- Added "Path Evaluation Order and Priority" section explaining A→B→C→E→D→F evaluation order and one-path-per-article rule
+- Preserved adversarial device type set enumeration (required by structural consistency test)
+
+**ARCHITECTURE.md:**
+- Replaced generic flowchart with path-aware ASCII diagram showing Path G (pre-correction) and Paths A–F (framing router with fan-out)
+- Added reference table with all 7 paths (failure mode, key trigger, blend ratio)
+- Cross-referenced METHODOLOGY.md §9.2 for full detail
+
+**AGENT_GUIDE.md:**
+- Replaced "When Correction Fires" section with correction path reference table
+- Each path has agent-actionable guidance: "Full override — trust corrected score, not raw" (Path A), "Magnitude adjustment" (Path B), "Mixed article" (Path C), etc.
+- Added validated examples table with path annotations (7 articles across 5 paths)
+- Separated adversarial device types (14) and anchor device types (3) into standalone reference paragraphs
+
+**sentiment.py:**
+- Added `# --- Path G:` comment marker to `analyze_composite` for consistency with Paths A–F markers in `_compute_framing_correction`
+
+**test_structural_consistency.py — TestCorrectionPathDocumentation (6 tests):**
+
+| Test | What It Validates |
+|------|-------------------|
+| `test_code_has_all_expected_paths` | sentiment.py has `# --- Path X:` markers for all 7 paths |
+| `test_methodology_documents_all_paths` | METHODOLOGY.md references all 7 paths (A–G) |
+| `test_architecture_documents_all_paths` | ARCHITECTURE.md references all 7 paths |
+| `test_agent_guide_documents_all_paths` | AGENT_GUIDE.md references all 7 paths |
+| `test_summary_table_in_methodology` | METHODOLOGY.md summary table has `| **X** |` entries for all 7 paths |
+| `test_path_count_consistent` | Code path count equals expected count of 7 |
+
+Also updated `test_agent_guide_adversarial_list_complete` regex to match new AGENT_GUIDE format (fallback from old `adversarial framing devices detected (...)` to new `**Adversarial device types** ...: list.` format).
+
+### Stats Update
+- Tests: 1127 → 1133 (1131 passed + 2 xfailed)
+- Test files: 43 (unchanged)
+- Sentiment correction paths documented: 5 → 7 (added Path B Amplification, Path F Contradictory review)
+- METHODOLOGY.md §9.2 expanded from ~30 lines to ~130 lines
+- Commit: `5107433`, pushed to GitHub
