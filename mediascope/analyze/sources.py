@@ -468,6 +468,41 @@ def extract_sources(text: str) -> list[SourceMention]:
             attribution_verb="according to",
         ))
 
+    # Pattern 3a: "according to [title/descriptor] [Name]"
+    # Handles modifiers between "according to" and the name, e.g.:
+    # "According to veteran cybersecurity reporter Brian Krebs"
+    # "according to former Meta employee Jane Manchun Wong"
+    according_to_titled = re.compile(
+        r"\b[Aa]ccording to "
+        r"(?:[a-z][\w-]+ ){1,5}"  # 1-5 lowercase descriptor words
+        r"([A-Z][a-z]+ (?:[A-Z][a-z]+ )?[A-Z][a-z]+)\b",
+    )
+    for m in according_to_titled.finditer(text):
+        name = m.group(1).strip()
+        if name in seen_names:
+            continue
+
+        first_word = name.split()[0]
+        if first_word in _NAME_STOP_FIRST_WORDS:
+            continue
+        if name in _NAME_STOP_NAMES:
+            continue
+
+        seen_names.add(name)
+
+        ctx_start = max(0, m.start() - 100)
+        ctx_end = min(len(text), m.end() + 100)
+        context = text[ctx_start:ctx_end]
+
+        sources.append(SourceMention(
+            name=name,
+            is_anonymous=False,
+            is_expert=_is_expert_by_title(context),
+            affiliation=_extract_affiliation(context),
+            quote="",
+            attribution_verb="according to",
+        ))
+
     # Pattern 3b: "[Name] has/have/had [verb]" — auxiliary + main verb
     # Catches: "Angelos Arnis has dubbed", "Will Manidis had argued",
     # "Joe Weisenthal has noted"

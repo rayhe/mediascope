@@ -28,6 +28,20 @@ from typing import Any, Union
 
 logger = logging.getLogger(__name__)
 
+# ---------------------------------------------------------------------------
+# Homograph disambiguation: aliases that are also common English words.
+# Each key is a lowercased alias; the value is a compiled negative-context
+# regex that, if it matches text[end:end+30], indicates verb/adjective usage
+# rather than a proper-noun entity reference.
+# ---------------------------------------------------------------------------
+_HOMOGRAPH_VERB_FILTERS: dict[str, re.Pattern] = {
+    # "wired" the verb: "wired into/to/for/in/up/together/through/the"
+    "wired": re.compile(
+        r"\s+(?:into|to|for|in|up|together|through|the|its|their|his|her)\b",
+        re.IGNORECASE,
+    ),
+}
+
 # Type alias — clusters accept either format; code normalizes to dict format.
 ClusterEntry = Union[dict[str, Any], list[str]]
 ClusterDict = dict[str, ClusterEntry]
@@ -529,6 +543,18 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         ],
         "regex": r"(?<!\w)(Australia(?:n(?:\s+government)?)?|eSafety Commissioner)(?!\w)",
     },
+    "Cybersecurity/Research": {
+        "aliases": [
+            "Brian Krebs", "Krebs",
+            "Jane Manchun Wong",
+            "Troy Hunt",
+            "Bruce Schneier", "Schneier",
+            "Mudge", "Peiter Zatko",
+            "METR",
+            "CISA",
+            "NIST",
+        ],
+    },
 }
 
 
@@ -721,6 +747,13 @@ def detect_entities(
                 for cov_start, cov_end in covered
             ):
                 continue
+
+            # Disambiguate homographs (e.g. "wired" verb vs WIRED pub)
+            matched_lower = match.group().lower()
+            if matched_lower in _HOMOGRAPH_VERB_FILTERS:
+                lookahead = text[end : end + 30]
+                if _HOMOGRAPH_VERB_FILTERS[matched_lower].match(lookahead):
+                    continue
 
             covered.append((start, end))
             context = _extract_sentence(text, start, end)

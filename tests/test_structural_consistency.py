@@ -205,10 +205,10 @@ class TestTopicBucketConsistency:
     """Guard: topic bucket counts match across code and docs."""
 
     def test_topic_count_in_code(self):
-        """Code should define exactly 20 topic buckets."""
+        """Code should define exactly 21 topic buckets."""
         from mediascope.analyze.topics import TOPIC_KEYWORDS
-        assert len(TOPIC_KEYWORDS) == 20, (
-            f"Expected 20 topic buckets, got {len(TOPIC_KEYWORDS)}.\n"
+        assert len(TOPIC_KEYWORDS) == 21, (
+            f"Expected 21 topic buckets, got {len(TOPIC_KEYWORDS)}.\n"
             f"Buckets: {sorted(TOPIC_KEYWORDS.keys())}\n"
             "If you added a new topic, update this test AND the docs:\n"
             "  - docs/METHODOLOGY.md §3.1 topic count and table\n"
@@ -217,23 +217,23 @@ class TestTopicBucketConsistency:
         )
 
     def test_methodology_topic_count(self):
-        """METHODOLOGY.md must say 20 topic buckets."""
+        """METHODOLOGY.md must say 21 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
-        assert "20 topic buckets" in doc, (
+        assert "21 topic buckets" in doc, (
             "METHODOLOGY.md topic count is stale. Should be 17."
         )
 
     def test_agent_guide_topic_count(self):
-        """AGENT_GUIDE.md must list 20 topic buckets."""
+        """AGENT_GUIDE.md must list 21 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
-        assert "20 topic buckets" in doc, (
+        assert "21 topic buckets" in doc, (
             "AGENT_GUIDE.md topic count is stale. Should be 17."
         )
 
     def test_architecture_topic_count(self):
-        """ARCHITECTURE.md must say 20 topic buckets."""
+        """ARCHITECTURE.md must say 21 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
-        assert "20 topic buckets" in doc, (
+        assert "21 topic buckets" in doc, (
             "ARCHITECTURE.md topic count is stale. Should be 17."
         )
 
@@ -441,7 +441,7 @@ class TestCrossReferenceConsistency:
         )
 
     def test_readme_test_topics_description_says_16(self):
-        """README.md test_topics.py description must reference 20 topic buckets."""
+        """README.md test_topics.py description must reference 21 topic buckets."""
         doc = (_REPO_ROOT / "README.md").read_text()
         # Find the test_topics.py row in the test table
         match = re.search(r"test_topics\.py.*?(\d+)\s+standardized topic buckets", doc)
@@ -530,7 +530,7 @@ class TestInlineTopicListConsistency:
         code_topics = self._code_topic_names()
         # Find the topic list in the classify_topic JSON schema description
         match = re.search(
-            r"20 topic buckets:\s*([\w_]+(?:,\s*[\w_]+)*)\.",
+            r"21 topic buckets:\s*([\w_]+(?:,\s*[\w_]+)*)\.",
             doc,
         )
         assert match, (
@@ -756,7 +756,7 @@ class TestEmotionalLanguageCount:
         """EMOTIONAL_LANGUAGE should contain exactly 612 unique terms."""
         from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
 
-        assert len(EMOTIONAL_LANGUAGE) == 669, (
+        assert len(EMOTIONAL_LANGUAGE) == 680, (
             f"Expected 669 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
             "If you added or removed terms, update this test to the new count.\n"
             "Also check for duplicates: len(set(EMOTIONAL_LANGUAGE)) should match."

@@ -303,6 +303,27 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "medical AI", "healthcare AI", "clinical AI",
         "noninvasive", "non-invasive",
     ],
+    "cybersecurity": [
+        "cybersecurity", "cyber security", "cyber attack", "cyberattack",
+        "hacker", "hackers", "hacking", "hacked", "hack",
+        "data breach", "security breach", "security flaw",
+        "security vulnerability", "zero-day", "zero day",
+        "account takeover", "account hijack", "account hijacking",
+        "phishing", "social engineering", "credential stuffing",
+        "password reset", "password breach",
+        "ransomware", "malware", "trojan", "botnet",
+        "exploit", "exploited", "exploits",
+        "MFA", "multi-factor authentication", "two-factor authentication",
+        "2FA", "authentication bypass",
+        "security researcher", "security researchers",
+        "security patch", "emergency patch", "security fix",
+        "security flaw", "security hole", "security gap",
+        "CVE", "bug bounty",
+        "confused deputy", "privilege escalation",
+        "defaced", "defacement", "defacing",
+        "identity theft", "impersonation", "deepfake",
+        "CISA", "NIST", "infosec",
+    ],
 }
 
 
