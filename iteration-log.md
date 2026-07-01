@@ -9694,3 +9694,68 @@ Also updated `test_agent_guide_adversarial_list_complete` regex to match new AGE
 - Sentiment correction paths documented: 5 → 7 (added Path B Amplification, Path F Contradictory review)
 - METHODOLOGY.md §9.2 expanded from ~30 lines to ~130 lines
 - Commit: `5107433`, pushed to GitHub
+
+## 2026-07-01 17:00 PT — Type C: Ownership & Funding — Microsoft PCM Expansion + Google Showcase Phase-Out + UK CMA Update
+
+### Focus
+Wired/Condé Nast profile: three interconnected ownership/funding developments in the publisher AI licensing landscape.
+
+### Findings
+
+**1. Microsoft Publisher Content Marketplace (PCM) — fully expanded**
+Microsoft launched PCM on February 3, 2026 (via Microsoft Advertising blog) as a centralized AI licensing marketplace. Key facts:
+- Condé Nast is a CO-DESIGN PARTNER (with AP, Business Insider, Hearst, People, USA TODAY, Vox Media)
+- Yahoo is first demand-side partner
+- PCM is structurally different from bilateral deals: any AI builder can license content through it
+- Usage-based reporting and payments
+- CEO Lynch: "Our technology and product ambitions are central to how we serve audiences today"
+- Amazon signaled plans for a competing content marketplace (The Information, Feb 10, 2026)
+- Source: about.ads.microsoft.com, searchengineland.com, gadgets360.com
+
+**2. Google Showcase phase-out (Jun 25-29, 2026)**
+Per The Information (reported by NY Post Jun 26, Inshorts Jun 29):
+- Google phasing out Showcase (annual-payment licensing program) 
+- Replacing with News AI pilot requiring BROAD content-use rights, potentially AI training
+- Publishers who decline lose Showcase payments
+- Jason Kint (DCN CEO): "This is Google's game. They're gonna dominate here."
+- Google spokesperson: "expanding our partnerships through our News AI pilot program"
+- Source: nypost.com, inshorts.com
+
+**3. UK CMA conduct requirements (Jun 4, 2026)**
+CMA imposed "world-first" requirements on Google Search:
+- Publishers can opt out of AI features (AI Overviews, AI Mode) WITHOUT losing traditional search visibility
+- New toggle in Google Search Console (testing UK subset first, then global)
+- Google must properly attribute content with clear links
+- 9-month implementation deadline
+- Compliance reports every 6 months for first year
+- CMA Chief Executive Sarah Cardell: "world-first requirement"
+- Foxglove: "Google's AI Overviews are a threat not only to an independent news industry, but to an informed democracy"
+- AI Overviews now 2.5B MAU; AI Mode 1B+ MAU
+- Source: computerweekly.com, techcrunch.com
+
+**4. Google revenue relationship added to Wired profile**
+Google was documented in known_conflicts and notes but was MISSING from the formal `revenue_relationships` list. Added as `adversarial_no_deal` type — capturing: no AI licensing deal, Showcase phase-out, News AI pilot exclusion, advertising dependency, competitive context.
+
+### Changes Made
+- **wired.yaml:** Expanded Microsoft entry from "Microsoft (Copilot)" to "Microsoft (Publisher Content Marketplace)" with full PCM architecture, co-design partners, marketplace structure, Amazon marketplace competitor context
+- **wired.yaml:** Added "Google" as formal revenue relationship entry (type: adversarial_no_deal) — captures no AI deal, Showcase phase-out, UK CMA requirements, advertising dependency
+- **wired.yaml:** Expanded `google_ai_traffic_crisis` conflict with Showcase phase-out (Jun 2026), CMA conduct requirements (Jun 4, 2026), AI search scale (2.5B/1B+ MAU), Kint quote, Foxglove quote
+- **wired.yaml:** Updated AI licensing portfolio comment to reflect PCM marketplace model and Google Showcase phase-out
+
+### Source URLs
+- https://about.ads.microsoft.com/en-us/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web
+- https://searchengineland.com/microsoft-publisher-content-marketplace-ai-licensing-454329
+- https://www.gadgets360.com/ai/news/microsoft-publisher-content-marketplace-ai-licensing-framework-publishers-8210843
+- https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/
+- https://www.inshorts.com/en/news/google-asks-publishers-to-share-their-work-to-train-ai-or-risk-losing-payouts-report-1751156209310
+- https://www.computerweekly.com/news/366643963/Publishers-can-now-opt-out-of-Google-AI-summaries-and-training
+- https://techcrunch.com/2026/06/03/publishers-will-be-able-to-opt-out-of-ai-search-thanks-to-new-regulation/
+
+### Profile Stats
+- Wired profile: 1458 → 1563 lines (+105)
+- Tests: 1131 passed, 2 xfailed (unchanged)
+- Revenue relationships in Wired: 6 → 7 (added Google)
+- Severity entries: 15 (unchanged — no new conflicts, existing ones expanded)
+
+---
+

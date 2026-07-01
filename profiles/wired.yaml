@@ -711,10 +711,13 @@ advance_investments:
 # 2. Amazon Rufus (Jul 2025) — AI shopping assistant
 # 3. Perplexity AI (2025) — AI search engine
 # 4. Apple Intelligence (in negotiations) — on-device AI
-# 5. Microsoft Copilot (Dec 2025 pilot) — enterprise AI assistant
-# 6. Google — NO deal (adversarial, "death blow" traffic collapse)
+# 5. Microsoft PCM (Dec 2025 pilot, Feb 2026 formal launch) — centralized AI licensing marketplace
+# 6. Google — NO deal (adversarial; Showcase being phased out Jun 2026, excluded from AI pilot)
 # 7. Meta — NO deal (excluded from Dec 2025 round, $0 revenue)
 # Net: Every major AI platform except Meta and Google pays Condé Nast.
+# NEW (Jun 2026): Google phasing out Showcase, replacing with AI pilot requiring training rights.
+# UK CMA mandated granular opt-out controls (Jun 4, 2026). Microsoft PCM is an open marketplace
+# model, not just bilateral — any AI builder can potentially license Condé Nast content through it.
 #
 # CONFLICT ESCALATION (updated Jun 28): Reddit's accelerating revenue growth AND commerce evolution
 # make the conflict between Advance's Reddit investment and Wired's Meta coverage MORE MATERIAL
@@ -830,16 +833,33 @@ revenue_relationships:
       - "https://www.theinformation.com/articles/conde-nast-sends-cease-and-desist-to-perplexity"
       - "https://digiday.com/media/media-buying-briefing-an-updated-timeline-of-the-key-events-in-ai-and-media/"
 
-  - partner: "Microsoft (Copilot)"
-    relationship_type: "licensing (pilot)"
-    estimated_value: "undisclosed"
-    date_established: "2025-12-03 (announced), formal press release 2026-02-09"
+  - partner: "Microsoft (Publisher Content Marketplace)"
+    relationship_type: "licensing (marketplace pilot)"
+    estimated_value: "undisclosed (usage-based payments)"
+    date_established: "2025-12-03 (announced), formal PCM launch 2026-02-03"
     description: >
-      Condé Nast became a pilot partner in Microsoft's new two-sided content marketplace designed to
-      compensate publishers when their content is used in AI-generated responses. Under the agreement,
-      Condé Nast's U.S. text-based editorial content is licensed for use in grounding AI-generated
-      summary responses across Microsoft Copilot experiences. Announced Dec 3, 2025 alongside CPTO
-      Vasanth Williams hire; formal partnership press release via Condé Nast newsroom Feb 9, 2026.
+      Condé Nast is a CO-DESIGN PARTNER of Microsoft's Publisher Content Marketplace (PCM), a
+      centralized AI licensing hub formally launched February 3, 2026 via Microsoft Advertising.
+      PCM is designed to replace one-off bilateral licensing deals between publishers and AI companies
+      with a scalable marketplace where publishers set licensing and usage terms, AI builders discover
+      and license content for specific grounding scenarios, and publishers receive usage-based reporting
+      and payments proportional to content value delivered.
+
+      CO-DESIGN PARTNERS (who shaped licensing, pricing, governance, analytics, and onboarding):
+      Condé Nast, The Associated Press, Business Insider Inc, Hearst Magazines, People Inc, USA TODAY
+      Co., and Vox Media LLC. Yahoo is the first demand partner onboarding on the buyer side.
+
+      SCOPE: Condé Nast's U.S. text-based editorial content is licensed for grounding AI-generated
+      summary responses across Microsoft Copilot experiences. Early pilots validated assumptions
+      before scaling. Microsoft plans to expand to more publishers and AI builders.
+
+      STRUCTURAL SIGNIFICANCE: PCM is fundamentally different from the bilateral OpenAI/Amazon/Perplexity
+      deals because it creates an open marketplace where ANY AI builder can license Condé Nast content,
+      not just Microsoft. This means Condé Nast's content enters a PLATFORM that could serve multiple
+      AI companies — potentially including Meta competitors — through a single integration. The
+      marketplace model also provides Condé Nast with comparative usage data across AI builders,
+      which could inform future pricing negotiations.
+
       CEO Roger Lynch: "Our technology and product ambitions are central to how we serve audiences today."
       Microsoft competes directly with Meta in AI (Copilot vs Meta AI), social/professional networking
       (LinkedIn vs Facebook/Instagram), enterprise (Azure/Teams vs Workplace from Meta), and advertising
@@ -847,11 +867,72 @@ revenue_relationships:
       licensing deal with Condé Nast (after OpenAI, Amazon Rufus, Perplexity, Apple in negotiations,
       and now Microsoft), further isolating Meta as the only major tech company with no revenue
       relationship with Condé Nast.
+
+      CONTEXT: Amazon also signaled plans for its own content marketplace (reported by The Information,
+      Feb 10, 2026), suggesting the industry is converging on marketplace models over bilateral deals.
+      If Amazon launches a competing marketplace, Condé Nast could simultaneously earn from Microsoft PCM,
+      Amazon's marketplace, and bilateral OpenAI/Perplexity deals — creating a multi-platform revenue
+      diversification strategy that further insulates Condé Nast from any single AI company dependency.
     competitive_with: ["Meta"]
     source_urls:
+      - "https://about.ads.microsoft.com/en-us/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web"
+      - "https://searchengineland.com/microsoft-publisher-content-marketplace-ai-licensing-454329"
       - "https://www.adweek.com/media/conde-nast-names-chief-product-technology-officer-vasanth-williams/"
       - "https://www.condenast.com/news/conde-nast-joins-microsoft-pilot-partner-ai-content-marketplace"
-      - "https://www.editorandpublisher.com/stories/vasanth-williams-named-chief-product-and-technology-officer-at-conde-nast/"
+      - "https://www.gadgets360.com/ai/news/microsoft-publisher-content-marketplace-ai-licensing-framework-publishers-8210843"
+
+  - partner: "Google"
+    relationship_type: "adversarial_no_deal"
+    estimated_value: "$0 (AI licensing); significant (programmatic advertising)"
+    date_established: "n/a (no AI deal as of Jul 2026)"
+    description: >
+      CRITICAL ABSENCE: Condé Nast has NO AI content licensing deal with Google — the only major
+      AI platform alongside Meta with zero AI licensing revenue to Condé Nast. This is notable
+      because Google has signed AI pilot deals with competitors including The Guardian, The Washington
+      Post, Der Spiegel, El País, Folha, Infobae, Kompas, Times of India, and The Washington Examiner
+      (News AI pilot program, launched December 2025).
+
+      GOOGLE SHOWCASE PHASE-OUT (Jun 25-29, 2026): Per The Information (reported by NY Post, Inshorts),
+      Google is now phasing out its existing Showcase program — the annual-payment licensing arrangement
+      through which Google compensated publishers for curated news panels. Google told some publishers
+      Showcase is being ENDED and replaced by the News AI pilot program, which requires publishers to
+      grant Google broad content-use rights, potentially including rights to train AI models on their
+      content. Publishers who decline the new AI pilot risk losing their existing Showcase payments.
+      Jason Kint, CEO of Digital Content Next (trade group representing NYT, WashPost, News Corp):
+      "This is Google's game. They're gonna dominate here. There's no fair deal discussions that
+      can happen with Google. It's really a matter of how much money they want to drop on an
+      individual organization."
+
+      GOOGLE AI SEARCH SCALE: AI Overviews now reaches 2.5 billion monthly active users; AI Mode
+      surpassed 1 billion monthly users (per Google, Jun 2026). These are the surfaces where
+      publisher content is consumed without click-through.
+
+      UK CMA OPT-OUT REQUIREMENTS (Jun 4, 2026): UK Competition and Markets Authority imposed
+      "world-first" conduct requirements on Google, mandating effective opt-out tools for AI features
+      separate from traditional search (previously bundled). Google has 9 months to implement. Testing
+      UK subset first. CMA Chief Executive Sarah Cardell: "With features like AI Overviews rapidly
+      reshaping online search, it is crucial that content publishers, including news organisations,
+      have appropriate bargaining power." Condé Nast's CEO Lynch had previously called Google's
+      bundled opt-out arrangement "pernicious" (FT, Feb 27, 2026).
+
+      ADVERTISING: Google remains a significant programmatic advertising revenue source for Condé Nast
+      despite the AI licensing exclusion. This creates a COMPOUND TENSION: Condé Nast depends on Google
+      for advertising revenue while publicly attacking Google's AI practices and receiving zero
+      compensation for AI content use.
+
+      COMPETITIVE CONTEXT: Unlike other publishers who can play Google against OpenAI/Microsoft in
+      licensing negotiations, Condé Nast has chosen (or been excluded from) the Google AI pilot,
+      concentrating its AI licensing revenue among Google's competitors. When Wired covers Google's
+      AI impact on publishing, it covers a company that is actively harming Condé Nast's traffic AND
+      paying competitors (Guardian, WashPost) while excluding Condé Nast — an undisclosed financial
+      motivation.
+    competitive_with: ["Meta"]
+    source_urls:
+      - "https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/"
+      - "https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/"
+      - "https://www.inshorts.com/en/news/google-asks-publishers-to-share-their-work-to-train-ai-or-risk-losing-payouts-report-1751156209310"
+      - "https://www.computerweekly.com/news/366643963/Publishers-can-now-opt-out-of-Google-AI-summaries-and-training"
+      - "https://techcrunch.com/2026/06/03/publishers-will-be-able-to-opt-out-of-ai-search-thanks-to-new-regulation/"
 
 editorial_leadership:
   - name: "Katie Drummond"
@@ -1203,29 +1284,53 @@ litigation_connections:
 
   - type: "google_ai_traffic_crisis"
     description: >
-      NEW CONFLICT (FT, Feb 27 2026): CEO Roger Lynch publicly declared Google search "no longer a
-      meaningful driver" of Condé Nast traffic — from majority of visits to approximately 25% by 2025.
-      Called Google's AI-generated summaries "another sort of death blow." Described Google's opt-out
-      arrangement as "pernicious" — publishers must opt out of Google Search entirely to prevent content
-      from AI summaries. Condé Nast has NOT reached a licensing deal with Google (has deals with OpenAI,
-      Amazon, Perplexity). Google piloted AI article overviews with Der Spiegel, Guardian, Washington Post
-      (Dec 10, 2025) — Condé Nast excluded. ANALYTICAL SIGNIFICANCE: This creates a three-way exclusion
-      dynamic — Meta excluded from AI licensing, Google excluded from AI licensing, while OpenAI/Amazon/
-      Perplexity/Apple all pay. When Wired covers Google's AI impact on publishing, it covers a company
-      that is actively harming Condé Nast's traffic AND refusing to pay for the privilege — creating an
-      adversarial stance that is financially motivated but undisclosed. When Wired covers Meta vs Google
-      competition, both competitors have financial conflicts with Condé Nast but for different reasons.
-      EU Commission opened formal antitrust probe into Google's AI content practices (Dec 9, 2025).
-      UK CMA proposed binding conduct requirements (Jan 28, 2026). Global industry data: NewzDash reports
-      Google Web Search traffic to publishers fell from 51% to 27% (2023-2025). Reuters Institute
-      survey (Jan 2026): media leaders expect to lose nearly half remaining traffic over 3 years.
-      Perplexity Comet Plus (Oct 1, 2025): 16 Condé Nast titles participating — compensates based on
-      human engagement, AI-driven interactions, and content usage in training.
+      CEO Roger Lynch publicly declared Google search "no longer a meaningful driver" of Condé Nast
+      traffic (FT, Feb 27 2026) — from majority of visits to approximately 25% by 2025. Called Google's
+      AI-generated summaries "another sort of death blow." Described Google's opt-out arrangement as
+      "pernicious" — publishers must opt out of Google Search entirely to prevent content from AI summaries.
+
+      SHOWCASE PHASE-OUT (Jun 25-29, 2026): Per The Information (reported by NY Post, Inshorts), Google
+      is phasing out its Showcase program — the annual-payment licensing arrangement — and replacing it
+      with the News AI pilot program. The new pilot demands publishers grant Google broad content-use
+      rights, potentially including AI model training. Publishers who decline lose Showcase payments.
+      Jason Kint (DCN CEO): "This is Google's game. They're gonna dominate here." Google told some
+      companies Showcase is being ENDED. This represents a shift from compensating publishers for
+      curated news panels to demanding AI training rights — effectively asking publishers to pay
+      (via forfeited Showcase fees) for the privilege of NOT training Google's AI.
+
+      Condé Nast has NOT reached a licensing deal with Google (has deals with OpenAI, Amazon, Perplexity,
+      Microsoft PCM). Google piloted AI article overviews with Der Spiegel, Guardian, Washington Post
+      (Dec 10, 2025) — Condé Nast excluded.
+
+      UK CMA CONDUCT REQUIREMENTS (Jun 4, 2026): "World-first" requirements mandate Google provide
+      publishers effective opt-out from AI features (AI Overviews, AI Mode) WITHOUT losing traditional
+      search visibility. New toggle in Google Search Console. 9-month implementation deadline. CMA Chief
+      Executive Sarah Cardell: "With features like AI Overviews rapidly reshaping online search, it is
+      crucial that content publishers, including news organisations, have appropriate bargaining power."
+      Google began testing controls with UK publishers subset. CMA requires compliance reports every 6
+      months for the first year. Foxglove (civil society group): "Google's AI Overviews are a threat not
+      only to an independent news industry, but to an informed democracy."
+
+      AI SEARCH SCALE (Jun 2026): Google AI Overviews = 2.5 billion MAU; AI Mode = 1 billion+ MAU.
+
+      ANALYTICAL SIGNIFICANCE: This creates a three-way exclusion dynamic — Meta excluded from AI
+      licensing, Google excluded from AI licensing, while OpenAI/Amazon/Perplexity/Microsoft/Apple all
+      pay. When Wired covers Google's AI impact on publishing, it covers a company that is actively
+      harming Condé Nast's traffic AND refusing to pay for the privilege — creating an adversarial stance
+      that is financially motivated but undisclosed. When Wired covers Meta vs Google competition, both
+      competitors have financial conflicts with Condé Nast but for different reasons. EU Commission
+      opened formal antitrust probe into Google's AI content practices (Dec 9, 2025). Global industry
+      data: NewzDash reports Google Web Search traffic to publishers fell from 51% to 27% (2023-2025).
+      Reuters Institute survey (Jan 2026): media leaders expect to lose nearly half remaining traffic
+      over 3 years. Perplexity Comet Plus (Oct 1, 2025): 16 Condé Nast titles participating.
     severity: 4
-    evidence: "FT interview Feb 27 2026, PPC Land analysis, Adweek, NewzDash, Reuters Institute"
+    evidence: "FT interview Feb 27 2026, PPC Land analysis, Adweek, NewzDash, Reuters Institute, The Information Jun 2026, NY Post Jun 26 2026, CMA Jun 4 2026"
     source_urls:
       - "https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/"
       - "https://www.adweek.com/media/conde-nast-events-revenue-2026/"
+      - "https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/"
+      - "https://www.computerweekly.com/news/366643963/Publishers-can-now-opt-out-of-Google-AI-summaries-and-training"
+      - "https://techcrunch.com/2026/06/03/publishers-will-be-able-to-opt-out-of-ai-search-thanks-to-new-regulation/"
 
   - type: "cnil_enforcement"
     description: >
