@@ -89,6 +89,10 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "youth addiction", "teen addiction", "teen mental health",
         "adolescent mental health", "adolescent safety",
         "children's wellbeing", "children's well-being",
+        "children", "kids", "adolescent", "adolescents", "teenagers",
+        "addictive", "addictive designs", "addictive platforms",
+        "teen ambassadors", "hooked", "hooking",
+        "school-age", "school aged", "school-aged",
     ],
     "content_moderation": [
         "content moderation", "misinformation", "disinformation",
@@ -352,6 +356,20 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "machine ethics", "robot ethics",
         "AI rights", "machine consciousness",
         "AI sentience", "AI personhood",
+    ],
+    "education": [
+        "school", "schools", "classroom", "classrooms",
+        "teacher", "teachers", "student", "students",
+        "academic", "academic performance", "academic achievement",
+        "education", "educational", "learning",
+        "school district", "school districts",
+        "school hours", "school day", "in-school",
+        "campus", "campuses", "smartphone ban", "phone ban",
+        "Chromebook", "Chromebooks", "banning phones", "device ban",
+        "homework", "curriculum", "principal", "principals",
+        "superintendent", "school board",
+        "K-12", "elementary school", "middle school", "high school",
+        "PTA", "parent-teacher",
     ],
 }
 

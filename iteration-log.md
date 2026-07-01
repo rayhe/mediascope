@@ -4,6 +4,85 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-01 12:00 PT — Type A: Article Deep Dive — NYT "How Tech Companies Hooked Kids in School on Social Media"
+
+### Article
+- **Title:** "How Tech Companies Hooked Kids in School on Social Media"
+- **Author:** Jennifer Valentino-DeVries (The New York Times)
+- **Published:** June 4, 2026
+- **URL:** https://www.nytimes.com/2025/06/04/technology/social-media-schools-lawsuits.html
+- **Article file:** `examples/sample_output/nyt_meta_school_targeting_teen_ambassadors_2026_06_article.txt`
+- **Analysis file:** `examples/sample_output/nyt_meta_school_targeting_teen_ambassadors_2026_06_analysis.md`
+
+### Summary
+Investigative article using internal documents from lawsuits by 1,400+ school districts against Meta, Snap, TikTok, and YouTube. Reveals Meta paid "teen ambassadors," TikTok rejected safety team's push to disable school-hours notifications, Snapchat tracked "under the desk" classroom usage, and TikTok funded National PTA while lobbying against phone bans. Multi-company coverage with strong framing density.
+
+### Findings
+
+**Entity detection:**
+- Google primary (11) over Meta (10) — defensible given YouTube + Google + Chromebooks as separate school infrastructure
+- All four defendant companies detected: Google (11), Meta (10), TikTok (9), Snap (8)
+- **Gap fixed:** National PTA not detected → added Education/Advocacy cluster
+- **Gap fixed:** Cornell not detected → added to Academic/Research cluster regex
+
+**Topic classification:**
+- **Gap fixed:** No education topic existed → added as 23rd bucket (0.692 confidence)
+- **Gap fixed:** child_safety only matched 3 keywords → expanded to 15+ (confidence: 0.246 → 0.526)
+- Litigation correctly detected as tertiary topic (0.388)
+
+**Framing devices:** 21 instances across 10 types
+- **Gap fixed:** Safety team overrule not detected → added bidirectional hypocrisy_frame patterns
+- Ironic quotation (4): "teen ambassadors," "under the desk"
+- Scale/magnitude (4): 1,400+ districts, $27M settlement, $3M damages
+- Loaded language (4): "infiltrate," "exploitation," "backlash," "manipulating"
+
+**Sentiment:**
+- overall_tone: -0.381 (appropriate for critical investigative piece)
+- agency_attribution: -0.667 (companies as active agents of harm)
+- VADER correction: raw 0.592 → corrected -0.381 (domain terms like "school" bias VADER positive)
+
+**Source analysis:**
+- 2 named expert sources, 0 anonymous
+- **Gap fixed:** Previn Warren (lead plaintiff's attorney) classified neutral → adversarial via role-based detection
+- Alexandra Lahav (Cornell Law) correctly neutral
+
+### Code Changes
+
+| File | Change |
+|------|--------|
+| `mediascope/analyze/topics.py` | Added education topic bucket (23rd) with 28 keywords; expanded child_safety from 5 to 15+ keywords |
+| `mediascope/analyze/entities.py` | Added Education/Advocacy cluster (National PTA, NEA, AFT); added Cornell to Academic/Research regex |
+| `mediascope/analyze/framing.py` | Added 2 bidirectional hypocrisy_frame patterns for safety team overrule (safety/trust/ethics teams rejected/ignored by leadership) |
+| `mediascope/analyze/sources.py` | Added role-based adversarial stance detection for plaintiff attorneys/lawyers |
+| `docs/METHODOLOGY.md` | Updated topic count to 23; added education bucket to table; added education design note |
+| `docs/ARCHITECTURE.md` | Updated topic count to 23; added education to inline topic list; added test file listing; updated test/pattern counts |
+| `docs/AGENT_GUIDE.md` | Added education to topic bucket list |
+| `README.md` | Updated test count and topic bucket references |
+| `tests/test_structural_consistency.py` | Updated topic count (22→23), pattern count (295→297), test counts |
+| `tests/test_nyt_school_targeting.py` | **New:** 29 tests across 5 classes (entities, topics, framing, sentiment, sources) |
+
+### Pipeline Accuracy
+| Module | Pre | Post |
+|--------|-----|------|
+| Entity detection | 7/10 | 9/10 |
+| Topic classification | 4/10 | 9/10 |
+| Framing detection | 7/10 | 9/10 |
+| Sentiment analysis | 8/10 | 8/10 |
+| Source analysis | 5/10 | 9/10 |
+| **Overall** | **6.2/10** | **8.8/10** |
+
+### Test Delta
+- Before: 1,098 tests across 42 files
+- After: 1,127 tests across 43 files (+29 tests, +1 file)
+- All passing (1,125 passed, 2 xfailed)
+
+### Stats Update
+- Topic buckets: 22 → 23
+- Regex patterns: 295 → 297
+- Entity clusters: +1 (Education/Advocacy)
+
+---
+
 ## 2026-07-01 06:00 PT — Type D: Toolkit Quality — ARCHITECTURE.md Device Name List Completeness + AGENT_GUIDE.md Guards
 
 **Focus:** Close the remaining documentation-vs-code validation gap identified in the 2026-06-30 17:00 PT Type D iteration: "ARCHITECTURE.md inline device *names* list is not validated against code (only the Extended count label is guarded now, not the individual names in the list)." Additionally, extend adversarial device list and tier count guards to AGENT_GUIDE.md, which was previously unguarded.

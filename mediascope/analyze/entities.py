@@ -399,6 +399,15 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Garmin",
         ],
     },
+    "Education/Advocacy": {
+        "aliases": [
+            "National PTA", "National Education Association", "NEA",
+            "American Federation of Teachers", "AFT",
+        ],
+        "regex": r"(?<!\w)(National PTA"
+                 r"|National Education Association|(?-i:NEA)"
+                 r"|American Federation of Teachers|(?-i:AFT))(?!\w)",
+    },
     "EU Regulatory": {
         "aliases": [
             "GDPR", "General Data Protection Regulation",
@@ -520,6 +529,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Columbia University",
             "University of Michigan",
             "Carnegie Mellon", "CMU",
+            "Cornell University", "Cornell",
         ],
         "regex": r"(?<!\w)((?-i:NYU)|New York University"
                  r"|Northeastern(?:\s+University)?"
@@ -532,7 +542,8 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|Cambridge(?:\s+University)?"
                  r"|Columbia(?:\s+University)?"
                  r"|University of Michigan"
-                 r"|Carnegie Mellon|(?-i:CMU))(?!\w)",
+                 r"|Carnegie Mellon|(?-i:CMU)"
+                 r"|Cornell(?:\s+(?:University|Law\s+School))?)(?!\w)",
     },
     "Research Centers": {
         "aliases": [

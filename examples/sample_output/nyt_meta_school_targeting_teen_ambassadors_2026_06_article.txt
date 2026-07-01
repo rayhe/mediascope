@@ -1,0 +1,47 @@
+Source: New York Times
+Author: Jennifer Valentino-DeVries
+Title: How Tech Companies Hooked Kids in School on Social Media
+Published: June 4, 2026
+URL: https://www.nytimes.com/2026/06/04/technology/social-media-children-schools.html
+
+Internal documents show how tech giants grabbed children's attention throughout the day, a strategy that schools say has undermined education.
+
+Snapchat sent phone alerts to adolescents during school hours, urging them to share what was going on in their classrooms.
+
+Meta paid "teen ambassadors" to promote Instagram and hand out swag to their friends at school.
+
+TikTok gave the National PTA millions of dollars, in part to throw school events about online safety and provide favorable comments to journalists.
+
+Again and again, the world's leading social media companies have targeted students, even as complaints have mounted that they are hurting teenagers' mental health and academic performance, according to a New York Times review of internal documents that lay bare for the first time these tactics to hook young users.
+
+The documents emerged from lawsuits filed by more than 1,400 school districts against Meta, Snap, TikTok and YouTube amid a rising backlash against social media, with parent movements and best-selling books blaming the platforms for loneliness, bullying, eating disorders and sexual exploitation.
+
+The outcry, long focused on social media's harm to mental health, has now shifted to its upending of the classroom. Many school districts are banning smartphones, and some are re-evaluating their reliance on devices like Chromebooks, the inexpensive laptops made by YouTube's parent company, Google.
+
+The companies' push to keep children glued to their screens has overshadowed concerns from parents, teachers and even their own trust and safety teams about interfering with school, according to the documents and interviews with dozens of parents, teachers and former tech company employees.
+
+TikTok's leaders decided not to disable notifications during school hours, rejecting a change that its safety teams had pushed for years. A Snapchat strategy document referred to classroom phone use as "under the desk" time. Google managers knew YouTube was recommending videos to students during the school day that had nothing to do with their lessons.
+
+The school districts contend that the apps' addictive designs made teachers' jobs more difficult. "It is so constantly tempting to these kids to be on a platform that promises endless, infinite, varied entertainment rather than actually focusing on what they should be at school to do," said Previn Warren, one of the lead lawyers for the schools.
+
+The companies argue that the Covid pandemic and other factors have harmed adolescents' mental health, and that parents, schools and cellphone makers bear responsibility for children's phone habits. They also say that they have made their platforms safer with parental-control features and account restrictions for minors.
+
+All four companies recently settled with Breathitt County Schools, a small district in rural Kentucky that served as a test case for the litigation nationwide. The district, which has about 1,500 students, had sought $3 million in damages and about $60 million that it had planned to put toward a long-term education and mental health plan. The companies agreed to pay Breathitt $27 million: $9 million from Meta, $8 million each from Snap and TikTok and $2 million from Google, according to documents released on Friday and first reported by Bloomberg.
+
+While it's hard to say how the ongoing litigation might ultimately affect classrooms, it poses a substantial financial risk to the companies, possibly costing billions of dollars, said Alexandra Lahav, a civil litigation professor at Cornell Law School. She noted that the companies were also facing a barrage of claims from families and state attorneys general.
+
+Defendants have deliberately targeted school aged children, while knowing the impact this could have on schools. In fact, Defendants counted on use of their addictive platforms spreading through entire school communities. For example, Meta set out to infiltrate schools specifically, noting in a presentation reviewed by Mark Zuckerberg himself that "high school is the key driver of U.S. teen social activity and occupied 6+ hours per day."
+
+Internal documents from the lawsuits show that Meta paid "teen ambassadors" to promote Instagram among their peers at school, distributing merchandise and organizing promotional activities on campus. The program was designed to leverage social influence among teenagers to drive adoption of the platform.
+
+TikTok leadership chose not to turn off push notifications during school hours, despite long-standing recommendations from its own safety teams. This decision was made despite evidence that notifications were disrupting classroom learning and contributing to compulsive phone use among students.
+
+TikTok also gave the National PTA millions of dollars, in part to throw school events about online safety and to encourage favorable comments to journalists about the platform. This arrangement created a financial relationship between TikTok and the primary parent-teacher organization in the United States, potentially compromising the PTA's independence on issues related to children's digital wellbeing.
+
+Snapchat sent phone alerts to teens during school hours, asking them to share what was going on in their classes. Internal Snapchat strategy documents referred to classroom phone use as "under the desk" time, acknowledging that students were using the platform covertly during lessons.
+
+Google's YouTube internal documents show that its own education team informed leadership that the recommendation algorithm frequently served students videos unrelated to their schoolwork during school hours. Despite this knowledge, the platform continued to recommend entertainment content to students.
+
+The litigation represents over 1,400 school districts suing Meta, Snap, TikTok and YouTube. The first test case, Breathitt County Schools in Kentucky, settled for a combined $27 million. The settlement breakdown was: Meta $9 million, Snap $8 million, TikTok $8 million, Google/YouTube $2 million.
+
+Researchers found that adolescents spent about 1.5 hours of a 6.5-hour school day on their phones — nearly a quarter of the school day — with much of that time spent on social media.

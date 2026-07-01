@@ -1582,12 +1582,56 @@ def analyze_source_stance(
             # Spokesperson classified as supportive unless overwhelmingly
             # adversarial (3+ negative terms = possible whistleblower)
             supportive.append(source.name)
-        elif neg_count > pos_count:
-            adversarial.append(source.name)
-        elif pos_count > neg_count:
-            supportive.append(source.name)
         else:
-            neutral.append(source.name)
+            # --- Plaintiff/adversarial-role detection ---
+            # Sources described as lawyers/attorneys for the opposing side
+            # in litigation, or as plaintiffs, are inherently adversarial
+            # to the defendant entities regardless of quote content.
+            # "Previn Warren, one of the lead lawyers for the schools"
+            # is adversarial to Meta/Snap/TikTok/Google even if his
+            # quote is measured.
+            is_adversarial_role = False
+            if not source.is_anonymous and full_text:
+                name_parts = source.name.strip().split()
+                last_name = name_parts[-1].lower() if name_parts else ""
+                if last_name:
+                    ft_lower = full_text.lower()
+                    # Look for "[Name], [role] for the [plaintiff group]"
+                    # or "lawyer/attorney [Name]" patterns
+                    _ADVERSARIAL_ROLE_PATTERNS = [
+                        # "Name, one of the lead/lead/chief lawyers for"
+                        re.compile(
+                            rf"{re.escape(last_name)}.{{0,80}}"
+                            r"\b(?:lawyer|lawyers|attorney|attorneys|counsel|"
+                            r"plaintiff|plaintiffs|litigant|litigants|"
+                            r"lead\s+(?:lawyer|attorney|counsel))\s+"
+                            r"(?:for|representing|on\s+behalf\s+of)\b",
+                            re.IGNORECASE,
+                        ),
+                        # "attorney/lawyer for the [schools/districts/families/plaintiffs]"
+                        re.compile(
+                            rf"{re.escape(last_name)}.{{0,60}}"
+                            r"\b(?:lawyer|attorney|counsel)\b"
+                            r".{0,40}?"
+                            r"\b(?:school|schools|district|districts|"
+                            r"families|plaintiffs?|victims?|children|"
+                            r"students?|workers?|employees?|consumers?)\b",
+                            re.IGNORECASE | re.DOTALL,
+                        ),
+                    ]
+                    for pat in _ADVERSARIAL_ROLE_PATTERNS:
+                        if pat.search(ft_lower):
+                            is_adversarial_role = True
+                            break
+
+            if is_adversarial_role:
+                adversarial.append(source.name)
+            elif neg_count > pos_count:
+                adversarial.append(source.name)
+            elif pos_count > neg_count:
+                supportive.append(source.name)
+            else:
+                neutral.append(source.name)
 
     total = len(sources)
     adversarial_count = len(adversarial)

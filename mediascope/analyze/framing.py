@@ -1408,6 +1408,37 @@ _HYPOCRISY_FRAME_PATTERNS: list[re.Pattern] = [
         r"had\s+not\s+(?:yet\s+)?(?:stopped|paused|halted|ended|ceased))\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # Internal safety team overrule — corporate leadership rejecting or
+    # overruling recommendations from their own safety, trust, or ethics
+    # teams.  Common in child safety and content moderation coverage where
+    # the frame is "they knew it was harmful but chose not to act."
+    # Identified in NYT school targeting article (Jun 2026):
+    #   "TikTok's leaders decided not to disable notifications during
+    #    school hours, rejecting a change that its safety teams had
+    #    pushed for years."
+    re.compile(
+        r"\b(?:safety|trust|ethics|integrity|responsible|child\s+safety)\s+"
+        r"(?:team|teams|group|unit|division|department|lead|manager|researchers?|experts?)s?\b"
+        r".{0,200}?"
+        r"\b(?:reject(?:ed|ing)?|overrul(?:ed|ing)?|ignor(?:ed|ing)?|dismiss(?:ed|ing)?|"
+        r"overrode|override|overridden|decided\s+not\s+to|chose\s+not\s+to|"
+        r"push(?:ed)?\s+(?:back|against)|shot\s+down|vetoed?|"
+        r"disregard(?:ed|ing)?|sidelined?|marginalized?)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse: leadership rejection near safety team recommendation
+    re.compile(
+        r"\b(?:reject(?:ed|ing)?|overrul(?:ed|ing)?|ignor(?:ed|ing)?|dismiss(?:ed|ing)?|"
+        r"overrode|override|decided\s+not\s+to|chose\s+not\s+to)\b"
+        r".{0,200}?"
+        r"\b(?:safety|trust|ethics|integrity|responsible|child\s+safety)\s+"
+        r"(?:team|teams|group|unit|division|department|lead|manager|researchers?|experts?)s?\b"
+        r".{0,100}?"
+        r"\b(?:recommend(?:ed|ation|ations)?|push(?:ed)?\s+for|"
+        r"urg(?:ed|ing)?|propos(?:ed|al|als)?|suggest(?:ed|ion|ions)?|"
+        r"call(?:ed)?\s+for|advocat(?:ed|ing)?)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
 ]
 
 _DEVICE_PATTERNS["hypocrisy_frame"] = _HYPOCRISY_FRAME_PATTERNS
