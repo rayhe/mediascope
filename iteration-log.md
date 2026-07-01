@@ -9444,3 +9444,71 @@ Full analysis at `examples/sample_output/wired_meta_cannes_contractors_teens_202
 - `tests/test_cannes_contractors.py` — +10 tests (2 classes), updated docstring
 - `docs/ARCHITECTURE.md` — test count 1088→1098
 - `README.md` — test count 1088→1098, test_cannes_contractors description updated
+
+## 2026-07-01 13:00 PT — Type B: Journalist/Publication Research — Adam Satariano Deep Expansion + Ana Swanson (#107) + Paul Mozur (#108)
+
+**Focus:** Deep expansion of Adam Satariano (NYT EU tech regulation correspondent, London) from 3 career entries to 4 career entries + 14 notable articles + co-author network mapping + framing analysis. Added two new journalists who are Satariano's most important co-authors.
+
+### Adam Satariano — Profile Expansion
+
+**Career (3 → 4 entries):**
+- Congressional Quarterly (2005–2007): Reporter, congressional coverage, Washington DC
+- Bloomberg SF (2007–2016): Reporter, tech/entertainment/environment → Silicon Valley tech. Apple post-Jobs era, daily fantasy sports, AI in finance, startup flameouts
+- **NEW: Bloomberg London (2016–2018):** European tech correspondent. Moved to London to cover emerging EU tech regulation landscape pre-GDPR. Created Bloomberg Decrypted podcast episode about his own SubwayCreatures viral video incident
+- NYT (2018–present): EU tech regulation correspondent, London. DMA, DSA, AI Act, GDPR enforcement. Beat expanded 2024-2026 into AI weapons, geopolitical tech tensions, platform accountability
+
+**Notable Articles (14 cataloged, 2019–2026):**
+
+| Date | Article | Co-author | Significance |
+|------|---------|-----------|-------------|
+| 2019-10 | EU can force Facebook to delete content worldwide | — | Cited in Harvard Law H2O casebooks |
+| 2020-11 | Facebook/Accenture content moderator investigation | — | 40+ interviews, internal docs |
+| 2021-09 | EU hate speech laws threaten free expression | — | Key counterevidence to pro-regulation hypothesis |
+| 2021-01 | Huawei 5G influence campaign in Belgium | Graphika | Tech-geopolitics-disinformation intersection |
+| 2023-03 | AI police surveillance tech in Middle East | Paul Mozur | Satariano-Mozur surveillance series |
+| 2023-12 | EU AI Act deal | — | 30+ outlets syndicated |
+| 2024-05 | Russia blocking Ukraine's Starlink | Paul Mozur | Musk-geopolitics intersection |
+| 2024-07 | Ukraine AI killer robots | Paul Mozur | UT Austin CS curriculum cited |
+| 2024-08 | Pavel Durov/Telegram profile | Paul Mozur | Durov arrest in France context |
+| 2025-01 | Trump travel ban on CCDH researchers | — | Trump-EU tech policy intersection |
+| 2025-04 | EU preparing $1B+ X/Twitter DSA fine | — | EU political calculus around enforcement |
+| 2025-04 | ASML CEO interview on Trump trade war | — | 60+ outlets amplified |
+| 2026-06 | TikTok "addictive design" DSA violation | — | Led Techmeme, precedent for Meta |
+| 2026-07 | Kyndryl/Solvinity Dutch acquisition block | Ana Swanson | Digital sovereignty as trade barrier |
+
+**Co-author Network:** Paul Mozur (AI/warfare/surveillance, 4+ pieces 2023-24), Ana Swanson (trade/geopolitics), Mike Isaac (Meta)
+
+**Framing Analysis (3 dimensions):**
+1. **Regulatory positioning:** EU-centered sourcing (DPC, CNIL, EC, noyb, CCDH, Foxglove) naturally positions EU enforcement as protagonist. But 2021 free speech piece shows capacity for genuinely balanced coverage
+2. **Meta coverage pattern:** Covers Meta through regulatory lens, not a "Meta critic" by disposition — regulation reporter whose beat generates adversarial coverage. Content moderator exposé was genuinely investigative
+3. **Beat expansion 2024-2026:** From pure regulation → geopolitical tech correspondent (ASML, Kyndryl, AI weapons, Telegram). NYT deploying him as generalist tech-geopolitics reporter
+
+### New Journalists
+
+**Ana Swanson (#107):**
+- Washington Post → NYT (2016 → 2018)
+- Trade policy, tariffs, chip export controls, US-EU economic tensions
+- Co-authoring pattern with Satariano merges trade + regulation lenses
+
+**Paul Mozur (#108):**
+- Wall Street Journal → NYT (2011 → 2014)
+- China tech, surveillance, AI weapons, Pulitzer finalist (Uyghur surveillance)
+- Most frequent Satariano co-author: 4+ investigations 2023-2024
+- Mozur-Satariano partnership = NYT's primary tech-geopolitics investigation engine
+
+### Source URLs
+- Talking Biz News hire announcement: https://talkingbiznews.com/they-re-hiring/ny-times-hires-bloombergs-satariano-to-cover-tech-in-europe/
+- Bloomberg Decrypted podcast: https://globalplayer.com/catchup/episodes/7Oy4y3d/
+- Pfolio (Mozur-Satariano portfolio): https://pfolio.com/profile/paul-mozur-and-adam-satariano/posts/
+- Techmeme articles: multiple pages cited in notable_articles
+- Marketplace (Ireland/Meta fine): https://marketplace.org/2022/11/30/irish-regulators-fine-meta-for-not-safeguarding-user-data/
+- TipRanks (Kyndryl/Solvinity): https://blog.tipranks.com/europes-tensions-with-trump-ensnare-kyndryl-tech-deal-nyt-reports/
+- H2O casebook: https://opencasebook.org/casebooks/87401-digital-platforms-in-the-age-of-content-moderation/
+- UT Austin CS curriculum: https://www.cs.utexas.edu/~ans/classes/cs395t/pdf/satariano-mozur-ai-killer-robots-nyt.pdf
+
+### Stats Update
+- Journalists: 106 → 108
+- Multi-pub journalists: 104 → 106
+- New fields introduced: notable_articles, co_author_network, framing_analysis (first journalist to get all three — will be replicated for other high-priority profiles)
+- Tests: 1,127 (1,125 passed + 2 xfailed), all passing
+- Commit: `073c8ab`, pushed to GitHub
