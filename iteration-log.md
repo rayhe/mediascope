@@ -8602,3 +8602,37 @@ MIT Technology Review "The Meta hack shows there's more to AI security than Myth
 
 ### Commit
 a6f8e9d — pushed to GitHub
+
+## 2026-06-30 20:00 PT — Type B: Journalist/Publication Research — Eileen Guo Deep Expansion
+
+### Journalist
+Eileen Guo — Senior reporter for features and investigations at MIT Technology Review. Profile expanded from 3 to 6 career entries.
+
+### New Career Entries
+1. **Tufts University** (2008-2012): BA, participated in FieldEx (military-civilian peace/stability operations simulation). Education event type — excluded from migration detection.
+2. **McChrystal Group** (2011-2012): Leadership development for digital communications. Consulting firm founded by retired Gen. Stanley McChrystal (former ISAF commander in Afghanistan). RARE: Direct military consulting experience is extremely unusual among tech/AI reporters.
+3. **MIT Press Innovations Journal** (2015-2016): Launch editor and senior advisor for strategy at "Innovations: Technology | Governance | Globalization." Bridging role between international development career and journalism — editing academic/policy content on technology governance.
+
+### Expanded Existing Entries
+- **Impassion Afghanistan**: Added WEF Global Agenda Council appointment, Diplomatic Courier recognition, concurrent Global Shapers founding curator role. Marked as formative experience for surveillance/biometrics lens.
+- **Freelance**: Expanded outlet list (20+ publications), detailed 4 fellowships (IWMF Adelante 2017/2018, Type Investigations Ida B. Wells 2020, FIJ 2020, Fuller Project 2020), added reporting locations (Afghanistan, China, Central America, Mexico/Tijuana, US).
+- **MIT TR**: Documented 7 major investigations with concrete impact metrics (Afghanistan biometrics, China Initiative/DOJ database, Worldcoin 6-country investigation, Amazon/iRobot EU antitrust, LA superspreader, NIST AI bias, "End of Privacy"/FT). Added collaboration patterns (Karen Hao, Melissa Heikkilä, FT partnership).
+
+### Toolkit Fixes
+1. **Migration detection expanded (tracker.py):** `_TENURE_EVENT_TYPES` broadened from `{hired, freelance}` to include `founded`, `foreign_posting`, `intern`, `returned`, `rehired`, `career_change`, `fellowship`, `other`. Guo's Impassion Afghanistan → freelance migration was invisible before. Education events deliberately excluded.
+2. **`foreign_posting` event type (models.py):** Added to `VALID_EVENT_TYPES`. Gideon Lichfield's Economist bureau rotations (Mexico City, Moscow, Jerusalem) used this type and were crashing the loader.
+3. **Approximate date parsing (tracker.py):** `_parse_date` now strips leading `~` markers (`~2022` → `2022`). Isabella Ward's Bloomberg entry used this format and crashed the full loader.
+
+### Tests Added
+- `test_founded_event_generates_migration`: 3-step career (founded → freelance → hired) verifies both migrations detected
+- `test_education_event_excluded_from_migration`: education → hired verifies zero migrations
+
+### Stats
+- Tests: 1064 passing (+2)
+- Journalists tracked: 106
+- Eileen Guo career entries: 6 (was 3)
+- Eileen Guo migrations detected: 4 (McChrystal → Impassion, Impassion → MIT Press, MIT Press → freelance, freelance → MIT TR)
+- Valid event types: 15 (+1: foreign_posting)
+
+### Commit
+7323d80 — pushed to GitHub
