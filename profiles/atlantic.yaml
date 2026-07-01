@@ -52,7 +52,11 @@ ownership_chain:
       - "https://subscriptioninsider.com/the-atlantic-builds-beyond-content/"
   - name: "Atlantic Media"
     entity_type: "parent_company"
-    description: "Majority owned by Emerson Collective since July 2017. David G. Bradley retained minority share initially; Emerson likely acquired full ownership."
+    description: >
+      Majority owned by Emerson Collective since July 2017. David G. Bradley retained minority
+      stake; Atlantic Media still holds minority share as of 2020 (per Wikipedia). Bradley remains
+      active in media investing: PitchBook shows investments in Semafor (Jan 2026) and Charter
+      (Jun 2022, exited Jun 2025).
   - name: "Emerson Collective"
     entity_type: "holding_company"
     description: >
@@ -87,6 +91,32 @@ ownership_chain:
           LPJ estimated to hold ~$16B+ in Apple stock. Among Apple's largest individual shareholders.
         competitive_with: ["Meta"]
         notes: "Apple competes with Meta in hardware (Vision Pro vs Quest), AI (Apple Intelligence vs Meta AI), and uses 'privacy' narrative that undermines Meta's advertising model."
+      - entity: "Walt Disney Company (via LPJ Trust)"
+        relationship: >
+          LPJ Trust inherited a massive Disney stake from Steve Jobs' Pixar acquisition (Disney
+          acquired Pixar in 2006, making Jobs Disney's largest individual shareholder at ~7%).
+          SEC filing history:
+            - 2014 (SC 13G): LPJ Trust held 128,566,602 shares = 7.6% of Disney
+            - ~2015: Stake reduced to ~64M shares (~4%), dropping below 5% disclosure threshold
+            - 2016 (SC 13G/A, Amendment 2): 40,284,667 shares = 2.5% of Disney
+            - Post-2016: Below SEC reporting threshold; current holdings unknown but presumed
+              to retain some position given no public report of full divestiture.
+          Disney (DIS) at ~$95.71/share (Jun 2026), market cap ~$168B.
+          Even the reduced 2016 position (40.3M shares) would be worth ~$3.9B at current prices.
+        competitive_with: ["Meta"]
+        source_urls:
+          - "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001540902&type=SC%2013G&dateb=&owner=include&count=40"
+          - "https://en.wikipedia.org/wiki/Laurene_Powell_Jobs"
+          - "https://www.cultofmac.com/356802/laurene-powell-jobs-slashed-her-disney-stake-in-half/"
+        notes: >
+          MAJOR UNDOCUMENTED CONFLICT: Disney owns Hulu, Disney+, ABC, ESPN, 20th Century Studios,
+          and National Geographic. Disney competes with Meta in: (1) streaming/content vs Meta's
+          video platforms (Facebook Watch, Instagram Reels), (2) advertising revenue (Disney's ad-
+          supported tiers compete for the same brand budgets), (3) attention economy (Disney parks,
+          streaming, sports all compete for consumer time). ESPN's streaming pivot and Disney+'s
+          ad tier put Disney in direct competition with Meta's advertising business model. This
+          stake is potentially the SECOND-LARGEST financial conflict after Apple — yet it has been
+          completely absent from the profile until this iteration.
       - entity: "io Products (Jony Ive / OpenAI)"
         relationship: >
           Emerson Collective was a founding backer of io Products, the AI hardware startup
@@ -145,8 +175,9 @@ ownership_chain:
           - "https://news.crunchbase.com/ai/world-labs-biggest-funding-rounds-weekly/"
           - "https://spectrum.ieee.org/fei-fei-li-world-labs"
         notes: >
-          Strengthens the pattern: EC now has financial positions in FOUR direct Meta AI/tech
-          competitors — Apple (via LPJ Trust, $16B+ stock), OpenAI (via io Products exit + licensing),
+          Strengthens the pattern: EC/LPJ now has financial positions in FIVE direct Meta
+          competitors — Apple (via LPJ Trust, $16B+ stock), Disney (via LPJ Trust, ~$3.9B+ stock),
+          OpenAI (via io Products exit + licensing),
           Mistral (open-source LLMs vs Llama), and World Labs (spatial AI/3D vs Reality Labs). Each
           investment creates editorial incentive for Atlantic coverage that frames Meta's competitive
           position negatively.
@@ -290,7 +321,8 @@ ownership_chain:
   - name: "Laurene Powell Jobs"
     entity_type: "individual"
     description: >
-      Net worth ~$13.5B (Forbes India 2024, other estimates range $11.5-16B). Apple connection
+      Net worth ~$11.9B (Bloomberg Billionaires Index, Jul 2025, ranked 244th globally;
+      earlier estimates ranged $11.5-16B — Forbes India 2024 cited ~$13.5B). Apple connection
       through inheritance from Steve Jobs (d. 2011). Deep AI investment portfolio through
       Emerson Collective. Also invested in education, environment, social justice.
       Reportedly signaled intent to give away her wealth ("My kids know that. Steve wasn't
@@ -485,7 +517,26 @@ known_conflicts:
     severity: 4
     evidence: "Forbes wealth estimates, Apple shareholder records"
     source_url: ""
-  - type: "investment_exit"
+  - type: "investment"
+    description: >
+      Owner Laurene Powell Jobs / LPJ Trust holds a significant Walt Disney Company stake
+      inherited from Steve Jobs' Pixar acquisition. SEC filings document: 128.6M shares (7.6%)
+      in 2014, reduced to 40.3M shares (2.5%) by 2016 (SC 13G/A). Below SEC disclosure threshold
+      since ~2016 but no public divestiture reported. At current DIS price (~$95.71), even the
+      reduced 2016 position would be worth ~$3.9B. Disney competes with Meta in streaming/content
+      (Disney+/Hulu vs Facebook Watch/Reels), advertising (Disney's ad-supported tiers compete for
+      the same brand budgets), and the broader attention economy (parks, sports, entertainment).
+      ESPN's streaming pivot puts Disney in direct competition with Meta's video ad revenue.
+    severity: 3
+    evidence: "SEC EDGAR SC 13G filings (CIK 0001540902), Cult of Mac, Barrons, Wikipedia."
+    source_urls:
+      - "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001540902&type=SC%2013G&dateb=&owner=include&count=40"
+      - "https://www.cultofmac.com/356802/laurene-powell-jobs-slashed-her-disney-stake-in-half/"
+      - "https://en.wikipedia.org/wiki/Laurene_Powell_Jobs"
+    notes: >
+      Potentially the second-largest financial conflict after Apple. Completely undocumented
+      in this profile until July 2026 iteration. The Disney-Meta competition extends across
+      advertising, content, and attention — three of Meta's core business dimensions.
     description: >
       CRITICAL NEW FINDING: Emerson Collective was a founding backer of io Products (Jony Ive's
       AI hardware startup), which OpenAI acquired for $6.5 BILLION in 2025. This creates a
@@ -858,8 +909,19 @@ litigation_connections:
       directing staff to outside reporting. Union demands: make deal terms available immediately,
       address questions 'without spin,' and negotiate contract language protecting jobs from AI.
       EIC Goldberg backed union's transparency demand publicly but the deal proceeded without
-      full disclosure to staff. Bargaining for AI contract language ongoing as of late 2024.
-    evidence: "The Wrap, NYGuild press release, TechCrunch, Ars Technica."
+      full disclosure to staff.
+      
+      RESOLUTION (2026): NewsGuild of New York reached a contract deal with The Atlantic after
+      2+ years of bargaining. Key AI-specific provisions:
+        - Editorial unit gets oversight and limits on AI use in newsroom
+        - Transparency and disclosure standards for AI-assisted content
+        - Deepfake prohibitions
+        - 4 extra weeks severance for AI-related layoffs (beyond standard severance)
+        - Salary floors: $66K (Business/Tech unit), $69K (Edit unit)
+        - No mandatory four-day RTO until 2026
+      This makes the Atlantic one of the first major publications with contractual AI guardrails
+      negotiated through collective bargaining.
+    evidence: "The Wrap, NYGuild press release, TechCrunch, Ars Technica, NewsGuild contract announcement."
     source_urls:
       - "https://www.thewrap.com/the-atlantic-union-demands-transparency-of-openai-deal-terms/"
       - "https://nyguild.org/news/the-atlantic-union-we-must-have-a-voice-in-how-ai-affects-our-work"
@@ -977,7 +1039,7 @@ editorial_history:
   ownership_change:
     - event: "Emerson Collective acquisition"
       date: "2017-07"
-      notes: "Laurene Powell Jobs' Emerson Collective acquired majority stake from David G. Bradley (retained minority). Peter Lattman (Emerson Collective staffer) named vice chairman immediately. LPJ holds ~$16B in Apple stock (Meta competitor). Key question: did coverage tone toward Apple competitors change after this ownership change?"
+      notes: "Laurene Powell Jobs' Emerson Collective acquired majority stake from David G. Bradley (who retained minority, still held as of 2020). Peter Lattman (Emerson Collective staffer) named vice chairman immediately. LPJ holds ~$16B in Apple stock AND ~$3.9B+ in Disney stock (Meta competitors). Key question: did coverage tone toward Apple/Disney competitors change after this ownership change?"
     - event: "Nicholas Thompson named CEO"
       date: "2020-12"
       notes: "Former Wired EIC hired as CEO. Creates direct Condé Nast editorial culture bridge. Under Thompson: profitability achieved, record subscriptions (1.4M+ by Feb 2026), 3 Pulitzer Prizes, OpenAI licensing deal (May 2024). Revenue over $100M. Also poached ~20 journalists from Washington Post."

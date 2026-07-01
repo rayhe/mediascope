@@ -9512,3 +9512,57 @@ Full analysis at `examples/sample_output/wired_meta_cannes_contractors_teens_202
 - New fields introduced: notable_articles, co_author_network, framing_analysis (first journalist to get all three — will be replicated for other high-priority profiles)
 - Tests: 1,127 (1,125 passed + 2 xfailed), all passing
 - Commit: `073c8ab`, pushed to GitHub
+
+---
+
+## 2026-07-01 14:00 PT — Type C: Ownership & Funding Deep Dive (Atlantic / Emerson Collective / LPJ Trust)
+
+### Focus
+The Atlantic profile — shortest at 1,132 lines, chosen for enrichment.
+
+### Findings
+
+**1. MAJOR GAP: Disney/Walt Disney Company stake (LPJ Trust) — completely absent from profile**
+SEC EDGAR filings document LPJ Trust's Disney inheritance from Steve Jobs' Pixar acquisition:
+- 2014 (SC 13G): 128,566,602 shares = 7.6% of Disney
+- ~2015: Reduced to ~64M shares (~4%), below 5% disclosure threshold
+- 2016 (SC 13G/A, Amendment 2): 40,284,667 shares = 2.5% of Disney
+- Post-2016: Below SEC reporting threshold, current holdings unknown but no full divestiture reported
+- At current DIS price (~$95.71), even the 2016 position = ~$3.9B
+- Disney competes with Meta in streaming/content, advertising (ad-supported tiers), and attention economy
+- This is potentially the SECOND-LARGEST financial conflict after Apple — yet was completely undocumented
+
+**2. Union contract resolved — AI-specific terms**
+NewsGuild of New York reached contract deal after 2+ years of bargaining:
+- AI oversight/limits for editorial unit
+- Transparency/disclosure standards for AI content
+- Deepfake prohibitions
+- 4 extra weeks severance for AI-related layoffs
+- Salary floors: $66K (Business/Tech), $69K (Edit)
+- No four-day RTO until 2026
+
+**3. David Bradley minority stake status confirmed**
+PitchBook shows Bradley still active in media investing: Semafor (Jan 2026), Charter (Jun 2022, exited Jun 2025). Wikipedia confirms Atlantic Media still holds minority stake as of 2020.
+
+**4. LPJ net worth update**
+Bloomberg Billionaires Index (Jul 2025): $11.9B, ranked 244th globally. Previous profile cited ~$13.5B (Forbes India 2024). Updated to reflect more recent Bloomberg figure.
+
+**5. EC lobbying confirmed current**
+$60K total (2026), all via Amplify Education subsidiary — zero tech/AI/copyright lobbying. Already documented, no changes needed.
+
+**6. No new EC investments found**
+Checked for Anthropic (confidential IPO filing, no confirmed EC investment). World Labs $1B round (Feb 2026) already documented.
+
+### Changes Made
+- Added Disney/DIS stake to investments section with full SEC filing history and competitive analysis
+- Added Disney as known_conflict (severity 3) with SEC source URLs
+- Updated LPJ net worth to $11.9B (Bloomberg Jul 2025) from $13.5B (Forbes India 2024)
+- Updated Atlantic Media description: Bradley minority stake confirmed current, added Semafor/Charter investments
+- Updated union_bargaining_dispute: resolution with AI-specific contract terms (deepfake prohibitions, AI severance, salary floors)
+- Updated meta-competitor count: FOUR → FIVE (adding Disney alongside Apple, OpenAI, Mistral, World Labs)
+- Updated ownership_change event notes to include Disney stake
+
+### Profile Stats
+- Atlantic profile: 1,132 → 1,194 lines (+62)
+- Tests: 1,125 passed, 2 xfailed (unchanged)
+- Sources: SEC EDGAR, Cult of Mac, Bloomberg Billionaires Index, PitchBook, Wikipedia, NewsGuild
