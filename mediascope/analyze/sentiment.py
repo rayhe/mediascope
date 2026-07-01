@@ -458,6 +458,34 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "punishingly",
     "keystroke", "keystrokes",
     "involuntarily",
+    # Financial/investor emotional language — needed for stock analysis,
+    # investor sentiment pieces, and financial opinion columns covering
+    # tech companies.  Identified in Barchart "Meta Shows Urgency"
+    # (Jun 30, 2026): these terms carry editorial weight in financial
+    # reporting that the toolkit previously missed.
+    "exasperated", "exasperation",
+    "sagging", "sagged",
+    "underperforming", "underperformed", "underperformance",
+    "restless", "restlessness",
+    "tsunami",
+    "eye-popping", "eye popping",
+    "soared", "soaring",
+    "tanked", "tanking",
+    "plummeting", "plummet",
+    "surged", "surging",
+    "hemorrhaging", "hemorrhage",
+    "bloodbath",
+    "free fall", "free-fall", "freefall",
+    "meltdown",
+    "nosedive", "nosedived",
+    "cratered", "cratering",
+    "evaporated", "evaporating",
+    "wiped out",
+    "battered", "battering",
+    "spiraling", "spiraled",
+    "ballooning", "ballooned",
+    "burgeoning",
+    "staggering",
 ]
 
 # Passive/victim vs. active/powerful framing indicators

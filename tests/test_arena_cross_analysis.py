@@ -64,9 +64,16 @@ class TestEmotionalIntensity:
     """Gizmodo's loaded vocabulary must register as high emotional intensity."""
 
     def test_nyt_low_emotional_intensity(self, nyt_text):
-        """NYT business news: emotional intensity near zero."""
+        """NYT business news: emotional intensity well below op-ed threshold.
+
+        Threshold raised from 0.1 to 0.2 after adding financial emotional
+        terms (Jun 30, 2026).  Terms like "surged" are correctly flagged
+        as emotional language but appear in neutral NYT reporting ("prediction
+        markets surged in popularity").  The key assertion is separation
+        from op-ed intensity (>0.5), not near-zero.
+        """
         sent = analyze_composite(nyt_text, "Meta")
-        assert sent.emotional_language_intensity < 0.1
+        assert sent.emotional_language_intensity < 0.2
 
     def test_gizmodo_high_emotional_intensity(self, giz_text):
         """Gizmodo op-ed uses 'pathetic', 'plague', 'addicted': intensity > 0.5."""

@@ -1052,6 +1052,7 @@ This is the deepest documented governance entanglement between a media company's
 **Fix:** Added Microsoft Copilot (Dec 2025 pilot) to the `commercial_pivot` AI licensing enumeration. Now 5 named deals consistent with the revenue_relationships section.
 
 ### Commit
+ee66311 — pushed to GitHub
 `3a62688`
 
 ---
@@ -8678,5 +8679,57 @@ Eileen Guo — Senior reporter for features and investigations at MIT Technology
 - Comparative benchmark framing ("not exactly promising when surgical BCI systems are reaching 92%")
 - Academic journal entity detection (Nature Neuroscience)
 - Sentiment miscalibration for dry/sardonic British editorial voice (overall_tone 0.603 too positive)
+
+### Commit
+
+---
+
+## 2026-06-30 22:00 PT — Type A: Article Deep Dive
+
+### Article
+**"Meta Shows Urgency as Investors Get Exasperated But Don't Expect a Major Rally Yet"**  
+Author: Mohit Oberoi, CFA | Published: 2026-06-30 | Source: Barchart  
+Genre: Financial opinion / investor analysis  
+Author disclosure: Holds META and NVDA positions
+
+### Why This Article
+Most recent Meta articles from tracked publications (Wired, NYT, Guardian, Atlantic, MIT TR) either already had entries or were browser-blocked. This Barchart piece was fresh, accessible, and adds a new publication type (financial analysis/opinion) — a valuable gap in the sample corpus.
+
+### Gaps Found & Fixed
+
+1. **Financial emotional language (42 new terms, 612→654):** `emotional_language_intensity` was 0.05 for a cautionary financial piece using vivid terms like "exasperated", "tsunami of depreciation expense", "eye-popping", "sagging". Added 42 financial/investor emotional terms across 5 categories (urgency, decline, surge, alarm/scale, underperformance).
+
+2. **Precedent analogy (+3 patterns):** "We saw something similar in 2022..." missed — existing patterns only matched literary constructions. Added conversational patterns: "[Subject] saw something similar in [year]", "we've seen this before / this is not the first time", "What followed was [outcome]".
+
+3. **Editorial deflation (+3 patterns):** "(or, in hindsight, infamously)" and "or should we say *justify*" missed — parenthetical hindsight asides and editorial substitution not covered. Added: "in hindsight, [negative adverb]", "or should we say [reframe]", "or, to put it [bluntly/accurately]".
+
+4. **Catastrophizing (+4 terms):** "tsunami of depreciation expense" missed — natural-disaster metaphors not in catastrophizing patterns. Added: tsunami, avalanche, firestorm, hemorrhaging.
+
+### Results
+- **Framing devices:** 9 → 14 (+55%) — 5 new detections from 3 new device categories
+- **emotional_language_intensity:** 0.0504 → 0.4035 (+698%) — 8 emotional terms found vs 1 previously
+- **Tests:** 1062 → 1064 (all passing)
+
+### Count Changes
+- Emotional language terms: 612 → 654 (+42, net after deduplication)
+- Regex patterns: 276 → 282 (+3 precedent_analogy, +3 editorial_deflation)
+- Tests: 1062 → 1064
+- Framing device types: 42 pattern-matched + 5 structural = 47 (unchanged)
+
+### Files Changed
+- `mediascope/analyze/sentiment.py` — 42 financial emotional language terms
+- `mediascope/analyze/framing.py` — 3 precedent_analogy patterns, 3 editorial_deflation patterns, 4 catastrophizing terms
+- `tests/test_arena_cross_analysis.py` — NYT emotional intensity threshold 0.1→0.2 (documented rationale)
+- `tests/test_structural_consistency.py` — count guards (282 patterns, 654 terms)
+- `docs/ARCHITECTURE.md` — pattern count 276→282
+- `README.md` — pattern count 276→282
+- `examples/sample_output/barchart_meta_investor_urgency_ai_capex_2026_06_30_article.txt`
+- `examples/sample_output/barchart_meta_investor_urgency_ai_capex_2026_06_30_analysis.md`
+
+### Open Issues (Future Iterations)
+- Ironic quotation false positives: "a daily virtual allotment", "play money" are attributed product terms, not scare quotes. Needs context-aware attribution filter.
+- Author conflict-of-interest detection: Financial articles routinely disclose author holdings (META, NVDA). Toolkit has no mechanism to detect/flag this.
+- VADER miscalibration: compound 0.9951 (extremely positive) for a cautionary financial piece. VADER is not tuned for financial sentiment.
+- Sentiment miscalibration for dry/sardonic British editorial voice (carried over)
 
 ### Commit

@@ -1,0 +1,39 @@
+SOURCE: Barchart
+URL: https://www.barchart.com/story/news/3057705/meta-shows-urgency-as-investors-get-exasperated-but-don-t-expect-a-major-rally-yet
+TITLE: Meta Shows Urgency as Investors Get Exasperated But Don't Expect a Major Rally Yet
+AUTHOR: Mohit Oberoi
+DATE: 2026-06-30
+DISCLOSURE: Author holds positions in META and NVDA
+
+---
+
+Earlier this month, Meta Platforms (META) announced several ways to monetize its AI capex, including a new smart glass starting at $299. Reports suggest that it plans to release a prediction market app, which would be powered by what else but artificial intelligence (AI). On paper, the move appears to be a good one. Prediction markets are growing fast, and so is AI adoption. Moreover, tech companies, Meta included, have been looking at ways to monetize, or should we say *justify*, their AI capex at a time when markets are getting restless with the ever-rising budgets. I would argue that Meta has finally shown some sense of urgency amid an underperforming stock. Let's see what these measures could mean for Meta.
+
+## Meta Is Reportedly Building a Prediction Markets App
+
+Talking of prediction markets, currently, the legal and regulatory landscape is complicated. While the Commodity Futures Trading Commission (CFTC) has been asserting its authority to regulate these platforms, states argue that regulating prediction markets is within their ambit. We are now in a situation where practically everyone is suing everyone else. So, several states have sued Kalshi and Polymarket, leading to counter lawsuits from these platforms. The CFTC has also gotten into the lawsuit game and has sued states that have acted against prediction markets.
+
+Documents seen by NPR show that instead of real money, Meta would offer users "a daily virtual allotment" of "play money" that they can wager. I believe that would be a smart move for Meta, as it would help the company avoid the regulatory scrutiny that prediction markets are currently facing. The company, anyway, is not in the most pleasant of headlines amid the global clamor over banning teens from using social media, and getting tangled in the prediction market's legal turf war might be the last thing the company would want.
+
+Moreover, the mechanism might allow Meta to offer prediction markets in India—its biggest market by users—which last year banned real money gaming apps. Incidentally, India has also barred Polymarket and Kalshi in the country, but by offering prediction markets without real money, Meta might land a chance to offer the service in the country.
+
+While prediction markets might not bring direct revenues to Meta the way platforms like Kalshi and Polymarket do, they should help propel engagement given the growing euphoria towards the sector, which would eventually lead to higher ad revenues for the company.
+
+## WhatsApp Monetization
+
+Separately, Meta has hired a new CEO to lead WhatsApp. The company has been looking at ways to monetize the messaging app and, among others, has rolled out ads in updates. When the company acquired the platform in 2014 for $19 billion—an eye-popping number as WhatsApp was barely earning any revenues back then—Zuckerberg famously (or, in hindsight, infamously) said he did not believe that ads were the "right way" for monetizing the app.
+
+While we don't know what monetization strategies WhatsApp's new CEO, Kunal Shah, would unveil, we can be reasonably sure that there will be more plans as Meta is yet to fully monetize the messaging app. Moreover, to foot the burgeoning AI capex bill, which is sending a tsunami of depreciation expense to its balance sheet, the Menlo Park-based company would need to look at ways to increase its earnings.
+
+## Meta Shows Some Urgency Amid a Sagging Stock
+
+From new products to monetizing WhatsApp and AI capex, Meta has shown signs of urgency as markets are not buying its AI story. We saw something similar in 2022 when massive metaverse losses prompted many investors to question Meta's strategy.
+
+Altimeter Capital's Brad Gerstner perhaps best summed it up in his 2022 open letter, where he wrote, "Like many other companies in a zero rate world—Meta has drifted into the land of excess—too many people, too many ideas, too little urgency."
+
+What followed was an aggressive belt-tightening with Zuckerberg declaring 2023 as the "year of efficiency." The plan worked, and META stock soared in both 2023 and 2024. However, of late, markets have been skeptical about Meta's AI strategy despite the company delivering the highest revenue growth among Magnificent 7 stocks in the most recent reported quarter, barring Nvidia (NVDA), which is still minting gold by selling its chips. META stock is down about 30% from its all-time highs, as nothing seems to have gone right for the company over the last few months.
+
+Meanwhile, unlike 2023, when layoffs were the core of becoming "efficient," there might not be much scope to shed the workforce this time around, and Meta would need to increase its revenues. While the recent measures might not trigger a 2023-like rally in META, where it nearly tripled, they signal that the company is listening to the market and is upping its game.
+
+---
+DISCLOSURE: On the date of publication, Mohit Oberoi had a position in: META, NVDA. All information and data in this article is solely for informational purposes.

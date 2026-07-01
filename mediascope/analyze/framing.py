@@ -111,7 +111,8 @@ _CATASTROPHIZING_PATTERNS: list[re.Pattern] = [
         r"existential threat|unprecedented crisis|"
         r"existential risk|spiraling|death spiral|"
         r"collapse|collapsing|meltdown|implosion|"
-        r"free fall|freefall|nosedive)\b",
+        r"free fall|freefall|nosedive|"
+        r"tsunami|avalanche|firestorm|hemorrhaging)\b",
         re.IGNORECASE,
     ),
     re.compile(
@@ -1964,6 +1965,40 @@ _PRECEDENT_ANALOGY_PATTERNS: list[re.Pattern] = [
 
 _DEVICE_PATTERNS["precedent_analogy"] = _PRECEDENT_ANALOGY_PATTERNS
 
+# ---------------------------------------------------------------------------
+# Additional precedent_analogy patterns: conversational historical parallels.
+# Financial and opinion articles often use informal constructions like
+# "We saw something similar in [year]" or "this is not the first time"
+# rather than the literary constructions already covered above.
+#
+# Identified in Barchart "Meta Shows Urgency" (Jun 30, 2026):
+#   "We saw something similar in 2022 when massive metaverse losses..."
+# ---------------------------------------------------------------------------
+_PRECEDENT_ANALOGY_PATTERNS.extend([
+    # "We/[Subject] saw something similar in [year/period]"
+    re.compile(
+        r"\b(?:we|they|investors?|markets?|analysts?|observers?|critics?)\s+"
+        r"(?:saw|see|have seen|had seen)\s+(?:something|this|a pattern)\s+"
+        r"(?:similar|like this|before)\b.{3,120}",
+        re.IGNORECASE,
+    ),
+    # "we've/we have seen this before" / "this is not the first time"
+    re.compile(
+        r"\b(?:we'?ve\s+seen\s+this\s+before|"
+        r"this\s+is\s+(?:not|hardly|far\s+from)\s+the\s+first\s+time|"
+        r"history\s+(?:repeating|repeated|repeats)|"
+        r"(?:it'?s|this\s+is)\s+(?:a\s+)?déjà\s+vu|"
+        r"(?:another|yet\s+another|a\s+repeat\s+of\s+the)\s+\d{4})\b.{0,80}",
+        re.IGNORECASE,
+    ),
+    # "what followed was" / "what came next was" — narrative setup framing
+    # that imports the outcome of a past cycle as predictive template
+    re.compile(
+        r"\bwhat\s+followed\s+was\b.{3,100}",
+        re.IGNORECASE,
+    ),
+])
+
 
 # ---------------------------------------------------------------------------
 # Scale/magnitude framing: editorial device that deploys large raw numbers,
@@ -3051,6 +3086,38 @@ _EDITORIAL_DEFLATION_PATTERNS: list[re.Pattern] = [
 ]
 
 _DEVICE_PATTERNS["editorial_deflation"] = _EDITORIAL_DEFLATION_PATTERNS
+
+# ---------------------------------------------------------------------------
+# Additional editorial_deflation patterns: parenthetical hindsight asides
+# and editorial reframing ("or should we say").
+#
+# Identified in Barchart "Meta Shows Urgency" (Jun 30, 2026):
+#   "(or, in hindsight, infamously)" — parenthetical aside that deflates
+#   a supposedly positive framing.
+#   "or should we say *justify*" — editorial reframing that substitutes
+#   the source's positive term with a skeptical one.
+# ---------------------------------------------------------------------------
+_EDITORIAL_DEFLATION_PATTERNS.extend([
+    # "in hindsight, [negative term]" — parenthetical hindsight deflation
+    re.compile(
+        r"\b(?:in\s+hindsight|looking\s+back|with\s+(?:the\s+benefit\s+of\s+)?hindsight)"
+        r",?\s*(?:\w+\s+)?"
+        r"(?:infamously|ironically|unfortunately|mistakenly|naively|foolishly|"
+        r"wrongly|prematurely|optimistically|disastrously)\b",
+        re.IGNORECASE,
+    ),
+    # "or should we say [skeptical reframe]"
+    re.compile(
+        r"\bor\s+should\s+we\s+say\b.{3,60}",
+        re.IGNORECASE,
+    ),
+    # "or, to put it [another/more] [bluntly/accurately/honestly]"
+    re.compile(
+        r"\bor,?\s+to\s+put\s+it\s+(?:another|more)\s+"
+        r"(?:way|bluntly|accurately|honestly|plainly|charitably|uncharitably)\b",
+        re.IGNORECASE,
+    ),
+])
 
 
 # ---------------------------------------------------------------------------
