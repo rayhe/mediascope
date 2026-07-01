@@ -286,11 +286,32 @@ class TestTestFileListingConsistency:
         assert match, (
             "ARCHITECTURE.md is missing the 'N tests across M test files' header."
         )
+        claimed_total = int(match.group(1))
         claimed_file_count = int(match.group(2))
         actual_file_count = len(on_disk)
         assert claimed_file_count == actual_file_count, (
             f"ARCHITECTURE.md claims {claimed_file_count} test files, "
             f"but {actual_file_count} exist on disk."
+        )
+        actual_total = self._count_pytest_tests()
+        assert claimed_total == actual_total, (
+            f"ARCHITECTURE.md header claims {claimed_total} tests, "
+            f"but actual pytest-collected count is {actual_total}. "
+            f"Update the header."
+        )
+
+    def test_architecture_test_topics_bucket_count(self):
+        """ARCHITECTURE.md test_topics.py description must reference 22 topic buckets."""
+        doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
+        match = re.search(r"test_topics\.py.*?all\s+(\d+)\s+buckets", doc)
+        assert match, (
+            "ARCHITECTURE.md test_topics.py row is missing topic bucket count "
+            "reference (expected 'all 22 buckets')."
+        )
+        claimed = int(match.group(1))
+        assert claimed == 22, (
+            f"ARCHITECTURE.md test_topics.py description references {claimed} "
+            f"topic buckets, should be 22."
         )
 
     def test_readme_lists_all_test_files(self):
@@ -323,12 +344,64 @@ class TestTestFileListingConsistency:
         assert match, (
             "README.md is missing the '**N tests** across M test files' header."
         )
+        claimed_total = int(match.group(1))
         claimed_file_count = int(match.group(2))
         actual_file_count = len(on_disk)
         assert claimed_file_count == actual_file_count, (
             f"README.md claims {claimed_file_count} test files, "
             f"but {actual_file_count} exist on disk."
         )
+        actual_total = self._count_pytest_tests()
+        assert claimed_total == actual_total, (
+            f"README.md header claims {claimed_total} tests, "
+            f"but actual pytest-collected count is {actual_total} "
+            f"({self._count_def_tests()} def test_ + parametrize expansions). "
+            f"Update the header."
+        )
+
+    def _count_def_tests(self) -> int:
+        """Count actual test function definitions across all test files.
+
+        Uses a regex anchored to line-start (after optional whitespace) so
+        occurrences of 'def test_' inside strings, docstrings, or comments
+        are not counted.
+        """
+        tests_dir = _REPO_ROOT / "tests"
+        total = 0
+        for f in tests_dir.glob("test_*.py"):
+            total += len(re.findall(r"^\s+def test_", f.read_text(), re.MULTILINE))
+        return total
+
+    def _count_parametrize_expansions(self) -> int:
+        """Count extra tests from @pytest.mark.parametrize decorators.
+
+        Each parametrize decorator with N items produces N tests from 1 def,
+        so the expansion is (N - 1) per decorator.
+        """
+        tests_dir = _REPO_ROOT / "tests"
+        extra = 0
+        for f in tests_dir.glob("test_*.py"):
+            content = f.read_text()
+            for m in re.finditer(
+                r"@pytest\.mark\.parametrize\(\s*\"[^\"]+\",\s*\[(.*?)\]",
+                content,
+                re.DOTALL,
+            ):
+                # Count comma-separated items in the parametrize list.
+                # Items may contain commas inside strings, but since these are
+                # test params (simple strings/numbers), top-level split works.
+                items_text = m.group(1).strip()
+                if not items_text:
+                    continue
+                # Split by comma not inside quotes — approximate via counting
+                # top-level items separated by newlines + commas
+                items = [i.strip() for i in items_text.split(",") if i.strip()]
+                extra += len(items) - 1
+        return extra
+
+    def _count_pytest_tests(self) -> int:
+        """Total pytest-collected test count (def test_ + parametrize expansions)."""
+        return self._count_def_tests() + self._count_parametrize_expansions()
 
 
     def test_readme_per_file_test_counts(self):
@@ -341,14 +414,14 @@ class TestTestFileListingConsistency:
             readme_counts[m.group(1)] = int(m.group(2))
         assert readme_counts, "No per-file test counts found in README.md table."
         mismatches = []
-        # Split pattern to avoid self-matching when scanning this file
-        _TEST_FUNC = "def " + "test_"
         for filename, claimed in sorted(readme_counts.items()):
             path = tests_dir / filename
             if not path.exists():
                 continue  # phantom-file guard handles this
             content = path.read_text()
-            actual = content.count(_TEST_FUNC)
+            # Use regex anchored to line-start to avoid counting
+            # occurrences in strings, docstrings, or comments.
+            actual = len(re.findall(r"^\s+def test_", content, re.MULTILINE))
             if actual != claimed:
                 mismatches.append(
                     f"  {filename}: README says {claimed}, actual {actual}"

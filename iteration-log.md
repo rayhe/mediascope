@@ -9117,3 +9117,29 @@ Interview-heavy profile article exposing ironic_quotation false positives from a
 - **Named individual entity detection:** 24 named individuals missed in this article including the central subject. NER integration (spaCy) would fix this but is out of scope.
 - **Wire service ironic_quotation false positives:** (from prior iteration) — still open.
 - **Government/regulatory entity extraction gap:** (from prior iteration) — still open.
+
+## 2026-07-01 05:00 PT — Type D: Toolkit Quality & Documentation
+
+### Focus
+Fix self-referential test counting bug and stale doc headers.
+
+### Changes
+1. **Fixed `_count_def_tests()` false-positive bug:** The helper method used `.count("def test_")` on raw file text, which counted occurrences inside docstrings and f-strings (3 false positives in test_structural_consistency.py itself). Replaced with `re.findall(r"^\s+def test_", ..., re.MULTILINE)` to match only actual function definitions. Corrects 1042→1039 raw count.
+2. **Fixed `test_readme_per_file_test_counts` same bug:** Per-file count validator also used `.count()`. Updated to use the same regex approach.
+3. **Updated README.md header:** 1070→1067 tests (1039 def test_ + 28 parametrize expansions = 1067 pytest-collected).
+4. **Updated ARCHITECTURE.md header:** 1070→1067 tests.
+5. **Updated README.md per-file count:** test_structural_consistency.py 55→52 (3 false positives removed).
+6. **Also fixed (from prior session):** ARCHITECTURE.md "all 18 buckets"→"all 22 buckets" for test_topics.py, added 4 structural guards (total test count header validation, ARCHITECTURE.md header guard, bucket count guard).
+
+### Test Results
+- 1067 passed, 0 failed (41 files)
+- All 52 structural consistency tests pass
+
+### Files Changed
+- `tests/test_structural_consistency.py` — _count_def_tests() regex fix, test_readme_per_file_test_counts regex fix, 4 new structural guards
+- `README.md` — header count 1070→1067, per-file count 55→52, descriptions updated
+- `docs/ARCHITECTURE.md` — header count 1070→1067, test_topics bucket count 18→22, descriptions updated
+
+### Open Issues (Future Iterations)
+- **test_readme_test_topics_description_says_16 misleading name:** Test name references "16" but validates count of 22. Cosmetic, no logic bug.
+- **METHODOLOGY.md line 222 stale assertion message:** Error text says "Should be 17" but assertion itself correctly checks 22. Cosmetic.
