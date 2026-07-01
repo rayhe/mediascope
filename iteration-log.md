@@ -9244,3 +9244,81 @@ Fix self-referential test counting bug and stale doc headers.
 ### Open Issues (Future Iterations)
 - **test_readme_test_topics_description_says_16 misleading name:** Test name references "16" but validates count of 22. Cosmetic, no logic bug.
 - **METHODOLOGY.md line 222 stale assertion message:** Error text says "Should be 17" but assertion itself correctly checks 22. Cosmetic.
+
+---
+
+## Iteration: 2026-07-01 09:00 PT — Type A: Article Deep Dive
+
+**Article:** Wired, "Meta Contractors Posed as Teens to Prompt Rival Chatbots About Suicide, Sex, and Drugs" (~Jul 2026, Cannes project)
+**Source:** technewsvision.co.uk mirror (wired.com blocked by policy)
+
+### What Changed
+
+1. **Scale AI entity cluster fix** (`entities.py`)
+   - Problem: Scale AI and Alexandr Wang were clustered under "Meta." In the Cannes article, this made Scale AI look like a Meta subsidiary when it was cited as industry precedent for Google.
+   - Fix: Moved Scale AI + Alexandr Wang to new "AI Infrastructure" cluster. Added Covalen and Character.AI to the same cluster.
+   - Updated existing test in `test_wired_gulag_patterns.py` to expect `AI Infrastructure` cluster.
+
+2. **Catastrophizing "death of" false positive fix** (`framing.py`)
+   - Problem: "death of Jamey Rodemeyer" (a literal death — bisexual teenager who died by suicide) was flagged as catastrophizing.
+   - Fix: Split "death of" into its own pattern with `(?-i:[a-z])` lookahead so it only matches when followed by lowercase (abstract concepts like "death of journalism"), not proper nouns.
+   - Validated: "death of journalism" still detected. "death of Jamey Rodemeyer" correctly excluded.
+
+3. **"Outlook" source extraction false positive fix** (`sources.py`)
+   - Problem: "Outlook addresses" parsed "Outlook" as a named source (verb "addresses").
+   - Fix: Added software product names (Outlook, Windows, Chrome, Safari, Firefox, Edge, Teams, Slack, Discord, WhatsApp, Telegram, Signal, etc.) to `_SINGLE_NAME_ORG_STOPS` blocklist.
+
+4. **Deception/impersonation loaded_language patterns** (`framing.py`, +2 patterns → 295 total)
+   - New regex pattern: `posed as`, `posing as`, `impersonating`, `masquerading`, `pretending to be`, `fake/dummy/bogus/sham/decoy accounts/profiles`, `infiltrate`, `bombard`.
+   - This was the article's central framing device — "Posed as Teens" in the headline. Without it, the toolkit missed the core frame entirely.
+   - Plural fix: initial pattern only matched singular `account`; added `s?` suffix.
+
+5. **Espionage/deception emotional language terms** (`sentiment.py`, +12 terms → 692 total)
+   - Added: `posed as`, `posing as`, `impersonating`, `masquerading`, `infiltrate`, `infiltrated`, `infiltrating`, `bombard`, `bombarded`, `bombarding`, `probe`, `probing`.
+   - emotional_language_intensity went from 0.1887 (pre-fix) to 0.4403 (post-fix).
+
+6. **Pattern count guards updated**
+   - `EXPECTED_TOTAL_PATTERNS`: 293→295 in `test_structural_consistency.py`, `ARCHITECTURE.md`, `README.md`.
+   - `EMOTIONAL_LANGUAGE` count: 680→692 in `test_structural_consistency.py`.
+
+### New Test File
+
+- `tests/test_cannes_contractors.py` — 17 tests across 4 test classes:
+  - `TestScaleAICluster` (4 tests): Scale AI not in Meta, in AI Infrastructure; Covalen and Character.AI in AI Infrastructure.
+  - `TestCatastrophizingDeathOf` (4 tests): literal death of person excluded, abstract "death of journalism/democracy" detected.
+  - `TestOutlookSourceExclusion` (2 tests): Outlook as software product not extracted as source.
+  - `TestDeceptionImpersonationPatterns` (7 tests): posed as, posing as, impersonating, dummy accounts, fake accounts, infiltrate, bombard.
+
+### Analysis Annotation
+
+Full analysis at `examples/sample_output/wired_meta_cannes_contractors_teens_2026_07_analysis.md` including:
+- Manual vs toolkit sentiment comparison (-0.45 manual vs -0.24 toolkit — gap due to content-level horror invisible to word-level VADER)
+- All 9 framing devices validated (0 false positives)
+- 4 undetected framing patterns identified (outsourced intensity via catalog, delayed defense, scale magnitude, industry normalization undercut)
+- Ownership conflict note (Advance/Reddit stake, no disclosure)
+- Topic classification gap (child_safety ranked 3rd despite being core newsworthiness driver)
+
+### Test Results
+- 1088 passed, 0 failed (42 files)
+- All structural consistency tests pass
+
+### Files Changed
+- `mediascope/analyze/entities.py` — Scale AI/Alexandr Wang/Covalen/Character.AI → AI Infrastructure cluster
+- `mediascope/analyze/framing.py` — catastrophizing "death of" fix, deception/impersonation loaded_language pattern (+2 patterns = 295), plural accounts fix
+- `mediascope/analyze/sentiment.py` — EMOTIONAL_LANGUAGE +12 espionage/deception terms (692 total)
+- `mediascope/analyze/sources.py` — software product names added to `_SINGLE_NAME_ORG_STOPS`
+- `tests/test_structural_consistency.py` — pattern count 293→295, emotional language count 680→692
+- `tests/test_wired_gulag_patterns.py` — Scale AI test updated to expect AI Infrastructure cluster
+- `tests/test_cannes_contractors.py` — new, 17 tests
+- `docs/ARCHITECTURE.md` — pattern count 293→295, test count 1071→1088 (42 files), new test file listing
+- `README.md` — pattern count 293→295, test count 1071→1088 (42 files), new test file listing
+- `examples/sample_output/wired_meta_cannes_contractors_teens_2026_07_article.txt` — new article text
+- `examples/sample_output/wired_meta_cannes_contractors_teens_2026_07_analysis.md` — new analysis annotation
+
+### Open Issues (Future Iterations)
+- **OUTSOURCED_INTENSITY via catalog:** When a journalist presents a long catalog of disturbing specifics from source documents, the emotional impact is outsourced to the documents. Not detectable with current pattern matching.
+- **DELAYED_DEFENSE detection:** Structural placement of defense response (paragraph 10 of 14) is a meaningful editorial choice. No current detection for response-placement timing.
+- **Topic classification semantic weighting:** Keyword-frequency ranks child_safety 3rd despite being the article's core newsworthiness. Headline-aware or semantic weighting needed.
+- **"Business Insider" source splitting:** Source extraction parses "Insider" separately from "Business Insider." Low priority.
+- **test_readme_test_topics_description_says_16 misleading name:** (carried over) Test name references "16" but validates count of 22.
+- **METHODOLOGY.md line 222 stale assertion message:** (carried over) Error text says "Should be 17" but assertion correctly checks 22.

@@ -502,6 +502,12 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "ballooning", "ballooned",
     "burgeoning",
     "staggering",
+    # Espionage/deception/impersonation language — terms framing routine
+    # business practices (benchmarking, red-teaming, user testing) as
+    # covert operations or deceptive schemes
+    "posed as", "posing as", "impersonating", "masquerading",
+    "dummy accounts", "fake accounts", "bogus accounts",
+    "probe", "probing", "bombard", "bombarded", "bombarding",
 ]
 
 # Passive/victim vs. active/powerful framing indicators

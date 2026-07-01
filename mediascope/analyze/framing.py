@@ -118,7 +118,17 @@ _CATASTROPHIZING_PATTERNS: list[re.Pattern] = [
     re.compile(
         r"\b(?:could destroy|will destroy|threatens to destroy|"
         r"threatens to upend|could wipe out|"
-        r"death of|demise of|downfall of)\b",
+        r"demise of|downfall of)\b",
+        re.IGNORECASE,
+    ),
+    # "death of" only when followed by an abstract concept (lowercase word
+    # or "the"), NOT when followed by a proper noun (capitalized name).
+    # "death of the internet" = catastrophizing; "death of Jamey Rodemeyer"
+    # = factual reference to a person who literally died.
+    # Uses (?-i:) to disable IGNORECASE for the lookahead character class,
+    # so [a-z] only matches actual lowercase letters.
+    re.compile(
+        r"\bdeath of(?=\s+(?:the\s+)?(?-i:[a-z]))",
         re.IGNORECASE,
     ),
     # "end of" only when followed by abstract/institutional objects, not events
@@ -430,6 +440,22 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"\b(?:quietly|secretly|covertly|surreptitiously|discreetly|"
         r"without (?:notice|disclosure|announcing|telling)|"
         r"behind (?:closed doors|the scenes))\b",
+        re.IGNORECASE,
+    ),
+    # Deception / impersonation / espionage language — terms that frame
+    # standard business practices (competitive benchmarking, user testing,
+    # mystery shopping, red-teaming) as covert operations, impersonation
+    # schemes, or intelligence gathering.  Distinct from the secrecy
+    # pattern above: these characterise the *method* as deceptive rather
+    # than the announcement as secretive.
+    # Discovered via Wired Meta "Cannes" contractors article (Jul 2026):
+    # "instructed to pose as minors", "probe", "dummy under-18 accounts"
+    re.compile(
+        r"\b(?:pose[sd]?\s+as|posing\s+as|impersonat(?:e[sd]?|ing)|"
+        r"masquerad(?:e[sd]?|ing)|pretend(?:ed|ing)\s+to\s+be|"
+        r"(?:fake|dummy|bogus|sham|decoy)\s+(?:account|profile|identity|persona)s?|"
+        r"infiltrat(?:e[sd]?|ing|ion)|"
+        r"bombard(?:ed|ing|s)?)\b",
         re.IGNORECASE,
     ),
     # "Dormant" / hidden capability language — require proximity to feature/code

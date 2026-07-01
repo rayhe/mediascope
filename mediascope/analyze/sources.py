@@ -602,6 +602,9 @@ def extract_sources(text: str) -> list[SourceMention]:
         "First", "Second", "Third", "Finally", "Overall",
         "Like", "Similar", "Another", "According", "Rather",
         "True", "False", "None", "Yes", "Yeah",
+        # Software product names that look like surnames
+        "Outlook", "Windows", "Chrome", "Safari", "Firefox",
+        "Photoshop", "Figma", "Notion", "Linear", "Canva",
     }
     single_name_verb = re.compile(
         rf"\b([A-Z][a-z]{{2,}})\s+({verb_alternation})\b",
