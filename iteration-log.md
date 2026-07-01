@@ -8836,3 +8836,85 @@ Most recent Meta articles from tracked publications (Wired, NYT, Guardian, Atlan
 **Commit:** 8fb7dcd
 **Tests:** 1064 passed
 **Files changed:** profiles/careers/journalists.yaml, profiles/careers/editorial_changes.yaml, tests/test_nyt_ai_reviews.py (105 insertions, 17 deletions)
+
+## 2026-07-01 01:00 PT — Type A: Article Deep Dive — Malwarebytes Meta AI Support Bot Hack
+
+### Article
+**Malwarebytes: "Meta's AI support bot happily handed Instagram accounts to hackers"** (June 2026)
+- Danny Bradbury. Cybersecurity vendor blog analyzing Meta's AI support bot confused deputy vulnerability.
+- Attack chain: VPN geo-spoof → password reset → AI support chat → email change without identity verification.
+- Victims: Obama White House, Sephora, US Space Force, Jane Manchun Wong. Andy Stone confirmed patch.
+- Central technique: sustained anthropomorphization of the AI bot as a character with agency and blame.
+
+### Toolkit Results Before Changes
+- **2 framing devices:** 2× ironic_quotation (missed all anthropomorphization)
+- **emotional_language_intensity:** 0.1145 (missed hijackers, blackmailed, defaced, snafu, shedding, attacker)
+- **WIRED false positive:** "wired into Meta's account management systems" detected as WIRED publication
+- **Sources:** 1 (Andy Stone only — missed Brian Krebs despite "According to veteran cybersecurity reporter Brian Krebs")
+- **Topics:** executive_behavior (0.086) — wildly wrong for a cybersecurity article
+- **Missing entities:** Jane Manchun Wong, Brian Krebs — no Cybersecurity/Research cluster
+
+### Changes Made
+
+#### 1. Homograph disambiguation filter (entities.py)
+- New `_HOMOGRAPH_VERB_FILTERS` dict: checks post-match context for ambiguous aliases
+- First entry: "wired" suppressed when followed by prepositions (into, to, for, in, up, together, through, the, its, their, his, her)
+- Generalizable to future homographs (e.g., "Apple" fruit vs. company)
+
+#### 2. Cybersecurity/Research entity cluster (entities.py, 11 aliases)
+- Brian Krebs, Jane Manchun Wong, Troy Hunt, Bruce Schneier, Peiter Zatko/Mudge, METR, CISA, NIST
+
+#### 3. Source extraction Pattern 3a (sources.py)
+- "according to [1-5 lowercase descriptor words] [Name]"
+- Catches: "According to veteran cybersecurity reporter Brian Krebs"
+
+#### 4. Emotional language expansion (sentiment.py, +11 terms)
+- hijackers, blackmail, blackmailed, blackmailing, defaced, defacing, defacement, snafu, snafus, shedding, attacker
+
+#### 5. Cybersecurity topic bucket (topics.py, 56 keywords)
+- Covers: hacking, breaches, authentication, security research, malware, vulnerability classes, security agencies
+- Distinct from privacy_data (collection/surveillance) and content_moderation (policy enforcement)
+
+#### 6. Guard/doc updates
+- `EMOTIONAL_LANGUAGE` count guard: 669→680
+- Topic bucket count: 20→21 (all docs + tests)
+- METHODOLOGY.md, ARCHITECTURE.md, AGENT_GUIDE.md, README.md updated
+- `test_structural_consistency.py`: all topic and term count guards updated
+
+### Toolkit Results After Changes
+- **WIRED false positive:** ELIMINATED ✅
+- **Entities:** +2 (Jane Manchun Wong, Brian Krebs) — both from new Cybersecurity/Research cluster
+- **emotional_language_intensity:** 0.4170 (was 0.1145) — 3.6× improvement ✅
+- **Sources:** +1 (Brian Krebs, expert=True) — from Pattern 3a ✅
+- **Topics:** cybersecurity (0.5286, 12 keywords matched) — was executive_behavior (0.086) ✅
+
+### Running Totals
+- Tests: 1064 (all passing)
+- Framing device types: 48 (43 pattern-matched + 5 structural)
+- Total patterns: 287
+- Emotional language terms: 680
+- Topic buckets: 21
+- Entity clusters: +1 (Cybersecurity/Research) — total varies by profile
+- Article analyses: ~72 in sample_output (144 files: article + analysis pairs)
+
+### Files Changed
+- `mediascope/analyze/entities.py` — `_HOMOGRAPH_VERB_FILTERS`, disambiguation check in detect_entities(), Cybersecurity/Research cluster
+- `mediascope/analyze/sentiment.py` — 11 emotional language terms
+- `mediascope/analyze/sources.py` — Pattern 3a (according to [title] [Name])
+- `mediascope/analyze/topics.py` — `cybersecurity` bucket (56 keywords)
+- `tests/test_structural_consistency.py` — updated count guards (680 terms, 21 buckets)
+- `docs/METHODOLOGY.md` — cybersecurity row + design note
+- `docs/ARCHITECTURE.md` — topics list
+- `docs/AGENT_GUIDE.md` — classify_topic description
+- `README.md` — topic count
+- `examples/sample_output/malwarebytes_meta_ai_support_bot_hack_2026_06_article.txt`
+- `examples/sample_output/malwarebytes_meta_ai_support_bot_hack_2026_06_analysis.md`
+
+### Open Issues (Future Iterations)
+- **Anthropomorphization/personification framing device:** This article's central technique — personifying AI as a character with agency and blame — has no matching device type. High value for AI coverage analysis where journalists consistently frame models/bots as autonomous actors.
+- **Causal blame chain framing:** "shedding headcount AND [investing in AI]" — implicit A→B→C argument structures. Distinct from loaded_language (individual words) and timeline_implication (temporal sequence).
+- **CamelCase social handle source attribution:** "TheCyberSecGuru reports" — unconventional handle format not caught by standard name patterns.
+- **Tone underestimation:** -0.05 toolkit vs -0.25 manual — negativity carried by framing structure (anthropomorphization, blame chain) rather than individual word sentiment. Improving this requires framing-aware tone correction.
+
+### Commit
+260698a — "Type A: Malwarebytes Meta AI support bot hack — 5 improvements"
