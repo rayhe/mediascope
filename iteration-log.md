@@ -8564,3 +8564,41 @@ TechTimes "Meta Conscripts 6,500 Engineers as Data Labelers: Revolt Exposes AI T
 
 ### Commit
 4b8e96a — pushed to GitHub
+
+## 2026-06-30 19:00 PT — Type A: Article Deep Dive — MIT TR Meta AI Agent Hack
+
+### Article
+MIT Technology Review "The Meta hack shows there's more to AI security than Mythos" (June 5, 2026, James O'Donnell). Covers attackers exploiting Meta's AI customer support agent to steal Instagram accounts via trivial social engineering. Sources: 404 Media (original report), 4 named academic experts (Gong/Duke, Ji/Georgetown, Jha/Wisconsin, Li/UIUC), 1 anonymous Meta spokesperson. Meta declined comment.
+
+### Gaps Found & Fixed
+1. **`analogy_metaphor` pattern gap (framing.py):** Demeaning simile "like some elementary school student who just wants to please the teacher" was missed. `analogy_stacking` matched (needs 3+ markers) but `analogy_metaphor` didn't have a general simile pattern. Added 2 new regex patterns: general simile (`"like [a/an/the/some] [noun phrase]"`) and qualified simile (`"almost/kind of/sort of like"`). Pattern count: 273 → 275.
+2. **"Media" source false positive (sources.py):** "404 Media reported" → regex strips "404" (numeric), extracts "Media" as named source. Added "Media" to `_SINGLE_NAME_ORG_STOPS`.
+3. **"She" source false positive (sources.py):** "She notes that..." at sentence start matched single-name pattern. "She"/"He" were missing from pronoun stops (only "They"/"We"/"You" covered). Added both to `_NAME_STOP_FIRST_WORDS`.
+4. **First-name duplicate sources (sources.py):** "Neil" and "Somesh" extracted alongside full names "Neil Gong" and "Somesh Jha". Dedup only checked `endswith` (catches last-name dupes) but not `startswith` (first-name dupes). Added `startswith(name + " ")` check to both Pattern 5b and 5c.
+5. **No-comment entity name (sources.py):** No-comment pattern captured refusal phrase ("did not respond to a request") as source name instead of entity ("Meta"). Added `_NO_COMMENT_SUBJECT_RE` regex to extract subject from preceding context.
+
+### Post-Fix Results
+| Dimension | Pre-Fix | Post-Fix |
+|-----------|---------|----------|
+| Sources | 11 (5 FP) | 6 (clean: 4 named + 1 anon + 1 no-comment) |
+| Framing devices | 15 | 17 (+2 analogy_metaphor) |
+| overall_tone | -0.4345 | -0.4358 |
+| source_authority | 0.8909 | 0.8000 |
+| anonymous_source_ratio | 0.1 | 0.2 |
+
+### Remaining Gaps (Not Fixed)
+- Security-utility trade-off framing: article presents token "both sides" structure, not detected as a framing device
+- Anthropic/Mythos contrast framing: ironic juxtaposition structure not captured
+- Expertise stacking / authority cascade: 4 professors from 4 elite universities as a deliberate sourcing pattern not quantified
+- Bo Li entity misclassification: clustered as Meta (Virtue AI → FAIR) but quoted here as independent UIUC professor
+
+### Stats
+- Tests: 1062 passing
+- Emotional language terms: 612
+- Framing device types: 47
+- Regex patterns: 275
+- Annotated examples: 136 (article + analysis)
+- Journalists tracked: 106
+
+### Commit
+Pending

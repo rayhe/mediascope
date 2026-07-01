@@ -3531,6 +3531,18 @@ _ANALOGY_METAPHOR_PATTERNS: list[re.Pattern] = [
         r"checking|examining|evaluating|testing|rating|scoring|reviewing)\b",
         re.IGNORECASE,
     ),
+    # "like [a/an/the/some/another] [noun phrase]" — general simile construction
+    # Requires article or determiner to avoid matching "like" as a verb.
+    # Borrowed from analogy_stacking to fire on single striking similes.
+    re.compile(
+        r"\blike (?:a|an|the|another|some) (?:\w+ ){0,3}\w+",
+        re.IGNORECASE,
+    ),
+    # "almost like" / "kind of like" / "sort of like" — qualified simile
+    re.compile(
+        r"\b(?:almost|kind of|sort of|a (?:bit|little) )\s*like\b",
+        re.IGNORECASE,
+    ),
     # "akin to" / "equivalent of" / "tantamount to" — formal analogy
     re.compile(
         r"\b(?:akin to|equivalent of|tantamount to|reminiscent of|analogous to|"

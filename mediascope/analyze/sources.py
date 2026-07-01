@@ -110,7 +110,7 @@ _NAME_STOP_FIRST_WORDS: set[str] = {
     "Already", "Perhaps", "Maybe", "Certainly",
     # Short common words that look like names when capitalized
     "Any", "All", "Our", "His", "Her", "Its", "The",
-    "They", "We", "You",
+    "They", "We", "You", "She", "He",
     # Day names — "on Thursday argues" should not extract "Thursday" as source
     "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
     "Saturday", "Sunday",
@@ -557,6 +557,7 @@ def extract_sources(text: str) -> list[SourceMention]:
         "Pinterest", "Reddit", "Discord", "Slack", "Zoom", "Stripe",
         "Square", "Block", "Shopify", "Congress", "Pentagon",
         "Reuters", "Bloomberg", "WIRED", "Wired",
+        "Media",  # "404 Media" → regex strips numeric prefix, leaving "Media"
         # Chinese / international tech companies
         "Alibaba", "Baidu", "Tencent", "Huawei", "Xiaomi",
         "ByteDance", "Bytedance",
@@ -585,6 +586,10 @@ def extract_sources(text: str) -> list[SourceMention]:
         # full name — e.g., skip "Bosworth" if "Andrew Bosworth" already
         # captured.  Prevents duplicate source entries for the same person.
         if any(seen.endswith(" " + name) for seen in seen_names):
+            continue
+        # Also skip if this single name is the FIRST word of a full name
+        # already seen — e.g., skip "Neil" if "Neil Gong" already captured.
+        if any(seen.startswith(name + " ") for seen in seen_names):
             continue
 
         seen_names.add(name)
@@ -645,6 +650,9 @@ def extract_sources(text: str) -> list[SourceMention]:
         # Skip if this single name is the last word of an already-seen
         # full name — same dedup logic as Pattern 5b.
         if any(seen.endswith(" " + name) for seen in seen_names):
+            continue
+        # Also skip first-name matches — same as Pattern 5b.
+        if any(seen.startswith(name + " ") for seen in seen_names):
             continue
         # Skip "called [Name]" when preceding context shows a naming
         # construction (e.g. "a model called Mythos"), not an attribution.
@@ -821,16 +829,29 @@ def extract_sources(text: str) -> list[SourceMention]:
             ))
 
     # Detect no-comment signals separately — tagged as source_type="no_comment"
-    # so they can be excluded from source counts and stance analysis
+    # so they can be excluded from source counts and stance analysis.
+    # Extract the entity name from the subject preceding the refusal verb,
+    # rather than using the refusal phrase itself as the source name.
+    _NO_COMMENT_SUBJECT_RE = re.compile(
+        r"\b([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)\s+"
+        r"(?:did not|declined to|chose not to|refused to|would not|couldn't)",
+    )
     for pat in no_comment_patterns:
         for m in pat.finditer(text):
-            descriptor = m.group().strip()
-            if descriptor.lower() in {n.lower() for n in seen_names}:
+            # Try to extract the entity name from the sentence subject
+            # by looking at the 80 chars before the match.
+            pre_ctx = text[max(0, m.start() - 80):m.end()]
+            subj_m = _NO_COMMENT_SUBJECT_RE.search(pre_ctx)
+            if subj_m:
+                entity_name = subj_m.group(1).strip()
+            else:
+                entity_name = m.group().strip()
+            if entity_name.lower() in {n.lower() for n in seen_names}:
                 continue
-            seen_names.add(descriptor)
+            seen_names.add(entity_name)
 
             sources.append(SourceMention(
-                name=descriptor,
+                name=entity_name,
                 is_anonymous=False,
                 is_expert=False,
                 affiliation="",
