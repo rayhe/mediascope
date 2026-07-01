@@ -382,6 +382,7 @@ def classify_topic(
     text: str,
     top_n: int = 3,
     custom_topics: dict[str, list[str]] | None = None,
+    headline: str | None = None,
 ) -> list[TopicScore]:
     """Classify text into topic buckets using keyword matching.
 
@@ -389,10 +390,19 @@ def classify_topic(
     of unique keyword matches and total match count, relative to the
     keyword set size.
 
+    When a headline is provided, topics whose keywords appear in the
+    headline receive a confidence boost (×1.5, capped at 1.0).  This
+    compensates for the well-known keyword-frequency problem where a
+    topically dominant but secondary theme (e.g., "AI development")
+    outscores the article's actual newsworthiness driver (e.g.,
+    "child_safety") because technical keywords appear more often in
+    the body even when the headline signals the real topic.
+
     Args:
         text: The article text to classify.
         top_n: Number of top topics to return.
         custom_topics: Optional additional topic keyword sets to include.
+        headline: Optional article headline for topic boosting.
 
     Returns:
         Top N TopicScore objects sorted by confidence (descending).
@@ -431,6 +441,19 @@ def classify_topic(
 
         confidence = 0.6 * keyword_coverage + 0.4 * density
         confidence = min(confidence, 1.0)
+
+        # Headline boost: if any of this topic's keywords appear in the
+        # headline, boost confidence by 50% (capped at 1.0).  The headline
+        # signals the article's core newsworthiness, so a topic keyword
+        # in the headline should outweigh mere body-frequency dominance.
+        if headline:
+            headline_hit = False
+            for pattern, _keyword in patterns:
+                if pattern.search(headline):
+                    headline_hit = True
+                    break
+            if headline_hit:
+                confidence = min(confidence * 1.5, 1.0)
 
         scores.append(
             TopicScore(

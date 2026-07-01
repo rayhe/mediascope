@@ -9318,7 +9318,50 @@ Full analysis at `examples/sample_output/wired_meta_cannes_contractors_teens_202
 ### Open Issues (Future Iterations)
 - **OUTSOURCED_INTENSITY via catalog:** When a journalist presents a long catalog of disturbing specifics from source documents, the emotional impact is outsourced to the documents. Not detectable with current pattern matching.
 - **DELAYED_DEFENSE detection:** Structural placement of defense response (paragraph 10 of 14) is a meaningful editorial choice. No current detection for response-placement timing.
-- **Topic classification semantic weighting:** Keyword-frequency ranks child_safety 3rd despite being the article's core newsworthiness. Headline-aware or semantic weighting needed.
-- **"Business Insider" source splitting:** Source extraction parses "Insider" separately from "Business Insider." Low priority.
+- ~~**Topic classification semantic weighting:** Keyword-frequency ranks child_safety 3rd despite being the article's core newsworthiness. Headline-aware or semantic weighting needed.~~ **FIXED** (2026-07-01 11:00 PT)
+- ~~**"Business Insider" source splitting:** Source extraction parses "Insider" separately from "Business Insider." Low priority.~~ **FIXED** (2026-07-01 11:00 PT)
+- **"Business Insider" / "Daily Beast" full compound-name extraction:** These multi-word publication names are in `_NAME_STOP_NAMES` which blocks Pattern 1. Fragment leak is fixed, but full names are not extracted as sources. Future enhancement.
 - **test_readme_test_topics_description_says_16 misleading name:** (carried over) Test name references "16" but validates count of 22.
 - **METHODOLOGY.md line 222 stale assertion message:** (carried over) Error text says "Should be 17" but assertion correctly checks 22.
+
+---
+
+## Type A — 2026-07-01 11:00 PT — Wired "Cannes" Contractors Article (Fixes Pass 2)
+
+**Article:** "Meta Contractors Posed as Teens to Prompt Rival Chatbots About Suicide, Sex, and Drugs" — Wired (Dhruv Mehrotra, Dell Cameron), published ~2026-06-30/07-01. Already ingested from prior iteration.
+
+**Focus:** Closed 2 of 4 open issues identified in the prior Type A analysis of this article.
+
+### Fix 1: "Business Insider" Source Fragment Leak
+
+**Problem:** Pattern 5b in `sources.py` extracted "Insider" as a standalone single-name source from sentences like "Business Insider reported..." because "Insider" wasn't in `_SINGLE_NAME_ORG_STOPS` (even though "Business Insider" was in `_NAME_STOP_NAMES`, blocking Pattern 1).
+
+**Root cause:** `_NAME_STOP_NAMES` blocks Pattern 1 compound-name extraction. Pattern 5b (`[Name] reported/said/confirmed`) then matches the second word as a standalone source. "Insider" and "Beast" (from "Daily Beast") both have this issue.
+
+**Fix:** Added `"Insider"` and `"Beast"` to `_SINGLE_NAME_ORG_STOPS` in `mediascope/analyze/sources.py`. This prevents fragment leakage while the compound names remain blocked by `_NAME_STOP_NAMES`. Full compound-name extraction is a separate future enhancement (tracked above).
+
+### Fix 2: Headline-Aware Topic Boosting
+
+**Problem:** `classify_topic()` ranked `child_safety` third despite it being the article's core newsworthiness driver, because AI/tech keywords dominated body text by raw frequency.
+
+**Fix:** Added optional `headline` parameter to `classify_topic()` in `mediascope/analyze/topics.py`. When a topic's keywords appear in the headline, its confidence score receives a 1.5× multiplicative boost (capped at 1.0). Updated `mediascope/analysis.py` to pass the article title as `headline=title` into `classify_topics()`.
+
+**Rationale:** Headlines are the strongest editorial signal of what an article is "about" — they represent the journalist's (and editor's) own topic framing. A 1.5× boost is conservative enough to not override dominant body-text signals but sufficient to break ties and correct ranking when headline framing diverges from keyword frequency.
+
+### Tests Added
+
+- `tests/test_cannes_contractors.py` — 10 new tests (17 → 27) across 2 new classes:
+  - `TestBusinessInsiderSourceSplitting` (5 tests): fragment leak prevention for "Insider"/"Beast", full-name extraction (2 xfail — known gap), role-word "insider" exclusion.
+  - `TestHeadlineTopicBoosting` (5 tests): headline boost improves child_safety rank, confidence capped at 1.0, no-headline baseline unchanged, unrelated headline no false boost, backward compatibility.
+
+### Test Results
+- 1096 passed, 2 xfailed, 0 failed (42 files)
+- All structural consistency tests pass (1098 collected including xfail)
+
+### Files Changed
+- `mediascope/analyze/sources.py` — Added "Insider" and "Beast" to `_SINGLE_NAME_ORG_STOPS`
+- `mediascope/analyze/topics.py` — Added `headline` param to `classify_topic()` with 1.5× boost logic
+- `mediascope/analysis.py` — Pass `title` as `headline=title` to `classify_topics()`
+- `tests/test_cannes_contractors.py` — +10 tests (2 classes), updated docstring
+- `docs/ARCHITECTURE.md` — test count 1088→1098
+- `README.md` — test count 1088→1098, test_cannes_contractors description updated

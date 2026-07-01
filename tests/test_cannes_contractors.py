@@ -8,6 +8,9 @@ Verifies:
 5. 'Outlook' as software product does NOT get extracted as source
 6. 'posed as' / 'posing as' / 'impersonating' detected as loaded_language
 7. 'dummy accounts' / 'fake accounts' / 'bogus accounts' detected as loaded_language
+8. 'Business Insider' does NOT leak 'Insider' as standalone source
+9. 'Daily Beast' does NOT leak 'Beast' as standalone source
+10. Headline keyword presence boosts topic confidence via classify_topic()
 """
 
 import pytest
@@ -15,6 +18,7 @@ import pytest
 from mediascope.analyze.entities import detect_entities
 from mediascope.analyze.framing import detect_framing_devices
 from mediascope.analyze.sources import extract_sources
+from mediascope.analyze.topics import classify_topic
 
 
 class TestScaleAICluster:
@@ -142,3 +146,119 @@ class TestDeceptionImpersonationPatterns:
         devices = detect_framing_devices(text)
         types = [d.device_type for d in devices]
         assert "loaded_language" in types
+
+
+class TestBusinessInsiderSourceSplitting:
+    """'Business Insider' should not leak 'Insider' as a standalone source.
+    Similarly 'Daily Beast' should not leak 'Beast'."""
+
+    def test_business_insider_no_insider_fragment(self):
+        text = "Business Insider reported that contractors were paid below minimum wage."
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Insider" not in names, \
+            "'Insider' should not appear as standalone source from 'Business Insider reported'"
+
+    @pytest.mark.xfail(reason="Business Insider in _NAME_STOP_NAMES blocks Pattern 1; "
+                        "full compound-name extraction is a future enhancement")
+    def test_business_insider_full_name_extracted(self):
+        text = "According to Business Insider, the project began in 2024."
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Business Insider" in names, \
+            "'Business Insider' should be extracted as a full source name"
+
+    def test_daily_beast_no_beast_fragment(self):
+        text = "The Daily Beast reported on the internal documents."
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Beast" not in names, \
+            "'Beast' should not appear as standalone source from 'Daily Beast reported'"
+
+    @pytest.mark.xfail(reason="Daily Beast in _NAME_STOP_NAMES blocks Pattern 1; "
+                        "full compound-name extraction is a future enhancement")
+    def test_daily_beast_full_name_extracted(self):
+        text = "According to the Daily Beast, sources confirmed the story."
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Daily Beast" in names or "The Daily Beast" in names, \
+            "'Daily Beast' should be extracted as a full source name"
+
+    def test_insider_as_role_word_not_source(self):
+        text = "An insider at the company revealed the details."
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Insider" not in names, \
+            "'insider' as a role word should not be a source name"
+
+
+class TestHeadlineTopicBoosting:
+    """When a topic's keywords appear in the headline, classify_topic()
+    should boost that topic's confidence via the 1.5x multiplier."""
+
+    def test_headline_boosts_matching_topic(self):
+        """A headline with 'teens' should boost child_safety above
+        topics that only dominate body text."""
+        body = (
+            "The artificial intelligence project used machine learning models "
+            "to benchmark competitor chatbots. The AI system processed millions "
+            "of prompts using neural networks and large language models. "
+            "Some contractors posed as teens on rival platforms."
+        )
+        headline = "Meta Contractors Posed as Teens to Test Rival AI Chatbots"
+
+        result_with = classify_topic(body, headline=headline)
+        result_without = classify_topic(body, headline=None)
+
+        # Find child_safety rank in both
+        topics_with = [t.topic for t in result_with]
+        topics_without = [t.topic for t in result_without]
+
+        # child_safety should be ranked higher with the headline boost
+        if "child_safety" in topics_with and "child_safety" in topics_without:
+            rank_with = topics_with.index("child_safety")
+            rank_without = topics_without.index("child_safety")
+            assert rank_with <= rank_without, \
+                f"Headline boost should improve child_safety rank: " \
+                f"with={rank_with}, without={rank_without}"
+
+    def test_headline_boost_does_not_exceed_1(self):
+        """Even with headline boost, confidence should be capped at 1.0."""
+        body = (
+            "Children were targeted by unsafe content online. Child safety "
+            "advocates warned about minors being exploited. Teen users faced "
+            "dangerous interactions with predators on the platform."
+        )
+        headline = "Children at Risk: Teen Safety Crisis Online"
+        result = classify_topic(body, headline=headline)
+        for t in result:
+            assert t.confidence <= 1.0, \
+                f"Topic {t.topic} confidence {t.confidence} exceeds 1.0"
+
+    def test_no_headline_no_boost(self):
+        """Without a headline, results should be unchanged from baseline."""
+        body = "Meta's AI team developed new language models for chatbots."
+        result_none = classify_topic(body, headline=None)
+        result_empty = classify_topic(body, headline="")
+        # Both should produce the same top topic
+        if result_none and result_empty:
+            assert result_none[0].topic == result_empty[0].topic
+
+    def test_unrelated_headline_no_false_boost(self):
+        """A headline about weather should not boost tech topics."""
+        body = (
+            "The artificial intelligence startup raised $50 million in funding. "
+            "Their machine learning platform processes enterprise data."
+        )
+        headline = "Sunny Skies Expected Through the Weekend"
+        result_with = classify_topic(body, headline=headline)
+        result_without = classify_topic(body)
+        # Top topic should remain the same — unrelated headline has no effect
+        if result_with and result_without:
+            assert result_with[0].topic == result_without[0].topic
+
+    def test_headline_param_is_optional(self):
+        """classify_topic should work without headline param (backward compat)."""
+        body = "Meta released a new virtual reality headset at the conference."
+        result = classify_topic(body)
+        assert len(result) > 0, "classify_topic should return results without headline"

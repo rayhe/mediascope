@@ -53,7 +53,7 @@ class ArticleAnalyzer:
         devices = detect_framing_devices(text)
         sources = extract_sources(text)
         anon_count = count_anonymous_sources(text)
-        topics = classify_topics(text)
+        topics = classify_topics(text, headline=title)
 
         return AnalysisResult(
             title=title,

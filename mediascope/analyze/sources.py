@@ -593,6 +593,9 @@ def extract_sources(text: str) -> list[SourceMention]:
         "Square", "Block", "Shopify", "Congress", "Pentagon",
         "Reuters", "Bloomberg", "WIRED", "Wired",
         "Media",  # "404 Media" → regex strips numeric prefix, leaving "Media"
+        "Insider",  # "Business Insider" — full name blocked by _NAME_STOP_NAMES
+                    # but Pattern 5b catches "Insider reported" as single-name
+        "Beast",    # "Daily Beast" — same issue
         # Chinese / international tech companies
         "Alibaba", "Baidu", "Tencent", "Huawei", "Xiaomi",
         "ByteDance", "Bytedance",
