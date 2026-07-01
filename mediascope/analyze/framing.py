@@ -1136,6 +1136,21 @@ _FAILURE_PRECEDENT_PATTERNS: list[re.Pattern] = [
         r"wasted|was scrap(?:ped|ping))\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # Retrospective comparative — "as [subject] was/were/did when ... [past failure]"
+    # Sarcastic structure invoking past strategic failures to frame doubt
+    # on a current effort: "he's just as likely to beat the competition
+    # as he was when he decided to go all-in on the metaverse and crypto."
+    # Matches the second half of the comparative ("as he was when...")
+    # plus a known failure-domain anchor term within 80 chars.
+    re.compile(
+        r"\bas\s+(?:he|she|they|it|the company|Meta|Facebook|Google|"
+        r"Apple|Microsoft|Amazon)\s+"
+        r"(?:was|were|did)\s+when\b"
+        r".{0,80}?"
+        r"\b(?:metaverse|crypto|NFTs?|Web3|blockchain|pivot(?:ed)?|"
+        r"all[- ]in|doubled down|bet big)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
 ]
 
 _DEVICE_PATTERNS["failure_precedent"] = _FAILURE_PRECEDENT_PATTERNS

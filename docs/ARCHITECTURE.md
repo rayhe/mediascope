@@ -189,9 +189,9 @@ Journalist YAML ──→ Career Tracker ──→ Migration Detection
 - **Power asymmetry framing detection**: Dollar-magnitude near individual vulnerability, "army of lawyers" language, David vs Goliath constructions, fine-per-violation-could-bankrupt patterns
 
 ### `topics.py`
-- TF-IDF weighted keyword classification into 19 topic buckets
+- TF-IDF weighted keyword classification into 20 topic buckets
 - Multi-label (top 3 by confidence retained)
-- Topics: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, prediction_markets, corporate_strategy, defense_military, labor_market, workplace_culture, government_oversight, infrastructure_impact, worker_ai_displacement
+- Topics: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, prediction_markets, corporate_strategy, defense_military, labor_market, workplace_culture, government_oversight, infrastructure_impact, worker_ai_displacement, health_tech
 
 ## Careers Layer — Module Detail
 
@@ -420,7 +420,7 @@ mediascope/
 │   ├── test_postpass_activation.py # Structural post-pass framing activation: analogy stacking, speculative framing thresholds
 │   ├── test_precedent_analogy.py # Precedent analogy framing: opioid/tobacco/asbestos crisis comparisons, era-based villainy import
 │   ├── test_resistance_patterns.py # MIT TR Resistance article patterns: catastrophizing (threat to humanity), alarm/anxiety idioms, intensity/polemical/violence loaded language, poll-based social proof, stalled-dollar and workforce-percentage scale magnitude
-│   ├── test_structural_consistency.py # Structural consistency: framing device type registry completeness, total regex pattern count guard (275 patterns), doc count sync guards, test file listing guards, README test count header, stale voting power purge across all doc files, cross-reference consistency (stale framing taxonomy count purge, README topic bucket count guard), inline topic list validation (ARCHITECTURE.md, AGENT_GUIDE.md, METHODOLOGY.md topic names match code), quality standards banned phrase count and completeness guards, framing.py docstring count and device list completeness validation, ARCHITECTURE.md extended device count label guard, METHODOLOGY.md device table completeness (Extended + Structural tables vs code), adversarial device type list consistency (METHODOLOGY.md + QUALITY_STANDARDS.md vs sentiment.py), stale regex pattern count purge (ARCHITECTURE.md + README.md)
+│   ├── test_structural_consistency.py # Structural consistency: framing device type registry completeness, total regex pattern count guard (276 patterns), doc count sync guards, test file listing guards, README test count header, stale voting power purge across all doc files, cross-reference consistency (stale framing taxonomy count purge, README topic bucket count guard), inline topic list validation (ARCHITECTURE.md, AGENT_GUIDE.md, METHODOLOGY.md topic names match code), quality standards banned phrase count and completeness guards, framing.py docstring count and device list completeness validation, ARCHITECTURE.md extended device count label guard, METHODOLOGY.md device table completeness (Extended + Structural tables vs code), adversarial device type list consistency (METHODOLOGY.md + QUALITY_STANDARDS.md vs sentiment.py), stale regex pattern count purge (ARCHITECTURE.md + README.md)
 │   ├── test_arena_cross_analysis.py # Cross-publication analysis: NYT vs Gizmodo on Arena story — tone separation, emotional intensity, ironic quotation filtering, agency detection
 │   ├── test_latecomer_regulatory_framing.py # Latecomer narrative and regulatory shadow framing: catch-up/copycat positioning, ambient regulatory context insertion, Arena article integration
 │   ├── test_editorial_deflation.py     # Editorial deflation framing: post-buildup dismissal phrases ("That's the idea, anyway"), attribution-as-skepticism, MIT TR Anduril article integration

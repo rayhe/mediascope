@@ -1,0 +1,15 @@
+Meta's non-surgical mind reading machine improves on prior projects, but still isn't great
+
+The research effort puts Zuck in an AI race with Elon Musk.
+
+Meta has published research on Brain2Qwerty v2, a noninvasive brain-computer interface (BCI) that it claims can translate brain activity into text using magnetoencephalography (MEG). Published Monday in the journal Nature Neuroscience, the system uses a large language model and transformer architecture to attempt to decode neural signals without the need for surgical implants.
+
+The system processes neural signals captured by MEG, which measures magnetic fields produced by neuronal activity. In testing, Brain2Qwerty v2 achieved character-level accuracy averaging 44 percent across participants and sentence-level accuracy of 72 percent in the top quartile of performers. These results represent an improvement over the team's earlier effort, Brain2Qwerty v1, which was published in 2025 and achieved only 32 percent character accuracy under comparable conditions.
+
+However, it's not exactly a promising, commercially viable pathway when recent surgical BCI systems are reaching 92 percent sentence-level accuracy. The team wrote that the improved performance came from two innovations. The first was replacing the earlier convolutional model with a transformer encoder using segmented attention, which better captures temporal context in neural data. The second was integrating a large language model during inference, specifically a fine-tuned version of Llama 3.
+
+The Meta minds admit that the practical limitations of the current system are clear. MEG machines are expensive, room-sized devices typically housed in shielded environments, making them unsuitable for consumer applications. The system also requires users to physically type during training sessions, as it maps brain activity to keystroke timing. In real-world use, the Meta researchers note, the goal is to move beyond this reliance on physical typing, but the current system still depends on it. Previous neural decoding approaches, such as those by Nishimoto et al. (2011) and Tang et al. (2023), required similar controlled laboratory conditions.
+
+Meta frames the system as a step toward noninvasive BCI, but the gap between laboratory performance and practical use remains significant. The company is likely to face continued scrutiny over whether this line of research can produce consumer-viable interfaces, especially given the results achieved by competitors like Neuralink that are shoveling more data at the problem, albeit in a way most people wouldn't want to endure.
+
+Meta's push into BCI aligns with the company's broader AI and hardware strategy, though the practical barriers may limit near-term applications. Whether Meta can bridge the gap between controlled research settings and real-world deployment remains an open question, but he's just as likely to beat the competition as he was when he decided to go all-in on the metaverse and crypto.

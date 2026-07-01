@@ -205,10 +205,10 @@ class TestTopicBucketConsistency:
     """Guard: topic bucket counts match across code and docs."""
 
     def test_topic_count_in_code(self):
-        """Code should define exactly 19 topic buckets."""
+        """Code should define exactly 20 topic buckets."""
         from mediascope.analyze.topics import TOPIC_KEYWORDS
-        assert len(TOPIC_KEYWORDS) == 19, (
-            f"Expected 19 topic buckets, got {len(TOPIC_KEYWORDS)}.\n"
+        assert len(TOPIC_KEYWORDS) == 20, (
+            f"Expected 20 topic buckets, got {len(TOPIC_KEYWORDS)}.\n"
             f"Buckets: {sorted(TOPIC_KEYWORDS.keys())}\n"
             "If you added a new topic, update this test AND the docs:\n"
             "  - docs/METHODOLOGY.md §3.1 topic count and table\n"
@@ -217,23 +217,23 @@ class TestTopicBucketConsistency:
         )
 
     def test_methodology_topic_count(self):
-        """METHODOLOGY.md must say 19 topic buckets."""
+        """METHODOLOGY.md must say 20 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
-        assert "19 topic buckets" in doc, (
+        assert "20 topic buckets" in doc, (
             "METHODOLOGY.md topic count is stale. Should be 17."
         )
 
     def test_agent_guide_topic_count(self):
-        """AGENT_GUIDE.md must list 19 topic buckets."""
+        """AGENT_GUIDE.md must list 20 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
-        assert "19 topic buckets" in doc, (
+        assert "20 topic buckets" in doc, (
             "AGENT_GUIDE.md topic count is stale. Should be 17."
         )
 
     def test_architecture_topic_count(self):
-        """ARCHITECTURE.md must say 19 topic buckets."""
+        """ARCHITECTURE.md must say 20 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
-        assert "19 topic buckets" in doc, (
+        assert "20 topic buckets" in doc, (
             "ARCHITECTURE.md topic count is stale. Should be 17."
         )
 
@@ -441,7 +441,7 @@ class TestCrossReferenceConsistency:
         )
 
     def test_readme_test_topics_description_says_16(self):
-        """README.md test_topics.py description must reference 19 topic buckets."""
+        """README.md test_topics.py description must reference 20 topic buckets."""
         doc = (_REPO_ROOT / "README.md").read_text()
         # Find the test_topics.py row in the test table
         match = re.search(r"test_topics\.py.*?(\d+)\s+standardized topic buckets", doc)
@@ -530,7 +530,7 @@ class TestInlineTopicListConsistency:
         code_topics = self._code_topic_names()
         # Find the topic list in the classify_topic JSON schema description
         match = re.search(
-            r"19 topic buckets:\s*([\w_]+(?:,\s*[\w_]+)*)\.",
+            r"20 topic buckets:\s*([\w_]+(?:,\s*[\w_]+)*)\.",
             doc,
         )
         assert match, (
@@ -793,7 +793,7 @@ class TestAdversarialDeviceListConsistency:
     # Track the total number of compiled regex patterns across all device
     # types in _DEVICE_PATTERNS.  When patterns are added, this test fails
     # and forces a deliberate count update, preventing undocumented drift.
-    EXPECTED_TOTAL_PATTERNS = 275  # sum(len(v) for v in _DEVICE_PATTERNS.values())
+    EXPECTED_TOTAL_PATTERNS = 276  # sum(len(v) for v in _DEVICE_PATTERNS.values())
 
     def test_total_regex_pattern_count(self):
         """Total compiled regex patterns must match expected count."""

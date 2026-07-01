@@ -8636,3 +8636,47 @@ Eileen Guo — Senior reporter for features and investigations at MIT Technology
 
 ### Commit
 7323d80 — pushed to GitHub
+
+---
+
+## 2026-06-30 21:00 PT — Type A: Article Deep Dive
+
+**Article:** "Meta's non-surgical mind reading machine improves on prior projects, but still isn't great" (The Register, 2026-06-30)
+**Why Register instead of tracked publication?** All 5 target publication domains are blocked by browser policy. The Register covers the same Meta Brain2Qwerty v2 announcement. MIT Tech Review's newsletter references this story.
+
+### Issues Found & Fixed
+
+1. **Entity miss: "Zuck" not detected** → Added to Meta aliases list and regex pattern in `entities.py` with lookahead constraints.
+
+2. **Topic gap: no health/medical technology bucket** → Added `health_tech` topic bucket (20th) to `topics.py` with 43 keywords covering BCI, neural interfaces, medical devices, clinical trials, genomics, and medical AI. Now correctly detects brain-computer interface articles as health_tech (0.45 confidence, top topic).
+
+3. **Framing miss: failure_precedent retrospective comparative** → Added new regex to `_FAILURE_PRECEDENT_PATTERNS` in `framing.py` for "as [subject] was/were/did when ... [failure domain]" structure. Catches sarcastic retrospective comparisons like "he's just as likely to beat the competition as he was when he decided to go all-in on the metaverse and crypto."
+
+4. **Source miss: "the team wrote" not detected** → Added Pattern 8 (`collective_research`) to `sources.py` for collective research team attribution ("the team wrote", "the researchers explained", "noted the authors"). New `source_type="collective_research"`.
+
+### Count Changes
+- Regex patterns: 275 → 276 (+1 failure_precedent)
+- Topic buckets: 19 → 20 (+1 health_tech)
+- Tests: 1062 → 1064 (new topic adds auto-generated test coverage)
+- Framing device types: 47 (unchanged)
+
+### Files Changed
+- `mediascope/analyze/entities.py` — "Zuck" alias
+- `mediascope/analyze/framing.py` — retrospective comparative pattern
+- `mediascope/analyze/topics.py` — health_tech topic bucket
+- `mediascope/analyze/sources.py` — collective_research source pattern
+- `tests/test_structural_consistency.py` — count guards (276 patterns, 20 topics)
+- `docs/METHODOLOGY.md` — health_tech table row, topic count 19→20, design note
+- `docs/AGENT_GUIDE.md` — topic count 19→20, inline topic list
+- `docs/ARCHITECTURE.md` — topic count 19→20, inline topic list, pattern count 275→276
+- `README.md` — pattern count 275→276
+- `examples/sample_output/register_meta_brain2qwerty_2026_06_30_article.txt`
+- `examples/sample_output/register_meta_brain2qwerty_2026_06_30_analysis.md`
+
+### Open Issues (Future Iterations)
+- Sarcastic deflation detection ("the Meta minds admit", "shoveling more data")
+- Comparative benchmark framing ("not exactly promising when surgical BCI systems are reaching 92%")
+- Academic journal entity detection (Nature Neuroscience)
+- Sentiment miscalibration for dry/sardonic British editorial voice (overall_tone 0.603 too positive)
+
+### Commit

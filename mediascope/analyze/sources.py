@@ -930,6 +930,48 @@ def extract_sources(text: str) -> list[SourceMention]:
                 source_type="group_expert",
             ))
 
+    # Pattern 8: Collective research attribution — "the team wrote",
+    # "researchers explained", "the authors noted".  Common in science
+    # and technology journalism where a research group or paper's authors
+    # are cited collectively.  Tagged source_type="collective_research".
+    collective_research_patterns: list[re.Pattern] = [
+        # "the [research] team/researchers/authors/group verb"
+        re.compile(
+            rf"\b(?:the\s+)(?:research\s+)?(?:team|researchers|group|authors?)\s+"
+            rf"(?:(?:also|further|additionally|later)\s+)?"
+            rf"({verb_alternation})\b",
+            re.IGNORECASE,
+        ),
+        # "verb the [research] team/researchers/authors"
+        re.compile(
+            rf"\b({verb_alternation})\s+"
+            rf"(?:the\s+)(?:research\s+)?(?:team|researchers|group|authors?)\b",
+            re.IGNORECASE,
+        ),
+    ]
+
+    for pat in collective_research_patterns:
+        for m in pat.finditer(text):
+            descriptor = m.group().strip()
+            if descriptor.lower() in {n.lower() for n in seen_names}:
+                continue
+            seen_names.add(descriptor)
+
+            verb = m.group(1).strip().lower()
+            ctx_start = max(0, m.start() - 100)
+            ctx_end = min(len(text), m.end() + 200)
+            context = text[ctx_start:ctx_end]
+
+            sources.append(SourceMention(
+                name=descriptor,
+                is_anonymous=False,
+                is_expert=False,
+                affiliation=_extract_affiliation(context),
+                quote=_extract_nearby_quote(text, m.start(), m.end()),
+                attribution_verb=verb,
+                source_type="collective_research",
+            ))
+
     # Pattern 6: Organizational sources — "Meta said", "Google confirmed",
     # "the company said in a statement", "a spokesperson told Reuters"
     # These are named non-anonymous sources where the speaker is an entity
