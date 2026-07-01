@@ -4,6 +4,70 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-01 06:00 PT — Type D: Toolkit Quality — ARCHITECTURE.md Device Name List Completeness + AGENT_GUIDE.md Guards
+
+**Focus:** Close the remaining documentation-vs-code validation gap identified in the 2026-06-30 17:00 PT Type D iteration: "ARCHITECTURE.md inline device *names* list is not validated against code (only the Extended count label is guarded now, not the individual names in the list)." Additionally, extend adversarial device list and tier count guards to AGENT_GUIDE.md, which was previously unguarded.
+
+### Problem
+
+The guard structure had a systemic blind spot across two documents:
+
+1. **ARCHITECTURE.md:** A new framing device could be added to code, the "Extended (N):" count label updated to pass `TestArchitectureExtendedDeviceCount`, but the device name and description never appended to the inline list. The count guard validates the number; nothing validated the individual names.
+
+2. **AGENT_GUIDE.md:** This document (the integration reference for AI agents using MediaScope) enumerates adversarial device types in the "When Correction Fires" section and states framing tier counts (49/10/34/5) in the `detect_framing_devices` function calling schema. Neither enumeration was guarded. METHODOLOGY.md and QUALITY_STANDARDS.md adversarial lists were guarded since the Jun 28 iteration, but AGENT_GUIDE.md was missed.
+
+### New Guards (4 tests)
+
+**`TestArchitectureDeviceNameListCompleteness` (2 tests):**
+
+| Test | What It Validates |
+|------|-------------------|
+| `test_extended_names_complete` | Every non-core `_DEVICE_PATTERNS` key has its human-readable name in the ARCHITECTURE.md Extended section |
+| `test_core_names_complete` | All 10 canonical Core types have their names in the ARCHITECTURE.md Core section |
+
+Uses display-variant normalization: `snake_case` → `space separated`, `/` variants (`scale/magnitude`, `analogy/metaphor`), and `-` variants (`techno-optimism`). Three variant types handle the full range of code-name-to-display-name transformations seen in the documentation.
+
+**`TestAgentGuideConsistency` (2 tests):**
+
+| Test | What It Validates |
+|------|-------------------|
+| `test_agent_guide_adversarial_list_complete` | The 14 adversarial device types in AGENT_GUIDE.md's "When Correction Fires" section match `_ADVERSARIAL_DEVICE_TYPES` in `sentiment.py` |
+| `test_agent_guide_total_device_count` | The `detect_framing_devices` schema's tier counts (49 total / 10 core / 34 extended / 5 structural) match code |
+
+The tier count test uses the canonical `CORE_TYPES` set (documentation concept: 10 foundational device types) rather than initial dict keys (code structure: 14 keys, because some Extended types were moved into the initial dict for organization). This avoids a false failure from conflating code organization with the documentation taxonomy.
+
+### Design Decision: Core/Extended Distinction
+
+During initial implementation, the test used `initial_keys` from regex matching the `_DEVICE_PATTERNS` dict literal to determine core count, which returned 14 (the dict has grown beyond the original 10 as some Extended types were moved into it). This caused a false failure: "AGENT_GUIDE.md claims 10 core types but code has 14." The fix uses the hardcoded `CORE_TYPES` set (same canonical set used by `TestArchitectureExtendedDeviceCount`), which correctly reflects the documentation-level taxonomy.
+
+### Guard Coverage Summary (post-iteration)
+
+| What | Guards |
+|------|--------|
+| Framing device type count (49) | `EXPECTED_TOTAL` + doc count tests |
+| Regex pattern count (293) | `EXPECTED_TOTAL_PATTERNS` + stale purge |
+| Extended tier count label (34) | `TestArchitectureExtendedDeviceCount` |
+| ARCHITECTURE.md Extended device NAMES | **NEW: `TestArchitectureDeviceNameListCompleteness`** |
+| ARCHITECTURE.md Core device NAMES | **NEW: `TestArchitectureDeviceNameListCompleteness`** |
+| METHODOLOGY.md Extended table rows | `TestMethodologyDeviceTableConsistency` |
+| METHODOLOGY.md Structural table rows | `TestMethodologyDeviceTableConsistency` |
+| METHODOLOGY.md adversarial list | `TestAdversarialDeviceListConsistency` |
+| QUALITY_STANDARDS.md adversarial list | `TestAdversarialDeviceListConsistency` |
+| AGENT_GUIDE.md adversarial list | **NEW: `TestAgentGuideConsistency`** |
+| AGENT_GUIDE.md tier counts (49/10/34/5) | **NEW: `TestAgentGuideConsistency`** |
+| framing.py docstring device names | `TestDocstringDeviceListCompleteness` |
+| framing.py docstring count | `TestFramingDocstringConsistency` |
+
+### Stats (post-iteration)
+- Tests: 1067 → 1071 (4 new guards, all passing)
+- Files changed: 3 (test_structural_consistency.py, README.md, ARCHITECTURE.md)
+- Insertions: 236, Deletions: 4
+- Commit: `e81af8a`, pushed to GitHub
+
+### Cascade Updates
+- README.md: total test count 1067→1071, test_structural_consistency.py 52→56 tests, description updated
+- ARCHITECTURE.md: total test count 1067→1071, test_structural_consistency.py description updated
+
 ## 2026-07-01 04:00 PT — Type C: Ownership & Funding Deep Dive — Advance Reddit Credit Facility + Newhouse Succession Structure + WBD UK Intervention Update
 
 **Focus:** Three ownership/funding developments for Wired/Advance profile: (1) Advance's $1.2B Reddit margin loan via variable prepaid forward, (2) Advance Long-Term Trust legal ownership structure from SEC filings, (3) WBD/Paramount UK "minded to intervene" notice detail expansion.
