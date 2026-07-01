@@ -417,3 +417,31 @@ class TestMultiTopicArticles:
         topics = classify_topic(text, top_n=5)
         topic_names = [t.topic for t in topics]
         assert "child_safety" in topic_names
+
+    def test_ai_ethics_safety_alignment(self):
+        """AI ethics/safety detected for alignment-focused articles."""
+        text = (
+            "The alignment problem remains one of the central challenges "
+            "in AI safety research. As artificial general intelligence draws "
+            "closer, the field of AI ethics must grapple with value alignment, "
+            "algorithmic bias, and the existential risk posed by misaligned "
+            "superintelligent systems. Researchers in alignment research are "
+            "working to ensure responsible AI development."
+        )
+        topics = classify_topic(text, top_n=5)
+        topic_names = [t.topic for t in topics]
+        assert "ai_ethics_safety" in topic_names
+
+    def test_ai_ethics_safety_philosopher(self):
+        """AI ethics/safety detected for philosophy-of-AI articles."""
+        text = (
+            "The moral philosopher joined DeepMind to work on AI ethics "
+            "and the alignment problem. His research on value alignment "
+            "and AI governance has shaped the field of responsible AI. "
+            "As an AI ethicist, he argued that technology ethics demands "
+            "new frameworks for thinking about machine ethics and "
+            "algorithmic fairness."
+        )
+        topics = classify_topic(text, top_n=5)
+        topic_names = [t.topic for t in topics]
+        assert "ai_ethics_safety" in topic_names

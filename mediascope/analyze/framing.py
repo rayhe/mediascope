@@ -4338,6 +4338,42 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
                 if device_type == "ironic_quotation":
                     _quoted = match.group().strip('" \u201c\u201d')
                     _word_count = len(_quoted.split())
+                    # --- Structural transition filter -------------------------
+                    # Pattern 0 (quote-end + contradiction word) fires on
+                    # natural interview transitions like:
+                    #   "...investigation". Yet his skepticism was apparent.
+                    #   "...awareness to them," she said. But she also...
+                    # These are narrative flow, not ironic undercutting.
+                    # Suppress when:
+                    # (a) The evidence text contains explicit attribution
+                    #     verbs ("she said", "he noted"), or
+                    # (b) The evidence (stripped of quote marks) starts with
+                    #     a sentence boundary (".", ",") — indicating the
+                    #     match is a structural transition, not a quoted
+                    #     phrase being undercut.  These short matches (". Yet",
+                    #     ". In other words,") are just conjunction flow;
+                    #     genuine ironic undercutting uses the quoted term
+                    #     itself as the ironic payload.
+                    #
+                    # Discovered in Guardian DeepMind philosopher profile
+                    # (Jun 28, 2026): 4 structural false positives from
+                    # interview transitions.
+                    # ---------------------------------------------------------
+                    _stripped_evidence = _quoted.strip()
+                    _STRUCTURAL_ATTRIBUTION = (
+                        " said.", " said,", " says.", " says,",
+                        " noted.", " noted,", " added.", " added,",
+                        " told ", " recalled ", " explained ",
+                        " insisted ", " argued ",
+                    )
+                    if any(attr in _stripped_evidence.lower()
+                           for attr in _STRUCTURAL_ATTRIBUTION):
+                        continue
+                    # Suppress short structural transitions: evidence that
+                    # is purely a sentence-boundary + conjunction (". Yet",
+                    # ". But", ". In other words,") with no quoted content.
+                    if _stripped_evidence and _stripped_evidence[0] in '.;:,':
+                        continue
                     # --- Tech/industry jargon filter -------------------------
                     # Short quoted terms (≤3 words) that are established
                     # industry terminology should not be flagged as scare
@@ -4358,9 +4394,11 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
                     }
                     if _quoted.lower() in _TECH_JARGON:
                         continue
-                    # Short quotes (≤3 words): filter if in product-naming context
+                    # Short quotes (≤3 words): filter if in product-naming
+                    # or attribution context
                     if _word_count <= 3:
-                        _lookback = text[max(0, start - 60):start].lower()
+                        _lookback = text[max(0, start - 80):start].lower()
+                        _lookback = re.sub(r'\s+', ' ', _lookback)
                         _PRODUCT_NAMING = (
                             "rely on", "instead rely",
                             " dubbed ", " named ", " termed ",
@@ -4371,10 +4409,55 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
                         )
                         if any(verb in _lookback for verb in _PRODUCT_NAMING):
                             continue
+                        # -------------------------------------------------------
+                        # Attribution filter for short scare-quote candidates.
+                        # In interview-heavy and profile articles, single words
+                        # and short phrases appear in quotes because they are
+                        # direct speech from a named source, not editorial
+                        # scare quotes.  Suppress when the lookback (80 chars)
+                        # contains attribution context.
+                        #
+                        # Discovered in Guardian DeepMind philosopher profile
+                        # (Jun 28, 2026): "obvious", "enthusiastic",
+                        # "tombstone" were flagged as scare quotes but are
+                        # direct quotations from named interview subjects
+                        # (Shane Legg, Gabriel's brother, etc.).
+                        # -------------------------------------------------------
+                        _ATTRIBUTION_SHORT = (
+                            " told me ", " tells me ",
+                            " told us ", " tells us ",
+                            "it was ", "it is ",
+                            " calls ", " called ",
+                            " describes as ", " described as ",
+                            " he says", " she says",
+                            " he said", " she said",
+                            " they call ", " they called ",
+                            " what he call", " what she call",
+                            " what they call",
+                            " refers to as ",
+                            " known as ",
+                        )
+                        if any(attr in _lookback for attr in _ATTRIBUTION_SHORT):
+                            continue
+                        # Also check forward context (40 chars after the
+                        # quote) for post-quote attribution ("he said",
+                        # "she told me", "they explained")
+                        _lookahead = text[end:min(len(text), end + 50)].lower()
+                        _lookahead = re.sub(r'\s+', ' ', _lookahead)
+                        _POST_ATTRIBUTION = (
+                            " he said", " she said", " they said",
+                            " he told ", " she told ",
+                            " he recalled", " she recalled",
+                            " he explained", " she explained",
+                            " he noted", " she noted",
+                            " he added", " she added",
+                        )
+                        if any(attr in _lookahead for attr in _POST_ATTRIBUTION):
+                            continue
                     # Longer quotes (>3 words): filter if preceded by
                     # personal attribution ("X said that he/she had")
                     else:
-                        _lookback = text[max(0, start - 60):start].lower()
+                        _lookback = text[max(0, start - 80):start].lower()
                         # Normalize whitespace in lookback for cross-line matching
                         _lookback = re.sub(r'\s+', ' ', _lookback)
                         _DIRECT_QUOTE = (
@@ -4383,6 +4466,12 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
                             " told ", " recalled ",
                             " said he ", " said she ",
                             " said they ", " saying ",
+                            " calls ", " called ",
+                            " he says,", " she says,",
+                            " he said,", " she said,",
+                            " describes as ", " described as ",
+                            " what he call", " what she call",
+                            " what they call",
                         )
                         if any(verb in _lookback for verb in _DIRECT_QUOTE):
                             continue
