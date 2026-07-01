@@ -8813,3 +8813,26 @@ Most recent Meta articles from tracked publications (Wired, NYT, Guardian, Atlan
 - VADER miscalibration for financial/sardonic content (carried over)
 
 ### Commit
+
+## 2026-07-01 00:00 PT — Type B: Journalist Research (Zoë Schiffer Deep Expansion)
+
+**Focus:** Zoë Schiffer — Wired Director of Business & Industry
+
+**Improvements:**
+- Expanded Schiffer from 3 thin career entries (missing sources, wrong roles) to 7 comprehensive entries with full sourcing
+- Added 4 entirely new career phases:
+  1. Pre-journalism: content manager at tech startup
+  2. Pre-journalism: UX writer at Uber (Kalanick era — informs her later labor beat)
+  3. Freelance period: Vox, SF Chronicle, Bold Italic, SFGate, SF Examiner, Racked
+  4. NBC Universal tech investigations team (2021-2022) — previously missing entirely
+- Fixed 3 incorrect roles: staff_writer → senior_reporter (Verge), senior_writer → managing_editor (Platformer), senior_writer → director_business_industry (Wired)
+- Fixed 2 incorrect dates: Wired start 2024-04 → 2025-01, Platformer end 2024-03 → 2024-12
+- Added education: UC Berkeley BA (Political Science), Stanford MA (Journalism), Liceo Scientifico Galileo Galilei (Italian HS)
+- Added book details: "Extremely Hardcore" (Portfolio/PRH, Feb 13 2024, 352pp, ISBN 9780593716601)
+- Added Uncanny Valley podcast co-host, Threads handle @reporterzoe
+- Added Schiffer Director hire to editorial_changes.yaml with adversarial mandate analysis
+- Fixed pre-existing test failures: pattern count 42→43, added pathologizing_metaphor to expected types
+
+**Commit:** 8fb7dcd
+**Tests:** 1064 passed
+**Files changed:** profiles/careers/journalists.yaml, profiles/careers/editorial_changes.yaml, tests/test_nyt_ai_reviews.py (105 insertions, 17 deletions)
