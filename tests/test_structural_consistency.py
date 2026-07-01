@@ -1063,3 +1063,235 @@ class TestArchitectureExtendedDeviceCount:
             f"{actual_extended} extended device types (42 pattern-matched "
             f"minus 10 core). Update the label."
         )
+
+
+
+class TestArchitectureDeviceNameListCompleteness:
+    """Guard: ARCHITECTURE.md framing.py section inline device name lists
+    contain all device types from code, not just the correct count labels.
+
+    TestArchitectureExtendedDeviceCount validates the 'Extended (N):' count
+    label.  This test validates the individual device names in the Core and
+    Extended inline lists, catching cases where a new device type is added
+    to code and the count label is updated but the device name and description
+    are never appended to the ARCHITECTURE.md section text.
+
+    Closes the gap identified in the 2026-06-30 17:00 PT Type D iteration:
+    "Coverage gap remaining: ARCHITECTURE.md inline device *names* list is
+    not validated against code (only the Extended count label is guarded now,
+    not the individual names in the list)."
+
+    Added: 2026-07-01 06:00 PT, Type D iteration.
+    """
+
+    CORE_TYPES = {
+        "guilt_by_association", "anonymous_authority", "catastrophizing",
+        "false_balance", "selective_omission_signal", "emotional_appeal",
+        "loaded_language", "power_asymmetry", "ceo_personalization",
+        "litigation_framing",
+    }
+
+    @staticmethod
+    def _code_name_to_display_variants(code_name: str) -> list[str]:
+        """Convert a code device name to display variants for matching.
+
+        'straw_man' -> ['straw man']
+        'scale_magnitude' -> ['scale magnitude', 'scale/magnitude']
+        'analogy_metaphor' -> ['analogy metaphor', 'analogy/metaphor']
+        'ceo_personalization' -> ['ceo personalization']
+        'military_techno_optimism' -> ['military techno-optimism', 'military techno optimism']
+        """
+        base = code_name.replace("_", " ")
+        variants = [base]
+        # Also try replacing one space with "/" (for scale/magnitude, analogy/metaphor)
+        parts = code_name.split("_")
+        if len(parts) >= 2:
+            for i in range(len(parts) - 1):
+                slash_variant = " ".join(parts[:i] + [parts[i] + "/" + parts[i+1]] + parts[i+2:])
+                variants.append(slash_variant)
+        # Also try replacing one space with "-" (for techno-optimism)
+        for i in range(len(parts) - 1):
+            hyphen_variant = " ".join(parts[:i] + [parts[i] + "-" + parts[i+1]] + parts[i+2:])
+            if hyphen_variant != base:
+                variants.append(hyphen_variant)
+        return variants
+
+    def _extract_architecture_extended_section(self) -> str:
+        """Extract the Extended device list text from ARCHITECTURE.md."""
+        doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
+        # Find "**Extended (N):**" and capture until the next "**Structural" or "###"
+        match = re.search(
+            r"\*\*Extended \(\d+\):\*\*(.*?)(?:\*\*Structural|#{3,4}\s)",
+            doc,
+            re.DOTALL,
+        )
+        assert match, (
+            "ARCHITECTURE.md is missing the Extended device section."
+        )
+        return match.group(1).lower()
+
+    def _extract_architecture_core_section(self) -> str:
+        """Extract the Core device list text from ARCHITECTURE.md."""
+        doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
+        # Find "**Core (N):**" and capture until "**Extended"
+        match = re.search(
+            r"\*\*Core \(\d+\):\*\*(.*?)\*\*Extended",
+            doc,
+            re.DOTALL,
+        )
+        assert match, (
+            "ARCHITECTURE.md is missing the Core device section."
+        )
+        return match.group(1).lower()
+
+    def test_extended_names_complete(self):
+        """ARCHITECTURE.md Extended section must name every extended device type."""
+        from mediascope.analyze.framing import _DEVICE_PATTERNS
+        extended_types = set(_DEVICE_PATTERNS.keys()) - self.CORE_TYPES
+        section_text = self._extract_architecture_extended_section()
+
+        missing = []
+        for code_name in sorted(extended_types):
+            variants = self._code_name_to_display_variants(code_name)
+            if not any(v in section_text for v in variants):
+                missing.append(code_name)
+
+        assert not missing, (
+            f"ARCHITECTURE.md Extended device section is missing names for: "
+            f"{missing}.\n"
+            f"Expected {len(extended_types)} extended types; "
+            f"{len(extended_types) - len(missing)} found.\n"
+            f"Add each missing device name and description to the Extended "
+            f"inline list."
+        )
+
+    def test_core_names_complete(self):
+        """ARCHITECTURE.md Core section must name every core device type."""
+        section_text = self._extract_architecture_core_section()
+
+        missing = []
+        for code_name in sorted(self.CORE_TYPES):
+            variants = self._code_name_to_display_variants(code_name)
+            if not any(v in section_text for v in variants):
+                missing.append(code_name)
+
+        assert not missing, (
+            f"ARCHITECTURE.md Core device section is missing names for: "
+            f"{missing}.\n"
+            f"Expected {len(self.CORE_TYPES)} core types; "
+            f"{len(self.CORE_TYPES) - len(missing)} found."
+        )
+
+
+class TestAgentGuideConsistency:
+    """Guard: AGENT_GUIDE.md references to code counts and enumerations
+    stay in sync.
+
+    METHODOLOGY.md and QUALITY_STANDARDS.md have adversarial device list
+    guards. AGENT_GUIDE.md also enumerates these types in the 'When
+    Correction Fires' section, and states framing device tier counts in
+    the detect_framing_devices function calling schema.
+
+    Added: 2026-07-01 06:00 PT, Type D iteration.
+    """
+
+    def _adversarial_types_from_code(self) -> set[str]:
+        """Get the adversarial device type set from sentiment.py."""
+        src = (_REPO_ROOT / "mediascope" / "analyze" / "sentiment.py").read_text()
+        match = re.search(
+            r"_ADVERSARIAL_DEVICE_TYPES:\s*set\[str\]\s*=\s*\{(.*?)\}",
+            src,
+            re.DOTALL,
+        )
+        assert match, "Cannot find _ADVERSARIAL_DEVICE_TYPES in sentiment.py"
+        return set(re.findall(r'"(\w+)"', match.group(1)))
+
+    def test_agent_guide_adversarial_list_complete(self):
+        """AGENT_GUIDE.md adversarial device list must match code."""
+        code_types = self._adversarial_types_from_code()
+        doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
+        # The list appears after "3+ adversarial framing devices detected"
+        match = re.search(
+            r"adversarial framing devices detected \(([^)]+)\)",
+            doc,
+        )
+        assert match, (
+            "AGENT_GUIDE.md is missing the adversarial framing devices "
+            "enumeration in the 'When Correction Fires' section."
+        )
+        doc_types = set(re.findall(r"(\w+)", match.group(1)))
+        # Remove stray words that aren't device types
+        doc_types -= {"and", "or", "3"}
+        missing = code_types - doc_types
+        extra = doc_types - code_types
+        assert not missing, (
+            f"AGENT_GUIDE.md adversarial device list is missing: "
+            f"{sorted(missing)}.\n"
+            f"Code has: {sorted(code_types)}\n"
+            f"Doc has: {sorted(doc_types)}"
+        )
+        assert not extra, (
+            f"AGENT_GUIDE.md adversarial device list has extra types not "
+            f"in code: {sorted(extra)}.\n"
+            f"Code has: {sorted(code_types)}\n"
+            f"Doc has: {sorted(doc_types)}"
+        )
+
+    # Canonical core types — same set used by TestArchitectureExtendedDeviceCount.
+    # The "Core 10" is a documentation concept (the foundational device types),
+    # not a code-structural distinction (the initial dict has more keys because
+    # some Extended types were later moved into it for organization).
+    CORE_TYPES = {
+        "guilt_by_association", "anonymous_authority", "catastrophizing",
+        "false_balance", "selective_omission_signal", "emotional_appeal",
+        "loaded_language", "power_asymmetry", "ceo_personalization",
+        "litigation_framing",
+    }
+
+    def test_agent_guide_total_device_count(self):
+        """AGENT_GUIDE.md detect_framing_devices schema must state correct total."""
+        from mediascope.analyze.framing import _DEVICE_PATTERNS
+        src = (_REPO_ROOT / "mediascope" / "analyze" / "framing.py").read_text()
+        pattern_keys = set(_DEVICE_PATTERNS.keys())
+        initial_keys = set(re.findall(r'"(\w+)":\s*_[A-Z_]+_PATTERNS', src))
+        dynamic_keys = set(re.findall(r'_DEVICE_PATTERNS\["(\w+)"\]', src))
+        post_pass = set(re.findall(r'device_type="(\w+)"', src))
+        structural = post_pass - initial_keys - dynamic_keys
+        total = len(pattern_keys) + len(structural)
+
+        doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
+        match = re.search(
+            r"Detects (\d+) device types across three tiers:\s*"
+            r"core \((\d+) pattern-matched\),\s*"
+            r"extended \((\d+) from real-article analysis\),\s*"
+            r".*?structural post-pass \((\d+)",
+            doc,
+        )
+        assert match, (
+            "AGENT_GUIDE.md detect_framing_devices schema is missing the "
+            "'Detects N device types across three tiers' description."
+        )
+        claimed_total = int(match.group(1))
+        claimed_core = int(match.group(2))
+        claimed_extended = int(match.group(3))
+        claimed_structural = int(match.group(4))
+
+        core_count = len(self.CORE_TYPES)
+        extended_count = len(pattern_keys) - core_count
+
+        assert claimed_total == total, (
+            f"AGENT_GUIDE.md claims {claimed_total} total device types "
+            f"but code has {total}."
+        )
+        assert claimed_core == core_count, (
+            f"AGENT_GUIDE.md claims {claimed_core} core types "
+            f"but code has {core_count}."
+        )
+        assert claimed_extended == extended_count, (
+            f"AGENT_GUIDE.md claims {claimed_extended} extended types "
+            f"but code has {extended_count}."
+        )
+        assert claimed_structural == len(structural), (
+            f"AGENT_GUIDE.md claims {claimed_structural} structural types "
+            f"but code has {len(structural)}."
+        )
