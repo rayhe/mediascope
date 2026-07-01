@@ -3967,11 +3967,11 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     Scans for 42 pattern-matched device types plus 5 structural
     post-pass types (47 total).
 
-    Pattern-matched (41): analogy_metaphor, anonymous_authority,
+    Pattern-matched (42): analogy_metaphor, anonymous_authority,
     catastrophizing, ceo_personalization, commodification_metaphor,
     confession_framing, corporate_reassurance_undercut,
     denial_contradiction, editorial_deflation, emotional_appeal,
-    escalation_amplification, false_balance,
+    escalation_amplification, failure_precedent, false_balance,
     geopolitical_regulatory_pressure, guilt_by_association,
     hypocrisy_frame, ironic_quotation, isolation_framing,
     juxtaposition, latecomer_narrative, litigation_framing,

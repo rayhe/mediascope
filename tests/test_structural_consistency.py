@@ -856,3 +856,136 @@ class TestAdversarialDeviceListConsistency:
             f"Code has: {sorted(code_types)}\n"
             f"Doc has: {sorted(doc_types)}"
         )
+
+
+class TestStaleRegexPatternCountPurge:
+    """Guard: stale regex pattern counts are purged from doc descriptions.
+
+    When patterns are added/removed, EXPECTED_TOTAL_PATTERNS is updated in
+    TestTotalRegexPatternCount, but secondary references in ARCHITECTURE.md
+    and README.md test descriptions can lag behind.  These tests catch stale
+    counts by scanning for any old count that is not the current one.
+
+    Added: 2026-06-30 17:00 PT, Type D iteration.
+    """
+
+    def _current_pattern_count(self) -> int:
+        from mediascope.analyze.framing import _DEVICE_PATTERNS
+        return sum(len(v) for v in _DEVICE_PATTERNS.values())
+
+    def test_architecture_test_description_pattern_count(self):
+        """ARCHITECTURE.md test_structural_consistency description must use current pattern count."""
+        current = self._current_pattern_count()
+        doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
+        match = re.search(
+            r"test_structural_consistency\.py.*?(\d+)\s+patterns",
+            doc,
+        )
+        assert match, (
+            "ARCHITECTURE.md test_structural_consistency.py row is missing "
+            "the regex pattern count."
+        )
+        claimed = int(match.group(1))
+        assert claimed == current, (
+            f"ARCHITECTURE.md test_structural_consistency description says "
+            f"{claimed} patterns but code has {current}. Update the "
+            f"description."
+        )
+
+    def test_readme_test_description_pattern_count(self):
+        """README.md test_structural_consistency description must use current pattern count."""
+        current = self._current_pattern_count()
+        doc = (_REPO_ROOT / "README.md").read_text()
+        match = re.search(
+            r"test_structural_consistency\.py.*?(\d+)\s+patterns",
+            doc,
+        )
+        assert match, (
+            "README.md test_structural_consistency.py row is missing "
+            "the regex pattern count."
+        )
+        claimed = int(match.group(1))
+        assert claimed == current, (
+            f"README.md test_structural_consistency description says "
+            f"{claimed} patterns but code has {current}. Update the "
+            f"description."
+        )
+
+
+class TestDocstringDeviceListCompleteness:
+    """Guard: framing.py docstring inline device list matches code types.
+
+    TestDocstringCountConsistency validates the numeric count in the
+    docstring header ("Scans for N pattern-matched").  This test validates
+    the actual device names enumerated in the list, catching cases where
+    the count is updated but a new type isn't added to the inline list.
+
+    Added: 2026-06-30 17:00 PT, Type D iteration.
+    """
+
+    def test_docstring_lists_all_pattern_matched_types(self):
+        """framing.py docstring must enumerate every pattern-matched device type."""
+        src = (_REPO_ROOT / "mediascope" / "analyze" / "framing.py").read_text()
+        # Extract actual pattern-matched types from code
+        actual_types = set(re.findall(r'_DEVICE_PATTERNS\["(\w+)"\]', src))
+        initial_types = set(re.findall(r'"(\w+)":\s*_[A-Z_]+_PATTERNS', src))
+        code_types = actual_types | initial_types
+
+        # Extract the docstring's Pattern-matched list
+        docstring_match = re.search(
+            r"Pattern-matched \(\d+\):\s*(.*?)\.\s*\n\s*\n",
+            src,
+            re.DOTALL,
+        )
+        assert docstring_match, (
+            "framing.py docstring is missing the 'Pattern-matched (N): ...' "
+            "enumeration block."
+        )
+        listed_raw = docstring_match.group(1)
+        # Extract all snake_case identifiers from the list
+        listed_types = set(re.findall(r"(\w+)", listed_raw))
+        # Filter out non-type words (and, etc.)
+        listed_types -= {"and", "including", "the", "a", "an"}
+
+        missing = code_types - listed_types
+        assert not missing, (
+            f"framing.py docstring Pattern-matched list is missing: "
+            f"{sorted(missing)}.\n"
+            f"Code has {len(code_types)} types; docstring lists "
+            f"{len(listed_types & code_types)} of them."
+        )
+
+
+class TestArchitectureExtendedDeviceCount:
+    """Guard: ARCHITECTURE.md framing.py section extended device count matches code.
+
+    The ARCHITECTURE.md framing.py detail section lists device types by tier
+    (Core, Extended, Structural).  The Extended count label must match the
+    actual number of non-core pattern-matched types.
+
+    Added: 2026-06-30 17:00 PT, Type D iteration.
+    """
+
+    CORE_TYPES = {
+        "guilt_by_association", "anonymous_authority", "catastrophizing",
+        "false_balance", "selective_omission_signal", "emotional_appeal",
+        "loaded_language", "power_asymmetry", "ceo_personalization",
+        "litigation_framing",
+    }
+
+    def test_extended_count_label_matches_code(self):
+        """ARCHITECTURE.md 'Extended (N):' label must match actual extended type count."""
+        from mediascope.analyze.framing import _DEVICE_PATTERNS
+        actual_extended = len(set(_DEVICE_PATTERNS.keys()) - self.CORE_TYPES)
+        doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
+        match = re.search(r"\*\*Extended \((\d+)\):\*\*", doc)
+        assert match, (
+            "ARCHITECTURE.md is missing the 'Extended (N):' label in the "
+            "framing.py section."
+        )
+        claimed = int(match.group(1))
+        assert claimed == actual_extended, (
+            f"ARCHITECTURE.md says 'Extended ({claimed}):' but code has "
+            f"{actual_extended} extended device types (42 pattern-matched "
+            f"minus 10 core). Update the label."
+        )
