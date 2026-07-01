@@ -344,6 +344,18 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "pathetic",
     "plague",
     "notorious", "notoriously",
+    # Pathologizing / excess-consumption metaphors — sardonic editorial
+    # framing that casts corporate behavior as gluttony, addiction, or
+    # gambling compulsion.  Gap discovered in Gizmodo Meta/Google AI
+    # tokens article (Jun 2026): "gorge itself", "high-rollers",
+    # "token-hungry", "insatiable" — none triggered emotional_language.
+    "gorge", "gorged", "gorging",
+    "voracious", "voraciously", "insatiable",
+    "binge", "binged", "bingeing",
+    "glutton", "gluttonous",
+    "high-rollers", "high-roller",
+    "token-hungry",
+    "feeding frenzy",
     "knockoff", "knockoffs", "clone", "clones",
     "horniness",
     "destroying",

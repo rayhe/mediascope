@@ -1,0 +1,25 @@
+Title: Meta Reportedly Got Too Addicted to Google AI Tokens and Had to Be Cut Off
+Publication: Gizmodo
+Date: June 29, 2026
+Author: Not attributed (Gizmodo staff)
+URL: https://gizmodo.com/meta-reportedly-got-too-addicted-to-google-ai-tokens-and-had-to-be-cut-off-2000778727
+
+---
+
+Meta was reportedly minding its own business this past March, just trying to gorge itself on Gemini tokens, and all of a sudden Google said it was cut off. This is according to an anonymously sourced story in the Financial Times.
+
+In March, it emerged that Meta was one of the largest companies taking part in the Tokenmaxxing trend—literally evaluating employees by how many AI tokens they were using at work. This moment coincided with another fad: the one for token-hungry agentic AI platforms like OpenClaw, which were being used by anxious software engineers to achieve ostensibly unprecedented new levels of workplace efficiency.
+
+Citing "three people familiar with the matter," the Financial Times now says Google informed Meta that it wasn't able to keep up with its AI use, and imposed limits on the company's use of Gemini models.
+
+The move has, FT says:
+
+"…disrupted and delayed some of Meta's internal AI projects. Owing to the restrictions, which remain in place, as well as a broader push to streamline AI costs, Meta has encouraged staff to be more efficient with AI tokens — the units that measure AI usage, several people said."
+
+In other words, Meta replaced tokenmaxxing with judicious token-counting. Sad!
+
+The burden on Google's resources, meanwhile, could have helped along Google's decision in early June to rent compute from SpaceX, the parent company of xAI for $920 million per month.
+
+The FT says other large companies also strained Google's AI capacity and were subject to caps, but it sounds like those problems weren't as serious. According to the FT's sources, Meta was exceptional, even among the other AI high-rollers.
+
+Meta and Google declined the FT's requests for comment.

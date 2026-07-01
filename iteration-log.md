@@ -8733,3 +8733,83 @@ Most recent Meta articles from tracked publications (Wired, NYT, Guardian, Atlan
 - Sentiment miscalibration for dry/sardonic British editorial voice (carried over)
 
 ### Commit
+`4ba4f49` — Type D (2026-06-30 17:00 PT)
+
+---
+
+## Iteration: 2026-06-30 23:00 PT — Type A (Article Deep Dive)
+
+### Article
+**Gizmodo: "Meta Reportedly Got Too Addicted to Google AI Tokens and Had to Be Cut Off"** (Jun 29, 2026)
+- Short sardonic report (~320 words) on Google rate-limiting Meta's Gemini API consumption
+- Source: FT anonymously-sourced story relayed through Gizmodo's editorial voice
+- Key technique: sustained pathologizing metaphor (addiction/gluttony/gambling domain mapped onto API consumption)
+
+### Toolkit Results Before Changes
+- **2 framing devices:** ironic_quotation + anonymous_authority
+- **emotional_language_intensity:** 0.2857 (missed gorge, voracious, high-rollers, etc.)
+- **"Sad!" sarcastic exclamation:** undetected (no standalone sarcastic pattern)
+- **Pathologizing metaphor chain:** entirely undetected (no device type existed)
+
+### Changes Made
+
+#### 1. New framing device type: `pathologizing_metaphor` (4 patterns)
+- Addiction/dependency: addicted, hooked, dependent, withdrawal, cut off
+- Gluttony/excess consumption: gorge, voracious, insatiable, feeding frenzy, glutton
+- Gambling compulsion: high-rollers, doubling down, betting the house
+- Disease/pathology: infected, contagion, metastasized, toxic
+
+#### 2. New `sarcastic_correction` pattern (standalone exclamations)
+- Matches: "Sad!", "Shocking.", "Brilliant.", "Sure.", etc.
+- Uses `re.MULTILINE` with sentence-boundary lookahead
+
+#### 3. Emotional language expansion (+15 terms)
+- gorge, gorged, gorging, voracious, voraciously, insatiable, binge, binged, bingeing, glutton, gluttonous, high-rollers, high-roller, token-hungry, feeding frenzy
+
+#### 4. Guard/doc updates
+- `EXPECTED_TOTAL`: 47→48 (48 total types)
+- `EXPECTED_PATTERN_MATCHED`: 42→43 (43 pattern-matched types)
+- `EXPECTED_TOTAL_PATTERNS`: 282→287 (287 regex patterns)
+- `EMOTIONAL_LANGUAGE` count guard: 654→669
+- ARCHITECTURE.md: 47→48 types, 282→287 patterns, 42→43 pattern-matched, 32→33 extended; `pathologizing_metaphor` added to extended list
+- METHODOLOGY.md: full `pathologizing_metaphor` row added to Extended Devices table
+- README.md: 47→48 types, 282→287 patterns, 42→43 pattern-matched
+- AGENT_GUIDE.md: 47→48 types, 32→33 extended
+- cli.py docstring: 47→48 types
+- framing.py docstring: 42→43 pattern-matched
+
+### Toolkit Results After Changes
+- **6 framing devices** (was 2): 3× pathologizing_metaphor, 1× ironic_quotation, 1× anonymous_authority, 1× sarcastic_correction
+- **emotional_language_intensity:** 0.7143 (was 0.2857) — 2.5× improvement
+- All other metrics stable (entities, sources, topics unchanged)
+
+### Running Totals
+- Tests: 1064 (51 structural consistency, all passing)
+- Framing device types: 43 pattern-matched + 5 structural = 48
+- Total patterns: 287
+- Emotional language terms: 669
+- Publications tracked: 5 (Wired, NYT, Guardian, Atlantic, MIT Tech Review)
+- Article analyses: 15 (added Gizmodo as ad-hoc analysis target)
+
+### Files Changed
+- `mediascope/analyze/framing.py` — pathologizing_metaphor type (4 patterns) + standalone sarcastic exclamation pattern
+- `mediascope/analyze/sentiment.py` — 15 emotional language terms
+- `tests/test_structural_consistency.py` — count guards (43 pattern-matched, 48 total, 287 patterns, 669 terms)
+- `docs/ARCHITECTURE.md` — counts + pathologizing_metaphor in extended list
+- `docs/METHODOLOGY.md` — pathologizing_metaphor row in Extended Devices table
+- `docs/AGENT_GUIDE.md` — counts
+- `mediascope/cli.py` — docstring count
+- `README.md` — counts
+- `examples/sample_output/gizmodo_meta_google_ai_tokens_addiction_2026_06_29_article.txt`
+- `examples/sample_output/gizmodo_meta_google_ai_tokens_addiction_2026_06_29_analysis.md`
+
+### Open Issues (Future Iterations)
+- **"-hungry" compounds:** "token-hungry" not caught by pathologizing_metaphor gluttony pattern. Need compound-adjective matching.
+- **Headline framing analysis:** Strongest pathologizing language ("Addicted," "Cut Off") is in the headline, which `detect_framing_devices()` doesn't process. Headline-specific analysis pass would capture this.
+- **Sustained metaphor coherence:** 3× pathologizing_metaphor detected individually, but no post-pass identifies them as a coherent metaphorical system (systematic domain mapping). Similar to analogy_stacking but for repeated same-type devices.
+- **Intermediate source relay:** Article reports on FT's anonymous sourcing — three-layer intermediation chain. No device captures this source architecture pattern.
+- Ironic quotation false positives (carried over)
+- Author conflict-of-interest detection (carried over)
+- VADER miscalibration for financial/sardonic content (carried over)
+
+### Commit

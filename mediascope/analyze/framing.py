@@ -2339,6 +2339,29 @@ _SARCASTIC_CORRECTION_PATTERNS: list[re.Pattern] = [
         r"obviously|certainly|clearly)\b",
         re.IGNORECASE,
     ),
+    # ---------------------------------------------------------------------------
+    # Standalone sarcastic exclamation: a one-word or very short sentence
+    # used as sardonic editorial commentary, often echoing political/meme
+    # rhetoric.  "Sad!" (Trumpian), "Shocking.", "Brilliant.", "Sure."
+    # These are standalone sentences — not part of a correction structure
+    # but pure sarcastic interjection.
+    #
+    # Discovered via Gizmodo Meta/Google AI tokens article (Jun 29, 2026):
+    #   "In other words, Meta replaced tokenmaxxing with judicious
+    #    token-counting. Sad!"
+    # The "Sad!" is unmistakably sarcastic but matched no existing pattern
+    # because there is no correction, denial, or "(Narrator:)" structure.
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"(?:^|(?<=\.\s)|(?<=!\s)|(?<=\?\s))"
+        r"(?:Sad|Shocking|Brilliant|Sure|Right|Great|Neat|"
+        r"Yikes|Oops|Cute|Classy|Cool|Nice|Lovely|Wonderful|"
+        r"Charming|Delightful|Terrific|Incredible|Amazing|Bravo|"
+        r"Genius|Bold|Fun|Wild)"
+        r"[.!]"
+        r"(?:\s|$)",
+        re.MULTILINE,
+    ),
 ]
 
 _DEVICE_PATTERNS["sarcastic_correction"] = _SARCASTIC_CORRECTION_PATTERNS
@@ -3668,6 +3691,78 @@ _TAXONOMY_FRAMING_PATTERNS: list[re.Pattern] = [
 ]
 _DEVICE_PATTERNS["taxonomy_framing"] = _TAXONOMY_FRAMING_PATTERNS
 
+
+# ---------------------------------------------------------------------------
+# Pathologizing metaphor: editorial technique that applies addiction,
+# disease, compulsion, or bodily-excess language to corporate or
+# institutional behavior.  Frames rational strategic choices (buying
+# compute, adopting AI tools) as pathological urges — removing agency
+# and creating the impression of an entity out of control.
+#
+# Distinct from loaded_language (individual loaded words) because these
+# form a sustained metaphorical frame, and distinct from analogy_metaphor
+# (explicit "like X" comparisons) because pathologizing metaphors are
+# asserted as characterization, not acknowledged as analogy.
+#
+# Discovered via Gizmodo "Meta Reportedly Got Too Addicted to Google AI
+# Tokens" article (Jun 29, 2026): headline uses "Addicted" and "Cut Off"
+# (intervention language), body uses "gorge itself" (gluttony), "token-
+# hungry" (craving), "high-rollers" (gambling compulsion).  None of these
+# were detected as framing devices — the toolkit scored only 2 devices
+# (ironic_quotation + anonymous_authority) in an article dripping with
+# sardonic editorial framing.
+# ---------------------------------------------------------------------------
+_PATHOLOGIZING_METAPHOR_PATTERNS: list[re.Pattern] = [
+    # Addiction/dependency language applied to corporate subjects:
+    # "addicted to", "hooked on", "dependent on", "can't quit", "cut off"
+    re.compile(
+        r"\b(?:addicted to|hooked on|dependent on|"
+        r"can.?t (?:quit|stop|resist|help)|"
+        r"cut (?:off|them off)|weaned? (?:off|from)|"
+        r"kicked the habit|going cold turkey|"
+        r"withdrawal|detox(?:ing)?|intervention|"
+        r"enabler|enabling|relapse[ds]?)\b",
+        re.IGNORECASE,
+    ),
+    # Gluttony / excess-consumption metaphors:
+    # "gorge itself on", "devour", "insatiable", "binge"
+    re.compile(
+        r"\b(?:gorge[ds]?\s+(?:itself|themselves|himself|herself|on)|"
+        r"gorging\s+(?:itself|themselves|on)|"
+        r"devour(?:ed|ing|s)?|insatiable|voracious(?:ly)?|"
+        r"glutton(?:ous(?:ly)?)?|"
+        r"binge[ds]?\s+(?:on|buying|spending|consuming)|"
+        r"bingeing|"
+        r"feasting\s+on|feeding\s+frenzy|"
+        r"(?:swallow|consume|inhale)[ds]?\s+(?:vast|enormous|massive|huge))\b",
+        re.IGNORECASE,
+    ),
+    # Gambling-compulsion metaphors when applied to corporate behavior:
+    # "high-rollers", "doubling down" (when implying recklessness),
+    # "betting the farm", "all-in"
+    re.compile(
+        r"\b(?:high[- ]rollers?|"
+        r"betting (?:the (?:farm|house|ranch|company)|everything|big)|"
+        r"going all[- ]in|"
+        r"(?:can.?t|couldn.?t) walk away|"
+        r"chasing (?:losses|the high|the rush|the next fix))\b",
+        re.IGNORECASE,
+    ),
+    # Disease / pathology framing:
+    # "infected with", "contagion", "epidemic of", "fever"
+    re.compile(
+        r"\b(?:infected with|afflicted by|suffering from|"
+        r"contagion|epidemic of|fever(?:ish)?|"
+        r"pathological(?:ly)?|compulsive(?:ly)?|"
+        r"obsess(?:ed|ive(?:ly)?|ion|ing))\b"
+        r"(?=.{0,60}?"
+        r"\b(?:AI|spending|invest|buy|acqui|data|compute|"
+        r"growth|scaling|expansion|token|model))",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+_DEVICE_PATTERNS["pathologizing_metaphor"] = _PATHOLOGIZING_METAPHOR_PATTERNS
+
 def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
     """Detect analogy stacking — 3+ distinct analogies for the same subject.
 
@@ -4058,10 +4153,10 @@ def _detect_social_proof_amplification(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 42 pattern-matched device types plus 5 structural
-    post-pass types (47 total).
+    Scans for 43 pattern-matched device types plus 5 structural
+    post-pass types (48 total).
 
-    Pattern-matched (42): analogy_metaphor, anonymous_authority,
+    Pattern-matched (43): analogy_metaphor, anonymous_authority,
     catastrophizing, ceo_personalization, commodification_metaphor,
     confession_framing, corporate_reassurance_undercut,
     denial_contradiction, editorial_deflation, emotional_appeal,
@@ -4070,12 +4165,13 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
     hypocrisy_frame, ironic_quotation, isolation_framing,
     juxtaposition, latecomer_narrative, litigation_framing,
     loaded_language, military_techno_optimism, outsourced_intensity,
-    power_asymmetry, precedent_analogy, pressure_language,
-    refusal_amplification, regulatory_favoritism, regulatory_shadow,
-    rhetorical_question, sarcastic_correction, scale_magnitude,
-    selective_omission_signal, selective_rehabilitation,
-    self_referential_investigation, sovereignty_framing, straw_man,
-    taxonomy_framing, timeline_implication, two_tier_treatment,
+    pathologizing_metaphor, power_asymmetry, precedent_analogy,
+    pressure_language, refusal_amplification, regulatory_favoritism,
+    regulatory_shadow, rhetorical_question, sarcastic_correction,
+    scale_magnitude, selective_omission_signal,
+    selective_rehabilitation, self_referential_investigation,
+    sovereignty_framing, straw_man, taxonomy_framing,
+    timeline_implication, two_tier_treatment,
     and worker_replacement_irony.
 
     Structural post-pass (5): kicker_framing, analogy_stacking,
