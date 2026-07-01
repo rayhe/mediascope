@@ -3763,6 +3763,99 @@ _PATHOLOGIZING_METAPHOR_PATTERNS: list[re.Pattern] = [
 ]
 _DEVICE_PATTERNS["pathologizing_metaphor"] = _PATHOLOGIZING_METAPHOR_PATTERNS
 
+
+# --- Anthropomorphization / Personification ---
+# Detects language that ascribes human emotions, intentions, cognition,
+# or social roles to AI systems, algorithms, or software tools — framing
+# them as autonomous agents with inner lives rather than engineered artifacts.
+#
+# Central technique in AI coverage where journalists:
+# 1. Attribute emotions: AI "happily," "eagerly," "cheerfully" acts
+# 2. Ascribe cognition: AI "thinks," "knows," "believes," "understands"
+# 3. Assign intentionality: AI "decides," "chooses," "refuses," "wants"
+# 4. Cast in human roles: AI as "colleague," "employee," "coworker"
+# 5. Attribute social behavior: AI "lies," "deceives," "cooperates"
+#
+# EXCLUSIONS (to avoid false positives):
+# - Standard ML terminology: "the model learned," "trained on" (training is
+#   standard CS usage, not personification in context)
+# - Product names: "AI assistant" (marketing term, not editorial framing)
+# - Direct quotes from company representatives (framing by source, not journalist)
+#
+# Identified as high-value open issue in Malwarebytes article analysis
+# (2026-07-01 01:00 PT Type A): "happily handed," "took that brief a little
+# too seriously," "the confused bot," "without being taught" — all undetected.
+_ANTHROPOMORPHIZATION_PATTERNS: list[re.Pattern] = [
+    # Pattern 1: Emotional-adverb + verb — AI "happily did X," "eagerly processed,"
+    # "cheerfully complied," "stubbornly refused," "nervously flagged"
+    # The adverb ascribes inner emotional state to software.
+    re.compile(
+        r"\b(?:the |its |an? |this |that |Meta(?:'s)? |Google(?:'s)? |"
+        r"OpenAI(?:'s)? |Anthropic(?:'s)? )?"
+        r"(?:AI|bot|chatbot|algorithm|model|system|agent|assistant|tool)"
+        r"(?:\s+\w+){0,3}?\s+"
+        r"(?:happily|eagerly|cheerfully|enthusiastically|nervously|"
+        r"stubbornly|reluctantly|obediently|dutifully|blindly|gleefully|"
+        r"helpfully|merrily|willingly|grudgingly)\s+"
+        r"(?:\w+(?:ed|s|ing)\b)",
+        re.IGNORECASE,
+    ),
+    # Pattern 2: AI/bot as subject + cognitive/volitional verb
+    # "the AI decided," "the bot chose," "the algorithm believes"
+    # Catches subject-verb constructions where software is ascribed human cognition.
+    re.compile(
+        r"\b(?:the |its |an? |this |that )?"
+        r"(?:AI|bot|chatbot|algorithm|model|system|agent)"
+        r"(?:\s+\w+){0,2}?\s+"
+        r"(?:decided|chose|wanted|refused|believed|understood|"
+        r"thought|knew|felt|hoped|feared|intended|preferred|"
+        r"determined|concluded|judged|recognized|realized|considered)\b",
+        re.IGNORECASE,
+    ),
+    # Pattern 3: "taught" / "taught how to" — learning ascription
+    # "without being taught how to verify," "hadn't been taught"
+    # Frames engineering gaps as pedagogical failure, implying the AI
+    # is a student who wasn't properly educated rather than software
+    # missing a conditional check.
+    re.compile(
+        r"\b(?:without being|hadn't been|wasn't|weren't|never|not)"
+        r"\s+(?:taught|told|shown|instructed|trained)\s+"
+        r"(?:how to|to|about|that)\b",
+        re.IGNORECASE,
+    ),
+    # Pattern 4: Took-X-too-seriously / went-too-far — intentional-excess ascription
+    # "took that brief a little too seriously," "went too far," "got carried away"
+    # Frames software behavior as excessive enthusiasm rather than a design flaw.
+    re.compile(
+        r"\b(?:took (?:that|this|the|its) .{0,30}?"
+        r"(?:too (?:seriously|literally|far)|to (?:an |the )extreme)|"
+        r"got (?:a (?:little|bit) )?carried away|"
+        r"went (?:a (?:little|bit) )?(?:too far|overboard|rogue))\b",
+        re.IGNORECASE,
+    ),
+    # Pattern 5: "confused" / "bewildered" / "fooled" — state-of-mind ascription
+    # "the confused bot," "a bewildered AI," "the model was fooled"
+    # Attributes a psychological state to software.
+    re.compile(
+        r"\b(?:the |a |an? )?(?:confused|bewildered|baffled|puzzled|"
+        r"clueless|gullible|naive|oblivious|unsuspecting|trusting)"
+        r"\s+(?:AI|bot|chatbot|algorithm|model|system|agent|assistant)\b",
+        re.IGNORECASE,
+    ),
+    # Pattern 6: Human role/identity casting
+    # "digital employee," "AI colleague," "robot coworker," "machine worker"
+    # "virtual teammate," "silicon assistant" (metaphorical, not product names)
+    re.compile(
+        r"\b(?:digital|virtual|silicon|robotic?|AI|machine|automated?)"
+        r"\s+(?:employee|colleague|coworker|co-worker|teammate|"
+        r"team member|worker|workforce|staff(?:er)?|intern|"
+        r"junior|contractor|recruit|hire|deputy|subordinate)\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["anthropomorphization"] = _ANTHROPOMORPHIZATION_PATTERNS
+
+
 def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
     """Detect analogy stacking — 3+ distinct analogies for the same subject.
 
@@ -4153,13 +4246,14 @@ def _detect_social_proof_amplification(text: str) -> list[FramingDevice]:
 def detect_framing_devices(text: str) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 43 pattern-matched device types plus 5 structural
-    post-pass types (48 total).
+    Scans for 44 pattern-matched device types plus 5 structural
+    post-pass types (49 total).
 
-    Pattern-matched (43): analogy_metaphor, anonymous_authority,
-    catastrophizing, ceo_personalization, commodification_metaphor,
-    confession_framing, corporate_reassurance_undercut,
-    denial_contradiction, editorial_deflation, emotional_appeal,
+    Pattern-matched (44): analogy_metaphor, anonymous_authority,
+    anthropomorphization, catastrophizing, ceo_personalization,
+    commodification_metaphor, confession_framing,
+    corporate_reassurance_undercut, denial_contradiction,
+    editorial_deflation, emotional_appeal,
     escalation_amplification, failure_precedent, false_balance,
     geopolitical_regulatory_pressure, guilt_by_association,
     hypocrisy_frame, ironic_quotation, isolation_framing,

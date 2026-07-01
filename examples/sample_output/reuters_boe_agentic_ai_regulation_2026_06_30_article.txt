@@ -1,0 +1,33 @@
+Bank of England's Breeden signals new rules to govern agentic AI
+
+Reuters, June 30, 2026
+
+The Bank of England on Tuesday signalled the need for bespoke AI regulation to contain risks to the financial system posed by increasingly capable agentic systems, in a potential shift in its approach to overseeing the technology.
+
+Following years of insistence that existing frameworks were sufficient to mitigate AI risks, Deputy Governor Sarah Breeden said rapid developments in areas like agentic payments and trading had exposed potential gaps that could require a more sophisticated regulatory response.
+
+Agentic AI can make decisions and operate autonomously.
+
+"Our frameworks were not built to contemplate autonomous agents, and relying on a human in the loop for all agent actions is unlikely to be realistic," Breeden told the European Central Bank Forum on central banking in Portugal.
+
+ENHANCED RECOVERY AND KILL SWITCHES
+
+Breeden said the BoE is considering whether banks need "enhanced recovery" for core systems, allowing one bank to take over another's basic functions during a disruption.
+
+Other measures under consideration include fresh guardrails and circuit breakers or kill switches "that would limit or stop trading market-wide if faulty AI models cause market meltdown."
+
+According to a Cambridge Centre for Alternative Finance survey, 52% of finance firms are already using agentic AI. In commerce, agents are typically used to recommend products and in trading, firms mostly use autonomous AI for lower-risk operational tasks, though that could change quickly, Breeden said.
+
+"If AI agents respond similarly to the same prompts or triggers, they could amplify volatility in stress — especially if their objectives drift from original goals or public policy objectives."
+
+The deployment of AI among firms and households means "the financial system looks likely therefore to evolve quickly into one that operates more autonomously, at scale and speed", according to Breeden. This would involve AI agents "transacting on behalf of consumers and merchants; devising and executing trading strategies in financial markets; and identifying and chaining together cyber vulnerabilities".
+
+"As AI capabilities increase, we must keep asking whether existing technology-agnostic regulatory frameworks remain sufficient," she said. "More sophisticated governance and accountability frameworks may be needed."
+
+When it comes to the financial markets, trading firms mainly deploy autonomous AI "for lower-risk operational tasks, such as research", Breeden noted, but added that this "could change quickly".
+
+The Bank will publish its latest outlook on the risks to UK financial stability, including the role of agentic AI, next week.
+
+Sources:
+- Reuters: https://www.reuters.com/world/agentic-ai-may-require-regulatory-reform-boes-breeden-says-2026-06-30/
+- The Times: https://www.thetimes.com/business/technology/article/bank-of-england-ai-agents-market-meltdown-h36jqjzc6

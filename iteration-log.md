@@ -8918,3 +8918,82 @@ Most recent Meta articles from tracked publications (Wired, NYT, Guardian, Atlan
 
 ### Commit
 260698a — "Type A: Malwarebytes Meta AI support bot hack — 5 improvements"
+
+---
+
+## Iteration: Type A — Reuters BoE Agentic AI Regulation (July 1, 2026 02:00 PT)
+
+### Summary
+Added `anthropomorphization` framing device (44th pattern-matched type, 49th total), analyzed Reuters article on Bank of England Deputy Governor Sarah Breeden's speech signaling bespoke regulation for agentic AI in financial systems.
+
+### Article Analyzed
+**Reuters: "Bank of England's Breeden signals new rules to govern agentic AI"** (June 30, 2026)
+- Source: https://www.reuters.com/world/agentic-ai-may-require-regulatory-reform-boes-breeden-says-2026-06-30/
+- Cross-referenced: The Times coverage for headline framing comparison
+
+### Code Changes
+
+#### 1. New framing device: `anthropomorphization` (6 regex patterns)
+Addresses the #1 open issue from the prior iteration (Malwarebytes article). Detects six pattern categories:
+1. Emotional-adverb + verb ascription ("happily handed," "eagerly processed")
+2. AI-as-subject + cognitive/volitional verb ("the AI decided," "the bot chose")
+3. Teaching/learning ascription ("without being taught how to")
+4. Intentional-excess ("took that brief too seriously," "got carried away")
+5. State-of-mind adjective + AI noun ("the confused bot," "a bewildered AI")
+6. Human role-casting ("digital employee," "AI colleague," "virtual teammate")
+
+**Regression test on Malwarebytes article:** 5 detections — "happily handed," "took that brief a little too seriously," "without being taught how to," "the confused bot," "a confused AI." Previous iteration found 0 (only 2 ironic_quotation); now finds 7 total (5 anthropomorphization + 2 ironic_quotation). This is the primary framing technique in that article and its detection closes a major toolkit gap.
+
+**Test on Reuters BoE article:** 0 anthropomorphization detections. Correct — the article discusses "agentic AI" and "autonomous agents" as technical terms from the regulator's speech, not editorial personification. The device correctly distinguishes between technical terminology and editorial anthropomorphization.
+
+#### 2. Test guard updates
+- `test_structural_consistency.py`: EXPECTED_TOTAL 48→49, EXPECTED_PATTERN_MATCHED 43→44, EXPECTED_TOTAL_PATTERNS 287→293, stale purge list extended to include "47-type" and "48-type"
+- `test_nyt_ai_reviews.py`: pattern count 43→44, `anthropomorphization` added to expected_pattern_types set
+
+#### 3. Documentation updates
+- **METHODOLOGY.md:** 49 types, 44 pattern-matched, 34 extended, 293 patterns. New row in Extended Devices table with full description, pattern examples, and Malwarebytes exemplar.
+- **ARCHITECTURE.md:** 49 types, 44 pattern-matched, Extended (34) list updated with anthropomorphization description.
+- **AGENT_GUIDE.md:** 49 types, 44 pattern-matched, 34 extended.
+- **README.md:** 49 total = 44 pattern-matched, 293 patterns.
+- **cli.py:** 49 types in docstring.
+
+### Toolkit Results on Reuters BoE Article
+
+| Module | Result | Assessment |
+|--------|--------|------------|
+| Entities | Reuters (×2), Cambridge University — 3 mentions, 2 unique | Sparse. Known gap: government/regulatory actors (Breeden, BoE, ECB) not extracted. |
+| Topics | ai_development (0.43), government_oversight (0.11) | Correct primary. government_oversight underscored — "prudential," "macroprudential," "supervisory" not in keyword set. |
+| Framing | catastrophizing (2), ironic_quotation (2), kicker_framing (1) — 5 total | Catastrophizing from Breeden's "market meltdown" quote (source attribution, not editorial). Ironic_quotation false positive — Reuters house style wraps source phrases in quotes. |
+| Sentiment | tone: −0.31, speculative: 0.85, emotional: 0.21, anon sources: 0.00 | Reasonable. High speculative ratio correct for forward-looking regulatory speech. |
+
+### Cross-Publication Framing Comparison
+- **Reuters:** "signals new rules to govern agentic AI" — neutral, policy-focused, names Breeden
+- **The Times:** "worries AI agents could cause market meltdown" — emotional, fear-focused, anthropomorphizes institution ("worries"), leads with worst case
+
+### Running Totals
+- Tests: 1064 (all passing)
+- Framing device types: 49 (44 pattern-matched + 5 structural)
+- Total patterns: 293
+- Emotional language terms: 680
+- Topic buckets: 21
+- Article analyses: ~73 in sample_output (146 files)
+
+### Files Changed
+- `mediascope/analyze/framing.py` — 6 anthropomorphization regex patterns + docstring
+- `tests/test_structural_consistency.py` — count guards, stale purge list
+- `tests/test_nyt_ai_reviews.py` — pattern count + expected types set
+- `docs/METHODOLOGY.md` — counts + Extended Devices table row
+- `docs/ARCHITECTURE.md` — counts + extended list
+- `docs/AGENT_GUIDE.md` — counts
+- `README.md` — counts
+- `mediascope/cli.py` — docstring count
+- `examples/sample_output/reuters_boe_agentic_ai_regulation_2026_06_30_article.txt` — new
+- `examples/sample_output/reuters_boe_agentic_ai_regulation_2026_06_30_analysis.md` — new
+
+### Open Issues (Future Iterations)
+- **Wire service ironic_quotation false positives:** Reuters/AP style wraps source phrases in quotation marks → systematically triggers ironic_quotation. Consider wire-service detection heuristic.
+- **Government/regulatory entity extraction gap:** BoE, ECB, central bank officials, deputy governors not captured by entity model.
+- **Government oversight topic keyword gap:** "Prudential," "macroprudential," "supervisory frameworks," "central bank" should boost confidence.
+- **Speculative language calibration for regulatory speech genre:** 0.85 is very high but genre-appropriate for forward-looking policy speech articles — may need genre-aware weighting.
+- **Causal blame chain framing** (from prior iteration) — still open.
+- **Compound-adjective matching for pathologizing_metaphor** ("-hungry" compounds) — still open.
