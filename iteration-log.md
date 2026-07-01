@@ -4,6 +4,80 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-01 16:00 PT — Type B: Journalist/Publication Research — Louise Matsakis & Michael Calore Profiles + Wired Business Desk Editorial Change
+
+### Focus
+Added two previously untracked journalists who hold editorially significant positions at Wired's business desk and consumer tech desk respectively. Also added the Matsakis return as a formal editorial change entry.
+
+### New Journalist: Louise Matsakis (110th tracked)
+
+**Career chain:** Mashable → Motherboard/VICE → Wired (1st stint, Thompson era, 2018-2020) → Rest of World → NBC News → Semafor → freelance/Omidyar → Wired (2nd stint, Drummond era, Nov 2024-)
+
+**Current role:** Senior Business Editor at Wired. Reports to Zoë Schiffer (Director, Business & Industry). Co-writes "Made in China" newsletter with Zeyi Yang.
+
+**Why she matters for MediaScope:**
+1. **Boomerang journalist** — only tracked journalist to return to the same publication after departing, enabling before/after editorial culture comparison (Thompson era vs Drummond era)
+2. **Senior editor role** — her editing authority amplifies her framing choices through the reporters she edits on the business desk
+3. **China expertise** — NYU BA Philosophy, studied intensive Chinese in Taipei, 6+ years covering TikTok/Shein/export controls; co-writes Made in China newsletter
+4. **Most outlet-diverse career** — 7 outlets across non-profit (Rest of World), broadcast (NBC News), startup (Semafor), legacy magazine (Wired), and digital-native (Motherboard/VICE)
+5. **Business desk hierarchy context** — fills critical gap: Drummond → Barrett → Schiffer → Matsakis + Kleeman (senior editors) → Tiku, Zeff (writers)
+
+**Career entries:** 9 (Mashable, Motherboard, Wired 1st, Rest of World, NBC News, Semafor reporter, Semafor deputy, freelance/Omidyar, Wired 2nd)
+
+**Awards:** 2022 Society of Publishers in Asia award (Shein investigation at Rest of World)
+
+### New Journalist: Michael Calore (110th → 110 total with Matsakis)
+
+**Career chain:** Webmonkey EIC (Wired Digital property) → Wired product reviews editor → Wired senior editor → Wired Director, Consumer Tech & Culture (Jan 2024-)
+
+**Current role:** Director, Consumer Tech & Culture at Wired. One of three Directors (alongside Tim Marchman and Zoë Schiffer) structuring Drummond-era editorial leadership. Oversees all Wired Gear, Culture, and Service coverage across US and UK.
+
+**Why he matters for MediaScope:**
+1. **Longest tenure at Wired** — continuous service since at least 2008 spanning 4 EICs (Dadich, Thompson, Lichfield, Drummond)
+2. **Only non-adversarial-pipeline Director** — unlike Marchman (Gizmodo/Vice) and Schiffer (Verge/Platformer), Calore grew up inside Wired itself. He is the institutional memory in the new leadership
+3. **Consumer Tech & Culture desk** — covers AR/VR, smart glasses, wearables → directly relevant to Meta hardware coverage
+4. **Gadget Lab podcast** — co-hosts with Lauren Goode, Wired's longest-running podcast, extending his consumer tech framing beyond print/digital
+5. **Webmonkey EIC background** — came from Wired Digital's web development side, not journalism, giving him a unique technical foundation among Wired leadership
+
+**Career entries:** 3 (Webmonkey EIC, Wired senior editor, Wired Director)
+
+### Editorial Change Added
+
+| Date | Person | Position | Notes |
+|------|--------|----------|-------|
+| 2024-11 | Louise Matsakis | Senior Business Editor | Boomerang hire, Barrett announced Oct 2024, started Nov 11 |
+
+(Calore's Director promotion was already tracked in editorial_changes.yaml from a prior iteration.)
+
+### Files Changed
+
+| File | Change |
+|------|--------|
+| `profiles/careers/journalists.yaml` | +2 journalists (Louise Matsakis: 9 career entries; Michael Calore: 3 career entries) |
+| `profiles/careers/editorial_changes.yaml` | +1 entry (Matsakis return, 2024-11) |
+| `README.md` | Journalist count 108→110, multi-pub 106→107, added Matsakis to notable migrations list |
+| `iteration-log.md` | This entry |
+
+### Stats (post-iteration)
+- Journalists: 108 → 110 (+2)
+- Multi-publication journalists: 106 → 107 (+1, Calore is single-pub: all career within Wired/Wired Digital)
+- Career entries: +12 (9 Matsakis + 3 Calore)
+- Wired editorial changes: 32 → 33 (+1 Matsakis return)
+- Tests: 1131 (all passing, no regressions — profile additions are data-only)
+
+### Sources
+- https://www.louisematsakis.com/about (personal site, current as of Jul 2026)
+- https://talkingbiznews.com/they-talk-biz-news/matsakis-joins-wired-as-a-staff-writer/amp/ (first Wired hire, ~Jan 2018)
+- https://talkingbiznews.com/they-re-hiring/rest-of-world-hires-matsakis-from-wired/ (Rest of World hire, Oct 2020)
+- https://talkingbiznews.com/they-talk-biz-news/nbc-news-tech-investigations-team-hires-matsakis/ (NBC hire, Jan 2022)
+- https://talkingbiznews.com/they-move/semafor-tech-reporter-matsakis-becoming-deputy-news-editor/ (Semafor promotion, Dec 2023)
+- https://talkingbiznews.com/they-move/matsakis-departs-semafor-to-start-newsletter-and-freelance/ (Semafor departure, Mar 2024)
+- https://EditorandPublisher.com/stories/louise-matsakis-is-returning-to-wired-as-a-senior-editor-of-the-business-desk,252182 (Wired return, Oct 2024)
+- http://talkingbiznews.com/media-news/matsakis-returns-to-wired-as-a-senior-editor/ (TalkingBizNews return, Oct 2024)
+- https://www.vice.com/en/article/paax7z/this-twitter-bot-tracks-neo-nazi-bitcoin-transactions (Motherboard article, Aug 2017)
+- https://talkingbiznews.com/media-news/wired-names-barrett-its-executive-editor/amp/ (Drummond announcement: Barrett hire + Calore promotion, Jan 2024)
+- https://www.noemiconcept.com/index.php/en/9-information/11-news-technologique-tech-news/9291-got-gadget-questions-well-answer-them-on-facebook.html (Calore Webmonkey EIC reference, May 2011)
+
 ## 2026-07-01 12:00 PT — Type A: Article Deep Dive — NYT "How Tech Companies Hooked Kids in School on Social Media"
 
 ### Article

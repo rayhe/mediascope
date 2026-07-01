@@ -6187,3 +6187,177 @@ journalists:
       Russia blocking Starlink (with Satariano, May 2024), Pavel Durov/Telegram profile (with Satariano, Aug 2024). The Mozur-Satariano
       partnership is NYT''s primary engine for tech-geopolitics investigations.'
     source_url: https://pfolio.com/profile/paul-mozur-and-adam-satariano/posts/
+- career:
+  - beat: technology, social media
+    event_type: hired
+    notes: Editor at Mashable. First journalism role after NYU. Exact dates unclear — pre-Motherboard. Writing focused on
+      technology and the internet, online communities, and cyberlaw. Mashable's social-media-centric framing (listicles,
+      trending topics) contrasts with the investigative work she would later pursue.
+    publication: mashable
+    role: editor
+    source_url: https://talkingbiznews.com/they-talk-biz-news/matsakis-joins-wired-as-a-staff-writer/amp/
+    start: 2016-01
+  - beat: technology, internet culture, crypto
+    end: 2017-12
+    event_type: hired
+    notes: 'Editor at Motherboard, VICE Media''s technology and science vertical. Covered neo-Nazi bitcoin transactions (Aug
+      2017 bot tracker article cited in academic literature), Google, and internet culture. Reporting for Motherboard was featured
+      on the front page of The Wall Street Journal. VICE Media''s institutional culture — adversarial, youth-targeted, anti-establishment
+      — shaped her early framing instincts. Motherboard operated under VICE''s editorial umbrella, which later connected to
+      Wired through the Drummond pipeline (Drummond = VP at VICE 2019-2023).'
+    publication: motherboard-vice
+    role: editor
+    source_url: https://www.vice.com/en/article/paax7z/this-twitter-bot-tracks-neo-nazi-bitcoin-transactions
+    start: 2017-01
+  - beat: Big Tech, TikTok, Amazon, Facebook, Google
+    end: 2020-10
+    event_type: hired
+    notes: 'Staff writer in New York. First stint at Wired. Broke stories about TikTok, Amazon, Twitter, Facebook, and Google
+      over 3 years. Covered cyberlaw, automation of social media, online communities. Left in October 2020. Personal site
+      says she "spent three years of my early 20s as a staff writer at WIRED." Key period: overlapped with Nicholas Thompson
+      EIC era (2017-2020) and the beginning of Wired''s editorial transition. This is the Thompson-era Wired editorial culture,
+      before Drummond''s adversarial pivot.'
+    publication: wired
+    role: staff_writer
+    source_url: https://talkingbiznews.com/they-talk-biz-news/matsakis-joins-wired-as-a-staff-writer/amp/
+    start: 2018-01
+  - beat: Amazon international operations, Chinese e-commerce, Shein
+    end: 2021-12
+    event_type: hired
+    notes: 'Senior editor at Rest of World, a non-profit newsroom focused on tech in the Global South. Covered Amazon''s
+      international operations in six countries. Co-wrote investigation into Chinese fast fashion giant Shein that won the
+      2022 Society of Publishers in Asia (SOPA) award for excellence in business reporting. Rest of World''s non-profit,
+      Global South-focused framing represents the most structurally different outlet in her career — no Big Tech advertising
+      revenue dependency, no Western media assumptions.'
+    publication: rest-of-world
+    role: senior_editor
+    source_url: https://talkingbiznews.com/they-re-hiring/rest-of-world-hires-matsakis-from-wired/
+    start: 2020-10
+  - beat: Amazon, TikTok, Starbucks, Russia-Ukraine tech
+    end: 2023-06
+    event_type: hired
+    notes: 'Investigative tech reporter on NBC News tech investigations team. Started January 2022. Broke several influential
+      stories about Amazon, Starbucks, and Russia''s invasion of Ukraine. Covered Amazon and TikTok as primary beats. NBC''s
+      broadcast-network investigative unit has different institutional incentives than print/digital outlets — stories must
+      be TV-adaptable and have broad consumer impact. This is her only broadcast-affiliated position.'
+    publication: nbc-news
+    role: investigative_reporter
+    source_url: https://talkingbiznews.com/they-talk-biz-news/nbc-news-tech-investigations-team-hires-matsakis/
+    start: 2022-01
+  - beat: AI, China technology
+    end: 2024-01
+    event_type: hired
+    notes: Technology reporter at Semafor covering artificial intelligence and China's technology industry. Semafor is a media
+      startup founded by Ben Smith (ex-BuzzFeed News EIC) and Justin Smith (ex-Bloomberg Media CEO). Appeared on Big Technology
+      Podcast (Dec 1, 2023) as "a reporter at Semafor covering AI." Promoted to deputy news editor in January 2024.
+    publication: semafor
+    role: technology_reporter
+    source_url: https://talkingbiznews.com/they-move/semafor-tech-reporter-matsakis-becoming-deputy-news-editor/
+    start: 2023-06
+  - beat: Asia news, breaking news
+    end: 2024-03
+    event_type: editorial_role_change
+    notes: 'Promoted from tech reporter to deputy news editor with focus on Asia news coverage. Helped launch a daily newsletter
+      focused on Asia with over 100,000 subscribers. Departed March 2024 to freelance and start "You May Also Like" newsletter
+      covering tech, e-commerce, and China. Brief tenure (~3 months in deputy role, ~9 months total at Semafor) suggests
+      editorial or strategic misalignment.'
+    publication: semafor
+    role: deputy_news_editor
+    source_url: https://talkingbiznews.com/they-move/matsakis-departs-semafor-to-start-newsletter-and-freelance/
+    start: 2024-01
+  - beat: AI, e-commerce, Big Tech, consumer impact
+    end: 2024-11
+    event_type: freelance
+    notes: 'Freelance period. Started "You May Also Like" newsletter covering tech, e-commerce, and China. Named Omidyar Network
+      reporter-in-residence (announced ~Jun 2024, alongside Zoë Bernard and Osita Nwanevu). Omidyar focus: "artificial intelligence
+      and its impact on consumers, the environment, and vulnerable communities." Also contributed freelance stories to The
+      Atlantic, NBC News, Wired, and other outlets during this period. The Omidyar fellowship positions her in the accountability/impact
+      journalism ecosystem.'
+    publication: freelance
+    role: freelancer
+    source_url: https://talkingbiznews.com/they-move/matsakis-departs-semafor-to-start-newsletter-and-freelance/
+    start: 2024-04
+  - beat: AI, venture capital, China tech, global technology industry
+    event_type: hired
+    notes: 'Returned to Wired as Senior Business Editor — editorial leadership role (editor, NOT writer). Started November
+      11, 2024. Works closely with Natasha Tiku and US-based reporters. Reports to Zoë Schiffer (Director, Business & Industry).
+      Co-writes "Made in China" weekly newsletter with Zeyi Yang covering China tech news. Barrett''s announcement: "she has
+      an innate understanding of what a WIRED story is, and more importantly has a body of work as a reporter and editor that
+      embodies what WIRED strives to be: smart, newsy, scoop-driven, voicey, global, and fun." KEY MIGRATION: Matsakis → Wired
+      (first stint, Thompson era) → Rest of World → NBC → Semafor → freelance/Omidyar → Wired (second stint, Drummond era).
+      The boomerang tests whether returning journalists import new institutional framings or revert to Wired''s house style.
+      Her China expertise (Chinese language training in Taipei, 6+ years covering TikTok/Shein/export controls) makes her
+      the business desk''s primary China lens alongside Zeyi Yang (China desk). Based in Los Angeles. ANALYTICAL VALUE: As
+      senior business editor, she shapes coverage of AI, venture capital, and global tech industry — directly involved in
+      editing and framing stories about Meta, Google, Amazon, and Chinese tech companies. Her editing authority means her
+      framing choices are amplified through the reporters she edits.'
+    publication: wired
+    role: senior_business_editor
+    source_url: https://EditorandPublisher.com/stories/louise-matsakis-is-returning-to-wired-as-a-senior-editor-of-the-business-desk,252182
+    start: 2024-11
+  name: Louise Matsakis
+  notes: 'Key migration chain: Mashable → Motherboard/VICE → Wired (first, 2018-2020, Thompson era) → Rest of World → NBC
+    News → Semafor → freelance/Omidyar → Wired (second, 2024-, Drummond era). NYU BA Philosophy, studied intensive Chinese
+    in Taipei, Taiwan. Based in Los Angeles. China and e-commerce specialist — one of the most experienced Western journalists
+    covering Chinese tech companies'' global impact (TikTok bans, Shein labor practices, AI export controls). Won 2022 SOPA
+    award for Shein investigation at Rest of World. Co-writes "Made in China" newsletter with Zeyi Yang at Wired. Named Omidyar
+    Network reporter-in-residence (2024). ANALYTICAL VALUE: (1) Boomerang journalist — rare case of returning to the same
+    publication after 4 years and 4 other outlets, enabling before/after comparison of Wired''s editorial culture (Thompson
+    vs Drummond); (2) her senior editor role on the business desk means she directly shapes coverage framing for AI, VC, and
+    Big Tech stories, including Meta; (3) China expertise provides non-Western analytical framework for US tech company coverage;
+    (4) career arc through non-profit (Rest of World), broadcast (NBC), startup (Semafor), and legacy (Wired) outlets provides
+    unusually broad institutional experience. Has appeared on NPR, CBS News, Good Morning America, BBC, CBC Radio, CNN.'
+- career:
+  - beat: web development, internet culture
+    end: 2011-01
+    event_type: hired
+    notes: 'Editor-in-Chief of Webmonkey, Wired Digital''s web development and design resource. Webmonkey was launched in 1996
+      as part of Wired Digital (later Lycos, then Condé Nast after acquisition). The site provided tutorials, tools, and reference
+      materials for web developers. Calore ran the editorial side. When Webmonkey''s focus shifted, he moved "to the gadget
+      side" (his own words, per 2011 Wired Facebook Q&A). Exact start date at Webmonkey unclear — site relaunched under Condé
+      Nast ownership in 2008, and Calore was EIC at that point. His Webmonkey tenure represents the oldest continuous Wired
+      Digital staff connection still active at Wired as of 2026.'
+    publication: wired-digital-webmonkey
+    role: editor_in_chief
+    source_url: https://www.noemiconcept.com/index.php/en/9-information/11-news-technologique-tech-news/9291-got-gadget-questions-well-answer-them-on-facebook.html
+    start: 2008-01
+  - beat: consumer tech, product reviews, gadgets
+    end: 2024-01
+    event_type: editorial_role_change
+    notes: 'Product reviews editor (2011), then promoted through senior editor ranks. Co-hosted the Gadget Lab podcast with
+      Lauren Goode (and previously with Arielle Pardes). Appeared on Wondery''s Business Wars as expert guest (Apple vs Microsoft,
+      Rise of AI, Fitbit episodes). Guest on major podcasts and media. Has been described as "longtime WIRED editor" by Katie
+      Drummond. His tenure spans the Scott Dadich (2012-2017), Nicholas Thompson (2017-2020), Gideon Lichfield (2021-2023),
+      and Katie Drummond (2023-) editorial eras — making him the institutional memory of Wired''s editorial evolution. Social:
+      @snackfight on Bluesky/Twitter.'
+    publication: wired
+    role: senior_editor
+    source_url: https://www.noemiconcept.com/index.php/en/9-information/11-news-technologique-tech-news/9291-got-gadget-questions-well-answer-them-on-facebook.html
+    start: 2011-01
+  - beat: consumer tech, culture, service journalism, gear reviews
+    event_type: editorial_role_change
+    notes: 'Promoted to Director, Consumer Tech & Culture — the first of three Director positions created by Katie Drummond
+      to restructure Wired''s newsroom. Announced January 2024 alongside Brian Barrett''s executive editor hire. Oversees ALL
+      Wired Gear, Culture, and Service coverage across US and UK. Drummond: "I''ve been so impressed by Michael''s professionalism,
+      dedication, and deep understanding of all things WIRED — along with his eagerness to move us in new directions and try
+      new things." Team includes Miles Klee (senior writer, culture), Reece Rogers, and reviews/buying guides staff. Still
+      co-hosts Gadget Lab podcast. The three Director positions (Calore: Consumer Tech & Culture, Tim Marchman: Science, Politics
+      & Security, Zoë Schiffer: Business & Industry) define Wired''s entire editorial structure under Drummond/Barrett. ANALYTICAL
+      VALUE: Calore is the only Director who predates Drummond by over a decade. His institutional longevity (15+ years)
+      provides editorial continuity during the Drummond transformation — he embodies Wired''s pre-adversarial-pivot DNA in
+      a leadership role that now must operate within Drummond''s adversarial-journalism framework. Tests whether a pre-Drummond
+      institutional veteran moderates or amplifies the adversarial culture shift.'
+    publication: wired
+    role: director_consumer_tech_culture
+    source_url: https://talkingbiznews.com/media-news/wired-names-barrett-its-executive-editor/amp/
+    start: 2024-01
+  name: Michael Calore
+  notes: 'Career: Webmonkey EIC → Wired product reviews editor → Wired senior editor → Wired Director, Consumer Tech & Culture.
+    One of the longest-tenured staff members in Wired history — continuous service since at least 2008 spanning the Dadich,
+    Thompson, Lichfield, and Drummond editorial eras. Co-hosts Gadget Lab podcast (Wired''s longest-running podcast) with Lauren
+    Goode. Social: @snackfight. Based in San Francisco. KEY for MediaScope: (1) longest editorial continuity at Wired —
+    institutional memory across 4 EICs; (2) only Drummond-era Director not hired from the adversarial journalism pipeline
+    (Gizmodo/Vice/Guardian) — he is the Wired institutional legacy voice in the new leadership structure; (3) Consumer Tech
+    & Culture coverage includes AR/VR, smart glasses, and wearables, making his desk directly relevant to Meta hardware coverage;
+    (4) his Gadget Lab co-hosting with Lauren Goode means his consumer tech framing reaches podcast audiences beyond print/digital
+    readers.'
