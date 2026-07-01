@@ -4243,11 +4243,19 @@ def _detect_social_proof_amplification(text: str) -> list[FramingDevice]:
     return devices
 
 
-def detect_framing_devices(text: str) -> list[FramingDevice]:
+def detect_framing_devices(
+    text: str,
+    source_publication: str | None = None,
+) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
     Scans for 44 pattern-matched device types plus 5 structural
     post-pass types (49 total).
+
+    When *source_publication* is provided, ``self_referential_investigation``
+    matches are filtered to only fire when the cited publication matches the
+    source (case-insensitive substring).  Without it, all publication
+    authority claims are returned (backward-compatible default).
 
     Pattern-matched (44): analogy_metaphor, anonymous_authority,
     anthropomorphization, catastrophizing, ceo_personalization,
@@ -4493,6 +4501,44 @@ def detect_framing_devices(text: str) -> list[FramingDevice]:
 
     # Sort by position in text
     devices.sort(key=lambda d: d.start)
+
+    # --- Post-filter: self_referential_investigation ---
+    # When source_publication is provided, drop self_referential_investigation
+    # matches where the cited publication does NOT match the source.  A cross-
+    # publication citation (e.g. Memeburn citing "Bloomberg reported") is
+    # standard attribution, not self-referential investigation.  Pattern 3
+    # (reflexive: "our investigation") is always kept because it's inherently
+    # self-referential regardless of which publication wrote the article.
+    if source_publication:
+        _source_pub_lower = source_publication.lower()
+        filtered_devices: list[FramingDevice] = []
+        for dev in devices:
+            if dev.device_type != "self_referential_investigation":
+                filtered_devices.append(dev)
+                continue
+            evidence_lower = dev.evidence_text.lower()
+            # Reflexive patterns ("our investigation", "this publication")
+            # are always self-referential — keep unconditionally
+            if any(kw in evidence_lower for kw in (
+                "our investigation", "our reporting", "our analysis",
+                "our findings", "our review", "our examination",
+                "our inquiry", "our report",
+                "this publication", "this outlet", "this newsroom",
+                "this paper",
+            )):
+                filtered_devices.append(dev)
+                continue
+            # For named-publication patterns, keep only if the cited
+            # publication matches the source publication
+            if _source_pub_lower in evidence_lower:
+                filtered_devices.append(dev)
+                continue
+            # Dropped: cross-publication citation, not self-referential
+            logger.debug(
+                "Suppressed self_referential_investigation (source=%s): %s",
+                source_publication, dev.evidence_text[:80],
+            )
+        devices = filtered_devices
 
     # Post-pass: kicker framing detection
     # Check if the final paragraph introduces negative context discordant

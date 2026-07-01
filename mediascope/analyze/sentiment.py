@@ -1519,9 +1519,62 @@ def analyze_composite(text: str, headline: str = "") -> SentimentResult:
     from mediascope.analyze.framing import detect_framing_devices, summarize_framing
 
     # 1. Overall tone: blend VADER compound and TextBlob polarity
+    # ---------------------------------------------------------------------------
+    # VADER long-text normalization fix (Jul 2026):
+    # VADER's compound score is normalized via sum / sqrt(sum² + alpha) where
+    # alpha=15, tuned for tweet-length texts.  For long articles (30+ sentences),
+    # this normalization amplifies small biases — a few business words like
+    # "risk", "pressure", "problem" in otherwise neutral/positive context can
+    # push compound to -0.85 when the actual sentence-level sentiment is
+    # balanced.  Fix: compute sentence-level VADER mean as a second signal.
+    # When it diverges from full-text compound by >0.5, blend toward the
+    # sentence-level mean, which is immune to the normalization distortion.
+    # ---------------------------------------------------------------------------
     vader = analyze_vader(text)
+    vader_compound = vader["compound"]
+
+    # Sentence-level VADER for long texts
+    # ---------------------------------------------------------------------------
+    # VADER long-text normalization fix (Jul 2026):
+    # VADER's compound score uses sum / sqrt(sum² + alpha) where alpha=15,
+    # tuned for tweet-length texts.  For long articles (10+ sentences), this
+    # normalization amplifies small biases — a few business words like "risk",
+    # "pressure", "problem" in otherwise neutral context can push compound to
+    # -0.85 when the actual sentence-level sentiment is balanced.
+    #
+    # Fix: compute sentence-level VADER mean as a second signal.  When the
+    # full-text compound has strong signal (abs > 0.5) but the sentence-level
+    # mean is near zero (abs < 0.05) or opposite in sign, VADER's direction
+    # is wrong — blend toward the sentence mean.  When both agree on direction
+    # (both negative or both positive), VADER got the direction right even if
+    # it exaggerates magnitude, so no correction is applied.
+    # ---------------------------------------------------------------------------
+    sentences = [s.strip() for s in re.split(r'(?<=[.!?])\s+', text) if s.strip()]
+    if len(sentences) >= 10:
+        sentence_compounds = [analyze_vader(s)["compound"] for s in sentences]
+        sentence_mean = sum(sentence_compounds) / len(sentence_compounds)
+        divergence = abs(vader_compound - sentence_mean)
+
+        # Only correct when VADER's direction appears wrong:
+        # - Full-text compound has strong signal (abs > 0.5)
+        # - Sentence-level mean is near zero (|mean| < 0.05) or opposite sign
+        # - Overall divergence exceeds 0.5
+        direction_disagrees = (
+            vader_compound * sentence_mean < 0  # opposite signs
+            or abs(sentence_mean) < 0.05        # sentences say ~neutral
+        )
+        if divergence > 0.5 and abs(vader_compound) > 0.5 and direction_disagrees:
+            logger.debug(
+                "VADER long-text correction: compound=%.4f, "
+                "sentence_mean=%.4f, divergence=%.4f",
+                vader_compound, sentence_mean, divergence,
+            )
+            vader_compound = round(
+                0.7 * sentence_mean + 0.3 * vader_compound, 4
+            )
+
     tb = analyze_textblob(text)
-    raw_tone = round(0.6 * vader["compound"] + 0.4 * tb["polarity"], 4)
+    raw_tone = round(0.6 * vader_compound + 0.4 * tb["polarity"], 4)
     raw_tone = max(-1.0, min(1.0, raw_tone))
 
     # 2. Emotional language intensity

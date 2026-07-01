@@ -146,6 +146,46 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         ],
         "regex": r"(?<!\w)((?-i:NVIDIA)|Nvidia|Jensen Huang|(?-i:CUDA)|(?-i:H100|H200|A100|B200|GB200|DGX)|GeForce|Omniverse|Isaac Sim|NVLink)(?!\w)",
     },
+    "Qualcomm": {
+        "aliases": [
+            "Qualcomm", "Qualcomm Technologies", "Cristiano Amon",
+            "Snapdragon", "Dragonfly", "Hexagon",
+        ],
+        "regex": r"(?<!\w)(Qualcomm(?:\s+Technologies)?|Cristiano Amon|Snapdragon|Dragonfly(?:\s+C?\d+)?|Hexagon)(?!\w)",
+    },
+    "Intel": {
+        "aliases": [
+            "Intel", "Intel Corporation", "Pat Gelsinger", "Lip-Bu Tan",
+            "Gaudi", "Xeon", "Intel Foundry",
+        ],
+        "regex": r"(?<!\w)(Intel(?:\s+(?:Corporation|Foundry))?|Pat Gelsinger|Lip-Bu Tan|(?-i:Gaudi)(?=\s+(?:\d|AI|accelerator|chip|processor))|(?-i:Xeon))(?!\w)",
+    },
+    "AMD": {
+        "aliases": [
+            "AMD", "Advanced Micro Devices", "Lisa Su",
+            "EPYC", "Ryzen", "Radeon", "Instinct",
+        ],
+        "regex": r"(?<!\w)((?-i:AMD)|Advanced Micro Devices|Lisa Su|(?-i:EPYC)|Ryzen|Radeon|(?-i:Instinct)(?=\s+(?:MI\d|accelerator|GPU)))(?!\w)",
+    },
+    "TSMC": {
+        "aliases": [
+            "TSMC", "Taiwan Semiconductor", "C.C. Wei", "Mark Liu",
+        ],
+        "regex": r"(?<!\w)((?-i:TSMC)|Taiwan Semiconductor(?:\s+Manufacturing)?)(?!\w)",
+    },
+    "Arm": {
+        "aliases": [
+            "Arm", "Arm Holdings", "ARM", "Rene Haas",
+            "Arm Neoverse", "Neoverse",
+        ],
+        "regex": r"(?<!\w)((?-i:Arm)(?=\s+(?:Holdings|Neoverse|architecture|chip|processor|design|core|CPU|Ltd|is|was|has|had|'s|,))|(?-i:ARM)(?=\s+(?:chip|processor|core|architecture|design|v\d|Ltd))|Arm Holdings|Rene Haas|(?-i:Neoverse))(?!\w)",
+    },
+    "Broadcom": {
+        "aliases": [
+            "Broadcom", "Hock Tan", "VMware",
+        ],
+        "regex": r"(?<!\w)(Broadcom|Hock Tan|VMware)(?!\w)",
+    },
     "CoreWeave": {
         "aliases": [
             "CoreWeave", "Mike Intrator",
