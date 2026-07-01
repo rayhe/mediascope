@@ -8521,3 +8521,46 @@ After fix: child_safety ranks #2 (0.475), correctly identified alongside litigat
 
 ### Tests
 1057 passed — no regressions
+
+---
+
+## 2026-06-30 18:00 PT — Type A: Article Deep Dive — TechTimes Meta Applied AI Gulag
+
+### Article
+TechTimes "Meta Conscripts 6,500 Engineers as Data Labelers: Revolt Exposes AI Training Ceiling" (June 17, 2026). Composite synthesis of Wired, TechCrunch, Business Insider, and Financial Times reporting on Meta's involuntary reassignment of ~6,500 engineers to data-labeling work, internal revolt, and the synthetic training data ceiling.
+
+### Gaps Found
+1. **Agency score 0.0 (CRITICAL):** Military/conscription active-negative verbs ("conscript," "drafted," "seized," "reassigned") missing from ACTIVE_NEGATIVE_FRAMING
+2. **Emotional intensity 0.3922 vs manual 0.80:** 25 terms missing — conscription language, shock/disruption, surveillance vocabulary
+3. **Headline alignment 0.2316 vs manual 0.95:** Two structural issues: (a) VADER underreads "Conscripts"+"Revolt" (-0.128 vs body -0.5527), causing low magnitude ratio; (b) analyze_composite framing-correction recalculation overwrote the headline boost with a weaker score
+4. **Source extraction 4 false positives:** "Relations Board" (entity fragment), "Business Insider" (publication), "They" (pronoun), duplicate "told" suffix in anonymous descriptors
+
+### Fixes Applied
+- `sentiment.py`: +13 terms in ACTIVE_NEGATIVE_FRAMING, +25 terms in EMOTIONAL_LANGUAGE, weak-negative headline boost in `_measure_headline_alignment`, max() fix in `analyze_composite` alignment recalculation
+- `sources.py`: "They"/"We"/"You" in stop words, 8 entries in stop names (government agencies + publications), capturing groups in 5 anonymous patterns + both role-descriptor patterns, group(1) preference in anon loop
+- `test_structural_consistency.py`: emotional language count 587 → 612
+
+### Post-Fix Results
+| Dimension | Pre | Post | Manual |
+|-----------|-----|------|--------|
+| Agency | 0.0 | -0.5556 | -0.55 |
+| Emotional intensity | 0.3922 | 0.9689 | 0.80 |
+| Headline alignment | 0.2316 | 1.0 | 0.95 |
+| Overall tone | — | -0.4363 | -0.55 |
+| Sources | 9 (4 FP) | 5 (clean) | — |
+
+### Remaining Gaps (Not Fixed)
+- Missing named sources: LeCun (last-name-only), Zuckerberg (memo quote), Bosworth (indirect), Saba (no verb), Epoch AI/Gartner (research orgs)
+- No military_metaphor framing device type (sustained metaphorical framework collapsed into loaded_language)
+- Emotional intensity slight overread: factually-deployed terms scored same as editorially-loaded
+
+### Stats
+- Tests: 1062 passing
+- Emotional language terms: 612
+- Framing device types: 47
+- Regex patterns: 273+
+- Annotated examples: 133+
+- Journalists tracked: 106
+
+### Commit
+4b8e96a — pushed to GitHub
