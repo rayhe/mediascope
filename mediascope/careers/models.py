@@ -62,6 +62,7 @@ class CareerEvent:
         "returned",
         "rehired",
         "education",
+        "foreign_posting",
         "other",
     })
 

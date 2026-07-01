@@ -140,7 +140,14 @@ class CareerTracker:
                 arrivals.append(ev)
 
         # Also detect from sequential tenure events at different publications
-        tenure_events = [e for e in events if e.event_type in ("hired", "freelance")]
+        # Include all event types that represent a real position/tenure.
+        # Exclude "education" (pre-career), "departed" (already handled above),
+        # and "beat_change"/"promoted"/"editorial_role_change" (within same pub).
+        _TENURE_EVENT_TYPES = frozenset({
+            "hired", "freelance", "founded", "intern", "returned", "rehired",
+            "career_change", "fellowship", "foreign_posting", "other",
+        })
+        tenure_events = [e for e in events if e.event_type in _TENURE_EVENT_TYPES]
         for i in range(len(tenure_events) - 1):
             curr = tenure_events[i]
             nxt = tenure_events[i + 1]
@@ -253,6 +260,9 @@ def _parse_date(val) -> date:
         return date(int(val), 1, 1)
     if isinstance(val, str):
         val = val.strip().strip("'\"")
+        # Strip leading approximate marker (~2022 → 2022)
+        if val.startswith("~"):
+            val = val[1:]
         parts = val.split("-")
         if len(parts) == 1:
             # Bare year string → January 1

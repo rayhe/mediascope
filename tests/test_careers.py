@@ -370,3 +370,81 @@ journalists:
         assert len(wired) == 2
         nyt = tracker.by_publication("nytimes")
         assert len(nyt) == 1
+
+    def test_founded_event_generates_migration(self, tmp_path):
+        """Founded events should be included in migration detection.
+
+        A journalist who founds an organization and then moves to freelance
+        or another publication should have that migration detected.
+        """
+        yaml_content = """
+journalists:
+  - name: "Founder Writer"
+    career:
+      - publication: "startup-org"
+        event_type: "founded"
+        role: "co-founder"
+        start: "2012-06"
+        end: "2015-06"
+        beat: "digital media"
+      - publication: "freelance"
+        event_type: "freelance"
+        role: "freelance_reporter"
+        start: "2015-01"
+        end: "2020-12"
+        beat: "tech ethics"
+      - publication: "mit-tech-review"
+        event_type: "hired"
+        role: "senior_reporter"
+        start: "2021-01"
+        beat: "investigations"
+"""
+        yaml_path = tmp_path / "journalists.yaml"
+        yaml_path.write_text(yaml_content)
+
+        tracker = CareerTracker(profiles_dir=tmp_path)
+        tracker.load(journalists_file=yaml_path)
+
+        profile = tracker.get("Founder Writer")
+        assert profile is not None
+        assert len(profile.events) == 3
+        # Should detect 2 migrations: founded → freelance, freelance → mit-tech-review
+        assert len(profile.migrations) == 2
+        assert profile.migrations[0].from_publication == "startup-org"
+        assert profile.migrations[0].to_publication == "freelance"
+        assert profile.migrations[1].from_publication == "freelance"
+        assert profile.migrations[1].to_publication == "mit-tech-review"
+
+    def test_education_event_excluded_from_migration(self, tmp_path):
+        """Education events should NOT generate migration events.
+
+        A journalist's university education is pre-career and should not
+        appear as a migration source or destination.
+        """
+        yaml_content = """
+journalists:
+  - name: "Educated Writer"
+    career:
+      - publication: "university"
+        event_type: "education"
+        role: "student"
+        start: "2008-09"
+        end: "2012-05"
+        beat: "education"
+      - publication: "newspaper"
+        event_type: "hired"
+        role: "staff_writer"
+        start: "2012-06"
+        beat: "tech"
+"""
+        yaml_path = tmp_path / "journalists.yaml"
+        yaml_path.write_text(yaml_content)
+
+        tracker = CareerTracker(profiles_dir=tmp_path)
+        tracker.load(journalists_file=yaml_path)
+
+        profile = tracker.get("Educated Writer")
+        assert profile is not None
+        assert len(profile.events) == 2
+        # Education → hired should NOT be a migration
+        assert len(profile.migrations) == 0

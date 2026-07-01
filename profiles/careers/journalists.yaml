@@ -695,9 +695,9 @@ journalists:
     notes: 'Editor-in-Chief (announced Dec 2017, started Dec 2017). Gave the 120-year-old publication a new mission statement:
       "to make technology a greater force for good." Oversaw major editorial transformation: moved to themed print issues,
       launched first podcasts, added new newsletters and events, grew audience development team, began grant-funded journalism
-      and collaborations with investigative outlets, dramatically increased long-form online features. Improved diversity in
-      recruiting and hiring. Led aggressive coverage of MIT-Epstein scandal (2019). Edited "Make Shift: Dispatches from the
-      Post-Pandemic Future," a speculative-fiction anthology (MIT Press, May 2021) with stories by Madeline Ashby, Indrapramit
+      and collaborations with investigative outlets, dramatically increased long-form online features. Improved diversity
+      in recruiting and hiring. Led aggressive coverage of MIT-Epstein scandal (2019). Edited "Make Shift: Dispatches from
+      the Post-Pandemic Future," a speculative-fiction anthology (MIT Press, May 2021) with stories by Madeline Ashby, Indrapramit
       Das, Ken Liu, Malka Older, and Cory Doctorow. Compensation: $269K-$278K (FY2019-2021 990s). KEY: His shift of MIT TR
       toward social-impact-of-tech framing was a precursor to the editorial posture he would attempt at Wired.'
     publication: mit-tech-review
@@ -714,9 +714,9 @@ journalists:
       know is important to me... how societies can govern themselves peaceably and for the common good in an era of accelerating
       technological change." Said he missed "committing acts of journalism with my own two hands." Replaced by Katie Drummond
       (started Aug 28, 2023), who came from Vice Media SVP role and had been a 2009 Wired intern. The Lichfield MIT-TR→Wired
-      migration is the single most analytically valuable case in the dataset for DiD regression — same person leading two tracked
-      publications sequentially under different institutional structures (MIT-affiliated research pub vs Condé Nast commercial
-      media conglomerate).'
+      migration is the single most analytically valuable case in the dataset for DiD regression — same person leading two
+      tracked publications sequentially under different institutional structures (MIT-affiliated research pub vs Condé Nast
+      commercial media conglomerate).'
     publication: wired
     role: global_editorial_director
     source_url: https://www.wired.com/story/gideon-lichfield-new-editor-wired/
@@ -724,18 +724,18 @@ journalists:
   - beat: democracy, governance, technology and society
     event_type: career_change
     notes: 'Post-Wired career pivot to democracy and governance. Multiple concurrent roles: (1) Writes "Futurepolis" Substack
-      (launched ~Sep 2024) on "reinventing democracy, governance, and government for the 21st century" ($5/mo or $50/yr). Covers
-      participatory democracy, AI in governance (Japanese AI politician piece), citizens'' assemblies (Lexington experiment).
+      (launched ~Sep 2024) on "reinventing democracy, governance, and government for the 21st century" ($5/mo or $50/yr).
+      Covers participatory democracy, AI in governance (Japanese AI politician piece), citizens'' assemblies (Lexington experiment).
       (2) CITRIS Tech Policy Fellow at UC Berkeley Goldman School of Public Policy (2024-present). (3) AI Advisory Board member
       at CUNY Craig Newmark Graduate School of Journalism (2024-present). (4) Harvard Ash Center for Democratic Governance
       (as of Mar 2026 — co-hosted webinar with Kim Stanley Robinson, Baratunde Thurston, Renee DiResta on pro-democracy ideas
       in popular culture). (5) Co-Founder of stealth project (2025-present, per RocketReach). (6) Data & Society affiliate
-      (ongoing). Self-describes as "Democracy Futurist" on LinkedIn. Based in Berkeley, CA. Personal: "polyglot, climber, biker,
-      cocktailer, and vagabond" — collects languages, silver rings, and obscure cocktail ingredients. Speaker at SXSW, Aspen
-      Ideas Festival, WEF, FWD50. KEY for MediaScope: his post-Wired pivot reveals that his editorial framing at both MIT TR
-      and Wired was driven by a consistent personal thesis about technology''s impact on democratic governance — NOT by institutional
-      editorial culture. This means the DiD analysis must control for his pre-existing ideological orientation, not just institutional
-      effects.'
+      (ongoing). Self-describes as "Democracy Futurist" on LinkedIn. Based in Berkeley, CA. Personal: "polyglot, climber,
+      biker, cocktailer, and vagabond" — collects languages, silver rings, and obscure cocktail ingredients. Speaker at SXSW,
+      Aspen Ideas Festival, WEF, FWD50. KEY for MediaScope: his post-Wired pivot reveals that his editorial framing at both
+      MIT TR and Wired was driven by a consistent personal thesis about technology''s impact on democratic governance — NOT
+      by institutional editorial culture. This means the DiD analysis must control for his pre-existing ideological orientation,
+      not just institutional effects.'
     publication: independent
     role: democracy_futurist
     source_url: https://futurepolis.substack.com/
@@ -748,8 +748,8 @@ journalists:
     → Data & Society fellow (2014-15, concurrent with Quartz) → Quartz founding editor (2012-2017) → MIT Tech Review EIC (2017-2020)
     → Wired GED (2021-2023) → independent democracy/governance work. Education: BSc Physics and Philosophy (Bristol, 1991-94),
     MSc Philosophy of Social Science (LSE, 1994-95). Born Aug 4, 1971, London. British, Jewish. Speaks 5 languages. His post-Wired
-    pivot to democratic governance and the Futurepolis Substack reveals a consistent personal thesis about technology and democracy
-    that predates his editorial leadership roles — suggesting his editorial direction at MIT TR and Wired was ideologically
+    pivot to democratic governance and the Futurepolis Substack reveals a consistent personal thesis about technology and
+    democracy that predates his editorial leadership roles — suggesting his editorial direction at MIT TR and Wired was ideologically
     motivated, not purely institutional. KEY for DiD: must control for this pre-existing orientation when measuring institutional
     framing effects. NYU adjunct professor. Speaker at WEF, SXSW, Aspen Ideas Festival. Now based in Berkeley, CA.'
 - career:
@@ -2976,47 +2976,117 @@ journalists:
     (NYU SHERP). Unusual STEM-to-journalism pipeline — worked as materials science researcher before journalism. National
     Magazine Award finalist 2026 (with James O'Donnell). Science Friday contributor. Co-led FT partnership 'The Energy Question'
     edition. From Birmingham, Alabama. Based in NYC. 300+ articles — MIT TR's most prolific climate reporter.
-- career:
-  - beat: digital media, citizen journalism
-    end: 2015-12
-    event_type: founded
-    notes: Co-founded Impassion Afghanistan, the country's first digital media agency. Also founded Paiwandgah, Afghanistan's
-      largest citizen journalism platform. Provided social media/mobile solutions for governments and international organizations
-      in Kabul. 2.5 years in Afghanistan. Named 'Foreign Policy Leaders Under 33' by Diplomatic Courier. WEF Global Agenda
-      Council on Social Media member. BA Tufts University.
-    publication: impassion-afghanistan
-    role: co-founder
-    source_url: https://iwmf.org
-    start: 2012-01
-  - beat: globalization, inequality, surveillance
-    end: 2020-12
-    event_type: hired
-    notes: 6+ years freelance. Published in New York Times, Washington Post, National Geographic, Wired, Vox, South China
-      Morning Post, Columbia Journalism Review, Mother Jones, NPR. Also audio producer. Supported by IWMF (2017, 2018), Fund
-      for Investigative Journalism (2020). Ida B. Wells Fellow at Type Investigations (2020). Reported from Afghanistan, China,
-      Mexico, Guatemala, and across the US.
-    publication: freelance
-    role: freelance_reporter
-    source_url: https://muckrack.com
-    start: 2015-01
-  - beat: features, investigations, tech policy, ethics
-    event_type: hired
-    notes: 'Senior reporter for features and investigations. Focuses on how tech industry shapes the world, ''often entrenching
-      existing injustices and inequalities.'' Co-led FT partnership ''The End of Privacy'' edition with Melissa Heikkilä.
-      Based in Los Angeles. KEY ANALYTICAL VALUE: Her Afghanistan/global-south experience gives her a fundamentally different
-      frame for tech accountability coverage — she''s seen how technology deployed without oversight affects populations with
-      no recourse. Her investigative fellowship training (Type Investigations) means she''s not just reporting company statements
-      but building source-heavy investigations.'
-    publication: mit-tech-review
-    role: senior_reporter
-    source_url: https://www.technologyreview.com/author/eileen-guo/
-    start: 2021-01
-  name: Eileen Guo
+- name: Eileen Guo
   notes: 'Senior reporter for features and investigations at MIT Tech Review. Uniquely international background: co-founded
     Afghanistan''s first digital media agency (Impassion Afghanistan) and largest citizen journalism platform (Paiwandgah).
-    Ida B. Wells Fellow (Type Investigations), IWMF Fellow. Speaks Mandarin, Spanish, limited Persian. World Economic Forum
-    Global Agenda Council member. Based in Los Angeles. Focus: how tech industry entrenches existing injustices. BA Tufts
-    University.'
+    Pre-journalism career includes McChrystal Group (military consulting), Tufts FieldEx (peace/stability ops), and MIT Press
+    Innovations journal (launch editor). Ida B. Wells Fellow (Type Investigations, 2020), IWMF Fellow (2017, 2018). Speaks
+    Mandarin Chinese, Spanish, limited Persian. WEF Global Agenda Council on Social Media. Based in Los Angeles. BA Tufts
+    University. KEY MIGRATION: International development/Afghanistan → freelance investigative → MIT TR staff. Unlike most
+    tech reporters, her formative experience was in conflict zones and global south, giving her a fundamentally different
+    frame for tech accountability — she''s seen surveillance and biometrics deployed on populations with no recourse. KEY
+    COLLABORATIONS: Co-authored China Initiative data investigation with Karen Hao and Jess Aloe — one of the few multi-byline
+    data projects in MIT TR history. Co-produced "The End of Privacy" edition with Melissa Heikkilä and FT. KEY IMPACT: Worldcoin
+    investigation led to contract suspensions, informed Kenya/EU regulatory action. iRobot/Amazon reporting sparked EU antitrust
+    investigation. China Initiative database informed DOJ policy review. NIST AI bias standards work. Certified wilderness
+    first aid, hostile environment training. IRE and Frontline Freelance Register member. Rock climber. Signal: eileenguo.15.
+    Bluesky: eileenguo.bsky.social.'
+  career:
+  - publication: tufts-university
+    role: student
+    beat: education
+    start: 2008-09
+    end: 2012-05
+    event_type: education
+    notes: BA from Tufts University. Also participated in Tufts Field Exercise in Peace and Stability Operations (FieldEx),
+      a military-civilian simulation program. This background in peace/stability operations and international affairs shaped
+      her later work in Afghanistan and investigative journalism on surveillance.
+    source_url: https://talkingbiznews.com/they-move/mit-tech-review-hires-guo-as-senior-reporter/
+  - publication: mcchrystal-group
+    role: leadership_development
+    beat: digital communications
+    start: 2011-01
+    end: 2012-06
+    event_type: hired
+    notes: 'Leadership development for digital communications at McChrystal Group, the consulting firm founded by retired
+      General Stanley McChrystal (former ISAF commander in Afghanistan). Pre-journalism role. ANALYTICAL NOTE: Direct military
+      consulting experience is extremely rare among tech/AI reporters — gives her insider understanding of military command
+      structures and information operations that informs her surveillance and biometrics reporting.'
+    source_url: https://talkingbiznews.com/they-move/mit-tech-review-hires-guo-as-senior-reporter/
+  - publication: impassion-afghanistan
+    role: co-founder
+    beat: digital media, citizen journalism
+    start: 2012-06
+    end: 2015-06
+    event_type: founded
+    notes: 'Co-founded Impassion Afghanistan, the country''s first digital media agency, in Kabul. Also founded Paiwandgah,
+      Afghanistan''s largest citizen journalism platform. Provided social media and mobile solutions for governments, international
+      organizations, businesses, and communities. 2.5 years in Kabul. Named "Foreign Policy Leaders Under 33" by Diplomatic
+      Courier magazine. Appointed to World Economic Forum Global Agenda Council on Social Media for this work. Concurrent:
+      Founding curator of the Norfolk Hub at the WEF Global Shapers Community. FORMATIVE EXPERIENCE: Living in a conflict
+      zone where technology intersects with security, surveillance, and vulnerable populations became her permanent editorial
+      lens.'
+    source_url: https://www.eileenguo.com/bio
+  - publication: mit-press-innovations
+    role: launch_editor
+    beat: technology, governance, globalization
+    start: 2015-01
+    end: 2016-06
+    event_type: hired
+    notes: 'Launch editor and senior advisor for strategy at Innovations: Technology | Governance | Globalization, the MIT
+      Press journal. Bridging role between international development career and journalism career — editing academic/policy
+      content on technology governance before transitioning fully to investigative reporting. Overlapped with early freelance
+      period.'
+    source_url: https://talkingbiznews.com/they-move/mit-tech-review-hires-guo-as-senior-reporter/
+  - publication: freelance
+    role: freelance_reporter
+    beat: globalization, inequality, surveillance, tech ethics
+    start: 2015-01
+    end: 2020-12
+    event_type: freelance
+    notes: '6+ years freelance investigative journalist and audio producer. Self-described beat: "inequality, injustice, and
+      unintended consequences." Published in: New York Times, Washington Post, National Geographic, Wired, Vox, South China
+      Morning Post, Columbia Journalism Review, Mother Jones, NPR, Playboy, Teen Vogue, HuffPost, OneZero/Medium, The Outline,
+      Digital Trends, Nikkei/Nikkei Asia, The Daily Dot, STAT, Entrepreneur. Also radio documentary producer. Reported on
+      the ground from Afghanistan, China (Mandarin), Central America (Spanish), Mexico/Tijuana (US-Mexico border), and across
+      rural and urban US. FELLOWSHIPS: IWMF Adelante Fellow (2017 — Tijuana border reporting; 2018). Type Investigations Ida
+      B. Wells Fellow (2020 — investigating novel uses of surveillance devices). Fund for Investigative Journalism grant (2020).
+      Fuller Project grant (2020). ANALYTICAL NOTE: This freelance period established her as an investigative specialist with
+      fellowship backing — she arrived at MIT TR not as a beat reporter but as an investigator with a track record of multi-country
+      source-heavy accountability projects. The surveillance focus of her Wells Fellowship directly maps to her later biometrics/Worldcoin/AI
+      data governance work at MIT TR.'
+    source_url: https://www.eileenguo.com/bio
+  - publication: mit-tech-review
+    role: senior_reporter
+    beat: features, investigations, tech policy, ethics, AI accountability
+    start: 2021-01
+    event_type: hired
+    notes: "Senior reporter for features and investigations at MIT Technology Review. Hired specifically for tech policy,\
+      \ ethics, and social justice beat. Based in Los Angeles. Focuses on \"how the tech industry shapes our world — often\
+      \ entrenching existing injustices and inequalities.\" \nMAJOR INVESTIGATIONS:\n1. Afghanistan biometrics (Aug 2021):\
+      \ \"This is the real story of the Afghan biometric databases abandoned to the Taliban.\" Exclusive on US-funded APPS\
+      \ database (500K+ records of Afghan security personnel) — showed HIIDE devices were less dangerous than the civilian\
+      \ databases. Published during Taliban takeover, drew on her 2.5-year Kabul experience for context no other tech reporter\
+      \ could provide.\n2. China Initiative/DOJ (Dec 2021): \"The US crackdown on Chinese economic espionage is a mess. We\
+      \ have the data to show it.\" Co-authored with Jess Aloe & Karen Hao. Searchable database of 77 cases, 150+ defendants\
+      \ — most comprehensive accounting of China Initiative prosecutions to date. Data showed 90% of defendants were of Chinese\
+      \ heritage, only 25% convicted. Informed DOJ policy review; Initiative officially ended Feb 2022.\n3. Worldcoin (Apr\
+      \ 2022): \"Deception, exploited workers, and cash handouts: how Worldcoin recruited its first half a million test users.\"\
+      \ 35 individuals in 6 countries (Indonesia, Kenya, Sudan, Ghana, Chile, Norway). 7,000-word investigation. Exposed deceptive\
+      \ marketing, unauthorized data collection, GDPR violations. Led to contract suspensions, company policy changes, informed\
+      \ Kenya government suspension and EU regulatory scrutiny.\n4. Amazon/iRobot: Investigation that sparked EU antitrust\
+      \ investigation into Amazon's proposed acquisition.\n5. LA superspreader: Exposé of tech entrepreneur's illegal superspreader\
+      \ event.\n6. NIST AI bias: Work informed ongoing efforts to develop US government standards to reduce bias in AI.\n\
+      7. \"The End of Privacy\" / \"State of AI\" (2025): Co-produced with Melissa Heikkilä. Joint FT/MIT TR collaboration\
+      \ covering AI companion privacy risks, Meta AI ads in chatbots, sycophancy, data monetization.\n\nKEY ANALYTICAL VALUE:\
+      \ Her Afghanistan/global-south experience gives her a fundamentally different frame for tech accountability — she's\
+      \ seen how technology deployed without oversight affects populations with no recourse. Her investigative fellowship\
+      \ training (Type Investigations) means she's not just reporting company statements but building source-heavy investigations.\
+      \ The China Initiative piece co-authored with Karen Hao represents a methodological template for data-driven accountability\
+      \ journalism that shapes MIT TR's institutional approach to tech coverage.\nCOLLABORATION PATTERN: Builds cross-border\
+      \ reporting teams (6 countries for Worldcoin), works with co-authors on data-intensive pieces (Karen Hao on China Initiative),\
+      \ and co-produces with other publications (FT partnership for \"End of Privacy\")."
+    source_url: https://www.technologyreview.com/author/eileen-guo/
 - career:
   - beat: neuroscience, philosophy, computational models
     end: 2024-12
@@ -3615,12 +3685,12 @@ journalists:
   - beat: campus news, arts, music
     end: 2011-06
     event_type: education
-    notes: 'Staff writer at The Stanford Daily from end of freshman year (~2008). Initially pre-med, pivoted to journalism.
-      Published primarily in the arts section covering music releases and festivals. Co-broke story with Amy Julia Harris (now
-      NYT Metro investigative reporter) revealing Stanford athletes had access to a special list of classes widely regarded
+    notes: Staff writer at The Stanford Daily from end of freshman year (~2008). Initially pre-med, pivoted to journalism.
+      Published primarily in the arts section covering music releases and festivals. Co-broke story with Amy Julia Harris
+      (now NYT Metro investigative reporter) revealing Stanford athletes had access to a special list of classes widely regarded
       as easy. Interned at Half Moon Bay Review, The New York Times, The Bay Citizen, OC Register, and Bloomberg LP/News during
-      college summers. Mac''s sourcing method — attending retirement and goodbye parties to make new contacts — was noted by
-      Harris and later cited in his NYT hiring announcement.'
+      college summers. Mac's sourcing method — attending retirement and goodbye parties to make new contacts — was noted by
+      Harris and later cited in his NYT hiring announcement.
     publication: stanford-daily
     role: staff_writer
     source_url: https://en.wikipedia.org/wiki/Ryan_Mac
@@ -3632,8 +3702,8 @@ journalists:
       music industry — interviewed Calvin Harris, Steve Aoki, Avicii, and rapper Riff Raff (2014) for Forbes video features.
       Major scoop: broke that Peter Thiel was secretly funding Hulk Hogan''s lawsuits against Gawker (2016), one of the most
       consequential media stories of the decade. 2017 Gerald Loeb Award finalist (Breaking News) with Matt Drange for Gawker/Thiel
-      coverage. At Forbes, Mac established the wealth-to-accountability pipeline that would define his career — he started tracking
-      how billionaires made money, then shifted to investigating how they wielded power.'
+      coverage. At Forbes, Mac established the wealth-to-accountability pipeline that would define his career — he started
+      tracking how billionaires made money, then shifted to investigating how they wielded power.'
     publication: forbes
     role: staff_writer
     source_url: https://www.forbes.com/sites/ryanmac/
@@ -3643,12 +3713,12 @@ journalists:
     event_type: hired
     notes: 'Senior technology reporter under Mat Honan (SF bureau chief/exec editor) and John Paczkowski (tech editor). Led
       deep reporting on Facebook that won 2019 Mirror Award and 2020 George Polk Award (awarded Feb 2021 ceremony). Key scoops:
-      Facebook''s willful blindness to content issues and privacy failings; unearthed President Biden''s Venmo account and friend
-      network; Elon Musk''s "child rapist" emails about Vernon Unsworth (British cave diver, Tham Luang rescue, 2018). Musk
-      called Mac a "f**king asshole" in email correspondence — these emails were later referenced in Unsworth''s $190M defamation
-      suit against Musk. Worked with Craig Silverman on Polk-winning Facebook disinformation series. Account suspended on Twitter
-      by Musk Dec 15, 2022 (one of 10 journalists suspended; unsuspended 2 days later). In Sept 2020, published personal essay
-      about his Vietnamese grandmother losing her husband during COVID — rare autobiographical piece.'
+      Facebook''s willful blindness to content issues and privacy failings; unearthed President Biden''s Venmo account and
+      friend network; Elon Musk''s "child rapist" emails about Vernon Unsworth (British cave diver, Tham Luang rescue, 2018).
+      Musk called Mac a "f**king asshole" in email correspondence — these emails were later referenced in Unsworth''s $190M
+      defamation suit against Musk. Worked with Craig Silverman on Polk-winning Facebook disinformation series. Account suspended
+      on Twitter by Musk Dec 15, 2022 (one of 10 journalists suspended; unsuspended 2 days later). In Sept 2020, published
+      personal essay about his Vietnamese grandmother losing her husband during COVID — rare autobiographical piece.'
     publication: buzzfeed-news
     role: senior_reporter
     source_url: https://poynter.org/commentary/2017/buzzfeed-news-hires-ryan-mac-to-join-growing-tech-team/
@@ -3658,13 +3728,13 @@ journalists:
     notes: 'Hired to cover "tech accountability" — tech companies, tech billionaires, and their ecosystems of influence. Based
       in Los Angeles (previously SF). Recruited by Pui-Wing Tam''s tech team (business editors Ellen Pollock, Pui-Wing Tam,
       Jim, Joe signed announcement). Co-authored "Character Limit: How Elon Musk Destroyed Twitter" with Kate Conger (Penguin
-      Press, Sept 17 2024; hardcover ISBN 978-0-593-65613-6; 480pp). Book named Best of 2024 by Kirkus Reviews, Financial Times,
-      New Statesman. Endorsed by John Carreyrou (Bad Blood), Jia Tolentino (Trick Mirror), Taylor Lorenz. KEY 2026 BEAT SHIFT:
-      Mac''s 2026 bylines are dominated by SpaceX IPO coverage (9+ articles Apr-Jun 2026: IPO filing, S-1 financials, Gwynne
-      Shotwell profile, valuation skeptics, corporate governance, Musk compensation). Meta coverage reduced to occasional scoops
-      (Zuckerberg prediction markets "Arena" app Jun 24-27 2026, Meta AI government review Jun 24). This represents a significant
-      analytical shift — Mac was previously assumed to be the primary NYT Meta reporter, but 2026 data shows he now operates
-      more as a Musk/SpaceX specialist with intermittent Meta beats.'
+      Press, Sept 17 2024; hardcover ISBN 978-0-593-65613-6; 480pp). Book named Best of 2024 by Kirkus Reviews, Financial
+      Times, New Statesman. Endorsed by John Carreyrou (Bad Blood), Jia Tolentino (Trick Mirror), Taylor Lorenz. KEY 2026
+      BEAT SHIFT: Mac''s 2026 bylines are dominated by SpaceX IPO coverage (9+ articles Apr-Jun 2026: IPO filing, S-1 financials,
+      Gwynne Shotwell profile, valuation skeptics, corporate governance, Musk compensation). Meta coverage reduced to occasional
+      scoops (Zuckerberg prediction markets "Arena" app Jun 24-27 2026, Meta AI government review Jun 24). This represents
+      a significant analytical shift — Mac was previously assumed to be the primary NYT Meta reporter, but 2026 data shows
+      he now operates more as a Musk/SpaceX specialist with intermittent Meta beats.'
     publication: nytimes
     role: correspondent
     source_url: https://www.nytco.com/press/ryan-mac-joining-technology-team/
@@ -3680,29 +3750,29 @@ journalists:
     source_url: https://en.wikipedia.org/wiki/Ryan_Mac
   name: Ryan Mac
   notes: 'Key migration: Forbes → BuzzFeed News → NYT. Vietnamese-American (self-describes as "american vietnamese"). Education:
-    Stanford University BA 2011 (enrolled 2007, initially pre-med, pivoted to journalism via Stanford Daily staff writing ~2008).
-    Interned during college at Half Moon Bay Review, The New York Times, The Bay Citizen, OC Register, Bloomberg LP/News. Stanford
-    Daily classmate Amy Julia Harris is now NYT Metro investigative reporter — Stanford-to-NYT pipeline. Based in Los Angeles
-    (previously SF). Arsenal FC supporter. Contact: ryan.mac@nytimes.com, Signal rmac.18. Awards: 2017 Gerald Loeb Award finalist
-    (Breaking News, Thiel/Gawker, with Matt Drange; source: newsroom.ucla.edu), 2019 Mirror Award (Facebook coverage at BuzzFeed;
-    source: newhouse.syracuse.edu), 2020 George Polk Award (Facebook disinformation at BuzzFeed, with Craig Silverman; source:
-    buzzfeed.com/buzzfeednews/buzzfeed-news-wins-george-polk-award). Book: "Character Limit: How Elon Musk Destroyed Twitter"
-    with Kate Conger (Penguin Press, Sept 17 2024, hardcover ISBN 9780593656136, ebook ISBN 9780593656143, 480pp). Named Best
-    of 2024 by Kirkus Reviews, Financial Times, New Statesman. Endorsed by Carreyrou (Bad Blood), Tolentino (Trick Mirror),
-    Lorenz (Extremely Online). Goodreads: 4.24/5 avg (3,102 ratings). Personal essay: "At 82, My Grandmother Has Lost Her Husband
-    — and the World as She Knows It" (BuzzFeed News, Sept 2020) — rare autobiographical piece about his Vietnamese grandmother
-    during COVID. ANALYTICAL VALUE: Mac is the most direct comparison case for tech accountability coverage across publications
-    — his beat (billionaire/corporate power scrutiny) stayed constant while his institutional context changed three times. At
-    Forbes he tracked wealth; at BuzzFeed he shifted to accountability investigations; at NYT he does the same with institutional
-    weight. The Forbes → BuzzFeed → NYT pipeline represents an increasing-prestige trajectory where each move amplified the same
-    adversarial instinct with more institutional backing. KEY ANALYTICAL UPDATE (Jun 2026): 2026 byline analysis (via BuzzSumo)
-    reveals Mac''s output is now dominated by SpaceX IPO coverage (9+ articles Apr-Jun 2026: IPO filing, S-1 financials, Gwynne
-    Shotwell profile, $1.77T valuation skeptics, corporate governance). Meta coverage reduced to intermittent scoops (Zuckerberg
-    prediction markets "Arena" app Jun 24-27 2026, Meta AI government review Jun 24). This complicates the assumption that Mac
-    = "primary NYT Meta reporter" for DiD analysis — Mike Isaac may now carry more consistent Meta coverage volume at NYT. Co-authorship
-    of "Character Limit" with Kate Conger (tracked) creates a paired-journalist control: same book, same reporting process, different
-    career pipelines (Conger via Gizmodo → TechCrunch → NYT vs Mac via Forbes → BuzzFeed → NYT). Worked under Mat Honan (tracked)
-    at BuzzFeed SF bureau.'
+    Stanford University BA 2011 (enrolled 2007, initially pre-med, pivoted to journalism via Stanford Daily staff writing
+    ~2008). Interned during college at Half Moon Bay Review, The New York Times, The Bay Citizen, OC Register, Bloomberg LP/News.
+    Stanford Daily classmate Amy Julia Harris is now NYT Metro investigative reporter — Stanford-to-NYT pipeline. Based in
+    Los Angeles (previously SF). Arsenal FC supporter. Contact: ryan.mac@nytimes.com, Signal rmac.18. Awards: 2017 Gerald
+    Loeb Award finalist (Breaking News, Thiel/Gawker, with Matt Drange; source: newsroom.ucla.edu), 2019 Mirror Award (Facebook
+    coverage at BuzzFeed; source: newhouse.syracuse.edu), 2020 George Polk Award (Facebook disinformation at BuzzFeed, with
+    Craig Silverman; source: buzzfeed.com/buzzfeednews/buzzfeed-news-wins-george-polk-award). Book: "Character Limit: How
+    Elon Musk Destroyed Twitter" with Kate Conger (Penguin Press, Sept 17 2024, hardcover ISBN 9780593656136, ebook ISBN 9780593656143,
+    480pp). Named Best of 2024 by Kirkus Reviews, Financial Times, New Statesman. Endorsed by Carreyrou (Bad Blood), Tolentino
+    (Trick Mirror), Lorenz (Extremely Online). Goodreads: 4.24/5 avg (3,102 ratings). Personal essay: "At 82, My Grandmother
+    Has Lost Her Husband — and the World as She Knows It" (BuzzFeed News, Sept 2020) — rare autobiographical piece about his
+    Vietnamese grandmother during COVID. ANALYTICAL VALUE: Mac is the most direct comparison case for tech accountability
+    coverage across publications — his beat (billionaire/corporate power scrutiny) stayed constant while his institutional
+    context changed three times. At Forbes he tracked wealth; at BuzzFeed he shifted to accountability investigations; at
+    NYT he does the same with institutional weight. The Forbes → BuzzFeed → NYT pipeline represents an increasing-prestige
+    trajectory where each move amplified the same adversarial instinct with more institutional backing. KEY ANALYTICAL UPDATE
+    (Jun 2026): 2026 byline analysis (via BuzzSumo) reveals Mac''s output is now dominated by SpaceX IPO coverage (9+ articles
+    Apr-Jun 2026: IPO filing, S-1 financials, Gwynne Shotwell profile, $1.77T valuation skeptics, corporate governance). Meta
+    coverage reduced to intermittent scoops (Zuckerberg prediction markets "Arena" app Jun 24-27 2026, Meta AI government
+    review Jun 24). This complicates the assumption that Mac = "primary NYT Meta reporter" for DiD analysis — Mike Isaac may
+    now carry more consistent Meta coverage volume at NYT. Co-authorship of "Character Limit" with Kate Conger (tracked) creates
+    a paired-journalist control: same book, same reporting process, different career pipelines (Conger via Gizmodo → TechCrunch
+    → NYT vs Mac via Forbes → BuzzFeed → NYT). Worked under Mat Honan (tracked) at BuzzFeed SF bureau.'
 - career:
   - beat: general
     end: 2011-06
@@ -5749,9 +5819,9 @@ journalists:
     notes: 'Staff writer at Wired.com/Gadget Lab. Covered Apple, mobile phones, and cutting-edge gadgets. Notable incident:
       Jan 2009 hackintosh video tutorial led to Apple legal confrontation with Condé Nast (Apple sent cease-and-desist, not
       formal lawsuit — Chen initially misreported as lawsuit on Twitter). Published "Always On: How the iPhone Unlocked the
-      Anything-Anytime-Anywhere Future—And Locked Us In" (Da Capo Press, ~April 2011), his first book on the smartphone
-      revolution''s impact on society, business, and culture. KEY: First tracked publication at a Condé Nast outlet —
-      establishes baseline for institutional Condé Nast framing before NYT migration.'
+      Anything-Anytime-Anywhere Future—And Locked Us In" (Da Capo Press, ~April 2011), his first book on the smartphone revolution''s
+      impact on society, business, and culture. KEY: First tracked publication at a Condé Nast outlet — establishes baseline
+      for institutional Condé Nast framing before NYT migration.'
     publication: wired
     role: staff_writer
     source_url: https://www.macstories.net/msinterviews/macstories-interviews-brian-x-chen/
@@ -5762,9 +5832,9 @@ journalists:
     notes: '"Helped Mr. Lam start The Wirecutter when he was between jobs in 2011" (per NYT acquisition coverage, Sydney Ember,
       Oct 25, 2016). Co-launched the product recommendation site with Brian Lam (former Gizmodo EIC). The Wirecutter was later
       acquired by The New York Times for $30M in October 2016. KEY FINANCIAL CONNECTION: Chen co-founded Wirecutter, then
-      joined NYT, then NYT acquired Wirecutter — creating an unusual financial-editorial nexus. He was not on staff at
-      Wirecutter when NYT bought it, but his early involvement establishes a pre-existing relationship between Chen and Lam''s
-      product recommendation methodology, which later influenced NYT consumer tech coverage.'
+      joined NYT, then NYT acquired Wirecutter — creating an unusual financial-editorial nexus. He was not on staff at Wirecutter
+      when NYT bought it, but his early involvement establishes a pre-existing relationship between Chen and Lam''s product
+      recommendation methodology, which later influenced NYT consumer tech coverage.'
     publication: wirecutter
     role: co_founder
     source_url: https://talkingbiznews.com/they-move/ny-times-buys-tech-site-the-wirecutter/
@@ -5789,14 +5859,14 @@ journalists:
       to societal implications: privacy erosion, AI impact, surveillance cameras, phone ownership culture. Also led Personal
       Tech newsletter; contributed to "On Tech" daily tech newsletter. Contributed to culture desk covering Asian and Asian
       American cinema. Part of NYT staff winning 2019 George Polk Award for National Reporting — coverage showed "how tech
-      companies, including Facebook, empowered hucksters and propagandists, and deceived the public to maximize profit."
-      Polk citation: "reshaping public perceptions of Silicon Valley, generating calls to action from lawmakers." Also
-      National Magazine Award finalist. NOTABLE META COVERAGE: 2018 "I Downloaded the Information Facebook Has on Me"
-      article went viral, showing how Facebook collected vast personal data even from light users. 2024 Humane AI Pin review.
-      Daring Fireball (John Gruber, Mar 2024) critique: "Seven Years of Institutional Anti-''Big-Tech'' Bias at The New York
-      Times Might Lead to Cognitive Dissonance" — cited Chen''s contradictory positions on software updates (2017: planned
-      obsolescence is "a myth," slowdowns are caused by software upgrades; 2024: not getting software updates degrades
-      performance). Tests whether NYT institutional framing drives coverage direction regardless of factual consistency.'
+      companies, including Facebook, empowered hucksters and propagandists, and deceived the public to maximize profit." Polk
+      citation: "reshaping public perceptions of Silicon Valley, generating calls to action from lawmakers." Also National
+      Magazine Award finalist. NOTABLE META COVERAGE: 2018 "I Downloaded the Information Facebook Has on Me" article went
+      viral, showing how Facebook collected vast personal data even from light users. 2024 Humane AI Pin review. Daring Fireball
+      (John Gruber, Mar 2024) critique: "Seven Years of Institutional Anti-''Big-Tech'' Bias at The New York Times Might Lead
+      to Cognitive Dissonance" — cited Chen''s contradictory positions on software updates (2017: planned obsolescence is
+      "a myth," slowdowns are caused by software upgrades; 2024: not getting software updates degrades performance). Tests
+      whether NYT institutional framing drives coverage direction regardless of factual consistency.'
     publication: nytimes
     role: lead_consumer_tech_writer
     source_url: https://www.nytco.com/press/the-new-york-times-debuts-tech-fix-column-by-brian-chen/
@@ -5805,30 +5875,30 @@ journalists:
   notes: 'Key migrations: Macworld (IDG) → Wired (Condé Nast) → NYT. Author of "Always On" (Da Capo Press, 2011). Co-founded
     The Wirecutter with Brian Lam in 2011 (between Wired and NYT jobs); Wirecutter later acquired by NYT for $30M in 2016.
     At NYT since November 2011; Lead Consumer Technology Writer since July 2015. Writes "Tech Fix" column on social implications
-    of technology. 2019 George Polk Award for National Reporting (team, Facebook/tech coverage). National Magazine Award
-    finalist. Email: brian.chen@nytimes.com. Social: @bxchen (Twitter), @bxchen@mstdn.social. KEY FOR MEDIASCOPE: (1) WIRED →
-    NYT MIGRATION is the primary DiD signal — tests whether consumer tech framing modulates when moving from Condé Nast
-    editorial culture (Wired under Mat Honan/later Drummond) to NYT institutional norms (Business Day desk, subscription model).
-    His Wired tenure was pre-Drummond adversarial pivot, so the comparison isolates NYT institutional effects. (2) WIRECUTTER
-    NEXUS: Co-founded Wirecutter, joined NYT, NYT bought Wirecutter — unusual financial-editorial intersection. (3) NYT LIFER
-    BASELINE: 14+ years at NYT (2011-present) makes him second only to Steve Lohr (~47 years) as an NYT institutional framing
-    baseline. Unlike Lohr (foreign → business → tech), Chen has stayed consumer tech throughout. (4) GRUBER CONTRADICTION TEST:
-    Daring Fireball''s documented factual contradiction (2017 vs 2024 on software update slowdowns) provides a rare external
-    falsification signal for institutional framing drift — the NYT''s editorial posture shifted from defending tech to critiquing
-    it, and Chen''s positions shifted in parallel, supporting the institutional-framing-dominance hypothesis. (5) COLUMN PIVOT:
-    Tech Fix evolved from product troubleshooting (2015-2021) to societal critique (2022+), tracking the broader NYT editorial
+    of technology. 2019 George Polk Award for National Reporting (team, Facebook/tech coverage). National Magazine Award finalist.
+    Email: brian.chen@nytimes.com. Social: @bxchen (Twitter), @bxchen@mstdn.social. KEY FOR MEDIASCOPE: (1) WIRED → NYT MIGRATION
+    is the primary DiD signal — tests whether consumer tech framing modulates when moving from Condé Nast editorial culture
+    (Wired under Mat Honan/later Drummond) to NYT institutional norms (Business Day desk, subscription model). His Wired tenure
+    was pre-Drummond adversarial pivot, so the comparison isolates NYT institutional effects. (2) WIRECUTTER NEXUS: Co-founded
+    Wirecutter, joined NYT, NYT bought Wirecutter — unusual financial-editorial intersection. (3) NYT LIFER BASELINE: 14+
+    years at NYT (2011-present) makes him second only to Steve Lohr (~47 years) as an NYT institutional framing baseline.
+    Unlike Lohr (foreign → business → tech), Chen has stayed consumer tech throughout. (4) GRUBER CONTRADICTION TEST: Daring
+    Fireball''s documented factual contradiction (2017 vs 2024 on software update slowdowns) provides a rare external falsification
+    signal for institutional framing drift — the NYT''s editorial posture shifted from defending tech to critiquing it, and
+    Chen''s positions shifted in parallel, supporting the institutional-framing-dominance hypothesis. (5) COLUMN PIVOT: Tech
+    Fix evolved from product troubleshooting (2015-2021) to societal critique (2022+), tracking the broader NYT editorial
     pivot toward adversarial tech coverage. Testable via pre/post tonal analysis anchored to the column''s stated reboot date.'
 - career:
   - beat: tech, economy, government, markets
     end: 2026-06
     event_type: hired
-    notes: 'Reporter across multiple desks during tenure: Tech, Economy, Government, Podcasts, Daybreak (morning show),
-      Markets Today (live blog), Breaking News, and EMEA equities (UK retail stocks and ECM/equity capital markets). Prolific
-      output: 539+ articles (JournalistHunt count). Notable coverage: Google Willow quantum computing breakthrough (co-byline
-      with Amy Thomson), Nu Quantum $60M Series A (quantum networking), JPMorgan quantum random number generation. Her MSci
-      Physics from Imperial College London gives her hard-science fluency rare among financial/tech reporters. 2025 John
-      Schofield Trust Fellow — a UK journalism mentoring charity for early-career journalists, established 1996 in memory of
-      BBC journalist John Schofield killed reporting from Croatia.'
+    notes: 'Reporter across multiple desks during tenure: Tech, Economy, Government, Podcasts, Daybreak (morning show), Markets
+      Today (live blog), Breaking News, and EMEA equities (UK retail stocks and ECM/equity capital markets). Prolific output:
+      539+ articles (JournalistHunt count). Notable coverage: Google Willow quantum computing breakthrough (co-byline with
+      Amy Thomson), Nu Quantum $60M Series A (quantum networking), JPMorgan quantum random number generation. Her MSci Physics
+      from Imperial College London gives her hard-science fluency rare among financial/tech reporters. 2025 John Schofield
+      Trust Fellow — a UK journalism mentoring charity for early-career journalists, established 1996 in memory of BBC journalist
+      John Schofield killed reporting from Croatia.'
     publication: bloomberg
     role: reporter
     source_url: https://muckrack.com/isabella-ward-2
@@ -5839,13 +5909,13 @@ journalists:
       writer (another new role, more on that soon)" that Brian Barrett referenced in the Rosie Swash deputy editor announcement
       (April 2026). Reports via Rosie Swash (deputy editor, London) who reports to Brian Barrett (executive editor). London
       is Wired''s rebuilding editorial beachhead after UK print cancellation (Jan 2026) and departure of 7 UK editorial staff
-      at end of 2025. First Wired byline: "Longevity Startup Doses First Human in Bid to Reverse Age-Related Sight Loss"
-      — covering Life Biosciences cellular rejuvenation therapy (FDA clinical trial), featuring Harvard geneticist David Sinclair.
+      at end of 2025. First Wired byline: "Longevity Startup Doses First Human in Bid to Reverse Age-Related Sight Loss" —
+      covering Life Biosciences cellular rejuvenation therapy (FDA clinical trial), featuring Harvard geneticist David Sinclair.
       Her physics background positions her uniquely for Wired''s science desk — she brings quantitative rigor to biotech and
       quantum reporting that most Wired writers (typically humanities/journalism backgrounds) lack. KEY MIGRATION: Bloomberg
-      → Wired represents financial press → Condé Nast pipeline. Tests whether her Bloomberg data-driven reporting style
-      adapts under Wired''s Drummond-era editorial culture. Unlike most recent Wired hires (Gizmodo/Guardian/Vice pipeline),
-      Ward comes from business journalism — a different institutional DNA.'
+      → Wired represents financial press → Condé Nast pipeline. Tests whether her Bloomberg data-driven reporting style adapts
+      under Wired''s Drummond-era editorial culture. Unlike most recent Wired hires (Gizmodo/Guardian/Vice pipeline), Ward
+      comes from business journalism — a different institutional DNA.'
     publication: wired
     role: staff_writer
     source_url: https://talkingbiznews.com/media-news/wired-hires-bloombergs-ward-as-a-staff-writer/
@@ -5853,13 +5923,13 @@ journalists:
   name: Isabella Ward
   notes: 'Key migration: Bloomberg → Wired. UK-based reporter with MSci Physics from Imperial College London and 2025 John
     Schofield Trust Fellow. Covered multiple desks at Bloomberg (tech, economy, government, markets, equities) before joining
-    Wired as staff writer in London (June 2026). Notable for quantum computing coverage (Google Willow chip, Nu Quantum,
-    JPMorgan) and transition to science/biotech beat at Wired (longevity, cellular rejuvenation). Part of Wired''s post-print-
-    cancellation London editorial rebuild alongside deputy editor Rosie Swash (Guardian veteran). Unusual pipeline into Wired
-    — Bloomberg financial/markets background rather than the Gizmodo/Vice/Guardian adversarial-journalism pipeline that
-    characterizes most Drummond-era hires. Her hard-science training (physics MSci) gives her technical depth comparable
-    to Will Knight (anthropology) and Will Douglas Heaven (PhD computer science) at MIT Tech Review. KEY FOR MEDIASCOPE:
-    (1) Bloomberg → Wired migration offers a clean institutional comparison — business journalism norms vs Condé Nast editorial
-    culture. (2) Her physics background and quantum coverage create a testable specialization signal — does science expertise
-    produce different framing than generalist tech reporting? (3) London rebuild context — she and Swash are the two editorial
-    hires rebuilding Wired''s UK presence after the print edition cancellation and mass departures.'
+    Wired as staff writer in London (June 2026). Notable for quantum computing coverage (Google Willow chip, Nu Quantum, JPMorgan)
+    and transition to science/biotech beat at Wired (longevity, cellular rejuvenation). Part of Wired''s post-print- cancellation
+    London editorial rebuild alongside deputy editor Rosie Swash (Guardian veteran). Unusual pipeline into Wired — Bloomberg
+    financial/markets background rather than the Gizmodo/Vice/Guardian adversarial-journalism pipeline that characterizes
+    most Drummond-era hires. Her hard-science training (physics MSci) gives her technical depth comparable to Will Knight
+    (anthropology) and Will Douglas Heaven (PhD computer science) at MIT Tech Review. KEY FOR MEDIASCOPE: (1) Bloomberg →
+    Wired migration offers a clean institutional comparison — business journalism norms vs Condé Nast editorial culture. (2)
+    Her physics background and quantum coverage create a testable specialization signal — does science expertise produce different
+    framing than generalist tech reporting? (3) London rebuild context — she and Swash are the two editorial hires rebuilding
+    Wired''s UK presence after the print edition cancellation and mass departures.'
