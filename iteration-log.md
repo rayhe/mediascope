@@ -4,6 +4,64 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-06-30 17:00 PT — Type D: Toolkit Quality — Stale Count Cascade Fix + 4 New Structural Guards
+
+**Focus:** Cross-doc stale count audit found 3 categories of documentation drift that survived because existing guards validated canonical declarations but not secondary inline references. Fixed all stale references and added 4 new test guards to prevent recurrence.
+
+### Problems Found & Fixed
+
+**1. Stale regex pattern count in test descriptions (272→273)**
+
+The 14:00 PT Type A iteration added a loaded_language contamination pattern (`EMOTIONAL_LANGUAGE` + `_LOADED_LANGUAGE_PATTERNS`), bumping total regex patterns from 272 to 273. `EXPECTED_TOTAL_PATTERNS` in `test_structural_consistency.py` was correctly updated to 273 and all tests passed. But ARCHITECTURE.md and README.md both still described `test_structural_consistency.py` as guarding "272 patterns." No test caught this because the stale pattern count guard only existed for framing *device type* counts (33-type through 46-type), not for regex *pattern* counts.
+
+**Fix:** Updated both doc descriptions to "273 patterns." Added `TestStaleRegexPatternCountPurge` (2 tests) — validates ARCHITECTURE.md and README.md test descriptions reference the current pattern count from code.
+
+**2. Extended device tier count (29→32) in ARCHITECTURE.md**
+
+ARCHITECTURE.md's `framing.py` detail section listed "Extended (29):" but code has 32 extended types (42 pattern-matched minus 10 core). Three device types were added in prior iterations but never added to the ARCHITECTURE.md inline list:
+- `analogy_metaphor`: explicit simile/comparison framing using "like," "akin to," "equivalent of"
+- `taxonomy_framing`: presenting findings using structured classification ("broken, buried, or missing") that implies completeness
+- `failure_precedent`: invoking prior failed attempts at the same project type to cast implicit doubt
+
+All three ARE correctly listed in METHODOLOGY.md §4.1 Extended Devices table (caught by `TestMethodologyDeviceTableConsistency`), but the ARCHITECTURE.md module detail section is a separate, manually-maintained description.
+
+**Fix:** Updated to "Extended (32):" with descriptions for all 3 missing types. Added `TestArchitectureExtendedDeviceCount` (1 test) — validates the "Extended (N):" label matches actual count.
+
+**3. framing.py docstring device list incompleteness (41→42)**
+
+The docstring header correctly said "Scans for 42 pattern-matched device types" (validated by `TestDocstringCountConsistency.test_docstring_pattern_count_matches_code`). But the inline enumeration "Pattern-matched (41): ..." listed only 41 types — `failure_precedent` was missing. The count guard validated the numeric header, not the body of the list.
+
+**Fix:** Updated "Pattern-matched (41)" → "(42)" and added `failure_precedent` in alphabetical position. Added `TestDocstringDeviceListCompleteness` (1 test) — extracts all snake_case identifiers from the docstring list and validates every `_DEVICE_PATTERNS` key is present.
+
+### Systemic Pattern
+
+This is the third consecutive iteration (13:00 D, 14:00 A, 17:00 D) where secondary count references drifted from primary counts. The common failure mode:
+
+1. New feature added (device type, pattern, term)
+2. Primary count guard (`EXPECTED_*` constant) updated → tests pass
+3. Secondary references (doc descriptions, inline lists, tier labels) not updated → no test catches it
+
+The 13:00 iteration added the stale framing taxonomy count purge. This iteration extends the same principle to regex pattern counts, docstring inline lists, and tier count labels. Coverage gap remaining: ARCHITECTURE.md inline device *names* list is not validated against code (only the Extended count label is guarded now, not the individual names in the list).
+
+### Stats (post-iteration)
+- Tests: 1058 → 1062 (4 new guards, all passing)
+- Files changed: 4 (framing.py, ARCHITECTURE.md, README.md, test_structural_consistency.py)
+- Insertions: 140, Deletions: 7
+- Commit: `4ba4f49`
+
+### Guard Coverage Summary (post-iteration)
+
+| What | Primary Guard | Secondary Guard (new) |
+|------|--------------|----------------------|
+| Framing device type count (47) | `EXPECTED_TOTAL` + doc count tests | Stale X-type purge (33–46) |
+| Regex pattern count (273) | `EXPECTED_TOTAL_PATTERNS` | **NEW: stale pattern count in doc descriptions** |
+| Extended tier count (32) | None (was unguarded) | **NEW: ARCHITECTURE.md "Extended (N):" label** |
+| Docstring device names | `test_docstring_pattern_count` (numeric) | **NEW: list completeness (all types enumerated)** |
+| Topic bucket count (19) | Topic count tests | README test_topics description count |
+| Banned phrase count (25) | Count + completeness tests | README banned phrase header |
+| Voting power (65.2%) | README test | Stale 33.5% purge across all docs |
+| Emotional language (587) | Count + no-duplicates test | — |
+
 ## 2026-06-30 16:00 PT — Type C: Ownership & Funding Deep Dive — Atlantic / Emerson Collective
 
 **Focus:** World Labs $1B round expansion, Yosemite Fund II grants update, Atlantic subscription/business updates, Nicholas Thompson career expansion
