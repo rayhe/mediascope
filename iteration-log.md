@@ -4,6 +4,84 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-01 23:00 PT — Type C: Ownership & Funding Deep Dive — NYT Google Showcase→AI Pilot Squeeze + Q1 Revenue + MSFT Securities Fraud
+
+### Focus
+NYT hadn't had a Type C iteration since Jun 28 (3 days). Four significant new findings discovered through web research: Google's structural squeeze on publishers (Showcase phase-out), detailed Q1 2026 revenue data from earnings calls, Microsoft co-defendant's separate securities fraud exposure, and OpenAI's proposed government stake.
+
+### Finding 1: Google Showcase → AI Pilot Transition (severity 4, NEW)
+
+Google is phasing out its News Showcase content-licensing program (launched 2020, 2,300+ titles, 22 countries) and replacing it with a "News AI pilot program" (announced Dec 2025) that requires publishers to grant Google broad rights to use their content for AI training. Partners include Washington Post, Guardian, Der Spiegel, El País, Folha, Infobae, Kompas, Times of India, Washington Examiner — but NOT the NYT.
+
+Google reportedly warned publishers: decline the new pilot → eventually lose Showcase payments too. Jason Kint, CEO of Digital Content Next (whose members include NYT): "This is Google's game. They're gonna dominate here."
+
+**Why this matters for MediaScope:**
+1. **Structural squeeze** — NYT blocks Google Extended (AI training) and is absent from the pilot. As Google ends Showcase, NYT may lose content licensing payments while still depending on Google for programmatic ad revenue
+2. **Traffic compression** — Google AI Overviews (2.5B MAU) and AI Mode (1B MAU) are compressing publisher search traffic by -33% globally (-38% US). Google Discover traffic -21% (-29% US). Publishers expect -43% decline by 2029
+3. **Financial evidence** — Google Network ad revenue (third-party publishers) fell 4% YoY to $6.97B in Q1 2026 (Alphabet earnings Apr 29) — direct financial signal
+4. **Regulatory lever** — UK CMA forced Google to offer AI search opt-out without losing regular search position (Jun 2026). "World first" — potential global precedent that benefits NYT
+5. **Google revenue conflict upgraded** from severity 3 to severity 4. Revenue relationship section expanded from 5 lines to 80+ lines covering 5 dimensions
+
+**Sources:**
+- https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships/ (NY Post, Jun 26)
+- https://inshorts.com/en/news/google-asks-publishers-to-share-their-work-to-train-ai-or-risk-losing-payouts-report (Inshorts, Jun 29)
+- https://techcrunch.com/2026/06/04/publishers-will-be-able-to-opt-out-of-ai-search-thanks-to-new-regulation/ (TechCrunch, Jun 4)
+- https://searchenginejournal.com/google-preferred-sources-publisher-ai-partnerships/ (SEJ, Dec 2025)
+- https://memeburn.com/google-ai-overview-statistics-2/ (Memeburn, Jun 2026 data compilation)
+- https://fastcompany.com/91345271/google-ai-overviews-publisher-inaccuracies (Fast Company, NYT Oumi study)
+
+### Finding 2: Q1 2026 Revenue Detail from Earnings Calls (May 6, 2026)
+
+Added granular Q1 2026 data from Digiday's earnings analysis:
+- Digital affiliate/licensing/other: $45.2M (+12.7% YoY) — NYT did NOT specifically attribute to AI deals
+- Digital advertising: $93M (+32% YoY) — driven by marketer demand + ad supply growth (per CFO Bardeen)
+- CEO Levien on Amazon: "We've done a partnership with Amazon because it met those conditions. And so far, so good. We're learning a lot there."
+- On future AI deals: "Is a deal or a partnership here consistent with our long-term strategy? Does it ensure sustainable, fair value exchanges? Do we have control over how our content is used?"
+- On traffic: "operating in a media environment dominated by a small number of technologies whose moves continue to impact traffic to publishers. The Times isn't immune to that impact."
+
+Comparative data: USA Today Co. AI licensing +125.6% YoY (Meta deal driver); People Inc. licensing +26% (also Meta); People Inc. lost 65% of Google referral traffic (Barry Diller); AI Overviews appear on ~70% of top 10K People Inc. search keywords.
+
+**Source:** https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/
+
+### Finding 3: Microsoft Securities Fraud Class Action (severity 2, NEW)
+
+Microsoft (NYT's co-defendant) now faces separate securities fraud class action: City of St. Clair Shores Police and Fire Retirement System v. Microsoft Corp., No. 26-cv-02071, W.D. Washington. Filed by Pomerantz LLP and BFA Law. Alleges Microsoft misled investors about Copilot adoption (only 15M paid seats vs 450M+ commercial users) and Azure growth (slowed due to GPU capacity diverted to Copilot/AI R&D). MSFT stock dropped 10% on Jan 28, 2026 earnings ($481.63 → $433.50). Lead plaintiff deadline: Aug 11, 2026. Adds legal pressure on NYT's co-defendant from a second front — the same AI infrastructure investment NYT's amended complaint targets.
+
+**Sources:**
+- https://www.globenewswire.com/news-release/2026/06/30/pomerantz-microsoft (GlobeNewswire, Jun 30)
+- https://www.prnewswire.com/news-releases/msft-notification-microsoft-securities-fraud (PR Newswire, Jun 30)
+
+### Finding 4: OpenAI Government Stake Proposal (severity 1, NEW)
+
+FT/Reuters (Jul 1, 2026): OpenAI discussed giving 5% stake to US government. Preliminary — other AI firms not yet committed. Could affect OpenAI's corporate structure and litigation posture in NYT case if realized. Minimal severity for now.
+
+**Source:** https://www.reuters.com/technology/artificial-intelligence/openai-proposes-handing-trump-administration-5-stake/
+
+### Financial Updates
+- Stock: $71.79 (Jul 1, 2026), market cap $11.5B. 52-week: $51.03–$87.10
+- Quarterly dividend: $0.23/share, payable Jul 23, 2026 (record Jul 8)
+- 13M+ total subscribers (per BusinessWire press release)
+- Next earnings: ~Aug 5, 2026. Consensus: FY2026 EPS $2.93, FY2027 $3.22
+- Board unchanged: all directors re-elected at Apr 22, 2026 annual meeting
+- Slim position value: ~$2.09B at current price (29.1M shares × $71.79)
+
+### Changes
+- `profiles/nytimes.yaml`: +213 lines, -32 lines (1356→1535 lines total)
+  - Google revenue relationship: expanded from 5 lines to 80+ lines, severity 3→4
+  - Added 4 new known_conflicts entries (google_showcase_ai_pilot_squeeze, microsoft_securities_fraud, openai_government_stake, board_tech_concentration restored with annual meeting data)
+  - Updated stock price, market cap, Slim position value
+  - Added Q1 2026 earnings call SEC filing entry with Levien quotes
+  - Updated publisher description with Q1 revenue granularity
+  - Updated board_tech_concentration with Apr 2026 annual meeting confirmation
+
+### Stats After
+- Tests: 1169 (1167 passed, 2 xfailed), 44 files
+- NYT profile: 1535 lines (was ~1356)
+- Known conflicts: 15 (was 11) — added google_showcase_ai_pilot_squeeze, microsoft_securities_fraud, openai_government_stake; restored board_tech_concentration with update
+- Google revenue severity: 4 (was 3)
+
+---
+
 ## 2026-07-01 22:00 PT — Type B: Journalist/Publication Research — Dominic Rushe & Chris Stokel-Walker
 
 ### Focus
