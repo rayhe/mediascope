@@ -266,16 +266,25 @@ advance_investments:
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
     current_value_estimate: >
-      ~$8.33B at $197.76/share (Jul 2, 2026 intraday). Reddit market cap ~$33.4B (Finnhub).
-      INTRADAY SURGE: Reddit surged +13.9% on Jul 2, 2026 (from ~$173.58 previous close to
-      $197.76). This followed a similar +13.73% surge on Jul 1. Volume elevated vs 5.23M avg.
-      Broader tech rally (META +8.81% Jul 1). Reddit now ~60-65% of Advance's public equity.
-      42,207,274 total shares × $197.76 = $8.35B. 52-week range $119.27-$282.95. Beta 2.07.
-      Year-to-date: -14% (still below Jan 2026 highs ~$231).
+      ~$8.05B at $190.67/share (Jul 2, 2026 close). Reddit market cap ~$33.4B (Finnhub).
+      PRICE REVERSAL: After surging +13.9% on Jul 1-2 intraday (to $197.76), Reddit
+      gave back -3.6% by Jul 2 close ($190.67). 52-week range $119.27-$282.95. Beta 2.07.
+      Year-to-date: -17% (still below Jan 2026 highs ~$231). Reddit now ~60-65% of
+      Advance's public equity. 42,207,274 total shares × $190.67 = $8.05B.
       Analyst consensus: 18 buy, 12 hold, avg 12-mo PT $230.75 (high $300, low $110).
       MARGIN LOAN BUFFER: The 7.8M shares pledged as collateral (at $145-148 offering)
-      are now worth ~$1.54B at $197.76 — 28-36% above offering price, significantly
-      expanding Advance's collateral cushion and reducing near-term margin call risk.
+      are now worth ~$1.49B at $190.67 — 27-31% above offering price, comfortable but
+      narrowing from the Jul 1 intraday peak cushion.
+      INSIDER SELLING (last 90 days, MarketBeat): Reddit insiders sold $36.9M total.
+      CTO Christopher Slowe sold 15,500 shares at $150.67 ($2.3M, Apr 8, 10b5-1 plan,
+      -28.75% of direct holdings). COO Jennifer Wong sold 39,166 shares at $176.94
+      ($6.9M, Jun 16, 10b5-1 plan, -3.59% of holdings). 28.48% of stock held by
+      corporate insiders. Insider selling pace is ELEVATED vs historical norms. While
+      10b5-1 plans are pre-arranged, the volume ($36.9M/90 days) signals distribution
+      phase, not accumulation — potentially relevant if Advance is simultaneously
+      leveraging its position via the $1.2B margin loan.
+      Q2 2026 EARNINGS: July 30 (after market close). Consensus EPS ~$1.20-1.25.
+      This is a potential volatility catalyst for Advance's collateral value.
     credit_facility_monetization: >
       REDDIT MARGIN LOAN (reported Jun 12, 2026, Bloomberg Law): Advance Magazine Publishers Inc.
       — the specific Advance subsidiary that directly holds the Reddit shares — is establishing
@@ -311,7 +320,7 @@ advance_investments:
       FY2026 projected: $3.25B (+47.6%), FY2027: $4.31B (+32.5%).
       Q2 2026 GUIDANCE: $715M-$725M, representing 43-45% YoY revenue growth (~44% at midpoint).
       Q2 2026 EARNINGS DATE: July 30 (after market close). Consensus EPS: tracking for ~$1.20-1.25.
-      Market cap ~$33.4B at $197.76/share (Jul 2, 2026 intraday — up 13.9% on the day).
+      Market cap ~$33.4B at $190.67/share (Jul 2, 2026 close — down 3.6% from intraday peak).
       Previous close ~$173.58 (Jul 1). 52-week range $119.27-$282.95. Beta 2.07.
       FY2026 EPS CONSENSUS: $4.83. FY2027 EPS FORECAST: $6.39 (+32.3% growth).
       P/E ratio: 56.41 (trailing). Net margin: 28.60%. ROE: 25.48%.
@@ -1288,11 +1297,99 @@ litigation_connections:
     description: >
       Flashlight Capital funds Social Media Victims Law Center (SMVLC), lead counsel in bellwether
       Meta addiction trial. No direct Advance/Condé Nast link confirmed, but unnamed UK PE firm behind
-      Flashlight's $250M fund is unidentified. MDL 3047: 2,527+ claims, 42 state AGs active.
+      Flashlight's $250M fund is unidentified. MDL 3047: 2,600+ individual/school/government claims,
+      3,300+ addiction cases in California state court alone, 41+ state AGs.
       IMPORTANT: Wired's extensive coverage of teen social media harm (Drummond's editorial priority)
       aligns with the litigation narrative. No disclosure of Advance's potential indirect interests
       in Meta's litigation outcomes has ever appeared in Wired coverage.
-    case_reference: "MDL 3047, N.D. Cal."
+    case_reference: "MDL 3047, N.D. Cal.; JCCP 5255, LA Superior Court"
+
+  - type: "meta_litigation_escalation_jul_2026"
+    severity: 5
+    description: >
+      CRITICAL UPDATE — JULY 2026 LITIGATION ACCELERATION: Meta faces an unprecedented convergence
+      of 4 trials + 1 Senate hearing in a 33-day window (July-August 2026). This is the most
+      concentrated period of legal/legislative pressure any single tech company has faced over
+      child safety in US history.
+
+      TIMELINE (Jul-Aug 2026):
+      1. TENNESSEE STATE TRIAL (late July, ~7 weeks): Tennessee AG Jonathan Skrmetti v. Meta.
+         Davidson County Chancellor Russell Perkins presiding. Alleges Meta failed to disclose
+         harmful effects of Instagram on children (sexual exploitation, diminished self-image,
+         addiction). Both sides sought summary judgment Feb 25; judge has not yet ruled. If denied,
+         trial begins late July. Meta's internal study — showing its algorithm recommended child
+         exploitative imagery to pedophiles — is in evidence. Tennessee co-led the original 2021
+         bipartisan nationwide AG investigation with Colorado. Source: The Tennessean (Feb 27, 2026).
+      2. JCCP 5255 SECOND BELLWETHER (Jul 27, LA County Superior Court): R.K.C. v. Meta/Snap.
+         15-year-old Florida boy (used social media from age ~8, claims addiction, depression, anxiety,
+         sleep loss). TikTok settled Jul 1; YouTube settled June 2026. Meta + Snap remain as defendants.
+         Follows the KGM verdict (March 2026, Meta $4.2M + Google $1.8M) — judge denied both companies'
+         post-trial motions to overturn verdict in June 2026. Source: Reuters (Jul 1, 2026).
+      3. SENATE HEARING (Jul 28): Tech executives expected to testify on child online safety, predatory
+         exploitation, and digital sextortion. Meta met with White House in late May/early June to express
+         concerns about increased negative attention from the hearing. Zuckerberg and Pichai reportedly
+         "spared" from testifying. Source: Washington Examiner/Politico (Jun 26, 2026).
+      4. FEDERAL STATE AG TRIAL (Aug 18, N.D. Cal.): California, Colorado, Kentucky, New Jersey v. Meta.
+         Judge Yvonne Gonzalez Rogers presiding. In a 38-page ruling on June 30, 2026, Rogers:
+         (a) DENIED Meta's motion for summary judgment on deception and unfair practices claims;
+         (b) GRANTED summary judgment TO THE STATES on COPPA compliance — finding Meta failed to comply
+         with Children's Online Privacy Protection Act notice and parental consent requirements. This
+         means Meta LOST on COPPA as a matter of law; the jury will be told Meta violated COPPA.
+         (c) Found "material factual disputes" over whether Meta's platforms are addictive, whether Meta
+         falsely denied designing them to be addictive, and whether Meta "partially" directed the
+         platforms at children.
+         Meta's defense — that "social media addiction" is not an established psychiatric condition and
+         therefore statements that its platforms are not addictive cannot be false — was REJECTED.
+         Rogers quoted: "To the extent plaintiffs' evidence shows that the platforms are in fact designed
+         to [cause teens to compulsively use the platforms to their detriment], a jury could reasonably
+         find the statements were untrue to a reasonable person."
+         Source: Reuters (Jun 30, 2026), Fox Business (Jul 1, 2026).
+
+      RECENT VERDICTS/SETTLEMENTS (2026):
+      - KGM v. Meta/YouTube (JCCP 5255, March 2026): $6M total ($4.2M Meta, $1.8M Google). First
+        individual bellwether. Post-trial motions denied June 2026 — verdict stands.
+      - New Mexico DOJ v. Meta (March 2026): $375M civil penalties. First state to prevail at trial.
+        Court expected to rule on injunctive relief (forcing platform changes) soon.
+      - Breathitt County Schools v. Meta/Snap/TikTok/YouTube (MDL 3047, May 2026): $27M settlement.
+        First federal school district bellwether case. Next school bellwethers: Tucson USD +
+        Charleston County SD, scheduled 2027.
+
+      LEGISLATIVE/REGULATORY ACCELERATION:
+      - Mississippi: Enacted "Keeping Kids Safe Online Act" (2026 session) — $10K civil penalties
+        per incident for misleading parents/kids about platform dangers.
+      - Australia: Doubling fines to AU$99M ($68M) for platforms failing to prevent under-16 accounts.
+        eSafety Commissioner getting expanded powers. Source: AP (Jun 29, 2026).
+      - Minnesota/Colorado: Social media warning label laws blocked by NetChoice lawsuits (Jul 2026).
+      - CNN research (Jun 29, 2026): 66% of Instagram's 29 child safety features are "failures"
+        (broken, buried in settings, or missing entirely). Snapchat 73%, YouTube 55%, TikTok 50%.
+
+      SCALE OF EXPOSURE:
+      - 10,000+ individual PI claims (MDL 3047)
+      - ~800 school district claims (MDL 3047)
+      - 3,300+ addiction cases in California state court (JCCP 5255)
+      - 41+ state AGs in coordinated action
+      - Cumulative verdict/settlement: $408M+ (and accelerating)
+      - Cornell Law professor (Alexandra Lahav): "the pressure is going to be on for a massive
+        settlement" — analogized to the $6B 3M Combat Arms earplug MDL.
+
+      CONFLICT ANALYSIS: This litigation wave creates maximum coverage pressure on all 5 tracked
+      publications simultaneously. The more Meta loses, the more valuable the story becomes for
+      publications whose owners compete with Meta (Advance/Reddit, NYT, Guardian). The Gonzalez
+      Rogers COPPA ruling is particularly significant — it establishes Meta's COPPA violation as
+      legal fact, not allegation. When Wired covers this, it is covering a legal defeat for a
+      company whose primary competitor (Reddit) has generated $8B+ in unrealized gains for
+      Wired's parent company. No disclosure of this conflict has ever appeared.
+    source_urls:
+      - "https://www.reuters.com/legal/government/meta-loses-bid-dismiss-us-states-claims-that-facebook-instagram-addict-children-2026-06-30/"
+      - "https://www.foxbusiness.com/politics/judge-lets-states-pursue-claims-meta-designed-facebook-instagram-addict-children"
+      - "https://www.reuters.com/legal/litigation/tiktok-settles-minor-plaintiff-ahead-second-individual-trial-over-social-media-2026-07-01/"
+      - "https://www.courierpress.com/story/news/local/2026/07/01/evsc-social-media-lawsuit/75665143007/"
+      - "https://www.tennessean.com/story/news/local/2026/02/27/judge-to-decide-if-tennessee-instagram-case-against-meta-goes-to-trial/76512038007/"
+      - "https://www.washingtonexaminer.com/policy/technology/3414556/mark-zuckerberg-sundar-pichai-reportedly-spared-senate-hearing-child-safety/"
+      - "https://www.seegerweiss.com/news/first-social-media-addiction-mdl-bellwether-trial-settlement/"
+      - "https://www.movieguide.org/news-articles/youtube-settles-child-social-media-harm-lawsuit.html"
+      - "https://www.cnn.com/2026/06/29/tech/social-media-child-safety-features-broken/index.html"
+      - "https://www.marketbeat.com/stocks/NYSE/RDDT/"
   - type: "strategic_non-litigation"
     description: >
       CRITICAL NEGATIVE FINDING: Condé Nast/Wired has ZERO active copyright litigation against

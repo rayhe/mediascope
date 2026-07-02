@@ -128,11 +128,18 @@ Owner: Condé Nast → Advance Publications (Newhouse Family)
 FINANCIAL CONFLICTS (5 identified):
 1. [SEVERITY 5] Advance Publications holds 65.2% voting power in Reddit
    (83.5% of Class B shares, 10 votes/share), a direct Meta competitor,
-   with 2 board seats and ~$7B stake value.
+   with 2 board seats and ~$8B stake value. $1.2B margin loan against
+   7.8M shares deepens financial entanglement. Reddit insiders sold
+   $36.9M in last 90 days (10b5-1 plans).
 2. [SEVERITY 5] Condé Nast has content licensing deals with OpenAI, Amazon,
    and Apple (all Meta competitors). Meta has NO such deal.
 3. [SEVERITY 4] Reddit competes directly with Meta for user attention,
    advertiser spend, and community engagement.
+4. [SEVERITY 5] Meta faces unprecedented litigation convergence (Jul-Aug
+   2026): 4 trials + Senate hearing in 33 days. $408M+ in verdicts/
+   settlements. COPPA violation established as matter of law (Jun 30
+   Gonzalez Rogers ruling). Wired coverage aligns with litigation
+   narrative; no disclosure of Advance's competing interests.
 
 METHODOLOGY: Ownership data from SEC filings and corporate disclosures.
 Revenue relationships from press releases and industry reporting.
