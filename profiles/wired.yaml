@@ -85,6 +85,17 @@ ownership_chain:
       content from AI Overviews. Condé Nast has NOT reached a licensing deal with Google (in contrast to
       OpenAI and Amazon deals). This is the ONLY major AI company whose content Condé Nast is NOT being
       compensated for — creating a unique adversarial dynamic between Condé Nast and Google.
+      
+      "GOOGLE ZERO" PLANNING DIRECTIVE (May 2026, TBPN): Lynch escalated beyond the Feb 2026 FT
+      rhetoric. At the TBPN technology show, he disclosed that he has "instructed his internal sales
+      teams to plan as if search traffic will disappear in the near future." This represents a
+      CORPORATE OPERATIONAL DIRECTIVE, not just a forecast — Condé Nast is now building revenue
+      projections assuming zero Google search traffic. Context: Condé Nast is restructuring around
+      events, subscriptions, commerce, and AI licensing precisely because it expects the Google traffic
+      relationship to collapse entirely. The timing of this directive (May 2026) is significant —
+      it came weeks after the Self/Glamour/Wired Italy closures (Apr 16), suggesting the portfolio
+      pruning is part of the same strategic response to Google traffic zeroing out.
+      Source: Adweek (May 2026) — https://www.adweek.com/media/conde-nast-events-revenue-2026/
 
       REGULATORY CONTEXT: European Commission opened formal antitrust probe into Google's AI content
       practices (Dec 9, 2025). UK CMA proposed binding conduct requirements under Digital Markets,
@@ -255,15 +266,15 @@ advance_investments:
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
     current_value_estimate: >
-      ~$8.33B at $197.42/share (Jul 1, 2026 close). Reddit market cap ~$38.0B.
-      INTRADAY SURGE: Reddit opened at $173.65 and closed at $197.42 (+13.73%) on Jul 1, 2026.
-      Volume 8.75M shares (vs 5.23M avg). Broader tech rally (META +8.81% same day).
-      Reddit now ~60-65% of Advance's public equity. 42,207,274 total shares ×
-      $197.42 = $8.33B. 52-week range $119.27-$282.95. Beta 2.07.
-      Year-to-date: -14.16% (still below Jan 2026 highs ~$231).
+      ~$8.33B at $197.76/share (Jul 2, 2026 intraday). Reddit market cap ~$33.4B (Finnhub).
+      INTRADAY SURGE: Reddit surged +13.9% on Jul 2, 2026 (from ~$173.58 previous close to
+      $197.76). This followed a similar +13.73% surge on Jul 1. Volume elevated vs 5.23M avg.
+      Broader tech rally (META +8.81% Jul 1). Reddit now ~60-65% of Advance's public equity.
+      42,207,274 total shares × $197.76 = $8.35B. 52-week range $119.27-$282.95. Beta 2.07.
+      Year-to-date: -14% (still below Jan 2026 highs ~$231).
       Analyst consensus: 18 buy, 12 hold, avg 12-mo PT $230.75 (high $300, low $110).
       MARGIN LOAN BUFFER: The 7.8M shares pledged as collateral (at $145-148 offering)
-      are now worth ~$1.54B at $197.42 — 28-36% above offering price, significantly
+      are now worth ~$1.54B at $197.76 — 28-36% above offering price, significantly
       expanding Advance's collateral cushion and reducing near-term margin call risk.
     credit_facility_monetization: >
       REDDIT MARGIN LOAN (reported Jun 12, 2026, Bloomberg Law): Advance Magazine Publishers Inc.
@@ -300,7 +311,8 @@ advance_investments:
       FY2026 projected: $3.25B (+47.6%), FY2027: $4.31B (+32.5%).
       Q2 2026 GUIDANCE: $715M-$725M, representing 43-45% YoY revenue growth (~44% at midpoint).
       Q2 2026 EARNINGS DATE: July 30 (after market close). Consensus EPS: tracking for ~$1.20-1.25.
-      Market cap ~$38.0B at $197.42/share (Jul 1, 2026 close). 52-week range $119.27-$282.95. Beta 2.07.
+      Market cap ~$33.4B at $197.76/share (Jul 2, 2026 intraday — up 13.9% on the day).
+      Previous close ~$173.58 (Jul 1). 52-week range $119.27-$282.95. Beta 2.07.
       FY2026 EPS CONSENSUS: $4.83. FY2027 EPS FORECAST: $6.39 (+32.3% growth).
       P/E ratio: 56.41 (trailing). Net margin: 28.60%. ROE: 25.48%.
       TTM (trailing 12 months): Revenue $2.2B, net income $530M (net margin 24.1%), operating income
@@ -836,6 +848,14 @@ revenue_relationships:
       (Adweek, May 2026 article referencing Oct 2025 Lynch comments). Perplexity's Comet Plus program
       (Oct 1, 2025) included 16 Condé Nast titles — compensating based on human engagement, AI-driven
       interactions, and content usage in training.
+      PERPLEXITY MEDIA REVENUE FUND: Perplexity allocated $42.5M to pay publishers whose content is
+      used in its search and AI tools (Bloomberg, ~early 2026). Revenue comes through Comet Plus
+      subscription ($5/mo) — publishers receive 80% of revenue, Perplexity retains 20%. Confirmed
+      negotiation partners include Time, LA Times, and Fortune. Previously sued by Forbes, Dow Jones,
+      and New York Post for copyright infringement. Cloudflare also accused Perplexity of bypassing
+      protective blocks for data scraping. Perplexity raised $100M at $18B valuation in Jul 2025
+      and announced intent to acquire Google Chrome for $34.5B if antitrust divestiture is ordered.
+      Source: https://ain.ua/en/2026/perplexity-will-pay-publishers-for-ai-content/
       Perplexity AI is an AI-powered search engine backed by Jeff Bezos and Nvidia that competes with
       Google Search, Meta AI search, and OpenAI's SearchGPT. Combined with OpenAI, Amazon, Apple
       (in negotiations), and Microsoft Copilot, this makes SIX Meta competitors in Condé Nast's AI
@@ -1356,6 +1376,42 @@ litigation_connections:
     severity: 2
     evidence: "CNIL enforcement decision Nov 20, 2025"
     source_url: "https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/"
+
+# ===================================================================
+# INDUSTRY AI LICENSING REVENUE BENCHMARKS — Q1 2026
+# ===================================================================
+# Context for sizing Condé Nast's AI licensing revenue vs peers (Digiday, May 2026).
+# All three major publishers reported AI licensing as a meaningful revenue driver for the first time.
+#
+# USA Today Co. (Gannett):
+#   - "Other" digital rev (syndication, AI partnerships, licensing): $33.75M (+125.6% YoY)
+#   - Total digital rev: $261.9M (+5.2% YoY)
+#   - Digital ad rev: $80.9M (-3% YoY, page view declines + soft programmatic)
+#   - Meta AI licensing deal (Dec 2025) producing "notable" revenue for first time
+#   - Execs warned AI rev would be "lumpy or unpredictable" short-term
+#
+# IAC / People Inc.:
+#   - Licensing + "other" rev: $40.7M (+26% YoY), primarily Meta deal
+#   - Session-based ad rev: $150.5M (-1% YoY)
+#   - Non-session-based rev: $102.7M (+24% YoY), now 41% of digital rev (vs 35% Q1 2025)
+#   - Total digital rev: $253M (+8% YoY)
+#   - Chairman Barry Diller: People Inc. "lost 65% of its referral traffic from Google"
+#   - AI Overviews on ~70% of top 10,000 People Inc. search keywords
+#   - Total sessions -18% YoY; off-platform audiences +27%
+#
+# NYT:
+#   - Digital affiliate/licensing/other: $45.2M (+12.7% YoY)
+#   - Digital ad rev: $93M (+32% YoY) — outlier growth
+#   - Amazon AI deal (summer 2024) producing revenue. CEO Levien: open to more deals
+#     if "sustainable, fair value exchanges" with "control over how our content is used"
+#
+# ANALYTICAL SIGNIFICANCE: Condé Nast is PRIVATE and doesn't report AI licensing revenue
+# separately. But its AI licensing portfolio (OpenAI, Amazon, Perplexity, Microsoft, Apple
+# in negotiation) spans more partners than any single public peer above. If Condé Nast's
+# per-partner deal sizes are comparable to IAC or USA Today's Meta deals, total AI licensing
+# revenue could be $30-60M annually — approaching 2-3% of estimated ~$1.9-2.0B total revenue.
+# This would make AI licensing a top-5 revenue category, validating Lynch's pivot strategy.
+# Source: https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/
 
 # ===================================================================
 # CONDÉ NAST RESTRUCTURING TIMELINE — updated Jun 2026
