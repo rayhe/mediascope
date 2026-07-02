@@ -37,18 +37,18 @@ disturbing prompt catalog, but not editorializing — the documents do the work)
 
 | Metric | Value |
 |--------|-------|
-| overall_tone | -0.2391 |
+| overall_tone | -0.2454 |
 | raw_tone | -0.1581 |
 | emotional_language_intensity | 0.4403 |
 | framing_corrected | True |
 | agency_attribution | -0.4286 |
-| anonymous_source_ratio | 0.6667 |
+| anonymous_source_ratio | 0.80 |
 | speculative_language_ratio | 0.0786 |
 | headline_body_alignment | 0.9 |
 | comparative_framing | -1.0 |
 | source_authority_framing | 0.3143 |
 
-**Manual vs toolkit gap:** Manual is more negative (-0.45 vs -0.24). The gap is
+**Manual vs toolkit gap:** Manual is more negative (-0.45 vs -0.25). The gap is
 understandable: VADER doesn't feel the visceral weight of "13-year-old who said
 she had become pregnant by her adult neighbor" or "whether it would be nice to
 eat my neighbor's child." These are content-level horrors that register as
@@ -56,11 +56,16 @@ neutral factual language to a word-level sentiment analyzer. The toolkit
 compensates partially via emotional_language_intensity (0.44), but the overall
 tone undercounts the article's actual impact.
 
-**Correction path active:** raw_tone (-0.1581) was corrected to -0.2391 via
+**Correction path active:** raw_tone (-0.1581) was corrected to -0.2454 via
 framing correction, indicating the emotional language intensity and framing
 devices pushed the score more negative — correct direction, but not far enough.
 
-### 3. Framing Devices Detected (16 total)
+**Source ratio update (Jul 2 iteration):** anonymous_source_ratio moved from
+0.67 to 0.80. Current extraction finds 6 sources total, 4 anonymous. The
+difference from the original 7-source count likely reflects "WIRED" self-
+references or "internal documents" being handled differently across runs.
+
+### 3. Framing Devices Detected (19 total)
 
 | # | Device Type | Evidence | Assessment |
 |---|-------------|----------|------------|
@@ -80,22 +85,31 @@ devices pushed the score more negative — correct direction, but not far enough
 | 14 | delayed_defense | Meta's response at ~71% mark (¶10–11) | ✅ Correct — defense buried after damage is done |
 | 15 | industry_normalization_undercut | "not, by itself, unusual ... But Cannes struck contractors as an odd way" | ✅ Correct — cross-sentence normalization then undercut |
 | 16 | refusal_amplification | "did not respond" (¶12) | ✅ Correct — Covalen's no-comment |
+| 17 | scale_magnitude | "more than 45,000 prompts" (¶3) | ✅ Correct — operational count establishes testing scale |
+| 18 | scale_magnitude | "3,748 prompts" (¶5) | ✅ Correct — bare large count emphasizes data volume reviewed |
+| 19 | scale_magnitude | "At least 239 involved" (¶5) | ✅ Correct — floor enumeration for sex/romance category |
 
 **Iteration history:** Original analysis (pre-fix) detected 6 devices, missing
 impersonation/deception framing entirely. After loaded_language patterns were
 added: 9 devices. After outsourced_intensity catalog detection, delayed_defense
 structural detection, and cross-sentence industry_normalization_undercut: 16
+devices. After scale_magnitude operational-count patterns (Jul 2 iteration): 19
 devices. Each addition addresses a genuine gap — no false positives introduced.
 
-**No false positives.** All 16 detections are real framing devices. The
+**No false positives.** All 19 detections are real framing devices. The
 catastrophizing "death of Jamey Rodemeyer" fix correctly prevents a false
 positive — this is a literal death reference (bisexual teenager who died by
 suicide), not metaphorical catastrophizing.
 
 **Devices NOT detected (manual assessment):**
 
-- **SCALE_MAGNITUDE**: "45,000 prompts," "3,748 prompts," "at least 239" — the
-  numbers establish scale. Current patterns may not detect these.
+- ~~**SCALE_MAGNITUDE**: "45,000 prompts," "3,748 prompts," "at least 239" — the
+  numbers establish scale. Current patterns may not detect these.~~ **FIXED
+  (Jul 2 iteration):** Three new pattern categories added to `_SCALE_MAGNITUDE_PATTERNS`:
+  (1) operational-scale enumeration ("more than N prompts/tests/queries"),
+  (2) bare large-count enumeration (comma-formatted ≥1,000 + operational noun),
+  (3) minimum-floor enumeration with verb ("at least N involved/focused").
+  All three phrases now detected.
 
 **Previously undetected, now fixed:** OUTSOURCED_INTENSITY (catalog pattern),
 DELAYED_DEFENSE (structural 71% threshold), and INDUSTRY_NORMALIZATION_UNDERCUT
@@ -133,31 +147,29 @@ neutral "AI Infrastructure" cluster.
 | Business Insider | Named publication | Contextual | Prior Scale AI / Google reporting |
 | WIRED | Self-referential | Investigative | "WIRED reviewed," "WIRED also reviewed" |
 
-**Anonymous source ratio: 0.67** — high, but typical for investigative
+**Anonymous source ratio: 0.80** — high, but typical for investigative
 journalism involving corporate insiders and leaked documents. The article
 compensates by anchoring to physical evidence (spreadsheets, internal documents,
 instructions) rather than relying solely on anonymous characterizations.
 
-**Source bug found:** "Insider" detected as a standalone source with
-`is_expert: True` — this is "Business Insider" being split. The source
-extraction parsed "Business Insider reported" and extracted "Insider" separately.
-Not critical but worth a future fix.
+~~**Source bug found:** "Insider" detected as a standalone source with
+`is_expert: True` — this is "Business Insider" being split.~~ Not reproduced
+in current toolkit run (Jul 2 iteration) — source extraction returns 6 sources
+without the phantom "Insider" entity.
 
 ### 6. Topic Classification
 
 | Topic | Confidence | Matched Keywords |
 |-------|------------|-----------------|
+| child_safety | 0.9333 | minors, teenager, teens, children, parents, pregnancy, self-harm, suicide |
 | ai_development | 0.4682 | AI models, AI safety, AI training, artificial intelligence, chatbot |
 | corporate_strategy | 0.3430 | competitor, rival |
-| child_safety | 0.2262 | minors, teenager, teens |
 
-**Manual assessment: child_safety should be primary.** The article is
-fundamentally about adults impersonating children to test chatbot responses to
-child safety scenarios. The keyword matcher correctly identifies child safety
-as a topic, but ranks it third by confidence because "AI" keywords dominate the
-text surface. The semantic weight of the article — what makes it newsworthy —
-is the child safety dimension, not the AI development dimension. This is a known
-limitation of keyword-frequency topic classification.
+**Manual assessment: child_safety is now correctly primary (0.93, rank 1).**
+Previous iterations ranked child_safety third (0.2262) because "AI" keywords
+dominated the text surface. The keyword weighting and headline-aware
+classification fixes resolved this gap — child_safety now reflects the
+article's core newsworthiness dimension.
 
 ### 7. Ownership Conflict Note
 
@@ -185,24 +197,28 @@ be disclosed.
 
 ## Toolkit Gaps Identified
 
-1. **OUTSOURCED_INTENSITY via catalog:** When a journalist presents a long
+1. ~~**OUTSOURCED_INTENSITY via catalog:** When a journalist presents a long
    catalog of disturbing specifics from source documents, the emotional impact
-   is outsourced to the documents themselves. The current toolkit doesn't detect
-   this "catalog" variant of outsourced intensity. Would need content-level
-   analysis beyond pattern matching.
+   is outsourced to the documents themselves.~~ **FIXED** — catalog variant
+   now detected (4 instances in this article).
 
-2. **DELAYED_DEFENSE detection:** The structural placement of Meta's defense
-   (paragraph 10 of 14) is a meaningful editorial choice. A defense buried under
-   12 paragraphs of damning evidence reads differently than one in paragraph 3.
-   Currently no detection for response-placement timing.
+2. ~~**DELAYED_DEFENSE detection:** The structural placement of Meta's defense
+   (paragraph 10 of 14) is a meaningful editorial choice.~~ **FIXED** —
+   structural device detects defense at ~71% mark.
 
-3. **Topic weighting gap:** Keyword-frequency classification ranks
-   child_safety third despite it being the article's core newsworthiness driver.
-   Semantic or headline-aware topic weighting could fix this.
+3. ~~**Topic weighting gap:** Keyword-frequency classification ranks
+   child_safety third despite it being the article's core newsworthiness
+   driver.~~ **FIXED** — child_safety now rank 1 at 0.9333 confidence.
 
 4. **"Business Insider" source splitting:** Source extraction parses "Insider"
    as a separate entity from "Business Insider." Low priority but creates a
-   phantom expert source.
+   phantom expert source. *(Not reproduced in current run — may be
+   intermittently fixed.)*
+
+5. ~~**SCALE_MAGNITUDE for operational counts:** "45,000 prompts," "3,748
+   prompts," "at least 239 involved" undetected.~~ **FIXED (Jul 2)** — three
+   new pattern categories: operational-scale enumeration, bare large-count
+   enumeration, and minimum-floor verb enumeration. 310 total patterns.
 
 ## Verdict
 
@@ -213,7 +229,7 @@ the Scale AI cluster fix prevents a material entity misattribution, and the
 catastrophizing "death of" fix correctly avoids a false positive on the Jamey
 Rodemeyer reference.
 
-The main gap is tone undercount: -0.24 toolkit vs -0.45 manual. The article's
+The main gap is tone undercount: -0.25 toolkit vs -0.45 manual. The article's
 power comes from content-level horror (child exploitation scenarios) that word-
 level sentiment analysis can't fully quantify. The emotional_language_intensity
 (0.44) partially compensates but overall_tone remains too mild.

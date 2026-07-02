@@ -2190,6 +2190,57 @@ _SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
         r"(?:staff|workforce|employees?|workers?|headcount|personnel)",
         re.IGNORECASE,
     ),
+    # ---------------------------------------------------------------------------
+    # Operational-scale enumeration: "more than 45,000 prompts/tests/queries"
+    # Extends the victim/case roster concept to testing, data, and operational
+    # nouns used in tech/AI/corporate reporting.  Discovered via WIRED "Cannes"
+    # article (Jul 2026): "more than 45,000 prompts run through the rival
+    # chatbots" was undetected because "prompts" wasn't in the victim roster.
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b(?:more than|over|nearly|approximately|at least|roughly|about)\s+"
+        r"[\d,]+\s+"
+        r"(?:prompts?|tests?|queries?|requests?|profiles?|accounts?"
+        r"|messages?|interactions?|samples?|inputs?|submissions?"
+        r"|records?|entries|transactions?|reports?|incidents?"
+        r"|violations?|emails?|documents?|images?|videos?"
+        r"|reviews?|responses?|searches?|attempts?)",
+        re.IGNORECASE,
+    ),
+    # ---------------------------------------------------------------------------
+    # Bare large-count enumeration: "3,748 prompts" — comma-formatted numbers
+    # (≥1,000) paired with operational/impact nouns signal deliberate scale
+    # emphasis.  The comma formatting itself is an editorial choice to render
+    # the number readable and impressive.  Discovered via WIRED "Cannes"
+    # article (Jul 2026): "a spreadsheet of 3,748 prompts" was undetected.
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b\d{1,3}(?:,\d{3})+\+?\s+"
+        r"(?:prompts?|tests?|queries?|requests?|profiles?|accounts?"
+        r"|messages?|interactions?|samples?|inputs?|submissions?"
+        r"|lawsuits?|cases?|complaints?|claims?|records?|entries"
+        r"|transactions?|reports?|incidents?|violations?"
+        r"|emails?|documents?|images?|videos?"
+        r"|plaintiffs?|victims?|families|users?"
+        r"|reviews?|responses?|searches?|attempts?)",
+        re.IGNORECASE,
+    ),
+    # ---------------------------------------------------------------------------
+    # Minimum-floor enumeration with verb: "at least 239 involved sex"
+    # Captures "at least / no fewer than N [verb]" constructions where the
+    # author establishes a floor magnitude followed by a categorizing verb.
+    # Discovered via WIRED "Cannes" article (Jul 2026): "At least 239
+    # involved sex or romance" was undetected — the existing roster patterns
+    # require a noun after the number, not a verb.
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b(?:at least|no fewer than|a minimum of)\s+"
+        r"[\d,]+\s+"
+        r"(?:involved|focused|related|dealt|concerned|addressed"
+        r"|contained|included|featured|covered|discussed"
+        r"|mentioned|referenced|targeted|affected|impacted)",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["scale_magnitude"] = _SCALE_MAGNITUDE_PATTERNS

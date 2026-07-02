@@ -4,6 +4,61 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-02 01:00 PT — Type A: Article Deep Dive — WIRED "Cannes" Scale Magnitude Fix
+
+### Focus
+WIRED "Meta Contractors Posed as Teens to Prompt Rival Chatbots About Suicide, Sex, and Drugs" (Jul 2026 Cannes/Covalen story). Prior analysis flagged `scale_magnitude` as undetected for operational count phrases ("45,000 prompts," "3,748 prompts," "at least 239 involved").
+
+### Changes
+1. **`mediascope/analyze/framing.py`** — Added 3 new `_SCALE_MAGNITUDE_PATTERNS`:
+   - **Operational-scale enumeration:** `"more than|over|at least N prompts/tests/queries/requests/profiles/accounts/messages/..."` — extends the victim/case roster concept to testing and data nouns common in tech/AI reporting.
+   - **Bare large-count enumeration:** Comma-formatted numbers ≥1,000 (`\d{1,3}(?:,\d{3})+`) paired with operational/impact nouns — captures "3,748 prompts" where the comma formatting itself signals editorial scale emphasis.
+   - **Minimum-floor verb enumeration:** `"at least|no fewer than N involved/focused/related/..."` — captures floor-magnitude constructions followed by a categorizing verb instead of a noun.
+   - Total patterns: 307 → 310 (scale_magnitude: 13 → 16).
+
+2. **`tests/test_structural_consistency.py`** — Updated `EXPECTED_TOTAL_PATTERNS` from 307 to 310.
+
+3. **`docs/ARCHITECTURE.md`, `README.md`** — Updated pattern count references from 307 to 310.
+
+4. **`examples/sample_output/wired_meta_cannes_contractors_teens_2026_07_analysis.md`** — Comprehensive update:
+   - Added 3 scale_magnitude detections to framing device table (16 → 19 total)
+   - Updated topic classification to reflect child_safety fix (0.93, rank 1)
+   - Updated overall_tone from -0.2391 to -0.2454, anonymous_source_ratio from 0.67 to 0.80
+   - Marked 4 of 5 toolkit gaps as FIXED (outsourced_intensity catalog, delayed_defense, topic weighting, scale_magnitude)
+   - Noted "Business Insider" source splitting bug no longer reproduces
+
+### Validation
+- All 3 new patterns fire correctly on Cannes article text
+- pytest: 1169 passed, 2 xfailed (0 failures)
+- No false positives introduced (verified against article)
+
+### Article Metrics (current)
+| Metric | Value |
+|--------|-------|
+| overall_tone | -0.2454 |
+| framing_devices | 19 (was 16) |
+| child_safety topic | 0.9333 (rank 1) |
+| anonymous_source_ratio | 0.80 |
+| scale_magnitude detections | 3 (was 0) |
+
+---
+
+## 2026-07-02 00:00 PT — Type D: Toolkit Quality & Documentation — README Gallery Expansion + Count Fixes
+
+### Focus
+README Sample Output Gallery was missing 22 entries for articles that had analyses on disk but were never documented. QUALITY_STANDARDS.md had a stale annotated article count (56 vs actual 77).
+
+### Changes
+1. **README gallery expanded (+22 entries):** Added documentation for analyses covering Gizmodo (AI tokens/addiction, Project 2029 kids), Guardian (DeepMind philosopher), Malwarebytes (AI bot hack — anthropomorphization discovery), Memeburn (Qualcomm deal — positive baseline), MIT Tech Review (AI bubble, jobs reality, data centers NIMBY, DeepMind multi-agent safety, resistance/backlash, Chinese workers AI doubles), multi-source Claude/Codex restriction, NYT (child safety "Broken, Buried, or Missing"), The Register (Brain2Qwerty BCI), Reuters (BoE agentic AI, Google limits Meta Gemini, child addiction 29 states), StockTwits (Virtue AI), TechTimes (Applied AI gulag), Kotaku (Arena), Barchart (investor urgency). Updated existing Gizmodo Arena entry (previously marked "no analysis yet").
+2. **QUALITY_STANDARDS.md:** Updated annotated article count from stale 56 → 77.
+
+### Stats
+- Tests: 1169 passed, 2 xfailed (44 files) — no regressions
+- Sample output: 154 files total, 77 annotated (analyses + annotations + deep dives + cross-analyses), 75 analyses, 73 articles
+- Commit: `9eddca1`
+
+---
+
 ## 2026-07-01 23:00 PT — Type C: Ownership & Funding Deep Dive — NYT Google Showcase→AI Pilot Squeeze + Q1 Revenue + MSFT Securities Fraud
 
 ### Focus
