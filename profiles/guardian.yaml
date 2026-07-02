@@ -521,9 +521,27 @@ revenue_relationships:
   - partner: "ProRata"
     relationship_type: "licensing_deal"
     estimated_value: "Undisclosed (revenue share model — ProRata pays 50% of all revenue to publisher partners based on content usage)"
-    description: "AI licensing deal. ProRata is an AI startup that shares 50% of revenue with publisher partners proportional to content usage in AI responses. Additional AI revenue stream beyond OpenAI."
+    description: >
+      AI licensing deal. ProRata is an AI startup that shares 50% of revenue with publisher
+      partners proportional to content usage in AI responses. Additional AI revenue stream
+      beyond OpenAI. Guardian was a FOUNDING partner from ProRata's initial $25M Series A round.
+      SCALE UPDATE (as of early 2026): ProRata has grown from 500+ to 1,500+ media partners.
+      Total funding: $75M+ ($25M Series A from Mayfield/IdeaLab, $40M Series B from Touring
+      Capital in Sep 2025). Gist Answers (AI search engine) reportedly profitable per CEO Bill
+      Gross. Revenue model: Gist Ads (in-AI-response advertising) with 50/50 revenue split to
+      publishers on a per-use basis.
+      CRITICAL INFRASTRUCTURE DETAIL: ProRata is built on Meta's Llama as its foundational LLM.
+      This creates an unusual dynamic: the Guardian licenses content to a platform that runs on
+      META's own open-source AI infrastructure, while the Guardian's coverage of Meta is the
+      subject under analysis. ProRata's use of Llama means Meta indirectly powers the platform
+      that monetizes Guardian journalism — but through open-source distribution, not a
+      commercial relationship.
     date_established: "~2025"
-    source_url: "https://www.inma.org/blogs/product-initiative/post.cfm/the-guardian-makes-a-strategic-push-into-ai-content-licencing"
+    source_urls:
+      - "https://www.inma.org/blogs/product-initiative/post.cfm/the-guardian-makes-a-strategic-push-into-ai-content-licencing"
+      - "https://www.businesswire.com/news/home/20250606852177/en/ProRata-AI-Signs-Partnerships-With-More-Than-500-Publications"
+      - "https://siliconangle.com/2025/09/05/prorata-raises-40m-develop-ai-tools-publishers/"
+      - "https://www.morningstar.com/news/business-wire/20250905771340/prorata-closes-40-million-series-b"
   - partner: "Google"
     relationship_type: "advertising"
     estimated_value: "Significant (programmatic)"
@@ -795,6 +813,51 @@ uk_cma_google_ruling:
     broader content-use terms. The Guardian is navigating three simultaneous Google relationships:
     (1) advertising (programmatic revenue), (2) AI pilot (direct payments for content), (3) CMA
     opt-out rights (regulatory protection). These create both leverage and dependency.
+
+cloudflare_publisher_infrastructure:
+  description: >
+    Cloudflare (NYSE: NET) announced a major new default policy on July 1, 2026 that directly
+    affects the AI-publisher content ecosystem the Guardian operates in. Starting September 15,
+    2026, Cloudflare will block "mixed-use" crawlers (those blending search, agent use, and AI
+    training) from any pages hosting ads BY DEFAULT. This applies to new customers, new sites
+    from existing customers, and all existing free-tier customers. Site owners can override.
+    SIGNIFICANCE: Cloudflare CEO Matthew Prince cited that bot traffic now exceeds human traffic
+    online for the first time: "Now that the majority of traffic on the Internet is non-human,
+    we must go further and act faster so that a sustainable ecosystem can emerge."
+    Cloudflare also announced "Pay Per Use" — an evolution of its earlier "Pay Per Crawl"
+    marketplace — allowing publishers to charge AI companies when their content CREATES VALUE,
+    not just when it's fetched. Initial Pay Per Use partners: Ceramic.ai and You.com.
+    Cloudflare's data shows >50% of AI crawler traffic re-fetches unchanged pages.
+    GUARDIAN RELEVANCE — CIRCULAR ECOSYSTEM: Cloudflare acquired Human Native (Mercuri Fund II
+    portfolio company) in January 2026. Now Cloudflare is implementing infrastructure-level
+    enforcement of the same principle SPUR advocates: separating traditional search from AI
+    usage. This means:
+    (1) The Guardian co-founded SPUR (policy/standards layer)
+    (2) The Guardian's VC arm (Mercuri) invested in Human Native (tooling layer)
+    (3) Cloudflare acquired Human Native and is now building infrastructure enforcement (infra layer)
+    (4) Cloudflare's default block aligns with the CMA's June 3 ruling (regulatory layer)
+    The Guardian is invested (via Mercuri exits + SPUR membership) at every layer of the
+    publisher-vs-AI-company stack. This is not a conflict per se, but creates a structural
+    alignment of interest: Guardian benefits financially and strategically from tighter
+    publisher IP protections while simultaneously licensing content to OpenAI, ProRata, and
+    Google's AI pilot.
+    The Cloudflare policy specifically calls out "the world's largest search engine" (Google)
+    for having 2x more content access than other AI companies by bundling search and AI
+    crawling — the exact issue the CMA's June 3 ruling addressed.
+  date: "2026-07-01"
+  effective_date: "2026-09-15"
+  source_urls:
+    - "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/"
+    - "https://blog.cloudflare.com/"
+  notes: >
+    ANALYTICAL SIGNIFICANCE: Cloudflare serves a significant portion of all internet traffic.
+    Its default-block policy creates a de facto industry standard that complements the CMA's
+    de jure regulatory requirement. Combined with SPUR's telemetry standard (expected soon),
+    this creates a three-layer enforcement stack: (1) regulatory (CMA), (2) infrastructure
+    (Cloudflare), (3) standards (SPUR). The Guardian is positioned at the nexus of all three.
+    This deepens the SPUR dual-positioning tension documented in testable hypothesis #9:
+    the Guardian advocates collective infrastructure for crawler separation while simultaneously
+    participating in Google's News AI pilot, which gives Google broad content-use access.
 
 tortoise_media_observer:
   description: >
@@ -1295,6 +1358,24 @@ notes: |
       AI content marketplace strategy differently from competitors' AI licensing infrastructure?
       Human Native's Cloudflare acquisition was covered by SiliconANGLE, Mediabrief, Computing.co.uk
       — but did the Guardian itself cover this exit of its own VC arm's portfolio company?
+  14. NEW (Jul 2): CIRCULAR ECOSYSTEM — Does the Guardian's structural investment in every layer
+      of the publisher-vs-AI-company enforcement stack (SPUR policy, Mercuri→Human Native→
+      Cloudflare infrastructure, CMA regulatory backing) create a financial incentive for MORE
+      aggressive coverage of AI companies? The Guardian benefits from tighter IP enforcement at
+      every level: (a) SPUR membership strengthens collective bargaining, (b) Mercuri exits are
+      more valuable when AI content licensing infrastructure grows, (c) Cloudflare's Sep 15 2026
+      default block creates scarcity value for licensed content, (d) CMA opt-out rights give
+      leverage in Google pilot negotiations. Compare Guardian's post-Feb-2026 coverage tone toward
+      AI companies that DON'T have licensing deals with the Guardian (e.g., Anthropic, Mistral)
+      vs those that do (OpenAI, Google).
+  15. NEW (Jul 2): PRORATA-LLAMA PARADOX — ProRata is built on Meta's open-source Llama LLM.
+      The Guardian earns revenue from ProRata (50/50 revenue share on content usage), which is
+      powered by Meta's own AI technology. Does the Guardian's coverage of Meta's open-source AI
+      strategy (Llama release decisions, open-weight licensing, competitive dynamics) reflect
+      awareness that its own AI licensing revenue is DEPENDENT on Meta's open-source model?
+      Compare Guardian coverage of Meta's Llama releases to coverage of OpenAI's closed-source
+      approach — does the financial relationship with a Llama-powered platform create an implicit
+      editorial blind spot on open vs closed AI?
 
   Research note: Bunz & Braghieri 2021 found Guardian had only 29% positive AI coverage vs 49% for WSJ,
   making it still useful as benchmark for editorial AI skepticism independent of ownership conflicts.
@@ -1322,6 +1403,22 @@ notes: |
   access deals and revolving door connections with no equity positions in Meta competitors, while
   Atlantic/Wired have direct equity investments ($16B Apple stock, $7B Reddit stake). Guardian's
   conflicts are structurally diffuse; Atlantic's and Wired's are structurally concentrated.
+
+  UPDATED (Jul 2, 2026 — morning):
+  Three new developments strengthen the Guardian's position in the AI content licensing ecosystem:
+  (1) ProRata scale upgrade: 500+ → 1,500+ media partners, $75M+ total funding, Gist Answers
+  reportedly profitable. ProRata is built on Meta's Llama — creating an unusual dependency chain
+  where Guardian revenue flows through Meta's open-source AI infrastructure.
+  (2) Cloudflare Sep 15, 2026 default block: Mixed-use AI crawlers blocked from ad-hosting pages
+  by default. Cloudflare (which acquired Mercuri's Human Native portfolio company Jan 2026)
+  is implementing infrastructure-level enforcement of the same search/AI separation principle
+  SPUR advocates and the CMA mandated. "Pay Per Use" replaces "Pay Per Crawl."
+  (3) The Guardian is now invested at every layer of the publisher-vs-AI-company enforcement
+  stack: policy (SPUR), tooling (Mercuri→Human Native), infrastructure (Cloudflare default
+  block), regulatory (CMA backing), and commercial (OpenAI + ProRata + Google pilot deals).
+  No other tracked publication has this depth of structural alignment.
+  Two new testable hypotheses added (#14: circular ecosystem incentive for aggressive AI coverage,
+  #15: ProRata-Llama paradox on open vs closed AI editorial blind spot).
 
 editorial_history:
   leadership_changes:
