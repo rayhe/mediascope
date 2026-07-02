@@ -4,6 +4,35 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-02 06:00 PT — Type B: Journalist Research — Paul Mozur Deep Profile Expansion
+
+### Focus
+Paul Mozur (NYT Global Technology Correspondent) identified as high-value profile with only 2 career entries despite being a Pulitzer-winning China/Asia tech reporter. Expanded to 5 career entries with full awards catalog and recent reporting.
+
+### Changes
+1. **`profiles/careers/journalists.yaml`** — Mozur profile expanded (+151 lines, -18 lines):
+   - **Pre-WSJ career discovered:** The Standard (Hong Kong, ~2007) and Far Eastern Economic Review (Dow Jones, ~2009) — sourced from USALI speaker bio listing "journalist in Asia since 2007"
+   - **Location corrected:** Seoul → Taipei (per Muck Rack profile)
+   - **Mandarin speaker** confirmed
+   - **Two-time Pulitzer finalist** (not just one as previously recorded)
+   - **Awards catalog added:** George Polk (2018), Gerald Loeb ×2 (2018, 2023), Pulitzer Public Service (2020, team)
+   - **2025-2026 reporting cataloged** from Muck Rack: DeepSeek, Geo Group immigration surveillance, Global AI Divide, data center crises (Mexico/Chile), Saudi Arabia AI, Nvidia/Megaspeed, UAE Sheikh Tahnoon
+   - **3 co-authors added:** Muyi Xiao, Emiliano Rodríguez Mega; Satariano co-author count updated from 4 to 8+
+
+2. **`profiles/careers/editorial_changes.yaml`** — Added Mozur 2022-10 promotion to Global Technology Correspondent under nytimes section
+
+### Sources
+- USALI speaker bio (usali.org): pre-WSJ career, "journalist in Asia since 2007"
+- Muck Rack profile: current location (Taipei), recent articles, co-authors
+- George Polk Awards 2018 list, Gerald Loeb finalists/winners, Pulitzer archive
+
+### Validation
+- Tests: 1169 passed, 2 xfailed, 0 failures
+- Journalist count: 117 (unchanged), multi-pub: 115 (unchanged)
+- Commit: `50df6b5`, pushed to `main`
+
+---
+
 ## 2026-07-02 01:00 PT — Type A: Article Deep Dive — WIRED "Cannes" Scale Magnitude Fix
 
 ### Focus
