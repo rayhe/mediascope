@@ -4750,9 +4750,12 @@ journalists:
   co_author_network:
   - name: Paul Mozur
     publication: nytimes
-    topics: AI weapons, surveillance tech, Telegram/Durov, Starlink/Russia
-    notes: Most frequent co-author. Mozur is Asia-based, Satariano London-based — together they cover global tech-geopolitics
-      intersection. At least 4 major co-authored pieces 2023-2024.
+    topics: AI weapons, surveillance tech, Telegram/Durov, Starlink/Russia, global AI divide, data center geopolitics, chip
+      smuggling
+    notes: Most frequent co-author. Mozur now Taipei-based, Satariano London-based — together they cover global tech-geopolitics
+      intersection. At least 8+ major co-authored pieces 2023-2026 including Global AI Divide (Jul 2025), data center water/power
+      crises abroad (Oct 2025), Ukraine AI drones (Jul 2024), Russia/Starlink (May 2024), Durov/Telegram (Aug 2024). Partnership
+      expanded from surveillance/warfare to AI infrastructure geopolitics in 2025.
     source_url: https://pfolio.com/profile/paul-mozur-and-adam-satariano/posts/
   - name: Ana Swanson
     publication: nytimes
@@ -6206,32 +6209,149 @@ journalists:
       block (Jul 2026).'
     source_url: https://blog.tipranks.com/europes-tensions-with-trump-ensnare-kyndryl-tech-deal-nyt-reports/
 - name: Paul Mozur
-  notes: NYT technology reporter, formerly Asia-based (now Seoul/global). Covers technology and geopolitics, especially China
-    tech, surveillance, AI weapons. Most frequent co-author with Adam Satariano — together they produce NYT's most impactful
-    tech-geopolitics investigations. Previously at Wall Street Journal. Won Pulitzer Prize finalist status for reporting on
-    China's mass surveillance of Uyghurs. Multi-pub journalist tracked for co-authoring pattern with Satariano and for independent
-    coverage of AI, surveillance, and authoritarian technology that shapes NYT's framing of tech-state power dynamics.
+  notes: 'NYT Global Technology Correspondent, now based in Taipei (relocated from Seoul ~2023-2024, previously expelled from
+    China in 2020). Mandarin speaker. Has worked as a journalist in Asia since 2007. Covers technology and geopolitics — surveillance,
+    AI weapons, chip smuggling, data center geopolitics, authoritarian tech. Most frequent co-author with Adam Satariano —
+    together they produce NYT''s most impactful tech-geopolitics investigations. Previously at Wall Street Journal, The Standard
+    (Hong Kong), and Far Eastern Economic Review. AWARDS: Two-time Pulitzer Prize finalist (2019 Xinjiang surveillance; second
+    unknown year/topic), part of team that won Pulitzer Prize for Public Service (2020, Covid China censorship), two Gerald
+    Loeb Awards (2018 Myanmar/Facebook disinformation; 2023 China propaganda/social media manipulation), George Polk Award
+    (2018 Myanmar coverage). Multi-pub journalist tracked for his authorship pattern with Satariano and for independent coverage
+    of AI, surveillance, chip export controls, and authoritarian technology that shapes NYT''s framing of tech-state power
+    dynamics. KEY MEDIASCOPE VALUE: Mozur''s career arc — Hong Kong tabloid → Dow Jones Asia business press → WSJ → NYT —
+    represents a migration through increasingly prestigious outlets, all Asia-focused, with growing institutional power behind
+    his tech-geopolitics framing.'
   career:
+  - event_type: hired
+    publication: the-standard-hk
+    role: reporter
+    beat: general news, technology
+    start: 2007-01
+    end: 2009-01
+    notes: 'Early career at The Standard, a free English-language newspaper in Hong Kong (owned by Sing Tao News Corporation).
+      One of his first journalism positions in Asia. The Standard''s tabloid-format, general-audience framing provided foundational
+      reporting experience in the Hong Kong media ecosystem. Began learning Mandarin and building Asia-based source networks
+      during this period.'
+    source_url: https://usali.org/institute-news/paul-mozur-josh-chin-journalists-in-the-crossfire
+  - event_type: hired
+    publication: far-eastern-economic-review
+    role: reporter
+    beat: business, technology, China
+    start: 2009-01
+    end: 2011-01
+    notes: 'Reporter at the Far Eastern Economic Review (FEER), a Dow Jones publication focused on Asia-Pacific business, economics,
+      and politics. FEER was historically the most prestigious English-language journal of record for Asian affairs (founded
+      1946, published by Dow Jones from 1987). The magazine shifted from weekly print to online-only in 2009. Working at a
+      Dow Jones property provided the pipeline to the Wall Street Journal. NOTE: FEER ceased publication in late 2009; Mozur
+      may have transitioned to WSJ before its closure or worked on the digital remnant. Exact transition dates unclear.'
+    source_url: https://usali.org/institute-news/paul-mozur-josh-chin-journalists-in-the-crossfire
   - event_type: hired
     publication: wall-street-journal
     role: reporter
-    beat: technology, China
+    beat: technology, China, mobile, Asia tech industry
     start: 2011-01
     end: 2014-01
-    notes: Technology reporter covering China and Asia tech industry at the Wall Street Journal.
-    source_url: https://pfolio.com/profile/paul-mozur-and-adam-satariano/posts/
+    notes: 'Technology reporter covering China and Asia tech industry at the Wall Street Journal, based in Beijing/Shanghai.
+      Covered China''s smartphone boom (Xiaomi product launches, Apple China Mobile deals, China Telecom), the tech industry''s
+      rapid growth in China, and the intersection of technology and commerce. Wrote for WSJ and AllThingsD (Dow Jones tech
+      vertical). This is the SECOND Dow Jones property in his career (after FEER), demonstrating deep Dow Jones pipeline.
+      Key WSJ reporting includes: Apple iPhone plans for China Mobile (Sep 2013, co-byline with Daisuke Wakabayashi, Lorraine
+      Luk, and Ian Sherr), Xiaomi launches (Sep 2013), China Telecom iPhone leaks (Sep 2013). The WSJ''s business-news institutional
+      norms shaped his approach to covering tech companies through a financial/market lens, which later combined with his
+      human-rights framing at the NYT.'
+    source_url: https://allthingsd.com/tag/china/
   - event_type: hired
     publication: nytimes
     role: technology_reporter
-    beat: technology, China, surveillance, AI weapons
+    beat: technology, China, surveillance, AI weapons, geopolitics
     start: 2014-01
-    notes: 'Technology reporter covering intersection of tech and geopolitics. Based in Asia (Shanghai, then Seoul after being
-      expelled from China). Extensive coverage of Chinese surveillance technology, AI in warfare (Ukraine), Starlink military
-      use. Key reporting: China''s mass surveillance of Uyghurs (Pulitzer finalist), AI-powered police surveillance in Middle
-      East (with Satariano), Ukraine AI drone weapons (with Satariano, Jul 2024 — field reporting from Kyiv and front lines),
-      Russia blocking Starlink (with Satariano, May 2024), Pavel Durov/Telegram profile (with Satariano, Aug 2024). The Mozur-Satariano
-      partnership is NYT''s primary engine for tech-geopolitics investigations.'
+    end: 2022-10
+    notes: 'Asia technology reporter based in Shanghai, then Hong Kong, then expelled from China in March 2020 alongside several
+      other NYT, WSJ, and WaPo journalists (part of Chinese government retaliation for Trump limiting Chinese state media
+      employees in US). Relocated to Taiwan, then Seoul. Featured on NYT''s "The Daily" podcast (Apr 16, 2020, "Kicked Out
+      of China" episode) about his expulsion and final story on Covid censorship. KEY REPORTING & AWARDS: (1) Myanmar military
+      disinformation on Facebook (2018) — part of package winning George Polk Award and Gerald Loeb Award. (2) Xinjiang mass
+      surveillance and internment of ethnic minorities (2019, with China team) — Pulitzer Prize finalist. (3) China''s censorship
+      of early Covid outbreak (2020) — part of package winning Pulitzer Prize for Public Service. (4) China''s propaganda
+      and social media manipulation (2022) — Gerald Loeb Award. (5) China surveillance state investigation with Muyi Xiao
+      (2022, NYT Visual Investigations) — analyzed cache of 100,000+ government bidding documents to reveal police automated
+      racial profiling in video surveillance, phone trackers, and mass DNA databases. OPC "How I Did It" program Nov 2022.
+      KEY MEDIASCOPE VALUE: Mozur''s Facebook/Myanmar coverage (2018) is a foundational piece in anti-Meta coverage genealogy
+      — it was among the earliest high-impact investigations into how Facebook''s platform enabled real-world violence in
+      a developing country. His surveillance reporting naturally frames tech companies as enablers of authoritarian power.'
+    source_url: https://www.editorandpublisher.com/stories/new-role-for-paul-mozur-at-the-new-york-times,241625
+  - event_type: promoted
+    publication: nytimes
+    role: global_technology_correspondent
+    beat: technology, geopolitics, AI, surveillance, data centers, chip export controls
+    start: 2022-10
+    notes: 'Promoted to Global Technology Correspondent (announced Oct 2022 by business editor Ellen Pollock and tech editor
+      Pui-Wing Tam). New mandate: "exploring the anti-democratic powers of tech, the emerging geopolitical competition over
+      its development and how tech is changing the world far from Silicon Valley." Now based in TAIPEI (relocated from Seoul
+      ~2023-2024, per Muck Rack profile as of late 2025). Works across desks, spearheads multi-disciplinary investigations.
+      KEY 2025-2026 REPORTING: (1) Geo Group immigration surveillance tech enabling Trump deportation operations (Apr 2025
+      — apps, ankle monitors, facial recognition, phone-breaking tools). (2) DeepSeek hedge fund origin investigation (Jan
+      2025 — early comprehensive profile of DeepSeek founder Liang Wenfeng and the AI startup''s finance roots). (3) "A.I.
+      Computing Power Is Splitting the World Into Haves and Have-Nots" / "The Global A.I. Divide" (Jul 2025, with Satariano
+      — only 32 nations have AI-specialized data centers, Oxford data). (4) Data centers causing water/power crises abroad
+      in Mexico/Chile/Ireland (Oct 2025, with Satariano + Emiliano Rodríguez Mega — Microsoft Querétaro data center causing
+      blackouts and water outages). (5) Saudi Arabia AI data center geopolitics — $5B Red Sea data center caught between
+      US and Chinese tech giants (2025-2026). (6) Nvidia/Megaspeed Singapore company under US scrutiny for China ties —
+      executive Alice Huang (Huang Le) socialized with Jensen Huang, company poised to buy $2B of Nvidia AI tech (2026).
+      (7) UAE Sheikh Tahnoon bin Zayed Al Nahyan investigation — $1.5T sovereign wealth controller''s tech alliance with
+      Trump envoy Steve Witkoff (2026). The Mozur-Satariano partnership remains NYT''s primary engine for tech-geopolitics
+      investigations, now expanded to include global AI infrastructure and chip smuggling.'
+    source_url: https://nytco.com/press/new-role-for-paul-mozur/
+  co_authors:
+  - name: Adam Satariano
+    publication: nytimes
+    topics: AI weapons, surveillance tech, Telegram/Durov, Starlink/Russia, global AI divide, data center geopolitics
+    notes: 'Most frequent co-author. Mozur now Taipei-based, Satariano London-based — together they cover global tech-geopolitics
+      intersection. At least 8+ major co-authored pieces 2023-2026. KEY PIECES: Ukraine AI drone weapons (Jul 2024), Russia
+      blocking Starlink (May 2024), Pavel Durov/Telegram profile (Aug 2024), Global AI Divide (Jul 2025), data centers abroad
+      water/power crisis (Oct 2025). The partnership is expanding from surveillance/warfare to AI infrastructure geopolitics.'
     source_url: https://pfolio.com/profile/paul-mozur-and-adam-satariano/posts/
+  - name: Muyi Xiao
+    publication: nytimes
+    topics: China surveillance, government bidding documents, visual investigations
+    notes: NYT Visual Investigations team reporter/producer. Co-authored the 2022 China surveillance state investigation analyzing
+      100,000+ government bidding documents. Xiao's visual forensics expertise combined with Mozur's Asia source network.
+    source_url: https://opcofamerica.org/Ede4_PMozur-MXiao-China-Surveillance
+  - name: Emiliano Rodríguez Mega
+    publication: nytimes
+    topics: data centers, Latin America, environmental impact
+    notes: Co-authored Oct 2025 investigation into data center water/power impacts in Mexico and Chile. Rodríguez Mega brought
+      local Latin American reporting to pair with Mozur-Satariano's global infrastructure beat.
+    source_url: https://muckrack.com/paul-mozur/articles
+  - name: Ana Swanson
+    publication: nytimes
+    topics: trade policy, chip export controls, US-EU tech tensions
+    notes: Trade policy reporter. Co-authored Kyndryl/Solvinity piece (Jul 2026). Partnership pairs Satariano's EU tech regulatory
+      knowledge with Swanson's trade policy expertise.
+    source_url: https://blog.tipranks.com/europes-tensions-with-trump-ensnare-kyndryl-tech-deal-nyt-reports/
+  - name: Mike Isaac
+    publication: nytimes
+    topics: Meta, Facebook internal affairs
+    notes: Occasional co-author on Meta-specific stories. Isaac is NYT's primary Meta beat reporter based in SF.
+  framing_analysis:
+    career_pattern: 'Mozur''s career is entirely Asia-rooted: Hong Kong tabloid (The Standard) → Dow Jones Asia business journal
+      (FEER) → WSJ Asia tech → NYT Asia tech → NYT Global tech. This unbroken Asia immersion since 2007 gives him exceptionally
+      deep source networks in China, SE Asia, and the Middle East. His Mandarin fluency and lived experience (Shanghai resident
+      expelled by CCP) make him one of few Western reporters who can work primary Chinese-language sources, government procurement
+      databases, and surveillance company documentation directly. This ground-truth access is why his surveillance coverage
+      has such high evidentiary density — he builds from documents, not secondhand claims.'
+    meta_coverage_pattern: 'Mozur''s Facebook/Myanmar reporting (2018) was foundational in establishing the "platform as enabler
+      of violence" narrative that subsequent anti-Meta coverage builds upon. That said, Mozur is NOT a Meta beat reporter —
+      he covers tech-state dynamics where Meta/Facebook intersects with authoritarian abuse. His framing is about the POWER
+      DYNAMICS between tech platforms and states, not about any single company. When he covers Meta, it''s through the lens
+      of real-world harm (Myanmar genocide, China propaganda campaigns on Facebook) rather than corporate criticism. His coverage
+      is high-evidence, primary-source driven, and less editorialized than typical anti-Meta reporting.'
+    beat_expansion_2025_2026: 'Significant beat expansion from surveillance/warfare to global AI infrastructure geopolitics:
+      chip smuggling enforcement (Nvidia/Megaspeed, Super Micro), data center environmental impact (water/power in Mexico,
+      Chile, Ireland), sovereign AI ambitions (Saudi Arabia, UAE), and the global AI compute divide. The Mozur-Satariano
+      partnership has evolved from "tech enables authoritarianism" (2018-2023) to "AI infrastructure IS geopolitics" (2024-2026).
+      This shift positions Mozur at the center of NYT''s coverage of the chip war, data center backlash, and AI sovereignty
+      debates.'
 - career:
   - beat: technology, social media
     event_type: hired
