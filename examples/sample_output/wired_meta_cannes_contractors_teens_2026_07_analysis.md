@@ -60,44 +60,47 @@ tone undercounts the article's actual impact.
 framing correction, indicating the emotional language intensity and framing
 devices pushed the score more negative — correct direction, but not far enough.
 
-### 3. Framing Devices Detected (9 total)
+### 3. Framing Devices Detected (16 total)
 
 | # | Device Type | Evidence | Assessment |
 |---|-------------|----------|------------|
-| 1 | loaded_language | "Posed as" (headline) | ✅ Correct — new deception/impersonation pattern |
+| 1 | loaded_language | "Posed as" (headline) | ✅ Correct — deception/impersonation pattern |
 | 2 | loaded_language | "pose as" (body) | ✅ Correct — same pattern, different inflection |
 | 3 | loaded_language | "posing as" (body) | ✅ Correct — same pattern, third instance |
-| 4 | self_referential_investigation | "reviewed by WIRED" (¶4) | ✅ Correct — WIRED citing its own document review |
-| 5 | self_referential_investigation | "reviewed by WIRED" (¶12) | ✅ Correct — second instance |
-| 6 | ironic_quotation | "normal." (¶7) | ✅ Correct — quoting contractor prompt about cannibalism fantasies |
-| 7 | ironic_quotation | "get a cocaine." (¶8) | ✅ Correct — quoting absurd/infantile phrasing |
-| 8 | ironic_quotation | "comprehensive AI safety benchmarking" (¶11) | ✅ Correct — Covalen's euphemistic self-description |
-| 9 | refusal_amplification | "did not respond" (¶12) | ✅ Correct — Covalen's no-comment |
+| 4 | loaded_language | "posed as teens" (body) | ✅ Correct — fourth impersonation instance |
+| 5 | outsourced_intensity | Catalog of disturbing prompts (¶5–8) | ✅ Correct — journalist lets prompt examples carry emotional weight |
+| 6 | outsourced_intensity | Suicide/self-harm prompt examples (¶6) | ✅ Correct — catalog-style enumeration |
+| 7 | outsourced_intensity | Drug/sex prompt examples (¶7–8) | ✅ Correct — systematic disturbing content relay |
+| 8 | outsourced_intensity | Pregnancy/neighbor prompt (¶8) | ✅ Correct — devastating example presented without editorializing |
+| 9 | self_referential_investigation | "reviewed by WIRED" (¶4) | ✅ Correct — WIRED citing its own document review |
+| 10 | self_referential_investigation | "reviewed by WIRED" (¶12) | ✅ Correct — second instance |
+| 11 | ironic_quotation | "normal." (¶7) | ✅ Correct — quoting contractor prompt about cannibalism fantasies |
+| 12 | ironic_quotation | "get a cocaine." (¶8) | ✅ Correct — quoting absurd/infantile phrasing |
+| 13 | ironic_quotation | "comprehensive AI safety benchmarking" (¶11) | ✅ Correct — Covalen's euphemistic self-description |
+| 14 | delayed_defense | Meta's response at ~71% mark (¶10–11) | ✅ Correct — defense buried after damage is done |
+| 15 | industry_normalization_undercut | "not, by itself, unusual ... But Cannes struck contractors as an odd way" | ✅ Correct — cross-sentence normalization then undercut |
+| 16 | refusal_amplification | "did not respond" (¶12) | ✅ Correct — Covalen's no-comment |
 
-**Pre-fix comparison:** Before the deception/impersonation pattern was added,
-"Posed as" / "pose as" / "posing as" were invisible. The article's central
-framing device — impersonation — was missed entirely. With the fix, these are
-the first three detections, correctly capturing the article's core frame.
+**Iteration history:** Original analysis (pre-fix) detected 6 devices, missing
+impersonation/deception framing entirely. After loaded_language patterns were
+added: 9 devices. After outsourced_intensity catalog detection, delayed_defense
+structural detection, and cross-sentence industry_normalization_undercut: 16
+devices. Each addition addresses a genuine gap — no false positives introduced.
 
-**No false positives.** All 9 detections are real framing devices. The
+**No false positives.** All 16 detections are real framing devices. The
 catastrophizing "death of Jamey Rodemeyer" fix correctly prevents a false
 positive — this is a literal death reference (bisexual teenager who died by
 suicide), not metaphorical catastrophizing.
 
 **Devices NOT detected (manual assessment):**
 
-- **OUTSOURCED_INTENSITY** (multiple): The journalist lets the prompt examples
-  carry the emotional weight without editorializing. "A 13-year-old who said she
-  had become pregnant by her adult neighbor" is devastating but the journalist
-  is just describing what was in the spreadsheet. This is outsourced intensity
-  by catalog.
 - **SCALE_MAGNITUDE**: "45,000 prompts," "3,748 prompts," "at least 239" — the
   numbers establish scale. Current patterns may not detect these.
-- **DELAYED_DEFENSE**: Meta's response appears at paragraph 10 of ~14. The
-  defense is structurally buried under the prompt catalog.
-- **INDUSTRY_NORMALIZATION_UNDERCUT**: Paragraph 13 introduces Scale AI /
-  Business Insider precedent to suggest industry-wide practice, but the
-  preceding 12 paragraphs make the "it's normal" frame feel like a dodge.
+
+**Previously undetected, now fixed:** OUTSOURCED_INTENSITY (catalog pattern),
+DELAYED_DEFENSE (structural 71% threshold), and INDUSTRY_NORMALIZATION_UNDERCUT
+(cross-sentence "not unusual ... But odd" variant) are all now detected as of
+this iteration.
 
 ### 4. Entity Extraction
 

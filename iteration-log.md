@@ -4,6 +4,38 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-01 21:00 PT — Type A: Article Deep Dive — Wired "Cannes" Contractors Teens Story
+
+### Focus
+Deep analysis of WIRED's "Meta Contractors Posed as Teens to Prompt Rival Chatbots About Suicide, Sex, and Drugs" (2026-06-28). Extended toolkit to detect cross-sentence industry_normalization_undercut patterns and fixed a stem-matching bug in the negative-word alternation of framing device patterns.
+
+### Findings
+
+**1. Cross-sentence industry_normalization_undercut gap (Pattern 5)**
+The Cannes article contains: "Testing competitors' products is not, by itself, unusual in the artificial intelligence industry. ... But Cannes struck contractors as an odd way for a trillion-dollar company..." — normalization in one sentence, undercut starting the next. Existing patterns used `[^.]{0,N}?` guards that can't cross sentence boundaries. Added Pattern 5 using `.{0,300}?` with DOTALL to bridge the period boundary, requiring "But/Yet/However" after sentence-ending punctuation.
+
+**2. Stem-matching `\b` bug in negative-word alternation (Pattern 4 & 5)**
+Root cause of test failures: prefix stems like `troubl` and `concern` were followed by a trailing `\b` word boundary, preventing matches on inflected forms ("troubling", "concerning", "alarming"). `\btroubl\b` fails on "troubling" because there's no word boundary between "l" and "i". Fixed by changing to `troubl\w*`, `concern\w*`, `alarm\w*`, `question\w*` — the `\w*` consumes the suffix, then `\b` asserts correctly at the word end.
+
+**3. Same-sentence normalization undercut (Pattern 6)**
+Added catch-all for "not unusual/uncommon" within a single sentence followed by "but" + scale/scope qualifier, extending coverage beyond the existing "not uncommon" patterns to include "unusual" and "unheard of".
+
+### Changes
+- `mediascope/analyze/framing.py`: Added 2 new patterns (307 total), fixed `\b` stem bug in Patterns 4 & 5
+- `tests/test_cannes_contractors.py`: Added `TestCrossSentenceNormalizationUndercut` class (5 tests)
+- `tests/test_structural_consistency.py`: Updated EXPECTED_TOTAL_PATTERNS 305→307
+- `examples/sample_output/wired_meta_cannes_contractors_teens_2026_07_analysis.md`: Updated from 9→16 devices
+- `README.md`: Updated test counts (1171, 32 for cannes_contractors file)
+- `docs/ARCHITECTURE.md`: Updated test count header (1171), pattern count (307)
+
+### Stats After
+- Tests: 1171 (1169 passed, 2 xfailed), 44 files
+- Patterns: 307
+- Cannes article devices: 16 (was 9 before this iteration)
+- Journalists: 110, Multi-pub: 108
+
+---
+
 ## 2026-07-01 18:00 PT — Type D: Toolkit Quality — Cross-Document Journalist Count Consistency Audit + Guards
 
 ### Focus

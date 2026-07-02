@@ -4433,8 +4433,44 @@ _INDUSTRY_NORMALIZATION_UNDERCUT_PATTERNS: list[re.Pattern] = [
         r"\bits?\s+(?:scale|scope|approach|reliance|dependence|"
         r"involvement|track record|handling)\b"
         r"[^.]{0,60}?"
-        r"\b(?:raises?|troubl|alarm|concern|question|problematic|"
+        r"\b(?:raises?|troubl\w*|alarm\w*|concern\w*|question\w*|problematic|"
         r"unprecedented|extraordinary|extreme)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # --- Cross-sentence normalization undercut ---
+    # Catches the pattern where normalization ("not unusual", "not uncommon",
+    # "industry-standard", etc.) appears in one sentence, and the undercut
+    # ("But ..." + negative characterization) starts the next sentence.
+    # Discovered via the Wired Cannes/contractors/teens article (2026-07):
+    #   "Testing competitors' products is not, by itself, unusual in the
+    #    artificial intelligence industry. ... But Cannes struck contractors
+    #    as an odd way for a trillion-dollar company..."
+    # The `[^.]{0,N}` guards in earlier patterns can't cross the period
+    # boundary, so this variant uses `.{0,N}` with DOTALL and requires
+    # the "But" (or "Yet"/"However") to follow a sentence-ending period.
+    re.compile(
+        r"\b(?:is|are|was|were)\s+not[\s,]+(?:by itself[\s,]+)?"
+        r"(?:unusual|uncommon|unique|unknown|unheard[\s-]of|unprecedented|"
+        r"out of the ordinary)\b"
+        r".{0,300}?"
+        r"(?:\.|\?|!)\s+"
+        r"(?:But|Yet|However|Still|Nonetheless|Nevertheless)\s+"
+        r"[^.]{0,200}?"
+        r"\b(?:odd|strange|unusual|questionable|troubl\w*|concern\w*|"
+        r"rais(?:es?|ing) questions?|crude|extreme|problematic|"
+        r"alarming|striking|remarkable|striking|eyebrow|"
+        r"unprecedented|extraordinary|excessive)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "not unusual/uncommon" within same sentence + "but" qualifier
+    # (extends existing patterns to cover "unusual" alongside "uncommon")
+    re.compile(
+        r"\b(?:not\s+(?:unusual|uncommon|unheard[\s-]of))\b"
+        r"[^.]{0,100}?"
+        r"\b(?:but|yet|however|though|although|still|nonetheless)\b"
+        r"[^.]{0,80}?"
+        r"\b(?:scale|scope|extent|degree|magnitude|"
+        r"especially|particularly|uniquely|notably)\b",
         re.IGNORECASE | re.DOTALL,
     ),
 ]

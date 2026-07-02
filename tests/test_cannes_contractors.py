@@ -262,3 +262,96 @@ class TestHeadlineTopicBoosting:
         body = "Meta released a new virtual reality headset at the conference."
         result = classify_topic(body)
         assert len(result) > 0, "classify_topic should return results without headline"
+
+
+
+class TestCrossSentenceNormalizationUndercut:
+    """Cross-sentence industry_normalization_undercut detection.
+
+    Added 2026-07-01 after analysis of the Wired Cannes contractors article
+    revealed the pattern "is not, by itself, unusual ... But Cannes struck
+    contractors as an odd way" was not detected because the normalization
+    and undercut span different sentences.
+    """
+
+    def test_cannes_not_unusual_but_odd(self):
+        """The Cannes article's exact cross-sentence normalization undercut."""
+        text = (
+            "Testing competitors' products is not, by itself, unusual in "
+            "the artificial intelligence industry. Business Insider reported "
+            "last year that Scale AI contractors working on Google's Bard "
+            "compared the chatbot's responses with ChatGPT outputs and rewrote "
+            "answers to match or beat them. But Cannes struck contractors as "
+            "an odd way for a trillion-dollar company to probe its competitors."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "industry_normalization_undercut" in types, (
+            f"Expected industry_normalization_undercut, got: {types}"
+        )
+
+    def test_not_unusual_but_troubling(self):
+        """Generic 'not unusual ... But ... troubling' cross-sentence pattern."""
+        text = (
+            "Data collection at this scale is not unusual among tech companies. "
+            "But the extent of the program was troubling to privacy advocates."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "industry_normalization_undercut" in types, (
+            f"Expected industry_normalization_undercut, got: {types}"
+        )
+
+    def test_not_uncommon_yet_raises_questions(self):
+        """'not uncommon ... Yet ... raising questions' cross-sentence."""
+        text = (
+            "Employee monitoring is not uncommon in the tech industry. "
+            "Yet the program's scope raises questions about worker privacy."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "industry_normalization_undercut" in types, (
+            f"Expected industry_normalization_undercut, got: {types}"
+        )
+
+    def test_no_false_positive_normal_usage(self):
+        """'not unusual' without a 'But' undercut should NOT fire."""
+        text = (
+            "Data collection at this scale is not unusual among tech companies. "
+            "The companies have invested heavily in privacy protections."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "industry_normalization_undercut" not in types, (
+            f"False positive: industry_normalization_undercut should not fire "
+            f"without a 'But' undercut sentence. Got: {types}"
+        )
+
+    def test_full_cannes_article(self):
+        """Full Cannes article produces industry_normalization_undercut."""
+        import os
+        article_path = os.path.join(
+            os.path.dirname(os.path.dirname(__file__)),
+            "examples", "sample_output",
+            "wired_meta_cannes_contractors_teens_2026_07_article.txt",
+        )
+        if not os.path.exists(article_path):
+            pytest.skip("Cannes article text not found")
+        text = open(article_path).read()
+        devices = detect_framing_devices(text, source_publication="wired")
+        types = [d.device_type for d in devices]
+        assert "industry_normalization_undercut" in types, (
+            f"Full Cannes article should detect industry_normalization_undercut. "
+            f"Types found: {types}"
+        )
+        # Should also have these other devices from the analysis
+        assert "delayed_defense" in types
+        assert "outsourced_intensity" in types
+        assert "loaded_language" in types
+        assert "self_referential_investigation" in types
+        assert "ironic_quotation" in types
+        assert "refusal_amplification" in types
+        # Total should be at least 16 (was 15 before this fix)
+        assert len(devices) >= 16, (
+            f"Expected at least 16 framing devices, got {len(devices)}"
+        )
