@@ -3,6 +3,101 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-02 09:00 PT — Type A: Article Deep Dive — Gizmodo "Meta Is Slapping Subscriptions on Its Smart Glasses"
+
+### Focus
+Analyzed a short (~350-word) sarcastic Gizmodo opinion piece about Meta paywalling AI glasses features behind Meta One Premium subscriptions. Exposed a major gap: VADER scored the article +0.65 (strongly positive) despite clearly negative editorial stance, because sarcastic short editorials use rhetorical devices that lexical models misread.
+
+### Article
+- **Source:** Gizmodo, July 1, 2026
+- **Title:** "Meta Is Slapping Subscriptions on Its Smart Glasses"
+- **Type:** Short sarcastic opinion piece with heavy editorial asides
+
+### Changes
+1. **Emotional language list** (`sentiment.py`): +43 consumer-product editorial terms (hate/hated/hatred, slapping/slapped, paywall/paywalled, gouge/gouging, nickel-and-dime, cash grab, subscription fatigue/hell, rate-limited, etc.). Total: 692 → 735 terms.
+
+2. **Topic buckets** (`topics.py`): +2 new topics:
+   - `subscription_monetization` (50 keywords)
+   - `hardware_wearables` (36 keywords)
+   - Total: 23 → 25 topics.
+
+3. **Framing device types** (`framing.py`): +2 pattern-based types:
+   - `assumed_consensus` (3 patterns): "People hate X", "Everyone knows", etc.
+   - `editorial_aside` (4 patterns): "brace yourself", "let's be honest", "something tells me", etc.
+   - Both added to `_ADVERSARIAL_DEVICE_TYPES`.
+   - Total: 51 → 53 device types, 310 → 317 patterns.
+
+4. **Correction Path H** (`sentiment.py`): New "Sarcastic Short Editorial" path:
+   - Triggers: raw_tone ≥ 0.3, agency ≥ −0.1, ≥2 editorial_aside, ≥4 adversarial, EI ≥ 0.5
+   - Blend: 15% raw + 85% target (target = -(0.30 + 0.20 × sarcasm_density + 0.10 × EI))
+   - Distinct from Path D (sardonic: needs ≥7 loaded_language, agency ≥ 0.3)
+   - Evaluation order: A → B → C → E → D → F → H
+
+5. **Documentation**: All 5 doc files updated (METHODOLOGY.md, ARCHITECTURE.md, AGENT_GUIDE.md, QUALITY_STANDARDS.md, README.md) — device counts, pattern counts, topic counts, Path H sections/tables/diagrams, adversarial device lists.
+
+6. **Tests**: Updated test_arena_cross_analysis.py (EI threshold 0.2→0.35), test_nyt_ai_reviews.py (pattern count, expected types), test_structural_consistency.py (all count guards, path set A–H, regex ranges). All 1172 tests pass + 2 xfailed.
+
+### Results
+| Metric | Before | After |
+|---|---|---|
+| overall_tone | +0.6527 | **-0.3781** |
+| emotional_intensity | 0.0 | **1.0** |
+| Topics detected | product_launch only | subscription_monetization (0.99), hardware_wearables (0.87) |
+| Framing devices | 3 | **7** (assumed_consensus, loaded_language, ironic_quotation, editorial_aside ×3, analogy_metaphor) |
+| Correction path | None | **Path H** |
+
+### Remaining Gaps
+- Entity extraction shallow (only Meta/Gizmodo; misses product names, feature names, subscription tiers)
+- "pay-until-you-die" not caught as loaded_language
+- Headline "Slapping" not surfaced as violent-verb framing
+- Agency reads 0.0 despite clear Meta-as-aggressor framing
+
+### Analysis File
+`examples/sample_output/gizmodo_meta_glasses_subscriptions_2026_07_01_analysis.md`
+
+---
+
+
+## 2026-07-02 08:00 PT — Type D: Toolkit Quality & Documentation — Stale Count Fix + Migration/Publication Floor Guards
+
+### Focus
+Documentation audit uncovered stale statistics in the README careers_demo table row (still referencing "115 journalists, 290 auto-detected migrations" when actual counts had grown to 117 and 355) and understated publication floor ("170+" when 219 unique slugs exist). The root cause was a gap in structural consistency guards — the existing `test_careers_demo_count_in_readme_table` only checked for the journalist count *anywhere* in the README, which passed because "117 journalists" appeared in the main description paragraph, while the careers_demo table row's separate stale "115" was unguarded.
+
+### Changes
+1. **`README.md`** — 4 fixes:
+   - Careers demo table row: "115 journalists, 290 auto-detected migrations" → "117 journalists, 355 auto-detected migrations"
+   - Publication count floor: "170+ publications" → "210+ publications" (219 actual unique slugs)
+   - Total test count header: 1171 → 1174
+   - test_structural_consistency.py row: 68 → 71 tests, description updated to include migration/publication guards
+
+2. **`docs/EDITORIAL_HISTORIES.md`** — Publication count floor: "170+ publications" → "210+ publications"
+
+3. **`docs/ARCHITECTURE.md`** — 2 fixes:
+   - Total test count in file tree: 1171 → 1174
+   - test_structural_consistency.py description updated to include new guard categories
+
+4. **`tests/test_structural_consistency.py`** — 3 new test guards (+76 lines):
+   - `test_readme_careers_demo_migration_count`: Validates README careers_demo table row references the actual `CareerTracker.find_migrations()` count. Prevents the stale-290-while-actual-355 gap
+   - `test_readme_publication_count_floor`: Validates README "across N+ publications" floor stays within 20 of actual unique publication slug count from YAML (currently 219)
+   - `test_editorial_histories_publication_count_floor`: Same floor guard for EDITORIAL_HISTORIES.md
+   - Helper methods: `_compute_migration_count()` (loads CareerTracker and counts migrations) and `_compute_publication_slug_count()` (counts unique slugs from YAML directly)
+
+### Root Cause Analysis
+The stale "115 journalists, 290 migrations" in the careers_demo table row survived because:
+- The `test_careers_demo_count_in_readme_table` test checked `f"{total} journalists" in doc` where `doc` is the entire README
+- Since "117 journalists" appeared in the bold description paragraph (line 61), the test passed even though the table row on line 314 still said "115"
+- No test guarded the migration count at all — it was a free-text number with no consistency enforcement
+
+The new guards fix this by:
+- Checking migration count via CareerTracker.find_migrations() against the README table row specifically
+- Checking publication count floors with ≤20 tolerance window so they stay reasonably current without requiring exact matches (publication counts change more frequently than journalist counts)
+
+### Validation
+- Tests: 1174 total (1172 passed, 2 xfailed, 0 failures)
+- All 71 structural consistency tests pass
+- Commit: `59e90bb`, pushed to `main`
+
+---
 
 ## 2026-07-02 07:00 PT — Type C: Ownership & Funding Deep Dive — Guardian ProRata Scale, Cloudflare Crawler Block, Circular Ecosystem
 
@@ -10514,4 +10609,3 @@ Guardian underrepresented at 18 journalists vs Wired (54) and NYT (30). Added 2 
 - Guardian editorial changes: 18 → 19
 - Tests: 1169 passed, 2 xfailed (0 failures)
 - Commit: `4e37687`
-

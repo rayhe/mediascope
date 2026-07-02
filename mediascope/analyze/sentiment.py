@@ -508,6 +508,30 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "posed as", "posing as", "impersonating", "masquerading",
     "dummy accounts", "fake accounts", "bogus accounts",
     "probe", "probing", "bombard", "bombarded", "bombarding",
+    # Consumer-product editorial / subscription-backlash emotional terms —
+    # needed for coverage of product paywalling, monetization decisions,
+    # and consumer-hostile business practices where casual editorial
+    # language (colloquial verbs, pejorative nouns) carries strong
+    # negative editorial weight but VADER treats as neutral.
+    # Gap discovered during Gizmodo Meta glasses subscription analysis
+    # (Jul 2026): emotional_intensity returned 0.0 on an article using
+    # "hate", "grievances", "slapping", "paywalls", "brace yourself".
+    "hate", "hated", "hatred", "hating",
+    "grievance", "grievances",
+    "slapping", "slapped", "slaps",
+    "paywall", "paywalls", "paywalled", "paywalling",
+    "gouge", "gouging", "gouged",
+    "nickel-and-dime", "nickel-and-diming", "nickeled and dimed",
+    "cash grab", "money grab", "cash cow",
+    "brace yourself", "brace yourselves",
+    "not the best look", "bad look", "bad optics",
+    "weird", "weirder", "weirdest",
+    "strange choice", "odd choice", "bizarre choice",
+    "something tells me",
+    "won't do wonders", "does nothing",
+    "pay-until-you-die", "pay until you die",
+    "subscription fatigue", "subscription hell",
+    "rate-limited", "rate limited", "rate limits",
 ]
 
 # Passive/victim vs. active/powerful framing indicators
@@ -1129,6 +1153,17 @@ _ADVERSARIAL_DEVICE_TYPES: set[str] = {
     # warfare, mass surveillance).  Detected in MIT TR Anduril/Meta smart
     # glasses warfare article where VADER scored +0.64 vs manual -0.10.
     "military_techno_optimism",
+    # Assumed consensus treats a contested claim as self-evident, skipping
+    # the burden of proof.  "People hate X" positions the audience as
+    # already aligned with the author before presenting evidence.
+    # Detected in Gizmodo glasses subscription article (Jul 2026).
+    "assumed_consensus",
+    # Editorial aside breaks journalistic register to address the reader
+    # directly with sarcastic or solidarity-building interjections that
+    # frame the subject as deserving scrutiny ("brace yourself", "let's
+    # be honest here", "something tells me").
+    # Detected in Gizmodo glasses subscription article (Jul 2026).
+    "editorial_aside",
 }
 
 # Anchor device types that create negative reader takeaway even when
@@ -1449,6 +1484,47 @@ def _compute_framing_correction(
         review_tone = -(0.25 + 0.15 * density_factor + 0.10 * emotional_intensity)
         corrected = 0.20 * raw_tone + 0.80 * review_tone
         corrected = max(-0.6, min(0.0, round(corrected, 4)))
+        return corrected, True
+
+    # --- Path H: Sarcastic short editorial ---
+    # Short opinion pieces (typically <500 words) where the editorial voice
+    # is sarcastic/dismissive but the article describes the subject with
+    # neutral agency (the company IS doing things, just doing them badly).
+    # VADER reads the active language as positive while missing the sarcastic
+    # register.  Key distinguishing signals: editorial_aside devices (direct
+    # reader address like "brace yourself", "let's be honest"), assumed
+    # consensus ("People hate"), and high emotional intensity from consumer-
+    # frustration vocabulary.
+    #
+    # Unlike Path D (sardonic/mocking) which requires high loaded_language
+    # count and strongly positive agency (>0.3), this path fires on articles
+    # with fewer total devices but concentrated sarcastic indicators.
+    # Unlike Path A which requires negative agency, this handles neutral
+    # agency (0.0) where the company is described as actively doing things
+    # but the editorial stance is clearly negative through register-breaking.
+    #
+    # Discovered in Gizmodo Meta glasses subscription article (Jul 2026):
+    # VADER scored +0.65 on a clearly negative short editorial with "People
+    # hate", "brace yourself", "let's be honest", "something tells me".
+    # Agency = 0.0, adversarial count = 5 (editorial_aside×3,
+    # assumed_consensus×1, loaded_language×1), emotional_intensity = 1.0.
+    _SARCASTIC_MIN_ASIDE = 2   # at least 2 editorial asides
+    _SARCASTIC_MIN_ADVERSARIAL = 4  # modest adversarial threshold
+    aside_count = framing_summary.get("editorial_aside", 0)
+    consensus_count = framing_summary.get("assumed_consensus", 0)
+    if (
+        raw_tone >= 0.3
+        and aside_count >= _SARCASTIC_MIN_ASIDE
+        and adversarial_count >= _SARCASTIC_MIN_ADVERSARIAL
+        and emotional_intensity >= 0.5
+        and agency >= -0.1  # neutral to slightly positive agency
+    ):
+        # The article IS negative despite neutral agency.  Blend toward
+        # a negative tone, weighted by the density of sarcastic indicators.
+        sarcasm_density = min((aside_count + consensus_count) / 5.0, 1.0)
+        target_tone = -(0.30 + 0.20 * sarcasm_density + 0.10 * emotional_intensity)
+        corrected = 0.15 * raw_tone + 0.85 * target_tone
+        corrected = max(-0.7, min(0.0, round(corrected, 4)))
         return corrected, True
 
     return raw_tone, False

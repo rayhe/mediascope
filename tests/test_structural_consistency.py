@@ -51,8 +51,8 @@ class TestFramingDeviceTypeCount:
     """
 
     # --- Update ONLY this constant when adding new device types ---
-    EXPECTED_TOTAL = 51
-    EXPECTED_PATTERN_MATCHED = 45  # core + extended (in _DEVICE_PATTERNS)
+    EXPECTED_TOTAL = 53
+    EXPECTED_PATTERN_MATCHED = 47  # core + extended (in _DEVICE_PATTERNS)
     EXPECTED_STRUCTURAL = {"kicker_framing", "analogy_stacking",
                            "speculative_framing", "trend_bundling",
                            "social_proof_amplification",
@@ -206,10 +206,10 @@ class TestTopicBucketConsistency:
     """Guard: topic bucket counts match across code and docs."""
 
     def test_topic_count_in_code(self):
-        """Code should define exactly 23 topic buckets."""
+        """Code should define exactly 25 topic buckets."""
         from mediascope.analyze.topics import TOPIC_KEYWORDS
-        assert len(TOPIC_KEYWORDS) == 23, (
-            f"Expected 23 topic buckets, got {len(TOPIC_KEYWORDS)}.\n"
+        assert len(TOPIC_KEYWORDS) == 25, (
+            f"Expected 25 topic buckets, got {len(TOPIC_KEYWORDS)}.\n"
             f"Buckets: {sorted(TOPIC_KEYWORDS.keys())}\n"
             "If you added a new topic, update this test AND the docs:\n"
             "  - docs/METHODOLOGY.md §3.1 topic count and table\n"
@@ -218,23 +218,23 @@ class TestTopicBucketConsistency:
         )
 
     def test_methodology_topic_count(self):
-        """METHODOLOGY.md must say 23 topic buckets."""
+        """METHODOLOGY.md must say 25 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
-        assert "23 topic buckets" in doc, (
+        assert "25 topic buckets" in doc, (
             "METHODOLOGY.md topic count is stale. Should be 17."
         )
 
     def test_agent_guide_topic_count(self):
-        """AGENT_GUIDE.md must list 23 topic buckets."""
+        """AGENT_GUIDE.md must list 25 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
-        assert "23 topic buckets" in doc, (
+        assert "25 topic buckets" in doc, (
             "AGENT_GUIDE.md topic count is stale. Should be 17."
         )
 
     def test_architecture_topic_count(self):
-        """ARCHITECTURE.md must say 23 topic buckets."""
+        """ARCHITECTURE.md must say 25 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
-        assert "23 topic buckets" in doc, (
+        assert "25 topic buckets" in doc, (
             "ARCHITECTURE.md topic count is stale. Should be 17."
         )
 
@@ -302,7 +302,7 @@ class TestTestFileListingConsistency:
         )
 
     def test_architecture_test_topics_bucket_count(self):
-        """ARCHITECTURE.md test_topics.py description must reference 23 topic buckets."""
+        """ARCHITECTURE.md test_topics.py description must reference 25 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
         match = re.search(r"test_topics\.py.*?all\s+(\d+)\s+buckets", doc)
         assert match, (
@@ -515,7 +515,7 @@ class TestCrossReferenceConsistency:
         )
 
     def test_readme_test_topics_description_says_16(self):
-        """README.md test_topics.py description must reference 23 topic buckets."""
+        """README.md test_topics.py description must reference 25 topic buckets."""
         doc = (_REPO_ROOT / "README.md").read_text()
         # Find the test_topics.py row in the test table
         match = re.search(r"test_topics\.py.*?(\d+)\s+standardized topic buckets", doc)
@@ -605,7 +605,7 @@ class TestInlineTopicListConsistency:
         code_topics = self._code_topic_names()
         # Find the topic list in the classify_topic JSON schema description
         match = re.search(
-            r"23 topic buckets:\s*([\w_]+(?:,\s*[\w_]+)*)\.",
+            r"25 topic buckets:\s*([\w_]+(?:,\s*[\w_]+)*)\.",
             doc,
         )
         assert match, (
@@ -831,8 +831,8 @@ class TestEmotionalLanguageCount:
         """EMOTIONAL_LANGUAGE should contain exactly 612 unique terms."""
         from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
 
-        assert len(EMOTIONAL_LANGUAGE) == 692, (
-            f"Expected 669 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
+        assert len(EMOTIONAL_LANGUAGE) == 735, (
+            f"Expected 735 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
             "If you added or removed terms, update this test to the new count.\n"
             "Also check for duplicates: len(set(EMOTIONAL_LANGUAGE)) should match."
         )
@@ -868,7 +868,7 @@ class TestAdversarialDeviceListConsistency:
     # Track the total number of compiled regex patterns across all device
     # types in _DEVICE_PATTERNS.  When patterns are added, this test fails
     # and forces a deliberate count update, preventing undocumented drift.
-    EXPECTED_TOTAL_PATTERNS = 310  # sum(len(v) for v in _DEVICE_PATTERNS.values())
+    EXPECTED_TOTAL_PATTERNS = 317  # sum(len(v) for v in _DEVICE_PATTERNS.values())
 
     def test_total_regex_pattern_count(self):
         """Total compiled regex patterns must match expected count."""
@@ -1307,16 +1307,16 @@ class TestAgentGuideConsistency:
 
 
 class TestCorrectionPathDocumentation:
-    """Validate that all 7 sentiment correction paths (A-G) are documented
+    """Validate that all 8 sentiment correction paths (A-H) are documented
     across METHODOLOGY.md, ARCHITECTURE.md, and AGENT_GUIDE.md.
 
-    The 7 paths are defined in ``_compute_framing_correction`` (Paths A-F)
+    The 8 paths are defined in ``_compute_framing_correction`` (Paths A-F, H)
     and ``analyze_composite`` (Path G) in sentiment.py.  Each path has a
     ``# --- Path X: ...`` comment in code.  These tests ensure documentation
     stays in sync with code when paths are added, removed, or renamed.
     """
 
-    EXPECTED_PATHS = {"A", "B", "C", "D", "E", "F", "G"}
+    EXPECTED_PATHS = {"A", "B", "C", "D", "E", "F", "G", "H"}
 
     @staticmethod
     def _extract_code_paths():
@@ -1328,7 +1328,7 @@ class TestCorrectionPathDocumentation:
         return set(re.findall(r"#\s*---\s*Path\s+([A-Z]):", code))
 
     def test_code_has_all_expected_paths(self):
-        """sentiment.py should have comment markers for all 7 paths."""
+        """sentiment.py should have comment markers for all 8 paths."""
         code_paths = self._extract_code_paths()
         missing = self.EXPECTED_PATHS - code_paths
         assert not missing, (
@@ -1337,10 +1337,10 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_methodology_documents_all_paths(self):
-        """METHODOLOGY.md section 9.2 should document all 7 correction paths."""
+        """METHODOLOGY.md section 9.2 should document all 8 correction paths."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
         # Each path should appear as "#### Path X:" or "Path X" in text
-        documented = set(re.findall(r"(?:####\s+)?Path\s+([A-G])[\s:.]", doc))
+        documented = set(re.findall(r"(?:####\s+)?Path\s+([A-H])[\s:.]", doc))
         missing = self.EXPECTED_PATHS - documented
         assert not missing, (
             f"METHODOLOGY.md is missing documentation for correction "
@@ -1348,9 +1348,9 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_architecture_documents_all_paths(self):
-        """ARCHITECTURE.md should reference all 7 correction paths."""
+        """ARCHITECTURE.md should reference all 8 correction paths."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
-        documented = set(re.findall(r"Path\s+([A-G])[\s:.\|]", doc))
+        documented = set(re.findall(r"Path\s+([A-H])[\s:.\|]", doc))
         missing = self.EXPECTED_PATHS - documented
         assert not missing, (
             f"ARCHITECTURE.md is missing references to correction "
@@ -1358,11 +1358,11 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_agent_guide_documents_all_paths(self):
-        """AGENT_GUIDE.md should reference all 7 correction paths."""
+        """AGENT_GUIDE.md should reference all 8 correction paths."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
-        documented = set(re.findall(r"Path\s+([A-G])[\s:.\|]", doc))
+        documented = set(re.findall(r"Path\s+([A-H])[\s:.\|]", doc))
         # Also check for "**G**" table format
-        table_paths = set(re.findall(r"\*\*([A-G])\*\*", doc))
+        table_paths = set(re.findall(r"\*\*([A-H])\*\*", doc))
         all_documented = documented | table_paths
         missing = self.EXPECTED_PATHS - all_documented
         assert not missing, (
@@ -1371,10 +1371,10 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_summary_table_in_methodology(self):
-        """METHODOLOGY.md should have a summary table with all 7 paths."""
+        """METHODOLOGY.md should have a summary table with all 8 paths."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
         # Find the summary table by looking for "| **A**" through "| **G**"
-        table_paths = set(re.findall(r"\|\s*\*\*([A-G])\*\*\s*\|", doc))
+        table_paths = set(re.findall(r"\|\s*\*\*([A-H])\*\*\s*\|", doc))
         missing = self.EXPECTED_PATHS - table_paths
         assert not missing, (
             f"METHODOLOGY.md summary table is missing paths: {sorted(missing)}. "

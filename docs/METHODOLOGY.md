@@ -141,7 +141,7 @@ More coverage ≠ more bias. We normalize by:
 
 ### 3.1 Standardized Topic Buckets
 
-Articles are classified into 23 topic buckets to enable apples-to-apples comparison:
+Articles are classified into 25 topic buckets to enable apples-to-apples comparison:
 
 | Topic | Keywords |
 |---|---|
@@ -168,16 +168,18 @@ Articles are classified into 23 topic buckets to enable apples-to-apples compari
 | `cybersecurity` | cybersecurity, cyber attack, hacker, hackers, hacking, data breach, security breach, security vulnerability, zero-day, account takeover, phishing, social engineering, password reset, ransomware, malware, exploit, MFA, multi-factor authentication, 2FA, security researcher, security patch, emergency patch, confused deputy, privilege escalation, defaced, identity theft, CISA, NIST, infosec |
 | `ai_ethics_safety` | AI ethics, AI safety, AI alignment, alignment problem, misalignment, existential risk, AGI safety, responsible AI, ethical AI, AI governance, algorithmic bias, algorithmic fairness, AI accountability, AI transparency, superintelligence, AI philosopher, AI ethicist, reward hacking, specification gaming, alignment research, safety research, moral philosophy, technology ethics, machine ethics |
 | `education` | school, schools, classroom, classrooms, teacher, teachers, student, students, academic, academic performance, education, educational, learning, school district, school districts, school hours, school day, campus, smartphone ban, phone ban, Chromebook, Chromebooks, PTA, parent-teacher, K-12, elementary school, middle school, high school |
+| `subscription_monetization` | subscription, subscriptions, subscribe, subscribing, paywall, paywalls, paywalled, paywalling, rate limit, rate limits, rate-limited, rate limited, rate limiting, rate-limiting, premium tier, premium subscription, premium plan, free tier, freemium, free plan, monthly fee, monthly bill, monthly charge, monthly subscription, annual subscription, pricing tier, pricing tiers, pricing plan, pay-to-play, pay to play, pay to use, monetize, monetization, monetizing, in-app purchase, in-app purchases, microtransaction, microtransactions, recurring charge, recurring fee, upsell, upselling, upsold, subscription fatigue, subscription creep, locked behind, gated behind, behind a paywall, unlock, unlocking |
+| `hardware_wearables` | smart glasses, AR glasses, augmented reality glasses, wearable, wearables, wearable device, VR headset, VR headsets, mixed reality headset, Ray-Ban, Ray-Ban Meta, Oakley Meta, Quest, Meta Quest, Apple Vision Pro, heads-up display, HUD, earbuds, smart earbuds, smart watch, smartwatch, fitness tracker, fitness band, hearing aid, hearing aids, hearing assistance, neural band, EMG, brain-computer interface, haptic, haptics, gesture control, eye tracking, gaze tracking, spatial computing, spatial audio |
 
 Classification uses keyword matching with TF-IDF weighting. An article can match multiple topics; the top 3 by confidence are retained.
 
-**Note on topic design:** The 23 buckets are designed for apples-to-apples comparison within a topic across companies. The `ai_generated_content` topic captures coverage of AI output quality and generative AI byproducts, distinct from `ai_development` (technology creation). The `ai_ethics_safety` topic captures coverage of AI alignment, AI safety research, existential risk, algorithmic bias, responsible AI, and the philosophical/moral dimensions of AI development, distinct from `ai_development` (technology creation) and `government_oversight` (regulatory actions). The `workplace_culture` topic captures internal organizational dynamics (morale, burnout, culture), distinct from `layoffs` (formal workforce actions) and `executive_behavior` (leadership decisions). The `labor_market` topic captures macroeconomic employment and wage dynamics (BLS data, labor economists, job displacement), distinct from `workplace_culture` (company-internal dynamics) and `layoffs` (specific workforce actions). The `worker_ai_displacement` topic captures coverage of workers whose labor directly trains, builds, or enables the AI systems that replace them — the recursive irony of self-automation — distinct from `labor_market` (macro employment trends), `layoffs` (formal workforce actions), and `workplace_culture` (internal morale). The `prediction_markets` topic captures coverage of betting/wagering platforms and event contracts, distinct from `financial_results` (earnings/market performance). The `corporate_strategy` topic captures M&A, partnerships, and market entry decisions, distinct from `product_launch` (specific releases). The `infrastructure_impact` topic captures coverage of data center construction, energy/water usage, community opposition (NIMBY), and environmental consequences of tech infrastructure, distinct from `corporate_strategy` (business decisions) and `ai_development` (technology itself). The `health_tech` topic captures coverage of medical technology, brain-computer interfaces, clinical devices, and health-focused AI, distinct from `ai_development` (general technology) and `product_launch` (commercial releases). The `cybersecurity` topic captures coverage of hacking, security breaches, account takeovers, and vulnerability exploits, distinct from `privacy_data` (collection/surveillance) and `content_moderation` (policy enforcement). The `education` topic captures coverage of technology's impact on schools, classrooms, students, and academic performance, distinct from `child_safety` (child protection/harm) and `content_moderation` (platform governance).
+**Note on topic design:** The 25 buckets are designed for apples-to-apples comparison within a topic across companies. The `ai_generated_content` topic captures coverage of AI output quality and generative AI byproducts, distinct from `ai_development` (technology creation). The `ai_ethics_safety` topic captures coverage of AI alignment, AI safety research, existential risk, algorithmic bias, responsible AI, and the philosophical/moral dimensions of AI development, distinct from `ai_development` (technology creation) and `government_oversight` (regulatory actions). The `workplace_culture` topic captures internal organizational dynamics (morale, burnout, culture), distinct from `layoffs` (formal workforce actions) and `executive_behavior` (leadership decisions). The `labor_market` topic captures macroeconomic employment and wage dynamics (BLS data, labor economists, job displacement), distinct from `workplace_culture` (company-internal dynamics) and `layoffs` (specific workforce actions). The `worker_ai_displacement` topic captures coverage of workers whose labor directly trains, builds, or enables the AI systems that replace them — the recursive irony of self-automation — distinct from `labor_market` (macro employment trends), `layoffs` (formal workforce actions), and `workplace_culture` (internal morale). The `prediction_markets` topic captures coverage of betting/wagering platforms and event contracts, distinct from `financial_results` (earnings/market performance). The `corporate_strategy` topic captures M&A, partnerships, and market entry decisions, distinct from `product_launch` (specific releases). The `infrastructure_impact` topic captures coverage of data center construction, energy/water usage, community opposition (NIMBY), and environmental consequences of tech infrastructure, distinct from `corporate_strategy` (business decisions) and `ai_development` (technology itself). The `health_tech` topic captures coverage of medical technology, brain-computer interfaces, clinical devices, and health-focused AI, distinct from `ai_development` (general technology) and `product_launch` (commercial releases). The `cybersecurity` topic captures coverage of hacking, security breaches, account takeovers, and vulnerability exploits, distinct from `privacy_data` (collection/surveillance) and `content_moderation` (policy enforcement). The `education` topic captures coverage of technology's impact on schools, classrooms, students, and academic performance, distinct from `child_safety` (child protection/harm) and `content_moderation` (platform governance). The `subscription_monetization` topic captures coverage of product paywalling, subscription pricing, rate-limiting, and monetization practices, distinct from `financial_results` (earnings/market performance) and `product_launch` (specific releases). The `hardware_wearables` topic captures coverage of smart glasses, VR/AR headsets, fitness trackers, hearing aids, and other wearable computing devices, distinct from `product_launch` (general releases) and `ai_development` (underlying technology).
 
 ## 4. Framing Device Detection
 
 ### 4.1 Taxonomy
 
-MediaScope detects 51 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (35 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 53 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (37 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -236,6 +238,8 @@ These were added through systematic analysis of real articles from the five trac
 | **Taxonomy Framing** | Presenting findings using a structured classification system that implies completeness and authority. The editorial choice to organize evidence into named categories ("broken, buried, or missing") creates a framework that constrains interpretation | "broken, buried, or missing"; "classified as [N] categories"; three-part comma-separated adjective taxonomy | NYT child safety study (Jun 2026) — "broken, buried, or missing" taxonomy covers all failure modes, implying comprehensive evaluation and leaving no escape route for the subject |
 | **Failure Precedent** | Editorial device that invokes a prior failed attempt at the same type of project to frame a current effort as likely to fail. More effective than direct criticism because the reader draws the analogy themselves. The predecessor's failure casts implicit doubt on the current effort without the journalist stating it | "was set to receive $X ... ultimately cancelled"; "after [entity] lost/failed/fumbled"; "the previous [effort] ... didn't prove viable" | MIT Tech Review Anduril/Meta warfare glasses (May 2026) — Microsoft "was set to receive a $22 billion production contract that was ultimately cancelled when the glasses didn't prove viable," placed directly before describing Anduril's prototype timeline |
 | **Industry Normalization Undercut** | Acknowledges that a practice is industry-wide ("other companies also…"), then immediately undercuts the normalization to single out the target ("but Meta's reliance is especially…"). The rhetorical move concedes fairness while negating it in the same breath, making the singling-out appear more objective because the writer "acknowledged" the broader context first | "Other companies also X, but [Target] is especially/far worse/uniquely"; "is not unique to [Target], but"; "industry-wide practice, but the scale at [Target]" | Wired Meta Cannes contractors/teens article (Jul 2026) — practice acknowledged as industry-wide before pivoting to single out Meta's scale and approach as distinctly problematic |
+| **Assumed Consensus** | Presents a contested or unsupported claim as self-evident common knowledge, skipping the burden of proof. Constructions like "People hate X", "Everyone knows X", "Nobody wants X" position the audience as already agreeing with the author's stance before any evidence is offered | "People hate/love/want"; "Everyone knows/agrees"; "Nobody wants/trusts"; "It's well known that"; "Goes without saying"; "Needless to say" | Gizmodo Meta glasses subscription article (Jul 2026) — "People hate Meta's smart glasses for quite a few reasons" presents consumer hatred as self-evident fact with zero citation or evidence. Distinct from loaded_language (pejorative vocabulary) and emotional_appeal (sympathy/outrage deployment) |
+| **Editorial Aside** | Breaking journalistic register to address the reader directly with sarcastic or solidarity-building interjections that create an in-group frame between author and reader, positioning the subject as an outsider deserving scrutiny | "brace yourself"; "buckle up"; "spoiler alert"; "let's be honest"; "let's face it"; "something tells me"; "call me skeptical"; "(yes, really)"; "(sigh)" | Gizmodo Meta glasses subscription article (Jul 2026) — "brace yourself" and "something tells me" break the journalistic register to editorialize via direct reader address. Distinct from loaded_language (vocabulary choice) and rhetorical_question (interrogative form) |
 
 #### Structural Devices (Post-Pass)
 
@@ -413,7 +417,7 @@ This is not a VADER bug; it is a fundamental limitation of lexical sentiment ana
 
 ### 9.2 Correction Pipeline
 
-MediaScope implements **7 distinct correction paths** (A–G), each addressing a specific VADER/TextBlob failure mode discovered through real article analysis. The paths are evaluated in priority order; the first match fires and returns the corrected score.
+MediaScope implements **8 distinct correction paths** (A–H), each addressing a specific VADER/TextBlob failure mode discovered through real article analysis. The paths are evaluated in priority order; the first match fires and returns the corrected score.
 
 The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overall_tone` (corrected) with metadata documenting when and why correction fired.
 
@@ -424,7 +428,7 @@ The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overa
 | Trigger | Threshold |
 |---|---|
 | Raw composite tone | ≥ 0.0 (non-negative) |
-| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism)) |
+| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, editorial_aside)) |
 | Agency attribution | < −0.3 (passive/target of scrutiny) |
 
 **Blend:** 10% raw + 90% framing-derived estimate. The framing estimate is computed from agency, emotional intensity, and adversarial device density.
@@ -505,6 +509,24 @@ Product reviews where the reviewer gives a positive assessment (VADER reads prod
 
 **Discovery article:** Gizmodo Meta Fury review (Jun 29, 2026) — VADER scored +0.68 on a manually assessed −0.35 article. Positive product review language dominated the word count, drowning out the negative privacy/ethics editorial wrapper. Rhetorical question in the kicker undermined the positive assessment.
 
+#### Path H: Sarcastic Short Editorial
+
+Short opinion pieces (typically <500 words) where the editorial voice is sarcastic/dismissive but VADER reads neutral-agency active language as positive. The sarcastic register — direct reader address, assumed consensus, editorial asides — is invisible to lexical sentiment.
+
+| Trigger | Threshold |
+|---|---|
+| Raw tone | ≥ 0.3 (VADER inflated positive) |
+| Editorial aside devices | ≥ 2 |
+| Adversarial device count | ≥ 4 |
+| Emotional language intensity | ≥ 0.5 |
+| Agency attribution | ≥ −0.1 (neutral to slightly positive) |
+
+**Blend:** 15% raw + 85% target. Target tone = −(0.30 + 0.20 × sarcasm_density + 0.10 × emotional_intensity), where sarcasm_density = min((editorial_aside_count + assumed_consensus_count) / 5.0, 1.0). Clamped to [−0.7, 0.0].
+
+**Key distinction from Path D (sardonic/mocking):** Path D requires high loaded_language count (≥7) and strongly positive agency (≥0.3) — the subject is actively pursuing something framed as foolish. Path H fires on shorter articles with fewer total devices but concentrated sarcastic indicators (editorial_aside, assumed_consensus) and neutral agency (the subject is doing things, but the editorial register signals disapproval through sarcasm rather than loaded vocabulary).
+
+**Discovery article:** Gizmodo Meta glasses subscription article (Jul 1, 2026) — VADER scored +0.65 on a clearly negative article with "People hate" (assumed consensus), "brace yourself", "let's be honest", "something tells me" (editorial asides), and "hate", "grievances", "slapping", "paywall" (emotional language). Agency = 0.0.
+
 #### Path G: VADER Long-Text Normalization
 
 Not a framing correction — this fixes a fundamental VADER math problem. VADER's compound score uses `sum / sqrt(sum² + alpha)` where `alpha=15`, tuned for tweet-length texts. For long articles (10+ sentences), this normalization amplifies small biases.
@@ -524,9 +546,9 @@ Not a framing correction — this fixes a fundamental VADER math problem. VADER'
 
 #### Path Evaluation Order and Priority
 
-The paths are evaluated in code order: **A → B → C → E → D → F**. Path G runs independently in the `analyze_composite` function before the framing correction pipeline, as it corrects VADER's input signal rather than overriding the composite output.
+The paths are evaluated in code order: **A → B → C → E → D → F → H**. Path G runs independently in the `analyze_composite` function before the framing correction pipeline, as it corrects VADER's input signal rather than overriding the composite output.
 
-**Only one framing path fires per article.** If Path A matches, Paths B–F are never evaluated. This prevents over-correction and ensures the strongest applicable correction takes precedence.
+**Only one framing path fires per article.** If Path A matches, Paths B–H are never evaluated. This prevents over-correction and ensures the strongest applicable correction takes precedence.
 
 #### Summary Table
 
@@ -539,6 +561,7 @@ The paths are evaluated in code order: **A → B → C → E → D → F**. Path
 | **E** | Military optimism | ≥ 0.3 | < 0.0 | ≥3 MTO devices | 30/70 (raw/framing) |
 | **F** | Contradictory review | ≥ 0.3 | [−0.4, 0.0) | ≥4 adversarial + ≥0.5 EI | 20/80 (raw/review) |
 | **G** | Long-text normalization | any | any | divergence > 0.5, ≥10 sentences | 30/70 (compound/sentence) |
+| **H** | Sarcastic editorial | ≥ 0.3 | ≥ −0.1 | ≥2 editorial_aside + ≥4 adversarial + ≥0.5 EI | 15/85 (raw/target) |
 
 ### 9.3 Headline Framing Override
 
@@ -619,7 +642,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 51-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 53-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |

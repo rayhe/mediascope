@@ -4049,6 +4049,99 @@ _ANTHROPOMORPHIZATION_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["anthropomorphization"] = _ANTHROPOMORPHIZATION_PATTERNS
 
 
+# --- Assumed consensus ---
+# Editorial device that presents a contested or unsupported claim as
+# self-evident common knowledge.  Constructions like "People hate X",
+# "Everyone knows X", "Nobody wants X" skip the burden of proof and
+# position the audience as already agreeing with the author's stance.
+# Distinct from loaded_language (which uses pejorative vocabulary) and
+# emotional_appeal (which deploys sympathy/outrage): assumed_consensus
+# frames the *audience* as unanimous rather than deploying emotion.
+#
+# Gap discovered during Gizmodo Meta glasses subscription analysis
+# (Jul 2026): "People hate Meta's smart glasses for quite a few
+# reasons" went undetected — a strong consensus assertion with zero
+# evidence or citation.
+_ASSUMED_CONSENSUS_PATTERNS: list[re.Pattern] = [
+    # "People hate/love/want/think X", "Everyone knows/agrees X"
+    re.compile(
+        r"\b(?:people|everyone|everybody|nobody|no one|we all|"
+        r"most people|many people|few people|consumers|users|"
+        r"critics|observers|analysts|experts)\s+"
+        r"(?:hate|love|want|know|agree|think|feel|believe|"
+        r"understand|recognize|see|expected|expect|fear|"
+        r"already know|already knew|already see|"
+        r"don't want|don't like|don't trust|"
+        r"won't accept|won't tolerate)\b",
+        re.IGNORECASE,
+    ),
+    # "It's well known that", "It goes without saying"
+    re.compile(
+        r"\b(?:it(?:'s| is) (?:well known|widely known|common knowledge|"
+        r"no secret|clear|obvious|evident|undeniable|understood|apparent))\b",
+        re.IGNORECASE,
+    ),
+    # "Goes without saying", "Needless to say"
+    re.compile(
+        r"\b(?:goes without saying|needless to say|"
+        r"as (?:everyone|we all|we) (?:know|knew|already know))\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["assumed_consensus"] = _ASSUMED_CONSENSUS_PATTERNS
+
+
+# --- Editorial aside / direct reader address ---
+# Conversational interjections where the author breaks the journalistic
+# register to address the reader directly, insert personal commentary,
+# or perform rhetorical solidarity ("let's be honest", "brace yourself",
+# "something tells me").  These create an in-group frame between author
+# and reader that positions the subject as an outsider deserving scrutiny.
+# Distinct from loaded_language (vocabulary) and rhetorical_question
+# (interrogative form): editorial_aside uses imperative/first-person
+# asides in declarative sentences.
+#
+# Gap discovered during Gizmodo Meta glasses subscription analysis
+# (Jul 2026): "brace yourself", "let's be honest here", and
+# "something tells me" all went undetected.
+_EDITORIAL_ASIDE_PATTERNS: list[re.Pattern] = [
+    # Direct reader address: "brace yourself", "buckle up", "spoiler alert"
+    re.compile(
+        r"\b(?:brace yourself|brace yourselves|buckle up|"
+        r"spoiler alert|fair warning|"
+        r"get this|get ready|wait for it|"
+        r"surprise,? surprise|shocker)\b",
+        re.IGNORECASE,
+    ),
+    # Solidarity/honesty performative: "let's be honest", "let's face it"
+    re.compile(
+        r"\b(?:let'?s be (?:honest|real|clear|frank|serious)|"
+        r"let'?s face it|let'?s not pretend|"
+        r"to be (?:honest|fair|frank|blunt)|"
+        r"if (?:we'?re|I'?m) being (?:honest|real|frank)|"
+        r"I'?ll be (?:honest|real|frank|blunt))\b",
+        re.IGNORECASE,
+    ),
+    # First-person editorial prediction: "something tells me", "I suspect"
+    re.compile(
+        r"\b(?:something tells me|"
+        r"call me (?:crazy|skeptical|cynical|old-fashioned)|"
+        r"I (?:suspect|doubt|can't help but|have a feeling)|"
+        r"my (?:guess|bet|prediction) is|"
+        r"color me (?:surprised|skeptical|unsurprised|shocked))\b",
+        re.IGNORECASE,
+    ),
+    # Parenthetical asides that editorialize: "(yes, really)", "(sigh)"
+    re.compile(
+        r"\((?:yes,? really|no,? really|sigh|yep|nope|"
+        r"shocking,? I know|I know|you read that right|"
+        r"seriously|of course)\)",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["editorial_aside"] = _EDITORIAL_ASIDE_PATTERNS
+
+
 def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
     """Detect analogy stacking — 3+ distinct analogies for the same subject.
 
@@ -4629,19 +4722,20 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 45 pattern-matched device types plus 6 structural
-    post-pass types (51 total).
+    Scans for 47 pattern-matched device types plus 6 structural
+    post-pass types (53 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (45): analogy_metaphor, anonymous_authority,
-    anthropomorphization, catastrophizing, ceo_personalization,
+    Pattern-matched (47): analogy_metaphor, anonymous_authority,
+    anthropomorphization, assumed_consensus, catastrophizing,
+    ceo_personalization,
     commodification_metaphor, confession_framing,
     corporate_reassurance_undercut, denial_contradiction,
-    editorial_deflation, emotional_appeal,
+    editorial_aside, editorial_deflation, emotional_appeal,
     escalation_amplification, failure_precedent, false_balance,
     geopolitical_regulatory_pressure, guilt_by_association,
     hypocrisy_frame, industry_normalization_undercut,

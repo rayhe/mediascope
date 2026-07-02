@@ -1,0 +1,22 @@
+SOURCE: Gizmodo
+URL: https://gizmodo.com/meta-is-slapping-subscriptions-on-its-smart-glasses-2000780073
+TITLE: Meta Is Slapping Subscriptions on Its Smart Glasses
+DATE: July 1, 2026
+AUTHOR: [Gizmodo staff]
+RETRIEVED: 2026-07-02
+
+---
+
+Meta Is Slapping Subscriptions on Its Smart Glasses
+
+People hate Meta's smart glasses for quite a few reasons, but up until now, subscriptions were not on the list of grievances. Time has a funny way of turning lots of our favorite services and features into pay-until-you-die monthly bills, though, and that time for Meta's AI glasses appears to be now.
+
+Meta has quietly begun introducing "rate limits" on features in its AI glasses according to a recently updated official help page, as noted by The Verge. The list of rate-limited features starts with Conversation Focus, which uses the microphones on Meta's smart glasses to zero in on someone you're talking to and amplify their speech with AI.
+
+Under this new structure, you can use Conversation Focus for three hours per month for free, or if you want extended usage, you can pay (brace yourself) $20 per month for a Meta One Premium subscription to unlock 15 hours per month. As The Verge notes, Conversation Focus is a strange choice to paywall, since it seemingly doesn't use Meta's servers. Conversation Focus happens on-device and still works offline, so it's not as if Meta needs to charge users money for borrowing some kind of overall AI bandwidth.
+
+Additionally, Conversation Focus feels like a weird feature to paywall in that it's a hearing assistance feature. Meta doesn't explicitly market Conversation Focus as being useful for accessibility, but let's be honest here: a tool that allows you to better hear someone you're having a conversation with is way more likely to be found useful by those with hearing impairment. In any case — accessibility feature or not — it's not the best look.
+
+It's unclear why Meta chose Conversation Focus specifically, out of all of the AI features on its smart glasses, or whether it plans to expand its rate limits in the future. Gizmodo has reached out for a comment and will update this post with any further information.
+
+Even with an explanation from Meta, though, something tells me paywalls won't do wonders in fostering a positive association from current or prospective owners of Meta-made smart glasses.

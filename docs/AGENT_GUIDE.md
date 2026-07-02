@@ -447,7 +447,7 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
 ```json
 {
     "name": "detect_framing_devices",
-    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 51 device types across three tiers: core (10 pattern-matched), extended (35 from real-article analysis), and structural post-pass (6 heuristic-based).",
+    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 53 device types across three tiers: core (10 pattern-matched), extended (37 from real-article analysis), and structural post-pass (6 heuristic-based).",
     "parameters": {
         "type": "object",
         "properties": {
@@ -466,7 +466,7 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
 ```json
 {
     "name": "classify_topic",
-    "description": "Classify an article into standardized topic buckets using keyword-based matching with confidence scoring. Returns TopicScore objects with topic name, confidence (0.0-1.0), and matched keywords. Articles can match multiple topics; the top 3 by confidence are retained. 23 topic buckets: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, prediction_markets, corporate_strategy, defense_military, labor_market, workplace_culture, government_oversight, infrastructure_impact, worker_ai_displacement, health_tech, cybersecurity, ai_ethics_safety, education.",
+    "description": "Classify an article into standardized topic buckets using keyword-based matching with confidence scoring. Returns TopicScore objects with topic name, confidence (0.0-1.0), and matched keywords. Articles can match multiple topics; the top 3 by confidence are retained. 25 topic buckets: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, prediction_markets, corporate_strategy, defense_military, labor_market, workplace_culture, government_oversight, infrastructure_impact, worker_ai_displacement, health_tech, cybersecurity, ai_ethics_safety, education, subscription_monetization, hardware_wearables.",
     "parameters": {
         "type": "object",
         "properties": {
@@ -924,7 +924,7 @@ framing_gap = len(magazine_result["framing"]) - len(wire_result["framing"])
 
 ## Framing-Aware Tone Correction Workflow
 
-VADER and TextBlob systematically misprice editorial tone in investigative journalism. Professional prose uses measured, confident language that lexical sentiment models score as positive — even when the editorial stance is clearly adversarial. MediaScope's tone correction pipeline fixes this through **7 correction paths (A–G)**, each addressing a specific VADER failure mode.
+VADER and TextBlob systematically misprice editorial tone in investigative journalism. Professional prose uses measured, confident language that lexical sentiment models score as positive — even when the editorial stance is clearly adversarial. MediaScope's tone correction pipeline fixes this through **8 correction paths (A–H)**, each addressing a specific VADER failure mode.
 
 See `METHODOLOGY.md` §9 and `examples/framing_correction_demo.py` for a hands-on walkthrough.
 
@@ -941,10 +941,11 @@ The pipeline evaluates 7 paths in priority order — the first match fires:
 | **E** | Military techno-optimism | raw ≥ 0.3, agency < 0, ≥3 MTO devices | Domain-specific fix — aspirational military language misleads VADER |
 | **F** | Contradictory review framing | raw ≥ 0.3, agency ∈ [−0.4, 0), emotional intensity ≥ 0.5 | Editorial wrapper overrides product praise — trust corrected score |
 | **G** | VADER long-text normalization | ≥10 sentences, compound-sentence divergence > 0.5 | Pre-correction — fixes VADER's alpha=15 distortion before composite |
+| **H** | Sarcastic short editorial | raw ≥ 0.3, agency ≥ −0.1, ≥2 editorial_aside + ≥4 adversarial + EI ≥ 0.5 | Sarcastic opinion pieces — editorial_aside density is the dominant signal |
 
-Only one framing path (A–F) fires per article. Path G runs independently before the composite is computed.
+Only one framing path (A–F, H) fires per article. Path G runs independently before the composite is computed.
 
-**Adversarial device types** (14 types trigger Paths A/B): catastrophizing, emotional_appeal, guilt_by_association, hypocrisy_frame, isolation_framing, juxtaposition, kicker_framing, loaded_language, military_techno_optimism, power_asymmetry, pressure_language, refusal_amplification, self_referential_investigation, timeline_implication.
+**Adversarial device types** (16 types trigger Paths A/B): assumed_consensus, catastrophizing, editorial_aside, emotional_appeal, guilt_by_association, hypocrisy_frame, isolation_framing, juxtaposition, kicker_framing, loaded_language, military_techno_optimism, power_asymmetry, pressure_language, refusal_amplification, self_referential_investigation, timeline_implication.
 
 **Anchor device types** (3 types trigger Path C): kicker_framing, self_referential_investigation, juxtaposition.
 
