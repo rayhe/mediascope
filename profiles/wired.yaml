@@ -255,9 +255,16 @@ advance_investments:
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
     current_value_estimate: >
-      ~$7.34B at $173.58/share (Jul 1, 2026). Reddit market cap ~$33.4B.
-      Reddit now ~57-60% of Advance's public equity. 42,207,274 total shares ×
-      $173.58 = $7.32B. 52-week range $119.27-$282.95. Beta 2.07.
+      ~$8.33B at $197.42/share (Jul 1, 2026 close). Reddit market cap ~$38.0B.
+      INTRADAY SURGE: Reddit opened at $173.65 and closed at $197.42 (+13.73%) on Jul 1, 2026.
+      Volume 8.75M shares (vs 5.23M avg). Broader tech rally (META +8.81% same day).
+      Reddit now ~60-65% of Advance's public equity. 42,207,274 total shares ×
+      $197.42 = $8.33B. 52-week range $119.27-$282.95. Beta 2.07.
+      Year-to-date: -14.16% (still below Jan 2026 highs ~$231).
+      Analyst consensus: 18 buy, 12 hold, avg 12-mo PT $230.75 (high $300, low $110).
+      MARGIN LOAN BUFFER: The 7.8M shares pledged as collateral (at $145-148 offering)
+      are now worth ~$1.54B at $197.42 — 28-36% above offering price, significantly
+      expanding Advance's collateral cushion and reducing near-term margin call risk.
     credit_facility_monetization: >
       REDDIT MARGIN LOAN (reported Jun 12, 2026, Bloomberg Law): Advance Magazine Publishers Inc.
       — the specific Advance subsidiary that directly holds the Reddit shares — is establishing
@@ -293,7 +300,9 @@ advance_investments:
       FY2026 projected: $3.25B (+47.6%), FY2027: $4.31B (+32.5%).
       Q2 2026 GUIDANCE: $715M-$725M, representing 43-45% YoY revenue growth (~44% at midpoint).
       Q2 2026 EARNINGS DATE: July 30 (after market close). Consensus EPS: tracking for ~$1.20-1.25.
-      Market cap ~$32.1B at $166.94/share (Jun 26, 2026 close). 52-week range $119.27-$282.95. Beta 2.06.
+      Market cap ~$38.0B at $197.42/share (Jul 1, 2026 close). 52-week range $119.27-$282.95. Beta 2.07.
+      FY2026 EPS CONSENSUS: $4.83. FY2027 EPS FORECAST: $6.39 (+32.3% growth).
+      P/E ratio: 56.41 (trailing). Net margin: 28.60%. ROE: 25.48%.
       TTM (trailing 12 months): Revenue $2.2B, net income $530M (net margin 24.1%), operating income
       $442M (operating margin 20.1%), gross profit $2.0B (gross margin 91.2%), operating cash flow $690.9M.
       Current ratio 11.56. Reddit is now PROFITABLE at scale with net income of over $500M TTM.
@@ -362,11 +371,16 @@ advance_investments:
     collateralized_lending_source_urls:
       - "https://news.bloomberglaw.com/mergers-and-acquisitions/advance-magazine-said-to-seek-1-2-billion-in-reddit-share-sale"
     insider_selling_context: >
-      Reddit insiders (excluding Advance) sold 326,144 shares ($48.8M) in last 3 months
-      (as of Jun 2026). CEO Huffman sold 18,000 shares May 15 at $157.15 and Feb 27 at
-      $145.12. COO Jennifer Wong sold 39,167 shares Apr 16 at $161.47. CTO Christopher Slowe
-      sold 15,500 shares Apr 8 at $150.67. Corporate insiders own 34.25% of stock.
-      SOURCE: MarketBeat institutional ownership data, SEC Form 144 filings.
+      Reddit insiders (excluding Advance) sold 223,000 shares ($36.9M) in last 90 days
+      (as of Jul 1, 2026). ALL via pre-arranged Rule 10b5-1 trading plans:
+      CEO Steve Huffman: sold 18,000 shares Jun 15 at $178.26 ($3.21M). Retained 373,814 shares (-4.59%).
+      COO Jennifer Wong: sold 39,166 shares Jun 16 at $176.94 ($6.93M). Retained 1,050,339 shares (-3.59%).
+      CTO Christopher Slowe: sold 15,500 shares Apr 8 at $150.67 ($2.34M). Retained 38,413 shares (-28.75%).
+      Corporate insiders own 28.48% of stock.
+      ANALYTICAL NOTE: Insider selling is systematic (10b5-1 plans), not panic selling.
+      But the concentration of C-suite sales in Jun 15-16 (CEO + COO on consecutive days,
+      totaling $10.1M) coincides with Advance's margin loan activity (reported Jun 12).
+      SOURCE: MarketBeat institutional ownership data, SEC Form 4 filings.
     insider_selling_source_url: "https://www.marketbeat.com/stocks/NYSE/RDDT/institutional-ownership/"
     competitive_with: ["Meta", "X/Twitter"]
     meta_competition: >

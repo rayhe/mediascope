@@ -10029,3 +10029,55 @@ The Cannes article prominently features suicide, self-harm, eating disorders, an
 - **1166 tests** across 44 test files (1164 passed, 2 xfailed)
 - **23 topic buckets**
 - **110 journalists** (108 multi-pub)
+
+---
+
+## 2026-07-01 23:00 PT — Type C: Ownership & Funding — Reddit Valuation Surge + Advance Stake + Insider Activity
+
+**Trigger:** `mediascope-daily-iteration` scheduled run
+**Focus:** Wired/Condé Nast profile — Reddit (RDDT) closed at $197.42 on Jul 1, 2026 (+13.73% intraday), significantly changing Advance Publications' stake value and margin loan dynamics.
+
+### Findings
+
+**1. Reddit Intraday Surge — Jul 1, 2026**
+- Opened: $173.65 → Closed: $197.42 (+$23.84, +13.73%)
+- Volume: 8.75M shares (vs 5.23M avg — 67% above average)
+- Market cap: $38.01B (up from ~$33.4B at open)
+- Broader tech rally context: META +8.81% same day
+- YTD: -14.16% (still below Jan 2026 highs ~$231)
+- Analyst consensus: 18 buy, 12 hold, avg 12-mo PT $230.75
+- P/E ratio: 56.41 (trailing). Net margin: 28.60%. ROE: 25.48%
+- Sources: MarketBeat, Barchart, Finnhub
+
+**2. Advance Publications Stake Value Recalculation**
+- 42,207,274 shares × $197.42 = ~$8.33B (up from $7.34B at market open)
+- Reddit now ~60-65% of Advance's total public equity exposure
+- The $1B intraday value increase in Advance's position underscores the scale of the undisclosed conflict
+
+**3. Margin Loan Collateral Buffer Expansion**
+- The 7.8M shares pledged at $145-148 offering price are now worth ~$1.54B at $197.42
+- This represents a 28-36% collateral buffer above offering price
+- Significantly reduces near-term margin call risk for Advance
+- When profile was last updated (hours earlier), the $173.58 price gave only a 17-19% buffer
+
+**4. Reddit Insider Selling Update (Jul 1 data)**
+- Total insider sales: 223,000 shares worth $36.9M in 90 days (all via 10b5-1 plans)
+- CEO Huffman: 18,000 shares Jun 15 at $178.26 ($3.21M)
+- COO Wong: 39,166 shares Jun 16 at $176.94 ($6.93M)
+- CTO Slowe: 15,500 shares Apr 8 at $150.67 ($2.34M)
+- Insiders own 28.48% (down from 34.25% previously reported)
+- Note: C-suite sales clustered Jun 15-16 (CEO+COO consecutive days, $10.1M) — just 3 days after Advance margin loan reported Jun 12
+
+**5. Q2 Earnings Tracking**
+- Reddit Q2 2026: July 30 (after market close)
+- FY2026 EPS consensus: $4.83, FY2027: $6.39 (+32.3% growth)
+
+### Changes Made
+- Updated `current_value_estimate` with Jul 1 close ($197.42, ~$8.33B), analyst consensus, margin loan buffer
+- Updated `q1_2026_financials` market data (market cap $38.0B, P/E 56.41, FY2026/27 EPS)
+- Updated `insider_selling_context` with latest SEC Form 4 data, 10b5-1 plan detail, Jun 15-16 clustering analysis
+
+### Stats After This Iteration
+- Wired profile: 1,563 → 1,577 lines (+14)
+- Tests: 1,169 passed, 2 xfailed (unchanged)
+- Sources: MarketBeat, Barchart, Finnhub, SEC Form 4 filings
