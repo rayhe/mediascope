@@ -6492,3 +6492,89 @@ journalists:
       the JesmondLocal student news project. Academic role provides credibility and methodological grounding uncommon among
       tech freelancers.
     source_url: https://www.ncl.ac.uk/arts-cultures/staff/profile/chrisstokelwalker.html
+- career:
+  - beat: N/A (education)
+    end: 2017-05
+    event_type: education
+    notes: 'BFA in Fine Art from Carnegie Mellon University, School of Art. During her time at CMU, worked extensively at
+      the Frank-Ratchye STUDIO for Creative Inquiry. Founding member of Deep Lab, a cyberfeminist collective. Virtual Research
+      Fellow in the Free Art and Technology (F.A.T.) Lab artist group. Later endowed the "Maddy Varner Mastication Grant"
+      at CMU — a $500 award for "work that chews the cud."'
+    publication: carnegie-mellon
+    role: student
+    source_url: https://studioforcreativeinquiry.org/maddy-varner-mastication-grant-for-time-and-or-teeth-based-work
+    start: 2013-08
+  - beat: design, editorial
+    end: 2017-06
+    event_type: hired
+    notes: Associate designer. Assisted in launching a new editorial arm of the company. NewHive was a creative platform
+      for browser-based art and media. Brief tenure between graduation and journalism career.
+    publication: newhive
+    role: associate_designer
+    source_url: https://talkingbiznews.com/media-news/markup-investigative-data-journalist-varner-departs/
+    start: 2017-01
+  - beat: technology, advertising, data
+    end: 2019-06
+    event_type: hired
+    notes: 'Contributing researcher. Wrote web scrapers, processed and cleaned PDF tables into usable data, and assisted
+      in reporting. Won Gerald Loeb Award for Beat Reporting (2018, for 2017 work) as part of team on "Monetizing Hate,"
+      a series examining Facebook''s advertising practices — one of the earliest systematic investigations into how Facebook''s
+      ad targeting enabled discriminatory and hateful content. KEY META CONNECTION: This series predates and prefigures the
+      framing used in later Meta ad-practices investigations. ProPublica co-founder Julia Angwin later founded The Markup
+      and recruited Varner there.'
+    publication: propublica
+    role: contributing_researcher
+    source_url: https://talkingbiznews.com/media-news/markup-investigative-data-journalist-varner-departs/
+    start: 2017-07
+  - beat: labor, education, politics, technology
+    end: 2023-05
+    event_type: hired
+    notes: 'Investigative data journalist. Four+ year tenure (pre-launch hire, signed April 2019 staff letter supporting
+      Julia Angwin as "Madeleine Varner" — full first name). Did NOT resign with five other staffers during the Angwin/Gardner
+      leadership crisis, stayed through the turmoil and Angwin''s return. Major investigations: (1) Amazon COVID warehouse
+      cases (2022, co-reported with Dara Kerr — used OCR on worker exposure notifications), (2) NYC school admissions algorithm
+      and segregation (Deadline Club Award finalist 2022), (3) "Google the Giant" series (Gerald Loeb Award finalist 2021,
+      Explanatory). Also covered Lyft/Uber multistate gig worker classification efforts. Techniques: FOIA requests, web
+      scraping, machine learning, linear regressions, browser extension building, notification bots. Concurrent: taught data
+      journalism at CUNY Graduate School of Journalism.'
+    publication: the-markup
+    role: data_journalist
+    source_url: https://talkingbiznews.com/media-news/markup-investigative-data-journalist-varner-departs/
+    start: 2019-04
+  - beat: technology regulation, enforcement
+    end: 2025-10
+    event_type: other
+    notes: 'Technologist in residence at the Federal Trade Commission. Government insider role providing direct perspective
+      on enforcement against Big Tech, data privacy, algorithmic accountability, and platform regulation. CRITICAL INSTITUTIONAL
+      TRANSITION: moving from journalism (ProPublica, The Markup) into the regulatory body that investigates the companies
+      she previously covered, then back to journalism at Wired. This government stint provides insider knowledge of FTC enforcement
+      priorities, investigative methods, and pending actions — an unusual institutional vantage point for a Wired investigative
+      reporter. Tests whether regulatory-insider experience intensifies or moderates adversarial framing.'
+    publication: ftc
+    role: technologist_in_residence
+    source_url: https://studioforcreativeinquiry.org/maddy-varner-mastication-grant-for-time-and-or-teeth-based-work
+    start: 2023-07
+  - beat: investigations, immigration, privacy, Big Tech, government surveillance
+    event_type: hired
+    notes: 'Senior writer focused on investigations, sitting on security desk but working across all desks. Brian Barrett
+      (exec editor) announcement praised her FOIA skills, data journalism, and tool-building. Based in NYC office. Joined
+      alongside Dhruv Mehrotra (returned from Bloomberg May 2026) — Barrett called them "a force to be reckoned with." Early
+      Wired coverage focused on ICE/immigration enforcement, DHS surveillance, deportation agent doxing. KEY META CONNECTION
+      (Jul 2026): Wrote Wired story on Consumer Federation of America suing Meta for misleading consumers about scam ads
+      on Facebook and Instagram — extending her original ProPublica "Monetizing Hate" beat on Facebook ad practices. Also
+      contributed to Fast Company. FRAMING ANALYSIS: Career arc from ProPublica Facebook investigation → government regulator
+      (FTC) → Wired provides a three-phase natural experiment: (1) nonprofit investigative outlet, (2) regulatory enforcement
+      insider, (3) Condé Nast commercial media. The FTC tenure may amplify enforcement-framing in her Wired output vs a
+      journalist who came from purely commercial newsrooms.'
+    publication: wired
+    role: senior_writer
+    source_url: https://talkingbiznews.com/media-news/wired-hires-varner-as-senior-writer/
+    start: 2025-11
+  name: Maddy Varner
+  notes: 'Full name: Madeleine "Maddy" Varner. Key migration: ProPublica → The Markup → FTC → Wired. Investigative data
+    journalist and technologist. Education: CMU BFA Fine Art (2017), founding member of Deep Lab cyberfeminist collective.
+    Won Gerald Loeb Award (2018) at ProPublica for "Monetizing Hate" examining Facebook ad practices — one of the earliest
+    systematic Meta/Facebook investigations. Gerald Loeb finalist (2021) at The Markup for "Google the Giant." FTC technologist
+    in residence gave her government insider perspective before joining Wired. At Wired, already writing about Meta scam
+    ad lawsuits — extending her original ProPublica Facebook beat. Multi-outlet career (ProPublica, The Markup, Wired) with
+    FTC government detour creates a rich three-phase framing comparison. Paired with Dhruv Mehrotra at Wired for investigations.'
