@@ -4,6 +4,58 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-02 07:00 PT — Type C: Ownership & Funding Deep Dive — Guardian ProRata Scale, Cloudflare Crawler Block, Circular Ecosystem
+
+### Focus
+Guardian hadn't had a Type C iteration since Jun 29 (3 days). Three significant new developments in the Guardian's AI content licensing ecosystem: (1) ProRata's 3x scale-up with Meta Llama dependency, (2) Cloudflare's Jul 1 announcement of Sep 15 mixed-use crawler default block, and (3) the emerging circular ecosystem where Guardian is invested at every layer of the publisher-vs-AI enforcement stack.
+
+### Changes
+1. **`profiles/guardian.yaml`** — ProRata entry expanded (+26 lines, -2 lines):
+   - Partner count updated: 500+ → 1,500+ media partners (3x growth since Jun 2025)
+   - Total funding: $75M+ ($25M Series A Mayfield/IdeaLab + $40M Series B Touring Capital Sep 2025)
+   - Gist Answers (AI search) reportedly profitable per CEO Bill Gross
+   - **CRITICAL FINDING: ProRata built on Meta's Llama LLM** — Guardian earns revenue through a platform powered by Meta's own open-source AI infrastructure. Creates unusual dependency chain where Guardian coverage of Meta's open-source AI strategy directly affects the platform that generates its licensing revenue.
+   - 4 source URLs added (BusinessWire, SiliconANGLE, Morningstar, INMA)
+
+2. **`profiles/guardian.yaml`** — New `cloudflare_publisher_infrastructure` section (+47 lines):
+   - Cloudflare Jul 1, 2026 announcement: Sep 15, 2026 deadline — mixed-use crawlers blocked from ad-hosting pages by default
+   - "Pay Per Use" replacing "Pay Per Crawl" (initial partners: Ceramic.ai, You.com)
+   - >50% of AI crawler traffic re-fetches unchanged pages (Cloudflare data)
+   - CEO Matthew Prince cited bots exceeding human traffic for first time
+   - **CIRCULAR ECOSYSTEM**: Guardian positioned at every enforcement layer:
+     - Policy: SPUR (co-founder)
+     - Tooling: Mercuri → Human Native (VC investment)
+     - Infrastructure: Cloudflare default block (acquired Human Native Jan 2026)
+     - Regulatory: CMA June 3 ruling
+     - Commercial: OpenAI + ProRata + Google pilot deals
+   - Source: TechCrunch Jul 1, 2026
+
+3. **`profiles/guardian.yaml`** — Two new testable hypotheses (#14-15):
+   - **#14 — Circular ecosystem incentive:** Does the structural investment in every enforcement layer create a financial incentive for more aggressive coverage of AI companies that don't have licensing deals with the Guardian?
+   - **#15 — ProRata-Llama paradox:** Does the Guardian's financial dependency on Meta's Llama (via ProRata) create an editorial blind spot on open vs closed AI coverage?
+
+4. **`profiles/guardian.yaml`** — Updated conflict count (Jul 2 morning addendum):
+   - Documents the three-layer enforcement stack (CMA regulatory + Cloudflare infrastructure + SPUR standards) and Guardian's unique nexus position
+   - Notes that no other tracked publication has this depth of structural alignment across all layers
+
+### Sources
+- TechCrunch: Cloudflare mixed-use crawler policy (Jul 1, 2026)
+- BusinessWire: ProRata 500+ partnerships milestone (Jun 2025)
+- SiliconANGLE: ProRata $40M Series B, Gist Answers profitable (Sep 2025)
+- Morningstar: ProRata Series B financing + Gist Answers launch (Sep 2025)
+- YouTube (csathy): ProRata 1,500+ partners, $70M+ funding (Feb 2026)
+- Fast Company: CMA June 3 "world first" decision (Jun 30, 2026)
+- AP (via WCIA): UK orders Google publisher opt-out (Jun 3, 2026)
+- Reuters: CMA Google AI search rules (Jun 3, 2026)
+- NY Post: Google Showcase → AI pilot squeeze (Jun 26, 2026)
+
+### Validation
+- Tests: 1169 passed, 2 xfailed, 0 failures
+- Profile: 1409 → 1506 lines (+97 net)
+- Commit: `9f01448`, pushed to `main`
+
+---
+
 ## 2026-07-02 06:00 PT — Type B: Journalist Research — Paul Mozur Deep Profile Expansion
 
 ### Focus
