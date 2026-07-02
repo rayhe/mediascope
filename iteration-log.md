@@ -10809,3 +10809,44 @@ Guardian underrepresented at 18 journalists vs Wired (54) and NYT (30). Added 2 
 - Also verified: all 6 example scripts parse cleanly, all imports resolve (3 optional deps not installed in env but documented in requirements.txt)
 - ADDING_PUBLICATIONS.md: no stale count references found
 - Amended commit: `8ec4911`
+
+---
+
+## 2026-07-02 15:00 PT — Type A: Article Deep Dive (Register Brain2Qwerty v2)
+
+### Article
+- **Publication:** The Register
+- **Title:** "Meta's non-surgical mind reading machine improves on prior projects, but still isn't great"
+- **Date:** 2026-06-30
+- **Topic:** Brain2Qwerty v2 non-invasive BCI
+
+### What Was Improved
+
+#### 1. `editorial_deflation` — 3 new patterns (framing.py)
+- "In other words, what we have here is a [diminutive] [noun]" — editorial reframing
+- "a neat/nice/interesting [noun], but" — damning with faint praise
+- "a bit/somewhat/rather useless/pointless/impractical" — casual dismissal via understatement
+
+#### 2. Adversarial device set expanded (sentiment.py)
+- `failure_precedent` added — links subject to own past failures (metaverse/crypto)
+- `editorial_deflation` added — subtle skepticism-by-understatement
+
+#### 3. Comparative framing vocabulary (sentiment.py)
+- Added: "well ahead", "remain(s) ahead", "far ahead", "still ahead", "not exactly a promising/promising"
+- Result: comparative_framing now correctly scores -0.5 (was 0.0)
+
+#### 4. New tests (test_editorial_deflation.py)
+- 6 new tests: "a bit useless", "a tad premature", "a neat experiment but", "an interesting study but", 2 negative cases
+
+#### 5. Documentation updated
+- METHODOLOGY.md, QUALITY_STANDARDS.md, AGENT_GUIDE.md: adversarial device set from 16→18 types
+- ARCHITECTURE.md: pattern count 317→320, test count 1174→1180
+- README.md: pattern count, test count, test file description updated
+
+### Known Remaining Gap
+- **Active-but-insufficient framing:** Overall tone remains 0.6036 despite 5 adversarial devices because agency is +0.33 (Meta is active). Framing correction Path A requires agency < -0.3. A new correction path for "active-but-dismissed" articles (raw ≥ 0.3, ≥3 adversarial, positive agency, headline_body_alignment < -0.5) would address this.
+
+### Stats
+- Tests: 1180 collected, 1178 passed, 2 xfailed (0 failures)
+- Patterns: 320 (was 317)
+- Files changed: 7 (framing.py, sentiment.py, test_editorial_deflation.py, test_structural_consistency.py, ARCHITECTURE.md, METHODOLOGY.md, QUALITY_STANDARDS.md, AGENT_GUIDE.md, README.md, + 2 new sample_output files)

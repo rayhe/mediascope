@@ -308,3 +308,74 @@ class TestConcessionThenDismissal:
         devices = detect_framing_devices(text)
         types = [d.device_type for d in devices]
         assert "editorial_deflation" not in types
+
+
+# -----------------------------------------------------------------------
+# Tests for new patterns added 2026-07-02 (Register Brain2Qwerty v2)
+# -----------------------------------------------------------------------
+
+
+class TestEditorialDeflationBrain2QwertyV2:
+    """Tests for editorial_deflation patterns from Brain2Qwerty v2 analysis."""
+
+    def test_a_bit_useless(self):
+        """'a bit useless' — casual dismissal via understatement."""
+        text = (
+            "More data won't fix the fact that training AI models to "
+            "pick out typed words from brain activity is a bit useless "
+            "when the target market doesn't have the ability to type."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "editorial_deflation" in types
+
+    def test_a_tad_premature(self):
+        """'a tad premature' variant."""
+        text = (
+            "The celebration is a tad premature, given that the technology "
+            "still requires subjects to be physically typing."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "editorial_deflation" in types
+
+    def test_neat_experiment_but(self):
+        """'a neat experiment, but' — damning with faint praise."""
+        text = (
+            "In other words, what we have here is a neat experiment with "
+            "some impressive improvements over prior noninvasive BCIs, "
+            "but nothing that's going to transform the landscape."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "editorial_deflation" in types
+
+    def test_interesting_study_but(self):
+        """'an interesting study, but' variant."""
+        text = (
+            "It's an interesting study with promising early results, "
+            "but the gap to clinical utility remains enormous."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "editorial_deflation" in types
+
+    def test_no_false_positive_neat_without_but(self):
+        """'neat experiment' without 'but' should not trigger."""
+        text = (
+            "The team produced a neat experiment that demonstrates "
+            "the potential of noninvasive brain-computer interfaces."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "editorial_deflation" not in types
+
+    def test_no_false_positive_a_bit_positive(self):
+        """'a bit' + positive adjective should not trigger."""
+        text = (
+            "The results were a bit surprising given the constraints "
+            "of the experimental setup."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "editorial_deflation" not in types

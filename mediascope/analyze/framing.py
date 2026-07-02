@@ -3333,6 +3333,39 @@ _EDITORIAL_DEFLATION_PATTERNS.extend([
         r"(?:way|bluntly|accurately|honestly|plainly|charitably|uncharitably)\b",
         re.IGNORECASE,
     ),
+    # --- Added 2026-07-02: Register Brain2Qwerty v2 analysis ---
+    # "In other words" as editorial reframing — signals the journalist is
+    # about to restate the source's claims in diminished terms.  "In other
+    # words, what we have here is a neat experiment" went undetected.
+    re.compile(
+        r"\bin\s+other\s+words,?\s+"
+        r"(?:what\s+we\s+have\s+(?:here\s+)?is|this\s+is|it(?:'s|\s+is))\s+"
+        r"(?:just|merely|only|basically|essentially|nothing\s+more\s+than)?\s*"
+        r"(?:a\s+)?(?:neat|nice|interesting|cool|cute|modest|small|incremental|minor"
+        r"|limited|preliminary|early|niche)\b",
+        re.IGNORECASE,
+    ),
+    # Faint praise / damning with diminutives: "a neat/nice/interesting
+    # experiment/trick/demo/step/start, but" — conspicuous understatement
+    # that deflates significance.  "a neat experiment with some impressive
+    # improvements ... but nothing that's going to transform" went undetected.
+    re.compile(
+        r"\ban?\s+(?:neat|nice|interesting|cool|cute|nifty|clever)\s+"
+        r"(?:experiment|trick|demo|demonstration|step|start|beginning|prototype|proof\s+of\s+concept"
+        r"|concept|piece\s+of\s+research|paper|study)"
+        r"(?:\s+(?:with|that|for|in)\s+[^,]{5,60})?"
+        r",?\s+but\b",
+        re.IGNORECASE,
+    ),
+    # "a bit/somewhat/rather useless/pointless/impractical" — casual
+    # dismissal phrased as understatement.  "a bit useless" in Register
+    # Brain2Qwerty v2 article went undetected.
+    re.compile(
+        r"\ba\s+(?:bit|little|tad|somewhat|rather)\s+"
+        r"(?:useless|pointless|impractical|irrelevant|misleading|disingenuous"
+        r"|premature|hollow|empty|circular|meaningless|underwhelming)(?:\b|,)",
+        re.IGNORECASE,
+    ),
 ])
 
 

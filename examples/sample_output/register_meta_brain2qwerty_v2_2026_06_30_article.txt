@@ -1,0 +1,40 @@
+Title: Meta's non-surgical mind reading machine improves on prior projects, but still isn't great
+Publication: The Register
+Date: 2026-06-30
+Author: Not credited (Register staff)
+URL: https://www.theregister.com/offbeat/2026/06/30/metas-non-surgical-mind-reading-machine-improves-on-prior-projects-but-still-isnt-great/
+Section: offbeat
+
+Subhead: 61% word accuracy is progress, but the system still relies on users typing and can't yet support real-time communication. Implanted BCIs remain well ahead
+
+For those who can't move their fingers to type, a brain-computer interface that can help them communicate by decoding neural activity is a lifeline. Researchers at Meta have been working on a noninvasive - no surgery required - brain-computer interface that is better than its predecessors, but still far from practically usable after more than a year of work.
+
+Meta announced the second iteration of its system designed to pick up and decode brain signals that fire when users are typing, called Brain2Qwerty, on Monday. The researchers explained in a pair of papers released alongside the announcement that B2Q v2 was able to achieve an average word accuracy of 61 percent (78 percent for the best-performing participant), which they said was a considerable improvement over previous noninvasive BCI systems that typically achieved only single-digit word accuracy.
+
+B2Q v2 was trained on some 22,000 sentences typed by nine participants over the course of 10 hours, each of whom was outfitted with a magnetoencephalography (MEG) headset while typing. Meta then routed their brain signals through end-to-end deep learning algorithms and large language models trained to separate brain signals from brain noise.
+
+Non-surgical BCIs typically suffer from limited signal-to-noise ratios that make decoding difficult, and B2Q tested both MEG and electroencephalography (EEG) signals. EEG is more common in noninvasive BCI experiments, but Meta found MEG was far more effective at correctly decoding typed sentences due to its higher signal-to-noise ratio.
+
+"A central objective of this study was to quantify the impact of the recording modality on decoding performance," the team wrote in one of their papers on the experiment. "While we expected MEG to surpass EEG, the magnitude of the observed difference was substantial."
+
+According to the team's research paper published in Nature Neuroscience on Monday, the Brain2Qwerty system achieved an average character error rate of 29 percent using MEG, whereas EEG recordings produced an average character error rate of 65 percent.
+
+The large language models that were trained to decode the MEG data into comprehensible sentences that (ideally) mimicked the ones the participants typed were the final part of the equation, Meta's researchers explained.
+
+"Fine-tuning large language models on neural data allows the system to leverage semantic context, bridging the gap between noisy brain recordings and coherent language," Meta said in its B2Q v2 announcement. "We also deployed AI agents to explore optimizations for the decoding pipeline, with final training configurations selected manually by engineers."
+
+That's definitely an upgrade in performance, but it's not exactly a promising, commercially viable pathway when recent surgical BCI systems are reaching 92 percent sentence-level accuracy in other experiments.
+
+Meta researchers argue the system's performance should continue improving as more training data becomes available, despite it still correctly decoding only around 61 percent of words on average. According to the team, B2Q v2's accuracy "improves log-linearly with data volume," which should mean that shoveling more data into the AI models behind B2Q v2 would continually narrow the gap.
+
+More data won't fix the fact that training AI models to pick out typed words from brain activity is a bit useless when the target market doesn't have the ability to type, which the Meta minds admit in the conclusion of their paper.
+
+The current design may work for patients with limited mobility, they note, but locked-in individuals unable to use their bodies in any way are unlikely to benefit.
+
+"Bridging the gap to locked-in individuals will likely involve adapting our task into a motor imagery paradigm and designing AI systems capable of robust generalization across participants," the team explained.
+
+Additionally, the current B2Q system remains confined to the lab because it still isn't practical for real-time communication. Per the researchers, the transformer and language model B2Q uses require a trial to conclude before they can produce output, meaning there's no feedback from B2Q until a participant is done being prompted with sentences and has typed them all out.
+
+Then there's the fact that B2Q "currently requires MEG segments to be aligned to specific keystroke onsets," which means the system still needs to know when users are pressing keys on a keyboard. Meta isn't sure it can get around that either, with the researchers noting that "the path toward achieving continuous decoding without these explicit triggers remains uncertain."
+
+In other words, what we have here is a neat experiment with some impressive improvements over prior noninvasive BCIs, but nothing that's going to transform the landscape anytime soon. If Zuck is thinking he has another possible pivot to medical tech in the form of B2Q, he's just as likely to beat the competition as he was when he decided to go all-in on the metaverse and crypto. ®

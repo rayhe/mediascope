@@ -664,6 +664,13 @@ NEGATIVE_COMPARISON: list[str] = [
     "while competitors", "compared unfavorably", "worse than",
     "less than", "behind", "failed where", "losing to",
     "outpaced by", "overshadowed by",
+    # Added 2026-07-02: Register Brain2Qwerty v2 analysis.  "Implanted BCIs
+    # remain well ahead" and "not exactly a promising ... pathway" were
+    # unfavorable comparisons that scored 0.0.
+    "well ahead", "remain ahead", "remains ahead",
+    "far ahead", "still ahead",
+    "not exactly a promising",
+    "not exactly promising",
 ]
 
 POSITIVE_COMPARISON: list[str] = [
@@ -1128,6 +1135,22 @@ _ADVERSARIAL_DEVICE_TYPES: set[str] = {
     # editorially adversarial piece because these were excluded.
     "isolation_framing",
     "pressure_language",
+    # Failure precedent links the subject to its own past failures
+    # (metaverse, crypto) to imply the current effort will also fail.
+    # Classic adversarial framing that VADER cannot detect because the
+    # text reads as factual comparison.  Discovered in Register
+    # Brain2Qwerty v2 article (Jun 30 2026): "just as likely to beat
+    # the competition as he was when he decided to go all-in on the
+    # metaverse and crypto" scored +0.60 overall despite clear
+    # editorial hostility.
+    "failure_precedent",
+    # Editorial deflation deflates ambitious claims through casual hedging
+    # or conspicuous understatement ("that's the idea, anyway", "a neat
+    # experiment, but").  VADER misses the skepticism because the surface
+    # language is mild.  Discovered in Register Brain2Qwerty v2 article
+    # (Jun 30 2026) where "a bit useless" and "neat experiment" evaded
+    # adversarial detection.
+    "editorial_deflation",
     # Self-referential investigation positions the publication as
     # investigative authority, anchoring credibility to prior adversarial
     # reporting.  Detected in Wired glasses launch review (Jun 23) where

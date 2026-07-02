@@ -428,7 +428,7 @@ The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overa
 | Trigger | Threshold |
 |---|---|
 | Raw composite tone | ≥ 0.0 (non-negative) |
-| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, editorial_aside)) |
+| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, editorial_aside, failure_precedent, editorial_deflation)) |
 | Agency attribution | < −0.3 (passive/target of scrutiny) |
 
 **Blend:** 10% raw + 90% framing-derived estimate. The framing estimate is computed from agency, emotional intensity, and adversarial device density.
