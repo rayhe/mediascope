@@ -10340,3 +10340,44 @@ Full 7-entry career profile tracking his entire trajectory:
 - Career entries: ~532 total
 - Source URLs: ~481 total
 - Tests: 1,169 passed, 2 xfailed (unchanged)
+
+## 2026-07-02 04:00 PT — Type B: Journalist/Publication Research — Guardian Personnel Expansion
+
+### Focus
+Guardian underrepresented at 18 journalists vs Wired (54) and NYT (30). Added 2 new non-byline executive/innovation profiles and expanded 1 existing reporter's early career. Also documented Guardian's Project Berger expansion (Jul 2026).
+
+### Changes
+
+#### 1. NEW: Caspar Llewellyn Smith — Guardian Chief AI Officer (7 career entries)
+- **Career arc:** Daily Telegraph Saturday arts/books writer (~1997-2003) → Guardian Observer Music Monthly founder (2003) → Head of Culture → editor of theguardian.com → Director of Digital Strategy → executive committee (2015) → Chief Product Officer (~5 yrs) → Chief AI Officer (2024-present)
+- **Education:** Cambridge University. Dropped out of City University postgraduate journalism MA to take Telegraph job.
+- **Why tracked:** Controls all 4 pillars of Guardian's AI strategy: external licensing (OpenAI partnership Feb 2025), internal AI deployment, strategic AI/journalism thinking, org-wide AI training. Set up Guardian AI Council. Embodies the central tension in Guardian's AI posture — critically covering AI while commercially licensing to OpenAI.
+- **Sources:** The Media Stack interview (Feb 2026), The Org profile, BusinessWire/Globe and Mail Foundation "Editing Democracy" panel (Apr 2026)
+
+#### 2. NEW: Chris Moran — Guardian Head of Editorial Innovation (7 career entries)
+- **Career arc:** Cambridge B.Ed. → primary school teacher (Brampton Junior School) → LAMDA-trained professional actor (West End, radio drama) → Guardian freelance sub (~1999) → SEO editorial exec → Audience Editor (originated role, 2011-16) → Editor, Strategic Projects (2016-20) → Head of Editorial Innovation (2020-present)
+- **Key contributions:** Co-creator of Ophan analytics (2012 hack day → 1000+ monthly users). Led content reduction project (cut stories by 1/3 while growing audience). Defined "responsible reach" concept.
+- **AI product decisions:** Launched Storylines (AI-curated related articles, 2026), built internal archive chatbot, explicitly refused public-facing chatbot. Led AI-powered 100-year anti-immigration rhetoric investigation (custom ML + LLM, UCL collaboration).
+- **Sources:** Muck Rack, The Org, WAN-IFRA, TalkingBizNews, Wavelength, Reuters Institute, Digiday Publishing Summit
+
+#### 3. EXPANDED: Johana Bhuiyan — early career + education (2 new entries)
+- Added World Policy Institute editorial assistant (~2012-2013): articles on Bangladesh democracy, inequality, WPJ Live events
+- Added PolicyMic (now Mic) writer (~2012-2013): political commentary (Nina Davuluri, Muslim Brotherhood, Rouhani)
+- Added education: Lehigh University BA in Journalism
+- Added personal context: born/raised NYC, hijab-wearing Muslim woman, post-9/11 surveillance experience directly informs tech accountability beat
+- Expanded Guardian entry with specific investigations: cattle monitoring/ICE surveillance (75-year data retention), LAPD predictive policing, Voyager scraping, Uyghur cameras
+- **Sources:** Muck Rack portfolio, The Org, Muslim in Plain Sight podcast, Follow Friday podcast, FannBoy Friday
+
+#### 4. Editorial change: Guardian Project Berger expansion (Jul 2026)
+- ~55 new permanent positions across UK, US, Australian offices
+- Multimillion, multiyear "Project Berger" investment (unveiled 2025): Guardian Studios (video-first journalism), new US video team, visual investigations, data viz, Guardian Australia social hosting
+- Analytically significant: Guardian expanding while many publishers retrench in face of AI
+
+### Stats
+- Journalists: 115 → 117 (2 new)
+- Multi-publication journalists: 113 → 115
+- Guardian-associated journalists: 18 → 20
+- Guardian editorial changes: 18 → 19
+- Tests: 1169 passed, 2 xfailed (0 failures)
+- Commit: `4e37687`
+
