@@ -10341,6 +10341,59 @@ Full 7-entry career profile tracking his entire trajectory:
 - Source URLs: ~481 total
 - Tests: 1,169 passed, 2 xfailed (unchanged)
 
+## 2026-07-02 05:00 PT — Type C: Ownership & Funding — OBBBA Tax Activation + Condé Nast Google Zero + AI Licensing Benchmarks
+
+### Focus
+Two-publication Type C iteration: MIT Tech Review (OBBBA endowment tax now ACTIVE as of July 1, 2026) and Wired/Condé Nast (Lynch "Google Zero" operational directive + industry AI licensing revenue benchmarks from Digiday Q1 2026 + Perplexity $42.5M publisher fund + Reddit stock update).
+
+### Finding 1: OBBBA Endowment Tax Now Active (MIT Tech Review, severity 4)
+
+MIT's fiscal year FY2027 started July 1, 2026 — the FIRST fiscal year under the 8% endowment excise tax. This is no longer hypothetical. Added peer impact context from multiple sources:
+
+- **Harvard:** $2.5B endowment income in FY2024. At 8% = ~$200M annual tax (vs ~$35M at old 1.4% rate). 37% of operating revenue from endowment. 80% restricted by donor conditions. Combined toll (endowment tax + federal funding freezes + DOJ lawsuits) could approach $1B annually. Hiring freeze continuing. $250M bridge funding allocated.
+- **Stanford:** Staff hiring freeze, 2025-26 budget cuts, layoffs, endowment payout up only 2.9%.
+- **MIT projection:** ~$325M tax liability (vs ~$57M at old rate), ~$268M annual increase.
+- **Aon confirmation:** Final bill includes international students in student-adjusted endowment calculation (unlike earlier House drafts). No faith-based exemption.
+
+**Sources:** Harvard Crimson, Harvard Magazine, Stanford News, Aon endowment tax analysis
+
+### Finding 2: Lynch "Google Zero" TBPN Directive (Wired/Condé Nast, severity 3)
+
+CEO Roger Lynch escalated beyond his Feb 2026 FT "not meaningful driver" rhetoric. At the TBPN technology show (May 2026), he disclosed that he has "instructed his internal sales teams to plan as if search traffic will disappear in the near future." This is a CORPORATE OPERATIONAL DIRECTIVE — Condé Nast is building revenue projections assuming zero Google search traffic. Timing (weeks after Apr 16 Self/Glamour/Wired Italy closures) suggests portfolio pruning is part of the same strategic response.
+
+**Source:** Adweek (May 2026) — https://www.adweek.com/media/conde-nast-events-revenue-2026/
+
+### Finding 3: Industry AI Licensing Revenue Benchmarks (Wired cross-reference, severity 3)
+
+Digiday Q1 2026 earnings roundup reveals first quarter where AI licensing produced "meaningful" publisher revenue:
+- USA Today: $33.75M "other" digital rev (+125.6% YoY), Meta deal driving
+- IAC/People Inc: $40.7M licensing+other (+26% YoY), primarily Meta deal. Barry Diller: lost 65% of Google referral traffic
+- NYT: $45.2M digital affiliate/licensing/other (+12.7% YoY), Amazon deal producing
+
+Analytical note: Condé Nast's 6-partner AI licensing portfolio (OpenAI, Amazon, Perplexity, Microsoft, Apple in negotiation, plus Meta excluded) likely generates $30-60M annually (2-3% of ~$1.9-2.0B revenue).
+
+**Source:** Digiday (May 2026) — https://digiday.com/media/media-briefing-publishers-cautiously-count-ai-licensing-as-notable-revenue-amid-programmatic-strain-in-q1-earnings/
+
+### Finding 4: Perplexity $42.5M Publisher Revenue Sharing Fund (Wired/CN, severity 2)
+
+Perplexity allocated $42.5M to pay publishers in its Comet Plus program. Revenue comes through $5/mo Comet Plus subscription — 80% to publishers, 20% to Perplexity. Partners include Time, LA Times, Fortune. Condé Nast (16 titles) already participating. Perplexity raised $100M at $18B valuation, announced intent to acquire Chrome for $34.5B if antitrust divestiture ordered.
+
+### Finding 5: Reddit Stock Surge (Advance/Wired, severity 2)
+
+Reddit surged +13.9% on Jul 2 to $197.76 (from ~$173.58 previous close). Advance stake ~$8.35B. Margin loan buffer comfortable at 28-36% above offering price.
+
+### Changes
+1. **`profiles/mit-tech-review.yaml`** — Added OBBBA activation status, peer impact context (Harvard, Stanford, Aon), MIT-specific tax projection (~$325M vs ~$57M). +30 lines.
+2. **`profiles/wired.yaml`** — Added Lynch "Google Zero" TBPN directive (May 2026), industry AI licensing revenue benchmarks (Q1 2026 Digiday), Perplexity $42.5M fund details, Reddit stock update. +64 lines net.
+
+### Stats
+- MIT Tech Review profile: 1,421 → 1,451 lines
+- Wired profile: 1,577 → 1,649 lines
+- Tests: 1169 passed, 2 xfailed (0 failures)
+- Commit: `fbd949e`
+
+---
+
 ## 2026-07-02 04:00 PT — Type B: Journalist/Publication Research — Guardian Personnel Expansion
 
 ### Focus
