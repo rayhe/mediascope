@@ -87,13 +87,19 @@ class CareerTracker:
             events: list[CareerEvent] = []
 
             for ev in entry.get("career", []):
+                start_raw = ev.get("start")
+                if not start_raw:
+                    # Skip career events with no start date — they represent
+                    # pre-journalism or undated roles that can't participate
+                    # in timeline-based analysis.
+                    continue
                 events.append(
                     CareerEvent(
                         journalist_name=name,
                         event_type=ev.get("event_type", "hired"),
                         publication_slug=ev["publication"],
                         role=ev.get("role", "staff_writer"),
-                        date_start=_parse_date(ev["start"]),
+                        date_start=_parse_date(start_raw),
                         date_end=_parse_date(ev.get("end")) if ev.get("end") else None,
                         source_url=ev.get("source_url", ""),
                         beat=ev.get("beat"),

@@ -1389,3 +1389,109 @@ class TestCorrectionPathDocumentation:
             f"If a path was added or removed, update EXPECTED_PATHS and "
             f"all three documentation files."
         )
+
+
+class TestJournalistCountConsistency:
+    """Guard against stale journalist counts across documentation files.
+
+    When journalists are added to profiles/careers/journalists.yaml,
+    all documentation files that reference the journalist count or
+    multi-publication count must be updated in the same commit.
+
+    This test class reads the authoritative count from the YAML data
+    and verifies that README.md, EDITORIAL_HISTORIES.md, and
+    careers_demo.py all reference the correct numbers.
+    """
+
+    @staticmethod
+    def _load_yaml_counts() -> tuple[int, int]:
+        """Return (total_journalists, multi_pub_journalists) from YAML."""
+        import yaml
+        yaml_path = _REPO_ROOT / "profiles" / "careers" / "journalists.yaml"
+        with open(yaml_path) as f:
+            data = yaml.safe_load(f)
+        journalists = data["journalists"]
+        total = len(journalists)
+        multi_pub = 0
+        for j in journalists:
+            pubs = set()
+            for ev in j.get("career", []):
+                pubs.add(ev.get("publication", ""))
+            if len(pubs) >= 2:
+                multi_pub += 1
+        return total, multi_pub
+
+    def test_readme_journalist_count(self):
+        """README.md must reference correct total journalist count."""
+        total, _ = self._load_yaml_counts()
+        doc = (_REPO_ROOT / "README.md").read_text()
+        expected = f"**{total} journalists**"
+        assert expected in doc, (
+            f"README.md should reference '{expected}' but doesn't. "
+            f"YAML has {total} journalists. Update the README to match."
+        )
+
+    def test_editorial_histories_total_count(self):
+        """EDITORIAL_HISTORIES.md must reference correct total count."""
+        total, _ = self._load_yaml_counts()
+        doc = (_REPO_ROOT / "docs" / "EDITORIAL_HISTORIES.md").read_text()
+        expected = f"**{total} journalists**"
+        assert expected in doc, (
+            f"EDITORIAL_HISTORIES.md should reference '{expected}' but doesn't. "
+            f"YAML has {total} journalists. Update the doc to match."
+        )
+
+    def test_editorial_histories_multi_pub_count(self):
+        """EDITORIAL_HISTORIES.md must reference correct multi-pub count."""
+        total, multi_pub = self._load_yaml_counts()
+        doc = (_REPO_ROOT / "docs" / "EDITORIAL_HISTORIES.md").read_text()
+        # Check for "{multi_pub} of these have multi-publication"
+        expected_phrase = f"{multi_pub} of these have multi-publication"
+        # Also check academic novelty: "with {multi_pub} having multi-publication"
+        alt_phrase = f"with {multi_pub} having multi-publication"
+        assert expected_phrase in doc or alt_phrase in doc, (
+            f"EDITORIAL_HISTORIES.md should reference {multi_pub} multi-pub "
+            f"journalists (from {total} total) but doesn't. "
+            f"Searched for '{expected_phrase}' and '{alt_phrase}'."
+        )
+
+    def test_careers_demo_count(self):
+        """careers_demo.py docstring must reference correct journalist count."""
+        total, _ = self._load_yaml_counts()
+        demo = (_REPO_ROOT / "examples" / "careers_demo.py").read_text()
+        expected = f"{total} tracked journalists"
+        assert expected in demo, (
+            f"careers_demo.py should reference '{expected}' but doesn't. "
+            f"YAML has {total} journalists. Update the docstring to match."
+        )
+
+    def test_careers_demo_count_in_readme_table(self):
+        """README.md careers_demo row must reference correct count."""
+        total, _ = self._load_yaml_counts()
+        doc = (_REPO_ROOT / "README.md").read_text()
+        expected = f"{total} journalists"
+        # The README table row for careers_demo.py should contain the count
+        assert expected in doc, (
+            f"README.md should reference '{expected}' but doesn't. "
+            f"YAML has {total} journalists."
+        )
+
+    def test_tracker_loads_all_journalists(self):
+        """CareerTracker.load() should parse all YAML journalists without error."""
+        from mediascope.careers.tracker import CareerTracker
+        t = CareerTracker()
+        t.load()
+        total_yaml, multi_pub_yaml = self._load_yaml_counts()
+        journalists = t.all_journalists()
+        assert len(journalists) == total_yaml, (
+            f"CareerTracker loaded {len(journalists)} journalists but "
+            f"YAML has {total_yaml}. Check for parse errors."
+        )
+        multi_pub_tracker = sum(
+            1 for j in journalists if j.n_publications >= 2
+        )
+        assert multi_pub_tracker == multi_pub_yaml, (
+            f"CareerTracker reports {multi_pub_tracker} multi-pub journalists "
+            f"but YAML counting yields {multi_pub_yaml}. Check publication "
+            f"slug consistency."
+        )

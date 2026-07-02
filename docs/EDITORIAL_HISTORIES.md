@@ -184,7 +184,7 @@ print(f"Portable: {decomp.portable_bias_score:.3f}")
 
 ## Starter Data
 
-MediaScope ships with career data for **108 journalists** across the 5 starter publications plus notable feeder outlets (The Verge, BuzzFeed News, Platformer, Reuters, Recode, WSJ, Bloomberg, The Telegraph, New Scientist, Gizmodo, The Daily Beast, Politico, Consumer Reports, The Information, and 155+ others). 106 of these have multi-publication careers suitable for migration analysis.
+MediaScope ships with career data for **110 journalists** across the 5 starter publications plus notable feeder outlets (The Verge, BuzzFeed News, Platformer, Reuters, Recode, WSJ, Bloomberg, The Telegraph, New Scientist, Gizmodo, The Daily Beast, Politico, Consumer Reports, The Information, and 155+ others). 108 of these have multi-publication careers suitable for migration analysis.
 
 ### High-Value Migration Events
 
@@ -206,6 +206,7 @@ MediaScope ships with career data for **108 journalists** across the 5 starter p
 | **Hibaq Farah** | NYT | Guardian | ~2023 | Reverse Atlantic crossing — US institutional norms meeting UK editorial culture |
 | **Kaitlyn Tiffany** | Vox → The Verge | The Atlantic | ~2020 | Digital-native → legacy prestige publication adaptation |
 | **Dell Cameron** | The Daily Dot → Vice → Gizmodo | Wired | ~2023 | Investigative security reporter across 4 outlets — consistent adversarial posture test |
+| **Louise Matsakis** | Mashable → Motherboard/VICE → Wired → Rest of World → NBC News → Semafor | Wired | 2024 | 7-outlet boomerang journalist — only tracked journalist to return to the same publication. China/e-commerce specialist, now Senior Business Editor shaping Big Tech coverage framing. Thompson-era vs. Drummond-era comparison |
 
 ### Editorial Leadership Changes
 
@@ -213,6 +214,7 @@ MediaScope ships with career data for **108 journalists** across the 5 starter p
 |---|---|---|---|
 | **Wired** | Katie Drummond → Global Editorial Director | Sept 2023 | Did Meta coverage get more adversarial? Most important change — career-long adversarial pipeline (Gizmodo→Vice→Wired) |
 | **Wired** | Leah Feiger → first-ever Politics Editor | Nov 2023 | Did Wired structurally shift from tech publication to tech-politics hybrid? |
+| **Wired** | Michael Calore → Director, Consumer Tech & Culture | Jan 2024 | Longest-tenured Wired editor (~2008–present, spanning 4 EICs). Oversees AR/VR/wearables/Gadget Lab podcast. Only non-adversarial-pipeline Director — institutional memory vs. Marchman/Schiffer adversarial hires |
 | **Wired** | Nicholas Thompson → EIC | Feb 2017 | Did political coverage expand? (Thompson later became Atlantic CEO) |
 | **Wired** | Gideon Lichfield → EIC | Sept 2020 | Double natural experiment: left MIT TR, arrived at Wired — test both source-side and dest-side effects |
 | **NYT** | Joseph Kahn → Executive Editor | June 2022 | Under his leadership, NYT sued OpenAI (Dec 2023). Did AI/Meta coverage shift? |
@@ -259,7 +261,7 @@ MediaScope's Editorial Histories module fills this gap by:
 1. Treating journalist migrations as natural experiments (novel application of DiD)
 2. Building a reusable career tracking infrastructure that any AI agent can extend
 3. Producing decomposition scores that are interpretable, comparable, and auditable
-4. Shipping with verified starter data for **108 journalists** across 170+ publications, with 106 having multi-publication careers suitable for migration analysis
+4. Shipping with verified starter data for **110 journalists** across 170+ publications, with 108 having multi-publication careers suitable for migration analysis
 
 ## References
 
