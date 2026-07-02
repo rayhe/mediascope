@@ -407,7 +407,7 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # Annotated real-article analyses
-├── tests/                       # 1180 tests across 44 test files (all from real articles)
+├── tests/                       # 1194 tests across 45 test files (all from real articles)
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
 │   ├── test_avclub_sardonic_framing.py # AV Club sardonic framing: sarcastic_correction sub-patterns, loaded_language ad hominem/industry-as-vice, ironic denial regex
@@ -423,6 +423,7 @@ mediascope/
 │   ├── test_nyt_article_improvements.py  # NYT-specific: agency, coercion, juxtaposition
 │   ├── test_nyt_school_targeting.py  # NYT school targeting: education topic, National PTA entity, safety team overrule hypocrisy, role-based adversarial stance
 │   ├── test_platform_death.py   # Platform eulogy detection, tone distinction
+│   ├── test_privacy_affiliation_fixes.py # Privacy/data topic MCI keyword expansion, source affiliation case-sensitivity
 │   ├── test_quality_standards.py # Quality enforcement: banned phrases, em dashes, scoring
 │   ├── test_scale_magnitude.py  # Scale/magnitude framing, raw number amplification
 │   ├── test_sentiment.py        # 8-dim scoring, framing correction, self-referential detection

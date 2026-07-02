@@ -58,6 +58,11 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "biometric data", "facial recognition", "location tracking",
         "cookies", "third-party tracking", "data privacy",
         "privacy policy", "data retention", "right to be forgotten",
+        "opt-in", "opt in", "opt-out", "opt out",
+        "sensitive data", "employee data", "employee tracking",
+        "data security", "data exposure", "data exposed",
+        "digital activity", "mouse-tracking", "mouse tracking",
+        "screen scraping", "screen scraped", "keystroke",
     ],
     "antitrust_regulation": [
         "antitrust", "anti-trust", "monopoly", "monopolistic",

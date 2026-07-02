@@ -1,0 +1,27 @@
+SOURCE: Reuters
+TITLE: Zuckerberg says AI agent development going slower than expected
+DATE: 2026-07-02
+AUTHORS: (Reuters staff; byline not captured in search preview)
+SECTION: Technology / Business
+URL: https://www.reuters.com/business/zuckerberg-says-ai-agent-development-going-slower-than-expected-2026-07-02/
+NOTE: Reuters is not one of the 5 tracked MediaScope publications (Wired, NYT, Guardian, Atlantic, MIT Tech Review). Used as a toolkit stress-test because all 5 tracked publication domains are blocked by browsing policy, preventing article retrieval. This article was selected for its density of entities, framing devices, and source types relevant to Meta coverage analysis.
+
+---
+
+Meta Chief Executive Mark Zuckerberg told an internal town hall on Thursday that AI agent development over the last four months had not "accelerated in the way we expected," according to a recording heard by Reuters.
+
+Zuckerberg added that a company reorganization that included major job cuts was not as "clean" as it could have been and that the company's bets on the new structure "haven't come to fruition yet."
+
+Meta is projected to spend as much as $145 billion on AI infrastructure this year, a significant portion of Big Tech's more than $700 billion outlay on the technology.
+
+Zuckerberg said he expects that the social media giant will begin to experience more significant benefits from its AI investments within the next three to six months.
+
+A Meta spokesperson declined to comment on Thursday.
+
+In the same town hall, Meta's chief technology officer, Andrew Bosworth, said a review of a recent data security incident with the company's controversial mouse-tracking software indicated that no employee data was included in AI training.
+
+Last month, Meta paused the program, which tracks employee mouse movements and digital activity for AI training, while investigating the exposure of sensitive data.
+
+If the company turns the program back on once the review is completed, it will be on an "opt-in" basis, he said.
+
+When Meta first installed the program on U.S. employees' computers in April, Bosworth told them there was no way to opt out.

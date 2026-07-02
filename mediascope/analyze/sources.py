@@ -235,8 +235,11 @@ def _extract_affiliation(context: str) -> str:
         re.compile(
             r"([A-Z][" + _INST_CHARS + r"]+?)"
             r"(?:'s|'s|\u2019s)\s+"
-            r"(?:(?:chief|vice|deputy|senior|executive|associate|assistant|managing)\s+)*"
-            r"(?:CEO|president|officer|director|chief|head|spokesperson|editor|counsel)",
+            r"(?:(?:[Cc]hief|[Vv]ice|[Dd]eputy|[Ss]enior|[Ee]xecutive|[Aa]ssociate|[Aa]ssistant|[Mm]anaging)\s+)*"
+            r"(?:(?:[Tt]echnology|[Ff]inancial|[Oo]perating|[Pp]roduct|[Mm]arketing|[Ii]nformation|[Ll]egal|[Rr]evenue|[Ss]trategy|"
+            r"[Ss]cience|[Dd]ata|[Cc]ommunications?|[Cc]reative|[Ee]ditorial|[Cc]ontent|[Pp]olicy|[Ee]ngineering|[Rr]esearch|[Dd]esign|"
+            r"[Ii]ndustrial|[Hh]uman\s+[Rr]esources)\s+)*"
+            r"(?:CEO|[Pp]resident|[Oo]fficer|[Dd]irector|[Cc]hief|[Hh]ead|[Ss]pokesperson|[Ee]ditor|[Cc]ounsel)",
             re.DOTALL,
         ),
         # Pattern 0b: "[Organization] [title phrase] [Name]" — non-possessive
@@ -247,12 +250,12 @@ def _extract_affiliation(context: str) -> str:
         # false matches like "Snap's Specs" beating "Meta" in context.
         re.compile(
             r"\b([A-Z][A-Za-z]+)"
-            r"\s+(?:(?:chief|vice|deputy|senior|executive|associate|assistant|managing|former|acting)\s+)*"
-            r"(?:(?:technology|financial|operating|product|marketing|information|legal|revenue|strategy|"
-            r"science|data|communications?|creative|editorial|content|policy|engineering|research|design|"
-            r"industrial|human\s+resources)\s+)*"
-            r"(?:officer|director|president|counsel|spokesperson|spokesman|spokeswoman|editor|secretary|"
-            r"manager|head|executive)\s+[A-Z]",
+            r"\s+(?:(?:[Cc]hief|[Vv]ice|[Dd]eputy|[Ss]enior|[Ee]xecutive|[Aa]ssociate|[Aa]ssistant|[Mm]anaging|[Ff]ormer|[Aa]cting)\s+)*"
+            r"(?:(?:[Tt]echnology|[Ff]inancial|[Oo]perating|[Pp]roduct|[Mm]arketing|[Ii]nformation|[Ll]egal|[Rr]evenue|[Ss]trategy|"
+            r"[Ss]cience|[Dd]ata|[Cc]ommunications?|[Cc]reative|[Ee]ditorial|[Cc]ontent|[Pp]olicy|[Ee]ngineering|[Rr]esearch|[Dd]esign|"
+            r"[Ii]ndustrial|[Hh]uman\s+[Rr]esources)\s+)*"
+            r"(?:[Oo]fficer|[Dd]irector|[Pp]resident|[Cc]ounsel|[Ss]pokesperson|[Ss]pokesman|[Ss]pokeswoman|[Ee]ditor|[Ss]ecretary|"
+            r"[Mm]anager|[Hh]ead|[Ee]xecutive)\s+[A-Z]",
             re.DOTALL,
         ),
         # Pattern 1: "at [the] [Institution Name][,. or attribution verb]"
