@@ -93,6 +93,14 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "addictive", "addictive designs", "addictive platforms",
         "teen ambassadors", "hooked", "hooking",
         "school-age", "school aged", "school-aged",
+        # Contractor / red-teaming involving minors
+        "posed as teens", "posed as minors", "posed as children",
+        "posing as teens", "posing as minors", "posing as children",
+        "impersonating teens", "impersonating minors",
+        "pretending to be teens", "pretending to be minors",
+        "pretending to be children",
+        "inappropriate with minors", "sexual content and minors",
+        "child labor", "child workers",
     ],
     "content_moderation": [
         "content moderation", "misinformation", "disinformation",
@@ -409,7 +417,7 @@ def classify_topic(
     keyword set size.
 
     When a headline is provided, topics whose keywords appear in the
-    headline receive a confidence boost (×1.5, capped at 1.0).  This
+    headline receive a confidence boost (×2.0, capped at 1.0).  This
     compensates for the well-known keyword-frequency problem where a
     topically dominant but secondary theme (e.g., "AI development")
     outscores the article's actual newsworthiness driver (e.g.,
@@ -461,9 +469,13 @@ def classify_topic(
         confidence = min(confidence, 1.0)
 
         # Headline boost: if any of this topic's keywords appear in the
-        # headline, boost confidence by 50% (capped at 1.0).  The headline
+        # headline, boost confidence by 100% (capped at 1.0).  The headline
         # signals the article's core newsworthiness, so a topic keyword
         # in the headline should outweigh mere body-frequency dominance.
+        # Originally 1.5×; increased to 2.0× after analysis of the Cannes
+        # contractors/teens article where child_safety keywords in the
+        # headline ("teens") were still outranked by ai_development's
+        # overwhelming body-text keyword density.
         if headline:
             headline_hit = False
             for pattern, _keyword in patterns:
@@ -471,7 +483,7 @@ def classify_topic(
                     headline_hit = True
                     break
             if headline_hit:
-                confidence = min(confidence * 1.5, 1.0)
+                confidence = min(confidence * 2.0, 1.0)
 
         scores.append(
             TopicScore(

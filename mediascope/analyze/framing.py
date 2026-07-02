@@ -4300,28 +4300,180 @@ def _detect_social_proof_amplification(text: str) -> list[FramingDevice]:
     return devices
 
 
+# --- Industry normalization undercut ---
+# Acknowledges that a practice is industry-wide then immediately undercuts
+# the normalization to single out the target.  E.g., "Other companies
+# also use contractors, but Meta's reliance is especially troubling."
+# The rhetorical move is: admit the norm to appear fair, then negate it.
+_INDUSTRY_NORMALIZATION_UNDERCUT_PATTERNS: list[re.Pattern] = [
+    # "Other companies [also/too] X, but [Target] Y" / "while [Target] Y"
+    re.compile(
+        r"\b(?:other companies|other tech (?:companies|giants|firms)|"
+        r"rivals?|competitors?|the industry|the sector|"
+        r"companies (?:like|such as)|other (?:platforms?|services?))\b"
+        r"[^.]{0,100}?"
+        r"\b(?:but|yet|however|though|although|still|nonetheless|"
+        r"while|whereas|nevertheless|even so)\b"
+        r"[^.]{0,100}?"
+        r"\b(?:especially|particularly|uniquely|notably|"
+        r"stands? out|far more|far worse|worse|worst|"
+        r"most egregious|most troubling|most alarming|"
+        r"most significant|most concerning|goes? further|"
+        r"dwarfs?|exceeds?|outpaces?|outstrips?|pales?)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "is not unique to [Target], but [Target]'s" / "is not alone in ... but"
+    re.compile(
+        r"\b(?:is|are|was|were) (?:not |hardly |far from )?"
+        r"(?:unique|alone|the only (?:one|company|platform|firm))"
+        r"\b[^.]{0,80}?"
+        r"\b(?:but|yet|however|though)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "industry-wide/common practice ... but [qualifier]"
+    re.compile(
+        r"\b(?:industry[- ]wide|common practice|standard practice|"
+        r"widespread|not uncommon|routine|commonplace)\b"
+        r"[^.]{0,100}?"
+        r"\b(?:but|yet|however|though|although|still|nonetheless)\b"
+        r"[^.]{0,80}?"
+        r"\b(?:scale|scope|extent|degree|magnitude|"
+        r"especially|particularly|uniquely|notably)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "[Target] is not the only ... but its [negative qualifier]"
+    re.compile(
+        r"\b(?:not the only|not alone in|others? (?:also|too))\b"
+        r"[^.]{0,120}?"
+        r"\bits?\s+(?:scale|scope|approach|reliance|dependence|"
+        r"involvement|track record|handling)\b"
+        r"[^.]{0,60}?"
+        r"\b(?:raises?|troubl|alarm|concern|question|problematic|"
+        r"unprecedented|extraordinary|extreme)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+_DEVICE_PATTERNS["industry_normalization_undercut"] = (
+    _INDUSTRY_NORMALIZATION_UNDERCUT_PATTERNS
+)
+
+
+# --- Delayed defense ---
+# Structural post-pass: detects when the subject company's response
+# or defense first appears in the last 35% of the article.  This is
+# a well-known editorial technique: bury the rebuttal after the damage
+# is done, so most readers form their opinion before encountering the
+# other side.
+#
+# Implementation: split text into paragraphs, find the first paragraph
+# containing corporate-response language, and flag if it starts after
+# the 65% mark.
+
+_CORPORATE_RESPONSE_PATTERNS: list[re.Pattern] = [
+    # "[Company] said / spokesperson said / in a statement"
+    re.compile(
+        r"\b(?:Meta|Google|Apple|Amazon|Microsoft|OpenAI|Anthropic|"
+        r"Tesla|Nvidia|Samsung|TikTok|ByteDance|X Corp|Snap(?:chat)?|"
+        r"the company|a company|a (?:Meta|Google|Apple)\s)"
+        r"\s*(?:said|told|stated|responded|declined|denied|acknowledged|"
+        r"confirmed|insisted|maintained|countered|explained|added)\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:spokesperson|spokeswoman|spokesman|representative|"
+        r"press officer|communications director|PR|public relations)\b"
+        r"\s*(?:for |at |of |from )?[^.]{0,40}?"
+        r"(?:said|told|stated|responded|declined|confirmed|wrote|emailed)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    re.compile(
+        r"\bin (?:a |an |its |their |the company['\u2019]s )?"
+        r"(?:statement|response|reply|email|comment|filing|blog post)\b"
+        r"[^.]{0,60}?"
+        r"(?:said|wrote|noted|stated|denied|confirmed|maintained|"
+        r"argued|explained|acknowledged|insisted)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "declined to comment" / "did not respond"
+    re.compile(
+        r"\b(?:declined to comment|declined to (?:respond|answer|address)|"
+        r"did not (?:respond|reply|comment|return)|"
+        r"would not (?:comment|say|confirm|deny)|"
+        r"chose not to (?:comment|respond)|"
+        r"has not (?:responded|commented|replied))\b",
+        re.IGNORECASE,
+    ),
+]
+
+
+def _detect_delayed_defense(text: str) -> list[FramingDevice]:
+    """Detect delayed defense — corporate response buried late in the article.
+
+    Fires when the first corporate-response paragraph appears after 65% of
+    the article text.  Requires the article to be at least 500 characters
+    (short articles don't have meaningful positional structure).
+    """
+    if len(text) < 500:
+        return []
+
+    text_len = len(text)
+    threshold = 0.65  # first response must appear after this fraction
+
+    # Find the earliest corporate response match
+    earliest_pos: int | None = None
+    earliest_evidence: str = ""
+    for pattern in _CORPORATE_RESPONSE_PATTERNS:
+        m = pattern.search(text)
+        if m and (earliest_pos is None or m.start() < earliest_pos):
+            earliest_pos = m.start()
+            earliest_evidence = m.group(0).strip()
+
+    if earliest_pos is None:
+        return []
+
+    # Check if the first response appears after the threshold
+    relative_pos = earliest_pos / text_len
+    if relative_pos < threshold:
+        return []
+
+    pct = int(relative_pos * 100)
+    evidence = f"First corporate response at {pct}% through article: \"{earliest_evidence}\""
+    if len(evidence) > 200:
+        evidence = evidence[:200] + "..."
+
+    return [
+        FramingDevice(
+            device_type="delayed_defense",
+            evidence_text=evidence,
+            start=earliest_pos,
+            end=min(earliest_pos + len(earliest_evidence), text_len),
+        )
+    ]
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 44 pattern-matched device types plus 5 structural
-    post-pass types (49 total).
+    Scans for 45 pattern-matched device types plus 6 structural
+    post-pass types (51 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (44): analogy_metaphor, anonymous_authority,
+    Pattern-matched (45): analogy_metaphor, anonymous_authority,
     anthropomorphization, catastrophizing, ceo_personalization,
     commodification_metaphor, confession_framing,
     corporate_reassurance_undercut, denial_contradiction,
     editorial_deflation, emotional_appeal,
     escalation_amplification, failure_precedent, false_balance,
     geopolitical_regulatory_pressure, guilt_by_association,
-    hypocrisy_frame, ironic_quotation, isolation_framing,
+    hypocrisy_frame, industry_normalization_undercut,
+    ironic_quotation, isolation_framing,
     juxtaposition, latecomer_narrative, litigation_framing,
     loaded_language, military_techno_optimism, outsourced_intensity,
     pathologizing_metaphor, power_asymmetry, precedent_analogy,
@@ -4333,8 +4485,9 @@ def detect_framing_devices(
     timeline_implication, two_tier_treatment,
     and worker_replacement_irony.
 
-    Structural post-pass (5): kicker_framing, analogy_stacking,
-    speculative_framing, trend_bundling, social_proof_amplification.
+    Structural post-pass (6): delayed_defense, kicker_framing,
+    analogy_stacking, speculative_framing, trend_bundling,
+    social_proof_amplification.
 
     Args:
         text: The article text to analyze.
@@ -4633,6 +4786,11 @@ def detect_framing_devices(
     # amplify a quoted position, converting individual opinion into
     # collective sentiment.
     devices.extend(_detect_social_proof_amplification(text))
+
+    # Post-pass: delayed defense — corporate response buried in the last
+    # 35% of the article, after the reader has absorbed the accusatory
+    # framing without counter-narrative.
+    devices.extend(_detect_delayed_defense(text))
 
     # Re-sort after adding post-pass results
     devices.sort(key=lambda d: d.start)
