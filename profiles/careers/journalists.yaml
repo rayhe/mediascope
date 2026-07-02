@@ -4141,44 +4141,100 @@ journalists:
     MBA. ANALYTICAL VALUE: Her beat (misinformation, AI detection, content moderation) is ground zero for Meta coverage bias
     — every content moderation decision Meta makes is filtered through her lens. Co-bylines with Stuart Thompson on Sora deepfake
     coverage. Based in San Francisco.'
-- career:
-  - beat: data visualization, interactive journalism
-    end: 2017-06
+- name: Stuart A. Thompson
+  notes: 'NYT misinformation reporter and visual journalist. Canadian origin. Career: Globe and Mail (Toronto, ~2011-2014)
+    → WSJ senior interactive graphics editor (2014) → WSJ graphics director → NYT Opinion graphics director (2017) → NYT news
+    desk misinformation reporter (2021). Pulitzer Prize winner (2015, WSJ "Medicare Unmasked"). Livingston Awards finalist
+    (2020). Data visualization specialist who brought visual/interactive skills to misinformation beat. Created "One Nation,
+    Tracked" / Privacy Project with Charlie Warzel (Dec 2019) — 50 billion location pings, 12 million Americans tracked, cited
+    in Drexel law review and FTC privacy proceedings. Also created QAnon chatroom immersive, Trump''s Lies, vaccine rollout
+    tracker. ANALYTICAL VALUE: Unusual background — visual/data journalist turned beat reporter. His visual investigation
+    skills (bystander video analysis, AI deepfake detection) give his coverage a forensic quality distinct from traditional
+    reporters. In 2026, spending significant time on midterm elections with the NYT politics team. Contact: stuart.thompson@nytimes.com.
+    META COVERAGE: Co-authored major 5-byline investigation on Meta/OpenAI/Google AI training data practices (Meta considered
+    buying Simon & Schuster). Reported on Meta''s fact-checking partners denying role in content decisions (Jan 2025). Co-authored
+    Canada news block investigation (Meta feeds). His misinformation beat inherently intersects Meta''s content moderation
+    decisions. Co-authors: Tiffany Hsu (deepfakes/Sora), Charlie Warzel (Privacy Project), Steven Lee Myers (misinformation),
+    Sheera Frenkel (civil war trends), Cade Metz + Cecilia Kang + Nico Grant (AI training data), Matina Stevis-Gridneff (Canada/Meta),
+    Yaryna Serkez (climate/opinion).'
+  career:
+  - publication: globe-and-mail
+    role: multimedia_editor
+    beat: digital journalism, data visualization, interactive news
+    start: 2011-06
+    end: 2014-05
     event_type: hired
-    notes: Graphics director overseeing 24+ editors and developers. Won Pulitzer Prize for "Medicare Unmasked" series. Finalist
-      for Pulitzer for "The Home Front" domestic gun violence series (2018). Steve Duenes praised his "big impact on quality
-      and ambition of the Journal's visual work."
-    publication: wall-street-journal
+    notes: First journalism position. Started as summer web editor, became multimedia editor, then joined mobile team. "In
+      the three years since Stuart joined the Globe as a summer web editor, he has become one of the newsroom's not-so-secret
+      weapons" — Kevin Siu, head of digital. "He has been a pioneer in The Globe's data journalism, visualization and interactive
+      efforts." Built Globe and Mail's interactive team alongside other coders with design and news sense. Left May 30, 2014
+      for WSJ. Canadian newspaper, Toronto.
+    source_url: https://cjf-fjc.ca/news/stuart-thompson-joins-wsj-senior-interactive-graphics-editor/
+  - publication: wall-street-journal
+    role: senior_interactive_graphics_editor
+    beat: data visualization, interactive journalism, elections
+    start: 2014-06
+    end: 2015-12
+    event_type: hired
+    notes: 'Joined as senior interactive graphics editor. Part of large team that won 2015 Pulitzer Prize for Investigative
+      Reporting for "Medicare Unmasked" — pioneering project giving Americans unprecedented access to previously confidential
+      Medicare provider data. Wikipedia confirms team included John Carreyrou, Chris Stewart, Rob Barry, Tom McGinty, Martin
+      Burch, Jon Keegan and Stuart Thompson. Created innovative interactive projects: election dashboards, Armchair Olympian
+      (mobile minigames for Olympics), NCAA bracket generator, Field Guide to Red and Blue America.'
+    source_url: https://cjf-fjc.ca/news/stuart-thompson-joins-wsj-senior-interactive-graphics-editor/
+  - publication: wall-street-journal
     role: graphics_director
-    source_url: https://nytco.com/press/stuart-thompson-joins-business/
-    start: 2012-01
-  - beat: visual journalism, interactive features (Opinion section)
+    beat: data visualization, interactive journalism, breaking news
+    start: 2016-01
+    end: 2017-04
+    event_type: promoted
+    notes: Promoted to graphics director overseeing 24-30+ editors, data journalists, designers and developers. Led visual
+      efforts for 2016 US presidential election with live election night dashboards. Created new team focused on enterprise
+      visual storytelling. Developed rapid-response breaking news protocol — reduced visual story production from next-day
+      to under 40 minutes (Nice attack coverage in 40 min). Steve Duenes (NYT graphics director) praised his "big impact on
+      quality and ambition of the Journal's visual work, lifting it substantially." Poynter profiled his breaking news workflow
+      (Jul 2016). Also finalist for 2018 Pulitzer finalist for NYT Opinion "Home Front" domestic violence series (credited
+      to WSJ-era team building, though the work itself was at NYT Opinion).
+    source_url: https://poynter.org/reporting-editing/2016/how-do-you-handle-waves-of-terrible-news-the-wall-street-journals-graphics-team-has-a-plan/
+  - publication: nytimes
+    role: graphics_director_opinion
+    beat: visual journalism, interactive features, privacy, politics (Opinion section)
+    start: 2017-04
     end: 2021-11
     event_type: hired
-    notes: 'Built Opinion''s interactive graphics unit. Award-winning features: Privacy Project, Trump''s Lies, QAnon audio
-      chatroom piece (immersive first-person with audio). Vaccine rollout tracker. Katie Kingsbury called him "incredibly
-      talented."'
-    publication: nytimes
-    role: writer_editor
-    source_url: https://nytco.com/press/stuart-thompson-joins-business/
-    start: 2017-07
-  - beat: misinformation, disinformation, AI-generated content
-    event_type: beat_change
-    notes: Moved from Opinion to news side as misinformation reporter on business/tech desk. Joined Ellen Pollock/Pui-Wing
-      Tam's team. "The chance to focus on beat reporting and writing, while also deploying the other tools in my toolkit,
-      was an attractive proposal." Co-bylined with Tiffany Hsu on OpenAI Sora deepfake investigation. Visual/data skills differentiate
-      his coverage from traditional misinformation beat reporters.
-    publication: nytimes
+    notes: 'Recruited as Graphics Director for Opinion — a newly created position. Started April 24, 2017. Announcement by
+      James Bennet (editorial page editor) and Steve Duenes (graphics director). Built Opinion''s visual journalism team from
+      scratch — player-coach role running the group while earning bylines. Award-winning features: Privacy Project / "One
+      Nation, Tracked" (Dec 2019, with Charlie Warzel — 50B location pings from 12M Americans, tracked Pentagon/White House/Mar-a-Lago
+      visitors, cited in law reviews and FTC proceedings), "Trump''s Lies" (interactive visualization), QAnon audio chatroom
+      immersive (first-person with audio), vaccine rollout tracker, "Just Call Them Climate Fires" (with Yaryna Serkez, Sep
+      2020). Livingston Awards finalist 2020 for "Excellence in National Reporting" for smartphone tracking series. Malofiej
+      International Infographic Awards: team won Best of Show print award + multiple gold/silver/bronze medals. Katie Kingsbury
+      called him "incredibly talented."'
+    source_url: https://nytco.com/press/stuart-thompson-named-graphics-director-opinion/
+  - publication: nytimes
     role: reporter
-    source_url: https://nytco.com/press/stuart-thompson-joins-business/
+    beat: misinformation, disinformation, AI-generated content, influence operations, internet
     start: 2021-12
-  name: Stuart A. Thompson
-  notes: 'NYT misinformation reporter and visual journalist. Career: WSJ (graphics director) → NYT Opinion (2017) → NYT news
-    desk misinformation (2021). Pulitzer Prize winner (WSJ Medicare Unmasked). Data visualization specialist who brought visual/interactive
-    skills to misinformation beat. Created QAnon chatroom immersive, Privacy Project, Trump''s Lies. ANALYTICAL VALUE: Unusual
-    background — visual/data journalist turned beat reporter. His visual investigation skills (bystander video analysis, AI
-    deepfake detection) give his coverage a forensic quality distinct from traditional reporters. Co-bylines with Tiffany
-    Hsu on Sora coverage.'
+    event_type: beat_change
+    notes: 'Moved from Opinion to news side as misinformation reporter on business/tech desk. Joined Ellen Pollock/Pui-Wing
+      Tam/Joe Plambeck''s team. "The chance to focus on beat reporting and writing, while also deploying the other tools in
+      my toolkit, was an attractive proposal." KEY RECENT ARTICLES (2025-2026): "I Tried to Sell My House With A.I." (May
+      2026), "After Correspondents Dinner Shooting, Rumors and Conspiracy Theories Swirl Online" (Apr 2026), "How Iran''s
+      Information War Machine Operates Online" (Apr 2026), "On Truth Social, Trump Supporters Fume About Iran War" (Apr 2026),
+      "Polymarket Says It Deals in Truth, but Its Social Feeds Are Filled With Falsehoods" (Mar 2026), "Netanyahu Posts ''Proof
+      of Life'' Video as A.I. Sows Doubts" (Mar 2026), "Cascade of A.I. Fakes About War With Iran Causes Chaos Online" (Mar
+      2026), "Can A.I. Detection Tools Really Spot Fake Images and Videos?" (Feb 2026), "In His Second Term, Trump Fuels a
+      ''Machinery'' of Misinformation" (with Steven Lee Myers, Mar 2025), "Mentions of ''Civil War'' Surge Online After Charlie
+      Kirk Shooting" (with Sheera Frenkel, Sep 2025), "Meta''s fact-checking partners PolitiFact and FactCheck.org deny role"
+      (Jan 2025), "News Is Blocked on Meta''s Feeds in Canada" (with Matina Stevis-Gridneff, 2025), "OpenAI''s Sora Makes
+      Disinformation Extremely Easy" (with Tiffany Hsu + Steven Lee Myers), "How Tech Giants Cut Corners to Harvest Data for
+      A.I." (with Cade Metz, Cecilia Kang, Sheera Frenkel, Nico Grant — 5-byline investigation on Meta/OpenAI/Google AI training
+      data, Meta''s Simon & Schuster deliberation), Deepfake video scam analysis (2,000+ deepfakes analyzed, Elon Musk in
+      ~25%), California Gov. Newsom AI deepfake regulation laws. In 2026, spending significant time on midterm elections with
+      NYT politics team. Visual/data skills differentiate his coverage from traditional misinformation beat reporters — brings
+      forensic, data-driven analysis to influence operations and AI-generated content.'
+    source_url: https://nytco.com/press/stuart-thompson-joins-business/
 - career:
   - beat: politics, border policy
     end: 2019-05
@@ -6228,10 +6284,10 @@ journalists:
     beat: general news, technology
     start: 2007-01
     end: 2009-01
-    notes: 'Early career at The Standard, a free English-language newspaper in Hong Kong (owned by Sing Tao News Corporation).
-      One of his first journalism positions in Asia. The Standard''s tabloid-format, general-audience framing provided foundational
+    notes: Early career at The Standard, a free English-language newspaper in Hong Kong (owned by Sing Tao News Corporation).
+      One of his first journalism positions in Asia. The Standard's tabloid-format, general-audience framing provided foundational
       reporting experience in the Hong Kong media ecosystem. Began learning Mandarin and building Asia-based source networks
-      during this period.'
+      during this period.
     source_url: https://usali.org/institute-news/paul-mozur-josh-chin-journalists-in-the-crossfire
   - event_type: hired
     publication: far-eastern-economic-review
@@ -6239,11 +6295,11 @@ journalists:
     beat: business, technology, China
     start: 2009-01
     end: 2011-01
-    notes: 'Reporter at the Far Eastern Economic Review (FEER), a Dow Jones publication focused on Asia-Pacific business, economics,
-      and politics. FEER was historically the most prestigious English-language journal of record for Asian affairs (founded
-      1946, published by Dow Jones from 1987). The magazine shifted from weekly print to online-only in 2009. Working at a
-      Dow Jones property provided the pipeline to the Wall Street Journal. NOTE: FEER ceased publication in late 2009; Mozur
-      may have transitioned to WSJ before its closure or worked on the digital remnant. Exact transition dates unclear.'
+    notes: 'Reporter at the Far Eastern Economic Review (FEER), a Dow Jones publication focused on Asia-Pacific business,
+      economics, and politics. FEER was historically the most prestigious English-language journal of record for Asian affairs
+      (founded 1946, published by Dow Jones from 1987). The magazine shifted from weekly print to online-only in 2009. Working
+      at a Dow Jones property provided the pipeline to the Wall Street Journal. NOTE: FEER ceased publication in late 2009;
+      Mozur may have transitioned to WSJ before its closure or worked on the digital remnant. Exact transition dates unclear.'
     source_url: https://usali.org/institute-news/paul-mozur-josh-chin-journalists-in-the-crossfire
   - event_type: hired
     publication: wall-street-journal
@@ -6295,12 +6351,12 @@ journalists:
       Computing Power Is Splitting the World Into Haves and Have-Nots" / "The Global A.I. Divide" (Jul 2025, with Satariano
       — only 32 nations have AI-specialized data centers, Oxford data). (4) Data centers causing water/power crises abroad
       in Mexico/Chile/Ireland (Oct 2025, with Satariano + Emiliano Rodríguez Mega — Microsoft Querétaro data center causing
-      blackouts and water outages). (5) Saudi Arabia AI data center geopolitics — $5B Red Sea data center caught between
-      US and Chinese tech giants (2025-2026). (6) Nvidia/Megaspeed Singapore company under US scrutiny for China ties —
-      executive Alice Huang (Huang Le) socialized with Jensen Huang, company poised to buy $2B of Nvidia AI tech (2026).
-      (7) UAE Sheikh Tahnoon bin Zayed Al Nahyan investigation — $1.5T sovereign wealth controller''s tech alliance with
-      Trump envoy Steve Witkoff (2026). The Mozur-Satariano partnership remains NYT''s primary engine for tech-geopolitics
-      investigations, now expanded to include global AI infrastructure and chip smuggling.'
+      blackouts and water outages). (5) Saudi Arabia AI data center geopolitics — $5B Red Sea data center caught between US
+      and Chinese tech giants (2025-2026). (6) Nvidia/Megaspeed Singapore company under US scrutiny for China ties — executive
+      Alice Huang (Huang Le) socialized with Jensen Huang, company poised to buy $2B of Nvidia AI tech (2026). (7) UAE Sheikh
+      Tahnoon bin Zayed Al Nahyan investigation — $1.5T sovereign wealth controller''s tech alliance with Trump envoy Steve
+      Witkoff (2026). The Mozur-Satariano partnership remains NYT''s primary engine for tech-geopolitics investigations, now
+      expanded to include global AI infrastructure and chip smuggling.'
     source_url: https://nytco.com/press/new-role-for-paul-mozur/
   co_authors:
   - name: Adam Satariano
@@ -6340,18 +6396,17 @@ journalists:
       expelled by CCP) make him one of few Western reporters who can work primary Chinese-language sources, government procurement
       databases, and surveillance company documentation directly. This ground-truth access is why his surveillance coverage
       has such high evidentiary density — he builds from documents, not secondhand claims.'
-    meta_coverage_pattern: 'Mozur''s Facebook/Myanmar reporting (2018) was foundational in establishing the "platform as enabler
-      of violence" narrative that subsequent anti-Meta coverage builds upon. That said, Mozur is NOT a Meta beat reporter —
-      he covers tech-state dynamics where Meta/Facebook intersects with authoritarian abuse. His framing is about the POWER
-      DYNAMICS between tech platforms and states, not about any single company. When he covers Meta, it''s through the lens
+    meta_coverage_pattern: Mozur's Facebook/Myanmar reporting (2018) was foundational in establishing the "platform as enabler
+      of violence" narrative that subsequent anti-Meta coverage builds upon. That said, Mozur is NOT a Meta beat reporter
+      — he covers tech-state dynamics where Meta/Facebook intersects with authoritarian abuse. His framing is about the POWER
+      DYNAMICS between tech platforms and states, not about any single company. When he covers Meta, it's through the lens
       of real-world harm (Myanmar genocide, China propaganda campaigns on Facebook) rather than corporate criticism. His coverage
-      is high-evidence, primary-source driven, and less editorialized than typical anti-Meta reporting.'
+      is high-evidence, primary-source driven, and less editorialized than typical anti-Meta reporting.
     beat_expansion_2025_2026: 'Significant beat expansion from surveillance/warfare to global AI infrastructure geopolitics:
       chip smuggling enforcement (Nvidia/Megaspeed, Super Micro), data center environmental impact (water/power in Mexico,
-      Chile, Ireland), sovereign AI ambitions (Saudi Arabia, UAE), and the global AI compute divide. The Mozur-Satariano
-      partnership has evolved from "tech enables authoritarianism" (2018-2023) to "AI infrastructure IS geopolitics" (2024-2026).
-      This shift positions Mozur at the center of NYT''s coverage of the chip war, data center backlash, and AI sovereignty
-      debates.'
+      Chile, Ireland), sovereign AI ambitions (Saudi Arabia, UAE), and the global AI compute divide. The Mozur-Satariano partnership
+      has evolved from "tech enables authoritarianism" (2018-2023) to "AI infrastructure IS geopolitics" (2024-2026). This
+      shift positions Mozur at the center of NYT''s coverage of the chip war, data center backlash, and AI sovereignty debates.'
 - career:
   - beat: technology, social media
     event_type: hired

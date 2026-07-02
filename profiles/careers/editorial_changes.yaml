@@ -518,6 +518,34 @@ editorial_changes:
     outgoing: null
     position: technology_reporter_apple_open
     source_url: https://talkingbiznews.com/they-re-hiring/ny-times-seeks-a-reporter-to-cover-apple/
+  - date: 2017-04
+    incoming: Stuart A. Thompson
+    notes: 'NEW POSITION CREATED: Thompson recruited from WSJ (graphics director, 3 years) to be Graphics Director
+      for Opinion — a brand-new position. Started April 24, 2017. Announced by James Bennet (editorial page editor)
+      and Steve Duenes (NYT graphics director). Built Opinion''s visual journalism team from scratch. Previously
+      at Globe and Mail (Toronto, ~2011-2014) and WSJ (2014-2017). Won 2015 Pulitzer Prize for Investigative
+      Reporting (WSJ "Medicare Unmasked"). Produced "One Nation, Tracked" / Privacy Project (Dec 2019, with
+      Charlie Warzel — Livingston Awards finalist 2020), Trump''s Lies, QAnon chatroom immersive, vaccine
+      rollout tracker. Team won Malofiej Best of Show print award. KEY MIGRATION: WSJ → NYT. His WSJ background
+      in visual data journalism (election dashboards, Medicare investigation) became the foundation for NYT
+      Opinion''s entirely new visual opinionizing capability.'
+    outgoing: null
+    position: graphics_director_opinion
+    source_url: https://nytco.com/press/stuart-thompson-named-graphics-director-opinion/
+  - date: 2021-11
+    incoming: Stuart A. Thompson
+    notes: 'INTERNAL MOVE: Thompson moved from Opinion (where he built and led visual journalism team) to news
+      side as misinformation/disinformation reporter on business/tech desk under Ellen Pollock, Pui-Wing Tam,
+      and Joe Plambeck. "The chance to focus on beat reporting and writing, while also deploying the other
+      tools in my toolkit, was an attractive proposal." Unique profile: visual/data journalist turned beat
+      reporter brings forensic analysis to influence operations and AI deepfake coverage. Co-bylines with
+      Tiffany Hsu (Sora deepfakes), Steven Lee Myers (Trump misinformation), Sheera Frenkel (civil war trends),
+      Cade Metz + Cecilia Kang + Nico Grant (AI training data). Meta-relevant work: 5-byline investigation on
+      AI training data (Meta considered buying Simon & Schuster), Meta fact-checking partner denials. In 2026,
+      spending significant time on midterm elections with politics team.'
+    outgoing: null
+    position: misinformation_reporter
+    source_url: https://nytco.com/press/stuart-thompson-joins-business/
   wired:
   - date: 2012-07
     incoming: Scott Dadich
