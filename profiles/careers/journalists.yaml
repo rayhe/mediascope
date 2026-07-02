@@ -2106,6 +2106,26 @@ journalists:
     12+ year tenure makes him a control case for measuring Drummond-era editorial posture changes. Forbes → Wired migration
     is also a cross-ownership test.'
 - career:
+  - beat: international affairs, global policy
+    end: 2013-06
+    event_type: hired
+    notes: Editorial assistant at the World Policy Institute, a think tank focused on global policy issues. Contributed articles
+      on international affairs including Bangladesh democracy, inequality documentation (The Other Hundred Project), and moderated
+      WPJ Live events. Earliest professional journalism work alongside Lehigh University BA in Journalism.
+    publication: world-policy-institute
+    role: editorial_assistant
+    source_url: https://muckrack.com/johana-bhuiyan/portfolio
+    start: 2012-06
+  - beat: politics, opinion, current affairs
+    end: 2013-06
+    event_type: freelance
+    notes: Writer for PolicyMic (now Mic), an online platform for millennial political commentary. Articles included opinions
+      on Miss America racial backlash (Nina Davuluri), Egyptian Muslim Brotherhood, Hassan Rouhani social media, and American
+      jihadi al-Amriki. Concurrent with World Policy Institute role. Built early byline portfolio.
+    publication: policymic
+    role: writer
+    source_url: https://muckrack.com/johana-bhuiyan/portfolio
+    start: 2012-09
   - beat: media
     end: 2015-06
     event_type: hired
@@ -2140,16 +2160,25 @@ journalists:
     event_type: hired
     notes: 'Senior tech reporter and editor, Guardian US. Based in San Francisco/New York. Specializes in surveillance of
       marginalized groups (BIPOC, Muslim, immigrant communities, gig workers). Investigated cattle monitoring company working
-      with ICE on migrant surveillance via ankle monitors, facial recognition, smartwatches. Key analytical value: how does
-      her surveillance-of-marginalized-communities framing interact with Guardian''s institutional editorial stance?'
+      with ICE on migrant surveillance via ankle monitors, facial recognition apps, smartwatches — storing collected data
+      for up to 75 years. Covered LAPD predictive policing program harms, Voyager social media scraping tool, camera company
+      identifying Uyghurs and alerting police. Appeared on Follow Friday podcast, Muslim in Plain Sight podcast, FannBoy Friday.
+      Tips: Johana.Bhuiyan@theguardian.com & 415-630-3604. Key analytical value: how does her surveillance-of-marginalized-communities
+      framing interact with Guardian''s institutional editorial stance? Her personal experience as a post-9/11 Muslim woman
+      in America provides unique reporting authority on surveillance topics.'
     publication: guardian
     role: senior_editor
     source_url: https://www.theguardian.com/profile/johana-bhuiyan
     start: 2021-08
   name: Johana Bhuiyan
-  notes: 'Key migration: POLITICO NY → BuzzFeed News → Recode → LA Times → Guardian. Surveillance of marginalized communities
-    specialist. Career arc moves from transportation reporting to tech accountability to surveillance-focused investigative
-    work.'
+  notes: 'Key migration: World Policy Institute + PolicyMic → POLITICO NY → BuzzFeed News → Recode → LA Times → Guardian.
+    Education: Lehigh University BA in Journalism. Born and raised New Yorker, hijab-wearing Muslim woman. Pronounced "Boo-Yah."
+    Surveillance of marginalized communities specialist (BIPOC, Muslim, immigrant communities, gig workers). Career arc moves
+    from international affairs/political commentary → media reporting → transportation tech → tech accountability → surveillance-focused
+    investigative work. At BuzzFeed, her Amazon tip-withholding reporting led to a massive settlement. At the Guardian, investigated
+    cattle monitoring company working with ICE to surveil migrants. Twitter/X handle: @JMBooyah. Based in San Francisco/New
+    York. KEY for MediaScope: her personal experience as a Muslim woman subjected to post-9/11 surveillance directly informs
+    her tech accountability framing — she covers surveillance not as abstract policy but as lived experience.'
 - career:
   - beat: education technology
     end: 2016-06
@@ -4335,10 +4364,10 @@ journalists:
     end: 2021-12
     event_type: hired
     notes: 'Senior reporter (2017-2019) then managing editor (Sep 2019-2021) at Earther, Gizmodo Media''s climate vertical.
-      "Starting this site as a writer and growing with it as an editor have been four of the most fulfilling years of my
-      life" (Twitter). Earther was known for aggressive, accessible climate journalism. Part of G/O Media portfolio. Also
-      Columbia University faculty member (Climate and Society MA program) during this period. Previously worked at Climate
-      Central and The Wall Street Journal. Education: Hampshire College BA, Columbia University MA (Climate and Society).'
+      "Starting this site as a writer and growing with it as an editor have been four of the most fulfilling years of my life"
+      (Twitter). Earther was known for aggressive, accessible climate journalism. Part of G/O Media portfolio. Also Columbia
+      University faculty member (Climate and Society MA program) during this period. Previously worked at Climate Central
+      and The Wall Street Journal. Education: Hampshire College BA, Columbia University MA (Climate and Society).'
     publication: earther
     role: managing_editor
     source_url: https://talkingbiznews.com/media-news/protocol-hires-kahn-to-start-climate-desk/
@@ -4346,9 +4375,9 @@ journalists:
   - beat: climate, clean tech
     end: 2023-06
     event_type: hired
-    notes: 'Hired to start Protocol''s climate news desk from scratch, hiring reporters to cover the intersection between
-      climate and tech. Protocol shut down in Nov 2022 (Insider acquisition). Brief tenure during outlet''s final months/
-      wind-down period.'
+    notes: Hired to start Protocol's climate news desk from scratch, hiring reporters to cover the intersection between climate
+      and tech. Protocol shut down in Nov 2022 (Insider acquisition). Brief tenure during outlet's final months/ wind-down
+      period.
     publication: protocol
     role: climate_editor
     source_url: https://talkingbiznews.com/media-news/protocol-hires-kahn-to-start-climate-desk/
@@ -4356,9 +4385,9 @@ journalists:
   - beat: climate, environment, environmental justice
     end: 2023-06
     event_type: hired
-    notes: 'Edited The Guardian''s "America''s Dirty Divide" series examining environmental inequalities and how climate
-      change could make things more harrowing. Contributing/series editor role, not full-time staff. Also a lecturer at
-      Columbia University during this period.'
+    notes: Edited The Guardian's "America's Dirty Divide" series examining environmental inequalities and how climate change
+      could make things more harrowing. Contributing/series editor role, not full-time staff. Also a lecturer at Columbia
+      University during this period.
     publication: guardian
     role: series_editor
     source_url: https://talkingbiznews.com/media-news/the-guardian-appoints-kahn-to-edit-americas-dirty-divide-series/
@@ -6512,10 +6541,10 @@ journalists:
   - beat: N/A (education)
     end: 2017-05
     event_type: education
-    notes: 'BFA in Fine Art from Carnegie Mellon University, School of Art. During her time at CMU, worked extensively at
-      the Frank-Ratchye STUDIO for Creative Inquiry. Founding member of Deep Lab, a cyberfeminist collective. Virtual Research
+    notes: BFA in Fine Art from Carnegie Mellon University, School of Art. During her time at CMU, worked extensively at the
+      Frank-Ratchye STUDIO for Creative Inquiry. Founding member of Deep Lab, a cyberfeminist collective. Virtual Research
       Fellow in the Free Art and Technology (F.A.T.) Lab artist group. Later endowed the "Maddy Varner Mastication Grant"
-      at CMU — a $500 award for "work that chews the cud."'
+      at CMU — a $500 award for "work that chews the cud."
     publication: carnegie-mellon
     role: student
     source_url: https://studioforcreativeinquiry.org/maddy-varner-mastication-grant-for-time-and-or-teeth-based-work
@@ -6523,8 +6552,8 @@ journalists:
   - beat: design, editorial
     end: 2017-06
     event_type: hired
-    notes: Associate designer. Assisted in launching a new editorial arm of the company. NewHive was a creative platform
-      for browser-based art and media. Brief tenure between graduation and journalism career.
+    notes: Associate designer. Assisted in launching a new editorial arm of the company. NewHive was a creative platform for
+      browser-based art and media. Brief tenure between graduation and journalism career.
     publication: newhive
     role: associate_designer
     source_url: https://talkingbiznews.com/media-news/markup-investigative-data-journalist-varner-departs/
@@ -6532,12 +6561,12 @@ journalists:
   - beat: technology, advertising, data
     end: 2019-06
     event_type: hired
-    notes: 'Contributing researcher. Wrote web scrapers, processed and cleaned PDF tables into usable data, and assisted
-      in reporting. Won Gerald Loeb Award for Beat Reporting (2018, for 2017 work) as part of team on "Monetizing Hate,"
-      a series examining Facebook''s advertising practices — one of the earliest systematic investigations into how Facebook''s
-      ad targeting enabled discriminatory and hateful content. KEY META CONNECTION: This series predates and prefigures the
-      framing used in later Meta ad-practices investigations. ProPublica co-founder Julia Angwin later founded The Markup
-      and recruited Varner there.'
+    notes: 'Contributing researcher. Wrote web scrapers, processed and cleaned PDF tables into usable data, and assisted in
+      reporting. Won Gerald Loeb Award for Beat Reporting (2018, for 2017 work) as part of team on "Monetizing Hate," a series
+      examining Facebook''s advertising practices — one of the earliest systematic investigations into how Facebook''s ad
+      targeting enabled discriminatory and hateful content. KEY META CONNECTION: This series predates and prefigures the framing
+      used in later Meta ad-practices investigations. ProPublica co-founder Julia Angwin later founded The Markup and recruited
+      Varner there.'
     publication: propublica
     role: contributing_researcher
     source_url: https://talkingbiznews.com/media-news/markup-investigative-data-journalist-varner-departs/
@@ -6545,14 +6574,14 @@ journalists:
   - beat: labor, education, politics, technology
     end: 2023-05
     event_type: hired
-    notes: 'Investigative data journalist. Four+ year tenure (pre-launch hire, signed April 2019 staff letter supporting
-      Julia Angwin as "Madeleine Varner" — full first name). Did NOT resign with five other staffers during the Angwin/Gardner
-      leadership crisis, stayed through the turmoil and Angwin''s return. Major investigations: (1) Amazon COVID warehouse
-      cases (2022, co-reported with Dara Kerr — used OCR on worker exposure notifications), (2) NYC school admissions algorithm
-      and segregation (Deadline Club Award finalist 2022), (3) "Google the Giant" series (Gerald Loeb Award finalist 2021,
-      Explanatory). Also covered Lyft/Uber multistate gig worker classification efforts. Techniques: FOIA requests, web
-      scraping, machine learning, linear regressions, browser extension building, notification bots. Concurrent: taught data
-      journalism at CUNY Graduate School of Journalism.'
+    notes: 'Investigative data journalist. Four+ year tenure (pre-launch hire, signed April 2019 staff letter supporting Julia
+      Angwin as "Madeleine Varner" — full first name). Did NOT resign with five other staffers during the Angwin/Gardner leadership
+      crisis, stayed through the turmoil and Angwin''s return. Major investigations: (1) Amazon COVID warehouse cases (2022,
+      co-reported with Dara Kerr — used OCR on worker exposure notifications), (2) NYC school admissions algorithm and segregation
+      (Deadline Club Award finalist 2022), (3) "Google the Giant" series (Gerald Loeb Award finalist 2021, Explanatory). Also
+      covered Lyft/Uber multistate gig worker classification efforts. Techniques: FOIA requests, web scraping, machine learning,
+      linear regressions, browser extension building, notification bots. Concurrent: taught data journalism at CUNY Graduate
+      School of Journalism.'
     publication: the-markup
     role: data_journalist
     source_url: https://talkingbiznews.com/media-news/markup-investigative-data-journalist-varner-departs/
@@ -6576,42 +6605,42 @@ journalists:
       (exec editor) announcement praised her FOIA skills, data journalism, and tool-building. Based in NYC office. Joined
       alongside Dhruv Mehrotra (returned from Bloomberg May 2026) — Barrett called them "a force to be reckoned with." Early
       Wired coverage focused on ICE/immigration enforcement, DHS surveillance, deportation agent doxing. KEY META CONNECTION
-      (Jul 2026): Wrote Wired story on Consumer Federation of America suing Meta for misleading consumers about scam ads
-      on Facebook and Instagram — extending her original ProPublica "Monetizing Hate" beat on Facebook ad practices. Also
-      contributed to Fast Company. FRAMING ANALYSIS: Career arc from ProPublica Facebook investigation → government regulator
-      (FTC) → Wired provides a three-phase natural experiment: (1) nonprofit investigative outlet, (2) regulatory enforcement
-      insider, (3) Condé Nast commercial media. The FTC tenure may amplify enforcement-framing in her Wired output vs a
-      journalist who came from purely commercial newsrooms.'
+      (Jul 2026): Wrote Wired story on Consumer Federation of America suing Meta for misleading consumers about scam ads on
+      Facebook and Instagram — extending her original ProPublica "Monetizing Hate" beat on Facebook ad practices. Also contributed
+      to Fast Company. FRAMING ANALYSIS: Career arc from ProPublica Facebook investigation → government regulator (FTC) →
+      Wired provides a three-phase natural experiment: (1) nonprofit investigative outlet, (2) regulatory enforcement insider,
+      (3) Condé Nast commercial media. The FTC tenure may amplify enforcement-framing in her Wired output vs a journalist
+      who came from purely commercial newsrooms.'
     publication: wired
     role: senior_writer
     source_url: https://talkingbiznews.com/media-news/wired-hires-varner-as-senior-writer/
     start: 2025-11
   name: Maddy Varner
-  notes: 'Full name: Madeleine "Maddy" Varner. Key migration: ProPublica → The Markup → FTC → Wired. Investigative data
-    journalist and technologist. Education: CMU BFA Fine Art (2017), founding member of Deep Lab cyberfeminist collective.
-    Won Gerald Loeb Award (2018) at ProPublica for "Monetizing Hate" examining Facebook ad practices — one of the earliest
-    systematic Meta/Facebook investigations. Gerald Loeb finalist (2021) at The Markup for "Google the Giant." FTC technologist
-    in residence gave her government insider perspective before joining Wired. At Wired, already writing about Meta scam
-    ad lawsuits — extending her original ProPublica Facebook beat. Multi-outlet career (ProPublica, The Markup, Wired) with
-    FTC government detour creates a rich three-phase framing comparison. Paired with Dhruv Mehrotra at Wired for investigations.'
+  notes: 'Full name: Madeleine "Maddy" Varner. Key migration: ProPublica → The Markup → FTC → Wired. Investigative data journalist
+    and technologist. Education: CMU BFA Fine Art (2017), founding member of Deep Lab cyberfeminist collective. Won Gerald
+    Loeb Award (2018) at ProPublica for "Monetizing Hate" examining Facebook ad practices — one of the earliest systematic
+    Meta/Facebook investigations. Gerald Loeb finalist (2021) at The Markup for "Google the Giant." FTC technologist in residence
+    gave her government insider perspective before joining Wired. At Wired, already writing about Meta scam ad lawsuits —
+    extending her original ProPublica Facebook beat. Multi-outlet career (ProPublica, The Markup, Wired) with FTC government
+    detour creates a rich three-phase framing comparison. Paired with Dhruv Mehrotra at Wired for investigations.'
 - name: Kate Taylor
-  notes: 'Key migration: Business Insider → Columbia MBA → Wired. Investigative journalist known for exposés that became
-    documentaries: Dan Schneider/Nickelodeon scandal → "Quiet on Set: The Dark Side of Kids TV" (HBO/Discovery, Emmy-nominated,
-    she served as executive producer), Brandy Melville → "Brandy Hellville & the Cult of Fast Fashion" (HBO, she served as
-    consultant). At Business Insider for ~9 years (Oct 2015-~2024) covering fast food, retail, entertainment, and corporate
-    investigations. Won NAREE Silver Medal (2023, Stefan Solviev real estate investigation), LA Press Club 2nd place
-    (ANTM investigation, Entertainment/Arts Investigative Reporting). Appeared on History Channel "Food That Built America,"
-    GMA, "Last Week with John Oliver." Education: Dartmouth College BA, Columbia Business School MBA (completed 2026 — pursued
-    to "better understand the companies she covers"). At Wired starting Jul 1, 2026: senior writer on business desk covering
-    future of work and AI impact on employment. Reports to Zoë Schiffer (Director, Business & Industry). KEY FOR MEDIASCOPE:
-    (1) NOT from the adversarial tech journalism pipeline (Gizmodo/Vice/Guardian) — brings entertainment/business investigative
-    DNA from Business Insider; (2) Her beat (AI and work) directly overlaps with Samantha Oltman''s "Reworked" AI/work series
-    at the Guardian (Oltman departed Jun 2026 for Bloomberg) — Wired now directly competes with Bloomberg and Guardian on this
-    coverage area; (3) Investigative-first methodology (she turned print investigations into documentaries) may produce
-    deeper, more evidence-based framing than standard tech reporting; (4) MBA from Columbia adds business analysis depth
-    unusual among Wired writers — may modulate adversarial tone with financial literacy; (5) Business desk expansion under
-    Schiffer now has Taylor (AI/work), Zeff (AI business), Matsakis + Kleeman (senior editors), Tiku (Big Tech), plus
-    the unfilled chief business correspondent role.'
+  notes: 'Key migration: Business Insider → Columbia MBA → Wired. Investigative journalist known for exposés that became documentaries:
+    Dan Schneider/Nickelodeon scandal → "Quiet on Set: The Dark Side of Kids TV" (HBO/Discovery, Emmy-nominated, she served
+    as executive producer), Brandy Melville → "Brandy Hellville & the Cult of Fast Fashion" (HBO, she served as consultant).
+    At Business Insider for ~9 years (Oct 2015-~2024) covering fast food, retail, entertainment, and corporate investigations.
+    Won NAREE Silver Medal (2023, Stefan Solviev real estate investigation), LA Press Club 2nd place (ANTM investigation,
+    Entertainment/Arts Investigative Reporting). Appeared on History Channel "Food That Built America," GMA, "Last Week with
+    John Oliver." Education: Dartmouth College BA, Columbia Business School MBA (completed 2026 — pursued to "better understand
+    the companies she covers"). At Wired starting Jul 1, 2026: senior writer on business desk covering future of work and
+    AI impact on employment. Reports to Zoë Schiffer (Director, Business & Industry). KEY FOR MEDIASCOPE: (1) NOT from the
+    adversarial tech journalism pipeline (Gizmodo/Vice/Guardian) — brings entertainment/business investigative DNA from Business
+    Insider; (2) Her beat (AI and work) directly overlaps with Samantha Oltman''s "Reworked" AI/work series at the Guardian
+    (Oltman departed Jun 2026 for Bloomberg) — Wired now directly competes with Bloomberg and Guardian on this coverage area;
+    (3) Investigative-first methodology (she turned print investigations into documentaries) may produce deeper, more evidence-based
+    framing than standard tech reporting; (4) MBA from Columbia adds business analysis depth unusual among Wired writers —
+    may modulate adversarial tone with financial literacy; (5) Business desk expansion under Schiffer now has Taylor (AI/work),
+    Zeff (AI business), Matsakis + Kleeman (senior editors), Tiku (Big Tech), plus the unfilled chief business correspondent
+    role.'
   career:
   - publication: forbes
     role: intern
@@ -6637,8 +6666,8 @@ journalists:
     end: 2019-01
     event_type: hired
     notes: Joined Business Insider as a reporter covering fast food, restaurants, and retail. Covered McDonald's franchise
-      system (systemic racism lawsuit), Subway turmoil, MyPillow saga, Taco Bell viral stories. Built deep sourcing in
-      franchise/restaurant industry.
+      system (systemic racism lawsuit), Subway turmoil, MyPillow saga, Taco Bell viral stories. Built deep sourcing in franchise/restaurant
+      industry.
     source_url: https://talkingbiznews.com/media-news/insider-senior-correspondent-taylor-joining-features-team/
   - publication: business-insider
     role: senior_features_correspondent
@@ -6646,15 +6675,15 @@ journalists:
     start: 2019-01
     end: 2024-12
     event_type: promoted
-    notes: 'Promoted to features team, then senior features correspondent. Shifted from beat reporting to long-form
-      investigative features. Marquee investigations: (1) Dan Schneider/Nickelodeon exposé — became foundation for "Quiet
-      on Set: The Dark Side of Kids TV" (Investigation Discovery/HBO, 2024, Max''s most successful title ever, Emmy
-      nomination for Outstanding Documentary or Nonfiction Series); Taylor served as executive producer. (2) Brandy Melville
-      investigation — became "Brandy Hellville & the Cult of Fast Fashion" (HBO documentary); Taylor served as consultant.
-      (3) Subway franchise collapse. (4) America''s Next Top Model behind-the-scenes drama. (5) Stefan Solviev (volatile
-      real estate heir) — won NAREE Silver Medal 2023. (6) Fake Birkin socialite scandal. TV appearances: History Channel
-      "Food That Built America" and "Mega-Brands That Built America" (multiple seasons), GMA, "Last Week with John Oliver,"
-      "The Brian Lehrer Show." Personal site: katehtaylor.com, Twitter: @Kate_H_Taylor.'
+    notes: 'Promoted to features team, then senior features correspondent. Shifted from beat reporting to long-form investigative
+      features. Marquee investigations: (1) Dan Schneider/Nickelodeon exposé — became foundation for "Quiet on Set: The Dark
+      Side of Kids TV" (Investigation Discovery/HBO, 2024, Max''s most successful title ever, Emmy nomination for Outstanding
+      Documentary or Nonfiction Series); Taylor served as executive producer. (2) Brandy Melville investigation — became "Brandy
+      Hellville & the Cult of Fast Fashion" (HBO documentary); Taylor served as consultant. (3) Subway franchise collapse.
+      (4) America''s Next Top Model behind-the-scenes drama. (5) Stefan Solviev (volatile real estate heir) — won NAREE Silver
+      Medal 2023. (6) Fake Birkin socialite scandal. TV appearances: History Channel "Food That Built America" and "Mega-Brands
+      That Built America" (multiple seasons), GMA, "Last Week with John Oliver," "The Brian Lehrer Show." Personal site: katehtaylor.com,
+      Twitter: @Kate_H_Taylor.'
     source_url: https://katehtaylor.com/about
   - publication: columbia-business-school
     role: mba_student
@@ -6663,8 +6692,8 @@ journalists:
     end: 2026-06
     event_type: education
     notes: Pursued MBA at Columbia Business School specifically "to better understand the companies she covers" (per Brian
-      Barrett's announcement). Completed before joining Wired. This education gap is analytically significant — it shows
-      Taylor deliberately built financial/corporate analysis skills to complement investigative journalism instincts.
+      Barrett's announcement). Completed before joining Wired. This education gap is analytically significant — it shows Taylor
+      deliberately built financial/corporate analysis skills to complement investigative journalism instincts.
     source_url: https://talkingbiznews.com/media-news/wired-hires-taylor-as-senior-writer/
   - publication: wired
     role: senior_writer
@@ -6675,12 +6704,12 @@ journalists:
       AI is impacting the full spectrum of employment" — Barrett: "You don''t need me to tell you how important a beat this
       is and will continue to be." Reports to Zoë Schiffer (Director, Business & Industry). Based in New York office. Will
       "tell those stories through a mix of news hits and the deeper investigative features that have been her trademark."
-      The AI-and-work beat directly competes with Guardian''s "Reworked" series (lost founding editor Samantha Oltman to
-      Bloomberg Jun 2026) and Bloomberg''s expanded AI/VC coverage under Oltman and Sarah Frier. This beat is the human-impact
-      side of Meta''s AI strategy — workforce automation, contractor conditions (Covalen/Cannes), content moderation labor,
-      and AI-enabled job displacement are all squarely in Taylor''s coverage area. INSTITUTIONAL FRAMING TEST: Does an
-      investigative journalist from entertainment/business journalism (BI) adopt Wired''s adversarial tech posture, or does
-      her investigative-documentary methodology produce a distinct framing signature?'
+      The AI-and-work beat directly competes with Guardian''s "Reworked" series (lost founding editor Samantha Oltman to Bloomberg
+      Jun 2026) and Bloomberg''s expanded AI/VC coverage under Oltman and Sarah Frier. This beat is the human-impact side
+      of Meta''s AI strategy — workforce automation, contractor conditions (Covalen/Cannes), content moderation labor, and
+      AI-enabled job displacement are all squarely in Taylor''s coverage area. INSTITUTIONAL FRAMING TEST: Does an investigative
+      journalist from entertainment/business journalism (BI) adopt Wired''s adversarial tech posture, or does her investigative-documentary
+      methodology produce a distinct framing signature?'
     source_url: https://talkingbiznews.com/media-news/wired-hires-taylor-as-senior-writer/
 - career:
   - publication: techcrunch
@@ -6689,8 +6718,8 @@ journalists:
     start: 2014-01
     end: 2014-06
     event_type: hired
-    notes: 'Internship at TechCrunch, one of the top tech news outlets. First journalism industry role after college. Got his
-      start in the industry here per multiple TBN hiring announcements.'
+    notes: Internship at TechCrunch, one of the top tech news outlets. First journalism industry role after college. Got his
+      start in the industry here per multiple TBN hiring announcements.
     source_url: https://talkingbiznews.com/they-talk-biz-news/https-twitter-com-julianchokkattu-status-1188801470893887488/
   - publication: star-ledger
     role: page_producer
@@ -6698,8 +6727,8 @@ journalists:
     start: 2014-07
     end: 2016-06
     event_type: hired
-    notes: 'Page producer at The Star-Ledger (Newark, NJ), the largest daily newspaper in New Jersey. Page production role —
-      layout, copy flow, editorial packaging — not a byline-generating beat. The Star-Ledger is owned by Advance Publications
+    notes: 'Page producer at The Star-Ledger (Newark, NJ), the largest daily newspaper in New Jersey. Page production role
+      — layout, copy flow, editorial packaging — not a byline-generating beat. The Star-Ledger is owned by Advance Publications
       (same parent company as Condé Nast/Wired and Reddit). ANALYTICAL VALUE: Chokkattu''s very first post-college newspaper
       job was at an Advance Publications property. His entire career from Star-Ledger → Wired stays within the Advance/Condé
       Nast ecosystem, raising the question of whether his editorial instincts were shaped within a single ownership culture.
@@ -6712,11 +6741,11 @@ journalists:
     start: 2016-07
     end: 2019-10
     event_type: hired
-    notes: 'Mobile and wearables editor at Digital Trends, steering coverage and reviews of smartphones and smartwatches. By
+    notes: Mobile and wearables editor at Digital Trends, steering coverage and reviews of smartphones and smartwatches. By
       CES 2018 held title of "section editor" overseeing the mobile section with associate editor Andy Boxall. Prolific reviewer
       — covered MWC, CES, and major phone launches (Samsung Galaxy, Google Pixel, BlackBerry, Nokia, Xiaomi). 3+ year tenure.
       Digital Trends is an independent tech media company (not owned by a major conglomerate). This is the ONLY period of
-      Chokkattu''s career outside Advance Publications properties.'
+      Chokkattu's career outside Advance Publications properties.
     source_url: https://talkingbiznews.com/they-talk-biz-news/https-twitter-com-julianchokkattu-status-1188801470893887488/
   - publication: wired
     role: senior_associate_editor
@@ -6724,10 +6753,10 @@ journalists:
     start: 2019-10
     end: 2022-01
     event_type: hired
-    notes: 'Hired as senior associate editor for reviews. Led the Wired Reviews team, editing, managing, and testing gadgets
-      from electric scooters to office chairs. Part of Wired''s product-evaluation pipeline — his reviews set the tone for
+    notes: Hired as senior associate editor for reviews. Led the Wired Reviews team, editing, managing, and testing gadgets
+      from electric scooters to office chairs. Part of Wired's product-evaluation pipeline — his reviews set the tone for
       how Wired frames hardware launches. Returned to the Advance Publications/Condé Nast ecosystem after 3 years at Digital
-      Trends.'
+      Trends.
     source_url: https://talkingbiznews.com/they-talk-biz-news/https-twitter-com-julianchokkattu-status-1188801470893887488/
   - publication: wired
     role: reviews_editor
@@ -6735,9 +6764,9 @@ journalists:
     start: 2022-01
     end: 2024-05
     event_type: promoted
-    notes: 'Promoted to reviews editor. Expanded testing to include smart glasses and VR/AR headsets as those categories
-      emerged. Regular on Wired''s Gadget Lab podcast. Appearances on NPR (CES coverage). Reviewed Google Pixel Watch,
-      Nothing CMF Phone 1, and other major hardware launches. Techmeme routinely features his reviews.'
+    notes: Promoted to reviews editor. Expanded testing to include smart glasses and VR/AR headsets as those categories emerged.
+      Regular on Wired's Gadget Lab podcast. Appearances on NPR (CES coverage). Reviewed Google Pixel Watch, Nothing CMF Phone
+      1, and other major hardware launches. Techmeme routinely features his reviews.
     source_url: https://buzzsumo.com/journalist/julian-chokkattu/
   - publication: wired
     role: deputy_editor_reviews
@@ -6745,31 +6774,205 @@ journalists:
     start: 2024-05
     end: 2026-02
     event_type: promoted
-    notes: 'Deputy Editor, Reviews (per Techmeme byline credits at Google I/O 2024). Oversaw full reviews operation. During
-      this period, reviewed Meta Ray-Ban smart glasses, Google hardware, Samsung foldables — directly shaping Wired''s
-      consumer perception of Meta products. Interviewed Google VP Rishi Chandra on Google Health/Fitbit strategy.'
+    notes: Deputy Editor, Reviews (per Techmeme byline credits at Google I/O 2024). Oversaw full reviews operation. During
+      this period, reviewed Meta Ray-Ban smart glasses, Google hardware, Samsung foldables — directly shaping Wired's consumer
+      perception of Meta products. Interviewed Google VP Rishi Chandra on Google Health/Fitbit strategy.
   - publication: wired
     role: senior_editor
     beat: gear, hardware reviews, smart glasses, VR/AR, wearables, consumer technology
     start: 2026-02
     event_type: promoted
-    notes: 'Promoted to Senior Editor for Gear (announced ~February 2026 per TBN). No longer solely reviews — expanded to gear
-      editorial. Wrote Meta Display glasses launch review (June 23, 2026) — the first Wired review of Meta''s self-branded
+    notes: 'Promoted to Senior Editor for Gear (announced ~February 2026 per TBN). No longer solely reviews — expanded to
+      gear editorial. Wrote Meta Display glasses launch review (June 23, 2026) — the first Wired review of Meta''s self-branded
       smart glasses ($299). 3,627+ total articles at Wired per JournalistHunt. KEY for MediaScope: (1) He is Wired''s primary
-      hardware reviewer for Meta products — his framing of Meta glasses, Quest headsets, and wearables shapes consumer
-      perception through one of the most influential tech publications; (2) Unlike most tracked journalists who are
-      investigative/adversarial, Chokkattu is a PRODUCT REVIEWER — distinct framing mode (assessment/evaluation vs
-      institutional critique), but even product reviews carry editorial framing choices: what concerns get highlighted, what
-      comparisons get drawn, what limitations get emphasized vs dismissed; (3) His career has been almost entirely within the
-      Advance Publications ecosystem (Star-Ledger → Wired, with only Digital Trends as an outside stint) — important context
-      for understanding institutional vs individual framing; (4) As CES/MWC/Google I/O regular with NPR appearances, his
-      voice extends beyond written reviews to broadcast media. Contact: No longer on X; uses Bluesky @JulianChokkattu.'
+      hardware reviewer for Meta products — his framing of Meta glasses, Quest headsets, and wearables shapes consumer perception
+      through one of the most influential tech publications; (2) Unlike most tracked journalists who are investigative/adversarial,
+      Chokkattu is a PRODUCT REVIEWER — distinct framing mode (assessment/evaluation vs institutional critique), but even
+      product reviews carry editorial framing choices: what concerns get highlighted, what comparisons get drawn, what limitations
+      get emphasized vs dismissed; (3) His career has been almost entirely within the Advance Publications ecosystem (Star-Ledger
+      → Wired, with only Digital Trends as an outside stint) — important context for understanding institutional vs individual
+      framing; (4) As CES/MWC/Google I/O regular with NPR appearances, his voice extends beyond written reviews to broadcast
+      media. Contact: No longer on X; uses Bluesky @JulianChokkattu.'
     source_url: https://talkingbiznews.com/media-news/chokattu-named-senior-editor-for-gear-at-wired/
   name: Julian Chokkattu
-  notes: 'Career: TechCrunch intern → Star-Ledger page producer → Digital Trends mobile/wearables editor → Wired (senior
-    associate reviews editor → reviews editor → Deputy Editor, Reviews → Senior Editor for Gear). 7+ years at Wired. 3,627+
-    total articles. Wired''s primary hardware reviewer for Meta products (glasses, Quest, wearables). Rutgers University BA
-    (English + journalism/media studies). Regular on Wired Gadget Lab podcast and NPR. KEY for MediaScope: product review
-    framing of Meta hardware — different analytical lens than investigative journalists but equally important for shaping
-    consumer perception. Career almost entirely within Advance Publications ecosystem (Star-Ledger + Wired) except 3 years
-    at Digital Trends.'
+  notes: 'Career: TechCrunch intern → Star-Ledger page producer → Digital Trends mobile/wearables editor → Wired (senior associate
+    reviews editor → reviews editor → Deputy Editor, Reviews → Senior Editor for Gear). 7+ years at Wired. 3,627+ total articles.
+    Wired''s primary hardware reviewer for Meta products (glasses, Quest, wearables). Rutgers University BA (English + journalism/media
+    studies). Regular on Wired Gadget Lab podcast and NPR. KEY for MediaScope: product review framing of Meta hardware — different
+    analytical lens than investigative journalists but equally important for shaping consumer perception. Career almost entirely
+    within Advance Publications ecosystem (Star-Ledger + Wired) except 3 years at Digital Trends.'
+- name: Caspar Llewellyn Smith
+  notes: 'Career: Daily Telegraph (Saturday arts/books writer) → Guardian (Observer Music Monthly founder 2003 → Head of Culture
+    → editor of theguardian.com → Director of Digital Strategy → executive committee 2015 → Chief Product Officer ~5 years
+    → Chief AI Officer 2024-present). Cambridge University graduate. Dropped out of City University postgraduate journalism
+    course to take Telegraph job. 20+ year Guardian veteran. NOT a byline journalist — executive/strategic role. KEY for MediaScope:
+    (1) Controls all four pillars of Guardian''s AI strategy: external licensing agreements (OpenAI partnership Feb 2025,
+    ensuring Guardian gets paid when AI models train on its journalism), internal AI tool deployment across newsroom, strategic
+    thinking about AI/journalism future, and org-wide AI training; (2) Set up Guardian AI Council (senior editors + technologists);
+    (3) His role embodies the central tension in the Guardian''s AI posture — the institution critically covers AI companies
+    while commercially licensing content to them; (4) His career trajectory from music journalism (Observer Music Monthly
+    during the music press collapse) through digital transformation to AI gives him lived experience of how technology disrupts
+    media business models — the same disruption he now manages.'
+  career:
+  - beat: arts, books, music
+    end: 2003-01
+    event_type: hired
+    notes: Started as the most junior person on the Saturday arts and books section after dropping out of City University's
+      postgraduate journalism course two-thirds through. Cambridge University graduate. First boss pushed him to write; covered
+      music and arts. Gained unprecedented access to global stars including Beyoncé. Formative period before the digital disruption
+      of the music press.
+    publication: daily-telegraph
+    role: writer
+    source_url: https://themediastack.co.uk/the-guardians-ai-strategy-caspar-llewellyn-smith-on-navigating-digital-disruption/
+    start: 1997-01
+  - beat: music, culture
+    end: 2008-01
+    event_type: hired
+    notes: Launched Observer Music Monthly magazine. "A super fun way to spend your 30s" — but watched the entire music press
+      collapse around him as digital killed the business model. Artists gained direct fan communication via Spotify, Instagram,
+      social networks, making music journalism less relevant. Lessons from this collapse shaped his approach to digital disruption
+      in news.
+    publication: guardian
+    role: editor
+    source_url: https://themediastack.co.uk/the-guardians-ai-strategy-caspar-llewellyn-smith-on-navigating-digital-disruption/
+    start: 2003-01
+  - beat: culture, arts
+    end: 2010-01
+    event_type: promoted
+    notes: Head of Culture for Guardian News & Media. First management role at the Guardian.
+    publication: guardian
+    role: head_of_culture
+    source_url: https://theorg.com/org/guardian-media-group/org-chart/caspar-llewellyn-smith
+    start: 2008-01
+  - beat: digital strategy, platform
+    end: 2013-01
+    event_type: promoted
+    notes: Editor of theguardian.com and the Guardian's other digital platforms. Transition from editorial content to digital
+      product leadership.
+    publication: guardian
+    role: editor_digital
+    source_url: https://theorg.com/org/guardian-media-group/org-chart/caspar-llewellyn-smith
+    start: 2010-01
+  - beat: digital strategy
+    end: 2015-01
+    event_type: promoted
+    notes: Director of Digital Strategy. Joined the executive committee in 2015.
+    publication: guardian
+    role: director_digital_strategy
+    source_url: https://theorg.com/org/guardian-media-group/org-chart/caspar-llewellyn-smith
+    start: 2013-01
+  - beat: product, digital platforms
+    end: 2024-01
+    event_type: promoted
+    notes: 'Chief Product Officer for ~5 years (dates approximate from media interviews). Responsible for all aspects of the
+      Guardian''s digital products. The connection between building magazines and building apps: "Both require balancing competing
+      elements, deciding how much advertising readers will tolerate, and presenting journalism in ways people actually want
+      to consume it."'
+    publication: guardian
+    role: chief_product_officer
+    source_url: https://theorg.com/org/guardian-media-group/org-chart/caspar-llewellyn-smith
+    start: 2019-01
+  - beat: AI strategy, licensing, internal AI deployment
+    event_type: promoted
+    notes: 'Guardian''s first Chief AI Officer — among the first major UK newspapers to create this role. Four focus areas:
+      (1) external licensing agreements with AI companies (OpenAI partnership Feb 2025), (2) internal AI tool deployment across
+      newsroom and commercial operations, (3) strategic thinking about AI/journalism future and business model, (4) org-wide
+      AI training and understanding. Set up Guardian AI Council (senior editors + technologists). Participated in Globe and
+      Mail Foundation "Editing Democracy" panel (Apr 2026) with Reuters'' Sally Buzbee and Vector Institute''s Glenda Crisp.
+      Quote: "This might not be the most consequential technology ever created, but its impact on the publishing and media
+      industry is absolutely the biggest thing any of us will see in our lifetimes." Warning: "News media already largely
+      surrendered distribution of our journalism to big tech" and AI threatens to do that "on steroids" via AI Overviews.'
+    publication: guardian
+    role: chief_ai_officer
+    source_url: https://themediastack.co.uk/the-guardians-ai-strategy-caspar-llewellyn-smith-on-navigating-digital-disruption/
+    start: 2024-01
+- name: Chris Moran
+  notes: 'Career: Primary school teacher (Brampton Junior School, head of English and ICT) → professional actor (London West
+    End, radio drama, LAMDA trained) → Guardian freelance sub/production (~1999) → SEO editorial executive → Audience Editor
+    (originated role, 2011-2016) → Editor, Strategic Projects (2016-2020) → Head of Editorial Innovation (2020-present). Cambridge
+    University B.Ed. in English (1990-1994). LAMDA 3-year acting course (2000-2003). 25+ year Guardian tenure. Co-creator
+    of Ophan, Guardian''s class-leading real-time analytics tool (started as 2012 hack day project, now used by 1,000+ staff/month).
+    Led content reduction project that cut stories by one-third while increasing audience and engagement. Defined concept
+    of "responsible reach" — finding huge audiences by embracing core journalism, not clickbait. NOT a byline journalist —
+    product/innovation/data role. KEY for MediaScope: (1) Bridge between editorial and product — identifies opportunities
+    for new features that capture Guardian''s voice and values; (2) Leading Guardian''s AI product strategy including Storylines
+    (AI-generated related articles product, launched 2026) and internal archive chatbot, while explicitly refusing to build
+    a public-facing AI chatbot ("We''re not going to die if we don''t build a chatbot tomorrow"); (3) His data-driven editorial
+    philosophy directly shapes what kind of AI journalism gets produced and how much of it — his content reduction project
+    means fewer but more impactful stories, counteracting the volume incentive that degrades quality; (4) His WAN-IFRA and
+    Reuters Institute speaking roles propagate Guardian''s AI editorial philosophy to other newsrooms globally.'
+  career:
+  - beat: education
+    end: 1999-01
+    event_type: other
+    notes: Year Six teacher and head of English and ICT at Brampton Junior School. Pre-journalism career. Cambridge University
+      B.Ed. in English (1990-1994).
+    publication: brampton-junior-school
+    role: teacher
+    source_url: https://theorg.com/org/guardian-media-group/org-chart/chris-moran
+    start: 1994-01
+  - beat: performing arts
+    end: 2003-01
+    event_type: other
+    notes: Professional actor. London Academy of Music and Dramatic Arts (LAMDA) 3-year acting course (2000-2003). Notable
+      performances in London West End and extensive radio drama work. Concurrent with early Guardian freelance work.
+    publication: theatre
+    role: actor
+    source_url: https://wavelengthleadership.com/speaker/chris-moran/
+    start: 1999-01
+  - beat: sub-editing, production
+    end: 2009-01
+    event_type: freelance
+    notes: Freelance sub-editor and production. Joined Guardian newsroom in 1999 and freelanced for ~10 years before joining
+      staff. Concurrent with acting career.
+    publication: guardian
+    role: freelance_sub
+    source_url: https://talkingbiznews.com/they-re-hiring/guardian-names-moran-head-of-innovation/
+    start: 1999-01
+  - beat: SEO, digital editorial
+    end: 2011-01
+    event_type: hired
+    notes: SEO editorial executive. First staff role at the Guardian. Transition from freelance to permanent.
+    publication: guardian
+    role: seo_editorial_executive
+    source_url: https://rocketreach.co/chris-moran-email_48397647
+    start: 2009-01
+  - beat: audience data, analytics, digital strategy
+    end: 2016-01
+    event_type: promoted
+    notes: Audience Editor — a role he originated in the London newsroom. Built and led the team responsible for finding the
+      widest, most relevant audience for the Guardian's journalism across the internet. Defined the concept of "responsible
+      reach" — finding huge audiences through core journalism rather than writing about "cats and Kardashians." Co-created
+      Ophan, the Guardian's class-leading real-time analytics tool, which started as a 2012 hack day project and grew to 1,000+
+      monthly users. Continually broke audience records without sacrificing editorial standards. Critical in defining best
+      digital practice at the Guardian.
+    publication: guardian
+    role: audience_editor
+    source_url: https://wan-ifra.org/speaker/chris-moran/
+    start: 2011-01
+  - beat: editorial strategy, data-driven editorial
+    end: 2020-01
+    event_type: promoted
+    notes: Editor, Strategic Projects. Led the data-driven content reduction project — cut the number of stories produced
+      by one-third while increasing audience and engagement. Reinforced the value of editorial curation. Demonstrated that
+      fewer, better stories outperform volume-driven publishing.
+    publication: guardian
+    role: editor_strategic_projects
+    source_url: https://rocketreach.co/chris-moran-email_48397647
+    start: 2016-01
+  - beat: innovation, AI products, editorial-product bridge
+    event_type: promoted
+    notes: 'Head of Editorial Innovation. Bridge between editorial and product. Identifies opportunities for new features
+      and ideas that capture the Guardian''s voice and values. Key AI product decisions: (1) Launched Storylines — AI-generated
+      related articles product on tag pages (2026). Uses AI to extract storylines from 200 most recent articles on a tag page.
+      "It''s a curatorial tool, fundamentally. What it''s designed to do is highlight the journalism." (2) Explicitly declined
+      to build public-facing AI chatbot: "We''re not going to die if we don''t build a chatbot tomorrow. We need to be really
+      clear about what the threats are externally, but ultimately what we have is something that''s worth protecting." (3)
+      Built internal archive chatbot for journalists. (4) Led AI-powered investigation into 100 years of anti-immigration
+      rhetoric in Parliament (custom ML model + LLM annotation, 1+ year development, collaboration with UCL researchers).
+      Spoke at Reuters Institute "AI and the Future of News" (2026) and Digiday Publishing Summit (2026). Also appointed head
+      of innovation for Guardian US team (temporary/periodic role).'
+    publication: guardian
+    role: head_editorial_innovation
+    source_url: https://talkingbiznews.com/they-re-hiring/guardian-names-moran-head-of-innovation/
+    start: 2020-01

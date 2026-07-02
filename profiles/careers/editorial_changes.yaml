@@ -278,6 +278,21 @@ editorial_changes:
       Trust) — diametrically opposite ownership models. 15+ year Guardian tenure makes him one of the longest-serving Guardian
       US editors.'
     source_url: https://theorg.com/org/guardian-media-group/org-chart/dominic-rushe
+  - date: 2026-07
+    incoming: null
+    notes: 'STRUCTURAL EXPANSION: Guardian announces ~55 new permanent positions across UK, US, and Australian offices over
+      next 12 months as part of "Project Berger" — a multimillion, multiyear investment unveiled in 2025 to build a "sustainable
+      future for the Guardian by being more digital, visual, global and experimental." Includes: Guardian Studios (creative
+      hub for video-first, personality-led journalism), new US video team, investment in visual investigations and data visualizations,
+      Guardian Australia as global centre of excellence for social hosts, and commercial/analytics expansion. Commercial director
+      James Fleetham appointed for the project. EIC Katharine Viner: "Being innovative is crucial to the Guardian''s future.
+      Our ongoing investments are about taking the next transformative steps." ANALYTICAL VALUE: This investment signals the
+      Guardian doubling down on original journalism production rather than retrenching in the face of AI disruption — opposite
+      strategic direction from many publishers who are cutting staff. The expansion into video-first and visual journalism
+      also shifts the medium of coverage (video frames differently than text, which may affect framing analysis methodology).'
+    outgoing: null
+    position: project_berger_expansion
+    source_url: https://www.editorandpublisher.com/stories/the-guardian-to-create-dozens-of-new-positions
   mit-tech-review:
   - date: 2017-10
     incoming: Elizabeth Bramson-Boudreau
@@ -844,16 +859,16 @@ editorial_changes:
     outgoing: null
     position: features_editor
     source_url: https://www.editorandpublisher.com/stories/wired-welcomes-two-new-staff-members-alana-hope-levinson-and-maxwell-zeff,252685
-  - date: '2025-11'
+  - date: 2025-11
     incoming: Maddy Varner
-    notes: 'INVESTIGATIONS HIRE: Senior writer focused on investigations, security desk, working across all desks. Brian
-      Barrett announcement. Came from FTC (technologist in residence) after stints at The Markup (4+ years) and ProPublica.
-      Won Gerald Loeb Award (2018) at ProPublica for "Monetizing Hate" series examining Facebook ad practices. FTC tenure
-      provides insider regulatory perspective unusual among Wired journalists. Paired with Dhruv Mehrotra (boomerang from
-      Bloomberg, May 2026) — Barrett called them "a force to be reckoned with." Based in NYC office. Already covering Meta
-      scam ad lawsuits at Wired, extending her original ProPublica Facebook beat. FOIA specialist, data journalist, tool
-      builder. PIPELINE: ProPublica → The Markup → FTC → Wired represents the investigative-nonprofit → government-regulator
-      → commercial-media arc, distinct from the Gizmodo/Vice adversarial pipeline of other Drummond-era hires.'
+    notes: 'INVESTIGATIONS HIRE: Senior writer focused on investigations, security desk, working across all desks. Brian Barrett
+      announcement. Came from FTC (technologist in residence) after stints at The Markup (4+ years) and ProPublica. Won Gerald
+      Loeb Award (2018) at ProPublica for "Monetizing Hate" series examining Facebook ad practices. FTC tenure provides insider
+      regulatory perspective unusual among Wired journalists. Paired with Dhruv Mehrotra (boomerang from Bloomberg, May 2026)
+      — Barrett called them "a force to be reckoned with." Based in NYC office. Already covering Meta scam ad lawsuits at
+      Wired, extending her original ProPublica Facebook beat. FOIA specialist, data journalist, tool builder. PIPELINE: ProPublica
+      → The Markup → FTC → Wired represents the investigative-nonprofit → government-regulator → commercial-media arc, distinct
+      from the Gizmodo/Vice adversarial pipeline of other Drummond-era hires.'
     outgoing: null
     position: senior_writer_investigations
     source_url: https://talkingbiznews.com/media-news/wired-hires-varner-as-senior-writer/
@@ -862,39 +877,38 @@ editorial_changes:
     notes: 'BUSINESS DESK EXPANSION: Kate Taylor hired as senior writer covering future of work and AI impact on employment.
       Announced by exec editor Brian Barrett. Previously: Business Insider (~9 years, senior features correspondent), Forbes/
       ForbesWomen intern, Entrepreneur magazine reporter. Most recently completed MBA at Columbia Business School "to better
-      understand the companies she covers." Known for investigative exposés that became documentaries: Dan Schneider/
-      Nickelodeon → "Quiet on Set: The Dark Side of Kids TV" (HBO/Discovery, Emmy nominated, Taylor was EP), Brandy Melville
-      → "Brandy Hellville & the Cult of Fast Fashion" (HBO, Taylor was consultant). Won NAREE Silver Medal 2023, LA Press
-      Club 2nd place. Based in New York. Reports to Zoë Schiffer (Director, Business & Industry). Barrett: "the deeper
-      investigative features that have been her trademark." ANALYTICAL VALUE: (1) Beat overlap with Guardian "Reworked" AI/
-      work series (lost founding editor Oltman to Bloomberg Jun 2026) — Wired now directly competing on this coverage area.
-      (2) Non-adversarial pipeline (BI/entertainment, not Gizmodo/Vice/Guardian) — tests whether Wired business desk hires
-      adopt or resist institutional adversarial posture. (3) Business desk now: Schiffer (Director) + Matsakis + Kleeman
-      (senior editors) + Taylor (AI/work) + Zeff (AI business) + Tiku (Big Tech) + unfilled chief business correspondent.
-      Dartmouth BA, Columbia MBA.'
+      understand the companies she covers." Known for investigative exposés that became documentaries: Dan Schneider/ Nickelodeon
+      → "Quiet on Set: The Dark Side of Kids TV" (HBO/Discovery, Emmy nominated, Taylor was EP), Brandy Melville → "Brandy
+      Hellville & the Cult of Fast Fashion" (HBO, Taylor was consultant). Won NAREE Silver Medal 2023, LA Press Club 2nd place.
+      Based in New York. Reports to Zoë Schiffer (Director, Business & Industry). Barrett: "the deeper investigative features
+      that have been her trademark." ANALYTICAL VALUE: (1) Beat overlap with Guardian "Reworked" AI/ work series (lost founding
+      editor Oltman to Bloomberg Jun 2026) — Wired now directly competing on this coverage area. (2) Non-adversarial pipeline
+      (BI/entertainment, not Gizmodo/Vice/Guardian) — tests whether Wired business desk hires adopt or resist institutional
+      adversarial posture. (3) Business desk now: Schiffer (Director) + Matsakis + Kleeman (senior editors) + Taylor (AI/work)
+      + Zeff (AI business) + Tiku (Big Tech) + unfilled chief business correspondent. Dartmouth BA, Columbia MBA.'
     outgoing: null
     position: senior_writer_ai_work
     source_url: https://talkingbiznews.com/media-news/wired-hires-taylor-as-senior-writer/
-  - date: '2026-06'
+  - date: 2026-06
     incoming: null
     notes: 'MEDIA EXPANSION: Wired launched "Uncanny Valley" as a weekly radio show on KQED, an NPR San Francisco station,
       airing Saturdays at 7 PM PT. Hosted by global editorial director Katie Drummond, featuring highlights from the flagship
-      podcast of the same name and Drummond''s Big Interview series. Also features clips from exec editor Brian Barrett,
-      Director of Business & Industry Zoë Schiffer, and Director of Politics & Science Leah Feiger. Signals Wired''s
-      expansion from digital-first publication into broadcast media — public radio reach extends Wired''s editorial framing
-      to NPR audiences who may not read wired.com.'
+      podcast of the same name and Drummond''s Big Interview series. Also features clips from exec editor Brian Barrett, Director
+      of Business & Industry Zoë Schiffer, and Director of Politics & Science Leah Feiger. Signals Wired''s expansion from
+      digital-first publication into broadcast media — public radio reach extends Wired''s editorial framing to NPR audiences
+      who may not read wired.com.'
     outgoing: null
     position: uncanny_valley_kqed_radio
     source_url: https://talkingbiznews.com/media-news/wired-is-starting-a-show-on-a-radio-station/
-  - date: '2026-06'
+  - date: 2026-06
     incoming: null
     notes: 'PLATFORM EXPANSION: Wired announced a forum-style subscriber app "launching very soon" that lets readers interact
       with Wired journalists in forums organized by subject matter. Arielle Goldstein (audience development manager) described
       it as a "community power play" aimed at keeping readers on Wired''s own platforms rather than social media. Discussed
-      at Audiencers Festival in London. Significance: creates direct journalist-reader feedback loops that may reinforce
-      existing framing or create audience-driven editorial pressure. In the context of adversarial Big Tech coverage, a
-      community app where readers can engage directly with writers like Schiffer and Tiku could amplify reader-confirmation
-      dynamics in coverage direction.'
+      at Audiencers Festival in London. Significance: creates direct journalist-reader feedback loops that may reinforce existing
+      framing or create audience-driven editorial pressure. In the context of adversarial Big Tech coverage, a community app
+      where readers can engage directly with writers like Schiffer and Tiku could amplify reader-confirmation dynamics in
+      coverage direction.'
     outgoing: null
     position: community_app_launch
     source_url: https://talkingbiznews.com/media-news/wired-launching-app-to-lead-readers-interact-with-staff/
