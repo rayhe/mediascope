@@ -221,21 +221,21 @@ class TestTopicBucketConsistency:
         """METHODOLOGY.md must say 25 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
         assert "25 topic buckets" in doc, (
-            "METHODOLOGY.md topic count is stale. Should be 17."
+            "METHODOLOGY.md topic count is stale. Should be 25."
         )
 
     def test_agent_guide_topic_count(self):
         """AGENT_GUIDE.md must list 25 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
         assert "25 topic buckets" in doc, (
-            "AGENT_GUIDE.md topic count is stale. Should be 17."
+            "AGENT_GUIDE.md topic count is stale. Should be 25."
         )
 
     def test_architecture_topic_count(self):
         """ARCHITECTURE.md must say 25 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
         assert "25 topic buckets" in doc, (
-            "ARCHITECTURE.md topic count is stale. Should be 17."
+            "ARCHITECTURE.md topic count is stale. Should be 25."
         )
 
 
@@ -307,12 +307,12 @@ class TestTestFileListingConsistency:
         match = re.search(r"test_topics\.py.*?all\s+(\d+)\s+buckets", doc)
         assert match, (
             "ARCHITECTURE.md test_topics.py row is missing topic bucket count "
-            "reference (expected 'all 22 buckets')."
+            "reference (expected 'all 25 buckets')."
         )
         claimed = int(match.group(1))
-        assert claimed == 23, (
+        assert claimed == 25, (
             f"ARCHITECTURE.md test_topics.py description references {claimed} "
-            f"topic buckets, should be 23."
+            f"topic buckets, should be 25."
         )
 
     def test_readme_lists_all_test_files(self):
@@ -483,38 +483,38 @@ class TestCrossReferenceConsistency:
     """
 
     def test_methodology_same_event_table_uses_34_type(self):
-        """METHODOLOGY.md §13 same-event comparison must reference 51-type taxonomy."""
+        """METHODOLOGY.md §13 same-event comparison must reference 53-type taxonomy."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
         assert "33-type" not in doc, (
             "METHODOLOGY.md still references stale '33-type' taxonomy in §13 "
-            "(same-event comparison). Should be '51-type' after anthropomorphization "
+            "(same-event comparison). Should be '53-type' after editorial_aside "
             "was added."
         )
         assert "34-type" not in doc, (
             "METHODOLOGY.md still references stale '34-type' taxonomy. "
-            "Should be '51-type' after anthropomorphization "
+            "Should be '53-type' after editorial_aside "
             "was added."
         )
         assert "35-type" not in doc, (
             "METHODOLOGY.md still references stale '35-type' taxonomy. "
-            "Should be '51-type' after anthropomorphization "
+            "Should be '53-type' after editorial_aside "
             "was added."
         )
         assert "36-type" not in doc, (
             "METHODOLOGY.md still references stale '36-type' taxonomy. "
-            "Should be '51-type' after anthropomorphization "
+            "Should be '53-type' after editorial_aside "
             "was added."
         )
         assert "37-type" not in doc, (
             "METHODOLOGY.md still references stale '37-type' taxonomy. "
-            "Should be '51-type' after anthropomorphization was added."
+            "Should be '53-type' after editorial_aside was added."
         )
         assert "38-type" not in doc, (
             "METHODOLOGY.md still references stale '38-type' taxonomy. "
-            "Should be '51-type' after anthropomorphization was added."
+            "Should be '53-type' after editorial_aside was added."
         )
 
-    def test_readme_test_topics_description_says_16(self):
+    def test_readme_test_topics_description_says_25(self):
         """README.md test_topics.py description must reference 25 topic buckets."""
         doc = (_REPO_ROOT / "README.md").read_text()
         # Find the test_topics.py row in the test table
@@ -523,9 +523,9 @@ class TestCrossReferenceConsistency:
             "README.md test_topics.py row is missing topic bucket count reference."
         )
         claimed = int(match.group(1))
-        assert claimed == 23, (
+        assert claimed == 25, (
             f"README.md test_topics.py description references {claimed} topic buckets, "
-            f"should be 23. The count is stale."
+            f"should be 25. The count is stale."
         )
 
     def test_no_stale_33_type_in_any_doc(self):
@@ -538,16 +538,16 @@ class TestCrossReferenceConsistency:
                           "48-type", "49-type", "50-type"):
                 assert stale not in content, (
                     f"{doc_file.name} contains stale '{stale}' reference. "
-                    f"Should be '51-type' after anthropomorphization was added."
+                    f"Should be '53-type' after editorial_aside was added."
                 )
 
     def test_no_stale_33_framing_device_in_readme(self):
         """README.md should not reference stale framing device counts."""
         doc = (_REPO_ROOT / "README.md").read_text()
-        stale_refs = re.findall(r"\b(?:3[3-9]|4[0-9]|50)[- ](?:type|framing|device)", doc)
+        stale_refs = re.findall(r"\b(?:3[3-9]|4[0-9]|5[0-2])[- ](?:type|framing|device)", doc)
         assert not stale_refs, (
             f"README.md contains stale framing reference(s): {stale_refs}. "
-            f"Should be 51 after delayed_defense and industry_normalization_undercut were added."
+            f"Should be 53 after assumed_consensus and editorial_aside were added."
         )
 
     def test_readme_topic_count_in_description(self):
@@ -557,7 +557,7 @@ class TestCrossReferenceConsistency:
         stale_refs = re.findall(r"\ball\s+13\s+(?:standardized\s+)?topic", doc, re.IGNORECASE)
         assert not stale_refs, (
             f"README.md contains stale 'all 13 topic' reference(s): {stale_refs}. "
-            f"Should be 'all 15' — prediction_markets and corporate_strategy were added."
+            f"Should be 'all 25' — 25 topic buckets defined in code."
         )
 
 

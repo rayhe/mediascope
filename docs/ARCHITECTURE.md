@@ -428,7 +428,7 @@ mediascope/
 │   ├── test_sentiment.py        # 8-dim scoring, framing correction, self-referential detection
 │   ├── test_source_stance.py    # Source extraction, stance, outsourced intensity, kicker framing
 │   ├── test_source_extraction_fixes.py # Pattern 3 case fix, Pattern 5c verb-before-surname, attribution verb expansion
-│   ├── test_topics.py           # Topic classification, all 23 buckets, confidence scoring
+│   ├── test_topics.py           # Topic classification, all 25 buckets, confidence scoring
 │   ├── test_wynn_williams_fixes.py # Litigation framing, source extraction false positives, power asymmetry
 │   ├── test_virtue_ai_acquihire.py # Virtue AI entities, FAIR, BIS/CAISI, tech-jargon ironic_quotation filter
 │   ├── test_sarcastic_correction.py # Sarcastic correction framing: concede-then-retract, standalone sarcasm, false-positive exclusion
