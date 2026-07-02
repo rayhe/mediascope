@@ -4,6 +4,78 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-01 22:00 PT — Type B: Journalist/Publication Research — Dominic Rushe & Chris Stokel-Walker
+
+### Focus
+Added two strategically significant journalists: Dominic Rushe (Guardian US editorial gatekeeper) and Chris Stokel-Walker (highest cross-publication freelancer across 4 of 5 tracked outlets). Together they address two gaps: editorial leadership influence on institutional framing, and simultaneous multi-publication freelance comparison for DiD analysis.
+
+### New Journalist: Dominic Rushe (111th tracked)
+
+**Career chain:** Sunday Times NYC correspondent (2001-2010) → Guardian US correspondent (2010) → Guardian US Business Editor (~2012-present)
+
+**Current role:** US Business Editor at the Guardian. Oversees ALL Guardian US business/tech reporting. Direct reports have included Sam Thielman, Jana Kasperkevic, Kari Paul, Dara Kerr, and Jeremy Barr.
+
+**Why he matters for MediaScope:**
+1. **Editorial gatekeeper** — his influence is amplified through every reporter he edits. He shapes the lens, not just the byline
+2. **Cross-ownership migration** — Sunday Times (News Corp/Murdoch) → Guardian (Scott Trust) represents diametrically opposite ownership models
+3. **Pulitzer team member** — part of 2014 Guardian team that won Public Service Pulitzer for Snowden/NSA surveillance coverage, establishing adversarial-toward-surveillance baseline
+4. **15+ year Guardian tenure** — one of the longest-serving Guardian US senior editors, providing deep institutional memory
+5. **Desk hierarchy context** — fills the editorial leadership gap for Guardian US business/tech coverage (editors shape framing more than individual reporters)
+
+**Career entries:** 3 (Sunday Times correspondent, Guardian correspondent, Guardian US Business Editor)
+
+**Sources:**
+- https://theorg.com/org/guardian-media-group/org-chart/dominic-rushe
+- https://thebulletin.org/biography/dominic-rushe/
+- https://pulitzer.org/winners/guardian-us (2014 Pulitzer)
+- https://talkingbiznews.com/tag/guardian/ (desk staffing history)
+- https://muckrack.com/dominic-rushe (2,079+ articles)
+- https://editorandpublisher.com (Barr hiring announcement confirming Rushe as supervisor)
+
+### New Journalist: Chris Stokel-Walker (112th tracked)
+
+**Career chain:** Freelance journalist (~2013-present), concurrently contributing to Guardian, Wired, NYT, MIT Tech Review, Fast Company, Scientific American, BBC, Economist, New Scientist, Washington Post, Tom's Hardware, LeadDev
+
+**Current roles:** Freelance journalist + Lecturer at Newcastle University (School of Arts and Cultures). PhD in journalism.
+
+**Books:** YouTubers (2019), TikTok Boom (2021), History of the Internet in Byte-Sized Chunks (2023), How AI Ate the World (2024)
+
+**Why he matters for MediaScope:**
+1. **HIGHEST CROSS-PUBLICATION COVERAGE** — writes for 4 of our 5 tracked publications (Guardian, Wired, NYT, MIT Tech Review), making him the single most valuable test case for difference-in-differences analysis
+2. **Freelance isolation effect** — as a freelancer his personal voice is constant while institutional editing varies. If the same journalist's tone shifts between Wired and the Guardian, that isolates the institutional editorial effect
+3. **Academic credibility** — PhD in journalism, university lecturer, author of 4 books on tech platforms and AI. Domain expertise in the exact areas MediaScope analyzes
+4. **BBC broadcast presence** — hosted Radio 4 documentaries (Everyone's a Star, Artificial Implosion), appears regularly on BBC/CNN/ABC, adding broadcast framing comparison dimension
+5. **Concurrent comparison** — unlike migration-based DiD (before/after a single move), Stokel-Walker enables simultaneous cross-publication comparison at the same point in time
+
+**Career entries:** 8 (freelance base, Wired contributor, Guardian contributor, NYT contributor, MIT Tech Review contributor, Fast Company contributing writer, Scientific American contributor, Newcastle University lecturer)
+
+**Sources:**
+- https://www.ncl.ac.uk/arts-cultures/staff/profile/chrisstokelwalker.html
+- https://www.technologyreview.com/author/chris-stokel-walker/ (13 MIT TR articles)
+- https://www.fastcompany.com/user/chris-stokel-walker
+- https://www.scientificamerican.com/author/chris-stokel-walker/
+- https://tomshardware.com (PhD + career summary)
+- https://muckrack.com/stokel (verified freelance profile)
+
+### Editorial Change Added
+- Guardian: Dominic Rushe → US Business Editor (~2012), with full context on Sunday Times → Guardian migration and desk oversight role
+
+### Changes
+- `profiles/careers/journalists.yaml`: Added 2 journalists (110→112 total, 108→110 multi-pub)
+- `profiles/careers/editorial_changes.yaml`: Added Rushe US Business Editor entry
+- `README.md`: Journalist count 110→112, added Stokel-Walker to notable migrations list
+- `docs/EDITORIAL_HISTORIES.md`: Counts 110→112, 108→110 multi-pub, +2 High-Value Migration Events rows, +1 Editorial Leadership Changes row
+- `examples/careers_demo.py`: Docstring count 110→112
+
+### Stats After
+- Tests: 1169 (1167 passed, 2 xfailed), 44 files
+- Journalists: 112 (was 110)
+- Multi-pub: 110 (was 108)
+- Single-pub: 2 (Dan Milmo, Robert Booth — unchanged)
+- Patterns: 307 (unchanged)
+
+---
+
 ## 2026-07-01 21:00 PT — Type A: Article Deep Dive — Wired "Cannes" Contractors Teens Story
 
 ### Focus
