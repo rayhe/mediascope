@@ -857,3 +857,55 @@ editorial_changes:
     outgoing: null
     position: senior_writer_investigations
     source_url: https://talkingbiznews.com/media-news/wired-hires-varner-as-senior-writer/
+  - date: '2026-07-01'
+    incoming: Kate Taylor
+    notes: 'BUSINESS DESK EXPANSION: Kate Taylor hired as senior writer covering future of work and AI impact on employment.
+      Announced by exec editor Brian Barrett. Previously: Business Insider (~9 years, senior features correspondent), Forbes/
+      ForbesWomen intern, Entrepreneur magazine reporter. Most recently completed MBA at Columbia Business School "to better
+      understand the companies she covers." Known for investigative exposés that became documentaries: Dan Schneider/
+      Nickelodeon → "Quiet on Set: The Dark Side of Kids TV" (HBO/Discovery, Emmy nominated, Taylor was EP), Brandy Melville
+      → "Brandy Hellville & the Cult of Fast Fashion" (HBO, Taylor was consultant). Won NAREE Silver Medal 2023, LA Press
+      Club 2nd place. Based in New York. Reports to Zoë Schiffer (Director, Business & Industry). Barrett: "the deeper
+      investigative features that have been her trademark." ANALYTICAL VALUE: (1) Beat overlap with Guardian "Reworked" AI/
+      work series (lost founding editor Oltman to Bloomberg Jun 2026) — Wired now directly competing on this coverage area.
+      (2) Non-adversarial pipeline (BI/entertainment, not Gizmodo/Vice/Guardian) — tests whether Wired business desk hires
+      adopt or resist institutional adversarial posture. (3) Business desk now: Schiffer (Director) + Matsakis + Kleeman
+      (senior editors) + Taylor (AI/work) + Zeff (AI business) + Tiku (Big Tech) + unfilled chief business correspondent.
+      Dartmouth BA, Columbia MBA.'
+    outgoing: null
+    position: senior_writer_ai_work
+    source_url: https://talkingbiznews.com/media-news/wired-hires-taylor-as-senior-writer/
+  - date: '2026-06'
+    incoming: null
+    notes: 'MEDIA EXPANSION: Wired launched "Uncanny Valley" as a weekly radio show on KQED, an NPR San Francisco station,
+      airing Saturdays at 7 PM PT. Hosted by global editorial director Katie Drummond, featuring highlights from the flagship
+      podcast of the same name and Drummond''s Big Interview series. Also features clips from exec editor Brian Barrett,
+      Director of Business & Industry Zoë Schiffer, and Director of Politics & Science Leah Feiger. Signals Wired''s
+      expansion from digital-first publication into broadcast media — public radio reach extends Wired''s editorial framing
+      to NPR audiences who may not read wired.com.'
+    outgoing: null
+    position: uncanny_valley_kqed_radio
+    source_url: https://talkingbiznews.com/media-news/wired-is-starting-a-show-on-a-radio-station/
+  - date: '2026-06'
+    incoming: null
+    notes: 'PLATFORM EXPANSION: Wired announced a forum-style subscriber app "launching very soon" that lets readers interact
+      with Wired journalists in forums organized by subject matter. Arielle Goldstein (audience development manager) described
+      it as a "community power play" aimed at keeping readers on Wired''s own platforms rather than social media. Discussed
+      at Audiencers Festival in London. Significance: creates direct journalist-reader feedback loops that may reinforce
+      existing framing or create audience-driven editorial pressure. In the context of adversarial Big Tech coverage, a
+      community app where readers can engage directly with writers like Schiffer and Tiku could amplify reader-confirmation
+      dynamics in coverage direction.'
+    outgoing: null
+    position: community_app_launch
+    source_url: https://talkingbiznews.com/media-news/wired-launching-app-to-lead-readers-interact-with-staff/
+  - date: '2026'
+    incoming: null
+    notes: 'LABOR DISPUTE: Jake Lahut, a Wired staffer fired during a union dispute over other fired staffers at Condé Nast,
+      is pursuing an unfair labor practice case with the NLRB. Lahut was one week shy of his probationary status ending when
+      fired. He represented Wired on MSNBC the morning of his termination and was pulled from a scheduled evening appearance.
+      Now freelancing and working as breaking news editor at Sherwood News. Context: Condé Nast/Wired Guild tensions — this
+      dispute indicates labor-management friction within Wired during Drummond''s editorial expansion. The NLRB case adds
+      institutional instability context alongside the rapid hiring documented above.'
+    outgoing: Jake Lahut
+    position: staffer_nlrb_case
+    source_url: https://talkingbiznews.com/media-news/fired-wired-worker-pursuing-case-with-nlrb/

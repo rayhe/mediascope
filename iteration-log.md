@@ -10214,3 +10214,25 @@ The Cannes article prominently features suicide, self-harm, eating disorders, an
 - Wired profile: 1,563 → 1,577 lines (+14)
 - Tests: 1,169 passed, 2 xfailed (unchanged)
 - Sources: MarketBeat, Barchart, Finnhub, SEC Form 4 filings
+
+---
+
+## 2026-07-02 02:00 PT — Type B: Journalist Research
+
+**Focus:** Added Maddy Varner as journalist #113 (107th unique, 111 multi-pub)
+
+**What was improved:**
+- Full 6-stage career arc: CMU Fine Art → NewHive → ProPublica (Gerald Loeb Award 2018, "Monetizing Hate") → The Markup (Gerald Loeb finalist 2021, Deadline Club finalist 2022) → FTC technologist in residence → Wired senior writer, investigations (~Nov 2025)
+- Rare regulatory-to-media pipeline: FTC tech regulator → Wired investigations unit
+- Already covering Meta scam ad lawsuits at Wired; paired with Dhruv Mehrotra (Bloomberg boomerang)
+- Deep Lab cyberfeminist collective founding member (CMU 2017)
+- editorial_changes.yaml updated with Wired hire entry
+
+**Files changed:** journalists.yaml (+86), editorial_changes.yaml (+13), README.md, EDITORIAL_HISTORIES.md, careers_demo.py
+**Commit:** 2445dc0
+**Tests:** 1,169 passed, 2 xfailed
+
+### Stats After This Iteration
+- Journalists: 112 → 113 (111 multi-pub)
+- Tests: 1,169 passed, 2 xfailed (unchanged)
+- Sources: talkingbiznews.com, studioforcreativeinquiry.org, maddy.zone, Techmeme
