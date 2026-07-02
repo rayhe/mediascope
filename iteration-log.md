@@ -10850,3 +10850,42 @@ Guardian underrepresented at 18 journalists vs Wired (54) and NYT (30). Added 2 
 - Tests: 1180 collected, 1178 passed, 2 xfailed (0 failures)
 - Patterns: 320 (was 317)
 - Files changed: 7 (framing.py, sentiment.py, test_editorial_deflation.py, test_structural_consistency.py, ARCHITECTURE.md, METHODOLOGY.md, QUALITY_STANDARDS.md, AGENT_GUIDE.md, README.md, + 2 new sample_output files)
+
+---
+
+## 2026-07-02 16:00 PT — Type A: Article Deep Dive (Reuters Town Hall)
+
+**Commit:** `8765aef` — "Type A: Reuters town hall deep dive — privacy_data topic expansion + affiliation case fix"
+
+### Article Analyzed
+- **Title:** Zuckerberg says AI agent development going slower than expected
+- **Publication:** Reuters (wire service — not in tracked set)
+- **Date:** 2026-07-02 (breaking, same day)
+- **Note:** All 5 tracked publication domains (Wired, NYT, Guardian, Atlantic, MIT Tech Review) are blocked by browsing policy. Reuters article used as toolkit stress-test; first wire service annotated example establishes neutral-framing baseline.
+
+### What Was Improved
+
+#### 1. privacy_data topic keyword expansion (topics.py)
+- **Problem:** MCI/employee-surveillance articles failed to trigger the privacy_data topic — only 1 of 23 keywords matched
+- **Added 16 keywords:** opt-in, opt in, opt-out, opt out, sensitive data, employee data, employee tracking, data security, data exposure, data exposed, digital activity, mouse-tracking, mouse tracking, screen scraping, screen scraped, keystroke
+- **Result:** privacy_data goes from unranked → 0.520 confidence (top topic)
+
+#### 2. Source affiliation case-sensitivity fix (sources.py)
+- **Problem:** Affiliation extraction Patterns 0 and 0b used lowercase title words without case-insensitive matching; article text capitalizes titles ("Chief Executive", "Chief Technology Officer")
+- **Fix:** Applied case-flexible character classes to both patterns; added department layer (technology, financial, etc.) to Pattern 0 (possessive form)
+- **Result:** "Meta Chief Executive Mark Zuckerberg" → affiliation="Meta" (was empty)
+
+#### 3. New annotated example
+- `reuters_meta_zuckerberg_town_hall_2026_07_02_article.txt` + `_analysis.md`
+- Detailed comparison of manual vs toolkit analysis across all 5 dimensions
+- Documents 4 design observations for future work: documentary source type, ironic/attribution quotation disambiguation, wire service baseline calibration, policy reversal detection
+
+#### 4. New tests (test_privacy_affiliation_fixes.py)
+- 14 tests: 5 privacy_data topic expansion, 9 affiliation case sensitivity
+- All passing
+
+### Stats
+- Tests: 1194 collected, 1192 passed, 2 xfailed (0 failures)
+- Test files: 45 (was 44)
+- Patterns: 320 (unchanged)
+- Files changed: 7 (topics.py, sources.py, README.md, ARCHITECTURE.md, + 2 new sample_output files, + 1 new test file)
