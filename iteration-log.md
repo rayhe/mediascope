@@ -3,6 +3,40 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-02 14:00 PT — Type D: Toolkit Quality & Documentation — Path H Example + Stale Reference Fixes
+
+### Focus
+Created a comprehensive new example demonstrating the Path H sarcastic editorial correction (added in today's 09:00 Type A iteration), updated the stale `framing_correction_demo.py` (missing 2 adversarial device types, stale test count, incomplete path documentation), and updated the README examples table.
+
+### Changes
+
+1. **`examples/sarcastic_editorial_demo.py`** — NEW file (+265 lines):
+   - Three-article demo: two sarcastic editorials (Gizmodo subscription paywall, generic AI feature editorial) and one genuine positive announcement (control case)
+   - Step-by-step Path H trigger diagnostic for each article (raw tone, editorial_aside count, adversarial count, emotional intensity, agency)
+   - Shows full blend calculation: sarcasm_density formula, target tone derivation, 15/85 blend with clamping
+   - Correctly handles all 16 adversarial device types (matches sentiment.py exactly)
+   - Key distinction section explaining how Path H differs from Path A (negative agency), Path D (sardonic, loaded language), and Path F (contradictory review)
+   - Verified: Path H fires correctly on both sarcastic articles (+0.616 → -0.349, +0.636 → -0.341) and correctly does NOT fire on the positive announcement (+0.636 preserved)
+
+2. **`examples/framing_correction_demo.py`** — 3 fixes:
+   - **Stale adversarial_types set:** Added `assumed_consensus` and `editorial_aside` (14 → 16 types, now matches sentiment.py `_ADVERSARIAL_DEVICE_TYPES` exactly)
+   - **Stale test count:** "480 regression tests" → "1172 regression tests"
+   - **Incomplete path documentation:** Module docstring expanded to list all 8 correction paths (A–H) with blend ratios. Summary section updated to mention sarcastic register, military techno-optimism, and VADER long-text normalization alongside the original three signal categories
+
+3. **`README.md`** — Examples table updated:
+   - `framing_correction_demo.py` description updated: removed "NEW" tag, added "8 distinct correction paths (A–H)" language
+   - `sarcastic_editorial_demo.py` added as new entry with "NEW" tag and description
+   - `careers_demo.py` description cleaned (removed "NEW" tag — no longer new)
+
+### Validation
+- All 3 example scripts run successfully (`PYTHONPATH=. python3 examples/<file>.py`)
+- Path H fires correctly on sarcastic articles, correctly does NOT fire on genuine positive articles
+- Tests: 1172 passed, 2 xfailed, 0 failures (unchanged)
+- 71/71 structural consistency tests pass (README test counts, device counts, adversarial lists, topic counts, journalist counts all verified)
+
+### Why This Matters
+The framing_correction_demo.py was the toolkit's primary educational artifact for the tone correction pipeline — the most important analytical innovation in MediaScope. It had been stale since before assumed_consensus and editorial_aside were added (today's 09:00 iteration), and it still referenced "480 tests" from weeks ago. The new sarcastic_editorial_demo.py fills a gap: Path H was the newest correction path with no dedicated example showing how it works, what its trigger conditions are, or how it differs from Paths A and D.
+
 ## 2026-07-02 12:00 PT — Type C: Ownership & Funding — Meta Litigation Convergence (Jul-Aug 2026) + Reddit/Advance Updates
 
 ### Focus
@@ -10737,3 +10771,41 @@ Guardian underrepresented at 18 journalists vs Wired (54) and NYT (30). Added 2 
 - Guardian editorial changes: 18 → 19
 - Tests: 1169 passed, 2 xfailed (0 failures)
 - Commit: `4e37687`
+
+## Type D: Toolkit Quality & Documentation — 2026-07-02 13:00 PT
+
+### Focus: Systematic doc/test consistency audit
+
+#### 1. Full documentation review (6 docs + README)
+- Reviewed METHODOLOGY.md (~795 lines), AGENT_GUIDE.md (~1040 lines), QUALITY_STANDARDS.md (~210 lines), EDITORIAL_HISTORIES.md (~280 lines), ARCHITECTURE.md (~460 lines), ADDING_PUBLICATIONS.md (~730 lines), README.md (~485 lines)
+
+#### 2. Full test suite verification
+- 1174 collected, 1172 passed, 2 xfailed, 0 failures (44 test files)
+
+#### 3. Fixed stale topic bucket count references (23→25)
+- README.md: test_topics.py description
+- ARCHITECTURE.md: test_topics.py description
+- test_structural_consistency.py: 2 assertion values + 3 error messages
+
+#### 4. Fixed stale framing taxonomy count references (51→53)
+- test_structural_consistency.py: 3 error messages updated
+- 1 docstring updated
+
+#### 5. Fixed stale topic bucket total in error messages (15→25)
+- test_structural_consistency.py: 1 error message updated
+
+#### 6. Renamed test function for accuracy
+- `test_readme_test_topics_description_says_23` → `test_readme_test_topics_description_says_25`
+
+### Stats
+- Tests: 1174 collected, 1172 passed, 2 xfailed (0 failures)
+- Files changed: 3 (README.md, docs/ARCHITECTURE.md, tests/test_structural_consistency.py)
+- Commit: `8e31c9b`
+
+#### 7. Fixed stale framing guard regex (amended commit)
+- `test_no_stale_33_framing_device_in_readme`: regex range only caught 33-50, missed 51-52 (both stale since taxonomy is now 53)
+- Updated regex: `(?:3[3-9]|4[0-9]|50)` → `(?:3[3-9]|4[0-9]|5[0-2])` to catch all stale counts up to 52
+- Updated error message: "Should be 51" → "Should be 53"
+- Also verified: all 6 example scripts parse cleanly, all imports resolve (3 optional deps not installed in env but documented in requirements.txt)
+- ADDING_PUBLICATIONS.md: no stale count references found
+- Amended commit: `8ec4911`

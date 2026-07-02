@@ -19,6 +19,21 @@ The Fix:
     negative agency patterns, and source deployment — then overrides the
     lexical score when these structural signals contradict VADER.
 
+    Eight distinct correction paths (A–H) each address a specific VADER
+    failure mode discovered through real-article analysis:
+        Path A: Wrong direction on adversarial prose (10/90 blend)
+        Path B: Understated negative magnitude (50/50 blend)
+        Path C: Embedded adversarial anchors in product reviews (55/45)
+        Path D: Sardonic contempt via loaded language (10/90)
+        Path E: Military techno-optimism inflation (30/70)
+        Path F: Contradictory review framing (20/80)
+        Path G: VADER long-text normalization (30/70)
+        Path H: Sarcastic short editorial (15/85)
+
+    Only one framing path fires per article (except Path G, which runs
+    independently before the composite is computed). See METHODOLOGY.md
+    §9.2 for the full theoretical framework.
+
 This demo runs three real-world article excerpts through the pipeline
 and shows where VADER fails and how the correction works.
 
@@ -199,13 +214,15 @@ def analyze_with_details(text: str, headline: str, label: str) -> None:
         print(f"    • {dtype}: {count}")
 
     # Adversarial device count (the ones that trigger correction)
+    # Canonical adversarial device types — must match sentiment.py's
+    # _ADVERSARIAL_DEVICE_TYPES (16 types as of Jul 2026).
     adversarial_types = {
         "loaded_language", "emotional_appeal", "guilt_by_association",
         "catastrophizing", "power_asymmetry", "isolation_framing",
         "pressure_language", "hypocrisy_frame", "timeline_implication",
         "juxtaposition", "refusal_amplification",
         "self_referential_investigation", "kicker_framing",
-        "military_techno_optimism",
+        "military_techno_optimism", "assumed_consensus", "editorial_aside",
     }
     adversarial_count = sum(
         1 for d in framing_devices if d.device_type in adversarial_types
@@ -288,19 +305,22 @@ def main():
     print("  of lexical sentiment analysis when applied to professional journalism.")
     print("  VADER was designed for social media ('I love this!', 'This sucks').")
     print("  Investigative journalism uses measured, declarative prose that VADER")
-    print("  reads as neutral-to-positive. The correction pipeline detects:")
+    print("  reads as neutral-to-positive. Eight correction paths (A-H) detect:")
     print()
     print("    1. Adversarial framing devices (loaded language, isolation framing,")
-    print("       pressure language, power asymmetry, etc.)")
+    print("       pressure language, power asymmetry, assumed consensus, etc.)")
     print("    2. Active-negative agency ('tracking', 'cutting', 'forcing')")
     print("    3. Adversarial source deployment (one-sided expert roster)")
+    print("    4. Sarcastic register (editorial asides, assumed consensus)")
+    print("    5. Military techno-optimism (aspirational warfare language)")
+    print("    6. VADER long-text normalization distortion (alpha=15 tuning)")
     print()
     print("  When these structural signals contradict the VADER score, the")
     print("  corrected tone reflects the editorial stance — not the surface")
     print("  vocabulary.")
     print()
     print("  See METHODOLOGY.md §9 for the full theoretical framework.")
-    print("  See tests/ for 480 regression tests using real article excerpts.")
+    print("  See tests/ for 1172 regression tests using real article excerpts.")
 
 
 if __name__ == "__main__":
