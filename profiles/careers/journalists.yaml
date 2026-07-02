@@ -4334,19 +4334,35 @@ journalists:
   - beat: climate, environment
     end: 2021-12
     event_type: hired
-    notes: Managing editor at Earther (Gizmodo Media climate vertical). Oversaw climate coverage. Earther was known for aggressive,
-      accessible climate journalism. Part of G/O Media portfolio.
+    notes: 'Senior reporter (2017-2019) then managing editor (Sep 2019-2021) at Earther, Gizmodo Media''s climate vertical.
+      "Starting this site as a writer and growing with it as an editor have been four of the most fulfilling years of my
+      life" (Twitter). Earther was known for aggressive, accessible climate journalism. Part of G/O Media portfolio. Also
+      Columbia University faculty member (Climate and Society MA program) during this period. Previously worked at Climate
+      Central and The Wall Street Journal. Education: Hampshire College BA, Columbia University MA (Climate and Society).'
     publication: earther
     role: managing_editor
+    source_url: https://talkingbiznews.com/media-news/protocol-hires-kahn-to-start-climate-desk/
     start: 2017-01
   - beat: climate, clean tech
     end: 2023-06
     event_type: hired
-    notes: Oversaw climate coverage at Protocol (tech media startup). Protocol shut down in Nov 2022 (Insider acquisition).
-      Brief tenure during outlet's final months/wind-down period.
+    notes: 'Hired to start Protocol''s climate news desk from scratch, hiring reporters to cover the intersection between
+      climate and tech. Protocol shut down in Nov 2022 (Insider acquisition). Brief tenure during outlet''s final months/
+      wind-down period.'
     publication: protocol
     role: climate_editor
+    source_url: https://talkingbiznews.com/media-news/protocol-hires-kahn-to-start-climate-desk/
     start: 2022-01
+  - beat: climate, environment, environmental justice
+    end: 2023-06
+    event_type: hired
+    notes: 'Edited The Guardian''s "America''s Dirty Divide" series examining environmental inequalities and how climate
+      change could make things more harrowing. Contributing/series editor role, not full-time staff. Also a lecturer at
+      Columbia University during this period.'
+    publication: guardian
+    role: series_editor
+    source_url: https://talkingbiznews.com/media-news/the-guardian-appoints-kahn-to-edit-americas-dirty-divide-series/
+    start: 2022-06
   - beat: climate, clean tech, energy
     end: 2026-04
     event_type: hired
@@ -6666,3 +6682,94 @@ journalists:
       investigative journalist from entertainment/business journalism (BI) adopt Wired''s adversarial tech posture, or does
       her investigative-documentary methodology produce a distinct framing signature?'
     source_url: https://talkingbiznews.com/media-news/wired-hires-taylor-as-senior-writer/
+- career:
+  - publication: techcrunch
+    role: intern
+    beat: technology news
+    start: 2014-01
+    end: 2014-06
+    event_type: hired
+    notes: 'Internship at TechCrunch, one of the top tech news outlets. First journalism industry role after college. Got his
+      start in the industry here per multiple TBN hiring announcements.'
+    source_url: https://talkingbiznews.com/they-talk-biz-news/https-twitter-com-julianchokkattu-status-1188801470893887488/
+  - publication: star-ledger
+    role: page_producer
+    beat: general news
+    start: 2014-07
+    end: 2016-06
+    event_type: hired
+    notes: 'Page producer at The Star-Ledger (Newark, NJ), the largest daily newspaper in New Jersey. Page production role —
+      layout, copy flow, editorial packaging — not a byline-generating beat. The Star-Ledger is owned by Advance Publications
+      (same parent company as Condé Nast/Wired and Reddit). ANALYTICAL VALUE: Chokkattu''s very first post-college newspaper
+      job was at an Advance Publications property. His entire career from Star-Ledger → Wired stays within the Advance/Condé
+      Nast ecosystem, raising the question of whether his editorial instincts were shaped within a single ownership culture.
+      NOTE: Also worked at Targum Publishing Co. (Rutgers Daily Targum student newspaper) as news editor and at The Access
+      Group as copy intern during college.'
+    source_url: https://talkingbiznews.com/they-talk-biz-news/https-twitter-com-julianchokkattu-status-1188801470893887488/
+  - publication: digital-trends
+    role: section_editor
+    beat: mobile, wearables, smartphones, smartwatches
+    start: 2016-07
+    end: 2019-10
+    event_type: hired
+    notes: 'Mobile and wearables editor at Digital Trends, steering coverage and reviews of smartphones and smartwatches. By
+      CES 2018 held title of "section editor" overseeing the mobile section with associate editor Andy Boxall. Prolific reviewer
+      — covered MWC, CES, and major phone launches (Samsung Galaxy, Google Pixel, BlackBerry, Nokia, Xiaomi). 3+ year tenure.
+      Digital Trends is an independent tech media company (not owned by a major conglomerate). This is the ONLY period of
+      Chokkattu''s career outside Advance Publications properties.'
+    source_url: https://talkingbiznews.com/they-talk-biz-news/https-twitter-com-julianchokkattu-status-1188801470893887488/
+  - publication: wired
+    role: senior_associate_editor
+    beat: reviews, gadgets, mobile, wearables
+    start: 2019-10
+    end: 2022-01
+    event_type: hired
+    notes: 'Hired as senior associate editor for reviews. Led the Wired Reviews team, editing, managing, and testing gadgets
+      from electric scooters to office chairs. Part of Wired''s product-evaluation pipeline — his reviews set the tone for
+      how Wired frames hardware launches. Returned to the Advance Publications/Condé Nast ecosystem after 3 years at Digital
+      Trends.'
+    source_url: https://talkingbiznews.com/they-talk-biz-news/https-twitter-com-julianchokkattu-status-1188801470893887488/
+  - publication: wired
+    role: reviews_editor
+    beat: reviews, mobile, smart glasses, VR headsets, wearables
+    start: 2022-01
+    end: 2024-05
+    event_type: promoted
+    notes: 'Promoted to reviews editor. Expanded testing to include smart glasses and VR/AR headsets as those categories
+      emerged. Regular on Wired''s Gadget Lab podcast. Appearances on NPR (CES coverage). Reviewed Google Pixel Watch,
+      Nothing CMF Phone 1, and other major hardware launches. Techmeme routinely features his reviews.'
+    source_url: https://buzzsumo.com/journalist/julian-chokkattu/
+  - publication: wired
+    role: deputy_editor_reviews
+    beat: reviews, gear, smart glasses, Meta hardware, wearables
+    start: 2024-05
+    end: 2026-02
+    event_type: promoted
+    notes: 'Deputy Editor, Reviews (per Techmeme byline credits at Google I/O 2024). Oversaw full reviews operation. During
+      this period, reviewed Meta Ray-Ban smart glasses, Google hardware, Samsung foldables — directly shaping Wired''s
+      consumer perception of Meta products. Interviewed Google VP Rishi Chandra on Google Health/Fitbit strategy.'
+  - publication: wired
+    role: senior_editor
+    beat: gear, hardware reviews, smart glasses, VR/AR, wearables, consumer technology
+    start: 2026-02
+    event_type: promoted
+    notes: 'Promoted to Senior Editor for Gear (announced ~February 2026 per TBN). No longer solely reviews — expanded to gear
+      editorial. Wrote Meta Display glasses launch review (June 23, 2026) — the first Wired review of Meta''s self-branded
+      smart glasses ($299). 3,627+ total articles at Wired per JournalistHunt. KEY for MediaScope: (1) He is Wired''s primary
+      hardware reviewer for Meta products — his framing of Meta glasses, Quest headsets, and wearables shapes consumer
+      perception through one of the most influential tech publications; (2) Unlike most tracked journalists who are
+      investigative/adversarial, Chokkattu is a PRODUCT REVIEWER — distinct framing mode (assessment/evaluation vs
+      institutional critique), but even product reviews carry editorial framing choices: what concerns get highlighted, what
+      comparisons get drawn, what limitations get emphasized vs dismissed; (3) His career has been almost entirely within the
+      Advance Publications ecosystem (Star-Ledger → Wired, with only Digital Trends as an outside stint) — important context
+      for understanding institutional vs individual framing; (4) As CES/MWC/Google I/O regular with NPR appearances, his
+      voice extends beyond written reviews to broadcast media. Contact: No longer on X; uses Bluesky @JulianChokkattu.'
+    source_url: https://talkingbiznews.com/media-news/chokattu-named-senior-editor-for-gear-at-wired/
+  name: Julian Chokkattu
+  notes: 'Career: TechCrunch intern → Star-Ledger page producer → Digital Trends mobile/wearables editor → Wired (senior
+    associate reviews editor → reviews editor → Deputy Editor, Reviews → Senior Editor for Gear). 7+ years at Wired. 3,627+
+    total articles. Wired''s primary hardware reviewer for Meta products (glasses, Quest, wearables). Rutgers University BA
+    (English + journalism/media studies). Regular on Wired Gadget Lab podcast and NPR. KEY for MediaScope: product review
+    framing of Meta hardware — different analytical lens than investigative journalists but equally important for shaping
+    consumer perception. Career almost entirely within Advance Publications ecosystem (Star-Ledger + Wired) except 3 years
+    at Digital Trends.'

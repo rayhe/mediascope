@@ -10236,3 +10236,107 @@ The Cannes article prominently features suicide, self-harm, eating disorders, an
 - Journalists: 112 → 113 (111 multi-pub)
 - Tests: 1,169 passed, 2 xfailed (unchanged)
 - Sources: talkingbiznews.com, studioforcreativeinquiry.org, maddy.zone, Techmeme
+
+---
+
+## 2026-07-02 02:00 PT — Type B: Journalist/Publication Research — Kate Taylor (#114) + Wired Editorial Expansion
+
+### Focus
+Kate Taylor (Wired senior writer, AI/work beat) — new journalist addition. Plus 4 Wired editorial changes: Kate Taylor hire, Uncanny Valley KQED radio show, community app launch, Jake Lahut NLRB case.
+
+### Finding: Kate Taylor — Business Insider investigative journalist → Columbia MBA → Wired
+
+Kate Taylor joined Wired July 1, 2026 as a senior writer covering "the future of work, and how AI is impacting the full spectrum of employment." Announced by exec editor Brian Barrett.
+
+**Career arc (6 stages):**
+1. Forbes/ForbesWomen intern (~2013-14)
+2. Entrepreneur magazine reporter (franchises, chain restaurants)
+3. Business Insider reporter (Oct 2015-) — fast food, restaurants, retail
+4. Business Insider senior features correspondent — major investigations:
+   - Dan Schneider/Nickelodeon exposé → "Quiet on Set" (HBO/Discovery, Emmy nom, she was EP)
+   - Brandy Melville → "Brandy Hellville" (HBO documentary, she was consultant)
+   - Subway collapse, ANTM, Stefan Solviev (NAREE Silver Medal 2023), MyPillow, fake Birkin socialite
+5. Columbia Business School MBA (completed 2026) — "to better understand the companies she covers"
+6. Wired senior writer (Jul 2026-) — AI/work beat, business desk, reports to Zoë Schiffer
+
+**Analytical value:**
+- NOT from adversarial tech journalism pipeline (Gizmodo/Vice/Guardian) — tests whether non-pipeline hires adopt Wired's institutional adversarial posture
+- AI/work beat directly competes with Guardian "Reworked" series (lost founder Oltman to Bloomberg Jun 2026) and Bloomberg's expanded coverage under Oltman/Frier
+- MBA adds business analysis depth unusual among Wired writers
+- Investigative-documentary methodology (print → docuseries) may produce different framing than standard tech reporting
+- Business desk now: Schiffer (Director) + Matsakis + Kleeman (editors) + Taylor + Zeff + Tiku + unfilled chief correspondent
+
+### Wired Editorial Changes Added (4):
+1. **Kate Taylor hire (Jul 2026)** — senior writer, AI/work, business desk
+2. **Uncanny Valley KQED radio show (Jun 2026)** — weekly Saturday 7PM PT on NPR SF, hosted by Drummond, featuring Barrett/Schiffer/Feiger clips. Extends editorial framing to broadcast audiences
+3. **Community app launch (Jun 2026)** — forum-style subscriber app for journalist-reader interaction, described as "community power play"
+4. **Jake Lahut NLRB case (2026)** — fired staffer pursuing unfair labor practice case, adds labor-management friction context to Drummond-era expansion
+
+### Sources
+- https://talkingbiznews.com/media-news/wired-hires-taylor-as-senior-writer/ (Barrett announcement)
+- https://katehtaylor.com/about (personal site, career details)
+- https://www.entrepreneur.com/author/kate-taylor (Entrepreneur byline page)
+- https://talkingbiznews.com/media-news/insider-senior-correspondent-taylor-joining-features-team/ (BI features team move)
+- https://talkingbiznews.com/media-news/wired-is-starting-a-show-on-a-radio-station/ (KQED show)
+- https://talkingbiznews.com/media-news/wired-launching-app-to-lead-readers-interact-with-staff/ (community app)
+- https://talkingbiznews.com/media-news/fired-wired-worker-pursuing-case-with-nlrb/ (Lahut NLRB)
+- https://diarydirectory.com (Wired appointments, Isabella Ward context)
+
+### Files Changed
+- `profiles/careers/journalists.yaml` (+88 lines: Kate Taylor with 6 career entries)
+- `profiles/careers/editorial_changes.yaml` (+52 lines: 4 new Wired entries)
+- `README.md` (journalist count 113→114, gallery entry for Kate Taylor)
+- `docs/EDITORIAL_HISTORIES.md` (counts: 113→114 journalists, 111→112 multi-pub)
+- `examples/careers_demo.py` (count: 113→114)
+
+### Stats After This Iteration
+- Journalists: 113 → 114 (112 multi-pub)
+- Wired editorial changes: 34 → 38
+- Tests: 1,169 passed, 2 xfailed (unchanged)
+
+---
+
+## 2026-07-02 03:00 PT — Type B (Journalist Research)
+
+### Focus: Julian Chokkattu (NEW) + Brian Kahn (expanded)
+
+**Julian Chokkattu — New journalist added (Wired's primary hardware reviewer)**
+
+Full 7-entry career profile tracking his entire trajectory:
+1. TechCrunch intern (~2014)
+2. The Star-Ledger page producer (~2014-2016) — NOTE: Star-Ledger is owned by Advance Publications, same parent as Condé Nast/Wired and Reddit
+3. Digital Trends mobile/wearables editor (~2016-2019) — the ONLY period outside Advance Publications properties
+4. Wired senior associate editor, reviews (~Oct 2019)
+5. Wired reviews editor (~2022)
+6. Wired Deputy Editor, Reviews (~2024)
+7. Wired Senior Editor for Gear (~Feb 2026, current)
+
+**Analytical value:** Unlike most tracked journalists who are investigative/adversarial, Chokkattu is a PRODUCT REVIEWER — distinct framing mode (assessment/evaluation vs institutional critique). He wrote the Meta Display glasses launch review (June 23, 2026). His career has been almost entirely within the Advance Publications ecosystem (Star-Ledger → Wired), with only Digital Trends as an outside stint — important context for institutional vs individual framing analysis.
+
+**Brian Kahn — Expanded with 3 updates:**
+- Earther career entry enriched: added details about senior reporter→managing editor progression (Sep 2019), Columbia faculty role, WSJ/Climate Central background, Hampshire College BA + Columbia MA education
+- Added source URLs to Earther and Protocol entries (previously had 0 source URLs for those)
+- Added NEW Guardian "America's Dirty Divide" series editor entry (contributing role, ~2022-2023) — this cross-publication stint at a tracked publication is analytically significant for DiD migration analysis
+
+### Source URLs Used
+- https://talkingbiznews.com/they-talk-biz-news/https-twitter-com-julianchokkattu-status-1188801470893887488/ (original Wired hire)
+- https://talkingbiznews.com/media-news/chokattu-named-senior-editor-for-gear-at-wired/ (Feb 2026 promotion)
+- https://buzzsumo.com/journalist/julian-chokkattu/ (profile/beat confirmation)
+- https://talkingbiznews.com/media-news/protocol-hires-kahn-to-start-climate-desk/ (Kahn Protocol hire)
+- https://talkingbiznews.com/media-news/the-guardian-appoints-kahn-to-edit-americas-dirty-divide-series/ (Kahn Guardian editing)
+- https://journalisthunt.com/journalists/julian-chokkattu (3,627+ article count)
+- Techmeme byline history (role/title verification across years)
+- NPR CES interview (NPR/CFPublic.org, role confirmation)
+- Digital Trends author pages (beat/article date verification)
+
+### Files Changed
+- `profiles/careers/journalists.yaml` (+115 lines: Julian Chokkattu with 7 career entries, Brian Kahn expanded)
+- `README.md` (journalist count 114→115, gallery entry for Chokkattu)
+- `docs/EDITORIAL_HISTORIES.md` (counts: 114→115 journalists, 112→113 multi-pub)
+- `examples/careers_demo.py` (count: 114→115)
+
+### Stats After This Iteration
+- Journalists: 114 → 115 (113 multi-pub)
+- Career entries: ~532 total
+- Source URLs: ~481 total
+- Tests: 1,169 passed, 2 xfailed (unchanged)

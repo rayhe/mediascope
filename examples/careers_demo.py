@@ -10,7 +10,7 @@ and Card & Krueger (1994) for the original DiD framework.
 
 This demo shows three capabilities:
 
-    1. Career timeline exploration — browse 114 tracked journalists,
+    1. Career timeline exploration — browse 115 tracked journalists,
        their career events, and automatically detected migrations
     2. Migration analysis — find high-value moves between the five
        tracked publications (Wired, NYT, Guardian, Atlantic, MIT TR)
