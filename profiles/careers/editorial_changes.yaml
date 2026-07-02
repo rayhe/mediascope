@@ -58,22 +58,18 @@ editorial_changes:
     source_url: https://www.theatlantic.com/author/will-oremus/
   - date: 2024-10
     incoming: Zoë Schiffer
-    notes: 'KEY LEADERSHIP HIRE: Schiffer hired as Director, Business & Industry — the top editorial
-      role for all business coverage. Reports to Executive Editor Brian Barrett. Joins Tim Marchman
-      (Director, Science) and Mike Calore (Director, Consumer Tech & Culture) to complete Drummond''s
-      newsroom leadership triumvirate. Previously managing editor at Platformer (Casey Newton''s
-      newsletter) and author of "Extremely Hardcore: Inside Elon Musk''s Twitter" (Portfolio/PRH,
-      Feb 2024). Before that, senior reporter at The Verge covering labor/workplace, and briefly on
-      NBC''s tech investigations team. Started in tech industry (content manager, UX writer at Uber)
-      before journalism. Stanford MA Journalism, UC Berkeley BA Political Science. Announced Oct 31,
-      2024; officially started January 2025. Co-host of "Uncanny Valley" podcast (launched same day
-      as announcement). Drummond''s memo explicitly frames the role as "documenting the exploits and
-      foibles of Silicon Valley''s companies and characters — and doing it better than anybody else"
-      — establishing adversarial Big Tech coverage as a stated hiring criterion. ANALYTICALLY SIGNIFICANT:
-      Schiffer brings the indie-newsletter adversarial voice directly into Wired''s institutional
-      structure, and her editorial authority over Wired''s entire business desk (Matsakis, Kleeman,
-      Tiku, Zeff, et al.) means her framing choices become institutionally amplified rather than
-      individually contained.'
+    notes: 'KEY LEADERSHIP HIRE: Schiffer hired as Director, Business & Industry — the top editorial role for all business
+      coverage. Reports to Executive Editor Brian Barrett. Joins Tim Marchman (Director, Science) and Mike Calore (Director,
+      Consumer Tech & Culture) to complete Drummond''s newsroom leadership triumvirate. Previously managing editor at Platformer
+      (Casey Newton''s newsletter) and author of "Extremely Hardcore: Inside Elon Musk''s Twitter" (Portfolio/PRH, Feb 2024).
+      Before that, senior reporter at The Verge covering labor/workplace, and briefly on NBC''s tech investigations team.
+      Started in tech industry (content manager, UX writer at Uber) before journalism. Stanford MA Journalism, UC Berkeley
+      BA Political Science. Announced Oct 31, 2024; officially started January 2025. Co-host of "Uncanny Valley" podcast (launched
+      same day as announcement). Drummond''s memo explicitly frames the role as "documenting the exploits and foibles of Silicon
+      Valley''s companies and characters — and doing it better than anybody else" — establishing adversarial Big Tech coverage
+      as a stated hiring criterion. ANALYTICALLY SIGNIFICANT: Schiffer brings the indie-newsletter adversarial voice directly
+      into Wired''s institutional structure, and her editorial authority over Wired''s entire business desk (Matsakis, Kleeman,
+      Tiku, Zeff, et al.) means her framing choices become institutionally amplified rather than individually contained.'
     outgoing: null
     position: director_business_industry
     source_url: https://talkingbiznews.com/media-news/wired-hires-schiffer-as-director-of-business-and-industry/
@@ -271,6 +267,17 @@ editorial_changes:
     outgoing: null
     position: west_coast_editor
     source_url: https://adweek.com/fishbowlny/guardian-us-selects-west-coast-bureau-team/
+  - date: ~2012
+    incoming: Dominic Rushe
+    outgoing: null
+    position: us_business_editor
+    notes: 'Rushe promoted from correspondent to US Business Editor after joining from the Sunday Times (NYC correspondent,
+      2001-2010). Part of 2014 Pulitzer team (Snowden/NSA). Oversees ALL Guardian US business/tech reporting. Direct reports
+      have included Sam Thielman, Jana Kasperkevic, Kari Paul, Dara Kerr, and Jeremy Barr. His editorial gatekeeping shapes
+      how Guardian US frames Big Tech coverage. Cross-publication migration: Sunday Times (News Corp/Murdoch) → Guardian (Scott
+      Trust) — diametrically opposite ownership models. 15+ year Guardian tenure makes him one of the longest-serving Guardian
+      US editors.'
+    source_url: https://theorg.com/org/guardian-media-group/org-chart/dominic-rushe
   mit-tech-review:
   - date: 2017-10
     incoming: Elizabeth Bramson-Boudreau
@@ -381,8 +388,8 @@ editorial_changes:
       → SPUR editorial director (Bay Area urban planning think tank) → NYT Opinion columnist (2007-2020, cities/design/tech)
       → MIT TR editorial director of print. Author of ''Prefab'' and contributor to ''The Future of Public Space'' and ''Cars:
       Accelerating the Modern World.'' Her departure from MIT TR''s print editorial leadership coincides with the broader
-      industry print contraction — Wired UK cancelled print edition same month (Jan 2026). Not a reporter/beat journalist but
-      an editorial production leader whose exit signals continued erosion of print infrastructure at MIT TR.'
+      industry print contraction — Wired UK cancelled print edition same month (Jan 2026). Not a reporter/beat journalist
+      but an editorial production leader whose exit signals continued erosion of print infrastructure at MIT TR.'
     outgoing: Allison Arieff
     position: editorial_director_print
     source_url: https://talkingbiznews.com/media-news/mit-techs-arieff-joins-sf-chronicle/
@@ -415,8 +422,8 @@ editorial_changes:
       coverage at BuzzFeed News. Stanford BA 2011, Vietnamese-American. Based in Los Angeles. The hire was explicitly framed
       around scrutiny of tech industry power — the announcement stated "scrutiny of that power is needed more than ever."
       KEY 2026 CONTEXT: Mac''s 2026 byline output is dominated by SpaceX IPO coverage (9+ articles Apr-Jun). Meta coverage
-      reduced to intermittent scoops (Arena/prediction markets, AI gov reviews). The effective "primary NYT Meta reporter" in
-      2026 may now be Eli Tan (hired 2026-01) under Mike Isaac''s expanded mentoring role.'
+      reduced to intermittent scoops (Arena/prediction markets, AI gov reviews). The effective "primary NYT Meta reporter"
+      in 2026 may now be Eli Tan (hired 2026-01) under Mike Isaac''s expanded mentoring role.'
     position: technology_reporter_accountability
     source_url: https://www.nytco.com/press/ryan-mac-joining-technology-team/
   - date: 2024-02
@@ -605,11 +612,11 @@ editorial_changes:
     incoming: Louise Matsakis
     notes: 'BOOMERANG HIRE: Matsakis returned to Wired as Senior Business Editor on the business desk, starting November 11.
       Reports to Zoë Schiffer (Director, Business & Industry). Works closely with Natasha Tiku and US-based reporters. Co-writes
-      "Made in China" weekly newsletter with Zeyi Yang. Barrett''s announcement: "she has an innate understanding of what a
-      WIRED story is." CAREER ARC: Wired (staff writer, Thompson era 2018-2020) → Rest of World → NBC News → Semafor → freelance/
+      "Made in China" weekly newsletter with Zeyi Yang. Barrett''s announcement: "she has an innate understanding of what
+      a WIRED story is." CAREER ARC: Wired (staff writer, Thompson era 2018-2020) → Rest of World → NBC News → Semafor → freelance/
       Omidyar Network reporter-in-residence → Wired (senior editor, Drummond era 2024-). Only tracked journalist to return
-      to Wired after departing, enabling before/after editorial culture comparison. China and e-commerce specialist — NYU BA
-      Philosophy, studied Chinese in Taipei. Won 2022 SOPA award (Shein investigation at Rest of World). Based in Los Angeles.
+      to Wired after departing, enabling before/after editorial culture comparison. China and e-commerce specialist — NYU
+      BA Philosophy, studied Chinese in Taipei. Won 2022 SOPA award (Shein investigation at Rest of World). Based in Los Angeles.
       ANALYTICAL VALUE: As senior business editor, she directly shapes AI, VC, and Big Tech coverage framing. Her editing
       authority amplifies her framing choices through the reporters she edits. Business desk hierarchy: Drummond → Barrett
       → Schiffer → Matsakis + Kleeman (senior editors) → Tiku, Zeff (writers).'
@@ -754,11 +761,11 @@ editorial_changes:
       of Bangladesh''s Missing Children'' investigation. Covered Afghanistan, Iran, Ukraine for Guardian''s ''Rights and Freedoms''
       series. ANALYTICAL VALUE: Third Guardian → Wired pipeline hire in 2025-2026 (after Blake Montgomery as US tech editor
       Sep 2023 via Gizmodo, and Hugo Lowell Apr 2026). The Deputy Editor role is new — Swash shapes UK editorial output directly.
-      Paired with Isabella Ward as London staff writer (hired June 2026 — Barrett''s "general assignment staff writer,
-      another new role" referenced in this announcement). Her Guardian investigative and accountability DNA
-      (Grenfell-era newsroom, conflict reporting) entering Wired''s London desk mirrors the Robert Booth appointment at Guardian
-      (housing investigator → tech editor). Signals Wired UK rebuilding post-print-cancellation with Guardian-trained editorial
-      leadership rather than tech-native journalists.'
+      Paired with Isabella Ward as London staff writer (hired June 2026 — Barrett''s "general assignment staff writer, another
+      new role" referenced in this announcement). Her Guardian investigative and accountability DNA (Grenfell-era newsroom,
+      conflict reporting) entering Wired''s London desk mirrors the Robert Booth appointment at Guardian (housing investigator
+      → tech editor). Signals Wired UK rebuilding post-print-cancellation with Guardian-trained editorial leadership rather
+      than tech-native journalists.'
     outgoing: null
     position: deputy_editor_london
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-swash-as-deputy-editor-in-london/
@@ -800,12 +807,13 @@ editorial_changes:
     source_url: https://talkingbiznews.com/media-news/wired-hires-martineau-as-a-staff-writer/
   - date: '2025-11-17'
     incoming: Maxwell Zeff
-    notes: 'AI BUSINESS HIRE: Zeff hired as senior writer covering the business of AI. Announced by Brian Barrett Nov 13, 2025.
-      From TechCrunch (senior AI reporter), previously Gizmodo and Bloomberg. Barrett: "Few people have delivered more scoops
-      at such a critical time for the industry. Max is relentless, well-sourced, and brings a deep understanding of both the
-      technological and financial intricacies of AI." Based in San Francisco. THIRD Gizmodo → Wired migration under Barrett
-      (after Dell Cameron and Dhruv Mehrotra), reinforcing the Gizmodo talent pipeline. Reports to Zoë Schiffer on business desk.
-      @wiredunion member. Fills AI business coverage gap left after Tom Simonite''s June 2024 departure to Washington Post.'
+    notes: 'AI BUSINESS HIRE: Zeff hired as senior writer covering the business of AI. Announced by Brian Barrett Nov 13,
+      2025. From TechCrunch (senior AI reporter), previously Gizmodo and Bloomberg. Barrett: "Few people have delivered more
+      scoops at such a critical time for the industry. Max is relentless, well-sourced, and brings a deep understanding of
+      both the technological and financial intricacies of AI." Based in San Francisco. THIRD Gizmodo → Wired migration under
+      Barrett (after Dell Cameron and Dhruv Mehrotra), reinforcing the Gizmodo talent pipeline. Reports to Zoë Schiffer on
+      business desk. @wiredunion member. Fills AI business coverage gap left after Tom Simonite''s June 2024 departure to
+      Washington Post.'
     outgoing: null
     position: senior_writer_ai_business
     source_url: https://www.editorandpublisher.com/stories/wired-welcomes-two-new-staff-members-alana-hope-levinson-and-maxwell-zeff,252685
@@ -831,8 +839,8 @@ editorial_changes:
     notes: 'FEATURES EDITOR HIRE: Levinson hired as features editor. Announced by Brian Barrett Nov 13, 2025. Career: writer/editor
       at Medium and MEL Magazine (instrumental in building editorial teams), last five years ran her own consultancy launching
       print publications, podcasts, and newsletters. Written for New York, GQ, Vogue, Dwell, Rolling Stone. Based in Wired
-      LA office. Barrett: "a sharp eye for digital culture, an entrepreneurial outlook, and a bottomless well of ideas."
-      Not a tech-journalism-pipeline hire — brings digital culture and longform editorial sensibility from magazine world.'
+      LA office. Barrett: "a sharp eye for digital culture, an entrepreneurial outlook, and a bottomless well of ideas." Not
+      a tech-journalism-pipeline hire — brings digital culture and longform editorial sensibility from magazine world.'
     outgoing: null
     position: features_editor
     source_url: https://www.editorandpublisher.com/stories/wired-welcomes-two-new-staff-members-alana-hope-levinson-and-maxwell-zeff,252685

@@ -184,7 +184,7 @@ print(f"Portable: {decomp.portable_bias_score:.3f}")
 
 ## Starter Data
 
-MediaScope ships with career data for **110 journalists** across the 5 starter publications plus notable feeder outlets (The Verge, BuzzFeed News, Platformer, Reuters, Recode, WSJ, Bloomberg, The Telegraph, New Scientist, Gizmodo, The Daily Beast, Politico, Consumer Reports, The Information, and 155+ others). 108 of these have multi-publication careers suitable for migration analysis.
+MediaScope ships with career data for **112 journalists** across the 5 starter publications plus notable feeder outlets (The Verge, BuzzFeed News, Platformer, Reuters, Recode, WSJ, Bloomberg, The Telegraph, New Scientist, Gizmodo, The Daily Beast, Politico, Consumer Reports, The Information, and 155+ others). 110 of these have multi-publication careers suitable for migration analysis.
 
 ### High-Value Migration Events
 
@@ -207,6 +207,8 @@ MediaScope ships with career data for **110 journalists** across the 5 starter p
 | **Kaitlyn Tiffany** | Vox → The Verge | The Atlantic | ~2020 | Digital-native → legacy prestige publication adaptation |
 | **Dell Cameron** | The Daily Dot → Vice → Gizmodo | Wired | ~2023 | Investigative security reporter across 4 outlets — consistent adversarial posture test |
 | **Louise Matsakis** | Mashable → Motherboard/VICE → Wired → Rest of World → NBC News → Semafor | Wired | 2024 | 7-outlet boomerang journalist — only tracked journalist to return to the same publication. China/e-commerce specialist, now Senior Business Editor shaping Big Tech coverage framing. Thompson-era vs. Drummond-era comparison |
+| **Dominic Rushe** | Sunday Times (News Corp) | Guardian US | 2010 | Sunday Times NYC correspondent → Guardian US Business Editor. 15+ year Guardian tenure. Part of 2014 Pulitzer team (NSA surveillance). News Corp → Scott Trust ownership migration — diametrically opposite editorial models. As editor (not byline), his influence amplifies through every reporter he directs |
+| **Chris Stokel-Walker** | Freelance across Guardian, Wired, NYT, MIT Tech Review | (concurrent) | 2016- | HIGHEST CROSS-PUBLICATION COVERAGE — writes for 4 of 5 tracked publications simultaneously. As a freelancer, personal voice is constant while institutional editing varies. If the same journalist's tone shifts between Wired and Guardian, that isolates institutional editorial effect. PhD in journalism, author of How AI Ate the World (2024) |
 
 ### Editorial Leadership Changes
 
@@ -228,6 +230,7 @@ MediaScope ships with career data for **110 journalists** across the 5 starter p
 | **The Guardian** | Katharine Viner → EIC | June 2015 | Control: longest-stable leadership (11+ years). Best baseline for DiD analysis |
 | **The Guardian** | OpenAI licensing deal | Feb 2025 | Destroys "pure control case" status — creates direct commercial relationship with Meta's #1 AI competitor |
 | **The Guardian** | Samantha Oltman → "Reworked" AI editor | Feb 2026 | 4-month tenure before departure to Bloomberg — tests editorial resilience |
+| **The Guardian** | Dominic Rushe → US Business Editor | ~2012 | 15+ year gatekeeper of ALL Guardian US business/tech coverage. Oversees Barr, previously Kari Paul. Sunday Times (Murdoch) → Guardian (Scott Trust) migration. 2014 Pulitzer team member |
 
 ## Limitations
 
@@ -261,7 +264,7 @@ MediaScope's Editorial Histories module fills this gap by:
 1. Treating journalist migrations as natural experiments (novel application of DiD)
 2. Building a reusable career tracking infrastructure that any AI agent can extend
 3. Producing decomposition scores that are interpretable, comparable, and auditable
-4. Shipping with verified starter data for **110 journalists** across 170+ publications, with 108 having multi-publication careers suitable for migration analysis
+4. Shipping with verified starter data for **112 journalists** across 170+ publications, with 110 having multi-publication careers suitable for migration analysis
 
 ## References
 
