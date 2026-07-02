@@ -9824,3 +9824,54 @@ Google was documented in known_conflicts and notes but was MISSING from the form
 
 ---
 
+
+## 2026-07-01 19:00 PT — Type A: Article Deep Dive (Cannes Contractors Revisit)
+
+**Trigger:** `mediascope-daily-iteration` scheduled run
+**Focus:** Revisiting the Wired Cannes contractors/teens article analysis to fix concrete toolkit gaps it surfaced
+
+### Source Article
+- **Publication:** Wired
+- **Article:** Meta contractors posed as teens to test rival AI chatbots at Cannes
+- **Analysis:** `examples/sample_output/wired_meta_cannes_contractors_teens_2026_07_analysis.md` (existing)
+
+### Gaps Identified from Prior Analysis
+1. "Business Insider" source splitting → Already fixed (tested, passes)
+2. `child_safety` topic ranked 3rd despite being the article's core → Headline boost too weak
+3. Missing framing devices: OUTSOURCED_INTENSITY (already existed), SCALE_MAGNITUDE (already existed), DELAYED_DEFENSE (not implemented), INDUSTRY_NORMALIZATION_UNDERCUT (not implemented)
+
+### Changes Made
+
+#### New Framing Devices (51 total, up from 49)
+1. **`delayed_defense`** (structural post-pass): Corporate response appears after 65% of article text. Well-known editorial technique — bury the rebuttal after the reader has absorbed the accusatory framing. Requires 500+ char articles. Catches: company/spokesperson said, in-a-statement, declined-to-comment patterns.
+2. **`industry_normalization_undercut`** (pattern-matched, 4 patterns): Acknowledges industry-wide practice then undercuts it to single out the target. "Other companies also X, but Meta's reliance is especially troubling." 4 patterns: other-companies-but-especially, not-unique-but, industry-wide-but-scale, not-alone-but-approach-raises.
+
+#### Topic Classification Improvement
+- Headline boost increased from **1.5× to 2.0×** — the Cannes article proved that `ai_development`'s overwhelming body-text keyword density outranked `child_safety` even with 1.5× boost when the headline clearly contained "teens"
+- Added **12 new child_safety compound keywords** covering contractor/testing scenarios: "posed as teens/minors/children", "impersonating teens/minors", "pretending to be teens/minors/children", "inappropriate with minors", "sexual content and minors", "child labor", "child workers"
+
+### Tests
+- **16 new tests** in `test_delayed_defense_and_normalization.py`
+  - 7 tests for `delayed_defense` (fires at 80%, doesn't fire at 30%, declined-to-comment, short article guard, spokesperson pattern, in-a-statement, no-response-no-fire)
+  - 6 tests for `industry_normalization_undercut` (positive: other-companies-but-especially, not-unique-but, industry-wide-but-scale, others-also-but-far-worse, not-alone-but-approach; negative: pure-normalization-no-undercut)
+  - 3 tests for headline boost strength (teens headline outranks ai body, children headline boost, posed-as-teens keyword)
+- **All 1155 tests pass** (44 test files), 2 xfail
+
+### Documentation Updated
+- METHODOLOGY.md: Extended device table (+industry_normalization_undercut), Structural device table (+delayed_defense), 51-type taxonomy, 6 structural devices
+- ARCHITECTURE.md: Extended device inline list, structural device inline list, test file listing, test/pattern counts
+- AGENT_GUIDE.md: Device tier counts (51/10/35/6)
+- README.md: Test table, test/pattern counts
+- CLI docstring: 51 types
+- Pattern count: 301 (up from 297)
+
+### Commit
+- `d52032f` — Add delayed_defense + industry_normalization_undercut framing devices, strengthen headline topic boost
+- Pushed to `rayhe/mediascope` main
+
+### Stats After This Iteration
+- **51 framing device types** (45 pattern-matched + 6 structural)
+- **301 regex patterns**
+- **1155 tests** across 44 test files
+- **23 topic buckets**
+- **110 journalists** (108 multi-pub)
