@@ -3,6 +3,49 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-02 11:00 PT — Type B: Journalist Research — Stuart A. Thompson Deep Profile Expansion (Globe and Mail → WSJ → NYT)
+
+### Focus
+Stuart A. Thompson (NYT misinformation reporter) had only 3 career entries and a wrong WSJ start date (2012-01) despite being a Pulitzer Prize winner whose misinformation beat intersects Meta coverage directly. His Globe and Mail origin (Toronto, ~2011-2014) was entirely missing. Expanded to 5 career entries with corrected dates, full awards catalog, 16+ recent articles, co-author network, and Meta-specific coverage analysis.
+
+### Changes
+1. **`profiles/careers/journalists.yaml`** — Thompson profile expanded (+139 lines, -56 lines):
+   - **Globe and Mail discovered** (Toronto, ~2011-2014): First journalism position. Started as summer web editor, became multimedia editor, then mobile team member. Kevin Siu (head of digital): "one of the newsroom's not-so-secret weapons" for data journalism. Source: CJF announcement.
+   - **WSJ start date corrected**: 2012-01 → 2014-06 (joined as senior interactive graphics editor after leaving Globe May 30, 2014). Confirmed by CJF + NYTCo announcements.
+   - **WSJ career split**: One entry → two: senior_interactive_graphics_editor (2014-06 to 2015-12) + graphics_director (2016-01 to 2017-04, promoted). Breaking news workflow profiled by Poynter (Nice attack covered in 40 min).
+   - **NYT Opinion start corrected**: July 2017 → April 24, 2017 (per NYTCo announcement by James Bennet and Steve Duenes). Title: Graphics Director for Opinion (new position created for him).
+   - **Awards catalog expanded**: 2015 Pulitzer for Investigative Reporting (WSJ "Medicare Unmasked" — team: Carreyrou, Stewart, Barry, McGinty, Burch, Keegan, Thompson per Wikipedia), Pulitzer finalist for "Home Front" domestic violence series, 2020 Livingston Awards finalist (smartphone tracking), Malofiej Best of Show print.
+   - **2025-2026 reporting cataloged (16+ articles)**: Iran AI fakes, Polymarket falsehoods, Netanyahu proof-of-life deepfake, AI detection tools, Meta fact-checking partner denials (Jan 2025), Canada news block on Meta feeds, 5-byline AI training data investigation (Meta/Simon & Schuster), midterm election reporting focus for 2026.
+   - **Co-author network**: Charlie Warzel (Privacy Project), Tiffany Hsu (Sora), Steven Lee Myers, Sheera Frenkel, Cade Metz + Cecilia Kang + Nico Grant, Matina Stevis-Gridneff, Yaryna Serkez.
+   - **Meta coverage analysis**: beat inherently intersects Meta content moderation — wrote about fact-checking partner denials, Canada news block, AI training data practices.
+   - Contact: stuart.thompson@nytimes.com
+
+2. **`profiles/careers/editorial_changes.yaml`** — 2 new nytimes entries (+28 lines):
+   - 2017-04: Thompson joins NYT Opinion as Graphics Director (new position, WSJ → NYT migration)
+   - 2021-11: Thompson moves from Opinion to news desk as misinformation reporter (internal move)
+
+3. **`README.md`** — Updated Thompson migration path: "WSJ → NYT" → "Globe and Mail → WSJ → NYT"
+
+### Sources
+- CJF: https://cjf-fjc.ca/news/stuart-thompson-joins-wsj-senior-interactive-graphics-editor/
+- NYTCo: https://nytco.com/press/stuart-thompson-named-graphics-director-opinion/
+- NYTCo: https://nytco.com/press/stuart-thompson-joins-business/
+- Poynter: WSJ graphics team breaking news protocol (Jul 2016)
+- stuartathompson.com: personal website (Livingston, Pulitzer, 2026 election focus)
+- TalkingBizNews: disinformation beat move announcement
+- Wikipedia: Pulitzer Investigative Reporting 2015 team roster
+- Daring Fireball + Drexel law review: Privacy Project impact citations
+- Techmeme: Meta fact-checking, AI training data, X reach suppression articles
+- BuzzSumo: 2025-2026 article byline catalog
+
+### Validation
+- Tests: 1172 passed, 2 xfailed, 0 failures
+- Journalist count: 117 (unchanged), multi-pub: 115 (unchanged)
+- Migrations: 355 (unchanged — Globe→WSJ added but migration detection algorithm unchanged)
+- Publication slugs: 219 → 222 (added globe-and-mail + YAML re-serialization effects)
+- Commit: `d291cda`, pushed to `main`
+
+---
 ## 2026-07-02 09:00 PT — Type A: Article Deep Dive — Gizmodo "Meta Is Slapping Subscriptions on Its Smart Glasses"
 
 ### Focus
