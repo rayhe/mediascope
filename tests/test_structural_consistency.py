@@ -1496,3 +1496,79 @@ class TestJournalistCountConsistency:
             f"but YAML counting yields {multi_pub_yaml}. Check publication "
             f"slug consistency."
         )
+
+    @staticmethod
+    def _compute_migration_count() -> int:
+        """Return total auto-detected migration count from CareerTracker."""
+        from mediascope.careers.tracker import CareerTracker
+        t = CareerTracker()
+        t.load()
+        return len(t.find_migrations())
+
+    @staticmethod
+    def _compute_publication_slug_count() -> int:
+        """Return count of unique publication slugs across all career events."""
+        import yaml
+        yaml_path = _REPO_ROOT / "profiles" / "careers" / "journalists.yaml"
+        with open(yaml_path) as f:
+            data = yaml.safe_load(f)
+        slugs = set()
+        for j in data["journalists"]:
+            for ev in j.get("career", []):
+                pub = ev.get("publication", "")
+                if pub:
+                    slugs.add(pub)
+        return len(slugs)
+
+    def test_readme_careers_demo_migration_count(self):
+        """README.md careers_demo table row must reference correct migration count."""
+        migration_count = self._compute_migration_count()
+        doc = (_REPO_ROOT / "README.md").read_text()
+        expected = f"{migration_count} auto-detected migrations"
+        assert expected in doc, (
+            f"README.md careers_demo row should reference '{expected}' "
+            f"but doesn't. CareerTracker finds {migration_count} migrations. "
+            f"Update the careers_demo description in README.md."
+        )
+
+    def test_readme_publication_count_floor(self):
+        """README.md publication count floor must not understate actual count by >20."""
+        import re
+        slug_count = self._compute_publication_slug_count()
+        doc = (_REPO_ROOT / "README.md").read_text()
+        # Look for patterns like "210+ publications" or "across 210+ publications"
+        match = re.search(r"across (\d+)\+ publications", doc)
+        assert match, (
+            "README.md should contain 'across N+ publications' but doesn't."
+        )
+        stated_floor = int(match.group(1))
+        assert stated_floor <= slug_count, (
+            f"README.md claims '{stated_floor}+ publications' but only "
+            f"{slug_count} unique publication slugs exist in YAML."
+        )
+        # Floor shouldn't understate by more than 20 (keep it reasonably current)
+        assert slug_count - stated_floor <= 20, (
+            f"README.md claims '{stated_floor}+ publications' but YAML has "
+            f"{slug_count} unique slugs — floor is stale by "
+            f"{slug_count - stated_floor}. Update to {slug_count // 10 * 10}+."
+        )
+
+    def test_editorial_histories_publication_count_floor(self):
+        """EDITORIAL_HISTORIES.md publication count floor must not understate by >20."""
+        import re
+        slug_count = self._compute_publication_slug_count()
+        doc = (_REPO_ROOT / "docs" / "EDITORIAL_HISTORIES.md").read_text()
+        match = re.search(r"across (\d+)\+ publications", doc)
+        assert match, (
+            "EDITORIAL_HISTORIES.md should contain 'across N+ publications'."
+        )
+        stated_floor = int(match.group(1))
+        assert stated_floor <= slug_count, (
+            f"EDITORIAL_HISTORIES.md claims '{stated_floor}+ publications' "
+            f"but only {slug_count} unique slugs exist."
+        )
+        assert slug_count - stated_floor <= 20, (
+            f"EDITORIAL_HISTORIES.md claims '{stated_floor}+ publications' "
+            f"but YAML has {slug_count}. Floor is stale by "
+            f"{slug_count - stated_floor}. Update to {slug_count // 10 * 10}+."
+        )
