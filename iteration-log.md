@@ -3,6 +3,91 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-02 12:00 PT — Type C: Ownership & Funding — Meta Litigation Convergence (Jul-Aug 2026) + Reddit/Advance Updates
+
+### Focus
+Comprehensive update to Wired/Advance litigation exposure analysis. Meta faces an unprecedented 33-day convergence of 4 trials + 1 Senate hearing in July-August 2026 — the most concentrated period of child-safety legal/legislative pressure any single tech company has faced. Also updated Reddit stock data (Jul 2 close) and added first Reddit insider selling analysis.
+
+### Finding 1: Gonzalez Rogers June 30 Ruling (severity 5, CRITICAL)
+
+Judge Yvonne Gonzalez Rogers issued a 38-page decision on June 30, 2026:
+- **DENIED** Meta's motion for summary judgment on deception and unfair practices claims
+- **GRANTED** summary judgment **TO THE STATES** on COPPA compliance — Meta's failure to comply with Children's Online Privacy Protection Act notice and parental consent requirements is now **established as a matter of law**. The jury will be told Meta violated COPPA.
+- Rejected Meta's defense that "social media addiction" is not an established psychiatric condition (and therefore claims of non-addictiveness cannot be false)
+- Found "material factual disputes" on addictiveness, false denial, child targeting
+- Trial set for **August 18, 2026** (CA, CO, KY, NJ v. Meta)
+
+**Sources:** Reuters (Jun 30), Fox Business (Jul 1)
+
+### Finding 2: July-August 2026 Trial Calendar (severity 5)
+
+Four trials + Senate hearing in 33 days:
+1. **Tennessee AG trial** (late July, ~7 weeks, Nashville) — AG Jonathan Skrmetti v. Meta. Meta's internal study showing algorithm recommended child exploitative imagery to pedophiles is in evidence.
+2. **JCCP 5255 second bellwether** (Jul 27, LA County Superior Court) — R.K.C. v. Meta/Snap. TikTok settled Jul 1, YouTube settled June. 15-year-old Florida boy.
+3. **Senate hearing** (Jul 28) — tech executives testifying on child safety. Meta lobbied White House to soften hearing. Zuckerberg/Pichai reportedly spared from testifying.
+4. **Federal state AG trial** (Aug 18, N.D. Cal.) — CA/CO/KY/NJ v. Meta (Gonzalez Rogers).
+
+**Sources:** The Tennessean (Feb 27), Reuters (Jul 1), Washington Examiner/Politico (Jun 26), Storyboard18 (Jul 1)
+
+### Finding 3: Cumulative Verdict/Settlement Tally (severity 4)
+
+2026 results to date:
+- KGM v. Meta/YouTube: $6M ($4.2M Meta, $1.8M Google) — post-trial motions denied June 2026, verdict stands
+- New Mexico DOJ v. Meta: $375M civil penalties — injunctive relief ruling pending
+- Breathitt County Schools: $27M settlement (first MDL school district bellwether)
+- **Total: $408M+ and accelerating**
+
+Scale: 10,000+ individual PI, ~800 school districts, 3,300+ CA state court, 2,600+ federal MDL, 41+ state AGs. Cornell Law professor (Lahav) analogized to $6B 3M Combat Arms earplug MDL.
+
+### Finding 4: Legislative/Regulatory Wave (severity 3)
+
+- Mississippi: Enacted "Keeping Kids Safe Online Act" ($10K civil penalties per incident)
+- Australia: Doubling fines to AU$99M ($68M) for platforms failing to prevent under-16 accounts
+- Minnesota/Colorado: Warning label laws blocked by NetChoice lawsuits
+- CNN research (Jun 29): 66% of Instagram's 29 child safety features are "failures" (broken, buried, or missing). Snapchat 73%, YouTube 55%, TikTok 50%.
+
+### Finding 5: Reddit Stock + Insider Selling (severity 3)
+
+- Reddit closed at $190.67 (Jul 2) — down 3.6% from $197.76 intraday peak
+- Advance stake: ~$8.05B (42.2M shares × $190.67)
+- **Reddit insider selling (last 90 days, MarketBeat): $36.9M total**
+  - CTO Christopher Slowe: 15,500 shares at $150.67 ($2.3M, Apr 8, 10b5-1 plan, -28.75% of direct holdings)
+  - COO Jennifer Wong: 39,166 shares at $176.94 ($6.9M, Jun 16, 10b5-1 plan, -3.59% of holdings)
+  - 28.48% of stock held by corporate insiders
+  - Elevated distribution pace vs historical norms
+- Margin loan buffer: 27-31% above offering price (narrowing from peak)
+- Q2 earnings: July 30 (potential volatility catalyst for collateral value)
+
+### Changes
+1. **`profiles/wired.yaml`** — Major updates:
+   - New `meta_litigation_escalation_jul_2026` entry (severity 5) with full trial calendar, Gonzalez Rogers ruling analysis, cumulative verdict tally, legislative wave, CNN child safety research, and 10 source URLs
+   - Updated `connected_party` entry: claim count 2,527+ → 2,600+ MDL / 3,300+ CA state; added JCCP 5255 case reference
+   - Updated `current_value_estimate`: $197.76 → $190.67 close, stake $8.33B → $8.05B, added Reddit insider selling data ($36.9M/90 days with CTO/COO breakdown), Q2 earnings date, margin loan buffer narrowing
+   - Updated `q1_2026_financials`: market cap reference updated
+   - Net: +104 lines added
+2. **`README.md`** — Updated financial conflicts section: added item 4 (litigation convergence, COPPA ruling), updated item 1 (Reddit stake ~$8B, insider selling, margin loan)
+
+### Sources
+- Reuters (Jun 30, Jul 1): Gonzalez Rogers ruling, TikTok settlement
+- Fox Business (Jul 1): Summary judgment analysis
+- The Tennessean (Feb 27, 2026): Tennessee AG trial preview
+- Washington Examiner/Politico (Jun 26): Senate hearing, White House lobbying
+- Seeger Weiss (Jun 1): MDL school district bellwether settlement
+- Storyboard18 (Jul 1): R.K.C. bellwether, TikTok settlement
+- Courier & Press (Jul 1): EVSC/MDL school district analysis, Cornell Law quote
+- Movieguide (Jun 29): Verdict tally, Tennessee trial mention
+- CNN (Jun 29): Child safety feature failure rates
+- MarketBeat (Jul 2): Reddit insider selling data
+- spencer-law.com: MDL 3047 comprehensive overview
+- Daily Caller (Jun 26): Mississippi legislation, verdict context
+- AP/WAMC (Jun 29): Australia fine doubling
+
+### Validation
+- Tests: 1172 passed, 2 xfailed, 0 failures
+- Wired profile: 1,649 → 1,753 lines (+104)
+- Commit: `a145cd5`, pushed to `main`
+
+---
 ## 2026-07-02 11:00 PT — Type B: Journalist Research — Stuart A. Thompson Deep Profile Expansion (Globe and Mail → WSJ → NYT)
 
 ### Focus
