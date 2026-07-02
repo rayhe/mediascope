@@ -4,6 +4,71 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-01 18:00 PT — Type D: Toolkit Quality — Cross-Document Journalist Count Consistency Audit + Guards
+
+### Focus
+Systematic consistency audit of journalist/test counts across all documentation files after the 16:00 Type B iteration added Louise Matsakis and Michael Calore. Additionally fixed a CareerTracker crash bug and corrected a multi-pub count error from the Type B iteration.
+
+### Problems Found
+
+**1. Stale journalist counts (3 files):**
+- EDITORIAL_HISTORIES.md: "108 journalists" and "106 multi-publication" — should be 110 / 108
+- careers_demo.py docstring: "104 tracked journalists" — should be 110
+
+**2. Type B multi-pub count error:**
+The 16:00 Type B iteration stated "Calore is single-pub: all career within Wired/Wired Digital" and set multi-pub to 107. But Calore's YAML has `publication: wired-digital-webmonkey` AND `publication: wired` — two distinct publication slugs. He IS multi-pub. Verified from YAML: 108 multi-pub, not 107. Only Dan Milmo and Robert Booth are truly single-pub.
+
+**3. CareerTracker crash:**
+`CareerTracker.load()` threw `KeyError: 'start'` because 3 of Zoë Schiffer's pre-journalism career events (tech startup content manager, Uber UX writer, freelance) lack `start` dates in journalists.yaml. Tracker assumed all events have start dates.
+
+**4. No guard against future staleness:**
+No test verified that journalist counts in docs matched the YAML source of truth. The Type B iteration added 2 journalists to YAML and updated README.md but left EDITORIAL_HISTORIES.md and careers_demo.py stale. This pattern will repeat without automated guards.
+
+### Fixes Applied
+
+| Fix | Details |
+|-----|---------|
+| EDITORIAL_HISTORIES.md | "108 journalists" → "110 journalists" (2 locations); "106 multi-pub" → "108 multi-pub" (2 locations) |
+| EDITORIAL_HISTORIES.md | Added Matsakis to High-Value Migration Events table |
+| EDITORIAL_HISTORIES.md | Added Calore's Director promotion to Editorial Leadership Changes table |
+| careers_demo.py | Docstring "104 tracked journalists" → "110" |
+| CareerTracker | Skip career events with no `start` date (continue, not crash) |
+| README.md | Test count 1133 → 1139; per-file structural_consistency 62 → 68 |
+| ARCHITECTURE.md | Test count 1133 → 1139 |
+
+### New Guards (6 tests in TestJournalistCountConsistency)
+
+| Test | What It Validates |
+|------|-------------------|
+| `test_readme_journalist_count` | README.md bold count matches YAML journalist count |
+| `test_editorial_histories_total_count` | EDITORIAL_HISTORIES.md bold count matches YAML |
+| `test_editorial_histories_multi_pub_count` | Multi-pub count in EDITORIAL_HISTORIES.md matches YAML |
+| `test_careers_demo_count` | careers_demo.py docstring count matches YAML |
+| `test_careers_demo_count_in_readme_table` | README.md careers_demo table row references correct count |
+| `test_tracker_loads_all_journalists` | CareerTracker loads all YAML journalists, total and multi-pub counts match |
+
+**Design:** Tests use YAML as source of truth (not hardcoded expected counts). Adding a journalist to YAML and forgetting to update any doc immediately fails the relevant test. No test constant to maintain separately.
+
+### Files Changed
+
+| File | Change |
+|------|--------|
+| `docs/EDITORIAL_HISTORIES.md` | Journalist count 108→110 (×2), multi-pub 106→108 (×2), +Matsakis migration, +Calore leadership change |
+| `examples/careers_demo.py` | Docstring count 104→110 |
+| `mediascope/careers/tracker.py` | Skip events with no `start` date instead of crashing |
+| `tests/test_structural_consistency.py` | +TestJournalistCountConsistency (6 tests) |
+| `README.md` | Test count 1133→1139, per-file 62→68, description updated |
+| `docs/ARCHITECTURE.md` | Test count 1133→1139 |
+
+### Stats (post-iteration)
+- Tests: 1133 → 1139 (+6 journalist count consistency guards)
+- Test files: 43 (unchanged)
+- Journalists: 110 (unchanged — this iteration fixed docs to match existing YAML)
+- Multi-pub: 108 (corrected from Type B's erroneous 107)
+- CareerTracker: Now loads all 110 journalists (was crashing on Schiffer's undated events)
+
+---
+
 ## 2026-07-01 16:00 PT — Type B: Journalist/Publication Research — Louise Matsakis & Michael Calore Profiles + Wired Business Desk Editorial Change
 
 ### Focus
