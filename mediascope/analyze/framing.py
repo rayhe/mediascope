@@ -2631,6 +2631,91 @@ _OUTSOURCED_INTENSITY_PATTERNS: list[re.Pattern] = [
         r"labou?r (?:law |rights? )?(?:professor|expert|scholar|specialist))\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # --- Document-catalog outsourced intensity patterns ---
+    # Journalist presents a catalog of specific, disturbing evidence from
+    # reviewed documents (spreadsheets, internal data, logs) and lets the
+    # enumerated content carry emotional weight without editorial commentary.
+    # Distinct from legal-filing outsourcing: here the journalist IS the one
+    # presenting the evidence, but the evidence's specificity does the work.
+    #
+    # Identified in Wired Meta "Cannes" contractors article (Jul 2026):
+    #   "a 13-year-old who said she had become pregnant by her adult neighbor"
+    #   "whether it would be nice to eat my neighbor's child"
+    #   "a French-language prompt about Jamey Rodemeyer's death"
+    # The journalist reports spreadsheet contents verbatim; the horror comes
+    # from the specifics, not from editorial adjectives.
+
+    # Pattern: reviewed/obtained documents + enumeration of disturbing specifics
+    # "reviewed by [Publication]" / "obtained by" / "internal [documents]"
+    # followed by age-specific scenario descriptions within ~500 chars
+    re.compile(
+        r"\b(?:reviewed by|obtained by|seen by|viewed by|"
+        r"internal (?:documents?|spreadsheets?|data|records?|logs?|emails?|memos?))\b"
+        r".{0,500}?"
+        r"\b(?:\d{1,2}.year.old|"
+        r"(?:posed?|posing|pretending|impersonating)\s+as\s+"
+        r"(?:a\s+)?(?:teen|minor|child|adolescent|(?:\d{1,2}.year.old))|"
+        r"(?:suicide|self.harm|sexual|sexually|rape|abuse|"
+        r"pregnant|pregnancy|drugs?|overdose|eating disorder|"
+        r"cannibalism|bestiality|incest|pedophil))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse: disturbing content cluster followed by document attribution
+    re.compile(
+        r"\b(?:suicide|self.harm|sexual abuse|sexual exploitation|"
+        r"child (?:abuse|exploitation|pornography)|"
+        r"eating disorder|overdose|self.injury)\b"
+        r".{0,300}?"
+        r"\b(?:according to (?:the )?(?:documents?|spreadsheets?|data|"
+        r"records?|logs?|internal)|"
+        r"(?:the )?(?:documents?|spreadsheets?|data|records?|logs?) "
+        r"(?:show|reveal|indicate|contain|include|detail|list))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Prompt/scenario enumeration with age markers — journalist describing
+    # test prompts, scenarios, or cases from data that involve minors
+    re.compile(
+        r"\b(?:prompts?|scenarios?|test cases?|examples?|entries?|rows?)\b"
+        r".{0,200}?"
+        r"\b(?:\d{1,2}.year.old|"
+        r"under.?(?:13|16|18)|"
+        r"(?:posed?|posing) as (?:a )?(?:teen|minor|child))\b"
+        r".{0,200}?"
+        r"\b(?:suicide|self.harm|sex(?:ual)?|drugs?|abuse|"
+        r"violence|death|kill|rape|assault|"
+        r"eating disorder|overdose|pregnant)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Dense disturbing-content enumeration — 3+ disturbing terms within
+    # a ~400-char span, indicating a catalog of horrors. The journalist
+    # achieves intensity through sheer accumulation of specific evidence
+    # rather than editorial language.
+    re.compile(
+        r"\b(?:suicide|self.harm|sex(?:ual)?(?:\s+(?:abuse|exploitation|content))?|"
+        r"drugs?|cocaine|heroin|fentanyl|meth|"
+        r"eating disorder|anorexia|bulimia|"
+        r"rape|assault|violence|abuse|"
+        r"pregnant|pregnancy|cannibalism|bestiality|incest|"
+        r"pedophil|pornograph|death|kill(?:ing)?|"
+        r"racial slur|slur)\b"
+        r".{0,200}?"
+        r"\b(?:suicide|self.harm|sex(?:ual)?(?:\s+(?:abuse|exploitation|content))?|"
+        r"drugs?|cocaine|heroin|fentanyl|meth|"
+        r"eating disorder|anorexia|bulimia|"
+        r"rape|assault|violence|abuse|"
+        r"pregnant|pregnancy|cannibalism|bestiality|incest|"
+        r"pedophil|pornograph|death|kill(?:ing)?|"
+        r"racial slur|slur)\b"
+        r".{0,200}?"
+        r"\b(?:suicide|self.harm|sex(?:ual)?(?:\s+(?:abuse|exploitation|content))?|"
+        r"drugs?|cocaine|heroin|fentanyl|meth|"
+        r"eating disorder|anorexia|bulimia|"
+        r"rape|assault|violence|abuse|"
+        r"pregnant|pregnancy|cannibalism|bestiality|incest|"
+        r"pedophil|pornograph|death|kill(?:ing)?|"
+        r"racial slur|slur)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
 ]
 
 _DEVICE_PATTERNS["outsourced_intensity"] = _OUTSOURCED_INTENSITY_PATTERNS
@@ -4376,7 +4461,7 @@ _CORPORATE_RESPONSE_PATTERNS: list[re.Pattern] = [
         r"Tesla|Nvidia|Samsung|TikTok|ByteDance|X Corp|Snap(?:chat)?|"
         r"the company|a company|a (?:Meta|Google|Apple)\s)"
         r"\s*(?:said|told|stated|responded|declined|denied|acknowledged|"
-        r"confirmed|insisted|maintained|countered|explained|added)\b",
+        r"confirmed|insisted|maintained|countered|explained|added|defended)\b",
         re.IGNORECASE,
     ),
     re.compile(

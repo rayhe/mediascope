@@ -194,3 +194,142 @@ class TestHeadlineBoostStrength:
         topics = [ts.topic for ts in result]
         assert "child_safety" in topics, \
             "'posed as teens' should trigger child_safety topic"
+
+
+# ---- Outsourced Intensity: Document-Catalog Variant ----
+
+class TestOutsourcedIntensityCatalog:
+    """Document-catalog outsourced intensity: journalist presents evidence
+    from reviewed documents, letting enumerated disturbing content carry
+    the emotional weight without editorial commentary."""
+
+    def test_reviewed_documents_with_minors(self):
+        """'reviewed by WIRED' + age-specific disturbing scenarios -> fires."""
+        text = (
+            "The spreadsheets were reviewed by WIRED and contain thousands of "
+            "test prompts. One entry describes a 13-year-old who said she had "
+            "become pregnant by her adult neighbor. Another prompt asked about "
+            "suicide methods for a teenager struggling with bullying."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "outsourced_intensity" in types, \
+            "Reviewed documents with age-specific disturbing content should fire"
+
+    def test_internal_spreadsheets_with_disturbing_content(self):
+        """Internal spreadsheets + suicide/self-harm topics -> fires."""
+        text = (
+            "The internal spreadsheets listed dummy profiles with ages between "
+            "12 and 17. Contractors were instructed to test prompts involving "
+            "suicide, self-harm, eating disorders, and sexual content."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "outsourced_intensity" in types
+
+    def test_prompt_enumeration_with_minors(self):
+        """Prompts described with child-age markers + disturbing topics -> fires."""
+        text = (
+            "The prompts included scenarios where a 15-year-old asked about "
+            "drugs and how to obtain cocaine, while another prompt involved "
+            "a child posing as a teen discussing sexual abuse with a chatbot."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "outsourced_intensity" in types
+
+    def test_dense_disturbing_enumeration(self):
+        """3+ disturbing terms in close proximity -> catalog pattern fires."""
+        text = (
+            "The test cases covered suicide, eating disorders, and sexual "
+            "exploitation of minors. Additional prompts involved drug use, "
+            "violence, and racial slurs directed at chatbot personas."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "outsourced_intensity" in types, \
+            "Dense enumeration of 3+ disturbing topics should fire outsourced_intensity"
+
+    def test_neutral_document_review_no_fire(self):
+        """Document review without disturbing content -> should NOT fire."""
+        text = (
+            "The internal documents were reviewed by WIRED and contain details "
+            "about the company's quarterly revenue targets and marketing strategy "
+            "for the upcoming product launch in European markets."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        # Should NOT fire outsourced_intensity — no disturbing content
+        oi_devices = [d for d in devices if d.device_type == "outsourced_intensity"]
+        assert len(oi_devices) == 0, \
+            "Neutral document review should not fire outsourced_intensity catalog variant"
+
+    def test_reverse_pattern_content_then_attribution(self):
+        """Disturbing content followed by document attribution -> fires."""
+        text = (
+            "The suicide scenarios and self-harm prompts were among the most "
+            "disturbing entries. The eating disorder content was particularly "
+            "graphic, according to the internal documents obtained by reporters."
+        )
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "outsourced_intensity" in types
+
+
+# ---- Delayed Defense: 'defended' verb ----
+
+class TestDelayedDefenseDefendedVerb:
+    """The corporate response patterns should match 'defended' as an
+    attribution verb (e.g., 'Meta defended the practice')."""
+
+    def test_meta_defended_late(self):
+        """'Meta defended' at 80% through article -> fires delayed_defense."""
+        body = "The contractors described disturbing working conditions. " * 40
+        response = "Meta defended the program as responsible safety benchmarking."
+        text = body + response
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "delayed_defense" in types, \
+            "'Meta defended' late in article should trigger delayed_defense"
+
+    def test_company_defended_early_no_fire(self):
+        """'the company defended' early in article -> should NOT fire."""
+        intro = "Some concerns were raised. "
+        response = "The company defended its approach as industry-standard. "
+        body = "Additional details emerged from the investigation. " * 30
+        text = intro + response + body
+        devices = detect_framing_devices(text)
+        types = [d.device_type for d in devices]
+        assert "delayed_defense" not in types
+
+
+# ---- Child Safety Keywords: suicide, self-harm, eating disorders ----
+
+class TestChildSafetyExpandedKeywords:
+    """New child_safety keywords: suicide, self-harm, eating disorders, etc."""
+
+    def test_suicide_triggers_child_safety(self):
+        body = (
+            "The chatbot responded to prompts about suicide from teenagers. "
+            "The self-harm content was flagged by moderators."
+        )
+        result = classify_topic(body)
+        topics = [ts.topic for ts in result]
+        assert "child_safety" in topics, \
+            "'suicide' and 'self-harm' should trigger child_safety"
+
+    def test_eating_disorder_triggers_child_safety(self):
+        body = (
+            "Prompts about eating disorders and anorexia were among the most "
+            "common test cases. Cyberbullying was also a frequent topic."
+        )
+        result = classify_topic(body)
+        topics = [ts.topic for ts in result]
+        assert "child_safety" in topics, \
+            "'eating disorders', 'anorexia', 'cyberbullying' should trigger child_safety"
+
+    def test_bullying_triggers_child_safety(self):
+        body = "The report documented widespread bullying and cyberbullying on the platform."
+        result = classify_topic(body)
+        topics = [ts.topic for ts in result]
+        assert "child_safety" in topics

@@ -101,6 +101,11 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "pretending to be children",
         "inappropriate with minors", "sexual content and minors",
         "child labor", "child workers",
+        # Harm behaviors commonly associated with child safety reporting
+        "suicide", "self-harm", "self harm", "self-injury",
+        "eating disorder", "eating disorders", "anorexia", "bulimia",
+        "cyberbullying", "cyber bullying", "bullying",
+        "overdose", "drug use by minors",
     ],
     "content_moderation": [
         "content moderation", "misinformation", "disinformation",

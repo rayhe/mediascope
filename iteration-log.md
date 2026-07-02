@@ -9875,3 +9875,53 @@ Google was documented in known_conflicts and notes but was MISSING from the form
 - **1155 tests** across 44 test files
 - **23 topic buckets**
 - **110 journalists** (108 multi-pub)
+
+---
+
+## 2026-07-01 20:00 PT — Type A: Article Deep Dive (Cannes Analysis Gap Closure)
+
+**Trigger:** `mediascope-daily-iteration` scheduled run
+**Focus:** Closing remaining toolkit gaps surfaced by the Cannes contractors/teens analysis — outsourced_intensity catalog variant, delayed_defense verb coverage, child_safety keyword expansion
+
+### Source Article
+- **Publication:** Wired
+- **Article:** Meta contractors posed as teens to test rival AI chatbots (Cannes)
+- **Analysis:** `examples/sample_output/wired_meta_cannes_contractors_teens_2026_07_analysis.md` (existing)
+
+### Gaps Closed (from prior analysis's "NOT detected" section)
+
+#### 1. OUTSOURCED_INTENSITY catalog variant (4 new patterns)
+The Cannes article's most powerful framing device — the journalist presents a catalog of disturbing evidence from reviewed spreadsheets ("a 13-year-old who said she had become pregnant by her adult neighbor", "whether it would be nice to eat my neighbor's child") without editorial commentary. The emotional weight comes from the enumerated evidence itself, not from the journalist's adjectives. Prior outsourced_intensity patterns only caught legal-filing and expert-quote variants.
+
+**New patterns:**
+- `reviewed by [Publication]` / `internal documents` + age-specific disturbing scenarios (suicide, sexual, drugs near minors)
+- Reverse: disturbing content cluster followed by document attribution
+- Prompt/scenario enumeration with age markers + disturbing topics
+- Dense disturbing-content enumeration: 3+ disturbing terms in ~400 chars (catalog-through-accumulation)
+
+#### 2. DELAYED_DEFENSE: added "defended" verb
+Corporate response patterns missed "Meta defended the practice as..." — only had said/told/stated/responded etc. Added "defended" to the first `_CORPORATE_RESPONSE_PATTERNS` regex.
+
+#### 3. child_safety keywords: suicide, self-harm, eating disorders
+The Cannes article prominently features suicide, self-harm, eating disorders, and drugs — all central child safety topics. None were in the child_safety keyword list. Added: suicide, self-harm, self harm, self-injury, eating disorder, eating disorders, anorexia, bulimia, cyberbullying, cyber bullying, bullying, overdose, drug use by minors.
+
+#### 4. "Business Insider" source splitting — confirmed already fixed
+`_SINGLE_NAME_ORG_STOPS` in sources.py already blocks "Insider" from being extracted as a standalone source entity. No change needed.
+
+### Tests
+- **11 new tests** in `test_delayed_defense_and_normalization.py` (16 → 27 tests)
+  - 6 for outsourced_intensity catalog variant (reviewed docs + minors, internal spreadsheets, prompt enumeration, dense enumeration, neutral doc no-fire, reverse pattern)
+  - 2 for delayed_defense "defended" verb (fires late, no-fire early)
+  - 3 for child_safety expanded keywords (suicide+self-harm, eating disorder+anorexia+cyberbullying, bullying)
+
+### Documentation Updated
+- ARCHITECTURE.md: test count 1155 → 1166, pattern count 301 → 305
+- README.md: test count 1155 → 1166, pattern count 301 → 305, test table description updated
+- test_structural_consistency.py: EXPECTED_TOTAL_PATTERNS 301 → 305
+
+### Stats After This Iteration
+- **51 framing device types** (45 pattern-matched + 6 structural)
+- **305 regex patterns** (up from 301)
+- **1166 tests** across 44 test files (1164 passed, 2 xfailed)
+- **23 topic buckets**
+- **110 journalists** (108 multi-pub)
