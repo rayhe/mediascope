@@ -10926,3 +10926,30 @@ Guardian underrepresented at 18 journalists vs Wired (54) and NYT (30). Added 2 
 - Test files: 46 (was 45)
 - Patterns: 320 (unchanged — fixes are filter logic, not new patterns)
 - Files changed: 7 (framing.py, entities.py, README.md, ARCHITECTURE.md, + 2 new sample_output files, + 1 new test file)
+
+## 2026-07-02 18:00 PT — Type B: Journalist Research (Joel Khalili beat expansion)
+
+### Focus
+Joel Khalili (Wired reporter) profile update — discovered significant beat expansion from crypto/fintech into Meta/AI investigations.
+
+### Changes
+1. **Joel Khalili profile expanded:**
+   - Added VRFocus contributor entry (2019) — pre-ITProPortal VR adoption features writing. Source: TechRadar Pro author bio.
+   - Updated Wired beat to include "AI safety investigations" — Khalili co-authored "Project Cannes" (Jun 29, 2026) with Dhruv Mehrotra, exposing Meta contractors posing as minors to test rival chatbots with 45,000+ prompts.
+   - Added Bloomberg Terminal AI interview (Jul 2026) as evidence of broadening beyond crypto.
+   - Added @JKFruit handle, WIRED en Español contribution, analytical notes on London-NYC cross-desk collaboration.
+
+2. **Dhruv Mehrotra profile updated:**
+   - Added Cannes investigation co-byline to his Wired return entry — shows cross-desk NYC-London collaboration within weeks of his Bloomberg boomerang.
+
+3. **README.md:** Migration count 355 → 356 (VRFocus career entry).
+
+### Discovery
+- Khalili's beat expansion is analytically significant: a London-based crypto reporter being paired with Wired's top investigative data reporter (Mehrotra) for a Meta child safety story signals editorial investment in cross-desk Meta coverage that goes beyond the traditional NYC investigations team.
+- Confirms no new untracked hires since Kate Taylor (Jul 1) — Rosie Swash (Apr) and Isabella Ward (Jun) already profiled.
+
+### Stats
+- Tests: 1207 collected, 1205 passed, 2 xfailed (0 failures)
+- Migrations: 356 (was 355)
+- Journalists: 117 (unchanged)
+- Commit: f4c52c7
