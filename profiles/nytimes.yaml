@@ -26,13 +26,24 @@ ownership_chain:
   - name: "The New York Times Company"
     entity_type: "parent_company"
     description: >
-      Publicly traded (NYSE: NYT). Market cap ~$11.5B (Jul 2026). Stock ~$71.79/share (Jul 1, 2026).
-      52-week range: $51.03–$87.10. Quarterly dividend $0.23/share (payable Jul 23, 2026).
+      Publicly traded (NYSE: NYT). Market cap ~$11.52B (Jul 2026). Stock ~$73.85/share (Jul 2, 2026).
+      52-week range: $51.03–$87.10. Beta: 0.97. Quarterly dividend $0.23/share (payable Jul 23, 2026).
       Q2 2026 earnings expected ~Aug 5, 2026. Consensus estimates: FY2026 EPS $2.93, FY2027 $3.22.
+      Analyst consensus target: $83.22 (+12.7% upside). Ratings: 0 Sell, 6 Hold, 4 Buy, 1 Strong Buy.
       Dual-class share structure gives Sulzberger family control despite ~11% economic ownership.
       95.37% of Class A stock held by institutional investors.
       Annual meeting April 22, 2026: all directors re-elected, EY ratified as auditor,
       Class B shareholders approved executive compensation (advisory).
+      
+      SHARE REPURCHASE PROGRAM (2025): Board authorized repurchase of up to $1 billion of
+      Class A and Class B common stock under the "2025 Repurchase Program." Goldman Sachs & Co.
+      LLC serves as broker. Program is ongoing with no expiration date disclosed. NYT bought
+      back ~883K shares in Q4 2025 alone for $55.4M. The buyback mechanically increases Carlos
+      Slim's percentage ownership by reducing the share denominator — his position grew from
+      ~17% to 25.1% partly through this effect. As of 10-Q filed April 30, 2026: 118,308,459
+      Class A shares outstanding (up from 115,847,488 per Oct 2025 10-Q — indicates net issuance
+      from stock-based compensation exceeded buybacks in the period).
+      Source: SEC filing (ASX cross-listed notification, Appendix 3C); NYT FY2025 press release.
     sec_filings:
       - type: "10-K"
         period: "FY2025"
@@ -89,14 +100,24 @@ ownership_chain:
       as NYT repurchased its own shares (NYT bought back ~883K shares in Q4 2025 alone for
       $55.4M, reducing the denominator).
 
-      FILES AS 13G (passive investor — certifies shares "were not acquired for the purpose of
-      or with the effect of changing or influencing the control of the issuer"). No board
-      representation. No known editorial influence. However, 25.1% is an extraordinary
-      concentration for a "passive" holding in a media company.
+      DILUTION NOTE (Jul 2026): Per 10-Q filed April 30, 2026, NYT now has 118,308,459
+      Class A shares outstanding (vs 115,847,488 per Oct 2025 10-Q). If the Slim position is
+      unchanged at 29,123,098 shares, their percentage has diluted to ~24.6% from 25.1%.
+      No new 13G/A filing detected on EDGAR for NYT (CIK 71691) in 2026 beyond the Feb 9
+      filing — EDGAR full-text search for "Control Empresarial" + "New York Times" returns
+      zero results for 2026. The next mandatory 13G/A is due within 45 days of any 5%+
+      threshold crossing or by Feb 14, 2027 (annual amendment deadline).
 
-      VALUE: At $71.79/share (Jul 1, 2026), the position is worth ~$2.09B. Carlos Slim's
-      net worth is ~$99.1B (Bloomberg, Jul 2025, 18th richest globally). Core fortune:
-      Telmex/América Móvil (Latin American telecom monopoly), Grupo Carso (conglomerate).
+      VALUE: At $73.85/share (Jul 2, 2026), the position is worth ~$2.15B (up from ~$2.09B
+      at $71.79 on Jul 1). Carlos Slim's net worth is ~$99.1B (Bloomberg, Jul 2025, 18th
+      richest globally). Core fortune: Telmex/América Móvil (Latin American telecom monopoly),
+      Grupo Carso (conglomerate).
+
+      CROSS-REFERENCE: Slim family is actively SELLING their PBF Energy position (separate
+      company). SEC filings show: 19,253,698 PBF shares (16.4%, filed Apr 8, 2026) →
+      18,217,698 shares (15.4%, filed Jun 4, 2026). This demonstrates active portfolio
+      management by Control Empresarial — the absence of NYT sales filings suggests the
+      NYT position is being held stable.
     source_urls:
       - "https://www.sec.gov/Archives/edgar/data/1534504/000114036126004396/0001140361-26-004396.txt"
       - "https://en.wikipedia.org/wiki/Carlos_Slim"
@@ -124,7 +145,11 @@ institutional_shareholders:
       notes: "Passive index fund; largest institutional holder"
     - name: "T. Rowe Price Investment Management Inc."
       value: "$727.45M"
-      notes: "Active manager; has been SELLING (largest seller at $4.57M in 24mo)"
+      notes: >
+        Active manager; has been SELLING (largest seller at $4.57M in 24mo).
+        SC 13G/A filed Nov 14, 2024: 10,247,094 shares = 6.3% of Class A (as of Sep 30, 2024).
+        Sole voting power: 10,212,404 shares. Filed as investment adviser — shares belong to
+        individual/institutional clients, not T. Rowe Price directly.
     - name: "AQR Capital Management LLC"
       value: "$433.28M"
       notes: "Quant hedge fund; BUYING ($5.27M in 24mo, largest buyer)"
@@ -335,20 +360,67 @@ revenue_relationships:
     estimated_value: "billions (claimed damages)"
     description: >
       NYT sued OpenAI and Microsoft in Dec 2023 for copyright infringement (Case No.
-      1:23-cv-11195, S.D.N.Y.). Claims billions in statutory/actual damages. Alleges
-      millions of NYT articles used to train GPT models without permission. As of
-      mid-2026: discovery phase ongoing, no trial date set. Key rulings: Judge Stein
-      denied OpenAI's motion to dismiss (Apr 2025); Magistrate Judge Wang issued
-      sweeping preservation order for ChatGPT output logs affecting 400M+ users
-      (May 2025); Judge Stein affirmed preservation order (Jun 2025). NYT now
-      searching preserved logs for evidence of users generating infringing articles.
-      Consolidated with Author Actions (Authors Guild v. OpenAI, etc.) for pretrial.
-      OpenAI approved internally by NYT staff via non-ChatGPT API (irony noted).
+      1:23-cv-11195, S.D.N.Y., Judge Sidney Stein). Claims billions in statutory/actual
+      damages plus permanent injunction and destruction of infringing models/datasets.
+      Consolidated with Daily News (Tribune Publishing — NY Daily News, Chicago Tribune,
+      etc.) as MDL No. 25-md-03143-SHS-OTW. Magistrate Judge Ona T. Wang handles discovery.
+      
+      KEY RULINGS (chronological):
+      - May 13, 2025: Judge Wang orders OpenAI to preserve ALL output log data that would
+        otherwise be deleted, affecting 400M+ users' ChatGPT logs.
+      - Jul-Aug 2025: NYT moved to compel 120M chat log sample. OpenAI offered 20M
+        anonymized logs (plaintiffs agreed).
+      - Oct 2025: OpenAI proposed running search terms over the sample instead of producing
+        all 20M logs (privacy argument). Plaintiffs moved to compel full sample.
+      - Nov 7, 2025: Judge Wang grants motion to compel full 20M chat log production.
+      - Dec 5, 2025: Judge Wang affirms on reconsideration.
+      - Jan 6, 2026: Judge Stein affirms Wang's orders, rejects OpenAI's privacy objections.
+        Notes OpenAI "did not identify any case law requiring a judge to order the least
+        burdensome discovery possible." OpenAI complies with production.
+      - Mar 26, 2026: Judge Stein issues 3-page order on motion to dismiss.
+      - Apr 4, 2026: Full 43-page opinion explaining MTD ruling:
+        * DENIED: OpenAI's time-bar defense — Stein rules OpenAI failed to show NYT should
+          have discovered infringement before Dec 27, 2020 (3yr statute of limitations).
+          "OpenAI fails to explain why the articles, even if their existence had been known
+          to plaintiffs at the time of their publishing, are sufficient to put plaintiffs on
+          notice of the particular infringing conduct."
+        * DENIED: MTD on direct copyright infringement — NYT's 100+ pages of examples of
+          ChatGPT reproducing NYT content survive pleading stage.
+        * DENIED: MTD on contributory copyright infringement — plaintiffs "plausibly alleged"
+          third-party end-user infringement that OpenAI knew or should have known about.
+          Court cites "widely publicised" instances of user-driven infringement.
+        * DENIED (Daily News): Federal trademark dilution claims survive — court finds
+          NY Daily News, Chicago Tribune marks are "famous" under federal law.
+        * GRANTED: DMCA distribution claims dismissed — outputs are "merely excerpts" not
+          "copies," and allowing DMCA claims for non-identical outputs would risk
+          "boundless DMCA liability."
+        * GRANTED: Some unfair competition claims dismissed.
+      
+      OpenAI response: "Our models empower innovation, and are trained on publicly
+      available data and grounded in fair use."
+      NYT response: "All of our copyright claims will continue against Microsoft and OpenAI
+      for their widespread theft of millions of The Times's works."
+      
+      CASCADING LEGAL EFFECTS (Jul 2026):
+      - Microsoft shareholder derivative suit (Eric Anderson v. Microsoft Corp. et al.,
+        W.D. Washington, filed Jul 1, 2026): alleges Microsoft execs/board concealed that
+        AI tools were trained on copyrighted material, causing shareholder damage. This
+        lawsuit was CAUSED by the NYT copyright litigation.
+      - City of St. Clair Shores securities class action (26-cv-02071, W.D. Washington):
+        separate Microsoft securities fraud action re: Copilot/Azure misrepresentations.
+      
+      No trial date set. Discovery ongoing. NYT now analyzing preserved output logs for
+      evidence of systemic reproduction of copyrighted content. OpenAI approved internally
+      by NYT staff via non-ChatGPT API (irony noted).
     date_established: "2023-12"
-    source_url: "https://nytco-assets.nytimes.com/2023/12/NYT_Complaint_Dec2023.pdf"
-    supplementary_sources:
-      - "https://www.mondaq.com/unitedstates/new-technology/1650832/from-copyright-case-to-ai-data-crisis-how-the-new-york-times-v-openai-reshapes-companies-data-governance-and-ediscovery-strategy"
-      - "https://www.courtlistener.com/docket/68117049/1/the-new-york-times-company-v-microsoft-corporation/"
+    source_urls:
+      - "https://nytco-assets.nytimes.com/2023/12/NYT_Complaint_Dec2023.pdf"
+      - "https://www.globallegalpost.com/news/us-judge-refuses-openais-motion-to-dismiss-new-york-times-copyright-infringement-claims-887263879"
+      - "https://www.law.com/legaltechnews/2026/01/07/openai-must-turn-over-millions-of-chat-logs-in-copyright-litigation-ny-federal-judge-rules-/"
+      - "https://www.mondaq.com/unitedstates/new-technology/1650832/"
+      - "https://news.bloomberglaw.com/securities-law/microsoft-top-brass-sued-by-shareholder-over-ai-copyright-claims"
+      - "https://docs.justia.com/docket/68117049/1/the-new-york-times-company-v-microsoft-corporation/"
+    last_updated: "2026-07-03"
 
   - partner: "Apple"
     relationship_type: "former_partnership_and_ongoing_selective"
@@ -386,7 +458,7 @@ revenue_relationships:
 # 13 members: 3 insiders/operators, 2 Sulzberger family trust, 5 tech executives,
 # 1 finance/investment, 1 media/digital, 1 family-connected author.
 # Dual-class structure: Sulzberger family Class B elects ~70% of board.
-# Class A shareholders (including 25.1% Carlos Slim) elect remaining ~30%.
+# Class A shareholders (including ~24.6% Carlos Slim, diluted from 25.1%) elect remaining ~30%.
 board_of_directors:
   # --- INSIDERS/OPERATORS ---
   - name: "A.G. Sulzberger"
@@ -846,16 +918,24 @@ known_conflicts:
   - type: "litigation"
     description: >
       Actively suing OpenAI and Microsoft for copyright infringement (Case 1:23-cv-11195,
-      S.D.N.Y., filed Dec 2023). Claims billions in damages. Simultaneously building
-      internal AI products (Echo, Stet, Cheat Sheet) and licensing to Amazon for
-      $20-25M/yr. Discovery phase ongoing: landmark preservation order forcing
-      OpenAI to retain 400M+ users' ChatGPT logs (May 2025, affirmed Jun 2025).
-      No trial date set. NYT's legal team is now searching preserved output logs.
+      S.D.N.Y., Judge Sidney Stein, MDL 25-md-03143). Claims billions in damages.
+      Simultaneously building internal AI products (Echo, Stet, Cheat Sheet) and licensing
+      to Amazon for $20-25M/yr. KEY RULINGS (2025-2026): preservation order forcing OpenAI
+      to retain 400M+ users' ChatGPT logs (May 2025); 20M anonymized chat logs production
+      ordered (Nov 2025, affirmed Jan 2026); motion to dismiss DENIED on copyright claims
+      (Apr 4, 2026 — Judge Stein: 43-page opinion keeping all copyright claims alive,
+      rejecting time-bar defense, preserving contributory infringement claims; only DMCA
+      distribution claims dismissed as requiring "close to identical" copies). Daily News
+      (Tribune Publishing) joined as co-plaintiff with trademark dilution claims. CASCADING:
+      Microsoft derivative lawsuit (Eric Anderson v. MSFT, Jul 1, 2026, W.D. Wash.) alleges
+      execs concealed copyright training practices. No trial date set. Discovery ongoing.
     severity: 5
-    evidence: "Court filings, SEC disclosures, Mondaq analysis"
+    evidence: "Court filings, SEC disclosures, GlobalLegalPost, Law.com, Bloomberg Law"
     source_urls:
       - "https://nytco-assets.nytimes.com/2023/12/NYT_Complaint_Dec2023.pdf"
-      - "https://www.mondaq.com/unitedstates/new-technology/1650832/"
+      - "https://www.globallegalpost.com/news/us-judge-refuses-openais-motion-to-dismiss-new-york-times-copyright-infringement-claims-887263879"
+      - "https://www.law.com/legaltechnews/2026/01/07/openai-must-turn-over-millions-of-chat-logs-in-copyright-litigation-ny-federal-judge-rules-/"
+      - "https://news.bloomberglaw.com/securities-law/microsoft-top-brass-sued-by-shareholder-over-ai-copyright-claims"
   - type: "competitive"
     description: >
       NYT's dual AI strategy creates structural conflict: suing OpenAI/Microsoft for
@@ -915,25 +995,36 @@ known_conflicts:
       - "https://www.livemint.com/technology/amazon-to-pay-new-york-times-at-least-20-million-a-year-in-ai-deal-11724443000000.html"
   - type: "major_shareholder_concentration"
     description: >
-      Carlos Slim's family (via Control Empresarial de Capitales S.A. de C.V.) owns 25.1%
-      of NYT Class A common stock — 29,123,098 shares as of the Feb 9, 2026 SEC filing.
-      This makes the Slim Family the single largest shareholder of any class of NYT stock.
-      While the dual-class structure limits Class A influence (Sulzberger Class B elects ~70%
-      of board), 25.1% economic ownership from a Mexican telecom oligarch (net worth ~$99.1B)
-      is extraordinary for a major US media company. Slim has no board representation and
-      files as 13G (passive). His core businesses (Telmex, América Móvil) do not directly
-      compete with Meta in US markets, but the concentration itself is a governance fact.
+      Carlos Slim's family (via Control Empresarial de Capitales S.A. de C.V.) owns ~24.6%
+      of NYT Class A common stock — 29,123,098 shares as of the Feb 9, 2026 SEC filing,
+      diluted from 25.1% to ~24.6% by net share issuance (115.8M → 118.3M Class A shares
+      outstanding between Oct 2025 and Apr 2026 10-Qs). Still the single largest shareholder
+      of any class of NYT stock by a wide margin. While the dual-class structure limits
+      Class A influence (Sulzberger Class B elects ~70% of board), ~24.6% economic ownership
+      from a Mexican telecom oligarch (net worth ~$99.1B) is extraordinary for a major US
+      media company. Slim has no board representation and files as 13G (passive).
+      
+      PORTFOLIO BEHAVIOR (Jul 2026): EDGAR shows no new NYT 13G filings in 2026 (zero
+      hits for "Control Empresarial" + "New York Times" in 2026 filings), suggesting the
+      position is stable. By contrast, Slim is actively selling PBF Energy (19.25M shares →
+      18.22M shares between Apr and Jun 2026 filings), demonstrating active portfolio
+      management — the absence of NYT sales is a deliberate hold signal.
+      
       HISTORICAL CONTEXT: Slim's investment began as a $250M loan at 14.05% during NYT's
       2009 near-bankruptcy — an emergency lifeline that converted to equity. The position
-      has grown from ~17% to 25.1% partly through NYT's own share buyback program reducing
-      outstanding shares.
+      has grown from ~17% to peak 25.1% partly through NYT's own share buyback program
+      reducing outstanding shares; now diluting as NYT issues shares for compensation.
     severity: 2
     evidence: >
       SEC Schedule 13G/A filed Feb 9, 2026. Control Empresarial de Capitales = 29,123,098
-      Class A shares. Historical: $250M loan Jan 2009, warrant conversions, partial sales
-      in 2017-2018 (Inversora Carso sold ~1.5M shares at ~$23), entity consolidation.
+      Class A shares. 10-Q Apr 30, 2026: 118,308,459 Class A shares outstanding (dilution).
+      EDGAR full-text search: zero "Control Empresarial" + "New York Times" filings in 2026.
+      PBF Energy comparison: SEC filings 0001140361-26-013841 (Apr 8) and 0001140361-26-024026
+      (Jun 4) show active Slim selling in PBF.
     source_urls:
       - "https://www.sec.gov/Archives/edgar/data/1534504/000114036126004396/0001140361-26-004396.txt"
+      - "https://www.sec.gov/Archives/edgar/data/1534504/000114036126024026/0001140361-26-024026.txt"
+      - "https://www.sec.gov/Archives/edgar/data/1534504/000114036126013841/0001140361-26-013841.txt"
       - "https://en.wikipedia.org/wiki/Carlos_Slim"
 
   - type: "board_tech_concentration"
