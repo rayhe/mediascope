@@ -11582,3 +11582,53 @@ Ana Swanson — NYT trade policy reporter in Washington Bureau. Had only 2 caree
 1249 passed, 2 xfailed (unchanged). 75 structural consistency guards intact.
 
 ---
+
+## 2026-07-03 15:00 PT — Type D: Toolkit Quality & Documentation — QUALITY_STANDARDS.md §10 Same-Event Comparison Overhaul
+
+### Focus
+§10 (Same-Event Comparison Standards) was stale: documented only 3 June comparisons from 2 weeks ago. The corpus now has 9 distinct event clusters and the recently discovered `cross_publication_import` framing device type adds methodological depth to cross-outlet analysis. Also fixed a 3-article annotated article count drift (83 → 86).
+
+### What Changed
+
+**QUALITY_STANDARDS.md — §10.2 expanded from 3 to 9 event clusters (+91 lines net):**
+
+§10.2 now organized in two tiers:
+- **Tier 1 (3 explicit cross-analysis files):** MCI data exposure (Wired vs Reuters, 0.50 tone gap), Glasses launch (Wired vs Gizmodo, 0.25), Zuckerberg town hall (Reuters vs TechCrunch vs Barron's 3-way, 0.65 tone gap, 0–5 framing differential)
+- **Tier 2 (6 article clusters):** Wynn-Williams lawsuit (Guardian/Engadget/Fast Company, 0.21 tone range), Brain2Qwerty (Gizmodo/Register, 1.00 tone gap — largest validated), child safety (NYT/Engadget, ~0.30), Arena/prediction markets (5 articles, wide range), Gemini compute (Reuters/Memeburn, ~0.40), Applied AI reorg (5 articles, longitudinal)
+- **Statistical summary:** Tone gaps range 0.21–1.00, framing device differentials 1:1 to 10:0, wire-service baseline ±0.10 in 100% of included clusters
+
+**New §10.3: N-Way Cross-Outlet Comparisons:**
+- Requirements: ≥3 outlets, wire-service baseline, editorial mode diversity
+- Editorial mode taxonomy: wire service, financial analysis, tech editorial, investigative magazine, general newspaper
+- Documents `cross_publication_import` framing device discovery from N-way analysis
+- Detection patterns: "several reports have depicted," consensus-laundering adverbs, indirect import
+- Distinction from `self_referential_investigation` and `anonymous_authority`
+
+**New §10.4: Longitudinal Same-Event Clusters:**
+- Requirements: same root event, timeline tracking, framing escalation detection, cross-outlet propagation tracking
+- Validated example: Applied AI reorg "gulag" characterization propagation timeline (Wired Jun 16 origin → TechTimes Jun 17 cross-pub import → TechCrunch Jul 2 consensus laundering, 16-day propagation)
+
+**Stale count fixes:**
+- Annotated article count: "83" → "86" in §7 (3 articles added since last update: Android Authority, Barron's, TechCrunch)
+- Test counts: 1251 → 1253 in README.md and ARCHITECTURE.md
+- test_structural_consistency per-file count: 75 → 77 in README.md
+
+**New structural consistency guards (test_structural_consistency.py — 2 new tests):**
+1. `test_quality_standards_annotated_article_count` — QUALITY_STANDARDS.md article count matches `examples/sample_output/*_analysis.md` on disk. Prevents silent drift when Type A iterations add articles.
+2. `test_same_event_cluster_count` — QUALITY_STANDARDS.md "N distinct event clusters" matches Tier 1 + Tier 2 table rows. Prevents table expansion without updating the stated count.
+
+**ARCHITECTURE.md test description:** Updated to include new guard capabilities (annotated article count, same-event cluster count).
+
+### Analytical Significance
+The §10 overhaul transforms the same-event comparison section from a static exhibit (3 examples from early June) into a comprehensive methodological framework. The N-way comparison methodology (§10.3) formalizes the analytical pattern discovered in the TechCrunch 3-way analysis, and the `cross_publication_import` documentation connects a framing device type directly to the cross-outlet methodology that revealed it. The longitudinal cluster methodology (§10.4) captures a dimension invisible in single-day comparisons — how editorial language propagates between outlets and escalates over time.
+
+### Sources
+- Internal corpus analysis of 86 article analyses in `examples/sample_output/`
+- Iteration log entries for Type A analyses documenting tone scores and framing counts
+- TechCrunch Zuckerberg town hall 3-way comparison analysis (2026-07-03 11:00 PT iteration)
+- `cross_publication_import` framing device addition (2026-07-03 11:00 PT iteration)
+
+### Tests
+1253 passed (1251 passed, 2 xfailed). 77 structural consistency tests guarding doc-code synchronization.
+
+---
