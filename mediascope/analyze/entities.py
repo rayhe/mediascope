@@ -819,6 +819,15 @@ def detect_entities(
                 if _HOMOGRAPH_VERB_FILTERS[matched_lower].match(lookahead):
                     continue
 
+            # Disambiguate "Access Now" (org) from "Access now" (verb phrase)
+            # at sentence start.  The org name requires mid-sentence context
+            # (not preceded by sentence boundary).
+            if matched_lower == "access now":
+                _lookback_an = text[max(0, start - 3):start]
+                if start == 0 or _lookback_an.rstrip().endswith(('.', '!', '?', '\n')):
+                    # Likely sentence-start verb phrase, not the organization
+                    continue
+
             covered.append((start, end))
             context = _extract_sentence(text, start, end)
 

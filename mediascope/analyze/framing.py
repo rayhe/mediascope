@@ -3876,8 +3876,15 @@ _ANALOGY_METAPHOR_PATTERNS: list[re.Pattern] = [
     ),
     # "akin to" / "equivalent of" / "tantamount to" — formal analogy
     re.compile(
-        r"\b(?:akin to|equivalent of|tantamount to|reminiscent of|analogous to|"
-        r"comparable to)\s+[a-z]",
+        r"\b(?:akin to|equivalent of|tantamount to|reminiscent of|analogous to)"
+        r"\s+[a-z]",
+        re.IGNORECASE,
+    ),
+    # "comparable to" — formal analogy, but suppress when followed by
+    # possessive/determiner pronouns that signal factual benchmark comparison
+    # (e.g. "comparable to its previous model" vs "comparable to a war")
+    re.compile(
+        r"\bcomparable to\s+(?!(?:its|their|the|this|that|our|his|her)\b)[a-z]",
         re.IGNORECASE,
     ),
     # "as if [subject] were [noun/adj]" — hypothetical comparison
@@ -4908,6 +4915,10 @@ def detect_framing_devices(
                         "guardrails", "alignment",
                         "frontier", "frontier ai",
                         "model", "models",
+                        "inference", "token", "tokens",
+                        "embeddings", "embeddings",
+                        "compute", "latency",
+                        "hallucination", "hallucinations",
                     }
                     if _quoted.lower() in _TECH_JARGON:
                         continue
@@ -4919,6 +4930,7 @@ def detect_framing_devices(
                         _PRODUCT_NAMING = (
                             "rely on", "instead rely",
                             " dubbed ", " named ", " termed ",
+                            " called ", "(called ",
                             "reach at least", "monthly active",
                             "will use", "would use",
                             "giving one", "giving a",
