@@ -10889,3 +10889,40 @@ Guardian underrepresented at 18 journalists vs Wired (54) and NYT (30). Added 2 
 - Test files: 45 (was 44)
 - Patterns: 320 (unchanged)
 - Files changed: 7 (topics.py, sources.py, README.md, ARCHITECTURE.md, + 2 new sample_output files, + 1 new test file)
+
+## 2026-07-02 17:00 — Type A (Article Deep Dive)
+
+### Article Analyzed
+- **Title:** "Analysts See Meta's Reported Cloud Plans as Potential Positive"
+- **Publication:** Stocktwits (financial/analyst aggregation — not in tracked set)
+- **Date:** 2026-07-01 ~10:34 PM EDT
+- **Story:** Wall Street analyst reactions to Bloomberg's Meta cloud compute report. BMO Capital, Mizuho, Jefferies, Bloomberg — all bullish consensus.
+
+### What Was Improved
+
+#### 1. Firm-level attribution filter for ironic_quotation (framing.py)
+- **Problem:** `ironic_quotation` only checked personal-pronoun attribution ("he said"). Financial journalism attributes quotes to firms ("Jefferies said", "Mizuho said"). 3 false positives in one article.
+- **Fix:** Added organizational attribution patterns to short-quote lookback (`_ATTRIBUTION_SHORT`), short-quote lookahead (`_ORG_ATTR_PAT` regex), and longer-quote lookback/lookahead (`_ORG_QUOTE`, `_LONG_POST_ATTR`). Expanded short-quote lookahead from 50 → 80 chars.
+- **Result:** 3 ironic_quotation false positives → 0. Genuine scare quotes preserved.
+
+#### 2. Wire service cross-citation filter for self_referential_investigation (framing.py)
+- **Problem:** "Bloomberg reported" flagged as self-referential when no `source_publication` set. Wire services are structurally never self-referential in this pattern.
+- **Fix:** Pre-filter suppresses `self_referential_investigation` for known wire services (Bloomberg, Reuters, AP, FT, WSJ) without requiring `source_publication`. Reflexive patterns ("our investigation") always preserved.
+- **Result:** 1 false positive → 0.
+
+#### 3. Nebius entity cluster (entities.py)
+- Added Nebius/Nebius Group to AI infrastructure entity clusters.
+
+#### 4. New annotated example
+- `stocktwits_meta_cloud_compute_analyst_reactions_2026_07_01_article.txt` + `_analysis.md`
+- First financial/analyst aggregation genre analysis. Documents 4 design observations: genre-specific framing, attribution distance variance, cross-citation structure, source affiliation weakness.
+
+#### 5. New tests (test_analyst_quote_attribution.py)
+- 13 tests across 4 classes: short-quote firm attribution (4), longer-quote firm attribution (3), wire cross-citation (4), genuine scare quote preservation (2)
+- All passing
+
+### Stats
+- Tests: 1207 collected, 1205 passed, 2 xfailed (0 failures)
+- Test files: 46 (was 45)
+- Patterns: 320 (unchanged — fixes are filter logic, not new patterns)
+- Files changed: 7 (framing.py, entities.py, README.md, ARCHITECTURE.md, + 2 new sample_output files, + 1 new test file)

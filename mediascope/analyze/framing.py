@@ -4953,13 +4953,17 @@ def detect_framing_devices(
                             " what they call",
                             " refers to as ",
                             " known as ",
+                            # Firm/org-level attribution (financial journalism)
+                            " said it ", " said the ", " said that ",
+                            " says it ", " says the ", " says that ",
+                            " added that ", " adds that ",
                         )
                         if any(attr in _lookback for attr in _ATTRIBUTION_SHORT):
                             continue
-                        # Also check forward context (40 chars after the
+                        # Also check forward context (80 chars after the
                         # quote) for post-quote attribution ("he said",
-                        # "she told me", "they explained")
-                        _lookahead = text[end:min(len(text), end + 50)].lower()
+                        # "she told me", "they explained", "Jefferies said")
+                        _lookahead = text[end:min(len(text), end + 80)].lower()
                         _lookahead = re.sub(r'\s+', ' ', _lookahead)
                         _POST_ATTRIBUTION = (
                             " he said", " she said", " they said",
@@ -4971,8 +4975,27 @@ def detect_framing_devices(
                         )
                         if any(attr in _lookahead for attr in _POST_ATTRIBUTION):
                             continue
+                        # --- Firm/organization attribution filter --------
+                        # In financial and analyst coverage, quotes are
+                        # attributed to firms ("Mizuho said", "Jefferies
+                        # said", "BMO Capital said") rather than personal
+                        # pronouns.  Check for capitalized-word + attribution
+                        # verb within 60 chars after the quote.
+                        #
+                        # Discovered in Stocktwits Meta cloud analyst
+                        # reactions article (Jul 2026): "strategic" flagged
+                        # as scare quote when Jefferies said it in an analyst
+                        # note.
+                        # -------------------------------------------------
+                        _ORG_ATTR_PAT = re.compile(
+                            r",?\s+[a-z]+(?:\s+[a-z]+)?\s+"
+                            r"(?:said|says|added|adds|noted|notes|wrote"
+                            r"|reported|explained|argued|called|described)"
+                        )
+                        if _ORG_ATTR_PAT.search(_lookahead):
+                            continue
                     # Longer quotes (>3 words): filter if preceded by
-                    # personal attribution ("X said that he/she had")
+                    # personal or organizational attribution
                     else:
                         _lookback = text[max(0, start - 80):start].lower()
                         # Normalize whitespace in lookback for cross-line matching
@@ -4991,6 +5014,43 @@ def detect_framing_devices(
                             " what they call",
                         )
                         if any(verb in _lookback for verb in _DIRECT_QUOTE):
+                            continue
+                        # --- Paragraph-level firm attribution filter -----
+                        # In financial journalism, longer quoted phrases
+                        # are often attributed to analyst firms or research
+                        # houses earlier in the same paragraph (e.g.,
+                        # 'Mizuho said it does not believe ... sees it
+                        # "more as planning for all potential scenarios"').
+                        # Check a wider window (200 chars) for org-level
+                        # attribution verbs preceded by capitalized names.
+                        #
+                        # Discovered in Stocktwits Meta cloud analyst
+                        # reactions article (Jul 2026): "a margin of safety
+                        # to medium-term EPS" flagged as ironic quotation
+                        # when Mizuho attributed the phrase in the same
+                        # paragraph.
+                        # ------------------------------------------------
+                        _wide_lookback = text[max(0, start - 200):start].lower()
+                        _wide_lookback = re.sub(r'\s+', ' ', _wide_lookback)
+                        _ORG_QUOTE = (
+                            " said it ", " said the ", " said that ",
+                            " says it ", " says the ", " says that ",
+                            " added that ", " adds that ",
+                            " noted that ", " notes that ",
+                            " wrote that ", " argued that ",
+                        )
+                        if any(verb in _wide_lookback for verb in _ORG_QUOTE):
+                            continue
+                        # Also check forward context for longer quotes:
+                        # post-quote attribution like '," Mizuho said.'
+                        _long_lookahead = text[end:min(len(text), end + 60)].lower()
+                        _long_lookahead = re.sub(r'\s+', ' ', _long_lookahead)
+                        _LONG_POST_ATTR = (
+                            " said", " says", " added", " adds",
+                            " noted", " notes", " wrote", " reported",
+                            " explained", " argued", " called",
+                        )
+                        if any(attr in _long_lookahead for attr in _LONG_POST_ATTR):
                             continue
 
                 seen_spans.add(span_key)
@@ -5018,6 +5078,46 @@ def detect_framing_devices(
     # standard attribution, not self-referential investigation.  Pattern 3
     # (reflexive: "our investigation") is always kept because it's inherently
     # self-referential regardless of which publication wrote the article.
+    #
+    # Even WITHOUT source_publication, suppress citations of well-known wire
+    # services and news agencies — these are ALWAYS cross-citations (no
+    # article written BY Bloomberg/Reuters/AP would say "Bloomberg reported";
+    # they'd say "we reported" or just report directly).
+    #
+    # Discovered in Stocktwits Meta cloud analyst article (Jul 2026):
+    # "Bloomberg reported" flagged as self-referential when it's standard
+    # cross-publication attribution.
+    _WIRE_SERVICES = {
+        "bloomberg", "reuters", "associated press", "ap ",
+        "financial times", "wall street journal", "wsj",
+    }
+    filtered_devices_wire: list[FramingDevice] = []
+    for dev in devices:
+        if dev.device_type == "self_referential_investigation":
+            evidence_lower = dev.evidence_text.lower()
+            # Reflexive patterns are always kept
+            if any(kw in evidence_lower for kw in (
+                "our investigation", "our reporting", "our analysis",
+                "our findings", "our review", "our examination",
+                "our inquiry", "our report",
+                "this publication", "this outlet", "this newsroom",
+                "this paper",
+            )):
+                filtered_devices_wire.append(dev)
+                continue
+            # Wire service citations without source_publication are always
+            # cross-citations — suppress
+            if not source_publication and any(
+                ws in evidence_lower for ws in _WIRE_SERVICES
+            ):
+                logger.debug(
+                    "Suppressed self_referential_investigation (wire cross-cite): %s",
+                    dev.evidence_text[:80],
+                )
+                continue
+        filtered_devices_wire.append(dev)
+    devices = filtered_devices_wire
+
     if source_publication:
         _source_pub_lower = source_publication.lower()
         filtered_devices: list[FramingDevice] = []
@@ -5026,8 +5126,7 @@ def detect_framing_devices(
                 filtered_devices.append(dev)
                 continue
             evidence_lower = dev.evidence_text.lower()
-            # Reflexive patterns ("our investigation", "this publication")
-            # are always self-referential — keep unconditionally
+            # Reflexive patterns (already checked above, but kept for safety)
             if any(kw in evidence_lower for kw in (
                 "our investigation", "our reporting", "our analysis",
                 "our findings", "our review", "our examination",

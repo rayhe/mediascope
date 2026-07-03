@@ -400,10 +400,11 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **1194 tests** across 45 test files, each covering a different analytical capability:
+MediaScope has **1207 tests** across 46 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
+| `test_analyst_quote_attribution.py` | 13 | Analyst/financial coverage: firm-level post-attribution suppression for short/long quotes, wire service cross-citation filtering, genuine scare quote preservation |
 | `test_entities.py` | 18 | Entity detection, regex patterns, false-positive exclusion, cluster formats |
 | `test_sentiment.py` | 46 | 8-dimension scoring, VADER/TextBlob composite, framing correction pipeline, active-negative agency, headline override, security context adjustment, self-referential investigation detection |
 | `test_source_stance.py` | 60 | Source extraction, stance classification, outsourced intensity, power asymmetry, counted anonymous sources, no-comment exclusion, product name stop-filter, kicker framing, isolation/pressure as adversarial devices |

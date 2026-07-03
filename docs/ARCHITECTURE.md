@@ -407,7 +407,8 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # Annotated real-article analyses
-├── tests/                       # 1194 tests across 45 test files (all from real articles)
+├── tests/                       # 1207 tests across 46 test files (all from real articles)
+│   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
 │   ├── test_avclub_sardonic_framing.py # AV Club sardonic framing: sarcastic_correction sub-patterns, loaded_language ad hominem/industry-as-vice, ironic denial regex

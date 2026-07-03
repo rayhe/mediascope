@@ -191,6 +191,12 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         ],
         "regex": r"(?<!\w)(CoreWeave|Mike Intrator)(?!\w)",
     },
+    "Nebius": {
+        "aliases": [
+            "Nebius", "Nebius Group",
+        ],
+        "regex": r"(?<!\w)(Nebius(?:\s+Group)?)(?!\w)",
+    },
     "Palantir": {
         "aliases": [
             "Palantir", "Alex Karp", "Peter Thiel", "Palantir Technologies",
