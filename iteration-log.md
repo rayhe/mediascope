@@ -11352,3 +11352,30 @@ Guardian (Katie McQue) article via Decrypt mirror: "Meta's AI Floods Child Abuse
 **Stats after:** 1247 tests (1245 passed, 2 xfailed), 0 failures. 53 framing device types, 325 patterns, 735 emotional language terms, 121 journalists (120 multi-pub).
 
 **Commit:** `5a83c2a` — pushed to GitHub.
+
+---
+
+### 2026-07-03T07:00 PT — Type A: Article Deep Dive
+
+**Article:** Android Authority — "Meta puts Conversation Focus behind Meta One subscription (Updated)" (C. Scott Brown, Jul 1-2, 2026)
+
+**Focus:** Consumer-tech coverage of Meta rate-limiting an on-device accessibility feature (Conversation Focus on Ray-Ban Meta smart glasses) behind $19.99/month Meta One subscription. Short article (~500 words) with extremely high framing density.
+
+**Improvements:**
+1. **3 new framing device types** (56 total, 50 pattern-matched, 335 patterns):
+   - `slippery_slope`: Precedent-setting extrapolation from specific action to systemic threat. 4 patterns. Triggered 3× — triple escalation chain in under 100 words.
+   - `consumer_ownership`: Frames corporate restrictions as violating paid-for hardware rights. 4 patterns. Triggered 5× — article's dominant rhetorical structure.
+   - `usage_dismissal_undercut`: Corporate minimization via low-usage stats. 2 patterns. Triggered 1×.
+2. **Entity cluster expansion:** Meta One + Conversation Focus added to Meta cluster (aliases + regex). Meta entity count 15 → 27 mentions.
+3. **Full doc synchronization:** METHODOLOGY.md (§4.1 Extended table + §15.3 alias table), ARCHITECTURE.md (extended device list), AGENT_GUIDE.md (description), README.md (test description), cli.py (docstring), framing.py (docstring + inline list).
+
+**Key findings:**
+- Consumer ownership framing is dominant: 5 of 11 devices invoke the same core ownership-violation argument
+- VADER/TextBlob false positive: 0.608 positive tone for a clearly critical article (product-description inflates score)
+- self_referential_investigation false positive: Android Authority citing The Verge is cross-publication attribution
+- Meta's Jul 2 "ongoing compute costs" update contradicts the on-device narrative (missed hypocrisy_frame by author)
+- 0 external sources — all criticism is editorial (outsourced_ratio 0.0)
+
+**Stats after:** 1249 tests (1249 passed, 2 xfailed), 0 failures. 56 framing device types, 335 patterns, 72 Meta aliases, 172 sample output files.
+
+**Commit:** `2c675a8` — pushed to GitHub.
