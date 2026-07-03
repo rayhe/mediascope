@@ -1663,7 +1663,7 @@ journalists:
   - beat: UK technology
     event_type: departed
     notes: Departed after 11 years. TalkingBizNews reported departure. Replaced by Robert Booth (from housing/homelessness
-      beat — a non-tech journalist).
+      beat, previously Architects'' Journal reporter and Building Design editor).
     publication: guardian
     role: editor
     source_url: https://talkingbiznews.com/they-re-hiring/guardian-tech-editor-hern-is-departing/
@@ -2343,38 +2343,83 @@ journalists:
     in Bay Area. Education: NYU BA, Columbia SIPA (International Relations), UC Berkeley Graduate School of Journalism. Originally
     from Colorado, lived in Latin America.'
 - career:
-  - beat: housing, homelessness, social affairs
+  - beat: architecture, urban planning, RIBA, CABE
+    end: 2001-06
     event_type: hired
-    notes: Joined the Guardian ~2000. Covered housing and homelessness for over two decades. Award-winning investigative reporter.
-      Led Guardian's comprehensive Grenfell Tower fire coverage (2017 onwards) — exposed systemic failures in social housing,
-      council negligence, corporate dishonesty. Filed FOI requests to Cabinet Office on Grenfell-related corporate accountability.
-      Grenfell report (2024) was co-bylined with Emine Sinmaz. His investigative approach used document-heavy, source-intensive
-      methodology.
+    notes: 'Reporter at The Architects'' Journal (AJ). Prolific bylines from Feb 2000 through at least March 2001
+      covering architecture, urban regeneration, RIBA politics, CABE design reviews, PFI, Stirling Prize, and the
+      built environment. Topics included Foster + Partners'' Millennium Bridge wobble, Lord Rogers'' urban renaissance
+      agenda, Crystal Palace multiplex, Wembley Stadium redesign, Elephant and Castle regeneration, and Eden Project
+      lawsuit. Also covered racism in architecture (Prince Charles'' Stephen Lawrence Memorial Lecture). Earliest
+      confirmed byline: 24 February 2000. This phase established his deep knowledge of the built environment and
+      housing/regeneration policy that would later inform his Guardian social affairs coverage.'
+    publication: architects-journal
+    role: reporter
+    source_url: https://www.architectsjournal.co.uk/author/robert-booth
+    start: 2000-02
+  - beat: architecture, built environment, design
+    end: 2005-06
+    event_type: hired
+    notes: 'Editor of Building Design (BD) magazine, a UK architecture and construction industry weekly. Wrote
+      editorials and building studies. At 2004 Young Architect of the Year Awards conference, introduced speakers
+      as "BD editor" (documented in "An Architect''s Guide to Fame," pub. 2005). Editorials cited in published
+      sources: Oct 15, 2004 (on demolition/brick waste); Jan 21, 2005 (on Zaha Hadid and Architecture Foundation
+      competition, argued "star" architects benefit from marketing-driven favoritism). Building studies bylines
+      through March 2005 (Manchester science lab, UK science building boom). media.info directory lists him as
+      Editor of BD. Succeeded previous editor Lee Mallett.'
+    publication: building-design
+    role: editor
+    source_url: https://media.info/magazines/titles/bd-building-design
+    start: 2002-01
+  - beat: housing, homelessness, social affairs, property
+    end: 2024-10
+    event_type: hired
+    notes: 'Joined the Guardian after ~5 years editing Building Design. Likely started on property/architecture
+      beat (natural transition from trade press), then broadened to housing, homelessness, and social affairs.
+      Official title for much of Guardian career: "Social Affairs Correspondent" (confirmed by Anewstip, BroadwayStars
+      aggregator). Major coverage: Prince Charles black spider memos (2015, with Matthew Taylor), Prince Andrew/Kazakh
+      oligarch stories (2016+), Zaha Hadid estate (2017), Grenfell Tower fire (2017 onwards — led comprehensive
+      coverage exposing systemic housing failures, council negligence, corporate dishonesty), Westminster councilor
+      Robert Davis hospitality (2018), Grenfell Tower inquiry (2020, 2024). Filed FOI requests to Cabinet Office
+      on Grenfell-related corporate accountability. Grenfell report (2024) co-bylined with Emine Sinmaz.
+      Investigative approach: document-heavy, source-intensive methodology. Also: "Journalists to Use Immune System
+      Software against Fake News" (Aug 2017). Orwell Foundation bio describes him as "award-winning journalist."'
     publication: guardian
     role: reporter
     source_url: https://www.orwellfoundation.com/judge/robert-booth/
-    start: 2000-01
+    start: 2006-01
   - beat: UK technology
     event_type: beat_change
-    notes: 'Became UK Technology Editor after Alex Hern''s departure (Sep 2024). Muck Rack confirms current title: ''UK Technology
-      Editor, The Guardian.'' UNUSUAL APPOINTMENT: Booth had no prior tech journalism experience — his entire 24-year Guardian
-      career was housing/homelessness/social affairs. This mirrors a broader Guardian editorial philosophy: journalism is
-      a transferable skill, and subject-matter expertise can be developed, but investigative instincts and institutional knowledge
-      cannot. His Grenfell experience (holding corporations and government accountable for systemic failures that harm vulnerable
-      people) is directly applicable to tech accountability — same analytical frame, different industry. KEY QUESTION: Does
-      his social affairs lens produce tech coverage that emphasizes human impact and systemic failure differently than Hern''s
+    notes: 'Became UK Technology Editor after Alex Hern''s departure (Sep 2024). Muck Rack confirms current title:
+      "UK Technology Editor, The Guardian." UNUSUAL APPOINTMENT: No prior tech journalism experience — entire
+      pre-Guardian career was architecture trade press (AJ reporter, BD editor), then ~18 years on housing/social
+      affairs at Guardian. This mirrors a broader Guardian editorial philosophy: investigative instincts and
+      institutional knowledge trump subject-matter expertise. His Grenfell experience (holding corporations and
+      government accountable for systemic failures that harm vulnerable people) is directly applicable to tech
+      accountability — same analytical frame, different industry. Recent tech coverage (2025-2026): FCA Palantir
+      deal, Met police £50m Palantir contract blocked by Sadiq Khan, Google DeepMind UK unions, Google AI engineer
+      protesting Israel work, Roblox child safety, AI summaries of Tripadvisor reviews, Anthropic co-founder
+      Nobel prize prediction, digital ID cards (with Dan Milmo). KEY QUESTION: Does his social affairs lens
+      produce tech coverage that emphasizes human impact and systemic failure differently than Hern''s
       economics-trained, tech-native approach?'
     publication: guardian
     role: editor
     source_url: https://talkingbiznews.com/they-re-hiring/guardian-tech-editor-hern-is-departing/
     start: 2024-10
   name: Robert Booth
-  notes: 'Guardian UK Technology Editor (replaced Alex Hern, ~late 2024). NOT a cross-publication migration — 24+ year Guardian
-    veteran who transferred internally from housing/homelessness beat. Award-winning investigative journalist known for Grenfell
-    Tower fire coverage. Orwell Foundation panelist. KEY ANALYTICAL VALUE: A non-tech journalist becoming UK tech editor is
-    a deliberate editorial choice — Guardian chose institutional knowledge and investigative rigor over subject-matter expertise.
-    Tests whether an investigative/social affairs frame produces different tech coverage than a tech-native reporter (like
-    Alex Hern''s economics→tech pipeline).'
+  notes: 'Guardian UK Technology Editor (replaced Alex Hern, ~late 2024). Career: Architects'' Journal reporter
+    (2000-2001) → Building Design editor (~2002-2005) → Guardian social affairs correspondent (~2006-2024) →
+    Guardian UK Technology Editor (2024-present). CORRECTION: Previously recorded as "24+ year Guardian veteran" —
+    actually had ~5 years in architecture trade press before joining Guardian (~2006). Award-winning investigative
+    journalist known for Grenfell Tower fire coverage. Orwell Foundation panelist. Twitter/X: @robert_booth.
+    LinkedIn: in/robert-booth-95b30525/. KEY ANALYTICAL VALUE: Pre-Guardian architecture trade press career is
+    UNIQUE in our dataset — the only journalist who edited a specialist trade publication before moving to a national
+    broadsheet. His trajectory (trade press reporter → trade press editor → national broadsheet reporter → national
+    broadsheet section editor) is a classic UK journalism career ladder. Tests whether trade press editorial
+    experience (deep industry knowledge, source networks in housing/construction) produces different journalism
+    than starting at generalist outlets. The AJ→BD→Guardian pipeline also means his "housing and homelessness for
+    over two decades" (Orwell Foundation) spans architecture trade press AND broadsheet — a longer and deeper
+    engagement with the built environment than pure Guardian tenure suggests.'
 - career:
   - beat: SF Bay Area politics, tech industry
     end: 2014-01
