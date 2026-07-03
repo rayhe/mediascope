@@ -4747,6 +4747,134 @@ _DEVICE_PATTERNS["industry_normalization_undercut"] = (
 )
 
 
+# ---------------------------------------------------------------------------
+# Slippery slope / precedent-setting framing: editorial device that
+# extrapolates from a specific corporate action to a broader threat,
+# using language like "sets a precedent", "if this extends to",
+# "could end up paying".  Common in consumer-tech coverage when a
+# company introduces a new monetization or restriction pattern.
+# ---------------------------------------------------------------------------
+_SLIPPERY_SLOPE_PATTERNS: list[re.Pattern] = [
+    # "sets a/an [adj] precedent" or "creates a/an [adj] precedent"
+    re.compile(
+        r"\b(?:sets?|creat(?:es?|ing)|establish(?:es|ing)?)\s+"
+        r"(?:a |an )"
+        r"(?:dangerous|uncomfortable|troubling|worrying|concerning|"
+        r"alarming|chilling|disturbing|bad|terrible|"
+        r"problematic|questionable|risky)\s+"
+        r"precedent\b",
+        re.IGNORECASE,
+    ),
+    # "if this [approach/model/trend] extends/spreads/continues"
+    re.compile(
+        r"\bif\s+(?:this|that|the|such)\s+"
+        r"(?:approach|model|trend|pattern|practice|strategy|policy|"
+        r"move|shift|change|decision|tactic)\s+"
+        r"(?:extends?|spreads?|continues?|expands?|catches? on|"
+        r"becomes? (?:the )?(?:norm|standard|common|widespread))\b",
+        re.IGNORECASE,
+    ),
+    # "could end up [paying/losing/facing]" — projected negative consumer outcome
+    re.compile(
+        r"\b(?:users?|consumers?|customers?|owners?|subscribers?|people|you)\s+"
+        r"(?:could|may|might|would|will)\s+"
+        r"(?:end up|eventually|ultimately|soon)\s+"
+        r"(?:paying|losing|facing|being (?:forced|required|asked)|"
+        r"having to|needing to)\b",
+        re.IGNORECASE,
+    ),
+    # "opens the door to" / "paves the way for" — gateway framing
+    re.compile(
+        r"\b(?:opens? the door|paves? the way|lays? the groundwork|"
+        r"clears? (?:the|a) path)\s+"
+        r"(?:to|for)\s+.{5,80}?"
+        r"\b(?:more|additional|further|future|other|broader)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+_DEVICE_PATTERNS["slippery_slope"] = _SLIPPERY_SLOPE_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Consumer ownership framing: editorial device that frames a corporate
+# restriction on a product as a violation of what the consumer "already
+# paid for" or "already owns".  Invokes ownership rights to amplify
+# consumer grievance, common in hardware subscription / DRM debates.
+# ---------------------------------------------------------------------------
+_CONSUMER_OWNERSHIP_PATTERNS: list[re.Pattern] = [
+    # "hardware/device/product you've already paid for"
+    re.compile(
+        r"\b(?:hardware|device|product|gadget|equipment|glasses|headset|phone)\s+"
+        r"(?:you(?:'ve| have) already|they(?:'ve| have) already|"
+        r"that(?:'s| is| was) already|already)\s+"
+        r"(?:paid for|purchased|bought|own(?:ed)?)\b",
+        re.IGNORECASE,
+    ),
+    # "features [their/your/the] [device/hardware] already [supports/has]"
+    re.compile(
+        r"\b(?:features?|capabilities?|functions?|tools?)\s+"
+        r"(?:that )?(?:their|your|the|its)\s+"
+        r"(?:device|hardware|glasses|phone|headset|product)s?\s+"
+        r"(?:already )?(?:supports?|has|have|includes?|provides?|"
+        r"is capable of|can (?:already )?(?:do|run|handle))\b",
+        re.IGNORECASE,
+    ),
+    # "runs [entirely/completely] on [the/your] [device/hardware]" near
+    # "pay/subscription/fee/charge"
+    re.compile(
+        r"\bruns?\s+(?:entirely|completely|fully|wholly|natively|locally)\s+"
+        r"(?:on (?:the|your|its|their)\s+)?"
+        r"(?:device|hardware|glasses|phone|chip|processor)\b"
+        r".{0,200}?"
+        r"\b(?:pay|subscription|fee|charge|monetiz|paywall|premium|"
+        r"upgrade|billing)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse order: subscription/pay near "on-device/local/on the hardware"
+    re.compile(
+        r"\b(?:pay|subscription|fee|charge|paywall|premium)\b"
+        r".{0,200}?"
+        r"\b(?:runs?\s+(?:entirely|completely|fully)\s+on|"
+        r"on[- ]device|local(?:ly)?|"
+        r"doesn'?t (?:require|need|use)\s+(?:the |an )?"
+        r"(?:internet|cloud|server|connection))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+_DEVICE_PATTERNS["consumer_ownership"] = _CONSUMER_OWNERSHIP_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Usage-dismissal undercut: corporate pattern where a company
+# minimizes the impact of a restriction by citing low average usage
+# ("most users don't..."), followed by editorial challenge.  A
+# specific subtype of corporate reassurance undercut tailored to
+# rate-limit / paywall coverage.
+# ---------------------------------------------------------------------------
+_USAGE_DISMISSAL_UNDERCUT_PATTERNS: list[re.Pattern] = [
+    # "most [users/people] don't [use/need/hit]" near "but/however"
+    re.compile(
+        r"\b(?:most|the majority of|a minority of|few|hardly any)\s+"
+        r"(?:users?|people|customers?|subscribers?|owners?)\s+"
+        r"(?:don'?t|do not|won'?t|will not|never|rarely|seldom)\s+"
+        r"(?:use|need|hit|reach|exceed|come close|approach)\b"
+        r".{0,200}?"
+        r"\b(?:but|however|yet|still|nonetheless|nevertheless|"
+        r"even so|that said)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "intended for power users" / "designed for heavy users" as dismissal
+    re.compile(
+        r"\b(?:intended|designed|meant|aimed|targeted|built)\s+"
+        r"(?:for|at)\s+"
+        r"(?:power users?|heavy users?|intensive users?|"
+        r"those who (?:need|want|use) (?:it )?more)\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["usage_dismissal_undercut"] = _USAGE_DISMISSAL_UNDERCUT_PATTERNS
+
+
 # --- Delayed defense ---
 # Structural post-pass: detects when the subject company's response
 # or defense first appears in the last 35% of the article.  This is
@@ -4846,18 +4974,19 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 47 pattern-matched device types plus 6 structural
-    post-pass types (53 total).
+    Scans for 50 pattern-matched device types plus 6 structural
+    post-pass types (56 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (47): analogy_metaphor, anonymous_authority,
+    Pattern-matched (50): analogy_metaphor, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization,
     commodification_metaphor, confession_framing,
+    consumer_ownership,
     corporate_reassurance_undercut, denial_contradiction,
     editorial_aside, editorial_deflation, emotional_appeal,
     escalation_amplification, failure_precedent, false_balance,
@@ -4871,8 +5000,9 @@ def detect_framing_devices(
     regulatory_shadow, rhetorical_question, sarcastic_correction,
     scale_magnitude, selective_omission_signal,
     selective_rehabilitation, self_referential_investigation,
-    sovereignty_framing, straw_man, taxonomy_framing,
-    timeline_implication, two_tier_treatment,
+    slippery_slope, sovereignty_framing, straw_man,
+    taxonomy_framing, timeline_implication, two_tier_treatment,
+    usage_dismissal_undercut,
     and worker_replacement_irony.
 
     Structural post-pass (6): delayed_defense, kicker_framing,

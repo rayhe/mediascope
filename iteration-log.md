@@ -3,6 +3,50 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-03 06:00 PT — Type D: Toolkit Quality & Documentation — §15 Entity Cluster Reference + Structural Tests
+
+### Focus
+Entity detection documentation gap: all 59 entity clusters were defined only in code and scattered across per-article sample outputs. No single reference existed for researchers to understand what the toolkit detects, how clusters are organized, or how they evolved. This iteration fills that gap.
+
+### What Changed
+
+**METHODOLOGY.md — New §15 Entity Detection & Cluster Reference (~185 lines):**
+- Overview: role of entity clusters as foundation for all downstream measurements
+- Format documentation: dict vs list shorthand, regex patterns, false-positive prevention
+- Complete 59-cluster reference table organized by 11 analytical categories:
+  - Meta Ecosystem (3): Meta/Facebook, Instagram, WhatsApp
+  - Meta Competitors (7): Google/Alphabet, Apple, Amazon, Microsoft, TikTok/ByteDance, Snap, X/Twitter
+  - AI/ML Ecosystem (7): OpenAI, Anthropic, Nvidia, xAI, Mistral, Stability AI, Hugging Face
+  - Social Media Platforms (3): Reddit, LinkedIn, Pinterest
+  - Media/Publishing (5): Condé Nast, NYT, News Corp, Axel Springer, Guardian
+  - Financial/Investment (4): Advance Publications, Insurance/Litigation Finance, Prediction Markets/Fintech, Venture Capital/PE
+  - Telecom/Infrastructure (3): Telecom (AT&T/Verizon/T-Mobile), Cloud Infrastructure, Semiconductor/Hardware
+  - Legal/Regulatory (5): FTC, EU/DMA, Legal/Judicial, US Congress, State Attorneys General
+  - Academic/Research (3): Academic/Research, Research Centers, Child Safety Researchers/Legislation
+  - Geographic/Political (3): Australia, China/Geopolitical, India/Emerging Markets
+  - Specialized (5 + 11 topic-specific): Advertising/AdTech, Smart Glasses/AR/VR, EssilorLuxottica, Content Moderation/Trust & Safety, Cybersecurity/Privacy + per-pub clusters
+- Growth history documenting cluster additions across 12 article analyses
+- Custom cluster instructions with cross-reference to ADDING_PUBLICATIONS.md
+
+**test_structural_consistency.py — 4 new TestEntityClusterConsistency tests (71 → 75):**
+1. `test_methodology_cluster_count` — §15 header "59 entity clusters" matches code
+2. `test_methodology_cluster_table_completeness` — every code cluster appears in table
+3. `test_no_phantom_clusters_in_docs` — no table entries missing from code
+4. `test_cluster_alias_count_accuracy` — documented alias counts within ±2 of actual
+
+**Cross-reference updates:**
+- README.md: 1247 → 1251 tests, test_structural_consistency 71 → 75 with entity cluster guard summary
+- ARCHITECTURE.md: 1247 → 1251 tests, test_structural_consistency description updated, Custom Entity Clusters section now cross-references §15
+
+### Stats After
+- 1251 tests (1249 passed, 2 xfailed), 49 test files
+- 59 entity clusters documented with alias counts
+- 75 structural consistency tests guarding doc-code synchronization
+
+### Commit
+`8dc7920` — pushed to GitHub
+
+---
 ## 2026-07-03 05:00 PT — Type C: Ownership & Funding Deep Dive — NYT $1B Buyback, Slim Dilution, PBF Cross-Ref, Litigation Expansion
 
 ### Focus

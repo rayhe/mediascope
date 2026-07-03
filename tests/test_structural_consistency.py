@@ -51,8 +51,8 @@ class TestFramingDeviceTypeCount:
     """
 
     # --- Update ONLY this constant when adding new device types ---
-    EXPECTED_TOTAL = 53
-    EXPECTED_PATTERN_MATCHED = 47  # core + extended (in _DEVICE_PATTERNS)
+    EXPECTED_TOTAL = 56
+    EXPECTED_PATTERN_MATCHED = 50  # core + extended (in _DEVICE_PATTERNS)
     EXPECTED_STRUCTURAL = {"kicker_framing", "analogy_stacking",
                            "speculative_framing", "trend_bundling",
                            "social_proof_amplification",
@@ -544,10 +544,10 @@ class TestCrossReferenceConsistency:
     def test_no_stale_33_framing_device_in_readme(self):
         """README.md should not reference stale framing device counts."""
         doc = (_REPO_ROOT / "README.md").read_text()
-        stale_refs = re.findall(r"\b(?:3[3-9]|4[0-9]|5[0-2])[- ](?:type|framing|device)", doc)
+        stale_refs = re.findall(r"\b(?:3[3-9]|4[0-9]|5[0-5])[- ](?:type|framing|device)", doc)
         assert not stale_refs, (
             f"README.md contains stale framing reference(s): {stale_refs}. "
-            f"Should be 53 after assumed_consensus and editorial_aside were added."
+            f"Should be 56 after slippery_slope, consumer_ownership, and usage_dismissal_undercut were added."
         )
 
     def test_readme_topic_count_in_description(self):
@@ -868,7 +868,7 @@ class TestAdversarialDeviceListConsistency:
     # Track the total number of compiled regex patterns across all device
     # types in _DEVICE_PATTERNS.  When patterns are added, this test fails
     # and forces a deliberate count update, preventing undocumented drift.
-    EXPECTED_TOTAL_PATTERNS = 325  # sum(len(v) for v in _DEVICE_PATTERNS.values())
+    EXPECTED_TOTAL_PATTERNS = 335  # sum(len(v) for v in _DEVICE_PATTERNS.values())
 
     def test_total_regex_pattern_count(self):
         """Total compiled regex patterns must match expected count."""

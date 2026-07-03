@@ -1,0 +1,35 @@
+TITLE: Meta puts Conversation Focus behind Meta One subscription (Updated)
+SOURCE: Android Authority
+URL: https://www.androidauthority.com/meta-smart-glasses-rate-limits-3683323/
+AUTHOR: C. Scott Brown
+DATE: July 1, 2026 (Updated July 2, 2026)
+TOPIC: Meta smart glasses Conversation Focus feature rate limits and subscription paywall
+
+---
+
+TL;DR
+
+- Meta has capped its Conversation Focus feature on smart glasses to three hours of usage per month.
+- You can pay for a $19.99/month Meta One subscription to get 15 hours of usage per month.
+- Conversation Focus runs entirely on the glasses and doesn't require an internet connection, setting a precedent for more on-device features to end up behind a paywall.
+- Meta responded to Android Authority, explaining why Conversation Focus now has a monthly usage limit.
+
+Update: July 2, 2026 (2:00 AM ET): A Meta spokesperson told the Android Authority team that "Conversation Focus is powered by AI that our team is continuously developing and improving; the subscription supports that ongoing work and gives power users expanded access along with premium device support." The mention of "expanded access" suggests there are ongoing compute costs associated with the feature, which could indicate that some level of cloud processing is involved.
+
+Meta also clarified that the Meta One subscription currently includes only expanded access to Conversation Focus and premium device support.
+
+---
+
+Original article: July 1, 2026 (7:29 AM ET): AI rate limits have become an unavoidable part of using AI tools. It's one thing to limit cloud-based features; it's another to limit a feature running on hardware you've already paid for. That's exactly what Meta is doing with Conversation Focus.
+
+As first reported by The Verge, the accessibility feature is now limited to three hours of use per month before users are asked to upgrade to a paid subscription.
+
+If you haven't come across it before, Conversation Focus shines in situations where conversations usually become difficult. It makes the person in front of you easier to hear by turning down background noise, whether you're grabbing dinner at a busy restaurant or waiting to board a flight.
+
+Three hours may sound reasonable, but it doesn't take much to use it up. A few work meetings in noisy environments, several dinners with friends, or a couple of travel days could easily exhaust your monthly allowance. Anyone who needs more time will have to subscribe to Meta One, which raises the limit to 15 hours per month for $19.99.
+
+The unusual part is that Conversation Focus isn't a cloud-powered AI feature. It runs entirely on the glasses themselves and doesn't require an internet connection. That means the feature works using the hardware already built into your glasses, without relying on the internet or Meta's servers.
+
+Asked about the change, Meta told The Verge that most people don't use Conversation Focus for anywhere near three hours a month, adding that the subscription is intended for power users who want expanded access alongside other premium benefits.
+
+For now, Meta One only unlocks additional Conversation Focus time and premium device support. But introducing a subscription limit on a feature that runs entirely on hardware you've already paid for sets an uncomfortable precedent. If this approach extends to other on-device features, smart glasses owners could end up paying a monthly fee just to access capabilities their devices already support.
