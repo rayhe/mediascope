@@ -7670,3 +7670,120 @@ journalists:
     writers who are not part of Drummond''s adversarial-journalism pipeline adopt the institutional adversarial posture in
     their coverage, or maintain a distinct voice. Her Rolling Stone/NYMag background means she brings magazine-feature editorial
     instincts rather than scoops-and-sources investigative DNA.'
+
+- career:
+  - beat: technology, future
+    end: 2018-09
+    event_type: hired
+    notes: 'Editorial intern for the Future section at The Outline, a tech-culture publication founded by Joshua Topolsky
+      (ex-Verge, ex-Bloomberg). NYU graduate. Also previously held editorial internship at Motherboard (Vice''s science/tech
+      vertical). The Outline was known for visually distinctive long-form tech journalism — it shut down in April 2020.'
+    publication: the-outline
+    role: editorial_intern
+    source_url: https://muckrack.com/caroline-haskins
+    start: 2017-01
+  - beat: surveillance, policing, technology
+    end: 2019-09
+    event_type: hired
+    notes: 'Staff writer at Motherboard (Vice''s tech/science vertical). ~1-year tenure. KEY WORK: obtained a copy of Palantir''s
+      secret police surveillance manual — one of the earliest leaks revealing how the software worked for law enforcement.
+      Reported on LAPD Palantir deployment. Featured on CYBER podcast (Motherboard''s cybersecurity show, hosted by Ben Makuch)
+      breaking down Palantir''s police tools. Beat focused on surveillance technology, policing, and platforms — the surveillance-tech
+      accountability lens that would define her entire subsequent career. Motherboard''s adversarial tech-culture editorial
+      environment reinforced investigative instincts.'
+    publication: vice-motherboard
+    role: staff_writer
+    source_url: https://everand.com/podcast/episode/455155428/how-palantir-spy-tool-for-cops-works
+    start: 2018-10
+  - beat: surveillance, platforms, AI, corporate power
+    end: 2021-07
+    event_type: hired
+    notes: 'Senior technology reporter at BuzzFeed News. Started Oct 21, 2019. Self-described beat: "surveillance, platforms,
+      and all the specific ways capitalism and power affect our lives." KEY SCOOPS: Amazon Ring surveillance camera partnerships
+      with police departments, Clearview AI facial recognition practices, student surveillance service Gaggle (monitoring
+      5M+ US students'' online activities using AI and human moderators — prompted Techmeme headline, Jun 2020). Broke news
+      on Palantir government contracts. BuzzFeed News'' investigative tech reporting culture reinforced accountability framing
+      developed at Motherboard. Approximately 2-year tenure before moving to Business Insider.'
+    publication: buzzfeed-news
+    role: senior_reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/buzzfeed-hires-haskins-as-senior-tech-reporter/
+    start: 2019-10
+  - beat: AI, surveillance technology
+    end: 2023-12
+    event_type: hired
+    notes: 'Research editor and senior tech reporter. Started Aug 16, 2021. Hired by deputy tech editor Alistair Barr to
+      cover AI and surveillance technology specifically. Continued breaking news on surveillance companies and AI deployment.
+      Also held research editor title — dual role combining reporting with editorial research. Left to freelance Dec 2023.
+      Approximately 2.5-year tenure — the longest single-outlet position before Wired.'
+    publication: business-insider
+    role: research_editor_senior_reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/insider-hires-buzzfeed-haskins-to-cover-ai-surveillance-tech/
+    start: 2021-08
+  - beat: technology, surveillance, corporate power
+    end: 2026-02
+    event_type: freelance
+    notes: 'Freelanced for more than a year after leaving Business Insider. Work appeared in The Guardian, TIME, CNET, and
+      other outlets. Muck Rack profile shows syndication across Yahoo Entertainment, Yahoo Canada, Yahoo News, MSN UK, Markets
+      Insider. Maintained surveillance and AI beat coverage independently. 712+ total articles across career (Muck Rack count
+      as of 2026). Contact: Signal 785-813-1084, Bluesky @carolinehaskins.'
+    publication: freelance
+    role: freelancer
+    source_url: https://talkingbiznews.com/media-news/haskins-departing-business-insider-to-freelance/
+    start: 2024-01
+  - beat: business, technology companies, AI, surveillance, corporate power
+    event_type: hired
+    notes: 'Business reporter on Wired business desk. Started March 10, 2026. Reports to Zoë Schiffer (Director, Business
+      & Industry). Based in New York. Email: caroline_haskins@wired.com. Covers tech companies and their influence. KEY EARLY
+      WIRED OUTPUT: (1) "What Does Palantir Actually Do?" — definitive Palantir deep dive, featured on Wired''s Uncanny Valley
+      podcast with host Katie Drummond; (2) "Palantir Wants to Be a Lifestyle Brand" — surveillance company merch/branding
+      analysis; (3) Tech Won''t Save Us podcast guest on Palantir under Trump administration; (4) Data center construction
+      labor shortage feature (Techmeme headline pick); (5) Tesla dealership arson federal charges (Apr 2025); (6) PROJECT
+      CANNES INVESTIGATION (Jul 1, 2026) — broke story that Meta contractor Covalen hired hundreds of contractors to pose
+      as teenagers and bombard competing AI chatbots (ChatGPT, Gemini, Character.AI) with 45,000+ prompts about suicide,
+      eating disorders, sex, and drugs. Internal codename "Cannes." Obtained internal Covalen documents describing the effort
+      as "comprehensive AI safety benchmarking." Former contractors spoke on record about disturbing content. Story generated
+      NY Post, Reuters, Livemint, eWeek, dev.to secondary coverage. PROJECT CANNES IS A DIRECTLY ADVERSARIAL META INVESTIGATION.
+      REPORTING CHAIN: Haskins → Schiffer (Director, ex-Platformer/Verge) → Barrett (exec editor, ex-Gizmodo EIC) → Drummond
+      (editorial director, ex-Vice/Gizmodo). Every level of her editorial hierarchy has adversarial-journalism institutional
+      DNA.'
+    publication: wired
+    role: reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-haskins-as-a-business-reporter/
+    start: 2026-03-10
+  name: Caroline Haskins
+  notes: 'Key migrations: The Outline (intern) → Motherboard/Vice (staff writer) → BuzzFeed News (senior tech reporter) →
+    Business Insider (research editor/senior tech reporter) → freelance → Wired (business reporter). Surveillance-tech
+    accountability specialist whose beat — surveillance, platforms, AI, corporate power — has remained remarkably consistent
+    across 6 outlets over ~9 years. NYU graduate. Known for obtaining Palantir''s police surveillance manual (Motherboard 2019),
+    breaking Amazon Ring/Clearview AI stories (BuzzFeed 2020), and the Project Cannes investigation at Wired (Jul 2026) exposing
+    Meta''s use of contractors posing as teens to test rival AI chatbots. Career pipeline (Motherboard → BuzzFeed News → BI
+    → Wired) is a textbook adversarial-tech-journalism arc from indie/alternative media into mainstream Condé Nast. Reports
+    to Zoë Schiffer on Wired business desk. 712+ total articles across career. KEY for MediaScope: Project Cannes (Jul 2026)
+    directly intersects with the toolkit''s Meta coverage analysis — the story was widely picked up and reframes Meta''s AI
+    safety testing as adversarial corporate behavior. Her surveillance-first framing lens predicts how her future Meta coverage
+    will be structured: corporate malfeasance through the lens of harm to individuals (especially children and marginalized
+    communities). Tests whether Wired''s Drummond-era adversarial editorial posture amplifies her existing framing or modulates
+    it. MIGRATION ANALYSIS: Outline → Motherboard → BuzzFeed News → BI → Wired is a 5-outlet migration that consistently
+    moves toward more institutional, higher-reach platforms while maintaining the same adversarial framing. At each outlet,
+    she covered the same beat (surveillance/platforms/corporate power) with increasing institutional backing.'
+- career:
+  - beat: technology, science, AI
+    event_type: hired
+    notes: 'Staff writer on science desk covering tech companies and AI. Emmy award-winning journalist. Previously senior
+      editor for culture at Wired, then moved to science desk. Career: VICE News (nearly 9 years, covering drugs, race —
+      senior reporter and editor), Guardian, Business Insider, CNN. Joined Wired as senior editor, culture (started March
+      24, 2026). Reports to Tim Marchman (Director, Science, Politics, and Security). GUARDIAN → WIRED PIPELINE: Another
+      Guardian alumnus entering Wired during the 2026 hiring wave alongside Hugo Lowell (Apr 2026) and Rosie Swash (May 2026).
+      NOTE: Her nearly 9-year Vice News tenure overlaps with Katie Drummond''s Vice SVP period (2019-2023) — another
+      Drummond-orbit hire. Her Emmy work (documentary journalism) adds visual storytelling capacity.'
+    publication: wired
+    role: senior_editor
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-krishnan-as-senior-editor/
+    start: 2026-03-24
+  name: Manisha Krishnan
+  notes: 'Vice News → Guardian → CNN → Wired pipeline. Emmy award-winning journalist with nearly 9 years at Vice News covering
+    drugs, race, and cultural beats. Hired as senior editor, culture at Wired (March 2026). Another Guardian alumnus entering
+    Wired during the 2026 hiring wave. Her Vice News tenure overlaps with Drummond''s Vice SVP period — reinforces the
+    Drummond-orbit hiring pattern. Extends Wired culture desk editorial capacity alongside Michael Calore (Director),
+    Miles Klee and Ej Dickson (writers). Less directly relevant to Big Tech/Meta coverage analysis but contributes to
+    understanding Wired''s overall editorial staffing under Drummond.'

@@ -993,6 +993,33 @@ editorial_changes:
     outgoing: Jake Lahut
     position: staffer_nlrb_case
     source_url: https://talkingbiznews.com/media-news/fired-wired-worker-pursuing-case-with-nlrb/
+  - date: '2026-03-10'
+    incoming: Caroline Haskins
+    notes: 'BUSINESS DESK EXPANSION: Haskins hired as business reporter covering tech companies and their influence. Previously
+      freelancing (1+ year) after leaving Business Insider, where she was research editor and senior tech reporter covering
+      AI and surveillance tech (Aug 2021 - Dec 2023). Earlier career: BuzzFeed News senior tech reporter (broke Ring/Clearview
+      AI stories, Oct 2019 - Jul 2021), Motherboard/Vice staff writer (obtained Palantir police manual, 2018-2019), The Outline
+      intern. NYU graduate. Reports to Zoë Schiffer (Director, Business & Industry). Based in New York. ANALYTICAL SIGNIFICANCE:
+      Surveillance-tech accountability specialist whose entire career has been oriented toward corporate power critique. KEY:
+      within 4 months of joining, produced the Project Cannes investigation (Jul 1 2026) — broke story that Meta contractor
+      Covalen hired hundreds of contractors posing as teens to test rival AI chatbots with 45,000+ prompts about suicide,
+      drugs, sex, eating disorders. Directly adversarial Meta story with wide pickup (NY Post, Reuters, Livemint, eWeek).
+      Business desk roster now: Schiffer (Director) + Matsakis + Kleeman (senior editors) + Taylor + Zeff + Tiku + Haskins
+      (reporters/writers). Reporting chain Haskins → Schiffer → Barrett → Drummond is adversarial-journalism DNA at every level.'
+    outgoing: null
+    position: business_reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-haskins-as-a-business-reporter/
+  - date: '2026-03-24'
+    incoming: Manisha Krishnan
+    notes: 'CULTURE DESK HIRE: Krishnan hired as senior editor, culture. Emmy award-winning journalist with nearly 9 years
+      at VICE News covering drugs, race, and cultural beats. Also worked at Guardian, Business Insider, CNN. Reports to Michael
+      Calore (Director, Consumer Tech & Culture). VICE → WIRED PIPELINE: Her nearly 9-year Vice News tenure overlaps with
+      Katie Drummond''s Vice SVP period (2019-2023), making her another Drummond-orbit hire. GUARDIAN PIPELINE: Also a Guardian
+      alumnus, adding to the 2026 Guardian → Wired migration wave (Hugo Lowell Apr 2026, Rosie Swash May 2026). Culture desk
+      now: Calore (Director) + Krishnan (senior editor) + Klee + Dickson (writers).'
+    outgoing: null
+    position: senior_editor_culture
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-krishnan-as-senior-editor/
   - date: '2026-07-02'
     incoming: null
     notes: 'OPEN LEADERSHIP POSITION: Wired posted job for "editor to lead business coverage" — a senior management position
