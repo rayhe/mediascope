@@ -644,36 +644,105 @@ journalists:
     coverage directly comparable to Zoë Schiffer (who co-authored ''Extremely Hardcore'' at Platformer before joining Wired).
     Both wrote definitive Musk/Twitter books from different institutional homes.'
 - career:
+  - beat: technology, freelance
+    end: 2007-01
+    event_type: freelance
+    notes: 'Freelance tech and culture writer based in San Francisco. Published in Popular Science, The National Journal,
+      The New York Sun, Mother Jones, Salon, SF Bay Guardian, SF Weekly, O The Oprah Magazine, Budget Travel, 7x7, The Awl,
+      The Bold Italic, Runner''s World, Women''s Health, and Time. Also worked as associate editor at Macworld (IDG''s flagship
+      Apple publication). Created barackobamaisyournewbicycle.com (Feb 13, 2008), a viral "single-serving site" that inspired
+      Jason Kottke to coin the term. Adapted into book "Barack Obama Is Your New Bicycle" (Gotham Books, 2008). Born ~1972-1973
+      (was 35 in 2008 per Boston Phoenix interview). Education: unknown (not disclosed in any public bio, speaker profile,
+      or press coverage). Lives in San Francisco with wife and children.'
+    publication: macworld
+    role: associate_editor
+    source_url: https://calysto.com/mat-honan-joins-gizmodo/
+    start: 2002-01
+  - beat: technology, Apple, column
+    end: 2010-06
+    event_type: hired
+    notes: 'Contributing editor (first Wired stint). Wrote monthly column, features, and regular web stories. Calysto press
+      release for his Gizmodo hire confirms "contributing editor for Wired since 2007." Notable piece: "I Am Here: One Man''s
+      Experiment With the Location-Aware Lifestyle" (Wired, Jan 2009) — one of the earliest long-form explorations of location
+      tracking. Work also appeared in Wired UK during this period. Performed at Pop-Up Magazine (live journalism event in
+      San Francisco).'
+    publication: wired
+    role: contributing_editor
+    source_url: https://calysto.com/mat-honan-joins-gizmodo/
+    start: 2007-01
+  - beat: technology, gadgets, culture
+    end: 2012-01
+    event_type: hired
+    notes: 'Senior reporter at Gizmodo (Gawker Media). Replaced Jason Chen after the iPhone 4 prototype raid controversy.
+      22 pages of bylined posts. Notable pieces: "Fever Dream of a Guilt-Ridden Gadget Reporter" (Jan 2012), "Unlike: Why
+      Facebook Integration Is Actually Antisocial" (critical of Facebook privacy, pre-dates his EIC role at a publication
+      that would later host Karen Hao''s adversarial Meta coverage). His Twitter remained linked to the Gizmodo Twitter account
+      after departure, which enabled the Aug 2012 hack to cascade to Gizmodo''s ~500K followers. Gawker Media house style
+      (tabloid-adversarial, consumer advocacy) is a notable framing influence on his editorial instincts.'
+    publication: gizmodo
+    role: senior_reporter
+    source_url: https://calysto.com/mat-honan-joins-gizmodo/
+    start: 2010-07
   - beat: technology, security, column
     end: 2014-12
     event_type: hired
-    notes: Monthly columnist and senior staff writer. Wrote cover stories and regular features. Known for 'How Apple and Amazon
-      Security Flaws Led to My Epic Hacking' (2012). 20+ year tech journalist career overall.
+    notes: 'Senior staff writer (second Wired stint). Monthly columnist and cover story writer. Wrote "How Apple and Amazon
+      Security Flaws Led to My Epic Hacking" (Wired, Aug 6, 2012) — recounted his own devastating social-engineering hack
+      where attackers chained Amazon/Apple support to remotely wipe his iPhone, iPad, and MacBook, plus hijack his and Gizmodo''s
+      Twitter. The piece forced Apple to suspend phone-based iCloud password resets and add two-factor auth within 8 months
+      (Mar 2013). Also wrote "Welcome to Google Island" (May 2013, satirical dystopia about Google data practices). Appeared
+      on CNBC, CNN, NBC Dateline, NPR Morning Edition, NOVA, PBS NewsHour, BBC Horizon discussing the hack and tech security.
+      MuckReads/ProPublica podcast interview. Longform Podcast #42 (May 2013): "I like to skewer that stuff, because I don''t
+      want to feel responsible for it." Notable editorial posture: industry-skeptical without being ideological, consumer-protection
+      frame.'
     publication: wired
     role: senior_writer
     source_url: https://talkingbiznews.com/they-re-hiring/buzzfeed-hires-wireds-honan-to-run-its-silicon-valley-bureau/
     start: 2012-01
-  - beat: tech desk, SF bureau
+  - beat: tech desk, SF bureau, editorial leadership
     end: 2021-07
     event_type: hired
-    notes: San Francisco bureau chief → executive editor. Opened BuzzFeed SF office. Launched BuzzFeed Open Lab. Led tech
-      desk to Polk Award, Livingston Award, and 2021 Pulitzer Prize.
+    notes: 'Silicon Valley bureau chief → executive editor. Hired by EIC Ben Smith (reported by Kara Swisher at Re/code).
+      Opened BuzzFeed''s SF bureau (8th bureau), built out team including John Paczkowski (Re/code), William Alden (NYT Dealbook),
+      Caroline O''Donovan (Nieman Lab). Launched BuzzFeed Open Lab for Technology, Journalism and the Arts — creative residency
+      bringing together technologists, artists, and journalists. Launched BuzzFeed News tech video program. Appeared in "Follow
+      This" (2018 BuzzFeed News × Netflix documentary series) as SF Bureau Chief. His teams won: George Polk Award, Livingston
+      Award, Mirror Award, and 2021 Pulitzer Prize for International Reporting (Megha Rajagopalan, Alison Killing, Christo
+      Buschek — investigation of China''s Uyghur detention camps using satellite imagery). Departed Jul 2021 before BuzzFeed
+      News shutdown (Apr 2023). KEY: demonstrated ability to build investigative teams that produce accountability journalism
+      at scale.'
     publication: buzzfeed-news
     role: executive_editor
-    source_url: https://chartwellspeakers.com/speaker/mat-honan/
+    source_url: https://www.venturebeat.com/media/buzzfeed-unveils-its-next-step-for-growth-in-san-francisco/
     start: 2015-01
-  - beat: overall editorial direction
+  - beat: overall editorial direction, AI, breakthrough technologies
     event_type: hired
-    notes: Editor-in-chief. $292K + $74K benefits (FY2024 990). Career path Wired → BuzzFeed → MIT TR creates editorial culture
-      bridge. Start date August 17, 2021.
+    notes: 'Editor-in-chief, succeeding Gideon Lichfield (who left for Wired EIC role, creating a KEY DOUBLE MIGRATION natural
+      experiment). Hired by CEO/Publisher Elizabeth Bramson-Boudreau. Start date August 17, 2021. Compensation: $292K + $74K
+      benefits (FY2024 990). Oversees full MIT TR portfolio: website, print magazine, podcasts, newsletters, events (EmTech),
+      and new formats. Authors "The Debrief" newsletter (weekly analysis). Stewards annual "10 Breakthrough Technologies"
+      list. Media appearances as EIC: Tech Nation podcast (Jan 2025 — 10 Breakthrough Technologies), "Inevitable vs. Unknown"
+      podcast (Nov 2025 — AI revolution), David Rothkopf podcast (Feb 2026 — "Why Do People Hate So Many of AI''s Moguls?").
+      Editorial direction under Honan maintains MIT TR''s technology-focused institutional identity while expanding into AI
+      policy and society coverage. Career path Wired → Gizmodo → Wired → BuzzFeed → MIT TR creates multi-outlet editorial
+      culture bridge. 20-person editorial team (The Org). Based in San Francisco (Cambridge HQ at 1 Main St). KEY for MediaScope:
+      as EIC of a tracked publication, his editorial instincts (consumer-protection, industry-skeptical, Gawker DNA) set the
+      institutional framing environment for all MIT TR coverage. His Pulitzer-winning investigative background shapes the
+      publication''s approach to accountability journalism.'
     publication: mit-tech-review
     role: eic
     source_url: https://www.technologyreview.com/2021/06/22/1026816/mat-honan-joins-mit-technology-review-editor-in-chief/
     start: 2021-08
   name: Mat Honan
-  notes: 'Key migration: Wired → BuzzFeed News → MIT Tech Review EIC. Tests editorial influence when a journalist becomes
-    the boss. Former Wired monthly columnist and senior writer, then built BuzzFeed News tech desk to Pulitzer Prize level,
-    then became MIT TR EIC.'
+  notes: 'Key migration chain: Macworld → Wired (contributing editor) → Gizmodo → Wired (senior writer) → BuzzFeed News →
+    MIT Tech Review EIC. Six-outlet career spanning 20+ years. The HIGHEST-VALUE editorial figure in the MIT TR analysis —
+    as EIC, he sets the institutional framing environment for every article published by one of our 5 tracked publications.
+    Former Wired monthly columnist who wrote the landmark "Epic Hacking" piece that forced Apple to add two-factor auth. Built
+    BuzzFeed News tech desk from scratch to Pulitzer Prize level. Gawker Media DNA (Gizmodo stint) gives him consumer-protection,
+    industry-skeptical editorial instincts. Succeeded Gideon Lichfield (who went to Wired EIC), creating a key editorial-culture
+    bridge between MIT TR and Wired through shared leadership lineage. Author of "Barack Obama Is Your New Bicycle" (Gotham
+    Books, 2008) — the viral site that coined the "single-serving site" concept. Tests editorial influence when a journalist-turned-executive
+    shapes an entire publication''s coverage culture.'
 - career:
   - beat: science, technology
     end: 1998-01
@@ -2038,9 +2107,9 @@ journalists:
     event_type: hired
     notes: Returned to Wired from Bloomberg. Started May 18, 2026. Brian Barrett (exec editor) announcement praised him as
       'story zero' originator. Reports to Andrew. Co-broke Meta/Rank One face recognition story with Dell Cameron within weeks
-      of return. Co-authored "Project Cannes" Meta/AI child safety investigation with Joel Khalili (published Jun 29, 2026) —
-      exposing Meta contractors posing as minors to test rival chatbots with 45,000+ prompts. Story triggered wide pickup (NY
-      Post, CNN, Techmeme lead). Demonstrates cross-desk collaboration between London (Khalili) and NYC (Mehrotra) investigation
+      of return. Co-authored "Project Cannes" Meta/AI child safety investigation with Joel Khalili (published Jun 29, 2026)
+      — exposing Meta contractors posing as minors to test rival chatbots with 45,000+ prompts. Story triggered wide pickup
+      (NY Post, CNN, Techmeme lead). Demonstrates cross-desk collaboration between London (Khalili) and NYC (Mehrotra) investigation
       teams.
     publication: wired
     role: senior_writer
@@ -2346,13 +2415,13 @@ journalists:
   - beat: architecture, urban planning, RIBA, CABE
     end: 2001-06
     event_type: hired
-    notes: 'Reporter at The Architects'' Journal (AJ). Prolific bylines from Feb 2000 through at least March 2001
-      covering architecture, urban regeneration, RIBA politics, CABE design reviews, PFI, Stirling Prize, and the
-      built environment. Topics included Foster + Partners'' Millennium Bridge wobble, Lord Rogers'' urban renaissance
-      agenda, Crystal Palace multiplex, Wembley Stadium redesign, Elephant and Castle regeneration, and Eden Project
-      lawsuit. Also covered racism in architecture (Prince Charles'' Stephen Lawrence Memorial Lecture). Earliest
-      confirmed byline: 24 February 2000. This phase established his deep knowledge of the built environment and
-      housing/regeneration policy that would later inform his Guardian social affairs coverage.'
+    notes: 'Reporter at The Architects'' Journal (AJ). Prolific bylines from Feb 2000 through at least March 2001 covering
+      architecture, urban regeneration, RIBA politics, CABE design reviews, PFI, Stirling Prize, and the built environment.
+      Topics included Foster + Partners'' Millennium Bridge wobble, Lord Rogers'' urban renaissance agenda, Crystal Palace
+      multiplex, Wembley Stadium redesign, Elephant and Castle regeneration, and Eden Project lawsuit. Also covered racism
+      in architecture (Prince Charles'' Stephen Lawrence Memorial Lecture). Earliest confirmed byline: 24 February 2000. This
+      phase established his deep knowledge of the built environment and housing/regeneration policy that would later inform
+      his Guardian social affairs coverage.'
     publication: architects-journal
     role: reporter
     source_url: https://www.architectsjournal.co.uk/author/robert-booth
@@ -2360,13 +2429,12 @@ journalists:
   - beat: architecture, built environment, design
     end: 2005-06
     event_type: hired
-    notes: 'Editor of Building Design (BD) magazine, a UK architecture and construction industry weekly. Wrote
-      editorials and building studies. At 2004 Young Architect of the Year Awards conference, introduced speakers
-      as "BD editor" (documented in "An Architect''s Guide to Fame," pub. 2005). Editorials cited in published
-      sources: Oct 15, 2004 (on demolition/brick waste); Jan 21, 2005 (on Zaha Hadid and Architecture Foundation
-      competition, argued "star" architects benefit from marketing-driven favoritism). Building studies bylines
-      through March 2005 (Manchester science lab, UK science building boom). media.info directory lists him as
-      Editor of BD. Succeeded previous editor Lee Mallett.'
+    notes: 'Editor of Building Design (BD) magazine, a UK architecture and construction industry weekly. Wrote editorials
+      and building studies. At 2004 Young Architect of the Year Awards conference, introduced speakers as "BD editor" (documented
+      in "An Architect''s Guide to Fame," pub. 2005). Editorials cited in published sources: Oct 15, 2004 (on demolition/brick
+      waste); Jan 21, 2005 (on Zaha Hadid and Architecture Foundation competition, argued "star" architects benefit from marketing-driven
+      favoritism). Building studies bylines through March 2005 (Manchester science lab, UK science building boom). media.info
+      directory lists him as Editor of BD. Succeeded previous editor Lee Mallett.'
     publication: building-design
     role: editor
     source_url: https://media.info/magazines/titles/bd-building-design
@@ -2374,52 +2442,48 @@ journalists:
   - beat: housing, homelessness, social affairs, property
     end: 2024-10
     event_type: hired
-    notes: 'Joined the Guardian after ~5 years editing Building Design. Likely started on property/architecture
-      beat (natural transition from trade press), then broadened to housing, homelessness, and social affairs.
-      Official title for much of Guardian career: "Social Affairs Correspondent" (confirmed by Anewstip, BroadwayStars
-      aggregator). Major coverage: Prince Charles black spider memos (2015, with Matthew Taylor), Prince Andrew/Kazakh
-      oligarch stories (2016+), Zaha Hadid estate (2017), Grenfell Tower fire (2017 onwards — led comprehensive
-      coverage exposing systemic housing failures, council negligence, corporate dishonesty), Westminster councilor
-      Robert Davis hospitality (2018), Grenfell Tower inquiry (2020, 2024). Filed FOI requests to Cabinet Office
-      on Grenfell-related corporate accountability. Grenfell report (2024) co-bylined with Emine Sinmaz.
-      Investigative approach: document-heavy, source-intensive methodology. Also: "Journalists to Use Immune System
-      Software against Fake News" (Aug 2017). Orwell Foundation bio describes him as "award-winning journalist."'
+    notes: 'Joined the Guardian after ~5 years editing Building Design. Likely started on property/architecture beat (natural
+      transition from trade press), then broadened to housing, homelessness, and social affairs. Official title for much of
+      Guardian career: "Social Affairs Correspondent" (confirmed by Anewstip, BroadwayStars aggregator). Major coverage: Prince
+      Charles black spider memos (2015, with Matthew Taylor), Prince Andrew/Kazakh oligarch stories (2016+), Zaha Hadid estate
+      (2017), Grenfell Tower fire (2017 onwards — led comprehensive coverage exposing systemic housing failures, council negligence,
+      corporate dishonesty), Westminster councilor Robert Davis hospitality (2018), Grenfell Tower inquiry (2020, 2024). Filed
+      FOI requests to Cabinet Office on Grenfell-related corporate accountability. Grenfell report (2024) co-bylined with
+      Emine Sinmaz. Investigative approach: document-heavy, source-intensive methodology. Also: "Journalists to Use Immune
+      System Software against Fake News" (Aug 2017). Orwell Foundation bio describes him as "award-winning journalist."'
     publication: guardian
     role: reporter
     source_url: https://www.orwellfoundation.com/judge/robert-booth/
     start: 2006-01
   - beat: UK technology
     event_type: beat_change
-    notes: 'Became UK Technology Editor after Alex Hern''s departure (Sep 2024). Muck Rack confirms current title:
-      "UK Technology Editor, The Guardian." UNUSUAL APPOINTMENT: No prior tech journalism experience — entire
-      pre-Guardian career was architecture trade press (AJ reporter, BD editor), then ~18 years on housing/social
-      affairs at Guardian. This mirrors a broader Guardian editorial philosophy: investigative instincts and
-      institutional knowledge trump subject-matter expertise. His Grenfell experience (holding corporations and
-      government accountable for systemic failures that harm vulnerable people) is directly applicable to tech
-      accountability — same analytical frame, different industry. Recent tech coverage (2025-2026): FCA Palantir
-      deal, Met police £50m Palantir contract blocked by Sadiq Khan, Google DeepMind UK unions, Google AI engineer
-      protesting Israel work, Roblox child safety, AI summaries of Tripadvisor reviews, Anthropic co-founder
-      Nobel prize prediction, digital ID cards (with Dan Milmo). KEY QUESTION: Does his social affairs lens
-      produce tech coverage that emphasizes human impact and systemic failure differently than Hern''s
-      economics-trained, tech-native approach?'
+    notes: 'Became UK Technology Editor after Alex Hern''s departure (Sep 2024). Muck Rack confirms current title: "UK Technology
+      Editor, The Guardian." UNUSUAL APPOINTMENT: No prior tech journalism experience — entire pre-Guardian career was architecture
+      trade press (AJ reporter, BD editor), then ~18 years on housing/social affairs at Guardian. This mirrors a broader Guardian
+      editorial philosophy: investigative instincts and institutional knowledge trump subject-matter expertise. His Grenfell
+      experience (holding corporations and government accountable for systemic failures that harm vulnerable people) is directly
+      applicable to tech accountability — same analytical frame, different industry. Recent tech coverage (2025-2026): FCA
+      Palantir deal, Met police £50m Palantir contract blocked by Sadiq Khan, Google DeepMind UK unions, Google AI engineer
+      protesting Israel work, Roblox child safety, AI summaries of Tripadvisor reviews, Anthropic co-founder Nobel prize prediction,
+      digital ID cards (with Dan Milmo). KEY QUESTION: Does his social affairs lens produce tech coverage that emphasizes
+      human impact and systemic failure differently than Hern''s economics-trained, tech-native approach?'
     publication: guardian
     role: editor
     source_url: https://talkingbiznews.com/they-re-hiring/guardian-tech-editor-hern-is-departing/
     start: 2024-10
   name: Robert Booth
-  notes: 'Guardian UK Technology Editor (replaced Alex Hern, ~late 2024). Career: Architects'' Journal reporter
-    (2000-2001) → Building Design editor (~2002-2005) → Guardian social affairs correspondent (~2006-2024) →
-    Guardian UK Technology Editor (2024-present). CORRECTION: Previously recorded as "24+ year Guardian veteran" —
-    actually had ~5 years in architecture trade press before joining Guardian (~2006). Award-winning investigative
-    journalist known for Grenfell Tower fire coverage. Orwell Foundation panelist. Twitter/X: @robert_booth.
-    LinkedIn: in/robert-booth-95b30525/. KEY ANALYTICAL VALUE: Pre-Guardian architecture trade press career is
-    UNIQUE in our dataset — the only journalist who edited a specialist trade publication before moving to a national
-    broadsheet. His trajectory (trade press reporter → trade press editor → national broadsheet reporter → national
-    broadsheet section editor) is a classic UK journalism career ladder. Tests whether trade press editorial
-    experience (deep industry knowledge, source networks in housing/construction) produces different journalism
-    than starting at generalist outlets. The AJ→BD→Guardian pipeline also means his "housing and homelessness for
-    over two decades" (Orwell Foundation) spans architecture trade press AND broadsheet — a longer and deeper
-    engagement with the built environment than pure Guardian tenure suggests.'
+  notes: 'Guardian UK Technology Editor (replaced Alex Hern, ~late 2024). Career: Architects'' Journal reporter (2000-2001)
+    → Building Design editor (~2002-2005) → Guardian social affairs correspondent (~2006-2024) → Guardian UK Technology Editor
+    (2024-present). CORRECTION: Previously recorded as "24+ year Guardian veteran" — actually had ~5 years in architecture
+    trade press before joining Guardian (~2006). Award-winning investigative journalist known for Grenfell Tower fire coverage.
+    Orwell Foundation panelist. Twitter/X: @robert_booth. LinkedIn: in/robert-booth-95b30525/. KEY ANALYTICAL VALUE: Pre-Guardian
+    architecture trade press career is UNIQUE in our dataset — the only journalist who edited a specialist trade publication
+    before moving to a national broadsheet. His trajectory (trade press reporter → trade press editor → national broadsheet
+    reporter → national broadsheet section editor) is a classic UK journalism career ladder. Tests whether trade press editorial
+    experience (deep industry knowledge, source networks in housing/construction) produces different journalism than starting
+    at generalist outlets. The AJ→BD→Guardian pipeline also means his "housing and homelessness for over two decades" (Orwell
+    Foundation) spans architecture trade press AND broadsheet — a longer and deeper engagement with the built environment
+    than pure Guardian tenure suggests.'
 - career:
   - beat: SF Bay Area politics, tech industry
     end: 2014-01
@@ -2724,11 +2788,11 @@ journalists:
     source_url: https://talkingbiznews.com/they-re-hiring/reisner-named-staff-writer-at-the-atlantic/
     start: 2025-10
   name: Alex Reisner
-  notes: "Atlantic's AI training data investigator. Broke the Books3 story (190K pirated books used by Meta/LLaMA). Built Atlantic's\
-    \ AI Watchdog searchable database (launched Sep 2025 with senior editor Damon Beres). Expanded AI Watchdog to music datasets\
-    \ Jun 2026 — revealed 21.2M copyrighted songs in 4 AI training datasets (LAION-DISCO-12M, Sleeping-DISCO-9M, Free Music\
-    \ Archive, plus one more). Prompted responses from SZA, Kenny Beats, and other major artists. Programming + journalism\
-    \ hybrid. Also a drummer in Francis and the Lights."
+  notes: Atlantic's AI training data investigator. Broke the Books3 story (190K pirated books used by Meta/LLaMA). Built Atlantic's
+    AI Watchdog searchable database (launched Sep 2025 with senior editor Damon Beres). Expanded AI Watchdog to music datasets
+    Jun 2026 — revealed 21.2M copyrighted songs in 4 AI training datasets (LAION-DISCO-12M, Sleeping-DISCO-9M, Free Music
+    Archive, plus one more). Prompted responses from SZA, Kenny Beats, and other major artists. Programming + journalism hybrid.
+    Also a drummer in Francis and the Lights.
 - career:
   - beat: pop culture, fandom, online community
     end: 2018-06
@@ -3975,8 +4039,8 @@ journalists:
   name: Nitasha Tiku
   notes: 'Key migration: BuzzFeed → Wired → Washington Post → (laid off Feb 2026, reportedly rehired ~Apr 2026). One of the
     most important cross-publication migrations for DiD analysis because she moved FROM a tracked publication (Wired) to an
-    untracked one (WaPo). Her career is an almost perfect longitudinal case: Inc → NYmag → NY Observer → Valleywag/Gawker →
-    BuzzFeed → Verge → Wired → WaPo covers nearly every major digital media era. Columbia BA (English & Comp Lit), NYU MA
+    untracked one (WaPo). Her career is an almost perfect longitudinal case: Inc → NYmag → NY Observer → Valleywag/Gawker
+    → BuzzFeed → Verge → Wired → WaPo covers nearly every major digital media era. Columbia BA (English & Comp Lit), NYU MA
     (Journalism). Beat: tech culture, Silicon Valley power dynamics, AI. Laid off from Washington Post in Feb 2026 layoffs
     (~300 journalists, ~1/3 of staff). REPORTED REHIRED at WaPo ~April 2026 (Tomorrow''s Publisher/CJR report: "Others reported
     to be returning include Jake Spring, Nitasha Tiku and Steve Hendrix"). The layoff + rehire cycle is analytically significant:
@@ -3985,10 +4049,10 @@ journalists:
     on turmoil inside Google during Trump administration. Referenced as Wired business desk colleague in Louise Matsakis hire
     announcement (Nov 2024) — this likely refers to her earlier Wired tenure, NOT a current Wired role. ANALYTICAL VALUE:
     Tiku''s Wired → WaPo transition (tracked → untracked) is a partial natural experiment — we can observe whether her framing
-    patterns changed when she left Wired''s Condé Nast editorial ecosystem for WaPo''s Jeff Bezos-owned environment. Her
-    long Gawker/Valleywag background means she entered journalism with an adversarial, culture-focused lens — compare to
-    reporters who entered via traditional newspapers. The Feb 2026 layoff + rehire adds another dimension: does institutional
-    loyalty shift after being laid off and recalled?'
+    patterns changed when she left Wired''s Condé Nast editorial ecosystem for WaPo''s Jeff Bezos-owned environment. Her long
+    Gawker/Valleywag background means she entered journalism with an adversarial, culture-focused lens — compare to reporters
+    who entered via traditional newspapers. The Feb 2026 layoff + rehire adds another dimension: does institutional loyalty
+    shift after being laid off and recalled?'
 - career:
   - beat: fashion, culture
     end: 2001-12
@@ -4061,9 +4125,8 @@ journalists:
     notes: 'Hired to cover technology platforms and their power. Led Wired''s AI Elections Project (2024) — appeared on TED
       AI Show discussing AI''s role in global elections. Promoted to senior writer by 2025-2026. Reports on DOGE, government
       tech, Elon Musk, platform regulation. Co-bylined with Matt Burgess on EU-Big Tech coverage. Regular TV/radio appearances:
-      PBS NewsHour, Al Jazeera, BBC, NPR, NBC. Speaker at Concordia 2024 Annual Summit (billed as "platforms and power
-      reporter"). Prior to journalism career, contributed to NewsGuard as a contributing analyst (misinformation/media
-      credibility ratings).'
+      PBS NewsHour, Al Jazeera, BBC, NPR, NBC. Speaker at Concordia 2024 Annual Summit (billed as "platforms and power reporter").
+      Prior to journalism career, contributed to NewsGuard as a contributing analyst (misinformation/media credibility ratings).'
     publication: wired
     role: senior_writer
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-elliott-to-cover-platforms-and-power/
@@ -7232,8 +7295,8 @@ journalists:
   - beat: culture, media, digital life
     end: 2015-01
     event_type: intern
-    notes: 'Intern. Early career at progressive publications — The Nation is known for left-leaning political and cultural
-      journalism. Levinson also interned at Paper magazine during this period.'
+    notes: Intern. Early career at progressive publications — The Nation is known for left-leaning political and cultural
+      journalism. Levinson also interned at Paper magazine during this period.
     publication: the-nation
     role: intern
     source_url: https://muckrack.com/alana-levinson/articles
@@ -7241,8 +7304,8 @@ journalists:
   - beat: audience engagement, digital strategy
     end: 2016-06
     event_type: hired
-    notes: 'First engagement editor — built audience engagement function. Early-career digital strategy role at a digital-native
-      political news outlet. TPM was an influential model for blogger-to-publisher transitions.'
+    notes: First engagement editor — built audience engagement function. Early-career digital strategy role at a digital-native
+      political news outlet. TPM was an influential model for blogger-to-publisher transitions.
     publication: talking-points-memo
     role: engagement_editor
     source_url: https://muckrack.com/alana-levinson/articles
@@ -7250,9 +7313,9 @@ journalists:
   - beat: digital culture, editorial strategy
     end: 2017-06
     event_type: hired
-    notes: 'Part of team that won first National Magazine Award for digital publication. Medium was the dominant publishing
-      platform at the time, making this a significant editorial achievement. Built editorial teams during Medium''s peak influence
-      period.'
+    notes: Part of team that won first National Magazine Award for digital publication. Medium was the dominant publishing
+      platform at the time, making this a significant editorial achievement. Built editorial teams during Medium's peak influence
+      period.
     publication: medium
     role: editor
     source_url: https://muckrack.com/alana-levinson/articles
@@ -7260,9 +7323,9 @@ journalists:
   - beat: enterprise tech, digital culture, futurism
     end: 2017-06
     event_type: hired
-    notes: 'Deputy editor covering enterprise tech reporting. Fusion/Real Future was a Univision-owned digital media venture
+    notes: Deputy editor covering enterprise tech reporting. Fusion/Real Future was a Univision-owned digital media venture
       targeting millennial audiences. Short tenure suggests organizational instability (Fusion underwent multiple pivots and
-      eventually folded).'
+      eventually folded).
     publication: fusion
     role: deputy_editor
     source_url: https://muckrack.com/alana-levinson/articles
@@ -7270,10 +7333,10 @@ journalists:
   - beat: longform, investigative, special issues, men and masculinity
     end: 2020-12
     event_type: hired
-    notes: 'Deputy editor overseeing longform, investigative features, and special issues. MEL Magazine was a Dollar Shave
+    notes: Deputy editor overseeing longform, investigative features, and special issues. MEL Magazine was a Dollar Shave
       Club-owned digital magazine covering men and masculinity from a progressive/analytical lens. Levinson helped build the
-      editorial team and oversaw the publication''s most ambitious features. MEL ceased operations in 2022 when Unilever (which
-      acquired Dollar Shave Club) shut it down.'
+      editorial team and oversaw the publication's most ambitious features. MEL ceased operations in 2022 when Unilever (which
+      acquired Dollar Shave Club) shut it down.
     publication: mel-magazine
     role: deputy_editor
     source_url: https://muckrack.com/alana-levinson/articles
@@ -7281,10 +7344,10 @@ journalists:
   - beat: editorial consultancy, print launches, podcasts, newsletters
     end: 2025-11
     event_type: freelance
-    notes: 'Ran independent editorial consultancy for approximately five years. Launched print publications, podcasts, and
-      newsletters for clients. Also freelanced for Rolling Stone, Mother Jones, Vice, New York, GQ, Vogue, Dwell. This
-      consultancy period is significant because it gave her experience across multiple media formats and publication types
-      before joining Wired — Barrett specifically cited her "entrepreneurial outlook" in the hire announcement.'
+    notes: Ran independent editorial consultancy for approximately five years. Launched print publications, podcasts, and
+      newsletters for clients. Also freelanced for Rolling Stone, Mother Jones, Vice, New York, GQ, Vogue, Dwell. This consultancy
+      period is significant because it gave her experience across multiple media formats and publication types before joining
+      Wired — Barrett specifically cited her "entrepreneurial outlook" in the hire announcement.
     publication: freelance
     role: editorial_consultant
     source_url: https://muckrack.com/alana-levinson/articles
@@ -7297,10 +7360,10 @@ journalists:
       role shapes how Wired''s feature stories are conceived and developed, making her editorially influential even without
       a byline beat. ANALYTICAL VALUE: As features editor, Levinson controls narrative framing at the story-structure level
       (which pitches get developed, how features are shaped, what angle the longform pieces take). This is a different vector
-      of editorial influence than beat reporters or desk directors — less visible but potentially more impactful on the
-      publication''s overall tone. Her MEL Magazine background (progressive/analytical masculinity coverage) and freelance
-      portfolio (Mother Jones, Vice, Rolling Stone) suggest comfort with adversarial and culturally critical framing that
-      aligns with Drummond-era Wired.'
+      of editorial influence than beat reporters or desk directors — less visible but potentially more impactful on the publication''s
+      overall tone. Her MEL Magazine background (progressive/analytical masculinity coverage) and freelance portfolio (Mother
+      Jones, Vice, Rolling Stone) suggest comfort with adversarial and culturally critical framing that aligns with Drummond-era
+      Wired.'
     publication: wired
     role: features_editor
     source_url: https://www.editorandpublisher.com/stories/wired-welcomes-two-new-staff-members-alana-hope-levinson-and-maxwell-zeff,252685
@@ -7313,17 +7376,17 @@ journalists:
     into Wired — digital culture editor and editorial consultant rather than tech reporter. Her role as features editor means
     she shapes narrative framing at the story-structure level, influencing how Wired''s longform pieces are conceived and
     developed. Her progressive-media background (The Nation, Medium, MEL, Mother Jones, Vice) and cultural criticism orientation
-    make her a potential amplifier of Drummond-era editorial posture through story selection and development rather than
-    direct bylines. KEY for MediaScope: her editorial influence is indirect but structural — she does not write about Meta,
-    but she shapes the features that do. Appeared on Tasteland podcast (YouTube) discussing her Wired role.'
+    make her a potential amplifier of Drummond-era editorial posture through story selection and development rather than direct
+    bylines. KEY for MediaScope: her editorial influence is indirect but structural — she does not write about Meta, but she
+    shapes the features that do. Appeared on Tasteland podcast (YouTube) discussing her Wired role.'
 - career:
   - beat: books, publishing
     end: 2001-01
     event_type: hired
-    notes: 'Book reporter 1987-1998, then Silicon Valley/tech from San Francisco 1999-2001. Definitively identified Joe Klein
-      as ''Anonymous'' author of Primary Colors (1997) by sending galley proof handwriting to expert. Also covered publishing
+    notes: Book reporter 1987-1998, then Silicon Valley/tech from San Francisco 1999-2001. Definitively identified Joe Klein
+      as 'Anonymous' author of Primary Colors (1997) by sending galley proof handwriting to expert. Also covered publishing
       business and book collecting. Gave Jeff Bezos his first tour of the Washington Post newsroom in 1998 — editors at the
-      time thought Amazon was ''cute, interesting, a frill.'''
+      time thought Amazon was 'cute, interesting, a frill.'
     publication: washington-post
     role: book_reporter
     source_url: https://en.wikipedia.org/wiki/David_Streitfeld
@@ -7331,19 +7394,19 @@ journalists:
   - beat: technology, Enron, housing, economics
     end: 2007-01
     event_type: hired
-    notes: 'Technology reporter initially, then switched to Enron, housing, and general economics. Named ''The Bard of the
-      Bubble'' by The Atlantic magazine (July 2006) for prescient LA Times real estate coverage.'
+    notes: Technology reporter initially, then switched to Enron, housing, and general economics. Named 'The Bard of the Bubble'
+      by The Atlantic magazine (July 2006) for prescient LA Times real estate coverage.
     publication: los-angeles-times
     role: tech_reporter
     source_url: https://alchetron.com/David-Streitfeld
     start: 2001-01
   - beat: technology, AI, Big Tech business practices
     event_type: hired
-    notes: 'Started as Chicago business reporter (2007); later moved to technology reporting from San Francisco. Won 2012 SABEW
-      ''Best in Business'' award for fake online reviews investigation. Part of team that won 2013 Pulitzer Prize for Explanatory
-      Reporting for 10-article series on Apple and other tech companies'' business practices. Broke Amazon-Hachette negotiation
-      story (May 2014). Recent major coverage: social media addiction trial (Zuckerberg testified Feb 2026 — Streitfeld covered
-      the landmark LA trial as NYT lead reporter), AI bubble analysis (dot-com comparison), Pope Leo XIV''s AI encyclical
+    notes: 'Started as Chicago business reporter (2007); later moved to technology reporting from San Francisco. Won 2012
+      SABEW ''Best in Business'' award for fake online reviews investigation. Part of team that won 2013 Pulitzer Prize for
+      Explanatory Reporting for 10-article series on Apple and other tech companies'' business practices. Broke Amazon-Hachette
+      negotiation story (May 2014). Recent major coverage: social media addiction trial (Zuckerberg testified Feb 2026 — Streitfeld
+      covered the landmark LA trial as NYT lead reporter), AI bubble analysis (dot-com comparison), Pope Leo XIV''s AI encyclical
       Magnifica Humanitas (contrasting Silicon Valley''s quasi-religious AI rhetoric with traditional religion). Published
       ''Western Star: The Life and Legends of Larry McMurtry'' biography (2026, Penguin Press). Also edited ''Last Interview''
       book collections for Garcia Marquez, Philip K. Dick, J.D. Salinger, Hunter S. Thompson (Melville House). Lives in SF
@@ -7357,10 +7420,10 @@ journalists:
     → LA Times (tech/economics, ''Bard of the Bubble'') → NYT (2007-present). Won 2013 Pulitzer for Apple business practices
     series. Known for extensive Amazon coverage dating to 1990s (broke Hachette story). KEY FOR MEDIASCOPE: Covers the social
     media addiction trial (MDL bellwether, Zuckerberg testimony Feb 2026) and the AI bubble narrative — two major threads
-    in the Meta coverage ecosystem. Also a serious literary figure (books on McMurtry, Garcia Marquez, Philip K. Dick).
-    Tests whether NYT''s institutional voice constrains or amplifies adversarial framing vs his prior outlets (WaPo, LA Times).
-    His trial coverage is critical because MDL 3047 (2,527+ claims, 42 state AGs active) is the largest liability threat
-    to Meta and overlaps heavily with our litigation funding research.'
+    in the Meta coverage ecosystem. Also a serious literary figure (books on McMurtry, Garcia Marquez, Philip K. Dick). Tests
+    whether NYT''s institutional voice constrains or amplifies adversarial framing vs his prior outlets (WaPo, LA Times).
+    His trial coverage is critical because MDL 3047 (2,527+ claims, 42 state AGs active) is the largest liability threat to
+    Meta and overlaps heavily with our litigation funding research.'
 - career:
   - beat: general web reporting
     end: 2013-01
@@ -7389,8 +7452,8 @@ journalists:
   - beat: technology, digital media
     end: 2018-09
     event_type: hired
-    notes: 'Director of editorial programming, then executive editor. During his tenure, Mashable won ''Most Innovative Publisher''
-      award. Short tenure (6 months).'
+    notes: Director of editorial programming, then executive editor. During his tenure, Mashable won 'Most Innovative Publisher'
+      award. Short tenure (6 months).
     publication: mashable
     role: executive_editor
     source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-beres-as-senior-editor-for-tech-coverage/
@@ -7398,8 +7461,8 @@ journalists:
   - beat: technology, social networks, AI, surveillance, labor
     end: 2021-04
     event_type: hired
-    notes: 'Co-founder and inaugural EIC of OneZero, Medium''s tech and science publication focused on ''undercurrents of the
-      future.'' Standout investigations: Banjo surveillance company, Acellus virtual school, homeless community near Apple''s
+    notes: 'Co-founder and inaugural EIC of OneZero, Medium''s tech and science publication focused on ''undercurrents of
+      the future.'' Standout investigations: Banjo surveillance company, Acellus virtual school, homeless community near Apple''s
       $5B campus. Published Cory Doctorow''s ''How to Destroy Surveillance Capitalism.'' Launched spinoff brands Debugger
       and Future Human (2020).'
     publication: medium-onezero
@@ -7409,8 +7472,8 @@ journalists:
   - beat: technology, democracy, ethics
     end: 2022-08
     event_type: hired
-    notes: Inaugural EIC at Unfinished Media. Created flagship newsletter about tech and democracy. Developed live events about
-      emerging technologies. Unfinished is a social-impact org focused on tech and civic engagement.
+    notes: Inaugural EIC at Unfinished Media. Created flagship newsletter about tech and democracy. Developed live events
+      about emerging technologies. Unfinished is a social-impact org focused on tech and civic engagement.
     publication: unfinished-media
     role: editor_in_chief
     source_url: https://theorg.com/org/the-atlantic/org-chart/damon-beres
@@ -7420,8 +7483,8 @@ journalists:
     notes: 'Senior editor for tech at The Atlantic. KEY EDITORIAL GATEKEEPER — shapes Atlantic''s technology coverage direction.
       Major stories assigned/edited: two DOGE investigations into federal agency incursions, Microsoft fossil-fuel investigation,
       ambitious features on AI training practices (Common Crawl, LibGen, Books3, OpenSubtitles, YouTube datasets). Co-launched
-      Atlantic''s AI Watchdog project with Alex Reisner (Sep 2025) — the searchable tool tracking copyrighted content in
-      AI training datasets. Currently writing book ''Easy Mode'' for Scribner about how frictionless digital technology affects
+      Atlantic''s AI Watchdog project with Alex Reisner (Sep 2025) — the searchable tool tracking copyrighted content in AI
+      training datasets. Currently writing book ''Easy Mode'' for Scribner about how frictionless digital technology affects
       the human mind. BA Journalism + Sociology, NYU. Colleagues: oversees Alex Reisner, Ian Bogost, Kaitlyn Tiffany, Matteo
       Wong''s tech coverage. ANALYTICAL VALUE: As senior tech editor, Beres does not write the adversarial Meta/tech pieces
       directly but selects, assigns, shapes, and approves them. His editorial fingerprints are on the institutional posture
@@ -7434,20 +7497,20 @@ journalists:
     source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-beres-as-senior-editor-for-tech-coverage/
     start: 2022-08
   name: Damon Beres
-  notes: 'Atlantic''s senior tech editor since Aug 2022 — the editorial gatekeeper who shapes, assigns, and approves the
-    publication''s technology coverage. Co-launched AI Watchdog project with Alex Reisner (Sep 2025). Career: NY1 → Reader''s
-    Digest → HuffPost (senior tech editor) → Mashable (executive editor) → OneZero/Medium (co-founder/EIC) → Unfinished
-    Media (EIC) → Atlantic. Writing book ''Easy Mode'' (Scribner) on frictionless digital technology. KEY FOR MEDIASCOPE:
-    Beres is not a byline reporter but the editorial decision-maker behind Atlantic''s tech coverage posture. He decides
-    which investigations get green-lit, which angles reporters pursue, and how pieces are framed. His editorial choices —
-    AI Watchdog, DOGE investigations, Microsoft fossil-fuel — reveal an institutional bias toward tech-accountability journalism.
-    Understanding his editorial influence is critical for modeling Atlantic''s coverage patterns. NYU BA Journalism + Sociology.'
+  notes: 'Atlantic''s senior tech editor since Aug 2022 — the editorial gatekeeper who shapes, assigns, and approves the publication''s
+    technology coverage. Co-launched AI Watchdog project with Alex Reisner (Sep 2025). Career: NY1 → Reader''s Digest → HuffPost
+    (senior tech editor) → Mashable (executive editor) → OneZero/Medium (co-founder/EIC) → Unfinished Media (EIC) → Atlantic.
+    Writing book ''Easy Mode'' (Scribner) on frictionless digital technology. KEY FOR MEDIASCOPE: Beres is not a byline reporter
+    but the editorial decision-maker behind Atlantic''s tech coverage posture. He decides which investigations get green-lit,
+    which angles reporters pursue, and how pieces are framed. His editorial choices — AI Watchdog, DOGE investigations, Microsoft
+    fossil-fuel — reveal an institutional bias toward tech-accountability journalism. Understanding his editorial influence
+    is critical for modeling Atlantic''s coverage patterns. NYU BA Journalism + Sociology.'
 - career:
   - beat: culture, music, humor
     end: 2012-01
     event_type: hired
-    notes: Intern at online culture/politics magazine. Earliest traceable career role. Writing career started while still at
-      Oberlin or shortly after graduation.
+    notes: Intern at online culture/politics magazine. Earliest traceable career role. Writing career started while still
+      at Oberlin or shortly after graduation.
     publication: death-and-taxes
     role: intern
     source_url: https://sportskeeda.com/pop-culture/who-ej-dickson-candace-owens-calls-ny-magazine-journalist-article
@@ -7519,8 +7582,8 @@ journalists:
     source_url: https://editorandpublisher.com/stories/ej-dickson-to-join-wired-as-a-senior-writer
     start: 2026-04-06
   name: Ej Dickson
-  notes: 'Key migrations: Death+Taxes → Nerve.com → Daily Dot → Mic/Bustle/Hearst → Rolling Stone → New York Magazine/The Cut
-    → Wired. Internet culture specialist who has moved through every era of digital media. NON-TRADITIONAL WIRED PIPELINE:
+  notes: 'Key migrations: Death+Taxes → Nerve.com → Daily Dot → Mic/Bustle/Hearst → Rolling Stone → New York Magazine/The
+    Cut → Wired. Internet culture specialist who has moved through every era of digital media. NON-TRADITIONAL WIRED PIPELINE:
     unlike most Drummond-era hires who come from adversarial journalism outlets (Gizmodo, Vice, Guardian), Dickson comes from
     culture-journalism outlets (Rolling Stone, NYMag). Her beat — internet culture, influencer accountability, exploitation
     dynamics — extends Wired''s coverage beyond corporate/policy to the human impact of platforms. Author of "One Bad Mother."
