@@ -11438,3 +11438,61 @@ Guardian (Katie McQue) article via Decrypt mirror: "Meta's AI Floods Child Abuse
 **Stats after:** 1249 tests (1249 passed, 2 xfailed), 0 failures. 57 framing device types, 339 patterns, 73 Meta aliases, 173 sample output files.
 
 **Commit:** `2f486d2` — pushed to GitHub.
+
+## 2026-07-03 12:00 PT — Type B: Journalist Research (Ana Swanson full career expansion)
+
+### Focus
+Ana Swanson — NYT trade policy reporter in Washington Bureau. Had only 2 career entries (WaPo + NYT with incorrect dates) — expanded to 6 entries covering her complete 20-year career arc from China English teacher to Pulitzer Prize-winning NYT journalist. High analytical value: she's the NYT's primary voice on chip export controls and semiconductor supply chains that directly underpin Meta's AI capex narrative.
+
+### What Changed
+
+**Ana Swanson profile expansion (2 → 6 career entries):**
+
+| # | Publication | Dates | Role | Source |
+|---|-----------|-------|------|--------|
+| 1 | Dell English International | May 2006 – Jul 2007 | English teacher (China) | alumnius.net |
+| 2 | JLM Pacific Epoch | Jul 2008 – Mar 2011 | China equity research analyst | alumnius.net |
+| 3 | China Economic Review | Mar 2011 – Apr 2013 | Writer → Deputy editor → EIC (Shanghai) | anaclaireswanson.com, NYTco.com, CFR bio |
+| 4 | JL Warren Capital | Aug 2013 – Oct 2014 | China economy analyst | CNBC Mar 2014, alumnius.net |
+| 5 | Washington Post | Oct 2014 – Sep 2017 | Staff writer + Know More blog editor | NYTco.com, TalkingBizNews, TheOrg.com |
+| 6 | New York Times | Sep 2017 – present | Trade policy reporter, DC bureau | NYTco.com, TalkingBizNews |
+
+**Date corrections:**
+- WaPo start: Jan 2016 → Oct 2014 (2+ year error in original)
+- NYT start: Jan 2018 → Sep 2017 (4-month error in original)
+
+**Key discoveries:**
+1. **8-year China residency (2006-2014)** — lived in China as teacher, analyst, and EIC. Mandarin speaker. Rare dual-sided trade expertise: understands US-China dynamics from both the Chinese and American policy sides.
+2. **2026 Pulitzer Prize for Investigative Reporting** — team member on Trump self-enrichment/cronyism investigation. Co-authored Howard Lutnick data center conflicts piece (Nov 2025) with Eric Lipton, Michael Rothfeld, David Yaffe-Bellany.
+3. **JL Warren Capital CNBC appearance (Mar 25, 2014)** — estimated Alibaba IPO at ~$180B. Demonstrates pre-journalism analytical rigor.
+4. **China Economic Review EIC** — managed editorial direction, published 15+ cover features (income inequality, SOEs, water crisis, censorship). Acknowledged in Bill Dodson's "China Fast Forward" for encouraging energy/cleantech coverage.
+5. **WaPo Know More blog** — data visualization and viral features (China cement, world maps, pi art). This explains her data-driven rather than adversarial framing style.
+6. **Education:** Northwestern BA Cultural Anthropology (2000-2004), U Iowa Chinese/Economics non-degree (2005), Hopkins-Nanjing Center Certificate (2007-2008), Johns Hopkins SAIS MA (2013-2014).
+7. **Affiliations:** Co-runs International China Journalists Association, WEF Agenda Contributor, CFR panelist, regular Marketplace contributor, appearances on CNN/MSNBC/PBS NewsHour.
+
+**Notes section rewrite:** Added comprehensive analytical value assessment for MediaScope — Swanson as macroeconomic/supply-chain framing baseline vs adversarial tech-culture reporters like Tiku or Horwitz.
+
+**Migration count:** 380 → 381 (README.md updated).
+
+### Sources Consulted
+- NYTco.com hire announcement (`nytco.com/press/ana-swanson-joins-the-times/`)
+- National Press Foundation bio (`nationalpress.org`)
+- CFR panel bio (`cdn.cfr.org`)
+- UCSD panel bio (`china.ucsd.edu`)
+- TalkingBizNews hire notice (`talkingbiznews.com`)
+- TheOrg.com profile (`theorg.com`)
+- alumnius.net LinkedIn data (SAIS Class of 2014, University of Iowa Class of 2005)
+- anaclaireswanson.com personal portfolio site (70+ articles spanning 2012-2022)
+- Pulitzer.org 2026 Investigative Reporting finalists page
+- NYTco.com 2026 Pulitzer Prize Remarks transcript (Joe Kahn, Dick Stevenson)
+- Bill Dodson, "China Fast Forward" acknowledgments page (China Economic Review EIC mention)
+- CNBC video gallery (Alibaba IPO analyst appearance, Mar 25 2014)
+- Motley Fool podcast transcript (AI chip smuggling interview, Aug 28 2024)
+- Muck Rack journalist profile
+- World Economic Forum Agenda Contributor page
+- Techmeme aggregation pages (Mar 2025, Dec 2024 bylines)
+
+### Tests
+1249 passed, 2 xfailed (unchanged). 75 structural consistency guards intact.
+
+---
