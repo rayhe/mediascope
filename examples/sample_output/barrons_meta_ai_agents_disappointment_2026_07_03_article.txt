@@ -1,0 +1,22 @@
+Barron's
+Published: July 3, 2026
+Author: Staff (financial analysis)
+Headline: Meta AI Fears Ease Despite Zuckerberg's Disappointment in Agents
+Alt headline: What Meta Said About Slow Progress on AI Agents
+URL: https://www.barrons.com/articles/meta-stock-ai-agents-zuckerberg-1d9a080a
+
+Meta Platforms CEO Mark Zuckerberg is disappointed that artificial-intelligence agents haven't developed faster. But that doesn't mean the social-media company is dropping out of the AI race.
+
+Zuckerberg said AI agents—software that can carry out complex tasks autonomously—hadn't accelerated in the way Meta executives had forecast but the company expects a more significant payoff from its investment in the technology in the coming months, Reuters reported, citing an internal company meeting.
+
+Meta didn't immediately respond to a request for comment early on Friday. However, Meta's chief AI officer Alexandr Wang responded in a post on social-media site X, appearing to indirectly confirm the remarks.
+
+"First, Mark was clearly talking about the industry's progress on agentic capabilities on the whole," wrote Wang.
+
+"But, while we're on the topic: Our next Muse Spark update is coming soon. Big improvements in coding and agentic capabilities to be more competitive with other leading models." Wang wrote.
+
+That could soothe concerns that Meta is preparing to become the first of the big U.S. tech companies to cut back on its AI spending, following a 12% slide in its shares this year so far through to Thursday's close.
+
+Meta plans to spend roughly $135 billion on its data-center build-out this year, leading investors to fret over its ability to generate returns on the massive investment. So far the company has failed to launch a cutting-edge foundation model to rival OpenAI's ChatGPT series, Google's Gemini, and Anthropic's Claude.
+
+Speculation over a pivot in Meta's strategy mounted this week after Bloomberg reported that the company might launch a cloud business to sell excess AI computing capacity. Meta declined to comment on the report but Zuckerberg has previously suggested it could be a recourse if it turns out the company has overspend on its infrastructure.

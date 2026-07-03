@@ -4875,6 +4875,60 @@ _USAGE_DISMISSAL_UNDERCUT_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["usage_dismissal_undercut"] = _USAGE_DISMISSAL_UNDERCUT_PATTERNS
 
 
+# ---------------------------------------------------------------------------
+# Financial reassurance: editorial device in financial journalism where
+# negative operational news is immediately reframed as a positive market
+# signal.  Distinct from corporate_reassurance_undercut (which catches
+# PR damage control language that the journalist then undercuts).  Here
+# the journalist *is* the reassuring voice, converting bad news into a
+# buying signal.
+#
+# Examples:
+#   "That could soothe concerns that Meta is preparing to cut back..."
+#   "Despite the disappointment, investors took comfort in..."
+#   "Shares recovered after analysts said the miss was priced in."
+#   "The selloff eased as the company signalled no change in spending."
+#   "...allaying fears of a pullback in AI investment."
+# ---------------------------------------------------------------------------
+_FINANCIAL_REASSURANCE_PATTERNS: list[re.Pattern] = [
+    # "could soothe/ease/allay concerns/fears/worries"
+    re.compile(
+        r"\b(?:could|may|might|should|would|is expected to|appeared? to|seems? to|helped?)\s+"
+        r"(?:soothe|ease|allay|assuage|quell|calm|temper|mitigate|alleviate|dispel)\s+"
+        r"(?:concerns?|fears?|worries?|anxiet(?:y|ies)|doubts?|unease|jitters?|nerves?|"
+        r"uncertainty|apprehension)",
+        re.IGNORECASE,
+    ),
+    # "despite [negative], [positive market signal]"  —  financial despite-pivot
+    re.compile(
+        r"\bdespite\s+(?:the\s+)?(?:disappointment|setback|miss|shortfall|decline|slide|"
+        r"downturn|slowdown|drop|loss|warning|stumble|headwind|delay|failure)\b"
+        r".{5,120}?"
+        r"\b(?:recover(?:ed|ing|s)?|rebound(?:ed|ing|s)?|eas(?:ed|ing|es)|"
+        r"rally|rallied|rallying|stabliz(?:ed|ing)|held|holding|"
+        r"took comfort|priced in|already (?:baked|priced|reflected) in)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "investors/analysts [positive-reaction verb]"
+    re.compile(
+        r"\b(?:investors?|analysts?|traders?|the (?:market|street|stock))\s+"
+        r"(?:took comfort|were? reassured|shrugged off|looked past|"
+        r"appeared? (?:un)?fazed|brushed aside|bet (?:that|on)|"
+        r"are betting|welcomed)\b",
+        re.IGNORECASE,
+    ),
+    # "easing/soothing fears" as participial — headline-style
+    re.compile(
+        r"\b(?:easing|soothing|allaying|quelling|calming|tempering|dispelling)\s+"
+        r"(?:fears?|concerns?|worries?|doubts?|jitters?|anxiet(?:y|ies)|"
+        r"investor (?:fears?|concerns?|worries?))\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["financial_reassurance"] = _FINANCIAL_REASSURANCE_PATTERNS
+
+
 # --- Delayed defense ---
 # Structural post-pass: detects when the subject company's response
 # or defense first appears in the last 35% of the article.  This is
@@ -4974,8 +5028,8 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 50 pattern-matched device types plus 6 structural
-    post-pass types (56 total).
+    Scans for 51 pattern-matched device types plus 6 structural
+    post-pass types (57 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
@@ -5003,6 +5057,7 @@ def detect_framing_devices(
     slippery_slope, sovereignty_framing, straw_man,
     taxonomy_framing, timeline_implication, two_tier_treatment,
     usage_dismissal_undercut,
+    financial_reassurance,
     and worker_replacement_irony.
 
     Structural post-pass (6): delayed_defense, kicker_framing,

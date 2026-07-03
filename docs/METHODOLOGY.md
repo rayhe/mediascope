@@ -179,7 +179,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 56 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (40 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 57 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (41 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -243,6 +243,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Usage Dismissal Undercut** | Corporate minimization of a restriction's impact by citing low average usage ("most users don't…"), presented either to soften the restriction or as a claim the journalist then challenges. A specific subtype of corporate reassurance undercut tailored to rate-limit and paywall coverage | "most [users/people] don't [use/need/hit/exceed]" near "but/however/yet"; "intended/designed for power users" | Android Authority Meta Conversation Focus paywall (Jul 2, 2026) — Meta tells The Verge "most people don't use Conversation Focus for anywhere near three hours a month," framing the 3h cap as generous, followed by "the subscription is intended for power users." The author then undercuts with "But introducing a subscription limit on a feature that runs entirely on hardware you've already paid for sets an uncomfortable precedent" |
 | **Assumed Consensus** | Presents a contested or unsupported claim as self-evident common knowledge, skipping the burden of proof. Constructions like "People hate X", "Everyone knows X", "Nobody wants X" position the audience as already agreeing with the author's stance before any evidence is offered | "People hate/love/want"; "Everyone knows/agrees"; "Nobody wants/trusts"; "It's well known that"; "Goes without saying"; "Needless to say" | Gizmodo Meta glasses subscription article (Jul 2026) — "People hate Meta's smart glasses for quite a few reasons" presents consumer hatred as self-evident fact with zero citation or evidence. Distinct from loaded_language (pejorative vocabulary) and emotional_appeal (sympathy/outrage deployment) |
 | **Editorial Aside** | Breaking journalistic register to address the reader directly with sarcastic or solidarity-building interjections that create an in-group frame between author and reader, positioning the subject as an outsider deserving scrutiny | "brace yourself"; "buckle up"; "spoiler alert"; "let's be honest"; "let's face it"; "something tells me"; "call me skeptical"; "(yes, really)"; "(sigh)" | Gizmodo Meta glasses subscription article (Jul 2026) — "brace yourself" and "something tells me" break the journalistic register to editorialize via direct reader address. Distinct from loaded_language (vocabulary choice) and rhetorical_question (interrogative form) |
+| **Financial Reassurance** | Editorial device in financial journalism where negative operational news is immediately reframed as a positive market/investor signal. The journalist — not a quoted source — converts bad news into a buying or holding signal. Distinct from corporate_reassurance_undercut (which catches PR damage control language the journalist then undermines) because here the reassuring voice is the journalist's own editorial framing | "could soothe/ease/allay concerns/fears/worries"; "despite [negative], [positive market signal]" (despite-pivot); "investors/analysts [took comfort/shrugged off/looked past]"; "easing/soothing/allaying fears/concerns" (participial headline-style) | Barron's Meta AI Agents Disappointment (Jul 3, 2026) — "That could soothe concerns that Meta is preparing to become the first of the big U.S. tech companies to cut back on its AI spending." Converts Zuckerberg's admission of AI agent disappointment + Alexandr Wang's promotional X post into investor comfort, without sourcing any analyst. The reassurance frame is entirely editorial, not attributed to any market participant |
 
 #### Structural Devices (Post-Pass)
 
@@ -256,6 +257,7 @@ These devices are detected through structural analysis of the article rather tha
 | **Trend Bundling** | Grouping a target company's action with 3+ other companies doing similar things to normalise or amplify the narrative | Scans for transition phrases ("Other companies have also…," "Similarly, X…," "X also walked back…") and paragraph-level company bundles. Fires only when 3+ distinct companies are mentioned in comparison/bundling contexts. Individual comparisons are normal reporting; stacking them is an editorial framing technique that imports an industry-wide pattern onto a single company's story. Discovered from Fast Company Meta AI draft reversal article (2026-06-25). |
 | **Social Proof Amplification** | Citing reaction counts (likes, thumbs-up, hearts, upvotes) to convert an individual opinion into collective sentiment, lending democratic authority to editorial framing | Detects patterns like "received X likes/upvotes," "garnered X reactions," "thousands liked/shared/retweeted," "went viral with X comments." Fires when numeric reaction counts are cited to amplify the perceived weight of a statement or sentiment. Individual quotes are opinions; citing their virality is a framing technique that manufactures consensus. |
 | **Delayed Defense** | The target company's first response or rebuttal appears in the last 35% of the article, after the reader has absorbed the accusatory framing without counter-narrative. Burying the defense is a well-known editorial technique: most readers form their opinion before reaching the other side | Finds the earliest corporate-response pattern (company/spokesperson said, in a statement, declined to comment) and checks if it appears after the 65% mark of the article text. Requires minimum 500 characters (short articles lack meaningful positional structure). |
+| **Financial Reassurance** | Editorial device in financial journalism where negative operational news is immediately reframed as a positive market/investor signal. The journalist — not a quoted source — converts bad news into a buying or holding signal. Distinct from corporate_reassurance_undercut (which catches PR damage control language) because here the reassuring voice is the journalist's own | "could soothe/ease/allay concerns/fears/worries"; "despite [negative], [positive market signal]"; "investors/analysts [took comfort/shrugged off/looked past]"; "easing/soothing/allaying fears/concerns" (participial headline-style) | Barron's Meta AI Agents Disappointment (Jul 3, 2026) — "That could soothe concerns that Meta is preparing to become the first of the big U.S. tech companies to cut back on its AI spending." Converts Zuckerberg's internal admission of AI agent disappointment + Alexandr Wang's promotional X post into investor comfort, without sourcing any analyst. The reassurance frame is entirely editorial |
 
 ### 4.2 Attribution Verb Analysis
 
@@ -824,7 +826,7 @@ The following table documents all 59 entity clusters shipped with MediaScope, or
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
-| **Meta** | 72 | Meta, Meta Platforms, Facebook, Instagram, WhatsApp, Threads (+66 more) |
+| **Meta** | 73 | Meta, Meta Platforms, Facebook, Instagram, WhatsApp, Threads (+67 more) |
 | **Google** | 11 | Alphabet, Google, YouTube, DeepMind, Waymo, Sundar Pichai (+5 more) |
 | **Apple** | 11 | Apple, iPhone, iPad, Tim Cook, John Ternus, Apple Intelligence (+5 more) |
 | **Amazon** | 9 | Amazon, AWS, Alexa, Jeff Bezos, Andy Jassy, Amazon Web Services (+3 more) |
@@ -846,7 +848,7 @@ The following table documents all 59 entity clusters shipped with MediaScope, or
 | **TSMC** | 4 | TSMC, Taiwan Semiconductor, C.C. Wei, Mark Liu |
 | **CoreWeave** | 2 | CoreWeave, Mike Intrator |
 | **Nebius** | 2 | Nebius, Nebius Group |
-| **AI Infrastructure** | 5 | Scale AI, Alexandr Wang, Covalen, Character.AI, Character AI |
+| **AI Infrastructure** | 4 | Scale AI, Covalen, Character.AI, Character AI |
 
 #### Consumer Tech & Platforms
 

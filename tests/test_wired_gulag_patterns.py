@@ -67,9 +67,9 @@ class TestKeystrokeMonitoringSurveillance:
 class TestScaleAIEntity:
     """Verify Scale AI is detected under AI Infrastructure cluster (not Meta).
 
-    Scale AI is an independent AI data company (Alexandr Wang, CEO).
-    Previously misclustered under Meta — fixed Jul 2026 after Wired
-    Cannes contractors article surfaced the misclassification.
+    Scale AI is an independent AI data company.  Alexandr Wang, its
+    founder, became Meta's chief AI officer in 2026 and is now
+    clustered under Meta rather than AI Infrastructure.
     """
 
     def test_scale_ai_detected(self):
@@ -80,12 +80,17 @@ class TestScaleAIEntity:
         assert any("Scale AI" in t for t in matched_texts)
 
     def test_scale_ai_with_alexandr_wang(self):
+        """Wang is now Meta's chief AI officer — clustered under Meta."""
         text = "Scale AI founder Alexandr Wang became Meta's chief AI officer."
         entities = detect_entities(text)
+        # Scale AI still in AI Infrastructure
         ai_infra_entities = [e for e in entities if e.cluster == "AI Infrastructure"]
-        matched_texts = [e.entity for e in ai_infra_entities]
-        assert any("Scale AI" in t for t in matched_texts)
-        assert any("Alexandr Wang" in t for t in matched_texts)
+        matched_texts_ai = [e.entity for e in ai_infra_entities]
+        assert any("Scale AI" in t for t in matched_texts_ai)
+        # Alexandr Wang now in Meta cluster
+        meta_entities = [e for e in entities if e.cluster == "Meta"]
+        matched_texts_meta = [e.entity for e in meta_entities]
+        assert any("Alexandr Wang" in t for t in matched_texts_meta)
 
 
 class TestGulagArticleContext:
