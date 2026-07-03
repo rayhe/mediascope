@@ -184,7 +184,7 @@ print(f"Portable: {decomp.portable_bias_score:.3f}")
 
 ## Starter Data
 
-MediaScope ships with career data for **121 journalists** across the 5 starter publications plus notable feeder outlets (The Verge, BuzzFeed News, Platformer, Reuters, Recode, WSJ, Bloomberg, The Telegraph, New Scientist, Gizmodo, The Daily Beast, Politico, Consumer Reports, The Information, and 155+ others). 118 of these have multi-publication careers suitable for migration analysis.
+MediaScope ships with career data for **121 journalists** across the 5 starter publications plus notable feeder outlets (The Verge, BuzzFeed News, Platformer, Reuters, Recode, WSJ, Bloomberg, The Telegraph, New Scientist, Gizmodo, The Daily Beast, Politico, Consumer Reports, The Information, and 155+ others). 120 of these have multi-publication careers suitable for migration analysis.
 
 ### High-Value Migration Events
 
