@@ -11138,3 +11138,36 @@ Guardian (Katie McQue) article via Decrypt mirror: "Meta's AI Floods Child Abuse
 - https://www.nytimes.com/by/ej-dickson (no results — confirmed left NYMag)
 - https://muckrack.com, LinkedIn profiles
 - https://tomorrowspublisher.com / CJR layoff reporting (Tiku WaPo layoff)
+
+---
+
+### 2026-07-03 03:00 PT — Type B: Journalist Research (Robert Booth profile expansion)
+
+**Focus:** Robert Booth — Guardian's current UK Technology Editor. Previously had only 2 career entries for a 25+ year career. Selected as highest-priority thin profile because he directly controls Guardian's Meta/tech coverage.
+
+**Major correction:** Previous entry recorded Booth as a "24+ year Guardian veteran who joined ~2000." Research proves this is wrong — he was at the Architects' Journal in 2000-2001 and was editor of Building Design magazine by 2004-2005. Guardian career started ~2006, not 2000.
+
+**Discoveries:**
+1. **Architects' Journal (AJ) — reporter, Feb 2000 – ~mid 2001:** Multiple pages of bylines on architectsjournal.co.uk/author/robert-booth. Covered RIBA politics, CABE design reviews, Foster + Partners, Lord Rogers, Millennium Bridge, Crystal Palace, Stirling Prize, PFI, urban regeneration.
+2. **Building Design (BD) — editor, ~2002–~2005:** "BD editor Robert Booth" introduced speakers at 2004 Young Architect of the Year Awards (documented in "An Architect's Guide to Fame," pub. 2005). Editorials cited in encyclopedia.com (Zaha Hadid entry): Oct 15, 2004 and Jan 21, 2005. BD building studies bylines through March 2005. media.info directory confirms Editor title.
+3. **Guardian start corrected to ~2006:** Earliest confirmed Guardian byline via ArchNewsNow (~2008-2009 context). O'Donnell + Tuomey site confirms Guardian byline by July 2011. "Social Affairs Correspondent" title confirmed by Anewstip and BroadwayStars aggregator.
+4. **Social handles added:** Twitter/X @robert_booth, LinkedIn in/robert-booth-95b30525/ (Anewstip)
+5. **Recent tech coverage enriched from BuzzSumo (2025-2026):** FCA Palantir deal, Met police Palantir contract, Google DeepMind unions, Roblox child safety, Anthropic Nobel prediction, AI Tripadvisor summaries, digital ID cards (with Dan Milmo)
+
+**Changes:** Career entries expanded from 2 → 4 (AJ, BD, Guardian reporter, Guardian tech editor). Notes rewritten to correct factual error and highlight unique trade press → broadsheet pipeline. Alex Hern departure notes updated to reflect Booth's trade press background.
+
+**Analytical value:** Booth is now the only journalist in our dataset who edited a specialist trade publication before moving to a national broadsheet. His AJ→BD→Guardian pipeline is a classic UK journalism career ladder.
+
+**Commit:** `736bdd4` — pushed to GitHub.
+
+**Sources:**
+- https://www.architectsjournal.co.uk/author/robert-booth (multiple paginated results)
+- https://media.info/magazines/titles/bd-building-design (directory listing)
+- https://media.info/people/robert-booth (person listing)
+- encyclopedia.com Zaha Hadid entry (cites BD editorials Jan 21 & Feb 4, 2005)
+- ndl.ethernet.edu.et — "An Architect's Guide to Fame" (2005 book, ref. 2004 conference)
+- bdonline.co.uk/building-studies/page/54 (BD building studies bylines)
+- anewstip.com Robert Booth profile (@robert_booth, LinkedIn)
+- broadwaystars.com (aggregated Guardian bylines as "Social Affairs Correspondent")
+- odonnell-tuomey.ie (Guardian byline July 2011 confirmed)
+- orwellfoundation.com/judge/robert-booth/ (existing source, bio wording)
