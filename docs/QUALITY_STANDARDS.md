@@ -207,7 +207,7 @@ Every article analysis that introduces a toolkit correction must include:
 4. **Gap analysis** — why the gap exists and which specific framing devices or detection failures caused it
 5. **Regression tests** — at least one test per correction to prevent future regressions
 
-This ensures the correction pipeline is validated against real articles, not synthetic examples. All 83 annotated articles in `examples/sample_output/` follow this pattern.
+This ensures the correction pipeline is validated against real articles, not synthetic examples. All 86 annotated articles in `examples/sample_output/` follow this pattern.
 
 ## 8. Emotional Language Validation
 
@@ -337,12 +337,89 @@ When performing cross-publication same-event comparisons (the most powerful evid
 
 ### 10.2 Validated Comparisons in the Corpus
 
-The `examples/sample_output/` directory contains three validated same-event comparisons:
+The `examples/sample_output/` directory contains validated same-event comparisons across 9 distinct event clusters, ranging from 2-article pairs to 4-article multi-outlet analyses:
 
-| Event | Articles | Tone Gap | Framing Gap |
+#### Tier 1: Explicit Cross-Analysis Files
+
+These comparisons have dedicated cross-analysis documents with side-by-side metric tables:
+
+| Event | Articles | Tone Gap | Framing Gap | File |
+|---|---|---|---|---|
+| MCI data exposure (Jun 22) | Wired (−0.60) vs Reuters (−0.10) | 0.50 | 7 vs 1 | `wired_vs_reuters_mci_data_exposure_2026_06_22_cross_analysis.md` |
+| Glasses launch (Jun 23) | Wired (−0.15) vs Gizmodo (+0.10) | 0.25 | 10 vs 0 | `gizmodo_vs_wired_glasses_launch_2026_06_23_analysis.md` |
+| Zuckerberg town hall (Jul 2–3) | Reuters (+0.05) vs TechCrunch (−0.30) vs Barron's (+0.35) | 0.65 | 0 vs 5 vs 3 | `techcrunch_zuckerberg_ai_agents_town_hall_2026_07_02_analysis.md` |
+
+#### Tier 2: Same-Event Article Clusters
+
+These share a common underlying event and can be compared via their individual analysis files:
+
+| Event | Outlets | Tone Range | Notes |
 |---|---|---|---|
-| MCI data exposure (Jun 22) | Wired (−0.60) vs Reuters (−0.10) | 0.50 | 7 vs 1 |
-| Glasses launch (Jun 23) | Wired (−0.15) vs Gizmodo (+0.10) | 0.25 | 10 vs 0 |
-| Arena prediction markets (Jun 23) | Reuters (+0.05) vs Engadget (−0.70) | 0.75 | — |
+| Wynn-Williams lawsuit (Jun 25–26) | Guardian (−0.50), Engadget (−0.65), Fast Company (−0.71) | 0.21 | Legalistic → editorial sarcasm gradient across 3 outlets |
+| Brain2Qwerty research (Jun 30) | Gizmodo (+0.65), Register (+0.60 raw / −0.35 manual) | 1.00 | VADER positive-bias failure case — same paper, opposite editorial stances |
+| Child safety features study (Jun 29) | NYT (−0.05), Engadget (moderate-negative) | ~0.30 | Institutional reporting vs tech-press accountability framing |
+| Arena / prediction markets (Jun 23–28) | NYT (2 articles), Gizmodo, AV Club, Kotaku | wide | 5 articles, same product, escalating editorial hostility over time |
+| Gemini compute limits (Jun 28–Jul 1) | Reuters (neutral wire), Memeburn (tech blog) | ~0.40 | Wire vs blog framing of Google restricting Meta's Gemini access |
+| Applied AI reorg (Jun 13–17) | Wired (4 articles), TechTimes | variable | Longitudinal cluster — same event arc covered repeatedly with escalating loaded language |
 
-These demonstrate that identical facts can produce 0.25–0.75 point tone gaps and 6–10x framing device differentials across publications, making the editorial framing contribution directly observable.
+#### Statistical Summary
+
+Across all validated comparison clusters:
+- **Tone gaps** range from 0.21 (Wynn-Williams lawsuit, all outlets editorially negative) to 1.00 (Brain2Qwerty, genuinely opposite editorial stances on same research paper)
+- **Framing device differentials** range from 1:1 (both outlets use similar techniques) to 10:0 (one outlet deploys extensive framing, the other stays neutral)
+- **Wire-service baseline** (Reuters/AP) anchors at ±0.10 in 100% of comparison clusters where included, validating its use as a neutral reference
+- **Genre-controlled comparisons** (wire vs magazine vs blog vs financial) produce the cleanest signal — same facts, different editorial modes
+
+### 10.3 N-Way Cross-Outlet Comparisons
+
+Single-pair comparisons (A vs B) establish that editorial framing exists. **N-way comparisons** (3+ outlets covering the same event) are more powerful because they reveal the *spectrum* of editorial responses and isolate the framing contribution of each outlet's editorial mode.
+
+#### Requirements
+
+1. **Minimum 3 outlets.** Two outlets can show a gap; three or more can show a gradient and identify which outlet is the outlier.
+
+2. **Include at least one wire service.** The wire baseline anchors the neutral reading. Without it, the comparison shows relative differences between editorial outlets but cannot establish the absolute framing contribution of each.
+
+3. **Include different editorial modes.** The analytical value of N-way comparisons comes from mode diversity. A comparison of three tech blogs covering the same event reveals less than wire + financial + tech-editorial covering it. Validated editorial modes:
+   - **Wire service** (Reuters, AP): neutral attribution, minimal framing
+   - **Financial analysis** (Barron's, Barchart): investor-oriented, stock-price anchored
+   - **Tech editorial** (TechCrunch, Engadget, Gizmodo): industry-narrative, editorial voice
+   - **Investigative magazine** (Wired, Atlantic): long-form, maximum framing density
+   - **General newspaper** (NYT, Guardian): institutional accountability posture
+
+4. **Present results in a comparison matrix.** The seven-dimension comparison (§10.1, point 4) should be presented in a single table with one row per outlet, enabling visual inspection of the gradient.
+
+#### Discovery: Cross-Publication Import
+
+N-way comparisons revealed a framing device invisible in single-pair analysis: **cross-publication import**. This occurs when a later article references an earlier outlet's loaded characterization as settled fact, laundering editorial framing through consensus attribution.
+
+**Validated example:** TechCrunch (Jul 2, 2026) wrote "Several reports have depicted the overhaul as a soul-crushing gulag" — importing Wired's editorially loaded "gulag" characterization as consensus rather than attributing it to a single outlet's editorial choice. This framing device is detectable only when the analyst has already analyzed the source article (Wired, Jun 16) and recognizes the borrowed language.
+
+**Detection patterns** (`cross_publication_import` framing device type):
+- "several/multiple/other reports have described/depicted..." (vague collective attribution)
+- "widely/commonly described/depicted as..." (consensus-laundering adverbs)
+- "what [publication/reporters/critics] have called..." (indirect import)
+
+Cross-publication import is distinct from `self_referential_investigation` (same publication citing its own prior reporting) and `anonymous_authority` (unnamed individual sources).
+
+### 10.4 Longitudinal Same-Event Clusters
+
+Some events generate coverage over days or weeks, not a single news cycle. These **longitudinal clusters** expose how editorial framing escalates, compounds, or decays over time — a dimension invisible in single-day comparisons.
+
+#### Requirements
+
+1. **Same underlying event.** All articles must trace to the same root event (reorganization, lawsuit filing, product launch), not merely the same topic.
+2. **Timeline tracking.** Note publication date for each article and track when new editorial language first appears vs. when it becomes consensus.
+3. **Framing escalation detection.** Compare framing device density across the timeline. If loaded language increases in later articles without new factual developments, the escalation is editorial, not event-driven.
+4. **Cross-outlet framing propagation.** Track when characterizations coined by one outlet appear in later articles by other outlets (cross-publication import). This distinguishes viral editorial framing from independent editorial judgment.
+
+#### Validated Example: Applied AI Reorg (Jun 13–17, 2026)
+
+| Date | Outlet | Key Language | New? |
+|---|---|---|---|
+| Jun 13 | Wired | "employee revolt," "hackathon" framing | First use |
+| Jun 16 | Wired | "soul-crushing," "gulag" | Escalation |
+| Jun 16 | Wired | "atrocious" (Bosworth quote, headline-promoted) | Selective quotation |
+| Jun 17 | TechTimes | "gulag" imported from Wired | Cross-pub import |
+
+The "gulag" characterization, originated by Wired on Jun 16, propagated to TechTimes within 24 hours and to TechCrunch within 16 days (Jul 2) — demonstrating how editorial framing originating at one outlet becomes industry consensus through repetition and cross-publication import.

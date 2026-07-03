@@ -1676,3 +1676,71 @@ class TestEntityClusterConsistency:
             f"Alias count mismatches in METHODOLOGY.md §15.3:\n"
             + "\n".join(mismatches)
         )
+
+
+
+class TestAnnotatedArticleCountConsistency:
+    """Guards: annotated article count in QUALITY_STANDARDS.md matches disk.
+
+    QUALITY_STANDARDS.md §7 references the number of annotated articles in
+    examples/sample_output/.  This count drifts silently whenever a Type A
+    iteration adds a new article analysis — this test catches the drift.
+
+    Added: 2026-07-03 15:00 PT, Type D iteration.
+    """
+
+    def test_quality_standards_annotated_article_count(self):
+        """QUALITY_STANDARDS.md annotated article count matches actual files."""
+        # Count *_analysis.md files on disk
+        sample_dir = _REPO_ROOT / "examples" / "sample_output"
+        actual = len(list(sample_dir.glob("*_analysis.md")))
+
+        # Extract stated count from QUALITY_STANDARDS.md
+        doc = (_REPO_ROOT / "docs" / "QUALITY_STANDARDS.md").read_text()
+        match = re.search(r"All (\d+) annotated articles", doc)
+        assert match, (
+            "QUALITY_STANDARDS.md missing 'All N annotated articles' pattern. "
+            "Expected in §7 Scoring Calibration Validation section."
+        )
+        stated = int(match.group(1))
+        assert stated == actual, (
+            f"QUALITY_STANDARDS.md says {stated} annotated articles but "
+            f"examples/sample_output/ has {actual} *_analysis.md files. "
+            f"Update the count in §7."
+        )
+
+    def test_same_event_cluster_count(self):
+        """QUALITY_STANDARDS.md same-event cluster count matches §10.2 tables."""
+        doc = (_REPO_ROOT / "docs" / "QUALITY_STANDARDS.md").read_text()
+        match = re.search(r"(\d+) distinct event clusters", doc)
+        assert match, (
+            "QUALITY_STANDARDS.md missing 'N distinct event clusters' pattern. "
+            "Expected in §10.2 Validated Comparisons section."
+        )
+        stated = int(match.group(1))
+
+        # Count data rows in the Tier 1 table (rows starting with "| "
+        # that contain a date pattern like "(Jun 22)" or "(Jul 2–3)")
+        tier1_section = doc.split("Tier 2")[0]
+        tier1_section = tier1_section.split("Tier 1")[1] if "Tier 1" in tier1_section else tier1_section
+        tier1_count = len(re.findall(
+            r"^\| (?!Event|---|File)",
+            tier1_section,
+            re.MULTILINE,
+        ))
+
+        # Count data rows in the Tier 2 table
+        tier2_start = doc.split("Tier 2")[1] if "Tier 2" in doc else ""
+        tier2_section = tier2_start.split("Statistical Summary")[0] if "Statistical Summary" in tier2_start else tier2_start
+        tier2_count = len(re.findall(
+            r"^\| (?!Event|---|Notes|Outlets)",
+            tier2_section,
+            re.MULTILINE,
+        ))
+
+        total_clusters = tier1_count + tier2_count
+        assert stated == total_clusters, (
+            f"QUALITY_STANDARDS.md claims {stated} event clusters but "
+            f"Tier 1 ({tier1_count}) + Tier 2 ({tier2_count}) tables "
+            f"document {total_clusters} clusters. Update the stated count."
+        )
