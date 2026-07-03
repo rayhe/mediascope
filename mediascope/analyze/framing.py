@@ -1026,6 +1026,35 @@ _LITIGATION_FRAMING_PATTERNS: list[re.Pattern] = [
     ),
 ]
 
+# Cross-publication framing import: when an article references another
+# outlet's characterization as settled background fact rather than
+# attributed opinion.  E.g. "Several reports have depicted X as Y" imports
+# another outlet's editorial judgment without naming the source, laundering
+# opinion into apparent consensus.
+_CROSS_PUBLICATION_IMPORT_PATTERNS: list[re.Pattern] = [
+    # "several/multiple/other reports have described/depicted"
+    re.compile(
+        r"(?:several|multiple|other|previous|earlier|prior|numerous)\s+"
+        r"(?:investigative\s+)?(?:reports?|articles?|investigations?|pieces?|stories)\s+"
+        r"(?:have\s+)?(?:described|depicted|characterized|labeled|labelled|"
+        r"called|dubbed|termed|portrayed|painted|shown|revealed|exposed|documented)\b",
+        re.IGNORECASE,
+    ),
+    # "widely/commonly described/depicted as"
+    re.compile(
+        r"(?:widely|commonly|frequently|often|repeatedly|variously|routinely)\s+"
+        r"(?:described|depicted|characterized|labeled|labelled|called|dubbed|"
+        r"termed|portrayed|referred\s+to|reported|seen|viewed|regarded)\s+as\b",
+        re.IGNORECASE,
+    ),
+    # "what [publication/reporters/critics] have called"
+    re.compile(
+        r"what\s+(?:\w+\s+){0,3}(?:have\s+)?(?:called|dubbed|termed|described\s+as|"
+        r"labeled|labelled|characterized\s+as)\b",
+        re.IGNORECASE,
+    ),
+]
+
 # Map device type to its pattern list
 _DEVICE_PATTERNS: dict[str, list[re.Pattern]] = {
     "guilt_by_association": _GUILT_BY_ASSOCIATION_PATTERNS,
@@ -1042,6 +1071,7 @@ _DEVICE_PATTERNS: dict[str, list[re.Pattern]] = {
     "power_asymmetry": _POWER_ASYMMETRY_PATTERNS,
     "ceo_personalization": _CEO_PERSONALIZATION_PATTERNS,
     "litigation_framing": _LITIGATION_FRAMING_PATTERNS,
+    "cross_publication_import": _CROSS_PUBLICATION_IMPORT_PATTERNS,
 }
 
 
@@ -3450,6 +3480,25 @@ _EDITORIAL_DEFLATION_PATTERNS.extend([
         r"|premature|hollow|empty|circular|meaningless|underwhelming)(?:\b|,)",
         re.IGNORECASE,
     ),
+    # --- Added 2026-07-03: Register Brain2Qwerty v2 headline analysis ---
+    # Headline qualification: "improves/improved... but still isn't great"
+    # — acknowledges progress then immediately deflates in the title.
+    # Pattern: "but still isn't/aren't/won't/can't [positive adj]"
+    re.compile(
+        r"\bbut\s+still\s+(?:isn't|aren't|won't|can't|doesn't|don't|hasn't)\s+"
+        r"(?:great|good|ready|useful|usable|practical|viable|impressive"
+        r"|enough|perfect|working|reliable|accurate|fast|there)\b",
+        re.IGNORECASE,
+    ),
+    # "not exactly [positive]" — hedged dismissal disguised as understatement.
+    # "it's not exactly a promising, commercially viable pathway" reframes
+    # a real improvement as commercially irrelevant.
+    re.compile(
+        r"\b(?:it's|that's|this\s+is|it\s+is)\s+not\s+exactly\s+"
+        r"(?:a\s+)?(?:promising|encouraging|compelling|impressive|convincing"
+        r"|revolutionary|groundbreaking|practical|viable|useful|great)\b",
+        re.IGNORECASE,
+    ),
 ])
 
 
@@ -5028,22 +5077,24 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 51 pattern-matched device types plus 6 structural
-    post-pass types (57 total).
+    Scans for 52 pattern-matched device types plus 6 structural
+    post-pass types (58 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (50): analogy_metaphor, anonymous_authority,
+    Pattern-matched (52): analogy_metaphor, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization,
     commodification_metaphor, confession_framing,
     consumer_ownership,
-    corporate_reassurance_undercut, denial_contradiction,
+    corporate_reassurance_undercut, cross_publication_import,
+    denial_contradiction,
     editorial_aside, editorial_deflation, emotional_appeal,
     escalation_amplification, failure_precedent, false_balance,
+    financial_reassurance,
     geopolitical_regulatory_pressure, guilt_by_association,
     hypocrisy_frame, industry_normalization_undercut,
     ironic_quotation, isolation_framing,
@@ -5057,7 +5108,6 @@ def detect_framing_devices(
     slippery_slope, sovereignty_framing, straw_man,
     taxonomy_framing, timeline_implication, two_tier_treatment,
     usage_dismissal_undercut,
-    financial_reassurance,
     and worker_replacement_irony.
 
     Structural post-pass (6): delayed_defense, kicker_framing,

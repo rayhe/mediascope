@@ -372,8 +372,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 51, (
-            f"Expected 51 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 52, (
+            f"Expected 52 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -450,6 +450,8 @@ class TestFramingDeviceRegistry:
             "usage_dismissal_undercut",
             # Financial reassurance (1) — negative news reframed as positive market signal
             "financial_reassurance",
+            # Cross-publication import (1) — importing another outlet's characterization as settled fact
+            "cross_publication_import",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual

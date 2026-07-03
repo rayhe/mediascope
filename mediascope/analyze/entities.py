@@ -542,6 +542,14 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "University of Michigan",
             "Carnegie Mellon", "CMU",
             "Cornell University", "Cornell",
+            # Academic journals — frequently cited as authority signals
+            "Nature", "Nature Neuroscience", "Nature Medicine",
+            "Nature Machine Intelligence", "Nature Communications",
+            "Science", "PNAS",
+            "The Lancet", "JAMA",
+            "Cell",
+            "IEEE",
+            "ACM",
         ],
         "regex": r"(?<!\w)((?-i:NYU)|New York University"
                  r"|Northeastern(?:\s+University)?"
@@ -555,7 +563,15 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|Columbia(?:\s+University)?"
                  r"|University of Michigan"
                  r"|Carnegie Mellon|(?-i:CMU)"
-                 r"|Cornell(?:\s+(?:University|Law\s+School))?)(?!\w)",
+                 r"|Cornell(?:\s+(?:University|Law\s+School))?"
+                 # Academic journals
+                 r"|Nature(?:\s+(?:Neuroscience|Medicine|Machine"
+                 r"\s+Intelligence|Communications))?"
+                 r"|(?-i:Science)(?=\s+(?:journal|paper|published|study))"
+                 r"|(?-i:PNAS)"
+                 r"|The\s+Lancet|(?-i:JAMA)"
+                 r"|(?-i:Cell)(?=\s+(?:journal|paper|published|study))"
+                 r"|(?-i:IEEE)|(?-i:ACM))(?!\w)",
     },
     "Research Centers": {
         "aliases": [

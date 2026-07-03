@@ -6380,30 +6380,109 @@ journalists:
     Her physics background and quantum coverage create a testable specialization signal — does science expertise produce different
     framing than generalist tech reporting? (3) London rebuild context — she and Swash are the two editorial hires rebuilding
     Wired''s UK presence after the print edition cancellation and mass departures.'
-- name: Ana Swanson
-  notes: NYT trade policy reporter based in Washington DC. Covers tariffs, trade negotiations, chip export controls, US-EU
-    economic tensions. Frequent co-author with Adam Satariano on stories at the intersection of trade policy and European
-    tech regulation. Key for understanding how NYT frames US-EU tech tensions — Swanson brings the Washington/trade lens,
-    Satariano the Brussels/regulatory lens.
-  career:
-  - event_type: hired
+- career:
+  - beat: English language teaching
+    end: 2007-07
+    event_type: hired
+    notes: English teacher at Dell English International in China. Beginning of 8-year period living and working in China.
+      Pre-journalism career — Northwestern anthropology grad pivoting toward China expertise. Story City, Iowa native.
+    publication: dell-english-international
+    role: teacher
+    source_url: https://alumnius.net/
+    start: 2006-05
+  - beat: China equity research, economics
+    end: 2011-03
+    event_type: hired
+    notes: Equity research analyst at JLM Pacific Epoch, a China-focused research firm. Two successive roles (~2.5 years).
+      Developed China economy analytical skills that would later inform her trade reporting. Concurrent with Hopkins-Nanjing
+      Center certificate studies (2007-2008). Pre-journalism career phase.
+    publication: jlm-pacific-epoch
+    role: analyst
+    source_url: https://alumnius.net/
+    start: 2008-07
+  - beat: China economy, business, trade, energy, cleantech
+    end: 2013-04
+    event_type: promoted
+    notes: 'Three roles at China Economic Review in Shanghai: writer/contributor (Mar-Oct 2011), deputy editor (Oct-Nov 2011),
+      then editor-in-chief (Nov 2011-Apr 2013). Managed editorial direction, increased site traffic. Published monthly cover
+      features: income inequality, capital flight, SOE resurgence, auto industry, water crisis, US-China relations, censorship,
+      biotech. Acknowledged in Bill Dodson''s "China Fast Forward" for encouraging energy/cleantech coverage. Succeeded Pete
+      Sweeny as EIC. Personal site shows 15+ bylined features (Jan 2012-Feb 2013). This was her transition from analyst to
+      journalist — leading a publication gave her editorial judgment and framing instincts before she entered US newsrooms.'
+    publication: china-economic-review
+    role: editor_in_chief
+    source_url: https://anaclaireswanson.com/
+    start: 2011-03
+  - beat: China economy, equities
+    end: 2014-10
+    event_type: hired
+    notes: Analyst at JL Warren Capital LLC focusing on Chinese economy. Appeared on CNBC (Mar 25, 2014) estimating Alibaba's
+      US IPO valuation at ~$180 billion. Also wrote for Forbes, Forbes Chinese (Alibaba IPO analysis), CNN (India elections),
+      The Atlantic ("China's Chilling Crackdown on Due Diligence Companies"), and Foreign Policy (South Asia Channel editor,
+      India election Q&A, China grey market). Concurrent with "Tiger Woman on Wall Street" book project research (Jan-Aug
+      2013), New America Foundation (Oct 2013-Jun 2014), and SAIS master's degree (2013-2014). Prolific freelance output during
+      this period — published in 6+ outlets simultaneously.
+    publication: jl-warren-capital
+    role: analyst
+    source_url: https://video.cnbc.com/gallery/?video=3000263197
+    start: 2013-08
+  - beat: economics, trade, Fed, data visualization, viral features
+    end: 2017-09
+    event_type: hired
+    notes: 'Staff writer at The Washington Post (Oct 2014-Sept 2017). Also edited the "Know More" blog. Coverage ranged from
+      data-driven viral features ("How China used more cement in 3 years than the US did in the entire 20th Century," "Six
+      maps that will make you rethink the world") to deep reporting on Trump trade policy, coal country economics, Kansas
+      tax cuts, Fed policy, Panama Papers tax havens, and Trump Network investigation. World Economic Forum Agenda Contributor
+      during this period. First newsroom position — hired through data visualization skills and China expertise. Prolific
+      output: 40+ bylined pieces on personal site from this period. KEY CAREER TRANSITION: Swanson went from being a China-based
+      analyst/editor who understood trade through the Chinese side to a Washington reporter covering trade through the American
+      policy lens. This gave her unusual dual-sided expertise that very few trade reporters possess.'
     publication: washington-post
-    role: reporter
-    beat: economics, trade
-    start: 2016-01
-    end: 2018-01
-    notes: Economics and trade reporter at the Washington Post before moving to NYT.
-    source_url: https://www.nytimes.com/by/ana-swanson
-  - event_type: hired
+    role: staff_writer
+    source_url: https://nytco.com/press/ana-swanson-joins-the-times/
+    start: 2014-10
+  - beat: trade policy, tariffs, economic nationalism, chip export controls, US-China tech competition
+    event_type: hired
+    notes: 'Trade and international economics reporter in Washington Bureau (start date Sept 11, 2017). Title per The Org:
+      "Domestic Correspondent." Covers US tariffs, trade wars, chip export controls, semiconductor supply chains, US-China
+      tech decoupling, US-EU economic tensions, and Middle East AI chip deals. KEY STORIES: "With Smugglers and Front Companies,
+      China is Skirting American A.I. Bans" (Aug 2024, Motley Fool podcast feature); export restrictions on 80+ Chinese entities
+      including Nvidia/Intel/AMD customers (Mar 2025); Howard Lutnick data center conflicts of interest (Nov 2025, part of
+      Pulitzer-winning investigation); chip companies lobbying against China sales ban (Dec 2024 Techmeme); UAE Nvidia chip
+      mega-deal (May 2025); DeepSeek/Nvidia crackdown (Mar 2025). Regular contributor to American Public Media''s Marketplace.
+      TV: CNN, MSNBC, PBS NewsHour. CFR panelist (2024 election trade policy episode). Co-runs International China Journalists
+      Association. Frequent co-author with Adam Satariano (Brussels) on stories at intersection of trade policy and European
+      tech regulation. Recent: co-authored Kyndryl/Solvinity Dutch acquisition block (Jul 2026). AWARD: 2026 Pulitzer Prize
+      for Investigative Reporting (team member — Eric Lipton, David Yaffe-Bellany, Ben Protess + 14 contributors including
+      Swanson, investigating Trump administration self-enrichment and cronyism). ANALYTICAL VALUE: Swanson is the NYT''s primary
+      voice on chip export controls and US-China tech supply chains — the infrastructure layer that determines whether companies
+      like Meta can procure the GPUs needed for AI training. Her coverage of semiconductor tariffs, Nvidia restrictions, and
+      Middle East AI deals directly shapes the economic context for Meta''s $125-145B capex narrative. Her 8-year China background
+      (analyst, EIC, Mandarin speaker) gives her source networks and contextual understanding that most DC trade reporters
+      lack. For MediaScope DiD analysis: her unique career arc (China analyst → WaPo data journalist → NYT trade policy) means
+      her framing is shaped by deep economic analysis and data visualization instincts rather than the adversarial tech-culture
+      lens of reporters like Nitasha Tiku or the investigative-leak methodology of Jeff Horwitz.'
     publication: nytimes
     role: trade_policy_reporter
-    beat: trade policy, tariffs, economic nationalism, chip export controls
-    start: 2018-01
-    notes: 'Washington-based trade policy reporter. Covers US tariffs, trade wars, chip export controls, semiconductor supply
-      chains, and US-EU economic tensions. Multi-pub journalist tracked for co-authoring pattern with Adam Satariano — their
-      collaboration merges trade policy and EU tech regulation coverage. Recent: co-authored Kyndryl/Solvinity Dutch acquisition
-      block (Jul 2026).'
-    source_url: https://blog.tipranks.com/europes-tensions-with-trump-ensnare-kyndryl-tech-deal-nyt-reports/
+    source_url: https://nytco.com/press/ana-swanson-joins-the-times/
+    start: 2017-09
+  name: Ana Swanson
+  notes: 'Key career arc: Dell English (China) → JLM Pacific Epoch (China equity research) → China Economic Review (EIC, Shanghai)
+    → JL Warren Capital (analyst) → Washington Post (staff writer, Know More blog) → NYT (trade policy, Washington bureau).
+    One of the most unusual career paths in the journalist database — 8 years living in China as an analyst and editor before
+    entering US journalism at age 30+. Education: Northwestern BA Cultural Anthropology (2000-2004), University of Iowa non-degree
+    Chinese/Economics (2005), Hopkins-Nanjing Center Certificate (2007-2008), Johns Hopkins SAIS MA International Relations
+    with concentrations in International Economics and China Studies (2013-2014). Native of Story City, Iowa; Mandarin speaker;
+    based in Washington DC. Co-runs International China Journalists Association. Amateur soccer player. Personal site: anaclaireswanson.com.
+    2026 Pulitzer Prize for Investigative Reporting (team member). ANALYTICAL VALUE: Swanson occupies a unique niche — she
+    is the NYT''s primary chip export controls and trade policy reporter, covering the infrastructure economics that underpin
+    Meta''s AI ambitions. Her dual China-analyst/US-journalist background means she frames tech-trade stories through supply
+    chain economics rather than the adversarial "Big Tech accountability" lens common at Wired or the culture-war framing
+    of social media reporters. For MediaScope: when Swanson covers a Meta-adjacent topic (GPU tariffs, semiconductor restrictions,
+    AI chip deals), her framing tends toward macroeconomic analysis and geopolitical context rather than corporate villainy,
+    making her a useful baseline for measuring how other NYT reporters frame similar subjects. Key co-authorship: Adam Satariano
+    (Brussels-based, EU tech regulation) — their joint bylines merge trade policy and regulatory coverage in a way that shapes
+    how NYT frames US-EU tech tensions.'
 - name: Paul Mozur
   notes: 'NYT Global Technology Correspondent, now based in Taipei (relocated from Seoul ~2023-2024, previously expelled from
     China in 2020). Mandarin speaker. Has worked as a journalist in Asia since 2007. Covers technology and geopolitics — surveillance,

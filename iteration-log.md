@@ -3,6 +3,41 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-03 11:00 PT — Type A: Article Deep Dive — TechCrunch Zuckerberg AI Agents Town Hall (3-Way Cross-Outlet Comparison)
+
+### Focus
+TechCrunch "In Brief" by Lucas Ropek (2026-07-02): "Mark Zuckerberg tells staff that AI agents haven't progressed as quickly as he'd hoped." Third analysis of the same Zuckerberg July 2 town hall event, enabling a three-way cross-outlet comparison alongside existing Reuters wire and Barron's financial analyses.
+
+### What Changed
+
+**New framing device type: `cross_publication_import` (58th type, 42nd extended):**
+- 3 regex patterns detecting when articles reference another outlet's characterization as settled fact:
+  - "several/multiple/other reports have described/depicted" (vague collective attribution)
+  - "widely/commonly described/depicted as" (consensus-laundering adverbs)
+  - "what [publication/reporters/critics] have called" (indirect import)
+- Discovered from TechCrunch sentence: "Several reports have depicted the overhaul as a soul-crushing gulag" — imports Wired's loaded "gulag" characterization as settled consensus
+- Distinct from self_referential_investigation (same publication's own reporting) and anonymous_authority (unnamed individual sources)
+- All doc counts updated: 58 total types (52 pattern-matched + 6 structural), 344 total patterns
+
+**Full analysis output:**
+- `examples/sample_output/techcrunch_zuckerberg_ai_agents_town_hall_2026_07_02_article.txt` — full article text
+- `examples/sample_output/techcrunch_zuckerberg_ai_agents_town_hall_2026_07_02_analysis.md` — ~17KB analysis with three-way cross-outlet comparison table
+
+**Cross-outlet comparison findings (same event, 3 outlets):**
+| Outlet | Tone | Key Frame | Framing Devices |
+|--------|------|-----------|-----------------|
+| Reuters | +0.05 (neutral wire) | Factual event report, stock-price anchor | 0 editorial devices, pure wire format |
+| TechCrunch | -0.30 (mild negative) | "In Brief" news blog, cross-publication import of Wired's "gulag" framing | 5 devices: cross_publication_import, loaded_language, confession_framing, scale_magnitude, editorial_deflation |
+| Barron's | +0.35 (mild positive) | Investor comfort narrative — bad news reframed as capex discipline signal | 3 devices: financial_reassurance, confession_framing, corporate_reassurance_undercut |
+
+**Pre-existing fix: Academic/Research entity cluster alias count (23 → 35):**
+- METHODOLOGY.md §15 had stale alias count from prior academic entity expansion — corrected to match code.
+
+### Tests
+1249 passed, 2 xfailed (unchanged). Updated structural consistency guards, framing device registry, docstring device list, and all doc count references across 8 files.
+
+---
+
 ## 2026-07-03 06:00 PT — Type D: Toolkit Quality & Documentation — §15 Entity Cluster Reference + Structural Tests
 
 ### Focus
