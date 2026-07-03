@@ -2679,8 +2679,11 @@ journalists:
     source_url: https://talkingbiznews.com/they-re-hiring/reisner-named-staff-writer-at-the-atlantic/
     start: 2025-10
   name: Alex Reisner
-  notes: Atlantic's AI training data investigator. Broke the Books3 story (190K pirated books used by Meta/LLaMA). Built Atlantic's
-    AI Watchdog searchable database. Programming + journalism hybrid. Also a drummer in Francis and the Lights.
+  notes: "Atlantic's AI training data investigator. Broke the Books3 story (190K pirated books used by Meta/LLaMA). Built Atlantic's\
+    \ AI Watchdog searchable database (launched Sep 2025 with senior editor Damon Beres). Expanded AI Watchdog to music datasets\
+    \ Jun 2026 — revealed 21.2M copyrighted songs in 4 AI training datasets (LAION-DISCO-12M, Sleeping-DISCO-9M, Free Music\
+    \ Archive, plus one more). Prompted responses from SZA, Kenny Beats, and other major artists. Programming + journalism\
+    \ hybrid. Also a drummer in Francis and the Lights."
 - career:
   - beat: pop culture, fandom, online community
     end: 2018-06
@@ -3925,16 +3928,22 @@ journalists:
     source_url: https://talkingbiznews.com/they-re-hiring/washington-post-hires-tiku-as-tech-culture-reporter/
     start: '2019-09-16'
   name: Nitasha Tiku
-  notes: 'Key migration: BuzzFeed → Wired → Washington Post. One of the most important cross-publication migrations for DiD
-    analysis because she moved FROM a tracked publication (Wired) to an untracked one (WaPo). Her career is an almost perfect
-    longitudinal case: Inc → NYmag → NY Observer → Valleywag/Gawker → BuzzFeed → Verge → Wired → WaPo covers nearly every
-    major digital media era. Columbia BA (English & Comp Lit), NYU MA (Journalism). Beat: tech culture, Silicon Valley power
-    dynamics, AI. Laid off from Washington Post in Feb 2026 layoffs. At Wired under Nicholas Thompson (tracked EIC). Wrote
-    Wired magazine cover story on turmoil inside Google during Trump administration. ANALYTICAL VALUE: Tiku''s Wired → WaPo
-    transition (tracked → untracked) is a partial natural experiment — we can observe whether her framing patterns changed
-    when she left Wired''s Condé Nast editorial ecosystem for WaPo''s Jeff Bezos-owned environment. Her long Gawker/Valleywag
-    background means she entered journalism with an adversarial, culture-focused lens — compare to reporters who entered via
-    traditional newspapers.'
+  notes: 'Key migration: BuzzFeed → Wired → Washington Post → (laid off Feb 2026, reportedly rehired ~Apr 2026). One of the
+    most important cross-publication migrations for DiD analysis because she moved FROM a tracked publication (Wired) to an
+    untracked one (WaPo). Her career is an almost perfect longitudinal case: Inc → NYmag → NY Observer → Valleywag/Gawker →
+    BuzzFeed → Verge → Wired → WaPo covers nearly every major digital media era. Columbia BA (English & Comp Lit), NYU MA
+    (Journalism). Beat: tech culture, Silicon Valley power dynamics, AI. Laid off from Washington Post in Feb 2026 layoffs
+    (~300 journalists, ~1/3 of staff). REPORTED REHIRED at WaPo ~April 2026 (Tomorrow''s Publisher/CJR report: "Others reported
+    to be returning include Jake Spring, Nitasha Tiku and Steve Hendrix"). The layoff + rehire cycle is analytically significant:
+    (1) tests whether coverage framing shifts after institutional trauma, (2) confirms WaPo''s recognition that tech culture
+    beat is essential despite cost cuts. At Wired under Nicholas Thompson (tracked EIC). Wrote Wired magazine cover story
+    on turmoil inside Google during Trump administration. Referenced as Wired business desk colleague in Louise Matsakis hire
+    announcement (Nov 2024) — this likely refers to her earlier Wired tenure, NOT a current Wired role. ANALYTICAL VALUE:
+    Tiku''s Wired → WaPo transition (tracked → untracked) is a partial natural experiment — we can observe whether her framing
+    patterns changed when she left Wired''s Condé Nast editorial ecosystem for WaPo''s Jeff Bezos-owned environment. Her
+    long Gawker/Valleywag background means she entered journalism with an adversarial, culture-focused lens — compare to
+    reporters who entered via traditional newspapers. The Feb 2026 layoff + rehire adds another dimension: does institutional
+    loyalty shift after being laid off and recalled?'
 - career:
   - beat: fashion, culture
     end: 2001-12
@@ -7262,3 +7271,215 @@ journalists:
     make her a potential amplifier of Drummond-era editorial posture through story selection and development rather than
     direct bylines. KEY for MediaScope: her editorial influence is indirect but structural — she does not write about Meta,
     but she shapes the features that do. Appeared on Tasteland podcast (YouTube) discussing her Wired role.'
+- career:
+  - beat: books, publishing
+    end: 2001-01
+    event_type: hired
+    notes: 'Book reporter 1987-1998, then Silicon Valley/tech from San Francisco 1999-2001. Definitively identified Joe Klein
+      as ''Anonymous'' author of Primary Colors (1997) by sending galley proof handwriting to expert. Also covered publishing
+      business and book collecting. Gave Jeff Bezos his first tour of the Washington Post newsroom in 1998 — editors at the
+      time thought Amazon was ''cute, interesting, a frill.'''
+    publication: washington-post
+    role: book_reporter
+    source_url: https://en.wikipedia.org/wiki/David_Streitfeld
+    start: 1987-01
+  - beat: technology, Enron, housing, economics
+    end: 2007-01
+    event_type: hired
+    notes: 'Technology reporter initially, then switched to Enron, housing, and general economics. Named ''The Bard of the
+      Bubble'' by The Atlantic magazine (July 2006) for prescient LA Times real estate coverage.'
+    publication: los-angeles-times
+    role: tech_reporter
+    source_url: https://alchetron.com/David-Streitfeld
+    start: 2001-01
+  - beat: technology, AI, Big Tech business practices
+    event_type: hired
+    notes: 'Started as Chicago business reporter (2007); later moved to technology reporting from San Francisco. Won 2012 SABEW
+      ''Best in Business'' award for fake online reviews investigation. Part of team that won 2013 Pulitzer Prize for Explanatory
+      Reporting for 10-article series on Apple and other tech companies'' business practices. Broke Amazon-Hachette negotiation
+      story (May 2014). Recent major coverage: social media addiction trial (Zuckerberg testified Feb 2026 — Streitfeld covered
+      the landmark LA trial as NYT lead reporter), AI bubble analysis (dot-com comparison), Pope Leo XIV''s AI encyclical
+      Magnifica Humanitas (contrasting Silicon Valley''s quasi-religious AI rhetoric with traditional religion). Published
+      ''Western Star: The Life and Legends of Larry McMurtry'' biography (2026, Penguin Press). Also edited ''Last Interview''
+      book collections for Garcia Marquez, Philip K. Dick, J.D. Salinger, Hunter S. Thompson (Melville House). Lives in SF
+      Bay Area.'
+    publication: new-york-times
+    role: technology_reporter
+    source_url: https://lareviewofbooks.org/contributor/david-streitfeld/
+    start: 2007-01
+  name: David Streitfeld
+  notes: 'Pulitzer Prize-winning NYT technology reporter. 39-year career: Washington Post (book reporter, Primary Colors identification)
+    → LA Times (tech/economics, ''Bard of the Bubble'') → NYT (2007-present). Won 2013 Pulitzer for Apple business practices
+    series. Known for extensive Amazon coverage dating to 1990s (broke Hachette story). KEY FOR MEDIASCOPE: Covers the social
+    media addiction trial (MDL bellwether, Zuckerberg testimony Feb 2026) and the AI bubble narrative — two major threads
+    in the Meta coverage ecosystem. Also a serious literary figure (books on McMurtry, Garcia Marquez, Philip K. Dick).
+    Tests whether NYT''s institutional voice constrains or amplifies adversarial framing vs his prior outlets (WaPo, LA Times).
+    His trial coverage is critical because MDL 3047 (2,527+ claims, 42 state AGs active) is the largest liability threat
+    to Meta and overlaps heavily with our litigation funding research.'
+- career:
+  - beat: general web reporting
+    end: 2013-01
+    event_type: hired
+    notes: Web writer and reporter. Early career in digital media.
+    publication: ny1-news
+    role: web_writer
+    source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-beres-as-senior-editor-for-tech-coverage/
+    start: 2011-01
+  - beat: general interest, consumer content
+    end: 2014-01
+    event_type: hired
+    notes: Associate editor at the mass-market magazine.
+    publication: readers-digest
+    role: associate_editor
+    start: 2013-01
+  - beat: technology, consumer tech
+    end: 2018-03
+    event_type: hired
+    notes: Senior tech editor. Led technology coverage during HuffPost expansion years. Published articles in NYT, Wired,
+      Vice, Slate during this period.
+    publication: huffpost
+    role: senior_tech_editor
+    source_url: https://me.sh/damon-beres
+    start: 2014-01
+  - beat: technology, digital media
+    end: 2018-09
+    event_type: hired
+    notes: 'Director of editorial programming, then executive editor. During his tenure, Mashable won ''Most Innovative Publisher''
+      award. Short tenure (6 months).'
+    publication: mashable
+    role: executive_editor
+    source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-beres-as-senior-editor-for-tech-coverage/
+    start: 2018-03
+  - beat: technology, social networks, AI, surveillance, labor
+    end: 2021-04
+    event_type: hired
+    notes: 'Co-founder and inaugural EIC of OneZero, Medium''s tech and science publication focused on ''undercurrents of the
+      future.'' Standout investigations: Banjo surveillance company, Acellus virtual school, homeless community near Apple''s
+      $5B campus. Published Cory Doctorow''s ''How to Destroy Surveillance Capitalism.'' Launched spinoff brands Debugger
+      and Future Human (2020).'
+    publication: medium-onezero
+    role: editor_in_chief
+    source_url: https://damonberes.com/
+    start: 2019-11
+  - beat: technology, democracy, ethics
+    end: 2022-08
+    event_type: hired
+    notes: Inaugural EIC at Unfinished Media. Created flagship newsletter about tech and democracy. Developed live events about
+      emerging technologies. Unfinished is a social-impact org focused on tech and civic engagement.
+    publication: unfinished-media
+    role: editor_in_chief
+    source_url: https://theorg.com/org/the-atlantic/org-chart/damon-beres
+    start: 2021-07
+  - beat: technology, AI, DOGE, Big Tech accountability
+    event_type: hired
+    notes: 'Senior editor for tech at The Atlantic. KEY EDITORIAL GATEKEEPER — shapes Atlantic''s technology coverage direction.
+      Major stories assigned/edited: two DOGE investigations into federal agency incursions, Microsoft fossil-fuel investigation,
+      ambitious features on AI training practices (Common Crawl, LibGen, Books3, OpenSubtitles, YouTube datasets). Co-launched
+      Atlantic''s AI Watchdog project with Alex Reisner (Sep 2025) — the searchable tool tracking copyrighted content in
+      AI training datasets. Currently writing book ''Easy Mode'' for Scribner about how frictionless digital technology affects
+      the human mind. BA Journalism + Sociology, NYU. Colleagues: oversees Alex Reisner, Ian Bogost, Kaitlyn Tiffany, Matteo
+      Wong''s tech coverage. ANALYTICAL VALUE: As senior tech editor, Beres does not write the adversarial Meta/tech pieces
+      directly but selects, assigns, shapes, and approves them. His editorial fingerprints are on the institutional posture
+      of Atlantic''s tech desk. His career arc (HuffPost → Mashable → OneZero → Unfinished → Atlantic) shows deepening focus
+      on tech-and-society criticism. The AI Watchdog project under his editorial direction has become a major pressure point
+      for AI companies, especially Meta (Books3/LLaMA training data). His Bluesky migration (away from X) signals personal
+      alignment with anti-Musk tech-skeptical posture.'
+    publication: atlantic
+    role: senior_editor_tech
+    source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-beres-as-senior-editor-for-tech-coverage/
+    start: 2022-08
+  name: Damon Beres
+  notes: 'Atlantic''s senior tech editor since Aug 2022 — the editorial gatekeeper who shapes, assigns, and approves the
+    publication''s technology coverage. Co-launched AI Watchdog project with Alex Reisner (Sep 2025). Career: NY1 → Reader''s
+    Digest → HuffPost (senior tech editor) → Mashable (executive editor) → OneZero/Medium (co-founder/EIC) → Unfinished
+    Media (EIC) → Atlantic. Writing book ''Easy Mode'' (Scribner) on frictionless digital technology. KEY FOR MEDIASCOPE:
+    Beres is not a byline reporter but the editorial decision-maker behind Atlantic''s tech coverage posture. He decides
+    which investigations get green-lit, which angles reporters pursue, and how pieces are framed. His editorial choices —
+    AI Watchdog, DOGE investigations, Microsoft fossil-fuel — reveal an institutional bias toward tech-accountability journalism.
+    Understanding his editorial influence is critical for modeling Atlantic''s coverage patterns. NYU BA Journalism + Sociology.'
+- career:
+  - beat: culture, music, humor
+    end: 2012-01
+    event_type: hired
+    notes: Intern at online culture/politics magazine. Earliest traceable career role. Writing career started while still at
+      Oberlin or shortly after graduation.
+    publication: death-and-taxes
+    role: intern
+    source_url: https://sportskeeda.com/pop-culture/who-ej-dickson-candace-owens-calls-ny-magazine-journalist-article
+    start: 2010-06
+  - beat: dating, sex, pop culture
+    end: 2013-12
+    event_type: hired
+    notes: Blogger at dating and pop culture website. Pitched and wrote multiple posts daily plus a feature story every week.
+      Early career training in high-volume digital publishing.
+    publication: nerve-com
+    role: blogger
+    source_url: https://sportskeeda.com/pop-culture/who-ej-dickson-candace-owens-calls-ny-magazine-journalist-article
+    start: 2012-01
+  - beat: internet culture, sex, relationships
+    end: 2016-01
+    event_type: hired
+    notes: Editor covering internet culture. The Daily Dot was an early digital-native publication focused on internet subcultures.
+      First substantive editorial role.
+    publication: daily-dot
+    role: editor
+    source_url: https://sportskeeda.com/pop-culture/who-ej-dickson-candace-owens-calls-ny-magazine-journalist-article
+    start: 2014-01
+  - beat: culture, internet
+    end: 2019-06
+    event_type: hired
+    notes: Held editorial roles at multiple digital media outlets including Mic, Bustle, and Hearst Magazines. Part of the
+      mid-2010s digital media boom. Approximate dates — exact tenure at each unclear. Built reputation covering internet culture,
+      sex, and relationships across platforms.
+    publication: various-digital-media
+    role: editor
+    source_url: https://sportskeeda.com/pop-culture/who-ej-dickson-candace-owens-calls-ny-magazine-journalist-article
+    start: 2016-01
+  - beat: internet culture, influencers, sex, music
+    end: 2024-08
+    event_type: hired
+    notes: 'Senior writer covering internet culture. Became a signature voice for Rolling Stone''s internet culture coverage.
+      KEY PIECES: Mr. Beast cover story, Doja Cat cover story, Andrew Tate exposé (manosphere reporting), child exploitation
+      allegations in Jojo Siwa''s tween girl group, Ron Jeremy rape and sexual assault allegations. Co-hosted "Don''t Let
+      This Flop" podcast about internet culture (with Cumulus Media). Work also appeared in NYT, Washington Post, GQ, Elle,
+      The New Yorker during this period. Approximately 5-year tenure — one of Rolling Stone''s longest-serving internet culture
+      reporters during a period when the magazine expanded beyond music coverage.'
+    publication: rolling-stone
+    role: senior_writer
+    source_url: https://editorandpublisher.com/stories/ej-dickson-to-join-wired-as-a-senior-writer
+    start: 2019-07
+  - beat: culture, internet culture, sex, relationships, influencers
+    end: 2026-03
+    event_type: hired
+    notes: 'Senior writer at The Cut (New York Magazine''s style and culture vertical). Covered internet culture, power dynamics,
+      radicalization. KEY PIECES: Jeffrey Epstein''s secret circle of gynecologists, Candace Owens'' pivot to lifestyle guru
+      (prompted Owens'' public attack on Dickson), radicalization and death of a fruitarian. Lindsay Peoples (Cut EIC) on
+      hire: "Ej is one of the sharpest culture reporters working." Relatively brief ~18-month tenure before recruited by Wired.
+      Published book "One Bad Mother: In Praise of Psycho Housewives, Stage Parents, Momfluencers, and Other Women We Love
+      to Hate" during this period.'
+    publication: new-york-magazine
+    role: senior_writer
+    source_url: https://sportskeeda.com/pop-culture/who-ej-dickson-candace-owens-calls-ny-magazine-journalist-article
+    start: 2024-09
+  - beat: internet culture, pop culture, digital relationships
+    event_type: hired
+    notes: 'Senior writer on culture desk. Reports to Michael Calore (Director, Consumer Tech & Culture). Based in New York.
+      Drummond personal note: "It''s hard to think of a more adept observer of pop culture — and how the internet shapes relationships
+      at every level — than Ej." NON-TRADITIONAL WIRED PIPELINE: culture/influencer journalism (Rolling Stone → NYMag → Wired)
+      rather than tech or adversarial pipeline (Gizmodo/Vice/Guardian) that characterizes most Drummond-era hires. Her beat
+      — internet culture, power dynamics in creator economy, exploitation — maps onto Wired''s expanding interest in platforms''
+      social impact beyond corporate/policy coverage.'
+    publication: wired
+    role: senior_writer
+    source_url: https://editorandpublisher.com/stories/ej-dickson-to-join-wired-as-a-senior-writer
+    start: 2026-04-06
+  name: Ej Dickson
+  notes: 'Key migrations: Death+Taxes → Nerve.com → Daily Dot → Mic/Bustle/Hearst → Rolling Stone → New York Magazine/The Cut
+    → Wired. Internet culture specialist who has moved through every era of digital media. NON-TRADITIONAL WIRED PIPELINE:
+    unlike most Drummond-era hires who come from adversarial journalism outlets (Gizmodo, Vice, Guardian), Dickson comes from
+    culture-journalism outlets (Rolling Stone, NYMag). Her beat — internet culture, influencer accountability, exploitation
+    dynamics — extends Wired''s coverage beyond corporate/policy to the human impact of platforms. Author of "One Bad Mother."
+    Oberlin College BA, NYU MA Journalism (Cultural Reporting and Criticism). ANALYTICAL VALUE: Tests whether culture-desk
+    writers who are not part of Drummond''s adversarial-journalism pipeline adopt the institutional adversarial posture in
+    their coverage, or maintain a distinct voice. Her Rolling Stone/NYMag background means she brings magazine-feature editorial
+    instincts rather than scoops-and-sources investigative DNA.'

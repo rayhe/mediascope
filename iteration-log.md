@@ -11120,3 +11120,21 @@ Guardian (Katie McQue) article via Decrypt mirror: "Meta's AI Floods Child Abuse
 - https://muckrack.com/alana-levinson/articles
 - https://talkingbiznews.com/media-news/wired-hires-taylor-as-senior-writer/
 - https://concordia.net/community/ (Vittoria Elliott speaker listing)
+
+## Iteration B — 2026-07-03 02:00 PT
+
+**Type:** B (Journalist/Publication Research)
+**Focus:** Wired editorial team expansion
+
+**Changes:**
+1. **Added Ej Dickson** to `journalists.yaml` — Senior Writer (Culture) at Wired since Apr 2026. Non-traditional pipeline: Death+Taxes → Nerve.com → Daily Dot → Mic/Bustle/Hearst → Rolling Stone → New York Magazine/The Cut → Wired. Reports to Michael Calore. Oberlin BA, NYU MA Journalism.
+2. Added Ej Dickson hire to `editorial_changes.yaml` under Wired section
+3. Updated Nitasha Tiku notes with Feb 2026 WaPo layoff and ~Apr 2026 rehire details
+4. Updated counts across README.md, EDITORIAL_HISTORIES.md, careers_demo.py: 121 journalists, 119 multi-pub, 375 migrations, 230+ publications
+
+**Test results:** 1245 passed, 2 xfailed, 0 failures
+
+**Sources:**
+- https://www.nytimes.com/by/ej-dickson (no results — confirmed left NYMag)
+- https://muckrack.com, LinkedIn profiles
+- https://tomorrowspublisher.com / CJR layoff reporting (Tiku WaPo layoff)

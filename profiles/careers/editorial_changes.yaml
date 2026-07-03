@@ -36,6 +36,17 @@ editorial_changes:
     outgoing: null
     position: vice_chairman
     source_url: https://en.wikipedia.org/wiki/The_Atlantic
+  - date: 2022-08
+    incoming: Damon Beres
+    notes: 'KEY HIRE: Beres joined as senior editor for tech, becoming the editorial gatekeeper for Atlantic''s technology
+      coverage. Career: HuffPost (senior tech editor) → Mashable (executive editor) → OneZero/Medium (co-founder/EIC) →
+      Unfinished Media (EIC) → Atlantic. Co-launched AI Watchdog project with Alex Reisner (Sep 2025). Oversees Alex Reisner,
+      Ian Bogost, Kaitlyn Tiffany, Matteo Wong. His editorial decisions — which investigations get green-lit, which angles
+      reporters pursue — shape Atlantic''s institutional posture on tech. Writing book ''Easy Mode'' (Scribner) on frictionless
+      digital technology. NYU BA Journalism + Sociology.'
+    outgoing: null
+    position: senior_editor_tech
+    source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-beres-as-senior-editor-for-tech-coverage/
   - date: 2023-04
     incoming: Gilad Edelman
     notes: Edelman hired as senior editor to expand economics and political economy coverage. Came from brief FTC stint (communications
@@ -794,6 +805,24 @@ editorial_changes:
     outgoing: Peter Guest
     position: acting_business_editor_uk
     source_url: https://talkingbiznews.com/media-news/guest-departs-wired-for-coda-story/
+  - date: '2026-04-06'
+    incoming: Ej Dickson
+    notes: 'CULTURE DESK EXPANSION: Ej Dickson hired as senior writer on culture desk, based in New York. Reports to Michael
+      Calore (Director, Consumer Tech & Culture). Previously senior writer at New York Magazine''s The Cut (Sep 2024-Mar 2026)
+      covering internet culture, sex, relationships; before that senior writer at Rolling Stone (2019-2024) covering internet
+      culture and influencers — published cover stories on Mr. Beast and Doja Cat, broke stories on Andrew Tate, Jojo Siwa
+      child exploitation allegations, and Ron Jeremy rape allegations. Earlier career: Daily Dot, Mic, Bustle, Hearst Magazines,
+      Nerve.com, Death+Taxes. Author of "One Bad Mother: In Praise of Psycho Housewives, Stage Parents, Momfluencers, and
+      Other Women We Love to Hate" (book). Oberlin College BA, NYU MA Journalism (Cultural Reporting and Criticism). Co-hosted
+      "Don''t Let This Flop" podcast at Rolling Stone covering internet culture. Drummond''s personal note: "It''s hard
+      to think of a more adept observer of pop culture — and how the internet shapes relationships at every level — than
+      Ej." NON-TRADITIONAL PIPELINE: culture/influencer journalism (Rolling Stone → NYMag) rather than tech or adversarial
+      pipeline (Gizmodo/Vice/Guardian). Her beat — internet culture, power dynamics in creator economy, exploitation — maps
+      onto Wired''s expanding interest in platforms'' social impact. First hire explicitly framed around "how the internet
+      shapes relationships" rather than corporate accountability or policy.'
+    outgoing: null
+    position: senior_writer_culture
+    source_url: https://editorandpublisher.com/stories/ej-dickson-to-join-wired-as-a-senior-writer
   - date: '2026-04-27'
     incoming: Hugo Lowell
     notes: 'GUARDIAN → WIRED MIGRATION: Hugo Lowell hired as senior correspondent on politics desk, replacing William Turton
