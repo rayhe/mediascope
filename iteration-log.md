@@ -3,6 +3,44 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-02 22:00 PT — Type A: Article Deep Dive — Gizmodo Brain2Qwerty v2 False-Positive Correction
+
+### Focus
+Context-aware false-positive suppression for genuinely positive medical/health tech articles.
+
+### Article Analyzed
+- **Gizmodo:** "Meta's AI Is Getting Better at Reading Your Thoughts—Without Cracking Open Your Skull" (Jun 30, 2026)
+- Cross-publication comparison with Register's Brain2Qwerty v2 coverage (same story, opposite editorial stance)
+
+### Changes
+1. **Catastrophizing dream/sleep context filter** (`framing.py`): Suppress "nightmare"/"nightmarish" when within 150 chars of dream/sleep/wake context. Empathetic medical narrative, not fear-mongering.
+2. **Loaded language medical context filter** (`framing.py`): Suppress "invasive" when within 80 chars of medical/surgical terms (surgery, brain, neuroprosthetic, clinical, etc.). Technical term, not loaded editorial language.
+3. **Emotional appeal medical condition filter** (`framing.py`): Suppress "unable to speak/nod/respond" when within 120 chars of medical condition terms (paralysis, ALS, neurodegenerative, patient, etc.). Factual description, not editorial manipulation.
+4. **Ironic quotation definitional introduction filter** (`framing.py`): Suppress short (≤3 word) quoted terms when followed within same clause by definitional cues ("whose", "which", "meaning", "a type of"). Coined terminology introduction, not scare quotes. Includes sentence-boundary check to prevent cross-sentence false positives.
+5. **Documentation updates**: README.md and ARCHITECTURE.md updated to 1247 tests / 49 test files.
+
+### Impact
+- Gizmodo Brain2Qwerty v2: overall_tone corrected from -0.125 (false-positive Path A correction) to +0.6523 (raw_tone, correct for genuinely positive article)
+- All adversarial false positives eliminated: 4 → 0 adversarial devices
+- Framing correction correctly does NOT fire
+
+### Tests
+- New: `tests/test_gizmodo_brain2qwerty_v2.py` — 13 tests (3 catastrophizing + 3 loaded_language + 3 emotional_appeal + 3 ironic_quotation + 1 end-to-end sentiment)
+- Full suite: **1245 passed**, 2 xfailed — 49 test files
+
+### Remaining Gaps
+- Entity: "Meta's Llama" overlap (Llama standalone lookahead lacks sentence-end punctuation)
+- Register Brain2Qwerty: agency-gating mismatch (agency +0.333 prevents Path A on editorially hostile article)
+
+### Files Changed
+- `mediascope/analyze/framing.py` — 4 new context-aware filters
+- `tests/test_gizmodo_brain2qwerty_v2.py` — new test file (13 tests)
+- `examples/sample_output/gizmodo_meta_brain2qwerty_v2_2026_06_30_analysis.md` — full analysis
+- `README.md` — test count update (1247 tests, 49 files)
+- `docs/ARCHITECTURE.md` — test count update + new test file listing
+
+---
+
 ## 2026-07-02 14:00 PT — Type D: Toolkit Quality & Documentation — Path H Example + Stale Reference Fixes
 
 ### Focus

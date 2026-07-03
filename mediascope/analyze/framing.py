@@ -5006,6 +5006,40 @@ def detect_framing_devices(
                     }
                     if _quoted.lower() in _TECH_JARGON:
                         continue
+                    # --- Definitional introduction filter --------------------
+                    # Short quoted terms (≤3 words) followed immediately by
+                    # a definitional or explanatory clause ("X, whose",
+                    # "X, which", "X, meaning", "X — a type of") are being
+                    # introduced as coined terminology, not undercut with
+                    # scare quotes.  The author is explaining what the term
+                    # means, not distancing from it.
+                    #
+                    # Discovered in Gizmodo Brain2Qwerty v2 article (Jun 30,
+                    # 2026): '"auto-research" AI agents, whose task is to
+                    # autonomously hone the decoding process' — Meta's own
+                    # coined term being introduced, not journalist skepticism.
+                    # ---------------------------------------------------------
+                    if _word_count <= 3:
+                        _def_lookahead = text[end:min(len(text), end + 40)].lower()
+                        _def_lookahead = re.sub(r'\s+', ' ', _def_lookahead)
+                        # Only match within the same clause — stop at sentence
+                        # boundaries to avoid cross-sentence false positives.
+                        # e.g. '"points," not actual cash. Which suggests...'
+                        # should NOT be treated as definitional.
+                        _sent_break = re.search(r'[.!?]\s', _def_lookahead)
+                        if _sent_break:
+                            _def_lookahead = _def_lookahead[:_sent_break.start()]
+                        _DEFINITIONAL_CUES = (
+                            ", whose ", ", which ",
+                            " whose ", " which ",
+                            ", meaning ", ", i.e.", ", i.e.,",
+                            " — a ", " — an ", "—a ", "—an ",
+                            " - a ", " - an ",
+                            ", a type of", ", a kind of",
+                            ", a form of", ", a class of",
+                        )
+                        if any(cue in _def_lookahead for cue in _DEFINITIONAL_CUES):
+                            continue
                     # Short quotes (≤3 words): filter if in product-naming
                     # or attribution context
                     if _word_count <= 3:
@@ -5147,6 +5181,88 @@ def detect_framing_devices(
                             " explained", " argued", " called",
                         )
                         if any(attr in _long_lookahead for attr in _LONG_POST_ATTR):
+                            continue
+
+                # --- Catastrophizing: dream/sleep narrative filter -----------
+                # "nightmare" and "nightmarish" in proximity to dream/sleep/
+                # wake context are empathetic narrative devices (e.g.
+                # "had a dream ... wake up from such a nightmare") commonly
+                # used in medical/health articles to build empathy for patients
+                # with paralysis or neurodegenerative conditions.  These are
+                # NOT catastrophizing about tech companies.
+                #
+                # Discovered in Gizmodo Brain2Qwerty v2 article (Jun 30,
+                # 2026): "to wake up from such a nightmare—and to recall
+                # what it's like to be able to freely use your voice—feels
+                # like a liberation."
+                # ---------------------------------------------------------
+                if device_type == "catastrophizing":
+                    _cat_lower = match.group().lower()
+                    if "nightmare" in _cat_lower or "nightmarish" in _cat_lower:
+                        _cat_ctx_start = max(0, start - 150)
+                        _cat_ctx_end = min(len(text), end + 150)
+                        _cat_context = text[_cat_ctx_start:_cat_ctx_end].lower()
+                        _DREAM_CONTEXT = (
+                            "dream", "wake up", "woke up", "waking",
+                            "sleep", "asleep", "slumber",
+                        )
+                        if any(w in _cat_context for w in _DREAM_CONTEXT):
+                            continue
+
+                # --- Loaded language: medical-context filter ----------------
+                # "invasive" is a standard medical/surgical term (invasive
+                # vs non-invasive procedures, invasive brain surgery).  When
+                # it appears in proximity to medical/surgical vocabulary,
+                # suppress the loaded_language match.
+                #
+                # Discovered in Gizmodo Brain2Qwerty v2 article (Jun 30,
+                # 2026): "extremely invasive, complex, and expensive brain
+                # surgery" and "non-invasive" brain-computer interfaces are
+                # technical descriptions, not loaded editorial language.
+                # ---------------------------------------------------------
+                if device_type == "loaded_language":
+                    _ll_lower = match.group().lower()
+                    if _ll_lower == "invasive":
+                        _ll_ctx_start = max(0, start - 80)
+                        _ll_ctx_end = min(len(text), end + 80)
+                        _ll_context = text[_ll_ctx_start:_ll_ctx_end].lower()
+                        _MEDICAL_TERMS = (
+                            "surgery", "surgical", "procedure",
+                            "neuroprosthetic", "brain", "non-invasive",
+                            "noninvasive", "implant", "electrode",
+                            "medical", "clinical", "neurosurg",
+                            "craniotomy", "biopsy",
+                        )
+                        if any(w in _ll_context for w in _MEDICAL_TERMS):
+                            continue
+
+                # --- Emotional appeal: factual medical condition filter ------
+                # "unable to speak/nod/respond" in articles about medical
+                # conditions (paralysis, ALS, locked-in syndrome, BCI) is a
+                # factual description of the patient condition, not an
+                # editorial emotional appeal designed to manipulate the reader.
+                #
+                # Discovered in Gizmodo Brain2Qwerty v2 article (Jun 30,
+                # 2026): "had a dream in which we were unable to speak or
+                # move" describes the actual experience of paralysis patients,
+                # the very people the technology aims to help.
+                # ---------------------------------------------------------
+                if device_type == "emotional_appeal":
+                    _ea_lower = match.group().lower()
+                    if "unable" in _ea_lower and any(
+                        w in _ea_lower for w in ("speak", "nod", "respond")
+                    ):
+                        _ea_ctx_start = max(0, start - 120)
+                        _ea_ctx_end = min(len(text), end + 120)
+                        _ea_context = text[_ea_ctx_start:_ea_ctx_end].lower()
+                        _MEDICAL_CONDITION_TERMS = (
+                            "paralyz", "paralys", "als", "amyotrophic",
+                            "locked-in", "locked in", "anarthria",
+                            "neurodegenerative", "patient", "condition",
+                            "brain", "lesion", "syndrome", "disorder",
+                            "communicate", "dream",
+                        )
+                        if any(w in _ea_context for w in _MEDICAL_CONDITION_TERMS):
                             continue
 
                 seen_spans.add(span_key)

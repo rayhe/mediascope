@@ -400,7 +400,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **1234 tests** across 48 test files, each covering a different analytical capability:
+MediaScope has **1247 tests** across 49 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -426,6 +426,7 @@ MediaScope has **1234 tests** across 48 test files, each covering a different an
 | `test_scale_magnitude.py` | 16 | Scale/magnitude framing: raw number amplification, calculated maximums, cumulative totals, scale analogies, victim roster detection, comparison amplifiers |
 | `test_glasses_deep_dive.py` | 17 | Wired glasses launch deep dive fixes: kicker framing (negative final paragraph detection), product-name stop-filter for source extraction ("Meta Glasses"), emotional_appeal false-positive exclusion (question marks), loaded language expansion (nefarious, comically, discreetly) |
 | `test_gizmodo_fury_review.py` | 19 | Gizmodo Meta Fury contradictory review: entity detection (Fury, Adventurer, Starfire, Garmin, Llama 4), Path F framing correction for mixed product reviews, emotional terms (ickiness, glassholism, privacy minefield, spying, paranoid) |
+| `test_gizmodo_brain2qwerty_v2.py` | 13 | Context-aware false-positive suppression: catastrophizing in dream/sleep narrative, loaded language "invasive" in medical/surgical context, emotional appeal "unable to speak" as factual medical description, ironic quotation definitional introduction, framing correction guard on positive medical articles |
 | `test_hypocrisy_medical_duress.py` | 16 | Hypocrisy frame detection: "the only company that has not" patterns, medical duress framing, healthcare-as-leverage patterns, prepositional phrase tolerance in entity–negation gaps |
 | `test_wynn_williams_fixes.py` | 18 | Guardian Wynn-Williams lawsuit fixes: source extraction false positives (day names "Wednesday", book titles "Careless People"), litigation framing expansion (complaint, suing, arbitration patterns), power_asymmetry per-violation fines with intervening adjectives |
 | `test_virtue_ai_acquihire.py` | 14 | Virtue AI acqui-hire entity detection (Virtue AI, Bo Li, Dawn Song, Sanmi Koyejo, FAIR, BIS, CAISI, Howard Lutnick), ironic_quotation tech-jargon filter, emotional language additions |

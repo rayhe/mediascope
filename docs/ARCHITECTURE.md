@@ -407,7 +407,7 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # Annotated real-article analyses
-├── tests/                       # 1234 tests across 48 test files (all from real articles)
+├── tests/                       # 1247 tests across 49 test files (all from real articles)
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
@@ -418,6 +418,7 @@ mediascope/
 │   ├── test_entities.py        # Entity detection, regex, false-positive exclusion
 │   ├── test_glasses_deep_dive.py # Glasses launch fixes: kicker framing, product-name stop-filter, emotional_appeal exclusion
 │   ├── test_gizmodo_fury_review.py # Gizmodo Meta Fury contradictory review: entity detection, Path F tone correction, emotional terms
+│   ├── test_gizmodo_brain2qwerty_v2.py # Context-aware false-positive suppression: dream/sleep catastrophizing, medical loaded language, factual medical emotional appeal, definitional ironic quotation
 │   ├── test_hypocrisy_medical_duress.py # Hypocrisy frame detection, medical duress framing, healthcare-as-leverage patterns
 │   ├── test_loaded_language_uproar.py # Loaded language detection, workplace coercion terms
 │   ├── test_nyt_ai_reviews.py   # Isolation framing, pressure language, VADER correction
