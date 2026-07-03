@@ -10991,3 +10991,28 @@ Fast Company article analysis: "Mark Zuckerberg rejects AI job loss fears after 
 - Sample output files: 164 (was 162)
 - Test files: 47 (was 46)
 - Files changed: 6 (sources.py, ARCHITECTURE.md, README.md, + 2 new sample_output files, + 1 new test file)
+
+---
+
+## 2026-07-02 20:20 PT — Type A: Article Deep Dive (Memeburn Google/Meta Gemini Compute)
+
+### Focus
+Memeburn editorial: "Google Told Meta 'No' on Gemini: That Should Worry Every AI Company" (Jul 1, 2026). ~1,550-word editorial analysis of Google capping Meta's Gemini API access due to compute constraints, Meta's pivot to Muse Spark, and structural AI compute shortage. Cross-outlet pair with existing Reuters wire analysis of the same event.
+
+### What Improved
+1. **ironic_quotation false positive fix:** Added ML terms (`inference`, `token`, `tokens`, `compute`, `latency`, `embeddings`, `hallucination`, `hallucinations`) to `_TECH_JARGON` suppression set. Added `" called "` and `"(called "` to `_PRODUCT_NAMING` lookback context. Prevents pedagogical/definitional quotation marks from triggering as scare quotes (e.g., `called "inference"` in FAQ articles).
+2. **analogy_metaphor false positive fix:** Split `comparable to` out of shared formal-analogy regex into own pattern with negative lookahead for possessive/determiner pronouns (`its/their/the/this/that/our/his/her`). Factual benchmark comparisons ("comparable to its previous model") no longer trigger; rhetorical analogies still match. Pattern count: 320 → 321.
+3. **Entity false positive fix:** "Access now scales with..." was misdetected as the organization "Access Now". Added sentence-start disambiguation in `detect_entities()` — skips "Access Now" match at position 0 or after sentence boundary.
+4. **Full analysis file:** 173-line cross-publication comparison (Memeburn editorial vs Reuters wire). Key asymmetry: agency attribution 0.0 (Reuters passive) vs 1.0 (Memeburn active), framing density 7 vs 2 devices, speculative ratio 0.24 (declarative editorial) vs 0.57 (attribution-based wire).
+
+### Key Findings
+- Same facts, opposite framing: Reuters depersonalizes ("the shortfall disrupted"), Memeburn activates ("Google told Meta," "Being cut off")
+- Memeburn uses structural escalation (bilateral event → industry crisis → existential FAQ) — a framing device not currently in the taxonomy
+- Editorial "we" voice ("We think that gap is the most important number") is a distinct authority-claiming framing device, different from `assumed_consensus`
+- Identified `comparative_framing` scoring anomaly (returns -1.0 on article with extensive comparisons)
+
+### Stats
+- Tests: 1217 passed, 2 xfailed (0 failures)
+- Pattern count: 320 → 321 (split comparable_to)
+- Sample output files: 166 (was 164)
+- Commit: 19cc7c3, pushed to GitHub
