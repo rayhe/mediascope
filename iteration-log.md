@@ -3,6 +3,61 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-03 04:00 PT — Type B: Journalist Research — Mat Honan Deep Profile Expansion (EIC, MIT Technology Review)
+
+### Focus
+Mat Honan — editor-in-chief of MIT Technology Review, one of our 5 tracked publications — had a critically thin profile (3 entries, 529 note chars). As EIC, he sets the institutional framing environment for every article published by MIT TR. Expanded to 6 career entries spanning 5 publication slugs with 5,206 note chars of sourced detail.
+
+### Career Reconstruction
+Researched and reconstructed his full 20+ year career path:
+
+1. **Macworld/freelance (~2002-2007):** Associate editor at Macworld (IDG flagship Apple pub). Extensive freelance career: Popular Science, National Journal, NY Sun, Mother Jones, Salon, O The Oprah Magazine, Budget Travel, 7x7, The Awl, Bold Italic, Runner's World, Women's Health, Time. Created barackobamaisyournewbicycle.com (Feb 13, 2008) — Jason Kottke credited it with coining the "single-serving site" concept. Adapted to book "Barack Obama Is Your New Bicycle" (Gotham Books, 2008). Born ~1972-1973 (was 35 in 2008 per Boston Phoenix).
+
+2. **Wired contributing editor (2007-2010, first stint):** Monthly column, features. Calysto press release confirms "contributing editor for Wired since 2007." Notable: "I Am Here: One Man's Experiment With the Location-Aware Lifestyle" (Wired, Jan 2009). Pop-Up Magazine live journalism.
+
+3. **Gizmodo senior reporter (~2010-2012):** Replaced Jason Chen after iPhone 4 prototype raid. 22 pages of bylined posts. Notable: "Fever Dream of a Guilt-Ridden Gadget Reporter" (Jan 2012), "Unlike: Why Facebook Integration Is Actually Antisocial" (critical of FB privacy — pre-dates MIT TR hosting Karen Hao's adversarial Meta coverage). Gawker Media tabloid-adversarial house style = formative framing influence.
+
+4. **Wired senior writer (2012-2014, second stint):** Enriched existing entry. "How Apple and Amazon Security Flaws Led to My Epic Hacking" (Aug 2012) forced Apple to suspend phone-based iCloud resets and add 2FA within 8 months (Mar 2013). "Welcome to Google Island" (May 2013). TV: CNBC, CNN, NBC Dateline, NPR Morning Edition, NOVA, PBS NewsHour, BBC Horizon. Longform Podcast #42 editorial philosophy: "I like to skewer that stuff."
+
+5. **BuzzFeed News (2015-2021):** Enriched. Hired by Ben Smith (via Kara Swisher/Re/code). Built team: John Paczkowski (Re/code), William Alden (NYT Dealbook), Caroline O'Donovan (Nieman Lab). BuzzFeed Open Lab. Netflix "Follow This" (2018). Teams won Polk, Livingston, Mirror, and 2021 Pulitzer (International Reporting — Uyghur camps via satellite imagery). Departed before BuzzFeed News shutdown (Apr 2023).
+
+6. **MIT TR EIC (2021-present):** Enriched. Succeeded Gideon Lichfield (→ Wired EIC, KEY DOUBLE MIGRATION). Hired by CEO Elizabeth Bramson-Boudreau. "The Debrief" newsletter, "10 Breakthrough Technologies" stewardship. Podcast appearances: Tech Nation (Jan 2025), "Inevitable vs. Unknown" (Nov 2025), Rothkopf (Feb 2026 — "Why Do People Hate AI Moguls?"). 20-person editorial team. $292K + $74K benefits (FY2024 990).
+
+### Documentation Fixes (Pre-Existing Failures Resolved)
+- EDITORIAL_HISTORIES.md: 119 → 120 multi-pub count (stale since prior iteration added journalists without updating docs)
+- README.md: 375 → 380 auto-detected migrations (3 new edges from Honan's expanded career)
+- README.md: Added Mat Honan to notable migrations list (previously absent despite being EIC of tracked pub)
+
+### Tests
+- Full suite: **1245 passed**, 2 xfailed, **0 failures** (fixed 2 pre-existing consistency failures)
+- 9/9 journalist count consistency tests pass
+
+### Why This Matters
+Mat Honan is the HIGHEST-VALUE editorial figure for the MIT TR analysis — his editorial instincts (consumer-protection, industry-skeptical, Gawker DNA, investigative-team-builder) directly shape the institutional framing environment for every article MIT TR publishes. His career also creates a multi-outlet editorial culture bridge: Macworld → Wired → Gizmodo → Wired → BuzzFeed → MIT TR. The Lichfield→Honan→Drummond EIC lineage connects MIT TR and Wired through shared leadership — Lichfield left MIT TR for Wired EIC, Honan replaced him, creating a natural experiment in whether institutional framing follows the leader or stays with the publication.
+
+### Files Changed
+- `profiles/careers/journalists.yaml` — Mat Honan expanded (3→6 entries, 529→5206 note chars)
+- `README.md` — migration count 375→380, Mat Honan added to notable migrations list
+- `docs/EDITORIAL_HISTORIES.md` — multi-pub count 119→120
+
+### Sources
+- event.technologyreview.com (EmTech MIT 2025 speaker bio)
+- chartwellspeakers.com/speaker/mat-honan/ (Chartwell speaker bio)
+- technologyreview.com/2021/06/22/1026816/mat-honan-joins... (hire announcement)
+- calysto.com/mat-honan-joins-gizmodo/ (Gizmodo hire press release)
+- venturebeat.com/media/buzzfeed-unveils... (BuzzFeed SF bureau launch)
+- talkingbiznews.com/.../buzzfeed-hires-wireds-honan/ (BuzzFeed hire)
+- muckrack.com Mat Honan profile (publication list)
+- bostonphoenix.com Obama bicycle article (personal details, age)
+- kottke.org (single-serving site coinage credit)
+- propublica.org MuckReads podcast (epic hacking interview)
+- everand.com Longform Podcast #42 (editorial philosophy quote)
+- gizmodo.com author pages 14/22, 20/22 (byline date range)
+- appleinsider.com (Aug 2012 hack cascade details)
+- venturebeat.com (Apple 2FA response timeline)
+- watch.plex.tv (Follow This Netflix 2018, NOVA, BBC Horizon)
+
+---
 ## 2026-07-02 22:00 PT — Type A: Article Deep Dive — Gizmodo Brain2Qwerty v2 False-Positive Correction
 
 ### Focus
