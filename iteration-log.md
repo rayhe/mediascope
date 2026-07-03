@@ -11016,3 +11016,36 @@ Memeburn editorial: "Google Told Meta 'No' on Gemini: That Should Worry Every AI
 - Pattern count: 320 → 321 (split comparable_to)
 - Sample output files: 166 (was 164)
 - Commit: 19cc7c3, pushed to GitHub
+
+---
+
+## 2026-07-02 21:00 PT — Type A: Article Deep Dive (Guardian Meta AI CSAM "Junk" Tips)
+
+### Focus
+Guardian (Katie McQue) article via Decrypt mirror: "Meta's AI Floods Child Abuse Investigators With 'Junk' Tips, Law Enforcement Officials Claim" (Jun 2026). ~860-word investigative article about ICAC officers testifying during New Mexico trial that Meta's AI-generated CyberTips are overwhelming investigators with low-quality reports. Features outsourced-intensity framing through law enforcement testimony quotes.
+
+### What Improved
+1. **Entity: ICAC / Internet Crimes Against Children Task Force** added to US Government cluster. Previously undetected — this is a major federal/state law enforcement entity that appears in child safety litigation coverage. Added regex pattern to catch both "ICAC" (case-sensitive) and "Internet Crimes Against Children Task Force" (full name).
+2. **Entity: Public Citizen** added to Privacy/Civil Liberties Orgs cluster. Advocacy organization frequently quoted in tech regulation articles. Was not in any cluster.
+3. **Entity: Report Act / REPORT Act** added to Child Safety Legislation cluster. Federal legislation (signed May 2024) that expanded CSAM reporting requirements. Added regex for both "Report Act" and "REPORT Act" (case-sensitive acronym form).
+4. **Entity: CyberTipline / CyberTips** added to Research Centers cluster (alongside NCMEC). NCMEC's reporting system is a frequently referenced entity in child safety coverage. Added regex matching "CyberTipline," "CyberTips," and "cybertips."
+5. **Outsourced intensity: law enforcement/investigator patterns** — 4 new regex patterns (321 → 325 total). The most significant framing device in this article was entirely missed: journalists using law enforcement officers' testimony quotes to carry emotional weight ("junk," "drowning," "killing morale") while maintaining neutral editorial voice. New patterns cover:
+   - Officer/agent/investigator credential + loaded quote
+   - Reverse: loaded quote + officer/agent attribution
+   - Testimony-outsourced ("testified" / "told the court/jury/committee") without requiring credential in span
+   - Policy advocate/watchdog outsourced critique (Public Citizen, Common Sense Media, consumer advocate)
+6. **Full analysis file:** 173-line deep dive covering entity, framing, topic, sentiment, and source stance analysis. Documents "neutral voice, loaded architecture" pattern and "statistical jiu-jitsu" technique (Meta's own transparency data used as ammunition).
+
+### Key Findings
+- Dominant framing technique: outsourced negativity through law enforcement testimony. Journalist never editorializes; all emotional charge comes through ICAC officer quotes.
+- Source ratio: 4 critical (3 ICAC + 1 Public Citizen) vs 1 defensive (Meta spokesperson) = 80% critical sourcing
+- Meta's own statistics weaponized: 20.5M tips, 67-minute response time, 2M CyberTip reports — all presented as evidence of the problem, not the defense they were intended as
+- workplace_culture topic false positive from "laid off" + "morale" — documented as known limitation (contextual, hard to fix without NLP)
+- Anonymous sources carry the most emotionally loaded quotes (strategic source selection)
+
+### Stats
+- Tests: 1234 collected, 1232 passed, 2 xfailed (0 failures) — was 1219
+- Pattern count: 321 → 325 (4 new outsourced_intensity patterns)
+- Sample output files: 168 (was 166)
+- Test files: 48 (was 47)
+- Files changed: 7 (entities.py, framing.py, ARCHITECTURE.md, README.md, test_structural_consistency.py, + 1 new test file, + 2 new sample_output files)

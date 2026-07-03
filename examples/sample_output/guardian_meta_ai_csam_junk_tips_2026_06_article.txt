@@ -1,0 +1,43 @@
+Meta's AI Floods Child Abuse Investigators With 'Junk' Tips, Law Enforcement Officials Claim
+
+Source: The Guardian (Katie McQue), via Decrypt mirror
+Date: June 2026
+Publication: The Guardian
+
+Meta's use of artificial intelligence to police its platforms is generating large volumes of low-quality reports that are draining resources and slowing child abuse investigations, according to a report by The Guardian.
+
+The news comes as New Mexico law enforcement officials testified last week that AI-generated reports are overwhelming investigators and slowing child exploitation cases.
+
+Officers with the Internet Crimes Against Children Task Force program specifically cited Meta's automated systems, saying they generate thousands of unusable tips each month that are forwarded to law enforcement.
+
+"We get a lot of tips from Meta that are just kind of junk," Benjamin Zwiebel, a special agent with the ICAC taskforce in New Mexico, testified during the state's trial against the company.
+
+Another ICAC officer, speaking anonymously, told The Guardian the department's cybertips doubled from 2024 to 2025.
+
+"It's pretty overwhelming because we're getting so many reports, but the quality of the reports is really lacking in terms of our ability to take serious action," they said.
+
+In a statement shared with Decrypt, a Meta spokesperson said the company has long cooperated with law enforcement and noted that the Department of Justice and the National Center for Missing & Exploited Children have praised its reporting process.
+
+"In 2024, we received over 9,000 emergency requests from U.S. authorities and resolved them within an average of 67 minutes and even more quickly for cases involving child safety and suicide," the spokesperson said.
+
+"Consistent with applicable law, we also report apparent child sexual exploitation imagery to NCMEC and support them to prioritize reports, from helping build their case management tool to labeling cybertips so they know which are urgent," they added.
+
+ICAC officers, however, said some of the reports sent by Meta are not criminal in nature, while others lack credible evidence needed to pursue a case.
+
+The increase follows the Report Act, which was signed into law in May 2024 and expanded reporting requirements to include planned or imminent abuse, child sex trafficking, and related exploitation, while requiring companies to preserve evidence longer.
+
+Meta remains the largest source of reports to NCMEC's CyberTipline, accounting for about two-thirds of the 20.5 million tips received in 2024, down from 36.2 million in 2023. The decline has been attributed in part to changes in Meta's reporting practices.
+
+In its August 2025 integrity report, Meta said Facebook, Instagram, and Threads sent more than 2 million CyberTip reports to NCMEC in the second quarter of 2025. Of those, more than 528,000 involved inappropriate interactions with children, while more than 1.5 million involved the sharing or re-sharing of child sexual abuse material.
+
+Despite those figures, JB Branch, a policy advocate at Public Citizen, said the increased reliance on AI has made the Report Act less efficient for investigators reviewing cases, arguing that while algorithms have long helped reduce moderators' workload, human reviewers were the most effective filter.
+
+"Part of the problem here is that a lot of these tech companies have laid off content moderators and replaced them with AI security features," Branch told Decrypt. "As a result, there is an overabundance of false positives being selected out of an overabundance of caution."
+
+In the past, Branch said, there were typically more human reviewers in the review chain who could identify and remove content that did not warrant escalation.
+
+"Because these companies have removed human content moderators or reviewers from the chain, way more things are getting passed off because they want to err on the side of caution," he said. "They're basically dragging a broader net and capturing things that don't even qualify, and they're relying heavily on AI tools to do that."
+
+Investigators say the impact of faulty AI-generated tips is now being felt inside the task forces reviewing them.
+
+"It is killing morale. We are drowning in tips, and we want to get out there and do this work," an ICAC officer reportedly said. "We don't have the personnel to sustain that. There's no way that we can keep up with the flood that's coming in."

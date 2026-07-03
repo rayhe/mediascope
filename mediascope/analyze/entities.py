@@ -249,6 +249,8 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "US Navy", "US Marine Corps", "US Air Force",
             "US Special Operations Command",
             "White House",
+            "ICAC", "Internet Crimes Against Children",
+            "Internet Crimes Against Children Task Force",
         ],
         "regex": r"(?<!\w)(Pentagon|Department of Defense|FBI|CIA"
                  r"|NSA|National Security Agency"
@@ -269,7 +271,8 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|Justice Department|Department of Justice|(?-i:DOJ)"
                  r"|(?:US |U\.S\. |the )Army"
                  r"|(?:US |U\.S\. )(?:Navy|Marine Corps|Air Force)"
-                 r"|White House)(?!\w)",
+                 r"|White House"
+                 r"|(?-i:ICAC)|Internet Crimes Against Children(?:\s+Task Force)?)(?!\w)",
     },
     "Surveillance/Biometrics": {
         "aliases": [
@@ -284,6 +287,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Access Now", "Fight for the Future",
             "Electronic Privacy Information Center", "EPIC",
             "NOYB", "Irish Council for Civil Liberties", "ICCL",
+            "Public Citizen",
         ],
     },
     "Media/Publications": {
@@ -558,6 +562,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Center for Humane Technology",
             "Internet Watch Foundation", "IWF",
             "National Center for Missing & Exploited Children", "NCMEC",
+            "CyberTipline",
             "Thorn",
             "Family Online Safety Institute", "FOSI",
         ],
@@ -566,6 +571,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|Center for Humane Technology"
                  r"|Internet Watch Foundation|(?-i:IWF)"
                  r"|National Center for Missing (?:&|and) Exploited Children|(?-i:NCMEC)"
+                 r"|CyberTip(?:line|s?)"
                  r"|Thorn"
                  r"|Family Online Safety Institute|(?-i:FOSI))(?!\w)",
     },
@@ -576,12 +582,14 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "KOSA", "Kids Online Safety Act",
             "EARN IT Act",
             "Age Appropriate Design Code",
+            "Report Act", "REPORT Act",
         ],
         "regex": r"(?<!\w)((?-i:KIDS)\s+Act|Kids Internet Design and Safety Act"
                  r"|(?-i:COPPA)|Children's Online Privacy Protection Act"
                  r"|(?-i:KOSA)|Kids Online Safety Act"
                  r"|(?-i:EARN\s+IT)\s+Act"
-                 r"|Age Appropriate Design Code)(?!\w)",
+                 r"|Age Appropriate Design Code"
+                 r"|(?-i:REPORT)\s+Act|Report Act)(?!\w)",
     },
     "Child Safety Researchers": {
         "aliases": [

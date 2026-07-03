@@ -2767,6 +2767,90 @@ _OUTSOURCED_INTENSITY_PATTERNS: list[re.Pattern] = [
         r"racial slur|slur)\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # --- Law enforcement / investigator outsourced intensity patterns ---
+    # Journalist uses law enforcement officers, agents, investigators, or
+    # task-force members as the vehicle for emotional/damning criticism.
+    # The reporter's own prose stays neutral ("officers said," "testified")
+    # while the quoted officials carry the loaded language.
+    #
+    # Identified in Guardian/Decrypt Meta AI CSAM "junk" tips article (Jun 2026):
+    #   "We get a lot of tips from Meta that are just kind of junk"
+    #     — Benjamin Zwiebel, ICAC special agent, testified at trial
+    #   "It is killing morale. We are drowning in tips"
+    #     — anonymous ICAC officer
+    #   "It's pretty overwhelming because we're getting so many reports,
+    #    but the quality of the reports is really lacking"
+    #     — anonymous ICAC officer
+    # The journalist never editorializes; all emotional intensity is
+    # outsourced to credentialed law enforcement sources.
+
+    # Pattern: officer/agent/investigator credential near loaded quote
+    re.compile(
+        r"\b(?:officer|agent|investigator|detective|sergeant|"
+        r"lieutenant|captain|commander|inspector|deputy|"
+        r"special agent|task\s*force|law enforcement)\b"
+        r".{0,120}?"
+        r'["\u201c]'
+        r'(?:[^"\u201d]{0,250}?)'
+        r"\b(?:junk|overwhelming|drowning|killing|flood(?:ing|ed)?|"
+        r"buried|swamped|crushed|impossible|unsustainable|"
+        r"useless|worthless|broken|failing|crippling|"
+        r"nightmare|disaster|crisis|catastroph|unbearable|"
+        r"morale|can't keep up|no way|not enough)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse: loaded quote then officer/agent attribution
+    re.compile(
+        r'["\u201c]'
+        r'(?:[^"\u201d]{0,250}?)'
+        r"\b(?:junk|overwhelming|drowning|killing|flood(?:ing|ed)?|"
+        r"buried|swamped|crushed|impossible|unsustainable|"
+        r"useless|worthless|broken|failing|crippling|"
+        r"nightmare|disaster|crisis|catastroph|unbearable|"
+        r"morale|can't keep up|no way|not enough)\b"
+        r'(?:[^"\u201d]{0,80}?)'
+        r'["\u201d]'
+        r".{0,80}?"
+        r"\b(?:officer|agent|investigator|detective|"
+        r"special agent|task\s*force|law enforcement|"
+        r"testified|told the court|told the jury)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Testimony-outsourced: "testified" / "told [pub]" near loaded quote
+    # (credential may not be adjacent — covers "X testified during the
+    # state's trial" without requiring officer/agent in the same span)
+    re.compile(
+        r'["\u201c]'
+        r'(?:[^"\u201d]{0,250}?)'
+        r"\b(?:junk|overwhelming|drowning|killing|flood(?:ing|ed)?|"
+        r"buried|swamped|crushed|impossible|unsustainable|"
+        r"useless|worthless|broken|failing|crippling|"
+        r"nightmare|disaster|catastroph|unbearable|"
+        r"morale|can't keep up|no way|not enough)\b"
+        r'(?:[^"\u201d]{0,80}?)'
+        r'["\u201d]'
+        r".{0,40}?"
+        r"\b(?:testified|told (?:the )?(?:court|jury|tribunal|"
+        r"committee|panel|hearing|commission|inquiry))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Policy advocate / advocacy org outsourced critique
+    # e.g., JB Branch, Public Citizen: "these companies have laid off
+    # content moderators and replaced them with AI"
+    re.compile(
+        r"\b(?:policy\s+advocate|advocacy|activist|campaigner|"
+        r"watchdog|consumer\s+(?:advocate|group)|"
+        r"Public Citizen|Common Sense Media|"
+        r"policy\s+(?:analyst|director|advisor))\b"
+        r".{0,120}?"
+        r'["\u201c]'
+        r'(?:[^"\u201d]{0,250}?)'
+        r"\b(?:laid off|replaced|removed|gutted|eliminated|"
+        r"cut(?:ting)?|slashed|dismantled|hollowed|"
+        r"overabundance|false positive|broader net|"
+        r"erring on the side|overwhelming|unsustainable)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
 ]
 
 _DEVICE_PATTERNS["outsourced_intensity"] = _OUTSOURCED_INTENSITY_PATTERNS
