@@ -1,0 +1,40 @@
+SOURCE: Fast Company
+URL: https://www.fastcompany.com/91567637/mark-zuckerberg-pushes-back-against-ai-job-loss-fears-after-metas-own-layoffs
+TITLE: Mark Zuckerberg rejects AI job loss fears after Meta layoffs
+DATE: July 2, 2026
+AUTHOR: Fast Company staff (via Complex's Idea Generation interview)
+RETRIEVED: 2026-07-02
+
+---
+
+Mark Zuckerberg rejects AI job loss fears after Meta layoffs
+
+During an interview last week on Complex's Idea Generation series, Meta CEO Mark Zuckerberg addressed one of the industry's most contentious points: whether or not AI will lead to widespread employment loss.
+
+"There's a lot of anxiety about job displacement," Zuckerberg said during the Q&A with the global entertainment network and lifestyle platform. "Companies are always trying to do things more efficiently. If companies get very good at automating stuff faster than individuals get better at productivity, then you kind of assume that the number of jobs decrease."
+
+"But I think that people assume that that's inevitability," he added. "I don't actually think it is. I think if you focus on empowering people and making people more productive, and that happens at a faster rate than companies getting better at automating things, then in theory there should be more jobs in the future, not less."
+
+Zuckerberg added that there is a "path forward that can be very positive."
+
+"If you have a balance where some companies are focused on making it so that companies can work more efficiently, but others are focused on more of this personal superintelligence vision where you're, like, empowering individuals and making people more productive at each step along the way, then I think it's probably going to be pretty good," he said.
+
+In May, Meta laid off nearly 10% of its workforce, eliminating 8,000 roles and closing 6,000 open positions.
+
+In an internal memo, the company said the cuts would allow the company to run "more efficiently" and "allow us to offset the other investments we're making."
+
+Tech leaders tend to be divided on the topic of AI job displacement. Nvidia's Jensen Huang said that AI has been used as a "lazy" excuse for layoffs. OpenAI's Sam Altman said that AI would make jobs disappear, but recently backtracked on that claim, stating he was wrong about his prediction. And last year, Anthropic's Dario Amodei said that AI could wipe out 50% of entry-level white-collar jobs.
+
+During the interview, Zuckerberg reiterated that Meta's approach to AI is individual-first: putting the power of the tech in people's hands. Zuckerberg himself is also resistant to the idea of a single, centralized AI system.
+
+"I don't want to live in a future where there is one big AI," he said. "I think that's a bad future. No matter how good the AI is, I think that's not good."
+
+When it comes to the progress of Meta's Superintelligence Labs, Zuckerberg said the year-old AI lab is "making a lot of progress."
+
+"If you told me that we'd be where we are today in terms of the model progress, I would've been very happy with that," Zuckerberg said. "But because I have acclimated to the good news along the way, I now think that we should be doing even better."
+
+Overall, Zuckerberg said the industry is making good progress especially on the hardware front.
+
+The company recently announced a new lineup of Meta Glasses. During the interview, Zuckerberg said he believes "glasses are the next computing platform." As the technology behind the glasses becomes more advanced, Zuckerberg predicts that they'll emerge as the primary device used and become more integrated into people's daily lives.
+
+As for how Meta Glasses have changed his personal life, Zuckerberg said, in between laughs: "I've taken business calls on a Jet Ski. Not often, but it has happened. And the other person could not tell I was on it."

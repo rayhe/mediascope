@@ -10953,3 +10953,41 @@ Joel Khalili (Wired reporter) profile update — discovered significant beat exp
 - Migrations: 356 (was 355)
 - Journalists: 117 (unchanged)
 - Commit: f4c52c7
+
+## 2026-07-02 19:00 PT — Type A: Article Deep Dive (Fast Company / Zuckerberg AI job fears)
+
+### Focus
+Fast Company article analysis: "Mark Zuckerberg rejects AI job loss fears after Meta layoffs" (Jul 2, 2026). CEO interview recap from Complex's Idea Generation series. Not a tracked publication — calibration analysis.
+
+### Bug Fix: Possessive Affiliation Extraction (sources.py)
+**Problem:** `_extract_affiliation()` used a 200-char context window where the generic "of/at/from [Org]" pattern matched unrelated phrases (Jensen Huang → "AI job displacement") and possessive patterns bled across adjacent source mentions (Sam Altman → "Nvidia's Jensen Huang").
+
+**Root cause:** Position-unaware pattern matching in context windows. Dense paragraphs with multiple "Org's Person said" attributions produced cross-contamination.
+
+**Fix:**
+1. New `_extract_direct_possessive()` — 40-char position-aware lookback for `[Org]'s` immediately before the source name in original text.
+2. New highest-priority pattern in `_extract_affiliation()` — handles `[Org]'s [FirstName] [LastName] [verb]` pattern.
+3. `extract_sources()` now tries direct possessive first, falls back to context-window extraction.
+
+**Result:** Jensen Huang → Nvidia ✓, Sam Altman → OpenAI ✓, Dario Amodei → Anthropic ✓ (all previously wrong).
+
+### Analysis Findings
+- Toolkit raw_tone (+0.675) is ~27pp higher than manual assessment (+0.40) — expected for CEO interview genre where subject's optimistic quotes dominate word count.
+- headline_body_alignment (-0.800) correctly identifies clickbait-negative headline on a puff interview.
+- No framing correction fired — correct, article IS genuinely positive in body. Only 1 adversarial device (catastrophizing from Amodei quote, not editorial).
+- Source authority (+0.800) correctly high — all named sources, neutral verbs.
+- Noted remaining gaps: "rejects" verb from headline, missing ai_development topic, quoted-vs-editorial catastrophizing.
+
+### Changes
+1. `mediascope/analyze/sources.py` — added `_extract_direct_possessive()` function, new possessive-person pattern in `_extract_affiliation()`, updated both source detection paths to use direct possessive first. Pattern index bump (3→4) for possessive institution pattern.
+2. `tests/test_possessive_affiliation.py` — 12 new tests (3 classes: direct extraction, pattern priority, end-to-end integration).
+3. `examples/sample_output/fastcompany_zuckerberg_ai_job_fears_2026_07_02_article.txt` — formatted article text.
+4. `examples/sample_output/fastcompany_zuckerberg_ai_job_fears_2026_07_02_analysis.md` — full annotated analysis.
+5. `docs/ARCHITECTURE.md` — added test file entry, updated test count 1207→1219, file count 46→47.
+6. `README.md` — updated test count 1207→1219, file count 46→47.
+
+### Stats
+- Tests: 1219 collected, 1217 passed, 2 xfailed (0 failures)
+- Sample output files: 164 (was 162)
+- Test files: 47 (was 46)
+- Files changed: 6 (sources.py, ARCHITECTURE.md, README.md, + 2 new sample_output files, + 1 new test file)

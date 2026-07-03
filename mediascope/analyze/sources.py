@@ -227,6 +227,21 @@ def _extract_affiliation(context: str) -> str:
     _INST_CHARS = r"A-Za-z &\-\u2013\u2014''\."
 
     patterns = [
+        # Pattern -1 (HIGHEST priority): "[Org]'s [Person Name] verb"
+        # Handles the journalism pattern "Nvidia's Jensen Huang said",
+        # "Anthropic's Dario Amodei said", "OpenAI's Sam Altman said".
+        # Returns just the org name, not "Org's Person Name".
+        # Must fire before Pattern 1 ("of/at/from [Org]") which can match
+        # unrelated phrases from the context window.
+        re.compile(
+            r"([A-Z][A-Za-z]+)['\u2019]s\s+"
+            r"[A-Z][a-z]+\s+[A-Z][a-z]+\s+"
+            r"(?:said|told|added|noted|explained|argues|warned|recalled|"
+            r"acknowledged|revealed|claimed|contended|suggested|reported|"
+            r"confirmed|insisted|reiterated|predicts|believes|stressed|"
+            r"emphasized|stated|says|declined|maintains|asserted|countered|"
+            r"testified|responded|disclosed|conceded|admitted|objected)",
+        ),
         # Pattern 0 (most specific): "[Organization]'s CEO/president/director/etc."
         # Must be tried first — prevents false positives from the broader
         # "of [Organization]" pattern that can match junk from context window.
@@ -287,7 +302,7 @@ def _extract_affiliation(context: str) -> str:
     for i, pat in enumerate(patterns):
         m = pat.search(context)
         if m:
-            if i == 3:
+            if i == 4:
                 # Possessive pattern (Pattern 2): combine "Georgetown" + "Center for ..."
                 aff = m.group(1).strip() + "'s " + m.group(2).strip()
             else:
@@ -306,6 +321,28 @@ def _find_attribution_verb(context: str) -> str:
         pattern = re.compile(rf"\b{re.escape(verb)}\b", re.IGNORECASE)
         if pattern.search(context_lower):
             return verb
+    return ""
+
+
+def _extract_direct_possessive(text: str, name_start: int) -> str:
+    """Check for '[Org]'s' immediately before a source name in the full text.
+
+    Handles the common journalism pattern: "Nvidia's Jensen Huang said".
+    Returns just the org name (e.g. "Nvidia") or empty string if no match.
+
+    This is more precise than _extract_affiliation because it uses the
+    exact position of the source name in the original text, not a context
+    window that may include other possessives from adjacent sentences.
+    """
+    # Look back up to 40 chars before the name for "[Org]'s "
+    lookback_start = max(0, name_start - 40)
+    lookback = text[lookback_start:name_start]
+    m = re.search(
+        r"([A-Z][A-Za-z]+)['\u2019]s\s+$",
+        lookback,
+    )
+    if m:
+        return m.group(1).strip()
     return ""
 
 
@@ -360,7 +397,7 @@ def extract_sources(text: str) -> list[SourceMention]:
             name=name,
             is_anonymous=False,
             is_expert=_is_expert_by_title(context),
-            affiliation=_extract_affiliation(context),
+            affiliation=_extract_direct_possessive(text, m.start()) or _extract_affiliation(context),
             quote=_extract_nearby_quote(text, m.start(), m.end()),
             attribution_verb=verb,
         ))
@@ -393,11 +430,13 @@ def extract_sources(text: str) -> list[SourceMention]:
         ctx_end = min(len(text), m.end() + 100)
         context = text[ctx_start:ctx_end]
 
+        # For "verb Name" pattern, the name starts at m.start() of group 2
+        name_pos = m.start(2)
         sources.append(SourceMention(
             name=name,
             is_anonymous=False,
             is_expert=_is_expert_by_title(context),
-            affiliation=_extract_affiliation(context),
+            affiliation=_extract_direct_possessive(text, name_pos) or _extract_affiliation(context),
             quote=_extract_nearby_quote(text, m.start(), m.end()),
             attribution_verb=verb,
         ))
