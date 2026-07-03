@@ -11289,3 +11289,22 @@ Guardian (Katie McQue) article via Decrypt mirror: "Meta's AI Floods Child Abuse
 - broadwaystars.com (aggregated Guardian bylines as "Social Affairs Correspondent")
 - odonnell-tuomey.ie (Guardian byline July 2011 confirmed)
 - orwellfoundation.com/judge/robert-booth/ (existing source, bio wording)
+
+### 2026-07-03 06:00 PT — Type D: Toolkit Quality & Documentation
+
+**Focus:** QUALITY_STANDARDS.md expansion + stale count fixes across documentation.
+
+**Changes:**
+
+1. **QUALITY_STANDARDS.md expanded from 210→~340 lines** with three new sections:
+   - **§8 Emotional Language Validation:** Documents the 735-term lexicon across 14 domain-specific categories (each traced to a discovery article). Covers maintenance standards (real-article origin, deduplication, false-positive awareness, regression tests) and scoring impact ranges by genre.
+   - **§9 Claims-Evidence Mapping:** Documents `extract_claims()` / `map_claims_to_evidence()` API, 4 claim types (statistic/quote/citation/assertion), source attribution rules, output structure (keys: sourced, unsourced, by_type, total, sourced_ratio), and quality thresholds (sourced_ratio ≥ 0.6).
+   - **§10 Same-Event Comparison Standards:** Documents article pair requirements (same event/same day, wire-service baseline, full pipeline on both, 7-dimension comparison matrix, genre acknowledgment) and lists the 3 validated comparisons in corpus.
+
+2. **Stale count fixes:**
+   - QUALITY_STANDARDS.md §7: 77→83 annotated articles (matches `examples/sample_output/` article files)
+   - EDITORIAL_HISTORIES.md: 118→120 multi-pub journalists (matches YAML data)
+
+**Stats after:** 1247 tests (1245 passed, 2 xfailed), 0 failures. 53 framing device types, 325 patterns, 735 emotional language terms, 121 journalists (120 multi-pub).
+
+**Commit:** `5a83c2a` — pushed to GitHub.
