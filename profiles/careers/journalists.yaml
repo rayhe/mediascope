@@ -4005,11 +4005,13 @@ journalists:
   - beat: platforms and power, AI governance, elections
     event_type: hired
     notes: 'Hired to cover technology platforms and their power. Led Wired''s AI Elections Project (2024) — appeared on TED
-      AI Show discussing AI''s role in global elections. Now listed as ''senior writer'' (promoted by 2025-2026). Reports
-      on DOGE, government tech, Elon Musk, platform regulation. Co-bylined with Matt Burgess on EU-Big Tech coverage. Regular
-      TV/radio appearances: PBS NewsHour, Al Jazeera, BBC, NPR, NBC.'
+      AI Show discussing AI''s role in global elections. Promoted to senior writer by 2025-2026. Reports on DOGE, government
+      tech, Elon Musk, platform regulation. Co-bylined with Matt Burgess on EU-Big Tech coverage. Regular TV/radio appearances:
+      PBS NewsHour, Al Jazeera, BBC, NPR, NBC. Speaker at Concordia 2024 Annual Summit (billed as "platforms and power
+      reporter"). Prior to journalism career, contributed to NewsGuard as a contributing analyst (misinformation/media
+      credibility ratings).'
     publication: wired
-    role: reporter
+    role: senior_writer
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-elliott-to-cover-platforms-and-power/
     start: 2022-07
   name: Vittoria Elliott
@@ -7172,3 +7174,91 @@ journalists:
     role: head_editorial_innovation
     source_url: https://talkingbiznews.com/they-re-hiring/guardian-names-moran-head-of-innovation/
     start: 2020-01
+- career:
+  - beat: culture, media, digital life
+    end: 2015-01
+    event_type: intern
+    notes: 'Intern. Early career at progressive publications — The Nation is known for left-leaning political and cultural
+      journalism. Levinson also interned at Paper magazine during this period.'
+    publication: the-nation
+    role: intern
+    source_url: https://muckrack.com/alana-levinson/articles
+    start: 2014-01
+  - beat: audience engagement, digital strategy
+    end: 2016-06
+    event_type: hired
+    notes: 'First engagement editor — built audience engagement function. Early-career digital strategy role at a digital-native
+      political news outlet. TPM was an influential model for blogger-to-publisher transitions.'
+    publication: talking-points-memo
+    role: engagement_editor
+    source_url: https://muckrack.com/alana-levinson/articles
+    start: 2015-01
+  - beat: digital culture, editorial strategy
+    end: 2017-06
+    event_type: hired
+    notes: 'Part of team that won first National Magazine Award for digital publication. Medium was the dominant publishing
+      platform at the time, making this a significant editorial achievement. Built editorial teams during Medium''s peak influence
+      period.'
+    publication: medium
+    role: editor
+    source_url: https://muckrack.com/alana-levinson/articles
+    start: 2016-07
+  - beat: enterprise tech, digital culture, futurism
+    end: 2017-06
+    event_type: hired
+    notes: 'Deputy editor covering enterprise tech reporting. Fusion/Real Future was a Univision-owned digital media venture
+      targeting millennial audiences. Short tenure suggests organizational instability (Fusion underwent multiple pivots and
+      eventually folded).'
+    publication: fusion
+    role: deputy_editor
+    source_url: https://muckrack.com/alana-levinson/articles
+    start: 2017-01
+  - beat: longform, investigative, special issues, men and masculinity
+    end: 2020-12
+    event_type: hired
+    notes: 'Deputy editor overseeing longform, investigative features, and special issues. MEL Magazine was a Dollar Shave
+      Club-owned digital magazine covering men and masculinity from a progressive/analytical lens. Levinson helped build the
+      editorial team and oversaw the publication''s most ambitious features. MEL ceased operations in 2022 when Unilever (which
+      acquired Dollar Shave Club) shut it down.'
+    publication: mel-magazine
+    role: deputy_editor
+    source_url: https://muckrack.com/alana-levinson/articles
+    start: 2017-07
+  - beat: editorial consultancy, print launches, podcasts, newsletters
+    end: 2025-11
+    event_type: freelance
+    notes: 'Ran independent editorial consultancy for approximately five years. Launched print publications, podcasts, and
+      newsletters for clients. Also freelanced for Rolling Stone, Mother Jones, Vice, New York, GQ, Vogue, Dwell. This
+      consultancy period is significant because it gave her experience across multiple media formats and publication types
+      before joining Wired — Barrett specifically cited her "entrepreneurial outlook" in the hire announcement.'
+    publication: freelance
+    role: editorial_consultant
+    source_url: https://muckrack.com/alana-levinson/articles
+    start: 2021-01
+  - beat: features, longform, digital culture
+    event_type: hired
+    notes: 'Features editor. Announced by Executive Editor Brian Barrett Nov 13, 2025, started Nov 17, 2025. Based in Wired''s
+      LA office. Barrett: "a sharp eye for digital culture, an entrepreneurial outlook, and a bottomless well of ideas." NOT
+      a tech-journalism-pipeline hire — brings digital culture and longform editorial sensibility from magazine world. Her
+      role shapes how Wired''s feature stories are conceived and developed, making her editorially influential even without
+      a byline beat. ANALYTICAL VALUE: As features editor, Levinson controls narrative framing at the story-structure level
+      (which pitches get developed, how features are shaped, what angle the longform pieces take). This is a different vector
+      of editorial influence than beat reporters or desk directors — less visible but potentially more impactful on the
+      publication''s overall tone. Her MEL Magazine background (progressive/analytical masculinity coverage) and freelance
+      portfolio (Mother Jones, Vice, Rolling Stone) suggest comfort with adversarial and culturally critical framing that
+      aligns with Drummond-era Wired.'
+    publication: wired
+    role: features_editor
+    source_url: https://www.editorandpublisher.com/stories/wired-welcomes-two-new-staff-members-alana-hope-levinson-and-maxwell-zeff,252685
+    start: 2025-11
+  name: Alana Hope Levinson
+  notes: 'Wired features editor since November 2025. UC Berkeley Graduate School of Journalism. Career arc: The Nation/Paper
+    (intern) → Talking Points Memo (first engagement editor) → Medium (NMA-winning team) → Fusion/Real Future (deputy editor)
+    → MEL Magazine (deputy editor, longform/investigative) → editorial consultancy (~5 years) → Wired. Freelanced for Rolling
+    Stone, Mother Jones, Vice, New York, GQ, Vogue, Dwell. ANALYTICAL VALUE: Levinson represents a non-traditional pipeline
+    into Wired — digital culture editor and editorial consultant rather than tech reporter. Her role as features editor means
+    she shapes narrative framing at the story-structure level, influencing how Wired''s longform pieces are conceived and
+    developed. Her progressive-media background (The Nation, Medium, MEL, Mother Jones, Vice) and cultural criticism orientation
+    make her a potential amplifier of Drummond-era editorial posture through story selection and development rather than
+    direct bylines. KEY for MediaScope: her editorial influence is indirect but structural — she does not write about Meta,
+    but she shapes the features that do. Appeared on Tasteland podcast (YouTube) discussing her Wired role.'

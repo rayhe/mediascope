@@ -11087,3 +11087,36 @@ Guardian (Katie McQue) article via Decrypt mirror: "Meta's AI Floods Child Abuse
 - Sample output files: 168 (was 166)
 - Test files: 48 (was 47)
 - Files changed: 7 (entities.py, framing.py, ARCHITECTURE.md, README.md, test_structural_consistency.py, + 1 new test file, + 2 new sample_output files)
+
+---
+
+### 2026-07-03 00:00 PT — Type B: Journalist/Publication Research
+
+**Focus:** Add Alana Hope Levinson, update Vittoria Elliott, fix duplicate Kate Taylor
+
+**Changes:**
+
+1. **Added Alana Hope Levinson (#118)** to `journalists.yaml`
+   - Wired features editor since November 2025, announced by Brian Barrett
+   - Full 7-entry career: The Nation/Paper (intern) → Talking Points Memo (first engagement editor) → Medium (NMA-winning team) → Fusion/Real Future (deputy editor) → MEL Magazine (deputy editor, longform/investigative) → editorial consultancy (~5 years) → Wired
+   - UC Berkeley Graduate School of Journalism
+   - Based in Wired's LA office
+   - Analytical value: non-traditional pipeline into Wired — shapes narrative framing at story-structure level via feature selection and development, not direct bylines
+   - Sources: Muck Rack Q&A, Editor & Publisher announcement, Talking Biz News, MEL Magazine author page, YouTube/Tasteland podcast
+
+2. **Updated Vittoria Elliott** profile
+   - Role updated from `reporter` to `senior_writer` (promoted by 2025-2026)
+   - Added Concordia 2024 Annual Summit speaker role (billed as "platforms and power reporter")
+   - Added NewsGuard contributing analyst role note to Wired career entry (was already in freelance entry)
+
+3. **Fixed duplicate Kate Taylor** — removed second entry (index 117) that was an inferior duplicate of the original (index 113). Original kept with full Forbes internship + more granular roles.
+
+4. **Updated counts**: README.md migration count 356→362 (auto-detected by CareerTracker after Levinson addition). Journalist counts remain at 118 (net: +1 Levinson, -1 duplicate Kate Taylor removal).
+
+**Tests:** 1245 passed, 2 xfailed
+
+**Sources:**
+- https://www.editorandpublisher.com/stories/wired-welcomes-two-new-staff-members-alana-hope-levinson-and-maxwell-zeff,252685
+- https://muckrack.com/alana-levinson/articles
+- https://talkingbiznews.com/media-news/wired-hires-taylor-as-senior-writer/
+- https://concordia.net/community/ (Vittoria Elliott speaker listing)
