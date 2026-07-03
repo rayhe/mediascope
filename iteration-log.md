@@ -3,6 +3,47 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-03 13:00 PT — Type B: Journalist/Publication Research — Caroline Haskins + Manisha Krishnan
+
+### Focus
+Two untracked Wired journalists hired in March 2026: Caroline Haskins (business reporter, surveillance-tech accountability specialist) and Manisha Krishnan (senior editor, culture, Emmy award-winning).
+
+### What Changed
+
+**Caroline Haskins — Full 7-entry career profile added to journalists.yaml:**
+- The Outline (editorial intern, 2017-2018)
+- Motherboard/Vice (staff writer, 2018-2019) — obtained Palantir's police surveillance manual
+- BuzzFeed News (senior tech reporter, 2019-2021) — broke Ring/Clearview AI/Gaggle stories
+- Business Insider (research editor & senior tech reporter, 2021-2023) — AI & surveillance beat
+- Freelance (2024-2026) — Guardian, TIME, CNET, 712+ total articles
+- Wired (business reporter, started Mar 10, 2026) — reports to Zoë Schiffer
+- KEY FINDING: Broke Project Cannes investigation (Jul 1, 2026) within 4 months of joining — Meta contractor Covalen hired hundreds posing as teens to test rival AI chatbots (ChatGPT/Gemini/Character.AI) with 45,000+ prompts about suicide, drugs, eating disorders, sex. Directly adversarial Meta story with wide secondary pickup (NY Post, Reuters, Livemint, eWeek).
+- Sources: TalkingBizNews (5 hire/departure articles across outlets), Muck Rack profile, JournalistHunt profile, Techmeme headlines, CYBER podcast (Everand), Tech Won't Save Us podcast transcript (Podscripts)
+
+**Manisha Krishnan — Single-entry career profile added to journalists.yaml:**
+- Wired senior editor, culture (started Mar 24, 2026)
+- Emmy award-winning journalist, ~9 years at Vice News covering drugs, race
+- Vice tenure overlaps Drummond's Vice SVP period (2019-2023) = Drummond-orbit hire
+- Third Guardian alumnus entering Wired in early 2026 (with Lowell Apr, Swash May)
+- Sources: TalkingBizNews hire announcement
+
+**Editorial changes (editorial_changes.yaml, wired section):**
+- Added Haskins hire entry (2026-03-10) with full business desk hierarchy context and Project Cannes significance
+- Added Krishnan hire entry (2026-03-24) with Vice/Guardian pipeline analysis
+
+**Doc count updates across 3 files:**
+- 121 → 123 journalists (README.md, EDITORIAL_HISTORIES.md, careers_demo.py)
+- 120 → 121 multi-pub (Haskins 7 entries = multi-pub; Krishnan 1 entry = not)
+- 381 → 386 auto-detected migrations (CareerTracker validated)
+- README migration list: added Haskins (Outline → Motherboard → BuzzFeed → BI → Wired, Project Cannes highlight)
+
+### Analytical Significance
+Caroline Haskins is the highest-value journalist addition since Kate Taylor (Jul 1). Her Project Cannes investigation is the first directly adversarial Meta story produced by a journalist added during the 2026 Drummond-era hiring wave, and it confirms that the surveillance-tech accountability pipeline (Motherboard → BuzzFeed → BI → Wired) produces adversarial Meta coverage on arrival. The editorial chain (Haskins → Schiffer → Barrett → Drummond) has adversarial-journalism institutional DNA at every level.
+
+### Tests
+1249 passed, 2 xfailed (unchanged). All 75 structural consistency tests pass including journalist count guards (123 total, 121 multi-pub) and migration count guards (386).
+
+---
 ## 2026-07-03 11:00 PT — Type A: Article Deep Dive — TechCrunch Zuckerberg AI Agents Town Hall (3-Way Cross-Outlet Comparison)
 
 ### Focus
