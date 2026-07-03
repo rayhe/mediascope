@@ -29,18 +29,47 @@ ownership_chain:
       Endowment supports 50% of undergraduate tuition. Largest YoY increase among top-25 US
       endowments at 11.4%.
       
+      PROVOST TRANSITION: Cynthia Barnhart stepped down as MIT Provost effective June 30,
+      2025 (announced Feb 19, 2025). Anantha Chandrakasan became Provost on July 1, 2025 —
+      previously Dean of Engineering, inaugural MIT Chief Innovation and Strategy Officer.
+      Chandrakasan personally launched the MIT-IBM Watson AI Lab (2017), co-founded the
+      MIT-Takeda Program, and oversaw the creation of the Schwarzman College of Computing.
+      He now chairs the renamed MIT-IBM Computing Research Lab (relaunched Apr 29, 2026).
+      His portfolio of corporate partnership ties is DEEPER than Barnhart's, making the
+      governance conflict with MIT TR more structurally embedded — the provost who oversees
+      all academic operations also directly chairs the institution's largest corporate
+      research lab. Chandrakasan does NOT sit on MIT TR's board (Barnhart retains her
+      Co-Chair seat as a professor), creating a split between MIT's operational authority
+      and MIT TR's formal governance.
+      
+      MIT CORPORATION (Board of Trustees): Kate Bergeron (VP Hardware Engineering, Apple)
+      was elected as MIT Corporation term member effective July 1, 2026. Apple is already a
+      CSAIL Alliance member — adding a senior Apple executive to MIT's governing board
+      deepens the Apple-MIT governance connection at the highest institutional level. This
+      is relevant to MIT TR's Apple coverage, which already lacks CSAIL Alliance disclosure.
+      
       ENROLLMENT (2025-2026): 11,816 total students (4,561 UG + 7,255 grad). 3,475
       international (529 UG + 2,946 grad). 8,341 domestic students (70.6%). Students come
       from all 50 states, DC, 4 territories, and 137 countries.
+      
+      GRADUATE ENROLLMENT CRISIS (2026-27): MIT President Kornbluth announced May 14, 2026
+      that federal research awards are down 20%+ and total sponsored research down ~10%.
+      MIT will admit ~500 fewer graduate students for 2026-27 — roughly a 20% reduction in
+      the incoming graduate class. This enrollment decline compounds the OBBBA endowment tax
+      pressure: fewer students INCREASES the per-student endowment ratio (potentially pushing
+      even further above the $2M/student 8% threshold) while simultaneously reducing research
+      output capacity. The combined fiscal squeeze — higher endowment taxes, lower federal
+      funding, fewer graduate researchers — increases MIT's dependence on corporate research
+      partnerships, the same partnerships creating editorial conflicts for MIT TR.
       
       ENDOWMENT TAX — NOW LAW (signed July 4, 2025): The One Big Beautiful Bill Act (OBBBA)
       replaced the flat 1.4% endowment excise tax (IRC §4968) with a tiered structure
       effective for taxable years beginning after Dec 31, 2025. MIT is in the HIGHEST tier:
       $27.4B / 11,816 students = ~$2,318,340 per student → 8% rate (applies to >$2M/student).
       MIT's tax year ends June 30, so the new rate first applies starting July 1, 2026.
-      STATUS: TAX IS NOW ACTIVE. MIT's FY2027 (July 1, 2026 – June 30, 2027) is the FIRST
-      fiscal year under the 8% rate. The OBBBA was signed July 4, 2025 and applies to taxable
-      years beginning after Dec 31, 2025 — MIT's tax year starting July 1, 2026 qualifies.
+      STATUS: TAX IS NOW ACTIVE — CONFIRMED. MIT's FY2027 (July 1, 2026 – June 30, 2027)
+      began on July 1, 2026 and is the FIRST fiscal year under the 8% rate. As of July 3,
+      2026, MIT is 3 days into paying the 8% endowment excise tax.
       
       PEER IMPACT CONTEXT (Harvard Crimson, Harvard Magazine, Stanford, Aon — various 2026):
       - Harvard: $2.5B endowment income in FY2024. At 8%, ~$200M annual tax (vs ~$35M at 1.4%).
@@ -139,6 +168,10 @@ financial_data:
       title: "President, Publisher & CEO"
       base: "$420,529"
       other: "$71,239"
+      fy2025_base: "$378,379"
+      fy2025_other: "$31,306"
+      fy2025_total: "$409,685"
+      fy2025_note: "Compensation DOWN ~$82K from FY2024. Source: FY2025 990 filed May 15, 2026."
     - name: "Miles Weiner"
       title: "Advertising & Sales Administrator"
       base: "$352,943"
@@ -147,6 +180,10 @@ financial_data:
       title: "Editor in Chief"
       base: "$291,916"
       other: "$74,299"
+      fy2025_base: "$266,454"
+      fy2025_other: "$35,180"
+      fy2025_total: "$301,634"
+      fy2025_note: "Compensation UP ~$10K from FY2024. Source: FY2025 990 filed May 15, 2026."
     - name: "Andrew Hendler"
       title: "VP of Sales and Brand Partnerships"
       base: "$288,599"
@@ -159,9 +196,26 @@ financial_data:
       title: "Senior VP of Events and Strategic Partnerships"
       base: "$194,772"
       other: "$50,775"
+    - name: "Stephanie Clement"
+      title: "Executive Director, Brand Partnerships"
+      base: "N/A"
+      other: "N/A"
+      fy2025_total: "$283,093"
+      fy2025_note: "NEW in FY2025 990. Second Exec Dir of Brand Partnerships alongside Sebahar. Source: FY2025 990 filed May 15, 2026."
 
 board_of_directors:
-  description: "MIT-controlled board. Majority of directors are MIT senior administrators receiving compensation from MIT, not from Technology Review Inc. itself. This means MIT's institutional interests — including its dependence on tech industry funding — are structurally represented in the publication's governance."
+  description: >
+    MIT-controlled board. Majority of directors are MIT senior administrators receiving
+    compensation from MIT, not from Technology Review Inc. itself. This means MIT's
+    institutional interests — including its dependence on tech industry funding — are
+    structurally represented in the publication's governance.
+    
+    CRITICAL UPDATE (FY2025 990, filed May 15, 2026): David Schmittlein (MIT Sloan Dean)
+    died March 13, 2025 — board vacancy. Cynthia Barnhart remains Co-Chair despite
+    stepping down as MIT Provost on June 30, 2025 (succeeded by Anantha Chandrakasan).
+    Barnhart returned to faculty after sabbatical; her continued board role as a professor
+    rather than provost changes the governance dynamics — she no longer oversees MIT's
+    academic and budget operations but retains her board seat.
   current_members:
     - name: "Alan Spoon"
       role: "Co-Chair"
@@ -170,19 +224,31 @@ board_of_directors:
       notes: "Former president of Polaris Partners. Former president of Washington Post division. Provides external governance perspective."
     - name: "Cynthia Barnhart"
       role: "Co-Chair"
-      mit_compensation: "$987,284 (FY2024)"
+      mit_compensation: "$1,084,227 (FY2025, her final year as provost)"
       external: false
-      notes: "MIT Provost. Second-highest academic officer at MIT. Her MIT role makes her structurally aware of (and potentially sensitive to) MIT's corporate research funding relationships."
-    - name: "David Schmittlein"
-      role: "Director"
-      mit_compensation: "$1,051,561 (FY2024)"
-      external: false
-      notes: "MIT Sloan School of Management Dean. Sloan has extensive corporate partnerships and executive education programs with tech companies."
+      notes: >
+        ROLE CHANGE: Barnhart stepped down as MIT Provost effective June 30, 2025
+        (announced Feb 19, 2025). She returned to faculty (Ford Foundation Professor of
+        Engineering, Dept of Civil & Environmental Engineering and MIT Sloan) after
+        sabbatical. Per FY2025 990 she REMAINS Co-Chair of MIT TR board despite no longer
+        being provost. Previously served as MIT Chancellor (2014-2021) and Provost
+        (2022-2025). First woman to hold both roles. Her FY2025 MIT compensation
+        ($1,084,227) reflects her final year as provost — future 990s will show lower
+        faculty-level compensation. Structural governance question: does a former-provost
+        Co-Chair still represent MIT's institutional interests as strongly as a sitting
+        provost? She no longer controls MIT's budget, research funding relationships,
+        or corporate partnership oversight.
     - name: "Glen Shor"
       role: "Director"
-      mit_compensation: "$883,134 (FY2024)"
+      mit_compensation: "$950,529 (FY2025)"
       external: false
-      notes: "MIT Executive Vice President and Treasurer. Responsible for MIT's financial operations, including managing relationships with corporate funders."
+      notes: >
+        MIT Executive Vice President and Treasurer. Responsible for MIT's financial
+        operations, including managing relationships with corporate funders. Manages
+        MIT's $27.4B endowment through MITIMCo. Now the HIGHEST-COMPENSATED MIT
+        administrator on the board following Schmittlein's death. His role is even more
+        critical under the OBBBA 8% endowment tax regime — he must manage MIT's
+        investment portfolio to minimize taxable NII while maintaining returns.
     - name: "Josh Macht"
       role: "Director"
       mit_compensation: "$0"
@@ -195,7 +261,7 @@ board_of_directors:
       notes: "External board member."
     - name: "Whitney Espich"
       role: "Director"
-      mit_compensation: "$333,374 (FY2024)"
+      mit_compensation: "$351,240 (FY2025)"
       external: false
       notes: "MIT administrator. On the board since at least FY2017."
     - name: "Peter Caruso"
@@ -203,6 +269,20 @@ board_of_directors:
       mit_compensation: "$0"
       external: true
       notes: "Legal clerk for the nonprofit."
+  deceased_members:
+    - name: "David Schmittlein"
+      role: "Director"
+      mit_compensation: "$1,007,941 (FY2025, partial year — died March 13, 2025)"
+      external: false
+      death_date: "2025-03-13"
+      notes: >
+        MIT Sloan School of Management Dean. Died March 13, 2025 per FY2025 990 filing.
+        Board seat now VACANT. Schmittlein was one of the highest-compensated MIT
+        administrators on the board ($1.05M FY2024). Sloan has extensive corporate
+        partnerships and executive education programs with tech companies. His death
+        reduces the board from 8 to 7 members and opens a question about whether MIT
+        will appoint a replacement with similar corporate partnership ties.
+      source_url: "https://projects.propublica.org/nonprofits/organizations/954893200"
   former_notable_members:
     - name: "Joichi Ito"
       role: "Director (FY2018-2020)"
@@ -228,9 +308,36 @@ mit_corporate_research_partnerships:
     - name: "MIT-IBM Watson AI Lab (now MIT-IBM Computing Research Lab)"
       amount: "$240M over 10 years"
       established: "2017-09"
-      description: "Renamed to MIT-IBM Computing Research Lab with expanded scope beyond AI to include algorithms and quantum computing. Over 210 research projects, 150+ MIT faculty, 200+ IBM researchers, 1,500+ peer-reviewed articles, 500+ students/postdocs funded. Co-directed by Aude Oliva (MIT CSAIL) and David Cox (IBM Research VP). IBM funds $240M total, $90M to MIT directly."
+      description: >
+        REBRANDED APRIL 29, 2026: Renamed to MIT-IBM Computing Research Lab with expanded
+        scope beyond AI to include algorithms and quantum computing. Over 210 research
+        projects, 150+ MIT faculty, 200+ IBM researchers, 1,500+ peer-reviewed articles,
+        500+ students/postdocs funded. Co-directed by Aude Oliva (MIT CSAIL) and David Cox
+        (IBM Research VP AI Foundations). IBM funds $240M total, $90M to MIT directly.
+        
+        NEW GOVERNANCE (Apr 29, 2026): MIT Provost Anantha Chandrakasan is MIT chair of
+        the lab (he spearheaded its creation as Dean of Engineering in 2017). IBM chair:
+        Jay Gambetta (Director of IBM Research, IBM Fellow). MIT co-chair: Dan Huttenlocher
+        (Dean of Schwarzman College). Three pillar leads appointed:
+        - AI: Jacob Andreas (MIT EECS) + Kenney Ng (IBM Research)
+        - Algorithms: Vinod Vaikuntanathan (MIT EECS) + Vasileios Kalantzis (IBM Research)
+        - Quantum: Aram Harrow (MIT Physics) + Hanhee Paik (IBM Director Quantum Algorithm Centers)
+        
+        CONFLICT DEEPENING: The provost now DIRECTLY chairs the lab — previously he
+        chaired it as Dean of Engineering, a less senior role. Chandrakasan simultaneously
+        oversees MIT's budget, academic priorities, and all corporate research partnerships
+        AS provost while chairing this specific corporate partnership. He also chairs the
+        MIT Climate and Sustainability Consortium, MIT AI Hardware Program, and co-chairs
+        the MIT-Takeda Program, MIT-Accenture Convergence Initiative, and MIT-GE Vernova
+        Energy and Climate Alliance.
+        
+        Kornbluth cited the lab relaunch as one of MIT's strategies to offset federal
+        funding cuts in her May 14, 2026 video message announcing 20% graduate enrollment
+        decline. This makes the IBM partnership explicitly part of MIT's budget survival
+        strategy under OBBBA tax pressure.
       source_url: "https://news.mit.edu/2017/ibm-mit-joint-research-artificial-intelligence-0907"
-      relevance: "IBM is a technology company MIT TR covers. $90M flows directly to MIT researchers. Scale (210+ projects, 1,500+ papers) makes this one of the largest university-industry research partnerships in computing."
+      relaunch_source_url: "https://news.mit.edu/2026/mit-ibm-computing-research-lab-launches-0429"
+      relevance: "IBM is a technology company MIT TR covers. $90M flows directly to MIT researchers. Scale (210+ projects, 1,500+ papers) makes this one of the largest university-industry research partnerships in computing. The provost's direct chairmanship deepens the governance conflict."
     - name: "MIT Schwarzman College of Computing"
       amount: "$1.1B total commitment ($350M from Stephen Schwarzman/Blackstone)"
       established: "2018-10"
@@ -605,7 +712,17 @@ mit_corporate_research_partnerships:
     previous_contract_cumulative: "$20,140,117,466 (10 years)"
     director: "Melissa G. Choi (since July 1, 2024; first woman director)"
     previous_director: "Eric D. Evans (July 2006 - June 2024)"
-    reports_to: "MIT Provost (Cynthia Barnhart — also MIT TR board Co-Chair)"
+    reports_to: >
+      MIT Provost. CRITICAL UPDATE: As of July 1, 2025, the MIT Provost is Anantha
+      Chandrakasan (succeeded Cynthia Barnhart). Chandrakasan is NOT currently on the
+      MIT TR board (per FY2025 990 filed May 15, 2026), but Barnhart (former provost)
+      remains Co-Chair. The Lincoln Lab director now reports to Chandrakasan, who also
+      directly chairs the MIT-IBM Computing Research Lab, the MIT Climate and
+      Sustainability Consortium, the MIT AI Hardware Program, and co-chairs the
+      MIT-Takeda Program, MIT-Accenture Convergence Initiative, and MIT-GE Vernova
+      Energy and Climate Alliance. Chandrakasan has DEEPER corporate partnership ties
+      than Barnhart did — he personally launched the MIT-IBM Watson AI Lab (2017),
+      the MIT-Takeda Program, and the Schwarzman College industry programs.
     tx_gain_supercomputer:
       gpus: "600+ NVIDIA H100"
       performance: "2 AI exaflops"
@@ -718,9 +835,18 @@ revenue_relationships:
   - partner: "IBM"
     relationship_type: "institutional_funding"
     estimated_value: "$240M/10yr ($90M to MIT directly)"
-    description: "MIT-IBM Watson AI Lab (now renamed MIT-IBM Computing Research Lab, expanded to algorithms + quantum). 210+ projects, 150+ faculty, 200+ IBM researchers, 1,500+ papers, 500+ students funded. Co-directed by Aude Oliva (CSAIL) and David Cox (IBM VP). IBM's $90M flows directly to MIT researchers. Coverage of IBM is structurally complicated."
+    description: >
+      MIT-IBM Computing Research Lab (renamed from Watson AI Lab, relaunched April 29, 2026
+      with expanded scope: AI + quantum computing + algorithms). 210+ projects, 150+ faculty,
+      200+ IBM researchers, 1,500+ papers, 500+ students funded. Co-directed by Aude Oliva
+      (CSAIL) and David Cox (IBM VP). IBM's $90M flows directly to MIT researchers. MIT Provost
+      Anantha Chandrakasan chairs the lab — he launched the original Watson AI Lab in 2017
+      as Dean of Engineering. Three new pillar leads appointed (AI, algorithms, quantum).
+      President Kornbluth cited the lab relaunch as part of MIT's strategy to offset federal
+      funding cuts. Coverage of IBM is structurally complicated.
     date_established: "2017-09"
     source_url: "https://news.mit.edu/2017/ibm-mit-joint-research-artificial-intelligence-0907"
+    relaunch_source_url: "https://news.mit.edu/2026/mit-ibm-computing-research-lab-launches-0429"
   - partner: "Microsoft"
     relationship_type: "institutional_funding"
     estimated_value: "Significant (unspecified)"
@@ -735,10 +861,17 @@ revenue_relationships:
     source_url: "https://computing.mit.edu/cross-cutting/industry-programs/"
   - partner: "Apple"
     relationship_type: "institutional_funding"
-    estimated_value: "Significant (CSAIL Alliance member + research grants)"
-    description: "Apple is a member of MIT's CSAIL Alliance Program, providing annual fees for research access and recruiting pipelines. Additionally funds MIT research programs. The CSAIL affiliate relationship is a direct corporate-institutional tie that is never disclosed in MIT TR's Apple coverage."
+    estimated_value: "Significant (CSAIL Alliance member + research grants + MIT Corporation seat)"
+    description: >
+      Apple is a member of MIT's CSAIL Alliance Program, providing annual fees for research
+      access and recruiting pipelines. Additionally funds MIT research programs. Kate Bergeron
+      (Apple VP Hardware Engineering) was elected as MIT Corporation term member effective
+      July 1, 2026, deepening the Apple-MIT governance connection at the highest institutional
+      level. The CSAIL affiliate relationship AND Corporation board seat are never disclosed
+      in MIT TR's Apple coverage.
     date_established: "Ongoing"
     source_url: "https://www.csail.mit.edu/about/alliance-program"
+    corporation_source: "MIT News, Corporation election announcement (July 1, 2026)"
   - partner: "Meta"
     relationship_type: "institutional_funding"
     estimated_value: "Significant (FAIR collaborations)"
@@ -803,9 +936,25 @@ key_journalists:
 
 known_conflicts:
   - type: "institutional_governance"
-    description: "MIT administrators who control Technology Review Inc.'s board are simultaneously responsible for managing MIT's corporate research funding relationships with the same companies the publication covers. MIT Provost Cynthia Barnhart (board Co-Chair, $987K from MIT) oversees academic relationships including those with Google, Amazon, IBM. MIT EVP/Treasurer Glen Shor ($883K, board Director) manages MIT's financial operations. MIT Sloan Dean David Schmittlein ($1.05M, board Director) leads a school with extensive corporate partnerships. There is no structural firewall equivalent to the Scott Trust (Guardian) or dual-class shares (NYT)."
+    description: >
+      MIT administrators who control Technology Review Inc.'s board are simultaneously
+      responsible for managing MIT's corporate research funding relationships with the
+      same companies the publication covers. Following David Schmittlein's death (March 13,
+      2025) and Cynthia Barnhart's departure as MIT Provost (June 30, 2025), the board's
+      MIT administrator presence shifted: Barnhart retains her Co-Chair seat but now as a
+      faculty member without operational authority; Glen Shor ($950K from MIT, FY2025)
+      manages MIT's financial operations; Whitney Espich ($351K, FY2025) leads MIT's
+      corporate engagement office. Board composition is now 3 MIT-affiliated of 7 members
+      (down from 4 of 8), though one external seat has been vacant since Schmittlein's death.
+      The NEW provost, Anantha Chandrakasan, does NOT sit on MIT TR's board but holds deeper
+      corporate partnership ties than Barnhart — he chairs the MIT-IBM Computing Research Lab,
+      co-founded the MIT-Takeda Program, and oversaw the Schwarzman College creation. This
+      creates a split: operational corporate partnership authority (Chandrakasan as provost)
+      is structurally separated from MIT TR board governance (Barnhart as former provost).
+      There is no structural firewall equivalent to the Scott Trust (Guardian) or dual-class
+      shares (NYT).
     severity: 4
-    evidence: "Form 990 filings (ProPublica Nonprofit Explorer). Board composition shows 4 of 8 members are MIT administrators compensated $333K-$1.05M by MIT."
+    evidence: "Form 990 filings FY2024-FY2025 (ProPublica Nonprofit Explorer). FY2025 990 (filed May 15, 2026) shows Schmittlein as 'Director (Deceased 3/13/2025)'. Board composition now 3 MIT-affiliated of 7 members. Barnhart comp $1,084,227 (FY2025, final provost year). Shor comp $950,529 (FY2025). Espich comp $351,240 (FY2025)."
     source_url: "https://projects.propublica.org/nonprofits/organizations/954893200"
   - type: "institutional_funding_paradox"
     description: "MIT receives $174M+ annually from industry research sponsors (23% of total research expenditures). Named bilateral partnerships exist with Google (MIT-Google Program), Amazon (MIT-Amazon Science Hub), IBM ($240M Watson Lab), and others — all companies MIT TR covers critically. The publication claims editorial independence but its parent institution depends structurally on these relationships. Unlike Wired/Condé Nast (where the conflict is competitive — Advance owns Meta's competitor Reddit), MIT TR's conflict is COOPERATIVE — MIT's parent takes money FROM the companies being covered."
@@ -831,7 +980,9 @@ known_conflicts:
       Ventures, STMicroelectronics, Underscore VC, UPS, UST, Wistron. These companies
       get research access and recruiting pipelines. MIT TR covers many of these companies
       — particularly Apple, Microsoft, Samsung, Qualcomm. Apple's membership is especially
-      notable as it is rarely disclosed as a conflict in MIT TR's Apple coverage. Nebius
+      notable: combined with Kate Bergeron's (Apple VP) election to the MIT Corporation
+      (July 1, 2026), Apple now has both a research alliance AND a governing board seat
+      at MIT — neither is disclosed in MIT TR's Apple coverage. Nebius
       (formerly part of Yandex) is a significant new addition given its Russian-origin
       AI infrastructure business. Notable absences: Google, Amazon, Meta are NOT CSAIL
       members — they have separate bilateral programs.
@@ -1002,10 +1153,14 @@ known_conflicts:
       Reconnaissance), missile defense, space surveillance, and tactical systems —
       all topics MIT TR covers.
       
-      The Lincoln Lab director reports to the MIT Provost (Cynthia Barnhart, $987K),
-      who is ALSO Co-Chair of Technology Review Inc.'s board. This creates a direct
-      governance pipeline between MIT's $1.36B/year defense research oversight and
-      its media publication's board. There is no structural firewall.
+      The Lincoln Lab director reports to the MIT Provost (now Anantha Chandrakasan,
+      effective July 1, 2025). Chandrakasan does NOT sit on MIT TR's board — unlike
+      his predecessor Barnhart, who remains Co-Chair as a faculty member. However,
+      Barnhart's former provost role gave her direct Lincoln Lab oversight; Chandrakasan
+      now holds that authority while ALSO chairing the MIT-IBM Computing Research Lab,
+      creating a dual governance position over MIT's two largest institutional research
+      operations (defense + corporate). This creates a more complex but potentially
+      deeper governance pipeline between MIT's defense and corporate research oversight.
       
       TX-GAIN, Lincoln Lab's AI supercomputer (600+ Nvidia H100 GPUs, 2 AI exaflops,
       Top500 #114), makes MIT a significant CUSTOMER of Nvidia hardware for defense
@@ -1022,7 +1177,8 @@ known_conflicts:
       FA8702-25-D-B002 ($12.2B, April 1, 2025). MIT OGC contract page confirms
       prior $20.14B cumulative. Wikipedia and MIT News confirm 4,500 staff, budget,
       Provost reporting line. TX-GAIN specs from MIT News and DCD (June 2025/2026).
-      Board composition from Form 990 (Barnhart as Co-Chair).
+      Provost transition: Barnhart → Chandrakasan (July 1, 2025). Board composition
+      from Form 990 FY2025 (Barnhart retains Co-Chair as former provost).
     source_urls:
       - "https://ncses.nsf.gov"
       - "https://ogc.mit.edu/latest/us-air-force-continues-contract-operation-mit-lincoln-laboratory"
