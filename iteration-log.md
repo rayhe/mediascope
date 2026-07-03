@@ -3,6 +3,69 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-03 05:00 PT — Type C: Ownership & Funding Deep Dive — NYT $1B Buyback, Slim Dilution, PBF Cross-Ref, Litigation Expansion
+
+### Focus
+NYT Company profile deep dive — last Type C NYT update was June 22 (11 days ago). Combined SEC EDGAR primary research with litigation case law analysis.
+
+### Finding 1: $1 Billion Share Repurchase Program (severity 3)
+NYT Board authorized repurchase of up to $1 billion of Class A and Class B common stock under the "2025 Repurchase Program." Goldman Sachs & Co. LLC serves as broker. Program ongoing with no disclosed expiration. NYT repurchased ~883K shares in Q4 2025 for $55.4M.
+
+**Source:** SEC filing (ASX cross-listed notification, Appendix 3C — buy-back notification form)
+
+### Finding 2: Slim Family Dilution + PBF Energy Cross-Reference (severity 3)
+- **Share count change:** 10-Q filed April 30, 2026 shows 118,308,459 Class A shares outstanding (up from 115,847,488 per Oct 2025 10-Q). Net issuance (stock-based compensation) exceeded buybacks.
+- **Slim dilution:** If position unchanged at 29,123,098 shares → ~24.6% (down from 25.1%).
+- **EDGAR verification:** Full-text search for "Control Empresarial" + "New York Times" returns ZERO results in 2026 filing index. No new 13G/A filed for NYT. Next mandatory deadline: Feb 14, 2027.
+- **PBF Energy cross-reference (NEW analytical insight):** Slim family IS actively selling PBF Energy shares (CIK 1534504). Two SEC filings:
+  - Apr 8, 2026: 19,253,698 shares = 16.4% (citing 14A Mar 17, 2026)
+  - Jun 4, 2026: 18,217,698 shares = 15.4% (citing 10-Q Apr 30, 2026)
+  - Sold ~1,036,000 PBF shares between filings
+- **Inference:** Control Empresarial is actively managing its portfolio. The ABSENCE of NYT sales (while PBF is being trimmed) is a signal of deliberate hold, not passive neglect.
+
+**Sources:** SEC EDGAR (CIK 71691, CIK 1534504), SEC filings 0001140361-26-013841, 0001140361-26-024026
+
+### Finding 3: Expanded OpenAI Litigation History (severity 4)
+Rebuilt the OpenAI revenue relationship section with full chronological ruling history:
+- MTD denial (Apr 2025): 43-page opinion from Judge Stein. Rejected time-bar defense, kept all copyright claims, dismissed DMCA distribution claims (outputs are "merely excerpts" not "copies" — "boundless DMCA liability" concern). Daily News (Tribune Publishing) joined with trademark dilution claims.
+- Chat log discovery (Jul 2025–Jan 2026): NYT sought 120M logs → agreed to 20M sample → OpenAI proposed search terms instead of full production → Wang compelled full production (Nov 7) → affirmed on reconsideration (Dec 5) → Stein affirmed (Jan 2026). OpenAI complied.
+- Amended complaint (Jun 2026): Strategic pivot post-Cox Communications SCOTUS (Mar 25, 2026, 9-0). Dropped contributory infringement claim against OpenAI. Fortified claims against Microsoft's infrastructure role.
+- Cascading effects: Microsoft derivative lawsuit (Eric Anderson v. MSFT, Jul 1, 2026, W.D. Wash.) — shareholder alleges execs concealed copyright training practices.
+- Richner Communications expansion (Jun 24, 2026): ~400 local/regional newspapers vs. OpenAI + Microsoft.
+- MDL consolidation: 25-md-03143-SHS-OTW, 16 copyright lawsuits.
+
+**Sources:** GlobalLegalPost, Law.com/LegalTech News, Bloomberg Law, Reuters, Justia Dockets
+
+### Finding 4: Stock & Financial Update (severity 2)
+- Stock: $73.85 (Jul 2, 2026, +2.87%), market cap $11.52B
+- Beta: 0.97
+- Analyst consensus target: $83.22 (+12.7% upside)
+- Ratings: 0 Sell, 6 Hold, 4 Buy, 1 Strong Buy
+- Zacks highlighted NYT as "safe pick" amid inflation/labor concerns
+- T. Rowe Price: 10,247,094 shares / 6.3% (SC 13G/A Nov 14, 2024, as of Sep 30, 2024). Sole voting 10,212,404.
+
+**Sources:** MarketBeat, Finnhub, SEC EDGAR (SC 13G/A, CIK 71691)
+
+### Changes
+1. **`profiles/nytimes.yaml`** — $1B buyback program, Slim dilution to ~24.6%, PBF cross-reference, expanded OpenAI litigation section with full ruling chronology, stock/financial updates, T. Rowe Price detailed filing data, analyst consensus. +91 lines net (1535 → 1626).
+
+### Stats
+- NYT profile: 1,535 → 1,626 lines (+91 net, 135 insertions, 44 deletions)
+- Tests: 1,245 passed, 2 xfailed, 0 failures
+- Commit: `597f8ee`
+
+### Sources
+- SEC EDGAR full-text search API (efts.sec.gov)
+- SEC filing 0001140361-26-024026 (Control Empresarial/PBF Energy, Jun 4, 2026)
+- SEC filing 0001140361-26-013841 (Control Empresarial/PBF Energy, Apr 8, 2026)
+- SEC SC 13G/A for NYT CIK 71691 (T. Rowe Price, Nov 14, 2024)
+- globallegalpost.com (MTD ruling analysis)
+- law.com/legaltechnews (chat log production ruling, Jan 7, 2026)
+- news.bloomberglaw.com (Microsoft derivative lawsuit, Jul 1, 2026)
+- MarketBeat (stock data, institutional ownership, analyst consensus)
+- Finnhub (real-time stock quotes)
+
+---
 ## 2026-07-03 04:00 PT — Type B: Journalist Research — Mat Honan Deep Profile Expansion (EIC, MIT Technology Review)
 
 ### Focus
