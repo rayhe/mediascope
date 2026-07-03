@@ -2038,7 +2038,10 @@ journalists:
     event_type: hired
     notes: Returned to Wired from Bloomberg. Started May 18, 2026. Brian Barrett (exec editor) announcement praised him as
       'story zero' originator. Reports to Andrew. Co-broke Meta/Rank One face recognition story with Dell Cameron within weeks
-      of return.
+      of return. Co-authored "Project Cannes" Meta/AI child safety investigation with Joel Khalili (published Jun 29, 2026) —
+      exposing Meta contractors posing as minors to test rival chatbots with 45,000+ prompts. Story triggered wide pickup (NY
+      Post, CNN, Techmeme lead). Demonstrates cross-desk collaboration between London (Khalili) and NYC (Mehrotra) investigation
+      teams.
     publication: wired
     role: senior_writer
     source_url: https://www.editorandpublisher.com/stories/dhruv-mehrotra-is-welcomed-back-to-wired,262263
@@ -4289,6 +4292,16 @@ journalists:
     role: content_executive
     source_url: https://theorg.com/org/wired/org-chart/joel-khalili
     start: 2018-08
+  - beat: VR, technology adoption
+    end: 2019-12
+    event_type: hired
+    notes: 'Produced features on barriers to widespread VR adoption. Freelance/contributor role overlapping with Red Lorry
+      period. Mentioned in TechRadar Pro bio: "he spent some time producing features for VRFocus on the barriers standing
+      in the way of the widespread adoption of virtual reality."'
+    publication: vrfocus
+    role: contributor
+    source_url: https://techradar.com/author/joel-khalili
+    start: 2019-01
   - beat: business technology
     end: 2020-06
     event_type: hired
@@ -4307,22 +4320,30 @@ journalists:
     role: news_features_editor
     source_url: https://techradar.com/author/joel-khalili
     start: 2020-06
-  - beat: crypto, Web3, fintech, tech regulation
+  - beat: crypto, Web3, fintech, tech regulation, AI safety investigations
     event_type: hired
-    notes: Reporter covering crypto, Web3, and fintech. Based in London. Also contributed to Ars Technica and WIRED Middle
-      East. Coverage focuses on cryptocurrency regulation, intersection of technology with politics. Global perspective (Berlin,
-      Stockholm, Paris datelines). Part of Wired's London team after UK print edition was pulled in 2026.
+    notes: 'Reporter initially covering crypto, Web3, and fintech. Based in London. Also contributed to Ars Technica, WIRED
+      Middle East, and WIRED en Español. Coverage originally focused on cryptocurrency regulation and intersection of technology
+      with politics. Global perspective (Berlin, Stockholm, Paris datelines). Part of Wired''s London team after UK print
+      edition was pulled in 2026. BEAT EXPANSION (2026): Co-authored major Meta/AI child safety investigation "Project Cannes"
+      with Dhruv Mehrotra (published Jun 29, 2026) — exposing Meta contractors posing as minors to test rival AI chatbots
+      (ChatGPT, Gemini, Character.AI) with 45,000+ prompts on suicide, drugs, eating disorders. Story triggered wide pickup
+      (NY Post, CNN citations, Techmeme lead). Also published Bloomberg Terminal AI interview (Jul 2026, Techmeme pickup).
+      Beat has evolved from pure crypto/fintech to include Big Tech investigations and AI safety — significant scope expansion
+      for a London-based reporter.'
     publication: wired
     role: reporter
     source_url: https://theorg.com/org/wired/org-chart/joel-khalili
     start: 2022-10
   name: Joel Khalili
-  notes: 'Wired reporter covering crypto, Web3, and fintech. Career: Red Lorry Yellow Lorry (PR) → ITProPortal → TechRadar
-    Pro → Wired (Oct 2022). Based in London. UCL English Literature degree. ANALYTICAL VALUE: UK-based reporter covering crypto/fintech
-    from a European regulatory perspective. Previous TechRadar Pro experience (B2B tech) gives him an enterprise/business
-    lens different from Silicon Valley consumer tech reporters. His crypto/regulation coverage intersects with Meta''s Libra/Diem
-    history and stablecoin regulatory debates. The PR agency background (Red Lorry Yellow Lorry) is unusual — moved from tech
-    PR to tech journalism, giving insider knowledge of PR strategies.'
+  notes: 'Wired reporter covering crypto, Web3, fintech, and increasingly AI safety investigations. Career: Red Lorry Yellow
+    Lorry (PR) → VRFocus (contributor) → ITProPortal → TechRadar Pro → Wired (Oct 2022). Based in London. UCL English Literature
+    degree. Twitter/X: @JKFruit. ANALYTICAL VALUE: UK-based reporter whose beat has expanded beyond crypto/fintech into Meta/AI
+    investigations — the Jun 2026 "Project Cannes" co-byline with Dhruv Mehrotra (Wired''s top investigative data reporter)
+    signals editorial investment in pairing London-based reporters with NYC investigative talent for cross-desk Meta stories.
+    Previous TechRadar Pro experience (B2B tech) gives him an enterprise/business lens different from Silicon Valley consumer
+    tech reporters. The PR agency background (Red Lorry Yellow Lorry) is unusual — moved from tech PR to tech journalism,
+    giving insider knowledge of PR strategies. VRFocus stint shows early interest in immersive tech adoption barriers.'
 - career:
   - beat: sports
     end: 2014-12
