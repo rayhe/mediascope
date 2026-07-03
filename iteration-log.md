@@ -11537,3 +11537,48 @@ Ana Swanson — NYT trade policy reporter in Washington Bureau. Had only 2 caree
 1249 passed, 2 xfailed (unchanged). 75 structural consistency guards intact.
 
 ---
+
+## Hour 2026-07-03T14:00 PT — Type C: MIT Technology Review Ownership & Funding
+
+**Focus:** MIT TR deep dive — provost transition, FY2025 990 filing, graduate enrollment crisis, Apple governance deepening, OBBBA status confirmation.
+
+### Key Discoveries
+
+1. **Provost Transition (Critical):** Cynthia Barnhart stepped down as MIT Provost June 30, 2025. Anantha Chandrakasan became provost July 1, 2025 — previously Dean of Engineering, inaugural Chief Innovation and Strategy Officer. Chandrakasan has DEEPER corporate partnership ties: he launched the MIT-IBM Watson AI Lab (2017), co-founded MIT-Takeda Program, oversaw Schwarzman College creation. Now chairs the renamed MIT-IBM Computing Research Lab (relaunched Apr 29, 2026). Does NOT sit on MIT TR board (Barnhart retains Co-Chair as faculty), creating a split between operational authority and board governance.
+
+2. **FY2025 990 Filing (May 15, 2026):** David Schmittlein died March 13, 2025 — board vacancy reduces MIT-affiliated seats from 4/8 to 3/7. CEO Bramson-Boudreau comp DOWN to $409,685. EIC Honan UP to $301,634. New key employee: Stephanie Clement (Exec Dir Brand Partnerships, $283,093). Barnhart final provost year: $1,084,227. Shor: $950,529. Espich: $351,240.
+
+3. **Graduate Enrollment Crisis:** Kornbluth May 14, 2026: federal research awards down 20%+, total sponsored research down ~10%. ~500 fewer graduate students for 2026-27. Compounds OBBBA pressure — fewer students increases per-student endowment ratio.
+
+4. **OBBBA Now Active:** MIT FY2027 (July 1, 2026 – June 30, 2027) has begun. MIT is 3 days into first fiscal year under 8% endowment excise tax (~$325M/yr estimated liability).
+
+5. **Apple Governance Deepening:** Kate Bergeron (Apple VP Hardware Engineering) elected MIT Corporation term member July 1, 2026. Apple now has CSAIL Alliance + governing board seat — neither disclosed in MIT TR Apple coverage.
+
+6. **MIT-IBM Computing Research Lab Relaunch (Apr 29, 2026):** Expanded from Watson AI Lab to include quantum computing and algorithms. Three pillar leads. Chandrakasan chairs. Kornbluth cited as offset for federal funding cuts.
+
+### Profile Changes
+- Parent institution: provost transition (Barnhart → Chandrakasan), MIT Corporation Apple seat (Bergeron), graduate enrollment crisis data
+- OBBBA: confirmed active status (FY2027 started July 1, 2026)
+- FY2025 compensation: Bramson-Boudreau, Honan FY2025 data added; Stephanie Clement new entry
+- Board section: already updated prior turn (Schmittlein deceased, Barnhart role change, Shor/Espich FY2025 comp)
+- IBM revenue relationship: renamed lab, Chandrakasan as chair, relaunch context
+- Apple revenue relationship: Bergeron Corporation seat added
+- CSAIL Alliance conflict: Apple Corporation seat noted
+- institutional_governance conflict: fully rewritten (3/7 MIT-affiliated, Chandrakasan analysis)
+- lincoln_laboratory_defense_conflicts: provost reporting line updated to Chandrakasan
+
+**Profile:** 1525 → 1607 lines (+82 net).
+
+### Sources Consulted
+- MIT News: Chandrakasan provost appointment (Jun 16, 2025), Barnhart stepping down (Feb 19, 2025)
+- MIT News: MIT-IBM Computing Research Lab relaunch (Apr 29, 2026)
+- MIT News: MIT Corporation election announcement (Bergeron, July 1, 2026)
+- ProPublica Nonprofit Explorer: FY2025 990 (filed May 15, 2026), EIN 954893200
+- College Investor / STAT News: MIT graduate enrollment cuts (May 14, 2026)
+- MIT MMI (Chandrakasan bio/roles)
+- Prior iteration research on OBBBA timeline
+
+### Tests
+1249 passed, 2 xfailed (unchanged). 75 structural consistency guards intact.
+
+---
