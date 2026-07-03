@@ -1572,3 +1572,107 @@ class TestJournalistCountConsistency:
             f"but YAML has {slug_count}. Floor is stale by "
             f"{slug_count - stated_floor}. Update to {slug_count // 10 * 10}+."
         )
+
+
+class TestEntityClusterConsistency:
+    """Validate entity cluster reference documentation stays in sync with code."""
+
+    def test_methodology_cluster_count(self):
+        """METHODOLOGY.md §15 cluster count must match code."""
+        import re
+        from mediascope.analyze.entities import DEFAULT_ENTITY_CLUSTERS
+
+        code_count = len(DEFAULT_ENTITY_CLUSTERS)
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        # Match "59 entity clusters" or "**59 entity clusters**"
+        match = re.search(r"\*{0,2}(\d+) entity clusters\*{0,2}", doc)
+        assert match, (
+            "METHODOLOGY.md should contain 'N entity clusters' in §15."
+        )
+        stated_count = int(match.group(1))
+        assert stated_count == code_count, (
+            f"METHODOLOGY.md says {stated_count} entity clusters but "
+            f"DEFAULT_ENTITY_CLUSTERS has {code_count}. "
+            f"Update §15 to match."
+        )
+
+    def test_methodology_cluster_table_completeness(self):
+        """Every cluster in code must appear in METHODOLOGY.md §15.3 reference table."""
+        from mediascope.analyze.entities import DEFAULT_ENTITY_CLUSTERS
+
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        missing = []
+        for cluster_name in DEFAULT_ENTITY_CLUSTERS:
+            # Clusters appear as "| **Name** |" in the Markdown table
+            if f"**{cluster_name}**" not in doc:
+                missing.append(cluster_name)
+        assert not missing, (
+            f"METHODOLOGY.md §15.3 is missing {len(missing)} entity cluster(s) "
+            f"that exist in code: {missing}. Add them to the reference table."
+        )
+
+    def test_no_phantom_clusters_in_docs(self):
+        """METHODOLOGY.md §15.3 should not reference clusters that don't exist in code."""
+        import re
+        from mediascope.analyze.entities import DEFAULT_ENTITY_CLUSTERS
+
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        # Extract all bold items from §15.3 cluster tables
+        # Pattern: "| **ClusterName** |"
+        section_match = re.search(
+            r"### 15\.3 Complete Cluster Reference(.+?)### 15\.4",
+            doc,
+            re.DOTALL,
+        )
+        if not section_match:
+            return  # Section not yet structured — skip
+
+        section_text = section_match.group(1)
+        table_clusters = re.findall(r"\| \*\*([^*]+)\*\* \|", section_text)
+        code_clusters = set(DEFAULT_ENTITY_CLUSTERS.keys())
+        phantoms = [c for c in table_clusters if c not in code_clusters]
+        assert not phantoms, (
+            f"METHODOLOGY.md §15.3 references {len(phantoms)} cluster(s) "
+            f"not in code: {phantoms}. Remove them or add to entities.py."
+        )
+
+    def test_cluster_alias_count_accuracy(self):
+        """Alias counts in METHODOLOGY.md §15.3 must match code within reason."""
+        import re
+        from mediascope.analyze.entities import DEFAULT_ENTITY_CLUSTERS
+
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        section_match = re.search(
+            r"### 15\.3 Complete Cluster Reference(.+?)### 15\.4",
+            doc,
+            re.DOTALL,
+        )
+        if not section_match:
+            return
+
+        section_text = section_match.group(1)
+        # Extract "| **Name** | count |" patterns
+        rows = re.findall(
+            r"\| \*\*([^*]+)\*\* \| (\d+) \|",
+            section_text,
+        )
+        mismatches = []
+        for name, stated_str in rows:
+            stated = int(stated_str)
+            if name not in DEFAULT_ENTITY_CLUSTERS:
+                continue
+            cluster = DEFAULT_ENTITY_CLUSTERS[name]
+            if isinstance(cluster, dict):
+                actual = len(cluster.get("aliases", []))
+            elif isinstance(cluster, list):
+                actual = len(cluster)
+            else:
+                actual = 1
+            if stated != actual:
+                mismatches.append(
+                    f"{name}: doc says {stated}, code has {actual}"
+                )
+        assert not mismatches, (
+            f"Alias count mismatches in METHODOLOGY.md §15.3:\n"
+            + "\n".join(mismatches)
+        )

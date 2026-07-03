@@ -792,3 +792,188 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 11. Puglisi, R. & Snyder, J.M. (2011). "Newspaper Coverage of Political Scandals." *Journal of Politics*, 73(3), 931-950.
 12. Martin, G.J. & Yurukoglu, A. (2017). "Bias in Cable News: Persuasion and Polarization." *American Economic Review*, 107(9), 2565-2599.
 13. Angrist, J.D. & Pischke, J.-S. (2009). *Mostly Harmless Econometrics*. Princeton University Press.
+
+## 15. Entity Detection & Cluster Reference
+
+### 15.1 Overview
+
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **59 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+
+Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
+
+### 15.2 Cluster Format
+
+Entity clusters accept two formats in code and YAML profiles:
+
+```python
+# Dict format (recommended — supports custom regex and negative lookahead)
+{"Meta": {"aliases": ["Meta", "Facebook", "Instagram"], "regex": r"\b(Meta|Facebook)\b"}}
+
+# List format (shorthand — auto-generates regex from aliases)
+{"Meta": ["Meta", "Facebook", "Instagram"]}
+```
+
+### 15.3 Complete Cluster Reference
+
+The following table documents all 59 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+
+#### Big Tech (Primary Analysis Targets)
+
+| Cluster | Aliases | Key Members |
+|---|---|---|
+| **Meta** | 70 | Meta, Meta Platforms, Facebook, Instagram, WhatsApp, Threads (+64 more) |
+| **Google** | 11 | Alphabet, Google, YouTube, DeepMind, Waymo, Sundar Pichai (+5 more) |
+| **Apple** | 11 | Apple, iPhone, iPad, Tim Cook, John Ternus, Apple Intelligence (+5 more) |
+| **Amazon** | 9 | Amazon, AWS, Alexa, Jeff Bezos, Andy Jassy, Amazon Web Services (+3 more) |
+| **Microsoft** | 9 | Microsoft, Satya Nadella, Azure, Bing, LinkedIn, GitHub (+3 more) |
+| **OpenAI** | 10 | OpenAI, Sam Altman, ChatGPT, GPT-4, GPT-5, DALL-E (+4 more) |
+
+#### AI & Cloud Infrastructure
+
+| Cluster | Aliases | Key Members |
+|---|---|---|
+| **Anthropic** | 8 | Anthropic, Dario Amodei, Daniela Amodei, Claude, Mythos, Fable (+2 more) |
+| **xAI** | 4 | xAI, Grok, Colossus, Colossus II |
+| **Nvidia** | 14 | Nvidia, NVIDIA, Jensen Huang, CUDA, H100, H200 (+8 more) |
+| **AMD** | 7 | AMD, Advanced Micro Devices, Lisa Su, EPYC, Ryzen, Radeon (+1 more) |
+| **Intel** | 7 | Intel, Intel Corporation, Pat Gelsinger, Lip-Bu Tan, Gaudi, Xeon (+1 more) |
+| **Qualcomm** | 6 | Qualcomm, Qualcomm Technologies, Cristiano Amon, Snapdragon, Dragonfly, Hexagon |
+| **Arm** | 6 | Arm, Arm Holdings, ARM, Rene Haas, Arm Neoverse, Neoverse |
+| **Broadcom** | 3 | Broadcom, Hock Tan, VMware |
+| **TSMC** | 4 | TSMC, Taiwan Semiconductor, C.C. Wei, Mark Liu |
+| **CoreWeave** | 2 | CoreWeave, Mike Intrator |
+| **Nebius** | 2 | Nebius, Nebius Group |
+| **AI Infrastructure** | 5 | Scale AI, Alexandr Wang, Covalen, Character.AI, Character AI |
+
+#### Consumer Tech & Platforms
+
+| Cluster | Aliases | Key Members |
+|---|---|---|
+| **Snap** | 4 | Snap, Snapchat, Spectacles, Evan Spiegel |
+| **TikTok** | 3 | TikTok, ByteDance, Shou Zi Chew |
+| **X/Twitter** | 4 | Twitter, X Corp, Elon Musk, Musk |
+| **Spotify** | 2 | Spotify, Daniel Ek |
+| **Duolingo** | 2 | Duolingo, Luis von Ahn |
+| **Uber** | 3 | Uber, Uber Technologies, Dara Khosrowshahi |
+| **Tesla/SpaceX** | 4 | Tesla, SpaceX, Starlink, Neuralink |
+| **Garmin** | 1 | Garmin |
+| **EssilorLuxottica** | 6 | EssilorLuxottica, Essilor, Luxottica, Francesco Milleri, Milleri, LensCrafters |
+
+#### Hardware & Wearables
+
+| Cluster | Aliases | Key Members |
+|---|---|---|
+| **VR/Metaverse** | 10 | Horizon Worlds, Horizon, Quest, Meta Quest, Quest 3S, Quest 3 (+4 more) |
+| **Smart Glasses Competitors** | 6 | Gentle Monster, XREAL, Even Realities, Halo, Solos, Brilliant Labs |
+
+#### Defense, Intelligence & Surveillance
+
+| Cluster | Aliases | Key Members |
+|---|---|---|
+| **Defense Tech** | 21 | Anduril, Anduril Industries, Palmer Luckey, Luckey, Elbit Systems, Elbit (+15 more) |
+| **Surveillance/Biometrics** | 8 | Rank One Computing, Rank One, Clearview AI, Clearview, NEC, Cognitec (+2 more) |
+| **Data/Intelligence Industry** | 12 | ShadowDragon, Babel Street, LexisNexis, Thomson Reuters CLEAR, Voyager Labs, Dataminr (+6 more) |
+| **Palantir** | 4 | Palantir, Alex Karp, Peter Thiel, Palantir Technologies |
+
+#### Media, Critics & Public Figures
+
+| Cluster | Aliases | Key Members |
+|---|---|---|
+| **Media/Publications** | 27 | The New York Times, New York Times, NYT, The Washington Post, Washington Post, The Guardian (+21 more) |
+| **Whistleblowers/Critics** | 10 | Sarah Wynn-Williams, Wynn-Williams, Frances Haugen, Haugen, Sophie Zhang, Christopher Wylie (+4 more) |
+| **Celebrity/Influencer** | 2 | Kylie Jenner, Jenner |
+
+#### Legal, Regulatory & Policy
+
+| Cluster | Aliases | Key Members |
+|---|---|---|
+| **EU Regulatory** | 6 | GDPR, General Data Protection Regulation, DPC, Data Protection Commission, European Commission, EU Commission |
+| **US Congress** | 8 | Congress, Senate, House of Representatives, Senate Judiciary Committee, Senate Commerce Committee, House Energy and Commerce Committee (+2 more) |
+| **US Government** | 47 | Pentagon, Department of Defense, FBI, CIA, NSA, National Security Agency (+41 more) |
+| **Legal/Judicial** | 6 | Delaware Superior Court, Delaware Supreme Court, Section 230, Communications Decency Act, Digital Services Act, DSA |
+| **Insurance/Litigation Finance** | 13 | The Hartford, Hartford, Chubb, ACE American, Flashlight Capital, Innsworth Capital (+7 more) |
+| **Political Figures** | 7 | Donald Trump, Trump, Joe Biden, Biden, Kamala Harris, J.D. Vance (+1 more) |
+| **Child Safety Legislation** | 10 | KIDS Act, Kids Internet Design and Safety Act, COPPA, Children's Online Privacy Protection Act, KOSA, Kids Online Safety Act (+4 more) |
+| **Privacy/Civil Liberties Orgs** | 12 | Electronic Frontier Foundation, EFF, ACLU, American Civil Liberties Union, Access Now, Fight for the Future (+6 more) |
+
+#### Research & Advocacy
+
+| Cluster | Aliases | Key Members |
+|---|---|---|
+| **Academic/Research** | 23 | NYU, New York University, Northeastern University, Northeastern, Stanford University, Stanford (+17 more) |
+| **Research Centers** | 12 | Cybersafety Research Center, Center for Countering Digital Hate, CCDH, Center for Humane Technology, Internet Watch Foundation, IWF (+6 more) |
+| **Child Safety Researchers** | 8 | Arturo Béjar, Béjar, Lexie Matsumoto, Matsumoto, Laura Edelson, Edelson (+2 more) |
+| **Education/Advocacy** | 5 | National PTA, National Education Association, NEA, American Federation of Teachers, AFT |
+| **Policy Research** | 13 | RAND Corporation, RAND, Brookings Institution, Brookings, Center for Strategic and International Studies, CSIS (+7 more) |
+| **Cybersecurity/Research** | 11 | Brian Krebs, Krebs, Jane Manchun Wong, Troy Hunt, Bruce Schneier, Schneier (+5 more) |
+
+#### Finance & Markets
+
+| Cluster | Aliases | Key Members |
+|---|---|---|
+| **VC/Tech Investors** | 10 | Marc Andreessen, Andreessen, Andreessen Horowitz, a16z, Sequoia Capital, Sequoia (+4 more) |
+| **Prediction Markets/Fintech** | 13 | Polymarket, Kalshi, Robinhood, Interactive Brokers, PredictIt, Metaculus (+7 more) |
+| **Indian Fintech** | 4 | CRED, Kunal Shah, PhonePe, UPI |
+
+#### Labor, Geopolitics & Society
+
+| Cluster | Aliases | Key Members |
+|---|---|---|
+| **Labor/Unions** | 10 | United Tech and Allied Workers, United Tech & Allied Workers, Communication Workers Union, CWU, Alphabet Workers Union, SEIU (+4 more) |
+| **Chinese AI** | 13 | Zhipu, Z.ai, GLM, DeepSeek, Baidu, Alibaba Cloud (+7 more) |
+| **Chinese Tech Platforms** | 10 | Lark, DingTalk, Rednote, Xiaohongshu, WeChat, Weibo (+4 more) |
+| **Australia** | 3 | Australia, Australian government, eSafety Commissioner |
+
+#### Internal & Legacy
+
+| Cluster | Aliases | Key Members |
+|---|---|---|
+| **OpenClaw** | 2 | OpenClaw, Hatch |
+| **IBM** | 4 | IBM, Deep Blue, Watson, Red Hat |
+
+### 15.4 Cluster Growth History
+
+Entity clusters are added organically as new articles reveal detection gaps. The toolkit launched with 21 core clusters covering the primary analysis targets and their major competitors. Growth to 59 clusters reflects the expanding scope of coverage analysis:
+
+| Phase | Clusters Added | Trigger |
+|---|---|---|
+| **Initial** (Jun 2026) | 21 | Core Big Tech + major competitors + regulatory bodies |
+| **Child Safety Expansion** | +5 | NYT child safety study (Jun 29): US Congress, Academic/Research, Research Centers, Child Safety Researchers/Legislation, Australia |
+| **Prediction Markets** | +1 | NYT Arena article (Jun 26): Polymarket, Kalshi, Robinhood, CFTC |
+| **Legal/Insurance** | +2 | Reuters insurance defense column (Jun 23): Insurance/Litigation Finance, Legal/Judicial |
+| **Defense Tech** | +3 | MIT TR Anduril/Meta warfare glasses (May 18): Defense Tech, Surveillance/Biometrics, Data/Intelligence Industry |
+| **Semiconductor** | +6 | Cross-article: AMD, Intel, Qualcomm, Arm, Broadcom, TSMC |
+| **Labor & Society** | +4 | WebProNews Dublin contractors, MIT TR Chinese workers: Labor/Unions, Chinese AI, Chinese Tech Platforms, Australia |
+| **Research & Policy** | +3 | Cross-article: Policy Research, Education/Advocacy, Cybersecurity/Research |
+| **Consumer & Misc** | +14 | Ongoing: Garmin, EssilorLuxottica, Smart Glasses Competitors, Indian Fintech, etc. |
+
+### 15.5 False-Positive Prevention
+
+Several clusters require negative lookahead patterns to avoid false-positive detections in common English:
+
+| Cluster | False Positive | Prevention |
+|---|---|---|
+| **Apple** | "Apple pie," "Apple cider," "apple tree" | Negative lookahead: `(?!\s+(?:pie\|cider\|sauce\|tree\|juice))` |
+| **Meta** | "Meta tag," "meta-analysis," "metadata" | Negative lookahead: `(?!\s*(?:tag\|data\|analysis\|cognitive\|physical))` |
+| **Amazon** | "Amazon rainforest," "Amazon river" | Negative lookahead: `(?!\s+(?:rainforest\|river\|basin\|jungle))` |
+| **Google** | "google it" (verb usage) | Context-dependent: verb form suppressed when not preceded by article/preposition |
+| **Arm** | "arm" (body part), "armed" | Case-sensitive matching: requires capitalized "Arm" with tech context |
+
+### 15.6 Adding Custom Clusters
+
+Custom clusters can be defined in publication YAML profiles or passed directly to `detect_entities()`:
+
+```python
+from mediascope.analyze.entities import detect_entities
+
+custom_clusters = {
+    "ExxonMobil": {
+        "aliases": ["ExxonMobil", "Exxon Mobil", "Exxon", "XOM"],
+        "regex": r"\b(Exxon(?:\s*Mobil)?|XOM)\b"
+    }
+}
+
+entities = detect_entities(text, clusters=custom_clusters)
+```
+
+See [ADDING_PUBLICATIONS.md](ADDING_PUBLICATIONS.md) for the full guide to adding entity clusters in publication profiles.
