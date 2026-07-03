@@ -11379,3 +11379,27 @@ Guardian (Katie McQue) article via Decrypt mirror: "Meta's AI Floods Child Abuse
 **Stats after:** 1249 tests (1249 passed, 2 xfailed), 0 failures. 56 framing device types, 335 patterns, 72 Meta aliases, 172 sample output files.
 
 **Commit:** `2c675a8` — pushed to GitHub.
+
+---
+
+### 2026-07-03 08:00 PT — Type A: Article Deep Dive (Barron's Meta AI Agents Disappointment)
+
+**Article:** "Meta AI Fears Ease Despite Zuckerberg's Disappointment in Agents" — Barron's, Jul 3, 2026
+
+**Focus:** Financial analysis of the same Zuckerberg town hall event covered by the already-analyzed Reuters wire report (Jul 2). First financial-publication deep dive in the sample output corpus. Cross-comparison reveals genre-driven framing divergence.
+
+**Key findings:**
+1. **Financial reassurance framing** — new device type. Article's central rhetorical move converts AI disappointment into investor comfort: "That could soothe concerns that Meta is preparing to become the first... to cut back on AI spending." Journalist's own reassurance, not sourced to any analyst.
+2. **Sentiment failure** — VADER scored +0.574 for a mildly negative article (manual: -0.15 to -0.20). Third documented case of VADER overcounting positivity in hedged negative framing (after Android Authority 0.608, Cannes contractors). Financial journalism particularly vulnerable: "easing fears" reads positive to VADER but contextually signals resolved negativity.
+3. **Alexandr Wang entity cluster fix** — was in AI Infrastructure (Scale AI affiliation). Now Meta's chief AI officer. Moved to Meta cluster.
+4. **Cross-comparison with Reuters** — same event, different narrative: Reuters bundles two negatives (AI + MCI) without editorializing; Barron's drops MCI, adds Bloomberg cloud-business, constructs reassurance arc. Neither more "biased" — genre determines framing priorities.
+
+**Toolkit improvements:**
+- **New framing device:** `financial_reassurance` (4 patterns) — soothe/ease/allay concerns, despite-pivot, investor-reaction verbs, participial headline-style
+- **Entity fix:** Alexandr Wang moved from AI Infrastructure → Meta cluster (73 aliases, was 72). AI Infrastructure now 4 aliases (was 5). Regex updated for both clusters.
+- **Doc updates:** METHODOLOGY.md (Extended table + §15.3 alias counts), ARCHITECTURE.md (Extended list + pattern count), AGENT_GUIDE.md, README.md, cli.py, framing.py docstring — all updated from 56→57 types, 50→51 pattern-matched, 40→41 extended, 335→339 patterns.
+- **Test updates:** test_nyt_ai_reviews.py (count + expected set), test_structural_consistency.py (counts), test_wired_gulag_patterns.py (Wang cluster assertion)
+
+**Stats after:** 1249 tests (1249 passed, 2 xfailed), 0 failures. 57 framing device types, 339 patterns, 73 Meta aliases, 173 sample output files.
+
+**Commit:** `2f486d2` — pushed to GitHub.
