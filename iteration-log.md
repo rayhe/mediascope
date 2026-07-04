@@ -3,6 +3,47 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-04 02:00 PT — Type A: Article Deep Dive — MIT TR Meta Hack AI Security
+
+### Focus
+MIT Technology Review: "The Meta hack shows there's more to AI security than Mythos" (June 2026). Article about Meta's AI customer support agent being exploited to steal Instagram accounts, with 4 academic experts critiquing the security failure.
+
+### What Changed
+
+**entities.py:**
+- Bo Li, Dawn Song, Sanmi Koyejo removed from Meta cluster regex (they appear as quoted professors from UIUC/Berkeley/Stanford, not Meta employees)
+- Added to Academic/Research cluster with Duke University, University of Wisconsin, University of Illinois affiliations
+- Case-sensitive Nature guard: `(?-i:Nature)` prevents lowercase "nature" (common English word) from matching the Nature journal entity
+- Meta aliases: 73→70, Academic/Research aliases: 35→41
+
+**topics.py:**
+- Education topic analogy-context suppression: keywords inside "like a/an/some..." patterns are excluded
+- Prevents "like an elementary school student" (used as metaphor for AI behavior) from triggering education topic
+- Pattern: `r"like\s+(?:a|an|some)\s+.*?"` context window suppresses education keywords within analogy constructions
+
+**New files:**
+- `tests/test_mittr_meta_hack_ai_security.py` — 20 tests covering entity detection (Bo Li as Academic, not Meta), case-sensitive Nature guard, education analogy suppression, AI security topic classification, composite sentiment calibration
+- `examples/sample_output/mittr_meta_hack_ai_security_2026_06_analysis.md` — full annotated analysis
+
+**Structural consistency updates:**
+- README.md + ARCHITECTURE.md: test count 1316→1336, file count 51→52
+- QUALITY_STANDARDS.md: annotated article count 91→92
+- METHODOLOGY.md: alias counts updated (Meta 73→70, Academic/Research 35→41)
+- New test file listed in both README.md table and ARCHITECTURE.md tree
+
+### Source
+- Article URL: https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/
+- Original reporting: 404 Media (June 5, 2026)
+
+### Key Stats
+- Tests: 1316 → 1336 (+20 new)
+- Test files: 51 → 52
+- Annotated articles: 91 → 92
+- Entity clusters: 60 (unchanged), total aliases adjusted
+- Pre-existing failures: 3 (unchanged — test_nyt_school_targeting ×1, test_policy_reversal_competitive_deficit ×2)
+- Commit: `0d454fa`
+
+---
 ## 2026-07-03 18:00 PT — Type D: Toolkit Quality — Stale Demo Script Fixes + Structural Guard Expansion
 
 ### Focus
