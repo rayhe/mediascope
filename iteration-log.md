@@ -11922,3 +11922,38 @@ Added: turmoil, tumult, chafed, chafing, poaching, poaching war, talent war, upe
 ### Analysis File
 - `examples/sample_output/nyt_meta_ai_overhaul_restructuring_2025_08_19_analysis.md`
 - Full 8-dimension manual analysis with toolkit comparison tables, pre/post scores, and conflict disclosure
+
+## 2026-07-03 23:00 PT — Type B: Journalist Research (Manisha Krishnan full career expansion)
+
+### Focus
+Full career expansion for Manisha Krishnan, Wired senior editor. Profile went from 1 career event (Wired only) to 4 events with 2 auto-detected migrations.
+
+### Career Timeline Reconstructed
+1. **Toronto Star / Globe and Mail** (freelance, ~2013-2016) — Canadian journalism roots. Published in both papers plus Global News. Toronto-based.
+2. **Vice News** (~2016-2025, "nearly nine years") — Senior reporter and editor covering drugs, race, guns, subcultures. Emmy award-winning (Vice News Tonight won 9 Emmys at 2023 ceremony). Overlaps Katie Drummond's VP Content period (2019-2023). Weathered Vice's arc from $5.7B peak valuation to 2023 bankruptcy ($350M sale).
+3. **Wired, culture desk** (March 24, 2025 - ~May 2026) — Senior Editor, Culture. Confirmed by Deadline Club/AAJA panel (healthjournalism.org recap, Mar 2026). Appeared on WIRED Roundup podcast with Zoë Schiffer.
+4. **Wired, science desk** (June 2026 - present) — Reports to Tim Marchman (Director, Science, Politics, and Security). Covers tech companies and AI.
+
+### Date Correction
+Start date fixed from 2026-03-24 to **2025-03-24** per TalkingBizNews (March 6, 2025) and Editor & Publisher announcements.
+
+### Pipeline Significance
+Three-way institutional pipeline:
+1. **Vice → Wired** (Drummond orbit — worked under Drummond at Vice 2019-2023, hired at Wired under Drummond as EIC)
+2. **Guardian contributor → Wired** hire (alongside Lowell/Swash 2026 wave)
+3. **Canadian journalism → US tech media** (Toronto Star → Vice Canada → Vice US → Wired)
+
+### Analytical Value
+Vice News editorial DNA (gonzo immersion, adversarial anti-institutional posture, youth audience targeting) is a distinct journalistic tradition from investigative (Guardian, NYT) or business (Bloomberg, WSJ) traditions. Her drugs/subcultures expertise may produce distinctive framing on platform addiction, mental health, and content moderation stories. 
+
+### Documentation Updated
+- `profiles/careers/journalists.yaml`: 1→4 events, full career notes
+- `docs/EDITORIAL_HISTORIES.md`: multi-pub 121→122
+- `README.md`: migrations 386→388
+
+### Stats
+123 journalists, 122 multi-pub, 388 auto-detected migrations, 89 annotated articles, 66 framing device types, 9 correction paths (A–I), 9 same-event clusters.
+
+### Tests
+1243 passed (3 pre-existing deselected), 2 xfailed. 79 structural consistency guards all pass. 0 new regressions.
+
