@@ -167,6 +167,53 @@ class TestDocCountConsistency:
             f"Should contain '{expected}'."
         )
 
+    def test_methodology_tier_breakdown(self):
+        """METHODOLOGY.md intro tier counts (core/extended/structural) match code."""
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        match = re.search(
+            r"core devices \((\d+) pattern-matched",
+            doc,
+        )
+        assert match, (
+            "METHODOLOGY.md is missing the 'core devices (N pattern-matched' "
+            "tier breakdown in the §4.1 intro."
+        )
+        claimed_core = int(match.group(1))
+        assert claimed_core == 10, (
+            f"METHODOLOGY.md claims {claimed_core} core devices but code has 10."
+        )
+
+        match = re.search(
+            r"extended devices \((\d+) added from real-article analysis\)",
+            doc,
+        )
+        assert match, (
+            "METHODOLOGY.md is missing the 'extended devices (N added from "
+            "real-article analysis)' tier breakdown."
+        )
+        claimed_extended = int(match.group(1))
+        assert claimed_extended == self._EXPECTED_EXTENDED, (
+            f"METHODOLOGY.md claims {claimed_extended} extended devices "
+            f"but code has {self._EXPECTED_EXTENDED} "
+            f"(total {self._EXPECTED_TOTAL} - 10 core - "
+            f"{len(TestFramingDeviceTypeCount.EXPECTED_STRUCTURAL)} structural)."
+        )
+
+        match = re.search(
+            r"structural devices \((\d+) detected via post-pass",
+            doc,
+        )
+        assert match, (
+            "METHODOLOGY.md is missing the 'structural devices (N detected "
+            "via post-pass' tier breakdown."
+        )
+        claimed_structural = int(match.group(1))
+        expected_structural = len(TestFramingDeviceTypeCount.EXPECTED_STRUCTURAL)
+        assert claimed_structural == expected_structural, (
+            f"METHODOLOGY.md claims {claimed_structural} structural devices "
+            f"but code has {expected_structural}."
+        )
+
     def test_agent_guide_device_count(self):
         """AGENT_GUIDE.md framing device count matches code."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()

@@ -179,7 +179,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 67 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (48 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 67 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (51 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
