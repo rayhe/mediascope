@@ -612,6 +612,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Cybersafety Research Center",
             "Center for Countering Digital Hate", "CCDH",
             "Center for Humane Technology",
+            "Humane Intelligence",
             "Internet Watch Foundation", "IWF",
             "National Center for Missing & Exploited Children", "NCMEC",
             "CyberTipline",
@@ -621,6 +622,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         "regex": r"(?<!\w)(Cybersafety Research Center"
                  r"|Center for Countering Digital Hate|(?-i:CCDH)"
                  r"|Center for Humane Technology"
+                 r"|Humane Intelligence"
                  r"|Internet Watch Foundation|(?-i:IWF)"
                  r"|National Center for Missing (?:&|and) Exploited Children|(?-i:NCMEC)"
                  r"|CyberTip(?:line|s?)"
@@ -650,6 +652,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Laura Edelson", "Edelson",
             "Damon McCoy",
             "Abdulraheem Arar",
+            "Rumman Chowdhury", "Chowdhury",
         ],
     },
     "Australia": {
@@ -674,10 +677,22 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
     "AI Infrastructure": {
         "aliases": [
             "Scale AI",
-            "Covalen",
+        ],
+        "regex": r"(?<!\w)(Scale AI)(?!\w)",
+    },
+    "AI Chatbot Products": {
+        "aliases": [
             "Character.AI", "Character AI",
         ],
-        "regex": r"(?<!\w)(Scale AI|Covalen|Character\.?AI)(?!\w)",
+        "regex": r"(?<!\w)(Character\.?AI)(?!\w)",
+    },
+    "Outsourcing/Contractors": {
+        "aliases": [
+            "Covalen",
+            "Sama",
+            "Accenture",
+        ],
+        "regex": r"(?<!\w)(Covalen|Sama(?=\s+(?:issued|employees|redundancy|outsourc|engagement|Meta|content))|Accenture)(?!\w)",
     },
     "Financial Services": {
         "aliases": [

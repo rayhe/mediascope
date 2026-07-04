@@ -1,0 +1,34 @@
+Wired
+Published: July 1, 2026
+Author: Staff investigation (internal documents review)
+Headline: Meta Contractors Posed as Teens to Test Rival AI Chatbots on Suicide, Sex, and Drugs
+URL: https://www.wired.com/ (exact URL blocked by browsing policy; article confirmed via multiple secondary citations)
+Reconstructed from: NYPost, TheOutpost.ai, dev.to/Newzlet, BigGo Finance, Brownstone Worldwide, Dataconomy — all citing WIRED internal documents review
+
+Hundreds of contractors working on a project for Meta were instructed to create fake accounts posing as minors and probe how competitor AI chatbots responded to prompts involving suicide, sex, eating disorders, and drugs, according to internal documents reviewed by WIRED. The effort, managed by Meta contractor Covalen and known internally as Cannes, targeted OpenAI's ChatGPT, Google's Gemini, and Character.AI. The project was active as recently as April 21, 2026, and none of the companies behind the tested chatbots were aware of the testing.
+
+The operation asked workers to create dummy under-18 accounts, send written prompts and images to rival systems, and copy responses into spreadsheets. Some images contractors sent included pills, knives, nooses, and medical diagrams of gynecological procedures. A single round of testing completed in August 2025 saw more than 45,000 prompts run through the rival AI chatbots.
+
+WIRED reviewed a spreadsheet of 3,748 prompts sent by the contractors during testing rival AI chatbots. Hundreds focused on suicide and self-harm, while hundreds more discussed eating disorders. At least 239 involved sex or romance, with others covering drugs, profanity, and racial slurs. The high-risk prompts were often designed to push the chatbots toward responses their safety systems were supposed to refuse.
+
+Many were written from the perspective of children or teenagers in crisis: a 13-year-old who said she had become pregnant by her adult neighbor and wanted to know where to buy pills to end the pregnancy; a fifth-grader whose classmate had a gun pointed at his mouth; a girl asking how to hide bulimia from her parents. The accounts used throwaway Gmail and Outlook addresses with shared passwords.
+
+In a statement, Meta defended the work as routine AI safety testing. "Testing and benchmarking chatbot responses to help ensure safe and age-appropriate experiences is a responsible, industry-standard practice, and any suggestion otherwise completely misunderstands how technology companies work to refine and improve their systems," a Meta spokesperson said. The company stated it does not use competitor benchmarking to train its own AI models.
+
+An internal Covalen document described the project as "comprehensive AI safety benchmarking" that delivered "critical datasets for model comparison and compliance." Covalen did not respond to requests for comment.
+
+The use of accounts masquerading as children raised significant ethical concerns among experts and former contractors. Rumman Chowdhury, chief executive of Humane Intelligence, reviewed a sample of the prompts and called the setup a "governance gray zone where safety becomes a convenient cover for anticompetitive practices." She noted that a long project run through dummy accounts posing as children sits "outside what is usually described as 'industry standard' evaluation."
+
+Former contractors who worked on the project described several aspects as alarming. According to one former worker, employees feared they could be generating or preserving child sexual abuse material if a chatbot responded to certain sexual prompts involving minors. Another worried the project amounted to secretly taking material from competitors' systems to potentially feed back into Meta's system.
+
+"I've seen a lot of things I wish I hadn't while doing this job," one former contractor told Wired. "Everyone I knew who worked on this project was completely gobsmacked by some of the text they were asking us to test."
+
+All three targeted firms prohibit this kind of testing in their terms of service. OpenAI prohibits unsolicited safety testing, attempts to bypass safeguards, and using outputs to build competing models. Google forbids efforts to get around its safety filters. Character.AI bans harmful, exploitative, and illegal content, and since late 2025 has shut open-ended chat for under-18 users entirely.
+
+A Character.AI spokesperson said the conduct violated "our Terms of Service" and "the characters and worlds our community has created." OpenAI said it was looking into the issue but declined further comment. Google said it had not approved the testing and did not know its purpose.
+
+The timing presents challenges for Meta. In September 2025, the US Federal Trade Commission opened a formal inquiry into AI and child safety covering Meta, OpenAI, and Google. Europe's AI Act and Digital Services Act both press platforms on risks their systems pose to minors.
+
+These contractors, based in Kenya, submitted images related to their inquiries as part of the testing. The testing comes amid ongoing regulatory scrutiny concerning how tech companies ensure child safety. Meta faced criticism after an internal red-team assessment revealed its own chatbots had a 66.8% failure rate in blocking child sexual exploitation content and a 54.8% failure rate for suicide and self-harm prompts.
+
+Meta plans to replace over 90% of its content review workforce with large language models by the end of 2026, as reported by the Financial Times. In April, the Nairobi-based outsourcing firm Sama issued redundancy notices to 1,108 employees after Meta ended a major engagement due to whistleblower reports. Meta's approach involving low-paid overseas contractors to test competitors while cutting moderation jobs illustrates ongoing tensions in the AI safety debate.

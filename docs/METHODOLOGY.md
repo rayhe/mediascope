@@ -859,7 +859,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **60 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **62 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -877,7 +877,7 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 60 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 62 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
@@ -905,7 +905,9 @@ The following table documents all 60 entity clusters shipped with MediaScope, or
 | **TSMC** | 4 | TSMC, Taiwan Semiconductor, C.C. Wei, Mark Liu |
 | **CoreWeave** | 2 | CoreWeave, Mike Intrator |
 | **Nebius** | 2 | Nebius, Nebius Group |
-| **AI Infrastructure** | 4 | Scale AI, Covalen, Character.AI, Character AI |
+| **AI Infrastructure** | 1 | Scale AI |
+| **AI Chatbot Products** | 2 | Character.AI, Character AI |
+| **Outsourcing/Contractors** | 3 | Covalen, Sama, Accenture |
 
 #### Consumer Tech & Platforms
 
@@ -963,8 +965,8 @@ The following table documents all 60 entity clusters shipped with MediaScope, or
 | Cluster | Aliases | Key Members |
 |---|---|---|
 | **Academic/Research** | 41 | NYU, New York University, Northeastern University, Northeastern, Stanford University, Stanford (+35 more) |
-| **Research Centers** | 12 | Cybersafety Research Center, Center for Countering Digital Hate, CCDH, Center for Humane Technology, Internet Watch Foundation, IWF (+6 more) |
-| **Child Safety Researchers** | 8 | Arturo Béjar, Béjar, Lexie Matsumoto, Matsumoto, Laura Edelson, Edelson (+2 more) |
+| **Research Centers** | 13 | Cybersafety Research Center, Center for Countering Digital Hate, CCDH, Center for Humane Technology, Humane Intelligence, Internet Watch Foundation, IWF (+6 more) |
+| **Child Safety Researchers** | 10 | Arturo Béjar, Béjar, Lexie Matsumoto, Matsumoto, Laura Edelson, Edelson, Rumman Chowdhury, Chowdhury (+2 more) |
 | **Education/Advocacy** | 5 | National PTA, National Education Association, NEA, American Federation of Teachers, AFT |
 | **Policy Research** | 13 | RAND Corporation, RAND, Brookings Institution, Brookings, Center for Strategic and International Studies, CSIS (+7 more) |
 | **Cybersecurity/Research** | 11 | Brian Krebs, Krebs, Jane Manchun Wong, Troy Hunt, Bruce Schneier, Schneier (+5 more) |
@@ -996,7 +998,7 @@ The following table documents all 60 entity clusters shipped with MediaScope, or
 
 ### 15.4 Cluster Growth History
 
-Entity clusters are added organically as new articles reveal detection gaps. The toolkit launched with 21 core clusters covering the primary analysis targets and their major competitors. Growth to 60 clusters reflects the expanding scope of coverage analysis:
+Entity clusters are added organically as new articles reveal detection gaps. The toolkit launched with 21 core clusters covering the primary analysis targets and their major competitors. Growth to 62 clusters reflects the expanding scope of coverage analysis:
 
 | Phase | Clusters Added | Trigger |
 |---|---|---|

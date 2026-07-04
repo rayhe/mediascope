@@ -39,19 +39,19 @@ class TestScaleAICluster:
         assert len(scale) > 0, "Scale AI should be detected"
         assert all(e.cluster == "AI Infrastructure" for e in scale)
 
-    def test_covalen_in_ai_infrastructure(self):
+    def test_covalen_in_outsourcing_contractors(self):
         text = "Covalen managed the testing project for Meta."
         entities = detect_entities(text)
         covalen = [e for e in entities if e.entity == "Covalen"]
         assert len(covalen) > 0, "Covalen should be detected"
-        assert all(e.cluster == "AI Infrastructure" for e in covalen)
+        assert all(e.cluster == "Outsourcing/Contractors" for e in covalen)
 
-    def test_character_ai_in_ai_infrastructure(self):
+    def test_character_ai_in_ai_chatbot_products(self):
         text = "The project targeted OpenAI, Google Gemini, and Character.AI."
         entities = detect_entities(text)
         char_ai = [e for e in entities if "Character" in e.entity]
         assert len(char_ai) > 0, "Character.AI should be detected"
-        assert all(e.cluster == "AI Infrastructure" for e in char_ai)
+        assert all(e.cluster == "AI Chatbot Products" for e in char_ai)
 
 
 class TestCatastrophizingDeathOf:
@@ -423,3 +423,39 @@ class TestCannesToneGap:
         assert result.framing_corrected is True, (
             "Framing correction should be active on Cannes article"
         )
+
+
+class TestRummanChowdhuryDetection:
+    """Rumman Chowdhury and Humane Intelligence entity detection."""
+
+    def test_chowdhury_in_child_safety_researchers(self):
+        text = "Rumman Chowdhury, CEO of Humane Intelligence, called it a governance gray zone."
+        entities = detect_entities(text)
+        chow = [e for e in entities if "Chowdhury" in e.entity]
+        assert len(chow) > 0, "Rumman Chowdhury should be detected"
+        assert all(e.cluster == "Child Safety Researchers" for e in chow)
+
+    def test_humane_intelligence_in_research_centers(self):
+        text = "Humane Intelligence reviewed the prompts used in the project."
+        entities = detect_entities(text)
+        hi = [e for e in entities if "Humane Intelligence" in e.entity]
+        assert len(hi) > 0, "Humane Intelligence should be detected"
+        assert all(e.cluster == "Research Centers" for e in hi)
+
+
+class TestSamaDetection:
+    """Sama (outsourcing firm) entity detection with context-aware regex."""
+
+    def test_sama_outsourcing_context(self):
+        text = "Sama issued redundancy notices to its Meta content moderation workers."
+        entities = detect_entities(text)
+        sama = [e for e in entities if e.entity == "Sama"]
+        assert len(sama) > 0, "Sama should be detected in outsourcing context"
+        assert all(e.cluster == "Outsourcing/Contractors" for e in sama)
+
+    def test_sama_no_false_positive(self):
+        """'sama' as a word in other contexts should not trigger."""
+        text = "The sama practice in Buddhist tradition emphasizes equanimity."
+        entities = detect_entities(text)
+        sama = [e for e in entities if e.entity == "Sama"]
+        assert len(sama) == 0, "Sama should not detect Buddhist 'sama'"

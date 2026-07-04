@@ -4,6 +4,32 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-04 10:00 PT — Type D: Toolkit Quality — Parametrize Counter Bug Fix + EL Count Guard
+
+### Focus
+Three structural bugs fixed: a depth-aware trailing-comma false positive in `_count_top_level_items`, a missing guard for emotional language term count drift, and stale doc counts.
+
+### What Changed
+
+**1. PARAMETRIZE COUNTER BUG (MOST SIGNIFICANT)**
+`_count_top_level_items()` had a trailing-comma false positive: string delimiters (`"`) did not reset `last_comma_at_depth_zero`, so a list like `"a", "b", "c"` (no trailing comma) was counted as 2 items instead of 3. The closing quote exits the `in_string` branch without entering the `else` branch, so the flag from the preceding depth-0 comma persisted. Fix: reset `last_comma_at_depth_zero = False` when opening a string literal, since a string delimiter IS content after the last comma. This corrected the pytest-collected count from 1361 (overcounted) to 1355 (matches actual `pytest --collect-only`).
+
+**2. NEW EL COUNT GUARD TEST**
+Added `test_quality_standards_el_count_matches_code` to catch drift between QUALITY_STANDARDS.md §8.1 bold count and the actual `EMOTIONAL_LANGUAGE` list in `sentiment.py`. Caught an existing discrepancy: doc claimed 735, code has 829.
+
+**3. DOC COUNT SYNC**
+- README.md header: 1354→1355
+- ARCHITECTURE.md: 1354→1355
+- README per-file test_structural_consistency.py: 79→80
+- README adversarial count: 21→24
+- QUALITY_STANDARDS.md §8.1 bold: 735→829
+- QUALITY_STANDARDS.md §8.4 growth note: already correct (829)
+
+### Test Results
+1355 tests, 0 failures. Commit `a723543`, pushed to `main`.
+
+---
+
 ## 2026-07-04 09:00 PT — Type C: Ownership & Funding Deep Dive — MIT TR OBBBA First Active FY, Princeton Tax Escape, Litigation Connections
 
 ### Focus
