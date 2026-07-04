@@ -168,6 +168,7 @@ def analyze_with_path_h_details(
         "juxtaposition", "refusal_amplification",
         "self_referential_investigation", "kicker_framing",
         "military_techno_optimism", "assumed_consensus", "editorial_aside",
+        "failure_precedent", "editorial_deflation",
     }
 
     print(f"\n{'=' * 70}")
@@ -306,7 +307,7 @@ def main():
     print("  loaded vocabulary (Path D) or passive framing (Path A).")
     print()
     print("  See METHODOLOGY.md §9.2 (Path H) for the full framework.")
-    print("  See tests/ for 1172 regression tests covering all 8 correction paths.")
+    print("  See tests/ for 1253 regression tests covering all 8 correction paths.")
 
 
 if __name__ == "__main__":

@@ -223,6 +223,7 @@ def analyze_with_details(text: str, headline: str, label: str) -> None:
         "juxtaposition", "refusal_amplification",
         "self_referential_investigation", "kicker_framing",
         "military_techno_optimism", "assumed_consensus", "editorial_aside",
+        "failure_precedent", "editorial_deflation",
     }
     adversarial_count = sum(
         1 for d in framing_devices if d.device_type in adversarial_types
@@ -320,7 +321,7 @@ def main():
     print("  vocabulary.")
     print()
     print("  See METHODOLOGY.md §9 for the full theoretical framework.")
-    print("  See tests/ for 1172 regression tests using real article excerpts.")
+    print("  See tests/ for 1253 regression tests using real article excerpts.")
 
 
 if __name__ == "__main__":

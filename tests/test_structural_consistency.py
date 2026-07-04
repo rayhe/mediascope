@@ -932,6 +932,41 @@ class TestAdversarialDeviceListConsistency:
             f"Doc has: {sorted(doc_types)}"
         )
 
+    @pytest.mark.parametrize("demo_file", [
+        "framing_correction_demo.py",
+        "sarcastic_editorial_demo.py",
+    ])
+    def test_example_demo_adversarial_set_complete(self, demo_file):
+        """Example demo scripts must list all adversarial device types from code.
+
+        Demo scripts duplicate the adversarial type set for diagnostic output.
+        When new types are added to _ADVERSARIAL_DEVICE_TYPES in sentiment.py,
+        the demo scripts' inline copies silently go stale.
+
+        Added: 2026-07-03 18:00 PT, Type D iteration.
+        """
+        code_types = self._adversarial_types_from_code()
+        demo_path = _REPO_ROOT / "examples" / demo_file
+        src = demo_path.read_text()
+        # Find the adversarial_types = { ... } set literal
+        match = re.search(
+            r"adversarial_types\s*=\s*\{(.*?)\}",
+            src,
+            re.DOTALL,
+        )
+        assert match, (
+            f"{demo_file} is missing the adversarial_types set literal."
+        )
+        demo_types = set(re.findall(r'"(\w+)"', match.group(1)))
+        missing = code_types - demo_types
+        extra = demo_types - code_types
+        assert not missing and not extra, (
+            f"{demo_file} adversarial_types set is out of sync with code.\n"
+            f"Missing from demo: {sorted(missing)}\n"
+            f"Extra in demo: {sorted(extra)}\n"
+            f"Code has: {sorted(code_types)}"
+        )
+
 
 class TestStaleRegexPatternCountPurge:
     """Guard: stale regex pattern counts are purged from doc descriptions.
