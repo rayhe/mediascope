@@ -3,6 +3,48 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-04 03:00 PT — Type B: Journalist/Publication Research — Caiwei Chen Profile Expansion + Greg Williams Departure
+
+### Focus
+Deep expansion of Caiwei Chen's profile (MIT TR China reporter, previously thinnest profile at 26 lines) and Greg Williams's departure from Wired UK editorial leadership.
+
+### What Changed
+
+**profiles/careers/journalists.yaml (Caiwei Chen):**
+- Expanded from 2 career entries to 3: added freelance period (2018-2023)
+- Fixed incorrect dates: RoW start 2023-05 (was 2021-01), MIT TR start 2025-01 (was 2024-01)
+- Added full biographical detail: born Xiangyang, Hubei, China; dual BA Communications (China Agricultural University + UC Denver, cum laude); Columbia OHMA MA (Oral History, 2021)
+- Added freelance publications: Wired, Protocol, SCMP, Rolling Stone, Sixth Tone, TechNode, Radii, The Daily Dot, SupChina/The China Project
+- Added podcast work: Redirect (Mandarin cultural critique, host), Tech Buzz China (producer), Pixel Perfect (current contributor), Marcast network
+- Added key stories: LeCun/AMI exclusive Q&A, Alibaba Accio (10M+ MAUs), OpenClaw-in-China cottage industry, Weibo/Douyin real-name requirements
+- Added analytical note: LeCun interview directly intersects Meta coverage analysis (LeCun left Meta FAIR, his views on LLMs implicitly critique Meta's own strategy)
+
+**profiles/careers/editorial_changes.yaml:**
+- Added Greg Williams departure from Wired UK (April 2026): 9 years as editor, 16 total years at Wired, departed for Exponential View (Azeem Azhar's research studio) as inaugural executive editor
+- Analytical significance: effectively ends Wired UK as semi-autonomous editorial entity — UK coverage now centralized under US editorial direction (Barrett → Swash → Ward) rather than having an independent UK editor
+
+**README.md:**
+- Updated careers_demo migration count: 388 → 389
+
+### Sources
+- Columbia University OHMA alumni page: https://oralhistory.columbia.edu/alumni/caiwei-chen-2021
+- TalkingBizNews (RoW hire): https://talkingbiznews.com/media-news/rest-of-world-hires-chen-as-china-reporter/
+- TalkingBizNews (MIT TR hire): https://talkingbiznews.com/media-news/mit-tech-review-hires-chen-as-tech-reporter/
+- MIT TR author page: https://technologyreview.com/author/caiwei-chen
+- JournalistHunt profile: 116+ articles, multi-outlet coverage
+- Sixth Tone author page (freelance byline confirmation)
+- Techmeme aggregation: LeCun/AMI interview, Alibaba Accio, OpenClaw-in-China stories
+- TalkingBizNews (Williams departure): https://talkingbiznews.com/media-news/williams-departs-wired-for-exponential-view/
+
+### Key Stats
+- Tests: 1336 (unchanged — 1325 passed, 3 pre-existing failures, 2 xfailed)
+- Journalists: 123 (unchanged — expanded existing, not added new)
+- Multi-pub: 123 (was 122 — Caiwei Chen now has 3 career entries, making all 123 multi-pub)
+- Auto-detected migrations: 388 → 389 (+1 from new freelance career entry)
+- Structural consistency tests: 79 (all pass)
+- Commit: `9034c09`
+
+---
 ## 2026-07-04 02:00 PT — Type A: Article Deep Dive — MIT TR Meta Hack AI Security
 
 ### Focus
