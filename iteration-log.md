@@ -3,6 +3,57 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+
+## 2026-07-04 07:00 PT — Type B: Journalist/Publication Research — Josh Tyrangiel (124th) + Atlantic Editorial Expansion
+
+### Focus
+Deep profile creation for Josh Tyrangiel — the most senior editorial executive in American journalism to transition to staff writing at a tracked publication. Also added two missing Atlantic editorial changes (Griff Witte, Josh Tyrangiel hire) and fixed pre-existing doc count drift.
+
+### What Changed
+
+**profiles/careers/journalists.yaml — NEW: Josh Tyrangiel (124th journalist):**
+- 8 career entries spanning 30+ years across 8 distinct organizations:
+  1. Rolling Stone — fact checker (1994-1996). First job after UPenn BA.
+  2. Vibe — staff (1995-1996). Early music magazine journalism.
+  3. MTV Networks — news producer (1996-1998). Conducted last Tupac interview. Presidential campaign trail.
+  4. TIME — staff writer → deputy managing editor (1999-2009). 10-year rise. Oversaw Person of the Year. Quadrupled TIME.com traffic.
+  5. Bloomberg Businessweek — editor → chief content officer (2009-2015). "Reinvented Businessweek." National Magazine Award 2012. Ad Age Editor of Year 2012.
+  6. Vice — EVP News (2015-2019). Created Vice News Tonight on HBO. 41 Emmy noms, 15 trophies, 1 Peabody.
+  7. Freelance — producer/columnist (2019-2025). Founded Backstory Partners. WaPo AI column. Oprah AI special EP.
+  8. The Atlantic — staff writer, AI/tech/policy (2025-present). March 2026 cover story on AI and work. Author "AI for Good" (S&S, May 2026).
+- Education: UPenn BA (English/American History), Yale MA (American Studies)
+- Born Sept 25, 1972. Partner Sarah Feinberg. Based NYC East Village.
+- 12 Emmy Awards, Peabody Awards.
+- Source URLs: Wikipedia, joshtyrangiel.com, Ponder RSS (Atlantic hire announcement), Park School profile.
+
+**ANALYTICAL VALUE:**
+- CONSTRUCTIVE FRAMING counterpoint: Unlike Atlantic's dominant adversarial posture (LaFrance's "Doomsday Machine," Bogost, Wong, Cushing), Tyrangiel's "AI for Good" thesis frames AI as practical tool for healthcare, education, government. Creates a natural internal experiment — will Atlantic's editorial culture modulate his constructive framing over time?
+- EDITORIAL EXECUTIVE → WRITER transition: No other tracked journalist has held positions equivalent to TIME deputy managing editor + Bloomberg Businessweek EIC + Vice EVP News before becoming a staff writer. His deep institutional knowledge of editorial framing is itself analytically interesting.
+- DiD NATURAL EXPERIMENT: His WaPo AI column → Atlantic migration provides a direct comparison of how the same writer's AI coverage shifts between Bezos-owned WaPo and Emerson Collective-owned Atlantic.
+
+**profiles/careers/editorial_changes.yaml — 2 NEW Atlantic entries:**
+1. Griff Witte: Managing editor for politics/accountability (Jan 2025). 23yr WaPo veteran leading 50-person team. Part of massive WaPo→Atlantic exodus post-Bezos endorsement controversy (Ashley Parker, Michael Scherer, Philip Rucker, Josh Dawsey, Tyler Pager also left). Reports to Yoni Appelbaum. Previously Miami Herald reporter, researcher for Coll's Pulitzer-winning "Ghost Wars."
+2. Josh Tyrangiel: Staff writer for tech/AI/policy (Jun 2025). Most senior editorial executive to join tracked pub as staff writer.
+- Also fixed editorial_changes.yaml placement bug: entries initially appended under `wired` section instead of `atlantic` — corrected via Python YAML parse/rewrite.
+
+**Documentation count updates:**
+- README.md: 123→124 journalists, 389→396 auto-detected migrations, added Tyrangiel to notable migrations list
+- EDITORIAL_HISTORIES.md: 123→124 journalists, 122→123 multi-pub
+- careers_demo.py: 123→124 tracked journalists (both string references)
+- QUALITY_STANDARDS.md: Fixed pre-existing count drift 92→93 annotated articles
+
+### The Atlantic's 2025 Hiring Wave (context discovered)
+The research surfaced a massive 2025 Atlantic expansion, largely drawing from Washington Post departures post-Bezos endorsement controversy (Oct 2024). Hires tracked in MediaScope editorial_changes: Will Oremus (Apr 2026), Griff Witte (Jan 2025), Josh Tyrangiel (Jun 2025). Additional Atlantic hires NOT yet in editorial_changes (future Type B candidates): Sophia Nguyen (staff writer from WaPo), Kevin Sieff (staff writer from WaPo), Theo Balcomb (senior editor, co-created NYT's The Daily), Jonathan L. Fischer (senior editor from WaPo), Henry Grabar (staff writer from Slate), Idrees Kahloon (staff writer), Quinta Jurecic (staff writer), Toluse Olorunnipa (staff writer), Nancy Youssef (staff writer), Alexandra Petri (staff writer), Chris Suellentrop (senior editor from WaPo), Sarah A. Topol (staff writer), Jenisha Watts (staff writer, promoted from senior editor).
+
+### Stats
+- Journalists: 124 total (was 123), 123 multi-pub (was 122)
+- Auto-detected migrations: 396 (was 389 in docs — corrected)
+- Atlantic editorial changes: 16 entries (was 14)
+- Wired editorial changes: 43 entries (was 45 — 2 moved to atlantic)
+- Tests: 1335 passed, 0 failed, 2 xfailed
+- Commit: `c6c4b2a` — pushed to GitHub
+
+---
 ## 2026-07-04 06:00 PT — Type A: Article Deep Dive — MIT TR Subquadratic/SubQ LLM Bottleneck
 
 **Article:** "A startup claims it broke through a bottleneck that's holding back LLMs" (MIT Technology Review, Jun 19, 2026)
