@@ -1,0 +1,46 @@
+Title: Mark Zuckerberg Shakes Up Meta's A.I. Efforts, Again
+Publication: The New York Times
+Authors: Mike Isaac and Eli Tan
+Published: August 19, 2025
+URL: https://www.nytimes.com/2025/08/19/technology/mark-zuckerberg-meta-ai.html
+Reconstructed from: web.archive.org/web/20250823090419/
+Date accessed: July 3, 2026
+
+---
+
+Mark Zuckerberg, Meta's chief executive, has spent the past few months shaking up his company's artificial intelligence efforts. Now he has taken further action that may compound internal turmoil over the technology.
+
+On Tuesday, Meta announced internally that it is splitting its A.I. division — which is known as Meta Superintelligence Labs — into four groups, two people with knowledge of the situation said. One group will focus on A.I. research; one on a potentially powerful A.I. called "superintelligence"; another on products; and one on infrastructure such as data centers and other A.I. hardware, they said.
+
+The reorganization is likely to be the final one for some time, the people said. The moves are aimed at better organizing Meta so it can get to its goal of superintelligence and develop A.I. products more quickly to compete with others, the people said.
+
+Some A.I. executives are expected to leave, the people said. Meta is also looking at downsizing the A.I. division overall — which could include eliminating roles or moving employees to other parts of the company — because it has grown to thousands of people in recent years, the people said. Discussions remain fluid and no final decisions have been made on the downsizing, they said.
+
+In what would be a shift from Meta's using only its own technology to power its A.I. products, the company is also actively exploring using third-party artificial intelligence models to do so, the people said. That could include building on other "open-source" A.I. models, which are freely available, or licensing "closed-source" models from other companies.
+
+The changes follow months of tumult and restructuring at Meta over its A.I. strategy. Mr. Zuckerberg, 41, is sparing no expense and is willing to upend his company to stay relevant in A.I. as the push to create the most advanced technology has boiled down to a few key players. How Meta will fare is being closely watched, as the A.I. race creates new winners and losers.
+
+Mr. Zuckerberg's determination was evident in June after Meta struggled to advance its newest A.I. models. That month, the company announced a superintelligence lab dedicated to creating an A.I. more powerful than the human brain. Meta invested $14.3 billion in the start-up Scale AI and brought on Alexandr Wang, its chief executive, as its new chief A.I. officer. Meta also offered some nine-figure pay packages to hire researchers from rivals like OpenAI and Google, igniting a Silicon Valley poaching war.
+
+In an investor call last month, Mr. Zuckerberg said he was betting on superintelligence to usher in "a new era of individual empowerment," adding that A.I. has already improved Meta's core advertising business. The company said its capital expenditures could be as much as $72 billion this year, most of which would go toward building data centers and hiring A.I. researchers.
+
+A Meta spokeswoman declined to comment. Some details of the restructuring were previously reported by The Information.
+
+Since Mr. Zuckerberg created the superintelligence team under Mr. Wang, tensions have surfaced. Mr. Wang's team is focused on creating the company's most powerful A.I. model, known as a "frontier model," two people with knowledge of the matter said.
+
+The new team has discussed making Meta's next A.I. model "closed," which would be a major departure from the company's longtime philosophy of "open sourcing" its models. A closed model keeps its underlying technology secret, while an open-source A.I. model can be built upon by other developers.
+
+The new team has chosen to abandon Meta's previous frontier model, called Behemoth, and start from scratch on a new model, the people said. Behemoth's release was delayed last spring after disappointing performance tests, one person said.
+
+As Meta has spent billions to bring in A.I. talent, some members of the old guard have chafed at the new hires, three people with knowledge of the matter said.
+
+In July, Meta named Shengjia Zhao, an OpenAI researcher and co-creator of its ChatGPT chatbot, as its chief A.I. scientist. In recent weeks, Mr. Zhao has had a line of Meta's old A.I. researchers and employees outside his office, where he has questioned them about their past work while interviewing them for new roles, one person said.
+
+Nat Friedman, the former chief executive of GitHub, and Daniel Gross, who previously ran a start-up called Safe Superintelligence, will lead development of new A.I. features under the products and applied research division, two of the people said.
+
+There has been personnel churn. Joelle Pineau, a leading computer scientist at Meta, left the company this year and later joined Cohere, an A.I. start-up. Angela Fan, a research scientist who worked on Meta's open source A.I. model known as Llama, recently left for OpenAI. Loredana Crisan, a vice president of generative A.I., is also leaving the company to join the software company Figma as chief design officer, two people said.
+
+Some longtime A.I. leaders have stayed put. Rob Fergus, who co-founded Meta's A.I. research division in 2014, will continue as day-to-day head of the company's Fundamental AI Research lab, or FAIR, the people said. The FAIR division is responsible for advancing A.I. technology through open-source research. Ahmad Al-Dahle and Amir Frenkel, who worked on generative A.I. products, are reporting to Mr. Wang and focusing on strategic A.I. initiatives.
+
+Mike Isaac is a technology correspondent for The Times based in San Francisco. He regularly covers Facebook and Silicon Valley.
+Eli Tan covers the technology industry for The Times from San Francisco.

@@ -5416,21 +5416,122 @@ def _detect_delayed_defense(text: str) -> list[FramingDevice]:
     ]
 
 
+# --- Talent hemorrhage ---
+# Detects when an article catalogs multiple personnel departures from
+# one entity to competitors, creating an "exodus" narrative.  Common in
+# restructuring coverage where listing 3+ departures in sequence builds
+# a cumulative impression of organizational collapse.
+# Discovered during NYT Meta AI overhaul analysis (Jul 2026): article
+# lists Pineau→Cohere, Fan→OpenAI, Crisan→Figma in rapid succession
+# but toolkit detected no framing device for the pattern.
+
+_TALENT_HEMORRHAGE_PATTERNS: list[re.Pattern] = [
+    # "left for / joined / departed for [Company]" repeated in close proximity
+    re.compile(
+        r"(?:left (?:the company|for|to join)|departed (?:for|to)|"
+        r"recently left|is (?:also )?leaving|joined (?:\w+ )+)"
+        r"[^.]{0,80}?\."
+        r"[^.]{0,200}?"
+        r"(?:left (?:the company|for|to join)|departed (?:for|to)|"
+        r"recently left|is (?:also )?leaving|joined (?:\w+ )+)",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "personnel churn" / "talent exodus" / "brain drain" explicit labels
+    re.compile(
+        r"\b(?:personnel churn|talent (?:exodus|drain|flight|hemorrhage|war)|"
+        r"brain drain|poaching war|hiring war)\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["talent_hemorrhage"] = _TALENT_HEMORRHAGE_PATTERNS
+
+
+# --- Strategic reversal ---
+# Detects when an article highlights a company reversing a core strategic
+# position (e.g., abandoning open-source philosophy, pivoting strategy,
+# departing from "longtime" stance).  Distinct from policy_reversal which
+# focuses on regulatory/legal reversals.
+# Discovered during NYT Meta AI overhaul analysis (Jul 2026): abandoning
+# Behemoth model + considering closed-source = double strategic reversal
+# but toolkit had no pattern for corporate strategy reversals.
+
+_STRATEGIC_REVERSAL_PATTERNS: list[re.Pattern] = [
+    # "a major departure from [Company's] longtime philosophy/strategy/approach"
+    re.compile(
+        r"\b(?:a )?(?:major|significant|dramatic|sharp|stark|notable) "
+        r"departure from\b[^.]{0,80}?"
+        r"\b(?:philosophy|strategy|approach|stance|position|practice|policy"
+        r"|commitment|tradition)\b",
+        re.IGNORECASE,
+    ),
+    # "chosen to abandon / decided to scrap / start from scratch"
+    re.compile(
+        r"\b(?:chosen to abandon|decided to (?:abandon|scrap|drop|shelve)|"
+        r"start(?:ing)? from scratch|scrapped|jettisoned|walked back|"
+        r"reversed course|abandoned its)\b",
+        re.IGNORECASE,
+    ),
+    # "shift from [doing X] to [doing Y]" — strategic pivot language
+    re.compile(
+        r"\b(?:a |would be a )?shift from\b[^.]{0,100}?"
+        r"\b(?:to (?:using|building|creating|developing|licensing|selling))\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["strategic_reversal"] = _STRATEGIC_REVERSAL_PATTERNS
+
+
+# --- Repeated disruption ---
+# Detects headline or lead language implying chronic instability: "again,"
+# "yet another," "once more," in restructuring/shakeup context.
+# Frames the subject as incapable of settling on a strategy.
+# Discovered during NYT Meta AI overhaul analysis (Jul 2026): headline
+# "Shakes Up... Again" and body "months of tumult and restructuring"
+# create a cumulative instability narrative.
+
+_REPEATED_DISRUPTION_PATTERNS: list[re.Pattern] = [
+    # Headline-style: "shakes up / overhauls / restructures [X], again"
+    # Use .{0,60}? instead of [^.]{0,60}? to allow periods inside
+    # abbreviations like "A.I." which are common in NYT headline style.
+    re.compile(
+        r"\b(?:shakes? up|overhauls?|restructures?|reorganizes?|reshuffles?)"
+        r".{0,60}?"
+        r"\b(?:again|once (?:more|again)|yet again|for the \w+ time)\b",
+        re.IGNORECASE,
+    ),
+    # "yet another restructuring / reorganization / overhaul / shake-up"
+    re.compile(
+        r"\b(?:yet another|another|the latest|one more) "
+        r"(?:restructuring|reorganization|overhaul|shake-?up|revamp|reshuffle"
+        r"|pivot|round of (?:cuts|layoffs|changes))\b",
+        re.IGNORECASE,
+    ),
+    # "months of tumult / turmoil / upheaval / instability"
+    re.compile(
+        r"\b(?:months|weeks|years) of "
+        r"(?:tumult|turmoil|upheaval|instability|chaos|uncertainty|disruption"
+        r"|restructuring)\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["repeated_disruption"] = _REPEATED_DISRUPTION_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 57 pattern-matched device types plus 6 structural
-    post-pass types (63 total).
+    Scans for 60 pattern-matched device types plus 6 structural
+    post-pass types (66 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (57): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (60): absence_as_evidence, analogy_metaphor,
     anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_positioning,
@@ -5449,11 +5550,12 @@ def detect_framing_devices(
     pathologizing_metaphor, policy_reversal, power_asymmetry,
     precedent_analogy,
     pressure_language, refusal_amplification, regulatory_favoritism,
-    regulatory_shadow, rhetorical_question, sarcastic_correction,
-    scale_magnitude, selective_omission_signal,
+    regulatory_shadow, repeated_disruption, rhetorical_question,
+    sarcastic_correction, scale_magnitude, selective_omission_signal,
     selective_rehabilitation, self_referential_investigation,
     silence_as_guilt, slippery_slope, sovereignty_framing,
-    straw_man, taxonomy_framing, timeline_implication,
+    strategic_reversal, straw_man, talent_hemorrhage,
+    taxonomy_framing, timeline_implication,
     two_tier_treatment, usage_dismissal_undercut,
     and worker_replacement_irony.
 

@@ -11876,3 +11876,49 @@ Newzlet editorial has 32% more framing devices than Wired investigation despite 
 1280 passed (3 pre-existing deselected), 2 xfailed. 79 structural consistency guards all pass.
 
 ---
+
+---
+
+## 2026-07-03 22:00 PT — Type A: Article Deep Dive
+
+### Article Analyzed
+- **NYT:** "Mark Zuckerberg Shakes Up Meta's A.I. Efforts, Again" by Mike Isaac & Eli Tan (Aug 19, 2025)
+- Retrieved from web.archive.org; saved to `examples/sample_output/nyt_meta_ai_overhaul_restructuring_2025_08_19_article.txt`
+
+### Toolkit Improvements
+
+#### New Framing Device Types (+3, total 66)
+1. **talent_hemorrhage** — detects cataloged personnel departures to competitors ("poaching war," "personnel churn," exodus catalogs)
+2. **strategic_reversal** — detects company reversing core strategic positions ("major departure from longtime philosophy," "chosen to abandon," "start from scratch"); distinct from policy_reversal (regulatory/legal)
+3. **repeated_disruption** — detects chronic instability framing ("shakes up... again," "yet another restructuring," "months of tumult")
+
+#### Sentiment Vocabulary (+16 terms, total 797)
+Added: turmoil, tumult, chafed, chafing, poaching, poaching war, talent war, upend, upended, upending, personnel churn, churn, shakes up, shaking up, shake-up, shakeup
+
+#### Pattern Fix
+- `repeated_disruption` headline pattern: changed `[^.]` to `.` in gap character class to handle abbreviations like "A.I." in NYT headline style
+
+### Results
+- **Pre-fix:** 10 framing devices detected, emotional_intensity 0.085, tone +0.22
+- **Post-fix:** 17 framing devices detected (81% of manual 21), emotional_intensity 0.51, tone +0.62
+- **Tone gap remains critical:** VADER reads corporate-speak as positive. Proposed Path J (corporate context inversion) not yet implemented.
+- **Key gaps identified:** loaded_language not firing on emotional vocab already in list, power_asymmetry not detecting interview status inversion, headline_body_alignment undervaluing "Again" suffix, framing correction not triggering despite 17 adversarial devices
+
+### Documentation Updated
+- METHODOLOGY.md §4.1: +3 extended device table rows
+- ARCHITECTURE.md: extended device list +3, count labels 63→66, 47→50, 369→377
+- README.md: pattern counts, test descriptions
+- AGENT_GUIDE.md: total device count 63→66, extended 47→50
+- QUALITY_STANDARDS.md: annotated article count 88→89
+- cli.py and __main__.py: device type counts
+- tests/test_structural_consistency.py: all hardcoded counts
+- tests/test_nyt_ai_reviews.py: pattern count 57→60, +3 types in expected set
+
+### Test Results
+- **1280 passed**, 2 xfailed, 3 pre-existing failures (unrelated)
+- All 79 structural consistency guards pass
+- 0 new regressions introduced
+
+### Analysis File
+- `examples/sample_output/nyt_meta_ai_overhaul_restructuring_2025_08_19_analysis.md`
+- Full 8-dimension manual analysis with toolkit comparison tables, pre/post scores, and conflict disclosure

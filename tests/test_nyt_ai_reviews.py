@@ -374,7 +374,7 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 57, (
+        assert len(_DEVICE_PATTERNS) == 60, (
             f"Expected 57 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
@@ -464,6 +464,12 @@ class TestFramingDeviceRegistry:
             "absence_as_evidence",
             # Silence as guilt (1) — non-response treated as admission
             "silence_as_guilt",
+            # Talent hemorrhage (1) — cataloging multiple departures to competitors
+            "talent_hemorrhage",
+            # Strategic reversal (1) — company reversing core strategic position
+            "strategic_reversal",
+            # Repeated disruption (1) — "again" / chronic instability framing
+            "repeated_disruption",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual
