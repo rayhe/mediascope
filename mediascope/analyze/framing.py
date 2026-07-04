@@ -1213,11 +1213,44 @@ _FAILURE_PRECEDENT_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["failure_precedent"] = _FAILURE_PRECEDENT_PATTERNS
 
 
-# Rhetorical question framing: questions that imply negligence, incompetence,
-# or failure without directly asserting it.  "Were there even guardrails?"
-# is more devastating than "there were no guardrails" because it positions
-# the audience to draw the negative conclusion themselves.  Common in
-# accountability journalism where sources use interrogative form to
+# ---------------------------------------------------------------------------
+# Scandal comparison: using a notorious fraud, disaster, or scandal name as a
+# compact pejorative label for a current company or product.  The name alone
+# imports the full moral weight of the scandal without the writer needing to
+# make an explicit accusation.  Distinct from precedent_analogy (which uses
+# comparative constructions like "echoes" or "similar to"); scandal comparison
+# is typically a direct label or "X is the new Y" / "Y of Z" construction.
+#
+# Identified in MIT TR "Subquadratic" (Jun 19, 2026):
+#   "SubQ is either the biggest breakthrough since the Transformer ...
+#    or it's AI Theranos."
+# ---------------------------------------------------------------------------
+_SCANDAL_COMPARISON_PATTERNS: list[re.Pattern] = [
+    # "[prefix] Theranos/Enron/Madoff/Solyndra/FTX/WeWork/Wirecard"
+    # as pejorative label (with optional domain prefix like "AI Theranos")
+    re.compile(
+        r"\b(?:(?:AI|tech|crypto|fintech|biotech|health|defense|energy)\s+)?"
+        r"(?:Theranos|Enron|Madoff|Solyndra|FTX|WeWork|Wirecard|"
+        r"Fyre Festival|Juicero|Nikola|Lordstown)\b",
+        re.IGNORECASE,
+    ),
+    # "the [Theranos/Enron/etc.] of [domain]" construction
+    re.compile(
+        r"\bthe\s+(?:Theranos|Enron|Madoff|Solyndra|FTX|WeWork|Wirecard|"
+        r"Fyre Festival|Juicero|Nikola|Lordstown)\s+of\s+\w+",
+        re.IGNORECASE,
+    ),
+    # "[entity] is/was/could be the next [scandal name]"
+    re.compile(
+        r"\b(?:is|was|could be|might be|may be|becomes?|risks? becoming)\s+"
+        r"(?:the\s+next\s+)?(?:another\s+)?"
+        r"(?:Theranos|Enron|Madoff|Solyndra|FTX|WeWork|Wirecard|"
+        r"Fyre Festival|Juicero|Nikola|Lordstown)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["scandal_comparison"] = _SCANDAL_COMPARISON_PATTERNS
 # maximize impact while maintaining deniability.
 _RHETORICAL_QUESTION_PATTERNS: list[re.Pattern] = [
     # "Were there even X?" / "Was there even X?"
@@ -5539,8 +5572,8 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 60 pattern-matched device types plus 6 structural
-    post-pass types (66 total).
+    Scans for 61 pattern-matched device types plus 6 structural
+    post-pass types (67 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
@@ -5567,7 +5600,8 @@ def detect_framing_devices(
     precedent_analogy,
     pressure_language, refusal_amplification, regulatory_favoritism,
     regulatory_shadow, repeated_disruption, rhetorical_question,
-    sarcastic_correction, scale_magnitude, selective_omission_signal,
+    sarcastic_correction, scandal_comparison, scale_magnitude,
+    selective_omission_signal,
     selective_rehabilitation, self_referential_investigation,
     silence_as_guilt, slippery_slope, sovereignty_framing,
     strategic_reversal, straw_man, talent_hemorrhage,

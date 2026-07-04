@@ -180,3 +180,86 @@ class TestQuestFalsePositive:
         assert len(quest_matches) > 0, (
             "Bare capitalized 'Quest' should match VR/Metaverse"
         )
+
+    # ------------------------------------------------------------------ #
+    # Lookbehind homograph: "context windows" vs Microsoft Windows        #
+    # ------------------------------------------------------------------ #
+
+    def test_context_windows_not_microsoft(self):
+        """'context windows' in ML/AI text should NOT match Microsoft."""
+        text = "The model has context windows one million tokens long."
+        entities = detect_entities(text)
+        ms_matches = [
+            e for e in entities
+            if e.cluster == "Microsoft" and "windows" in e.entity.lower()
+        ]
+        assert len(ms_matches) == 0, (
+            f"'context windows' falsely matched Microsoft: {ms_matches}"
+        )
+
+    def test_attention_windows_not_microsoft(self):
+        """'attention windows' in ML text should NOT match Microsoft."""
+        text = "Researchers experimented with attention windows of varying sizes."
+        entities = detect_entities(text)
+        ms_matches = [
+            e for e in entities
+            if e.cluster == "Microsoft" and "windows" in e.entity.lower()
+        ]
+        assert len(ms_matches) == 0, (
+            f"'attention windows' falsely matched Microsoft: {ms_matches}"
+        )
+
+    def test_sliding_windows_not_microsoft(self):
+        """'sliding windows' in ML text should NOT match Microsoft."""
+        text = "The architecture uses sliding windows for local attention."
+        entities = detect_entities(text)
+        ms_matches = [
+            e for e in entities
+            if e.cluster == "Microsoft" and "windows" in e.entity.lower()
+        ]
+        assert len(ms_matches) == 0, (
+            f"'sliding windows' falsely matched Microsoft: {ms_matches}"
+        )
+
+    def test_real_windows_still_detected(self):
+        """Standalone 'Windows' (the OS) should still match Microsoft."""
+        text = "Microsoft launched Windows 12 with new AI features built in."
+        entities = detect_entities(text)
+        ms_matches = [
+            e for e in entities
+            if e.cluster == "Microsoft" and "Windows" in e.entity
+        ]
+        assert len(ms_matches) > 0, (
+            "Real 'Windows' OS reference should still match Microsoft"
+        )
+
+    # ------------------------------------------------------------------ #
+    # Scandal comparison framing device                                   #
+    # ------------------------------------------------------------------ #
+
+class TestScandalComparisonFraming:
+    """Tests for the scandal_comparison framing device."""
+
+    def test_ai_theranos_detected(self):
+        """'AI Theranos' should trigger scandal_comparison."""
+        from mediascope.analyze.framing import detect_framing_devices
+        text = 'SubQ is either the biggest breakthrough since the Transformer or it\'s AI Theranos.'
+        devices = detect_framing_devices(text)
+        scandal_hits = [d for d in devices if d.device_type == "scandal_comparison"]
+        assert len(scandal_hits) > 0, "AI Theranos should trigger scandal_comparison"
+
+    def test_the_enron_of_ai_detected(self):
+        """'the Enron of AI' should trigger scandal_comparison."""
+        from mediascope.analyze.framing import detect_framing_devices
+        text = "Critics called the startup the Enron of AI."
+        devices = detect_framing_devices(text)
+        scandal_hits = [d for d in devices if d.device_type == "scandal_comparison"]
+        assert len(scandal_hits) > 0, "'the Enron of AI' should trigger scandal_comparison"
+
+    def test_another_ftx_detected(self):
+        """'another FTX' should trigger scandal_comparison."""
+        from mediascope.analyze.framing import detect_framing_devices
+        text = "Investors worry it could be another FTX."
+        devices = detect_framing_devices(text)
+        scandal_hits = [d for d in devices if d.device_type == "scandal_comparison"]
+        assert len(scandal_hits) > 0, "'another FTX' should trigger scandal_comparison"

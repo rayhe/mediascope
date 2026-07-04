@@ -42,6 +42,22 @@ _HOMOGRAPH_VERB_FILTERS: dict[str, re.Pattern] = {
     ),
 }
 
+# ---------------------------------------------------------------------------
+# Lookbehind homograph filters: aliases that need the PRECEDING context to
+# distinguish product names from common English words.  Each key is a
+# lowercased alias; the value is a compiled regex that matches the text
+# *before* the alias.  If the lookbehind matches, the mention is skipped.
+# ---------------------------------------------------------------------------
+_HOMOGRAPH_LOOKBEHIND_FILTERS: dict[str, re.Pattern] = {
+    # "context windows" / "attention windows" / "sliding windows" etc.
+    # are ML/AI terminology, not Microsoft Windows references.
+    "windows": re.compile(
+        r"(?:context|attention|token|sliding|observation|inference|"
+        r"reception|receptive|temporal|overlapping|rolling)\s+$",
+        re.IGNORECASE,
+    ),
+}
+
 # Type alias — clusters accept either format; code normalizes to dict format.
 ClusterEntry = Union[dict[str, Any], list[str]]
 ClusterDict = dict[str, ClusterEntry]
@@ -875,6 +891,12 @@ def detect_entities(
             if matched_lower in _HOMOGRAPH_VERB_FILTERS:
                 lookahead = text[end : end + 30]
                 if _HOMOGRAPH_VERB_FILTERS[matched_lower].match(lookahead):
+                    continue
+
+            # Lookbehind homograph filter (e.g. "context windows" vs Windows)
+            if matched_lower in _HOMOGRAPH_LOOKBEHIND_FILTERS:
+                lookbehind = text[max(0, start - 40) : start]
+                if _HOMOGRAPH_LOOKBEHIND_FILTERS[matched_lower].search(lookbehind):
                     continue
 
             # Disambiguate "Access Now" (org) from "Access now" (verb phrase)
