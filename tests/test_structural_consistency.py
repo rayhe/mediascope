@@ -1342,10 +1342,10 @@ class TestAgentGuideConsistency:
 
 
 class TestCorrectionPathDocumentation:
-    """Validate that all 8 sentiment correction paths (A-I) are documented
+    """Validate that all 9 sentiment correction paths (A-I) are documented
     across METHODOLOGY.md, ARCHITECTURE.md, and AGENT_GUIDE.md.
 
-    The 8 paths are defined in ``_compute_framing_correction`` (Paths A-F, H)
+    The 9 paths are defined in ``_compute_framing_correction`` (Paths A-F, H, I)
     and ``analyze_composite`` (Path G) in sentiment.py.  Each path has a
     ``# --- Path X: ...`` comment in code.  These tests ensure documentation
     stays in sync with code when paths are added, removed, or renamed.
@@ -1372,7 +1372,7 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_methodology_documents_all_paths(self):
-        """METHODOLOGY.md section 9.2 should document all 8 correction paths."""
+        """METHODOLOGY.md section 9.2 should document all 9 correction paths."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
         # Each path should appear as "#### Path X:" or "Path X" in text
         documented = set(re.findall(r"(?:####\s+)?Path\s+([A-I])[\s:.]", doc))
@@ -1383,7 +1383,7 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_architecture_documents_all_paths(self):
-        """ARCHITECTURE.md should reference all 8 correction paths."""
+        """ARCHITECTURE.md should reference all 9 correction paths."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
         documented = set(re.findall(r"Path\s+([A-I])[\s:.\|]", doc))
         missing = self.EXPECTED_PATHS - documented
@@ -1393,7 +1393,7 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_agent_guide_documents_all_paths(self):
-        """AGENT_GUIDE.md should reference all 8 correction paths."""
+        """AGENT_GUIDE.md should reference all 9 correction paths."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
         documented = set(re.findall(r"Path\s+([A-I])[\s:.\|]", doc))
         # Also check for "**G**" table format

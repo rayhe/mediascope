@@ -309,7 +309,7 @@ def main():
     print("  loaded vocabulary (Path D) or passive framing (Path A).")
     print()
     print("  See METHODOLOGY.md §9.2 (Path H) for the full framework.")
-    print("  See tests/ for 1253 regression tests covering all 8 correction paths.")
+    print("  See tests/ for 1353 regression tests covering all 9 correction paths.")
 
 
 if __name__ == "__main__":
