@@ -156,6 +156,47 @@ editorial_changes:
     outgoing: null
     position: staff_writer_tech_ai
     source_url: https://rss.ponder.cat/post/172398
+  - date: 2025-06
+    incoming: Quinta Jurecic
+    outgoing: null
+    position: staff_writer_law_governance
+    notes: 'THINK-TANK PIPELINE HIRE: Elevated from contributing writer (since ~2018) to staff writer. Announced in batch
+      with Olorunnipa and Youssef. Previously fellow at Brookings Institution Governance Studies and senior editor at Lawfare.
+      WaPo editorial writer (2017-2018). Wesleyan BA Political Science 2015. Unique career path through think tanks (Brookings)
+      rather than traditional newsroom ladder. Deep Section 230/platform governance expertise from Gonzalez v. Google webinar
+      and Lawfare "Arbiters of Truth" podcast. Still maintains Lawfare senior editor affiliation. Based at The Wharf. ANALYTICAL
+      SIGNIFICANCE: First tracked journalist entering a publication via the policy-institution pipeline (Brookings/Lawfare)
+      rather than a competing newsroom. Tests whether governance/regulatory framing produces structurally different tech coverage
+      than the adversarial-exposé mode of former tech-beat reporters.'
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-staff-writers-quinta-jurecic-toluse-olorunnipa-and-nancy-youssef,256335
+  - date: 2025-06
+    incoming: Toluse Olorunnipa
+    outgoing: null
+    position: staff_writer_politics
+    notes: 'WaPo→ATLANTIC MIGRATION (Bureau Chief level): Pulitzer Prize winner (2023, "His Name Is George Floyd"). Was WaPo
+      White House Bureau Chief (2022-2025) — first reporter of native African/Nigerian descent to cover the White House. Stanford
+      BA/MSc. Previously at Bloomberg News and Miami Herald. Part of massive 2025 WaPo→Atlantic exodus post-Bezos endorsement
+      controversy (Oct 2024), alongside Ashley Parker, Michael Scherer, and other senior WaPo journalists. Adjunct professor
+      at Northwestern. Based at The Wharf. ANALYTICAL SIGNIFICANCE: Highest-ranking WaPo departure to a tracked publication
+      — tests whether White House-level political framing shifts between Bezos-owned WaPo and Emerson Collective-owned Atlantic,
+      especially for tech-government intersection stories (AI executive orders, platform oversight, government shutdown impacts
+      on tech regulation).'
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-staff-writers-quinta-jurecic-toluse-olorunnipa-and-nancy-youssef,256335
+  - date: '2025-07-07'
+    incoming: Nancy Youssef
+    outgoing: null
+    position: staff_writer_national_security
+    notes: 'WSJ→ATLANTIC MIGRATION: 20+ year national security veteran. Was WSJ national security correspondent (2021-2025).
+      Previously: BuzzFeed News (senior national security), Daily Beast (senior defense), McClatchy (Baghdad bureau chief,
+      chief Pentagon correspondent, Middle East bureau chief in Cairo covering 2011 Egyptian Revolution). Founded Pentagon
+      Press Association. Egyptian-American, DC native, fluent Arabic. UVA BA Economics, Georgetown MSFS Security Studies.
+      Knight Fellowship (2007-08), duPont-Columbia Award (2010). Announced Jun 18, effective Jul 7, 2025. Based at The Wharf.
+      ANALYTICAL SIGNIFICANCE: 6-publication migration path is the longest in the dataset (Baltimore Sun → Detroit Free Press
+      → McClatchy → Daily Beast → BuzzFeed News → WSJ → Atlantic). Spans wire/newspaper, two digital-native pubs, Murdoch
+      business press, and Emerson Collective magazine. Her national security beat intersects with tech coverage when covering
+      defense AI, military procurement, cyber operations, and surveillance. Recent Atlantic coverage: Hegseth/military restructuring
+      (NPR Fresh Air appearance, 2026).'
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-staff-writers-quinta-jurecic-toluse-olorunnipa-and-nancy-youssef,256335
   guardian:
   - date: 2015-06
     incoming: Katharine Viner

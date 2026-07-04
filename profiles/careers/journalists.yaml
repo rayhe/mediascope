@@ -3756,13 +3756,13 @@ journalists:
       surveillance technology, internet regulation, tech company strategy, US-China tech geopolitics. Part of MIT TR + FT
       ''State of AI'' partnership (paired with FT''s John Thornhill on ''The US vs. China''). KEY STORIES (2025-2026): Exclusive
       Q&A with Yann LeCun on leaving Meta FAIR and founding Advanced Machine Intelligence Labs (AMI) in Paris — first detailed
-      interview on his contrarian bet against LLMs in favor of world models (picked up by Techmeme, WebProNews, Sifted).
-      Alibaba''s Accio AI sourcing tool connecting small online sellers with manufacturers including in China (exceeded 10M
-      MAUs by March). Cottage industry of OpenClaw installation services and preconfigured hardware emerging in China as the
-      tool becomes the country''s latest tech craze. Currently a regular contributor to Pixel Perfect, a Chinese-language podcast
-      about technology and culture. Based in Brooklyn, New York. 116+ articles across career (JournalistHunt). JournalistHunt
-      lists publications: Marketplace Tech Podcast, Substack, TechNode, MIT Technology Review, Wired (UK), Medium, The Daily
-      Dot, Sixth Tone, Wired Magazine, Flipboard, South China Morning Post.'
+      interview on his contrarian bet against LLMs in favor of world models (picked up by Techmeme, WebProNews, Sifted). Alibaba''s
+      Accio AI sourcing tool connecting small online sellers with manufacturers including in China (exceeded 10M MAUs by March).
+      Cottage industry of OpenClaw installation services and preconfigured hardware emerging in China as the tool becomes
+      the country''s latest tech craze. Currently a regular contributor to Pixel Perfect, a Chinese-language podcast about
+      technology and culture. Based in Brooklyn, New York. 116+ articles across career (JournalistHunt). JournalistHunt lists
+      publications: Marketplace Tech Podcast, Substack, TechNode, MIT Technology Review, Wired (UK), Medium, The Daily Dot,
+      Sixth Tone, Wired Magazine, Flipboard, South China Morning Post.'
     publication: mit-tech-review
     role: reporter
     source_url: https://talkingbiznews.com/media-news/mit-tech-review-hires-chen-as-tech-reporter/
@@ -3772,14 +3772,14 @@ journalists:
     + UC Denver (dual BA Communications, cum laude) → Columbia OHMA (MA Oral History, 2021) → freelance (2018-2023) → Rest
     of World (2023-2024) → MIT Technology Review (2025-). Part of Chaoyang Trap newsletter and Marcast podcast network. Host
     of Redirect (Mandarin cultural critique podcast), producer of Tech Buzz China, contributor to Pixel Perfect. Published
-    in Wired, Protocol, SCMP, Rolling Stone, Sixth Tone, TechNode, Radii, The Daily Dot. 116+ total articles. ANALYTICAL
-    VALUE: MIT TR is one of the few Western tech publications with a dedicated China reporter. Chen''s coverage of Chinese
-    AI development, surveillance tech, and internet regulation provides a geopolitical lens that intersects with US AI policy
-    coverage. Her position enables MIT TR''s China-comparison framing (''China is catching up / ahead'') which shapes how
-    readers evaluate US tech policy. Part of MIT TR + FT ''State of AI'' partnership (paired with FT''s John Thornhill on
-    ''The US vs. China''). KEY: Her Yann LeCun/AMI interview (Jan 2026) directly intersects with Meta coverage analysis —
-    LeCun left Meta FAIR, his contrarian views on LLMs implicitly critique Meta''s own Llama/Muse Spark strategy. Her OpenClaw-in-China
-    coverage shows MIT TR tracks open-source AI tools'' global adoption patterns, including in markets where Meta competes.'
+    in Wired, Protocol, SCMP, Rolling Stone, Sixth Tone, TechNode, Radii, The Daily Dot. 116+ total articles. ANALYTICAL VALUE:
+    MIT TR is one of the few Western tech publications with a dedicated China reporter. Chen''s coverage of Chinese AI development,
+    surveillance tech, and internet regulation provides a geopolitical lens that intersects with US AI policy coverage. Her
+    position enables MIT TR''s China-comparison framing (''China is catching up / ahead'') which shapes how readers evaluate
+    US tech policy. Part of MIT TR + FT ''State of AI'' partnership (paired with FT''s John Thornhill on ''The US vs. China'').
+    KEY: Her Yann LeCun/AMI interview (Jan 2026) directly intersects with Meta coverage analysis — LeCun left Meta FAIR, his
+    contrarian views on LLMs implicitly critique Meta''s own Llama/Muse Spark strategy. Her OpenClaw-in-China coverage shows
+    MIT TR tracks open-source AI tools'' global adoption patterns, including in markets where Meta competes.'
 - career:
   - beat: general news
     end: 2013-12
@@ -7704,14 +7704,13 @@ journalists:
     writers who are not part of Drummond''s adversarial-journalism pipeline adopt the institutional adversarial posture in
     their coverage, or maintain a distinct voice. Her Rolling Stone/NYMag background means she brings magazine-feature editorial
     instincts rather than scoops-and-sources investigative DNA.'
-
 - career:
   - beat: technology, future
     end: 2018-09
     event_type: hired
-    notes: 'Editorial intern for the Future section at The Outline, a tech-culture publication founded by Joshua Topolsky
-      (ex-Verge, ex-Bloomberg). NYU graduate. Also previously held editorial internship at Motherboard (Vice''s science/tech
-      vertical). The Outline was known for visually distinctive long-form tech journalism — it shut down in April 2020.'
+    notes: Editorial intern for the Future section at The Outline, a tech-culture publication founded by Joshua Topolsky (ex-Verge,
+      ex-Bloomberg). NYU graduate. Also previously held editorial internship at Motherboard (Vice's science/tech vertical).
+      The Outline was known for visually distinctive long-form tech journalism — it shut down in April 2020.
     publication: the-outline
     role: editorial_intern
     source_url: https://muckrack.com/caroline-haskins
@@ -7745,10 +7744,10 @@ journalists:
   - beat: AI, surveillance technology
     end: 2023-12
     event_type: hired
-    notes: 'Research editor and senior tech reporter. Started Aug 16, 2021. Hired by deputy tech editor Alistair Barr to
-      cover AI and surveillance technology specifically. Continued breaking news on surveillance companies and AI deployment.
-      Also held research editor title — dual role combining reporting with editorial research. Left to freelance Dec 2023.
-      Approximately 2.5-year tenure — the longest single-outlet position before Wired.'
+    notes: Research editor and senior tech reporter. Started Aug 16, 2021. Hired by deputy tech editor Alistair Barr to cover
+      AI and surveillance technology specifically. Continued breaking news on surveillance companies and AI deployment. Also
+      held research editor title — dual role combining reporting with editorial research. Left to freelance Dec 2023. Approximately
+      2.5-year tenure — the longest single-outlet position before Wired.
     publication: business-insider
     role: research_editor_senior_reporter
     source_url: https://talkingbiznews.com/they-re-hiring/insider-hires-buzzfeed-haskins-to-cover-ai-surveillance-tech/
@@ -7773,9 +7772,9 @@ journalists:
       analysis; (3) Tech Won''t Save Us podcast guest on Palantir under Trump administration; (4) Data center construction
       labor shortage feature (Techmeme headline pick); (5) Tesla dealership arson federal charges (Apr 2025); (6) PROJECT
       CANNES INVESTIGATION (Jul 1, 2026) — broke story that Meta contractor Covalen hired hundreds of contractors to pose
-      as teenagers and bombard competing AI chatbots (ChatGPT, Gemini, Character.AI) with 45,000+ prompts about suicide,
-      eating disorders, sex, and drugs. Internal codename "Cannes." Obtained internal Covalen documents describing the effort
-      as "comprehensive AI safety benchmarking." Former contractors spoke on record about disturbing content. Story generated
+      as teenagers and bombard competing AI chatbots (ChatGPT, Gemini, Character.AI) with 45,000+ prompts about suicide, eating
+      disorders, sex, and drugs. Internal codename "Cannes." Obtained internal Covalen documents describing the effort as
+      "comprehensive AI safety benchmarking." Former contractors spoke on record about disturbing content. Story generated
       NY Post, Reuters, Livemint, eWeek, dev.to secondary coverage. PROJECT CANNES IS A DIRECTLY ADVERSARIAL META INVESTIGATION.
       REPORTING CHAIN: Haskins → Schiffer (Director, ex-Platformer/Verge) → Barrett (exec editor, ex-Gizmodo EIC) → Drummond
       (editorial director, ex-Vice/Gizmodo). Every level of her editorial hierarchy has adversarial-journalism institutional
@@ -7786,30 +7785,30 @@ journalists:
     start: 2026-03-10
   name: Caroline Haskins
   notes: 'Key migrations: The Outline (intern) → Motherboard/Vice (staff writer) → BuzzFeed News (senior tech reporter) →
-    Business Insider (research editor/senior tech reporter) → freelance → Wired (business reporter). Surveillance-tech
-    accountability specialist whose beat — surveillance, platforms, AI, corporate power — has remained remarkably consistent
-    across 6 outlets over ~9 years. NYU graduate. Known for obtaining Palantir''s police surveillance manual (Motherboard 2019),
-    breaking Amazon Ring/Clearview AI stories (BuzzFeed 2020), and the Project Cannes investigation at Wired (Jul 2026) exposing
-    Meta''s use of contractors posing as teens to test rival AI chatbots. Career pipeline (Motherboard → BuzzFeed News → BI
-    → Wired) is a textbook adversarial-tech-journalism arc from indie/alternative media into mainstream Condé Nast. Reports
-    to Zoë Schiffer on Wired business desk. 712+ total articles across career. KEY for MediaScope: Project Cannes (Jul 2026)
-    directly intersects with the toolkit''s Meta coverage analysis — the story was widely picked up and reframes Meta''s AI
-    safety testing as adversarial corporate behavior. Her surveillance-first framing lens predicts how her future Meta coverage
-    will be structured: corporate malfeasance through the lens of harm to individuals (especially children and marginalized
-    communities). Tests whether Wired''s Drummond-era adversarial editorial posture amplifies her existing framing or modulates
-    it. MIGRATION ANALYSIS: Outline → Motherboard → BuzzFeed News → BI → Wired is a 5-outlet migration that consistently
-    moves toward more institutional, higher-reach platforms while maintaining the same adversarial framing. At each outlet,
-    she covered the same beat (surveillance/platforms/corporate power) with increasing institutional backing.'
+    Business Insider (research editor/senior tech reporter) → freelance → Wired (business reporter). Surveillance-tech accountability
+    specialist whose beat — surveillance, platforms, AI, corporate power — has remained remarkably consistent across 6 outlets
+    over ~9 years. NYU graduate. Known for obtaining Palantir''s police surveillance manual (Motherboard 2019), breaking Amazon
+    Ring/Clearview AI stories (BuzzFeed 2020), and the Project Cannes investigation at Wired (Jul 2026) exposing Meta''s use
+    of contractors posing as teens to test rival AI chatbots. Career pipeline (Motherboard → BuzzFeed News → BI → Wired) is
+    a textbook adversarial-tech-journalism arc from indie/alternative media into mainstream Condé Nast. Reports to Zoë Schiffer
+    on Wired business desk. 712+ total articles across career. KEY for MediaScope: Project Cannes (Jul 2026) directly intersects
+    with the toolkit''s Meta coverage analysis — the story was widely picked up and reframes Meta''s AI safety testing as
+    adversarial corporate behavior. Her surveillance-first framing lens predicts how her future Meta coverage will be structured:
+    corporate malfeasance through the lens of harm to individuals (especially children and marginalized communities). Tests
+    whether Wired''s Drummond-era adversarial editorial posture amplifies her existing framing or modulates it. MIGRATION
+    ANALYSIS: Outline → Motherboard → BuzzFeed News → BI → Wired is a 5-outlet migration that consistently moves toward more
+    institutional, higher-reach platforms while maintaining the same adversarial framing. At each outlet, she covered the
+    same beat (surveillance/platforms/corporate power) with increasing institutional backing.'
 - career:
   - beat: general assignment, city reporting
     end: 2016-05
     event_type: hired
-    notes: 'Early career in Canadian journalism. Published in the Toronto Star (Canada''s largest daily) and The Globe and
-      Mail. Based in Toronto. Canadian national. Podchaser identifies her as "Canadian journalist (Vice, Global News)."
-      Also published in Global News during this period. These early-career bylines are freelance/stringer-level — no
-      evidence of full-time staff positions at Star or Globe. This Canadian journalism foundation is relevant because
-      Vice News Canada was her entry point into VICE, and Canadian drug policy (supervised injection sites, opioid
-      crisis, decriminalization debates) was a core beat she brought to Vice.'
+    notes: Early career in Canadian journalism. Published in the Toronto Star (Canada's largest daily) and The Globe and Mail.
+      Based in Toronto. Canadian national. Podchaser identifies her as "Canadian journalist (Vice, Global News)." Also published
+      in Global News during this period. These early-career bylines are freelance/stringer-level — no evidence of full-time
+      staff positions at Star or Globe. This Canadian journalism foundation is relevant because Vice News Canada was her entry
+      point into VICE, and Canadian drug policy (supervised injection sites, opioid crisis, decriminalization debates) was
+      a core beat she brought to Vice.
     publication: toronto-star
     role: freelance
     source_url: https://muckrack.com/manisha-krishnan
@@ -7817,32 +7816,31 @@ journalists:
   - beat: drugs, race, guns, subcultures
     end: 2025-02
     event_type: hired
-    notes: 'Senior reporter and editor at VICE News for "nearly nine years" (per E&P and TalkingBizNews announcements of
-      her Wired hire, March 2025). Covered drugs, race, guns, and subcultures. Emmy award-winning — Vice News Tonight
-      won 9 Emmys at the 2023 News & Documentary Emmy Awards (Adweek). VICE News Tonight earned more nominations than
-      any other news program three consecutive years (2020, 2021, 2022). Her drug policy reporting was especially notable:
-      Canada''s opioid crisis, fentanyl, supervised injection sites, harm reduction debates. Also covered LGBTQ+ issues
-      — VICE''s "Transnational" series on global trans communities won a Peabody Award and an Online Journalism Award.
-      Rose from reporter to senior reporter and editor during tenure.
+    notes: 'Senior reporter and editor at VICE News for "nearly nine years" (per E&P and TalkingBizNews announcements of her
+      Wired hire, March 2025). Covered drugs, race, guns, and subcultures. Emmy award-winning — Vice News Tonight won 9 Emmys
+      at the 2023 News & Documentary Emmy Awards (Adweek). VICE News Tonight earned more nominations than any other news program
+      three consecutive years (2020, 2021, 2022). Her drug policy reporting was especially notable: Canada''s opioid crisis,
+      fentanyl, supervised injection sites, harm reduction debates. Also covered LGBTQ+ issues — VICE''s "Transnational" series
+      on global trans communities won a Peabody Award and an Online Journalism Award. Rose from reporter to senior reporter
+      and editor during tenure.
 
-      CRITICAL INSTITUTIONAL CONTEXT: Her Vice tenure (~2016-2025) overlaps almost perfectly with two key periods:
-      (1) Vice Media''s peak influence and expansion (2016-2020), and (2) Vice''s collapse and bankruptcy (2023, sold
-      for $350M — down from $5.7B peak valuation). She weathered Vice''s entire arc from prestige to implosion.
-      (3) Katie Drummond served as VP of Content at VICE (2019-2023) — Krishnan worked under Drummond''s editorial
-      leadership for ~4 years. This makes her another Drummond-orbit hire at Wired, reinforcing the pattern alongside
-      other Drummond-era connections.
+      CRITICAL INSTITUTIONAL CONTEXT: Her Vice tenure (~2016-2025) overlaps almost perfectly with two key periods: (1) Vice
+      Media''s peak influence and expansion (2016-2020), and (2) Vice''s collapse and bankruptcy (2023, sold for $350M — down
+      from $5.7B peak valuation). She weathered Vice''s entire arc from prestige to implosion. (3) Katie Drummond served as
+      VP of Content at VICE (2019-2023) — Krishnan worked under Drummond''s editorial leadership for ~4 years. This makes
+      her another Drummond-orbit hire at Wired, reinforcing the pattern alongside other Drummond-era connections.
 
-      BEAT CONTEXT: Her drugs/subcultures beat at Vice built investigative skills in hidden-camera work, source
-      cultivation in underground communities, and accountability reporting on government drug policy — skills that
-      transfer to tech accountability journalism. Vice''s editorial DNA (gonzo immersion, adversarial anti-institutional
-      posture, youth audience) shaped her journalistic voice.
+      BEAT CONTEXT: Her drugs/subcultures beat at Vice built investigative skills in hidden-camera work, source cultivation
+      in underground communities, and accountability reporting on government drug policy — skills that transfer to tech accountability
+      journalism. Vice''s editorial DNA (gonzo immersion, adversarial anti-institutional posture, youth audience) shaped her
+      journalistic voice.
 
-      Based in Toronto initially, then relocated to New York area (per Deadline Club panel participation and current
-      Wired NYC office).
+      Based in Toronto initially, then relocated to New York area (per Deadline Club panel participation and current Wired
+      NYC office).
 
-      Also contributed freelance pieces to The Guardian, Business Insider, CNN, and Yahoo News during Vice tenure.
-      The Guardian contributions establish her in the Guardian → Wired pipeline alongside Hugo Lowell (Apr 2026)
-      and Rosie Swash (May 2026), though her Guardian work was contributor-level, not staff.'
+      Also contributed freelance pieces to The Guardian, Business Insider, CNN, and Yahoo News during Vice tenure. The Guardian
+      contributions establish her in the Guardian → Wired pipeline alongside Hugo Lowell (Apr 2026) and Rosie Swash (May 2026),
+      though her Guardian work was contributor-level, not staff.'
     publication: vice-news
     role: senior_reporter_editor
     source_url: https://www.editorandpublisher.com/stories/wired-names-manisha-krishnan-as-senior-editor,260261
@@ -7850,60 +7848,58 @@ journalists:
   - beat: culture, tech
     end: 2026-05
     event_type: hired
-    notes: 'Hired as Senior Editor, Culture. Start date March 24, 2025 (confirmed by TalkingBizNews March 6, 2025
-      announcement and E&P). As of early March 2026, still held culture title (confirmed by Deadline Club/AAJA
-      "How to Pitch" panel at Weber Shandwick, where she was introduced as "senior culture editor of Wired" —
-      per healthjournalism.org recap). Culture desk responsibilities included editing stories on subcultures,
-      internet culture, entertainment, and social trends. Appeared on WIRED Roundup podcast with host Zoë Schiffer
-      covering weekly highlights.
+    notes: 'Hired as Senior Editor, Culture. Start date March 24, 2025 (confirmed by TalkingBizNews March 6, 2025 announcement
+      and E&P). As of early March 2026, still held culture title (confirmed by Deadline Club/AAJA "How to Pitch" panel at
+      Weber Shandwick, where she was introduced as "senior culture editor of Wired" — per healthjournalism.org recap). Culture
+      desk responsibilities included editing stories on subcultures, internet culture, entertainment, and social trends. Appeared
+      on WIRED Roundup podcast with host Zoë Schiffer covering weekly highlights.
 
-      FIX: Prior profile had start date 2026-03-24 — corrected to 2025-03-24 based on TalkingBizNews announcement
-      (March 6, 2025) and E&P confirmation (485 days before Jul 3, 2026 = ~Mar 5, 2025).'
+      FIX: Prior profile had start date 2026-03-24 — corrected to 2025-03-24 based on TalkingBizNews announcement (March 6,
+      2025) and E&P confirmation (485 days before Jul 3, 2026 = ~Mar 5, 2025).'
     publication: wired
     role: senior_editor
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-krishnan-as-senior-editor/
     start: 2025-03-24
   - beat: technology, science, AI
     event_type: hired
-    notes: 'Moved from culture desk to science desk. Now covers tech companies and AI. Reports to Tim Marchman
-      (Director, Science, Politics, and Security). This internal transfer is analytically significant: it moves
-      her from cultural commentary (where her Vice background was a natural fit) to technology accountability
-      reporting (where she could apply Vice-style adversarial framing to Big Tech coverage).
+    notes: 'Moved from culture desk to science desk. Now covers tech companies and AI. Reports to Tim Marchman (Director,
+      Science, Politics, and Security). This internal transfer is analytically significant: it moves her from cultural commentary
+      (where her Vice background was a natural fit) to technology accountability reporting (where she could apply Vice-style
+      adversarial framing to Big Tech coverage).
 
-      PIPELINE SIGNIFICANCE: Krishnan represents a three-way institutional pipeline:
-      (1) VICE → Wired (Drummond orbit — worked under Drummond at Vice 2019-2023, hired at Wired under Drummond)
-      (2) Guardian contributor → Wired hire (Guardian pipeline alongside Lowell, Swash, Barrett alumni)
-      (3) Canadian journalism → US tech media (similar path to other Canadian journalists like Craig Silverman)
+      PIPELINE SIGNIFICANCE: Krishnan represents a three-way institutional pipeline: (1) VICE → Wired (Drummond orbit — worked
+      under Drummond at Vice 2019-2023, hired at Wired under Drummond) (2) Guardian contributor → Wired hire (Guardian pipeline
+      alongside Lowell, Swash, Barrett alumni) (3) Canadian journalism → US tech media (similar path to other Canadian journalists
+      like Craig Silverman)
 
-      EDITORIAL CAPACITY: On the science desk, she extends Wired''s coverage capacity alongside Tim Marchman,
-      Joel Khalili (senior writer), and Lily Hay Newman (senior writer, security). Her Emmy-winning documentary
-      journalism background adds visual storytelling capability that most text-focused tech reporters lack.
+      EDITORIAL CAPACITY: On the science desk, she extends Wired''s coverage capacity alongside Tim Marchman, Joel Khalili
+      (senior writer), and Lily Hay Newman (senior writer, security). Her Emmy-winning documentary journalism background adds
+      visual storytelling capability that most text-focused tech reporters lack.
 
-      KEY MIGRATION ANALYSIS: Vice News → Wired science desk is a 2-outlet migration that tests whether Vice''s
-      gonzo/adversarial editorial DNA persists or modulates in Condé Nast''s institutional context. Her drugs/subcultures
-      expertise is unusual for tech journalism and may produce distinctive framing when covering issues like AI ethics,
-      platform addiction, content moderation, and mental health impacts of social media. Her work at Vice covering
-      marginalized communities parallels the "vulnerable populations" frame used heavily in anti-Meta coverage.'
+      KEY MIGRATION ANALYSIS: Vice News → Wired science desk is a 2-outlet migration that tests whether Vice''s gonzo/adversarial
+      editorial DNA persists or modulates in Condé Nast''s institutional context. Her drugs/subcultures expertise is unusual
+      for tech journalism and may produce distinctive framing when covering issues like AI ethics, platform addiction, content
+      moderation, and mental health impacts of social media. Her work at Vice covering marginalized communities parallels
+      the "vulnerable populations" frame used heavily in anti-Meta coverage.'
     publication: wired
     role: senior_editor
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-krishnan-as-senior-editor/
     start: 2026-06
   name: Manisha Krishnan
   notes: 'Canadian journalist. Career: Toronto Star/Globe and Mail (freelance, ~2013-2016) → Vice News (~9 years, 2016-2025,
-    senior reporter and editor covering drugs, race, guns, subcultures) → Wired (March 2025, senior editor culture →
-    June 2026, science desk). Emmy award-winning. Contributed to The Guardian, Business Insider, CNN, Yahoo News during
-    Vice tenure.
+    senior reporter and editor covering drugs, race, guns, subcultures) → Wired (March 2025, senior editor culture → June
+    2026, science desk). Emmy award-winning. Contributed to The Guardian, Business Insider, CNN, Yahoo News during Vice tenure.
 
-    THREE-WAY PIPELINE: (1) Vice → Wired Drummond orbit — worked under Drummond as VP Content at Vice (2019-2023),
-    then hired at Wired under Drummond as EIC. (2) Guardian contributor → Wired hire alongside Lowell/Swash/Barrett.
-    (3) Canadian journalism → US tech media.
+    THREE-WAY PIPELINE: (1) Vice → Wired Drummond orbit — worked under Drummond as VP Content at Vice (2019-2023), then hired
+    at Wired under Drummond as EIC. (2) Guardian contributor → Wired hire alongside Lowell/Swash/Barrett. (3) Canadian journalism
+    → US tech media.
 
-    ANALYTICAL VALUE: Her Vice background is unusual for Wired''s science/tech desk. Vice''s editorial DNA (adversarial
-    anti-institutional posture, gonzo immersion, youth audience targeting) is a distinct journalistic tradition from
-    the investigative (Guardian, NYT) and business (Bloomberg, WSJ) traditions that dominate tech journalism. Tracking
-    whether Vice''s editorial voice persists or modulates under Condé Nast/Drummond adds a new data point to the
-    institutional-vs-individual framing analysis. Her drugs/subcultures expertise may produce distinctive framing
-    on platform addiction, mental health impacts, and content moderation stories.
+    ANALYTICAL VALUE: Her Vice background is unusual for Wired''s science/tech desk. Vice''s editorial DNA (adversarial anti-institutional
+    posture, gonzo immersion, youth audience targeting) is a distinct journalistic tradition from the investigative (Guardian,
+    NYT) and business (Bloomberg, WSJ) traditions that dominate tech journalism. Tracking whether Vice''s editorial voice
+    persists or modulates under Condé Nast/Drummond adds a new data point to the institutional-vs-individual framing analysis.
+    Her drugs/subcultures expertise may produce distinctive framing on platform addiction, mental health impacts, and content
+    moderation stories.
 
     DATE CORRECTION: Start date corrected from 2026-03-24 to 2025-03-24 per TalkingBizNews and E&P source documents.'
 - career:
@@ -7937,10 +7933,10 @@ journalists:
     end: 2009-11
     event_type: hired
     notes: 'Started as lowest-ranking editorial employee writing 50-word unsigned obituaries (1999). Rose through: staff writer
-      → music critic → London correspondent → national editor → managing editor of TIME.com → deputy managing editor of
-      TIME (2006). Oversaw Person of the Year franchise. Quadrupled TIME.com traffic (400M to 1.8B page views, 2006-2009).
-      Named Best Magazine Web Site by MPA two consecutive years. Widely presumed to be successor to Richard Stengel as TIME
-      EIC. 10-year tenure at one of America''s most prestigious newsweeklies.'
+      → music critic → London correspondent → national editor → managing editor of TIME.com → deputy managing editor of TIME
+      (2006). Oversaw Person of the Year franchise. Quadrupled TIME.com traffic (400M to 1.8B page views, 2006-2009). Named
+      Best Magazine Web Site by MPA two consecutive years. Widely presumed to be successor to Richard Stengel as TIME EIC.
+      10-year tenure at one of America''s most prestigious newsweeklies.'
     publication: time
     role: deputy_managing_editor
     source_url: https://en.wikipedia.org/wiki/Josh_Tyrangiel
@@ -7963,10 +7959,10 @@ journalists:
   - beat: news, current affairs, documentary
     end: 2019-06
     event_type: hired
-    notes: 'Executive Vice President of News at Vice Media. Created Vice News Tonight on HBO (launched Oct 2016) with ''no anchor,
-      no studio, no staff.'' 41 Emmy nominations, 15 trophies, 1 Peabody during his tenure. Also oversaw VICENews.com, Vice
-      on HBO weekly series, and feature documentaries. Named to Hollywood Reporter''s ''35 Most Powerful People in New York
-      Media'' (2019). Left June 2019 after Vice News Tonight cancellation.'
+    notes: Executive Vice President of News at Vice Media. Created Vice News Tonight on HBO (launched Oct 2016) with 'no anchor,
+      no studio, no staff.' 41 Emmy nominations, 15 trophies, 1 Peabody during his tenure. Also oversaw VICENews.com, Vice
+      on HBO weekly series, and feature documentaries. Named to Hollywood Reporter's '35 Most Powerful People in New York
+      Media' (2019). Left June 2019 after Vice News Tonight cancellation.
     publication: vice
     role: evp_news
     source_url: https://en.wikipedia.org/wiki/Josh_Tyrangiel
@@ -7974,10 +7970,10 @@ journalists:
   - beat: documentary film, AI
     end: 2025-06
     event_type: freelance
-    notes: 'Founded Backstory Partners (2023), a documentary production company. COO of Kunhardt Films and EP at Eden Productions
-      (2020-2023). Produced documentary films for HBO, Netflix, Apple TV+. Executive produced ABC''s ''AI and the Future of
-      Us'' with Oprah Winfrey. Wrote regular AI column for Washington Post (2024-2025). On board of The Baltimore Banner.
-      12 Emmy Awards and Peabody Awards total across career.'
+    notes: Founded Backstory Partners (2023), a documentary production company. COO of Kunhardt Films and EP at Eden Productions
+      (2020-2023). Produced documentary films for HBO, Netflix, Apple TV+. Executive produced ABC's 'AI and the Future of
+      Us' with Oprah Winfrey. Wrote regular AI column for Washington Post (2024-2025). On board of The Baltimore Banner. 12
+      Emmy Awards and Peabody Awards total across career.
     publication: freelance
     role: producer_columnist
     source_url: https://joshtyrangiel.com/
@@ -7999,20 +7995,296 @@ journalists:
     source_url: https://www.theatlantic.com/author/josh-tyrangiel/
     start: 2025-06
   name: Josh Tyrangiel
-  notes: 'One of the most distinguished journalist-editors in American media over three decades. Career arc: Rolling Stone (fact
-    checker) → Vibe → MTV Networks (news producer; last Tupac interview) → TIME (10 years, rose from staff writer to deputy
-    managing editor) → Bloomberg Businessweek (editor, reinvented the magazine, then chief content officer for all Bloomberg
-    consumer media) → Vice (EVP News, created Vice News Tonight on HBO, 15 Emmys) → freelance/documentary production → The
-    Atlantic (staff writer, AI/tech/policy). Education: University of Pennsylvania (BA English/American History), Yale (MA
-    American Studies). Born Sept 25, 1972, raised in Baltimore. Partner Sarah Feinberg, 2 children. Jewish heritage. Park School
-    of Baltimore 1990. Author of ''AI for Good'' (S&S, May 2026). 12-time Emmy winner, Peabody Awards.
+  notes: 'One of the most distinguished journalist-editors in American media over three decades. Career arc: Rolling Stone
+    (fact checker) → Vibe → MTV Networks (news producer; last Tupac interview) → TIME (10 years, rose from staff writer to
+    deputy managing editor) → Bloomberg Businessweek (editor, reinvented the magazine, then chief content officer for all
+    Bloomberg consumer media) → Vice (EVP News, created Vice News Tonight on HBO, 15 Emmys) → freelance/documentary production
+    → The Atlantic (staff writer, AI/tech/policy). Education: University of Pennsylvania (BA English/American History), Yale
+    (MA American Studies). Born Sept 25, 1972, raised in Baltimore. Partner Sarah Feinberg, 2 children. Jewish heritage. Park
+    School of Baltimore 1990. Author of ''AI for Good'' (S&S, May 2026). 12-time Emmy winner, Peabody Awards.
 
     UNIQUE ANALYTICAL VALUE: Tyrangiel is the most senior editorial executive to have transitioned to staff writing at a tracked
     publication. His editorial leadership at Bloomberg (data-driven, irreverent) and Vice (adversarial but gonzo) gives him
-    deep institutional knowledge of how editorial cultures shape coverage framing. As a staff writer at The Atlantic, his AI
-    coverage represents a CONSTRUCTIVE counterpoint to the adversarial anti-Big-Tech framing that dominates the publication
+    deep institutional knowledge of how editorial cultures shape coverage framing. As a staff writer at The Atlantic, his
+    AI coverage represents a CONSTRUCTIVE counterpoint to the adversarial anti-Big-Tech framing that dominates the publication
     (LaFrance, Bogost, Wong, Cushing). His book thesis — AI as a practical tool for healthcare, education, and government,
     not a doomsday machine — directly clashes with the ''Facebook is a Doomsday Machine'' posture of executive editor LaFrance.
     Tests whether a single constructive voice can coexist with institutional adversarial culture, or whether the editorial
     environment modulates his framing over time. His WaPo AI column → Atlantic migration also provides a natural experiment
     for the DiD framework.'
+- name: Quinta Jurecic
+  notes: 'Key migrations: Brookings (research) → Lawfare → WaPo editorial board → Atlantic (contributing → staff). UNIQUE
+    PIPELINE: Think-tank-to-journalism, not traditional newsroom ladder. Entire career in national security law and governance
+    policy, not traditional tech reporting. Lawfare managing editor → senior editor (concurrent with Brookings fellowship
+    and Atlantic contributing). Co-hosts Lawfare "Arbiters of Truth" podcast series on information ecosystem and disinformation
+    — directly relevant to platform/Section 230 analysis. Moderated Brookings "Gonzalez v. Google and the Fate of Section
+    230" webinar (Feb 2023) with Hany Farid and Daphne Keller. Atlantic staff writer (Jun 2025) as part of batch hire with
+    Olorunnipa and Youssef. Recent coverage: Harmeet Dhillon DOJ profile (Apr 2026). Tests whether governance/legal-framework
+    expertise produces structurally different tech framing than traditional tech-beat reporters. NOTE: AI-generated "Consulting
+    Times" article fabricates Harvard Law JD, Kavanaugh clerkship, Kirkland & Ellis tenure — all false. Real education: Wesleyan
+    BA Political Science 2015.'
+  career:
+  - publication: wesleyan-university
+    role: student
+    beat: political science, government
+    start: 2011-09
+    end: 2015-05
+    event_type: education
+    notes: BA Political Science and Government, Wesleyan University (Middletown, CT). High Honors, University Honors. Completed
+      honors thesis on moral theories of political leadership and drone warfare under the Obama administration. Won Ayres
+      Prize, Skirm Prize, and Weller Prize (Wesleyan academic awards). Also served as Administrative Assistant, Research Assistant,
+      and Teaching Assistant (2013-2015).
+    source_url: https://edailybuzz.com/quinta-jurecic/
+  - publication: brookings-institution
+    role: national_security_intern
+    beat: national security law, policy
+    start: 2015-06
+    end: 2016-12
+    event_type: hired
+    notes: 'National Security Intern, then Research Analyst at Brookings Institution. Focused on national security law and
+      policy. Co-authored research. Also served as Writing Tutor at Princeton University during this period. Early career
+      bio: "a research assistant at the Brookings Institution, where she focuses on national security law and policy." Graduated
+      from Wesleyan 2015.'
+    source_url: https://adam.curry.com/art/1485621455_BjPqyprn.html
+  - publication: lawfare
+    role: associate_editor
+    beat: national security law, rule of law, Trump accountability
+    start: 2016-01
+    end: 2018-12
+    event_type: hired
+    notes: Associate Editor at Lawfare (lawfareblog.com / lawfaremedia.org), the premier national security law blog founded
+      by Benjamin Wittes, Jack Goldsmith, and Robert Chesney. Became the primary entry point for her journalism career. Wittes
+      served as her editorial mentor. Lawfare is housed at Brookings Governance Studies.
+    source_url: https://spia.princeton.edu/news/politics-polls-139-mueller-report-book-club-featuring-quinta-jurecic
+  - publication: washington-post
+    role: editorial_writer
+    beat: law, governance, national security
+    start: 2017-01
+    end: 2018-12
+    event_type: hired
+    notes: 'Editorial writer / special correspondent for The Washington Post. Wrote opinion pieces on Mueller investigation,
+      Trump accountability, rule of law. Confirmed by Princeton SPIA bio: "She previously served as an editorial writer for
+      The Washington Post and as Lawfare''s associate editor." Also appeared in WaPo video commentary on Mueller charges (Oct
+      2017). Concurrent with Lawfare role. BEZOS OWNERSHIP CONTEXT: Pre-dates the 2024 Bezos endorsement controversy that
+      triggered the mass WaPo→Atlantic exodus.'
+    source_url: https://spia.princeton.edu/news/politics-polls-139-mueller-report-book-club-featuring-quinta-jurecic
+  - publication: lawfare
+    role: managing_editor
+    beat: national security law, Trump accountability, information ecosystem
+    start: 2019-01
+    end: 2022-12
+    event_type: promoted
+    notes: Promoted from Associate Editor → Deputy Managing Editor → Managing Editor at Lawfare. During Mueller/impeachment
+      era, became one of the most-cited legal analysts on Trump accountability. Co-created and co-hosted "Arbiters of Truth"
+      podcast series with Evelyn Douek — a long-running series on the information ecosystem, platform regulation, and disinformation.
+      Directly relevant to Section 230, content moderation, and tech platform governance analysis. Also became contributing
+      writer at The Atlantic during this period.
+    source_url: https://shows.acast.com/lawfare/episodes/all-things-inspector-generaland-emails
+  - publication: atlantic
+    role: contributing_writer
+    beat: law, governance, Trump, rule of law
+    start: 2018-01
+    end: 2025-06
+    event_type: hired
+    notes: 'Contributing writer at The Atlantic for ~7 years before being elevated to staff. Goldberg''s hire announcement:
+      "Quinta''s byline is actually a familiar one to you and to our readers; as a contributing writer here for the past several
+      years, she''s produced some of the most incisive coverage of the Trump years of anyone in journalism. Quinta was one
+      of the people I looked to in the early days of the first Trump term to try to make sense of it all." Also contributing
+      writer at WaPo Book World concurrently.'
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-staff-writers-quinta-jurecic-toluse-olorunnipa-and-nancy-youssef,256335
+  - publication: brookings-institution
+    role: fellow
+    beat: governance studies, democracy, platform regulation
+    start: 2020-01
+    end: 2025-06
+    event_type: hired
+    notes: 'Fellow in Governance Studies at the Brookings Institution. Concurrent with Lawfare senior editor and Atlantic
+      contributing writer roles. Moderated Brookings webinar on Gonzalez v. Google and Section 230 (Feb 14, 2023) with Benjamin
+      Wittes, Hany Farid, Daphne Keller, and Alan Rozenshtein — the landmark Supreme Court case on platform algorithmic recommendations.
+      Co-hosted Brookings "Democracy in Question" podcast with Katie Dunn Tenpas. ANALYTICAL VALUE: Her Section 230/platform
+      governance expertise positions her to write about Meta and Big Tech from a regulatory/legal framework rather than the
+      adversarial-exposé mode dominant at Atlantic.'
+    source_url: https://www.brookings.edu/events/gonzalez-v-google-and-the-fate-of-section-230/
+  - publication: lawfare
+    role: senior_editor
+    beat: national security, platform regulation, information ecosystem
+    start: 2023-01
+    event_type: editorial_role_change
+    notes: 'Senior editor at Lawfare (from managing editor). Continues co-hosting Arbiters of Truth podcast and Rational Security
+      roundtable. Maintains concurrent affiliation even after Atlantic staff hire — still credited as "Lawfare Senior Editor"
+      in podcast episodes through at least Apr 2026. This dual role creates a unique institutional cross-pollination: Lawfare''s
+      national security law community + Atlantic''s general-interest editorial culture. Appeared on Ezra Klein''s NYT podcast
+      (Feb 2025) discussing Trump executive orders and federal workforce.'
+    source_url: https://shows.acast.com/lawfare/episodes/lawfare-daily-dojs-very-online-civil-rights-head-with-quinta-jurecic-and-anna-bower
+  - publication: atlantic
+    role: staff_writer
+    beat: law, governance, politics, tech regulation
+    start: 2025-06
+    event_type: promoted
+    notes: 'Elevated from contributing writer to staff writer at The Atlantic. Part of batch announcement with Toluse Olorunnipa
+      (from WaPo) and Nancy Youssef (from WSJ). Based at The Wharf (Atlantic HQ in DC). Recent coverage includes profile of
+      Harmeet Dhillon, DOJ civil rights division head (Apr 2026). ANALYTICAL VALUE FOR MEDIASCOPE: (1) THINK-TANK PIPELINE:
+      Only tracked journalist whose primary career path runs through policy think tanks (Brookings) rather than newsrooms.
+      Tests whether policy-institution framing differs structurally from journalism-institution framing. (2) SECTION 230/PLATFORM
+      EXPERTISE: Deep platform regulation expertise from Gonzalez v. Google work and Arbiters of Truth podcast — when she
+      writes about Meta/Big Tech, it will be through a governance lens, not an exposé lens. (3) CONTRIBUTING→STAFF TRANSITION:
+      Natural experiment — did her framing shift when she went from freelance contributor to full-time institutional voice?
+      (4) DUAL INSTITUTIONAL IDENTITY: Still credited as Lawfare senior editor simultaneously — straddles two institutions
+      with different editorial cultures.'
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-staff-writers-quinta-jurecic-toluse-olorunnipa-and-nancy-youssef,256335
+- name: Toluse Olorunnipa
+  notes: 'Key migrations: Stanford Daily → Miami Herald → Bloomberg News → Washington Post → Atlantic. Nigerian-American (Yoruba
+    heritage), first reporter of native African/Nigerian descent to cover the White House. Pulitzer Prize for General Nonfiction
+    2023 ("His Name Is George Floyd" with Robert Samuels). White House Bureau Chief at WaPo (2022-2025). Part of massive 2025
+    WaPo→Atlantic exodus post-Bezos endorsement controversy. Stanford BA Sociology, Stanford MSc. Adjunct professor at Northwestern.
+    Atlantic staff writer (Jun 2025). Covers politics, government, presidential power. Less directly relevant to tech/Meta
+    coverage but tests whether WaPo→Atlantic migration produces framing shifts in political coverage of tech regulation and
+    government oversight of Big Tech.'
+  career:
+  - publication: stanford-daily
+    role: student_writer
+    beat: general
+    start: 2004-09
+    end: 2008-06
+    event_type: education
+    notes: Student writer at The Stanford Daily while studying sociology. BA Sociology and MSc from Stanford University.
+    source_url: https://en.wikipedia.org/wiki/Toluse_Olorunnipa
+  - publication: miami-herald
+    role: reporter
+    beat: Florida politics
+    start: 2010-01
+    end: 2015-12
+    event_type: hired
+    notes: Reporter at The Miami Herald. Early career covering Florida state politics and policy.
+    source_url: https://toluse.com
+  - publication: bloomberg-news
+    role: reporter
+    beat: politics, policy
+    start: 2016-01
+    end: 2019-12
+    event_type: hired
+    notes: Reporter at Bloomberg News covering politics and policy from Washington and Florida. Writing also appeared in Bloomberg
+      Businessweek. Covered two presidencies during Bloomberg tenure.
+    source_url: https://en.wikipedia.org/wiki/Toluse_Olorunnipa
+  - publication: washington-post
+    role: national_political_reporter
+    beat: politics, White House, presidential power
+    start: 2019-01
+    end: 2022-06
+    event_type: hired
+    notes: 'National political reporter at The Washington Post. Covered three presidencies. Co-authored "His Name Is George
+      Floyd: One Man''s Life and the Struggle for Racial Justice" with Robert Samuels (Viking, 2022). The book won the 2023
+      Pulitzer Prize for General Nonfiction, Dayton Literary Peace Prize, and was a finalist for the National Book Award,
+      LA Times Book Award, and J. Anthony Lukas Prize.'
+    source_url: https://toluse.com
+  - publication: washington-post
+    role: white_house_bureau_chief
+    beat: White House, presidential power, politics
+    start: 2022-07
+    end: 2025-06
+    event_type: promoted
+    notes: 'Named White House Bureau Chief for The Washington Post in July 2022. First reporter of native African and Nigerian
+      descent to cover the White House. Regular panelist on Washington Week and Face the Nation. Frequent CNN, MSNBC, PBS,
+      CBS News, NPR analyst. Adjunct professor at Northwestern University. DEPARTURE CONTEXT: Part of the massive 2025 WaPo→Atlantic
+      exodus post-Bezos endorsement controversy (Oct 2024) — joined alongside Ashley Parker, Michael Scherer, and other senior
+      WaPo journalists. WaPo lost its White House bureau chief to a competitor.'
+    source_url: https://en.wikipedia.org/wiki/Toluse_Olorunnipa
+  - publication: atlantic
+    role: staff_writer
+    beat: politics, government, presidential power
+    start: 2025-06
+    event_type: hired
+    notes: 'Staff writer at The Atlantic, part of batch announcement with Quinta Jurecic and Nancy Youssef. Based at The Wharf
+      (Atlantic HQ in DC). ANALYTICAL VALUE: (1) WaPo→ATLANTIC MIGRATION at White House Bureau Chief level — tests how framing
+      of presidential power and government oversight shifts between Bezos-owned WaPo and Emerson Collective-owned Atlantic.
+      (2) GOVERNMENT SHUTDOWN COVERAGE: Early Atlantic pieces on government shutdown and Trump weaponization (Jan-Feb 2026)
+      demonstrate political coverage that intersects with tech regulation when covering AI executive orders, platform oversight,
+      etc. (3) STRUCTURAL AUTHORITY: As a Pulitzer-winning former bureau chief, his institutional authority within Atlantic''s
+      newsroom may influence editorial direction on tech-government intersection stories.'
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-staff-writers-quinta-jurecic-toluse-olorunnipa-and-nancy-youssef,256335
+- name: Nancy Youssef
+  notes: 'Key migrations: Baltimore Sun → Detroit Free Press → McClatchy (Baghdad bureau chief, chief Pentagon correspondent,
+    Middle East bureau chief) → Daily Beast → BuzzFeed News → Wall Street Journal → Atlantic. Egyptian-American, DC native,
+    fluent Arabic. 20+ years covering national security and military. Founded Pentagon Press Association. Knight Fellowship
+    (2007-08), duPont-Columbia Award (2010). UVA BA Economics, Georgetown MSFS Security Studies, Johns Hopkins SAIS. Atlantic
+    staff writer (Jul 2025) covering national security and Defense Department. Appeared on NPR Fresh Air (2026). Crosses 6
+    publications — significant for DiD migration analysis, especially BuzzFeed News → WSJ → Atlantic path which spans digital-native,
+    legacy business press, and essay-driven magazine cultures.'
+  career:
+  - publication: baltimore-sun
+    role: reporter
+    beat: general
+    start: 2001-01
+    end: 2003-12
+    event_type: hired
+    notes: 'First journalism job at The Baltimore Sun. Education: University of Virginia BA Economics, Johns Hopkins SAIS
+      (international affairs studies), Georgetown MSFS (MS Security Studies). Born to Egyptian parents, first-generation native
+      of DC area. Fluent Arabic.'
+    source_url: https://en.wikipedia.org/wiki/Nancy_Youssef
+  - publication: detroit-free-press
+    role: reporter
+    beat: legal issues, Iraq War
+    start: 2004-01
+    end: 2005-07
+    event_type: hired
+    notes: Reporter at Detroit Free Press covering legal issues. Under the Knight Ridder conglomerate (parent of Detroit Free
+      Press), also reported on the Iraq War from Jordan and Iraq from the start of conflict through post-war period.
+    source_url: https://en.wikipedia.org/wiki/Nancy_Youssef
+  - publication: mcclatchy-newspapers
+    role: baghdad_bureau_chief
+    beat: Iraq War, military, civilian casualties, Middle East
+    start: 2005-08
+    end: 2012-12
+    event_type: hired
+    notes: 'Multiple roles at McClatchy Newspapers: Baghdad bureau chief (4 years covering Iraq war, focused on civilian casualties
+      and everyday Iraqi experience), chief Pentagon correspondent (covering Iraq and Afghanistan wars), national security
+      correspondent, Middle East bureau chief in Cairo (covering Arab world including 2011 Egyptian Revolution). Founded and
+      served as president of the Pentagon Press Association. Won John S. Knight Fellowship for Professional Journalists (2007-2008)
+      and Alfred I. duPont-Columbia University Award (2010). Also won UVA Lawrence Hall Award for Distinguished Journalism
+      covering Middle East and Maryland-D.C. Delaware Press Association awards.'
+    source_url: https://www.nationalpress.org/profile/nancy-youssef/
+  - publication: daily-beast
+    role: senior_defense_national_security_correspondent
+    beat: defense, national security, military affairs
+    start: 2014-01
+    end: 2017-06
+    event_type: hired
+    notes: Senior defense and national security correspondent at The Daily Beast. Continued military affairs and global security
+      coverage. Transition from wire service/newspaper to digital-native publication.
+    source_url: https://en.wikipedia.org/wiki/Nancy_Youssef
+  - publication: buzzfeed-news
+    role: senior_national_security_correspondent
+    beat: national security, military
+    start: 2017-07
+    end: 2021-06
+    event_type: hired
+    notes: Senior national security correspondent at BuzzFeed News. Second digital-native publication in career. Covered Pentagon
+      and defense policy. BuzzFeed News later shut down (Apr 2023), but Youssef had already moved to WSJ by then.
+    source_url: https://en.wikipedia.org/wiki/Nancy_Youssef
+  - publication: wall-street-journal
+    role: national_security_correspondent
+    beat: national security, military operations, defense policy
+    start: 2021-07
+    end: 2025-07
+    event_type: hired
+    notes: National security correspondent at The Wall Street Journal. Focused on military operations and defense policy.
+      Developed reputation as "scoop artist" per Goldberg's hire announcement. During WSJ tenure, colleague Evan Gershkovich
+      was arrested in Russia — Youssef spoke publicly about journalist safety in conflict zones and advocated for Austin Tice
+      (friend, missing in Syria since 2012). Spoke at Ohio Wesleyan Lyman Lecture on International Studies.
+    source_url: https://www.nationalpress.org/profile/nancy-youssef/
+  - publication: atlantic
+    role: staff_writer
+    beat: national security, Defense Department, military
+    start: '2025-07-07'
+    event_type: hired
+    notes: 'Staff writer at The Atlantic covering national security and the Defense Department. Hired effective Jul 7, 2025,
+      announced Jun 18, 2025 — part of batch with Jurecic and Olorunnipa. Based at The Wharf. Recent coverage: Pete Hegseth
+      and military restructuring, senior military leaders on Trump-era civil-military relations. Appeared on NPR Fresh Air
+      (2026). Featured at Washington Institute. ANALYTICAL VALUE: (1) 6-PUBLICATION DiD MIGRATION: Baltimore Sun → Detroit
+      Free Press → McClatchy → Daily Beast → BuzzFeed News → WSJ → Atlantic — spans wire service, newspaper, two digital-native
+      publications, legacy business press, and essay-driven magazine. Tests how national security framing adapts across 6
+      institutional cultures. (2) WSJ→ATLANTIC MIGRATION: Directly comparable to Karen Hao (Atlantic contributing → freelance),
+      Jeff Horwitz (WSJ → no tracked pub), for testing how Murdoch-owned business press vs. Emerson Collective-owned magazine
+      shapes military/security coverage. (3) NON-TECH BEAT: Like Olorunnipa, her primary beat is not tech — but national security
+      intersects with tech when covering defense AI, military tech procurement, cyber operations, and surveillance.'
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-staff-writers-quinta-jurecic-toluse-olorunnipa-and-nancy-youssef,256335
