@@ -3,6 +3,87 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-03 17:00 PT — Type C: Ownership & Funding Deep Dive — Advance Portfolio Revaluation + WSJ AI Marketplace + Reddit ARPU/Licensing Data
+
+### Focus
+Full Advance portfolio revaluation to Jul 2 close prices, incorporating Reddit's 13.69% Jul 1 surge, new WSJ reporting on AI content marketplace evolution, and Insider Monkey disclosure of Reddit's AI licensing deal values ($200M+/yr). Last Type C Wired/Condé Nast deep dive was Jun 28 (5 days ago).
+
+### What Changed
+
+**wired.yaml — Portfolio valuation section (TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION):**
+
+Updated all three public equity positions to Jul 2, 2026 closing prices:
+
+| Asset | Previous (Jun 26-29) | Current (Jul 2 close) | Change |
+|-------|--------------------|-----------------------|--------|
+| Reddit (RDDT) | ~$7.34B @ $173.97 | ~$8.21B @ $194.67 | +$870M (+11.9%) |
+| Charter (CHTR) | ~$2.76B @ $133.64 | ~$2.83B @ $137.20 | +$70M (+2.7%) |
+| WBD | ~$2.62B @ $26.74 | ~$2.59B @ $26.48 | -$30M (-1.0%) |
+| **Total Public Equity** | **~$12.4B** | **~$13.63B** | **+$1.23B (+9.9%)** |
+
+**Reddit surge analysis:**
+- Jul 1: +13.69% ($173.65 → $197.42), briefly touched $201.16 intraday. FXLeaders: "momentum-driven re-rating" and technical breakout above $200.
+- Jul 2: -1.44% pullback to $194.67. Ainvest reported -5.79% intraday decline before partial recovery.
+- Net Jun 30→Jul 2: +12.1%. Added ~$890M to Advance's Reddit stake in 2 trading days.
+- Reddit now 60.2% of Advance's public equity (highest concentration on record).
+- Any ±1% Reddit move now moves Advance's portfolio by ~$82M.
+
+**New: Reddit AI licensing deal values (Insider Monkey, Jul 2, 2026):**
+- Google deal: ~$60M/year
+- OpenAI deal: ~$70M/year
+- Total licensing value: >$200M/year
+- Both deals renew 2027 — Reddit pushing for DYNAMIC PRICING instead of flat fees
+- Reddit ARPU: $5.23 global, $9.63 US (beats Pinterest $7.12, Snapchat $9.23; only below Meta $15.66)
+- 70 hedge funds hold RDDT
+- Source: insidermonkey.com "Is Reddit (RDDT) The Best Cheap AI Stock to Buy?" (Jul 2, 2026)
+
+**New: WSJ AI Content Marketplace evolution (Jul 2, 2026):**
+- Added ~15-line section "WSJ AI CONTENT MARKETPLACE EVOLUTION"
+- WSJ reports Condé Nast named among "large publishers" cutting AI deals for "tens of millions of dollars a year"
+- Microsoft Publisher Content Marketplace pilot expanded to 8 publishers (People, AP, Hearst)
+- Microsoft investing $10M+ with Copilot + Yahoo as buyers
+- Amazon and Factiva also building AI content marketplaces
+- Key analytical finding: bilateral deal model evolving into PROGRAMMATIC licensing marketplaces. This multiplies Condé Nast's potential AI revenue streams beyond 6 named bilateral deals while making Meta's exclusion MORE systematic (any buyer on marketplace platforms can license Condé Nast content, but Meta remains locked out)
+- Source: "Marketplaces Are the Next Frontier in Publisher Deals With AI Companies" (WSJ, Jul 2, 2026)
+
+**Reddit current_value_estimate (inline section):**
+- Fixed incorrect Jul 2 close price ($190.67 → $194.67, confirmed via Finnhub + MarketBeat cross-reference)
+- Updated margin loan buffer calculation (7.8M pledged shares now worth ~$1.52B, 31-34% above offering)
+- Added CEO Steve Huffman selling (18,000 shares, Jun 15, $3.2M) to insider selling context (was missing from inline but present in separate section)
+
+**WBD regulatory timeline update:**
+- EU Phase I deadline now July 22 (extended from July 7 via UIP remedy)
+- DOJ cleared Jun 19
+- UK: Nandy "minded to intervene" notice Jun 30, Jul 6 deadline for responses
+- CMA own investigation: Aug 7 deadline
+- Added Q1 2026 miss data: EPS -$1.17 vs consensus -$0.10 (missed by $1.07)
+- State AG lawsuit timing: CA AG Bonta "red flags everywhere" (Jun 28)
+
+**Charter value update:**
+- $133.64 → $137.20 per share (Jul 2 close)
+- ~$2.76B → ~$2.83B (+$70M)
+
+**Conflict escalation section:**
+- Updated date marker (Jun 28 → Jul 3)
+- Added Reddit AI licensing revenue as a SECOND revenue pillar ($200M+/yr)
+- Added quantified portfolio sensitivity: ±1% Reddit move = ±$82M to Advance portfolio
+- Connected Reddit's AI licensing position to competitive dynamics with Meta's Llama (Reddit has unique human discussion data that AI labs pay for; Meta's open-source strategy can't easily replicate this)
+
+### Sources
+- Finnhub (RDDT, WBD, CHTR real-time prices, Jul 2 close)
+- MarketBeat (RDDT price history, options, analyst consensus, insider selling, WBD earnings, CHTR earnings)
+- StockTwits (RDDT real-time)
+- FXLeaders "Reddit Momentum Reignited" (Jul 1, 2026)
+- Ainvest "Reddit fell 5.79% intraday after rising 13.93%" (Jul 2, 2026)
+- Insider Monkey "Is Reddit (RDDT) The Best Cheap AI Stock to Buy?" (Jul 2, 2026) — AI licensing deal values
+- WSJ "Marketplaces Are the Next Frontier in Publisher Deals With AI Companies" (Jul 2, 2026)
+- WebWire press release: Condé Nast Microsoft Copilot pilot partnership (Feb 9, 2026)
+- Adweek: Condé Nast CPTO hire + Microsoft licensing (Dec 2025)
+
+### Tests
+1253 total (1251 passed, 2 xfailed — unchanged). All 77 structural consistency tests pass.
+
+---
 ## 2026-07-03 13:00 PT — Type B: Journalist/Publication Research — Caroline Haskins + Manisha Krishnan
 
 ### Focus

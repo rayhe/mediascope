@@ -266,20 +266,20 @@ advance_investments:
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
     current_value_estimate: >
-      ~$8.05B at $190.67/share (Jul 2, 2026 close). Reddit market cap ~$33.4B (Finnhub).
-      PRICE REVERSAL: After surging +13.9% on Jul 1-2 intraday (to $197.76), Reddit
-      gave back -3.6% by Jul 2 close ($190.67). 52-week range $119.27-$282.95. Beta 2.07.
-      Year-to-date: -17% (still below Jan 2026 highs ~$231). Reddit now ~60-65% of
-      Advance's public equity. 42,207,274 total shares × $190.67 = $8.05B.
+      ~$8.21B at $194.67/share (Jul 2, 2026 close). Reddit market cap ~$37.5B (Finnhub).
+      PRICE SURGE: +13.69% on Jul 1 (close $197.42, high $201.16 intraday), then
+      -1.44% pullback Jul 2 (close $194.67). Net +12.1% from Jun 30 close ($173.65).
+      52-week range $119.27-$282.95. Beta 2.07.
+      Year-to-date: -14% (still below Jan 2026 highs ~$231). Reddit now 60.2% of
+      Advance's public equity. 42,207,274 total shares × $194.67 = $8.21B.
       Analyst consensus: 18 buy, 12 hold, avg 12-mo PT $230.75 (high $300, low $110).
       MARGIN LOAN BUFFER: The 7.8M shares pledged as collateral (at $145-148 offering)
-      are now worth ~$1.49B at $190.67 — 27-31% above offering price, comfortable but
-      narrowing from the Jul 1 intraday peak cushion.
-      INSIDER SELLING (last 90 days, MarketBeat): Reddit insiders sold $36.9M total.
+      are now worth ~$1.52B at $194.67 — 31-34% above offering price, comfortable cushion.
+      INSIDER SELLING (last 90 days, MarketBeat Jul 2): Reddit insiders sold $36.9M total.
+      CEO Steve Huffman sold 18,000 shares at $178.26 ($3.2M, Jun 15, 10b5-1 plan, -4.59%).
+      COO Jennifer Wong sold 39,166 shares at $176.94 ($6.9M, Jun 16, 10b5-1 plan, -3.59%).
       CTO Christopher Slowe sold 15,500 shares at $150.67 ($2.3M, Apr 8, 10b5-1 plan,
-      -28.75% of direct holdings). COO Jennifer Wong sold 39,166 shares at $176.94
-      ($6.9M, Jun 16, 10b5-1 plan, -3.59% of holdings). 28.48% of stock held by
-      corporate insiders. Insider selling pace is ELEVATED vs historical norms. While
+      -28.75% of direct holdings). 28.48% of stock held by corporate insiders. While
       10b5-1 plans are pre-arranged, the volume ($36.9M/90 days) signals distribution
       phase, not accumulation — potentially relevant if Advance is simultaneously
       leveraging its position via the $1.2B margin loan.
@@ -456,7 +456,7 @@ advance_investments:
       Advance. Despite Charter's 82% 5-year decline, a SpaceX mobile partnership could re-rate the
       stock. Advance's ~$2.76B stake (at $133.64) could see meaningful upside if Charter pivots from
       declining cable to space-enabled mobile connectivity.
-    current_value_estimate: "~$2.76B at $133.64/share (Jun 26, 2026). Down from $8.7B at 52-week high of $422.29."
+    current_value_estimate: "~$2.83B at $137.20/share (Jul 2, 2026 close). Down from $8.7B at 52-week high of $422.29."
     competitive_with: []
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
     spacex_partnership_source_urls:
@@ -535,7 +535,7 @@ advance_investments:
       realized from June 2024 sale = ~$4.04B total from WBD investment. This would be Advance's largest
       single liquidity event since the Reddit IPO and could significantly alter the family office's capital
       allocation and media strategy.
-    current_value_estimate: "~$2.61B remaining at market ($26.66 Jul 1) or ~$2.94B at Paramount tender ($30/share) + $1.1B already realized = ~$3.71-4.04B total. WBD market cap $67.0B."
+    current_value_estimate: "~$2.59B remaining at market ($26.48 Jul 2 close) or ~$2.94B at Paramount tender ($30/share) + $1.1B already realized = ~$3.70-4.04B total. WBD market cap $66.4B."
     competitive_with: ["Meta (streaming/content)"]
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse+programming&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
     source_urls:
@@ -692,9 +692,12 @@ advance_investments:
     source_url: "https://advance.com"
 
 # ===================================================================
-# TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (updated Jun 28, 2026)
+# TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (updated Jul 3, 2026)
 # ===================================================================
-# Reddit (RDDT): ~$7.34B (42.2M shares @ $173.97, Jun 29 2026 intraday, +4.2% on the day)
+# Reddit (RDDT): ~$8.21B (42.2M shares @ $194.67, Jul 2 2026 close)
+#   PRICE SURGE: +13.69% on Jul 1 (momentum breakout, briefly touched $201.16 intraday), then
+#   -1.44% pullback Jul 2. Driven by strong Q1 fundamentals + AI licensing repricing narrative.
+#   Net +12.1% from Jun 30 close ($173.65) to Jul 2 close ($194.67). Added ~$890M to Advance stake.
 #   Q2 2026 GUIDANCE: $715M-$725M (~44% YoY at midpoint). Q2 earnings: Jul 30 after market close.
 #   Q1 ad revenue $625M (+74% YoY). ROAS now ABOVE industry averages in key categories (Cannes Lions).
 #   Reddit white paper: 20% of shoppers include Reddit in searches; 50% of US shoppers use Reddit
@@ -703,17 +706,29 @@ advance_investments:
 #   Active advertiser count +75% YoY. Fospha study: 34% improved cost per purchase, 2.5x spend scaling.
 #   Reddit's ecommerce push (Shopify + WooCommerce + Collection Ads + Community Intelligence + AI Shopping)
 #   directly competes with Meta's commerce platforms (Shops, Marketplace, Instagram Shopping).
-#   30 analysts: consensus "Moderate Buy," avg 12-month target $230.75, high $300 (MarketBeat Jun 28).
-# Charter (CHTR): ~$2.76B (20.6M shares @ $133.64 Jun 26 close, up from $129.65 Jun 25)
+#   30 analysts: consensus "Moderate Buy," avg 12-month target $230.75, high $300 (MarketBeat Jul 2).
+#   AI LICENSING REVENUE (Insider Monkey, Jul 2): Google deal ~$60M/yr, OpenAI deal ~$70M/yr,
+#   total licensing value >$200M/yr. Both renew 2027 — Reddit pushing for DYNAMIC PRICING instead
+#   of flat fees ("every variable has changed since original deals"). This is a major catalyst:
+#   Reddit's data is uniquely valuable because it's authentic human discussion, not bot-generated.
+#   ARPU: $5.23 global, $9.63 US. Beats Pinterest ($7.12) and Snapchat ($9.23). Only Meta ($15.66)
+#   is higher. Reddit ARPU runway: still has room for more ad frequency, better targeting, and
+#   monetizing search + video features that "barely make money yet." 70 hedge funds hold RDDT.
+# Charter (CHTR): ~$2.83B (20.6M shares @ $137.20, Jul 2 close)
 #   SpaceX mobile partnership talks (Bloomberg, Jun 26): executive-level discussions for consumer
 #   mobile service in US. Charter would route SpaceX phone traffic through ground infrastructure.
 #   Charter passes 43.2M locations (post-Cox acquisition). Q2 earnings Jul 24 (before market open).
 #   STEEP DECLINE: -68% from 52-week high, -82% over 5yr. Consensus "Reduce" (6 sell, 9 hold, 5 buy).
 # Turnitin: ~$1.75B+ (acquired 2019, likely appreciated given AI detection boom)
-# WBD remaining: ~$2.62B at market ($26.74 Jun 27 close) or ~$2.94B at Paramount $30 tender + $1.1B realized
-#   EU Phase I deadline extended to July 21 (Paramount submitting UIP divestiture by Jun 30).
-#   FT: regulators expected to approve provided remedies accepted. UK CMA expected August.
-#   NY/CA/other states preparing separate lawsuit — could push close into fall beyond Sept 30 deadline.
+# WBD remaining: ~$2.59B at market ($26.48, Jul 2 close) or ~$2.94B at Paramount $30 tender + $1.1B realized
+#   EU Phase I deadline extended to July 22 (via UIP divestiture remedy submission).
+#   DOJ cleared Jun 19. EU Commission expected to approve without objection.
+#   UK: Culture Secretary Lisa Nandy issued "minded to intervene" notice Jun 30 citing media
+#   plurality + streaming concerns. July 6 deadline for company responses. If she proceeds,
+#   Ofcom + CMA review could take up to 24 weeks. CMA own antitrust investigation: Aug 7 deadline.
+#   CNN reports UK review could trigger $627M/quarter ticking fee (~$7M/day) if not closed by Sept 30.
+#   NY/CA/other state AGs preparing separate lawsuit — CA AG Bonta (Jun 28): "red flags everywhere."
+#   WBD Q1 2026 missed badly: EPS -$1.17 vs consensus -$0.10 (missed by $1.07). Rev $8.89B (-1% YoY).
 # Condé Nast: Private (~$1.9-2.0B revenue, profitable 2025, events rev +40% YoY, projecting +22% in 2026)
 #   - CEO Roger Lynch (Oct 2025): "no longer expects advertising to be a growth engine"
 #   - Lynch (FT, Feb 27 2026): Google search "no longer a meaningful driver" — from majority to ~25%
@@ -728,13 +743,15 @@ advance_investments:
 # ACBJ: Private
 # IRONMAN Group: Private
 # Other holdings: Private
-# TOTAL PUBLIC EQUITY: ~$12.4B at market (Reddit + Charter + WBD market prices Jun 26-27 close)
-# TOTAL PUBLIC EQUITY (if Paramount closes at $30): ~$12.7B
+# TOTAL PUBLIC EQUITY: ~$13.63B at market (Reddit + Charter + WBD, Jul 2 close prices)
+# TOTAL PUBLIC EQUITY (if Paramount closes at $30): ~$14.0B
 # TOTAL PRIVATE SUBSIDIARIES: Turnitin (~$1.75B+ est.), Condé Nast, ACBJ, IRONMAN, PADI, POP, Stage, NSF
 # HawkEye 360: EXITED via IPO May 2026 at ~$2.4B valuation
 # Donald Newhouse net worth at death: $15.4B (Forbes May 2026)
 #
-# KEY PORTFOLIO CONCENTRATION: Reddit is now 57-60% of Advance's public equity (~$7.34B of ~$12.7B).
+# KEY PORTFOLIO CONCENTRATION: Reddit is now 60.2% of Advance's public equity (~$8.21B of ~$13.63B).
+# This is the highest Reddit concentration on record, driven by the Jul 1 surge. Advance's public
+# equity increased $1.23B in 4 trading days (Jun 27→Jul 2), almost entirely from Reddit's +12.1%.
 # Advance is also LEVERAGING Reddit for capital (Nov 2024: $1.2B credit facility collateralized
 # by 7.8M Reddit shares). This means Advance's capital access — which could fund Condé Nast
 # operations — is directly tied to Reddit's stock price. Combined with Reddit's Q1 2026
@@ -742,7 +759,7 @@ advance_investments:
 # the dominant asset AND the dominant revenue growth story in the Advance portfolio.
 #
 # AI LICENSING PORTFOLIO (6 deals, all Meta competitors):
-# 1. OpenAI (Aug 2024) — ChatGPT/SearchGPT
+# 1. OpenAI (Aug 2024) — ChatGPT/SearchGPT (~$70M/yr per Insider Monkey Jul 2)
 # 2. Amazon Rufus (Jul 2025) — AI shopping assistant
 # 3. Perplexity AI (2025) — AI search engine
 # 4. Apple Intelligence (in negotiations) — on-device AI
@@ -754,7 +771,19 @@ advance_investments:
 # UK CMA mandated granular opt-out controls (Jun 4, 2026). Microsoft PCM is an open marketplace
 # model, not just bilateral — any AI builder can potentially license Condé Nast content through it.
 #
-# CONFLICT ESCALATION (updated Jun 28): Reddit's accelerating revenue growth AND commerce evolution
+# WSJ AI CONTENT MARKETPLACE EVOLUTION (Jul 2, 2026): WSJ reports "a new cottage industry to
+# facilitate licensing deals between AI companies and news publishers is taking shape." Condé Nast
+# named among "large publishers" that "have cut deals allowing AI companies to use their content
+# in exchange for payments running to tens of millions of dollars a year" (alongside People Inc.,
+# News Corp, NYT). Microsoft's Publisher Content Marketplace pilot has 8 publishers (People, AP,
+# Hearst) with Copilot + Yahoo as buyers. Microsoft investing $10M+. Amazon/Factiva also building
+# marketplaces. KEY IMPLICATION: The bilateral deal model is evolving into programmatic licensing
+# marketplaces — this could multiply Condé Nast's AI revenue streams beyond the 6 named deals.
+# But it also means Condé Nast's content feeds MORE Meta competitors (any buyer on these platforms),
+# while Meta remains excluded. The marketplace model makes the exclusion MORE systematic, not less.
+# SOURCE: "Marketplaces Are the Next Frontier in Publisher Deals With AI Companies" (WSJ, Jul 2, 2026)
+#
+# CONFLICT ESCALATION (updated Jul 3): Reddit's accelerating revenue growth AND commerce evolution
 # make the conflict between Advance's Reddit investment and Wired's Meta coverage MORE MATERIAL
 # over time, not less. Every dollar Reddit wins in advertising is partially a dollar Meta loses.
 # Advance's collateralized lending means even Advance's SHORT-TERM LIQUIDITY depends on Reddit's
@@ -765,6 +794,11 @@ advance_investments:
 # averages — closing the performance gap with Meta Ads that historically insulated Meta from
 # Reddit's competitive threat. 50% of US shoppers using Reddit to verify AI recommendations
 # positions Reddit as the "trust layer" between AI search and purchase — a role Meta lacks.
+# Reddit's AI licensing deals ($200M+/yr, renewing 2027 with dynamic pricing) create a SECOND
+# revenue pillar that doesn't depend on ad share vs Meta — but still competes for AI training
+# data dollars that Meta's open-source Llama strategy can't easily match (Reddit has unique
+# human discussion data that AI labs are willing to pay for). Reddit at 60% of Advance's public
+# equity means any Wired story that moves Reddit's stock ±1% moves Advance's portfolio by ~$82M.
 
 # ===================================================================
 # REVENUE RELATIONSHIPS — Condé Nast AI licensing deals
