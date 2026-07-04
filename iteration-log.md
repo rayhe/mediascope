@@ -3,6 +3,33 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-04 05:00 PT — Type D: Toolkit Quality & Documentation — Fix 3 Pre-Existing Test Failures + Documentary Source Docs
+
+### Focus
+Fixed all 3 pre-existing test failures (school targeting expert assertion, documentary source detection for bare adjective+noun phrases) and documented the documentary source detection feature in METHODOLOGY.md.
+
+### What Changed
+
+**mediascope/analyze/sources.py:**
+- **Documentary pattern regex fix:** Made the article (`a`/`an`/`the`) optional in the first documentary source pattern so bare adjective+noun phrases like "Internal documents obtained by The Guardian" match. Previously required `(?:an?\s+|the\s+)` which excluded phrases without an article before the document noun.
+- **Anonymous/documentary overlap fix:** Added negative lookahead `(?!\s+by\s+(?:the\s+)?[A-Z])` to the anonymous-source pattern for internal documents. Previously, "Internal documents obtained" was caught by the anonymous pattern (which runs before documentary patterns), added to `seen_names`, and then skipped by the documentary pattern. Now, when followed by "by [Outlet]" the anonymous pattern defers to the documentary pattern.
+
+**tests/test_nyt_school_targeting.py:**
+- Fixed `test_both_sources_are_expert` to filter on `source_type == "named"` before asserting `is_expert`. The test's docstring says "Both named sources" but the code iterated ALL sources including documentary ones (which have `is_expert=False` by design). Added explicit `len(named) >= 2` assertion.
+
+**docs/METHODOLOGY.md:**
+- Added new §5.3 "Documentary Source Detection" covering: detection patterns table (6 patterns with examples), article-optional matching, anonymous/documentary overlap resolution via negative lookahead, analytical value of documentary sources.
+
+**README.md:**
+- Added feature #16: "Documentary source detection" to feature list.
+- Corrected test count from 1336 to actual 1330 (collected by pytest).
+
+### Key Stats
+- Tests: 1330 total (1328 passed, 0 failed, 2 xfailed — was 1325/3/2)
+- All 3 pre-existing failures resolved with zero regressions
+- Commit: `ee29b42`
+
+---
 ## 2026-07-04 04:00 PT — Type C: Ownership & Funding Deep Dive — NYT Litigation MDL Docket + Anderson v. Microsoft
 
 ### Focus
