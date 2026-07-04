@@ -1,0 +1,34 @@
+Source: MarketWatch
+URL: https://www.marketwatch.com/story/is-meta-giving-up-on-cutting-edge-ai-wall-street-is-divided-over-potential-cloud-pivot-7c5ffc5d
+Headline: Is Meta 'giving up' on cutting-edge AI? Wall Street is divided over potential cloud pivot.
+Subheadline: Meta shares pop on reports of a new cloud-computing venture, but some analysts wonder if that would signal disappointing uptake of internal AI offerings
+Byline: Christine Ji
+Date: July 1, 2026
+Photo caption: Logo of Meta, the US company, displayed at the Vivatech technology startups and innovation fair. Some analysts believe Meta could begin to pull back on AI capital expenditures going forward. Photo: AFP / Getty Images
+Referenced Symbols: META, AMZN, GOOGL, GOOG
+
+Meta Platforms is reportedly exploring a new avenue of artificial-intelligence monetization, raising questions about whether Meta is throwing in the towel on being a leading AI lab or, rather, catapulting its business ahead.
+
+Shares of Meta jumped 9% on Wednesday after Bloomberg News reported that the company is planning to sell its excess computing capacity. The news served as a welcome catalyst for the stock, which has been beaten down this year by fears about overspending and the competitiveness of its AI model. According to Dow Jones Market Data, the stock just posted its best one-day performance in over a year, though it's still down on the year.
+
+Meta declined to comment on the report.
+
+Also: CoreWeave, Nebius shares tumble as Meta stands to become a fresh threat in the cloud
+
+D.A. Davidson analyst Gil Luria sees Meta's reported cloud ambitions as a sign that the company is "giving up on frontier AI" to sell computing power instead. Since the inception of Meta Superintelligence Labs last year, the company has released a new Muse Spark model but has still lagged behind Anthropic and OpenAI.
+
+Should Meta reduce its spending and begin to monetize its AI infrastructure, the company could see "significant upside to revenue and cash flow," Luria wrote in a Wednesday note.
+
+Creating a cloud platform is a "rational" move as Meta continues to raise its AI spending, Baird analyst Colin Sebastian wrote in a Wednesday note. Meta plans to devote up to $145 billion toward capital expenditures this year. Unlike peers such as Amazon.com and Alphabet, Meta hasn't historically sold computing access to third parties, limiting its monetization capabilities and economies of scale.
+
+Meta CEO Mark Zuckerberg previously hinted at selling computing access in a scenario where the company has "overbuilt" its AI infrastructure. So if Meta is pursuing a cloud platform, it could be a signal that Meta's internal AI products aren't scaling as fast as initially anticipated, Sebastian cautioned.
+
+Meta's "decision to sell excess computing capacity should help monetize its sizable AI infrastructure investments and improve free-cash-flow expectations, which were forecasted to move significantly negative in the coming years," Andrew Graham, founder of Jackson Square Capital, told MarketWatch. Meta is projected to report over $1 billion of negative free cash flow in the second quarter of 2026, according to FactSet estimates.
+
+Read: How Meta's little-known chip business fits in with Zuckerberg's 'superintelligence' ambitions
+
+However, Jefferies analyst Brent Thill had a different perspective. In a Wednesday note, Thill called overbuilding concerns "backward," highlighting that demand for computing power continues to outstrip supply. He believes a new cloud business will increase utilization, improve return on invested capital and boost cash flow "to fund more, not less, capex."
+
+According to industry checks from Jefferies, Meta's current internal infrastructure utilization rate is around 65%. The remaining 35% of idle capacity gives Meta an additional monetization lever. In an earnings call last year, Zuckerberg said that he expects Meta to be able to rent out capacity "at some premium to what we've bought it at."
+
+Meta "is not stepping away from the AI race; it is turning early, aggressive capacity commitments into a strategic value creation option," Thill said.

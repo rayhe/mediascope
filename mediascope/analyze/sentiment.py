@@ -574,6 +574,25 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "unjustifiable", "unjustified",
     "anti-consumer", "anti consumer",
     "bait and switch", "bait-and-switch",
+    # Financial-defeat / retreat language — common in financial journalism
+    # to characterize corporate strategic changes as failures.  Identified
+    # in MarketWatch Meta cloud pivot article (Jul 1, 2026): "throwing in
+    # the towel" and "beaten down" are editorial word choices that VADER
+    # reads as neutral but carry strong negative framing for the subject.
+    "throwing in the towel", "thrown in the towel",
+    "throw in the towel", "throws in the towel",
+    "beaten down", "beaten-down",
+    "giving up", "gave up", "given up",
+    "overspending", "overspent", "overbuilt",
+    "pulled back", "pulling back", "pull back",
+    "reined in", "reining in",
+    "scaling back", "scaled back",
+    "cash burn", "cash-burn",
+    "lagged behind", "lagging behind", "lags behind",
+    "fallen behind", "falling behind", "falls behind",
+    "playing catch-up", "playing catch up",
+    "white flag",
+    "retreat", "retreating",
 ]
 
 # Passive/victim vs. active/powerful framing indicators

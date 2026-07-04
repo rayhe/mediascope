@@ -11957,3 +11957,49 @@ Vice News editorial DNA (gonzo immersion, adversarial anti-institutional posture
 ### Tests
 1243 passed (3 pre-existing deselected), 2 xfailed. 79 structural consistency guards all pass. 0 new regressions.
 
+
+## 2026-07-04 00:00 PT — Type A: MarketWatch Meta Cloud Pivot
+
+**Article:** "Is Meta 'giving up' on cutting-edge AI? Wall Street is divided over potential cloud pivot." — Christine Ji, MarketWatch, July 1, 2026.
+
+### Problem
+VADER gave 0.99 compound to this editorially ambivalent-to-negative article about Meta's cloud pivot. Composite scored 0.6319 (should be ~-0.15). Three specific toolkit gaps:
+
+1. **Financial-defeat emotional language missing:** "Throwing in the towel," "beaten down," "giving up," "lagged behind" — none in EMOTIONAL_LANGUAGE list.
+2. **ironic_quotation false positives:** "rational" (Baird's Colin Sebastian) and "to fund more, not less, capex." (Jefferies' Brent Thill) flagged as scare quotes despite being attributed analyst quotes. Root causes: "wrote" missing from attribution verb lists; org attribution lookahead too narrow (80 chars vs 82-char-distant attribution); `_ORG_QUOTE` missing standalone verbs (believes, called, etc.).
+3. **competitive_deficit gap:** "Lagged behind Anthropic and OpenAI" missed because all patterns required "competitors including/such as/like" preamble.
+
+### Fixes
+
+**sentiment.py:**
+- Added 32 financial-defeat/retreat terms to EMOTIONAL_LANGUAGE (829 total, was 797)
+
+**framing.py:**
+- Added "wrote/writes" to `_ATTRIBUTION_SHORT` (lookback) and "he/she wrote" to `_POST_ATTRIBUTION` (lookahead) for ironic_quotation suppression
+- Widened `_ORG_ATTR_PAT` lookahead from 80→120 chars (financial attribution strings can be long: "Baird analyst Colin Sebastian wrote" = 82 chars)
+- Added standalone verbs (called, believes, contends, predicted, expects, suggested, maintained, estimated) to `_ORG_QUOTE` for 200-char wide lookback
+- Added simple competitive_deficit pattern: `lag(s|ged|ging) behind + [Named Company] + [Named Company]` without requiring "competitors including" preamble (378 patterns total, was 377)
+
+### Results
+- ironic_quotation: 4→2 (eliminated 2 false positives, 0% FP rate)
+- competitive_deficit: 0→1 (new detection)
+- Framing devices: 9→8 total (2 FPs removed, 1 new CD added)
+- Composite tone still 0.6319 — framing correction doesn't fire because agency=0.0 (threshold -0.3). Known systemic gap for balanced financial journalism; filed as future work.
+
+### Files Changed
+- `mediascope/analyze/sentiment.py` — financial-defeat EL terms
+- `mediascope/analyze/framing.py` — attribution filters, competitive_deficit pattern
+- `tests/test_marketwatch_cloud_pivot.py` — 8 test methods (25 collected with parametrize)
+- `tests/test_structural_consistency.py` — updated counts (829 EL terms, 378 patterns)
+- `docs/ARCHITECTURE.md` — test count header (1316/51), test file listing, pattern count
+- `README.md` — test count header (1316/51), test file listing, pattern count
+- `docs/QUALITY_STANDARDS.md` — annotated article count (90)
+- `examples/sample_output/marketwatch_meta_cloud_pivot_giving_up_2026_07_01_article.txt` — article text
+- `examples/sample_output/marketwatch_meta_cloud_pivot_giving_up_2026_07_01_analysis.md` — full annotation
+
+### Stats
+123 journalists, 122 multi-pub, 388 auto-detected migrations, 90 annotated articles, 66 framing device types, 378 patterns, 829 emotional language terms, 9 correction paths (A–I), 9 same-event clusters.
+
+### Tests
+1307 passed (3 pre-existing deselected), 2 xfailed, 79 structural consistency guards pass. 0 new regressions.
+

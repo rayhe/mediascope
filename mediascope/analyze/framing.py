@@ -5222,6 +5222,22 @@ _COMPETITIVE_DEFICIT_PATTERNS: list[re.Pattern] = [
         r"achieved|surpassed|outpaced)\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # Simple "lagged/lagging/trails behind [Company] and [Company]" —
+    # direct competitor naming without the "competitors including" preamble.
+    # Discovered in MarketWatch Meta cloud pivot article (Jul 1, 2026):
+    # "lagged behind Anthropic and OpenAI" was not detected because the
+    # existing patterns required "competitors including/such as/like".
+    re.compile(
+        r"\b(?:lag(?:s|ged|ging)?\s+behind|trail(?:s|ed|ing)?\s*"
+        r"(?:behind)?|fallen?\s+behind|falling\s+behind|"
+        r"playing\s+catch-?up\s+(?:with|to)|left\s+behind\s+by)\s+"
+        r"(?:OpenAI|Google|Anthropic|Apple|Microsoft|Amazon|"
+        r"Samsung|Nvidia|xAI|Mistral|DeepSeek)\b"
+        r".{1,80}?"
+        r"\b(?:OpenAI|Google|Anthropic|Apple|Microsoft|Amazon|"
+        r"Samsung|Nvidia|xAI|Mistral|DeepSeek)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
 ]
 
 _DEVICE_PATTERNS["competitive_deficit"] = _COMPETITIVE_DEFICIT_PATTERNS
@@ -5771,6 +5787,13 @@ def detect_framing_devices(
                             " said it ", " said the ", " said that ",
                             " says it ", " says the ", " says that ",
                             " added that ", " adds that ",
+                            # "wrote" — common in analyst-note attribution
+                            # ("Luria wrote in a note", "Sebastian wrote").
+                            # Discovered in MarketWatch Meta cloud pivot
+                            # article (Jul 1, 2026): "rational" flagged as
+                            # scare quote when Baird's Sebastian wrote it.
+                            " wrote ", " wrote in ", " writes ",
+                            " writes in ", " wrote that ",
                         )
                         if any(attr in _lookback for attr in _ATTRIBUTION_SHORT):
                             continue
@@ -5786,6 +5809,8 @@ def detect_framing_devices(
                             " he explained", " she explained",
                             " he noted", " she noted",
                             " he added", " she added",
+                            # "wrote" — analyst notes use "X wrote in a note"
+                            " he wrote", " she wrote",
                         )
                         if any(attr in _lookahead for attr in _POST_ATTRIBUTION):
                             continue
@@ -5806,7 +5831,17 @@ def detect_framing_devices(
                             r"(?:said|says|added|adds|noted|notes|wrote"
                             r"|reported|explained|argued|called|described)"
                         )
-                        if _ORG_ATTR_PAT.search(_lookahead):
+                        # Use wider window (120 chars) for org attribution —
+                        # financial journalism attribution strings can be
+                        # long: "Baird analyst Colin Sebastian wrote in a
+                        # Wednesday note" = 82 chars after the quoted word.
+                        # Discovered in MarketWatch Meta cloud pivot article
+                        # (Jul 1, 2026): "rational" attributed to Sebastian
+                        # but "wrote" was at char 80 — just outside the
+                        # standard 80-char window.
+                        _org_lookahead = text[end:min(len(text), end + 120)].lower()
+                        _org_lookahead = re.sub(r'\s+', ' ', _org_lookahead)
+                        if _ORG_ATTR_PAT.search(_org_lookahead):
                             continue
                     # Longer quotes (>3 words): filter if preceded by
                     # personal or organizational attribution
@@ -5852,6 +5887,22 @@ def detect_framing_devices(
                             " added that ", " adds that ",
                             " noted that ", " notes that ",
                             " wrote that ", " argued that ",
+                            # Broader attribution verbs — financial/analyst
+                            # articles use "called", "believes", "contends"
+                            # before long quoted clauses separated by many
+                            # intervening words.
+                            # Discovered in MarketWatch Meta cloud pivot
+                            # article (Jul 1, 2026): "to fund more, not
+                            # less, capex." is Thill's direct quote, but
+                            # "He believes" is 200 chars back and "called"
+                            # is further still.
+                            " called ", " calls ",
+                            " believes ", " contends ",
+                            " predicted ", " predicts ",
+                            " expects ", " expected ",
+                            " suggested ", " suggests ",
+                            " maintained ", " maintains ",
+                            " estimated ", " estimates ",
                         )
                         if any(verb in _wide_lookback for verb in _ORG_QUOTE):
                             continue

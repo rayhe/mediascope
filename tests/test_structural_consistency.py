@@ -831,8 +831,8 @@ class TestEmotionalLanguageCount:
         """EMOTIONAL_LANGUAGE should contain exactly 612 unique terms."""
         from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
 
-        assert len(EMOTIONAL_LANGUAGE) == 797, (
-            f"Expected 797 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
+        assert len(EMOTIONAL_LANGUAGE) == 829, (
+            f"Expected 829 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
             "If you added or removed terms, update this test to the new count.\n"
             "Also check for duplicates: len(set(EMOTIONAL_LANGUAGE)) should match."
         )
@@ -868,7 +868,7 @@ class TestAdversarialDeviceListConsistency:
     # Track the total number of compiled regex patterns across all device
     # types in _DEVICE_PATTERNS.  When patterns are added, this test fails
     # and forces a deliberate count update, preventing undocumented drift.
-    EXPECTED_TOTAL_PATTERNS = 377  # sum(len(v) for v in _DEVICE_PATTERNS.values())
+    EXPECTED_TOTAL_PATTERNS = 378  # sum(len(v) for v in _DEVICE_PATTERNS.values())
 
     def test_total_regex_pattern_count(self):
         """Total compiled regex patterns must match expected count."""
