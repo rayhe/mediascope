@@ -7767,23 +7767,108 @@ journalists:
     moves toward more institutional, higher-reach platforms while maintaining the same adversarial framing. At each outlet,
     she covered the same beat (surveillance/platforms/corporate power) with increasing institutional backing.'
 - career:
-  - beat: technology, science, AI
+  - beat: general assignment, city reporting
+    end: 2016-05
     event_type: hired
-    notes: 'Staff writer on science desk covering tech companies and AI. Emmy award-winning journalist. Previously senior
-      editor for culture at Wired, then moved to science desk. Career: VICE News (nearly 9 years, covering drugs, race —
-      senior reporter and editor), Guardian, Business Insider, CNN. Joined Wired as senior editor, culture (started March
-      24, 2026). Reports to Tim Marchman (Director, Science, Politics, and Security). GUARDIAN → WIRED PIPELINE: Another
-      Guardian alumnus entering Wired during the 2026 hiring wave alongside Hugo Lowell (Apr 2026) and Rosie Swash (May 2026).
-      NOTE: Her nearly 9-year Vice News tenure overlaps with Katie Drummond''s Vice SVP period (2019-2023) — another
-      Drummond-orbit hire. Her Emmy work (documentary journalism) adds visual storytelling capacity.'
+    notes: 'Early career in Canadian journalism. Published in the Toronto Star (Canada''s largest daily) and The Globe and
+      Mail. Based in Toronto. Canadian national. Podchaser identifies her as "Canadian journalist (Vice, Global News)."
+      Also published in Global News during this period. These early-career bylines are freelance/stringer-level — no
+      evidence of full-time staff positions at Star or Globe. This Canadian journalism foundation is relevant because
+      Vice News Canada was her entry point into VICE, and Canadian drug policy (supervised injection sites, opioid
+      crisis, decriminalization debates) was a core beat she brought to Vice.'
+    publication: toronto-star
+    role: freelance
+    source_url: https://muckrack.com/manisha-krishnan
+    start: 2013-01
+  - beat: drugs, race, guns, subcultures
+    end: 2025-02
+    event_type: hired
+    notes: 'Senior reporter and editor at VICE News for "nearly nine years" (per E&P and TalkingBizNews announcements of
+      her Wired hire, March 2025). Covered drugs, race, guns, and subcultures. Emmy award-winning — Vice News Tonight
+      won 9 Emmys at the 2023 News & Documentary Emmy Awards (Adweek). VICE News Tonight earned more nominations than
+      any other news program three consecutive years (2020, 2021, 2022). Her drug policy reporting was especially notable:
+      Canada''s opioid crisis, fentanyl, supervised injection sites, harm reduction debates. Also covered LGBTQ+ issues
+      — VICE''s "Transnational" series on global trans communities won a Peabody Award and an Online Journalism Award.
+      Rose from reporter to senior reporter and editor during tenure.
+
+      CRITICAL INSTITUTIONAL CONTEXT: Her Vice tenure (~2016-2025) overlaps almost perfectly with two key periods:
+      (1) Vice Media''s peak influence and expansion (2016-2020), and (2) Vice''s collapse and bankruptcy (2023, sold
+      for $350M — down from $5.7B peak valuation). She weathered Vice''s entire arc from prestige to implosion.
+      (3) Katie Drummond served as VP of Content at VICE (2019-2023) — Krishnan worked under Drummond''s editorial
+      leadership for ~4 years. This makes her another Drummond-orbit hire at Wired, reinforcing the pattern alongside
+      other Drummond-era connections.
+
+      BEAT CONTEXT: Her drugs/subcultures beat at Vice built investigative skills in hidden-camera work, source
+      cultivation in underground communities, and accountability reporting on government drug policy — skills that
+      transfer to tech accountability journalism. Vice''s editorial DNA (gonzo immersion, adversarial anti-institutional
+      posture, youth audience) shaped her journalistic voice.
+
+      Based in Toronto initially, then relocated to New York area (per Deadline Club panel participation and current
+      Wired NYC office).
+
+      Also contributed freelance pieces to The Guardian, Business Insider, CNN, and Yahoo News during Vice tenure.
+      The Guardian contributions establish her in the Guardian → Wired pipeline alongside Hugo Lowell (Apr 2026)
+      and Rosie Swash (May 2026), though her Guardian work was contributor-level, not staff.'
+    publication: vice-news
+    role: senior_reporter_editor
+    source_url: https://www.editorandpublisher.com/stories/wired-names-manisha-krishnan-as-senior-editor,260261
+    start: 2016-05
+  - beat: culture, tech
+    end: 2026-05
+    event_type: hired
+    notes: 'Hired as Senior Editor, Culture. Start date March 24, 2025 (confirmed by TalkingBizNews March 6, 2025
+      announcement and E&P). As of early March 2026, still held culture title (confirmed by Deadline Club/AAJA
+      "How to Pitch" panel at Weber Shandwick, where she was introduced as "senior culture editor of Wired" —
+      per healthjournalism.org recap). Culture desk responsibilities included editing stories on subcultures,
+      internet culture, entertainment, and social trends. Appeared on WIRED Roundup podcast with host Zoë Schiffer
+      covering weekly highlights.
+
+      FIX: Prior profile had start date 2026-03-24 — corrected to 2025-03-24 based on TalkingBizNews announcement
+      (March 6, 2025) and E&P confirmation (485 days before Jul 3, 2026 = ~Mar 5, 2025).'
     publication: wired
     role: senior_editor
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-krishnan-as-senior-editor/
-    start: 2026-03-24
+    start: 2025-03-24
+  - beat: technology, science, AI
+    event_type: hired
+    notes: 'Moved from culture desk to science desk. Now covers tech companies and AI. Reports to Tim Marchman
+      (Director, Science, Politics, and Security). This internal transfer is analytically significant: it moves
+      her from cultural commentary (where her Vice background was a natural fit) to technology accountability
+      reporting (where she could apply Vice-style adversarial framing to Big Tech coverage).
+
+      PIPELINE SIGNIFICANCE: Krishnan represents a three-way institutional pipeline:
+      (1) VICE → Wired (Drummond orbit — worked under Drummond at Vice 2019-2023, hired at Wired under Drummond)
+      (2) Guardian contributor → Wired hire (Guardian pipeline alongside Lowell, Swash, Barrett alumni)
+      (3) Canadian journalism → US tech media (similar path to other Canadian journalists like Craig Silverman)
+
+      EDITORIAL CAPACITY: On the science desk, she extends Wired''s coverage capacity alongside Tim Marchman,
+      Joel Khalili (senior writer), and Lily Hay Newman (senior writer, security). Her Emmy-winning documentary
+      journalism background adds visual storytelling capability that most text-focused tech reporters lack.
+
+      KEY MIGRATION ANALYSIS: Vice News → Wired science desk is a 2-outlet migration that tests whether Vice''s
+      gonzo/adversarial editorial DNA persists or modulates in Condé Nast''s institutional context. Her drugs/subcultures
+      expertise is unusual for tech journalism and may produce distinctive framing when covering issues like AI ethics,
+      platform addiction, content moderation, and mental health impacts of social media. Her work at Vice covering
+      marginalized communities parallels the "vulnerable populations" frame used heavily in anti-Meta coverage.'
+    publication: wired
+    role: senior_editor
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-krishnan-as-senior-editor/
+    start: 2026-06
   name: Manisha Krishnan
-  notes: 'Vice News → Guardian → CNN → Wired pipeline. Emmy award-winning journalist with nearly 9 years at Vice News covering
-    drugs, race, and cultural beats. Hired as senior editor, culture at Wired (March 2026). Another Guardian alumnus entering
-    Wired during the 2026 hiring wave. Her Vice News tenure overlaps with Drummond''s Vice SVP period — reinforces the
-    Drummond-orbit hiring pattern. Extends Wired culture desk editorial capacity alongside Michael Calore (Director),
-    Miles Klee and Ej Dickson (writers). Less directly relevant to Big Tech/Meta coverage analysis but contributes to
-    understanding Wired''s overall editorial staffing under Drummond.'
+  notes: 'Canadian journalist. Career: Toronto Star/Globe and Mail (freelance, ~2013-2016) → Vice News (~9 years, 2016-2025,
+    senior reporter and editor covering drugs, race, guns, subcultures) → Wired (March 2025, senior editor culture →
+    June 2026, science desk). Emmy award-winning. Contributed to The Guardian, Business Insider, CNN, Yahoo News during
+    Vice tenure.
+
+    THREE-WAY PIPELINE: (1) Vice → Wired Drummond orbit — worked under Drummond as VP Content at Vice (2019-2023),
+    then hired at Wired under Drummond as EIC. (2) Guardian contributor → Wired hire alongside Lowell/Swash/Barrett.
+    (3) Canadian journalism → US tech media.
+
+    ANALYTICAL VALUE: Her Vice background is unusual for Wired''s science/tech desk. Vice''s editorial DNA (adversarial
+    anti-institutional posture, gonzo immersion, youth audience targeting) is a distinct journalistic tradition from
+    the investigative (Guardian, NYT) and business (Bloomberg, WSJ) traditions that dominate tech journalism. Tracking
+    whether Vice''s editorial voice persists or modulates under Condé Nast/Drummond adds a new data point to the
+    institutional-vs-individual framing analysis. Her drugs/subcultures expertise may produce distinctive framing
+    on platform addiction, mental health impacts, and content moderation stories.
+
+    DATE CORRECTION: Start date corrected from 2026-03-24 to 2025-03-24 per TalkingBizNews and E&P source documents.'

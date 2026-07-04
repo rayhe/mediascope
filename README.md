@@ -319,7 +319,7 @@ The `examples/` directory contains runnable demos that walk through MediaScope's
 | [`same_event_comparison.py`](examples/same_event_comparison.py) | Cross-publication comparison of the same event (wire service vs magazine), isolating editorial framing from event severity |
 | [`framing_correction_demo.py`](examples/framing_correction_demo.py) | How MediaScope corrects VADER's positive bias on investigative journalism using 8 distinct correction paths (A–H), framing device signals, active-negative agency detection, and source stance analysis |
 | [`sarcastic_editorial_demo.py`](examples/sarcastic_editorial_demo.py) | **NEW:** Path H sarcastic editorial detection — how VADER misscores short sarcastic opinion pieces as positive (editorial asides, assumed consensus, reader-address register), with step-by-step trigger diagnostics |
-| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 123 journalists, 386 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
+| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 123 journalists, 388 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
 | [`agent_integration.py`](examples/agent_integration.py) | Integration patterns for LangChain, CrewAI, and raw function calling |
 
 ## Sample Output Gallery
