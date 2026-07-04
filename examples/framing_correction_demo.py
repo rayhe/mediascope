@@ -224,6 +224,7 @@ def analyze_with_details(text: str, headline: str, label: str) -> None:
         "self_referential_investigation", "kicker_framing",
         "military_techno_optimism", "assumed_consensus", "editorial_aside",
         "failure_precedent", "editorial_deflation",
+        "competitive_positioning", "consumer_ownership", "slippery_slope",
     }
     adversarial_count = sum(
         1 for d in framing_devices if d.device_type in adversarial_types

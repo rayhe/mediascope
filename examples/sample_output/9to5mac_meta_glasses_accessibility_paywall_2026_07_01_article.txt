@@ -1,0 +1,29 @@
+# An accessibility paywall on Meta Glasses could be good news for Apple Glasses
+
+**Source:** 9to5Mac
+**Date:** July 1, 2026
+**URL:** https://9to5mac.com/2026/07/01/an-accessibility-paywall-on-meta-glasses-could-be-good-news-for-apple-glasses/
+
+---
+
+Ray-Ban Meta Glasses and the latest cheaper non-designer option are sold on the basis of the built-in AI features, but the company has just announced a "ridiculous" limit on the free usage you can make of an accessibility feature.
+
+Effectively, Meta has retroactively applied a paywall to a hardware product it already sold to customers …
+
+Meta first started rolling out the Conversation Focus feature in December of last year.
+
+> Whether you're eating at a busy restaurant, commuting on the train, or catching your favorite DJ's latest set, conversation focus uses the open-ear speakers on your Al glasses to amplify the voice of the person you're talking to. You'll hear the amplified voice sound slightly louder, which will help you distinguish the conversation from ambient background noise so you can stay tuned into the moments that matter. You'll also be able to easily adjust the amplification level by swiping the right temple of your glasses or through your device settings to match the volume of your environment.
+
+That's a smart use of AI, and one of the best things about it is that it uses on-device processing, meaning that privacy isn't compromised and mobile data isn't needed.
+
+However, The Verge reports that Meta is now applying a limit to how much you're allowed to use the feature without paying extra for it.
+
+> This week, Meta quietly announced that your glasses' Conversation Focus feature will soon be limited to three hours of use per month, unless you pay for a $19.99 Meta One Premium subscription.
+
+This is doubly unacceptable. First, as the site's Sean Hollister points out, because the feature works on the device, there is no use of Meta servers and therefore no possible justification for charging for it. Second, this is an accessibility feature, and some may have purchased the glasses specifically for that reason.
+
+When asked for comment by The Verge, Meta said that the limit "currently" applies only to the Conversation Focus feature, implying that other AI features may be rate-limited in future. The company told us that it doesn't consider it to be an accessibility feature given that it is intended for use by those with normal hearing. I would argue that this is semantics, as some struggle more than others to hear conversations in noisy environments.
+
+All this may be good news for the upcoming Apple Glasses — it helps provide another reason for consumers to buy their AI-powered glasses from a more reputable company even though the upfront cost is likely to be higher. The company has always said that it never seeks a return on investment for accessibility features, rather viewing this as a way to contribute to a better world.
+
+Apple Glasses are expected to launch at some point next year.

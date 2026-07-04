@@ -555,6 +555,19 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "underage",
     "predators",
     "grooming", "groomed",
+    # Consumer-rights / paywall / subscription emotional terms — needed for
+    # coverage of retroactive feature restrictions, subscription paywalls on
+    # previously-free hardware features, and accessibility-rights debates.
+    # Gap discovered during 9to5Mac Meta Conversation Focus analysis (Jul 2026):
+    # emotional_intensity 0.35 on an article with "doubly unacceptable",
+    # "no possible justification", "retroactively applied a paywall".
+    "unacceptable", "doubly unacceptable",
+    "no possible justification", "no justification",
+    "retroactively", "retroactive",
+    "ridiculous",
+    "unjustifiable", "unjustified",
+    "anti-consumer", "anti consumer",
+    "bait and switch", "bait-and-switch",
 ]
 
 # Passive/victim vs. active/powerful framing indicators
@@ -694,6 +707,15 @@ NEGATIVE_COMPARISON: list[str] = [
     "far ahead", "still ahead",
     "not exactly a promising",
     "not exactly promising",
+    # Added 2026-07-03: 9to5Mac Conversation Focus analysis.  "a more
+    # reputable company" explicitly elevates a competitor over the subject,
+    # but the existing phrase list had no competitive-positioning terms.
+    "more reputable",
+    "more trustworthy",
+    "more responsible",
+    "more ethical",
+    "less reputable",
+    "less trustworthy",
 ]
 
 POSITIVE_COMPARISON: list[str] = [
@@ -1210,6 +1232,22 @@ _ADVERSARIAL_DEVICE_TYPES: set[str] = {
     # be honest here", "something tells me").
     # Detected in Gizmodo glasses subscription article (Jul 2026).
     "editorial_aside",
+    # Competitive positioning explicitly elevates a competitor over the
+    # subject, positioning the competitor as the beneficiary of the
+    # subject's mistake ("good news for Apple Glasses", "buy from a more
+    # reputable company").  Adversarial because it frames the subject's
+    # action as driving consumers toward competitors.
+    # Discovered in 9to5Mac Conversation Focus analysis (Jul 2026).
+    "competitive_positioning",
+    # Consumer ownership frames corporate restrictions as violations of
+    # what consumers "already paid for" or "already own", invoking
+    # property-rights language to amplify consumer grievance.
+    # Discovered in Android Authority Conversation Focus analysis (Jul 2026).
+    "consumer_ownership",
+    # Slippery slope extrapolates from a specific corporate action to a
+    # broader systemic threat ("sets a precedent", "implying that other
+    # features may be rate-limited"), creating anticipatory consumer anxiety.
+    "slippery_slope",
 }
 
 # Anchor device types that create negative reader takeaway even when
@@ -1612,6 +1650,58 @@ def _compute_framing_correction(
         target_tone = -(0.30 + 0.20 * sarcasm_density + 0.10 * emotional_intensity)
         corrected = 0.15 * raw_tone + 0.85 * target_tone
         corrected = max(-0.7, min(0.0, round(corrected, 4)))
+        return corrected, True
+
+    # --- Path I: Direct consumer critique with positive agency ---
+    # Short opinion pieces where the author directly condemns a corporate
+    # decision using strong moral/consumer-rights language ("unacceptable",
+    # "no possible justification", "retroactively applied a paywall")
+    # but the company is the active agent (agency > 0).  VADER scores
+    # these positive because: (a) embedded product-description blockquotes
+    # dominate the lexical signal, and (b) the company IS doing things
+    # (positive verbs).  But the editorial stance is unambiguously negative.
+    #
+    # Key distinguishing signals: high emotional intensity (consumer-rights
+    # vocabulary), strong negative comparative framing (competitor elevated),
+    # and multiple consumer-adversarial framing devices (consumer_ownership,
+    # competitive_positioning, slippery_slope).
+    #
+    # Unlike Path H (sarcastic): no editorial asides or register-breaking.
+    # Unlike Path A (adversarial): agency is positive, not negative.
+    # Unlike Path C (anchor): no kicker or self-referential investigation.
+    #
+    # Discovered in 9to5Mac Meta Conversation Focus paywall analysis
+    # (Jul 2026): VADER scored +0.67 on a clearly negative short editorial
+    # with "doubly unacceptable", "no possible justification", "retroactively
+    # applied a paywall".  Agency = +0.67, EI = 0.78, comparative = -1.0,
+    # adversarial count = 6 (consumer_ownership×2, competitive_positioning×2,
+    # slippery_slope×1, loaded_language×1).
+    _CONSUMER_CRITIQUE_MIN_ADVERSARIAL = 5
+    _CONSUMER_CRITIQUE_MIN_EI = 0.5
+    consumer_device_count = sum(
+        framing_summary.get(dt, 0) for dt in (
+            "consumer_ownership", "competitive_positioning",
+            "slippery_slope", "usage_dismissal_undercut",
+        )
+    )
+    if (
+        raw_tone >= 0.3
+        and adversarial_count >= _CONSUMER_CRITIQUE_MIN_ADVERSARIAL
+        and emotional_intensity >= _CONSUMER_CRITIQUE_MIN_EI
+        and consumer_device_count >= 2  # at least 2 consumer-specific devices
+        and agency > 0  # positive agency (company is the active agent)
+    ):
+        # Blend toward negative, weighted by emotional intensity and
+        # comparative framing.  Lighter than Path A (which is 90/10
+        # framing) because agency is genuinely positive.
+        base_target = -(0.25 + 0.15 * emotional_intensity)
+        # If comparative framing is strongly negative, amplify
+        comparative = framing_summary.get("competitive_positioning", 0)
+        if comparative >= 1:
+            base_target -= 0.10
+        target_tone = max(-0.6, min(0.0, base_target))
+        corrected = 0.20 * raw_tone + 0.80 * target_tone
+        corrected = max(-0.6, min(0.0, round(corrected, 4)))
         return corrected, True
 
     return raw_tone, False

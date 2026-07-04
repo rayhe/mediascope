@@ -179,7 +179,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 58 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (42 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 59 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (43 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -245,6 +245,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Editorial Aside** | Breaking journalistic register to address the reader directly with sarcastic or solidarity-building interjections that create an in-group frame between author and reader, positioning the subject as an outsider deserving scrutiny | "brace yourself"; "buckle up"; "spoiler alert"; "let's be honest"; "let's face it"; "something tells me"; "call me skeptical"; "(yes, really)"; "(sigh)" | Gizmodo Meta glasses subscription article (Jul 2026) — "brace yourself" and "something tells me" break the journalistic register to editorialize via direct reader address. Distinct from loaded_language (vocabulary choice) and rhetorical_question (interrogative form) |
 | **Financial Reassurance** | Editorial device in financial journalism where negative operational news is immediately reframed as a positive market/investor signal. The journalist — not a quoted source — converts bad news into a buying or holding signal. Distinct from corporate_reassurance_undercut (which catches PR damage control language the journalist then undermines) because here the reassuring voice is the journalist's own editorial framing | "could soothe/ease/allay concerns/fears/worries"; "despite [negative], [positive market signal]" (despite-pivot); "investors/analysts [took comfort/shrugged off/looked past]"; "easing/soothing/allaying fears/concerns" (participial headline-style) | Barron's Meta AI Agents Disappointment (Jul 3, 2026) — "That could soothe concerns that Meta is preparing to become the first of the big U.S. tech companies to cut back on its AI spending." Converts Zuckerberg's admission of AI agent disappointment + Alexandr Wang's promotional X post into investor comfort, without sourcing any analyst. The reassurance frame is entirely editorial, not attributed to any market participant |
 | **Cross-Publication Import** | Editorial device that imports another outlet's characterization as settled fact, laundering a contested editorial framing into common knowledge by attributing it to a vague collective of prior coverage rather than evaluating it independently. The framing gains authority from apparent consensus rather than evidence | "several/multiple/other/previous reports have described/depicted/characterized"; "widely/commonly described/depicted as"; "what [publication/reporters/critics] have called" | TechCrunch Zuckerberg AI agents town hall (Jul 2, 2026) — "Several reports have depicted the overhaul as a soul-crushing gulag" imports Wired's loaded "gulag" characterization as settled consensus rather than one outlet's editorial framing. Distinct from self_referential_investigation (which cites the same publication's own reporting) and anonymous_authority (which cites unnamed individual sources rather than a collective media characterization) |
+| **Competitive Positioning** | Explicitly elevating a competitor over the subject entity, using comparative language or benefit framing that positions a rival as the beneficiary of the subject's failure. Distinct from simple comparative sentiment (which is a sentiment dimension measuring favorable/unfavorable comparisons) because competitive positioning is a rhetorical device where the author recommends or implies a competitor is preferable | "good news for [competitor]"; "buy from a more reputable company"; "[competitor] has always/would never [do bad thing]"; "another reason to [buy/choose/switch to] [competitor]" | 9to5Mac Meta Conversation Focus paywall (Jul 1, 2026) — "All this may be good news for the upcoming Apple Glasses — it helps provide another reason for consumers to buy their AI-powered glasses from a more reputable company." Apple is explicitly positioned as the moral and strategic beneficiary of Meta's paywall decision. The author then adds "The company has always said that it never seeks a return on investment for accessibility features" — framing Apple as principled on the exact dimension Meta fails. Distinct from juxtaposition (side-by-side fact contrast) and scale_magnitude (numerical amplification) |
 
 #### Structural Devices (Post-Pass)
 
@@ -434,7 +435,7 @@ The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overa
 | Trigger | Threshold |
 |---|---|
 | Raw composite tone | ≥ 0.0 (non-negative) |
-| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, editorial_aside, failure_precedent, editorial_deflation)) |
+| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, competitive_positioning, consumer_ownership, editorial_aside, failure_precedent, editorial_deflation, slippery_slope)) |
 | Agency attribution | < −0.3 (passive/target of scrutiny) |
 
 **Blend:** 10% raw + 90% framing-derived estimate. The framing estimate is computed from agency, emotional intensity, and adversarial device density.
@@ -533,6 +534,28 @@ Short opinion pieces (typically <500 words) where the editorial voice is sarcast
 
 **Discovery article:** Gizmodo Meta glasses subscription article (Jul 1, 2026) — VADER scored +0.65 on a clearly negative article with "People hate" (assumed consensus), "brace yourself", "let's be honest", "something tells me" (editorial asides), and "hate", "grievances", "slapping", "paywall" (emotional language). Agency = 0.0.
 
+#### Path I: Direct Consumer Critique
+
+Short opinion/analysis pieces where the author directly condemns a corporate decision using strong moral/consumer-rights language ("unacceptable", "no possible justification", "retroactively applied a paywall") and the company is the active agent (positive agency). VADER scores these as strongly positive because embedded product descriptions generate positive lexical signal and the company IS actively doing things (positive verbs). But the editorial stance is unambiguously critical.
+
+Key distinguishing signals: high emotional intensity from consumer-rights vocabulary, strong negative comparative framing (competitor explicitly elevated), and multiple consumer-adversarial framing devices (consumer_ownership, competitive_positioning, slippery_slope).
+
+| Trigger | Threshold |
+|---|---|
+| Raw tone | ≥ 0.3 (VADER inflated positive) |
+| Adversarial device count | ≥ 5 |
+| Consumer-specific devices | ≥ 2 (consumer_ownership, competitive_positioning, slippery_slope, usage_dismissal_undercut) |
+| Emotional language intensity | ≥ 0.5 |
+| Agency attribution | > 0 (positive — company is the active agent) |
+
+**Blend:** 20% raw + 80% target. Base target = −(0.25 + 0.15 × emotional_intensity), amplified by −0.10 if competitive_positioning count ≥ 1. Clamped to [−0.6, 0.0].
+
+**Key distinction from Path H (sarcastic):** Path H requires editorial asides (sarcastic register-breaking) — the author is sardonic and addresses the reader directly. Path I fires when the author is straightforwardly critical (no sarcasm) with high moral/consumer-rights language density and explicit competitor elevation. Path I also requires positive agency (the company is doing something bad), whereas Path H only needs neutral agency.
+
+**Key distinction from Path A (adversarial framing):** Path A requires negative agency (agency < −0.3), typically used for long investigative pieces where the company is passively positioned as a systemic villain. Path I captures short opinion pieces where the company is the active agent but the editorial verdict is condemnatory.
+
+**Discovery article:** 9to5Mac Meta Conversation Focus paywall (Jul 1, 2026) — VADER scored +0.67. Agency = +0.67. Emotional intensity = 0.78. Adversarial count = 6 (consumer_ownership×2, competitive_positioning×2, slippery_slope×1, loaded_language×1). "Doubly unacceptable", "no possible justification", "a more reputable company".
+
 #### Path G: VADER Long-Text Normalization
 
 Not a framing correction — this fixes a fundamental VADER math problem. VADER's compound score uses `sum / sqrt(sum² + alpha)` where `alpha=15`, tuned for tweet-length texts. For long articles (10+ sentences), this normalization amplifies small biases.
@@ -568,6 +591,7 @@ The paths are evaluated in code order: **A → B → C → E → D → F → H**
 | **F** | Contradictory review | ≥ 0.3 | [−0.4, 0.0) | ≥4 adversarial + ≥0.5 EI | 20/80 (raw/review) |
 | **G** | Long-text normalization | any | any | divergence > 0.5, ≥10 sentences | 30/70 (compound/sentence) |
 | **H** | Sarcastic editorial | ≥ 0.3 | ≥ −0.1 | ≥2 editorial_aside + ≥4 adversarial + ≥0.5 EI | 15/85 (raw/target) |
+| **I** | Direct consumer critique | ≥ 0.3 | > 0 | ≥5 adversarial + ≥2 consumer devices + ≥0.5 EI | 20/80 (raw/target) |
 
 ### 9.3 Headline Framing Override
 

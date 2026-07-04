@@ -4840,6 +4840,24 @@ _SLIPPERY_SLOPE_PATTERNS: list[re.Pattern] = [
         r"\b(?:more|additional|further|future|other|broader)\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # "implying that other [features/services] may be [restricted]" —
+    # editorial interpretation of corporate hedging as future-threat signal.
+    # Unlike the above patterns which detect the author's own extrapolation,
+    # this detects when the author interprets a corporate qualifier
+    # ("currently") as evidence of expansion plans.
+    # Discovered in 9to5Mac Conversation Focus analysis (Jul 2026):
+    # "implying that other AI features may be rate-limited in future"
+    re.compile(
+        r"\b(?:implying|suggesting|hinting|signaling|indicating)\s+"
+        r"(?:that )?(?:other|more|additional|further|future)\s+"
+        r"(?:\w+\s+){0,3}"
+        r"(?:may|might|could|will|would)\s+"
+        r"(?:also |soon |eventually |likewise )?"
+        r"(?:be |get |become )?"
+        r"(?:rate[- ]limited|paywalled|restricted|limited|capped|throttled|"
+        r"locked|gated|charged|monetized)\b",
+        re.IGNORECASE,
+    ),
 ]
 _DEVICE_PATTERNS["slippery_slope"] = _SLIPPERY_SLOPE_PATTERNS
 
@@ -4857,6 +4875,18 @@ _CONSUMER_OWNERSHIP_PATTERNS: list[re.Pattern] = [
         r"(?:you(?:'ve| have) already|they(?:'ve| have) already|"
         r"that(?:'s| is| was) already|already)\s+"
         r"(?:paid for|purchased|bought|own(?:ed)?)\b",
+        re.IGNORECASE,
+    ),
+    # Company-voice variant: "product it already sold to customers"
+    # The article frames the company as having sold the product, inverting
+    # the ownership voice while making the same consumer-rights argument.
+    # Discovered in 9to5Mac Conversation Focus analysis (Jul 2026).
+    re.compile(
+        r"\b(?:hardware|device|product|gadget|equipment|glasses|headset|phone)\s+"
+        r"(?:it|they|the company|Meta|Apple|Google|Amazon)\s+"
+        r"(?:already |has already |have already )?"
+        r"(?:sold|shipped|delivered|marketed)\s+"
+        r"(?:to )?(?:customers?|consumers?|users?|buyers?|owners?|people)\b",
         re.IGNORECASE,
     ),
     # "features [their/your/the] [device/hardware] already [supports/has]"
@@ -4879,14 +4909,28 @@ _CONSUMER_OWNERSHIP_PATTERNS: list[re.Pattern] = [
         r"upgrade|billing)\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # "uses on-device processing" variant — same concept, different phrasing
+    # Discovered in 9to5Mac Conversation Focus analysis (Jul 2026).
+    re.compile(
+        r"\b(?:uses?|leverages?|relies? on|employs?)\s+"
+        r"(?:on[- ]device|local|offline|edge)\s+"
+        r"(?:processing|computation|inference|AI|model)\b"
+        r".{0,200}?"
+        r"\b(?:pay|subscription|fee|charge|monetiz|paywall|premium|"
+        r"upgrade|billing)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
     # Reverse order: subscription/pay near "on-device/local/on the hardware"
     re.compile(
         r"\b(?:pay|subscription|fee|charge|paywall|premium)\b"
         r".{0,200}?"
         r"\b(?:runs?\s+(?:entirely|completely|fully)\s+on|"
         r"on[- ]device|local(?:ly)?|"
+        r"(?:works?|runs?|operates?|functions?)\s+(?:entirely\s+)?on\s+(?:the|your|its)\s+"
+        r"(?:device|hardware|glasses|phone)|"
         r"doesn'?t (?:require|need|use)\s+(?:the |an )?"
-        r"(?:internet|cloud|server|connection))\b",
+        r"(?:internet|cloud|server|connection)|"
+        r"no use of\s+.{0,30}?\bservers?\b)\b",
         re.IGNORECASE | re.DOTALL,
     ),
 ]
@@ -4976,6 +5020,59 @@ _FINANCIAL_REASSURANCE_PATTERNS: list[re.Pattern] = [
 ]
 
 _DEVICE_PATTERNS["financial_reassurance"] = _FINANCIAL_REASSURANCE_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Competitive positioning: editorial device that explicitly elevates
+# a competitor over the subject entity, using comparative language like
+# "a more reputable company" or "consumers should buy from [competitor]
+# instead."  Distinct from simple comparative framing (which is a
+# sentiment dimension) — this is a rhetorical device where the author
+# recommends or implies a competitor is preferable.
+#
+# Discovered in 9to5Mac Conversation Focus analysis (Jul 2026):
+# "buy their AI-powered glasses from a more reputable company" and
+# "good news for the upcoming Apple Glasses" explicitly position Apple
+# as the beneficiary of Meta's failure.  None of the existing framing
+# device types captured this competitor-elevation pattern.
+# ---------------------------------------------------------------------------
+_COMPETITIVE_POSITIONING_PATTERNS: list[re.Pattern] = [
+    # "good news for [competitor]" — competitor-benefit framing
+    re.compile(
+        r"\b(?:good|great|welcome|positive)\s+news\s+"
+        r"for\s+(?:the\s+)?(?:upcoming\s+)?"
+        r"(?:Apple|Google|Samsung|Microsoft|Amazon|"
+        r"competitors?|rival(?:s|ing)?)\b",
+        re.IGNORECASE,
+    ),
+    # "buy from a more reputable/trustworthy company"
+    re.compile(
+        r"\b(?:buy|purchase|choose|switch to|opt for|prefer)\s+"
+        r"(?:their|your|the)?\s*"
+        r"(?:\w+\s+){0,3}?"
+        r"from\s+(?:a\s+)?(?:more\s+)?"
+        r"(?:reputable|trustworthy|responsible|reliable|ethical|"
+        r"consumer[- ]friendly|privacy[- ]focused)\s+"
+        r"(?:company|brand|maker|manufacturer|competitor|alternative)\b",
+        re.IGNORECASE,
+    ),
+    # "[competitor] would never / doesn't [do bad thing]"
+    re.compile(
+        r"\b(?:Apple|Google|Samsung|Microsoft)\s+"
+        r"(?:has always|would never|doesn'?t|does not|has never|"
+        r"never seeks?|has committed|is committed)\b",
+        re.IGNORECASE,
+    ),
+    # "another reason to [buy/choose/switch to] [competitor]"
+    re.compile(
+        r"\b(?:another|one more|yet another|additional)\s+"
+        r"reason\s+(?:to |for )"
+        r"(?:consumers?|users?|people|buyers?|customers?)\s+to\s+"
+        r"(?:buy|choose|switch|prefer|pick|opt for|go with)\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["competitive_positioning"] = _COMPETITIVE_POSITIONING_PATTERNS
 
 
 # --- Delayed defense ---
@@ -5077,17 +5174,17 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 52 pattern-matched device types plus 6 structural
-    post-pass types (58 total).
+    Scans for 53 pattern-matched device types plus 6 structural
+    post-pass types (59 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (52): analogy_metaphor, anonymous_authority,
+    Pattern-matched (53): analogy_metaphor, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
-    ceo_personalization,
+    ceo_personalization, competitive_positioning,
     commodification_metaphor, confession_framing,
     consumer_ownership,
     corporate_reassurance_undercut, cross_publication_import,

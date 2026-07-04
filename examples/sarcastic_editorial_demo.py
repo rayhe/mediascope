@@ -169,6 +169,7 @@ def analyze_with_path_h_details(
         "self_referential_investigation", "kicker_framing",
         "military_techno_optimism", "assumed_consensus", "editorial_aside",
         "failure_precedent", "editorial_deflation",
+        "competitive_positioning", "consumer_ownership", "slippery_slope",
     }
 
     print(f"\n{'=' * 70}")
