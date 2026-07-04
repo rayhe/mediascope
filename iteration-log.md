@@ -3,6 +3,38 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-04 06:00 PT — Type A: Article Deep Dive — MIT TR Subquadratic/SubQ LLM Bottleneck
+
+**Article:** "A startup claims it broke through a bottleneck that's holding back LLMs" (MIT Technology Review, Jun 19, 2026)
+**Source:** `https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/`
+
+### Improvements
+
+**1. Entity detection: "context windows" false positive (BUG FIX)**
+- Added `_HOMOGRAPH_LOOKBEHIND_FILTERS` mechanism to `entities.py`
+- "context windows" / "attention windows" / "sliding windows" no longer match Microsoft cluster
+- Complements existing `_HOMOGRAPH_VERB_FILTERS` (lookahead for "wired")
+- Real "Windows" OS references still detected correctly
+- 4 new tests
+
+**2. New framing device: `scandal_comparison` (67th device type)**
+- Detects notorious fraud/scandal names used as pejorative labels
+- 3 regex patterns: domain-prefix ("AI Theranos"), "the X of Y" ("the Enron of AI"), "the next/another X"
+- 12 scandal names: Theranos, Enron, Madoff, Solyndra, FTX, WeWork, Wirecard, Fyre Festival, Juicero, Nikola, Lordstown
+- Distinct from precedent_analogy and failure_precedent
+- 3 new tests + all docs updated
+
+**3. Identified gaps (not fixed)**
+- Quantitative comparative framing: `comparative_framing` returns 0.0 on numeric comparisons ("56× faster", "$8 vs $2,600")
+- Macro-structural framing arc: skepticism→validation→residual-doubt arc is a document-level device beyond pattern matching
+
+### Stats
+- Tests: 1343 total (1335 passed, 0 failed, 2 xfailed) — up from 1336
+- Framing devices: 67 types (61 pattern-matched + 6 structural)
+- Patterns: 381 total regex patterns
+- Commit: `94fffee` — pushed to GitHub
+
+---
 ## 2026-07-04 05:00 PT — Type D: Toolkit Quality & Documentation — Fix 3 Pre-Existing Test Failures + Documentary Source Docs
 
 ### Focus
