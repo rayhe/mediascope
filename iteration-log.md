@@ -12557,3 +12557,67 @@ All three profiled as part of the batch announcement. Includes analytical signif
 - Tests: 1359 passed, 0 failed
 - Commit: `b5b7755` — pushed to `main`
 
+
+## 2026-07-04 14:00 PT — Type B: Journalist/Publication Research — Tiffany Hsu Full Career Expansion (3→6 entries)
+
+### Focus
+Deep career expansion of NYT misinformation reporter Tiffany Hsu, whose beat (disinformation, AI-generated content, deepfakes, content moderation) is ground zero for Meta coverage analysis. Previously had 3 thin career entries with minimal sourcing; now has 6 fully sourced entries with detailed analytical notes.
+
+### What Changed
+
+**1. RICHMOND TIMES-DISPATCH INTERN (NEW — EARLIEST CAREER ENTRY)**
+Added 2006 summer internship at Richmond Times-Dispatch (metro reporting), during her UC Berkeley undergrad. Source: chatsheet.com LinkedIn-derived profile. Adds one new migration to the tracker (RTD → LA Times).
+
+**2. LA TIMES ENTRY EXPANDED (MOST SIGNIFICANT IMPROVEMENT)**
+Previous: single generic entry "Multiple beats: California economy reporter, retail business reporter, fast food/restaurants reporter. Long tenure at LA Times before NYT move."
+Now: Full beat progression documented — general assignment/business blogger → retail → fast food/restaurants → alternative energy → California economy (labor, employment, trade). Includes SABEW "Best in Business" Small Business prize (2014) with Chris Kirkham (verified via sabew.org official records). Age at Knight-Bagehot selection (29) confirmed. Ellen Pollock hiring quote included. Source: Knight-Bagehot fellowship announcement (talkingbiznews.com), SABEW 2014 honoree list (sabew.org).
+
+**3. COLUMBIA KNIGHT-BAGEHOT FELLOWSHIP + MBA (NEW)**
+Entirely new entry documenting dual-degree path: Knight-Bagehot Fellow in Economics and Business Journalism (2015-2016 academic year, one of 10 selected), MS Journalism from Columbia Graduate School of Journalism (2016), MBA from Columbia Business School (2017). Full tuition + $60K stipend. Documented that she joined NYT "two weeks" after completing MBA. Source: Columbia J-School KB fellows page, talkingbiznews.com announcement.
+
+**4. NYT TENURE SPLIT FROM 2 → 3 ENTRIES**
+Previous: 2 entries (media 2017-2022, misinformation 2022-present).
+Now: 3 entries reflecting actual career progression:
+- Business Day breaking news (Jul 2017 – Jun 2019): hired by Ellen Pollock
+- Media/advertising desk (Jul 2019 – May 2022): covered ad industry, J&J, Subway, computer-generated influencers; won Mirror Award with Sheera Frenkel while still on media desk
+- Misinformation desk (Jun 2022 – present): dedicated misinfo team with Stuart Thompson and Steven Lee Myers
+
+**5. AWARDS FULLY DOCUMENTED**
+- SABEW "Best in Business" Small Business (2014, with Chris Kirkham, LA Times) — verified via sabew.org
+- Mirror Award (2022, with Sheera Frenkel, Syracuse University S.I. Newhouse School) — verified via nytco.com
+- SABEW Honorable Mention, Technology (2022, Twitter Takeover team: Ryan Mac, Mike Isaac, David Streitfeld, Kellen Browning, Kate Conger, Tiffany Hsu) — verified via sabew.org and nytco.com
+
+**6. KEY ARTICLES & META COVERAGE ANALYSIS DOCUMENTED**
+Detailed key articles (2023-2026):
+- "Disinformation Researchers Raise Alarms About A.I. Chatbots" (Feb 2023, with Stuart Thompson)
+- "Elections and Disinformation Are Colliding Like Never Before in 2024" (Jan 2024)
+- "How Russia, China and Iran Are Interfering in the Presidential Election" (2024, with Sheera Frenkel + Steven Lee Myers)
+- "A.I. Is Making Death Threats Way More Realistic" (Nov 2025)
+- Q&A on AI-generated influencers (Apr 2026, Charlie Warzel's Galaxy Brain/The Atlantic)
+- 5-byline investigation on Meta/OpenAI/Google AI training data (with Metz, Kang, Frenkel, Grant)
+Frequent co-authors mapped: Sheera Frenkel (surveillance, foreign influence), Stuart Thompson (elections, deepfakes), Steven Lee Myers (influence operations, China), Cade Metz (AI training data), Cecilia Kang (regulation).
+
+### Analytical Significance
+Tiffany Hsu's profile is analytically unique in MediaScope for three reasons:
+1. **Beat alignment:** Her exact beat (misinformation, AI-generated content, content moderation, deepfakes) maps perfectly onto the issues MediaScope tracks. Every Meta content moderation decision is filtered through her reporting.
+2. **Knight-Bagehot/MBA background:** Unusual for a misinformation reporter — gives her coverage a business-analysis dimension (understanding platform incentives, ad revenue vs. safety tradeoffs) that pure policy or activist-journalist backgrounds lack.
+3. **Co-author network:** Her frequent co-authors (Frenkel, Thompson, Myers, Metz, Kang) form the NYT's core Meta/AI coverage cluster. Tracking sentiment shifts in her co-authored work vs. solo work could reveal whether editorial desk culture or individual framing dominates.
+
+### Sources
+- nytco.com: https://nytco.com/press/tiffany-hsu-and-ben-casselman-join-business-day/ (2017 hire)
+- nytco.com: https://nytco.com/press/a-new-beat-for-tiffany-hsu/ (2022 misinfo beat)
+- nytco.com: https://nytco.com/press/mirror-awards-for-dean-baquet-and-misinformation-coverage/ (Mirror Award)
+- nytco.com: https://nytco.com/press/honors-from-sabew/ (SABEW 2022 HM)
+- sabew.org: https://sabew.org/2014-best-in-business-honorees/ (SABEW 2014 Small Business)
+- Columbia J-School: https://journalism.columbia.edu/kb (Knight-Bagehot fellows list)
+- talkingbiznews.com: https://talkingbiznews.com/biz-news-help/columbia-names-2015-16-knight-bagehot-fellows/ (KB fellowship)
+- talkingbiznews.com: https://talkingbiznews.com/biz-news-help/ny-times-biz-news-desk-taps-hsu-to-cover-misinformation/ (misinfo beat)
+- chatsheet.com: https://chatsheet.com/companies/the-new-york-times/people/tiffany-hsu-c6c64152-aa48-45e8-8a86-1df028027e32 (LinkedIn-derived career data)
+- Techmeme: https://www.techmeme.com/ (AI death threats article, Galaxy Brain Q&A)
+
+### Stats
+- Journalists: 127 (unchanged)
+- Multi-pub journalists: 126 (unchanged)
+- Auto-detected migrations: 408 (was 407, +1 from RTD→LA Times)
+- Tests: 1359 passed, 0 failed
+- Commit: `05f7c53` — pushed to `main`
