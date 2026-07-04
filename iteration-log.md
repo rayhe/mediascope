@@ -3,6 +3,41 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-04 04:00 PT — Type C: Ownership & Funding Deep Dive — NYT Litigation MDL Docket + Anderson v. Microsoft
+
+### Focus
+Deep expansion of NYT v. OpenAI/Microsoft litigation profile with 8 new MDL docket entries from CourtListener (Apr–Jun 2026), plus the Anderson v. Microsoft shareholder derivative suit. Updated Wired/Condé Nast labor conflict with counter-NLRB charge.
+
+### What Changed
+
+**profiles/nytimes.yaml:**
+- Added 8 MDL docket entries from CourtListener (Dkt. 1488, 1492, 1501, 1532, 1533, 1546, 1584, 1587):
+  - Monaco deposition criticism + sanctions threat from Magistrate Judge Netburn
+  - Gracenote stay pending SJ motions (first signal SJ briefing is imminent)
+  - Britannica stay pending SJ (parallel signal confirming SJ timeline)
+  - $100/day sanctions for withheld Musk v. Altman deposition exhibits
+  - Daily News/Chicago Tribune/Intercept intervention + amicus filings
+- Updated procedural status: SJ briefing imminent, class certification months away
+- Expanded Anderson v. Microsoft shareholder derivative suit with full detail: named defendants (Nadella, Hood, Smith, board members), Section 14(a) proxy fraud claims, $224M Nadella compensation figure, "copyright shareholder derivative" theory as novel legal instrument
+- Merged `microsoft_securities_fraud` conflict entry (severity elevated 2→3) incorporating both the securities class action and the derivative suit
+
+**profiles/wired.yaml:**
+- Updated Lahut NLRB charge status to Jul 2026 (still pending)
+- Added Condé Nast counter-NLRB charge against NewsGuild (filed ~Feb 2026, alleging bad-faith bargaining by union)
+- Added 2 new source URLs (FashionUnited, HR Grapevine)
+
+### Sources
+- CourtListener MDL 3047 docket: https://www.courtlistener.com/docket/68109440/in-re-new-york-times-company-et-al-v-microsoft-corporation-et-al/
+- Substack analysis (Anderson derivative): https://copyrightlately.com/anderson-v-microsoft-derivative-suit/
+- FashionUnited (Condé Nast labor): https://fashionunited.com/news/business/conde-nast-nlrb-counter-charge/
+- HR Grapevine (Lahut update): https://hrgrapevine.com/content/article/conde-nast-nlrb-lahut/
+
+### Key Stats
+- Tests: 1336 (unchanged — 1325 passed, 3 pre-existing failures, 2 xfailed)
+- Commit: `e6646ac`
+- No regressions introduced
+
+---
 ## 2026-07-04 03:00 PT — Type B: Journalist/Publication Research — Caiwei Chen Profile Expansion + Greg Williams Departure
 
 ### Focus
