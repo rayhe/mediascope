@@ -858,7 +858,7 @@ The following table documents all 60 entity clusters shipped with MediaScope, or
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
-| **Meta** | 73 | Meta, Meta Platforms, Facebook, Instagram, WhatsApp, Threads (+67 more) |
+| **Meta** | 70 | Meta, Meta Platforms, Facebook, Instagram, WhatsApp, Threads (+64 more) |
 | **Google** | 11 | Alphabet, Google, YouTube, DeepMind, Waymo, Sundar Pichai (+5 more) |
 | **Apple** | 11 | Apple, iPhone, iPad, Tim Cook, John Ternus, Apple Intelligence (+5 more) |
 | **Amazon** | 9 | Amazon, AWS, Alexa, Jeff Bezos, Andy Jassy, Amazon Web Services (+3 more) |
@@ -937,7 +937,7 @@ The following table documents all 60 entity clusters shipped with MediaScope, or
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
-| **Academic/Research** | 35 | NYU, New York University, Northeastern University, Northeastern, Stanford University, Stanford (+30 more) |
+| **Academic/Research** | 41 | NYU, New York University, Northeastern University, Northeastern, Stanford University, Stanford (+35 more) |
 | **Research Centers** | 12 | Cybersafety Research Center, Center for Countering Digital Hate, CCDH, Center for Humane Technology, Internet Watch Foundation, IWF (+6 more) |
 | **Child Safety Researchers** | 8 | Arturo Béjar, Béjar, Lexie Matsumoto, Matsumoto, Laura Edelson, Edelson (+2 more) |
 | **Education/Advocacy** | 5 | National PTA, National Education Association, NEA, American Federation of Teachers, AFT |

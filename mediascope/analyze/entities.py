@@ -76,14 +76,19 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Nick Clegg", "Clegg",
             "Dina Powell McCormick",
             "Arena", "Francis Brennan",
-            "Virtue AI", "Bo Li", "Dawn Song", "Sanmi Koyejo",
+            # Virtue AI acqui-hire principals — listed here for reference.
+            # Their names are detected through Academic/Research cluster
+            # because they are primarily university professors (UIUC, UC
+            # Berkeley, Stanford).  The "Virtue AI" alias itself still
+            # matches this cluster.
+            "Virtue AI",
             "FAIR", "Fundamental AI Research",
             "Ime Archibong", "Archibong",
             "the social media giant", "the social media company",
             "Meta One", "Conversation Focus",
             "Alexandr Wang",
         ],
-        "regex": r"(?<!\w)(Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport))|Meta Platforms|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|(?-i:Zuck)(?=\s+(?:is|was|has|had|wants?|thinks?|said|says|will|would|could|should|might|may|does|did|isn|didn|can|won|cannot|also|personally|himself|recently|even|just|too|and|,|'s|'))|Meta AI|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Meta Superintelligence Labs|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark|Meta Fury|(?-i:Fury)(?=\s+(?:glasses|are|is|was|cost|have|included|and|AI|smart))|Adventurer|Starfire|Meta Ray-Ban Display|Llama 4|(?:Meta'?s? )(?-i:Llama)|(?-i:Llama)(?=\s+(?:model|AI|language|LLM|is|was|and|,))|Joel Kaplan|Kaplan|Sheryl Sandberg|Sandberg|Nick Clegg|Clegg|Dina Powell McCormick|(?-i:Arena)(?=\s+(?:app|prediction|market|is|was|would|will|being|the))|Francis Brennan|Virtue AI|Bo Li|Dawn Song|Sanmi Koyejo|Fundamental AI Research|(?-i:FAIR)(?=\s+(?:Lab|lab|research|team|group))|Ime Archibong|Archibong|the social media (?:giant|company)|Meta One|Conversation Focus|Alexandr Wang)(?!\w)",
+        "regex": r"(?<!\w)(Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport))|Meta Platforms|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|(?-i:Zuck)(?=\s+(?:is|was|has|had|wants?|thinks?|said|says|will|would|could|should|might|may|does|did|isn|didn|can|won|cannot|also|personally|himself|recently|even|just|too|and|,|'s|'))|Meta AI|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Meta Superintelligence Labs|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark|Meta Fury|(?-i:Fury)(?=\s+(?:glasses|are|is|was|cost|have|included|and|AI|smart))|Adventurer|Starfire|Meta Ray-Ban Display|Llama 4|(?:Meta'?s? )(?-i:Llama)|(?-i:Llama)(?=\s+(?:model|AI|language|LLM|is|was|and|,))|Joel Kaplan|Kaplan|Sheryl Sandberg|Sandberg|Nick Clegg|Clegg|Dina Powell McCormick|(?-i:Arena)(?=\s+(?:app|prediction|market|is|was|would|will|being|the))|Francis Brennan|Virtue AI|Fundamental AI Research|(?-i:FAIR)(?=\s+(?:Lab|lab|research|team|group))|Ime Archibong|Archibong|the social media (?:giant|company)|Meta One|Conversation Focus|Alexandr Wang)(?!\w)",
     },
     "Google": {
         "aliases": [
@@ -551,6 +556,13 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Cell",
             "IEEE",
             "ACM",
+            # Virtue AI co-founders — primarily academics, secondarily
+            # associated with Meta through the acqui-hire.
+            "Bo Li", "Dawn Song", "Sanmi Koyejo",
+            # Universities that appear as source affiliations
+            "Duke University",
+            "University of Wisconsin",
+            "University of Illinois",
         ],
         "regex": r"(?<!\w)((?-i:NYU)|New York University"
                  r"|Northeastern(?:\s+University)?"
@@ -565,8 +577,13 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|University of Michigan"
                  r"|Carnegie Mellon|(?-i:CMU)"
                  r"|Cornell(?:\s+(?:University|Law\s+School))?"
-                 # Academic journals
-                 r"|Nature(?:\s+(?:Neuroscience|Medicine|Machine"
+                 r"|Duke University"
+                 r"|University of Wisconsin(?:\s+Madison)?"
+                 r"|University of Illinois(?:\s+Urbana-Champaign)?"
+                 r"|Bo Li|Dawn Song|Sanmi Koyejo"
+                 # Academic journals — case-sensitive: "nature" (common
+                 # noun) must not match the journal Nature.
+                 r"|(?-i:Nature)(?:\s+(?:Neuroscience|Medicine|Machine"
                  r"\s+Intelligence|Communications))?"
                  r"|(?-i:Science)(?=\s+(?:journal|paper|published|study))"
                  r"|(?-i:PNAS)"

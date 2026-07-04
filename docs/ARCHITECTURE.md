@@ -407,7 +407,7 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # Annotated real-article analyses
-├── tests/                       # 1316 tests across 51 test files (all from real articles)
+├── tests/                       # 1336 tests across 52 test files (all from real articles)
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
@@ -447,6 +447,7 @@ mediascope/
 │   ├── test_hackathon_revolt.py # Wired hackathon revolt: entity, sentiment, framing, topic tests
 │   ├── test_law_enforcement_outsourced.py # Law enforcement outsourced intensity: ICAC officer/agent/investigator loaded quotes, testimony-outsourced patterns, policy advocate/watchdog critique, entity detection for ICAC/Public Citizen/Report Act/CyberTipline
 │   ├── test_mittr_anthropic_feud.py # MIT Tech Review Anthropic feud article: entity detection, framing, topic classification
+│   ├── test_mittr_meta_hack_ai_security.py # MIT TR Meta hack AI security: Bo Li/Dawn Song/Sanmi Koyejo academic entity fix, case-sensitive Nature guard, education analogy suppression, AI agent security topics
 │   ├── test_postpass_activation.py # Structural post-pass framing activation: analogy stacking, speculative framing thresholds
 │   ├── test_precedent_analogy.py # Precedent analogy framing: opioid/tobacco/asbestos crisis comparisons, era-based villainy import
 │   ├── test_resistance_patterns.py # MIT TR Resistance article patterns: catastrophizing (threat to humanity), alarm/anxiety idioms, intensity/polemical/violence loaded language, poll-based social proof, stalled-dollar and workforce-percentage scale magnitude

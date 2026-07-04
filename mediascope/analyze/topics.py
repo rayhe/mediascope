@@ -489,15 +489,54 @@ def classify_topic(
 
     scores: list[TopicScore] = []
 
+    # ── Analogy-context suppression for "education" topic ──
+    # Education keywords like "student", "teacher", "elementary school"
+    # frequently appear inside analogies/metaphors (e.g. "like some
+    # elementary school student who just wants to please the teacher").
+    # Build a set of education keyword matches that fall inside analogy
+    # context so they can be excluded.
+    _ANALOGY_MARKER = re.compile(
+        r"\b(?:like\s+(?:a|an|some|the)|as\s+(?:a|an|if|though)|"
+        r"almost\s+like|akin\s+to|similar\s+to|compared?\s+to|"
+        r"reminiscent\s+of|equivalent\s+of|resembl(?:es?|ing))\b",
+        re.IGNORECASE,
+    )
+    _metaphorical_edu_spans: set[tuple[int, int]] = set()
+    for m in _ANALOGY_MARKER.finditer(text):
+        # The analogy window: from the marker to end of sentence (or +200 chars)
+        _window_start = m.start()
+        _window_end = min(len(text), m.end() + 200)
+        # Find sentence end within window
+        _sent_end = text.find(".", m.end())
+        if _sent_end != -1 and _sent_end < _window_end:
+            _window_end = _sent_end
+        _metaphorical_edu_spans.add((_window_start, _window_end))
+
     for topic, patterns in topic_patterns.items():
         matched_keywords: list[str] = []
         total_matches = 0
 
         for pattern, keyword in patterns:
-            matches = pattern.findall(text)
-            if matches:
-                matched_keywords.append(keyword)
-                total_matches += len(matches)
+            hits = list(pattern.finditer(text))
+            if hits:
+                # For the education topic, discount matches inside analogy
+                # contexts to avoid false positives from metaphorical
+                # language (e.g. "like an elementary school student").
+                if topic == "education" and _metaphorical_edu_spans:
+                    literal_hits = [
+                        h for h in hits
+                        if not any(
+                            s <= h.start() <= e
+                            for s, e in _metaphorical_edu_spans
+                        )
+                    ]
+                    if not literal_hits:
+                        continue  # all matches are metaphorical
+                    matched_keywords.append(keyword)
+                    total_matches += len(literal_hits)
+                else:
+                    matched_keywords.append(keyword)
+                    total_matches += len(hits)
 
         if not matched_keywords:
             continue
