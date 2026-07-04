@@ -12390,3 +12390,33 @@ Resolve two long-standing xfailed tests and close a known gap in framing detecti
 ### Known gaps closed
 - ✅ "bare 'a rare admission' confession pattern" (was in MEMORY.md known gaps list)
 - ✅ Compound publication source extraction xfails (Business Insider, Daily Beast)
+
+---
+
+## 2026-07-04 10:00 PT — Type D: Toolkit Quality & Documentation
+
+### Focus
+Documentation count drift audit + structural guard hardening.
+
+### Changes
+
+**Commit 1: `2105c5a`** — Fixed systematic documentation count drift across 6 files:
+1. Correction paths 8→9 (A-H→A-I): Path I (Direct Consumer Critique) existed in code and METHODOLOGY.md but 12 references across docs/tests/examples still said "8 paths (A-H)". Fixed in METHODOLOGY.md, ARCHITECTURE.md, README.md, test_structural_consistency.py, framing_correction_demo.py, sarcastic_editorial_demo.py.
+2. Duplicate `financial_reassurance` removed from METHODOLOGY.md Structural post-pass table (was correctly in Extended table only).
+3. Framing tier counts 66/10/50/6→67/10/51/6 in README.md and ARCHITECTURE.md test descriptions.
+4. Stale test count in sarcastic_editorial_demo.py (1253→1353).
+
+**Commit 2: `0bfff50`** — Phantom structural type guard + count header fixes:
+1. Added `test_structural_table_has_no_phantom_types` to `test_structural_consistency.py` — asserts no device type appears in both Extended and Structural tables in METHODOLOGY.md, preventing the exact duplication bug fixed in commit 1.
+2. Updated README.md per-file count for test_structural_consistency.py: 78→79.
+3. Updated total test count headers in README.md and ARCHITECTURE.md: 1359→1360.
+
+### Stats
+- Tests: 1354 passed, 0 failed (80 collected in test_structural_consistency.py via 79 def + 1 parametrize expansion)
+- Test files: 53
+- Correction paths: 9 (A-I)
+- Framing device types: 67 (61 pattern-matched + 6 structural)
+- Regex patterns: 382
+
+### Commits
+`2105c5a`, `0bfff50` — both pushed to GitHub

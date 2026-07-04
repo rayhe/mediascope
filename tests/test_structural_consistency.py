@@ -373,11 +373,68 @@ class TestTestFileListingConsistency:
             total += len(re.findall(r"^\s+def test_", f.read_text(), re.MULTILINE))
         return total
 
+    @staticmethod
+    def _count_top_level_items(text: str) -> int:
+        """Count top-level comma-separated items in a parametrize list.
+
+        Tracks parenthesis/bracket depth so commas inside tuples like
+        ``("phrase", True)`` are not counted as item separators.  This
+        fixes a bug where naive ``str.split(",")`` overcounted tuple-
+        valued parametrize entries (e.g. 5 tuples of 2 elements were
+        counted as 10 items instead of 5).
+
+        Handles trailing commas (standard Python style) and ``# comments``
+        after the last item.
+        """
+        text = text.strip()
+        if not text:
+            return 0
+        count = 1
+        depth = 0
+        in_string: str | None = None
+        last_comma_at_depth_zero = False
+        i = 0
+        while i < len(text):
+            c = text[i]
+            if in_string is not None:
+                if c == "\\" and i + 1 < len(text):
+                    i += 2  # skip escaped character
+                    continue
+                if c == in_string:
+                    in_string = None
+            else:
+                if c == "#":
+                    # Skip to end of line (Python line comment)
+                    while i < len(text) and text[i] != "\n":
+                        i += 1
+                    continue
+                if c in ('"', "'"):
+                    in_string = c
+                    last_comma_at_depth_zero = False
+                elif c in ("(", "[", "{"):
+                    depth += 1
+                    last_comma_at_depth_zero = False
+                elif c in (")", "]", "}"):
+                    depth -= 1
+                    last_comma_at_depth_zero = False
+                elif c == "," and depth == 0:
+                    count += 1
+                    last_comma_at_depth_zero = True
+                elif not c.isspace():
+                    last_comma_at_depth_zero = False
+            i += 1
+        # If the last top-level comma was trailing (no non-whitespace/comment
+        # content after it), subtract 1.
+        if last_comma_at_depth_zero:
+            count -= 1
+        return count
+
     def _count_parametrize_expansions(self) -> int:
         """Count extra tests from @pytest.mark.parametrize decorators.
 
         Each parametrize decorator with N items produces N tests from 1 def,
-        so the expansion is (N - 1) per decorator.
+        so the expansion is (N - 1) per decorator.  Uses depth-aware item
+        counting to correctly handle tuple-valued parametrize entries.
         """
         tests_dir = _REPO_ROOT / "tests"
         extra = 0
@@ -388,16 +445,12 @@ class TestTestFileListingConsistency:
                 content,
                 re.DOTALL,
             ):
-                # Count comma-separated items in the parametrize list.
-                # Items may contain commas inside strings, but since these are
-                # test params (simple strings/numbers), top-level split works.
                 items_text = m.group(1).strip()
                 if not items_text:
                     continue
-                # Split by comma not inside quotes — approximate via counting
-                # top-level items separated by newlines + commas
-                items = [i.strip() for i in items_text.split(",") if i.strip()]
-                extra += len(items) - 1
+                n_items = self._count_top_level_items(items_text)
+                if n_items > 1:
+                    extra += n_items - 1
         return extra
 
     def _count_pytest_tests(self) -> int:
@@ -871,6 +924,39 @@ class TestEmotionalLanguageCount:
             seen.add(term)
         assert not dupes, (
             f"EMOTIONAL_LANGUAGE has duplicate entries: {dupes}"
+        )
+
+    def test_quality_standards_el_count_matches_code(self):
+        """QUALITY_STANDARDS.md emotional language term count must match code.
+
+        The doc references the EL lexicon size in §8.1 and §8.4.  When terms
+        are added, the doc count drifts.  This guard catches the drift.
+        Added: 2026-07-04, Type D iteration.
+        """
+        from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
+
+        doc = (_REPO_ROOT / "docs" / "QUALITY_STANDARDS.md").read_text()
+        # §8.1: "**N emotional language terms**"
+        match = re.search(r"\*\*(\d+) emotional language terms\*\*", doc)
+        assert match, (
+            "QUALITY_STANDARDS.md §8.1 is missing the "
+            "'**N emotional language terms**' reference."
+        )
+        claimed = int(match.group(1))
+        actual = len(EMOTIONAL_LANGUAGE)
+        assert claimed == actual, (
+            f"QUALITY_STANDARDS.md §8.1 claims {claimed} emotional language "
+            f"terms, but code has {actual}. Update the doc."
+        )
+        # §8.4: "has grown to N"
+        match2 = re.search(r"has grown to (\d+)", doc)
+        assert match2, (
+            "QUALITY_STANDARDS.md §8.4 is missing the 'has grown to N' reference."
+        )
+        claimed2 = int(match2.group(1))
+        assert claimed2 == actual, (
+            f"QUALITY_STANDARDS.md §8.4 says 'has grown to {claimed2}', "
+            f"but code has {actual}. Update the doc."
         )
 
 
