@@ -946,6 +946,20 @@ known_conflicts:
         Judge Wang advanced March 30 conference from 2 PM to 12 PM, suggesting urgency.
       - May 21 (Dkt. 1566): Court ordered OpenAI to produce "deposition materials" from
         four witness depositions in Musk v. Altman (N.D. Cal., 4:24-cv-4722) by May 22.
+      - May 12–15 (conference + order): Magistrate Judge Wang held discovery status conference
+        May 12, 2026 for ALL MDL actions. Key rulings signed May 15:
+        (a) "Project Giraffe" (ECF 1520): Ordered meet-and-confer on "five questions" re
+        raw evaluation data; clawed-back data to be LOGGED with OpenAI to confer on providing
+        additional info; OpenAI to log evaluations withheld because they post-date litigation.
+        (b) Microsoft Brand Tracker Survey (ECF 1506): DENIED without prejudice. Parties
+        directed to include third-party Kantar in conferral on data production.
+        (c) OpenAI click-through data (ECF 1513): DENIED as moot (resolved per ECF 1542-1).
+        (d) Microsoft Financials (ECF 1310): Supplemental briefs ordered by May 15 with
+        responses due May 20. Parties to address why production of financial information
+        tied to LLM integration licenses is/is not sufficient.
+        (e) Protective order amendment (ECF 1518): Parties directed to further meet-and-confer;
+        joint status letter or proposed briefing schedule due May 15.
+        Source: docs.justia.com (order filed in Authors Guild v. OpenAI, cross-filed in MDL).
       - Jun 2 (Dkt. 1584): Judge Wang ordered OpenAI to produce deposition EXHIBITS
         "FORTHWITH" after OpenAI produced transcripts but withheld exhibits. OpenAI
         claimed exhibits weren't ordered — court disagreed, citing its own language and
@@ -1312,19 +1326,29 @@ litigation_connections:
       Chicago Tribune Co. LLC and other Alden Global Capital newspapers. NYT is the lead plaintiff
       and the most resource-rich litigant, setting the discovery and legal precedent template for
       all other cases. Sources: Bloomberg Law, Law.com, Reuters.
-    status_as_of_jun_2026: >
-      ADVANCED DISCOVERY PHASE + AMENDED COMPLAINT (late Jun 2026). 20M anonymized ChatGPT
-      logs produced to plaintiffs. No trial date set yet. NYT searching/analyzing the chat
-      log data for evidence of copyrighted content reproduction. OpenAI has complied with
-      production order per its public blog statement. STRATEGIC PIVOT: NYT dropped contributory
-      infringement claim against OpenAI (post-Cox Communications SCOTUS ruling, Mar 25 2026,
-      9-0) and fortified direct infringement claims against Microsoft's infrastructure role.
-      Microsoft's express license affirmative defense is being contested — NYT moved to strike
-      it. Meanwhile, the litigation coalition is EXPANDING: on June 24, 2026, nearly 400
-      local/regional newspapers filed a separate SDNY lawsuit (Richner Communications v.
-      Microsoft Corp., No. 1:26-cv-05320) led by former NJ AG Matthew Platkin via Platkin LLP.
-      This expansion vindicates NYT's first-mover strategy and increases pressure for an
-      industry-wide resolution.
+    status_as_of_jul_2026: >
+      DUAL-FRONT ADVANCED DISCOVERY + AMENDED COMPLAINT (Jul 2026).
+      
+      FRONT 1 — OpenAI/Microsoft MDL (25-md-3143, Judge Stein/Wang): 20M anonymized ChatGPT
+      logs produced to plaintiffs. No trial date set yet. STRATEGIC PIVOT (late Jun): NYT
+      dropped contributory infringement claim against OpenAI post-Cox Communications SCOTUS
+      ruling (Mar 25, 2026, 9-0) and fortified direct infringement claims against Microsoft's
+      infrastructure role. Discovery contentious: May 12 status conference addressed "Project
+      Giraffe" evaluation data, Microsoft Brand Tracker survey (denied w/o prejudice), and
+      Microsoft LLM integration license financials. Jun 2: $100/day sanctions threatened
+      against OpenAI for withholding deposition exhibits. SJ briefing appears imminent per
+      stays granted to Gracenote and Britannica. Coalition EXPANDING: 400 newspapers filed
+      Richner Communications v. Microsoft (No. 1:26-cv-05320, Jun 24, 2026).
+      
+      FRONT 2 — Perplexity AI (1:25-cv-10106, Judge Preska): Filed Dec 5, 2025. Separate
+      from MDL. Discovery opened Mar 25, 2026. Fact discovery through Feb 26, 2027; SJ
+      motions Sep 15, 2027. Novel "no volition" defense from Perplexity (based on Cartoon
+      Network v. CSC Holdings). Trademark infringement/dilution claims deployed for first
+      time in NYT AI litigation (hallucination attribution theory).
+      
+      NYT is now the most aggressive litigant in the publisher-vs-AI space: suing both
+      the largest AI company (OpenAI/Microsoft) and the leading AI search startup
+      (Perplexity) in separate proceedings with distinct legal strategies.
   - type: "co_plaintiff_related"
     description: >
       NYT and Daily News plaintiffs consolidated. Daily News encompasses 8 news
@@ -1341,17 +1365,80 @@ litigation_connections:
       injunctive relief. Platkin quoted: 'This lawsuit is not about stopping AI innovation,
       but ensuring that innovation happens fairly and within the bounds of the law.'
       SIGNIFICANCE: This is the LARGEST legal effort by local/regional newspapers. Filed in
-      same SDNY court as NYT case. Together with NYT (Dec 2023) + Alden Global Capital
-      newspapers (Apr 2024) + CNN v Perplexity (2025) + Britannica/Merriam-Webster v
-      OpenAI (2025), the coalition now encompasses 400+ individual newspaper titles. NYT's
-      first-mover litigation is validated — local publishers are following its lead rather
-      than choosing licensing deals. OpenAI response via Drew Pusateri: models 'trained on
-      publicly available data, based on fair use and designed to support innovation.'
+      same SDNY court as NYT case. Together with NYT v OpenAI (Dec 2023) + NYT v Perplexity
+      (Dec 2025) + Alden Global Capital newspapers (Apr 2024) + CNN v Perplexity (2025) +
+      Britannica/Merriam-Webster v OpenAI (2025), the coalition now encompasses 400+
+      individual newspaper titles. NYT's first-mover litigation is validated — local
+      publishers are following its lead rather than choosing licensing deals. OpenAI
+      response via Drew Pusateri: models 'trained on publicly available data, based on
+      fair use and designed to support innovation.'
     case_reference: "1:26-cv-05320, S.D.N.Y."
     source_urls:
       - "https://www.pymnts.com/legal/2026/400-newspapers-sue-microsoft-and-openai-alleging-content-theft-for-ai/"
       - "https://news.bloomberglaw.com/ip-law/openai-microsoft-sued-by-publishers-for-scraping-articles"
       - "https://storyboard18.com/publishers-sue-openai-microsoft/"
+  - type: "plaintiff_perplexity"
+    description: >
+      SEPARATE DIRECT ACTION: The New York Times Company v. Perplexity AI, Inc.,
+      Case No. 1:25-cv-10106, S.D.N.Y., Judge Loretta A. Preska. Filed December 5, 2025.
+      
+      NYT sued Perplexity after ~2 years of cease-and-desist demands (starting late 2023).
+      Claims: copyright infringement (scraping paywalled content, verbatim reproduction)
+      AND trademark infringement/dilution (Perplexity hallucinations falsely attributed to
+      NYT brand — first time NYT has deployed trademark claims in AI litigation). Also
+      claims DMCA violations. Seeks unspecified damages + injunctive relief.
+      
+      PARALLEL SUIT: Chicago Tribune Co. v. Perplexity AI Inc., No. 1:25-cv-10094 (same
+      court, same timeframe). Tribune Publishing's action has similar copyright claims.
+      
+      PERPLEXITY'S "NO VOLITION" DEFENSE (motion to dismiss, Mar 2026): Perplexity argues
+      it cannot be liable for DIRECT copyright infringement because it never made a
+      "volitional" choice to copy — the user enters the query, and the system automatically
+      executes. Relies on 2nd Circuit's Cartoon Network v. CSC Holdings (2008). This is
+      a NOVEL legal theory — no court has evaluated it in the context of a generative AI
+      search engine. If successful, eliminates only direct infringement (strict liability);
+      leaves secondary liability (requiring knowledge/intent) intact. This defense strategy
+      is distinct from OpenAI's fair use defense and tests a different legal boundary.
+      
+      CASE MANAGEMENT PLAN (Dkt. 66, June 2, 2026, signed Judge Preska):
+      - Discovery opened: March 25, 2026 (Rule 26(f) conference held)
+      - Motion for leave to amend/join parties: June 17, 2026
+      - Fact depositions completion: February 26, 2027
+      - Fact discovery close: February 26, 2027
+      - Expert discovery close: July 30, 2027
+      - Summary judgment motions: September 15, 2027
+      - SJ oppositions: October 15, 2027
+      - SJ replies: November 8, 2027
+      
+      ANALYTICAL SIGNIFICANCE: NYT is now fighting on TWO separate AI litigation fronts:
+      (1) the massive OpenAI/Microsoft MDL (25-md-3143, Judge Stein) and (2) Perplexity
+      (standalone, Judge Preska). The Perplexity case reaches trial/SJ later (Nov 2027 vs
+      possible late 2026/early 2027 for OpenAI MDL) but tests different legal theories —
+      the "no volition" defense for AI search engines, and trademark claims for AI
+      hallucinations. Together they establish NYT as the most aggressive litigant in the
+      publisher-vs-AI space — suing both the largest AI company and the leading AI search
+      startup, using distinct legal strategies tailored to each defendant's architecture.
+      
+      NYT spokesperson Graham James: "While we believe in the ethical and responsible use
+      and development of AI, we firmly object to Perplexity's unlicensed use of our content
+      to develop and promote their products."
+      
+      Perplexity head of comms Jesse Dwyer: "Publishers have been suing new tech companies
+      for a hundred years, starting with radio, TV, the internet, social media and now AI.
+      Fortunately it's never worked, or we'd all be talking about this by telegraph."
+    case_reference: "1:25-cv-10106, S.D.N.Y."
+    judges:
+      presiding: "Judge Loretta A. Preska"
+    severity: 4
+    evidence: "Court docket, Reuters, Bloomberg Law, TheWrap, Lexology"
+    source_urls:
+      - "https://www.reuters.com/technology/new-york-times-sues-perplexity-ai-illegal-copying-content-2025-12-05/"
+      - "https://www.reuters.com/legal/litigation/is-perplexitys-no-volition-copyright-strategy-clever-legal-shield-or-long-shot-2026-03-12/"
+      - "https://www.courtlistener.com/docket/69529318/66/the-new-york-times-company-v-perplexity-ai-inc/"
+      - "https://news.bloomberglaw.com/ip-law/news-outlets-perplexity-ai-suits-strike-at-existential-threat"
+      - "https://www.thewrap.com/new-york-times-sues-perplexity-ai-copyright/"
+      - "https://www.lexology.com/library/detail.aspx?g=nyt-v-perplexity-ai-new-frontiers-ip"
+    last_updated: "2026-07-04"
 
 ai_crawl_policy:
   blocks_gptbot: true
@@ -1697,7 +1784,7 @@ notes: |
   - Dec 2023: NYT sues (1 publisher)
   - Apr 2024: Alden Global Capital/Daily News papers join (8 publishers)
   - 2024-2025: Individual suits accumulate (Authors Guild, Getty, etc.)
-  - 2025: CNN v Perplexity, Britannica/Merriam-Webster v OpenAI
+  - 2025: CNN v Perplexity, NYT v Perplexity (Dec 2025), Britannica/Merriam-Webster v OpenAI
   - Jun 24, 2026: ~400 local/regional newspapers file Richner v. Microsoft (SDNY 1:26-cv-05320)
   - Total: 16 consolidated SDNY cases + expanding coalition = 400+ newspaper titles suing
   
