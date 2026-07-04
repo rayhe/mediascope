@@ -288,7 +288,9 @@ class TestSourceAnalysis:
 
     def test_both_sources_are_expert(self):
         """Both named sources should be classified as expert."""
-        for source in self.sources:
+        named = [s for s in self.sources if s.source_type == "named"]
+        assert len(named) >= 2, f"Expected ≥2 named sources, got {len(named)}"
+        for source in named:
             assert source.is_expert, f"{source.name} not classified as expert"
 
     def test_previn_warren_adversarial_by_role(self):

@@ -857,9 +857,13 @@ def extract_sources(text: str) -> list[SourceMention]:
             r"(?:documents?|memos?|emails?|guidelines?|presentations?|reports?|briefings?)",
             re.IGNORECASE,
         ),
+        # Match "internal documents obtained/seen/..." only when NOT followed
+        # by "by [Outlet]" — those are documentary sources (Pattern 9) and
+        # should not be captured here as anonymous.
         re.compile(
             r"\binternal\s+(?:documents?|memos?|emails?|guidelines?|presentations?|reports?|briefings?)\s+"
-            r"(?:obtained|reviewed|seen|viewed|shared|circulated|warned|instructed|showed|stated|revealed|indicated)",
+            r"(?:obtained|reviewed|seen|viewed|shared|circulated|warned|instructed|showed|stated|revealed|indicated)"
+            r"(?!\s+by\s+(?:the\s+)?[A-Z])",
             re.IGNORECASE,
         ),
         re.compile(r"\bconfirmed by multiple sources\b", re.IGNORECASE),
@@ -1071,9 +1075,11 @@ def extract_sources(text: str) -> list[SourceMention]:
     #   "an internal memo reviewed by The New York Times"
     #   "the recording, a copy of which was obtained by..."
     documentary_patterns: list[re.Pattern] = [
-        # "a/the [adj] recording/document/filing heard/obtained/seen/reviewed by [Outlet]"
+        # "[a/the/adj] recording/document/filing heard/obtained/seen/reviewed by [Outlet]"
+        # Article (a/an/the) is optional so bare adjective+noun phrases like
+        # "Internal documents obtained by The Guardian" also match.
         re.compile(
-            r"\b(?:an?\s+|the\s+)"
+            r"\b(?:an?\s+|the\s+)?"
             r"(?:internal\s+|leaked\s+|confidential\s+|draft\s+)?"
             r"(?:recording|document|documents|filing|filings|memo|"
             r"memorandum|presentation|spreadsheet|email|emails|"

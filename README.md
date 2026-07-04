@@ -32,6 +32,7 @@ This is not an attack tool. It works equally well pointed at Fox News covering r
 13. **Active-negative agency detection** — distinguishes "actively doing harmful things" (tracking, cutting, forcing) from positive active agency (launching, innovating) **(new)**
 14. **Framing-aware tone correction** — when VADER scores factual investigative prose as positive but framing devices signal adversarial editorial stance, overrides with framing-derived tone **(new)**
 15. **Source extraction stop-word filtering** — prevents false-positive extractions like "After Meta said" → source "After Meta" **(new)**
+16. **Documentary source detection** — identifies cited artifacts (recordings, leaked documents, court filings, internal memos) as `source_type="documentary"`, distinguishing them from named and anonymous human sources for accurate authority scoring **(new)**
 
 ## ✨ Novel: Editorial Histories
 
@@ -402,7 +403,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **1336 tests** across 52 test files, each covering a different analytical capability:
+MediaScope has **1330 tests** across 52 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|

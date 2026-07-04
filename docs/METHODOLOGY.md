@@ -310,6 +310,31 @@ MediaScope's `count_anonymous_sources()` delegates to the comprehensive `extract
 
 "Declined to comment" and similar no-comment signals (e.g., "did not respond to a request for comment," "could not be reached for comment") are tagged as `source_type="no_comment"` and **excluded** from both anonymous and named source counts. These are editorial signals — they communicate that the journalist attempted to contact the entity — but they are not source attributions and should not inflate the anonymous source ratio.
 
+### 5.3 Documentary Source Detection
+
+Investigative and financial journalism frequently cites artifacts — recordings, leaked documents, court filings, internal memos — as evidence. These are not human sources but material objects whose provenance and attribution carry editorial weight. MediaScope tags them as `source_type="documentary"` and tracks them separately from named and anonymous sources.
+
+#### Detection Patterns
+
+| Pattern | Example | Match |
+|---|---|---|
+| `[adj] noun verb by Outlet` | "Internal documents obtained by The Guardian" | ✅ |
+| `a/the [adj] noun verb by Outlet` | "a recording heard by Reuters" | ✅ |
+| `according to a/the noun` | "according to a recording of the meeting" | ✅ |
+| `court/SEC records show` | "court records show that the company settled" | ✅ |
+| `a copy of which was verb` | "a copy of which was obtained by The NYT" | ✅ |
+| `noun which Outlet has verb` | "emails which The Atlantic has reviewed" | ✅ |
+
+The article (`a`, `an`, `the`) before the document noun is **optional** — bare adjective+noun phrases like "Internal documents seen by Wired" match just as well as "an internal memo reviewed by The New York Times."
+
+#### Interaction with Anonymous Source Detection
+
+Internal document references (e.g., "internal documents showed") can also indicate anonymous sourcing — the document is cited but whoever leaked it is unnamed. MediaScope resolves this overlap with a **negative lookahead**: when an internal-document phrase is followed by `by [Outlet]` (e.g., "obtained by The Guardian"), it is treated as a documentary source rather than an anonymous one. Generic references without outlet attribution (e.g., "internal documents warned") remain tagged as anonymous.
+
+#### Analytical Value
+
+Documentary sources are excluded from the named/anonymous ratio calculation but inform framing analysis. A high density of documentary sources often indicates investigative reporting with primary-source backing, which strengthens the publication's factual credibility even when the overall anonymous-source ratio is elevated.
+
 ## 6. Source Stance Analysis
 
 ### 6.1 Beyond Authority: Who Sources Are Deployed Against
