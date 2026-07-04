@@ -4,6 +4,65 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-04 09:00 PT — Type C: Ownership & Funding Deep Dive — MIT TR OBBBA First Active FY, Princeton Tax Escape, Litigation Connections
+
+### Focus
+MIT Technology Review profile deep dive centered on the OBBBA endowment tax now being ACTIVE (MIT's FY2027 started July 1, 2026 — 4 days into the 8% rate). Five significant findings: (1) Princeton escaped the tax entirely, (2) Kornbluth's May 2026 video transcript confirms corporate partnership pivot as explicit mitigation strategy, (3) MIT lawsuits against NIH/DOE/NSF populate previously empty litigation_connections, (4) new ILP members including Spain's state innovation agency, (5) updated peer institution responses with Yale's $300M figure.
+
+### What Changed
+
+**1. PRINCETON ENDOWMENT TAX ESCAPE (MOST SIGNIFICANT)**
+Princeton ($36.4B endowment, ~$3.9M/student) avoided the 8% tax entirely by expanding undergraduate financial aid ($44M for 2025-26, free tuition for families <$250K) to drop tuition-paying students below the 3,000 threshold. PRINCO MD Susan Ciniglio confirmed at private Princeton Class Leadership Conference (Jan 2026). Would have cost ~$180M/yr. Emeritus Prof. Burton Malkiel: "brilliant response to a punitive and discriminatory tax." Princeton spent $240K in Q1 2026 lobbying (second-highest quarterly total ever). Source: Daily Princetonian (May 2026).
+
+SIGNIFICANCE FOR MIT: Princeton's escape effectively reduces the "Big 5" 8% tier to 4 institutions (Harvard, Yale, MIT, Stanford). MIT CANNOT replicate this strategy — 11,816 students vs Princeton's 9,100, and MIT lacks the concentrated undergraduate/graduate ratio. Princeton's escape concentrates political narrative and financial burden on remaining 4 schools.
+
+**2. KORNBLUTH MAY 14, 2026 VIDEO TRANSCRIPT (PRIMARY SOURCE)**
+Full transcript from president.mit.edu analyzed. Key direct quotes:
+- "For more than a year, we've all worked on responding to extraordinary new and sustained pressures on our budget (due largely to the heavy new 8% tax)"
+- "We're aggressively pursuing new sources of funding, especially from industry, and we're building on deep relationships, like the MIT-IBM Computing Research Lab"
+- Faculty "cutting graduate students, postdocs and particular avenues of research"
+- "Hundreds of exceptionally talented young people will not have the benefit of an MIT education"
+- Federal agencies discussing "factoring in geography" for grants vs. merit
+
+This DIRECTLY CONFIRMS the editorial conflict feedback loop: the MIT president explicitly names industry funding as replacement for lost federal grants, making the corporate partnership pivot an official institutional strategy rather than an inference.
+
+**3. LITIGATION CONNECTIONS (was EMPTY → populated)**
+MIT is co-plaintiff (with American Council on Education) in THREE lawsuits against federal agencies: NIH, DOE, and NSF. Kornbluth end-of-semester update: "For the time being, court action has delayed the implementation of most of these cuts." This creates a 6th conflict dimension — LITIGATION ALIGNMENT — where MIT's active litigation against science funding agencies creates structural incentives for MIT TR's coverage of federal science policy. Conflict taxonomy expanded from 5 to 6 dimensions.
+
+**4. ILP EXPANSION (3 new members + RISE framework)**
+- CDTI Innovation (Spain): SOVEREIGN GOVERNMENT agency (Ministry of Science), 4-year Declaration of Intent, institutional member. Priority 2026: fusion + microelectronics. First tracked government agency ILP member.
+- Union Properties (Dubai): First Dubai developer in ILP (Feb 2026).
+- Wipro: Already tracked but expanded details (5 strategic themes: agentic AI, robotics, quantum, DLT, cyber resilience).
+- RISE framework documented: "Research, Innovation, Students, and Education"
+- MIT ILP events: Tokyo symposiums (Health/Semiconductors, AI/Robotics), Trustworthy AI Agents webinar (Jun 2026)
+
+**5. PEER RESPONSE UPDATES**
+- Yale: ~$300M annual tax — "exceeds yearly undergraduate financial aid budget" and "more than combined annual budgets of 8 of 15 schools." Expects layoffs by end 2026. 90-day hiring pause, 5% non-salary cuts, retirement incentives. 3-year implementation.
+- Harvard: Financial Administration FAQ confirms tax applies EVEN in years of overall endowment losses (NII-based, not performance-based). FY27 impact expected.
+- Stanford: $140M operating budget reduction confirmed.
+- 5 new source URLs added to obbba_source_urls section.
+
+### Sources
+- Daily Princetonian: https://www.dailyprincetonian.com/article/2026/05/princeton-news-adpol-university-spared-endowment-tax-financial-aid-millions-princo
+- MIT President's Office: https://president.mit.edu/writing-speeches/video-transcript-message-president-kornbluth-about-funding-and-talent-pipeline
+- Harvard Financial Admin: https://finance.harvard.edu/endowment-tax-faqs
+- Yale Provost: https://provost.yale.edu (Fall 2025 + Dec 2025 budget updates)
+- TheCollegeInvestor: https://thecollegeinvestor.com/80724/mit-to-admit-fewer-graduate-students-as-federal-research-funding-drops-20/
+- CDTI: https://www.cdti.es/en/noticias/cdti-innovacion-mit-colaboracion-tecnologica-espana-eeuu-tejido-empresarial-investigacion-deeptech
+- Wipro: https://www.wipro.com/newsroom/press-releases/2026/wipro-joins-mit-ilp-to-advance-global-tech-innovation/
+- MIT ILP/STEX: https://ilp.mit.edu
+
+### Stats
+- MIT TR profile: 1607 → 1739 lines (+132)
+- Conflict taxonomy: 5 → 6 dimensions (added litigation alignment)
+- ILP members tracked: 1 → 3 (Wipro expanded, Union Properties, CDTI added)
+- Litigation connections: 0 → 1 entry (3 lawsuits)
+- OBBBA source URLs: 3 → 8
+- Tests: 1335 passed, 0 failed, 2 xfailed
+- Commit: `5985748` — pushed to GitHub
+
+---
+
 ## 2026-07-04 07:00 PT — Type B: Journalist/Publication Research — Josh Tyrangiel (124th) + Atlantic Editorial Expansion
 
 ### Focus
