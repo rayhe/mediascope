@@ -452,11 +452,24 @@ revenue_relationships:
     source_url: "https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/"
     notes: "Meta signed with 7 publishers Dec 5 2025, NYT conspicuously absent"
 
+  # --- AI LICENSING LANDSCAPE NOTE (Jul 2026) ---
+  # As of Jul 2, 2026 (WSJ): AI content marketplaces are emerging as a new
+  # licensing model. Microsoft is piloting a marketplace with 8 publishers
+  # (names undisclosed). Amazon and Factiva are positioning as marketplace
+  # platforms for AI training data licensing. NYT mentioned as having existing
+  # bilateral deals but not confirmed as a marketplace participant. This could
+  # shift AI licensing from bilateral (NYT↔Amazon, NYT↔Google) to platform-
+  # mediated models, potentially commoditizing publisher content and compressing
+  # per-publisher deal values. Relevance: NYT's current bilateral leverage
+  # (suing OpenAI/Microsoft while licensing to Amazon/Google) may weaken if
+  # marketplace aggregation becomes standard.
+  # Source: WSJ, Jul 2, 2026
+
 # ===================================================================
 # BOARD OF DIRECTORS — comprehensive, added 2026-06-26
 # ===================================================================
-# 13 members: 3 insiders/operators, 2 Sulzberger family trust, 5 tech executives,
-# 1 finance/investment, 1 media/digital, 1 family-connected author.
+# 13 members (13/13 profiled): 3 insiders/operators, 2 Sulzberger family trust,
+# 5 tech executives, 1 finance/investment, 1 media/digital, 1 governance/policy.
 # Dual-class structure: Sulzberger family Class B elects ~70% of board.
 # Class A shareholders (including ~24.6% Carlos Slim, diluted from 25.1%) elect remaining ~30%.
 board_of_directors:
@@ -801,8 +814,69 @@ board_of_directors:
     source_urls:
       - "https://nytco.com/press/board-of-directors/anuradha-b-subramanian/"
 
-# Committee Structure (as of June 2026):
+  # --- GOVERNANCE/POLICY ---
+  - name: "Beth Brooke"
+    title: "Former Global Vice Chair of Public Policy, EY (Ernst & Young)"
+    class: "governance_policy"
+    since: "2021"
+    background: >
+      38-year career at EY (Ernst & Young, 1981–2019), rising to Global Vice Chair
+      of Public Policy, Sustainability, and Stakeholder Engagement. Led EY's global
+      public policy and regulatory affairs. Before EY: US Department of the Treasury
+      (1993–1995) under Secretary Lloyd Bentsen and Robert Rubin, working on
+      healthcare reform and Superfund tax policy during the Clinton administration.
+      CPA. Purdue University BS in Computer Science and Industrial Management —
+      member of Purdue's first class of women to receive Title IX basketball
+      scholarships. Honorary doctorates from Purdue University, Indiana University,
+      and Babson College. 11-time Forbes "World's 100 Most Powerful Women" (2010–2020).
+      Financial Times/OUTstanding LGBTQ Hall of Fame inductee. Co-Chair of VERITY Now
+      (gender equity in vehicle safety testing standards). Named one of Fast Company's
+      "Most Creative People in Business."
+    committee_memberships: ["Audit (Chair)", "Compensation"]
+    other_boards:
+      - company: "eHealth Inc. (EHTH)"
+        role: "Independent Chair of the Board"
+        notes: >
+          Online health insurance marketplace. Market cap ~$47M (Jul 2026),
+          stock ~$1.60. Total compensation $292.87K (2024 proxy).
+    advisory_roles:
+      - "US Olympic and Paralympic Committee (Board of Directors)"
+      - "APCO Worldwide (Advisory Council)"
+      - "The Conference Board (Board of Trustees)"
+      - "Aspen Institute (Trustee)"
+      - "Knight Commission on Intercollegiate Athletics"
+      - "Lehigh Valley Health Network (Board of Trustees)"
+    conflict_analysis: >
+      SEVERITY 3: Beth Brooke spent 38 years at EY (Ernst & Young LLP), the last
+      decade as Global Vice Chair. EY is the NYT Company's external auditor, a
+      relationship ratified at the April 2026 annual meeting. Brooke now chairs the
+      Audit Committee that directly oversees EY's audit engagement — meaning the
+      person responsible for evaluating the auditor's independence, fees, and
+      performance is a 38-year veteran of that same firm. While Brooke left EY in
+      2019 and joined the NYT board in 2021 (satisfying the standard 2-year
+      cooling-off period under SEC independence rules), the structural tension
+      remains: deep institutional loyalty, professional networks, and cultural
+      familiarity with EY's practices could influence her oversight posture. SEC
+      Rule 10A-3 and NYSE listing standards require audit committee members to be
+      "independent," but independence is defined narrowly (no current employment
+      or compensation from the auditor) — it does not prohibit decades-long former
+      employees. This is a governance design choice, not a violation, but it
+      represents an undisclosed structural factor in NYT's audit oversight.
+      Separately, her eHealth board chair role is low-conflict (no tech-coverage
+      overlap). Her Treasury Department experience in healthcare policy and her
+      Compensation Committee seat give her influence over both financial reporting
+      standards and executive incentive structures.
+    source_urls:
+      - "https://nytco.com/press/board-of-directors/beth-brooke/"
+      - "https://www.ifac.org/who-we-are/leadership/beth-brooke"
+      - "https://outleadership.com/insights/beth-brooke-inducted-into-outstanding-lgbtq-role-models-hall-of-fame/"
+      - "https://harris.uchicago.edu/about/directory/beth-brooke"
+      - "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=ehth&type=DEF+14A"
+      - "https://simplywall.st/stocks/us/pharma-biotech/nasdaq-ehth/ehealth"
+
+# Committee Structure (as of July 2026):
 # Audit: Beth Brooke (Chair), Bhutani, Glaser, Subramanian
+#   NOTE: Brooke (Chair) is a 38-year EY veteran; EY is NYT's external auditor.
 # Compensation: McAndrews (Chair), Brooke, Glaser, Van Dyck
 # Finance: Rogers (Chair), Bhutani, Arthur Golden, Subramanian
 # Nominating & Governance: Rogers (Chair), Bronstein, McAndrews, Van Dyck

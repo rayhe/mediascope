@@ -4,6 +4,20 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-04 15:00 PT — Type C: Ownership & Funding Deep Dive (NYT)
+
+**Focus:** Complete NYT board of directors profile (13/13 members) and AI licensing landscape update.
+
+**Changes:**
+1. **Added Beth Brooke as 13th board member** — Former Global Vice Chair of Public Policy at EY (1981–2019, 38 years). Joined NYT board 2021. Chairs Audit Committee. SEVERITY 3 conflict: EY is NYT's external auditor (ratified Apr 2026 annual meeting); Brooke spent 38 years at EY and now chairs the committee overseeing EY's audit work. 2-year cooling period satisfies SEC independence rules, but structural tension (institutional loyalty, professional networks) is a governance design observation worth tracking. Also sits on Compensation Committee. Other boards: eHealth Inc. (EHTH, Independent Chair, ~$47M market cap). Advisory: US Olympic & Paralympic Committee, APCO, Conference Board, Aspen Institute, Knight Commission.
+2. **Updated committee structure comments** — Added EY-auditor conflict note inline with Audit committee listing; updated date from June to July 2026.
+3. **Added AI content marketplace landscape note** — WSJ (Jul 2, 2026) reports Microsoft piloting marketplace with 8 publishers; Amazon/Factiva positioning as platforms. Documented as comment note after Meta entry — marketplace aggregation could compress NYT's bilateral licensing leverage.
+4. **Updated board summary** — Changed from "1 family-connected author" to "1 governance/policy" class, noted 13/13 profiled.
+
+**Tests:** 1359 passed, 0 failed.
+
+---
+
 ## 2026-07-04 12:00 PT — Type A: Article Deep Dive — Wired Project Cannes Contractors
 
 ### Focus
