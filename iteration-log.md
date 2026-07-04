@@ -4,6 +4,36 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-04 12:00 PT — Type A: Article Deep Dive — Wired Project Cannes Contractors
+
+### Focus
+Full analysis of Wired's investigation into Meta's "Project Cannes" — covert operation using contractor firm Covalen to deploy hundreds of contractors posing as teens to test rival AI chatbots (ChatGPT, Gemini, Character.AI) with 45,000+ high-risk prompts.
+
+### What Changed
+
+**1. ENTITY CLUSTER SPLIT (MOST SIGNIFICANT)**
+Split the overly broad "AI Infrastructure" cluster into 3 semantically distinct clusters:
+- **AI Infrastructure** — Scale AI (infrastructure provider)
+- **AI Chatbot Products** — Character.AI (consumer AI product, victim entity in this article)
+- **Outsourcing/Contractors** — Covalen, Sama, Accenture (labor/outsourcing firms)
+Total entity clusters: 60 → 62.
+
+**2. NEW ENTITY DETECTION**
+- Rumman Chowdhury / Chowdhury → Child Safety Researchers cluster
+- Humane Intelligence → Research Centers cluster
+- Sama → Outsourcing/Contractors (context-aware regex to avoid Buddhist "sama" false positives)
+
+**3. ANALYSIS OUTPUT**
+Full deep dive analysis at `wired_meta_project_cannes_contractors_2026_07_01_analysis.md` (94th annotated article). Key findings:
+- VADER (-0.63) within 0.07 of manual estimate (-0.60 to -0.70) — investigative exposé language is VADER's strongest mode
+- TextBlob near-zero (0.04) on clearly negative article — ongoing known failure class
+- 22 framing devices detected; hypocrisy_frame and power_asymmetry patterns miss distributed/structural versions
+- Source extraction misses appositive-title expert sources ("Chowdhury, CEO of Humane Intelligence, called...")
+- Documented gaps: distributed hypocrisy frame detection, competitive intelligence framing, worker replacement irony
+
+### Test Results
+1355 → 1359 tests, 0 failures. Commit `5830fa0`, pushed to `main`.
+
 ## 2026-07-04 10:00 PT — Type D: Toolkit Quality — Parametrize Counter Bug Fix + EL Count Guard
 
 ### Focus
