@@ -1038,3 +1038,19 @@ editorial_changes:
     outgoing: null
     position: business_editor_open
     source_url: https://talkingbiznews.com/biz-news-help-wanted/wired-seeks-an-editor-to-lead-its-business-coverage/
+  - date: '2026-04'
+    incoming: null
+    notes: 'WIRED UK LEADERSHIP DEPARTURE: Greg Williams, editor of Wired UK for 9 years (16 total years at Wired), departed
+      to join Exponential View (Azeem Azhar''s research studio on exponential technologies) as its inaugural executive editor.
+      Previously was executive editor of print and digital at Wired; also previously executive editor at Details Magazine.
+      His departure is part of the broader Wired UK contraction narrative: UK print edition cancelled (Jan 2026), 7 editorial
+      staff left London office at end of 2025, Peter Guest departed (Dec 2025). Williams was the most senior Wired UK editorial
+      figure, and his exit effectively marks the end of Wired UK as a semi-autonomous editorial entity — replaced by Rosie
+      Swash (Deputy Editor London, hired May 2026) and Isabella Ward (staff writer, hired June 2026) reporting directly to
+      Brian Barrett (US exec editor) rather than having their own UK editor. ANALYTICAL VALUE: Wired UK under Williams published
+      a distinctive editorial product with its own cover stories and editorial voice for nearly a decade. Its dissolution under
+      Drummond''s "global editorial director" structure centralizes editorial control in the US — US-centric adversarial tech
+      framing now applies uniformly to UK/European coverage that previously had Williams''s own editorial judgment.'
+    outgoing: Greg Williams
+    position: editor_wired_uk_departure
+    source_url: https://talkingbiznews.com/media-news/williams-departs-wired-for-exponential-view/

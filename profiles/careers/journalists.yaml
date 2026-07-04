@@ -3721,31 +3721,65 @@ journalists:
     of technology and governance — a natural adversarial frame where tech companies are the subjects of regulatory scrutiny.
     Her ''The Technocrat'' newsletter shapes how MIT TR''s subscriber base understands tech regulation.'
 - career:
-  - beat: China technology, internet
-    end: 2023-12
+  - beat: culture, internet, technology
+    end: 2023-04
+    event_type: freelance
+    notes: 'Freelance journalist covering Chinese internet, culture, and tech. Born in Xiangyang, Hubei, China. Speaks fluent
+      Mandarin. Education: dual BA in Communications from China Agricultural University (Beijing) and University of Colorado
+      Denver (cum laude). Columbia University MA in Oral History (OHMA, class of 2021) — interest in oral history originated
+      from intergenerational trauma in her own family. Published in Wired, Protocol, South China Morning Post, SupChina/The
+      China Project, Radii, Rolling Stone, Sixth Tone, TechNode, The Daily Dot. Co-contributor to Chaoyang Trap, a critically
+      acclaimed Substack newsletter about everyday life on the Chinese internet. Host of Redirect, a Mandarin-language cultural
+      critique podcast covering cross-cultural internet trends. Producer for Tech Buzz China podcast (monthly deep dives on
+      China''s leading tech companies). Part of Marcast, a Chinese podcast network for global audio storytelling. Topics ranged
+      from female stand-up comedians, short form dramas, Chinese masculinity, and Beijing''s underground music scene. Contact:
+      chencaiwei1114@gmail.com. Twitter: @CaiweiC.'
+    publication: freelance
+    role: freelancer
+    source_url: https://oralhistory.columbia.edu/alumni/caiwei-chen-2021
+    start: 2018-01
+  - beat: China technology, internet, culture
+    end: 2024-12
     event_type: hired
-    notes: Reporter at Rest of World, a nonprofit publication covering tech outside the Western bubble. Based in New York.
-      Published in Wired, Rolling Stone, Protocol, Technode, The China Project. Part of Chaoyang Trap experimental newsletter.
-      Columbia University MA. 5+ years covering Chinese internet and tech.
+    notes: 'China reporter at Rest of World, a nonprofit publication covering tech outside the Western bubble. Based in New
+      York, reporting to the China editor in Asia. Started May 16, 2023. KEY STORIES: Chinese social platforms (Weibo, Douyin)
+      requiring popular users to reveal real names — forcing influencers to either cull followers or quit (picked up by Techmeme).
+      Covered the rapidly changing Chinese internet, tech company strategy, and cultural shifts. Also contributed to Wired,
+      Rolling Stone, Protocol, Technode, The China Project during this period. Continued contributing to Chaoyang Trap newsletter.'
     publication: rest-of-world
     role: reporter
-    source_url: https://talkingbiznews.com/media-news/mit-tech-review-hires-chen-as-tech-reporter/
-    start: 2021-01
-  - beat: China technology
+    source_url: https://talkingbiznews.com/media-news/rest-of-world-hires-chen-as-china-reporter/
+    start: 2023-05
+  - beat: China technology, AI, geopolitics
     event_type: hired
-    notes: China reporter. Covers Chinese internet, AI development, surveillance technology, tech regulation. Part of MIT
-      TR + FT 'State of AI' partnership (paired with FT's John Thornhill on 'The US vs. China'). Based in New York.
+    notes: 'China reporter at MIT Technology Review. Covers everything related to China in the global tech world: AI development,
+      surveillance technology, internet regulation, tech company strategy, US-China tech geopolitics. Part of MIT TR + FT
+      ''State of AI'' partnership (paired with FT''s John Thornhill on ''The US vs. China''). KEY STORIES (2025-2026): Exclusive
+      Q&A with Yann LeCun on leaving Meta FAIR and founding Advanced Machine Intelligence Labs (AMI) in Paris — first detailed
+      interview on his contrarian bet against LLMs in favor of world models (picked up by Techmeme, WebProNews, Sifted).
+      Alibaba''s Accio AI sourcing tool connecting small online sellers with manufacturers including in China (exceeded 10M
+      MAUs by March). Cottage industry of OpenClaw installation services and preconfigured hardware emerging in China as the
+      tool becomes the country''s latest tech craze. Currently a regular contributor to Pixel Perfect, a Chinese-language podcast
+      about technology and culture. Based in Brooklyn, New York. 116+ articles across career (JournalistHunt). JournalistHunt
+      lists publications: Marketplace Tech Podcast, Substack, TechNode, MIT Technology Review, Wired (UK), Medium, The Daily
+      Dot, Sixth Tone, Wired Magazine, Flipboard, South China Morning Post.'
     publication: mit-tech-review
     role: reporter
     source_url: https://talkingbiznews.com/media-news/mit-tech-review-hires-chen-as-tech-reporter/
-    start: 2024-01
+    start: 2025-01
   name: Caiwei Chen
-  notes: 'MIT TR''s China reporter. Career: Columbia MA → Rest of World → MIT TR. Covers Chinese internet and tech. Part of
-    Chaoyang Trap, an experimental newsletter about the Chinese internet. 5+ years covering Chinese tech. ANALYTICAL VALUE:
-    MIT TR is one of the few Western tech publications with a dedicated China reporter. Chen''s coverage of Chinese AI development,
-    surveillance tech, and internet regulation provides a geopolitical lens that intersects with US AI policy coverage. Her
-    position enables MIT TR''s China-comparison framing (''China is catching up / ahead'') which shapes how readers evaluate
-    US tech policy. Part of MIT TR + FT ''State of AI'' partnership (paired with FT''s John Thornhill on ''The US vs. China'').'
+  notes: 'MIT TR''s China reporter. Born in Xiangyang, Hubei, China; fluent Mandarin speaker. Career: China Agricultural University
+    + UC Denver (dual BA Communications, cum laude) → Columbia OHMA (MA Oral History, 2021) → freelance (2018-2023) → Rest
+    of World (2023-2024) → MIT Technology Review (2025-). Part of Chaoyang Trap newsletter and Marcast podcast network. Host
+    of Redirect (Mandarin cultural critique podcast), producer of Tech Buzz China, contributor to Pixel Perfect. Published
+    in Wired, Protocol, SCMP, Rolling Stone, Sixth Tone, TechNode, Radii, The Daily Dot. 116+ total articles. ANALYTICAL
+    VALUE: MIT TR is one of the few Western tech publications with a dedicated China reporter. Chen''s coverage of Chinese
+    AI development, surveillance tech, and internet regulation provides a geopolitical lens that intersects with US AI policy
+    coverage. Her position enables MIT TR''s China-comparison framing (''China is catching up / ahead'') which shapes how
+    readers evaluate US tech policy. Part of MIT TR + FT ''State of AI'' partnership (paired with FT''s John Thornhill on
+    ''The US vs. China''). KEY: Her Yann LeCun/AMI interview (Jan 2026) directly intersects with Meta coverage analysis —
+    LeCun left Meta FAIR, his contrarian views on LLMs implicitly critique Meta''s own Llama/Muse Spark strategy. Her OpenClaw-in-China
+    coverage shows MIT TR tracks open-source AI tools'' global adoption patterns, including in markets where Meta competes.'
 - career:
   - beat: general news
     end: 2013-12
