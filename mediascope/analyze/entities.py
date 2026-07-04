@@ -308,6 +308,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Gizmodo",
             "The New Yorker", "New Yorker",
             "Fast Company",
+            "PYMNTS", "Barron's", "Wall Street Journal", "WSJ",
         ],
     },
     "Whistleblowers/Critics": {
@@ -644,6 +645,20 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Character.AI", "Character AI",
         ],
         "regex": r"(?<!\w)(Scale AI|Covalen|Character\.?AI)(?!\w)",
+    },
+    "Financial Services": {
+        "aliases": [
+            "Visa", "Mastercard", "American Express", "Amex",
+            "Goldman Sachs", "JPMorgan", "JPMorgan Chase", "JP Morgan",
+            "Morgan Stanley", "Bank of America", "Citigroup", "Citi",
+            "Wells Fargo",
+            "PayPal", "Stripe", "Square", "Block Inc",
+            "Adyen", "Worldpay", "Fiserv", "FIS",
+            "Discover Financial", "Discover",
+            "Capital One",
+            "SWIFT", "Visa Direct", "Mastercard Send",
+        ],
+        "regex": r"(?<!\w)(Visa(?!\s+(?:application|interview|status|waiver|holder|stamp|fee|office|policy|requirement|process|categor))|Mastercard|American Express|(?-i:Amex)|Goldman Sachs|JPMorgan(?:\s+Chase)?|JP Morgan|Morgan Stanley|Bank of America|Citigroup|(?-i:Citi)(?=\s+(?:is|was|has|had|'s|,|group|bank))|Wells Fargo|PayPal|Stripe(?=\s+(?:is|was|has|had|'s|,|payment|process|partner|integration|Inc|announced|said|report))|Square(?=\s+(?:is|was|has|had|'s|,|payment|terminal|reader|Inc|announced|said))|Block Inc|Adyen|Worldpay|Fiserv|(?-i:FIS)(?=\s+(?:is|was|has|had|payment|process|Global))|Discover Financial|Capital One|(?-i:SWIFT)(?=\s+(?:network|payment|transfer|system|code|message))|Visa Direct|Mastercard Send)(?!\w)",
     },
 }
 

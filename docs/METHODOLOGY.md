@@ -834,7 +834,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **59 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **60 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -852,7 +852,7 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 59 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 60 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
@@ -916,7 +916,7 @@ The following table documents all 59 entity clusters shipped with MediaScope, or
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
-| **Media/Publications** | 27 | The New York Times, New York Times, NYT, The Washington Post, Washington Post, The Guardian (+21 more) |
+| **Media/Publications** | 31 | The New York Times, New York Times, NYT, The Washington Post, Washington Post, The Guardian (+25 more) |
 | **Whistleblowers/Critics** | 10 | Sarah Wynn-Williams, Wynn-Williams, Frances Haugen, Haugen, Sophie Zhang, Christopher Wylie (+4 more) |
 | **Celebrity/Influencer** | 2 | Kylie Jenner, Jenner |
 
@@ -951,6 +951,7 @@ The following table documents all 59 entity clusters shipped with MediaScope, or
 | **VC/Tech Investors** | 10 | Marc Andreessen, Andreessen, Andreessen Horowitz, a16z, Sequoia Capital, Sequoia (+4 more) |
 | **Prediction Markets/Fintech** | 13 | Polymarket, Kalshi, Robinhood, Interactive Brokers, PredictIt, Metaculus (+7 more) |
 | **Indian Fintech** | 4 | CRED, Kunal Shah, PhonePe, UPI |
+| **Financial Services** | 27 | Visa, Mastercard, American Express, Amex, Goldman Sachs, JPMorgan, JPMorgan Chase, PayPal, Stripe, Adyen (+17 more) |
 
 #### Labor, Geopolitics & Society
 
@@ -970,7 +971,7 @@ The following table documents all 59 entity clusters shipped with MediaScope, or
 
 ### 15.4 Cluster Growth History
 
-Entity clusters are added organically as new articles reveal detection gaps. The toolkit launched with 21 core clusters covering the primary analysis targets and their major competitors. Growth to 59 clusters reflects the expanding scope of coverage analysis:
+Entity clusters are added organically as new articles reveal detection gaps. The toolkit launched with 21 core clusters covering the primary analysis targets and their major competitors. Growth to 60 clusters reflects the expanding scope of coverage analysis:
 
 | Phase | Clusters Added | Trigger |
 |---|---|---|
@@ -983,6 +984,7 @@ Entity clusters are added organically as new articles reveal detection gaps. The
 | **Labor & Society** | +4 | WebProNews Dublin contractors, MIT TR Chinese workers: Labor/Unions, Chinese AI, Chinese Tech Platforms, Australia |
 | **Research & Policy** | +3 | Cross-article: Policy Research, Education/Advocacy, Cybersecurity/Research |
 | **Consumer & Misc** | +14 | Ongoing: Garmin, EssilorLuxottica, Smart Glasses Competitors, Indian Fintech, etc. |
+| **Financial Services** | +1 | PYMNTS agentic commerce article (Jul 3): Visa, Mastercard, AmEx, Goldman Sachs, Adyen, PayPal, Stripe, JPMorgan, etc. |
 
 ### 15.5 False-Positive Prevention
 

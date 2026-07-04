@@ -12003,3 +12003,63 @@ VADER gave 0.99 compound to this editorially ambivalent-to-negative article abou
 ### Tests
 1307 passed (3 pre-existing deselected), 2 xfailed, 79 structural consistency guards pass. 0 new regressions.
 
+
+---
+
+## 2026-07-04 01:00 PT — Type A (Article Deep Dive)
+
+### Article
+**PYMNTS: "Zuckerberg: AI Agents Are Advancing Slower Than Expected"** (Jul 3, 2026)
+
+Payments trade publication covering Zuckerberg's internal town hall admission that AI agents haven't progressed as expected, the messy 10% workforce restructuring, and Bosworth's mouse-tracking data incident. Contrasts Meta's caution against payments industry momentum (Visa, Mastercard, AmEx, Goldman Sachs, Adyen building agentic commerce).
+
+### Gaps Found
+
+**1. Entity detection — Financial Services cluster missing (FIXED):**
+No entity cluster existed for financial services. Visa, Mastercard, American Express, Goldman Sachs, Adyen, PayPal, Stripe, JPMorgan — all completely invisible to the toolkit. Added new "Financial Services" cluster with 27 aliases + context-aware regex (disambiguates "Visa" from immigration, "Stripe" from generic usage, etc.).
+
+**2. Media/Publications aliases incomplete (FIXED):**
+PYMNTS, Barron's, Wall Street Journal, WSJ missing from Media/Publications cluster. Added.
+
+**3. VADER sentiment scoring gap (DOCUMENTED):**
+VADER compound=0.9598 (very positive) for a "disappointment/failed expectations" article. Forward-looking optimism language ("significant benefits," "24-fold increase") dominates negative content ("miscalculated," "haven't come to fruition"). Known VADER limitation — lexical scoring can't weigh narrative arc. TextBlob polarity (0.051) and composite overall_tone (0.5964) are more reasonable.
+
+**4. Topic classification gap (DOCUMENTED):**
+`privacy_data` (0.49) outranks `ai_development` (0.47) because mouse-tracking paragraph triggers 6 keywords in one paragraph. Primary topic (AI development pace) ranks second. Suggests need for structural weighting (lede > body-mid) or density normalization.
+
+**5. Confession framing pattern gap (IDENTIFIED, not fixed this iteration):**
+"A rare admission" without "in" prefix doesn't match the pattern `\bin (?:a |an )?(?:rare|...)`. PYMNTS text: "a rare admission from the executive." Type D fix for next toolkit quality cycle.
+
+### Changes Made
+
+**entities.py:**
+- Added "Financial Services" cluster with 27 aliases and context-aware regex
+- Added PYMNTS, Barron's, Wall Street Journal, WSJ to Media/Publications aliases
+
+**docs/METHODOLOGY.md:**
+- Updated cluster count 59→60
+- Added Financial Services row to §15.3 cluster table
+- Updated Media/Publications alias count 27→31
+- Added Financial Services to §15.4 growth history
+
+**docs/ARCHITECTURE.md:**
+- Updated cluster reference count 59→60
+
+**docs/QUALITY_STANDARDS.md:**
+- Updated annotated article count 90→91
+
+**README.md:**
+- Added PYMNTS article entry to annotated articles table
+
+**examples/sample_output/:**
+- `pymnts_zuckerberg_ai_agents_slower_2026_07_03_article.txt` — full article text
+- `pymnts_zuckerberg_ai_agents_slower_2026_07_03_analysis.md` — full analysis with toolkit comparison
+
+### Results (post-fix)
+- Entity detection: Meta (10), Media/Publications (5 incl PYMNTS), Financial Services (5), Anthropic (2)
+- 5 framing devices: scale_magnitude, confession_framing, ironic_quotation, juxtaposition, loaded_language
+- 5 sources: 2 named (Zuckerberg, Bosworth), 2 documentary (Reuters recording), 1 organizational (Reuters)
+- 91 annotated articles, 60 entity clusters, 612 total aliases
+
+### Tests
+1305 passed (3 pre-existing failures deselected), 2 xfailed, 79 structural consistency guards pass. 0 new regressions.
