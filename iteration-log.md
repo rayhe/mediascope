@@ -12350,3 +12350,43 @@ VADER compound=0.9598 (very positive) for a "disappointment/failed expectations"
 
 ### Tests
 1305 passed (3 pre-existing failures deselected), 2 xfailed, 79 structural consistency guards pass. 0 new regressions.
+
+---
+
+## 2026-07-04 10:00 PT — Type D: Toolkit Quality (Fix 2 xfails + bare confession pattern)
+
+### Focus
+Resolve two long-standing xfailed tests and close a known gap in framing detection.
+
+### Changes
+1. **Compound publication source extraction (sources.py)**
+   - Added "according to [the] [Org]" pattern to Pattern 6 (organizational sources)
+   - Expanded `_KNOWN_ORGS` with compound publication names: Business Insider, Daily Beast, Daily Mail, Tech Review, Technology Review, Morning Post, Evening Standard
+   - Publications in `_NAME_STOP_NAMES` (which blocks person-name false positives) are now properly extractable as `source_type="organizational"` through the dedicated org pattern
+   - Removed `@pytest.mark.xfail` from both `test_business_insider_full_name_extracted` and `test_daily_beast_full_name_extracted` — both now pass
+
+2. **Bare confession framing pattern (framing.py)**
+   - Added pattern for "a rare admission" / "the rare admission" / "his rare admission" / "Zuckerberg's rare acknowledgment" WITHOUT the "in" prefix
+   - Previously only "in a rare admission" was detected; now bare forms match too
+   - Supports articles/possessives/named possessives as determiners
+   - Directly addresses known gap documented in MEMORY.md
+
+3. **16 new tests (test_type_d_fixes.py)**
+   - 9 tests for compound publication source extraction (Business Insider, Daily Beast, Daily Mail; source_type validation; fragment leak prevention)
+   - 7 tests for bare confession framing (a/the/his/possessive variants, "in" prefix still works, no false positives on "admission fee")
+
+4. **Structural consistency updates**
+   - Pattern count: 381 → 382
+   - Test count: 1335+2xfail → 1353+0xfail (net +16 new tests, 2 xfails resolved)
+   - Test files: 52 → 53
+   - ARCHITECTURE.md, README.md, test_structural_consistency.py all updated
+
+### Commit
+`0c15d5d` — pushed to GitHub
+
+### Tests
+1353 passed, 0 xfailed (down from 2), 0 failures. All structural consistency guards pass.
+
+### Known gaps closed
+- ✅ "bare 'a rare admission' confession pattern" (was in MEMORY.md known gaps list)
+- ✅ Compound publication source extraction xfails (Business Insider, Daily Beast)
