@@ -3159,6 +3159,21 @@ _CONFESSION_FRAMING_PATTERNS: list[re.Pattern] = [
         r"(?:admission|acknowledgment|acknowledgement|concession|confession)",
         re.IGNORECASE,
     ),
+    # Bare "a rare admission" / "the rare admission" / "his rare
+    # admission" — same editorial meta-framing without the "in" prefix.
+    # Common in headlines and sentence-initial constructions:
+    #   "A rare admission from Zuckerberg..."
+    #   "The rare admission came during a town hall..."
+    #   "His rare admission that agents hadn't progressed..."
+    # Also catches possessive "Zuckerberg's rare admission".
+    re.compile(
+        r"\b(?:a |an |the |his |her |its |their |"
+        r"[A-Z][a-z]+(?:'s|'s|\u2019s) )"
+        r"(?:rare|unusual|candid|remarkable|stunning|"
+        r"surprising|extraordinary|notable|frank|startling)\s+"
+        r"(?:admission|acknowledgment|acknowledgement|concession|confession)",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["confession_framing"] = _CONFESSION_FRAMING_PATTERNS

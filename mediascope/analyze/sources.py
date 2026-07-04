@@ -1158,6 +1158,15 @@ def extract_sources(text: str) -> list[SourceMention]:
     # rather than a person.  They are important for stance analysis because
     # company statements often represent the target entity's official position.
     org_source_patterns: list[re.Pattern] = [
+        # "according to [the] [Org]" — organizational attribution via
+        # "according to" that won't match person-name Pattern 3 because
+        # compound publication names are in _NAME_STOP_NAMES.
+        # Example: "According to Business Insider, the project began..."
+        # Example: "According to the Daily Beast, sources confirmed..."
+        re.compile(
+            r"\b[Aa]ccording to (?:the )?"
+            r"([A-Z][a-z]+ [A-Z][a-z]+)\b",
+        ),
         # "[Company] said/told/confirmed in [a statement/an emailed response]"
         re.compile(
             rf"\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)"
@@ -1197,6 +1206,12 @@ def extract_sources(text: str) -> list[SourceMention]:
         "netflix", "uber", "lyft", "airbnb", "stripe", "shopify",
         "reuters", "bloomberg",
         "alibaba", "baidu", "tencent", "huawei", "xiaomi",
+        # Compound publication names — these are also in _NAME_STOP_NAMES
+        # to prevent person-name false positives, but should still be
+        # extractable as organizational/publication sources.
+        "business insider", "daily beast", "daily mail",
+        "tech review", "technology review",
+        "morning post", "evening standard",
     }
 
     for pat in org_source_patterns:

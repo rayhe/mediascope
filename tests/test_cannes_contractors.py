@@ -159,8 +159,6 @@ class TestBusinessInsiderSourceSplitting:
         assert "Insider" not in names, \
             "'Insider' should not appear as standalone source from 'Business Insider reported'"
 
-    @pytest.mark.xfail(reason="Business Insider in _NAME_STOP_NAMES blocks Pattern 1; "
-                        "full compound-name extraction is a future enhancement")
     def test_business_insider_full_name_extracted(self):
         text = "According to Business Insider, the project began in 2024."
         sources = extract_sources(text)
@@ -175,8 +173,6 @@ class TestBusinessInsiderSourceSplitting:
         assert "Beast" not in names, \
             "'Beast' should not appear as standalone source from 'Daily Beast reported'"
 
-    @pytest.mark.xfail(reason="Daily Beast in _NAME_STOP_NAMES blocks Pattern 1; "
-                        "full compound-name extraction is a future enhancement")
     def test_daily_beast_full_name_extracted(self):
         text = "According to the Daily Beast, sources confirmed the story."
         sources = extract_sources(text)
