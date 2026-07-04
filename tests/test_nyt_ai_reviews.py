@@ -238,14 +238,16 @@ Ana Swanson contributed reporting from Washington."""
         )
 
     def test_total_device_types(self):
-        """Article should have exactly 4 device types: anonymous_authority,
-        isolation_framing, pressure_language, sovereignty_framing.
+        """Article should have exactly 5 device types: anonymous_authority,
+        competitive_deficit, isolation_framing, pressure_language,
+        sovereignty_framing.
         sovereignty_framing fires because the article frames the AI review
-        request through national security language near Meta."""
+        request through national security language near Meta.
+        competitive_deficit fires on competitive gap language."""
         devices = detect_framing_devices(self.ARTICLE)
         types = set(d.device_type for d in devices)
-        assert types == {"anonymous_authority", "isolation_framing", "pressure_language", "sovereignty_framing"}, (
-            f"Expected exactly 4 device types, got: {types}"
+        assert types == {"anonymous_authority", "competitive_deficit", "isolation_framing", "pressure_language", "sovereignty_framing"}, (
+            f"Expected exactly 5 device types, got: {types}"
         )
 
 
@@ -372,8 +374,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 53, (
-            f"Expected 52 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 57, (
+            f"Expected 57 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -454,6 +456,14 @@ class TestFramingDeviceRegistry:
             "cross_publication_import",
             # Competitive positioning (1) — elevating a competitor as beneficiary of subject's failure
             "competitive_positioning",
+            # Policy reversal (1) — subject reversing previous stance/decision
+            "policy_reversal",
+            # Competitive deficit (1) — subject lagging behind competitors
+            "competitive_deficit",
+            # Absence as evidence (1) — non-action framed as proof of guilt
+            "absence_as_evidence",
+            # Silence as guilt (1) — non-response treated as admission
+            "silence_as_guilt",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual

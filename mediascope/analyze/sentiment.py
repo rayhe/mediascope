@@ -1248,6 +1248,24 @@ _ADVERSARIAL_DEVICE_TYPES: set[str] = {
     # broader systemic threat ("sets a precedent", "implying that other
     # features may be rate-limited"), creating anticipatory consumer anxiety.
     "slippery_slope",
+    # Competitive deficit enumerates multiple named competitors to amplify
+    # the subject's failure or inadequacy ("failed to launch a successful
+    # rival to OpenAI's ChatGPT, Google's Gemini, and Anthropic's Claude").
+    # The pile-on effect is inherently adversarial because it frames the
+    # subject as surrounded and outpaced.
+    # Discovered in Reuters Zuckerberg town hall analysis (Jul 3 2026).
+    "competitive_deficit",
+    # Absence-as-evidence frames non-action, non-disclosure, or omission
+    # as proof of guilt or bad intent ("Meta did not do that", "the audit
+    # that never happened").  Converts non-events into indictments.
+    # Discovered in Newzlet Meta/Cannes editorial analysis (Jul 3 2026).
+    "absence_as_evidence",
+    # Silence-as-guilt explicitly treats silence or non-response as a
+    # confession ("that silence is its own answer", "the lack of denial
+    # speaks volumes").  Distinct from refusal_amplification which notes
+    # no-comment factually; this device asserts silence proves something.
+    # Discovered in Newzlet Meta/Cannes editorial analysis (Jul 3 2026).
+    "silence_as_guilt",
 }
 
 # Anchor device types that create negative reader takeaway even when

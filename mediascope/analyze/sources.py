@@ -1055,6 +1055,97 @@ def extract_sources(text: str) -> list[SourceMention]:
                 source_type="collective_research",
             ))
 
+    # Pattern 9: Documentary sources — recordings, documents, filings,
+    # court records, internal materials obtained or reviewed by the
+    # publication.  These are not human sources but artifacts cited as
+    # evidence.  Common in investigative and financial journalism.
+    # Tagged source_type="documentary".
+    #
+    # Examples:
+    #   "a recording heard by Reuters"
+    #   "documents obtained by The Guardian"
+    #   "internal documents seen by Wired"
+    #   "according to a recording of the meeting"
+    #   "court records show"
+    #   "a filing obtained by Bloomberg"
+    #   "an internal memo reviewed by The New York Times"
+    #   "the recording, a copy of which was obtained by..."
+    documentary_patterns: list[re.Pattern] = [
+        # "a/the [adj] recording/document/filing heard/obtained/seen/reviewed by [Outlet]"
+        re.compile(
+            r"\b(?:an?\s+|the\s+)"
+            r"(?:internal\s+|leaked\s+|confidential\s+|draft\s+)?"
+            r"(?:recording|document|documents|filing|filings|memo|"
+            r"memorandum|presentation|spreadsheet|email|emails|"
+            r"letter|letters|report|tape|audio|video|transcript|"
+            r"slide\s+deck|deck|briefing)\s+"
+            r"(?:heard|obtained|seen|reviewed|viewed|examined|"
+            r"accessed|acquired|provided|shared|furnished|"
+            r"made available)\s+"
+            r"(?:by|to)\s+"
+            r"(?:the\s+)?"
+            r"[A-Z][A-Za-z\s]{2,30}",
+            re.IGNORECASE,
+        ),
+        # "according to a/the recording/document/filing"
+        re.compile(
+            r"\baccording\s+to\s+"
+            r"(?:a|an|the|one|two|several|multiple)\s+"
+            r"(?:internal\s+|leaked\s+|confidential\s+|draft\s+)?"
+            r"(?:recording|document|documents|filing|filings|memo|"
+            r"memorandum|presentation|spreadsheet|email|emails|"
+            r"letter|report|tape|audio|video|transcript|copy)\b",
+            re.IGNORECASE,
+        ),
+        # "court records/filings show/indicate/reveal"
+        re.compile(
+            r"\b(?:court|legal|regulatory|SEC|FTC|patent|judicial)\s+"
+            r"(?:records?|filings?|documents?|papers?|proceedings?)\s+"
+            r"(?:show|shows?|indicate|indicates?|reveal|reveals?|"
+            r"suggest|suggests?|confirm|confirms?|state|states?)\b",
+            re.IGNORECASE,
+        ),
+        # "a copy of which was obtained/provided/shared"
+        re.compile(
+            r"\b(?:a|the)\s+copy\s+of\s+which\s+was\s+"
+            r"(?:obtained|provided|shared|furnished|"
+            r"made available|given)\b",
+            re.IGNORECASE,
+        ),
+        # "documents/emails/recordings [that/which] [Outlet] has seen/reviewed"
+        re.compile(
+            r"\b(?:internal\s+|leaked\s+|confidential\s+)?"
+            r"(?:recordings?|documents?|filings?|memos?|emails?|"
+            r"letters?|reports?|tapes?|transcripts?)\s+"
+            r"(?:that|which)\s+"
+            r"(?:the\s+)?[A-Z][A-Za-z\s]{2,30}\s+"
+            r"(?:has|have)\s+"
+            r"(?:seen|reviewed|obtained|viewed|examined)\b",
+            re.IGNORECASE,
+        ),
+    ]
+
+    for pat in documentary_patterns:
+        for m in pat.finditer(text):
+            descriptor = m.group().strip()
+            if descriptor.lower() in {n.lower() for n in seen_names}:
+                continue
+            seen_names.add(descriptor)
+
+            ctx_start = max(0, m.start() - 100)
+            ctx_end = min(len(text), m.end() + 200)
+            context = text[ctx_start:ctx_end]
+
+            sources.append(SourceMention(
+                name=descriptor,
+                is_anonymous=False,
+                is_expert=False,
+                affiliation="",
+                quote=_extract_nearby_quote(text, m.start(), m.end()),
+                attribution_verb=_find_attribution_verb(context),
+                source_type="documentary",
+            ))
+
     # Pattern 6: Organizational sources — "Meta said", "Google confirmed",
     # "the company said in a statement", "a spokesperson told Reuters"
     # These are named non-anonymous sources where the speaker is an entity

@@ -11793,3 +11793,86 @@ c. **Density boost** (EI > 0.6 AND adversarial_count ≥ 12): framing_tone ampli
 1259 passed (1257 passed, 2 xfailed). 79 structural consistency guards.
 
 ---
+
+## Iteration 2026-07-03T19:00 PT — Type A: Article Deep Dive
+
+**Article:** 9to5Mac — "An accessibility paywall on Meta Glasses could be good news for Apple Glasses" (Jul 1, 2026)
+**Commit:** 46a91c9 — `feat: competitive_positioning device type + Path I correction + 9to5Mac analysis`
+**Same-event cluster:** Meta Conversation Focus paywall (Jul 1–2, 2026) — companion #3 alongside Android Authority and Gizmodo
+
+### What Was Done
+1. **Fetched and saved article** to `examples/sample_output/9to5mac_meta_glasses_accessibility_paywall_2026_07_01_article.txt`
+2. **Ran toolkit analysis** — identified major VADER failure: +0.67 on clearly negative (-0.35 to -0.50) article
+3. **Root-caused 5 gaps** and applied fixes:
+
+### New Framing Device Type
+- **competitive_positioning** (4 patterns): competitor-benefit, buy-from-better, competitor-virtue, switch-recommendation
+
+### Enhanced Existing Types
+- **consumer_ownership**: +2 variants (company-voice, on-device+paywall collocation)
+- **slippery_slope**: +1 variant (editorial-interpretation-of-hedging)
+
+### Sentiment Improvements
+- 13 consumer-rights emotional language terms (total: 781)
+- 6 negative comparison terms (more reputable, more trustworthy, etc.)
+- **Path I: Direct consumer critique** — new correction path for short opinion pieces with positive agency + high adversarial density + consumer-rights language. Distinct from Path H (sarcastic) and Path A (negative agency).
+
+### Adversarial Device Set
+18 → 21 types (+competitive_positioning, +consumer_ownership, +slippery_slope)
+
+### Results
+| Dimension | Pre-Fix | Post-Fix |
+|-----------|---------|----------|
+| overall_tone | +0.6699 | **-0.2397** |
+| framing_corrected | False | **True** (Path I) |
+| emotional_intensity | 0.3471 | **0.7809** |
+| comparative_framing | 0.0 | **-1.0** |
+| framing devices | 3 | **8** |
+| adversarial count | 1 | **6** |
+
+### Stats
+59 framing device types (53 pattern + 6 structural), 21 adversarial, 351 patterns, 781 emotional terms, 9 correction paths (A–I), 87 annotated articles, 9 same-event clusters.
+
+### Tests
+1257 passed, 0 failed, 2 xfailed. 79 structural consistency guards.
+
+---
+
+## 2026-07-03 21:00 PT — Type A: Article Deep Dive (Newzlet Meta/Cannes Editorial)
+
+### Focus
+Cross-analysis of Newzlet "How Meta Used Fake Teen Accounts to Test Rival AI" (Jul 1, 2026) — AI-assisted secondary analysis of Wired "Project Cannes" investigation. Selected for genre-contrast opportunity: opinion/editorial vs. Wired's investigative reporting.
+
+### Gaps Found & Fixed
+
+**Gap 1: absence_as_evidence (NEW device type)**
+Article uses absence-framing as central argumentative strategy: "Not one task was directed at Meta AI," "The internal audit that never happened," "Meta did not do that." 5 regex patterns added. Added to adversarial device set.
+
+**Gap 2: silence_as_guilt (NEW device type)**
+Article treats silence as confession: "That silence is its own answer." Distinct from refusal_amplification (factual noting of no-comment). 4 regex patterns added. Added to adversarial device set.
+
+**Gap 3: "mandatory" false positive (NOTED, not fixed)**
+"Mandatory" flagged 3x as loaded_language in regulatory context ("mandatory external audit," "mandatory reporting obligation"). Neutral policy language, not emotional. Inflates loaded_language count by ~19%. Deferred to future iteration.
+
+### Device Type Counts
+55 → 57 pattern-matched (+absence_as_evidence, +silence_as_guilt)
+61 → 63 total (57 pattern + 6 structural)
+351 → 369 regex patterns (+9 new)
+21 → 24 adversarial types (+competitive_deficit, +absence_as_evidence, +silence_as_guilt)
+
+### Documentation
+Updated: METHODOLOGY.md (Extended table +5 entries: competitive_deficit, policy_reversal, absence_as_evidence, silence_as_guilt), ARCHITECTURE.md (Extended list, test listing), AGENT_GUIDE.md (adversarial list), QUALITY_STANDARDS.md (adversarial list, annotated count 87→88), README.md (test table, counts), framing.py docstring, cli.py, both example demo scripts, test_nyt_ai_reviews.py, test_structural_consistency.py.
+
+### Cross-Analysis Result
+Newzlet editorial has 32% more framing devices than Wired investigation despite being ~40% shorter. Loaded_language density much higher (16 vs 10). New absence/silence devices are genre-specific to editorial — opinion pieces construct arguments from non-events, investigative pieces report facts.
+
+### Analysis Written
+`examples/sample_output/newzlet_meta_cannes_competitive_intelligence_2026_07_01_analysis.md`
+
+### Stats
+63 framing device types (57 pattern + 6 structural), 24 adversarial, 369 patterns, 88 annotated articles, 9 correction paths (A–I), 9 same-event clusters.
+
+### Tests
+1280 passed (3 pre-existing deselected), 2 xfailed. 79 structural consistency guards all pass.
+
+---

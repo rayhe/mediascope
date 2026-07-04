@@ -447,7 +447,7 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
 ```json
 {
     "name": "detect_framing_devices",
-    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 59 device types across three tiers: core (10 pattern-matched), extended (43 from real-article analysis), and structural post-pass (6 heuristic-based).",
+    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 63 device types across three tiers: core (10 pattern-matched), extended (47 from real-article analysis), and structural post-pass (6 heuristic-based).",
     "parameters": {
         "type": "object",
         "properties": {
@@ -946,7 +946,7 @@ The pipeline evaluates 7 paths in priority order — the first match fires:
 
 Only one framing path (A–F, H, I) fires per article. Path G runs independently before the composite is computed.
 
-**Adversarial device types** (21 types trigger Paths A/B): assumed_consensus, catastrophizing, competitive_positioning, consumer_ownership, editorial_aside, editorial_deflation, emotional_appeal, failure_precedent, guilt_by_association, hypocrisy_frame, isolation_framing, juxtaposition, kicker_framing, loaded_language, military_techno_optimism, power_asymmetry, pressure_language, refusal_amplification, self_referential_investigation, slippery_slope, timeline_implication.
+**Adversarial device types** (24 types trigger Paths A/B): absence_as_evidence, assumed_consensus, catastrophizing, competitive_deficit, competitive_positioning, consumer_ownership, editorial_aside, editorial_deflation, emotional_appeal, failure_precedent, guilt_by_association, hypocrisy_frame, isolation_framing, juxtaposition, kicker_framing, loaded_language, military_techno_optimism, power_asymmetry, pressure_language, refusal_amplification, self_referential_investigation, silence_as_guilt, slippery_slope, timeline_implication.
 
 **Anchor device types** (3 types trigger Path C): kicker_framing, self_referential_investigation, juxtaposition.
 

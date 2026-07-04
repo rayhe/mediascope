@@ -5075,6 +5075,254 @@ _COMPETITIVE_POSITIONING_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["competitive_positioning"] = _COMPETITIVE_POSITIONING_PATTERNS
 
 
+# ---------------------------------------------------------------------------
+# Policy reversal: structural framing device that highlights a company
+# reversing a previous policy or position.  The article states both the
+# old policy and its replacement, drawing reader attention to the
+# contradiction.  This is NOT inherently adversarial — it may be
+# neutral reporting of a genuine change — so it is NOT added to
+# _ADVERSARIAL_DEVICE_TYPES.
+#
+# Discovered in Reuters Zuckerberg town hall analysis (Jul 3 2026):
+# "originally had no way to opt out" followed by reporting that "Meta
+# Platforms will not use facial recognition... on an opt-in basis."
+# The MCI mouse-tracking reversal (mandatory → opt-in) and capex
+# guidance revisions ($60-65B → $125-145B) are also policy reversals
+# that existing framing device types missed entirely.
+#
+# Distinct from hypocrisy_frame (which requires ironic self-
+# contradiction between stated values and behavior).  Policy reversal
+# captures factual policy-A-then-policy-B transitions, regardless of
+# whether the author frames them as hypocritical.
+# ---------------------------------------------------------------------------
+_POLICY_REVERSAL_PATTERNS: list[re.Pattern] = [
+    # "originally/initially/previously [had/was/required] X ... now/will [Y]"
+    re.compile(
+        r"\b(?:originally|initially|previously|formerly|at first|"
+        r"at launch|when (?:it |they )?(?:first |originally )?(?:launched|started|rolled out|introduced))\s+"
+        r"(?:had|was|were|required|mandated|set|used|allowed|offered|"
+        r"defaulted to|included)\b"
+        r".{10,200}?"
+        r"\b(?:now|but now|will now|has since|have since|has been|"
+        r"have been|is now|are now|will be|will instead|"
+        r"reversed|changed to|switched to|moved to|shifted to|"
+        r"transitioned to|converted to)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "reversed/walked back/backtracked/scrapped/abandoned/dropped"
+    re.compile(
+        r"\b(?:reversed?|walk(?:ed|ing)?\s+back|backtrack(?:ed|ing|s)?|"
+        r"scrap(?:ped|ping|s)?|abandon(?:ed|ing|s)?|"
+        r"drop(?:ped|ping|s)?|ditched?|overturned?|"
+        r"rethink(?:ing)?|reconsider(?:ed|ing)?|"
+        r"u-turn(?:ed)?|about-face|flip(?:ped|-flopped?))\s+"
+        r"(?:its|their|the|a|an)?\s*"
+        r"(?:earlier|original|previous|initial|prior|existing|"
+        r"long-?standing|controversial)?\s*"
+        r"(?:policy|decision|plan|approach|strategy|stance|position|"
+        r"requirement|mandate|rule|practice|feature|rollout)\b",
+        re.IGNORECASE,
+    ),
+    # "mandatory → voluntary" / "required → optional" / "opt-out → opt-in"
+    re.compile(
+        r"\b(?:(?:from|was|were|moved from|changed from|switched from)\s+)?"
+        r"(?:mandatory|required|compulsory|default|automatic|opt-?out)\b"
+        r".{1,60}?"
+        r"\b(?:to\s+)?(?:voluntary|optional|opt-?in|elective|"
+        r"on (?:a |an )?(?:opt-?in|voluntary|optional)\s+basis)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "no longer [requires/uses/collects]" — cessation of previous policy
+    re.compile(
+        r"\b(?:no longer|will no longer|would no longer|stopped|"
+        r"ceased|discontinued)\s+"
+        r"(?:require|requires?|use|uses?|collect|collects?|"
+        r"mandate|mandates?|enforce|enforces?|track|tracks?|"
+        r"store|stores?|retain|retains?|share|shares?)\b",
+        re.IGNORECASE,
+    ),
+    # "[Entity] had [policy] but [new policy]" via despite-reversal
+    re.compile(
+        r"\b(?:despite (?:earlier|previously|initially) "
+        r"(?:announcing|committing|promising|pledging|stating|saying))\b"
+        r".{5,150}?"
+        r"\b(?:now|instead|has since|have since|will|reversed?)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+
+_DEVICE_PATTERNS["policy_reversal"] = _POLICY_REVERSAL_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Competitive deficit: editorial device that explicitly lists multiple
+# competitors to amplify the subject's failure or inadequacy.  The
+# rhetorical effect is a "pile-on" that makes the subject look
+# surrounded and outpaced.  Distinct from competitive_positioning
+# (which elevates one specific competitor as preferable) — this device
+# enumerates three or more rivals to create an impression of systemic
+# failure.
+#
+# Discovered in Reuters Zuckerberg town hall analysis (Jul 3 2026):
+# "failed to launch a successful rival to OpenAI's ChatGPT, Google's
+# Gemini, and Anthropic's Claude" — the explicit listing of three named
+# competitors with their products turns a factual comparison into an
+# adversarial framing device that none of the existing types captured.
+#
+# Also appears in Barron's analysis (Jul 3 2026): "falling behind
+# competitors in the AI race" with later enumeration of "OpenAI,
+# Google, and Anthropic."
+# ---------------------------------------------------------------------------
+_COMPETITIVE_DEFICIT_PATTERNS: list[re.Pattern] = [
+    # "failed to [verb] ... rival [Company A]'s [Product], [Company B]'s
+    # [Product], and [Company C]'s [Product]"
+    re.compile(
+        r"\b(?:failed?|struggling|unable|has(?:n't| not)|"
+        r"have(?:n't| not)|couldn't|could not)\s+(?:to\s+)?"
+        r"(?:launch|build|create|develop|deliver|produce|ship|"
+        r"release|match|compete|rival|catch up|keep up|keep pace)\b"
+        r".{5,200}?"
+        r"\b(?:OpenAI|Google|Anthropic|Apple|Microsoft|Amazon|"
+        r"Samsung|Nvidia|xAI|Mistral|DeepSeek)\b"
+        r".{1,80}?"
+        r"\b(?:OpenAI|Google|Anthropic|Apple|Microsoft|Amazon|"
+        r"Samsung|Nvidia|xAI|Mistral|DeepSeek)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "lags behind / trails / has yet to match [list of competitors]"
+    re.compile(
+        r"\b(?:lag(?:s|ged|ging)?\s+behind|trail(?:s|ed|ing)?|"
+        r"has yet to (?:match|rival|catch|reach)|"
+        r"fallen? behind|falling behind|"
+        r"playing catch-?up|"
+        r"left behind by)\b"
+        r".{5,150}?"
+        r"\b(?:competitors?|rivals?|peers?)\s+"
+        r"(?:including|such as|like|namely)\b"
+        r".{1,150}?"
+        r"\b(?:and|,)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "competitors including [A], [B], and [C]" — explicit enumeration
+    re.compile(
+        r"\b(?:competitors?|rivals?|other (?:companies|players|firms))\s+"
+        r"(?:including|such as|like|namely)\s+"
+        r"(?:[A-Z]\w+(?:'s\s+\w+)?,?\s*){2,}"
+        r"(?:and\s+[A-Z]\w+(?:'s\s+\w+)?)\b",
+        re.IGNORECASE,
+    ),
+    # "while/whereas [A], [B], and [C] have [positive verb]" — contrast listing
+    re.compile(
+        r"\b(?:while|whereas|even as|meanwhile)\s+"
+        r"(?:OpenAI|Google|Anthropic|Apple|Microsoft|Amazon)\b"
+        r".{1,60}?"
+        r"\b(?:OpenAI|Google|Anthropic|Apple|Microsoft|Amazon)\b"
+        r".{1,60}?"
+        r"\b(?:have|has|had|already|launched|shipped|released|built|"
+        r"achieved|surpassed|outpaced)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+
+_DEVICE_PATTERNS["competitive_deficit"] = _COMPETITIVE_DEFICIT_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# ABSENCE_AS_EVIDENCE — 2026-07-03
+# Detects when an author frames the *absence* of an action, audit, or
+# disclosure as proof of guilt or bad intent.  This is a rhetorical device
+# that converts non-events into indictments:
+#   "Not one task was directed at Meta AI"
+#   "The internal audit that never happened is the data point"
+#   "Meta did not do that."
+#   "the company never disclosed"
+# Common in editorial / analysis pieces covering corporate accountability.
+# ---------------------------------------------------------------------------
+
+_ABSENCE_AS_EVIDENCE_PATTERNS: list[re.Pattern] = [
+    # "Not one [noun] was [verb]ed at/to/by [entity]"
+    re.compile(
+        r"\bnot (?:one|a single)\s+\w+\s+(?:was|were|has been|had been)\s+"
+        r"(?:directed|aimed|targeted|focused|applied|devoted|assigned)\b",
+        re.IGNORECASE,
+    ),
+    # "the [noun] that never happened / never took place / never occurred"
+    re.compile(
+        r"\bthe\s+\w+(?:\s+\w+)?\s+that\s+never\s+"
+        r"(?:happened|occurred|took place|materialised|materialized|existed)\b",
+        re.IGNORECASE,
+    ),
+    # "[Entity] did not [do X]" as a standalone accusatory sentence
+    # (short sentence, < 60 chars total, ending with period)
+    re.compile(
+        r"(?:^|\.\s+)([A-Z]\w+\s+(?:did not|didn't)\s+(?:do that|disclose|report|"
+        r"share|address|respond|act|cooperate|comply|notify))\.",
+        re.MULTILINE,
+    ),
+    # "[Entity] never [verb]ed" / "has never [verb]ed"
+    re.compile(
+        r"\b(?:has|had|have)?\s*never\s+"
+        r"(?:disclosed|reported|acknowledged|addressed|tested|audited|shared|"
+        r"flagged|notified|informed|consulted)\b",
+        re.IGNORECASE,
+    ),
+    # "the company/they/Meta chose not to / failed to / declined to"
+    re.compile(
+        r"\b(?:the company|Meta|they|it)\s+"
+        r"(?:chose not to|failed to|declined to|neglected to|opted not to|"
+        r"did not bother to|made no effort to)\s+\w+",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["absence_as_evidence"] = _ABSENCE_AS_EVIDENCE_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# SILENCE_AS_GUILT — 2026-07-03
+# Detects when an author explicitly treats silence, non-response, or
+# non-disclosure as a confession or admission of guilt:
+#   "That silence is its own answer"
+#   "The lack of denial speaks volumes"
+#   "their refusal to comment is telling"
+# Distinct from refusal_amplification (which notes a no-comment factually);
+# silence_as_guilt goes further by asserting the silence proves something.
+# ---------------------------------------------------------------------------
+
+_SILENCE_AS_GUILT_PATTERNS: list[re.Pattern] = [
+    # "that silence is its own answer/admission/confession"
+    re.compile(
+        r"\b(?:that|this|the|their)\s+silence\s+"
+        r"(?:is|was|speaks|tells|reveals|amounts to|constitutes)\s+"
+        r"(?:its own|an?|the|telling|volumes|damning|everything)",
+        re.IGNORECASE,
+    ),
+    # "the lack of [denial/response/comment] speaks volumes / is telling"
+    re.compile(
+        r"\b(?:the|their|its)\s+(?:lack|absence)\s+of\s+"
+        r"(?:denial|response|comment|explanation|transparency|disclosure)\s+"
+        r"(?:speaks|is|was|says|reveals|tells)\b",
+        re.IGNORECASE,
+    ),
+    # "refusal to [comment/respond/disclose] is [telling/damning/revealing]"
+    re.compile(
+        r"\brefusal to\s+(?:comment|respond|disclose|engage|explain|address|deny)\s+"
+        r"(?:is|was|seems?|appears?)\s+"
+        r"(?:telling|damning|revealing|significant|itself|notable|conspicuous)",
+        re.IGNORECASE,
+    ),
+    # "no comment/response/denial — and that says/tells ..."
+    re.compile(
+        r"\bno\s+(?:comment|response|denial|answer|explanation)\b"
+        r".{0,40}?"
+        r"\b(?:says|tells|speaks|is telling|is significant)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+
+_DEVICE_PATTERNS["silence_as_guilt"] = _SILENCE_AS_GUILT_PATTERNS
+
+
 # --- Delayed defense ---
 # Structural post-pass: detects when the subject company's response
 # or defense first appears in the last 35% of the article.  This is
@@ -5174,17 +5422,18 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 53 pattern-matched device types plus 6 structural
-    post-pass types (59 total).
+    Scans for 57 pattern-matched device types plus 6 structural
+    post-pass types (63 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (53): analogy_metaphor, anonymous_authority,
+    Pattern-matched (57): absence_as_evidence, analogy_metaphor,
+    anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
-    ceo_personalization, competitive_positioning,
+    ceo_personalization, competitive_deficit, competitive_positioning,
     commodification_metaphor, confession_framing,
     consumer_ownership,
     corporate_reassurance_undercut, cross_publication_import,
@@ -5197,14 +5446,15 @@ def detect_framing_devices(
     ironic_quotation, isolation_framing,
     juxtaposition, latecomer_narrative, litigation_framing,
     loaded_language, military_techno_optimism, outsourced_intensity,
-    pathologizing_metaphor, power_asymmetry, precedent_analogy,
+    pathologizing_metaphor, policy_reversal, power_asymmetry,
+    precedent_analogy,
     pressure_language, refusal_amplification, regulatory_favoritism,
     regulatory_shadow, rhetorical_question, sarcastic_correction,
     scale_magnitude, selective_omission_signal,
     selective_rehabilitation, self_referential_investigation,
-    slippery_slope, sovereignty_framing, straw_man,
-    taxonomy_framing, timeline_implication, two_tier_treatment,
-    usage_dismissal_undercut,
+    silence_as_guilt, slippery_slope, sovereignty_framing,
+    straw_man, taxonomy_framing, timeline_implication,
+    two_tier_treatment, usage_dismissal_undercut,
     and worker_replacement_irony.
 
     Structural post-pass (6): delayed_defense, kicker_framing,
