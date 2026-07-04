@@ -926,9 +926,64 @@ known_conflicts:
       (Apr 4, 2026 — Judge Stein: 43-page opinion keeping all copyright claims alive,
       rejecting time-bar defense, preserving contributory infringement claims; only DMCA
       distribution claims dismissed as requiring "close to identical" copies). Daily News
-      (Tribune Publishing) joined as co-plaintiff with trademark dilution claims. CASCADING:
-      Microsoft derivative lawsuit (Eric Anderson v. MSFT, Jul 1, 2026, W.D. Wash.) alleges
-      execs concealed copyright training practices. No trial date set. Discovery ongoing.
+      (Tribune Publishing) joined as co-plaintiff with trademark dilution claims.
+      
+      MDL DISCOVERY DEVELOPMENTS (Apr–Jun 2026):
+      - Apr 7 (Dkt. 1492): Judge Wang issued Memorandum & Opinion criticizing OpenAI's
+        30(b)(6) witness Jonathan Monaco's deposition preparation as "not sufficient."
+        Counsel's objections "unnecessarily delayed and impeded" the deposition. Sanctions
+        threatened: monetary or "deemed admissions." Additional 3.5-hour deposition ordered
+        for April 8, 2026. "Project Giraffe" internal meeting notes discussed but Monaco
+        claimed they were merely "a running document" — court found this evasive.
+      - Apr 1 (Dkt. 1488): Judge Stein ordered Gracenote Media Services to show cause why
+        its case should not be STAYED pending resolution of summary judgment motions in
+        other active MDL cases. This is the FIRST signal that SJ motions are being
+        contemplated in the core cases — a major procedural milestone.
+      - Apr 21 (Dkt. 1501): Encyclopaedia Britannica action STAYED by stipulation pending
+        SJ motions in other MDL cases. Parties must file joint status report within 30 days
+        of SJ rulings. Confirms SJ motion schedule is driving the MDL timeline.
+      - Mar 30 & Apr 16: Confidential discovery settlement conferences held (Dkt. 1479).
+        Judge Wang advanced March 30 conference from 2 PM to 12 PM, suggesting urgency.
+      - May 21 (Dkt. 1566): Court ordered OpenAI to produce "deposition materials" from
+        four witness depositions in Musk v. Altman (N.D. Cal., 4:24-cv-4722) by May 22.
+      - Jun 2 (Dkt. 1584): Judge Wang ordered OpenAI to produce deposition EXHIBITS
+        "FORTHWITH" after OpenAI produced transcripts but withheld exhibits. OpenAI
+        claimed exhibits weren't ordered — court disagreed, citing its own language and
+        plaintiffs' original request. $100/DAY SANCTIONS imposed if not produced by
+        June 3, 2026 at 5 PM EDT. NYT counsel Davida Brook (Susman Godfrey) filed the
+        motion. OpenAI had ignored NYT's May 22 inquiry, then on May 26 "incorrectly
+        assert[ed]" exhibits weren't required and accused NYT of "mov[ing] the goalposts."
+      - Jun 3 (Dkt. 1585): Pro hac vice admission of Ana Mendez-Villamil across all
+        MDL cases — suggests expanding legal team for discovery-intensive phase.
+      
+      PROCEDURAL STATUS (Jul 2026): No trial date set. Discovery ongoing and contentious.
+      Summary judgment briefing appears imminent based on stays granted to Gracenote and
+      Britannica (both stayed pending SJ motions in core cases). Class certification not
+      yet addressed; Authors Alliance assessment (Feb 2026): "several months to a year
+      away." The SJ timeline is now the critical path — SJ rulings on fair use and
+      training-as-copying will set precedent for all consolidated cases.
+      
+      CASCADING LEGAL EFFECTS (Jul 2026):
+      - Microsoft shareholder derivative suit (Eric Anderson v. Microsoft Corp. et al.,
+        W.D. Washington, filed Jul 1, 2026): alleges Satya Nadella, Amy Hood, Jared
+        Spataro, Rajesh Jha, and Microsoft directors breached fiduciary duties and
+        violated Section 14(a) / Rule 14a-9 by making misleading proxy statements
+        about AI strategy, Copilot adoption, and "lawful data sourcing" while exposing
+        MSFT to copyright liability through OpenAI. Key allegations: Nadella received
+        ~$224M compensation 2023-2025 (480:1 CEO-to-median-employee ratio); Microsoft
+        told investors it trained on data "in a manner consistent with global copyright
+        laws" and avoided USTR Notorious Markets; only 15M paid Copilot seats vs 450M+
+        Microsoft 365 users; Azure capacity constraints concealed. Requests damages,
+        disgorgement of exec compensation, and governance reforms including board-level
+        copyright compliance reporting. Uses Bartz v. Anthropic as a "red flag event"
+        that should have triggered board action. Part of emerging "copyright shareholder
+        derivative" theory (Adobe faces 2 similar suits). Most likely first outcome:
+        motion to dismiss on demand-futility grounds. Analytically significant because
+        it reframes AI copyright risk as board-oversight, securities-disclosure, and
+        executive-compensation risk — not just a content-creator complaint.
+      - City of St. Clair Shores securities class action (26-cv-02071, W.D. Washington):
+        separate Microsoft securities fraud action re: Copilot/Azure misrepresentations.
+        Lead plaintiff deadline Aug 11, 2026.
     severity: 5
     evidence: "Court filings, SEC disclosures, GlobalLegalPost, Law.com, Bloomberg Law"
     source_urls:
@@ -936,6 +991,13 @@ known_conflicts:
       - "https://www.globallegalpost.com/news/us-judge-refuses-openais-motion-to-dismiss-new-york-times-copyright-infringement-claims-887263879"
       - "https://www.law.com/legaltechnews/2026/01/07/openai-must-turn-over-millions-of-chat-logs-in-copyright-litigation-ny-federal-judge-rules-/"
       - "https://news.bloomberglaw.com/securities-law/microsoft-top-brass-sued-by-shareholder-over-ai-copyright-claims"
+      - "https://www.courtlistener.com/docket/69879510/1584/in-re-openai-inc-copyright-infringement-litigation/"
+      - "https://www.courtlistener.com/docket/69879510/1492/in-re-openai-inc-copyright-infringement-litigation/"
+      - "https://www.courtlistener.com/docket/69879510/1501/in-re-openai-inc-copyright-infringement-litigation/"
+      - "https://www.courtlistener.com/docket/69879510/1488/in-re-openai-inc-copyright-infringement-litigation/"
+      - "https://p4sc4l.substack.com/p/once-copyright-risk-threatens-stock"
+      - "https://authorsalliance.org/2026/01/28/ai-class-action-litigation-update-books-where-things-stand-in-early-2026/"
+    last_updated: "2026-07-04"
   - type: "competitive"
     description: >
       NYT's dual AI strategy creates structural conflict: suing OpenAI/Microsoft for
@@ -1063,16 +1125,34 @@ known_conflicts:
 
   - type: "microsoft_securities_fraud"
     description: >
-      NEW (Jul 1, 2026): Microsoft (co-defendant in NYT copyright case) now also faces
-      securities fraud class action (City of St. Clair Shores v. Microsoft, 26-cv-02071,
-      W.D. Washington). Alleges MSFT misled investors about Copilot (only 15M seats vs
-      450M+ users) and Azure growth. MSFT stock -10% on Jan 28, 2026. Lead plaintiff
-      deadline Aug 11, 2026. Adds legal pressure on NYT's co-defendant from second front.
-    severity: 2
-    evidence: "GlobeNewswire (Pomerantz LLP, Jun 30), PR Newswire (BFA Law, Jun 30)"
+      UPDATED (Jul 4, 2026): Microsoft (co-defendant in NYT copyright case) now faces
+      TWO shareholder suits stemming from AI copyright and disclosure concerns:
+      (1) Anderson v. Microsoft Corp. et al. (W.D. Washington, filed Jul 1, 2026):
+      DERIVATIVE suit by shareholder Eric Anderson against Nadella, Hood, Spataro, Jha,
+      and directors. Alleges breach of fiduciary duty and Section 14(a) / Rule 14a-9
+      violations for misleading statements about "lawful data sourcing," Copilot
+      adoption (15M seats vs 450M+ users), and Azure capacity constraints. Requests
+      damages, exec compensation disgorgement, and board-level copyright compliance
+      reforms. Nadella compensation cited: ~$224M (2023-2025), 480:1 pay ratio.
+      Part of emerging "copyright shareholder derivative" wave (Adobe has 2 similar suits).
+      Uses Bartz v. Anthropic as notice that directors should have acted on piracy risk.
+      (2) City of St. Clair Shores v. Microsoft (26-cv-02071, W.D. Washington):
+      SECURITIES CLASS ACTION alleging MSFT misled investors about Copilot and Azure
+      growth. Lead plaintiff deadline Aug 11, 2026.
+      Combined analytical significance: AI copyright risk has now cascaded from content-
+      creator complaints into boardroom governance and securities disclosure territory.
+      Both suits add pressure on Microsoft as NYT's co-defendant — potential settlement
+      pressure could indirectly affect the NYT copyright case dynamics.
+    severity: 3
+    evidence: >
+      Bloomberg Law (Jul 2, 2026), GlobeNewswire (Pomerantz LLP, Jun 30, 2026),
+      Substack analysis (p4sc4l.substack.com, Jul 2, 2026).
     source_urls:
+      - "https://news.bloomberglaw.com/securities-law/microsoft-top-brass-sued-by-shareholder-over-ai-copyright-claims"
+      - "https://p4sc4l.substack.com/p/once-copyright-risk-threatens-stock"
       - "https://www.globenewswire.com/news-release/2026/06/30/pomerantz-microsoft"
       - "https://www.prnewswire.com/news-releases/msft-notification-microsoft-securities-fraud"
+    last_updated: "2026-07-04"
 
   - type: "openai_government_stake"
     description: >

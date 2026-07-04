@@ -1635,7 +1635,7 @@ labor_union_relations:
       - name: "Jake Lahut"
         title: "Senior Politics Reporter"
         publication: "Wired"
-        outcome: "DECLINED settlement. Pursuing NLRB unfair labor practice charge (still pending Jun 2026). Was probationary employee — ineligible for standard severance terms."
+        outcome: "DECLINED settlement (a lesser settlement was offered per FashionUnited). Pursuing NLRB unfair labor practice charge (still pending Jul 2026). Was probationary employee — ineligible for standard severance terms."
         editorial_significance: >
           Part of Drummond's inaugural politics team — the first politics desk in Wired history,
           launched Nov 2023. His firing removed a key member of Wired's signature editorial initiative.
@@ -1657,19 +1657,29 @@ labor_union_relations:
     external_pressure:
       - entity: "NY AG Letitia James"
         action: "Publicly threatened legal action, characterized the firings as 'union-busting'"
+      - entity: "Condé Nast (counter-charge)"
+        action: >
+          Filed its own Unfair Labor Practice charge at NLRB against the NewsGuild, accusing
+          the union of "repeated and egregious disregard of our collective bargaining agreement."
+          This counter-filing adds tactical complexity: both sides have active NLRB charges,
+          creating a dual-front labor battle.
     analytical_significance: >
       The Fired Four incident reveals internal tension between Condé Nast management's cost-cutting
       mandate (Self shutdown, Glamour closures, 16 unionized layoffs in Apr 2026) and its editorial
       workforce's organized resistance. The $400K+ settlement and record-expungement suggest Condé Nast
       recognized legal vulnerability. Lahut's pending NLRB case creates ongoing reputational and legal
-      risk. For MediaScope's framing analysis, this labor context is relevant: editorial workers at
-      Wired and other Condé Nast titles operate under acute job insecurity, which may influence
-      self-censorship dynamics (writers less likely to challenge editorial direction when layoffs are
-      constant and union protections are being tested). This is a confounding variable for any
-      analysis attributing framing patterns solely to institutional editorial policy or ownership conflicts.
+      risk. Condé Nast's counter-charge against the NewsGuild at NLRB signals the company is fighting
+      back rather than capitulating. For MediaScope's framing analysis, this labor context is relevant:
+      editorial workers at Wired and other Condé Nast titles operate under acute job insecurity, which
+      may influence self-censorship dynamics (writers less likely to challenge editorial direction when
+      layoffs are constant and union protections are being tested). This is a confounding variable for
+      any analysis attributing framing patterns solely to institutional editorial policy or ownership
+      conflicts.
     source_urls:
       - "https://www.thewrap.com/conde-nast-fired-four-union-members-settlement/"
       - "https://www.hrexecutive.com/conde-nast-settles-with-3-of-4-fired-union-members/"
+      - "https://fashionunited.uk/news/business/conde-nast-agrees-on-400-000-us-dollar-settlement-with-three-fired-employees/2026052988353"
+      - "https://hrgrapevine.com/content/article/vogue-publisher-faces-union-backlash-after-firings-follow-hr-dispute"
 
 ai_crawl_policy:
   blocks_gptbot: false
