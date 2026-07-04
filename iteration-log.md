@@ -3,6 +3,33 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-03 18:00 PT — Type D: Toolkit Quality — Stale Demo Script Fixes + Structural Guard Expansion
+
+### Focus
+Fix stale adversarial device type sets and test counts in example demo scripts. Add structural consistency guards to prevent future drift in demo scripts.
+
+### What Changed
+
+**framing_correction_demo.py + sarcastic_editorial_demo.py:**
+- Fixed adversarial_types inline set: 16 → 18 types (added `failure_precedent`, `editorial_deflation` — both added Jun 30 but demo copies never updated)
+- Fixed stale test count reference: "1172 regression tests" → "1253 regression tests"
+
+**test_structural_consistency.py (+2 parametrized tests → 79 total):**
+- Added `test_example_demo_adversarial_set_complete` (parametrized over both demo files) to `TestAdversarialDeviceListConsistency`
+- Guard extracts the adversarial_types = { ... } set literal from each demo file and verifies exact match against `_ADVERSARIAL_DEVICE_TYPES` in sentiment.py
+- Catches both missing types and extra types — prevents silent drift that caused this issue
+
+**README.md + ARCHITECTURE.md:**
+- Test count headers: 1253 → 1255
+- test_structural_consistency.py per-file count: 77 → 78
+- Guard description updated: added "example demo adversarial type set completeness (framing_correction_demo.py + sarcastic_editorial_demo.py inline adversarial_types vs code)"
+
+### Key Stats
+- **1255 tests** (1253 passed, 2 xfailed), 49 test files
+- **79 structural consistency tests** (all pass)
+- **Commit:** `f4e1eab` — pushed to GitHub
+
+---
 ## 2026-07-03 17:00 PT — Type C: Ownership & Funding Deep Dive — Advance Portfolio Revaluation + WSJ AI Marketplace + Reddit ARPU/Licensing Data
 
 ### Focus
@@ -11711,5 +11738,58 @@ The §10 overhaul transforms the same-event comparison section from a static exh
 
 ### Tests
 1253 passed (1251 passed, 2 xfailed). 77 structural consistency tests guarding doc-code synchronization.
+
+---
+
+## 2026-07-03 18:00 PT — Type A: Article Deep Dive (Cannes Tone Undercount Fix)
+
+**Target article:** Wired "Meta Contractors Posed as Teens to Prompt Rival Chatbots About Suicide, Sex, and Drugs" (Jul 2026)
+**Iteration type:** A (Article Deep Dive)
+**Focus:** Closing the tone undercount gap (-0.25 toolkit vs -0.45 manual)
+
+### Problem
+The Wired Cannes contractors article is a deeply negative investigative piece about child exploitation testing, but VADER scores it only -0.16 (raw) because child-safety content (suicide, self-harm, eating disorders, pregnancy in minor context) reads as neutral factual language to word-level sentiment analysis. Path B corrected to -0.25, but the manual assessment is -0.45 — a 0.20 gap.
+
+### Root Cause Analysis
+Two gaps:
+1. **Missing emotional vocabulary:** The EMOTIONAL_LANGUAGE list had no child-safety/exploitation terms. Words like "suicide" (×4), "self-harm", "eating disorder" (×2), "pills" (×2), "noose", "pregnant", "pregnancy" — all present in this article — were absent. This kept emotional_language_intensity at 0.44 instead of the ~1.0 it should be.
+2. **Path B blend too conservative for extreme content:** The original 50/50 (raw vs framing) blend is correct for typical understated articles but insufficient when EI is very high. At EI=0.44, the 50/50 blend can only reach -0.25. Even at EI=1.0 with the original formula, it caps at -0.29. The framing_tone estimate is also bounded by agency (-0.4286), which is only moderately negative even though the article is viscerally disturbing.
+
+### Fix (Two-Pronged)
+
+**1. Child-safety/exploitation emotional language terms (33 new terms, 735 → 768 total):**
+- Suicide/self-harm: suicide, suicidal, suicidality, self-harm, self harm, self-injury, self injury
+- Eating disorders: eating disorder, eating disorders, anorexia, bulimia
+- Harm implements: noose, nooses, overdose, overdosed, overdosing
+- Exploitation: sextortion, sexting, child exploitation, child abuse, sexual abuse, sexually abused, molestation, molested, molesting, trafficking, trafficked
+- Minor distress markers: pregnant, pregnancy, underage
+- Predation: predators, grooming, groomed
+
+**2. Path B dynamic blend + EI amplification (3 refinements):**
+
+a. **Dynamic blend** (EI > 0.6): raw_weight slides from 0.50 to 0.15 as EI goes from 0.6 to 1.0. Higher EI means more trust in the framing-derived estimate.
+
+b. **EI amplification boost** (EI > 0.7): framing_tone is amplified by `(EI - 0.7) * 0.5` (0 at 0.7, 0.15 at 1.0). This breaks the ceiling where framing_tone is bounded by agency. Child exploitation content with EI=1.0 produces framing_tone of -0.49 instead of -0.43.
+
+c. **Density boost** (EI > 0.6 AND adversarial_count ≥ 12): framing_tone amplified further for extreme investigative pieces with very high framing device density. Does not fire on Cannes (8 adversarial) but provides headroom for future articles with 12+ adversarial devices.
+
+### Results
+| Metric | Before | After | Delta |
+|--------|--------|-------|-------|
+| emotional_language_intensity | 0.44 | 1.00 | +0.56 |
+| overall_tone | -0.2454 | -0.4427 | -0.1973 |
+| Gap to manual (-0.45) | 0.2046 | 0.0073 | 96% closed |
+
+**Regression safety:** Changes only affect articles where EI > 0.6. At EI ≤ 0.60, behavior is identical to before (zero delta on all tested values). At EI=0.65, delta is only -0.009; at EI=0.70, -0.019.
+
+### Files Changed
+- `mediascope/analyze/sentiment.py` — 33 child-safety emotional language terms + Path B dynamic blend/EI amplification
+- `tests/test_cannes_contractors.py` — 4 new regression tests (child-safety terms presence, EI threshold, tone target, framing correction active)
+- `tests/test_structural_consistency.py` — EMOTIONAL_LANGUAGE count guard: 735 → 768
+- `README.md` — test count: 1255 → 1259, test_cannes_contractors description updated
+- `docs/ARCHITECTURE.md` — test count: 1255 → 1259
+
+### Tests
+1259 passed (1257 passed, 2 xfailed). 79 structural consistency guards.
 
 ---

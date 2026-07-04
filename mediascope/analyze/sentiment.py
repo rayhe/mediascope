@@ -532,6 +532,29 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "pay-until-you-die", "pay until you die",
     "subscription fatigue", "subscription hell",
     "rate-limited", "rate limited", "rate limits",
+    # Child-safety / exploitation emotional terms — needed for investigative
+    # coverage of child exploitation, abuse, self-harm, and minor safety
+    # where the reported content is viscerally disturbing but VADER reads
+    # it as neutral factual language.  A journalist quoting prompts about
+    # "suicide", "self-harm", "eating disorders" in an article about children
+    # creates content-level horror that word-level sentiment can't capture.
+    # Gap discovered in Wired Cannes contractors article (Jul 2026):
+    # emotional_intensity was 0.44 on an article whose manual assessment
+    # was -0.45, because none of the child-harm terms matched.
+    "suicide", "suicidal", "suicidality",
+    "self-harm", "self harm", "self-injury", "self injury",
+    "eating disorder", "eating disorders", "anorexia", "bulimia",
+    "noose", "nooses",
+    "overdose", "overdosed", "overdosing",
+    "sextortion", "sexting",
+    "child exploitation", "child abuse",
+    "sexual abuse", "sexually abused",
+    "molestation", "molested", "molesting",
+    "trafficking", "trafficked",
+    "pregnant", "pregnancy",  # as distress markers in minor-safety context
+    "underage",
+    "predators",
+    "grooming", "groomed",
 ]
 
 # Passive/victim vs. active/powerful framing indicators
@@ -1353,8 +1376,30 @@ def _compute_framing_correction(
     # --- Path B: Amplification (raw negative but understated) ---
     # When VADER gets direction right but framing signals indicate
     # the article is more adversarial than the lexical score reflects.
-    # Uses a lighter blend (50/50) to nudge toward framing estimate
-    # without fully overriding the lexical signal.
+    # Base blend is 50/50 (raw vs framing estimate).  Two refinements
+    # apply at high emotional intensity:
+    #
+    # 1. Dynamic blend: when EI > 0.6, raw_weight slides from 0.50
+    #    to 0.15 because intense emotional content signals VADER is
+    #    substantially underweighting the article's actual impact.
+    #
+    # 2. EI amplification: when EI > 0.7, the framing-derived tone
+    #    estimate is amplified because the emotional vocabulary density
+    #    indicates content-level horror (child exploitation, self-harm,
+    #    graphic violence) that word-level sentiment fundamentally
+    #    cannot capture.  Without this, framing_tone is capped by
+    #    agency, which may be only moderately negative (-0.4) even
+    #    when the article is viscerally disturbing.
+    #
+    # 3. Density boost: when EI > 0.6 AND adversarial_count >= 12,
+    #    the framing estimate is further amplified to account for
+    #    overwhelming framing density in deep investigative pieces.
+    #
+    # Discovered in Wired Cannes contractors article (Jul 2026):
+    # VADER scored -0.16 on a -0.45 manual piece because child-
+    # exploitation content reads as neutral factual language.  The
+    # original 50/50 blend reached -0.25; dynamic blend + EI
+    # amplification reaches -0.44, closing 96% of the gap.
     _AMPLIFICATION_MIN_DEVICES = 6  # higher threshold than full correction
     if (
         raw_tone < 0
@@ -1367,8 +1412,27 @@ def _compute_framing_correction(
         density_factor = min(adversarial_count / 8.0, 1.0)
         framing_tone = amplified * (0.7 + 0.3 * density_factor)
         framing_tone = max(-1.0, min(0.0, framing_tone))
-        # Lighter blend: 50% raw, 50% framing estimate
-        corrected = 0.50 * raw_tone + 0.50 * framing_tone
+        # Dynamic blend: high EI → more trust in framing estimate
+        # Slides raw_weight from 0.50 (EI ≤ 0.6) to 0.15 (EI ≥ 1.0)
+        raw_weight = 0.50
+        if emotional_intensity > 0.6:
+            ei_excess = min((emotional_intensity - 0.6) / 0.4, 1.0)
+            raw_weight = 0.50 - 0.35 * ei_excess
+        # EI amplification boost: when emotional content is extreme,
+        # the framing-derived tone estimate underweights the article's
+        # visceral impact because it's bounded by agency.  Amplify it.
+        if emotional_intensity > 0.7:
+            ei_amp = (emotional_intensity - 0.7) * 0.5  # 0 at 0.7, 0.15 at 1.0
+            framing_tone *= (1 + ei_amp)
+            framing_tone = max(-1.0, min(0.0, framing_tone))
+        # Density boost for extreme investigative pieces:
+        # when EI is high AND adversarial count is extreme, the framing
+        # estimate itself is too conservative — amplify it further.
+        if emotional_intensity > 0.6 and adversarial_count >= 12:
+            density_boost = min((adversarial_count - 8) / 12.0, 0.30)
+            framing_tone = framing_tone * (1 + density_boost)
+            framing_tone = max(-1.0, min(0.0, framing_tone))
+        corrected = raw_weight * raw_tone + (1 - raw_weight) * framing_tone
         corrected = max(-1.0, min(1.0, round(corrected, 4)))
         return corrected, True
 

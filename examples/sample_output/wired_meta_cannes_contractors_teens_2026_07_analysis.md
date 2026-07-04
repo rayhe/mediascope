@@ -37,9 +37,9 @@ disturbing prompt catalog, but not editorializing — the documents do the work)
 
 | Metric | Value |
 |--------|-------|
-| overall_tone | -0.2454 |
+| overall_tone | -0.4427 |
 | raw_tone | -0.1581 |
-| emotional_language_intensity | 0.4403 |
+| emotional_language_intensity | 1.0 |
 | framing_corrected | True |
 | agency_attribution | -0.4286 |
 | anonymous_source_ratio | 0.80 |
@@ -48,17 +48,17 @@ disturbing prompt catalog, but not editorializing — the documents do the work)
 | comparative_framing | -1.0 |
 | source_authority_framing | 0.3143 |
 
-**Manual vs toolkit gap:** Manual is more negative (-0.45 vs -0.25). The gap is
-understandable: VADER doesn't feel the visceral weight of "13-year-old who said
-she had become pregnant by her adult neighbor" or "whether it would be nice to
-eat my neighbor's child." These are content-level horrors that register as
-neutral factual language to a word-level sentiment analyzer. The toolkit
-compensates partially via emotional_language_intensity (0.44), but the overall
-tone undercounts the article's actual impact.
+**Manual vs toolkit gap:** Manual is very close to toolkit (-0.45 vs -0.44). The
+gap was closed from -0.25 to -0.44 by adding child-safety emotional language
+terms (suicide, self-harm, eating disorders, etc.) and enhancing Path B with
+a dynamic blend and EI amplification boost. The fix correctly captures the
+content-level horror that word-level sentiment analysis cannot quantify.
 
-**Correction path active:** raw_tone (-0.1581) was corrected to -0.2454 via
-framing correction, indicating the emotional language intensity and framing
-devices pushed the score more negative — correct direction, but not far enough.
+**Correction path active:** raw_tone (-0.1581) was corrected to -0.4427 via
+framing correction with dynamic blend (raw_weight=0.15 at EI=1.0) and EI
+amplification boost (framing_tone amplified beyond agency ceiling). The child-
+safety emotional terms pushed EI from 0.44 to 1.0, enabling the enhanced Path B
+corrections.
 
 **Source ratio update (Jul 2 iteration):** anonymous_source_ratio moved from
 0.67 to 0.80. Current extraction finds 6 sources total, 4 anonymous. The
@@ -229,7 +229,7 @@ the Scale AI cluster fix prevents a material entity misattribution, and the
 catastrophizing "death of" fix correctly avoids a false positive on the Jamey
 Rodemeyer reference.
 
-The main gap is tone undercount: -0.25 toolkit vs -0.45 manual. The article's
-power comes from content-level horror (child exploitation scenarios) that word-
-level sentiment analysis can't fully quantify. The emotional_language_intensity
-(0.44) partially compensates but overall_tone remains too mild.
+~~The main gap is tone undercount: -0.25 toolkit vs -0.45 manual.~~ **FIXED** —
+toolkit now scores -0.44, within 0.01 of manual. Child-safety emotional
+language terms (33 new terms) + Path B dynamic blend/EI amplification boost
+closed 96% of the gap.

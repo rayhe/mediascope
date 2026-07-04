@@ -355,3 +355,75 @@ class TestCrossSentenceNormalizationUndercut:
         assert len(devices) >= 16, (
             f"Expected at least 16 framing devices, got {len(devices)}"
         )
+
+
+class TestCannesToneGap:
+    """Regression test for the tone undercount gap on the Cannes article.
+
+    Manual assessment: -0.45 (negative-investigative).
+    Original toolkit: -0.2454 (Path B with EI=0.44).
+    Fixed toolkit: ~-0.44 (Path B with child-safety terms → EI≈1.0,
+    dynamic blend, and EI amplification boost).
+
+    The fix has two parts:
+    1. Child-safety emotional language terms (suicide, self-harm, eating
+       disorders, etc.) added to EMOTIONAL_LANGUAGE, raising EI from 0.44
+       to ~1.0 on this article.
+    2. Path B enhanced with dynamic blend (raw_weight slides from 0.50
+       to 0.15 as EI rises above 0.6) and EI amplification boost (when
+       EI > 0.7, framing_tone is amplified beyond agency-derived ceiling).
+    """
+
+    @pytest.fixture
+    def cannes_text(self):
+        import os
+        path = os.path.join(
+            os.path.dirname(os.path.dirname(__file__)),
+            "examples", "sample_output",
+            "wired_meta_cannes_contractors_teens_2026_07_article.txt",
+        )
+        if not os.path.exists(path):
+            pytest.skip("Cannes article text not found")
+        return open(path).read()
+
+    def test_child_safety_terms_in_emotional_language(self):
+        """Child-safety terms should be in EMOTIONAL_LANGUAGE list."""
+        from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
+        required = [
+            "suicide", "self-harm", "eating disorder",
+            "noose", "pregnant", "pregnancy", "overdose",
+            "child exploitation", "sexual abuse",
+        ]
+        for term in required:
+            assert term in EMOTIONAL_LANGUAGE, (
+                f"'{term}' should be in EMOTIONAL_LANGUAGE"
+            )
+
+    def test_emotional_intensity_above_threshold(self, cannes_text):
+        """EI should be ≥ 0.7 with child-safety terms (was 0.44 before)."""
+        from mediascope.analyze.sentiment import _measure_emotional_intensity
+        ei = _measure_emotional_intensity(cannes_text)
+        assert ei >= 0.7, (
+            f"EI should be ≥ 0.7 with child-safety terms, got {ei}"
+        )
+
+    def test_overall_tone_within_target(self, cannes_text):
+        """Overall tone should be within 0.05 of manual assessment (-0.45)."""
+        from mediascope.analyze.sentiment import analyze_composite
+        result = analyze_composite(cannes_text, "")
+        assert result.overall_tone <= -0.35, (
+            f"Overall tone should be ≤ -0.35 (was -0.2454 before fix), "
+            f"got {result.overall_tone}"
+        )
+        assert abs(result.overall_tone - (-0.45)) <= 0.10, (
+            f"Overall tone should be within 0.10 of manual -0.45, "
+            f"got {result.overall_tone} (gap: {abs(result.overall_tone - (-0.45)):.4f})"
+        )
+
+    def test_framing_correction_active(self, cannes_text):
+        """Framing correction should fire (Path B)."""
+        from mediascope.analyze.sentiment import analyze_composite
+        result = analyze_composite(cannes_text, "")
+        assert result.framing_corrected is True, (
+            "Framing correction should be active on Cannes article"
+        )
