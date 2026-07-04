@@ -12476,3 +12476,84 @@ Documentation count drift audit + structural guard hardening.
 
 ### Commits
 `2105c5a`, `0bfff50` — both pushed to GitHub
+
+## 2026-07-04 13:00 PT — Type B: Journalist/Publication Research — Atlantic Batch Hires: Jurecic, Olorunnipa, Youssef (125th-127th)
+
+### Focus
+Deep profiling of all 3 journalists announced in the same batch by Jeffrey Goldberg (Jun 2025): Quinta Jurecic, Toluse Olorunnipa, and Nancy Youssef. Together these represent three distinct career pipeline types converging at The Atlantic during its massive 2025 expansion.
+
+### What Changed
+
+**1. Quinta Jurecic (125th journalist) — THINK-TANK PIPELINE (MOST ANALYTICALLY NOVEL)**
+- 9 career entries across 6 institutions:
+  1. Wesleyan University — BA Political Science & Government 2015 (High Honors, thesis on drone warfare ethics)
+  2. Brookings Institution — National Security Intern → Research Analyst (~2015-2016)
+  3. Lawfare — Associate Editor → Deputy Managing Editor → Managing Editor → Senior Editor (2016-present)
+  4. Washington Post — Editorial writer/special correspondent (2017-2018, concurrent with Lawfare)
+  5. The Atlantic — Contributing writer (~2018-2025, ~7 years before staff elevation)
+  6. Brookings Institution — Fellow, Governance Studies (~2020-2025, concurrent)
+  7. Lawfare — Senior editor (2023-present, still maintains dual affiliation with Atlantic)
+  8. The Atlantic — Staff writer (Jun 2025-present)
+- UNIQUE VALUE: Only tracked journalist whose primary career path runs through policy think tanks (Brookings) rather than competing newsrooms. The think-tank-to-journalism pipeline is structurally different from every other tracked migration pattern.
+- PLATFORM GOVERNANCE: Moderated Brookings "Gonzalez v. Google and the Fate of Section 230" webinar (Feb 2023) with Hany Farid, Daphne Keller, Alan Rozenshtein, Benjamin Wittes. Co-hosts Lawfare "Arbiters of Truth" podcast on information ecosystem/disinformation.
+- DISINFORMATION DISCOVERY: AI-generated "Consulting Times" article fabricates Harvard Law JD, Kavanaugh clerkship, Kirkland & Ellis tenure — all false. Real education is Wesleyan BA Political Science 2015. Noted in profile as a data point about AI-generated disinformation targeting journalist credentials.
+
+**2. Toluse Olorunnipa (126th journalist) — HIGHEST-RANKING WaPo DEPARTURE**
+- 6 career entries across 5 publications:
+  1. Stanford Daily — student writer (Stanford BA Sociology, MSc)
+  2. Miami Herald — reporter, Florida politics
+  3. Bloomberg News — reporter, politics & policy
+  4. Washington Post — national political reporter (2019) → White House Bureau Chief (2022-2025)
+  5. The Atlantic — staff writer (Jun 2025-present)
+- First reporter of native African/Nigerian descent to cover the White House (Yoruba heritage)
+- Pulitzer Prize for General Nonfiction 2023 ("His Name Is George Floyd" with Robert Samuels)
+- Part of massive 2025 WaPo→Atlantic exodus post-Bezos endorsement controversy
+- Adjunct professor at Northwestern University
+
+**3. Nancy Youssef (127th journalist) — LONGEST DiD MIGRATION PATH**
+- 7 career entries across 7 publications (6-publication migration path):
+  1. Baltimore Sun — first journalism job
+  2. Detroit Free Press — legal issues, Iraq War (under Knight Ridder)
+  3. McClatchy — Baghdad bureau chief, chief Pentagon correspondent, Middle East bureau chief, national security correspondent, Pentagon Press Association founder/president
+  4. Daily Beast — senior defense & national security correspondent (2014-2017)
+  5. BuzzFeed News — senior national security correspondent (2017-2021)
+  6. Wall Street Journal — national security correspondent (2021-2025)
+  7. The Atlantic — staff writer, national security & Defense (Jul 7, 2025-present)
+- Egyptian-American, DC native, fluent Arabic. UVA BA Economics, Georgetown MSFS Security Studies
+- Knight Fellowship (2007-08), duPont-Columbia Award (2010)
+- 6-publication migration is the longest in the entire dataset — spans wire/newspaper, 2 digital-native pubs, Murdoch business press, and Emerson Collective magazine
+
+**4. Editorial Changes — 3 new Atlantic entries (16→19)**
+All three profiled as part of the batch announcement. Includes analytical significance notes for each hire's impact on Atlantic editorial dynamics.
+
+**5. Documentation Updates**
+- README.md: 124→127 journalists, 396→407 auto-detected migrations, 230+→250+ publications, 3 new notable migration descriptions
+- EDITORIAL_HISTORIES.md: 124→127 journalists, 123→126 multi-pub, 230+→250+ publications
+- careers_demo.py: 124→127 tracked journalists
+
+### Analytical Themes
+- **The Atlantic's 2025 Hiring Wave is the largest tracked expansion in MediaScope.** This batch alone adds a Brookings fellow, a Pulitzer-winning WaPo bureau chief, and a 20-year national security veteran from WSJ. Combined with earlier hires (Tyrangiel, Witte, Oremus, Reisner, Brown, Gottsegen), Atlantic has hired 10+ people from the tracked journalist/editorial pool in ~12 months.
+- **Three distinct career pipeline types converging:** Think-tank (Jurecic), traditional newsroom ladder (Olorunnipa), and wire/digital-native/legacy hybrid (Youssef). Tests whether Atlantic's editorial culture homogenizes diverse institutional backgrounds or preserves the framing habits journalists bring.
+- **WaPo→Atlantic exodus is now Atlantic's dominant talent pipeline.** Of 19 editorial changes tracked at Atlantic, multiple entries reference WaPo departures post-Bezos endorsement controversy.
+
+### Sources
+- Editor & Publisher: https://www.editorandpublisher.com/stories/the-atlantic-announces-staff-writers-quinta-jurecic-toluse-olorunnipa-and-nancy-youssef,256335
+- Brookings: https://www.brookings.edu/events/gonzalez-v-google-and-the-fate-of-section-230/
+- Princeton SPIA: https://spia.princeton.edu/news/politics-polls-139-mueller-report-book-club-featuring-quinta-jurecic
+- National Press Foundation: https://www.nationalpress.org/profile/nancy-youssef/
+- Wikipedia (Olorunnipa): https://en.wikipedia.org/wiki/Toluse_Olorunnipa
+- Wikipedia (Youssef): https://en.wikipedia.org/wiki/Nancy_Youssef
+- toluse.com: https://toluse.com
+- edailybuzz.com: https://edailybuzz.com/quinta-jurecic/
+- Ohio Wesleyan: https://owu.edu (Lyman Lecture)
+- Lawfare (podcasts): https://shows.acast.com/lawfare
+- NPR Fresh Air (Youssef): https://radio.wcmu.org
+
+### Stats
+- Journalists: 127 total (was 124), 126 multi-pub (was 123)
+- Auto-detected migrations: 407 (was 396)
+- Atlantic editorial changes: 19 (was 16)
+- Publication count: 253 unique slugs (250+ floor in docs)
+- Tests: 1359 passed, 0 failed
+- Commit: `b5b7755` — pushed to `main`
+
