@@ -7906,3 +7906,113 @@ journalists:
     on platform addiction, mental health impacts, and content moderation stories.
 
     DATE CORRECTION: Start date corrected from 2026-03-24 to 2025-03-24 per TalkingBizNews and E&P source documents.'
+- career:
+  - beat: music, culture
+    end: 1996-01
+    event_type: hired
+    notes: First journalism job. Fact-checker at Rolling Stone after graduating from University of Pennsylvania (BA English/American
+      History, 1994).
+    publication: rolling-stone
+    role: fact_checker
+    source_url: https://joshtyrangiel.com/
+    start: 1994-07
+  - beat: music, culture
+    end: 1996-06
+    event_type: hired
+    notes: Early-career magazine journalism at Vibe. Self-described as "joyful chaos."
+    publication: vibe
+    role: staff
+    source_url: https://joshtyrangiel.com/
+    start: 1995-01
+  - beat: news, music, politics
+    end: 1998-06
+    event_type: hired
+    notes: News producer at MTV Networks. Covered presidential campaign trail, reported on East Coast/West Coast rap wars,
+      conducted the last interview with Tupac Shakur (1996). Pre-journalism management experience at a youth media powerhouse.
+    publication: mtv-networks
+    role: news_producer
+    source_url: https://joshtyrangiel.com/
+    start: 1996-01
+  - beat: music, politics, technology
+    end: 2009-11
+    event_type: hired
+    notes: 'Started as lowest-ranking editorial employee writing 50-word unsigned obituaries (1999). Rose through: staff writer
+      → music critic → London correspondent → national editor → managing editor of TIME.com → deputy managing editor of
+      TIME (2006). Oversaw Person of the Year franchise. Quadrupled TIME.com traffic (400M to 1.8B page views, 2006-2009).
+      Named Best Magazine Web Site by MPA two consecutive years. Widely presumed to be successor to Richard Stengel as TIME
+      EIC. 10-year tenure at one of America''s most prestigious newsweeklies.'
+    publication: time
+    role: deputy_managing_editor
+    source_url: https://en.wikipedia.org/wiki/Josh_Tyrangiel
+    start: 1999-01
+  - beat: business, technology, finance, economics
+    end: 2015-10
+    event_type: hired
+    notes: 'Named editor of BusinessWeek following Bloomberg L.P. acquisition (Nov 2009, $5M + assumed debt). Oversaw rebrand
+      to Bloomberg Businessweek (Apr 2010). ''Widely credited for reinventing Businessweek'' — Goldberg/Atlantic hire announcement.
+      Won National Magazine Award for General Excellence (2012). Adweek named it most influential business magazine of year
+      (2011). Ad Age named Tyrangiel Editor of the Year (2012). Crain''s 40 Under 40 (2012). Promoted to help shape Bloomberg
+      Television (2013), then elevated to chief content officer overseeing all Bloomberg consumer content: digital, conferences,
+      investigative unit, radio, TV, two magazines (2014). Stepped down Oct 2015. Norman Pearlstine recruited him from TIME.
+      KEY ROLE: One of the most impactful magazine editors of the 2010s. His Bloomberg Businessweek editorial identity — data-driven,
+      visually inventive, irreverent about corporate power — shaped a generation of business journalism.'
+    publication: bloomberg-businessweek
+    role: editor_chief_content_officer
+    source_url: https://en.wikipedia.org/wiki/Josh_Tyrangiel
+    start: 2009-11
+  - beat: news, current affairs, documentary
+    end: 2019-06
+    event_type: hired
+    notes: 'Executive Vice President of News at Vice Media. Created Vice News Tonight on HBO (launched Oct 2016) with ''no anchor,
+      no studio, no staff.'' 41 Emmy nominations, 15 trophies, 1 Peabody during his tenure. Also oversaw VICENews.com, Vice
+      on HBO weekly series, and feature documentaries. Named to Hollywood Reporter''s ''35 Most Powerful People in New York
+      Media'' (2019). Left June 2019 after Vice News Tonight cancellation.'
+    publication: vice
+    role: evp_news
+    source_url: https://en.wikipedia.org/wiki/Josh_Tyrangiel
+    start: 2015-10
+  - beat: documentary film, AI
+    end: 2025-06
+    event_type: freelance
+    notes: 'Founded Backstory Partners (2023), a documentary production company. COO of Kunhardt Films and EP at Eden Productions
+      (2020-2023). Produced documentary films for HBO, Netflix, Apple TV+. Executive produced ABC''s ''AI and the Future of
+      Us'' with Oprah Winfrey. Wrote regular AI column for Washington Post (2024-2025). On board of The Baltimore Banner.
+      12 Emmy Awards and Peabody Awards total across career.'
+    publication: freelance
+    role: producer_columnist
+    source_url: https://joshtyrangiel.com/
+    start: 2019-07
+  - beat: AI, technology, government policy
+    event_type: hired
+    notes: 'Staff writer at The Atlantic. Hired to write ''mainly at the intersection of technology, AI and government policy''
+      — Jeffrey Goldberg hire announcement. First piece: Anthony Weiner comeback profile (Feb 2025). Wrote Atlantic''s March
+      2026 cover story on AI and the future of work. Author of ''AI for Good: How Real People Are Using Artificial Intelligence
+      to Fix Things That Matter'' (Simon & Schuster, May 12, 2026; Kirkus: ''lively, irreverent, sharply observed critique
+      of AI hype''). Daily Show appearance (May 2026). UNIQUE FRAMING POSITION: Unlike most tracked Atlantic tech writers
+      (adversarial toward Big Tech), Tyrangiel represents constructive/pragmatic AI framing — his book and reporting focus
+      on beneficial AI applications in healthcare, education, government, and autism research. His position is that ''public
+      anger about AI is productive'' but warns against ''pure fury'' — a regulated-optimist posture distinct from both AI
+      doomerism and Silicon Valley boosterism. Partner: Sarah Feinberg (former NYC Transit President). Based in NYC (East
+      Village).'
+    publication: atlantic
+    role: staff_writer
+    source_url: https://www.theatlantic.com/author/josh-tyrangiel/
+    start: 2025-06
+  name: Josh Tyrangiel
+  notes: 'One of the most distinguished journalist-editors in American media over three decades. Career arc: Rolling Stone (fact
+    checker) → Vibe → MTV Networks (news producer; last Tupac interview) → TIME (10 years, rose from staff writer to deputy
+    managing editor) → Bloomberg Businessweek (editor, reinvented the magazine, then chief content officer for all Bloomberg
+    consumer media) → Vice (EVP News, created Vice News Tonight on HBO, 15 Emmys) → freelance/documentary production → The
+    Atlantic (staff writer, AI/tech/policy). Education: University of Pennsylvania (BA English/American History), Yale (MA
+    American Studies). Born Sept 25, 1972, raised in Baltimore. Partner Sarah Feinberg, 2 children. Jewish heritage. Park School
+    of Baltimore 1990. Author of ''AI for Good'' (S&S, May 2026). 12-time Emmy winner, Peabody Awards.
+
+    UNIQUE ANALYTICAL VALUE: Tyrangiel is the most senior editorial executive to have transitioned to staff writing at a tracked
+    publication. His editorial leadership at Bloomberg (data-driven, irreverent) and Vice (adversarial but gonzo) gives him
+    deep institutional knowledge of how editorial cultures shape coverage framing. As a staff writer at The Atlantic, his AI
+    coverage represents a CONSTRUCTIVE counterpoint to the adversarial anti-Big-Tech framing that dominates the publication
+    (LaFrance, Bogost, Wong, Cushing). His book thesis — AI as a practical tool for healthcare, education, and government,
+    not a doomsday machine — directly clashes with the ''Facebook is a Doomsday Machine'' posture of executive editor LaFrance.
+    Tests whether a single constructive voice can coexist with institutional adversarial culture, or whether the editorial
+    environment modulates his framing over time. His WaPo AI column → Atlantic migration also provides a natural experiment
+    for the DiD framework.'

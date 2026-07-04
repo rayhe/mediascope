@@ -39,11 +39,11 @@ editorial_changes:
   - date: 2022-08
     incoming: Damon Beres
     notes: 'KEY HIRE: Beres joined as senior editor for tech, becoming the editorial gatekeeper for Atlantic''s technology
-      coverage. Career: HuffPost (senior tech editor) → Mashable (executive editor) → OneZero/Medium (co-founder/EIC) →
-      Unfinished Media (EIC) → Atlantic. Co-launched AI Watchdog project with Alex Reisner (Sep 2025). Oversees Alex Reisner,
-      Ian Bogost, Kaitlyn Tiffany, Matteo Wong. His editorial decisions — which investigations get green-lit, which angles
-      reporters pursue — shape Atlantic''s institutional posture on tech. Writing book ''Easy Mode'' (Scribner) on frictionless
-      digital technology. NYU BA Journalism + Sociology.'
+      coverage. Career: HuffPost (senior tech editor) → Mashable (executive editor) → OneZero/Medium (co-founder/EIC) → Unfinished
+      Media (EIC) → Atlantic. Co-launched AI Watchdog project with Alex Reisner (Sep 2025). Oversees Alex Reisner, Ian Bogost,
+      Kaitlyn Tiffany, Matteo Wong. His editorial decisions — which investigations get green-lit, which angles reporters pursue
+      — shape Atlantic''s institutional posture on tech. Writing book ''Easy Mode'' (Scribner) on frictionless digital technology.
+      NYU BA Journalism + Sociology.'
     outgoing: null
     position: senior_editor_tech
     source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-beres-as-senior-editor-for-tech-coverage/
@@ -129,6 +129,33 @@ editorial_changes:
     outgoing: null
     position: staff_writer_politics
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-paul-beckett-as-senior-editor-and-staff-writers-lily-meyer-alex-reisner,258204
+  - date: 2025-01
+    incoming: Griff Witte
+    notes: 'KEY LEADERSHIP HIRE: Griff Witte hired as managing editor to lead politics and accountability team. 23-year veteran
+      of the Washington Post — served as senior politics and democracy editor leading a 50-person team. Foreign correspondent
+      in Kabul, Islamabad, Jerusalem, London, Berlin. Reports to deputy executive editor Yoni Appelbaum. Part of a massive
+      WaPo → Atlantic exodus following Jeff Bezos''s endorsement controversy (Oct 2024): Ashley Parker, Michael Scherer, Philip
+      Rucker, Josh Dawsey, Tyler Pager, and many others also left WaPo. Witte was specifically recruited for democracy/accountability
+      beat — aligned with Atlantic''s anti-Trump editorial posture under Goldberg. Previously a reporter at Miami Herald and
+      researcher for Steve Coll''s Pulitzer-winning ''Ghost Wars.'''
+    outgoing: null
+    position: managing_editor_politics
+    source_url: https://www.editorandpublisher.com/stories/griff-witte-joining-the-atlantic-as-a-managing-editor,252636
+  - date: 2025-06
+    incoming: Josh Tyrangiel
+    notes: 'KEY HIRE — TECH/AI: Josh Tyrangiel hired as staff writer covering ''the intersection of technology, AI and government
+      policy.'' Former editor of Bloomberg Businessweek (reinvented the magazine, National Magazine Award for General Excellence
+      2012), chief content officer of Bloomberg Media, EVP of News at Vice Media (created Vice News Tonight on HBO, 15 Emmys),
+      and deputy managing editor of TIME. Most recently wrote regular AI column for Washington Post. Author of ''AI for Good''
+      (Simon & Schuster, May 2026). 12-time Emmy winner. EDITORIAL SIGNIFICANCE: Tyrangiel is the most senior editorial executive
+      to join a tracked publication as a staff writer. His constructive AI framing (''AI as practical tool for healthcare,
+      education, government'') creates an INTERNAL TENSION with LaFrance''s ''Facebook is a Doomsday Machine'' adversarial
+      posture. Tests whether The Atlantic''s editorial environment permits constructive tech voices or modulates them toward
+      institutional skepticism. Part of the same 2025 Atlantic expansion wave that brought Griff Witte, Caity Weaver, and
+      other WaPo departures.'
+    outgoing: null
+    position: staff_writer_tech_ai
+    source_url: https://rss.ponder.cat/post/172398
   guardian:
   - date: 2015-06
     incoming: Katharine Viner
@@ -485,14 +512,14 @@ editorial_changes:
   - date: 2022-10
     incoming: Paul Mozur
     notes: 'ROLE CHANGE: Mozur promoted from Asia technology reporter to Global Technology Correspondent. Announced by business
-      editor Ellen Pollock and tech editor Pui-Wing Tam. New mandate: "exploring the anti-democratic powers of tech, the
-      emerging geopolitical competition over its development and how tech is changing the world far from Silicon Valley."
-      Works across desks, spearheads multi-disciplinary investigations. Based in Taiwan (relocated from Seoul to Taipei ~2023-2024).
-      The role change expanded Mozur''s beat from Asia-specific surveillance/censorship to global AI infrastructure, chip
-      export controls, and data center geopolitics. Now produces NYT''s most impactful tech-geopolitics investigations with
-      frequent co-author Adam Satariano (London-based). Mandarin speaker, has worked in Asia since 2007. AWARDS at time of
-      promotion: George Polk Award (2018), two Gerald Loeb Awards (2018, 2023), Pulitzer Prize for Public Service (2020,
-      team), two-time Pulitzer Prize finalist.'
+      editor Ellen Pollock and tech editor Pui-Wing Tam. New mandate: "exploring the anti-democratic powers of tech, the emerging
+      geopolitical competition over its development and how tech is changing the world far from Silicon Valley." Works across
+      desks, spearheads multi-disciplinary investigations. Based in Taiwan (relocated from Seoul to Taipei ~2023-2024). The
+      role change expanded Mozur''s beat from Asia-specific surveillance/censorship to global AI infrastructure, chip export
+      controls, and data center geopolitics. Now produces NYT''s most impactful tech-geopolitics investigations with frequent
+      co-author Adam Satariano (London-based). Mandarin speaker, has worked in Asia since 2007. AWARDS at time of promotion:
+      George Polk Award (2018), two Gerald Loeb Awards (2018, 2023), Pulitzer Prize for Public Service (2020, team), two-time
+      Pulitzer Prize finalist.'
     position: global_technology_correspondent
     source_url: https://nytco.com/press/new-role-for-paul-mozur/
   - date: 2026-01
@@ -531,29 +558,27 @@ editorial_changes:
     source_url: https://talkingbiznews.com/they-re-hiring/ny-times-seeks-a-reporter-to-cover-apple/
   - date: 2017-04
     incoming: Stuart A. Thompson
-    notes: 'NEW POSITION CREATED: Thompson recruited from WSJ (graphics director, 3 years) to be Graphics Director
-      for Opinion — a brand-new position. Started April 24, 2017. Announced by James Bennet (editorial page editor)
-      and Steve Duenes (NYT graphics director). Built Opinion''s visual journalism team from scratch. Previously
-      at Globe and Mail (Toronto, ~2011-2014) and WSJ (2014-2017). Won 2015 Pulitzer Prize for Investigative
-      Reporting (WSJ "Medicare Unmasked"). Produced "One Nation, Tracked" / Privacy Project (Dec 2019, with
-      Charlie Warzel — Livingston Awards finalist 2020), Trump''s Lies, QAnon chatroom immersive, vaccine
-      rollout tracker. Team won Malofiej Best of Show print award. KEY MIGRATION: WSJ → NYT. His WSJ background
-      in visual data journalism (election dashboards, Medicare investigation) became the foundation for NYT
-      Opinion''s entirely new visual opinionizing capability.'
+    notes: 'NEW POSITION CREATED: Thompson recruited from WSJ (graphics director, 3 years) to be Graphics Director for Opinion
+      — a brand-new position. Started April 24, 2017. Announced by James Bennet (editorial page editor) and Steve Duenes (NYT
+      graphics director). Built Opinion''s visual journalism team from scratch. Previously at Globe and Mail (Toronto, ~2011-2014)
+      and WSJ (2014-2017). Won 2015 Pulitzer Prize for Investigative Reporting (WSJ "Medicare Unmasked"). Produced "One Nation,
+      Tracked" / Privacy Project (Dec 2019, with Charlie Warzel — Livingston Awards finalist 2020), Trump''s Lies, QAnon chatroom
+      immersive, vaccine rollout tracker. Team won Malofiej Best of Show print award. KEY MIGRATION: WSJ → NYT. His WSJ background
+      in visual data journalism (election dashboards, Medicare investigation) became the foundation for NYT Opinion''s entirely
+      new visual opinionizing capability.'
     outgoing: null
     position: graphics_director_opinion
     source_url: https://nytco.com/press/stuart-thompson-named-graphics-director-opinion/
   - date: 2021-11
     incoming: Stuart A. Thompson
-    notes: 'INTERNAL MOVE: Thompson moved from Opinion (where he built and led visual journalism team) to news
-      side as misinformation/disinformation reporter on business/tech desk under Ellen Pollock, Pui-Wing Tam,
-      and Joe Plambeck. "The chance to focus on beat reporting and writing, while also deploying the other
-      tools in my toolkit, was an attractive proposal." Unique profile: visual/data journalist turned beat
-      reporter brings forensic analysis to influence operations and AI deepfake coverage. Co-bylines with
-      Tiffany Hsu (Sora deepfakes), Steven Lee Myers (Trump misinformation), Sheera Frenkel (civil war trends),
-      Cade Metz + Cecilia Kang + Nico Grant (AI training data). Meta-relevant work: 5-byline investigation on
-      AI training data (Meta considered buying Simon & Schuster), Meta fact-checking partner denials. In 2026,
-      spending significant time on midterm elections with politics team.'
+    notes: 'INTERNAL MOVE: Thompson moved from Opinion (where he built and led visual journalism team) to news side as misinformation/disinformation
+      reporter on business/tech desk under Ellen Pollock, Pui-Wing Tam, and Joe Plambeck. "The chance to focus on beat reporting
+      and writing, while also deploying the other tools in my toolkit, was an attractive proposal." Unique profile: visual/data
+      journalist turned beat reporter brings forensic analysis to influence operations and AI deepfake coverage. Co-bylines
+      with Tiffany Hsu (Sora deepfakes), Steven Lee Myers (Trump misinformation), Sheera Frenkel (civil war trends), Cade
+      Metz + Cecilia Kang + Nico Grant (AI training data). Meta-relevant work: 5-byline investigation on AI training data
+      (Meta considered buying Simon & Schuster), Meta fact-checking partner denials. In 2026, spending significant time on
+      midterm elections with politics team.'
     outgoing: null
     position: misinformation_reporter
     source_url: https://nytco.com/press/stuart-thompson-joins-business/
@@ -814,12 +839,12 @@ editorial_changes:
       child exploitation allegations, and Ron Jeremy rape allegations. Earlier career: Daily Dot, Mic, Bustle, Hearst Magazines,
       Nerve.com, Death+Taxes. Author of "One Bad Mother: In Praise of Psycho Housewives, Stage Parents, Momfluencers, and
       Other Women We Love to Hate" (book). Oberlin College BA, NYU MA Journalism (Cultural Reporting and Criticism). Co-hosted
-      "Don''t Let This Flop" podcast at Rolling Stone covering internet culture. Drummond''s personal note: "It''s hard
-      to think of a more adept observer of pop culture — and how the internet shapes relationships at every level — than
-      Ej." NON-TRADITIONAL PIPELINE: culture/influencer journalism (Rolling Stone → NYMag) rather than tech or adversarial
-      pipeline (Gizmodo/Vice/Guardian). Her beat — internet culture, power dynamics in creator economy, exploitation — maps
-      onto Wired''s expanding interest in platforms'' social impact. First hire explicitly framed around "how the internet
-      shapes relationships" rather than corporate accountability or policy.'
+      "Don''t Let This Flop" podcast at Rolling Stone covering internet culture. Drummond''s personal note: "It''s hard to
+      think of a more adept observer of pop culture — and how the internet shapes relationships at every level — than Ej."
+      NON-TRADITIONAL PIPELINE: culture/influencer journalism (Rolling Stone → NYMag) rather than tech or adversarial pipeline
+      (Gizmodo/Vice/Guardian). Her beat — internet culture, power dynamics in creator economy, exploitation — maps onto Wired''s
+      expanding interest in platforms'' social impact. First hire explicitly framed around "how the internet shapes relationships"
+      rather than corporate accountability or policy.'
     outgoing: null
     position: senior_writer_culture
     source_url: https://editorandpublisher.com/stories/ej-dickson-to-join-wired-as-a-senior-writer
@@ -1005,7 +1030,8 @@ editorial_changes:
       Covalen hired hundreds of contractors posing as teens to test rival AI chatbots with 45,000+ prompts about suicide,
       drugs, sex, eating disorders. Directly adversarial Meta story with wide pickup (NY Post, Reuters, Livemint, eWeek).
       Business desk roster now: Schiffer (Director) + Matsakis + Kleeman (senior editors) + Taylor + Zeff + Tiku + Haskins
-      (reporters/writers). Reporting chain Haskins → Schiffer → Barrett → Drummond is adversarial-journalism DNA at every level.'
+      (reporters/writers). Reporting chain Haskins → Schiffer → Barrett → Drummond is adversarial-journalism DNA at every
+      level.'
     outgoing: null
     position: business_reporter
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-haskins-as-a-business-reporter/
@@ -1025,9 +1051,9 @@ editorial_changes:
     notes: 'OPEN LEADERSHIP POSITION: Wired posted job for "editor to lead business coverage" — a senior management position
       reporting to executive editor Brian Barrett with "oversight of 10+ reporters and editors across US and UK teams." This
       is functionally the Director-level business desk role currently held by Zoë Schiffer. Salary range $145K-$225K (vs chief
-      business correspondent $165K-$270K — still unfilled). Posting language: "We are less interested in earnings reports than
-      getting inside pivotal companies and exploring their influence" — explicit adversarial framing mandate. Requires "an
-      informed view of the power of big platforms, the impact of artificial intelligence, the future of work." ANALYTICAL
+      business correspondent $165K-$270K — still unfilled). Posting language: "We are less interested in earnings reports
+      than getting inside pivotal companies and exploring their influence" — explicit adversarial framing mandate. Requires
+      "an informed view of the power of big platforms, the impact of artificial intelligence, the future of work." ANALYTICAL
       SIGNIFICANCE: (1) Posted one day after Kate Taylor hire announcement — suggests planned desk restructuring not an emergency.
       (2) The role description overlaps heavily with Schiffer Director, Business and Industry position — possible departure
       signal or title restructuring. (3) If Schiffer is leaving, her replacement would inherit editorial authority over Wired
@@ -1038,7 +1064,7 @@ editorial_changes:
     outgoing: null
     position: business_editor_open
     source_url: https://talkingbiznews.com/biz-news-help-wanted/wired-seeks-an-editor-to-lead-its-business-coverage/
-  - date: '2026-04'
+  - date: 2026-04
     incoming: null
     notes: 'WIRED UK LEADERSHIP DEPARTURE: Greg Williams, editor of Wired UK for 9 years (16 total years at Wired), departed
       to join Exponential View (Azeem Azhar''s research studio on exponential technologies) as its inaugural executive editor.
@@ -1048,9 +1074,9 @@ editorial_changes:
       figure, and his exit effectively marks the end of Wired UK as a semi-autonomous editorial entity — replaced by Rosie
       Swash (Deputy Editor London, hired May 2026) and Isabella Ward (staff writer, hired June 2026) reporting directly to
       Brian Barrett (US exec editor) rather than having their own UK editor. ANALYTICAL VALUE: Wired UK under Williams published
-      a distinctive editorial product with its own cover stories and editorial voice for nearly a decade. Its dissolution under
-      Drummond''s "global editorial director" structure centralizes editorial control in the US — US-centric adversarial tech
-      framing now applies uniformly to UK/European coverage that previously had Williams''s own editorial judgment.'
+      a distinctive editorial product with its own cover stories and editorial voice for nearly a decade. Its dissolution
+      under Drummond''s "global editorial director" structure centralizes editorial control in the US — US-centric adversarial
+      tech framing now applies uniformly to UK/European coverage that previously had Williams''s own editorial judgment.'
     outgoing: Greg Williams
     position: editor_wired_uk_departure
     source_url: https://talkingbiznews.com/media-news/williams-departs-wired-for-exponential-view/
