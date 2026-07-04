@@ -816,6 +816,26 @@ class TestMethodologyDeviceTableConsistency:
             f"Found in doc table: {sorted(doc_structural)}"
         )
 
+    def test_structural_table_has_no_phantom_types(self):
+        """METHODOLOGY.md Structural Devices table must NOT contain
+        pattern-matched types that are not actual structural post-pass devices.
+        Prevents accidental duplication (e.g. financial_reassurance listed in
+        both Extended and Structural tables)."""
+        code_structural = self._structural_types_from_code()
+        doc_structural = self._device_names_in_methodology_table(
+            "#### Structural Devices (Post-Pass)"
+        )
+        phantom = {dn for dn in doc_structural
+                   if not self._normalize_for_matching(dn, code_structural)}
+        assert not phantom, (
+            f"METHODOLOGY.md Structural Devices table has row(s) for types "
+            f"that are NOT structural post-pass devices in code: "
+            f"{sorted(phantom)}.\n"
+            f"These may be pattern-matched types accidentally duplicated in "
+            f"the structural table. Code structural types: "
+            f"{sorted(code_structural)}"
+        )
+
 
 class TestEmotionalLanguageCount:
     """Guard: EMOTIONAL_LANGUAGE set size must stay in sync.
