@@ -409,7 +409,7 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # Annotated real-article analyses
-├── tests/                       # 1392 tests across 54 test files (all from real articles)
+├── tests/                       # 1402 tests across 55 test files (all from real articles)
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
@@ -464,6 +464,7 @@ mediascope/
 │   ├── test_wired_subscription_era.py # Wired Conversation Focus paywall: consumer_ownership no-adverb "runs on-device", expert_contradiction ("it's not about X; it's about Y"), loss_leader_framing ("sold at cost" + subscription revenue), editorial_aside sarcastic "Guess..." opener, Path J expert-driven structural critique correction
 │   ├── test_child_safety_analysis.py # NYT child safety study analysis: new entity clusters (US Congress, Academic/Research, Research Centers, Child Safety Researchers/Legislation, Australia), source extraction fixes (case-sensitive [Aa]n?, expanded _KNOWN_ORGS, direct org attribution), new framing devices (analogy_metaphor, taxonomy_framing), agency attribution sparse-data dampening
 │   ├── test_mit_tr_anduril_meta_warfare_glasses.py # MIT TR Anduril/Meta warfare glasses: defense-tech entity detection, failure_precedent (new device), analogy_stacking FP filters (factual similes, recall verb), context-gated Llama entity, selective_rehabilitation, editorial_deflation, sentiment calibration
+│   ├── test_multi_outlet_comparison.py # N-way cross-outlet same-event comparison: compare_multi_articles() function validation, 4-way Zuckerberg town hall cross-analysis (Reuters/TechCrunch/Barron's/PYMNTS), cross_publication_import detection, tone matrix generation, QUALITY_STANDARDS Tier 1 update guard
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

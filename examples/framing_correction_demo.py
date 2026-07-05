@@ -326,7 +326,7 @@ def main():
     print("  vocabulary.")
     print()
     print("  See METHODOLOGY.md §9 for the full theoretical framework.")
-    print("  See tests/ for 1392 regression tests using real article excerpts.")
+    print("  See tests/ for 1402 regression tests using real article excerpts.")
 
 
 if __name__ == "__main__":

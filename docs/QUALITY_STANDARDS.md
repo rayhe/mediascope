@@ -347,7 +347,7 @@ These comparisons have dedicated cross-analysis documents with side-by-side metr
 |---|---|---|---|---|
 | MCI data exposure (Jun 22) | Wired (−0.60) vs Reuters (−0.10) | 0.50 | 7 vs 1 | `wired_vs_reuters_mci_data_exposure_2026_06_22_cross_analysis.md` |
 | Glasses launch (Jun 23) | Wired (−0.15) vs Gizmodo (+0.10) | 0.25 | 10 vs 0 | `gizmodo_vs_wired_glasses_launch_2026_06_23_analysis.md` |
-| Zuckerberg town hall (Jul 2–3) | Reuters (+0.05) vs TechCrunch (−0.30) vs Barron's (+0.35) | 0.65 | 0 vs 5 vs 3 | `techcrunch_zuckerberg_ai_agents_town_hall_2026_07_02_analysis.md` |
+| Zuckerberg town hall (Jul 2–3) | Reuters (−0.06) vs TechCrunch (−0.05) vs Barron's (−0.20) vs PYMNTS (+0.60) | 0.80 | 6 vs 6 vs 4 vs 6 | `town_hall_4way_cross_analysis_2026_07_02.md` |
 
 #### Tier 2: Same-Event Article Clusters
 
