@@ -3002,49 +3002,157 @@ journalists:
     Feb 2025), won Sidney Hillman Prize. Explicitly adversarial editorial philosophy: 'If you do wrong, I want the world to know.' Reports to Anna Wintour.
     Josh Topolsky orbit — followed him from The Verge to Bloomberg (2014), then to The Outline (2017). Freedom of the Press Foundation board member (2024).
 - career:
-  - beat: politics, gender, development, culture
+  - beat: opinion, politics, campus
+    end: 2014-06
+    event_type: education
+    notes: >-
+      BA in Women's & Gender Studies and African & African-American Studies, Dartmouth College (Class of 2014). GRID (Gender Research Institute at
+      Dartmouth) Fellow, Spring 2014. Regular opinion columnist for The Dartmouth newspaper (2011–2012, 10+ columns on voting rights, KONY 2012,
+      community organizing, Occupy Wall Street). Worked in Tanzania during off-term (Spring 2012). Email: leah.b.feiger.14@dartmouth.edu. Early
+      evidence of political writing voice and international development interest that would define her later career.
+    publication: dartmouth-college
+    role: student
+    source_url: https://www.dartmouth.edu/grid/people/spring2014fellows.html
+    start: 2010-09
+  - beat: gender studies, Africa
+    end: 2015-12
+    event_type: education
+    notes: >-
+      MS in Gender Studies, University of Cape Town (South Africa). Extended her Dartmouth African Studies focus into graduate-level gender research
+      in an African institutional context. This academic grounding in gender studies and African development shapes her editorial instincts around
+      power, inequality, and systemic critique — frameworks she later applies to tech-politics coverage.
+    publication: university-of-cape-town
+    role: graduate_student
+    source_url: https://leahfeiger.com
+    start: 2014-09
+  - beat: development, Africa
+    end: 2016-06
+    event_type: hired
+    notes: >-
+      Research consultant at the Segal Family Foundation, a US-based philanthropy funding ~344 partners across 19 African countries. Pre-journalism
+      career combining her African Studies + Gender Studies academic training with field research. The SFF focuses on locally-led African development.
+      This experience informs her later editorial sensitivity to power asymmetries and institutional accountability.
+    publication: segal-family-foundation
+    role: research_consultant
+    source_url: https://talkingbiznews.com/they-re-hiring/vice-hires-feiger-as-senior-features-editor/
+    start: 2015-01
+  - beat: journalism (general)
+    end: 2017-06
+    event_type: education
+    notes: >-
+      MS in Journalism, Columbia University Graduate School of Journalism. Completed after UCT Gender Studies MS and Segal Family Foundation
+      research work. Columbia J-School is the pipeline for many journalists in the MediaScope dataset (cf. Eli Tan, Johana Bhuiyan). Third
+      degree after Dartmouth BA and UCT MS — unusually extensive academic preparation compared to most journalists in the dataset.
+    publication: columbia-university
+    role: graduate_student
+    source_url: https://leahfeiger.com
+    start: 2016-09
+  - beat: politics, gender, development, culture, Africa, travel
     end: 2020-09
     event_type: hired
     notes: >-
-      Freelanced for The Atlantic, The New York Times, The Lily (Washington Post), The Forward, Fodor's Travel, OZY, Atlas Obscura, Bitch Media, Culture
-      Trip. Also served as editorial fellow at The Atlantic and research consultant at Segal Family Foundation. Education: Dartmouth BA (African Studies
-      + Gender Studies), University of Cape Town MS (Gender Studies), Columbia University MS (Journalism).
+      Prolific freelance career spanning multiple tracked and non-tracked publications. Editorial fellow at The Atlantic (dates unclear, likely
+      ~2017–2018). Freelance for: The New York Times, The Lily (Washington Post gender vertical), The Forward, OZY, Atlas Obscura, Bitch Media,
+      Culture Trip. Also freelance writer at Fodor's Travel — wrote Rwanda section for Fodor's 2018 "A Complete Guide To African Safaris" print
+      edition. Contributed to Atlas Obscura's book. Feiger's freelance beat combined gender politics, African development, and cultural reporting
+      — a mix that has no analogue among the 130 other journalists in this dataset. MIGRATION NOTE: The Atlantic editorial fellowship represents
+      her first direct connection to a tracked publication.
     publication: freelance
     role: freelance_writer
     source_url: https://talkingbiznews.com/they-re-hiring/vice-hires-feiger-as-senior-features-editor/
-    start: 2016-01
-  - beat: politics, gender, features
-    end: 2023-11
+    start: 2017-07
+  - beat: politics, gender, features, investigations
+    end: 2022-04
     event_type: hired
     notes: >-
-      Senior features editor → managing editor at Vice News. Edited, commissioned, and wrote. Led award-winning politics and gender coverage. Credited on
-      Vice News Reports podcast episodes (abortion, trans rights). Rose from features editor to managing editor during tenure. Direct Drummond connection
-      — Drummond was SVP at Vice during overlap period (Mar 2019 – Aug 2023); Feiger joined Sep 2020.
+      Hired as senior features editor at Vice (announced Sep 16, 2020 via Twitter/TalkingBizNews). Edited, commissioned, and wrote. Commissioning
+      brief: "ambitious international features and investigations on gender, inequality, development, colonialism, religion, security, health,
+      misconduct, extremism, climate change." Rate: $0.50/word and up. Direct Drummond connection — Katie Drummond was SVP at Vice during overlap
+      period (Mar 2019 – Aug 2023); Feiger joined Sep 2020, creating a ~35-month professional overlap before both migrated to Wired.
     publication: vice
     role: senior_features_editor
     source_url: https://talkingbiznews.com/they-re-hiring/vice-hires-feiger-as-senior-features-editor/
     start: 2020-09
-  - beat: politics, disinformation, campaigns, DOGE
+  - beat: politics, gender, news, investigations
+    end: 2023-10
+    event_type: promoted
+    notes: >-
+      Promoted from senior features editor to managing editor at Vice USA (announced Apr 20, 2022 by DIARY directory). As managing editor of
+      VICE News, oversaw Emmy-nominated and Emmy-winning investigations. Credits on VICE News Tonight productions: "A Christian Summer Camp's
+      History of Abuse" (43rd News & Documentary Emmy, Outstanding Hard News Feature Story: Long Form, nominated Sep 2022) and "Six Weeks:
+      Inside the Texas Abortion Ban" (43rd News & Documentary Emmy, Outstanding Continuing News Coverage: Long Form, nominated Sep 2022).
+      Also oversaw Taliban's Takeover of Afghanistan coverage. Emmy award-winning editor (self-described on personal site). Left Vice before
+      it filed for bankruptcy (May 2023, Chapter 11). ANALYTICAL NOTE: Vice News 2020–2023 was characterized by progressive advocacy journalism
+      with explicit moral framing. The Emmy-winning investigations Feiger oversaw (Texas abortion ban, Christian camp abuse) are social justice
+      investigations that test institutional accountability — the same editorial muscle she brings to tech-politics coverage at Wired.
+    publication: vice
+    role: managing_editor
+    source_url: https://staging.diarydirectory.com/media-news/vice-usa-names-managing-editor
+    start: 2022-04
+  - beat: politics, disinformation, campaigns, DOGE, tech-government
     event_type: hired
     notes: >-
-      First day Nov 13, 2023. First-ever Wired politics editor. Hired as part of Drummond's new 3-reporter, 2-editor politics team (alongside William Turton
-      from Bloomberg, David Gilbert). Initially reported to Meg Marco (exec editor of news, Mar-Dec 2023); after Marco's departure, reports to Brian Barrett
-      (exec editor of news, Jan 2024-present). Subsequently promoted to 'Director of Politics & Science' (title per Nieman Lab 2026 KQED announcement) /
-      'Director, Science, Politics, and Security' (per TBN job listing). Hosts WIRED Politics Lab podcast. Co-hosts Uncanny Valley podcast news segments
-      with Brian Barrett and Zoë Schiffer. 252+ articles as of Muck Rack. Led DOGE coverage that drove 62,500 new subs. Feiger on Drummond: 'I cannot state
-      enough how farsighted Katie Drummond was. She saw that tight connection between tech and politics coming.' ANALYTICAL NOTE: Drummond recruited Feiger
-      from Vice (where they overlapped) to build Wired's politics infrastructure. This is a direct personnel pipeline from Vice's adversarial culture into
-      Wired's newsroom. The Drummond→Feiger hiring chain is the single most important editorial staffing decision for understanding Wired's post-2023 anti-tech-government
-      editorial stance.
+      First day Nov 13, 2023. First-ever Wired politics editor. Hired as part of Drummond's new politics team (alongside William Turton
+      from Bloomberg and David Gilbert). Initially reported to Meg Marco (exec editor of news, Mar-Dec 2023); after Marco's rapid departure,
+      reports to Brian Barrett (exec editor of news, Jan 2024-present). Subsequently promoted to 'Director of Politics & Science' (title per
+      Nieman Lab 2026 KQED announcement) / 'Director, Science, Politics, and Security' (per TBN job listing). Hosts WIRED Politics Lab podcast.
+      Co-hosts Uncanny Valley podcast news segments with Brian Barrett and Zoë Schiffer. 252+ articles as of Muck Rack count. Led DOGE coverage
+      that drove 62,500 new US subs in 2 weeks (Feb 2025). Presented "DOGE: Chronicles of a Digital Coup d'État" at Wired Italy's The Big
+      Interview, Bocconi University, Milan (Jun 26, 2025). On Drummond: 'I cannot state enough how farsighted Katie Drummond was. She saw
+      that tight connection between tech and politics coming.' On DOGE/Musk: 'We should be blunt about it, how the most powerful and the richest
+      men came to ally. Of course, they were too narcissistic to last without clashing.' ANALYTICAL NOTE: Drummond recruited Feiger from Vice
+      (where they overlapped ~35 months) to build Wired's politics infrastructure. This is a direct personnel pipeline from Vice's progressive
+      advocacy culture into Wired's newsroom. The Drummond→Feiger hiring chain is the single most important editorial staffing decision for
+      understanding Wired's post-2023 anti-tech-government editorial stance.
     publication: wired
     role: politics_editor
     source_url: https://talkingbiznews.com/they-re-hiring/wired-is-launching-a-political-coverage-team/
     start: 2023-11
+  education:
+  - degree: BA
+    field: Women's & Gender Studies and African & African-American Studies
+    graduation_year: 2014
+    institution: Dartmouth College
+    source_url: https://www.dartmouth.edu/grid/people/spring2014fellows.html
+  - degree: MS
+    field: Gender Studies
+    graduation_year: 2015
+    institution: University of Cape Town
+    source_url: https://leahfeiger.com
+  - degree: MS
+    field: Journalism
+    graduation_year: 2017
+    institution: Columbia University
+    source_url: https://leahfeiger.com
+  multi_pub_migrations:
+  - from_pub: freelance (The Atlantic, NYT, WaPo/The Lily)
+    notes: >-
+      Transition from multi-outlet freelance to first staff position. The Atlantic editorial fellowship preceded the Vice hire — multiple tracked
+      publications in her freelance portfolio.
+    significance: baseline
+    to_pub: vice
+    year: 2020
+  - from_pub: vice
+    notes: >-
+      KEY MIGRATION: Vice News managing editor → Wired's first politics editor. Recruited by Katie Drummond (who overlapped with Feiger at Vice
+      for ~35 months as SVP). Tests whether Vice's progressive advocacy framing transfers into Wired's tech journalism context. Unlike most
+      Wired hires who come from the tech journalism pipeline (Gizmodo, Verge, Bloomberg tech desks), Feiger's entire career arc is in politics,
+      gender, and social justice — making this a cross-genre migration, not a within-genre one.
+    significance: high
+    to_pub: wired
+    year: 2023
   name: Leah Feiger
   notes: >-
-    KEY HIRE: First-ever Wired politics editor, created under Katie Drummond. Built Wired's politics team from scratch. Career arc: freelance (Atlantic,
-    NYT, WaPo) → Vice News → Wired. Now Director of Politics & Science. Hosts WIRED Politics Lab podcast and Uncanny Valley news segments. Columbia J-School,
-    Dartmouth African/Gender Studies, UCT Gender Studies. Key Drummond hire — Drummond recruited her from Vice News, continuing their professional orbit.
+    KEY HIRE: First-ever Wired politics editor, created under Katie Drummond. Built Wired's politics team from scratch. Career arc: Dartmouth
+    (African/Gender Studies) → UCT (Gender Studies) → Columbia J-School → Segal Family Foundation (Africa research) → freelance (Atlantic, NYT,
+    WaPo) → Vice News (senior features editor → managing editor, Emmy award-winning) → Wired (politics editor → Director of Politics & Science).
+    Hosts WIRED Politics Lab podcast and Uncanny Valley news segments. UNIQUE IN DATASET: Only journalist in the 131-person database whose
+    entire pre-journalism career is in African studies and gender studies with zero tech journalism background. Every other Wired editor/director
+    came through the tech journalism pipeline (Gizmodo, Verge, Bloomberg tech, etc.). Feiger's framing instincts were formed in identity politics,
+    social justice investigations, and international development — not tech accountability or business journalism. This makes her a critical
+    natural experiment case: does a politics-trained editor adopt Wired's institutional tech framing, or does she import her own framing vocabulary?
+    The DiD framework should compare her Wired bylines against her Vice bylines to test institutional vs individual framing origin. Her Bocconi
+    lecture language ('digital coup d'état,' 'too narcissistic to last') suggests she brings her own adversarial frame rather than adopting Wired's.
 - career:
   - beat: politics, policy
     end: 2005-12
