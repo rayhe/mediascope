@@ -758,6 +758,7 @@ spur_coalition:
     tracking) for real-time monitoring of how AI systems use publisher content. SPUR expects
     to launch the telemetry standard "soon" as of June 2026.
   founding_members: ["BBC", "Financial Times", "Guardian Media Group", "Sky News", "Telegraph Media Group", "CMA Media (France, joined Jun 2026 as founding member)", "Mediahuis"]
+  eight_work_streams: "The project now working on eight work streams with input and advice from members, participants and the Coalition team."
   standard_members_jun_2026:
     canadian: ["The Globe and Mail", "Quebecor", "Postmedia", "Torstar", "CBC/Radio-Canada", "La Presse", "TVO Media Education Group"]
     european: ["SIPA Ouest-France Group", "Ringier (Switzerland)", "Citywire (UK)", "Sanoma Media Finland", "Der Standard (Austria)", "Bonnier News (Sweden)", "FD Mediagroep (Netherlands)"]
@@ -766,9 +767,117 @@ spur_coalition:
   guardian_signatory: "Anna Bateson, CEO"
   bateson_quote: "Welcoming 30 new members, including our first founding member from France, gives SPUR the scale required to turn its mission into a global mandate. This collective strength will help legitimise the standards we create, safeguarding the intellectual property of publishers and providing AI developers with a route to scalable, sustainable licensing."
   purpose: "Shape 'the rules, standards and infrastructure that enable publishers and AI platforms to do business.' Create shared technical standards, streamline licensing, identify IP protection gaps, promote transparent rights-cleared access."
-  telemetry_standard: "Technical infrastructure for publishers to monitor in real-time how AI systems use their content. Ensures transparent and fairly compensated usage. Expected to launch soon as of June 2026."
+  telemetry_standard:
+    status: "PUBLISHED FOR PUBLIC COMMENT (June 12, 2026)"
+    comment_period: "June 12 – July 10, 2026"
+    revised_versions_due: "August 10, 2026"
+    spec_version: "0.1 (preview)"
+    technical_lead: "Alex Springer (alex@spurcoalition.org)"
+    github_standard: "https://github.com/SPUR-Coalition/telemetry"
+    github_profile: "https://github.com/SPUR-Coalition/telemetry-profile"
+    license_standard: "Apache License 2.0"
+    license_profile: "Creative Commons Attribution-ShareAlike 4.0 International"
+    description: >
+      The Content Telemetry standard defines five event types tracking content through an AI
+      system: (1) content_retrieved — content fetched over HTTP, (2) content_grounded — content
+      loaded into the agent's generation context, (3) content_cited — content explicitly
+      referenced in the response, (4) content_displayed — user saw a reference or embedded
+      content, (5) content_engaged — user clicked, copied, shared, or directed the agent to act.
+      Events are tied together by a session ID. The gaps between stages reveal how content was
+      used: retrieval without grounding = fetched but not used; grounding without citation =
+      influenced the answer but no credit; citation without engagement = cited but user didn't
+      click through.
+    spur_profile:
+      tier: "Compliant (single tier)"
+      requirements:
+        - "Conformance to the standard (Conforming emitter at Retrieval, Grounding, or Citation level)"
+        - "Event-level delivery — discrete events per fetch/grounding/citation/display/engagement, no aggregation, no sampling"
+        - "Real-time delivery — events dispatched as they occur; alternative cadence by per-publisher negotiation"
+        - "Publisher-designated endpoint — telemetry routed to a destination the publisher chooses"
+      consumer_requirements: "Telemetry consumers meet parallel requirements: standard consumer conformance, publisher resolution and isolation, and onward delivery to publisher-designated endpoint"
+    design_principles:
+      - "Post-hoc, not pre-declared: events report what actually happened, not what the agent said it would do"
+      - "Observable boundaries, not agent internals: five event types mark boundary crossings only"
+      - "Multiple observers, one event: Content-Telemetry-ID header correlates events across CDN, origin server, and AI agent"
+    open_questions:
+      - "Grounding boundary: where exactly content 'enters' generation context in multi-stage pipelines (re-ranking, summarisation)"
+      - "Event volume at scale: single deep-research query can produce 100+ retrieval events"
+      - "Verification: grounding/citation events are SELF-REPORTED by the agent (the party that may owe compensation) — no independent observer for grounding, citation, display, or engagement"
+      - "Reporting granularity: SPUR profile requires event-level delivery, but scaling is an open question"
+    related_protocols: ["Really Simple Licensing (RSL)", "peek-then-pay", "IAB CoMP", "x402 (crypto-based)"]
+    analytical_significance: >
+      CRITICAL: The self-reporting gap is the most analytically significant finding. Grounding,
+      citation, display, and engagement events have NO independent observer — they are reported
+      by the AI agent, which is the same party that may owe compensation under a license. The
+      only corroboration mechanism in v0.1 covers retrieval only (via Content-Telemetry-ID header
+      matching between agent and origin server). Signed events are deferred to a future version.
+      This means the standard as currently drafted relies on AI companies honestly reporting
+      their content usage. For the Guardian's analytical position: SPUR co-developed this standard
+      while the Guardian simultaneously participates in Google's News AI pilot, which presumably
+      does NOT require this telemetry protocol. The dual positioning becomes sharper: the Guardian
+      helps build the industry verification tool while engaging in bilateral deals that bypass it.
+    source_urls:
+      - "https://www.spurcoalition.org/updates/spur-telemetry-standard-published-for-public-comment-the-spur-coalition"
+      - "https://github.com/SPUR-Coalition/telemetry"
+      - "https://github.com/SPUR-Coalition/telemetry-profile"
   wan_ifra_partnership: "WAN-IFRA formed a strategic partnership with SPUR at the June 2026 Congress in Marseille."
+  bbc_spur_revolving_door:
+    description: >
+      BBC-GUARDIAN SPUR CO-FOUNDING CREATES MULTI-LAYERED REVOLVING DOOR (NEW FINDING Jul 5):
+      BBC and Guardian are both SPUR founding members. The BBC founding letter was signed by
+      Tim Davie (then DG), but Brittin replaced Davie as BBC DG on May 18, 2026. Brittin came
+      to the BBC FROM the GMG board (where he served as Senior Independent Director until
+      Mar 24, 2026). This creates a unique governance pathway: Google EMEA President (18 years)
+      → GMG Senior Independent Director (~2025-Mar 2026) → BBC Director-General (May 2026+).
+      The BBC and Guardian are now co-founding SPUR members sharing a governance connection
+      through Brittin, who simultaneously has deep Google relationships. Both organisations are
+      developing the same telemetry standard that will govern how AI companies (including Google)
+      report content usage — and both have pre-existing relationships with Google (Guardian:
+      Google News AI pilot; BBC: Google has historically been a major digital partner).
+      BRITTIN'S AI VIEWS: In the Implement AI Podcast (#81, ~May 2026), Brittin described AI
+      as experiencing a "vertical takeoff moment," said the biggest barriers are "cultural, not
+      technical," and urged organisations to "start small, experiment, and move now." TVBEurope
+      analysis: "the BBC has been super conservative on adopting AI — expect that to change
+      big time under Brittin." This suggests the BBC under Brittin will pursue MORE aggressive
+      AI adoption, potentially including content licensing deals similar to the Guardian's.
+      If the BBC strikes its own Google or OpenAI content licensing deal under Brittin's
+      leadership, the revolving door pathway becomes commercially significant, not just
+      governance-significant.
+    analytical_significance: >
+      This finding extends hypothesis #12 (Guardian Google coverage during Brittin's board tenure)
+      to the BBC: does the BBC's AI policy under Brittin (an 18-year Google executive) differ
+      from the BBC's AI policy under Davie? The BBC's SPUR co-founding membership creates a
+      structural tension: SPUR advocates collective standards while Brittin's "experiment and
+      move now" AI philosophy may favor bilateral deals. Monitor for any BBC AI content licensing
+      announcements that bypass the SPUR framework.
+    source_urls:
+      - "https://www.youtube.com/watch?v=f5osAEH-rxk"
+      - "https://tvbeurope.com/business/why-the-bbc-appointed-a-tech-bro-as-director-general"
+      - "https://www.prolificnorth.co.uk/news/bbc-board-confirms-former-google-exec-and-guardian-board-member-matt-brittin-will-step-into-565k-director-general-role/"
   operation_leaky_bucket: "Guardian's internal compliance program ('Operation Leaky Bucket') to identify and close access points for unauthorized content scraping, strengthen negotiating position for licensing deals."
+  uk_copyright_policy_shift:
+    description: >
+      UK GOVERNMENT DROPPED PREFERRED OPTION ON AI COPYRIGHT (Mar 2026): Technology minister
+      Liz Kendall announced the UK government "no longer has a preferred option" on copyright
+      and AI, abandoning its earlier proposal for a broad copyright exception with opt-out for
+      AI training. The government will instead focus on: (1) consultation on digital replicas,
+      (2) taskforce on AI content labelling, (3) review of mechanisms for creators to control
+      their works online, (4) working group on support for independent creative organisations.
+      SIGNIFICANCE FOR GUARDIAN/SPUR: This policy vacuum benefits the licensing-first approach
+      that SPUR advocates. Without a blanket copyright exception, bilateral licensing becomes
+      the de facto model — exactly what the Guardian, OpenAI deal, ProRata deal, and Google
+      News AI pilot represent. SPUR's telemetry standard fills the technical gap left by the
+      government's policy withdrawal, positioning SPUR as a de facto standard-setter in the
+      absence of legislation. This creates a FOUR-LAYER enforcement stack:
+      (1) Regulatory: UK CMA opt-out rights (June 2, 2026)
+      (2) Infrastructure: Cloudflare default block (Sep 15, 2026)
+      (3) Standards: SPUR Content Telemetry (published Jun 12, 2026)
+      (4) Policy: UK government withdrawal from legislation creates licensing-by-default
+      The Guardian is positioned at or invested in every layer.
+    date: "2026-03 (announced)"
+    source_urls:
+      - "https://screendaily.com/news/uk-government-changes-position-on-ai-copyright-training-in-response-to-industry-concerns/5202147.article"
+      - "https://reuters.com/technology/uk-examine-labelling-ai-content-among-wider-copyright-reforms-2026-03-26/"
   source_urls:
     - "https://journalism.co.uk/stories/bbc-ft-guardian-sky-and-the-times-unite-in-spur-coalition-for-ai-protection"
     - "https://spurcoalition.org"
@@ -1240,6 +1349,33 @@ known_conflicts:
     source_urls:
       - "https://www.pymnts.com/legal/2026/400-newspapers-sue-microsoft-and-openai-alleging-content-theft-for-ai/"
       - "https://news.bloomberglaw.com/ip-law/openai-microsoft-sued-by-publishers-for-scraping-articles"
+  - type: "revolving_door"
+    description: >
+      BBC-SPUR CO-FOUNDING REVOLVING DOOR (NEW FINDING Jul 5, 2026): BBC is a SPUR founding
+      member (Tim Davie signed the founding open letter, Feb 2026). Brittin replaced Davie as
+      BBC DG on May 18, 2026. Brittin came to the BBC FROM the GMG board (Senior Independent
+      Director until Mar 24, 2026). This creates a governance pathway between two SPUR founding
+      members: Google (18 years) → GMG SID → BBC DG. The BBC's SPUR membership is now overseen
+      by a former GMG board member who is also a former 18-year Google executive. Both the
+      Guardian and BBC are developing the SPUR Content Telemetry standard (published Jun 12,
+      2026) that will govern how AI companies (including Google) report content usage. Brittin's
+      AI views (Implement AI Podcast, ~May 2026): AI is experiencing a "vertical takeoff
+      moment," biggest barriers are "cultural, not technical," urges "start small, experiment,
+      and move now." TVBEurope analysis: BBC was "super conservative on adopting AI — expect
+      that to change big time under Brittin." If the BBC strikes AI content licensing deals
+      under Brittin (similar to Guardian's OpenAI/Google deals), the revolving door pathway
+      becomes commercially significant. This would mean a former Google executive who sat on
+      the Guardian's board is now making AI content deals for the BBC — across two SPUR
+      founding members that are supposed to collectively negotiate against AI companies.
+    severity: 2
+    evidence: >
+      BBC founding letter (Feb 2026, signed by Davie). Companies House GMG TM01 (Brittin
+      departure Mar 25, 2026). BBC board confirmation (Mar 23, 2026). Implement AI Podcast #81
+      (Brittin AI views). TVBEurope analysis. SPUR telemetry standard published Jun 12, 2026.
+    source_urls:
+      - "https://www.youtube.com/watch?v=f5osAEH-rxk"
+      - "https://tvbeurope.com/business/why-the-bbc-appointed-a-tech-bro-as-director-general"
+      - "https://spurcoalition.org/updates/spur-telemetry-standard-published-for-public-comment-the-spur-coalition"
 
 ai_crawl_policy:
   blocks_gptbot: "Previously yes; likely updated post-OpenAI deal (Feb 2025)"
@@ -1419,6 +1555,46 @@ notes: |
   No other tracked publication has this depth of structural alignment.
   Two new testable hypotheses added (#14: circular ecosystem incentive for aggressive AI coverage,
   #15: ProRata-Llama paradox on open vs closed AI editorial blind spot).
+
+  UPDATED (Jul 5, 2026 — morning):
+  SPUR Content Telemetry standard published for public comment on June 12, 2026 (comment period
+  ending July 10). Two GitHub repos (SPUR-Coalition/telemetry + telemetry-profile) define a
+  five-event tracking system (retrieved → grounded → cited → displayed → engaged). CRITICAL
+  SELF-REPORTING GAP: grounding, citation, display, and engagement events are self-reported by
+  the AI agent — the party that may owe compensation. No independent verification mechanism in
+  v0.1 except for retrieval (Content-Telemetry-ID header correlation). The Guardian co-developed
+  this standard while simultaneously participating in Google's News AI pilot, which presumably
+  does not require this telemetry. The FOUR-LAYER enforcement stack is now complete: (1) CMA
+  regulatory opt-out (Jun 2), (2) Cloudflare default block (Sep 15), (3) SPUR telemetry
+  standard (Jun 12), (4) UK government policy withdrawal creating licensing-by-default (Mar
+  2026). Guardian invested at every layer. BBC-SPUR revolving door deepened: BBC's SPUR
+  membership is now overseen by Brittin (former GMG SID, former Google EMEA President), who
+  described AI as a "vertical takeoff moment" and urged "experiment and move now." If BBC
+  strikes AI content licensing deals under Brittin, two SPUR founding members will have
+  bilateral deals overseen by interconnected governance figures with Google backgrounds.
+
+  UPDATED CONFLICT COUNT (Jul 5, 2026):
+  The Guardian now has FOUR AI-related financial relationships (OpenAI, ProRata, Google News AI
+  pilot, SPUR), THREE revolving door conflicts (Bateson CEO ex-Google, Brittin SID ex-Google
+  → BBC DG, BBC-SPUR cross-governance via Brittin), significant GMG board turnover (4
+  departures Jan-Mar 2026), and ONE strategic licensing choice (licensing over litigation).
+  New: UK government withdrawal from AI copyright legislation strengthens the SPUR/licensing
+  position. SPUR telemetry standard v0.1 published but has self-reporting verification gap.
+
+  16. NEW (Jul 5): SPUR TELEMETRY SELF-REPORTING GAP — Does the Guardian's editorial coverage
+      of AI content licensing acknowledge that the SPUR telemetry standard it co-developed
+      relies on AI companies honestly self-reporting their content usage? The standard has no
+      independent verification for grounding, citation, display, or engagement events. Does
+      Guardian coverage frame SPUR telemetry as a strong enforcement mechanism (which serves
+      its institutional interest) or honestly assess the verification gap (which serves its
+      journalistic mission)? Compare to Guardian's coverage of tech company self-reporting
+      in other contexts (e.g., Facebook's self-reported metrics scandals).
+  17. NEW (Jul 5): BBC-BRITTIN AI POLICY — Does the BBC's AI content strategy change under
+      Brittin (started May 18, 2026) compared to Davie? If the BBC enters bilateral AI
+      licensing deals under Brittin's leadership, it would mean two SPUR founding members
+      (Guardian and BBC) are making bilateral deals while co-developing collective standards.
+      Monitor for BBC AI content licensing announcements. Brittin's "experiment and move now"
+      philosophy suggests faster AI adoption than Davie's era.
 
 editorial_history:
   leadership_changes:
