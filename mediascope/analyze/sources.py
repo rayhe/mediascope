@@ -1302,23 +1302,38 @@ def extract_sources(text: str) -> list[SourceMention]:
 def _extract_nearby_quote(text: str, ref_start: int, ref_end: int) -> str:
     """Extract a quoted string near a reference position.
 
-    Looks for text enclosed in quotation marks within 200 characters
-    of the reference position.
+    Looks for text enclosed in quotation marks near the reference.
+    Prefers quotes AFTER the reference (attribution → quote pattern)
+    over quotes BEFORE (quote → attribution), to avoid misattributing
+    a preceding speaker's quote to the current source.
     """
-    search_start = max(0, ref_start - 200)
-    search_end = min(len(text), ref_end + 300)
-    window = text[search_start:search_end]
-
     # Look for quoted text (double quotes or smart quotes)
     quote_patterns = [
         re.compile(r'"([^"]{10,300})"'),
         re.compile(r'\u201c([^\u201d]{10,300})\u201d'),
         re.compile(r"'([^']{10,300})'"),
     ]
+
+    # Phase 1: Search FORWARD from the reference (preferred — attribution
+    # typically precedes the quote: 'says Gong. "..."')
+    fwd_end = min(len(text), ref_end + 300)
+    fwd_window = text[ref_end:fwd_end]
     for qp in quote_patterns:
-        m = qp.search(window)
+        m = qp.search(fwd_window)
         if m:
             return m.group(1).strip()
+
+    # Phase 2: Fall back to searching BACKWARD (quote precedes attribution:
+    # '"..." says Gong')
+    bwd_start = max(0, ref_start - 200)
+    bwd_window = text[bwd_start:ref_start]
+    for qp in quote_patterns:
+        # Find the LAST match in the backward window (closest to ref)
+        last_match = None
+        for m in qp.finditer(bwd_window):
+            last_match = m
+        if last_match:
+            return last_match.group(1).strip()
 
     return ""
 

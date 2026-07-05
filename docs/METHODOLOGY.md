@@ -986,7 +986,7 @@ The following table documents all 66 entity clusters shipped with MediaScope, or
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
-| **Academic/Research** | 46 | NYU, New York University, Northeastern University, Northeastern, Stanford University, Stanford (+40 more) |
+| **Academic/Research** | 49 | NYU, New York University, Northeastern University, Northeastern, Stanford University, Stanford (+43 more) |
 | **Research Centers** | 15 | Cybersafety Research Center, Center for Countering Digital Hate, CCDH, Center for Humane Technology, Humane Intelligence, Internet Watch Foundation, IWF (+8 more) |
 | **Child Safety Researchers** | 10 | Arturo Béjar, Béjar, Lexie Matsumoto, Matsumoto, Laura Edelson, Edelson, Rumman Chowdhury, Chowdhury (+2 more) |
 | **Education/Advocacy** | 5 | National PTA, National Education Association, NEA, American Federation of Teachers, AFT |

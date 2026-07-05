@@ -403,7 +403,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **1451 tests** across 56 test files, each covering a different analytical capability:
+MediaScope has **1454 tests** across 57 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -463,6 +463,7 @@ MediaScope has **1451 tests** across 56 test files, each covering a different an
 | `test_child_safety_analysis.py` | 16 | NYT child safety study: new entity clusters (US Congress, Academic/Research, Research Centers, Child Safety Researchers/Legislation, Australia), source extraction fixes (case-sensitive [Aa]n?, expanded _KNOWN_ORGS, direct org attribution), new framing devices (analogy_metaphor, taxonomy_framing), agency attribution sparse-data dampening. |
 | `test_mit_tr_anduril_meta_warfare_glasses.py` | 30 | MIT TR Anduril/Meta warfare glasses: defense-tech entity detection (Anduril, EagleEye, SBMC), failure_precedent framing device (new — Microsoft $22B cancelled contract), analogy_stacking false-positive filters (factual similes, memory-verb "recalls that"), context-gated Llama entity alias (case-sensitive with model/AI/LLM lookahead), selective_rehabilitation (Palmer Luckey), editorial_deflation ("That's the idea, anyway"), sentiment calibration for neutral-skeptical military reporting |
 | `test_multi_outlet_comparison.py` | 10 | N-way cross-outlet same-event comparison: compare_multi_articles() function validation (import, min-2 guard, length-mismatch guard, matrix generation), 4-way Zuckerberg town hall cross-analysis file (existence, outlet references, comparison matrix, cross_publication_import detection, tone value numerics), QUALITY_STANDARDS Tier 1 PYMNTS update guard |
+| `test_quote_forward_preference.py` | 3 | Quote extraction forward-preference fix: _extract_nearby_quote prefers forward quotes over backward to prevent cross-speaker misattribution, backward fallback when no forward quote exists, regression test for Ji/Gong misattribution in MIT TR AI agent security article |
 
 ```bash
 # Run all tests

@@ -614,6 +614,11 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             # Added from MIT Tech Review world models article (Jul 4, 2026)
             "Fei-Fei Li",
             "Daron Acemoglu",
+            # AI security/agent researchers — appear across multiple MIT TR,
+            # NYT, and Wired articles on AI agent vulnerabilities (Jul 5, 2026)
+            "Neil Gong",
+            "Somesh Jha",
+            "Jessica Ji",
         ],
         "regex": r"(?<!\w)((?-i:NYU)|New York University"
                  r"|Northeastern(?:\s+University)?"
@@ -636,6 +641,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|University of Virginia"
                  r"|Bo Li|Dawn Song|Sanmi Koyejo"
                  r"|Fei-Fei Li|Daron Acemoglu"
+                 r"|Neil Gong|Somesh Jha|Jessica Ji"
                  # Academic journals — case-sensitive: "nature" (common
                  # noun) must not match the journal Nature.
                  r"|(?-i:Nature)(?:\s+(?:Neuroscience|Medicine|Machine"
