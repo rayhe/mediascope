@@ -438,6 +438,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
     # "Quietly" as editorial signal of secrecy
     re.compile(
         r"\b(?:quietly|secretly|covertly|surreptitiously|discreetly|"
+        r"secretive(?:ly)?|clandestine(?:ly)?|"
         r"without (?:notice|disclosure|announcing|telling)|"
         r"behind (?:closed doors|the scenes))\b",
         re.IGNORECASE,
@@ -456,6 +457,20 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"(?:fake|dummy|bogus|sham|decoy)\s+(?:account|profile|identity|persona)s?|"
         r"infiltrat(?:e[sd]?|ing|ion)|"
         r"bombard(?:ed|ing|s)?)\b",
+        re.IGNORECASE,
+    ),
+    # Contractor exploitation / trauma language — loaded terms that frame
+    # employer-contractor relationships as harmful or traumatizing.
+    # Distinct from workplace-specific loaded language (which covers
+    # internal employees) because these emphasise the outsourcing of harm.
+    # Discovered via Futurism Cannes reframe (Jul 2026): "offloaded
+    # disturbing work onto contractors", "traumatized", "gobsmacked."
+    re.compile(
+        r"\b(?:offload(?:ed|ing|s)?|traumati[sz](?:ed|ing)|"
+        r"gobsmacked|shell.?shocked|"
+        r"brute.?force\s+approach|"
+        r"forced\s+to\s+(?:come up with|create|write|produce|generate)|"
+        r"ostensibly\s+in\s+the\s+name\s+of)\b",
         re.IGNORECASE,
     ),
     # "Dormant" / hidden capability language — require proximity to feature/code
@@ -535,7 +550,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"cannot\s+opt[\-\s]?out|"
         r"no\s+(?:opt[\-\s]?out|escape|recourse|alternative)|"
         r"not\s+(?:possible|optional|voluntary)|"
-        r"mandatory|compulsory|forced\s+to\s+(?:install|use|adopt|accept))\b",
+        r"mandatory|compulsory|forced\s+to\s+(?:install|use|adopt|accept|watch|view|review|read|listen|participate))\b",
         re.IGNORECASE,
     ),
     # Employee revolt / organised dissent language — loaded terms
@@ -1051,6 +1066,22 @@ _CROSS_PUBLICATION_IMPORT_PATTERNS: list[re.Pattern] = [
     re.compile(
         r"what\s+(?:\w+\s+){0,3}(?:have\s+)?(?:called|dubbed|termed|described\s+as|"
         r"labeled|labelled|characterized\s+as)\b",
+        re.IGNORECASE,
+    ),
+    # Secondary-reporting attribution: "[pub] reports", "per the [pub]",
+    # "[source] told [pub]".  These import credibility from the original
+    # investigation.  Distinct from self_referential_investigation (which
+    # cites the author's *own* publication).
+    # Discovered via Futurism Cannes reframe (Jul 2026): "Wired reports",
+    # "per the magazine", "per the reporting", "she told Wired".
+    re.compile(
+        r"\b(?:per the (?:magazine|newspaper|outlet|publication|report(?:ing)?|"
+        r"investigation|story|article|piece))\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:according to (?:the )?(?:magazine|newspaper|outlet|publication|"
+        r"report(?:ing)?|investigation|story))\b",
         re.IGNORECASE,
     ),
 ]
@@ -1817,13 +1848,28 @@ _GEOPOLITICAL_REGULATORY_PRESSURE_PATTERNS: list[re.Pattern] = [
     # Meta Dublin contractors article (May 2026): "security guards at
     # Meta's gates stood firm, arms crossed" is literal, not geopolitical.
     re.compile(
+        # "defy/defied/defying" requires proximity to geopolitical actors
+        # or regulatory context to avoid false positives on non-geopolitical
+        # uses like "responses that defied their guardrails."
+        # Discovered via Futurism Cannes reframe (Jul 2026).
         r"\b(?:not concerned|not deterred|will not (?:be )?(?:deterred|swayed|"
-        r"intimidated|bullied)|undeterred|defiant|defy|defied|defying|"
+        r"intimidated|bullied)|undeterred|defiant|"
         r"will always act in .{0,30}?national interest|"
         r"sovereign(?:ty)?|"
         r"will go ahead despite|"
         r"will not back down|standing firm|stood firm)\b",
         re.IGNORECASE,
+    ),
+    # Defiance verbs — separate pattern requiring geopolitical context
+    # within 80 chars to suppress FPs like "defied their guardrails."
+    re.compile(
+        r"\b(?:defy|defied|defying)\b"
+        r"(?=.{0,80}?"
+        r"\b(?:government|regulat|legislat|parliament|congress|EU|"
+        r"commission|court|law|authority|authorit|sanction|ban|"
+        r"ruling|order|decree|mandate|diplomat|embassy|sovereign|"
+        r"Brussels|Washington|Beijing|Westminster)\b)",
+        re.IGNORECASE | re.DOTALL,
     ),
     # Trade tension / regulatory friction language
     re.compile(
@@ -2947,6 +2993,13 @@ _KICKER_NEGATIVE_SIGNALS: list[re.Pattern] = [
         r"very dangerous|extremely dangerous|incredibly dangerous|"
         r"dangerous thing|dangerous path|dangerous precedent|"
         r"alarming|reckless|irresponsible|"
+        # Anticompetitive / governance framing kicker — article ends by
+        # reframing the subject's actions as anticompetitive or corrupt.
+        # Discovered via Futurism Cannes reframe (Jul 2026): "safety
+        # becomes a convenient cover for anticompetitive practices."
+        r"anticompetitive|anti.?competitive|convenient cover|"
+        r"governance gray zone|governance grey zone|"
+        r"convenient (?:excuse|pretext|shield|fig leaf)|"
         r"wake.?up call|cautionary|warning sign|red flag)\b",
         re.IGNORECASE,
     ),

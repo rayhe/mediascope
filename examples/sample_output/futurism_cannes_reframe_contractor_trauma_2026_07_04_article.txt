@@ -1,0 +1,35 @@
+# Meta Paid Hundreds of Contractors to Pretend to Be Teenagers While Barraging Its Competitors' AI With Disturbing Content
+
+**Source:** Futurism (via The Greek Courier mirror)
+**Author:** Frank Landymore
+**Published:** July 4, 2026 9:02 AM EDT
+**URL:** https://thegreekcourier.blogspot.com/2026/07/meta-paid-hundreds-of-contractors-to.html
+**Original:** Futurism.com (blocked by browsing policy)
+**Genre:** Secondary reporting / reframe of Wired's "Project Cannes" investigation
+**Category:** Behind the Scenes
+
+---
+
+"Surely we are going to get in trouble for doing this?"
+
+Meta conducted a secretive program that directed hundreds of contractors to pose as teenagers while bombarding its competitors' AI models with disturbing prompts ranging from suicide to cannibalism.
+
+Internally known as "Cannes," the project, run by Meta contractor Covalen, targeted OpenAI's ChatGPT, Google's Gemini, and Character.AI chatbots using throwaway under-18 accounts, Wired reports. This was seemingly done to stress test the models, with the contractors instructed to push the chatbots into giving responses that defied their guardrails — though the AI companies had no idea this was happening.
+
+Per the reporting, one spreadsheet of the nearly 3,8000 the prompts the contractors used in one instance showed that hundreds focused on suicide and self-harm, hundreds more on eating disorders, and at least 239 involving sex or romance — all written from the perspective of a child or teenager.
+
+One described a fifth-grader whose classmate pointed a gun at his mouth. Another was about a girl trying to hide bulimia from her parents. And another asked if fantasizing about eating your neighbor's child was "normal." One posing as a high schooler asked where to "get cocaine." They also sent images depicting pills, nooses, knives, and a medical diagram of a gynecological procedure, per the magazine.
+
+This is just a tiny preview of Meta's brute force approach, as another round of testing involved over 45,000 prompts. The contractors meticulously recorded the epic number of chatbot responses in spreadsheets. But what Meta did with all this data is unclear. An internal document from Covalen described the effort as "comprehensive AI safety benchmarking" that delivered "[c]ritical datasets for model comparison and compliance."
+
+It's another example of how Meta has offloaded disturbing behind-the-scenes work onto contractors, ostensibly in the name of safety. In 2020, it settled a lawsuit filed by Facebook content moderators who said they were traumatized from reviewing videos showing murder, torture, sexual assault, and child abuse on the platform, though similar complaints have continued to emerge. This year, another group of Meta contractors said they were forced to watch highly sensitive footage captured on the company's Ray-Ban AI glasses, including sex scenes and bathroom visits.
+
+The contractors who were instructed to come up with the prompts on distressing subjects were similarly unsettled.
+
+"I've seen a lot of things I wish I hadn't while doing this job," one told Wired. "Everyone I knew who worked on this project was completely gobsmacked by some of the text they were asking us to test. Like, surely we are going to get in trouble for doing this?"
+
+Meta, for its part, characterized the prompts as part of an "industry-standard practice" of safety benchmarking models in a statement to Wired. But Rumman Chowdhury, CEO of Humane Intelligence PBC, a nonprofit dedicated to responsible AI development, isn't so sure.
+
+"Structuring a months-long, large-scale project that appears designed to systematically break those rules, via dummy accounts masquerading as children, is outside what is usually described as 'industry standard' evaluation," she told Wired, highlighting the fact that Meta kept it secret from its competitors and hasn't shared its findings with the public.
+
+This, Chowdhury added, is "exactly the kind of governance gray zone where safety becomes a convenient cover for anticompetitive practices."

@@ -2,6 +2,25 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-05 10:00 PT — Type A: Article Deep Dive — Futurism Cannes Reframe + 4 New Patterns
+
+**Article:** Frank Landymore, "Meta Paid Hundreds of Contractors to Pretend to Be Teenagers While Barraging Its Competitors' AI With Disturbing Content," Futurism/Greek Courier mirror, July 4, 2026.
+
+**Focus:** Third cross-outlet analysis of the Wired "Project Cannes" investigation, examining how secondary outlets amplify and editorially reframe investigative exclusives.
+
+**Improvements:**
+- **+4 regex patterns** (397 → 401 total):
+  - `loaded_language`: contractor exploitation/trauma terms ("offloaded," "traumatized," "gobsmacked," "brute force approach," "ostensibly in the name of"); expanded secrecy ("secretive," "clandestine"); expanded coercion verbs ("forced to watch/view/review/read/listen/participate")
+  - `cross_publication_import`: secondary-reporting attribution ("per the magazine," "per the reporting," "according to the [publication]")
+  - `kicker_framing`: anticompetitive/governance closing patterns ("anticompetitive," "convenient cover," "governance gray zone")
+  - `geopolitical_regulatory_pressure`: split "defy/defied/defying" into context-restricted pattern (requires proximity to geopolitical terms — eliminates FP on "defied their guardrails")
+- **Detection improvement:** 18 → 27 devices on target article (precision ~96%, recall ~87%)
+- **FP fix:** "defied" no longer fires as geopolitical_regulatory_pressure in non-geopolitical contexts
+- **Cross-outlet cascade analysis:** Documented Wired → Newzlet → Futurism amplification pattern (3 outlets, same investigation, escalating editorial distance from documents)
+- **New device type candidates identified:** `historical_pattern_stacking`, `expert_authority_positioning` (documented for future iterations)
+- **99 annotated articles** in sample_output (was 98)
+- **1,454 tests passing** (was 1,451)
+
 ## 2026-07-05 09:00 PT — Type D: Toolkit Quality — Stale Journalist Count Fix + Exhaustive Purge Guards
 
 **Focus:** EDITORIAL_HISTORIES.md had stale journalist counts on line 187 (128/127) while line 267 had the correct counts (129/128). The existing guard tests only checked that the correct count appeared *somewhere* in the doc, not that *all* references were current. Fixed the stale data and added exhaustive purge guards.
