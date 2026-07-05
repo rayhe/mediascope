@@ -1100,17 +1100,25 @@ editorial_changes:
     outgoing: null
     position: community_app_launch
     source_url: https://talkingbiznews.com/media-news/wired-launching-app-to-lead-readers-interact-with-staff/
-  - date: '2026'
+  - date: '2025-11-06'
     incoming: null
-    notes: 'LABOR DISPUTE: Jake Lahut, a Wired staffer fired during a union dispute over other fired staffers at Condé Nast,
-      is pursuing an unfair labor practice case with the NLRB. Lahut was one week shy of his probationary status ending when
-      fired. He represented Wired on MSNBC the morning of his termination and was pulled from a scheduled evening appearance.
-      Now freelancing and working as breaking news editor at Sherwood News. Context: Condé Nast/Wired Guild tensions — this
-      dispute indicates labor-management friction within Wired during Drummond''s editorial expansion. The NLRB case adds
-      institutional instability context alongside the rapid hiring documented above.'
+    notes: 'LABOR DISPUTE — "FIRED FOUR": Jake Lahut fired Nov 6, 2025, one day after ~20 Condé United union members confronted
+      CPO Stan Duncan outside his 34th-floor office at 1 World Trade Center over Teen Vogue restructuring/layoffs and Wired
+      layoffs. Fired alongside Jasper Lo (New Yorker fact-checker), Alma Avalle (Bon Appétit), Ben Dewey (Condé Nast
+      Entertainment). Five additional union members suspended. TheWrap obtained video — did NOT show "extreme misconduct" as
+      Condé Nast claimed. Lahut was ONE WEEK shy of his probationary period ending (more vulnerable than guild-protected staff).
+      He represented Wired on MSNBC the morning of his termination and was pulled from scheduled evening appearance. Condé
+      Nast filed own NLRB complaint against NewsGuild, claimed "extreme misconduct." NY AG Letitia James threatened legal
+      action Nov 12, called firings "union-busting." Settlement reached May 27, 2026: Lo/Avalle/Dewey received $400K+ combined,
+      converted to voluntary resignation with letters of recommendation, suspended workers got back pay and records expunged.
+      LAHUT DECLINED LESSER SETTLEMENT — pursuing independent NLRB unfair labor practice charge. Now freelancing and working as
+      breaking news editor at Sherwood News. Newsletter: "Straight From The Hut." Still appearing on MSNBC. INSTITUTIONAL
+      SIGNIFICANCE: Wired hired an adversarial political reporter who then turned adversarial energy against Condé Nast
+      management itself — management responded by firing him during his probationary period. The dual NLRB complaints (union
+      vs company AND company vs union) show institutional fracture lines at Condé Nast during Drummond editorial expansion.'
     outgoing: Jake Lahut
-    position: staffer_nlrb_case
-    source_url: https://talkingbiznews.com/media-news/fired-wired-worker-pursuing-case-with-nlrb/
+    position: senior_writer_fired_labor_dispute
+    source_url: https://thewrap.com/conde-nast-fires-4-employees-labor-complaint-union/
   - date: '2026-03-10'
     incoming: Caroline Haskins
     notes: 'BUSINESS DESK EXPANSION: Haskins hired as business reporter covering tech companies and their influence. Previously

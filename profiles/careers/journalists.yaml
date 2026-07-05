@@ -7809,3 +7809,167 @@ journalists:
     pipeline that characterizes most Drummond-era hires. (3) His beat (consumer tech, gadgets, right-to-repair) is adjacent to but distinct from the adversarial
     Big Tech accountability coverage on Schiffer''s business desk. Tests whether Wired''s consumer/product coverage carries different framing from its investigative
     coverage of the same companies.'
+- name: Jake Lahut
+  current_publication: freelance
+  current_role: freelance_journalist_nlrb_plaintiff
+  beat: politics, Trump White House, Silicon Valley billionaires, MAGA populism intersection
+  location: New York City
+  career:
+  - start: 2025-11
+    event_type: departed
+    publication: wired
+    role: terminated
+    notes: 'FIRED Nov 6, 2025 — part of the "Fired Four" at Condé Nast. On Nov 5, ~20 Condé United union members confronted CPO Stan Duncan
+      outside his 34th-floor office at 1 World Trade Center over Teen Vogue restructuring/layoffs and Wired layoffs. Duncan directed them to return to
+      work. TheWrap obtained video — did NOT show "extreme misconduct" as Condé Nast claimed, showed tense but non-threatening confrontation.
+      The four fired: Jake Lahut (Wired), Jasper Lo (New Yorker senior fact-checker), Alma Avalle (Bon Appétit), Ben Dewey (Condé Nast Entertainment).
+      Five additional union members suspended. Lahut was ONE WEEK shy of his probationary period ending. He had appeared on MSNBC representing Wired
+      the morning of his termination and was pulled from a scheduled evening appearance. Condé Nast filed own NLRB complaint against NewsGuild,
+      claimed "extreme misconduct." NY AG Letitia James threatened legal action, called firings "union-busting." Settlement reached May 27, 2026:
+      Lo/Avalle/Dewey received $400K+ combined, converted to voluntary resignation with letters of recommendation, suspended workers got back pay
+      and records expunged. LAHUT DECLINED LESSER SETTLEMENT OFFER — pursuing independent NLRB unfair labor practice charge against Condé Nast.
+      Now freelancing and working as breaking news editor at Sherwood News. Newsletter: "Straight From The Hut" (Substack). Still appearing on MSNBC.
+      ANALYTICALLY SIGNIFICANT: Wired politics desk hired an adversarial political reporter who then turned that same adversarial energy against
+      Condé Nast management itself. The firing during his probationary period (more vulnerable than guild-protected staff) raises questions about
+      whether Wired values adversarial reporting directed outward but not inward. This is relevant to understanding Wired institutional culture.'
+    source_url: https://thewrap.com/conde-nast-fires-4-employees-labor-complaint-union/
+  - start: 2025-05
+    event_type: hired
+    publication: wired
+    role: senior_writer
+    notes: 'Hired as senior writer on the politics desk, covering the Trump White House — specifically the intersection of Silicon Valley billionaires
+      and populist MAGA diehards. Took over the Politics Lab newsletter, refocusing it around scoops and exclusive reporting from inside and around the
+      Trump administration. Announcement by executive editor Brian Barrett. Reports to Tim Marchman (Director, Science, Politics, and Security). Started
+      May 12, 2025. Had been contributing freelance to Wired since fall 2024 with high-impact stories on Elon Musk political influence. TENURE: ~6 months
+      before firing in Nov 2025 labor dispute.'
+    source_url: https://talkingbiznews.com/media-news/wired-hires-lahut-as-senior-reporter/
+  - start: 2024-10
+    end: 2025-05
+    event_type: freelance
+    publication: wired
+    role: freelance_contributor
+    notes: 'Began as a freelancer for Wired in fall 2024. Broke the story of mistreatment of canvassers by Elon Musk America PAC. Detailed Stephen
+      and Katie Miller role in shepherding Musk through DC. Co-wrote first story on unprecedented multi-million dollar paid dinners at Mar-a-Lago.
+      Delivered scoop on Musk push for government shutdown — reporting cited as influencing Sen. Chuck Schumer decision making. Freelance work led
+      directly to full-time hire.'
+    source_url: https://jakelahut.com/about
+  - start: 2022-08
+    end: 2024-10
+    event_type: hired
+    publication: daily_beast
+    role: campaign_reporter
+    notes: 'Campaign reporter at The Daily Beast. Covered 2024 presidential campaign and 2022 midterms. Notable scoops: Ron DeSantis "pudding
+      fingers" story (from a longer feature on eating habits), leaked Nancy Mace staff handbook, DeSantis security roughing up a teenager for asking
+      civics questions, Nancy Mace airport police incident (obtained via South Carolina FOIA). Also appeared on Fever Dreams podcast. His BuzzSumo
+      profile also lists scoops in New York Magazine and Columbia Journalism Review.'
+    source_url: https://talkingbiznews.com/they-re-hiring/lahut-leaving-insider-for-the-daily-beast/
+  - start: 2019-06
+    end: 2022-08
+    event_type: hired
+    publication: business_insider
+    role: politics_reporter
+    notes: 'Politics reporter at Insider/Business Insider. Helped lead the site 2020 election coverage alongside Grace Panetta and Walt Hickey.
+      Joined from The Keene Sentinel.'
+    source_url: https://talkingbiznews.com/they-re-hiring/business-insider-hires-lahut-as-politics-reporter/
+  - start: 2018-10
+    end: 2019-06
+    event_type: hired
+    publication: keene_sentinel
+    role: political_reporter
+    notes: 'Lead political reporter covering NH midterms, 2020 first-in-the-nation primary, and statehouse. Created and hosted the paper
+      inaugural podcast, Pod Free or Die.'
+    source_url: https://jakelahut.com/about
+  - start: 2018-05
+    end: 2018-10
+    event_type: hired
+    publication: daily_gazette
+    role: breaking_news_reporter
+    notes: 'Breaking news and politics reporter at The Daily Gazette, Schenectady, NY. First profile of Congressman Antonio Delgado (7/29/18).
+      Broke scoops on infant Rayen Puleski death investigation (8/25/18). Created and edited the Gazette first podcast. Led cops and courts coverage
+      regionally, briefly covered Saratoga County.'
+    source_url: https://jakelahut.com/about
+  - start: 2018-01
+    end: 2018-04
+    event_type: fellowship
+    publication: freelance
+    role: fellow_and_freelancer
+    notes: 'Living in Paris on a fellowship. Teaching at Lycee International de l Est Parisien and freelancing — writing stories on local
+      politics and culture, hosting a podcast interviewing expats. French professional proficiency.'
+    source_url: https://jakelahut.com/about
+  - start: 2017-06
+    end: 2017-08
+    event_type: intern
+    publication: politico
+    role: breaking_news_white_house_intern
+    notes: 'Breaking News and White House intern at POLITICO, Washington D.C. Pitched and wrote enterprise stories, three of which led the site:
+      "Trump trip to Bedminster prompts protestors to get creative" (8/04/17), "Alabama agonizes over Trump attacks on Sessions" (7/21/17),
+      "GOP base asks, What Russia scandal?" (7/12/17). Also wrote copy and fact-checked for Morning Media and Playbook newsletters.'
+    source_url: https://jakelahut.com/about
+  - start: 2016-06
+    end: 2016-08
+    event_type: intern
+    publication: albany_times_union
+    role: metro_intern
+    notes: 'Breaking news and metro intern. Wrote 50+ articles (breaking news, features, profiles, artistic reviews). Broadcasted the paper
+      first Facebook Live video. Broke crime stories picked up by local TV and radio.'
+    source_url: https://jakelahut.com/about
+  - start: 2016-02
+    end: 2016-08
+    event_type: freelance
+    publication: new_yorker
+    role: research_assistant_fact_checker
+    notes: 'Research assistant and fact checker for staff writer Mark Singer. Primary work: fact-checking and analyzing statements of Donald Trump
+      for Singer 2016 book "Trump and Me." Created timelines of Trump positions on issues (Iraq War, health care). Early career entry into
+      elite journalism via mentorship.'
+    source_url: https://jakelahut.com/about
+  education:
+    institution: Wesleyan University
+    degree: BA with Honors, College of Letters (history, literature, philosophy, French)
+    graduation: 2017-05
+    notes: 'Editor-in-Chief of The Wesleyan Argus (oldest twice-weekly college paper in the country, est. 1868) — introduced live video,
+      increased web-first content. Also EIC of Arcadia Political Magazine. Wrote 157 articles in 4 years. Senior honors thesis: "The Forbidden Genre:
+      The Evolution of the Psychiatric Memoir and the Narrativity of Madness" (114 pp, adviser: best-selling author Charles Barber). Honors on Junior
+      Comprehensive Exams (6 essays in 45 hours). Home: Niskayuna, NY (upstate).'
+    source_url: https://jakelahut.com/about
+  multi_pub_migrations:
+  - from: new_yorker
+    to: politico
+    year: 2017
+    migration_type: internship_to_internship
+  - from: albany_times_union
+    to: daily_gazette
+    year: 2018
+    migration_type: local_lateral
+  - from: keene_sentinel
+    to: business_insider
+    year: 2019
+    migration_type: local_to_digital
+  - from: business_insider
+    to: daily_beast
+    year: 2022
+    migration_type: digital_lateral
+  - from: daily_beast
+    to: wired
+    year: 2025
+    migration_type: digital_to_condenast
+  auto_detected_migrations: 5
+  notes: 'KEY MIGRATION: Daily Beast → Wired (via freelance bridge, 2024-2025) → FIRED Nov 2025 (Condé Nast union dispute) → freelance/Sherwood News.
+    Six-month Wired tenure ended by labor dispute, not editorial performance. Career arc: New Yorker fact-checker (Trump research) →
+    Politico WH intern → local NH/NY political reporting → Business Insider 2020 election → Daily Beast campaigns → Wired politics (6 months) →
+    fired during "march on the boss" union confrontation → independent NLRB fight. UNIQUE IN DATASET: (1) Unlike most Wired hires who come from
+    tech journalism (Gizmodo, Verge, Vice), Lahut is a pure POLITICAL reporter brought in specifically for tech-politics coverage — his framing
+    instincts were formed in campaign trail political reporting, not tech accountability journalism. (2) His co-byline on the massive DOGE federal
+    workers investigation (Sep 2025, with Schiffer, Feiger, Elliott, Kelly, Knibbs, Gilbert, Taft, Marshall, Dave) shows Wired deployed him on their
+    biggest tech-politics packages during his brief tenure. (3) The firing during the union dispute — where Lahut was one of four employees terminated
+    for confronting Condé Nast CPO Stan Duncan about layoffs — adds an institutional dimension: Wired/Condé Nast values adversarial reporting
+    directed outward (at tech companies) but fired employees who turned that same adversarial energy against management. (4) Lahut was probationary
+    (one week shy of full guild protection), making him more vulnerable than established staff. (5) He declined the $400K+ settlement the other three
+    fired workers accepted, choosing to pursue an independent NLRB case — demonstrating the same adversarial tenacity that made him valuable as a
+    reporter. Reports to Tim Marchman. Newsletter: Politics Lab / Inner Loop → "Straight From The Hut" (post-firing Substack). French professional
+    proficiency (Paris fellowship, Wesleyan College of Letters). KEY FOR MEDIASCOPE: (1) Tests whether political reporters brought into tech media
+    bring different adversarial framing patterns vs tech-native reporters. (2) His New Yorker origin (fact-checking Trump for Mark Singer) and
+    Daily Beast campaign trail work mean his source networks are Washington/politics-facing, not Silicon Valley-facing. (3) Acquired via freelance-
+    to-staff pipeline Drummond uses to test-drive political reporters. (4) His beat definition — "Silicon Valley billionaires and populist MAGA
+    diehards" — explicitly frames tech leaders as one side of a political conflict, distinct from Schiffer business desk tech accountability framing.
+    (5) The firing and NLRB case provide a natural experiment: does Lahut coverage of Meta/tech at Wired differ from his post-firing freelance
+    coverage of the same companies? If his framing was shaped by Wired institutional voice, it should change; if it was personal, it should persist.'
