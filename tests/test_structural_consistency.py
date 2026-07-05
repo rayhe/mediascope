@@ -248,6 +248,37 @@ class TestDocCountConsistency:
         )
         assert "65.2%" in doc
 
+    def test_no_stale_device_type_count_in_docs(self):
+        """No doc should reference an old device-type count (e.g. 56-type) that isn't the current total.
+
+        Catches stale references like '56-type taxonomy' that slip through
+        when only positive presence tests (e.g. '69 framing device types')
+        are used.
+
+        Added: 2026-07-05 02:00 PT, Type D iteration.
+        """
+        current = self._EXPECTED_TOTAL
+        # Historic counts that should never appear
+        stale_counts = [33, 43, 53, 56, 63, 65, 67, 68]
+        stale_counts = [c for c in stale_counts if c != current]
+
+        doc_files = [
+            "docs/METHODOLOGY.md", "docs/ARCHITECTURE.md",
+            "docs/AGENT_GUIDE.md", "docs/QUALITY_STANDARDS.md",
+            "README.md",
+        ]
+        for doc_path in doc_files:
+            doc = (_REPO_ROOT / doc_path).read_text()
+            for stale in stale_counts:
+                # Match patterns like "56-type", "56 type", "56 device"
+                pattern = rf"\b{stale}[- ](?:type|device|framing)"
+                match = re.search(pattern, doc)
+                assert match is None, (
+                    f"{doc_path} contains stale device count reference "
+                    f"'{match.group()}' (current total is {current}). "
+                    f"Update to {current}."
+                )
+
 
 class TestTopicBucketConsistency:
     """Guard: topic bucket counts match across code and docs."""

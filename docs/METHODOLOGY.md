@@ -623,9 +623,9 @@ Not a framing correction — this fixes a fundamental VADER math problem. VADER'
 
 #### Path Evaluation Order and Priority
 
-The paths are evaluated in code order: **A → B → C → E → D → F → H**. Path G runs independently in the `analyze_composite` function before the framing correction pipeline, as it corrects VADER's input signal rather than overriding the composite output.
+The paths are evaluated in code order: **A → B → C → E → D → F → H → I → J**. Path G runs independently in the `analyze_composite` function before the framing correction pipeline, as it corrects VADER's input signal rather than overriding the composite output.
 
-**Only one framing path fires per article.** If Path A matches, Paths B–H are never evaluated. This prevents over-correction and ensures the strongest applicable correction takes precedence.
+**Only one framing path fires per article.** If Path A matches, Paths B–J are never evaluated. This prevents over-correction and ensures the strongest applicable correction takes precedence.
 
 #### Summary Table
 
@@ -721,7 +721,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 56-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 69-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |

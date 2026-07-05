@@ -945,7 +945,7 @@ The pipeline evaluates 7 paths in priority order — the first match fires:
 | **I** | Direct consumer critique | raw ≥ 0.3, agency > 0, ≥5 adversarial + ≥2 consumer devices + EI ≥ 0.5 | Moral condemnation of corporate decisions — consumer_ownership/competitive_positioning dominant |
 | **J** | Expert-driven structural critique | raw ≥ 0.3, agency ≥ 0, ≥5 adversarial + ≥1 expert_contradiction + ≥2 structural devices + EI ≥ 0.10 | Measured editorial with criticism through expert sources + structural devices (consumer_ownership, loss_leader_framing) rather than vocabulary — VADER fooled by corporate PR quotes |
 
-Only one framing path (A–F, H, I) fires per article. Path G runs independently before the composite is computed.
+Only one framing path (A–F, H–J) fires per article. Path G runs independently before the composite is computed.
 
 **Adversarial device types** (26 types trigger Paths A/B): absence_as_evidence, assumed_consensus, catastrophizing, competitive_deficit, competitive_positioning, consumer_ownership, editorial_aside, editorial_deflation, emotional_appeal, failure_precedent, guilt_by_association, hypocrisy_frame, isolation_framing, juxtaposition, kicker_framing, loaded_language, military_techno_optimism, power_asymmetry, pressure_language, refusal_amplification, self_referential_investigation, silence_as_guilt, slippery_slope, timeline_implication, expert_contradiction, loss_leader_framing.
 

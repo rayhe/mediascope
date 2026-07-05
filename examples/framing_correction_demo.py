@@ -19,7 +19,7 @@ The Fix:
     negative agency patterns, and source deployment — then overrides the
     lexical score when these structural signals contradict VADER.
 
-    Nine distinct correction paths (A–I) each address a specific VADER
+    Ten distinct correction paths (A–J) each address a specific VADER
     failure mode discovered through real-article analysis:
         Path A: Wrong direction on adversarial prose (10/90 blend)
         Path B: Understated negative magnitude (50/50 blend)
@@ -29,6 +29,8 @@ The Fix:
         Path F: Contradictory review framing (20/80)
         Path G: VADER long-text normalization (30/70)
         Path H: Sarcastic short editorial (15/85)
+        Path I: Direct consumer critique with positive agency (20/80)
+        Path J: Expert-driven structural critique (30/70)
 
     Only one framing path fires per article (except Path G, which runs
     independently before the composite is computed). See METHODOLOGY.md
