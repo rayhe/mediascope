@@ -2,7 +2,63 @@
 
 Tracks every improvement cycle run on the toolkit.
 
-## 2026-07-05 10:00 PT — Type A: Article Deep Dive — Futurism Cannes Reframe + 4 New Patterns
+## 2026-07-05 13:00 PT — Type B: Journalist/Publication Research — Leah Feiger Deep Profile
+
+**Focus:** Full career profile expansion for Leah Feiger — Wired's first-ever politics editor, now Director of Politics & Science. Previously had only 3 career events; expanded to 8 with education, multi-pub migrations, and comprehensive analytical notes.
+
+### What Changed
+
+**1. CAREER EVENTS: 3 → 8 (FULL BIOGRAPHY)**
+
+| Period | Institution/Publication | Role |
+|---|---|---|
+| Sep 2010–Jun 2014 | Dartmouth College | BA African & Gender Studies, GRID Fellow, newspaper columnist |
+| Sep 2014–Dec 2015 | University of Cape Town | MS Gender Studies |
+| ~2015–2016 | Segal Family Foundation | Research consultant (Africa development) |
+| Sep 2016–Jun 2017 | Columbia University | MS Journalism |
+| Jul 2017–Sep 2020 | Freelance | The Atlantic (fellow), NYT, WaPo/The Lily, Fodor's Travel, Atlas Obscura, OZY, The Forward, Bitch Media, Culture Trip |
+| Sep 2020–Apr 2022 | Vice | Senior features editor (hired Sep 16, 2020) |
+| Apr 2022–Oct 2023 | Vice | Managing editor (promoted Apr 20, 2022). Emmy award credits. |
+| Nov 2023–present | Wired | Politics editor → Director of Politics & Science |
+
+**2. NEW SECTIONS ADDED**
+- `education`: 3 entries (Dartmouth BA 2014, UCT MS 2015, Columbia MS 2017)
+- `multi_pub_migrations`: 2 entries (freelance→Vice 2020, Vice→Wired 2023)
+- Expanded analytical notes with DiD framework significance
+
+**3. KEY DISCOVERY: UNIQUE CAREER PIPELINE**
+Feiger is the only journalist in the 131-person dataset whose entire pre-journalism career is in African studies and gender studies, with zero tech journalism background. Every other Wired editor/director came through the tech journalism pipeline (Gizmodo, Verge, Bloomberg tech, etc.). Her framing instincts were formed in identity politics, social justice investigations, and international development.
+
+**4. EMMY AWARD DETAILS**
+43rd News & Documentary Emmy Awards (2022): Credited as Managing Editor on two VICE News Tonight nominated segments — "A Christian Summer Camp's History of Abuse" (Outstanding Hard News Feature Story: Long Form) and "Six Weeks: Inside the Texas Abortion Ban" (Outstanding Continuing News Coverage: Long Form).
+
+**5. DRUMMOND OVERLAP QUANTIFIED**
+Feiger joined Vice in Sep 2020; Katie Drummond was SVP at Vice from Mar 2019 through Aug 2023. This creates a ~35-month professional overlap before both migrated to Wired, confirming the direct personnel pipeline from Vice's progressive advocacy culture into Wired's newsroom.
+
+**6. VICE PROMOTION DOCUMENTED**
+Split the single Vice career entry into two: senior features editor (Sep 2020–Apr 2022) and managing editor (Apr 2022–Oct 2023). The DIARY directory announcement (Apr 20, 2022) provides the precise promotion date.
+
+### Sources
+- https://www.dartmouth.edu/grid/people/spring2014fellows.html (GRID Fellow 2014, .14@dartmouth.edu = Class of 2014)
+- https://leahfeiger.com (personal site bio: education, Emmy, publications)
+- https://talkingbiznews.com/they-re-hiring/vice-hires-feiger-as-senior-features-editor/ (Vice hire Sep 2020, full freelance history)
+- https://staging.diarydirectory.com/media-news/vice-usa-names-managing-editor (Vice promotion to managing editor, Apr 20, 2022)
+- https://talkingbiznews.com/they-re-hiring/wired-is-launching-a-political-coverage-team/ (Wired politics team launch, first day Nov 13, 2023)
+- https://mediatrends.it — Mediatrends.it interview (Bocconi University, Milan, Jun 26, 2025): DOGE lecture, Drummond quote, career summary
+- https://theemmys.tv (43rd Annual News & Documentary Emmy Awards, Sep 2022: Feiger credits on 2 Vice News Tonight nominations)
+- https://niemanlab.org (KQED partnership: confirms "Director of Politics & Science" title)
+- https://thedartmouth.com (Leah Feiger opinion columns, 2011–2012: earliest evidence of political writing voice)
+- https://myemail.constantcontact.com (WOW Markets newsletter: Feiger commissioning brief at Vice, $0.50/word rate)
+
+### Metrics
+- Tests: 1,454 (all passing, unchanged)
+- Career events: 3 → 8 (+5)
+- Education entries: 0 → 3
+- Multi-pub migrations: 0 → 2
+- README: auto-detected migrations 425 → 424 (split career events change graph traversal)
+- Commit: `bcc8a8d`
+
+---## 2026-07-05 10:00 PT — Type A: Article Deep Dive — Futurism Cannes Reframe + 4 New Patterns
 
 **Article:** Frank Landymore, "Meta Paid Hundreds of Contractors to Pretend to Be Teenagers While Barraging Its Competitors' AI With Disturbing Content," Futurism/Greek Courier mirror, July 4, 2026.
 
