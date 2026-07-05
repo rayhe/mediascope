@@ -4,6 +4,33 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-04 16:00 PT — Type D: Toolkit Quality — METHODOLOGY.md Stale Tier Count Fix + Guard Test
+
+### Focus
+Fixed stale extended device count in METHODOLOGY.md intro paragraph (48→51) and added a structural consistency guard test to prevent future drift.
+
+### What Changed
+
+**1. METHODOLOGY.md INTRO TIER COUNT FIX (MOST SIGNIFICANT)**
+METHODOLOGY.md §4.1 intro paragraph claimed "extended devices (48 added from real-article analysis)" but the extended device TABLE directly below it already listed all 51 extended devices, and both AGENT_GUIDE.md and ARCHITECTURE.md correctly stated 51. The intro was never updated when the last 3 extended devices (talent_hemorrhage, strategic_reversal, repeated_disruption) were added to the table. Fixed: 48→51.
+
+**Root cause:** The existing `test_methodology_device_count` guard only validated the TOTAL count ("67 framing device types") appeared in METHODOLOGY.md. It did not parse the tier breakdown (10 core / N extended / 6 structural). AGENT_GUIDE.md had a tier breakdown guard (`test_agent_guide_total_device_count`) that caught its own tier text, but no equivalent existed for METHODOLOGY.md's intro.
+
+**2. NEW GUARD TEST: `test_methodology_tier_breakdown`**
+Added `test_methodology_tier_breakdown` to `TestDocCountConsistency` that parses METHODOLOGY.md §4.1 intro for the three tier counts (core N, extended N, structural N) and validates each against code. This mirrors the existing `test_agent_guide_total_device_count` guard pattern. All three tier counts are now validated independently:
+- Core: must match 10
+- Extended: must match `_EXPECTED_TOTAL - 10 - len(EXPECTED_STRUCTURAL)`
+- Structural: must match `len(EXPECTED_STRUCTURAL)`
+
+**3. DOC COUNT SYNC**
+- README.md header: 1359→1360
+- ARCHITECTURE.md header: 1359→1360
+- README.md per-file: test_structural_consistency.py 80→81
+- README.md + ARCHITECTURE.md test_structural_consistency.py descriptions updated to mention new METHODOLOGY.md intro tier count guard
+
+### Test Results
+1360 tests, 0 failures. Commit `f95615b`, pushed to `main`.
+
 ## 2026-07-04 15:00 PT — Type C: Ownership & Funding Deep Dive (NYT)
 
 **Focus:** Complete NYT board of directors profile (13/13 members) and AI licensing landscape update.
@@ -12635,3 +12662,60 @@ Tiffany Hsu's profile is analytically unique in MediaScope for three reasons:
 - Auto-detected migrations: 408 (was 407, +1 from RTD→LA Times)
 - Tests: 1359 passed, 0 failed
 - Commit: `05f7c53` — pushed to `main`
+
+---
+
+## 2026-07-04 19:00 PT — Type A: Article Deep Dive — Wired "Meta Is Charging a Subscription for Smart Glasses Features" (Jul 2, 2026)
+
+### Focus
+Julian Chokkattu's article on Meta's subscription tier for Ray-Ban Meta smart glasses AI features. VADER scored +0.69 (strongly positive) despite clearly critical editorial stance. Criticism was structural — through expert contradictions and loss-leader framing — not through emotionally loaded vocabulary.
+
+### What Changed
+
+**1. New framing device types (2)**
+- `expert_contradiction`: Named expert source directly contradicting corporate rationale ("It's not about X; it's about Y" inversion, "doesn't think the subscription is to help"). Supports straight and smart quotes.
+- `loss_leader_framing`: Editorial description of selling hardware at cost to capture subscription revenue ("sold at cost", "user base + subscription grows revenue").
+
+**2. Existing framing device fixes**
+- `consumer_ownership`: Added no-adverb "runs on-device" pattern, fixed hyphenated "on-device" in adverb pattern, extended reverse "doesn't need to...servers" pattern.
+- `editorial_aside`: Added sarcastic "Guess [statement] after all/apparently" opener with false-positive guard on "Guess what/who".
+
+**3. Sentiment corrections**
+- 7 new emotional language terms (829→836): monetize, monetizing, monetized, monetization, extracting value, pay up, sold at cost.
+- 2 new adversarial device types (24→26): expert_contradiction, loss_leader_framing.
+- New Path J: Expert-Driven Structural Critique — fires on measured journalism where criticism comes from expert sources + structural devices rather than emotional vocabulary. 30/70 blend, requires ≥1 expert_contradiction + ≥2 structural devices + EI ≥ 0.10.
+
+**4. Testing**
+- New test file: `tests/test_wired_subscription_era.py` (16 test functions, 22 parametrize-expanded).
+- Total tests: 1360→1382 (all passing).
+
+**5. Documentation sync**
+- METHODOLOGY.md: Path J full section + summary table row, tier counts 67→69/51→53, device table entries.
+- ARCHITECTURE.md: Path J in ASCII diagram, device name list + counts updated, path count 9→10.
+- AGENT_GUIDE.md: Path J table row, tier counts, path count.
+- QUALITY_STANDARDS.md: EL count 829→836, adversarial list +2 types.
+- README.md: Test counts, tier counts, pattern/device counts.
+- Example demo scripts: adversarial type sets updated.
+- New analysis: `examples/sample_output/wired_meta_glasses_subscription_era_2026_07_02_analysis.md`.
+
+### Key Metrics Update
+| Metric | Before | After |
+|--------|--------|-------|
+| Pattern-matched device types | 61 | 63 |
+| Total device types | 67 | 69 |
+| Total regex patterns | 382 | 389 |
+| Emotional language terms | 829 | 836 |
+| Adversarial device types | 24 | 26 |
+| Correction paths | 9 (A–I) | 10 (A–J) |
+| Test files | 53 | 54 |
+| Total tests | 1360 | 1382 |
+| Annotated articles | 94 | 95 |
+
+### Article Results (Post-Fix)
+| Metric | Before | After |
+|--------|--------|-------|
+| Framing devices | 6 | 12 |
+| Emotional intensity | 0.052 | 0.261 |
+| Raw VADER tone | +0.686 | +0.686 |
+| Corrected tone | +0.686 | 0.0 |
+| Path fired | None | J |

@@ -346,6 +346,47 @@ def _extract_direct_possessive(text: str, name_start: int) -> str:
     return ""
 
 
+def _is_expert_full_text(text: str, name: str) -> bool:
+    """Search all occurrences of *name* in *text* for expert titles.
+
+    When a source is referred to by surname only (e.g. "Bengio says"),
+    the narrow context window around that match may not include the
+    expert credential from their earlier introduction.  This function
+    finds every occurrence of the name in the full text and checks a
+    wider window (300 chars each side) for expert titles.
+    """
+    for m in re.finditer(re.escape(name), text):
+        ctx_start = max(0, m.start() - 300)
+        ctx_end = min(len(text), m.end() + 300)
+        ctx = text[ctx_start:ctx_end]
+        if _is_expert_by_title(ctx):
+            return True
+    return False
+
+
+def _extract_affiliation_full_text(text: str, name: str) -> str:
+    """Search all occurrences of *name* in *text* for affiliations.
+
+    Complement to _is_expert_full_text: finds the affiliation from the
+    source's earlier introduction when the immediate context window is
+    too narrow.  Uses a forward-biased window (50 chars before, 300
+    after) so the matched affiliation is more likely to belong to *name*
+    rather than a preceding person's attribution.
+    """
+    for m in re.finditer(re.escape(name), text):
+        # Forward-biased: only 50 chars lookback to avoid cross-source
+        # contamination (e.g. preceding "Gabriel, ... at Google DeepMind"
+        # bleeding into a Bengio lookup), but 300 chars forward where
+        # the appositive "a professor at X" typically appears.
+        ctx_start = max(0, m.start() - 50)
+        ctx_end = min(len(text), m.end() + 300)
+        ctx = text[ctx_start:ctx_end]
+        aff = _extract_affiliation(ctx)
+        if aff:
+            return aff
+    return ""
+
+
 def extract_sources(text: str) -> list[SourceMention]:
     """Extract source citations from article text.
 
@@ -367,9 +408,11 @@ def extract_sources(text: str) -> list[SourceMention]:
     # Build a combined verb pattern
     verb_alternation = "|".join(re.escape(v) for v in sorted(ALL_VERBS, key=len, reverse=True))
 
-    # Pattern 1: "[Name] said/told/etc." — named source with attribution verb
+    # Pattern 1: "Name said/told/etc." — named source with attribution verb
+    # Supports hyphenated surnames (e.g. "Hadfield-Menell") — discovered in
+    # MIT Tech Review AI agents article (Jul 4, 2026 iteration).
     named_before_verb = re.compile(
-        rf"\b([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+)\s+({verb_alternation})\b",
+        rf"\b([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+(?:-[A-Z][a-z]+)?)\s+({verb_alternation})\b",
     )
     for m in named_before_verb.finditer(text):
         name = m.group(1).strip()
@@ -404,7 +447,7 @@ def extract_sources(text: str) -> list[SourceMention]:
 
     # Pattern 2: "said/told/etc. [Name]" — verb before named source
     verb_before_named = re.compile(
-        rf"\b({verb_alternation})\s+([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+)\b",
+        rf"\b({verb_alternation})\s+([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+(?:-[A-Z][a-z]+)?)\b",
     )
     for m in verb_before_named.finditer(text):
         verb = m.group(1).strip().lower()
@@ -470,8 +513,16 @@ def extract_sources(text: str) -> list[SourceMention]:
         sources.append(SourceMention(
             name=name,
             is_anonymous=False,
-            is_expert=_is_expert_by_title(context),
-            affiliation=_extract_affiliation(context),
+            # For single-name sources, the immediate context (100 chars)
+            # may not contain the expert title from the source's earlier
+            # full-name introduction.  Search all mentions of the name
+            # in the full text for expert titles and affiliations.
+            # Discovered in MIT Tech Review AI agents article (Jul 4,
+            # 2026): "Bengio says" was not marked as expert because the
+            # "professor of computer science" introduction was paragraphs
+            # earlier.
+            is_expert=_is_expert_by_title(context) or _is_expert_full_text(text, name),
+            affiliation=_extract_affiliation(context) or _extract_affiliation_full_text(text, name),
             quote=_extract_nearby_quote(text, m.start(), m.end()),
             attribution_verb=verb,
         ))
@@ -575,8 +626,8 @@ def extract_sources(text: str) -> list[SourceMention]:
         sources.append(SourceMention(
             name=name,
             is_anonymous=False,
-            is_expert=_is_expert_by_title(context),
-            affiliation=_extract_affiliation(context),
+            is_expert=_is_expert_by_title(context) or _is_expert_full_text(text, name),
+            affiliation=_extract_affiliation(context) or _extract_affiliation_full_text(text, name),
             quote=_extract_nearby_quote(text, m.start(), m.end()),
             attribution_verb=verb,
         ))
@@ -650,6 +701,11 @@ def extract_sources(text: str) -> list[SourceMention]:
         # Software product names that look like surnames
         "Outlook", "Windows", "Chrome", "Safari", "Firefox",
         "Photoshop", "Figma", "Notion", "Linear", "Canva",
+        # AI product names that appear with attribution verbs
+        # (e.g. "Operator added a delivery fee") — discovered in
+        # MIT Tech Review AI agents article (Jul 4, 2026 iteration).
+        "Operator", "Copilot", "Gemini", "Claude", "Cursor",
+        "Alexa", "Siri", "Watson", "Cortana",
     }
     single_name_verb = re.compile(
         rf"\b([A-Z][a-z]{{2,}})\s+({verb_alternation})\b",
@@ -684,8 +740,8 @@ def extract_sources(text: str) -> list[SourceMention]:
         sources.append(SourceMention(
             name=name,
             is_anonymous=False,
-            is_expert=_is_expert_by_title(context),
-            affiliation=_extract_affiliation(context),
+            is_expert=_is_expert_by_title(context) or _is_expert_full_text(text, name),
+            affiliation=_extract_affiliation(context) or _extract_affiliation_full_text(text, name),
             quote=_extract_nearby_quote(text, m.start(), m.end()),
             attribution_verb=verb,
         ))

@@ -4359,6 +4359,18 @@ _EDITORIAL_ASIDE_PATTERNS: list[re.Pattern] = [
         r"seriously|of course)\)",
         re.IGNORECASE,
     ),
+    # Sarcastic "Guess..." opener — standalone sentence starting with
+    # "Guess" followed by an ironic observation.  Distinct from "I guess"
+    # (hedge) or "Guess what" (exclamation).  Discovered in Wired
+    # Conversation Focus article (Jul 2026): "Guess humans are better
+    # at some things after all."
+    re.compile(
+        r"(?:^|\.\s+)Guess\s+(?!what\b)(?!who\b)"
+        r"[^.?!]{10,80}"
+        r"(?:after all|in the end|it turns out|apparently|somehow)"
+        r"[.!]",
+        re.MULTILINE,
+    ),
 ]
 _DEVICE_PATTERNS["editorial_aside"] = _EDITORIAL_ASIDE_PATTERNS
 
@@ -4950,9 +4962,22 @@ _CONSUMER_OWNERSHIP_PATTERNS: list[re.Pattern] = [
     # "pay/subscription/fee/charge"
     re.compile(
         r"\bruns?\s+(?:entirely|completely|fully|wholly|natively|locally)\s+"
-        r"(?:on (?:the|your|its|their)\s+)?"
-        r"(?:device|hardware|glasses|phone|chip|processor)\b"
+        r"(?:on[- ](?:the\s+|your\s+|its\s+|their\s+)?"
+        r"(?:device|hardware|glasses|phone|chip|processor)\b)"
         r".{0,200}?"
+        r"\b(?:pay|subscription|fee|charge|monetiz|paywall|premium|"
+        r"upgrade|billing)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "runs on-device" without adverb — same concept, shorter phrasing.
+    # Wired Conversation Focus article (Jul 2026) uses "the Conversation
+    # Focus feature runs on-device, meaning it doesn't need to head to
+    # Meta's servers" without an adverb like "entirely."  The proximity
+    # window is extended to 300 chars because the subscription context
+    # may be a sentence or two away.
+    re.compile(
+        r"\bruns?\s+on[- ]device\b"
+        r".{0,300}?"
         r"\b(?:pay|subscription|fee|charge|monetiz|paywall|premium|"
         r"upgrade|billing)\b",
         re.IGNORECASE | re.DOTALL,
@@ -4978,6 +5003,8 @@ _CONSUMER_OWNERSHIP_PATTERNS: list[re.Pattern] = [
         r"(?:device|hardware|glasses|phone)|"
         r"doesn'?t (?:require|need|use)\s+(?:the |an )?"
         r"(?:internet|cloud|server|connection)|"
+        r"doesn'?t (?:need|have|require)\s+to\s+.{0,60}?"
+        r"(?:servers?|cloud|internet)\b|"
         r"no use of\s+.{0,30}?\bservers?\b)\b",
         re.IGNORECASE | re.DOTALL,
     ),
@@ -5581,21 +5608,104 @@ _REPEATED_DISRUPTION_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["repeated_disruption"] = _REPEATED_DISRUPTION_PATTERNS
 
 
+# ---------------------------------------------------------------------------
+# Expert contradiction / reframe: a named expert source directly
+# contradicts a company's stated rationale, using "it's not about X;
+# it's about Y" inversion or similar patterns.  Different from
+# corporate_reassurance_undercut (journalist's own challenge) — here
+# the undercut comes from a credentialed third-party source.
+#
+# Gap discovered in Wired Conversation Focus article (Jul 2026):
+# Chris Harrison (Carnegie Mellon): "It's not about recovering AI
+# costs; it's about monetizing customers."  The pipeline detected
+# "extracting value" as ironic_quotation but missed the expert's
+# explicit reframe of Meta's stated justification.
+# ---------------------------------------------------------------------------
+_EXPERT_CONTRADICTION_PATTERNS: list[re.Pattern] = [
+    # "It's not about X; it's about Y" — explicit negation + reframe
+    re.compile(
+        r"""(?:['"\u201c\u201d])?[Ii]t['\u2019]?s\s+not\s+(?:about|for|to)\s+"""
+        r"""[^.;:!?"'\u201c\u201d]{5,80}?"""
+        r"""[;:—–]\s*(?:['"\u201c\u201d])?it['\u2019]?s\s+(?:about|for|to|really\s+about)\s+"""
+        r"""[^.;:!?"'\u201c\u201d]{5,80}""",
+        re.IGNORECASE,
+    ),
+    # "doesn't think [action/claim] is [about/to/for]" — reporter
+    # framing an expert's skepticism of company justification
+    re.compile(
+        r"\b(?:doesn['\u2019]?t|does not)\s+(?:think|believe|buy|accept)\s+"
+        r"(?:the |that |this )?"
+        r"(?:new |latest |proposed |recent )?"
+        r"(?:subscription|move|change|decision|plan|strategy|claim)\s+"
+        r"(?:is |was |will be )?"
+        r"(?:about|for|to help|meant to|designed to|intended to)\s+",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["expert_contradiction"] = _EXPERT_CONTRADICTION_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Loss-leader / razor-blade framing: editorial description of a
+# business model where hardware is sold at cost (or below) to capture
+# recurring subscription revenue.  This is a specific editorial lens
+# that frames a company's pricing strategy as exploitative or as a
+# lock-in mechanism.
+#
+# Gap discovered in Wired Conversation Focus article (Jul 2026):
+# "The company's glasses are typically sold at cost, like the new $299
+# Meta-branded glasses... Harrison says this helps get the glasses out
+# in the world and increases the user base — then the subscription
+# service grows revenue."
+# ---------------------------------------------------------------------------
+_LOSS_LEADER_PATTERNS: list[re.Pattern] = [
+    # "sold at cost" / "sold at a loss" / "sold below cost"
+    re.compile(
+        r"\b(?:sold|sell(?:s|ing)?|priced|offered)\s+"
+        r"(?:at (?:cost|a loss)|below cost|near cost|at or below cost|"
+        r"at break-?even|close to cost)\b",
+        re.IGNORECASE,
+    ),
+    # "subscription [service/model] [grows/generates] revenue"
+    # near "user base" / "install base" / "adoption"
+    re.compile(
+        r"\b(?:user base|install base|installed base|adoption|"
+        r"customer base|subscriber base)\b"
+        r".{0,200}?"
+        r"\b(?:subscription|recurring|monthly)\s+"
+        r"(?:service|model|revenue|fee|income)\s+"
+        r"(?:grows?|generates?|drives?|creates?|produces?)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse: subscription near user base
+    re.compile(
+        r"\b(?:subscription|recurring|monthly)\s+"
+        r"(?:service|model|revenue|fee|income)\s+"
+        r"(?:grows?|generates?|drives?|creates?|produces?)\b"
+        r".{0,200}?"
+        r"\b(?:user base|install base|installed base|adoption|"
+        r"customer base|subscriber base)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+_DEVICE_PATTERNS["loss_leader_framing"] = _LOSS_LEADER_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 61 pattern-matched device types plus 6 structural
-    post-pass types (67 total).
+    Scans for 63 pattern-matched device types plus 6 structural
+    post-pass types (69 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (60): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (63): absence_as_evidence, analogy_metaphor,
     anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_positioning,
@@ -5604,13 +5714,15 @@ def detect_framing_devices(
     corporate_reassurance_undercut, cross_publication_import,
     denial_contradiction,
     editorial_aside, editorial_deflation, emotional_appeal,
-    escalation_amplification, failure_precedent, false_balance,
+    escalation_amplification, expert_contradiction,
+    failure_precedent, false_balance,
     financial_reassurance,
     geopolitical_regulatory_pressure, guilt_by_association,
     hypocrisy_frame, industry_normalization_undercut,
     ironic_quotation, isolation_framing,
     juxtaposition, latecomer_narrative, litigation_framing,
-    loaded_language, military_techno_optimism, outsourced_intensity,
+    loaded_language, loss_leader_framing,
+    military_techno_optimism, outsourced_intensity,
     pathologizing_metaphor, policy_reversal, power_asymmetry,
     precedent_analogy,
     pressure_language, refusal_amplification, regulatory_favoritism,
@@ -5752,8 +5864,26 @@ def detect_framing_devices(
                         "embeddings", "embeddings",
                         "compute", "latency",
                         "hallucination", "hallucinations",
+                        # Added from MIT Tech Review AI agents article
+                        # (Jun 2025): explanatory/pedagogical technical
+                        # terms that are quoted for reader clarity, not
+                        # editorial distancing.
+                        "flash crash",
+                        "reward hacking",
+                        "prompt injection", "prompt injections",
+                        "think", "thinking",
+                        "talk themselves",
+                        "tool", "tools",
                     }
-                    if _quoted.lower() in _TECH_JARGON:
+                    # Strip trailing punctuation before jargon lookup —
+                    # quoted terms often retain commas/periods from the
+                    # original text (e.g. "zero-day," → "zero-day").
+                    # Discovered in MIT Tech Review AI agents article
+                    # (Jul 4, 2026 iteration): "zero-day," was not
+                    # matching the jargon set because of the trailing
+                    # comma.
+                    _quoted_clean = _quoted.lower().rstrip('.,;:!?')
+                    if _quoted_clean in _TECH_JARGON:
                         continue
                     # --- Definitional introduction filter --------------------
                     # Short quoted terms (≤3 words) followed immediately by

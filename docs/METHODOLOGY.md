@@ -179,7 +179,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 67 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (51 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 69 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (53 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -251,6 +251,8 @@ These were added through systematic analysis of real articles from the five trac
 | **Policy Reversal** | Framing a subject's change of position, decision, or policy as a reversal, flip-flop, or U-turn, implying inconsistency, unreliability, or capitulation rather than legitimate evolution of thinking | "reversed course"; "backtracked"; "flip-flopped"; "U-turn"; "walked back"; "now says... previously said" | Cross-article pattern — common in tech policy coverage where platform rule changes are framed as inconsistency rather than iteration |
 | **Absence as Evidence** | Framing non-action, non-disclosure, or omission as proof of guilt or bad intent. Converts non-events into indictments by treating what a subject *didn't* do as more revealing than what they did | "Not one [noun] was directed at"; "the [audit/review] that never happened"; "[Subject] did not do that"; "has never [disclosed/addressed/tested]"; "failed to [act/disclose/comply]" | Newzlet Meta/Cannes editorial analysis (Jul 3, 2026) — "Not one task... was directed at Meta AI," "The internal audit that never happened is the data point," "Meta did not do that." Sustained absence-as-evidence framing converts Meta's non-testing of its own product into the article's central indictment. Distinct from refusal_amplification (which emphasizes active refusal to comment) and silence_as_guilt (which treats non-response as admission) |
 | **Silence as Guilt** | Explicitly treating silence, non-response, or non-disclosure as a confession or admission of guilt. Goes beyond factual noting of a no-comment to assert that the silence itself proves something | "That silence is its own answer"; "the lack of denial speaks volumes"; "refusal to comment is telling"; "no response — and that says everything" | Newzlet Meta/Cannes editorial analysis (Jul 3, 2026) — "That silence is its own answer" treats Meta's non-response as a confession rather than a media-relations decision. Distinct from refusal_amplification (which amplifies the act of refusing) because silence_as_guilt makes an epistemic claim: the silence constitutes evidence |
+| **Expert Contradiction** | Named expert source directly contradicts a company's stated rationale using "it's not about X; it's about Y" inversion or reporter-framed skepticism. Different from corporate_reassurance_undercut (journalist's own challenge) — here the undercut comes from a credentialed third-party source | "It's not about [stated reason]; it's about [real reason]"; "doesn't think the [action] is to help [stated purpose]" | Wired Conversation Focus paywall article (Jul 2, 2026) — Chris Harrison (Carnegie Mellon): "It's not about recovering AI costs; it's about monetizing customers." Expert explicitly reframes Meta's stated justification as profit extraction |
+| **Loss-Leader Framing** | Editorial description of a business model where hardware is sold at cost (or below) to capture recurring subscription revenue. Frames consumer pricing as strategic capture rather than value delivery | "sold at cost"; "sold at a loss"; "subscription [service/model] grows revenue" near "user base/install base" | Wired Conversation Focus paywall article (Jul 2, 2026) — "The company's glasses are typically sold at cost... Harrison says this helps get the glasses out in the world and increases the user base — then the subscription service grows revenue." Reveals the razor/blade business model |
 | **Talent Hemorrhage** | Cataloging multiple personnel departures from one entity to competitors, creating an "exodus" or "brain drain" narrative. Listing 3+ departures in sequence builds a cumulative impression of organizational collapse | "left for [competitor]... recently left... is also leaving"; "personnel churn"; "talent exodus"; "brain drain"; "poaching war" | NYT Meta AI overhaul analysis (Aug 2025 / Jul 2026) — Pineau→Cohere, Fan→OpenAI, Crisan→Figma listed in rapid succession. Creates cumulative hemorrhage narrative without explicit editorial judgment — the structure of the list does the framing work |
 | **Strategic Reversal** | Highlighting a company reversing a core strategic position, such as abandoning a longstanding philosophy, scrapping a major product, or shifting from open to closed models. Distinct from policy_reversal which focuses on regulatory/legal reversals | "a major departure from [Company's] longtime philosophy"; "chosen to abandon"; "start from scratch"; "shift from [X] to [Y]" | NYT Meta AI overhaul analysis (Aug 2025 / Jul 2026) — abandoning Behemoth model + considering closed-source AI = double strategic reversal. "A major departure from the company's longtime philosophy of open sourcing" frames the change as a betrayal of principle |
 | **Repeated Disruption** | Headline or body language implying chronic instability: "again," "yet another," "months of turmoil." Frames the subject as incapable of settling on a strategy | "shakes up... again"; "yet another restructuring"; "months of tumult and restructuring" | NYT Meta AI overhaul headline (Aug 2025) — "Shakes Up Meta's A.I. Efforts, Again" — the "Again" suffix transforms a neutral restructuring report into an instability narrative |
@@ -456,7 +458,7 @@ This is not a VADER bug; it is a fundamental limitation of lexical sentiment ana
 
 ### 9.2 Correction Pipeline
 
-MediaScope implements **9 distinct correction paths** (A–I), each addressing a specific VADER/TextBlob failure mode discovered through real article analysis. The paths are evaluated in priority order; the first match fires and returns the corrected score.
+MediaScope implements **10 distinct correction paths (A–J), each addressing a specific VADER/TextBlob failure mode discovered through real article analysis. The paths are evaluated in priority order; the first match fires and returns the corrected score.
 
 The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overall_tone` (corrected) with metadata documenting when and why correction fired.
 
@@ -467,7 +469,7 @@ The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overa
 | Trigger | Threshold |
 |---|---|
 | Raw composite tone | ≥ 0.0 (non-negative) |
-| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, competitive_positioning, consumer_ownership, editorial_aside, failure_precedent, editorial_deflation, slippery_slope, competitive_deficit, absence_as_evidence, silence_as_guilt)) |
+| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, competitive_positioning, consumer_ownership, editorial_aside, failure_precedent, editorial_deflation, slippery_slope, competitive_deficit, absence_as_evidence, silence_as_guilt, expert_contradiction, loss_leader_framing)) |
 | Agency attribution | < −0.3 (passive/target of scrutiny) |
 
 **Blend:** 10% raw + 90% framing-derived estimate. The framing estimate is computed from agency, emotional intensity, and adversarial device density.
@@ -588,6 +590,20 @@ Key distinguishing signals: high emotional intensity from consumer-rights vocabu
 
 **Discovery article:** 9to5Mac Meta Conversation Focus paywall (Jul 1, 2026) — VADER scored +0.67. Agency = +0.67. Emotional intensity = 0.78. Adversarial count = 6 (consumer_ownership×2, competitive_positioning×2, slippery_slope×1, loaded_language×1). "Doubly unacceptable", "no possible justification", "a more reputable company".
 
+#### Path J: Expert-Driven Structural Critique
+
+Measured editorial where criticism is embedded through expert sources contradicting corporate rationale + structural devices (consumer_ownership, loss_leader_framing) rather than through emotional vocabulary. VADER and EI both read these as positive because the *words* are measured — the criticism is structural.
+
+**Key signals:** Expert contradiction devices present (credentialed source disputes company justification), consumer-adversarial devices present (consumer_ownership, competitive_positioning, loss_leader_framing), moderate EI (0.10–0.5 — enough editorial stance but not angry), neutral or positive agency (company is active, NOT a victim), raw_tone strongly positive (VADER fooled by corporate PR quotes).
+
+**Key distinction from Path I (direct consumer critique):** Path I requires high EI (≥ 0.5), reflecting articles that use strong moral/consumer-rights vocabulary. Path J fires on measured journalism where the criticism comes from expert sources and structural revelations (loss-leader model, expert reframes), not from emotional words.
+
+**Key distinction from Path D (sardonic):** Path D requires sarcastic_correction or loaded_language dominance. Path J fires on journalistic prose that maintains professional register throughout.
+
+**Key distinction from Path A (adversarial framing):** Path A requires negative agency (agency < −0.3). Path J captures articles with neutral or positive agency where the company is the active decision-maker.
+
+**Discovery article:** Wired "Meta Is Charging a Subscription for Smart Glasses Features" (Jul 2, 2026) — VADER scored +0.69. Agency = +0.33. EI = 0.26. Adversarial count = 8. Expert Chris Harrison (Carnegie Mellon): "It's not about recovering AI costs; it's about monetizing customers." Loss-leader framing: "sold at cost... subscription service grows revenue."
+
 #### Path G: VADER Long-Text Normalization
 
 Not a framing correction — this fixes a fundamental VADER math problem. VADER's compound score uses `sum / sqrt(sum² + alpha)` where `alpha=15`, tuned for tweet-length texts. For long articles (10+ sentences), this normalization amplifies small biases.
@@ -624,6 +640,7 @@ The paths are evaluated in code order: **A → B → C → E → D → F → H**
 | **G** | Long-text normalization | any | any | divergence > 0.5, ≥10 sentences | 30/70 (compound/sentence) |
 | **H** | Sarcastic editorial | ≥ 0.3 | ≥ −0.1 | ≥2 editorial_aside + ≥4 adversarial + ≥0.5 EI | 15/85 (raw/target) |
 | **I** | Direct consumer critique | ≥ 0.3 | > 0 | ≥5 adversarial + ≥2 consumer devices + ≥0.5 EI | 20/80 (raw/target) |
+| **J** | Expert-driven structural critique | ≥ 0.3 | ≥ 0 | ≥5 adversarial + ≥1 expert_contradiction + ≥2 structural + ≥0.10 EI | 30/70 (raw/target) |
 
 ### 9.3 Headline Framing Override
 
@@ -859,7 +876,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **62 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **64 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -877,7 +894,7 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 62 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 64 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
@@ -919,6 +936,8 @@ The following table documents all 62 entity clusters shipped with MediaScope, or
 | **Spotify** | 2 | Spotify, Daniel Ek |
 | **Duolingo** | 2 | Duolingo, Luis von Ahn |
 | **Uber** | 3 | Uber, Uber Technologies, Dara Khosrowshahi |
+| **Salesforce** | 3 | Salesforce, Marc Benioff, Agentforce |
+| **Manus AI** | 2 | Manus, Butterfly Effect |
 | **Tesla/SpaceX** | 4 | Tesla, SpaceX, Starlink, Neuralink |
 | **Garmin** | 1 | Garmin |
 | **EssilorLuxottica** | 6 | EssilorLuxottica, Essilor, Luxottica, Francesco Milleri, Milleri, LensCrafters |
@@ -964,8 +983,8 @@ The following table documents all 62 entity clusters shipped with MediaScope, or
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
-| **Academic/Research** | 41 | NYU, New York University, Northeastern University, Northeastern, Stanford University, Stanford (+35 more) |
-| **Research Centers** | 13 | Cybersafety Research Center, Center for Countering Digital Hate, CCDH, Center for Humane Technology, Humane Intelligence, Internet Watch Foundation, IWF (+6 more) |
+| **Academic/Research** | 44 | NYU, New York University, Northeastern University, Northeastern, Stanford University, Stanford (+38 more) |
+| **Research Centers** | 15 | Cybersafety Research Center, Center for Countering Digital Hate, CCDH, Center for Humane Technology, Humane Intelligence, Internet Watch Foundation, IWF (+8 more) |
 | **Child Safety Researchers** | 10 | Arturo Béjar, Béjar, Lexie Matsumoto, Matsumoto, Laura Edelson, Edelson, Rumman Chowdhury, Chowdhury (+2 more) |
 | **Education/Advocacy** | 5 | National PTA, National Education Association, NEA, American Federation of Teachers, AFT |
 | **Policy Research** | 13 | RAND Corporation, RAND, Brookings Institution, Brookings, Center for Strategic and International Studies, CSIS (+7 more) |

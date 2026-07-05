@@ -243,6 +243,18 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         ],
         "regex": r"(?<!\w)(Uber(?!\s+Eats)|Uber Technologies|Dara Khosrowshahi)(?!\w)",
     },
+    # Added from MIT Tech Review AI agents article (Jul 4, 2026 iteration)
+    "Salesforce": {
+        "aliases": [
+            "Salesforce", "Marc Benioff", "Agentforce",
+        ],
+    },
+    "Manus AI": {
+        "aliases": [
+            "Manus", "Butterfly Effect",
+        ],
+        "regex": r"(?<!\w)((?-i:Manus)(?=\s+(?:AI|app|is|was|the|agent|a |'s|,))|Butterfly Effect)(?!\w)",
+    },
     "Duolingo": {
         "aliases": [
             "Duolingo", "Luis von Ahn",
@@ -579,6 +591,10 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Duke University",
             "University of Wisconsin",
             "University of Illinois",
+            # Added from MIT Tech Review AI agents article (Jul 4, 2026)
+            "University of Montreal",
+            "Australian National University",
+            "University of Virginia",
         ],
         "regex": r"(?<!\w)((?-i:NYU)|New York University"
                  r"|Northeastern(?:\s+University)?"
@@ -596,6 +612,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|Duke University"
                  r"|University of Wisconsin(?:\s+Madison)?"
                  r"|University of Illinois(?:\s+Urbana-Champaign)?"
+                 r"|University of Montreal"
+                 r"|Australian National University"
+                 r"|University of Virginia"
                  r"|Bo Li|Dawn Song|Sanmi Koyejo"
                  # Academic journals — case-sensitive: "nature" (common
                  # noun) must not match the journal Nature.
@@ -618,6 +637,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "CyberTipline",
             "Thorn",
             "Family Online Safety Institute", "FOSI",
+            # Added from MIT Tech Review AI agents article (Jul 4, 2026)
+            "Centre for the Governance of AI",
+            "Palisade Research",
         ],
         "regex": r"(?<!\w)(Cybersafety Research Center"
                  r"|Center for Countering Digital Hate|(?-i:CCDH)"
@@ -627,7 +649,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|National Center for Missing (?:&|and) Exploited Children|(?-i:NCMEC)"
                  r"|CyberTip(?:line|s?)"
                  r"|Thorn"
-                 r"|Family Online Safety Institute|(?-i:FOSI))(?!\w)",
+                 r"|Family Online Safety Institute|(?-i:FOSI)"
+                 r"|Centre for the Governance of AI"
+                 r"|Palisade Research)(?!\w)",
     },
     "Child Safety Legislation": {
         "aliases": [

@@ -447,7 +447,7 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
 ```json
 {
     "name": "detect_framing_devices",
-    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 67 device types across three tiers: core (10 pattern-matched), extended (51 from real-article analysis), and structural post-pass (6 heuristic-based).",
+    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 69 device types across three tiers: core (10 pattern-matched), extended (53 from real-article analysis), and structural post-pass (6 heuristic-based).",
     "parameters": {
         "type": "object",
         "properties": {
@@ -924,7 +924,7 @@ framing_gap = len(magazine_result["framing"]) - len(wire_result["framing"])
 
 ## Framing-Aware Tone Correction Workflow
 
-VADER and TextBlob systematically misprice editorial tone in investigative journalism. Professional prose uses measured, confident language that lexical sentiment models score as positive — even when the editorial stance is clearly adversarial. MediaScope's tone correction pipeline fixes this through **9 correction paths (A–I)**, each addressing a specific VADER failure mode.
+VADER and TextBlob systematically misprice editorial tone in investigative journalism. Professional prose uses measured, confident language that lexical sentiment models score as positive — even when the editorial stance is clearly adversarial. MediaScope's tone correction pipeline fixes this through **10 correction paths (A–J)**, each addressing a specific VADER failure mode.
 
 See `METHODOLOGY.md` §9 and `examples/framing_correction_demo.py` for a hands-on walkthrough.
 
@@ -943,10 +943,11 @@ The pipeline evaluates 7 paths in priority order — the first match fires:
 | **G** | VADER long-text normalization | ≥10 sentences, compound-sentence divergence > 0.5 | Pre-correction — fixes VADER's alpha=15 distortion before composite |
 | **H** | Sarcastic short editorial | raw ≥ 0.3, agency ≥ −0.1, ≥2 editorial_aside + ≥4 adversarial + EI ≥ 0.5 | Sarcastic opinion pieces — editorial_aside density is the dominant signal |
 | **I** | Direct consumer critique | raw ≥ 0.3, agency > 0, ≥5 adversarial + ≥2 consumer devices + EI ≥ 0.5 | Moral condemnation of corporate decisions — consumer_ownership/competitive_positioning dominant |
+| **J** | Expert-driven structural critique | raw ≥ 0.3, agency ≥ 0, ≥5 adversarial + ≥1 expert_contradiction + ≥2 structural devices + EI ≥ 0.10 | Measured editorial with criticism through expert sources + structural devices (consumer_ownership, loss_leader_framing) rather than vocabulary — VADER fooled by corporate PR quotes |
 
 Only one framing path (A–F, H, I) fires per article. Path G runs independently before the composite is computed.
 
-**Adversarial device types** (24 types trigger Paths A/B): absence_as_evidence, assumed_consensus, catastrophizing, competitive_deficit, competitive_positioning, consumer_ownership, editorial_aside, editorial_deflation, emotional_appeal, failure_precedent, guilt_by_association, hypocrisy_frame, isolation_framing, juxtaposition, kicker_framing, loaded_language, military_techno_optimism, power_asymmetry, pressure_language, refusal_amplification, self_referential_investigation, silence_as_guilt, slippery_slope, timeline_implication.
+**Adversarial device types** (26 types trigger Paths A/B): absence_as_evidence, assumed_consensus, catastrophizing, competitive_deficit, competitive_positioning, consumer_ownership, editorial_aside, editorial_deflation, emotional_appeal, failure_precedent, guilt_by_association, hypocrisy_frame, isolation_framing, juxtaposition, kicker_framing, loaded_language, military_techno_optimism, power_asymmetry, pressure_language, refusal_amplification, self_referential_investigation, silence_as_guilt, slippery_slope, timeline_implication, expert_contradiction, loss_leader_framing.
 
 **Anchor device types** (3 types trigger Path C): kicker_framing, self_referential_investigation, juxtaposition.
 

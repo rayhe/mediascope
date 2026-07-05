@@ -538,6 +538,18 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "pay-until-you-die", "pay until you die",
     "subscription fatigue", "subscription hell",
     "rate-limited", "rate limited", "rate limits",
+    # Expert-reframe / editorial monetization language — terms used by
+    # named expert sources or editorial voice to reframe a company's
+    # stated rationale as profit extraction rather than cost recovery.
+    # Gap discovered in Wired Conversation Focus paywall article (Jul 2026):
+    # Chris Harrison: "It's not about recovering AI costs; it's about
+    # monetizing customers" + "extracting value".  VADER reads both as
+    # neutral business language, but in consumer-hardware coverage they
+    # carry strong negative editorial weight.
+    "monetize", "monetizing", "monetized", "monetization",
+    "extracting value",
+    "pay up",
+    "sold at cost",
     # Child-safety / exploitation emotional terms — needed for investigative
     # coverage of child exploitation, abuse, self-harm, and minor safety
     # where the reported content is viscerally disturbing but VADER reads
@@ -1291,6 +1303,19 @@ _ADVERSARIAL_DEVICE_TYPES: set[str] = {
     # no-comment factually; this device asserts silence proves something.
     # Discovered in Newzlet Meta/Cannes editorial analysis (Jul 3 2026).
     "silence_as_guilt",
+    # Expert contradiction deploys a credentialed external source to
+    # directly contradict the company's stated justification.  Stronger
+    # than editorial_deflation (author's own hedge): a named academic or
+    # industry expert saying "It's not about X; it's about Y" turns the
+    # company's framing against itself.
+    # Discovered in Wired Conversation Focus paywall article (Jul 2026).
+    "expert_contradiction",
+    # Loss-leader framing reveals the company's business model as a
+    # subsidy-then-extract pattern (sold at cost → subscription revenue).
+    # Adversarial because it reframes consumer pricing as strategic
+    # capture rather than value delivery.
+    # Discovered in Wired Conversation Focus paywall article (Jul 2026).
+    "loss_leader_framing",
 }
 
 # Anchor device types that create negative reader takeaway even when
@@ -1745,6 +1770,65 @@ def _compute_framing_correction(
         target_tone = max(-0.6, min(0.0, base_target))
         corrected = 0.20 * raw_tone + 0.80 * target_tone
         corrected = max(-0.6, min(0.0, round(corrected, 4)))
+        return corrected, True
+
+    # --- Path J: Expert-driven structural critique ---
+    # Measured editorial where criticism is embedded through expert
+    # sources contradicting corporate rationale + structural devices
+    # (consumer_ownership, loss_leader_framing) rather than through
+    # emotional vocabulary.  VADER and EI both read these as positive
+    # because the *words* are measured — the criticism is structural.
+    #
+    # Key distinguishing signals:
+    # - expert_contradiction present (credentialed source disputes company)
+    # - consumer-adversarial devices present (consumer_ownership,
+    #   competitive_positioning, loss_leader_framing)
+    # - moderate EI (0.15-0.5) — enough editorial stance but not angry
+    # - positive agency (company is active, NOT a victim)
+    # - raw_tone strongly positive (VADER fooled by corporate PR quotes)
+    #
+    # Unlike Path I (direct consumer critique): EI is moderate, not high.
+    #   The criticism is through expert sources and structure, not vocabulary.
+    # Unlike Path D (sardonic): no sarcastic_correction or loaded_language
+    #   dominance — tone is journalistic, not mocking.
+    # Unlike Path A (adversarial): agency is positive, not negative.
+    #
+    # Discovered in Wired Conversation Focus paywall article (Jul 2026):
+    # VADER scored +0.69 on an article where Chris Harrison (Carnegie
+    # Mellon) explicitly said "It's not about recovering AI costs; it's
+    # about monetizing customers" and the editorial revealed a loss-leader
+    # business model ("sold at cost... subscription service grows revenue").
+    # 12 framing devices, 8 adversarial, EI = 0.26, agency = +0.33.
+    _EXPERT_STRUCTURAL_MIN_ADVERSARIAL = 5
+    _EXPERT_STRUCTURAL_MIN_EI = 0.10  # low floor — structure is the signal
+    expert_contradiction_count = framing_summary.get("expert_contradiction", 0)
+    structural_device_count = sum(
+        framing_summary.get(dt, 0) for dt in (
+            "consumer_ownership", "competitive_positioning",
+            "loss_leader_framing", "slippery_slope",
+            "usage_dismissal_undercut",
+        )
+    )
+    if (
+        raw_tone >= 0.3
+        and adversarial_count >= _EXPERT_STRUCTURAL_MIN_ADVERSARIAL
+        and emotional_intensity >= _EXPERT_STRUCTURAL_MIN_EI
+        and expert_contradiction_count >= 1  # at least one expert contradiction
+        and structural_device_count >= 2  # at least 2 structural devices
+        and agency >= 0  # neutral or positive agency (company is active)
+    ):
+        # Lighter correction than Path I — this is measured criticism,
+        # target is mildly negative (-0.15 to -0.30).
+        base_target = -(0.15 + 0.10 * emotional_intensity)
+        # Amplify if loss_leader explicitly revealed
+        if framing_summary.get("loss_leader_framing", 0) >= 1:
+            base_target -= 0.05
+        # Amplify for strong expert contradiction
+        if expert_contradiction_count >= 2:
+            base_target -= 0.05
+        target_tone = max(-0.45, min(-0.05, base_target))
+        corrected = 0.30 * raw_tone + 0.70 * target_tone
+        corrected = max(-0.45, min(0.0, round(corrected, 4)))
         return corrected, True
 
     return raw_tone, False

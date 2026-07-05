@@ -171,6 +171,7 @@ def analyze_with_path_h_details(
         "failure_precedent", "editorial_deflation",
         "competitive_positioning", "consumer_ownership", "slippery_slope",
         "competitive_deficit", "absence_as_evidence", "silence_as_guilt",
+        "expert_contradiction", "loss_leader_framing",
     }
 
     print(f"\n{'=' * 70}")

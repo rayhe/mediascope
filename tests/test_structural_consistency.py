@@ -51,8 +51,8 @@ class TestFramingDeviceTypeCount:
     """
 
     # --- Update ONLY this constant when adding new device types ---
-    EXPECTED_TOTAL = 67
-    EXPECTED_PATTERN_MATCHED = 61  # core + extended (in _DEVICE_PATTERNS)
+    EXPECTED_TOTAL = 69
+    EXPECTED_PATTERN_MATCHED = 63  # core + extended (in _DEVICE_PATTERNS)
     EXPECTED_STRUCTURAL = {"kicker_framing", "analogy_stacking",
                            "speculative_framing", "trend_bundling",
                            "social_proof_amplification",
@@ -951,8 +951,8 @@ class TestEmotionalLanguageCount:
         """EMOTIONAL_LANGUAGE should contain exactly 612 unique terms."""
         from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
 
-        assert len(EMOTIONAL_LANGUAGE) == 829, (
-            f"Expected 829 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
+        assert len(EMOTIONAL_LANGUAGE) == 836, (
+            f"Expected 836 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
             "If you added or removed terms, update this test to the new count.\n"
             "Also check for duplicates: len(set(EMOTIONAL_LANGUAGE)) should match."
         )
@@ -1021,7 +1021,7 @@ class TestAdversarialDeviceListConsistency:
     # Track the total number of compiled regex patterns across all device
     # types in _DEVICE_PATTERNS.  When patterns are added, this test fails
     # and forces a deliberate count update, preventing undocumented drift.
-    EXPECTED_TOTAL_PATTERNS = 382  # sum(len(v) for v in _DEVICE_PATTERNS.values())
+    EXPECTED_TOTAL_PATTERNS = 389  # sum(len(v) for v in _DEVICE_PATTERNS.values())
 
     def test_total_regex_pattern_count(self):
         """Total compiled regex patterns must match expected count."""
@@ -1498,13 +1498,13 @@ class TestCorrectionPathDocumentation:
     """Validate that all 9 sentiment correction paths (A-I) are documented
     across METHODOLOGY.md, ARCHITECTURE.md, and AGENT_GUIDE.md.
 
-    The 9 paths are defined in ``_compute_framing_correction`` (Paths A-F, H, I)
+    The 10 paths are defined in ``_compute_framing_correction`` (Paths A-F, H, I, J)
     and ``analyze_composite`` (Path G) in sentiment.py.  Each path has a
     ``# --- Path X: ...`` comment in code.  These tests ensure documentation
     stays in sync with code when paths are added, removed, or renamed.
     """
 
-    EXPECTED_PATHS = {"A", "B", "C", "D", "E", "F", "G", "H", "I"}
+    EXPECTED_PATHS = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"}
 
     @staticmethod
     def _extract_code_paths():
@@ -1516,7 +1516,7 @@ class TestCorrectionPathDocumentation:
         return set(re.findall(r"#\s*---\s*Path\s+([A-Z]):", code))
 
     def test_code_has_all_expected_paths(self):
-        """sentiment.py should have comment markers for all 9 paths."""
+        """sentiment.py should have comment markers for all 10 paths."""
         code_paths = self._extract_code_paths()
         missing = self.EXPECTED_PATHS - code_paths
         assert not missing, (
@@ -1525,10 +1525,10 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_methodology_documents_all_paths(self):
-        """METHODOLOGY.md section 9.2 should document all 9 correction paths."""
+        """METHODOLOGY.md section 9.2 should document all 10 correction paths."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
         # Each path should appear as "#### Path X:" or "Path X" in text
-        documented = set(re.findall(r"(?:####\s+)?Path\s+([A-I])[\s:.]", doc))
+        documented = set(re.findall(r"(?:####\s+)?Path\s+([A-J])[\s:.]", doc))
         missing = self.EXPECTED_PATHS - documented
         assert not missing, (
             f"METHODOLOGY.md is missing documentation for correction "
@@ -1536,9 +1536,9 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_architecture_documents_all_paths(self):
-        """ARCHITECTURE.md should reference all 9 correction paths."""
+        """ARCHITECTURE.md should reference all 10 correction paths."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
-        documented = set(re.findall(r"Path\s+([A-I])[\s:.\|]", doc))
+        documented = set(re.findall(r"Path\s+([A-J])[\s:.\|]", doc))
         missing = self.EXPECTED_PATHS - documented
         assert not missing, (
             f"ARCHITECTURE.md is missing references to correction "
@@ -1546,11 +1546,11 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_agent_guide_documents_all_paths(self):
-        """AGENT_GUIDE.md should reference all 9 correction paths."""
+        """AGENT_GUIDE.md should reference all 10 correction paths."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
-        documented = set(re.findall(r"Path\s+([A-I])[\s:.\|]", doc))
+        documented = set(re.findall(r"Path\s+([A-J])[\s:.\|]", doc))
         # Also check for "**G**" table format
-        table_paths = set(re.findall(r"\*\*([A-I])\*\*", doc))
+        table_paths = set(re.findall(r"\*\*([A-J])\*\*", doc))
         all_documented = documented | table_paths
         missing = self.EXPECTED_PATHS - all_documented
         assert not missing, (
@@ -1559,10 +1559,10 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_summary_table_in_methodology(self):
-        """METHODOLOGY.md should have a summary table with all 9 paths."""
+        """METHODOLOGY.md should have a summary table with all 10 paths."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
         # Find the summary table by looking for "| **A**" through "| **G**"
-        table_paths = set(re.findall(r"\|\s*\*\*([A-I])\*\*\s*\|", doc))
+        table_paths = set(re.findall(r"\|\s*\*\*([A-J])\*\*\s*\|", doc))
         missing = self.EXPECTED_PATHS - table_paths
         assert not missing, (
             f"METHODOLOGY.md summary table is missing paths: {sorted(missing)}. "
