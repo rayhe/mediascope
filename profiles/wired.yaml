@@ -203,15 +203,25 @@ advance_investments:
   - entity: "Reddit (RDDT)"
     stake: >
       42,191,092 shares Class B + 16,182 shares Class A (per Schedule 13G filed Nov 14, 2024,
-      reporting ownership as of Sep 30, 2024 — unchanged in 2025 proxy). 76.5% of Class B
-      common stock (55,121,821 total Class B as of March 31, 2025). Class B carries 10 votes/share.
-      TOTAL VOTING POWER: 62.0% (per 2025 proxy beneficial ownership table, March 31, 2025 record
-      date). NOTE: Voting power decreased from 65.2% (2024 proxy) to 62.0% (2025 proxy) due to
-      dilution from equity compensation and secondary offerings — Advance has NOT sold a single
-      share. Total outstanding shares as of March 31, 2025: 129,145,465 Class A + 55,121,821 Class B
-      = 184,267,286. Combined with Huffman's irrevocable voting proxy over Tencent's 8.0% voting
-      power, Huffman controls 75.8% of all votes — but Advance retains full economic ownership
-      and ALL investment/disposition decisions via the AP board.
+      reporting ownership as of Sep 30, 2024 — unchanged through 2026 proxy). 83.5% of Class B
+      common stock (50,543,398 total Class B as of March 31, 2026). Class B carries 10 votes/share.
+      TOTAL VOTING POWER: 65.2% (calculated from 2026 proxy share counts, March 31, 2026 record
+      date). VOTING POWER CONCENTRATION TREND: 65.2% (2024) → 62.0% (2025) → 65.2% (2026).
+      The rebound occurred because other Class B holders (insiders, Tencent) converted 4.58M Class B
+      shares to Class A for open-market sale, shrinking total Class B from 55.1M to 50.5M — while
+      Advance kept ALL its Class B shares. Advance's Class B ownership rose from 76.5% to 83.5%
+      without buying a single additional share. This automatic concentration effect means the more
+      Reddit insiders sell, the tighter Advance's voting control becomes.
+      Total outstanding shares as of March 31, 2026: 141,867,916 Class A + 50,543,398 Class B
+      = 192,411,314. Combined with Huffman's irrevocable voting proxy over Advance shares and
+      Tencent's declining Class B stake, Huffman's proxy-consolidated voting block is ~70%+ —
+      but Advance retains full economic ownership and ALL investment/disposition decisions via
+      the AP board.
+      2026 ANNUAL MEETING (Jun 8, 2026): All 8 directors re-elected including Steven O. Newhouse
+      and Robert A. Sauerberg Jr. Stockholders ratified KPMG LLP as auditor and approved
+      executive compensation. Both Advance-affiliated board members received 1,714 Class A RSU
+      grants (vesting Jun 2027 or before 2027 annual meeting). Per the 2026 proxy, Class A holders
+      voted 1 vote/share and Class B holders voted 10 votes/share as a single class on all matters.
     board_seats: 2
     board_designees: ["Steven O. Newhouse", "Robert A. Sauerberg"]
     board_designee_details:
@@ -296,7 +306,7 @@ advance_investments:
       upfront cash while retaining economic exposure to Reddit upside (via the derivatives)
       AND retaining voting control (shares are pledged as collateral, not sold). The VPF allows
       Advance to monetize $1.2B of its Reddit position without triggering a taxable sale event
-      and without reducing its 42.2M share count or its 62.0% voting power.
+      and without reducing its 42.2M share count or its 65.2% voting power.
       TIMING SIGNIFICANCE: The credit facility was reported ~17 days after Donald Newhouse's death
       (May 26, 2026). While it may have been in planning before his passing, the timing suggests
       third-generation Newhouse leadership is actively managing liquidity. Combined with the
@@ -320,10 +330,10 @@ advance_investments:
       FY2026 projected: $3.25B (+47.6%), FY2027: $4.31B (+32.5%).
       Q2 2026 GUIDANCE: $715M-$725M, representing 43-45% YoY revenue growth (~44% at midpoint).
       Q2 2026 EARNINGS DATE: July 30 (after market close). Consensus EPS: tracking for ~$1.20-1.25.
-      Market cap ~$33.4B at $190.67/share (Jul 2, 2026 close — down 3.6% from intraday peak).
-      Previous close ~$173.58 (Jul 1). 52-week range $119.27-$282.95. Beta 2.07.
-      FY2026 EPS CONSENSUS: $4.83. FY2027 EPS FORECAST: $6.39 (+32.3% growth).
-      P/E ratio: 56.41 (trailing). Net margin: 28.60%. ROE: 25.48%.
+      Market cap ~$37.5B at $194.67/share (Jul 3, 2026 close — RDDT traded flat Jul 2→Jul 3).
+      Previous close ~$173.65 (Jun 30). 52-week range $119.27-$282.95. Beta 2.16.
+      YTD PERFORMANCE: Down ~31% from 52-week high ($282.95). Stock volatility elevated (beta 2.16).
+      Forward P/E: 40.28 (trailing P/E: 55.59). Net margin: 28.60%. ROE: 25.48%.
       TTM (trailing 12 months): Revenue $2.2B, net income $530M (net margin 24.1%), operating income
       $442M (operating margin 20.1%), gross profit $2.0B (gross margin 91.2%), operating cash flow $690.9M.
       Current ratio 11.56. Reddit is now PROFITABLE at scale with net income of over $500M TTM.
@@ -1111,8 +1121,8 @@ known_conflicts:
 
   - type: "investment"
     description: >
-      Parent company Advance Publications holds 62.0% total voting power in Reddit (42.2M shares Class B +
-      16K shares Class A = 76.5% of Class B, per 2025 proxy as of Mar 31, 2025), currently worth ~$7.3B.
+      Parent company Advance Publications holds 65.2% total voting power in Reddit (42.2M shares Class B +
+      16K shares Class A = 83.5% of Class B, per 2026 proxy as of Mar 31, 2026), currently worth ~$8.2B.
       Advance has 2 board seats (Steven O. Newhouse as NCG Committee Chair, Robert A. Sauerberg as
       Vice Chairperson + Audit/NCG Committee member), plus governance veto rights over board size,
       M&A, CEO removal, charter amendments, and more.
@@ -1171,7 +1181,7 @@ known_conflicts:
 
   - type: "competitive"
     description: >
-      Reddit (62.0% voting power held by Advance via 76.5% of Class B shares) directly competes with Meta for user attention, advertiser spend,
+      Reddit (65.2% voting power held by Advance via 83.5% of Class B shares) directly competes with Meta for user attention, advertiser spend,
       and community engagement. Reddit FY2025 revenue ~$1.3B, growing rapidly, in direct competition
       for the same performance advertising dollars Meta commands. Reddit's market cap ~$32.8B. Every
       Meta stumble (regulatory, reputational, or financial) potentially benefits Reddit's competitive
@@ -1191,13 +1201,39 @@ known_conflicts:
     evidence: "Wikipedia, NYT obituary (May 26, 2026), Forbes wealth estimate"
     source_url: "https://en.wikipedia.org/wiki/Donald_Newhouse"
 
+  - type: "voting_power_concentration"
+    description: >
+      NEW FINDING (Jul 5, 2026): Advance's voting power in Reddit has REBOUNDED from 62.0% (Mar 31,
+      2025 proxy) to 65.2% (Mar 31, 2026 proxy) without Advance acquiring a single additional share.
+      MECHANISM: Other Class B holders (insiders, Tencent) converted 4.58M Class B shares to Class A
+      for open-market sale over the past year, shrinking total Class B from 55.1M to 50.5M. Since
+      Advance's 42.2M Class B shares remained constant, their fraction of total Class B rose from
+      76.5% to 83.5%. This is an AUTOMATIC CONCENTRATION EFFECT: every time a Reddit insider sells
+      stock (converting Class B → Class A), Advance's voting power increases. CEO Huffman sold 36K
+      shares and COO Wong sold 39K shares in June 2026 alone (10b5-1 plans), contributing to this
+      concentration. The trend means Advance's governance control over a direct Meta competitor is
+      STRENGTHENING over time — exactly the opposite of what one might expect from post-IPO dilution.
+      At 65.2% voting power and 83.5% of Class B shares, Advance now has MORE governance control
+      over Reddit than at any point since the 2025 proxy, making the undisclosed conflict with
+      Wired's Meta coverage increasingly material. The 2026 annual meeting (Jun 8, 2026) confirmed
+      both Advance-affiliated directors (Newhouse, Sauerberg) re-elected with no opposition.
+    severity: 5
+    evidence: >
+      2026 proxy share counts: 141,867,916 Class A + 50,543,398 Class B = 192,411,314 total
+      (vs 2025: 129,145,465 Class A + 55,121,821 Class B = 184,267,286). Advance voting power
+      calculation: (42,191,092 × 10 + 16,182) / (50,543,398 × 10 + 141,867,916) = 65.17%.
+      Reddit 8-K filed Jun 8, 2026 (annual meeting results). StockTitan RDDT filing tracker.
+    source_urls:
+      - "https://www.stocktitan.net/sec-filings/RDDT/"
+      - "https://www.sec.gov/Archives/edgar/data/1713445/000171344525000092/rddt-20250428.htm"
+
   - type: "portfolio_concentration"
     description: >
-      STRUCTURAL SHIFT (Jun 2026, updated Jun 28): As Charter Communications continues declining (-68%
+      STRUCTURAL SHIFT (updated Jul 5, 2026): As Charter Communications continues declining (-68%
       from 52-week high, though SpaceX mobile partnership talks may offer inflection) and WBD approaches
       a Paramount Skydance acquisition at $30/share, Reddit is becoming an ever-larger share
-      of Advance's public portfolio. Reddit now represents ~57% of Advance's public equity ($7.04B of
-      ~$12.4B), up from ~40% at time of IPO. If Paramount closes and WBD cash is redeployed, and Charter
+      of Advance's public portfolio. Reddit now represents ~60% of Advance's public equity (~$8.2B of
+      ~$13.6B), up from ~40% at time of IPO. If Paramount closes and WBD cash is redeployed, and Charter
       continues declining (or pivots to SpaceX mobile but doesn't immediately recover), Reddit could
       represent 65-70%+ of Advance's public portfolio. This CONCENTRATION makes the conflict-of-interest
       between Reddit (direct Meta competitor) and Wired's Meta coverage even more acute — the Newhouse
