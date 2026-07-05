@@ -1526,7 +1526,7 @@ class TestAgentGuideConsistency:
 
 
 class TestCorrectionPathDocumentation:
-    """Validate that all 9 sentiment correction paths (A-I) are documented
+    """Validate that all 10 sentiment correction paths (A-J) are documented
     across METHODOLOGY.md, ARCHITECTURE.md, and AGENT_GUIDE.md.
 
     The 10 paths are defined in ``_compute_framing_correction`` (Paths A-F, H, I, J)
@@ -1601,13 +1601,53 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_path_count_consistent(self):
-        """Code path count should match expected count of 8."""
+        """Code path count should match expected count of 10."""
         code_paths = self._extract_code_paths()
         assert len(code_paths) == len(self.EXPECTED_PATHS), (
             f"Expected {len(self.EXPECTED_PATHS)} correction paths but "
             f"code has {len(code_paths)}: {sorted(code_paths)}. "
             f"If a path was added or removed, update EXPECTED_PATHS and "
             f"all three documentation files."
+        )
+
+    def test_readme_correction_path_count(self):
+        """README.md example table should reference correct path count (A-J)."""
+        readme = (_REPO_ROOT / "README.md").read_text()
+        expected_count = len(self.EXPECTED_PATHS)
+        # The README example table describes the framing_correction_demo.py
+        # and should reference the correct correction path count and range.
+        assert f"{expected_count} distinct correction paths (A–J)" in readme, (
+            f"README.md example table should reference "
+            f"'{expected_count} distinct correction paths (A–J)' but does not. "
+            f"Update the framing_correction_demo.py description in README.md."
+        )
+
+    def test_framing_demo_correction_path_count(self):
+        """framing_correction_demo.py summary should reference correct path count."""
+        demo = (
+            _REPO_ROOT / "examples" / "framing_correction_demo.py"
+        ).read_text()
+        expected_count = len(self.EXPECTED_PATHS)
+        # The demo prints "Ten correction paths (A-J)" in its summary
+        count_word = {10: "Ten", 9: "Nine", 8: "Eight", 11: "Eleven"}.get(
+            expected_count, str(expected_count)
+        )
+        assert f"{count_word} correction paths (A-J)" in demo, (
+            f"framing_correction_demo.py summary should reference "
+            f"'{count_word} correction paths (A-J)' but does not. "
+            f"Update line ~314 in framing_correction_demo.py."
+        )
+
+    def test_sarcastic_demo_correction_path_count(self):
+        """sarcastic_editorial_demo.py should reference correct correction path count."""
+        demo = (
+            _REPO_ROOT / "examples" / "sarcastic_editorial_demo.py"
+        ).read_text()
+        expected_count = len(self.EXPECTED_PATHS)
+        assert f"all {expected_count} correction paths" in demo, (
+            f"sarcastic_editorial_demo.py should reference "
+            f"'all {expected_count} correction paths' but does not. "
+            f"Update the test count line in sarcastic_editorial_demo.py."
         )
 
 

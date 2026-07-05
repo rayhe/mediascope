@@ -311,7 +311,7 @@ def main():
     print("  of lexical sentiment analysis when applied to professional journalism.")
     print("  VADER was designed for social media ('I love this!', 'This sucks').")
     print("  Investigative journalism uses measured, declarative prose that VADER")
-    print("  reads as neutral-to-positive. Nine correction paths (A-I) detect:")
+    print("  reads as neutral-to-positive. Ten correction paths (A-J) detect:")
     print()
     print("    1. Adversarial framing devices (loaded language, isolation framing,")
     print("       pressure language, power asymmetry, assumed consensus, etc.)")
@@ -326,7 +326,7 @@ def main():
     print("  vocabulary.")
     print()
     print("  See METHODOLOGY.md §9 for the full theoretical framework.")
-    print("  See tests/ for 1253 regression tests using real article excerpts.")
+    print("  See tests/ for 1392 regression tests using real article excerpts.")
 
 
 if __name__ == "__main__":
