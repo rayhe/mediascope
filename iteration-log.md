@@ -13220,3 +13220,59 @@ All 8 editorial dramatization phrases in the derivative article were missed by t
 - Framing device types: 70 (was 69), pattern-matched: 64 (was 63)
 - Total regex patterns: 397 (was 389), +8 new
 - 0 regressions
+
+---
+
+## 2026-07-05 10:00 PT — Type A: MIT TR AI Agent Security Hack Deep Dive
+
+### Focus
+First MIT Technology Review article analysis — "The Meta hack shows there's more
+to AI security than Mythos" (2026-06-05). Quote misattribution bug fix in source
+extraction.
+
+### Article
+- **Publication:** MIT Technology Review
+- **URL:** https://www.technologyreview.com/2026/06/05/1138437/the-meta-hack-shows-theres-more-to-ai-security-than-mythos/
+- **Topic:** Attackers exploited Meta's AI customer support agent to steal Instagram
+  accounts (Obama White House account among targets). Article contrasts this simple
+  social-engineering exploit with the more exotic Anthropic Mythos AI security concerns.
+  Four named academic experts provide analysis.
+
+### Bug Fix: Quote Forward-Preference (`sources.py`)
+`_extract_nearby_quote()` was searching a combined backward+forward window and taking
+the first regex match, which could be a *preceding* speaker's quote rather than the
+current source's own. Fixed with two-phase search:
+- Phase 1: search FORWARD from ref_end (attribution → quote, preferred)
+- Phase 2: fall back to BACKWARD, using the LAST match in window (closest to ref)
+
+**Concrete fix:** Jessica Ji was getting Neil Gong's "It's really surprising" quote
+instead of her own "Were there even guardrails in place?"
+
+### Entity Additions
+- Neil Gong, Somesh Jha, Jessica Ji → Academic/Research cluster
+- AI security researchers appearing across multiple publication coverage
+
+### Key Findings
+- Source authority grade: 0.883 (4 named experts, all neutral verbs)
+- VADER compound 0.959 (known security-word inflation) → composite -0.478 after framing correction
+- Outsourced intensity: editorial prose 3.6× more intense than quoted experts
+- comparative_framing at -1.000 flagged as over-penalized (future calibration target)
+- 17 framing devices, low false-positive rate
+
+### Files Changed
+- `mediascope/analyze/sources.py` — quote forward-preference fix
+- `mediascope/analyze/entities.py` — +3 Academic/Research aliases (Neil Gong, Somesh Jha, Jessica Ji)
+- `tests/test_quote_forward_preference.py` — 3 regression tests (new file)
+- `examples/sample_output/mittr_meta_ai_agent_hack_security_2026_06_05_article.txt` — article text
+- `examples/sample_output/mittr_meta_ai_agent_hack_security_2026_06_05_analysis.md` — full annotation
+- `docs/METHODOLOGY.md` — Academic/Research alias count 46→49
+- `docs/ARCHITECTURE.md` — test file listing, count 56→57 files, 1451→1454 tests
+- `docs/QUALITY_STANDARDS.md` — annotated article count 97→98
+- `README.md` — test table + count updated
+
+### Stats
+- Tests: 1,454 passed (0 failed), up from 1,451 (+3)
+- Annotated articles: 98 (was 97)
+- Academic/Research aliases: 49 (was 46)
+- Commit: 57578f3
+- 0 regressions
