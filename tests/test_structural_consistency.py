@@ -1932,3 +1932,95 @@ class TestAnnotatedArticleCountConsistency:
             f"Tier 1 ({tier1_count}) + Tier 2 ({tier2_count}) tables "
             f"document {total_clusters} clusters. Update the stated count."
         )
+
+
+# --- Atlantic pipeline and MIT TR partnership tests (2026-07-04 21:00 PT) ---
+
+def _load_editorial_changes():
+    """Load editorial_changes.yaml."""
+    import yaml
+    path = _REPO_ROOT / "profiles" / "careers" / "editorial_changes.yaml"
+    with open(path) as f:
+        return yaml.safe_load(f).get("editorial_changes", {})
+
+
+def _load_journalists():
+    """Load journalists.yaml."""
+    import yaml
+    path = _REPO_ROOT / "profiles" / "careers" / "journalists.yaml"
+    with open(path) as f:
+        return yaml.safe_load(f).get("journalists", [])
+
+
+class TestAtlanticPipeline:
+    """Tests for WaPo → Atlantic talent pipeline documentation."""
+
+    def test_atlantic_editorial_changes_count(self):
+        """Atlantic should have at least 24 editorial changes after spring 2026 batch."""
+        ec = _load_editorial_changes()
+        atlantic = ec.get("atlantic", [])
+        assert len(atlantic) >= 24, f"Expected ≥24 Atlantic editorial changes, got {len(atlantic)}"
+
+    def test_wapo_pipeline_hires_in_editorial_changes(self):
+        """Spring 2026 WaPo → Atlantic batch hires should be tracked."""
+        ec = _load_editorial_changes()
+        atlantic = ec.get("atlantic", [])
+        wapo_batch = [
+            c for c in atlantic
+            if isinstance(c, dict) and "WAPO" in str(c.get("notes", "")).upper()
+            and str(c.get("date", "")).startswith("2026")
+        ]
+        assert len(wapo_batch) >= 3, (
+            f"Expected ≥3 WaPo → Atlantic pipeline entries dated 2026, got {len(wapo_batch)}"
+        )
+
+    def test_theo_balcomb_migration_documented(self):
+        """Theo Balcomb (NPR → NYT → WaPo → Atlantic) should be in Atlantic editorial changes."""
+        ec = _load_editorial_changes()
+        atlantic = ec.get("atlantic", [])
+        balcomb = [c for c in atlantic if isinstance(c, dict) and c.get("incoming") == "Theo Balcomb"]
+        assert len(balcomb) >= 1, "Theo Balcomb hire not found in Atlantic editorial changes"
+        assert "NPR" in str(balcomb[0].get("notes", "")), "Balcomb notes should mention NPR migration origin"
+
+    def test_caity_weaver_nyt_migration(self):
+        """Caity Weaver (NYT Magazine → Atlantic) should be documented."""
+        ec = _load_editorial_changes()
+        atlantic = ec.get("atlantic", [])
+        weaver = [c for c in atlantic if isinstance(c, dict) and c.get("incoming") == "Caity Weaver"]
+        assert len(weaver) >= 1, "Caity Weaver hire not found in Atlantic editorial changes"
+        assert "NYT" in str(weaver[0].get("notes", "")), "Weaver notes should mention NYT migration"
+
+
+class TestMITTechReviewPartnership:
+    """Tests for MIT TR × FT editorial partnership and Amy Nordrum promotion."""
+
+    def test_nordrum_executive_editor_role(self):
+        """Amy Nordrum should have executive_editor role at MIT TR."""
+        journalists = _load_journalists()
+        nordrum = next(
+            (j for j in journalists if isinstance(j, dict) and j.get("name") == "Amy Nordrum"),
+            None
+        )
+        assert nordrum is not None, "Amy Nordrum not found in journalists"
+        exec_ed = [
+            c for c in nordrum.get("career", [])
+            if isinstance(c, dict)
+            and c.get("publication") == "mit-tech-review"
+            and c.get("role") == "executive_editor"
+        ]
+        assert len(exec_ed) >= 1, "Nordrum should have executive_editor role at MIT TR"
+
+    def test_nordrum_career_progression(self):
+        """Amy Nordrum should show commissioning_editor → executive_editor progression."""
+        journalists = _load_journalists()
+        nordrum = next(
+            (j for j in journalists if isinstance(j, dict) and j.get("name") == "Amy Nordrum"),
+            None
+        )
+        assert nordrum is not None
+        mit_roles = [
+            c.get("role") for c in nordrum.get("career", [])
+            if isinstance(c, dict) and c.get("publication") == "mit-tech-review"
+        ]
+        assert "commissioning_editor" in mit_roles, "Missing commissioning_editor stage"
+        assert "executive_editor" in mit_roles, "Missing executive_editor promotion"

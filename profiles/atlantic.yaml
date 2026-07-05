@@ -1192,3 +1192,67 @@ notes: |
      Is Thompson's messaging consistent or contradictory?
   9. Cross-publication: do the 3 OpenAI-licensing publications (Atlantic, Wired, Guardian)
      show systematically different coverage of OpenAI vs the NYT (which sued)?
+
+  talent_pipelines:
+    wapo_to_atlantic_2025_2026:
+      description: >
+        MAJOR INSTITUTIONAL MIGRATION PATTERN: The Atlantic hired at least 8 journalists from
+        the Washington Post between late 2025 and spring 2026, the most aggressive single-source
+        talent acquisition by any outlet from WaPo since Jeff Bezos's ownership turbulence began.
+        The pipeline accelerated during WaPo's editorial instability following the Bezos-era
+        restructuring and the controversial non-endorsement decision (Oct 2024).
+      journalists:
+        - name: "Will Oremus"
+          from: "Washington Post"
+          to_position: "tech_reporter"
+          date: "2026-04"
+          beat: "technology"
+          notes: "Tech reporter covering platforms and AI. WaPo tech beat → Atlantic tech desk. Most analytically significant pipeline hire for MediaScope."
+        - name: "Sophia Nguyen"
+          from: "Washington Post"
+          to_position: "staff_writer"
+          date: "2026-03"
+          beat: "culture, books"
+        - name: "Kevin Sieff"
+          from: "Washington Post"
+          to_position: "staff_writer"
+          date: "2026-03"
+          beat: "international, Latin America"
+          notes: "15 years overseas at WaPo. Two Overseas Press Club awards."
+        - name: "Jonathan L. Fischer"
+          from: "Washington Post"
+          to_position: "senior_editor"
+          date: "2026-03"
+          beat: "culture, media, entertainment"
+        - name: "Theo Balcomb"
+          from: "Washington Post (also NPR, NYT)"
+          to_position: "senior_editor_podcasts"
+          date: "2026-03"
+          beat: "podcasts, audio"
+          notes: "Co-created The Daily at NYT. 4-institution migration."
+        - name: "Yvonne Wingett Sanchez"
+          from: "Washington Post"
+          to_position: "staff_writer"
+          date: "2025-10"
+          beat: "politics (Arizona)"
+          notes: "Previously at Arizona Republic."
+        - name: "Griff Witte"
+          from: "Washington Post"
+          to_position: "managing_editor_politics"
+          date: "2025-01"
+          beat: "politics (editorial management)"
+          notes: "Senior editorial leadership hire — managing editor level."
+      analytical_significance: >
+        This pipeline represents a massive institutional talent transfer from Bezos-owned WaPo
+        to Emerson Collective-owned Atlantic. FRAMING IMPLICATIONS: WaPo journalists bring
+        business-press editorial instincts (Bezos ownership, economic framing) into Atlantic's
+        essay-driven, culturally-critical editorial culture (Emerson Collective, Goldberg/LaFrance
+        leadership). The migration is one-directional — no Atlantic journalists moved to WaPo
+        in the same period. This asymmetry suggests institutional health differential:
+        Atlantic's profitability (since March 2024), record subscriptions (1.4M+), and Emerson
+        Collective backing vs. WaPo's editorial instability, leadership turnover, and subscriber
+        losses following the Bezos non-endorsement controversy. For DiD analysis, compare these
+        journalists' output style at WaPo vs. Atlantic to measure institutional framing effects.
+      source_urls:
+        - "https://www.editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff,260673"
+        - "https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-oremus-to-cover-tech/"

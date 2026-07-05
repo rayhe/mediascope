@@ -1737,3 +1737,25 @@ editorial_history:
       to: "Wired (as EIC)"
       date: "2020-09"
       notes: "HIGHEST-VALUE MIGRATION IN DATASET: Same person leading TWO tracked publications sequentially. Can directly compare MIT TR editorial direction under Lichfield vs Wired editorial direction under Lichfield to decompose individual from institutional effects. The careers module's DiD regression should prioritize this case."
+
+  editorial_partnerships:
+    - partner: "Financial Times"
+      date: "2025-10"
+      type: "editorial_content_series"
+      title: "The State of AI"
+      description: >
+        Strategic editorial partnership producing a 6-part weekly series "The State of AI"
+        distributed to both MIT TR and FT subscribers. Pairs MIT TR reporters with FT journalists:
+        (1) Caiwei Chen (MIT TR) + John Thornhill (FT) on "China";
+        (2) Casey Crownhart (MIT TR) + Pilita Clark (FT) on "The Energy Question";
+        (3) James O'Donnell (MIT TR) + Helen Warrell (FT) on "The Future of War";
+        (4) Eileen Guo (MIT TR) + Melissa Heikkila (FT) on "The End of Privacy";
+        (5) David Rotman (MIT TR) + Richard Waters (FT) on "The Economic Singularity";
+        (6) Will Douglas Heaven (MIT TR) + Tim Bradshaw (FT) on "The World in 2030".
+        ANALYTICAL SIGNIFICANCE: This partnership gives MIT TR's framing direct reach into
+        FT's global business audience (~16M monthly readers). FT's editorial culture (fact-heavy,
+        economically grounded) may moderate MIT TR's specialist tone, or MIT TR's adversarial
+        AI expertise may sharpen FT's coverage. Tests cross-institutional editorial calibration
+        in co-bylined work. EIC Mat Honan described the collaboration as vital for interrogating
+        AI "from a variety of perspectives."
+      source_url: "https://www.morningstar.com/news/pr-newswire/20251001ny10292/mit-technology-review-and-the-financial-times-form-strategic-editorial-partnership"

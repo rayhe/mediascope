@@ -3405,21 +3405,31 @@ journalists:
     start: 2016-03
   - beat: general commissioning
     event_type: hired
-    notes: 'Joined as commissioning editor. Promoted to executive editor of operations. Oversees MIT TR''s flagship editorial
-      products: annual 10 Breakthrough Technologies list, Innovators Under 35, 15 Climate Tech Companies to Watch. Manages
-      newsroom copy flow, freelance contributions, fellowship program, and engagement team. MBA from NYU Stern (media management
-      focus). 27+ posts under own byline. KEY ANALYTICAL VALUE: While not a reporter, Nordrum''s editorial operations role
-      means she controls which external stories get commissioned, which fellowships get funded, and which breakthrough technologies
-      get crowned — indirect but powerful influence on MIT TR''s editorial priorities and public-facing brand.'
+    notes: Joined as commissioning editor. Oversaw MIT TR's freelance contributions, fellowship program, and engagement team.
+      MBA from NYU Stern (media management focus). Promoted to executive editor by early 2024.
     publication: mit-tech-review
     role: commissioning_editor
     source_url: https://www.technologyreview.com/author/amy-nordrum/
     start: 2020-07
+    end: 2024-01
+  - beat: editorial operations
+    event_type: promoted
+    publication: mit-tech-review
+    role: executive_editor
+    start: 2024-01
+    notes: 'Promoted from commissioning editor to executive editor of operations. Now second-in-command to EIC Mat Honan.
+      Oversees MIT TR''s flagship editorial products: annual 10 Breakthrough Technologies list, Innovators Under 35, 15 Climate
+      Tech Companies to Watch. Manages newsroom copy flow. Confirmed title at EmTech AI 2026 conference (April 2026). Leads
+      FT editorial partnership sessions. KEY ANALYTICAL VALUE: As executive editor, Nordrum has broader editorial authority
+      than a commissioning editor — she shapes which stories get prioritized and how MIT TR''s public-facing brand presents.
+      This promotion signals her growing influence over MIT TR''s editorial direction.'
+    source_url: https://www.morningstar.com/news/pr-newswire/20260407ny47178/mit-technology-reviews-emtech-ai-2026-leading-in-the-era-of-ai-integration
   name: Amy Nordrum
-  notes: 'Executive Editor of Operations at MIT Tech Review. KEY LEADERSHIP FIGURE — shapes MIT TR''s most influential editorial
-    products: 10 Breakthrough Technologies, Innovators Under 35, and 15 Climate Tech Companies to Watch. Career: IBT Media
-    → IEEE Spectrum (news manager) → MIT TR (commissioning editor Jul 2020 → executive editor). BA Journalism (Ohio University),
-    MA SHERP (NYU), MBA (NYU Stern). Science Friday contributor for 6 years. Based in Boston.'
+  notes: 'Executive Editor of Operations at MIT Tech Review (promoted from commissioning editor ~2024). KEY LEADERSHIP FIGURE
+    — shapes MIT TR''s most influential editorial products: 10 Breakthrough Technologies, Innovators Under 35, and 15 Climate
+    Tech Companies to Watch. Career: IBT Media → IEEE Spectrum (news manager) → MIT TR (commissioning editor Jul 2020 → executive
+    editor ~2024). BA Journalism (Ohio University), MA SHERP (NYU), MBA (NYU Stern). Science Friday contributor for 6 years.
+    Leads MIT TR × Financial Times editorial partnership sessions. Based in Boston.'
 - career:
   - beat: esports, cybersecurity, hacking
     end: 2016-04
@@ -4265,8 +4275,8 @@ journalists:
   - beat: metro reporting
     end: 2006-08
     event_type: intern
-    notes: Metro reporting internship during UC Berkeley undergrad. First journalism experience. UC Berkeley BA in English and
-      Mass Communications (2003-2007).
+    notes: Metro reporting internship during UC Berkeley undergrad. First journalism experience. UC Berkeley BA in English
+      and Mass Communications (2003-2007).
     publication: richmond-times-dispatch
     role: intern
     source_url: https://chatsheet.com/companies/the-new-york-times/people/tiffany-hsu-c6c64152-aa48-45e8-8a86-1df028027e32
@@ -4288,11 +4298,11 @@ journalists:
   - beat: business journalism, MBA
     end: 2017-05
     event_type: fellowship
-    notes: 'Knight-Bagehot Fellow in Economics and Business Journalism (2015-2016 academic year). One of 10 fellows selected
+    notes: Knight-Bagehot Fellow in Economics and Business Journalism (2015-2016 academic year). One of 10 fellows selected
       from major business journalism outlets. Fellows take MBA-level courses at Columbia Business School plus journalism school
       courses. Full tuition and $60,000 living stipend. Stayed for second year to earn MBA from Columbia Business School (completed
       2017). Also earned MS Journalism from Columbia Graduate School of Journalism (2016). Joined NYT directly upon graduation
-      — Ellen Pollock hired her, noting "she finished the MBA program two weeks ago."'
+      — Ellen Pollock hired her, noting "she finished the MBA program two weeks ago."
     publication: columbia-university
     role: knight_bagehot_fellow
     source_url: https://journalism.columbia.edu/kb
@@ -4300,9 +4310,9 @@ journalists:
   - beat: breaking news, business
     end: 2019-06
     event_type: hired
-    notes: 'Joined Business Day as breaking news reporter, first role at NYT. Hired by Business Day editor Ellen Pollock. Covered
-      wide range of business stories: retail surges, corporate scandals, industry trends. Quickly established reputation for
-      versatility. NYTCo announcement: "Tiffany will focus on breaking news, and will be taking on other stories and projects
+    notes: 'Joined Business Day as breaking news reporter, first role at NYT. Hired by Business Day editor Ellen Pollock.
+      Covered wide range of business stories: retail surges, corporate scandals, industry trends. Quickly established reputation
+      for versatility. NYTCo announcement: "Tiffany will focus on breaking news, and will be taking on other stories and projects
       as well."'
     publication: nytimes
     role: reporter
@@ -4353,8 +4363,8 @@ journalists:
     Day breaking news (2017) → NYT media/advertising (2019) → NYT misinformation desk (2022-present). Education: UC Berkeley
     BA (English + Mass Communications, 2007), Columbia MS Journalism (2016), Columbia MBA (2017), Knight-Bagehot Fellow (2015-2016).
     Awards: SABEW "Best in Business" Small Business (2014, with Chris Kirkham, LA Times), Mirror Award (2022, with Sheera
-    Frenkel, for vaccine/mask misinformation), SABEW Honorable Mention Technology (2022, Twitter Takeover team). Based in San
-    Francisco. Contact: tiffany.hsu@nytimes.com. ANALYTICAL VALUE: Her beat (misinformation, AI-generated content, deepfakes,
+    Frenkel, for vaccine/mask misinformation), SABEW Honorable Mention Technology (2022, Twitter Takeover team). Based in
+    San Francisco. Contact: tiffany.hsu@nytimes.com. ANALYTICAL VALUE: Her beat (misinformation, AI-generated content, deepfakes,
     content moderation) is ground zero for Meta coverage bias — every content moderation decision Meta makes is filtered through
     her lens. The Knight-Bagehot/MBA background gives her reporting a business-analysis dimension unusual among misinformation
     reporters. Frequent co-authors: Sheera Frenkel, Stuart Thompson, Steven Lee Myers, Cade Metz, Cecilia Kang. PEN America

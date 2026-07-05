@@ -103,8 +103,11 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "the social media giant", "the social media company",
             "Meta One", "Conversation Focus",
             "Alexandr Wang",
+            # LeCun spent a decade as Meta/Facebook's Chief AI Scientist;
+            # coverage of his departure is Meta-relevant talent coverage.
+            "Yann LeCun", "LeCun",
         ],
-        "regex": r"(?<!\w)(Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport))|Meta Platforms|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|(?-i:Zuck)(?=\s+(?:is|was|has|had|wants?|thinks?|said|says|will|would|could|should|might|may|does|did|isn|didn|can|won|cannot|also|personally|himself|recently|even|just|too|and|,|'s|'))|Meta AI|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Meta Superintelligence Labs|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark|Meta Fury|(?-i:Fury)(?=\s+(?:glasses|are|is|was|cost|have|included|and|AI|smart))|Adventurer|Starfire|Meta Ray-Ban Display|Llama 4|(?:Meta'?s? )(?-i:Llama)|(?-i:Llama)(?=\s+(?:model|AI|language|LLM|is|was|and|,))|Joel Kaplan|Kaplan|Sheryl Sandberg|Sandberg|Nick Clegg|Clegg|Dina Powell McCormick|(?-i:Arena)(?=\s+(?:app|prediction|market|is|was|would|will|being|the))|Francis Brennan|Virtue AI|Fundamental AI Research|(?-i:FAIR)(?=\s+(?:Lab|lab|research|team|group))|Ime Archibong|Archibong|the social media (?:giant|company)|Meta One|Conversation Focus|Alexandr Wang)(?!\w)",
+        "regex": r"(?<!\w)(Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport))|Meta Platforms|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|(?-i:Zuck)(?=\s+(?:is|was|has|had|wants?|thinks?|said|says|will|would|could|should|might|may|does|did|isn|didn|can|won|cannot|also|personally|himself|recently|even|just|too|and|,|'s|'))|Meta AI|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Meta Superintelligence Labs|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark|Meta Fury|(?-i:Fury)(?=\s+(?:glasses|are|is|was|cost|have|included|and|AI|smart))|Adventurer|Starfire|Meta Ray-Ban Display|Llama 4|(?:Meta'?s? )(?-i:Llama)|(?-i:Llama)(?=\s+(?:model|AI|language|LLM|is|was|and|,))|Joel Kaplan|Kaplan|Sheryl Sandberg|Sandberg|Nick Clegg|Clegg|Dina Powell McCormick|(?-i:Arena)(?=\s+(?:app|prediction|market|is|was|would|will|being|the))|Francis Brennan|Virtue AI|Fundamental AI Research|(?-i:FAIR)(?=\s+(?:Lab|lab|research|team|group))|Ime Archibong|Archibong|the social media (?:giant|company)|Meta One|Conversation Focus|Alexandr Wang|Yann LeCun|(?-i:LeCun))(?!\w)",
     },
     "Google": {
         "aliases": [
@@ -248,6 +251,13 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         "aliases": [
             "Salesforce", "Marc Benioff", "Agentforce",
         ],
+    },
+    # Added from MIT Tech Review world models article (Jul 4, 2026)
+    "World Labs": {
+        "aliases": [
+            "World Labs",
+        ],
+        "regex": r"(?<!\w)(World Labs)(?!\w)",
     },
     "Manus AI": {
         "aliases": [
@@ -595,6 +605,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "University of Montreal",
             "Australian National University",
             "University of Virginia",
+            # Added from MIT Tech Review world models article (Jul 4, 2026)
+            "Fei-Fei Li",
+            "Daron Acemoglu",
         ],
         "regex": r"(?<!\w)((?-i:NYU)|New York University"
                  r"|Northeastern(?:\s+University)?"
@@ -616,6 +629,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|Australian National University"
                  r"|University of Virginia"
                  r"|Bo Li|Dawn Song|Sanmi Koyejo"
+                 r"|Fei-Fei Li|Daron Acemoglu"
                  # Academic journals — case-sensitive: "nature" (common
                  # noun) must not match the journal Nature.
                  r"|(?-i:Nature)(?:\s+(?:Neuroscience|Medicine|Machine"

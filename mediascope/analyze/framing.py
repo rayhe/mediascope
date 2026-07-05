@@ -5874,6 +5874,10 @@ def detect_framing_devices(
                         "think", "thinking",
                         "talk themselves",
                         "tool", "tools",
+                        # Added from MIT Tech Review world models article
+                        # (Jul 4, 2026): "world model" is established AI
+                        # research terminology, not editorial distancing.
+                        "world model", "world models",
                     }
                     # Strip trailing punctuation before jargon lookup —
                     # quoted terms often retain commas/periods from the

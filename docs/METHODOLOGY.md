@@ -876,7 +876,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **64 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **65 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -894,13 +894,13 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 64 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 65 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
-| **Meta** | 70 | Meta, Meta Platforms, Facebook, Instagram, WhatsApp, Threads (+64 more) |
+| **Meta** | 72 | Meta, Meta Platforms, Facebook, Instagram, WhatsApp, Threads (+66 more) |
 | **Google** | 11 | Alphabet, Google, YouTube, DeepMind, Waymo, Sundar Pichai (+5 more) |
 | **Apple** | 11 | Apple, iPhone, iPad, Tim Cook, John Ternus, Apple Intelligence (+5 more) |
 | **Amazon** | 9 | Amazon, AWS, Alexa, Jeff Bezos, Andy Jassy, Amazon Web Services (+3 more) |
@@ -938,6 +938,7 @@ The following table documents all 64 entity clusters shipped with MediaScope, or
 | **Uber** | 3 | Uber, Uber Technologies, Dara Khosrowshahi |
 | **Salesforce** | 3 | Salesforce, Marc Benioff, Agentforce |
 | **Manus AI** | 2 | Manus, Butterfly Effect |
+| **World Labs** | 1 | World Labs |
 | **Tesla/SpaceX** | 4 | Tesla, SpaceX, Starlink, Neuralink |
 | **Garmin** | 1 | Garmin |
 | **EssilorLuxottica** | 6 | EssilorLuxottica, Essilor, Luxottica, Francesco Milleri, Milleri, LensCrafters |
@@ -983,7 +984,7 @@ The following table documents all 64 entity clusters shipped with MediaScope, or
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
-| **Academic/Research** | 44 | NYU, New York University, Northeastern University, Northeastern, Stanford University, Stanford (+38 more) |
+| **Academic/Research** | 46 | NYU, New York University, Northeastern University, Northeastern, Stanford University, Stanford (+40 more) |
 | **Research Centers** | 15 | Cybersafety Research Center, Center for Countering Digital Hate, CCDH, Center for Humane Technology, Humane Intelligence, Internet Watch Foundation, IWF (+8 more) |
 | **Child Safety Researchers** | 10 | Arturo Béjar, Béjar, Lexie Matsumoto, Matsumoto, Laura Edelson, Edelson, Rumman Chowdhury, Chowdhury (+2 more) |
 | **Education/Advocacy** | 5 | National PTA, National Education Association, NEA, American Federation of Teachers, AFT |
