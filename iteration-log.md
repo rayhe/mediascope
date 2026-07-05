@@ -12898,3 +12898,28 @@ Auto-detected migration count updated from 408 to 410 to reflect the 2 new fello
 - Tests: 1,388 passed (0 failed)
 - Journalists: 115 (unchanged)
 - Migrations: 410 (was 408)
+
+## 2026-07-05 02:00 PT — Type D: Toolkit Quality & Documentation
+
+### Focus
+Cross-document consistency audit: correction path documentation and stale device type counts.
+
+### Changes (commit cdfc230)
+1. **Correction path completeness** — Paths I (investment recommendation boosterism) and J (semantic narrowing) were missing from prose references in 4 files:
+   - METHODOLOGY.md: path evaluation order now includes I+J; "Paths B–H" → "Paths B–J"
+   - ARCHITECTURE.md: correction path summary table now includes I+J rows
+   - AGENT_GUIDE.md: "A–F, H, I" → "A–F, H–J" in §14
+   - examples/framing_correction_demo.py: "Nine paths (A–I)" → "Ten paths (A–J)" with I+J enumerated
+
+2. **Stale device type counts** — Found and fixed 3 stale references:
+   - METHODOLOGY.md §13.2: "56-type taxonomy" → "69-type taxonomy"
+   - ARCHITECTURE.md ASCII diagram: "63 device types" → "69 device types" (was using pattern-matched count as total)
+
+3. **New structural consistency guard** — `test_no_stale_device_type_count_in_docs`: scans all doc files for historic device counts (33, 43, 53, 56, 63, 65, 67, 68) in patterns like "N-type", "N device", "N framing". Immediately caught the ARCHITECTURE.md "63 device" reference that positive-presence tests missed. Also caught a self-referential issue in test descriptions mentioning "56-type" as an example — rewrote to avoid literal stale counts.
+
+### Discovery
+Positive-presence tests ("does doc X contain '69 framing device types'?") are insufficient to catch stale counts when they appear in different syntactic forms (e.g., "56-type taxonomy" vs "56 framing device types"). The new negative guard ("no doc contains any known stale count") provides defense in depth.
+
+### Stats
+- Tests: 1,389 passed (0 failed), +1 new guard
+- Structural consistency guards: 88 → 89 (pytest-collected; 88 def test_ + 1 parametrize expansion)
