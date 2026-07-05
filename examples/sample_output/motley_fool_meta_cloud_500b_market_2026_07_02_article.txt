@@ -1,0 +1,35 @@
+Title: Meta Is Finally Entering This High-Margin $500 Billion Market. Is the Stock a No-Brainer Buy?
+Source: The Motley Fool
+Author: Jeremy Bowman
+Date: July 2, 2026
+URL: https://www.fool.com/investing/2026/07/02/meta-is-finally-entering-this-high-margin-500-bill/
+
+It's rare for a stock the size of Meta Platforms (META 4.80%) to jump 9% on non-earnings news, but that's exactly what happened on Wednesday, and for good reason.
+
+Bloomberg reported that the social media giant is launching its own cloud computing business. Though Meta hasn't made its own announcement about a new cloud infrastructure service, the news comes weeks after CEO Mark Zuckerberg said that a cloud business was "definitely on the table."
+
+The move added about $150 billion to Meta's market cap as investors are hopeful it could unlock a second profitable revenue stream for the company, complementing its advertising juggernaut, and leverage infrastructure it already owns. Cloud computing has become a huge cash cow for Meta's big tech peers like Amazon, Microsoft, and Alphabet, and all three are reporting accelerating growth in the cloud, showing demand for compute infrastructure skyrocketing in the AI era. Meta is also considered the fourth hyperscaler, though it's the only one without a cloud business. Zuckerberg has said that his company receives interest in cloud services every week, and that companies are willing to pay a premium, suggesting it should be able to hit the ground running when it launches.
+
+The shockwaves from the news were felt throughout the tech sector as neocloud companies like CoreWeave and Nebius fell by double digits as Meta represents a huge new competitor, and chip stocks like Micron were down sharply as well, as investors interpreted the news as an increase in chip supply, which would hurt "bottleneck" plays like Micron, which have soared in recent months on the memory shortage. Additionally, it could signal a peak in the AI capex investment cycle.
+
+What's in Meta's new cloud service
+
+The service is still in development, but according to the report, Meta is planning on offering two primary services. The first is access to bare-metal computing capacity, essentially renting out its AI chips to companies willing to pay for them. This is CoreWeave's business model, and it's driven several quarters of triple-digit revenue growth, though CoreWeave has had to take on billions in debt to build out its data centers to meet demand, leading to losses.
+
+Like Amazon's Bedrock, Meta is also expected to host AI models, including those from its new Muse Spark LLM, and charge developers to access them.
+
+Meta's cash cow advertising business and the money it's already invested in AI infrastructure give it a competitive advantage against companies like CoreWeave, which don't have the cash cushion that Meta has, nor do they have another way to monetize cloud demand as Meta is doing with its AI models.
+
+Getting into the cloud business looks like a smart business move. If Meta can turn an asset it owns from a high-risk investment to a profit center, why wouldn't it do so? It also shows Zuckerberg may be starting to act more rationally and follow the market, rather than his own product vision and desires, which have mostly led to flops.
+
+Finally, there's a bonanza going on in AI cloud computing, which has driven bumper profits for the three leading hyperscalers. Google Cloud, the smallest of the three leaders, was losing money as recently as 2022, with a loss of $1.9 billion that year, but its profits have soared in the AI era as both demand and prices for cloud computing have gone up. By 2025, its operating income had jumped to $13.9 billion, more than doubling from the year before.
+
+Is Meta a buy?
+
+Prior to the cloud computing report, Meta stock had slumped on worries that its AI investments weren't paying off, on reports of low morale following several rounds of layoffs, and concerns that it was overspending after lifting its capex forecast to $125 billion-$145 billion this year.
+
+As a result, the stock now trades at a very attractive price-to-earnings ratio of 22, and that's after it reported 33% revenue growth in the first quarter, showing the core business is strong.
+
+While the details on the cloud business aren't fully clear, if it executes effectively, a Meta Cloud could be where Google Cloud is today in five or ten years, as there's plenty of demand for it.
+
+Trading at a discount to the S&P 500, the stock looks like a no-brainer buy on plans to launch a cloud business.

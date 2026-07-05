@@ -5774,6 +5774,29 @@ def detect_framing_devices(
                 if overlap:
                     continue
 
+                # --- Analogy/metaphor: evaluative idiom filter ----------------
+                # Suppress analogy_metaphor when "like a/an" is followed by
+                # an evaluative adjective + noun — these are value judgments
+                # ("like a smart business move", "like a no-brainer buy"),
+                # not literary similes or rhetorical comparisons.
+                #
+                # Identified in Motley Fool Meta Cloud article (Jul 2026):
+                # "like a smart business move" and "like a no-brainer buy"
+                # are idiomatic evaluations, not analogy devices.
+                # ---------------------------------------------------------
+                if device_type == "analogy_metaphor":
+                    _matched_am = match.group().lower()
+                    if re.search(
+                        r"\blike (?:a|an) (?:smart|good|bad|great|wise|"
+                        r"solid|strong|bold|savvy|shrewd|clever|obvious|"
+                        r"clear|safe|risky|sound|fair|poor|terrible|"
+                        r"brilliant|logical|reasonable|sensible|practical|"
+                        r"prudent|foolish|dumb|stupid|crazy|insane|"
+                        r"no-brainer|no brainer)\b",
+                        _matched_am,
+                    ):
+                        continue
+
                 # --- Geopolitical pressure: physical "stood/standing firm" ---
                 # Suppress geopolitical_regulatory_pressure when "stood firm"
                 # or "standing firm" is used literally (security guards, police,

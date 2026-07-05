@@ -276,7 +276,7 @@ Default storage is SQLite (`mediascope.db` in working directory). For production
 
 ### Custom Entity Clusters
 
-Define entity clusters in publication profiles or pass custom clusters to `detect_entities()`. See [METHODOLOGY.md §15](METHODOLOGY.md#15-entity-detection--cluster-reference) for the complete 60-cluster reference table with alias counts, analytical categories, and growth history.
+Define entity clusters in publication profiles or pass custom clusters to `detect_entities()`. See [METHODOLOGY.md §15](METHODOLOGY.md#15-entity-detection--cluster-reference) for the complete 66-cluster reference table with alias counts, analytical categories, and growth history.
 
 ```python
 custom_clusters = {

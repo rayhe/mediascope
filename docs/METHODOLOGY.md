@@ -876,7 +876,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **65 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **66 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -894,7 +894,7 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 65 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 66 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
@@ -920,6 +920,7 @@ The following table documents all 65 entity clusters shipped with MediaScope, or
 | **Arm** | 6 | Arm, Arm Holdings, ARM, Rene Haas, Arm Neoverse, Neoverse |
 | **Broadcom** | 3 | Broadcom, Hock Tan, VMware |
 | **TSMC** | 4 | TSMC, Taiwan Semiconductor, C.C. Wei, Mark Liu |
+| **Micron** | 3 | Micron, Micron Technology, Sanjay Mehrotra |
 | **CoreWeave** | 2 | CoreWeave, Mike Intrator |
 | **Nebius** | 2 | Nebius, Nebius Group |
 | **AI Infrastructure** | 1 | Scale AI |
@@ -1028,6 +1029,7 @@ Entity clusters are added organically as new articles reveal detection gaps. The
 | **Legal/Insurance** | +2 | Reuters insurance defense column (Jun 23): Insurance/Litigation Finance, Legal/Judicial |
 | **Defense Tech** | +3 | MIT TR Anduril/Meta warfare glasses (May 18): Defense Tech, Surveillance/Biometrics, Data/Intelligence Industry |
 | **Semiconductor** | +6 | Cross-article: AMD, Intel, Qualcomm, Arm, Broadcom, TSMC |
+| **Infrastructure** | +1 | Motley Fool Meta Cloud (Jul 2): Micron (HBM/memory supplier) |
 | **Labor & Society** | +4 | WebProNews Dublin contractors, MIT TR Chinese workers: Labor/Unions, Chinese AI, Chinese Tech Platforms, Australia |
 | **Research & Policy** | +3 | Cross-article: Policy Research, Education/Advocacy, Cybersecurity/Research |
 | **Consumer & Misc** | +14 | Ongoing: Garmin, EssilorLuxottica, Smart Glasses Competitors, Indian Fintech, etc. |

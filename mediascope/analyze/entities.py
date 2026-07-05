@@ -198,6 +198,12 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         ],
         "regex": r"(?<!\w)((?-i:TSMC)|Taiwan Semiconductor(?:\s+Manufacturing)?)(?!\w)",
     },
+    "Micron": {
+        "aliases": [
+            "Micron", "Micron Technology", "Sanjay Mehrotra",
+        ],
+        "regex": r"(?<!\w)(Micron(?:\s+Technology)?|Sanjay Mehrotra)(?!\w)",
+    },
     "Arm": {
         "aliases": [
             "Arm", "Arm Holdings", "ARM", "Rene Haas",

@@ -4,6 +4,39 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-04 22:00 PT — Type A: Article Deep Dive — Motley Fool Meta Cloud $500B Market
+
+### Focus
+Motley Fool investment recommendation article (Jeremy Bowman, July 2, 2026) on Meta's reported cloud computing pivot ("Meta Compute"). First financial boosterism / investment recommendation genre article in the corpus.
+
+### What Changed
+
+**1. ENTITY CLUSTER: Micron (MOST SIGNIFICANT)**
+Added `Micron` entity cluster with aliases `Micron`, `Micron Technology`, `Sanjay Mehrotra`. The article explicitly names Micron as a stock impacted by Meta's cloud news — toolkit missed it entirely because no cluster existed. Cluster count: 65 → 66. METHODOLOGY.md §15 cluster count, table, and growth history updated. ARCHITECTURE.md reference count updated.
+
+**2. FRAMING SUPPRESSION: analogy_metaphor evaluative idiom filter**
+The `\blike (?:a|an|the|another|some) (?:\w+ ){0,3}\w+` pattern false-positived on "like a smart business move" and "like a no-brainer buy" — evaluative idioms, not literary similes. Added inline suppression in `detect_framing_devices()` for `like a/an [evaluative adjective]` patterns (25 evaluative adjectives: smart, good, bad, great, obvious, no-brainer, etc.). Preserves genuine simile detection.
+
+**3. ANNOTATION: Article #96**
+Full analysis at `examples/sample_output/motley_fool_meta_cloud_500b_market_2026_07_02_analysis.md`. Documents:
+- VADER compound 0.997 vs manual +0.55 — largest inflation gap in corpus (+0.447), driven by financial boosterism vocabulary
+- Investment recommendation genre as a sentiment inflation class for VADER
+- Missing framing taxonomy coverage: price_anchoring, temporal_bracketing
+- Genre detection gap: investment recommendation articles have distinct structure (buy/sell thesis, valuation anchoring, competitive benchmarking) not captured by current device taxonomy
+- QUALITY_STANDARDS.md article count: 95 → 96
+
+### Test Results
+1388 passed, 0 failed (80s runtime).
+
+### Metrics After
+- Entity clusters: 66 (was 65)
+- Annotated articles: 96 (was 95)
+- Framing device types: 69 (unchanged)
+- Total tests: 1388 (unchanged — no new test file for this article)
+- Patterns: 389 (unchanged)
+
+---
+
 ## 2026-07-04 16:00 PT — Type D: Toolkit Quality — METHODOLOGY.md Stale Tier Count Fix + Guard Test
 
 ### Focus
@@ -12719,3 +12752,17 @@ Julian Chokkattu's article on Meta's subscription tier for Ray-Ban Meta smart gl
 | Raw VADER tone | +0.686 | +0.686 |
 | Corrected tone | +0.686 | 0.0 |
 | Path fired | None | J |
+
+### 2026-07-04 21:00 PT — Type B (Journalist/Publication Research)
+**Focus:** Atlantic WaPo→Atlantic talent pipeline + MIT TR editorial updates
+**Commit:** c4ff944
+
+Changes:
+- **Atlantic editorial_changes.yaml:** +5 entries — Sophia Nguyen (WaPo→Atlantic, culture/books), Kevin Sieff (WaPo→Atlantic, 15 yrs international), Theo Balcomb (NPR→NYT→WaPo→Atlantic, co-created The Daily), Jonathan L. Fischer (WaPo→Atlantic, culture editor), Caity Weaver (NYT Magazine→Atlantic, features). Spring 2026 batch represents the most aggressive single-source WaPo poach since Bezos ownership turbulence.
+- **Atlantic profile (atlantic.yaml):** Added `talent_pipelines.wapo_to_atlantic_2025_2026` — structured documentation of 7 journalists hired from WaPo (2025-01 through 2026-04), with analytical significance for DiD analysis of institutional framing effects.
+- **MIT TR profile (mit-tech-review.yaml):** Added `editorial_partnerships` section documenting the MIT TR × Financial Times "State of AI" 6-part series (Oct 2025). 6 reporter pairings across China, energy, war, privacy, economics, and futures beats.
+- **Amy Nordrum (journalists.yaml):** Split MIT TR career into commissioning_editor (Jul 2020 – ~2024) + executive_editor promotion (~2024–present). Confirmed via EmTech AI 2026 press materials. Updated top-level notes to reflect current role and MIT TR × FT partnership leadership.
+- **Tests:** +6 new structural consistency tests (TestAtlanticPipeline: 4 tests, TestMITTechReviewPartnership: 2 tests). Updated ARCHITECTURE.md (1388 tests) and README.md (1388 tests, per-file count 87).
+
+Sources: Editor & Publisher announcements (E&P), EmTech AI 2026 (Morningstar/PR Newswire), talkingbiznews.com
+Tests: 1388 passed, 0 failed.
