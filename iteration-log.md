@@ -3,6 +3,52 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-05 01:00 PT — Type C: Ownership & Funding Deep Dive — The Atlantic / Emerson Collective
+
+### Focus
+Deep dive into Laurene Powell Jobs' governance roles, board memberships, stock price updates, and newly discovered Elemental Impact / Earthshot Ventures investment chain with Facebook's Chris Cox as LP.
+
+### What Changed
+
+**1. LPJ TITLE CLARIFICATION — "Board Chair" (MOST SIGNIFICANT)**
+Multiple authoritative sources (Stanford GSB, Wikipedia, CFR, American Academy) confirm LPJ's title at The Atlantic is "lead investor and Board Chair" — not merely individual owner. Added formal `title` field and full board memberships list (9 seats).
+
+Sources: Stanford GSB 2026 commencement program, Wikipedia, CFR bio, American Academy profile.
+
+**2. STANFORD BOARD OF TRUSTEES — OPENAI CFO CO-SERVICE (NEW CONFLICT)**
+LPJ serves on the Stanford University Board of Trustees alongside Sarah Friar, CFO of OpenAI (elected Nov 2025, term from Feb 1 2026). Added as `civic_connection` and `known_conflict` (severity 3). Creates a FOURTH distinct LPJ-OpenAI connection type:
+1. Licensing deal (May 2024)
+2. io Products equity exit ($6.5B acquisition, 2025)
+3. Atlantic Labs product collaboration
+4. Shared fiduciary board governance (Stanford)
+
+No other tracked publication owner has four relationship types with a single AI company.
+
+**3. ELEMENTAL IMPACT / EARTHSHOT VENTURES (NEW INVESTMENT)**
+LPJ chairs the board of Elemental Impact (formerly Elemental Excelerator). EC helped incubate it, rebranded with fresh $100M. Spun out Earthshot Ventures ($60M→$94M climate VC). Notable LP: Facebook's Chris Cox (former CPO, returned to Meta 2020). This is a rare cooperative financial link between EC and a senior Meta executive, complicating the clean adversarial narrative.
+
+**4. STOCK PRICE UPDATES (Jul 2026)**
+- AAPL: $294.30 (Jun 24) → $308.63 (Jul 3, 2026 close) — +4.87%. LPJ holding recalculated to ~$16.8B+.
+- DIS: $95.71 (Jun) → $99.50 (Jul 2, 2026 close). 2016-era 40.3M shares = ~$4.01B.
+- Updated all 10+ references across profile (investments, revenue_relationships, known_conflicts, notes, portfolio summary).
+
+**5. LPJ STANFORD GSB COMMENCEMENT SPEECH**
+Added Jun 13, 2026 (GSB centennial year) speech to LPJ description. Spoke about Steve Jobs, founding her company post-MBA, California, Silicon Valley.
+
+**6. TWO NEW ANALYTICAL QUESTIONS**
+- #10: Does Stanford Board co-service between LPJ and OpenAI CFO Sarah Friar create detectable editorial softening on OpenAI financial coverage?
+- #11: Does Earthshot Ventures / Chris Cox LP connection affect Atlantic coverage of Meta's climate/sustainability initiatives?
+
+### Metrics
+- Profile: 1258 → 1365 lines (+107)
+- Known conflicts: +1 (governance_link: Stanford/OpenAI CFO)
+- Civic connections: +1 (Stanford Board of Trustees)
+- Investments: +1 (Elemental Impact/Earthshot Ventures)
+- Analytical questions: +2 (#10, #11)
+- Tests: 1388 passed, 0 failed
+- Commit: a177f5b
+
+---
 ## 2026-07-05 00:00 PT — Type B: Journalist Research — Boone Ashworth (New) + Grace Huckins (Expanded)
 
 ### Focus
