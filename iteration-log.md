@@ -2,6 +2,64 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+
+## 2026-07-05 05:00 PT — Type B: Journalist/Publication Research — Jake Lahut Deep Profile
+
+**Focus:** Full career profile for Jake Lahut — Wired's first pure political reporter hire for tech-politics coverage, and one of the "Fired Four" in the Nov 2025 Condé Nast labor dispute. 129th journalist in the database.
+
+### What Changed
+
+**1. JAKE LAHUT FULL CAREER PROFILE (NEW JOURNALIST #129)**
+Complete career arc with 10 career events, education, 5 multi-publication migrations, and analytical notes:
+
+| Period | Publication | Role |
+|---|---|---|
+| Feb–Aug 2016 | The New Yorker | Research assistant/fact-checker (Mark Singer, "Trump and Me") |
+| Summer 2016 | Albany Times Union | Metro intern |
+| Jun–Aug 2017 | Politico | Breaking News/White House intern |
+| Jan–Apr 2018 | Freelance (Paris) | Fellow at Lycée International, podcaster |
+| May–Oct 2018 | Daily Gazette (Schenectady) | Breaking news/politics reporter |
+| Oct 2018–Jun 2019 | Keene Sentinel (NH) | Lead political reporter |
+| Jun 2019–Aug 2022 | Business Insider | Politics reporter (2020 election lead) |
+| Aug 2022–Oct 2024 | The Daily Beast | Campaign reporter (DeSantis/Mace scoops) |
+| Oct 2024–May 2025 | Wired (freelance) | Musk/America PAC investigative stories |
+| May–Nov 2025 | Wired (staff) | Senior writer, politics desk |
+| Nov 2025 | FIRED | "Fired Four" labor dispute |
+| Post-firing | Freelance | Sherwood News, "Straight From The Hut" newsletter, MSNBC |
+
+UNIQUE IN DATASET: Unlike most Wired hires (Gizmodo/Verge/Vice tech journalism pipeline), Lahut is a pure political reporter. His framing instincts formed in campaign trail coverage, not tech accountability journalism. Tests whether political reporters bring different adversarial framing patterns when covering tech companies.
+
+**2. EDITORIAL CHANGES CORRECTED — "FIRED FOUR" ENTRY**
+Existing Lahut entry had vague date ("2026") and minimal detail. Updated to:
+- Precise date: Nov 6, 2025
+- Full "Fired Four" names: Lahut (Wired), Jasper Lo (New Yorker), Alma Avalle (Bon Appétit), Ben Dewey (CNE)
+- CPO Stan Duncan confrontation details with TheWrap video evidence
+- NY AG Letitia James "union-busting" threat (Nov 12, 2025)
+- Settlement terms (May 27, 2026): $400K+ for three; Lahut declined, pursuing NLRB independently
+- Analytical significance for understanding Wired institutional culture
+
+**3. DISCOVERY: LAHUT FIRING CREATES NATURAL EXPERIMENT**
+His pre-firing Wired coverage vs post-firing freelance coverage of the same tech-politics nexus provides a natural experiment: if his framing was shaped by Wired's institutional voice, it should change after departure; if it was personal, it should persist. This is a rare opportunity in the DiD framework — most departures are voluntary, but Lahut's was involuntary and abrupt.
+
+### Sources
+- https://talkingbiznews.com/media-news/wired-hires-lahut-as-senior-reporter/ (hire announcement)
+- https://jakelahut.com/about (personal site, full career details)
+- https://thewrap.com/conde-nast-fires-4-employees-labor-complaint-union/ (firing)
+- https://thewrap.com/conde-nast-settles-union-fired-employees/ (settlement)
+- https://hrexecutive.com/union-workers-fired-over-hr-video-settle-with-conde-nast/ (settlement details, NLRB)
+- https://talkingbiznews.com/they-re-hiring/lahut-leaving-insider-for-the-daily-beast/ (Daily Beast hire)
+- https://talkingbiznews.com/they-re-hiring/business-insider-hires-lahut-as-politics-reporter/ (BI hire)
+- https://buzzsumo.com/profiles/journalists/jake-lahut (current bio)
+
+### Metrics
+- Tests: 1402 (unchanged — all passing after doc count updates)
+- Journalists: 128 → 129
+- Multi-pub journalists: 127 → 128
+- Auto-detected migrations: 411 → 419 (+8 from Lahut's 5 explicit + newly discovered paths)
+- Lines changed: +186/−14 across 5 files
+- Commit: `7a5a177`
+
+---
 ---
 
 ## 2026-07-05 04:00 PT — Type A: Article Deep Dive — 4-Way Cross-Outlet Zuckerberg Town Hall Comparison
