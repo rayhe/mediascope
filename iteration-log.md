@@ -2,6 +2,103 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-05 09:00 PT — Type D: Toolkit Quality — Stale Journalist Count Fix + Exhaustive Purge Guards
+
+**Focus:** EDITORIAL_HISTORIES.md had stale journalist counts on line 187 (128/127) while line 267 had the correct counts (129/128). The existing guard tests only checked that the correct count appeared *somewhere* in the doc, not that *all* references were current. Fixed the stale data and added exhaustive purge guards.
+
+### What Changed
+
+**1. EDITORIAL_HISTORIES.md STALE COUNT FIX**
+Line 187 "Starter Data" section referenced **128 journalists** with **127 multi-pub** — both stale by 1 (should be 129/128). The bottom of the same doc (line 267) had the correct counts, causing the guard tests to pass despite the inconsistency.
+- Updated: 128 → 129 journalists, 127 → 128 multi-pub
+
+**2. TWO NEW EXHAUSTIVE PURGE GUARD TESTS**
+The existing `test_editorial_histories_total_count` and `test_editorial_histories_multi_pub_count` used presence-based checks (`expected in doc`), which pass as long as the correct count appears once — ignoring stale references elsewhere in the same doc. Added two new tests:
+- `test_editorial_histories_no_stale_journalist_count`: Scans ALL `**N journalists**` references in EDITORIAL_HISTORIES.md and fails if any N ≠ current YAML count. Reports stale line numbers.
+- `test_editorial_histories_no_stale_multi_pub_count`: Scans ALL "N of these have multi-publication" and "with N having multi-publication" patterns. Fails if any N ≠ current multi-pub count.
+
+**3. README.md + ARCHITECTURE.md DESCRIPTION UPDATES**
+- `test_structural_consistency.py` test count: 91 → 93 (README table)
+- Tier count references in README description: 69/10/53/6 → 70/10/54/6 (stale from prior device additions)
+- ARCHITECTURE.md: Added "stale journalist/multi-pub count purge" to test description
+- Total test count headers: 1449 → 1451 (both README and ARCHITECTURE.md)
+
+### Metrics
+- Tests: 1449 → 1451 (all passing)
+- New guard tests: 2 (exhaustive journalist count purge)
+- Stale references fixed: 3 (128→129, 127→128, 69/10/53/6→70/10/54/6)
+- Guard gap class: presence-based → exhaustive-scan (prevents recurrence when journalists are added)
+
+### Sources
+No external sources — internal quality audit.
+
+---
+## 2026-07-05 08:00 PT — Type C: Ownership & Funding Deep Dive — SPUR Telemetry Standard + BBC Revolving Door + UK Copyright Policy
+
+**Focus:** Three significant Guardian ownership/funding findings: (1) SPUR Content Telemetry standard published for public comment on June 12, 2026 — with a critical self-reporting verification gap; (2) BBC-SPUR co-founding revolving door deepened by Brittin's appointment as BBC DG; (3) UK government withdrawal from AI copyright legislation strengthens the SPUR/licensing-first approach.
+
+### What Changed
+
+**1. SPUR CONTENT TELEMETRY STANDARD — PUBLISHED (MOST SIGNIFICANT)**
+The SPUR telemetry standard was published for public comment on June 12, 2026 — the profile previously said it was "expected soon." Full technical details now documented:
+- Two GitHub repos: `SPUR-Coalition/telemetry` (Apache 2.0) + `SPUR-Coalition/telemetry-profile` (CC BY-SA 4.0)
+- v0.1 preview specification
+- Technical lead: Alex Springer (alex@spurcoalition.org)
+- Public comment period: June 12 – July 10, 2026 (**closing in 5 days**)
+- Revised versions due: August 10, 2026
+- Five event types: content_retrieved → content_grounded → content_cited → content_displayed → content_engaged
+- SPUR Compliant tier: event-level delivery, real-time delivery, publisher-designated endpoint
+- Related protocols: Really Simple Licensing (RSL), peek-then-pay, IAB CoMP, x402
+
+**CRITICAL FINDING — SELF-REPORTING VERIFICATION GAP:**
+Grounding, citation, display, and engagement events are **self-reported by the AI agent** — the same party that may owe compensation under a license. Only retrieval events have an independent corroboration mechanism (Content-Telemetry-ID header matching between agent and origin server). Signed events and verifiable credentials are deferred to a future version. The spec explicitly acknowledges: "Signing, even once required, would prove who reported an event, not that the event is true or that all qualifying events were reported." The Guardian co-developed this standard while simultaneously participating in Google's News AI pilot, which presumably does not require this telemetry — sharpening the dual positioning tension documented in hypothesis #9.
+
+**2. BBC-SPUR REVOLVING DOOR (NEW CONFLICT ENTRY)**
+The BBC is a SPUR founding member (Tim Davie signed the founding letter, Feb 2026). But Brittin replaced Davie as BBC DG on May 18, 2026. Brittin came to the BBC FROM the GMG board (where he was Senior Independent Director until Mar 24, 2026). This creates a governance pathway connecting two SPUR founding members through a former Google executive:
+
+Google EMEA President (18 years) → GMG SID (~2025-Mar 2026) → BBC DG (May 2026+)
+
+Brittin's AI views documented from Implement AI Podcast (#81, ~May 2026):
+- AI experiencing a "vertical takeoff moment"
+- "Biggest barriers to AI implementation are cultural, not technical"
+- "Start small, experiment, and move now"
+- TVBEurope analysis: "the BBC has been super conservative on adopting AI—expect that to change big time under Brittin"
+
+Added as new `revolving_door` known conflict (severity 2) and new `bbc_spur_revolving_door` analytical section in the SPUR coalition entry.
+
+**3. UK COPYRIGHT POLICY SHIFT — FOUR-LAYER ENFORCEMENT STACK COMPLETE**
+UK government dropped its preferred option for a broad copyright exception with opt-out for AI training (~March 2026). Minister Liz Kendall: "the Government no longer has a preferred option." This policy vacuum benefits the licensing-first approach that SPUR advocates. Four-layer enforcement stack now documented:
+1. **Regulatory:** UK CMA opt-out rights (June 2, 2026)
+2. **Infrastructure:** Cloudflare default block on mixed-use crawlers (effective Sep 15, 2026)
+3. **Standards:** SPUR Content Telemetry standard (published Jun 12, 2026)
+4. **Policy:** UK government withdrawal from legislation → licensing-by-default
+
+The Guardian is positioned at or invested in every layer — the most structurally complete position of any tracked publication.
+
+**4. TWO NEW TESTABLE HYPOTHESES (#16, #17)**
+- #16: Does Guardian coverage of SPUR telemetry acknowledge the self-reporting verification gap, or frame it as a strong enforcement mechanism (which serves its institutional interest)?
+- #17: Does BBC AI content strategy change under Brittin vs Davie? Monitor for BBC bilateral AI licensing deals that bypass SPUR's collective framework.
+
+### Sources
+- https://www.spurcoalition.org/updates/spur-telemetry-standard-published-for-public-comment-the-spur-coalition
+- https://github.com/SPUR-Coalition/telemetry (spec v0.1, 5 event types, open questions)
+- https://github.com/SPUR-Coalition/telemetry-profile (Compliant tier, CC BY-SA 4.0)
+- https://www.youtube.com/watch?v=f5osAEH-rxk (Implement AI Podcast #81, Brittin AI views)
+- https://tvbeurope.com/business/why-the-bbc-appointed-a-tech-bro-as-director-general
+- https://screendaily.com/news/uk-government-changes-position-on-ai-copyright-training-in-response-to-industry-concerns/5202147.article
+- https://reuters.com/technology/uk-examine-labelling-ai-content-among-wider-copyright-reforms-2026-03-26/
+- https://www.inma.org/blogs/product-initiative/post.cfm/uk-publishers-form-spur-as-global-ai-standards-movement-accelerates (RSL cross-reference)
+
+### Metrics
+- Tests: 1449 (unchanged — all passing)
+- Profile: 1506 → 1682 lines (+176)
+- Known conflicts: +1 (BBC-SPUR revolving door, severity 2)
+- Testable hypotheses: 15 → 17 (+2: #16 SPUR self-reporting, #17 BBC-Brittin AI policy)
+- SPUR telemetry: fully documented (5 events, design principles, open questions, related protocols, SPUR profile requirements)
+- New analytical sections: 3 (uk_copyright_policy_shift, bbc_spur_revolving_door, telemetry_standard expanded)
+- Commit: `25a8e01`
+
+---
 
 ## 2026-07-05 05:00 PT — Type B: Journalist/Publication Research — Jake Lahut Deep Profile
 

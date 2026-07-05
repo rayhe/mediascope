@@ -1715,6 +1715,48 @@ class TestJournalistCountConsistency:
             f"Searched for '{expected_phrase}' and '{alt_phrase}'."
         )
 
+    def test_editorial_histories_no_stale_journalist_count(self):
+        """All '**N journalists**' references in EDITORIAL_HISTORIES.md must use the current count."""
+        total, _ = self._load_yaml_counts()
+        doc = (_REPO_ROOT / "docs" / "EDITORIAL_HISTORIES.md").read_text()
+        import re
+        stale = []
+        for m in re.finditer(r"\*\*(\d+)\s+journalists?\*\*", doc):
+            stated = int(m.group(1))
+            if stated != total:
+                # Get line number for context
+                line_no = doc[:m.start()].count("\n") + 1
+                stale.append(f"  line {line_no}: **{stated} journalists** (should be {total})")
+        assert not stale, (
+            f"EDITORIAL_HISTORIES.md has stale journalist count(s):\n"
+            + "\n".join(stale)
+            + f"\nAll references should use {total} to match YAML data."
+        )
+
+    def test_editorial_histories_no_stale_multi_pub_count(self):
+        """All multi-pub references in EDITORIAL_HISTORIES.md must use the current count."""
+        _, multi_pub = self._load_yaml_counts()
+        doc = (_REPO_ROOT / "docs" / "EDITORIAL_HISTORIES.md").read_text()
+        import re
+        stale = []
+        # Check "N of these have multi-publication" pattern
+        for m in re.finditer(r"(\d+)\s+of these have multi-publication", doc):
+            stated = int(m.group(1))
+            if stated != multi_pub:
+                line_no = doc[:m.start()].count("\n") + 1
+                stale.append(f"  line {line_no}: '{stated} of these' (should be {multi_pub})")
+        # Check "with N having multi-publication" pattern
+        for m in re.finditer(r"with\s+(\d+)\s+having multi-publication", doc):
+            stated = int(m.group(1))
+            if stated != multi_pub:
+                line_no = doc[:m.start()].count("\n") + 1
+                stale.append(f"  line {line_no}: 'with {stated} having' (should be {multi_pub})")
+        assert not stale, (
+            f"EDITORIAL_HISTORIES.md has stale multi-pub count(s):\n"
+            + "\n".join(stale)
+            + f"\nAll references should use {multi_pub} to match YAML data."
+        )
+
     def test_careers_demo_count(self):
         """careers_demo.py docstring must reference correct journalist count."""
         total, _ = self._load_yaml_counts()
