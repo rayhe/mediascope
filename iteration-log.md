@@ -3,6 +3,31 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+
+## 2026-07-05 03:00 PT — Type D: Toolkit Quality & Documentation
+
+**Focus:** Sync Path J correction path references across all peripheral docs and add guard tests to prevent future drift.
+
+**Problem:** Path J (Expert-Driven Structural Critique) was added to `sentiment.py`, `METHODOLOGY.md`, and `ARCHITECTURE.md` in a prior iteration, but 6+ references in peripheral files (README.md, example demos, test docstrings) still said "9 correction paths (A-I)" instead of "10 correction paths (A-J)."
+
+**Changes (5 files, +50/−10):**
+- **README.md**: Updated framing_correction_demo description "9 → 10", "A-I → A-J"; fixed per-file test count for test_structural_consistency.py (92→91 to match def-count method); updated total test count 1389→1392
+- **docs/ARCHITECTURE.md**: Updated total test count 1389→1392; updated test_structural_consistency.py scope description
+- **examples/framing_correction_demo.py**: Fixed summary print "Nine → Ten", "A-I → A-J"; added 2 missing correction path descriptions; updated stale test count 1253→1392
+- **examples/sarcastic_editorial_demo.py**: Updated "1353 regression tests covering all 9" → "1392 regression tests covering all 10"
+- **tests/test_structural_consistency.py**: Fixed class/test docstrings "9 → 10"; added 3 new guard tests:
+  - `test_readme_correction_path_count` — ensures README references "10 correction paths"
+  - `test_framing_demo_correction_path_count` — ensures framing_correction_demo.py references "Ten correction paths"
+  - `test_sarcastic_demo_correction_path_count` — ensures sarcastic_editorial_demo.py references "all 10"
+
+**Metrics:**
+- Tests: 1389 → 1392 (all passing)
+- Correction paths documented consistently: 9 (stale) → 10 (A-J) everywhere
+- New guard tests: 3 (prevent future drift when paths are added)
+
+**Commit:** `0356108` — Sync Path J (A-J) references across all docs + add guard tests
+
+---
 ## 2026-07-05 01:00 PT — Type C: Ownership & Funding Deep Dive — The Atlantic / Emerson Collective
 
 ### Focus
