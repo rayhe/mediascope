@@ -2,6 +2,56 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-05 14:00 PT — Type C: Ownership & Funding Deep Dive — Advance Voting Power Concentration
+
+### Focus
+Advance Publications' Reddit voting power recalculation using March 31, 2026 proxy share counts. Key discovery: automatic voting power concentration as insiders sell shares.
+
+### Key Discovery: Voting Power REBOUNDING Without Share Purchases
+
+Advance's Reddit voting power has rebounded from 62.0% (Mar 31, 2025 proxy) to **65.2%** (Mar 31, 2026 proxy) — WITHOUT Advance acquiring a single additional share.
+
+**Mechanism:** Other Class B holders (CEO Huffman, COO Wong, Tencent, other insiders) converted 4.58M Class B shares to Class A for open-market sale. Total Class B fell from 55.1M to 50.5M. Since Advance's 42.2M Class B shares remained constant, their fraction of total Class B rose from 76.5% to **83.5%**.
+
+**Voting power calculation (Mar 31, 2026 data):**
+- Advance votes: (42,191,092 × 10) + 16,182 = 421,927,102
+- Total votes: (50,543,398 × 10) + 141,867,916 = 647,301,896
+- Advance voting power: 421,927,102 / 647,301,896 = **65.17%**
+
+**Trend: 65.2% (2024) → 62.0% (2025) → 65.2% (2026)**
+
+This is an automatic concentration effect: every time a Reddit insider sells stock (converting Class B → Class A), Advance's voting power increases. This is the opposite of what one might expect from post-IPO dilution — and it means Advance's governance control over a direct Meta competitor is STRENGTHENING over time.
+
+### Other Changes
+
+1. **2026 Annual Meeting results (Jun 8, 2026):** All 8 directors re-elected including Steven O. Newhouse (NCG Chair) and Robert A. Sauerberg Jr. (Vice Chair). KPMG LLP ratified. Executive comp approved. Both Advance-affiliated directors received 1,714 Class A RSU grants.
+
+2. **Reddit insider selling detail:** CEO Huffman sold 36K shares ($170-$182), COO Wong sold 39K shares ($176-$182), CTO Slowe sold 15.5K shares ($150.67) — all under 10b5-1 plans. These Class B→Class A conversions directly contributed to Advance's voting power concentration.
+
+3. **Market data refresh:** Updated to Jul 3, 2026 close ($194.67). Forward P/E 40.28 (vs 55.59 trailing). Reddit now ~60% of Advance's public equity (~$8.2B of ~$13.6B). YTD performance: down ~31% from 52-week high.
+
+4. **New conflict entry:** `voting_power_concentration` (severity 5) — documenting the automatic concentration effect with full voting arithmetic.
+
+### Sources
+- StockTitan RDDT SEC filing tracker (Jul 2, 2026): https://www.stocktitan.net/sec-filings/RDDT/
+- Reddit 8-K annual meeting results (Jun 8, 2026)
+- SEC EDGAR: Steven O. Newhouse Form 4 (Oct 5, 2025 transaction, filed Jan 2026)
+- Reddit 2026 DEF 14A proxy statement (share counts as of Mar 31, 2026)
+- MarketBeat RDDT institutional ownership data (Jul 5)
+- Insider Monkey: RDDT Q1 2026 AI licensing analysis (Jul 3)
+- Adweek: Condé Nast events revenue +40% (May 20, 2026)
+- HR Executive / TheWrap: Condé Nast union settlement details (May 27, 2026)
+
+### Stats
+- Tests: 1,454 (all passing, unchanged)
+- Wired profile: 1,774 → 1,810 lines (+36 net)
+- Voting power references: 5 occurrences updated (62.0% → 65.2%)
+- Class B fraction: 76.5% → 83.5%
+- New conflict entries: 1 (voting_power_concentration, severity 5)
+- Commit: `14985d5`
+
+---
+
 ## 2026-07-05 13:00 PT — Type B: Journalist/Publication Research — Leah Feiger Deep Profile
 
 **Focus:** Full career profile expansion for Leah Feiger — Wired's first-ever politics editor, now Director of Politics & Science. Previously had only 3 career events; expanded to 8 with education, multi-pub migrations, and comprehensive analytical notes.
