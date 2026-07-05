@@ -13331,3 +13331,31 @@ Atlantic editorial_changes gap fill — Aug 2025, Oct 2025, Dec 2025, and Jan 20
 - Editorial changes: 119 entries (was 113, +6)
 - editorial_changes.yaml: 1,266 lines (was 1,183, +83)
 - 0 regressions
+
+## 2026-07-05 12:00 PT — Type B: Journalist/Publication Research
+
+### Focus
+MIT Technology Review journalist expansion + Isabella Ward profile deepening.
+
+### Research Conducted
+- Isabella Ward: Muck Rack profile, TalkingBizNews hire announcement (June 3, 2026), DIARY directory, Bloomberg bylines (quantum computing, Google Willow, JPMorgan, Goldman)
+- James Temple: RocketReach (education), TheOrg (career history), Muck Rack, TechnologyReview.com author page (436+ posts)
+- Michelle Kim: MIT Technology Review author page, Muck Rack articles, Tarbell Center fellowship confirmation
+
+### Journalist Additions/Expansions
+1. **Isabella Ward** — Expanded from 2 → 3 career entries. Added Imperial College London MSci Physics education + John Schofield Trust 2025 fellowship details.
+2. **James Temple** (NEW) — 5 career entries: Ohio University BS Journalism (1993-97) → SF Chronicle columnist (~2007-~2013) → Recode deputy managing editor (~2014-~2015) → The Verge senior director (~2015-~2018) → MIT Tech Review senior climate/energy editor (~2018-present, 436+ posts). Notable for SF Chronicle→digital media→MIT TR arc.
+3. **Michelle Kim** (NEW) — 4 career entries: Corporate law (~2017-~2020) → Foreign Policy contributor (~2020-~2022) → Rest of World labor/tech reporter (~2022-~2024) → MIT Tech Review AI reporter (~2024-present). Tarbell Center fellowship. Notable career-switch: practicing lawyer → tech journalism.
+
+### Files Changed
+- `profiles/careers/journalists.yaml` — +2 journalists, +1 expansion (Isabella Ward)
+- `README.md` — updated counts (131 journalists, 425 migrations)
+- `docs/EDITORIAL_HISTORIES.md` — updated counts (131 journalists, 130 multi-pub)
+- `examples/careers_demo.py` — updated docstring count (131)
+
+### Stats
+- Tests: 1,454 passed (0 failed), unchanged
+- Journalists: 131 (was 129, +2)
+- Multi-pub: 130 (was 128, +2)
+- Auto-detected migrations: 425 (was 419, +6)
+- 0 regressions
