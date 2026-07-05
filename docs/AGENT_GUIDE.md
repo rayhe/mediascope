@@ -298,6 +298,23 @@ if meta_scores and peer_scores:
     print(f"Significant: {result.is_significant}")
 ```
 
+## Financial Journalism: Known VADER Inflation
+
+When analyzing financial/investor journalism (Motley Fool, Barron's, MarketWatch, Seeking Alpha, etc.), be aware that VADER systematically inflates scores by 0.3–0.5 points. This is documented in detail in [METHODOLOGY.md §16](METHODOLOGY.md#16-financial-journalism-sentiment-bias).
+
+**Quick diagnostic:** If a financial article scores composite > +0.50 AND has ≥3 adversarial framing devices, trust the framing devices over the sentiment score. The editorial stance is likely more negative than the composite indicates.
+
+**Recommended approach for financial articles:**
+
+1. Run standard `analyze_composite()` + `detect_framing_devices()`
+2. Check `classify_topic()` for `financial_results` confidence ≥ 0.4
+3. If financial AND composite > 0.50 AND adversarial devices ≥ 3:
+   - Report composite score with a caveat about financial genre inflation
+   - Weight framing device types (`financial_reassurance`, `competitive_deficit`, `ironic_quotation`, `editorial_deflation`) as the primary editorial stance signal
+   - Use `headline_body_alignment` < 0.4 as confirmation of bearish editorial stance
+
+See [`examples/financial_journalism_demo.py`](../examples/financial_journalism_demo.py) for a worked example.
+
 ## Function Calling Schema
 
 For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the schemas:

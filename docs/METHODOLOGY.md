@@ -689,7 +689,9 @@ When evaluating articles from target publications, MediaScope applies a quality 
 
 ### Known Biases in the Tool Itself
 - Keyword-based entity detection may miss oblique references
-- Sentiment models have known biases toward certain writing styles
+- Sentiment models have known biases toward certain writing styles (see §16 for the financial journalism inflation class specifically)
+- **VADER financial journalism inflation (0.3–0.5 points):** Investment recommendation articles, analyst-debate formats, and financial opinion pieces systematically inflate VADER compound scores by 0.3–0.5 points due to boosterism vocabulary ("strong buy," "upside potential," "cash cow"), financial reassurance language ("fears ease," "soothe concerns"), and corporate PR quotes containing forward-looking positive language. None of the existing correction paths (A–J) fire on these articles because they typically lack the negative agency signal (< −0.3) that most paths require. See §16 for the full analysis and interim workarounds.
+- **Topic classification density normalization:** Articles that span multiple topic buckets may receive inflated topic confidence scores in shorter articles where a few keywords constitute a larger fraction of total text. Topic density (keywords per 100 words) is not currently normalized against article length.
 - English-language only in current version
 - RSS feeds may not capture all articles (paywalled content, newsletters)
 
@@ -1066,3 +1068,121 @@ entities = detect_entities(text, clusters=custom_clusters)
 ```
 
 See [ADDING_PUBLICATIONS.md](ADDING_PUBLICATIONS.md) for the full guide to adding entity clusters in publication profiles.
+
+## 16. Financial Journalism Sentiment Bias
+
+### 16.1 The Problem
+
+Financial journalism — investment recommendation articles, analyst-debate pieces, and stock-focused opinion columns — represents a systematic failure class for MediaScope's sentiment pipeline. VADER compound scores on financial articles are inflated by **0.3–0.5 points** compared to manual assessment, making this the largest documented per-genre scoring gap in the toolkit.
+
+This is distinct from the adversarial journalism problem documented in §9. Adversarial journalism scores too *positive* because investigative prose is lexically measured; financial journalism scores too positive because **the genre's standard vocabulary is lexically positive regardless of editorial stance**. A bearish article about Meta's AI failures still contains "revenue," "growth," "opportunity," "upside," "potential," and "market" — all VADER-positive words that appear because the article *discusses* financial concepts, not because the editorial stance is positive.
+
+### 16.2 Three Inflation Mechanisms
+
+#### Mechanism 1: Investment Recommendation Boosterism
+
+Investment recommendation articles (Motley Fool, Seeking Alpha, Barron's) use genre-conventional positive vocabulary that VADER treats at face value:
+
+| Genre Term | VADER Reading | Actual Function |
+|---|---|---|
+| "strong buy" / "no-brainer buy" | Strongly positive | Formulaic recommendation language |
+| "huge cash cow" / "bonanza" | Strongly positive | Standard financial metaphor |
+| "bumper profits" / "attractive valuation" | Strongly positive | Industry jargon |
+| "competitive advantage" / "hit the ground running" | Positive | Boilerplate corporate assessment |
+| "upside potential" / "well positioned" | Positive | Hedged forward-looking language |
+
+A human reader discounts these as genre conventions — they appear in virtually every buy-thesis article regardless of the underlying assessment's strength. VADER sums them at face value, producing compound scores approaching +1.0.
+
+**Validated failure case:** Motley Fool "Meta Is Finally Entering This High-Margin $500 Billion Market" (Jul 2, 2026) — VADER compound **0.997** vs manual assessment **+0.55**. Gap: **+0.447**, the largest observed in the corpus. The article IS positive (genuine buy recommendation), but VADER's near-maximum score exaggerates the bullishness by almost 50%.
+
+#### Mechanism 2: Financial Reassurance Language
+
+Financial analysis pieces that cover negative news often reframe it through a "fears easing" or "concerns abating" lens that registers as positive on VADER:
+
+| Reassurance Pattern | VADER Reading | Actual Function |
+|---|---|---|
+| "fears ease" / "concerns abate" | Positive (relief) | Headline framing: positive main clause wraps negative subordinate |
+| "could soothe concerns" | Positive (comfort) | Editorial pivot: converts bad news into buying signal |
+| "investors shrugged off" / "market took comfort" | Positive (resilience) | Normalizes negative development as already-priced-in |
+| "expects a more significant payoff" | Positive (optimism) | Forward-looking promotional language from sources |
+
+The underlying news IS negative (AI agent disappointment, strategic failure, overspending), but the financial analysis frame converts operational negatives into market-neutral or market-positive signals.
+
+**Validated failure case:** Barron's "Meta AI Fears Ease Despite Zuckerberg's Disappointment in Agents" (Jul 3, 2026) — Toolkit composite **0.574** vs manual assessment **−0.15 to −0.20**. Gap: **~0.75 points**. The article's central move — converting Zuckerberg's admission of AI agent disappointment into an "fears easing" investor comfort narrative via Alexandr Wang's promotional X post — is invisible to lexical sentiment because "soothe" and "ease" are lexically positive words.
+
+#### Mechanism 3: Analyst-Debate Format Neutralization
+
+Financial articles frequently present bearish and bullish analyst views side by side. The bullish quotes contain strongly positive financial vocabulary; the bearish quotes contain hedged, conditional language that VADER reads as neutral:
+
+| Bearish Quote Style | VADER Reading | Problem |
+|---|---|---|
+| "giving up on frontier AI" | Neutral-negative | Hedged — "giving up on" doesn't trigger VADER strongly |
+| "could be overbuilt" | Neutral | Conditional hedge negates negative signal |
+| "hadn't accelerated as forecast" | Neutral | Past-tense conditional with no VADER-negative words |
+| "lagged behind competitors" | Weak negative | "Lagged" is weakly negative in VADER |
+
+Meanwhile, the bullish quotes pack VADER-positive words: "rational," "significant payoff," "strong demand," "growth opportunity."
+
+**Validated failure case:** MarketWatch "Is Meta 'giving up' on cutting-edge AI?" (Jul 1, 2026) — VADER compound **0.9898** vs manual **−0.15**. Gap: **~1.14 points**. The editorial framing consistently favors the bearish interpretation (scare-quote "giving up" in headline, "throwing in the towel" in lead, "beaten down" stock description), but VADER reads the balanced analyst debate as overwhelmingly positive because the bullish vocabulary is lexically stronger.
+
+### 16.3 Why Existing Correction Paths Don't Fire
+
+The ten correction paths (§9.2, Paths A–J) were designed for editorial and investigative journalism. They require specific combinations of:
+
+| Signal | Typical in Investigative | Typical in Financial |
+|---|---|---|
+| Agency attribution < −0.3 | ✅ Entity framed as passive target | ❌ Entity is active agent (doing deals, launching products, reporting earnings) |
+| Adversarial framing devices ≥ 3 | ✅ Loaded language, emotional appeal, etc. | ⚠️ Some devices present (ironic_quotation, competitive_deficit) but often fewer |
+| Emotional intensity ≥ 0.5 | ✅ Workplace morale, privacy, child safety | ❌ Financial vocabulary is analytical, not emotional |
+
+Financial articles typically land in a "dead zone" where:
+- Agency is **neutral to positive** (0.0 to +0.3) — the company IS actively doing things
+- Adversarial device count is **moderate** (2–5) — not enough for most correction thresholds
+- Emotional intensity is **low to moderate** (0.1–0.4) — financial vocabulary lacks the emotional charge that triggers correction
+
+This produces composites of **+0.50 to +0.70** on articles manually assessed at **−0.25 to +0.55**, with the largest gaps occurring on bearish financial analysis pieces.
+
+### 16.4 Quantified Gap Summary
+
+| Article | Publication | Genre | VADER | Composite | Manual | Gap (Composite − Manual) |
+|---|---|---|---|---|---|---|
+| Meta Cloud $500B Market | Motley Fool | Buy recommendation | 0.997 | 0.674 | +0.55 | +0.12 |
+| Meta Shows Urgency | Barchart | Investor opinion | 0.995 | 0.645 | ~−0.10* | ~+0.75 |
+| Meta "giving up" on AI? | MarketWatch | Analyst debate | 0.990 | 0.632 | −0.15 | +0.78 |
+| Meta AI Fears Ease | Barron's | Financial analysis | — | 0.574 | −0.18 | +0.75 |
+
+*Barchart manual assessment estimated from editorial device density and cautionary framing.
+
+**Pattern:** Genuinely positive articles (Motley Fool buy rec) show moderate inflation (+0.12). Bearish or ambivalent articles (MarketWatch, Barron's, Barchart) show severe inflation (+0.75–0.78). The composite pipeline partially corrects the VADER input but cannot reach accuracy without a financial-genre-specific path.
+
+### 16.5 Interim Recommendations for Analysts
+
+Until a dedicated financial journalism correction path is implemented:
+
+1. **Flag financial-genre articles.** Articles matching financial topic classification (`financial_results` ≥ 0.4) with speculative language ratio ≥ 0.3 and VADER compound ≥ 0.9 should be flagged as potentially inflated.
+
+2. **Use headline-body alignment as a diagnostic.** Financial articles with bearish editorial framing typically show low `headline_body_alignment` (< 0.4) because the headline is more negative than the VADER-measured body. A low alignment score on a high-VADER article is a strong signal of the financial inflation problem.
+
+3. **Weight framing devices over sentiment.** For financial articles, the presence of `financial_reassurance`, `competitive_deficit`, `editorial_deflation`, `ironic_quotation`, and `kicker_framing` devices is more informative than the composite sentiment score. A financial article with 5+ adversarial devices and a +0.65 composite score is almost certainly negative in editorial stance.
+
+4. **Cross-compare with wire-service baseline.** When the same event is covered by both a financial publication and a wire service (Reuters, AP), the wire-service score provides the neutral baseline. The financial publication's deviation from the wire baseline — combined with framing device differential — isolates the editorial contribution more reliably than absolute sentiment scoring.
+
+5. **Report both scores.** When presenting financial article analysis, always report the composite score alongside the framing device count and types. The framing-based assessment is more reliable than the sentiment score for this genre.
+
+### 16.6 Future Work: Path K (Financial Genre Correction)
+
+A potential Path K correction for financial journalism would fire on:
+
+| Signal | Threshold | Rationale |
+|---|---|---|
+| Financial topic | `financial_results` confidence ≥ 0.4 | Identifies genre |
+| VADER compound | ≥ 0.85 | High positive inflation signal |
+| Speculative language ratio | ≥ 0.25 | Financial hedging and forward-looking language |
+| Headline-body alignment | < 0.4 | Headline more negative than VADER-measured body |
+| Adversarial framing devices | ≥ 2 | Editorial stance signal (lower threshold than investigative paths) |
+
+The blend would use headline sentiment as an anchor (financial headlines are more transparent about editorial stance than bodies) combined with framing device density, producing an estimate weighted toward the reader's likely takeaway rather than VADER's lexical reading.
+
+**Design constraint:** Path K must not over-correct genuinely positive financial coverage (e.g., Motley Fool buy recommendations where the article IS bullish). The headline-body alignment threshold (< 0.4) serves as the guard — genuinely positive articles have aligned headlines and bodies, while editorially negative articles masked by financial vocabulary show the telltale headline-body divergence.
+
+**Validation requirement:** Path K should be validated against all 4 financial articles in the annotated corpus before deployment, plus at least 3 additional financial articles from different publications (Seeking Alpha, Investor's Business Daily, Bloomberg Opinion) to ensure cross-publication generalization.
