@@ -1,0 +1,47 @@
+Meta CEO sends warning on its AI goal before earnings - TheStreet
+
+By Silin Chen and Celine Sun
+Published: July 4, 2026
+Source: https://www.thestreet.com/investing/stocks/zuckerberg-meta-ai-reorganization-goals-havent-come-to-fruition
+
+Shares of Meta Platforms (META) have struggled in 2026, despite the company's aggressive push into artificial intelligence.
+
+The stock is down 11.7% year to date through July 2, trailing the S&P 500's roughly 9% gain over the same period.
+
+On July 2, Meta's CEO Mark Zuckerberg acknowledged that the company's AI reorganization has not delivered the progress executives had hoped for, according to a recording heard by Reuters.
+
+Zuckerberg told employees during an internal town hall that Meta's AI agents have developed more slowly than expected and admitted the company's restructuring has fallen short so far.
+
+"The trajectory of the agentic development over at least the last four months hasn't really accelerated in the way that we expected," Zuckerberg said.
+
+Zuckerberg added that Meta's bets on its new organizational structure "haven't come to fruition yet." He was referring to AI agents, automated systems that can execute tasks on behalf of a user.
+
+He also acknowledged that the company's reorganization, which included major layoffs, "was not as 'clean' as it could have been" and said executives misjudged the timing of the changes.
+
+The restructuring included cutting about 10% of Meta's workforce and reassigning roughly 7,000 employees to AI-focused teams in May as the company shifted resources toward artificial intelligence.
+
+Despite the slower progress, Zuckerberg said he expects Meta to begin seeing more meaningful returns from its AI investments within the next three to six months. He also noted that executives were "super optimistic" earlier this year about AI coding tools such as Anthropic's Claude Code.
+
+Meta is expected to spend as much as $145 billion on AI infrastructure this year, making it one of the biggest AI investors among Big Tech's more than $700 billion spending.
+
+Meta reported first-quarter results on April 29 that beat Wall Street expectations.
+
+The social media giant earned adjusted earnings per share of $7.31, topping estimates of $6.79. Revenue climbed 33% year over year to $56.31 billion, ahead of the $55.45 billion consensus and marking Meta's fastest revenue growth since 2021.
+
+However, investors focused on slowing user growth and higher AI spending.
+
+Daily active people reached 3.56 billion during the quarter, up 4% from a year ago but below analysts' expectations of 3.62 billion. Meta attributed the shortfall to internet disruptions in Iran and restrictions on WhatsApp access in Russia.
+
+Capital expenditures totaled $19.84 billion for the quarter, below Wall Street estimates of $27.57 billion. Still, Meta raised its full-year capital expenditure outlook to $125 billion to $145 billion from its previous forecast of $115 billion to $135 billion.
+
+"This reflects our expectations for higher component pricing this year and, to a lesser extent, additional data center costs to support future year capacity," Meta said in an announcement.
+
+Analysts remain bullish on Meta stock
+
+Despite the stock's underperformance this year, some Wall Street analysts remain optimistic.
+
+On July 2, Wells Fargo analyst Ken Gawrelski raised his price target on Meta stock to $767 from $765, maintaining an overweight rating, The Fly reported.
+
+With Meta set to report earnings later this month, investors will be watching whether the company's AI investments begin to show results. Ahead of the report, the analyst expects "another quarter of robust ad growth and an in-line Q3 revenue guide."
+
+Wells Fargo also expects Meta to reaffirm its plans to continue spending aggressively on AI capacity while potentially highlighting opportunities to lease excess computing capacity. Overall, the firm said it sees "an improving second half of the year catalyst path."

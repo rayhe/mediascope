@@ -207,7 +207,7 @@ Every article analysis that introduces a toolkit correction must include:
 4. **Gap analysis** — why the gap exists and which specific framing devices or detection failures caused it
 5. **Regression tests** — at least one test per correction to prevent future regressions
 
-This ensures the correction pipeline is validated against real articles, not synthetic examples. All 99 annotated articles in `examples/sample_output/` follow this pattern.
+This ensures the correction pipeline is validated against real articles, not synthetic examples. All 100 annotated articles in `examples/sample_output/` follow this pattern.
 
 ## 8. Emotional Language Validation
 
@@ -347,7 +347,7 @@ These comparisons have dedicated cross-analysis documents with side-by-side metr
 |---|---|---|---|---|
 | MCI data exposure (Jun 22) | Wired (−0.60) vs Reuters (−0.10) | 0.50 | 7 vs 1 | `wired_vs_reuters_mci_data_exposure_2026_06_22_cross_analysis.md` |
 | Glasses launch (Jun 23) | Wired (−0.15) vs Gizmodo (+0.10) | 0.25 | 10 vs 0 | `gizmodo_vs_wired_glasses_launch_2026_06_23_analysis.md` |
-| Zuckerberg town hall (Jul 2–3) | Reuters (−0.06) vs TechCrunch (−0.05) vs Barron's (−0.20) vs PYMNTS (+0.60) | 0.80 | 6 vs 6 vs 4 vs 6 | `town_hall_4way_cross_analysis_2026_07_02.md` |
+| Zuckerberg town hall (Jul 2–4) | Reuters (−0.06) vs TechCrunch (−0.05) vs Barron's (−0.20) vs PYMNTS (+0.60) vs TheStreet (−0.15 manual, +0.98 VADER) | 1.23 | 6 vs 6 vs 4 vs 6 vs 11 | `town_hall_4way_cross_analysis_2026_07_02.md`, `thestreet_meta_ai_warning_earnings_2026_07_04_analysis.md` |
 
 #### Tier 2: Same-Event Article Clusters
 

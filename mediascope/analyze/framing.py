@@ -5145,6 +5145,28 @@ _FINANCIAL_REASSURANCE_PATTERNS: list[re.Pattern] = [
         r"investor (?:fears?|concerns?|worries?))\b",
         re.IGNORECASE,
     ),
+    # "remain bullish/optimistic" — analyst stance language (TheStreet Jul 2026)
+    re.compile(
+        r"\b(?:analysts?|investors?|the (?:street|market|firm))\s+"
+        r"(?:remain|remains?|stayed?|continued? to be|are|is)\s+"
+        r"(?:bullish|optimistic|positive|upbeat|constructive|"
+        r"overweight|confident)\b",
+        re.IGNORECASE,
+    ),
+    # "raised/raised his price target" — price target as implicit endorsement
+    re.compile(
+        r"\b(?:raised?|lifted|boosted|hiked|increased?|bumped)\s+"
+        r"(?:his|her|their|the|its|a)?\s*"
+        r"(?:price\s+)?target\b",
+        re.IGNORECASE,
+    ),
+    # "improving ... catalyst/outlook/path" — forward-looking analyst optimism
+    re.compile(
+        r"\b(?:improving|improved|better|stronger|more favorable)\s+"
+        r"(?:\w+\s+){0,4}"
+        r"(?:catalyst|outlook|path|trajectory|backdrop|setup|dynamics)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["financial_reassurance"] = _FINANCIAL_REASSURANCE_PATTERNS
@@ -5201,6 +5223,79 @@ _COMPETITIVE_POSITIONING_PATTERNS: list[re.Pattern] = [
     ),
 ]
 _DEVICE_PATTERNS["competitive_positioning"] = _COMPETITIVE_POSITIONING_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Marginal endorsement: analyst action of negligible magnitude presented
+# as a meaningful bullish signal.  Common in investment media where a
+# price target raise of <1% (e.g., $767 from $765 on a $600 stock) or
+# a rating reiteration is framed as substantive endorsement.
+#
+# Discovered in TheStreet Meta analysis (Jul 4 2026): Wells Fargo
+# raised price target $2 (0.26%) while "maintaining overweight rating"
+# — functionally a housekeeping adjustment but positioned as bullish.
+# ---------------------------------------------------------------------------
+_MARGINAL_ENDORSEMENT_PATTERNS: list[re.Pattern] = [
+    # "raised his/her/the price target to $X from $Y, maintaining/reiterating"
+    re.compile(
+        r"\b(?:raised?|lifted|boosted|hiked|increased?|bumped)\s+"
+        r"(?:his|her|their|the|its|a)?\s*"
+        r"(?:price\s+)?target\s+"
+        r"(?:to\s+)?\$[\d,.]+\s+"
+        r"(?:from|to)\s+\$[\d,.]+\s*,?\s*"
+        r"(?:while\s+|and\s+)?(?:maintain|reiterat|keep)",
+        re.IGNORECASE,
+    ),
+    # "maintained/reiterated overweight/buy/outperform rating"
+    re.compile(
+        r"\b(?:maintain(?:ed|ing|s)?|reiterat(?:ed|ing|es)?|keep(?:s|ing)?|kept)\s+"
+        r"(?:an?\s+|the\s+|its\s+)?"
+        r"(?:overweight|buy|outperform|strong buy|positive|market perform|"
+        r"sector outperform)\s+"
+        r"(?:rating|recommendation|call)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["marginal_endorsement"] = _MARGINAL_ENDORSEMENT_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Historical legitimation: insertion of temporally distant positive data
+# to structurally dilute fresh negative news.  Common in investment
+# media where old earnings beats or revenue growth figures are recapped
+# in an article about new negative developments.
+#
+# Discovered in TheStreet Meta analysis (Jul 4 2026): ~35% of article
+# devoted to Q1 earnings recap (April 29 data in July 4 article) in a
+# piece about Zuckerberg's AI disappointment admission.
+# ---------------------------------------------------------------------------
+_HISTORICAL_LEGITIMATION_PATTERNS: list[re.Pattern] = [
+    # "reported [quarter] results ... beat/topped/ahead/exceeded"
+    re.compile(
+        r"\breported\s+"
+        r"(?:first|second|third|fourth|Q[1-4]|full[- ]year|annual|quarterly)\s*"
+        r"(?:-?\s*quarter)?\s*"
+        r"(?:results?|earnings?|numbers?|financials?)\b"
+        r".{5,200}?"
+        r"\b(?:beat(?:ing)?|topp(?:ed|ing)|ahead of|exceeded?|surpass(?:ed|ing)|"
+        r"above|better than)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "earnings per share of $X, topping estimates"
+    re.compile(
+        r"\b(?:earnings?\s+per\s+share|EPS|revenue|sales|net\s+income)\s+"
+        r"(?:of\s+)?\$[\d,.]+\s*"
+        r"(?:billion|million|B|M)?\s*,?\s*"
+        r"(?:topping|beating|exceeding|ahead\s+of|above|surpassing|"
+        r"better\s+than)\s+"
+        r"(?:estimates?|expectations?|consensus|forecasts?|projections?|"
+        r"Wall Street|the Street|analyst)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["historical_legitimation"] = _HISTORICAL_LEGITIMATION_PATTERNS
 
 
 # ---------------------------------------------------------------------------
@@ -5853,15 +5948,15 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 64 pattern-matched device types plus 6 structural
-    post-pass types (70 total).
+    Scans for 66 pattern-matched device types plus 6 structural
+    post-pass types (72 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (63): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (66): absence_as_evidence, analogy_metaphor,
     anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_positioning,
@@ -5875,10 +5970,12 @@ def detect_framing_devices(
     failure_precedent, false_balance,
     financial_reassurance,
     geopolitical_regulatory_pressure, guilt_by_association,
+    historical_legitimation,
     hypocrisy_frame, industry_normalization_undercut,
     ironic_quotation, isolation_framing,
     juxtaposition, latecomer_narrative, litigation_framing,
     loaded_language, loss_leader_framing,
+    marginal_endorsement,
     military_techno_optimism, outsourced_intensity,
     pathologizing_metaphor, policy_reversal, power_asymmetry,
     precedent_analogy,
