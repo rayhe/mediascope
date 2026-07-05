@@ -2,6 +2,79 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-05 15:00 PT — Type D: Toolkit Quality & Documentation — Financial Journalism VADER Inflation
+
+### Focus
+Documenting the known VADER financial journalism sentiment inflation bias — the largest documented per-genre scoring gap in the toolkit — as a comprehensive methodology section with interim workarounds and a worked example.
+
+### Problem Statement
+
+Financial journalism (Motley Fool, Barron's, MarketWatch, Seeking Alpha) systematically inflates VADER compound scores by 0.3–0.5 points. This was identified across 4 annotated financial articles but had no dedicated methodology section, no worked example, and the Known Biases section didn't mention it. The gap has three root causes:
+
+1. **Investment recommendation boosterism:** Genre-conventional positive vocabulary ("strong buy," "cash cow," "upside potential") that VADER sums at face value
+2. **Financial reassurance language:** "Fears ease," "soothe concerns" — lexically positive words wrapping negative news
+3. **Analyst-debate neutralization:** Bullish analyst quotes pack VADER-positive vocabulary; bearish quotes use hedged conditionals VADER reads as neutral
+
+Existing correction paths (A–J) don't fire because financial articles have **neutral to positive agency** (company IS actively doing things) and **low to moderate emotional intensity** (analytical vocabulary, not emotional).
+
+### What Changed
+
+**1. METHODOLOGY.md §16: Financial Journalism Sentiment Bias (NEW)**
+
+Comprehensive new section covering:
+- The three inflation mechanisms with real examples
+- Why existing correction paths A–J don't fire (agency/EI dead zone)
+- Quantified gap table from 4 validated articles:
+
+| Article | Publication | VADER | Composite | Manual | Gap |
+|---|---|---|---|---|---|
+| Meta Cloud $500B Market | Motley Fool | 0.997 | 0.674 | +0.55 | +0.12 |
+| Meta Shows Urgency | Barchart | 0.995 | 0.645 | ~−0.10 | ~+0.75 |
+| Meta "giving up" on AI? | MarketWatch | 0.990 | 0.632 | −0.15 | +0.78 |
+| Meta AI Fears Ease | Barron's | — | 0.574 | −0.18 | +0.75 |
+
+- 5 interim analyst recommendations (flag financial articles, use headline-body alignment as diagnostic, weight framing devices over sentiment, cross-compare with wire-service baseline, report both scores)
+- Future Path K design with financial-genre-specific triggers and validation requirements
+
+**2. METHODOLOGY.md §11 Known Biases (UPDATED)**
+
+- Added specific VADER financial journalism inflation (0.3–0.5 points) with cross-reference to §16
+- Added topic classification density normalization gap
+
+**3. examples/financial_journalism_demo.py (NEW)**
+
+Worked example with:
+- Condensed MarketWatch-style analyst debate article (~500 words)
+- Standard toolkit pipeline (entities → sentiment → framing → topics → sources)
+- Three financial inflation diagnostics:
+  - Inflation risk flag (financial topic ≥ 0.4 AND raw composite ≥ 0.5 AND speculative ratio ≥ 0.25)
+  - Headline-body divergence flag (financial topic AND alignment < 0.4)
+  - Framing-contradicts-sentiment flag (≥3 adversarial devices AND composite > 0.3)
+- Interpretation guidance for when to trust framing devices over composite scores
+- Fully runnable: `PYTHONPATH=. python3 examples/financial_journalism_demo.py`
+
+**4. docs/AGENT_GUIDE.md (UPDATED)**
+
+Added "Financial Journalism: Known VADER Inflation" section with:
+- Quick diagnostic for financial articles with adversarial devices
+- Recommended 3-step approach (run pipeline → check topic → flag if financial + high composite + adversarial devices)
+- Link to worked example
+
+**5. README.md (UPDATED)**
+
+Added `financial_journalism_demo.py` to examples table with description
+
+### Stats
+- Tests: 1,454 (all passing, unchanged)
+- METHODOLOGY.md: 1,070 → 1,198 lines (+128)
+- AGENT_GUIDE.md: +22 lines
+- README.md: +1 line
+- New file: examples/financial_journalism_demo.py (233 lines)
+- No code changes to analysis pipeline (documentation + example only)
+- Commit: `6c269bf`
+
+---
+
 ## 2026-07-05 14:00 PT — Type C: Ownership & Funding Deep Dive — Advance Voting Power Concentration
 
 ### Focus
