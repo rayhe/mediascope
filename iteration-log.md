@@ -3,6 +3,64 @@
 Tracks every improvement cycle run on the toolkit.
 
 ---
+## 2026-07-05 00:00 PT — Type B: Journalist Research — Boone Ashworth (New) + Grace Huckins (Expanded)
+
+### Focus
+Added new Wired journalist Boone Ashworth (#128) — a Wired-native who was internally promoted from podcast producer to staff writer. Expanded Grace Huckins's profile with full education pedigree and AAAS fellowship career entry.
+
+### What Changed
+
+**1. NEW JOURNALIST: Boone Ashworth (MOST SIGNIFICANT)**
+Added full profile with 3 career entries + education block:
+- Freelance (Cracked, Grist, Allure, CNT, Yahoo Life, ~2015-2019)
+- Wired podcast producer (Gadget Lab, ~2019-Oct 2024) — also wrote staff articles during this period
+- Wired staff writer (Oct 2024-present) — promoted from producer role
+
+Education: SF State University journalism program (confirmed via SFSU Journalism Dept Wired field trip announcement).
+
+Key source URLs:
+- https://journalism.sfsu.edu/event/wired-field-trip (SFSU alum confirmation)
+- https://muckrack.com/boone-ashworth/articles (career overview, beat, publications)
+- https://spjnorcal.org/conference/ (SPJ NorCal panel on crisis reporting)
+- https://prsay.prsa.org/2024/01/16/ai-and-journalism-whats-next/ (SF Press Club AI+Journalism panel)
+- https://adalovelaceinstitute.org (Meta Horizon Worlds article cited in policy report)
+- https://lawreview.law.ucdavis.edu (Amazon worker tracking article cited in law review)
+
+Analytical significance: Wired-native (internal promotion, not cross-outlet hire). Unusual humor→podcast→tech pipeline. Control case for how Condé Nast internal culture shapes a journalist with no prior institutional framing. Consumer tech beat adjacent to but distinct from Schiffer's adversarial business desk.
+
+**2. GRACE HUCKINS EXPANSION**
+- Added education block: Harvard BA (MCB) → Oxford Rhodes Scholar (dual MSc Neuroscience + Gender Studies) → Stanford PhD (Neuroscience & Philosophy)
+- Added career entry: AAAS Mass Media Science & Engineering Fellow at Wired (summer 2020)
+- Added note: Former Spectrum (The Transmitter) news intern covering autism research
+- Expanded analytical notes: prediction-vs-understanding thesis framework, AAAS Wired → MIT TR pipeline
+- Career entries: 2 → 3
+
+Source URLs for Huckins expansion:
+- https://www.mcb.harvard.edu/tag/rhodes-scholar/ (Harvard MCB, Rhodes confirmation)
+- https://thetransmitter.org/contributor/grace-huckins/ (AAAS fellowship, Spectrum internship)
+- https://nationalacademies.org (Nine Dots Prize, Schmidt Award interview)
+
+**3. DOC COUNT UPDATES**
+- README.md: 127→128 journalists, 410→411 auto-detected migrations, Ashworth added to pipeline list
+- EDITORIAL_HISTORIES.md: 127→128 journalists, 126→127 multi-pub
+- examples/careers_demo.py: 127→128
+
+### Test Results
+1388 passed, 0 failed (92s runtime).
+
+### Metrics After
+- Journalists: 128 (was 127)
+- Multi-pub journalists: 127 (was 126)
+- Auto-detected migrations: 411 (was 410)
+- Career entries added: 4 (3 Ashworth + 1 Huckins fellowship)
+- Education blocks added: 2 (Ashworth + Huckins)
+- Entity clusters: 66 (unchanged)
+- Annotated articles: 96 (unchanged)
+- Framing device types: 69 (unchanged)
+- Total tests: 1388 (unchanged)
+
+---
+
 
 ## 2026-07-04 22:00 PT — Type A: Article Deep Dive — Motley Fool Meta Cloud $500B Market
 
