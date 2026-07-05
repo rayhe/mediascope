@@ -4,6 +4,49 @@ Tracks every improvement cycle run on the toolkit.
 
 ---
 
+## 2026-07-05 04:00 PT — Type A: Article Deep Dive — 4-Way Cross-Outlet Zuckerberg Town Hall Comparison
+
+**Focus:** First N-way (4-outlet) same-event comparison in the toolkit. Extended `same_event_comparison.py` with `compare_multi_articles()` function and created a 4-way cross-analysis of Zuckerberg's Jul 2 town hall admission (Reuters × TechCrunch × Barron's × PYMNTS).
+
+### What Changed
+
+**1. `compare_multi_articles()` FUNCTION (MOST SIGNIFICANT)**
+Extended `same_event_comparison.py` with a new function that handles N articles in a single comparison matrix. The existing `compare_articles()` only handled pairwise (A vs B). The new function:
+- Takes a list of article analyses + publication names
+- Generates a comparison matrix with tone, framing, and source deployment rows
+- Computes tone range, identifies outliers, detects cross-publication import
+- Supports optional editorial_modes mapping
+- Guards against division by zero in framing density calculations
+
+Implements §10.3 requirement: "Present results in a comparison matrix with one row per outlet."
+
+**2. 4-WAY CROSS-ANALYSIS FILE**
+Created `town_hall_4way_cross_analysis_2026_07_02.md` — the first multi-outlet comparison with 4 editorial modes (wire/tech/financial/commerce). Key findings:
+
+| Outlet | Mode | Tone | Devices | Density |
+|---|---|---|---|---|
+| Reuters | Wire | −0.058 | 6 | 25.2/1K |
+| TechCrunch | Tech editorial | −0.051 | 6 | 25.0/1K |
+| Barron's | Financial | −0.199 | 4 | 12.2/1K |
+| PYMNTS | Commerce trade | +0.596 | 6 | 15.4/1K |
+
+- **Tone range: 0.795** — largest in any toolkit cluster (prev max: Brain2Qwerty at 1.00, but that was a measurement artifact)
+- **Cross-publication import detected:** TechCrunch launders Wired's "gulag" via "several other investigative reports"
+- **Confession framing inversion:** PYMNTS uses `confession_framing` ("a rare admission") to make the same facts read as candid transparency (+0.596) vs Barron's competitive anxiety (−0.199)
+- **Financial-mode unique devices:** `competitive_deficit`, `financial_reassurance`, `absence_as_evidence` — only in Barron's
+
+**3. TIER 1 TONE VALUES CORRECTED**
+Old values (+0.05/−0.30/+0.35) were stale from a prior toolkit version. Updated QUALITY_STANDARDS.md to current pipeline output (−0.06/−0.05/−0.20/+0.60) with PYMNTS added as 4th outlet.
+
+### Metrics
+- Tests: 1392 → 1402 (10 new, all passing)
+- Test files: 54 → 55
+- Same-event clusters: 9 (unchanged — extended existing Tier 1 cluster, not new)
+- Lines changed: +628/−5 across 8 files
+- Commit: `16d6395`
+
+---
+
 ## 2026-07-05 03:00 PT — Type D: Toolkit Quality & Documentation
 
 **Focus:** Sync Path J correction path references across all peripheral docs and add guard tests to prevent future drift.
