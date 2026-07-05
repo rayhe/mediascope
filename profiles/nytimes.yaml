@@ -166,6 +166,26 @@ institutional_shareholders:
   last_updated: "2026-06-22"
 
 # ===================================================================
+# INSIDER TRANSACTIONS — added 2026-07-05
+# ===================================================================
+insider_transactions:
+  - officer: "Jacqueline M. Welch"
+    title: "EVP & Chief Human Resources Officer"
+    transaction_type: "Sale (Form 4)"
+    date: "2026-06-03"
+    shares_sold: 4000
+    price_per_share: "$74.137 (weighted average)"
+    shares_remaining: 23873
+    sec_filing: "Form 4 filed Jun 3, 2026"
+    source_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000071691&type=4&dateb=&owner=include&count=40"
+    notes: >
+      Routine insider sale by C-suite officer. Welch sold 4,000 Class A shares at a
+      weighted average of $74.137/share (~$296,548 total). Retains 23,873 shares
+      (~$1.77M at current price). No unusual pattern — likely part of a 10b5-1 plan.
+      Only SEC Form 4 filing for NYT officers since June 1, 2026.
+  last_updated: "2026-07-05"
+
+# ===================================================================
 # WIRECUTTER & AFFILIATE REVENUE — new section, 2026-06-24
 # ===================================================================
 wirecutter_affiliate_revenue:
@@ -406,8 +426,9 @@ revenue_relationships:
         W.D. Washington, filed Jul 1, 2026): alleges Microsoft execs/board concealed that
         AI tools were trained on copyrighted material, causing shareholder damage. This
         lawsuit was CAUSED by the NYT copyright litigation.
-      - City of St. Clair Shores securities class action (26-cv-02071, W.D. Washington):
-        separate Microsoft securities fraud action re: Copilot/Azure misrepresentations.
+      - City of St. Clair Shores securities class action (26-cv-02071, W.D. Washington,
+        filed June 15, 2026): separate Microsoft securities fraud action re: Copilot/Azure
+        misrepresentations. MSFT stock -10% Jan 28-29 (~$357B market cap erasure).
       
       No trial date set. Discovery ongoing. NYT now analyzing preserved output logs for
       evidence of systemic reproduction of copyrighted content. OpenAI approved internally
@@ -452,18 +473,23 @@ revenue_relationships:
     source_url: "https://digiday.com/media/a-timeline-of-the-major-deals-between-publishers-and-ai-tech-companies-in-2025/"
     notes: "Meta signed with 7 publishers Dec 5 2025, NYT conspicuously absent"
 
-  # --- AI LICENSING LANDSCAPE NOTE (Jul 2026) ---
-  # As of Jul 2, 2026 (WSJ): AI content marketplaces are emerging as a new
-  # licensing model. Microsoft is piloting a marketplace with 8 publishers
-  # (names undisclosed). Amazon and Factiva are positioning as marketplace
-  # platforms for AI training data licensing. NYT mentioned as having existing
-  # bilateral deals but not confirmed as a marketplace participant. This could
-  # shift AI licensing from bilateral (NYT↔Amazon, NYT↔Google) to platform-
-  # mediated models, potentially commoditizing publisher content and compressing
-  # per-publisher deal values. Relevance: NYT's current bilateral leverage
-  # (suing OpenAI/Microsoft while licensing to Amazon/Google) may weaken if
-  # marketplace aggregation becomes standard.
-  # Source: WSJ, Jul 2, 2026
+  - type: "ai_licensing_marketplace_shift"
+    description: >
+      EMERGING (Jul 2, 2026): AI content licensing is shifting from bilateral deals to
+      marketplace-mediated models. Microsoft is piloting a marketplace with 8 publishers
+      (People, AP, Hearst among undisclosed participants). Amazon and Factiva are also
+      positioning as marketplace platforms for AI training data licensing. NYT has existing
+      bilateral deals (Amazon $20-25M/yr) but is not confirmed as a marketplace participant.
+      ANALYTICAL SIGNIFICANCE: If marketplace aggregation becomes standard, NYT's current
+      bilateral leverage (suing OpenAI/Microsoft while licensing to Amazon/Google) could
+      weaken. Commoditized marketplace pricing compresses per-publisher deal values and
+      reduces NYT's ability to negotiate premium terms based on brand prestige. This could
+      accelerate the trend away from NYT's preferred "selective, controlled licensing" model
+      toward platform-mediated bulk licensing.
+    severity: 2
+    evidence: "WSJ report Jul 2, 2026"
+    source_url: "https://www.wsj.com/tech/ai/microsoft-ai-content-marketplace-publishers"
+    last_updated: "2026-07-05"
 
 # ===================================================================
 # BOARD OF DIRECTORS — comprehensive, added 2026-06-26
@@ -1045,11 +1071,22 @@ known_conflicts:
         MDL cases — suggests expanding legal team for discovery-intensive phase.
       
       PROCEDURAL STATUS (Jul 2026): No trial date set. Discovery ongoing and contentious.
-      Summary judgment briefing appears imminent based on stays granted to Gracenote and
-      Britannica (both stayed pending SJ motions in core cases). Class certification not
+      Summary judgment briefing close date: November 6, 2026 (per conversation data
+      stipulation). Stays granted to Gracenote and Britannica (both stayed pending SJ
+      motions in core cases) confirm SJ is the critical path. Class certification not
       yet addressed; Authors Alliance assessment (Feb 2026): "several months to a year
-      away." The SJ timeline is now the critical path — SJ rulings on fair use and
-      training-as-copying will set precedent for all consolidated cases.
+      away." SJ rulings on fair use and training-as-copying will set precedent for all
+      consolidated cases.
+      
+      OPENAI PRIVILEGE/SPOLIATION RISK (Jul 2026): Court ordered OpenAI to disclose
+      internal communications about deletion of a pirated book dataset. Raises
+      privilege waiver and spoliation concerns. Analytically significant because
+      Anthropic settled a similar piracy case for $1.5B — establishes a damages
+      benchmark if OpenAI's own piracy evidence surfaces. OpenAI's confidential S-1
+      filing (late May 2026, targeting ~$1T valuation, possible 2027 listing) adds
+      SEC disclosure pressure: any material copyright liabilities must be disclosed
+      to prospective investors. Microsoft owns ~27% of OpenAI on an as-converted
+      diluted basis (~$135B at target valuation).
       
       CASCADING LEGAL EFFECTS (Jul 2026):
       - Microsoft shareholder derivative suit (Eric Anderson v. Microsoft Corp. et al.,
@@ -1069,8 +1106,9 @@ known_conflicts:
         motion to dismiss on demand-futility grounds. Analytically significant because
         it reframes AI copyright risk as board-oversight, securities-disclosure, and
         executive-compensation risk — not just a content-creator complaint.
-      - City of St. Clair Shores securities class action (26-cv-02071, W.D. Washington):
-        separate Microsoft securities fraud action re: Copilot/Azure misrepresentations.
+      - City of St. Clair Shores securities class action (26-cv-02071, W.D. Washington,
+        filed June 15, 2026): separate Microsoft securities fraud action re: Copilot/Azure
+        misrepresentations. MSFT stock -10% Jan 28-29 (~$357B market cap erasure).
         Lead plaintiff deadline Aug 11, 2026.
     severity: 5
     evidence: "Court filings, SEC disclosures, GlobalLegalPost, Law.com, Bloomberg Law"
@@ -1224,9 +1262,11 @@ known_conflicts:
       reforms. Nadella compensation cited: ~$224M (2023-2025), 480:1 pay ratio.
       Part of emerging "copyright shareholder derivative" wave (Adobe has 2 similar suits).
       Uses Bartz v. Anthropic as notice that directors should have acted on piracy risk.
-      (2) City of St. Clair Shores v. Microsoft (26-cv-02071, W.D. Washington):
+      (2) City of St. Clair Shores v. Microsoft (26-cv-02071, W.D. Washington,
+      filed June 15, 2026):
       SECURITIES CLASS ACTION alleging MSFT misled investors about Copilot and Azure
-      growth. Lead plaintiff deadline Aug 11, 2026.
+      growth. MSFT stock dropped ~10% on Jan 28-29, 2026, erasing ~$357B in market cap.
+      Lead plaintiff deadline Aug 11, 2026.
       Combined analytical significance: AI copyright risk has now cascaded from content-
       creator complaints into boardroom governance and securities disclosure territory.
       Both suits add pressure on Microsoft as NYT's co-defendant — potential settlement
@@ -1474,6 +1514,16 @@ litigation_connections:
       leaves secondary liability (requiring knowledge/intent) intact. This defense strategy
       is distinct from OpenAI's fair use defense and tests a different legal boundary.
       
+      NYT OPPOSITION TO PARTIAL MTD (ECF No. 59, May 15, 2026): NYT filed opposition
+      to Perplexity's partial motion to dismiss, challenging the "no volition" defense.
+      Extension was granted March 26, 2026 (ECF No. 56) with motions due by April 17.
+      No ruling on the MTD as of July 2026 — decision pending from Judge Preska.
+      
+      PERPLEXITY'S EXPANDING LEGAL EXPOSURE (as of May 31, 2026): Perplexity now faces
+      9 active lawsuits: NYT, News Corp/Dow Jones, NY Post, Chicago Tribune, Encyclopedia
+      Britannica, Merriam-Webster, Reddit, Yomiuri Shimbun, and CNN (filed May 28, 2026).
+      The CNN suit (May 2026) is the most recent addition.
+      
       CASE MANAGEMENT PLAN (Dkt. 66, June 2, 2026, signed Judge Preska):
       - Discovery opened: March 25, 2026 (Rule 26(f) conference held)
       - Motion for leave to amend/join parties: June 17, 2026
@@ -1667,11 +1717,12 @@ notes: |
 
   16. MICROSOFT SECURITIES FRAUD CLASS ACTION:
   MSFT (NYT co-defendant) now also faces securities fraud case: City of St. Clair Shores v.
-  Microsoft, 26-cv-02071, W.D. Washington. Alleges misrepresentation about Copilot adoption
-  (15M seats vs 450M+ users) and Azure growth. MSFT stock -10% Jan 28, 2026. Lead plaintiff
-  deadline Aug 11, 2026. Adds legal pressure on MSFT from second front — the same AI infrastructure
-  investment NYT's amended complaint targets as "purpose-built to encourage infringement."
-  Sources: GlobeNewswire (Pomerantz, Jun 30), PR Newswire (BFA Law, Jun 30).
+  Microsoft, 26-cv-02071, W.D. Washington (filed June 15, 2026). Alleges misrepresentation
+  about Copilot adoption (15M seats vs 450M+ users) and Azure growth. MSFT stock -10%
+  Jan 28-29, 2026 (~$357B market cap erasure). Lead plaintiff deadline Aug 11, 2026. Adds
+  legal pressure on MSFT from second front — the same AI infrastructure investment NYT's
+  amended complaint targets as "purpose-built to encourage infringement."
+  Sources: GlobeNewswire (Pomerantz, Jun 30), PR Newswire (BFA Law, Jun 30), Reuters (Jun 15).
 
   17. OPENAI 5% GOVERNMENT STAKE PROPOSAL:
   FT/Reuters (Jul 1, 2026): OpenAI discussed giving 5% stake to US government. Preliminary —

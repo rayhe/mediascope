@@ -13049,3 +13049,33 @@ Positive-presence tests ("does doc X contain '69 framing device types'?") are in
 ### Stats
 - Tests: 1,389 passed (0 failed), +1 new guard
 - Structural consistency guards: 88 → 89 (pytest-collected; 88 def test_ + 1 parametrize expansion)
+
+## 2026-07-05 06:00 PT — Type C: Ownership & Funding Deep Dive (NYT)
+
+### Focus
+New York Times: SEC insider transactions, MDL timeline updates, Perplexity litigation developments, Microsoft securities suit corrections, AI licensing marketplace shift.
+
+### Changes
+1. **Insider transactions section** — Added new `insider_transactions` section to NYT profile. Jacqueline M. Welch (EVP & CHRO) sold 4,000 Class A shares on Jun 3, 2026 at $74.137/share (weighted avg), retaining 23,873 shares. Source: SEC Form 4 filing. Only NYT officer Form 4 since June 1.
+
+2. **MDL procedural timeline** — Added summary judgment briefing close date: November 6, 2026 (per conversation data stipulation). Added OpenAI privilege/spoliation risk: court ordered disclosure of internal communications about pirated book dataset deletion. Added OpenAI S-1 context: confidential filing late May 2026 targeting ~$1T valuation, creating SEC disclosure pressure on copyright liabilities. Added Anthropic $1.5B piracy settlement as damages benchmark. Microsoft ~27% OpenAI ownership (~$135B at target valuation).
+
+3. **St. Clair Shores corrections** — Fixed filing date across all 3 profile occurrences + 1 changelog reference: June 15, 2026 (per Reuters), not "filed Jul 1" (that's the Anderson derivative suit). Added $357B market cap erasure detail for MSFT's Jan 28-29 stock drop.
+
+4. **Perplexity litigation update** — Added NYT opposition to partial MTD (ECF No. 59, May 15, 2026). Added extension grant (ECF No. 56, March 26, 2026). No ruling yet from Judge Preska. Added Perplexity's expanding legal exposure: 9 active lawsuits as of May 31, 2026 (added CNN, filed May 28, 2026).
+
+5. **AI licensing marketplace conflict** — Promoted from inline comment to proper `ai_licensing_marketplace_shift` conflict entry (severity 2). Microsoft piloting marketplace with 8 publishers (People, AP, Hearst). Amazon and Factiva also building platforms. Analytical significance: marketplace commoditization could compress NYT's bilateral licensing leverage. Source: WSJ Jul 2, 2026.
+
+### Sources
+- SEC EDGAR: NYT Form 4 filings (Jacqueline Welch, Jun 3, 2026)
+- Reuters: City of St. Clair Shores filing date (Jun 15, 2026)
+- GlobeNewswire/Pomerantz: St. Clair Shores securities class action details
+- WSJ (Jul 2, 2026): AI content marketplace developments
+- Court filings: ECF No. 59 (NYT opposition to Perplexity MTD), ECF No. 56 (extension)
+- Bloomberg Law: CNN v. Perplexity filing (May 28, 2026)
+- Financial Times/Reuters: OpenAI S-1 filing, Microsoft ownership stake
+
+### Stats
+- Tests: 1,402 passed (0 failed)
+- NYT profile: 1,867 → 1,918 lines (+51 net)
+- No new tests added (profile content update only)
