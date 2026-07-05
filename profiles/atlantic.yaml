@@ -87,10 +87,10 @@ ownership_chain:
       - entity: "Apple (via LPJ Trust)"
         relationship: >
           Laurene Powell Jobs is Steve Jobs' widow. LPJ Trust holds massive Apple stock.
-          Apple (AAPL) at $294.30/share (Jun 24, 2026), market cap ~$4.37T.
-          LPJ estimated to hold ~$16B+ in Apple stock. Among Apple's largest individual shareholders.
+          Apple (AAPL) at $308.63/share (Jul 3, 2026), market cap ~$4.53T.
+          LPJ estimated to hold ~$16.8B+ in Apple stock. Among Apple's largest individual shareholders.
         competitive_with: ["Meta"]
-        notes: "Apple competes with Meta in hardware (Vision Pro vs Quest), AI (Apple Intelligence vs Meta AI), and uses 'privacy' narrative that undermines Meta's advertising model."
+        notes: "Apple competes with Meta in hardware (Vision Pro vs Quest), AI (Apple Intelligence vs Meta AI), and uses 'privacy' narrative that undermines Meta's advertising model. LPJ serves on Stanford Board of Trustees alongside OpenAI CFO Sarah Friar — see civic_connections."
       - entity: "Walt Disney Company (via LPJ Trust)"
         relationship: >
           LPJ Trust inherited a massive Disney stake from Steve Jobs' Pixar acquisition (Disney
@@ -101,8 +101,8 @@ ownership_chain:
             - 2016 (SC 13G/A, Amendment 2): 40,284,667 shares = 2.5% of Disney
             - Post-2016: Below SEC reporting threshold; current holdings unknown but presumed
               to retain some position given no public report of full divestiture.
-          Disney (DIS) at ~$95.71/share (Jun 2026), market cap ~$168B.
-          Even the reduced 2016 position (40.3M shares) would be worth ~$3.9B at current prices.
+          Disney (DIS) at ~$99.50/share (Jul 2, 2026), market cap ~$172.78B.
+          Even the reduced 2016 position (40.3M shares) would be worth ~$4.01B at current prices.
         competitive_with: ["Meta"]
         source_urls:
           - "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001540902&type=SC%2013G&dateb=&owner=include&count=40"
@@ -135,7 +135,7 @@ ownership_chain:
           CRITICAL: This creates a DIRECT FINANCIAL EXIT for Emerson Collective from OpenAI,
           deepening the financial relationship far beyond the content licensing deal. EC profited
           directly from OpenAI's growth. Also puts OpenAI in direct competition with Apple
-          (where LPJ holds $16B+ stock) — an internal portfolio tension.
+          (where LPJ holds $16.8B+ stock) — an internal portfolio tension.
       - entity: "Mistral AI"
         relationship: >
           Emerson Collective participated in Mistral's $415M Series A (Dec 2023) and/or
@@ -176,7 +176,7 @@ ownership_chain:
           - "https://spectrum.ieee.org/fei-fei-li-world-labs"
         notes: >
           Strengthens the pattern: EC/LPJ now has financial positions in FIVE direct Meta
-          competitors — Apple (via LPJ Trust, $16B+ stock), Disney (via LPJ Trust, ~$3.9B+ stock),
+          competitors — Apple (via LPJ Trust, $16.8B+ stock), Disney (via LPJ Trust, ~$4.01B+ stock),
           OpenAI (via io Products exit + licensing),
           Mistral (open-source LLMs vs Llama), and World Labs (spatial AI/3D vs Reality Labs). Each
           investment creates editorial incentive for Atlantic coverage that frames Meta's competitive
@@ -243,6 +243,25 @@ ownership_chain:
           infrastructure, homes, walkable neighborhoods, parks, cultural venues.
         competitive_with: []
         source_url: "https://en.wikipedia.org/wiki/Laurene_Powell_Jobs"
+      - entity: "Elemental Impact (formerly Elemental Excelerator)"
+        relationship: >
+          LPJ chairs the board. Emerson Collective helped incubate Elemental Excelerator, which
+          rebranded to Elemental Impact with a fresh $100M commitment. Climate tech accelerator
+          based in Hawaiʻi, now global. Spun out Earthshot Ventures ($60M initial fund → later
+          $94M), a climate-focused VC. Earthshot LPs include Emerson Collective, Microsoft Climate
+          Innovation Fund, Tom Steyer, John Doerr, and notably Facebook's Chris Cox (former Chief
+          Product Officer, returned to Meta 2020). This creates a rare direct financial link between
+          an Emerson Collective-incubated entity and a senior Meta executive as co-investors.
+        competitive_with: []
+        source_urls:
+          - "https://www.elementalimpact.com"
+          - "https://www.earthshot.vc"
+          - "https://en.wikipedia.org/wiki/Laurene_Powell_Jobs"
+        notes: >
+          The Chris Cox LP connection is analytically unusual — a Meta CPO investing alongside
+          The Atlantic's owner's organization. This is a cooperative financial link, not a
+          competitive one, but it complicates the narrative of clean adversarial separation
+          between Meta and Atlantic/EC.
       - entity: "Boom Supersonic"
         relationship: "Emerson Collective led funding round in 2019. Supersonic commercial flight."
         competitive_with: []
@@ -320,9 +339,11 @@ ownership_chain:
       source_url: "https://influencewatch.org/non-profit/emerson-collective/"
   - name: "Laurene Powell Jobs"
     entity_type: "individual"
+    title: "Lead investor and Board Chair of The Atlantic"
     description: >
       Net worth ~$11.9B (Bloomberg Billionaires Index, Jul 2025, ranked 244th globally;
-      earlier estimates ranged $11.5-16B — Forbes India 2024 cited ~$13.5B). Apple connection
+      earlier estimates ranged $11.5-16B — Forbes India 2024 cited ~$13.5B; Forbes #212
+      globally, source of wealth "Apple, Disney", self-made score 2). Apple connection
       through inheritance from Steve Jobs (d. 2011). Deep AI investment portfolio through
       Emerson Collective. Also invested in education, environment, social justice.
       Reportedly signaled intent to give away her wealth ("My kids know that. Steve wasn't
@@ -332,6 +353,24 @@ ownership_chain:
       Divested 20% stake in Monumental Sports & Entertainment (Wizards, Capitals, Capital One Arena)
       in December 2025 — previously second-largest shareholder behind Ted Leonsis.
       Chiba Institute of Technology honorary doctorate (May 2025, alongside Reid Hoffman).
+      Stanford GSB commencement speech (Jun 13, 2026, GSB centennial year) — spoke about
+      Steve Jobs, founding her company post-MBA, California, and Silicon Valley.
+
+      BOARD MEMBERSHIPS (current as of Jul 2026):
+        - The Atlantic (Board Chair)
+        - College Track (Board Chair, co-founded 1997)
+        - XQ Institute (Board Chair, co-founded 2015)
+        - Elemental Impact (Board Chair, formerly Elemental Excelerator — climate tech accelerator)
+        - Stanford University Board of Trustees (Member)
+        - Ford Foundation (Board Member)
+        - Council on Foreign Relations (Board Member)
+        - Chicago CRED (Board Member)
+        - American Academy of Arts and Sciences (Member)
+    title_sources:
+      - "https://www.gsb.stanford.edu/experience/news-history/commencement/2026-mba-commencement" 
+      - "https://en.wikipedia.org/wiki/Laurene_Powell_Jobs"
+      - "https://www.cfr.org/bio/laurene-powell-jobs"
+      - "https://www.amacad.org/person/laurene-powell-jobs"
     civic_connections:
       - name: "The Partnership for San Francisco"
         role: "Co-Chair (alongside Ruth Porat, Alphabet/Google President)"
@@ -359,15 +398,40 @@ ownership_chain:
           LPJ purchased the bankrupt San Francisco Art Institute through a nonprofit. Demonstrates
           deep civic embedding in San Francisco but not a conflict.
         competitive_with: []
+      - name: "Stanford University Board of Trustees"
+        role: "Member"
+        description: >
+          LPJ serves on the Stanford University Board of Trustees. CRITICAL GOVERNANCE LINK:
+          Sarah Friar, CFO of OpenAI, was elected to the same Stanford Board of Trustees in
+          November 2025 (term starting February 1, 2026). This means The Atlantic's owner and
+          OpenAI's CFO serve on the same university governance board — creating a direct personal
+          governance relationship beyond the existing OpenAI licensing deal and io Products equity
+          exit. Unlike the Partnership for San Francisco (quarterly meetings, civic focus), the
+          Stanford Board is a fiduciary governance body with regular meetings, committee service,
+          and institutional decision-making that deepens the interpersonal connection.
+          
+          Other notable trustees include venture capitalists, tech executives, and academic leaders.
+          Sundar Pichai (Google CEO) delivered Stanford's main commencement speech at the same
+          June 2026 graduation weekend where LPJ spoke at GSB — though this is a weaker
+          institutional presence connection.
+        competitive_with: ["Meta"]
+        source_urls:
+          - "https://www.gsb.stanford.edu/experience/news-history/commencement/2026-mba-commencement"
+          - "https://news.stanford.edu/report/2025/11/07/stanford-elects-three-new-trustees/"
+        notes: >
+          The Stanford Board co-service with OpenAI's CFO adds a THIRD type of LPJ-OpenAI
+          connection: (1) licensing deal, (2) io Products equity exit, (3) shared board
+          governance. No other tracked publication owner has three distinct relationship
+          types with the same AI company.
 
 revenue_relationships:
   - partner: "Apple"
     relationship_type: "indirect_financial"
-    estimated_value: "~$16B+ (stock holdings, AAPL at $294.30 Jun 24 2026)"
+    estimated_value: "~$16.8B+ (stock holdings, AAPL at $308.63 Jul 3 2026)"
     description: >
       Owner LPJ holds massive Apple stock. Apple competes with Meta in hardware (Vision Pro
       vs Quest), AI (Apple Intelligence vs Meta AI), and privacy positioning. Apple's 'privacy'
-      narrative directly undermines Meta's advertising business. AAPL market cap ~$4.37T.
+      narrative directly undermines Meta's advertising business. AAPL market cap ~$4.53T.
     date_established: "1997 (Jobs era)"
     source_url: ""
   - partner: "OpenAI"
@@ -513,7 +577,7 @@ key_journalists:
 
 known_conflicts:
   - type: "investment"
-    description: "Owner Laurene Powell Jobs holds ~$16B+ in Apple stock (AAPL at $294.30, Jun 2026). Apple directly competes with Meta in hardware, AI, and uses 'privacy' narrative that undermines Meta's advertising model."
+    description: "Owner Laurene Powell Jobs holds ~$16.8B+ in Apple stock (AAPL at $308.63, Jul 3 2026). Apple directly competes with Meta in hardware, AI, and uses 'privacy' narrative that undermines Meta's advertising model."
     severity: 4
     evidence: "Forbes wealth estimates, Apple shareholder records"
     source_url: ""
@@ -522,8 +586,8 @@ known_conflicts:
       Owner Laurene Powell Jobs / LPJ Trust holds a significant Walt Disney Company stake
       inherited from Steve Jobs' Pixar acquisition. SEC filings document: 128.6M shares (7.6%)
       in 2014, reduced to 40.3M shares (2.5%) by 2016 (SC 13G/A). Below SEC disclosure threshold
-      since ~2016 but no public divestiture reported. At current DIS price (~$95.71), even the
-      reduced 2016 position would be worth ~$3.9B. Disney competes with Meta in streaming/content
+      since ~2016 but no public divestiture reported. At current DIS price (~$99.50, Jul 2 2026),
+      even the reduced 2016 position would be worth ~$4.01B. Disney competes with Meta in streaming/content
       (Disney+/Hulu vs Facebook Watch/Reels), advertising (Disney's ad-supported tiers compete for
       the same brand budgets), and the broader attention economy (parks, sports, entertainment).
       ESPN's streaming pivot puts Disney in direct competition with Meta's video ad revenue.
@@ -552,7 +616,7 @@ known_conflicts:
       - "https://pitchbook.com/news/articles/openai-jony-ive-io-products-acquisition"
       - "https://techcrunch.com/2025/04/07/openai-reportedly-mulls-buying-jony-ive-and-sam-altmans-ai-hardware-startup/"
     notes: >
-      Also creates Apple tension: LPJ holds $16B+ Apple stock, but io Products
+      Also creates Apple tension: LPJ holds $16.8B+ Apple stock, but io Products
       was explicitly designed to compete with Apple. Jony Ive's OpenAI device is
       positioned as the next iPhone. EC profits from both sides of the
       Apple-vs-OpenAI hardware competition.
@@ -619,6 +683,20 @@ known_conflicts:
     source_urls:
       - "https://www.fa-mag.com/news/san-francisco-revival-gets-boost-from-altman--porat--powell-jobs-79997.html"
       - "https://macemagazine.com/tech-titans-join-forces-with-san-franciscos-new-mayor-to-revitalize-the-city/"
+  - type: "governance_link"
+    description: >
+      LPJ serves on the Stanford University Board of Trustees alongside Sarah Friar, CFO of
+      OpenAI (elected Nov 2025, term from Feb 1, 2026). This creates a DIRECT GOVERNANCE LINK
+      between The Atlantic's owner and OpenAI's financial leadership — a fiduciary board
+      relationship deeper than a civic coalition. Combined with the licensing deal (May 2024),
+      the io Products equity exit ($6.5B acquisition, 2025), and the Atlantic Labs product
+      collaboration, this represents a FOURTH distinct LPJ-OpenAI connection type. No other
+      tracked publication owner has this density of relationships with a single AI company.
+    severity: 3
+    evidence: "Stanford Board of Trustees announcements, Stanford GSB commencement program (Jun 2026)."
+    source_urls:
+      - "https://news.stanford.edu/report/2025/11/07/stanford-elects-three-new-trustees/"
+      - "https://www.gsb.stanford.edu/experience/news-history/commencement/2026-mba-commencement"
   - type: "co-investment_alignment"
     description: >
       Emerson Collective co-invested with AMAZON in X-Energy's $700M Series C (Feb 2025).
@@ -1039,12 +1117,35 @@ editorial_history:
   ownership_change:
     - event: "Emerson Collective acquisition"
       date: "2017-07"
-      notes: "Laurene Powell Jobs' Emerson Collective acquired majority stake from David G. Bradley (who retained minority, still held as of 2020). Peter Lattman (Emerson Collective staffer) named vice chairman immediately. LPJ holds ~$16B in Apple stock AND ~$3.9B+ in Disney stock (Meta competitors). Key question: did coverage tone toward Apple/Disney competitors change after this ownership change?"
+      notes: "Laurene Powell Jobs' Emerson Collective acquired majority stake from David G. Bradley (who retained minority, still held as of 2020). Peter Lattman (Emerson Collective staffer) named vice chairman immediately. LPJ holds ~$16.8B in Apple stock AND ~$4.01B+ in Disney stock (Meta competitors). Key question: did coverage tone toward Apple/Disney competitors change after this ownership change?"
     - event: "Nicholas Thompson named CEO"
       date: "2020-12"
       notes: "Former Wired EIC hired as CEO. Creates direct Condé Nast editorial culture bridge. Under Thompson: profitability achieved, record subscriptions (1.4M+ by Feb 2026), 3 Pulitzer Prizes, OpenAI licensing deal (May 2024). Revenue over $100M. Also poached ~20 journalists from Washington Post."
 
 notes: |
+  UPDATED 2026-07-05: Type C ownership deep dive — The Atlantic / Emerson Collective.
+
+  LPJ TITLE CLARIFICATION: Multiple authoritative sources (Stanford GSB, Wikipedia, CFR,
+  American Academy) confirm LPJ's title is "lead investor and Board Chair" of The Atlantic —
+  not merely individual owner. This is a GOVERNANCE role, not just a financial one.
+
+  STANFORD BOARD OF TRUSTEES — OPENAI CFO CO-SERVICE:
+  LPJ serves on the Stanford Board of Trustees alongside Sarah Friar, CFO of OpenAI
+  (elected Nov 2025, term from Feb 1 2026). This creates a FOURTH distinct LPJ-OpenAI
+  connection type: (1) licensing, (2) io Products equity exit, (3) Atlantic Labs product
+  collaboration, (4) shared fiduciary governance. No other tracked publication owner has
+  four relationship types with a single AI company.
+
+  ELEMENTAL IMPACT / EARTHSHOT VENTURES:
+  LPJ chairs the board of Elemental Impact (formerly Elemental Excelerator), which EC
+  helped incubate. Spun out Earthshot Ventures ($60M→$94M climate VC). Notable LP:
+  Facebook's Chris Cox — rare cooperative financial link between EC and a senior Meta
+  executive, complicating the clean adversarial narrative.
+
+  STOCK PRICE UPDATES (Jul 2026):
+  - AAPL: $308.63 (Jul 3) up from $294.30 (Jun 24) — +4.87%. LPJ holding ~$16.8B+.
+  - DIS: $99.50 (Jul 2) up from $95.71 (Jun). 2016-era 40.3M shares = ~$4.01B.
+
   UPDATED 2026-06-28: The Atlantic is now the MOST DENSELY FINANCIALLY CONFLICTED
   publication in the 5-publication tracking set per entity (Meta/OpenAI/Apple).
   ALSO NOW THE MOST POLITICALLY CONNECTED — owner LPJ has direct access to
@@ -1107,15 +1208,16 @@ notes: |
   1. Receives ongoing licensing revenue from OpenAI (since May 2024)
   2. Realized a capital gain from OpenAI via the io Products exit (2025)
   3. Invested in io Products (Jony Ive's AI device), which competes with BOTH
-     Meta (smart glasses) and Apple (where LPJ holds $16B+ stock)
+     Meta (smart glasses) and Apple (where LPJ holds $16.8B+ stock)
 
   This triple-entanglement is UNIQUE among tracked publications. Not even the NYT
   (Amazon deal, OpenAI lawsuit) has an owner that both receives licensing revenue
   from AND has an equity exit through the same AI company.
 
   EMERSON COLLECTIVE INVESTMENT PORTFOLIO (expanded 2026-06-25):
-  - Apple stock (~$16B+, via LPJ Trust) — competes with Meta
+  - Apple stock (~$16.8B+, via LPJ Trust, AAPL $308.63 Jul 3 2026) — competes with Meta
   - LoveFrom backing (2019) → io Products → OpenAI exit ($6.5B, 2025) — competes with Meta AND Apple
+  - Disney stock (~$4.01B+ at 2016 position, DIS $99.50 Jul 2 2026) — competes with Meta
   - Mistral AI ($415M/$640M rounds) — open-source LLM competitor to Meta's Llama
   - World Labs ($1B round) — 3D AI, competes with Meta
   - X-Energy ($700M Series C, Feb 2025, co-invested with AMAZON) — nuclear SMR, competes with Meta via Amazon alignment
@@ -1130,6 +1232,7 @@ notes: |
   - Gimlet Media (2017, exited via Spotify ~$230M)
   - Axios (2016, exited 2022 via Cox Enterprises $525M) — NOTE: competitor to Atlantic
   - Amplify (2015) — edtech
+  - Elemental Impact (Board Chair, EC incubated) — climate tech accelerator, spun out Earthshot Ventures ($94M, LPs include FB's Chris Cox)
   - Monumental Sports & Entertainment (2017-2025, DIVESTED Dec 2025) — 20% stake in Wizards/Capitals
 
   CROSS-PUBLICATION OPENAI LICENSING MAP (new 2026-06-25):
@@ -1192,6 +1295,10 @@ notes: |
      Is Thompson's messaging consistent or contradictory?
   9. Cross-publication: do the 3 OpenAI-licensing publications (Atlantic, Wired, Guardian)
      show systematically different coverage of OpenAI vs the NYT (which sued)?
+  10. Does the Stanford Board co-service between LPJ and OpenAI CFO Sarah Friar create
+      any detectable editorial softening on OpenAI financial coverage?
+  11. Does the Earthshot Ventures / Chris Cox LP connection affect Atlantic coverage of
+      Meta's climate or sustainability initiatives?
 
   talent_pipelines:
     wapo_to_atlantic_2025_2026:
