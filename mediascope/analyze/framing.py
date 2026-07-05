@@ -5691,14 +5691,117 @@ _LOSS_LEADER_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["loss_leader_framing"] = _LOSS_LEADER_PATTERNS
 
 
+# ---------------------------------------------------------------------------
+# Editorial dramatization: interpretive glosses that rewrite neutral
+# factual events in heightened, dramatic language.
+#
+# Distinct from escalation_amplification, which detects *intensifying
+# modifiers* paired with threat/concern nouns ("escalating crisis,"
+# "increasingly alarmed").  Editorial dramatization catches standalone
+# dramatic descriptors and set-piece phrases that an editor inserts to
+# color an event beyond what the sourced facts support.
+#
+# Common in derivative/rewrite outlets that take wire copy and add
+# editorial drama: "unexpected reality check," "clear speed bump,"
+# "massive shakeup," "turbulent transition," "did not mince words,"
+# "aggressive and sweeping ... specifically engineered," "stark gap
+# between X and Y."
+#
+# Gap discovered in iPhone in Canada rewrite of Reuters article about
+# Zuckerberg's July 2026 town hall — all 8 editorial dramatization
+# phrases were missed by the existing toolkit, including
+# escalation_amplification.
+# ---------------------------------------------------------------------------
+_EDITORIAL_DRAMATIZATION_PATTERNS: list[re.Pattern] = [
+    # "unexpected/surprising/sudden reality check/wake-up call/reckoning"
+    re.compile(
+        r"\b(?:unexpected|surprising|sudden|rare|stunning|"
+        r"remarkable|unusual|startling|sobering)\s+"
+        r"(?:reality check|wake-?up call|reckoning|admission|"
+        r"reversal|about-?face|mea culpa|concession|confession|"
+        r"acknowledgment|acknowledgement)\b",
+        re.IGNORECASE,
+    ),
+    # "clear/obvious/significant speed bump/setback/stumble/hurdle"
+    re.compile(
+        r"\b(?:clear|obvious|significant|notable|major|serious|"
+        r"real|genuine|undeniable|unmistakable)\s+"
+        r"(?:speed bump|setback|stumble|stumbling block|hurdle|"
+        r"roadblock|obstacle|bottleneck|headwind|challenge|"
+        r"blow|hit|snag|hitch)\b",
+        re.IGNORECASE,
+    ),
+    # "massive/sweeping/aggressive/dramatic shakeup/overhaul/restructuring/upheaval"
+    re.compile(
+        r"\b(?:massive|sweeping|aggressive|dramatic|radical|drastic|"
+        r"seismic|tectonic|brutal|ruthless|wholesale|comprehensive|"
+        r"wide-?ranging|far-?reaching|all-?encompassing)\s+"
+        r"(?:shakeup|shake-?up|overhaul|restructuring|restructure|"
+        r"reorgani[sz]ation|reorgani[sz]ing|transformation|upheaval|"
+        r"revamp|reboot|pivot|purge|culling|bloodletting|housecleaning)\b",
+        re.IGNORECASE,
+    ),
+    # "turbulent/tumultuous/chaotic/painful transition/period/chapter"
+    re.compile(
+        r"\b(?:turbulent|tumultuous|chaotic|painful|bruising|rocky|"
+        r"bumpy|stormy|fraught|agonizing|wrenching|gut-?wrenching|"
+        r"grueling|gruelling|tortuous|harrowing)\s+"
+        r"(?:transition|period|chapter|phase|stretch|time|journey|"
+        r"process|transformation|overhaul|adjustment|realignment)\b",
+        re.IGNORECASE,
+    ),
+    # "did not mince words" / "pulled no punches" / "didn't sugarcoat"
+    re.compile(
+        r"\b(?:did(?:n't| not) mince (?:words|his words|her words)|"
+        r"pull(?:ed|s)? no punches|"
+        r"did(?:n't| not) sugarcoat|"
+        r"did(?:n't| not) sugar-?coat|"
+        r"laid? it on the line|"
+        r"let(?:ting)? the mask slip|"
+        r"dropped? (?:a |the )?bombshell|"
+        r"spoke? (?:with )?(?:brutal|blunt|remarkable|unusual|rare|"
+        r"surprising|candid|striking) (?:candor|honesty|frankness|"
+        r"openness|clarity|directness))\b",
+        re.IGNORECASE,
+    ),
+    # "stark/glaring/yawning/widening gap/disconnect/divide/mismatch"
+    re.compile(
+        r"\b(?:stark|glaring|yawning|widening|growing|gaping|"
+        r"troubling|alarming|revealing|telling)\s+"
+        r"(?:gap|disconnect|divide|mismatch|disparity|chasm|"
+        r"gulf|rift|distance|tension|contradiction|contrast)\s+"
+        r"(?:between|among|separating)\b",
+        re.IGNORECASE,
+    ),
+    # "specifically engineered/designed/crafted/built to" (implying deliberate scheming)
+    re.compile(
+        r"\bspecifically\s+"
+        r"(?:engineered|designed|crafted|built|constructed|"
+        r"tailored|architected|orchestrated|calibrated|calculated)\s+"
+        r"(?:to|for)\b",
+        re.IGNORECASE,
+    ),
+    # "current/ongoing friction/turmoil/chaos/fallout/wreckage"
+    re.compile(
+        r"\b(?:current|ongoing|continued|continuing|persistent|"
+        r"lingering|mounting|resulting|ensuing|subsequent)\s+"
+        r"(?:friction|turmoil|chaos|fallout|wreckage|carnage|"
+        r"disruption|instability|dysfunction|turbulence|upheaval|"
+        r"unrest|dislocation|disarray|uncertainty|angst)\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["editorial_dramatization"] = _EDITORIAL_DRAMATIZATION_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 63 pattern-matched device types plus 6 structural
-    post-pass types (69 total).
+    Scans for 64 pattern-matched device types plus 6 structural
+    post-pass types (70 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
@@ -5713,7 +5816,8 @@ def detect_framing_devices(
     consumer_ownership,
     corporate_reassurance_undercut, cross_publication_import,
     denial_contradiction,
-    editorial_aside, editorial_deflation, emotional_appeal,
+    editorial_aside, editorial_deflation, editorial_dramatization,
+    emotional_appeal,
     escalation_amplification, expert_contradiction,
     failure_precedent, false_balance,
     financial_reassurance,

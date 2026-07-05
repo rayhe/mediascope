@@ -13079,3 +13079,47 @@ New York Times: SEC insider transactions, MDL timeline updates, Perplexity litig
 - Tests: 1,402 passed (0 failed)
 - NYT profile: 1,867 → 1,918 lines (+51 net)
 - No new tests added (profile content update only)
+
+---
+
+## 2026-07-05 07:00 PT — Type A: Article Deep Dive
+
+### Article
+- **Source:** iPhone in Canada
+- **URL:** https://www.iphoneincanada.ca/2026/07/03/zuckerberg-admits-metas-ai-push-isnt-working-as-planned/
+- **Headline:** Zuckerberg Admits Meta's AI Push isn't Working as Planned
+- **Date:** July 3, 2026
+- **Type:** Derivative rewrite of Reuters wire copy (Jul 2, 2026 Zuckerberg town hall)
+
+### Gap Discovered
+All 8 editorial dramatization phrases in the derivative article were missed by the existing toolkit, including `escalation_amplification` (which fires on modifier + threat-noun pairs, not standalone dramatic set-pieces). The Reuters original uses neutral language; the derivative adds:
+1. "unexpected reality check"
+2. "clear speed bump"
+3. "stark gap between executive timelines and actual engineering breakthroughs"
+4. "aggressive and sweeping corporate reorganisation specifically engineered"
+5. "massive shakeup"
+6. "turbulent transition"
+7. "did not mince words"
+8. "current friction"
+
+### Fix: New `editorial_dramatization` device type (#70)
+- 8 regex pattern classes in `mediascope/analyze/framing.py` covering: reality-check/wake-up-call, speed-bump/setback, massive-shakeup/overhaul, turbulent-transition/period, did-not-mince-words/pulled-no-punches, stark-gap/disconnect, specifically-engineered/designed, current-friction/turmoil
+- 47 tests in `tests/test_editorial_dramatization.py` — unit tests per pattern class + integration test on full iPhone in Canada article (catches ≥6 of 8 phrases) + negative cases
+- Analysis annotation: `examples/sample_output/iphoneincanada_zuckerberg_ai_agents_2026_07_03_analysis.md`
+
+### Docs Updated
+- `docs/METHODOLOGY.md` — Extended device table + tier count (69→70, 53→54)
+- `docs/ARCHITECTURE.md` — device name list, test file listing, tree counts, pattern count (389→397)
+- `docs/AGENT_GUIDE.md` — device type count, tier breakdown
+- `docs/QUALITY_STANDARDS.md` — annotated article count (96→97)
+- `README.md` — test file listing, test count header (1402→1449), device/pattern counts
+- `mediascope/cli.py` — CLI analyze docstring count (69→70)
+- `mediascope/analyze/framing.py` — docstring counts + device list
+- `tests/test_structural_consistency.py` — expected counts
+- `tests/test_nyt_ai_reviews.py` — device registry expected count + type set
+
+### Stats
+- Tests: 1,449 passed (0 failed), up from 1,402 (+47)
+- Framing device types: 70 (was 69), pattern-matched: 64 (was 63)
+- Total regex patterns: 397 (was 389), +8 new
+- 0 regressions
