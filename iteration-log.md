@@ -13295,3 +13295,39 @@ instead of her own "Were there even guardrails in place?"
 - Academic/Research aliases: 49 (was 46)
 - Commit: 57578f3
 - 0 regressions
+
+---
+
+## 2026-07-05 11:00 PT — Type B: Journalist/Publication Research
+
+### Focus
+Atlantic editorial_changes gap fill — Aug 2025, Oct 2025, Dec 2025, and Jan 2026 batch hires missing individual entries.
+
+### Research Conducted
+- Verified all existing Atlantic editorial_changes entries against E&P, MediaPost, TalkingBizNews, and Parlour News announcements
+- Confirmed 6 missing entries: Emily Bobrow (Aug 2025), Katie Zezima (Aug 2025), Jonathan Lemire (Aug 2025), Adam Kirsch (Oct 2025), Michael Leibel (Dec 2025), Chris Suellentrop (Jan 2026)
+- Cross-referenced WaPo→Atlantic exodus scale: ~30 WaPo reporters/editors hired by Atlantic in recent years (TheWrap, Mediagazer)
+- Confirmed WSJ Review section→Atlantic pipeline: Bobrow and Kirsch from same WSJ desk within 2 months
+
+### Editorial Changes Additions (+6 entries)
+1. **Emily Bobrow** (2025-08) — WSJ features editor/reporter → Atlantic senior editor, politics/global/ideas team. Previously The Economist (culture/politics/policy, NY/London/DC). WSJ→Atlantic pipeline (Murdoch/Dow Jones → Emerson Collective).
+2. **Katie Zezima** (2025-08) — 11-year WaPo veteran → Atlantic senior editor, politics/global/ideas team. White House correspondent (Obama), America desk editor, climate editor. Two Pulitzer finalist teams. Knight-Wallace Fellow. Highest-seniority WaPo editor (not just reporter) in the 2025 exodus.
+3. **Jonathan Lemire** (2025-08) — Elevated from contributing writer (Jan 2025) to staff writer. MSNBC Morning Joe co-host. AP→Politico→Atlantic arc. Author of "The Big Lie." Broadcast-print amplification loop: Atlantic framing gets same-day cable airtime.
+4. **Adam Kirsch** (2025-10) — WSJ Review section features editor → Atlantic senior editor. Author (4 volumes poetry), Columbia seminar teacher. Second WSJ Review editor to move to Atlantic after Bobrow — same desk, 2 months apart.
+5. **Michael Leibel** (2025-12) — Bloomberg News/Businessweek (8 years) → Atlantic senior editor for community. Building comments platform and conversation forum. UNC Chapel Hill. Community moderation role structurally shapes audience feedback loops.
+6. **Chris Suellentrop** (2026-01) — WaPo opinions editor → Atlantic senior editor. 5-publication migration: Slate→Politico→NYT→WaPo→Atlantic. NYT's first blogger. Edited Ellie Award-winning profile at NYT Magazine.
+
+### Sources (all verified, URLs in entries)
+- E&P: editorandpublisher.com/stories/...261030 (Bobrow/Zezima/Gottsegen/Lemire)
+- E&P: editorandpublisher.com/stories/...258550 (Kirsch/Parrales)
+- Parlour News: parlournews.com (Leibel Dec 2025 announcement)
+- E&P: editorandpublisher.com/stories/...259365 (Suellentrop/Grabar/Shulevitz/Iweala)
+
+### Files Changed
+- `profiles/careers/editorial_changes.yaml` — +6 Atlantic entries (1,183→1,266 lines, 113→119 editorial change entries)
+
+### Stats
+- Tests: 1,454 passed (0 failed), unchanged
+- Editorial changes: 119 entries (was 113, +6)
+- editorial_changes.yaml: 1,266 lines (was 1,183, +83)
+- 0 regressions
