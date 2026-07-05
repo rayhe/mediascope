@@ -12766,3 +12766,31 @@ Changes:
 
 Sources: Editor & Publisher announcements (E&P), EmTech AI 2026 (Morningstar/PR Newswire), talkingbiznews.com
 Tests: 1388 passed, 0 failed.
+
+---
+
+## 2026-07-04 23:00 PT — Type B: Journalist/Publication Research — Profile Expansion + Fellowship Discovery
+
+### Focus
+Expanded the two thinnest journalist profiles in the database (2 career entries each) with newly discovered concurrent fellowship positions, and updated their biographical notes with verified awards and publication credits.
+
+### What Changed
+
+**1. JAMES O'DONNELL: +1 career entry (2 → 3)**
+Added 2023 Tow Journalism Fellowship at FRONTLINE PBS/CUNY (Feb 2023 – Jan 2024). Held concurrently while senior reporter at MIT Technology Review. Funded by Tow Foundation. Source: FRONTLINE/CUNY joint announcement via Muck Rack. Updated notes with Signal contact info (jamesodonnell.22). KEY INSIGHT: Dual institutional affiliation (MIT TR + FRONTLINE) during 2023 gives him unusual cross-pollination between investigative documentary and magazine AI coverage traditions.
+
+**2. JESSICA HAMZELOU: +1 career entry (2 → 3)**
+Added 2023-24 Knight Science Journalism Fellowship at MIT. Researched longevity science during fellowship year. Selected from 2022-23 announcement cycle while still at New Scientist, spent the academic year at MIT while affiliated with MIT Technology Review. Source: KSJ program page, MIT News 2023-24 fellows announcement. Updated notes with verified awards: ABSW British Science Writer of the Year 2017, BSME Best Specialist/Digital Writer 2018 and 2021. Added publication credits: Washington Post, Slate, Ideas Illustrated, The Lancet.
+
+**3. README.md MIGRATION COUNT UPDATE**
+Auto-detected migration count updated from 408 to 410 to reflect the 2 new fellowship career entries.
+
+### Also Investigated (Not Added)
+- **Emily Baker-White** (Forbes): Significant tech reporter but Forbes is outside the 5 tracked publications. Confirmed NYT and Wired Magazine bylines via Muck Rack — potential future addition if cross-publication tracking expands.
+- **Brenda Stolyar** (Wired → Wirecutter, ~May 2025): Gear team product reviewer departure. Low analytical value for bias analysis.
+- **Zak Jason** (Wired → Business Insider, May 2023): Features editor/research director departure. Now executive editor of Discourse at Business Insider.
+
+### Stats
+- Tests: 1,388 passed (0 failed)
+- Journalists: 115 (unchanged)
+- Migrations: 410 (was 408)
