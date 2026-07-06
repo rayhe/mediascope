@@ -13580,3 +13580,83 @@ MIT Technology Review journalist expansion + Isabella Ward profile deepening.
 - Multi-pub: 132 (was 130, +2)
 - Auto-detected migrations: 426 (was 425, +1)
 - 0 regressions
+
+---
+
+## 2026-07-05 18:00 PT — Type B: Journalist/Publication Research
+
+**Commit:** `9ed7fd2` — Type B: Deep-dive Tate Ryan-Mosley + add Bobbie Johnson (134 journalists, 428 migrations, 270+ pubs)
+
+### Deep-Dive: Tate Ryan-Mosley (MIT TR senior tech policy reporter)
+
+**Education discovered:**
+- University of Notre Dame (~2010-2014), BA likely in Mathematics & Statistics / Biological Sciences
+- 2012 Kellogg Institute International Scholars Program fellow — 8 weeks in Rwanda with YWCA of Rwanda
+- Sources: Kellogg Institute AR 2011-2012 (kellogg.nd.edu), alumni newsletter (yumpu.com)
+
+**Career enrichments:**
+- Consultant role: linked Kellogg fellowship → consulting pivot explicitly
+- MIT TR researcher: added In Machines We Trust podcast co-production credits (Jennifer Strong, Emma Cillekens, Karen Hao)
+- Senior reporter (major additions):
+  - **"The Secret Police" (2022):** Multi-part investigative series with Sam Richards on Minneapolis police surveillance of George Floyd protesters. Edited by Michael Reilly, Mat Honan, Bobbie Johnson. Cited by OHCHR, Cambridge University Press, Wikipedia. Prompted reactions from Rep. AOC and Rep. Ilhan Omar.
+  - **"The Technocrat" newsletter:** Weekly tech policy newsletter (Section 230, encryption, EU AI Act, deepfakes, election tech)
+  - **Congressional citation:** H. Rept. 119-72 (Informing Consumers About Smart Devices Act)
+  - **Academic citations:** American Progress, Amnesty International ("Violations in the Shell"), Ohio State Law Review, Stanford CS182 syllabus
+  - **Peer-reviewed publication:** "Digital peacebuilding in post-conflict Colombia — A conceptual framework," *Global Policy* (LSE), vol. 15, issue S3, pp. 47-57, June 2024 (doi:10.1111/1758-5899.13330). Indexed on IDEAS/RePEc.
+  - **C-SPAN appearance:** Biden AI executive order (StudentCam)
+  - Article count updated: 113+ → 115+
+
+**Analytical value updated:** Non-traditional pipeline (international development → consulting → journalism) with peer-reviewed academic publication unusual for working journalists. Investigation cited by Congress and UN bodies demonstrates institutional capacity for long-form adversarial reporting.
+
+### New Journalist: Bobbie Johnson (MIT TR senior editor)
+
+**Career timeline:**
+1. Guardian technology reporter (~2006-2012) — covered Silicon Valley, tech industry
+2. Matter magazine co-founder (2012-2013) — Kickstarter-backed ($140K raised in 36 hours, goal was $50K), National Magazine Award, acquired by Evan Williams' Medium within 5 months
+3. Anxy Magazine Editor in Chief (2017-2019) — mental health/culture/design publication
+4. MIT Technology Review senior editor (2018-present) — print/features, Covid Tracing Tracker, edited "The Secret Police" investigation
+
+**Education:** Queen Mary University of London, BA English Literature (1997-2000)
+
+**Multi-pub migrations:** Guardian → Matter (founder), Matter → MIT TR
+
+**Analytical value:** As senior editor, shapes which stories get published and how they're framed. Guardian background connects MIT TR editorial culture to UK tech journalism traditions (more adversarial toward tech power than US norms). Matter startup experience gives direct exposure to Silicon Valley business models.
+
+### Count updates
+- Journalists: 133 → 134
+- Multi-pub: 132 → 133
+- Auto-detected migrations: 426 → 428
+- Publication floor: 250+ → 270+ (271 unique slugs)
+- Updated: README.md, EDITORIAL_HISTORIES.md, careers_demo.py
+
+### Stats
+- Tests: 1,454 passed (0 failed)
+- Files changed: 4 (journalists.yaml +110/-18, README.md, EDITORIAL_HISTORIES.md, careers_demo.py)
+
+## 2026-07-05T19:00 PT — Type B: Journalist Research
+
+### Focus: Nitasha Tiku Deep Profile Expansion + Data Correction
+
+**Selected journalist:** Nitasha Tiku — previously listed on Wired's business desk roster (editorial_changes.yaml), but actually at Washington Post 2019–2026.
+
+**Profile expansion (7 → 10 career events):**
+- Added 2 education events: Columbia BA (English & Comp Lit, ~2003–2007), NYU MA (Journalism, ~2007–2009)
+- Enriched all 7 existing career events with detailed analytical notes, source URLs, and cross-references
+- Added WaPo rehire event (~Mar 2026): After Feb 4, 2026 mass layoff (~300+ journalists), Tiku rehired on "delayed layoff" basis per CJR/Tomorrow's Publisher
+
+**Critical data correction:** Tiku incorrectly listed on Wired 2024–2026 business desk roster across 7 references in editorial_changes.yaml. She was at WaPo the entire time (Sep 2019–Feb 2026). All 7 references removed via sed.
+
+**Sources:**
+- Talking Biz News: WaPo layoff announcement, Wired hire (2017), WaPo hire (2019)
+- CJR: WaPo rehiring analysis (confirmation for Tiku, Spring, Hendrix, Johnson, Shih)
+- Tomorrow's Publisher: WaPo rehire summary
+- The Org: Career timeline/education
+- Washingtonian: WaPo layoff scale (~44–47% of newsroom)
+- Plex/Podchaser: Documentary appearances
+- Poynter: Verge hire (2015)
+
+### Stats
+- Tests: 1,454 passed (0 failed)
+- Files changed: 3 (journalists.yaml, editorial_changes.yaml, README.md)
+- Journalists: 134 (unchanged), Multi-pub: 133 (unchanged), Migrations: 428 (unchanged)
+- Note: Education events and same-publication rehire don't create inter-publication migrations
