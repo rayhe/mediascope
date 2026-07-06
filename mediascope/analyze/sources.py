@@ -197,6 +197,7 @@ class SourceMention:
     quote: str = ""             # The quoted text, if any
     attribution_verb: str = ""  # The verb used for attribution
     source_type: str = "named"  # "named", "anonymous", or "no_comment"
+    quote_count: int = 1        # Number of distinct attribution instances
 
 
 def _is_anonymous_descriptor(text: str) -> bool:
@@ -927,6 +928,25 @@ def extract_sources(text: str) -> list[SourceMention]:
             r"\b(?:reported|confirmed)\s+by\s+(?:The\s+)?[A-Z]\w+\s+and\s+confirmed\s+by\s+multiple\s+sources\b",
             re.IGNORECASE,
         ),
+        # "some workers/employees were [adjective]" — anonymous collective
+        # sentiment attribution.  Common in wire service reporting where
+        # the journalist attributes a group feeling without a direct quote:
+        # "some workers were skeptical", "many employees were frustrated".
+        # Uses state/sentiment verbs rather than speech attribution verbs.
+        #
+        # Limited to adjectives that strongly imply a response to specific
+        # claims or events (skeptical, doubtful, wary) rather than general
+        # emotional states (unhappy, angry, upset) which are more often
+        # editorial narration than anonymous attribution.
+        re.compile(
+            r"\b(?:some|several|multiple|many|numerous|a few|a handful of)"
+            r"\s+(?:current\s+(?:and\s+)?(?:former\s+)?)?"
+            r"(?:workers|employees|staffers|engineers|people|sources|individuals|executives)"
+            r"\s+(?:were|are|remain(?:ed)?|felt|seemed|appeared|grew)"
+            r"\s+(?:skeptical|doubtful|unconvinced|wary|critical|"
+            r"apprehensive|uneasy|alarmed|dismayed|demoralized)\b",
+            re.IGNORECASE,
+        ),
     ]
 
     # No-comment / declined-to-comment patterns — signals the entity chose not
@@ -1322,6 +1342,36 @@ def extract_sources(text: str) -> list[SourceMention]:
                 attribution_verb=verb,
                 source_type="organizational",
             ))
+
+    # --- Quote count enrichment ---
+    # Count how many distinct attribution instances reference each named
+    # source in the full text.  The extraction above deduplicates by name,
+    # producing one SourceMention per unique identity.  This post-pass
+    # counts all attribution occurrences (verb + name, name + verb,
+    # "according to" + name) so consumers can quantify sourcing weight.
+    verb_re_str = "|".join(re.escape(v) for v in sorted(ALL_VERBS, key=len, reverse=True))
+    for src in sources:
+        if src.source_type not in ("named",):
+            continue
+        name = src.name
+        # Build patterns for all name forms (full name + last name)
+        name_forms = [re.escape(name)]
+        parts = name.split()
+        if len(parts) > 1:
+            name_forms.append(re.escape(parts[-1]))  # last name
+        name_alt = "|".join(name_forms)
+        count_pat = re.compile(
+            rf"(?:\b(?:{name_alt})\s+(?:{verb_re_str})\b"
+            rf"|\b(?:{verb_re_str})\s+(?:{name_alt})\b"
+            rf"|\b[Aa]ccording to (?:\w+\s+){{0,3}}(?:{name_alt})\b"
+            rf"|\b(?:{name_alt}),\s+[^.\"]*?,\s*(?:\w+ly\s+)?(?:{verb_re_str})\b"
+            rf"|\b(?:{name_alt})\s+(?:has|have|had)\s+(?:\w+ly\s+)?(?:{verb_re_str})\b"
+            rf"|(?:,\s*(?:{name_alt})\s+(?:{verb_re_str}))"  # ", Zuckerberg said"
+            rf"|(?:,\s*he\s+(?:{verb_re_str})))"  # ", he said" — attributed to subject
+        )
+        hits = list(count_pat.finditer(text))
+        if len(hits) > 1:
+            src.quote_count = len(hits)
 
     return sources
 

@@ -3275,6 +3275,25 @@ _CONFESSION_FRAMING_PATTERNS: list[re.Pattern] = [
         r"(?:admission|acknowledgment|acknowledgement|concession|confession)",
         re.IGNORECASE,
     ),
+    # "acknowledged/admitted/conceded + [noun] shortcomings/failures/..."
+    # When the confession verb is followed by a direct object noun rather
+    # than a "that" clause or quoted speech, the core pattern misses it.
+    # E.g. "Zuckerberg acknowledged shortcomings" — the verb frames a
+    # neutral statement as a confession without requiring the "that" clause.
+    re.compile(
+        r"\b(?:[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?|"
+        r"the (?:CEO|CTO|COO|CFO|chief|executive|company|firm|"
+        r"spokesperson|official|director|president|chairman|VP|"
+        r"vice president|head|manager|leader))\s+"
+        r"(?:also\s+)?"
+        r"(?:admit(?:ted|s)?|conced(?:ed|es|ing)|acknowledg(?:ed|es|ing))\s+"
+        r"(?:the\s+|its\s+|his\s+|her\s+|their\s+|some\s+|several\s+|major\s+)?"
+        r"(?:shortcomings?|failur(?:e|es|ings?)|mistake(?:s)?|misstep(?:s)?|"
+        r"error(?:s)?|problem(?:s)?|weakness(?:es)?|flaw(?:s)?|"
+        r"deficien(?:cy|cies)|inadequa(?:cy|cies)|"
+        r"miscalculat(?:ion|ions)|blunder(?:s)?)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["confession_framing"] = _CONFESSION_FRAMING_PATTERNS
@@ -5397,10 +5416,10 @@ _POLICY_REVERSAL_PATTERNS: list[re.Pattern] = [
     # "mandatory → voluntary" / "required → optional" / "opt-out → opt-in"
     re.compile(
         r"\b(?:(?:from|was|were|moved from|changed from|switched from)\s+)?"
-        r"(?:mandatory|required|compulsory|default|automatic|opt-?out)\b"
-        r".{1,60}?"
-        r"\b(?:to\s+)?(?:voluntary|optional|opt-?in|elective|"
-        r"on (?:a |an )?(?:opt-?in|voluntary|optional)\s+basis)\b",
+        r"(?:mandatory|required|compulsory|default|automatic|opt[- ]?out|no way to opt[- ]?out)\b"
+        r".{1,150}?"
+        r"\b(?:to\s+)?(?:voluntary|optional|opt[- ]?in|elective|"
+        r"on (?:a |an )?(?:opt[- ]?in|voluntary|optional)\s+basis)\b",
         re.IGNORECASE | re.DOTALL,
     ),
     # "no longer [requires/uses/collects]" — cessation of previous policy

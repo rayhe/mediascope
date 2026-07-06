@@ -1,0 +1,37 @@
+Meta's Zuckerberg says AI agent tech progressing slower than expected
+
+By Katie Paul and Courtney Rozen
+
+NEW YORK, July 2 (Reuters) – Meta Chief Executive Mark Zuckerberg acknowledged shortcomings in the company's sweeping restructuring at an internal town hall on Thursday, saying the systems known as AI agents had not progressed as quickly as he had expected, according to a recording heard by Reuters.
+
+Zuckerberg added that a company reorganization that included major job cuts was not as "clean" as it could have been and that executives had miscalculated on the timing of the changes.
+
+Zuckerberg and other Meta executives have been seeking to moderate some of the organizational changes introduced earlier this year, without fundamentally changing course. The company laid off about 10% of its global workforce and reassigned roughly 7,000 employees to AI-focused teams in May, moves that prompted employee pushback and raised concerns about morale.
+
+The changes were part of a broader restructuring aimed at funding costly investments in artificial intelligence infrastructure and positioning Meta to capitalize on efficiency gains from AI-assisted work. Zuckerberg told employees in May that he did not expect further companywide layoffs this year, though some workers were skeptical.
+
+In retrospect, he said, the "trajectory of the agentic development over at least the last four months hasn't really accelerated in the way that we expected," and that the company's bets on the new structure "haven't come to fruition yet." Zuckerberg was referring to AI agents, automated systems that can execute tasks on behalf of a user.
+
+Conversations he was having "with our top people" when they started planning the restructuring in January and February "were that they were worried that we weren't going to move fast enough to adapt," Zuckerberg said.
+
+At the time, he said, executives were "super optimistic" about tools like Claude Code from AI startup Anthropic.
+
+Meta is projected to spend as much as $145 billion on AI infrastructure this year, a significant portion of Big Tech's more than $700 billion outlay on the technology.
+
+Zuckerberg said he expects that the social media giant will begin to experience more significant benefits from its AI investments within the next three to six months.
+
+A Meta spokesperson declined to comment on Thursday.
+
+MOUSE-TRACKING SOFTWARE REVIEW
+
+In the same town hall, Meta's chief technology officer, Andrew Bosworth, said a review of a recent data security incident with the company's controversial mouse-tracking software indicated that no employee data was included in AI training.
+
+Last month, Meta paused the program, which tracks employee mouse movements and digital activity for AI training, while investigating the exposure of sensitive data.
+
+If the company turns the program back on once the review is completed, it will be on an "opt-in" basis, he said.
+
+"For people who are comfortable, that's great, they can contribute to this kind of great human survey. To people who are not, it is not an issue," he told employees at the town hall on Thursday.
+
+When Meta first installed the program on U.S. employees' computers in April, Bosworth told them there was no way to opt out.
+
+(Reporting by Katie Paul in New York and Courtney Rozen in Washington; Additional reporting by Jaspreet Singh in Bengaluru; Editing by Peter Henderson and Matthew Lewis)

@@ -49,6 +49,7 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "AI tokens", "AI usage", "AI capacity", "computing capacity",
         "computing power", "AI training", "inference",
         "AI hackathon", "AI Innovation", "AI-focused",
+        "agentic", "agentic development", "agentic AI",
     ],
     "privacy_data": [
         "privacy", "data breach", "data leak", "personal data",
@@ -219,6 +220,7 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "computing capacity", "capacity constraints",
         "infrastructure spending", "capex", "capital expenditure",
         "data centre", "data center", "data centres", "data centers",
+        "restructuring", "reorganization", "organizational changes",
     ],
     "defense_military": [
         "military", "defense contractor", "defense contract",

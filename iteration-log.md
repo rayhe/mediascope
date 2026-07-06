@@ -14099,3 +14099,54 @@ Two new framing device types added to `mediascope/analyze/framing.py`:
 - All **1,454 tests pass** (0 failures)
 - Structural consistency guards updated: device count, pattern count, docstring list, doc sync
 - Commit: `b11f488` — pushed to `main`
+
+## 2026-07-06 04:00 PT — Type A: Article Deep Dive (Reuters Zuckerberg AI Agents)
+
+### Focus
+Article deep dive on **Reuters exclusive** by Katie Paul and Courtney Rozen: "Meta's Zuckerberg says AI agent tech progressing slower than expected" (July 2, 2026). Covers the Zuckerberg internal town hall — same event already in the corpus's same-event comparison cluster.
+
+### Article Selection
+Extensive searching found no directly accessible July 2026 articles from the 5 tracked publications (Wired, NYT, Guardian, Atlantic, MIT TR) — domains blocked/paywalled. Selected Reuters wire service article covering the same Zuckerberg town hall event for cross-outlet comparison (existing cluster: 5 outlets, 1.23-point tone spread).
+
+### Toolkit Gaps Found (5)
+1. **`ai_development` topic missed** (Priority 1): Scored 0.4818 (4th) but cut by `top_n=3`. Missing "agentic"/"agentic development" keywords; 44-keyword set dilutes coverage fraction
+2. **`confession_framing` missed** (Priority 1): "acknowledged shortcomings" not detected — core pattern requires `that`-clause or quote after verb, misses direct-object noun construction
+3. **Source quote counting absent** (Priority 2): Zuckerberg has 9 attribution instances but only appears once (dedup by design); no way for consumers to quantify sourcing weight
+4. **Anonymous collective sentiment missed** (Priority 2): "some workers were skeptical" undetected — state verb "were" not in attribution verb set
+5. **`policy_reversal` partially broken** (Priority 3): `opt-?out` regex doesn't match "opt out" (space-separated); 60-char distance too short; reverse text order (resolution-first) a structural gap
+
+### Toolkit Improvements
+**Topics (`mediascope/analyze/topics.py`):**
+- Added "agentic", "agentic development", "agentic AI" to `ai_development` (47 keywords)
+- Added "restructuring", "reorganization", "organizational changes" to `corporate_strategy` (45 keywords)
+- `ai_development` score: 0.4818 → **0.5021** (now ranks 3rd, enters default top_n window)
+- `corporate_strategy`: unranked → **0.4111** (new detection)
+
+**Sources (`mediascope/analyze/sources.py`):**
+- Added `quote_count: int` field to `SourceMention` — post-extraction pass counts all attribution instances per source identity using multi-pattern regex
+- Added anonymous collective sentiment pattern: "some/several/many [workers/employees] were [skeptical/doubtful/wary/critical/...]" — narrow adjective list to avoid false positives from editorial narration
+- Zuckerberg: 1 mention → **9 quote_count**; Bosworth: 1 → **4**; "some workers were skeptical" → **new detection**
+
+**Framing (`mediascope/analyze/framing.py`):**
+- Added `confession_framing` pattern for direct-object construction: Name + admitted/acknowledged/conceded + [shortcomings/failures/mistakes/missteps/errors/miscalculations/blunders]
+- Fixed `policy_reversal` pattern 3: `opt-?out` → `opt[- ]?out` (matches space-separated); distance 60 → 150 chars; added "no way to opt out" trigger
+
+### VADER Failure Documentation
+Raw VADER compound = **0.9721** (strongly positive) for an article about failed restructuring, slow AI progress, and layoffs. Corrected composite = **-0.3131**. The 1.29-point correction is the largest in the corpus. Specific failure: corporate-context verbs ("acknowledged", "expects", "benefits", "comfortable", "optimistic") read as positive despite negative editorial frames.
+
+### Known Remaining Gaps (not fixed)
+- `policy_reversal` reverse text order: wire services present resolution before problem; adding reverse patterns risks false positives
+- `top_n=3` default may be too aggressive for multi-topic articles (this article has 5 genuine topics)
+
+### Counts Updated
+- Total regex patterns: 419 → **420** (confession_framing: 9 → 10)
+- Annotated articles: 102 → **103**
+- Docs updated: ARCHITECTURE.md, README.md, test_structural_consistency.py
+
+### Test Results
+- All **1,454 tests pass** (0 failures, 0 regressions)
+- Commit: (pending)
+
+### Saved Files
+- `examples/sample_output/reuters_zuckerberg_ai_agents_slow_2026_07_02_article.txt`
+- `examples/sample_output/reuters_zuckerberg_ai_agents_slow_2026_07_02_analysis.md`
