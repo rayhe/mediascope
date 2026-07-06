@@ -14585,3 +14585,40 @@ Five-layer enforcement stack now documented: (1) regulatory (CMA opt-out), (2) i
 ### Commit
 `651b042` — pushed to `rayhe/mediascope` main
 
+
+---
+
+## 2026-07-06 14:00 PT — Type D: Toolkit Quality & Documentation
+
+### Focus: METHODOLOGY.md §17 Stale Corpus Statistics
+
+**Problem discovered:** METHODOLOGY.md §17 (Annotated Corpus Statistics) had not been updated since the corpus was at 100 articles. The corpus has since grown to 105 articles across 33 publications, but §17 still referenced "100 real articles" and "27 distinct publications" in multiple places. QUALITY_STANDARDS.md was already correct (105) because it had an existing structural consistency guard — but METHODOLOGY.md had no such guard.
+
+**Documentation drift audit:**
+- §17.1 Overview: "100 real articles" → "105 real articles"
+- §17.2 Publication Distribution: "27 distinct publications" → "33 distinct publications"
+  - Wire services: Reuters 7 → 9 (added EU WhatsApp antitrust interim, Zuckerberg AI agents slow, Dalton Smith departure)
+  - Tech editorial: 10 → 12 publications, 18 → 22 articles (added LiveMint, TechTarget)
+  - General interest: 3 → 5 publications (added CNN, Futurism)
+- §17.3 Temporal Distribution: Jun 60 → 63, Jul 20 → 21, trajectory text updated
+- §17.5 Correction Path Coverage: "Of the 100/80" → "Of the 105/85"
+
+**New structural consistency guards (test_structural_consistency.py):**
+1. `test_methodology_annotated_article_count` — checks that METHODOLOGY.md §17.1's "corpus of **N real articles**" matches actual `*_analysis.md` file count on disk. Prevents silent drift when Type A iterations add articles.
+2. `test_methodology_publication_count` — checks that METHODOLOGY.md §17.2's "**N distinct publications**" matches normalized publication slug count from corpus filenames. Uses prefix-based normalization for 38 known publication prefixes.
+
+**Meta-documentation updates:**
+- README.md: test count 1454 → 1456, per-file count for test_structural_consistency.py 93 → 95
+- ARCHITECTURE.md: test count header 1454 → 1456, test_structural_consistency.py description updated with §17 guard mention
+
+### Files Modified
+- `docs/METHODOLOGY.md` — §17 corpus stats corrected (6 edits across §17.1, §17.2, §17.3, §17.5)
+- `tests/test_structural_consistency.py` — +2 new guards (test_methodology_annotated_article_count, test_methodology_publication_count)
+- `README.md` — test count and per-file count updates
+- `docs/ARCHITECTURE.md` — test count header and test description updates
+
+### Test Results
+- **1,456 tests pass** (0 failures)
+
+### Commit
+`f324896` — pushed to `rayhe/mediascope` main
