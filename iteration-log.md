@@ -14378,3 +14378,72 @@ CNN is not a tracked publication but was selected because: (1) all 5 tracked pub
 
 ### Test Results
 - All **1,454 tests pass** (0 failures, 0 regressions)
+
+---
+
+## Iteration: Type B — Journalist/Publication Research
+**Date:** 2026-07-06 10:00 PT
+**Commit:** `08a50b9` — Type B: Deep-dive Karen Weise (NYT), Ali Breland (Atlantic), update Matteo Wong + Lily Hay Newman (134 journalists, 436 migrations, 270+ pubs)
+
+### Work Completed
+
+1. **Karen Weise (NYT)** — Expanded from 3 career entries/445 chars to 7 career entries with full sourced biography:
+   - Added: Yale BA, UC Berkeley J-School, management consulting stint, SoCal public radio, ProPublica internship
+   - Expanded Bloomberg Businessweek entry with Dan Price/Gravity Payments exposé details, SABEW award
+   - Expanded NYT entry with Amazon robotics scoop (Oct 2025), AI spending coverage, Hard Fork podcast appearance
+   - Sources: TalkingBizNews hire announcement, Techmeme, NPR Morning Edition transcripts
+
+2. **Ali Breland (Atlantic)** — Expanded from 3 entries/164 chars to 6 career entries with full sourced biography:
+   - Added: UT Austin (Plan II Honors, English + Philosophy minors, 2014), freelance (CNN, CSM, HuffPost), POLITICO (web producer), The Hill (tech reporter)
+   - Expanded Mother Jones entry with key investigations (Gabon deepfake, QAnon, Nick Fuentes, Type Investigations fellowship)
+   - Expanded Atlantic entry with key articles cited in Yale Law Journal and Public Citizen reports
+   - Sources: Time4Coffee podcasts (#16, #92), Type Investigations, Editor & Publisher, Muck Rack, PEN America, Daily Texan archives
+   - Added Ali Breland hire to `editorial_changes.yaml`
+
+3. **Matteo Wong** — Updated existing entry (index 40) notes with enriched framing signature, Meta coverage analysis, and Emerson Collective context. Removed duplicate entry erroneously added during research (Wong already existed in dataset as entry #41).
+
+4. **Lily Hay Newman** — Updated Wired career entry with suspension details from Type C findings (The Wrap, May 27, 2026, union dispute identification, analytical significance).
+
+### Count Changes
+- Migration count: 435→436 (from career event timeline updates)
+- Journalist count: unchanged at 134 (duplicate Wong entry discovered and removed)
+- Multi-pub count: unchanged at 133
+
+### Files Modified
+- `profiles/careers/journalists.yaml` — 3 profiles expanded + 1 updated
+- `profiles/careers/editorial_changes.yaml` — 1 Atlantic entry added
+- `README.md` — migration count 435→436 in careers_demo table row
+- `docs/EDITORIAL_HISTORIES.md` — migration count 435→436
+
+### Test Results
+- All **1,454 tests pass** (0 failures, 0 regressions)
+
+---
+
+## 2026-07-06 10:00 PT — Type B: Dell Cameron Deep Expansion
+
+### Focus
+Deep-dive profile expansion for **Dell Cameron** (Wired senior writer, national security/surveillance beat). Selected as target based on worst sourcing ratio among high-priority journalists — 4 career entries with only 2 sourced (50%).
+
+### Changes
+
+1. **Dell Cameron** — Corrected career timeline from 4 entries to 3 (removed erroneous Vice Media freelance entry; Cameron's own bio at dellcameron.me confirms only Daily Dot → Gizmodo → Wired). All 3 entries now 100% sourced.
+   - **Daily Dot (2014–2017):** Added detailed notes on Sabu Files FBI hacker-informant investigation (sabufiles.com), 93.4M Mexican voter data breach, terrorist watchlist revelation, DOJ FOIA filing (entry 17-122), DHS source development. Sources: dellcameron.me, sabufiles.com, Privacy International, DOJ FOIA log, smithforensic.blogspot.com.
+   - **Gizmodo (2017–2022):** Added "Prediction: Bias" PredPol investigation details (Edward R. Murrow Award, 2 SPJ awards), collaboration with Dhruv Mehrotra on 5.9M+ predictions across 38 jurisdictions. Sources: TalkingBizNews, The Org, AISE bio page.
+   - **Wired (2022–present):** Added NameTag/face recognition 4-article series (Jun 4-15, 2026), Dialog/Thiel leak 4-article series (Jun 16-26, 2026), ICE surveillance, license plate tracking, Twitter suspension incident, Mehrotra partnership continuation. Sources: BuzzSumo/Wired author page, dellcameron.me.
+   - Bio: Dallas TX, pro-union (NewsGuild-CWA), surveillance-state framing lens.
+   - Source URL coverage: 2/4 (50%) → 3/3 (100%)
+
+### Count Changes
+- Journalist count: unchanged at 134
+- Multi-pub count: unchanged at 133
+- Migration count: unchanged at 436
+
+### Files Modified
+- `profiles/careers/journalists.yaml` — Dell Cameron profile rewritten (4→3 entries, all sourced, massively expanded notes)
+- `profiles/careers/editorial_changes.yaml` — no change
+- `README.md` — no count changes needed
+- `docs/EDITORIAL_HISTORIES.md` — no count changes needed
+
+### Test Results
+- All **1,454 tests pass** (0 failures, 0 regressions)
