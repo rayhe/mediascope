@@ -2,6 +2,77 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-05 23:00 PT — Type C: Ownership & Funding Deep Dive — MIT TR Schwarzman Externals + AI Hardware Program + MBZUAI + Sovereign Dimension
+
+**Focus:** MIT Technology Review profile had 3 missing MIT Schwarzman College of Computing external collaborations (MBZUAI, HPI, AI Hardware Program), no coverage of EmTech Future 2026 (upcoming Sept 29-Oct 1), and incomplete ILP member tracking. Last MIT TR Type C iteration was Jul 4 09:00 (~38 hours ago). This iteration expands the conflict surface into a NEW seventh analytical dimension: sovereign/international state-funded research partnerships.
+
+### What Changed
+
+**1. SCHWARZMAN COLLEGE EXTERNAL COLLABORATIONS: 2 → 5 (+3 NEW)**
+
+Previously tracked:
+- MIT-Amazon Science Hub
+- MIT-Google Program for Computing Innovation
+
+Now also tracking:
+- **MIT-MBZUAI Research Collaboration Program** (Oct 2025, 5-year): UAE sovereign AI university (named after UAE President Sheikh Mohamed bin Zayed Al Nahyan) funds MIT AI research. Academic directors: Philip Isola (MIT EECS) and Le Song (MBZUAI). Focus: scientific discovery, human thriving, planetary health.
+- **MIT and HPI AI and Creativity Hub**: Hasso Plattner Institute (SAP co-founder, ~$12B net worth) co-funds with MIT Schwarzman College and Morningside Academy for Design. Plattner also funds Stanford d.school — dual MIT-Stanford institutional influence.
+- **MIT AI Hardware Program** (2022): 5 inaugural corporate members — Amazon, Analog Devices, ASML, NTT Research, TSMC. Chaired by Anantha Chandrakasan (now MIT Provost). Co-led by Jesús del Alamo and Aude Oliva (who also co-directs MIT-IBM Lab). TSMC (world's largest foundry) and ASML (EUV monopoly) are among the most strategically important companies in global tech.
+
+**2. CHANDRAKASAN GOVERNANCE CONCENTRATION — DEEPENED**
+Provost Chandrakasan now documented as chairing BOTH the AI Hardware Program AND the renamed MIT-IBM Computing Research Lab, while serving as MIT Provost overseeing all academic operations. This is the deepest governance concentration of any single MIT administrator across MIT's corporate partnership portfolio.
+
+**3. ADDITIONAL SCHWARZMAN INDUSTRY PROGRAMS: 2 NEW**
+- AI for Augmentation and Productivity Seed Grants (funded by Andrew Houston '05 / Dropbox)
+- MIT AI and Wellness Seed Grants (funded by Panasonic Well)
+
+**4. ILP NEW MEMBER: COSMO ENERGY HOLDINGS (Apr 2026)**
+Japanese energy conglomerate. First overseas university industry-academic program for the group. Seeking "technology seeds" in energy, materials, biotech, and AI/IoT.
+
+**5. EMTECH EVENTS EXPANDED**
+- EmTech AI 2026: added pricing ($3,195-3,395 in-person, $995 livestream), key themes
+- EmTech Future 2026 (Sept 29-Oct 1): added as upcoming event
+- **CRITICAL:** Past EmTech speakers include Yann LeCun (Meta VP & Chief AI Scientist) — direct Meta connection in MIT TR's events business
+- Added continuous calendar context — MIT TR runs 10+ events per year, not just annual flagships
+
+**6. REVENUE RELATIONSHIPS: +7 NEW**
+- TSMC (AI Hardware Program member)
+- ASML (AI Hardware Program member)
+- NTT Research (AI Hardware Program member)
+- Analog Devices (AI Hardware Program member)
+- MBZUAI/UAE (5-year research funding)
+- Hasso Plattner Institute (AI and Creativity Hub)
+- (Cosmo Energy via ILP, already tracked under ILP section)
+
+**7. ANALYTICAL DIMENSIONS: 6 → 7**
+New sovereign/international dimension capturing state-funded research partnerships as distinct from corporate:
+- MBZUAI (UAE government-backed AI university)
+- CDTI Innovation (Spanish government innovation agency)
+- HPI (SAP co-founder's private institute)
+
+Previously tracked 6 dimensions: bilateral partnerships, venture capital, endowment, defense/government, consortium/events, litigation alignment. Now 7.
+
+### Sources
+- MIT Schwarzman College external collaborations page: https://computing.mit.edu/external-collaborations/
+- MIT News: MBZUAI launch (Oct 8, 2025): https://news.mit.edu/2025/mit-schwarzman-college-computing-mbzuai-launch-collaboration-shape-future-ai-1008
+- MIT News: AI Hardware Program launch (Mar 22, 2022): https://news.mit.edu/2022/new-program-bolsters-innovation-ai-hardware-0322
+- BusinessWire: NTT Research AI Hardware Program
+- PR Newswire: EmTech AI 2026 (Apr 2026)
+- event.technologyreview.com: EmTech Future 2026, registration pricing
+- Cosmo Energy Holdings: ILP announcement (Mar 30, 2026): cosmo-energy.co.jp
+- MIT Schwarzman College industry programs: computing.mit.edu/cross-cutting/industry-programs/
+
+### Stats
+- Tests: 1,454 (all passing)
+- Profile: 1,762 → 1,902 lines (+145 insertions, -4 deletions)
+- Schwarzman external collaborations: 2 → 5
+- Revenue relationships: +7 new
+- Analytical dimensions: 6 → 7
+- ILP tracked members: +1 (Cosmo Energy Holdings)
+- Commit: `dba07f0`
+
+---
+
 ## 2026-07-05 22:00 PT — Type B: Journalist/Publication Research — Cecilia Kang Deep Profile
 
 **Focus:** Full career profile expansion for Cecilia Kang — NYT's primary tech policy/regulation reporter and lead reporter on the FTC v. Meta antitrust trial (2025). Previously had 4 career events, no education, no migrations, minimal notes; expanded to a comprehensive biography.
