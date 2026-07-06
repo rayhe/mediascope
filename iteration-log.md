@@ -1534,6 +1534,7 @@ Entity detection documentation gap: all 59 entity clusters were defined only in 
 - 75 structural consistency tests guarding doc-code synchronization
 
 ### Commit
+`dcd159d` — pushed to `rayhe/mediascope` main
 `8dc7920` — pushed to GitHub
 
 ---
@@ -14665,3 +14666,73 @@ Added Bromley departure entry under wired section in editorial_changes.yaml with
 - **117 tests pass** (0 failures)
 
 ### Commit
+
+## 2026-07-06 15:00 PT — Type B (Journalist/Publication Research)
+
+**Focus:** Journalist profiles + editorial changes expansion
+
+### New Journalist Profiles (+2, total 150)
+1. **Rob Reddick** — Wired UK science editor (Apr 2022 – late 2025). Oxford BA (English Language & Literature) → Anthem Press → TISonline → Wellcome Trust → The Conversation UK (commissioning editor, Mosaic/COVID-19) → Wired UK. Departed as part of the Wired UK editorial contraction (7+ London staff departed end of 2025, UK print edition cancelled Jan 2026). His science desk role was NOT directly replaced with a UK-based hire — Brian Kahn is US-based. Sources: TalkingBizNews, The Org, Muck Rack, Wired author page.
+
+2. **Evelyn Kwong** — Wired director of social and multiplatform strategy (departed Oct 31, 2025 → 404 Media contributor Nov 3). Known as "Evy Kwong." Architect of Wired's journalist-as-influencer vertical video strategy (IG views ~800%, TikTok engagement +163%). Career: Guardian → Vice News → Toronto Star (senior editor audience) → Wired. Ryerson University grad. Her departure removed the key social strategy architect but the playbook survives. Sources: TalkingBizNews (×2 — departure and 404 Media hire), Nieman Lab, eMarketer.
+
+### New Editorial Changes (+6, total 134)
+**Wired (+3):**
+- Rob Reddick departure (Dec 2025) — UK science editor, part of London contraction
+- Evelyn Kwong departure (Oct 31, 2025) — social/multiplatform director, to 404 Media
+- Staff editor opening (Apr 6, 2026) — reports to Tim Marchman, NYC/SF, Guild position, cross-desk editing + international syndication management
+
+**NYT (+3):**
+- Jason Sobel CTO departure (2026-04) — California-based, Levien memo says next CTO should be "present very regularly in NYC HQ"
+- Alex Hardiman promoted to EVP with cross-company AI product vision oversight — coordinates AI deployment across news and product teams
+- Hannah Yang promoted to EVP/Chief Growth & Customer Officer — consolidated oversight of marketing, growth, customer care, data
+
+### Verified Existing Profiles
+- **Robert Booth** (Guardian UK tech editor) — profile complete at lines 2700-2727, includes career trajectory, Grenfell coverage, Muck Rack recent tech coverage, Orwell Foundation. No expansion needed.
+- **Rosie Swash** (Wired Deputy Editor London) — profile complete at lines 6519-6560, includes Observer → Guardian (17yr, Amnesty Media Prize) → Mill Media → Wired career. No expansion needed.
+- **Sophia Nguyen, Jonathan L. Fischer** — mentioned in Kevin Sieff entry notes but no standalone profiles. WaPo → Atlantic pipeline hires. Could be added in future Type B iteration.
+- **Brian Kahn, Sophie Kleeman** — already have full profiles and editorial change entries.
+
+### Tests
+21/21 passed (test_careers.py). YAML validation: 150 journalist entries, 134 editorial changes across 5 publications.
+
+### Commit
+`8eeb26c` — pushed to origin/main via HTTPS egress proxy.
+
+---
+
+## 2026-07-06 16:00 PT — Type B: Journalist/Publication Research
+
+### Iteration Summary
+Type B rotation: journalist profile research and editorial change tracking.
+
+### New Journalist Profile
+1. **Meaghan Tobin** (NYT, Asia technology correspondent, Taipei)
+   - Career: NYU BA → Tufts Fletcher MA → South China Morning Post → Rest of World → Washington Post → NYT (~mid-2024)
+   - Beat: China tech, semiconductors, rare earths, AI, US-China trade/supply chain geopolitics
+   - Sources: [nytco.com](https://nytco.com/press/meaghan-tobin-joins-the-new-york-times/), [editorandpublisher.com](https://www.editorandpublisher.com/stories/nyt-hires-tobin/), [talkingbiznews.com](https://talkingbiznews.com/they-move/)
+   - Analytical value: Pairs with Paul Mozur to give NYT two Taipei-based tech reporters — strongest semiconductor supply chain coverage concentration of any tracked publication
+
+### Editorial Changes Added
+1. **Guardian Australia — Lenore Taylor departure** (Feb 2026): Resigned after 10 years as editor
+   - Source: [mediaweek.com.au](https://mediaweek.com.au/david-munk-named-editor-guardian-australia/)
+2. **Guardian Australia — David Munk appointed editor** (Jun 15, 2026): Career: Bristol Evening Post → Daily Mail → Daily/Sunday Telegraph (head of world news) → Guardian Australia international news editor (2014) → deputy editor (2019) → London senior managing editor (2024) → editor (Jun 2026)
+   - Source: [mediaweek.com.au](https://mediaweek.com.au/david-munk-named-editor-guardian-australia/)
+3. **Guardian Australia — Sophie Black appointed associate editor** (Jun 2026): From Crikey EIC, independent media perspective
+   - Source: [bandt.com.au](https://bandt.com.au/guardian-australia-bolsters-editorial-leadership/)
+4. **NYT — Meaghan Tobin hire** (~mid-2024): Asia technology correspondent editorial_changes entry added
+
+### Research Verified (Already Tracked)
+- Sophie Kleeman, Brian Kahn, Rosie Swash (Wired) — present
+- Sophia Nguyen, Kevin Sieff, Theo Balcomb, Jonathan L. Fischer (Atlantic) — present
+- Kevin Roose departure / Newton venture — documented
+- Hugo Lowell (Guardian → Wired) — present
+- Rob Reddick, Evelyn Kwong — present from prior iteration
+
+### Stats
+- **Journalists:** 151 (was 150, +1 Meaghan Tobin)
+- **Multi-pub journalists:** 150
+- **Auto-detected migrations:** 482
+- **Editorial changes added:** 4 new entries (3 Guardian Australia, 1 NYT)
+- **Tests:** 1,456 passed, 0 failed
+- **Docs updated:** README.md, EDITORIAL_HISTORIES.md, careers_demo.py (counts synced)

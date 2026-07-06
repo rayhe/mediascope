@@ -516,6 +516,37 @@ editorial_changes:
     outgoing: null
     position: project_berger_expansion
     source_url: https://www.editorandpublisher.com/stories/the-guardian-to-create-dozens-of-new-positions
+  - date: 2026-02
+    incoming: null
+    notes: 'DEPARTURE: Lenore Taylor resigned as editor of Guardian Australia after 10 years in the role. Under her leadership,
+      Guardian Australia grew from a small digital outpost to a major Australian news outlet. Taylor oversaw significant expansion
+      of the Australian bureau and established Guardian Australia as a prominent voice in Australian media. Her departure triggered
+      a leadership transition that elevated David Munk from deputy editor to editor.'
+    outgoing: Lenore Taylor
+    position: editor_guardian_australia
+    source_url: https://mediaweek.com.au/david-munk-named-editor-guardian-australia/
+  - date: 2026-06-15
+    incoming: David Munk
+    notes: 'Munk appointed editor of Guardian Australia effective June 15, 2026, succeeding Lenore Taylor. Career: Bristol
+      Evening Post → Daily Mail → Daily/Sunday Telegraph (head of world news) → Guardian Australia international news editor
+      (2014) → deputy editor (2019) → London senior managing editor (2024) → Guardian Australia editor (Jun 2026). Over a
+      decade at Guardian Australia, rising through every major editorial tier. His appointment represents internal continuity
+      rather than an external strategic shift. ANALYTICAL VALUE: Unlike Wired''s frequent EIC turnover, Guardian Australia''s
+      promotion-from-within pattern suggests editorial continuity in coverage posture. Munk''s international news background
+      (Telegraph head of world news) may influence how Guardian Australia frames global tech stories.'
+    outgoing: Lenore Taylor
+    position: editor_guardian_australia
+    source_url: https://mediaweek.com.au/david-munk-named-editor-guardian-australia/
+  - date: 2026-06
+    incoming: Sophie Black
+    notes: 'Black appointed associate editor of Guardian Australia, joining from Crikey where she served as editor-in-chief.
+      Part of the leadership restructuring following Lenore Taylor''s departure. Black brings an independent media perspective
+      to the Guardian''s Australian operation. Previously well-known in Australian digital media for her work at Crikey (a
+      small but influential independent news outlet). Her hire alongside Munk''s promotion signals Guardian Australia is both
+      maintaining institutional continuity (Munk) while injecting independent media DNA (Black).'
+    outgoing: null
+    position: associate_editor_guardian_australia
+    source_url: https://bandt.com.au/guardian-australia-bolsters-editorial-leadership/
   mit-tech-review:
   - date: 2017-10
     incoming: Elizabeth Bramson-Boudreau
@@ -676,6 +707,19 @@ editorial_changes:
       in Meta beat coverage.
     position: technology_reporter_meta
     source_url: https://nytco.com/press/staff-news-from-business/
+  - date: ~2024-06
+    incoming: Meaghan Tobin
+    notes: 'Tobin joined NYT as Asia technology correspondent based in Taipei, covering China tech, semiconductors, rare
+      earths, AI, and US-China trade. Career: NYU BA → Tufts Fletcher School MA (International Affairs) → South China Morning
+      Post → Rest of World → Washington Post → NYT (~mid-2024). Specializes in supply chain geopolitics, particularly
+      semiconductor and critical mineral dependencies between China, Taiwan, and the US. Her hiring reflects NYT''s investment
+      in Asia-based tech-geopolitics coverage alongside Paul Mozur (global technology correspondent, also Taipei-based).
+      ANALYTICAL VALUE: Tobin and Mozur give NYT two dedicated Taipei-based tech reporters — the most concentrated coverage
+      of the semiconductor supply chain geography of any tracked publication. Her Washington Post background adds a second
+      migration data point for the Post→NYT pipeline in Asia tech coverage.'
+    outgoing: null
+    position: asia_technology_correspondent
+    source_url: https://nytco.com/press/meaghan-tobin-joins-the-new-york-times/
   - date: 2026-08
     incoming: null
     notes: 'DEPARTURES: Kevin Roose (tech columnist) and Casey Newton (external co-host) leaving NYT. Roose announced June

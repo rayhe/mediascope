@@ -10790,3 +10790,83 @@ journalists:
     churn in late 2025 (7 London staff departed, UK print cancelled). She was a non-editorial
     leadership role but her social strategy shaped how Wired stories reached audiences
     and which journalists became "influencer" personalities for the brand.
+- career:
+  - beat: food studies, public health
+    event_type: education
+    notes: 'BA in Food Studies and Public Health from New York University. Unusual academic pipeline for tech journalism —
+      food studies background later influenced her narrative style (she was previously a pastry chef). No journalism degree;
+      came to reporting through area studies and policy, not J-school.'
+    publication: nyu
+    role: student
+    source_url: https://nytco.com/press/meaghan-tobin-joins-business/
+  - beat: international affairs, law, diplomacy
+    event_type: education
+    notes: 'MA in Law and Diplomacy from The Fletcher School at Tufts University. Policy-focused graduate training that shaped
+      her China tech coverage lens — she approaches technology through geopolitics and trade rather than product reviews or
+      consumer tech. Also studied Mandarin as a Luce Scholar at National Taiwan University (Taipei) and as a Boren Fellow at
+      the Stanford-Tsinghua Inter-University Program (Beijing). Two prestigious fellowships gave her deep China immersion before
+      she became a journalist.'
+    publication: tufts-fletcher
+    role: graduate_student
+    source_url: https://editorandpublisher.com/stories/meaghan-tobin-joins-the-washington-post-as-china-correspondent
+  - beat: Asia news, China, Hong Kong
+    end: 2020-12
+    event_type: hired
+    notes: 'First journalism role. Reporter at the South China Morning Post in Hong Kong, covering news in Asia and the Pacific.
+      Started 2018 after completing fellowship programs. SCMP is owned by Alibaba Group (Jack Ma) — a Chinese-owned English-language
+      publication, which gives her direct experience of reporting under Chinese ownership structures. Covered Hong Kong during
+      the 2019 pro-democracy protests. Spent ~5 years total living between Taiwan, Hong Kong, and China as student and journalist
+      before relocating to New York during the COVID pandemic.'
+    publication: south-china-morning-post
+    role: reporter
+    source_url: https://editorandpublisher.com/stories/meaghan-tobin-joins-the-washington-post-as-china-correspondent
+    start: 2018-01
+  - beat: China technology, emerging markets
+    end: 2022-06
+    event_type: hired
+    notes: 'China technology reporter at Rest of World, a nonprofit tech media startup focused on technology outside the US/Europe.
+      Based in New York after COVID relocation from Asia. Rest of World fills a gap in Western tech journalism by covering
+      tech ecosystems in Africa, Asia, Latin America, and the Middle East — gave Tobin experience reporting on tech stories
+      that US publications typically miss. ANALYTICAL VALUE: Rest of World institutional norms prioritize local impact and
+      non-Western perspectives, distinct from NYT/Wired/Atlantic editorial cultures.'
+    publication: rest-of-world
+    role: china_tech_reporter
+    source_url: https://editorandpublisher.com/stories/meaghan-tobin-joins-the-washington-post-as-china-correspondent
+    start: 2020-12
+  - beat: China business, technology, geopolitics
+    end: 2024-03
+    event_type: hired
+    notes: 'China correspondent with focus on business and technology. Based in Taipei (China visa restrictions prevented Beijing
+      posting). Wrote about China''s growing influence for the Post. Joined a Taiwan-based team including Lily Kuo (bureau
+      chief), Christian Shepherd. WaPo is Bezos-owned (Nash Holdings) — her WaPo → NYT migration creates an ownership-structure
+      comparison datapoint: Bezos (Amazon/tech founder) → Sulzberger (institutional family). Start date approx Jan 2023.'
+    publication: washington-post
+    role: china_correspondent
+    source_url: https://talkingbiznews.com/they-re-hiring/washington-post-hires-tobin-to-cover-china-tech-and-business/
+    start: 2023-01
+  - beat: Asia technology, China tech, semiconductors, AI, trade
+    event_type: hired
+    notes: 'Asia technology correspondent on the Business desk. Based in Taipei. Joined ~mid-2024. Taipei bureau: Chris Buckley,
+      Paul Mozur, Amy Chang Chien. Reports to Rich Barbieri (Seoul) and Pui-Wing Tam (SF tech editor). Covers China tech,
+      semiconductors, rare earths, AI in China, and US-China trade/tariffs. KEY STORIES: China rare earth export controls
+      (Nov 2025), AI stock rally in China (Oct 2025), Taiwan screw industry and tariffs, chip tariff exemptions. ANALYTICAL
+      VALUE: Her beat covers the geopolitical supply chain dimension of Big Tech — she writes about semiconductor tariffs,
+      rare earth controls, and China AI competition that form the economic context for Meta''s hardware strategy (Ray-Ban
+      Display, Neural Band). Her framing lens is geopolitical-economic (Fletcher School training), not adversarial-editorial.
+      Tests whether policy-trained journalists produce different tech framing than journalism-school-trained ones. WaPo → NYT
+      pipeline (Bezos → Sulzberger ownership comparison). Mandarin proficiency enables primary-source Chinese government
+      document analysis that most US tech reporters cannot do.'
+    publication: nytimes
+    role: asia_tech_correspondent
+    source_url: https://nytco.com/press/meaghan-tobin-joins-business/
+    start: 2024-06
+  name: Meaghan Tobin
+  notes: 'Key migration: South China Morning Post (Alibaba-owned) → Rest of World (nonprofit) → Washington Post (Bezos) → NYT
+    (Sulzberger). Education: NYU BA (Food Studies, Public Health) + Tufts Fletcher School MA (Law & Diplomacy). Luce Scholar
+    (NTU Taipei) + Boren Fellow (Stanford-Tsinghua Beijing). Previous pastry chef. Mandarin proficient (10+ years studying).
+    Based in Taipei. Covers China tech, semiconductors, rare earths, AI, and US-China trade for NYT Business desk. ANALYTICAL
+    VALUE: Unusual pipeline — no J-school, policy/diplomacy training instead. Each career move crossed a different ownership
+    structure (Chinese-owned → nonprofit → Bezos → Sulzberger), providing a natural experiment in how ownership shapes tech
+    coverage. Her geopolitical-economic framing lens is distinct from both adversarial-editorial (Wired/Atlantic) and consumer-product
+    (CNET/Verge) approaches. Covers the supply chain and trade dimensions of Big Tech that intersect with Meta''s hardware
+    strategy but rarely appear in Meta''s US press coverage.'
