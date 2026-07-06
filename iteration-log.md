@@ -14150,3 +14150,55 @@ Raw VADER compound = **0.9721** (strongly positive) for an article about failed 
 ### Saved Files
 - `examples/sample_output/reuters_zuckerberg_ai_agents_slow_2026_07_02_article.txt`
 - `examples/sample_output/reuters_zuckerberg_ai_agents_slow_2026_07_02_analysis.md`
+
+## 2026-07-06 05:00 PT — Type B: Journalist/Publication Research — Natasha Singer (NYT) Deep Expansion + Sourcing Fix
+
+### Focus
+Natasha Singer had the worst sourcing ratio in the entire journalist database: 4 career entries but only 1 with a source_url (25%). Expanded to 6 entries, all 6 sourced (100%). Also corrected a date error for her Outside Magazine tenure.
+
+### Selection Rationale
+Systematic scan identified Singer as the highest-priority sourcing gap. As a 18+ year NYT tech reporter with legislative impact (SOPIPA 2014), a George Polk Award, a Pulitzer finalist nomination, and a forthcoming book from W.W. Norton, her thin profile was the most significant data-quality gap in the database relative to her importance.
+
+### Profile Expansion (4 → 6 career entries, 1 → 6 sourced)
+
+**New entries added (2):**
+1. **Brown University education** (BA Comparative Literature, Russian & French) — explains the Russia career pipeline. Source: me.sh bio aggregator.
+2. **MIT Knight Science Journalism fellowship** (2021-22) — fellowship project directly became "Coding Kids" book. Same cohort as Karen Hao. Source: TalkingBizNews announcement.
+
+**Sourcing fixes (3 entries):**
+1. **Russian Vogue** — Added source_url (Podchaser bio). Expanded notes with launch context: Aug 1998 during Russian financial crisis, 308-page issue, $1M ad revenue, Aliona Doletskaya as EIC, Condé Nast subsidiary structure.
+2. **The Forward** — Added source_url (me.sh bio aggregator). Expanded notes with context about The Forward as a Jewish newspaper (est. 1897) and the bureau chief role as a pivot from fashion to hard news.
+3. **Outside Magazine** — Added source_url (outsideonline.com first-person interview). **CORRECTED dates:** was 2005-01 start, now ~2002 start — confirmed by her own interview ("roving correspondent in the early 2000s") and October 2002 25th anniversary issue piece. Added specific stories: Keiko (Free Willy) whale return in Iceland, Northwest Passage on USCG cutter, WildAid Thailand jungle investigation, Talkeetna Alaska bachelor auction.
+
+**NYT entry expansion:**
+- Updated book details: "Coding Kids: Big Tech's Battle to Remake Public Schools" (W.W. Norton, Sep 8, 2026, 352pp, ISBN 978-0393881943). Blurbed by Diane Ravitch, Ruha Benjamin, Sherry Turkle.
+- Added 2026 Civics of Technology Conference keynote (Aug 7)
+- Added article count (1,291+ per Muck Rack), recent coverage, media appearances, speaking engagements
+
+**Analytical annotations added:**
+- Singer-Hao KSJ fellowship controlled comparison (same 2021-22 cohort, different pipelines, different beats)
+- Non-traditional pipeline analysis: Russian literature BA → Condé Nast fashion → Jewish journalism → adventure/environment → NYT tech accountability
+- SOPIPA legislative impact as a distinguishing factor (reporting → actual law)
+- Sourcing methodology documentation in top-level notes
+
+### Sources
+- Outside Online: https://www.outsideonline.com/culture/books-media/natasha-singer-carhartt-interview/ (first-person interview about Outside tenure)
+- me.sh: https://me.sh/profile/natasha-singer-d7d4c3c8 (bio aggregator — Russian Vogue, Forward, Outside confirmed)
+- Podchaser: https://www.podchaser.com/creators/natasha-singer-107a1YXKQB (bio — career sequence confirmed)
+- TalkingBizNews: https://talkingbiznews.com/they-talk-biz-news/ny-times-biz-reporter-named-knight-science-fellow/amp/ (KSJ fellowship, alongside Karen Hao)
+- Cornell/Milstein: https://milstein-program.as.cornell.edu/events/natasha-singer (NYT role, Data & Society affiliation)
+- Amazon: https://www.amazon.com (Coding Kids: Sep 8 2026, 352pp, ISBN 978-0393881943, W.W. Norton)
+- Civics of Technology: https://civicsoftechnology.org (Aug 7 2026 keynote)
+- Wikipedia/Vogue Russia: https://en.wikipedia.org/wiki/Vogue_Russia (launch Aug 1998, Doletskaya EIC, Condé Nast subsidiary)
+- Muck Rack: https://muckrack.com/natasha-singer (1,291+ articles, contact info)
+
+### Counts Updated
+- Career entries: 4 → 6 (+2 new: education + fellowship)
+- Source URLs: 1/4 (25%) → 6/6 (100%)
+- Migrations: 434 → 435 (+1: new education-to-career transition detected)
+- Docs updated: EDITORIAL_HISTORIES.md (migration count), README.md (migration count + notable migrations list)
+- No new journalists added this iteration (focused on quality over quantity)
+
+### Test Results
+- All **1,454 tests pass** (0 failures, 0 regressions)
+- Commit: `305e869`
