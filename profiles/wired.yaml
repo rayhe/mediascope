@@ -124,9 +124,21 @@ ownership_chain:
          Microsoft Copilot (Dec 2025 pilot), Apple Intelligence (in negotiations). Lynch explicitly
          named these as strategic revenue pillars. Microsoft partnership announced alongside CPTO
          Vasanth Williams hire — signals AI licensing is now a C-suite priority, not just legal/BD.
+         AI MARKETPLACE EVOLUTION (WSJ, Jul 3, 2026): AI content licensing is moving beyond bilateral
+         deals to marketplace models. Microsoft launched a pilot marketplace with 8 publishers (People,
+         AP, Hearst) with Yahoo and Copilot as buyers, investing $10M+. Amazon Factiva also building
+         marketplace infrastructure. Condé Nast named among "large publishers" with existing bilateral
+         deals (OpenAI, Amazon). This structural shift has conflict implications: marketplace models
+         could make Condé Nast's AI licensing revenue MORE dependent on platform health (Meta is
+         conspicuously absent as an AI licensing buyer — unlike OpenAI, Amazon, Apple, and Microsoft).
+         Source: https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
       3. COMMERCE: $600M in product sales in 2024 via editorial affiliate content.
       4. SUBSCRIPTIONS: DOGE coverage drove 62,500 new US subs in 2 weeks (Feb 2025).
       Also: 28 billion video views in 2024 across longform, shortform, and film.
+      2025 REVENUE BREAKDOWN (Adweek, May 2026): Subscription revenue +10% YoY, commerce +13% YoY,
+      events +40% YoY. Events "in the center" of the business per CRO Herbst-Brady. No further
+      paring of portfolio planned per Herbst-Brady: "We have no plans. It's all about focus and
+      building opportunity where we see the largest potential."
       CRO Herbst-Brady (Thread Podcast, 2026): "AI didn't kill premium media — it made it more valuable."
       Herbst-Brady career: Yahoo → Snap → Viacom → Condé Nast (joined Aug 2024).
     source_urls:
@@ -293,7 +305,11 @@ advance_investments:
       10b5-1 plans are pre-arranged, the volume ($36.9M/90 days) signals distribution
       phase, not accumulation — potentially relevant if Advance is simultaneously
       leveraging its position via the $1.2B margin loan.
-      Q2 2026 EARNINGS: July 30 (after market close). Consensus EPS ~$1.20-1.25.
+      Q2 2026 EARNINGS: July 30 (after market close). Consensus EPS $0.99 (Zacks, +120% YoY),
+      revenue est $746.89M (+49.5% YoY, Zacks). MarketBeat consensus: EPS $0.71 (range $0.45-$0.97),
+      revenue $712.9M. Full-year Zacks consensus: $4.83 EPS, $3.25B revenue. Reddit beat consensus
+      ALL 4 trailing quarters by significant margins (Q1 2026: $1.01 vs $0.62 est, $663M vs $608M).
+      RDDT Zacks Rank: #2 (Buy). Needham raised to $300 PT (Jun 24, highest on Street).
       This is a potential volatility catalyst for Advance's collateral value.
     credit_facility_monetization: >
       REDDIT MARGIN LOAN (reported Jun 12, 2026, Bloomberg Law): Advance Magazine Publishers Inc.
@@ -509,29 +525,26 @@ advance_investments:
         July 7 to July 21 (10 working days extension). Earlier concern about children's TV assets is
         now off the table — no issues on that front. European cinema operators had expressed concerns
         about combined film distribution power. David Ellison targeting July 15 close.
-      - REGULATORY STATUS (Jul 1): DOJ cleared (Jun 19). EU Phase I deadline July 22 (extended from
-        July 7 via UIP divestiture remedy submission; Paramount discussing remedies package with EC;
-        EU Commission expected to approve without objection per analysts).
-        UK: Culture Secretary Lisa Nandy issued "minded to intervene" notice on Jun 30, citing media
-        plurality and streaming concerns — July 6 deadline for company responses. If she proceeds,
-        deal goes to Ofcom + CMA review (could take up to 24 weeks). CMA already launched its own
-        antitrust investigation with Aug 7 decision deadline. UK intervention is significant because
-        CMA blocked Microsoft/Activision in 2023 before concessions were made. CNN reports the UK
-        review could trigger a $627M/quarter ticking fee (~$7M/day) for WBD shareholders if the deal
-        doesn't close by Sept 30, adding $0.25/share per quarter. Paramount says deal poses no UK
-        media plurality issues. Law firm Slaughter & May partner William Turtle noted the step was
-        "carefully considered" given "the profile of the transaction and the potential political
-        ramifications." If Nandy proceeds, Ofcom and CMA get a 40-day initial review period that
-        could extend to a full investigation of up to 24 weeks. UK assets at stake: Channel 5
-        (Paramount), CNN International (Warner). Streaming services Paramount+ and HBO Max have
-        small UK market share (~6% combined "other" bucket per 2025 Ofcom report vs Netflix 59%).
-        Nandy said she would introduce secondary legislation to cover streamers if needed.
+      - REGULATORY STATUS (Jul 6): DOJ cleared (Jun 19). EU Phase I deadline July 22 (extended from
+        July 7 via UIP divestiture remedy submission; EC confirmed remedies received Jul 2; Paramount
+        "confident" remedies "directly and comprehensively" address EC concerns — per WSJ Jul 1).
+        EU approval widely expected.
+        UK: TODAY (Jul 6) is the deadline for Paramount/WBD to respond to Culture Secretary Lisa
+        Nandy's "minded to intervene" notice (issued Jun 30). Reuters analysis (Jul 2): UK review
+        likely aimed at EXTRACTING COMMITMENTS, not blocking the deal. Possible voluntary concessions:
+        preserving independent news provision, UK children's programming, maintaining/expanding
+        Warner's British production footprint (including Leavesden studios). Legal advisors say
+        public-interest case for blocking appears "limited" but delay threat gives UK government
+        leverage to negotiate commitments. If Nandy proceeds to formal intervention, deal goes to
+        Ofcom + CMA review (40-day initial, up to 24 weeks full investigation). CMA already running
+        parallel antitrust investigation with Aug 7 decision deadline. UK intervention could trigger
+        $627M/quarter ticking fee (~$7M/day) for WBD shareholders if deal doesn't close by Sept 30.
+        Additional clearances since Jul 1: Kuwait, Austria, Australia (added to 15+ prior clearances).
         SEPARATE EU Foreign Subsidies Regulation investigation (Saudi PIF, Abu Dhabi L'imad, Qatar IA
         backing the bid) — expected unconditional approval. Also cleared by South Africa, China,
-        Australia, NZ, Saudi Arabia, Ukraine, Serbia, North Macedonia + FDI authorities in Spain,
-        Germany, Slovenia, Belgium, Czechia, Italy, France, Romania. Canada: no statutory impediment
-        after Competition Act waiting period expired. FCC chair Brendan Carr: "we will go where
-        the facts take us based on those reviews" (re: Middle Eastern financing).
+        NZ, Ukraine, Serbia, North Macedonia + FDI authorities in Spain, Germany, Slovenia, Belgium,
+        Czechia, Italy, France, Romania. Canada: no statutory impediment after Competition Act
+        waiting period expired.
         NY, CA, and other state AGs preparing separate lawsuit to block deal — CA AG Rob Bonta (Jun 28):
         "red flags in the air everywhere," decision "in the coming weeks." Analysts expect state AG
         suit filing this summer. Could delay close into fall. Paramount executives have argued an
@@ -557,6 +570,8 @@ advance_investments:
       - "https://www.thestreet.com/investing/paramount-wbd-merger-faces-major-regulatory-hurdle"
       - "https://www.barchart.com/story/news/unusual-options-activity-wbd-paramount-deal-close"
       - "https://ainvest.com/post/eu-regulatory-hurdle-paramount-warner-bros-acquisition/"
+      - "https://www.reuters.com/business/media-telecom/britains-paramount-warner-review-may-be-aimed-commitments-not-veto-2026-07-02/"
+      - "https://www.wsj.com/business/paramount-skydance-offers-concessions-eu-approval-warner-bros-deal/"
 
   - entity: "Condé Nast"
     stake: "100% subsidiary"
@@ -1639,7 +1654,7 @@ restructuring_timeline:
       $400K+ in settlement — approximately 2 years' pay each. Terminations converted to voluntary
       resignations with letters of recommendation. Five suspended workers received back pay and had
       disciplinary records expunged. Jake Lahut (Wired) DECLINED settlement as probationary employee,
-      instead pursuing NLRB unfair labor practice charge — still pending as of June 2026.
+      instead pursuing NLRB unfair labor practice charge — still pending as of July 2026.
       WIRED EDITORIAL SIGNIFICANCE: Lahut was a senior politics reporter on Drummond's signature
       politics team (the first in Wired history). His firing and ongoing NLRB case means Wired's
       politics desk lost a key staffer in circumstances the NY AG characterized as union-busting.
@@ -1690,6 +1705,21 @@ labor_union_relations:
     suspended_members:
       count: 5
       outcome: "All received back pay; disciplinary records expunged as part of settlement."
+      known_members:
+        - name: "Lily Newman"
+          title: "Senior Writer"
+          publication: "Wired"
+          beat: "Security / cybersecurity"
+          quote: >
+            "The unpaid suspensions added another layer of egregious, illegal retaliation to this
+            situation. It is heartening that this settlement removes the discipline from my and my
+            colleagues' records and furnishes backpay." (The Wrap, May 27, 2026)
+          significance: >
+            Newman's identification as a suspended worker is analytically significant: she is a
+            long-tenured Wired security reporter whose beat overlaps with Meta coverage (cybersecurity,
+            surveillance, data privacy). Her personal experience of suspension during a labor dispute
+            adds another confounding variable — not just ambient job insecurity but direct personal
+            experience of Condé Nast management retaliation — that may shape editorial framing.
     external_pressure:
       - entity: "NY AG Letitia James"
         action: "Publicly threatened legal action, characterized the firings as 'union-busting'"
