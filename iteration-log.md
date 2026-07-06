@@ -14307,3 +14307,43 @@ Systematic scan identified Singer as the highest-priority sourcing gap. As a 18+
 ### Test Results
 - All **1,454 tests pass** (0 failures, 0 regressions)
 - Commit: `305e869`
+
+## 2026-07-06 08:00 PT — Type A: Article Deep Dive (CNN child safety features study)
+
+### Focus
+Deep dive on CNN article: "More than half of social media child safety features aren't working as advertised, new research finds" (Jun 29, 2026, Clare Duffy). Cybersafety Research Center (NYU/Northeastern) study tested 86 youth safety features across TikTok, Instagram, Snapchat, YouTube. Only 40% worked as advertised. Instagram had highest feature count (29) and 66% failure rate. Meta's "fundamentally flawed" defense quote.
+
+CNN is not a tracked publication but was selected because: (1) all 5 tracked publication domains are access-blocked, (2) the story is substantive research-based journalism covering Meta/Instagram child safety specifically, (3) it connects to the broader litigation pipeline (MDL 3047, 29-state AG lawsuit), and (4) it exercises the toolkit on a child safety research article format not previously tested.
+
+### Fixes Applied
+
+**Source extraction (sources.py):**
+1. Added `_NAME_STOP_NAMES` check to Pattern 4 (anonymous source processing) — prevents generic subject references in indirect speech ("the young person" in "indicates the young person wants") from being classified as journalistic sources
+2. Added pronoun back-reference filter for "The spokesperson/spokesman/spokeswoman" — when a named spokesperson already exists in `seen_names`, the bare definite-article form is treated as a continuation, not a new anonymous source
+3. Added 9 descriptive phrases to `_NAME_STOP_NAMES`: "the young person", "the young people", "the young user", "the young users", "the child user", "the child users", "the teen user", "the teen users", "the adult user"
+
+**Impact:** 11 → 9 sources, 2 → 0 anonymous false positives. Anonymous source ratio corrected from 0.182 to 0.000.
+
+**Topic classification (topics.py):**
+1. Added "lawsuits" (plural) to `litigation` — word-boundary regex `\blawsuit\b` was not matching the plural form. Root cause: `\b` requires non-word-character boundary, but the 's' suffix is a word character
+2. Added "found liable", "liable", "liability" to `litigation` — common legal outcome language
+3. Added "testify", "testimony" to `litigation` — congressional testimony context
+4. Added "legal actions" (plural) to `litigation`
+5. Added "Capitol Hill", "testify on Capitol Hill" to `government_oversight` — political shorthand for congressional action
+
+**Impact:** `litigation` topic now correctly detected at 0.179 confidence (was absent). `government_oversight` gains coverage for Capitol Hill references.
+
+### Gaps Documented (Not Fixed)
+1. **Statistical precision framing** — no framing device for quantitative claim structures
+2. **cross_publication_import false positive** — "according to the report" matches when "report" = primary research study
+3. **Sentiment VADER skew** — overall_tone 0.191 for clearly critical article (corporate defense quotes inflate positive-valence)
+4. **product_launch false positive** — "launch" in "launch safety tutorials" context; requires semantic disambiguation
+5. **Rhetorical concession** — "successes prove it is possible" reframe undetected
+6. **Platform ranking/comparison** — descending-severity numerical comparisons undetected
+
+### Files
+- Article: `examples/sample_output/cnn_social_media_child_safety_features_2026_06_29_article.txt`
+- Analysis: `examples/sample_output/cnn_social_media_child_safety_features_2026_06_29_analysis.md`
+
+### Test Results
+- All **1,454 tests pass** (0 failures, 0 regressions)

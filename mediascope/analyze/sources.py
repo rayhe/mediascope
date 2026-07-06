@@ -161,6 +161,11 @@ _NAME_STOP_NAMES: set[str] = {
     "Relations Board", "Labor Relations", "National Labor",
     "Trade Commission", "Federal Trade", "Federal Communications",
     "Securities Exchange", "Exchange Commission",
+    # Generic descriptive phrases that look like source names
+    # but are subject references inside indirect speech
+    "the young person", "the young people", "the young user",
+    "the young users", "the child user", "the child users",
+    "the teen user", "the teen users", "the adult user",
     # Publication names that match "First Last" name pattern
     "Business Insider", "Tech Review", "Technology Review",
     "Daily Beast", "Daily Mail", "Morning Post",
@@ -987,6 +992,29 @@ def extract_sources(text: str) -> list[SourceMention]:
             # Use the descriptor as a unique key
             if descriptor.lower() in {n.lower() for n in seen_names}:
                 continue
+            # Skip descriptors that match stop-name entries — these are
+            # generic subject references inside indirect speech (e.g.
+            # "the young person" in "indicates the young person wants"),
+            # not journalistic source attributions.
+            if descriptor.lower() in {n.lower() for n in _NAME_STOP_NAMES}:
+                continue
+            # Skip bare pronoun-like back-references to previously named
+            # spokespeople — e.g. "The spokesperson added" after "A
+            # Snapchat spokesperson told CNN".  These are continuations,
+            # not new anonymous sources.
+            _desc_lower = descriptor.lower()
+            if _desc_lower in {
+                "the spokesperson", "the spokeswoman", "the spokesman",
+                "the representative",
+            }:
+                # Only skip if a named spokesperson was already captured
+                if any(
+                    "spokesperson" in n.lower()
+                    or "spokesman" in n.lower()
+                    or "spokeswoman" in n.lower()
+                    for n in seen_names
+                ):
+                    continue
             seen_names.add(descriptor)
 
             ctx_start = max(0, m.start() - 100)
