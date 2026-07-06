@@ -2027,6 +2027,116 @@ class TestAnnotatedArticleCountConsistency:
             f"Update the count in §7."
         )
 
+    def test_methodology_annotated_article_count(self):
+        """METHODOLOGY.md §17 annotated article count matches actual files.
+
+        Added: 2026-07-06 14:00 PT, Type D iteration.
+        """
+        sample_dir = _REPO_ROOT / "examples" / "sample_output"
+        actual = len(list(sample_dir.glob("*_analysis.md")))
+
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        # Match the §17.1 overview pattern
+        match = re.search(
+            r"corpus of \*\*(\d+) real articles\*\*", doc
+        )
+        assert match, (
+            "METHODOLOGY.md §17.1 missing 'corpus of **N real articles**' pattern."
+        )
+        stated = int(match.group(1))
+        assert stated == actual, (
+            f"METHODOLOGY.md §17.1 says {stated} real articles but "
+            f"examples/sample_output/ has {actual} *_analysis.md files. "
+            f"Update §17 counts (§17.1, §17.2 tables, §17.3 trajectory, §17.5)."
+        )
+
+    def test_methodology_publication_count(self):
+        """METHODOLOGY.md §17.2 publication count matches actual corpus diversity.
+
+        Added: 2026-07-06 14:00 PT, Type D iteration.
+        """
+        sample_dir = _REPO_ROOT / "examples" / "sample_output"
+        pubs = set()
+        # Known publication prefixes → canonical name
+        _PUB_PREFIXES = [
+            # Tracked publications
+            ("wired", "wired"),
+            ("mit_tr", "mit_tech_review"),
+            ("mittr", "mit_tech_review"),
+            ("mit_tech_review", "mit_tech_review"),
+            ("nyt", "nyt"),
+            ("guardian", "guardian"),
+            ("atlantic", "atlantic"),
+            # Wire
+            ("reuters", "reuters"),
+            # Tech editorial
+            ("gizmodo", "gizmodo"),
+            ("memeburn", "memeburn"),
+            ("engadget", "engadget"),
+            ("register", "register"),
+            ("techcrunch", "techcrunch"),
+            ("techtimes", "techtimes"),
+            ("techtarget", "techtarget"),
+            ("9to5mac", "9to5mac"),
+            ("android_authority", "android_authority"),
+            ("digitaltrends", "digitaltrends"),
+            ("malwarebytes", "malwarebytes"),
+            ("livemint", "livemint"),
+            # Financial
+            ("barchart", "barchart"),
+            ("barrons", "barrons"),
+            ("marketwatch", "marketwatch"),
+            ("motley_fool", "motley_fool"),
+            ("pymnts", "pymnts"),
+            ("stocktwits", "stocktwits"),
+            ("thestreet", "thestreet"),
+            # General interest
+            ("fastco", "fast_company"),
+            ("fastcompany", "fast_company"),
+            ("avclub", "avclub"),
+            ("cnn", "cnn"),
+            ("futurism", "futurism"),
+            ("iphoneincanada", "iphoneincanada"),
+            ("kotaku", "kotaku"),
+            ("newzlet", "newzlet"),
+            ("webpronews", "webpronews"),
+            ("multi_source", "multi_source"),
+        ]
+        for f in sample_dir.glob("*_analysis.md"):
+            name = f.stem.replace("_analysis", "")
+            matched = False
+            for prefix, canonical in _PUB_PREFIXES:
+                if name.startswith(prefix):
+                    pubs.add(canonical)
+                    matched = True
+                    break
+            if not matched:
+                # Fallback: extract up to first year token
+                parts = name.split("_")
+                pub_parts = []
+                for p in parts:
+                    if re.match(r"^20\d{2}$", p):
+                        break
+                    pub_parts.append(p)
+                pubs.add("_".join(pub_parts))
+
+        # Exclude multi_source — it's a cross-outlet aggregation, not a publication
+        pubs.discard("multi_source")
+
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        match = re.search(
+            r"spans \*\*(\d+) distinct publications\*\*", doc
+        )
+        assert match, (
+            "METHODOLOGY.md §17.2 missing '**N distinct publications**' pattern."
+        )
+        stated = int(match.group(1))
+        assert stated == len(pubs), (
+            f"METHODOLOGY.md §17.2 says {stated} distinct publications but "
+            f"corpus has {len(pubs)} unique publication slugs. "
+            f"Publications: {sorted(pubs)}"
+        )
+
     def test_same_event_cluster_count(self):
         """QUALITY_STANDARDS.md same-event cluster count matches §10.2 tables."""
         doc = (_REPO_ROOT / "docs" / "QUALITY_STANDARDS.md").read_text()

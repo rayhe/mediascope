@@ -1198,13 +1198,13 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **100 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **105 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
 ### 17.2 Publication Distribution
 
-The corpus spans **27 distinct publications** across 5 editorial modes:
+The corpus spans **33 distinct publications** across 5 editorial modes:
 
 #### Tracked Publications (5 publications, 55 articles)
 
@@ -1218,15 +1218,15 @@ These are the publications with full YAML profiles (ownership chains, revenue re
 | **The Guardian** | 5 | UK regulatory pressure, whistleblower coverage, CSAM, DeepMind philosophy |
 | **The Atlantic** | 5 | AI slop, data center infrastructure, workplace surveillance, creativity |
 
-#### Wire Services (1 publication, 7 articles)
+#### Wire Services (1 publication, 9 articles)
 
 Reuters serves as the analytical baseline for same-event comparison methodology (§13):
 
 | Publication | Articles | Coverage Focus |
 |---|---|---|
-| **Reuters** | 7 | MCI data exposure, Gemini compute limits, child addiction litigation, town hall coverage, BoE regulation, insurance defense |
+| **Reuters** | 9 | MCI data exposure, Gemini compute limits, child addiction litigation, town hall coverage, BoE regulation, insurance defense, Dalton Smith departure, EU WhatsApp AI antitrust, Zuckerberg AI agents |
 
-#### Tech Editorial (10 publications, 18 articles)
+#### Tech Editorial (12 publications, 22 articles)
 
 Independent tech press with varying editorial postures, from neutral product coverage to adversarial editorial voice:
 
@@ -1239,8 +1239,10 @@ Independent tech press with varying editorial postures, from neutral product cov
 | **9to5Mac** | 1 | Smart glasses accessibility paywall |
 | **Android Authority** | 1 | Conversation Focus subscription paywall |
 | **Digital Trends** | 1 | NameTag facial recognition removal |
+| **LiveMint** | 1 | Meta Wang Muse Spark / Claude integration |
 | **Malwarebytes** | 1 | Meta AI support bot security hack |
 | **TechCrunch** | 1 | Zuckerberg AI agents town hall |
+| **TechTarget** | 1 | MCI keystroke privacy |
 | **TechTimes** | 1 | Applied AI "gulag" restructuring |
 
 #### Financial / Investment Press (8 publications, 8 articles)
@@ -1257,7 +1259,7 @@ Critical for documenting the VADER financial journalism inflation bias (§16):
 | **Stocktwits** | 2 | Virtue AI acqui-hire, cloud compute analyst reactions |
 | **TheStreet** | 1 | Meta AI warning before earnings (100th article — worst VADER false positive: 0.9788) |
 
-#### General Interest / Other (3 publications + cross-analyses, 12 articles)
+#### General Interest / Other (5 publications + cross-analyses, 11 articles)
 
 Specialty press and multi-source analyses:
 
@@ -1265,6 +1267,7 @@ Specialty press and multi-source analyses:
 |---|---|---|
 | **Fast Company** | 3 | AI draft reversal, Wynn-Williams lawsuit, Zuckerberg AI job fears |
 | **AV Club** | 1 | Meta Arena gambling framing |
+| **CNN** | 1 | Social media child safety features |
 | **Futurism** | 1 | Cannes reframe contractor trauma |
 | **iPhoneInCanada** | 1 | Zuckerberg AI agents (editorial dramatization discovery) |
 | **Kotaku** | 1 | Meta Arena / Polymarket rivalry (sardonic correction Path D discovery) |
@@ -1283,10 +1286,10 @@ Specialty press and multi-source analyses:
 | Mar 2026 | 3 | Wired Ray-Ban/creep, Horizon Worlds, Guardian UK crackdown |
 | Apr 2026 | 3 | MIT TR Chinese workers, resistance, LLM surveillance |
 | May 2026 | 7 | MIT TR Anduril/warfare glasses, Wired dark mood, WebProNews Dublin |
-| Jun 2026 | 60 | Primary collection window — 60% of corpus |
-| Jul 2026 | 20 | Second-highest month — financial journalism genre expansion |
+| Jun 2026 | 63 | Primary collection window — 60% of corpus |
+| Jul 2026 | 21 | Second-highest month — financial journalism genre expansion |
 
-**Collection trajectory:** The corpus grew from ~10 articles (late June 2026) to 100 over 12 days, with the most intensive collection in June–July 2026. Earlier articles (Aug 2025 – May 2026) were retroactively collected to extend temporal coverage and test the toolkit's temporal generalization. The June 2026 concentration reflects the initial sprint to discover and validate framing device types.
+**Collection trajectory:** The corpus grew from ~10 articles (late June 2026) to 105 over ~14 days, with the most intensive collection in June–July 2026. Earlier articles (Aug 2025 – May 2026) were retroactively collected to extend temporal coverage and test the toolkit's temporal generalization. The June 2026 concentration reflects the initial sprint to discover and validate framing device types.
 
 ### 17.4 Genre Distribution
 
@@ -1303,7 +1306,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 100 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 80 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 105 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 85 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
