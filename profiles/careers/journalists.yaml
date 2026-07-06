@@ -9927,3 +9927,57 @@ journalists:
     at Atlantic shapes how AI/tech stories are framed when they touch national security (export controls, defense AI, surveillance).
     The WSJ → Atlantic pipeline (Beckett + Bobrow + Oremus-via-WaPo) is the single largest institutional talent flow into
     Atlantic''s current editorial structure.'
+- career:
+  - beat: technology, consumer electronics, product reviews
+    end: 2019-06
+    event_type: hired
+    notes: >
+      Staff writer/analyst at PC Magazine (Ziff Davis). One of the legacy tech review publications.
+      Built initial expertise in consumer electronics, gadgets, and fitness technology during a ~6 year
+      tenure. PC Magazine's institutional style emphasizes structured product reviews with spec-driven
+      analysis — a framing style Victoria carried forward into her Gizmodo and Verge work.
+    publication: pc-magazine
+    role: staff_writer
+    source_url: "https://www.theverge.com/authors/victoria-song"
+    start: 2013-06
+  - beat: wearables, fitness tech, consumer electronics, health tech
+    end: 2022-08
+    event_type: hired
+    notes: >
+      Staff writer at Gizmodo (G/O Media). Extremely prolific — 61 pages of author archive (~900+
+      articles over ~3 years). Established herself as one of the most authoritative wearables reviewers
+      in tech media. Key coverage: Apple Watch, Fitbit, Samsung Galaxy Watch, Google Pixel Watch,
+      Wear OS, fitness trackers, smart home devices, health tech. Writing style: sharp, opinionated,
+      consumer-advocate framing. G/O Media (Jim Spanfeller) known for contentious management-editorial
+      relations. Victoria left as part of broader talent exodus. KEY MIGRATION: Gizmodo → The Verge
+      represents move from declining media company to stable, well-resourced platform. Tests whether
+      editorial framing shifts when institutional resources improve.
+    publication: gizmodo
+    role: staff_writer
+    source_url: "https://gizmodo.com/author/victoria-song"
+    start: 2019-06
+  - beat: wearables, health tech, smart glasses, fitness, AI wearables
+    event_type: hired
+    notes: >
+      Senior reporter at The Verge (Vox Media → PMC/PMX as of 2026). Author of "Optimizer" newsletter.
+      Regular Vergecast contributor. 13+ years experience. PRIMARY COVERAGE: Apple Watch, Samsung Galaxy
+      Watch, Google Pixel Watch, Meta Ray-Ban smart glasses, AI wearables (Humane AI Pin, Rabbit R1),
+      smart rings, fitness trackers. META COVERAGE: Covers Meta Ray-Ban glasses extensively — product
+      reviews and privacy/surveillance lens. July 2026 column on smart glasses surveillance directly
+      intersects with Meta NameTag facial recognition feature. Framing evolved from product-review-positive
+      to increasingly privacy-critical. FRAMING ANALYSIS BASELINE: Product-focused rather than
+      investigative-adversarial — valuable CONTROL for MediaScope asymmetric framing analysis. Three
+      institutional contexts (PC Mag → Gizmodo → The Verge) enable DiD comparison of Meta coverage framing.
+    publication: the-verge
+    role: senior_reporter
+    source_url: "https://www.theverge.com/authors/victoria-song"
+    start: 2022-08
+  name: Victoria Song
+  notes: >
+    Key migrations: PC Magazine → Gizmodo → The Verge. 13+ years wearables/health tech expertise.
+    Author of The Verge "Optimizer" newsletter. Most authoritative wearables reviewer in mainstream
+    tech media. Meta Ray-Ban coverage spans product reviews and privacy/surveillance analysis.
+    Migration from Gizmodo (declining G/O Media) to The Verge (well-resourced Vox/PMC) provides
+    natural experiment for institutional framing effects. Not investigative — product reviewer with
+    increasing editorial voice on surveillance/privacy. Korean-American cultural context visible in
+    Samsung/Korean tech coverage.

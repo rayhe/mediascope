@@ -1,0 +1,338 @@
+name: "The Verge"
+slug: "the-verge"
+url: "https://www.theverge.com"
+
+rss_feeds:
+  - url: "https://www.theverge.com/rss/index.xml"
+    category: "main"
+  - url: "https://www.theverge.com/rss/tech/index.xml"
+    category: "tech"
+  - url: "https://www.theverge.com/rss/reviews/index.xml"
+    category: "reviews"
+  - url: "https://www.theverge.com/rss/policy/index.xml"
+    category: "policy"
+  - url: "https://www.theverge.com/rss/creators/index.xml"
+    category: "creators"
+
+# ===================================================================
+# OWNERSHIP CHAIN — compiled 2026-07-06 from press releases, SEC filings,
+# Wikipedia, news reporting (WSJ, Adweek, TheWrap, Poynter, exchange4media)
+# ===================================================================
+ownership_chain:
+  - name: "The Verge"
+    entity_type: "publisher"
+    description: >
+      Technology news website launched November 1, 2011, alongside the formation of Vox Media by
+      Jim Bankoff and Trei Brundrett. Originally co-founded by Joshua Topolsky (first EIC), who
+      departed for Bloomberg in 2014. Nilay Patel became EIC in 2014 and has held the role since.
+      Known for in-depth product reviews, tech policy analysis, and the flagship Vergecast podcast.
+      The Verge has won multiple Webby Awards and is considered one of the most influential tech
+      publications in the US. Monthly reach: tens of millions of unique visitors.
+      In May 2025, Vox Media sold Polygon to Valnet (amid union controversy). In May 2026, James
+      Murdoch's Lupa Systems acquired New York Magazine, Vox.com, and the Vox Media Podcast Network
+      for ~$300M. The Verge was NOT part of the Murdoch deal. In June 2026, PMC acquired the remaining
+      Vox Media brands (The Verge, Eater, SB Nation, Popsugar, The Dodo, Punch, Thrillist) and created
+      the PMX subsidiary to house them alongside PMC's existing portfolio.
+    source_urls:
+      - "https://en.wikipedia.org/wiki/The_Verge"
+      - "https://www.wsj.com/james-murdoch-buy-new-york-magazine-vox-300-million"
+
+  - name: "PMX Global, LLC"
+    entity_type: "operating_subsidiary"
+    description: >
+      New subsidiary of Penske Media Corporation created in mid-2026 to house the combined publishing
+      portfolio of PMC's existing titles plus the acquired Vox Media brands. Totals 25+ media titles.
+      President: Ryan Pauley (former President of Vox Media, joined PMC with the acquisition).
+      Pauley reports to Jay Penske (PMC Chairman & CEO) and Craig Perreault (PMC President).
+      PMX also houses Concert (Vox Media's premium ad marketplace) and Forte (Vox Media's first-party
+      data platform), giving it significant ad tech infrastructure.
+    source_urls:
+      - "https://www.voxmedia.com/2026/6/19/pmc-acquires-vox-media-brands"
+      - "https://www.editorandpublisher.com/stories/pmc-acquires-vox-media-brands"
+
+  - name: "Penske Media Corporation (PMC)"
+    entity_type: "parent_company"
+    description: >
+      Private digital media and publishing company founded in 2003-2004 by Jay Penske. HQ: Los Angeles.
+      Chairman, Founder & CEO: Jay Penske. President: Craig Perreault.
+
+      PORTFOLIO (25+ titles): Billboard, Variety, Rolling Stone, WWD (Women's Wear Daily),
+      The Hollywood Reporter, Deadline, Robb Report, Artforum, Sportico, SHE Media, StyleCaster,
+      ARTnews, FN (Footwear News), IndieWire, VIBE, Billboard Music Charts, BEAUTYINC, plus
+      acquired Vox Media brands: The Verge, Eater, SB Nation, Popsugar, The Dodo, Punch, Thrillist.
+
+      OTHER PROPERTIES: Dick Clark Productions (owner of the Golden Globes, American Music Awards,
+      New Year's Rockin' Eve), SXSW (majority owner, acquired ~2024).
+
+      REVENUE: Private, no public filings. Described as one of the largest digital media companies
+      in the US, reaching "hundreds of millions of people every month" and producing "300+ live events
+      each year" (PMC press release, June 2026).
+
+      INVESTMENT HISTORY WITH VOX MEDIA:
+      - Feb 2023: PMC invested $100M for 20% stake in Vox Media (NYT, TheWrap). Valuation implied
+        ~$500M, down from $1B in 2015 (NBCUniversal round). Jay Penske joined Vox Media board.
+      - May 2026: James Murdoch / Lupa Systems bought NY Mag, Vox.com, podcast network for ~$300M.
+      - June 2026: PMC acquired remaining brands (The Verge, Eater, SB Nation, etc.) into PMX subsidiary.
+        Existing Vox Media shareholders retain minority stake in PMX.
+    source_urls:
+      - "https://pmc.com"
+      - "https://www.thewrap.com/penske-media-corporation-invests-100-million-vox-20-percent-stake/"
+      - "https://www.exchange4media.com/media-print-news/penske-media-corporation-to-acquire-major-vox-media-brands"
+
+  - name: "Penske Family"
+    entity_type: "family_office"
+    description: >
+      Jay Penske (born ~1979, New York City) is the youngest son of Kathy Penske and Roger Penske.
+      Wharton School (UPenn) BS in Management of Information Systems and Finance.
+      Net worth estimated at $250M (Celebrity Net Worth, 2026). Previously married to Elaine Irwin
+      (supermodel, 2012-2024). One daughter.
+
+      Roger Penske (father): Billionaire founder and chairman of Penske Corporation, a diversified
+      transportation and automotive empire. Key holdings:
+      - Penske Automotive Group (NYSE: PAG) — publicly traded, Roger is Chair & CEO, 10%+ owner.
+        PAG is one of the largest automotive retail groups in the US.
+      - Penske Truck Leasing — 360,000+ truck fleet, ubiquitous orange rental trucks.
+      - Indianapolis Motor Speedway — owner since 2019.
+      - IndyCar — owner of the racing series.
+      - Team Penske — major racing team (IndyCar, NASCAR, IMSA).
+
+      POLITICAL CONNECTIONS: Roger Penske received the Presidential Medal of Freedom from Donald Trump
+      in 2019. Made his first donation to Trump's reelection the same year. Contributed $1.1M+ to
+      Trump-aligned efforts in 2024 election cycle (per Medium/Steve Rosenbaum). Previously backed
+      anti-Trump groups in 2016 — shifted course after Medal of Freedom.
+
+      Jay Penske has projected political neutrality publicly, but insiders at multiple PMC brands
+      describe a "quiet realignment toward 'balanced' — often more conservative — voices and priorities"
+      (Medium/Rosenbaum, SXSW analysis). At SXSW, staff were reportedly "directed to bring more
+      conservative voices to the stage" after PMC acquisition.
+
+      Jay also owns Dragon Racing (Formula E team) and Dragon Books (antiquarian bookstore, LA).
+    source_urls:
+      - "https://en.wikipedia.org/wiki/Jay_Penske"
+      - "https://www.celebritynetworth.com/richest-businessmen/jay-penske-net-worth/"
+      - "https://stevenrosenbaum.medium.com/jay-penske-takes-control-of-sxsw"
+
+# ===================================================================
+# REVENUE RELATIONSHIPS
+# ===================================================================
+revenue_relationships:
+  - partner: "OpenAI"
+    relationship_type: "licensing"
+    estimated_value: "undisclosed (multi-year)"
+    description: >
+      Vox Media signed a content licensing and product partnership with OpenAI on May 29, 2024,
+      announced same day as The Atlantic's similar deal. OpenAI gets access to Vox Media's current
+      content AND entire archive (including The Verge's) to train ChatGPT and other models. Vox
+      Media gets OpenAI tech access and licensing fees. Deal was announced without consulting
+      Vox Media Union journalists, who expressed "serious concerns" via WGAE statement. Kelsey Piper
+      (Vox reporter) publicly expressed frustration on X. The Verge is part of the Vox Union
+      (WGAE-represented).
+
+      CONFLICT SIGNIFICANCE: OpenAI is Meta's direct competitor in AI (ChatGPT vs Meta AI). The
+      Verge's archives are being used to train a Meta competitor's product. The Verge receives
+      financial benefit from OpenAI's success and zero financial benefit from Meta's AI efforts.
+      This creates a structural incentive asymmetry in coverage.
+
+      Post-PMC acquisition: unclear if the licensing deal transfers to PMX or needs renegotiation.
+    date_established: "2024-05-29"
+    source_urls:
+      - "https://www.reuters.com/technology/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/"
+      - "https://techcrunch.com/2024/06/05/whats-in-it-for-us-journalists-ask-as-publications-sign-content-deals-with-ai-firms/"
+
+  - partner: "Google"
+    relationship_type: "litigation_adversary"
+    estimated_value: "damages sought (undisclosed)"
+    description: >
+      Penske Media, Vox Media, and The Atlantic filed separate lawsuits against Google alleging
+      manipulation of ad auctions and rigged bids in digital advertising. The suits allege Google
+      "intentionally undercut publishers in ad auctions for more than a decade, depressing prices
+      and causing significant revenue losses." Filed in the wake of a federal judge's ruling that
+      Google holds unlawful monopolies in two ad tech markets (EDVA case, remedies phase ongoing).
+
+      CONFLICT SIGNIFICANCE: Google competes with Meta in search, advertising, AI, and wearables
+      (Android XR smart glasses vs Meta Ray-Ban). Adversarial financial relationship with Google
+      could create coverage spillover effects. Vox Media also disclosed the Google lawsuit on
+      The Vergecast (Jan 2026): "Disclosure is our brand."
+
+      Separately, Google's AI Overviews are an existential traffic threat to The Verge (same dynamic
+      as Condé Nast's "Google Zero" planning).
+    date_established: "2025-12"
+    source_urls:
+      - "https://thecurrent.com/story/the-atlantic-penske-media-vox-sue-google-ad-auction"
+
+  - partner: "Meta"
+    relationship_type: "advertising"
+    estimated_value: "undisclosed"
+    description: >
+      Meta is a major digital advertiser across the media ecosystem. The Verge/Vox Media/PMC properties
+      likely receive Meta advertising revenue (programmatic and direct). Meta is also a significant
+      source of referral traffic to The Verge via Facebook and Instagram sharing. However, Meta has
+      NOT signed an AI content licensing deal with Vox Media/PMC — unlike OpenAI (which has). This
+      creates the same revenue asymmetry seen at Condé Nast: The Verge's parent gets paid by Meta's
+      AI competitors but not by Meta itself.
+
+      IMPORTANT: No confirmed AI licensing deal between Meta and PMC/Vox Media as of July 2026.
+    date_established: "ongoing"
+
+  - partner: "Concert (ad marketplace)"
+    relationship_type: "internal_ad_tech"
+    estimated_value: "integral to revenue"
+    description: >
+      Concert is Vox Media's premium ad marketplace, acquired by PMC as part of the Vox Media brands
+      deal. It serves as the programmatic advertising infrastructure for The Verge and other properties.
+      Concert competes in the same ad tech ecosystem where Google (sued by PMC/Vox) and Meta operate.
+      Forte is Vox Media's first-party data platform, also acquired by PMC.
+    date_established: "2016"
+
+# ===================================================================
+# EDITORIAL LEADERSHIP
+# ===================================================================
+editorial_leadership:
+  - name: "Nilay Patel"
+    title: "Editor-in-Chief"
+    editorial_stance: >
+      EIC since July 2014 (succeeded Joshua Topolsky). Former managing editor. JD from Georgetown
+      University Law Center. Previously a lawyer at an IP litigation firm before joining Engadget
+      (2005), then co-founding The Verge with Topolsky. Host of the Vergecast and Decoder podcasts.
+      Known for strong editorial voice on tech antitrust, platform regulation, right to repair, and
+      independent journalism. Coined "Google Zero" framing for the impact of AI Overviews on
+      publisher traffic. Has been vocal about Vox Media's Google lawsuit on-air. His legal background
+      shapes The Verge's emphasis on policy and regulatory coverage.
+
+  - name: "David Pierce"
+    title: "Editor-at-Large"
+    editorial_stance: >
+      Co-host of Vergecast (daily format since ~2025). Previously at Protocol (EIC), Wired, and WSJ.
+      Covers consumer tech, gadgets, AI products. Also hosts Version History (deep-dive podcast series).
+      KEY MIGRATION: Protocol (failed Politico tech spinoff) → The Verge. His Wired background means
+      he brings Condé Nast institutional framing exposure to The Verge's editorial environment.
+
+  - name: "Alex Heath"
+    title: "Deputy Editor, Platforms & Emerging Tech"
+    editorial_stance: >
+      Primary Meta/Facebook reporter at The Verge. Known for exclusive sourcing inside Meta. Previously
+      at The Information and Business Insider. Covers Meta's Reality Labs, Quest headsets, social platform
+      changes, and internal company dynamics. His reporting on Meta is among the most-cited in the
+      industry. KEY for MediaScope analysis: his coverage sets The Verge's institutional tone on Meta
+      as a company, distinct from Victoria Song's product-focused wearables coverage.
+
+# ===================================================================
+# KEY JOURNALISTS
+# ===================================================================
+key_journalists:
+  - name: "Victoria Song"
+    beat: "wearables, health tech, smart glasses, fitness"
+    known_patterns: >
+      Senior reporter and author of the "Optimizer" newsletter. 13+ years of experience. Previously
+      at Gizmodo (~2019-2022) and PC Magazine (~2013-2019). The Verge's primary wearables reviewer
+      and smart glasses beat reporter. Regular Vergecast contributor. Covers Meta Ray-Ban glasses
+      extensively — both product reviews and privacy/surveillance implications. Her July 2026 column
+      on smart glasses surveillance directly intersects with Meta's NameTag facial recognition feature.
+      Known for hands-on, consumer-focused coverage with increasing privacy-critical framing of
+      always-on wearable AI. Tests whether product-reviewer framing modulates differently than
+      investigative-reporter framing (cf. Alex Heath's Meta coverage).
+
+  - name: "Alex Cranz"
+    beat: "consumer tech, reviews"
+    known_patterns: >
+      Regular Vergecast panelist. Reviews TVs, laptops, consumer electronics. Previously at Gizmodo.
+      Consumer-focused rather than platform-critical.
+
+  - name: "Allison Johnson"
+    beat: "mobile phones, smartphones"
+    known_patterns: >
+      Phone reviewer. Covers Apple, Samsung, Google Pixel, OnePlus. Regular Vergecast contributor.
+
+  - name: "Wes Davis"
+    beat: "general tech news, AI"
+    known_patterns: >
+      Prolific news reporter covering AI developments, platform news, and breaking tech stories.
+
+# ===================================================================
+# KNOWN CONFLICTS OF INTEREST
+# ===================================================================
+known_conflicts:
+  - type: "revenue"
+    description: >
+      Vox Media (The Verge's parent at the time) signed a multi-year content licensing deal with
+      OpenAI on May 29, 2024, giving OpenAI access to The Verge's full archives and current content
+      for AI model training. OpenAI is Meta's direct competitor in AI (ChatGPT vs Meta AI, Llama).
+      The Verge receives financial benefit from OpenAI's success. Meta has NOT signed any AI content
+      licensing deal with Vox Media or PMC as of July 2026. This creates the same structural revenue
+      asymmetry identified at Condé Nast: every major Meta AI competitor pays The Verge's parent
+      for content; Meta does not. No Verge article covering Meta AI has disclosed this financial
+      relationship with Meta's competitor.
+    severity: 4
+    evidence: "Reuters May 29 2024, TechCrunch June 5 2024, Vox Union WGAE statement"
+    source_urls:
+      - "https://www.reuters.com/technology/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/"
+      - "https://techcrunch.com/2024/06/05/whats-in-it-for-us-journalists-ask-as-publications-sign-content-deals-with-ai-firms/"
+
+  - type: "litigation"
+    description: >
+      PMC (The Verge's current parent) and Vox Media (prior parent) are both suing Google for ad tech
+      antitrust damages. Google competes with Meta in search, advertising, AI, and wearables. The
+      Verge disclosed the lawsuit on the Vergecast ("Disclosure is our brand") but the adversarial
+      financial relationship with Google creates complex incentive structures. Coverage of Google vs
+      Meta dynamics — including smart glasses competition (Android XR vs Meta Ray-Ban) — occurs in the
+      context of an active lawsuit against Google. This could cut either direction: adversarial framing
+      of Google (litigation opponent) or sympathetic framing of Google as a counterbalance to Meta.
+    severity: 3
+    evidence: "thecurrent.com Dec 2025, Vergecast Jan 2026 disclosure"
+    source_url: "https://thecurrent.com/story/the-atlantic-penske-media-vox-sue-google-ad-auction"
+
+  - type: "political"
+    description: >
+      Jay Penske's father Roger Penske received the Presidential Medal of Freedom from Trump (2019),
+      donated $1.1M+ to Trump-aligned political efforts (2024 cycle), and shifted from anti-Trump
+      (2016) to pro-Trump after the medal. Insiders at multiple PMC brands report a "quiet realignment"
+      toward more conservative editorial positioning under PMC ownership. At SXSW (PMC-owned), staff
+      were reportedly directed to bring more conservative voices. This political dimension is relevant
+      to coverage of tech regulation, Section 230, and platform governance — all areas The Verge covers
+      extensively. If PMC's political alignment influences editorial direction (as reported at other
+      PMC properties), it could modulate The Verge's historically strong editorial voice on regulation.
+    severity: 3
+    evidence: "Medium/Steve Rosenbaum SXSW analysis, FEC donation records, Medal of Freedom citation"
+    source_urls:
+      - "https://stevenrosenbaum.medium.com/jay-penske-takes-control-of-sxsw"
+
+  - type: "ownership_transition"
+    description: >
+      The Verge underwent a major ownership transition in 2026: Vox Media (Jim Bankoff, independent)
+      → PMC/PMX (Jay Penske). This is the publication's first ownership change since founding in 2011.
+      The transition coincides with the Murdoch/Lupa split that separated New York Magazine, Vox.com,
+      and the podcast network from The Verge's new PMX home. The Verge's editorial independence under
+      PMC is untested. PMC's track record at other acquisitions (Rolling Stone, Variety, Billboard,
+      SXSW) shows a pattern of "editorial independence shrinking, advertiser influence growing"
+      (per Medium/Rosenbaum analysis). This is a live variable — The Verge under PMC may editorially
+      diverge from The Verge under Vox Media.
+    severity: 4
+    evidence: "PMC acquisition announcement June 2026, Vox Media press releases"
+    source_urls:
+      - "https://www.voxmedia.com/2026/6/19/pmc-acquires-vox-media-brands"
+
+  - type: "competitive"
+    description: >
+      PMC's portfolio includes entertainment trade publications (Variety, Hollywood Reporter, Deadline,
+      Rolling Stone, Billboard) that have significant advertising and event relationships with major
+      tech companies including Meta. Meta is a major advertiser in the entertainment industry (Meta
+      Quest, Ray-Ban Meta campaigns) and sponsors events. PMC's events business (300+ events/year
+      including Golden Globes, SXSW) creates commercial relationships with the same companies The
+      Verge covers editorially. The separation between PMX editorial and PMC commercial functions
+      is untested.
+    severity: 3
+    evidence: "PMC portfolio, Dick Clark Productions ownership, SXSW ownership"
+
+# ===================================================================
+# LITIGATION CONNECTIONS
+# ===================================================================
+litigation_connections:
+  - type: "plaintiff"
+    description: >
+      PMC and Vox Media (separately) sued Google for ad tech antitrust damages (filed late 2025/early
+      2026). Alleges Google manipulated ad auctions, depressing publisher revenue for over a decade.
+      Part of a wave of publisher suits following the federal court ruling (EDVA) that Google holds
+      unlawful monopolies in web ad tech markets. Remedies phase ongoing. Other plaintiffs include
+      The Atlantic, Business Insider, People Inc., and Slate.
+    case_reference: "PMC v. Google (ad tech antitrust), filed ~Dec 2025"
+    source_url: "https://thecurrent.com/story/the-atlantic-penske-media-vox-sue-google-ad-auction"

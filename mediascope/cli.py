@@ -675,16 +675,16 @@ def list_publications():
     table.add_column("Entities", justify="right")
     table.add_column("Conflicts", justify="right")
 
-    for p in sorted(profiles, key=lambda x: x.get("slug", "")):
-        if p.get("slug", "").startswith("_"):
+    for p in sorted(profiles.values(), key=lambda x: x.slug):
+        if p.slug.startswith("_"):
             continue  # skip template
         table.add_row(
-            p.get("slug", "?"),
-            p.get("name", "?"),
-            p.get("url", ""),
-            str(len(p.get("rss_feeds", []))),
-            str(len(p.get("target_entities", {}))),
-            str(len(p.get("known_conflicts", []))),
+            p.slug,
+            p.name,
+            p.url,
+            str(len(p.rss_feeds)),
+            str(len(p.target_entities)),
+            str(len(p.known_conflicts)),
         )
 
     console.print(table)
