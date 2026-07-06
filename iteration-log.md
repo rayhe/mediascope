@@ -14050,3 +14050,52 @@ Systematic scan of all 119 journalist profiles identified thin profiles at track
 ### Test Results
 - All 1,454 tests pass (README migration count consistency guard fixed)
 - Auto-detected migrations: 428 → 434 (+6 from expanded career)
+
+---
+
+## 2026-07-06 03:00 PT — Type A: Article Deep Dive
+
+### Article
+**TechTarget: "Meta's AI training with keystrokes: Progress or privacy issue"** (2026-07-02)
+- First enterprise trade publication (B2B/CIO audience) in corpus
+- Same Meta MCI story as Reuters (Jun 22) and Wired (Jun 22) — enables three-publication cross-comparison
+- Saved: `examples/sample_output/techtarget_meta_mci_keystroke_privacy_2026_07_02_{article,analysis}.md`
+
+### Genre Analysis
+TechTarget represents a fundamentally different editorial genre from consumer journalism (Wired) or wire services (Reuters):
+- **Reuters (400 words):** Neutral wire, zero framing devices, factual report of Meta's pause
+- **Wired (~2,200 words):** 12+ framing devices, adversarial stance, treats MCI as surveillance scandal
+- **TechTarget (~2,600 words):** Zero framing devices detected (before this iteration), transforms same story into IT governance playbook
+
+### Toolkit Gaps Found (3)
+1. **`expert_consensus_authority`** (Priority 1): 4 named credentialed experts (IEEE senior member, Prevalent CEO, Pactum CTO, Tungsten CPO) all reinforcing same editorial thesis — no fundamental objections raised
+2. **`prescriptive_solutionism`** (Priority 2): Two sections of prescriptive bullet lists ("Actionable steps for IT leaders") transform an accountability story into a management checklist
+3. **Structural false balance** (Priority 3, not implemented this iteration): Section headings create binary opposition ("The privacy challenge" vs "The innovation opportunity") — existing false_balance only catches prose-level markers
+
+### Toolkit Improvements
+Two new framing device types added to `mediascope/analyze/framing.py`:
+
+**`expert_consensus_authority`** (3 patterns):
+- `said [Name], [title] at/of [Company]` — named expert attribution
+- `[Name], [title] at [Company] ... said/wrote/told` — pre-attribution format
+- `said [Name], a senior member of [Organization]` — institutional membership
+- 6 matches on discovery article (4 unique experts × multiple pattern hits)
+
+**`prescriptive_solutionism`** (4 patterns):
+- `actionable steps/tips/takeaways for [IT] leaders/executives`
+- `advises/recommends executives to consider/evaluate/implement`
+- `executives/leaders must/should/need to [prescriptive verb]`
+- `when training/deploying AI, there are steps/things`
+- 6 matches on discovery article
+
+### Counts Updated
+- Total framing device types: 73 → **75** (10 core + 59 extended + 6 structural)
+- Pattern-matched types: 67 → **69**
+- Total regex patterns: 412 → **419**
+- Annotated articles: 101 → **102**
+- Docs updated: ARCHITECTURE.md, METHODOLOGY.md, AGENT_GUIDE.md, QUALITY_STANDARDS.md, README.md, framing.py, cli.py
+
+### Test Results
+- All **1,454 tests pass** (0 failures)
+- Structural consistency guards updated: device count, pattern count, docstring list, doc sync
+- Commit: `b11f488` — pushed to `main`
