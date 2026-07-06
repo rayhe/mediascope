@@ -2356,6 +2356,54 @@ _DEVICE_PATTERNS["scale_magnitude"] = _SCALE_MAGNITUDE_PATTERNS
 
 
 # ---------------------------------------------------------------------------
+# Precedent framing: editorial device where a journalist signals that an
+# event is exceptionally rare, severe, or significant by comparing it to
+# historical precedent. Common in regulatory journalism ("first in 17
+# years"), legal coverage ("largest settlement since"), and enforcement
+# reporting.
+#
+# Example from Reuters EU WhatsApp antitrust (2026-06-10):
+#   "its first [interim measure] in 17 years"
+#
+# Example pattern: "the largest fine since 2018," "first such order in a
+# decade," "unprecedented move by regulators"
+#
+# Distinct from scale_magnitude (which flags raw numerical scale) and
+# timeline_implication (which flags temporal pressure). Precedent framing
+# establishes significance through historical rarity.
+#
+# Added iteration 2026-07-06 from Reuters EU WhatsApp antitrust analysis.
+# ---------------------------------------------------------------------------
+_PRECEDENT_FRAMING_PATTERNS: list[re.Pattern] = [
+    # "first [X] in N years" — rarity via time span
+    re.compile(
+        r"\bfirst\s+(?:(?:such\s+)?(?:\w+\s+){0,3})?in\s+\d+\s+years?\b",
+        re.IGNORECASE,
+    ),
+    # "first [X] since YYYY" — rarity via historical date
+    re.compile(
+        r"\bfirst\s+(?:\w+\s+){0,4}since\s+\d{4}\b",
+        re.IGNORECASE,
+    ),
+    # "largest/biggest/most severe [X] since/in N years"
+    re.compile(
+        r"\b(?:largest|biggest|most\s+severe|most\s+significant|highest|"
+        r"steepest|heaviest)\s+(?:\w+\s+){0,3}"
+        r"(?:since\s+\d{4}|in\s+\d+\s+years?)\b",
+        re.IGNORECASE,
+    ),
+    # "unprecedented" as standalone severity marker
+    re.compile(
+        r"\bunprecedented\s+(?:move|action|step|order|measure|fine|penalty|"
+        r"decision|ruling|enforcement|crackdown|intervention)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["precedent_framing"] = _PRECEDENT_FRAMING_PATTERNS
+
+
+# ---------------------------------------------------------------------------
 # Corporate reassurance undercut: editorial device where a corporate PR
 # statement expressing safety, care, or responsible design is immediately
 # followed by adversarial conjunction ("but," "however," "yet," "despite,"
@@ -5948,8 +5996,8 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 66 pattern-matched device types plus 6 structural
-    post-pass types (72 total).
+    Scans for 67 pattern-matched device types plus 6 structural
+    post-pass types (73 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
@@ -5978,7 +6026,7 @@ def detect_framing_devices(
     marginal_endorsement,
     military_techno_optimism, outsourced_intensity,
     pathologizing_metaphor, policy_reversal, power_asymmetry,
-    precedent_analogy,
+    precedent_analogy, precedent_framing,
     pressure_language, refusal_amplification, regulatory_favoritism,
     regulatory_shadow, repeated_disruption, rhetorical_question,
     sarcastic_correction, scandal_comparison, scale_magnitude,

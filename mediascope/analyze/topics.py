@@ -72,6 +72,13 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "DSA", "Digital Services Act", "competition law",
         "consent decree", "regulatory scrutiny", "breakup",
         "market concentration", "merger review", "remedies",
+        # EU competition enforcement terms (added iteration 2026-07-06)
+        "interim measure", "interim measures", "market power",
+        "abuse of dominance", "abuse of market power",
+        "competition enforcer", "Statement of Objections",
+        "self-preferencing", "self preferencing",
+        "turnover fine", "regulatory overreach",
+        "charge sheet", "charges against",
     ],
     "child_safety": [
         "child safety", "children's safety", "child exploitation",

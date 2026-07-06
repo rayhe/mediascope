@@ -1,0 +1,81 @@
+Title: EU regulators order Meta to allow rival AI chatbots free access to WhatsApp
+Authors: Reuters staff (Foo Yun Chee)
+Publication: Reuters
+Date: 2026-06-10
+URL: https://www.reuters.com/world/eu-regulators-order-meta-allow-rival-ai-chatbots-free-access-whatsapp-2026-06-09/
+
+---
+
+EU antitrust regulators on Tuesday ordered Meta Platforms to give rival AI chatbots free access to WhatsApp while they continue to investigate whether the company abused its market power by blocking competitors from the messaging app.
+
+The European Commission's decision to issue an interim measure against Meta - its first in 17 years - followed complaints from The Interaction Company of California, developer of the Poke.com AI assistant, French AI startup Agentik and a Spanish rival.
+
+Those complaints prompted the Commission, the EU's competition enforcer, to open an investigation in December last year. It issued charges against Meta two months later, alleging breaches of EU antitrust rules.
+
+"In rapidly evolving markets, competition can be lost long before a final decision is adopted," EU antitrust chief Teresa Ribera said in a statement.
+
+"These interim measures will safeguard competition in the growing market for AI assistants, by preserving a key entry point to reach consumers in Europe – WhatsApp – and allowing AI companies to innovate, scale up and reach their full potential," she said.
+
+Meta criticised the Commission order.
+
+"The European Commission has decided that OpenAI and some of the largest companies in the world can use the paid-for WhatsApp Business product for free," a Meta spokesperson said in an email.
+
+"This is regulatory overreach subsidised by the many European companies that pay. We will appeal."
+
+Meta barred rival AI services from accessing its WhatsApp for Business application programming interface, which allows companies to connect their systems to WhatsApp, in October last year, while exempting its own assistant Meta AI. In March it allowed the competitors back onto the platform for a fee, a move that drew the Commission's objection.
+
+Under the interim measure, Meta must restore rivals' access to the WhatsApp for Business API on the same terms and conditions that applied before October, within five working days.
+
+Meta faces a fine of up to 10% of its global annual turnover if found to have breached EU antitrust rules.
+
+---
+
+CONTEXT: Full timeline of the EU WhatsApp AI antitrust case, compiled from
+multiple Reuters and TechCrunch reports for MediaScope cross-reference:
+
+* Oct 2025: Meta announces policy barring third-party general-purpose AI
+  chatbots from WhatsApp Business API, effective Jan 15, 2026. Meta AI
+  exempted. (Reuters, TechCrunch)
+
+* Dec 2025: Italy's AGCM orders Meta to suspend the ban. EU Commission opens
+  formal investigation based on complaints from The Interaction Company
+  (Poke.com, California), Agentik (France), and a Spanish rival. (Neowin,
+  TechCrunch)
+
+* Jan 15, 2026: Meta's ban takes effect. Immediately, third-party chatbot
+  providers (ChatGPT, Claude, Perplexity, Poke) lose WhatsApp Business API
+  access. In Italy, Meta starts charging per message (€0.0572/message) where
+  regulators forced access. (TechCrunch, Neowin)
+
+* Feb 2026: European Commission issues formal charges (Statement of Objections)
+  against Meta, alleging breaches of EU antitrust rules. Signals intent to
+  impose interim measures. (Reuters, TechCrunch)
+
+* Mar 5, 2026: Meta allows rival chatbots back onto WhatsApp in Europe for a
+  fee (€0.0490–€0.1323 per non-template message, depending on country).
+  Meta frames this as removing "the need for any immediate intervention."
+  Commission objects that pricing may still exclude third-party providers.
+  Triggers second charge sheet. (TechCrunch)
+
+* May 13, 2026: Meta offers free WhatsApp access for rival chatbots for one
+  month as a negotiating gesture. Commission calls it "a step in the right
+  direction" but says "the window for this discussion is short." (Reuters)
+
+* Jun 10, 2026: EU issues interim measure — first in 17 years — ordering Meta
+  to restore pre-October access terms within 5 working days. Meta says it
+  will appeal, calling it "regulatory overreach." (Reuters — this article)
+
+* Jul 1, 2026: Meta launches Meta Business Agent Platform with new pricing
+  structure that makes third-party AI chatbots significantly more expensive
+  to operate than Meta's native AI. 10,000 complex interactions: ~$968
+  via third-party vs ~$400-500 via Meta AI. Token-based billing starts
+  Aug 1; per-message fees for service communications start Oct 1. (CNBC
+  via Outlook Business)
+
+Sources for context timeline:
+- Reuters: https://www.reuters.com/world/eu-regulators-order-meta-allow-rival-ai-chatbots-free-access-whatsapp-2026-06-09/
+- Reuters: https://www.reuters.com/sustainability/boards-policy-regulation/meta-offers-rival-ai-chatbots-free-access-whatsapp-month-2026-05-12/
+- TechCrunch: https://techcrunch.com/2026/03/05/meta-will-allow-rival-ai-chatbots-on-whatsapp-in-europe-but-for-a-fee/
+- Neowin: https://www.neowin.net/news/meta-to-begin-charging-for-third-party-ai-chatbots-on-whatsapp-for-some-users/
+- Outlook Business: https://www.outlookbusiness.com/corporate/whatsapp-pricing-update-favours-meta-over-third-party-chatbots
+- Reuters regulatory timeline: https://www.reuters.com/technology/european-regulators-crack-down-big-tech-2026-07-02/

@@ -944,6 +944,18 @@ def extract_sources(text: str) -> list[SourceMention]:
         ),
     ]
 
+    # Regex to detect corporate spokesperson descriptors. If an anonymous
+    # match is "a Meta spokesperson" or "the Google representative", it
+    # should be reclassified as a corporate_spokesperson — technically
+    # unnamed but institutionally identified, distinct from truly anonymous
+    # sources ("people familiar with the matter").
+    # Added iteration 2026-07-06 from Reuters EU WhatsApp antitrust analysis.
+    _CORPORATE_SPOKESPERSON_RE = re.compile(
+        r"\b(?:an?|the)\s+([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)?)\s+"
+        r"(?:spokesperson|spokesman|spokeswoman|representative)\b",
+        re.IGNORECASE,
+    )
+
     for pat in anon_patterns:
         for m in pat.finditer(text):
             # Use captured group(1) if available (strips trailing verb),
@@ -961,15 +973,30 @@ def extract_sources(text: str) -> list[SourceMention]:
             ctx_end = min(len(text), m.end() + 100)
             context = text[ctx_start:ctx_end]
 
-            sources.append(SourceMention(
-                name=descriptor,
-                is_anonymous=True,
-                is_expert=False,
-                affiliation="",
-                quote=_extract_nearby_quote(text, m.start(), m.end()),
-                attribution_verb=_find_attribution_verb(context),
-                source_type="anonymous",
-            ))
+            # Check if this is a corporate spokesperson rather than
+            # a truly anonymous source.
+            corp_m = _CORPORATE_SPOKESPERSON_RE.search(descriptor)
+            if corp_m:
+                org_name = corp_m.group(1).strip()
+                sources.append(SourceMention(
+                    name=descriptor,
+                    is_anonymous=False,
+                    is_expert=False,
+                    affiliation=org_name,
+                    quote=_extract_nearby_quote(text, m.start(), m.end()),
+                    attribution_verb=_find_attribution_verb(context),
+                    source_type="corporate_spokesperson",
+                ))
+            else:
+                sources.append(SourceMention(
+                    name=descriptor,
+                    is_anonymous=True,
+                    is_expert=False,
+                    affiliation="",
+                    quote=_extract_nearby_quote(text, m.start(), m.end()),
+                    attribution_verb=_find_attribution_verb(context),
+                    source_type="anonymous",
+                ))
 
     # Detect no-comment signals separately — tagged as source_type="no_comment"
     # so they can be excluded from source counts and stance analysis.

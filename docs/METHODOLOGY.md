@@ -179,7 +179,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 72 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (56 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 73 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (57 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -259,6 +259,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Talent Hemorrhage** | Cataloging multiple personnel departures from one entity to competitors, creating an "exodus" or "brain drain" narrative. Listing 3+ departures in sequence builds a cumulative impression of organizational collapse | "left for [competitor]... recently left... is also leaving"; "personnel churn"; "talent exodus"; "brain drain"; "poaching war" | NYT Meta AI overhaul analysis (Aug 2025 / Jul 2026) — Pineau→Cohere, Fan→OpenAI, Crisan→Figma listed in rapid succession. Creates cumulative hemorrhage narrative without explicit editorial judgment — the structure of the list does the framing work |
 | **Strategic Reversal** | Highlighting a company reversing a core strategic position, such as abandoning a longstanding philosophy, scrapping a major product, or shifting from open to closed models. Distinct from policy_reversal which focuses on regulatory/legal reversals | "a major departure from [Company's] longtime philosophy"; "chosen to abandon"; "start from scratch"; "shift from [X] to [Y]" | NYT Meta AI overhaul analysis (Aug 2025 / Jul 2026) — abandoning Behemoth model + considering closed-source AI = double strategic reversal. "A major departure from the company's longtime philosophy of open sourcing" frames the change as a betrayal of principle |
 | **Repeated Disruption** | Headline or body language implying chronic instability: "again," "yet another," "months of turmoil." Frames the subject as incapable of settling on a strategy | "shakes up... again"; "yet another restructuring"; "months of tumult and restructuring" | NYT Meta AI overhaul headline (Aug 2025) — "Shakes Up Meta's A.I. Efforts, Again" — the "Again" suffix transforms a neutral restructuring report into an instability narrative |
+| **Precedent Framing** | Signaling that an event is exceptionally rare, severe, or significant by comparing it to historical precedent via time span. Establishes significance through historical rarity rather than raw numerical scale or speculative futures. Distinct from scale_magnitude (raw numbers), timeline_implication (temporal pressure), and precedent_analogy (named historical parallels) | "first [X] in N years"; "first [X] since YYYY"; "largest/most significant [X] since YYYY/in N years"; "unprecedented [action/move/measure]" | Reuters EU WhatsApp antitrust interim measure (Jun 10, 2026) — "its first [interim measure] in 17 years" signals that the EC's action breaks a 17-year enforcement drought, converting the time span into a significance marker. The framing tells readers this is historic before they evaluate the substance |
 
 #### Structural Devices (Post-Pass)
 
@@ -726,7 +727,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 72-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 73-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1332,7 +1333,7 @@ The Zuckerberg town hall cluster (Jul 2–4, 2026) is the highest-value comparis
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 72 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 73 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|
