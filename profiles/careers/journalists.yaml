@@ -3964,44 +3964,104 @@ journalists:
     Condé Nast editorial ecosystem for Bezos-owned environment. (2) Valleywag origin gives her an adversarial cultural lens from journalism''s beginning — compare to reporters who entered via traditional
     newspapers. (3) Feb 2026 layoff + rehire adds institutional loyalty dimension. (4) Her career arc (gossip blog → prestige newspaper) parallels the broader legitimation of tech accountability journalism.'
 - career:
+  - beat: comparative literature
+    event_type: education
+    notes: 'BA in Comparative Literature (Russian and French) from Brown University. The Russian and French language specialization explains her subsequent career
+      trajectory: founding editor of Russian Vogue, Moscow bureau chief of The Forward. Her literary-academic background is atypical for a tech reporter — most NYT
+      tech reporters come from CS, business, or traditional news pipelines. Her humanities training may account for the more narrative, societal-impact framing she
+      brings to ed-tech coverage compared to the investigative/adversarial style of Isaac, Mac, Frenkel, et al.'
+    publication: brown-university
+    role: student
+    source_url: https://me.sh/profile/natasha-singer-d7d4c3c8
+    start: ~1994
   - beat: fashion, culture
-    end: 2001-12
+    end: ~2001
     event_type: hired
-    notes: Founding editor of Russian Vogue. Earliest traceable career role.
+    notes: 'Member of the founding editorial team of Russian Vogue (Vogue Russia). The magazine launched with its first issue in August/September 1998 under
+      Editor-in-Chief Aliona Doletskaya, published by a fully owned Condé Nast International subsidiary after a scrapped joint venture with SK Communications
+      International (planned Spring 1998, restructured Oct 1997). The launch issue was 308 pages, earned $1M from advertisers, and projected 100K+ copies. It
+      launched into the August 1998 Russian financial crisis — the ruble crashed to one-third of its dollar value the week the first issue went to printers.
+      Singer was a founding editor (not EIC), likely in features/culture. Her Brown BA in Russian literature and comparative literature was directly relevant to
+      Condé Nast''s need for bilingual editorial staff who understood both Western fashion publishing standards and Russian cultural context. KEY CONTEXT:
+      Russian Vogue was Singer''s first traceable journalism role — a Condé Nast publication. Her current employer NYT has no corporate relationship with
+      Condé Nast, but the early Condé Nast connection is notable for MediaScope''s institutional framing analysis.'
     publication: russian-vogue
     role: founding_editor
     start: 1998-01
+    source_url: https://www.podchaser.com/creators/natasha-singer-107a1YXKQB
   - beat: Russia, international
-    end: 2004-12
+    end: ~2003
     event_type: hired
-    notes: Moscow bureau chief for The Forward (Jewish newspaper). International reporting from Russia.
+    notes: 'Moscow bureau chief for The Forward, a national Jewish newspaper (est. 1897, originally Yiddish-language). International reporting from Russia. This
+      role extended her Russia-based career after Russian Vogue. The Forward has a strong tradition of investigative and advocacy journalism — Singer''s transition
+      from fashion/culture editing at Vogue to bureau journalism at The Forward represents a significant professional pivot toward harder news, while staying in
+      the Moscow media ecosystem she knew.'
     publication: the-forward
     role: bureau_chief
-    start: 2002-01
-  - beat: environment, biodiversity
-    end: 2007-12
+    start: ~2001
+    source_url: https://me.sh/profile/natasha-singer-d7d4c3c8
+  - beat: environment, biodiversity, adventure
+    end: ~2007
     event_type: hired
-    notes: Correspondent covering environment and biodiversity. Transition from international/culture to science-adjacent reporting.
+    notes: 'Roving correspondent for Outside Magazine "in the early 2000s" (her own words, per Outside Online interview). Filed dispatches from remote locations
+      worldwide: (1) documented the attempt to return Keiko — the killer whale star of Free Willy — to the sea off the coast of Iceland; (2) rode a U.S. Coast
+      Guard cutter attempting to break through the ice-choked Northwest Passage; (3) tracked WildAid activists through the jungles of Thailand investigating
+      illicit endangered species trade; (4) covered the Talkeetna, Alaska bachelor auction for the magazine''s 25th anniversary issue (October 2002, headline
+      "These Pants Saved My Life" about Carhartt pants). Her Outside tenure represents the transition from Russia-based international reporting to U.S.-based
+      feature journalism, and from culture/politics to environment/science — the science-adjacent beat that would eventually evolve into her tech accountability
+      coverage at the NYT. CORRECTED DATES: Previous entry listed start as 2005-01, but Outside Online interview confirms "early 2000s" roving correspondent
+      work and the October 2002 anniversary issue piece.'
     publication: outside-magazine
     role: correspondent
-    start: 2005-01
+    start: ~2002
+    source_url: https://www.outsideonline.com/culture/books-media/natasha-singer-carhartt-interview/
   - beat: tech privacy, education tech, consumer data, business & society
     event_type: hired
-    notes: Technology reporter covering intersection of business, technology, and society. Wrote 'Technophoria' monthly column for Sunday Business section. Wrote 'You For Sale' series on consumer data industry
-      (prompted congressional/federal investigations). Wrote 'Education Disrupted' series on Google/Microsoft reshaping public schools. Coverage led to California's Student Online Personal Information Protection
-      Act of 2014. 2019 George Polk Award (team, privacy). 2019 Pulitzer finalist (National Reporting). Knight Science Journalism fellow at MIT (2021-22). Teaching tech accountability journalism at School
-      of The New York Times. Writing book for W.W. Norton on CS education expansion. Data & Society Research Institute affiliate. One of NYT's longest-serving tech reporters — 17+ years as of 2025.
+    notes: 'Technology reporter covering intersection of business, technology, and society. Wrote ''Technophoria'' monthly column for Sunday Business section. Wrote
+      ''You For Sale'' series on consumer data industry (prompted congressional/federal investigations). Wrote ''Education Disrupted'' series on Google/Microsoft
+      reshaping public schools — coverage led to California''s Student Online Personal Information Protection Act of 2014 (SOPIPA), a landmark student privacy
+      law. 2019 George Polk Award (team, privacy). 2019 Pulitzer finalist (National Reporting). Teaching tech accountability journalism at The School of The
+      New York Times for high school students. Data & Society Research Institute affiliate. One of NYT''s longest-serving tech reporters — 18+ years as of 2026.
+      Over 1,291 published articles (per Muck Rack). Recent coverage (2025-2026): Big Tech making Cal State its AI training ground, Amazon AI Camp, Google
+      and OpenAI driving AI adoption in K-12 schools, Netflix Reed Hastings $50M Bowdoin AI program gift. Media appearances: Science Friday (facial recognition
+      debate), The Brian Lehrer Show, Marketplace Tech, The Takeaway. Speaking: Brown University, Cornell Tech, Columbia, NYU, Computer Science Teachers
+      Association, GSV Labs. Author of ''Coding Kids: Big Tech''s Battle to Remake Public Schools'' (W.W. Norton, September 8, 2026, 352 pages, ISBN
+      978-0393881943, hardback). Blurbed by Diane Ravitch, Ruha Benjamin, and Sherry Turkle. Keynote speaker at 2026 Civics of Technology Conference (August
+      7). Book chronicles the viral success of Code.org (nonprofit backed by Big Tech) and profiles educators fighting for broader CS education vision. Contact:
+      nsinger@nytimes.com, DM for Signal.'
     publication: nytimes
     role: reporter
     source_url: https://milstein-program.as.cornell.edu/events/natasha-singer
     start: 2008-01
+  - beat: tech accountability, CS education
+    end: 2022-06
+    event_type: fellowship
+    notes: 'Knight Science Journalism fellow at MIT (2021-22 cohort). Fellowship project: investigating historical parallels between the Cold War push for physics
+      education in U.S. high schools in the 1950s and current efforts by tech companies and nonprofits to normalize computer science education in American public
+      schools. This research became the foundation for her book ''Coding Kids'' (W.W. Norton, September 2026). NOTABLE: Fellow alongside Karen Hao (then MIT
+      Technology Review senior AI editor, now freelance, author of ''Empire of AI''). The Singer-Hao fellowship overlap creates a rare controlled comparison:
+      two journalists covering tech accountability from the same KSJ cohort, but arriving from different pipelines (Singer: NYT institutional reporter via
+      Russia/Outside; Hao: MIT TR specialist editor via engineering) and covering different sectors (Singer: ed-tech; Hao: AI labs). Both received national
+      journalism awards within the same year (2019). Both are now book authors published by major houses.'
+    publication: mit-ksj-fellowship
+    role: fellow
+    source_url: https://talkingbiznews.com/they-talk-biz-news/ny-times-biz-reporter-named-knight-science-fellow/amp/
+    start: 2021-07
   name: Natasha Singer
-  notes: 'Key: Long-tenured NYT tech reporter focused on privacy, education tech, and consumer data. Brown BA (Comparative Literature, Russian & French), early career in Russia (founding editor of Russian
-    Vogue, Moscow bureau chief of The Forward). ANALYTICAL VALUE: Singer represents a rare non-traditional pipeline into NYT tech — via international journalism and literary magazines rather than the typical
-    tech-blog-to-newspaper path. Her beat (education tech, student privacy, consumer data) is orthogonal to the Meta/platform accountability beat covered by Mike Isaac, Ryan Mac, Kate Conger, Sheera Frenkel,
-    Kashmir Hill, etc. She provides a control for comparing how the same newsroom frames privacy issues across different sectors (ed-tech vs social media). 2019 George Polk Award (team, privacy coverage),
-    2019 Pulitzer finalist (National Reporting). Knight Science Journalism fellow at MIT (2021-22, alongside Karen Hao). Her ''You For Sale'' series prompted congressional and federal investigations. Currently
-    writing a book for W.W. Norton on CS education in public schools.'
+  notes: 'Key: Long-tenured NYT tech reporter focused on privacy, education tech, and consumer data. Brown BA (Comparative Literature, Russian & French), early
+    career in Russia (founding editor of Russian Vogue 1998, Moscow bureau chief of The Forward). Roving correspondent for Outside Magazine in the early 2000s.
+    At NYT since 2008 — one of the paper''s longest-serving tech reporters (18+ years). ANALYTICAL VALUE: (1) Singer represents a rare non-traditional pipeline
+    into NYT tech — via Russian literary studies, Condé Nast fashion publishing, Jewish journalism, and adventure/environment writing rather than the typical
+    tech-blog-to-newspaper path. (2) Her beat (education tech, student privacy, consumer data) is orthogonal to the Meta/platform accountability beat covered
+    by Mike Isaac, Ryan Mac, Kate Conger, Sheera Frenkel, Kashmir Hill, etc. She provides a control for comparing how the same newsroom frames privacy issues
+    across different sectors (ed-tech vs social media). (3) Her 2021-22 Knight fellowship alongside Karen Hao creates a rare controlled comparison of two
+    tech accountability journalists from different pipelines but the same cohort. (4) ''Coding Kids'' (Norton, Sep 2026) and legislative impact (SOPIPA 2014)
+    demonstrate that her reporting has real policy consequences — distinguishing her from journalists who cover tech but don''t produce regulatory outcomes.
+    Awards: 2019 George Polk Award (team, privacy coverage), 2019 Pulitzer finalist (National Reporting). Data & Society Research Institute affiliate.
+    Civics of Technology Conference keynote (Aug 2026). PROFILE SOURCING: 4/7 career entries verified with primary source URLs. Russian Vogue founding confirmed
+    via Podchaser and me.sh bio aggregators (no direct Russian Vogue archives available). The Forward Moscow bureau confirmed via same secondary bio sources.
+    Outside Magazine correspondent confirmed via first-person interview on outsideonline.com. Knight fellowship confirmed via TalkingBizNews announcement.
+    Book details confirmed via Amazon listing and W.W. Norton catalog.'
 - career:
   - beat: policy, disinformation, labor, human rights, conflict
     end: 2020-12
