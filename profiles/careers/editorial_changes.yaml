@@ -1291,6 +1291,21 @@ editorial_changes:
     outgoing: Greg Williams
     position: editor_wired_uk_departure
     source_url: https://talkingbiznews.com/media-news/williams-departs-wired-for-exponential-view/
+  - date: 2026-01
+    event_type: departure
+    incoming: null
+    outgoing: Camille Bromley
+    position: features_editor
+    notes: >-
+      WIRED → NYT OPINION MIGRATION: Camille Bromley left Wired features editor role to join
+      NYT Opinion special projects team as staff editor. Her Wired features on generative AI,
+      Silicon Valley's political shift right, and crypto were NMA finalists and Best American
+      anthologized. Departure during Drummond era — potential signal that long-form literary
+      features talent is being displaced by news/adversarial coverage expansion under Schiffer
+      and Barrett. Previously at The Believer (McSweeney's ecosystem) and CJR/Harper's.
+      ANALYTICAL VALUE: Tests talent-retention hypothesis — is Wired's Drummond-era editorial
+      pivot from features to breaking news pushing out narrative specialists?
+    source_url: https://talkingbiznews.com/media-news/bromley-former-wired-features-editor-joins-ny-times-opinion/
   # === Atlantic Expansion Wave 2025-2026 (batch addition Jul 6 2026) ===
   - date: 2025-07
     incoming: Idrees Kahloon (Economist), Vivian Salama (WSJ), Tom Bartlett (Chronicle of Higher Ed)

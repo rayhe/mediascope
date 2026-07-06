@@ -2432,26 +2432,66 @@ journalists:
     York. KEY for MediaScope: her personal experience as a Muslim woman subjected to post-9/11 surveillance directly informs
     her tech accountability framing — she covers surveillance not as abstract policy but as lived experience.'
 - career:
+  - beat: N/A (education)
+    end: 2014-06
+    event_type: education
+    notes: 'BA in English from Stanford University. Graduated Phi Beta Kappa. Part of Stanford''s creative writing program.
+      Published the nonfiction graphic novel "A Place Among the Stars" while at Stanford. Also writes fiction and essays —
+      self-describes as a science fiction writer. Personal website: blakersdozen.com. Education in English/creative writing
+      is unusual among tech editors — most have journalism or political science degrees. His literary background shapes a
+      storytelling approach to tech coverage.'
+    publication: stanford
+    role: student
+    source_url: https://www.edsurge.com/writers/blake-montgomery
+    start: 2010-09
+  - beat: content, food tech
+    end: 2014-12
+    event_type: hired
+    notes: Content and social media editor at Cozymeal Inc., a cooking experience platform/startup. Pre-journalism career
+      in tech industry — parallel to Zoë Schiffer's pre-journalism tech career (Uber UX writer). Direct experience inside
+      a tech company provided insider perspective for later tech coverage. Based in San Francisco.
+    publication: cozymeal
+    role: content_editor
+    source_url: https://www.edsurge.com/writers/blake-montgomery
+    start: 2014-07
+  - beat: education
+    event_type: hired
+    notes: Taught English at Swiss Semester, an academic program abroad. Brief teaching stint between tech industry and journalism
+      careers. Another unusual pre-journalism role that distinguishes him from typical tech reporter career paths.
+    publication: swiss-semester
+    role: teacher
+    source_url: https://www.edsurge.com/news/2016-06-24-will-the-brexit-spell-trouble-for-british-edtech
+    start: 2015-01
+    end: 2015-06
   - beat: education technology
     end: 2016-06
     event_type: hired
-    notes: Reporter and opinion editor at EdSurge, education tech publication. Early career. Based in San Francisco.
+    notes: 'Reporter and opinion editor at EdSurge, education tech publication. Covered edtech industry growth, startup culture,
+      and technology adoption in schools. Based in San Francisco. Also contributed to Huffington Post, Bay Area Reporter, and
+      Symbolia (digital comics journalism platform — aligns with his graphic novel background). First journalism role after
+      pivoting from tech industry and teaching.'
     publication: edsurge
     role: reporter
-    start: 2015-01
+    source_url: https://www.edsurge.com/writers/blake-montgomery
+    start: 2015-07
   - beat: technology, breaking news
     end: 2018-06
     event_type: hired
-    notes: Technology reporter, then breaking news reporter. Covered hard news, politics, tech and social media. Stanford
-      BA.
+    notes: 'Technology reporter, then breaking news reporter. Covered hard news, politics, tech and social media. Based in
+      San Francisco. Also contributed to Equal Eyes (LGBTQ news aggregator). His BuzzFeed tenure was brief (~2 years) but
+      placed him in the digital-native newsroom pipeline alongside other tracked journalists like Ryan Mac (BuzzFeed → NYT)
+      and Nitasha Tiku (BuzzFeed → Wired → WaPo).'
     publication: buzzfeed-news
     role: reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/the-daily-beast-hires-montgomery-to-cover-tech/
     start: 2016-07
   - beat: technology, Silicon Valley
     end: 2020-12
     event_type: hired
-    notes: 'Tech reporter, then breaking news editor/reporter. Silicon Valley beat. Notable: arrested for trespassing while
-      asking source for comment in Seattle (Nov 2018); charges dropped, BuzzFeed criticized authorities.'
+    notes: 'Tech reporter, then promoted to breaking news editor/reporter. Silicon Valley beat. Notable: arrested for trespassing
+      while asking a source for comment in Seattle (Nov 2018, while still reporting for BuzzFeed assignment);
+      charges dropped, BuzzFeed News criticized the actions of authorities, case documented by Press Freedom Tracker.
+      Transition from reporter to editor role here — the editorial progression continued at Gizmodo and Guardian.'
     publication: the-daily-beast
     role: reporter
     source_url: https://talkingbiznews.com/they-re-hiring/the-daily-beast-hires-montgomery-to-cover-tech/
@@ -2459,22 +2499,42 @@ journalists:
   - beat: technology news
     end: 2023-08
     event_type: hired
-    notes: Deputy editor → technology news editor. Managed team of reporters.
+    notes: 'Deputy editor, then promoted to technology news editor. Managed team of reporters covering technology news. Discussed
+      editorial philosophy in OnePitch''s "Coffee with a Journalist" podcast (Aug 2022). Under his editorship, Gizmodo maintained
+      its adversarial/irreverent tech coverage voice — the institutional culture of Gawker Media (Gizmodo''s parent, same as
+      Valleywag where Nitasha Tiku worked) was still embedded in the publication. G/O Media sold Gizmodo to Ozzy Media in
+      Nov 2023, after Montgomery''s departure.'
     publication: gizmodo
     role: editor
     source_url: https://talkingbiznews.com/they-re-hiring/gizmodo-hires-montgomery-as-deputy-editor/
     start: 2021-01
   - beat: US technology
     event_type: hired
-    notes: 'US tech editor. Contact: blake.montgomery@theguardian.com. Key question: does editing role (vs reporting) shape
-      Guardian''s US tech coverage tone differently than UK desk?'
+    notes: 'US tech editor. Based in New York City. Contact: blake.montgomery@theguardian.com, 650.731.5423. Oversees Guardian
+      US technology coverage — breaking news, tech industry, protests and extremism. 4,143+ total articles across career
+      (per JournalistHunt). As editor, his framing choices shape the Guardian''s entire US tech desk output.
+      Key question: does the editing role (vs reporting) shape Guardian''s US tech coverage tone differently than the UK desk
+      under Dan Milmo (global technology editor, London)? His previous publications (all Gawker Media-adjacent — BuzzFeed,
+      Daily Beast, Gizmodo) share an adversarial/irreverent institutional culture distinct from the Guardian''s social-justice
+      framework. The Gawker-pipeline → Guardian transition tests whether digital-native adversarial framing adapts to or
+      is absorbed by legacy-broadsheet editorial norms.'
     publication: guardian
     role: editor
     source_url: https://talkingbiznews.com/they-re-hiring/guardian-hires-montgomery-to-be-us-tech-editor/
     start: 2023-09
   name: Blake Montgomery
-  notes: 'Key migration: BuzzFeed News → Daily Beast → Gizmodo → Guardian. Rose from reporter to editor across multiple outlets.
-    Current US tech editor at Guardian.'
+  notes: 'Key migration: Cozymeal (tech) → Swiss Semester (teaching) → EdSurge → BuzzFeed News → Daily Beast → Gizmodo →
+    Guardian. Unusual career arc: started in tech industry (Cozymeal content editor), taught English abroad, then pivoted to
+    journalism covering the industry he left. Education: Stanford BA English, Phi Beta Kappa, creative writing program. Published
+    nonfiction graphic novel "A Place Among the Stars." Self-describes as "science fiction writer" — literary ambitions parallel
+    journalism career. Based in New York City. Contact: blake.montgomery@theguardian.com. Rose from reporter to editor across
+    multiple digital-native outlets before landing at a legacy broadsheet. ANALYTICAL VALUE: (1) Pre-journalism tech career
+    (Cozymeal) parallels Zoë Schiffer''s (Uber) — insider experience shapes later coverage; (2) career arc through Gawker Media-adjacent
+    publications (BuzzFeed, Daily Beast, Gizmodo) gave him adversarial/irreverent editorial instincts; (3) as US tech editor
+    at Guardian, his framing choices are institutionally amplified — he shapes coverage, not just writes it; (4) his literary
+    background (Stanford creative writing, graphic novelist, fiction writer) is unique among tracked journalists and may influence
+    narrative construction in tech reporting; (5) the BuzzFeed alumni network connects him to Ryan Mac (NYT), Nitasha Tiku
+    (WaPo), and other tracked journalists who passed through the same digital-native pipeline.'
 - career:
   - beat: homepage/digital
     end: 2017-06
@@ -10560,3 +10620,49 @@ journalists:
         analytical voice. Part of the largest single-source hiring pipeline
         in the Atlantic expansion.
       source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff,260627
+- career:
+  - beat: literary features
+    end: 2016-12
+    event_type: hired
+    notes: Story editor at Columbia Journalism Review. Edited long-form narrative journalism. Part of CJR's
+      editorial team, bridging journalism criticism and feature writing. Also worked at Harper's Magazine in a similar
+      story-editing capacity. Education background inferred from portfolio breadth.
+    publication: columbia-journalism-review
+    role: story_editor
+    source_url: https://talkingbiznews.com/media-news/bromley-former-wired-features-editor-joins-ny-times-opinion/
+    start: 2014-01
+  - beat: literary features, culture
+    end: 2021-06
+    event_type: hired
+    notes: Features editor at The Believer magazine. Brought in notable stories including Vauhini Vara's "Ghosts"
+      and Meghan O'Gieblyn's "Good Shepherds" — both widely acclaimed. The Believer is known for long-form literary
+      nonfiction and cultural criticism. McSweeney's/Believer ecosystem is unusual pipeline into tech journalism.
+    publication: the-believer
+    role: features_editor
+    source_url: https://talkingbiznews.com/media-news/bromley-former-wired-features-editor-joins-ny-times-opinion/
+    start: 2017-01
+  - beat: technology, culture, politics
+    end: 2025-12
+    event_type: hired
+    notes: Features editor at Wired covering rapidly emerging technologies. Commissioned and edited features on
+      the rise of generative AI, Silicon Valley's political shift right, and crypto's boom and bust. Her stories were
+      finalists for National Magazine Awards and anthologized in Best American series. Adapted for "This American Life"
+      and other media. Specialist in long-form narrative tech features — distinct from Wired's news/breaking desk.
+    publication: wired
+    role: features_editor
+    source_url: https://talkingbiznews.com/media-news/bromley-former-wired-features-editor-joins-ny-times-opinion/
+    start: 2021-07
+  - beat: special projects, opinion features
+    event_type: hired
+    notes: Joined NYT Opinion special projects team as staff editor. Hired based on long-form features specialization.
+      Writing published in NYT Magazine, Wired, The Verge, The Atlantic, National Geographic. Announced by TalkingBizNews
+      circa early 2026.
+    publication: new-york-times
+    role: staff_editor
+    source_url: https://talkingbiznews.com/media-news/bromley-former-wired-features-editor-joins-ny-times-opinion/
+    start: 2026-01
+  name: Camille Bromley
+  notes: 'Key migration: CJR/Harper''s → The Believer → Wired → NYT Opinion. Literary-features specialist
+    who moved through the rare McSweeney''s/Believer → mainstream tech pipeline. Her Wired tenure produced NMA-finalist
+    features. Departure from Wired under Drummond era is analytically significant — tests whether features talent
+    is being pushed out in favor of news/adversarial coverage pivot.'

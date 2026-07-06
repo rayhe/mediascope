@@ -14622,3 +14622,46 @@ Five-layer enforcement stack now documented: (1) regulatory (CMA opt-out), (2) i
 
 ### Commit
 `f324896` — pushed to `rayhe/mediascope` main
+
+---
+
+## Type B — Mon 2026-07-06 14:00 PT
+
+**Focus:** Journalist/Publication Research
+
+### Blake Montgomery Profile Expansion
+Expanded Blake Montgomery from 5 career entries / 154-char notes to 8 career entries / ~2,000-char notes. Added 3 new pre-journalism career entries sourced from EdSurge bio and OnePitch podcast:
+- Stanford BA English (Phi Beta Kappa, creative writing, graphic novel "A Place Among the Stars")
+- Cozymeal content/social media editor (pre-journalism tech career)
+- Swiss Semester English teacher
+
+Enhanced existing entries with BuzzFeed alumni network, Gizmodo editorial philosophy, Guardian role details (4,143+ articles per JournalistHunt). Added analytical value notes: pre-journalism tech career parallel to Zoë Schiffer, Gawker Media-adjacent pipeline, literary background uniqueness.
+
+### New Journalist: Camille Bromley (148th)
+Added full career profile for Camille Bromley — a Wired → NYT Opinion migration not previously tracked:
+- CJR/Harper's story editor (~2014-2016)
+- The Believer features editor (~2017-2021) — brought in NMA-finalist literary features
+- Wired features editor (~2021-2025) — generative AI, Silicon Valley politics, crypto features; NMA finalists, Best American anthologized
+- NYT Opinion special projects staff editor (2026-01)
+
+**Analytical value:** Tests Drummond-era talent-retention hypothesis — literary-features specialist departing as Wired pivots from features to breaking-news/adversarial coverage under Schiffer and Barrett. McSweeney's/Believer ecosystem is a rare pipeline into tech journalism.
+
+### Editorial Changes
+Added Bromley departure entry under wired section in editorial_changes.yaml with talent-retention hypothesis framing.
+
+### Documentation Updates
+- README.md: 147→148 journalists, 466→471 auto-detected migrations, Bromley added to notable migrations list
+- EDITORIAL_HISTORIES.md: 147→148 journalists, 146→147 multi-pub, 466→471 migrations
+- careers_demo.py: 147→148 journalist count reference
+
+### Files Modified
+- `profiles/careers/journalists.yaml` — Blake Montgomery expansion + Camille Bromley addition (148 journalists, 147 multi-pub, 471 migrations)
+- `profiles/careers/editorial_changes.yaml` — Bromley departure from Wired
+- `README.md` — journalist/migration count updates, Bromley in notable migrations
+- `docs/EDITORIAL_HISTORIES.md` — count updates
+- `examples/careers_demo.py` — journalist count update
+
+### Test Results
+- **117 tests pass** (0 failures)
+
+### Commit
