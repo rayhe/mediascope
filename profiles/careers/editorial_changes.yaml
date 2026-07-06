@@ -767,6 +767,42 @@ editorial_changes:
     outgoing: null
     position: misinformation_reporter
     source_url: https://nytco.com/press/stuart-thompson-joins-business/
+  - date: 2026-04
+    incoming: null
+    outgoing: Jason Sobel
+    position: cto_departure
+    notes: 'CTO Jason Sobel departing after joining in August 2021 (from Airbnb head of infrastructure, before that Facebook
+      engineer/VP). California-based. CEO Meredith Kopit Levien said he informed her of his decision to leave late 2025. Remaining
+      until successor found. Levien memo: next CTO should be "a ranking tech executive who can be present very regularly in
+      our NYC headquarters" — suggesting remote California-based leadership was an issue. New CTO will report jointly to Levien
+      and Alex Hardiman (newly promoted EVP). Previous career: Brown University CS (BS+MS) → Facebook (6 years, backend/growth)
+      → Quantifind VP Engineering → Airbnb (trust/safety, then infrastructure head) → NYT. ANALYTICAL VALUE: His departure
+      is corporate/tech infrastructure, not editorial, but the restructuring around it elevates Alex Hardiman to cross-company
+      AI product vision oversight — Hardiman will coordinate efforts to use AI to "enhance journalism, improve product accessibility,
+      and support colleagues'' work." This AI product vision role could influence how NYT deploys AI in its editorial and
+      subscription pipeline.'
+    source_url: https://www.nytco.com/press/an-organizational-evolution/
+  - date: 2026-04
+    incoming: Alex Hardiman (promoted)
+    outgoing: null
+    position: evp_product_ai
+    notes: 'Promoted to Executive Vice President with shared oversight of engineering (alongside incoming CTO) and cross-company
+      AI product vision. Already oversaw product, cooking, and games. Instrumental in subscription strategy driving NYT commercial
+      growth. New responsibility: leading AI product vision across news and product teams. Reports to CEO Levien. SIGNIFICANCE:
+      Creates a single executive owner for AI deployment across NYT — from newsroom tools to subscriber-facing products. Her
+      product background (subscriptions, cooking, games) rather than editorial background shapes what "AI-enhanced journalism"
+      means at the Times.'
+    source_url: https://www.nytco.com/press/an-organizational-evolution/
+  - date: 2026-04
+    incoming: Hannah Yang (promoted)
+    outgoing: null
+    position: evp_growth_customer
+    notes: 'Promoted to Executive Vice President (Chief Growth and Customer Officer) with shared oversight of data and consolidated
+      leadership of marketing, growth, and customer care. Nearly 15 years at NYT building and leading subscription business.
+      STRUCTURAL: Jeff Shah (VP home delivery and customer care) now reports to Yang; Amy Weisenbach (SVP head of marketing)
+      continues leading marketing/brand communications now under Yang. Part of same organizational restructuring as Sobel
+      departure and Hardiman AI elevation.'
+    source_url: https://www.nytco.com/press/an-organizational-evolution/
   wired:
   - date: 2012-07
     incoming: Scott Dadich
@@ -887,19 +923,18 @@ editorial_changes:
     source_url: https://talkingbiznews.com/they-re-hiring/wired-names-barrett-its-executive-editor/
   - date: 2024-06
     incoming: null
-    notes: 'WIRED UK EDITORIAL LAYOFF: James Temperton, Wired UK''s news editor — the most senior day-to-day operational
-      editorial role in the UK newsroom — laid off as part of broader Wired restructuring. Had been at Wired for ~10 years,
-      progressing from reporter through acting deputy digital editor, digital editor, senior editor, deputy editor, and news
-      editor. Launched Wired Awake daily newsletter, hosted 300+ episodes of UK podcast, part of award-winning algorithmic
-      bias investigation, authored "The Future of Medicine" (WIRED Guides, 2021). Was based in Montreal for final ~2 years
-      (working remotely from Canada). Cardiff University BA + MA. Subsequently joined The Logic (Canadian tech/business publication)
-      as deputy managing editor (Sept 2024). ANALYTICAL SIGNIFICANCE: Temperton''s departure, alongside Greg Williams (9-year
-      UK editor → Exponential View, Apr 2024) and Peter Guest (acting business editor → Coda Story, Dec 2025), represents
-      the near-total dissolution of Wired UK''s autonomous editorial leadership. The 7 London office departures at end of
-      2025 completed the UK editorial collapse. Replacements (Rosie Swash as Deputy Editor, Isabella Ward as staff writer)
-      report directly to US-based Brian Barrett, completing Drummond''s centralization of global editorial control. Temperton''s
-      decade at Wired spans the Williams/pre-centralization era — his editorial output is a baseline for comparing Wired UK
-      framing before and after Drummond''s global restructuring.'
+    notes: 'WIRED UK EDITORIAL LAYOFF: James Temperton, Wired UK''s news editor — the most senior day-to-day operational editorial
+      role in the UK newsroom — laid off as part of broader Wired restructuring. Had been at Wired for ~10 years, progressing
+      from reporter through acting deputy digital editor, digital editor, senior editor, deputy editor, and news editor. Launched
+      Wired Awake daily newsletter, hosted 300+ episodes of UK podcast, part of award-winning algorithmic bias investigation,
+      authored "The Future of Medicine" (WIRED Guides, 2021). Was based in Montreal for final ~2 years (working remotely from
+      Canada). Cardiff University BA + MA. Subsequently joined The Logic (Canadian tech/business publication) as deputy managing
+      editor (Sept 2024). ANALYTICAL SIGNIFICANCE: Temperton''s departure, alongside Greg Williams (9-year UK editor → Exponential
+      View, Apr 2024) and Peter Guest (acting business editor → Coda Story, Dec 2025), represents the near-total dissolution
+      of Wired UK''s autonomous editorial leadership. The 7 London office departures at end of 2025 completed the UK editorial
+      collapse. Replacements (Rosie Swash as Deputy Editor, Isabella Ward as staff writer) report directly to US-based Brian
+      Barrett, completing Drummond''s centralization of global editorial control. Temperton''s decade at Wired spans the Williams/pre-centralization
+      era — his editorial output is a baseline for comparing Wired UK framing before and after Drummond''s global restructuring.'
     outgoing: James Temperton
     position: news_editor_uk_layoff
     source_url: https://talkingbiznews.com/media-news/temperton-joins-logic-as-deputy-me/
@@ -1296,72 +1331,97 @@ editorial_changes:
     incoming: null
     outgoing: Camille Bromley
     position: features_editor
-    notes: >-
-      WIRED → NYT OPINION MIGRATION: Camille Bromley left Wired features editor role to join
-      NYT Opinion special projects team as staff editor. Her Wired features on generative AI,
-      Silicon Valley's political shift right, and crypto were NMA finalists and Best American
-      anthologized. Departure during Drummond era — potential signal that long-form literary
-      features talent is being displaced by news/adversarial coverage expansion under Schiffer
-      and Barrett. Previously at The Believer (McSweeney's ecosystem) and CJR/Harper's.
-      ANALYTICAL VALUE: Tests talent-retention hypothesis — is Wired's Drummond-era editorial
-      pivot from features to breaking news pushing out narrative specialists?
+    notes: 'WIRED → NYT OPINION MIGRATION: Camille Bromley left Wired features editor role to join NYT Opinion special projects
+      team as staff editor. Her Wired features on generative AI, Silicon Valley''s political shift right, and crypto were
+      NMA finalists and Best American anthologized. Departure during Drummond era — potential signal that long-form literary
+      features talent is being displaced by news/adversarial coverage expansion under Schiffer and Barrett. Previously at
+      The Believer (McSweeney''s ecosystem) and CJR/Harper''s. ANALYTICAL VALUE: Tests talent-retention hypothesis — is Wired''s
+      Drummond-era editorial pivot from features to breaking news pushing out narrative specialists?'
     source_url: https://talkingbiznews.com/media-news/bromley-former-wired-features-editor-joins-ny-times-opinion/
-  # === Atlantic Expansion Wave 2025-2026 (batch addition Jul 6 2026) ===
   - date: 2025-07
     incoming: Idrees Kahloon (Economist), Vivian Salama (WSJ), Tom Bartlett (Chronicle of Higher Ed)
-    notes: >-
-      Triple hire wave: Kahloon from Economist (Washington bureau chief → staff writer),
-      Salama from WSJ (national security → national security), Bartlett from Chronicle
-      (22-year tenure → health/science). Two of three (Kahloon, Salama) bring WaPo/WSJ
-      institutional DNA; Bartlett brings academic-journalism norms.
+    notes: 'Triple hire wave: Kahloon from Economist (Washington bureau chief → staff writer), Salama from WSJ (national security
+      → national security), Bartlett from Chronicle (22-year tenure → health/science). Two of three (Kahloon, Salama) bring
+      WaPo/WSJ institutional DNA; Bartlett brings academic-journalism norms.'
     outgoing: null
     position: staff_writers
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-hires-idrees-kahloon-as-staff-writer,255429
   - date: 2025-08
-    incoming: Paul Beckett (WSJ 25yr), Simon Shuster (Time), Alex Reisner (upgrade), Lily Meyer (upgrade), Yvonne Wingett Sanchez (WaPo/AZ Republic)
-    notes: >-
-      National-security team buildout. Beckett (senior editor) brings 25 years of WSJ
-      investigative editing. Shuster from Time. Reisner and Meyer upgraded from contributing
-      to staff writer. Sanchez from WaPo covers politics from Arizona. 5 additions in one wave.
+    incoming: Paul Beckett (WSJ 25yr), Simon Shuster (Time), Alex Reisner (upgrade), Lily Meyer (upgrade), Yvonne Wingett
+      Sanchez (WaPo/AZ Republic)
+    notes: National-security team buildout. Beckett (senior editor) brings 25 years of WSJ investigative editing. Shuster
+      from Time. Reisner and Meyer upgraded from contributing to staff writer. Sanchez from WaPo covers politics from Arizona.
+      5 additions in one wave.
     outgoing: null
     position: staff_writers_and_editors
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-paul-beckett-as-senior-editor-and-staff-writers-lily-meyer-alex-reisner-simon-shuster-and-yvonne-wingett-sanchez,254040
   - date: 2025-08
     incoming: Emily Bobrow (WSJ/Economist), Katie Zezima, Will Gottsegen, Jonathan Lemire (upgraded to staff)
-    notes: >-
-      Bobrow (senior editor) brings Economist + WSJ editorial-gate training. Zezima (senior
-      editor). Gottsegen hired for The Atlantic Daily newsletter. Lemire elevated from
-      contributing to staff writer (continues MSNBC co-hosting simultaneously).
+    notes: Bobrow (senior editor) brings Economist + WSJ editorial-gate training. Zezima (senior editor). Gottsegen hired
+      for The Atlantic Daily newsletter. Lemire elevated from contributing to staff writer (continues MSNBC co-hosting simultaneously).
     outgoing: null
     position: staff_writers_and_editors
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-emily-bobrow-and-katie-zezima-as-senior-editors-will-gottsegen-and-jonathan-lemire-join-as-staff-writers,253449
   - date: 2025-01
     incoming: Caity Weaver (NYT Magazine), Jonathan Lemire (Politico/MSNBC), Alex Reisner (existing contributor)
-    notes: >-
-      Weaver (staff writer) from NYT Magazine (Gawker → GQ → NYT Mag trajectory). Lemire
-      (contributing writer) from Politico/MSNBC. Reisner (contributing writer) already doing
-      AI training data investigations. Same wave as Ashley Parker, Michael Scherer (staff writers),
-      Kristen V. Brown, Jonathan Chait, Nicholas Florko, Shane Harris, Shayla Love.
+    notes: Weaver (staff writer) from NYT Magazine (Gawker → GQ → NYT Mag trajectory). Lemire (contributing writer) from Politico/MSNBC.
+      Reisner (contributing writer) already doing AI training data investigations. Same wave as Ashley Parker, Michael Scherer
+      (staff writers), Kristen V. Brown, Jonathan Chait, Nicholas Florko, Shane Harris, Shayla Love.
     outgoing: null
     position: staff_and_contributing_writers
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-hires-caity-weaver-as-staff-writer-jonathan-lemire-and-alex-reisner-to-join-as-contributing-writers,252424
   - date: 2026-01
     incoming: Henry Grabar (Slate), Judith Shulevitz (upgrade), Chris Suellentrop (WaPo), Uzodinma Iweala
-    notes: >-
-      Grabar (staff writer) from 12-year Slate tenure. Shulevitz upgraded from contributing
-      to staff writer after contributing since 2015. Suellentrop (senior editor) from WaPo
-      op-ed editing. Iweala (contributing writer) — author of "Beasts of No Nation."
+    notes: Grabar (staff writer) from 12-year Slate tenure. Shulevitz upgraded from contributing to staff writer after contributing
+      since 2015. Suellentrop (senior editor) from WaPo op-ed editing. Iweala (contributing writer) — author of "Beasts of
+      No Nation."
     outgoing: null
     position: staff_writers_and_editors
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-adds-four-journalists-to-its-staff,258176
   - date: 2026-04
     incoming: Sophia Nguyen (WaPo), Kevin Sieff (WaPo 15yr), Theo Balcomb (NPR/NYT/WaPo), Jonathan L. Fischer (WaPo)
-    notes: >-
-      WaPo-heavy wave: 4 hires, 3 directly from WaPo (Nguyen, Sieff, Fischer) plus Balcomb
-      who had WaPo freelance editorial work. Sieff's 15-year WaPo foreign posting tenure
-      is the longest WaPo departure. Balcomb's 4-publication trajectory (NPR → NYT → WaPo →
-      Atlantic) provides the richest DiD migration path in the dataset. This wave brings
-      total WaPo → Atlantic pipeline to 5+ in 12 months.
+    notes: 'WaPo-heavy wave: 4 hires, 3 directly from WaPo (Nguyen, Sieff, Fischer) plus Balcomb who had WaPo freelance editorial
+      work. Sieff''s 15-year WaPo foreign posting tenure is the longest WaPo departure. Balcomb''s 4-publication trajectory
+      (NPR → NYT → WaPo → Atlantic) provides the richest DiD migration path in the dataset. This wave brings total WaPo →
+      Atlantic pipeline to 5+ in 12 months.'
     outgoing: null
     position: staff_writers_and_editors
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff,260627
+  - date: 2025-12
+    incoming: null
+    outgoing: Rob Reddick
+    position: science_editor_uk_departure
+    notes: 'WIRED UK DEPARTURE: Rob Reddick, UK science editor since April 2022, left Wired as part of the broader London
+      editorial contraction. His role covered health, medicine, biotech, environment, climate, space, energy, and robotics.
+      Previously commissioning editor at The Conversation UK (Mosaic magazine, COVID-19). Oxford BA (English Language and
+      Literature). His departure is one of 7+ London staff exits at end of 2025, coinciding with UK print edition cancellation
+      (Jan 2026). His science desk role was NOT directly replaced by a UK-based hire — Brian Kahn (Bloomberg, hired May 2026
+      as US-based senior editor science) is the only science desk editorial hire since, reporting from San Francisco to Tim
+      Marchman.'
+    source_url: https://talkingbiznews.com/media-news/wireds-reddick-is-leaving-publication/
+  - date: '2025-10-31'
+    incoming: null
+    outgoing: Evelyn Kwong
+    position: director_social_multiplatform_departure
+    notes: 'DEPARTURE: Evelyn Kwong, director of social and multiplatform strategy, departed Oct 31, 2025. Joined 404 Media
+      as contributor two days later (Nov 3). She was the architect of Wired''s journalist-as-influencer vertical video strategy
+      — Nieman Lab profiled her approach of embedding smartphone videos into editorial stories (e.g. Waymo robotaxi piece
+      with 6 reporters). Under her strategy, Instagram views grew ~800% and TikTok engagement rose 163%. Previously: Guardian
+      → Vice News → Toronto Star (senior editor audience) → Wired. Ryerson University grad. Her departure preceded Indu Chandrasekhar
+      (exec global director audience development) continuing the platform strategy. ANALYTICAL VALUE: Her exit removes the
+      key social strategy architect but the journalist-influencer playbook she built survives — Wired OOH campaign (2025)
+      and eMarketer analysis credit this strategy with 31% MoM subscription increase.'
+    source_url: https://talkingbiznews.com/media-news/kwong-is-departing-wired/
+  - date: '2026-04-06'
+    incoming: null
+    outgoing: null
+    position: staff_editor_open
+    notes: 'OPEN POSITION: Staff editor for newsroom, reporting to Director of Science, Politics, and Security (Tim Marchman).
+      NYC or SF office. Guild position. Responsibilities: edit stories from multiple desks (breaking news ransomware to embargoed
+      biotech), manage syndications from international Wired brands. Cross-desk collaboration with science, politics, security,
+      and other desks. Also collaborates with digital video team for YouTube, TikTok, Instagram Reels cross-platform coverage.
+      Requires experience in one of Wired''s core coverage areas. ANALYTICAL VALUE: Another expansion hire under Marchman''s
+      Director structure — this is a mid-level editorial role that touches all desks, giving the holder significant influence
+      over story framing across Wired''s newsroom. The international syndication management component is notable: this role
+      decides which stories from Wired Italy, Japan, Germany, etc. get adapted for US publication.'
+    source_url: https://talkingbiznews.com/biz-news-help-wanted/full-time/wired-seeks-a-staff-editor-in-nyc-or-san-fran/
