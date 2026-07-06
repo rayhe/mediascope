@@ -2,6 +2,78 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-05 22:00 PT — Type B: Journalist/Publication Research — Cecilia Kang Deep Profile
+
+**Focus:** Full career profile expansion for Cecilia Kang — NYT's primary tech policy/regulation reporter and lead reporter on the FTC v. Meta antitrust trial (2025). Previously had 4 career events, no education, no migrations, minimal notes; expanded to a comprehensive biography.
+
+### What Changed
+
+**1. CAREER EVENTS: 4 → 5 (FULL BIOGRAPHY)**
+
+| Period | Institution/Publication | Role |
+|---|---|---|
+| Jun 1994–Jan 2000 | AP-Dow Jones (Seoul) | Bureau Chief — covered Asian financial crisis |
+| Jan 2000–Jan 2003 | San Jose Mercury News | Reporter — tech, race, demographics (editor: Vindu Goel, later NYT) |
+| Jan 2003–Jan 2006 | Seattle Post-Intelligencer | Reporter — technology, business (NEW, previously undocumented) |
+| Jan 2006–Oct 2015 | Washington Post | Senior Technology Correspondent — FCC, FTC, net neutrality, Big Tech lobbying |
+| Nov 2015–present | New York Times | National Correspondent — tech policy, AI regulation, antitrust |
+
+**2. KEY DISCOVERY: SEATTLE POST-INTELLIGENCER CAREER STOP**
+The NYT hiring announcement (Dean Murphy, Oct 2015, via TalkingBizNews) confirms Kang worked at the Seattle Post-Intelligencer between the Mercury News and WaPo — a career stop absent from every public bio and the original MediaScope profile. This is notable because:
+- Kang grew up in Seattle (child of Korean immigrants, family ran a burger joint)
+- The P-I ceased daily print publication March 2009 — Kang left before the collapse
+- Creates a 5-publication career spanning 3 distinct journalism ecosystems: international wire (Seoul), local/regional newspaper (Mercury News, Seattle P-I), national newspaper (WaPo, NYT)
+
+**3. DATE CORRECTIONS**
+- WaPo end date: 2014 → 2015-10 (confirmed via "starts next month" in Oct 2015 announcement)
+- NYT start date: 2014-12 → 2015-11 (consistent with WaPo departure timing)
+
+**4. NEW SECTIONS**
+- `education`: Whitman College BA English 1994. Board of Trustees (appointed ~2024). Delivered 138th Commencement Address May 19, 2024 (30 years after her own graduation). Received honorary degree. President's Advisory Board + Whitman Wire advisory board.
+- `multi_pub_migrations`: 2 entries — AP-DJ→Mercury News (international_to_domestic, 2000), WaPo→NYT (prestige_lateral, 2015) — both with DiD significance analysis.
+- `analytical_notes`: 3,000 chars covering awards, book, institutional roles, analytical value, Kang-Frenkel partnership, DiD framework.
+
+**5. AWARDS DOCUMENTED**
+- 2019 Pulitzer Prize finalist (National Reporting, team coverage of Facebook)
+- George Polk Award (National Reporting)
+- Gerald Loeb Award (Investigative Reporting)
+
+**6. INSTITUTIONAL ROLES DOCUMENTED**
+- Whitman College Board of Trustees (appointed ~2024)
+- Georgetown University IOP discussion group ("AI: Democracy and the Race for Global Domination")
+- Aspen Ideas Festival participant
+- Berkeley Law Executive Education guest (Feb 2024, "Future of AI Regulations")
+
+**7. 2025 COVERAGE UPDATE**
+Kang is the lead NYT reporter on the FTC v. Meta antitrust trial (Apr–Jun 2025) — the most aggressive antitrust case the US government has brought against Big Tech. Covered Kevin Systrom testimony (Apr 22), Zuckerberg testimony, trial conclusion. Guest on NYT The Daily podcast (Apr 17, 2025).
+
+**8. ANALYTICAL VALUE EXPANDED**
+- KEY QUESTION: Does her regulation framing reflect genuine policy analysis or NYT's AI licensing revenue ties to companies she covers (Google $100M+, Apple, Amazon)?
+- DiD FRAMEWORK: WaPo → NYT migration (same beat, same city) tests whether institutional context modulates regulatory skepticism. Timing (~2 years post-Bezos acquisition) raises ownership-influence questions.
+- Kang-Frenkel partnership: most productive policy-cybersecurity collaboration in tech journalism.
+
+### Sources
+- TalkingBizNews: NYT hiring announcement by Dean Murphy (Oct 2015) — https://talkingbiznews.com/they-talk-biz-news/ny-times-biz-desk-hires-kang-as-tech-regulation-reporter/
+- Whitman College: Board of Trustees appointment — https://www.whitman.edu/newsroom/whitman-college-board-of-trustees-appoints-two-new-members
+- Whitman College: 138th Commencement (May 19, 2024) — https://www.whitman.edu/newsroom/finally-their-moment-whitmans-class-of-2024-receives-diplomas
+- Whitman College: 2025 Commencement program (trustee listing, Bethesda, Maryland)
+- Georgetown University IOP: speaker bio — https://politics.georgetown.edu/cecilia-kang/
+- Aspen Institute: speaker bio — https://www.aspeninstitute.org/people/cecilia-kang/
+- Techmeme: FTC v. Meta trial coverage attribution (Apr–May 2025)
+- Everand: "An Ugly Truth" (ISBN 9780062960696, Jul 13 2021)
+- Berkeley Law Executive Education: "Future of AI Regulations" (Feb 2024)
+
+### Stats
+- Tests: 1,454 (all passing)
+- Career events: 4 → 5 (+1 Seattle Post-Intelligencer)
+- Education entries: 0 → 1
+- Migration entries: 0 → 2
+- Analytical notes: 1,026 → 2,994 chars (+1,968)
+- Auto-detected migrations: 428 → 430 (README updated)
+- Commit: `6309067`
+
+---
+
 ## 2026-07-05 16:00 PT — Type A: Article Deep Dive — TheStreet Town Hall Coverage
 
 **Article:** TheStreet "Meta CEO sends warning on its AI goal before earnings" (Jul 4, 2026) by Silin Chen & Celine Sun. 5th article covering Zuckerberg's Jul 2 town hall admission. Investment-advisory genre — critical framing embedded within bullish analyst narrative.
