@@ -1370,3 +1370,249 @@ The structural consistency test suite (`test_structural_consistency.py`, 93 test
 4. **Genre gaps.** The corpus under-represents broadcast transcripts, newsletter-native content, podcast-derived text, and non-English publications. Financial journalism coverage (8 articles) is sufficient for documenting the VADER bias but insufficient for validating a correction path.
 
 5. **Selection bias.** Articles were selected for analytical interest (unusual VADER behavior, rich framing, same-event coverage), not randomly sampled. The corpus over-represents editorially interesting articles and under-represents routine coverage where VADER performs adequately.
+
+---
+
+## 18. Genre-Aware Analysis Framework
+
+### 18.1 Overview
+
+MediaScope's 103-article annotated corpus reveals that **article genre** is the single strongest predictor of VADER scoring behavior, framing device density, and source extraction reliability. The same analytical pipeline produces systematically different accuracy levels across genres — a Q&A interview yields zero source extractions, a wire-service report yields near-perfect VADER alignment, and a sardonic entertainment editorial triggers extreme VADER positive bias.
+
+This section formalizes the genre taxonomy, documents validated per-genre scoring behavior, and provides decision tables for agents to adjust their analytical workflow based on genre classification.
+
+### 18.2 Genre Taxonomy
+
+MediaScope recognizes **8 editorial genres**, identified from article structural features. Genre classification is currently manual (assigned during annotation) but follows consistent criteria:
+
+| # | Genre | Identification Criteria | Corpus Count | VADER Reliability |
+|---|---|---|---|---|
+| 1 | **Wire service** | Reuters, AP byline; <600 words; factual structure; minimal editorial voice | ~7 | ★★★★★ High |
+| 2 | **Investigative long-form** | >1,500 words; multiple sources; original reporting; institutional byline | ~35 | ★☆☆☆☆ Very Low |
+| 3 | **Tech editorial** | Magazine-length; editorial voice; product/industry focus; staff byline | ~20 | ★★☆☆☆ Low |
+| 4 | **Financial/investment** | Analyst-debate format; stock tickers; forward-looking language; disclosure statements | ~8 | ★☆☆☆☆ Very Low |
+| 5 | **Opinion/editorial** | First-person voice; essay structure; thesis-driven; opinion section placement | ~12 | ★★☆☆☆ Low |
+| 6 | **Academic/specialist** | Expert sourcing; policy analysis; research citations; measured prose | ~18 | ★★★☆☆ Moderate |
+| 7 | **Q&A/interview** | Question-answer format; conversational register; named interviewee | ~2 | ★☆☆☆☆ Very Low |
+| 8 | **Sardonic entertainment** | Short (<500 words); heavy sarcasm; pop-culture register; Gizmodo/AV Club/Kotaku | ~5 | ★☆☆☆☆ Very Low |
+
+Approximate counts derive from the corpus statistics in §17.4. Some articles span genres (e.g., a product review with investigative elements); classify by dominant mode.
+
+### 18.3 Genre-Specific VADER Behavior
+
+Each genre produces characteristic VADER failure modes. The table below documents the **validated composite-vs-manual gap** pattern per genre:
+
+#### Genre 1: Wire Service (Reuters, AP)
+
+| Metric | Typical Value |
+|---|---|
+| **VADER gap** | ±0.10 (minimal) |
+| **Correction path** | Rarely fires |
+| **Framing devices** | 0–2 per article |
+| **Source extraction** | High accuracy (named attribution, clean structure) |
+| **Primary value** | Neutral baseline for same-event comparisons |
+
+Wire services are MediaScope's reference genre. Their factual, attribution-heavy prose aligns well with VADER's lexical approach. Validated across 7 corpus articles (Reuters MCI, Reuters Dalton Smith, Reuters insurance defense, Reuters BoE regulation, Reuters Gemini limits, Reuters Meta child addiction, Reuters Meta Arena).
+
+#### Genre 2: Investigative Long-Form
+
+| Metric | Typical Value |
+|---|---|
+| **VADER gap** | +0.40 to +1.18 (severe positive inflation) |
+| **Correction path** | Path A (most common), Path B, Path E |
+| **Framing devices** | 5–15+ per article |
+| **Source extraction** | Moderate (anonymous sources, counted-anonymous patterns) |
+| **Primary failure mode** | VADER reads measured investigative prose as positive while editorial stance is adversarial |
+
+This is the genre where MediaScope's framing correction pipeline adds the most value. Investigative journalists use confident, authoritative language — lexically positive to VADER — while deploying extensive adversarial framing devices. The correction paths (§9) were primarily designed for this genre.
+
+**Validated worst case:** NYT "US Presses Meta on AI Reviews" — VADER +0.61, corrected −0.57, manual −0.20. Gap: 1.18 points.
+
+#### Genre 3: Tech Editorial
+
+| Metric | Typical Value |
+|---|---|
+| **VADER gap** | +0.15 to +0.45 |
+| **Correction path** | Path C (product reviews), Path F (mixed reviews), Path H (sarcastic short-form) |
+| **Framing devices** | 3–10 per article |
+| **Source extraction** | Good (named sources common, editorial voice distinct from quoted material) |
+| **Primary failure mode** | Product-review anchor language ("innovative," "impressive") inflates VADER on articles that embed editorial critique |
+
+Product reviews with embedded editorial commentary (Wired glasses launch, Gizmodo Fury review) are the primary challenge. Path C corrects for anchor-device inflation; Path F handles contradictory reviews where positive product assessment wraps negative editorial framing.
+
+#### Genre 4: Financial/Investment
+
+| Metric | Typical Value |
+|---|---|
+| **VADER gap** | +0.30 to +1.14 (severe inflation — worst genre) |
+| **Correction path** | None fire reliably (see §16.3); future Path K planned |
+| **Framing devices** | 2–5 per article (moderate) |
+| **Source extraction** | Moderate (analyst quotes common; attribution via firm name, not individual) |
+| **Primary failure mode** | Genre-conventional financial vocabulary (revenue, growth, opportunity) is lexically positive regardless of editorial stance |
+
+This genre represents MediaScope's **largest documented scoring gap**. See §16 for full analysis. Key diagnostic: VADER compound ≥ 0.85 + financial topic ≥ 0.4 + low headline-body alignment (< 0.4) signals probable inflation.
+
+**Validated worst case:** MarketWatch "Is Meta 'giving up' on cutting-edge AI?" — VADER compound 0.990, composite 0.632, manual −0.15. Gap: 1.14 points.
+
+#### Genre 5: Opinion/Editorial
+
+| Metric | Typical Value |
+|---|---|
+| **VADER gap** | +0.20 to +0.60 (variable) |
+| **Correction path** | Path D (sardonic), Path H (sarcastic short editorial) |
+| **Framing devices** | 4–8 per article |
+| **Source extraction** | Low (first-person voice; few quoted sources; rhetorical questions as structure) |
+| **Primary failure mode** | Ironic and sarcastic language registers as neutral or positive to VADER |
+
+Opinion pieces use rhetorical devices (ironic quotation, editorial asides, assumed consensus) that carry editorial stance through register rather than vocabulary. VADER cannot detect irony, so measured sarcasm reads as neutral.
+
+**Validated example:** Atlantic "A Tool That Crushes Creativity" — VADER ~+0.30, manual −0.72. Sustained cultural critique through extended analogy and ironic quotation.
+
+#### Genre 6: Academic/Specialist
+
+| Metric | Typical Value |
+|---|---|
+| **VADER gap** | ±0.15 to +0.35 (moderate, variable) |
+| **Correction path** | Path J (expert-driven structural critique), Path E (military-tech optimism) |
+| **Framing devices** | 2–6 per article |
+| **Source extraction** | High (expert attribution, institutional affiliations, research citations) |
+| **Primary failure mode** | Measured academic prose scores neutral on VADER when editorial stance may be cautionary or critical |
+
+Academic and policy articles (CDT op-ed, MIT TR multi-agent safety, MIT TR data centers) use domain-specific vocabulary and expert sourcing. VADER performance is moderate — better than investigative or financial genres, but worse than wire service. Security-context articles receive automatic emotional intensity adjustment via `_is_security_context()`.
+
+#### Genre 7: Q&A/Interview
+
+| Metric | Typical Value |
+|---|---|
+| **VADER gap** | +0.30 to +0.50 (positive bias) |
+| **Correction path** | None fire reliably |
+| **Framing devices** | 1–3 per article |
+| **Source extraction** | **Zero** — Q&A format bypasses all standard attribution patterns |
+| **Primary failure mode** | Conversational language inflates VADER; entire article is quoted speech, defeating source/editorial split |
+
+Q&A format is a known blind spot. The entire article is essentially one long quote, making outsourced intensity meaningless and source extraction inoperative. Manual annotation is currently required for this genre.
+
+**Validated failure case:** MIT TR "Yann LeCun's New Venture" — VADER +0.65, manual +0.15. Zero sources detected despite entire article being attributed to a Turing Award recipient.
+
+#### Genre 8: Sardonic Entertainment
+
+| Metric | Typical Value |
+|---|---|
+| **VADER gap** | +0.30 to +0.70 (severe positive bias) |
+| **Correction path** | Path D (sardonic), Path H (sarcastic editorial) |
+| **Framing devices** | 3–8 per article (high density per word — often 1 per 30-50 words) |
+| **Source extraction** | Low (minimal sourcing; editorial voice dominates; cultural references as authority) |
+| **Primary failure mode** | Sarcasm, mock enthusiasm, and ironic denial read as genuinely positive to VADER |
+
+Short-form sardonic outlets (Gizmodo, AV Club, Kotaku) use ironic denial ("presumably has absolutely nothing to do with"), mock certainty ("we're sure are just thrilled"), and ad hominem loaded language ("tech bros," "gormless") that VADER misreads. Path D fires on high loaded-language density; Path H fires on sarcastic editorial asides.
+
+**Validated worst case:** AV Club "Mark Zuckerberg thinks Meta isn't doing enough to cater to gambling addicts" — pervasive sarcasm throughout; every sentence carries ironic register.
+
+### 18.4 Genre-Specific Source Extraction Challenges
+
+Source extraction accuracy varies significantly by genre. The table below documents known challenges and workarounds:
+
+| Genre | Named Sources | Anonymous Sources | Special Challenges |
+|---|---|---|---|
+| Wire service | ★★★★★ | ★★★★☆ | Rare corporate "declined to comment" patterns |
+| Investigative | ★★★☆☆ | ★★★☆☆ | Counted-anonymous ("two employees said"), documentary sources (leaked memos, court filings) |
+| Tech editorial | ★★★★☆ | ★★★☆☆ | Product names as false-positive sources ("Meta Glasses said") |
+| Financial | ★★★☆☆ | ★★☆☆☆ | Analyst attribution by firm name only; "wrote" as attribution verb |
+| Opinion | ★★☆☆☆ | ★☆☆☆☆ | First-person voice; few quoted sources; rhetorical questions as pseudo-attribution |
+| Academic | ★★★★★ | ★★★★☆ | Institutional affiliations complex ("Bo Li, UIUC"); documentary source citations |
+| Q&A | ☆☆☆☆☆ | N/A | **Total failure** — conversational format defeats all extraction patterns |
+| Sardonic | ★★☆☆☆ | ★☆☆☆☆ | Cultural references used as authority; sarcastic "attribution" patterns |
+
+### 18.5 Genre-Typical Framing Device Baselines
+
+Not every framing device detection represents editorial bias. Some devices are **genre-typical** — normal conventions of that editorial mode. The table below documents which devices are expected (baseline) vs. analytically significant (signal) per genre:
+
+| Device Category | Wire | Investigative | Tech Ed | Financial | Opinion | Academic | Sardonic |
+|---|---|---|---|---|---|---|---|
+| loaded_language | Signal | Baseline | Signal | Rare | Baseline | Rare | Baseline |
+| emotional_appeal | Signal | Signal | Signal | Signal | Baseline | Signal | Signal |
+| ironic_quotation | Signal | Signal | Signal | Baseline* | Baseline | Rare | Baseline |
+| kicker_framing | N/A | Signal | Signal | N/A | Rare | N/A | Rare |
+| self_ref_investigation | N/A | Baseline** | Signal | N/A | N/A | N/A | N/A |
+| editorial_deflation | Signal | Signal | Signal | Signal | Baseline | Signal | Baseline |
+| sarcastic_correction | Signal | Rare | Signal | Rare | Signal | N/A | Baseline |
+| scale_magnitude | Rare | Signal | Signal | Baseline | Signal | Signal | Rare |
+| precedent_analogy | Rare | Signal | Signal | Baseline | Signal | Signal | Rare |
+| financial_reassurance | N/A | N/A | N/A | Baseline | N/A | N/A | N/A |
+
+*Financial journalism uses ironic quotation around contested analyst positions ("giving up") — genre convention, not editorial technique.
+**Investigative outlets frequently cite their own prior reporting — this is expected practice in series journalism but becomes analytically significant in same-event comparisons.
+
+**Interpretation rule:** A device classified as "Baseline" for a genre should be noted but not weighted as evidence of bias. A device classified as "Signal" indicates editorial choice beyond genre convention. Devices classified as "Rare" for a genre are especially significant when they appear — they indicate the article is deviating from its genre's normal register.
+
+### 18.6 Cross-Genre Comparison Normalization
+
+When comparing articles across genres (the normal situation in same-event analysis), raw metric comparisons must be adjusted for genre baselines:
+
+#### Framing Device Count
+
+| Comparison | Normalization |
+|---|---|
+| Wire vs. investigative | Expect 5–10× device gap. A 7:1 ratio (e.g., MCI: Wired 7 vs Reuters 1) is **typical**, not extreme. |
+| Wire vs. tech editorial | Expect 3–5× device gap. |
+| Wire vs. sardonic | Expect 3–8× gap, but sardonic articles are shorter — **normalize by framing density** (devices per 100 words). |
+| Investigative vs. investigative | Direct comparison valid — same genre conventions. Most powerful comparison type. |
+| Financial vs. wire | Expect 2–4× gap. Financial articles deploy fewer devices than investigative, so a 5× gap is analytically significant. |
+
+#### Tone Score
+
+| Comparison | Normalization |
+|---|---|
+| Wire vs. any | Wire tone ≈ event severity. Magazine tone − wire tone = editorial framing contribution (§13.3). |
+| Financial vs. investigative | **Not directly comparable** without genre correction. Financial VADER inflation (+0.30–0.50) dwarfs investigative inflation (+0.05–0.15 on the composite). Use framing devices and source stance as primary comparison dimensions instead of raw tone. |
+| Sardonic vs. opinion | Similar genres — direct comparison is informative. Both use ironic register; differences reflect editorial mode (entertainment vs. argument). |
+
+#### Source Metrics
+
+| Comparison | Normalization |
+|---|---|
+| Any vs. Q&A | **Do not compare** source metrics. Q&A genre produces zero extractions by design. |
+| Wire vs. investigative | Wire uses primarily named sources; investigative uses mixed named/anonymous. An anonymous source ratio gap between the two is genre-driven, not necessarily editorial. |
+| Academic vs. any | Academic articles have the highest source authority scores (expert credentials, institutional affiliations). Authority score comparisons against other genres require acknowledging this baseline difference. |
+
+### 18.7 Agent Decision Table
+
+Quick-reference for agents encountering a new article. Classify genre first, then adjust workflow:
+
+| If Genre Is... | Then... |
+|---|---|
+| Wire service | Trust composite score (±0.10). Use as baseline for same-event comparison. Minimal framing analysis needed. |
+| Investigative | **Always run framing correction pipeline.** Report both raw and corrected scores. Expect Path A/B to fire. Check for counted-anonymous sources manually. |
+| Tech editorial | Check for product-review anchor inflation (Path C/F). If article ends on unrelated negative topic, check kicker framing. |
+| Financial | **Flag as genre-inflated.** Report composite score with explicit caveat. Use headline-body alignment as diagnostic. Weight framing devices over sentiment score. See §16 interim recommendations. |
+| Opinion | Run full framing detection. Ironic quotation and editorial deflation are genre-typical — weight them lower. Check for extended analogy structures (analogy_stacking). |
+| Academic | Run standard pipeline. Security-context articles get automatic intensity adjustment. Trust source authority scores. Check for expert_contradiction as bias signal. |
+| Q&A | **Manual annotation required.** Do not trust source extraction (will return zero). VADER positive bias expected. Report framing devices and agency attribution only. |
+| Sardonic | **Expect severe VADER misscoring.** Run Path D/H correction. Normalize framing density by word count. Do not use absolute framing device counts for cross-genre comparison. |
+
+### 18.8 Genre Classification for Automated Pipelines
+
+While genre classification is currently manual, automated genre identification can be approximated using existing toolkit signals:
+
+| Genre Signal | Detection Heuristic |
+|---|---|
+| Wire service | Source attribution in `_WIRE_SOURCES` (Reuters, AP, AFP, Bloomberg); word count < 600; zero editorial asides |
+| Financial | `financial_results` topic confidence ≥ 0.4; VADER compound ≥ 0.85; speculative language ratio ≥ 0.25 |
+| Q&A | Question marks > 5% of sentences; alternating paragraph structure; single named source throughout |
+| Sardonic | Word count < 600; loaded_language density ≥ 1 per 50 words; sarcastic_correction or ironic_quotation present |
+| Investigative | Word count > 1,500; anonymous source ratio > 0.3; ≥ 5 framing devices; self_referential_investigation present |
+| Academic | Expert/institutional sources ≥ 60% of source roster; research citation patterns present; `ai_ethics_safety` or `government_oversight` topic |
+
+These heuristics are sufficient for flagging articles that need genre-specific handling. They are not implemented in code as a formal classifier but can be applied by agents during analysis triage.
+
+### 18.9 Limitations
+
+1. **Genre boundaries are fuzzy.** A product review with investigative reporting (Wired glasses launch) straddles genres 2 and 3. Classify by dominant mode, but note the hybrid.
+
+2. **Genre distribution is uneven.** 35 investigative articles vs. 2 Q&A articles means the genre-specific VADER behavior data is robust for investigative but preliminary for Q&A.
+
+3. **New genres emerge.** Newsletter-native content (Substack), podcast transcripts, and AI-generated articles represent genres not yet in the corpus. VADER behavior on these is unknown.
+
+4. **Genre conventions evolve.** The distinction between "investigative" and "tech editorial" is blurring as outlets like Wired assign investigative pieces to product review editors (Michael Calore) and product reviews to investigative reporters (Zoë Schiffer). Genre classification based on structural features may need updating as editorial practices shift.
+
+5. **Genre heuristics are approximate.** The automated detection signals in §18.8 will misclassify edge cases. A short Reuters article with 3 framing devices might be flagged as sardonic; an investigative article under 1,500 words might be classified as tech editorial. Human judgment remains necessary for ambiguous cases.

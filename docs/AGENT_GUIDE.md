@@ -997,6 +997,71 @@ result.framing_corrected  # True/False
 | Kotaku Meta Arena gambling | +0.68 | −0.55 | 1.23 | D | Sardonic contempt ("ethically rancid," "AI slop") |
 | Gizmodo Meta Fury review | +0.68 | −0.35 | 1.03 | F | Positive product praise drowned out privacy editorial wrapper |
 
+## Genre-Aware Analysis Workflow
+
+Article genre is the strongest predictor of toolkit accuracy. Classify genre before running the full pipeline, and adjust interpretation accordingly. See `METHODOLOGY.md` §18 for the full framework.
+
+### Genre Quick-Classification
+
+Use these signals to identify genre on sight:
+
+| Genre | Key Signals |
+|---|---|
+| **Wire service** | Reuters/AP byline; <600 words; no editorial voice |
+| **Investigative** | >1,500 words; multiple sources; original reporting; institutional publication |
+| **Tech editorial** | Magazine-length; product/industry focus; editorial voice |
+| **Financial** | Stock tickers; analyst quotes; forward-looking language; disclosure statements |
+| **Opinion** | First-person; essay structure; thesis-driven |
+| **Academic** | Expert sourcing; policy analysis; research citations |
+| **Q&A** | Question-answer format; single interviewee |
+| **Sardonic** | <500 words; heavy sarcasm; Gizmodo/AV Club/Kotaku |
+
+### Genre-Adjusted Workflow
+
+```
+1. Classify genre (use signals above)
+
+2. If wire service:
+   → Trust composite score. Use as same-event baseline.
+   → Minimal framing analysis needed.
+
+3. If investigative:
+   → ALWAYS run full framing correction.
+   → Report BOTH raw and corrected scores.
+   → Expect Path A/B to fire.
+   → Check for counted-anonymous sources.
+
+4. If financial:
+   → FLAG as genre-inflated.
+   → Report composite with explicit caveat.
+   → Use headline-body alignment as diagnostic.
+   → Weight framing devices OVER sentiment score.
+   → See METHODOLOGY.md §16 for interim recommendations.
+
+5. If Q&A:
+   → Manual annotation required.
+   → Source extraction WILL return zero (known limitation).
+   → Report framing devices and agency only.
+
+6. If sardonic:
+   → Expect severe VADER misscoring.
+   → Run Path D/H correction.
+   → Normalize framing by word count for comparisons.
+
+7. For all other genres:
+   → Run standard pipeline.
+   → Note genre-typical devices (see §18.5) when interpreting results.
+```
+
+### Cross-Genre Comparison Rules
+
+When comparing articles across genres in same-event analysis:
+
+- **Framing device counts are not directly comparable across genres.** A 7:1 device ratio (Wired vs Reuters) is *genre-typical*, not evidence of extreme bias. Use framing density (devices per 100 words) for cross-genre comparison.
+- **Financial VADER inflation dwarfs investigative inflation.** Do not directly compare financial and investigative composite scores without genre correction. Use framing devices and source stance as primary dimensions.
+- **Never compare source metrics against Q&A articles.** Q&A genre produces zero extractions by design.
+- **Wire-service baseline anchors all comparisons.** Magazine tone − wire tone = editorial framing contribution.
+
 ## Integration Patterns
 
 ### LangChain
