@@ -3882,8 +3882,10 @@ journalists:
     end: 2018-12
     event_type: hired
     notes: >-
-      Consultant on emerging tech strategy for large companies, with focus on the finance industry. 2012 fellow at Kellogg Institute for International Studies
-      (Notre Dame), specializing in conflict and post-war development. Pre-journalism career in both international development and corporate strategy.
+      Consultant on emerging tech strategy for large companies, with focus on the finance industry. Pre-journalism career bridging international development
+      and corporate strategy. 2012 Kellogg Institute for International Studies fellow at Notre Dame — spent 8 weeks in Rwanda working with YWCA of Rwanda
+      on conflict and post-war development (source: Kellogg Institute AR 2011-2012, alumni newsletter). Corporate consulting followed the fellowship,
+      applying emerging tech analysis to finance-sector clients before pivoting to journalism.
     publication: consulting
     role: consultant
     source_url: https://event.technologyreview.com/emtech-next/speakers
@@ -3892,8 +3894,9 @@ journalists:
     end: 2020-06
     event_type: hired
     notes: >-
-      Researcher working on special newsroom projects. Internal role before transitioning to reporter. Produced In Machines We Trust podcast and other data
-      journalism projects.
+      Researcher working on special newsroom projects. Internal role before transitioning to reporter. Co-produced 'In Machines We Trust' podcast with
+      Jennifer Strong and Emma Cillekens, including a 4-part series on facial recognition (~2020-2021). Also contributed data journalism projects. Karen Hao
+      was part of the podcast's editorial circle during its facial recognition coverage.
     publication: mit-tech-review
     role: researcher
     source_url: https://event.technologyreview.com/emtech-next/speakers
@@ -3901,21 +3904,110 @@ journalists:
   - beat: tech policy, democracy, elections, facial recognition
     event_type: promoted
     notes: >-
-      Senior tech policy reporter. 113+ articles. Covers impact of new technologies on political systems, human rights, health of global democracies. Writes
-      'The Technocrat' newsletter on tech policy. Produced In Machines We Trust podcast (facial recognition series). Topics include: facial recognition
-      regulation (Massachusetts bill analysis), election misinformation, deepfake victims/legislation, EU AI Act negotiations. Also contributes to data
-      journalism and audio projects. Based in New York. Twitter: @TateRyMo.
+      Senior tech policy reporter. 115+ articles. Covers impact of new technologies on political systems, human rights, health of global democracies. Writes
+      'The Technocrat' weekly newsletter on tech policy for MIT TR subscribers (Section 230, encryption policy, EU AI Act, deepfakes legislation, election
+      technology). MAJOR INVESTIGATION: 'The Secret Police' (2022) — multi-part investigative series with Sam Richards exposing Minneapolis police surveillance
+      of George Floyd protesters, edited by Michael Reilly and Mat Honan. Cited by OHCHR submission on surveillance, Cambridge University Press publications,
+      Wikipedia; prompted Twitter reactions from Rep. Alexandria Ocasio-Cortez and Rep. Ilhan Omar. CONGRESSIONAL CITATIONS: Work cited in H. Rept. 119-72
+      (Informing Consumers About Smart Devices Act). Also cited by American Progress, Amnesty International ('Violations in the Shell' report on deepfake
+      victim coverage), Ohio State Law Review, Stanford CS182 syllabus. ACADEMIC PUBLICATION: 'Digital peacebuilding in post-conflict Colombia — A conceptual
+      framework,' Global Policy (LSE), vol. 15, issue S3, pp. 47-57, June 2024 (doi:10.1111/1758-5899.13330) — indexed on IDEAS/RePEc, cited by multiple
+      conflict studies papers. C-SPAN appearance on Biden's AI executive order (StudentCam). Other key coverage: facial recognition regulation (Massachusetts
+      bill analysis), election misinformation, deepfake victims/legislation, EU AI Act negotiations. Based in New York. Twitter: @TateRyMo.
     publication: mit-tech-review
     role: senior_reporter
     source_url: https://www.technologyreview.com/author/tate-ryan-mosley/
     start: 2020-07
+  education:
+  - degree: BA (likely Mathematics & Statistics / Biological Sciences)
+    institution: University of Notre Dame
+    end: 2014
+    start: 2010
+    notes: >-
+      High school class of 2010. Listed in Kellogg Institute AR 2011-2012 next to 'Mathematics and Statistics / Biological Sciences' — likely her major(s).
+      2012 Kellogg Institute International Scholars Program fellow (8 weeks in Rwanda with YWCA of Rwanda). Sources: Kellogg Institute AR 2011-2012
+      (kellogg.nd.edu), alumni newsletter confirming class of ~2013-2014 (junior in 2012).
+    source_url: https://kellogg.nd.edu/sites/default/files/documents/AR1112.pdf
   name: Tate Ryan-Mosley
   notes: >-
-    MIT TR's senior tech policy reporter. Covers impact of new technologies on political systems, human rights, and global democracies. Career: Kellogg
-    Institute fellow (conflict/post-war development, 2012) → emerging tech strategy consultant → MIT TR researcher → MIT TR reporter. Unusual pipeline:
-    international development + corporate consulting → journalism. KEY ANALYTICAL VALUE: Her beat (tech policy, democracy, elections, facial recognition
-    regulation) puts her at the intersection of technology and governance — a natural adversarial frame where tech companies are the subjects of regulatory
-    scrutiny. Her 'The Technocrat' newsletter shapes how MIT TR's subscriber base understands tech regulation.
+    MIT TR's senior tech policy reporter. Covers impact of new technologies on political systems, human rights, and global democracies. Career: Notre Dame
+    (BA, ~2010-2014, Kellogg Institute fellow 2012 in Rwanda) → emerging tech strategy consultant → MIT TR researcher → MIT TR senior reporter. Non-traditional
+    pipeline: international development + corporate consulting → journalism, with a peer-reviewed academic publication (Global Policy, LSE, 2024) unusual for
+    working journalists. KEY ANALYTICAL VALUE: Her beat (tech policy, democracy, elections, facial recognition regulation) puts her at the intersection of
+    technology and governance — a natural adversarial frame where tech companies are the subjects of regulatory scrutiny. Her 'The Technocrat' newsletter
+    shapes how MIT TR's subscriber base understands tech regulation. 'The Secret Police' investigation (2022) demonstrates institutional capacity for
+    long-form adversarial reporting on surveillance — cited by Congress (H. Rept. 119-72), OHCHR, Amnesty International, and academic law reviews. Academic
+    publication in Global Policy on digital peacebuilding in Colombia shows active scholarly engagement rare among tech journalists.
+- career:
+  - beat: technology
+    end: 2012-06
+    event_type: hired
+    notes: >-
+      Technology reporter and editor at the Guardian. Covered tech industry including Twitter, Google, and Silicon Valley startups. Also served as European
+      correspondent for GigaOM. Created 'Behind the scenes at Twitter' feature (2009) picked up by Techmeme. Guardian tenure established him as a UK tech
+      journalism voice before pivoting to entrepreneurial publishing.
+    publication: guardian
+    role: reporter
+    source_url: https://event.technologyreview.com/emtech-next/speakers
+    start: 2006-01
+  - beat: long-form science and technology
+    end: 2013-04
+    event_type: founded
+    notes: >-
+      Co-founded Matter with Jim Giles, a Kickstarter-backed online investigative journalism magazine publishing one long (5,000+ word) well-researched
+      article per month for $0.99 each. Raised $140,000 on Kickstarter (goal was $50,000, reached in 36 hours). Won National Magazine Award. Acquired by
+      Evan Williams' Medium after ~5 months of operation. The Kickstarter success and Medium acquisition were covered by BBC, paidContent, Editor & Publisher.
+    publication: matter-magazine
+    role: co-founder
+    source_url: https://www.sparkminute.com/2013/04/hacking-media-production-podcast-producing-one-memorable-article-every-month/
+    start: 2012-07
+  - beat: mental health, culture, design
+    end: 2019-12
+    event_type: hired
+    notes: >-
+      Editor in Chief of Anxy Magazine, an independent publication at the intersection of mental health, culture, and design. Non-tech editorial leadership
+      role between Matter acquisition and MIT TR hire, broadening editorial range beyond tech journalism.
+    publication: anxy-magazine
+    role: editor_in_chief
+    source_url: https://rocketreach.co/bobbie-johnson-email_36770547
+    start: 2017-01
+  - beat: features, special projects, Covid tracking
+    event_type: hired
+    notes: >-
+      Senior editor at MIT Technology Review, based in San Francisco. Oversees print and features. Led the Covid Tracing Tracker project (systematic global
+      database of contact tracing apps). Editor on 'The Secret Police' (2022) multi-part investigative series by Tate Ryan-Mosley and Sam Richards exposing
+      Minneapolis police surveillance of George Floyd protesters — series cited by OHCHR, Congress, prompted reactions from Rep. Ocasio-Cortez and Rep. Omar.
+      33+ posts under byline. Twitter: @bobbie.
+    publication: mit-tech-review
+    role: senior_editor
+    source_url: https://event.technologyreview.com/emtech-next/speakers
+    start: 2018-01
+  education:
+  - degree: BA (English Literature)
+    institution: Queen Mary University of London
+    end: 2000
+    start: 1997
+    notes: >-
+      BA in English from Queen Mary University of London. Pre-career education in humanities before entering technology journalism.
+    source_url: https://rocketreach.co/bobbie-johnson-email_36770547
+  multi_pub_migrations:
+  - from_pub: guardian
+    to_pub: matter-magazine
+    year: 2012
+    notes: Left Guardian to co-found Matter (Kickstarter-backed long-form tech magazine), acquired by Medium within 5 months.
+  - from_pub: matter-magazine
+    to_pub: mit-tech-review
+    year: 2018
+    notes: Joined MIT TR as senior editor after Matter (acquired by Medium) and Anxy Magazine EIC stint. Guardian → startup founder → MIT TR editorial leadership.
+  name: Bobbie Johnson
+  notes: >-
+    MIT TR senior editor (features/print). Career: Queen Mary University of London (BA English, 1997-2000) → Guardian technology reporter (~2006-2012) →
+    co-founded Matter magazine (Kickstarter, $140K raised, National Magazine Award, acquired by Medium 2013) → Anxy Magazine EIC (2017-2019) → MIT Technology
+    Review senior editor (2018-). MULTI-PUB MIGRATION: Guardian → Matter (founder) → MIT TR. KEY ANALYTICAL VALUE: As a senior editor, Johnson shapes which
+    stories get published and how they're framed — he edited 'The Secret Police' investigation and oversaw the Covid Tracing Tracker. His Guardian background
+    connects MIT TR's editorial culture to UK tech journalism traditions (more adversarial toward tech power than US norms). The Matter startup experience
+    (Kickstarter + Medium acquisition) gives him direct exposure to both Silicon Valley business models and long-form investigative craft. Based in San
+    Francisco. Twitter: @bobbie.
 - career:
   - beat: culture, internet, technology
     end: 2023-04
