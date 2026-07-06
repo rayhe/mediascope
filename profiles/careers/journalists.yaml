@@ -9757,3 +9757,173 @@ journalists:
     vs. individual framing comparison; (3) *Abundance* co-authorship with Klein reveals a techno-optimist individual stance
     that may contrast with Atlantic''s institutional tech-skepticism; (4) Single-publication career (unlike most tracked journalists)
     means any framing changes post-departure can be attributed more cleanly to institutional effects.'
+
+- career:
+  - beat: technology
+    end: '2013'
+    event_type: hired
+    notes: Early career technology reporting and editing at UK publishers. Worked at Incisive Media (B2B tech publishing)
+      and Dennis Publishing (consumer tech, including titles like The Week). Pre-Wired career that gave him a grounding in
+      UK technology journalism.
+    publication: incisive-media-dennis-publishing
+    role: reporter_editor
+    source_url: https://talkingbiznews.com/media-news/temperton-joins-logic-as-deputy-me/
+    start: '2011'
+  - beat: technology, digital culture, science, healthcare
+    end: 2024-06
+    event_type: hired
+    notes: 'Long tenure spanning multiple roles in ascending order: reporter → acting deputy digital editor → digital editor
+      → senior editor → deputy editor → news editor. Listed as "current website editor" in Wikipedia''s Wired UK article.
+      KEY ACHIEVEMENTS: (1) Launched Wired Awake, the daily newsletter briefing — Wired UK''s first daily newsletter product;
+      (2) Hosted over 300 episodes of the Wired UK podcast; (3) Part of the team that produced an award-winning investigation
+      into algorithmic bias; (4) Led the UK newsroom. Author of "The Future of Medicine" (WIRED Guides series, Random House
+      Business, March 2021, 144 pages). Based in Montreal for final ~2 years — worked remotely from Canada. LAID OFF as part
+      of broader Wired restructuring. His departure was separate from but contemporaneous with the 7 London editorial staff
+      departures at end of 2025 — Temperton was Montreal-based, not London-based. ANALYTICAL VALUE: Temperton was Wired UK''s
+      most senior operational editor (news editor = day-to-day editorial gatekeeper for UK content). His layoff, combined with
+      Greg Williams'' departure (9-year UK editor → Exponential View) and Peter Guest''s exit (acting business editor → Coda
+      Story), represents the near-total dissolution of Wired UK''s autonomous editorial leadership. The positions that replaced
+      them (Rosie Swash as Deputy Editor, Isabella Ward as staff writer) report directly to US-based Brian Barrett, completing
+      Drummond''s centralization of global editorial control.'
+    publication: wired
+    role: news_editor
+    source_url: https://talkingbiznews.com/media-news/temperton-joins-logic-as-deputy-me/
+    start: '2013'
+  - beat: technology, AI, business
+    event_type: hired
+    notes: 'Deputy managing editor at The Logic, a Canadian technology and business news publication. Hired to help lead
+      tech coverage including business of tech, its promise and perils, and impact on industry and society. Originally from
+      UK, now lives in Montreal. Started September 10, 2024. Reports to editor Jordan (surname from announcement). MIGRATION:
+      Wired (Condé Nast) → The Logic represents a move from adversarial Big Tech coverage culture to a Canadian business-journalism
+      publication — tests whether his editorial approach carries over or adapts to a different institutional voice.'
+    publication: the-logic
+    role: deputy_managing_editor
+    source_url: https://talkingbiznews.com/media-news/temperton-joins-logic-as-deputy-me/
+    start: 2024-09
+  name: James Temperton
+  notes: 'WIRED UK EDITORIAL GATEKEEPER (DEPARTED): Wired UK''s news editor — the most senior day-to-day operational editorial
+    role in the UK office. Career arc: Incisive Media/Dennis Publishing → Wired UK (reporter through news editor, ~10 years)
+    → The Logic (deputy managing editor). Hosted 300+ podcast episodes, launched Wired Awake newsletter, authored "The Future
+    of Medicine" (WIRED Guides, 2021). Part of award-winning algorithmic bias investigation. Based in Montreal for final ~2
+    years at Wired. Cardiff University BA + MA. His layoff is a key data point in the Wired UK contraction narrative: alongside
+    Greg Williams (editor, 9 years → Exponential View) and Peter Guest (acting business editor → Coda Story), Temperton''s
+    departure represents the near-total dissolution of Wired UK''s autonomous editorial chain. Not currently at a tracked
+    publication, but his decade at Wired makes him significant for institutional framing analysis during the Williams/pre-Drummond-centralization
+    era vs. the current Barrett-led global structure.'
+- career:
+  - beat: general news
+    end: '1993'
+    event_type: hired
+    notes: First journalism job. Dow Jones community newspaper chain. Reporter at the Daily News of Newburyport, Massachusetts.
+      Scottish-born (Edinburgh University graduate), entered American journalism through regional newspapers.
+    publication: daily-news-newburyport
+    role: reporter
+    source_url: https://talkingbiznews.com/media-news/wsj-assistant-editor-beckett-is-departing/
+    start: '1990'
+  - beat: financial, general
+    end: '1998'
+    event_type: hired
+    notes: Dow Jones Newswires reporter with stints in New York, London, Mexico City, and Washington, D.C. Wire service experience
+      covering financial regulation in Washington. Built international reporting chops that would define his later bureau chief
+      roles.
+    publication: dow-jones-newswires
+    role: reporter
+    source_url: https://talkingbiznews.com/media-news/wsj-assistant-editor-beckett-is-departing/
+    start: '1993'
+  - beat: banking, Wall Street
+    end: '2003'
+    event_type: hired
+    notes: Joined the Journal proper in New York, covering banking. First WSJ staff position after 8 years in Dow Jones wire
+      service.
+    publication: wall-street-journal
+    role: reporter
+    source_url: https://talkingbiznews.com/media-news/wsj-assistant-editor-beckett-is-departing/
+    start: '1998'
+  - beat: finance, European markets
+    end: '2007'
+    event_type: hired
+    notes: Bureau chief in London and European finance and markets editor. First bureau chief role — began a pattern of increasingly
+      senior international postings.
+    publication: wall-street-journal
+    role: london_bureau_chief
+    source_url: https://talkingbiznews.com/media-news/wsj-assistant-editor-beckett-is-departing/
+    start: '2003'
+  - beat: South Asia, general
+    end: '2013'
+    event_type: hired
+    notes: 'South Asia bureau chief based in New Delhi for 6 years. KEY ACHIEVEMENTS: (1) Started WSJ''s India Real Time blog
+      and india.wsj.com — pioneered Journal''s digital expansion in India; (2) Won Overseas Press Club award for India coverage
+      (2008); (3) Oversaw coverage of Mumbai terror attacks (2008) and Delhi rape case (2012); (4) Co-authored "Crimes Against
+      Women: Three Tragedies and the Call for Reform in India" (HarperCollins, July 2013); (5) Led integration of Newswires
+      and Journal teams in India into one combined bureau.'
+    publication: wall-street-journal
+    role: south_asia_bureau_chief
+    source_url: https://talkingbiznews.com/media-news/confirmed-beckett-is-wsjs-next-dc-bureau-chief/
+    start: '2007'
+  - beat: Asia, China, geopolitics
+    end: 2017-01
+    event_type: hired
+    notes: 'Asia editor based in Hong Kong. Succeeded Almar Latour (who became Executive Editor). Oversaw the Journal''s coverage
+      of: (1) disappearance of Malaysian Airlines Flight MH370 (2014); (2) China''s slowing economy; (3) Malaysia''s 1MDB
+      sovereign wealth fund corruption scandal — Pulitzer Prize finalist for international reporting (2016). Also led accelerated
+      digital transformation of Dow Jones/Journal in Asia. Promoted to deputy managing editor when appointed Washington bureau
+      chief.'
+    publication: wall-street-journal
+    role: asia_editor
+    source_url: https://adweek.com/media/paul-beckett-named-new-wsj-washington-bureau-chief/
+    start: '2013'
+  - beat: politics, government, national security, economics, regulation
+    end: 2023-10
+    event_type: hired
+    notes: 'Washington bureau chief and deputy managing editor. Named by EIC Gerard Baker (Aug 2016), succeeding Jerry Seib
+      (who became executive Washington editor). Led the bureau through extraordinary period: Trump administration, pandemic,
+      2020 election, January 6 attacks. Responsible for news across politics and government, economics, national security,
+      the Supreme Court, financial regulation, and the intersection of business and Washington. Departed bureau chief role Oct
+      2023 when EIC Emma Tucker asked him to work full-time on Gershkovich case.'
+    publication: wall-street-journal
+    role: washington_bureau_chief
+    source_url: https://talkingbiznews.com/media-news/confirmed-beckett-is-wsjs-next-dc-bureau-chief/
+    start: 2017-01
+  - beat: press freedom advocacy
+    end: 2025-10
+    event_type: hired
+    notes: 'Assistant editor role created specifically for Gershkovich case. Reported directly to EIC Emma Tucker. Full-time
+      work on securing release of WSJ reporter Evan Gershkovich from Russian prison (wrongfully detained since March 29, 2023).
+      Work involved: (1) supporting Gershkovich and family; (2) keeping WSJ employees updated; (3) lobbying Washington for
+      government action; (4) creating public awareness campaigns. Gershkovich released in historic prisoner swap (July 2024).
+      Beckett continued in role through Oct 2025, then departed WSJ after 34 total years at Dow Jones/WSJ.'
+    publication: dow-jones
+    role: assistant_editor
+    source_url: https://poynter.org/ethics-trust/2024/russia-false-charges-evan-gershkovich-wall-street-journal/
+    start: 2023-10
+  - beat: national security, foreign policy
+    event_type: hired
+    notes: 'Senior editor responsible for national security and foreign policy coverage at The Atlantic. Hired as part of
+      Atlantic''s rapid expansion under EIC Jeffrey Goldberg. Announced alongside Simon Shuster (Time magazine veteran, staff
+      writer), Alex Reisner (promoted to staff from contributing), Lily Meyer (promoted to staff from contributing), and Yvonne
+      Wingett Sanchez (WaPo → staff writer, politics from Arizona). Goldberg called Beckett "one of journalism''s great editors"
+      and "widely admired for guiding his writers to ambition and excellence, as well as for championing press freedom." ANALYTICAL
+      VALUE: (1) Beckett''s 34 years at Murdoch-owned WSJ/Dow Jones represent the strongest Murdoch → Emerson Collective editorial
+      migration in the dataset — tests whether WSJ institutional framing (business-pragmatic, pro-market) adapts to Atlantic''s
+      editorial culture (Goldberg''s national security focus, Thompson''s tech coverage expansion). (2) His national security/foreign
+      policy desk at Atlantic now oversees coverage where AI and geopolitics intersect (e.g., Atlantic''s "U.S. Government
+      Seizes AI Companies" piece, Apr 2026). (3) WSJ → Atlantic pipeline now accounts for 3 senior editorial hires: Beckett,
+      Emily Bobrow, and Will Oremus (via WaPo). (4) Press freedom advocacy experience (Gershkovich) may influence Atlantic''s
+      editorial stance on AI censorship, content moderation, and platform governance topics.'
+    publication: atlantic
+    role: senior_editor
+    source_url: https://editorandpublisher.com/stories/the-atlantic-announces-paul-beckett/
+    start: 2025-10
+  name: Paul Beckett
+  notes: 'KEY EDITORIAL GATEKEEPER AT THE ATLANTIC: Senior editor for national security and foreign policy — the newest senior
+    editorial hire shaping Atlantic''s AI/geopolitics intersection coverage. Career arc: Dow Jones community newspapers (1990)
+    → DJ Newswires (NY, London, Mexico City, DC) → WSJ reporter (banking) → WSJ London bureau chief → WSJ South Asia bureau
+    chief (New Delhi, 6 years) → WSJ Asia editor (Hong Kong, MH370, 1MDB) → WSJ Washington bureau chief (Trump era, Jan 6)
+    → WSJ assistant editor (Gershkovich case) → The Atlantic (Oct 2025). Scottish-born, Edinburgh University graduate. 34
+    years at Dow Jones/WSJ — the longest Murdoch-orbit tenure of any journalist now at a tracked publication. Co-author of
+    "Crimes Against Women" (HarperCollins, 2013). Won Overseas Press Club award (2008). Married to Heather Timmons (White
+    House editor at Reuters) — creates a WSJ/Reuters editorial household pipeline worth noting for source network analysis.
+    Son Luther. NOT a tech journalist — his entire career is geopolitics, finance, and national security. His editorial authority
+    at Atlantic shapes how AI/tech stories are framed when they touch national security (export controls, defense AI, surveillance).
+    The WSJ → Atlantic pipeline (Beckett + Bobrow + Oremus-via-WaPo) is the single largest institutional talent flow into
+    Atlantic''s current editorial structure.'
