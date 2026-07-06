@@ -2,6 +2,54 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-06 06:00 PT — Type C: Ownership & Funding Deep Dive — Wired/Condé Nast: WBD UK Regulatory, Lily Newman ID, Reddit Earnings, AI Marketplace
+
+**Focus:** Wired/Condé Nast ownership profile. Last Wired Type C was Jul 2 (OBBBA + Google Zero). This iteration targets 5 areas with fresh source material: (1) WBD/Paramount UK regulatory status on the day of the UK response deadline (Jul 6), (2) newly identified suspended Wired staffer from Fired Four settlement, (3) updated Reddit Q2 earnings estimates, (4) AI content marketplace structural evolution, (5) Condé Nast revenue breakdown.
+
+### What Changed
+
+**1. WBD/Paramount Regulatory Status → Jul 6 (TODAY's deadline)**
+Updated from Jul 1 snapshot. Reuters analysis (Jul 2): UK review likely aimed at **extracting commitments** (preserving news, children's TV, UK investment at Leavesden studios), NOT blocking the deal. Legal advisors quoted: public-interest case "limited" but delay threat gives UK leverage. EU: Phase I extended to Jul 22, EC confirmed remedies received, Paramount "confident" remedies "directly and comprehensively" address concerns. Additional clearances: Kuwait, Austria, Australia.
+
+**2. Lily Newman Identified as Suspended Wired Writer (NEW)**
+The Wrap's settlement article (May 27, 2026) identifies **Lily Newman**, a Wired **senior security writer**, as one of the 5 suspended employees. Her quote: "The unpaid suspensions added another layer of egregious, illegal retaliation to this situation." Her identification is analytically significant — she is a long-tenured security reporter whose beat (cybersecurity, surveillance, data privacy) overlaps directly with Meta coverage. Personal retaliation experience adds a confounding variable distinct from ambient job insecurity.
+
+**3. Reddit Q2 2026 Earnings Estimates Updated**
+Previous profile had "~$1.20-1.25" — replaced with sourced consensus:
+- Zacks: EPS $0.99 (+120% YoY), revenue $746.89M (+49.5% YoY). Full-year: $4.83 EPS, $3.25B rev.
+- MarketBeat: EPS $0.71 (range $0.45-$0.97), revenue $712.9M.
+- Needham $300 PT (Jun 24, highest on Street). Zacks Rank #2 (Buy).
+- Reddit beat ALL 4 trailing quarters by significant margins.
+
+**4. AI Content Marketplace Evolution (WSJ, Jul 3)**
+Added to commercial_pivot section. Content licensing evolving from bilateral deals to marketplace models: Microsoft pilot with 8 publishers (People, AP, Hearst), $10M+ invested; Amazon Factiva building marketplace. Meta conspicuously absent as AI licensing buyer — Condé Nast monetizing content via Meta's competitors (OpenAI, Amazon, Microsoft, Apple).
+
+**5. Condé Nast 2025 Revenue Breakdown**
+Added specifics from Adweek interview: subscriptions +10% YoY, commerce +13% YoY, events +40% YoY. CRO Herbst-Brady: "no plans" for further portfolio paring.
+
+**6. Minor Updates**
+- Lahut NLRB status: "pending June 2026" → "pending July 2026"
+
+### Sources
+- Reuters: "Britain's Paramount-Warner review may be aimed at commitments, not a veto" (Jul 2, 2026)
+- WSJ: "Paramount Skydance Offers Concessions to Facilitate EU Approval" (Jul 1, 2026)
+- WSJ: "Marketplaces Are the Next Frontier in Publisher Deals With AI Companies" (Jul 3, 2026)
+- The Wrap: "Condé Nast Settles With Union 6 Months After Staffers Fired" (May 27, 2026)
+- FashionUnited: "Condé Nast agrees on 400,000 US dollar settlement" (May 29, 2026)
+- HR Executive: "Union workers fired over HR video settle with Condé Nast" (May 28, 2026)
+- MarketBeat: Reddit (RDDT) Earnings Date and Reports (Jul 6, 2026)
+- Zacks: "Reddit Inc. (RDDT) Stock Moves -1.56%: What You Should Know" (Jul 2, 2026)
+- MarketBeat: Reddit (RDDT) Stock Forecast and Price Target (Jul 5, 2026)
+- Reddit 2026 DEF 14A proxy statement (SEC filing, Apr 23, 2026)
+- Adweek: "How Condé Nast Grew Its Events Revenue 40% Last Year" (May 2026)
+
+### Stats
+- Tests: 93/93 structural consistency passing (1 pre-existing CLI timeout skipped)
+- Profile changes: 53 insertions, 23 deletions in `profiles/wired.yaml`
+- Commit: `e40bec5`
+
+---
+
 ## 2026-07-06 00:00 PT — Type D: Toolkit Quality & Documentation — Corpus Statistics §17 + Stale Count Fix
 
 **Focus:** The 100-article annotated corpus — MediaScope's empirical foundation — had no dedicated documentation. Every framing device, correction path, and analytical method was discovered from these articles, but the corpus itself wasn't characterized as a research resource. Additionally, a stale "69-type taxonomy" reference in METHODOLOGY.md §13.2 survived because the structural consistency test used a manually maintained list that missed it.
