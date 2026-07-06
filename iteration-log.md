@@ -2,6 +2,63 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-06 07:00 PT — Type D: Toolkit Quality & Documentation — Genre-Aware Analysis Framework (§18)
+
+**Focus:** Article genre is the strongest predictor of toolkit accuracy, but genre-specific knowledge was scattered across individual article annotations, the financial journalism section (§16), corpus statistics (§17), and various test file comments. This iteration consolidates all genre-aware analysis guidance into a single systematic reference (METHODOLOGY.md §18) and adds a corresponding agent workflow (AGENT_GUIDE.md).
+
+### What Changed
+
+**1. METHODOLOGY.md §18: Genre-Aware Analysis Framework (NEW, +246 lines)**
+
+Comprehensive documentation of 8 editorial genres with validated data from the 103-article annotated corpus:
+
+- **§18.2: Genre Taxonomy** — 8 genres (wire service, investigative long-form, tech editorial, financial/investment, opinion/editorial, academic/specialist, Q&A/interview, sardonic entertainment) with identification criteria, approximate corpus counts, and VADER reliability ratings (★ scale).
+
+- **§18.3: Genre-Specific VADER Behavior** — Detailed per-genre analysis documenting validated composite-vs-manual gap patterns. Key findings:
+  - Wire service: ±0.10 gap (reliable baseline)
+  - Investigative: +0.40 to +1.18 (VADER's worst failure mode, Paths A/B designed for this)
+  - Financial: +0.30 to +1.14 (worst genre overall — no correction path fires reliably)
+  - Sardonic: +0.30 to +0.70 (sarcasm reads as positive)
+  - Q&A: +0.30 to +0.50 (zero source extraction — total analytical blind spot)
+  
+  Each genre section documents: typical VADER gap range, which correction paths fire, framing device density range, source extraction accuracy, primary failure mode, and validated worst-case examples from the corpus.
+
+- **§18.4: Genre-Specific Source Extraction Challenges** — Star-rated accuracy matrix (named sources × anonymous sources × special challenges) across all 8 genres. Q&A is total failure (☆☆☆☆☆); wire service and academic are highest (★★★★★).
+
+- **§18.5: Genre-Typical Framing Device Baselines** — 10 device categories × 7 genres classified as Baseline (expected), Signal (analytically significant), Rare (especially notable if present), or N/A. Key insight: `loaded_language` is Baseline in investigative and sardonic genres (don't over-weight), but Signal in wire service and tech editorial. `financial_reassurance` is Baseline only in financial genre. `self_referential_investigation` is Baseline in investigative (series journalism convention) but Signal in tech editorial.
+
+- **§18.6: Cross-Genre Comparison Normalization** — Rules for adjusting raw metrics when comparing across genres in same-event analysis. Framing device counts: 7:1 ratio (Wired vs Reuters) is *genre-typical*, not extreme — normalize by density. Tone scores: financial VADER inflation dwarfs investigative inflation — don't compare directly. Source metrics: never compare against Q&A genre (zero by design).
+
+- **§18.7: Agent Decision Table** — Quick-reference for agents: classify genre first, then follow genre-specific workflow (e.g., "If Financial → FLAG as genre-inflated, report with explicit caveat, weight framing over sentiment").
+
+- **§18.8: Automated Genre Classification Heuristics** — Detection signals using existing toolkit outputs (topic confidence, VADER compound, word count, source patterns) for approximate genre classification in automated pipelines. Not a formal classifier but sufficient for flagging articles needing genre-specific handling.
+
+- **§18.9: Limitations** — Fuzzy boundaries, uneven distribution, emerging genres (Substack, podcasts), evolving conventions (Wired's investigative-editorial blurring).
+
+**2. AGENT_GUIDE.md: Genre-Aware Analysis Workflow (NEW, +65 lines)**
+
+New section before Integration Patterns providing:
+- Quick-classification signal table (8 genres with key identification signals)
+- Genre-adjusted workflow decision tree (genre-specific instructions for each type)
+- Cross-genre comparison rules (3 rules for agents doing same-event analysis)
+
+### Sources
+All data grounded in the annotated corpus. Per-genre VADER behavior validated across:
+- Wire: 7 Reuters articles (MCI, Dalton Smith, insurance defense, BoE, Gemini limits, child addiction, Arena)
+- Investigative: NYT AI reviews (+0.61→−0.57), Wired Applied AI, Wired NameTag
+- Financial: MarketWatch (+0.990→−0.15), Barron's (+0.574→−0.18), Motley Fool (+0.997→+0.55), Barchart (+0.995→−0.10)
+- Q&A: MIT TR LeCun (+0.65→+0.15, 0 sources detected)
+- Sardonic: AV Club Arena, Gizmodo AI tokens, Kotaku Arena
+- METHODOLOGY.md §16 (financial journalism), §17 (corpus statistics), §9 (correction paths)
+
+### Stats
+- Tests: 1454 passed (94 structural consistency), all green
+- METHODOLOGY.md: 1,372 → 1,618 lines (+246)
+- AGENT_GUIDE.md: 1,059 → 1,124 lines (+65)
+- Commit: `d03f34a`
+
+---
+
 ## 2026-07-06 06:00 PT — Type C: Ownership & Funding Deep Dive — Wired/Condé Nast: WBD UK Regulatory, Lily Newman ID, Reddit Earnings, AI Marketplace
 
 **Focus:** Wired/Condé Nast ownership profile. Last Wired Type C was Jul 2 (OBBBA + Google Zero). This iteration targets 5 areas with fresh source material: (1) WBD/Paramount UK regulatory status on the day of the UK response deadline (Jul 6), (2) newly identified suspended Wired staffer from Fired Four settlement, (3) updated Reddit Q2 earnings estimates, (4) AI content marketplace structural evolution, (5) Condé Nast revenue breakdown.
