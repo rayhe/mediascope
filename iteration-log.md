@@ -14486,3 +14486,37 @@ Research and add new journalist profiles for publications in the tracked set. Ta
 
 ### Commit
 `ea4be27` — pushed to `rayhe/mediascope` main
+
+---
+
+## Iteration 2026-07-06 12:00 PT — Type B (Journalist/Publication Research)
+
+### Focus: Atlantic Newsroom Expansion Wave (2025–2026)
+
+**Identified and documented the Atlantic's massive 20+ hire expansion wave**, the largest single-publication talent acquisition in the dataset. Heavily sourced from WaPo (5+), WSJ (3+), Economist (2), AP, Politico, Time, NYT Magazine, Slate, and Chronicle of Higher Education.
+
+### New Journalist Profiles (10)
+1. **Theo Balcomb** — NPR → NYT → WaPo → Atlantic (4 career entries)
+2. **Idrees Kahloon** — Economist → Atlantic (6 entries, economics/Washington correspondent)
+3. **Jonathan Lemire** — Daily News → AP → Politico/MSNBC → Atlantic (6 entries, White House bureau chief)
+4. **Vivian Salama** — AP → WSJ → CNN → NBC → WSJ → Atlantic (7 entries, 6-pub migration — longest DiD path)
+5. **Emily Bobrow** — Economist → WSJ → Atlantic (3 entries, books/culture)
+6. **Simon Shuster** — Time → Atlantic (2 entries, Pulitzer winner for Ukraine coverage)
+7. **Henry Grabar** — Slate → Atlantic (2 entries, urbanism, National Magazine Award)
+8. **Tom Bartlett** — Chronicle of Higher Education → Atlantic (2 entries, 15+ year specialist)
+9. **Caity Weaver** — Gawker → GQ → NYT Magazine → Atlantic (4 entries, viral interview specialist)
+10. **Kevin Sieff** — WaPo → Atlantic (2 entries, Latin America bureau chief)
+
+### Editorial Changes
+- 6 new entries in `editorial_changes.yaml` documenting the Atlantic expansion waves (Jan 2025 – Apr 2026)
+
+### Fixes
+- Fixed invalid `event_type: transferred` → `hired` for Vivian Salama AP entry
+- Updated all stale counts across README.md, docs/EDITORIAL_HISTORIES.md, and examples/careers_demo.py
+
+### Stats Update
+- **147 journalists** (was 136), **146 multi-pub** (was 135), **466 auto-detected migrations** (was 442)
+- **294 unique publication slugs** (was ~270)
+- **1,454 tests pass** (0 failures)
+
+### Commit

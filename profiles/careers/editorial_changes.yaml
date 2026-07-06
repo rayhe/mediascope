@@ -1291,3 +1291,62 @@ editorial_changes:
     outgoing: Greg Williams
     position: editor_wired_uk_departure
     source_url: https://talkingbiznews.com/media-news/williams-departs-wired-for-exponential-view/
+  # === Atlantic Expansion Wave 2025-2026 (batch addition Jul 6 2026) ===
+  - date: 2025-07
+    incoming: Idrees Kahloon (Economist), Vivian Salama (WSJ), Tom Bartlett (Chronicle of Higher Ed)
+    notes: >-
+      Triple hire wave: Kahloon from Economist (Washington bureau chief → staff writer),
+      Salama from WSJ (national security → national security), Bartlett from Chronicle
+      (22-year tenure → health/science). Two of three (Kahloon, Salama) bring WaPo/WSJ
+      institutional DNA; Bartlett brings academic-journalism norms.
+    outgoing: null
+    position: staff_writers
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-hires-idrees-kahloon-as-staff-writer,255429
+  - date: 2025-08
+    incoming: Paul Beckett (WSJ 25yr), Simon Shuster (Time), Alex Reisner (upgrade), Lily Meyer (upgrade), Yvonne Wingett Sanchez (WaPo/AZ Republic)
+    notes: >-
+      National-security team buildout. Beckett (senior editor) brings 25 years of WSJ
+      investigative editing. Shuster from Time. Reisner and Meyer upgraded from contributing
+      to staff writer. Sanchez from WaPo covers politics from Arizona. 5 additions in one wave.
+    outgoing: null
+    position: staff_writers_and_editors
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-paul-beckett-as-senior-editor-and-staff-writers-lily-meyer-alex-reisner-simon-shuster-and-yvonne-wingett-sanchez,254040
+  - date: 2025-08
+    incoming: Emily Bobrow (WSJ/Economist), Katie Zezima, Will Gottsegen, Jonathan Lemire (upgraded to staff)
+    notes: >-
+      Bobrow (senior editor) brings Economist + WSJ editorial-gate training. Zezima (senior
+      editor). Gottsegen hired for The Atlantic Daily newsletter. Lemire elevated from
+      contributing to staff writer (continues MSNBC co-hosting simultaneously).
+    outgoing: null
+    position: staff_writers_and_editors
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-emily-bobrow-and-katie-zezima-as-senior-editors-will-gottsegen-and-jonathan-lemire-join-as-staff-writers,253449
+  - date: 2025-01
+    incoming: Caity Weaver (NYT Magazine), Jonathan Lemire (Politico/MSNBC), Alex Reisner (existing contributor)
+    notes: >-
+      Weaver (staff writer) from NYT Magazine (Gawker → GQ → NYT Mag trajectory). Lemire
+      (contributing writer) from Politico/MSNBC. Reisner (contributing writer) already doing
+      AI training data investigations. Same wave as Ashley Parker, Michael Scherer (staff writers),
+      Kristen V. Brown, Jonathan Chait, Nicholas Florko, Shane Harris, Shayla Love.
+    outgoing: null
+    position: staff_and_contributing_writers
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-hires-caity-weaver-as-staff-writer-jonathan-lemire-and-alex-reisner-to-join-as-contributing-writers,252424
+  - date: 2026-01
+    incoming: Henry Grabar (Slate), Judith Shulevitz (upgrade), Chris Suellentrop (WaPo), Uzodinma Iweala
+    notes: >-
+      Grabar (staff writer) from 12-year Slate tenure. Shulevitz upgraded from contributing
+      to staff writer after contributing since 2015. Suellentrop (senior editor) from WaPo
+      op-ed editing. Iweala (contributing writer) — author of "Beasts of No Nation."
+    outgoing: null
+    position: staff_writers_and_editors
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-adds-four-journalists-to-its-staff,258176
+  - date: 2026-04
+    incoming: Sophia Nguyen (WaPo), Kevin Sieff (WaPo 15yr), Theo Balcomb (NPR/NYT/WaPo), Jonathan L. Fischer (WaPo)
+    notes: >-
+      WaPo-heavy wave: 4 hires, 3 directly from WaPo (Nguyen, Sieff, Fischer) plus Balcomb
+      who had WaPo freelance editorial work. Sieff's 15-year WaPo foreign posting tenure
+      is the longest WaPo departure. Balcomb's 4-publication trajectory (NPR → NYT → WaPo →
+      Atlantic) provides the richest DiD migration path in the dataset. This wave brings
+      total WaPo → Atlantic pipeline to 5+ in 12 months.
+    outgoing: null
+    position: staff_writers_and_editors
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff,260627

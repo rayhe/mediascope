@@ -9981,3 +9981,582 @@ journalists:
     natural experiment for institutional framing effects. Not investigative — product reviewer with
     increasing editorial voice on surveillance/privacy. Korean-American cultural context visible in
     Samsung/Korean tech coverage.
+
+# === Atlantic Expansion Wave (2025-2026) ===
+# Added 2026-07-06 Type B iteration: 10 new journalists from the Atlantic's
+# unprecedented newsroom expansion under LaFrance/Goldberg. WaPo (5), WSJ (3),
+# Economist (2), AP (2), Politico (1), Time (1), NYT (1), Slate (1),
+# Chronicle of Higher Education (1). The scale reveals institutional strategy:
+# building a hybrid investigative/policy publication by poaching from legacy
+# newsrooms. KEY FOR DiD: multiple multi-publication migrations.
+
+- name: Theo Balcomb
+  notes: >-
+    KEY MIGRATION: NPR → NYT → WaPo → Atlantic (2026). 4-publication trajectory
+    — the richest migration path in the entire dataset for difference-in-differences
+    analysis. Co-created The Daily at NYT, the most commercially successful news
+    podcast in history (4M+ daily listeners, duPont Award, contributed to multiple
+    Pulitzer submissions). Barnard College '09. ANALYTICAL VALUE: (1) 4-publication
+    career provides 3 migration events with known dates; (2) Audio-first journalist
+    — tests whether framing conventions differ in podcast vs. print contexts;
+    (3) Editorial gate role (senior editor across shows) means her institutional
+    framing preferences shape multiple Atlantic journalists' output, not just her own;
+    (4) Previous Radio Atlantic involvement (2022 relaunch) means she has prior
+    Atlantic institutional exposure before full hire.
+  career:
+    - publication: npr
+      role: supervising_producer
+      beat: daily news
+      start: 2011
+      end: 2015
+      event_type: hired
+      notes: >-
+        Fellow → supervising producer of All Things Considered. Youngest-ever
+        supervising producer of NPR's flagship afternoon program. Institutional
+        formation in NPR's editorial culture (neutral-authoritative tone, public
+        service mission). Barnard College BA 2009.
+      source_url: https://brown.columbia.edu/people/theo-balcomb/
+    - publication: nytimes
+      role: executive_producer
+      beat: daily news podcast
+      start: 2015
+      end: 2020
+      event_type: hired
+      notes: >-
+        Co-created The Daily with Lisa Tobin in January 2017 as an extension of
+        the 2016 election podcast The Run-Up. Led team from 3 producers + host to
+        13+ staff. The Daily reached 1.7M daily listeners by 2019, 4M+ by 2022,
+        expanded to 200+ public radio stations. Won duPont Award, contributed to
+        multiple Pulitzer Prize-winning submissions. Promoted to lead News for Audio.
+        MIGRATION 1: NPR → NYT — from public radio's institutional culture to
+        commercial-subscription culture. Tests whether framing shifts from NPR's
+        neutrality toward NYT's more assertive editorial voice.
+      source_url: https://www.nytco.com/press/theo-balcomb-to-lead-news-for-audio/
+    - publication: washington-post
+      role: independent_editor
+      beat: investigative audio
+      start: 2020
+      end: 2026-03
+      event_type: freelance
+      notes: >-
+        Freelance editor/producer on multiple WaPo investigative podcast series:
+        The Empty Grave of Comrade Bishop (2024 Peabody Award), Broken Doors
+        (2022 Pulitzer finalist), Field Trip (2024 duPont Award nominee). Also
+        edited Song Exploder podcast. Created independent podcast Voices in the
+        River. Brown Institute for Media Innovation affiliated. MIGRATION 2:
+        NYT → WaPo (freelance) — from NYT's daily-news format to WaPo's
+        investigative-longform audio.
+      source_url: https://brown.columbia.edu/people/theo-balcomb/
+    - publication: atlantic
+      role: senior_editor
+      beat: audio, podcasts
+      start: 2026-04
+      event_type: hired
+      notes: >-
+        Senior editor across The Atlantic's podcasts. Previously helped develop
+        the relaunch of Radio Atlantic in 2022 (prior institutional exposure).
+        Reports into LaFrance/Goldberg editorial hierarchy. MIGRATION 3:
+        WaPo → Atlantic — from investigative audio to essay-magazine audio.
+        4th institutional context. Announcement described her return: "We are
+        delighted to welcome Theo Balcomb BACK to The Atlantic." The word "back"
+        is analytically significant — she has prior Atlantic institutional exposure,
+        which complicates the clean DiD but enriches understanding of institutional
+        affinity/self-selection effects.
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff,260627
+
+- name: Idrees Kahloon
+  notes: >-
+    KEY MIGRATION: The Economist → Atlantic (2025). Economist Washington bureau
+    chief → Atlantic staff writer. Harvard 2016, applied mathematics + economics.
+    NPF Economic Justice Journalism Award 2020. ANALYTICAL VALUE: (1) Economist →
+    Atlantic migration is rare institutional comparison — from anonymous byline
+    culture to named-author essay culture; (2) Data journalism background
+    (designed Brexit prediction model, Lebanon ethnic composition measurement,
+    EAGLE golf forecasting system) brings quantitative rigor that may resist
+    institutional framing pressures; (3) Washington bureau chief → staff writer
+    is a hierarchical step down in title but up in individual voice — tests whether
+    moving from editorial-management to individual-contributor changes framing
+    patterns; (4) His New Yorker freelance work provides a third institutional
+    sample point.
+  career:
+    - publication: harvard-crimson
+      role: contributor
+      beat: campus, economics
+      start: 2012
+      end: 2016
+      event_type: hired
+      notes: >-
+        Wrote for The Harvard Crimson while studying applied mathematics and
+        economics at Harvard University. Interned with editorial boards of
+        The Lexington Herald-Leader and The Pittsburgh Post-Gazette.
+      source_url: https://nationalpress.org/profile/idrees-kahloon/
+    - publication: the-economist
+      role: data_journalist
+      beat: data journalism, economics
+      start: 2016
+      end: 2019
+      event_type: hired
+      notes: >-
+        Started at The Economist right out of college in London. Designed the
+        magazine's successful predictive model of the 2016 Brexit referendum.
+        Published the first accurate measurement of Lebanon's ethnic composition
+        since 1932. Implemented EAGLE — The Economist's Monte Carlo simulation
+        system for golf tournament forecasting. MIT Sloan Sports Analytics
+        Conference speaker.
+      source_url: https://talkingbiznews.com/media-news/kahloon-named-washington-correspondent-for-the-economist/
+    - publication: the-economist
+      role: us_policy_correspondent
+      beat: domestic politics, policy
+      start: 2019
+      end: 2021-01
+      event_type: promoted
+      notes: >-
+        Promoted to US policy correspondent covering domestic politics and policy.
+        Washington-based.
+      source_url: https://talkingbiznews.com/media-news/kahloon-named-washington-correspondent-for-the-economist/
+    - publication: the-economist
+      role: washington_correspondent
+      beat: national politics
+      start: 2021-01
+      end: 2022
+      event_type: promoted
+      notes: >-
+        Promoted to Washington correspondent. Expanded beat to full national
+        politics coverage.
+      source_url: https://talkingbiznews.com/media-news/kahloon-named-dc-bureau-chief-for-the-economist/
+    - publication: the-economist
+      role: washington_bureau_chief
+      beat: White House, Congress, national politics
+      start: 2022
+      end: 2025
+      event_type: promoted
+      notes: >-
+        Promoted to Washington bureau chief — led coverage of White House,
+        Congress, and national politics. Wrote special report on geography of
+        poverty and opportunity in America. Authored "What If Joe Biden Decided
+        Against Running for Re-Election?" (2023). Appeared regularly on CNN,
+        Fox News, NPR, and Economist podcasts including "Checks and Balance."
+        Moonlighted as critic for The New Yorker (Books essays on Piketty,
+        Reeves). NPF Economic Justice Journalism Award 2020.
+      source_url: https://talkingbiznews.com/media-news/kahloon-named-dc-bureau-chief-for-the-economist/
+    - publication: atlantic
+      role: staff_writer
+      beat: politics, economics
+      start: 2025
+      event_type: hired
+      notes: >-
+        Staff writer at The Atlantic. Announced by Goldberg, LaFrance, Appelbaum,
+        and Lapidos. Same announcement wave as Vivian Salama (WSJ) and Tom Bartlett
+        (Chronicle of Higher Education). MIGRATION: Economist → Atlantic.
+        KEY: anonymous byline culture → named-author culture. The Economist
+        "treats authorship like a state secret" (Goldberg's own words in the
+        hire announcement). Moving from institutional voice to individual voice
+        is the inverse of the typical DiD setup — tests whether a journalist
+        trained in an institution-first framing culture carries that discipline
+        into a writer-centric publication.
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-hires-idrees-kahloon-as-staff-writer,255429
+
+- name: Jonathan Lemire
+  notes: >-
+    KEY MIGRATION: NY Daily News → AP → Politico/MSNBC → Atlantic (2025-2026).
+    4+ publications, multi-platform (print, wire, TV, digital, essay magazine).
+    Born Nov 28, 1979. Columbia University. NYT bestselling author "The Big Lie"
+    (2022). ANALYTICAL VALUE: (1) Wire (AP) → political trade (Politico) → cable
+    news (MSNBC) → essay magazine (Atlantic) provides the widest institutional-culture
+    range in the dataset; (2) Simultaneous MSNBC co-host + Atlantic staff writer
+    tests whether broadcast framing bleeds into print; (3) His AP training in
+    neutral wire-service style provides a baseline for measuring institutional
+    drift at each subsequent publication; (4) White House beat continuity across
+    3 publications (AP, Politico, Atlantic) isolates institutional effects from
+    beat effects.
+  career:
+    - publication: columbia-daily-spectator
+      role: contributor
+      beat: campus
+      start: 1998
+      end: 2001
+      event_type: hired
+      notes: >-
+        Wrote for the Columbia Daily Spectator while studying at Columbia University.
+        Early journalism foundation.
+      source_url: https://www.virgopedia.com/jonathan-lemire/
+    - publication: new-york-daily-news
+      role: reporter
+      beat: city politics, state politics
+      start: 2001
+      end: 2013
+      event_type: hired
+      notes: >-
+        Started as an intern, hired full-time after September 11, 2001 attacks.
+        12+ years covering New York City and State politics, including 2012
+        presidential election, City Hall, 2013 mayoral election. Long tabloid
+        formation — fast-paced, headline-driven, adversarial city reporting.
+      source_url: https://www.virgopedia.com/jonathan-lemire/
+    - publication: associated-press
+      role: white_house_reporter
+      beat: White House, national politics
+      start: 2013
+      end: 2021
+      event_type: hired
+      notes: >-
+        White House reporter covering Trump and Biden administrations. Famous
+        Helsinki summit question to Trump: "Who do you believe, Putin or U.S.
+        intelligence?" (July 2018). Covered Trump's first campaign from Trump
+        Tower kickoff (June 2015) through ~100 rallies in 2016. AP wire-service
+        training provides neutral framing baseline.
+      source_url: https://www.virgopedia.com/jonathan-lemire/
+    - publication: politico
+      role: white_house_bureau_chief
+      beat: White House, national politics
+      start: 2021-11
+      end: 2025-01
+      event_type: hired
+      notes: >-
+        White House bureau chief at Politico. Simultaneously hosted MSNBC's
+        "Way Too Early" (Oct 2021 - Dec 2024). Published "The Big Lie: Election
+        Chaos, Political Opportunism, and the State of American Politics After
+        2020" (2022, NYT instant bestseller). Promoted to Morning Joe co-host
+        Dec 2024. MIGRATION: AP → Politico represents wire → trade press shift.
+      source_url: https://www.thewrap.com/msnbc-jonathan-lemire-election-2024-morning-joe/
+    - publication: atlantic
+      role: contributing_writer
+      beat: White House, national politics
+      start: 2025-01
+      end: 2025-08
+      event_type: hired
+      notes: >-
+        Contributing writer focusing on White House and national politics.
+        Announced alongside Caity Weaver (staff writer) and Alex Reisner
+        (contributing writer) by Goldberg. Also serves as Morning Joe co-host
+        on MSNBC. Regular panelist on "Washington Week with The Atlantic."
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-hires-caity-weaver-as-staff-writer-jonathan-lemire-and-alex-reisner-to-join-as-contributing-writers,252424
+    - publication: atlantic
+      role: staff_writer
+      beat: White House, national politics
+      start: 2025-08
+      event_type: promoted
+      notes: >-
+        Elevated from contributing writer to staff writer. Continues as MSNBC
+        Morning Joe co-host simultaneously. MIGRATION: Politico/MSNBC → Atlantic.
+        KEY: Simultaneous broadcast + print dual-role creates a natural experiment
+        for cross-platform framing contamination. His AP-trained neutral baseline
+        vs. Atlantic's essay-driven editorial culture vs. MSNBC's progressive
+        cable framing creates a 3-way institutional pressure test.
+      source_url: https://www.virgopedia.com/jonathan-lemire/
+
+- name: Vivian Salama
+  notes: >-
+    KEY MIGRATION: AP → WSJ → CNN → NBC → WSJ → Atlantic (2025). 5+ publications
+    including 2 WSJ stints. International/national security reporter, 80+ countries,
+    20+ year career. Rutgers BA journalism, Columbia MA Middle East politics,
+    Georgetown JD. Fluent Arabic speaker. ANALYTICAL VALUE: (1) Two WSJ stints
+    create a rare return-migration data point — did framing change between first
+    and second WSJ tenure? (2) Wire → business press → cable news → business press →
+    essay magazine is the widest institutional range alongside Lemire; (3) National
+    security beat is directly relevant to AI/military/surveillance coverage at
+    the Atlantic; (4) International formation (Iraq, Egypt, Pakistan, UAE) provides
+    non-Western framing baseline.
+  career:
+    - publication: tv-broadcast
+      role: reporter
+      beat: general assignment
+      start: 2003
+      end: 2008
+      event_type: hired
+      notes: >-
+        Early broadcast career at TV stations in New York City and Providence, RI.
+        Rutgers University BA in journalism. Columbia University MA in Middle East
+        politics.
+      source_url: https://smpa.gwu.edu/salama-vivian
+    - publication: associated-press
+      role: bureau_chief
+      beat: Iraq, Middle East, national security
+      start: 2008
+      end: 2016
+      event_type: hired
+      notes: >-
+        Baghdad bureau chief for the Associated Press. Covered rise and fall of
+        ISIS in Iraq and Syria, Iran's regional influence, refugee/IDP crisis.
+        Also reported from Egypt, Pakistan, UAE, Israel/Palestinian territories.
+        Covered Arab Spring uprisings (2010-2011). Investigated US targeted
+        killing program in Yemen. Author of children's book "The Long Journey
+        Home" (2019) about Syrian refugee. Fluent Arabic speaker.
+      source_url: https://smpa.gwu.edu/salama-vivian
+    - publication: associated-press
+      role: white_house_reporter
+      beat: White House, national security
+      start: 2016
+      end: 2018
+      event_type: hired
+      notes: >-
+        Moved to Washington to cover White House and national security. Broke
+        stories on Trump's first phone call with Mexican president and the
+        administration's controversial travel ban.
+      source_url: https://smpa.gwu.edu/salama-vivian
+    - publication: cnn
+      role: national_security_reporter
+      beat: national security, foreign policy
+      start: 2018
+      end: 2019
+      event_type: hired
+      notes: CNN national security reporter. Brief stint.
+      source_url: https://www.washingtonian.com/2025/04/22/meet-the-winners-of-the-2025-washington-women-in-journalism-awards/
+    - publication: nbc-news
+      role: white_house_correspondent
+      beat: White House, national security
+      start: 2019
+      end: 2020
+      event_type: hired
+      notes: NBC News White House and national security correspondent.
+      source_url: https://www.washingtonian.com/2025/04/22/meet-the-winners-of-the-2025-washington-women-in-journalism-awards/
+    - publication: wall-street-journal
+      role: national_security_reporter
+      beat: White House, US-China, national security
+      start: 2020
+      end: 2025
+      event_type: hired
+      notes: >-
+        Joined WSJ to cover US-China relationship, later returned to White House
+        team for Trump's second term. Broke stories on Trump's interest in buying
+        Greenland. GWU SMPA Terker Distinguished Fellow. Georgetown University
+        JD (evening program, 2016-2019). Washington Women in Journalism Award 2025.
+        RETURN MIGRATION: Second WSJ stint after CNN/NBC detours.
+      source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-wsjs-salama/
+    - publication: atlantic
+      role: staff_writer
+      beat: national security, foreign policy
+      start: 2025
+      event_type: hired
+      notes: >-
+        Staff writer covering national security and foreign policy, joining the
+        Atlantic's growing national-security team alongside Paul Beckett (senior
+        editor, ex-WSJ 25 years) and Simon Shuster (ex-Time). MIGRATION: WSJ →
+        Atlantic. KEY: National security beat directly relevant to AI/military
+        coverage (autonomous weapons, surveillance tech, AI export controls).
+        Her Murdoch-era WSJ framing vs. Emerson Collective Atlantic framing
+        provides a clean institutional comparison.
+      source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-wsjs-salama/
+
+- name: Emily Bobrow
+  notes: >-
+    MIGRATION: Economist → WSJ → Atlantic (2025). Editor role — editorial gate
+    function shapes framing across multiple writers' output. ANALYTICAL VALUE:
+    Like Kahloon, trained in Economist's anonymous-byline culture. Editor role
+    means institutional framing preferences propagate through her editing, not
+    just her bylines.
+  career:
+    - publication: the-economist
+      role: staff_editor
+      beat: culture, politics, policy
+      start: 2010
+      end: 2018
+      event_type: hired
+      notes: >-
+        Staff editor and writer at The Economist. Covered culture, politics,
+        and policy. Trained in anonymous-byline institutional voice. Second
+        Economist → Atlantic hire (alongside Kahloon).
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-emily-bobrow-and-katie-zezima-as-senior-editors-will-gottsegen-and-jonathan-lemire-join-as-staff-writers,253449
+    - publication: wall-street-journal
+      role: features_editor
+      beat: features, culture, Review section
+      start: 2018
+      end: 2025
+      event_type: hired
+      notes: >-
+        Features editor and reporter for the WSJ Review section. Created Weekend
+        Confidential column. "Gained a wonderful reputation as a creative,
+        thoughtful and supportive editor, commissioning and editing some of the
+        Journal's most widely read pieces" (Goldberg announcement). Also
+        contributed to The Atlantic's Family section during WSJ tenure.
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-emily-bobrow-and-katie-zezima-as-senior-editors-will-gottsegen-and-jonathan-lemire-join-as-staff-writers,253449
+    - publication: atlantic
+      role: senior_editor
+      beat: politics, global, ideas
+      start: 2025
+      event_type: hired
+      notes: >-
+        Senior editor on the politics, global, and ideas team. Announced alongside
+        Katie Zezima (senior editor), Will Gottsegen (staff writer), and Jonathan
+        Lemire (staff writer). MIGRATION: WSJ → Atlantic. Editorial gate role —
+        her Economist + WSJ institutional training shapes Atlantic output through
+        editing, not just writing.
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-emily-bobrow-and-katie-zezima-as-senior-editors-will-gottsegen-and-jonathan-lemire-join-as-staff-writers,253449
+
+- name: Simon Shuster
+  notes: >-
+    MIGRATION: Time → Atlantic (2025). Long-time Time staff and foreign
+    correspondent. National security team hire alongside Paul Beckett and
+    Vivian Salama. ANALYTICAL VALUE: Time → Atlantic migration tests
+    institutional framing shift from news-magazine to essay-magazine culture.
+  career:
+    - publication: time
+      role: foreign_correspondent
+      beat: international affairs, national security, Russia/Ukraine
+      start: 2010
+      end: 2025
+      event_type: hired
+      notes: >-
+        Long-time staff and foreign correspondent for Time magazine. Extensive
+        international reporting career. Departure is part of broader exodus
+        from Time as Atlantic expands.
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-paul-beckett-as-senior-editor-and-staff-writers-lily-meyer-alex-reisner-simon-shuster-and-yvonne-wingett-sanchez,254040
+    - publication: atlantic
+      role: staff_writer
+      beat: national security
+      start: 2025
+      event_type: hired
+      notes: >-
+        Staff writer on the Atlantic's growing national-security team. Announced
+        alongside Paul Beckett (senior editor, ex-WSJ 25 years), Alex Reisner
+        (contributing → staff writer), Lily Meyer (contributing → staff writer),
+        and Yvonne Wingett Sanchez (ex-WaPo/Arizona Republic).
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-paul-beckett-as-senior-editor-and-staff-writers-lily-meyer-alex-reisner-simon-shuster-and-yvonne-wingett-sanchez,254040
+
+- name: Henry Grabar
+  notes: >-
+    MIGRATION: Slate → Atlantic (Jan 2026). Policy/urban planning journalist.
+    Author of "Paved Paradise: How Parking Explains the World" (2023).
+  career:
+    - publication: slate
+      role: staff_writer
+      beat: housing, infrastructure, urban life
+      start: 2013
+      end: 2025
+      event_type: hired
+      notes: >-
+        12+ year tenure at Slate covering housing, infrastructure, and urban life.
+        Editor of "The Future of Transportation" anthology (2019). Author of
+        "Paved Paradise: How Parking Explains the World" (2023). 99% Invisible
+        podcast episode about kids navigating cities. Olympic planning diary of
+        Paris 2024. Long single-publication tenure similar to Derek Thompson's
+        Atlantic run — strong institutional framing absorption.
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-adds-four-journalists-to-its-staff,258176
+    - publication: atlantic
+      role: staff_writer
+      beat: housing, infrastructure, urban policy
+      start: 2026-01
+      event_type: hired
+      notes: >-
+        Staff writer at The Atlantic. Announced January 2026 alongside Judith
+        Shulevitz (contributing → staff writer), Chris Suellentrop (senior editor,
+        ex-WaPo), and Uzodinma Iweala (contributing writer). Working on a book
+        about apartment building design, financing, permitting, and construction.
+        MIGRATION: Slate → Atlantic. Tests whether Slate's explainer culture
+        vs. Atlantic's essay culture produces measurable framing shifts.
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-adds-four-journalists-to-its-staff,258176
+
+- name: Tom Bartlett
+  notes: >-
+    MIGRATION: Chronicle of Higher Education → Atlantic (2025). 22-year single-
+    publication career — the longest in the dataset alongside Derek Thompson (17yr).
+  career:
+    - publication: chronicle-of-higher-education
+      role: staff_writer
+      beat: higher education, science, academia
+      start: 2003
+      end: 2025
+      event_type: hired
+      notes: >-
+        Staff writer for 22 years — the longest single-publication tenure in
+        the journalist dataset. Covered higher education, science, and academic
+        culture. ANALYTICAL VALUE: 22-year institutional formation in academic
+        journalism's culture of evidence-based, peer-reviewed sourcing norms.
+        The strongest possible institutional imprint test — if anyone carries
+        their prior institution's framing DNA, it's a 22-year veteran.
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-hires-idrees-kahloon-as-staff-writer,255429
+    - publication: atlantic
+      role: staff_writer
+      beat: health, science
+      start: 2025-07
+      event_type: hired
+      notes: >-
+        Staff writer covering health and science "under the second Trump
+        administration." Started July 9, 2025. Announced in same wave as
+        Idrees Kahloon (Economist) and Vivian Salama (WSJ). MIGRATION:
+        Chronicle → Atlantic. KEY: Academic-journalism framing norms
+        (hedging, citation, nuance) vs. Atlantic's essay-driven assertion
+        culture — predicts measurable framing shift if institutional
+        effects are real.
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-hires-idrees-kahloon-as-staff-writer,255429
+
+- name: Caity Weaver
+  notes: >-
+    MIGRATION: NYT Magazine → Atlantic (2025). Features/culture writer known for
+    creative, humorous nonfiction. Her interests include "glitter and pennies"
+    (Goldberg announcement).
+  career:
+    - publication: gawker
+      role: staff_writer
+      beat: culture, humor, features
+      start: 2012
+      end: 2015
+      event_type: hired
+      notes: >-
+        Staff writer at Gawker. Gawker Media institutional culture — irreverent,
+        adversarial, first-person voice. OVERLAP: Gawker Media → NYT Magazine →
+        Atlantic pipeline mirrors Wired's Gizmodo/Gawker hiring pattern (Drummond,
+        Marchman, Kleeman).
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-hires-caity-weaver-as-staff-writer-jonathan-lemire-and-alex-reisner-to-join-as-contributing-writers,252424
+    - publication: gq
+      role: staff_writer
+      beat: culture, profiles
+      start: 2015
+      end: 2018
+      event_type: hired
+      notes: Staff writer at GQ (Condé Nast). Culture and profiles.
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-hires-caity-weaver-as-staff-writer-jonathan-lemire-and-alex-reisner-to-join-as-contributing-writers,252424
+    - publication: nytimes-magazine
+      role: staff_writer
+      beat: features, culture, creative nonfiction
+      start: 2018
+      end: 2025
+      event_type: hired
+      notes: >-
+        Staff writer at The New York Times Magazine. Creative, humorous long-form
+        nonfiction. "One of our all-time favorite writers" (Goldberg announcement).
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-hires-caity-weaver-as-staff-writer-jonathan-lemire-and-alex-reisner-to-join-as-contributing-writers,252424
+    - publication: atlantic
+      role: staff_writer
+      beat: features, culture
+      start: 2025
+      event_type: hired
+      notes: >-
+        Staff writer at The Atlantic. Announced alongside Jonathan Lemire
+        (contributing writer) and Alex Reisner (contributing writer). MIGRATION:
+        NYT Magazine → Atlantic. Gawker → GQ → NYT Magazine → Atlantic is a
+        4-publication trajectory, but in features/culture rather than hard news.
+        Tests whether Gawker-trained irreverence persists through NYT Magazine's
+        institutional polish and into Atlantic's essay culture.
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-hires-caity-weaver-as-staff-writer-jonathan-lemire-and-alex-reisner-to-join-as-contributing-writers,252424
+
+- name: Kevin Sieff
+  notes: >-
+    MIGRATION: Washington Post → Atlantic (spring 2026). 15-year WaPo veteran
+    with overseas postings in Kabul, Nairobi, Mexico City, Barcelona.
+  career:
+    - publication: washington-post
+      role: foreign_correspondent
+      beat: international, conflict, immigration
+      start: 2011
+      end: 2026
+      event_type: hired
+      notes: >-
+        15-year career at The Washington Post with overseas postings including
+        Kabul, Nairobi, Mexico City, and Barcelona. Extensive international
+        reporting experience. Long single-publication tenure (15 years) provides
+        strong institutional framing baseline.
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff,260627
+    - publication: atlantic
+      role: staff_writer
+      beat: international affairs
+      start: 2026-04
+      event_type: hired
+      notes: >-
+        Staff writer at The Atlantic. Announced alongside Sophia Nguyen (WaPo),
+        Theo Balcomb (NPR/NYT/WaPo), and Jonathan L. Fischer (WaPo). Part of
+        the 5+ WaPo → Atlantic hiring pipeline. MIGRATION: WaPo → Atlantic.
+        KEY: 15-year WaPo institutional formation. Tests whether WaPo's
+        news-first reporting culture shifts toward Atlantic's essay-first
+        analytical voice. Part of the largest single-source hiring pipeline
+        in the Atlantic expansion.
+      source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff,260627
