@@ -8928,3 +8928,120 @@ journalists:
     (1) Non-Western pipeline tests institutional framing hypothesis — does MIT TR's editorial culture override her distinctive background? (2) Tarbell fellowship
     context suggests investigative orientation; (3) Labor/worker-rights background may produce different framing of AI automation stories vs pure tech reporters;
     (4) Korean tech expertise fills a gap — Samsung, KAIST, Korean semiconductor policy are increasingly relevant to US tech coverage.
+- career:
+  - beat: politics, culture
+    end: ~2006
+    event_type: hired
+    notes: >-
+      Early career contributor covering politics and culture. Foer's career began in the late 1990s at Slate and
+      New York magazine after graduating from Columbia University in 1996. His 2004 book *How Soccer Explains the World*
+      established him as a crossover intellectual writer blending sports, politics, and globalization.
+    publication: slate
+    role: contributor
+    source_url: https://en.wikipedia.org/wiki/Franklin_Foer
+    start: ~1998
+  - beat: politics, culture, media
+    end: 2010
+    event_type: hired
+    notes: >-
+      Editor of The New Republic. Foer's first tenure as editor began in 2006. He resigned in 2010 amid editorial
+      disagreements. During this period TNR was still considered a premier liberal policy magazine. Co-edited *Jewish Jocks:
+      An Unorthodox Hall of Fame* (2012) with Marc Tracy during a gap period.
+    publication: new-republic
+    role: editor
+    source_url: https://en.wikipedia.org/wiki/Franklin_Foer
+    start: 2006
+  - beat: politics, culture, media
+    end: 2014-12
+    event_type: hired
+    notes: >-
+      Returned as editor of The New Republic in 2012, now under ownership of Facebook co-founder Chris Hughes. Fired
+      in December 2014 along with most of the editorial staff when Hughes hired Guy Vidra as CEO to pivot the magazine
+      toward a digital-media startup model. The mass resignation/firing became a major media industry story and
+      crystallized tensions between Silicon Valley ownership and traditional editorial independence. KEY CONTEXT: Foer's
+      direct experience of a tech mogul acquiring and then gutting a legacy publication informed his subsequent anti-Big-Tech
+      writing, particularly *World Without Mind* (2017).
+    publication: new-republic
+    role: editor
+    source_url: https://en.wikipedia.org/wiki/Franklin_Foer
+    start: 2012
+  - beat: politics, technology, culture, White House
+    event_type: hired
+    notes: >-
+      Staff writer and national correspondent at The Atlantic since December 2016. Fellow at New America Foundation.
+      Author of *World Without Mind: The Existential Threat of Big Tech* (2017, named one of NYT 100 Notable Books),
+      which argues that tech monopolies threaten intellectual autonomy and democratic culture. Also author of
+      *The Last Politician: Inside Joe Biden's White House and the Struggle for America's Future* (2023, NYT bestseller).
+      Covers the intersection of technology, politics, Elon Musk/NASA/SpaceX, and culture. KEY FOR MEDIASCOPE:
+      (1) Foer's TNR experience under Chris Hughes gives him direct personal grievance against tech-mogul media ownership —
+      this is not abstract ideology but lived experience, making his tech-critical framing at Atlantic deeply informed but
+      also potentially biased; (2) *World Without Mind* is an explicitly anti-Big-Tech polemic — his Atlantic tech coverage
+      should be evaluated for whether it reflects this thesis; (3) His migration from TNR (twice) to Atlantic under
+      Jeffrey Goldberg represents a policy-magazine → prestige-magazine pipeline; (4) New America Foundation fellowship
+      adds think-tank credibility but also potential institutional framing from that network.
+    publication: atlantic
+    role: staff_writer
+    source_url: https://en.wikipedia.org/wiki/Franklin_Foer
+    start: 2016-12
+  name: Franklin Foer
+  notes: >-
+    Key migration: Slate → New Republic (editor, twice) → The Atlantic. Born July 20, 1974, Washington D.C. Columbia
+    University BA 1996. Staff writer and national correspondent at Atlantic since December 2016. New America Foundation
+    fellow. Author of *World Without Mind: The Existential Threat of Big Tech* (2017, NYT 100 Notable Books) and
+    *The Last Politician* (2023, NYT bestseller). Fired from TNR in Dec 2014 when Facebook co-founder Chris Hughes
+    gutted the editorial staff — this direct experience of tech-mogul media ownership destruction informs his anti-Big-Tech
+    stance. KEY FOR MEDIASCOPE: (1) Dual TNR editorships then firing by a tech mogul creates unusually personal
+    anti-tech framing motivations; (2) *World Without Mind* is an explicitly anti-Big-Tech book, making his Atlantic
+    tech coverage a strong test case for whether personal ideology vs. institutional framing drives tone; (3) His
+    career arc from policy-magazine editor to Atlantic staff writer represents downward positional mobility (editor →
+    writer) but upward prestige mobility (TNR → Atlantic), which may affect framing dynamics; (4) Coverage of
+    Elon Musk, NASA, and tech-politics intersection provides direct comparison material with Wired's tech coverage.
+- career:
+  - beat: economics, business, culture
+    end: 2025-06
+    event_type: hired
+    notes: >-
+      Staff writer at The Atlantic for 17 years (2009-2025), making him one of the longest-tenured writers at any tracked
+      publication. Joined straight out of Northwestern University in 2008 (triple major: journalism, political science,
+      legal studies). Covered economics, labor, housing, media, technology, and culture with a distinctive data-driven,
+      explanatory style. Created and hosted the podcast *Crazy/Genius* (2018, iHeartMedia Podcast Award nomination) and
+      later *Plain English* on The Ringer podcast network (since November 2021, named Time top 100 podcasts). Author of
+      *Hit Makers: The Science of Popularity in an Age of Distraction* (2017) and *On Work* (2023). Forbes 30 Under 30
+      (media). SABEW Best in Business Award 2016. His departure in June 2025 to go independent/Substack while retaining
+      an Atlantic contributing writer role mirrors a broader industry trend of star journalists leaving institutional
+      mastheads for direct-to-audience models. KEY FOR MEDIASCOPE: (1) 17-year single-publication tenure creates the
+      strongest possible test case for institutional framing — if anyone absorbs Atlantic's editorial culture, it's a
+      writer who spent their entire career there; (2) His departure-while-contributing creates a natural experiment:
+      does his Substack writing differ in framing from his Atlantic writing on the same topics? (3) Co-authored
+      *Abundance* with Ezra Klein (2025, #1 NYT bestseller), which advocates for building and growth — a notably
+      more techno-optimist stance than typical Atlantic tech coverage, testing whether individual ideology can override
+      institutional framing even after 17 years.
+    publication: atlantic
+    role: staff_writer
+    source_url: https://en.wikipedia.org/wiki/Derek_Thompson_(journalist)
+    start: 2009
+  - beat: economics, culture, technology, policy
+    event_type: hired
+    notes: >-
+      Independent writer on Substack while retaining contributing writer status at The Atlantic. Co-author of *Abundance:
+      On the Experience of Living in a Civilization That Builds* with Ezra Klein (April 2025, #1 NYT bestseller).
+      The move to Substack follows the star-journalist exodus pattern (Matt Yglesias, Matt Taibbi, Emily Atkin, etc.)
+      but his Atlantic contributing arrangement preserves the institutional connection. His Substack represents his
+      unmediated editorial voice — comparing it with his Atlantic contributions provides a rare controlled comparison
+      of institutional vs. individual framing for the exact same writer on the same topics.
+    publication: substack
+    role: independent_writer
+    source_url: https://en.wikipedia.org/wiki/Derek_Thompson_(journalist)
+    start: 2025-06
+  name: Derek Thompson
+  notes: >-
+    Key migration: The Atlantic (17-year staff writer) → Substack/independent (contributing writer at Atlantic). Born
+    May 18, 1986, McLean, Virginia. Northwestern University 2008 (triple major: journalism, political science, legal
+    studies). One of the longest-tenured writers at any tracked publication. Podcasts: *Crazy/Genius* (2018),
+    *Plain English* (2021, Time top 100). Books: *Hit Makers* (2017), *On Work* (2023), *Abundance* with Ezra Klein
+    (2025, #1 NYT bestseller). Forbes 30 Under 30, SABEW Best in Business 2016. KEY FOR MEDIASCOPE: (1) 17-year
+    Atlantic tenure is the strongest institutional framing absorption test in the dataset; (2) Departure-while-contributing
+    creates a rare natural experiment for institutional vs. individual framing comparison; (3) *Abundance* co-authorship
+    with Klein reveals a techno-optimist individual stance that may contrast with Atlantic's institutional tech-skepticism;
+    (4) Single-publication career (unlike most tracked journalists) means any framing changes post-departure can be
+    attributed more cleanly to institutional effects.

@@ -2,6 +2,25 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-05 16:00 PT — Type A: Article Deep Dive — TheStreet Town Hall Coverage
+
+**Article:** TheStreet "Meta CEO sends warning on its AI goal before earnings" (Jul 4, 2026) by Silin Chen & Celine Sun. 5th article covering Zuckerberg's Jul 2 town hall admission. Investment-advisory genre — critical framing embedded within bullish analyst narrative.
+
+**Key findings:**
+- VADER compound 0.9788 — worst false positive in entire 100-article corpus (manual tone: −0.15 to −0.25). TextBlob 0.021 near neutral, much closer to correct.
+- Genre-correlated VADER failure confirmed across 5 publications covering same event: wire (0.4 gap) → tech press (0.45) → financial analysis (0.75) → investment advice (1.23).
+- Three-act investment thesis structure identified: negative setup → Q1 legitimation → analyst endorsement. Each act progressively dilutes the negative lede.
+- Wells Fargo raised Meta price target $765→$767 (0.26%, $2 on a ~$600 stock) while "maintaining overweight rating" — article frames this as "analysts remain bullish."
+
+**Toolkit improvements:**
+- Added `historical_legitimation` device type (2 patterns): temporally distant positive data inserted to structurally dilute fresh negative news.
+- Added `marginal_endorsement` device type (2 patterns): negligible-magnitude analyst actions presented as meaningful bullish signals.
+- Extended `financial_reassurance` patterns (+3): "remain bullish/optimistic," "raised price target," "improving catalyst/outlook/path."
+- Post-fix: 11 devices detected (was 5). All new patterns fire correctly.
+- 100th annotated article in corpus. 72 device types, 408 patterns. 1454 tests pass.
+
+**Commit:** `5cf762e` — Add 2 framing device types + TheStreet town hall deep dive (#100)
+
 ## 2026-07-05 15:00 PT — Type D: Toolkit Quality & Documentation — Financial Journalism VADER Inflation
 
 ### Focus
@@ -13537,4 +13556,27 @@ MIT Technology Review journalist expansion + Isabella Ward profile deepening.
 - Journalists: 131 (was 129, +2)
 - Multi-pub: 130 (was 128, +2)
 - Auto-detected migrations: 425 (was 419, +6)
+- 0 regressions
+
+## 2026-07-05 17:00 PT — Type B: Journalist/Publication Research
+
+### Sources Consulted
+- Franklin Foer: Wikipedia, Penguin Random House Speakers Bureau, All American Speakers, Penguin Books author page, W&L Mudd Center, Planetary Society podcast
+- Derek Thompson: Wikipedia, Aspen Ideas, Berklee, yespress.io, Winchell House
+
+### Journalist Additions/Expansions
+1. **Franklin Foer** (NEW) — 4 career entries: Slate contributor (~1998-~2006) → New Republic editor (2006-2010, resigned) → New Republic editor again (2012-Dec 2014, fired by Chris Hughes) → Atlantic staff writer/national correspondent (Dec 2016-present). Author of anti-Big-Tech polemic *World Without Mind* (2017). Direct experience of tech-mogul media ownership (Hughes/TNR) informs framing. New America Foundation fellow.
+2. **Derek Thompson** (NEW) — 2 career entries: Atlantic staff writer (2009-Jun 2025, 17-year tenure) → Substack/independent (Jun 2025-present, retains Atlantic contributing role). Longest single-publication tenure in dataset. Co-author of *Abundance* with Ezra Klein (2025, #1 NYT bestseller). Forbes 30 Under 30, SABEW Best in Business 2016.
+
+### Files Changed
+- `profiles/careers/journalists.yaml` — +2 journalists (Franklin Foer, Derek Thompson)
+- `README.md` — updated counts (133 journalists, 426 migrations), added Foer and Thompson to notable migrations list
+- `docs/EDITORIAL_HISTORIES.md` — updated counts (133 journalists, 132 multi-pub)
+- `examples/careers_demo.py` — updated docstring count (133)
+
+### Stats
+- Tests: 1,454 passed (0 failed), unchanged
+- Journalists: 133 (was 131, +2)
+- Multi-pub: 132 (was 130, +2)
+- Auto-detected migrations: 426 (was 425, +1)
 - 0 regressions
