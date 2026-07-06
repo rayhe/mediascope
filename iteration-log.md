@@ -2,6 +2,72 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-06 00:00 PT — Type D: Toolkit Quality & Documentation — Corpus Statistics §17 + Stale Count Fix
+
+**Focus:** The 100-article annotated corpus — MediaScope's empirical foundation — had no dedicated documentation. Every framing device, correction path, and analytical method was discovered from these articles, but the corpus itself wasn't characterized as a research resource. Additionally, a stale "69-type taxonomy" reference in METHODOLOGY.md §13.2 survived because the structural consistency test used a manually maintained list that missed it.
+
+### What Changed
+
+**1. METHODOLOGY.md §17: Annotated Corpus Statistics (NEW, +182 lines)**
+
+Comprehensive documentation of the 100-article corpus covering:
+
+- **Publication distribution (§17.2):** 27 distinct publications across 5 editorial modes:
+  - Tracked (55): MIT TR (20), Wired (17), NYT (8), Guardian (5), Atlantic (5)
+  - Wire service (7): Reuters
+  - Tech editorial (18): Gizmodo (7), Memeburn (3), Engadget (2), The Register (2), + 6 others
+  - Financial/investment (8): Barron's, Barchart, MarketWatch, Motley Fool, PYMNTS, Stocktwits (2), TheStreet
+  - General interest (12): Fast Company (3), + 8 others
+
+- **Temporal distribution (§17.3):** Aug 2025 – Jul 2026. 80% from June–July 2026 (initial sprint). Earlier articles retroactively collected for temporal generalization testing.
+
+- **Genre distribution (§17.4):** 6 editorial genres with VADER behavior per genre:
+  - Investigative long-form: ~35 articles, VADER often wrong direction → Paths A, B, E
+  - Tech editorial: ~20 articles, moderate inflation → Paths D, H, I
+  - Wire service: 7 articles, generally accurate → no correction needed
+  - Academic/specialist: ~18 articles, variable → Paths A, E, J
+  - Financial/investment: 8 articles, severe inflation (0.3–0.5) → future Path K
+  - Opinion/editorial: ~12 articles, polarity inversion → Paths D, F, H
+
+- **Correction path coverage (§17.5):** 20 articles with documented path annotations. Path A dominates at 8 articles (most common VADER failure: positive on adversarial prose). Path G operates at preprocessing level, invisible in analysis annotations.
+
+- **Same-event comparison coverage (§17.6):** 9 clusters, 3 Tier 1 (with dedicated cross-analysis files), 6 Tier 2 (same-event article clusters). Widest tone spread: 1.23 points (Zuckerberg town hall, 5 outlets).
+
+- **Framing device discovery provenance (§17.7):** Discovery timeline by period. Most productive single article: Wired "Meta Is Charging a Subscription" (Jul 2, 2026) — contributed 4 new device types.
+
+- **Corpus limitations (§17.9):** Honest documentation of 5 limitations — publication skew (MIT TR + Wired = 37%), temporal skew (80% Jun–Jul 2026), Meta concentration, genre gaps, selection bias.
+
+**2. METHODOLOGY.md §13.2: Fixed stale '69-type taxonomy' → '72-type taxonomy'**
+The cross-publication comparison dimension table referenced the framing device taxonomy as "69-type" — a count that was current when the table was first written but became stale as new device types were added (69→72). The structural consistency test's stale count guard didn't catch it because its manually maintained list `[33, 43, 53, 56, 63, 65, 67, 68]` didn't include 69.
+
+**3. test_structural_consistency.py: Improved stale device count guard**
+- **Before:** Manual list of 8 known historic counts. Pattern: `\b{n}[- ](?:type|device|framing)`. This missed 69 and would miss any future stale count not manually added to the list.
+- **After:** Dynamic range `range(30, current)` scanning any plausible stale count. Patterns narrowed to unambiguously total-count references only:
+  - `{n}-type\s+taxonomy` (catches "69-type taxonomy")
+  - `{n}\s+framing\s+device\s+type` (catches "56 framing device types")
+  - `total[^.]*\b{n}\s+device` (catches "total of 56 device types")
+- The narrower patterns avoid false positives on legitimate subset counts like "26 adversarial types" while catching any stale total reference without manual maintenance.
+
+**4. EDITORIAL_HISTORIES.md: Updated stats**
+- Publication count: "250+ notable feeder outlets" → "270+ notable feeder outlets" (actual: 273 unique publication slugs in YAML)
+- Added auto-detected migration count: "430 migrations" with methodology note (gap analysis to distinguish job changes from concurrent freelance)
+
+**5. ARCHITECTURE.md: Corpus size cross-reference**
+- sample_output directory description now references "100 annotated real-article analyses" with §17 cross-reference
+
+### Sources
+- All statistics computed directly from the toolkit's own data (YAML profiles, analysis files, code)
+- Card & Krueger (1994) DiD methodology — referenced in EDITORIAL_HISTORIES.md update
+- CareerTracker.find_migrations() = 430 (verified via Python API, distinct from raw consecutive-event count of 480 due to gap analysis logic)
+
+### Stats
+- Tests: 1,454 (all passing)
+- METHODOLOGY.md: 1,189 → 1,371 lines (+182)
+- Structural consistency tests collected: 94 (93 def test_ + 1 parametrize)
+- Commit: `afdd4c7`
+
+---
+
 ## 2026-07-05 23:00 PT — Type C: Ownership & Funding Deep Dive — MIT TR Schwarzman Externals + AI Hardware Program + MBZUAI + Sovereign Dimension
 
 **Focus:** MIT Technology Review profile had 3 missing MIT Schwarzman College of Computing external collaborations (MBZUAI, HPI, AI Hardware Program), no coverage of EmTech Future 2026 (upcoming Sept 29-Oct 1), and incomplete ILP member tracking. Last MIT TR Type C iteration was Jul 4 09:00 (~38 hours ago). This iteration expands the conflict surface into a NEW seventh analytical dimension: sovereign/international state-funded research partnerships.
