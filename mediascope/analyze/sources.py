@@ -35,8 +35,10 @@ NEUTRAL_VERBS: set[str] = {
     "muses", "quips", "reflects", "ponders",  # present-tense reflective
     "dubs", "coins",  # present-tense labeling
     "pleads", "implores",  # present-tense urgent appeal
+    "quotes", "cites",  # present-tense third-party attribution
     "thinks", "believes", "considers",  # cognitive/opinion attribution
     "cautions",  # hedged warning attribution
+    "quoted", "citing", "cited",  # third-party attribution verbs
 }
 
 LOADED_VERBS: set[str] = {
@@ -154,6 +156,9 @@ _NAME_STOP_NAMES: set[str] = {
     "Meta Glasses", "Meta Adventurer", "Meta Fury",
     "Meta Starfire", "Meta Quest", "Meta Horizon",
     "Ray Ban", "Smart Glasses", "Gentle Monster",
+    # AI model / product names that look like "First Last"
+    "Muse Spark", "Llama Scout", "Llama Maverick",
+    "Google Gemini", "Apple Intelligence",
     # Book/media titles that look like "First Last"
     "Careless People", "Brave New", "Dark Web",
     "Social Dilemma", "Social Network", "Deep State",
@@ -712,6 +717,13 @@ def extract_sources(text: str) -> list[SourceMention]:
         # MIT Tech Review AI agents article (Jul 4, 2026 iteration).
         "Operator", "Copilot", "Gemini", "Claude", "Cursor",
         "Alexa", "Siri", "Watson", "Cortana",
+        # AI model names and publication fragments that match
+        # single-word source patterns — discovered in LiveMint Meta/Wang
+        # analysis (Jul 6, 2026 iteration).
+        "Muse", "Spark", "Llama", "Maverick", "Scout",
+        "Journal", "Tribune", "Herald", "Gazette", "Times",
+        "Chronicle", "Observer", "Sentinel", "Register",
+        "Standard", "Express", "Monitor",
     }
     single_name_verb = re.compile(
         rf"\b([A-Z][a-z]{{2,}})\s+({verb_alternation})\b",
@@ -1343,6 +1355,11 @@ def extract_sources(text: str) -> list[SourceMention]:
         "business insider", "daily beast", "daily mail",
         "tech review", "technology review",
         "morning post", "evening standard",
+        # Broadcast and wire services — often appear as
+        # intermediary attribution in multi-source articles
+        # (e.g. "CNBC quoted Rob May").
+        "cnbc", "bbc", "cnn", "abc", "nbc", "cbs", "fox",
+        "associated press", "ap",
     }
 
     for pat in org_source_patterns:

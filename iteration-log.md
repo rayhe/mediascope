@@ -2,6 +2,37 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-06 09:00 PT — Type A: Article Deep Dive — LiveMint Meta/Wang/Muse Spark/Claude
+
+**Article:** "Mark Zuckerberg paid $14billion for Alexandr Wang's AI; Meta's own engineers still reach for Claude" (LiveMint, ~June 2026)
+**Selection rationale:** All 5 tracked publication domains blocked; LiveMint selected for substantive multi-source journalism about Meta AI strategy (inputs from Bloomberg Tech, FT, WSJ, CNBC).
+
+### Fixes Applied
+
+**Source extraction (sources.py):**
+- Added "Muse Spark" + related AI model names to `_NAME_STOP_NAMES` — eliminated false positive where product name was extracted as a source
+- Added "Muse", "Spark", "Llama", "Maverick", "Scout" + 10 publication-fragment words (Journal, Tribune, etc.) to `_SINGLE_NAME_ORG_STOPS` — eliminated single-word false positives
+- Added "quoted", "quotes", "citing", "cited", "cites" to attribution verb sets — enabled detection of third-party quoted sources (fixed Rob May detection via "CNBC quoted Rob May")
+- Added CNBC, BBC, CNN, ABC, NBC, CBS, Fox, AP to `_KNOWN_ORGS` — broadcast/wire services now extractable as organizational sources
+
+**Topic classification (topics.py):**
+- Added 17 keywords to `ai_development`: frontier model(s), frontier AI, open-source model(s), open-weight model(s), proprietary model(s), AI race/arms race/competition/competitiveness/rivalry, AI strategy/pivot/bet(s), language model(s)
+- Added 5 keywords to `layoffs`: staff reductions, job reductions, workforce cuts, staff cuts, slashed jobs
+
+### Impact
+- ai_development confidence: 0.1471 → 0.3123 (+112%), now ranks #3 instead of below threshold
+- 2 source false positives eliminated (Muse Spark/Muse, Journal)
+- 1 source true positive added (Rob May)
+- Tests: 1,454 passed (0 failed)
+- Annotated articles: 103 → 105
+
+### Documented Gaps
+- "Yu" source not detected (2-char surname below Pattern 5b minimum)
+- Wang affiliation overextraction ("Scale AI engineers into Meta")
+- CNBC not extracted as org source (all-caps name doesn't match `[A-Z][a-z]+` regex)
+- Missing framing devices: competitive_comparison, dismissive_characterization, pattern_of_failure
+- VADER sentiment 0.6353 positive for a skeptical article (known §16 issue)
+
 ## 2026-07-06 07:00 PT — Type D: Toolkit Quality & Documentation — Genre-Aware Analysis Framework (§18)
 
 **Focus:** Article genre is the strongest predictor of toolkit accuracy, but genre-specific knowledge was scattered across individual article annotations, the financial journalism section (§16), corpus statistics (§17), and various test file comments. This iteration consolidates all genre-aware analysis guidance into a single systematic reference (METHODOLOGY.md §18) and adds a corresponding agent workflow (AGENT_GUIDE.md).

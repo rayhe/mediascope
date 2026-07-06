@@ -1,0 +1,81 @@
+LiveMint (Mint)
+Published: June 2026 (Bloomberg Tech conference context: June 4, 2026)
+Author: Staff (with inputs from Bloomberg Tech, Financial Times, Wall Street Journal, CNBC)
+Headline: Mark Zuckerberg paid $14billion for Alexandr Wang's AI; Meta's own engineers still reach for Claude
+URL: https://www.livemint.com/companies/news/mark-zuckerberg-paid-14billion-for-alexandr-wangs-ai-metas-own-engineers-still-reach-for-claude-11781523274377.html
+
+A year after Mark Zuckerberg spent more than $14 billion to bring Alexandr Wang and a team of Scale AI engineers into Meta, the social media giant has its first proprietary frontier AI model. What it does not yet have is proof that Muse Spark can close the gap on Claude, Gemini and ChatGPT, or persuade investors that the company's aggressive AI pivot will amount to anything more than another expensive detour.
+
+Why Meta abandoned open source for Muse Spark
+
+For years, Meta's identity in artificial intelligence was built on Llama, its family of open-weight models that briefly positioned the company as the industry's most accessible AI developer. That reputation took a significant hit in April of last year, when the release of Llama 4 failed to generate meaningful excitement among developers, prompting Zuckerberg to fundamentally reconsider the company's direction.
+
+Two months later, Zuckerberg announced a $14.3 billion investment to acquire roughly half of Scale AI and, more critically, to bring Wang on board as Meta's Chief AI Officer, along with his most senior engineers.
+
+Wang's first major delivery was Muse Spark, released in April of this year, representing Meta's first step away from open source into proprietary, frontier-model territory. Wang has since offered a more careful framing of Meta's open-source commitments, saying the company will continue releasing models it judges "fit and safe" to publish, while keeping frontier work locked down. Asked whether Llama remains the brand for that effort, Wang sidestepped the question: "We have exciting debates about branding internally and nothing to share right now."
+
+Why Muse Spark stayed proprietary: the biosafety concern
+
+The decision to keep Muse Spark proprietary was not purely commercial. Wang acknowledged on Bloomberg Tech that internal testing flagged safety concerns that made an open release untenable.
+
+"It actually triggered some high-risk areas in the course of early training, particularly around bio risk, but also a number of risks were elevated," Wang told Bloomberg. He added, "This is something I think the entire industry has seen as models improved dramatically over the past year."
+
+As part of forming Meta Superintelligence Labs, Wang updated what he describes as the company's advanced AI scaling framework, an internal document outlining how Meta evaluates and mitigates model risks. Muse Spark's deployment within Meta's own products, he has argued, allows the company to apply safety guardrails that would not exist once model weights are made public.
+
+How Muse Spark was built and where it sits in Meta's ecosystem
+
+Rather than targeting third-party developers, Muse Spark was designed to integrate directly into Meta's core applications, including Facebook, Instagram and WhatsApp, as well as AI-powered hardware such as the Ray-Ban Meta glasses, according to Thomas Randall, an analyst at the Info-Tech Research Group. It also underpins the standalone Meta AI app and website.
+
+"There'll be a lot of these frontier model providers that will fundamentally change in lots of different ways, and Meta needs to have a consistent, reliable proprietary model that they themselves own," Randall said. He added that Meta would be "lost" if Zuckerberg had not opened his wallet for Wang and other high-profile AI hires, describing the move as a "strategic rebuild" for the company.
+
+Randall acknowledged that Meta has not taken the "most optimised route," but said he can now see "a vision for what they're trying to achieve and what Wang has been trying to achieve."
+
+Why Muse Spark still trails Claude and Gemini
+
+For all of that repositioning, Muse Spark has not yet landed as a credible frontier challenger. The Financial Times reported that Meta employees asked to test the model for software development tasks have continued to prefer Anthropic's Claude.
+
+Wang has acknowledged that the model trails rivals in coding, even as it has drawn praise for visual understanding. Some insiders, according to the FT, have compared parts of the system to DeepSeek's latest model, while others note that Muse Spark leans on Llama 4 code and datasets, despite Wang previously describing it as built "from scratch."
+
+Access has also been narrow. The model lives primarily inside Meta's own applications, with a private API rollout described by the FT as limited. A Meta spokesperson said the company is "already testing with some early partners, and looks forward to releasing it this month."
+
+The developer trust problem Meta has not solved
+
+Beyond safety and performance, Meta faces a more fundamental challenge: rebuilding credibility with the developer community it alienated through the Llama 4 disappointment.
+
+"I think the AI community largely ignores Meta at this point," CNBC quoted Rob May, chief executive of the startup Neurometric, which works in the field of token engineering.
+
+May said it is difficult to gauge how much progress Wang has made leading Meta Superintelligence Labs, given that the company has only released one AI model so far, which he characterised as a "yawn" among the AI community because the technology is not widely accessible. He noted that he used to be in regular contact with Meta over Llama-related matters but can now no longer "get them to return messages."
+
+Andrew Moore, chief executive of enterprise startup Lovelace and former Google Cloud AI chief, argued that Meta's focus on computational efficiency could yet prove a meaningful differentiator.
+
+"If they do proprietary, computationally efficient models, that will be so different from what's happening in this death match between the big guys," CNBC quoted Moore. "They might really benefit."
+
+Moore added that Meta has to demonstrate an advantage somewhere, "whether it be on cost, latency or other technical nuances that matter to developers."
+
+Wall Street is unconvinced, and the advertising dependence remains
+
+Despite reporting 33 per cent revenue growth in the first quarter of 2025, the fastest rate of expansion since 2021, Meta's stock has fallen 18 per cent over the past 12 months, making it the worst performer among the megacap technology group alongside Microsoft.
+
+The underlying numbers illustrate the challenge. The Wall Street Journal reported that 97.6 per cent of Meta's 2025 revenue came from advertising, and that the company's planned AI capital expenditure this year is steeper relative to its size than that of Google, Microsoft or Amazon.
+
+Zuckerberg is now testing subscription tiers of $4 per month on Instagram, Facebook and WhatsApp, alongside a $7.99 Meta AI chatbot subscription in select markets, in an effort to build revenue outside advertising.
+
+Analysts at Truist Securities, quoted by WSJ, have pegged the subscription opportunity at as much as $20 billion annually by 2030, while Deutsche Bank has estimated $15.6 billion for next year alone. Those are ambitious forecasts for a company that did not clear $5 billion in non-advertising revenue last year.
+
+Ralph Schackart, an analyst at William Blair who recommends buying the stock, said he wants to see "tangible evidence of a growing list of new, AI-first products created by Muse Spark, even if monetisation lags." He said that is "what investors are looking for."
+
+"Meta needs to provide more proof points of both adoption and commercialisation," Schackart said.
+
+The pressure on Wang and the question of leadership
+
+Wang has described Muse Spark as an "appetiser" for what is to come, promising more powerful and "larger models" in the pipeline. But the AI industry operates on a relentless cadence of launches and updates, and Meta is not yet matching the pace set by OpenAI, Anthropic and Google.
+
+Internally, there are signs of strain. Meta cut approximately 8,000 jobs in May, with reductions spanning departments including teams working in trust and safety roles, raising concerns among people familiar with the matter about the risks that can arise in AI development.
+
+There is also reported tension at the top of the AI organisation, with pressure on both Wang and former GitHub chief executive Nat Friedman, who joined last summer, to drive meaningful revenue growth from Muse Spark.
+
+Meta's long-serving tech chief Andrew Bosworth, a 20-year company veteran and close confidant of Zuckerberg, is someone the chief executive could turn to for a larger role in AI if the newcomers are perceived as underdelivering, according to sources with knowledge of the matter. Wang dismissed reported internal conflicts when speaking on the Core Memory podcast last month, saying: "One of the things that is very important to me is safety for these models."
+
+Ultimately, analysts and observers agree that the burden falls on Zuckerberg himself. Yu noted that the chief executive's metaverse and virtual reality ambitions have generated more than $80 billion in total losses since late 2020, a track record that makes the AI pitch a harder sell to investors.
+
+(With inputs from Bloomberg Tech, Financial Times, Wall Street Journal)
