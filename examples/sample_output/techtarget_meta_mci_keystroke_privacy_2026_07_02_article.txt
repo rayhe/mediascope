@@ -1,0 +1,87 @@
+SOURCE: TechTarget (SearchCIO)
+TITLE: Meta's AI training with keystrokes: Progress or privacy issue
+DATE: 2026-07-02
+AUTHORS: Julie Hanson
+SECTION: CIO / Feature
+URL: https://www.techtarget.com/searchcio/feature/Metas-AI-training-with-keystrokes-Progress-or-privacy-issue
+PUBLICATION TYPE: Enterprise IT trade publication
+WORD COUNT: ~1,050
+
+---
+
+Meta is looking within to find new training data for its AI models. Its Model Capability Initiative (MCI), announced in April 2026, captures mouse movements, keystrokes and occasionally screenshots to train AI models on how humans navigate around the computer while performing daily tasks.
+
+Google, LinkedIn and Wikipedia are among the sites used to collect data on employee actions, according to internal messages viewed and reported by CNBC. There is no ability to opt out of tracking, which will take place on company-issued devices for employees based in the U.S. Meta said the collected data will not be used for performance evaluations or any purpose other than training, and that safeguards are in place to protect any sensitive data captured. The tools show screen contents and will not read files or attachments, the report said.
+
+The announcement is after a layoff affecting roughly 10% of Meta's global workforce, fueling speculation among some employees that their data would be used to train AI agents that would eventually replace them.
+
+Meta has been working to integrate AI across all company operations, with the goal of developing agents that can autonomously handle workflows while their human counterparts review the output. CEO Mark Zuckerberg has said he expects that AI-powered systems will eventually do much of the work in the technology industry.
+
+In June 2026, Meta paused the initiative after the tracking tool obtained sensitive information, which was then made accessible to the entire company. Leaked information included private employee conversations, transcriptions, and performance data, according to Business Insider. An investigation into how the data was exposed is ongoing.
+
+## The privacy challenge
+
+The challenge of training with synthetic data rather than human data is that synthetic data lacks the unpredictability of human responses to the unexpected, such as when a window moves or is resized. In that sense, the human data will enhance the model's training in areas such as interface navigation and error correction, as well as how tools flow together, said Kayne McGladrey, a senior member of IEEE.
+
+The level of surveillance required to collect the data, while legal in the U.S, wouldn't be allowed in the EU or Germany.
+
+"This is something that can be done because we don't have a federal privacy act in the United States, whereas in other countries, this would be completely unacceptable as well as considered to be culturally unacceptable," McGladrey said.
+
+Some states, such as California, Connecticut and Delaware, require a written notice for employee electronic monitoring. In Europe, under GDPR, consent is rarely considered to be freely given.
+
+If this type of surveillance becomes normalized, there will be a real erosion of privacy on employees' work devices, McGladrey said.
+
+From a business and financial perspective, replacing workers with AI could be seen to shrink healthcare and benefit costs associated with the workforce. If Meta does not face substantial workforce disruption or litigation associated with this, other large technology companies may follow suit, McGladrey said.
+
+## The innovation opportunity
+
+Collecting keystroke data can make models dramatically more responsive and personalized by providing insight into how people interact with technology in real time. By uncovering patterns in typing speed, hesitation and correction behavior, AI models will better understand user intent, improve predictive text and autocomplete features and even strengthen security through behavioral biometrics, said Paul Stokes, CEO of Prevalent AI. However, the value of any data source must be weighed against the responsibility that comes with collecting it, he said.
+
+The companies that will win in the long term are those that treat responsible data practices as a competitive advantage, not a constraint on innovation, Stokes said. Reaching that balance would include embedding privacy by design, minimizing data collection to what's truly necessary, anonymizing wherever possible and giving users genuine transparency and control over what's being collected and why, he said.
+
+He advises executives to consider the following:
+
+- Governance. Create clear, enforceable policies around what data is collected, how it's stored, who has access and when it's deleted.
+- Transparency. Educate the team on the rules and explain to users in plain language what is happening with their data.
+- Vendor scrutiny. Understand the data practices on any third-party AI tools or platforms that the organization uses.
+- Future. Plan for regulations to get stricter.
+
+"The executives who invest in robust data governance now are going to be far better positioned than those scrambling to retrofit compliance after a new law passes or, worse, after an incident," Stokes said.
+
+## Implications for IT executives
+
+Executives must balance the need for innovation with the responsibilities of protecting employee data, privacy and morale.
+
+For Meta, the value of keystroke data would be to help train LLMs to navigate the computer more effectively by teaching them how humans interact with various types of software. As such, it is less of a privacy issue, but it is natural for people to have concerns if they are not told what the data is being used for, said Taivo Pungas, chief technology officer at Pactum. He added that people worry AI will replace them, but they often overestimate what AI can do and underestimate the parts of their jobs that occur away from the computer.
+
+Executives may be able to make employees more comfortable with the program by considering the following options, he said.
+
+- Informed consent with an opt-in program would be ideal. One downside is the potential for bias from who decides to opt in.
+- If the program is mandatory, clearly communicating the reason for collecting the data and what will be done with it are the most critical factors.
+- Have security in place.
+- Consider whether the program could be adjusted to make it less intrusive.
+
+"Once trust is broken, it's incredibly difficult to build back, so companies need to weigh the risks versus rewards when it comes to tracking employee behavior like this. While companies have the ability to track and use this data, the bigger question becomes what they are hoping to achieve," said Adam Field, chief AI and product officer at Tungsten Automation.
+
+At a time when employees may fear being replaced by AI, management's intent needs to be communicated transparently, or the reputational and morale damage will far outweigh any model gains. To avoid skepticism, companies need to employ maximum transparency of what's being tracked, why, and how it benefits the employee, he said.
+
+"An alternative might be tapping into an organization's 'dark data' or unstructured data already scattered throughout the company's workflows and making it usable and compliant. That path mitigates negative attention, reduces compliance risk and keeps employee morale and trust intact," Field said.
+
+## Actionable steps for IT leaders
+
+When training AI models with data, there are a few steps IT leaders must consider, including the following:
+
+- Evaluate current data practices. Audit the organization's current data collection and use policies to ensure they comply with the latest privacy regulations and local laws.
+- Implement transparent policies. Ensure policies are clearly written and readily available to employees. They should include what data will be collected, why it is being collected and how it will be used.
+- Strengthen data governance. Outline who will have access to the data, how it will be used, how it will be stored and how it will be disposed of when no longer needed. Use data anonymization and encryption to minimize privacy risks.
+- Advocate for ethical AI. Collaborate with AI development teams to prioritize ethical data practices and push for the adoption of industry-wide standards for responsible AI training.
+- Monitor regulatory changes. Privacy laws and regulations are changing almost as quickly as technology itself. Review regulations often and adjust policies to remain in compliance.
+- Foster employee trust. Include employees in discussions involving privacy issues. Be clear about what monitoring is necessary, how it will benefit them and what protections are in place.
+
+## Executive takeaway
+
+AI technology has already produced business results beyond most expectations. But its advancement requires massive amounts of data to train the models. As developers scramble to meet this need, questions arise about personal privacy, consent, and responsible data-handling practices.
+
+How IT executives answer these questions will set the stage for the future implementation of AI technology. Using the data in a fair and ethical manner will foster trust. A few missteps could result in legal battles and public apprehension, hindering progress.
+
+IT leaders must prioritize creating transparent, ethical guidelines for data collection. Roadblocks will be removed when users are assured that their privacy is protected and understand how their data is being used and how they will benefit.

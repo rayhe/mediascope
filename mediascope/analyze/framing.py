@@ -5842,6 +5842,114 @@ _DEVICE_PATTERNS["expert_contradiction"] = _EXPERT_CONTRADICTION_PATTERNS
 
 
 # ---------------------------------------------------------------------------
+# Expert consensus authority: trade publications use panels of 3+
+# named, credentialed experts to build artificial consensus around a
+# single editorial thesis.  Each expert is attributed with a title and
+# company, and all converge on the same conclusion, creating an
+# illusion of independent validation.  Different from
+# anonymous_authority (unnamed sources) and expert_contradiction
+# (expert challenges company claim).  Here the experts *reinforce* the
+# publication's framing.
+#
+# Gap discovered in TechTarget MCI Keystroke article (Jul 2026):
+# Four named experts (IEEE member, Prevalent AI CEO, Pactum CTO,
+# Tungsten Automation CPO) all reinforce the thesis that employee
+# keystroke surveillance is a manageable governance challenge.  None
+# raises fundamental objections.  The toolkit detected zero framing
+# devices for this consensus-building structure.
+# ---------------------------------------------------------------------------
+_EXPERT_CONSENSUS_PATTERNS: list[re.Pattern] = [
+    # "said [Name], [title] at/of [Company]" — named expert attribution
+    re.compile(
+        r"""\bsaid\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3},\s*"""
+        r"""(?:a\s+)?(?:senior\s+|chief\s+|"""
+        r"""(?:vice\s+)?president|director|fellow|member|"""
+        r"""(?:co-?)?founder|partner|managing\s+director|"""
+        r"""(?:chief\s+)?(?:executive|technology|information|"""
+        r"""operating|AI|product|privacy|data|security|marketing)\s+"""
+        r"""officer|[A-Z]{2,5})\b""",
+        re.IGNORECASE,
+    ),
+    # "[Name], [title] at/of [Company]" preceding "said" or "wrote"
+    re.compile(
+        r"""\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3},\s*"""
+        r"""(?:a\s+)?(?:senior\s+|chief\s+|"""
+        r"""(?:vice\s+)?president|director|fellow|member|"""
+        r"""(?:co-?)?founder|partner|managing\s+director|"""
+        r"""(?:chief\s+)?(?:executive|technology|information|"""
+        r"""operating|AI|product|privacy|data|security|marketing)\s+"""
+        r"""officer|[A-Z]{2,5})"""
+        r"""\s+(?:at|of|for|with)\s+[A-Z]"""
+        r""".{0,60}?\b(?:said|wrote|told|added|noted|explained|argued)""",
+        re.IGNORECASE,
+    ),
+    # "said [Name], a senior member of [Organization]"
+    re.compile(
+        r"""\bsaid\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3},\s*"""
+        r"""a\s+(?:senior\s+)?member\s+of\s+""",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["expert_consensus_authority"] = _EXPERT_CONSENSUS_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Prescriptive solutionism: trade publications transform accountability
+# or controversy stories into management playbooks by inserting
+# prescriptive bullet lists, "actionable steps," or "key takeaways"
+# sections.  This framing device normalizes the underlying behavior
+# by implying it is a solvable governance problem rather than a
+# systemic or ethical issue.
+#
+# Gap discovered in TechTarget MCI Keystroke article (Jul 2026):
+# Two full sections of prescriptive bullet lists ("He advises
+# executives to consider the following" + "Actionable steps for IT
+# leaders") transform a data-exposure surveillance story into a
+# management checklist.  Zero toolkit detections.
+# ---------------------------------------------------------------------------
+_PRESCRIPTIVE_SOLUTIONISM_PATTERNS: list[re.Pattern] = [
+    # "actionable steps/tips/takeaways for [role]"
+    re.compile(
+        r"""\b(?:actionable|practical|concrete|key)\s+"""
+        r"""(?:steps?|tips?|takeaways?|measures?|recommendations?|"""
+        r"""strategies|guidance|advice)\s+"""
+        r"""(?:for|that)\s+"""
+        r"""(?:IT\s+)?(?:leaders?|executives?|CIOs?|CTOs?|managers?|"""
+        r"""teams?|organizations?|companies|businesses)""",
+        re.IGNORECASE,
+    ),
+    # "advises/recommends executives/leaders to consider"
+    re.compile(
+        r"""\b(?:advises?|recommends?|suggests?|urges?)\s+"""
+        r"""(?:IT\s+)?(?:executives?|leaders?|CIOs?|CTOs?|managers?|"""
+        r"""organizations?|companies)\s+"""
+        r"""(?:to\s+)?(?:consider|evaluate|implement|adopt|prioritize|"""
+        r"""audit|review|assess|strengthen|monitor|invest)""",
+        re.IGNORECASE,
+    ),
+    # "executives/leaders must/should/need to [prescriptive verb]"
+    re.compile(
+        r"""\b(?:IT\s+)?(?:executives?|leaders?|CIOs?|CTOs?|managers?)\s+"""
+        r"""(?:must|should|need to|ought to|are advised to|would be wise to)\s+"""
+        r"""(?:consider|evaluate|implement|adopt|prioritize|"""
+        r"""audit|review|assess|strengthen|monitor|invest|create|"""
+        r"""establish|ensure|balance|weigh|foster)""",
+        re.IGNORECASE,
+    ),
+    # "when [training/deploying/implementing] AI, there are [steps/things]"
+    re.compile(
+        r"""\b(?:when|before|while)\s+"""
+        r"""(?:training|deploying|implementing|adopting|using|rolling out)\s+"""
+        r"""(?:AI|artificial intelligence|machine learning|ML)\b"""
+        r""".{0,80}?"""
+        r"""\b(?:steps?|things?|factors?|considerations?|practices?)\b""",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["prescriptive_solutionism"] = _PRESCRIPTIVE_SOLUTIONISM_PATTERNS
+
+
+# ---------------------------------------------------------------------------
 # Loss-leader / razor-blade framing: editorial description of a
 # business model where hardware is sold at cost (or below) to capture
 # recurring subscription revenue.  This is a specific editorial lens
@@ -5996,15 +6104,15 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 67 pattern-matched device types plus 6 structural
-    post-pass types (73 total).
+    Scans for 69 pattern-matched device types plus 6 structural
+    post-pass types (75 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (66): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (69): absence_as_evidence, analogy_metaphor,
     anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_positioning,
@@ -6014,7 +6122,8 @@ def detect_framing_devices(
     denial_contradiction,
     editorial_aside, editorial_deflation, editorial_dramatization,
     emotional_appeal,
-    escalation_amplification, expert_contradiction,
+    escalation_amplification, expert_consensus_authority,
+    expert_contradiction,
     failure_precedent, false_balance,
     financial_reassurance,
     geopolitical_regulatory_pressure, guilt_by_association,
@@ -6027,6 +6136,7 @@ def detect_framing_devices(
     military_techno_optimism, outsourced_intensity,
     pathologizing_metaphor, policy_reversal, power_asymmetry,
     precedent_analogy, precedent_framing,
+    prescriptive_solutionism,
     pressure_language, refusal_amplification, regulatory_favoritism,
     regulatory_shadow, repeated_disruption, rhetorical_question,
     sarcastic_correction, scandal_comparison, scale_magnitude,
