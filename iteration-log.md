@@ -14521,3 +14521,67 @@ Research and add new journalist profiles for publications in the tracked set. Ta
 
 ### Commit
 `e344ba5` — pushed to `rayhe/mediascope` main
+
+---
+
+## 2026-07-06 13:00 PT — Type C: Ownership & Funding Deep Dive — Guardian: AI Content Marketplace Landscape, Cloudflare Pay Per Use, SPUR Comment Activity
+
+### Focus
+Guardian profile update targeting three fresh developments: (1) the emerging AI content marketplace intermediary layer, (2) Cloudflare's Pay Per Use evolution, and (3) SPUR telemetry standard public comment activity approaching the Jul 10 deadline.
+
+### Key Findings
+
+**1. AI Content Marketplace Landscape (NEW SECTION)**
+
+WSJ (Jul 2) and Digiday report a new intermediary layer forming between publishers and AI companies — structured MARKETPLACES handling rights-clearance, pricing, and payment at scale.
+
+- **Microsoft:** Live pilot with 8 publishers (Business Insider, Vox Media, USA Today, People, AP, Hearst Magazines, Condé Nast). Yahoo Scout as first external buyer (CPM revenue share via Microsoft's grounding API). >$10M invested. Tim Frank (Corporate VP): "We very much intend to scale this." VP Nikhil Kolar: premium content produces "marked improvement in customer success."
+- **Amazon:** Building own marketplace (previewed at publisher symposium Feb 2026). Has Titan/Nova models + Bedrock (hosts Claude) + Rufus. Potential enforcement via AWS contract language banning IP-infringing services.
+- **Factiva (Dow Jones/News Corp):** Already active — AI rights to 8,100+ news sources (25%+ of total). CEO Almar Latour: "The industry is working toward a new business model to value information in the era of gen AI."
+- **Tollbit:** Gatekeeper/toll model. Newsweek charges AI bots on "per-thousand-page-scrape" rate.
+
+**Guardian position:** ABSENT from all three major marketplaces. Strategy is bilateral deals (OpenAI, ProRata, Google) + collective standards (SPUR) — a FIFTH model vs marketplace intermediation. Condé Nast (Wired's parent) is in Microsoft's pilot AND has bilateral deals — distinct dual positioning. New testable hypothesis #18: does the Guardian editorially favor the monetization model it participates in?
+
+**2. Cloudflare Pay Per Use (Jul 1, 2026)**
+
+Cloudflare evolved Pay Per Crawl to Pay Per Use on "Content Independence Day":
+- **Compensation shift:** From content ACCESS (retrieval) to content USAGE (citation/display) — directly aligning with SPUR's five-stage telemetry model.
+- **Launch partners:** Ceramic.ai (pay per citation + query/ranking/citation data fed back to publishers) and You.com (on-demand premium content access by AI agents).
+- **Crawl data:** Google crawl-to-referral ratio hit 18:1 (was 6:1 six months ago — quantifying AI Overviews traffic diversion). OpenAI ratio: 1,500:1. >50% of AI crawler traffic refetches unchanged pages.
+- **beehiiv partnership (Jun 24):** Crawl Control integrated into newsletter platform, extending protection to independent creator economy.
+- **Browser privacy protocol (Jun 22):** Collaborating with major browsers on standardized privacy-preserving bot verification. CTO Dane Knecht: existing tools "too generic and coarse."
+
+Five-layer enforcement stack now documented: (1) regulatory (CMA opt-out), (2) infrastructure (Cloudflare default block Sep 15), (3) compensation (Pay Per Use), (4) standards (SPUR telemetry), (5) policy vacuum (UK gov withdrawal creates licensing-by-default).
+
+**3. SPUR Telemetry Public Comment Status**
+
+9 GitHub issues filed between Jun 17 and Jul 3. Comment period closes Jul 10 (4 days from now). Key topics: third-party provenance gaps, token metric portability, CDN vendor-specific bot classifications, verifiable content identity/opposability, advertising telemetry extension.
+
+**NOTABLE ABSENCE:** Zero public comments from any major AI company (Google, OpenAI, Meta, Anthropic, Microsoft, Amazon) with 4 days remaining. Either engaging privately (undermines open-standard ethos) or ignoring entirely (undermines adoption pressure). Revised versions due August 10.
+
+### Files Modified
+- `profiles/guardian.yaml` — +215 lines (1,682 → 1,897 total)
+  - New `ai_content_marketplace_landscape` section
+  - `cloudflare_publisher_infrastructure.pay_per_use_evolution` subsection (Ceramic.ai, You.com, crawl ratios)
+  - `cloudflare_publisher_infrastructure.beehiiv_partnership` subsection
+  - `cloudflare_publisher_infrastructure.browser_privacy_protocol` subsection
+  - `spur_coalition.telemetry_standard.public_comment_activity` subsection
+  - Updated notes section with Jul 6 analysis
+  - Testable hypothesis #18 (marketplace vs bilateral editorial bias)
+
+### Sources
+- WSJ: "Marketplaces Are the Next Frontier in Publisher Deals With AI Companies" (Jul 2, 2026)
+- Digiday: "Amazon, Microsoft AI marketplaces aim to charge for content" (Feb 2026)
+- TechData: "Cloudflare Empowers The Agentic Internet With 'Your Content, Your Rules' Philosophy" (Jul 4, 2026)
+- Medium/Dyna Joshy: "The End of the Free Data Buffet" (Jul 3, 2026)
+- InsiderMonkey: "Is Cloudflare (NET) the Best High Growth Cybersecurity Stock?" (Jul 6, 2026)
+- SPUR-Coalition/telemetry GitHub Issues (Jun 17–Jul 3, 2026)
+- Reuters: "Google must let UK publishers opt out of AI search" (Jun 2, 2026)
+- TechCrunch: Google AI pilot, Cloudflare default block (Dec 2025, Jul 2026)
+
+### Test Results
+- **1,454 tests pass** (0 failures)
+
+### Commit
+`651b042` — pushed to `rayhe/mediascope` main
+
