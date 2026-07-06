@@ -418,6 +418,72 @@ mit_corporate_research_partnerships:
       description: "Hosted by MIT Schwarzman College. Generates new computing/AI tools via MIT-Amazon collaboration."
       source_url: "https://computing.mit.edu/cross-cutting/industry-programs/"
       relevance: "Amazon is a major tech company MIT TR covers."
+    - name: "MIT and HPI AI and Creativity Hub"
+      amount: "Undisclosed"
+      established: "Ongoing"
+      description: >
+        Collaboration between MIT Schwarzman College of Computing, Morningside Academy
+        for Design, and the Hasso Plattner Institute (HPI) in Potsdam, Germany. Advances
+        research and supports educational programs, fellowships, and faculty engagement
+        focused on AI and creativity. HPI was founded by Hasso Plattner, SAP co-founder
+        (net worth ~$12B). Plattner also funded the Hasso Plattner Institute of Design
+        at Stanford (d.school). The collaboration extends MIT's AI corporate-philanthropic
+        network into European tech billionaire circles.
+      source_url: "https://computing.mit.edu/external-collaborations/"
+      relevance: "SAP co-founder's institute funding MIT AI research creates potential soft conflict for MIT TR's SAP/enterprise tech coverage. Plattner's dual Stanford-MIT positioning embeds his institutional influence across the two most prestigious US tech universities."
+    - name: "MIT-MBZUAI Research Collaboration Program"
+      amount: "Funded by MBZUAI"
+      established: "2025-10"
+      description: >
+        5-year research collaboration between MIT Schwarzman College of Computing and
+        Mohamed bin Zayed University of Artificial Intelligence (MBZUAI), the world's
+        first university dedicated entirely to AI, based in Abu Dhabi, UAE. Named after
+        UAE President Sheikh Mohamed bin Zayed Al Nahyan. Focuses on scientific discovery,
+        human thriving, and planetary health. Academic directors: Philip Isola (MIT EECS)
+        and Le Song (MBZUAI ML professor). Joint research projects co-led by PIs from
+        both institutions. Findings openly publishable. Announced Oct 3, 2025.
+        Dan Huttenlocher (Dean, Schwarzman College): 'Our collaboration with MBZUAI
+        reflects a shared commitment to advancing AI in ways that are responsible,
+        inclusive, and globally impactful.'
+      source_url: "https://news.mit.edu/2025/mit-schwarzman-college-computing-mbzuai-launch-collaboration-shape-future-ai-1008"
+      computing_page_url: "https://computing.mit.edu/external-collaborations/"
+      relevance: "UAE sovereign AI university funding MIT research — extends corporate/institutional conflict surface into sovereign wealth territory. MBZUAI is a UAE government-backed institution, making this a state-funded research partnership. MIT TR's coverage of Gulf AI investments, UAE tech ambitions, and sovereign AI strategies is structurally conflicted."
+    - name: "MIT AI Hardware Program"
+      amount: "Annual membership fees (undisclosed per member)"
+      established: "2022"
+      description: >
+        Academia-industry initiative between MIT Schwarzman College of Computing and MIT
+        School of Engineering, dedicated to next-generation AI hardware. Creates a roadmap
+        of transformative AI hardware technologies. Leverages MIT.nano (most advanced
+        university nanofabrication facility). 5 inaugural corporate members: Amazon, Analog
+        Devices, ASML, NTT Research, TSMC. Co-led by Jesús del Alamo (Professor of EE)
+        and Aude Oliva (Director of Strategic Industry Engagement AND MIT-IBM Lab co-director).
+        CRITICAL GOVERNANCE: Chaired by Anantha Chandrakasan — who was Dean of Engineering
+        when the program launched and is NOW MIT Provost (effective July 1, 2025).
+        Chandrakasan thus chairs BOTH the AI Hardware Program AND the renamed MIT-IBM
+        Computing Research Lab, while also serving as MIT Provost overseeing all academic
+        operations. This is the DEEPEST governance concentration of any single MIT
+        administrator across MIT's corporate partnership portfolio.
+        Focus areas: analog neural networks, CMOS roadmaps, heterogeneous integration,
+        monolithic-3D, analog nonvolatile memory, software-hardware co-design, edge AI,
+        intelligent sensors, energy-efficient AI, neuromorphic computing, quantum AI,
+        wireless, hybrid-cloud, HPC.
+      source_url: "https://news.mit.edu/2022/new-program-bolsters-innovation-ai-hardware-0322"
+      computing_page_url: "https://computing.mit.edu/external-collaborations/"
+      relevance: "TSMC (world's largest foundry) and ASML (monopoly on EUV lithography) are among the most strategically important companies in the global semiconductor industry — both heavily covered by MIT TR. Amazon appears in BOTH the Schwarzman bilateral programs AND this hardware program, doubling its institutional footprint. The program chair (Chandrakasan/Provost) connection deepens the governance conflict."
+    - name: "Schwarzman College Additional Industry Programs"
+      amount: "Various seed grants"
+      established: "Ongoing"
+      description: >
+        Additional Schwarzman College industry-funded programs beyond the major bilateral
+        partnerships: (1) AI for Augmentation and Productivity Seed Grants — funded by
+        Andrew W. Houston '05 and Dropbox, Inc. Explores AI/HCI for workplace productivity.
+        (2) MIT Artificial Intelligence and Wellness Seed Grants — funded by Panasonic Well,
+        a venture/business incubator within Panasonic Group, focusing on AI and family
+        wellness. These smaller programs show how corporate funding permeates the Schwarzman
+        College at every level, from $350M naming gifts to individual seed grants.
+      source_url: "https://computing.mit.edu/cross-cutting/industry-programs/"
+      relevance: "Dropbox CEO is an MIT alum ('05) funding research at his alma mater's computing college. Panasonic, a major consumer electronics company MIT TR covers, funds wellness AI research. Both create additional soft conflicts."
     - name: "MIT-SenseTime Alliance on AI"
       amount: "Undisclosed"
       established: "2018-02"
@@ -462,6 +528,42 @@ mit_corporate_research_partnerships:
       established: "2026-06"
       description: "Honeywell collaboration with MIT Center for Sustainability Science and Strategy. Joint research titled 'Accelerating Energy Expansion' modeling AI-enabled cost reductions in fuel production ($225B in oil-based fuels, $80B in LNG by 2050). Published June 24, 2026. Honeywell is a major industrial tech company — its AI/automation products compete in the same enterprise space MIT TR covers."
       source_url: "https://www.prnewswire.com/news-releases/honeywell-and-mit-find-digital-technologies-can-help-increase-energy-supply-reduce-energy-production-cost-by-tens-of-billions-annually-302463974.html"
+  - partner: "TSMC"
+    relationship_type: "institutional_funding"
+    estimated_value: "Annual membership (undisclosed)"
+    description: "Inaugural member of MIT AI Hardware Program (Schwarzman College + School of Engineering). TSMC is the world's leading dedicated semiconductor foundry, fabricating chips for Apple, Nvidia, AMD, Qualcomm, and nearly every major tech company MIT TR covers. TSMC's monopoly on advanced node manufacturing (3nm, 2nm) makes it one of the most strategically important companies in global technology."
+    date_established: "2022"
+    source_url: "https://news.mit.edu/2022/new-program-bolsters-innovation-ai-hardware-0322"
+  - partner: "ASML"
+    relationship_type: "institutional_funding"
+    estimated_value: "Annual membership (undisclosed)"
+    description: "Inaugural member of MIT AI Hardware Program. ASML holds a global monopoly on extreme ultraviolet (EUV) lithography machines — the most critical bottleneck in advanced semiconductor manufacturing. ASML is central to the US-China chip war narrative that MIT TR covers extensively."
+    date_established: "2022"
+    source_url: "https://news.mit.edu/2022/new-program-bolsters-innovation-ai-hardware-0322"
+  - partner: "NTT Research"
+    relationship_type: "institutional_funding"
+    estimated_value: "Annual membership (undisclosed)"
+    description: "Inaugural member of MIT AI Hardware Program. Subsidiary of NTT (Nippon Telegraph and Telephone), Japan's largest telco. NTT Research's Physics and Informatics (PHI) Lab had existing MIT collaborations (2 dozen papers, several patents) before joining the hardware program."
+    date_established: "2022"
+    source_url: "https://www.businesswire.com/news/home/20220323005215/en/NTT-Research-Joins-MIT-AI-Hardware-Program"
+  - partner: "Analog Devices"
+    relationship_type: "institutional_funding"
+    estimated_value: "Annual membership (undisclosed)"
+    description: "Inaugural member of MIT AI Hardware Program. Global leader in analog, mixed-signal, and DSP integrated circuits. ADI's products are critical components in edge AI, IoT, and industrial automation — sectors MIT TR covers."
+    date_established: "2022"
+    source_url: "https://news.mit.edu/2022/new-program-bolsters-innovation-ai-hardware-0322"
+  - partner: "MBZUAI (UAE)"
+    relationship_type: "institutional_funding"
+    estimated_value: "Undisclosed (MBZUAI-funded)"
+    description: "Mohamed bin Zayed University of Artificial Intelligence funds the 5-year MIT-MBZUAI Collaborative Research Program (launched Oct 2025). MBZUAI is a UAE government-backed institution named after UAE President Sheikh Mohamed bin Zayed Al Nahyan. This is a sovereign state-funded research partnership — the UAE government is effectively financing MIT AI research through its national AI university."
+    date_established: "2025-10"
+    source_url: "https://news.mit.edu/2025/mit-schwarzman-college-computing-mbzuai-launch-collaboration-shape-future-ai-1008"
+  - partner: "Hasso Plattner Institute"
+    relationship_type: "institutional_funding"
+    estimated_value: "Undisclosed"
+    description: "HPI co-funds the MIT and HPI AI and Creativity Hub with MIT Schwarzman College and Morningside Academy for Design. Founded by SAP co-founder Hasso Plattner (~$12B net worth). HPI also operates the Hasso Plattner Institute of Design at Stanford (d.school). Plattner's dual Stanford-MIT funding positions his institutional influence across the two most prestigious US tech research universities."
+    date_established: "Ongoing"
+    source_url: "https://computing.mit.edu/external-collaborations/"
       relevance: "New corporate research partnership announced June 2026. Honeywell is an industrial AI company that MIT TR covers. Partnership involves MIT Center (not CSAIL/Schwarzman), showing how MIT-industry ties extend beyond the computing college."
 
   engine_ventures:
@@ -718,6 +820,17 @@ mit_corporate_research_partnerships:
           in 2025. Significance: a SOVEREIGN GOVERNMENT agency paying for MIT institutional
           access — extends the conflict surface from corporate to governmental sponsors.
         source_url: "https://www.cdti.es/en/noticias/cdti-innovacion-mit-colaboracion-tecnologica-espana-eeuu-tejido-empresarial-investigacion-deeptech"
+      - company: "Cosmo Energy Holdings"
+        date: "2026-04"
+        details: >
+          Japanese energy conglomerate. First overseas university industry-academic
+          program for the Cosmo Energy Group. Under 7th Consolidated Medium-Term
+          Management Plan and 'Vision 2030,' seeks 'technology seeds' in energy,
+          materials, biotechnology, and AI/IoT that 'transcend existing business
+          boundaries.' Significance: energy industry seeking MIT AI/computing access
+          for decarbonization and next-gen energy business — another non-tech company
+          paying for MIT institutional access, broadening the corporate funding surface.
+        source_url: "https://www.cosmo-energy.co.jp/en/press/2025/250328-02.html"
     source_url: "https://ilp.mit.edu"
 
   lincoln_laboratory:
@@ -983,9 +1096,30 @@ revenue_relationships:
   - partner: "Emtech Sponsors (2026)"
     relationship_type: "event_sponsorship"
     estimated_value: "Undisclosed (events ~33% of revenue)"
-    description: "EmTech AI 2026 Presenting Partners: HPE, Ascendion, GC Cybersecurity. Additional: Box, Samsung Next, Micron, MIT Professional Education, IDEO, MIT Museum. 400 attendee limit. Contact: Andrew Hendler (VP Sales, also highest-paid sales exec on 990)."
+    description: >
+      EmTech AI 2026 (April 21-23, MIT Media Lab, 400 attendees): Presenting Partners
+      HPE, Ascendion, GC Cybersecurity. Additional: Box, Samsung Next, Micron, MIT
+      Professional Education, IDEO, MIT Museum. Hybrid pricing: $3,195-3,395 in-person,
+      $995 livestream. Contact: Andrew Hendler (VP Sales, also highest-paid sales exec
+      on 990). Key themes: agentic AI, new AI stack, AI and trust, creativity and control.
+      
+      EmTech Future 2026 (September 29 - October 1, MIT campus): MIT's flagship cross-
+      technology event. Upcoming. Partner details not yet fully announced.
+      CRITICAL: Past EmTech speakers include Yann LeCun (Meta VP & Chief AI Scientist),
+      Dario Gil (IBM Research SVP), Geoffrey Hinton (ex-Google), and Kimberly Budil
+      (Lawrence Livermore). LeCun's presence as a past speaker creates a DIRECT Meta
+      connection in MIT TR's events business — the publication hosts Meta's chief AI
+      scientist on its stage while its parent institution receives Meta research funding.
+      
+      MIT's full 2026 events calendar shows 10+ events (Jan-Oct), including multiple
+      subscriber-only roundtables, regional EmTech events, and the main flagship events.
+      Events revenue (~33% of total, per CEO Bramson-Boudreau) is thus generated from
+      a continuous calendar of corporate-sponsored gatherings, not a single annual event.
     date_established: "Annual"
     source_url: "https://event.technologyreview.com/emtech-ai-2025"
+    emtech_future_url: "https://event.technologyreview.com/emtech-future-2026"
+    all_events_url: "https://www.technologyreview.com/events/"
+    registration_url: "https://event.technologyreview.com/emtech-ai-2026/register"
 
   - partner: "Honeywell"
     relationship_type: "institutional_funding"
@@ -1660,13 +1794,20 @@ notes: |
   4. DEFENSE/GOVERNMENT: MIT receives DoD funding ($12.2B Lincoln Lab contract,
      DAF-MIT AI Accelerator $15M/year, $1.36B annual FFRDC expenditures)
   5. CONSORTIUM/EVENTS: Companies pay for access (Media Lab $400K/yr members,
-     CSAIL Alliance 27 companies, ILP 240 companies, EmTech sponsors ~33% revenue)
-  6. LITIGATION ALIGNMENT (NEW, Jul 2026): MIT is an active co-plaintiff against
+     CSAIL Alliance 27 companies, ILP ~240 companies, AI Hardware Program 5 companies
+     including TSMC + ASML, EmTech sponsors ~33% revenue, Schwarzman College 5+
+     bilateral programs)
+  6. SOVEREIGN/INTERNATIONAL: MBZUAI (UAE government-backed AI university) funds
+     MIT AI research through 5-year collaboration; CDTI Innovation (Spanish government
+     agency) is ILP institutional member; HPI (SAP co-founder Hasso Plattner's
+     institute) co-funds AI and Creativity Hub. State-funded research partnerships
+     extend the conflict surface beyond corporate to governmental sponsors.
+  7. LITIGATION ALIGNMENT: MIT is an active co-plaintiff against
      NIH, DOE, and NSF — agencies whose policies MIT TR covers. Creates structural
      incentive to frame federal funding cuts as harmful rather than as legitimate
      policy choices.
   
-  No other publication in the 5-pub tracking set has conflicts across ALL SIX
+  No other publication in the 5-pub tracking set has conflicts across ALL SEVEN
   dimensions simultaneously.
   
   PRINCETON ESCAPE (May 2026, NEW): Princeton avoided the 8% endowment tax entirely
