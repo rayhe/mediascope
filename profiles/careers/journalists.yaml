@@ -2759,43 +2759,191 @@ journalists:
     case: does a politics-trained editor adopt Wired''s institutional tech framing, or does she import her own framing vocabulary? The DiD framework should compare her Wired bylines against her Vice bylines
     to test institutional vs individual framing origin. Her Bocconi lecture language (''digital coup d''état,'' ''too narcissistic to last'') suggests she brings her own adversarial frame rather than adopting
     Wired''s.'
-- career:
-  - beat: politics, policy
-    end: 2005-12
+- name: Nicholas Thompson
+  analytical_notes: 'CRITICAL CROSS-PUBLICATION BRIDGE: The single most important editorial figure connecting two tracked publications. As Wired EIC (2017-2020), Thompson personally co-authored the two
+    Facebook cover stories cited in congressional hearings — ''Inside the Two Years that Shook Facebook—and the World'' (Feb 2018, with Fred Vogelstein, 11,000 words, 50+ current/former Facebook employees)
+    and ''15 Months of Fresh Hell Inside Facebook'' (2019). These pieces cemented Wired''s adversarial editorial posture toward Meta during the Cambridge Analytica era. Thompson then became CEO of The Atlantic
+    (Feb 2021), overseeing its business strategy including AI licensing deals with OpenAI (announced ~2024, union pushback from The Atlantic Guild demanding transparency on terms) and Amazon — both Meta
+    competitors.
+
+
+    CONDÉ NAST PIPELINE: Thompson''s path (New Yorker → Wired, both CN titles) is a pure Condé Nast institutional pipeline. He spent 12 years (2005-2017) as senior editor at Wired and then New Yorker web
+    editor before returning to Wired as EIC. This means Wired''s editorial direction under Thompson was shaped by someone steeped in Condé Nast institutional culture, including CN''s broader financial relationships
+    (AI licensing deals with OpenAI, Amazon noted in MediaScope profiles).
+
+
+    EMERSON COLLECTIVE OWNERSHIP TIE: Co-founded Speakeasy AI (originally ''Narwhal'') with Raffi Krikorian (CTO of Emerson Collective, which owns The Atlantic under Laurene Powell Jobs) and political scientist
+    Ian Bremmer. Backed by Emerson Collective directly. Sold to Amplica Labs/Project Liberty (Frank McCourt) April 2024. This creates a direct operational tie between the Atlantic CEO and the ownership
+    entity — not just employer-employee but co-venture partners.
+
+
+    DIALOG CIRCLE (2026): Mentioned in leaks from Peter Thiel''s ''Dialog'' group but declined to comment (Wikipedia, 2026). Thiel''s circle includes conservative-libertarian tech figures — Thompson''s
+    participation (or adjacency) raises questions about elite tech-media social networks that don''t appear in masthead disclosures.
+
+
+    FACEBOOK COVERAGE AS EIC: Thompson didn''t just oversee Wired''s Facebook coverage — he personally reported and co-wrote the flagship investigations. This is unusual for an EIC and means the editorial
+    posture was author-level, not just directive. The Loeb Award finalist (2020) for these stories validated the adversarial framing within the journalism industry''s own reward structure.
+
+
+    DiD FRAMEWORK: The Wired EIC → Atlantic CEO migration is atypical — it''s not a reporter changing newsrooms but an editorial leader changing institutional contexts entirely (from Condé Nast editorial
+    to Emerson Collective business leadership). Tests whether anti-Big-Tech editorial posture carries through executive leadership transitions. Under Thompson, Atlantic has won 3 Pulitzers, 3 NMA General
+    Excellence awards, and reached profitability (~March 2024) and 1M+ subscribers. His business success gives him outsized influence over Atlantic editorial direction despite the CEO/EIC separation (EIC
+    is Jeffrey Goldberg).
+
+
+    BROADCAST AMPLIFICATION: CBS News contributor (2015-2021), CNN contributing editor (2010-2016), Bloomberg News contributing editor (2010-2014). Thompson''s broadcast presence meant his editorial judgments
+    at Wired reached audiences far beyond the magazine''s readership. Cross-reference with Kara Swisher entry for similar broadcast amplification pattern.
+
+
+    FAMILY: Grandson of Paul Nitze (Cold War arms negotiator, ''the Hawk''). Son of W. Scott Thompson (professor, Ford & Reagan administrations) and Nina Nitze. Grew up in Chestnut Hill, MA. Phillips Academy
+    Andover. Married, wife is dance professor at The New School. Has sons.'
+  education:
+  - institution: Phillips Academy Andover
+    field: Secondary education
+    notes: Elite New England prep school. Chestnut Hill, MA to Andover pipeline.
+    source_url: https://en.wikipedia.org/wiki/Nicholas_Thompson_(editor)
+  - institution: Stanford University
+    degree: BA (triple major)
+    field: Earth Systems, Political Science, and Economics
+    graduation: 1997
+    notes: Graduated Phi Beta Kappa with honors. Wrote for Stanford Daily. Founded student newspaper "The Thinker." Awarded Harry S. Truman Scholarship (1996) — expressed interest in "creating links between
+      environmentalists and businesspeople." Ran on Stanford track team briefly.
+    source_url: https://news.stanford.edu/stories/1996/04/four-stanford-students-awarded-truman-scholarships
+  career:
+  - beat: N/A
     event_type: hired
-    notes: Early career at Washington Monthly. Formative period.
+    publication: cbs-news
+    role: associate_producer
+    start: 1997-06
+    end: 1997-06
+    notes: 'First job after Stanford. Fired on his first day — someone believed he was too inexperienced. Post-firing: traveled to Africa, kidnapped in Morocco by drug dealers on landing. The daylong experience
+      produced his first professional story: "Continental Drift" in The Washington Post (Nov 8, 1998). Subsequently busked as a street musician in NYC on the 14th Street L train platform at Sixth Avenue.'
+    source_url: https://tim.blog/2018/06/26/the-tim-ferriss-show-transcripts-nick-thompson-311/
+  - beat: technology
+    event_type: hired
+    publication: penguin-computing
+    role: staff
+    start: 1998-01
+    end: 1999-01
+    notes: Brief stint at Linux hardware company in San Francisco. Non-journalism career stop between freelance period and Washington Monthly. Provided tech industry exposure before media career.
+    source_url: https://en.wikipedia.org/wiki/Nicholas_Thompson_(editor)
+  - beat: politics, policy, education
+    event_type: hired
     publication: washington-monthly
     role: editor
-    start: 2001-01
-  - beat: general, web
-    end: 2012-12
+    start: 1999-01
+    end: 2001-12
+    notes: 'Formative period in policy journalism under Charlie Peters (legendary Washington Monthly editor, "godfather of neoliberalism"). Most prominent story: exposed fraud in U.S. News & World Report
+      college rankings — cited by NYT (Alex Kuczynski, Aug 22, 2001). Two-year tenure. The Washington Monthly cultivated a generation of policy journalists; Thompson''s editorial sensibility was shaped
+      here.'
+    source_url: https://washingtonmonthly.com/people/nicholas-thompson/
+  - beat: foreign policy, international
+    event_type: fellowship
+    publication: new-america-foundation
+    role: fellow
+    start: 2002-01
+    end: 2005-09
+    notes: New America Foundation fellow. Concurrent with freelance Africa reporting and Legal Affairs editorship. Wrote about foreign policy, Cold War history. Period when he began researching "The Hawk
+      and the Dove" (published 2009) — biography of his grandfather Paul Nitze and George Kennan. New America is a centrist think tank co-founded by Ted Halliwell, with funders including Google/Eric Schmidt
+      — an early institutional connection to Big Tech.
+    source_url: https://newamerica.org/our-people/nicholas-thompson/
+  - beat: law, policy
     event_type: hired
-    notes: Senior editor at The New Yorker, then editor of Newyorker.com. Another Condé Nast title — CN pipeline established before Wired.
+    publication: legal-affairs
+    role: senior_editor
+    start: 2002-01
+    end: 2005-01
+    notes: Senior editor at Legal Affairs magazine, concurrent with New America fellowship. Legal Affairs was a law and public policy magazine. Was about to start law school at NYU when he pivoted to Wired
+      instead (2005).
+    source_url: https://www.ncafp.org/people/nicholas-thompson/
+  - beat: technology, science, culture
+    event_type: hired
+    publication: wired
+    role: senior_editor
+    start: 2005-01
+    end: 2010-01
+    notes: First stint at Wired as senior editor. Chose Wired over NYU law school. Assigned and edited the feature "The Great Escape" by Joshuah Bearman — which became the basis for the 2012 film "Argo"
+      (Academy Award for Best Picture). Edited Evan Ratliff's "Vanish" interactive digital manhunt piece. Co-founded The Atavist (2011) with Ratliff and Jefferson Rabb during this period. First entry into
+      the Condé Nast institutional ecosystem.
+    source_url: https://en.wikipedia.org/wiki/Nicholas_Thompson_(editor)
+  - beat: general, web, digital strategy
+    event_type: hired
     publication: new-yorker
     role: senior_editor_then_web_editor
-    source_url: https://www.weforum.org/people/nicholas-thompson/
-    start: 2005-01
+    start: 2010-01
+    end: 2017-01
+    notes: 'Senior editor at The New Yorker (2010), then editor of Newyorker.com (2012-2017). Another Condé Nast title — deepened CN institutional ties. Under his web editorship: monthly readers increased
+      7-fold, led site redesign and re-platforming, launched New Yorker Today app, introduced metered paywall (new subscription sign-ups 85% higher within months). Wrote notable personal history piece "My
+      Friend, Stalin''s Daughter" (Mar 31, 2014). Concurrent with CNN contributing editor (2010-2016), Bloomberg News contributing editor (2010-2014), and CBS News contributor (from 2015).'
+    source_url: https://en.wikipedia.org/wiki/Nicholas_Thompson_(editor)
   - beat: all (editor-in-chief)
-    end: 2020-09
-    event_type: hired
-    notes: 'Hired as EIC from The New Yorker (another Condé Nast title). Under his leadership: digital subscriptions rose ~300%, launched Get Wired app and podcast, WIRED25 event. Wrote two Facebook cover
-      stories cited in Congress (Loeb Award finalist 2020). Expanded political coverage significantly. Left for Atlantic CEO role.'
+    event_type: editorial_role_change
     publication: wired
     role: eic
-    source_url: https://www.nytimes.com/2017/01/17/business/media/wired-nicholas-thompson-editor.html
     start: 2017-02
+    end: 2020-09
+    notes: 'Returned to Wired as fifth editor-in-chief after Scott Dadich. Hired from New Yorker (intra-CN transfer). KEY EDITORIAL PERIOD: Under his leadership, digital subscriptions rose ~300%, launched
+      paywall ("We Launched a Paywall. It Worked! Mostly"), Get Wired app and podcast, WIRED25 event, affiliate-revenue business. Won NMA for design and photography (2019), nominated for general excellence.
+      Named Ad Age A-List digital publisher.
+
+
+      FACEBOOK INVESTIGATIONS (personally authored):
+
+      1. "Inside the Two Years that Shook Facebook—and the World" (Feb 12, 2018, with Fred Vogelstein) — 11,000 words, 50+ current/former FB employees, cited multiple times in Congress. Loeb Award finalist
+      2020.
+
+      2. "15 Months of Fresh Hell Inside Facebook" (2019) — second cover story also cited in Congress.
+
+
+      Other notable writing: "The AI Cold War That Threatens Us All" (Oct 2018), "A Nameless Hiker and the Case the Internet Can''t Crack" (Dec 2020, viral "Mostly Harmless" story). Thompson took "an evolved
+      approach to the magazine''s editorial mission" (Wikipedia) — Wired shifted from tech optimism to tech accountability. This editorial pivot is THE central event MediaScope measures.'
+    source_url: https://www.nytimes.com/2017/01/17/business/media/wired-nicholas-thompson-editor.html
   - beat: N/A (executive)
     event_type: hired
-    notes: 'CRITICAL MIGRATION: Wired EIC → Atlantic CEO. This is not an editorial role but carries massive editorial influence — he sets Atlantic''s business strategy, partnership direction (incl. OpenAI
-      licensing deal), and hires. EIC Goldberg said Thompson brings ''surround-sound coverage of relevant experience.'' Under Thompson: Atlantic achieved profitability, record subscriptions, 3 Pulitzer
-      Prizes. Also co-founded Speakeasy AI (constructive online conversations platform). Co-founded The Atavist (sold to WordPress/Automattic 2018). Co-founded venture sold to Amplica Labs.'
     publication: atlantic
     role: ceo
-    source_url: https://www.wired.com/story/gideon-lichfield-new-editor-wired/
     start: 2020-12
-  name: Nicholas Thompson
-  notes: 'KEY CROSS-PUBLICATION BRIDGE: Wired EIC (2017-2020) → Atlantic CEO (Dec 2020). The single most important editorial pipeline connection between these two tracked publications. Also co-founded The
-    Atavist and Speakeasy AI.'
+    notes: 'CRITICAL MIGRATION: Wired EIC → Atlantic CEO. Announced Dec 3, 2020 (NYT: Marc Tracy, "The Atlantic Plucks Wired Magazine''s Top Editor as Its New C.E.O."). Started Feb 2021. EIC Goldberg: "Nick
+      is singular; we''ve seen no one like him... surround-sound coverage of relevant experience... committed to superior editorial standards and complete editorial independence."
+
+
+      BUSINESS RESULTS: Atlantic reached profitability (~March 2024), 1M+ subscribers (announced April 2025), record subscription growth. Revenue ↑ 35% in 2022. Fastest growth rate in 167-year history.
+      3 NMA General Excellence, 3 Pulitzer Prizes, Digiday Publisher of the Year (2022). Digitized full archive dating back to 1857.
+
+
+      AI LICENSING: Oversees Atlantic''s OpenAI licensing deal (multi-year, terms undisclosed). Atlantic Guild (union) issued statement demanding transparency ("alarmed," "deeply troubled by the opaque
+      agreement"). EIC Goldberg publicly backed the union''s statement, demanding OpenAI answer journalists'' questions — unusual CEO/EIC tension on a business deal.
+
+
+      OWNERSHIP CONTEXT: Atlantic owned by Emerson Collective (Laurene Powell Jobs). Thompson co-founded Speakeasy AI with Raffi Krikorian (Emerson Collective CTO), backed by Emerson Collective. This CEO-ownership
+      operational tie goes beyond employer-employee. Sold to Amplica Labs/Project Liberty (Frank McCourt, $500M internet reform initiative) April 2024.'
+    source_url: https://www.nytimes.com/2020/12/03/business/media/atlantic-wired-ceo.html
+  multi_pub_migrations:
+  - from_pub: wired
+    to_pub: new-yorker
+    year: 2010
+    migration_type: intra_corporate_lateral
+    notes: Wired (senior editor) → New Yorker (senior editor → web editor). Intra-Condé Nast transfer. Both publications owned by Advance Publications (Newhouse family). This migration did NOT leave the
+      corporate family — it deepened Thompson's CN institutional ties. Tests whether editorial sensibility varies across CN titles (tech magazine vs literary magazine).
+  - from_pub: new-yorker
+    to_pub: wired
+    year: 2017
+    migration_type: intra_corporate_promotion
+    notes: New Yorker (web editor) → Wired (editor-in-chief). Return to Wired as EIC after 7 years at New Yorker. Intra-CN promotion. Thompson brought digital transformation expertise (7x reader growth,
+      paywall, app launch at New Yorker) to Wired's digital strategy. Under his EIC tenure, Wired's editorial posture shifted from tech optimism to tech accountability — the editorial pivot that MediaScope
+      was built to measure.
+  - from_pub: wired
+    to_pub: atlantic
+    year: 2020
+    migration_type: cross_corporate_executive
+    notes: 'Wired (EIC, Condé Nast/Advance Publications) → Atlantic (CEO, Emerson Collective/Laurene Powell Jobs). CRITICAL: This migration crosses corporate ownership boundaries — from Newhouse family
+      to Jobs/Emerson Collective. As CEO (not EIC), Thompson influences editorial direction through business strategy, partnership decisions (OpenAI deal), and hiring, not through direct editorial control.
+      Tests whether anti-Big-Tech editorial posture propagates through executive leadership channels. The migration also carries CN institutional culture into a non-CN organization. The most analytically
+      significant migration in the journalist tracker.'
+  notes: 'KEY CROSS-PUBLICATION BRIDGE: Wired senior editor (2005-10) → New Yorker web editor (2010-17) → Wired EIC (2017-20) → Atlantic CEO (2020-present). The single most important editorial pipeline
+    connection between tracked publications. Also co-founded The Atavist (sold to Automattic/WordPress 2018), Speakeasy AI (sold to Amplica Labs 2024). Author of ''The Hawk and the Dove'' (2009, biography
+    of grandfather Paul Nitze) and ''The Running Ground'' (2025, running memoir). CBS News contributor (2015-21), CNN contributing editor (2010-16), Bloomberg contributing editor (2010-14). American 45-49
+    age-group 50K record holder (3:04:36, 2021). Born 1975. LinkedIn Top Voice 2018. WEF participant. Peter Thiel ''Dialog'' group mention (2026, declined to comment).'
 - career:
   - beat: technology
     end: 2015-12

@@ -13924,3 +13924,129 @@ Alex Reisner's profile (lines 2512, 2535) used `event_type: milestone` for his L
 - Bug fixed: 2 invalid `milestone` event_types → `other` (Alex Reisner)
 - Commit: `496b29c`
 
+
+## Iteration: 2026-07-06 01:00 PT — Type A (Article Deep Dive)
+
+**Article:** Reuters EU WhatsApp AI antitrust interim measure (Jun 10, 2026)
+**Commit:** bed4b43
+
+### Article Summary
+First EU interim measure in 17 years: European Commission ordered Meta to provide free WhatsApp interoperability for third-party AI chatbots within 5 working days. Per-message fees (€0.0490–€0.1323) triggered antitrust complaint from Poke.com. Teresa Ribera led the action. Fines: up to 10% of global annual turnover.
+
+### Corpus Contribution
+- New genre: wire service regulatory enforcement coverage (first Reuters article)
+- New regulatory domain: EU competition law / DMA enforcement (absent from corpus)
+- Fills temporal gap: Jun 10, 2026 is an underrepresented period
+
+### Three Fixes Implemented
+
+**Fix 1: Antitrust topic keyword expansion** (topics.py)
+- Added 12 EU competition enforcement terms to antitrust_regulation bucket
+- Terms: interim measure(s), market power, abuse of dominance, abuse of market power, competition enforcer, Statement of Objections, self-preferencing, self preferencing, turnover fine, regulatory overreach, charge sheet, charges against
+- Before: antitrust_regulation ranked #2 (behind corporate_strategy)
+- After: antitrust_regulation ranks #1 at confidence 1.000
+
+**Fix 2: Precedent framing device** (framing.py) — NEW TYPE #67 (73 total, 412 patterns)
+- Device type: `precedent_framing` — signals event significance through historical rarity
+- 4 regex patterns: "first in N years", "first since YYYY", "largest/most significant since", "unprecedented [action]"
+- Distinct from scale_magnitude (raw numbers), timeline_implication (temporal pressure), precedent_analogy (named historical parallels)
+- Before: "first in 17 years" undetected
+- After: detected as precedent_framing
+
+**Fix 3: Corporate spokesperson source classification** (sources.py)
+- Anonymous source detector now reclassifies "a [Company] spokesperson/representative" as source_type='corporate_spokesperson' with is_anonymous=False
+- Extracts company name from pattern match as affiliation
+- Before: "a Meta spokesperson" → type=anonymous, is_anonymous=True, affil=""
+- After: "a Meta spokesperson" → type=corporate_spokesperson, is_anonymous=False, affil="Meta"
+
+### Documentation Updates
+- METHODOLOGY.md: 72→73 types, 56→57 extended, new precedent_framing row in extended table, 100→101 annotated articles
+- ARCHITECTURE.md: 73 types, 412 patterns, 57 extended, precedent_framing in inline list
+- AGENT_GUIDE.md: 73 types, 57 extended
+- README.md: 73 total = 67 pattern-matched + 6 structural, 412 patterns
+- CLI docstring: 73 types
+- framing.py docstring: 67 pattern-matched, 73 total
+- QUALITY_STANDARDS.md: 101 annotated articles
+
+### Test Results
+- All 1,454 tests pass
+- Updated guards: EXPECTED_TOTAL 72→73, EXPECTED_PATTERN_MATCHED 66→67, EXPECTED_TOTAL_PATTERNS 408→412, expected_pattern_types set +precedent_framing
+
+### Remaining Gaps (documented in analysis file, not fixed this iteration)
+- Teresa Ribera affiliation not extracted (EU Competition Commissioner)
+- Poke.com and Agentik entities not detected
+- headline_body_alignment=-0.79 is a false negative (headline accurately reflects body)
+- agency_attribution=-1.0 too extreme for factual wire reporting
+- emotional_language_intensity=0.729 inflated by VADER legal-language sensitivity (known issue, see METHODOLOGY.md §16)
+
+
+## Iteration: 2026-07-06 02:00 PT — Type B (Journalist Research)
+
+**Subject:** Nicholas Thompson — Atlantic CEO, former Wired EIC
+**Commit:** (this commit)
+
+### Selection Rationale
+Systematic scan of all 119 journalist profiles identified thin profiles at tracked publications. Thompson (index 47) had only 4 career entries and 1,286 total chars despite being the single most important cross-publication bridge figure: Wired senior editor (2005-10) → New Yorker web editor (2010-17) → Wired EIC (2017-20) → Atlantic CEO (2020-present). Bridges TWO tracked publications (Wired + Atlantic) at the editorial-leadership and executive level.
+
+### Profile Expansion (4 → 9 career entries, 1,286 → ~12,000+ chars)
+
+**Education added (2 entries):**
+- Phillips Academy Andover
+- Stanford University BA 1997 (triple major: Earth Systems, Political Science, Economics). Phi Beta Kappa, Truman Scholar 1996, Stanford Daily contributor, founded student paper "The Thinker"
+
+**Career entries expanded from 4 → 9:**
+1. CBS News associate producer (1997, fired day one — too inexperienced)
+2. Penguin Computing (1998-99, Linux hardware, non-journalism career stop)
+3. Washington Monthly editor (1999-2001, dates CORRECTED from 2001-2005)
+4. New America Foundation fellow (2002-2005, concurrent with Legal Affairs)
+5. Legal Affairs senior editor (2002-2005, concurrent)
+6. Wired senior editor (2005-2010, first CN entry, edited "The Great Escape"/Argo source)
+7. New Yorker senior editor → web editor (2010-2017, 7x reader growth, metered paywall)
+8. Wired EIC (2017-2020, co-authored two FB cover stories cited in Congress, Loeb finalist 2020)
+9. Atlantic CEO (2020-present, profitability, 1M+ subs, OpenAI licensing controversy)
+
+**Multi-pub migrations added (3):**
+- Wired → New Yorker (2010, intra-CN lateral)
+- New Yorker → Wired (2017, intra-CN promotion to EIC)
+- Wired → Atlantic (2020, cross-corporate executive — CN/Advance Publications to Emerson Collective)
+
+**Analytical notes added (3,697 chars):**
+- Critical cross-publication bridge analysis
+- Condé Nast institutional pipeline documentation
+- Emerson Collective/Speakeasy AI ownership tie (co-founded with Raffi Krikorian, EC CTO)
+- Peter Thiel "Dialog" group mention (2026)
+- Facebook coverage as EIC (personally authored, not just directed)
+- DiD framework analysis (EIC→CEO migration type)
+- Broadcast amplification pattern (CBS, CNN, Bloomberg concurrent)
+- Family background (grandson of Paul Nitze, Cold War arms negotiator)
+
+### Key Discoveries
+
+1. **Emerson Collective co-venture tie:** Thompson co-founded Speakeasy AI with Raffi Krikorian (CTO of Emerson Collective, which owns The Atlantic). This goes beyond employer-employee — they are co-venture partners. Backed by Emerson Collective directly. Sold to Amplica Labs/Project Liberty (Frank McCourt) April 2024.
+
+2. **OpenAI licensing controversy:** Atlantic signed multi-year deal with OpenAI; Atlantic Guild (union) demanded transparency ("alarmed," "deeply troubled"). EIC Goldberg publicly backed union's statement — rare CEO/EIC tension. Thompson as CEO oversaw the deal that directly benefits a Meta competitor.
+
+3. **Washington Monthly dates corrected:** Old profile listed 2001-2005; actual tenure was 1999-~2001 per primary sources.
+
+4. **Paul Nitze grandson:** Establishment foreign policy pedigree. Wrote "The Hawk and the Dove" (2009) about grandfather Nitze and George Kennan. Family background connects to elite institutional networks.
+
+5. **First-day CBS firing:** Before journalism career, fired from CBS as associate producer on first day. Kidnapped by drug dealers in Morocco; that experience became his first published piece (WaPo, 1998).
+
+### Documentation Updates
+- README.md: Migration count 430 → 434; Thompson added to notable migrations showcase (first position)
+- docs/EDITORIAL_HISTORIES.md: Migration count 430 → 434
+
+### Sources
+- Wikipedia: Nicholas Thompson (editor)
+- Tim Ferriss Show transcript #311 (2018)
+- Stanford News (Truman Scholarship, 1996)
+- NYT: "The Atlantic Plucks Wired Magazine's Top Editor as Its New C.E.O." (Marc Tracy, Dec 3, 2020)
+- Washington Monthly contributor page
+- New America Foundation bio
+- NCAFP bio
+- Press Gazette: Atlantic subscriber milestones
+- Various LinkedIn, podcast, and profile sources cross-referenced
+
+### Test Results
+- All 1,454 tests pass (README migration count consistency guard fixed)
+- Auto-detected migrations: 428 → 434 (+6 from expanded career)
