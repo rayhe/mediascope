@@ -13660,3 +13660,58 @@ MIT Technology Review journalist expansion + Isabella Ward profile deepening.
 - Files changed: 3 (journalists.yaml, editorial_changes.yaml, README.md)
 - Journalists: 134 (unchanged), Multi-pub: 133 (unchanged), Migrations: 428 (unchanged)
 - Note: Education events and same-publication rehire don't create inter-publication migrations
+
+## 2026-07-05 21:00 PT — Type B: Journalist/Publication Research — Kaitlyn Tiffany (Atlantic) Expansion + Event Type Fix
+
+### Focus
+Deep expansion of Kaitlyn Tiffany's profile (The Atlantic staff writer) from a thin 3-entry/173-character skeleton to a comprehensive 4-entry profile with full career timeline, three books, podcast history, and MediaScope analytical annotations. Also fixed a pre-existing test failure (Alex Reisner's invalid `milestone` event_type).
+
+### Kaitlyn Tiffany Profile Expansion
+
+**Before:** 3 career entries (Verge, Vox, Atlantic), 173 characters of notes, 2/3 entries sourced.
+
+**After:** 4 career entries (freelance/Cornell, Verge, Vox, Atlantic), ~2,800+ characters of notes, 4/4 entries sourced.
+
+**New data discovered and added:**
+1. **Education:** Cornell University BA (~2015), confirmed via The Rumpus author bio (Mar 2015: "a recent graduate of Cornell University")
+2. **Pre-journalism career:** Freelance literary writing — The Rumpus, Eckleburg Review, Sundog Lit, Paper Darts, Bacopa Review, The Dying Goose
+3. **Podcast:** "Why'd You Push That Button?" co-hosted with Ashley Carman at The Verge — 49 episodes, Oct 17 2017 – Jul 15 2020, won 2018 Podcast Award ("This Week in Tech Technology Category"). Ran across three employers (Verge → Vox → Atlantic). Wikipedia confirmed dates and award.
+4. **Damn Joan:** Audience development stint between Verge and Vox (mentioned in TalkingBizNews hire announcement)
+5. **Three books:**
+   - "Everything I Need I Get from You: How Fangirls Created the Internet as We Know It" (MCD/FSG Originals, Jun 14, 2022, 320pp, ISBN 978-0-374-53918-4)
+   - "On Nobody Famous: Guesting, Gossiping, Gallivanting" (collection, co-authored with Lizzie Plaugic)
+   - "The Housewives Underground" (Crown, Jun 23, 2026, 512pp, $35, ISBN 978-0-593-72862-8, PW starred review, praised by Liza Mundy, Garrett Graff, Kathryn Olmsted, Booklist)
+6. **Atlantic hire details:** Aug 21, 2019 announcement. Goldberg/LaFrance: "funny, sharp, and possesses both a wealth of weird internet knowledge and a classic magazine sensibility." Initially under Ellen Cushing, now under Damon Beres (senior editor tech, AI Watchdog project co-launcher).
+7. **Key Meta coverage:** "Can Instagram Ruin Your Life? The Jury Will Decide" (Feb 10, 2026 — bellwether trial), "A Landmark Verdict Against Meta and Google" (Mar 25, 2026 — verdict). QAnon series on Facebook/Instagram cited in academic literature.
+8. **"Famous People" newsletter** co-written at Atlantic. Guest on "Offline with Jon Favreau" (Sep 2023).
+9. **MediaScope framing signature:** Cultural anthropology lens — approaches platforms through community/subculture analysis, distinct from investigative (Isaac/Mac/NYT) and policy-legal (Edelman/Atlantic) approaches. Her intellectual pattern (passionate outsider communities creating alternative information ecosystems) maps across all three books.
+
+### Bug Fix: Alex Reisner `milestone` Event Type
+
+Alex Reisner's profile (lines 2512, 2535) used `event_type: milestone` for his LibGen investigation (Mar 2025) and music datasets investigation (Jun 2026). `milestone` is not in the valid CareerEvent event_type enum: `['beat_change', 'career_change', 'departed', 'editorial_role_change', 'education', 'fellowship', 'foreign_posting', 'founded', 'freelance', 'hired', 'intern', 'other', 'promoted', 'rehired', 'returned']`. Changed both to `other`. This was a pre-existing bug from a previous iteration.
+
+### Sources
+- TalkingBizNews (Aug 21, 2019 hire announcement): https://talkingbiznews.com/they-re-hiring/kaitlyn-tiffany-joins-the-atlantics-tech-team/
+- The Rumpus (Mar 2015 author bio, Cornell confirmation): https://therumpus.net/2015/03/12/the-last-book-i-loved-dear-lil-wayne/
+- Goodreads author page: https://www.goodreads.com/author/show/21541839.Kaitlyn_Tiffany
+- FSG Originals author page: https://www.fsgoriginals.com/authors/kaitlyn-tiffany
+- MCD Books author page: https://www.mcdbooks.com/authors/kaitlyn-tiffany
+- The Creative Independent interview & bio: https://thecreativeindependent.com/people/kaitlyn-tiffany/
+- Amazon (The Housewives Underground, product details): https://www.amazon.com/dp/0593728629
+- Publishers Weekly (starred review, Apr 3, 2026): https://www.publishersweekly.com/9780593728628
+- Wikipedia (The Verge, podcast table): https://en.wikipedia.org/wiki/The_Verge
+- Podchaser (Why'd You Push That Button profile): https://www.podchaser.com/podcasts/whyd-you-push-that-button
+- BuzzSumo journalist profile (recent article list)
+- Techmeme (QAnon, Ovarit, Tumblr, Rumble article pickups)
+- Mediagazer (2017 niche communities piece)
+- Bookshop.org (Booklist review excerpt)
+
+### Stats
+- Tests: 1454 (all passing — was 1285 passing + 1 failing pre-fix)
+- journalists.yaml: YAML reformatted (3183 insertions, 2521 deletions — includes Tiffany expansion + YAML reserialization)
+- README.md: migrations count 428 → 429
+- Kaitlyn Tiffany profile: 3 → 4 career entries, 173 → ~2,800+ chars notes, 2/3 → 4/4 sourced
+- New migration detected: freelance → The Verge (Cornell literary → tech journalism)
+- Bug fixed: 2 invalid `milestone` event_types → `other` (Alex Reisner)
+- Commit: `496b29c`
+
