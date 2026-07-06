@@ -14447,3 +14447,42 @@ Deep-dive profile expansion for **Dell Cameron** (Wired senior writer, national 
 
 ### Test Results
 - All **1,454 tests pass** (0 failures, 0 regressions)
+
+
+---
+
+## 2026-07-06 11:00 PT — Type B: Journalist/Publication Research
+
+### Focus
+Research and add new journalist profiles for publications in the tracked set. Targeted two journalists not yet in the DB: **James Temperton** (Wired UK) and **Paul Beckett** (Atlantic).
+
+### Changes
+
+1. **James Temperton** — Wired UK news editor (~2015–2024), laid off mid-2024 during Wired UK contraction. Career: Incisive Media/Dennis Publishing → Wired UK (reporter → news editor, ~10 years) → The Logic (deputy ME, Sept 2024). Launched Wired Awake daily newsletter, hosted 300+ UK podcast episodes, authored "The Future of Medicine" (2021, Penguin). Cardiff BA+MA. His layoff is a key Wired UK contraction data point alongside Greg Williams and Peter Guest departures. Sources: Talking Biz News, Wikipedia (Wired UK), Penguin author page.
+
+2. **Paul Beckett** — Atlantic senior editor for national security/foreign policy (hired Oct 2025). 34-year Dow Jones/WSJ career: community papers (1990) → Newswires (1993, NY/London/Mexico/DC) → WSJ banking reporter (1998) → London bureau chief (2003) → South Asia bureau chief New Delhi (2007) → Asia editor Hong Kong (2013, MH370, 1MDB Pulitzer finalist) → Washington bureau chief (2017, Trump era) → assistant editor Gershkovich case (2023) → Atlantic (2025). Edinburgh University, Scottish-born. Strongest Murdoch→Emerson Collective migration in the dataset. Sources: Talking Biz News (multiple), Adweek, Wikitia, Poynter, Editor & Publisher, TheOrg.
+
+3. **Temperton layoff** added to `editorial_changes.yaml` at date 2024-06.
+
+### Count Changes
+- Journalist count: 134 → **136** (fixed stale 134 in careers_demo.py too)
+- Multi-pub count: 133 → **135**
+- Migration count: 436 → **442** (6 new auto-detected migrations from 2 journalists)
+
+### Files Modified
+- `profiles/careers/journalists.yaml` — 2 new profiles (+170 lines)
+- `profiles/careers/editorial_changes.yaml` — Temperton layoff entry (+18 lines)
+- `README.md` — updated journalist count, migration count, added migration summaries
+- `docs/EDITORIAL_HISTORIES.md` — updated journalist/multi-pub/migration counts
+- `examples/careers_demo.py` — fixed stale 134 → 136
+
+### Key Discoveries
+- **Wired UK print edition fully cancelled** early 2026; Winter 2025 was the final issue. Seven London editorial staff departed end of 2025.
+- **The Atlantic is rapidly expanding** with WSJ pipeline hires: Beckett (Oct 2025), Emily Bobrow, plus WaPo's Oremus (Apr 2026) and Wingett Sanchez. Several more researchers identified but not yet added.
+- Candidates for future iterations: Yvonne Wingett Sanchez (WaPo → Atlantic), Simon Shuster (Time → Atlantic), Emily Bobrow (WSJ → Atlantic).
+
+### Test Results
+- **1,453 tests pass** (0 failures, 1 deselected CLI timeout)
+
+### Commit
+`ea4be27` — pushed to `rayhe/mediascope` main
