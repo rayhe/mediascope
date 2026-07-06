@@ -726,7 +726,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 69-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 72-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1188,3 +1188,182 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 **Design constraint:** Path K must not over-correct genuinely positive financial coverage (e.g., Motley Fool buy recommendations where the article IS bullish). The headline-body alignment threshold (< 0.4) serves as the guard — genuinely positive articles have aligned headlines and bodies, while editorially negative articles masked by financial vocabulary show the telltale headline-body divergence.
 
 **Validation requirement:** Path K should be validated against all 4 financial articles in the annotated corpus before deployment, plus at least 3 additional financial articles from different publications (Seeking Alpha, Investor's Business Daily, Bloomberg Opinion) to ensure cross-publication generalization.
+
+---
+
+## 17. Annotated Corpus Statistics
+
+### 17.1 Overview
+
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **100 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+
+This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
+
+### 17.2 Publication Distribution
+
+The corpus spans **27 distinct publications** across 5 editorial modes:
+
+#### Tracked Publications (5 publications, 55 articles)
+
+These are the publications with full YAML profiles (ownership chains, revenue relationships, conflict mapping):
+
+| Publication | Articles | Coverage Focus |
+|---|---|---|
+| **MIT Technology Review** | 20 | AI development, ethics, military tech, BCI, workforce displacement |
+| **Wired** | 17 | Meta internal culture, smart glasses, facial recognition, contractor labor |
+| **New York Times** | 8 | Regulatory holdouts, child safety, prediction markets, AI restructuring |
+| **The Guardian** | 5 | UK regulatory pressure, whistleblower coverage, CSAM, DeepMind philosophy |
+| **The Atlantic** | 5 | AI slop, data center infrastructure, workplace surveillance, creativity |
+
+#### Wire Services (1 publication, 7 articles)
+
+Reuters serves as the analytical baseline for same-event comparison methodology (§13):
+
+| Publication | Articles | Coverage Focus |
+|---|---|---|
+| **Reuters** | 7 | MCI data exposure, Gemini compute limits, child addiction litigation, town hall coverage, BoE regulation, insurance defense |
+
+#### Tech Editorial (10 publications, 18 articles)
+
+Independent tech press with varying editorial postures, from neutral product coverage to adversarial editorial voice:
+
+| Publication | Articles | Coverage Focus |
+|---|---|---|
+| **Gizmodo** | 7 | Smart glasses, prediction markets, AI tokens, product reviews, child safety |
+| **Memeburn** | 3 | Gemini compute limits, smart glasses cameras, Qualcomm Dragonfly |
+| **Engadget** | 2 | Wynn-Williams lawsuit, child safety broken features |
+| **The Register** | 2 | Brain2Qwerty BCI research |
+| **9to5Mac** | 1 | Smart glasses accessibility paywall |
+| **Android Authority** | 1 | Conversation Focus subscription paywall |
+| **Digital Trends** | 1 | NameTag facial recognition removal |
+| **Malwarebytes** | 1 | Meta AI support bot security hack |
+| **TechCrunch** | 1 | Zuckerberg AI agents town hall |
+| **TechTimes** | 1 | Applied AI "gulag" restructuring |
+
+#### Financial / Investment Press (8 publications, 8 articles)
+
+Critical for documenting the VADER financial journalism inflation bias (§16):
+
+| Publication | Articles | Coverage Focus |
+|---|---|---|
+| **Barron's** | 1 | Meta AI agents disappointment (financial reassurance device discovery) |
+| **Barchart** | 1 | Meta investor urgency / AI capex |
+| **MarketWatch** | 1 | Meta cloud pivot "giving up" framing |
+| **Motley Fool** | 1 | Meta cloud $500B market (highest VADER false positive: 0.997) |
+| **PYMNTS** | 1 | Zuckerberg AI agents admission |
+| **Stocktwits** | 2 | Virtue AI acqui-hire, cloud compute analyst reactions |
+| **TheStreet** | 1 | Meta AI warning before earnings (100th article — worst VADER false positive: 0.9788) |
+
+#### General Interest / Other (3 publications + cross-analyses, 12 articles)
+
+Specialty press and multi-source analyses:
+
+| Publication | Articles | Coverage Focus |
+|---|---|---|
+| **Fast Company** | 3 | AI draft reversal, Wynn-Williams lawsuit, Zuckerberg AI job fears |
+| **AV Club** | 1 | Meta Arena gambling framing |
+| **Futurism** | 1 | Cannes reframe contractor trauma |
+| **iPhoneInCanada** | 1 | Zuckerberg AI agents (editorial dramatization discovery) |
+| **Kotaku** | 1 | Meta Arena / Polymarket rivalry (sardonic correction Path D discovery) |
+| **Newzlet** | 1 | Meta Cannes competitive intelligence (absence-as-evidence/silence-as-guilt discovery) |
+| **WebProNews** | 1 | Meta Dublin contractors AI replacement (worker_replacement_irony, two_tier_treatment discovery) |
+| **Multi-source** | 1 | Meta Claude/Codex restriction (cross-outlet aggregation) |
+
+### 17.3 Temporal Distribution
+
+| Period | Articles | Notes |
+|---|---|---|
+| Aug 2025 | 1 | NYT Meta AI overhaul — earliest article, Path J discovery |
+| Oct 2025 | 2 | Atlantic AI slop and creativity articles |
+| Dec 2025 | 1 | MIT TR AI bubble / Meta spending |
+| Jan 2026 | 3 | MIT TR data centers, AI memory, LeCun/AMI Labs |
+| Mar 2026 | 3 | Wired Ray-Ban/creep, Horizon Worlds, Guardian UK crackdown |
+| Apr 2026 | 3 | MIT TR Chinese workers, resistance, LLM surveillance |
+| May 2026 | 7 | MIT TR Anduril/warfare glasses, Wired dark mood, WebProNews Dublin |
+| Jun 2026 | 60 | Primary collection window — 60% of corpus |
+| Jul 2026 | 20 | Second-highest month — financial journalism genre expansion |
+
+**Collection trajectory:** The corpus grew from ~10 articles (late June 2026) to 100 over 12 days, with the most intensive collection in June–July 2026. Earlier articles (Aug 2025 – May 2026) were retroactively collected to extend temporal coverage and test the toolkit's temporal generalization. The June 2026 concentration reflects the initial sprint to discover and validate framing device types.
+
+### 17.4 Genre Distribution
+
+Articles cluster into 6 editorial genres. Genre determines which VADER failure modes apply and which correction paths are relevant:
+
+| Genre | Articles | VADER Behavior | Primary Correction Paths |
+|---|---|---|---|
+| **Investigative long-form** (Wired, NYT, Guardian) | ~35 | Often wrong direction — positive when editorial stance is adversarial | A, B, E |
+| **Tech editorial** (Gizmodo, Engadget, TechCrunch) | ~20 | Moderate inflation — editorial voice partially captured | D, H, I |
+| **Wire service** (Reuters) | 7 | Generally accurate — neutral prose aligns with VADER assumptions | None needed |
+| **Academic/specialist** (MIT TR, The Register) | ~18 | Variable — depends on whether article is analysis or investigative | A, E, J |
+| **Financial/investment** (Barron's, Motley Fool, TheStreet) | 8 | Severe inflation (0.3–0.5 points) — boosterism vocabulary dominates | Future Path K |
+| **Opinion/editorial** (Atlantic, Fast Company, AV Club) | ~12 | Often wrong direction — sarcasm and irony invert polarity | D, F, H |
+
+### 17.5 Sentiment Correction Path Coverage
+
+Of the 100 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 80 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+
+| Path | Articles Triggering | Discovery Article | Failure Mode |
+|---|---|---|---|
+| **A** | 8 | Wired Meta Applied AI Revolt (Jun 2026) | VADER positive on adversarial prose |
+| **B** | 1 | Wired Meta Cannes Contractors (Jul 2026) | VADER understates negative magnitude |
+| **C** | 1 | Kotaku Meta Arena (Jun 2026) | Anchor devices in product reviews |
+| **D** | 2 | Kotaku Meta Arena (Jun 2026) | Sardonic contempt via loaded language |
+| **E** | 1 | MIT TR Anduril/Meta Warfare Glasses (May 2026) | Military aspirational language inflation |
+| **F** | 1 | Gizmodo Fury Review (Jun 2026) | Positive review with negative editorial wrapper |
+| **G** | 0* | — | Long-text VADER normalization distortion |
+| **H** | 2 | Gizmodo Glasses Subscriptions (Jul 2026) | Sarcastic short editorial tone |
+| **I** | 2 | 9to5Mac Glasses Paywall (Jul 2026) | Direct consumer critique with positive agency |
+| **J** | 2 | NYT Meta AI Overhaul (Aug 2025) | Expert-driven structural critique |
+
+\* Path G operates at the VADER preprocessing level before composite scoring; its activation is not visible in the article-level analysis annotations but fires transparently when VADER long-text normalization distortion exceeds the divergence threshold.
+
+**Path A dominance:** Path A (full VADER override on adversarial prose) fires most frequently because the most common VADER failure mode in media analysis is scoring adversarial editorial prose as positive. This reflects VADER's design for social media text, where positive vocabulary ("great," "amazing") correlates with positive sentiment. In editorial journalism, the same vocabulary can appear in sarcastic, ironic, or undermining contexts.
+
+### 17.6 Same-Event Comparison Coverage
+
+The corpus includes **9 same-event comparison clusters** validated in §10.2 of [QUALITY_STANDARDS.md](QUALITY_STANDARDS.md):
+
+| Tier | Clusters | Articles Involved | Key Finding |
+|---|---|---|---|
+| **Tier 1** (dedicated cross-analysis files) | 3 | 10 | Tone gaps 0.25–1.23; framing device differentials 1:1 to 10:0 |
+| **Tier 2** (same-event article clusters) | 6 | ~20 | Tone ranges 0.21–1.00; genre-controlled signal extraction |
+
+The Zuckerberg town hall cluster (Jul 2–4, 2026) is the highest-value comparison: 5 articles spanning wire service (Reuters), tech editorial (TechCrunch), financial analysis (Barron's), payment industry (PYMNTS), and investment advisory (TheStreet) — demonstrating that identical facts produce a 1.23-point tone spread across editorial modes, the widest gap in the corpus.
+
+### 17.7 Framing Device Discovery Provenance
+
+Every one of the 72 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+
+| Discovery Period | Devices Added | Key Source Articles |
+|---|---|---|
+| Initial taxonomy (through Jun 22) | 10 core + ~30 extended | Wired Meta coverage, NYT AI voluntary review, Guardian UK crackdown |
+| Jun 23–30 | ~20 extended + 3 structural | Prediction market articles (Arena), Wynn-Williams lawsuit cluster, Brain2Qwerty research |
+| Jul 1–5 | ~12 extended + 3 structural | Subscription paywall cluster (Conversation Focus), financial journalism expansion, Cannes contractor coverage |
+
+The most productive single article for framing device discovery was the **Wired "Meta Is Charging a Subscription" article (Jul 2, 2026)**, which contributed 4 new device types (expert_contradiction, loss_leader_framing, consumer_ownership, usage_dismissal_undercut) and led to Path J discovery.
+
+### 17.8 Corpus Quality Assurance
+
+Each annotated article in `examples/sample_output/` follows a standardized structure:
+
+1. **Article metadata**: Publication, date, author, URL (when available)
+2. **Entity detection results**: Primary and secondary entities, cluster matches
+3. **Sentiment scores**: VADER, TextBlob, composite (raw and corrected)
+4. **Framing device inventory**: Every detected device with evidence excerpts
+5. **Source analysis**: Named/anonymous/documentary sources, stance balance, outsourced intensity ratio
+6. **Correction path analysis**: Which path fires (if any), pre/post correction scores
+7. **Manual assessment**: Human-verified tone score and analytical notes
+
+The structural consistency test suite (`test_structural_consistency.py`, 93 tests) includes an **annotated article count guard** that verifies the QUALITY_STANDARDS.md article count matches the actual number of `*_analysis.md` files in the corpus directory. This prevents documentation from drifting from reality.
+
+### 17.9 Corpus Limitations
+
+1. **Publication skew.** MIT Technology Review (20) and Wired (17) together account for 37% of the corpus. This reflects the research's origin in analyzing Wired/Condé Nast coverage bias but may over-represent their specific framing patterns.
+
+2. **Temporal skew.** 80% of articles are from June–July 2026. Methods validated on this window may not generalize to different news cycles (e.g., earnings seasons, election coverage, crisis events).
+
+3. **Meta concentration.** Nearly all articles involve Meta as a primary or secondary entity. The toolkit is designed for any entity, but the corpus validates Meta-specific patterns most thoroughly.
+
+4. **Genre gaps.** The corpus under-represents broadcast transcripts, newsletter-native content, podcast-derived text, and non-English publications. Financial journalism coverage (8 articles) is sufficient for documenting the VADER bias but insufficient for validating a correction path.
+
+5. **Selection bias.** Articles were selected for analytical interest (unusual VADER behavior, rich framing, same-event coverage), not randomly sampled. The corpus over-represents editorially interesting articles and under-represents routine coverage where VADER performs adequately.

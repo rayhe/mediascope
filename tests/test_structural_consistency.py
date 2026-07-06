@@ -249,18 +249,35 @@ class TestDocCountConsistency:
         assert "65.2%" in doc
 
     def test_no_stale_device_type_count_in_docs(self):
-        """No doc should reference an old device-type count (e.g. 56-type) that isn't the current total.
+        """No doc should reference an old total device-type count that isn't current.
 
-        Catches stale references like '56-type taxonomy' that slip through
-        when only positive presence tests (e.g. '69 framing device types')
-        are used.
+        Catches stale references like '56-type taxonomy' or '69-type taxonomy'
+        that slip through when only positive presence tests (e.g. '72 framing
+        device types') are used.
 
         Added: 2026-07-05 02:00 PT, Type D iteration.
+        Updated: 2026-07-06 00:00 PT, Type D — expanded from manual list
+        [33,43,53,56,63,65,67,68] to cover range 30..current-1, using
+        patterns specific to TOTAL counts ("-type taxonomy", "N framing device
+        type") to avoid false positives on subset counts like "26 adversarial
+        types". Previous manual list missed 69 which survived in
+        METHODOLOGY.md §13.2.
         """
         current = self._EXPECTED_TOTAL
-        # Historic counts that should never appear
-        stale_counts = [33, 43, 53, 56, 63, 65, 67, 68]
-        stale_counts = [c for c in stale_counts if c != current]
+        # Scan any count from 30 up to (current-1). Lower bound 30 avoids
+        # false positives on small numbers that appear in other contexts
+        # (e.g. "10 core devices", "6 structural devices").
+        stale_counts = list(range(30, current))
+
+        # Patterns that unambiguously refer to the TOTAL device count:
+        # - "N-type taxonomy" (e.g., "69-type taxonomy")
+        # - "N framing device type" (e.g., "56 framing device types")
+        # - "N device type" preceded by "total" context
+        stale_patterns = [
+            r"\b{n}-type\s+taxonomy",           # "69-type taxonomy"
+            r"\b{n}\s+framing\s+device\s+type",  # "56 framing device types"
+            r"total[^.]*\b{n}\s+device",         # "total of 56 device types"
+        ]
 
         doc_files = [
             "docs/METHODOLOGY.md", "docs/ARCHITECTURE.md",
@@ -270,14 +287,14 @@ class TestDocCountConsistency:
         for doc_path in doc_files:
             doc = (_REPO_ROOT / doc_path).read_text()
             for stale in stale_counts:
-                # Match patterns like "56-type", "56 type", "56 device"
-                pattern = rf"\b{stale}[- ](?:type|device|framing)"
-                match = re.search(pattern, doc)
-                assert match is None, (
-                    f"{doc_path} contains stale device count reference "
-                    f"'{match.group()}' (current total is {current}). "
-                    f"Update to {current}."
-                )
+                for pat_template in stale_patterns:
+                    pattern = pat_template.format(n=stale)
+                    match = re.search(pattern, doc)
+                    assert match is None, (
+                        f"{doc_path} contains stale device count reference "
+                        f"'{match.group()}' (current total is {current}). "
+                        f"Update to {current}."
+                    )
 
 
 class TestTopicBucketConsistency:
