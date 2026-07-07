@@ -40,15 +40,40 @@ ownership_chain:
   - name: "PMX Global, LLC"
     entity_type: "operating_subsidiary"
     description: >
-      New subsidiary of Penske Media Corporation created in mid-2026 to house the combined publishing
+      New subsidiary of Penske Media Corporation created June 18, 2026 to house the combined publishing
       portfolio of PMC's existing titles plus the acquired Vox Media brands. Totals 25+ media titles.
-      President: Ryan Pauley (former President of Vox Media, joined PMC with the acquisition).
-      Pauley reports to Jay Penske (PMC Chairman & CEO) and Craig Perreault (PMC President).
+
+      LEADERSHIP:
+      - President: Ryan Pauley (former President of Vox Media, joined PMC with the acquisition).
+        Reports to Jay Penske (PMC Chairman & CEO) and Craig Perreault (PMC President). Based in New York.
+      - COO: Tom Finn (promoted from PMC EVP Strategy & Operations).
+      - CFO: Ken DelAlcazar (promoted from PMC EVP Finance; with PMC since ~2017, previously led
+        finance automation, multi-brand accounting, and due diligence on PMC's acquisitions).
+
       PMX also houses Concert (Vox Media's premium ad marketplace) and Forte (Vox Media's first-party
       data platform), giving it significant ad tech infrastructure.
+
+      CONTEXT — MURDOCH/LUPA SPLIT:
+      The PMC acquisition followed the Lupa Systems deal (announced May 20, 2026) in which James
+      Murdoch acquired New York Magazine (incl. The Cut, Vulture, Intelligencer, The Strategist,
+      Curbed, Grub Street), the Vox Media Podcast Network (~40 shows incl. Pivot, Today Explained,
+      Criminal, Where Should We Begin?), and Vox.com for ~$300M+ (NYT). Jim Bankoff (Vox Media CEO)
+      joined Lupa's new company, which carries the "Vox Media" name. LionTree advised Vox Media.
+      Lupa's existing holdings include Art Basel and Tribeca Enterprises (Tribeca Film Festival).
+      The Lupa deal was expected to close within 4-6 weeks of May 20 announcement.
+      The PMC acquisition of remaining brands (The Verge, Eater, SB Nation, Popsugar, The Dodo,
+      Punch, Thrillist) was structured as all-or-nothing and completed June 18, 2026. Existing
+      Vox Media shareholders retain minority stake in PMX.
+
+      VALUATION CONTEXT: Vox Media was valued at ~$1B in 2015 (NBCUniversal round). PMC's 2023
+      investment valued it at ~$500M. The Lupa deal alone was ~$300M — meaning Vox Media's total
+      breakup value may have exceeded the 2023 valuation. BuzzFeed sold for $120M (from $1.7B peak).
     source_urls:
       - "https://www.voxmedia.com/2026/6/19/pmc-acquires-vox-media-brands"
       - "https://www.editorandpublisher.com/stories/pmc-acquires-vox-media-brands"
+      - "https://www.adweek.com/media/penske-media-acquires-remaining-vox-media-brands/"
+      - "https://www.wsj.com/james-murdoch-buy-new-york-magazine-vox-300-million"
+      - "https://www.thewrap.com/james-murdoch-vox-media-new-york-magazine-300-million/"
 
   - name: "Penske Media Corporation (PMC)"
     entity_type: "parent_company"
@@ -90,9 +115,14 @@ ownership_chain:
       Roger Penske (father): Billionaire founder and chairman of Penske Corporation, a diversified
       transportation and automotive empire. Key holdings:
       - Penske Automotive Group (NYSE: PAG) — publicly traded, Roger is Chair & CEO, 10%+ owner.
-        PAG is one of the largest US automotive retail groups. Market cap ~$11.8B (Jul 2026).
-        367 franchised dealerships (150 US/Puerto Rico, 217 international). 27,700 employees.
-        Q2 2025: 16.9% gross margin, 8th consecutive quarter of "strong and stable" margin.
+        PAG is one of the largest US automotive retail groups. Market cap ~$11.8B (Jul 7, 2026).
+        Stock: $183.65 (Jul 7 close). 367 franchised dealerships (150 US/Puerto Rico, 217 international).
+        27,700 employees. TTM revenue: $31.8B. TTM net income: $935.4M. TTM EPS: $14.13.
+        Q1 2026: EPS $3.56 (beat $2.91 consensus by $0.65), revenue $7.86B (+1.2% QoQ). GAAP EPS $3.56.
+        Q2 2026 earnings: July 29. FY 2026 consensus EPS: $13.60.
+        Dividend: $5.68/year (3.07% yield), 6 consecutive years of growth, 43.88% annualized 5Y growth.
+        Analyst consensus: Moderate Buy. Morgan Stanley Overweight ($190), Citi Buy ($199),
+        UBS Neutral ($167), JPMorgan Neutral ($170).
       - Penske Truck Leasing (28.9% stake via PTS) — 350,000+ vehicle fleet, leasing/logistics.
       - Indianapolis Motor Speedway — owner since 2019.
       - IndyCar — owner of the racing series.
@@ -467,3 +497,111 @@ litigation_connections:
     source_urls:
       - "https://www.thewrap.com/penske-media-sues-google-digital-ad-market-manipulation/"
       - "https://thecurrent.com/story/the-atlantic-penske-media-vox-sue-google-ad-auction"
+
+  - type: "related_google_doj_search_antitrust"
+    description: >
+      US v. Google (D.D.C.) — DOJ search monopoly case. Judge Amit P. Mehta (SAME JUDGE as PMC
+      AI Overviews case, No. 1:25-cv-03192-APM) issued remedies ruling September 2, 2025.
+      Key holdings:
+      - No Chrome divestiture, no Android divestiture (DOJ's most aggressive asks rejected)
+      - Banned exclusive contracts for Chrome, Search, Google Assistant, and Gemini app
+      - Google must share certain search index and user-interaction data with competitors
+      - Google must offer search/ads syndication services to enable rival competition
+      - Gemini AI app explicitly covered by exclusive-contract ban (GenAI-forward remedies)
+      - Mehta noted GenAI disruption influenced remedies, citing "humility" in changing markets
+      - GOOGL +7.2% on ruling; AAPL +3% (Apple default deal continues, just non-exclusively)
+      - DOJ under AG Bondi "reviewing options and next steps regarding seeking additional relief"
+
+      SIGNIFICANCE FOR PMC CASE: Judge Mehta has now demonstrated he will: (1) NOT order
+      structural breakups absent overwhelming evidence, (2) focus on conduct remedies (contract
+      bans, data sharing), (3) explicitly consider GenAI dynamics. If PMC v. Google reaches
+      remedies, Mehta is likely to follow the same pattern: targeted conduct relief rather than
+      structural separation. His treatment of AI Overviews as subject to antitrust scrutiny
+      (via the Gemini ban) may also preview how he views the separate PMC claim that AI Overviews
+      constitute a distinct product market. Stanford Law analysis called the remedies "careful,
+      detailed, and thoughtful" with a good fit to the specific wrong.
+    case_reference: "US v. Google, D.D.C. (remedies ruling Sep 2, 2025)"
+    source_urls:
+      - "https://www.justice.gov/opa/pr/department-justice-wins-significant-remedies-against-google"
+      - "https://www.reuters.com/google-chrome-android-antitrust-ruling-2025-09-02"
+      - "https://law.stanford.edu/google-search-antitrust-remedies/"
+      - "https://reason.org/commentary/google-avoids-court-ordered-breakup/"
+
+  - type: "related_munich_ai_overviews_liability"
+    description: >
+      Munich Regional Court (Germany) — landmark ruling (~June 13, 2026) finding Google DIRECTLY
+      LIABLE for defamatory content in AI Overviews. Two German publishers sued after AI Overviews
+      falsely linked them to scams and "dubious business practices."
+
+      KEY LEGAL HOLDINGS:
+      - AI Overviews generate "independent, new, and substantive statements" — NOT mere indexing
+      - Google classified as DIRECT infringer (not indirect), overturning prior German precedent
+        that search engines were only indirect infringers for autocomplete/results
+      - AI Overviews treated as Google's OWN content with full publisher liability
+      - "Only Google can adjust the models and the logic" — sole control = sole responsibility
+      - Google's disclaimer ("double-check AI results") insufficient to avoid liability
+      - Google failed to respond to cease-and-desist (weighed against them)
+      - Preliminary injunction issued; Google announced appeal
+
+      DATA ON AI OVERVIEW HARM:
+      - Pew Research: when AI Overviews appear, clicks to traditional results drop from ~15% to ~8%
+      - NYT analysis: ~90% accuracy rate, but at 5T+ searches/year = hundreds of millions of errors
+      - >50% of "accurate" AI Overviews were "ungrounded" (cited sources didn't support claims)
+
+      SIGNIFICANCE FOR PMC CASE: Munich court's classification of AI Overviews as Google's own
+      content (distinct from traditional search indexing) directly supports PMC's argument that
+      AI Overviews are a SEPARATE product from search. Google's defense in the PMC case hinges
+      on AI Overviews being "part of search" and content being "non-rivalrous." The Munich ruling
+      rejects both premises: AI Overviews create NEW content (not non-rivalrous) and constitute
+      a distinct editorial function (not just search). While German rulings are non-binding in
+      D.D.C., they provide persuasive authority and may influence Judge Mehta's analysis.
+
+      US LEGAL COMMENTARY: Alex Shahrestani (Promise Legal): "Section 230 was built for computer
+      bulletin boards, not for a model that writes its own answers. Once the AI is the author,
+      the company is the publisher." This echoes the Munich court's reasoning.
+    case_reference: "Munich Regional Court, preliminary injunction (~Jun 13, 2026)"
+    source_urls:
+      - "https://www.reuters.com/google-german-ruling-ai-overviews-liable-2026-06"
+      - "https://www.malwarebytes.com/blog/ai/2026/06/google-can-be-liable-for-false-ai-overviews-court-rules"
+      - "https://canadianlawyermag.com/google-munich-court-ai-overviews/"
+      - "https://www.cio.com/article/google-liable-false-information-ai/"
+
+  - type: "related_eu_google_android_fine_confirmed"
+    description: >
+      EU Court of Justice (CJEU, Luxembourg) — July 2, 2026. Google/Alphabet lost final appeal
+      of €4.1B EU antitrust fine (original €4.34B, reduced by General Court in 2022) for abusing
+      Android market dominance. Court confirmed Google illegally forced phone manufacturers to
+      pre-install Search, Chrome, and Play Store. No further appeal possible.
+      Google has now accumulated ~€11B in EU fines in last decade (Android €4.1B + Shopping €2.42B
+      in 2017/2021 + AdSense €1.49B in 2019). Google says it "adapted agreements to comply"
+      back in 2018.
+
+      SAME WEEK: Swedish court ordered Google to pay ~$1.5B to PriceRunner (Klarna) for favoring
+      its own shopping service — largest Swedish competition case award ever (14.3B SEK).
+
+      SIGNIFICANCE: Accumulating Google antitrust losses globally strengthen PMC's litigation
+      position by establishing judicial pattern of Google market abuse. Android ruling confirms
+      Google's pattern of tying products — directly relevant to PMC's argument that Google ties
+      AI Overviews to search indexing.
+    case_reference: "Google/Alphabet v. European Commission, CJEU (Jul 2, 2026)"
+    source_urls:
+      - "https://www.reuters.com/google-eu-android-antitrust-fine-appeal-lost-2026-07"
+      - "https://www.nypost.com/google-eu-4-7-billion-antitrust-fine/"
+      - "https://www.reuters.com/google-klarna-pricerunner-1-5-billion-damages/"
+
+  - type: "related_ecj_publisher_rights_streamz"
+    description: >
+      ECJ case (Streamz et al. v. Belgium) — oral hearing July 6-7, 2026. Google, Meta, Spotify,
+      and Sony challenging Belgium's implementation of Article 15 DSM Directive (press publishers'
+      rights). Denmark intervened in favor of Belgium/publishers, urging ECJ to "clearly define
+      the scope of press publishers' rights" and tech giants' obligation to pay for content.
+      Culture Minister Stampe: "tech giants should not be allowed to use media content without
+      paying for it." Denmark also participates in separate Google AI training copyright case.
+
+      SIGNIFICANCE: If ECJ rules publishers have strong rights under DSM Directive, it creates
+      EU-wide legal precedent that content has monetary value — supportive of PMC's US argument
+      that Google should pay publishers for AI Overview use. A ruling against publishers could
+      weaken the broader publisher rights framework PMC relies on.
+    case_reference: "Streamz et al. v. Belgium, ECJ (oral hearing Jul 6-7, 2026)"
+    source_urls:
+      - "https://www.reuters.com/denmark-eu-publishers-rights-streamz/"
