@@ -2,6 +2,81 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-06 21:00 PT — Type C: Ownership & Funding Deep Dive — The Verge/PMC: FEC Donations, Dual Google Lawsuits, WGAE CBA Successor Clause
+
+**Focus:** The Verge / Penske Media Corporation profile. Last Verge Type C was the initial profile build. This iteration targets 5 areas with primary source verification: (1) Roger Penske FEC donations upgraded from secondary reporting ($1.1M) to OpenSecrets/FEC verified ($4.125M), (2) PMC's two separate Google lawsuits documented with case numbers, (3) Vox Media Union CBA §39 successor clause and §40 AI protections — read from the actual WGAE PDF, (4) SXSW governance under PMC, (5) PMC leadership transition.
+
+### What Changed
+
+**1. Roger Penske Political Donations — Upgraded from $1.1M to $4.125M (OpenSecrets FEC verified)**
+
+Previous profile cited Medium/Rosenbaum secondary source: "$1.1M+ to Trump-aligned efforts in 2024." OpenSecrets Penske Corp profile shows **$4,125,256 total** in 2024 election cycle. Itemized key donations from FEC records:
+- $1,000,000 → Make America Great Again Inc (Jun 26, 2024)
+- $1,000,000 → Turnout for America (Oct 29, 2024)
+- $500,000 → Great Lakes Conservatives Fund ($250K Jun + $250K Oct 2024)
+- $250,000 → Buckeye Values PAC (May 2023)
+- $200,000 → Committed to America PAC (Oct 2023)
+- $123,900 → National Republican Senatorial Cmte (Sep 11, 2024)
+- $24,597 → Donald Trump direct (cumulative)
+- $5,600 → Donald Trump ($2,800 × 2, Aug 2, 2019 — confirmed first Trump donation)
+Also documented: earlier bipartisan donations to Democrats Brenda Lawrence (D-MI, 2013/2018) and Debbie Stabenow (D-MI, 2016), and $250K to Right To Rise USA (Jeb Bush, 2015). Penske Corp lobbying: $150K (2024), $170K (2023).
+Analytical significance: 3.75× larger political footprint than previously documented. The bipartisan→Republican shift after Presidential Medal of Freedom (2019) is now verifiable with exact date alignment.
+
+**2. PMC vs Google — Expanded from 1 vague entry to 2 precisely documented lawsuits**
+
+(a) **AI Overviews** — PMC v. Google LLC, 1:25-cv-03192-APM (D.D.C.), filed Sep 13, 2025. First major US publisher to sue over AI Overviews. Six Sherman Act counts. PMC claims affiliate revenue down >33% from peak; ~20% of searches showing AI Overviews (expected to rise). Google filed MTD Jan 13, 2026 ("legally defective in every way"). Counsel: Susman Godfrey vs WilmerHale. Pending before Judge APM.
+
+(b) **Ad Tech Antitrust** — PMC & SheMedia v. Google (S.D.N.Y., filed Jan 2026). Alleges Google monopolized publisher ad-server/ad-exchange, used "Last Look" and "Minimum Bid to Win" schemes. SheMedia operates network for ~1,800 websites. Builds on 2025 EDVA ruling.
+
+Other parallel plaintiffs: The Atlantic, Business Insider, People Inc., Slate. Separate from DOJ search/ad cases.
+
+**3. Vox Media Union CBA — Full §39 Successor Clause and §40 AI Protections (from WGAE PDF)**
+
+Read the actual CBA document (wgaeast.org). Key findings:
+- **§39 Successor clause:** Equity transaction → CBA binding on successors for full term. Asset transaction → purchaser must assume CBA if hiring majority of bargaining unit. This means PMC/PMX is legally bound through June 2028. Exception: individual asset sales (podcasts, newsletters).
+- **§40 AI protections:** No layoffs solely from GAI; GAI content requires editorial/legal review and public disclosure; employees may decline credit on GAI-assisted content; no digital replicas without consent; no mimicking employee's "distinct authorial voice or style" via GAI prompts.
+- **§41 Anti-surveillance:** No real-time keystroke monitoring, camera/mic surveillance, or idle tracking.
+- Wage: 5%/4% Year 1, 3.25%/2.75% Years 2-3. Floor: $70K exempt, $68K non-exempt.
+- Layoffs: 2 weeks paid non-working notice + minimum 12 weeks severance.
+- CBA term: June 13, 2025 – June 12, 2028.
+- Context: 95% strike authorization vote (Jun 2025), 3,000+ solidarity letters, Polygon/Valnet union busting controversy (May 2025).
+
+Analytical significance: Strongest labor protection in any tracked publication. PMC cannot unilaterally restructure The Verge's editorial workforce without CBA compliance through June 2028.
+
+**4. SXSW Governance Details Expanded**
+
+Previous: vague "staff directed to bring more conservative voices." Now: 11 people fired/departed (Hugh Forrest 35yr veteran, Charlie Sotelo Comedy Festival producer, Lillian Park VP Communications, CTO, others unnamed). Jennifer Connelly appointed "director in charge." Forrest: "Leaving South by Southwest was definitely not my decision." PMC acquired controlling interest via additional 1% stake Aug 2023. NYT: SXSW missed PMC's "ambitious" goals 2024-2025. Convention center under demolition/reconstruction through 2029.
+
+**5. PMC Leadership Transition (Jul 2025)**
+
+George Grobar (PMC President since ~2009, previously CFO) shifted to CEO advisory/board role Jul 30, 2025. Craig Perreault promoted from Chief Strategy Officer to President of Media & Corporate Development. Added PAG market cap (~$11.8B), dealership count (367 franchised, 150 US + 217 international), employee count (27,700), Q2 2025 gross margin data (16.9%, 8th consecutive quarter).
+
+### Sources
+- OpenSecrets: Penske Corp profile, Roger Penske donor lookup (FEC individual contributions, 2024 cycle)
+- Reuters: "Google defends AI search summaries in Rolling Stone publisher's lawsuit" (Jan 13, 2026) — MTD filing details, case number, counsel
+- TechCrunch: "Rolling Stone owner Penske Media sues Google over AI summaries" (Sep 13, 2025) — original filing, Jay Penske statement
+- The Wrap: "Penske Media Sues Google Over Accusation of Digital Ad Market Manipulation" (Jan 2026) — S.D.N.Y. ad tech suit, SheMedia details
+- The Fashion Law: "Google Urges Court to Toss PMC Challenge to AI Overviews" (Jan 2026) — MTD analysis, non-rivalrous content argument, both cases connected
+- WGAE: Vox Media CBA 2025-2028 full PDF (wgaeast.org) — §39 successor, §40 AI, §41 surveillance, salary tiers
+- WGA East press release: "WGA East Members at Vox Media Ratify New Union Contract" (Sep 2025) — contract highlights, strike authorization context
+- The Wrap: "WGA Slams Polygon Layoffs, Valnet Acquisition" (May 2025) — union busting context
+- NYC Central Labor Council: strike solidarity campaign (Jun 2025) — 95% authorization, 3,000+ letters
+- Sustainable Media Center (Rosenbaum): "Jay Penske Takes Control of SXSW" (Apr 2025) — governance purge, conservative speaker mandate
+- The Wrap: "SXSW President Says He Was Forced Out" (Apr 2025) — Forrest statement, Connelly appointment
+- Editor & Publisher: Grobar/Perreault leadership change (Jul 30, 2025)
+- MarketBeat: PAG Q2 2025 earnings transcript — Roger Penske quotes, margin data, dealership diversification
+
+### Stats
+- Tests: 1,456 passed (0 failed)
+- Profile changes: +159 lines (28 deleted, 187 added)
+- New section: labor_union (complete WGAE CBA analysis)
+- Expanded: litigation_connections (1 entry → 2 precise case entries)
+- Expanded: Penske family (political donations 3.75× larger with FEC verification)
+- Expanded: SXSW governance (11 departures, Connelly appointment, convention center status)
+- New: PMC leadership transition (Grobar → Perreault)
+- Commit: `1a40285`
+
+---
 ## 2026-07-06 19:00 PT — Type B: Journalist/Publication Research — Tim Marchman Deep Profile
 
 **Focus:** Tim Marchman, Wired's Senior Director of Science, Politics, and Security — the single most consequential editor hire under Katie Drummond's Wired regime. Previously had 4 career entries and 398 notes chars. Expanded to 7 career entries, comprehensive analytical_value, deep notes, and 8 source URLs.
