@@ -90,27 +90,60 @@ ownership_chain:
       Roger Penske (father): Billionaire founder and chairman of Penske Corporation, a diversified
       transportation and automotive empire. Key holdings:
       - Penske Automotive Group (NYSE: PAG) — publicly traded, Roger is Chair & CEO, 10%+ owner.
-        PAG is one of the largest automotive retail groups in the US.
-      - Penske Truck Leasing — 360,000+ truck fleet, ubiquitous orange rental trucks.
+        PAG is one of the largest US automotive retail groups. Market cap ~$11.8B (Jul 2026).
+        367 franchised dealerships (150 US/Puerto Rico, 217 international). 27,700 employees.
+        Q2 2025: 16.9% gross margin, 8th consecutive quarter of "strong and stable" margin.
+      - Penske Truck Leasing (28.9% stake via PTS) — 350,000+ vehicle fleet, leasing/logistics.
       - Indianapolis Motor Speedway — owner since 2019.
       - IndyCar — owner of the racing series.
-      - Team Penske — major racing team (IndyCar, NASCAR, IMSA).
+      - Team Penske — major racing team (IndyCar, NASCAR, IMSA). 600+ major race wins.
 
-      POLITICAL CONNECTIONS: Roger Penske received the Presidential Medal of Freedom from Donald Trump
-      in 2019. Made his first donation to Trump's reelection the same year. Contributed $1.1M+ to
-      Trump-aligned efforts in 2024 election cycle (per Medium/Steve Rosenbaum). Previously backed
-      anti-Trump groups in 2016 — shifted course after Medal of Freedom.
+      POLITICAL CONNECTIONS (FEC/OpenSecrets verified, 2024 cycle):
+      Penske Corp total contributions: **$4,125,256** in 2024 election cycle (OpenSecrets).
+      Roger Penske personal donations (FEC itemized):
+      - $1,000,000 → Make America Great Again Inc (Jun 26, 2024)
+      - $1,000,000 → Turnout for America (Oct 29, 2024)
+      - $500,000 → Great Lakes Conservatives Fund ($250K Jun + $250K Oct 2024)
+      - $250,000 → Buckeye Values PAC (May 2023)
+      - $200,000 → Committed to America PAC (Oct 2023)
+      - $123,900 → National Republican Senatorial Cmte (Sep 11, 2024)
+      - $24,597 → Donald Trump (R-PRES) direct (cumulative)
+      - $10,000 → Republican Party of Ohio (Oct 2024)
+      - $5,600 → Donald Trump (R) ($2,800 × 2, Aug 2, 2019 — first Trump donation)
+      Earlier: $250,000 → Right To Rise USA (Jeb Bush, 2015). Also donated to Democrats
+      including Brenda Lawrence (D-MI, 2013/2018) and Debbie Stabenow (D-MI, 2016).
+      Penske Corp lobbying: $150,000 in 2024, $170,000 in 2023.
+      Presidential Medal of Freedom from Trump (2019) — same year as first Trump donation.
 
       Jay Penske has projected political neutrality publicly, but insiders at multiple PMC brands
       describe a "quiet realignment toward 'balanced' — often more conservative — voices and priorities"
       (Medium/Rosenbaum, SXSW analysis). At SXSW, staff were reportedly "directed to bring more
       conservative voices to the stage" after PMC acquisition.
 
+      SXSW GOVERNANCE (Apr-May 2025):
+      PMC took 50% stake in SXSW in 2021; acquired additional 1% for controlling interest (Aug 2023).
+      April 2025: 11 people fired/departed including Hugh Forrest (35-year SXSW veteran, president
+      since 2022), Charlie Sotelo (Comedy Festival producer), Lillian Park (VP Communications),
+      and the CTO. Jennifer Connelly appointed "director in charge." Forrest: "Leaving South by
+      Southwest was definitely not my decision." PMC's response: "Hugh made the decision to leave."
+      Insiders: profitability mandates + ideological rebalancing toward conservative speakers.
+      NYT reported SXSW did not meet PMC's "ambitious" goals for 2024 or 2025.
+      PMC countered: "highest ever sponsorship revenue in the history of the company."
+      Austin Convention Center (SXSW's home base) under demolition/reconstruction through 2029.
+
+      PMC LEADERSHIP (Jul 2025):
+      George Grobar (PMC President since ~2009) shifted to CEO advisory/board role (Jul 30, 2025).
+      Craig Perreault promoted from Chief Strategy Officer to President of Media & Corporate
+      Development. Reports to Jay Penske.
+
       Jay also owns Dragon Racing (Formula E team) and Dragon Books (antiquarian bookstore, LA).
     source_urls:
       - "https://en.wikipedia.org/wiki/Jay_Penske"
       - "https://www.celebritynetworth.com/richest-businessmen/jay-penske-net-worth/"
       - "https://stevenrosenbaum.medium.com/jay-penske-takes-control-of-sxsw"
+      - "https://www.opensecrets.org/orgs/penske-corp/summary?id=D000072612"
+      - "https://www.thewrap.com/sxsw-president-says-he-was-forced-out/"
+      - "https://www.editorandpublisher.com/stories/george-grobar-shifts-to-adviser-role-at-penske-media/"
 
 # ===================================================================
 # REVENUE RELATIONSHIPS
@@ -143,22 +176,42 @@ revenue_relationships:
     relationship_type: "litigation_adversary"
     estimated_value: "damages sought (undisclosed)"
     description: >
-      Penske Media, Vox Media, and The Atlantic filed separate lawsuits against Google alleging
-      manipulation of ad auctions and rigged bids in digital advertising. The suits allege Google
-      "intentionally undercut publishers in ad auctions for more than a decade, depressing prices
-      and causing significant revenue losses." Filed in the wake of a federal judge's ruling that
-      Google holds unlawful monopolies in two ad tech markets (EDVA case, remedies phase ongoing).
+      PMC has TWO separate lawsuits against Google:
+
+      1. AI OVERVIEWS (D.D.C., No. 1:25-cv-03192-APM, filed Sep 13, 2025):
+      PMC sued Google alleging AI Overviews use publisher journalism without consent to create
+      AI-generated search summaries, reducing traffic and revenue. Claims Google conditions search
+      indexing on permitting AI use of content — a coercive tie under Sherman Act. Six counts:
+      reciprocal dealing (§1 and §2), monopoly leveraging, monopolization, attempted monopolization,
+      unjust enrichment. PMC claims ~20% of Google searches linking to its sites show AI Overviews
+      (expected to rise), affiliate revenue down >33% from peak by end of 2024.
+      Google filed motion to dismiss Jan 13, 2026 ("legally defective in every way"), arguing
+      AI Overviews are part of search (not a separate product), content is non-rivalrous, and
+      the booming AI licensing market undermines foreclosure claims. Case pending before Judge APM.
+      Counsel: Susman Godfrey (PMC) vs WilmerHale (Google).
+
+      2. AD TECH ANTITRUST (S.D.N.Y., filed Jan 2026):
+      PMC and subsidiary SheMedia sued Google alleging illegal monopolization of publisher ad-server
+      and ad-exchange markets. Claims Google manipulated real-time ad auctions using "Last Look,"
+      "Minimum Bid to Win," and related schemes — saw rivals' bids before submitting its own.
+      SheMedia operates ad network for ~1,800 websites. Builds on 2025 federal ruling (EDVA) that
+      Google holds unlawful monopolies in two ad tech markets (remedies phase ongoing).
+
+      Other publisher plaintiffs in parallel ad-tech suits: The Atlantic, Business Insider, People
+      Inc., Slate. Separate from DOJ search and ad antitrust cases.
 
       CONFLICT SIGNIFICANCE: Google competes with Meta in search, advertising, AI, and wearables
-      (Android XR smart glasses vs Meta Ray-Ban). Adversarial financial relationship with Google
-      could create coverage spillover effects. Vox Media also disclosed the Google lawsuit on
-      The Vergecast (Jan 2026): "Disclosure is our brand."
-
-      Separately, Google's AI Overviews are an existential traffic threat to The Verge (same dynamic
-      as Condé Nast's "Google Zero" planning).
-    date_established: "2025-12"
+      (Android XR smart glasses vs Meta Ray-Ban). PMC's adversarial financial relationship with
+      Google across two lawsuits creates complex coverage incentive structures. The Verge disclosed
+      the lawsuit on the Vergecast (Jan 2026): "Disclosure is our brand." But disclosure of the
+      lawsuit's existence is different from disclosing how it might shape editorial incentives.
+    date_established: "2025-09"
     source_urls:
       - "https://thecurrent.com/story/the-atlantic-penske-media-vox-sue-google-ad-auction"
+      - "https://www.reuters.com/legal/litigation/google-defends-ai-search-summaries-rolling-stone-publishers-lawsuit-2026-01-13/"
+      - "https://techcrunch.com/2025/09/13/rolling-stone-owner-penske-media-sues-google-over-ai-summaries/"
+      - "https://www.thewrap.com/penske-media-sues-google-digital-ad-market-manipulation/"
+      - "https://www.thefashionlaw.com/google-urges-court-to-toss-pmc-challenge-to-ai-overviews/"
 
   - partner: "Meta"
     relationship_type: "advertising"
@@ -183,6 +236,60 @@ revenue_relationships:
       Concert competes in the same ad tech ecosystem where Google (sued by PMC/Vox) and Meta operate.
       Forte is Vox Media's first-party data platform, also acquired by PMC.
     date_established: "2016"
+
+# ===================================================================
+# LABOR & UNION STATUS
+# ===================================================================
+labor_union:
+  union_name: "Writers Guild of America, East (WGAE)"
+  cba_term: "June 13, 2025 – June 12, 2028"
+  cba_source: "https://www.wgaeast.org/wp-content/uploads/sites/4/2025/09/Vox-Media-WGAE-CBA-2025-2028.pdf"
+  description: >
+    The Verge's editorial staff are represented by the Vox Media Union (WGAE). The current CBA
+    was ratified September 2025 after a 95% strike authorization vote, covering The Verge, Eater,
+    SB Nation, Popsugar, The Dodo, Punch, and Thrillist bargaining unit employees.
+
+    KEY PROVISIONS:
+    - Wage increases: Year 1: 5% (under $106K), 4% (over $106K); Years 2-3: 3.25%/2.75%
+    - Salary floor: $70,000 (exempt), $68,000 (non-exempt)
+    - Layoff protections: 2 weeks paid non-working notice + minimum 12 weeks severance
+    - AI protections (§40): No layoffs solely from GAI implementation; GAI-generated content
+      requires editorial/legal review and public disclosure; employees may decline credit on
+      GAI-assisted content; no digital replicas without consent; no mimicking employee's
+      "distinct authorial voice or style" via GAI prompts without consent
+    - Anti-surveillance (§41): No real-time keystroke monitoring, camera/microphone surveillance,
+      or idle-time tracking
+    - DEI: $50K annual DEC budget + $10K conference fund + $50K retention programs
+    - PTO: unlimited, with encouragement to take ≥25 days/year (up from 20)
+
+    SUCCESSOR CLAUSE (§39) — critical for PMC acquisition:
+    - Equity transaction: CBA binding on successors for its full term
+    - Asset transaction: if purchaser hires majority of bargaining unit employees to operate
+      acquired assets, purchaser must assume CBA for balance of term as a condition of purchase
+    - Exception: does not apply to "sale of individual assets such as podcasts or newsletters"
+    - This clause means PMC/PMX is legally bound by the CBA through June 2028, including all
+      AI protections, layoff procedures, and wage commitments
+
+    HISTORICAL CONTEXT:
+    - May 2025: Vox Media sold Polygon to Valnet; WGAE condemned as union busting; ≥25 laid off,
+      many union members. Sale occurred during contract negotiations. Valnet refused to meet
+      with union or Group Publisher Chris Grant.
+    - June 2025: 95% strike authorization vote; CLC/AFL-CIO solidarity campaign; 3,000+ letters
+      sent to CEO Jim Bankoff demanding fair contract
+    - September 2025: CBA ratified
+
+    ANALYTICAL SIGNIFICANCE:
+    The successor clause is the strongest labor protection in any of the 6 tracked publications.
+    It means PMC cannot unilaterally restructure The Verge's editorial workforce (via layoffs
+    or AI replacement) without CBA compliance through June 2028. This contrasts with
+    non-unionized PMC properties where editorial changes can be made by ownership fiat.
+    The AI protections specifically prevent the kind of quiet editorial identity erosion
+    reported at Rolling Stone, Variety, and SXSW.
+  source_urls:
+    - "https://www.wgaeast.org/wp-content/uploads/sites/4/2025/09/Vox-Media-WGAE-CBA-2025-2028.pdf"
+    - "https://wgaeast.org/wga-east-members-at-vox-media-ratify-new-union-contract/"
+    - "https://www.thewrap.com/wga-slams-polygon-layoffs-valnet-acquisition-vox-media/"
+    - "https://nycclc.org/take-action-help-union-members-at-vox-win-a-fair-contract/"
 
 # ===================================================================
 # EDITORIAL LEADERSHIP
@@ -327,12 +434,36 @@ known_conflicts:
 # LITIGATION CONNECTIONS
 # ===================================================================
 litigation_connections:
-  - type: "plaintiff"
+  - type: "plaintiff_ai_overviews"
     description: >
-      PMC and Vox Media (separately) sued Google for ad tech antitrust damages (filed late 2025/early
-      2026). Alleges Google manipulated ad auctions, depressing publisher revenue for over a decade.
-      Part of a wave of publisher suits following the federal court ruling (EDVA) that Google holds
-      unlawful monopolies in web ad tech markets. Remedies phase ongoing. Other plaintiffs include
-      The Atlantic, Business Insider, People Inc., and Slate.
-    case_reference: "PMC v. Google (ad tech antitrust), filed ~Dec 2025"
-    source_url: "https://thecurrent.com/story/the-atlantic-penske-media-vox-sue-google-ad-auction"
+      PMC v. Google LLC and Alphabet Inc., No. 1:25-cv-03192-APM (D.D.C.).
+      Filed September 13, 2025 — first major US publisher lawsuit targeting Google AI Overviews.
+      Six counts under Sherman Act: reciprocal dealing (§1, §2), monopoly leveraging,
+      monopolization, attempted monopolization, and common-law unjust enrichment.
+      Google filed motion to dismiss January 13, 2026, calling suit "legally defective in every way."
+      Google argues: AI Overviews are part of search (not separate product), content is non-rivalrous,
+      booming AI licensing market undermines foreclosure claims, no referral traffic guarantees.
+      PMC's counsel: Susman Godfrey (Ian Crosby, Davida Brook, Geng Chen).
+      Google's counsel: WilmerHale (Sonal Mehta, David Gringer).
+      Status as of July 2026: motion to dismiss pending.
+    case_reference: "PMC v. Google LLC, 1:25-cv-03192-APM (D.D.C.)"
+    source_urls:
+      - "https://www.reuters.com/legal/litigation/google-defends-ai-search-summaries-rolling-stone-publishers-lawsuit-2026-01-13/"
+      - "https://techcrunch.com/2025/09/13/rolling-stone-owner-penske-media-sues-google-over-ai-summaries/"
+      - "https://www.thefashionlaw.com/google-urges-court-to-toss-pmc-challenge-to-ai-overviews/"
+
+  - type: "plaintiff_ad_tech"
+    description: >
+      PMC and SheMedia v. Google (S.D.N.Y., filed January 2026).
+      Alleges Google illegally monopolized publisher ad-server and ad-exchange markets,
+      manipulated real-time ad auctions using "Last Look," "Minimum Bid to Win," and related
+      schemes to see rivals' bids before submitting its own, keeping prices artificially low.
+      SheMedia operates advertising network for ~1,800 websites, particularly vulnerable as
+      they rely heavily on digital ads. Seeks damages and injunctive relief.
+      Builds on 2025 EDVA federal court ruling that Google holds unlawful monopolies in two
+      ad tech markets (remedies phase ongoing). Part of wave of publisher suits (The Atlantic,
+      Business Insider, People Inc., Slate filed separately).
+    case_reference: "PMC & SheMedia v. Google (S.D.N.Y., filed Jan 2026)"
+    source_urls:
+      - "https://www.thewrap.com/penske-media-sues-google-digital-ad-market-manipulation/"
+      - "https://thecurrent.com/story/the-atlantic-penske-media-vox-sue-google-ad-auction"
