@@ -2,6 +2,67 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-07 10:00 PT — Type B: Journalist Research — 3 Verge Journalists + Alex Heath Expansion
+
+**Focus:** The Verge had only 9 tracked journalists — fewest of any publication. Added 3 missing journalists and significantly expanded the existing Alex Heath entry with a previously undocumented career stop.
+
+### New Journalists Added
+
+**1. Sean Hollister — Senior Editor, The Verge (founding member 2011, returned Oct 2018-present)**
+- **Career:** The Verge (founding editor, 2011-2014) → Gizmodo (reviews editor) → CNET (senior editor, Speed Desk initiative tripled breaking news traffic) → The Verge (senior news editor, Oct 2018-present)
+- **Key detail:** Apple recusal since June 2023 — wife employed at Apple as video producer. Does not report on or edit Apple stories.
+- UC Santa Barbara (Communication and Japanese). Union City, CA.
+- **Analytical value:** Only "boomerang" journalist in The Verge dataset — return migration tests whether institutional framing is re-acquired after external stints at two different outlets (Gizmodo, CNET).
+- **Sources:** Talking Biz News, The Org, The Verge profile, Muck Rack
+- **4 career entries** spanning 2011-present across 3 organizations
+
+**2. Emma Roth — News Writer III/Weekend News Editor, The Verge (2022-present)**
+- **Career:** MUO (MakeUseOf, writer/editor) → The Verge (news writer, 2022)
+- Central Connecticut State University. Based in Port St. Lucie, Florida.
+- 8,000+ published articles — one of The Verge's most prolific daily contributors
+- Covers streaming wars, consumer tech, AI, crypto, social media, Big Tech-government interactions
+- **Analytical value:** High-volume output shapes significant portion of The Verge's daily news framing. News writer role (vs. senior editorial) means her framing is more likely institutional baseline.
+- **Sources:** Muck Rack, The Org, RocketReach, BuzzSumo, JournalistHunt
+- **2 career entries** spanning 2021-present across 2 organizations
+
+**3. Jess Weatherbed — News Writer, The Verge (2022-present)**
+- **Career:** TechRadar (computing writer, Future plc) → The Verge (news writer, 2022)
+- UK-based. Originally trained in prosthetics makeup and wig-making. Also contributed to GamesRadar, PCGamer, Creative Bloq, Space.com.
+- Covers creative industries, computing, internet culture, AI copyright
+- Significant AI training data disputes coverage — directly relevant to Meta generative AI legal exposure
+- **Analytical value:** UK perspective provides regulatory context diversity (EU AI Act, UK Online Safety Act). TechRadar → Verge migration tests cross-national framing portability.
+- **Sources:** The Org, TechRadar author page, Muck Rack
+- **2 career entries** spanning 2021-present across 2 organizations
+
+### Updated: Alex Heath
+
+Significantly expanded from 5 to 6 career entries:
+- **Added Cheddar stint (2017-2019)** — previously undocumented. Senior reporter for "Cheddar Scoops" M&A/product launch breaking news initiative.
+- **Won 2018 Larry Birger Young Business Journalist Award** from SABEW (under 30 excellence in business reporting). Age 25 at time of award, from Louisville, Kentucky.
+- **Corrected dates:** Cult of Mac 2011-2015 (was 2010-2012), Business Insider 2015-2017 (was 2012-2018) based on Entrepreneur bio, WEF profile, and SABEW award article.
+- **Added 4 new source URLs:** SABEW, WEF, Vox Media Access announcement, The Information reporter page
+- **Analytical significance:** 6-publication career (Cult of Mac → BI → Cheddar → The Information → Verge → Sources) is now the richest migration dataset of any single journalist — was 5, now includes the Cheddar stop which represents a rare mainstream→video-financial-news career detour.
+
+### Editorial Changes Added
+- +1: Sean Hollister return (Oct 2018, senior news editor)
+- +1: Emma Roth hire (2022, news writer)
+- +1: Jess Weatherbed hire (2022, news writer)
+- Total editorial changes: 156 (was 153, +3)
+
+### Documentation Updates
+- Updated journalist count: 163 → 166 (README.md, EDITORIAL_HISTORIES.md, careers_demo.py)
+- Updated multi-pub count: 161 → 164 (EDITORIAL_HISTORIES.md)
+- Updated migration count: 526 → 532 (README.md, EDITORIAL_HISTORIES.md)
+
+### Stats
+- **Journalists:** 166 (was 163, +3)
+- **Multi-pub:** 164 (was 161, +3)
+- **Migrations:** 532 (was 526, +6)
+- **Editorial changes:** 156 (was 153, +3)
+- **The Verge journalists:** 12 (was 9, +3 — now comparable to Guardian's 11)
+- **Tests:** 1,469 passed, 0 failed (97 structural + 21 careers = 118 passed)
+- **Commit:** `106c909`
+
 ## 2026-07-07 08:00 PT — Type A: Article Deep Dive — AP Mosseri Addiction Testimony (Feb 2026)
 
 **Focus:** AP wire story on Instagram head Adam Mosseri's bellwether trial testimony about social media addiction (Feb 11, 2026). First executive to testify in landmark child safety litigation. Surfaced major entity and topic keyword gaps in trial/litigation coverage.
