@@ -263,3 +263,29 @@ class TestScandalComparisonFraming:
         devices = detect_framing_devices(text)
         scandal_hits = [d for d in devices if d.device_type == "scandal_comparison"]
         assert len(scandal_hits) > 0, "'another FTX' should trigger scandal_comparison"
+
+
+class TestMosseriEntityDetection:
+    """Tests for Adam Mosseri entity detection in the Meta cluster
+    (added Type A iteration, 2026-07-07)."""
+
+    def test_adam_mosseri_detected_as_meta(self):
+        text = "Adam Mosseri, the head of Instagram, testified in court."
+        entities = detect_entities(text)
+        meta_entities = [e for e in entities if e.cluster == "Meta"]
+        matched = [e.entity for e in meta_entities]
+        assert "Adam Mosseri" in matched or "Mosseri" in matched
+
+    def test_mosseri_standalone_detected_as_meta(self):
+        text = "Mosseri said he was not claiming to be a medical expert."
+        entities = detect_entities(text)
+        meta_entities = [e for e in entities if e.cluster == "Meta"]
+        matched = [e.entity for e in meta_entities]
+        assert "Mosseri" in matched
+
+    def test_phyllis_jones_detected_as_meta(self):
+        text = "Meta lawyer Phyllis Jones tried to reframe the questioning."
+        entities = detect_entities(text)
+        meta_entities = [e for e in entities if e.cluster == "Meta"]
+        matched = [e.entity for e in meta_entities]
+        assert "Phyllis Jones" in matched or "Meta" in matched

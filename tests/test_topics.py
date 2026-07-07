@@ -557,3 +557,60 @@ class TestDensityNormalization:
             f"400-word text ({layoff_400.confidence}) should score higher than "
             f"250-word text ({layoff_250.confidence}) due to proportional dampening"
         )
+
+
+class TestMosseriTrialKeywords:
+    """Tests for design-feature addiction terms and trial terminology
+    added to child_safety and litigation topics (Type A iteration,
+    AP Mosseri testimony article, 2026-07-07)."""
+
+    def test_infinite_scroll_triggers_child_safety(self):
+        text = (
+            "The plaintiff's attorney questioned Mosseri about features such as "
+            "infinite scroll and autoplay, arguing they function like a chemical "
+            "hit for teens seeking validation."
+        )
+        topics = classify_topic(text)
+        topic_names = [t.topic for t in topics]
+        assert "child_safety" in topic_names
+
+    def test_body_dysmorphia_triggers_child_safety(self):
+        text = (
+            "Parents seemed visibly upset during a discussion around body "
+            "dysmorphia and cosmetic filters. Instagram was questioned about "
+            "whether beauty filters could harm teenagers."
+        )
+        topics = classify_topic(text)
+        topic_names = [t.topic for t in topics]
+        assert "child_safety" in topic_names
+
+    def test_bellwether_triggers_litigation(self):
+        text = (
+            "Three plaintiffs have been selected for bellwether trials — "
+            "essentially test cases for both sides to see how their arguments "
+            "play out before a jury. This landmark trial could reshape liability."
+        )
+        topics = classify_topic(text)
+        topic_names = [t.topic for t in topics]
+        assert "litigation" in topic_names
+
+    def test_section_230_triggers_litigation(self):
+        text = (
+            "The outcome of the trial could have significant implications for "
+            "the tech industry, particularly as courts weigh the reach of "
+            "Section 230, the federal law that shields platforms from liability "
+            "for user-generated content."
+        )
+        topics = classify_topic(text)
+        topic_names = [t.topic for t in topics]
+        assert "litigation" in topic_names
+
+    def test_problematic_use_triggers_child_safety(self):
+        text = (
+            "Mosseri uses the term 'problematic use' to refer to someone "
+            "spending more time on Instagram than they feel good about, and "
+            "that definitely happens among teens."
+        )
+        topics = classify_topic(text)
+        topic_names = [t.topic for t in topics]
+        assert "child_safety" in topic_names

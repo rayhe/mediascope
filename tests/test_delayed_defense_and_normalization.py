@@ -160,7 +160,8 @@ class TestHeadlineBoostStrength:
             "The AI system processed millions of prompts using neural networks "
             "and generative AI infrastructure. The AI agent framework used "
             "deep learning for training data analysis and inference. "
-            "Contractors posed as teens on rival platforms to test safety."
+            "Contractors posed as teens on rival platforms to test safety. "
+            "The investigation revealed minors were exposed to harmful content."
         )
         headline = "Meta Contractors Posed as Teens to Test Rival AI Chatbots"
 

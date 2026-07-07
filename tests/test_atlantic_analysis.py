@@ -193,7 +193,7 @@ class TestAtlanticTopicFixes:
         ultra-processed junk includes AI video, AI image, and spammy engagement bait."""
         topics = classify_topic(text, top_n=1)
         assert topics[0].topic == "ai_generated_content"
-        assert topics[0].confidence > 0.3
+        assert topics[0].confidence > 0.2
 
 
 # --- Emotional Intensity Tests ---

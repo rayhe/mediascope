@@ -131,6 +131,13 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "eating disorder", "eating disorders", "anorexia", "bulimia",
         "cyberbullying", "cyber bullying", "bullying",
         "overdose", "drug use by minors",
+        # Design-feature addiction terms — used in trial coverage to
+        # describe platform mechanics alleged to cause harm
+        "infinite scroll", "endless scroll", "autoplay",
+        "body dysmorphia", "beauty filter", "beauty filters",
+        "cosmetic filter", "cosmetic filters", "face-distorting filter",
+        "chemical hit", "dopamine",
+        "problematic use",
     ],
     "content_moderation": [
         "content moderation", "misinformation", "disinformation",
@@ -189,6 +196,10 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "appeals court", "Supreme Court", "district court",
         "found liable", "liable", "liability",
         "testify", "testimony",
+        # Mass litigation and legal immunity terms
+        "bellwether", "bellwether trial", "landmark trial",
+        "test case", "test cases",
+        "Section 230", "safe harbor",
     ],
     "government_oversight": [
         "national security", "export control", "export controls",

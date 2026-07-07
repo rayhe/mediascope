@@ -2082,6 +2082,7 @@ class TestAnnotatedArticleCountConsistency:
             ("atlantic", "atlantic"),
             # Wire
             ("reuters", "reuters"),
+            ("ap", "ap"),
             # Tech editorial
             ("gizmodo", "gizmodo"),
             ("memeburn", "memeburn"),
