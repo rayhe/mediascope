@@ -288,15 +288,15 @@ advance_investments:
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
     current_value_estimate: >
-      ~$8.21B at $194.67/share (Jul 2, 2026 close). Reddit market cap ~$37.5B (Finnhub).
-      PRICE SURGE: +13.69% on Jul 1 (close $197.42, high $201.16 intraday), then
-      -1.44% pullback Jul 2 (close $194.67). Net +12.1% from Jun 30 close ($173.65).
-      52-week range $119.27-$282.95. Beta 2.07.
-      Year-to-date: -14% (still below Jan 2026 highs ~$231). Reddit now 60.2% of
-      Advance's public equity. 42,207,274 total shares × $194.67 = $8.21B.
+      ~$8.48B at $200.86/share (Jul 7, 2026 close). Reddit market cap ~$38.7B (Finnhub).
+      PRICE TRAJECTORY: +13.69% on Jul 1 (close $197.42, high $201.16 intraday), then
+      -1.44% pullback Jul 2 (close $194.67), then recovery to $200.86 by Jul 7.
+      Net +15.7% from Jun 30 close ($173.65). 52-week range $119.27-$282.95. Beta 2.07.
+      Year-to-date: -12% (still below Jan 2026 highs ~$231). Reddit now 61.0% of
+      Advance's public equity. 42,207,274 total shares × $200.86 = $8.48B.
       Analyst consensus: 18 buy, 12 hold, avg 12-mo PT $230.75 (high $300, low $110).
       MARGIN LOAN BUFFER: The 7.8M shares pledged as collateral (at $145-148 offering)
-      are now worth ~$1.52B at $194.67 — 31-34% above offering price, comfortable cushion.
+      are now worth ~$1.57B at $200.86 — 35-38% above offering price, comfortable cushion.
       INSIDER SELLING (last 90 days, MarketBeat Jul 2): Reddit insiders sold $36.9M total.
       CEO Steve Huffman sold 18,000 shares at $178.26 ($3.2M, Jun 15, 10b5-1 plan, -4.59%).
       COO Jennifer Wong sold 39,166 shares at $176.94 ($6.9M, Jun 16, 10b5-1 plan, -3.59%).
@@ -345,8 +345,9 @@ advance_investments:
       over 8x between 2023-2025 in EMEA alone.
       FY2026 projected: $3.25B (+47.6%), FY2027: $4.31B (+32.5%).
       Q2 2026 GUIDANCE: $715M-$725M, representing 43-45% YoY revenue growth (~44% at midpoint).
-      Q2 2026 EARNINGS DATE: July 30 (after market close). Consensus EPS: tracking for ~$1.20-1.25.
-      Market cap ~$37.5B at $194.67/share (Jul 3, 2026 close — RDDT traded flat Jul 2→Jul 3).
+      Q2 2026 EARNINGS DATE: July 30 (after market close). Consensus EPS: $0.71 (range $0.45-$0.97,
+      MarketBeat) or $0.99 (Zacks, +120% YoY). Revenue est: $712.9M (MarketBeat) or $746.89M (Zacks).
+      Market cap ~$38.7B at $200.86/share (Jul 7, 2026 close).
       Previous close ~$173.65 (Jun 30). 52-week range $119.27-$282.95. Beta 2.16.
       YTD PERFORMANCE: Down ~31% from 52-week high ($282.95). Stock volatility elevated (beta 2.16).
       Forward P/E: 40.28 (trailing P/E: 55.59). Net margin: 28.60%. ROE: 25.48%.
@@ -717,12 +718,13 @@ advance_investments:
     source_url: "https://advance.com"
 
 # ===================================================================
-# TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (updated Jul 3, 2026)
+# TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (updated Jul 7, 2026)
 # ===================================================================
-# Reddit (RDDT): ~$8.21B (42.2M shares @ $194.67, Jul 2 2026 close)
-#   PRICE SURGE: +13.69% on Jul 1 (momentum breakout, briefly touched $201.16 intraday), then
-#   -1.44% pullback Jul 2. Driven by strong Q1 fundamentals + AI licensing repricing narrative.
-#   Net +12.1% from Jun 30 close ($173.65) to Jul 2 close ($194.67). Added ~$890M to Advance stake.
+# Reddit (RDDT): ~$8.48B (42.2M shares @ $200.86, Jul 7 2026 close)
+#   PRICE TRAJECTORY: +13.69% on Jul 1 (momentum breakout, briefly touched $201.16 intraday),
+#   -1.44% pullback Jul 2, recovery to $200.86 by Jul 7.
+#   Driven by strong Q1 fundamentals + AI licensing repricing narrative.
+#   Net +15.7% from Jun 30 close ($173.65) to Jul 7 close ($200.86). Added ~$1.15B to Advance stake.
 #   Q2 2026 GUIDANCE: $715M-$725M (~44% YoY at midpoint). Q2 earnings: Jul 30 after market close.
 #   Q1 ad revenue $625M (+74% YoY). ROAS now ABOVE industry averages in key categories (Cannes Lions).
 #   Reddit white paper: 20% of shoppers include Reddit in searches; 50% of US shoppers use Reddit
@@ -774,9 +776,10 @@ advance_investments:
 # HawkEye 360: EXITED via IPO May 2026 at ~$2.4B valuation
 # Donald Newhouse net worth at death: $15.4B (Forbes May 2026)
 #
-# KEY PORTFOLIO CONCENTRATION: Reddit is now 60.2% of Advance's public equity (~$8.21B of ~$13.63B).
-# This is the highest Reddit concentration on record, driven by the Jul 1 surge. Advance's public
-# equity increased $1.23B in 4 trading days (Jun 27→Jul 2), almost entirely from Reddit's +12.1%.
+# KEY PORTFOLIO CONCENTRATION: Reddit is now 61.0% of Advance's public equity (~$8.48B of ~$13.90B).
+# This is the highest Reddit concentration on record, driven by the Jul 1 surge and continued
+# recovery. Advance's public equity increased ~$1.50B in 6 trading days (Jun 27→Jul 7), almost
+# entirely from Reddit's +15.7%.
 # Advance is also LEVERAGING Reddit for capital (Nov 2024: $1.2B credit facility collateralized
 # by 7.8M Reddit shares). This means Advance's capital access — which could fund Condé Nast
 # operations — is directly tied to Reddit's stock price. Combined with Reddit's Q1 2026
@@ -1547,6 +1550,21 @@ litigation_connections:
       - "https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/"
       - "https://www.computerweekly.com/news/366643963/Publishers-can-now-opt-out-of-Google-AI-summaries-and-training"
       - "https://techcrunch.com/2026/06/03/publishers-will-be-able-to-opt-out-of-ai-search-thanks-to-new-regulation/"
+
+  - type: "advance_trademark_enforcement_uk"
+    description: >
+      UK IPO Decision O/0243/26 (March 23, 2026): Advance Magazine Publishers Inc. (AMPI) successfully
+      opposed UK trademark application 3923193 for "Ever in Vogue" in Classes 35 & 41. Applicant: Ever
+      in Vogue Ltd. AMPI argued likelihood of confusion with its registered VOGUE marks. Witness statement
+      from Eric Gisolfi, VP & Associate General Counsel at Advance Publications — confirms active in-house
+      legal team managing global IP portfolio. AMPI awarded £2,000 costs. Decision discloses UK Vogue
+      circulation data (~155K-165K monthly average print circulation 2016-2020). Demonstrates Advance
+      actively enforces trademarks internationally through its AMPI subsidiary — the SAME entity
+      establishing the $1.2B Reddit margin loan credit facility — showing AMPI serves as both
+      the IP enforcement arm and the financial leverage vehicle for Advance's publishing empire.
+    severity: 1
+    evidence: "UK IPO opposition decision O/0243/26, March 23, 2026"
+    source_url: "https://www.ipo.gov.uk/types/tm/t-os/t-find/t-challenge-decision-results/o024326.pdf"
 
   - type: "cnil_enforcement"
     description: >

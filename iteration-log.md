@@ -15170,3 +15170,44 @@ Gap analysis on The Verge's journalist roster revealed two key missing reporters
 - **Editorial changes:** 145 (was 143, +2 The Verge hires)
 - **Tests:** 1,457 passed, 0 failed
 - **Files changed:** 6 (journalists.yaml, editorial_changes.yaml, README.md, EDITORIAL_HISTORIES.md, careers_demo.py, iteration-log.md)
+
+---
+
+## 2026-07-07 06:00 PT — Type C: Ownership & Funding (Wired/Condé Nast/Advance)
+
+**Focus:** Reddit stock price update + UK IPO trademark discovery + Q2 consensus reconciliation
+
+### Changes
+
+**1. Reddit/Advance stake valuation update (profiles/wired.yaml)**
+- RDDT price: $194.67 → $200.86 (Jul 7 close)
+- Advance stake: ~$8.21B → ~$8.48B (42.2M shares × $200.86)
+- Portfolio concentration: 60.2% → 61.0% of public equity
+- Total public equity: ~$13.63B → ~$13.90B
+- Margin loan buffer: $1.52B → $1.57B (35-38% above offering price)
+- Net gain from Jun 30 baseline: +12.1% → +15.7% ($173.65 → $200.86)
+
+**2. Q2 2026 consensus EPS reconciliation**
+- Fixed stale "~$1.20-1.25" estimate in q1_2026_financials section
+- Replaced with sourced MarketBeat ($0.71, range $0.45-$0.97) and Zacks ($0.99) figures
+- Wide spread reflects high-beat-frequency history (Reddit beat all 4 trailing quarters)
+
+**3. NEW: UK IPO trademark enforcement decision (O/0243/26)**
+- Advance Magazine Publishers Inc. (AMPI) v. Ever in Vogue Ltd
+- Decision: March 23, 2026. AMPI won, £2,000 costs awarded
+- Witness: Eric Gisolfi, VP & Associate General Counsel at Advance Publications
+- Disclosed UK Vogue print circulation: ~155K-165K monthly avg (2016-2020)
+- Significance: AMPI — the same entity behind the $1.2B Reddit margin loan — actively enforces trademarks internationally
+- Added as `advance_trademark_enforcement_uk` litigation_connections entry (severity 1)
+
+**4. Verified existing coverage (no changes needed)**
+- Microsoft Copilot pilot: already extensively documented (6 references)
+- Condé Nast events revenue (+40%/+22%): already in profile comments
+- Reddit Q1 2026 earnings: already documented in detail
+- Jamie Miller / Robert Sauerberg board seats: already tracked
+
+### Stats
+- **Tests:** 97 structural consistency passed, 0 failed
+- **Files changed:** 1 (profiles/wired.yaml)
+- **New litigation entries:** 1 (advance_trademark_enforcement_uk)
+- **Reddit stake delta:** +$270M since last update (Jul 2 → Jul 7)
