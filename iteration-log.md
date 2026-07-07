@@ -15033,3 +15033,91 @@ Type B rotation: journalist profile research and editorial change tracking.
 - **Topic buckets:** 26 (was 25, +1 energy_climate)
 - **Annotated articles:** 106 (was 105)
 - **Tests:** 1,457 passed, 0 failed (was 1,456 — structural test count updated)
+
+## 2026-07-07 03:00 PT — Type B: Journalist Research — Adi Robertson (The Verge)
+
+### Target
+Adi Robertson — The Verge's longest-tenured editorial staff member (14+ years, founding 2011). Had the thinnest profile in the dataset (no notes, 2 career entries, no education). Directly relevant to Meta coverage: primary VR/AR voice and Senior Editor for Tech & Policy.
+
+### Research Sources
+- Podchaser (education: Cornell BA China & Asia-Pacific Studies)
+- Silicon Flatirons (CU Boulder bio: reporter since 2011, web game designer)
+- Talking Biz News (2022 promotion to senior editor)
+- Muck Rack (The Stepback newsletter, recent articles)
+- Buzzsumo (topic tags: ai, antitrust, meta, policy, regulation, law, speech)
+- Voices of VR Podcast #312 (Sundance VR coverage, oral history discussion)
+- Road to VR (VR history panel coverage)
+- Wikipedia Meta Quest Pro article (2/5 review attribution)
+- iHeart/AR Show (AWE 2024 panelist confirmation)
+- TIFF Uncut (2016 POP Speaker Series bio)
+- Techmeme archives (Meta coverage: Quest Pro, Face Recognition, Horizon Worlds, copyright rulings)
+
+### Profile Expansion
+
+**Education added:**
+- Cornell University BA, China and Asia-Pacific Studies
+
+**Career entries expanded:**
+1. Reporter (Nov 2011 - 2022): Added founding context (mass Engadget departure), VR oral history co-author credit (with Michael Zelenko), web games (Wake Word, Cyberpunkland, You Have To Ban The President), OLPC/Morgantown PRT histories, Magic Leap coverage, AWE 2024/TIFF 2016 conference appearances, key Meta coverage list (Quest Pro 2/5, Face Recognition shutdown, Cambria, Horizon Worlds)
+2. Senior Editor (2022-present): Added promotion tweet quote, The Stepback newsletter, post-Heath departure significance, 2026 coverage (Meta/Anthropic copyright, Missouri AG, CA SB 53), Buzzsumo topic tags
+
+**Notes (comprehensive):**
+- Single-publication career → pure institutional sample (no DiD migration, valuable as PMC-era control)
+- Cornell humanities background → humanities lens on tech (no CS/engineering degree)
+- Interactive games demonstrate creative engagement with policy questions
+- Primary voice for Meta Reality Labs coverage post-Alex Heath departure
+- PMC ownership (Jun 2026) → her editorial direction is primary test case for coverage posture changes
+
+**Source URLs added:** 6 (Podchaser, Silicon Flatirons, Voices of VR, Wikipedia Quest Pro, Muck Rack, Talking Biz News)
+
+### Stale Count Fixes
+- Journalists: 157 → 159 (README.md, EDITORIAL_HISTORIES.md, careers_demo.py)
+- Multi-pub: 155 → 157 (EDITORIAL_HISTORIES.md)
+- Migrations: 503 → 509 (EDITORIAL_HISTORIES.md, README.md)
+
+### Stats
+- **Journalists:** 159 (was 157 in docs, +2 from previous iterations)
+- **Multi-pub:** 157
+- **Migrations:** 509
+- **Tests:** 1,457 passed, 0 failed
+- **Commit:** `6abf502`
+
+## 2026-07-07 04:00 PT — Type B: Journalist/Publication Research — Hayden Field & Mia Sato (The Verge)
+
+### Focus
+Gap analysis on The Verge's journalist roster revealed two key missing reporters: **Hayden Field** (senior AI reporter) and **Mia Sato** (platforms/communities reporter). Both are analytically significant for the MediaScope mission — Field covers Meta AI directly, Sato covers Meta's consumer platforms. The Verge was the most recently added publication and had the most coverage gaps.
+
+### What Changed
+
+**1. New Journalist: Hayden Field (5 career entries)**
+- **Career arc:** Entrepreneur → Protocol → Morning Brew → CNBC → The Verge (Jun 2025–present)
+- **Education:** University of Georgia, BA Journalism & Theatre
+- **AI beat tenure:** 5+ years, longest continuous AI-focused tenure at The Verge
+- **Key migrations:** 4-outlet trajectory provides natural experiment for institutional framing comparison across newsletter (Morning Brew), broadcast business news (CNBC), startup tech pub (Protocol), and adversarial consumer tech (The Verge)
+- **Significance:** The Verge's first dedicated AI beat reporter. Hired ahead of Alex Heath's departure (Sep 2025), filling AI/Big Tech coverage gap. Tests whether CNBC's business-focused framing adapts under Patel's consumer-advocacy editorial culture.
+- **Sources:** Talking Biz News (4 hire/departure articles), The Org, Muck Rack, eventible.com
+
+**2. New Journalist: Mia Sato (3 career entries)**
+- **Career arc:** The Markup (audience engagement editor) → MIT Tech Review (Pandemic Technology Project) → The Verge (Nov 2021–present)
+- **Unusual pipeline:** Audience engagement → reporting pivot during COVID-19 — gives distinctive user-centric framing perspective
+- **5+ year tenure** at The Verge, now senior reporter/features writer
+- **Beat:** Platforms, communities, internet culture (TikTok, Meta/Instagram, MrBeast)
+- **Significance:** Post-Alex Heath departure, one of the most senior platform reporters at The Verge. Her coverage directly shapes how Meta's consumer-facing products and policies get reported.
+- **Sources:** Talking Biz News, Embedded (Substack interview), Muck Rack, MIT Tech Review author page, The Org
+
+**3. Editorial Changes: 2 new entries for The Verge**
+- **Mia Sato hire (2021-11):** Platforms reporter from MIT Tech Review
+- **Hayden Field hire (2025-06):** Senior AI reporter from CNBC — first dedicated AI beat role at The Verge
+
+**4. Documentation Updates**
+- README.md: 159 → 161 journalists, 509 → 515 migrations
+- EDITORIAL_HISTORIES.md: Same count updates + multi-pub journalist count (157 → 159)
+- careers_demo.py: docstring count updated
+
+### Stats
+- **Journalists:** 161 (was 159, +2 — Hayden Field, Mia Sato)
+- **Multi-pub journalists:** 159 (was 157)
+- **Auto-detected migrations:** 515 (was 503, +12 from 8 new career entries spanning 10 publications)
+- **Editorial changes:** 145 (was 143, +2 The Verge hires)
+- **Tests:** 1,457 passed, 0 failed
+- **Files changed:** 6 (journalists.yaml, editorial_changes.yaml, README.md, EDITORIAL_HISTORIES.md, careers_demo.py, iteration-log.md)

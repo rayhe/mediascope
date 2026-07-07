@@ -11323,3 +11323,127 @@ journalists:
   - https://muckrack.com/kurt-wagner-3
   - https://twit.tv/people/kurt-wagner
   - https://gdg.community.dev/events/details/google-gdg-on-campus-university-of-rochester-rochester-united-states-presents-speaker-series-kurt-wagner-bloomberg/
+- career:
+  - beat: tech, business, investigative features
+    end: 2020-02
+    event_type: hired
+    notes: Associate editor on the digital team. Covered tech, business, and investigative features. Pre-journalism career
+      included travel editor role at The Daily Meal, reporter/lead reporter at Jean Chatzky (personal finance), and freelance
+      for Refinery29. Also completed National Press Foundation AI Reporting Fellowship. Internships at Atlanta Journal-Constitution,
+      CNN, and Phi Beta Kappa Society. University of Georgia BA in Journalism & Theatre.
+    publication: entrepreneur
+    role: associate_editor
+    source_url: https://talkingbiznews.com/they-re-hiring/morning-brew-hires-field-as-tech-writer/
+    start: 2018-01
+  - beat: AI, tech industry power dynamics
+    end: 2020-08
+    event_type: hired
+    notes: 'Reporter at Protocol, the tech publication launched by Politico''s publisher (Axel Springer). Covered AI and
+      the tech industry''s shifting power dynamics. Protocol launched Feb 2020 and shut down Nov 2022. Field left for Morning
+      Brew before Protocol''s closure. Short but formative stint — first dedicated AI beat role.'
+    publication: protocol
+    role: reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/morning-brew-hires-field-as-tech-writer/
+    start: 2020-02
+  - beat: AI, emerging tech
+    end: 2023-04
+    event_type: hired
+    notes: 'Senior tech reporter for Emerging Tech Brew, Morning Brew''s technology vertical. In-depth feature writing,
+      conducting interviews, moderating live events. Concurrent freelance bylines at Wired UK, MIT Technology Review, OneZero,
+      Digital Trends, Fortune, Atlanta Magazine. Built 3+ years of AI beat expertise. NYC-based.'
+    publication: morning-brew
+    role: senior_tech_reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/cnbc-hires-field-to-cover-tech/
+    start: 2020-08
+  - beat: AI, generative AI, tech companies
+    end: 2025-06
+    event_type: hired
+    notes: 'Tech reporter covering the rise of generative AI and the companies determining its future. Reported on xAI
+      billion-dollar infrastructure buildout, FTC inquiry into OpenAI/Amazon/Microsoft, internal OpenAI challenges (employee
+      equity concerns amid soaring valuation). ~2-year tenure. KEY MIGRATION: Morning Brew (newsletter) → CNBC (broadcast/digital
+      business news) — first mainstream business network role.'
+    publication: cnbc
+    role: tech_reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/cnbc-hires-field-to-cover-tech/
+    start: 2023-04
+  - beat: AI, OpenAI, Anthropic, Google, Meta, Apple
+    event_type: hired
+    notes: 'Senior AI reporter leading coverage of the biggest names in AI — OpenAI, Anthropic, Google, Meta, Apple — plus
+      how AI tools are used, societal impact, and regulatory response. Started June 2, 2025. Nilay Patel called her reporting
+      "insightful" with "deep sourcing and sharp analysis." Self-described as "an AI beat reporter for more than five years."
+      KEY MIGRATION: CNBC → The Verge represents business news → tech publication shift. Joined post-Alex Heath departure
+      (Sep 2025 announced but planning likely known earlier) — fills part of the coverage gap in AI/Big Tech reporting. Her
+      arrival gives The Verge dedicated AI reporter capacity it lacked when Heath was still there (his focus was corporate
+      strategy, not AI product/regulation). ANALYTICALLY SIGNIFICANT: Her 5+ year AI beat trajectory (Protocol → Morning
+      Brew → CNBC → The Verge) across 4 institutional contexts is a natural experiment for examining how institutional voice
+      shapes AI coverage framing. Also tests whether CNBC''s business-focused framing carries into The Verge''s more adversarial
+      consumer-advocacy editorial culture under Nilay Patel.'
+    publication: the-verge
+    role: senior_reporter
+    source_url: https://talkingbiznews.com/media-news/the-verge-hires-hayden-field-as-senior-ai-reporter/
+    start: 2025-06
+  name: Hayden Field
+  notes: 'Career arc: Entrepreneur → Protocol → Morning Brew → CNBC → The Verge (2025-present). University of Georgia BA
+    Journalism & Theatre. 5+ year dedicated AI beat reporter. Concurrent freelance at Wired UK, MIT Technology Review, OneZero,
+    Fortune, Digital Trends. National Press Foundation AI Reporting Fellow. Early career: Jean Chatzky (reporter), The Daily
+    Meal (travel editor), internships at AJC, CNN, Phi Beta Kappa Society. ANALYTICAL VALUE: (1) Longest continuous AI-focused
+    beat tenure among active The Verge staff. (2) Four-outlet migration provides natural experiment for institutional framing
+    comparison across newsletter (Morning Brew), broadcast business news (CNBC), startup tech pub (Protocol), and adversarial
+    consumer tech (The Verge). (3) Fills AI coverage capacity gap post-Alex Heath departure. (4) Her arrival signals Patel''s
+    strategic investment in dedicated AI reporting — previously no single reporter owned the AI beat at The Verge.'
+  source_urls:
+  - https://talkingbiznews.com/media-news/the-verge-hires-hayden-field-as-senior-ai-reporter/
+  - https://talkingbiznews.com/they-re-hiring/cnbc-hires-field-to-cover-tech/
+  - https://talkingbiznews.com/they-re-hiring/morning-brew-hires-field-as-tech-writer/
+  - https://theorg.com/org/the-verge/org-chart/hayden-field
+- career:
+  - beat: audience engagement
+    end: 2021-01
+    event_type: hired
+    notes: Audience engagement editor at The Markup, a nonprofit investigative tech news outlet founded by Julia Angwin
+      (ex-WSJ/ProPublica). Ran social channels, thinking about how readers find journalism. Pre-Markup roles included audience
+      engagement at other nonprofit newsrooms. Pivoted from engagement to reporting during COVID-19.
+    publication: the-markup
+    role: audience_engagement_editor
+    source_url: https://talkingbiznews.com/they-talk-biz-news/the-verge-hires-sato-to-cover-tech-companies-and-platforms/
+    start: 2019-06
+  - beat: COVID-19, pandemic technology
+    end: 2021-11
+    event_type: hired
+    notes: Reporter on the Pandemic Technology Project, covering the intersection of covid-19 and the technology used to
+      track and fight it. Contract role. Work appeared in The Verge, The Appeal, Chicago Magazine during this period. KEY
+      TRANSITION from audience engagement → reporting. MIT Tech Review provided credentialed reporting platform for the pivot.
+    publication: mit-tech-review
+    role: reporter
+    source_url: https://technologyreview.com/author/mia-sato/
+    start: 2021-01
+  - beat: tech platforms, communities, digital culture, TikTok, Meta, internet culture
+    event_type: hired
+    notes: 'Reporter (later senior reporter/features writer) covering tech companies, their platforms, and users — plus
+      where culture and the internet collide. Hired to cover tech companies and platforms, started Nov 22, 2021. ~5 years
+      experience covering platforms as of late 2025. Known for TikTok coverage and platform-user dynamics. Work has also appeared
+      in The New Republic, MIT Technology Review, Chicago Magazine. Uses TikTok for audience engagement (unique among tech reporters).
+      Vox Media Union member. KEY MIGRATION: MIT Tech Review → The Verge. Tests whether MIT TR''s policy/research framing
+      transfers to The Verge''s consumer-tech/culture context. Her audience engagement background gives distinctive user-centric
+      perspective on platform coverage — she thinks about how platforms work from the user side, which informs her reporting
+      on platform design decisions and their societal effects. ANALYTICALLY SIGNIFICANT: Post-Alex Heath departure (Sep 2025),
+      Sato is one of the most senior reporters at The Verge covering platforms including Meta/Instagram/Facebook. Her platform
+      coverage shapes how Meta''s consumer-facing products and policies get reported.'
+    publication: the-verge
+    role: senior_reporter
+    source_url: https://talkingbiznews.com/they-talk-biz-news/the-verge-hires-sato-to-cover-tech-companies-and-platforms/
+    start: 2021-11
+  name: Mia Sato
+  notes: 'Career arc: nonprofit audience engagement → The Markup (audience engagement editor) → MIT Tech Review (Pandemic
+    Technology Project) → The Verge (2021-present). Pivoted from audience engagement to reporting during COVID-19. 5+ years
+    at The Verge as of 2026. Covers platforms, communities, and internet culture. Known for TikTok coverage, MrBeast analysis,
+    platform-user dynamics. Work appeared in The New Republic, Chicago Magazine, The Appeal. ANALYTICAL VALUE: (1) Audience
+    engagement → reporter career arc is unusual and gives her user-centric framing perspective. (2) One of the most senior platform
+    reporters at The Verge post-Heath departure. (3) Her platform coverage (Meta/Instagram, TikTok, etc.) directly shapes framing
+    of consumer-facing Big Tech stories. (4) MIT Tech Review → The Verge migration provides natural experiment for institutional
+    framing comparison.'
+  source_urls:
+  - https://talkingbiznews.com/they-talk-biz-news/the-verge-hires-sato-to-cover-tech-companies-and-platforms/
+  - https://technologyreview.com/author/mia-sato/
+  - https://embedded.substack.com/p/the-journalist-cracking-the-tiktok
+  - https://theorg.com/org/the-verge/org-chart/mia-sato
