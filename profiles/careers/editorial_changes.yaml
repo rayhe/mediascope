@@ -520,8 +520,8 @@ editorial_changes:
     incoming: null
     notes: 'DEPARTURE: Lenore Taylor resigned as editor of Guardian Australia after 10 years in the role. Under her leadership,
       Guardian Australia grew from a small digital outpost to a major Australian news outlet. Taylor oversaw significant expansion
-      of the Australian bureau and established Guardian Australia as a prominent voice in Australian media. Her departure triggered
-      a leadership transition that elevated David Munk from deputy editor to editor.'
+      of the Australian bureau and established Guardian Australia as a prominent voice in Australian media. Her departure
+      triggered a leadership transition that elevated David Munk from deputy editor to editor.'
     outgoing: Lenore Taylor
     position: editor_guardian_australia
     source_url: https://mediaweek.com.au/david-munk-named-editor-guardian-australia/
@@ -539,11 +539,11 @@ editorial_changes:
     source_url: https://mediaweek.com.au/david-munk-named-editor-guardian-australia/
   - date: 2026-06
     incoming: Sophie Black
-    notes: 'Black appointed associate editor of Guardian Australia, joining from Crikey where she served as editor-in-chief.
-      Part of the leadership restructuring following Lenore Taylor''s departure. Black brings an independent media perspective
-      to the Guardian''s Australian operation. Previously well-known in Australian digital media for her work at Crikey (a
-      small but influential independent news outlet). Her hire alongside Munk''s promotion signals Guardian Australia is both
-      maintaining institutional continuity (Munk) while injecting independent media DNA (Black).'
+    notes: Black appointed associate editor of Guardian Australia, joining from Crikey where she served as editor-in-chief.
+      Part of the leadership restructuring following Lenore Taylor's departure. Black brings an independent media perspective
+      to the Guardian's Australian operation. Previously well-known in Australian digital media for her work at Crikey (a
+      small but influential independent news outlet). Her hire alongside Munk's promotion signals Guardian Australia is both
+      maintaining institutional continuity (Munk) while injecting independent media DNA (Black).
     outgoing: null
     position: associate_editor_guardian_australia
     source_url: https://bandt.com.au/guardian-australia-bolsters-editorial-leadership/
@@ -709,14 +709,14 @@ editorial_changes:
     source_url: https://nytco.com/press/staff-news-from-business/
   - date: ~2024-06
     incoming: Meaghan Tobin
-    notes: 'Tobin joined NYT as Asia technology correspondent based in Taipei, covering China tech, semiconductors, rare
-      earths, AI, and US-China trade. Career: NYU BA → Tufts Fletcher School MA (International Affairs) → South China Morning
-      Post → Rest of World → Washington Post → NYT (~mid-2024). Specializes in supply chain geopolitics, particularly
-      semiconductor and critical mineral dependencies between China, Taiwan, and the US. Her hiring reflects NYT''s investment
-      in Asia-based tech-geopolitics coverage alongside Paul Mozur (global technology correspondent, also Taipei-based).
-      ANALYTICAL VALUE: Tobin and Mozur give NYT two dedicated Taipei-based tech reporters — the most concentrated coverage
-      of the semiconductor supply chain geography of any tracked publication. Her Washington Post background adds a second
-      migration data point for the Post→NYT pipeline in Asia tech coverage.'
+    notes: 'Tobin joined NYT as Asia technology correspondent based in Taipei, covering China tech, semiconductors, rare earths,
+      AI, and US-China trade. Career: NYU BA → Tufts Fletcher School MA (International Affairs) → South China Morning Post
+      → Rest of World → Washington Post → NYT (~mid-2024). Specializes in supply chain geopolitics, particularly semiconductor
+      and critical mineral dependencies between China, Taiwan, and the US. Her hiring reflects NYT''s investment in Asia-based
+      tech-geopolitics coverage alongside Paul Mozur (global technology correspondent, also Taipei-based). ANALYTICAL VALUE:
+      Tobin and Mozur give NYT two dedicated Taipei-based tech reporters — the most concentrated coverage of the semiconductor
+      supply chain geography of any tracked publication. Her Washington Post background adds a second migration data point
+      for the Post→NYT pipeline in Asia tech coverage.'
     outgoing: null
     position: asia_technology_correspondent
     source_url: https://nytco.com/press/meaghan-tobin-joins-the-new-york-times/
@@ -1469,3 +1469,83 @@ editorial_changes:
       over story framing across Wired''s newsroom. The international syndication management component is notable: this role
       decides which stories from Wired Italy, Japan, Germany, etc. get adapted for US publication.'
     source_url: https://talkingbiznews.com/biz-news-help-wanted/full-time/wired-seeks-a-staff-editor-in-nyc-or-san-fran/
+  the_verge:
+  - date: 2011-11
+    position: eic
+    incoming: Joshua Topolsky
+    outgoing: null
+    notes: The Verge launched Nov 1, 2011 as part of Vox Media. Co-founded by Topolsky (from Engadget), Nilay Patel, and Trei
+      Brundrett. Mass departure from Engadget created The Verge as a direct competitor.
+    source_url: https://en.wikipedia.org/wiki/The_Verge
+  - date: 2014-07
+    position: eic
+    incoming: Nilay Patel
+    outgoing: Joshua Topolsky
+    notes: 'KEY TRANSITION: Topolsky departed for Bloomberg. Patel promoted from Managing Editor to EIC. Has held the position
+      for 11+ years (as of 2026). Under Patel: Webby Award (Vergecast), National Magazine Award nomination, Pulitzer Prize
+      nomination, Decoder podcast launch. Patel''s JD background gives The Verge distinctive legal/policy expertise. His ''Google
+      Zero'' framing signals adversarial posture toward Big Tech AI scraping.'
+    source_url: https://en.wikipedia.org/wiki/Nilay_Patel
+  - date: 2012-01
+    position: senior_editor_uk
+    incoming: Tom Warren
+    outgoing: null
+    notes: The Verge's first non-US editorial hire. Senior Editor for the UK, covering Microsoft. Previously founded WinRumors
+      and worked at Morgan Stanley (IT infrastructure). Has remained at The Verge 13+ years — the longest-tenured beat reporter.
+      Launched Notepad paid newsletter (May 2024).
+    source_url: https://neowin.net/news/tom-warren-of-winrumors-moves-to-the-verge/
+  - date: '2021'
+    position: deputy_editor
+    incoming: Alex Heath
+    outgoing: null
+    notes: 'KEY HIRE: Heath joined from The Information as deputy editor. Became The Verge''s primary Meta/Big Tech corporate
+      strategy reporter. Broke Facebook→Meta rebrand, led Musk/Twitter coverage, broke Altman/OpenAI coup. Launched Command
+      Line paid newsletter. Conducted multiple exclusive Zuckerberg interviews. Work cited by Congress.'
+    source_url: https://voxmedia.com/2023/5/11/the-verge-command-line-newsletter-alex-heath
+  - date: 2022-04
+    position: editor_at_large
+    incoming: David Pierce
+    outgoing: null
+    notes: 'BOOMERANG: Pierce returned to The Verge after 7-year circuit through Wired (2015), WSJ (2017), Protocol (2020).
+      One of Verge''s founding hires (2011). Rehired as editor-at-large and Vergecast co-host. 5-publication career provides
+      natural experiment for institutional culture comparison (Condé Nast vs News Corp vs Vox Media).'
+    source_url: https://talkingbiznews.com/media-news/protocols-pierce-hired-by-the-verge-to-co-host-podcast/
+  - date: '2022'
+    position: senior_editor_tech_policy
+    incoming: Adi Robertson
+    outgoing: null
+    notes: Promoted after 11 years as reporter/senior reporter. Founding staff member (2011). Now senior editor for tech and
+      policy, covering VR/AR, online platforms, and free expression. Her VR/AR expertise is directly relevant to Meta Reality
+      Labs coverage. Shapes which XR stories get covered and how they're framed.
+    source_url: https://talkingbiznews.com/media-news/robertson-named-senior-editor-for-tech-and-policy-at-the-verge/
+  - date: 2025-09
+    position: deputy_editor
+    incoming: null
+    outgoing: Alex Heath
+    notes: 'KEY DEPARTURE: Heath left The Verge to launch ''Sources'' (independent Substack) and ''Access'' podcast (with
+      Vox Media, co-hosted with Ellis Hamburger). Retains contributor status. Part of ''Altogether'' indie journalism collective
+      (Casey Newton, Alex Konrad, Alex Kantrowitz). First independent interview: exclusive Zuckerberg sit-down for Meta Ray-Ban
+      Display glasses (Sep 18, 2025). ANALYTICALLY SIGNIFICANT: Removes the single most Meta-connected reporter from The Verge''s
+      editorial staff. His departure leaves a gap in insider Big Tech coverage — no obvious internal successor for the Zuckerberg
+      relationship. Tests whether The Verge''s Meta coverage posture shifts post-Heath.'
+    source_url: https://talkingbiznews.com/media-news/heath-departs-the-verge-to-launch-podcast-publication/
+  - date: 2026-05
+    position: ownership
+    incoming: James Murdoch / Lupa Systems
+    outgoing: null
+    notes: 'Vox Media split: Lupa Systems (James Murdoch''s investment vehicle) acquired New York Magazine, Vox.com, and Vox
+      Media Podcast Network for ~$300M. The Verge was NOT part of this deal — remained with Vox Media''s other brands.'
+    source_url: https://www.wsj.com/james-murdoch-buy-new-york-magazine-vox-300-million
+  - date: 2026-06
+    position: ownership
+    incoming: PMC / PMX
+    outgoing: Vox Media (independent)
+    notes: 'KEY OWNERSHIP CHANGE: Penske Media Corporation acquired remaining Vox Media brands (The Verge, Eater, SB Nation,
+      Popsugar, The Dodo, Punch, Thrillist) into new PMX subsidiary. Ryan Pauley (former Vox Media President) became PMX President,
+      reporting to Jay Penske. The Verge now part of 25+ title portfolio including Variety, Rolling Stone, Billboard, Deadline.
+      Roger Penske (Jay''s father) received Presidential Medal of Freedom from Trump (2019). Jay Penske has been described
+      as quietly shifting SXSW and portfolio publications toward more conservative voices. ANALYTICALLY SIGNIFICANT: The Verge''s
+      ownership shifted from Vox Media (independent, journalist-founded) to PMC (family-controlled media conglomerate with
+      entertainment/business portfolio and political connections). This is a structural change that may affect editorial independence
+      over time.'
+    source_url: https://www.exchange4media.com/media-print-news/penske-media-corporation-to-acquire-major-vox-media-brands
