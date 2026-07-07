@@ -445,3 +445,115 @@ class TestMultiTopicArticles:
         topics = classify_topic(text, top_n=5)
         topic_names = [t.topic for t in topics]
         assert "ai_ethics_safety" in topic_names
+
+
+class TestDensityNormalization:
+    """Topic density normalization prevents short-text inflation.
+
+    Short texts (< 500 words) should receive dampened density scores
+    so that a few keyword hits don't produce disproportionately high
+    confidence.  This addresses the gap documented in METHODOLOGY.md §3.1.
+    """
+
+    def test_short_text_lower_confidence_than_long_text_same_density(self):
+        """A short text with the same keyword density as a long text
+        should score lower due to length dampening."""
+        # Short: 1 match in ~10 words = high per-100-word density
+        short = "Meta announced a massive layoff of thousands of workers today."
+        # Long: ~10 matches spread across ~500 words (realistic article)
+        long_text = (
+            "Meta announced a massive layoff affecting thousands of employees. "
+            "The job cuts represent the latest round of downsizing at the company. "
+            "Workers affected by the restructuring were notified via email. "
+            "The headcount reduction spans multiple divisions including Reality Labs. "
+            "Severance packages were offered to those displaced by the layoff. "
+            + "The company cited AI automation as a factor in the workforce reduction. "
+            * 8  # Pad to ~500 words
+            + "Overall the layoff signals a shift in corporate strategy."
+        )
+        short_topics = classify_topic(short, top_n=5)
+        long_topics = classify_topic(long_text, top_n=5)
+
+        short_layoff = next((t for t in short_topics if t.topic == "layoffs"), None)
+        long_layoff = next((t for t in long_topics if t.topic == "layoffs"), None)
+
+        assert short_layoff is not None
+        assert long_layoff is not None
+        assert long_layoff.confidence > short_layoff.confidence, (
+            f"Long text ({long_layoff.confidence}) should score higher than "
+            f"short text ({short_layoff.confidence}) for the same topic due to "
+            f"length-aware density normalization"
+        )
+
+    def test_multi_topic_inflation_dampened_in_short_text(self):
+        """A very short text mentioning keywords from 3 topics should
+        not produce high confidence in all 3."""
+        # This blurb touches layoffs, AI, and privacy — but at 20 words
+        # it shouldn't score any of them with high confidence.
+        blurb = (
+            "Meta laid off AI workers over privacy data collection concerns."
+        )
+        topics = classify_topic(blurb, top_n=5)
+        for t in topics:
+            assert t.confidence < 0.5, (
+                f"Short multi-topic blurb should not produce high confidence, "
+                f"but '{t.topic}' scored {t.confidence}"
+            )
+
+    def test_full_length_article_no_dampening(self):
+        """An article at or above 500 words should receive full density
+        credit with no dampening."""
+        # Build a ~600-word article about child safety
+        sentences = [
+            "Social media platforms face growing scrutiny over child safety. ",
+            "Parents worry about predators targeting minors online. ",
+            "The COPPA law requires parental consent for children under 13. ",
+            "Age verification systems remain unreliable and easy to bypass. ",
+            "Teen mental health studies link social media to depression. ",
+            "Cyberbullying among adolescents has increased dramatically. ",
+            "Schools report that students as young as 10 face online harassment. ",
+            "Youth advocacy groups demand stronger protections for kids. ",
+            "Parental controls offered by platforms are often insufficient. ",
+            "Child exploitation material continues to circulate despite moderation. ",
+        ]
+        # Repeat to reach ~600 words
+        article = " ".join(sentences * 6)
+        word_count = len(article.split())
+        assert word_count >= 500, f"Article should be >= 500 words, got {word_count}"
+
+        topics = classify_topic(article, top_n=3)
+        cs = next((t for t in topics if t.topic == "child_safety"), None)
+        assert cs is not None
+        # Full-length article with strong keyword presence should score high
+        assert cs.confidence >= 0.3, (
+            f"Full-length child safety article should score >= 0.3, got {cs.confidence}"
+        )
+
+    def test_dampening_is_proportional(self):
+        """Texts of 250 words should have more dampening than 400 words."""
+        base = (
+            "The company restructured its workforce with a significant layoff. "
+            "Job cuts and downsizing affected thousands. Severance was offered. "
+        )
+        # ~250 word version
+        text_250 = (base + "More details emerged about the restructuring. ") * 11
+        # ~400 word version
+        text_400 = (base + "More details emerged about the restructuring. ") * 18
+
+        wc_250 = len(text_250.split())
+        wc_400 = len(text_400.split())
+        assert 200 < wc_250 < 350
+        assert 350 < wc_400 < 500
+
+        topics_250 = classify_topic(text_250, top_n=5)
+        topics_400 = classify_topic(text_400, top_n=5)
+
+        layoff_250 = next((t for t in topics_250 if t.topic == "layoffs"), None)
+        layoff_400 = next((t for t in topics_400 if t.topic == "layoffs"), None)
+
+        assert layoff_250 is not None
+        assert layoff_400 is not None
+        assert layoff_400.confidence > layoff_250.confidence, (
+            f"400-word text ({layoff_400.confidence}) should score higher than "
+            f"250-word text ({layoff_250.confidence}) due to proportional dampening"
+        )

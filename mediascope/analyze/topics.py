@@ -595,11 +595,25 @@ def classify_topic(
 
         # Confidence formula:
         # - keyword_coverage: fraction of the keyword set that matched (0-1)
-        # - density: total matches normalized by text length (capped at 1)
+        # - density: total matches normalized by text length, with
+        #   length-aware dampening to prevent short-text inflation
         # - Combined with weighted average favoring coverage
         keyword_coverage = len(matched_keywords) / len(patterns)
         word_count = max(len(text.split()), 1)
-        density = min(total_matches / (word_count / 100), 1.0)  # matches per 100 words, capped
+
+        # Length-aware density normalization (METHODOLOGY.md §3.1):
+        # In short texts (< 500 words), a few keyword matches can
+        # produce disproportionately high density scores because each
+        # match spans a larger fraction of the total text.  This
+        # inflates confidence for articles that span multiple topic
+        # buckets — a 200-word blurb mentioning "layoff" once and
+        # "AI" once would score both topics at near-maximum density.
+        # Dampening scales density linearly below a reference length
+        # of 500 words (roughly the lower bound of a standard article).
+        _DENSITY_REF_WORDS = 500
+        raw_density = min(total_matches / max(word_count / 100, 1), 1.0)
+        length_dampening = min(word_count / _DENSITY_REF_WORDS, 1.0)
+        density = raw_density * length_dampening
 
         confidence = 0.6 * keyword_coverage + 0.4 * density
         confidence = min(confidence, 1.0)

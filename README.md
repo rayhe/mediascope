@@ -404,7 +404,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **1457 tests** across 57 test files, each covering a different analytical capability:
+MediaScope has **1461 tests** across 57 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -424,7 +424,7 @@ MediaScope has **1457 tests** across 57 test files, each covering a different an
 | `test_privacy_affiliation_fixes.py` | 14 | Privacy/data topic keyword expansion (MCI/employee-surveillance language: opt-in/out, sensitive data, employee tracking, mouse-tracking, keystroke, screen scraping), source affiliation case-sensitivity fix (capitalized titles: Chief Executive, Chief Technology Officer, Vice President) |
 | `test_quality_standards.py` | 41 | Quality enforcement: banned AI-slop phrase detection (25 phrases, case-sensitive/insensitive), em dash limit enforcement, counterargument/limitations/methodology signal detection, score calculation, pass/fail logic |
 | `test_citations.py` | 39 | Citation extraction: URL detection, source grading (primary/secondary/tertiary domain lists), domain extraction, attribution patterns ("according to"), formal citations ([1], (Author 2024)), deduplication, citation report statistics |
-| `test_topics.py` | 35 | Topic classification: all 26 standardized topic buckets, confidence scoring (keyword coverage + density), top-N filtering, custom topic injection, multi-topic articles, child_safety addiction/harm framing, ai_ethics_safety alignment/philosopher, edge cases |
+| `test_topics.py` | 39 | Topic classification: all 26 standardized topic buckets, confidence scoring (keyword coverage + density), length-aware density normalization (short-text dampening, proportional scaling, full-length no-dampening), top-N filtering, custom topic injection, multi-topic articles, child_safety addiction/harm framing, ai_ethics_safety alignment/philosopher, edge cases |
 | `test_claims.py` | 28 | Claim-evidence mapping: statistic detection (percentages, dollar amounts, multipliers), quote detection, citation signal detection, assertion detection, source attribution, claim mapping, unsupported claims ratio, confidence scoring |
 | `test_atlantic_analysis.py` | 31 | Atlantic-specific coverage analysis: Emerson Collective ownership conflicts, Apple/OpenAI financial interest detection, AI coverage framing patterns, data center environmental articles |
 | `test_loaded_language_uproar.py` | 13 | Loaded language detection edge cases: workplace coercion terms, revolt vocabulary, "uproar" word variants, false-positive exclusion for neutral contexts |
