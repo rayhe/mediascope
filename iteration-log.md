@@ -2,6 +2,77 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-07 11:00 PT — Type C: Ownership & Funding Deep Dive (The Verge/PMC/PMX)
+
+**Focus:** Comprehensive update to The Verge profile covering PMX leadership appointments, PAG Q1 2026 financials, and four new litigation entries tracking Google's accumulating global antitrust/liability exposure — including the Munich AI Overviews ruling that directly supports PMC's core argument.
+
+### Changes
+
+**1. PMX Leadership Expansion**
+- Added Tom Finn (promoted from PMC EVP Strategy & Operations to COO of PMX)
+- Added Ken DelAlcazar (promoted from PMC EVP Finance to CFO of PMX; with PMC since ~2017)
+- Source: Adweek June 18, 2026 PMC acquisition article
+
+**2. Murdoch/Lupa Deal Context Expanded**
+- Added full list of acquired sub-brands: The Cut, Vulture, Intelligencer, The Strategist, Curbed, Grub Street
+- Added Vox Media Podcast Network details (~40 shows incl. Pivot, Today Explained, Criminal, Where Should We Begin?)
+- Lupa's existing holdings: Art Basel, Tribeca Enterprises (Tribeca Film Festival)
+- LionTree advised Vox Media on the sale
+- Valuation context: Vox Media $1B (2015) → $500M (2023 PMC investment) → Lupa deal alone ~$300M+
+- Sources: WSJ, TheWrap, Adweek, AP, Hollywood Reporter (all May 20, 2026)
+
+**3. PAG Q1 2026 Financials (Penske Family section)**
+- Stock: $183.65 (Jul 7), market cap $11.8B
+- Q1 2026: EPS $3.56 (beat $2.91 consensus by $0.65), revenue $7.86B
+- Q2 2026 earnings: July 29
+- FY 2026 consensus EPS: $13.60
+- TTM: revenue $31.8B, net income $935.4M, EPS $14.13
+- Dividend: $5.68/yr (3.07% yield), 6 consecutive years growth, 43.88% annualized 5Y growth
+- Analyst ratings: Morgan Stanley OW $190, Citi Buy $199, UBS Neutral $167, JPMorgan Neutral $170
+- Sources: MarketBeat, StockTitan
+
+**4. NEW: Munich AI Overviews Liability Ruling (~Jun 13, 2026)**
+- Munich Regional Court found Google DIRECTLY LIABLE for AI Overview content
+- Key holding: AI Overviews create "independent, new, and substantive statements" — not mere indexing
+- Google classified as direct infringer (overturning prior German precedent on search engines)
+- Disclaimer insufficient; failure to respond to cease-and-desist weighed against Google
+- Pew data: AI Overviews reduce clicks to traditional results from ~15% to ~8%
+- NYT data: ~90% accuracy but at 5T+ searches/year = hundreds of millions of errors
+- **Critical for PMC case:** Rejects Google's "part of search" defense and "non-rivalrous content" argument
+- Sources: Reuters, Malwarebytes, Canadian Lawyer, CIO.com
+
+**5. NEW: DOJ Search Antitrust Remedies (Sep 2, 2025)**
+- SAME JUDGE (Amit P. Mehta) as PMC AI Overviews case
+- No Chrome/Android divestiture — conduct remedies only
+- Banned exclusive contracts for Chrome, Search, Google Assistant, AND Gemini app
+- Data sharing ordered with competitors
+- Mehta cited "humility" re: GenAI disruption
+- GOOGL +7.2%, AAPL +3% on ruling
+- **Previews PMC remedies approach:** targeted conduct, not structural breakup
+- Sources: DOJ press release, Reuters, Stanford Law, Reason.org
+
+**6. NEW: EU Android Fine Confirmed ($4.1B, Jul 2, 2026)**
+- CJEU dismissed Google's final appeal — no further appeals possible
+- Google ~€11B cumulative EU antitrust fines (Android + Shopping + AdSense)
+- Same week: Swedish court ordered $1.5B to PriceRunner/Klarna (Google Shopping self-preferencing)
+- **Pattern of tying** supports PMC's argument
+- Sources: Reuters, NY Post
+
+**7. NEW: ECJ Streamz Publisher Rights (Jul 6-7, 2026 oral hearing)**
+- Google, Meta, Spotify, Sony vs Belgium re Article 15 DSM Directive
+- Denmark intervened for publishers; Culture Minister: "tech giants should not be allowed to use media content without paying"
+- Could define publisher content rights broadly across EU
+- Source: Reuters
+
+### Analytical Significance
+The Munich ruling is the most analytically significant addition. It establishes for the first time that AI Overviews constitute a distinct editorial product (not search), with Google as publisher. This is exactly the theory of the case in PMC v. Google (1:25-cv-03192-APM). Combined with the DOJ remedies ruling by the same judge, the profile now captures the complete legal landscape PMC operates in.
+
+### Stats
+- **Profile size:** 607 lines (was 469, +138)
+- **Litigation entries:** 6 (was 2, +4: Munich, DOJ remedies, EU Android, ECJ Streamz)
+- **Tests:** 97 structural consistency passed, 0 failed
+- **Commit:** `020e97d`
+
 ## 2026-07-07 10:00 PT — Type B: Journalist Research — 3 Verge Journalists + Alex Heath Expansion
 
 **Focus:** The Verge had only 9 tracked journalists — fewest of any publication. Added 3 missing journalists and significantly expanded the existing Alex Heath entry with a previously undocumented career stop.
