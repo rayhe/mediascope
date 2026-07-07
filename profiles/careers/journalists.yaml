@@ -11447,3 +11447,182 @@ journalists:
   - https://technologyreview.com/author/mia-sato/
   - https://embedded.substack.com/p/the-journalist-cracking-the-tiktok
   - https://theorg.com/org/the-verge/org-chart/mia-sato
+- career:
+  - beat: biomedical engineering, brain-computer interfaces
+    end: '2021'
+    event_type: hired
+    notes: Research scientist designing and fabricating tiny electrodes for single-neuron electrophysiology recordings. Pre-journalism
+      career. Cornell BS Bioengineering, University of Michigan PhD Biomedical Engineering (focus on brain-computer interfaces).
+      Her BCI expertise gives her genuine technical depth on AI/neuroscience that most AI reporters lack — she designed the
+      hardware that interfaces with brains.
+    publication: university-of-michigan
+    role: research_scientist
+    source_url: https://elissawelle.com
+    start: '2016'
+  - beat: campus investigations
+    event_type: hired
+    notes: Student writer at the University of Michigan's student newspaper. Broke stories about abuse in academic institutions.
+      Early investigative instinct during graduate school.
+    publication: michigan-daily
+    role: student_writer
+    source_url: https://statnews.com/staff/elissa-welle/
+    start: '2018'
+  - beat: breaking news
+    event_type: hired
+    notes: Breaking news reporter covering everything from traffic to endangered birds. First professional journalism role.
+      Based in Michigan.
+    publication: detroit-free-press
+    role: breaking_news_reporter
+    source_url: https://statnews.com/staff/elissa-welle/
+    start: '2020'
+  - beat: science, health
+    event_type: fellowship
+    notes: AAAS Mass Media Science & Engineering Fellowship intern at STAT News. Based in Boston. AAAS Mass Media Fellowship
+      is prestigious program placing scientists in newsrooms — signals her scientist-to-journalist pipeline identity.
+    publication: stat-news
+    role: intern
+    source_url: https://statnews.com/staff/elissa-welle/
+    start: '2021'
+  - beat: science
+    event_type: hired
+    notes: Intern reporter. Contributed science reporting. Part of career-building rotation through major science/tech outlets.
+    publication: reuters
+    role: intern_reporter
+    source_url: https://thetransmitter.org/people/elissa-welle/
+    start: '2022'
+  - beat: science
+    event_type: hired
+    notes: Intern reporter at Nature. Contributed science reporting. High-prestige placement for a science journalist.
+    publication: nature
+    role: intern_reporter
+    source_url: https://thetransmitter.org/people/elissa-welle/
+    start: '2022'
+  - beat: higher education, academic investigations
+    event_type: freelance
+    notes: Freelance contributor while pursuing master's in science journalism at UC Santa Cruz. Covered Marc Tessier-Lavigne
+      investigation (Stanford president, image manipulation allegations), DEI practices in medical education. Also wrote for
+      San Jose Mercury News.
+    publication: chronicle-of-higher-education
+    role: freelancer
+    source_url: https://chronicle.com/author/elissa-welle
+    start: '2022'
+    end: '2023'
+  - beat: neuroscience, neurodegeneration
+    end: '2024'
+    event_type: hired
+    notes: News reporter covering neurodegeneration and basic neuroscience research. The Transmitter is a Simons Foundation-funded
+      neuroscience news platform. Last dedicated science reporting role before pivoting to AI beat.
+    publication: the-transmitter
+    role: news_reporter
+    source_url: https://thetransmitter.org/people/elissa-welle/
+    start: '2023'
+  - beat: science, data journalism
+    event_type: freelance
+    notes: Freelance data and science reporter. Ran NYC By Number, a public data project examining New York City datasets.
+      Contributed to Ambrook Research. Also wrote for IEEE Spectrum. Freelance period before joining The Verge.
+    publication: freelance
+    role: freelancer
+    source_url: https://elissawelle.com
+    start: '2024'
+    end: 2025-10
+  - beat: AI companies, AI policy, AI products
+    event_type: hired
+    notes: 'AI Reporter at The Verge, appointed October 2025. Supported by Tarbell Center for AI Journalism fellowship (stipend
+      $60-80K, explicit mission: "hold frontier AI companies accountable"). NYC-based. Her first Verge byline appeared Sep
+      30, 2025. Coverage areas: OpenAI datacenters, Google AI products, Anthropic models, AI policy (NY rent algorithm ban,
+      AFL-CIO AI regulation), platform AI features (Pinterest, Meta camera roll AI), AI video (Sora deepfakes), AI in sports/gaming.
+      TARBELL FELLOWSHIP SIGNIFICANCE: The Tarbell Center''s explicit accountability mandate creates an external editorial
+      influence vector — fellows bring a pre-defined adversarial posture toward AI companies regardless of host newsroom''s
+      natural editorial culture. This is a structural feature, not a criticism — but it means Welle''s AI coverage at The
+      Verge is shaped by both Patel''s consumer-advocacy editorial culture AND Tarbell''s accountability-journalism mission.
+      ANALYTICAL VALUE: (1) PhD neuroscientist → AI reporter pipeline is extremely rare — genuine technical expertise on neural
+      interfaces, brain-computer interfaces, and the biological grounding of AI claims. (2) Tarbell fellowship is externally
+      funded, creating a novel editorial funding structure worth tracking across all host newsrooms. (3) Her science journalism
+      background (Nature, Reuters, STAT) grounds her in evidence-based reporting norms that may differ from advocacy-first
+      journalism. (4) Second dedicated AI reporter at The Verge alongside Hayden Field — The Verge now has two AI beat reporters,
+      an investment that signals editorial priority.'
+    publication: the-verge
+    role: ai_reporter
+    source_url: https://muckrack.com/elissa-welle/articles
+    start: 2025-10
+  education:
+  - degree: BS
+    field: Bioengineering
+    institution: Cornell University
+    year: '~2016'
+  - degree: PhD
+    field: Biomedical Engineering (brain-computer interfaces, single-neuron electrophysiology)
+    institution: University of Michigan
+    year: '2021'
+  - degree: MS
+    field: Science Communication
+    institution: UC Santa Cruz
+    year: '~2023'
+  multi_publication: true
+  name: Elissa Welle
+  notes: 'Career arc: Neural engineer (Cornell BS + Michigan PhD in BCI) → Michigan Daily → Detroit Free Press → STAT News
+    (AAAS fellowship) → Reuters → Nature → Chronicle of Higher Education → The Transmitter → freelance → The Verge (Oct 2025-present).
+    Supported by Tarbell Center for AI Journalism. PhD designed brain-computer interface hardware — genuine technical depth
+    on AI/neuroscience rare among journalists. Ran NYC By Number data project. ANALYTICAL VALUE: (1) Scientist-to-journalist
+    pipeline with PhD-level expertise in the exact hardware that AI draws inspiration from (neural interfaces). (2) Tarbell
+    fellowship creates externally funded accountability mandate at host newsroom. (3) Science journalism background (Nature,
+    Reuters, STAT, The Transmitter) grounds reporting in evidence norms. (4) Second dedicated AI reporter at The Verge —
+    investment in AI coverage depth. (5) Her BCI background is directly relevant to Meta''s Neural Band/EMG technology —
+    she may have more technical grounding on that specific technology than any other tech journalist.'
+  source_urls:
+  - https://muckrack.com/elissa-welle/articles
+  - https://statnews.com/staff/elissa-welle/
+  - https://thetransmitter.org/people/elissa-welle/
+  - https://elissawelle.com
+  - https://chronicle.com/author/elissa-welle
+- career:
+  - beat: consumer tech, reviews
+    event_type: hired
+    notes: UK tech publication. Early career in tech journalism. Details sparse — known from Muck Rack profile listing prior
+      publications.
+    publication: tech-advisor
+    role: reporter
+    source_url: https://muckrack.com/dominic-preston/articles
+    start: '2015'
+  - beat: consumer tech, reviews, movies, games
+    event_type: hired
+    notes: UK tech and entertainment publication. Covered consumer technology alongside movies and games. Part of 10+ year
+      journalism career. Also contributed to PCWorld, TechRadar, HuffPost, NME.
+    publication: android-police
+    role: reporter
+    source_url: https://intelligentrelations.com/media-database/dominic-preston/
+    start: '2018'
+  - beat: Android, smartphones, foldables, reviews
+    event_type: promoted
+    notes: Promoted to Managing Reviews Editor at Android Police. Oversaw the reviews desk. Known for detailed smartphone
+      reviews, especially foldables. Final role before The Verge hire.
+    publication: android-police
+    role: managing_reviews_editor
+    source_url: https://diarydirectory.com/diary-daily/the-verge-usa-appoints-news-editor-8/
+    start: '2022'
+    end: 2025-02
+  - beat: consumer tech, smartphones, hardware, news
+    event_type: hired
+    notes: 'News Editor at The Verge, appointed February 2025. Reports on consumer tech hardware with focus on smartphones,
+      foldables, and gadgets. Covers Samsung, Oppo, Honor, Google Pixel hardware launches. Also writes Braise, a bi-weekly
+      restaurant and recipe newsletter on Substack. Provides UK/European perspective from outside US-centric tech press. Contact:
+      Signal (dompreston.01). ANALYTICALLY SIGNIFICANT: Preston''s hiring fills a gap in The Verge''s news desk after multiple
+      departures. His reviews background at Android Police brings product-testing rigor. His coverage area (hardware, consumer
+      devices) is less directly relevant to the Meta/AI coverage bias analysis but provides context for how The Verge frames
+      product announcements vs editorial coverage of the same companies.'
+    publication: the-verge
+    role: news_editor
+    source_url: https://diarydirectory.com/diary-daily/the-verge-usa-appoints-news-editor-8/
+    start: 2025-02
+  multi_publication: true
+  name: Dominic Preston
+  notes: 'Career arc: Tech Advisor → Android Police (reporter → managing reviews editor) → The Verge (news editor, Feb 2025-present).
+    UK-based. 10+ year journalism career spanning UK and US tech publications. Also writes Braise (Substack cooking newsletter).
+    Previously contributed to TechRadar, PCWorld, HuffPost, NME. ANALYTICAL VALUE: (1) Android Police → The Verge migration
+    provides a framing comparison between enthusiast/reviews-focused publication and mainstream tech journalism. (2) UK perspective
+    provides different baseline than US-centric tech press. (3) His hardware/reviews focus means he is less likely to drive
+    Meta AI/policy coverage but may shape product announcement framing for Meta hardware (Ray-Ban glasses, Quest headsets).'
+  source_urls:
+  - https://diarydirectory.com/diary-daily/the-verge-usa-appoints-news-editor-8/
+  - https://muckrack.com/dominic-preston/articles
+  - https://intelligentrelations.com/media-database/dominic-preston/
