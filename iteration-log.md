@@ -2,6 +2,48 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-06 22:00 PT — Type D: Toolkit Quality — Stale Diagram/Migration Count Fix + 2 New Guards
+
+**Focus:** Cross-document count audit found 3 stale references that passed existing guards due to pattern gaps. Fixed all 3 and added 2 new guards to prevent recurrence.
+
+### What Changed
+
+**1. ARCHITECTURE.md Diagram — "(73 device types, 420 patterns)" → "(75 device types, 420 patterns)"**
+
+The ASCII art diagram at line 119 annotating the Framing Device Detection component used "73 device types" — a count that went stale as new device types were added. The code has 75 total (69 pattern-matched + 6 structural), confirmed via `_DEVICE_PATTERNS` (69 keys) + 6 structural post-pass types. The existing stale count detector had 3 patterns (`N-type taxonomy`, `N framing device types`, `total...N device`) but none matched the parenthetical format `(N device types, ...)` used in diagram annotations. This is exactly why the stale count survived undetected.
+
+**Fix:** Updated count to 75. Added a 4th stale detection pattern `\({n}\s+device\s+type` to catch parenthetical annotations.
+
+**2. EDITORIAL_HISTORIES.md — "**500 migrations**" → "**503 migrations**"**
+
+`CareerTracker.find_migrations()` returns 503 migrations, matching the README careers_demo description. But EDITORIAL_HISTORIES.md still said 500 — stale by 3 migrations. The existing test suite only guarded the README migration count, not EDITORIAL_HISTORIES.md.
+
+**Fix:** Updated count. Added `test_editorial_histories_migration_count` guard that validates the EDITORIAL_HISTORIES.md migration count matches CareerTracker output.
+
+**3. Test count headers — 1456 → 1457**
+
+Both README.md and ARCHITECTURE.md total test count headers needed incrementing for the new guard test. Per-file count for `test_structural_consistency.py` updated from 95 → 96 `def test_` declarations.
+
+### Guard Improvements
+
+| Guard | What it catches | Pattern |
+|-------|----------------|---------|
+| `test_editorial_histories_migration_count` (NEW) | EDITORIAL_HISTORIES.md migration count drift from CareerTracker | `**{count} migrations**` must match `len(CareerTracker.find_migrations())` |
+| Stale device count parenthetical pattern (NEW) | Diagram annotations like "(73 device types, ...)" | `\({n}\s+device\s+type` for all N in [30, current) |
+
+### Root Cause Analysis
+
+The "73 device types" staleness in the ARCHITECTURE.md diagram illustrates a recurring pattern: count guards are typically written to match the specific phrasing format seen in a particular doc, but the same count can appear in a different format elsewhere (parenthetical annotation vs. prose assertion vs. table cell). Each new format needs its own detection pattern.
+
+The stale detection approach (testing for presence of any old count in specific patterns) is fundamentally sound but needs format coverage to be exhaustive. The 4 patterns now cover: taxonomy labels, prose assertions, total-context references, and parenthetical annotations.
+
+### Stats
+- Tests: 1457 passed (0 failed), +1 from previous
+- Files changed: 4 (README.md, ARCHITECTURE.md, EDITORIAL_HISTORIES.md, test_structural_consistency.py)
+- Lines: +19, -6
+- Commit: `0acb2eb`
+
+---
 ## 2026-07-06 21:00 PT — Type C: Ownership & Funding Deep Dive — The Verge/PMC: FEC Donations, Dual Google Lawsuits, WGAE CBA Successor Clause
 
 **Focus:** The Verge / Penske Media Corporation profile. Last Verge Type C was the initial profile build. This iteration targets 5 areas with primary source verification: (1) Roger Penske FEC donations upgraded from secondary reporting ($1.1M) to OpenSecrets/FEC verified ($4.125M), (2) PMC's two separate Google lawsuits documented with case numbers, (3) Vox Media Union CBA §39 successor clause and §40 AI protections — read from the actual WGAE PDF, (4) SXSW governance under PMC, (5) PMC leadership transition.
@@ -14920,3 +14962,38 @@ Type B rotation: journalist profile research and editorial change tracking.
 - **Feeder outlets:** 312 unique publication slugs (floor updated to 310+)
 - **Tests:** 1,456 passed + 96 structural consistency checks, 0 failed
 - **Commit:** 063f3eb, pushed to GitHub
+
+## 2026-07-06 23:00 PDT — Type A: MIT TR Meta Louisiana Natural Gas
+
+**Article:** "AI could keep us dependent on natural gas for decades to come" — MIT Technology Review, "Power Hungry" investigative series (May 2026). About Meta's planned 2.3-GW natural gas power complex in Richland Parish, Louisiana with Entergy.
+
+### Changes
+
+1. **New entity clusters (entities.py):**
+   - `Energy/Utilities` (24 aliases): Entergy, Duke Energy, Southern Company, Dominion, NextEra, PG&E, TVA, etc.
+   - `Energy Research/Regulatory` (16 aliases): EPRI, EIA, LPSC, FERC, Rhodium Group, IEA, NREL, DOE, etc.
+   - `Environmental Advocacy` (12 aliases): Alliance for Affordable Energy, SELC, Sierra Club, NRDC, EDF, etc.
+   - Fixed entity blind spot: 34 entity mentions (51% of article entities) were invisible before these clusters.
+
+2. **New topic (topics.py):** `energy_climate` — ~50 keywords (natural gas, fossil fuel, carbon emissions, renewables, fracking, climate change, decarbonization, ratepayer, etc.). Now 26 topic buckets total (was 25).
+
+3. **Agency attribution fix (sentiment.py):** Added ~20 infrastructure/investment active verbs to `ACTIVE_FRAMING` ("plans to build", "aims to", "will fund", etc.). Agency score: 0.0 → 0.7778.
+
+4. **Source extraction fixes (sources.py):**
+   - Added Pattern 0/0b: Titled source extraction — captures "Governor Jeff Landry" instead of truncating to "Governor Jeff"
+   - Added political titles to `_NAME_STOP_FIRST_WORDS`: Governor, Senator, Representative, Mayor, etc.
+   - Added partial org names to `_NAME_STOP_NAMES`: "Law School", "Affordable Energy", "Concerned Scientists"
+   - Added non-journalistic "source" filter: rejects "energy source", "data source", "power source" from anonymous detection
+   - Added institutional nouns to `_SINGLE_NAME_ORG_STOPS`: School, University, College, Institute, etc.
+   - Added energy companies to `_SINGLE_NAME_ORG_STOPS` and `_KNOWN_ORGS`: Entergy, Duke Energy, Dominion, Eversource
+   - Fixed 5 false positive sources, added 2 true sources (Governor Jeff Landry, Entergy as organizational)
+
+5. **Documentation updates:** METHODOLOGY.md (26 topics, 69 clusters, energy_climate definition, Energy & Environment cluster category, growth history), ARCHITECTURE.md, AGENT_GUIDE.md, README.md — all count references updated.
+
+6. **Analysis annotation:** `examples/sample_output/mit_tr_meta_louisiana_natural_gas_2026_05_analysis.md` — full gap analysis comparing pre-fix vs post-fix toolkit output against manual assessment.
+
+### Stats
+- **Entity clusters:** 69 (was 66, +3 Energy & Environment)
+- **Topic buckets:** 26 (was 25, +1 energy_climate)
+- **Annotated articles:** 106 (was 105)
+- **Tests:** 1,457 passed, 0 failed (was 1,456 — structural test count updated)

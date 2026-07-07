@@ -116,6 +116,14 @@ _NAME_STOP_FIRST_WORDS: set[str] = {
     # Day names — "on Thursday argues" should not extract "Thursday" as source
     "Monday", "Tuesday", "Wednesday", "Thursday", "Friday",
     "Saturday", "Sunday",
+    # Political/governmental titles — these are titles, not first names.
+    # "Governor Jeff" (from "Governor Jeff Landry") would match the
+    # "[A-Z][a-z]+ [A-Z][a-z]+" name pattern.  Discovered in MIT Tech
+    # Review Louisiana natural gas article (Jul 2026).
+    "Governor", "Senator", "Representative", "Mayor", "Chairman",
+    "Chairwoman", "Secretary", "Commissioner", "Councilman",
+    "Councilwoman", "Alderman", "Sheriff", "Marshal",
+    "Ambassador", "Minister", "Magistrate",
     # Month names — "In January reported" should not extract "January"
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December",
@@ -175,6 +183,12 @@ _NAME_STOP_NAMES: set[str] = {
     "Business Insider", "Tech Review", "Technology Review",
     "Daily Beast", "Daily Mail", "Morning Post",
     "Evening Standard",
+    # Partial organization names that truncate from longer names
+    # Discovered in MIT Tech Review Louisiana natural gas article (Jul 2026):
+    # "Harvard Law School" → "Law School", "Alliance for Affordable Energy" → "Affordable Energy"
+    "Law School", "Affordable Energy", "Concerned Scientists",
+    "Environmental Law", "Power Research", "Gas Plants",
+    "Public Service", "Service Commission",
 }
 
 # Anonymous source indicators
@@ -418,6 +432,67 @@ def extract_sources(text: str) -> list[SourceMention]:
 
     # Build a combined verb pattern
     verb_alternation = "|".join(re.escape(v) for v in sorted(ALL_VERBS, key=len, reverse=True))
+
+    # Pattern 0: "Title First Last verb" — titled source with attribution verb
+    # Catches "Governor Jeff Landry declared", "Senator Sheldon Whitehouse issued",
+    # "Chairman Jay Powell said".  Must run before Pattern 1 to capture the
+    # full three-word name instead of truncating to "Governor Jeff".
+    # Discovered in MIT Tech Review Louisiana natural gas article (Jul 2026).
+    _TITLE_PREFIXES = (
+        "Governor", "Senator", "Representative", "Mayor", "Chairman",
+        "Chairwoman", "Secretary", "Commissioner", "Sheriff",
+        "Ambassador", "Minister", "Magistrate", "Justice",
+        "Councilman", "Councilwoman", "Alderman", "Marshal",
+    )
+    _title_alt = "|".join(_TITLE_PREFIXES)
+    titled_before_verb = re.compile(
+        rf"\b((?:{_title_alt})\s+[A-Z][a-z]+\s+[A-Z][a-z]+(?:-[A-Z][a-z]+)?)\s+({verb_alternation})\b",
+    )
+    for m in titled_before_verb.finditer(text):
+        name = m.group(1).strip()
+        verb = m.group(2).strip().lower()
+        if name in seen_names:
+            continue
+        seen_names.add(name)
+
+        ctx_start = max(0, m.start() - 100)
+        ctx_end = min(len(text), m.end() + 100)
+        context = text[ctx_start:ctx_end]
+
+        sources.append(SourceMention(
+            name=name,
+            is_anonymous=False,
+            is_expert=_is_expert_by_title(context),
+            affiliation=_extract_affiliation(context),
+            quote=_extract_nearby_quote(text, m.start(), m.end()),
+            attribution_verb=verb,
+        ))
+
+    # Pattern 0b: "verb Title First Last" — reverse titled source
+    # Catches '"A game changer," declared Governor Jeff Landry' where the
+    # verb precedes the titled name.
+    verb_before_titled = re.compile(
+        rf"\b({verb_alternation})\s+((?:{_title_alt})\s+[A-Z][a-z]+\s+[A-Z][a-z]+(?:-[A-Z][a-z]+)?)\b",
+    )
+    for m in verb_before_titled.finditer(text):
+        verb = m.group(1).strip().lower()
+        name = m.group(2).strip()
+        if name in seen_names:
+            continue
+        seen_names.add(name)
+
+        ctx_start = max(0, m.start() - 100)
+        ctx_end = min(len(text), m.end() + 100)
+        context = text[ctx_start:ctx_end]
+
+        sources.append(SourceMention(
+            name=name,
+            is_anonymous=False,
+            is_expert=_is_expert_by_title(context),
+            affiliation=_extract_affiliation(context),
+            quote=_extract_nearby_quote(text, m.start(), m.end()),
+            attribution_verb=verb,
+        ))
 
     # Pattern 1: "Name said/told/etc." — named source with attribution verb
     # Supports hyphenated surnames (e.g. "Hadfield-Menell") — discovered in
@@ -703,6 +778,10 @@ def extract_sources(text: str) -> list[SourceMention]:
         # Chinese / international tech companies
         "Alibaba", "Baidu", "Tencent", "Huawei", "Xiaomi",
         "ByteDance", "Bytedance",
+        # Energy/utility companies — "Entergy acknowledged" is a corporate
+        # statement, not a human source.  Discovered in MIT Tech Review
+        # Louisiana natural gas article (Jul 2026).
+        "Entergy", "Eversource", "Dominion",
         # Common words that start sentences
         "People", "Everyone", "Somebody", "Someone", "Something",
         "Today", "Tomorrow", "Yesterday", "Here", "There",
@@ -724,6 +803,12 @@ def extract_sources(text: str) -> list[SourceMention]:
         "Journal", "Tribune", "Herald", "Gazette", "Times",
         "Chronicle", "Observer", "Sentinel", "Register",
         "Standard", "Express", "Monitor",
+        # Common institutional nouns that appear capitalized at sentence
+        # start and false-positive as single-word sources.  Discovered
+        # in MIT Tech Review Louisiana natural gas article (Jul 2026).
+        "School", "University", "College", "Institute", "Center",
+        "Alliance", "Association", "Foundation", "Commission",
+        "Council", "Agency", "Bureau", "Department",
     }
     single_name_verb = re.compile(
         rf"\b([A-Z][a-z]{{2,}})\s+({verb_alternation})\b",
@@ -1010,6 +1095,24 @@ def extract_sources(text: str) -> list[SourceMention]:
             # not journalistic source attributions.
             if descriptor.lower() in {n.lower() for n in _NAME_STOP_NAMES}:
                 continue
+            # Skip descriptors where "source" refers to a non-journalistic
+            # source (energy, data, power, etc.).  "the energy source" in
+            # "said the energy source was the only affordable choice" is
+            # about natural gas, not a journalistic anonymous source.
+            # Discovered in MIT Tech Review Louisiana natural gas article
+            # (Jul 2026).
+            _desc_lower_check = descriptor.lower()
+            if "source" in _desc_lower_check:
+                _NON_JOURNALISTIC_SOURCES = [
+                    "energy source", "data source", "power source",
+                    "fuel source", "light source", "heat source",
+                    "food source", "revenue source", "income source",
+                    "news source", "information source", "open source",
+                    "water source", "resource source", "main source",
+                    "primary source", "sole source", "chief source",
+                ]
+                if any(ns in _desc_lower_check for ns in _NON_JOURNALISTIC_SOURCES):
+                    continue
             # Skip bare pronoun-like back-references to previously named
             # spokespeople — e.g. "The spokesperson added" after "A
             # Snapchat spokesperson told CNN".  These are continuations,
@@ -1349,6 +1452,10 @@ def extract_sources(text: str) -> list[SourceMention]:
         "netflix", "uber", "lyft", "airbnb", "stripe", "shopify",
         "reuters", "bloomberg",
         "alibaba", "baidu", "tencent", "huawei", "xiaomi",
+        # Energy/utility companies — discovered in MIT Tech Review
+        # Louisiana natural gas article (Jul 2026).
+        "entergy", "duke energy", "dominion", "eversource",
+        "nextera", "pg&e", "con edison",
         # Compound publication names — these are also in _NAME_STOP_NAMES
         # to prevent person-name false positives, but should still be
         # extractable as organizational/publication sources.

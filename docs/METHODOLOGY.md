@@ -141,7 +141,7 @@ More coverage ≠ more bias. We normalize by:
 
 ### 3.1 Standardized Topic Buckets
 
-Articles are classified into 25 topic buckets to enable apples-to-apples comparison:
+Articles are classified into 26 topic buckets to enable apples-to-apples comparison:
 
 | Topic | Keywords |
 |---|---|
@@ -162,6 +162,7 @@ Articles are classified into 25 topic buckets to enable apples-to-apples compari
 | `government_oversight` | national security, export controls, classified, embargo, sanctions, nonproliferation, Pentagon, policymakers, lawmakers, AI regulation, military AI |
 | `defense_military` | military, defense contractor, warfare, combat, Army, Pentagon, DoD, drone, weapons system, IVAS, Anduril, Palantir, Special Operations, tactical AI |
 | `infrastructure_impact` | data center, hyperscale, power grid, electricity demand, power bills, NIMBY, rezoning, environmental impact, community opposition, tax breaks, megawatt, cooling system |
+| `energy_climate` | natural gas, fossil fuel, carbon emissions, CO2, methane, greenhouse gas, renewable energy, solar power, nuclear power, fracking, climate change, decarbonization, ratepayer, power plant, utility |
 | `labor_market` | labor market, employment growth, unemployment, job market, workforce, BLS, Bureau of Labor Statistics, wage growth, labor economist, job displacement, reskilling, career model, labor transition |
 | `worker_ai_displacement` | automate themselves, train their replacement, replace workers, worker dignity, alienation, dehumanizing, AI double, AI clones, sabotage, countermeasures, worker resistance, self-automation, flattened into modules, digital labor, AI replacement, replaced by AI |
 | `health_tech` | brain-computer interface, BCI, neural interface, neural implant, neuroprosthetic, neurotech, EEG, MEG, fMRI, paralysis, paralyzed, prosthetic, medical device, FDA approval, clinical trial, digital health, telehealth, medtech, genomics, gene therapy, CRISPR, surgical robot, drug discovery, medical AI, noninvasive |
@@ -173,7 +174,7 @@ Articles are classified into 25 topic buckets to enable apples-to-apples compari
 
 Classification uses keyword matching with TF-IDF weighting. An article can match multiple topics; the top 3 by confidence are retained.
 
-**Note on topic design:** The 25 buckets are designed for apples-to-apples comparison within a topic across companies. The `ai_generated_content` topic captures coverage of AI output quality and generative AI byproducts, distinct from `ai_development` (technology creation). The `ai_ethics_safety` topic captures coverage of AI alignment, AI safety research, existential risk, algorithmic bias, responsible AI, and the philosophical/moral dimensions of AI development, distinct from `ai_development` (technology creation) and `government_oversight` (regulatory actions). The `workplace_culture` topic captures internal organizational dynamics (morale, burnout, culture), distinct from `layoffs` (formal workforce actions) and `executive_behavior` (leadership decisions). The `labor_market` topic captures macroeconomic employment and wage dynamics (BLS data, labor economists, job displacement), distinct from `workplace_culture` (company-internal dynamics) and `layoffs` (specific workforce actions). The `worker_ai_displacement` topic captures coverage of workers whose labor directly trains, builds, or enables the AI systems that replace them — the recursive irony of self-automation — distinct from `labor_market` (macro employment trends), `layoffs` (formal workforce actions), and `workplace_culture` (internal morale). The `prediction_markets` topic captures coverage of betting/wagering platforms and event contracts, distinct from `financial_results` (earnings/market performance). The `corporate_strategy` topic captures M&A, partnerships, and market entry decisions, distinct from `product_launch` (specific releases). The `infrastructure_impact` topic captures coverage of data center construction, energy/water usage, community opposition (NIMBY), and environmental consequences of tech infrastructure, distinct from `corporate_strategy` (business decisions) and `ai_development` (technology itself). The `health_tech` topic captures coverage of medical technology, brain-computer interfaces, clinical devices, and health-focused AI, distinct from `ai_development` (general technology) and `product_launch` (commercial releases). The `cybersecurity` topic captures coverage of hacking, security breaches, account takeovers, and vulnerability exploits, distinct from `privacy_data` (collection/surveillance) and `content_moderation` (policy enforcement). The `education` topic captures coverage of technology's impact on schools, classrooms, students, and academic performance, distinct from `child_safety` (child protection/harm) and `content_moderation` (platform governance). The `subscription_monetization` topic captures coverage of product paywalling, subscription pricing, rate-limiting, and monetization practices, distinct from `financial_results` (earnings/market performance) and `product_launch` (specific releases). The `hardware_wearables` topic captures coverage of smart glasses, VR/AR headsets, fitness trackers, hearing aids, and other wearable computing devices, distinct from `product_launch` (general releases) and `ai_development` (underlying technology).
+**Note on topic design:** The 26 buckets are designed for apples-to-apples comparison within a topic across companies. The `ai_generated_content` topic captures coverage of AI output quality and generative AI byproducts, distinct from `ai_development` (technology creation). The `ai_ethics_safety` topic captures coverage of AI alignment, AI safety research, existential risk, algorithmic bias, responsible AI, and the philosophical/moral dimensions of AI development, distinct from `ai_development` (technology creation) and `government_oversight` (regulatory actions). The `workplace_culture` topic captures internal organizational dynamics (morale, burnout, culture), distinct from `layoffs` (formal workforce actions) and `executive_behavior` (leadership decisions). The `labor_market` topic captures macroeconomic employment and wage dynamics (BLS data, labor economists, job displacement), distinct from `workplace_culture` (company-internal dynamics) and `layoffs` (specific workforce actions). The `worker_ai_displacement` topic captures coverage of workers whose labor directly trains, builds, or enables the AI systems that replace them — the recursive irony of self-automation — distinct from `labor_market` (macro employment trends), `layoffs` (formal workforce actions), and `workplace_culture` (internal morale). The `prediction_markets` topic captures coverage of betting/wagering platforms and event contracts, distinct from `financial_results` (earnings/market performance). The `corporate_strategy` topic captures M&A, partnerships, and market entry decisions, distinct from `product_launch` (specific releases). The `infrastructure_impact` topic captures coverage of data center construction, energy/water usage, community opposition (NIMBY), and environmental consequences of tech infrastructure, distinct from `corporate_strategy` (business decisions) and `ai_development` (technology itself). The `health_tech` topic captures coverage of medical technology, brain-computer interfaces, clinical devices, and health-focused AI, distinct from `ai_development` (general technology) and `product_launch` (commercial releases). The `cybersecurity` topic captures coverage of hacking, security breaches, account takeovers, and vulnerability exploits, distinct from `privacy_data` (collection/surveillance) and `content_moderation` (policy enforcement). The `education` topic captures coverage of technology's impact on schools, classrooms, students, and academic performance, distinct from `child_safety` (child protection/harm) and `content_moderation` (platform governance). The `subscription_monetization` topic captures coverage of product paywalling, subscription pricing, rate-limiting, and monetization practices, distinct from `financial_results` (earnings/market performance) and `product_launch` (specific releases). The `hardware_wearables` topic captures coverage of smart glasses, VR/AR headsets, fitness trackers, hearing aids, and other wearable computing devices, distinct from `product_launch` (general releases) and `ai_development` (underlying technology). The `energy_climate` topic captures coverage of fossil fuel dependency, carbon emissions, renewable energy transitions, climate policy, and utility/ratepayer dynamics, distinct from `infrastructure_impact` (data center construction/community opposition) and `corporate_strategy` (business decisions).
 
 ## 4. Framing Device Detection
 
@@ -884,7 +885,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **66 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **69 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -902,7 +903,7 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 66 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 69 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
@@ -1025,9 +1026,17 @@ The following table documents all 66 entity clusters shipped with MediaScope, or
 | **OpenClaw** | 2 | OpenClaw, Hatch |
 | **IBM** | 4 | IBM, Deep Blue, Watson, Red Hat |
 
+#### Energy & Environment
+
+| Cluster | Aliases | Key Members |
+|---|---|---|
+| **Energy/Utilities** | 24 | Entergy, Duke Energy, Southern Company, Dominion Energy, NextEra Energy, PG&E, TVA, AES, AEP, Xcel Energy (+14 more) |
+| **Energy Research/Regulatory** | 16 | EPRI, EIA, LPSC, FERC, Rhodium Group, IEA, NREL, DOE, IRENA, RMI (+6 more) |
+| **Environmental Advocacy** | 12 | Alliance for Affordable Energy, Union of Concerned Scientists, SELC, Sierra Club, NRDC, Environmental Defense Fund, EDF, 350.org, Greenpeace, Earthjustice (+2 more) |
+
 ### 15.4 Cluster Growth History
 
-Entity clusters are added organically as new articles reveal detection gaps. The toolkit launched with 21 core clusters covering the primary analysis targets and their major competitors. Growth to 62 clusters reflects the expanding scope of coverage analysis:
+Entity clusters are added organically as new articles reveal detection gaps. The toolkit launched with 21 core clusters covering the primary analysis targets and their major competitors. Growth to 69 clusters reflects the expanding scope of coverage analysis:
 
 | Phase | Clusters Added | Trigger |
 |---|---|---|
@@ -1042,6 +1051,7 @@ Entity clusters are added organically as new articles reveal detection gaps. The
 | **Research & Policy** | +3 | Cross-article: Policy Research, Education/Advocacy, Cybersecurity/Research |
 | **Consumer & Misc** | +14 | Ongoing: Garmin, EssilorLuxottica, Smart Glasses Competitors, Indian Fintech, etc. |
 | **Financial Services** | +1 | PYMNTS agentic commerce article (Jul 3): Visa, Mastercard, AmEx, Goldman Sachs, Adyen, PayPal, Stripe, JPMorgan, etc. |
+| **Energy & Environment** | +3 | MIT TR Meta Louisiana natural gas article (May 2026): Energy/Utilities, Energy Research/Regulatory, Environmental Advocacy |
 
 ### 15.5 False-Positive Prevention
 
@@ -1198,7 +1208,7 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **105 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **106 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1306,7 +1316,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 105 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 85 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 106 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 85 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|

@@ -744,6 +744,72 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         ],
         "regex": r"(?<!\w)(Covalen|Sama(?=\s+(?:issued|employees|redundancy|outsourc|engagement|Meta|content))|Accenture)(?!\w)",
     },
+    "Energy/Utilities": {
+        "aliases": [
+            "Entergy", "Entergy Corporation",
+            "Duke Energy", "Duke",
+            "Southern Company", "Georgia Power", "Alabama Power",
+            "Dominion Energy", "Dominion",
+            "NextEra Energy", "NextEra", "FPL",
+            "AES Corporation", "AES",
+            "Xcel Energy", "Xcel",
+            "Eversource", "National Grid",
+            "PG&E", "Pacific Gas and Electric",
+            "Con Edison", "ConEd",
+            "TVA", "Tennessee Valley Authority",
+        ],
+        "regex": r"(?<!\w)(Entergy(?:\s+Corporation)?|Duke Energy"
+                 r"|Southern Company|Georgia Power|Alabama Power"
+                 r"|Dominion(?:\s+Energy)?"
+                 r"|NextEra(?:\s+Energy)?|(?-i:FPL)"
+                 r"|AES(?:\s+Corporation)?|Xcel(?:\s+Energy)?"
+                 r"|Eversource|National Grid"
+                 r"|(?-i:PG&E)|Pacific Gas and Electric"
+                 r"|Con(?:\s+)?Edison|ConEd"
+                 r"|(?-i:TVA)|Tennessee Valley Authority)(?!\w)",
+    },
+    "Energy Research/Regulatory": {
+        "aliases": [
+            "EPRI", "Electric Power Research Institute",
+            "EIA", "Energy Information Administration",
+            "LPSC", "Louisiana Public Service Commission",
+            "FERC", "Federal Energy Regulatory Commission",
+            "Rhodium Group", "Rhodium",
+            "IEA", "International Energy Agency",
+            "NREL", "National Renewable Energy Laboratory",
+            "Department of Energy", "DOE",
+        ],
+        "regex": r"(?<!\w)((?-i:EPRI)|Electric Power Research Institute"
+                 r"|(?-i:EIA)|Energy Information Administration"
+                 r"|(?-i:LPSC)|Louisiana Public Service Commission"
+                 r"|(?-i:FERC)|Federal Energy Regulatory Commission"
+                 r"|Rhodium(?:\s+Group)?"
+                 r"|(?-i:IEA)|International Energy Agency"
+                 r"|(?-i:NREL)|National Renewable Energy Laboratory"
+                 r"|Department of Energy|(?-i:DOE))(?!\w)",
+    },
+    "Environmental Advocacy": {
+        "aliases": [
+            "Alliance for Affordable Energy",
+            "Union of Concerned Scientists",
+            "Southern Environmental Law Center", "SELC",
+            "Sierra Club",
+            "Greenpeace",
+            "Natural Resources Defense Council", "NRDC",
+            "Environmental Defense Fund", "EDF",
+            "Earthjustice",
+            "350.org",
+        ],
+        "regex": r"(?<!\w)(Alliance for Affordable Energy"
+                 r"|Union of Concerned Scientists"
+                 r"|Southern Environmental Law Center|(?-i:SELC)"
+                 r"|Sierra Club"
+                 r"|Greenpeace"
+                 r"|Natural Resources Defense Council|(?-i:NRDC)"
+                 r"|Environmental Defense Fund|(?-i:EDF)"
+                 r"|Earthjustice"
+                 r"|350\.org)(?!\w)",
+    },
     "Financial Services": {
         "aliases": [
             "Visa", "Mastercard", "American Express", "Amex",

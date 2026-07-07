@@ -699,6 +699,22 @@ ACTIVE_FRAMING: list[str] = [
     # small team" scored 0.0 agency vs manual +0.50.
     "urged", "dispatched", "directed", "instructed",
     "rallied", "mobilized", "greenlit", "fast-tracked",
+    # Infrastructure/investment active verbs — common in data center,
+    # energy, and capital expenditure articles where the subject is the
+    # active agent making strategic commitments.  Gap discovered in MIT
+    # Tech Review Louisiana natural gas article (Jul 2026): Meta had
+    # clear agency (plans to build, will spend, will work with, will fund)
+    # but scored 0.0 because these verbs weren't in the list.
+    "plans to build", "planning to build", "plans to construct",
+    "aims to", "intends to", "seeks to",
+    "will fund", "will help fund", "will help to fund",
+    "will work with", "working with",
+    "chose to", "decided to", "opted to",
+    "proposed", "proposing",
+    "signed a", "entered into",
+    "building", "constructing",
+    "funding", "financing",
+    "acquiring", "purchased",
 ]
 
 # Active-NEGATIVE framing: the subject is the agent, but the actions are

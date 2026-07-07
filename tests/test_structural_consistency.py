@@ -303,10 +303,10 @@ class TestTopicBucketConsistency:
     """Guard: topic bucket counts match across code and docs."""
 
     def test_topic_count_in_code(self):
-        """Code should define exactly 25 topic buckets."""
+        """Code should define exactly 26 topic buckets."""
         from mediascope.analyze.topics import TOPIC_KEYWORDS
-        assert len(TOPIC_KEYWORDS) == 25, (
-            f"Expected 25 topic buckets, got {len(TOPIC_KEYWORDS)}.\n"
+        assert len(TOPIC_KEYWORDS) == 26, (
+            f"Expected 26 topic buckets, got {len(TOPIC_KEYWORDS)}.\n"
             f"Buckets: {sorted(TOPIC_KEYWORDS.keys())}\n"
             "If you added a new topic, update this test AND the docs:\n"
             "  - docs/METHODOLOGY.md §3.1 topic count and table\n"
@@ -315,24 +315,24 @@ class TestTopicBucketConsistency:
         )
 
     def test_methodology_topic_count(self):
-        """METHODOLOGY.md must say 25 topic buckets."""
+        """METHODOLOGY.md must say 26 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
-        assert "25 topic buckets" in doc, (
-            "METHODOLOGY.md topic count is stale. Should be 25."
+        assert "26 topic buckets" in doc, (
+            "METHODOLOGY.md topic count is stale. Should be 26."
         )
 
     def test_agent_guide_topic_count(self):
-        """AGENT_GUIDE.md must list 25 topic buckets."""
+        """AGENT_GUIDE.md must list 26 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
-        assert "25 topic buckets" in doc, (
-            "AGENT_GUIDE.md topic count is stale. Should be 25."
+        assert "26 topic buckets" in doc, (
+            "AGENT_GUIDE.md topic count is stale. Should be 26."
         )
 
     def test_architecture_topic_count(self):
-        """ARCHITECTURE.md must say 25 topic buckets."""
+        """ARCHITECTURE.md must say 26 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
-        assert "25 topic buckets" in doc, (
-            "ARCHITECTURE.md topic count is stale. Should be 25."
+        assert "26 topic buckets" in doc, (
+            "ARCHITECTURE.md topic count is stale. Should be 26."
         )
 
 
@@ -399,17 +399,17 @@ class TestTestFileListingConsistency:
         )
 
     def test_architecture_test_topics_bucket_count(self):
-        """ARCHITECTURE.md test_topics.py description must reference 25 topic buckets."""
+        """ARCHITECTURE.md test_topics.py description must reference 26 topic buckets."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
         match = re.search(r"test_topics\.py.*?all\s+(\d+)\s+buckets", doc)
         assert match, (
             "ARCHITECTURE.md test_topics.py row is missing topic bucket count "
-            "reference (expected 'all 25 buckets')."
+            "reference (expected 'all 26 buckets')."
         )
         claimed = int(match.group(1))
-        assert claimed == 25, (
+        assert claimed == 26, (
             f"ARCHITECTURE.md test_topics.py description references {claimed} "
-            f"topic buckets, should be 25."
+            f"topic buckets, should be 26."
         )
 
     def test_readme_lists_all_test_files(self):
@@ -665,7 +665,7 @@ class TestCrossReferenceConsistency:
         )
 
     def test_readme_test_topics_description_says_25(self):
-        """README.md test_topics.py description must reference 25 topic buckets."""
+        """README.md test_topics.py description must reference 26 topic buckets."""
         doc = (_REPO_ROOT / "README.md").read_text()
         # Find the test_topics.py row in the test table
         match = re.search(r"test_topics\.py.*?(\d+)\s+standardized topic buckets", doc)
@@ -673,9 +673,9 @@ class TestCrossReferenceConsistency:
             "README.md test_topics.py row is missing topic bucket count reference."
         )
         claimed = int(match.group(1))
-        assert claimed == 25, (
+        assert claimed == 26, (
             f"README.md test_topics.py description references {claimed} topic buckets, "
-            f"should be 25. The count is stale."
+            f"should be 26. The count is stale."
         )
 
     def test_no_stale_33_type_in_any_doc(self):
@@ -707,7 +707,7 @@ class TestCrossReferenceConsistency:
         stale_refs = re.findall(r"\ball\s+13\s+(?:standardized\s+)?topic", doc, re.IGNORECASE)
         assert not stale_refs, (
             f"README.md contains stale 'all 13 topic' reference(s): {stale_refs}. "
-            f"Should be 'all 25' — 25 topic buckets defined in code."
+            f"Should be 'all 26' — 26 topic buckets defined in code."
         )
 
 
@@ -755,7 +755,7 @@ class TestInlineTopicListConsistency:
         code_topics = self._code_topic_names()
         # Find the topic list in the classify_topic JSON schema description
         match = re.search(
-            r"25 topic buckets:\s*([\w_]+(?:,\s*[\w_]+)*)\.",
+            r"26 topic buckets:\s*([\w_]+(?:,\s*[\w_]+)*)\.",
             doc,
         )
         assert match, (
