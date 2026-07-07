@@ -14736,3 +14736,27 @@ Type B rotation: journalist profile research and editorial change tracking.
 - **Editorial changes added:** 4 new entries (3 Guardian Australia, 1 NYT)
 - **Tests:** 1,456 passed, 0 failed
 - **Docs updated:** README.md, EDITORIAL_HISTORIES.md, careers_demo.py (counts synced)
+
+## 2026-07-06 17:00 PT — Type B: Journalist/Publication Research
+
+### Work Done
+1. **Researched recent Wired editorial hires (2025-2026)** via Talking Biz News, Editor & Publisher:
+   - Maxwell Zeff (Bloomberg → Gizmodo → TechCrunch → Wired, Nov 2025)
+   - Sophie Kleeman (Business Insider → Wired, May 2026)
+   - Brian Kahn (WSJ → Earther → Protocol → Bloomberg → Wired, May 2026)
+   - Rosie Swash (Guardian 17yr → Mill Media → Wired Deputy Editor London, May 2026)
+   - Isabella Ward (Bloomberg → Wired staff writer London, Jun 2026)
+   - WaPo tech desk collapse: Naomi Nix (dedicated Meta reporter) + 13 others laid off Feb 2026
+
+2. **Added 1 new journalist profile:** Naomi Nix (Star-Ledger → Chicago Tribune → Bloomberg → WaPo → laid off Feb 2026). Key DiD value: WaPo's dedicated Meta reporter eliminated in mass layoffs.
+
+3. **Deduplication fix:** Removed accidentally duplicated Zoë Schiffer and Caroline Haskins entries (already existed at lines 276 and 8852).
+
+4. **Fixed Naomi Nix career dates:** Added approximate start/end dates for star-ledger (2012-2015), chicago-tribune (2015-2018), bloomberg-news (2018-2022) entries so CareerTracker can detect all 4 publications and 3 migrations.
+
+### Stats
+- **Journalists:** 152 (was 151, +1 Naomi Nix)
+- **Multi-pub journalists:** 151
+- **Auto-detected migrations:** 485 (was 482, +3 from Nix)
+- **Tests:** 96 passed, 0 failed
+- **Docs updated:** README.md, EDITORIAL_HISTORIES.md, careers_demo.py (counts synced to 152/151/485)

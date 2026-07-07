@@ -10870,3 +10870,55 @@ journalists:
     coverage. Her geopolitical-economic framing lens is distinct from both adversarial-editorial (Wired/Atlantic) and consumer-product
     (CNET/Verge) approaches. Covers the supply chain and trade dimensions of Big Tech that intersect with Meta''s hardware
     strategy but rarely appear in Meta''s US press coverage.'
+
+- name: Naomi Nix
+  career:
+  - event_type: hired
+    publication: star-ledger
+    role: reporter
+    beat: City Hall, education
+    start: 2012-01
+    end: 2015-01
+    notes: Early career covering City Hall and education at The Star-Ledger (Newark, NJ). Princeton University graduate.
+    source_url: https://talkingbiznews.com/media-news/tech-reporter-nix-among-the-washington-post-layoffs/
+  - event_type: hired
+    publication: chicago-tribune
+    role: reporter
+    beat: general assignment
+    start: 2015-01
+    end: 2018-01
+    notes: Reporter at Chicago Tribune prior to Bloomberg News.
+    source_url: https://talkingbiznews.com/media-news/tech-reporter-nix-among-the-washington-post-layoffs/
+  - event_type: hired
+    publication: bloomberg-news
+    role: reporter
+    beat: tech lobbying
+    start: 2018-01
+    end: 2022-01
+    notes: Covered tech lobbying at Bloomberg News, the intersection of technology companies and Washington policy.
+    source_url: https://talkingbiznews.com/media-news/tech-reporter-nix-among-the-washington-post-layoffs/
+  - event_type: hired
+    publication: washington-post
+    role: tech_reporter
+    beat: Meta, social media companies, democracy, global politics
+    start: 2022-01
+    end: 2026-02
+    notes: 'Covered Meta and other social media companies. Beat focus: how social media platforms influence American democracy
+      and global politics. Broke story on Meta planning additional layoffs (possibly thousands) including management flattening
+      (Techmeme-aggregated, widely cited). Was the Washington Post''s dedicated Meta reporter — the most direct adversarial
+      coverage counterpart to Wired''s Caroline Haskins. LAID OFF in February 2026 mass layoffs that cut WaPo tech desk from
+      80 to 33 people (14 tech reporters specifically). Her departure eliminates WaPo as a meaningful competitor in dedicated
+      Meta coverage. Princeton University graduate.'
+    source_url: https://talkingbiznews.com/media-news/tech-reporter-nix-among-the-washington-post-layoffs/
+  analytical_value: 'WAPO META COVERAGE LOSS: Nix''s layoff represents the elimination of Washington Post''s dedicated Meta
+    reporter during the February 2026 mass layoffs. The WaPo tech desk collapse (80 → 33 staff, 14 tech reporters cut, SF
+    bureau gutted) is the most significant loss of tech journalism capacity at a major newspaper since the 2023 BuzzFeed News
+    shutdown. For MediaScope, this matters because WaPo was a key comparison outlet — its coverage of Meta from an ownership-conflict-free
+    position (Bezos-owned, no Condé Nast AI licensing conflicts, no Reddit/Advance stake) provided a baseline for measuring
+    Wired''s coverage posture. With WaPo''s Meta coverage capacity severely diminished, the competitive landscape shifts:
+    Wired, NYT, and Guardian become the dominant daily Meta coverage outlets, reducing the availability of independent comparison
+    data for same-event analysis.'
+  education:
+  - degree: BA
+    institution: Princeton University
+    source_url: https://talkingbiznews.com/media-news/tech-reporter-nix-among-the-washington-post-layoffs/
