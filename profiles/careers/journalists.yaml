@@ -10923,60 +10923,105 @@ journalists:
   - https://siliconflatirons.org/speaker/nilay-patel/
   - https://poynter.org/reporting-editing/2013/why-news-sites-benefit-from-having-writers-with-legal-backgrounds/
   - https://leighbureau.com/speaker/nilay-patel/
-- name: Alex Heath
-  multi_publication: true
-  education: []
-  career:
-  - publication: cult-of-mac
-    role: writer
-    start: '2010'
-    end: '2012'
-    beat: Apple products, consumer technology
+- career:
+  - beat: Apple, consumer tech
+    end: '2015'
     event_type: hired
-    notes: Started at age ~15 blogging about iPhones. Unusually early start for a tech reporter.
-    source_url: https://en.wikipedia.org/wiki/Alex_Heath
-  - publication: business-insider
+    notes: 'Started writing about Apple products at age 15 as a blogger. Co-host of The CultCast podcast. Quoted by BBC,
+      KRON 4 News, and cited in books like "ICONIC: A Photographic Tribute to Apple Innovation." Based in Lexington, Kentucky.
+      One of the youngest tech bloggers to gain a substantial following in Apple media. Career start circa 2011 (earliest Cult
+      of Mac bylines from late 2011).'
+    publication: cult-of-mac
     role: reporter
-    start: '2012'
-    end: '2018'
-    beat: social media companies, startups, tech industry
+    source_url: https://www.cultofmac.com/author/alexheath/
+    start: '2011'
+  - beat: social media, startups, tech companies
+    end: '2017'
     event_type: hired
-    notes: ~6-year tenure building beat expertise on platform companies.
-    source_url: https://en.wikipedia.org/wiki/Alex_Heath
-  - publication: the-information
-    role: reporter
-    start: '2018'
+    notes: 'Tech reporter in New York City covering Facebook, Snapchat, Twitter, and startup culture. Also covered apps and
+      streaming services for Business Insider''s consumer tech vertical Tech Insider. Promoted to senior reporter. Work widely
+      cited by WSJ, NYT, Washington Post, BuzzFeed, CNN, CNBC, Bloomberg, Wired. Guest on Good Morning America, BBC World
+      News, Sky News, Marketplace Tech, This Week in Tech. World Economic Forum Agenda Contributor.'
+    publication: business-insider
+    role: tech_reporter
+    source_url: https://www.weforum.org/stories/authors/alex-heath/
+    start: '2015'
+  - beat: tech M&A, product launches, executive moves
+    end: '2019'
+    event_type: hired
+    notes: 'Senior reporter for Cheddar Scoops initiative — breaking news in M&A, product launches, and executive moves
+      at major tech and media companies. Won the 2018 Larry Birger Young Business Journalist Award from SABEW (Society for
+      Advancing Business Editing and Writing), honoring journalists under 30 for excellence in business reporting. Age 25
+      at time of award, originally from Louisville, Kentucky.'
+    publication: cheddar
+    role: senior_reporter
+    source_url: https://sabew.org/2018/09/cheddars-alex-heath-is-the-2018-birger-award-winner/
+    start: '2017'
+  - beat: social media, AR/VR, future platforms
     end: '2021'
-    beat: tech industry, enterprise, Silicon Valley
     event_type: hired
-    notes: Premium tech publication. Sharpened source network in Big Tech.
-    source_url: https://en.wikipedia.org/wiki/Alex_Heath
-  - publication: the-verge
-    role: deputy_editor
-    start: '2021'
+    notes: 'Reporter based in Los Angeles covering social media and future tech platforms including augmented and virtual
+      reality. Named one of the most important reporters covering tech by Business Insider. KEY MIGRATION: Cheddar → The Information
+      represents a move from mainstream video financial news to premium insider tech journalism. The Information''s subscription
+      paywall culture emphasizes scoops and exclusives — a formative environment for Heath''s later Command Line newsletter
+      and independent publication.'
+    publication: the-information
+    role: reporter
+    source_url: https://www.theinformation.com/reporters/alex-heath
+    start: '2019'
+  - beat: Big Tech corporate strategy, Meta, AI, executive interviews
     end: 2025-09
-    beat: Meta, Big Tech corporate strategy, AI, internal operations
     event_type: hired
-    notes: 'Deputy editor focused on Big Tech internal operations and strategy. Broke Facebook→Meta rebrand (2021), led Musk/Twitter
-      coverage, broke Altman/OpenAI coup. Launched Command Line paid newsletter. Multiple exclusive Zuckerberg interviews.
-      Work cited by Congress, featured on SNL, Today Show, GMA, CNN, NPR. SABEW recognized. ANALYTICALLY SIGNIFICANT: Most
-      direct Zuckerberg access of any tech journalist. Departure (Sep 2025) removed the single most Meta-connected reporter
-      from The Verge''s editorial team.'
-    source_url: https://voxmedia.com/2023/5/11/the-verge-command-line-newsletter-alex-heath
-  - publication: sources-substack
-    role: founder
-    start: 2025-09
-    beat: tech industry insider reporting, AI, Silicon Valley
+    notes: 'Deputy editor and most prominent reporter at The Verge for Big Tech corporate strategy. KEY SCOOPS: (1) Broke
+      Facebook→Meta rebrand before announcement (Oct 2021), (2) Led coverage of Elon Musk''s Twitter takeover (2022), (3)
+      Broke Sam Altman overturning OpenAI board coup (Nov 2023), (4) Multiple exclusive Zuckerberg interviews on metaverse,
+      AI reorg, decentralized social. Launched Command Line paid newsletter (May 2023, $7/mo or $70/yr). Co-hosted Land of
+      the Giants S6 (Vox Media). Work cited by Congress. SABEW recognition. Appeared on Saturday Night Live, Today Show,
+      Good Morning America, CNN, NPR. CRITICALLY IMPORTANT for MediaScope: Heath is THE primary voice on Meta corporate
+      strategy in tech media. His reporting shapes institutional narrative about Meta''s direction. His departure creates a
+      measurable change in The Verge''s Meta coverage posture — tests whether adversarial framing toward Meta is institutional
+      (persists without him) or partially attributable to his sourcing relationships and framing choices.'
+    publication: the-verge
+    role: deputy_editor
+    source_url: https://en.wikipedia.org/wiki/Alex_Heath
+    start: '2021'
+  - beat: AI, Big Tech insider reporting, executive interviews
     event_type: founded
-    notes: 'Independent Substack launched Sep 2025. Part of Altogether collective (Casey Newton, Alex Konrad, Alex Kantrowitz).
-      Also launched Access podcast with Vox Media (co-host: Ellis Hamburger). Retains Verge contributor status. First independent
-      interview: Zuckerberg sit-down for Meta Ray-Ban Display glasses (Sep 18, 2025). KEY MIGRATION: institutional → independent.
+    notes: 'Founded Sources, independent Substack publication (launched Sept 17, 2025). Co-hosts ACCESS podcast with Ellis
+      Hamburger, produced in partnership with Vox Media. Retains contributing writer status at The Verge — one issue/week
+      syndicated there. Part of Altogether collective of independent journalists (Casey Newton/Platformer, Alex Konrad/Forbes
+      contributor, Alex Kantrowitz/Big Technology). First Sources exclusive: Zuckerberg sit-down for Meta Ray-Ban Display
+      glasses (Sept 2025). ANALYTICAL SIGNIFICANCE: Heath''s move to independent journalism parallels Casey Newton (Verge→Platformer),
+      Zoë Schiffer (Verge→Platformer→Wired). The Altogether model bundles independent journalists for advertising scale.
+      His continued Verge contributor relationship means his framing still partially flows through The Verge. His coverage
+      posture as an independent is a natural experiment: does adversarial/insider framing persist when freed from The Verge''s
+      institutional posture, or does it intensify/moderate? KEY MIGRATION: institutional → independent.
       Zuckerberg interview published on Sources, not The Verge — suggests source access is personal, not institutional.'
-    source_url: https://talkingbiznews.com/media-news/heath-departs-the-verge-to-launch-podcast-publication/
+    publication: sources-substack
+    role: founder
+    source_url: https://sources.news/p/introducing-sources
+    start: 2025-09
+  multi_publication: true
+  name: Alex Heath
+  notes: 'Career arc: Cult of Mac → Business Insider → Cheddar → The Information → The Verge (deputy editor) → Sources
+    (independent Substack) + ACCESS podcast. Started writing at age 15. From Louisville, Kentucky, based in Los Angeles.
+    Won 2018 SABEW Larry Birger Young Business Journalist Award (under 30). Work cited by Congress, featured on SNL. Broke
+    Facebook→Meta rebrand, OpenAI board coup, Musk/Twitter takeover. Most important Meta corporate reporter in tech media.
+    CRITICAL ANALYTICAL VALUE: (1) 6-publication career spanning blog → mainstream → premium insider → institutional →
+    independent provides the richest migration dataset of any single journalist for framing portability analysis. (2) His
+    departure from The Verge (Sep 2025) is the single highest-signal editorial change for measuring institutional vs individual
+    contribution to Meta coverage posture. (3) His Zuckerberg interview access makes him uniquely positioned — simultaneously
+    insider-access reporter AND adversarial-scoop journalist. This duality complicates simple adversarial/favorable classification.
+    (4) As Sources founder, his framing now propagates through both independent channel AND syndication back into The Verge,
+    creating a cross-platform influence vector analogous to the Tarbell Center fellowship model.'
   source_urls:
   - https://en.wikipedia.org/wiki/Alex_Heath
-  - https://talkingbiznews.com/media-news/heath-departs-the-verge-to-launch-podcast-publication/
   - https://sources.news/p/introducing-sources
+  - https://sabew.org/2018/09/cheddars-alex-heath-is-the-2018-birger-award-winner/
+  - https://www.theinformation.com/reporters/alex-heath
+  - https://talkingbiznews.com/media-news/heath-departs-the-verge-to-launch-podcast-publication/
+  - https://voxmedia.com/2025/9/8/alex-heath-ellis-hamburger-access-podcast
+  - https://muckrack.com/alexheath/articles
   - https://teamhighwire.com/the-continued-rise-of-new-media-alex-heath-on-sources-podcasting-and-pitching/
 - name: David Pierce
   multi_publication: true
@@ -11626,3 +11671,130 @@ journalists:
   - https://diarydirectory.com/diary-daily/the-verge-usa-appoints-news-editor-8/
   - https://muckrack.com/dominic-preston/articles
   - https://intelligentrelations.com/media-database/dominic-preston/
+- career:
+  - beat: consumer tech, gadgets, gaming
+    end: '2014'
+    event_type: hired
+    notes: 'Founding member of The Verge (launched November 1, 2011). First stint as editor. Part of the original team that
+      launched the site under Vox Media, alongside Josh Topolsky, Nilay Patel, and others from Engadget. Helped establish
+      The Verge''s editorial identity and voice.'
+    publication: the-verge
+    role: editor
+    source_url: https://talkingbiznews.com/media-news/hollister-returns-to-the-verge-as-senior-news-editor/
+    start: '2011'
+  - beat: product reviews, consumer tech
+    end: '2015'
+    event_type: hired
+    notes: Re-launched and led the product reviews program at Gizmodo. Short stint between Verge tenures.
+    publication: gizmodo
+    role: reviews_editor
+    source_url: https://talkingbiznews.com/media-news/hollister-returns-to-the-verge-as-senior-news-editor/
+    start: '2014'
+  - beat: breaking news, consumer tech, gadgets
+    end: 2018-10
+    event_type: hired
+    notes: 'Senior editor at CNET. Spearheaded a Speed Desk initiative that nearly tripled CNET''s traffic on quick breaking
+      news stories. Spent ~3 years at CNET before returning to The Verge.'
+    publication: cnet
+    role: senior_editor
+    source_url: https://talkingbiznews.com/media-news/hollister-returns-to-the-verge-as-senior-news-editor/
+    start: 2015-09
+  - beat: gadgets, games, toys, consumer advocacy, tech lawsuits
+    event_type: hired
+    notes: 'Returned to The Verge as senior news editor (Oct 2018), overseeing the technology news team. Currently senior
+      editor and founding member. Covers gadgets, games, and toys with a side of consumer advocacy. 15+ years editing across
+      CNET, Gizmodo, and Engadget. UC Santa Barbara graduate (Communication and Japanese). ETHICS DISCLOSURE: Wife is employed
+      by Apple as a video producer — he does not report on or edit stories about Apple products or Apple as a company (disclosure
+      since June 2023). This is a notable transparency practice. Covers Google/Epic litigation and other tech antitrust
+      extensively. ANALYTICAL VALUE: (1) Founding member status gives insight into The Verge''s editorial DNA. (2) CNET →
+      Verge return migration tests whether institutional framing is re-acquired after a stint at a different outlet. (3)
+      Consumer advocacy focus means his coverage of tech companies tends toward accountability framing. (4) Apple recusal
+      demonstrates The Verge''s conflict-of-interest standards — relevant for comparing how other tracked publications handle
+      similar situations.'
+    publication: the-verge
+    role: senior_editor
+    source_url: https://theorg.com/org/the-verge/org-chart/sean-hollister
+    start: 2018-10
+  multi_publication: true
+  name: Sean Hollister
+  notes: 'Career arc: The Verge (founding member, 2011-2014) → Gizmodo (reviews editor) → CNET (senior editor, Speed Desk)
+    → The Verge (senior editor, Oct 2018-present). Union City, CA. UC Santa Barbara (Communication and Japanese). 15+ years
+    in tech media. Notable for Apple recusal (wife at Apple) and consumer advocacy bent. ANALYTICAL VALUE: Founding member
+    provides institutional memory perspective. His return migration (Verge → Gizmodo → CNET → Verge) is unique in the dataset
+    — tests how journalists re-absorb institutional framing after external stints.'
+  source_urls:
+  - https://theorg.com/org/the-verge/org-chart/sean-hollister
+  - https://talkingbiznews.com/media-news/hollister-returns-to-the-verge-as-senior-news-editor/
+  - https://muckrack.com/seanhollister/articles
+  - https://www.theverge.com/authors/sean-hollister
+- career:
+  - beat: consumer tech, how-tos, news
+    event_type: hired
+    notes: Writer and editor at MUO (MakeUseOf). Covered technology news and wrote how-to articles. First professional
+      journalism role before moving to The Verge.
+    publication: muo
+    role: writer
+    source_url: https://muckrack.com/emma-roth-2/articles
+    start: '2021'
+    end: '2022'
+  - beat: streaming, consumer tech, AI, crypto, social media, Big Tech policy
+    event_type: hired
+    notes: 'News Writer (currently News Writer III/weekend news editor) at The Verge. Covers streaming wars, consumer tech,
+      AI, crypto, social media, and Big Tech-government interactions. Extremely prolific — 8,000+ articles published (per
+      JournalistHunt). Based in Port St. Lucie, Florida. Central Connecticut State University graduate. ANALYTICAL VALUE:
+      (1) High volume output means she shapes a significant portion of The Verge''s daily news framing. (2) Covers the intersection
+      of Big Tech and government policy, directly relevant to Meta antitrust/child safety coverage. (3) Her breadth (streaming,
+      crypto, AI, social media) means she provides framing on Meta-adjacent topics even when not covering Meta directly.
+      (4) News writer role (vs deputy editor, senior editor) means her framing is more likely shaped by editorial direction
+      than personal sourcing relationships — useful as a baseline for institutional framing analysis.'
+    publication: the-verge
+    role: news_writer
+    source_url: https://theorg.com/org/the-verge/org-chart/emma-roth
+    start: '2022'
+  multi_publication: true
+  name: Emma Roth
+  notes: 'Career arc: MUO (writer/editor) → The Verge (news writer, 2022-present). Based in Florida. Central Connecticut
+    State University. One of The Verge''s most prolific daily news writers. Covers broad consumer tech with emphasis on streaming,
+    AI, and Big Tech policy. ANALYTICAL VALUE: High-volume news writer provides baseline institutional framing signal —
+    her output volume means she is a significant contributor to The Verge''s aggregate tone. Her coverage of government-Big
+    Tech interactions is directly relevant to Meta regulatory coverage analysis.'
+  source_urls:
+  - https://theorg.com/org/the-verge/org-chart/emma-roth
+  - https://muckrack.com/emma-roth-2/articles
+  - https://rocketreach.co/emma-roth-email_84327375
+  - https://buzzsumo.com/journalist-profiles/theverge-com/emma-roth/
+- career:
+  - beat: computing, PC gaming, hardware reviews, streaming
+    event_type: hired
+    notes: 'Tech writer covering computing hardware, PC gaming, peripherals, and streaming. Also contributed bylines to
+      GamesRadar, PCGamer, Creative Bloq, and Space.com (all Future plc properties). Originally trained as a prosthetics
+      makeup and wig-making technician. Interviewed as an industry expert by the BBC.'
+    publication: techradar
+    role: computing_writer
+    source_url: https://www.techradar.com/author/jess-weatherbed
+    start: '2021'
+    end: '2022'
+  - beat: creative industries, computing, internet culture, AI, copyright
+    event_type: hired
+    notes: 'News writer, UK-based team at The Verge. Covers creative industries, computing, and internet culture. Significant
+      AI and copyright coverage — wrote extensively about AI training data disputes, artist rights, generative AI regulation.
+      Built numerous desktop PCs for gaming and content creation. ANALYTICAL VALUE: (1) UK-based perspective provides
+      different regulatory context (EU AI Act, UK Online Safety Act) for comparing how Verge frames Meta''s regulatory
+      challenges across jurisdictions. (2) Creative industries beat means she covers AI/copyright intersection where Meta
+      is a major defendant (training data lawsuits). (3) TechRadar → The Verge migration tests framing shift from Future plc
+      (reviews-focused, UK consumer tech) to Vox Media (US tech journalism, consumer advocacy). (4) AI copyright coverage
+      directly relevant to Meta''s generative AI legal exposure.'
+    publication: the-verge
+    role: news_writer
+    source_url: https://theorg.com/org/the-verge/org-chart/jess-weatherbed
+    start: '2022'
+  multi_publication: true
+  name: Jess Weatherbed
+  notes: 'Career arc: TechRadar (computing writer, Future plc) → The Verge (news writer, 2022-present). UK-based. Originally
+    trained in prosthetics makeup and wig-making. Self-taught tech enthusiast and PC builder. ANALYTICAL VALUE: (1) UK perspective
+    provides regulatory context diversity. (2) Creative industries and AI copyright beat makes her a key voice on AI training
+    data disputes involving Meta. (3) Future plc → Vox Media migration tests cross-national framing portability.'
+  source_urls:
+  - https://theorg.com/org/the-verge/org-chart/jess-weatherbed
+  - https://muckrack.com/jess-weatherbed/articles
+  - https://www.techradar.com/author/jess-weatherbed
