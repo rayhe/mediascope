@@ -1,0 +1,32 @@
+Meta says US states are seeking $1.4 trillion in penalties in August youth safety trial
+
+By Reuters
+July 7, 2026
+
+Meta Platforms said in a court filing on Monday that four states were seeking $1.4 trillion in penalties over accusations the company designed its Facebook and Instagram platforms to addict young users and misled the public about their safety.
+
+Meta put forward the figure in its response to the attorneys general's filings on how penalties should be calculated if the states prevailed at trial.
+
+The number, which has not previously been disclosed and is close to Meta's market capitalization of around $1.5 trillion, comes ahead of an August trial in Oakland, California over the claims brought by California, Colorado, Kentucky and New Jersey against the company.
+
+Meta said the amount was unsupported by the evidence.
+
+"A sanction of that size has no analog in the history of consumer protection enforcement," the company said in the filing.
+
+Representatives for the attorneys general did not immediately respond to requests for comment after the filing.
+
+TALLYING DAMAGES
+
+The states' filings are sealed, but at a court hearing in June they said they were calculating the penalties by multiplying the number of violations by fine amounts set by state law. The number of violations is based on the estimated number of teens and young users affected by Meta's actions, the states said.
+
+Twenty-nine states have sued Meta in federal court, most of them alleging the company violated the federal Children's Online Privacy Protection Act by collecting data from children without proper parental consent. The trial in August before U.S. District Judge Yvonne Gonzalez Rogers will be the first federal trial over the claims.
+
+States across the country have sued the companies, some as part of the case before Rogers and others in their home courts. A jury in New Mexico awarded a $375 million verdict against Meta in March after finding it had violated state law.
+
+The claims in the Oakland case are brought under both state law and the federal COPPA, which bars companies from knowingly collecting personal data from children under 13 without parental consent.
+
+Under COPPA, the maximum civil penalty is $50,120 per violation. The states have argued each affected user represents a separate violation.
+
+The case is part of a sprawling nationwide litigation effort that includes lawsuits from individual families, school districts and state attorneys general.
+
+Meta has denied the allegations and argued its platforms have extensive safeguards for younger users. The company has also argued it is shielded by Section 230 of the Communications Decency Act, but judges have largely rejected that defense in child safety cases.

@@ -1525,6 +1525,56 @@ def extract_sources(text: str) -> list[SourceMention]:
         if len(hits) > 1:
             src.quote_count = len(hits)
 
+    # Pattern 10: Governmental/legal party sources — collective legal
+    # actors like "the states said", "prosecutors argued", "plaintiffs
+    # said", "the government said".  These are NOT anonymous: the
+    # parties are identified by their role and often individually named
+    # elsewhere in the article.  Common in litigation, regulatory, and
+    # legislative coverage.  Gap discovered in Reuters $1.4T penalty
+    # article (Jul 2026): "the states said" was invisible.
+    # Tagged source_type="legal_party".
+    legal_party_patterns: list[re.Pattern] = [
+        # "the states/plaintiffs/prosecutors/defendants said/argued/claimed"
+        re.compile(
+            rf"\bthe\s+"
+            rf"(?:states?|plaintiffs?|prosecutors?|defendants?|petitioners?"
+            rf"|respondents?|appellants?|appellees?|claimants?"
+            rf"|government|administration|agency|commission"
+            rf"|attorneys?\s+general|AG'?s?)\s+"
+            rf"(?:(?:also|further|additionally)\s+)?"
+            rf"({verb_alternation})\b",
+            re.IGNORECASE,
+        ),
+        # "prosecutors/plaintiffs have argued/said"
+        re.compile(
+            rf"\b(?:prosecutors?|plaintiffs?|defendants?|the\s+states?)\s+"
+            rf"(?:have|had)\s+({verb_alternation})\b",
+            re.IGNORECASE,
+        ),
+    ]
+
+    for pat in legal_party_patterns:
+        for m in pat.finditer(text):
+            descriptor = m.group().strip()
+            if descriptor.lower() in {n.lower() for n in seen_names}:
+                continue
+            seen_names.add(descriptor)
+
+            verb = m.group(1).strip().lower()
+            ctx_start = max(0, m.start() - 100)
+            ctx_end = min(len(text), m.end() + 200)
+            context = text[ctx_start:ctx_end]
+
+            sources.append(SourceMention(
+                name=descriptor,
+                is_anonymous=False,
+                is_expert=False,
+                affiliation="",
+                quote=_extract_nearby_quote(text, m.start(), m.end()),
+                attribution_verb=verb,
+                source_type="legal_party",
+            ))
+
     return sources
 
 

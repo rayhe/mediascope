@@ -344,6 +344,18 @@ Internal document references (e.g., "internal documents showed") can also indica
 
 Documentary sources are excluded from the named/anonymous ratio calculation but inform framing analysis. A high density of documentary sources often indicates investigative reporting with primary-source backing, which strengthens the publication's factual credibility even when the overall anonymous-source ratio is elevated.
 
+#### 5.5 Legal Party Sources (Pattern 10)
+
+Litigation, regulatory, and legislative coverage frequently cites collective legal actors — "the states said," "prosecutors argued," "plaintiffs claimed," "the government said." These are **not** anonymous: the parties are identified by their role and typically individually named elsewhere in the article. MediaScope tags them as `source_type="legal_party"` and treats them as named sources for ratio purposes.
+
+| Pattern | Example | Match |
+|---|---|---|
+| `the states/plaintiffs verb` | "the states said they were calculating penalties" | ✅ |
+| `prosecutors have verb` | "prosecutors have argued the company knew" | ✅ |
+| `the attorneys general verb` | "the attorneys general confirmed the filing" | ✅ |
+
+Gap discovered in Reuters $1.4T penalty article (Jul 2026): "the states said" was invisible, causing the article to appear as if it had no state/plaintiff sourcing despite the four plaintiff states being central to the story.
+
 ## 6. Source Stance Analysis
 
 ### 6.1 Beyond Authority: Who Sources Are Deployed Against
@@ -885,7 +897,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **69 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **70 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -903,7 +915,7 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 69 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 70 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
@@ -985,6 +997,7 @@ The following table documents all 69 entity clusters shipped with MediaScope, or
 | **US Congress** | 8 | Congress, Senate, House of Representatives, Senate Judiciary Committee, Senate Commerce Committee, House Energy and Commerce Committee (+2 more) |
 | **US Government** | 47 | Pentagon, Department of Defense, FBI, CIA, NSA, National Security Agency (+41 more) |
 | **Legal/Judicial** | 6 | Delaware Superior Court, Delaware Supreme Court, Section 230, Communications Decency Act, Digital Services Act, DSA |
+| **State Attorneys General** | 4 | attorney general, attorneys general, state attorney general, state attorneys general (+named AGs) |
 | **Insurance/Litigation Finance** | 13 | The Hartford, Hartford, Chubb, ACE American, Flashlight Capital, Innsworth Capital (+7 more) |
 | **Political Figures** | 7 | Donald Trump, Trump, Joe Biden, Biden, Kamala Harris, J.D. Vance (+1 more) |
 | **Child Safety Legislation** | 10 | KIDS Act, Kids Internet Design and Safety Act, COPPA, Children's Online Privacy Protection Act, KOSA, Kids Online Safety Act (+4 more) |
@@ -1208,7 +1221,7 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **106 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **107 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1316,7 +1329,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 106 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 85 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 107 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 85 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|

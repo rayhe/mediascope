@@ -563,7 +563,30 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|Section 230|Communications Decency Act"
                  r"|Digital Services Act|(?-i:DSA)"
                  r"|(?-i:MDL)\s*\d+"
-                 r"|bellwether (?:trial|verdict|case))(?!\w)",
+                 r"|bellwether (?:trial|verdict|case)"
+                 # Federal courts and judges — common in litigation coverage.
+                 # Gap discovered in Reuters $1.4T penalty article (Jul 2026):
+                 # "U.S. District Judge Yvonne Gonzalez Rogers" was invisible.
+                 r"|U\.S\. District (?:Judge|Court)"
+                 r"|federal (?:court|trial|judge)"
+                 r"|(?:district|circuit|appeals?) court"
+                 r"|(?:the )?Supreme Court)(?!\w)",
+    },
+    # State enforcement entities — state attorneys general are central actors
+    # in child safety, antitrust, and consumer protection litigation.  Gap
+    # discovered in Reuters $1.4T penalty article (Jul 2026): California,
+    # Colorado, Kentucky, and New Jersey AGs were invisible as entities.
+    "State Attorneys General": {
+        "aliases": [
+            "attorney general", "attorneys general",
+            "state attorney general", "state attorneys general",
+        ],
+        "regex": r"(?<!\w)((?:state )?attorney(?:s)? general"
+                 r"|(?-i:AG)s?\b"
+                 r"|Raúl Torrez|Rob Bonta|Phil Weiser"
+                 r"|Matthew Platkin|Russell Coleman"
+                 r"|Brenna Bird|Andrea Joy Campbell"
+                 r"|Bob Ferguson)(?!\w)",
     },
     "US Congress": {
         "aliases": [

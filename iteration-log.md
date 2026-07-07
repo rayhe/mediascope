@@ -2,6 +2,42 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-07 01:00 PT — Type A: Article Deep Dive — Reuters $1.4T Penalty Story
+
+### Article
+"Meta says US states are seeking $1.4 trillion in penalties in August youth safety trial" (Reuters, 2026-07-07). Wire genre — litigation reporting on four states (CA, CO, KY, NJ) seeking $1.4 trillion in penalties ahead of August federal trial before Judge Yvonne Gonzalez Rogers in Oakland.
+
+### Gaps Found & Fixed
+
+1. **New entity cluster: State Attorneys General (cluster #70)**
+   - `entities.py`: Added cluster with 4 aliases + regex for named AGs (Torrez, Bonta, Weiser, Platkin, Coleman, Bird, Campbell, Ferguson)
+   - Impact: 6 entity mentions (35% of non-Meta entities) were previously invisible
+   - Addresses systematic blind spot in child safety, antitrust, and consumer protection litigation coverage
+
+2. **Legal/Judicial cluster expansion**
+   - `entities.py`: Added `U.S. District Judge`, `U.S. District Court`, `federal court/trial/judge`, `district/circuit/appeals court`, `the Supreme Court`
+   - Impact: 3 additional entity detections in this article
+
+3. **New source Pattern 10: Legal party sources**
+   - `sources.py`: Added pattern for collective legal actors: "the states/plaintiffs/prosecutors/defendants said/argued/claimed"
+   - Tagged `source_type="legal_party"`, treated as named (not anonymous)
+   - Impact: 2 source attributions ("the states said", "The states have argued") now visible
+
+4. **Documentation updates**
+   - `METHODOLOGY.md`: Updated entity cluster count (69 → 70), added State Attorneys General to cluster table, added §5.5 documenting Pattern 10
+
+### Remaining Gaps (Not Fixed)
+- `expert_consensus_authority` regex too broad (matches procedural sourcing)
+- `loaded_language` doesn't distinguish legal terms of art from editorial loaded language
+- No "strategic_disclosure" framing device for party-initiated magnitude framing
+- Judge names not extracted as sources (no attribution pattern for judicial role mentions)
+
+### Stats
+- **Entity clusters:** 70 (was 69, +1 State Attorneys General)
+- **Source patterns:** 10 (was 9, +1 legal_party)
+- **Annotated articles:** 107 (was 106)
+- **Tests:** 1,457 passed, 0 failed
+
 ## 2026-07-06 22:00 PT — Type D: Toolkit Quality — Stale Diagram/Migration Count Fix + 2 New Guards
 
 **Focus:** Cross-document count audit found 3 stale references that passed existing guards due to pattern gaps. Fixed all 3 and added 2 new guards to prevent recurrence.
