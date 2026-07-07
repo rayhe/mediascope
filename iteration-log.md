@@ -2,6 +2,55 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-07 05:00 PT — Type B: Journalist Research — Elissa Welle & Dominic Preston (The Verge)
+
+### Focus
+Added two untracked journalists at The Verge, one of which (Elissa Welle) reveals a structurally significant external funding vector for AI coverage.
+
+### New Journalists Added
+
+**1. Elissa Welle — AI Reporter, The Verge (Oct 2025-present)**
+- **Education:** Cornell BS Bioengineering, Michigan PhD Biomedical Engineering (brain-computer interfaces, single-neuron electrophysiology), UC Santa Cruz MS Science Communication
+- **Career:** Michigan Daily → Detroit Free Press → STAT News (AAAS Mass Media Fellowship) → Reuters → Nature → Chronicle of Higher Education → The Transmitter (Simons Foundation neuroscience) → freelance → The Verge
+- **Key finding: Tarbell Center for AI Journalism fellowship.** The Tarbell Center provides $60-80K stipends to fellows placed at host newsrooms with an explicit mission to "hold frontier AI companies accountable." Host newsrooms in 2025 included The Verge, Bloomberg, Guardian, MIT Tech Review, and TIME. This externally funded accountability mandate is a structural editorial influence vector — Tarbell fellows bring a pre-defined adversarial posture toward AI companies regardless of host newsroom's natural editorial culture.
+- **BCI relevance:** Her PhD in brain-computer interface hardware is directly relevant to Meta's Neural Band/EMG technology. She may have more technical grounding on that specific technology than any other tech journalist.
+- **Sources:** Muck Rack profile, STAT News bio, The Transmitter bio, personal website (elissawelle.com), Chronicle of Higher Education author page, Tarbell Center website, DIARY directory announcement
+- **13 career entries** spanning 2016-present across 10 organizations
+
+**2. Dominic Preston — News Editor, The Verge (Feb 2025-present)**
+- **Career:** Tech Advisor → Android Police (reporter → managing reviews editor) → The Verge
+- **10+ year journalism career** across UK and US tech publications. Also contributed to TechRadar, PCWorld, HuffPost, NME
+- UK-based — one of The Verge's non-US editorial staff
+- Writes Braise (bi-weekly cooking newsletter on Substack)
+- **Sources:** DIARY directory announcement (Feb 2025), Muck Rack profile, Intelligent Relations journalist profile
+- **4 career entries** spanning 2015-present across 3 organizations
+
+### Editorial Changes
+- Added 2 entries to `the_verge` section of editorial_changes.yaml (Preston Feb 2025, Welle Oct 2025)
+- Total editorial changes: 152 (was 150, +2)
+
+### Tarbell Center Research (New Finding)
+The Tarbell Center for AI Journalism is a significant structural variable for the toolkit:
+- **Fellowship structure:** 9-month placement, $60-80K stipend (early career), $90-110K (senior), fully funded through philanthropy
+- **Mission:** Explicitly adversarial — "hold frontier AI companies accountable"
+- **Scale:** 500+ applicants annually, planning to scale from 15 to 30+ placements
+- **Host newsrooms:** Bloomberg, Guardian, MIT Tech Review, TIME, The Verge, South China Morning Post
+- **Implication:** Tarbell fellows appear at multiple tracked publications. Their fellowship mandate creates a cross-cutting editorial influence that is independent of — and potentially reinforces — each host newsroom's institutional posture. This is worth tracking as a variable in the DiD analysis framework.
+- **Michelle Kim** (already tracked, MIT Tech Review) is also identified as a Tarbell fellow in her journalist notes.
+
+### Documentation Updates
+- Updated journalist count: 161 → 163 (README.md, EDITORIAL_HISTORIES.md, careers_demo.py)
+- Updated multi-pub count: 159 → 161 (EDITORIAL_HISTORIES.md)
+- Updated migration count: 515 → 526 (README.md, EDITORIAL_HISTORIES.md)
+
+### Stats
+- **Journalists:** 163 (was 161, +2)
+- **Multi-pub:** 161 (was 159, +2)
+- **Migrations:** 526 (was 515, +11)
+- **Editorial changes:** 152 (was 150, +2)
+- **Tests:** 97 structural + 21 careers = 118 passed, 0 failed
+- **Commit:** `3036569`
+
 ## 2026-07-07 01:00 PT — Type A: Article Deep Dive — Reuters $1.4T Penalty Story
 
 ### Article
