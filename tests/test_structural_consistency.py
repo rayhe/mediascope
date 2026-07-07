@@ -273,10 +273,12 @@ class TestDocCountConsistency:
         # - "N-type taxonomy" (e.g., "69-type taxonomy")
         # - "N framing device type" (e.g., "56 framing device types")
         # - "N device type" preceded by "total" context
+        # - "(N device type" in parenthetical annotations (e.g., diagrams)
         stale_patterns = [
             r"\b{n}-type\s+taxonomy",           # "69-type taxonomy"
             r"\b{n}\s+framing\s+device\s+type",  # "56 framing device types"
             r"total[^.]*\b{n}\s+device",         # "total of 56 device types"
+            r"\({n}\s+device\s+type",            # "(73 device types, ..." in diagrams
         ]
 
         doc_files = [
@@ -1847,6 +1849,17 @@ class TestJournalistCountConsistency:
             f"README.md careers_demo row should reference '{expected}' "
             f"but doesn't. CareerTracker finds {migration_count} migrations. "
             f"Update the careers_demo description in README.md."
+        )
+
+    def test_editorial_histories_migration_count(self):
+        """EDITORIAL_HISTORIES.md must reference correct migration count."""
+        migration_count = self._compute_migration_count()
+        doc = (_REPO_ROOT / "docs" / "EDITORIAL_HISTORIES.md").read_text()
+        expected = f"**{migration_count} migrations**"
+        assert expected in doc, (
+            f"EDITORIAL_HISTORIES.md should reference '{expected}' "
+            f"but doesn't. CareerTracker finds {migration_count} migrations. "
+            f"Update the migration count in EDITORIAL_HISTORIES.md."
         )
 
     def test_readme_publication_count_floor(self):
