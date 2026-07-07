@@ -15301,3 +15301,31 @@ Gap analysis on The Verge's journalist roster revealed two key missing reporters
 - **Files changed:** 1 (profiles/wired.yaml)
 - **New litigation entries:** 1 (advance_trademark_enforcement_uk)
 - **Reddit stake delta:** +$270M since last update (Jul 2 → Jul 7)
+
+## 2026-07-07 09:00 PT — Type B: Journalist/Publication Research — Dhruv Mehrotra Boomerang & Wired Staff Survey
+
+**Focus:** Surveyed 128 journalist profiles (11,628 lines) and editorial changes tracker for gaps in spring/summer 2026 hiring. Identified and filled Dhruv Mehrotra's Bloomberg→Wired boomerang return as missing standalone entry.
+
+### Research Conducted
+
+**1. Mehrotra boomerang return (May 18, 2026)**
+- Source: EditorAndPublisher (TalkingBizNews announcement of Barrett's memo)
+- His `journalists.yaml` career entry already had all 3 stints (Wired→Bloomberg→Wired) with Project Cannes details
+- But `editorial_changes.yaml` only referenced the return in passing (Varner entry line 1245, Couts entry line 897)
+- **Added standalone entry** at date 2026-05-18 with full context: boomerang pattern, Barrett's "coming home" memo, Couts reporting line, Gizmodo pipeline significance
+
+**2. Kate Knibbs prediction markets beat — ALREADY COMPREHENSIVE**
+- Profile at line 6418: full career (South Korea teaching → Mobilia → Daily Dot → Gizmodo → The Ringer → Wired), 5 career entries
+- Beat shift already in `editorial_changes.yaml` at line ~1108
+- Nieman Lab profile (Apr 15, 2026) verified — no new data to add
+
+**3. Atlantic spring 2026 hires — ALREADY TRACKED**
+- Sophia Nguyen, Kevin Sieff, Theo Balcomb, Jonathan L. Fischer all present in `editorial_changes.yaml` (lines 201-240, 1425-1430)
+- Sarah A. Topol & Jenisha Watts not individually tracked but lower priority (not tech-focused)
+
+**4. Other Wired 2026 entries verified present:**
+- Brian Kahn (May 4), Sophie Kleeman (May 11), Kate Taylor (Jul 1), Rosie Swash (May 5), Isabella Ward (Jun 3)
+- Ej Dickson, Miles Klee, Maxwell Zeff, Alana Hope Levinson — all in journalists.yaml
+
+### Changes
+- `editorial_changes.yaml`: +1 entry (Mehrotra boomerang, 2026-05-18)
