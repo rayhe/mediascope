@@ -2,6 +2,59 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-06 19:00 PT — Type B: Journalist/Publication Research — Tim Marchman Deep Profile
+
+**Focus:** Tim Marchman, Wired's Senior Director of Science, Politics, and Security — the single most consequential editor hire under Katie Drummond's Wired regime. Previously had 4 career entries and 398 notes chars. Expanded to 7 career entries, comprehensive analytical_value, deep notes, and 8 source URLs.
+
+### What Changed
+
+**1. Expanded career timeline (4 → 7 career entries)**
+
+- **NEW: New York Press managing editor (~2004-2005)** — earliest editing role, alternative weekly in Manhattan. Freelanced simultaneously for Weekly Standard, New Republic, LA Times, National Review.
+- **NEW: New York Sun sports columnist (~2005-2008)** — primary sportswriter at small-circulation Manhattan daily. Called "the country's best young baseball writer" by Splice Today (2008). Rickey Henderson piece quoted in Henderson's Wikipedia entry. Sun folded Sept 2008.
+- **NEW: The Classical co-founder (2011-2018)** — independent sports website with Bethlehem Shoals (FreeDarko), David Roth, others. Kickstarter-funded ($50K). Named after The Fall album track. Described as "post-punk sports journalism."
+- **EXPANDED: Deadspin EIC (2013-2018)** — added: joined as deputy editor July 2013, replaced Tommy Craggs, operated from Chicago bureau. Notable: Hall of Fame vote to readers, UFC/Zuffa blacklisting, Ted Cruz MMA challenge incident (Jan 2017, Tim Kennedy accepted, $50K charity fight). Peter Thiel/Gawker bankruptcy context as emotional foundation of adversarial pipeline.
+- **EXPANDED: Gizmodo Special Projects (2018-2019)** — added Fusion Media Group/Univision context, Drummond overlap analysis.
+- **EXPANDED: Vice features director (2019-2024)** — added 4 specific investigations: OUR exposé with Anna Merlan (Aug 2021), Afghanistan anti-trafficking pivot (Oct 2021), NFLPA Fishman misconduct (Mar 2022), McMahon lawsuit coverage (Jan 2024). Vice bankruptcy during his tenure.
+- **EXPANDED: Wired director (2024-present)** — added title upgrade to Senior Director (CJR June 2026 vs Bulletin March 2025), subscriber growth stats (200K+ year, 62,500 in two weeks), 8 specific bylined stories, podcast appearances (Politics Lab, Uncanny Valley), contact details (email, Signal, Bluesky).
+
+**2. New analytical_value section (~2,200 chars)**
+
+Key analytical findings:
+- **Gawker DNA pipeline archetype:** Marchman's career (Deadspin → Gizmodo → Vice → Wired) is the purest example of the adversarial-journalism pipeline thesis. Every institution has Gawker DNA.
+- **Self-description vs. external framing gap:** In Bulletin interview, calls coverage "not part of any resistance" and "just facts." CJR piece (same year) frames it as "accountability journalism" with "fondness for scoops showing tight ties between government and Bay Area tech leaders." This gap is a textbook case of adversarial posture normalization.
+- **Three confounding variables identified:** (1) Bulletin interviewer Thomas Gaulkin discloses Marchman as "a close friend of mine" — media industry social network effects; (2) Philadelphia-based — physically distant from Silicon Valley and NYC editorial concentration; (3) Queens/Brooklyn sportswriting roots embed outsider identity.
+- **Meta significance:** Marchman's desks don't directly cover Meta, but his editorial direction shapes what counts as a "tech" story. His stated philosophy frames Big Tech's political influence as core to Wired's mission — any Meta-lobbying/policy story goes through his editorial funnel.
+
+**3. New editorial_changes entry: title upgrade (Jun 2026)**
+
+Added Marchman's promotion from Director to Senior Director, documented by CJR piece. Within 18 months of hire — signals institutional validation of Gawker-pipeline model.
+
+**4. README.md: migration count update (500 → 503)**
+
+New career entries added 3 additional auto-detected migrations.
+
+### Sources
+- Bulletin of the Atomic Scientists: "Staring into the DOGE abyss with WIRED's Tim Marchman" (Mar 17, 2025) — primary interview, 7,000+ words
+- Columbia Journalism Review: "No Fanboys Need Apply" (Jun 2026) — CJR interview at Jimmy's Corner, "senior director" title
+- Splice Today: "Interview: Tim Marchman" (spring 2008) — age 29, Queens/Brooklyn roots, New York Sun, early career detail
+- Deadspin: "Report: Tim Marchman Named Editor Of Sports Blog" (late 2013) — EIC announcement, Craggs replacement
+- Wikipedia: The Classical — co-founding, Kickstarter, writers, inactivity
+- TelevisaUnivision/Media Post: "Marchman To Head Gizmodo Media's Special Projects" (~2018) — Gizmodo appointment
+- RocketReach: Tim Marchman profile — career timeline, Philadelphia location
+- Muck Rack: Tim Marchman profile — verified journalist, publication list
+- Various podcast appearances: VICE News Reports (Aug/Oct 2021), Pollock & Thurston (Jan 2024), The Distraction (Mar 2022, Apr 2025)
+- Wired author page: bio text, contact details, topics
+- Wikipedia: Rickey Henderson — Marchman's sportswriting quoted
+
+### Stats
+- Tests: 1,456 passed (96 structural consistency)
+- Profile changes: 7 career entries (was 4), ~3,500 notes chars (was 398), ~2,200 analytical_value chars (was 0)
+- editorial_changes: +12 lines (title upgrade entry)
+- README.md: migration count 500 → 503
+
+---
+
 ## 2026-07-06 09:00 PT — Type A: Article Deep Dive — LiveMint Meta/Wang/Muse Spark/Claude
 
 **Article:** "Mark Zuckerberg paid $14billion for Alexandr Wang's AI; Meta's own engineers still reach for Claude" (LiveMint, ~June 2026)
@@ -14760,3 +14813,35 @@ Type B rotation: journalist profile research and editorial change tracking.
 - **Auto-detected migrations:** 485 (was 482, +3 from Nix)
 - **Tests:** 96 passed, 0 failed
 - **Docs updated:** README.md, EDITORIAL_HISTORIES.md, careers_demo.py (counts synced to 152/151/485)
+
+## 2026-07-06 18:00 PT — Type B: Journalist/Publication Research
+
+### Work Done
+1. **Added 5 key Verge journalists** — The Verge had zero journalists tracked despite being one of 6 monitored publications. Researched and added:
+   - **Nilay Patel:** EIC since 2014, co-founder, JD/copyright attorney, coined "Google Zero"
+   - **Alex Heath:** Deputy editor 2021-Sep 2025, broke Meta rebrand story, left for Sources (Substack) + Access podcast, retains Verge contributor status
+   - **David Pierce:** Editor-at-large (boomerang career: Verge→Wired→WSJ→Protocol→Verge), UVA BA
+   - **Tom Warren:** Senior editor since Jan 2012, UK-based Microsoft beat, pre-journalism Deutsche Bank/Morgan Stanley career
+   - **Adi Robertson:** Founding staff (2011), promoted to senior editor tech & policy (2022), VR/AR expert
+
+2. **Added 9 editorial changes for The Verge:**
+   - Founding by Joshua Topolsky (Nov 2011)
+   - Joshua Topolsky → Nilay Patel EIC transition (Apr 2014)
+   - Tom Warren hired (Jan 2012), Alex Heath hired (Sep 2021), David Pierce hired (Sep 2022)
+   - Adi Robertson promoted to senior editor (Jun 2022)
+   - Alex Heath departure (Sep 2025)
+   - Murdoch/Lupa ownership acquisition (May 2026)
+   - PMC/PMX acquisition (Jun 2026)
+
+3. **Fixed stale counts:** README.md and EDITORIAL_HISTORIES.md updated: 290+→310+ feeder outlets, 492→500 auto-detected migrations
+
+4. **Fixed YAML schema issues:** Initial attempt used `organization` key (KeyError); corrected to `publication` slugs. Fixed invalid `event_type` values (`co-founded`→`founded`, `transferred`→`other`).
+
+### Stats
+- **Journalists:** 157 (was 152, +5 Verge journalists)
+- **Multi-pub journalists:** 155 (was 151)
+- **Auto-detected migrations:** 500 (was 485, +15)
+- **Editorial changes:** 143 (was 134, +9 Verge events)
+- **Feeder outlets:** 312 unique publication slugs (floor updated to 310+)
+- **Tests:** 1,456 passed + 96 structural consistency checks, 0 failed
+- **Commit:** 063f3eb, pushed to GitHub
