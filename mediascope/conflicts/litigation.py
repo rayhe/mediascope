@@ -38,42 +38,46 @@ class LitigationCase:
 
 
 def load_litigation_data(
-    profile: dict,
+    profile,
 ) -> tuple[list[LitigationFunder], list[LitigationCase]]:
     """Load litigation data from a publication's YAML profile.
 
-    Expected profile structure:
-        litigation:
-          funders:
-            - name: "Funder X"
-              fund_size: 500000000
-              parent_entity: "Holding Co"
-              known_cases: ["Case A v. B"]
-              target_entities: ["Company Z"]
-              connections: ["Media Parent Corp"]
-            ...
-          cases:
-            - case_name: "Case A v. B"
-              case_number: "1:23-cv-12345"
-              court: "S.D.N.Y."
-              target_entity: "Company Z"
-              plaintiff: "Plaintiff LLC"
-              amount: 10000000
-              status: "active"
-              funder: "Funder X"
-              source_url: "https://..."
-            ...
+    Accepts both raw YAML dicts and PublicationProfile objects.  The
+    YAML key is ``litigation_connections`` (a flat list at the top
+    level).  For backward compatibility the function also checks the
+    legacy nested ``litigation.funders`` / ``litigation.cases`` path.
+
+    When using the flat ``litigation_connections`` format, each entry is
+    examined for either funder-style keys (``fund_size``,
+    ``known_cases``) or case-style keys (``case_name``,
+    ``case_number``).
 
     Args:
-        profile: Parsed YAML profile dictionary.
+        profile: Parsed YAML dict **or** PublicationProfile.
 
     Returns:
         Tuple of (funders, cases).
     """
-    litigation = profile.get("litigation", {})
+    # Try legacy nested path first
+    litigation = profile.get("litigation", None)
+    if isinstance(litigation, dict) and ("funders" in litigation or "cases" in litigation):
+        funder_data = litigation.get("funders", [])
+        case_data = litigation.get("cases", [])
+    else:
+        # Flat YAML key — partition entries by structure
+        connections = profile.get("litigation_connections", [])
+        funder_data = []
+        case_data = []
+        for entry in connections:
+            if not isinstance(entry, dict):
+                continue
+            if "case_name" in entry or "case_number" in entry:
+                case_data.append(entry)
+            else:
+                funder_data.append(entry)
 
     funders: list[LitigationFunder] = []
-    for f in litigation.get("funders", []):
+    for f in funder_data:
         funders.append(LitigationFunder(
             name=f.get("name", "Unknown"),
             fund_size=f.get("fund_size"),
@@ -84,7 +88,7 @@ def load_litigation_data(
         ))
 
     cases: list[LitigationCase] = []
-    for c in litigation.get("cases", []):
+    for c in case_data:
         cases.append(LitigationCase(
             case_name=c.get("case_name", "Unknown"),
             case_number=c.get("case_number", ""),

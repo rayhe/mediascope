@@ -33,6 +33,18 @@ class PublicationProfile:
     litigation_connections: list[str] = field(default_factory=list)
     ai_crawl_policy: str = "unknown"
     target_entities: list[str] = field(default_factory=list)
+    _raw: dict = field(default_factory=dict, repr=False)
+
+    def get(self, key: str, default: Any = None) -> Any:
+        """Dict-like access for backward compatibility with conflict layer.
+
+        Looks up the key as an attribute first, then falls back to the
+        raw YAML dict.  This lets functions written for raw dicts work
+        transparently with PublicationProfile objects.
+        """
+        if key != "_raw" and hasattr(self, key):
+            return getattr(self, key)
+        return self._raw.get(key, default)
 
 
 @dataclass
@@ -75,6 +87,7 @@ def _parse_profile(data: dict[str, Any], slug: str) -> PublicationProfile:
         litigation_connections=data.get("litigation_connections", []),
         ai_crawl_policy=data.get("ai_crawl_policy", "unknown"),
         target_entities=data.get("target_entities", []),
+        _raw=data,
     )
 
 

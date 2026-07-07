@@ -404,7 +404,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **1469 tests** across 57 test files, each covering a different analytical capability:
+MediaScope has **1477 tests** across 58 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -440,6 +440,7 @@ MediaScope has **1469 tests** across 57 test files, each covering a different an
 | `test_wired_gulag_patterns.py` | 17 | Wired "gulag" engineer revolt coverage: conscript/conscription workplace loaded language, keystroke/screen-recording surveillance detection, Scale AI entity detection, full article-context loaded language density |
 | `test_cannes_contractors.py` | 40 | Wired "Cannes" contractors story: Scale AI/Covalen/Character.AI cluster split (AI Infrastructure / AI Chatbot Products / Outsourcing-Contractors), Rumman Chowdhury + Humane Intelligence entity detection, Sama outsourcing context-aware detection, catastrophizing "death of" proper-noun exclusion, Outlook software-product source exclusion, deception/impersonation loaded_language patterns, Business Insider/Daily Beast source fragment leak prevention, headline-aware topic boosting, cross-sentence industry_normalization_undercut detection, tone gap regression (child-safety EI + Path B dynamic blend) |
 | `test_type_d_fixes.py` | 16 | Compound publication source extraction (Business Insider, Daily Beast, Daily Mail as organizational sources), bare confession framing patterns (no "in" prefix) |
+| `test_jul7_regressions.py` | 8 | Regressions for Jul 7 fixes: generate_disclosure() with PublicationProfile objects (not just dicts), catastrophic regex backtracking in competitive_deficit pattern, investments dict→str coercion |
 | `test_postpass_activation.py` | 26 | Post-pass device activation: analogy_stacking threshold (3+ markers), speculative_framing threshold (5+ hedges), expanded loaded_language patterns, analogy_stacking false-positive regression (factual "is a" constructions vs qualified metaphors) |
 | `test_jun27_regression.py` | 6 | Jun 27 regression tests: topic "fine" ambiguity (fine-tuned ≠ litigation), source extraction stop words ("Any"/"All" not person names), fined still matches litigation |
 | `test_hackathon_revolt.py` | 13 | Wired hackathon employee revolt: Ime Archibong entity detection, workplace-discontent emotional terms, social_proof_amplification framing device, AI hackathon topic classification, composite sentiment on internal-morale articles |

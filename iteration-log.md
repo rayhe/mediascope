@@ -2,6 +2,38 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-07 12:00 PT — Type D: Toolkit Quality (Bug Fixes & Regression Tests)
+
+### Focus
+Critical bug fixes: disclosure layer crash, regex backtracking hang, and investments type coercion.
+
+### Changes
+
+**Bug 1 — `generate_disclosure()` crashes on `PublicationProfile` objects (FIXED)**
+- Root cause: Conflicts layer (`disclosure.py`, `ownership.py`, `revenue.py`, `litigation.py`) used `.get()` on profile objects, but `load_profile()` returns a `PublicationProfile` dataclass with no `.get()` method. Also, code expected nested YAML paths (`ownership.chain`) but actual YAML uses flat keys (`ownership_chain`).
+- Fix: Added `_raw: dict` field + `get()` method to `PublicationProfile` in `config.py`. Rewrote `parse_ownership_chain()`, `load_revenue_data()`, `load_litigation_data()` to handle both flat and nested paths. Fixed `estimated_value` string→float coercion in `revenue.py`.
+- Ref: `mediascope/config.py`, `mediascope/conflicts/ownership.py`, `revenue.py`, `litigation.py`, `disclosure.py`
+
+**Bug 2 — Catastrophic regex backtracking in `competitive_deficit` pattern (FIXED)**
+- Root cause: Pattern index 2 had `(?:[A-Z]\w+(?:'s\s+\w+)?,?\s*){2,}` causing exponential backtracking on text like "responsible data practices".
+- Fix: Rewrote pattern to require comma separators between items.
+- Verification: Previously-hanging text completes in 0.02s; full sample in 0.05s.
+- Ref: `mediascope/analyze/framing.py`
+
+**Bug 3 — Investments dict→str coercion in `ownership.py` (FIXED)**
+- Root cause: Atlantic profile's Emerson Collective node has `investments` as list of dicts (with `entity`, `relationship`, `competitive_with` keys), but `OwnershipNode.investments` expects `list[str]`.
+- Fix: Added coercion in `parse_ownership_chain()` to extract `entity` key from dict entries, falling back to `str()`.
+- Ref: `mediascope/conflicts/ownership.py`, `profiles/atlantic.yaml`
+
+**Regression tests added: `tests/test_jul7_regressions.py` (8 tests)**
+- `TestDisclosureProfileCompat`: 4 tests — wired profile no crash, ownership present, conflicts present, all profiles generate disclosure
+- `TestRegexBacktracking`: 4 tests — "responsible data practices" no hang, capitalized word sequences no hang, legitimate competitive_deficit still matches, evidence_text attribute correct
+
+### Metrics
+- Tests: 1477 (was 1469, +8)
+- Test files: 58 (was 57, +1)
+- Structural consistency: 97/97 passing
+
 ## 2026-07-07 11:00 PT — Type C: Ownership & Funding Deep Dive (The Verge/PMC/PMX)
 
 **Focus:** Comprehensive update to The Verge profile covering PMX leadership appointments, PAG Q1 2026 financials, and four new litigation entries tracking Google's accumulating global antitrust/liability exposure — including the Munich AI Overviews ruling that directly supports PMC's core argument.

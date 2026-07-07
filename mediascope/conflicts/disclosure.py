@@ -103,12 +103,18 @@ def _render(template_str: str, context: dict) -> str:
 
 
 def _build_context(
-    profile: dict,
+    profile,
     target_entity: str,
     article_url: Optional[str] = None,
 ) -> dict:
-    """Build the shared template context from a profile."""
-    publication_name = profile.get("name", profile.get("slug", "Unknown Publication"))
+    """Build the shared template context from a profile.
+
+    Accepts both raw YAML dicts and PublicationProfile objects.
+    """
+    publication_name = getattr(profile, "name", None) or (
+        profile.get("name", profile.get("slug", "Unknown Publication"))
+        if isinstance(profile, dict) else "Unknown Publication"
+    )
     chain = parse_ownership_chain(profile)
     ownership_text = format_ownership_text(chain)
 
@@ -138,14 +144,14 @@ def _build_context(
 
 
 def generate_disclosure(
-    profile: dict,
+    profile,
     target_entity: str,
     article_url: str | None = None,
 ) -> str:
     """Generate a complete conflict-of-interest disclosure statement.
 
     Args:
-        profile: Publication profile dict (parsed from YAML).
+        profile: Publication profile (PublicationProfile or raw dict).
         target_entity: The entity whose coverage may be conflicted.
         article_url: Optional URL of the specific article.
 
@@ -157,7 +163,7 @@ def generate_disclosure(
 
 
 def generate_social_disclosure(
-    profile: dict,
+    profile,
     target_entity: str,
 ) -> str:
     """Generate a shorter disclosure suitable for social media.
@@ -167,7 +173,7 @@ def generate_social_disclosure(
     insufficient.
 
     Args:
-        profile: Publication profile dict.
+        profile: Publication profile (PublicationProfile or raw dict).
         target_entity: Target entity.
 
     Returns:
@@ -186,7 +192,7 @@ def generate_social_disclosure(
 
 
 def generate_disclosure_json(
-    profile: dict,
+    profile,
     target_entity: str,
 ) -> dict:
     """Generate a machine-readable disclosure as a dictionary.

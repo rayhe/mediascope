@@ -5494,11 +5494,17 @@ _COMPETITIVE_DEFICIT_PATTERNS: list[re.Pattern] = [
         re.IGNORECASE | re.DOTALL,
     ),
     # "competitors including [A], [B], and [C]" — explicit enumeration
+    # Fix (Jul 2026): original `(?:[A-Z]\w+(?:'s\s+\w+)?,?\s*){2,}` caused
+    # catastrophic backtracking because `\w+` + optional comma/space repeated
+    # {2,} could match arbitrary word sequences.  Rewritten to require comma
+    # separators between items, which constrains the match and prevents
+    # exponential backtracking.
     re.compile(
         r"\b(?:competitors?|rivals?|other (?:companies|players|firms))\s+"
         r"(?:including|such as|like|namely)\s+"
-        r"(?:[A-Z]\w+(?:'s\s+\w+)?,?\s*){2,}"
-        r"(?:and\s+[A-Z]\w+(?:'s\s+\w+)?)\b",
+        r"[A-Z]\w+(?:'s\s+\w+)?"
+        r"(?:,\s+[A-Z]\w+(?:'s\s+\w+)?)*"
+        r",?\s+and\s+[A-Z]\w+(?:'s\s+\w+)?\b",
         re.IGNORECASE,
     ),
     # "while/whereas [A], [B], and [C] have [positive verb]" — contrast listing

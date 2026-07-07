@@ -44,31 +44,28 @@ class Conflict:
     source_url: str = ""
 
 
-def parse_ownership_chain(profile: dict) -> OwnershipChain:
+def parse_ownership_chain(profile) -> OwnershipChain:
     """Parse an ownership chain from a publication's YAML profile data.
 
-    Expected profile structure:
-        ownership:
-          chain:
-            - name: "Publication Name"
-              entity_type: "publisher"
-              subsidiaries: [...]
-              investments: [...]
-              board_seats: [...]
-              financial_interests: [...]
-            - name: "Parent Corp"
-              entity_type: "parent_company"
-              ...
-          ultimate_parent: "Top Holding Co"
+    Accepts both raw YAML dicts and PublicationProfile objects.  The YAML
+    key is ``ownership_chain`` (a flat list of node dicts at the top
+    level).  For backward compatibility with code that passed a nested
+    ``ownership.chain`` structure, the function also checks that path.
 
     Args:
-        profile: Parsed YAML profile dictionary.
+        profile: Parsed YAML dict **or** PublicationProfile.
 
     Returns:
         OwnershipChain with all nodes and metadata.
     """
-    ownership = profile.get("ownership", {})
-    chain_data = ownership.get("chain", [])
+    # Support both flat YAML key and legacy nested path
+    chain_data = profile.get("ownership_chain", None)
+    if chain_data is None:
+        ownership = profile.get("ownership", {})
+        if isinstance(ownership, dict):
+            chain_data = ownership.get("chain", [])
+        else:
+            chain_data = []
 
     nodes: list[OwnershipNode] = []
     for node_data in chain_data:
@@ -76,13 +73,22 @@ def parse_ownership_chain(profile: dict) -> OwnershipChain:
             name=node_data.get("name", "Unknown"),
             entity_type=node_data.get("entity_type", "unknown"),
             subsidiaries=node_data.get("subsidiaries", []),
-            investments=node_data.get("investments", []),
+            investments=[
+                (i.get("entity", str(i)) if isinstance(i, dict) else str(i))
+                for i in node_data.get("investments", [])
+            ],
             board_seats=node_data.get("board_seats", []),
             financial_interests=node_data.get("financial_interests", []),
         )
         nodes.append(node)
 
-    ultimate_parent = ownership.get("ultimate_parent")
+    # Derive ultimate_parent: check legacy nested path first, then last node
+    ownership_section = profile.get("ownership", {})
+    ultimate_parent = (
+        ownership_section.get("ultimate_parent")
+        if isinstance(ownership_section, dict)
+        else None
+    )
     if not ultimate_parent and nodes:
         ultimate_parent = nodes[-1].name
 
