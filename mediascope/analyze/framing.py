@@ -356,7 +356,8 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"\b(?:slammed|blasted|hammered|torched|eviscerated|"
         r"lambasted|excoriated|ripped|grilled|destroyed|"
         r"crushed|obliterated|demolished|annihilated|"
-        r"staggering|mastermind(?:ed)?|explosive|"
+        r"staggering|whopping|jaw-dropping|eye-watering|eye-popping|"
+        r"mastermind(?:ed)?|explosive|"
         r"turned a blind eye|strike fear|struck fear|"
         r"indefensible|abusive|defamatory|"
         r"drastic(?:ally)?|superficial(?:ly)?|"
@@ -365,13 +366,17 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         # amplifying modifiers that editorialize by exaggerating magnitude.
         # Discovered via MIT TR "Resistance" article (Apr 2026):
         # "users uninstalled ChatGPT in droves"
-        r"in droves|in spades|en masse|in drastic numbers"
+        r"in droves|in spades|en masse|in drastic numbers|"
+        # Dramatic event modifiers that editorialize by elevating significance.
+        # Discovered via Gizmodo $1.4T penalty article (Jul 2026):
+        # "watershed verdict", "mounting litigation"
+        r"watershed|landmark|ground-?breaking|sweeping|far-?reaching|seismic"
         r")\b",
         re.IGNORECASE,
     ),
     # Loaded adjectives/nouns characterizing people or organizations
     re.compile(
-        r"\b(?:embattled|beleaguered|troubled|scandal-plagued|"
+        r"\b(?:embattled|beleaguered|troubled|scandal-plagued|plagued|"
         r"controversial|notorious|disgraced|under fire|"
         r"under siege|besieged|defiant|brazen|arrogant|"
         r"tone-deaf|out of touch|nefarious|scandalous|"
@@ -2353,6 +2358,74 @@ _SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
 ]
 
 _DEVICE_PATTERNS["scale_magnitude"] = _SCALE_MAGNITUDE_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Strategic disclosure: a party in a dispute (not the journalist)
+# strategically discloses an opponent's legal demand, internal figure,
+# or unfavorable position to frame it as extreme or unreasonable.
+# The journalist reports the disclosure but the framing originates with
+# the disclosing party, not editorial choice.
+#
+# Distinct from scale_magnitude (which flags raw numerical scale
+# regardless of who introduced it) and editorial_dramatization (which
+# is journalist-originated emphasis).  Strategic disclosure captures
+# the *sourcing* asymmetry: one party chose to put a number or demand
+# into the public record precisely because it sounds outrageous.
+#
+# Gap discovered via Reuters Meta $1.4T penalty article (Jul 2026):
+# "Meta put forward the figure" / "Meta said the amount was
+# unsupported" — Meta strategically disclosed the states' $1.4T
+# penalty demand to make it look absurd.  The toolkit detected
+# scale_magnitude but couldn't distinguish party-strategic from
+# editorial magnitude framing.
+# ---------------------------------------------------------------------------
+_STRATEGIC_DISCLOSURE_PATTERNS: list[re.Pattern] = [
+    # "[Party] said/disclosed/revealed/put forward [the/a] figure/number/amount"
+    re.compile(
+        r"""\b(?:[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3})\s+"""
+        r"""(?:said|disclosed|revealed|put\s+forward|made\s+public|"""
+        r"""publicized|highlighted|pointed\s+out|drew\s+attention\s+to)\s+"""
+        r"""(?:the|a|an|that\s+the|that\s+a)\s+"""
+        r"""(?:figure|number|amount|sum|total|calculation|estimate|"""
+        r"""demand|penalty|damages?\s+figure|fine|price\s+tag)""",
+        re.IGNORECASE,
+    ),
+    # "[Party] said the amount/figure was unsupported/unreasonable/excessive"
+    re.compile(
+        r"""\b(?:[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3})\s+"""
+        r"""(?:said|argued|contended|claimed|asserted|maintained)\s+"""
+        r"""(?:the|that\s+the)\s+"""
+        r"""(?:amount|figure|number|sum|total|penalty|demand|calculation)\s+"""
+        r"""(?:was|is|would\s+be|has\s+been)\s+"""
+        r"""(?:unsupported|unreasonable|excessive|unprecedented|"""
+        r"""unjustified|disproportionate|baseless|inflated|absurd|"""
+        r"""without\s+precedent|without\s+basis)""",
+        re.IGNORECASE,
+    ),
+    # "has no analog/precedent/basis in the history of"
+    re.compile(
+        r"""\b(?:has|have|had)\s+no\s+"""
+        r"""(?:analog|analogue|precedent|basis|parallel|equivalent)\s+"""
+        r"""in\s+(?:the\s+)?history\s+of""",
+        re.IGNORECASE,
+    ),
+    # "[Party] characterized/described [demand/claim] as [extreme adjective]"
+    re.compile(
+        r"""\b(?:[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3})\s+"""
+        r"""(?:characterized|described|framed|portrayed|cast|presented)\s+"""
+        r"""(?:the|their|its|a)\s+"""
+        r"""(?:opponent'?s?|plaintiff'?s?|state'?s?|"""
+        r"""prosecution'?s?|government'?s?|regulator'?s?)?\s*"""
+        r"""(?:demand|claim|penalty|fine|damages?|calculation|figure|"""
+        r"""request|ask|proposal)\s+as\s+"""
+        r"""(?:unreasonable|excessive|extreme|outrageous|absurd|"""
+        r"""disproportionate|unprecedented|astronomical|staggering)""",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["strategic_disclosure"] = _STRATEGIC_DISCLOSURE_PATTERNS
 
 
 # ---------------------------------------------------------------------------
@@ -5885,6 +5958,9 @@ _DEVICE_PATTERNS["expert_contradiction"] = _EXPERT_CONTRADICTION_PATTERNS
 # ---------------------------------------------------------------------------
 _EXPERT_CONSENSUS_PATTERNS: list[re.Pattern] = [
     # "said [Name], [title] at/of [Company]" — named expert attribution
+    # Note: (?-i:[A-Z]{2,5}) keeps the acronym match case-sensitive even
+    # though the overall pattern uses re.IGNORECASE, preventing false
+    # positives where ordinary lowercase words like "but" match.
     re.compile(
         r"""\bsaid\s+[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3},\s*"""
         r"""(?:a\s+)?(?:senior\s+|chief\s+|"""
@@ -5892,10 +5968,15 @@ _EXPERT_CONSENSUS_PATTERNS: list[re.Pattern] = [
         r"""(?:co-?)?founder|partner|managing\s+director|"""
         r"""(?:chief\s+)?(?:executive|technology|information|"""
         r"""operating|AI|product|privacy|data|security|marketing)\s+"""
-        r"""officer|[A-Z]{2,5})\b""",
+        r"""officer|(?-i:[A-Z]{2,5}))\b""",
         re.IGNORECASE,
     ),
     # "[Name], [title] at/of [Company]" preceding "said" or "wrote"
+    # Same (?-i:...) fix for acronym portion — prevents IGNORECASE from
+    # matching lowercase words like "but", "at", "the" as acronyms.
+    # Bug discovered via Reuters Meta $1.4T article (Jul 2026): "filings
+    # are sealed, but at a court hearing in June they said" was falsely
+    # matched because "but" matched [A-Z]{2,5} under IGNORECASE.
     re.compile(
         r"""\b[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,3},\s*"""
         r"""(?:a\s+)?(?:senior\s+|chief\s+|"""
@@ -5903,7 +5984,7 @@ _EXPERT_CONSENSUS_PATTERNS: list[re.Pattern] = [
         r"""(?:co-?)?founder|partner|managing\s+director|"""
         r"""(?:chief\s+)?(?:executive|technology|information|"""
         r"""operating|AI|product|privacy|data|security|marketing)\s+"""
-        r"""officer|[A-Z]{2,5})"""
+        r"""officer|(?-i:[A-Z]{2,5}))"""
         r"""\s+(?:at|of|for|with)\s+[A-Z]"""
         r""".{0,60}?\b(?:said|wrote|told|added|noted|explained|argued)""",
         re.IGNORECASE,
@@ -6165,7 +6246,7 @@ def detect_framing_devices(
     pressure_language, refusal_amplification, regulatory_favoritism,
     regulatory_shadow, repeated_disruption, rhetorical_question,
     sarcastic_correction, scandal_comparison, scale_magnitude,
-    selective_omission_signal,
+    selective_omission_signal, strategic_disclosure,
     selective_rehabilitation, self_referential_investigation,
     silence_as_guilt, slippery_slope, sovereignty_framing,
     strategic_reversal, straw_man, talent_hemorrhage,
@@ -6641,6 +6722,46 @@ def detect_framing_devices(
                             "communicate", "dream",
                         )
                         if any(w in _ea_context for w in _MEDICAL_CONDITION_TERMS):
+                            continue
+
+                # --- Loaded language: legal terms-of-art filter --------
+                # Words like "violation", "penalty", "sanction",
+                # "enforcement", "misconduct" are statutory language in
+                # litigation/regulatory reporting.  When they appear in
+                # proximity to legal/regulatory vocabulary (COPPA, court,
+                # statute, attorney general, trial, judge, etc.), they
+                # are terms of art, not editorial loaded language.
+                #
+                # Discovered in Reuters $1.4T penalty article (Jul 7,
+                # 2026): "violation" appears repeatedly as the statutory
+                # unit of measurement (per-violation fines under COPPA),
+                # not as an editorializing word choice.
+                # ---------------------------------------------------------
+                if device_type == "loaded_language":
+                    _ll_lower2 = match.group().lower()
+                    _LEGAL_TERMS_OF_ART = (
+                        "violation", "violations",
+                        "sanction", "sanctions",
+                        "enforcement",
+                        "misconduct",
+                    )
+                    if any(t in _ll_lower2 for t in _LEGAL_TERMS_OF_ART):
+                        _ll_ctx_start2 = max(0, start - 120)
+                        _ll_ctx_end2 = min(len(text), end + 120)
+                        _ll_context2 = text[_ll_ctx_start2:_ll_ctx_end2].lower()
+                        _LEGAL_CONTEXT_TERMS = (
+                            "coppa", "court", "trial", "judge",
+                            "attorney general", "attorneys general",
+                            "lawsuit", "statute", "statut",
+                            "penalty", "penalties", "fine",
+                            "filed", "filing", "plaintiff",
+                            "defendant", "prosecution",
+                            "consumer protection",
+                            "privacy act", "data protection",
+                            "section 230", "per-violation",
+                            "per violation",
+                        )
+                        if any(w in _ll_context2 for w in _LEGAL_CONTEXT_TERMS):
                             continue
 
                 seen_spans.add(span_key)

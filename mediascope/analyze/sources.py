@@ -682,6 +682,46 @@ def extract_sources(text: str) -> list[SourceMention]:
             attribution_verb="according to",
         ))
 
+    # Pattern 3b-pre: "per [Source Name]" — compact indirect attribution
+    # Common in legal/financial journalism: "per Reuters", "per Bloomberg",
+    # "per the filing". Shorter variant of "according to".
+    # Discovered via Gizmodo $1.4T penalty article (Jul 2026):
+    # "the penalties were calculated ... per Reuters"
+    per_source = re.compile(
+        r"\bper\s+(?:[Tt]he\s+)?([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+){0,3})\b",
+    )
+    for m in per_source.finditer(text):
+        name = m.group(1).strip()
+        if name in seen_names:
+            continue
+
+        # Filter false positives — skip generic nouns that happen to be
+        # capitalised at sentence start or after "per"
+        _per_stop = {
+            "The", "This", "That", "These", "Those", "Each", "Every",
+            "Some", "Any", "All", "Most", "Many", "Few", "Several",
+            "Her", "His", "Its", "Our", "Their", "Your",
+        }
+        first_word = name.split()[0]
+        if first_word in _per_stop or first_word in _NAME_STOP_FIRST_WORDS:
+            continue
+
+        seen_names.add(name)
+
+        ctx_start = max(0, m.start() - 100)
+        ctx_end = min(len(text), m.end() + 100)
+        context = text[ctx_start:ctx_end]
+
+        sources.append(SourceMention(
+            name=name,
+            is_anonymous=False,
+            is_expert=False,
+            affiliation=name,
+            quote="",
+            attribution_verb="per",
+            source_type="news_outlet",
+        ))
+
     # Pattern 3b: "[Name] has/have/had [verb]" — auxiliary + main verb
     # Catches: "Angelos Arnis has dubbed", "Will Manidis had argued",
     # "Joe Weisenthal has noted"
@@ -1357,6 +1397,22 @@ def extract_sources(text: str) -> list[SourceMention]:
             r"suggest|suggests?|confirm|confirms?|state|states?)\b",
             re.IGNORECASE,
         ),
+        # "the filing/complaint/lawsuit/suit states/says/argues"
+        # The legal document itself used as a source with an attribution verb.
+        # Discovered via Gizmodo $1.4T penalty article (Jul 2026):
+        # 'the filing states. "The AGs\' demand exceeds..."'
+        re.compile(
+            r"\b(?:the|a|an)\s+"
+            r"(?:filing|complaint|lawsuit|suit|petition|motion|brief|"
+            r"indictment|ruling|order|decision|opinion|judgment|"
+            r"court\s+(?:filing|submission|document))\s+"
+            r"(?:also\s+)?"
+            r"(?:state|states|said|says|say|argue|argues|argued|"
+            r"allege|alleges|alleged|note|notes|noted|"
+            r"claim|claims|claimed|contend|contends|contended|"
+            r"assert|asserts|asserted|add|adds|added)\b",
+            re.IGNORECASE,
+        ),
         # "a copy of which was obtained/provided/shared"
         re.compile(
             r"\b(?:a|the)\s+copy\s+of\s+which\s+was\s+"
@@ -1549,6 +1605,16 @@ def extract_sources(text: str) -> list[SourceMention]:
         re.compile(
             rf"\b(?:prosecutors?|plaintiffs?|defendants?|the\s+states?)\s+"
             rf"(?:have|had)\s+({verb_alternation})\b",
+            re.IGNORECASE,
+        ),
+        # "the attorneys/lawyers for [Entity] argued/said/claimed"
+        # Discovered via Gizmodo $1.4T penalty article (Jul 2026):
+        # "the attorneys for Meta argued that..."
+        re.compile(
+            rf"\b(?:the\s+)?(?:attorneys?|lawyers?|counsel)\s+"
+            rf"(?:for|representing)\s+"
+            rf"[A-Z][A-Za-z]+\s+"
+            rf"({verb_alternation})\b",
             re.IGNORECASE,
         ),
     ]
