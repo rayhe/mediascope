@@ -16531,3 +16531,47 @@ Re-run: 8 devices across 4 types (was 1/1). Closing paragraph fully instrumented
 - **Annotated articles:** 123 (was 122; +1 Reuters)
 - **Framing device types:** 83 (unchanged)
 - **Source extraction patterns:** 10 (unchanged) + compound verb overlay
+
+---
+
+### Iteration: 2026-07-08 15:00 PDT — Type A (Article Deep Dive)
+
+**Focus:** TechCrunch Muse Image privacy pushback — 3 toolkit bug fixes + analysis annotation
+
+#### Changes
+
+1. **Source extraction: Muse product name filter** (`mediascope/analyze/sources.py`):
+   - Added "Muse Video" and "Muse Image" to `_NAME_STOP_NAMES`
+   - Prevents Pattern 2 from extracting product names as named journalistic sources
+   - "Muse Spark" was already filtered; now all three Muse product names are covered
+
+2. **Entity clustering: Cambridge Analytica separation** (`mediascope/analyze/entities.py`):
+   - Removed Cambridge Analytica from Meta cluster aliases and regex
+   - Created new "Cambridge Analytica" cluster with its own regex
+   - CA is a separate political consulting firm, not a Meta subsidiary — conflating them inflated Meta mention counts
+   - Total clusters: 75 → 76
+
+3. **Framing: literal "landmark" suppression** (`mediascope/analyze/framing.py`):
+   - Added context-aware filter for loaded_language "landmark"
+   - "landmark ruling/verdict" (dramatic event modifier) still detected
+   - "historical landmark" / "famous landmark" (physical place) now suppressed
+   - Context window checks for geographic vocabulary (historical, famous, monument, in front of, etc.)
+
+4. **TechCrunch Muse Image analysis** (`examples/sample_output/techcrunch_meta_muse_image_privacy_pushback_2026_07_07_analysis.md`):
+   - Full annotation: 18 framing devices (15/18 precision = 83.3%), 3 sources (3/3 recall = 100%)
+   - 4 entity clusters: Meta (30), Media/Publications (3), US Government (1), Cambridge Analytica (1)
+   - Tone: -0.50 toolkit vs -0.35 manual (toolkit slightly more negative)
+   - 3rd Muse Image article in corpus (joining Bloomberg and TechLusive)
+
+5. **Regression tests** (`tests/test_techcrunch_muse_image_fixes.py`):
+   - 12 tests: 4 source filter, 3 entity clustering, 5 landmark suppression
+   - Also added ARCHITECTURE.md/README.md entries for 2 test files from prior iteration
+
+6. **Documentation sync**: METHODOLOGY.md (76 clusters, 124 articles, Meta 85 aliases, CA cluster table row), QUALITY_STANDARDS.md (124 articles), ARCHITECTURE.md (1780 tests/75 files + 3 new test entries), README.md (1780 tests/75 files + 3 new test entries with counts)
+
+#### Stats
+- **Tests:** 1,780 (was 1,768; +12 new)
+- **Entity clusters:** 76 (was 75; +1 Cambridge Analytica)
+- **Annotated articles:** 124 (was 123; +1 TechCrunch Muse Image)
+- **Framing device types:** 83 (unchanged)
+- **Source extraction patterns:** 10 (unchanged) + 2 new product-name stop entries
