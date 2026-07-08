@@ -1,6 +1,33 @@
 # MediaScope Iteration Log
 
 Tracks every improvement cycle run on the toolkit.
+## 2026-07-08 06:00 PT — Type A: Article Deep Dive (TechLusive Meta Muse Image Privacy)
+
+**Article:** TechLusive, "Meta's Muse Image Launch Raises Privacy Concerns" (Jul 8, 2026)
+**Source:** Tech blog covering Meta Muse Image launch from a privacy angle — zero named sources, Cambridge Analytica guilt-by-association, opt-out burden framing
+
+### Framing Devices Detected
+- Guilt by Association (Cambridge Analytica reference)
+- Corporate Reassurance Undercut
+- Regulatory Shadow
+- Anonymous Authority (zero named sources — all claims attributed to vague "experts" or unsourced)
+- Assumed Consensus
+- Escalation Amplification
+
+### New Framing Device Added
+- **#83: Default Burden Privacy** — editorial technique framing default-on features with standard opt-out controls as consent violations by emphasising user burden to discover/toggle settings. 5 regex patterns. Discovered from this article's treatment of Instagram's opt-out photo deletion.
+
+### Quality Improvement
+- **Zero-named-sources flag** added to `quality/standards.py` — warns when no named human source appears in an article (4 attribution regex patterns, -12 score penalty). Acceptable for wire factsheets, significant concern for editorial.
+
+### Toolkit Updates
+- 83 framing device types (was 82), 460 regex patterns (was 455)
+- 119 annotated articles (was 118), 37 distinct publications (was 36)
+- All docs updated: METHODOLOGY.md, FRAMING_REFERENCE.md, ARCHITECTURE.md, AGENT_GUIDE.md, README.md, CLI, QUALITY_STANDARDS.md
+- All 1689 tests pass
+
+**Commit:** `6afdf92` — pushed to GitHub
+
 ## 2026-07-08 05:00 PT — Type D: Toolkit Quality & Documentation (Topic Classification Demo + N-Way Schema + Agent Guide)
 
 ### Focus
