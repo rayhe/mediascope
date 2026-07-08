@@ -10,7 +10,7 @@ During article analysis, scan the text for trigger keywords and structural patte
 
 - **C** = Core (10 types) — fundamental editorial techniques, pattern-matched
 - **E** = Extended (66 types) — discovered from real article analysis, pattern-matched
-- **S** = Structural (6 types) — detected via post-pass heuristics over full article structure
+- **S** = Structural (7 types) — detected via post-pass heuristics over full article structure
 
 ---
 
@@ -147,7 +147,7 @@ Devices that shape how regulatory, legal, and government actions are presented.
 | 62 | **Regulatory Favoritism** | E | Government oversight framed as picking winners and losers | "picking winners and losers," "favorable treatment," "tilting the playing field" |
 | 63 | **Geopolitical Regulatory Pressure** | E | Regulatory tensions framed as geopolitical confrontation | Embassy/diplomatic submissions, sovereignty/defiance rhetoric |
 | 64 | **Strategic Disclosure** | E | Party in dispute discloses opponent's position to frame it as extreme | "Meta said in a recent court filing" — framing originates with disclosing party |
-| 65 | **Default Burden Privacy** | E | Default-on feature framed as consent violation by emphasising opt-out burden | "enabled by default," "opt-out," "users may not know," "without consent" |
+| 83 | **Default Burden Privacy** | E | Default-on feature framed as consent violation by emphasising opt-out burden | "enabled by default," "opt-out," "users may not know," "without consent" |
 
 ---
 

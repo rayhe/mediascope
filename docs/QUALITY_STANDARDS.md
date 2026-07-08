@@ -159,6 +159,24 @@ MediaScope's `quality/standards.py` module automatically checks output against t
 
 Reports that FAIL quality checks should not be published without manual review and correction.
 
+### 6.1 Zero Named Sources Flag
+
+When no named human source can be detected in an article (via attribution patterns like "said [Name]," "[Name] told/noted/explained," or "according to [Name]"), the quality check emits a `zero_named_sources` warning with a −12 score penalty. This flag catches:
+
+- Articles sourced entirely from unnamed "experts," "people familiar," or "sources say" attributions
+- Opinion pieces disguised as reporting (all claims are unsourced assertions)
+- Secondary-source repackaging that quotes other publications instead of named individuals
+
+**Detection patterns** (4 regex patterns):
+1. Post-attribution: `said [First] [Last]`
+2. Pre-attribution: `[First] [Last] said/told/noted/explained/added`
+3. According-to: `according to [First] [Last]`
+4. Title-based: `[First] [Last], [article] [title-word]` (e.g., "Jane Smith, a senior analyst")
+
+**Genre sensitivity:** Wire-service factsheets (Reuters, AP) legitimately have zero named sources — they often use organizational attribution ("the company said"). For wire-format articles, this warning is informational, not a quality failure. For editorial articles, zero named sources is a significant concern because it means all claims are either unsourced or attributed to anonymous entities.
+
+**Discovery:** TechLusive Meta Muse Image privacy article (Jul 8, 2026) — zero named human sources, all claims attributed to vague "experts" or unsourced editorial assertions.
+
 ## 7. Automated Scoring Accuracy
 
 ### The VADER Positive-Bias Problem

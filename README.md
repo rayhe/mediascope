@@ -433,7 +433,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **1689 tests** across 69 test files, each covering a different analytical capability:
+MediaScope has **1697 tests** across 69 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -451,7 +451,7 @@ MediaScope has **1689 tests** across 69 test files, each covering a different an
 | `test_platform_death.py` | 30 | Platform eulogy detection, melancholic vs hostile tone distinction, community source framing |
 | `test_policy_reversal_competitive_deficit.py` | 26 | Policy reversal and competitive deficit framing device detection, documentary source type extraction |
 | `test_privacy_affiliation_fixes.py` | 14 | Privacy/data topic keyword expansion (MCI/employee-surveillance language: opt-in/out, sensitive data, employee tracking, mouse-tracking, keystroke, screen scraping), source affiliation case-sensitivity fix (capitalized titles: Chief Executive, Chief Technology Officer, Vice President) |
-| `test_quality_standards.py` | 41 | Quality enforcement: banned AI-slop phrase detection (25 phrases, case-sensitive/insensitive), em dash limit enforcement, counterargument/limitations/methodology signal detection, score calculation, pass/fail logic |
+| `test_quality_standards.py` | 49 | Quality enforcement: banned AI-slop phrase detection (25 phrases, case-sensitive/insensitive), em dash limit enforcement, counterargument/limitations/methodology signal detection, score calculation, pass/fail logic, zero-named-sources detection (attribution pattern coverage, score penalty, organizational attribution exclusion) |
 | `test_citations.py` | 39 | Citation extraction: URL detection, source grading (primary/secondary/tertiary domain lists), domain extraction, attribution patterns ("according to"), formal citations ([1], (Author 2024)), deduplication, citation report statistics |
 | `test_topics.py` | 44 | Topic classification: all 27 standardized topic buckets, confidence scoring (keyword coverage + density), length-aware density normalization (short-text dampening, proportional scaling, full-length no-dampening), top-N filtering, custom topic injection, multi-topic articles, child_safety addiction/harm framing, design-feature addiction terms (infinite scroll, body dysmorphia, cosmetic filters), bellwether/Section 230 litigation terms, ai_ethics_safety alignment/philosopher, edge cases |
 | `test_claims.py` | 28 | Claim-evidence mapping: statistic detection (percentages, dollar amounts, multipliers), quote detection, citation signal detection, assertion detection, source attribution, claim mapping, unsupported claims ratio, confidence scoring |

@@ -418,3 +418,117 @@ class TestQualityReportStructure:
             assert issue.severity in ("error", "warning", "info")
             assert len(issue.category) > 0
             assert len(issue.description) > 0
+
+
+# ── Zero named sources detection ──────────────────────────────────────
+
+class TestZeroNamedSources:
+    """Zero-named-sources quality flag (§6.1)."""
+
+    def test_article_with_named_sources_no_warning(self):
+        """Articles with named sources should not trigger the warning."""
+        text = (
+            "Meta's AI division has undergone major changes, said Jane Smith, "
+            "a senior analyst at Goldman Sachs. The company has limitations "
+            "in its approach, however. Our methodology uses standard tests."
+        )
+        report = check_quality(text)
+        assert not any(
+            i.category == "zero_named_sources" for i in report.issues
+        ), "Named source present — zero_named_sources should not fire"
+
+    def test_article_with_pre_attribution_no_warning(self):
+        """Pre-attribution pattern '[Name] said' should satisfy the check."""
+        text = (
+            "John Doe told reporters that the company had missed targets. "
+            "However, skeptics argue the methodology is flawed. "
+            "A limitation of the analysis is the small sample size."
+        )
+        report = check_quality(text)
+        assert not any(
+            i.category == "zero_named_sources" for i in report.issues
+        ), "Pre-attribution named source present — should not fire"
+
+    def test_article_with_according_to_no_warning(self):
+        """'according to [Name]' pattern should satisfy the check."""
+        text = (
+            "The restructuring was necessary, according to Mark Johnson. "
+            "However, counterarguments exist. Methodology: Welch's t-test."
+        )
+        report = check_quality(text)
+        assert not any(
+            i.category == "zero_named_sources" for i in report.issues
+        ), "According-to named source present — should not fire"
+
+    def test_article_with_capitalized_according_to_no_warning(self):
+        """'According to [Name]' at sentence start should also satisfy check."""
+        text = (
+            "According to Mark Johnson, the restructuring was necessary. "
+            "However, counterarguments exist. Methodology: Welch's t-test."
+        )
+        report = check_quality(text)
+        assert not any(
+            i.category == "zero_named_sources" for i in report.issues
+        ), "Capitalized 'According to' named source present — should not fire"
+
+    def test_article_with_title_attribution_no_warning(self):
+        """Title-based attribution '[Name], a [title]' should satisfy the check."""
+        text = (
+            "Sarah Chen, a senior director at the company, described the "
+            "changes as transformative. However, critics disagree. "
+            "Our methodology is outlined below."
+        )
+        report = check_quality(text)
+        assert not any(
+            i.category == "zero_named_sources" for i in report.issues
+        ), "Title-attributed named source present — should not fire"
+
+    def test_article_with_zero_named_sources_fires_warning(self):
+        """Articles with no named human sources should trigger the warning."""
+        text = (
+            "Sources familiar with the matter said the company was exploring "
+            "new AI capabilities. People close to the discussions described "
+            "the mood as tense. Experts say this could raise privacy concerns. "
+            "However, counterarguments exist. Methodology: standard tests."
+        )
+        report = check_quality(text)
+        zero_issues = [
+            i for i in report.issues if i.category == "zero_named_sources"
+        ]
+        assert len(zero_issues) == 1, (
+            "Zero named sources should fire exactly once"
+        )
+        assert zero_issues[0].severity == "warning"
+
+    def test_zero_named_sources_penalty(self):
+        """The zero-named-sources flag should apply a -12 score penalty."""
+        # Text with named source
+        text_with_source = (
+            "Jane Smith said the project was on track. "
+            "However, critics argue otherwise. "
+            "Methodology: Welch's t-test. Limitations: small sample."
+        )
+        # Same text structure without named source
+        text_without_source = (
+            "Sources say the project was on track. "
+            "However, critics argue otherwise. "
+            "Methodology: Welch's t-test. Limitations: small sample."
+        )
+        score_with = check_quality(text_with_source).score
+        score_without = check_quality(text_without_source).score
+        assert score_with - score_without == 12, (
+            f"Zero-named-sources penalty should be -12, "
+            f"got delta of {score_with - score_without}"
+        )
+
+    def test_organizational_attribution_not_named_source(self):
+        """'The company said' is organizational, not a named human source."""
+        text = (
+            "The company said it would review its policies. "
+            "Meta stated that privacy was a priority. "
+            "However, there are counterarguments. Methodology: standard."
+        )
+        report = check_quality(text)
+        assert any(
+            i.category == "zero_named_sources" for i in report.issues
+        ), "Organizational attributions should not satisfy named-source check"

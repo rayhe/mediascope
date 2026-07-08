@@ -410,7 +410,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 100 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 1689 tests across 69 test files (all from real articles)
+├── tests/                       # 1697 tests across 69 test files (all from real articles)
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
@@ -440,7 +440,7 @@ mediascope/
 │   ├── test_platform_death.py   # Platform eulogy detection, tone distinction
 │   ├── test_policy_reversal_competitive_deficit.py # Policy reversal and competitive deficit framing device detection, documentary source extraction
 │   ├── test_privacy_affiliation_fixes.py # Privacy/data topic MCI keyword expansion, source affiliation case-sensitivity
-│   ├── test_quality_standards.py # Quality enforcement: banned phrases, em dashes, scoring
+│   ├── test_quality_standards.py # Quality enforcement: banned phrases, em dashes, scoring, zero-named-sources detection
 │   ├── test_scale_magnitude.py  # Scale/magnitude framing, raw number amplification
 │   ├── test_multiplier_scale_magnitude.py # Multiplier scale/magnitude: N× comparisons, ceiling multipliers, national/global scale analogies
 │   ├── test_sentiment.py        # 8-dim scoring, framing correction, self-referential detection

@@ -209,7 +209,7 @@ def check_quality(text: str, metadata: dict | None = None) -> QualityReport:
     _named_source_patterns = [
         re.compile(r'\bsaid\s+[A-Z][a-z]+\s+[A-Z][a-z]+\b'),
         re.compile(r'\b[A-Z][a-z]+\s+[A-Z][a-z]+\s+(?:said|told|noted|explained|added)\b'),
-        re.compile(r'\baccording to\s+[A-Z][a-z]+\s+[A-Z][a-z]+\b'),
+        re.compile(r'\baccording to\s+[A-Z][a-z]+\s+[A-Z][a-z]+\b', re.IGNORECASE),
         re.compile(r'\b[A-Z][a-z]+\s+[A-Z][a-z]+,\s+(?:a |an |the )?(?:senior|chief|former|lead|head|director|professor|analyst|researcher|CEO|CTO|CPO|VP|president)\b'),
     ]
     has_named_source = any(
