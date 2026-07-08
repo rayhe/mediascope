@@ -16620,3 +16620,52 @@ Re-run: 8 devices across 4 types (was 1/1). Closing paragraph fully instrumented
 - **Regex patterns:** 463 (was 460; +3 new: scale equivalence, spelled-out multiplier, 3 tempering coda phrases counted as the type's pattern set)
 - **Annotated articles:** 125 (was 124; +1 Reuters Alberta)
 - **New for corpus:** First Reuters wire article; first Canadian political figure; first energy infrastructure crossover
+
+### 2026-07-08 16:00 PT — Type A (Article Deep Dive)
+
+**Article:** IBD — "Meta Stock Tests Key Technical Level As Wall Street Sizes Up Cloud Potential" (Jul 8, 2026)
+**URL:** https://www.investors.com/news/technology/meta-stock-50-day-cloud-plan/
+**Publication:** Investor's Business Daily (IBD) — **NEW, 41st publication in corpus**
+
+#### What was done
+
+1. **Source extraction: financial analyst verbs** (`mediascope/analyze/sources.py`):
+   - Added 16 new NEUTRAL_VERBS: estimated/estimates, projected/projects, calculated/calculates, forecast/forecasts, assessed/assesses, valued/values, rated/rates, upgraded/upgrades, downgraded/downgrades, stuck, maintained/maintains, reiterated/reiterates, initiated/initiates
+   - These are routine financial attribution verbs missing from the toolkit
+
+2. **Source extraction: "Analysts with/at [Org] verb" pattern** (`mediascope/analyze/sources.py`):
+   - New self-validating organizational source pattern (bypasses _KNOWN_ORGS gate)
+   - Handles: "Analysts with SemiAnalysis estimated", "analysts at Erste Group upgraded"
+   - Pattern structure itself validates organizational identity
+
+3. **Source extraction: "according to [Compound Org]" pattern** (`mediascope/analyze/sources.py`):
+   - Added compound org name matching for multi-word orgs like "IBD MarketSurge"
+
+4. **Source extraction: optional adverb in Pattern 0e** (`mediascope/analyze/sources.py`):
+   - "[Org] analyst [Name] also verb" — "also/recently/previously/separately/further" now allowed between name and verb
+   - Unlocked "Needham analyst Laura Martin also stuck" → full name + affiliation
+
+5. **Framing: "shockingly high" loaded_language** (`mediascope/analyze/framing.py`):
+   - Extended shockingly pattern: {simple|basic|easy} → {simple|basic|easy|high|large|low|expensive|cheap|massive|huge}
+   - Catches magnitude intensifiers, not just dismissal intensifiers
+
+6. **Known orgs expansion** (`mediascope/analyze/sources.py`):
+   - Added 11 analyst/research firms: semianalysis, erste group, ibd marketsurge, needham, bernstein, jefferies, wedbush, morningstar, cowen, piper sandler, baird
+
+7. **IBD article analysis** (`examples/sample_output/ibd_meta_cloud_stock_50day_2026_07_08_analysis.md`):
+   - Full manual annotation: 9 sources (9/9 recall post-fix, was 5/9 pre-fix), 11 framing devices
+   - Tone: toolkit 0.60 vs manual ~0.15 — gap due to VADER financial-language positive bias
+   - Documented: VADER financial_results topic correction as future enhancement
+   - Genre: recommended "market_technical" as 9th editorial genre
+
+8. **Regression tests** (`tests/test_ibd_meta_cloud_sources.py`):
+   - 22 tests: 12 verb coverage, 4 analysts-with-org, 1 compound-org, 2 adverb-name, 3 shockingly-loaded
+
+#### Stats
+- **Tests:** 1,780 → 1,802 (+22 new)
+- **Annotated articles:** 124 → 125
+- **Publications in corpus:** 40 → 41 (IBD added)
+- **Source patterns:** 10 → 12 (+2: self-validating org, compound org)
+- **NEUTRAL_VERBS:** +16 financial analyst verbs
+- **_KNOWN_ORGS:** +11 analyst/research firms
+- **Framing patterns:** +1 (shockingly + magnitude)
