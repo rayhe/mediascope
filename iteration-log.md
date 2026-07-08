@@ -2,6 +2,55 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-07 21:00 PT — Type A: Article Deep Dive (BofA Capex + Memeburn Meta Compute)
+
+### Focus
+Cross-publication analysis of Barron's BofA AI capex revision (Jul 7) and Memeburn's Meta Compute selloff analysis (~Jul 2). Two bug fixes, 20 new tests, annotated sample output.
+
+### Articles
+1. **Barron's**: "The AI Bill Keeps Growing as Alphabet, Amazon, and Meta Spending Is Set to Go Through the Roof" — Mackenzie Tatananni, Jul 7, 2026
+2. **Memeburn**: "Meta AI Cloud Push Triggers the Biggest Chip Stocks Selloff" — ~Jul 2, 2026
+
+### Bug Fixes
+
+**Bug 1 — Comma-after-entity lookahead (entities.py)**
+- Root cause: Context-sensitive entity lookaheads (Watermelon, Fury, Arena, FAIR, Llama) required `\s+` immediately after the entity. When a comma followed the entity before the disambiguating word (e.g., "Watermelon, requires"), the lookahead failed because it expected whitespace, not a comma.
+- Fix: Changed `(?=\s+(?:word1|word2|...))` to `(?=(?:\s|,\s*)(?:word1|word2|...))` for all affected entities.
+- Impact: "Watermelon, requires" in the Barron's article now correctly detected.
+
+**Bug 2 — "nearly double/triple" not triggering scale_magnitude (framing.py)**
+- Root cause: Comparison amplifier pattern only matched `more than (?:double|triple|quadruple)`, missing `nearly`, `almost`, `close to` modifiers and conjugated forms (`doubled`, `tripled`).
+- Fix: Expanded to `(?:more than|nearly|almost|close to) (?:double[ds]?|triple[ds]?|quadruple[ds]?)`.
+- Impact: "nearly double what it spent" in the Memeburn article now correctly triggers scale_magnitude.
+
+### Key Intelligence
+- **Watermelon model codename** first publicly surfaced via BofA note — Meta's next-gen frontier model, 10x compute vs Muse Spark
+- **Meta Compute** cloud initiative led by Santosh Janardhan + Daniel Gross
+- BofA revised Meta capex: $145B (2026), $185B (2027); Alphabet $195B/$290B; Amazon $159B/$230B
+- DRAM spot pricing +40% since Q1 2026
+- 1 GW AI DC capacity costs $25B-$45B
+- By 2030: Amazon 58.1GW, Alphabet 32.4GW, Meta 22.8GW installed
+- BofA Bubble Risk Indicator at 0.91 (1.0 = extreme)
+- SOX -6.3%, CoreWeave -18%, Nebius -17%, Meta +9% on Jul 1
+
+### Tests Added
+`tests/test_bofa_capex_watermelon.py` (20 tests)
+- TestBarronsEntities: 5 tests
+- TestMemburnEntities: 5 tests
+- TestBarronsFraming: 2 tests
+- TestMemburnFraming: 3 tests
+- TestCommaLookaheadFix: 5 parametrized tests
+
+### Sample Output
+- `examples/sample_output/barrons_bofa_capex_watermelon_2026_07_07_analysis.md`
+- `examples/sample_output/barrons_bofa_capex_watermelon_2026_07_07_article.txt`
+
+### Metrics
+- Tests: 1689 (was 1669, +20)
+- Test files: 59 (was 58, +1)
+- Commit: `6635197`
+- Refs: barrons.com/articles/ai-spending-alphabet-amazon-meta-b22f1044, memeburn.com/meta-cloud-chip-stocks-selloff/
+
 ## 2026-07-07 12:00 PT — Type D: Toolkit Quality (Bug Fixes & Regression Tests)
 
 ### Focus
