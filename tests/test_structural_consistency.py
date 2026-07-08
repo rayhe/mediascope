@@ -51,12 +51,12 @@ class TestFramingDeviceTypeCount:
     """
 
     # --- Update ONLY this constant when adding new device types ---
-    EXPECTED_TOTAL = 81
+    EXPECTED_TOTAL = 82
     EXPECTED_PATTERN_MATCHED = 75  # core + extended (in _DEVICE_PATTERNS)
     EXPECTED_STRUCTURAL = {"kicker_framing", "analogy_stacking",
                            "speculative_framing", "trend_bundling",
                            "social_proof_amplification",
-                           "delayed_defense"}
+                           "delayed_defense", "tempering_coda"}
 
     def test_total_device_types(self):
         """Code should define exactly EXPECTED_TOTAL unique device types."""

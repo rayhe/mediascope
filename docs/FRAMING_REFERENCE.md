@@ -1,6 +1,6 @@
 # Framing Device Quick Reference
 
-> A compact lookup card for all 81 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
+> A compact lookup card for all 82 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
 
 ---
 
@@ -162,6 +162,7 @@ Devices that construct or redirect overarching narrative frames.
 | 68 | **Narrative Reframing** | E | Existing narrative acknowledged then dismissed as incomplete | "That concern is fair. It is also incomplete," "The lazy version says" |
 | 69 | **Editorial Deflation** | E | Ambitious vision built up across paragraphs, then punctured | "That's the idea, anyway," "or so X claims," "if it ever actually works" |
 | 70 | **Prescriptive Solutionism** | E | Accountability story transformed into management playbook | "actionable steps for IT leaders," "executives must balance/evaluate" |
+| 82 | **Tempering Coda** | S | Article ends by contextualizing or walking back its own headline-level framing | Final 25% contains explicit moderating language ("likely far higher than," "in context") contradicting headline severity |
 
 ---
 
@@ -230,8 +231,8 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 |---|---|---|
 | Core | 10 | Pattern matching — fundamental editorial techniques |
 | Extended | 65 | Pattern matching — discovered from real article analysis |
-| Structural (post-pass) | 6 | Full-article heuristics (position, accumulation, structure) |
-| **Total** | **81** | |
+| Structural (post-pass) | 7 | Full-article heuristics (position, accumulation, structure) |
+| **Total** | **82** | |
 
 ---
 

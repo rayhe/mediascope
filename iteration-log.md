@@ -2,6 +2,48 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-08 03:00 PT — Type A: Article Deep Dive (NY Post Meta $1.4T Youth Penalty + Cross-Pub Comparison)
+
+### Focus
+Analyzed NY Post coverage of Meta's $1.4T youth safety penalty disclosure (2026-07-07). Built 3-outlet cross-publication comparison (Reuters wire baseline vs Gizmodo tech editorial vs NY Post tabloid). Discovered and implemented new structural framing device `tempering_coda` (#82).
+
+### Article Analysis
+- **NY Post:** "Meta says it's facing $1.4T in penalties in teen mental health case" (~450 words, tabloid genre)
+- 10 framing devices detected (most of any article in this event cluster)
+- Unique finding: article ends by walking back its own headline severity with anchoring to $6M and $375M verdicts
+- `nypost_meta_1_4t_teen_mental_health_2026_07_07_analysis.md`
+
+### Cross-Publication Comparison (Tier 1 — 3 outlets)
+- **Reuters** (wire baseline): 2 framing devices, neutral attribution, 0% loaded verbs
+- **Gizmodo** (tech editorial): 7 framing devices, "Existential Threat" catastrophizing, 60% loaded attribution verbs
+- **NY Post** (tabloid): 10 framing devices, headline-level amplification + structural hedge via tempering coda, 60% loaded verbs
+- Framing asymmetry score: 0.73 (high)
+- `cross_pub_meta_1_4t_penalty_reuters_gizmodo_nypost_2026_07_07.md`
+
+### New Framing Device: `tempering_coda` (Device #82)
+- **Definition:** Article ends by contextualizing or walking back its own headline-level framing
+- **Detection:** Scans final 25% of article for ≥2 moderating phrases; requires headline to contain amplifying device
+- **Category:** Structural post-pass (Category 9: Narrative & Editorial Architecture)
+- **Discovery:** NY Post Meta $1.4T article — headline screams existential threat, final paragraphs walk it back
+- Added to `mediascope/analyze/framing.py` post-pass pipeline
+
+### Count Updates (81→82 framing devices, 117→118 annotated articles, 9→10 same-event clusters, 35→36 publications)
+- `docs/FRAMING_REFERENCE.md` — new row in Category 9
+- `docs/METHODOLOGY.md` — overview, §12 table, §17 article/pub counts, §4 structural table
+- `docs/ARCHITECTURE.md` — diagram annotation, device count, structural post-pass description
+- `docs/AGENT_GUIDE.md` — function description (already updated by prior commit)
+- `docs/QUALITY_STANDARDS.md` — annotated article count, new Tier 1 cluster row, cluster count 9→10
+- `mediascope/cli.py` — analyze command docstring
+- `mediascope/analyze/framing.py` — detection function, docstring counts
+- `tests/test_structural_consistency.py` — EXPECTED_TOTAL=82, EXPECTED_STRUCTURAL includes tempering_coda
+- `README.md` — test description (82 total = 75 pattern-matched + 7 structural), tier count guard refs
+
+### Tests
+- 97 structural consistency tests pass (0 failures)
+- New annotated article count verified (118 on disk = 118 in docs)
+- Same-event cluster count verified (4 Tier 1 + 6 Tier 2 = 10)
+- Stale device count purge clean (no remaining "81" references in docs)
+
 ## 2026-07-08 02:00 PT — Type C: Ownership & Funding Deep Dive (The Verge — Eldridge Industries / Todd Boehly)
 
 ### Focus

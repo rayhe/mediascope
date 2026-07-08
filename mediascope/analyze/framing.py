@@ -5930,6 +5930,71 @@ def _detect_delayed_defense(text: str) -> list[FramingDevice]:
     ]
 
 
+def _detect_tempering_coda(text: str) -> list[FramingDevice]:
+    """Detect tempering coda — article's final section walks back headline framing.
+
+    Fires when the last 25% of the article contains explicit moderating language
+    that softens or contradicts the dramatic framing established earlier.  Common
+    in tabloid journalism: the headline screams existential threat, the body builds
+    the case, then the final paragraphs provide a hedging anchor so the piece can't
+    be called misleading.
+
+    Requires the article to be at least 600 characters.
+    Discovered from NY Post Meta $1.4T teen mental health article (2026-07-07).
+    """
+    if len(text) < 600:
+        return []
+
+    text_len = len(text)
+    coda_start = int(text_len * 0.75)  # last 25%
+    coda_text = text[coda_start:]
+
+    # Moderating phrases that soften dramatic framing
+    _TEMPERING_PHRASES = [
+        re.compile(r"\b(?:likely (?:far )?(?:higher|lower|less|more) than)\b", re.IGNORECASE),
+        re.compile(r"\b(?:probably (?:won'?t|will not|unlikely))\b", re.IGNORECASE),
+        re.compile(r"\b(?:still,?\s+(?:the|it|this))\b", re.IGNORECASE),
+        re.compile(r"\b(?:in (?:context|practice|reality),?\s)", re.IGNORECASE),
+        re.compile(r"\b(?:ultimately (?:face|pay|owe|receive))\b", re.IGNORECASE),
+        re.compile(r"\bjust a fraction\b", re.IGNORECASE),
+        re.compile(r"\b(?:far (?:from|below|less than))\b", re.IGNORECASE),
+        re.compile(r"\b(?:remains to be seen|time will tell)\b", re.IGNORECASE),
+        re.compile(r"\b(?:actual(?:ly)?|real(?:istic)?) (?:damages?|penalty|penalties|amount|figure)\b", re.IGNORECASE),
+        re.compile(r"\b(?:reduced on appeal|overturned|settled for (?:far )?less)\b", re.IGNORECASE),
+    ]
+
+    matched_phrases: list[str] = []
+    earliest_pos: int | None = None
+
+    for pat in _TEMPERING_PHRASES:
+        m = pat.search(coda_text)
+        if m:
+            matched_phrases.append(m.group(0).strip())
+            abs_pos = coda_start + m.start()
+            if earliest_pos is None or abs_pos < earliest_pos:
+                earliest_pos = abs_pos
+
+    # Need at least 2 moderating phrases to fire — a single hedge is normal
+    if len(matched_phrases) < 2 or earliest_pos is None:
+        return []
+
+    evidence = (
+        f"Tempering coda in final 25%: {len(matched_phrases)} moderating phrases "
+        f"found: {', '.join(repr(p) for p in matched_phrases[:4])}"
+    )
+    if len(evidence) > 200:
+        evidence = evidence[:200] + "..."
+
+    return [
+        FramingDevice(
+            device_type="tempering_coda",
+            evidence_text=evidence,
+            start=earliest_pos,
+            end=min(earliest_pos + 100, text_len),
+        )
+    ]
+
+
 # --- Talent hemorrhage ---
 # Detects when an article catalogs multiple personnel departures from
 # one entity to competitors, creating an "exodus" narrative.  Common in
@@ -6568,8 +6633,8 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 75 pattern-matched device types plus 6 structural
-    post-pass types (81 total).
+    Scans for 75 pattern-matched device types plus 7 structural
+    post-pass types (82 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
@@ -6614,9 +6679,9 @@ def detect_framing_devices(
     narrative_reframing, dismissive_qualifier,
     bull_bear_structuring, and analyst_authority.
 
-    Structural post-pass (6): delayed_defense, kicker_framing,
+    Structural post-pass (7): delayed_defense, kicker_framing,
     analogy_stacking, speculative_framing, trend_bundling,
-    social_proof_amplification.
+    social_proof_amplification, tempering_coda.
 
     Args:
         text: The article text to analyze.
@@ -7260,6 +7325,12 @@ def detect_framing_devices(
     # 35% of the article, after the reader has absorbed the accusatory
     # framing without counter-narrative.
     devices.extend(_detect_delayed_defense(text))
+
+    # Post-pass: tempering coda — article ends by contextualizing or walking
+    # back its own headline-level framing.  Common in tabloid journalism where
+    # dramatic headlines drive clicks but the final paragraphs provide a
+    # hedging anchor ("likely far higher than," "probably won't be that much").
+    devices.extend(_detect_tempering_coda(text))
 
     # Re-sort after adding post-pass results
     devices.sort(key=lambda d: d.start)

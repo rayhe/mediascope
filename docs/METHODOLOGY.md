@@ -181,7 +181,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 81 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (65 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 82 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (65 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -283,6 +283,7 @@ These devices are detected through structural analysis of the article rather tha
 | **Trend Bundling** | Grouping a target company's action with 3+ other companies doing similar things to normalise or amplify the narrative | Scans for transition phrases ("Other companies have also…," "Similarly, X…," "X also walked back…") and paragraph-level company bundles. Fires only when 3+ distinct companies are mentioned in comparison/bundling contexts. Individual comparisons are normal reporting; stacking them is an editorial framing technique that imports an industry-wide pattern onto a single company's story. Discovered from Fast Company Meta AI draft reversal article (2026-06-25). |
 | **Social Proof Amplification** | Citing reaction counts (likes, thumbs-up, hearts, upvotes) to convert an individual opinion into collective sentiment, lending democratic authority to editorial framing | Detects patterns like "received X likes/upvotes," "garnered X reactions," "thousands liked/shared/retweeted," "went viral with X comments." Fires when numeric reaction counts are cited to amplify the perceived weight of a statement or sentiment. Individual quotes are opinions; citing their virality is a framing technique that manufactures consensus. |
 | **Delayed Defense** | The target company's first response or rebuttal appears in the last 35% of the article, after the reader has absorbed the accusatory framing without counter-narrative. Burying the defense is a well-known editorial technique: most readers form their opinion before reaching the other side | Finds the earliest corporate-response pattern (company/spokesperson said, in a statement, declined to comment) and checks if it appears after the 65% mark of the article text. Requires minimum 500 characters (short articles lack meaningful positional structure). |
+| **Tempering Coda** | Article ends by contextualizing or walking back its own headline-level framing, creating a structural hedge that technically prevents the piece from being "misleading" while preserving the dramatic lede's emotional impact. Distinct from delayed_defense (which buries the *subject's* response); tempering_coda buries the *journalist's own* contextualizing hedge. Common in tabloid journalism where dramatic headlines drive clicks but accuracy complaints must be deflectable | Scans the final 25% of the article for explicit moderating language ("likely far higher than," "still, the penalty is," "probably won't," "in context," "ultimately face") that contradicts or significantly softens the headline's implied severity. Requires the headline to contain at least one amplifying device (scale_magnitude, catastrophizing, or valuation_comparison). Discovered from NY Post Meta $1.4T teen mental health article (2026-07-07) — headline screams existential threat, final three paragraphs walk it back to $6M and $375M anchoring verdicts. |
 
 ### 4.2 Attribution Verb Analysis
 
@@ -749,7 +750,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 81-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 82-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1233,13 +1234,13 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **117 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **118 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
 ### 17.2 Publication Distribution
 
-The corpus spans **35 distinct publications** across 5 editorial modes:
+The corpus spans **36 distinct publications** across 5 editorial modes:
 
 #### Tracked Publications (5 publications, 55 articles)
 
@@ -1341,7 +1342,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 117 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 86 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 118 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 86 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
@@ -1373,7 +1374,7 @@ The Zuckerberg town hall cluster (Jul 2–4, 2026) is the highest-value comparis
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 81 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 82 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|
