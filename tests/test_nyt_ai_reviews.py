@@ -374,8 +374,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 70, (
-            f"Expected 70 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 71, (
+            f"Expected 71 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -490,6 +490,8 @@ class TestFramingDeviceRegistry:
             "prescriptive_solutionism",
             # Strategic disclosure (1) — party-originated disclosure to frame opponent's position as extreme
             "strategic_disclosure",
+            # Valuation comparison (1) — comparing penalty/cost to market cap to make it feel existential
+            "valuation_comparison",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual

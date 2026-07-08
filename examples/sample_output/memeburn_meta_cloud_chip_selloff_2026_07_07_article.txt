@@ -1,0 +1,55 @@
+Source: Memeburn
+URL: https://memeburn.com/meta-cloud-chip-stocks-selloff/
+Date: July 7, 2026
+Title: Meta AI Cloud Push Triggers the Biggest Chip Stocks Selloff
+Author: Memeburn staff
+
+The chip market's response was immediate and severe. Combined with OpenAI's separate revelation that it halved inference costs through software alone, the news wiped over $200 billion from semiconductor stocks in a single session. Here's what triggered the selloff, why it caught Wall Street off guard, and what we think it actually signals for the AI hardware trade.
+
+## What Is Meta Compute?
+
+On July 1, Bloomberg reported that Meta is developing a cloud infrastructure business to sell access to AI computing power and models. The internal project — called Meta Compute — is led by Meta's head of infrastructure, Santosh Janardhan, and Superintelligence Labs leader Daniel Gross.
+
+CEO Mark Zuckerberg first hinted at the idea during Meta's May shareholder meeting. "It's definitely on the table," he said, noting that if Meta overbuilds AI infrastructure, selling the extra capacity is a logical option.
+
+Meta's 2026 capital expenditure guidance now sits at $125–$145 billion — nearly double what it spent in 2025. As of Q1, the company has committed $182.9 billion in total AI infrastructure spending, including massive data center projects in Louisiana and an Ohio facility Zuckerberg says will be the size of Manhattan.
+
+Here's the part most coverage misses. Meta's own AI products — Llama, Meta AI, Muse Spark — haven't generated standalone revenue anywhere close to justifying that spend. Selling excess compute converts a cost line into a revenue stream. SpaceX is already doing it through its Colossus data centers. We think Meta's move was inevitable once Google capped Meta's access to Gemini AI due to compute shortages. When your supplier cuts you off, you build your own — then sell the leftovers.
+
+## The Market Reaction Was Brutal
+
+The Philadelphia Semiconductor Index (^SOX) — a benchmark tracking 30 major chipmakers — dropped 6.3% on July 1, its worst session to open a quarter in years. That came just one day after the index closed out its best quarter ever.
+
+Individual stocks got hammered. Micron dropped roughly 11%. Intel sank 9%. AMD declined 7%. SanDisk fell 14%. Chip-equipment makers KLA, Lam Research, and Applied Materials each lost between 10% and 12%. Even Broadcom slipped about 2%, despite its OpenAI custom chip partnership providing a partial cushion.
+
+The damage was deepest among neocloud companies. CoreWeave crashed 18% to $81.75. Nebius plunged 17% to $229.18. Both count Meta as their largest customer — CoreWeave holds a $21 billion commitment; Nebius, $27 billion. Bernstein called the development "problematic for CoreWeave" and questioned the company's long-term viability. When your biggest buyer starts building the same business you run, the market reprices you fast.
+
+The sell-off jumped to Asia overnight. Samsung fell over 7%, SK Hynix dropped 9%, and South Korea's KOSPI triggered another trading halt. For anyone who followed the historic H1 rally that added $2 trillion to chipmaker valuations, this reversal was a sharp reminder that momentum doesn't guarantee direction.
+
+## OpenAI's Cost Breakthrough Deepened the Damage
+
+The Meta news didn't land alone. The day before, The Information reported that OpenAI engineers had halved inference costs using software optimizations — no new chips, no hardware upgrades.
+
+Inference is the process of running a trained AI model to produce a response. Every ChatGPT query, every API call, every AI-generated answer burns compute. It now accounts for roughly two-thirds of all AI computing costs. OpenAI's engineers reportedly reduced the GPUs needed for logged-out ChatGPT traffic to "a couple hundred" — down from an estimated tens of thousands.
+
+The techniques likely include quantization (reducing calculation precision), caching (reusing common outputs), and smarter batch processing. None are new individually. But combined by engineers with direct access to the model architecture, the compounding effect cut costs by more than half.
+
+Every GPU that's no longer needed is demand vanishes from the hardware market. OpenAI is also doubling down with custom silicon — its Jalapeño chip, co-developed with Broadcom, targets another 50% cost reduction when it ships in late 2026. Software and hardware efficiency stacking on top of each other creates a fundamentally different demand curve than what chipmakers priced in.
+
+## The Overcapacity Question Nobody Wanted to Ask
+
+For two years, the AI hardware trade ran on one assumption: demand for computing power will grow faster than anyone can build supply. That assumption fueled the biggest chip rally in market history. The five largest U.S. hyperscalers — Microsoft, Alphabet, Amazon, Meta, and Oracle — have committed roughly $700 billion in combined capex for 2026.
+
+But Meta Compute raises the uncomfortable question: what if supply is catching up?
+
+Meta isn't alone. SpaceX already leases compute to Anthropic and Google. Apple, Microsoft, and Amazon all closed higher on the same day chip stocks fell — a clear rotation away from pure hardware plays.
+
+That doesn't mean AI demand is falling. But for stocks priced at 60x to 100x forward earnings, even a growth-rate deceleration triggers a repricing. The prior AI selloffs that rattled markets in June were the warning shots. July 1 was the market acting on them.
+
+## Correction, Not Collapse
+
+Bank of America's Bubble Risk Indicator for semiconductors hit 0.91 in late June — where 1.0 represents extreme bubble conditions. Chinese hedge funds have called global AI stocks a "super bubble." Semiconductor companies had reached a record 19.7% weighting in the S&P 500, nearly four times their share in 2020.
+
+But here's what the panic misses. Nvidia still controls roughly 80% of the AI accelerator market. TSMC says supply can't meet demand. Deloitte projects semiconductor sales will hit $975 billion in 2026 — a historic peak.
+
+The market isn't saying AI is over. It's saying the easy gains in chip stocks might be. We expect the companies that survive this phase to be the ones monetizing infrastructure, not just accumulating it. AMD's 300% rally this year was built on real demand. But real demand with real supply eventually finds an equilibrium — and that's what the market is pricing in right now.

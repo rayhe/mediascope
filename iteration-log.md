@@ -15671,3 +15671,50 @@ Pattern count: 425 → 428
 - **Framing device types:** 76 (70 pattern-matched + 6 structural)
 - **Total regex patterns:** 428
 - **Annotated articles:** 111
+
+---
+
+## 2026-07-07 18:00 PT — Type A: Article Deep Dive
+
+**Article:** Gizmodo — "Meta's Teen Safety Case Just Became a $1.4 Trillion Existential Threat" (Jul 7, 2026)
+
+### Gaps Found & Fixed
+
+1. **New topic: `consumer_protection`** — 24 keywords added to `topics.py`. Covers attorney general enforcement, deceptive practices, UDAP claims, dark patterns, and state-level consumer lawsuits. Distinct from `litigation` (general legal), `antitrust_regulation` (competition/monopoly), and `child_safety` (youth-specific harms). Fires at 0.346 confidence on article.
+
+2. **New framing device: `valuation_comparison`** — 3 regex patterns added to `framing.py`. Detects comparisons of penalties/costs to market capitalization/valuation. Discovery article: "$1.4 trillion ... compared to the company's market capitalization, which is just above $1.5 trillion." Device count: 71 pattern-matched + 6 structural = 77 total.
+
+3. **Bug fix: curly apostrophe in `valuation_comparison` patterns** — `'?s?` → `['\u2019]?s?` for possessive matching (e.g., "company's" with curly quote). Applied to both pattern blocks in the valuation_comparison section.
+
+4. **Bug fix: `strategic_disclosure` quote-tolerance** — "has no parallel" pattern failed when curly/straight quotes appeared between "parallel" and "in". Regex updated to allow `[\s"'\u201c\u201d\u2018\u2019]+` between words.
+
+### New Tests
+- `tests/test_gizmodo_1_4t_consumer_protection.py` (19 tests across 7 classes):
+  - `TestConsumerProtectionTopic` (4): topic fires, confidence floor, keyword matching, non-interference with litigation
+  - `TestValuationComparison` (3): device detected, evidence text, curly apostrophe tolerance
+  - `TestStrategicDisclosure` (3): detection, evidence content, quote tolerance
+  - `TestEntityExtraction` (4): AG entities, Meta dominance (≥10), Gizmodo source, total entity floor
+  - `TestSentiment` (2): VADER compound < -0.5, negative polarity
+  - `TestFramingSummary` (2): minimum device count (≥15), key types present (scale_magnitude, loaded_language, emotional_appeal)
+  - `TestNoFalsePositive` (1): no false-positive guilt_by_association
+
+### Documentation Updates
+- Topic bucket count: 26 → 27 (METHODOLOGY.md, ARCHITECTURE.md, AGENT_GUIDE.md, README.md, test_structural_consistency.py)
+- Added `consumer_protection` to inline topic lists in METHODOLOGY.md table, METHODOLOGY.md design note, ARCHITECTURE.md, AGENT_GUIDE.md
+- Framing device count: 76 → 77 (70 → 71 pattern-matched, 60 → 61 extended) across all docs
+- Pattern count: 428 → 431 (ARCHITECTURE.md, README.md, test_structural_consistency.py)
+- Added `valuation_comparison` to METHODOLOGY.md extended device table, ARCHITECTURE.md extended device list
+- Annotated article count: 111 → 112 (QUALITY_STANDARDS.md, METHODOLOGY.md ×2)
+- Test file count: 63 → 64, total tests: 1,550 → 1,569 (ARCHITECTURE.md, README.md)
+- Added `test_gizmodo_1_4t_consumer_protection.py` to test listings in ARCHITECTURE.md and README.md
+
+### Annotated Article
+- `examples/sample_output/gizmodo_meta_1_4t_youth_penalty_2026_07_07_analysis.md`
+- `examples/sample_output/gizmodo_meta_1_4t_youth_penalty_2026_07_07_article.md`
+
+### Stats
+- **Tests:** 1,569 passed, 0 failed (full suite)
+- **Framing device types:** 77 (71 pattern-matched + 6 structural)
+- **Total regex patterns:** 431
+- **Topic buckets:** 27
+- **Annotated articles:** 112

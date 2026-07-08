@@ -2452,9 +2452,12 @@ _STRATEGIC_DISCLOSURE_PATTERNS: list[re.Pattern] = [
         re.IGNORECASE,
     ),
     # "has no analog/precedent/basis in the history of"
+    # Allow optional quote marks between words (common when part of the
+    # phrase is inside a quotation pulled from a filing).
     re.compile(
         r"""\b(?:has|have|had)\s+no\s+"""
-        r"""(?:analog|analogue|precedent|basis|parallel|equivalent)\s+"""
+        r"""(?:analog|analogue|precedent|basis|parallel|equivalent)"""
+        r"""[\s"'\u201c\u201d\u2018\u2019]+"""
         r"""in\s+(?:the\s+)?history\s+of""",
         re.IGNORECASE,
     ),
@@ -6251,6 +6254,55 @@ _EDITORIAL_DRAMATIZATION_PATTERNS: list[re.Pattern] = [
 ]
 _DEVICE_PATTERNS["editorial_dramatization"] = _EDITORIAL_DRAMATIZATION_PATTERNS
 
+# ---------------------------------------------------------------------------
+# Valuation comparison: comparing a dollar figure (penalty, fine, loss,
+# spending) to a company's market capitalization, valuation, or total
+# worth to make it feel existentially large.  E.g. "the $1.4 trillion
+# penalty — nearly equal to Meta's market cap of $1.5 trillion."
+# This is a specific scale-anchoring technique distinct from raw
+# scale_magnitude (which just flags big numbers) and strategic_disclosure
+# (which flags who introduced the number).
+#
+# Gap discovered via Gizmodo Meta $1.4T youth penalty article (Jul 2026):
+# "compared to the company's market capitalization, which is just above
+# $1.5 trillion" — the toolkit detected scale_magnitude but missed the
+# editorial choice to anchor the penalty against the company's total
+# value, making it feel existentially threatening.
+# ---------------------------------------------------------------------------
+_VALUATION_COMPARISON_PATTERNS: list[re.Pattern] = [
+    # "compared to [company's] market cap/capitalization/valuation"
+    re.compile(
+        r"""(?:compared\s+to|relative\s+to|equivalent\s+to|"""
+        r"""close\s+to|nearly\s+(?:equal|equivalent)\s+to|"""
+        r"""roughly\s+(?:equal|equivalent)\s+to|"""
+        r"""almost\s+(?:as\s+(?:large|big|much)\s+as|equal\s+to))"""
+        r"""\s+(?:the\s+company['\u2019]?s?\s+|its\s+|"""
+        r"""[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,2}['\u2019]?s?\s+)?"""
+        r"""(?:market\s+cap(?:italization)?|valuation|"""
+        r"""(?:total|entire|full)\s+(?:value|worth)|"""
+        r"""enterprise\s+value)""",
+        re.IGNORECASE,
+    ),
+    # "near/close to [company's] market cap" or "equal to ... valuation"
+    re.compile(
+        r"""\b(?:near|close\s+to|approaching|exceeds?|surpass(?:es|ing)?|"""
+        r"""dwarfs?|rivals?|matches?|eclipses?)\s+"""
+        r"""(?:the\s+company['\u2019]?s?\s+|its\s+|"""
+        r"""[A-Z][a-z]+(?:\s+[A-Z][a-z]+){0,2}['\u2019]?s?\s+)?"""
+        r"""(?:(?:entire\s+|total\s+|full\s+)?market\s+cap(?:italization)?|"""
+        r"""(?:total\s+|full\s+|entire\s+)?valuation|"""
+        r"""enterprise\s+value|(?:total\s+|entire\s+)?(?:value|worth))""",
+        re.IGNORECASE,
+    ),
+    # "$X ... which is [near/close to/just above] [company] market cap"
+    re.compile(
+        r"""\$[\d,.]+\s+(?:billion|trillion|million)\b"""
+        r"""[^.]{0,100}?"""
+        r"""market\s+cap(?:italization)?""",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+_DEVICE_PATTERNS["valuation_comparison"] = _VALUATION_COMPARISON_PATTERNS
 
 def detect_framing_devices(
     text: str,
@@ -6258,8 +6310,8 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 70 pattern-matched device types plus 6 structural
-    post-pass types (76 total).
+    Scans for 71 pattern-matched device types plus 6 structural
+    post-pass types (77 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
@@ -6300,7 +6352,7 @@ def detect_framing_devices(
     strategic_reversal, straw_man, talent_hemorrhage,
     taxonomy_framing, timeline_implication,
     two_tier_treatment, usage_dismissal_undercut,
-    and worker_replacement_irony.
+    valuation_comparison, and worker_replacement_irony.
 
     Structural post-pass (6): delayed_defense, kicker_framing,
     analogy_stacking, speculative_framing, trend_bundling,
