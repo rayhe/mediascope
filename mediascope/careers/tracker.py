@@ -108,7 +108,7 @@ class CareerTracker:
                 )
 
             # Sort events chronologically
-            events.sort(key=lambda e: e.date_start)
+            events.sort(key=lambda e: e.date_start or date.max)
 
             profile = JournalistProfile(name=name, events=events)
 
@@ -235,7 +235,7 @@ class CareerTracker:
                 if to_pub and m.to_publication.lower() != to_pub.lower():
                     continue
                 all_migrations.append(m)
-        return sorted(all_migrations, key=lambda m: m.departure_date)
+        return sorted(all_migrations, key=lambda m: m.departure_date or date.max)
 
     def journalists_at(
         self,
@@ -267,6 +267,8 @@ def _parse_date(val) -> date:
     if isinstance(val, str):
         val = val.strip().strip("'\"")
         # Strip leading approximate marker (~2022 → 2022)
+        if val.lower() in ("present", "?"):
+            return None
         if val.startswith("~"):
             val = val[1:]
         parts = val.split("-")

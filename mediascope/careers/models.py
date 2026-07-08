@@ -212,7 +212,7 @@ class JournalistProfile:
         open_events = [e for e in self.events if e.date_end is None]
         if not open_events:
             return None
-        return max(open_events, key=lambda e: e.date_start).publication_slug
+        return max(open_events, key=lambda e: e.date_start or date.min).publication_slug
 
     @property
     def current_role(self) -> Optional[str]:
@@ -220,7 +220,7 @@ class JournalistProfile:
         open_events = [e for e in self.events if e.date_end is None]
         if not open_events:
             return None
-        return max(open_events, key=lambda e: e.date_start).role
+        return max(open_events, key=lambda e: e.date_start or date.min).role
 
     @property
     def career_span_years(self) -> float:
@@ -236,7 +236,7 @@ class JournalistProfile:
         """Ordered list of unique publications (by first appearance)."""
         seen: set[str] = set()
         result: list[str] = []
-        for e in sorted(self.events, key=lambda x: x.date_start):
+        for e in sorted(self.events, key=lambda x: x.date_start or date.max):
             if e.publication_slug not in seen:
                 seen.add(e.publication_slug)
                 result.append(e.publication_slug)

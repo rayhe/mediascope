@@ -1233,7 +1233,7 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **116 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **117 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1341,7 +1341,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 116 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 86 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 117 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 86 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
@@ -1654,3 +1654,100 @@ These heuristics are sufficient for flagging articles that need genre-specific h
 4. **Genre conventions evolve.** The distinction between "investigative" and "tech editorial" is blurring as outlets like Wired assign investigative pieces to product review editors (Michael Calore) and product reviews to investigative reporters (Zoë Schiffer). Genre classification based on structural features may need updating as editorial practices shift.
 
 5. **Genre heuristics are approximate.** The automated detection signals in §18.8 will misclassify edge cases. A short Reuters article with 3 framing devices might be flagged as sardonic; an investigative article under 1,500 words might be classified as tech editorial. Human judgment remains necessary for ambiguous cases.
+
+
+## 19. External Editorial Influence Vectors: Fellowship Programs
+
+### 19.1 Rationale
+
+Traditional media bias analysis focuses on internal factors: ownership, editorial leadership, institutional culture. But an increasingly important channel of editorial influence operates externally, through fellowship programs that train, fund, and place reporters at major newsrooms. These programs introduce a pre-shaped framing orientation into host newsrooms, creating editorial influence that is neither fully internal (the reporter doesn't emerge organically from the publication's culture) nor fully external (the reporter operates under the publication's masthead and editorial standards).
+
+The Tarbell Center for AI Journalism is the most significant such program for MediaScope's tracked publications.
+
+### 19.2 Tarbell Center for AI Journalism — Profile
+
+**Founded:** 2022 (as Tarbell Fellowship, rebranded to Tarbell Center)
+**Parent org:** Training for Good (a UK-registered impact-focused training organization)
+**Leadership:**
+- **Cillian Crosson** — Executive Director
+- **Sawyer Bernath** — Operations Director. Previously Executive Director at BERI (Berkeley Existential Risk Initiative), a nonprofit supporting academic research to reduce existential risk from emerging technologies. Board member of FAR.AI and SecureBio. His career positions Tarbell's operations firmly within the Effective Altruism / existential risk ecosystem.
+
+**Named after:** Ida Tarbell (1857–1944), muckraking journalist who exposed Standard Oil's monopoly practices. The naming frames AI accountability journalism as analogous to early 20th-century anti-monopoly muckraking.
+
+**Mission statement:** "We support journalism that helps society navigate the development and deployment of advanced AI." Explicit goal: "for reporting about AI to be treated with at least the urgency of other societal-scale challenges such as climate change."
+
+**Programs:**
+1. **Tarbell Fellowship** (flagship) — 12-month program. 10-week AI Journalism Fundamentals course → weeklong Bay Area Summit → 9-month newsroom placement. Stipends: $60,000–$80,000 (early-career), $90,000–$110,000 (Senior Fellows with 5+ years experience). Full-time commitment.
+2. **Tarbell Grants** — $1,000–$20,000 reporting grants for original AI reporting. ~$350K distributed in 2025.
+3. **Residencies** — $80,000+ stipend for senior writers to produce in-depth AI reporting. Past residents: Shakeel Hashim, Nathaniel Popper.
+4. **Transformer** — In-house publication. Cited by NYT, Politico, Semafor, Financial Times, The Times (UK).
+
+**Impact statistics (self-reported):**
+- 50+ journalists supported
+- 42% of fellowship alumni transitioned to journalism roles at leading outlets
+- Funded AI reporting at Bloomberg, The Guardian, TIME, WIRED, MIT Technology Review
+
+### 19.3 Tarbell Center — Funding Analysis
+
+The Tarbell Center's funding profile is almost entirely composed of Effective Altruism (EA), AI safety, and existential risk (x-risk) aligned organizations. This is analytically significant because it means the pipeline training and placing AI reporters at major newsrooms is funded by organizations with a specific ideological orientation toward AI risk.
+
+**$1M+ (lifetime):**
+- **Coefficient Giving** (formerly Open Philanthropy) — 2023, 2024, 2025, 2026. Open Philanthropy is the largest EA funder globally. Rebranded to Coefficient Giving. Primary funding vehicle for Dustin Moskovitz (Facebook co-founder) and Cari Tuna's philanthropic giving.
+- **Survival and Flourishing Fund (SFF)** — 2024, 2025, 2026. EA-aligned grantmaker focused on existential risk reduction. Founded by Jaan Tallinn (Skype co-founder, prominent AI safety advocate).
+
+**$100K–$1M:**
+- **Casey & Family Foundation** — 2025. (Needs further research on alignment)
+- **EA Infrastructure Fund** — 2023. Explicitly Effective Altruism fund, managed by the Centre for Effective Altruism.
+- **Future of Life Institute (FLI)** — 2024. AI safety organization founded by Max Tegmark, Jaan Tallinn, and others. Known for the AI safety "open letter" calling for a pause on AI development.
+- **Ought** — 2026. AI safety research nonprofit. Founded by Andreas Stuhlmüller, associated with the EA community.
+
+**$10K–$100K:**
+- **ACX Grants** — 2024. Grants program from Astral Codex Ten (Scott Alexander's Substack), deeply embedded in the EA/rationalist community. Notable: Cade Metz's controversial NYT piece revealing Scott Alexander's identity is part of MediaScope's tracked corpus.
+- **AI Safety Tactical Opportunities Fund** — 2024. Self-evidently AI safety aligned.
+- **Cullen O'Keefe** — 2025. Individual donor. Former OpenAI Head of Policy; now at Anthropic.
+- **Longview Philanthropy** — 2026. EA-aligned funder focused on existential risk and global catastrophic risk.
+- **Robert and Virginia Shiller Foundation** — 2023, 2024. Robert Shiller is the Nobel laureate economist. (Less clearly EA-aligned than other donors.)
+- **Newman Family Charitable Fund** — 2025.
+- **Julia Wise and Jeff Kaufman** — 2026. Julia Wise is Community Liaison for the Centre for Effective Altruism. Direct EA leadership donation.
+- **Mark and Jessica Zitter** — 2026.
+
+**Editorial independence claims:** "Our donors have no editorial control over the work of Tarbell, our fellows, or our grantees." Tarbell does not accept anonymous donations >$10,000.
+
+### 19.4 Analytical Significance for MediaScope
+
+**The Tarbell Center creates a measurable editorial influence vector across multiple tracked publications simultaneously.** Three Tarbell fellows are currently tracked in MediaScope's journalist database:
+
+1. **Elissa Welle** — The Verge (AI Reporter, appointed Oct 2025)
+2. **Michelle Kim** — MIT Technology Review
+3. **Aisha Down** — The Guardian (AI infrastructure/datacenter policy)
+
+Additional confirmed placements at tracked publications from 2024–2025: Bloomberg, NBC News, The Information, TIME, South China Morning Post.
+
+**Key analytical questions:**
+
+1. **Framing consistency across publications:** Do Tarbell fellows produce measurably similar framing patterns across different institutional contexts (Guardian vs. Verge vs. MIT TR)? If so, this suggests Tarbell training creates a portable framing signature that overrides institutional culture.
+
+2. **Accountability framing bias:** Tarbell's stated mission is "holding AI companies accountable." Fellows receive 10 weeks of AI Journalism Fundamentals training before placement. Does this training produce a measurable asymmetry in tone compared to non-Tarbell reporters at the same outlet covering the same topics?
+
+3. **Funding source → editorial output correlation:** With Tarbell's funding coming almost entirely from EA/AI safety aligned sources, do Tarbell fellows disproportionately frame AI stories through an x-risk/safety lens vs. economic, labor, or civil liberties frames?
+
+4. **Fellowship-to-hire pipeline:** 42% of alumni transition to permanent journalism roles. Are Tarbell alumni disproportionately represented in AI coverage at major outlets? This would indicate the program is not just placing temporary reporters but reshaping the permanent composition of AI newsrooms.
+
+5. **Disclosure practices:** Do Tarbell fellows and their host publications disclose the fellowship funding in their bylines or bio pages? Tarbell's funding from Coefficient Giving (Dustin Moskovitz, Facebook co-founder) creates a direct financial thread from a Big Tech founder to reporters covering AI at publications that also cover Meta/Facebook.
+
+### 19.5 Methodology for Fellowship Influence Analysis
+
+To measure Tarbell's editorial influence:
+
+1. **Collect bylined articles** from all identified Tarbell fellows at tracked publications.
+2. **Run standard MediaScope analysis** (sentiment, framing, entity detection, source stance) on Tarbell-authored articles.
+3. **Compare against non-Tarbell reporters** at the same publication covering the same topics/entities.
+4. **Control for beat:** Tarbell fellows cover AI by definition, so comparison should be against other AI-beat reporters at the same outlet.
+5. **Track over time:** Do framing patterns persist after the fellowship period ends?
+
+Sources for this section:
+- tarbellcenter.org/fellowship (fellowship details, testimonials, partner newsrooms)
+- tarbellcenter.org/about (donors, team, editorial independence policy)
+- hackshackers.com (Sawyer Bernath bio, BERI/FAR.AI connection)
+- TalkingBizNews archives (fellowship announcements, hire confirmations)
+- every.org/tarbell-center-for-ai-journalism (impact statistics, supported stories list)

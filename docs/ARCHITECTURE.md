@@ -409,11 +409,12 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 100 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 1669 tests across 68 test files (all from real articles)
+├── tests/                       # 1689 tests across 69 test files (all from real articles)
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
 │   ├── test_avclub_sardonic_framing.py # AV Club sardonic framing: sarcastic_correction sub-patterns, loaded_language ad hominem/industry-as-vice, ironic denial regex
+│   ├── test_bofa_capex_watermelon.py # BofA capex/Watermelon model: comma-after-entity lookahead fix, Barron's + Memeburn entity/framing detection, scale_magnitude "nearly double"
 │   ├── test_careers.py          # Career loading, migration detection, DiD, leadership ITS
 │   ├── test_citations.py       # Citation extraction, source grading, domain classification
 │   ├── test_claims.py          # Claim-to-source mapping, statistic/quote detection
