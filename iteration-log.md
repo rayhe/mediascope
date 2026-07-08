@@ -15493,3 +15493,91 @@ Gap analysis on The Verge's journalist roster revealed two key missing reporters
 
 ### Changes
 - `editorial_changes.yaml`: +1 entry (Mehrotra boomerang, 2026-05-18)
+
+## 2026-07-07 13:00 PT — Type A: Article Deep Dive
+
+### Article: Gizmodo — Meta's $1.4T Teen Safety Penalty
+- URL: https://gizmodo.com/metas-teen-safety-case-just-became-a-1-4-trillion-existential-threat-2000782306
+- Published: July 7, 2026
+- Note: Gizmodo is outside the 5 tracked publications; used because all 5 were inaccessible (Guardian/Verge blocked, NYT/MIT TR no fetchable articles, Atlantic article already analyzed)
+
+### Findings
+**Source extraction critically weak on legal/court reporting.** Only 1 of 4+ actual sources detected pre-fix. Three new patterns added:
+1. `per [Source]` compact indirect attribution — catches "per Reuters", "per Bloomberg"
+2. `the filing/complaint states/says` — legal document as subject with attribution verb
+3. `the attorneys/lawyers for [Entity] argued` — defense/prosecution counsel as sources
+
+**Loaded language dictionary gaps.** Three high-frequency editorial terms missing:
+- "whopping" — magnitude intensifier (very common in dollar-amount reporting)
+- "plagued" standalone — was only "scandal-plagued" compound
+- "watershed/landmark/seismic/sweeping" — dramatic event modifiers that editorialize by elevating significance
+
+### Improvements
+- **Sources:** 1 → 4 detected (Reuters via "per", filing as documentary, Meta org, attorneys as legal_party)
+- **Framing:** 12 → 14 devices (whopping, plagued, watershed newly caught)
+- **Stance balance:** 1.0 → 0.33 (now reflects actual source diversity)
+- **Loaded language terms added:** whopping, jaw-dropping, eye-watering, eye-popping, plagued (standalone), watershed, landmark, ground-breaking, sweeping, far-reaching, seismic
+
+### Tests
+- 24 new tests (test_gizmodo_meta_1_4t_penalty.py + test_loaded_language_jul7.py)
+- 86 existing source tests verified passing
+- 28 entity tests verified passing
+
+### Files Changed
+- `mediascope/analyze/framing.py` (+127 lines): loaded language terms + dramatic event modifiers
+- `mediascope/analyze/sources.py` (+66 lines): 3 new source extraction patterns
+- `tests/test_gizmodo_meta_1_4t_penalty.py` (new, 160 lines): source pattern tests
+- `tests/test_loaded_language_jul7.py` (new, 74 lines): loaded language tests
+- `examples/sample_output/gizmodo_meta_1_4t_penalty_2026_07_07_*.{txt,md}`: article + annotated analysis
+
+### Remaining Gaps (for future iterations)
+1. Financial comparison/juxtaposition framing ($1.4T vs $1.5T market cap) — not yet a pattern
+2. Accumulation/snowball framing ("3,000+ cases", "14 more states") — not yet a pattern
+3. Topic misclassification: FTC → antitrust_regulation (should be consumer_protection)
+4. "[Entity] executives have [verb]" indirect past-attribution not yet detected
+
+### Commit
+`0a927bd` — pushed to GitHub
+
+## 2026-07-07 13:00 PT — Type A: Article Deep Dive — Reuters Meta $1.4T Penalty (3 toolkit fixes + cross-pub comparison)
+
+**Article:** "Meta says US states are seeking $1.4 trillion in penalties in August youth safety trial" (Reuters, Jul 7, 2026)
+**Cross-pub comparison:** Reuters (wire original) vs. Devdiscourse (agency rewrite)
+
+### Toolkit Improvements (3 fixes)
+
+**1. Legal terms-of-art filter for `loaded_language` (NEW)**
+- **Gap:** "violation" flagged as loaded language in COPPA litigation context where it's statutory terminology
+- **Fix:** Context-aware filter in `framing.py` post-processing (after medical-context and emotional-appeal filters). Suppresses "violation", "violations", "sanction", "sanctions", "enforcement", "misconduct" when within 120 chars of legal context terms (COPPA, court, trial, judge, attorney general, etc.)
+- **Impact:** Eliminates false positives on legal wire articles while preserving detection of genuinely loaded usage of these words in non-legal contexts
+
+**2. `expert_consensus_authority` IGNORECASE fix (BUG FIX)**
+- **Bug:** `[A-Z]{2,5}` in expert_consensus patterns (meant for acronyms like CEO, CTO) matched any 2-5 letter word under `re.IGNORECASE`. "but" in "filings are sealed, but at a court hearing in June they said" matched the acronym slot, triggering a false positive.
+- **Fix:** Applied `(?-i:[A-Z]{2,5})` inline flag to both Pattern 0 and Pattern 1, keeping acronym matching case-sensitive while the rest of the pattern remains case-insensitive.
+- **Impact:** Eliminates false positive on Reuters article. Verified: all legitimate matches (CEO, CTO, CISO, etc.) still work.
+
+**3. `strategic_disclosure` framing device (NEW — device type #76)**
+- **Gap:** Meta strategically disclosed the states' $1.4T penalty demand to frame it as absurd. Toolkit detected `scale_magnitude` but couldn't distinguish party-originated disclosure from editorial magnitude framing.
+- **Fix:** New `_STRATEGIC_DISCLOSURE_PATTERNS` with 4 patterns:
+  - Pattern 0: "[Party] said/disclosed/put forward the figure/amount"
+  - Pattern 1: "[Party] said the amount was unsupported/excessive/unprecedented"
+  - Pattern 2: "has no analog/precedent in the history of"
+  - Pattern 3: "[Party] characterized/described [demand] as [extreme adjective]"
+- **Impact:** 4 matches on Reuters article: "Meta put forward the figure", "Meta said the amount" (×2, patterns 0+1), "has no analog in the history of"
+- **Registered in:** `_DEVICE_PATTERNS["strategic_disclosure"]` and docstring device list
+
+### Cross-Publication Comparison
+- **File:** `examples/sample_output/cross_pub_meta_1point4_trillion_reuters_vs_devdiscourse.md`
+- **Key finding:** Strategic disclosure disappears in rewrites. Reuters preserves Meta's agency ("Meta put forward the figure"); Devdiscourse converts to "Meta Faces" passive framing. Devdiscourse adds `loaded_language` ("hefty"), `juxtaposition` ("profits over well-being of children"), and `emotional_appeal` ("mental health crisis among American youth") not present in the wire original.
+- **Cluster tier:** 1 (same underlying court filing)
+- **Same-event cluster count:** 9 → 10
+
+### Tests
+- **New test file:** `tests/test_strategic_disclosure.py` (18 tests: 9 true positives, 3 true negatives, 6 expert_consensus fix tests)
+- **Existing tests:** 127 passed (loaded_language, framing, child_safety suites verified)
+- **Total tests:** 1,477 + 18 = 1,495
+
+### Stats Update
+- **Framing device types:** 75 → 76 (added strategic_disclosure)
+- **Same-event comparison clusters:** 9 → 10 (3 Tier 1, 7 Tier 2)
+- **Annotated articles:** 108 → 109 (Devdiscourse rewrite)
