@@ -2263,9 +2263,9 @@ _SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
         r"|plaintiffs?|victims?|students?|children|parents?|users?)",
         re.IGNORECASE,
     ),
-    # Comparison amplifiers: "more than double/triple" or "X% spike/surge/jump"
+    # Comparison amplifiers: "more than double/triple", "nearly double", or "X% spike/surge/jump"
     re.compile(
-        r"\b(?:more than (?:double|triple|quadruple)|"
+        r"\b(?:(?:more than|nearly|almost|close to) (?:double|double[ds]?|triple[ds]?|quadruple[ds]?)|"
         r"\d+(?:\.\d+)?%\s+(?:spike|surge|jump|increase|rise|hike|growth))",
         re.IGNORECASE,
     ),

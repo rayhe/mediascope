@@ -1,0 +1,33 @@
+Source: Barron's
+URL: https://www.barrons.com/articles/ai-spending-alphabet-amazon-meta-b22f1044
+Title: The AI Bill Keeps Growing as Alphabet, Amazon, and Meta Spending Is Set to Go Through the Roof
+Alt title: BofA Warns on Big Tech: Meta, Alphabet, and Amazon's AI Spending Could Spook the Market
+Author: Mackenzie Tatananni (mackenzie.tatananni@barrons.com)
+Date: July 7, 2026
+Retrieved: July 8, 2026 (via search snippet — full text paywalled)
+
+---
+
+As concerns over heavy artificial-intelligence spending weigh on the market, new projections from BofA Securities are bound to heighten investor anxiety rather than soothe it.
+
+On Tuesday, the firm raised its capital spending estimates for three of the largest hyperscalers: Alphabet, Amazon, and Meta Platforms. While the term typically refers to massive cloud providers, Meta has aggressively expanded its global data-center infrastructure to support its own apps despite lacking a public cloud business.
+
+Largely to support its AI ambitions, Alphabet is now projected to spend $195 billion this year and $290 billion in 2027, up from BofA's prior estimates of $187 billion and $257 billion, respectively.
+
+Meta's spending outlook received a similar bump, as BofA hiked its estimate for the current year to $145 billion from $130 billion and increased its 2027 forecast to $185 billion from $157 billion.
+
+While Amazon Web Service's 2026 spending estimate remains unchanged at $159 billion, BofA increased its 2027 capex projection to $230 billion from $196 billion.
+
+The update coincided with Amazon's disclosure Tuesday that it plans to sell debt across eight tranches to support "general corporate purposes." The debt is worth at least $25 billion, a source familiar with the matter told Barron's, adding that Amazon told its underwriters this will be its last U.S. public debt deal of 2026.
+
+The massive scale of these AI and infrastructure investments has quickly outpaced what the companies can afford using their regular operating cash flow.
+
+As BofA Securities noted Tuesday, rising memory costs could cause spending to escalate. The firm cited DRAM spot pricing that suggests a 40% jump since last quarter.
+
+The arrival of new, power-hungry AI models could also drive up infrastructure costs. The firm highlighted recent commentary from Meta indicating that its next-generation AI model, Watermelon, requires 10 times more computing power than Muse Spark, the frontier model it released in April.
+
+This backdrop of skyrocketing costs puts Alphabet's latest financial maneuvers into perspective. Google's parent last month unveiled a proposed $80 billion stock sale to support its AI infrastructure, citing "unprecedented customer demand." The capital raise includes a $10 billion investment from Berkshire Hathaway.
+
+Clearly, adding capacity is expensive. BofA's calculations suggest that the cost of building 1 gigawatt of AI data-center capacity could range anywhere from $25 billion to $45 billion. AI servers and graphics processing units account for more than half that amount, at $14 billion to $28 billion, followed by power infrastructure and networking costs.
+
+And costs are only expected to accrue as the buildout continues. Analysts with the firm noted that installed capacity has steadily risen since 2025. By 2030, BofA expects Amazon, Alphabet, and Meta to have 58.1, 32.4, and 22.8 gigawatts of installed capacity, respectively.
