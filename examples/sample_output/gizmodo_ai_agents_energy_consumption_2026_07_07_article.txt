@@ -1,0 +1,19 @@
+SOURCE: Gizmodo
+URL: https://gizmodo.com/when-it-comes-to-energy-use-ai-agents-could-make-chatbots-look-like-pocket-calculators-2000620834
+DATE: 2026-07-07
+TITLE: When It Comes to Energy Use, AI Agents Could Make Chatbots Look Like Pocket Calculators
+AUTHOR: (uncredited in fetched text)
+
+---
+
+Much has been made of the emergence of generative AI and its strain on the electrical grid due to the energy demand. So just wait until you see how much energy agentic AI consumes. A new research paper from the Korea Advanced Institute of Science and Technology set out to quantify the "hidden costs" of AI agents, and found they can consume up to 136.5 times more energy per query than generative AI models.
+
+There's a logic to the fact that AI agents require more processing power and energy than your standard generative AI query. Typically, LLM requests are a call-and-response: a person enters a query, and the model responds. But agentic AI typically requires multiple steps to execute a command. To do that, the researchers said, the agent must continuously ping its model to generate a new response as it reasons through all of the steps of its given task.
+
+As a result, there's a multiplier effect that takes place. According to the researchers, an AI agent running on a large language model of the scale of most commercially available AI models would consume an average of 348.41 watt-hours per query—about the equivalent of keeping an LED light bulb on for a full day. That figure, they say, is about 136.5 times higher than the energy consumed by a generative AI query.
+
+The impact of agentic AI goes beyond energy consumption. The paper also examined response latency and found that agentic AI can take 153.7 times longer than a standard query. That matters because longer response times tie up computing resources. As an agent repeatedly pings a model to complete a task, the GPU can spend more time waiting than working. The researchers estimate that GPUs may sit idle for as much as 54.5% of the time while an agent executes a task, creating a level of inefficiency that is not present in more straightforward AI uses.
+
+Now, all of that would be one thing if agentic AI were just a concept being played with in a lab somewhere. The reality is that we're already getting inundated with AI agents. We have no real sense of just how many agents are out in the wild at this point. There are 200,000 verified agents registered on Moltbook, the social network for AI agents, and about 400,000 agents have reportedly been approved to use the stablecoin USDC. Companies like Google have started to build agentic AI into the web browsing experience. It is already quite prevalent.
+
+Researchers also modeled a future in which AI agents generate 13.7 billion requests per day, roughly the same volume of queries Google Search currently handles. Without major gains in energy efficiency, they estimate that would create demand for about 198.9 gigawatts of power—roughly half of the entire United States' current electricity consumption. I don't know if the planet can handle half of another U-S-A! But we're probably going to find out.

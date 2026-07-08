@@ -15630,3 +15630,44 @@ Gap analysis on The Verge's journalist roster revealed two key missing reporters
 - **Framing device types:** 76 (70 pattern-matched + 6 structural)
 - **Total regex patterns:** 425
 - **Annotated articles:** 110
+
+---
+
+## 2026-07-07 17:00 PT — Type A: Article Deep Dive (Gizmodo AI Agents Energy)
+
+### Article
+**Gizmodo** — "When It Comes to Energy Use, AI Agents Could Make Chatbots Look Like Pocket Calculators" (2026-07-07)
+- KAIST research on agentic AI energy consumption: 136.5× more than standard queries
+- Heavy use of scale/magnitude framing: multiplier comparisons, ceiling multipliers, national-scale analogies
+- Good test case for `scale_magnitude` pattern coverage gaps
+
+### New Patterns (3)
+Added to `mediascope/analyze/framing.py` under `scale_magnitude`:
+1. **Multiplier comparisons** — `N times more/higher/longer/greater` (e.g., "136.5 times more energy")
+2. **Ceiling multipliers** — `up to N times more` (e.g., "up to 24 times more energy")
+3. **National/global scale comparisons** — `roughly half of the entire United States` and similar national-scale analogies
+
+Pattern count: 425 → 428
+
+### New Tests (15)
+- `tests/test_multiplier_scale_magnitude.py` — 15 tests across 4 classes:
+  - `TestMultiplierComparisons` (5): basic multiplier, decimal multiplier, passive voice, "higher than", no false positive on plain numbers
+  - `TestCeilingMultipliers` (4): basic ceiling, "as much as", no false positive on "up to date", no FP on "up to the task"
+  - `TestNationalScaleComparisons` (3): "roughly half of the entire United States", "nearly all of Europe", no FP on "in the United States"
+  - `TestFullTextMultiplierDetection` (3): full Gizmodo excerpt detection, non-multiplier text exclusion, mixed content extraction
+
+### Documentation Updates
+- Pattern count: 425 → 428 (ARCHITECTURE.md, README.md, test_structural_consistency.py)
+- Annotated article count: 110 → 111 (QUALITY_STANDARDS.md, METHODOLOGY.md ×2)
+- Test file count: 62 → 63, total tests: 1,535 → 1,550 (ARCHITECTURE.md, README.md)
+- Added `test_multiplier_scale_magnitude.py` to test listings in ARCHITECTURE.md and README.md
+
+### Annotated Article
+- `examples/sample_output/gizmodo_ai_agents_energy_consumption_2026_07_07_analysis.md`
+- `examples/sample_output/gizmodo_ai_agents_energy_consumption_2026_07_07_article.txt`
+
+### Stats
+- **Tests:** 1,550 passed, 0 failed (full suite)
+- **Framing device types:** 76 (70 pattern-matched + 6 structural)
+- **Total regex patterns:** 428
+- **Annotated articles:** 111

@@ -2368,6 +2368,41 @@ _SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
         r"\$\d[\d,.]*\s*(?:trillion|billion)\b",
         re.IGNORECASE,
     ),
+    # ---------------------------------------------------------------------------
+    # Multiplier comparisons: "N times more/higher/longer/greater" — one of the
+    # most common scale_magnitude framings in tech/science reporting.
+    # Discovered via Gizmodo AI agents energy article (Jul 2026):
+    # "136.5 times more energy" and "153.7 times longer" went undetected
+    # because all existing patterns required dollar amounts or explicit
+    # quantity nouns, not multiplicative comparisons.
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b\d[\d,.]*\s*(?:times?|[xX])\s+"
+        r"(?:more|higher|greater|longer|larger|bigger|worse|"
+        r"faster|slower|heavier|costlier|cheaper|lower|"
+        r"as much|as many|as long|as large|as fast)\b",
+        re.IGNORECASE,
+    ),
+    # Ceiling multiplier: "up to N times more" — selects the top of a range
+    # to maximise perceived impact, common in research paper reporting.
+    re.compile(
+        r"\b(?:up to|as much as|as many as)\s+"
+        r"\d[\d,.]*\s*(?:times?|[xX])\s+"
+        r"(?:more|higher|greater|longer|larger|worse|faster|slower)\b",
+        re.IGNORECASE,
+    ),
+    # National/global scale comparison: "roughly half of the entire United
+    # States' current electricity consumption" — comparing a figure to
+    # national-scale infrastructure is a powerful scale_magnitude framing
+    # device that imports geopolitical scale into a technical discussion.
+    re.compile(
+        r"\b(?:roughly|approximately|about|nearly|almost|more than|over)\s+"
+        r"(?:half|a third|a quarter|twice|triple|double)\s+"
+        r"(?:of\s+)?(?:the\s+)?(?:entire\s+)?"
+        r"(?:United States|U\.?S\.?|America|Europe|China|"
+        r"world|global|nation|country|planet)",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["scale_magnitude"] = _SCALE_MAGNITUDE_PATTERNS
