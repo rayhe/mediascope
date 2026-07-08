@@ -288,16 +288,25 @@ advance_investments:
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
     current_value_estimate: >
-      ~$8.48B at $200.86/share (Jul 7, 2026 close). Reddit market cap ~$38.7B (Finnhub).
+      ~$8.41B at $199.32/share (Jul 7, 2026 close). Reddit market cap ~$38.4B.
       PRICE TRAJECTORY: +13.69% on Jul 1 (close $197.42, high $201.16 intraday), then
-      -1.44% pullback Jul 2 (close $194.67), then recovery to $200.86 by Jul 7.
-      Net +15.7% from Jun 30 close ($173.65). 52-week range $119.27-$282.95. Beta 2.07.
-      Year-to-date: -12% (still below Jan 2026 highs ~$231). Reddit now 61.0% of
-      Advance's public equity. 42,207,274 total shares × $200.86 = $8.48B.
-      Analyst consensus: 18 buy, 12 hold, avg 12-mo PT $230.75 (high $300, low $110).
+      -1.44% pullback Jul 2 (close $194.67), recovery to $200.67 Jul 6, then
+      -0.77% to $199.32 Jul 7 close. Extended trading Jul 8 AM: $193.01 (-3.17%).
+      Net +14.8% from Jun 30 close ($173.65). 52-week range $119.27-$282.95. Beta 2.07.
+      Year-to-date: -13.33% (MarketBeat, still below Jan 2026 highs ~$231). Reddit now
+      ~60.5% of Advance's public equity. 42,207,274 total shares × $199.32 = $8.41B.
+      ADVANCE SHARE BREAKDOWN (verified from Reddit 2025 proxy, Dkt. rddt-20250428):
+        - 42,191,092 shares of Class B common stock (10 votes/share)
+        - 16,182 shares of Class A common stock (1 vote/share)
+        - Total: 42,207,274 shares
+        - AP board (voting/investment decisions): Michael A. Newhouse, Steven O. Newhouse,
+          Samuel I. Newhouse III, Thomas S. Summer, Jamie Miller, Victor F. Ganzi.
+        - Huffman irrevocable proxy covers all shares per Advance Voting Agreement.
+      Analyst consensus: 18 buy, 12 hold, avg 12-mo PT $231.14 (high $300, low $110).
+      Wells Fargo boosted target $176→$187 (Jul 7), Needham $300 (Jun 24, highest on Street).
       MARGIN LOAN BUFFER: The 7.8M shares pledged as collateral (at $145-148 offering)
-      are now worth ~$1.57B at $200.86 — 35-38% above offering price, comfortable cushion.
-      INSIDER SELLING (last 90 days, MarketBeat Jul 2): Reddit insiders sold $36.9M total.
+      are now worth ~$1.55B at $199.32 — 34-37% above offering price, comfortable cushion.
+      INSIDER SELLING (last 90 days, MarketBeat Jul 7): Reddit insiders sold $36.9M total.
       CEO Steve Huffman sold 18,000 shares at $178.26 ($3.2M, Jun 15, 10b5-1 plan, -4.59%).
       COO Jennifer Wong sold 39,166 shares at $176.94 ($6.9M, Jun 16, 10b5-1 plan, -3.59%).
       CTO Christopher Slowe sold 15,500 shares at $150.67 ($2.3M, Apr 8, 10b5-1 plan,
@@ -307,9 +316,10 @@ advance_investments:
       leveraging its position via the $1.2B margin loan.
       Q2 2026 EARNINGS: July 30 (after market close). Consensus EPS $0.99 (Zacks, +120% YoY),
       revenue est $746.89M (+49.5% YoY, Zacks). MarketBeat consensus: EPS $0.71 (range $0.45-$0.97),
-      revenue $712.9M. Full-year Zacks consensus: $4.83 EPS, $3.25B revenue. Reddit beat consensus
-      ALL 4 trailing quarters by significant margins (Q1 2026: $1.01 vs $0.62 est, $663M vs $608M).
-      RDDT Zacks Rank: #2 (Buy). Needham raised to $300 PT (Jun 24, highest on Street).
+      revenue $712.9M. Reddit Q2 guidance: $715-725M revenue (above consensus). Full-year
+      Zacks consensus: $4.83 EPS, $3.25B revenue. Reddit beat consensus ALL 4 trailing quarters
+      by significant margins (Q1 2026: $1.01 vs $0.62 est, $663M vs $608M, +69.1% rev YoY).
+      RDDT Zacks Rank: #2 (Buy). Reddit annual revenue: $2.20B, net income $529.72M, P/E 56.95.
       This is a potential volatility catalyst for Advance's collateral value.
     credit_facility_monetization: >
       REDDIT MARGIN LOAN (reported Jun 12, 2026, Bloomberg Law): Advance Magazine Publishers Inc.
@@ -776,7 +786,7 @@ advance_investments:
 # HawkEye 360: EXITED via IPO May 2026 at ~$2.4B valuation
 # Donald Newhouse net worth at death: $15.4B (Forbes May 2026)
 #
-# KEY PORTFOLIO CONCENTRATION: Reddit is now 61.0% of Advance's public equity (~$8.48B of ~$13.90B).
+# KEY PORTFOLIO CONCENTRATION: Reddit is now ~60.5% of Advance's public equity (~$8.41B of ~$13.9B).
 # This is the highest Reddit concentration on record, driven by the Jul 1 surge and continued
 # recovery. Advance's public equity increased ~$1.50B in 6 trading days (Jun 27→Jul 7), almost
 # entirely from Reddit's +15.7%.

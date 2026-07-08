@@ -421,6 +421,37 @@ revenue_relationships:
       NYT response: "All of our copyright claims will continue against Microsoft and OpenAI
       for their widespread theft of millions of The Times's works."
       
+      MUSK v. ALTMAN CROSS-CASE DISCOVERY (May-Jun 2026):
+      - May 21, 2026 (Dkt. 1566): Judge Wang orders OpenAI to produce "the deposition
+        materials" from four witness depositions in Musk v. Altman (N.D. Cal.,
+        No. 4:24-cv-4722 (YGR)) by 5pm EDT May 22, 2026. Court found plaintiffs
+        demonstrated relevance and proportionality. Significant because it forces
+        disclosure of internal OpenAI testimony from a SEPARATE case (Elon Musk's
+        breach-of-contract/fiduciary-duty suit) into the copyright MDL.
+      - May 22, 2026: OpenAI produces the four deposition transcripts by deadline but
+        OMITS all accompanying deposition exhibits. NYT reaches out asking about
+        compliance; receives no response.
+      - May 26, 2026: NYT contacts OpenAI again. OpenAI responds by "incorrectly
+        asserting that Plaintiffs did not seek the deposition exhibits and that the
+        Court's Order did not require or reference the production of deposition exhibits."
+        (Dkt. 1574, 1575). NYT files letter notifying court of non-compliance.
+      - Jun 2, 2026 (Dkt. 1584/1409): Judge Wang orders OpenAI to produce exhibits
+        "FORTHWITH" with $100/day SANCTIONS if not produced by June 3, 2026 at 5pm
+        Eastern. "Without prejudice to any future motion or award of sanctions on this
+        or any other issue." Filed in associated cases 25-md-3143 and 23-cv-11195.
+        Letter motion signed by Davida Brook, Susman Godfrey LLP (counsel for NYT).
+      
+      ANALYTICAL SIGNIFICANCE: The Musk v. Altman cross-case discovery is a litigation
+      multiplier — testimony and exhibits from OpenAI's separate legal battle with its
+      own co-founder are now feeding into the copyright MDL. This is particularly
+      valuable because the Musk case involves internal communications about OpenAI's
+      corporate transformation from nonprofit to for-profit, AI safety commitments,
+      and decision-making processes that may illuminate how training data decisions
+      (including use of copyrighted content) were made. OpenAI's pattern of minimal
+      compliance (producing transcripts but withholding exhibits, then arguing the order
+      didn't require them) and the court's escalation to sanctions signals judicial
+      frustration with OpenAI's discovery posture.
+
       CASCADING LEGAL EFFECTS (Jul 2026):
       - Microsoft shareholder derivative suit (Eric Anderson v. Microsoft Corp. et al.,
         W.D. Washington, filed Jul 1, 2026): alleges Microsoft execs/board concealed that
@@ -441,7 +472,9 @@ revenue_relationships:
       - "https://www.mondaq.com/unitedstates/new-technology/1650832/"
       - "https://news.bloomberglaw.com/securities-law/microsoft-top-brass-sued-by-shareholder-over-ai-copyright-claims"
       - "https://docs.justia.com/docket/68117049/1/the-new-york-times-company-v-microsoft-corporation/"
-    last_updated: "2026-07-03"
+      - "https://www.courtlistener.com/docket/69879510/1584/in-re-openai-inc-copyright-infringement-litigation/"
+      - "https://docs.justia.com/cases/federal/district-courts/new-york/nysdce/1:2023cv11195/612697/551"
+    last_updated: "2026-07-08"
 
   - partner: "Apple"
     relationship_type: "former_partnership_and_ongoing_selective"
