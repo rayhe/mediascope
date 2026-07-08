@@ -2,6 +2,63 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-08 01:00 PT — Type B: Journalist Research (Mia Sato Deep Dive + Verge Layoffs)
+
+### Focus
+Deep career expansion of Mia Sato (The Verge platform beat reporter) from 6-line stub to comprehensive 100-line profile. Added Jan 2026 Verge layoffs to editorial changes. Fixed structural consistency test failures.
+
+### Journalist Research: Mia Sato
+
+**Before:** 6-line stub with no career entries, minimal notes ("Hired by The Verge Nov 19, 2021. ASME NEXT Award honoree. Based in Brooklyn."), 2 source URLs.
+
+**After:** Full career arc with 5 career entries, detailed analytical notes, 9 verified source URLs:
+1. **~2017-2020: Nonprofit newsroom audience engagement** — ran social channels, built Instagram presence. Non-traditional pre-reporting career.
+2. **2020: Freelance** — COVID pivot from audience engagement to reporting. Cold-pitched Verge features editor → Hmong American radio feature. Also: New Republic, Chicago Magazine, The Appeal.
+3. **2020-2021: The Markup** — Audience engagement editor at Julia Angwin's nonprofit tech accountability outlet.
+4. **2021: MIT Technology Review** — Reporter on Pandemic Technology Project (covid-19/tech intersection). Contract role.
+5. **Nov 2021-present: The Verge** — Reporter → senior reporter → features writer. Platform governance beat: Meta/Instagram, TikTok, internet culture, content moderation, online communities.
+
+**Awards confirmed:**
+- 2024 Livingston Award finalist, International Reporting (for work released in 2023; journalists under 35)
+- ASME NEXT Award for Journalists Under 30 Honorees (60th National Magazine Awards, Jun 2025)
+
+**Analytical significance:**
+- Strongest remaining platform governance voice at The Verge post-Heath-departure
+- Non-traditional audience-engagement-to-reporter pipeline (understands algorithmic distribution from operator side)
+- TikTok journalism pioneer: creates 15-20 min front-facing videos about her reporting, reaching audiences beyond Verge readership
+- Recursive observer-subject loop: covers platform dynamics ON a platform
+- Contact: mia@theverge.com, Signal: miasato.11
+
+### Editorial Change: Jan 2026 Verge Gaming Layoffs
+- Ash Parrish (gaming specialist, ex-Kotaku) laid off Jan 16, 2026
+- 2 Vox Media Union members cut from The Verge alongside PopSugar/Eater reductions
+- Part of Vox Media post-Polygon-sale contraction (Polygon sold to Valnet May 2025)
+- Concurrent with Inverse (BDG) eliminating entire gaming section same day
+
+### Documentation Fixes
+- README.md: 540→542 auto-detected migrations, 310+→330+ publications
+- EDITORIAL_HISTORIES.md: **540**→**542** migrations, 310+→330+ publications, 175+→195+ other outlets
+
+### Commits
+- `dde9f9e` — Type B: Mia Sato career deep dive + Jan 2026 Verge layoffs (+102/-6 lines)
+- `a6ffb31` — Fix structural consistency: migration count + publication floor
+
+### Tests
+- 1689 total (1685 passed, 4 pre-existing structural consistency failures now fixed → 1689 passed)
+- 21 career tests pass
+- 12 journalist count consistency tests pass
+
+### Sources
+- embedded.substack.com/p/mia-sato-tiktok-interview-the-verge (Kate Lindsay interview, ~Oct 2025)
+- howimakemoneywriting.substack.com/p/interview-78-how-mia-sato-makes-money (~Jan 2025)
+- miasato.com (personal site)
+- muckrack.com/mia-sato/articles (Muck Rack profile)
+- talkingbiznews.com (hire announcement Nov 2021, ASME recognition Jun 2025)
+- wallacehouse.umich.edu/livingston-awards/ (2024 finalist list)
+- blog.onepitch.co/cwaj-136-mia-sato-the-verge (Coffee with a Journalist podcast)
+- aftermath.site (Jan 2026 gaming layoffs)
+- technologyreview.com/author/mia-sato/ (MIT TR author page)
+
 ## 2026-07-07 21:00 PT — Type A: Article Deep Dive (BofA Capex + Memeburn Meta Compute)
 
 ### Focus
