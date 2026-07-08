@@ -82,7 +82,8 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Ankit Brahmbhatt", "Brahmbhatt",
             "Will Cathcart", "Cathcart",
             "Peter Bristol", "Bristol",
-            "Muse Spark",
+            "Muse Spark", "Muse Image", "Muse Video",
+            "Watermelon",  # Next-gen frontier model codename (after Avocado/Muse Spark), 10x compute
             "Meta Fury", "Fury",
             "Adventurer", "Starfire",
             "Meta Ray-Ban Display",
@@ -114,7 +115,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Meta Compute", "Santosh Janardhan", "Janardhan",
             "Daniel Gross",
         ],
-        "regex": r"(?<!\w)(Meta Compute|Meta Superintelligence Labs|Meta Platforms|Meta Ray-Ban Display|Meta Fury|Meta One|Meta AI|Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport|Compute|Platforms|Ray-Ban|Fury|One|AI|Superintelligence))|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|(?-i:Zuck)(?=\s+(?:is|was|has|had|wants?|thinks?|said|says|will|would|could|should|might|may|does|did|isn|didn|can|won|cannot|also|personally|himself|recently|even|just|too|and|,|'s|'))|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark|(?-i:Fury)(?=\s+(?:glasses|are|is|was|cost|have|included|and|AI|smart))|Adventurer|Starfire|Llama 4|(?:Meta'?s? )(?-i:Llama)|(?-i:Llama)(?=\s+(?:model|AI|language|LLM|is|was|and|,))|Joel Kaplan|Kaplan|Sheryl Sandberg|Sandberg|Nick Clegg|Clegg|Dina Powell McCormick|(?-i:Arena)(?=\s+(?:app|prediction|market|is|was|would|will|being|the))|Francis Brennan|Virtue AI|Fundamental AI Research|(?-i:FAIR)(?=\s+(?:Lab|lab|research|team|group))|Ime Archibong|Archibong|the social media (?:giant|company)|Conversation Focus|Alexandr Wang|Yann LeCun|(?-i:LeCun)|Adam Mosseri|Mosseri|Phyllis Jones|Santosh Janardhan|Janardhan|Daniel Gross)(?!\w)",
+        "regex": r"(?<!\w)(Meta Compute|Meta Superintelligence Labs|Meta Platforms|Meta Ray-Ban Display|Meta Fury|Meta One|Meta AI|Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport|Compute|Platforms|Ray-Ban|Fury|One|AI|Superintelligence))|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|(?-i:Zuck)(?=\s+(?:is|was|has|had|wants?|thinks?|said|says|will|would|could|should|might|may|does|did|isn|didn|can|won|cannot|also|personally|himself|recently|even|just|too|and|,|'s|'))|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark|Muse Image|Muse Video|(?-i:Watermelon)(?=\s+(?:model|AI|is|was|has|had|'s|,|requires?|needs?|costs?|will|would|could|next|compute|training|frontier))|(?-i:Fury)(?=\s+(?:glasses|are|is|was|cost|have|included|and|AI|smart))|Adventurer|Starfire|Llama 4|(?:Meta'?s? )(?-i:Llama)|(?-i:Llama)(?=\s+(?:model|AI|language|LLM|is|was|and|,))|Joel Kaplan|Kaplan|Sheryl Sandberg|Sandberg|Nick Clegg|Clegg|Dina Powell McCormick|(?-i:Arena)(?=\s+(?:app|prediction|market|is|was|would|will|being|the))|Francis Brennan|Virtue AI|Fundamental AI Research|(?-i:FAIR)(?=\s+(?:Lab|lab|research|team|group))|Ime Archibong|Archibong|the social media (?:giant|company)|Conversation Focus|Alexandr Wang|Yann LeCun|(?-i:LeCun)|Adam Mosseri|Mosseri|Phyllis Jones|Santosh Janardhan|Janardhan|Daniel Gross)(?!\w)",
     },
     "Google": {
         "aliases": [
@@ -883,7 +884,8 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         "aliases": [
             "Visa", "Mastercard", "American Express", "Amex",
             "Goldman Sachs", "JPMorgan", "JPMorgan Chase", "JP Morgan",
-            "Morgan Stanley", "Bank of America", "Citigroup", "Citi",
+            "Morgan Stanley", "Bank of America", "BofA Securities", "BofA",
+            "Citigroup", "Citi",
             "Wells Fargo",
             "PayPal", "Stripe", "Square", "Block Inc",
             "Adyen", "Worldpay", "Fiserv", "FIS",
@@ -891,8 +893,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Capital One",
             "SWIFT", "Visa Direct", "Mastercard Send",
             "Bernstein", "Deloitte",
+            "Berkshire Hathaway", "Warren Buffett", "Buffett",
         ],
-        "regex": r"(?<!\w)(Visa(?!\s+(?:application|interview|status|waiver|holder|stamp|fee|office|policy|requirement|process|categor))|Mastercard|American Express|(?-i:Amex)|Goldman Sachs|JPMorgan(?:\s+Chase)?|JP Morgan|Morgan Stanley|Bank of America|Citigroup|(?-i:Citi)(?=\s+(?:is|was|has|had|'s|,|group|bank))|Wells Fargo|PayPal|Stripe(?=\s+(?:is|was|has|had|'s|,|payment|process|partner|integration|Inc|announced|said|report))|Square(?=\s+(?:is|was|has|had|'s|,|payment|terminal|reader|Inc|announced|said))|Block Inc|Adyen|Worldpay|Fiserv|(?-i:FIS)(?=\s+(?:is|was|has|had|payment|process|Global))|Discover Financial|Capital One|(?-i:SWIFT)(?=\s+(?:network|payment|transfer|system|code|message))|Visa Direct|Mastercard Send|Bernstein|Deloitte)(?!\w)",
+        "regex": r"(?<!\w)(Visa(?!\s+(?:application|interview|status|waiver|holder|stamp|fee|office|policy|requirement|process|categor))|Mastercard|American Express|(?-i:Amex)|Goldman Sachs|JPMorgan(?:\s+Chase)?|JP Morgan|Morgan Stanley|Bank of America|BofA(?:\s+Securities)?|Citigroup|(?-i:Citi)(?=\s+(?:is|was|has|had|'s|,|group|bank))|Wells Fargo|PayPal|Stripe(?=\s+(?:is|was|has|had|'s|,|payment|process|partner|integration|Inc|announced|said|report))|Square(?=\s+(?:is|was|has|had|'s|,|payment|terminal|reader|Inc|announced|said))|Block Inc|Adyen|Worldpay|Fiserv|(?-i:FIS)(?=\s+(?:is|was|has|had|payment|process|Global))|Discover Financial|Capital One|(?-i:SWIFT)(?=\s+(?:network|payment|transfer|system|code|message))|Visa Direct|Mastercard Send|Bernstein|Deloitte|Berkshire Hathaway|Warren Buffett|(?-i:Buffett)(?=\s+(?:is|was|has|had|'s|,|said|warned|portfolio|stake)))(?!\w)",
     },
 }
 

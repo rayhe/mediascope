@@ -181,7 +181,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 80 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (64 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 81 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (65 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -269,6 +269,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Narrative Reframing** | Editorial technique of explicitly acknowledging an existing narrative (the "conventional" or "lazy" read) then dismissing it as incomplete, simplistic, or missing nuance. Allows the author to redirect the reader's framing without refuting the original concern's facts. Distinct from editorial_deflation (which punctures after building up) because this pattern validates-then-pivots | "That concern is fair. It is also incomplete"; "The lazy/easy version says"; "the [adj] story is too simple"; "The better/real question is" | Motley Fool Meta Compute article (Jul 7, 2026) — 8 instances including "That concern is fair. It is also incomplete," "The lazy version says every major AI company needs every GPU forever," "the overbought story is too simple" |
 | **Dismissive Qualifier** | Using pejorative or dismissive adjectives to characterize a viewpoint or argument before presenting it, subtly delegitimizing it. The labeling precedes engagement with the substance. Distinct from sarcastic_correction (which mocks after) and editorial_deflation (which deflates after building up) | "The lazy/sloppy/naive version"; "an easy/convenient/cheap worry/concern/narrative"; "gives investors an easy worry" | Motley Fool Meta Compute article (Jul 7, 2026) — "gives investors an easy worry" and "The lazy version says" pre-label opposing viewpoints as unserious before engaging |
 | **Bull/Bear Structuring** | Investor-media genre pattern organizing analysis into explicit "what would support/break the thesis" or "bull case / bear case" sections with enumerated signals. Creates appearance of balanced analysis while structural weight (word count, position, elaboration) can tilt toward one side | "What Would Support/Break the Thesis?"; "The bull/bear case gets stronger if"; "The first/second/third signal/warning would be" | Motley Fool Meta Compute article (Jul 7, 2026) — 14 instances across two structured sections: 4 bullish signals (presented first, more expansively) and 4 bearish signals, with conclusion tilting bullish ("less like a capex surrender and more like an infrastructure shuffle") |
+| **Analyst Authority** | Named analyst firms used as authority sources to frame corporate spending decisions. Distinct from anonymous_authority (unnamed "some experts say") — this catches named financial institutions whose credentialing function shapes how readers evaluate spending narratives | "BofA warns"; "according to Goldman Sachs"; "Morgan Stanley analyst [Name]"; "[Firm] raised its capex estimate ... could heighten investor anxiety" | Barron's BofA AI Spending article (Jul 7, 2026) — BofA Securities analyst Justin Post cited as authority for $145B capex estimate and "Watermelon" model codename reveal; analyst name and firm lending credibility to alarm framing |
 
 #### Structural Devices (Post-Pass)
 
@@ -748,7 +749,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 80-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 81-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1232,7 +1233,7 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **115 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **116 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1340,7 +1341,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 115 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 86 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 116 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 86 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
@@ -1372,7 +1373,7 @@ The Zuckerberg town hall cluster (Jul 2–4, 2026) is the highest-value comparis
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 80 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 81 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|

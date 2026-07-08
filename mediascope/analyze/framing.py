@@ -6500,6 +6500,67 @@ _BULL_BEAR_STRUCTURING_PATTERNS: list[re.Pattern] = [
 ]
 _DEVICE_PATTERNS["bull_bear_structuring"] = _BULL_BEAR_STRUCTURING_PATTERNS
 
+# ---------------------------------------------------------------------------
+# Analyst authority: using analyst firms and their projections as authority
+# sources to frame corporate spending as alarming or unsustainable.
+# Distinct from anonymous_authority (which catches unnamed "some experts
+# say") — this catches *named* analyst firms lending credibility to a
+# narrative frame.
+# ---------------------------------------------------------------------------
+_ANALYST_AUTHORITY_PATTERNS: list[re.Pattern] = [
+    # "[Analyst firm] warns/cautions/flags/raises alarm"
+    re.compile(
+        r"\b(?:BofA|Bank of America|Goldman Sachs|JPMorgan|Morgan Stanley|"
+        r"Bernstein|Citi(?:group)?|Barclays|UBS|Deutsche Bank|"
+        r"Wells Fargo|Credit Suisse|RBC|Piper Sandler|"
+        r"Oppenheimer|Wedbush|KeyBanc|Needham|Cowen|"
+        r"New Street Research|D\.A\. Davidson|Jefferies|Raymond James)"
+        r"\s+(?:analysts?\s+)?(?:warn(?:s|ed|ing)?|caution(?:s|ed|ing)?|"
+        r"flag(?:s|ged|ging)?|rais(?:e[sd]?|ing)\s+(?:alarm|concern|"
+        r"red flag)|sound(?:s|ed|ing)\s+(?:the\s+)?alarm|alert(?:s|ed)?)\b",
+        re.IGNORECASE,
+    ),
+    # "according to [analyst firm]" or "[analyst firm] estimates/projects/expects"
+    # followed by negative framing within 120 chars
+    re.compile(
+        r"\b(?:according to|per)\s+"
+        r"(?:BofA|Bank of America|Goldman Sachs|JPMorgan|Morgan Stanley|"
+        r"Bernstein|Citi(?:group)?|Barclays|UBS|Deutsche Bank|"
+        r"Wells Fargo|Jefferies|Raymond James)\b"
+        r".{0,120}?"
+        r"\b(?:spook|alarm|concern|worry|worries|anxiety|risk|"
+        r"unsustainable|balloon|ballooning|overspend|excessive|"
+        r"heighten|intensif|rattle)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "[analyst firm] raised [target/estimate] ... could spook/alarm/worry"
+    re.compile(
+        r"\b(?:BofA|Bank of America|Goldman Sachs|JPMorgan|Morgan Stanley|"
+        r"Bernstein|Citi(?:group)?|Barclays|UBS|Deutsche Bank|"
+        r"Wells Fargo|Jefferies|Wedbush|Piper Sandler)"
+        r"\s+(?:analysts?\s+)?(?:rais(?:e[sd]?|ing)|boost(?:s|ed|ing)?|"
+        r"increas(?:e[sd]?|ing)|hik(?:e[sd]?|ing))\s+"
+        r"(?:(?:its?|their)\s+)?"
+        r"(?:capex|capital expenditure|spending|estimate|target|"
+        r"forecast|projection|price target)\b"
+        r".{0,150}?"
+        r"\b(?:spook|alarm|concern|worry|worries|anxiety|risk|"
+        r"unsustainable|balloon|heighten|rattle|investor\s+(?:anxiety|"
+        r"concern|worry|fear))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "[firm] analyst [Name]" lending authority
+    re.compile(
+        r"\b(?:BofA|Bank of America|Goldman Sachs|JPMorgan|Morgan Stanley|"
+        r"Bernstein|Citi(?:group)?|Barclays|UBS|Deutsche Bank|"
+        r"Wells Fargo|Jefferies|Wedbush|Piper Sandler|Raymond James)"
+        r"\s+(?:Securities\s+)?analyst\s+"
+        r"[A-Z][a-z]+\s+[A-Z][a-z]+",
+        re.DOTALL,
+    ),
+]
+_DEVICE_PATTERNS["analyst_authority"] = _ANALYST_AUTHORITY_PATTERNS
+
 
 def detect_framing_devices(
     text: str,
@@ -6507,16 +6568,16 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 74 pattern-matched device types plus 6 structural
-    post-pass types (80 total).
+    Scans for 75 pattern-matched device types plus 6 structural
+    post-pass types (81 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (69): absence_as_evidence, analogy_metaphor,
-    anonymous_authority,
+    Pattern-matched (70): absence_as_evidence, analogy_metaphor,
+    analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_positioning,
     commodification_metaphor, confession_framing,
@@ -6551,7 +6612,7 @@ def detect_framing_devices(
     two_tier_treatment, usage_dismissal_undercut,
     valuation_comparison, worker_replacement_irony,
     narrative_reframing, dismissive_qualifier,
-    and bull_bear_structuring.
+    bull_bear_structuring, and analyst_authority.
 
     Structural post-pass (6): delayed_defense, kicker_framing,
     analogy_stacking, speculative_framing, trend_bundling,
