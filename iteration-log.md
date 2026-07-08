@@ -1,6 +1,42 @@
 # MediaScope Iteration Log
 
 Tracks every improvement cycle run on the toolkit.
+## 2026-07-08 08:00 PT — Type C: Ownership & Funding Deep Dive (NYT v OpenAI Jun 2026 Discovery + Advance/Reddit Stake)
+
+**Focus:** Updated NYT litigation timeline with June 2026 Musk v. Altman cross-case discovery developments and refreshed Advance/Reddit stake data from 2025 proxy and live market data.
+
+### NYT Profile — OpenAI Litigation Timeline Update
+
+**Key discovery:** Magistrate Judge Ona Wang's June 2, 2026 order (Dkt. 1584/1409) threatening $100/day sanctions against OpenAI for failing to produce Musk v. Altman deposition exhibits. Full timeline added:
+
+1. **May 21, 2026:** Court orders OpenAI to produce deposition materials from 4 witnesses in Musk v. Altman (N.D. Cal., No. 4:24-cv-4722) — cross-case evidence flow from Elon Musk's breach-of-contract suit into the copyright MDL.
+2. **May 22:** OpenAI produces transcripts only, omits all accompanying exhibits.
+3. **May 26:** NYT contacts OpenAI; OpenAI "incorrectly asserts" exhibits weren't required.
+4. **Jun 2:** Judge Wang orders production "FORTHWITH" with $100/day sanctions if not produced by Jun 3 5pm ET. "Without prejudice to any future motion or award of sanctions."
+
+**Analytical significance:** The Musk v. Altman cross-case discovery is a litigation multiplier — internal OpenAI testimony about its nonprofit-to-for-profit transformation, AI safety commitments, and decision-making now feeds into the copyright MDL. OpenAI's pattern of minimal compliance (transcripts without exhibits, then disputing the order) and escalation to sanctions signals judicial frustration.
+
+**Sources:** CourtListener Dkt #1584, Justia Dkt #551, Law.com (Jan 7 2026 ruling context)
+
+### Wired/Advance Profile — RDDT Stake Update
+
+Updated from 2025 Reddit proxy statement (SEC filing rddt-20250428) and MarketBeat:
+
+- **RDDT close Jul 7:** $199.32 (-0.77%), down from profile's prior $200.86
+- **Jul 8 pre-market:** $193.01 (-3.17%)
+- **Advance verified holdings:** 42,191,092 Class B + 16,182 Class A = 42,207,274 total
+- **AP board (from proxy):** Michael A. Newhouse, Steven O. Newhouse, Samuel I. Newhouse III, Thomas S. Summer, Jamie Miller, Victor F. Ganzi
+- **Updated stake value:** $8.41B (was $8.48B)
+- **Added:** Reddit Q2 guidance ($715-725M), annual revenue ($2.20B), P/E (56.95)
+- **Added:** Wells Fargo PT boost $176→$187 (Jul 7)
+
+### Toolkit Updates
+- NYT profile: +35 lines (litigation timeline, analytical significance, source URLs)
+- Wired profile: +43 lines net (share breakdown, AP board, financial metrics)
+- All 97 structural consistency tests pass
+
+**Commit:** `33d22ac` — pushed to GitHub
+
 ## 2026-07-08 06:00 PT — Type A: Article Deep Dive (TechLusive Meta Muse Image Privacy)
 
 **Article:** TechLusive, "Meta's Muse Image Launch Raises Privacy Concerns" (Jul 8, 2026)
