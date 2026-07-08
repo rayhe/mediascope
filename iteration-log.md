@@ -15959,3 +15959,25 @@ Re-run: 8 devices across 4 types (was 1/1). Closing paragraph fully instrumented
 - **Topic buckets:** 27
 - **Test files:** 68
 - **Total tests:** 1669
+
+## 2026-07-08 00:00 PT — Type B (MIT TR Journalist Career Data Overhaul)
+
+**Commit:** `4fd4ae1` — Type B: MIT TR journalist career data overhaul + editorial changes
+
+### Work Done
+- Verified 10 MIT TR journalists as currently active (end=present, with `verified` and `source_url` fields)
+- Added 5 new journalist entries: Adam Rogers, Mary Beth Griggs, David Rotman, Rachel Courtland, Amanda Silverman
+- Fixed schema inconsistency: normalized `start_date`/`end_date`/`beats` back to canonical `start`/`end`/`beat` fields across all 172 entries
+- Added 4 editorial changes: Heikkilä departure (→ FT), Yang departure (→ Wired), Rogers hire, Griggs hire
+- Fixed CareerTracker code: `_parse_date` now handles 'present' and '?' values; None-safe date sorting in models.py and tracker.py
+
+### Cumulative Stats
+- **Journalists:** 172 (168 multi-pub)
+- **Auto-detected migrations:** 540
+- **Editorial changes:** 153+ (17 MIT TR)
+- **Annotated articles:** 117
+- **Framing device types:** 81 (75 pattern-matched + 6 structural)
+- **Total regex patterns:** 455
+- **Topic buckets:** 27
+- **Test files:** 68
+- **Total tests:** 1689
