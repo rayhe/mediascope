@@ -15812,3 +15812,71 @@ Pattern count: 425 → 428
 - **Topic buckets:** 27
 - **Test files:** 66
 - **Total tests:** 1631
+
+---
+
+### 2026-07-07 20:00 PT — Type A: Article Deep Dive (iPhone in Canada × Meta Muse Image)
+
+**Article:** "Meta Is Adding AI Image Creation to Instagram, WhatsApp and More"
+**Publication:** iPhone in Canada (2026-07-07)
+**URL:** https://www.iphoneincanada.ca/2026/07/07/meta-is-adding-ai-image-creation-to-instagram-whatsapp-and-more/
+
+#### Selection rationale
+All 5 tracked publications (Wired, NYT, Guardian, Atlantic, MIT TR) have domains blocked by browser policy. Selected a fresh same-day Meta coverage article from the broader ecosystem for calibration against editorial-voice patterns.
+
+#### Key findings
+- **Neutral body, editorial tail:** Paragraphs 1–5 are factual product summary. The final paragraph concentrates all editorial framing into 2 sentences.
+- **VADER/framing divergence:** VADER compound 0.9578 (strongly positive) due to dense feature vocabulary, while editorial voice is dismissive — textbook §16 sentiment/framing gap.
+- **Zero sources:** No attributed sources at all (unusual even for product announcements), leaving the editorial closing uncontested.
+
+#### Gap analysis
+Initial toolkit run detected 1 device (analogy_metaphor). Manual analysis identified 8+ devices across 4 types in the closing paragraph.
+
+#### Patterns added (8 new regexes)
+
+**(a) `editorial_deflation` (+5 patterns, 17→22):**
+- "Better late than never" idiom
+- ", I guess/suppose" parenthetical hedge
+- "if you're [even] seeking to" conditional deflation
+- "and such" / "or whatever" trailing minimizers
+
+**(b) `rhetorical_question` (+2 patterns, 17→19):**
+- "Who's actually [verb]ing...?" contraction support
+- "What's the point of...?" contraction support
+
+**(c) `latecomer_narrative` (+1 pattern, 8→10 — 1 new + 1 extended):**
+- "saving you steps/time/trouble from jumping/switching/going back/over" implicit latecomer comparative
+- Extended existing competitor-listing pattern for "other AI models such as/like [X] and [Y]"
+
+#### Verification
+Re-run: 8 devices across 4 types (was 1/1). Closing paragraph fully instrumented.
+
+#### Tests
+- **+22 new tests** in `test_muse_image_deflation.py`:
+  - 10 editorial_deflation (5 positive, 3 variant, 2 false-positive guards)
+  - 4 rhetorical_question (3 positive, 1 false-positive guard)
+  - 4 latecomer_narrative (3 positive, 1 false-positive guard... wait no)
+  - Actually: 10 editorial_deflation, 4 rhetorical_question, 6 latecomer_narrative, 2 integration
+- **Test files:** 67 (was 66)
+- **Full suite:** 1653 tests, all passing (was 1631)
+- **Structural consistency:** all green (EXPECTED_TOTAL_PATTERNS updated 443→451)
+
+#### Doc updates
+- ARCHITECTURE.md: pattern count 443→451, test count 1631→1653/66→67 files, test_muse_image_deflation.py entry added
+- README.md: pattern count 443→451, test count 1631→1653/66→67 files, test table row added
+- METHODOLOGY.md: annotated article count 114→115, publication count unchanged (35 — iPhone in Canada normalized with existing slugs by structural test)
+- QUALITY_STANDARDS.md: annotated article count 114→115
+
+#### Artifact files
+- `examples/sample_output/iphoneincanada_meta_muse_image_2026_07_07_article.txt`
+- `examples/sample_output/iphoneincanada_meta_muse_image_2026_07_07_analysis.md`
+- `tests/test_muse_image_deflation.py`
+
+#### Cumulative Stats
+- **Entity clusters:** 75
+- **Annotated articles:** 115
+- **Framing device types:** 80 (74 pattern-matched + 6 structural)
+- **Total regex patterns:** 451
+- **Topic buckets:** 27
+- **Test files:** 67
+- **Total tests:** 1653

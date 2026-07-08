@@ -1357,6 +1357,23 @@ _RHETORICAL_QUESTION_PATTERNS: list[re.Pattern] = [
         r"\bwho is .{3,40}?\?",
         re.IGNORECASE,
     ),
+    # --- Added 2026-07-07: contraction support for rhetorical questions ---
+    # "Who's actually [verb]ing...?" — skeptical product/adoption question.
+    # Contractions like "who's", "what's", "how's" were missed by patterns
+    # requiring the uncontracted form.  "Who's actually using AI to change
+    # their backgrounds to golden hour and such?" — skeptical dismissal of
+    # a product launch.
+    re.compile(
+        r"\bwho(?:'s|'s)\s+(?:actually|really|even|ever)\s+"
+        r"(?:\w+ing)\b.{3,80}?\?",
+        re.IGNORECASE,
+    ),
+    # "What's the point of...?" — skeptical challenge via contraction
+    re.compile(
+        r"\bwhat(?:'s|'s)\s+(?:the\s+point\s+of|so\s+special\s+about|"
+        r"new\s+about|different\s+about|stopping)\b.{3,80}?\?",
+        re.IGNORECASE,
+    ),
     # ---------------------------------------------------------------------------
     # Speculative/reflective rhetorical questions — columnists posing
     # "what if" or "is it possible" questions that frame unstated
@@ -3502,6 +3519,29 @@ _LATECOMER_NARRATIVE_PATTERNS: list[re.Pattern] = [
         r"(?:has|have)\s+yet\s+to\s+(?:develop|build|launch|create|roll out))\b",
         re.IGNORECASE,
     ),
+    # --- Added 2026-07-07: iPhone in Canada Muse Image analysis ---
+    # Implicit latecomer framing via comparative convenience: "saving you
+    # steps from [switching to competitor products]" — frames the product
+    # as catching up to alternatives the user was already using.  The
+    # "jumping back from other [products] such as X and Y" pattern implies
+    # the user has already defected to competitors.
+    re.compile(
+        r"\b(?:saving\s+you\s+(?:steps?|time|the\s+trouble)\s+"
+        r"(?:from|of)\s+(?:jumping|switching|going)\s+"
+        r"(?:back|over)\s+(?:to|from))\b",
+        re.IGNORECASE,
+    ),
+    # "other [product category] such as [CompetitorA] and [CompetitorB]"
+    # — listing competitors in a product launch article implies the
+    # subject is entering an already-served market.
+    re.compile(
+        r"\bother\s+(?:AI\s+)?(?:model|tool|app|platform|product|service|assistant|chatbot)s?"
+        r"\s+(?:such\s+as|like|including)\s+"
+        r"(?:those\s+from\s+)?"
+        r"(?:[A-Z]\w+(?:\s+[A-Z]\w+)?)"
+        r"(?:\s+and\s+(?:[A-Z]\w+(?:\s+[A-Z]\w+)?))",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["latecomer_narrative"] = _LATECOMER_NARRATIVE_PATTERNS
@@ -3792,6 +3832,41 @@ _EDITORIAL_DEFLATION_PATTERNS.extend([
         r"\b(?:it's|that's|this\s+is|it\s+is)\s+not\s+exactly\s+"
         r"(?:a\s+)?(?:promising|encouraging|compelling|impressive|convincing"
         r"|revolutionary|groundbreaking|practical|viable|useful|great)\b",
+        re.IGNORECASE,
+    ),
+    # --- Added 2026-07-07: iPhone in Canada Muse Image article analysis ---
+    # "Better late than never" and lateness idioms — editorial deflation
+    # that acknowledges a product/feature while framing the entity as
+    # behind competitors.  "Better late than never, I guess" in closing
+    # paragraph is classic damning with faint timeliness praise.
+    re.compile(
+        r"\b(?:better\s+late\s+than\s+never)\b",
+        re.IGNORECASE,
+    ),
+    # "I guess" / "I suppose" appended to a statement — hedging editorial
+    # aside that converts a positive observation into skepticism.
+    # "Better late than never, I guess" / "that's something, I guess"
+    # Distinct from conversational filler — requires comma/dash before
+    # the hedge to catch the editorial appending pattern.
+    re.compile(
+        r"(?:,\s*|—\s*|\s+-\s+)I\s+(?:guess|suppose)\b(?:\s*[,.])?",
+        re.IGNORECASE,
+    ),
+    # "if you're [even] seeking to" / "if you're into that sort of thing"
+    # — conditional framing that questions whether anyone actually wants
+    # the product, deflating the announcement.
+    re.compile(
+        r"\bif\s+you(?:'re|(?:\s+are))\s+(?:even\s+)?(?:seeking|looking|trying|wanting)\s+to\b",
+        re.IGNORECASE,
+    ),
+    # "and such" / "or whatever" / "or something" — trailing dismissive
+    # minimizers that reduce the subject's significance through casual
+    # indifference.  "Who's actually using AI to change their backgrounds
+    # to golden hour and such?" — the "and such" is the deflating signal.
+    re.compile(
+        r"\b(?:and\s+such|or\s+whatever|or\s+something|and\s+whatnot"
+        r"|and\s+all\s+that|and\s+stuff\s+like\s+that)\b"
+        r"(?:\s*[?.!])",
         re.IGNORECASE,
     ),
 ])

@@ -1,0 +1,16 @@
+Title: Meta Is Adding AI Image Creation to Instagram, WhatsApp and More
+Publication: iPhone in Canada
+Date: 2026-07-07
+URL: https://www.iphoneincanada.ca/2026/07/07/meta-is-adding-ai-image-creation-to-instagram-whatsapp-and-more/
+
+Meta is launching Muse Image, its first image generation model from Meta Superintelligence Labs, and rolling it across its apps starting today. The model lets you create and edit images just by describing what you want in plain language, and it's built to plug right into where people already chat and post, which is the convenience part.
+
+On Instagram, Muse Image powers more than 30 new effects for Stories. It also lets you @-mention Instagram accounts in the Meta AI app to pull specific profiles into your images using public photos, so you can build something ready to post, like a custom event invite. There's a setting to turn off AI tagging whenever you want.
+
+On WhatsApp, you can generate images right inside your direct chats with Meta AI. This is starting in a limited number of countries for now, with more locations on the way.
+
+For Facebook and Messenger, image generation is coming soon. One handy Facebook tie-in already in the mix lets you snap a photo of your room and ask Meta AI to redesign it using real products pulled from Facebook Marketplace or the web.
+
+Across all of these, the basics stay the same. You can describe an image in conversational language, restore an old family photo, erase a photobomber, or turn yourself into a claymation character, then share the result straight to your feed, story, or chat. Meta AI remembers the full conversation too, so you can keep revising an image without starting over. Everyday creation is free, while heavier users can pay for more through Meta's subscription plans.
+
+Better late than never, I guess, if you're seeking to use Meta AI to edit images in the company's apps, saving you steps from jumping back from other AI models such as those from Gemini and ChatGPT. Who's actually using AI to change their backgrounds to golden hour and such?
