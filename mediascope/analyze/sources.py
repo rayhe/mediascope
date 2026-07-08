@@ -298,6 +298,16 @@ def _extract_affiliation(context: str) -> str:
             r"[Mm]anager|[Hh]ead|[Ee]xecutive)\s+[A-Z]",
             re.DOTALL,
         ),
+        # Pattern 0e: "[Organization] analyst/researcher/fellow/professor [Name]"
+        # Handles "Bernstein Research analyst Madison Rezaei says" where
+        # the org precedes a role noun without a preposition.
+        re.compile(
+            r"([A-Z][" + _INST_CHARS + r"]{1,40}?)"
+            r"\s+(?:analyst|researcher|fellow|professor|scholar|economist|"
+            r"strategist|correspondent|reporter|columnist|commentator|"
+            r"editor|contributor|scientist)\s+"
+            r"[A-Z][a-z]",
+        ),
         # Pattern 1: "at [the] [Institution Name][,. or attribution verb]"
         # Non-greedy match capped at 60 chars to prevent spanning
         # across paragraph boundaries when _INST_CHARS includes spaces.
@@ -327,7 +337,7 @@ def _extract_affiliation(context: str) -> str:
     for i, pat in enumerate(patterns):
         m = pat.search(context)
         if m:
-            if i == 4:
+            if i == 5:
                 # Possessive pattern (Pattern 2): combine "Georgetown" + "Center for ..."
                 aff = m.group(1).strip() + "'s " + m.group(2).strip()
             else:
@@ -494,6 +504,127 @@ def extract_sources(text: str) -> list[SourceMention]:
             attribution_verb=verb,
         ))
 
+    # Pattern 0c: "First Last of Organization VERB" — named source with
+    # affiliation separated by "of".  Must run BEFORE Pattern 1 so that the
+    # person name is added to ``seen_names`` and the organization name
+    # (e.g. "KeyBanc Capital") is not later misidentified as a person.
+    # Discovered in WSJ AI spending article (Jul 8, 2026): "Justin
+    # Patterson of KeyBanc Capital said" was parsed as person "Capital".
+    name_of_org_verb = re.compile(
+        rf"\b([A-Z][a-z]+\s+(?:[A-Z]\.\s+)?[A-Z][a-z]+(?:-[A-Z][a-z]+)?)"
+        rf"\s+of\s+"
+        rf"([A-Z][\w&.]+(?:\s+[A-Z][\w&.]+){{0,4}})"
+        rf"\s+({verb_alternation})\b",
+    )
+    for m in name_of_org_verb.finditer(text):
+        name = m.group(1).strip()
+        org = m.group(2).strip()
+        verb = m.group(3).strip().lower()
+        if name in seen_names:
+            continue
+
+        first_word = name.split()[0]
+        if first_word in _NAME_STOP_FIRST_WORDS:
+            continue
+        if name in _NAME_STOP_NAMES:
+            continue
+
+        seen_names.add(name)
+        # Also mark the org name as seen so Pattern 1 won't pick it up
+        seen_names.add(org)
+
+        ctx_start = max(0, m.start() - 100)
+        ctx_end = min(len(text), m.end() + 100)
+        context = text[ctx_start:ctx_end]
+
+        sources.append(SourceMention(
+            name=name,
+            is_anonymous=False,
+            is_expert=_is_expert_by_title(context) or _is_expert_full_text(text, name),
+            affiliation=org,
+            quote=_extract_nearby_quote(text, m.start(), m.end()),
+            attribution_verb=verb,
+        ))
+
+    # Pattern 0d: "VERB First Last of Organization" — reverse of 0c.
+    # Handles "wrote Brent Thill of Jefferies" and similar constructions.
+    verb_name_of_org = re.compile(
+        rf"\b({verb_alternation})\s+"
+        rf"([A-Z][a-z]+\s+(?:[A-Z]\.\s+)?[A-Z][a-z]+(?:-[A-Z][a-z]+)?)"
+        rf"\s+of\s+"
+        rf"([A-Z][\w&.]+(?:\s+[A-Z][\w&.]+){{0,4}})\b",
+    )
+    for m in verb_name_of_org.finditer(text):
+        verb = m.group(1).strip().lower()
+        name = m.group(2).strip()
+        org = m.group(3).strip()
+        if name in seen_names:
+            continue
+
+        first_word = name.split()[0]
+        if first_word in _NAME_STOP_FIRST_WORDS:
+            continue
+        if name in _NAME_STOP_NAMES:
+            continue
+
+        seen_names.add(name)
+        seen_names.add(org)
+
+        ctx_start = max(0, m.start() - 100)
+        ctx_end = min(len(text), m.end() + 100)
+        context = text[ctx_start:ctx_end]
+
+        sources.append(SourceMention(
+            name=name,
+            is_anonymous=False,
+            is_expert=_is_expert_by_title(context) or _is_expert_full_text(text, name),
+            affiliation=org,
+            quote=_extract_nearby_quote(text, m.start(), m.end()),
+            attribution_verb=verb,
+        ))
+
+    # Pattern 0e: "[Org] analyst/researcher/fellow [First Last] VERB"
+    # Handles "Bernstein Research analyst Madison Rezaei says" where the
+    # affiliation precedes a role noun and person name without preposition.
+    # Must run before Pattern 1 so the org is captured and the person is
+    # added to seen_names (preventing Pattern 1 from re-extracting without
+    # the affiliation).
+    org_role_name_verb = re.compile(
+        rf"\b([A-Z][\w&.]+(?:\s+[A-Z][\w&.]+){{0,3}})"
+        rf"\s+(?:analyst|researcher|fellow|professor|scholar|economist|"
+        rf"strategist|correspondent|reporter|columnist|commentator|"
+        rf"editor|contributor|scientist)\s+"
+        rf"([A-Z][a-z]+\s+(?:[A-Z]\.\s+)?[A-Z][a-z]+(?:-[A-Z][a-z]+)?)"
+        rf"\s+({verb_alternation})\b",
+    )
+    for m in org_role_name_verb.finditer(text):
+        org = m.group(1).strip()
+        name = m.group(2).strip()
+        verb = m.group(3).strip().lower()
+        if name in seen_names:
+            continue
+
+        first_word = name.split()[0]
+        if first_word in _NAME_STOP_FIRST_WORDS:
+            continue
+        if name in _NAME_STOP_NAMES:
+            continue
+
+        seen_names.add(name)
+
+        ctx_start = max(0, m.start() - 100)
+        ctx_end = min(len(text), m.end() + 100)
+        context = text[ctx_start:ctx_end]
+
+        sources.append(SourceMention(
+            name=name,
+            is_anonymous=False,
+            is_expert=True,  # Always expert — role noun is an expert title
+            affiliation=org,
+            quote=_extract_nearby_quote(text, m.start(), m.end()),
+            attribution_verb=verb,
+        ))
+
     # Pattern 1: "Name said/told/etc." — named source with attribution verb
     # Supports hyphenated surnames (e.g. "Hadfield-Menell") — discovered in
     # MIT Tech Review AI agents article (Jul 4, 2026 iteration).
@@ -525,7 +656,7 @@ def extract_sources(text: str) -> list[SourceMention]:
         sources.append(SourceMention(
             name=name,
             is_anonymous=False,
-            is_expert=_is_expert_by_title(context),
+            is_expert=_is_expert_by_title(context) or _is_expert_full_text(text, name),
             affiliation=_extract_direct_possessive(text, m.start()) or _extract_affiliation(context),
             quote=_extract_nearby_quote(text, m.start(), m.end()),
             attribution_verb=verb,
@@ -564,7 +695,7 @@ def extract_sources(text: str) -> list[SourceMention]:
         sources.append(SourceMention(
             name=name,
             is_anonymous=False,
-            is_expert=_is_expert_by_title(context),
+            is_expert=_is_expert_by_title(context) or _is_expert_full_text(text, name),
             affiliation=_extract_direct_possessive(text, name_pos) or _extract_affiliation(context),
             quote=_extract_nearby_quote(text, m.start(), m.end()),
             attribution_verb=verb,
@@ -972,9 +1103,14 @@ def extract_sources(text: str) -> list[SourceMention]:
         # Unnamed/unidentified source descriptor patterns — common in tech/workplace reporting
         re.compile(r"\ban? unnamed (?:worker|employee|executive|official|source|person|staffer|engineer)", re.IGNORECASE),
         re.compile(r"\ban? (?:second|third|fourth|another) (?:worker|employee|source|person|engineer)", re.IGNORECASE),
-        re.compile(r"\b((?:one|another|a) (?:worker|employee|engineer|staffer)) (?:said|told|called|described|complained)", re.IGNORECASE),
-        re.compile(r"\b(an? (?:worker|employee|engineer|staffer)) (?:was quoted|was reported)", re.IGNORECASE),
-        re.compile(r"\b((?:some|several|multiple|many) (?:workers|employees|engineers|staffers|people)) (?:said|told|described|called|complained|say|tell)", re.IGNORECASE),
+        re.compile(r"\b((?:one|another|a) (?:worker|employee|engineer|staffer|user)) (?:said|told|called|described|complained)", re.IGNORECASE),
+        re.compile(r"\b(an? (?:worker|employee|engineer|staffer|user)) (?:was quoted|was reported)", re.IGNORECASE),
+        re.compile(r"\b((?:some|several|multiple|many) (?:workers|employees|engineers|staffers|people|users)) (?:said|told|described|called|complained|say|tell)", re.IGNORECASE),
+        # Social media user quote patterns — "Said one X user", "one Twitter user noted"
+        # Catches anonymous user quotes from social platforms commonly used in tech reporting.
+        # Discovered via TechCrunch Muse Image privacy article (Jul 2026).
+        re.compile(r"\b(?:said|wrote|posted|noted|commented)\s+(?:one|an?)\s+(?:X|Twitter|Instagram|Facebook|Threads|Reddit|Mastodon|Bluesky|TikTok)\s+user\b", re.IGNORECASE),
+        re.compile(r"\b(?:one|an?)\s+(?:X|Twitter|Instagram|Facebook|Threads|Reddit|Mastodon|Bluesky|TikTok)\s+user\s+(?:" + verb_alternation + r")\b", re.IGNORECASE),
         # Role-descriptor + attribution verb patterns — common in tech/workplace
         # reporting where anonymous sources are described by job role:
         # "a policy staffer says", "a legal staffer adds", "the Instagram employee says"
@@ -1549,6 +1685,63 @@ def extract_sources(text: str) -> list[SourceMention]:
                 quote=_extract_nearby_quote(text, m.start(), m.end()),
                 attribution_verb=verb,
                 source_type="organizational",
+            ))
+
+    # Pattern 11: Publication-as-cited-source — when an article
+    # attributes a finding to another publication.  "The Verge first
+    # pointed out", "as first reported by Reuters", "according to
+    # a report by Bloomberg".  These are organizational sources used
+    # as attribution authority.
+    # Discovered via TechCrunch Muse Image article (Jul 2026):
+    # "after The Verge first pointed out how potentially invasive this is"
+    _KNOWN_PUBS = {
+        "The Verge", "Wired", "The New York Times", "The Guardian",
+        "The Atlantic", "MIT Technology Review", "Bloomberg",
+        "Reuters", "TechCrunch", "Ars Technica", "The Information",
+        "The Wall Street Journal", "Financial Times", "CNBC",
+        "The Washington Post", "BBC", "CNN", "NBC News", "ABC News",
+        "Axios", "Politico", "Vox", "Gizmodo", "Engadget",
+        "9to5Mac", "MacRumors", "The Register", "Futurism",
+    }
+    _pub_alt = "|".join(re.escape(p) for p in sorted(_KNOWN_PUBS, key=len, reverse=True))
+    pub_cite_patterns: list[re.Pattern] = [
+        # "[Publication] first pointed out/reported/revealed/disclosed"
+        re.compile(
+            rf"\b({_pub_alt})\s+(?:first\s+)?(?:pointed out|reported|revealed|"
+            r"disclosed|noted|found|discovered|highlighted|showed|documented)\b",
+            re.IGNORECASE,
+        ),
+        # "as first reported/noted by [Publication]"
+        re.compile(
+            rf"\bas\s+(?:first\s+)?(?:reported|noted|revealed|disclosed|pointed out)\s+by\s+(?:the\s+)?({_pub_alt})\b",
+            re.IGNORECASE,
+        ),
+        # "according to a report by/in [Publication]"
+        re.compile(
+            rf"\baccording\s+to\s+(?:a\s+)?(?:report|story|investigation|analysis)\s+(?:by|in|from)\s+(?:the\s+)?({_pub_alt})\b",
+            re.IGNORECASE,
+        ),
+    ]
+
+    for pat in pub_cite_patterns:
+        for m in pat.finditer(text):
+            pub_name = m.group(1).strip()
+            if pub_name.lower() in {n.lower() for n in seen_names}:
+                continue
+            seen_names.add(pub_name)
+
+            ctx_start = max(0, m.start() - 100)
+            ctx_end = min(len(text), m.end() + 200)
+            context = text[ctx_start:ctx_end]
+
+            sources.append(SourceMention(
+                name=pub_name,
+                is_anonymous=False,
+                is_expert=False,
+                affiliation=pub_name,
+                quote=_extract_nearby_quote(text, m.start(), m.end()),
+                attribution_verb="cited",
+                source_type="publication_citation",
             ))
 
     # --- Quote count enrichment ---

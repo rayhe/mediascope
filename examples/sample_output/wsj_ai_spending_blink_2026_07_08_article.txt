@@ -1,0 +1,20 @@
+Will Someone Finally Blink in the AI Spending War?
+
+Wall Street Journal — July 8, 2026
+
+[Article text — WSJ paywall content, not reproduced in full]
+
+Key excerpts relevant to source extraction testing:
+
+"Justin Patterson of KeyBanc Capital said the spending trajectory is
+unsustainable for all but the largest players."
+
+"In a recent note, wrote Brent Thill of Jefferies, the current pace of
+investment will require significant revenue acceleration to justify."
+
+"Bernstein Research analyst Madison Rezaei says the capital requirements
+for next-generation models like Meta's Watermelon could push spending
+even higher in 2027."
+
+Publication: Wall Street Journal (wsj.com)
+Topic: AI infrastructure spending, Big Tech capex

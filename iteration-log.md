@@ -16460,3 +16460,43 @@ Re-run: 8 devices across 4 types (was 1/1). Closing paragraph fully instrumented
 - **Same-event comparison clusters:** 11 (was 10; 3 Tier 1, 8 Tier 2)
 - **Entity clusters:** 75 (unchanged, 2 clusters updated with new aliases)
 - **Framing device types:** 83 (unchanged)
+
+---
+
+### 2026-07-08 13:00 PT — Type A: Article Deep Dive
+
+**Article:** "Will Someone Finally Blink in the AI Spending War?" (Wall Street Journal, Jul 8, 2026)
+
+**Rationale:** WSJ capex analysis covering Meta/Google/Amazon/Microsoft AI spending war, SpaceX/xAI compute sharing, Watermelon codename, Meta cloud pivot. Source-heavy financial analysis article — excellent stress test for source extraction pipeline.
+
+**Findings:**
+- 42 entity mentions detected (no misses)
+- 8 framing devices: 6× scale_magnitude, 1× assumed_consensus, 1× loaded_language
+- VADER compound 0.99 for a cautionary article (known financial-text skew)
+- 4 source extraction bugs discovered and fixed
+
+**Changes:**
+1. **Pattern 0c added** to `sources.py`: "First Last of Organization VERB" — prevents org name from being misidentified as person name. Discovered via "Justin Patterson of KeyBanc Capital said" → was parsing "Capital" as a person name.
+2. **Pattern 0d added** to `sources.py`: "VERB First Last of Organization" — reverse order variant. Handles "wrote Brent Thill of Jefferies" construction.
+3. **Pattern 0e added** to `sources.py` (both source extraction and `_extract_affiliation`): "[Org] analyst/researcher/fellow [Name] VERB" — captures affiliation when org precedes role noun without preposition. Fixes "Bernstein Research analyst Madison Rezaei says" → was extracting empty affiliation.
+4. **Full-text expert fallback** added to Pattern 1 ("Name VERB") and Pattern 2 ("VERB Name") — previously only used narrow 100-char context window for expert detection, missing analysts introduced earlier in text.
+5. **New test file** (`test_wsj_ai_spending_sources.py`, 13 tests): Pattern 0c (5 tests), Pattern 0d (2 tests), Pattern 0e (5 tests), full-text expert fallback (1 test). All pass.
+6. **Doc sync:** Fixed pre-existing stale counts — Anthropic alias count 8→9, xAI alias count 4→5, regex pattern count 464→466, annotated articles 121→122, distinct publications 39→40, test count 1729→1742, test files 71→72.
+
+**New article analysis:** `examples/sample_output/wsj_ai_spending_blink_2026_07_08_analysis.md`
+**New article text:** `examples/sample_output/wsj_ai_spending_blink_2026_07_08_article.txt`
+**New publication:** WSJ (40th distinct publication in corpus)
+
+**Framing gaps identified (not fixed):**
+- Missing `speculative_framing` for "may be getting in on that action", "would effectively confirm", "could be tripped up"
+- Missing `investor_anxiety` / `market_reaction` for PHLX −11%, SK Hynix −17% semiconductor declines
+- Missing `overbuilding_narrative` / `bubble_framing` for the article's central thesis
+
+**Stats snapshot:**
+- **Tests:** 1742 across 72 files (was 1729/71)
+- **Regex patterns:** 466 (was 464)
+- **Annotated articles:** 122 (was 121)
+- **Distinct publications:** 40 (was 39)
+- **Entity clusters:** 75 (unchanged; Anthropic +1 alias, xAI +1 alias from prior iteration now synced in docs)
+- **Framing device types:** 83 (unchanged)
+- **Source extraction patterns:** 3 new (0c, 0d, 0e) + 2 expert detection improvements

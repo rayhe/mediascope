@@ -451,6 +451,29 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"behind (?:closed doors|the scenes))\b",
         re.IGNORECASE,
     ),
+    # Danger/explosive metaphors — comparing products, features, or
+    # policies to weapons, explosives, or imminent threats.  Editorializes
+    # by framing the subject as dangerous before presenting evidence.
+    # Discovered via TechCrunch Muse Image article (Jul 2026):
+    # "privacy landmine waiting to detonate"
+    re.compile(
+        r"\b(?:landmine|land mine|time.?bomb|ticking.?bomb|powder.?keg|"
+        r"tinderbox|grenade|minefield|mine.?field|"
+        r"(?:waiting|ready|about|set|poised)\s+to\s+(?:detonate|explode|blow up|go off)|"
+        r"nuclear\s+option|ticking\s+clock)\b",
+        re.IGNORECASE,
+    ),
+    # Skepticism/editorial-reaction language — terms that editorialize
+    # the journalist's own reaction to frame the subject before evidence.
+    # "eyebrow-raising" implies something is suspicious before explaining why.
+    # Discovered via TechCrunch Muse Image article (Jul 2026).
+    re.compile(
+        r"\b(?:eyebrow.?raising|brow.?raising|jaw.?dropping|"
+        r"head.?scratching|head.?spinning|"
+        r"cringe.?worthy|"
+        r"co-?opt(?:ion|ed|ing|s)?)\b",
+        re.IGNORECASE,
+    ),
     # Deception / impersonation / espionage language — terms that frame
     # standard business practices (competitive benchmarking, user testing,
     # mystery shopping, red-teaming) as covert operations, impersonation
@@ -624,6 +647,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"hand.?wav(?:ing|y)|smoke\s+and\s+mirrors|"
         r"window\s+dressing|lip\s+service|"
         r"AI\s+slop|"
+        r"goofy|cartoonish|amateurish|gimmick(?:y|s)?|"
         r"fig\s+leaf)\b",
         re.IGNORECASE,
     ),

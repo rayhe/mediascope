@@ -941,8 +941,8 @@ The following table documents all 75 entity clusters shipped with MediaScope, or
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
-| **Anthropic** | 8 | Anthropic, Dario Amodei, Daniela Amodei, Claude, Mythos, Fable (+2 more) |
-| **xAI** | 4 | xAI, Grok, Colossus, Colossus II |
+| **Anthropic** | 9 | Anthropic, Anthropic PBC, Dario Amodei, Daniela Amodei, Claude, Mythos, Fable (+2 more) |
+| **xAI** | 5 | xAI, SpaceXAI, Grok, Colossus, Colossus II |
 | **Nvidia** |  17 | Nvidia, NVIDIA, Jensen Huang, CUDA, H100, H200 (+8 more) |
 | **AMD** | 7 | AMD, Advanced Micro Devices, Lisa Su, EPYC, Ryzen, Radeon (+1 more) |
 | **Intel** | 7 | Intel, Intel Corporation, Pat Gelsinger, Lip-Bu Tan, Gaudi, Xeon (+1 more) |
@@ -1235,13 +1235,13 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **121 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **122 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
 ### 17.2 Publication Distribution
 
-The corpus spans **39 distinct publications** across 5 editorial modes:
+The corpus spans **40 distinct publications** across 5 editorial modes:
 
 #### Tracked Publications (5 publications, 55 articles)
 
@@ -1345,7 +1345,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 121 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 88 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 122 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 88 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
