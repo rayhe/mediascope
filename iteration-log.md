@@ -16500,3 +16500,34 @@ Re-run: 8 devices across 4 types (was 1/1). Closing paragraph fully instrumented
 - **Entity clusters:** 75 (unchanged; Anthropic +1 alias, xAI +1 alias from prior iteration now synced in docs)
 - **Framing device types:** 83 (unchanged)
 - **Source extraction patterns:** 3 new (0c, 0d, 0e) + 2 expert detection improvements
+
+---
+
+### Iteration: 2026-07-08 14:00 PDT — Type A (Article Deep Dive)
+
+**Focus:** Litigation cascade regression tests + compound negative attribution verb detection
+
+#### Changes
+
+1. **Litigation cascade regression tests** (`tests/test_litigation_cascade.py`):
+   - 7 tests covering positive cases (classic multi-jurisdiction cascade, Gizmodo-style escalation, minimal threshold), negative cases (single lawsuit, repeated same count, jurisdiction counts without milestones), and evidence text validation
+   - Validates the `_detect_trend_bundling()` litigation cascade sub-detector added in prior iteration
+
+2. **Compound negative attribution verb detection** (`mediascope/analyze/sources.py`):
+   - Added `COMPOUND_LOADED_PHRASES` list (40 multi-word patterns) for contrastive failure ("attempted yet failed", "tried but failed"), contrastive concession ("reluctantly admitted", "was forced to concede", "grudgingly acknowledged"), and defensive failure ("denied but was found", "claimed but was contradicted")
+   - Updated `classify_attribution_verb()` to check compound phrases before single-word lookup
+   - Updated `_find_attribution_verb()` to prefer compound phrases over single-word extraction
+   - 19 tests in `tests/test_compound_attribution_verbs.py` covering classification, extraction, and sanity checks
+
+3. **Reuters $1.4T article analysis** (`examples/sample_output/reuters_meta_1_4t_penalty_2026_07_07_*`):
+   - Baseline wire article + toolkit analysis for cross-publication comparison
+   - Reuters: 17 framing devices (vs Gizmodo 24+), quality score 77 (passed), VADER compound -0.994
+   - 7 sources extracted (Meta, Rob Bonta, Rogers, 2 no-comment, 1 org, 1 legal_party)
+   - Topics: litigation (0.492), consumer_protection (0.488), child_safety (0.447)
+
+#### Stats
+- **Tests:** 1,768 (was 1,742; +26 new)
+- **Compound loaded phrases:** 40 (new)
+- **Annotated articles:** 123 (was 122; +1 Reuters)
+- **Framing device types:** 83 (unchanged)
+- **Source extraction patterns:** 10 (unchanged) + compound verb overlay

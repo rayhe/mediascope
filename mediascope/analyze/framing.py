@@ -5043,6 +5043,68 @@ def _detect_trend_bundling(text: str) -> list[FramingDevice]:
     # Only fire if 3+ distinct companies are bundled
     if len(bundled_companies) >= 3:
         return markers
+
+    # --- Litigation cascade sub-detection ---
+    # When an article bundles 3+ distinct legal proceedings, jurisdictions,
+    # or escalating case-count markers to create a sense of inexorable legal
+    # momentum, fire trend_bundling even without company comparisons.
+    # Distinct from litigation_framing (which detects legal vocabulary) and
+    # escalation_amplification (which detects general escalation language).
+    # This detects the *bundling structure* — multiple legal fronts stacked
+    # to imply accelerating, unstoppable legal exposure.
+    #
+    # Discovered via Gizmodo "$1.4T Existential Threat" article (Jul 2026):
+    #   "33 states → 4 states → $6M verdict → 3,000+ cases → 14 more states"
+    # Also seen in NY Post's coverage bundling KGM, New Mexico, 2,400+ lawsuits.
+
+    _JURISDICTION_PATTERN = re.compile(
+        r"\b(\d+)\s+(?:states?|jurisdictions?|countries?|governments?|"
+        r"attorneys?\s*general|AGs?|plaintiffs?|lawsuits?|cases?|"
+        r"claims?|suits?|districts?|school\s+districts?)\b",
+        re.IGNORECASE,
+    )
+    _LEGAL_MILESTONE_PATTERN = re.compile(
+        r"\b(?:verdict|ruling|judgment|settlement|trial|penalty|"
+        r"fine|damages|injunction|order|finding|conviction|"
+        r"dismissed|acquittal|appeal|indictment)\b",
+        re.IGNORECASE,
+    )
+
+    jurisdiction_counts: list[tuple[int, int, int]] = []  # (number, start, end)
+    milestone_count = 0
+
+    for jm in _JURISDICTION_PATTERN.finditer(text):
+        try:
+            num = int(jm.group(1).replace(",", ""))
+            jurisdiction_counts.append((num, jm.start(), jm.end()))
+        except ValueError:
+            pass
+
+    milestone_count = len(_LEGAL_MILESTONE_PATTERN.findall(text))
+
+    # Fire if 3+ distinct jurisdiction-count mentions AND 2+ legal milestones.
+    # This ensures we only detect structured legal cascades, not single-lawsuit
+    # factual reporting.
+    distinct_counts = set(n for n, _, _ in jurisdiction_counts)
+    if len(distinct_counts) >= 3 and milestone_count >= 2:
+        # Find the span covering the first and last jurisdiction mention
+        all_starts = [s for _, s, _ in jurisdiction_counts]
+        all_ends = [e for _, _, e in jurisdiction_counts]
+        span_start = min(all_starts)
+        span_end = max(all_ends)
+        evidence = text[span_start:min(span_end + 50, len(text))]
+        if len(evidence) > 200:
+            evidence = evidence[:200] + "..."
+
+        return [
+            FramingDevice(
+                device_type="trend_bundling",
+                evidence_text=evidence.strip(),
+                start=span_start,
+                end=span_end,
+            )
+        ]
+
     return []
 
 

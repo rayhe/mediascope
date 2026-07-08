@@ -59,6 +59,57 @@ LOADED_VERBS: set[str] = {
     "calls", "dismisses", "rejects", "downplays",
 }
 
+# Compound negative attribution phrases — multi-word constructions that
+# carry loaded framing through contrastive or failure semantics.
+# These are checked before single-word verb lookup because they would
+# otherwise match only the neutral verb component (e.g., "attempted"
+# alone is neutral, but "attempted yet failed" is loaded).
+# Patterns are lowercase and matched case-insensitively.
+COMPOUND_LOADED_PHRASES: list[str] = [
+    # Contrastive failure: subject tried and failed
+    "attempted yet failed",
+    "attempted but failed",
+    "tried and failed",
+    "tried but failed",
+    "sought but was denied",
+    "sought but was rejected",
+    "pushed back but was rejected",
+    "pushed back but was overruled",
+    "argued but was overruled",
+    "argued but the court rejected",
+    "appealed but was denied",
+    "appealed but lost",
+    "fought but lost",
+    "fought but was defeated",
+    "promised but failed",
+    "promised but did not deliver",
+    "pledged but failed",
+    "vowed but failed",
+    # Contrastive concession: grudging/forced compliance
+    "was forced to admit",
+    "was forced to concede",
+    "was compelled to acknowledge",
+    "grudgingly acknowledged",
+    "grudgingly admitted",
+    "reluctantly acknowledged",
+    "reluctantly admitted",
+    "reluctantly conceded",
+    "quietly admitted",
+    "quietly conceded",
+    "finally admitted",
+    "finally acknowledged",
+    "finally conceded",
+    "belatedly acknowledged",
+    "belatedly admitted",
+    # Defensive failure: defence collapsed
+    "denied but was found",
+    "denied but evidence showed",
+    "claimed but was contradicted",
+    "insisted but was overruled",
+    "maintained but the court found",
+]
+
+
 ALL_VERBS: set[str] = NEUTRAL_VERBS | LOADED_VERBS
 
 # Expert title indicators
@@ -349,9 +400,17 @@ def _extract_affiliation(context: str) -> str:
 
 
 def _find_attribution_verb(context: str) -> str:
-    """Find the attribution verb in a context string."""
+    """Find the attribution verb in a context string.
+
+    Checks compound loaded phrases first (multi-word patterns like
+    "attempted yet failed"), then single-word verbs.
+    """
     context_lower = context.lower()
-    # Search for attribution verbs near quotes or source names
+    # Check compound loaded phrases first — longer, more specific match
+    for phrase in COMPOUND_LOADED_PHRASES:
+        if phrase in context_lower:
+            return phrase
+    # Fall back to single-word verb search
     for verb in sorted(ALL_VERBS, key=len, reverse=True):
         pattern = re.compile(rf"\b{re.escape(verb)}\b", re.IGNORECASE)
         if pattern.search(context_lower):
@@ -1975,13 +2034,20 @@ def grade_source_authority(sources: list[SourceMention]) -> float:
 def classify_attribution_verb(verb: str) -> str:
     """Classify an attribution verb as neutral or loaded.
 
+    Handles both single-word verbs and compound negative attribution
+    phrases (e.g., "attempted yet failed", "reluctantly conceded").
+
     Args:
-        verb: The attribution verb to classify.
+        verb: The attribution verb or phrase to classify.
 
     Returns:
         "neutral", "loaded", or "unknown".
     """
     v = verb.lower().strip()
+    # Check compound phrases first — they override single-word classification
+    for phrase in COMPOUND_LOADED_PHRASES:
+        if phrase in v or v in phrase:
+            return "loaded"
     if v in NEUTRAL_VERBS:
         return "neutral"
     elif v in LOADED_VERBS:
