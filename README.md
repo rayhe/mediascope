@@ -59,7 +59,22 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **172 journalists** across 330+ publications, including high-value migrations like Nicholas Thompson (Wired senior editor → New Yorker web editor → Wired EIC → Atlantic CEO — critical cross-publication bridge, personally authored two Facebook cover stories cited in Congress, Emerson Collective co-venture tie, Paul Nitze grandson), Karen Hao (MIT Tech Review → Atlantic), Cade Metz (Wired → NYT), Zoë Schiffer (The Verge → Platformer → Wired), Zeyi Yang (MIT Tech Review → Wired), Melissa Heikkilä (MIT Tech Review → Financial Times), Emily Mullin (MIT Tech Review → Wired), David McCabe (Axios → NYT), Stuart A. Thompson (Globe and Mail → WSJ → NYT), David Yaffe-Bellany (Bloomberg → NYT), Erin Griffith (Fortune → Wired → NYT), Hugo Lowell (Guardian → Wired), Tom Simonite (MIT Tech Review → Wired → Washington Post), Noah Shachtman (Wired ↔ Daily Beast ↔ Rolling Stone ↔ Wired), Morgan Meaker (Telegraph → Wired → Bloomberg), Paris Martineau (The Outline → Wired → The Information → Consumer Reports), Eli Tan (CoinDesk → Washington Post → NYT), Nellie Bowles (Guardian → Vice News → NYT → The Free Press), Reece Rogers (Insider → Wired, service writer baseline), Danny Yadron (WSJ → Guardian → Stanford Law), Steve Lohr (NYT lifer, ~47 years — foreign correspondent → business editor → technology reporter, pure institutional framing baseline), Maxwell Zeff (Bloomberg → Gizmodo → TechCrunch → Wired — fastest four-outlet pipeline, ChatGPT-era generational contrast), Brian X. Chen (Macworld → Wired → NYT — Wirecutter co-founder, 14+ year NYT lifer), Isabella Ward (Bloomberg → Wired — MSci Physics, London rebuild hire), Louise Matsakis (Wired → Rest of World → NBC News → Semafor → Wired — rare boomerang journalist), Chris Stokel-Walker (freelance across Guardian, Wired, NYT, MIT Tech Review — highest cross-publication coverage), Maddy Varner (ProPublica → The Markup → FTC → Wired — Gerald Loeb Award winner), Kate Taylor (Business Insider → Columbia MBA → Wired — Emmy-nominated investigative journalist), Damon Beres (HuffPost → Mashable → OneZero/Medium → Atlantic — senior tech editor and editorial gatekeeper), and Ej Dickson (Rolling Stone → New York Magazine/The Cut → Wired — internet culture specialist, non-traditional pipeline into Wired's culture desk), and Mat Honan (Macworld → Wired → Gizmodo → Wired → BuzzFeed News → MIT Tech Review EIC — highest-value editorial figure, Pulitzer-winning team builder, sets MIT TR institutional framing as EIC), Caroline Haskins (The Outline → Motherboard/Vice → BuzzFeed News → Business Insider → Wired — surveillance-tech accountability specialist, broke Project Cannes Meta investigation Jul 2026), and Josh Tyrangiel (Rolling Stone → Vibe → MTV → TIME → Bloomberg Businessweek → Vice → WaPo → Atlantic — most senior editorial executive to become staff writer at a tracked publication, constructive AI framing counterpoint), Quinta Jurecic (Brookings → Lawfare → WaPo editorial board → Atlantic — think-tank-to-journalism pipeline, Section 230/platform governance expertise), Toluse Olorunnipa (Miami Herald → Bloomberg → WaPo White House Bureau Chief → Atlantic — Pulitzer winner, highest-ranking WaPo departure to tracked publication), and Nancy Youssef (Baltimore Sun → McClatchy → Daily Beast → BuzzFeed News → WSJ → Atlantic — 6-publication migration, longest DiD path in dataset), and Boone Ashworth (Cracked/Grist freelance → Wired podcast producer → Wired staff writer — Wired-native internal promotion, humor-to-tech pipeline), Jake Lahut (New Yorker fact-checker → Politico → Daily Gazette → Keene Sentinel → Business Insider → Daily Beast → Wired → fired Nov 2025 labor dispute — pure political reporter hired for tech-politics beat, "Fired Four" member, pursuing NLRB case), James Temple (SF Chronicle → Recode → The Verge → MIT Tech Review — 4-publication migration, senior climate/energy editor with 436+ posts, tests regional-newspaper-to-specialist-publication pipeline), Michelle Kim (corporate law → Foreign Policy → Rest of World → MIT Tech Review — non-traditional pipeline from corporate law through Korean politics and labor/tech reporting, Tarbell Center AI journalism fellow), Franklin Foer (Slate → New Republic editor ×2 → Atlantic — fired by Facebook co-founder Chris Hughes at TNR, authored anti-Big-Tech polemic *World Without Mind*, personal grievance as framing driver), and Derek Thompson (Atlantic 17-year staff writer → Substack/independent — longest single-publication tenure in dataset, *Abundance* co-author with Ezra Klein, institutional framing absorption test case), and Natasha Singer (Russian Vogue founding editor → The Forward Moscow bureau → Outside Magazine roving correspondent → NYT — 18+ year NYT lifer, most non-traditional pipeline into a tracked publication, Russian literature BA to tech accountability reporter, *Coding Kids* author, SOPIPA legislative impact, Knight fellow alongside Karen Hao), James Temperton (Incisive Media/Dennis Publishing → Wired UK news editor → The Logic deputy ME — Wired UK's most senior operational editor, launched Wired Awake, hosted 300+ podcast episodes, key Wired UK contraction data point), and Paul Beckett (Dow Jones Newswires → WSJ banking reporter → WSJ London/New Delhi/Hong Kong/Washington bureau chief → WSJ assistant editor Gershkovich case → Atlantic senior editor national security — 34-year Dow Jones/WSJ veteran, Edinburgh University, strongest Murdoch→Emerson Collective editorial migration), and Camille Bromley (CJR/Harper's → The Believer → Wired features editor → NYT Opinion — NMA-finalist literary-features specialist, Drummond-era departure tests talent-retention hypothesis), and Naomi Nix (Star-Ledger → Chicago Tribune → Bloomberg News → Washington Post → laid off Feb 2026 — WaPo's dedicated Meta reporter, eliminated in mass layoffs that gutted WaPo tech desk from 80 to 33 staff).
+Ships with verified career data for **172 journalists** across 330+ publications (542 auto-detected migrations). Notable high-value migrations include:
+
+| Journalist | Migration Path | Analytical Value |
+|---|---|---|
+| **Nicholas Thompson** | Wired Sr. Ed → New Yorker Web Ed → Wired EIC → Atlantic CEO | Critical cross-publication bridge; authored two Facebook cover stories cited in Congress |
+| **Karen Hao** | MIT Tech Review → Atlantic | Beat-specific migration; AI ethics coverage tone comparison |
+| **Mat Honan** | Macworld → Wired → Gizmodo → Wired → BuzzFeed News → MIT Tech Review EIC | Highest-value editorial figure; Pulitzer-winning team builder |
+| **Noah Shachtman** | Wired ↔ Daily Beast ↔ Rolling Stone ↔ Wired | Rare multi-directional boomerang across adversarial/neutral outlets |
+| **Josh Tyrangiel** | Rolling Stone → TIME → Bloomberg Businessweek → Vice → WaPo → Atlantic | Most senior editorial executive to become staff writer at a tracked publication |
+| **Nancy Youssef** | Baltimore Sun → McClatchy → Daily Beast → BuzzFeed News → WSJ → Atlantic | 6-publication migration, longest DiD path in dataset |
+| **Caroline Haskins** | The Outline → Motherboard → BuzzFeed News → BI → Wired | Surveillance-tech accountability specialist; broke Project Cannes investigation |
+| **Naomi Nix** | Star-Ledger → Chicago Tribune → Bloomberg → WaPo → laid off Feb 2026 | WaPo's dedicated Meta reporter, eliminated in mass layoffs |
+| **Steve Lohr** | NYT lifer (~47 years) | Pure institutional framing baseline — longest single-outlet tenure |
+| **Zoë Schiffer** | The Verge → Platformer → Wired | Labor/workplace beat migration; editorial independence test |
+
+See `profiles/careers/journalists.yaml` for the complete dataset with career entries, beat specializations, and source URLs.
 
 ## Quick Start
 
@@ -171,7 +186,7 @@ Full methodology: https://github.com/mediascope/mediascope/blob/main/docs/METHOD
 
 ## Publication Profiles
 
-MediaScope ships with detailed profiles for five publications, chosen to illustrate different conflict patterns:
+MediaScope ships with detailed profiles for six publications, chosen to illustrate different conflict patterns:
 
 | Publication | Owner | Conflict Type | Key Conflict |
 |---|---|---|---|
@@ -180,6 +195,7 @@ MediaScope ships with detailed profiles for five publications, chosen to illustr
 | **The Guardian** | Scott Trust (non-profit) | Partial control | OpenAI + ProRata licensing deals, but no equity in specific competitors. Closest to baseline in the 5-pub set (pre-Feb 2025 coverage cleaner). |
 | **The Atlantic** | Emerson Collective (LPJ) | Investment + Licensing + Civic | Owner holds ~$16B Apple stock, $6.5B OpenAI equity exit, co-chairs civic org with Google/Alphabet president and OpenAI CEO |
 | **MIT Tech Review** | MIT | Institutional paradox | Parent receives $500M+ from companies it covers; operates DoD's largest FFRDC ($12.2B Lincoln Lab contract, $1.36B/yr); DAF-MIT AI Accelerator transfers AI to military |
+| **The Verge** | PMC / Eldridge Industries | JV Ownership + Licensing | Penske-Eldridge JV; Eldridge cross-holdings create A24→Thrive Capital→OpenAI financial pathway; Vox Media Union CBA with AI protections; two separate Google lawsuits |
 
 Add your own with `mediascope add-publication` or copy `profiles/_template.yaml`.
 
@@ -227,6 +243,18 @@ Statistical methodology is documented at academic quality in [docs/METHODOLOGY.m
 - Bunz & Braghieri 2021 (AI coverage sentiment analysis)
 - Welch's t-test, Cohen's d, bootstrap confidence intervals
 - 8-dimension sentiment scoring framework
+
+## Documentation
+
+| Document | Purpose |
+|---|---|
+| [METHODOLOGY.md](docs/METHODOLOGY.md) | Full statistical methodology, scoring frameworks, and academic references (19 sections, 1,753 lines) |
+| [FRAMING_REFERENCE.md](docs/FRAMING_REFERENCE.md) | **Quick-reference card for all 82 framing device types** — scannable lookup during article analysis |
+| [QUALITY_STANDARDS.md](docs/QUALITY_STANDARDS.md) | Citation requirements, anti-slop standards, analytical rigor rules |
+| [AGENT_GUIDE.md](docs/AGENT_GUIDE.md) | AI agent integration: schemas, JSON formats, sample prompts, framework patterns |
+| [ADDING_PUBLICATIONS.md](docs/ADDING_PUBLICATIONS.md) | Step-by-step guide for creating new publication profiles |
+| [EDITORIAL_HISTORIES.md](docs/EDITORIAL_HISTORIES.md) | DiD methodology for journalist migration analysis (novel contribution) |
+| [ARCHITECTURE.md](docs/ARCHITECTURE.md) | System architecture, module detail, data flow diagrams |
 
 ## Contributing
 
