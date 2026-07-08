@@ -16287,3 +16287,31 @@ Re-run: 8 devices across 4 types (was 1/1). Closing paragraph fully instrumented
 - **Topic buckets:** 27
 - **Test files:** 68
 - **Total tests:** 1689
+
+---
+
+### 2026-07-08T07:00 — Type C: MIT Technology Review Ownership & Funding
+
+**Focus:** EmTech Future 2026 speaker conflict analysis, $300M OBBBA budget gap framework with library closures, Mark Gorenberg governance-VC conflict
+
+**Changes:**
+- **EmTech Future 2026 speaker analysis:** Replaced placeholder EmTech Future section with full speaker conflict analysis from PR Newswire press release (Jun 24, 2026). Key finding: Mark Gorenberg (MIT Corporation Chair, Zetta Venture Partners founder) is a featured speaker — 5 of 7 announced speakers have direct financial ties to MIT's institutional parent. Added detailed Gorenberg portfolio data from Wikipedia, Signal.nfx, PitchBook.
+- **$300M OBBBA budget gap:** Added concrete impact data from MIT's "Next steps on financial pressures" letter (orgchart.mit.edu). Co-signed by 7 senior leaders including Glen Shor (MIT TR board member). Added Barker Library closure (Mar 30, 2026), Dewey Library permanent closure (Jun 12, 2026), Rotch planned cuts (Jun 2027) — sourced from MIT Libraries website, The College Fix, Medium.
+- **New known_conflicts entries:** Added `gorenberg_corporation_chair_ai_vc_conflict` (severity 3) and `obbba_concrete_institutional_impact` (severity 3). Conflict taxonomy now 8 dimensions.
+
+**Sources:**
+- https://www.prnewswire.com/news-releases/mit-technology-review-unveils-the-full-agenda-for-emtech-future-2026-302809502.html
+- https://orgchart.mit.edu/letters/next-steps-financial-pressures
+- https://libraries.mit.edu/news/barker-library-closing/
+- https://www.thecollegefix.com/mit-permanently-closes-library-as-it-scrambles-to-slash-costs/
+- https://en.wikipedia.org/wiki/Mark_Gorenberg
+- https://signal.nfx.com/investors/mark-gorenberg
+
+**Tests:** 97/97 structural consistency tests passed (93.8s)
+**Profile lines:** MIT TR 2143 (was 1902), total profiles 10,124
+
+**Stats snapshot:**
+- **Profile lines:** Wired 1858, NYT 1918, Guardian 1897, MIT TR 2143, Atlantic 1365, The Verge 860
+- **Known conflicts (MIT TR):** 8 dimensions
+- **Test files:** 69
+- **Total tests:** 1689 (structural subset verified)
