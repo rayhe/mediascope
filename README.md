@@ -350,6 +350,7 @@ The `examples/` directory contains runnable demos that walk through MediaScope's
 | [`sarcastic_editorial_demo.py`](examples/sarcastic_editorial_demo.py) | **NEW:** Path H sarcastic editorial detection — how VADER misscores short sarcastic opinion pieces as positive (editorial asides, assumed consensus, reader-address register), with step-by-step trigger diagnostics |
 | [`financial_journalism_demo.py`](examples/financial_journalism_demo.py) | **NEW:** Financial journalism VADER inflation — how investment recommendation boosterism, financial reassurance language, and analyst-debate formats inflate VADER scores by 0.3–0.5 points, with diagnostic flags and interim workarounds (METHODOLOGY §16) |
 | [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 176 journalists, 553 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
+| [`topic_classification_demo.py`](examples/topic_classification_demo.py) | **NEW:** 27-bucket topic classification system — demonstrates single-article classification, multi-topic overlap, genre detection via topic confidence, and the full bucket reference with adjacency warnings for commonly confused pairs |
 | [`agent_integration.py`](examples/agent_integration.py) | Integration patterns for LangChain, CrewAI, and raw function calling |
 
 ## Sample Output Gallery

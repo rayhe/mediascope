@@ -939,6 +939,85 @@ framing_gap = len(magazine_result["framing"]) - len(wire_result["framing"])
 }
 ```
 
+### compare_multi_articles (N-Way)
+
+```json
+{
+    "name": "compare_multi_articles",
+    "description": "Compare how N publications covered the same event in an N-way cross-outlet matrix. More powerful than pairwise comparison because it reveals the editorial gradient — the spectrum of editorial responses to identical facts. Uses wire-service coverage as the neutral baseline. Returns comparison across tone, framing density, source deployment, outsourced intensity, and cross-publication import detection.",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "articles": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "text": { "type": "string", "description": "Full article text" },
+                        "headline": { "type": "string", "description": "Article headline" },
+                        "publication": { "type": "string", "description": "Publication name or slug" }
+                    },
+                    "required": ["text", "headline", "publication"]
+                },
+                "minItems": 2,
+                "description": "Array of articles from different outlets covering the same event"
+            },
+            "target_entity": {
+                "type": "string",
+                "description": "Entity to focus the comparison on (e.g. 'Meta')"
+            },
+            "event_description": {
+                "type": "string",
+                "description": "Brief description of the shared event"
+            },
+            "editorial_modes": {
+                "type": "object",
+                "description": "Optional: map publication name to editorial mode (wire, financial, tech-editorial, sardonic, etc.) for genre-aware interpretation"
+            }
+        },
+        "required": ["articles", "event_description"]
+    }
+}
+```
+
+See `examples/same_event_comparison.py` for the `compare_multi_articles()` implementation and `examples/sample_output/` for 10+ real N-way comparisons.
+
+## Topic Bucket Quick Reference
+
+The 27 topic buckets enable apples-to-apples asymmetry comparison within a topic. Here is the full reference with adjacency warnings for commonly confused pairs:
+
+| # | Bucket | What It Captures | Confusable With |
+|---|--------|------------------|-----------------|
+| 1 | `layoffs` | Formal workforce actions: layoffs, firings, severance | `workplace_culture`, `labor_market` |
+| 2 | `ai_development` | AI technology: LLMs, training, inference, AI strategy | `ai_ethics_safety`, `ai_generated_content` |
+| 3 | `privacy_data` | Data collection, surveillance, tracking, GDPR | `cybersecurity` |
+| 4 | `antitrust_regulation` | Competition law, monopoly, FTC/EC, DMA/DSA | `government_oversight` |
+| 5 | `child_safety` | Youth protection: CSAM, addiction, teen mental health | `consumer_protection` |
+| 6 | `content_moderation` | Platform governance: removal, misinformation, policies | — |
+| 7 | `ai_generated_content` | AI output quality: deepfakes, AI slop, generative artifacts | `ai_development` |
+| 8 | `financial_results` | Earnings, revenue, stock, analyst ratings | `subscription_monetization` |
+| 9 | `product_launch` | Specific product releases and announcements | `corporate_strategy` |
+| 10 | `executive_behavior` | CEO statements, leadership decisions, departures | — |
+| 11 | `litigation` | Lawsuits, court filings, legal proceedings | `consumer_protection` |
+| 12 | `prediction_markets` | Betting platforms, event contracts, wagering | `financial_results` |
+| 13 | `corporate_strategy` | M&A, partnerships, pivots, market entry | `product_launch` |
+| 14 | `defense_military` | Military applications, defense contracts, dual-use tech | — |
+| 15 | `labor_market` | Macro employment, wage dynamics, BLS data | `layoffs`, `worker_ai_displacement` |
+| 16 | `workplace_culture` | Internal morale, burnout, culture, RTO policies | `layoffs` |
+| 17 | `government_oversight` | Regulatory hearings, government audits, policy reviews | `antitrust_regulation` |
+| 18 | `infrastructure_impact` | Data centers, energy/water, NIMBY, environmental footprint | `energy_climate` |
+| 19 | `worker_ai_displacement` | Workers training AI that replaces them (recursive) | `labor_market` |
+| 20 | `health_tech` | Medical devices, BCIs, clinical AI, health apps | — |
+| 21 | `cybersecurity` | Hacking, breaches, exploits, vulnerability disclosure | `privacy_data` |
+| 22 | `ai_ethics_safety` | AI alignment, existential risk, algorithmic bias | `ai_development` |
+| 23 | `education` | Tech impact on schools, classrooms, students | `child_safety` |
+| 24 | `subscription_monetization` | Paywalls, pricing tiers, rate-limiting, monetization | `financial_results` |
+| 25 | `energy_climate` | Fossil fuels, carbon emissions, renewables, climate policy | `infrastructure_impact` |
+| 26 | `hardware_wearables` | Smart glasses, VR/AR headsets, fitness trackers | `product_launch` |
+| 27 | `consumer_protection` | AG enforcement, deceptive practices, UDAP, dark patterns | `litigation`, `child_safety` |
+
+**Usage tip:** `financial_results` confidence ≥ 0.4 is the trigger for the VADER inflation warning (see Genre-Aware Analysis). See `examples/topic_classification_demo.py` for a runnable demo.
+
 ## Framing-Aware Tone Correction Workflow
 
 VADER and TextBlob systematically misprice editorial tone in investigative journalism. Professional prose uses measured, confident language that lexical sentiment models score as positive — even when the editorial stance is clearly adversarial. MediaScope's tone correction pipeline fixes this through **10 correction paths (A–J)**, each addressing a specific VADER failure mode.

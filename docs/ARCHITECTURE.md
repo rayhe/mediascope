@@ -407,6 +407,7 @@ mediascope/
 │   ├── full_pipeline.py
 │   ├── same_event_comparison.py
 │   ├── framing_correction_demo.py
+│   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 100 annotated real-article analyses (see METHODOLOGY.md §17)
 ├── tests/                       # 1689 tests across 69 test files (all from real articles)

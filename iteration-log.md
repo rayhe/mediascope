@@ -1,6 +1,105 @@
 # MediaScope Iteration Log
 
 Tracks every improvement cycle run on the toolkit.
+## 2026-07-08 05:00 PT — Type D: Toolkit Quality & Documentation (Topic Classification Demo + N-Way Schema + Agent Guide)
+
+### Focus
+Created comprehensive topic classification example, added N-way cross-publication comparison function calling schema, and added 27-bucket topic reference table to AGENT_GUIDE.md. All 97 structural consistency tests pass.
+
+### New Example: `examples/topic_classification_demo.py` (+386 lines)
+
+Four demo functions covering the full topic classification workflow:
+
+1. **`demo_single_classification()`** — Classifies 13 real-world article snippets (drawn from annotated corpus) across 13 different topic buckets. Validates expected top-topic match for each. 13/13 correct.
+
+2. **`demo_multi_topic_article()`** — Demonstrates how a single article can span multiple topic buckets (child_safety + antitrust_regulation + consumer_protection + litigation). Shows how multi-topic classification enables per-topic asymmetry analysis.
+
+3. **`demo_genre_detection()`** — Shows how `financial_results` confidence ≥ 0.4 triggers the VADER inflation warning in the sentiment pipeline. Bridges topic classification to sentiment correction.
+
+4. **`demo_topic_bucket_reference()`** — Prints the complete 27-bucket reference table with descriptions + 12 adjacency warnings for commonly confused pairs (e.g. `layoffs` vs `workplace_culture`, `privacy_data` vs `cybersecurity`).
+
+Article snippets based on real sources: Reuters, Barron's, Wired, MIT Tech Review, Gizmodo, WebProNews.
+
+### AGENT_GUIDE.md Improvements (+79 lines)
+
+**N-way comparison function calling schema (`compare_multi_articles`):**
+- Full JSON schema for N-way cross-outlet comparison (≥2 articles)
+- Supports optional `editorial_modes` mapping for genre-aware interpretation
+- References `examples/same_event_comparison.py` and 10+ real N-way comparisons in `sample_output/`
+
+**Topic bucket quick reference table:**
+- All 27 buckets in a compact table with descriptions and confusable-pair warnings
+- Practical usage tip linking `financial_results` confidence to VADER inflation warning
+- Cross-references `examples/topic_classification_demo.py` for runnable demo
+
+### Other Updates
+- `README.md` — Added `topic_classification_demo.py` to examples table with description
+- `docs/ARCHITECTURE.md` — Added `topic_classification_demo.py` to file tree
+
+### Tests
+- 97 structural consistency tests pass (0 failures)
+- `topic_classification_demo.py` runs successfully: 13/13 topic classifications correct
+
+### Commit
+See git log for commit hash.
+
+## 2026-07-08 04:00 PT — Type B: Journalist/Publication Research (4 New Profiles: Williams, Bernal, Reynolds, Fussell)
+
+### Focus
+Added 4 new journalist profiles to `profiles/careers/journalists.yaml`. Fixed CareerTracker null-date bug. Updated all doc counts (176 journalists, 553 auto-detected migrations). All 97 structural consistency tests pass.
+
+### New Journalist Profiles
+
+**Greg Williams (Wired → Exponential View / Economist Enterprise)**
+- Career: Details Magazine (exec editor) → Wired (exec editor print/digital) → Wired UK EIC (2017-2021) → Deputy GED (2021-2026) → departed Apr 2026 to Exponential View (Azeem Azhar's research studio) / Economist Enterprise
+- 16-year Wired tenure (longest of any senior editor), 4× BSME Editor of the Year (Science & Tech): 2017, 2018, 2020, 2024
+- Chairman of VCG (venture acceleration). Chairs 2026 Orwell Prize for Journalism
+- Forthcoming book: "Code, Capital, Power" (2027) — analyzing Big Tech power
+- DiD value: his departure marks the end of Wired UK editorial independence — all UK coverage now flows through US-centralized Drummond structure
+- Sources: AI for Good/ITU, Specialist Speakers, FIPP, The Wrap, Speakers Corner
+
+**Natasha Bernal (FT → Wired Senior Business Editor)**
+- Career: TICbeat.com (Spanish tech) → The Lawyer (news editor) → The Telegraph (tech intelligence reporter) → Wired UK (Business Editor) → Financial Times (Deputy Tech News Editor) → Wired (Senior Business Editor)
+- London-based, bilingual (English/Spanish). Kingston University MA Journalism. Reuters trainee
+- WIRED Podcast regular contributor. Author of book on future of work (~2022)
+- Editorial gatekeeper for European tech business coverage — FT tenure gives institutional-prestige instincts vs adversarial Gizmodo→Vice pipeline
+- Sources: Muck Rack, The Org, TalkingBizNews, Kingston University, Cision UK
+
+**Matt Reynolds (Wired Senior Writer, Climate/Food)**
+- Career: New Scientist (tech reporter) → Wired (intern → staff writer → science editor → senior writer, Nov 2021)
+- Covers climate, food, biodiversity, energy. Oxford graduate. Author "The Future of Food" (2021, Penguin)
+- Reports to Tim Marchman (Director, Science). Signal: mattreynolds.45
+- Climate/energy lens intersects Big Tech coverage on data center power consumption, AI training environmental cost
+- Sources: TalkingBizNews, Sense About Science, Penguin Books, Scribd
+
+**Sidney Fussell (ex-Wired → Freelance Filmmaker)**
+- Career: Business Insider → Gizmodo → The Atlantic → Wired (senior staff writer, 2020-2022) → freelance filmmaker/journalist
+- Covered surveillance, ad tech, Silicon Valley, race and technology at Wired
+- Now primarily documentary filmmaker: co-directed "#WhileBlack" (2026 SXSW), exploring viral police brutality videos
+- Supported by Catapult Film Fund, Ford Foundation, Sundance Documentary Fund. BRIClab 2024-2025 fellow
+- DiD value: departure from Wired represents staff turnover during Drummond transition
+- Sources: TalkingBizNews, ITVS, BRIClab
+
+### Additional Findings
+- **Current Wired masthead verified** via cached version from eaglegeosystems.com: Drummond (GED), Williams listed as Deputy GED (now departed), Barrett (Executive Editor), 3 Directors (Schiffer/Business, Marchman/Science, Calore/Consumer Tech). Full desk structure with Signal handles captured.
+- **Wired "Cannes" Meta contractor article** (Jul 1-2 2026) widely cited across NY Post, WebProNews, dokmz, brownstoneworldwide, news-area — but original Wired article behind paywall, byline not confirmed in search results. Story about Meta's Covalen-managed project posing as teens to probe rival chatbots (45K+ prompts). Relevant for future Type A deep dive.
+
+### Bug Fix
+- `mediascope/careers/tracker.py` line 167: `gap = (arr_date - dep_date).days if dep_date else 0` → `if (dep_date and arr_date) else 0`. Fixed TypeError when career entries have `start: '?'` (None dates) in consecutive cross-publication events.
+
+### Count Updates (172→176 journalists, 542→553 migrations)
+- `README.md` — journalist count, migration count, careers_demo table row
+- `docs/EDITORIAL_HISTORIES.md` — §6 journalist count, migration count
+- `examples/careers_demo.py` — docstring journalist count
+
+### Tests
+- 97 structural consistency tests pass (0 failures)
+- Journalist count consistency verified (176 YAML = 176 in docs)
+- Migration count consistency verified (553 tracker = 553 in docs)
+
+### Commit
+`2a67f75` — Type B: Add 4 journalists (Williams, Bernal, Reynolds, Fussell) + tracker fix
+
 
 ## 2026-07-08 03:00 PT — Type A: Article Deep Dive (NY Post Meta $1.4T Youth Penalty + Cross-Pub Comparison)
 
