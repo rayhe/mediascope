@@ -7313,6 +7313,32 @@ def detect_framing_devices(
                         if any(w in _ll_context for w in _MEDICAL_TERMS):
                             continue
 
+                # --- Loaded language: literal "landmark" filter ----------------
+                # "landmark" as a dramatic event modifier is loaded language
+                # (e.g. "landmark ruling", "landmark verdict").  But when it
+                # means a physical place ("historical landmark", "famous
+                # landmark", "national landmark"), it's literal usage.
+                #
+                # Discovered in TechCrunch Muse Image article (Jul 7, 2026):
+                # "in front of a historical landmark" is a Meta marketing
+                # quote describing a photo use case, not editorial language.
+                # ---------------------------------------------------------
+                if device_type == "loaded_language":
+                    _ll_lower_lm = match.group().lower()
+                    if _ll_lower_lm == "landmark":
+                        _lm_ctx_start = max(0, start - 60)
+                        _lm_ctx_end = min(len(text), end + 60)
+                        _lm_context = text[_lm_ctx_start:_lm_ctx_end].lower()
+                        _LITERAL_LANDMARK_TERMS = (
+                            "historical", "historic", "famous",
+                            "national", "local", "nearby",
+                            "tourist", "in front of", "visit",
+                            "building", "monument", "site",
+                            "attraction",
+                        )
+                        if any(w in _lm_context for w in _LITERAL_LANDMARK_TERMS):
+                            continue
+
                 # --- Emotional appeal: factual medical condition filter ------
                 # "unable to speak/nod/respond" in articles about medical
                 # conditions (paralysis, ALS, locked-in syndrome, BCI) is a

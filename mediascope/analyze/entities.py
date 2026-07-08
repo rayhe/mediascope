@@ -72,7 +72,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Oakley smart glasses", "Andrew Bosworth", "Bosworth", "Boz",
             "Meta's smart glasses", "Meta's Ray-Ban",
             "Chris Cox", "Maher Saba", "Meta Superintelligence Labs",
-            "Applied AI", "Cambridge Analytica",
+            "Applied AI",
             "Model Capability Initiative", "MCI",
             "Agent Transformation Accelerator", "ATA",
             "Stephane Kasriel", "Kasriel",
@@ -119,7 +119,13 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Meta Compute", "Santosh Janardhan", "Janardhan",
             "Daniel Gross",
         ],
-        "regex": r"(?<!\w)(Meta Compute|Meta Superintelligence Labs|Meta Platforms|Meta Ray-Ban Display|Meta Fury|Meta One|Meta AI|Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport|Compute|Platforms|Ray-Ban|Fury|One|AI|Superintelligence))|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|(?-i:Zuck)(?=\s+(?:is|was|has|had|wants?|thinks?|said|says|will|would|could|should|might|may|does|did|isn|didn|can|won|cannot|also|personally|himself|recently|even|just|too|and|,|'s|'))|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark|Muse Image|Muse Video|(?-i:Mango)(?=(?:\s|,\s*)(?:is|was|code.?named?|model|image|AI|generator))|Facebook Marketplace|(?-i:Creator)(?=(?:\s|,\s*)(?:app|assistant|AI|is|was|and|,))|(?-i:Pocket)(?=(?:\s|,\s*)(?:app|vibe|is|was|and|,))|(?-i:Watermelon)(?=(?:\s|,\s*)(?:model|AI|is|was|has|had|'s|requires?|needs?|costs?|will|would|could|next|compute|training|frontier))|(?-i:Fury)(?=(?:\s|,\s*)(?:glasses|are|is|was|cost|have|included|and|AI|smart))|Adventurer|Starfire|Llama 4|(?:Meta'?s? )(?-i:Llama)|(?-i:Llama)(?=(?:\s|,\s*)(?:model|AI|language|LLM|is|was|and))|Joel Kaplan|Kaplan|Sheryl Sandberg|Sandberg|Nick Clegg|Clegg|Dina Powell McCormick|(?-i:Arena)(?=(?:\s|,\s*)(?:app|prediction|market|is|was|would|will|being|the))|Francis Brennan|Virtue AI|Fundamental AI Research|(?-i:FAIR)(?=(?:\s|,\s*)(?:Lab|lab|research|team|group))|Ime Archibong|Archibong|the social media (?:giant|company)|Conversation Focus|Alexandr Wang|Yann LeCun|(?-i:LeCun)|Adam Mosseri|Mosseri|Phyllis Jones|Santosh Janardhan|Janardhan|Daniel Gross)(?!\w)",
+        "regex": r"(?<!\w)(Meta Compute|Meta Superintelligence Labs|Meta Platforms|Meta Ray-Ban Display|Meta Fury|Meta One|Meta AI|Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport|Compute|Platforms|Ray-Ban|Fury|One|AI|Superintelligence))|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|(?-i:Zuck)(?=\s+(?:is|was|has|had|wants?|thinks?|said|says|will|would|could|should|might|may|does|did|isn|didn|can|won|cannot|also|personally|himself|recently|even|just|too|and|,|'s|'))|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Applied AI|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark|Muse Image|Muse Video|(?-i:Mango)(?=(?:\s|,\s*)(?:is|was|code.?named?|model|image|AI|generator))|Facebook Marketplace|(?-i:Creator)(?=(?:\s|,\s*)(?:app|assistant|AI|is|was|and|,))|(?-i:Pocket)(?=(?:\s|,\s*)(?:app|vibe|is|was|and|,))|(?-i:Watermelon)(?=(?:\s|,\s*)(?:model|AI|is|was|has|had|'s|requires?|needs?|costs?|will|would|could|next|compute|training|frontier))|(?-i:Fury)(?=(?:\s|,\s*)(?:glasses|are|is|was|cost|have|included|and|AI|smart))|Adventurer|Starfire|Llama 4|(?:Meta'?s? )(?-i:Llama)|(?-i:Llama)(?=(?:\s|,\s*)(?:model|AI|language|LLM|is|was|and))|Joel Kaplan|Kaplan|Sheryl Sandberg|Sandberg|Nick Clegg|Clegg|Dina Powell McCormick|(?-i:Arena)(?=(?:\s|,\s*)(?:app|prediction|market|is|was|would|will|being|the))|Francis Brennan|Virtue AI|Fundamental AI Research|(?-i:FAIR)(?=(?:\s|,\s*)(?:Lab|lab|research|team|group))|Ime Archibong|Archibong|the social media (?:giant|company)|Conversation Focus|Alexandr Wang|Yann LeCun|(?-i:LeCun)|Adam Mosseri|Mosseri|Phyllis Jones|Santosh Janardhan|Janardhan|Daniel Gross)(?!\w)",
+    },
+    "Cambridge Analytica": {
+        "aliases": [
+            "Cambridge Analytica",
+        ],
+        "regex": r"(?<!\w)Cambridge Analytica(?!\w)",
     },
     "Google": {
         "aliases": [

@@ -906,7 +906,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **75 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **76 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -924,13 +924,13 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 75 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 76 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
-| **Meta** |  79 | Meta, Meta Platforms, Facebook, Instagram, WhatsApp, Threads (+69 more) |
+| **Meta** |  85 | Meta, Meta Platforms, Facebook, Instagram, WhatsApp, Threads (+69 more) |
 | **Google** | 11 | Alphabet, Google, YouTube, DeepMind, Waymo, Sundar Pichai (+5 more) |
 | **Apple** | 11 | Apple, iPhone, iPad, Tim Cook, John Ternus, Apple Intelligence (+5 more) |
 | **Amazon** | 9 | Amazon, AWS, Alexa, Jeff Bezos, Andy Jassy, Amazon Web Services (+3 more) |
@@ -994,6 +994,7 @@ The following table documents all 75 entity clusters shipped with MediaScope, or
 | **Surveillance/Biometrics** | 8 | Rank One Computing, Rank One, Clearview AI, Clearview, NEC, Cognitec (+2 more) |
 | **Data/Intelligence Industry** | 12 | ShadowDragon, Babel Street, LexisNexis, Thomson Reuters CLEAR, Voyager Labs, Dataminr (+6 more) |
 | **Palantir** | 4 | Palantir, Alex Karp, Peter Thiel, Palantir Technologies |
+| **Cambridge Analytica** | 1 | Cambridge Analytica |
 
 #### Media, Critics & Public Figures
 
@@ -1235,7 +1236,7 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **122 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **124 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1345,7 +1346,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 122 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 88 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 124 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 88 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|

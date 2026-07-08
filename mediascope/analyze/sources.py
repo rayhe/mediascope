@@ -216,7 +216,8 @@ _NAME_STOP_NAMES: set[str] = {
     "Meta Starfire", "Meta Quest", "Meta Horizon",
     "Ray Ban", "Smart Glasses", "Gentle Monster",
     # AI model / product names that look like "First Last"
-    "Muse Spark", "Llama Scout", "Llama Maverick",
+    "Muse Spark", "Muse Image", "Muse Video",
+    "Llama Scout", "Llama Maverick",
     "Google Gemini", "Apple Intelligence",
     # Book/media titles that look like "First Last"
     "Careless People", "Brave New", "Dark Web",

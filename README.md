@@ -433,7 +433,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **1742 tests** across 72 test files, each covering a different analytical capability:
+MediaScope has **1780 tests** across 75 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -509,6 +509,9 @@ MediaScope has **1742 tests** across 72 test files, each covering a different an
 | `test_bloomberg_muse_image_entities.py` | 9 | Bloomberg Muse Image entity extraction: SpaceXAI→xAI cluster mapping, Anthropic PBC→Anthropic alias, CoreWeave Inc/Alphabet Inc's Google/Oracle Corp corporate suffix extraction |
 | `test_wsj_ai_spending_sources.py` | 13 | WSJ AI spending article source extraction: Pattern 0c "Name of Org VERB" (KeyBanc Capital fix), Pattern 0d reverse "VERB Name of Org" (Jefferies fix), Pattern 0e "Org analyst Name VERB" (Bernstein Research affiliation fix), full-text expert detection fallback |
 | `test_bofa_capex_watermelon.py` | 16 | BofA capex/Watermelon entity detection and framing: Watermelon codename cluster (comma-lookahead fix for appositive clauses), Muse Spark entity, BofA/Bank of America analyst note entities, hyperscaler capex entities (Microsoft, Google, Amazon), Meta Compute/neocloud entities, OpenAI Jalapeño codename, scale_magnitude "10x compute" and "nearly double" patterns, loaded_language bubble-risk and percentage-decline framing, cross-article (Barron's + Memeburn) entity and framing coverage. |
+| `test_compound_attribution_verbs.py` | 10 | Compound negative attribution verb detection: contrastive failure ("attempted yet failed"), contrastive concession ("reluctantly admitted"), defensive failure ("denied but was found") multi-word phrases, classification priority over single-word lookup, extraction preference |
+| `test_litigation_cascade.py` | 7 | Litigation cascade regression tests: multi-jurisdiction cascade detection, Gizmodo-style escalation patterns, minimal threshold validation, negative cases (single lawsuit, repeated same count) |
+| `test_techcrunch_muse_image_fixes.py` | 12 | TechCrunch Muse Image privacy article fixes: "Muse Video"/"Muse Image" product-name source false positive filter, Cambridge Analytica entity cluster separation from Meta, "landmark" literal-usage loaded_language context-aware suppression |
 
 ```bash
 # Run all tests

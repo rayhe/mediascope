@@ -410,7 +410,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 100 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 1742 tests across 72 test files (all from real articles)
+├── tests/                       # 1780 tests across 75 test files (all from real articles)
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
@@ -483,6 +483,9 @@ mediascope/
 │   ├── test_muse_image_deflation.py # iPhone-in-Canada Muse Image rollout: editorial_deflation (better-late-than-never idiom, I-guess hedge, conditional deflation, trailing minimizer), rhetorical_question (Who's-actually contraction), latecomer_narrative (saving-you-steps-from, competitor listing), integration test for closing-paragraph device cluster
 │   ├── test_bloomberg_muse_image_entities.py # Bloomberg Muse Image entity extraction: SpaceXAI→xAI cluster mapping, Anthropic PBC→Anthropic alias, CoreWeave Inc/Alphabet Inc's Google/Oracle Corp corporate suffix extraction
 │   ├── test_wsj_ai_spending_sources.py # WSJ AI spending article source extraction: Pattern 0c "Name of Org VERB" (KeyBanc Capital fix), Pattern 0d reverse "VERB Name of Org" (Jefferies fix), Pattern 0e "Org analyst Name VERB" (Bernstein Research affiliation fix), full-text expert detection fallback
+│   ├── test_compound_attribution_verbs.py # Compound negative attribution verb detection: contrastive failure/concession/defensive failure multi-word phrases, classification priority over single-word lookup
+│   ├── test_litigation_cascade.py # Litigation cascade regression tests: multi-jurisdiction cascade detection, escalation patterns, threshold validation, negative cases
+│   ├── test_techcrunch_muse_image_fixes.py # TechCrunch Muse Image privacy article: "Muse Video" product-name source false positive, Cambridge Analytica entity cluster separation, "landmark" literal-usage loaded_language suppression
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt
