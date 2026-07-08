@@ -1,6 +1,50 @@
 # MediaScope Iteration Log
 
 Tracks every improvement cycle run on the toolkit.
+
+## 2026-07-08 09:00 PT — Type D: Toolkit Quality & Documentation (FRAMING_REFERENCE Bugs, Zero-Named-Sources Docs + Tests)
+
+**Focus:** Fixed two FRAMING_REFERENCE.md bugs (device numbering collision and stale structural type count), documented the zero-named-sources quality check added in the 06:00 Type A iteration, fixed a case-sensitivity bug in the "according to" regex, and added 8 regression tests.
+
+### Bug Fixes
+
+1. **FRAMING_REFERENCE.md #65 numbering collision:** Device #65 was assigned to both "Default Burden Privacy" (Category 8, Regulatory & Legal Framing) and "False Balance" (Category 9, Narrative & Editorial Architecture). Renumbered Default Burden Privacy to #83 (its actual addition order — it was the 83rd device type added to the taxonomy).
+
+2. **FRAMING_REFERENCE.md structural type count:** "How to Use" section claimed "Structural (6 types)" but there are 7 structural post-pass devices (kicker_framing, delayed_defense, trend_bundling, analogy_stacking, speculative_framing, social_proof_amplification, tempering_coda). The summary table at the bottom already said 7 — the intro was stale from before tempering_coda was added. Fixed.
+
+3. **Case-sensitivity bug in `according to` regex:** `quality/standards.py` used case-sensitive regex for "according to [Name]" pattern, missing sentence-initial "According to Mark Johnson..." constructions. Added `re.IGNORECASE` flag.
+
+### Documentation: §6.1 Zero Named Sources Flag
+
+Added comprehensive documentation to QUALITY_STANDARDS.md for the `zero_named_sources` quality check (added in the 06:00 Type A iteration but not documented):
+
+- 4 detection patterns explained (post-attribution, pre-attribution, according-to, title-based)
+- Genre sensitivity notes (wire-service vs. editorial)
+- -12 score penalty documented
+- Discovery provenance: TechLusive Meta Muse Image privacy article (Jul 8, 2026)
+
+### New Tests: 8 zero-named-sources regression tests
+
+| Test | What It Covers |
+|---|---|
+| `test_article_with_named_sources_no_warning` | Post-attribution "said Jane Smith" satisfies check |
+| `test_article_with_pre_attribution_no_warning` | Pre-attribution "John Doe told" satisfies check |
+| `test_article_with_according_to_no_warning` | Lowercase "according to Mark Johnson" satisfies check |
+| `test_article_with_capitalized_according_to_no_warning` | Sentence-initial "According to Mark Johnson" satisfies check (tests re.IGNORECASE fix) |
+| `test_article_with_title_attribution_no_warning` | Title-based "Sarah Chen, a senior director" satisfies check |
+| `test_article_with_zero_named_sources_fires_warning` | Anonymous-only sourcing fires exactly one warning |
+| `test_zero_named_sources_penalty` | Verifies -12 score penalty delta |
+| `test_organizational_attribution_not_named_source` | "The company said" / "Meta stated" doesn't satisfy check |
+
+### Cumulative Stats
+- **Tests:** 1,697 (was 1,689) — 49 in test_quality_standards.py (was 41)
+- **Framing device types:** 83 (76 pattern-matched + 7 structural)
+- **Total regex patterns:** 460
+- **Annotated articles:** 119
+- **Journalists:** 176 (553 auto-detected migrations)
+
+**Commit:** `0a13c5f` — pushed to GitHub
+
 ## 2026-07-08 08:00 PT — Type C: Ownership & Funding Deep Dive (NYT v OpenAI Jun 2026 Discovery + Advance/Reddit Stake)
 
 **Focus:** Updated NYT litigation timeline with June 2026 Musk v. Altman cross-case discovery developments and refreshed Advance/Reddit stake data from 2025 proxy and live market data.
@@ -16351,3 +16395,36 @@ Re-run: 8 devices across 4 types (was 1/1). Closing paragraph fully instrumented
 - **Known conflicts (MIT TR):** 8 dimensions
 - **Test files:** 69
 - **Total tests:** 1689 (structural subset verified)
+
+---
+
+## Jul 8, 2026 10:00 PT — Type A: Article Deep Dive
+
+**Article:** "Mark Zuckerberg's New Social Network Just Crossed 500 Million Users—and Put X on Notice" (Georgia Fearn, Inc.com, Jul 7, 2026)
+
+**Rationale:** Fresh positive-coverage article about Threads reaching 500M MAU. Selected for calibrating sentiment scoring against non-adversarial coverage — the toolkit's corpus is heavily tilted toward adversarial/critical tech journalism. Inc.com article offers a substantially different editorial posture (business-magazine boosting) that exposed gaps in both scale_magnitude (user-count milestones) and competitive_positioning (headline-level competitive framing).
+
+**Findings:**
+- 4 named sources: David Carr (Similarweb), Anabel Quan-Haase (Western Ontario), Susan Li (Meta CFO), Mark Zuckerberg
+- 5 framing devices detected: scale_magnitude, competitive_positioning, corporate_reassurance_undercut, expert_contradiction, loaded_language
+- Structural pass: tempering_coda detected (article ends by walking back competitive headline)
+- Sentiment: ~+0.15 slightly positive with descending arc (celebration → qualification → caution)
+- 4 toolkit gaps identified, 2 implemented this iteration
+
+**Changes:**
+1. **scale_magnitude milestone pattern** (+1 regex): Matches user-base crossings like "crossed 500 million monthly active users". Existing patterns focused on dollar amounts, multipliers, and analogies — user-count milestones were undetected. Pattern: `\b(crossed|surpassed|reached|hit|topped|...) \d+ (million|billion|M|B) (users|subscribers|MAU|DAU|...)\b`
+2. **competitive_positioning headline patterns** (+3 regexes): "put(s|ting) X on notice", "leaves/left X behind/in the dust/eating dust", "overtakes/eclipses/dethrones [named rival]". Headline-level competitive framing that was undetected because existing patterns focused on in-text competitive comparisons.
+3. **Regression test file** (`test_inc_threads_500m_patterns.py`, 23 tests): 9 milestone positive matches, 3 negative guards, 3 "put on notice" matches, 3 "leaves behind" matches, 3 "overtakes" matches, 2 full-headline integration tests.
+4. **EXPECTED_TOTAL_PATTERNS** updated 460 → 464 in structural consistency test.
+5. **Doc updates:** ARCHITECTURE.md (test listing, count 1697→1720, 69→70 files, 460→464), README.md (same), QUALITY_STANDARDS.md (119→120 articles), METHODOLOGY.md (119→120 articles, 37→38 publications, Inc.com added to General Interest table, Jul 2026 count 21→22, trajectory updated).
+
+**New article analysis:** `examples/sample_output/inc_threads_500m_users_2026_07_07_analysis.md`
+**New article text:** `examples/sample_output/inc_threads_500m_users_2026_07_07_article.txt`
+**New publication:** Inc.com (38th distinct publication in corpus)
+
+**Stats snapshot:**
+- **Tests:** 1720 across 70 files
+- **Regex patterns:** 464 (was 460)
+- **Annotated articles:** 120 (was 119)
+- **Distinct publications:** 38 (was 37)
+- **Framing device types:** 83 (unchanged)

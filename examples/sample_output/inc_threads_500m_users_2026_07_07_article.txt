@@ -1,0 +1,43 @@
+SOURCE: Inc.com
+AUTHOR: Georgia Fearn
+DATE: July 7, 2026
+URL: https://www.inc.com/georgia-fearn/mark-zuckerbergs-new-social-network-just-crossed-500-million-users-and-put-x-on-notice/91369993
+HEADLINE: Mark Zuckerberg's New Social Network Just Crossed 500 Million Users—and Put X on Notice
+
+Meta says that Threads has crossed 500 million monthly active users, giving Mark Zuckerberg's three-year-old X rival a scale no other Twitter alternative has reached.
+
+The milestone puts Threads near the claimed size of SpaceX-owned X. Musk said in 2024 that X had 600 million monthly active users, though outside estimates vary because the platform no longer reports public user numbers. X's position within Musk's broader corporate empire shifted after xAI acquired X in 2025 and SpaceX acquired xAI in 2026.
+
+For Meta, the number also marks progress against a target Zuckerberg set when Threads launched in July 2023: Building a public conversation app that could eventually reach more than 1 billion people. At launch, Zuckerberg said, "Twitter has had the opportunity to do this but hasn't nailed it. Hopefully, we will."
+
+Similarweb, a digital-intelligence company that tracks web and app traffic, shared data with Inc. showing that Threads is running about 16 percent ahead of X in worldwide daily active users on iOS and Android. On the web, X still dominates. Similarweb says X gets about 12 times more daily web traffic than Threads.
+
+"The interconnections between Meta properties are certainly a strong element of the story of the growth in the Threads audience," David Carr, editor of insights news and research at Similarweb, tells Inc. "That said, the growth is clearly very real."
+
+Plus, Threads had one advantage no standalone startup could match: Instagram.
+
+Meta launched the app through Instagram, letting users sign up with existing accounts and bring over parts of their network. Zuckerberg said at launch that Threads reached 10 million sign-ups in seven hours. Within five days, it had passed 100 million users. On Twitter, as X was still called then, he posted the Spider-Man pointing meme.
+
+Anabel Quan-Haase, a professor at Western University who studies social media and digital communication, says that the Instagram connection gave Threads a structural advantage.
+
+"When you can move whole networks, the established linkages also move to the new platform," Quan-Haase tells Inc. Starting a new platform without an existing user base is much slower, she says, because it takes longer to reach "critical mass for meaningful content creation and engagement."
+
+The growth did not stop after the launch. Meta says Threads has added roughly 100 million monthly users since last August and has now crossed the half-billion mark.
+
+Meta is reaching that scale just as it begins selling Threads more directly to advertisers.
+
+The app launched during the upheaval after Musk's Twitter takeover, when advertisers and brands were reassessing their dependence on X. Three years later, Threads is being folded into Meta's advertising system and creator ecosystem.
+
+Meta has expanded Threads ads to more than 200 countries. However, chief financial officer Susan Li told investors in April that Threads is not expected to be a meaningful driver of Meta's overall impressions or revenue this year. That leaves Threads large enough for businesses to test seriously, but early enough that many competitors are still deciding what to do there.
+
+But Quan-Haase cautions that a big audience is not the same as useful attention. She describes Threads as "mostly" a low-engagement platform, where browsing, reposting, and liking may matter more than active posting.
+
+"For some products, a large customer base can be beneficial," she says, citing concerts or large-scale events. "But more niche products need to understand their communities and how they engage on social media before making any assumptions on how sheer numbers will translate into meaningful engagement."
+
+There are pitfalls to big growth, too. "Large numbers can hurt a brand's reputation," Quan-Haase says, if companies misunderstand a community's values or show up in a way that feels manipulative.
+
+Meta is pushing Threads deeper into those interest-based communities. The company says growth is being driven by groups built around books, basketball, parenting, music, and other topics. It is adding a dedicated communities hub, distinct visual identities for communities, and "Your Algo," a feature that lets users privately tell Threads what they want to see more or less of in their feeds.
+
+X is still hard to dislodge where speed matters most. It remains central to breaking news, politics, sports, finance, and real-time commentary. Monthly active users also do not show how often people post, how long they stay, or whether the platform drives sales. Meta says daily active users on Threads continue to "increase strongly across the globe," but it has not disclosed a current daily-user number.
+
+Meta and X did not immediately respond to Inc.'s requests for comment.

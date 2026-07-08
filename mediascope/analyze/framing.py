@@ -2423,6 +2423,24 @@ _SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
         r"world|global|nation|country|planet)",
         re.IGNORECASE,
     ),
+    # ---------------------------------------------------------------------------
+    # User-base milestone: "[verb] X million/billion users/MAU/DAU" — round-
+    # number milestones used as article hooks in platform competition reporting.
+    # Discovered via Inc.com Threads 500M article (Jul 7 2026): "crossed 500
+    # million monthly active users" — the milestone framing went undetected
+    # because existing patterns focused on dollar amounts and multipliers, not
+    # user-count milestones.
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b(?:crossed|surpassed|reached|hit|topped|passed|exceeded|"
+        r"broke(?:n)?\s+(?:through|past)?)\s+"
+        r"(?:the\s+)?(?:a\s+)?"
+        r"\d[\d,.]*\s*(?:million|billion|[MB])\s+"
+        r"(?:monthly\s+active\s+|daily\s+active\s+|registered\s+)?"
+        r"(?:users?|subscribers?|accounts?|members?|people|downloads?|"
+        r"sign[- ]?ups?|MAU|DAU)",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["scale_magnitude"] = _SCALE_MAGNITUDE_PATTERNS
@@ -5488,6 +5506,28 @@ _COMPETITIVE_POSITIONING_PATTERNS: list[re.Pattern] = [
         r"reason\s+(?:to |for )"
         r"(?:consumers?|users?|people|buyers?|customers?)\s+to\s+"
         r"(?:buy|choose|switch|prefer|pick|opt for|go with)\b",
+        re.IGNORECASE,
+    ),
+    # ---------------------------------------------------------------------------
+    # Competitive challenge headlines: "put X on notice," "leaves X behind,"
+    # "overtakes X" — headline framing that positions subject achievement
+    # as a direct competitive threat.
+    # Discovered via Inc.com Threads 500M article (Jul 7 2026): headline
+    # "Put X on Notice" frames the milestone as competitive aggression
+    # rather than neutral growth reporting.
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\bput(?:s|ting)?\s+\w+\s+on\s+notice\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:leaves?|left)\s+\w+\s+(?:behind|in the dust|eating dust)\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:overtakes?|overtook|surpasses?|eclipses?|dethrones?)\s+"
+        r"(?:X|Twitter|Google|Apple|Microsoft|Amazon|Meta|TikTok|Snap(?:chat)?|"
+        r"rival|competitor)\b",
         re.IGNORECASE,
     ),
 ]
