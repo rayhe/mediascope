@@ -6307,14 +6307,133 @@ _VALUATION_COMPARISON_PATTERNS: list[re.Pattern] = [
 ]
 _DEVICE_PATTERNS["valuation_comparison"] = _VALUATION_COMPARISON_PATTERNS
 
+
+# ---------------------------------------------------------------------------
+# Narrative reframing: editorial technique where the author explicitly
+# acknowledges an existing narrative then reframes it as incomplete, wrong,
+# or missing nuance.  Common in investor analysis and investigative
+# journalism.  The move is: "Yes, [concern] is fair.  But it is also
+# [incomplete]."
+_NARRATIVE_REFRAMING_PATTERNS: list[re.Pattern] = [
+    # "That concern/worry is fair/valid. It is also incomplete/simplistic."
+    re.compile(
+        r"\b(?:that|this|the)\s+"
+        r"(?:concern|worry|fear|narrative|argument|reading|framing|criticism|objection|interpretation|take|story|thesis)"
+        r"\s+(?:is|was|seems?|appears?)\s+"
+        r"(?:fair|valid|reasonable|understandable|legitimate|real|correct|accurate|partially right|not wrong)"
+        r"[.;]\s+"
+        r"(?:it|but it|and yet it)\s+"
+        r"(?:is|was)\s+(?:also\s+)?"
+        r"(?:incomplete|simplistic|misleading|wrong|too simple|too narrow|too clean|missing|insufficient|inadequate|reductive)",
+        re.IGNORECASE,
+    ),
+    # "The lazy/easy/obvious version/take says..."
+    re.compile(
+        r"\b(?:the|a)\s+"
+        r"(?:lazy|easy|obvious|simple|surface|naive|sloppy|casual|quick|popular|common|conventional|standard|default)"
+        r"\s+(?:version|read|reading|take|interpretation|story|narrative|explanation|analysis|framing|argument)"
+        r"\s+(?:says?|is that|would be|suggests?|assumes?|holds?|goes|imagines?)",
+        re.IGNORECASE,
+    ),
+    # "the [adj] story is too simple/clean/narrow"
+    re.compile(
+        r"\bthe\s+\w+\s+(?:story|narrative|thesis|argument|take|reading|case|explanation|version)"
+        r"\s+is\s+(?:too\s+)?(?:simple|clean|narrow|neat|tidy|convenient|incomplete|reductive|misleading)",
+        re.IGNORECASE,
+    ),
+    # "The better/real/harder question is..."
+    re.compile(
+        r"\b(?:the|a)\s+"
+        r"(?:better|real|harder|right|more useful|more interesting|more important|deeper|sharper|tougher|cleaner|smarter)"
+        r"\s+(?:question|frame|lens|test|signal|metric|measure|way to think about)"
+        r"\s+(?:is|would be|asks|comes)",
+        re.IGNORECASE,
+    ),
+    # "not whether X ... The better question"
+    re.compile(
+        r"\bnot\s+(?:whether|that|if|about|because)\s+.{5,60}?\.\s+"
+        r"(?:the|a)?\s*(?:better|real|harder|right|more useful|deeper|cleaner)\s+(?:question|frame|test)",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["narrative_reframing"] = _NARRATIVE_REFRAMING_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Dismissive qualifier: uses pejorative adjectives to characterize a
+# viewpoint or argument before presenting it, subtly delegitimizing it.
+_DISMISSIVE_QUALIFIER_PATTERNS: list[re.Pattern] = [
+    # "The lazy/sloppy/naive version says..."
+    re.compile(
+        r"\b(?:the|a)\s+"
+        r"(?:lazy|sloppy|naive|simplistic|hand-wavy|hand wavy|shallow|facile|crude|glib|careless|knee-jerk|reflexive)"
+        r"\s+(?:version|reading|take|interpretation|view|argument|response|answer|explanation|story|narrative|analysis|critique|objection)",
+        re.IGNORECASE,
+    ),
+    # "easy worry" / "convenient narrative"
+    re.compile(
+        r"\b(?:an?\s+)?(?:easy|convenient|cheap|comfortable|familiar|predictable|tired|stale|fashionable|trendy)"
+        r"\s+(?:worry|concern|narrative|argument|explanation|take|framing|criticism|objection|talking point)",
+        re.IGNORECASE,
+    ),
+    # "gives investors an easy worry/excuse"
+    re.compile(
+        r"\b(?:gives?|offers?|provides?|hands?|supplies|creates?)\s+"
+        r"(?:\w+\s+)?(?:an?\s+)?(?:easy|convenient|cheap|obvious|ready-made|readymade|comfortable)"
+        r"\s+(?:worry|concern|excuse|explanation|answer|narrative|out|objection|talking point)",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["dismissive_qualifier"] = _DISMISSIVE_QUALIFIER_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# Bull/bear case structuring: investor-media genre pattern organizing
+# analysis into explicit "what would support/break the thesis" or
+# "bull case / bear case" sections.
+_BULL_BEAR_STRUCTURING_PATTERNS: list[re.Pattern] = [
+    # "What Would Support/Break the Thesis?"
+    re.compile(
+        r"\b(?:what\s+would\s+)"
+        r"(?:support|break|confirm|validate|strengthen|weaken|undermine|challenge|invalidate|disprove)"
+        r"\s+(?:the\s+)?(?:thesis|case|argument|narrative|bull case|bear case|story|view)",
+        re.IGNORECASE,
+    ),
+    # "The bull/bear case gets stronger/weaker if..."
+    re.compile(
+        r"\b(?:the\s+)?(?:bull|bear|upside|downside|optimistic|pessimistic|positive|negative)"
+        r"\s+(?:case|thesis|argument|scenario|view|read)"
+        r"\s+(?:gets?|grows?|becomes?|turns?|looks?|is)\s+"
+        r"(?:stronger|weaker|clearer|harder|more compelling|less convincing|more credible|more fragile)",
+        re.IGNORECASE,
+    ),
+    # "The first/second/third signal/warning would be..."
+    re.compile(
+        r"\b(?:the\s+)?(?:first|second|third|fourth|fifth|next|final|clearest|biggest|strongest|most important)"
+        r"\s+(?:signal|warning|test|indicator|sign|evidence|marker|data point|proof|catalyst)"
+        r"\s+(?:would be|is|comes from|involves?|requires?)",
+        re.IGNORECASE,
+    ),
+    # "If X keeps/stops doing Y, the [narrative] is [adjective]"
+    re.compile(
+        r"\bif\s+\w+\s+(?:keeps?|stops?|slows?|continues?|accelerates?|pulls? back|reverses?)\s+.{5,60}?"
+        r",?\s*the\s+\w+(?:\s+\w+)?\s+(?:story|narrative|thesis|case|argument|concern|warning)"
+        r"\s+(?:is|becomes?|gets?|looks?|remains?)\s+"
+        r"(?:incomplete|real|stronger|weaker|dead|alive|validated|broken|confirmed|questionable)",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["bull_bear_structuring"] = _BULL_BEAR_STRUCTURING_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 71 pattern-matched device types plus 6 structural
-    post-pass types (77 total).
+    Scans for 74 pattern-matched device types plus 6 structural
+    post-pass types (80 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
@@ -6355,7 +6474,9 @@ def detect_framing_devices(
     strategic_reversal, straw_man, talent_hemorrhage,
     taxonomy_framing, timeline_implication,
     two_tier_treatment, usage_dismissal_undercut,
-    valuation_comparison, and worker_replacement_irony.
+    valuation_comparison, worker_replacement_irony,
+    narrative_reframing, dismissive_qualifier,
+    and bull_bear_structuring.
 
     Structural post-pass (6): delayed_defense, kicker_framing,
     analogy_stacking, speculative_framing, trend_bundling,

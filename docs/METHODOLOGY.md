@@ -181,7 +181,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 77 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (61 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 80 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (64 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -266,6 +266,9 @@ These were added through systematic analysis of real articles from the five trac
 | **Prescriptive Solutionism** | Trade publication technique of transforming accountability or controversy stories into management playbooks by inserting prescriptive bullet lists, "actionable steps," or "key takeaways" sections. Normalizes the underlying behavior by implying it is a solvable governance problem rather than a systemic or ethical issue. Transforms accountability journalism into vendor-neutral consulting content | "actionable steps for IT leaders"; "advises executives to consider"; "executives must balance/evaluate/implement"; "when training AI, there are steps" | TechTarget MCI Keystroke article (Jul 2, 2026) — two full sections of prescriptive bullet lists ("He advises executives to consider the following" + "Actionable steps for IT leaders") transform a data-exposure surveillance story into a management checklist. The underlying question (should this surveillance exist?) is replaced with how-to-manage-it governance steps |
 | **Strategic Disclosure** | A party in a dispute strategically discloses an opponent's legal demand, internal figure, or unfavorable position to frame it as extreme or unreasonable. The journalist reports the disclosure but the framing originates with the disclosing party, not editorial choice. Distinct from loaded_language (journalist's own word choice) and outsourced_intensity (quoting legal filings' loaded language) | "Meta said in a recent court filing"; "the attorneys claim"; "the filing states"; party-originated figures placed to shock | Gizmodo $1.4T Existential Threat article (Jul 7, 2026) — Meta's attorneys disclose the $1.4 trillion damages figure in a court filing to frame it as absurd ("no case ... one defendant was ordered to pay over one trillion dollars"), and the journalist reports this party-originated framing |
 | **Valuation Comparison** | Comparing a penalty, cost, or liability amount to a company's market capitalization or total valuation to make the figure feel existentially threatening. Distinct from scale_magnitude (which uses raw numbers for impact) because the comparison domain is specifically the company's own financial identity | "compared to the company's market capitalization"; "close to/nearly equal to/approaching [company's] market cap/valuation/enterprise value"; "$X trillion ... market capitalization" in proximity | Gizmodo $1.4T Existential Threat article (Jul 7, 2026) — "$1.4 trillion" damages "compared to the company's market capitalization, which is just above $1.5 trillion" frames the penalty as near-total corporate annihilation |
+| **Narrative Reframing** | Editorial technique of explicitly acknowledging an existing narrative (the "conventional" or "lazy" read) then dismissing it as incomplete, simplistic, or missing nuance. Allows the author to redirect the reader's framing without refuting the original concern's facts. Distinct from editorial_deflation (which punctures after building up) because this pattern validates-then-pivots | "That concern is fair. It is also incomplete"; "The lazy/easy version says"; "the [adj] story is too simple"; "The better/real question is" | Motley Fool Meta Compute article (Jul 7, 2026) — 8 instances including "That concern is fair. It is also incomplete," "The lazy version says every major AI company needs every GPU forever," "the overbought story is too simple" |
+| **Dismissive Qualifier** | Using pejorative or dismissive adjectives to characterize a viewpoint or argument before presenting it, subtly delegitimizing it. The labeling precedes engagement with the substance. Distinct from sarcastic_correction (which mocks after) and editorial_deflation (which deflates after building up) | "The lazy/sloppy/naive version"; "an easy/convenient/cheap worry/concern/narrative"; "gives investors an easy worry" | Motley Fool Meta Compute article (Jul 7, 2026) — "gives investors an easy worry" and "The lazy version says" pre-label opposing viewpoints as unserious before engaging |
+| **Bull/Bear Structuring** | Investor-media genre pattern organizing analysis into explicit "what would support/break the thesis" or "bull case / bear case" sections with enumerated signals. Creates appearance of balanced analysis while structural weight (word count, position, elaboration) can tilt toward one side | "What Would Support/Break the Thesis?"; "The bull/bear case gets stronger if"; "The first/second/third signal/warning would be" | Motley Fool Meta Compute article (Jul 7, 2026) — 14 instances across two structured sections: 4 bullish signals (presented first, more expansively) and 4 bearish signals, with conclusion tilting bullish ("less like a capex surrender and more like an infrastructure shuffle") |
 
 #### Structural Devices (Post-Pass)
 
@@ -745,7 +748,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 77-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 80-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -900,7 +903,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **70 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **75 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -918,18 +921,18 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 70 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 75 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
-| **Meta** | 75 | Meta, Meta Platforms, Facebook, Instagram, WhatsApp, Threads (+69 more) |
+| **Meta** |  79 | Meta, Meta Platforms, Facebook, Instagram, WhatsApp, Threads (+69 more) |
 | **Google** | 11 | Alphabet, Google, YouTube, DeepMind, Waymo, Sundar Pichai (+5 more) |
 | **Apple** | 11 | Apple, iPhone, iPad, Tim Cook, John Ternus, Apple Intelligence (+5 more) |
 | **Amazon** | 9 | Amazon, AWS, Alexa, Jeff Bezos, Andy Jassy, Amazon Web Services (+3 more) |
 | **Microsoft** | 9 | Microsoft, Satya Nadella, Azure, Bing, LinkedIn, GitHub (+3 more) |
-| **OpenAI** | 10 | OpenAI, Sam Altman, ChatGPT, GPT-4, GPT-5, DALL-E (+4 more) |
+| **OpenAI** |  11 | OpenAI, Sam Altman, ChatGPT, GPT-4, GPT-5, DALL-E (+4 more) |
 
 #### AI & Cloud Infrastructure
 
@@ -937,7 +940,7 @@ The following table documents all 70 entity clusters shipped with MediaScope, or
 |---|---|---|
 | **Anthropic** | 8 | Anthropic, Dario Amodei, Daniela Amodei, Claude, Mythos, Fable (+2 more) |
 | **xAI** | 4 | xAI, Grok, Colossus, Colossus II |
-| **Nvidia** | 14 | Nvidia, NVIDIA, Jensen Huang, CUDA, H100, H200 (+8 more) |
+| **Nvidia** |  17 | Nvidia, NVIDIA, Jensen Huang, CUDA, H100, H200 (+8 more) |
 | **AMD** | 7 | AMD, Advanced Micro Devices, Lisa Su, EPYC, Ryzen, Radeon (+1 more) |
 | **Intel** | 7 | Intel, Intel Corporation, Pat Gelsinger, Lip-Bu Tan, Gaudi, Xeon (+1 more) |
 | **Qualcomm** | 6 | Qualcomm, Qualcomm Technologies, Cristiano Amon, Snapdragon, Dragonfly, Hexagon |
@@ -947,6 +950,11 @@ The following table documents all 70 entity clusters shipped with MediaScope, or
 | **Micron** | 3 | Micron, Micron Technology, Sanjay Mehrotra |
 | **CoreWeave** | 2 | CoreWeave, Mike Intrator |
 | **Nebius** | 2 | Nebius, Nebius Group |
+| **Oracle** | 6 | Oracle, Oracle Cloud, Oracle Corporation, Larry Ellison, Ellison, Safra Catz |
+| **Samsung** | 5 | Samsung, Samsung Electronics, Samsung Semiconductor, Samsung Foundry, Samsung HBM |
+| **SK Hynix** | 3 | SK Hynix, SK hynix, Hynix |
+| **Semiconductor Equipment** | 8 | KLA, KLA Corporation, Lam Research, Lam, Applied Materials, Tokyo Electron, ASML, Screen Holdings |
+| **Storage/Memory** | 4 | SanDisk, Western Digital, WD, Seagate |
 | **AI Infrastructure** | 1 | Scale AI |
 | **AI Chatbot Products** | 2 | Character.AI, Character AI |
 | **Outsourcing/Contractors** | 3 | Covalen, Sama, Accenture |
@@ -1024,7 +1032,7 @@ The following table documents all 70 entity clusters shipped with MediaScope, or
 | **VC/Tech Investors** | 10 | Marc Andreessen, Andreessen, Andreessen Horowitz, a16z, Sequoia Capital, Sequoia (+4 more) |
 | **Prediction Markets/Fintech** | 13 | Polymarket, Kalshi, Robinhood, Interactive Brokers, PredictIt, Metaculus (+7 more) |
 | **Indian Fintech** | 4 | CRED, Kunal Shah, PhonePe, UPI |
-| **Financial Services** | 27 | Visa, Mastercard, American Express, Amex, Goldman Sachs, JPMorgan, JPMorgan Chase, PayPal, Stripe, Adyen (+17 more) |
+| **Financial Services** |  29 | Visa, Mastercard, American Express, Amex, Goldman Sachs, JPMorgan, JPMorgan Chase, PayPal, Stripe, Adyen (+17 more) |
 
 #### Labor, Geopolitics & Society
 
@@ -1224,13 +1232,13 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **112 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **114 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
 ### 17.2 Publication Distribution
 
-The corpus spans **34 distinct publications** across 5 editorial modes:
+The corpus spans **35 distinct publications** across 5 editorial modes:
 
 #### Tracked Publications (5 publications, 55 articles)
 
@@ -1332,7 +1340,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 112 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 85 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 114 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 85 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
@@ -1364,7 +1372,7 @@ The Zuckerberg town hall cluster (Jul 2–4, 2026) is the highest-value comparis
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 77 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 80 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|

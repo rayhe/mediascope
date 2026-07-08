@@ -374,8 +374,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 71, (
-            f"Expected 71 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 74, (
+            f"Expected 74 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -492,6 +492,12 @@ class TestFramingDeviceRegistry:
             "strategic_disclosure",
             # Valuation comparison (1) — comparing penalty/cost to market cap to make it feel existential
             "valuation_comparison",
+            # Narrative reframing (1) — explicitly dismissing surface narrative as incomplete
+            "narrative_reframing",
+            # Dismissive qualifier (1) — pejorative adjectives delegitimizing a viewpoint
+            "dismissive_qualifier",
+            # Bull/bear structuring (1) — investor-media structured thesis/antithesis format
+            "bull_bear_structuring",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual

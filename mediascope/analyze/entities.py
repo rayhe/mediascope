@@ -173,11 +173,11 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
     },
     "Nvidia": {
         "aliases": [
-            "Nvidia", "NVIDIA", "Jensen Huang", "CUDA", "H100", "H200",
-            "A100", "B200", "GB200", "DGX", "GeForce", "Omniverse",
-            "Isaac Sim", "NVLink",
+            "Nvidia", "NVIDIA", "NVDA", "Jensen Huang", "CUDA", "H100",
+            "H200", "A100", "B200", "GB200", "DGX", "GeForce", "Omniverse",
+            "Isaac Sim", "NVLink", "Rubin", "Blackwell",
         ],
-        "regex": r"(?<!\w)((?-i:NVIDIA)|Nvidia|Jensen Huang|(?-i:CUDA)|(?-i:H100|H200|A100|B200|GB200|DGX)|GeForce|Omniverse|Isaac Sim|NVLink)(?!\w)",
+        "regex": r"(?<!\w)((?-i:NVIDIA|NVDA)|Nvidia|Jensen Huang|(?-i:CUDA)|(?-i:H100|H200|A100|B200|GB200|DGX)|GeForce|Omniverse|Isaac Sim|NVLink|(?-i:Rubin)(?=[,\s]+(?:platform|chip|GPU|system|cycle|generation|architecture|and|later))|(?-i:Blackwell)(?=[,\s]+(?:platform|chip|GPU|system|architecture|cluster|and|later)))(?!\w)",
     },
     "Qualcomm": {
         "aliases": [

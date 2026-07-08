@@ -15762,3 +15762,53 @@ Pattern count: 425 → 428
 - **Annotated articles:** 113
 - **Framing device types:** 77 (71 pattern-matched + 6 structural)
 - **Topic buckets:** 27
+
+---
+
+### Type A — Article Deep Dive: Motley Fool "Meta Overbuy AI Compute" (Jul 7, 2026 19:00 PT)
+
+#### Article
+- **Source:** The Motley Fool — "Did Meta Overbuy AI Compute, or Is the Market Asking the Wrong Question?" (Jul 7, 2026)
+- **Genre:** Investor analysis (bull/bear thesis structuring)
+- **Key finding:** Investor-media articles use a distinct genre pattern of organized bull/bear case structuring, narrative reframing (acknowledging then dismissing common concerns), and dismissive qualifiers — techniques that subtly direct reader conclusions while appearing balanced
+
+#### Improvements
+
+**Entity detection:**
+- Added `NVDA` ticker symbol to Nvidia cluster regex
+- Added `Rubin` (context-sensitive: requires lookahead for platform/architecture/GPU context) and `Blackwell` (Nvidia platform codenames)
+- Entity count on article: 40 → 51 mentions
+
+**Framing patterns (+3 new types, +12 regex patterns):**
+- `narrative_reframing` (5 patterns): "That concern is fair. It is also incomplete," "The lazy version says," "the overbought story is too simple"
+- `dismissive_qualifier` (3 patterns): "an easy worry," "The lazy version," "a convenient narrative"
+- `bull_bear_structuring` (4 patterns): "What Would Support/Break the Thesis?," "The bull/bear case gets stronger if," conditional narrative judgments
+- Framing devices on article: 6 → 30
+
+**Doc/test sync:**
+- Updated all cross-doc counts: 80 types (74 pattern-matched + 6 structural), 443 patterns
+- Fixed framing.py docstring (77→80 total, added 3 new type names to list)
+- METHODOLOGY.md §15: 70→75 entity clusters, added 5 missing cluster table rows (Oracle, Samsung, SK Hynix, Semiconductor Equipment, Storage/Memory), fixed alias counts (Meta 75→79, OpenAI 10→11, Nvidia 14→17, Financial Services 27→29)
+- METHODOLOGY.md §17: 34→35 distinct publications (added Motley Fool slug)
+- ARCHITECTURE.md: bull/bear structuring added to Extended device list
+- README.md: test file table updated with test_investor_framing.py and test_memeburn_chip_selloff.py rows
+
+#### Tests
+- **+36 new tests** in `test_investor_framing.py` (6 ticker detection, 9 narrative_reframing, 5 dismissive_qualifier, 9 bull_bear_structuring, 6 Motley Fool article integration, 1 false positive guard)
+- **Test files:** 66 (was 65)
+- **Full suite:** 1631 tests, all passing (was 1569)
+- **Structural consistency:** 97/97 green
+
+#### Artifact Files
+- `examples/sample_output/motleyfool_meta_overbuy_compute_2026_07_07_article.txt`
+- `examples/sample_output/motleyfool_meta_overbuy_compute_2026_07_07_analysis.md`
+- `tests/test_investor_framing.py`
+
+#### Cumulative Stats
+- **Entity clusters:** 75 (alias counts corrected in docs)
+- **Annotated articles:** 114
+- **Framing device types:** 80 (74 pattern-matched + 6 structural)
+- **Total regex patterns:** 443
+- **Topic buckets:** 27
+- **Test files:** 66
+- **Total tests:** 1631
