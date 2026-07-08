@@ -11662,3 +11662,189 @@ journalists:
     source_url: https://www.technologyreview.com/author/amanda-silverman/
     verified: 'Jul 2026: Confirmed via multiple Roundtable appearances (2025-2026), series editor credit, and upcoming Jul
       2026 session.'
+- career:
+  - publication: details-magazine
+    role: executive_editor
+    start: '?'
+    end: '?'
+    beat: culture, style
+    notes: Executive editor at Condé Nast's Details Magazine (men's lifestyle). Pre-Wired role in Condé Nast ecosystem.
+  - publication: wired
+    role: executive_editor_print_digital
+    start: '?'
+    end: '2017'
+    beat: technology, innovation
+    notes: Executive editor of print and digital at Wired. Pre-EIC UK role — established Williams within Wired's leadership structure.
+  - publication: wired
+    role: eic_uk
+    start: '2017'
+    end: '2021'
+    beat: technology, science, innovation
+    notes: 'Editor-in-Chief of Wired UK. Established new revenue streams: consulting, events, WIRED book series. Won BSME Editor of the Year (Science & Technology) 2017, 2018, 2020. Launched OTT channel (first CN brand to do so, 2018). Built distinctive UK editorial voice with own cover stories. Judged Royal Society Science Book Prize 2018.'
+    source_url: https://www.fipp.com/news/wired-appoints-greg-williams-deputy-global-editorial-director/
+  - publication: wired
+    role: deputy_global_editorial_director
+    start: '2021'
+    end: '2026-04'
+    beat: technology, innovation, global strategy
+    event_type: promoted
+    notes: 'Promoted to Deputy Global Editorial Director under Gideon Lichfield (then under Drummond from Sept 2023). Continued to oversee UK-specific products (print, events, supplements). Won BSME Editor of the Year 2024. Part of Condé Nast unification of global editorial structures. Reported to Anna Wintour via Drummond. His departure in Apr 2026 effectively ended Wired UK as a semi-autonomous editorial entity.'
+    source_url: https://thewrap.com/wired-names-greg-williams-deputy-global-editorial-director/
+  - publication: exponential-view
+    role: inaugural_executive_editor
+    start: '2026-04'
+    end: present
+    beat: AI, exponential technologies
+    event_type: departed
+    notes: 'Departed Wired for Exponential View (Azeem Azhar research studio). Also now at Economist Enterprise (The Economist Group B2B brand). Chairs 2026 Orwell Prize for Journalism. Chairman of VCG (venture acceleration, early-stage startups in AI, healthcare, cybersecurity, biotech, space). Forthcoming book: "Code, Capital, Power: How Big Tech Companies Redefined Markets, Reshaped Global Order and Are Transforming Society in Their Image" (2027).'
+    source_url: https://www.specialistspeakers.com/speaker-profile/greg-williams
+  multi_publication: true
+  name: Greg Williams
+  notes: 'KEY EDITORIAL LEADERSHIP MIGRATION: 16-year Wired tenure (longest of any senior editor) → Economist Enterprise/Exponential View. 4× BSME Editor of the Year (Science & Technology): 2017, 2018, 2020, 2024. Author of six novels plus forthcoming "Code, Capital, Power" (2027) analyzing Big Tech power. Interviewed Gates, Nadella, Hassabis, Tony Blair. His departure alongside the UK print edition cancellation (Jan 2026), Peter Guest exit (Dec 2025), and 7 UK editorial staff losses marks the end of Wired UK''s editorial independence — all UK coverage now flows through US-centralized Drummond structure. FOR DiD ANALYSIS: His long UK tenure vs Drummond''s adversarial US pivot makes him a natural experiment in institutional vs editorial leadership framing.'
+  source_urls:
+  - https://aiforgood.itu.int/speaker/greg-williams/
+  - https://www.specialistspeakers.com/speaker-profile/greg-williams
+  - https://www.fipp.com/news/wired-appoints-greg-williams-deputy-global-editorial-director/
+  - https://thewrap.com/wired-names-greg-williams-deputy-global-editorial-director/
+  - https://www.speakerscorner.co.uk/speaker/greg-williams
+- career:
+  - publication: ticbeat
+    role: senior_tech_reporter
+    start: '?'
+    end: '?'
+    beat: technology, gadgets
+    notes: 'One of Spain''s top online tech publications. Spanish-language tech journalism — gave Bernal bilingual tech reporting foundation.'
+    source_url: https://about.me/natasha.bernal
+  - publication: the-lawyer
+    role: news_editor
+    start: '?'
+    end: '?'
+    beat: legal news, finance
+    notes: 'News editor at TheLawyer.com (UK legal trade publication). Also held roles as reporter and projects editor. Legal trade background unusual for tech journalism pipeline.'
+    source_url: https://theorg.com/org/wired/
+  - publication: the-telegraph
+    role: tech_intelligence_reporter
+    start: '?'
+    end: '?'
+    beat: technology
+    notes: Technology Intelligence Reporter at The Telegraph. Covered tech companies for UK broadsheet.
+    source_url: https://cision.co.uk/media-moves/
+  - publication: wired
+    role: business_editor_uk
+    start: '?'
+    end: '?'
+    beat: technology business, fintech, future of work
+    notes: 'Business Editor at Wired UK. Commissioned and edited Wired''s UK coverage of tech companies and societal impact. Regular contributor to WIRED Podcast. Moderated panels at WIRED Smarter events. Authored book on future of work.'
+    source_url: https://theorg.com/org/wired/
+  - publication: financial-times
+    role: deputy_tech_news_editor
+    start: '?'
+    end: '?'
+    beat: technology
+    event_type: hired
+    notes: 'Deputy Technology News Editor at FT. Joined from Wired UK. KEY MIGRATION: Condé Nast → Pearson/Nikkei pipeline. Editing role gave her institutional prestige journalism grounding.'
+    source_url: https://talkingbiznews.com/they-re-hiring/ft-hires-bernal-as-deputy-tech-news-editor/
+  - publication: wired
+    role: senior_business_editor
+    start: '?'
+    end: present
+    beat: technology business, AI, Big Tech, fintech
+    event_type: hired
+    notes: 'Senior Business Editor at Wired (returned from FT). London-based. Listed on current Wired masthead alongside Zoë Schiffer (Director, Business & Industry) and Louise Matsakis (Senior Business Editor). Part of expanded Drummond-era business desk. Edits European tech business coverage. Not posting on X — active on Bluesky: natashabernal.bsky.social.'
+    source_url: https://muckrack.com/natasha-bernal
+  multi_publication: true
+  name: Natasha Bernal
+  notes: 'Senior Business Editor at Wired (London). Unusual career arc: Spanish tech journalism (TICbeat) → UK legal trade (The Lawyer) → UK broadsheet (Telegraph) → Condé Nast (Wired UK) → prestige financial (FT) → back to Condé Nast (Wired). Bilingual (English/Spanish). Kingston University MA Journalism. WIRED Podcast regular contributor. Trainee reporter at Reuters News Agency. Author of book on future of work (published ~2022). FOR MEDIASCOPE: As Senior Business Editor in London, she is the editorial gatekeeper for Wired''s European tech business coverage — her editorial decisions shape how Meta, Google, Apple, and other Big Tech companies are framed for UK/European audiences. Her FT tenure gives her institutional-prestige-journalism instincts that may produce different framing choices than the adversarial Gizmodo→Vice pipeline that dominates the US business desk (Schiffer, Matsakis).'
+  source_urls:
+  - https://muckrack.com/natasha-bernal
+  - https://theorg.com/org/wired/
+  - https://talkingbiznews.com/they-re-hiring/ft-hires-bernal-as-deputy-tech-news-editor/
+  - https://about.me/natasha.bernal
+  - https://www.kingston.ac.uk/postgraduate/courses/journalism-ma/
+- career:
+  - publication: new-scientist
+    role: tech_reporter
+    start: '?'
+    end: '?'
+    beat: technology, science
+    notes: Technology reporter at New Scientist magazine. London-based. Pre-Wired science journalism training.
+    source_url: https://talkingbiznews.com/they-re-hiring/reynolds-covers-food-biodiversity-climate-change-wired/
+  - publication: wired
+    role: editorial_intern
+    start: '?'
+    end: '?'
+    beat: general
+    notes: Editorial intern at Wired. Earliest Wired role.
+    source_url: https://talkingbiznews.com/they-re-hiring/reynolds-covers-food-biodiversity-climate-change-wired/
+  - publication: wired
+    role: staff_writer
+    start: '?'
+    end: '?'
+    beat: technology, science
+    notes: Staff writer at Wired.
+  - publication: wired
+    role: science_editor
+    start: '?'
+    end: 2021-11
+    beat: technology, science
+    notes: Science editor at Wired UK. Promoted from staff writer.
+    source_url: https://cision.co.uk/
+  - publication: wired
+    role: senior_writer
+    start: 2021-11
+    end: present
+    beat: climate, food, biodiversity, energy, nuclear
+    event_type: promoted
+    notes: 'Senior Writer at Wired covering climate, food, and biodiversity. Reports to Tim Marchman (Director, Science). Oxford graduate. Author of "The Future of Food: How to Feed the Planet Without Destroying It" (2021, Penguin/WIRED Guides series). London-based. Appeared on NPR, What Next: TBD (Slate), Connecticut Public Radio. Signal: mattreynolds.45.'
+    source_url: https://talkingbiznews.com/they-re-hiring/reynolds-covers-food-biodiversity-climate-change-wired/
+  multi_publication: false
+  name: Matt Reynolds
+  notes: 'Senior writer at Wired covering climate, food, and biodiversity. London-based. Long Wired tenure from intern through science editor to senior writer. Oxford graduate. Author of "The Future of Food" (2021). Beat is climate/food/energy — NOT directly covering Meta/Big Tech, but reports to Tim Marchman''s science desk which also covers AI environmental impact and data center energy. His climate/energy lens occasionally intersects Big Tech coverage when covering data center power consumption, nuclear AI deals (Microsoft/Three Mile Island), and environmental cost of AI training. FOR MEDIASCOPE: Relevant when Wired publishes pieces framing Big Tech''s AI buildout through environmental cost lens — a framing device (environmental_cost_amplification) that Reynolds'' beat naturally produces.'
+  source_urls:
+  - https://talkingbiznews.com/they-re-hiring/reynolds-covers-food-biodiversity-climate-change-wired/
+  - https://www.senseaboutscience.org/
+  - https://www.penguin.co.uk/authors/matthew-reynolds
+- career:
+  - publication: business-insider
+    role: reporter
+    start: '?'
+    end: '?'
+    beat: culture
+    notes: Culture desk reporter at Business Insider. Early career.
+  - publication: gizmodo
+    role: staff_writer
+    start: '?'
+    end: '?'
+    beat: AI, technology, surveillance
+    notes: Staff writer at Gizmodo covering AI. Gawker Media/G/O Media ecosystem. ~2 year tenure.
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-names-fussell-its-new-reporter-covering-tech/
+  - publication: atlantic
+    role: staff_writer
+    start: '?'
+    end: 2020-03
+    beat: technology, race, surveillance
+    notes: Technology reporter at The Atlantic (Atlantic Media). Covered big tech, surveillance, race and technology. Departed for Wired.
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-names-fussell-its-new-reporter-covering-tech/
+  - publication: wired
+    role: senior_staff_writer
+    start: 2020-03
+    end: 2022
+    beat: surveillance, ad tech, Silicon Valley, race
+    event_type: hired
+    notes: 'Senior staff writer at Wired. Covered big tech, surveillance, ad tech, and Silicon Valley''s social/political impact. ~2 year tenure. Featured on Gadget Lab podcast. Also covered video games, diversity in tech industry.'
+    source_url: https://talkingbiznews.com/media-news/fussell-leaves-wired/
+  - publication: freelance
+    role: freelance_filmmaker_journalist
+    start: 2022
+    end: present
+    event_type: departed
+    notes: 'Left Wired to pursue filmmaking and freelance journalism. Oakland/NYC-based. Documentary filmmaker: co-directed "#WhileBlack" (2026 SXSW premiere, exploring viral police brutality videos). Supported by Catapult Film Fund, Firelight Media, Ford Foundation, Sundance Documentary Fund, Jonathan Logan Family Foundation. BRIClab 2024-2025 fellow (documentary "Hallelujah Anyway"). Published in Time, The Guardian. Appeared on NPR, BBC, CBC Radio, Al Jazeera.'
+    source_url: https://talkingbiznews.com/media-news/fussell-leaves-wired/
+  multi_publication: true
+  name: Sidney Fussell
+  notes: 'Former senior staff writer at Wired (2020-2022). Career: Business Insider → Gizmodo → Atlantic → Wired → freelance filmmaker/journalist. Covered surveillance, ad tech, Silicon Valley, race and technology. Now primarily a documentary filmmaker: co-directed "#WhileBlack" (2026 SXSW). ANALYTICALLY SIGNIFICANT for DiD: his departure from Wired and transition to filmmaking represents one data point in the broader exodus of journalists whose beats don''t align with Drummond''s adversarial tech-politics focus. His surveillance beat at Wired partly overlaps with Dell Cameron and Dhruv Mehrotra who remained.'
+  source_urls:
+  - https://talkingbiznews.com/media-news/fussell-leaves-wired/
+  - https://talkingbiznews.com/they-re-hiring/wired-names-fussell-its-new-reporter-covering-tech/
+  - https://itvs.org/films/whileblack
+  - https://www.bricartsmedia.org/briclab-fellows/briclab-2024-2025-film-tv-artists

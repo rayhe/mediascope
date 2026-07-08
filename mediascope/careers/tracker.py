@@ -164,7 +164,7 @@ class CareerTracker:
             # Determine departure date
             dep_date = curr.date_end or nxt.date_start
             arr_date = nxt.date_start
-            gap = (arr_date - dep_date).days if dep_date else 0
+            gap = (arr_date - dep_date).days if (dep_date and arr_date) else 0
 
             # Only count if within 365 days gap
             if gap > 365:
