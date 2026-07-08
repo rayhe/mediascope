@@ -1,0 +1,33 @@
+Source: Reuters
+Date: 2026-07-08
+Headline: Meta to build C$13 billion Alberta data center, its first in Canada
+URL: https://www.reuters.com/technology/meta-build-c13-billion-alberta-data-center-its-first-canada-2026-07-08/
+Genre: Wire service
+
+---
+
+Meta Platforms said on Tuesday it plans to build a data center in Alberta, Canada, its first in the country, in a deal that will be powered by natural gas from Pembina Pipeline Corp.
+
+The Greenlight Electricity Centre, a project developed by Pembina and a consortium of major Canadian businesses, will supply electricity to the data center from natural gas, Pembina said.
+
+The center is estimated to cost more than C$13 billion (US$9.17 billion) and will be located in Sturgeon County, Alberta.
+
+Data centers are massive consumers of electricity, with Big Tech firms racing to lock down power sources for the facilities that underpin the artificial intelligence industry.
+
+Alberta Premier Danielle Smith said in a statement Tuesday that Meta's investment marks a vote of confidence in the province, noting that it will create 1,500 construction jobs and over 400 permanent roles.
+
+Canada's government has touted its clean electricity supply as a selling point for tech investment, but data centers in Alberta are expected to consume electricity equivalent to more than 800,000 homes by the end of the decade.
+
+Meta's AI data center would require roughly 1 gigawatt of power when fully operational and consume more than 150 million cubic feet per day of natural gas.
+
+The data center will be the company's 33rd globally and its first in Canada, Meta said. The company opened two data centers in New Mexico and Ohio last year and is building new facilities across the United States and internationally.
+
+The announcement comes amid an AI infrastructure building spree by major tech companies including Meta, Microsoft, Alphabet and Amazon.
+
+Canada's industry minister Francois-Philippe Champagne has said the country is lagging on building data centers and needs to urgently catch up.
+
+Champagne said that Meta's investment underscores the attractiveness of investing in Canada and building AI infrastructure.
+
+The data center will occupy roughly 2,500 acres and draw on about 1 billion cubic feet per day of natural gas capacity from Pembina's pipeline system, Pembina said in a separate statement.
+
+Alberta's grid emissions intensity is almost five times the national average, according to Canadian government data, which means data centers in the province would generate far more carbon emissions per kilowatt-hour than in most other parts of the country.

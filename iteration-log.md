@@ -16575,3 +16575,48 @@ Re-run: 8 devices across 4 types (was 1/1). Closing paragraph fully instrumented
 - **Annotated articles:** 124 (was 123; +1 TechCrunch Muse Image)
 - **Framing device types:** 83 (unchanged)
 - **Source extraction patterns:** 10 (unchanged) + 2 new product-name stop entries
+
+### 2026-07-08 16:00 PT — Type A (Article Deep Dive)
+**Article:** Reuters, "Meta to build C$13 billion Alberta data center, its first in Canada" (Jul 8 2026)
+**Why chosen:** Same-day wire-service article covering Meta AI infrastructure spending in Canada. First wire-service article in corpus from Reuters. Sector crossover: tech + energy + Canadian government.
+
+#### Changes
+
+1. **Framing: scale equivalence pattern** (`mediascope/analyze/framing.py`):
+   - Added new scale_magnitude pattern for "electricity/energy/power equivalent/equal/comparable to ... homes/households"
+   - Fixes: "consume electricity equivalent to more than 800,000 homes" — existing analogy pattern required "enough to power/run/supply" trigger phrase, missed the common "equivalent to" wire-service construction
+   - Discovered via Reuters Alberta data center article
+
+2. **Framing: spelled-out multiplier pattern** (`mediascope/analyze/framing.py`):
+   - Added pattern for English word-numbers (two through hundred) + "times" + comparison targets
+   - Fixes: "almost five times the national average" — numeric multiplier pattern required `\d[\d,.]*`, can't match AP-style spelled-out numbers
+   - Supports optional qualifiers: "almost/nearly/roughly/approximately/about/over/more than"
+   - Matches against: national, global, industry, world, average, more, higher, greater, larger, worse, faster, lower
+
+3. **Framing: tempering coda environmental counterpoint** (`mediascope/analyze/framing.py`):
+   - Added 3 new moderating phrase patterns to tempering coda detector:
+     - "which means / meaning that" (consequence construction)
+     - "far more carbon/emissions/pollution/greenhouse" (environmental cost)
+     - "however / nonetheless / nevertheless" (hedging conjunctions)
+   - Fixes: Reuters article's final paragraph walks back positive investment narrative with environmental data — toolkit had no pattern for this common wire-service balance structure
+
+4. **Annotated sample output** (`examples/sample_output/reuters_meta_alberta_data_center_2026_07_08_article.txt` + `_analysis.md`):
+   - Full toolkit vs manual comparison across all 5 modules
+   - Entity detection: 9/17+ mentions (tech companies only, no energy/political/geographic coverage)
+   - Topic classification: accurate (corporate_strategy 0.68, infrastructure_impact 0.66, energy_climate 0.33)
+   - Framing: 3 → 6 devices after fixes (scale_magnitude ×4, ironic_quotation ×1, tempering_coda ×1)
+   - Sources: 5 detected, 1 name truncation bug ("Philippe Champagne" → should be "Francois-Philippe Champagne")
+   - Sentiment: overall_tone 0.61 (appropriate for wire investment announcement)
+
+5. **Known remaining gaps documented:**
+   - Entity coverage: no energy company, Canadian politician, or geographic entity clusters
+   - Source name truncation: hyphenated first names (Francois-Philippe) partially captured
+   - Raw-number-plus-unit scale (gigawatt, cubic feet, acres) — low priority, would create noise
+   - `comparative_framing` in sentiment module doesn't read from framing output (structural limitation)
+
+#### Stats
+- **Tests:** 1,780 (unchanged, no regressions — 175 targeted tests passed)
+- **Framing device types:** 83 (unchanged count; 2 new patterns added to existing scale_magnitude + tempering_coda types)
+- **Regex patterns:** 463 (was 460; +3 new: scale equivalence, spelled-out multiplier, 3 tempering coda phrases counted as the type's pattern set)
+- **Annotated articles:** 125 (was 124; +1 Reuters Alberta)
+- **New for corpus:** First Reuters wire article; first Canadian political figure; first energy infrastructure crossover

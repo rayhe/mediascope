@@ -39,6 +39,18 @@ NEUTRAL_VERBS: set[str] = {
     "thinks", "believes", "considers",  # cognitive/opinion attribution
     "cautions",  # hedged warning attribution
     "quoted", "citing", "cited",  # third-party attribution verbs
+    "estimated", "estimates",  # quantitative attribution — "Analysts with SemiAnalysis estimated"
+    "projected", "projects",  # forecast attribution — "analysts projected"
+    "calculated", "calculates",  # analytical attribution
+    "forecast", "forecasts",  # prediction attribution
+    "assessed", "assesses",  # evaluation attribution
+    "valued", "values",  # valuation attribution
+    "rated", "rates",  # rating attribution
+    "upgraded", "downgrades", "downgraded", "upgrades",  # analyst rating changes
+    "stuck",  # "stuck by" — maintaining a position/rating
+    "maintained", "maintains",  # position maintenance — "maintained a hold rating"
+    "reiterated", "reiterates",  # reaffirmation — "reiterated a buy rating"
+    "initiated", "initiates",  # coverage initiation — "initiated coverage with"
 }
 
 LOADED_VERBS: set[str] = {
@@ -655,7 +667,8 @@ def extract_sources(text: str) -> list[SourceMention]:
         rf"strategist|correspondent|reporter|columnist|commentator|"
         rf"editor|contributor|scientist)\s+"
         rf"([A-Z][a-z]+\s+(?:[A-Z]\.\s+)?[A-Z][a-z]+(?:-[A-Z][a-z]+)?)"
-        rf"\s+({verb_alternation})\b",
+        rf"\s+(?:also\s+|recently\s+|previously\s+|separately\s+|further\s+)?"
+        rf"({verb_alternation})\b",
     )
     for m in org_role_name_verb.finditer(text):
         org = m.group(1).strip()
@@ -1692,7 +1705,48 @@ def extract_sources(text: str) -> list[SourceMention]:
             rf"(?:spokesperson|spokeswoman|spokesman)\s+"
             rf"[A-Z][a-z]+ [A-Z][a-z]+\b",
         ),
+        # "according to [Compound Org Name]" — multi-word org names like
+        # "IBD MarketSurge", "Needham & Company", "Barclays Capital"
+        # that won't match Pattern 3's two-word capitalized-name pattern.
+        re.compile(
+            r"\baccording to\s+"
+            r"([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)\b",
+        ),
     ]
+
+    # Self-validating organizational patterns — these constructions inherently
+    # indicate an organizational source (e.g. "Analysts with [Org]") and do
+    # NOT require _KNOWN_ORGS membership.  They are processed before the
+    # _KNOWN_ORGS-gated patterns below.
+    _self_validating_org_patterns: list[re.Pattern] = [
+        # "Analysts with/at/from [Org] verb" — organizational attribution via
+        # analyst role descriptor.  Handles "Analysts with SemiAnalysis
+        # estimated", "analysts at Erste Group upgraded".
+        # The org name is extracted as the source, not the generic "Analysts".
+        re.compile(
+            rf"\b[Aa]nalysts?\s+(?:with|at|from)\s+"
+            rf"([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)"
+            rf"\s+({verb_alternation})\b",
+        ),
+    ]
+
+    for pat in _self_validating_org_patterns:
+        for m in pat.finditer(text):
+            org_name = m.group(1).strip()
+            if org_name.lower() in {n.lower() for n in seen_names}:
+                continue
+            seen_names.add(org_name)
+
+            verb = m.group(2).strip().lower() if m.lastindex >= 2 else ""
+            sources.append(SourceMention(
+                name=org_name,
+                is_anonymous=False,
+                is_expert=False,
+                affiliation=org_name,
+                quote=_extract_nearby_quote(text, m.start(), m.end()),
+                attribution_verb=verb,
+                source_type="organizational",
+            ))
 
     # Known tech company names to validate organizational matches
     _KNOWN_ORGS = {
@@ -1704,6 +1758,11 @@ def extract_sources(text: str) -> list[SourceMention]:
         "netflix", "uber", "lyft", "airbnb", "stripe", "shopify",
         "reuters", "bloomberg",
         "alibaba", "baidu", "tencent", "huawei", "xiaomi",
+        # Research/analyst firms — discovered in IBD Meta cloud
+        # article (Jul 2026).
+        "semianalysis", "erste group", "ibd marketsurge",
+        "needham", "bernstein", "jefferies", "wedbush",
+        "morningstar", "cowen", "piper sandler", "baird",
         # Energy/utility companies — discovered in MIT Tech Review
         # Louisiana natural gas article (Jul 2026).
         "entergy", "duke energy", "dominion", "eversource",

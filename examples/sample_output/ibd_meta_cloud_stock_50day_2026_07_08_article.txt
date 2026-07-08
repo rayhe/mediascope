@@ -1,0 +1,52 @@
+Title: Meta Stock Tests Key Technical Level As Wall Street Sizes Up Cloud Potential
+Publication: Investor's Business Daily (IBD) / investors.com
+Author: Not bylined (IBD staff)
+Date: July 8, 2026
+URL: https://www.investors.com/news/technology/meta-stock-50-day-cloud-plan/
+Topic: Meta Platforms stock price and analyst reactions to reported Meta Compute cloud business
+
+---
+
+Meta Platforms META stock edged higher Tuesday morning, approaching a test of a key technical level. Shares have had a good start to the month, as investors size up the tech giant's reported plan to launch a public cloud service.
+
+Meta stock jumped 8.5% in trading on July 1, after Bloomberg reported that the Facebook parent company is forming a business that would rent its "excess computing power" to outside customers. Meta is yet to comment on the report. But such a move would vault the social media company into a cloud market led by Amazon AMZN, Microsoft MSFT and Alphabet GOOGL.
+
+While Meta pulled back in the final trading day before Independence Day weekend, shares gained another 2.5% on Monday. On the stock market today, Meta stock is ahead a fraction at 602.50 premarket.
+
+Shares were trading just below Meta's 50-day moving average. While Meta briefly climbed above its 50-day line on Wednesday, the stock has not been able to sustain a rally ahead of that level since late April, according to IBD MarketSurge.
+
+Analysts are still sizing up the plans while looking for further detail from the company. Meta is expected to report second-quarter earnings later this month.
+
+Meanwhile, analysts with Erste Group upgraded their view on Meta to a buy rating from a previous hold. The firm offered a positive view on the potential for Meta's AI investments, according to a description published by Investing.com.
+
+Wall Street Views On Cloud Plan
+
+The potential cloud push comes as Meta is spending roughly $135 billion this year on capital expenditures, focused on building data centers to support its AI models. Analysts with SemiAnalysis estimated in recent note that Meta signed contracts for more than 5 gigawatts of data center capacity in the first six months of the year. The research firm added that Meta's 2027 capex could be "shockingly high."
+
+Meta is under pressure to show how it will generate returns from all its AI spending. The stock remains 24% below a record high reached in August. Meta has so far stressed to investors that AI returns will be powered by improved engagements and advertising spending on its social media platforms.
+
+Analysts with Morgan Stanley told clients they'd be "bullish" on a neocloud option for Meta in a client note following the news. Morgan Stanley analyst Brian Nowak said Meta could benefit from "temporarily monetizing excess capacity in a compute constrained world," while still pursuing new products that help monetize its AI models.
+
+Nowak rates Meta stock as overweight, or buy, and as a top pick.
+
+Meta AI Capacity
+
+JPMorgan analyst Doug Anmuth, who is neutral on Meta stock, estimated that 1 gigawatt of AI cloud capacity could generate roughly $20 billion in annual revenue.
+
+"This would be highly additive to Meta's current AI product efforts focused on business agents, subscriptions, and Meta Glasses," Anmuth wrote to clients Thursday. "Monetizing infrastructure provides Meta greater flexibility and enables the company to recoup some of its massive investment, similar to what we've recently seen among other large infrastructure players."
+
+But he said he'd "much prefer that Meta develop core AI products" and leverage them over its user base of nearly 4 billion. Anmuth added that he expects Meta will maintain its commitment to building a frontier AI model.
+
+Meanwhile, Needham analyst Laura Martin also stuck by a hold rating for Meta in her latest note, on Monday. Launching a cloud business could imply that Meta has "overbuilt" its AI infrastructure.
+
+"We believe Gen AI will have 'winner-take-most' economics (similar to internet winners), and companies that fall behind get left behind, which is bad news for META," Martin wrote.
+
+Martin added that Meta could find the cloud business "difficult to enter this late, owing to well entrenched deep-pocketed competitors including Amazon Web Services, Google Cloud and Microsoft Azure."
+
+Meta Stock: Watching Court Cases
+
+While AI is the main focus, Meta is also facing numerous legal challenges over the effect of social media on young users.
+
+Reuters reported on Tuesday that state attorneys general are seeking $1.4 trillion in damages in a multi-state social media addiction trial set to begin next month.
+
+Meta shares slumped 11% in June amid concerns about its AI spending, as well as legal challenges. But Meta stock is ahead 7% in July entering Tuesday trading.

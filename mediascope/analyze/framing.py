@@ -357,6 +357,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"lambasted|excoriated|ripped|grilled|destroyed|"
         r"crushed|obliterated|demolished|annihilated|"
         r"staggering|whopping|jaw-dropping|eye-watering|eye-popping|"
+        r"shockingly\s+(?:high|large|low|expensive|cheap|massive|huge)|"
         r"mastermind(?:ed)?|explosive|hooked|"
         r"turned a blind eye|strike fear|struck fear|"
         r"indefensible|abusive|defamatory|"
@@ -2263,6 +2264,24 @@ _SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
         r"(?:small|medium|large)[\s-]+(?:sized? )?(?:cit(?:y|ies)|countr(?:y|ies)|town|state))",
         re.IGNORECASE,
     ),
+    # ---------------------------------------------------------------------------
+    # Scale equivalence: "equivalent to X homes/households" — wire-service
+    # construction that anchors abstract consumption figures to domestic scale.
+    # Discovered via Reuters Meta Alberta data center article (Jul 8 2026):
+    # "consume electricity equivalent to more than 800,000 homes" was missed
+    # because the existing analogy pattern required "enough to power/run/supply"
+    # as a trigger phrase; "equivalent to" is a common alternative.
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b(?:electricity|energy|power|consumption|capacity|output)\s+"
+        r"(?:equivalent|equal|comparable)\s+to\s+"
+        r"(?:roughly |about |approximately |nearly |more than |over )?"
+        r"[\d,.]+\s*(?:thousand |million |billion )?"
+        r"(?:[\w.]+\s+)?"
+        r"(?:homes?|households?|cities|countries|"
+        r"(?:small|medium|large)[\s-]+(?:sized? )?(?:cit(?:y|ies)|countr(?:y|ies)|town|state))",
+        re.IGNORECASE,
+    ),
     # "as much as a small country/city" without specific number
     re.compile(
         r"\b(?:as much (?:electricity|energy|power|water) as)\s+"
@@ -2433,6 +2452,23 @@ _SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
         r"\b(?:up to|as much as|as many as)\s+"
         r"\d[\d,.]*\s*(?:times?|[xX])\s+"
         r"(?:more|higher|greater|longer|larger|worse|faster|slower)\b",
+        re.IGNORECASE,
+    ),
+    # ---------------------------------------------------------------------------
+    # Spelled-out multiplier: "five times the national average" — same framing
+    # as the numeric multiplier but uses English words for the number.  Common
+    # in wire-service reporting where style guides require spelling out numbers
+    # below ten.
+    # Discovered via Reuters Meta Alberta data center article (Jul 8 2026):
+    # "almost five times the national average" was missed because the numeric
+    # multiplier pattern requires `\d[\d,.]*` — it can't match "five".
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b(?:(?:almost|nearly|roughly|approximately|about|over|more than)\s+)?"
+        r"(?:two|three|four|five|six|seven|eight|nine|ten|"
+        r"twenty|thirty|fifty|hundred)\s+times?\s+"
+        r"(?:the\s+)?(?:national|global|industry|world|average|"
+        r"more|higher|greater|larger|worse|faster|lower)\b",
         re.IGNORECASE,
     ),
     # National/global scale comparison: "roughly half of the entire United
@@ -6087,6 +6123,15 @@ def _detect_tempering_coda(text: str) -> list[FramingDevice]:
         re.compile(r"\b(?:remains to be seen|time will tell)\b", re.IGNORECASE),
         re.compile(r"\b(?:actual(?:ly)?|real(?:istic)?) (?:damages?|penalty|penalties|amount|figure)\b", re.IGNORECASE),
         re.compile(r"\b(?:reduced on appeal|overturned|settled for (?:far )?less)\b", re.IGNORECASE),
+        # Environmental/social counterpoint: "which means ... would generate far
+        # more" — wire-service construction that walks back a positive investment
+        # narrative by introducing environmental cost in the final paragraph.
+        # Discovered via Reuters Meta Alberta article (Jul 8 2026).
+        re.compile(r"\b(?:which means|meaning(?:\s+that)?)\b", re.IGNORECASE),
+        re.compile(r"\b(?:far more (?:carbon|emissions?|pollution|greenhouse))\b", re.IGNORECASE),
+        # "however" / "but" / "yet" / "despite" in final section — classic
+        # hedging conjunctions that signal editorial counterbalance.
+        re.compile(r"\b(?:however|nonetheless|nevertheless),?\s", re.IGNORECASE),
     ]
 
     matched_phrases: list[str] = []
