@@ -370,7 +370,10 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         # Dramatic event modifiers that editorialize by elevating significance.
         # Discovered via Gizmodo $1.4T penalty article (Jul 2026):
         # "watershed verdict", "mounting litigation"
-        r"watershed|landmark|ground-?breaking|sweeping|far-?reaching|seismic"
+        r"watershed|landmark|ground-?breaking|sweeping|far-?reaching|seismic|"
+        # Financial crash / bubble language that editorializes market risk.
+        # Discovered via Memeburn Meta Cloud chip selloff article (Jul 2026).
+        r"super\s*bubble|mega\s*bubble|house of cards|bubble\s+burst"
         r")\b",
         re.IGNORECASE,
     ),

@@ -15718,3 +15718,47 @@ Pattern count: 425 → 428
 - **Total regex patterns:** 431
 - **Topic buckets:** 27
 - **Annotated articles:** 112
+
+---
+
+### Type A — 2026-07-07 18:00 PT — Article Deep Dive: Memeburn Meta Cloud Chip Selloff
+
+**Article:** "Meta AI Cloud Push Triggers the Biggest Chip Stocks Selloff" (Memeburn, Jul 7 2026)
+**URL:** https://memeburn.com/meta-cloud-chip-stocks-selloff/
+
+**Focus:** Semiconductor supply chain entity coverage gaps + financial crash framing language
+
+#### Entity Detection Changes
+- **+5 new clusters:** Oracle, Samsung, SK Hynix, Semiconductor Equipment (KLA, Lam Research, Applied Materials, ASML, Tokyo Electron), Storage/Memory (SanDisk, Western Digital, Seagate)
+- **+4 Meta aliases:** Meta Compute, Santosh Janardhan, Janardhan, Daniel Gross
+- **+1 OpenAI alias:** Jalapeño (custom chip codename)
+- **+2 Financial Services aliases:** Bernstein, Deloitte
+- **Benchmark homograph fix:** Regex lookahead prevents common-noun "benchmark" from matching VC firm Benchmark. Pattern: `(?-i:Benchmark)(?=\s+(?:Capital|partner|led|invested|VC|venture|firm|GP|stake))`
+- **Meta regex restructure:** Moved compound phrases (Meta Compute, Meta Superintelligence Labs, Meta Platforms, Meta Ray-Ban Display, Meta Fury, Meta One, Meta AI) before bare `Meta` in alternation to prevent premature matching. Added negative lookahead exclusions to bare `Meta` for all compound prefixes.
+- Total entity clusters: **75** (was 70)
+
+#### Framing Detection Changes
+- **+4 loaded_language patterns:** super bubble, mega bubble, house of cards, bubble burst (financial crash/bubble vocabulary)
+- Total loaded_language patterns: 836+ emotional language terms
+
+#### Deferred Items
+- Rhetorical question subheads ("The X Nobody Wanted to Ask") — needs dedicated patterns to avoid false positives on legitimate subheads
+- First-person editorial voice ("We think", "We expect") — high false-positive risk in financial articles; needs genre-aware suppression in a future Type D iteration
+
+#### Tests
+- **+26 new tests** in `test_memeburn_chip_selloff.py` (10 entity cluster tests, 7 alias tests, 3 Benchmark homograph tests, 2 Financial Services tests, 4 loaded_language bubble tests)
+- All 28 existing entity tests pass
+- All 271 framing tests pass
+- All 71 loaded_language tests pass
+- **Test files:** 65 (was 64)
+
+#### Artifact Files
+- `examples/sample_output/memeburn_meta_cloud_chip_selloff_2026_07_07_article.txt`
+- `examples/sample_output/memeburn_meta_cloud_chip_selloff_2026_07_07_analysis.md`
+- `tests/test_memeburn_chip_selloff.py`
+
+#### Cumulative Stats
+- **Entity clusters:** 75
+- **Annotated articles:** 113
+- **Framing device types:** 77 (71 pattern-matched + 6 structural)
+- **Topic buckets:** 27

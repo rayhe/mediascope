@@ -110,8 +110,11 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Adam Mosseri", "Mosseri",
             # Meta legal representatives appearing in trial coverage
             "Phyllis Jones",
+            # Meta Compute cloud initiative + leadership (Jul 2026)
+            "Meta Compute", "Santosh Janardhan", "Janardhan",
+            "Daniel Gross",
         ],
-        "regex": r"(?<!\w)(Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport))|Meta Platforms|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|(?-i:Zuck)(?=\s+(?:is|was|has|had|wants?|thinks?|said|says|will|would|could|should|might|may|does|did|isn|didn|can|won|cannot|also|personally|himself|recently|even|just|too|and|,|'s|'))|Meta AI|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Meta Superintelligence Labs|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark|Meta Fury|(?-i:Fury)(?=\s+(?:glasses|are|is|was|cost|have|included|and|AI|smart))|Adventurer|Starfire|Meta Ray-Ban Display|Llama 4|(?:Meta'?s? )(?-i:Llama)|(?-i:Llama)(?=\s+(?:model|AI|language|LLM|is|was|and|,))|Joel Kaplan|Kaplan|Sheryl Sandberg|Sandberg|Nick Clegg|Clegg|Dina Powell McCormick|(?-i:Arena)(?=\s+(?:app|prediction|market|is|was|would|will|being|the))|Francis Brennan|Virtue AI|Fundamental AI Research|(?-i:FAIR)(?=\s+(?:Lab|lab|research|team|group))|Ime Archibong|Archibong|the social media (?:giant|company)|Meta One|Conversation Focus|Alexandr Wang|Yann LeCun|(?-i:LeCun)|Adam Mosseri|Mosseri|Phyllis Jones)(?!\w)",
+        "regex": r"(?<!\w)(Meta Compute|Meta Superintelligence Labs|Meta Platforms|Meta Ray-Ban Display|Meta Fury|Meta One|Meta AI|Meta(?!\s+(?:tag|data|description|charset|name|http|content|property|viewport|Compute|Platforms|Ray-Ban|Fury|One|AI|Superintelligence))|Facebook|Instagram|WhatsApp|(?-i:Threads)|Mark Zuckerberg|Zuckerberg|(?-i:Zuck)(?=\s+(?:is|was|has|had|wants?|thinks?|said|says|will|would|could|should|might|may|does|did|isn|didn|can|won|cannot|also|personally|himself|recently|even|just|too|and|,|'s|'))|Reality Labs|Oculus|Ray-Ban Meta|Ray-Ban|Oakley smart glasses|Andrew Bosworth|Bosworth|Boz|Chris Cox|Maher Saba|Applied AI|Cambridge Analytica|Model Capability Initiative|(?-i:MCI)|Agent Transformation Accelerator|(?-i:ATA)|Stephane Kasriel|Kasriel|Tracy Clayton|Dave Arnold|Andy Stone|NameTag|Alex Himel|Himel|Ankit Brahmbhatt|Brahmbhatt|Will Cathcart|Cathcart|Peter Bristol|Bristol|Muse Spark|(?-i:Fury)(?=\s+(?:glasses|are|is|was|cost|have|included|and|AI|smart))|Adventurer|Starfire|Llama 4|(?:Meta'?s? )(?-i:Llama)|(?-i:Llama)(?=\s+(?:model|AI|language|LLM|is|was|and|,))|Joel Kaplan|Kaplan|Sheryl Sandberg|Sandberg|Nick Clegg|Clegg|Dina Powell McCormick|(?-i:Arena)(?=\s+(?:app|prediction|market|is|was|would|will|being|the))|Francis Brennan|Virtue AI|Fundamental AI Research|(?-i:FAIR)(?=\s+(?:Lab|lab|research|team|group))|Ime Archibong|Archibong|the social media (?:giant|company)|Conversation Focus|Alexandr Wang|Yann LeCun|(?-i:LeCun)|Adam Mosseri|Mosseri|Phyllis Jones|Santosh Janardhan|Janardhan|Daniel Gross)(?!\w)",
     },
     "Google": {
         "aliases": [
@@ -147,6 +150,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         "aliases": [
             "OpenAI", "Sam Altman", "ChatGPT", "GPT-4", "GPT-5",
             "DALL-E", "Sora", "GPT-4o", "Stargate", "Sora 2",
+            "Jalapeño",  # OpenAI custom chip codename
         ],
     },
     "X/Twitter": {
@@ -516,7 +520,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Benchmark", "Kleiner Perkins",
             "Y Combinator", "YC",
         ],
-        "regex": r"(?<!\w)(Marc Andreessen|Andreessen(?!\s+Horowitz)|Andreessen Horowitz|(?-i:a16z)|Sequoia(?:\s+Capital)?|Benchmark|Kleiner Perkins|Y Combinator|(?-i:YC))(?!\w)",
+        "regex": r"(?<!\w)(Marc Andreessen|Andreessen(?!\s+Horowitz)|Andreessen Horowitz|(?-i:a16z)|Sequoia(?:\s+Capital)?|(?-i:Benchmark)(?=\s+(?:Capital|partner|led|invested|VC|venture|firm|GP|stake))|Kleiner Perkins|Y Combinator|(?-i:YC))(?!\w)",
     },
     "Celebrity/Influencer": {
         "aliases": [
@@ -837,6 +841,44 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|Earthjustice"
                  r"|350\.org)(?!\w)",
     },
+    "Oracle": {
+        "aliases": [
+            "Oracle", "Oracle Cloud", "Oracle Corporation",
+            "Larry Ellison", "Ellison",
+            "Safra Catz",
+        ],
+        "regex": r"(?<!\w)(Oracle(?:\s+(?:Cloud|Corporation))?|Larry Ellison|Ellison(?='s|,|\s+(?:is|was|has|said|also))|Safra Catz)(?!\w)",
+    },
+    "Samsung": {
+        "aliases": [
+            "Samsung", "Samsung Electronics", "Samsung Semiconductor",
+            "Samsung Foundry", "Samsung HBM",
+        ],
+        "regex": r"(?<!\w)(Samsung(?:\s+(?:Electronics|Semiconductor|Foundry|HBM))?)(?!\w)",
+    },
+    "SK Hynix": {
+        "aliases": [
+            "SK Hynix", "SK hynix", "Hynix",
+        ],
+        "regex": r"(?<!\w)(SK [Hh]ynix|Hynix)(?!\w)",
+    },
+    "Semiconductor Equipment": {
+        "aliases": [
+            "KLA", "KLA Corporation",
+            "Lam Research", "Lam",
+            "Applied Materials", "AMAT",
+            "ASML",
+            "Tokyo Electron",
+        ],
+        "regex": r"(?<!\w)(KLA(?:\s+Corporation)?|Lam Research|(?-i:Lam)(?=\s+(?:Research|is|was|shares?))|Applied Materials|(?-i:AMAT)|(?-i:ASML)|Tokyo Electron)(?!\w)",
+    },
+    "Storage/Memory": {
+        "aliases": [
+            "SanDisk", "Western Digital", "WD",
+            "Seagate",
+        ],
+        "regex": r"(?<!\w)(SanDisk|Western Digital|(?-i:WD)(?=\s+(?:shares?|stock|is|was|drives?))|Seagate)(?!\w)",
+    },
     "Financial Services": {
         "aliases": [
             "Visa", "Mastercard", "American Express", "Amex",
@@ -848,8 +890,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Discover Financial", "Discover",
             "Capital One",
             "SWIFT", "Visa Direct", "Mastercard Send",
+            "Bernstein", "Deloitte",
         ],
-        "regex": r"(?<!\w)(Visa(?!\s+(?:application|interview|status|waiver|holder|stamp|fee|office|policy|requirement|process|categor))|Mastercard|American Express|(?-i:Amex)|Goldman Sachs|JPMorgan(?:\s+Chase)?|JP Morgan|Morgan Stanley|Bank of America|Citigroup|(?-i:Citi)(?=\s+(?:is|was|has|had|'s|,|group|bank))|Wells Fargo|PayPal|Stripe(?=\s+(?:is|was|has|had|'s|,|payment|process|partner|integration|Inc|announced|said|report))|Square(?=\s+(?:is|was|has|had|'s|,|payment|terminal|reader|Inc|announced|said))|Block Inc|Adyen|Worldpay|Fiserv|(?-i:FIS)(?=\s+(?:is|was|has|had|payment|process|Global))|Discover Financial|Capital One|(?-i:SWIFT)(?=\s+(?:network|payment|transfer|system|code|message))|Visa Direct|Mastercard Send)(?!\w)",
+        "regex": r"(?<!\w)(Visa(?!\s+(?:application|interview|status|waiver|holder|stamp|fee|office|policy|requirement|process|categor))|Mastercard|American Express|(?-i:Amex)|Goldman Sachs|JPMorgan(?:\s+Chase)?|JP Morgan|Morgan Stanley|Bank of America|Citigroup|(?-i:Citi)(?=\s+(?:is|was|has|had|'s|,|group|bank))|Wells Fargo|PayPal|Stripe(?=\s+(?:is|was|has|had|'s|,|payment|process|partner|integration|Inc|announced|said|report))|Square(?=\s+(?:is|was|has|had|'s|,|payment|terminal|reader|Inc|announced|said))|Block Inc|Adyen|Worldpay|Fiserv|(?-i:FIS)(?=\s+(?:is|was|has|had|payment|process|Global))|Discover Financial|Capital One|(?-i:SWIFT)(?=\s+(?:network|payment|transfer|system|code|message))|Visa Direct|Mastercard Send|Bernstein|Deloitte)(?!\w)",
     },
 }
 
