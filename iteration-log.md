@@ -15874,9 +15874,39 @@ Re-run: 8 devices across 4 types (was 1/1). Closing paragraph fully instrumented
 
 #### Cumulative Stats
 - **Entity clusters:** 75
-- **Annotated articles:** 115
-- **Framing device types:** 80 (74 pattern-matched + 6 structural)
-- **Total regex patterns:** 451
+- **Annotated articles:** 116
+- **Framing device types:** 81 (75 pattern-matched + 6 structural)
+- **Total regex patterns:** 455
 - **Topic buckets:** 27
-- **Test files:** 67
-- **Total tests:** 1653
+- **Test files:** 68
+- **Total tests:** 1669
+
+---
+
+### 2026-07-07 20:00 PT — Type A: Article Deep Dive
+
+**Article:** "BofA Warns on Big Tech: Meta, Alphabet, and Amazon's AI Spending Could Spook the Market" (Barron's, Mackenzie Tatananni, Jul 7 2026)
+
+**Significance:** Reveals Meta's next-gen frontier AI model codename "Watermelon" (successor to Muse Spark/Avocado, requires 10x compute). BofA raises 2026 capex estimate to $145B — nearly double Meta's official $68-73B guidance. Fourth distinct capex narrative shift in 35 days.
+
+#### Entity Improvements
+- **Meta cluster:** Added Watermelon (contextual regex, false-positive guarded), Muse Image, Muse Video
+- **Financial Services:** Added BofA Securities/BofA, Berkshire Hathaway/Warren Buffett/Buffett (contextual regex)
+
+#### Framing Improvements
+- **New device type: `analyst_authority`** (4 patterns) — detects named analyst firms as authority sources framing corporate spending. Distinct from anonymous_authority (unnamed) and expert_consensus_authority (multiple experts). Patterns: [Firm] warns/cautions, according to [Firm] + negative framing, [Firm] raised estimate + investor anxiety, [Firm] analyst [Name] credentialing.
+
+#### Tests Added
+- `tests/test_watermelon_bofa_entities.py` (16 tests: 3 Watermelon, 3 Muse Image/Video, 3 BofA, 2 Berkshire, 5 analyst_authority framing)
+
+#### Analysis File
+- `examples/sample_output/barrons_bofa_ai_spending_watermelon_2026_07_07_analysis.md`
+
+#### Cumulative Stats
+- **Entity clusters:** 75
+- **Annotated articles:** 116
+- **Framing device types:** 81 (75 pattern-matched + 6 structural)
+- **Total regex patterns:** 455
+- **Topic buckets:** 27
+- **Test files:** 68
+- **Total tests:** 1669
