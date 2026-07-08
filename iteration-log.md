@@ -2,6 +2,87 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-08 02:00 PT — Type C: Ownership & Funding Deep Dive (The Verge — Eldridge Industries / Todd Boehly)
+
+### Focus
+Deep ownership mapping of Eldridge Industries, PMC's JV partner, and documentation of 4 undisclosed conflict vectors through Boehly's cross-holdings. Expanded editorial staff from 4 to 14 tracked journalists.
+
+### Eldridge Industries Ownership Entity (NEW)
+
+**Before:** No Eldridge entity in ownership_chain. PME mentioned in passing under Penske Family.
+
+**After:** Full 110-line entity documenting:
+- Todd L. Boehly: Co-founder, Chairman, CEO. Ex-Guggenheim Partners President. BBA William & Mary, LSE.
+- JV Structure: Penske Media Eldridge (PME) = PMC subsidiary + Eldridge JV. Owns Dick Clark Productions, SXSW (majority), Life is Beautiful, ATX TV, LA3C.
+- Sports ownership: Chelsea FC (~$5.3B, BlueCo consortium May 2022), LA Dodgers, LA Lakers, LA Sparks, Trent Rockets. Eldridge/Arctos sports investment fund.
+- Portfolio: Security Benefit (life insurance, Chairman), A24 (seed 2012, minority stake), Gamma music, Fulwell Entertainment, Laylo, Viral Nation, Fixated.
+- Board seats: Lakers, Flexjet, PayActiv, CAIS, Chelsea FC, Cain, Vivid Seats (VSEAT).
+- Media expansion: Considered National World (The Scotsman/Yorkshire Post) bid Mar 2025 via Eldridge Media Holdings. Also explored Daily Telegraph.
+
+### New Known Conflict: Eldridge Cross-Holdings (severity 4)
+
+Documents 4 undisclosed conflict vectors:
+
+1. **A24 → Thrive Capital → OpenAI:** Eldridge seed-funded A24 (2012), still minority stakeholder. A24 explicitly courted Thrive Capital (major OpenAI backer) as investor for AI connections (New Yorker, 2025). Creates 2nd financial pathway from The Verge's ownership structure to OpenAI, compounding direct Vox Media/OpenAI licensing deal.
+
+2. **Sports Ownership → Tech Advertising:** Chelsea FC (200M+ digital reach), Dodgers, Lakers, Sparks = major advertising platforms for Meta, Apple, Google, Amazon. Coverage of these tech companies occurs in context of their being advertisers to Boehly's sports properties.
+
+3. **Vivid Seats → Rolling Stone Circular Flow:** Boehly on VSEAT board, Eldridge-backed SPAC. VSEAT partners with Rolling Stone (PMC property). Circular: Eldridge → VSEAT → Rolling Stone (PMC) → PMX (The Verge parent).
+
+4. **Chelsea FC × Infinite Athlete × Clearlake × Silver Lake:** Front-of-shirt sponsor Infinite Athlete (£40M) has investors including Clearlake Capital (Chelsea co-owner) and Eldridge (Boehly). Silver Lake also invested — holds stakes in City Football Group AND Fanatics. Clearlake + Eldridge = major Fanatics investors. Premier League scrutinized cross-ownership before approving.
+
+### New Revenue Relationship: Vivid Seats (VSEAT)
+
+Full financial snapshot (Jul 7, 2026):
+- $6.75/share (52-wk high $41.20, down ~96% from $2B SPAC valuation)
+- Market cap ~$77M. Q1 2026: Rev $125.8M (−23% YoY), net loss $14.6M
+- 565 employees (−26.4% YoY). Lost major Private Label partner (−64% rev).
+- Rolling Stone partnership creates circular commercial loop with PMC.
+
+### Editorial Staff Expansion
+
+**Added 2 editorial leaders:** Jacob Kastrenakes (Executive Editor), Kara Verlaney (Managing Editor)
+
+**Added 8 key journalists with conflict annotations:**
+- Thomas Ricker (Deputy Editor, International) — EU regulation coverage intersects PMC litigation
+- Tom Warren (Senior Editor, Microsoft/gaming) — Microsoft/OpenAI beat creates editorial counterweight
+- Adi Robertson (Senior Tech & Policy Editor) — platform governance, Section 230, VR/AR regulation
+- Lauren Feiner (Senior Policy Reporter, ex-CNBC) — antitrust reporting directly intersects PMC's two Google lawsuits
+- Hayden Field (Senior AI Reporter, ex-CNBC) — AI industry coverage most affected by OpenAI licensing
+- Sean Hollister (Senior Editor, consumer tech) — investigative consumer reporting
+- Josh Dzieza (Investigations Editor) — test case for PMC editorial independence constraints
+
+**Staff sourced from:** thevergetoday.pages.dev current staff listing + Verge masthead
+
+### Profile Growth
+- the-verge.yaml: 608 → 860 lines (+253)
+- Known conflicts: 5 → 6 (added eldridge_cross_holdings)
+- Revenue relationships: 4 → 5 (added Vivid Seats)
+- Editorial leadership: 3 → 5 (added Kastrenakes, Verlaney)
+- Key journalists: 5 → 13 (added 8)
+- Ownership chain entities: 4 → 5 (added Eldridge Industries)
+
+### Commits
+- `ce84e75` — Type C: Eldridge Industries deep dive (+253 lines)
+
+### Tests
+- 97 structural consistency tests pass
+- YAML validation passes
+
+### Sources
+- eldridgeind.com (Boehly bio, portfolio listing)
+- en.wikipedia.org/wiki/Todd_Boehly (career, sports, media/entertainment history)
+- caisgroup.com/board-of-directors-todd-boehly (board seats, Eldridge description)
+- reuters.com (National World bid Mar 2025, Chelsea acquisition May 2022)
+- thewrap.com (MRC/Eldridge split Aug 2022, Valence Media formation 2018, PME/DCP acquisition Jan 2023)
+- screendaily.com (A24 $225M equity raise 2022, Eldridge seed funding confirmation)
+- web.archive.org/New Yorker (A24/Thrive Capital/OpenAI connection, $3.5B valuation)
+- sportcal.com (Chelsea Infinite Athlete deal details, Clearlake/Eldridge/Silver Lake cross-ownership)
+- onefootball.com (Chelsea sponsorship Premier League scrutiny)
+- marketbeat.com / tradingview.com (VSEAT Q1 2026 financials, stock data)
+- sec.gov (Horizon Acquisition Corp SPAC filings, Eldridge/Triple8 13D/13G filings)
+- thevergetoday.pages.dev (current Verge staff listing)
+
 ## 2026-07-08 01:00 PT — Type B: Journalist Research (Mia Sato Deep Dive + Verge Layoffs)
 
 ### Focus
