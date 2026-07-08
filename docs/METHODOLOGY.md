@@ -1235,13 +1235,13 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **120 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **121 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
 ### 17.2 Publication Distribution
 
-The corpus spans **38 distinct publications** across 5 editorial modes:
+The corpus spans **39 distinct publications** across 5 editorial modes:
 
 #### Tracked Publications (5 publications, 55 articles)
 
@@ -1255,12 +1255,13 @@ These are the publications with full YAML profiles (ownership chains, revenue re
 | **The Guardian** | 5 | UK regulatory pressure, whistleblower coverage, CSAM, DeepMind philosophy |
 | **The Atlantic** | 5 | AI slop, data center infrastructure, workplace surveillance, creativity |
 
-#### Wire Services (1 publication, 9 articles)
+#### Wire Services (2 publications, 10 articles)
 
-Reuters serves as the analytical baseline for same-event comparison methodology (§13):
+Reuters and Bloomberg serve as the analytical baseline for same-event comparison methodology (§13):
 
 | Publication | Articles | Coverage Focus |
 |---|---|---|
+| **Bloomberg** | 1 | Muse Image launch — structural juxtaposition (peer-scandal kicker), wire-service genre with cross-entity guilt-by-association |
 | **Reuters** | 9 | MCI data exposure, Gemini compute limits, child addiction litigation, town hall coverage, BoE regulation, insurance defense, Dalton Smith departure, EU WhatsApp AI antitrust, Zuckerberg AI agents |
 
 #### Tech Editorial (12 publications, 22 articles)
@@ -1325,9 +1326,9 @@ Specialty press and multi-source analyses:
 | Apr 2026 | 3 | MIT TR Chinese workers, resistance, LLM surveillance |
 | May 2026 | 7 | MIT TR Anduril/warfare glasses, Wired dark mood, WebProNews Dublin |
 | Jun 2026 | 63 | Primary collection window — 60% of corpus |
-| Jul 2026 | 22 | Second-highest month — financial journalism genre expansion |
+| Jul 2026 | 23 | Second-highest month — financial journalism genre expansion, wire service addition |
 
-**Collection trajectory:** The corpus grew from ~10 articles (late June 2026) to 120 over ~14 days, with the most intensive collection in June–July 2026. Earlier articles (Aug 2025 – May 2026) were retroactively collected to extend temporal coverage and test the toolkit's temporal generalization. The June 2026 concentration reflects the initial sprint to discover and validate framing device types.
+**Collection trajectory:** The corpus grew from ~10 articles (late June 2026) to 121 over ~14 days, with the most intensive collection in June–July 2026. Earlier articles (Aug 2025 – May 2026) were retroactively collected to extend temporal coverage and test the toolkit's temporal generalization. The June 2026 concentration reflects the initial sprint to discover and validate framing device types.
 
 ### 17.4 Genre Distribution
 
@@ -1344,7 +1345,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 120 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 87 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 121 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 88 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
@@ -1365,12 +1366,12 @@ Of the 120 annotated articles, **20 explicitly document** which correction path(
 
 ### 17.6 Same-Event Comparison Coverage
 
-The corpus includes **9 same-event comparison clusters** validated in §10.2 of [QUALITY_STANDARDS.md](QUALITY_STANDARDS.md):
+The corpus includes **11 same-event comparison clusters** validated in §10.2 of [QUALITY_STANDARDS.md](QUALITY_STANDARDS.md):
 
 | Tier | Clusters | Articles Involved | Key Finding |
 |---|---|---|---|
 | **Tier 1** (dedicated cross-analysis files) | 3 | 10 | Tone gaps 0.25–1.23; framing device differentials 1:1 to 10:0 |
-| **Tier 2** (same-event article clusters) | 6 | ~20 | Tone ranges 0.21–1.00; genre-controlled signal extraction |
+| **Tier 2** (same-event article clusters) | 8 | ~24 | Tone ranges 0.21–1.00; genre-controlled signal extraction |
 
 The Zuckerberg town hall cluster (Jul 2–4, 2026) is the highest-value comparison: 5 articles spanning wire service (Reuters), tech editorial (TechCrunch), financial analysis (Barron's), payment industry (PYMNTS), and investment advisory (TheStreet) — demonstrating that identical facts produce a 1.23-point tone spread across editorial modes, the widest gap in the corpus.
 

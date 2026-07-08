@@ -1,0 +1,29 @@
+Source: Bloomberg (via Agentially.org / Synthesis Geopolitics syndication)
+Title: Meta debuts new AI image-generation model inside chatbot, Instagram
+Date: July 7, 2026
+URL: https://agentially.org/meta-debuts-new-ai-image-generation-model-inside-chatbot-instagram/
+Byline: Bloomberg (uncredited individual author)
+Word count: ~350
+Genre: Wire-service product announcement with safety/abuse kicker
+
+---
+
+Meta Platforms Inc debuted a new image-generation artificial intelligence (AI) model, its first such release since the company spent billions to rebuild its AI lab under Chief AI Officer Alexandr Wang a year ago.
+
+The model, called Muse Image, is rolling out on July 7 inside the Meta AI chatbot, the company said in a blog post. It will also be embedded in Meta's various social apps, including Instagram and WhatsApp. People can use it to generate images based on text prompts or by asking it to alter existing pictures. Advertisers, too, will soon have access to the model to create marketing materials.
+
+Users can also make images featuring friends or creators based on their publicly available Instagram posts, part of an effort by Meta to make the platform feel more personal. Those who don't want others to "reuse or remix" their content using AI can opt out in the settings menu, according to the blog post.
+
+Meta has spent aggressively to rebuild its AI lab over the past year, hiring Wang and several other highly compensated researchers to build new models that can compete with those from rivals like OpenAI and Anthropic PBC. Meta Superintelligence Labs, as the group is called, debuted its first large language model in April, and is also building one for video generation that will be ready in the coming months, according to a Meta spokesperson.
+
+Eventually, Meta plans to sell access to its various AI models to outside developers via a cloud offering, the spokesperson said. That would allow the social media giant to host the technology using its AI infrastructure and charge others to utilise it.
+
+This plan is part of a broader cloud computing effort in development at Meta, which is looking for ways to make money from its stable of data centres and expensive AI chips. The company is considering multiple cloud-related offerings, including selling access to raw computing power, Bloomberg reported.
+
+Despite those efforts, Meta is still hungry for even more computing power, the spokesperson said. It is still moving forward with plans for expensive new data centres and recently inked major computing deals with CoreWeave Inc, Alphabet Inc's Google and Oracle Corp, among others.
+
+Text-to-image technology is a core offering from most major AI labs, and has also been a source of controversy. Models from Elon Musk's SpaceXAI were used earlier this year to digitally undress people without their consent on the social network X. Other artificial intelligence models have been abused to generate new or manipulated sexualised images of kids, known as child sex abuse material, or CSAM.
+
+All images made with Muse Image will include an invisible watermark, and the system has certain safety precautions in place to prevent people from using it to create things that would violate Meta's terms of service, including CSAM, according to the spokesperson.
+
+Meta has used an assortment of different image-generation tools in the past, including its own model known as Emu. It has also licensed technology from other companies, including Midjourney Inc.

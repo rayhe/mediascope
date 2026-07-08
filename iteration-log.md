@@ -16428,3 +16428,35 @@ Re-run: 8 devices across 4 types (was 1/1). Closing paragraph fully instrumented
 - **Annotated articles:** 120 (was 119)
 - **Distinct publications:** 38 (was 37)
 - **Framing device types:** 83 (unchanged)
+
+## Jul 8, 2026 11:00 PT — Type A: Article Deep Dive
+
+**Article:** "Meta debuts new AI image-generation model inside chatbot, Instagram" (Bloomberg via Agentially.org syndication, Jul 7, 2026)
+
+**Rationale:** Wire-service genre previously absent from corpus. Bloomberg's structural juxtaposition technique (neutral product launch → peer-scandal kicker) is qualitatively different from lexical framing in editorial outlets. Cross-publication comparison with TechLusive's Muse Image coverage (same event, different framing strategy) adds 11th same-event comparison cluster.
+
+**Findings:**
+- 5 framing devices detected: Juxtaposition (peer-scandal variant, cross-entity), Guilt by Association (cross-entity), Kicker Framing (structural), Latecomer Narrative, Scale/Magnitude
+- Cross-pub insight: Bloomberg uses *structural* framing (neutral sentences, editorial sequencing) vs. TechLusive's *lexical* framing (emotional vocabulary, Cambridge Analytica guilt-by-association)
+- 3 entity alias gaps identified and fixed
+- Wire-service "kicker framing" — negative safety/abuse content placed as article exit point — documented as structural device
+
+**Changes:**
+1. **Entity alias: SpaceXAI → xAI** (+1 alias, +1 regex): Bloomberg article contained malformed compound "SpaceXAI" (SpaceX + xAI) that wasn't matched. Added to xAI cluster aliases and regex.
+2. **Entity alias: Anthropic PBC → Anthropic** (+1 alias): Corporate suffix "PBC" (Public Benefit Corp) in "Anthropic PBC" wasn't matched. Added to Anthropic cluster aliases.
+3. **New test file** (`test_bloomberg_muse_image_entities.py`, 9 tests): SpaceXAI→xAI (3 tests), Anthropic PBC→Anthropic (3 tests), full-article entity coverage (3 tests). All pass.
+4. **Gap documented (not implemented):** Juxtaposition (#24) doesn't distinguish same-entity vs. cross-entity peer-scandal juxtaposition. Structural juxtaposition (editorial sequencing) requires multi-paragraph semantic analysis, not regex — documented as future enhancement for ML-based detection layer.
+
+**New article analysis:** `examples/sample_output/bloomberg_meta_muse_image_launch_2026_07_07_analysis.md`
+**New article text:** `examples/sample_output/bloomberg_meta_muse_image_launch_2026_07_07_article.txt`
+**New publication:** Bloomberg (39th distinct publication in corpus)
+**New same-event cluster:** Muse Image Launch (Bloomberg + TechLusive, 11th cluster, Tier 2)
+
+**Stats snapshot:**
+- **Tests:** 1729 across 71 files
+- **Regex patterns:** 464 (unchanged — fixes were alias additions)
+- **Annotated articles:** 121 (was 120)
+- **Distinct publications:** 39 (was 38)
+- **Same-event comparison clusters:** 11 (was 10; 3 Tier 1, 8 Tier 2)
+- **Entity clusters:** 75 (unchanged, 2 clusters updated with new aliases)
+- **Framing device types:** 83 (unchanged)

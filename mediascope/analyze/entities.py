@@ -162,9 +162,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
     },
     "xAI": {
         "aliases": [
-            "xAI", "Grok", "Colossus", "Colossus II",
+            "xAI", "SpaceXAI", "Grok", "Colossus", "Colossus II",
         ],
-        "regex": r"(?<!\w)(xAI|Grok(?!\s+(?:the|TV|Network))|Colossus(?:\s+II)?)(?!\w)",
+        "regex": r"(?<!\w)(xAI|SpaceXAI|Grok(?!\s+(?:the|TV|Network))|Colossus(?:\s+II)?)(?!\w)",
     },
     "Tesla/SpaceX": {
         "aliases": [
@@ -245,7 +245,7 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
     },
     "Anthropic": {
         "aliases": [
-            "Anthropic", "Dario Amodei", "Daniela Amodei", "Claude",
+            "Anthropic", "Anthropic PBC", "Dario Amodei", "Daniela Amodei", "Claude",
             "Mythos", "Fable", "Project Glasswing", "Amanda Askell",
         ],
     },
