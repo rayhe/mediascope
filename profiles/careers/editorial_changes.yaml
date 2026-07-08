@@ -1652,7 +1652,10 @@ editorial_changes:
       (contract reporter). Previously audience engagement editor at The Markup (Julia Angwin''s nonprofit). Unusual career
       arc: audience engagement → reporting, pivoting during COVID-19. Her user-centric perspective from running social channels
       informs her platform coverage. Now one of the most senior platform reporters at The Verge (5+ years), covering Meta/Instagram,
-      TikTok, internet culture.'
+      TikTok, internet culture. 2024 Livingston Award finalist (International Reporting). ASME NEXT Award for Journalists
+      Under 30 Honorees (60th National Magazine Awards, Jun 2025). Pioneer of TikTok-as-journalism-distribution — creates
+      front-facing videos discussing her reporting. Post-Heath-departure, she is the strongest remaining voice for The Verge''s
+      platform governance coverage posture.'
     source_url: https://talkingbiznews.com/they-talk-biz-news/the-verge-hires-sato-to-cover-tech-companies-and-platforms/
   - date: 2025-06
     position: senior_ai_reporter
@@ -1674,6 +1677,16 @@ editorial_changes:
       rigor and hardware expertise. UK-based — one of The Verge's non-US editorial staff. Also writes Braise cooking newsletter
       (Substack). Fills news desk capacity after multiple departures.
     source_url: https://diarydirectory.com/diary-daily/the-verge-usa-appoints-news-editor-8/
+  - date: 2026-01-16
+    position: gaming_coverage
+    incoming: null
+    outgoing: Ash Parrish
+    notes: 'LAYOFF: Ash Parrish (gaming specialist, ex-Kotaku) laid off as part of Vox Media post-Polygon-sale contraction.
+      Two Vox Media Union members cut from The Verge alongside PopSugar/Eater reductions. Gaming coverage effectively gutted
+      — Polygon had been sold to Valnet (May 2025) and remaining gaming staff trimmed. Vox Media Union confirmed the cuts.
+      Concurrent with Inverse (BDG) eliminating its entire gaming section the same day. Part of a broader collapse in dedicated
+      games journalism coverage across the industry.'
+    source_url: https://aftermath.site/inverse-vox-media-the-verge-layoffs-gaming-coverage
   - date: 2025-10
     position: ai_reporter
     incoming: Elissa Welle

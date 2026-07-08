@@ -11067,26 +11067,109 @@ journalists:
   - https://talkingbiznews.com/they-re-hiring/morning-brew-hires-field-as-tech-writer/
   - https://theorg.com/org/the-verge/org-chart/hayden-field
 - career:
-  - publication: the-markup
-    role: audience_engagement_editor
+  - publication: nonprofit-newsrooms
+    role: audience_engagement
+    beat: social media, audience development
+    start: ~2017
+    end: '2020'
+    event_type: hired
+    notes: 'Started career in audience engagement roles at nonprofit newsrooms — running social channels, building Instagram
+      presence, thinking about how readers find journalism. Pre-reporting career. In her own words: "I actually started in
+      journalism working in audience engagement roles. I was running the social channels for nonprofit newsrooms, getting
+      their Instagram presence started." This audience-centric perspective profoundly shapes her reporting approach and
+      platform coverage instincts.'
+    source_url: https://embedded.substack.com/p/mia-sato-tiktok-interview-the-verge
+  - publication: freelance
+    role: freelancer
+    beat: internet culture, communities, tech platforms
     start: '2020'
     end: '2021'
+    event_type: freelance
+    notes: 'Pivoted from audience engagement to full-time reporting during COVID-19 pandemic. In her own words: "During COVID
+      I had an epiphany moment where I was like, actually I think I just want to write and report full-time." Cold-pitched
+      The Verge features editor (who later became her boss) — that pitch became a feature about Hmong American radio stations.
+      Also wrote for The New Republic, Chicago Magazine, The Appeal, and elsewhere. This freelance period represents the
+      audience-engagement-to-reporter pipeline that distinguishes her from the traditional journalism-school-to-newsroom path.'
+    source_url: https://embedded.substack.com/p/mia-sato-tiktok-interview-the-verge
+  - publication: the-markup
+    role: audience_engagement_editor
+    beat: technology, data-driven journalism
+    start: '2020'
+    end: '2021'
+    event_type: hired
+    notes: 'Audience engagement editor at The Markup, a nonprofit news outlet focused on technology, data-driven accountability
+      journalism about Big Tech. Founded by Julia Angwin (ex-ProPublica/WSJ). The Markup''s mission — using data to investigate
+      how powerful institutions use technology — likely shaped Sato''s approach to platform coverage as a structural-power
+      story, not just a product-review beat. Concurrent with early freelance reporting work.'
+    source_url: https://talkingbiznews.com/they-talk-biz-news/the-verge-hires-sato-to-cover-tech-companies-and-platforms/
   - publication: mit-tech-review
     role: reporter
+    beat: Pandemic Technology Project, covid-19 and technology
     start: '2021'
     end: 2021-11
-    beat: Pandemic Technology Project, covid-19 tech
+    event_type: hired
+    notes: 'Reporter on MIT Technology Review''s Pandemic Technology Project, covering the intersection of covid-19 and the
+      technology used to track and fight it. Contract/project role — the Pandemic Technology Project was a dedicated reporting
+      initiative focused on surveillance tech, contact tracing apps, and pandemic data infrastructure. This role provided
+      institutional credibility and a bridge from audience engagement to full-time reporting at a prestige outlet. KEY MIGRATION:
+      The Markup (nonprofit tech accountability) → MIT Tech Review (institutional tech prestige) represents a deliberate
+      move up the legitimacy ladder before joining The Verge. Her MIT TR bylines remain on the MIT Technology Review author
+      page.'
+    source_url: https://technologyreview.com/author/mia-sato/
   - publication: the-verge
-    role: senior_reporter
-    start: 2021-11
+    role: reporter
+    beat: digital platforms, communities, tech companies, internet culture
+    start: 2021-11-19
     end: present
-    beat: digital platforms, communities, tech companies
+    event_type: hired
+    notes: 'Hired November 19, 2021 to cover tech companies and their platforms. Title progression: reporter → senior reporter
+      → features writer. Now one of The Verge''s most prominent platform beat reporters. Beat encompasses: platform governance
+      and content moderation, online communities (Etsy sellers, Reddit, TikTok creators), AI-generated content flooding
+      platforms, online scams and money-making, internet culture and its collision with tech industry decisions. KEY COVERAGE
+      AREAS relevant to MediaScope: (1) Meta/Instagram platform decisions — algorithm changes, content moderation, creator
+      tools. (2) TikTok — disinformation during Ukraine war, tariff effects, TikTok Shop tagging Gaza videos. (3) Elon Musk/Twitter/X
+      takeover and Trump administration. (4) Chinese factory worker videos. (5) Content creator economy. (6) Charlie Kirk
+      meme/arrest story. Notable for pioneering TikTok as a journalism distribution channel — creates 15-20 min front-facing
+      videos discussing her reporting, reaching audiences who may not read the article. Strict 30-min time cap per TikTok
+      to manage ROI. Left X/Twitter entirely; uses Bluesky as primary social channel. Reports to features editor (who was
+      the editor she originally cold-pitched as a freelancer). Part of Vox Media Union (WGA East). Contact: mia@theverge.com,
+      Signal: miasato.11. Also writes ''mia buys things'' fashion/shopping newsletter on Beehiiv. ANALYTICALLY SIGNIFICANT:
+      Her platform beat is the primary editorial position at The Verge covering Meta/Instagram as a platform governance story
+      (distinct from Alex Heath''s corporate strategy angle or David Pierce''s product reviews angle). Her framing tends
+      toward user-impact and community-effects rather than corporate strategy or product evaluation — a deliberate editorial
+      choice that positions platform decisions as affecting real people, which can shade toward advocacy framing vs neutral
+      analysis. She is the strongest current proxy for how The Verge institutionally frames platform power stories post-Heath-departure.'
+    source_url: https://talkingbiznews.com/they-talk-biz-news/the-verge-hires-sato-to-cover-tech-companies-and-platforms/
   multi_publication: true
   name: Mia Sato
-  notes: Hired by The Verge Nov 19, 2021. ASME NEXT Award honoree. Based in Brooklyn. Covers digital platforms and communities.
+  notes: 'Career arc: nonprofit newsroom audience engagement → freelance (cold-pitched The Verge, wrote Hmong American radio
+    feature) → The Markup (audience engagement editor) → MIT Technology Review (Pandemic Technology Project reporter) → The
+    Verge (Nov 2021-present, reporter → senior reporter → features writer). Based in Brooklyn, NY. Contact: mia@theverge.com,
+    Signal: miasato.11. Vox Media Union (WGA East) member. 8+ years writing professionally. Also writes ''mia buys things''
+    fashion/shopping/internet newsletter on Beehiiv. Active on TikTok (videos about her reporting, millions of views, zero
+    income) and Bluesky (primary social). Left X/Twitter entirely. AWARDS: 2024 Livingston Award finalist in International
+    Reporting (for work released in 2023, journalists under 35); ASME NEXT Award for Journalists Under 30 Honorees (60th annual
+    National Magazine Awards, announced Jun 2025). EDUCATIONAL WORK: News Literacy Project on-camera series about AI and algorithms.
+    KEY ANALYTICAL VALUE: (1) Audience-engagement-to-reporter pipeline is a non-traditional career path that gives her
+    genuinely different instincts about platform mechanics vs traditional J-school graduates — she understands algorithmic
+    distribution from the operator side. (2) Her platform beat at The Verge is the primary editorial position covering Meta/Instagram
+    as a governance/community story — her framing choices directly shape institutional posture on platform power. (3) Her
+    TikTok journalism presence creates a recursive loop: she covers platform dynamics on a platform, making her simultaneously
+    reporter and subject of the forces she covers. (4) Post-Heath-departure, she is the strongest remaining voice for The
+    Verge''s platform coverage posture — her migration or departure would be the next highest-signal editorial change at
+    The Verge for MediaScope tracking. (5) Non-traditional path means less capture by J-school conventions about how platform
+    stories ''should'' be framed — her instincts come from user/community experience rather than institutional journalism
+    training.'
   source_urls:
   - https://talkingbiznews.com/they-talk-biz-news/the-verge-hires-sato-to-cover-tech-companies-and-platforms/
   - https://technologyreview.com/author/mia-sato/
+  - https://embedded.substack.com/p/mia-sato-tiktok-interview-the-verge
+  - https://howimakemoneywriting.substack.com/p/interview-78-how-mia-sato-makes-money
+  - https://www.miasato.com
+  - https://muckrack.com/mia-sato/articles
+  - https://blog.onepitch.co/cwaj-136-mia-sato-the-verge
+  - https://wallacehouse.umich.edu/livingston-awards/
+  - https://talkingbiznews.com/media-news/stat-news-sato-of-the-verge-recognized-by-asme/
 - career:
   - beat: biomedical engineering, brain-computer interfaces
     end: '2021'
