@@ -15581,3 +15581,52 @@ Gap analysis on The Verge's journalist roster revealed two key missing reporters
 - **Framing device types:** 75 → 76 (added strategic_disclosure)
 - **Same-event comparison clusters:** 9 → 10 (3 Tier 1, 7 Tier 2)
 - **Annotated articles:** 108 → 109 (Devdiscourse rewrite)
+
+---
+
+## 2026-07-07 16:00 PT — Type A: Article Deep Dive
+
+**Article:** Gizmodo — "Meta's Teen Safety Case Just Became a $1.4 Trillion Existential Threat" (Jul 7, 2026)
+**URL:** https://gizmodo.com/metas-teen-safety-case-just-became-a-1-4-trillion-existential-threat-2000782306
+
+### Framing Gaps Discovered
+
+1. **`loaded_language` — "exploiting" not detected**
+   - "the company was exploiting its young users" — pejorative verb form characterizing Meta's business relationship with minors
+   - Fix: Added `exploit(?:ing|ed|s)?\s+(?:its|their|the|young|child|teen|...)` to loaded_language patterns
+   - Scoped to human-target contexts to avoid false positives on technical usage ("vulnerability that could be exploited for cyberattacks")
+
+2. **`loaded_language` — "hooked" not detected**
+   - "children who got hooked from an early age" — drug-addiction metaphor applied to platform usage
+   - Fix: Added `hooked` to loaded verbs/descriptors pattern
+
+3. **`scale_magnitude` — headline "$1.4 Trillion" not detected**
+   - All existing patterns required contextual phrases ("up to $X", "$X in damages")
+   - A headline like "$1.4 Trillion Existential Threat" has a bare dollar amount with no surrounding context
+   - Fix: Added bare large-dollar pattern `\$\d[\d,.]*\s*(?:trillion|billion)\b`
+
+### False Positive Fix
+- **"exploited" in NYT AI Reviews article:** "a vulnerability that could be exploited for cyberattacks" — technical cybersecurity usage, not pejorative editorial language
+- Fix: Scoped exploit pattern to require human-target noun (its/their/young/child/teen/user/worker/consumer/employee/people)
+
+### Test File
+- `tests/test_gizmodo_1_4t_deep_dive.py` — 16 tests across 7 classes (loaded_language gaps, headline framing, accumulation cascade, topics, sources, sentiment, entities)
+
+### Documentation & Consistency Updates
+- Updated all device type counts: 75→76 total, 69→70 pattern-matched, 59→60 extended
+- Updated regex pattern counts: 420→425
+- Updated test file counts: 58→62 files, 1477→1535 tests
+- Updated annotated article counts: 108→110
+- Added `strategic_disclosure` to ARCHITECTURE.md extended device list and METHODOLOGY.md extended device table (was missing from prior iteration's doc updates)
+- Added 4 missing test files to ARCHITECTURE.md and README.md test listings
+- Fixed pre-existing structural consistency test failures (device type counts were already 76/70 in code but docs said 75/69)
+
+### Annotated Article
+- `examples/sample_output/gizmodo_meta_1_4t_existential_threat_2026_07_07_analysis.md`
+- `examples/sample_output/gizmodo_meta_1_4t_existential_threat_2026_07_07_article.txt`
+
+### Stats
+- **Tests:** 1,535 passed, 0 failed (full suite)
+- **Framing device types:** 76 (70 pattern-matched + 6 structural)
+- **Total regex patterns:** 425
+- **Annotated articles:** 110

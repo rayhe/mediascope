@@ -180,7 +180,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 75 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (59 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 76 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (60 added from real-article analysis), and structural devices (6 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -263,6 +263,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Precedent Framing** | Signaling that an event is exceptionally rare, severe, or significant by comparing it to historical precedent via time span. Establishes significance through historical rarity rather than raw numerical scale or speculative futures. Distinct from scale_magnitude (raw numbers), timeline_implication (temporal pressure), and precedent_analogy (named historical parallels) | "first [X] in N years"; "first [X] since YYYY"; "largest/most significant [X] since YYYY/in N years"; "unprecedented [action/move/measure]" | Reuters EU WhatsApp antitrust interim measure (Jun 10, 2026) — "its first [interim measure] in 17 years" signals that the EC's action breaks a 17-year enforcement drought, converting the time span into a significance marker. The framing tells readers this is historic before they evaluate the substance |
 | **Expert Consensus Authority** | Trade publication technique of assembling 3+ named, credentialed experts who all reinforce the same editorial thesis. Each expert is attributed with a title and company, and all converge on the same conclusion, creating an illusion of independent validation. Different from anonymous_authority (unnamed sources) and expert_contradiction (expert challenges company claim). Here the experts *reinforce* the publication's framing. | "said [Name], [title] at [Company]" ×3+; "said [Name], a senior member of [Organization]"; "[Name], CTO/CEO/CPO of [Company], said" — all reinforcing same thesis | TechTarget MCI Keystroke article (Jul 2, 2026) — four named experts (Kayne McGladrey/IEEE senior member, Paul Stokes/Prevalent CEO, Taivo Pungas/Pactum CTO, Adam Field/Tungsten CPO) all reinforce the thesis that employee keystroke surveillance is a manageable governance challenge. None raises fundamental objections. The toolkit detected zero framing devices for this consensus-building structure |
 | **Prescriptive Solutionism** | Trade publication technique of transforming accountability or controversy stories into management playbooks by inserting prescriptive bullet lists, "actionable steps," or "key takeaways" sections. Normalizes the underlying behavior by implying it is a solvable governance problem rather than a systemic or ethical issue. Transforms accountability journalism into vendor-neutral consulting content | "actionable steps for IT leaders"; "advises executives to consider"; "executives must balance/evaluate/implement"; "when training AI, there are steps" | TechTarget MCI Keystroke article (Jul 2, 2026) — two full sections of prescriptive bullet lists ("He advises executives to consider the following" + "Actionable steps for IT leaders") transform a data-exposure surveillance story into a management checklist. The underlying question (should this surveillance exist?) is replaced with how-to-manage-it governance steps |
+| **Strategic Disclosure** | A party in a dispute strategically discloses an opponent's legal demand, internal figure, or unfavorable position to frame it as extreme or unreasonable. The journalist reports the disclosure but the framing originates with the disclosing party, not editorial choice. Distinct from loaded_language (journalist's own word choice) and outsourced_intensity (quoting legal filings' loaded language) | "Meta said in a recent court filing"; "the attorneys claim"; "the filing states"; party-originated figures placed to shock | Gizmodo $1.4T Existential Threat article (Jul 7, 2026) — Meta's attorneys disclose the $1.4 trillion damages figure in a court filing to frame it as absurd ("no case ... one defendant was ordered to pay over one trillion dollars"), and the journalist reports this party-originated framing |
 
 #### Structural Devices (Post-Pass)
 
@@ -742,7 +743,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 75-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 76-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1221,7 +1222,7 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **108 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **110 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1329,7 +1330,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 108 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 85 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 110 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 85 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
@@ -1361,7 +1362,7 @@ The Zuckerberg town hall cluster (Jul 2–4, 2026) is the highest-value comparis
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 75 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 76 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|

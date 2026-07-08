@@ -357,7 +357,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"lambasted|excoriated|ripped|grilled|destroyed|"
         r"crushed|obliterated|demolished|annihilated|"
         r"staggering|whopping|jaw-dropping|eye-watering|eye-popping|"
-        r"mastermind(?:ed)?|explosive|"
+        r"mastermind(?:ed)?|explosive|hooked|"
         r"turned a blind eye|strike fear|struck fear|"
         r"indefensible|abusive|defamatory|"
         r"drastic(?:ally)?|superficial(?:ly)?|"
@@ -383,7 +383,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"comically|laughably|absurdly|laughable|"
         r"dishonest|dishonesty|fundamentally\s+(?:dishonest|unethical|flawed|problematic)|"
         r"deceptive|misleading|disingenuous|"
-        r"exploitative|dubious|rancid|sordid|"
+        r"exploit(?:ing|ed|s)?\s+(?:its|their|the|young|child|teen|minor|user|worker|consumer|employee|customer|people|citizen|student|immigrant|refugee)|\bexploitative\b|dubious|rancid|sordid|"
         # Polemical / invective nouns — nouns that characterize speech or
         # documents as extreme, aggressive, or unhinged.  "diatribe",
         # "screed", "tirade" etc. editorialize the quoted content before
@@ -2353,6 +2353,19 @@ _SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
         r"(?:involved|focused|related|dealt|concerned|addressed"
         r"|contained|included|featured|covered|discussed"
         r"|mentioned|referenced|targeted|affected|impacted)",
+        re.IGNORECASE,
+    ),
+    # ---------------------------------------------------------------------------
+    # Bare large-dollar amounts: "$1.4 Trillion" — standalone trillion/billion
+    # figures used in headlines or short text fragments where no surrounding
+    # context phrase (e.g. "up to", "in damages") appears.  These flag the
+    # raw numerical shock value independent of phrasing.
+    # Discovered via Gizmodo "$1.4 Trillion Existential Threat" headline
+    # (Jul 2026): the headline's dollar amount went undetected because all
+    # existing patterns required contextual verbs or prepositional phrases.
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\$\d[\d,.]*\s*(?:trillion|billion)\b",
         re.IGNORECASE,
     ),
 ]
@@ -6210,8 +6223,8 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 69 pattern-matched device types plus 6 structural
-    post-pass types (75 total).
+    Scans for 70 pattern-matched device types plus 6 structural
+    post-pass types (76 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
