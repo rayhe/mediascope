@@ -1,6 +1,6 @@
 # Framing Device Quick Reference
 
-> A compact lookup card for all 82 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
+> A compact lookup card for all 83 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
 
 ---
 
@@ -147,6 +147,7 @@ Devices that shape how regulatory, legal, and government actions are presented.
 | 62 | **Regulatory Favoritism** | E | Government oversight framed as picking winners and losers | "picking winners and losers," "favorable treatment," "tilting the playing field" |
 | 63 | **Geopolitical Regulatory Pressure** | E | Regulatory tensions framed as geopolitical confrontation | Embassy/diplomatic submissions, sovereignty/defiance rhetoric |
 | 64 | **Strategic Disclosure** | E | Party in dispute discloses opponent's position to frame it as extreme | "Meta said in a recent court filing" — framing originates with disclosing party |
+| 65 | **Default Burden Privacy** | E | Default-on feature framed as consent violation by emphasising opt-out burden | "enabled by default," "opt-out," "users may not know," "without consent" |
 
 ---
 
@@ -230,9 +231,9 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 | Tier | Count | Detection Method |
 |---|---|---|
 | Core | 10 | Pattern matching — fundamental editorial techniques |
-| Extended | 65 | Pattern matching — discovered from real article analysis |
+| Extended | 66 | Pattern matching — discovered from real article analysis |
 | Structural (post-pass) | 7 | Full-article heuristics (position, accumulation, structure) |
-| **Total** | **82** | |
+| **Total** | **83** | |
 
 ---
 

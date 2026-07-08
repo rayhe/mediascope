@@ -200,6 +200,34 @@ def check_quality(text: str, metadata: dict | None = None) -> QualityReport:
         ))
         score -= 5
 
+    # ── 6. Zero named sources ────────────────────────────────────────
+    # Flag articles where no named human source appears.  Named sources
+    # are identified by common attribution patterns: "said [Name]",
+    # "[Name] said/told/noted", "according to [Name]".  Wire-format
+    # articles legitimately have zero named sources, so this is a
+    # warning rather than an error.
+    _named_source_patterns = [
+        re.compile(r'\bsaid\s+[A-Z][a-z]+\s+[A-Z][a-z]+\b'),
+        re.compile(r'\b[A-Z][a-z]+\s+[A-Z][a-z]+\s+(?:said|told|noted|explained|added)\b'),
+        re.compile(r'\baccording to\s+[A-Z][a-z]+\s+[A-Z][a-z]+\b'),
+        re.compile(r'\b[A-Z][a-z]+\s+[A-Z][a-z]+,\s+(?:a |an |the )?(?:senior|chief|former|lead|head|director|professor|analyst|researcher|CEO|CTO|CPO|VP|president)\b'),
+    ]
+    has_named_source = any(
+        p.search(text) for p in _named_source_patterns
+    )
+    if not has_named_source:
+        issues.append(QualityIssue(
+            severity="warning",
+            category="zero_named_sources",
+            description=(
+                "No named human sources detected.  All claims are "
+                "unsourced or attributed to anonymous/unnamed entities.  "
+                "This is a significant quality concern for editorial "
+                "articles (acceptable for wire-format factsheets)."
+            ),
+        ))
+        score -= 12
+
     # Clamp score
     score = max(0, min(100, score))
 

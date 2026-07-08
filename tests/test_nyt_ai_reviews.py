@@ -374,8 +374,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 75, (
-            f"Expected 75 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 76, (
+            f"Expected 76 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -500,6 +500,8 @@ class TestFramingDeviceRegistry:
             "bull_bear_structuring",
             # Analyst authority (1) — named analyst firms lending credibility to narrative frames
             "analyst_authority",
+            # Default burden privacy (1) — default-on features framed as consent violation
+            "default_burden_privacy",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual

@@ -324,7 +324,8 @@ class TestScoring:
 
     def test_perfect_text_scores_100(self):
         text = (
-            "The asymmetry score for Wired's Meta coverage is −0.283 (p < 0.001). "
+            "The asymmetry score for Wired's Meta coverage is −0.283 (p < 0.001), "
+            "said John Smith, a senior researcher at Columbia. "
             "However, correlation does not imply causation. "
             "A key limitation is that we cannot control for all news-event severity differences. "
             "Our methodology uses Welch's t-test with bootstrap confidence intervals."
@@ -336,8 +337,9 @@ class TestScoring:
     def test_empty_text_still_returns_report(self):
         report = check_quality("")
         assert isinstance(report, QualityReport)
-        # Missing counterargument (-10), limitations (-8), methodology (-5) = 77
-        assert report.score == 77
+        # Missing counterargument (-10), limitations (-8), methodology (-5),
+        # zero named sources (-12) = 65
+        assert report.score == 65
 
     def test_pass_fail_threshold_at_60(self):
         """Score >= 60 and no errors → pass."""

@@ -41,7 +41,7 @@ Article snippets based on real sources: Reuters, Barron's, Wired, MIT Tech Revie
 - `topic_classification_demo.py` runs successfully: 13/13 topic classifications correct
 
 ### Commit
-See git log for commit hash.
+`983badf` — Type D: Topic classification demo + N-way comparison schema + Agent Guide improvements
 
 ## 2026-07-08 04:00 PT — Type B: Journalist/Publication Research (4 New Profiles: Williams, Bernal, Reynolds, Fussell)
 

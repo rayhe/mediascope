@@ -1,0 +1,76 @@
+Source: TechLusive (techlusive.in)
+Title: Meta launches Muse Image AI generator: New image tool raises privacy concerns over Instagram photos
+Date: July 8, 2026
+URL: https://www.techlusive.in/artificial-intelligence/meta-launches-muse-image-ai-generator-new-image-tool-raises-privacy-concerns-over-instagram-photos-1668341/
+Byline: (uncredited)
+Word count: ~650
+Genre: Tech product announcement with privacy criticism frame
+
+---
+
+Meta has introduced a new AI tool called Muse Image, an AI-powered image generator. The newly launched tool is developed by Meta Superintelligence Labs, which is company's dedicated artificial intelligence division. The tech giant is rolling out the feature for free via Meta AI app. In addition, it is also available within Instagram Stories and WhatsApp.
+
+The launch of Muse Image adds another AI tool to Meta's portfolio. The tool will allow users to transform, create, and edit their images using text prompts. Nevertheless, there's one particular feature that has drawn attention and criticism. Users are raising concern about their consent and privacy inside this new tool.
+
+What is Meta Muse Image?
+
+Meta has launched a new AI image generation tool, Muse Image, designed to create and edit images. It uses natural language prompts. The function of this AI assistant or AI utility model is that users can easily styled their images, edit visuals, and create artwork without needing advanced editing skills.
+
+Furthermore, the tool also includes built-in prompt presets, designed to help users who may not know what to create. These templates are included by Meta so that they can provide ready-made ideas that can be customized before generating an image.
+
+Beside this, Muse Image also supports prompt based image editing. This will help users to modify existing photos. They only have to describe changes they want to have in their images. For example, you can change background, or remove unwanted objects, or create entirely new scenes.
+
+The feature attracting the most attention
+
+One of the biggest talked about feature inside Muse Image is its ability to generate AI images using photos from public Instagram profiles.
+
+This functionality has drawn attention and raised concerns among users, especially round consent and privacy. According to Meta, users will be able to tag public Instagram profiles and accounts and not just this, they can also use that person's publicly available images as part of an AI generated creation.
+
+What's concerning is that the original account holder will not receive any notification when their images will be used.
+
+Some users have wondered if the public photos should be made available by default for AI-generated content, while others have suggested that users should more actively choose to use the photos than to withhold them.
+
+Meta says users have control
+
+Meta claims they are giving users the ability to decide whether to allow the use of public Instagram photos with these AI tools.
+
+The company has added features that let users turn off the feature if they do not wish to have others create AI images using their public content. But since it's not the default setting, there have been some privacy advocates who have taken a dislike to the way it's done, saying that many users may not know about it.
+
+The policy also mentions that users might not be informed when their posts are used to generate content by others using publicly shared Instagram content via the company's AI tools, or when others use the company's tools to make content using publicly shared Instagram content.
+
+Other features of Muse Image
+
+Muse Image not only generates images but also features AI-powered editing tools. You can:
+- Create AI-generated images using text prompts
+- Edit existing images with natural language instructions
+- Remove unwanted objects or people from photos
+- Generate images with custom backgrounds
+- Create functional QR codes using prompts
+
+Instagram Stories is also getting AI-powered effects and filters thanks to Muse, and they will be available within the app.
+
+Why Meta is integrating it with Facebook Marketplace?
+
+Meta is making Muse Image an easy-to-use solution, not just a creative one.
+
+The company showcased its technology, which allows users to see furniture in their homes before buying it on Facebook Marketplace. For instance, a person may post a picture of his or her room and see how a used couch will look prior to purchase.
+
+The capability may be a component of Meta's comprehensive strategy to integrate AI into its e-commerce and marketplace solutions.
+
+Free to use tool, but with some limits
+
+According to Meta, Muse Image is available for all users to use at no cost.
+
+Users that use the service more than a certain amount, however, will be required to subscribe to continue using the service. The company hasn't revealed full details of the subscription restrictions.
+
+Additionally, Meta has announced that its AI video generation model Muse Video is already underway, but the company hasn't released an official date for its release.
+
+Why users are concerned
+
+The controversy over Muse Image is part of a long list of privacy issues that have plagued Meta.
+
+The company has been the subject of regulatory investigations regarding user data collection and usage, such as the Cambridge Analytica scandal and the closure of Facebook's facial recognition system due to legal and regulatory action.
+
+Some privacy advocates argue that Muse Image follows a pattern that has been criticized before: opt-out, in which users can have their photos deleted from public Instagram accounts.
+
+Others, meanwhile, say the feature is only available for content that has been selected to be publicly visible, and that Meta has given controls for those who don't want to participate.

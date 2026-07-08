@@ -6627,28 +6627,95 @@ _ANALYST_AUTHORITY_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["analyst_authority"] = _ANALYST_AUTHORITY_PATTERNS
 
 
+# ---------------------------------------------------------------------------
+# Default-burden privacy: editorial technique of framing a feature that is
+# enabled by default and offers an opt-out as inherently violating user
+# consent.  The framing emphasises the *burden* on the user to discover and
+# toggle the setting, treating default-on as a quasi-deceptive practice
+# regardless of whether the opt-out is accessible.
+#
+# Distinct from policy_reversal (which tracks actual changes in policy from
+# one state to another), regulatory_shadow (which inserts regulatory context
+# into unrelated stories), and corporate_reassurance_undercut (which
+# undercuts a company's own PR language).  Default-burden privacy is about
+# how *existing* default-on features are framed as consent violations.
+#
+# Discovered in TechLusive Muse Image privacy article (Jul 8, 2026):
+# "opt-out, in which users can have their photos deleted from public
+# Instagram accounts" — the existence of an opt-out is presented as
+# insufficient, with the burden on users framed as a privacy failing.
+# ---------------------------------------------------------------------------
+_DEFAULT_BURDEN_PRIVACY_PATTERNS: list[re.Pattern] = [
+    # "enabled/turned on/active by default" — the canonical trigger
+    re.compile(
+        r"\b(?:enabled|turned on|activated?|switched on|on)\s+"
+        r"by\s+default\b",
+        re.IGNORECASE,
+    ),
+    # "opt-out" near burden/discovery language
+    re.compile(
+        r"\bopt[- ]?out\b"
+        r".{0,120}?"
+        r"\b(?:users? (?:may|might|can|must|have to|need to)|"
+        r"buried (?:in|under|deep)|"
+        r"not (?:the )?default|"
+        r"have to (?:find|navigate|dig|search|look)|"
+        r"requires? (?:users?|people|consumers?) to)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # reverse: burden/discovery language near "opt-out"
+    re.compile(
+        r"\b(?:users? (?:may|might) not (?:know|realize|be aware)|"
+        r"buried (?:in|under)|"
+        r"hidden (?:in|behind|under)|"
+        r"not (?:obvious|clear|easy to find|prominently)|"
+        r"difficult to (?:find|locate|access|discover))\b"
+        r".{0,120}?"
+        r"\bopt[- ]?out\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "without [users'/their] consent/knowledge/permission" near feature
+    re.compile(
+        r"\b(?:without|lacking)\s+"
+        r"(?:explicit |informed |prior |clear )?"
+        r"(?:user |their |users[''] )?"
+        r"(?:consent|knowledge|permission|awareness|approval)\b",
+        re.IGNORECASE,
+    ),
+    # "users have to [actively] [opt out/disable/turn off]"
+    re.compile(
+        r"\busers?\s+(?:have|need|are required|must)\s+to\s+"
+        r"(?:actively\s+)?"
+        r"(?:opt[- ]?out|disable|turn off|switch off|deactivate|"
+        r"go (?:into|to) (?:settings?|preferences?))\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["default_burden_privacy"] = _DEFAULT_BURDEN_PRIVACY_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 75 pattern-matched device types plus 7 structural
-    post-pass types (82 total).
+    Scans for 76 pattern-matched device types plus 7 structural
+    post-pass types (83 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (70): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (71): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_positioning,
     commodification_metaphor, confession_framing,
     consumer_ownership,
     corporate_reassurance_undercut, cross_publication_import,
-    denial_contradiction,
+    default_burden_privacy, denial_contradiction,
     editorial_aside, editorial_deflation, editorial_dramatization,
     emotional_appeal,
     escalation_amplification, expert_consensus_authority,
