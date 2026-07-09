@@ -374,8 +374,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 83, (
-            f"Expected 83 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 84, (
+            f"Expected 84 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -462,6 +462,8 @@ class TestFramingDeviceRegistry:
             "policy_reversal",
             # Competitive deficit (1) — subject lagging behind competitors
             "competitive_deficit",
+            # Competitive displacement (1) — entity filling vacuum left by another's retreat
+            "competitive_displacement",
             # Absence as evidence (1) — non-action framed as proof of guilt
             "absence_as_evidence",
             # Silence as guilt (1) — non-response treated as admission

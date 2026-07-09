@@ -182,6 +182,8 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "OpenAI", "Sam Altman", "ChatGPT", "GPT-4", "GPT-5",
             "DALL-E", "Sora", "GPT-4o", "Stargate", "Sora 2",
             "Jalapeño",  # OpenAI custom chip codename
+            "GPT-2", "gpt-oss",  # Historical + open-weight models
+            "Miles Brundage",  # Former OpenAI researcher
         ],
     },
     "X/Twitter": {
@@ -700,6 +702,11 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Neil Gong",
             "Somesh Jha",
             "Jessica Ji",
+            # Added from MIT TR open-weight models article (Jul 9, 2026)
+            "Princeton University", "Princeton",
+            "Peter Henderson",
+            "Percy Liang",
+            "Rishi Bommasani",
         ],
         "regex": r"(?<!\w)((?-i:NYU)|New York University"
                  r"|Northeastern(?:\s+University)?"
@@ -723,6 +730,8 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|Bo Li|Dawn Song|Sanmi Koyejo"
                  r"|Fei-Fei Li|Daron Acemoglu"
                  r"|Neil Gong|Somesh Jha|Jessica Ji"
+                 r"|Princeton(?:\s+University)?"
+                 r"|Peter Henderson|Percy Liang|Rishi Bommasani"
                  # Academic journals — case-sensitive: "nature" (common
                  # noun) must not match the journal Nature.
                  r"|(?-i:Nature)(?:\s+(?:Neuroscience|Medicine|Machine"
@@ -732,6 +741,20 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
                  r"|The\s+Lancet|(?-i:JAMA)"
                  r"|(?-i:Cell)(?=\s+(?:journal|paper|published|study))"
                  r"|(?-i:IEEE)|(?-i:ACM))(?!\w)",
+    },
+    # Added from MIT TR open-weight models article (Jul 9, 2026)
+    "AI Research Orgs": {
+        "aliases": [
+            "Allen Institute for AI", "AI2",
+            "EleutherAI",
+        ],
+        "regex": r"(?<!\w)(Allen Institute for AI|(?-i:AI2)|EleutherAI)(?!\w)",
+    },
+    "HuggingFace": {
+        "aliases": [
+            "HuggingFace", "Hugging Face", "Clement Delangue",
+        ],
+        "regex": r"(?<!\w)(Hugging\s?Face|Clement Delangue)(?!\w)",
     },
     "Research Centers": {
         "aliases": [

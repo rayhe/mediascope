@@ -170,7 +170,8 @@ def analyze_with_path_h_details(
         "military_techno_optimism", "assumed_consensus", "editorial_aside",
         "failure_precedent", "editorial_deflation",
         "competitive_positioning", "consumer_ownership", "slippery_slope",
-        "competitive_deficit", "absence_as_evidence", "silence_as_guilt",
+        "competitive_deficit", "competitive_displacement",
+        "absence_as_evidence", "silence_as_guilt",
         "expert_contradiction", "loss_leader_framing",
     }
 

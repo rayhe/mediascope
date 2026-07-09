@@ -1360,6 +1360,13 @@ _ADVERSARIAL_DEVICE_TYPES: set[str] = {
     # capture rather than value delivery.
     # Discovered in Wired Conversation Focus paywall article (Jul 2026).
     "loss_leader_framing",
+    # Competitive displacement frames one entity's action as filling a
+    # vacuum left by another entity's retreat or strategic pivot.
+    # Adversarial because it positions the subject as losing ground,
+    # retreating, or being displaced — the competitor's success is
+    # narratively dependent on the subject's failure.
+    # Discovered in MIT TR open-weight models article (Jul 9 2026).
+    "competitive_displacement",
 }
 
 # Anchor device types that create negative reader takeaway even when

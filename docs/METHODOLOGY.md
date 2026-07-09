@@ -182,7 +182,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 90 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (73 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 91 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (74 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -253,6 +253,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Cross-Publication Import** | Editorial device that imports another outlet's characterization as settled fact, laundering a contested editorial framing into common knowledge by attributing it to a vague collective of prior coverage rather than evaluating it independently. The framing gains authority from apparent consensus rather than evidence | "several/multiple/other/previous reports have described/depicted/characterized"; "widely/commonly described/depicted as"; "what [publication/reporters/critics] have called" | TechCrunch Zuckerberg AI agents town hall (Jul 2, 2026) — "Several reports have depicted the overhaul as a soul-crushing gulag" imports Wired's loaded "gulag" characterization as settled consensus rather than one outlet's editorial framing. Distinct from self_referential_investigation (which cites the same publication's own reporting) and anonymous_authority (which cites unnamed individual sources rather than a collective media characterization) |
 | **Competitive Positioning** | Explicitly elevating a competitor over the subject entity, using comparative language or benefit framing that positions a rival as the beneficiary of the subject's failure. Distinct from simple comparative sentiment (which is a sentiment dimension measuring favorable/unfavorable comparisons) because competitive positioning is a rhetorical device where the author recommends or implies a competitor is preferable | "good news for [competitor]"; "buy from a more reputable company"; "[competitor] has always/would never [do bad thing]"; "another reason to [buy/choose/switch to] [competitor]" | 9to5Mac Meta Conversation Focus paywall (Jul 1, 2026) — "All this may be good news for the upcoming Apple Glasses — it helps provide another reason for consumers to buy their AI-powered glasses from a more reputable company." Apple is explicitly positioned as the moral and strategic beneficiary of Meta's paywall decision. The author then adds "The company has always said that it never seeks a return on investment for accessibility features" — framing Apple as principled on the exact dimension Meta fails. Distinct from juxtaposition (side-by-side fact contrast) and scale_magnitude (numerical amplification) |
 | **Competitive Deficit** | Enumerating multiple named competitors to amplify the subject's failure or inadequacy, creating a pile-on effect where the subject appears surrounded and outpaced. The list of competitors positions the subject as losing on multiple fronts simultaneously, rather than simply behind one rival | "failed to launch a successful rival to [Competitor A]'s X, [Competitor B]'s Y, and [Competitor C]'s Z"; "while [A], [B], and [C] have all [succeeded]... [Subject] has not"; "lagging behind [A], [B], and [C]" | Reuters Zuckerberg town hall article (Jul 3, 2026) — competitor enumeration creates an impression of being surrounded and outpaced. Distinct from competitive_positioning (which elevates one specific rival as beneficiary) and isolation_framing (which focuses on being "the only one" not doing something) |
+| **Competitive Displacement** | Framing one entity's action as filling a vacuum left by another entity's retreat, decline, or strategic pivot. The temporal conjunction — "at a time when X is stepping back" — positions the subject as losing ground while a competitor capitalizes on the opening | "at a time when [Entity] may be reorienting toward closed releases"; "filling the void left by [Entity's] shift"; "[Entity] previously dominated... but may be losing its grip"; "notable as [Entity] cedes ground" | MIT Technology Review open-weight models article (Jul 9, 2026) — OpenAI's release framed as filling Meta's vacuum: "particularly notable at a time when Meta... may be reorienting toward closed releases." Distinct from competitive_deficit (which enumerates competitors) and competitive_positioning (which elevates one specific rival) |
 | **Policy Reversal** | Framing a subject's change of position, decision, or policy as a reversal, flip-flop, or U-turn, implying inconsistency, unreliability, or capitulation rather than legitimate evolution of thinking | "reversed course"; "backtracked"; "flip-flopped"; "U-turn"; "walked back"; "now says... previously said" | Cross-article pattern — common in tech policy coverage where platform rule changes are framed as inconsistency rather than iteration |
 | **Absence as Evidence** | Framing non-action, non-disclosure, or omission as proof of guilt or bad intent. Converts non-events into indictments by treating what a subject *didn't* do as more revealing than what they did | "Not one [noun] was directed at"; "the [audit/review] that never happened"; "[Subject] did not do that"; "has never [disclosed/addressed/tested]"; "failed to [act/disclose/comply]" | Newzlet Meta/Cannes editorial analysis (Jul 3, 2026) — "Not one task... was directed at Meta AI," "The internal audit that never happened is the data point," "Meta did not do that." Sustained absence-as-evidence framing converts Meta's non-testing of its own product into the article's central indictment. Distinct from refusal_amplification (which emphasizes active refusal to comment) and silence_as_guilt (which treats non-response as admission) |
 | **Silence as Guilt** | Explicitly treating silence, non-response, or non-disclosure as a confession or admission of guilt. Goes beyond factual noting of a no-comment to assert that the silence itself proves something | "That silence is its own answer"; "the lack of denial speaks volumes"; "refusal to comment is telling"; "no response — and that says everything" | Newzlet Meta/Cannes editorial analysis (Jul 3, 2026) — "That silence is its own answer" treats Meta's non-response as a confession rather than a media-relations decision. Distinct from refusal_amplification (which amplifies the act of refusing) because silence_as_guilt makes an epistemic claim: the silence constitutes evidence |
@@ -505,7 +506,7 @@ The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overa
 | Trigger | Threshold |
 |---|---|
 | Raw composite tone | ≥ 0.0 (non-negative) |
-| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, competitive_positioning, consumer_ownership, editorial_aside, failure_precedent, editorial_deflation, slippery_slope, competitive_deficit, absence_as_evidence, silence_as_guilt, expert_contradiction, loss_leader_framing)) |
+| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, competitive_positioning, consumer_ownership, editorial_aside, failure_precedent, editorial_deflation, slippery_slope, competitive_deficit, competitive_displacement, absence_as_evidence, silence_as_guilt, expert_contradiction, loss_leader_framing)) |
 | Agency attribution | < −0.3 (passive/target of scrutiny) |
 
 **Blend:** 10% raw + 90% framing-derived estimate. The framing estimate is computed from agency, emotional intensity, and adversarial device density.
@@ -759,7 +760,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 90-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 91-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -914,7 +915,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **79 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **81 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -932,7 +933,7 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 79 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 81 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
@@ -943,7 +944,7 @@ The following table documents all 79 entity clusters shipped with MediaScope, or
 | **Apple** | 11 | Apple, iPhone, iPad, Tim Cook, John Ternus, Apple Intelligence (+5 more) |
 | **Amazon** | 9 | Amazon, AWS, Alexa, Jeff Bezos, Andy Jassy, Amazon Web Services (+3 more) |
 | **Microsoft** | 9 | Microsoft, Satya Nadella, Azure, Bing, LinkedIn, GitHub (+3 more) |
-| **OpenAI** |  11 | OpenAI, Sam Altman, ChatGPT, GPT-4, GPT-5, DALL-E (+4 more) |
+| **OpenAI** | 14 | OpenAI, Sam Altman, ChatGPT, GPT-4, GPT-5, GPT-2, gpt-oss, DALL-E, Miles Brundage (+5 more) |
 
 #### AI & Cloud Infrastructure
 
@@ -1033,8 +1034,10 @@ The following table documents all 79 entity clusters shipped with MediaScope, or
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
-| **Academic/Research** | 49 | NYU, New York University, Northeastern University, Northeastern, Stanford University, Stanford (+43 more) |
+| **Academic/Research** | 54 | NYU, New York University, Northeastern University, Northeastern, Stanford University, Stanford, Princeton University, Princeton (+46 more) |
 | **Research Centers** | 15 | Cybersafety Research Center, Center for Countering Digital Hate, CCDH, Center for Humane Technology, Humane Intelligence, Internet Watch Foundation, IWF (+8 more) |
+| **AI Research Orgs** | 3 | Allen Institute for AI, AI2, EleutherAI |
+| **HuggingFace** | 3 | HuggingFace, Hugging Face, Clement Delangue |
 | **Child Safety Researchers** | 10 | Arturo Béjar, Béjar, Lexie Matsumoto, Matsumoto, Laura Edelson, Edelson, Rumman Chowdhury, Chowdhury (+2 more) |
 | **Education/Advocacy** | 5 | National PTA, National Education Association, NEA, American Federation of Teachers, AFT |
 | **Policy Research** | 13 | RAND Corporation, RAND, Brookings Institution, Brookings, Center for Strategic and International Studies, CSIS (+7 more) |
@@ -1247,7 +1250,7 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **137 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **138 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1357,7 +1360,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 137 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 138 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
@@ -1389,7 +1392,7 @@ The Zuckerberg town hall cluster (Jul 2–4, 2026) is the highest-value comparis
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 90 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 91 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|

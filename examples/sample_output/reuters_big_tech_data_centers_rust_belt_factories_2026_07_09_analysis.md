@@ -3,7 +3,7 @@
 **Publication:** Reuters
 **Date:** July 7, 2026
 **Word count:** ~1,050
-**Toolkit version:** MediaScope (90 device types, 513 patterns, 2051 tests)
+**Toolkit version:** MediaScope (91 device types, 513 patterns, 2051 tests)
 **Analysis date:** 2026-07-09
 
 ---

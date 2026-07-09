@@ -7522,24 +7522,67 @@ _HERITAGE_NOSTALGIA_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["heritage_nostalgia"] = _HERITAGE_NOSTALGIA_PATTERNS
 
 
+# ── 84. Competitive Displacement ──────────────────────────────────
+# Frames one entity's action as filling a vacuum left by another
+# entity's retreat, decline, or strategic pivot.  Distinct from
+# competitive_deficit (which is about falling behind) and
+# competitive_positioning (which is about direct rivalry).
+# Competitive displacement emphasises the temporal conjunction:
+# "at a time when X is stepping back / retreating / pivoting away."
+_COMPETITIVE_DISPLACEMENT_PATTERNS: list[re.Pattern[str]] = [
+    # "at a time when [entity] ... may be reorienting/retreating/stepping back/moving away"
+    re.compile(
+        r"at\s+a\s+time\s+when\s+.{0,80}"
+        r"(?:reorienting|retreating|stepping\s+back|pulling\s+back|moving\s+away"
+        r"|pivoting\s+away|abandoning|leaving|ceding|losing\s+ground"
+        r"|falling\s+behind|withdrawing)",
+        re.IGNORECASE,
+    ),
+    # "as [entity] ... retreats/cedes/loses/abandons"
+    re.compile(
+        r"(?:notable|significant|important|comes)\s+(?:at\s+a\s+time\s+)?as\s+.{0,60}"
+        r"(?:retreats?\b|cedes?\b|loses?\s+ground|abandons?\b|steps?\s+back"
+        r"|pulls?\s+back|pivots?\s+away|moves?\s+away)",
+        re.IGNORECASE,
+    ),
+    # "filling the void/gap/vacuum left by [entity]"
+    re.compile(
+        r"fill(?:ing|s)?\s+(?:the\s+)?(?:void|gap|vacuum|space)\s+"
+        r"(?:left|created|opened)\s+by",
+        re.IGNORECASE,
+    ),
+    # "previously dominated ... may be [retreat verb]" — implicit displacement
+    re.compile(
+        r"previously\s+(?:dominated|led|controlled|owned)\s+.{0,80}"
+        r"(?:may\s+be|is\s+now|appears?\s+to\s+be)\s+"
+        r"(?:reorienting|retreating|stepping\s+back|pivoting|shifting|moving\s+away"
+        r"|ceding|losing)",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["competitive_displacement"] = _COMPETITIVE_DISPLACEMENT_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 83 pattern-matched device types plus 7 structural
-    post-pass types (90 total).
+    Scans for 84 pattern-matched device types plus 7 structural
+    post-pass types (91 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (82): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (83): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
-    ceo_personalization, competitive_deficit, competitive_positioning,
+    ceo_personalization, competitive_deficit, competitive_displacement,
+    competitive_positioning,
     commodification_metaphor, confession_framing,
     consumer_ownership,
     corporate_reassurance_undercut, cross_publication_import,
