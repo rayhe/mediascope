@@ -3416,6 +3416,33 @@ _SPECULATIVE_FRAMING_PATTERNS: list[re.Pattern] = [
         r"take this (?:to its logical|a step further))\b",
         re.IGNORECASE,
     ),
+    # "may be [verb]ing" — hedged progressive construction.
+    # E.g. "may be getting in on that action", "may be signaling",
+    # "may be setting the stage".  Discovered in WSJ AI Spending article
+    # (Jul 8 2026): "may be getting in on" missed by all existing patterns.
+    re.compile(
+        r"\bmay\s+be\s+\w+ing\b",
+        re.IGNORECASE,
+    ),
+    # "would [adverb] [verb]" — hypothetical confirmation framing.
+    # E.g. "would effectively confirm", "would essentially validate",
+    # "would arguably demonstrate".  Distinct from factual "would" uses
+    # by requiring an evaluative adverb before the verb.
+    re.compile(
+        r"\bwould\s+(?:effectively|essentially|arguably|presumably|"
+        r"conceivably|virtually|practically|fundamentally|"
+        r"theoretically|potentially|implicitly)\s+\w+\b",
+        re.IGNORECASE,
+    ),
+    # "could be [past participle]" — passive speculative construction.
+    # E.g. "could be tripped up", "could be undermined", "could be
+    # derailed".  The existing "could [adverb] [verb]" pattern requires
+    # an adverb; this catches passive voice without one.
+    re.compile(
+        r"\bcould\s+be\s+(?:\w+ed|tripped|driven|shaken|torn|"
+        r"thrown|caught|undone|overtaken|overrun|outpaced|outspent)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 # Note: speculative_framing patterns are NOT registered in _DEVICE_PATTERNS
@@ -6928,12 +6955,45 @@ _DEFAULT_BURDEN_PRIVACY_PATTERNS: list[re.Pattern] = [
         r"\bopt[- ]?out\b",
         re.IGNORECASE | re.DOTALL,
     ),
-    # "without [users'/their] consent/knowledge/permission" near feature
+    # "without [users'/their] consent/knowledge/permission" near
+    # feature/setting/data/privacy language.  Requires proximity (within
+    # 120 chars) to platform-feature vocabulary so that third-party abuse
+    # contexts (e.g., "digitally undress people without their consent")
+    # don't fire.  Discovered via Bloomberg Muse Image article (Jul 2026)
+    # where xAI deepfake paragraph falsely triggered this device.
     re.compile(
+        r"\b(?:feature|setting|default|opt[- ]?(?:in|out)|privacy|"
+        r"data|collect|train|scrap|profile|content|photo|"
+        r"image|post|account|platform|toggle|menu|preference)"
+        r"\b.{0,120}?"
         r"\b(?:without|lacking)\s+"
         r"(?:explicit |informed |prior |clear )?"
         r"(?:user |their |users[''] )?"
         r"(?:consent|knowledge|permission|awareness|approval)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # reverse: "without consent" then feature/setting/data language
+    re.compile(
+        r"\b(?:without|lacking)\s+"
+        r"(?:explicit |informed |prior |clear )?"
+        r"(?:user |their |users[''] )?"
+        r"(?:consent|knowledge|permission|awareness|approval)"
+        r"\b.{0,120}?"
+        r"\b(?:feature|setting|default|opt[- ]?(?:in|out)|privacy|"
+        r"data|collect|train|scrap|profile|content|photo|"
+        r"image|post|account|platform|toggle|menu|preference)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "can opt out in [the] settings/menu/preferences" — burden implied
+    # by requiring navigation to settings.  Discovered via Bloomberg Muse
+    # Image article (Jul 2026): "can opt out in the settings menu" did
+    # not trigger because existing patterns required "have to/need to".
+    re.compile(
+        r"\bopt[- ]?out\s+(?:in|via|through|from|under)\s+"
+        r"(?:the\s+|their\s+|your\s+|an?\s+)?"
+        r"(?:settings?|preferences?|menu|controls?|options?|"
+        r"privacy\s+(?:settings?|center|dashboard|controls?|page)|"
+        r"account\s+(?:settings?|preferences?|page))\b",
         re.IGNORECASE,
     ),
     # "users have to [actively] [opt out/disable/turn off]"
@@ -6976,6 +7036,176 @@ _EDITORIAL_CROSS_PROMO_PATTERNS: list[re.Pattern] = [
     ),
 ]
 _DEVICE_PATTERNS["editorial_cross_promotion"] = _EDITORIAL_CROSS_PROMO_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# market_verdict — Editorial technique that frames stock-market or index
+# movements as an authoritative judgment on corporate strategy, using
+# investor behavior as argumentative evidence rather than neutral reporting
+# of financial data.
+#
+# Distinct from scale_magnitude (which captures large numbers generally)
+# and emotion_attribution (which puts feelings in named individuals' mouths).
+# Market_verdict uses aggregate investor/market behavior as editorial
+# "proof" — "the market has spoken", "investors have cast their vote",
+# "wiping $X in value".
+#
+# Discovered in WSJ AI Spending War article (Jul 8 2026): "PHLX -11%"
+# and "SK Hynix -17%" framed not merely as data points (scale_magnitude)
+# but as market judgment on the AI spending thesis — the drops were
+# positioned as evidence supporting the article's skeptical framing.
+#
+# Category 12: Financial & Investor Media Framing
+# ---------------------------------------------------------------------------
+_MARKET_VERDICT_PATTERNS: list[re.Pattern] = [
+    # "the market/Wall Street/investors has/have spoken/judged/weighed in"
+    re.compile(
+        r"\b(?:the market|Wall Street|investors?|shareholders?)"
+        r"\s+(?:ha(?:s|ve)\s+)?"
+        r"(?:spoken|judged|weighed in|delivered (?:a|its|their) verdict|"
+        r"cast (?:a|its|their) vote|rendered (?:a|its|their) judgment|"
+        r"sent a (?:clear |strong )?(?:message|signal))\b",
+        re.IGNORECASE,
+    ),
+    # "wiping [out] $X in/of value/market cap" — loss-as-narrative
+    re.compile(
+        r"\bwip(?:ing|ed)\s+(?:out\s+)?"
+        r"[\$€£]?\d[\d,.]*\s*(?:billion|million|trillion|[BMT])?"
+        r"\s+(?:in|of|from|off)\s+"
+        r"(?:value|market\s+cap|market\s+capitalization|shareholder\s+value)\b",
+        re.IGNORECASE,
+    ),
+    # "sell-off/rout/correction" near "as/after/amid [concern/fear/worry]"
+    re.compile(
+        r"\b(?:sell[- ]?off|selloff|rout|correction|downturn|plunge|crash|"
+        r"bloodbath|carnage|meltdown)\b"
+        r".{0,60}?"
+        r"\b(?:as|after|amid|on|over|reflecting|driven by)\s+"
+        r"(?:concerns?|fears?|worries?|anxiety|doubt|uncertainty|"
+        r"questions? (?:about|over|surrounding))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Percentage drop + causal framing: "fell/dropped/tumbled X% as/after/amid"
+    re.compile(
+        r"\b(?:fell|dropped|tumbled|plunged|plummeted|sank|slid|slumped|"
+        r"declined|lost|shed|gave up|retreated)\s+"
+        r"(?:(?:more than|nearly|almost|about|roughly|approximately)\s+)?"
+        r"\d[\d,.]*\s*(?:%|percent|per cent|percentage points?|bps|basis points?)"
+        r"\s+(?:as|after|amid|on|over|following|reflecting)\b",
+        re.IGNORECASE,
+    ),
+    # "spooked/rattled/shaken/panicked investors/markets/traders"
+    re.compile(
+        r"\b(?:spooked?|rattled?|shaken|panicked?|frightened|alarmed|"
+        r"unnerved|worried|concerned)\s+"
+        r"(?:investors?|markets?|traders?|shareholders?|Wall Street)\b",
+        re.IGNORECASE,
+    ),
+    # reverse: "investors/markets [were] spooked/rattled"
+    re.compile(
+        r"\b(?:investors?|markets?|traders?|shareholders?|Wall Street)\s+"
+        r"(?:(?:were|was|are|is|got|grew|became|have been|had been)\s+)?"
+        r"(?:spooked?|rattled?|shaken|panicked?|frightened|alarmed|"
+        r"unnerved|worried|concerned)\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["market_verdict"] = _MARKET_VERDICT_PATTERNS
+
+
+# ---------------------------------------------------------------------------
+# overbuilding_narrative — Editorial framing of infrastructure investment
+# as inherently excessive, unsustainable, or bubble-like.  Uses war/race
+# metaphors, overcapacity language, sustainability questioning, and
+# bubble analogies to frame corporate spending as reckless rather than
+# strategic.
+#
+# Distinct from scale_magnitude (which just captures large numbers),
+# catastrophizing (which predicts extreme negative outcomes), and
+# loaded_language (which uses emotionally charged individual words).
+# Overbuilding_narrative is a *thesis-level* framing that positions the
+# spending itself as the problem, often via metaphor or question framing.
+#
+# Discovered in WSJ AI Spending War article (Jul 8 2026): the entire
+# article's central thesis ("spending war", "when will someone blink",
+# "unsustainable") is an overbuilding narrative frame that treats massive
+# capex as an arms race requiring an exit rather than a strategic
+# investment requiring returns.
+#
+# Category 12: Financial & Investor Media Framing
+# ---------------------------------------------------------------------------
+_OVERBUILDING_NARRATIVE_PATTERNS: list[re.Pattern] = [
+    # War/race metaphors for spending: "spending war", "arms race",
+    # "capex war", "AI race", "investment war"
+    re.compile(
+        r"\b(?:spending|capex|investment|infrastructure|AI|compute)\s+"
+        r"(?:war|arms race|race|cold war|battle|contest)\b",
+        re.IGNORECASE,
+    ),
+    # "arms race" standalone (common shorthand)
+    re.compile(
+        r"\barms\s+race\b",
+        re.IGNORECASE,
+    ),
+    # Overcapacity/excess language: "overcapacity", "overbuilt", "glut",
+    # "excess capacity", "white elephant"
+    re.compile(
+        r"\b(?:overcapacit(?:y|ies)|overbuil(?:t|d|ding)|overinvest(?:ed|ing|ment)|"
+        r"overspend(?:ing)?|excess\s+capacit(?:y|ies)|surplus\s+capacit(?:y|ies)|"
+        r"data\s+center\s+glut|infrastructure\s+glut|compute\s+glut|"
+        r"white\s+elephant)\b",
+        re.IGNORECASE,
+    ),
+    # Sustainability questioning: "unsustainable" near spending/capex/investment
+    re.compile(
+        r"\b(?:unsustainable|not sustainable|cannot be sustained|"
+        r"can'?t (?:be )?sustained|won'?t (?:be )?sustainable)\b"
+        r".{0,60}?"
+        r"\b(?:spend(?:ing)?|capex|investment|pace|trajectory|rate|burn)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # reverse: spending near unsustainable
+    re.compile(
+        r"\b(?:spend(?:ing)?|capex|investment|pace|trajectory|rate|burn)\b"
+        r".{0,60}?"
+        r"\b(?:unsustainable|not sustainable|cannot be sustained)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Bubble language: "bubble", "mania", "euphoria", "frenzy", "gold rush"
+    # near tech/AI/infrastructure context
+    re.compile(
+        r"\b(?:AI|tech(?:nology)?|infrastructure|compute|data center|"
+        r"capex|spending|investment)\b"
+        r".{0,80}?"
+        r"\b(?:bubble|mania|euphoria|frenzy|gold rush|tulip|dot[- ]?com|"
+        r"hype cycle|irrational exuberance)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # reverse: bubble language near tech/AI context
+    re.compile(
+        r"\b(?:bubble|mania|euphoria|frenzy|gold rush|tulip|dot[- ]?com|"
+        r"hype cycle|irrational exuberance)\b"
+        r".{0,80}?"
+        r"\b(?:AI|tech(?:nology)?|infrastructure|compute|data center|"
+        r"capex|spending|investment)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "when will someone blink/pull back/stop/slow down" — challenge framing
+    re.compile(
+        r"\b(?:when|who) will (?:someone|anybody|anyone|a company|they)\s+"
+        r"(?:blink|pull back|stop|slow down|tap out|wave the white flag|"
+        r"cry uncle|back down|back off|cut back|scale back|rein in)\b",
+        re.IGNORECASE,
+    ),
+    # "throwing money at" — waste framing
+    re.compile(
+        r"\b(?:throwing|pouring|dumping|shoveling|burning)\s+"
+        r"(?:money|cash|capital|billions|resources)\s+"
+        r"(?:at|into|on)\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["overbuilding_narrative"] = _OVERBUILDING_NARRATIVE_PATTERNS
 
 
 # ---------------------------------------------------------------------------
@@ -7042,15 +7272,15 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 78 pattern-matched device types plus 7 structural
-    post-pass types (85 total).
+    Scans for 80 pattern-matched device types plus 7 structural
+    post-pass types (87 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (78): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (80): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_positioning,
@@ -7070,8 +7300,9 @@ def detect_framing_devices(
     ironic_quotation, isolation_framing,
     juxtaposition, latecomer_narrative, litigation_framing,
     loaded_language, loss_leader_framing,
-    marginal_endorsement,
+    marginal_endorsement, market_verdict,
     military_techno_optimism, outsourced_intensity,
+    overbuilding_narrative,
     pathologizing_metaphor, policy_reversal, power_asymmetry,
     precedent_analogy, precedent_framing,
     prescriptive_solutionism,

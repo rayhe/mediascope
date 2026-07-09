@@ -1618,7 +1618,8 @@ def extract_sources(text: str) -> list[SourceMention]:
             r"(?:internal\s+|leaked\s+|confidential\s+|draft\s+)?"
             r"(?:recording|document|documents|filing|filings|memo|"
             r"memorandum|presentation|spreadsheet|email|emails|"
-            r"letter|report|tape|audio|video|transcript|copy)\b",
+            r"letter|report|tape|audio|video|transcript|copy|"
+            r"blog\s+post)\b",
             re.IGNORECASE,
         ),
         # "court records/filings show/indicate/reveal"
@@ -1730,6 +1731,16 @@ def extract_sources(text: str) -> list[SourceMention]:
             rf"\b[Aa]n?\s+([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s+"
             rf"(?:spokesperson|spokeswoman|spokesman|representative|official)\s+"
             rf"({verb_alternation})\b",
+        ),
+        # "according to a/an [Company] spokesperson/representative" — attribution
+        # via "according to" where the spokesperson is org-affiliated.
+        # Discovered via Bloomberg Muse Image article (Jul 2026):
+        # "according to a Meta spokesperson" was missed because existing
+        # patterns required a verb after "spokesperson".
+        re.compile(
+            rf"\baccording to\s+[Aa]n?\s+"
+            rf"([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)\s+"
+            rf"(?:spokesperson|spokeswoman|spokesman|representative|official)\b",
         ),
         # "[Company] spokesperson [Name] said" — skip if name already captured
         re.compile(

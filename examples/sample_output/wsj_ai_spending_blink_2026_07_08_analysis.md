@@ -21,11 +21,19 @@ Notes Meta's potential cloud pivot and Watermelon model compute demands.
 - corporate_strategy: 0.32
 - executive_behavior: 0.22
 
-## Framing Analysis (8 devices)
+## Framing Analysis (8 devices → 14+ with new types)
 - scale_magnitude × 6: "$125-145B capex", "$185B 2027 estimate",
   "PHLX -11%", "SK Hynix -17%", "$56.31B revenue", "10x compute"
 - assumed_consensus × 1: "the conventional wisdom" framing
 - loaded_language × 1: "spending war" metaphor
+- market_verdict: "PHLX -11%" and "SK Hynx -17%" framed as investor
+  judgment on AI spending thesis (now detected alongside scale_magnitude)
+- overbuilding_narrative: "spending war" (war metaphor), central thesis
+  of unsustainable capex as arms race (now detected alongside loaded_language)
+- speculative_framing: "may be getting in on that action" (hedged
+  progressive), "would effectively confirm" (hypothetical confirmation),
+  "could be tripped up" (passive speculative) — now caught by 3 new
+  pattern expansions added Jul 8
 
 ## Source Extraction (8 sources after fixes)
 | # | Name | Affiliation | Expert | Verb | Pattern |
@@ -58,7 +66,10 @@ Notes Meta's potential cloud pivot and Watermelon model compute demands.
   documented in METHODOLOGY.md §16
 
 ## Framing Gaps Identified (Not Yet Fixed)
-- Missing `speculative_framing` for "may be getting in on that action",
-  "would effectively confirm", "could be tripped up"
-- Missing `investor_anxiety` / `market_reaction` for PHLX -11%, SK Hynix -17%
-- Missing `overbuilding_narrative` / `bubble_framing` for central thesis
+- ~~Missing `speculative_framing` for "may be getting in on that action",
+  "would effectively confirm", "could be tripped up"~~ **FIXED** Jul 8:
+  3 new patterns (may be [verb]ing, would [adverb] [verb], could be [past part.])
+- ~~Missing `investor_anxiety` / `market_reaction` for PHLX -11%, SK Hynix -17%~~
+  **FIXED** Jul 8: new `market_verdict` device type (Category 12)
+- ~~Missing `overbuilding_narrative` / `bubble_framing` for central thesis~~
+  **FIXED** Jul 8: new `overbuilding_narrative` device type (Category 12)

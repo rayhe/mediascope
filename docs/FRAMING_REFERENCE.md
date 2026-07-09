@@ -1,6 +1,6 @@
 # Framing Device Quick Reference
 
-> A compact lookup card for all 85 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
+> A compact lookup card for all 87 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
 
 ---
 
@@ -204,6 +204,8 @@ Devices specific to financial journalism, earnings coverage, and analyst reporti
 | 79 | **Financial Reassurance** | E | Negative operational news immediately reframed as positive market signal | "could soothe concerns," "easing fears," "investors shrugged off" |
 | 80 | **Historical Legitimation** | E | Temporally distant positive data inserted to dilute fresh negative news | "reported [quarter] results ... beat/topped expectations" in negative-news article |
 | 81 | **Marginal Endorsement** | E | Analyst action of negligible magnitude presented as meaningful signal | Price target raise of <1% framed as "analysts remain bullish" |
+| 84 | **Market Verdict** | E | Market drops/investor behavior framed as editorial judgment on strategy | "fell X% as/amid concerns," "investors have spoken," "wiping $X in value" |
+| 85 | **Overbuilding Narrative** | E | Infrastructure spending framed as excess, bubble, or unsustainable arms race | "spending war," "arms race," "overcapacity," "bubble," "when will someone blink" |
 
 ---
 
@@ -233,9 +235,9 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 | Tier | Count | Detection Method |
 |---|---|---|
 | Core | 10 | Pattern matching — fundamental editorial techniques |
-| Extended | 66 | Pattern matching — discovered from real article analysis |
+| Extended | 70 | Pattern matching — discovered from real article analysis |
 | Structural (post-pass) | 7 | Full-article heuristics (position, accumulation, structure) |
-| **Total** | **83** | |
+| **Total** | **87** | |
 
 ---
 

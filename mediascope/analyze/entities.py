@@ -482,6 +482,12 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         ],
         "regex": r"(?<!\w)(Snap(?:chat)?|Spectacles|Evan Spiegel)(?!\w)",
     },
+    "Midjourney": {
+        "aliases": [
+            "Midjourney", "Midjourney Inc",
+        ],
+        "regex": r"(?<!\w)(Midjourney(?:\s+Inc\.?)?)(?!\w)",
+    },
     "EssilorLuxottica": {
         "aliases": [
             "EssilorLuxottica", "Essilor", "Luxottica",

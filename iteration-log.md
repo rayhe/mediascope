@@ -16920,3 +16920,54 @@ Same-event comparison: Reuters vs Barron's on Zuckerberg's AI agent admission fr
 - **Distinct publications:** 43
 
 ### Commit
+
+## 2026-07-08 23:00 PT — Type A: Article Deep Dive (WSJ AI Spending Gap Fixes — 2 New Device Types + Speculative Framing Expansion)
+
+**Focus:** Resolved all three documented framing gaps from the WSJ "Will Someone Finally Blink in the AI Spending War?" analysis (Jul 8). Added two new Category 12 (Financial & Investor Media Framing) device types and expanded speculative_framing with three new pattern families.
+
+### New Device Types
+
+1. **`market_verdict` (#84):** Market drops or investor behavior framed as authoritative editorial judgment on corporate strategy. Distinct from `scale_magnitude` (big numbers) and `emotion_attribution` (named individuals). Catches "fell X% as/amid concerns," "investors have spoken," "wiping $X in value," "spooked/rattled investors." 6 regex patterns.
+
+2. **`overbuilding_narrative` (#85):** Infrastructure investment framed as inherently excessive, unsustainable, or bubble-like. War/race metaphors, overcapacity language, sustainability questioning, bubble analogies, and challenge-question framing. Catches "spending war," "arms race," "overcapacity," "AI bubble," "when will someone blink," "throwing money at." 9 regex patterns.
+
+### Speculative Framing Expansion (3 new patterns)
+
+The existing 12 speculative_framing patterns missed three common hedge constructions found in the WSJ article:
+
+1. **`may be [verb]ing`** — hedged progressive: "may be getting in on that action," "may be signaling a shift"
+2. **`would [adverb] [verb]`** — hypothetical confirmation: "would effectively confirm," "would essentially validate"
+3. **`could be [past participle]`** — passive speculative: "could be tripped up," "could be undermined," "could be derailed"
+
+All three are subject to the existing 5-marker cumulative threshold (individual hedges are normal journalism; the device fires only when 5+ accumulate).
+
+### WSJ Analysis Updated
+
+Resolved all three documented gaps in `wsj_ai_spending_blink_2026_07_08_analysis.md`:
+- ~~Missing speculative_framing~~ → FIXED (3 new patterns)
+- ~~Missing investor_anxiety/market_reaction~~ → FIXED (new `market_verdict` device)
+- ~~Missing overbuilding_narrative/bubble_framing~~ → FIXED (new `overbuilding_narrative` device)
+
+### New Tests: 32 regression tests
+
+`test_market_overbuilding_framing.py`:
+- 12 market_verdict tests (10 positive, 2 false-positive guards)
+- 15 overbuilding_narrative tests (13 positive, 2 false-positive guards)
+- 5 speculative_framing expansion tests (3 positive above threshold, 2 below-threshold guards)
+
+### Pre-existing Doc Drift Fixed
+
+While updating structural consistency guards, fixed 3 pre-existing drift issues:
+- Entity cluster count: 77 → 78 (Midjourney cluster added to METHODOLOGY.md §15.3 table)
+- Annotated article count: 131 → 132 (IBD open source sticker shock article added since last count)
+- FRAMING_REFERENCE.md tier counts: Extended 66 → 70, Total 83 → 87
+
+### Cumulative Stats
+- **Tests:** 1,989 (was 1,697) — 84 test files (was 83)
+- **Framing device types:** 87 (80 pattern-matched + 7 structural) — was 85 (78+7)
+- **Total regex patterns:** 497 (was 480) — +17 new patterns
+- **Annotated articles:** 132
+- **Entity clusters:** 78
+- **Journalists:** 176 (553 auto-detected migrations)
+
+**Commit:** (pending)

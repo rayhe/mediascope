@@ -182,7 +182,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 85 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (68 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 87 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (70 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -274,6 +274,8 @@ These were added through systematic analysis of real articles from the five trac
 | **Default Burden Privacy** | Editorial technique of framing a feature that is enabled by default and offers a standard opt-out as inherently violating user consent. The framing emphasises the *burden* on the user to discover and toggle the setting, treating default-on as a quasi-deceptive practice regardless of whether the opt-out is accessible. Distinct from policy_reversal (which tracks actual changes in policy), regulatory_shadow (which inserts regulatory context into unrelated stories), and corporate_reassurance_undercut (which undercuts a company's own PR language). Default-burden privacy is about how *existing* default-on features are framed as consent violations | "enabled/turned on by default"; "opt-out" near "users may not know/realize/be aware"; "buried in settings"; "without [explicit/informed] consent/knowledge/permission"; "users have to [actively] opt out/disable/turn off" | TechLusive Meta Muse Image privacy article (Jul 8, 2026) — "opt-out, in which users can have their photos deleted from public Instagram accounts" frames a standard opt-out control as a privacy failing by emphasising the burden on users. The existence of the opt-out mechanism is presented as insufficient rather than standard practice. Distinct from the Meta-specific pattern where Cambridge Analytica is guilt-by-association'd into every privacy story |
 | **Editorial Cross-Promotion** | All-caps interstitial headline blocks or CTA blocks embedded in article body text, importing the framing of linked headlines into the host article's narrative. Common in Fox News/Fox Business/NY Post and other News Corp properties. These blocks serve dual editorial functions: (1) interrupt reader flow to drive clicks to related coverage, and (2) import adversarial or sensational framing from linked headlines into otherwise balanced reporting. Creates plausible deniability — the publication can maintain neutral prose while injecting loaded framing through "just links" | All-caps blocks of 5+ words in article body; "CLICK HERE TO GET THE FOX BUSINESS APP"; "JUDGE LETS STATES PURSUE CLAIMS THAT META DESIGNED FACEBOOK AND INSTAGRAM TO ADDICT CHILDREN" | Fox Business Meta $1.4T penalty article (Jul 7, 2026) — two all-caps blocks import adversarial framing ("DESIGNED...TO ADDICT CHILDREN," "CHILD SOCIAL MEDIA ADDICTION") into an otherwise defense-forward, balanced business report. The host article carefully uses "claims" and "allegations" while the cross-promo blocks state the addiction framing as the linked headline's premise. Distinct from self_referential_investigation (same publication citing its own prior reporting as evidence) and cross_publication_import (importing another outlet's characterization as settled fact) |
 | **Emotion Attribution** | Editorial attribution of emotional states — disappointment, frustration, alarm — to subjects who expressed only factual observations, upgrading neutral statements into emotional reactions. Distinct from loaded_language (which uses emotionally charged words) and editorial_dramatization (which rewrites facts in dramatic language) — emotion attribution specifically *invents* an inner emotional state the subject never expressed | "[Name] is disappointed/frustrated/alarmed that/by/about"; "investors/analysts are worried/anxious/nervous"; "leading investors to fret/worry/panic" | Barron's "What Meta Said About Slow Progress on AI Agents" (Jul 2, 2026) — Zuckerberg's factual "the trajectory for this hasn't quite accelerated" becomes "Zuckerberg is disappointed that AI agents haven't developed." Also "leading investors to fret" — emotional state attributed to investors with no sourced evidence of actual investor sentiment |
+| **Market Verdict** | Market drops or investor behavior framed as authoritative editorial judgment on corporate strategy, using aggregate market movements as argumentative evidence rather than neutral financial data. Distinct from scale_magnitude (which captures large numbers generally) and emotion_attribution (which puts feelings in named individuals' mouths). Market_verdict frames collective investor behavior as editorial "proof" — e.g. a sell-off positioned as evidence supporting the article's thesis | "the market/Wall Street/investors has spoken/delivered its verdict/sent a clear signal"; "fell/dropped/tumbled X% as/amid/after concerns/fears"; "sell-off/rout/correction amid concerns about"; "wiping $X in value/market cap"; "spooked/rattled/shaken investors/markets" | WSJ "Will Someone Finally Blink in the AI Spending War?" (Jul 8, 2026) — "PHLX -11%" and "SK Hynix -17%" framed not merely as data points (scale_magnitude) but as market judgment on the AI spending thesis. The drops were positioned as evidence supporting the article's skeptical framing of infrastructure investment as reckless |
+| **Overbuilding Narrative** | Infrastructure investment framed as inherently excessive, unsustainable, or bubble-like through war/race metaphors, overcapacity language, sustainability questioning, and bubble analogies. Distinct from scale_magnitude (which just captures large numbers), catastrophizing (which predicts extreme negative outcomes), and loaded_language (which uses emotionally charged individual words). Overbuilding_narrative is a thesis-level framing that positions the spending *itself* as the problem, often via metaphor or challenge-question framing | "spending/capex/AI war"; "arms race"; "overcapacity/overbuilt/overinvestment/infrastructure glut"; "unsustainable" near spending/capex; bubble/mania/euphoria/frenzy near AI/tech/infrastructure; "when will someone blink/pull back"; "throwing/pouring/dumping money/cash/billions at/into" | WSJ "Will Someone Finally Blink in the AI Spending War?" (Jul 8, 2026) — the article's central thesis frames massive AI capex as an arms race requiring an exit rather than strategic investment requiring returns. "Spending war" in the headline, "unsustainable trajectory," and "when will someone blink" collectively construct the overbuilding frame |
 
 #### Structural Devices (Post-Pass)
 
@@ -754,7 +756,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 85-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 87-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -909,7 +911,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **77 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **78 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -927,7 +929,7 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 77 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 78 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
@@ -998,6 +1000,7 @@ The following table documents all 77 entity clusters shipped with MediaScope, or
 | **Data/Intelligence Industry** | 12 | ShadowDragon, Babel Street, LexisNexis, Thomson Reuters CLEAR, Voyager Labs, Dataminr (+6 more) |
 | **Palantir** | 4 | Palantir, Alex Karp, Peter Thiel, Palantir Technologies |
 | **Cambridge Analytica** | 1 | Cambridge Analytica |
+| **Midjourney** | 2 | Midjourney, Midjourney Inc |
 
 #### Media, Critics & Public Figures
 
@@ -1240,7 +1243,7 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **131 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **132 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1350,7 +1353,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 131 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 132 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
@@ -1382,7 +1385,7 @@ The Zuckerberg town hall cluster (Jul 2–4, 2026) is the highest-value comparis
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 85 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 87 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|

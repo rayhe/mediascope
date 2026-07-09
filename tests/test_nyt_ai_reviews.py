@@ -374,8 +374,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 78, (
-            f"Expected 78 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 80, (
+            f"Expected 80 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -506,6 +506,10 @@ class TestFramingDeviceRegistry:
             "editorial_cross_promotion",
             # Emotion attribution (1) — editorial attribution of emotional states never expressed
             "emotion_attribution",
+            # Market verdict (1) — market drops framed as editorial judgment on strategy
+            "market_verdict",
+            # Overbuilding narrative (1) — infrastructure spending framed as excess/bubble
+            "overbuilding_narrative",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual
