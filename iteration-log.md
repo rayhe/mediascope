@@ -17456,3 +17456,89 @@ Reuters article "Meta debuts Muse Spark 1.1 with preview open to developers" (Ju
 - **Journalists:** 178 (560 auto-detected migrations, 174 multi-pub)
 
 **Commit:** (pending)
+
+---
+
+## 2026-07-09 11:00 PT — Type B: Journalist/Publication Research (Ashley Feinberg + Tess Owen)
+
+### New Journalist Profiles
+
+#### 1. Ashley Feinberg
+- **Career:** San Antonio Current intern (2011) → Gizmodo editorial assistant (2013) → Gawker staff writer (2015) → Gizmodo senior reporter (2017) → Wired senior writer (May–Oct 2017, ~5 months, pre-Drummond era under Shachtman) → HuffPost (2017) → Slate (2019–present)
+- **Beat:** Internet-sleuthing scoops (Comey's secret Twitter, Romney's "Pierre Delecto")
+- **Wired tenure:** ~5 months — brief pre-Drummond era stint under Noah Shachtman
+- **Sources:** LinkedIn, Gawker archives, HuffPost masthead, Slate About page
+
+#### 2. Tess Owen
+- **Career:** Bullett Magazine (2013) → Columbia J-School (2014-15) → Vice News reporter (2015-2020) → Vice Media senior reporter (2020-2024) → Wired reporter (2024, brief) → WSJ senior video journalist (2025)
+- **Beat:** Extremism, politics, disinformation
+- **Wired tenure:** Brief (~2024), departed ~2025
+- **Sources:** Vice News bylines, WSJ video credits, Wired UK press coverage
+
+### Editorial Changes (5 new entries)
+- Feinberg hire at Wired (2017-05-30) and departure (2017-10)
+- Owen hire at Wired (~2024) and departure (~2025)
+- Wired UK print cancellation (2025-12) — 7 staff departed, team rebuilt
+
+### Doc Count Updates
+- Journalists: 178 → 180
+- Multi-publication: 174 → 176
+- Auto-detected migrations: 560 → 567
+- Updated in: README.md, EDITORIAL_HISTORIES.md, careers_demo.py
+
+### Also Researched (Not Added)
+- Kate Taylor, Isabella Ward, Brian Kahn, Sophie Kleeman, Manisha Krishnan, Jake Lahut — already tracked
+- Jason Koebler — associated with 404 Media/Vice Motherboard, no evidence of Wired staff role
+
+### Test Results
+- **97/97 structural consistency tests pass**
+- **2,129/2,129 full suite pass** (0 failures, 0 regressions)
+
+### Cumulative Stats
+- **Tests:** 2,129 — 90 test files
+- **Framing device types:** 91 (84 pattern-matched + 7 structural)
+- **Total regex patterns:** 519
+- **Annotated articles:** 138
+- **Emotional language terms:** 841
+- **Entity clusters:** 81 (786+ aliases)
+- **Journalists:** 180 (567 auto-detected migrations, 176 multi-pub)
+
+**Commit:** a54179d — pushed to GitHub
+
+---
+
+## 2026-07-09 13:00 PT — Type B: Journalist/Publication Research (Sophie Kleeman expansion + Ella Creamer)
+
+### Expanded Profile: Sophie Kleeman (Wired Senior Editor, Business Desk)
+- **Fix:** Corrected year in notes from "May 2025" → "May 2026"
+- **Expanded notes:** Added NYU education (BA journalism + anthropology), internship history (NYT Magazine, MSNBC, Gothamist, The New Presence Magazine), WEF Agenda contributor role at Mic, BI/Insider role progression (essays & features editor → senior investigations editor → deputy enterprise editor), specific edited stories (data centers, C-sections, transgender violence, Tesla empire, Pelosi diet feature), editorial hierarchy detail (Drummond → Schiffer → Kleeman)
+- **Added 5 source URLs:** TBN hire announcement, TBN Insider promotion, CityBiz analysis, Muck Rack profile, WEF Agenda contributor page
+- **Sources:** talkingbiznews.com (2 articles), citybiz.co, muckrack.com, weforum.org, me.sh (LinkedIn aggregator)
+
+### New Journalist Profile: Ella Creamer (Guardian Books Reporter)
+- **Publication:** The Guardian (tracked)
+- **Career:** Freelanced for Guardian since Sept 2022, hired as books reporter (announced July 2026 TBN Ticker). Previous: BBC Radio 4, Politico Magazine, i-D freelance. Interned at Politico, The Week, Guardian N&M, Immediate Media Co., News UK. Editorial fellow at Washington Monthly. Contributing analyst for NewsGuard
+- **Education:** BA from LSE, MA from Columbia University Graduate School of Journalism
+- **META-RELEVANCE:** Wrote two Meta-critical stories in June 2026: "Whistleblower Sarah Wynn-Williams sues Meta over attempts to silence her" (Jun 25) and "Sales of Meta whistleblower's memoir soar after Hay festival 'silencing'" (Jun 10). Books/publishing beat intersection with tech accountability
+- **4 source URLs:** TBN hire article, NewsGuard team page, Muck Rack profile, BuzzSumo journalist profile
+- **Sources:** talkingbiznews.com, newsguardtech.com, muckrack.com, buzzsumo.com
+
+### Also Researched (Already Tracked or Not Added)
+- Brian Kahn — already tracked with 5 career entries, confirmed Guardian series editor overlap was concurrent role
+- Caiwei Chen — already tracked with 3 career entries and 1,432-char notes
+- Multiple Atlantic hires (Sophia Nguyen, Jonathan Fischer, etc.) — not added this round, lower analytical priority than Guardian/Wired profiles
+
+### Test Results
+- **21/21 career tests pass** (0 failures, 0 regressions)
+- YAML parses cleanly: 181 journalists
+
+### Cumulative Stats
+- **Tests:** 2,129 — 90 test files
+- **Framing device types:** 91 (84 pattern-matched + 7 structural)
+- **Total regex patterns:** 519
+- **Annotated articles:** 138
+- **Emotional language terms:** 841
+- **Entity clusters:** 81 (786+ aliases)
+- **Journalists:** 181 (567 auto-detected migrations, 176 multi-pub)
+
+**Commit:** (pending)

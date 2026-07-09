@@ -5407,9 +5407,24 @@ journalists:
     source_url: https://talkingbiznews.com/media-news/wired-hires-editors-from-business-insider-bloomberg/
     start: 2026-05
   name: Sophie Kleeman
-  notes: 'Recent hire (May 2025): Senior editor on Wired business desk. Reports to Zoë Schiffer. Career pipeline Mic → Gizmodo
-    → Insider/BI → Wired continues adversarial-tech-journalism lineage. Specializes in enterprise investigative editing —
-    data centers, corporate power, tech industry.'
+  notes: 'Recent hire (May 2026): Senior editor on Wired business desk, New York office. Reports
+    to Zoë Schiffer (business section lead). Announced by executive editor Brian Barrett alongside
+    Brian Kahn (science desk). Career pipeline Mic → Gizmodo → Insider/BI → Wired continues adversarial-tech-journalism
+    lineage. Education: BA in journalism and anthropology from NYU. Internships at NYT Magazine,
+    MSNBC, Gothamist, The New Presence Magazine. WEF Agenda contributor while at Mic. At BI, rose
+    through essays & features editor → senior investigations editor → deputy enterprise editor
+    over ~8 years. Edited award-winning stories on data center impacts, C-section epidemic in the
+    US, transgender violence, and Elon Musk''s secretive Tesla empire. Also notably followed Nancy
+    Pelosi''s ice-cream-and-hot-dog diet for a week (3,617-word feature). Specializes in enterprise
+    investigative editing — data centers, corporate power, tech industry. At Wired, editorial
+    hierarchy is Drummond → Schiffer → Kleeman for enterprise tech coverage. Her corporate-power
+    investigative specialty directly serves Wired''s adversarial Big Tech coverage posture.'
+  source_urls:
+  - https://talkingbiznews.com/media-news/wired-hires-editors-from-business-insider-bloomberg/
+  - https://talkingbiznews.com/they-re-hiring/kleeman-joins-insiders-investigations-team-as-senior-editor/
+  - https://citybiz.co/2026/05/wired-expands-editorial-team-with-hires-from-business-insider-and-bloomberg/
+  - https://muckrack.com/sophie-kleeman/articles
+  - https://www.weforum.org/stories/authors/sophie-kleeman/
 - career:
   - beat: climate, environment
     end: 2021-12
@@ -9074,15 +9089,29 @@ journalists:
     event_type: hired
     notes: 'Promoted from podcast producer to full-time staff writer. Announcement in Oct 17 2024 Gadget Lab final episode:
       "he''s graduating to be a full-time reporter at WIRED." Contact: boone@wired.com, Signal @boone.10, Bluesky boone.bsky.social.
-      Based in San Francisco. Self-describes as covering "any tech that is weird and/or on fire." Recent coverage (2025-2026):
+      Based in San Francisco. Self-describes as covering "any tech that is weird and/or on fire." Bio also notes he is "currently
+      training to be a virtual reality DJ." Recent coverage (2025-2026):
       TranscribeGlass smart glasses for deaf/hard-of-hearing, Watch Duty fire-tracking app profile (Techmeme frontpage), Sonos
       CEO Tom Conrad interview, Nintendo Switch 2 repairability, Google I/O 2025, Apple WWDC, tariffs impact on tech devices,
-      right-to-repair legislation (Colorado), ModRetro Chromatic retro gaming device, PlayStation $7.85M settlement. Panelist
-      at SPJ NorCal conference on "Reporting on Crisis: Covering Fires and Disasters." Panelist at SF Press Club "AI + Journalism"
-      event hosted by Bloomberg''s Rachel Metz. KEY ANALYTICAL VALUE: As a Wired-native (internal promotion, not cross-outlet
+      right-to-repair legislation (Colorado), ModRetro Chromatic retro gaming device, PlayStation $7.85M settlement. META-SPECIFIC
+      COVERAGE (2026): "The Comedy Club at the End of the Metaverse" (~May 2026) — reported on and photographed (byline +
+      photo credit) VR comedy club Soapstone inside Meta Horizon Worlds mourning Meta''s platform shutdown plans, quoting
+      users who called it "my home" and framing Meta as not understanding community value despite ~$80B Reality Labs investment.
+      "Meta Will Keep Horizon Worlds Alive in VR ''for the Foreseeable Future''" (~Apr 2026) — covered Boz''s reversal after
+      Meta initially said it would shut down the metaverse. PODCAST APPEARANCES: Guest on Wondery''s Business Wars podcast
+      3-part series "Meta and the Battle for Smart Glasses" (Jun 3-11, 2026) alongside Julian Chokkattu, discussing Meta
+      Ray-Bans vs Google Android XR, ethical issues around AI-powered frames, worker exploitation, and federal agents using
+      glasses illegally — positioned Meta''s smart glasses as both "a welcome victory" and a "tool for mass surveillance."
+      Panelist at SPJ NorCal conference on "Reporting on Crisis: Covering Fires and Disasters." Panelist at SF Press Club
+      "AI + Journalism" event hosted by Bloomberg''s Rachel Metz. INTERNATIONAL SYNDICATION: Articles syndicated across
+      Condé Nast properties including WIRED en Español, Wired Italia, Vanity Fair France, and Allure — indicating high
+      editorial value within the Condé Nast network and amplifying his framing choices across multiple international audiences.
+      KEY ANALYTICAL VALUE: As a Wired-native (internal promotion, not cross-outlet
       hire), Ashworth represents the endpoint of Wired''s own talent pipeline — no prior institutional framing to compare
       against in DiD analysis, but useful as a control case for how Wired''s internal culture shapes a journalist who grew
-      up entirely inside Condé Nast.'
+      up entirely inside Condé Nast. His Meta/VR coverage (Horizon Worlds comedy club, Boz reversal, Business Wars smart
+      glasses series) makes him a direct comparator for how Wired''s gear/consumer desk covers Meta vs the adversarial
+      business desk (Schiffer et al.) — same company, different editorial DNA within the same publication.'
     publication: wired
     role: staff_writer
     source_url: https://muckrack.com/boone-ashworth/articles
@@ -12268,3 +12297,30 @@ journalists:
   - https://nycitylens.com/author/tessaowen/
   - https://buzzsumo.com/journalist/tess-owen/vice-com/
   - https://muckrack.com/tess-a-owen/articles
+- career:
+  - beat: books, publishing, culture
+    event_type: hired
+    notes: 'Freelanced for The Guardian since September 2022, primarily covering books and publishing.
+      Previously contributed to BBC Radio 4, Politico Magazine, i-D. Interned at Politico, The Week,
+      Guardian News and Media, Immediate Media Co., and News UK. Editorial fellow at The Washington
+      Monthly. Contributing analyst for NewsGuard. Education: BA from London School of Economics and
+      Political Science, MA from Columbia University Graduate School of Journalism.'
+    publication: guardian
+    role: books_reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/creamer-joins-the-guardian-as-books-reporter/
+    start: 2022-09
+  name: Ella Creamer
+  notes: 'Hired as Guardian books reporter (announced July 2026 by TBN, freelancing since Sept 2022).
+    Covers new releases, authors, and publishing. BuzzSumo lists her title as "Commissioning editor,
+    books @guardian." META-RELEVANT: wrote Jun 25 2026 Guardian article "Whistleblower Sarah Wynn-Williams
+    sues Meta over attempts to silence her" and Jun 10 2026 "Sales of Meta whistleblower memoir soar
+    after Hay festival silencing." Two Meta-critical book/publishing stories in June 2026 alone. Also
+    wrote about Granta AI controversy (Jun 20) and Pope Leo XIV book deal (Jun 25). Previous NewsGuard
+    analyst role is notable — NewsGuard rates publisher reliability, creating a meta-credibility loop
+    (she evaluated publishers before becoming one). LSE + Columbia Journalism pedigree common in UK →
+    US media pipeline.'
+  source_urls:
+  - https://talkingbiznews.com/they-re-hiring/creamer-joins-the-guardian-as-books-reporter/
+  - https://www.newsguardtech.com/team/ella-creamer/
+  - https://muckrack.com/ella-creamer/articles
+  - https://buzzsumo.com/journalist/ella-creamer/theguardian-com/
