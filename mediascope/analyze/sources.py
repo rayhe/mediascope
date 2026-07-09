@@ -1481,11 +1481,36 @@ def extract_sources(text: str) -> list[SourceMention]:
         r"\b([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)\s+"
         r"(?:did not|declined to|chose not to|refused to|would not|couldn't)",
     )
+    # Compound no-comment subjects: "X and Y did not respond"
+    _NO_COMMENT_COMPOUND_RE = re.compile(
+        r"\b([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)"
+        r"\s+and\s+"
+        r"([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)\s+"
+        r"(?:did not|declined to|chose not to|refused to|would not|couldn't)",
+    )
     for pat in no_comment_patterns:
         for m in pat.finditer(text):
             # Try to extract the entity name from the sentence subject
             # by looking at the 80 chars before the match.
             pre_ctx = text[max(0, m.start() - 80):m.end()]
+            # First check for compound subjects ("X and Y did not ...")
+            compound_m = _NO_COMMENT_COMPOUND_RE.search(pre_ctx)
+            if compound_m:
+                for grp_idx in (1, 2):
+                    ent = compound_m.group(grp_idx).strip()
+                    if ent.lower() in {n.lower() for n in seen_names}:
+                        continue
+                    seen_names.add(ent)
+                    sources.append(SourceMention(
+                        name=ent,
+                        is_anonymous=False,
+                        is_expert=False,
+                        affiliation="",
+                        quote="",
+                        attribution_verb="",
+                        source_type="no_comment",
+                    ))
+                continue
             subj_m = _NO_COMMENT_SUBJECT_RE.search(pre_ctx)
             if subj_m:
                 entity_name = subj_m.group(1).strip()
@@ -1810,6 +1835,13 @@ def extract_sources(text: str) -> list[SourceMention]:
             rf"\b[Aa]nalysts?\s+(?:with|at|from)\s+"
             rf"([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)"
             rf"\s+({verb_alternation})\b",
+        ),
+        # "[Org] analysts verb" — inverted analyst attribution.
+        # Handles "Morgan Stanley analysts said", "Goldman Sachs analysts
+        # estimated".  The org name precedes the role descriptor.
+        re.compile(
+            rf"\b([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)"
+            rf"\s+[Aa]nalysts?\s+({verb_alternation})\b",
         ),
     ]
 

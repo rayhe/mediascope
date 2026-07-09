@@ -914,7 +914,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **78 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **79 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -932,7 +932,7 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 78 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 79 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
@@ -966,6 +966,7 @@ The following table documents all 78 entity clusters shipped with MediaScope, or
 | **SK Hynix** | 3 | SK Hynix, SK hynix, Hynix |
 | **Semiconductor Equipment** | 8 | KLA, KLA Corporation, Lam Research, Lam, Applied Materials, Tokyo Electron, ASML, Screen Holdings |
 | **Storage/Memory** | 4 | SanDisk, Western Digital, WD, Seagate |
+| **Sumitomo Electric** | 3 | Sumitomo Electric, Sumitomo Electric Industries, Sumitomo |
 | **AI Infrastructure** | 1 | Scale AI |
 | **AI Chatbot Products** | 2 | Character.AI, Character AI |
 | **Outsourcing/Contractors** | 3 | Covalen, Sama, Accenture |
@@ -1246,7 +1247,7 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **135 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **136 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1356,7 +1357,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 135 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 136 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|

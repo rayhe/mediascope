@@ -17324,3 +17324,48 @@ Fixed `cli.py` passing wrong kwargs (`db=db, profile=profile`) to `ArticleAnalyz
 - **Journalists:** 178 (560 auto-detected migrations, 174 multi-pub)
 
 **Commit:** (pending)
+
+---
+
+## Iteration 2026-07-09 08:00 PT — Type A: Article Deep Dive
+
+**Article:** Reuters — "Meta to put AI chip into production in September as it looks to double computing capacity, memo shows" (Jul 9, 2026)
+
+**Wire service baseline article:** Neutral, fact-driven reporting on Meta's custom AI chip "Iris" entering production in September. Based on internal memo. No editorial framing — standard wire format.
+
+### Gaps Found & Fixed
+
+1. **Sumitomo Electric entity cluster (NEW):** `detect_entities()` missed "Sumitomo Electric" — not in any cluster. Added new cluster with aliases: Sumitomo Electric, Sumitomo Electric Industries, Sumitomo. Ticker 5802.T. Entity clusters: 78 → 79.
+
+2. **Inverted analyst attribution:** "Morgan Stanley analysts said" uses `[Org] analysts verb` format. Only `Analysts with/at/from [Org] verb` was matched. Added new self-validating pattern to `sources.py`.
+
+3. **Compound no-comment subjects:** "Samsung Electronics and Sumitomo Electric did not respond to requests for comment" — `_NO_COMMENT_SUBJECT_RE` only captured last entity before refusal verb. Added `_NO_COMMENT_COMPOUND_RE` to split "X and Y" conjunction into both entities.
+
+4. **"floundered" passive framing term:** Already present in `PASSIVE_FRAMING` list (added in prior iteration at line 621 of sentiment.py). Confirmed detection.
+
+### Files Changed
+- `mediascope/analyze/entities.py` — Added Sumitomo Electric cluster
+- `mediascope/analyze/sources.py` — Added inverted analyst attribution pattern + compound no-comment extraction
+- `tests/test_reuters_iris_chip_jul9.py` — 20 new regression tests
+- `examples/sample_output/reuters_meta_iris_chip_production_2026_07_09_article.txt` — Article text
+- `examples/sample_output/reuters_meta_iris_chip_production_2026_07_09_analysis.md` — Annotated analysis (#136)
+- `docs/METHODOLOGY.md` — Entity clusters 78→79, annotated articles 135→136, Sumitomo Electric in cluster table
+- `docs/ARCHITECTURE.md` — Test file count 87→88, test count 2067→2087, new test file listing
+- `docs/QUALITY_STANDARDS.md` — Annotated articles 135→136
+- `README.md` — Test file count 87→88, test count 2067→2087, new test file listing
+
+### Test Results
+- **20 new tests pass** (entity, source, sentiment, topic)
+- **97/97 structural consistency tests pass**
+
+### Cumulative Stats
+- **Tests:** 2,087 — 88 test files
+- **Framing device types:** 90 (83 pattern-matched + 7 structural)
+- **Total regex patterns:** 513+
+- **Annotated articles:** 136
+- **Emotional language terms:** 841
+- **Entity clusters:** 79
+- **Self-validating source patterns:** 2 (was 1)
+- **Journalists:** 178 (560 auto-detected migrations, 174 multi-pub)
+
+**Commit:** (pending)

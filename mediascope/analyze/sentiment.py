@@ -618,7 +618,7 @@ PASSIVE_FRAMING: list[str] = [
     "was forced to", "had to", "was compelled", "was pressured",
     "faces criticism", "faces backlash", "under scrutiny",
     "was hit by", "was plagued by", "was rocked by",
-    "struggled", "stumbled", "faltered", "fumbled",
+    "struggled", "stumbled", "faltered", "fumbled", "floundered",
     "failed to", "refused to", "declined to comment",
     "came under fire", "was accused of", "was blamed for",
     "would say almost nothing", "would not say",

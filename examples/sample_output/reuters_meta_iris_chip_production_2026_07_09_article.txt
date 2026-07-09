@@ -1,0 +1,36 @@
+Meta to put AI chip into production in September as it looks to double computing capacity, memo shows
+
+By [Reuters Staff]
+Published: July 9, 2026
+
+Meta Platforms (META.O) plans to start manufacturing an artificial intelligence chip from September as part of its plan to boost overall computing power to 14 gigawatts next year, showed an internal memo reviewed by Reuters.
+
+The tech firm's data center chip, code-named "Iris", is part of a four-generation project for Meta Training and Inference Accelerators (MTIA) that it will design in-house. The plan is to use custom-built silicon to improve the AI that powers its Facebook and Instagram social media platforms.
+
+Testing the chip took only six weeks and found no major issues, the memo showed. That relatively quick progress signals positive momentum for an in-house effort that has floundered since its launch more than half a decade ago.
+
+Meta tailored the chip for its own needs and is working with Broadcom (AVGO.O) to help design it and Taiwan Semiconductor Manufacturing Co (2330.TW) to manufacture it. The approach is likely to help the firm lower its massive computing costs and gain more independence from chip suppliers such as Nvidia (NVDA.O) and Advanced Micro Devices (AMD.O).
+
+The bug-testing completion and production timing have not been previously reported. Meta declined to comment.
+
+The chip is aimed at augmenting the large quantities of graphics processing units (GPUs) used for AI applications that Meta purchases from Nvidia and AMD.
+
+However, adopting the latest GPUs at a firm as large as Meta "has been a heavy lift, and it has cost us time," the memo showed.
+
+Meta unveiled Iris under its technical name in March along with three other AI processors. It plans to launch a chip about every six months through 2027, whereas typically firms release AI chips at intervals of a year or more.
+
+SEVEN GIGAWATTS OF COMPUTING IN 2026
+
+Meta this year plans to deploy seven gigawatts of computing infrastructure, the memo showed. It plans to double that number in 2027, the memo said.
+
+The firm expects to spend as much as $145 billion on AI infrastructure this year, a significant portion of Big Tech's more than $700 billion projected outlay on the technology.
+
+To expand computing infrastructure, Meta has secured long-term, multi-year supply agreements, the memo showed. Those include agreements with Samsung Electronics (005930.KS) for memory chips, Sandisk (SNDK.O) for flash storage and Sumitomo Electric (5802.T) for fiber-optic equipment.
+
+Such long-term agreements have become critical for data center expansion targets amid a memory chip shortage that has prompted companies such as Apple AAPL.O to raise prices.
+
+Sandisk declined to comment. Samsung Electronics and Sumitomo Electric did not respond to requests for comment.
+
+Components such as memory and AI chips have experienced a surge in demand as tech companies race to expand data centers to keep pace with AI's thirst for computing power.
+
+Memory and other chip prices have risen rapidly and substantially enough that "chipflation" has become a macroeconomic concern, Morgan Stanley analysts said.

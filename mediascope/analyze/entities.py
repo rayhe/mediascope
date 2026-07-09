@@ -922,6 +922,13 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         ],
         "regex": r"(?<!\w)(KLA(?:\s+Corporation)?|Lam Research|(?-i:Lam)(?=\s+(?:Research|is|was|shares?))|Applied Materials|(?-i:AMAT)|(?-i:ASML)|Tokyo Electron)(?!\w)",
     },
+    "Sumitomo Electric": {
+        "aliases": [
+            "Sumitomo Electric", "Sumitomo Electric Industries",
+            "Sumitomo",
+        ],
+        "regex": r"(?<!\w)(Sumitomo(?:\s+Electric(?:\s+Industries)?)?)(?!\w)",
+    },
     "Storage/Memory": {
         "aliases": [
             "SanDisk", "Western Digital", "WD",
