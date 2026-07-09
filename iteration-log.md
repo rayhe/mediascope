@@ -2,6 +2,33 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-09 04:00 PT — Type B: Journalist/Publication Research (Michael Calore + Kylie Robison)
+
+**Focus:** Added two missing journalist profiles and expanded editorial changes for Wired business desk personnel.
+
+### 1. Michael Calore — NEW PROFILE (Wired lifer, ~18 years)
+
+- **Career:** Wired News/Lycos (pre-2006) → Wired/Condé Nast (2006) → Webmonkey editor (2008) → Wired.com senior editor → Director, Consumer Tech & Culture (Jan 2024-present)
+- **Significance:** Longest-tenured editor at Wired. One of Drummond's three Directors (alongside Marchman and Schiffer). The ONLY director promoted from within — all others came from external Gizmodo/Vice/Platformer adversarial pipeline.
+- **Analytical value:** Institutional continuity figure and natural control for measuring adversarial editorial shift across Wired's three directorates.
+- **Sources:** snackfight.com, muckrack.com, talkingbiznews.com, gawkerarchives.com, en-academic.com
+
+### 2. Kylie Robison — NEW PROFILE (5 pubs in ~5 years)
+
+- **Career:** Business Insider → Fortune → The Verge → Wired (Apr-Dec 2025, ~6-7 months) → Core Media (Ashlee Vance)
+- **Significance:** One of shortest Drummond-era tenures. Departure cost Wired its dedicated AI business correspondent.
+- **Key scoops:** OpenAI cover story (Fortune), OpenAI social network (Verge), Peloton pay inequity (BI)
+- **Sources:** talkingbiznews.com (4 articles), editorandpublisher.com
+
+### 3. Editorial Changes
+
+- Robison hiring as senior correspondent (Apr 28, 2025)
+- Robison departure for Core Media (Dec 10, 2025)
+
+### Cumulative Stats
+- **Journalists:** 179 (+2), **Multi-pub:** 31, **Career entries:** ~893
+- **Tests:** 2,051 (unchanged), **Framing device types:** 90, **Annotated articles:** 135
+
 ## 2026-07-09 02:00 PT — Type A: Article Deep Dive (Reuters Rust Belt Factories)
 
 **Article:** Reuters, "Big Tech data centers are driving up power bills at America's Rust Belt factories" (July 7, 2026)
@@ -17081,7 +17108,7 @@ While updating structural consistency guards, fixed 3 pre-existing drift issues:
 - **Framing device types:** 90
 - **Annotated articles:** 135
 
-**Commit:** (below)
+**Commit:** 1a036af
 
 ---
 
