@@ -17170,3 +17170,53 @@ Fixed `cli.py` passing wrong kwargs (`db=db, profile=profile`) to `ArticleAnalyz
 - **Publication profiles loading:** 6/6 (was 3/6)
 
 **Commit:** (pending)
+
+## 2026-07-09 05:00 PT — Type C: Ownership & Funding Deep Dive (The Verge / PMC + Wired stock update)
+
+### Focus: PMC Azure OpenAI enterprise agreement + duplicate journalist fix
+
+### New Findings
+
+1. **PMC has an enterprise agreement with Microsoft Azure OpenAI** — discovered via 10up case study. PMC uses Azure OpenAI for SEO titles, semantic embeddings, content tagging, text expansion across its publishing portfolio. Gabriel Koen (SVP Technology, PMC) quoted. This is PMC's *second* distinct financial relationship with the OpenAI ecosystem (in addition to the Vox Media content licensing deal from May 2024), creating bilateral money flow with a Meta competitor.
+
+2. **Reddit stock price update:** RDDT closed at $195.47 on Jul 8, 2026 (down from $200.86 on Jul 7). Advance/Condé Nast stake value: ~$8.25B (was $8.48B).
+
+### Profile Changes
+
+**The Verge (`profiles/the-verge.yaml`):**
+- Added `Microsoft Azure (OpenAI)` revenue relationship under `pmc_parent_conflicts`
+- Added `azure_openai_enterprise` known_conflict entry (severity 4, `financial` type)
+- Full conflict analysis: PMC pays Microsoft (Azure OpenAI) for AI infrastructure → Microsoft is Meta AI competitor → PMC's AI editorial coverage has undisclosed financial dependency on a Meta competitor's AI platform
+- Profile grew from ~860 to 942 lines
+
+**Wired (`profiles/wired.yaml`):**
+- Updated Reddit stock: $200.86 → $195.47, market cap $38.7B → $37.6B, stake value $8.48B → $8.25B
+
+### Data Fixes
+
+**Duplicate Michael Calore entry — RESOLVED:**
+- Prior Type B iteration (04:00 PT) added a second Calore entry at YAML index 177 with richer data (earlier Wired News/Lycos career history, 5 source URLs, multi_publication field, expanded notes)
+- Original entry at index 110 had only 3 career events (Webmonkey 2008+), no source URLs
+- Resolution: removed original sparse entry, kept richer duplicate → 179→178 journalists, 555→560 migrations, 175→174 multi-pub
+- Also fixed stale `event_type: continuation` → `career_change` and `event_type: promotion` → `promoted` (both valid types per models.py)
+
+### Doc Updates
+- README.md: 179→178 journalists, 555→560 migrations, careers_demo row 177→178
+- EDITORIAL_HISTORIES.md: 179→178 journalists, 175→174 multi-pub, 555→560 migrations
+- careers_demo.py: 179→178 tracked journalists
+
+### Test Results
+- **97/97 structural consistency tests pass** (was failing on duplicate journalist + stale doc counts)
+
+### Cumulative Stats
+- **Tests:** 2,018+ — 86 test files
+- **Profile lines:** The Verge 942 (was 860), Wired 1868, NYT 1951, Guardian 1897, MIT TR 2144, Atlantic 1365
+- **The Verge known_conflicts:** 7 types (was 6, added `azure_openai_enterprise`)
+- **Framing device types:** 89 (82 pattern-matched + 7 structural)
+- **Total regex patterns:** 507
+- **Annotated articles:** 134
+- **Emotional language terms:** 841
+- **Entity clusters:** 78
+- **Journalists:** 178 (560 auto-detected migrations, 174 multi-pub)
+
+**Commit:** (pending)

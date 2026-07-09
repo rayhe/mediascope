@@ -303,6 +303,58 @@ revenue_relationships:
       - "https://www.reuters.com/technology/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/"
       - "https://techcrunch.com/2024/06/05/whats-in-it-for-us-journalists-ask-as-publications-sign-content-deals-with-ai-firms/"
 
+  - partner: "Microsoft Azure (OpenAI)"
+    relationship_type: "enterprise_customer"
+    estimated_value: "undisclosed (enterprise agreement)"
+    description: >
+      PMC has an EXISTING ENTERPRISE AGREEMENT with Microsoft Azure specifically to use Azure's
+      OpenAI services across its publishing portfolio. This was revealed in a case study by 10up
+      (PMC's WordPress AI integration partner, now the WordPress practice of Fueled).
+
+      PMC partnered with 10up in mid-2023 to integrate AI into editorial workflows via ClassifAI,
+      an open-source WordPress AI plugin. PMC chose to route all AI operations through Azure OpenAI
+      rather than direct OpenAI API access, leveraging their pre-existing Azure enterprise agreement
+      to simplify compliance and contracting.
+
+      KEY AI INTEGRATIONS (production across PMC brands):
+      - SEO title generation and suggestions (publication-specific prompt customization)
+      - Semantic embeddings for smart 404 pages (15% bounce rate reduction in production)
+      - Content tagging and taxonomy management (Rolling Stone alone had 21,000+ tags)
+      - Text expansion/contraction for editorial workflows
+      - Image tagging, descriptions, OCR via AI vision models
+      - Content recommendations and quality management
+      - Granular role-based AI feature rollouts per publication and per user
+
+      KEY PERSONNEL: Gabriel Koen, SVP of Technology at PMC, oversaw the partnership. Quote:
+      "Working with 10up on their ClassifAI plugin has been a great experience... This partnership
+      has been crucial in helping us better understand and utilize generative AI."
+
+      DISTINCTION FROM OPENAI CONTENT LICENSING:
+      This is PMC's SECOND distinct financial relationship with the OpenAI ecosystem:
+      (a) Content licensing: Vox Media/OpenAI deal (May 2024) gives OpenAI access to The Verge's
+          archives for model training. Revenue flows FROM OpenAI TO PMC/Vox Media.
+      (b) Enterprise tooling: Azure OpenAI enterprise agreement gives PMC access to OpenAI models
+          for internal editorial operations. Revenue flows FROM PMC TO Microsoft/OpenAI.
+      Both relationships create financial alignment with OpenAI ecosystem success, and both
+      involve a Meta AI competitor. Neither has been disclosed in Verge coverage.
+
+      CONFLICT SIGNIFICANCE:
+      1. Microsoft competes with Meta in AI (Copilot vs Meta AI), cloud (Azure vs Meta's internal
+         infra), productivity (Teams vs Workplace), and is OpenAI's largest investor/partner.
+      2. PMC's editorial AI workflows are powered by OpenAI models via Azure — meaning The Verge's
+         own editorial operations depend on OpenAI technology. This creates institutional familiarity
+         and alignment with the OpenAI product ecosystem beyond just licensing revenue.
+      3. Combined with the content licensing deal, PMC has money flowing in BOTH directions with
+         the OpenAI ecosystem: receiving licensing fees AND paying for enterprise AI services.
+         This bilateral financial relationship is deeper than any other tracked publication's
+         single-direction licensing deals.
+      4. ClassifAI's architecture allows PMC to switch providers, but as of the case study
+         publication (mid-2025), Azure OpenAI remained the primary provider — suggesting PMC
+         is operationally locked in to the OpenAI ecosystem for editorial AI.
+    date_established: "2023 (enterprise agreement predates AI integration partnership)"
+    source_urls:
+      - "https://10up.com/our-work/penske-media-ai-integration/"
+
   - partner: "Google"
     relationship_type: "litigation_adversary"
     estimated_value: "damages sought (undisclosed)"
@@ -658,6 +710,36 @@ known_conflicts:
       is untested.
     severity: 3
     evidence: "PMC portfolio, Dick Clark Productions ownership, SXSW ownership"
+
+  - type: "azure_openai_enterprise"
+    description: >
+      PMC maintains an enterprise agreement with Microsoft Azure to use Azure's OpenAI services
+      for internal editorial AI operations across its publishing portfolio. Documented in a 10up
+      case study (~mid-2025): PMC uses OpenAI models (via Azure) for SEO title generation, semantic
+      embeddings (smart 404 pages), content tagging/taxonomy (21,000+ tags at Rolling Stone alone),
+      text expansion/contraction, image tagging/OCR, and content recommendations.
+
+      This is PMC's SECOND distinct financial relationship with the OpenAI ecosystem — separate from
+      the Vox Media/OpenAI content licensing deal (May 2024). Combined, PMC has money flowing in
+      BOTH directions: receiving licensing fees FROM OpenAI and paying FOR OpenAI services via Azure.
+      No other tracked publication has this bilateral financial relationship.
+
+      Microsoft competes with Meta in AI (Copilot vs Meta AI), cloud, and productivity. As OpenAI's
+      largest investor/partner, Microsoft's commercial success is structurally linked to OpenAI's.
+      PMC's editorial operations — including The Verge's — are powered by the same AI stack that
+      competes with Meta AI. This creates institutional familiarity, dependency, and financial
+      alignment with the OpenAI/Microsoft ecosystem that extends beyond passive licensing revenue
+      into active operational integration.
+
+      DISCLOSURE STATUS: Not disclosed in any Verge article as of July 2026. The Verge discloses
+      the Google lawsuit ("Disclosure is our brand") but has not disclosed that its parent company's
+      editorial AI infrastructure runs on the AI stack of a Meta competitor.
+    severity: 4
+    evidence: >
+      10up case study (mid-2025), Gabriel Koen SVP Technology quote, ClassifAI plugin documentation,
+      Azure OpenAI enterprise agreement referenced in case study
+    source_urls:
+      - "https://10up.com/our-work/penske-media-ai-integration/"
 
   - type: "eldridge_cross_holdings"
     description: >
