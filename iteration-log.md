@@ -16669,3 +16669,48 @@ Re-run: 8 devices across 4 types (was 1/1). Closing paragraph fully instrumented
 - **NEUTRAL_VERBS:** +16 financial analyst verbs
 - **_KNOWN_ORGS:** +11 analyst/research firms
 - **Framing patterns:** +1 (shockingly + magnitude)
+
+---
+
+## 2026-07-08 17:00 PT — Type A: Article Deep Dive (Muse Image 5-Way Cross-Publication)
+
+### Focus
+Reuters Muse Image wire article analysis + 5-way cross-publication comparison (Reuters, Bloomberg, TechCrunch, TechLusive, iPhone in Canada).
+
+### Improvements
+
+#### 1. Topic Classification: Superintelligence Labs Proper-Noun Suppression
+- **Bug:** "Meta Superintelligence Labs" triggered `ai_ethics_safety` topic at 0.17 confidence in Reuters wire article — "superintelligence" keyword matched even though it's a proper noun (organization name), not an AI safety concept reference.
+- **Fix:** Added proper-noun suppression in `topics.py` paralleling the existing education-topic analogy suppression. `_SUPERINTELLIGENCE_ORG_RE` detects "Superintelligence Labs" spans and excludes `superintelligence`/`superintelligent` matches within them.
+- **Validation:** Conceptual uses ("superintelligence risk") still fire correctly. Mixed org-name + conceptual usage preserves conceptual matches only.
+- **Tests:** 6 new tests in `test_superintelligence_org_suppression.py`.
+
+#### 2. Reuters Muse Image Wire Analysis
+- Saved full article text (220 words, Jaspreet Singh/Bengaluru bureau)
+- Manual 8-dimension tone analysis: dead neutral (0.00) across all dimensions
+- **Key finding:** VADER scores +0.6261 on this neutral wire — product-launch language ("expands," "rolling out," "interpret complex prompts," "free") inflates score. This is the canonical VADER calibration gap for wire articles.
+
+#### 3. 5-Way Muse Image Cross-Publication Comparison (New Tier 1 Cluster)
+- **Publications:** Reuters (wire), Bloomberg (wire+kicker), TechCrunch (tech editorial), TechLusive (tech blog/privacy), iPhone in Canada (blog)
+- **Tone spread:** 0.35 (Reuters 0.00 to TechCrunch -0.35)
+- **VADER inversion documented:** All 5 publications score VADER-positive (+0.30 to +0.64) despite 4/5 having manually-assessed negative editorial tone
+- **Genre effect analysis:** Wire→editorial transformation documented as 3-layer fact-addition model (wire baseline → factual additions → editorial importation)
+- **4-layer framing device distribution** mapped across all 5 publications
+- **Zero-source editorial claims** flagged for TechLusive and iPhone in Canada
+
+#### 4. Documentation & Structural Consistency
+- QUALITY_STANDARDS.md: Muse Image added to Tier 1, cluster count 10→11, article count 124→127
+- METHODOLOGY.md: cluster count 11→12, article count 124→127, pub count 40→41
+- ARCHITECTURE.md/README.md: test count 1780→1808, file count 75→77, pattern count 466→468
+- Pre-existing drift fixed: regex pattern count was 468 (not 466), 2 test files missing from ARCHITECTURE.md
+
+### Stats After This Iteration
+- **Tests:** 1,808 (from 1,780)
+- **Test files:** 77 (from 75)
+- **Annotated articles:** 127 (from 124)
+- **Distinct publications:** 41 (from 40)
+- **Same-event comparison clusters:** 12 (from 11), 5 Tier 1 (from 4)
+- **Regex patterns:** 468 (from 466)
+
+### Commit
+`3b54d75` — Fix 'Superintelligence Labs' false positive in ai_ethics_safety topic + 5-way Muse Image cross-pub comparison
