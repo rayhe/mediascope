@@ -775,6 +775,17 @@ NEGATIVE_COMPARISON: list[str] = [
     "more ethical",
     "less reputable",
     "less trustworthy",
+    # Added 2026-07-09: Reuters Muse Spark 1.1 analysis.  Explicit pricing
+    # comparisons ("above OpenAI's entry-level", "below Anthropic's
+    # higher-end") scored 0.0 because no pricing comparison phrases existed.
+    "priced above",
+    "more expensive than",
+    "costlier than",
+    "pricier than",
+    "higher priced",
+    "above openai",
+    "above anthropic",
+    "above google",
 ]
 
 POSITIVE_COMPARISON: list[str] = [
@@ -785,6 +796,17 @@ POSITIVE_COMPARISON: list[str] = [
     # quantitative phrases like "more than 50 million phones" which are
     # not comparative framing.  Detected in WIRED NameTag deep dive:
     # "more than 50 million phones" scored as positive comparison.
+    # Added 2026-07-09: Reuters Muse Spark 1.1 analysis.  Pricing
+    # comparisons that position subject favorably ("below Anthropic's
+    # higher-end Claude Sonnet", "cheaper than", "undercuts") were not
+    # captured.
+    "priced below",
+    "cheaper than",
+    "less expensive than",
+    "undercuts",
+    "below anthropic",
+    "below openai",
+    "below google",
 ]
 
 

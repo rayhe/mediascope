@@ -17369,3 +17369,53 @@ Fixed `cli.py` passing wrong kwargs (`db=db, profile=profile`) to `ArticleAnalyz
 - **Journalists:** 178 (560 auto-detected migrations, 174 multi-pub)
 
 **Commit:** (pending)
+
+## 2026-07-09 09:00 PT — Type A: Article Deep Dive (Reuters Muse Spark 1.1)
+
+### Focus
+Reuters article "Meta debuts Muse Spark 1.1 with preview open to developers" (Jul 9, 2026). Developer API release at $1.25/$4.25 per million input/output tokens, competing with Anthropic and OpenAI.
+
+### Changes
+
+#### 1. pathologizing_metaphor: Neutral "intervention" false positive suppression
+- **File:** `mediascope/analyze/framing.py` (detect_framing_devices filter)
+- "less human intervention" at position 613 flagged as pathologizing_metaphor
+- Added lookback context check: suppresses when preceded by "human", "less", "without", "no", "minimal", "reduced", "limited", "zero", "eliminate", "reduce", "fewer" within 30 chars
+- Genuine pathologizing ("staged an intervention") preserved
+
+#### 2. comparative_framing: Pricing comparison phrase lists
+- **File:** `mediascope/analyze/sentiment.py`
+- NEGATIVE_COMPARISON: +7 phrases ("priced above", "more expensive than", "costlier than", "pricier than", "higher priced", "above openai", "above anthropic", "above google")
+- POSITIVE_COMPARISON: +7 phrases ("priced below", "cheaper than", "less expensive than", "undercuts", "below anthropic", "below openai", "below google")
+
+#### 3. loaded_language + competitive_positioning: Competitive dramatization
+- **File:** `mediascope/analyze/framing.py`
+- loaded_language: Added "heated competition/race/battle/rivalry/contest/fight/war", "AI/tech supremacy", "AI/tech arms race/war"
+- competitive_positioning: +2 new patterns — "pitting X against" and "close/narrow/bridge/shrink the gap"
+- **Pattern count:** 513 → 515
+
+### Files Modified
+- `mediascope/analyze/framing.py` — pathologizing_metaphor suppression filter, loaded_language competitive dramatization, competitive_positioning "pitting" + "gap" patterns
+- `mediascope/analyze/sentiment.py` — NEGATIVE_COMPARISON +7 pricing phrases, POSITIVE_COMPARISON +7 pricing phrases
+- `tests/test_reuters_muse_spark_11_jul9.py` — 23 new tests (7 intervention, 8 pricing, 4 loaded language, 4 competitive positioning)
+- `tests/test_structural_consistency.py` — Expected pattern count 513→515
+- `examples/sample_output/reuters_muse_spark_11_2026_07_09_analysis.md` — Annotated sample output
+- `docs/ARCHITECTURE.md` — Test count 2087→2110, file count 88→89, pattern count 513→515, new test file listing
+- `docs/METHODOLOGY.md` — Annotated articles 136→137
+- `docs/QUALITY_STANDARDS.md` — Annotated articles 136→137
+- `README.md` — Test count 2087→2110, file count 88→89, pattern count 513→515, new test file listing
+
+### Test Results
+- **23 new tests pass**
+- Full regression suite pending
+
+### Cumulative Stats
+- **Tests:** 2,110 — 89 test files
+- **Framing device types:** 90 (83 pattern-matched + 7 structural)
+- **Total regex patterns:** 515
+- **Annotated articles:** 137
+- **Emotional language terms:** 841
+- **Entity clusters:** 79
+- **Journalists:** 178 (560 auto-detected migrations, 174 multi-pub)
+
+**Commit:** (pending)

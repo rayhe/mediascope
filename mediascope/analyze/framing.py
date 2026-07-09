@@ -374,7 +374,16 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"watershed|landmark|ground-?breaking|sweeping|far-?reaching|seismic|"
         # Financial crash / bubble language that editorializes market risk.
         # Discovered via Memeburn Meta Cloud chip selloff article (Jul 2026).
-        r"super\s*bubble|mega\s*bubble|house of cards|bubble\s+burst"
+        r"super\s*bubble|mega\s*bubble|house of cards|bubble\s+burst|"
+        # Dramatic competitive-conflict language that editorializes by
+        # escalating competitive dynamics beyond factual description.
+        # Discovered via Reuters Muse Spark 1.1 article (Jul 9, 2026):
+        # "heated competition for AI supremacy" uses loaded dramatization
+        # — neither "heated" nor "supremacy" were previously captured.
+        r"heated (?:competition|race|battle|rivalry|contest|fight|war)|"
+        r"(?:AI|tech(?:nology)?|data|digital|cloud|compute|chip|arms?) supremacy|"
+        r"(?:AI|tech|arms|data|compute) (?:war|wars)|"
+        r"(?:AI|tech|arms|data|compute) arms race"
         r")\b",
         re.IGNORECASE,
     ),
@@ -5788,6 +5797,21 @@ _COMPETITIVE_POSITIONING_PATTERNS: list[re.Pattern] = [
         r"rival|competitor)\b",
         re.IGNORECASE,
     ),
+    # ---------------------------------------------------------------------------
+    # Competitive confrontation framing: "pitting X against Y", "close the gap",
+    # "narrow the gap" — editorial language that dramatizes competitive dynamics.
+    # Discovered via Reuters Muse Spark 1.1 article (Jul 9, 2026):
+    # "pitting it directly against" and "close the gap with rivals" are
+    # competitive framing phrases not captured by existing patterns.
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\bpitt(?:ing|ed)\s+\w+\s+(?:directly\s+)?against\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:close|narrow|bridge|shrink)\s+the\s+gap\b",
+        re.IGNORECASE,
+    ),
 ]
 _DEVICE_PATTERNS["competitive_positioning"] = _COMPETITIVE_POSITIONING_PATTERNS
 
@@ -7614,6 +7638,30 @@ def detect_framing_devices(
                         _matched_am,
                     ):
                         continue
+
+                # --- Pathologizing metaphor: neutral "intervention" filter ----
+                # Suppress pathologizing_metaphor when "intervention" appears
+                # in neutral technical context: "human intervention", "less
+                # intervention", "without intervention", "no intervention",
+                # "minimal intervention", "reduced intervention".  These are
+                # process descriptions (e.g. "less human intervention"),
+                # not addiction/pathology framing.
+                #
+                # Discovered in Reuters Muse Spark 1.1 article (Jul 9, 2026):
+                # "less human intervention" at position 613 is neutral
+                # technical language, flagged as pathologizing_metaphor.
+                # ---------------------------------------------------------
+                if device_type == "pathologizing_metaphor":
+                    _matched_pm = match.group().lower()
+                    if "intervention" in _matched_pm:
+                        _lookback_pm = text[max(0, start - 30):start].lower()
+                        _NEUTRAL_INTERVENTION = (
+                            "human", "less", "without", "no ", "minimal",
+                            "reduced", "limited", "zero", "eliminate",
+                            "reduce", "fewer",
+                        )
+                        if any(cue in _lookback_pm for cue in _NEUTRAL_INTERVENTION):
+                            continue
 
                 # --- Geopolitical pressure: physical "stood/standing firm" ---
                 # Suppress geopolitical_regulatory_pressure when "stood firm"
