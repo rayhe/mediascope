@@ -17220,3 +17220,49 @@ Fixed `cli.py` passing wrong kwargs (`db=db, profile=profile`) to `ArticleAnalyz
 - **Journalists:** 178 (560 auto-detected migrations, 174 multi-pub)
 
 **Commit:** (pending)
+
+---
+
+## 2026-07-09 06:00 PT — Type C: Ownership & Funding Deep Dive
+
+**Focus:** Advance/Newhouse portfolio valuation update + WBD/Paramount merger regulatory escalation
+
+### Research Conducted
+- CHTR stock price: $133.54 (Jul 8 close, down from $137.20 Jul 2 — another -2.67%)
+- WBD stock price: $26.15 (Jul 8 close, down from $26.48 Jul 2 — -1.25%)
+- RDDT stock price: $195.47 (Jul 8 close, already current in profile)
+- Advance/Newhouse Charter ownership: 3,136,511 shares direct (2.55% via Advance Publications Inc.) per Simply Wall St; profile correctly tracks 20.6M shares via full A/N partnership chain (per 2023 13D/A)
+- WBD/Paramount merger: major regulatory escalation — Oregon AG probe, Paramount closure delayed, multistate AG lawsuit imminent
+
+### Profile Changes
+
+**Wired (`profiles/wired.yaml`):**
+- **WBD regulatory section overhauled (Jul 6 → Jul 9):**
+  - Jul 6 UK response deadline now marked as passed (was "TODAY")
+  - Oregon AG Dan Rayfield seeking expedited court order for "Project Warrior" documents (Paramount's internal regulatory clearance strategy code name) and Trump admin lobbying records (Reuters, Jul 8)
+  - Paramount delayed closure from Jul 16 to Jul 22+ (Oregon AG office statement via Reuters, Jul 9)
+  - CNN reports multistate AG antitrust lawsuit "likely to be filed next week" (Jul 8-9)
+  - DOJ clearance controversy: reports higher officials overrode staff attorneys initially inclined to challenge
+  - Late September close now considered realistic timeline per industry analysts
+  - Added 3 source URLs (Reuters Oregon AG, CNN multistate lawsuit, Reuters delay)
+- **Charter valuation updated:** $137.20 → $133.54 (Jul 8 close), stake $2.83B → $2.75B. Added "CONTINUED SLIDE" note (-2.67% in 4 trading days)
+- **WBD valuation updated:** $26.48 → $26.15 (Jul 8 close), stake $2.59B → $2.56B. Added WBD Q2 earnings date (Aug 6)
+- **Total public equity updated:** $13.63B → $13.56B (Jul 8 close prices)
+- **Portfolio concentration updated:** 60.5% → 60.8% Reddit share, structural shift section dated Jul 5 → Jul 9
+- **Evidence block updated:** now includes Jul 8 close prices for all three stocks + Oregon AG and CNN sources
+- Profile grew from 1,868 to 1,883 lines
+
+### Test Results
+- **97/97 structural consistency tests pass**
+
+### Cumulative Stats
+- **Tests:** 2,018+ — 86 test files
+- **Profile lines:** Wired 1,883 (was 1,868), The Verge 942, NYT 1,951, Guardian 1,897, MIT TR 2,144, Atlantic 1,365
+- **Framing device types:** 89 (82 pattern-matched + 7 structural)
+- **Total regex patterns:** 507
+- **Annotated articles:** 134
+- **Emotional language terms:** 841
+- **Entity clusters:** 78
+- **Journalists:** 178 (560 auto-detected migrations, 174 multi-pub)
+
+**Commit:** (pending)
