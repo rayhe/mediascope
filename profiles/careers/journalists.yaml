@@ -12324,3 +12324,218 @@ journalists:
   - https://www.newsguardtech.com/team/ella-creamer/
   - https://muckrack.com/ella-creamer/articles
   - https://buzzsumo.com/journalist/ella-creamer/theguardian-com/
+- career:
+  - publication: post-internazionale
+    role: us_correspondent
+    start: '2013'
+    end: '2015'
+    beat: US politics, culture
+    notes: Rome-based publication. Also served as columnist, book reviewer, London correspondent, and editor.
+  - publication: vice
+    role: freelance
+    start: '2015'
+    end: '2017'
+    beat: technology, culture
+  - publication: wired
+    role: contributing_editor
+    start: '2017'
+    end: '2019'
+    beat: technology, society, cryptocurrency, dark web
+    notes: UK-based. Joined as contributing editor, promoted to senior editor.
+  - publication: wired
+    role: senior_writer
+    start: '2019'
+    end: '2022'
+    beat: technology, society, AI regulation, cryptocurrency, platform policy
+    notes: 'UK-based. Authored "Cryptocurrency" (Penguin Random House/WIRED Guides, Nov 2021, ISBN 9781847943279).
+      Investigated dark web assassination markets, Bitcoin mining, killer drones, AI regulation.
+      Part of the Wired UK editorial team under Greg Williams. Departure preceded the broader
+      Wired UK contraction (UK print cancelled Jan 2026, 7 London staff left end of 2025).'
+  - publication: politico-europe
+    role: tech_reporter
+    start: '2022'
+    end: '2024'
+    beat: European tech policy, AI regulation, digital markets
+    notes: Brussels-based. Covered EU tech regulation including AI Act, Digital Markets Act.
+  - publication: bloomberg
+    role: reporter
+    start: '2024'
+    end: present
+    beat: European technology, AI, regulation
+    notes: Brussels-based. Covers tech in Europe.
+  multi_publication: true
+  name: Gian M. Volpicelli
+  notes: 'Italian-born (Rome), educated in Italy and UK (Luiss Guido Carli University MA, City University of London MA).
+    Multi-pub tech journalist with 5+ publications across 3 countries. Interned at The Center for
+    Investigative Journalism. ANALYTICAL VALUE: Wired UK → Politico → Bloomberg migration is a
+    natural experiment for institutional vs individual framing — same reporter covering EU tech
+    regulation from three different editorial environments. His Wired tenure (2017-2022) overlaps
+    both the Greg Williams era and the early Drummond restructuring, making his output a useful
+    comparator for measuring Wired UK editorial tone shift. Book author (Cryptocurrency, Penguin)
+    gives him credentialed authority independent of any single publication.'
+  source_urls:
+  - https://penguin.co.uk/authors/gian-volpicelli
+  - https://talkingbiznews.com/they-re-hiring/bloomberg-hires-volpicelli-to-cover-europe-tech/
+  - https://talkingbiznews.com/media-news/wired-reporter-volpicelli-set-to-depart/
+  - https://talkingbiznews.com/they-re-hiring/volpicelli-hired-by-politico-to-cover-tech-in-europe/
+- career:
+  - publication: washington-post
+    role: intern
+    start: '2010'
+    end: '2010'
+    beat: opinion, humor
+    notes: Summer intern after Harvard graduation. Became youngest person to have a WaPo column.
+  - publication: washington-post
+    role: columnist
+    start: '2010'
+    end: '2025-05'
+    beat: opinion, humor, political satire, culture
+    notes: 'Ran ComPost blog. 15-year tenure as opinion/humor columnist. Left amid the broader
+      Washington Post exodus following the Bezos endorsement controversy (Oct 2024) and CEO
+      Will Lewis "reinvention" ultimatum. Previously worked with Dana Milbank. Described as
+      "the only op-ed columnist America needs right now" (Longreads).'
+  - publication: atlantic
+    role: staff_writer
+    start: '2025-05'
+    end: present
+    beat: humor, satire, culture, politics
+    notes: 'Hired by EIC Jeffrey Goldberg. Previously contributed to The Atlantic. Writes satire
+      and humor — not a tech/Meta-coverage journalist, but part of the strategically significant
+      WaPo→Atlantic talent migration wave (2024-2026). Won 2025 Thurber Prize for American Humor
+      for "AP''s US History: Important American Documents I Made Up." Also published in McSweeney''s,
+      New Yorker Daily Shouts and Murmurs.'
+  multi_publication: true
+  name: Alexandra Petri
+  notes: 'Born March 15, 1988, Wisconsin. Harvard BA English/Classics 2010, summa cum laude, Phi Beta Kappa.
+    Father: Tom Petri (former Republican congressman, Wisconsin). Mother: Anne D. Neal (nonprofit executive).
+    Spouse: Stephen Stromberg (m. 2018), 2 children. Helen Hayes Award-nominated playwright, member of
+    The Welders playwrights collective (DC). O. Henry International Pun-Off champion. Forbes 30 Under 30 (2018).
+    National Press Club Angele Gingras Award. Shorty Award for Emo Kylo Ren parody Twitter.
+    ANALYTICAL VALUE: While not a tech reporter, Petri''s migration is part of the largest documented
+    talent exodus from a single publication (WaPo) to a competitor (Atlantic) in recent media history.
+    The WaPo→Atlantic pipeline (Parker, Scherer, Jenkins, Petri, Sieff, Nguyen, Fischer, etc.) represents
+    a structural shift in American political/cultural journalism that reshapes the editorial DNA of
+    both publications. Goldberg''s hiring letter explicitly acknowledged capitalizing on Post''s "implosion."'
+  source_urls:
+  - https://en.wikipedia.org/wiki/Alexandra_Petri
+  - https://web.archive.org/web/20250512190309/https://www.theatlantic.com/
+  - https://alexandrapetri.com
+  - https://washingtonian.com/2020/06/01/how-washington-post-columnist-alexandra-petri-finds-humor-in-the-trump-era/
+- career:
+  - publication: freelance
+    role: foreign_correspondent
+    start: '2008'
+    end: '2015'
+    beat: Middle East, North Africa, conflict zones
+    notes: 'Based in Cairo (2008-2013), then Istanbul (2013-2019). Published in Atlantic, Businessweek,
+      Esquire, Foreign Policy, Fortune, Harper''s, GQ, Matter, Newsweek, New Republic, New York Magazine,
+      Outside, Playboy, Popular Science, Politico, Slate, Travel + Leisure. Reported from 40+ countries.
+      Won 2012 Kurt Schork Award for Libya civil war coverage (GQ). Speaks Russian fluently.'
+  - publication: nyt-magazine
+    role: contributing_writer
+    start: '2015'
+    end: '2026'
+    beat: foreign affairs, conflict, human rights, long-form features
+    notes: 'Two-time National Magazine Award winner for Feature Writing: 2020 (Rohingya genocide cover story),
+      2025 (35,000-word epic on Russian deserter). Two Overseas Press Club Awards. George Polk Award
+      Sydney Schanberg Prize. Michael Kelly Award. Story on Boko Haram boy soldiers received OPC citation.
+      Belarus political uprising story — NMA finalist 2023. Uyghur story — OPC Ed Cunningham Award 2020.
+      Russian deserter story audio read by Liev Schreiber. Won Deborah Howell Award for Writing Excellence
+      (Poynter Journalism Prizes 2025). IWMF Fund for Women Journalists grantee.'
+  - publication: atlantic
+    role: staff_writer
+    start: '2026'
+    end: present
+    beat: foreign affairs, long-form features, conflict, human rights
+    notes: 'Hired by EIC Jeffrey Goldberg. One of the most decorated feature journalists joining The Atlantic
+      in the 2025-2026 expansion. Goldberg called her combination of "bravery, rigor, relentlessness,
+      and humanity" "almost unique in journalism." Based between Lisbon and New York.'
+  multi_publication: true
+  name: Sarah A. Topol
+  notes: 'Grew up in New York City. Based between Lisbon and New York (previously Cairo 2008-2013, Istanbul 2013-2019).
+    Speaks Russian fluently. ANALYTICAL VALUE: Topol is not a tech/Meta reporter, but her hire at The Atlantic
+    from the NYT Magazine represents a different talent acquisition vector — not WaPo exodus-driven but
+    competitive poaching of NYT''s most decorated long-form talent. Her two NMA wins make her one of the
+    highest-credentialed journalists at The Atlantic. Demonstrates Thompson/Goldberg''s strategy of building
+    Atlantic prestige through marquee feature hires, not just WaPo refugees.'
+  source_urls:
+  - https://citybiz.co/article/the-atlantic-announces-sarah-a-topol-and-jenisha-watts-as-staff-writers/
+  - https://iwmf.org/community/sarah-a-topol/
+  - https://editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff/
+  - https://medium.com/@sarat
+- career:
+  - publication: washington-city-paper
+    role: arts_editor
+    start: '2009'
+    end: '2012'
+    beat: arts, culture
+    notes: 'Washington DC alt-weekly. Also served as first "foreign correspondent" (garage-rock cruise feature).
+      Pushed arts section to compete with WaPo for scoops. Invented the U Street Taco.'
+  - publication: washington-city-paper
+    role: managing_editor
+    start: '2012'
+    end: '2014'
+    beat: general
+  - publication: slate
+    role: section_editor
+    start: '2014'
+    end: '2024-01'
+    beat: business, tech, media, cities, architecture, design
+    notes: 9-year tenure running business/tech/media section. Also wrote occasional movie reviews.
+  - publication: washington-post
+    role: arts_entertainment_editor
+    start: '2024-01'
+    end: '2025'
+    beat: arts, entertainment, culture, Kennedy Center, Smithsonian
+    notes: 'First-ever arts and entertainment editor role at WaPo (newly created). Led team of reporters,
+      critics, and editors across TV, opera, film, and broader culture. Guided reporters to "scoop after scoop"
+      on Kennedy Center and Smithsonian coverage. Announced by exec features editor Ben Williams,
+      deputy features editor Hank Stuever, managing editor Krissah Thompson. Left amid WaPo exodus.'
+  - publication: atlantic
+    role: senior_editor
+    start: '2025'
+    end: present
+    beat: culture, Kennedy Center, Smithsonian, Trump cultural policy, entertainment, media
+    notes: 'Focuses on Kennedy Center, Smithsonian Institution, and Trump administration cultural policy.
+      Goldberg described him as "creative, thoughtful, and experienced." Continues his WaPo A&E coverage
+      line at The Atlantic.'
+  multi_publication: true
+  name: Jonathan L. Fischer
+  notes: 'Washington DC native. Brandeis University BA (history and politics). ANALYTICAL VALUE: Fischer''s
+    migration (WCP→Slate→WaPo→Atlantic) shows a classic DC media ladder, but his Atlantic hire specifically
+    for Kennedy Center/Smithsonian/Trump cultural policy coverage demonstrates The Atlantic''s strategic
+    pivot to covering government cultural interference — a beat that intersects with tech policy when
+    Trump administration targets tech companies. Part of the WaPo exodus wave.'
+  source_urls:
+  - https://editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff/
+  - https://talkingbiznews.com/they-re-hiring/washington-post-hires-fischer-as-arts-and-entertainment-editor/
+  - https://thewrap.com/washington-post-hires-first-arts-and-entertainment-editor/
+- career:
+  - publication: atlantic
+    role: senior_editor
+    start: '2019'
+    end: '2026'
+    beat: ideas, political analysis, sports commentary, personal essays
+    notes: 'Ideas team editor. Worked on wide range — political analysis, sports commentary, personal essays.
+      Described by Goldberg as "one of the best, most talented, smartest, and most supportive colleagues."
+      Published landmark 2023 cover story "Jenisha From Kentucky." Helped develop junior writers and
+      find literary potential in wide-ranging editorial work.'
+  - publication: atlantic
+    role: staff_writer
+    start: '2026'
+    end: present
+    beat: features, personal essays, health care, American life
+    notes: 'Promoted from senior editor to staff writer. Most recent piece: "The Impossible Predicament
+      of the Uninsured" — American health care system reported in personal detail. INTERNAL PROMOTION
+      signals Atlantic building from within alongside the external hiring spree.'
+  multi_publication: false
+  name: Jenisha Watts
+  notes: 'ANALYTICAL VALUE: Unlike most Atlantic 2025-2026 hires who came from WaPo or NYT, Watts is an
+    internal promotion — demonstrating that the Atlantic expansion is not purely poaching but also
+    elevating existing talent. Her cover story "Jenisha From Kentucky" (2023) was described by Goldberg
+    as "one of the most moving and imperishable features I have ever had the privilege of publishing."
+    Her transition from editor to writer represents a different career vector worth tracking in the
+    journalist migrations dataset — internal role changes within publications.'
+  source_urls:
+  - https://citybiz.co/article/the-atlantic-announces-sarah-a-topol-and-jenisha-watts-as-staff-writers/
+  - https://editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff/

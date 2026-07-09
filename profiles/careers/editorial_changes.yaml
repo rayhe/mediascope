@@ -341,6 +341,45 @@ editorial_changes:
       promotion. Hired by deputy editor Paul Bisceglio. Brings extremism/tech-politics intersection beat — Nick Fuentes specialist,
       Livingston Awards finalist. Part of Atlantic's expansion of technology-adjacent coverage under LaFrance/Goldberg.
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-news-about-four-new-staff-writers,253076
+  - date: 2025-05
+    event_type: hire
+    incoming: Alexandra Petri
+    role: staff_writer
+    notes: 'ATLANTIC EXPANSION — WaPo EXODUS: Alexandra Petri hired as staff writer by EIC Jeffrey Goldberg. 15-year WaPo
+      columnist (2010-2025), youngest person to have a Post column. 2025 Thurber Prize winner for ''AP''s US History: Important
+      American Documents I Made Up.'' Part of the largest single-publication talent exodus in recent media history (WaPo→Atlantic
+      2024-2026). Not a tech reporter — humor/satire columnist — but her departure demonstrates the breadth of the Post''s
+      talent bleed extending beyond hard news into opinion and cultural commentary.'
+    source_url: https://en.wikipedia.org/wiki/Alexandra_Petri
+  - date: '2026'
+    event_type: hire
+    incoming: Sarah A. Topol
+    role: staff_writer
+    notes: 'ATLANTIC EXPANSION — NYT POACHING: Sarah A. Topol hired from NYT Magazine as staff writer. Two-time National Magazine
+      Award winner for Feature Writing (2020, 2025). George Polk Award. Reported from 40+ countries. Unlike most 2025-2026
+      Atlantic hires, Topol did not come from WaPo but from NYT Magazine — represents a different talent acquisition vector:
+      competitive poaching of the NYT''s most decorated long-form talent. Goldberg: ''her combination of bravery, rigor, relentlessness,
+      and humanity is almost unique in journalism.'''
+    source_url: https://citybiz.co/article/the-atlantic-announces-sarah-a-topol-and-jenisha-watts-as-staff-writers/
+  - date: '2026'
+    event_type: promotion
+    incoming: Jenisha Watts
+    role: staff_writer
+    notes: 'ATLANTIC EXPANSION — INTERNAL PROMOTION: Jenisha Watts promoted from senior editor (Ideas team, since 2019) to
+      staff writer. Authored 2023 cover story ''Jenisha From Kentucky'' as editor. Most recent piece: ''The Impossible Predicament
+      of the Uninsured.'' Signals Atlantic building from within alongside the external hiring spree — not purely poaching.
+      Goldberg: ''one of the best, most talented, smartest, and most supportive colleagues we have.'''
+    source_url: https://citybiz.co/article/the-atlantic-announces-sarah-a-topol-and-jenisha-watts-as-staff-writers/
+  - date: '2025'
+    event_type: hire
+    incoming: Jonathan L. Fischer
+    role: senior_editor
+    notes: 'ATLANTIC EXPANSION — WaPo EXODUS: Jonathan L. Fischer hired as senior editor from WaPo, where he was arts and
+      entertainment editor (Jan 2024-2025, first-ever A&E editor role at WaPo). Before WaPo, ran Slate''s business/tech/media
+      section for 9 years (2014-2024). At Atlantic, focuses on Kennedy Center, Smithsonian, and Trump administration cultural
+      policy — a beat that intersects with tech policy when government targets tech companies. Goldberg: ''creative, thoughtful,
+      and experienced.'''
+    source_url: https://editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff/
   guardian:
   - date: 2015-06
     incoming: Katharine Viner
@@ -1536,6 +1575,16 @@ editorial_changes:
       4 reporters + Hugo Lowell as senior correspondent), science desk (Brian Kahn senior editor, Molly Taft senior writer),
       security coverage. Also appears regularly on WIRED Politics Lab and Uncanny Valley podcasts.'
     source_url: https://www.cjr.org/kicker/wired-tim-marchman-technology-accountability-government-ties-bay-area-tech-leaders-elon-musk-doge.php
+  - date: '2022'
+    event_type: departure
+    outgoing: Gian M. Volpicelli
+    role: senior_writer
+    notes: Volpicelli departed Wired UK after ~5 years (contributing editor 2017, then senior editor/writer). Moved to Politico
+      Europe to cover tech policy in Brussels. Part of the broader Wired UK talent drain that preceded the 2025 London office
+      exits and UK print cancellation. His departure removed one of the UK team's most prominent tech/society writers with
+      book-author credibility (Cryptocurrency, Penguin 2021). Subsequently joined Bloomberg News (2024) — now covers European
+      tech from Brussels.
+    source_url: https://talkingbiznews.com/media-news/wired-reporter-volpicelli-set-to-depart/
   the_verge:
   - date: 2011-11
     position: eic
@@ -1703,29 +1752,23 @@ editorial_changes:
     source_url: https://diarydirectory.com/diary-daily/the-verge-usa-appoints-ai-reporter/
   - date: '2025-04-28'
     incoming: Kylie Robison
-    notes: 'Kylie Robison hired as senior correspondent on business desk, covering the
-      business of AI. Reports to Zoë Schiffer. Launching newsletter focused on scoops
-      around OpenAI, xAI, Anthropic. Barrett positioned her as complement to Will Knight
-      (future of AI), Kate Knibbs (AI + copyright), and Reece Rogers (consumer AI). Came
-      from The Verge (senior AI reporter, ~11 months) → Fortune (senior tech reporter,
-      ~2 years) → Business Insider. Known for OpenAI cover story at Fortune and scooping
-      OpenAI social network at The Verge. BRIEF TENURE: departed for Core Media (Ashlee
-      Vance''s venture) by December 2025 after only ~6-7 months — one of the shortest
-      stints of any Drummond-era hire.'
+    notes: 'Kylie Robison hired as senior correspondent on business desk, covering the business of AI. Reports to Zoë Schiffer.
+      Launching newsletter focused on scoops around OpenAI, xAI, Anthropic. Barrett positioned her as complement to Will Knight
+      (future of AI), Kate Knibbs (AI + copyright), and Reece Rogers (consumer AI). Came from The Verge (senior AI reporter,
+      ~11 months) → Fortune (senior tech reporter, ~2 years) → Business Insider. Known for OpenAI cover story at Fortune and
+      scooping OpenAI social network at The Verge. BRIEF TENURE: departed for Core Media (Ashlee Vance''s venture) by December
+      2025 after only ~6-7 months — one of the shortest stints of any Drummond-era hire.'
     outgoing: null
     position: senior_correspondent_ai_business
     source_url: https://talkingbiznews.com/media-news/wired-hires-robison-as-senior-correspondent/
   - date: '2025-12-10'
     incoming: null
-    notes: 'RAPID DEPARTURE: Robison left Wired after only ~6-7 months for Core Media
-      (Ashlee Vance''s new science/tech publication). Her departure meant Wired lost its
-      dedicated AI business correspondent and the planned AI scoops newsletter. The AI
-      business beat was redistributed across Maxwell Zeff and other business desk writers.
-      Robison''s four-publication career (BI → Fortune → Verge → Wired → Core Media) in
-      ~5 years suggests either strong pull from Core Media or poor fit with Wired''s editorial
-      culture under Drummond/Schiffer. Her move mirrors a broader pattern of reporters
-      leaving established outlets for independent/startup media (cf. Casey Newton → Platformer,
-      Ashlee Vance → Core Media).'
+    notes: 'RAPID DEPARTURE: Robison left Wired after only ~6-7 months for Core Media (Ashlee Vance''s new science/tech publication).
+      Her departure meant Wired lost its dedicated AI business correspondent and the planned AI scoops newsletter. The AI
+      business beat was redistributed across Maxwell Zeff and other business desk writers. Robison''s four-publication career
+      (BI → Fortune → Verge → Wired → Core Media) in ~5 years suggests either strong pull from Core Media or poor fit with
+      Wired''s editorial culture under Drummond/Schiffer. Her move mirrors a broader pattern of reporters leaving established
+      outlets for independent/startup media (cf. Casey Newton → Platformer, Ashlee Vance → Core Media).'
     outgoing: Kylie Robison
     position: senior_correspondent_ai_business_departure
     source_url: https://talkingbiznews.com/media-news/robison-joins-vances-core-media/
@@ -1733,56 +1776,53 @@ editorial_changes:
     incoming: Ashley Feinberg
     outgoing: null
     position: senior_writer_politics_culture
-    notes: 'PRE-DRUMMOND Gizmodo → Wired pipeline hire. Feinberg hired as senior writer covering politics and
-      internet culture, writing across all Wired sections. NYC office. Hired during Noah Shachtman era (EIC 2017-2021).
-      From Gizmodo digital investigations team (Special Projects Desk). John Cook farewell described her as embodying
-      "the character of Gawker Media." Known for internet-sleuthing scoops (Comey Twitter, Josh Duggar). Forbes 30
-      Under 30. EXTREMELY BRIEF TENURE: departed for HuffPost after only ~5 months — the shortest known Wired stint
-      until Kylie Robison (6-7 months, 2025). Significance: earliest documented Gizmodo → Wired migration, predating
-      Drummond by 4 years, and its failure suggests Condé Nast/Gawker culture mismatch was structural, not
-      Drummond-specific.'
+    notes: 'PRE-DRUMMOND Gizmodo → Wired pipeline hire. Feinberg hired as senior writer covering politics and internet culture,
+      writing across all Wired sections. NYC office. Hired during Noah Shachtman era (EIC 2017-2021). From Gizmodo digital
+      investigations team (Special Projects Desk). John Cook farewell described her as embodying "the character of Gawker
+      Media." Known for internet-sleuthing scoops (Comey Twitter, Josh Duggar). Forbes 30 Under 30. EXTREMELY BRIEF TENURE:
+      departed for HuffPost after only ~5 months — the shortest known Wired stint until Kylie Robison (6-7 months, 2025).
+      Significance: earliest documented Gizmodo → Wired migration, predating Drummond by 4 years, and its failure suggests
+      Condé Nast/Gawker culture mismatch was structural, not Drummond-specific.'
     source_url: https://talkingbiznews.com/media-news/wired-hires-feinberg-to-cover-politics-and-culture/
   - date: 2017-10
     incoming: null
     outgoing: Ashley Feinberg
     position: senior_writer_politics_culture_departure
-    notes: 'Feinberg departed for HuffPost after only ~5 months at Wired. Left under Shachtman era. One of the
-      shortest tenures in Wired''s modern editorial history. Went on to Slate (May 2019) where she continued her
-      signature internet-sleuthing scoops (Mitt Romney''s secret Twitter "Pierre Delecto", Pete Buttigieg''s anon
-      social media). The brevity foreshadows the pattern that would intensify under Drummond: experienced reporters
-      from adversarial-culture outlets (Gizmodo, Vice, Platformer) having short Wired tenures.'
+    notes: 'Feinberg departed for HuffPost after only ~5 months at Wired. Left under Shachtman era. One of the shortest tenures
+      in Wired''s modern editorial history. Went on to Slate (May 2019) where she continued her signature internet-sleuthing
+      scoops (Mitt Romney''s secret Twitter "Pierre Delecto", Pete Buttigieg''s anon social media). The brevity foreshadows
+      the pattern that would intensify under Drummond: experienced reporters from adversarial-culture outlets (Gizmodo, Vice,
+      Platformer) having short Wired tenures.'
     source_url: https://en.wikipedia.org/wiki/Ashley_Feinberg
   - date: '2024'
     incoming: Tess Owen
     outgoing: null
     position: reporter_investigations
-    notes: 'Vice → Wired pipeline hire. Owen joined Wired after Vice Media collapsed (bankruptcy, Fortress sale).
-      ~9 years at Vice (2015-2024) covering extremism, far-right movements, political violence, disinformation,
-      crime and policing. Also published in New Yorker, NY Magazine, Guardian. Brief tenure — departed for WSJ
-      within approximately one year. Part of the Vice diaspora that scattered editorial talent across mainstream
-      outlets under Drummond era (alongside Manisha Krishnan from VICE/CNN/Guardian who joined as senior editor,
-      culture, Mar 2025).'
+    notes: Vice → Wired pipeline hire. Owen joined Wired after Vice Media collapsed (bankruptcy, Fortress sale). ~9 years
+      at Vice (2015-2024) covering extremism, far-right movements, political violence, disinformation, crime and policing.
+      Also published in New Yorker, NY Magazine, Guardian. Brief tenure — departed for WSJ within approximately one year.
+      Part of the Vice diaspora that scattered editorial talent across mainstream outlets under Drummond era (alongside Manisha
+      Krishnan from VICE/CNN/Guardian who joined as senior editor, culture, Mar 2025).
     source_url: https://talkingbiznews.com/media-news/wsj-hires-owen-as-senior-video-journalist/
   - date: '2025'
     incoming: null
     outgoing: Tess Owen
     position: reporter_investigations_departure
-    notes: 'Owen departed Wired for WSJ (Dow Jones/News Corp) as senior video journalist. Brief Wired tenure
-      (<1 year). Her Vice → Wired → WSJ migration spans three distinct institutional cultures: Vice adversarial
-      digital-native → Condé Nast prestige adversarial → Dow Jones business journalism. Creates a natural experiment
-      for DiD analysis of framing evolution across institutional contexts. The move to "senior video journalist"
-      also reflects the broader text-to-video pivot in investigative journalism.'
+    notes: 'Owen departed Wired for WSJ (Dow Jones/News Corp) as senior video journalist. Brief Wired tenure (<1 year). Her
+      Vice → Wired → WSJ migration spans three distinct institutional cultures: Vice adversarial digital-native → Condé Nast
+      prestige adversarial → Dow Jones business journalism. Creates a natural experiment for DiD analysis of framing evolution
+      across institutional contexts. The move to "senior video journalist" also reflects the broader text-to-video pivot in
+      investigative journalism.'
     source_url: https://talkingbiznews.com/media-news/wsj-hires-owen-as-senior-video-journalist/
   - date: 2025-12
     incoming: null
     outgoing: null
     position: uk_print_cancellation
-    notes: 'STRUCTURAL: Wired cancelled UK print edition effective 2026. Seven editorial staff left London office
-      at end of 2025. Team rebuilt to focus on audience development roles and UK/Europe-focused reporting. Drummond
-      told Press Gazette: "creating a sustainable and growing subscription business is the future of Wired." Direct
-      subscribers up 20% in 2025, digital-only subscribers doubled. Isabella Ward (Bloomberg, Jun 2026) and deputy
-      editor Rosie Swash (Guardian veteran) are the two editorial hires rebuilding Wired UK presence post-cancellation.
-      Part of broader Condé Nast digital transformation: Pitchfork absorbed into GQ, Bon Appétit layoffs, Vogue
-      podcast team let go. Print cancellation eliminates a revenue stream and editorial identity pillar, pushing
-      Wired further toward subscription-funded digital journalism model.'
+    notes: 'STRUCTURAL: Wired cancelled UK print edition effective 2026. Seven editorial staff left London office at end of
+      2025. Team rebuilt to focus on audience development roles and UK/Europe-focused reporting. Drummond told Press Gazette:
+      "creating a sustainable and growing subscription business is the future of Wired." Direct subscribers up 20% in 2025,
+      digital-only subscribers doubled. Isabella Ward (Bloomberg, Jun 2026) and deputy editor Rosie Swash (Guardian veteran)
+      are the two editorial hires rebuilding Wired UK presence post-cancellation. Part of broader Condé Nast digital transformation:
+      Pitchfork absorbed into GQ, Bon Appétit layoffs, Vogue podcast team let go. Print cancellation eliminates a revenue
+      stream and editorial identity pillar, pushing Wired further toward subscription-funded digital journalism model.'
     source_url: https://talkingbiznews.com/media-news/wired-pulls-plug-on-uk-print-edition/

@@ -17181,7 +17181,7 @@ While updating structural consistency guards, fixed 3 pre-existing drift issues:
 - **Entity clusters:** 78
 - **Journalists:** 176 (553 auto-detected migrations)
 
-**Commit:** (pending)
+**Commit:** bb74c74 — pushed to GitHub
 
 ---
 
