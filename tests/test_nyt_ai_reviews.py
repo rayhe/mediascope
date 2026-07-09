@@ -374,8 +374,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 82, (
-            f"Expected 82 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 83, (
+            f"Expected 83 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -480,6 +480,8 @@ class TestFramingDeviceRegistry:
             "editorial_dramatization",
             # Historical legitimation (1) — temporally distant positive data diluting negative news
             "historical_legitimation",
+            # Heritage/nostalgia (1) — age, generational continuity, or historical significance
+            "heritage_nostalgia",
             # Marginal endorsement (1) — negligible-magnitude analyst action as bullish signal
             "marginal_endorsement",
             # Precedent framing (1) — "first in X years" rarity-significance signaling

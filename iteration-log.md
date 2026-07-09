@@ -2,6 +2,41 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-09 02:00 PT — Type A: Article Deep Dive (Reuters Rust Belt Factories)
+
+**Article:** Reuters, "Big Tech data centers are driving up power bills at America's Rust Belt factories" (July 7, 2026)
+
+**Changes:**
+
+### 1. Heritage Nostalgia Framing Device (NEW — device type #83/90)
+- Added `_HERITAGE_NOSTALGIA_PATTERNS` with 6 regex patterns to `framing.py`
+- Detects age references ("141-year-old"), generational continuity ("fifth generation"), iconic/storied/historic references, duration phrases ("for N years/decades"), and family-owned heritage
+- Registered as `heritage_nostalgia` in `_DEVICE_PATTERNS`
+- 3 detections in the article: "141-year-old brick manufacturer", "products can be found in iconic", "fifth generation"
+
+### 2. Source Extraction Fixes
+- **5 false positives eliminated:** "Capacity", "Energy Consumers", "White House", "Synergy Research", "Smart Electric Power" — all previously extracted as named sources from contextual phrases
+- **Pattern 0f added** to `_extract_affiliation()`: handles "title of [the] [descriptor words] [Organization]" — e.g., "president of the trade group Industrial Energy Consumers of America"
+- **Environmental domain keywords added** to Pattern 0 (possessive) and Pattern 0b (non-possessive): `[Ee]nvironmental`, `[Ss]ustainability`, `[Ff]acilities`, `[Oo]perations`
+- **Stop word additions:** `_NAME_STOP_FIRST_WORDS` (Capacity, Manufacturing, Production, Infrastructure, Electricity, Technology, Industry), `_SINGLE_NAME_ORG_STOPS` (Capacity, Manufacturing, Production, Electricity, House, Senate, Parliament, Cabinet), `_NAME_STOP_NAMES` (White House, Energy Consumers, Synergy Research, Smart Electric, Electric Power, Smart Electric Power)
+
+### 3. Entity Fix (prior iteration)
+- Added `"atlantic"` to `_HOMOGRAPH_LOOKBEHIND_FILTERS` to prevent "Mid-Atlantic" → "Atlantic" false positive
+
+### 4. Documentation Updates
+- All docs updated: 89→90 device types, 507→513 patterns, 72→73 extended, 134→135 annotated articles
+- Heritage nostalgia added to FRAMING_REFERENCE.md, METHODOLOGY.md extended table, ARCHITECTURE.md extended list
+- New test file listed in ARCHITECTURE.md and README.md
+- Test count headers updated: 2051 tests across 86 test files
+
+### 5. Regression Tests
+- New `test_reuters_rust_belt_jul9.py` with 33 tests covering source false positives, correct extractions, affiliations, Pattern 0f, environmental domain, and heritage/nostalgia framing
+
+### 6. Annotated Analysis
+- Full manual analysis at `examples/sample_output/reuters_big_tech_data_centers_rust_belt_factories_2026_07_09_analysis.md`
+
+**Cumulative stats:** 2051 tests, 90 framing device types (10 core + 73 extended + 7 structural), 513 patterns, 135 annotated articles.
+
 ## 2026-07-08 09:00 PT — Type D: Toolkit Quality & Documentation (FRAMING_REFERENCE Bugs, Zero-Named-Sources Docs + Tests)
 
 **Focus:** Fixed two FRAMING_REFERENCE.md bugs (device numbering collision and stale structural type count), documented the zero-named-sources quality check added in the 06:00 Type A iteration, fixed a case-sensitivity bug in the "according to" regex, and added 8 regression tests.

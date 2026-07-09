@@ -7375,14 +7375,82 @@ _DEFENSIVE_VERB_FRAMING_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["defensive_verb_framing"] = _DEFENSIVE_VERB_FRAMING_PATTERNS
 
 
+# Heritage/nostalgia framing: editorial device that establishes emotional stakes
+# by emphasising a subject's age, generational continuity, or historical
+# significance.  Phrases like "141-year-old manufacturer" or "fifth
+# generation working at the company" create an implicit argument that what is
+# at risk has deep, irreplaceable value — without explicitly stating that
+# argument.  Common in articles about industrial disruption, community impact,
+# or cultural change.
+# Discovered in Reuters Rust Belt data centers article (Jul 2026).
+_HERITAGE_NOSTALGIA_PATTERNS: list[re.Pattern] = [
+    # "[N]-year-old [optional adjectives] [entity type]" — age-qualified institution/business
+    re.compile(
+        r"\b\d+-year-old\s+"
+        r"(?:[a-z]+\s+){0,3}"  # up to 3 optional adjectives
+        r"(?:manufacturer|company|firm|factory|business|"
+        r"institution|organization|shop|store|restaurant|brewery|distillery|"
+        r"winery|bakery|mill|mine|forge|foundry|shipyard|farm|ranch|"
+        r"church|school|university|hospital|newspaper|bank|pub|inn|"
+        r"cooperative|guild|brand|enterprise|establishment|operation|"
+        r"tradition|practice|craft|industry)\b",
+        re.IGNORECASE,
+    ),
+    # Generational continuity: "N generation" / "N-generation" family or
+    # worker references
+    re.compile(
+        r"\b(?:first|second|third|fourth|fifth|sixth|seventh|eighth|"
+        r"ninth|tenth|[0-9]+(?:st|nd|rd|th))\s+"
+        r"generation\b",
+        re.IGNORECASE,
+    ),
+    # "iconic buildings/landmarks/institutions" — heritage signalling
+    re.compile(
+        r"\b(?:iconic|storied|legendary|venerable|hallowed|"
+        r"time-honored|time-honoured|historic|historical|"
+        r"century-old|centuries-old|decades-old)\s+"
+        r"(?:building|landmark|institution|factory|mill|"
+        r"manufacturer|company|firm|brand|name|establishment|"
+        r"structure|cathedral|church|monument|bridge|theatre|theater)\b",
+        re.IGNORECASE,
+    ),
+    # "for [N] years/decades/centuries/generations" — temporal longevity
+    re.compile(
+        r"\bfor\s+(?:more\s+than\s+|over\s+|nearly\s+)?"
+        r"(?:\d+\s+(?:years|decades|centuries)|"
+        r"generations|a\s+century|half\s+a\s+century)\b",
+        re.IGNORECASE,
+    ),
+    # "family-owned/run" + "since [year]" or "for [duration]" — heritage
+    # business continuity markers
+    re.compile(
+        r"\b(?:family[- ]owned|family[- ]run|family[- ]operated)\b"
+        r".{0,60}?"
+        r"\b(?:since\s+\d{4}|for\s+(?:more\s+than\s+|over\s+)?\d+\s+(?:years|decades|generations))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Heritage product/building references: "products can be found in
+    # [historic place]" style construction
+    re.compile(
+        r"\b(?:products?|work|craftsmanship|materials?)\s+"
+        r"(?:can\s+be\s+found|(?:is|are)\s+used|(?:was|were)\s+used)\s+"
+        r"(?:in|at|on)\s+"
+        r"(?:iconic|historic|famous|renowned|celebrated)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["heritage_nostalgia"] = _HERITAGE_NOSTALGIA_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 82 pattern-matched device types plus 7 structural
-    post-pass types (89 total).
+    Scans for 83 pattern-matched device types plus 7 structural
+    post-pass types (90 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
@@ -7405,7 +7473,7 @@ def detect_framing_devices(
     failure_precedent, false_balance,
     financial_reassurance,
     geopolitical_regulatory_pressure, guilt_by_association,
-    historical_legitimation,
+    heritage_nostalgia, historical_legitimation,
     hypocrisy_frame, industry_normalization_undercut,
     ironic_quotation, isolation_framing,
     juxtaposition, latecomer_narrative, litigation_cascade,

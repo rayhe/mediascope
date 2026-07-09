@@ -70,6 +70,12 @@ _HOMOGRAPH_LOOKBEHIND_FILTERS: dict[str, re.Pattern] = {
         r"reception|receptive|temporal|overlapping|rolling)\s+$",
         re.IGNORECASE,
     ),
+    # "Mid-Atlantic" / "Trans-Atlantic" / "North Atlantic" are geographic
+    # references, not The Atlantic magazine.
+    "atlantic": re.compile(
+        r"(?:mid|trans|north|south|cross)[- ]$",
+        re.IGNORECASE,
+    ),
 }
 
 # Type alias — clusters accept either format; code normalizes to dict format.

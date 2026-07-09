@@ -1,0 +1,77 @@
+Big Tech data centers are driving up power bills at America's Rust Belt factories
+
+Reuters | July 7, 2026
+
+For years, electricity costs for the Belden Brick Company in Sugarcreek, Ohio, had been relatively stable. Last year, they surged by 90% — largely because of rising power demand from data centers in the region.
+
+The 141-year-old brick manufacturer, whose products can be found in iconic buildings including the Texas Alamo and Notre Dame University, is seeing power bills rise mainly from a monthly capacity charge, which recently jumped from $1,600 a month to $12,000.
+
+Belden Brick is among many manufacturers across America's heartland where costs are rising as power-hungry data centers serving the artificial intelligence industry proliferate.
+
+Factory electricity bills, a core expense, are rising faster than for many homes and other businesses, according to a Reuters review of U.S. energy data and interviews with nearly a dozen manufacturers and industry advocates.
+
+Federal, state and local governments responding to consumer anger and grid-stability concerns are pushing Big Tech to pay more for their expected demand. But some of their proposals lump in smaller factories with tech giants such as Meta and Amazon, whose power needs can dwarf even large manufacturers by a factor of 50.
+
+Meta declined to comment. Amazon did not respond to a comment request.
+
+Capacity charges are designed to compensate power generators for ensuring the grid has enough electricity for peak usage and to spur development of new supply. They generally account for about 10% of residential bills but can represent up to three times that for manufacturers, according to interviews with manufacturers, attorneys and energy experts.
+
+Such fees have soared in the 13-state region covered by grid operator PJM Interconnection due to stagnant supply and demand from data centers, where one server warehouse can use as much electricity as a mid-sized town.
+
+"That capacity charge just jumped off the page," said company president Brad Belden, part of the fifth generation working at the company.
+
+Despite such capacity-charge hikes, PJM was forced to take emergency steps last week, including asking some users to curb electricity use, to prevent rolling blackouts as searing temperatures pushed peak demand to a new record.
+
+The rising costs and regulatory uncertainty threaten some factories' viability at a time when U.S. President Donald Trump is prioritizing domestic manufacturing, advocates and policy experts say. These businesses are considering raising prices, slowing growth, or in some cases relocating.
+
+Belden has raised brick prices by 4% and profits have still shrunk. If bills keep rising, he said local manufacturers may quickly reach limits on cost-cutting or price-hiking.
+
+"There are going to be some companies that are on the razor's edge," said Belden.
+
+The White House said in a statement that Trump has taken action to cushion the blow on manufacturers, citing his hosting of tech companies signing a "ratepayer protection pledge" earlier this year and directives to build more power plants in PJM, paid for by tech companies.
+
+Data center advocates say the industry's rapid expansion is driving long-overdue investments in America's electric grid and cite other factors driving up costs, including power-plant retirements and transmission constraints.
+
+Data-center growth is "making us finally grapple with the difficult decisions that we were always going to have to face," said Aaron Tinjum, vice president of energy for Data Center Coalition, a trade group.
+
+A 1,000% PRICE INCREASE
+
+PJM, the largest U.S. grid operator, covers a Mid-Atlantic and Midwest manufacturing belt from New Jersey to northern Illinois and as far south as Tennessee that has become attractive to data center developers.
+
+Of the eight U.S. states considered emerging data center hubs, five are in the Rust Belt, according to Synergy Research Group data.
+
+Capacity charges are designed to compensate power generators for ensuring the grid has enough electricity for peak usage. PJM sets capacity prices paid to power generators based on forecasted supply and demand, and manufacturers often pay an outsized share once capacity charges filter down to customers. PJM's capacity prices jumped from $28.92 per megawatt-day in 2024 to the current $329.17 per megawatt-day — a 1,038% rise — driven primarily by data center growth.
+
+That helped push up electricity prices more quickly for industrial users in big manufacturing states that are also becoming data center hubs in PJM's region, according to Reuters calculations using U.S. Energy Department data on electricity prices.
+
+Average industrial electricity prices were up 31% in Pennsylvania and 26% in Ohio as of December 2025 from 12 months earlier, compared with a 7% rise nationwide for industrial users. Residential customers in those two states saw increases of 14% and 9%, respectively.
+
+Even a 1% or 2% power-cost increase can stretch factory owners, who often operate on thin margins and use lots of electricity, economists and industry officials say.
+
+"This can have short- and long-term impacts on whether or not these facilities can continue to operate," said Paul Cicio, president of the trade group Industrial Energy Consumers of America.
+
+GRAVEYARD SHIFT
+
+Capacity charges at plastic products manufacturer Plaskolite jumped to $1.2 million annually from $200,000 a year earlier at its combined Pennsylvania and Ohio facilities. The company is considering shifting from using the grid to powering its operations with a direct natural gas feed, said Timothy Ling, Plaskolite's senior environmental director.
+
+"Electricity has become the highest-drama form of energy," Ling said.
+
+Grove City, Ohio-based Tosoh SMD, which produces materials used in electronics, is considering revving up production during the difficult-to-staff graveyard shift, when electricity is cheaper.
+
+"We're trying to be as creative as possible just to maintain competitiveness," said John Holeman, Tosoh's director of facilities and maintenance.
+
+PROTECTING CONSUMERS, HITTING MANUFACTURERS
+
+Manufacturers are classified in the same electricity-rate class with data centers, and they are being caught up in state and federal proposals aimed at shielding homes and small businesses from the price spikes tied to data centers.
+
+Currently, very large energy users with their own onsite power generation in PJM pay transmission charges only for the power they draw from the grid. The Federal Energy Regulatory Commission is proposing that companies pay transmission charges for onsite power generation also to ensure the grid has enough supply if on-site power fails.
+
+Manufacturing advocates are appealing to FERC for exemptions. FERC declined comment.
+
+At least 10 U.S. states also have pending rules aimed at managing electricity demand from data centers, but their parameters could also hit manufacturers, according to data from the nonprofit Smart Electric Power Alliance and North Carolina State University's NC Clean Energy Technology Center.
+
+"Manufacturers are not data centers," said Cicio. "We should not be impacted by their effort to manage data centers."
+
+Belden and other manufacturers want Ohio's regulators to scrutinize how utilities are estimating data center electricity demand. Meanwhile, they're trying to cut their own costs.
+
+"You start to look at alternatives," said Belden, who is thinking of installing onsite power generation to reduce reliance on the grid. "Manufacturing goes as power goes."

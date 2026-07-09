@@ -210,6 +210,7 @@ Devices specific to financial journalism, earnings coverage, and analyst reporti
 | 85 | **Overbuilding Narrative** | E | Infrastructure spending framed as excess, bubble, or unsustainable arms race | "spending war," "arms race," "overcapacity," "bubble," "when will someone blink" |
 | 86 | **Litigation Cascade** | E | Stacking multiple legal fronts/case counts to build avalanche effect | "N states banded/sued," "N,NNN cases pending," "Another N states filed" |
 | 87 | **Defensive Verb Framing** | E | Loaded attribution verbs editorializing corporate actions as reactive/embattled | "attempted yet failed," "was forced to," "grudgingly acknowledged," "scrambled to," "plagued by" |
+| 88 | **Heritage Nostalgia** | E | Age, generational continuity, or historical significance establishing emotional stakes for disruption | "141-year-old brick manufacturer," "fifth generation working at the company," "iconic buildings," "family-owned since 1892" |
 
 ---
 
@@ -241,8 +242,8 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 | Core | 10 | Pattern matching — fundamental editorial techniques |
 | Extended | 72 | Pattern matching — discovered from real article analysis |
 | Structural (post-pass) | 7 | Full-article heuristics (position, accumulation, structure) |
-| **Total** | **89** | |
+| **Total** | **90** | |
 
 ---
 
-*Last updated: 2026-07-08. See [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection) for full device descriptions, detection patterns, and discovery provenance articles.*
+*Last updated: 2026-07-09. See [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection) for full device descriptions, detection patterns, and discovery provenance articles.*

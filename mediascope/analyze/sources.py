@@ -209,6 +209,12 @@ _NAME_STOP_FIRST_WORDS: set[str] = {
     "Pittsburgh", "Charlotte", "Nashville", "Memphis",
     "Milwaukee", "Minneapolis", "Richmond", "Norfolk",
     "Raleigh", "Tampa", "Jacksonville",
+    # Common capitalized nouns that start sentences and false-positive when
+    # followed by a verb that doubles as an attribution verb (e.g. "charges").
+    # Discovered in Reuters Rust Belt data centers article (Jul 2026):
+    # "Capacity charges at..." mis-parsed "Capacity" as a named source.
+    "Capacity", "Manufacturing", "Production", "Infrastructure",
+    "Electricity", "Technology", "Industry",
 }
 
 # Publication / organization partial names that look like "First Last"
@@ -247,12 +253,18 @@ _NAME_STOP_NAMES: set[str] = {
     "Business Insider", "Tech Review", "Technology Review",
     "Daily Beast", "Daily Mail", "Morning Post",
     "Evening Standard",
+    # Government / institutional names that match "First Last"
+    "White House",
     # Partial organization names that truncate from longer names
     # Discovered in MIT Tech Review Louisiana natural gas article (Jul 2026):
     # "Harvard Law School" → "Law School", "Alliance for Affordable Energy" → "Affordable Energy"
     "Law School", "Affordable Energy", "Concerned Scientists",
     "Environmental Law", "Power Research", "Gas Plants",
     "Public Service", "Service Commission",
+    # Discovered in Reuters Rust Belt data centers article (Jul 2026):
+    # "Industrial Energy Consumers of America" → "Energy Consumers"
+    "Energy Consumers", "Synergy Research", "Smart Electric",
+    "Electric Power", "Smart Electric Power",
 }
 
 # Anonymous source indicators
@@ -342,7 +354,7 @@ def _extract_affiliation(context: str) -> str:
             r"(?:(?:[Cc]hief|[Vv]ice|[Dd]eputy|[Ss]enior|[Ee]xecutive|[Aa]ssociate|[Aa]ssistant|[Mm]anaging)\s+)*"
             r"(?:(?:[Tt]echnology|[Ff]inancial|[Oo]perating|[Pp]roduct|[Mm]arketing|[Ii]nformation|[Ll]egal|[Rr]evenue|[Ss]trategy|"
             r"[Ss]cience|[Dd]ata|[Cc]ommunications?|[Cc]reative|[Ee]ditorial|[Cc]ontent|[Pp]olicy|[Ee]ngineering|[Rr]esearch|[Dd]esign|"
-            r"[Ii]ndustrial|[Hh]uman\s+[Rr]esources)\s+)*"
+            r"[Ii]ndustrial|[Ee]nvironmental|[Ss]ustainability|[Ff]acilities|[Oo]perations|[Hh]uman\s+[Rr]esources)\s+)*"
             r"(?:CEO|[Pp]resident|[Oo]fficer|[Dd]irector|[Cc]hief|[Hh]ead|[Ss]pokesperson|[Ee]ditor|[Cc]ounsel)",
             re.DOTALL,
         ),
@@ -357,7 +369,7 @@ def _extract_affiliation(context: str) -> str:
             r"\s+(?:(?:[Cc]hief|[Vv]ice|[Dd]eputy|[Ss]enior|[Ee]xecutive|[Aa]ssociate|[Aa]ssistant|[Mm]anaging|[Ff]ormer|[Aa]cting)\s+)*"
             r"(?:(?:[Tt]echnology|[Ff]inancial|[Oo]perating|[Pp]roduct|[Mm]arketing|[Ii]nformation|[Ll]egal|[Rr]evenue|[Ss]trategy|"
             r"[Ss]cience|[Dd]ata|[Cc]ommunications?|[Cc]reative|[Ee]ditorial|[Cc]ontent|[Pp]olicy|[Ee]ngineering|[Rr]esearch|[Dd]esign|"
-            r"[Ii]ndustrial|[Hh]uman\s+[Rr]esources)\s+)*"
+            r"[Ii]ndustrial|[Ee]nvironmental|[Ss]ustainability|[Ff]acilities|[Oo]perations|[Hh]uman\s+[Rr]esources)\s+)*"
             r"(?:[Oo]fficer|[Dd]irector|[Pp]resident|[Cc]ounsel|[Ss]pokesperson|[Ss]pokesman|[Ss]pokeswoman|[Ee]ditor|[Ss]ecretary|"
             r"[Mm]anager|[Hh]ead|[Ee]xecutive)\s+[A-Z]",
             re.DOTALL,
@@ -371,6 +383,28 @@ def _extract_affiliation(context: str) -> str:
             r"strategist|correspondent|reporter|columnist|commentator|"
             r"editor|contributor|scientist)\s+"
             r"[A-Z][a-z]",
+        ),
+        # Pattern 0f: "title of [the] [descriptor words] [Organization]"
+        # Handles "president of the trade group Industrial Energy Consumers
+        # of America" where lowercase descriptors sit between "of the" and
+        # the actual org name.  Captures from the first capital letter after
+        # the descriptors through to a sentence boundary.
+        # Discovered in Reuters Rust Belt data centers article (Jul 2026).
+        re.compile(
+            r"(?:[Pp]resident|[Dd]irector|CEO|[Cc]hairman|[Cc]hairwoman|"
+            r"[Cc]hairperson|[Hh]ead|[Cc]hief|[Ff]ounder|[Cc]o-founder|"
+            r"[Ss]ecretary|[Tt]reasurer|[Mm]anager|[Cc]oordinator|"
+            r"[Cc]ounsel|[Aa]ttorney|[Aa]dvocate|[Ee]xecutive|[Oo]fficer|"
+            r"[Vv]ice\s+[Pp]resident)"
+            r"\s+(?:of|for|at)\s+(?:the\s+)?"
+            r"(?:[a-z][\w-]*\s+){0,4}"  # up to 4 lowercase descriptor words
+            r"([A-Z][" + _INST_CHARS + r"]{1,80}?)"
+            r"(?:[,.\n]|\s+(?:" + "|".join([
+                "said", "told", "who", "says", "tells", "noted", "notes",
+                "agrees", "adds", "added", "explained", "explains",
+                "confirmed", "warned", "argues", "recalled", "reported",
+            ]) + r"))",
+            re.DOTALL,
         ),
         # Pattern 1: "at [the] [Institution Name][,. or attribution verb]"
         # Non-greedy match capped at 60 chars to prevent spanning
@@ -401,7 +435,7 @@ def _extract_affiliation(context: str) -> str:
     for i, pat in enumerate(patterns):
         m = pat.search(context)
         if m:
-            if i == 5:
+            if m.lastindex and m.lastindex >= 2:
                 # Possessive pattern (Pattern 2): combine "Georgetown" + "Center for ..."
                 aff = m.group(1).strip() + "'s " + m.group(2).strip()
             else:
@@ -1053,6 +1087,12 @@ def extract_sources(text: str) -> list[SourceMention]:
         "School", "University", "College", "Institute", "Center",
         "Alliance", "Association", "Foundation", "Commission",
         "Council", "Agency", "Bureau", "Department",
+        # Economic/infrastructure nouns that start sentences (Jul 2026):
+        # "Capacity charges at..." → false-positive "Capacity" as source
+        "Capacity", "Manufacturing", "Production", "Electricity",
+        # Institutional nouns that appear as single words after verbs
+        # (e.g. "said the White House" → Pattern 5c extracts "House")
+        "House", "Senate", "Parliament", "Cabinet",
     }
     single_name_verb = re.compile(
         rf"\b([A-Z][a-z]{{2,}})\s+({verb_alternation})\b",
