@@ -1701,3 +1701,31 @@ editorial_changes:
       (Welle + Hayden Field), an investment signaling editorial priority. Welle''s PhD in BCI hardware is directly relevant
       to Meta''s Neural Band/EMG technology.'
     source_url: https://diarydirectory.com/diary-daily/the-verge-usa-appoints-ai-reporter/
+  - date: '2025-04-28'
+    incoming: Kylie Robison
+    notes: 'Kylie Robison hired as senior correspondent on business desk, covering the
+      business of AI. Reports to Zoë Schiffer. Launching newsletter focused on scoops
+      around OpenAI, xAI, Anthropic. Barrett positioned her as complement to Will Knight
+      (future of AI), Kate Knibbs (AI + copyright), and Reece Rogers (consumer AI). Came
+      from The Verge (senior AI reporter, ~11 months) → Fortune (senior tech reporter,
+      ~2 years) → Business Insider. Known for OpenAI cover story at Fortune and scooping
+      OpenAI social network at The Verge. BRIEF TENURE: departed for Core Media (Ashlee
+      Vance''s venture) by December 2025 after only ~6-7 months — one of the shortest
+      stints of any Drummond-era hire.'
+    outgoing: null
+    position: senior_correspondent_ai_business
+    source_url: https://talkingbiznews.com/media-news/wired-hires-robison-as-senior-correspondent/
+  - date: '2025-12-10'
+    incoming: null
+    notes: 'RAPID DEPARTURE: Robison left Wired after only ~6-7 months for Core Media
+      (Ashlee Vance''s new science/tech publication). Her departure meant Wired lost its
+      dedicated AI business correspondent and the planned AI scoops newsletter. The AI
+      business beat was redistributed across Maxwell Zeff and other business desk writers.
+      Robison''s four-publication career (BI → Fortune → Verge → Wired → Core Media) in
+      ~5 years suggests either strong pull from Core Media or poor fit with Wired''s editorial
+      culture under Drummond/Schiffer. Her move mirrors a broader pattern of reporters
+      leaving established outlets for independent/startup media (cf. Casey Newton → Platformer,
+      Ashlee Vance → Core Media).'
+    outgoing: Kylie Robison
+    position: senior_correspondent_ai_business_departure
+    source_url: https://talkingbiznews.com/media-news/robison-joins-vances-core-media/

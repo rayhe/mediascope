@@ -11996,3 +11996,178 @@ journalists:
   - https://sciencewritersmeeting.org/speakers/elizabeth-lopatto
   - https://kenyonreview.org/blog/page/284/
   - https://sciencefriday.com/person/liz-lopatto/
+
+- career:
+  - beat: web technology, consumer tech
+    end: '2006'
+    event_type: hired
+    notes: 'Pre-Condé Nast era. Writer/editor at Wired News, the web division of Wired
+      brand (owned by Lycos from 1998 until Condé Nast acquired it in July 2006). Earliest
+      confirmed bylines from late 2006 (Vaporware ''06 awards, published ~December 2006).
+      Celebrated Condé Nast acquisition by smashing the Lycos office sign with colleagues.
+      Wired News was editorially separate from Wired Magazine during the Lycos era.'
+    publication: wired-news-lycos
+    role: editor
+    source_url: https://gawkerarchives.com
+    start: '2005'
+  - beat: web technology, consumer tech, web development
+    end: '2013'
+    event_type: continuation
+    notes: 'Continued at Wired News/Digital after Condé Nast acquisition (July 2006).
+      Oversaw 2008 relaunch of Webmonkey (web development site) after Condé Nast acquired
+      the Webmonkey domain from Lycos in May 2008. Wrote for Webmonkey on web technologies,
+      CMS tools (Dreamweaver CS5 review 2010), Google APIs, social platforms. Also edited
+      other Webmonkey contributors. Techmeme picked up his Wired News and Webmonkey pieces
+      regularly (MySpace News, Google Maps Data API). By 2013 Webmonkey wound down and
+      Calore transitioned fully to Wired.com editorial. Under editors Evan Hansen and
+      Leander Kahney.'
+    publication: wired
+    role: editor
+    source_url: https://en-academic.com
+    start: '2006'
+  - beat: consumer tech, gadgets, culture
+    event_type: hired
+    notes: 'Progressive editorial roles at Wired.com. Started as editor, rose through
+      ranks over ~decade-long tenure under EICs Chris Anderson (to 2012), Scott Dadich
+      (2012-2017), Nicholas Thompson (2017-2020), and Gideon Lichfield (2020-2023). Co-created
+      and co-hosted the Gadget Lab podcast (Wired''s long-running consumer tech podcast)
+      alongside Lauren Goode and later Boone Ashworth. Wired''s institutional knowledge
+      carrier — Drummond described him as having "deep understanding of all things WIRED."
+      Bylines across Wired''s international editions: WIRED en Español, Wired Italia,
+      Wired Japan. Also appeared in Yahoo Tech, Condé Nast Traveler, AARP Bulletin via
+      syndication. Social: @snackfight on Bluesky/Mastodon. Based in San Francisco. Also
+      a musician: plays bass in Twin Dimensions (avant rock), multiple instruments in
+      North American Scum (cover band), releases solo music as Solar Keys (also the Gadget
+      Lab theme song composer). 250+ articles per Muck Rack.'
+    publication: wired
+    role: senior_editor
+    source_url: https://snackfight.com
+    start: '2013'
+  - beat: consumer tech, culture, product reviews, service journalism
+    event_type: promotion
+    notes: 'KEY PROMOTION: Promoted to Director, Consumer Tech & Culture by Katie Drummond
+      — the first of three Director positions created to restructure Wired''s newsroom
+      (alongside Tim Marchman for Science/Politics/Security and Zoë Schiffer for Business
+      & Industry). Announced same day as Brian Barrett''s executive editor hire (Barrett
+      starts Jan 16, 2024). Reports to Brian Barrett. Oversees all Wired Gear, Culture,
+      and Service coverage across US and UK. Direct reports include Miles Klee (culture),
+      Ej Dickson (culture), Manisha Krishnan (culture/online extremism), Julian Chokkattu
+      (reviews), Boone Ashworth (service). Co-hosts Uncanny Valley podcast (launched Oct
+      31, 2024) alongside Lauren Goode and Zoë Schiffer — replaced the earlier Gadget
+      Lab podcast as Wired''s flagship. Drummond''s announcement: "I''ve been so impressed
+      by Michael''s professionalism, dedication, and deep understanding of all things WIRED
+      — along with his eagerness to move us in new directions and try new things." ANALYTICAL
+      VALUE: Calore is the longest-tenured member of Drummond''s leadership triumvirate
+      (~18 years at Wired) and the only one promoted from within rather than hired externally
+      from the Gizmodo/Vice/Guardian adversarial pipeline. His consumer tech/culture desk
+      is less adversarial in tone than Schiffer''s business desk or Marchman''s politics/security
+      desk, but his editorial choices on which "culture" stories to pursue shape how Wired
+      frames tech companies'' social impact. Tests: does Calore''s institutional Wired
+      DNA moderate Drummond''s adversarial editorial direction, or does the Director structure
+      isolate his influence to consumer coverage while Marchman and Schiffer drive the
+      adversarial Big Tech narrative?'
+    publication: wired
+    role: director_consumer_tech_culture
+    source_url: https://talkingbiznews.com/media-news/wired-names-barrett-its-executive-editor/
+    start: 2024-01
+  multi_publication: false
+  name: Michael Calore
+  notes: 'Wired lifer — one of the longest-tenured editorial staff at the publication,
+    spanning the Lycos/Wired News era (pre-2006), the Condé Nast reunification (2006),
+    the Webmonkey revival (2008), and every EIC transition from Chris Anderson through
+    Katie Drummond. Now Director, Consumer Tech & Culture — one of three Directors in
+    Drummond''s restructured newsroom leadership. Co-host of Uncanny Valley podcast
+    (previously Gadget Lab). Sacramento native based in San Francisco. Musician (Solar
+    Keys, Twin Dimensions, North American Scum). Personal site: snackfight.com. KEY
+    FOR MEDIASCOPE: Calore is the institutional continuity figure at Wired. His ~18-year
+    tenure means he has personally experienced every editorial culture shift at the
+    publication. His consumer tech/culture desk is the least adversarial of the three
+    directorates, making him a useful control within Wired itself for measuring how
+    Drummond''s adversarial editorial posture manifests differently across desks. Unlike
+    every other member of Drummond''s leadership (Barrett from Gizmodo, Marchman from
+    Gizmodo/Vice, Schiffer from Platformer/Verge), Calore has no external adversarial-journalism
+    pipeline origin — he is purely Wired-native.'
+  source_urls:
+  - https://snackfight.com
+  - https://muckrack.com/michael-calore
+  - https://talkingbiznews.com/media-news/wired-names-barrett-its-executive-editor/
+  - https://gawkerarchives.com
+  - https://en-academic.com
+- career:
+  - beat: tech, startups, cloud computing
+    end: '2022'
+    event_type: hired
+    notes: 'Reporter on cloud technology desk covering software developers, startups,
+      and enterprise tech. Broke stories on Stripe-backed startup implosion and uncovered
+      allegations of pay inequity inside Peloton. Covered Amazon, Google, Robinhood,
+      Square. Based in San Francisco.'
+    publication: business-insider
+    role: reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/fortune-hires-business-insiders-robison-to-cover-tech/
+    start: '2020'
+  - beat: tech, Twitter/X, AI startups
+    end: '2024'
+    event_type: hired
+    notes: 'Tech reporter → promoted to senior tech reporter. Regularly broke news about
+      Twitter/X chaos under Elon Musk. Authored Fortune''s cover story on OpenAI. Profiled
+      AI startups including Runway. Revealed troubling finances at Humane AI. Sacramento
+      State College graduate.'
+    publication: fortune
+    role: senior_tech_reporter
+    source_url: https://talkingbiznews.com/media-news/fortunes-robison-departing-for-new-opportunity/
+    start: '2022'
+  - beat: AI, Big Tech, business
+    end: '2025'
+    event_type: hired
+    notes: 'Senior AI reporter leading The Verge''s AI coverage. Hired by EIC Nilay Patel:
+      "Kylie''s infectious energy and ability to break news made her a must-read." Worked
+      with policy and tech teams. Scooped OpenAI social network plans. Covered AI companies,
+      consumer AI applications, industry developments. Start date May 6, 2024.'
+    publication: the-verge
+    role: senior_ai_reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/the-verge-hires-robison-to-cover-artificial-intelligence/
+    start: 2024-05
+  - beat: AI business, OpenAI, xAI, Anthropic
+    end: '2025'
+    event_type: hired
+    notes: 'Senior correspondent on Zoë Schiffer''s business desk covering the business
+      of AI. Launched newsletter focused on scoops around OpenAI, xAI, Anthropic. Barrett''s
+      announcement positioned her as complement to Will Knight (future of AI), Kate Knibbs
+      (AI and copyright), and Reece Rogers (consumer AI). Started April 28, 2025. LEFT
+      AFTER ~6-7 MONTHS — departed for Core Media (Ashlee Vance''s venture) by December
+      2025. BRIEF WIRED TENURE: one of the shortest stints of any Drummond-era hire,
+      suggesting possible editorial/cultural mismatch or better opportunity at Core Media.
+      KEY: her departure meant Wired lost its dedicated AI business reporter relatively
+      quickly, leaving the AI business beat spread across Zeff and other writers.'
+    publication: wired
+    role: senior_correspondent
+    source_url: https://talkingbiznews.com/media-news/wired-hires-robison-as-senior-correspondent/
+    start: 2025-04
+  - beat: science, technology, AI
+    event_type: hired
+    notes: 'Joined Ashlee Vance''s Core Media (also called Core Memory), a new science
+      and technology publication. Left Wired for this role. Core Media is an independent
+      outlet separate from the Condé Nast ecosystem. Based in San Francisco.'
+    publication: core-media
+    role: reporter
+    source_url: https://talkingbiznews.com/media-news/robison-joins-vances-core-media/
+    start: 2025-12
+  multi_publication: true
+  name: Kylie Robison
+  notes: 'Fast-rising tech reporter who moved through four publications in four years:
+    Business Insider → Fortune → The Verge → Wired → Core Media. Sacramento State College
+    graduate. Based in San Francisco. Known for breaking news about AI companies (OpenAI,
+    Humane AI) and the Twitter/X implosion. Her rapid moves — especially the brief ~6-month
+    Wired stint — suggest she prioritizes scoop-driven reporting culture over institutional
+    loyalty. KEY FOR MEDIASCOPE: her Business Insider → Fortune → Verge → Wired → Core
+    Media trajectory creates a multi-publication comparison opportunity, though her
+    Wired tenure was too short for meaningful DiD analysis. Her departure from Wired
+    is analytically significant: she left an established publication for Ashlee Vance''s
+    startup, suggesting either dissatisfaction with Wired''s editorial environment or
+    strong pull from Core Media''s editorial model. Four-publication career by age ~28-30
+    is unusual velocity even for tech journalism.'
+  source_urls:
+  - https://talkingbiznews.com/media-news/wired-hires-robison-as-senior-correspondent/
+  - https://talkingbiznews.com/they-re-hiring/the-verge-hires-robison-to-cover-artificial-intelligence/
+  - https://talkingbiznews.com/media-news/fortunes-robison-departing-for-new-opportunity/
+  - https://talkingbiznews.com/media-news/robison-joins-vances-core-media/
