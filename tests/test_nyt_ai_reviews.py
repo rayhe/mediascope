@@ -374,8 +374,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 80, (
-            f"Expected 80 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 82, (
+            f"Expected 82 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -510,6 +510,10 @@ class TestFramingDeviceRegistry:
             "market_verdict",
             # Overbuilding narrative (1) — infrastructure spending framed as excess/bubble
             "overbuilding_narrative",
+            # Litigation cascade (1) — stacking multiple legal fronts to build avalanche effect
+            "litigation_cascade",
+            # Defensive verb framing (1) — loaded attribution verbs editorializing corporate actions
+            "defensive_verb_framing",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual

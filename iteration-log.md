@@ -16971,3 +16971,57 @@ While updating structural consistency guards, fixed 3 pre-existing drift issues:
 - **Journalists:** 176 (553 auto-detected migrations)
 
 **Commit:** (pending)
+
+---
+
+## Iteration: Type A — Gizmodo $1.4T Teen Safety Existential Threat (Jul 9, 2026 ~00:00 PT)
+
+**Article:** Gizmodo, "Meta's Teen Safety Case Just Became a $1.4 Trillion Existential Threat" (Jul 8, 2026)
+**URL:** https://gizmodo.com/metas-teen-safety-case-just-became-a-1-4-trillion-existential-threat-2000782306
+
+### Analysis Summary
+- Tone: -0.58 (strongly adversarial), emotional intensity 1.0
+- Topics: litigation (0.55), child_safety (0.43), consumer_protection (0.35)
+- Entities: Meta (11), Instagram/Facebook clustered, Google, FTC, Section 230, state AGs
+- Sources: 4 (Reuters, Meta organizational, filing, attorneys) — **zero named human sources**
+- Quality flag: `zero_named_sources` fires correctly
+
+### New Framing Devices Added
+
+**#86: litigation_cascade** (Category 13: Legal & Regulatory Framing)
+- Structural stacking of multiple legal fronts to build existential-threat narrative
+- 5 regex patterns: N states sued/banded, N,NNN cases pending, Another N states filed, multistate coalition
+- Discovery article: this Gizmodo piece — 3 consecutive legal fronts in rapid succession
+
+**#87: defensive_verb_framing** (Category 13: Legal & Regulatory Framing)
+- Loaded attribution verbs editorializing corporate actions as reactive/embattled
+- 5 regex patterns: attempted yet failed, was forced to, grudgingly acknowledged, scrambled to, plagued by
+- Discovery article: this Gizmodo piece — "attempted yet failed," "has been plagued"
+
+### Tests Added
+- `test_gizmodo_1_4t_teen_safety.py`: 29 tests covering both new device types, entity detection, sentiment, topic classification, source extraction, quality flags
+
+### Doc Updates
+- ARCHITECTURE.md: Extended list +2 devices (70→72), test file listing +1, test count header 1989→2018, stale fox business description 80→82 pattern-matched
+- README.md: test file listing +1, test count header 1989→2018 (85 files), structural consistency description updated (89/82/7, 89/10/72/7)
+- FRAMING_REFERENCE.md: +2 rows (#86, #87), Extended tier label 66→72, summary table Extended 70→72, Total 87→89
+- METHODOLOGY.md: Extended table +2 rows (litigation_cascade, defensive_verb_framing — already added during analysis), stale "87-type taxonomy" → 89
+- AGENT_GUIDE.md: already at 89/10/72/7 (no change needed)
+- framing.py docstring: already at 82/7/89 (no change needed)
+- cli.py: 87→89 types in analyze command docstring
+- QUALITY_STANDARDS.md: annotated article count 132→133
+- test_structural_consistency.py: EXPECTED_TOTAL 87→89, EXPECTED_PATTERN_MATCHED 80→82, EXPECTED_TOTAL_PATTERNS 497→507
+
+### Sample Output
+- `examples/sample_output/gizmodo_1_4t_teen_safety_2026_07_08_article.txt`
+- `examples/sample_output/gizmodo_1_4t_teen_safety_2026_07_08_analysis.md`
+
+### Cumulative Stats
+- **Tests:** 2,018 (was 1,989) — 85 test files (was 84)
+- **Framing device types:** 89 (82 pattern-matched + 7 structural) — was 87 (80+7)
+- **Total regex patterns:** 507 (unchanged — patterns already counted in prior iteration)
+- **Annotated articles:** 133
+- **Entity clusters:** 78
+- **Journalists:** 176 (553 auto-detected migrations)
+
+**Commit:** (pending)

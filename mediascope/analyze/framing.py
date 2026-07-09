@@ -7266,28 +7266,138 @@ _EMOTION_ATTRIBUTION_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["emotion_attribution"] = _EMOTION_ATTRIBUTION_PATTERNS
 
 
+# --- #84: Litigation cascade ---
+# Editorial technique of stacking multiple legal proceedings, case counts,
+# plaintiff numbers, or lawsuit figures across consecutive sentences to
+# create a sense of overwhelming, insurmountable legal pressure.
+#
+# Distinct from litigation_framing (which detects individual legal action
+# vocabulary) and escalation_amplification (which catches intensifying
+# adjectives like "mounting").  Litigation cascade detects the *structural*
+# pattern of enumerating multiple distinct legal fronts.
+#
+# Discovered via Gizmodo "$1.4T Existential Threat" article (Jul 8, 2026):
+# "more than 3,000 similar cases pending... Another 14 states have also
+# brought claims... 33 states have banded together" — each sentence adds
+# another legal front, creating avalanche effect.
+_LITIGATION_CASCADE_PATTERNS: list[re.Pattern] = [
+    # "N+ states have sued/banded/joined"
+    re.compile(
+        r"\b(?:thirty|forty|fifty|\d{2,})\s*(?:-|\s)?\s*(?:three|four|five|six|"
+        r"seven|eight|nine)?\s+states?\s+"
+        r"(?:have\s+)?(?:sued|banded|joined|filed|brought|launched|allied|"
+        r"united|combined|teamed)",
+        re.IGNORECASE,
+    ),
+    # "more than N,NNN similar/pending cases/lawsuits/claims"
+    re.compile(
+        r"more than\s+[\d,]+\s+(?:similar|pending|related|additional|"
+        r"comparable|analogous)\s+(?:cases?|lawsuits?|claims?|suits?|actions?)",
+        re.IGNORECASE,
+    ),
+    # "Another N states/plaintiffs/entities have also"
+    re.compile(
+        r"\banother\s+\d+\s+(?:states?|plaintiffs?|entities|attorneys?\s+general|"
+        r"school districts?|families?|governments?)\s+"
+        r"(?:have\s+)?(?:also\s+)?(?:brought|filed|joined|sued|launched|"
+        r"submitted|lodged)",
+        re.IGNORECASE,
+    ),
+    # "N+ lawsuits/cases/claims pending/filed/brought"
+    re.compile(
+        r"\b(?:more than\s+)?(?:\d{1,3}(?:,\d{3})+|\d{3,})\s+"
+        r"(?:similar\s+|pending\s+|related\s+|additional\s+)?"
+        r"(?:lawsuits?|cases?|claims?|suits?|complaints?|actions?)\s+"
+        r"(?:pending|filed|brought|lodged|submitted|awaiting)",
+        re.IGNORECASE,
+    ),
+    # "over/approximately/roughly N lawsuits" — large-number legal stacking
+    re.compile(
+        r"\b(?:over|approximately|roughly|nearly|close to|upwards? of)\s+"
+        r"(?:\d{1,3}(?:,\d{3})+|\d{3,})\s+"
+        r"(?:lawsuits?|cases?|claims?|suits?|legal\s+(?:actions?|challenges?|"
+        r"proceedings?))\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["litigation_cascade"] = _LITIGATION_CASCADE_PATTERNS
+
+
+# --- #85: Defensive verb framing ---
+# Editorial choice of attribution verbs that frame a subject's statements
+# as reactive, embattled, or on the defensive rather than as substantive
+# positions.  "Denied," "admitted," "attempted yet failed," "conceded,"
+# "was forced to" are editorialised verb choices; neutral alternatives
+# include "said," "stated," "argued," "contended," "responded."
+#
+# This is distinct from confession_framing (which catches "admitted to"
+# specifically) and corporate_reassurance_undercut (which catches
+# "insisted/maintained" + "but/however").  Defensive verb framing detects
+# the standalone editorial choice of loaded attribution verbs.
+#
+# Discovered via Gizmodo "$1.4T Existential Threat" article (Jul 8, 2026):
+# "Meta has denied the allegations, and recently attempted yet failed to
+# get the addiction claims dismissed" — "attempted yet failed" is an
+# editorial construction that frames the legal motion's denial as a defeat
+# rather than a routine procedural outcome.
+_DEFENSIVE_VERB_FRAMING_PATTERNS: list[re.Pattern] = [
+    # "attempted yet/but failed to"
+    re.compile(
+        r"\b(?:attempted|tried)\s+(?:yet|but)\s+failed\s+to\b",
+        re.IGNORECASE,
+    ),
+    # "[entity] was forced to / had to concede / was compelled to"
+    re.compile(
+        r"\b(?:was|were|been)\s+(?:forced|compelled|obliged|pressured|"
+        r"pushed|driven)\s+to\b",
+        re.IGNORECASE,
+    ),
+    # "conceded that" / "grudgingly acknowledged"
+    re.compile(
+        r"\b(?:grudgingly|reluctantly|finally|belatedly|tacitly)\s+"
+        r"(?:acknowledged|conceded|admitted|accepted|recognized|agreed)\b",
+        re.IGNORECASE,
+    ),
+    # "[entity] scrambled/struggled/fought to"
+    re.compile(
+        r"\b(?:scrambled|struggled|fought|battled|grappled|wrestled)\s+to\b",
+        re.IGNORECASE,
+    ),
+    # "has been plagued with/by" — victimisation language applied to entity
+    re.compile(
+        r"\bhas\s+been\s+(?:plagued|beset|dogged|haunted|hounded|beleaguered|"
+        r"besieged|buffeted|rattled)\s+(?:by|with)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["defensive_verb_framing"] = _DEFENSIVE_VERB_FRAMING_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 80 pattern-matched device types plus 7 structural
-    post-pass types (87 total).
+    Scans for 82 pattern-matched device types plus 7 structural
+    post-pass types (89 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (80): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (82): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_positioning,
     commodification_metaphor, confession_framing,
     consumer_ownership,
     corporate_reassurance_undercut, cross_publication_import,
-    default_burden_privacy, denial_contradiction,
+    default_burden_privacy, defensive_verb_framing,
+    denial_contradiction,
     editorial_aside, editorial_deflation, editorial_dramatization,
     emotion_attribution, emotional_appeal,
     escalation_amplification, expert_consensus_authority,
@@ -7298,7 +7408,8 @@ def detect_framing_devices(
     historical_legitimation,
     hypocrisy_frame, industry_normalization_undercut,
     ironic_quotation, isolation_framing,
-    juxtaposition, latecomer_narrative, litigation_framing,
+    juxtaposition, latecomer_narrative, litigation_cascade,
+    litigation_framing,
     loaded_language, loss_leader_framing,
     marginal_endorsement, market_verdict,
     military_techno_optimism, outsourced_intensity,

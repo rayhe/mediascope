@@ -1,6 +1,6 @@
 # Framing Device Quick Reference
 
-> A compact lookup card for all 87 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
+> A compact lookup card for all 89 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
 
 ---
 
@@ -9,7 +9,7 @@
 During article analysis, scan the text for trigger keywords and structural patterns listed below. Each device name links to the detailed entry in METHODOLOGY.md. The **tier** column indicates detection method:
 
 - **C** = Core (10 types) — fundamental editorial techniques, pattern-matched
-- **E** = Extended (66 types) — discovered from real article analysis, pattern-matched
+- **E** = Extended (72 types) — discovered from real article analysis, pattern-matched
 - **S** = Structural (7 types) — detected via post-pass heuristics over full article structure
 
 ---
@@ -150,6 +150,8 @@ Devices that shape how regulatory, legal, and government actions are presented.
 | 83 | **Default Burden Privacy** | E | Default-on feature framed as consent violation by emphasising opt-out burden | "enabled by default," "opt-out," "users may not know," "without consent" |
 | 84 | **Editorial Cross-Promotion** | E | All-caps interstitial headline blocks importing linked headline framing into otherwise balanced reporting | All-caps blocks 5+ words; "CLICK HERE TO GET THE FOX BUSINESS APP"; imports adversarial linked headlines |
 | 85 | **Emotion Attribution** | E | Editorial attribution of emotional states never expressed by the subject — upgrading factual observations into disappointment, frustration, or alarm | "[Name] is disappointed that"; "leading investors to fret"; "[Name] is alarmed by" |
+| 86 | **Litigation Cascade** | E | Stacking multiple legal proceedings, case counts, plaintiff numbers to create avalanche effect | "N states have banded/sued"; "more than N,NNN cases pending"; "Another N states also brought claims" |
+| 87 | **Defensive Verb Framing** | E | Loaded attribution verbs framing subject as reactive or embattled | "attempted yet failed to"; "was forced/compelled to"; "grudgingly acknowledged"; "scrambled/struggled to"; "has been plagued by" |
 
 ---
 
@@ -206,6 +208,8 @@ Devices specific to financial journalism, earnings coverage, and analyst reporti
 | 81 | **Marginal Endorsement** | E | Analyst action of negligible magnitude presented as meaningful signal | Price target raise of <1% framed as "analysts remain bullish" |
 | 84 | **Market Verdict** | E | Market drops/investor behavior framed as editorial judgment on strategy | "fell X% as/amid concerns," "investors have spoken," "wiping $X in value" |
 | 85 | **Overbuilding Narrative** | E | Infrastructure spending framed as excess, bubble, or unsustainable arms race | "spending war," "arms race," "overcapacity," "bubble," "when will someone blink" |
+| 86 | **Litigation Cascade** | E | Stacking multiple legal fronts/case counts to build avalanche effect | "N states banded/sued," "N,NNN cases pending," "Another N states filed" |
+| 87 | **Defensive Verb Framing** | E | Loaded attribution verbs editorializing corporate actions as reactive/embattled | "attempted yet failed," "was forced to," "grudgingly acknowledged," "scrambled to," "plagued by" |
 
 ---
 
@@ -235,9 +239,9 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 | Tier | Count | Detection Method |
 |---|---|---|
 | Core | 10 | Pattern matching — fundamental editorial techniques |
-| Extended | 70 | Pattern matching — discovered from real article analysis |
+| Extended | 72 | Pattern matching — discovered from real article analysis |
 | Structural (post-pass) | 7 | Full-article heuristics (position, accumulation, structure) |
-| **Total** | **87** | |
+| **Total** | **89** | |
 
 ---
 
