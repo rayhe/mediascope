@@ -2,6 +2,64 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-09 07:00 PT — Type D: Toolkit Quality & Documentation
+
+**Focus:** Quote-context suppression for speculative_framing (fixes financial article false-positive risk) + comprehensive documentation staleness sweep.
+
+### Code Changes
+
+1. **`_find_quoted_spans(text)` helper (NEW):** Returns `(start, end)` spans for text inside straight double quotes and smart double quotes (U+201C/U+201D). Handles both quote styles, deduplicates overlapping spans. Reusable by any post-pass detector needing quote awareness.
+
+2. **`_is_in_quoted_span(pos, spans)` helper (NEW):** Binary check — returns True if a character position falls inside any quoted span. Sorted-span early exit for performance.
+
+3. **`_detect_speculative_framing()` updated:** Now builds quoted spans at start and skips any speculative marker whose start position falls inside a quoted span. Only editorial-prose hedges count toward the 5-marker threshold. This prevents false positives in financial articles where analyst quotes contain 5+ professional hedging phrases ("I wouldn't rule it out," "could potentially accelerate," "there is a chance revenue surprises") that are standard analyst convention, not editorial framing.
+
+4. **Closes deferred item from Jul 7 Type A (Memeburn chip selloff):** "First-person editorial voice ('We think', 'We expect') — high false-positive risk in financial articles; needs genre-aware suppression in a future Type D iteration."
+
+### Documentation Fixes
+
+1. **FRAMING_REFERENCE.md:**
+   - Fixed Extended count: 72 → 73 (both in "How to Use" section and summary table)
+   - Removed 4 duplicate entries from Category 12 (Financial & Investor Media): Litigation Cascade (#86) and Defensive Verb Framing (#87) appeared in both Category 8 and Category 12 with identical or near-identical content
+   - Renumbered Category 12: Market Verdict → #88, Overbuilding Narrative → #89, Heritage Nostalgia → #90 (were previously #84, #85, #88 — colliding with Category 8 entries)
+   - Total now correctly shows 90 (was 89 before this iteration's fix, then re-fixed to 90)
+
+2. **ARCHITECTURE.md:**
+   - Entity cluster reference: 70 → 78 (§15 cross-reference was stale since cluster additions Jul 1-7)
+   - Test count header: 2051 → 2067 (16 new tests)
+   - Test file count: 86 → 87
+   - Added `test_speculative_quote_suppression.py` to test file listing with full description
+
+3. **README.md:**
+   - Test count: 2051 → 2067
+   - Test file count: 86 → 87
+   - Added `test_speculative_quote_suppression.py` to test table with test breakdown
+
+### Tests
+
+New `test_speculative_quote_suppression.py` — 16 tests:
+- `TestFindQuotedSpans` (5): straight quotes, smart quotes, multiple quotes, no quotes, mixed styles
+- `TestIsInQuotedSpan` (5): inside, outside, at start, at end, empty spans
+- `TestSpeculativeFramingEditorialProse` (1): 5+ editorial hedges still fire
+- `TestSpeculativeFramingQuoteSuppression` (3): analyst quotes suppressed (straight + smart), mixed editorial/quoted context
+- `TestFinancialArticlePattern` (2): BofA research note style, Motley Fool editorial hedging
+
+### Test Results
+- **2067/2067 tests pass** (was 2051, +16)
+- **97/97 structural consistency tests pass** (all guards updated)
+
+### Cumulative Stats
+- **Tests:** 2,067 — 87 test files
+- **Profile lines:** Wired 1,883, The Verge 942, NYT 1,951, Guardian 1,897, MIT TR 2,144, Atlantic 1,365
+- **Framing device types:** 90 (83 pattern-matched + 7 structural)
+- **Total regex patterns:** 513
+- **Annotated articles:** 135
+- **Emotional language terms:** 841
+- **Entity clusters:** 78
+- **Journalists:** 178 (560 auto-detected migrations, 174 multi-pub)
+
+**Commit:** `c14b947` — pushed to GitHub
+
 ## 2026-07-09 04:00 PT — Type B: Journalist/Publication Research (Michael Calore + Kylie Robison)
 
 **Focus:** Added two missing journalist profiles and expanded editorial changes for Wired business desk personnel.
