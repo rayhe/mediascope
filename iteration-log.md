@@ -16865,3 +16865,58 @@ Reuters: "French antitrust watchdog orders Meta to resume talks with media group
 - Annotated articles: 130 → 131
 - Distinct publications: 42 → 43
 - Structural consistency: 97/97 passed
+
+
+---
+
+## 2026-07-08 21:00 PT — Type A (Article Deep Dive)
+
+### Focus
+Same-event comparison: Reuters vs Barron's on Zuckerberg's AI agent admission from Jul 2, 2026 town hall. Reuters wire: "Meta's Zuckerberg says AI agent tech progressing slower than expected." Barron's editorial: "What Meta Said About Slow Progress on AI Agents" by Adam Clark.
+
+### What Changed
+
+#### 1. New Framing Device: `emotion_attribution` (#85, 78th pattern-matched)
+- **What:** Editorial attribution of emotional states — disappointment, frustration, alarm — to subjects who expressed only factual observations. Upgrades neutral statements into emotional reactions.
+- **Why:** Barron's transforms Zuckerberg's factual "the trajectory for this hasn't quite accelerated" into "Zuckerberg is disappointed that AI agents haven't developed." Also "leading investors to fret" — emotional state attributed to investors with no sourced evidence.
+- **Distinction from existing devices:**
+  - `loaded_language` — uses emotionally charged words about external events
+  - `editorial_dramatization` — rewrites facts in heightened dramatic language
+  - `confession_framing` — recasts voluntary statements as extracted admissions
+  - `emotion_attribution` specifically *invents an inner emotional state* the subject never expressed
+- **3 regex patterns:**
+  1. Individual: `[Name] is [emotion] that/by/about`
+  2. Group: `investors/analysts are [emotion]`
+  3. Causal: `leading investors to fret/worry/panic`
+- **False-positive suppression:** Patterns exclude direct quotes ("said he was disappointed"), factual reporting ("noted that progress was slower"), and self-attribution ("Cook said he was disappointed in the results")
+
+#### 2. Same-Event Divergence Analysis
+- **confession_framing:** Reuters ✓ ("acknowledged shortcomings") → Barron's ✗ (uses emotion_attribution instead)
+- **competitive_deficit:** Reuters ✗ → Barron's ✓ ("failed to launch a rival to [A]'s X, [B]'s Y, and [C]'s Z")
+- **financial_reassurance:** Reuters ✗ (wire report) → Barron's ✓ (reframes negative news as market signal)
+- **Key insight:** Same factual base, different editorial strategies. Reuters makes Zuckerberg *confess*; Barron's makes him *feel bad*. Neither is what he actually said.
+
+#### 3. Entity Detection Validated
+- Reuters: Zuckerberg, Bosworth, Meta, Anthropic, Claude Code (as distinct product)
+- Barron's: Zuckerberg, Alexandr Wang (Scale AI), Meta, OpenAI, Google, Anthropic, ChatGPT, Gemini, Claude, Muse, Spark, Bloomberg
+
+#### 4. Tests & Documentation
+- 37 test methods (43 pytest-collected with parametrize) in `test_zuckerberg_ai_agents_same_event.py`
+- Parametrized tests for emotion_attribution (4 true positives, 3 false-positive guards)
+- Cross-analysis file: `examples/sample_output/reuters_vs_barrons_zuckerberg_ai_agents_2026_07_02_cross_analysis.md`
+- All doc counts updated: ARCHITECTURE.md, README.md, METHODOLOGY.md, FRAMING_REFERENCE.md, AGENT_GUIDE.md, QUALITY_STANDARDS.md, cli.py, framing.py docstring
+- Same-event clusters: 11 → 12 (new Tier 1 cluster)
+- Pattern count: 477 → 480
+- Framing device types: 84 → 85 (10 core + 68 extended + 7 structural)
+- Test file listing added to ARCHITECTURE.md tree + README.md test table
+
+### Stats After This Iteration
+- **Tests:** 1,957 (from 1,914)
+- **Test files:** 83 (from 82)
+- **Regex patterns:** 480 (from 477)
+- **Annotated articles:** 132 (from 131)
+- **Framing device types:** 85 (from 84)
+- **Same-event clusters:** 12 (from 11)
+- **Distinct publications:** 43
+
+### Commit

@@ -182,7 +182,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 84 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (67 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 85 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (68 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -273,6 +273,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Analyst Authority** | Named analyst firms used as authority sources to frame corporate spending decisions. Distinct from anonymous_authority (unnamed "some experts say") — this catches named financial institutions whose credentialing function shapes how readers evaluate spending narratives | "BofA warns"; "according to Goldman Sachs"; "Morgan Stanley analyst [Name]"; "[Firm] raised its capex estimate ... could heighten investor anxiety" | Barron's BofA AI Spending article (Jul 7, 2026) — BofA Securities analyst Justin Post cited as authority for $145B capex estimate and "Watermelon" model codename reveal; analyst name and firm lending credibility to alarm framing |
 | **Default Burden Privacy** | Editorial technique of framing a feature that is enabled by default and offers a standard opt-out as inherently violating user consent. The framing emphasises the *burden* on the user to discover and toggle the setting, treating default-on as a quasi-deceptive practice regardless of whether the opt-out is accessible. Distinct from policy_reversal (which tracks actual changes in policy), regulatory_shadow (which inserts regulatory context into unrelated stories), and corporate_reassurance_undercut (which undercuts a company's own PR language). Default-burden privacy is about how *existing* default-on features are framed as consent violations | "enabled/turned on by default"; "opt-out" near "users may not know/realize/be aware"; "buried in settings"; "without [explicit/informed] consent/knowledge/permission"; "users have to [actively] opt out/disable/turn off" | TechLusive Meta Muse Image privacy article (Jul 8, 2026) — "opt-out, in which users can have their photos deleted from public Instagram accounts" frames a standard opt-out control as a privacy failing by emphasising the burden on users. The existence of the opt-out mechanism is presented as insufficient rather than standard practice. Distinct from the Meta-specific pattern where Cambridge Analytica is guilt-by-association'd into every privacy story |
 | **Editorial Cross-Promotion** | All-caps interstitial headline blocks or CTA blocks embedded in article body text, importing the framing of linked headlines into the host article's narrative. Common in Fox News/Fox Business/NY Post and other News Corp properties. These blocks serve dual editorial functions: (1) interrupt reader flow to drive clicks to related coverage, and (2) import adversarial or sensational framing from linked headlines into otherwise balanced reporting. Creates plausible deniability — the publication can maintain neutral prose while injecting loaded framing through "just links" | All-caps blocks of 5+ words in article body; "CLICK HERE TO GET THE FOX BUSINESS APP"; "JUDGE LETS STATES PURSUE CLAIMS THAT META DESIGNED FACEBOOK AND INSTAGRAM TO ADDICT CHILDREN" | Fox Business Meta $1.4T penalty article (Jul 7, 2026) — two all-caps blocks import adversarial framing ("DESIGNED...TO ADDICT CHILDREN," "CHILD SOCIAL MEDIA ADDICTION") into an otherwise defense-forward, balanced business report. The host article carefully uses "claims" and "allegations" while the cross-promo blocks state the addiction framing as the linked headline's premise. Distinct from self_referential_investigation (same publication citing its own prior reporting as evidence) and cross_publication_import (importing another outlet's characterization as settled fact) |
+| **Emotion Attribution** | Editorial attribution of emotional states — disappointment, frustration, alarm — to subjects who expressed only factual observations, upgrading neutral statements into emotional reactions. Distinct from loaded_language (which uses emotionally charged words) and editorial_dramatization (which rewrites facts in dramatic language) — emotion attribution specifically *invents* an inner emotional state the subject never expressed | "[Name] is disappointed/frustrated/alarmed that/by/about"; "investors/analysts are worried/anxious/nervous"; "leading investors to fret/worry/panic" | Barron's "What Meta Said About Slow Progress on AI Agents" (Jul 2, 2026) — Zuckerberg's factual "the trajectory for this hasn't quite accelerated" becomes "Zuckerberg is disappointed that AI agents haven't developed." Also "leading investors to fret" — emotional state attributed to investors with no sourced evidence of actual investor sentiment |
 
 #### Structural Devices (Post-Pass)
 
@@ -753,7 +754,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 84-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 85-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1381,7 +1382,7 @@ The Zuckerberg town hall cluster (Jul 2–4, 2026) is the highest-value comparis
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 84 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 85 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|

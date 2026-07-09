@@ -6978,21 +6978,79 @@ _EDITORIAL_CROSS_PROMO_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["editorial_cross_promotion"] = _EDITORIAL_CROSS_PROMO_PATTERNS
 
 
+# ---------------------------------------------------------------------------
+# emotion_attribution — Editorial attribution of emotional states to
+# subjects who used only factual/neutral language.
+#
+# Discovered in Reuters vs Barron's same-event comparison (Jul 8 2026):
+#   Reuters: Zuckerberg said trajectory "hasn't really accelerated" and
+#            "haven't come to fruition yet" — factual language.
+#   Barron's: "Zuckerberg is disappointed that" — emotional state
+#             Zuckerberg never expressed.
+#
+# Common in financial and tech editorial journalism where wire-service
+# quotes are editorially elevated to emotional narratives.  The device
+# increases the dramatic register without new evidence.
+#
+# IMPORTANT: only fires for third-person declarative attributions
+# ("[Name] is [emotion]").  Direct quotes containing emotion words
+# ("[Name] said he was disappointed") are excluded because those
+# are the subject's own words.
+# ---------------------------------------------------------------------------
+_EMOTION_ATTRIBUTION_PATTERNS: list[re.Pattern] = [
+    # "[Name/Title] is [emotion word] that/by/about/with"
+    # Requires a capitalized name or title + "is" + emotion adjective
+    # Excludes "said he/she/they was/were [emotion]" (direct speech)
+    re.compile(
+        r"\b(?:[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?|"
+        r"(?:CEO|CTO|CFO|COO|president|chairman|chief executive|"
+        r"founder|director))\s+"
+        r"is\s+"
+        r"(?:disappointed|frustrated|alarmed|concerned|worried|"
+        r"unhappy|dissatisfied|angry|furious|outraged|troubled|"
+        r"dismayed|displeased|exasperated|irritated|rattled|"
+        r"anxious|uneasy|nervous|fearful|panicked)\b"
+        r"(?:\s+(?:that|by|about|with|over|at)\b)",
+        re.IGNORECASE,
+    ),
+    # "investors/analysts are [emotion]" — emotion attributed to groups
+    re.compile(
+        r"\b(?:investors?|analysts?|shareholders?|employees?|"
+        r"workers?|staffers?|executives?|insiders?)\s+"
+        r"(?:are|were|remain|grew|became|turned)\s+"
+        r"(?:disappointed|frustrated|alarmed|concerned|worried|"
+        r"unhappy|furious|outraged|troubled|dismayed|anxious|"
+        r"uneasy|nervous|fearful|panicked|rattled|spooked|"
+        r"skittish)\b",
+        re.IGNORECASE,
+    ),
+    # "leading investors to fret/worry/panic/balk"
+    re.compile(
+        r"\bleading\s+(?:investors?|analysts?|shareholders?|markets?)\s+"
+        r"to\s+"
+        r"(?:fret|worry|panic|balk|question|doubt|fear|despair)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["emotion_attribution"] = _EMOTION_ATTRIBUTION_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 77 pattern-matched device types plus 7 structural
-    post-pass types (84 total).
+    Scans for 78 pattern-matched device types plus 7 structural
+    post-pass types (85 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (71): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (78): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_positioning,
@@ -7001,7 +7059,7 @@ def detect_framing_devices(
     corporate_reassurance_undercut, cross_publication_import,
     default_burden_privacy, denial_contradiction,
     editorial_aside, editorial_deflation, editorial_dramatization,
-    emotional_appeal,
+    emotion_attribution, emotional_appeal,
     escalation_amplification, expert_consensus_authority,
     expert_contradiction,
     failure_precedent, false_balance,
