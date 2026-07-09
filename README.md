@@ -433,7 +433,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **2051 tests** across 86 test files, each covering a different analytical capability:
+MediaScope has **2067 tests** across 87 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -523,6 +523,7 @@ MediaScope has **2051 tests** across 86 test files, each covering a different an
 | `test_foxbusiness_meta_1_4t_penalty.py` | 14 | Fox Business Meta $1.4T penalty Jul 7: editorial_cross_promotion framing device (new — all-caps interstitial blocks with parametrized variants), reached_out_for_comment no_comment source pattern (new — with false positive suppression), valuation_comparison detection, litigation/child_safety topic assignment, structural consistency guard (82 pattern-matched device types) |
 | `test_zuckerberg_ai_agents_same_event.py` | 37 | Reuters vs Barron's same-event comparison on Zuckerberg AI agent admission (Jul 2, 2026 town hall): emotion_attribution framing device (new — editorial attribution of emotional states never expressed by subject, with parametrized true/false-positive tests), competitive_deficit detection, confession_framing divergence, entity detection (Claude Code, Alexandr Wang, Muse/Spark), topic classification, source extraction (documentary "recording heard by Reuters"), same-event framing divergence analysis |
 | `test_reuters_rust_belt_jul9.py` | 33 | Reuters Big Tech data centers Rust Belt factories Jul 9: heritage_nostalgia framing device (new — age/generational continuity establishing emotional stakes), source false positive elimination (Capacity/Energy Consumers/White House/Synergy Research/Smart Electric Power), Pattern 0f affiliation extraction ("president of the trade group Industrial Energy Consumers of America"), environmental domain keyword in affiliation patterns, infrastructure_energy topic assignment |
+| `test_speculative_quote_suppression.py` | 16 | Speculative framing quote-context suppression: `_find_quoted_spans` and `_is_in_quoted_span` helpers (5 tests), editorial prose hedges still fire at 5+ threshold (1 test), analyst quotes suppressed in straight and smart quotes (3 tests), mixed editorial/quoted context (1 test), BofA research note and Motley Fool editorial article patterns (2 tests). Type D fix for financial article false-positive risk. |
 
 ```bash
 # Run all tests

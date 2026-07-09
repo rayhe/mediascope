@@ -278,7 +278,7 @@ Default storage is SQLite (`mediascope.db` in working directory). For production
 
 ### Custom Entity Clusters
 
-Define entity clusters in publication profiles or pass custom clusters to `detect_entities()`. See [METHODOLOGY.md §15](METHODOLOGY.md#15-entity-detection--cluster-reference) for the complete 70-cluster reference table with alias counts, analytical categories, and growth history.
+Define entity clusters in publication profiles or pass custom clusters to `detect_entities()`. See [METHODOLOGY.md §15](METHODOLOGY.md#15-entity-detection--cluster-reference) for the complete 78-cluster reference table with alias counts, analytical categories, and growth history.
 
 ```python
 custom_clusters = {
@@ -410,7 +410,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 100 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2051 tests across 86 test files (all from real articles)
+├── tests/                       # 2067 tests across 87 test files (all from real articles)
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
@@ -497,6 +497,7 @@ mediascope/
 │   ├── test_foxbusiness_meta_1_4t_penalty.py # Fox Business Meta $1.4T penalty Jul 7: editorial_cross_promotion framing device (new — all-caps interstitial blocks), reached_out_for_comment no_comment source pattern (new), valuation_comparison detection, litigation/child_safety topic assignment, structural consistency guard (83 pattern-matched device types)
 │   ├── test_zuckerberg_ai_agents_same_event.py # Reuters vs Barron's same-event comparison on Zuckerberg AI agent admission (Jul 2, 2026 town hall): emotion_attribution framing device (new — editorial attribution of emotional states never expressed by subject), competitive_deficit detection, confession_framing divergence, entity detection (Claude Code, Alexandr Wang, Muse/Spark), topic classification, source extraction (documentary "recording heard by Reuters"), same-event framing divergence analysis
 │   ├── test_reuters_rust_belt_jul9.py # Reuters Big Tech data centers Rust Belt factories Jul 9: heritage_nostalgia framing device (new — age/generational continuity establishing emotional stakes), source false positive elimination (Capacity/Energy Consumers/White House/Synergy Research/Smart Electric Power), Pattern 0f affiliation extraction ("president of the trade group Industrial Energy Consumers of America"), environmental domain keyword in affiliation patterns, infrastructure_energy topic assignment
+│   ├── test_speculative_quote_suppression.py # Speculative framing quote-context suppression: _find_quoted_spans helper, _is_in_quoted_span helper, editorial prose hedges still fire at 5+ threshold, analyst quotes suppressed (straight + smart quotes), mixed editorial/quoted context, BofA research note style, Motley Fool editorial hedging
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

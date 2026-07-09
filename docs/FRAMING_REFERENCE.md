@@ -1,6 +1,6 @@
 # Framing Device Quick Reference
 
-> A compact lookup card for all 89 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
+> A compact lookup card for all 90 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
 
 ---
 
@@ -9,7 +9,7 @@
 During article analysis, scan the text for trigger keywords and structural patterns listed below. Each device name links to the detailed entry in METHODOLOGY.md. The **tier** column indicates detection method:
 
 - **C** = Core (10 types) — fundamental editorial techniques, pattern-matched
-- **E** = Extended (72 types) — discovered from real article analysis, pattern-matched
+- **E** = Extended (73 types) — discovered from real article analysis, pattern-matched
 - **S** = Structural (7 types) — detected via post-pass heuristics over full article structure
 
 ---
@@ -206,11 +206,9 @@ Devices specific to financial journalism, earnings coverage, and analyst reporti
 | 79 | **Financial Reassurance** | E | Negative operational news immediately reframed as positive market signal | "could soothe concerns," "easing fears," "investors shrugged off" |
 | 80 | **Historical Legitimation** | E | Temporally distant positive data inserted to dilute fresh negative news | "reported [quarter] results ... beat/topped expectations" in negative-news article |
 | 81 | **Marginal Endorsement** | E | Analyst action of negligible magnitude presented as meaningful signal | Price target raise of <1% framed as "analysts remain bullish" |
-| 84 | **Market Verdict** | E | Market drops/investor behavior framed as editorial judgment on strategy | "fell X% as/amid concerns," "investors have spoken," "wiping $X in value" |
-| 85 | **Overbuilding Narrative** | E | Infrastructure spending framed as excess, bubble, or unsustainable arms race | "spending war," "arms race," "overcapacity," "bubble," "when will someone blink" |
-| 86 | **Litigation Cascade** | E | Stacking multiple legal fronts/case counts to build avalanche effect | "N states banded/sued," "N,NNN cases pending," "Another N states filed" |
-| 87 | **Defensive Verb Framing** | E | Loaded attribution verbs editorializing corporate actions as reactive/embattled | "attempted yet failed," "was forced to," "grudgingly acknowledged," "scrambled to," "plagued by" |
-| 88 | **Heritage Nostalgia** | E | Age, generational continuity, or historical significance establishing emotional stakes for disruption | "141-year-old brick manufacturer," "fifth generation working at the company," "iconic buildings," "family-owned since 1892" |
+| 88 | **Market Verdict** | E | Market drops/investor behavior framed as editorial judgment on strategy | "fell X% as/amid concerns," "investors have spoken," "wiping $X in value" |
+| 89 | **Overbuilding Narrative** | E | Infrastructure spending framed as excess, bubble, or unsustainable arms race | "spending war," "arms race," "overcapacity," "bubble," "when will someone blink" |
+| 90 | **Heritage Nostalgia** | E | Age, generational continuity, or historical significance establishing emotional stakes for disruption | "141-year-old brick manufacturer," "fifth generation working at the company," "iconic buildings," "family-owned since 1892" |
 
 ---
 
@@ -240,7 +238,7 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 | Tier | Count | Detection Method |
 |---|---|---|
 | Core | 10 | Pattern matching — fundamental editorial techniques |
-| Extended | 72 | Pattern matching — discovered from real article analysis |
+| Extended | 73 | Pattern matching — discovered from real article analysis |
 | Structural (post-pass) | 7 | Full-article heuristics (position, accumulation, structure) |
 | **Total** | **90** | |
 

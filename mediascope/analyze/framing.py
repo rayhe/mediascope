@@ -4931,6 +4931,48 @@ def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
     return []
 
 
+def _find_quoted_spans(text: str) -> list[tuple[int, int]]:
+    """Return (start, end) spans for text inside quotation marks.
+
+    Handles straight double quotes, smart double quotes (\u201c\u201d), and
+    straight single quotes used as quotation marks.  Spans include the
+    quote delimiters themselves.
+
+    This is used by post-pass detectors to suppress matches that fall
+    inside quoted speech — hedging language, first-person analyst voice,
+    and speculative phrasing are standard in analyst quotes and should
+    not count as editorial framing devices.
+    """
+    spans: list[tuple[int, int]] = []
+    # Smart double quotes
+    for m in re.finditer(r'\u201c[^\u201d]{1,1000}\u201d', text):
+        spans.append((m.start(), m.end()))
+    # Straight double quotes
+    for m in re.finditer(r'"[^"]{1,1000}"', text):
+        # Avoid double-counting spans already found by smart quotes
+        overlap = False
+        for s, e in spans:
+            if not (m.end() <= s or m.start() >= e):
+                overlap = True
+                break
+        if not overlap:
+            spans.append((m.start(), m.end()))
+    return sorted(spans)
+
+
+def _is_in_quoted_span(
+    pos: int,
+    quoted_spans: list[tuple[int, int]],
+) -> bool:
+    """Return True if *pos* falls inside any quoted span."""
+    for start, end in quoted_spans:
+        if start <= pos < end:
+            return True
+        if start > pos:
+            break  # spans are sorted, no need to check further
+    return False
+
+
 def _detect_speculative_framing(text: str) -> list[FramingDevice]:
     """Detect speculative framing — 5+ cumulative speculative hedges.
 
@@ -4940,15 +4982,28 @@ def _detect_speculative_framing(text: str) -> list[FramingDevice]:
     is an editorial framing technique distinct from individual cautious
     language.
 
+    Hedges inside quotation marks (direct speech from analysts, executives,
+    or other sources) are excluded from the count.  Analyst and financial
+    commentary routinely uses hedging language ("we wouldn't rule it out,"
+    "could potentially accelerate") that is professional convention, not
+    editorial framing.  Only hedges in the journalist's own editorial prose
+    count toward the 5-marker threshold.
+
     Returns a list of FramingDevice objects (one per matched hedge) only if
     the threshold (5+) is met.  Below threshold, returns an empty list.
     """
+    quoted_spans = _find_quoted_spans(text)
+
     markers: list[FramingDevice] = []
     seen_spans: set[tuple[int, int]] = set()
 
     for pattern in _SPECULATIVE_FRAMING_PATTERNS:
         for match in pattern.finditer(text):
             start, end = match.start(), match.end()
+
+            # Skip hedges inside quoted speech (analyst/source voice)
+            if _is_in_quoted_span(start, quoted_spans):
+                continue
 
             # Deduplicate overlapping matches
             overlap = False
