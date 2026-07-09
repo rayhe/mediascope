@@ -87,10 +87,10 @@ ownership_chain:
       - entity: "Apple (via LPJ Trust)"
         relationship: >
           Laurene Powell Jobs is Steve Jobs' widow. LPJ Trust holds massive Apple stock.
-          Apple (AAPL) at $308.63/share (Jul 3, 2026), market cap ~$4.53T.
-          LPJ estimated to hold ~$16.8B+ in Apple stock. Among Apple's largest individual shareholders.
+          Apple (AAPL) at $316.22/share (Jul 9, 2026), market cap ~$4.62T.
+          LPJ estimated to hold ~$17.2B+ in Apple stock. Among Apple's largest individual shareholders.
         competitive_with: ["Meta"]
-        notes: "Apple competes with Meta in hardware (Vision Pro vs Quest), AI (Apple Intelligence vs Meta AI), and uses 'privacy' narrative that undermines Meta's advertising model. LPJ serves on Stanford Board of Trustees alongside OpenAI CFO Sarah Friar — see civic_connections."
+        notes: "Apple competes with Meta in hardware (Vision Pro vs Quest), AI (Apple Intelligence vs Meta AI), and uses 'privacy' narrative that undermines Meta's advertising model. LPJ serves on Stanford Board of Trustees alongside OpenAI CFO Sarah Friar — see civic_connections. Stock update: AAPL $316.22 (Jul 9, 2026), LPJ holding ~$17.2B+."
       - entity: "Walt Disney Company (via LPJ Trust)"
         relationship: >
           LPJ Trust inherited a massive Disney stake from Steve Jobs' Pixar acquisition (Disney
@@ -101,8 +101,9 @@ ownership_chain:
             - 2016 (SC 13G/A, Amendment 2): 40,284,667 shares = 2.5% of Disney
             - Post-2016: Below SEC reporting threshold; current holdings unknown but presumed
               to retain some position given no public report of full divestiture.
-          Disney (DIS) at ~$99.50/share (Jul 2, 2026), market cap ~$172.78B.
-          Even the reduced 2016 position (40.3M shares) would be worth ~$4.01B at current prices.
+          Disney (DIS) at ~$96.17/share (Jul 9, 2026), market cap ~$168.23B.
+          Even the reduced 2016 position (40.3M shares) would be worth ~$3.87B at current prices.
+          DIS down 3.3% from $99.50 (Jul 2) to $96.17 (Jul 9).
         competitive_with: ["Meta"]
         source_urls:
           - "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001540902&type=SC%2013G&dateb=&owner=include&count=40"
@@ -135,7 +136,7 @@ ownership_chain:
           CRITICAL: This creates a DIRECT FINANCIAL EXIT for Emerson Collective from OpenAI,
           deepening the financial relationship far beyond the content licensing deal. EC profited
           directly from OpenAI's growth. Also puts OpenAI in direct competition with Apple
-          (where LPJ holds $16.8B+ stock) — an internal portfolio tension.
+          (where LPJ holds $17.2B+ stock) — an internal portfolio tension.
       - entity: "Mistral AI"
         relationship: >
           Emerson Collective participated in Mistral's $415M Series A (Dec 2023) and/or
@@ -176,7 +177,7 @@ ownership_chain:
           - "https://spectrum.ieee.org/fei-fei-li-world-labs"
         notes: >
           Strengthens the pattern: EC/LPJ now has financial positions in FIVE direct Meta
-          competitors — Apple (via LPJ Trust, $16.8B+ stock), Disney (via LPJ Trust, ~$4.01B+ stock),
+          competitors — Apple (via LPJ Trust, $17.2B+ stock), Disney (via LPJ Trust, ~$3.87B+ stock),
           OpenAI (via io Products exit + licensing),
           Mistral (open-source LLMs vs Llama), and World Labs (spatial AI/3D vs Reality Labs). Each
           investment creates editorial incentive for Atlantic coverage that frames Meta's competitive
@@ -427,11 +428,11 @@ ownership_chain:
 revenue_relationships:
   - partner: "Apple"
     relationship_type: "indirect_financial"
-    estimated_value: "~$16.8B+ (stock holdings, AAPL at $308.63 Jul 3 2026)"
+    estimated_value: "~$17.2B+ (stock holdings, AAPL at $316.22 Jul 9 2026)"
     description: >
       Owner LPJ holds massive Apple stock. Apple competes with Meta in hardware (Vision Pro
       vs Quest), AI (Apple Intelligence vs Meta AI), and privacy positioning. Apple's 'privacy'
-      narrative directly undermines Meta's advertising business. AAPL market cap ~$4.53T.
+      narrative directly undermines Meta's advertising business. AAPL market cap ~$4.62T.
     date_established: "1997 (Jobs era)"
     source_url: ""
   - partner: "OpenAI"
@@ -448,6 +449,22 @@ revenue_relationships:
          PROFITED DIRECTLY from OpenAI's expansion. The licensing deal and the investment exit
          create a compound financial relationship — EC has both ongoing revenue from and a
          realized capital gain through OpenAI.
+      
+      OPENAI FINANCIAL CONTEXT (Jul 2026):
+        - Revenue: ~$2B/month (~$24B ARR), 900M+ weekly users, enterprise >40% of revenue
+        - Private valuation: $852B (March 2026 fundraise, anchored by Amazon, NVIDIA, SoftBank)
+        - $122B primary capital raised in aggregate
+        - Confidential IPO filing submitted June 2026, targeting >$1T valuation (may delay to 2027)
+        - BofA extended $520M credit line (Jul 8, 2026) ahead of IPO
+        - GPT-5.6 (Sol/Terra/Luna) US government-approved for public launch Jul 10, 2026
+        - OpenAI proposing 5% equity (~$42.6B) to Trump administration as "public wealth fund"
+        - CRITICAL: Anthropic has SURPASSED OpenAI — valued at $965B-$1.09T (May 2026), ARR $30B-$47B
+        
+      The Atlantic's licensing deal grows more valuable as OpenAI scales: 900M weekly users
+      see Atlantic content through ChatGPT. GPT-5.6's three-tier model (Sol/Terra/Luna)
+      expands the surface area for Atlantic-sourced content across price points. This makes
+      Atlantic's editorial incentive to cover OpenAI favorably STRONGER than when the deal
+      was signed in 2024, when OpenAI had far fewer users and lower revenue.
     date_established: "2024-05 (licensing), 2025 (io exit)"
     source_urls:
       - "https://www.thewrap.com/vox-media-atlantic-openai-licensing-partnerships/"
@@ -577,7 +594,7 @@ key_journalists:
 
 known_conflicts:
   - type: "investment"
-    description: "Owner Laurene Powell Jobs holds ~$16.8B+ in Apple stock (AAPL at $308.63, Jul 3 2026). Apple directly competes with Meta in hardware, AI, and uses 'privacy' narrative that undermines Meta's advertising model."
+    description: "Owner Laurene Powell Jobs holds ~$17.2B+ in Apple stock (AAPL at $316.22, Jul 9 2026). Apple directly competes with Meta in hardware, AI, and uses 'privacy' narrative that undermines Meta's advertising model."
     severity: 4
     evidence: "Forbes wealth estimates, Apple shareholder records"
     source_url: ""
@@ -586,8 +603,8 @@ known_conflicts:
       Owner Laurene Powell Jobs / LPJ Trust holds a significant Walt Disney Company stake
       inherited from Steve Jobs' Pixar acquisition. SEC filings document: 128.6M shares (7.6%)
       in 2014, reduced to 40.3M shares (2.5%) by 2016 (SC 13G/A). Below SEC disclosure threshold
-      since ~2016 but no public divestiture reported. At current DIS price (~$99.50, Jul 2 2026),
-      even the reduced 2016 position would be worth ~$4.01B. Disney competes with Meta in streaming/content
+      since ~2016 but no public divestiture reported. At current DIS price (~$96.17, Jul 9 2026),
+      even the reduced 2016 position would be worth ~$3.87B. Disney competes with Meta in streaming/content
       (Disney+/Hulu vs Facebook Watch/Reels), advertising (Disney's ad-supported tiers compete for
       the same brand budgets), and the broader attention economy (parks, sports, entertainment).
       ESPN's streaming pivot puts Disney in direct competition with Meta's video ad revenue.
@@ -616,7 +633,7 @@ known_conflicts:
       - "https://pitchbook.com/news/articles/openai-jony-ive-io-products-acquisition"
       - "https://techcrunch.com/2025/04/07/openai-reportedly-mulls-buying-jony-ive-and-sam-altmans-ai-hardware-startup/"
     notes: >
-      Also creates Apple tension: LPJ holds $16.8B+ Apple stock, but io Products
+      Also creates Apple tension: LPJ holds $17.2B+ Apple stock, but io Products
       was explicitly designed to compete with Apple. Jony Ive's OpenAI device is
       positioned as the next iPhone. EC profits from both sides of the
       Apple-vs-OpenAI hardware competition.
@@ -750,6 +767,26 @@ known_conflicts:
     source_urls:
       - "https://www.cnn.com/2026/06/23/media/newsguard-ai-chatbot-news/index.html"
       - "https://www.newsguardtech.com/press/newsguard-launches-first-ai-chatbot-built-to-deliver-trusted-journalism/"
+  - type: "political_investment_tension"
+    description: >
+      OPENAI 5% GOVERNMENT EQUITY PROPOSAL (Jul 2026): OpenAI is in preliminary talks
+      with the Trump administration to give a 5% equity stake (~$42.6B at $852B valuation)
+      to a centralized government vehicle modeled on the Alaska Permanent Fund. Sam Altman
+      championed the concept. This creates a POLITICAL TENSION for LPJ/Atlantic:
+      (1) LPJ is a 100% Democratic donor and close Harris confidant — her licensing partner
+          is now courting the Trump administration with billions in equity
+      (2) If the government equity deal proceeds, it would partially align OpenAI's
+          interests with the Trump administration — a political alignment that conflicts
+          with LPJ's documented political positions
+      (3) The Atlantic's editorial coverage of AI regulation and government oversight is
+          now entangled with OpenAI's political positioning vis-à-vis the administration
+      (4) LPJ co-chairs the Partnership for San Francisco alongside Ruth Porat AND Sam
+          Altman — meaning she sits at a civic governance table with the CEO proposing
+          this government equity deal
+    severity: 2
+    evidence: "FT report (Jul 2026), NBC Palm Springs, OpenAI policy paper (Apr 2026)."
+    source_urls:
+      - "https://nbcpalmsprings.com/2026/07/09/openai-reportedly-in-talks-to-give-trump-administration-5-stake-worth-42-billion/"
 
 political_activity:
   owner_political_giving:
@@ -978,6 +1015,33 @@ litigation_connections:
     evidence: "Bloomberg Law (June 2026 publisher lawsuit), NYT v. OpenAI (Dec 2023), Books3 investigation."
     source_urls:
       - "https://news.bloomberglaw.com/ip-law/openai-microsoft-sued-by-publishers-for-scraping-articles"
+  - type: "nyt_sanctions_motion_context"
+    description: >
+      NYT SANCTIONS MOTION (Jul 9, 2026): The New York Times and allied publishers filed a
+      motion in SDNY seeking sanctions against OpenAI for "deliberate and systemic effort to
+      obstruct discovery." Key allegations:
+        - OpenAI falsely told the court it could NOT search its LLMs for copyrighted material,
+          while hiding that it had done so "even before the first News Plaintiff filed suit"
+        - OpenAI deleted BILLIONS of relevant ChatGPT conversations or made them unsearchable
+        - Plaintiffs seek attorneys' fees and adverse inference (court finding that deleted logs
+          showed OpenAI misused copyrighted works)
+      OpenAI response: "As the Times' case weakens and they've been forced to drop claims
+      against us, they're persisting with their efforts to invade the privacy of people who
+      have nothing to do with this case."
+      
+      ATLANTIC ANALYTICAL SIGNIFICANCE: The Atlantic's licensing partner (OpenAI) is now
+      accused of lying to a federal court about its content-searching capabilities — the very
+      capabilities that determine HOW Atlantic's licensed content is used in ChatGPT training
+      and output. If OpenAI can search its systems for specific publisher content (as the
+      sanctions motion alleges), then OpenAI has the technical ability to identify Atlantic
+      content in its outputs — making the licensing deal's terms directly auditable. The
+      Atlantic has shown no interest in requesting such an audit despite its union's 2024
+      demand for deal transparency. This creates an asymmetry: NYT is forcing disclosure
+      through litigation while Atlantic accepts opacity through licensing.
+    evidence: "Reuters (Jul 9 2026), Bloomberg Law (Jul 9 2026), SDNY Case No. 1:23-cv-11195."
+    source_urls:
+      - "https://reuters.com/legal/new-york-times-led-group-asks-court-sanction-openai-us-copyright-dispute-2026-07-09/"
+      - "https://news.bloomberglaw.com/ip-law/new-york-times-seeks-sanctions-for-openai-in-copyright-case"
   - type: "union_bargaining_dispute"
     description: >
       Atlantic Union (NewsGuild of New York) demanded transparency on OpenAI deal terms (May 30,
@@ -1117,12 +1181,39 @@ editorial_history:
   ownership_change:
     - event: "Emerson Collective acquisition"
       date: "2017-07"
-      notes: "Laurene Powell Jobs' Emerson Collective acquired majority stake from David G. Bradley (who retained minority, still held as of 2020). Peter Lattman (Emerson Collective staffer) named vice chairman immediately. LPJ holds ~$16.8B in Apple stock AND ~$4.01B+ in Disney stock (Meta competitors). Key question: did coverage tone toward Apple/Disney competitors change after this ownership change?"
+      notes: "Laurene Powell Jobs' Emerson Collective acquired majority stake from David G. Bradley (who retained minority, still held as of 2020). Peter Lattman (Emerson Collective staffer) named vice chairman immediately. LPJ holds ~$17.2B in Apple stock AND ~$3.87B+ in Disney stock (Meta competitors). Key question: did coverage tone toward Apple/Disney competitors change after this ownership change?"
     - event: "Nicholas Thompson named CEO"
       date: "2020-12"
       notes: "Former Wired EIC hired as CEO. Creates direct Condé Nast editorial culture bridge. Under Thompson: profitability achieved, record subscriptions (1.4M+ by Feb 2026), 3 Pulitzer Prizes, OpenAI licensing deal (May 2024). Revenue over $100M. Also poached ~20 journalists from Washington Post."
 
 notes: |
+  UPDATED 2026-07-09: Type C ownership deep dive — stock price revaluation, NYT v. OpenAI
+  sanctions motion (filed today), OpenAI IPO context, GPT-5.6 launch, government equity proposal.
+
+  STOCK PRICE UPDATES (Jul 9, 2026):
+  - AAPL: $316.22 (up from $308.63 on Jul 3 — +2.46%). LPJ holding ~$17.2B+.
+  - DIS: $96.17 (down from $99.50 on Jul 2 — -3.35%). 2016-era 40.3M shares = ~$3.87B.
+  - DIS market cap: $168.23B (down from $172.78B).
+  - AAPL market cap: $4.62T (up from $4.53T).
+  - RDDT: $200.31 intraday (up from $195.47 close Jul 8 — +2.48%). Cross-ref: Advance/Wired.
+
+  NYT SANCTIONS MOTION (Jul 9, 2026):
+  NYT-led publishers filed sanctions motion against OpenAI alleging "deliberate and systemic
+  effort to obstruct discovery." Claims OpenAI lied about ability to search its systems for
+  copyrighted content, deleted billions of ChatGPT conversations. Atlantic's licensing partner
+  is now accused of lying to a federal court about the very content-search capabilities that
+  determine how Atlantic's licensed content is handled. Atlantic shows no interest in auditing
+  its own deal despite having the same underlying concern (unauthorized content use).
+
+  OPENAI IPO & SCALE (Jul 2026):
+  - $852B private valuation (Mar 2026, Amazon/NVIDIA/SoftBank anchor)
+  - Revenue: ~$2B/month, 900M+ weekly users
+  - Confidential IPO filing June 2026, >$1T target (may delay to 2027)
+  - BofA $520M credit line (Jul 8)
+  - GPT-5.6 (Sol/Terra/Luna) US gov-approved for public launch Jul 10
+  - 5% government equity proposal (~$42.6B) under discussion with Trump admin
+  - Anthropic has surpassed OpenAI: $965B-$1.09T valuation, $30-47B ARR
+
   UPDATED 2026-07-05: Type C ownership deep dive — The Atlantic / Emerson Collective.
 
   LPJ TITLE CLARIFICATION: Multiple authoritative sources (Stanford GSB, Wikipedia, CFR,
@@ -1142,9 +1233,9 @@ notes: |
   Facebook's Chris Cox — rare cooperative financial link between EC and a senior Meta
   executive, complicating the clean adversarial narrative.
 
-  STOCK PRICE UPDATES (Jul 2026):
-  - AAPL: $308.63 (Jul 3) up from $294.30 (Jun 24) — +4.87%. LPJ holding ~$16.8B+.
-  - DIS: $99.50 (Jul 2) up from $95.71 (Jun). 2016-era 40.3M shares = ~$4.01B.
+  STOCK PRICE UPDATES (Jul 9 2026):
+  - AAPL: $316.22 (Jul 9) up from $308.63 (Jul 3) — +2.46%. LPJ holding ~$17.2B+.
+  - DIS: $96.17 (Jul 9) down from $99.50 (Jul 2) — -3.35%. 2016-era 40.3M shares = ~$3.87B.
 
   UPDATED 2026-06-28: The Atlantic is now the MOST DENSELY FINANCIALLY CONFLICTED
   publication in the 5-publication tracking set per entity (Meta/OpenAI/Apple).
@@ -1208,16 +1299,16 @@ notes: |
   1. Receives ongoing licensing revenue from OpenAI (since May 2024)
   2. Realized a capital gain from OpenAI via the io Products exit (2025)
   3. Invested in io Products (Jony Ive's AI device), which competes with BOTH
-     Meta (smart glasses) and Apple (where LPJ holds $16.8B+ stock)
+     Meta (smart glasses) and Apple (where LPJ holds $17.2B+ stock)
 
   This triple-entanglement is UNIQUE among tracked publications. Not even the NYT
   (Amazon deal, OpenAI lawsuit) has an owner that both receives licensing revenue
   from AND has an equity exit through the same AI company.
 
   EMERSON COLLECTIVE INVESTMENT PORTFOLIO (expanded 2026-06-25):
-  - Apple stock (~$16.8B+, via LPJ Trust, AAPL $308.63 Jul 3 2026) — competes with Meta
+  - Apple stock (~$17.2B+, via LPJ Trust, AAPL $316.22 Jul 9 2026) — competes with Meta
   - LoveFrom backing (2019) → io Products → OpenAI exit ($6.5B, 2025) — competes with Meta AND Apple
-  - Disney stock (~$4.01B+ at 2016 position, DIS $99.50 Jul 2 2026) — competes with Meta
+  - Disney stock (~$3.87B+ at 2016 position, DIS $96.17 Jul 9 2026) — competes with Meta
   - Mistral AI ($415M/$640M rounds) — open-source LLM competitor to Meta's Llama
   - World Labs ($1B round) — 3D AI, competes with Meta
   - X-Energy ($700M Series C, Feb 2025, co-invested with AMAZON) — nuclear SMR, competes with Meta via Amazon alignment
