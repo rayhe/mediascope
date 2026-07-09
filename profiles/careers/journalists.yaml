@@ -12088,3 +12088,183 @@ journalists:
   - https://talkingbiznews.com/they-re-hiring/the-verge-hires-robison-to-cover-artificial-intelligence/
   - https://talkingbiznews.com/media-news/fortunes-robison-departing-for-new-opportunity/
   - https://talkingbiznews.com/media-news/robison-joins-vances-core-media/
+
+- career:
+  - beat: general
+    end: '2011'
+    event_type: intern
+    notes: Internship at alternative weekly newspaper in San Antonio. First journalism role after starting at Trinity University.
+    publication: san-antonio-current
+    role: intern
+    source_url: https://en.wikipedia.org/wiki/Ashley_Feinberg
+    start: '2011'
+  - beat: technology, internet culture
+    end: '2015'
+    event_type: hired
+    notes: 'Editorial assistant at Gizmodo (G/O Media, formerly Gawker Media). Started 2013. Her first post-college job.
+      Drew attention with a how-to about the "creepiest things you can do on Facebook" — tagging yourself in someone
+      else''s engagement photo, requesting a relationship status. The Gawker Media system encouraged cross-site splicing
+      and a competitive, mischievous editorial culture. Promoted out to Gawker proper after ~2 years.'
+    publication: gizmodo
+    role: editorial_assistant
+    source_url: https://en.wikipedia.org/wiki/Ashley_Feinberg
+    start: '2013'
+  - beat: politics, internet culture, media
+    end: '2016'
+    event_type: hired
+    notes: 'Staff writer then senior writer at Gawker. Core Gawker voice — John Cook (executive editor) described her
+      as "sort of an anti-troll... She uses the weapons of the troll for the forces of good." Columbia Journalism Review
+      called her "a digital-era Andy Kaufman." Broke Josh Duggar Ashley Madison story (Aug 2015). Gawker shut down
+      Aug 2016 after Hulk Hogan/Peter Thiel lawsuit. Known for cheerful misanthropy and internet sleuthing.'
+    publication: gawker
+    role: staff_writer
+    source_url: https://en.wikipedia.org/wiki/Ashley_Feinberg
+    start: '2015'
+  - beat: digital investigations, politics
+    end: 2017-05
+    event_type: hired
+    notes: 'Returned to Gizmodo after Gawker shutdown. Senior reporter on digital investigations team (Special Projects
+      Desk, led by John Cook). March 2017: discovered FBI director James Comey''s secret Twitter and Instagram accounts
+      by tracing the pseudonym "Reinhold Niebuhr" (subject of Comey''s college thesis). Comey confirmed later that year.
+      Forbes 30 Under 30 honoree. Departed for Wired May 2017.'
+    publication: gizmodo
+    role: senior_reporter
+    source_url: https://talkingbiznews.com/media-news/wired-hires-feinberg-to-cover-politics-and-culture/
+    start: 2017-01
+  - beat: politics, internet culture
+    end: 2017-10
+    event_type: hired
+    notes: 'Senior writer covering politics and internet culture, writing across all Wired sections. NYC office. First
+      day May 30, 2017. Hired during Noah Shachtman era (EIC 2017-2021), before Katie Drummond. EXTREMELY SHORT TENURE
+      (~5 months). Gizmodo''s John Cook farewell: "No blogger embodies the character of Gawker Media and its heirs,
+      successors, or assigns more than Ashley." Departed for HuffPost October 2017. This is one of the earliest
+      Gizmodo → Wired pipeline hires, predating Drummond era, and its brevity suggests possible culture mismatch
+      even under Shachtman.'
+    publication: wired
+    role: senior_writer
+    source_url: https://talkingbiznews.com/media-news/wired-hires-feinberg-to-cover-politics-and-culture/
+    start: 2017-05
+  - beat: politics, media, internet culture
+    end: 2019-05
+    event_type: hired
+    notes: 'Joined HuffPost October 2017. Continued internet-sleuthing political journalism. Controversial November
+      2017 tweet about John McCain''s brain cancer drew significant criticism; she apologized and deleted it. Known
+      for an ironized, combative online persona.'
+    publication: huffpost
+    role: reporter
+    source_url: https://en.wikipedia.org/wiki/Ashley_Feinberg
+    start: 2017-10
+  - beat: politics, media, investigations
+    event_type: hired
+    notes: 'Joined Slate May 2019. Continued signature internet-sleuthing scoops: identified Mitt Romney''s secret
+      Twitter account ("Pierre Delecto"), Pete Buttigieg''s anonymous social media presence. Washington Post profiled
+      her investigation methodology (Dec 2019). Slate is owned by The Slate Group (Graham Holdings Co. / Donald Graham
+      family). Current status at Slate unclear — may still be there or freelancing.'
+    publication: slate
+    role: staff_writer
+    source_url: https://en.wikipedia.org/wiki/Ashley_Feinberg
+    start: 2019-05
+  multi_publication: true
+  name: Ashley Feinberg
+  notes: 'Key migration: Gizmodo/Gawker → Wired (5 months) → HuffPost → Slate. One of the most distinctive voices in
+    the Gawker Media orbit — internet sleuth who uncovered public figures'' secret social media accounts (James Comey,
+    Mitt Romney, Pete Buttigieg). Trinity University BA (English and Communication, 2012). Forbes 30 Under 30. Dallas
+    native. KEY FOR MEDIASCOPE: (1) One of the EARLIEST Gizmodo → Wired pipeline hires (May 2017), predating Drummond
+    era (Shachtman was EIC). Her 5-month tenure is the shortest documented Wired stint after Kylie Robison (6-7 months).
+    (2) Her career arc (Gawker → Gizmodo → Wired → HuffPost → Slate) traces the post-Gawker diaspora that seeded
+    adversarial internet-culture journalism across mainstream publications. (3) John Cook — who wrote her Gizmodo farewell
+    — went on to become executive editor of The Intercept and later returned to the Gawker-successor ecosystem; his
+    editorial network is a significant vector for framing culture. (4) Her ironized, anti-institutional persona is the
+    purest expression of what Drummond later institutionalized at Wired — but she preceded Drummond by 4 years. (5) The
+    brevity of her Wired stint (even under the less adversarial Shachtman) suggests Condé Nast corporate culture and
+    Gawker-style internet journalism were already a poor fit, which makes Drummond''s subsequent success in hiring from
+    the same pipeline all the more notable as a deliberate editorial strategy rather than a natural talent flow.'
+  source_urls:
+  - https://en.wikipedia.org/wiki/Ashley_Feinberg
+  - https://talkingbiznews.com/media-news/wired-hires-feinberg-to-cover-politics-and-culture/
+  - https://mediagazer.com/
+  - https://cjr.org/
+- career:
+  - beat: editorial, arts, fashion
+    end: '2014'
+    event_type: hired
+    notes: 'Worked on editorial team at Bullett Magazine, a NYC-based publication covering art, music, and fashion.
+      Post-graduation role after Mount Holyoke. Also briefly in Turkey before moving to NYC.'
+    publication: bullett-magazine
+    role: editorial
+    source_url: https://nycitylens.com/author/tessaowen/
+    start: '2013'
+  - beat: local news, social justice, courts
+    end: '2015'
+    event_type: hired
+    notes: 'Columbia University Graduate School of Journalism, MA in Journalism (2014-2015). Reported for NY City
+      Lens covering Manhattan — courts, crime, immigration, social justice. Canadian-born, British-raised background.'
+    publication: columbia-journalism-school
+    role: student_reporter
+    source_url: https://nycitylens.com/author/tessaowen/
+    start: '2014'
+  - beat: extremism, terrorism, politics, crime
+    end: '2020'
+    event_type: hired
+    notes: 'Reporter at VICE News, starting 2015 shortly after Columbia graduation. Covered extremism, terrorism,
+      far-right movements, hate crimes, protests, disinformation. Part of VICE''s core news team during its expansion
+      period (pre-bankruptcy). ~5 year tenure as reporter before promotion to senior reporter.'
+    publication: vice-news
+    role: reporter
+    source_url: https://rocketreach.co/tess-owen-email_68780960
+    start: '2015'
+  - beat: extremism, politics, disinformation, crime, policing
+    end: '2024'
+    event_type: promoted
+    notes: 'Promoted to senior reporter at VICE Media. Continued covering extremism, far-right movements, protest
+      dynamics, political violence, disinformation. Covered Charlie Kirk shooting aftermath (Sep 2025 — published
+      in The Guardian), far-right commentators echoing Trump''s "vengeance and retribution" rhetoric. Departed
+      when VICE collapsed after bankruptcy/sale to Fortress Investment Group consortium. ~4 year tenure as senior
+      reporter. Also published freelance in New Yorker, NY Magazine, Guardian during this period.'
+    publication: vice-media
+    role: senior_reporter
+    source_url: https://rocketreach.co/tess-owen-email_68780960
+    start: '2020'
+  - beat: investigations, politics, disinformation
+    end: '2025'
+    event_type: hired
+    notes: 'Brief stint at Wired after Vice collapse. Exact start date unclear (likely late 2024 or early 2025).
+      Talkingbiznews described her as having "worked most recently at Wired" when announcing her WSJ hire.
+      Covered similar beats — investigations, features spanning extremism, politics, disinformation, crime and
+      policing. Part of the Vice → Wired pipeline under Drummond era, though her tenure was brief.'
+    publication: wired
+    role: reporter
+    source_url: https://talkingbiznews.com/media-news/wsj-hires-owen-as-senior-video-journalist/
+    start: '2024'
+  - beat: investigations, politics, extremism
+    event_type: hired
+    notes: 'Hired as senior video journalist at the Wall Street Journal. Wired → WSJ migration. Known for incredible
+      reporting skill spanning investigations and features. Covers extremism, politics, disinformation, crime and
+      policing. Based in New York. Her move to WSJ (Dow Jones / News Corp) represents a significant pipeline shift:
+      Vice adversarial culture → Wired (Condé Nast) → WSJ (News Corp business journalism) — three very different
+      institutional cultures and editorial norms.'
+    publication: wall-street-journal
+    role: senior_video_journalist
+    source_url: https://talkingbiznews.com/media-news/wsj-hires-owen-as-senior-video-journalist/
+    start: '2025'
+  multi_publication: true
+  name: Tess Owen
+  notes: 'Key migration: Vice News/Media → Wired (brief) → WSJ. Extremism, politics, and disinformation specialist
+    with ~9 years at Vice (2015-2024), brief stint at Wired (2024-2025), now at WSJ. Education: Mount Holyoke College
+    BA Literature (2010-2012), Université Paris Sorbonne (2007), Columbia J-School MA (2014-2015). Canadian-born,
+    British-raised. Also published in New Yorker, NY Magazine, Guardian. KEY FOR MEDIASCOPE: (1) Part of the Vice →
+    Wired pipeline under Drummond — Vice Media''s collapse (bankruptcy, Fortress acquisition) scattered its editorial
+    talent across mainstream outlets, and Wired absorbed several (Owen, Manisha Krishnan senior editor from VICE/CNN/
+    Guardian, etc.). (2) Her Wired → WSJ migration creates a natural experiment for DiD analysis: did her framing
+    shift when moving from Condé Nast adversarial culture to Dow Jones/News Corp business journalism norms? (3) Her
+    transition from print/digital reporting to "senior video journalist" at WSJ reflects the broader industry pivot
+    from text to video, with implications for how investigative framing translates across media formats. (4) Brief
+    Wired tenure (likely <1 year) echoes the pattern of short stays seen with Robison (6-7 months) and Feinberg
+    (5 months) — raising questions about whether Wired''s editorial culture under Drummond creates high turnover among
+    experienced reporters, or whether these journalists use Wired as a stepping stone.'
+  source_urls:
+  - https://talkingbiznews.com/media-news/wsj-hires-owen-as-senior-video-journalist/
+  - https://rocketreach.co/tess-owen-email_68780960
+  - https://nycitylens.com/author/tessaowen/
+  - https://buzzsumo.com/journalist/tess-owen/vice-com/
+  - https://muckrack.com/tess-a-owen/articles

@@ -1729,3 +1729,60 @@ editorial_changes:
     outgoing: Kylie Robison
     position: senior_correspondent_ai_business_departure
     source_url: https://talkingbiznews.com/media-news/robison-joins-vances-core-media/
+  - date: 2017-05-30
+    incoming: Ashley Feinberg
+    outgoing: null
+    position: senior_writer_politics_culture
+    notes: 'PRE-DRUMMOND Gizmodo → Wired pipeline hire. Feinberg hired as senior writer covering politics and
+      internet culture, writing across all Wired sections. NYC office. Hired during Noah Shachtman era (EIC 2017-2021).
+      From Gizmodo digital investigations team (Special Projects Desk). John Cook farewell described her as embodying
+      "the character of Gawker Media." Known for internet-sleuthing scoops (Comey Twitter, Josh Duggar). Forbes 30
+      Under 30. EXTREMELY BRIEF TENURE: departed for HuffPost after only ~5 months — the shortest known Wired stint
+      until Kylie Robison (6-7 months, 2025). Significance: earliest documented Gizmodo → Wired migration, predating
+      Drummond by 4 years, and its failure suggests Condé Nast/Gawker culture mismatch was structural, not
+      Drummond-specific.'
+    source_url: https://talkingbiznews.com/media-news/wired-hires-feinberg-to-cover-politics-and-culture/
+  - date: 2017-10
+    incoming: null
+    outgoing: Ashley Feinberg
+    position: senior_writer_politics_culture_departure
+    notes: 'Feinberg departed for HuffPost after only ~5 months at Wired. Left under Shachtman era. One of the
+      shortest tenures in Wired''s modern editorial history. Went on to Slate (May 2019) where she continued her
+      signature internet-sleuthing scoops (Mitt Romney''s secret Twitter "Pierre Delecto", Pete Buttigieg''s anon
+      social media). The brevity foreshadows the pattern that would intensify under Drummond: experienced reporters
+      from adversarial-culture outlets (Gizmodo, Vice, Platformer) having short Wired tenures.'
+    source_url: https://en.wikipedia.org/wiki/Ashley_Feinberg
+  - date: '2024'
+    incoming: Tess Owen
+    outgoing: null
+    position: reporter_investigations
+    notes: 'Vice → Wired pipeline hire. Owen joined Wired after Vice Media collapsed (bankruptcy, Fortress sale).
+      ~9 years at Vice (2015-2024) covering extremism, far-right movements, political violence, disinformation,
+      crime and policing. Also published in New Yorker, NY Magazine, Guardian. Brief tenure — departed for WSJ
+      within approximately one year. Part of the Vice diaspora that scattered editorial talent across mainstream
+      outlets under Drummond era (alongside Manisha Krishnan from VICE/CNN/Guardian who joined as senior editor,
+      culture, Mar 2025).'
+    source_url: https://talkingbiznews.com/media-news/wsj-hires-owen-as-senior-video-journalist/
+  - date: '2025'
+    incoming: null
+    outgoing: Tess Owen
+    position: reporter_investigations_departure
+    notes: 'Owen departed Wired for WSJ (Dow Jones/News Corp) as senior video journalist. Brief Wired tenure
+      (<1 year). Her Vice → Wired → WSJ migration spans three distinct institutional cultures: Vice adversarial
+      digital-native → Condé Nast prestige adversarial → Dow Jones business journalism. Creates a natural experiment
+      for DiD analysis of framing evolution across institutional contexts. The move to "senior video journalist"
+      also reflects the broader text-to-video pivot in investigative journalism.'
+    source_url: https://talkingbiznews.com/media-news/wsj-hires-owen-as-senior-video-journalist/
+  - date: 2025-12
+    incoming: null
+    outgoing: null
+    position: uk_print_cancellation
+    notes: 'STRUCTURAL: Wired cancelled UK print edition effective 2026. Seven editorial staff left London office
+      at end of 2025. Team rebuilt to focus on audience development roles and UK/Europe-focused reporting. Drummond
+      told Press Gazette: "creating a sustainable and growing subscription business is the future of Wired." Direct
+      subscribers up 20% in 2025, digital-only subscribers doubled. Isabella Ward (Bloomberg, Jun 2026) and deputy
+      editor Rosie Swash (Guardian veteran) are the two editorial hires rebuilding Wired UK presence post-cancellation.
+      Part of broader Condé Nast digital transformation: Pitchfork absorbed into GQ, Bon Appétit layoffs, Vogue
+      podcast team let go. Print cancellation eliminates a revenue stream and editorial identity pillar, pushing
+      Wired further toward subscription-funded digital journalism model.'
+    source_url: https://talkingbiznews.com/media-news/wired-pulls-plug-on-uk-print-edition/
