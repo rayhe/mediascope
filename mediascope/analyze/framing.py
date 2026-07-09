@@ -2213,6 +2213,21 @@ _PRECEDENT_ANALOGY_PATTERNS.extend([
         r"\bwhat\s+followed\s+was\b.{3,100}",
         re.IGNORECASE,
     ),
+    # Enforcement precedent: "resulting in [consequence] for [entities],
+    # particularly/especially [Entity]" — citing a prior enforcement
+    # outcome against a named entity to contextualize the current subject.
+    # Discovered via Reuters French antitrust vs Meta article (Jul 8, 2026):
+    #   "resulting in large fines in recent years for tech companies,
+    #    particularly Alphabet's Google"
+    re.compile(
+        r"\b(?:resulting in|leading to|prompting|producing|triggering)\s+"
+        r"(?:large |big |heavy |hefty |significant |substantial |massive |record )?"
+        r"(?:fines?|penalties?|sanctions?|lawsuits?|litigation|rulings?|settlements?)"
+        r".{3,80}?"
+        r"\b(?:particularly|especially|notably|most notably|including|"
+        r"such as|like)\s+(?:[A-Z][\w'-]+)",
+        re.IGNORECASE | re.DOTALL,
+    ),
 ])
 
 
@@ -4380,6 +4395,18 @@ _ESCALATION_AMPLIFICATION_PATTERNS: list[re.Pattern] = [
         r"discontent|resentment)s?\b",
         re.IGNORECASE,
     ),
+    # "a growing/mounting/rising/increasing number of [noun]" — trend-
+    # magnification phrase that editorially amplifies perceived momentum
+    # by framing isolated events as part of an accelerating trend.
+    # Discovered via Reuters French antitrust vs Meta article (Jul 8, 2026):
+    #   "one of a growing number between publishers and tech companies"
+    re.compile(
+        r"\b(?:a |the )?(?:growing|mounting|rising|increasing|expanding|"
+        r"swelling|accelerating|ever.?growing|ever.?rising)\s+"
+        r"(?:number|wave|list|chorus|tide|flood|avalanche|drumbeat|"
+        r"pile|body|litany|array)\s+(?:of|between|among|involving)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["escalation_amplification"] = _ESCALATION_AMPLIFICATION_PATTERNS
@@ -5925,6 +5952,35 @@ _COMPETITIVE_DEFICIT_PATTERNS: list[re.Pattern] = [
         r"Samsung|Nvidia|xAI|Mistral|DeepSeek)\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # "acknowledges/admits defeat" or "concedes defeat" — explicit defeat
+    # language framing a company's strategy as failed.
+    # Discovered in IBD article (Jul 8, 2026): "once Meta acknowledges defeat
+    # in the frontier model race" was not detected.
+    re.compile(
+        r"\b(?:acknowledge(?:s|d)?|admit(?:s|ted)?|concede(?:s|d)?|accept(?:s|ed)?)"
+        r"\s+(?:defeat|failure|loss|its (?:defeat|failure|loss|limitations?))\b",
+        re.IGNORECASE,
+    ),
+    # "[wants/needs/trying/racing] to catch up [to/with] [Competitor]" —
+    # deficit framing without the "failed/struggling" prefix required by the
+    # first pattern.  Discovered in IBD article (Jul 8, 2026): "wants its
+    # models to catch up to the capabilities of Anthropic, OpenAI and Google."
+    re.compile(
+        r"\b(?:wants?|needs?|trying|racing|scrambling|rushing|hoping|seeking)\s+"
+        r"(?:\w+\s+){0,4}?(?:to\s+)?catch\s+up\s+(?:to|with)\s+"
+        r"(?:the\s+)?(?:capabilities|offerings|models|products|performance)?\s*"
+        r"(?:of\s+)?"
+        r"(?:OpenAI|Google|Anthropic|Apple|Microsoft|Amazon|"
+        r"Samsung|Nvidia|xAI|Mistral|DeepSeek)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "fill the vacuum" — competitive vacuum framing implying a company has
+    # left a gap that others must now occupy.
+    re.compile(
+        r"\b(?:fill(?:ing)?|step(?:ping)? into|mov(?:e|ing) into)\s+"
+        r"(?:the |a )?(?:vacuum|void|gap|space)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["competitive_deficit"] = _COMPETITIVE_DEFICIT_PATTERNS
@@ -6892,14 +6948,44 @@ _DEFAULT_BURDEN_PRIVACY_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["default_burden_privacy"] = _DEFAULT_BURDEN_PRIVACY_PATTERNS
 
 
+# ── editorial_cross_promotion ──────────────────────────────────────────
+# Detects inline promotional links or all-caps editorial callout blocks
+# embedded in article body text.  Common in Fox News/Fox Business, NY Post,
+# and other News Corp properties where related coverage is inserted as
+# all-caps interstitial headlines.  These blocks serve two editorial
+# functions: (1) they interrupt the reader's flow to drive clicks to
+# related coverage, and (2) they import the framing of the linked
+# headline into the current article's narrative.
+#
+# Gap discovered in Fox Business Meta $1.4T penalty article (Jul 2026):
+# "JUDGE LETS STATES PURSUE CLAIMS THAT META DESIGNED FACEBOOK AND
+# INSTAGRAM TO ADDICT CHILDREN" appeared as a standalone all-caps block
+# mid-article, importing the adversarial framing of a prior article's
+# headline into otherwise balanced business reporting.
+# ────────────────────────────────────────────────────────────────────────
+_EDITORIAL_CROSS_PROMO_PATTERNS: list[re.Pattern] = [
+    # All-caps blocks of 5+ words in article body (editorial callouts)
+    re.compile(
+        r"(?:^|\n)\s*([A-Z][A-Z\s'''\-]{20,}[A-Z])\s*(?:\n|$)",
+        re.MULTILINE,
+    ),
+    # "CLICK HERE TO GET THE FOX BUSINESS APP" / "GET FOX BUSINESS ON THE GO"
+    re.compile(
+        r"\b(?:CLICK HERE|GET|DOWNLOAD|READ MORE|WATCH)\b.{5,80}"
+        r"\b(?:APP|ON THE GO|NEWSLETTER|FULL STORY)\b",
+    ),
+]
+_DEVICE_PATTERNS["editorial_cross_promotion"] = _EDITORIAL_CROSS_PROMO_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 76 pattern-matched device types plus 7 structural
-    post-pass types (83 total).
+    Scans for 77 pattern-matched device types plus 7 structural
+    post-pass types (84 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
@@ -6942,7 +7028,8 @@ def detect_framing_devices(
     two_tier_treatment, usage_dismissal_undercut,
     valuation_comparison, worker_replacement_irony,
     narrative_reframing, dismissive_qualifier,
-    bull_bear_structuring, and analyst_authority.
+    bull_bear_structuring, analyst_authority,
+    and editorial_cross_promotion.
 
     Structural post-pass (7): delayed_defense, kicker_framing,
     analogy_stacking, speculative_framing, trend_bundling,

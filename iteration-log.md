@@ -148,6 +148,7 @@ Article snippets based on real sources: Reuters, Barron's, Wired, MIT Tech Revie
 - `topic_classification_demo.py` runs successfully: 13/13 topic classifications correct
 
 ### Commit
+`97e276c` — Fix 'The Information' false positive, add content_licensing topic (28th), French Media Associations entity cluster, acronym org source extraction
 `983badf` — Type D: Topic classification demo + N-way comparison schema + Agent Guide improvements
 
 ## 2026-07-08 04:00 PT — Type B: Journalist/Publication Research (4 New Profiles: Williams, Bernal, Reynolds, Fussell)
@@ -16758,3 +16759,109 @@ Reuters wire article: "French antitrust watchdog orders Meta to resume talks wit
 - **Annotated articles:** 128 (from 127)
 
 ### Commit
+
+## Iteration: 2026-07-08 19:00 PT — Type A (Article Deep Dive)
+
+**Article:** IBD "'Sticker Shock' Powers Open-Source AI Growth. What It Means For Top AI Stocks." (Jul 8, 2026)
+**Analyst:** D.A. Davidson, Gil Luria
+
+### Improvements
+
+#### 1. Framing: 3 New competitive_deficit Patterns
+- `acknowledges/admits/concedes defeat/failure` + `accepts its limitations`
+- `wants/needs/racing to catch up to/with [Competitor]`
+- `fill/step into the vacuum/void/gap`
+- **Context:** Article used all three devices to frame Meta's AI position. Previously undetected.
+
+#### 2. Source Extraction: Single-Surname Affiliation Fix (Pattern 5b/5c)
+- **Bug:** "Luria said" matched Pattern 5b (surname + verb). Local 100-char context window contained "of Anthropic" → affiliation = "Anthropic" (wrong). Full-text introduction "D.A. Davidson analyst Gil Luria" was not consulted.
+- **Root cause:** Pattern 5b handler used `_extract_affiliation(context) or _extract_affiliation_full_text(text, name)` — local context took priority. The prior edit (earlier in this iteration) was mistakenly applied to Pattern 3b's handler at line ~960 instead of Pattern 5b at line ~1087.
+- **Fix:** Reversed precedence in Pattern 5b AND 5c: `_extract_affiliation_full_text(text, name) or _extract_affiliation(context)`. Also added `_is_expert_full_text` to Pattern 5c (was missing).
+
+#### 3. Source Extraction: Conditional Organizational Source Filter
+- **Bug:** "once Meta acknowledges defeat" produced a false organizational source for Meta. The "acknowledges" verb matched the org-source pattern, but the statement is speculative (conditional "once").
+- **Fix:** Before org-source match, check 30 chars preceding for conditional/speculative qualifiers: `once|if|when|should|could|would|might|unless|until|before|after|whether`. Skip match if found.
+
+#### 4. Entity Detection: Analyst Firms Added to Financial Services
+- D.A. Davidson, Needham, Jefferies, Wedbush, Piper Sandler, Baird, Morningstar, Cowen
+- Both keyword list and regex patterns updated.
+
+#### 5. Tests & Documentation
+- 17 new regression tests in `test_ibd_sticker_shock.py`
+- Pattern count: 470 → 473 (structural consistency test + README)
+- Annotated articles: 128 → 129
+- Test count: 1,844 → 1,861 across 80 test files (was 79)
+
+#### 6. Topic Gap Identified (Not Fixed)
+- Article scores `ai_development: 0.079` — very weak for an article primarily about enterprise AI cost dynamics and open-source model strategy. Keywords are weighted toward technical AI terms; enterprise/economic AI language is underrepresented.
+
+### Stats After This Iteration
+- **Tests:** 1,861 (from 1,844)
+- **Test files:** 80 (from 79)
+- **Regex patterns:** 473 (from 470)
+- **Annotated articles:** 129 (from 128)
+
+### Commit
+
+---
+
+## 2026-07-08 19:00 PT — Type A (Article Deep Dive)
+
+### Focus
+Reuters: "French antitrust watchdog orders Meta to resume talks with media groups over publishing fees" (Jul 8, 2026). Tests the newly added `content_licensing` topic bucket and validates two new framing devices.
+
+### What Changed
+
+#### 1. New Framing Device: `escalation_amplification`
+- **What:** Detects trend magnification language — "a growing/mounting/rising/increasing/expanding/swelling/ever-growing number of/tide of/wave of/chorus of/body of/list of"
+- **Why:** Reuters article uses "a growing number of disputes between publishers and tech companies" to amplify the scope of the conflict beyond the specific French case
+- **Patterns:** 4 regex patterns added to `mediascope/analyze/framing.py`
+
+#### 2. New Framing Device: `precedent_analogy`
+- **What:** Detects enforcement precedent citing — "resulting in/leading to/triggering [consequence]... particularly/especially/notably/including [Entity]"
+- **Why:** Article frames Meta's exposure by citing Google's prior penalties: "resulting in large fines... particularly Alphabet's Google"
+- **Patterns:** 10 regex patterns added to `mediascope/analyze/framing.py`
+
+#### 3. Toolkit Validation
+- **Topics:** `content_licensing: 1.000` (primary), `antitrust_regulation: 0.353`, `litigation: 0.191` — all correct
+- **Entities:** Meta (7), DVP (5), APIG (4), France's competition authority (1), Le Monde (1), Les Echos (1), Alphabet (1), Google (1) — all correctly clustered
+- **Sources:** Benoit Coeure (named), Meta (org), DVP (org) — correct
+- **Framing:** 3 devices detected (escalation_amplification, precedent_analogy, expert_consensus_authority) — consistent with Reuters' restrained wire style
+
+#### 4. Tests & Documentation
+- 23 test methods (37 pytest-collected with parametrize) in `test_reuters_french_antitrust_jul8.py`
+- Parametrized variants for both new framing devices (positive + negative cases)
+- Pattern count: 473 → 475 (structural consistency test updated)
+- Annotated articles: 129 → 130 (analysis + article text in `examples/sample_output/`)
+- All doc counts updated: ARCHITECTURE.md, README.md, METHODOLOGY.md, QUALITY_STANDARDS.md
+- Test file listing added to ARCHITECTURE.md file tree + README.md test table
+
+### Stats After This Iteration
+- **Tests:** 1,898 (from 1,861)
+- **Test files:** 81 (from 80)
+- **Regex patterns:** 475 (unchanged from earlier today)
+- **Annotated articles:** 130 (from 129)
+- **Framing device types:** 83 (unchanged — escalation_amplification and precedent_analogy were added earlier in this session and already included in the 83 count)
+
+### Commit
+
+---
+
+### 2026-07-08 20:00 PT — Type A (Article Deep Dive)
+
+**Focus:** Fox Business Meta $1.4T penalty article (Jul 7, 2026)
+
+**Changes:**
+- New framing device: `editorial_cross_promotion` (84th total, 77th pattern-matched) — detects all-caps interstitial blocks and CTA blocks ("CLICK HERE"/"GET"/"DOWNLOAD"/"READ MORE"/"WATCH" + APP/NEWSLETTER/FULL STORY)
+- New source pattern: `reached_out_for_comment` no_comment type — detects "reached out to...for comment/response/clarification" and "contacted...for comment/response/clarification"
+- Analysis file: `examples/sample_output/foxbusiness_meta_1_4t_penalty_2026_07_07_analysis.md`
+- Cross-pub comparison update: Fox Business added as 5th publication to existing cluster
+- Test file: `tests/test_foxbusiness_meta_1_4t_penalty.py` (14 def test_ methods, 16 pytest-collected with parametrize)
+
+**Stats:**
+- Tests: 1,898 → 1,914 (across 82 test files)
+- Framing device types: 83 → 84 (10 core + 67 extended + 7 structural)
+- Regex patterns: 475 → 477
+- Annotated articles: 130 → 131
+- Distinct publications: 42 → 43
+- Structural consistency: 97/97 passed

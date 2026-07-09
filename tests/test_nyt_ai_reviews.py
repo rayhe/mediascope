@@ -374,8 +374,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 76, (
-            f"Expected 76 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 77, (
+            f"Expected 77 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -502,6 +502,8 @@ class TestFramingDeviceRegistry:
             "analyst_authority",
             # Default burden privacy (1) — default-on features framed as consent violation
             "default_burden_privacy",
+            # Editorial cross-promotion (1) — all-caps interstitial blocks importing linked headline framing
+            "editorial_cross_promotion",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual

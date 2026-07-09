@@ -930,9 +930,11 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Capital One",
             "SWIFT", "Visa Direct", "Mastercard Send",
             "Bernstein", "Deloitte",
+            "D.A. Davidson", "Needham", "Jefferies", "Wedbush",
+            "Piper Sandler", "Baird", "Morningstar", "Cowen",
             "Berkshire Hathaway", "Warren Buffett", "Buffett",
         ],
-        "regex": r"(?<!\w)(Visa(?!\s+(?:application|interview|status|waiver|holder|stamp|fee|office|policy|requirement|process|categor))|Mastercard|American Express|(?-i:Amex)|Goldman Sachs|JPMorgan(?:\s+Chase)?|JP Morgan|Morgan Stanley|Bank of America|BofA(?:\s+Securities)?|Citigroup|(?-i:Citi)(?=\s+(?:is|was|has|had|'s|,|group|bank))|Wells Fargo|PayPal|Stripe(?=\s+(?:is|was|has|had|'s|,|payment|process|partner|integration|Inc|announced|said|report))|Square(?=\s+(?:is|was|has|had|'s|,|payment|terminal|reader|Inc|announced|said))|Block Inc|Adyen|Worldpay|Fiserv|(?-i:FIS)(?=\s+(?:is|was|has|had|payment|process|Global))|Discover Financial|Capital One|(?-i:SWIFT)(?=\s+(?:network|payment|transfer|system|code|message))|Visa Direct|Mastercard Send|Bernstein|Deloitte|Berkshire Hathaway|Warren Buffett|(?-i:Buffett)(?=\s+(?:is|was|has|had|'s|,|said|warned|portfolio|stake)))(?!\w)",
+        "regex": r"(?<!\w)(Visa(?!\s+(?:application|interview|status|waiver|holder|stamp|fee|office|policy|requirement|process|categor))|Mastercard|American Express|(?-i:Amex)|Goldman Sachs|JPMorgan(?:\s+Chase)?|JP Morgan|Morgan Stanley|Bank of America|BofA(?:\s+Securities)?|Citigroup|(?-i:Citi)(?=\s+(?:is|was|has|had|'s|,|group|bank))|Wells Fargo|PayPal|Stripe(?=\s+(?:is|was|has|had|'s|,|payment|process|partner|integration|Inc|announced|said|report))|Square(?=\s+(?:is|was|has|had|'s|,|payment|terminal|reader|Inc|announced|said))|Block Inc|Adyen|Worldpay|Fiserv|(?-i:FIS)(?=\s+(?:is|was|has|had|payment|process|Global))|Discover Financial|Capital One|(?-i:SWIFT)(?=\s+(?:network|payment|transfer|system|code|message))|Visa Direct|Mastercard Send|Bernstein|Deloitte|D\.A\.\s*Davidson|Needham|Jefferies|Wedbush|Piper\s+Sandler|Baird|Morningstar|Cowen|Berkshire Hathaway|Warren Buffett|(?-i:Buffett)(?=\s+(?:is|was|has|had|'s|,|said|warned|portfolio|stake)))(?!\w)",
     },
 }
 

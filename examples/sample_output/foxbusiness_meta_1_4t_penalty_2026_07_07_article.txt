@@ -1,0 +1,47 @@
+Source: Fox Business
+Title: Four states seeking $1.4 trillion in penalties in child social media addiction trial, Meta says
+Date: July 7, 2026
+URL: https://foxbusiness.com/technology/four-states-seeking-1-4-trillion-penalties-child-social-media-addiction-trial-meta-says
+Byline: Fox Business (uncredited individual author; Reuters contributed)
+Word count: ~450
+Genre: Business news report — litigation/regulatory coverage with Meta defense framing
+
+---
+
+Four states are seeking $1.4 trillion in penalties from Meta over claims that the social media giant designed Facebook and Instagram to be addictive to children and withheld information from the public about the harms the apps pose to young users, Meta said in a court filing on Monday.
+
+The case is being brought by California, Colorado, Kentucky and New Jersey. Meta disclosed the trillion-dollar figure in its response to the attorneys general filings on how penalties should be calculated if the states win at the trial set to begin next month in Oakland, California.
+
+The company said the number, which is near Meta's market capitalization of around $1.5 trillion, was not supported by the evidence.
+
+"A sanction of that size has no analog in the history of consumer protection enforcement," the company said in the filing.
+
+JUDGE LETS STATES PURSUE CLAIMS THAT META DESIGNED FACEBOOK AND INSTAGRAM TO ADDICT CHILDREN
+
+Fox Business reached out to Meta for further comment.
+
+The states' filings are sealed, but they said during a hearing last month that they were calculating the penalties by multiplying the number of violations by fine amounts established by state law. They said the number of violations is based on the estimated number of young users impacted by Meta's social media platforms.
+
+Nearly 30 states have sued Meta in federal court, with most of them claiming the company violated the federal Children's Online Privacy Protection Act by collecting data from children without proper parental consent.
+
+The trial will address all claims brought under that law, as well as the four states' allegations that the tech giant violated their state laws aimed at protecting consumers by misleading the public about the safety of their platforms.
+
+Meta has denied the allegations, saying the attorneys general lack evidence that it misled the public about its platforms' alleged addictiveness since social media addiction is not an established psychiatric condition.
+
+The company has also pushed back on accusations that it violated the Children's Online Privacy Protection Act because it marketed Facebook and Instagram to a wider audience and not only children under 13.
+
+GOOGLE'S YOUTUBE REACHES SETTLEMENT IN LAWSUIT ALLEGING CHILD SOCIAL MEDIA ADDICTION
+
+Another 14 states have brought claims under their own laws, which will be heard at a separate trial next year.
+
+Late last month, U.S. District Judge Yvonne Gonzalez Rogers rejected Meta's bid to dismiss the case, saying factual disputes remained over whether its social media platforms were addictive, whether the company falsely denied it designed them that way and whether it "partially" marketed the platforms towards children.
+
+"We strongly disagree with these allegations and are confident the evidence will show our longstanding commitment to supporting young people," a Meta spokesperson said in a statement to Fox Business at the time.
+
+Meta, Snapchat, YouTube and TikTok are facing thousands of lawsuits in both federal and state court over allegations they knowingly designed their platforms to be addictive to young users, contributing to a mental health crisis.
+
+New Mexico was the first state to go to trial, with a jury awarding it $375 million in March after finding Meta had misled consumers in the state.
+
+A judge in New Mexico is also weighing the second portion of the state's case, which asks for additional damages and a court order instructing the company to make changes to Facebook, Instagram and WhatsApp.
+
+Reuters contributed to this report.

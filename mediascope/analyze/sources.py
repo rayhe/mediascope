@@ -544,8 +544,8 @@ def extract_sources(text: str) -> list[SourceMention]:
         sources.append(SourceMention(
             name=name,
             is_anonymous=False,
-            is_expert=_is_expert_by_title(context),
-            affiliation=_extract_affiliation(context),
+            is_expert=_is_expert_by_title(context) or _is_expert_full_text(text, name),
+            affiliation=_extract_affiliation_full_text(text, name) or _extract_affiliation(context),
             quote=_extract_nearby_quote(text, m.start(), m.end()),
             attribution_verb=verb,
         ))
@@ -730,7 +730,7 @@ def extract_sources(text: str) -> list[SourceMention]:
             name=name,
             is_anonymous=False,
             is_expert=_is_expert_by_title(context) or _is_expert_full_text(text, name),
-            affiliation=_extract_direct_possessive(text, m.start()) or _extract_affiliation(context),
+            affiliation=_extract_direct_possessive(text, m.start()) or _extract_affiliation(context) or _extract_affiliation_full_text(text, name),
             quote=_extract_nearby_quote(text, m.start(), m.end()),
             attribution_verb=verb,
         ))
@@ -957,7 +957,7 @@ def extract_sources(text: str) -> list[SourceMention]:
             name=name,
             is_anonymous=False,
             is_expert=_is_expert_by_title(context) or _is_expert_full_text(text, name),
-            affiliation=_extract_affiliation(context) or _extract_affiliation_full_text(text, name),
+            affiliation=_extract_affiliation_full_text(text, name) or _extract_affiliation(context),
             quote=_extract_nearby_quote(text, m.start(), m.end()),
             attribution_verb=verb,
         ))
@@ -1088,7 +1088,11 @@ def extract_sources(text: str) -> list[SourceMention]:
             name=name,
             is_anonymous=False,
             is_expert=_is_expert_by_title(context) or _is_expert_full_text(text, name),
-            affiliation=_extract_affiliation(context) or _extract_affiliation_full_text(text, name),
+            # Single-surname sources are typically re-references of a person
+            # introduced by full name earlier.  Prefer the full-text search
+            # (which finds "D.A. Davidson analyst Gil Luria") over the local
+            # context (which may contain unrelated org names like "of Anthropic").
+            affiliation=_extract_affiliation_full_text(text, name) or _extract_affiliation(context),
             quote=_extract_nearby_quote(text, m.start(), m.end()),
             attribution_verb=verb,
         ))
@@ -1311,6 +1315,25 @@ def extract_sources(text: str) -> list[SourceMention]:
             r"(?: to)?"
             r"(?: (?:a|the|our|multiple))?"
             r"(?: (?:request|call|email|query|inquiry|message|questions?))?",
+            re.IGNORECASE,
+        ),
+        # "reached out to [Entity] for comment" — journalist due-diligence
+        # disclosure where no response is reported.  Distinct from "declined
+        # to comment" (entity explicitly refused) — this signals attempted
+        # contact with an implicit non-response.  Gap discovered in Fox
+        # Business Meta $1.4T penalty article (Jul 2026): "Fox Business
+        # reached out to Meta for further comment" was invisible.
+        re.compile(
+            r"\breached out to\b.{1,60}\bfor\s+"
+            r"(?:further |additional |a )?"
+            r"(?:comment|response|clarification|a statement)",
+            re.IGNORECASE,
+        ),
+        # "[Publication] has contacted [Entity] for comment" variant
+        re.compile(
+            r"\b(?:has |have )?contacted\b.{1,60}\bfor\s+"
+            r"(?:further |additional |a )?"
+            r"(?:comment|response|clarification|a statement)",
             re.IGNORECASE,
         ),
     ]
@@ -1801,6 +1824,21 @@ def extract_sources(text: str) -> list[SourceMention]:
                 continue
             if org_name.lower() in {n.lower() for n in seen_names}:
                 continue
+
+            # Filter out conditional/speculative constructions like
+            # "once Meta acknowledges defeat", "if Google admits", etc.
+            # These are not real attribution — the verb is hypothetical.
+            # Discovered in IBD article (Jul 8, 2026): "once Meta
+            # acknowledges defeat" was a false positive.
+            pre_start = max(0, m.start() - 30)
+            pre_text = text[pre_start:m.start()].lower().strip()
+            if re.search(
+                r"\b(?:once|if|when|should|could|would|might|unless|"
+                r"until|before|after|whether)\s*$",
+                pre_text,
+            ):
+                continue
+
             seen_names.add(org_name)
 
             verb = m.group(2).strip().lower() if m.lastindex >= 2 else ""

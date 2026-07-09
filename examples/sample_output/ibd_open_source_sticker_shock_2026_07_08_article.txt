@@ -1,0 +1,20 @@
+"Sticker Shock" Powers Open-Source AI Growth. What It Means For Top AI Stocks.
+
+Source: Investor's Business Daily (IBD)
+URL: https://www.investors.com/news/technology/ai-stocks-open-source-ai-models-meta-stock-nvidia/
+Published: 2026-07-08
+Retrieved: 2026-07-08
+
+Enterprise sticker shock from AI token costs is driving a shift toward open-source AI models, according to a new report from D.A. Davidson analyst Gil Luria.
+
+The trend could benefit Meta Platforms, which may return to open-source leadership once Meta acknowledges defeat in the frontier model race, Luria said.
+
+Meta wants to catch up to the capabilities of Anthropic, OpenAI and Google in frontier AI. But open-source models could fill the vacuum as enterprises balk at rising costs.
+
+Meta uses AI to sell more ads for more money. CEO Mark Zuckerberg has positioned the company as the leader in open-source AI with its Llama model family.
+
+Nvidia stands to benefit from the open-source trend as companies build their own AI infrastructure. Microsoft, Amazon, Palantir and Micron are also positioned to gain.
+
+The Chinese AI startup DeepSeek demonstrated that capable models can be built at a fraction of the cost of frontier models, further fueling the open-source momentum.
+
+Zuckerberg recently announced Muse Spark, a new AI venture, and Z.ai as part of Meta broader AI strategy.

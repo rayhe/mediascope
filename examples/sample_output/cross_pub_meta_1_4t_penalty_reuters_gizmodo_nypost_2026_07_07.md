@@ -216,7 +216,48 @@ articles:
   - gizmodo_meta_1_4t_existential_threat_2026_07_07
   - nypost_meta_1_4t_teen_mental_health_2026_07_07
   - devdiscourse_meta_1point4_trillion_penalty_2026_07_08
+  - foxbusiness_meta_1_4t_penalty_2026_07_07
 topics: [litigation, child_safety, consumer_protection]
-framing_asymmetry_score: 0.73  # high — significant divergence from wire baseline
-key_finding: "NY Post deploys 10 framing devices vs Reuters' 2, but hedges with tempering coda. Gizmodo uses 7 devices with no hedge. All three derive from the same court filing."
+framing_asymmetry_score: 0.78  # increased — Fox Business defense-forward adds range
+key_finding: >
+  Full spectrum from Meta-sympathetic (Fox Business, +0.05) to adversarial (Gizmodo,
+  -0.25). NY Post deploys 10 framing devices vs Reuters' 2, hedges with tempering
+  coda. Fox Business is defense-forward (4 Meta quotes, 0 AG quotes) but injects
+  adversarial framing through cross-promotion blocks. All derive from same court filing.
 ```
+
+## 8. Fox Business Addendum (2026-07-08)
+
+### Headline
+> "Four states seeking $1.4 trillion in penalties in child social media addiction trial, Meta says"
+
+### Position in Spectrum
+Fox Business occupies the **Meta-sympathetic end** of the coverage spectrum — the only
+publication with a positive overall tone score (+0.05). Key differentiators:
+
+| Dimension | Fox Business vs. Cluster |
+|-----------|------------------------|
+| **Meta defense quotes** | 4 (highest in cluster) |
+| **AG named quotes** | 0 (lowest — Reuters has Bonta) |
+| **No-comment signals** | 4 (highest — amplifies state silence) |
+| **Framing devices** | 5 (moderate) |
+| **Loaded language** | Very low (0.05) |
+| **Unique device** | Editorial cross-promotion (all-caps blocks) |
+
+### Unique Contribution: Dual-Register Framing
+Fox Business demonstrates a novel editorial pattern not seen in the other 4 publications:
+**defense-forward prose with adversarial cross-promotion blocks.** The article body
+maintains balanced-to-sympathetic tone, but 2 all-caps interstitial headlines import
+adversarial framing ("DESIGNED...TO ADDICT CHILDREN") that the author never directly
+endorses. This creates plausible deniability: the article reads as balanced business
+reporting while the visual experience includes adversarial headlines in all-caps.
+
+### Attribution Verbs
+| Verb | Count | Stance |
+|------|-------|--------|
+| "said" | 4 | Neutral |
+| "denied" | 1 | Neutral-legal |
+| "pushed back on" | 1 | Colloquial but neutral |
+
+**Loaded attribution verb density:** 0/6 (0%) — matching Reuters, far below Gizmodo and
+NY Post (both 60%). Fox Business maintains wire-standard attribution verb discipline.
