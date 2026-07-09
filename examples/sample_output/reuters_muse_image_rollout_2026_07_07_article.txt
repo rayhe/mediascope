@@ -1,0 +1,19 @@
+Meta expands generative AI tools with Muse Image rollout
+
+Meta Platforms (META.O) said on Tuesday it is rolling out Muse Image, its first image-generation model from Meta Superintelligence Labs, as the Facebook owner expands generative AI tools across its apps.
+
+The company said Muse Image, which is integrated into its Meta AI chatbot, can interpret complex prompts, use photos as inputs and let users edit generated images directly through sketches or annotations.
+
+Here are some details:
+
+Muse Image will power more than 30 new AI effects for Instagram Stories and enable image generation in direct chats with Meta AI on WhatsApp, initially in select countries, the company said.
+
+Meta plans to expand Muse Image to more countries and integrate it into Facebook and Messenger, the company said.
+
+While basic use of Muse Image with Meta AI is free, additional creation capabilities will be available through Meta's subscription plans, the company said.
+
+In April, the company launched Muse Spark, the first text-and-reasoning AI model from the Meta Superintelligence Labs team it assembled last year to catch up with rivals in the AI race.
+
+Advanced AI models are at the center of the AI boom, powering autonomous tasks such as writing software code, generating content and handling customer support inquiries.
+
+The company also announced an early preview of Muse Video, its video generation model.

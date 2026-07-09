@@ -598,6 +598,25 @@ def classify_topic(
             _window_end = _sent_end
         _metaphorical_edu_spans.add((_window_start, _window_end))
 
+    # ── Proper-noun suppression for "ai_ethics_safety" topic ──
+    # Keywords like "superintelligence" and "superintelligent" appear in
+    # the ai_ethics_safety topic bucket.  However, "Meta Superintelligence
+    # Labs" is a proper noun (organization name) that should NOT trigger
+    # the topic.  Build a set of spans where these keywords appear inside
+    # proper-noun organization contexts so they can be excluded.
+    # Discovered: Reuters Muse Image wire article (Jul 7, 2026) scored
+    # ai_ethics_safety at 0.17 solely from "Meta Superintelligence Labs".
+    _SUPERINTELLIGENCE_ORG_RE = re.compile(
+        r"\bSuperintelligence\s+Labs?\b",
+        re.IGNORECASE,
+    )
+    _superint_org_spans: set[tuple[int, int]] = set()
+    for m in _SUPERINTELLIGENCE_ORG_RE.finditer(text):
+        # Expand window backward to catch "Meta " prefix
+        _window_start = max(0, m.start() - 30)
+        _window_end = m.end()
+        _superint_org_spans.add((_window_start, _window_end))
+
     for topic, patterns in topic_patterns.items():
         matched_keywords: list[str] = []
         total_matches = 0
@@ -618,6 +637,25 @@ def classify_topic(
                     ]
                     if not literal_hits:
                         continue  # all matches are metaphorical
+                    matched_keywords.append(keyword)
+                    total_matches += len(literal_hits)
+                # For the ai_ethics_safety topic, discount matches of
+                # "superintelligence"/"superintelligent" that appear
+                # inside proper-noun org contexts like
+                # "Meta Superintelligence Labs".
+                elif (topic == "ai_ethics_safety"
+                      and keyword in ("superintelligence",
+                                      "superintelligent")
+                      and _superint_org_spans):
+                    literal_hits = [
+                        h for h in hits
+                        if not any(
+                            s <= h.start() <= e
+                            for s, e in _superint_org_spans
+                        )
+                    ]
+                    if not literal_hits:
+                        continue  # all matches are org-name references
                     matched_keywords.append(keyword)
                     total_matches += len(literal_hits)
                 else:

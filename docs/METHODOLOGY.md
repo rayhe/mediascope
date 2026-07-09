@@ -1236,13 +1236,13 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **124 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **127 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
 ### 17.2 Publication Distribution
 
-The corpus spans **40 distinct publications** across 5 editorial modes:
+The corpus spans **41 distinct publications** across 5 editorial modes:
 
 #### Tracked Publications (5 publications, 55 articles)
 
@@ -1346,7 +1346,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 124 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 88 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 127 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 88 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
@@ -1367,11 +1367,11 @@ Of the 124 annotated articles, **20 explicitly document** which correction path(
 
 ### 17.6 Same-Event Comparison Coverage
 
-The corpus includes **11 same-event comparison clusters** validated in §10.2 of [QUALITY_STANDARDS.md](QUALITY_STANDARDS.md):
+The corpus includes **12 same-event comparison clusters** validated in §10.2 of [QUALITY_STANDARDS.md](QUALITY_STANDARDS.md):
 
 | Tier | Clusters | Articles Involved | Key Finding |
 |---|---|---|---|
-| **Tier 1** (dedicated cross-analysis files) | 3 | 10 | Tone gaps 0.25–1.23; framing device differentials 1:1 to 10:0 |
+| **Tier 1** (dedicated cross-analysis files) | 4 | 15 | Tone gaps 0.25–1.23; framing device differentials 1:1 to 10:0 |
 | **Tier 2** (same-event article clusters) | 8 | ~24 | Tone ranges 0.21–1.00; genre-controlled signal extraction |
 
 The Zuckerberg town hall cluster (Jul 2–4, 2026) is the highest-value comparison: 5 articles spanning wire service (Reuters), tech editorial (TechCrunch), financial analysis (Barron's), payment industry (PYMNTS), and investment advisory (TheStreet) — demonstrating that identical facts produce a 1.23-point tone spread across editorial modes, the widest gap in the corpus.
