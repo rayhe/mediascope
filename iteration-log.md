@@ -2,6 +2,52 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-09 15:00 PT — Type B: Journalist/Publication Research (MIT Technology Review Staff)
+
+**Focus:** Expanding MIT TR journalist coverage — staff, editors, and freelance contributors not previously tracked.
+**Commit:** `e0b3add`
+
+### Research Conducted
+
+Searched MIT TR special project credit blocks (10 Breakthrough Technologies 2025, Hype Correction, Power Hungry, Innovators Under 35), MIT TR × FT partnership announcements, EmTech AI 2026 speaker lists, The Org, Wikipedia, Talking Biz News, Muck Rack, Columbia Energy Journalism Fellows, Omidyar Network, IEEE Spectrum, and individual author/portfolio pages.
+
+### New Journalist Profiles Added (6 new → 192 total)
+
+| Name | Role at MIT TR | Career Entries | Key Migration/Notes |
+|------|---------------|----------------|---------------------|
+| Allison Arieff | Editorial Director of Print (Feb 2022–Dec 2024) | 10 | Dwell EIC → NYT Opinion (13 yrs) → MIT TR → SF Chronicle. Launched MIT TR's first design issue in 120-year history. |
+| Teresa Elsey | Managing Editor (Jul 2022–present) | 5 | O'Reilly → HMH → NewGlobe → MIT TR. **Dual role**: newsroom managing editor + Insights sponsored research editor. Potential editorial independence concern. |
+| Mike Orcutt | Associate Editor (~2014–present) | 1 | Blockchain/fintech beat since ~2014. One of longest-tenured staffers. Also fact-checks special projects. |
+| Edd Gent | Freelance contributor (2018–present) | 3 | British, based in Bengaluru since 2014. IEEE Spectrum contributing editor. Credited on Hype Correction. |
+| Garrison Lovely | Freelance contributor (2024–present) | 4 | McKinsey whistleblower → AI-critical journalist. Author of 'Obsolete' (OR Books). Pulitzer Center AI journalist 2025. |
+| Emma Foehringer Merchant | Fact-checker/contributor (2024–present) | 5 | Greentech Media → Canary Media → MIT TR. Climate/energy specialist validating AI energy claims. Columbia Fellow 2018. |
+
+### Editorial Changes Added (2 new → 19 total for MIT TR)
+
+- **Feb 2022:** Allison Arieff hired as Editorial Director of Print (first dedicated print editorial leader under Honan)
+- **Jul 2022:** Teresa Elsey hired as Managing Editor (dual newsroom + Insights role flagged)
+
+### Key Analytical Findings
+
+1. **Teresa Elsey's dual role is a potential editorial independence vector.** She manages both journalistic operations (fact-checking, copy editing, editorial workflow) AND MIT TR Insights — sponsored research reports funded by Databricks, Deloitte, Nokia, Thoughtworks. The same person overseeing editorial quality control and client-funded content creates structural tension worth tracking in methodology.
+
+2. **MIT TR's freelance augmentation pattern.** The Hype Correction and Power Hungry credit blocks reveal that MIT TR augments its ~15-person core newsroom with specialist freelancers for major editorial packages. This means the editorial voice of special projects is partially shaped by contributors (Garrison Lovely, Edd Gent) whose AI-critical or climate-specialist perspectives may differ from staff voice.
+
+3. **Allison Arieff's departure pattern.** Her exit from MIT TR to SF Chronicle (Jan 2025) coincides with Wired UK cancelling print (same month). Signals continued print infrastructure erosion at specialist tech publications, with experienced editors moving to general-audience outlets.
+
+### Stats
+
+| Metric | Before | After |
+|--------|--------|-------|
+| Total journalists | 176 (existing count before today's sessions) | 192 |
+| MIT TR career entries | 30 | 40 |
+| MIT TR editorial changes | 17 | 19 |
+| Multi-publication journalists | 38 | 42 |
+| Auto-detected migrations | 567 | 613 |
+| Career entries added | — | 28 |
+
+---
+
 ## 2026-07-09 10:00 PT — Type A: Article Deep Dive (MIT Technology Review)
 
 **Article:** "OpenAI has finally released open-weight language models" (MIT Technology Review)
