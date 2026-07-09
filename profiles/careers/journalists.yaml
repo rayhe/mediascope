@@ -12539,3 +12539,313 @@ journalists:
   source_urls:
   - https://citybiz.co/article/the-atlantic-announces-sarah-a-topol-and-jenisha-watts-as-staff-writers/
   - https://editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff/
+
+# === Added 2026-07-09 15:00 PT — Type B iteration (MIT TR staff expansion) ===
+
+- career:
+  - publication: random-house
+    role: editorial
+    start: '1990'
+    end: '1995'
+    beat: books, publishing
+    notes: Early career editorial position at Random House, then Oxford University Press and Chronicle Books.
+  - publication: dwell
+    role: founding_senior_editor
+    start: '2000'
+    end: '2002'
+    beat: architecture, design, prefab homes
+    notes: Co-founded Dwell magazine. First senior editor, then promoted to EIC.
+    source_url: https://en.wikipedia.org/wiki/Allison_Arieff
+  - publication: dwell
+    role: eic
+    start: '2002'
+    end: '2007'
+    beat: architecture, design
+    notes: 'Won National Magazine Award for General Excellence 2005. Expanded readership significantly.
+      Left magazine in 2006-2007.'
+    source_url: https://en.wikipedia.org/wiki/Allison_Arieff
+  - publication: ideo
+    role: senior_content_lead
+    start: '2006'
+    end: '2008'
+    beat: design, innovation
+    notes: Global design and innovation firm. Brief stint between magazine editing roles.
+  - publication: nytimes
+    role: opinion_columnist
+    start: '2007'
+    end: '2020'
+    beat: architecture, design, cities, technology
+    notes: 'Regular column in NYT Opinion section for 13 years. Over time, column shifted
+      to increasingly cover technology topics — this shift led her to MIT TR.'
+    source_url: https://en.wikipedia.org/wiki/Allison_Arieff
+  - publication: spur
+    role: editorial_director
+    start: '2012'
+    end: '2018'
+    beat: urban planning, policy
+    notes: San Francisco Bay Area Planning and Urban Research Association. 2018 Steven Heller
+      Award for Cultural Commentary.
+  - publication: city-monitor
+    role: senior_editor
+    start: '2019'
+    end: '2020'
+    beat: cities, urban policy
+    notes: Part of New Statesman. Between SPUR and Replica.
+  - publication: replica
+    role: director_of_communication
+    start: '2020'
+    end: '2022'
+    beat: urban tech, mobility
+    notes: Oakland-based urban mobility company. Last role before MIT TR.
+  - publication: mit-tech-review
+    role: editorial_director_print
+    start: 2022-02
+    end: 2024-12
+    beat: design, technology impact
+    notes: 'Editorial Director of Print. Launched MIT TR''s first design issue in its 120-year
+      history. Credited as editor on 10 Breakthrough Technologies 2025, Innovators Under 35,
+      and other special projects. Managed print magazine alongside digital-first strategy.'
+    source_url: https://www.technologyreview.com/author/allison-arieff/
+  - publication: san-francisco-chronicle
+    role: editorial_writer_columnist
+    start: '2025'
+    end: present
+    beat: infrastructure, public space, transit, design
+    notes: 'Hired as editorial writer and columnist. Focus on how design impacts daily lives.
+      Continues career-long themes but in local/regional journalism.'
+    source_url: https://talkingbiznews.com/media-news/mit-techs-arieff-joins-sf-chronicle/
+  multi_publication: true
+  name: Allison Arieff
+  notes: 'Architecture/design journalist with 30+ year career spanning magazines, newspapers,
+    think tanks, and tech publications. KEY MIGRATION for MediaScope: NYT Opinion → MIT TR
+    (design-meets-tech pipeline). UCLA BA History, UC Davis MA Art History, NYU PhD coursework
+    American Studies. Author of ''Prefab'' and ''Trailer Travel.'' Her role at MIT TR
+    represented the publication''s first serious investment in design criticism — her departure
+    to SF Chronicle continues a pattern of MIT TR losing experienced editors to local journalism
+    (lower-pressure, more autonomy). Co-founder of Dwell magazine.'
+  source_urls:
+  - https://en.wikipedia.org/wiki/Allison_Arieff
+  - https://www.technologyreview.com/author/allison-arieff/
+  - https://talkingbiznews.com/media-news/mit-techs-arieff-joins-sf-chronicle/
+  - https://talkingbiznews.com/media-news/mit-technology-review-appoints-arieff-editorial-director-of-print/
+
+- career:
+  - publication: oreilly-media
+    role: editor
+    start: '2010'
+    end: '2014'
+    beat: technical publishing
+    notes: Technical publishing sector. Part of early editorial career.
+    source_url: https://theorg.com/org/mit-technology-review/org-chart/teresa-elsey
+  - publication: emerson-college
+    role: instructor
+    start: '2014'
+    end: '2016'
+    beat: writing, editing
+    notes: Teaching role between editorial positions.
+  - publication: houghton-mifflin-harcourt
+    role: senior_managing_editor_digital
+    start: '2014'
+    end: '2018'
+    beat: educational publishing, ebooks
+    notes: 'Led production of approximately 1,500 ebooks annually. Major digital
+      transformation role in legacy publisher.'
+    source_url: https://theorg.com/org/mit-technology-review/org-chart/teresa-elsey
+  - publication: newglobe
+    role: managing_editor_instructional_design
+    start: 2019-02
+    end: 2021-12
+    beat: educational materials, international development
+    notes: 'Oversaw globally distributed editorial department producing materials for
+      over 800,000 students across developing countries.'
+    source_url: https://theorg.com/org/mit-technology-review/org-chart/teresa-elsey
+  - publication: mit-tech-review
+    role: managing_editor
+    start: 2022-07
+    end: present
+    beat: editorial operations, special projects, Insights reports
+    notes: 'Initially hired as Editor, Insights (Jul 2022). Now Managing Editor for the
+      newsroom. Credited on all major MIT TR special projects: 10 Breakthrough Technologies,
+      Innovators Under 35, Hype Correction, Power Hungry. Also edits MIT TR Insights reports
+      (sponsored research — Databricks, Thoughtworks, Nokia, Deloitte partnerships).
+      Dual role: newsroom managing editor + Insights editorial pipeline.'
+    source_url: https://theorg.com/org/mit-technology-review/org-chart/teresa-elsey
+  multi_publication: true
+  name: Teresa Elsey
+  notes: 'Editorial operations specialist with career spanning technical publishing (O''Reilly),
+    educational publishing (HMH, NewGlobe), and now tech journalism (MIT TR). Harvard AB
+    English & American Literature. KEY for MediaScope: her dual managing-editor role means
+    she sits at the intersection of MIT TR''s editorial journalism AND its sponsored Insights
+    reports — a potential editorial independence concern when Insights clients (Databricks,
+    Deloitte) have AI/data relationships with companies MIT TR covers.'
+  source_urls:
+  - https://theorg.com/org/mit-technology-review/org-chart/teresa-elsey
+  - https://www.technologyreview.com/supertopic/power-hungry/
+
+- career:
+  - publication: mit-tech-review
+    role: associate_editor
+    start: '2014'
+    end: present
+    beat: blockchain, cryptocurrency, digital currency, fintech
+    notes: 'Long-running blockchain/fintech beat. Articles cited in academic papers, legal
+      filings, and Congressional testimony. Covered Bitcoin governance (2015), crypto hacking
+      (2017-2019), CBDCs/digital yuan (2023). Also serves as fact-checker on MIT TR special
+      projects (10 Breakthrough Technologies 2025, Hype Correction). Title ''associate editor''
+      per 2019 NCBI panel attribution.'
+    source_url: https://www.technologyreview.com/author/mike-orcutt/
+  name: Mike Orcutt
+  notes: 'MIT TR associate editor covering blockchain and digital currency since ~2014.
+    One of the longest-tenured current staffers. Dual role as reporter + fact-checker
+    on special projects. His blockchain beat has become less central as MIT TR shifted
+    focus to AI, but his institutional knowledge and fact-checking role make him an
+    important editorial infrastructure figure.'
+  source_urls:
+  - https://www.technologyreview.com/author/mike-orcutt/
+  - https://www.ncbi.nlm.nih.gov/books/NBK557611/
+
+- career:
+  - publication: e-and-t-magazine
+    role: news_reporter
+    start: '2010'
+    end: '2014'
+    beat: engineering, technology
+    notes: 'UK-based Engineering & Technology magazine (IET). First journalism role after
+      BA Politics & International Relations. NCTJ qualified senior reporter.'
+  - publication: freelance
+    role: freelancer
+    start: '2014'
+    end: present
+    beat: emerging technology, computing, engineering, bioscience, energy
+    notes: 'Based in Bengaluru, India since 2014. Contributing editor at IEEE Spectrum.
+      Regular contributor to New Scientist, MIT Technology Review, BBC, Science, Live Science.
+      Credited on MIT TR ''Hype Correction'' special project (Dec 2025). Covers AI, robotics,
+      quantum computing, biotech, energy tech.'
+    source_url: https://spectrum.ieee.org/u/edd-gent
+  - publication: mit-tech-review
+    role: contributor
+    start: '2018'
+    end: present
+    beat: AI, emerging technology
+    notes: 'Freelance contributor. Credited in ''Hype Correction'' (Dec 2025) special
+      project alongside staff writers. Multiple bylines covering AI breakthroughs and
+      technology impact.'
+  multi_publication: true
+  name: Edd Gent
+  notes: 'British freelance science writer based in India. BA Politics and International
+    Relations, NCTJ qualified senior reporter. Contributing editor at IEEE Spectrum.
+    KEY for MediaScope: represents MIT TR''s use of freelance contributors for major
+    special projects — his inclusion in ''Hype Correction'' credits alongside staff
+    writers like Will Douglas Heaven shows MIT TR augments its small newsroom with
+    specialist freelancers for big editorial packages.'
+  source_urls:
+  - https://www.newscientist.com/author/edd-gent/
+  - https://spectrum.ieee.org/u/edd-gent
+
+- career:
+  - publication: mckinsey
+    role: consultant
+    start: '2017'
+    end: '2019'
+    beat: consulting (non-journalism)
+    notes: 'Intern then full-time at McKinsey & Company. Assigned to ICE and Rikers Island
+      projects. Experience became basis for whistleblower reporting. Cornell University.'
+    source_url: https://en.wikipedia.org/wiki/Garrison_Lovely
+  - publication: current-affairs
+    role: contributor
+    start: '2019'
+    end: '2020'
+    beat: corporate accountability, labor
+    notes: 'First published anonymously on McKinsey internal culture. Later attributed
+      to Lovely. This piece launched his journalism career.'
+    source_url: https://en.wikipedia.org/wiki/Garrison_Lovely
+  - publication: freelance
+    role: freelancer
+    start: '2020'
+    end: present
+    beat: AI risk, political economy of AI, corporate accountability
+    notes: 'Brooklyn-based. Cover stories in The Nation (''Confessions of a McKinsey
+      Whistleblower'', Sep 2023) and Jacobin (''Can Humanity Survive AI?''). Work appears
+      in NYT, BBC, Nature, Bloomberg, MIT TR, TIME, Guardian, The Verge, Foreign Policy,
+      Vox, Le Monde Diplomatique. Pulitzer Center AI journalist 2025. Reporter in Residence
+      at Omidyar Network. Author of ''Obsolete: The AI Industry''s Trillion Dollar Race to
+      Replace You'' (OR Books, 2026). Hosts podcast ''The Most Interesting People I Know''.
+      Work referenced by Ted Chiang (New Yorker), ProPublica, Atlantic. Appeared on CBS News
+      Sunday Morning.'
+    source_url: https://garrisonlovely.com
+  - publication: mit-tech-review
+    role: contributor
+    start: '2024'
+    end: present
+    beat: AI, technology impact
+    notes: 'Freelance contributor. Credited in ''Hype Correction'' (Dec 2025) special project.
+      His AI-critical, political-economy lens aligns with MIT TR''s editorial posture
+      under Mat Honan''s leadership.'
+  multi_publication: true
+  name: Garrison Lovely
+  notes: 'McKinsey whistleblower turned AI-critical journalist. Cornell University. KEY for
+    MediaScope: his trajectory from corporate consulting → whistleblowing → AI doom journalism
+    represents a specific editorial pipeline — former insiders who become institutional critics.
+    His book ''Obsolete'' and Jacobin cover story position him in the AI-existential-risk
+    camp, which colors his MIT TR contributions. Pulitzer Center identified him as notable
+    AI journalist 2025. His inclusion in MIT TR''s ''Hype Correction'' project signals
+    editorial alignment between MIT TR and AI-critical voices.'
+  source_urls:
+  - https://en.wikipedia.org/wiki/Garrison_Lovely
+  - https://garrisonlovely.com
+  - https://obsoletebook.org
+  - https://omidyar.com/omidyar-network-announces-fifth-class-of-reporters-in-residence/
+
+- career:
+  - publication: greentech-media
+    role: staff_writer
+    start: '2016'
+    end: '2020'
+    beat: clean energy, solar, battery storage, grid modernization
+    notes: 'Staff writer covering clean energy transition. Columbia Energy Journalism
+      Fellow 2018 (through Greentech Media).'
+    source_url: https://www.energypolicy.columbia.edu/energy-journalism-fellows/
+  - publication: canary-media
+    role: co-founder
+    start: '2021'
+    end: '2022'
+    beat: clean energy
+    notes: 'Helped Greentech Media alumni form Canary Media, a clean energy journalism
+      outlet. Brief role during startup phase.'
+  - publication: gbh-news
+    role: reporter
+    start: '2022'
+    end: '2023'
+    beat: environment, energy
+    notes: 'Boston public media. Brief tenure between Canary Media and freelance work.'
+  - publication: freelance
+    role: freelancer
+    start: '2023'
+    end: present
+    beat: climate change, energy, environment
+    notes: 'Contributing writer at Inside Climate News. Freelance for Undark Magazine,
+      MIT Technology Review (fact-checking + reporting), Washington Post, Boston Globe
+      Magazine, The New Republic, Vice News, Grist. Based in California.'
+    source_url: https://pbssocal.org/author/emma-foehringer-merchant
+  - publication: mit-tech-review
+    role: fact_checker_contributor
+    start: '2024'
+    end: present
+    beat: climate, energy, AI environmental impact
+    notes: 'Fact-checker credited on 10 Breakthrough Technologies 2025, Power Hungry
+      (AI energy special project). Also wrote CRISPR/agriculture feature. Represents
+      MIT TR''s use of specialist freelancers as fact-checkers — her climate/energy
+      expertise validates technical claims in AI-energy coverage.'
+    source_url: https://www.technologyreview.com/author/emma-foehringer-merchant/
+  multi_publication: true
+  name: Emma Foehringer Merchant
+  notes: 'Climate/energy journalist with fact-checking role at MIT TR. Pomona College BA
+    Environmental Analysis. MIT Graduate Program in Science Writing (MS). Columbia Energy
+    Journalism Fellow 2018. KEY for MediaScope: her dual reporter/fact-checker role at MIT TR
+    means she validates the technical claims in AI energy coverage — her climate expertise
+    is a quality control layer that shapes how MIT TR reports on data center energy consumption,
+    AI environmental impact, and tech company sustainability claims.'
+  source_urls:
+  - https://theorg.com/org/inside-climate-news/org-chart/emma-foehringer-merchant
+  - https://pbssocal.org/author/emma-foehringer-merchant
+  - https://www.energypolicy.columbia.edu/energy-journalism-fellows/
