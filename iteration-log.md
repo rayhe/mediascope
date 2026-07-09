@@ -16714,3 +16714,47 @@ Reuters Muse Image wire article analysis + 5-way cross-publication comparison (R
 
 ### Commit
 `3b54d75` — Fix 'Superintelligence Labs' false positive in ai_ethics_safety topic + 5-way Muse Image cross-pub comparison
+
+
+---
+
+## 2026-07-08 18:00 PT — Type A: Article Deep Dive (Reuters French Antitrust / Publisher Fees)
+
+### Focus
+Reuters wire article: "French antitrust watchdog orders Meta to resume talks with media groups over publishing fees" (July 8, 2026). France's Autorité de la concurrence ordered Meta to propose a payment plan and resume talks with DVP/APIG over unpaid content fees within 15 days.
+
+### Improvements
+
+#### 1. Entity Detection: "The Information" Case-Sensitive False Positive Fix
+- **Bug:** Lowercase "the information" (common noun phrase — "refusing to provide the information needed for them to evaluate the remuneration") was incorrectly matched as The Information (tech publication) at position 738–753.
+- **Fix:** New `_CASE_SENSITIVE_ENTITIES` dict in `entities.py` — parallels existing `_HOMOGRAPH_VERB_FILTERS` and `_HOMOGRAPH_LOOKBEHIND_FILTERS`. Matched text must satisfy a case pattern (e.g., "The Information" with capital I) to count as the entity.
+- **Validation:** Capitalized "The Information reported that..." still matches correctly.
+
+#### 2. New Entity Cluster: French Media Associations
+- **Cluster:** `French Media Associations` — 6 aliases: DVP, Digital Video Publishers, APIG, Alliance de la Presse d'Information Générale, Le Monde, Les Echos.
+- **Regex:** Case-sensitive DVP/APIG acronym matching to avoid common-word collisions.
+- **EU Regulatory expanded:** Added 3 aliases (Autorité de la concurrence, France's competition authority, French competition authority). Cluster now 9 aliases (was 6).
+
+#### 3. New Topic Bucket: content_licensing (28th)
+- **Keywords (40):** publishing fees, content licensing, neighboring rights, remuneration, payment plan, content fees, licensing fees, publisher rights, media groups, news publishers, news licensing, link tax, content compensation, unpaid fees, content deal, news bargaining, bargaining code, copyright directive, EU copyright, etc.
+- **Adjacency:** Distinct from `antitrust_regulation` (competition/monopoly), `litigation` (general legal proceedings), and `corporate_strategy` (business decisions).
+
+#### 4. Source Extraction: Acronym Org with Appositive Clause
+- **Bug:** "DVP, which includes the newspapers Le Monde and Les Echos, said it was satisfied" — DVP not extracted because: (a) `[A-Z][a-z]+` pattern doesn't match all-caps acronyms, (b) appositive clause between org name and attribution verb blocks `[Company]\s+VERB` pattern.
+- **Fix:** New regex pattern in `sources.py` for 2–6 char all-caps acronym organizations with optional appositive clause (`(?:,\s+[^,]{1,120},)?`). DVP and APIG added to `_KNOWN_ORGS`.
+
+#### 5. Documentation & Structural Consistency
+- Topic count: 27 → 28 across all docs (METHODOLOGY.md, ARCHITECTURE.md, AGENT_GUIDE.md, README.md, structural consistency tests, demo scripts)
+- Entity cluster count: 76 → 77 in METHODOLOGY.md §15, cluster table updated
+- Annotated articles: 127 → 128
+- Test count: 1,824 → 1,844 across 79 test files (was 78)
+- New test file entry in ARCHITECTURE.md tree and README.md test table
+
+### Stats After This Iteration
+- **Tests:** 1,844 (from 1,824)
+- **Test files:** 79 (from 78)
+- **Topic buckets:** 28 (from 27)
+- **Entity clusters:** 77 (from 76)
+- **Annotated articles:** 128 (from 127)
+
+### Commit

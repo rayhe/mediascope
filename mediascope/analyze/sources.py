@@ -1692,6 +1692,15 @@ def extract_sources(text: str) -> list[SourceMention]:
             rf"\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)"
             rf"\s+({verb_alternation})\b",
         ),
+        # "[ACRONYM] ... said/told" — all-caps acronym org with possible
+        # appositive clause between name and verb.  Common in Reuters-style
+        # wire copy: "DVP, which includes ..., said it was satisfied".
+        # Validated against _KNOWN_ORGS below.
+        re.compile(
+            rf"\b([A-Z]{{2,6}})"
+            rf"(?:,\s+[^,]{{1,120}},)?\s+"
+            rf"({verb_alternation})\b",
+        ),
         # "a [Company] spokesperson/representative said/told"
         # Use [Aa]n? instead of an? to match sentence-initial "A Meta spokesperson said"
         re.compile(
@@ -1778,6 +1787,9 @@ def extract_sources(text: str) -> list[SourceMention]:
         # (e.g. "CNBC quoted Rob May").
         "cnbc", "bbc", "cnn", "abc", "nbc", "cbs", "fox",
         "associated press", "ap",
+        # French media associations — discovered in Reuters French
+        # antitrust article (Jul 2026).
+        "dvp", "apig",
     }
 
     for pat in org_source_patterns:

@@ -43,6 +43,20 @@ _HOMOGRAPH_VERB_FILTERS: dict[str, re.Pattern] = {
 }
 
 # ---------------------------------------------------------------------------
+# Case-sensitive entity filters: aliases that MUST appear with specific
+# capitalisation to count as entity references.  Lowercase occurrences
+# are common-noun phrases, not proper nouns.  Each key is the lowercased
+# alias; the value is a compiled regex that the *matched text* must satisfy
+# (i.e. re.match against the matched string itself, not surrounding context).
+# ---------------------------------------------------------------------------
+_CASE_SENSITIVE_ENTITIES: dict[str, re.Pattern] = {
+    # "The Information" (tech publication) vs "the information" (common
+    # noun phrase, e.g. "refusing to provide the information needed").
+    # Only match when the I is capitalised.
+    "the information": re.compile(r"The Information"),
+}
+
+# ---------------------------------------------------------------------------
 # Lookbehind homograph filters: aliases that need the PRECEDING context to
 # distinguish product names from common English words.  Each key is a
 # lowercased alias; the value is a compiled regex that matches the text
@@ -494,7 +508,20 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "GDPR", "General Data Protection Regulation",
             "DPC", "Data Protection Commission",
             "European Commission", "EU Commission",
+            "Autorité de la concurrence",
+            "France's competition authority",
+            "French competition authority",
         ],
+    },
+    "French Media Associations": {
+        "aliases": [
+            "DVP", "Digital Video Publishers",
+            "APIG", "Alliance de la Presse d'Information Générale",
+            "Le Monde", "Les Echos",
+        ],
+        "regex": r"(?<!\w)((?-i:DVP)|Digital Video Publishers"
+                 r"|(?-i:APIG)|Alliance de la Presse d'Information G[ée]n[ée]rale"
+                 r"|Le Monde|Les Echos)(?!\w)",
     },
     "Data/Intelligence Industry": {
         "aliases": [
@@ -1111,6 +1138,12 @@ def detect_entities(
             if matched_lower in _HOMOGRAPH_LOOKBEHIND_FILTERS:
                 lookbehind = text[max(0, start - 40) : start]
                 if _HOMOGRAPH_LOOKBEHIND_FILTERS[matched_lower].search(lookbehind):
+                    continue
+
+            # Case-sensitive entity filter (e.g. "The Information" pub vs
+            # "the information" common noun)
+            if matched_lower in _CASE_SENSITIVE_ENTITIES:
+                if not _CASE_SENSITIVE_ENTITIES[matched_lower].match(match.group()):
                     continue
 
             # Disambiguate "Access Now" (org) from "Access now" (verb phrase)

@@ -116,7 +116,7 @@ Raw Text
   └── (Optional) LLM score ─────┘          │
                                            ▼
                                  Framing Device Detection
-                                 (83 device types, 468 patterns)
+                                 (83 device types, 470 patterns)
                                            │
                                            ▼
                                  Active-Negative Agency Check
@@ -211,9 +211,9 @@ Journalist YAML ──→ Career Tracker ──→ Migration Detection
 - **Power asymmetry framing detection**: Dollar-magnitude near individual vulnerability, "army of lawyers" language, David vs Goliath constructions, fine-per-violation-could-bankrupt patterns
 
 ### `topics.py`
-- TF-IDF weighted keyword classification into 27 topic buckets
+- TF-IDF weighted keyword classification into 28 topic buckets
 - Multi-label (top 3 by confidence retained)
-- Topics: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, prediction_markets, corporate_strategy, defense_military, labor_market, workplace_culture, government_oversight, infrastructure_impact, worker_ai_displacement, health_tech, cybersecurity, ai_ethics_safety, education, subscription_monetization, energy_climate, hardware_wearables, consumer_protection
+- Topics: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, prediction_markets, corporate_strategy, defense_military, labor_market, workplace_culture, government_oversight, infrastructure_impact, worker_ai_displacement, health_tech, cybersecurity, ai_ethics_safety, education, subscription_monetization, energy_climate, hardware_wearables, consumer_protection, content_licensing
 
 ## Careers Layer — Module Detail
 
@@ -410,7 +410,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 100 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 1808 tests across 77 test files (all from real articles)
+├── tests/                       # 1844 tests across 79 test files (all from real articles)
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
@@ -448,7 +448,7 @@ mediascope/
 │   ├── test_source_stance.py    # Source extraction, stance, outsourced intensity, kicker framing
 │   ├── test_source_extraction_fixes.py # Pattern 3 case fix, Pattern 5c verb-before-surname, attribution verb expansion
 │   ├── test_possessive_affiliation.py # Possessive affiliation extraction: "Org's Person Name" pattern, cross-contamination prevention
-│   ├── test_topics.py           # Topic classification, all 27 buckets, confidence scoring, density normalization
+│   ├── test_topics.py           # Topic classification, all 28 buckets, confidence scoring, density normalization
 │   ├── test_wynn_williams_fixes.py # Litigation framing, source extraction false positives, power asymmetry
 │   ├── test_virtue_ai_acquihire.py # Virtue AI entities, FAIR, BIS/CAISI, tech-jargon ironic_quotation filter
 │   ├── test_sarcastic_correction.py # Sarcastic correction framing: concede-then-retract, standalone sarcasm, false-positive exclusion
@@ -456,6 +456,7 @@ mediascope/
 │   ├── test_cannes_contractors.py # Wired "Cannes" contractors: Scale AI/Covalen/Character.AI cluster, catastrophizing "death of" fix, Outlook source exclusion, deception/impersonation patterns
 │   ├── test_type_d_fixes.py      # Compound publication source extraction (Business Insider, Daily Beast, etc.) and bare confession framing patterns
 │   ├── test_jul7_regressions.py  # Jul 7 regressions: disclosure+PublicationProfile compat, regex backtracking, investments coercion
+│   ├── test_jul8_regressions.py  # Jul 8 regressions: "mounting" escalation, auxiliary confession verbs, "largest ever" precedent
 │   ├── test_confession_framing.py # Confession framing: "admitted," "conceded," voluntary-to-forced-admission reframing, false-positive exclusion
 │   ├── test_delayed_defense_and_normalization.py # Delayed defense (corporate response buried late in article), industry normalization undercut (acknowledging then singling out), headline boost strength for child_safety topic
 │   ├── test_government_oversight_topic.py # government_oversight topic bucket: national security, export controls, AI regulation, group_expert source detection
@@ -467,7 +468,7 @@ mediascope/
 │   ├── test_postpass_activation.py # Structural post-pass framing activation: analogy stacking, speculative framing thresholds
 │   ├── test_precedent_analogy.py # Precedent analogy framing: opioid/tobacco/asbestos crisis comparisons, era-based villainy import
 │   ├── test_resistance_patterns.py # MIT TR Resistance article patterns: catastrophizing (threat to humanity), alarm/anxiety idioms, intensity/polemical/violence loaded language, poll-based social proof, stalled-dollar and workforce-percentage scale magnitude
-│   ├── test_structural_consistency.py # Structural consistency: framing device type registry completeness, total regex pattern count guard (468 patterns), doc count sync guards, test file listing guards, README/ARCHITECTURE total test count header guards (validates pytest-collected count including parametrize expansions), stale voting power purge across all doc files, cross-reference consistency (stale framing taxonomy count purge including parenthetical annotations, README topic bucket count guard), inline topic list validation (ARCHITECTURE.md, AGENT_GUIDE.md, METHODOLOGY.md topic names match code), quality standards banned phrase count and completeness guards, framing.py docstring count and device list completeness validation, ARCHITECTURE.md extended device count label guard, ARCHITECTURE.md device name list completeness (Core + Extended inline lists enumerate all device types from code), ARCHITECTURE.md test_topics bucket count guard, METHODOLOGY.md device table completeness (Extended + Structural tables vs code), METHODOLOGY.md intro tier count guard (83/10/66/7 matches code), METHODOLOGY.md §17 annotated article count and publication count guards (corpus article count and distinct publication count match actual files on disk), adversarial device type list consistency (METHODOLOGY.md + QUALITY_STANDARDS.md + AGENT_GUIDE.md + example demo scripts vs sentiment.py), stale regex pattern count purge (ARCHITECTURE.md + README.md), AGENT_GUIDE.md framing tier count guard (83/10/66/7 matches code), correction path documentation completeness (all 10 paths A-J in METHODOLOGY.md + ARCHITECTURE.md + AGENT_GUIDE.md + README.md + example demos with summary table), migration count guards (README.md careers_demo + EDITORIAL_HISTORIES.md both match CareerTracker), publication count floor guards (README.md + EDITORIAL_HISTORIES.md), entity cluster consistency (METHODOLOGY.md §15 cluster count matches code, table completeness with no missing/phantom clusters, alias count accuracy), annotated article count guard (QUALITY_STANDARDS.md vs examples/sample_output/), same-event cluster count guard (QUALITY_STANDARDS.md §10.2 Tier 1 + Tier 2 table rows), example demo adversarial type set completeness (framing_correction_demo.py + sarcastic_editorial_demo.py inline adversarial_types vs code), stale device type count purge (rejects historic device type counts in any doc that don't match the current total, including parenthetical annotations), stale journalist/multi-pub count purge (all EDITORIAL_HISTORIES.md references match current YAML counts)
+│   ├── test_structural_consistency.py # Structural consistency: framing device type registry completeness, total regex pattern count guard (470 patterns), doc count sync guards, test file listing guards, README/ARCHITECTURE total test count header guards (validates pytest-collected count including parametrize expansions), stale voting power purge across all doc files, cross-reference consistency (stale framing taxonomy count purge including parenthetical annotations, README topic bucket count guard), inline topic list validation (ARCHITECTURE.md, AGENT_GUIDE.md, METHODOLOGY.md topic names match code), quality standards banned phrase count and completeness guards, framing.py docstring count and device list completeness validation, ARCHITECTURE.md extended device count label guard, ARCHITECTURE.md device name list completeness (Core + Extended inline lists enumerate all device types from code), ARCHITECTURE.md test_topics bucket count guard, METHODOLOGY.md device table completeness (Extended + Structural tables vs code), METHODOLOGY.md intro tier count guard (83/10/66/7 matches code), METHODOLOGY.md §17 annotated article count and publication count guards (corpus article count and distinct publication count match actual files on disk), adversarial device type list consistency (METHODOLOGY.md + QUALITY_STANDARDS.md + AGENT_GUIDE.md + example demo scripts vs sentiment.py), stale regex pattern count purge (ARCHITECTURE.md + README.md), AGENT_GUIDE.md framing tier count guard (83/10/66/7 matches code), correction path documentation completeness (all 10 paths A-J in METHODOLOGY.md + ARCHITECTURE.md + AGENT_GUIDE.md + README.md + example demos with summary table), migration count guards (README.md careers_demo + EDITORIAL_HISTORIES.md both match CareerTracker), publication count floor guards (README.md + EDITORIAL_HISTORIES.md), entity cluster consistency (METHODOLOGY.md §15 cluster count matches code, table completeness with no missing/phantom clusters, alias count accuracy), annotated article count guard (QUALITY_STANDARDS.md vs examples/sample_output/), same-event cluster count guard (QUALITY_STANDARDS.md §10.2 Tier 1 + Tier 2 table rows), example demo adversarial type set completeness (framing_correction_demo.py + sarcastic_editorial_demo.py inline adversarial_types vs code), stale device type count purge (rejects historic device type counts in any doc that don't match the current total, including parenthetical annotations), stale journalist/multi-pub count purge (all EDITORIAL_HISTORIES.md references match current YAML counts)
 │   ├── test_arena_cross_analysis.py # Cross-publication analysis: NYT vs Gizmodo on Arena story — tone separation, emotional intensity, ironic quotation filtering, agency detection
 │   ├── test_latecomer_regulatory_framing.py # Latecomer narrative and regulatory shadow framing: catch-up/copycat positioning, ambient regulatory context insertion, Arena article integration
 │   ├── test_editorial_deflation.py     # Editorial deflation framing: post-buildup dismissal phrases ("That's the idea, anyway"), attribution-as-skepticism, MIT TR Anduril article integration
@@ -488,6 +489,7 @@ mediascope/
 │   ├── test_techcrunch_muse_image_fixes.py # TechCrunch Muse Image privacy article: "Muse Video" product-name source false positive, Cambridge Analytica entity cluster separation, "landmark" literal-usage loaded_language suppression
 │   ├── test_ibd_meta_cloud_sources.py # IBD Meta cloud article source extraction regression tests
 │   ├── test_superintelligence_org_suppression.py # Topic classification: "Superintelligence Labs" proper-noun suppression for ai_ethics_safety, Reuters Muse Image wire false positive fix
+│   ├── test_reuters_french_antitrust.py # Reuters French antitrust: "The Information" case-sensitive false positive fix, French media association entities (DVP/APIG/Le Monde/Les Echos), content_licensing topic bucket, acronym org source extraction with appositive clause
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

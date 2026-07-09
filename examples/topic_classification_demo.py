@@ -1,6 +1,6 @@
 """MediaScope Topic Classification Demo.
 
-Demonstrates the 27-bucket topic classification system with real-world
+Demonstrates the 28-bucket topic classification system with real-world
 article snippets. Topic classification is used for:
 
 1. Apples-to-apples asymmetry comparison within topic (§3 methodology)
@@ -308,7 +308,7 @@ def demo_genre_detection():
 
 
 def demo_topic_bucket_reference():
-    """Print the complete 27-bucket reference table.
+    """Print the complete 28-bucket reference table.
 
     Useful for agents that need to look up what each bucket captures
     and which buckets are adjacent/confusable.

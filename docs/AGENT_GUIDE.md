@@ -483,7 +483,7 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
 ```json
 {
     "name": "classify_topic",
-    "description": "Classify an article into standardized topic buckets using keyword-based matching with confidence scoring. Returns TopicScore objects with topic name, confidence (0.0-1.0), and matched keywords. Articles can match multiple topics; the top 3 by confidence are retained. Confidence uses 60% keyword coverage + 40% density, with length-aware dampening: texts under 500 words receive proportionally reduced density scores to prevent short-text inflation (a 200-word blurb with 1 keyword match won't score the same density as a full article). 27 topic buckets: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, prediction_markets, corporate_strategy, defense_military, labor_market, workplace_culture, government_oversight, infrastructure_impact, worker_ai_displacement, health_tech, cybersecurity, ai_ethics_safety, education, subscription_monetization, energy_climate, hardware_wearables, consumer_protection.",
+    "description": "Classify an article into standardized topic buckets using keyword-based matching with confidence scoring. Returns TopicScore objects with topic name, confidence (0.0-1.0), and matched keywords. Articles can match multiple topics; the top 3 by confidence are retained. Confidence uses 60% keyword coverage + 40% density, with length-aware dampening: texts under 500 words receive proportionally reduced density scores to prevent short-text inflation (a 200-word blurb with 1 keyword match won't score the same density as a full article). 28 topic buckets: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, prediction_markets, corporate_strategy, defense_military, labor_market, workplace_culture, government_oversight, infrastructure_impact, worker_ai_displacement, health_tech, cybersecurity, ai_ethics_safety, education, subscription_monetization, energy_climate, hardware_wearables, consumer_protection, content_licensing.",
     "parameters": {
         "type": "object",
         "properties": {
@@ -984,7 +984,7 @@ See `examples/same_event_comparison.py` for the `compare_multi_articles()` imple
 
 ## Topic Bucket Quick Reference
 
-The 27 topic buckets enable apples-to-apples asymmetry comparison within a topic. Here is the full reference with adjacency warnings for commonly confused pairs:
+The 28 topic buckets enable apples-to-apples asymmetry comparison within a topic. Here is the full reference with adjacency warnings for commonly confused pairs:
 
 | # | Bucket | What It Captures | Confusable With |
 |---|--------|------------------|-----------------|
@@ -1015,6 +1015,7 @@ The 27 topic buckets enable apples-to-apples asymmetry comparison within a topic
 | 25 | `energy_climate` | Fossil fuels, carbon emissions, renewables, climate policy | `infrastructure_impact` |
 | 26 | `hardware_wearables` | Smart glasses, VR/AR headsets, fitness trackers | `product_launch` |
 | 27 | `consumer_protection` | AG enforcement, deceptive practices, UDAP, dark patterns | `litigation`, `child_safety` |
+| 28 | `content_licensing` | Publishing fees, neighboring rights, content compensation, news licensing | `antitrust_regulation`, `litigation` |
 
 **Usage tip:** `financial_results` confidence ≥ 0.4 is the trigger for the VADER inflation warning (see Genre-Aware Analysis). See `examples/topic_classification_demo.py` for a runnable demo.
 

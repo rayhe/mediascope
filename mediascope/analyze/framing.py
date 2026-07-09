@@ -2620,6 +2620,17 @@ _PRECEDENT_FRAMING_PATTERNS: list[re.Pattern] = [
         r"decision|ruling|enforcement|crackdown|intervention)\b",
         re.IGNORECASE,
     ),
+    # "largest/biggest ever" — historical supremacy without temporal anchor.
+    # "the largest ever in a case involving" / "biggest penalty ever imposed"
+    # Gap discovered via Gizmodo Meta $1.4T article (Jul 2026): FTC quote
+    # "the 'largest ever in a case involving an FTC rule violation'" was
+    # not detected because the pattern required "since YYYY" or "in N years."
+    re.compile(
+        r"\b(?:largest|biggest|most\s+severe|most\s+significant|highest|"
+        r"steepest|heaviest|greatest)\s+"
+        r"(?:\w+\s+){0,3}ever\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["precedent_framing"] = _PRECEDENT_FRAMING_PATTERNS
@@ -3427,6 +3438,21 @@ _CONFESSION_FRAMING_PATTERNS: list[re.Pattern] = [
         r"(?:also\s+)?"
         r"(?:admit(?:ted|s)?|conced(?:ed|es|ing)|acknowledg(?:ed|es|ing))"
         r"\s+(?:that\b|\")",
+        re.IGNORECASE,
+    ),
+    # Auxiliary verb forms: "X have/has/had admitted" — common in
+    # past-perfect editorial constructions like "Meta executives have
+    # admitted to investors."  Also handles company-name + lowercase
+    # role nouns like "Meta executives", "Apple engineers", etc.
+    re.compile(
+        r"\b(?:[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?|"
+        r"[A-Z][a-z]+\s+(?:executives?|officials?|engineers?|"
+        r"managers?|leaders?|spokesperson|representatives?|"
+        r"insiders?|employees?|staff|leadership))"
+        r"\s+(?:also\s+)?"
+        r"(?:ha(?:ve|s|d)\s+)?"
+        r"(?:admit(?:ted|s)?|conced(?:ed|es|ing)|acknowledg(?:ed|es|ing))"
+        r"\s+(?:that\b|\"|to\s)",
         re.IGNORECASE,
     ),
     # Headline-style: "X Admits Y" — title case suggests headline placement.
@@ -4326,13 +4352,14 @@ _DEVICE_PATTERNS["regulatory_favoritism"] = _REGULATORY_FAVORITISM_PATTERNS
 # language, creating a sense of mounting danger that may exceed what the
 # sourced facts support.
 _ESCALATION_AMPLIFICATION_PATTERNS: list[re.Pattern] = [
-    # "escalating/growing/deepening" + threat noun
+    # "escalating/growing/deepening/mounting" + threat noun
     re.compile(
         r"\b(?:escalat(?:ing|ed)|deepen(?:ing|ed)|intensif(?:ying|ied)|"
-        r"worsen(?:ing|ed)|compound(?:ing|ed))\s+"
+        r"worsen(?:ing|ed)|compound(?:ing|ed)|mounting)\s+"
         r"(?:concern|threat|risk|danger|crisis|tension|conflict|"
         r"fear|worry|alarm|anxiety|unease|backlash|pressure|"
-        r"confrontation|standoff|dispute)s?\b",
+        r"confrontation|standoff|dispute|litigation|scrutiny|"
+        r"legal\s+(?:challenge|battle|trouble|problem))s?\b",
         re.IGNORECASE,
     ),
     # "increasingly" + adjective describing negative state
