@@ -605,6 +605,12 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "playing catch-up", "playing catch up",
     "white flag",
     "retreat", "retreating",
+    # Technical delegitimization — loaded characterizations of tech quality (Jul 9)
+    "brittle", "flaky",
+    # Dramatic departure/talent framing (Jul 9)
+    "splashy departure", "splashy",
+    # Resignation/normalization framing (Jul 9)
+    "grown accustomed",
 ]
 
 # Passive/victim vs. active/powerful framing indicators

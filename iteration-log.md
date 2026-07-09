@@ -17025,3 +17025,64 @@ While updating structural consistency guards, fixed 3 pre-existing drift issues:
 - **Journalists:** 176 (553 auto-detected migrations)
 
 **Commit:** (pending)
+
+---
+
+## 2026-07-09 01:00 PT — Type A (Article Deep Dive)
+
+### Article: MIT Technology Review — "World models: 10 Things That Matter in AI Right Now" (2026-04-21)
+
+Staff-written explainer positioning world models as the next AI paradigm. 542 words. Notable for framing Meta solely as the place LeCun left ("splashy departure from Meta") with zero mention of Meta FAIR's world-model research.
+
+### Toolkit Fixes
+
+#### 1. MIT TR YAML profile parse error — FIXED
+`profiles/mit-tech-review.yaml` had structural YAML error at line 593: `- partner:` list items at wrong indent level under `mit_corporate_research_partnerships`. Created `hardware_program_partners:` key with proper nesting. Fixed stray `relevance:` field orphaned from Honeywell entry.
+
+#### 2. Guardian YAML profile parse error — FIXED
+`profiles/guardian.yaml` had list items split across `source_urls:` and `date_added:` — consolidated URLs under `source_urls:` and moved `date_added:` to proper scalar position.
+
+#### 3. NYTimes YAML profile parse error — FIXED
+`profiles/nytimes.yaml` had `last_updated:` at wrong indent level in `insider_transactions:` sequence — moved into list item mapping.
+
+**Result:** All 6 publication profiles now parse successfully (was 3/6).
+
+#### 4. Emotional language additions — FIXED
+Added 5 terms to `EMOTIONAL_LANGUAGE` (836 → 841):
+- Technical delegitimization: "brittle," "flaky"
+- Dramatic departure framing: "splashy departure," "splashy"
+- Resignation normalization: "grown accustomed"
+
+emotional_language_intensity for the article: 0.0 → 0.369.
+
+#### 5. CLI `PublicationProfile` subscript access — FIXED
+Added `__getitem__` to `PublicationProfile` dataclass in `config.py` to support `profile['name']` syntax used by CLI.
+
+#### 6. CLI `ArticleAnalyzer` constructor mismatch — FIXED
+Fixed `cli.py` passing wrong kwargs (`db=db, profile=profile`) to `ArticleAnalyzer()` which only accepts `target_entity`.
+
+### Analysis Findings
+- **15 entity mentions** across 5 clusters. Primary: Google (4 mentions). Meta: 2 mentions (both about LeCun leaving).
+- **3 framing devices detected** (1 trend_bundling, 2 ironic_quotation). Manual analysis identified 4 additional: "splashy departure" framing, technical delegitimization pattern, selective company agency, "modest applications" dampener.
+- **Sentiment:** VADER 0.669 (moderately positive), speculative_language_ratio 0.461 (high). Article is structurally built on speculation.
+- **0 sources extracted** — article uses 100% paraphrased sourcing (zero direct quotes from human sources). Paraphrase detection is a toolkit gap.
+
+### Doc Updates
+- QUALITY_STANDARDS.md: emotional language 836→841, annotated articles 133→134
+- METHODOLOGY.md: annotated articles 133→134
+- test_structural_consistency.py: emotional language guard 836→841
+
+### Sample Output
+- `examples/sample_output/mit_tr_world_models_ai_2026_04_21_analysis.md`
+
+### Cumulative Stats
+- **Tests:** 2,018+ (was 2,018) — 85 test files
+- **Framing device types:** 89 (82 pattern-matched + 7 structural)
+- **Total regex patterns:** 507
+- **Annotated articles:** 134 (was 133)
+- **Emotional language terms:** 841 (was 836)
+- **Entity clusters:** 78
+- **Journalists:** 176 (553 auto-detected migrations)
+- **Publication profiles loading:** 6/6 (was 3/6)
+
+**Commit:** (pending)

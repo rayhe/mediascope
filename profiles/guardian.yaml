@@ -1120,10 +1120,10 @@ ai_content_marketplace_landscape:
   source_urls:
     - "https://wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00"
     - "https://digiday.com/media/media-briefing-turning-scraped-content-into-paid-assets-amazon-and-microsoft-build-ai-marketplaces/"
-  date_added: "2026-07-06"
     - "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/"
     - "https://blog.cloudflare.com/"
     - "https://thetechdata.com/cloudflare-empowers-the-agentic-internet/"
+  date_added: "2026-07-06"
   notes: >
     ANALYTICAL SIGNIFICANCE: Cloudflare serves a significant portion of all internet traffic.
     Its default-block policy creates a de facto industry standard that complements the CMA's

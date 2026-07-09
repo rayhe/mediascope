@@ -244,7 +244,7 @@ def analyze(publication, target, since, force):
         )
     )
 
-    analyzer = ArticleAnalyzer(db=db, profile=profile)
+    analyzer = ArticleAnalyzer(target_entity=target)
 
     with Progress(
         SpinnerColumn(),
