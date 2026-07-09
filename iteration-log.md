@@ -17063,6 +17063,28 @@ While updating structural consistency guards, fixed 3 pre-existing drift issues:
 
 ---
 
+### 2026-07-09 03:00 PT — Type B: Journalist Research
+
+**Focus:** Elizabeth Lopatto (The Verge) profile + duplicate cleanup
+
+**Work done:**
+1. **New profile: Elizabeth Lopatto** — Full career arc: Kenyon Review blog founder (~2006) → Bloomberg News science/pharma reporter (7 years, ~2007–2014) → The Verge (science editor 2014, deputy editor 2018, senior reporter 2022–present). Key coverage: Holmes/Theranos trial, SBF/FTX trial, Musk v. OpenAI trial, prediction markets, Silicon Valley cultural critique. Sources: TalkingBizNews, Computer History Museum, WCSJ 2017, Kenyon Review archives, Science Friday, ScienceWriters conference.
+2. **Kate Knibbs duplicate removed** — Discovered duplicate profile appended at line ~12028; original thorough profile at line ~6090 retained.
+3. **YAML structure fix** — `yaml.dump` had stripped the `journalists:` wrapper key; re-wrapped to restore valid structure.
+4. **Doc counts corrected** — README.md, EDITORIAL_HISTORIES.md, careers_demo.py all updated to match YAML truth (177 journalists, 173 multi-pub, 555 migrations).
+
+**Cumulative stats:**
+- **Tests:** 97/97 structural consistency (all passing)
+- **Journalists:** 177 (was 176)
+- **Migrations:** 555 (was 553)
+- **Multi-publication:** 173 (was 172)
+- **Framing device types:** 90
+- **Annotated articles:** 135
+
+**Commit:** (below)
+
+---
+
 ## 2026-07-09 01:00 PT — Type A (Article Deep Dive)
 
 ### Article: MIT Technology Review — "World models: 10 Things That Matter in AI Right Now" (2026-04-21)
