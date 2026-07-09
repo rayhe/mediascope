@@ -2,6 +2,43 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-09 10:00 PT — Type A: Article Deep Dive (MIT Technology Review)
+
+**Article:** "OpenAI has finally released open-weight language models" (MIT Technology Review)
+**Commit:** `1451f51`
+
+### Article Summary
+MIT TR covers OpenAI releasing "gpt-oss" open-weight models under Apache 2.0 license. Meta's pivot from open (Llama) to closed (Muse) models framed as creating an opportunity. Heavy geopolitical framing (US vs China, "democratic AI rails," "soft power"). 4 named sources, all OpenAI-aligned or industry-positive on open models; zero Meta sources despite 3 paragraphs discussing Meta.
+
+### Toolkit Improvements
+
+**New framing device: `competitive_displacement`** (84th pattern-matched, 91 total)
+- Detects temporal conjunction framing where Entity A's action is framed as filling a vacuum left by Entity B's retreat or strategic pivot
+- 4 regex patterns covering: "at a time when X is reorienting/retreating," "notable as X cedes ground," "filling the void left by," "previously dominated... may be losing"
+- Added to adversarial device types (27 total) — positions subject as losing ground
+
+**Entity cluster additions** (81 clusters, 786 aliases):
+- New cluster: **AI Research Orgs** — Allen Institute for AI, AI2, EleutherAI
+- New cluster: **HuggingFace** — HuggingFace, Hugging Face, Clement Delangue
+- **Academic/Research** expanded (+5): Princeton University, Princeton, Peter Henderson, Percy Liang, Rishi Bommasani
+- **OpenAI** expanded (+3): GPT-2, gpt-oss, Miles Brundage
+
+**Manual analysis gaps documented:**
+- Source selection asymmetry: all 4 sources aligned with OpenAI; zero Meta voices despite Meta being secondary subject
+- Geopolitical soft-power framing distinct from regulatory pressure (existing pattern didn't fire)
+- Political alignment framing (OpenAI positioning as aligned with Trump AI Action Plan)
+
+### Stats
+| Metric | Before | After |
+|--------|--------|-------|
+| Framing device types | 90 (83+7) | 91 (84+7) |
+| Regex patterns | 515 | 519 |
+| Entity clusters | 79 | 81 |
+| Entity aliases | 780 | 786 |
+| Adversarial types | 26 | 27 |
+| Annotated articles | 137 | 138 |
+| Tests | 2,110 / 89 files | 2,129 / 90 files |
+
 ## 2026-07-09 07:00 PT — Type D: Toolkit Quality & Documentation
 
 **Focus:** Quote-context suppression for speculative_framing (fixes financial article false-positive risk) + comprehensive documentation staleness sweep.
