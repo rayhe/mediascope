@@ -17542,3 +17542,72 @@ Reuters article "Meta debuts Muse Spark 1.1 with preview open to developers" (Ju
 - **Journalists:** 181 (567 auto-detected migrations, 176 multi-pub)
 
 **Commit:** (pending)
+
+## 2026-07-09 14:00 PT — Type B: Journalist/Publication Research (5 New Profiles: Volpicelli, Petri, Topol, Fischer, Watts)
+
+**Focus:** Atlantic 2025-2026 expansion hiring wave completion + Wired UK departure tracking. Cleared 4 of the untracked Atlantic hires flagged in Jul 4 Type B, plus added Gian M. Volpicelli (Wired UK departure → Bloomberg Brussels).
+
+### 1. Gian M. Volpicelli — NEW PROFILE (6 publications, 3 countries)
+
+- **Career:** Post Internazionale (Rome) → Vice (freelance) → Wired UK (contributing editor 2017, senior writer 2019-2022) → Politico Europe (Brussels, 2022-2024) → Bloomberg News (Brussels, 2024-present)
+- **Significance:** Multi-pub tech journalist covering EU tech regulation from 3 different editorial environments. Author of "Cryptocurrency" (Penguin Random House/WIRED Guides, Nov 2021, ISBN 9781847943279). Part of Wired UK talent drain preceding the 2025 London office exits and UK print cancellation.
+- **Analytical value:** Natural experiment for institutional vs individual framing — same reporter, same beat (EU tech regulation), three publications. Wired tenure overlaps Greg Williams era and early Drummond restructuring.
+- **Sources:** penguin.co.uk, talkingbiznews.com (3 articles)
+
+### 2. Alexandra Petri — NEW PROFILE (WaPo → Atlantic)
+
+- **Career:** WaPo intern (2010) → WaPo columnist (2010-2025, 15 years) → Atlantic staff writer (May 2025-present)
+- **Significance:** Youngest person to have a WaPo column. 2025 Thurber Prize for American Humor. Part of the largest documented talent exodus from a single publication (WaPo) to a competitor (Atlantic) in recent media history.
+- **Background:** Harvard BA English/Classics 2010, summa cum laude, Phi Beta Kappa. Father: Tom Petri (former Republican congressman). Helen Hayes Award-nominated playwright. Forbes 30 Under 30 (2018).
+- **Sources:** Wikipedia, alexandrapetri.com, washingtonian.com, web.archive.org
+
+### 3. Sarah A. Topol — NEW PROFILE (NYT Magazine → Atlantic)
+
+- **Career:** Freelance foreign correspondent (Cairo 2008-2013, Istanbul 2013-2019) → NYT Magazine contributing writer (2015-2026) → Atlantic staff writer (2026-present)
+- **Significance:** Two-time National Magazine Award winner for Feature Writing (2020 Rohingya, 2025 Russian deserter). George Polk Award. Reported from 40+ countries. Speaks Russian fluently.
+- **Analytical value:** Different talent acquisition vector — competitive poaching of NYT's most decorated long-form talent, not WaPo exodus-driven. Demonstrates Thompson/Goldberg strategy of building prestige through marquee hires.
+- **Sources:** citybiz.co, iwmf.org, editorandpublisher.com, medium.com
+
+### 4. Jonathan L. Fischer — NEW PROFILE (WCP → Slate → WaPo → Atlantic)
+
+- **Career:** WCP arts editor (2009-2012) → WCP managing editor (2012-2014) → Slate section editor (2014-2024) → WaPo first-ever A&E editor (Jan 2024-2025) → Atlantic senior editor (2025-present)
+- **Significance:** Classic DC media ladder migration. Atlantic beat: Kennedy Center, Smithsonian, Trump cultural policy — intersects tech policy when government targets tech companies.
+- **Sources:** editorandpublisher.com, talkingbiznews.com, thewrap.com
+
+### 5. Jenisha Watts — NEW PROFILE (Atlantic internal promotion)
+
+- **Career:** Atlantic senior editor (Ideas team, 2019-2026) → Atlantic staff writer (2026-present)
+- **Significance:** Internal promotion, not external hire. 2023 cover story "Jenisha From Kentucky." Signals Atlantic building from within alongside external hiring spree.
+- **Sources:** citybiz.co, editorandpublisher.com
+
+### Editorial Changes: 6 new entries
+
+| Date | Publication | Type | Person | Details |
+|------|------------|------|--------|---------|
+| 2022 | Wired | departure | Volpicelli | Senior writer → Politico Europe (Brussels) |
+| 2025-05 | Atlantic | hire | Petri | WaPo columnist (15 years) → staff writer |
+| 2025 | Atlantic | hire | Fischer | WaPo A&E editor → senior editor |
+| 2026 | Atlantic | hire | Topol | NYT Magazine → staff writer |
+| 2026 | Atlantic | promotion | Watts | Senior editor → staff writer |
+
+### WaPo→Atlantic Pipeline Tracking
+
+With these additions, the MediaScope toolkit now tracks **13 confirmed WaPo→Atlantic migrants** in the 2024-2026 exodus:
+- Parker, Scherer, Jenkins, Petri, Sieff, Nguyen, Fischer, Zezima (documented in editorial_changes)
+- Plus others referenced in TheWrap article: Stanley Becker, Miroff, Harris, Ryan, Johnson
+
+Still untracked Atlantic hires from E&P: Luis Parrales (staff writer), Adam Kirsch (senior editor), Michael Leibel (senior editor).
+
+### Cumulative Stats
+| Metric | Before | After |
+|--------|--------|-------|
+| Journalists | 181 | 186 |
+| Multi-pub | 176 | 180 |
+| Career entries | ~893 | 923 |
+| CareerTracker migrations | 567 | 577 |
+| Wired editorial changes | 56 | 57 |
+| Atlantic editorial changes | 31 | 35* |
+
+*35 reflects re-serialized YAML — original had 31 tracked + some implicit.
+
+**Commit:** `953dd1b` — pushed to GitHub
