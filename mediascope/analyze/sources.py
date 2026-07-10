@@ -2120,6 +2120,110 @@ def extract_sources(text: str) -> list[SourceMention]:
                 source_type="legal_party",
             ))
 
+    # ---- Post-extraction: merge legal_party sources with earlier named/org
+    # sources when the legal_party descriptor is a definite-article variant
+    # of an established named source.  Example: "the commission said" is a
+    # coreference for "European Commission" already extracted.
+    # Discovered in CNN EU DSA addictive design article (Jul 10, 2026):
+    # "the commission said" was extracted as a separate source from
+    # "European Commission".
+    _legal_party_indices_to_drop: list[int] = []
+    for idx, src in enumerate(sources):
+        if src.source_type != "legal_party":
+            continue
+        # Extract the core noun from "the [noun] said" descriptor.
+        # The legal_party name is the full match like "the commission said".
+        descriptor_lower = src.name.lower()
+        # Strip leading "the " and trailing " <verb>"
+        core = re.sub(
+            r"^the\s+", "",
+            re.sub(rf"\s+(?:{verb_alternation})$", "", descriptor_lower),
+        )
+        if not core:
+            continue
+        # Check if any earlier source's canonical name contains the core word
+        for earlier_idx, earlier_src in enumerate(sources):
+            if earlier_idx == idx:
+                continue
+            if earlier_src.source_type == "legal_party":
+                continue
+            # "commission" is contained in "European Commission"
+            if core in earlier_src.name.lower():
+                _legal_party_indices_to_drop.append(idx)
+                # Increment the earlier source's quote count
+                earlier_src.quote_count += src.quote_count
+                break
+    if _legal_party_indices_to_drop:
+        sources = [s for i, s in enumerate(sources)
+                   if i not in _legal_party_indices_to_drop]
+
+    # ---- Post-extraction: research report sources ----
+    # Pattern: "a report from researchers at [Institution] ... found that ..."
+    # Academic/institutional research cited as evidence.
+    # Discovered in CNN EU DSA article (Jul 10, 2026): NYU/Northeastern
+    # research finding was not extracted as a source.
+    _research_verbs = (
+        r"found|concluded|determined|showed|demonstrated|revealed|"
+        r"estimated|suggested|indicated|reported|confirmed|observed"
+    )
+    _research_report_patterns = [
+        # "a report from researchers at [Institution] [and [Institution]] found that"
+        re.compile(
+            r"\b(?:a|the)\s+(?:report|study|survey|analysis|paper|investigation)"
+            r"\s+(?:from|by)\s+(?:researchers?|scientists?|academics?|scholars?)"
+            r"\s+at\s+([A-Z][A-Za-z\s]+?(?:\s+and\s+[A-Z][A-Za-z\s]+?)?)"
+            rf"\s+(?:[\w\s]{{0,80}})\s+(?:{_research_verbs})\s+that\b",
+            re.IGNORECASE,
+        ),
+        # "researchers at [Institution] found that"
+        re.compile(
+            r"\b(?:researchers?|scientists?|academics?|scholars?)"
+            r"\s+(?:at|from)\s+([A-Z][A-Za-z\s]+?(?:\s+and\s+[A-Z][A-Za-z\s]+?)?)"
+            rf"\s+(?:[\w\s]{{0,40}})\s+(?:{_research_verbs})\s+that\b",
+            re.IGNORECASE,
+        ),
+    ]
+    for pat in _research_report_patterns:
+        for m in pat.finditer(text):
+            inst_name = m.group(1).strip()
+            # Clean up trailing common words that aren't part of the name
+            inst_name = re.sub(r"\s+(?:evaluating|examining|studying|measuring|assessing)\b.*$", "", inst_name)
+            inst_lower = inst_name.lower()
+            # Containment-aware dedup: skip if this name is a substring of
+            # an existing name (existing is more complete) or vice-versa.
+            # When the new name is a superset of an existing one, replace
+            # the shorter entry so the most complete institution name wins.
+            _existing_lower = {n.lower() for n in seen_names}
+            if inst_lower in _existing_lower:
+                continue
+            is_substring_of_existing = any(
+                inst_lower in ex for ex in _existing_lower
+            )
+            if is_substring_of_existing:
+                continue
+            # If an existing name is a substring of the new (longer) name,
+            # replace it in both seen_names and sources list.
+            _shorter_existing = [
+                n for n in seen_names if n.lower() in inst_lower and n.lower() != inst_lower
+            ]
+            for shorter in _shorter_existing:
+                seen_names.discard(shorter)
+                sources[:] = [s for s in sources if s.name != shorter]
+            seen_names.add(inst_name)
+
+            ctx_start = max(0, m.start() - 50)
+            ctx_end = min(len(text), m.end() + 200)
+
+            sources.append(SourceMention(
+                name=inst_name,
+                is_anonymous=False,
+                is_expert=True,
+                affiliation=inst_name,
+                quote=_extract_nearby_quote(text, m.start(), m.end()),
+                attribution_verb="found",
+                source_type="research_report",
+            ))
+
     return sources
 
 
