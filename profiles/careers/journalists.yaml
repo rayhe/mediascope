@@ -11690,3 +11690,111 @@ journalists:
     year: '2025'
     notes: Shortlisted for Victorian Premier's Literary Awards. Investigation of Australian conspiracy theories.
     source_url: https://australiainstitute.org.au
+- career:
+  - beat: general
+    event_type: education
+    notes: 'Grew up in Ladera Heights, Los Angeles. Founded Spook literary magazine in 2012, hailed by the Los Angeles Review of Books as "an invaluable contribution to the cultural conversation." Brooklyn Magazine named him to "100 Most Influential People in Brooklyn Culture" (2016). Magic Johnson "32 Under 32" list honoree.'
+    publication: independent
+    role: founder
+    start: '2012'
+    end: '2012'
+  - beat: culture, diversity
+    end: '2015'
+    event_type: hired
+    notes: 'Editor at Gawker. Described by Wired as "one of the site''s more visible advocates for inclusion." Also wrote for Complex during this period. Coverage included Outkast, Ferguson, police brutality, diversity in book publishing and journalism. Departed when Gawker cut seven staffers in Nov 2015 pivot to politics.'
+    publication: gawker
+    role: editor
+    source_url: https://en.wikipedia.org/wiki/Jason_Parham
+    start: '2014'
+  - beat: music, culture
+    end: 2017-06
+    event_type: hired
+    notes: 'Senior editor at The Fader, a music and culture publication. Last role before joining Wired. Hired by Nicholas Thompson alongside Vera Titunik (features editor) and Ivylise Simones (design director, platforms).'
+    publication: the-fader
+    role: senior_editor
+    source_url: https://talkingbiznews.com/they-talk-biz-news/wired-hires-features-editor-senior-writer/
+    start: '2016'
+  - beat: culture, digital culture, race
+    event_type: hired
+    notes: 'Senior writer on Wired culture desk. Reports to Michael Calore. Based in New York. First day June 26, 2017. Hired by Nicholas Thompson. Beat: black creative labor, emerging trends, digital culture of sex, internet culture. Notable pieces: "TikTok and the Evolution of Digital Blackface" (Aug 2020), "Why I (Still) Love Tech: In Defense of a Difficult Industry" (May 2019), "How Oprah''s Network Finally Found Its Voice" (Jun 2018). Producer of "Black Twitter: A People''s History" documentary/show. Describes himself as "essayist" bridging criticism and journalism. Self-description on Longform podcast: "I''m always writing about things I like and want to hear about." Also writes for LA Times style magazine Image as regular contributor. Performs regularly in Pop-Up live magazine show.'
+    publication: wired
+    role: senior_writer
+    source_url: https://talkingbiznews.com/they-talk-biz-news/wired-hires-features-editor-senior-writer/
+    start: 2017-06
+  multi_publication: true
+  name: Jason Parham
+  notes: 'Key migration: Gawker → The Fader → Wired. Culture desk senior writer since 2017, one of Wired''s longest-tenured current writers. Born 1986 in LA (Ladera Heights). Founded Spook literary magazine (2012) — journal by and for creatives of color. Also produced "Black Twitter: A People''s History" documentary. Has written for Atlantic, Awl, NYT Book Review, NYT Magazine, Village Voice, LA Times. NOT on tech business or AI beat — covers culture, race, and digital trends. MEDIASCOPE RELEVANCE: (1) Culture desk is editorially separate from business desk (Schiffer) and science desk (Marchman), so Parham''s framing is unlikely to directly touch Meta coverage; (2) However, his digital culture/race beat could intersect with content moderation and algorithmic bias stories that touch Meta; (3) His Gawker background (adversarial, advocacy-oriented) is a data point for Wired''s editorial DNA; (4) His 9+ year tenure makes him institutional memory for the Thompson-to-Drummond editorial transition.'
+  source_urls:
+  - https://en.wikipedia.org/wiki/Jason_Parham
+  - https://talkingbiznews.com/they-talk-biz-news/wired-hires-features-editor-senior-writer/
+  - https://jasonparham.com
+- career:
+  - beat: law, legal affairs
+    event_type: hired
+    notes: 'Early career at The American Lawyer magazine. Overlapped at the publication with Ellen Pollock (who later became NYT Business editor and would re-recruit Titunik to NYT in 2024) and Jim Stewart.'
+    publication: american-lawyer
+    role: editor
+    start: '1992'
+    end: '1997'
+  - beat: business, finance
+    end: '2003'
+    event_type: hired
+    notes: 'Senior editor at Fortune Magazine. 6-year tenure in business journalism at a flagship Time Inc. publication.'
+    publication: fortune
+    role: senior_editor
+    source_url: https://theorg.com/org/the-new-york-times/org-chart/vera-titunik
+    start: '1997'
+  - beat: culture, features
+    end: '2013'
+    event_type: hired
+    notes: 'Story editor at The New York Times Magazine. First of two stints at the Times. 10-year tenure editing longform features for the Magazine section.'
+    publication: nytimes
+    role: story_editor
+    source_url: https://talkingbiznews.com/media-news/titunik-returns-to-ny-times-biz-news-desk/
+    start: '2003'
+  - beat: business
+    end: 2016-03
+    event_type: promoted
+    notes: 'Promoted from Magazine to editor of Sunday Business section at the NYT. Edited David Segal and other business reporters. Combined with Magazine tenure, total first NYT stint was ~13 years.'
+    publication: nytimes
+    role: editor_sunday_business
+    source_url: https://talkingbiznews.com/media-news/titunik-returns-to-ny-times-biz-news-desk/
+    start: '2013'
+  - beat: digital, general
+    end: 2017-07
+    event_type: hired
+    notes: 'Executive editor of newyorker.com. Brief stint (~1 year) at Condé Nast''s flagship literary publication. Role focused on digital operations and editorial for the website. ADVANCE/CONDÉ NAST ORBIT: This was Titunik''s first position within the Advance Publications/Condé Nast ecosystem.'
+    publication: new-yorker
+    role: executive_editor
+    source_url: https://talkingbiznews.com/they-talk-biz-news/wired-hires-features-editor-senior-writer/
+    start: 2016-03
+  - beat: features, longform
+    end: 2021-07
+    event_type: hired
+    notes: 'Features editor at Wired. Hired by Nicholas Thompson (EIC). Based in New York. Started July 17, 2017. Assigned, edited, and oversaw print features. Thompson praised her: "Vera is one of the best editors around. And one of the best people too." Hired alongside Jason Parham (senior writer) and Ivylise Simones (design director). CONDÉ NAST INTERNAL: Lateral move within Condé Nast from The New Yorker to Wired. 4-year tenure spanning the Thompson-to-Drummond editorial transition.'
+    publication: wired
+    role: features_editor
+    source_url: https://talkingbiznews.com/they-talk-biz-news/wired-hires-features-editor-senior-writer/
+    start: 2017-07
+  - beat: enterprise, solutions journalism
+    end: '2024'
+    event_type: hired
+    notes: 'Deputy editor of Headway initiative at NYT. Returned to the Times after 5 years in Condé Nast orbit (New Yorker + Wired). Headway focused on enterprise stories about national and community challenges and solutions. Matt Thompson (Headway editor) described her as "among the most humane, diligent, thoughtful and creative editors I know."'
+    publication: nytimes
+    role: deputy_editor_headway
+    source_url: https://www.nytco.com/press/introducing-the-headway-team/
+    start: 2021-07
+  - beat: business, enterprise
+    event_type: hired
+    notes: 'Enterprise editor, Business at NYT. Recruited back to Business desk by Ellen Pollock (Business editor). Works with David Segal, Conor Dougherty, and other reporters on feature writing and beat reporting for Sunday Business and daily report. Third stint at the NYT.'
+    publication: nytimes
+    role: enterprise_editor_business
+    source_url: https://talkingbiznews.com/media-news/titunik-returns-to-ny-times-biz-news-desk/
+    start: '2024'
+  multi_publication: true
+  name: Vera Titunik
+  notes: 'Key migration: American Lawyer → Fortune → NYT (13 years) → New Yorker → Wired → NYT Headway → NYT Business. DOUBLE MIGRATION through Condé Nast: NYT → New Yorker (Condé Nast) → Wired (Condé Nast) → back to NYT. Education: Columbia University Graduate School of Journalism (MS), University of Wisconsin-Madison. MEDIASCOPE RELEVANCE: (1) CRITICAL DiD natural experiment — Titunik worked at BOTH Wired and NYT, giving us a rare same-editor, different-institution comparison for how editorial framing differs between Condé Nast and Sulzberger properties; (2) Her features editor role at Wired (2017-2021) means she shaped the longform feature voice during the Thompson-to-Drummond transition — she was the last Thompson-era features editor before Drummond reshaped the masthead; (3) Her return to NYT (a boomerang migration) after Condé Nast is the kind of career arc that the DiD regression framework was designed to study; (4) 30+ year career across American Lawyer, Fortune, NYT, New Yorker, and Wired makes her one of the most experienced editors in the tracked database. Currently at NYT — no longer at Wired.'
+  source_urls:
+  - https://talkingbiznews.com/they-talk-biz-news/wired-hires-features-editor-senior-writer/
+  - https://talkingbiznews.com/media-news/titunik-returns-to-ny-times-biz-news-desk/
+  - https://theorg.com/org/the-new-york-times/org-chart/vera-titunik
