@@ -18176,3 +18176,48 @@ Expand The Verge coverage from 25 to 34 tracked journalists using 2026 masthead 
 **Key insight:** The Susman Godfrey discovery is methodologically significant — it surfaces a non-obvious structural alignment between NYT and PMC/Verge through shared outside counsel. Neither publication discloses this shared legal posture when covering AI copyright issues. This is the kind of institutional-network finding the toolkit is designed to detect.
 
 **Sources:** Reuters (Jul 9, 2026), SDNY docket 1:23-cv-11195, susmangodfrey.com, Ars Technica (Britannica v. Perplexity), finance.yahoo.com (RDDT), marketbeat.com (analyst consensus), Wells Fargo equity research note (Jul 7)
+
+## 2026-07-10 07:00 PT — Type B: Journalist/Publication Research (Guardian Expansion: Reed, Beckett, Bogle + Oltman Update)
+
+**Focus:** Guardian had only 26 tracked journalists — fewest relative to its importance as a core publication. Added 3 new profiles and expanded 1 existing.
+
+**New profiles:**
+
+1. **Betsy Reed** (Guardian US editor-in-chief, Sep 2022–present)
+   - Career: Condé Nast Traveller (assistant, ~1990-92) → The Nation (senior→executive editor, 16 years, 1998-2014) → The Intercept (EIC, 8 years, 2015-2022) → Guardian US (EIC, 2022–present)
+   - KEY: Career started inside the Condé Nast empire (same corporate family as Wired). Not a current conflict, but part of the cross-publication talent network. Her Intercept background instilled adversarial-by-default editorial posture that shapes Guardian US tech coverage.
+   - Harvard A.B. in History and Literature, 1990
+   - Sources: Wikipedia, The Media Leader interview, Editor & Publisher, Talking Biz News
+
+2. **Lois Beckett** (Guardian US senior reporter, 2016–present)
+   - Career: SF Weekly (Village Voice Media Fellow, 2010) → Nieman Journalism Lab (contributor, 2010-11) → ProPublica (reporter, 5 years, 2011-2016) → Guardian US (senior reporter, 2016–present)
+   - Won 2011 Livingston Award for National Reporting. Harvard A.B. in Social Studies, 2005-2009
+   - Primary beats: gun policy, criminal justice, far-right. Tech-adjacent through surveillance/policing data journalism
+   - Sources: The Org, Social Science Space, Zócalo interview, Adweek
+
+3. **Ariel Bogle** (Guardian Australia investigations reporter, 2021–present)
+   - Career: ABC Australia (technology reporter, ~2017-2021) → Guardian Australia (investigations reporter, 2021–present)
+   - Walkley Award winner (Australia's Pulitzer equivalent). Kennedy Award. NSW Council for Civil Liberties journalism award
+   - Co-author of "Conspiracy Nation" (2025, shortlisted Victorian Premier's Literary Awards)
+   - Key investigation: secret Serco immigration detention risk-rating algorithm (Mar 2024)
+   - Sources: arielbogle.com, Podscan podcast credits
+
+**Updated:**
+
+- **Samantha Oltman:** Added Mother Jones online editorial fellowship (~2013-14) as earliest career stop. Added `multi_publication: true` flag (was missing). Added USC B.A. in Print Journalism and French. Expanded notes with CNN "Titans of Tech" executive production credit and Apple Podcasts "Sabotage" best show 2025. Full career now: Mother Jones → Wired → BuzzFeed News → Recode/Vox → Good Luck Media → Guardian → Bloomberg (7 publications in ~13 years)
+- Sources: Talking Biz News (multiple articles), Patriotic Millionaires conference bio
+
+**Analytical significance:**
+
+- **Betsy Reed's Condé Nast origin:** The Guardian US EIC started her career inside the same corporate family that owns Wired — our primary tracked publication. This is a verified cross-publication talent network connection, not a current conflict.
+- **Guardian→Bloomberg pipeline:** Oltman's Guardian→Bloomberg move (Feb–Jun 2026, only 4 months at Guardian) shows Bloomberg actively hiring from Guardian's AI coverage team. Sarah Frier's Bloomberg Global Tech desk is pulling editorial talent from multiple tracked publications.
+- **Guardian Australia coverage:** Ariel Bogle represents an editorially separate but institutionally aligned tech coverage pipeline. Her Serco algorithm investigation exemplifies the Guardian's surveillance-tech editorial posture.
+
+**Changes (5 files, +198/−7 lines, commit d6ad8d4):**
+- `profiles/careers/journalists.yaml`: +162 lines (3 new profiles + Oltman expansion)
+- `README.md`: updated counts to 211 journalists, 650 migrations
+- `docs/EDITORIAL_HISTORIES.md`: updated counts
+- `examples/careers_demo.py`: updated count reference
+- `iteration-log.md`: this entry
+
+**Stats after this iteration:** 211 journalists, 60 multi-publication, 650 auto-detected migrations, 48 Guardian career entries (was 26 journalists / 644 migrations). All 2,147 tests pass.
