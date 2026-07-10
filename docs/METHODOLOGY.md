@@ -141,6 +141,8 @@ More coverage ≠ more bias. We normalize by:
 
 ### 3.1 Standardized Topic Buckets
 
+> **Quick Reference:** For a scannable lookup card with boundary rules, adjacency warnings, and disambiguation examples, see [TOPIC_REFERENCE.md](TOPIC_REFERENCE.md).
+
 Articles are classified into 29 topic buckets to enable apples-to-apples comparison:
 
 | Topic | Keywords |

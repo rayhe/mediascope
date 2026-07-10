@@ -984,7 +984,7 @@ See `examples/same_event_comparison.py` for the `compare_multi_articles()` imple
 
 ## Topic Bucket Quick Reference
 
-The 29 topic buckets enable apples-to-apples asymmetry comparison within a topic. Here is the full reference with adjacency warnings for commonly confused pairs:
+The 29 topic buckets enable apples-to-apples asymmetry comparison within a topic. For the full reference with boundary rules, disambiguation examples, genre detection triggers, and multi-topic patterns, see [TOPIC_REFERENCE.md](TOPIC_REFERENCE.md). Here is the compact table with adjacency warnings for commonly confused pairs:
 
 | # | Bucket | What It Captures | Confusable With |
 |---|--------|------------------|-----------------|

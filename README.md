@@ -19,9 +19,10 @@ This is not an attack tool. It works equally well pointed at Fox News covering r
 
 1. **Ingests articles** from any publication via RSS feeds and web scraping
 2. **Detects entities** mentioned in coverage (companies, executives, products)
-3. **Analyzes sentiment** using an 8-dimension scoring framework (not just positive/negative)
-4. **Calculates asymmetry** — is Company X covered more negatively than peers, with statistical significance?
-5. **Maps ownership conflicts** — who owns the publication, what are their financial interests?
+3. **Classifies topics** into 29 standardized buckets for apples-to-apples comparison across companies (see [docs/TOPIC_REFERENCE.md](docs/TOPIC_REFERENCE.md))
+4. **Analyzes sentiment** using an 8-dimension scoring framework (not just positive/negative)
+5. **Calculates asymmetry** — is Company X covered more negatively than peers, with statistical significance?
+6. **Maps ownership conflicts** — who owns the publication, what are their financial interests?
 6. **Tracks litigation funding** — who profits from lawsuits against covered companies?
 7. **Generates disclosure statements** — ready-to-post conflict of interest disclosures
 8. **Produces reports** — weekly Markdown reports and HTML dashboards
@@ -250,6 +251,7 @@ Statistical methodology is documented at academic quality in [docs/METHODOLOGY.m
 |---|---|
 | [METHODOLOGY.md](docs/METHODOLOGY.md) | Full statistical methodology, scoring frameworks, and academic references (19 sections, 1,780 lines) |
 | [FRAMING_REFERENCE.md](docs/FRAMING_REFERENCE.md) | **Quick-reference card for all 92 framing device types** — scannable lookup during article analysis |
+| [TOPIC_REFERENCE.md](docs/TOPIC_REFERENCE.md) | **Quick-reference card for all 29 topic buckets** — boundary rules, adjacency warnings, genre detection triggers |
 | [QUALITY_STANDARDS.md](docs/QUALITY_STANDARDS.md) | Citation requirements, anti-slop standards, analytical rigor rules |
 | [AGENT_GUIDE.md](docs/AGENT_GUIDE.md) | AI agent integration: schemas, JSON formats, sample prompts, framework patterns |
 | [ADDING_PUBLICATIONS.md](docs/ADDING_PUBLICATIONS.md) | Step-by-step guide for creating new publication profiles |
