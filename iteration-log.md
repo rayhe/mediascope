@@ -17864,3 +17864,60 @@ Searched TalkingBizNews, ResponseSource, Muck Rack, DiaryDirectory, champions-sp
 
 **Commit:** `949d912` — pushed to GitHub
 **Sources:** TalkingBizNews (Hart hire, Datoo hire, Montgomery hire, Hern departure), ResponseSource (Datoo Jan 7 2026 announcement, Hart appointment), Muck Rack (Hern Economist profile, Datoo Bloomberg profile), champions-speakers.co.uk (Hern Economist bio), DiaryDirectory (Kerr Guardian appointment Jan 6 2025), Cision UK (Datoo media moves)
+
+---
+
+## 2026-07-09T22:00 — Type B: Journalist/Publication Research (The Verge Staff Expansion)
+
+### Focus
+Expand The Verge coverage from 25 to 34 tracked journalists using 2026 masthead data and sourced career timelines.
+
+### New Journalist Profiles (9)
+
+| Journalist | Role | Career Pipeline | Migration Value |
+|---|---|---|---|
+| Jacob Kastrenakes | Executive Editor | Verge intern (2013) → full-time → Executive Editor (2024) | Internal pipeline — institutional voice continuity |
+| Richard Lawler | Senior Editor | Engadget (2008–2022, 14yr) → The Verge (2022) | Long-tenure Engadget migration, gadget review culture transfer |
+| Josh Dzieza | Investigations Editor | Newsweek → Daily Beast → The Verge (2015) | Investigative journalism migration, exposed AI content mills |
+| Sarah Jeong | (Former) Senior Writer | The Verge → NYT Editorial Board → The Verge (return 2022) | Double migration — NYT→Verge return is rare and analytically valuable |
+| Justine Calma | Science Reporter | Grist → The Verge (2019) | Climate/environmental journalism pipeline |
+| Lauren Feiner | Policy Reporter | CNBC (2019–2024) → The Verge (2024) | Business/policy migration, antitrust coverage specialization |
+| Andrew J. Hawkins | Transportation Reporter | NYC Daily News → Crain's NY Business → The Verge (2016) | Local journalism → national tech pipeline |
+| Kevin Nguyen | Features Editor | GQ/Condé Nast → The Verge (2018) | Condé Nast → Vox Media cross-publisher migration |
+| Gaby Del Valle | Policy Reporter | VICE News → The Verge | Immigration/policy → tech policy pivot |
+
+### Editorial Changes (5)
+- Kevin Nguyen hired as Features Editor (2018)
+- Justine Calma hired as Science Reporter (2019-08)
+- Jacob Kastrenakes promoted to Executive Editor (2024-03-11)
+- Lauren Feiner hired from CNBC (2024-01-30)
+- Sarah Jeong returned from NYT (2022-01)
+
+### Key Analytical Findings
+
+1. **The Verge's editorial bench is now the deepest non-legacy-print operation in our database at 34 journalists** — surpassing Wired (29) and MIT Tech Review (17). The coverage gap was significant (25→34, +36%) and undermined same-event comparisons where Verge articles were analyzed without knowing the journalist's career context.
+
+2. **Kastrenakes intern→EIC pipeline is unique in our dataset.** No other tracked journalist rose from intern to executive editorial control at the same publication. This represents maximum institutional voice continuity — his editorial sensibilities were formed entirely within Verge culture.
+
+3. **Sarah Jeong's Verge→NYT→Verge double migration creates a natural experiment.** Did her NYT Editorial Board tenure (2018–2022) measurably shift her writing style, source selection, or framing when she returned? This is the first tracked double migration back to the originating publication.
+
+4. **Kevin Nguyen's Condé Nast→Verge migration extends the cross-publisher pipeline analysis.** Combined with the existing Condé Nast AI licensing deals with OpenAI/Amazon/Apple (Meta competitors), Nguyen's GQ background adds a soft cultural vector for how Verge features approach luxury tech, lifestyle tech, and consumer culture framing.
+
+### Changes
+- `profiles/careers/journalists.yaml`: +9 journalists (203 total)
+- `profiles/careers/editorial_changes.yaml`: +5 Verge editorial changes
+- `docs/EDITORIAL_HISTORIES.md`: journalist count 194→203, multi-pub 187→195, migrations 691→622 (corrected to match CareerTracker computation)
+- `README.md`: journalist count 194→203, migrations 691→622
+- `examples/careers_demo.py`: journalist count 194→203
+
+### Stats
+- Tests: 2,147 passing (unchanged count)
+- Journalists: 203 (was 194, +9)
+- Verge journalists: 34 (was 25, +9)
+- Multi-publication journalists: 195 (was 187, +8)
+- Auto-detected migrations: 622 (corrected — prior "691" used different computation; now consistent with CareerTracker.find_migrations())
+- Annotated articles: 140 (unchanged)
+- Emotional language terms: 850 (unchanged)
+
+**Commit:** `d4177d8` — pushed to GitHub
+**Sources:** thevergetoday.pages.dev (2026 masthead), Wikipedia (Verge ownership: Vox Media → PMX Global/Penske 2026), Columbia Journalism Review (Jeong NYT hire/controversy), Nieman Lab (Feiner CNBC→Verge), The Verge staff pages/bylines, Muck Rack profiles, LinkedIn (career verification)
