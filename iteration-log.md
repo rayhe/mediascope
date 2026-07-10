@@ -2,6 +2,75 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-10 20:00 PT — Type C: Ownership & Funding (OpenAI IPO Cross-Profile Implications + Stock Updates)
+
+**Focus:** OpenAI's confidential IPO filing (June 2026, $1T+ target) and BofA $520M credit line (Jul 8) create new cross-publication conflict vectors for every profile with AI licensing relationships. Stock price updates for RDDT (-3.10%), CHTR (-2.53%), WBD (-0.17%).
+
+**Changes:**
+
+### Wired profile (wired.yaml)
+- **RDDT price update:** $197.05 → $194.11 (Jul 10 afternoon, -3.10% from $200.31 prev close). Biggest single-day decline since mid-June. Broke below $200 support. Advance Reddit stake: $8.32B → $8.20B. Margin loan buffer narrowing (30-32% above offering vs 33-35% prior)
+- **CHTR price update:** $129.80 → $130.95 (Jul 10 afternoon, -2.53% from prev close but slight bounce from morning lows). Approaching 52-week low of $124.05. Q2 earnings Jul 24 added as catalyst note. Advance Charter stake: $2.68B → $2.70B
+- **WBD price update:** ~$26.15 Jul 8 → ~$26.59 Jul 10 (-0.17%). Advance WBD stake: ~$2.56B → ~$2.61B
+- **Advance total equity:** $13.56B → $13.51B (-$260M over 2 days, driven primarily by RDDT selloff)
+- **Portfolio concentration:** 60.7% Reddit (updated from 60.8%)
+- **NEW: OpenAI IPO cross-profile implications section** (39 lines): 5 implications: (1) Condé Nast deal transparency via SEC filings, (2) NYT litigation materiality for IPO risk factors, (3) Publisher negotiating leverage during IPO quiet period, (4) Reddit AI licensing renegotiation dynamics, (5) Anthropic parallel IPO creating dual-disclosure environment. Sources: Reuters Jul 8 (BofA credit), Bloomberg Law, SEC EDGAR
+
+### NYT profile (nytimes.yaml)
+- **NEW: OpenAI IPO implications subsection** (19 lines) within existing litigation section: (a) Mandatory S-1 risk disclosure of sanctions motion, (b) Settlement pressure during IPO quiet period, (c) Discovery scope expanding under SEC scrutiny. Connects sanctions motion (Jul 9) to IPO timeline for maximum litigation leverage assessment
+
+### Atlantic profile (atlantic.yaml)
+- **NEW: OpenAI IPO implications note** (17 lines) within OpenAI partnership section: SEC disclosure risk for "privileged access" co-development relationship, Atlantic Union transparency demand may become moot as SEC filings reveal deal structure. NEW political triangulation: LPJ Democratic giving vs OpenAI's reported 5% Trump administration stake proposal (~$42B) — Atlantic simultaneously co-developing products with potentially Trump-aligned company
+
+**Key finding — cross-cutting:**
+OpenAI's IPO is the single most significant near-term event for publisher-AI conflict transparency. Every bilateral licensing deal that has been opaque (Condé Nast, Atlantic, AP, Time, etc.) will face partial disclosure via OpenAI's aggregate content licensing cost reporting in S-1/10-K filings. Publishers with BOTH licensing deals AND litigation (NYT, potentially others) face asymmetric disclosure: their deal terms may surface through OpenAI's SEC filings before any court-ordered discovery produces them.
+
+**Stock data sources:**
+- Finnhub: RDDT $194.105 (intraday), CHTR $130.95 (intraday), WBD $26.585 (intraday)
+- Reuters: BofA $520M credit line to OpenAI (Jul 8, 2026)
+- Bloomberg Law: NYT sanctions motion (Jul 10, 2026)
+- StockTitan: RDDT $200.31 (Jul 9 close), market cap $37.6B
+
+**Tests:** 98 passed (structural consistency, no change)
+
+
+## 2026-07-10 18:00 PT — Type B: Journalist/Publication Research (Wired desk structure + 2 new profiles)
+
+**Focus:** Wired business desk hiring activity, two untracked journalist profiles with high DiD analytical value.
+
+**New journalist profiles (2):**
+
+1. **Jason Parham** — Senior writer, Wired culture desk (2017-present)
+   - Career: Gawker (editor, ~2014-2015) → The Fader (senior editor, ~2016-2017) → Wired (senior writer, Jun 2017-present)
+   - Born 1986 in LA (Ladera Heights). Founded Spook literary magazine (2012). Producer of "Black Twitter: A People's History" documentary.
+   - Reports to Michael Calore. Based in New York.
+   - Hired by Nicholas Thompson alongside Vera Titunik — both Jun/Jul 2017.
+   - 9+ year tenure spans Thompson-to-Drummond transition — longest-tenured current Wired culture writer.
+   - NOT on tech business/AI beat, but digital culture/race beat could intersect with content moderation and algorithmic bias stories touching Meta.
+   - Sources: Wikipedia, Talking Biz News, Loyola University bio, Longform Podcast #405.
+
+2. **Vera Titunik** — Enterprise editor, Business at NYT (currently); former Wired features editor
+   - Career: American Lawyer (~1992-1997) → Fortune (senior editor, 1997-2003) → NYT Magazine (story editor, 2003-2013) → NYT Sunday Business (editor, 2013-2016) → The New Yorker (executive editor of newyorker.com, 2016-2017) → Wired (features editor, Jul 2017-Jul 2021) → NYT Headway (deputy editor, Jul 2021-2024) → NYT Business (enterprise editor, 2024-present)
+   - Education: Columbia Journalism School MS, University of Wisconsin-Madison.
+   - CRITICAL DiD NATURAL EXPERIMENT: Double migration through Condé Nast (New Yorker → Wired → back to NYT). Only tracked editor who held editorial leadership roles at BOTH Wired AND NYT, enabling same-editor/different-institution framing comparison.
+   - Last Thompson-era features editor before Drummond reshaped the masthead.
+   - Ellen Pollock connection: both at American Lawyer early career; Pollock later recruited Titunik back to NYT Business desk in 2024.
+   - Sources: The Org, Editor & Publisher, Talking Biz News, NYTCo Headway announcement.
+
+**Research findings (not yet implemented — documented for future Type B):**
+- Wired's **chief business correspondent** position (posted Mar 15, 2026) remains UNFILLED as of Jul 10. This is a marquee role: 12+ years experience required, public personality, reports to Schiffer. The gap means Wired's business desk operates with no signature voice on par with Kara Swisher or Casey Newton.
+- Wired's business desk structure confirmed: Drummond → Barrett (exec editor) → Schiffer (Director, Business & Industry) → Matsakis + Kleeman (senior editors) + Kate Taylor (senior writer, AI/work) + Zeff (writer). Open: chief business correspondent + staff writer (Condé Nast Built In posting).
+- Additional untracked Wired journalists identified for future Type B: Daniel Oberhaus (staff writer, space/ML/energy, ex-Motherboard), Maria Streshinsky (executive editor, ex-Mother Jones/Atlantic/Pacific Standard), Ivylise Simones (design director, ex-Mother Jones/Village Voice).
+
+**Doc count updates:**
+- Journalists: 211 → 213
+- Auto-detected migrations: 651 → 657 (CareerTracker)
+- Distinct publications: 380+ → 388+
+- Multi-publication careers: 203 → 205
+- Files updated: README.md, EDITORIAL_HISTORIES.md, careers_demo.py, journalists.yaml
+
+**Commit:** `612cd93` — pushed to GitHub
+
 ## 2026-07-10 14:00 PT — Type A: Article Deep Dive
 
 **Articles analyzed:**
