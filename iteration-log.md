@@ -2,6 +2,33 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-10 05:00 PT — Type D: Toolkit Quality & Documentation (topic_classification_demo.py stale counts + missing buckets)
+
+**Focus:** Fix stale bucket counts and missing topic buckets in `topic_classification_demo.py`, and fix the genre detection demo that never triggered.
+
+**Problem discovered:** The demo file referenced "27-bucket" and "28-bucket" in multiple places despite the actual count being 29 (after `content_licensing` and `financial_markets` were added in previous iterations). The `BUCKET_DESCRIPTIONS` dict had only 27 entries — both new buckets were missing entirely. The genre detection sub-demo used a short sample text that scored `financial_results: 0.117`, well below the 0.4 trigger threshold, so it always printed "Financial genre NOT detected" — defeating the purpose of the demo.
+
+**Changes (1 file, +50/−9 lines, commit 3d96ee6):**
+
+### topic_classification_demo.py
+- **Fixed all stale count references:** docstring "28-bucket" → "29-bucket", `demo_single_classification()` header "27-Bucket" → "29-Bucket", `demo_topic_bucket_reference()` docstring "28-bucket" → "29-bucket", display header "27 Standardized Buckets" → "29 Standardized Buckets"
+- **Added `content_licensing` to `BUCKET_DESCRIPTIONS`:** "Publishing fees, neighboring rights, content compensation, news licensing deals"
+- **Added `financial_markets` to `BUCKET_DESCRIPTIONS`:** "Stock price, analyst ratings, price targets, valuations, market-cap, investment thesis"
+- **Added `content_licensing` sample article:** French antitrust Meta publishing fees (from real Reuters Jul 8 article). Classifies correctly: `content_licensing: 0.190`
+- **Added `financial_markets` sample article:** Barron's Meta gigawatt Iris stock catalyst (from real Jul 9 article). Classifies correctly: `financial_markets: 0.194`
+- **Added 3 new adjacency warnings:** `financial_markets ↔ financial_results`, `content_licensing ↔ antitrust_regulation`, `content_licensing ↔ litigation` (total adjacency pairs: 15, was 12)
+- **Fixed genre detection demo:** Enriched `financial_text` snippet with more earnings/financial keywords. Score: `financial_results: 0.518` (was 0.117). Genre detection now correctly fires with "⚠️ FINANCIAL GENRE DETECTED" instead of silently failing.
+
+**Verification:**
+- All 15 sample articles classify correctly (100% accuracy, was 13/13)
+- Genre detection demo now triggers as intended
+- All 2,147 existing tests pass unchanged (105.25s)
+- No other documentation files needed count updates — AGENT_GUIDE.md, METHODOLOGY.md, ARCHITECTURE.md, and README.md already had correct 29-bucket references from the Jul 9 Type A iteration
+
+**Why this matters:** The `topic_classification_demo.py` is the primary runnable reference for the topic classification system. Agents and developers using it as a guide would see 27 buckets listed but the actual system has 29 — a confusing discrepancy that could cause them to miss `content_licensing` and `financial_markets` in their analyses. The genre detection sub-demo silently failing is worse — it teaches that the feature doesn't work when it actually does.
+
+---
+
 ## 2026-07-10 04:00 PT — Type C: Ownership & Funding Deep Dive (Advance/Reddit Sublease, PMC Corporate Expansion, Snowflake Cortex AI Licensing)
 
 **Focus:** Multi-profile Type C update: Advance-Reddit financial entanglement, PMC corporate structure expansion, and cross-cutting AI licensing marketplace landscape.
