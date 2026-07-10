@@ -2,6 +2,34 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-10 04:00 PT — Type C: Ownership & Funding Deep Dive (Advance/Reddit Sublease, PMC Corporate Expansion, Snowflake Cortex AI Licensing)
+
+**Focus:** Multi-profile Type C update: Advance-Reddit financial entanglement, PMC corporate structure expansion, and cross-cutting AI licensing marketplace landscape.
+
+**Changes (3 profiles, +127 lines, commit 9a790da):**
+
+### wired.yaml (+13 lines)
+- **Advance-Reddit sublease data (NEW):** $3.1M/yr NYC + $0.5M/yr Chicago = $3.6M/yr related-party office space transactions, disclosed in 2026 Proxy (DEF 14A filed Apr 23, 2026). Adds PHYSICAL ENTANGLEMENT dimension beyond equity/governance — Advance and Reddit share office infrastructure with money flowing Reddit→Advance. Combined with governance veto rights, board seats, $1.2B margin loan, and $8.46B equity stake, this sublease is one more thread in the dense Advance-Reddit web.
+- Updated record date reference from "March 31, 2026" to "April 13, 2026" (actual DEF 14A record date). Share counts nearly identical (23,835 Class A delta, Class B unchanged), voting power calculation unchanged at 65.2%.
+
+### the-verge.yaml (+90 lines, 976→1066)
+- **PMC corporate profile expansion:** Added 412M monthly users, 150M social followers, 6B video views (SRMG partnership disclosure, BroadcastPro ME). These are the most specific PMC reach metrics publicly available for a private company with no SEC filings.
+- **PIF $200M Saudi investment (Feb 2018):** Added alongside SRMG Saudi ad partnership — together they show a pattern of Saudi financial entanglement with PMC's business.
+- **Ad tech infrastructure:** Concert (premium ad marketplace) and Forte (first-party data platform) acquired as specific named assets in June 2026 Vox Media deal. PMC's existing CDP noted (95% of visitors previously unauthenticated, per MarTech).
+- **RTO mandate:** Jay Penske's 4-day-per-week return-to-office mandate with termination threat (Oct 4, 2026 deadline). Signal of Penske management/editorial control posture.
+- **NEW SECTION — AI Licensing Landscape:**
+  - Snowflake Cortex Knowledge Extensions: 17 publishers signed (WaPo, AP, People Inc., USA Today Network), six-figure RAG deals with financial institutions, no-rev-share model. Neither PMC nor any MediaScope-tracked publication is among the 17 participants.
+  - PMC-SRMG Saudi ad partnership: Programmatic campaigns across 40+ PMC brands, "co-created custom content" with editorial approval clause.
+
+### nytimes.yaml (+22 lines)
+- **Snowflake Cortex Knowledge Extensions:** Added as new marketplace entry alongside existing Microsoft marketplace pilot. NYT absent from both. Represents THIRD AI licensing channel (bilateral, Microsoft marketplace, Snowflake RAG) emerging simultaneously.
+
+**Sources:** Reddit 2026 DEF 14A (SEC), Digiday (May 29, 2026), BroadcastPro ME (SRMG/PMC partnership), exchange4media/TVNewsCheck (PMC acquisition), MarTech (PMC CDP), Midland (RTO mandate), WWD (PIF investment).
+
+**Profile line counts:** wired 1,900 | the-verge 1,066 | nytimes 2,080 | mit-tech-review 2,144 | guardian 1,897 | atlantic 1,456 | total ~10,543.
+
+---
+
 ## 2026-07-10 02:00 PT — Type B: Journalist/Publication Research (NYT Meta/AI Core Reporters + Deepa Seetharaman)
 
 **Focus:** Deep expansion of 5 key NYT technology reporters covering Meta/AI, plus adding Deepa Seetharaman (Reuters→WSJ→Reuters).
