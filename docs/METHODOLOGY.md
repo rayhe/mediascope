@@ -1258,76 +1258,82 @@ This section documents the corpus as a quantitative research resource: its compo
 
 ### 17.2 Publication Distribution
 
-The corpus spans **44 distinct publications** across 5 editorial modes:
+The corpus spans **41 distinct publications** across 5 editorial modes:
 
-#### Tracked Publications (5 publications, 55 articles)
+#### Tracked Publications (5 publications, 58 articles)
 
 These are the publications with full YAML profiles (ownership chains, revenue relationships, conflict mapping):
 
 | Publication | Articles | Coverage Focus |
 |---|---|---|
-| **MIT Technology Review** | 20 | AI development, ethics, military tech, BCI, workforce displacement |
+| **MIT Technology Review** | 23 | AI development, ethics, military tech, BCI, workforce displacement, EmTech speaker conflicts |
 | **Wired** | 17 | Meta internal culture, smart glasses, facial recognition, contractor labor |
 | **New York Times** | 8 | Regulatory holdouts, child safety, prediction markets, AI restructuring |
 | **The Guardian** | 5 | UK regulatory pressure, whistleblower coverage, CSAM, DeepMind philosophy |
 | **The Atlantic** | 5 | AI slop, data center infrastructure, workplace surveillance, creativity |
 
-#### Wire Services (2 publications, 10 articles)
+#### Wire Services (3 publications, 21 articles)
 
-Reuters and Bloomberg serve as the analytical baseline for same-event comparison methodology (§13):
+Reuters, Bloomberg, and AP serve as the analytical baseline for same-event comparison methodology (§13):
 
 | Publication | Articles | Coverage Focus |
 |---|---|---|
+| **AP** | 1 | Mosseri addiction testimony — congressional hearing baseline coverage |
 | **Bloomberg** | 1 | Muse Image launch — structural juxtaposition (peer-scandal kicker), wire-service genre with cross-entity guilt-by-association |
-| **Reuters** | 9 | MCI data exposure, Gemini compute limits, child addiction litigation, town hall coverage, BoE regulation, insurance defense, Dalton Smith departure, EU WhatsApp AI antitrust, Zuckerberg AI agents |
+| **Reuters** | 19 | MCI data exposure, Gemini compute limits, child addiction litigation, town hall coverage, BoE regulation, insurance defense, Dalton Smith departure, EU WhatsApp AI antitrust, Zuckerberg AI agents, $1.4T penalty demand |
 
-#### Tech Editorial (12 publications, 22 articles)
+#### Tech Editorial (13 publications, 31 articles)
 
 Independent tech press with varying editorial postures, from neutral product coverage to adversarial editorial voice:
 
 | Publication | Articles | Coverage Focus |
 |---|---|---|
-| **Gizmodo** | 7 | Smart glasses, prediction markets, AI tokens, product reviews, child safety |
-| **Memeburn** | 3 | Gemini compute limits, smart glasses cameras, Qualcomm Dragonfly |
+| **Gizmodo** | 13 | Smart glasses, prediction markets, AI tokens, product reviews, child safety, super-sensing |
+| **Memeburn** | 4 | Gemini compute limits, smart glasses cameras, Qualcomm Dragonfly |
 | **Engadget** | 2 | Wynn-Williams lawsuit, child safety broken features |
 | **The Register** | 2 | Brain2Qwerty BCI research |
+| **TechCrunch** | 2 | Zuckerberg AI agents town hall |
 | **9to5Mac** | 1 | Smart glasses accessibility paywall |
 | **Android Authority** | 1 | Conversation Focus subscription paywall |
 | **Digital Trends** | 1 | NameTag facial recognition removal |
 | **LiveMint** | 1 | Meta Wang Muse Spark / Claude integration |
 | **Malwarebytes** | 1 | Meta AI support bot security hack |
-| **TechCrunch** | 1 | Zuckerberg AI agents town hall |
+| **Techlusive** | 1 | Muse Image privacy concerns |
 | **TechTarget** | 1 | MCI keystroke privacy |
 | **TechTimes** | 1 | Applied AI "gulag" restructuring |
 
-#### Financial / Investment Press (8 publications, 8 articles)
+#### Financial / Investment Press (10 publications, 18 articles)
 
 Critical for documenting the VADER financial journalism inflation bias (§16):
 
 | Publication | Articles | Coverage Focus |
 |---|---|---|
-| **Barron's** | 1 | Meta AI agents disappointment (financial reassurance device discovery) |
-| **Barchart** | 1 | Meta investor urgency / AI capex |
-| **MarketWatch** | 1 | Meta cloud pivot "giving up" framing |
-| **Motley Fool** | 1 | Meta cloud $500B market (highest VADER false positive: 0.997) |
-| **PYMNTS** | 1 | Zuckerberg AI agents admission |
+| **Barron's** | 5 | Meta AI agents disappointment (financial reassurance device discovery), BofA AI capex watermelon, $1T backlash legal risk, gigawatt infrastructure |
+| **IBD** | 2 | Meta cloud stock 50-day analysis, open-source sticker shock |
+| **Motley Fool** | 2 | Meta cloud $500B market (highest VADER false positive: 0.997), Meta compute overbuy |
 | **Stocktwits** | 2 | Virtue AI acqui-hire, cloud compute analyst reactions |
+| **WSJ** | 2 | AI spending blink, EU DSA addictive apps enforcement |
+| **Barchart** | 1 | Meta investor urgency / AI capex |
+| **Fox Business** | 1 | Meta $1.4T penalty youth safety |
+| **MarketWatch** | 1 | Meta cloud pivot "giving up" framing |
+| **PYMNTS** | 1 | Zuckerberg AI agents admission |
 | **TheStreet** | 1 | Meta AI warning before earnings (100th article — worst VADER false positive: 0.9788) |
 
-#### General Interest / Other (6 publications + cross-analyses, 12 articles)
+#### General Interest / Other (10 publications + cross-analyses, 14 articles)
 
 Specialty press and multi-source analyses:
 
 | Publication | Articles | Coverage Focus |
 |---|---|---|
 | **Fast Company** | 3 | AI draft reversal, Wynn-Williams lawsuit, Zuckerberg AI job fears |
+| **iPhoneInCanada** | 2 | Zuckerberg AI agents (editorial dramatization discovery) |
 | **AV Club** | 1 | Meta Arena gambling framing |
 | **CNN** | 1 | Social media child safety features |
 | **Futurism** | 1 | Cannes reframe contractor trauma |
 | **Inc.com** | 1 | Threads 500M MAU milestone, competitive positioning vs X |
-| **iPhoneInCanada** | 1 | Zuckerberg AI agents (editorial dramatization discovery) |
 | **Kotaku** | 1 | Meta Arena / Polymarket rivalry (sardonic correction Path D discovery) |
 | **Newzlet** | 1 | Meta Cannes competitive intelligence (absence-as-evidence/silence-as-guilt discovery) |
+| **NY Post** | 1 | Meta $1.4T teen mental health penalty |
 | **WebProNews** | 1 | Meta Dublin contractors AI replacement (worker_replacement_irony, two_tier_treatment discovery) |
 | **Multi-source** | 1 | Meta Claude/Codex restriction (cross-outlet aggregation) |
 

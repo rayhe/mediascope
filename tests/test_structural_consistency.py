@@ -2040,6 +2040,33 @@ class TestAnnotatedArticleCountConsistency:
             f"Update the count in §7."
         )
 
+    def test_architecture_annotated_article_count(self):
+        """ARCHITECTURE.md file-tree comment annotated article count matches disk.
+
+        The file-tree comment in ARCHITECTURE.md includes an inline count of
+        annotated articles (e.g. "# 142 annotated real-article analyses").
+        This drifts silently whenever a Type A iteration adds new articles.
+
+        Added: 2026-07-10 12:00 PT, Type D iteration.
+        """
+        sample_dir = _REPO_ROOT / "examples" / "sample_output"
+        actual = len(list(sample_dir.glob("*_analysis.md")))
+
+        doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
+        match = re.search(
+            r"#\s+(\d+)\s+annotated real-article analyses", doc
+        )
+        assert match, (
+            "ARCHITECTURE.md missing '# N annotated real-article analyses' "
+            "comment in the file-tree section."
+        )
+        stated = int(match.group(1))
+        assert stated == actual, (
+            f"ARCHITECTURE.md file-tree comment says {stated} annotated "
+            f"articles but examples/sample_output/ has {actual} "
+            f"*_analysis.md files. Update the inline comment."
+        )
+
     def test_methodology_annotated_article_count(self):
         """METHODOLOGY.md §17 annotated article count matches actual files.
 
@@ -2101,6 +2128,7 @@ class TestAnnotatedArticleCountConsistency:
             ("barrons", "barrons"),
             ("marketwatch", "marketwatch"),
             ("motley_fool", "motley_fool"),
+            ("motleyfool", "motley_fool"),
             ("pymnts", "pymnts"),
             ("stocktwits", "stocktwits"),
             ("thestreet", "thestreet"),
@@ -2115,6 +2143,16 @@ class TestAnnotatedArticleCountConsistency:
             ("newzlet", "newzlet"),
             ("webpronews", "webpronews"),
             ("multi_source", "multi_source"),
+            # Financial — added 2026-07-10 Type D
+            ("wsj", "wsj"),
+            ("foxbusiness", "foxbusiness"),
+            ("ibd", "ibd"),
+            # General interest — added 2026-07-10 Type D
+            ("nypost", "nypost"),
+            ("inc", "inc"),
+            # Tech editorial — added 2026-07-10 Type D
+            ("techlusive", "techlusive"),
+            ("bloomberg", "bloomberg"),
         ]
         for f in sample_dir.glob("*_analysis.md"):
             name = f.stem.replace("_analysis", "")

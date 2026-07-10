@@ -246,4 +246,4 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 
 ---
 
-*Last updated: 2026-07-09. See [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection) for full device descriptions, detection patterns, and discovery provenance articles.*
+*Last updated: 2026-07-10. See [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection) for full device descriptions, detection patterns, and discovery provenance articles.*
