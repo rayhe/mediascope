@@ -2,6 +2,35 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-10 14:00 PT — Type A: Article Deep Dive
+
+**Articles analyzed:**
+- Reuters: "Meta AI image detector fails to identify some of its own cropped AI images" (Jul 10, 2026) — full deep-dive with Content Seal entity tracking, preview_qualifier_retreat framing identification
+- EU DSA "addictive design" ruling (Jul 10, 2026) — 3-way cross-publication comparison (WSJ vs Reuters vs CNN); headline framing gradient from failure_attribution (WSJ) through regulatory_command (Reuters) to legal_finding (CNN)
+
+**New sample outputs (5 files):**
+- `reuters_meta_ai_image_detector_cropping_2026_07_10_analysis.md`
+- `reuters_meta_ai_image_detector_cropping_2026_07_10_article.txt`
+- `reuters_eu_dsa_meta_addictive_features_2026_07_10_article.txt`
+- `cnn_eu_dsa_meta_addictive_design_2026_07_10_article.txt`
+- `cross_pub_eu_dsa_addictive_design_wsj_reuters_cnn_2026_07_10.md`
+
+**Code changes:**
+- Entity aliases: Content Seal, MTIA, Iris added to Meta cluster (Iris has lookahead guard for chip/accelerator context)
+- New framing pattern: `self_referential_investigation` regex for wire-service named investigations ("a Reuters analysis")
+- Total patterns: 525→526
+
+**Doc count sync:**
+- Annotated articles: 142→143 (ARCHITECTURE.md, QUALITY_STANDARDS.md, METHODOLOGY.md §17.1 + §17.5)
+- Wire services: Reuters 19→20, section total 21→22
+- Same-event clusters: 12→13 (new EU DSA Tier 1 entry in QUALITY_STANDARDS.md §10.2)
+- Test count: 2148 (all pass), commit `2f7b0dd`
+
+**Identified but not implemented:**
+- `preview_qualifier_retreat` — proposed 93rd framing device type for companies citing "preview/beta" labels to deflect criticism
+- `election_integrity` — candidate topic bucket
+- `percentage_to_dollar_conversion` — sub-pattern of scale_magnitude
+
 ## 2026-07-10 12:00 PT — Type D: Toolkit Quality & Documentation
 
 **Focus:** Publication prefix coverage fix (count inflation bug), ARCHITECTURE.md annotated article guard, §17.2 table completeness.
