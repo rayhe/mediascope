@@ -515,49 +515,37 @@ journalists:
     journalists hold themselves to the same standard. The Roose/Newton independent venture (post-Aug 2026) will be the first
     fully independent AI journalism operation at scale, with no institutional editorial oversight from either host.'
 - career:
-  - beat: local news
-    end: 2015-12
-    event_type: hired
-    notes: Early career in San Francisco local journalism. Began at SF Weekly, then San Francisco Examiner. Also worked at
-      Ratter (a Gawker Media local news venture), where she helped start three local news sites and edited all of them. The
-      Ratter connection is her first entry into the Gawker Media ecosystem, which would shape her next two career moves. Born
-      April 1989 (Kate Adelia Conger).
-    publication: sf-weekly
+  - publication: sf-weekly
     role: reporter
-    start: 2014-01
-  - beat: tech policy, cybersecurity
+    start: 2013-01
+    end: 2014-06
+    notes: Also worked at The San Francisco Examiner in this period. First journalism roles.
+    source_url: https://nytco.com/press/kate-conger-joins-the-new-york-times/
+  - publication: ratter
+    role: editor
+    start: 2014-06
+    end: 2015-06
+    notes: Helped start and edited three local news sites.
+    source_url: https://nytco.com/press/kate-conger-joins-the-new-york-times/
+  - publication: techcrunch
+    role: staff_writer
+    start: 2015-06
     end: 2017-06
-    event_type: hired
-    notes: Tech policy and cybersecurity reporter at TechCrunch. Early tech beat reporting before moving to Gizmodo.
-    publication: techcrunch
-    role: staff_writer
-    source_url: https://talkingbiznews.com/they-re-hiring/ny-times-hires-conger-to-cover-tech/
-    start: 2016-01
-  - beat: tech policy, cybersecurity, employee activism
-    end: 2018-06
-    event_type: hired
-    notes: 'Tech policy and cybersecurity reporter at Gizmodo (by then part of Gizmodo Media Group, post-Gawker). KEY SCOOPS:
-      First to publish James Damore''s controversial Google Memo on perceived gender differences (Aug 2017) — Damore''s subsequent
-      lawsuit was dismissed in 2020. Broke employee dissatisfaction at Google over Project Maven (Pentagon AI contract). Covered
-      Uber, encryption, political data breaches. The Damore memo scoop established her as a go-to reporter for internal tech
-      company culture stories.'
-    publication: gizmodo
-    role: staff_writer
+    notes: Tech policy and cybersecurity beat.
     source_url: https://nytco.com/press/kate-conger-joins-the-new-york-times/
+  - publication: gizmodo
+    role: staff_writer
     start: 2017-07
-  - beat: tech labor, social media, Twitter/X, Elon Musk
-    event_type: hired
-    notes: 'General assignment technology reporter, based in San Francisco. Hired by Pui-Wing Tam and Ellen Pollock (with
-      Adrienne Carter). Described as "ferocious" by colleagues Sheera Frenkel and Mike Isaac. Beat expanded from general tech
-      to Twitter/X and Elon Musk coverage. 2019 Gerald Loeb Award finalist (beat reporting) with Daisuke Wakabayashi and Katie
-      Benner for coverage of Andy Rubin''s $90M Google severance after sexual harassment allegations. Co-authored ''Character
-      Limit: How Elon Musk Destroyed Twitter'' with colleague Ryan Mac (Penguin, Sep 2024). Covers: hackers, AI in autonomous
-      weapons, labor uprisings in the gig economy. Part of the Gizmodo → NYT pipeline that also produced Dell Cameron (Gizmodo
-      → Wired) and Dhruv Mehrotra (Gizmodo → Wired).'
-    publication: nytimes
-    role: correspondent
+    end: 2018-06
+    notes: Tech policy and cybersecurity. First to publish James Damore Google memo on gender differences. Broke news of Google
+      employee dissatisfaction over Pentagon AI work.
     source_url: https://nytco.com/press/kate-conger-joins-the-new-york-times/
+  - publication: nytimes
+    role: technology_reporter
     start: 2018-07
+    notes: General assignment tech → Twitter/X and Elon Musk beat. Covered employee activism, Uber, encryption, xAI. Co-authored
+      Character Limit (2024). Based in San Francisco Bay Area.
+    source_url: https://nytco.com/press/kate-conger-joins-the-new-york-times/
   name: Kate Conger
   notes: 'NYT technology reporter specializing in Twitter/X, Elon Musk, and tech labor. Born April 1989. Career arc: SF Weekly
     → SF Examiner → Ratter (Gawker Media local news) → TechCrunch → Gizmodo → NYT. Co-author of ''Character Limit: How Elon
@@ -567,6 +555,20 @@ journalists:
     KEY for MediaScope: her career is a case study of the Gawker → NYT talent pipeline. Her beat (Twitter/X, Musk) makes her
     coverage directly comparable to Zoë Schiffer (who co-authored ''Extremely Hardcore'' at Platformer before joining Wired).
     Both wrote definitive Musk/Twitter books from different institutional homes.'
+  beats:
+  - twitter_x
+  - elon_musk
+  - hackers_cybersecurity
+  - ai_weapons
+  - gig_economy_labor
+  - xai
+  books:
+  - title: 'Character Limit: How Elon Musk Destroyed Twitter'
+    year: 2024
+    publisher: Penguin Press
+    co_author: Ryan Mac
+    notes: Financial Times and New Statesman Best Book of 2024. Kirkus Best Book of 2024.
+    source_url: https://characterlimit.net/
 - career:
   - publication: macworld
     role: associate_editor
@@ -755,131 +757,100 @@ journalists:
     doesn''t modulate across outlets with radically different institutional cultures, it provides strong evidence that individual
     bias dominates institutional bias for established columnists.'
 - career:
-  - beat: technology, startups
-    end: 2010-06
-    event_type: hired
-    notes: Early career. Wrote about tech business and startups. Also wrote for Paste Magazine and Performer Magazine (music
-      journalism roots).
-    publication: forbes
+  - publication: paste-magazine
     role: contributor
-    source_url: https://allthingsd.com/20120910/welcome-to-atd-the-very-social-mike-isaac/
     start: 2009-01
-  - beat: mobile computing, Google, Apple
-    end: 2012-09
-    event_type: hired
-    notes: 'Covered rise of mobile computing, Google''s social/mobile efforts, HP mobile empire collapse, Google/Motorola
-      acquisition, Facebook pre-IPO. Editor was Brian X. Chen (now NYT). KEY: Condé Nast publication — first position in the
-      Advance Publications orbit.'
-    publication: wired
+    end: 2010-06
+    notes: Music journalism. Also wrote for Forbes and Performer magazine.
+    source_url: https://live.freightwaves.com/speakers/mike-isaac
+  - publication: wired
     role: staff_writer
-    source_url: https://allthingsd.com/20120910/welcome-to-atd-the-very-social-mike-isaac/
     start: 2010-06
-  - beat: social web, Facebook, Twitter, Google+
-    end: 2013-12
-    event_type: hired
-    notes: Hired by Kara Swisher and Walt Mossberg to cover the social web. AllThingsD was part of WSJ/Dow Jones. Took over
-      social beat from Liz Gannes.
-    publication: allthingsd
+    end: 2012-09
+    notes: Covered mobile computing, Google and Apple. Editor included Brian X. Chen (now NYT).
+    source_url: https://talkingbiznews.com/they-talk-biz-news/nyt-hires-tech-writer-isaac-from-recode/
+    migration_type: outbound
+  - publication: allthingsd
     role: senior_editor
-    source_url: https://allthingsd.com/20120910/welcome-to-atd-the-very-social-mike-isaac/
     start: 2012-09
-  - beat: social media companies
-    end: 2014-09
-    event_type: hired
-    notes: Followed Swisher/Mossberg when ATD became Re/code (separated from WSJ). Continued covering Facebook, Twitter, LinkedIn.
-      ~2 years combined at ATD/Re/code.
-    publication: recode
+    end: 2013-12
+    notes: Covered social media companies including Facebook, Twitter, LinkedIn.
+    source_url: https://talkingbiznews.com/they-talk-biz-news/nyt-hires-tech-writer-isaac-from-recode/
+  - publication: recode
     role: senior_editor
-    source_url: https://poynter.org/reporting-editing/2014/recodes-mike-isaac-joins-nyt-as-a-tech-reporter/
     start: 2014-01
-  - beat: Meta/Facebook, Uber, Big Tech
-    event_type: hired
-    notes: 'Hired by Dean Murphy and Suzanne Spector to replace Jenna Wortham. Initially moved to Brooklyn, later returned
-      to SF. Uber coverage won Gerald Loeb Award for distinguished business reporting. Travis Kalanick reporting became ''Super
-      Pumped'' (W.W. Norton, 2019) — NYT and WSJ bestseller. Adapted to Showtime series (2022) starring Joseph Gordon-Levitt;
-      Isaac made a cameo. MSNBC on-air tech correspondent. 2018 team coverage of Facebook won Gerald Loeb Award. Has covered
-      Meta metaverse pivot, AI race, Musk/Twitter acquisition, OpenAI leadership crisis. Known for deep sourcing inside Meta.
-      12+ year tenure as of 2026 — longest-serving current NYT tech reporter. ROLE EXPANDED (Jan 2026): shifted from dedicated
-      Meta reporter to broader Silicon Valley correspondent. Mentoring new reporters including Eli Tan, who took over the
-      day-to-day Meta beat. Still covers Meta but now also ''keep[s] the Tech group on the pulse of news'' per NYTCo announcement.'
-    publication: nytimes
+    end: 2014-09
+    notes: Continuation of AllThingsD coverage after Vox Media acquisition.
+    source_url: https://talkingbiznews.com/they-talk-biz-news/nyt-hires-tech-writer-isaac-from-recode/
+  - publication: nytimes
     role: technology_reporter
-    source_url: https://www.nytimes.com/by/mike-isaac
     start: 2014-10
+    notes: 'Joined 2014. Beat: Meta/Facebook and Uber (2014-2025). Travis Kalanick/Uber downfall stories led to Super Pumped
+      book (2019) and Showtime series (2022). Elevated to Silicon Valley correspondent (~2025) with broader beat: tech companies,
+      social media, investor/entrepreneur scrutiny, tech leader politics. MSNBC on-air technology correspondent. Based in
+      San Francisco.'
+    source_url: https://nytco.com/press/staff-news-from-business-55/
   name: Mike Isaac
   notes: 'NYT''s longest-serving Meta/Facebook beat reporter and Silicon Valley institution. Career arc: music journalism
     → Wired → AllThingsD/Re/code → NYT. Key migration from Condé Nast (Wired) to NYT. Author of ''Super Pumped'' (2019, adapted
     into Showtime series 2022). Gerald Loeb Award winner. 12+ year NYT tenure. UC Berkeley 2010, English Lit. From Fort Worth,
     TX. In 2026, role expanded from dedicated Meta reporter to broader Silicon Valley correspondent with mentoring responsibilities
     — Eli Tan took over day-to-day Meta beat. Isaac now covers broader SV while mentoring the next generation of tech reporters.'
+  beats:
+  - facebook_meta
+  - uber
+  - silicon_valley
+  - social_media
+  - tech_leaders
+  education:
+    institution: University of California, Berkeley
+    degree: BA
+    field: English Literature
+    graduation: 2010
+    source_url: https://nytco.com/press/staff-news-from-business-55/
+  awards:
+  - name: Gerald Loeb Award
+    category: Distinguished Business Reporting
+    for: Uber coverage at NYT
+    source_url: https://nytco.com/press/mike-isaac/
+  books:
+  - title: 'Super Pumped: The Battle for Uber'
+    year: 2019
+    publisher: W.W. Norton
+    notes: NYT and WSJ bestseller. Adapted into 2022 Showtime series starring Joseph Gordon-Levitt.
+    source_url: https://wwnorton.com/books/super-pumped/
 - career:
-  - beat: Middle East
-    end: 2009-01
-    event_type: hired
-    notes: 'Earliest career phase. Middle East correspondent covering Arab Spring, Iran nuclear program, Syria. Based in Jerusalem,
-      Cairo, Tel Aviv. Fluent in Hebrew, conversational Arabic. Grew up in Los Angeles. Education: Boston University. Her
-      Muck Rack profile describes her during this period as "based in the Middle East and stringing for the Times of London,
-      NPR and McClatchy" — suggesting she freelanced/strung for multiple outlets simultaneously rather than holding sequential
-      staff positions. The career entries below reflect her primary affiliations, but there was significant overlap.'
-    publication: mcclatchy
+  - publication: mcclatchy
     role: foreign_correspondent
-    source_url: https://www.nytco.com/press/sheera-frenkel-bizday-san-francisco/
     start: 2005-01
-  - beat: Middle East
-    end: 2012-01
-    event_type: hired
-    notes: Middle East foreign correspondent for NPR. Hebrew fluency helped land exclusives. Bylines include "West Bank Beer
-      Festival Attracts Jewish Israelis," "Stories Differ After Israeli Soldiers Kill Palestinian," and "Kafka's Final Absurdist
-      Tale Plays Out In Tel Aviv." Concurrent with stringing for Times of London and McClatchy. ~10 years total in Middle
-      East across all three outlets.
-    publication: npr
+    end: 2009-01
+    notes: Middle East coverage from Jerusalem, Cairo, Tel Aviv. Arab Spring, Syria civil war.
+    source_url: https://nytco.com/press/sheera-frenkel-to-join-bizday-in-san-francisco/
+  - publication: npr
     role: correspondent
-    source_url: https://muckrack.com/sheeraf
     start: 2009-01
-  - beat: Middle East, Syria, armed conflict
-    end: 2015-01
-    event_type: hired
-    notes: 'Times of London Middle East correspondent. Final foreign correspondent role before pivoting to tech/cybersecurity.
-      Bylines include "We are begging for arms, says Free Syrian Army" and "Dark days for child victims of regime" — front-line
-      Syria civil war coverage. The stringer arrangement across McClatchy/NPR/Times of London gave her experience reporting
-      for three very different institutional styles: American wire service (McClatchy), US public radio (NPR), and British
-      broadsheet (Times of London).'
-    publication: times-of-london
+    end: 2012-01
+    notes: Middle East correspondent. Hebrew and Arabic language skills.
+    source_url: https://nytco.com/press/sheera-frenkel-to-join-bizday-in-san-francisco/
+  - publication: times-of-london
     role: correspondent
-    source_url: https://muckrack.com/sheeraf
     start: 2012-01
-  - beat: cybersecurity
-    end: 2017-05
-    event_type: hired
-    notes: 'Originated the cybersecurity beat at BuzzFeed News. Profiled Russian hackers (Fancy Bear), ISIS internet use,
-      developing nations coming online (Myanmar — chronicled how the country was slowly joining the internet age). Broke news
-      on Facebook fake news countermeasures. CAREER PIVOT: foreign correspondent → tech/cyber. She has said "her time as a
-      foreign correspondent aids her coverage of cybersecurity: People are always speaking different languages and their motivations
-      are often unclear." This framing — treating tech companies as opaque institutions with hidden motivations — directly
-      echoes foreign correspondent methodology applied to Silicon Valley.'
-    publication: buzzfeed-news
+    end: 2015-01
+    notes: Middle East coverage, Iran nuclear program.
+    source_url: https://nytco.com/press/sheera-frenkel-to-join-bizday-in-san-francisco/
+  - publication: buzzfeed-news
     role: cybersecurity_correspondent
-    source_url: https://www.nytco.com/press/sheera-frenkel-bizday-san-francisco/
     start: 2015-01
-  - beat: cybersecurity, Meta/Facebook, misinformation
-    event_type: hired
-    notes: 'Hired by Ellen Pollock and Pui-Wing Tam to cover cybersecurity in SF, alongside Nicole Perlroth. Beat quickly
-      expanded to encompass Facebook/Meta and social media misinformation. 2018: Part of NYT team reporting "Delay, Deny and
-      Deflect" Facebook exposé (6 months, 50+ interviews — she has described the process: "Once we felt like we had built
-      a pretty solid picture of what had happened at Facebook — namely, what they knew about Russian election interference
-      and how they handled that information — we had meetings with our editors to discuss where we needed more details and
-      more corroboration. That process went on for months as we fine-tuned and triple-checked every detail."). 2019: Pulitzer
-      Prize finalist (national reporting team), George Polk Award (national reporting), Gerald Loeb Award (investigative reporting).
-      2021: Co-wrote "An Ugly Truth: Inside Facebook''s Battle for Domination" with Cecilia Kang — NYT and international bestseller,
-      SABEW Best in Business Award winner, Book of the Year at Fortune, Foreign Affairs, The Times (London), Cosmopolitan,
-      TechCrunch, WIRED. 2022: Mirror Award for misinformation reporting. Also a 2022 USENIX Enigma keynote speaker (fireside
-      chat on cybersecurity, disinformation, hate speech, and journalism). 2023 DCN Next Summit speaker. Grew up in Los Angeles.
-      Married, lives in Oakland with two kids and a cat. Email: sheera.frenkel@nytimes.com. Colleague Kate Conger described
-      her as "ferocious."'
-    publication: nytimes
-    role: cybersecurity_reporter
-    source_url: https://www.nytco.com/press/sheera-frenkel-bizday-san-francisco/
+    end: 2017-05
+    notes: Originated cybersecurity beat for BuzzFeed. Profiled Russian hackers (Fancy Bear), ISIS internet use, Myanmar coming
+      online, Facebook fake news efforts.
+    source_url: https://nytco.com/press/sheera-frenkel-to-join-bizday-in-san-francisco/
+  - publication: nytimes
+    role: technology_reporter
     start: 2017-05
+    notes: Initially cybersecurity beat alongside Nicole Perlroth. Expanded to Facebook/Meta, social media, misinformation.
+      2019 Pulitzer finalist (National Reporting). Co-authored An Ugly Truth (2021). Based in San Francisco.
+    source_url: https://nytco.com/press/sheera-frenkel-to-join-bizday-in-san-francisco/
   name: Sheera Frenkel
   notes: 'NYT cybersecurity and Meta/Facebook reporter. Former Middle East foreign correspondent (decade — based in Jerusalem,
     Cairo, Tel Aviv, stringing for McClatchy, NPR, and The Times of London simultaneously). Co-wrote "An Ugly Truth: Inside
@@ -891,6 +862,47 @@ journalists:
     outlets simultaneously (not staff) is analytically significant — it means her pre-BuzzFeed career was freelance/contract
     work, with no single institution shaping her editorial identity before she arrived at BuzzFeed in 2015. This makes her
     NYT institutional framing adoption a cleaner natural experiment than journalists who transferred between staff positions.'
+  beats:
+  - cybersecurity
+  - facebook_meta
+  - social_media
+  - misinformation
+  - tech_policy
+  education:
+    institution: Boston University
+    degree: BA
+    source_url: https://nytco.com/press/sheera-frenkel-to-join-bizday-in-san-francisco/
+  awards:
+  - name: Pulitzer Prize finalist
+    year: 2019
+    category: National Reporting
+    for: Facebook investigation team at NYT
+    source_url: https://usenix.org/conference/usenixsecurity19/presentation/frenkel
+  - name: George Polk Award
+    year: 2019
+    category: National Reporting
+    for: Facebook investigation at NYT (with team)
+    source_url: https://www.harpercollins.com/blogs/authors/sheera-frenkel
+  - name: Gerald Loeb Award
+    year: 2019
+    category: Investigative Reporting
+    for: Facebook reporting at NYT (with team)
+    source_url: https://www.harpercollins.com/blogs/authors/sheera-frenkel
+  - name: Mirror Award
+    year: 2022
+    category: Misinformation reporting
+    source_url: https://allamericanspeakers.com/speakers/sheera-frenkel/
+  books:
+  - title: 'An Ugly Truth: Inside Facebook''s Battle for Domination'
+    year: 2021
+    publisher: HarperCollins
+    co_author: Cecilia Kang
+    notes: NYT and International bestseller.
+    source_url: https://www.harpercollins.com/blogs/authors/sheera-frenkel
+  languages:
+  - English
+  - Hebrew (fluent)
+  - Arabic (conversational)
 - career:
   - beat: legal news
     end: 2009-06
@@ -1216,64 +1228,33 @@ journalists:
     Google mental health crisis. Key NYT coverage: Brin AGI memo, YouTube piracy investigation. ANALYTICAL VALUE: Bloomberg
     → NYT pipeline tests whether framing shifts from wire-service neutral to NYT institutional posture.'
 - career:
-  - beat: NFTs, gaming, metaverse, Web3
-    end: 2023-02
-    event_type: hired
-    notes: 'First professional journalism role after St. Olaf College (BA English). Covered the NFT boom and crypto winter
-      from NYC. Beat included NFTs, play-to-earn gaming, metaverse projects, and blockchain startups. Published prolifically
-      — articles from Nov 2021 through Jan 2023 visible in CoinDesk archives. Held ETH, SOL, AVAX and NFTs above $1,000 (CoinDesk
-      disclosure policy). St. Olaf College: played baseball (hit grand slam in final game), wrote for college and state newspapers.
-      The Bush School (Seattle) ''17.'
-    publication: coindesk
-    role: news_reporter
-    source_url: https://www.coindesk.com/author/eli-tan/
-    start: 2021-10
-  - beat: journalism
-    end: 2024-05
-    event_type: education
-    notes: MA Journalism from Columbia University Graduate School of Journalism in New York. Transitioned from trade press
-      (CoinDesk) to institutional journalism track. Columbia's program is a common credentialing pipeline into prestige outlets
-      (NYT, WaPo, WSJ). Education listed on NYT Company bio page.
-    publication: columbia-journalism
-    role: graduate_student
-    source_url: https://nytco.com/press/staff-news-from-business/
-    start: 2023-06
-  - beat: business, Congress
-    end: 2024-12
-    event_type: hired
-    notes: 'Business reporter covering Congress and business from Washington DC. Short tenure — listed as ''most recent position''
-      on NYTCo bio. Moved to DC after Columbia. Beat shift: from crypto/Web3 trade reporting to general business/politics
-      at a prestige outlet. The WaPo stint demonstrates the CoinDesk → Columbia → WaPo → NYT credentialing pipeline. Bush
-      School alumni profile confirms: ''moved to Washington D.C., to work at the Washington Post, where he covered business
-      and Congress.'''
-    publication: washington-post
-    role: reporter
-    source_url: https://nytco.com/press/staff-news-from-business/
-    start: 2024-06
-  - beat: technology (general)
-    end: 2025-12
-    event_type: fellowship
-    notes: 'NYT technology fellowship, based in San Francisco. Described as having ''distinguished himself'' during the fellowship.
-      Covered diverse tech topics: data center debate in Peculiar, Missouri; AI-fueled dating (story turned into Modern Love
-      podcast episode); how AI changed pastors'' work; Uber/Lyft/DoorDash; LA wildfires. Also co-bylined with Mike Isaac:
-      OpenAI video app piece, Facebook Dating''s surprise success (21M+ daily users). Editor: Jim Kerstetter (deputy tech
-      editor). The fellowship is NYT''s talent-evaluation pipeline — he was being tested for the Meta beat.'
-    publication: nytimes
-    role: fellow
-    source_url: https://nytco.com/press/staff-news-from-business/
-    start: 2025-01
-  - beat: Meta
-    event_type: hired
-    notes: 'Promoted from fellowship to full reporter. Assigned specifically to cover Meta — second dedicated Meta reporter
-      alongside Mike Isaac (who shifted to broader Silicon Valley coverage in the same announcement). Editor: Jim Kerstetter.
-      Announcement quote: ''Eli has a knack for telling stories that make us understand technology''s impact on regular people.''
-      KEY SIGNAL: NYT doubling Meta coverage capacity — Isaac mentoring while covering broader SV, Tan handling day-to-day
-      Meta beat. Recent bylines include Meta capex forecast ($70B+), Instagram teen safety features, Meta glasses coverage,
-      Facebook Dating. Based in San Francisco.'
-    publication: nytimes
+  - publication: coindesk
     role: technology_reporter
-    source_url: https://nytco.com/press/staff-news-from-business/
+    start: 2021-10
+    end: 2023-02
+    notes: First professional role after college. Covered rise and fall of cryptocurrency industry.
+    source_url: https://bush.edu/trail-blazing-alum-eli-tan-17/
+  - publication: columbia-journalism
+    role: graduate_student
+    start: 2023-06
+    end: 2024-05
+    source_url: https://nytco.com/press/eli-tan/
+  - publication: washington-post
+    role: business_reporter
+    start: 2024-06
+    end: 2024-12
+    source_url: https://nytco.com/press/eli-tan/
+  - publication: nytimes
+    role: fellow
+    start: 2025-01
+    end: 2025-12
+    notes: Times fellow. Covered data centers (Peculiar, Missouri), AI-fueled dating, AI in pastoral work, LA wildfires, Uber/Lyft/DoorDash.
+    source_url: https://nytco.com/press/staff-news-from-business-55/
+  - publication: nytimes
+    role: technology_reporter
     start: 2026-01
+    notes: 'Covers Meta. Hired after distinguished fellowship. Editor: Jim Kerstetter. Based in San Francisco.'
+    source_url: https://nytco.com/press/staff-news-from-business-55/
   name: Eli Tan
   notes: 'Key migration: CoinDesk → Columbia → Washington Post → NYT. NYT''s newest dedicated Meta reporter (2026), assigned
     alongside Mike Isaac. Represents a new generation of tech journalism that arrived through the crypto/Web3 pipeline rather
@@ -1283,6 +1264,21 @@ journalists:
     as a coverage priority. Having two dedicated Meta reporters (Isaac since 2014, Tan since 2026) is unusual — comparable
     to having two dedicated Apple reporters. DiD analysis opportunity: compare his early Meta coverage tone against his CoinDesk/WaPo
     baseline to measure how quickly NYT''s institutional framing shapes a new reporter.'
+  beats:
+  - meta
+  - technology_society
+  - data_centers
+  - ai_daily_life
+  education:
+    high_school: The Bush School, Seattle (6th-12th grade)
+    undergraduate:
+      institution: St. Olaf College
+      location: Northfield, Minnesota
+      notes: Played baseball (hit grand slam in final game). Wrote for newspapers across Minnesota.
+    graduate:
+      institution: Columbia University
+      program: Graduate School of Journalism
+    source_url: https://bush.edu/trail-blazing-alum-eli-tan-17/
 - analytical_notes: 'Korean American (child of Korean immigrants, grew up in Seattle where family ran a burger joint). Career:
     AP-Dow Jones Seoul → San Jose Mercury News → Seattle Post-Intelligencer → Washington Post (~9 years) → NYT (late 2015).
     Based in Bethesda, Maryland. Twitter: @ceciliakangf. Contact: via NYT.
@@ -2262,14 +2258,14 @@ journalists:
     event_type: hired
     notes: 'US tech editor. Based in New York City. Contact: blake.montgomery@theguardian.com, 650.731.5423. Oversees Guardian
       US technology coverage — breaking news, tech industry, protests and extremism. 4,143+ total articles across career (per
-      JournalistHunt). Inherited authorship of TechScape (Guardian''s flagship tech newsletter, founded by Alex Hern July 2021)
-      after Hern departed for The Economist in Oct 2024. Actively writes TechScape as of July 2026 — confirmed bylines include
-      AI/climate-goals tension, Meta business diversification, and X/Musk coverage. As editor, his framing choices shape the
-      Guardian''s entire US tech desk output. Key question: does the editing role (vs reporting) shape Guardian''s US tech
-      coverage tone differently than the UK desk under Dan Milmo (global technology editor, London)? His previous publications
-      (all Gawker Media-adjacent — BuzzFeed, Daily Beast, Gizmodo) share an adversarial/irreverent institutional culture distinct
-      from the Guardian''s social-justice framework. The Gawker-pipeline → Guardian transition tests whether digital-native
-      adversarial framing adapts to or is absorbed by legacy-broadsheet editorial norms.'
+      JournalistHunt). Inherited authorship of TechScape (Guardian''s flagship tech newsletter, founded by Alex Hern July
+      2021) after Hern departed for The Economist in Oct 2024. Actively writes TechScape as of July 2026 — confirmed bylines
+      include AI/climate-goals tension, Meta business diversification, and X/Musk coverage. As editor, his framing choices
+      shape the Guardian''s entire US tech desk output. Key question: does the editing role (vs reporting) shape Guardian''s
+      US tech coverage tone differently than the UK desk under Dan Milmo (global technology editor, London)? His previous
+      publications (all Gawker Media-adjacent — BuzzFeed, Daily Beast, Gizmodo) share an adversarial/irreverent institutional
+      culture distinct from the Guardian''s social-justice framework. The Gawker-pipeline → Guardian transition tests whether
+      digital-native adversarial framing adapts to or is absorbed by legacy-broadsheet editorial norms.'
     publication: guardian
     role: editor
     source_url: https://talkingbiznews.com/they-re-hiring/guardian-hires-montgomery-to-be-us-tech-editor/
@@ -4453,63 +4449,31 @@ journalists:
     within the same desk. Hosts Wired video "Incognito Mode" and "The Big Interview." Works with Andrew Couts (Senior Editor,
     Security & Investigations).'
 - career:
-  - beat: campus news, arts, music
-    end: 2011-06
-    event_type: education
-    notes: Staff writer at The Stanford Daily from end of freshman year (~2008). Initially pre-med, pivoted to journalism.
-      Published primarily in the arts section covering music releases and festivals. Co-broke story with Amy Julia Harris
-      (now NYT Metro investigative reporter) revealing Stanford athletes had access to a special list of classes widely regarded
-      as easy. Interned at Half Moon Bay Review, The New York Times, The Bay Citizen, OC Register, and Bloomberg LP/News during
-      college summers. Mac's sourcing method — attending retirement and goodbye parties to make new contacts — was noted by
-      Harris and later cited in his NYT hiring announcement.
-    publication: stanford-daily
+  - publication: stanford-daily
     role: staff_writer
-    source_url: https://en.wikipedia.org/wiki/Ryan_Mac
     start: 2007-09
-  - beat: billionaires, tech startups, wealth, music
-    end: 2017-05
-    event_type: hired
-    notes: 'Compiled Forbes annual billionaires list, then transitioned to covering tech startups and companies. Also covered
-      music industry — interviewed Calvin Harris, Steve Aoki, Avicii, and rapper Riff Raff (2014) for Forbes video features.
-      Major scoop: broke that Peter Thiel was secretly funding Hulk Hogan''s lawsuits against Gawker (2016), one of the most
-      consequential media stories of the decade. 2017 Gerald Loeb Award finalist (Breaking News) with Matt Drange for Gawker/Thiel
-      coverage. At Forbes, Mac established the wealth-to-accountability pipeline that would define his career — he started
-      tracking how billionaires made money, then shifted to investigating how they wielded power.'
-    publication: forbes
+    end: 2011-06
+    notes: Arts section, music coverage. Classmate with Amy Julia Harris (now NYT Metro investigative).
+    source_url: https://en.wikipedia.org/wiki/Ryan_Mac
+  - publication: forbes
     role: staff_writer
-    source_url: https://www.forbes.com/sites/ryanmac/
     start: 2011-06
-  - beat: tech accountability, Facebook, Elon Musk, corporate power
-    end: 2021-06
-    event_type: hired
-    notes: 'Senior technology reporter under Mat Honan (SF bureau chief/exec editor) and John Paczkowski (tech editor). Led
-      deep reporting on Facebook that won 2019 Mirror Award and 2020 George Polk Award (awarded Feb 2021 ceremony). Key scoops:
-      Facebook''s willful blindness to content issues and privacy failings; unearthed President Biden''s Venmo account and
-      friend network; Elon Musk''s "child rapist" emails about Vernon Unsworth (British cave diver, Tham Luang rescue, 2018).
-      Musk called Mac a "f**king asshole" in email correspondence — these emails were later referenced in Unsworth''s $190M
-      defamation suit against Musk. Worked with Craig Silverman on Polk-winning Facebook disinformation series. Account suspended
-      on Twitter by Musk Dec 15, 2022 (one of 10 journalists suspended; unsuspended 2 days later). In Sept 2020, published
-      personal essay about his Vietnamese grandmother losing her husband during COVID — rare autobiographical piece.'
-    publication: buzzfeed-news
+    end: 2017-05
+    notes: Wealth team, billionaires beat. Broke story that Peter Thiel secretly funded Hulk Hogan lawsuits against Gawker.
+    source_url: https://nytco.com/press/ryan-mac-joining-technology-team/
+  - publication: buzzfeed-news
     role: senior_reporter
-    source_url: https://poynter.org/commentary/2017/buzzfeed-news-hires-ryan-mac-to-join-growing-tech-team/
-    start: '2017-06-05'
-  - beat: tech accountability, billionaires, SpaceX, Meta, corporate power
-    event_type: hired
-    notes: 'Hired to cover "tech accountability" — tech companies, tech billionaires, and their ecosystems of influence. Based
-      in Los Angeles (previously SF). Recruited by Pui-Wing Tam''s tech team (business editors Ellen Pollock, Pui-Wing Tam,
-      Jim, Joe signed announcement). Co-authored "Character Limit: How Elon Musk Destroyed Twitter" with Kate Conger (Penguin
-      Press, Sept 17 2024; hardcover ISBN 978-0-593-65613-6; 480pp). Book named Best of 2024 by Kirkus Reviews, Financial
-      Times, New Statesman. Endorsed by John Carreyrou (Bad Blood), Jia Tolentino (Trick Mirror), Taylor Lorenz. KEY 2026
-      BEAT SHIFT: Mac''s 2026 bylines are dominated by SpaceX IPO coverage (9+ articles Apr-Jun 2026: IPO filing, S-1 financials,
-      Gwynne Shotwell profile, valuation skeptics, corporate governance, Musk compensation). Meta coverage reduced to occasional
-      scoops (Zuckerberg prediction markets "Arena" app Jun 24-27 2026, Meta AI government review Jun 24). This represents
-      a significant analytical shift — Mac was previously assumed to be the primary NYT Meta reporter, but 2026 data shows
-      he now operates more as a Musk/SpaceX specialist with intermittent Meta beats.'
-    publication: nytimes
-    role: correspondent
-    source_url: https://www.nytco.com/press/ryan-mac-joining-technology-team/
+    start: 2017-06
+    end: 2021-06
+    notes: Corporate accountability covering Facebook, Google, Tesla. Led deep reporting on Facebook. Won Mirror Award (2019)
+      and George Polk Award (2020). Uncovered privacy failings including Biden Venmo account.
+    source_url: https://nytco.com/press/ryan-mac-joining-technology-team/
+  - publication: nytimes
+    role: technology_reporter
     start: 2021-07
+    notes: Tech accountability beat. Covers tech companies, billionaires, ecosystems of influence. Co-authored Character Limit
+      (2024). Based in Los Angeles.
+    source_url: https://nytco.com/press/ryan-mac-joining-technology-team/
   education:
     degree: BA
     enrollment: 2007
@@ -4519,6 +4483,7 @@ journalists:
       Bay Review, The New York Times, The Bay Citizen (now part of KQED), OC Register, Bloomberg LP/News. Stanford Daily classmate
       Amy Julia Harris is now NYT Metro investigative reporter — Stanford pipeline to NYT.'
     source_url: https://en.wikipedia.org/wiki/Ryan_Mac
+    internships: Half Moon Bay Review, The New York Times, The Bay Citizen, OC Register, Bloomberg LP
   name: Ryan Mac
   notes: 'Key migration: Forbes → BuzzFeed News → NYT. Vietnamese-American (self-describes as "american vietnamese"). Education:
     Stanford University BA 2011 (enrolled 2007, initially pre-med, pivoted to journalism via Stanford Daily staff writing
@@ -4544,6 +4509,29 @@ journalists:
     now carry more consistent Meta coverage volume at NYT. Co-authorship of "Character Limit" with Kate Conger (tracked) creates
     a paired-journalist control: same book, same reporting process, different career pipelines (Conger via Gizmodo → TechCrunch
     → NYT vs Mac via Forbes → BuzzFeed → NYT). Worked under Mat Honan (tracked) at BuzzFeed SF bureau.'
+  beats:
+  - tech_accountability
+  - billionaires
+  - facebook_meta
+  - silicon_valley_power
+  - elon_musk
+  awards:
+  - name: Mirror Award
+    year: 2019
+    category: Best Story - Digital
+    for: Facebook corporate accountability reporting at BuzzFeed News
+    source_url: https://en.wikipedia.org/wiki/Ryan_Mac
+  - name: George Polk Award
+    year: 2020
+    category: Journalism
+    for: Facebook reporting at BuzzFeed News
+    source_url: https://en.wikipedia.org/wiki/Ryan_Mac
+  books:
+  - title: 'Character Limit: How Elon Musk Destroyed Twitter'
+    year: 2024
+    publisher: Penguin Press
+    co_author: Kate Conger
+    source_url: https://characterlimit.net/
 - career:
   - beat: English, comparative literature
     end: 2007-05
@@ -7654,8 +7642,8 @@ journalists:
   - beat: politics, economics
     end: '2012'
     event_type: hired
-    notes: Started as a blogger at Left Foot Forward, a UK political blog. This blogging background predates his formal
-      journalism career and mirrors early-2010s "blogger-to-journalist" pipeline.
+    notes: Started as a blogger at Left Foot Forward, a UK political blog. This blogging background predates his formal journalism
+      career and mirrors early-2010s "blogger-to-journalist" pipeline.
     publication: freelance
     role: blogger
     source_url: https://newsworks.org.uk/10-minutes-with-alex-hern-uk-technology-editor-the-guardian/
@@ -7701,8 +7689,8 @@ journalists:
     start: 2016-01
   - beat: technology, digital culture, social media
     event_type: freelance
-    notes: Regular freelance contributor to the BBC. Hosted BBC Radio 4 documentaries including Everyone's a Star (2020)
-      and Artificial Implosion (2023). BBC contributions add another editorial lens — public-service broadcasting vs commercial
+    notes: Regular freelance contributor to the BBC. Hosted BBC Radio 4 documentaries including Everyone's a Star (2020) and
+      Artificial Implosion (2023). BBC contributions add another editorial lens — public-service broadcasting vs commercial
       media framing.
     publication: bbc
     role: contributor
@@ -12942,18 +12930,20 @@ journalists:
     start: '2015'
     end: '2019'
     beat: consumer tech, phones, reviews, NFTs, creator economy
-    notes: Full-time reporter after internship. Covered Nokia, phones, gadgets, crypto/NFTs, creator economy. Also contributed to Hot Pod and Command Line newsletters.
+    notes: Full-time reporter after internship. Covered Nokia, phones, gadgets, crypto/NFTs, creator economy. Also contributed
+      to Hot Pod and Command Line newsletters.
   - publication: the-verge
     role: editor_circuit_breaker
     start: '2019'
     end: '2021'
     beat: gadgets, consumer electronics
-    notes: Named editor of Circuit Breaker, The Verge's gadgets-focused channel, by Nilay Patel. Managed team including Ashley Carman, Chaim Gartenberg, Paul Miller.
+    notes: Named editor of Circuit Breaker, The Verge's gadgets-focused channel, by Nilay Patel. Managed team including Ashley
+      Carman, Chaim Gartenberg, Paul Miller.
     source_url: https://talkingbiznews.com/media-news/kastrenakes-named-new-editor-of-circuit-breaker/
   - publication: the-verge
     role: senior_editor
     start: '2021'
-    end: '2024-03'
+    end: 2024-03
     beat: news, tech, creator coverage
     notes: Oversaw the news team, creator coverage, and the Hot Pod and Command Line newsletters. Decade-long tenure.
   - publication: the-verge
@@ -12961,10 +12951,15 @@ journalists:
     start: 2024-03-11
     end: present
     beat: technology, policy, online creators
-    notes: 'Promoted to Executive Editor in March 2024 after 10 years at the site. Reports to Nilay Patel. KEY MIGRATION NOTE: Kastrenakes represents the purest internal pipeline — intern to EIC-2 in 10 years, entirely within one publication. No cross-publication framing migration to analyze, but his editorial influence shapes The Verge''s institutional voice.'
+    notes: 'Promoted to Executive Editor in March 2024 after 10 years at the site. Reports to Nilay Patel. KEY MIGRATION NOTE:
+      Kastrenakes represents the purest internal pipeline — intern to EIC-2 in 10 years, entirely within one publication.
+      No cross-publication framing migration to analyze, but his editorial influence shapes The Verge''s institutional voice.'
     source_url: https://pronthego.com/media/meet-the-media/jacob-kastrenakes
   name: Jacob Kastrenakes
-  notes: 'Joined The Verge as an intern in 2014, rose to Executive Editor by March 2024 — one of the longest continuous tenures at the publication. Located in Brooklyn, NY. Also known as "Jake." Over 4,500 articles published. His career is entirely within The Verge, making him the clearest example of institutional voice development without cross-publication influence. Circuit Breaker editorship (2019) was his first major leadership role.'
+  notes: Joined The Verge as an intern in 2014, rose to Executive Editor by March 2024 — one of the longest continuous tenures
+    at the publication. Located in Brooklyn, NY. Also known as "Jake." Over 4,500 articles published. His career is entirely
+    within The Verge, making him the clearest example of institutional voice development without cross-publication influence.
+    Circuit Breaker editorship (2019) was his first major leadership role.
   source_urls:
   - https://pronthego.com/media/meet-the-media/jacob-kastrenakes
   - https://talkingbiznews.com/media-news/kastrenakes-named-new-editor-of-circuit-breaker/
@@ -12976,24 +12971,31 @@ journalists:
     start: '2005'
     end: '2008'
     beat: HD technology, Blu-ray, home theater
-    notes: Started writing about HD technology for HD Beat (later merged with Engadget). Podcast partner with Ben Drawbaugh. Began career after editor Kevin Tofel gave him a shot.
+    notes: Started writing about HD technology for HD Beat (later merged with Engadget). Podcast partner with Ben Drawbaugh.
+      Began career after editor Kevin Tofel gave him a shot.
     source_url: https://engadget.com/2011-08-31-growing-up-geek-richard-lawler.html
   - publication: engadget
     role: senior_news_editor
     start: '2008'
     end: '2021'
     beat: consumer tech, gadgets, breaking news
-    notes: 'HD Beat merged into Engadget. Became Senior HD Editor, then Senior News Editor. 16-year tenure across HD Beat + Engadget. Based in Lansing, Michigan. Self-described as tech-obsessed since Atari. Ohio University graduate. KEY MIGRATION: One of the original Engadget → Vox Media pipeline hires alongside Alex Heath and Catie Keck in 2021 expansion.'
+    notes: 'HD Beat merged into Engadget. Became Senior HD Editor, then Senior News Editor. 16-year tenure across HD Beat
+      + Engadget. Based in Lansing, Michigan. Self-described as tech-obsessed since Atari. Ohio University graduate. KEY MIGRATION:
+      One of the original Engadget → Vox Media pipeline hires alongside Alex Heath and Catie Keck in 2021 expansion.'
     source_url: https://engadget.com/2011-08-31-growing-up-geek-richard-lawler.html
   - publication: the-verge
     role: senior_news_editor
     start: '2021'
     end: present
     beat: tech, culture, policy, entertainment, breaking news
-    notes: Hired alongside Alex Heath (from The Information) and Catie Keck (from Gizmodo) as part of The Verge's 2021 expansion. Covers news across tech, culture, policy, and entertainment. Sara Fischer of Axios reported the hire.
+    notes: Hired alongside Alex Heath (from The Information) and Catie Keck (from Gizmodo) as part of The Verge's 2021 expansion.
+      Covers news across tech, culture, policy, and entertainment. Sara Fischer of Axios reported the hire.
     source_url: https://talkingbiznews.com/media-news/the-verge-hires-heath-lawler-keck/
   name: Richard Lawler
-  notes: '16+ years at Engadget (2005–2021) before joining The Verge in 2021. Based in Lansing, MI. Ohio University graduate. One of the longest-tenured tech news editors in the industry. KEY MIGRATION: Engadget → The Verge represents Yahoo/AOL orbit → Vox Media pipeline. The Verge''s 2021 hiring wave (Lawler, Heath, Keck) was a deliberate talent acquisition from three rival outlets simultaneously.'
+  notes: '16+ years at Engadget (2005–2021) before joining The Verge in 2021. Based in Lansing, MI. Ohio University graduate.
+    One of the longest-tenured tech news editors in the industry. KEY MIGRATION: Engadget → The Verge represents Yahoo/AOL
+    orbit → Vox Media pipeline. The Verge''s 2021 hiring wave (Lawler, Heath, Keck) was a deliberate talent acquisition from
+    three rival outlets simultaneously.'
   source_urls:
   - https://talkingbiznews.com/media-news/the-verge-hires-heath-lawler-keck/
   - https://engadget.com/2011-08-31-growing-up-geek-richard-lawler.html
@@ -13011,32 +13013,43 @@ journalists:
     start: '2010'
     end: '2011'
     beat: news, culture
-    notes: News editor at Newsweek and The Daily Beast. Managed the Cheat Sheet section, contributed articles on news and culture.
+    notes: News editor at Newsweek and The Daily Beast. Managed the Cheat Sheet section, contributed articles on news and
+      culture.
     source_url: https://theorg.com/org/the-verge/org-chart/josh-dzieza
   - publication: newsweek
     role: articles_editor
     start: '2011'
-    end: '2013-11'
+    end: 2013-11
     beat: front-of-book articles
     notes: Promoted to articles editor. Assigned, edited, and wrote content for the publication's front of the book.
     source_url: https://theorg.com/org/the-verge/org-chart/josh-dzieza
   - publication: freelance
     role: freelancer
-    start: '2013-10'
-    end: '2014-05'
+    start: 2013-10
+    end: 2014-05
     beat: science, technology, environment
-    notes: Freelanced for Pacific Standard, MIT Technology Review, and Fast Company. Pacific Standard beekeeping story won 2016 NASW Science in Society Journalism Award.
+    notes: Freelanced for Pacific Standard, MIT Technology Review, and Fast Company. Pacific Standard beekeeping story won
+      2016 NASW Science in Society Journalism Award.
     source_url: https://joshdzieza.com
   - publication: the-verge
     role: investigations_editor
     start: 2014-05
     end: present
     beat: AI, technology platforms, labor, business, climate change
-    notes: 'Investigations editor and feature writer since May 2014. Loeb Award for feature writing (NYC delivery workers, with New York Magazine). National Magazine Award finalist. Deadline Club SPJ Award (Foxconn investigation). Sidney Award. NASW Science in Society Award. Work anthologized in Best American Food Writing and Best American Science and Nature Writing. Also written for New York Magazine. KEY STORIES: "AI Is a Lot of Work" (global AI training workforce), "The Eighth Wonder of the World" (Foxconn Wisconsin), subsea cable network, delivery worker revolt. BA Philosophy, Pomona College (2004–2008).'
+    notes: 'Investigations editor and feature writer since May 2014. Loeb Award for feature writing (NYC delivery workers,
+      with New York Magazine). National Magazine Award finalist. Deadline Club SPJ Award (Foxconn investigation). Sidney Award.
+      NASW Science in Society Award. Work anthologized in Best American Food Writing and Best American Science and Nature
+      Writing. Also written for New York Magazine. KEY STORIES: "AI Is a Lot of Work" (global AI training workforce), "The
+      Eighth Wonder of the World" (Foxconn Wisconsin), subsea cable network, delivery worker revolt. BA Philosophy, Pomona
+      College (2004–2008).'
     source_url: https://joshdzieza.com
   multi_publication: true
   name: Josh Dzieza
-  notes: 'Award-winning investigations editor at The Verge since 2014. Career: Harper''s Magazine → Newsweek/Daily Beast → freelance (Pacific Standard, MIT TR, Fast Company) → The Verge. BA Philosophy, Pomona College. KEY for MediaScope: His investigative work on AI labor ("AI Is a Lot of Work") and corporate accountability (Foxconn) represents The Verge''s most sustained institutional critique of tech industry practices. His migration from Newsweek (general news) → The Verge (tech-specific) shaped how consumer tech investigation differs from traditional business reporting. Brooklyn, NY.'
+  notes: 'Award-winning investigations editor at The Verge since 2014. Career: Harper''s Magazine → Newsweek/Daily Beast →
+    freelance (Pacific Standard, MIT TR, Fast Company) → The Verge. BA Philosophy, Pomona College. KEY for MediaScope: His
+    investigative work on AI labor ("AI Is a Lot of Work") and corporate accountability (Foxconn) represents The Verge''s
+    most sustained institutional critique of tech industry practices. His migration from Newsweek (general news) → The Verge
+    (tech-specific) shaped how consumer tech investigation differs from traditional business reporting. Brooklyn, NY.'
   source_urls:
   - https://joshdzieza.com
   - https://theorg.com/org/the-verge/org-chart/josh-dzieza
@@ -13047,7 +13060,8 @@ journalists:
     start: '2015'
     end: '2017'
     beat: tech policy, internet law
-    notes: Contributing writer at The Verge. Author of "The Internet of Garbage" (2015), a short book on online harassment and content moderation.
+    notes: Contributing writer at The Verge. Author of "The Internet of Garbage" (2015), a short book on online harassment
+      and content moderation.
   - publication: vice-motherboard
     role: contributing_editor
     start: '2017'
@@ -13059,25 +13073,38 @@ journalists:
     start: 2018-08
     end: 2019-08
     beat: technology
-    notes: 'Hired to NYT editorial board as lead writer on technology in August 2018. Hire sparked major controversy when conservative media highlighted old tweets about white people (mostly from 2013–2014). Jeong said tweets were counter-trolling satire. NYT stood by hire but distanced from tweets. The Verge editors defended her. KEY MIGRATION: The Verge → NYT editorial board represents contributor → institutional opinion-maker pipeline. Controversy itself became a case study in how social media histories intersect with editorial hiring.'
+    notes: 'Hired to NYT editorial board as lead writer on technology in August 2018. Hire sparked major controversy when
+      conservative media highlighted old tweets about white people (mostly from 2013–2014). Jeong said tweets were counter-trolling
+      satire. NYT stood by hire but distanced from tweets. The Verge editors defended her. KEY MIGRATION: The Verge → NYT
+      editorial board represents contributor → institutional opinion-maker pipeline. Controversy itself became a case study
+      in how social media histories intersect with editorial hiring.'
     source_url: https://en.wikipedia.org/wiki/Sarah_Jeong
   - publication: nytimes
     role: opinion_columnist
     start: 2019-08
-    end: '2022-01'
+    end: 2022-01
     beat: technology, internet culture
-    notes: Left editorial board to become opinion columnist in August 2019. Continued writing about technology and internet culture. "Goodbye to All That Harassment" essay was OJA finalist for Online Commentary.
+    notes: Left editorial board to become opinion columnist in August 2019. Continued writing about technology and internet
+      culture. "Goodbye to All That Harassment" essay was OJA finalist for Online Commentary.
     source_url: https://en.wikipedia.org/wiki/Sarah_Jeong
   - publication: the-verge
     role: deputy_features_editor
     start: 2022-01
     end: present
     beat: technology, internet culture, features
-    notes: 'Rejoined The Verge as deputy features editor in January 2022. Currently listed as Senior Reporter, Features. KEY DOUBLE MIGRATION: The Verge → NYT → The Verge. One of very few journalists to return to a publication after a high-profile departure to a prestige outlet. For DiD analysis, her return offers a natural experiment: did her NYT experience (and the controversy) change her framing of tech topics when she returned to The Verge?'
+    notes: 'Rejoined The Verge as deputy features editor in January 2022. Currently listed as Senior Reporter, Features. KEY
+      DOUBLE MIGRATION: The Verge → NYT → The Verge. One of very few journalists to return to a publication after a high-profile
+      departure to a prestige outlet. For DiD analysis, her return offers a natural experiment: did her NYT experience (and
+      the controversy) change her framing of tech topics when she returned to The Verge?'
     source_url: https://en.wikipedia.org/wiki/Sarah_Jeong
   multi_publication: true
   name: Sarah Jeong
-  notes: 'Korean American journalist and author. Harvard Law School JD. Author of "The Internet of Garbage" (2015, Vox Media). Forbes "30 Under 30" for media. Career: The Verge → NYT editorial board (2018, controversial hire) → NYT opinion columnist (2019) → The Verge (2022). KEY for MediaScope: One of the most publicly analyzed editorial hires in recent NYT history. The controversy revealed how social media archaeology can reshape hiring narratives. Her return to The Verge after the NYT creates a rare double-migration for DiD analysis — same person, same publication, with a prestige-institution interlude that included a major public controversy.'
+  notes: 'Korean American journalist and author. Harvard Law School JD. Author of "The Internet of Garbage" (2015, Vox Media).
+    Forbes "30 Under 30" for media. Career: The Verge → NYT editorial board (2018, controversial hire) → NYT opinion columnist
+    (2019) → The Verge (2022). KEY for MediaScope: One of the most publicly analyzed editorial hires in recent NYT history.
+    The controversy revealed how social media archaeology can reshape hiring narratives. Her return to The Verge after the
+    NYT creates a rare double-migration for DiD analysis — same person, same publication, with a prestige-institution interlude
+    that included a major public controversy.'
   source_urls:
   - https://en.wikipedia.org/wiki/Sarah_Jeong
   - https://nytco.com/press/statements-in-response-to-criticism-of-the-hiring-of-sarah-jeong
@@ -13088,7 +13115,9 @@ journalists:
     start: '2015'
     end: '2017'
     beat: climate change, global health
-    notes: Reported on climate change across four continents since Paris Agreement adoption in 2015. GroundTruth Project Global Health & Climate Change Reporting Fellow. Ida B. Wells Fellowship at The Nation Institute's Investigative Fund. Columbia Journalism School Toni Stabile investigative program alumna.
+    notes: Reported on climate change across four continents since Paris Agreement adoption in 2015. GroundTruth Project Global
+      Health & Climate Change Reporting Fellow. Ida B. Wells Fellowship at The Nation Institute's Investigative Fund. Columbia
+      Journalism School Toni Stabile investigative program alumna.
   - publication: inside-edition
     role: story_coordinator
     start: 2017-02
@@ -13115,11 +13144,20 @@ journalists:
     start: '2023'
     end: present
     beat: climate tech, energy, environment
-    notes: 'Promoted to senior science reporter. Host of "Hell or High Water: When Disaster Hits Home" podcast (Vox Media / Audible Originals). "Power Shift" story published in 2022 Best American Science and Nature Writing (HarperCollins). 2023 SEJ honorable mention for crypto mining environmental reporting. 2025 Covering Climate Now award for Costa Rica forest restoration. Also taught nonfiction climate writing at CCNY MFA program and CUNY Craig Newmark Graduate School of Journalism. Education: Columbia Journalism School MS (Toni Stabile investigative program, 2014–2015), UC Irvine dual BA Literary Journalism + International Studies (2006–2010).'
+    notes: 'Promoted to senior science reporter. Host of "Hell or High Water: When Disaster Hits Home" podcast (Vox Media
+      / Audible Originals). "Power Shift" story published in 2022 Best American Science and Nature Writing (HarperCollins).
+      2023 SEJ honorable mention for crypto mining environmental reporting. 2025 Covering Climate Now award for Costa Rica
+      forest restoration. Also taught nonfiction climate writing at CCNY MFA program and CUNY Craig Newmark Graduate School
+      of Journalism. Education: Columbia Journalism School MS (Toni Stabile investigative program, 2014–2015), UC Irvine dual
+      BA Literary Journalism + International Studies (2006–2010).'
     source_url: https://justinecalma.com
   multi_publication: true
   name: Justine Calma
-  notes: 'Senior science reporter at The Verge covering climate tech, energy, and environment. Career: freelance climate reporting → Inside Edition/CBS → Grist → The Verge (2019). Based in Los Angeles. Columbia Journalism School MS (investigative specialization). KEY for MediaScope: Calma represents The Verge''s investment in dedicated science/climate reporting — a beat most tech publications cover intermittently. Her Grist → Verge migration brings environmental justice framing into a consumer tech publication, worth tracking for how tech-environmental intersection stories are framed vs dedicated enviro outlets.'
+  notes: 'Senior science reporter at The Verge covering climate tech, energy, and environment. Career: freelance climate reporting
+    → Inside Edition/CBS → Grist → The Verge (2019). Based in Los Angeles. Columbia Journalism School MS (investigative specialization).
+    KEY for MediaScope: Calma represents The Verge''s investment in dedicated science/climate reporting — a beat most tech
+    publications cover intermittently. Her Grist → Verge migration brings environmental justice framing into a consumer tech
+    publication, worth tracking for how tech-environmental intersection stories are framed vs dedicated enviro outlets.'
   source_urls:
   - https://justinecalma.com
   - https://talkingbiznews.com/media-news/justine-calma-joins-the-verge/
@@ -13131,25 +13169,35 @@ journalists:
     start: '2017'
     end: '2018'
     beat: podcasting
-    notes: Worked at podcast company Indicative. Also hosted a podcast for The Daily Pennsylvanian, the University of Pennsylvania college newspaper.
+    notes: Worked at podcast company Indicative. Also hosted a podcast for The Daily Pennsylvanian, the University of Pennsylvania
+      college newspaper.
     source_url: https://barrettmedia.com/2023/11/17/lauren-feiner-departing-cnbc/
   - publication: cnbc
     role: tech_reporter
     start: '2018'
     end: '2023-11-17'
     beat: tech general assignments, tech policy, antitrust, privacy, content moderation
-    notes: 'Started as tech general assignments reporter, evolved into tech policy reporter. 5-year tenure covering antitrust (Google trial), privacy, content moderation reform. Based in Washington, D.C. Appeared on MSNBC, NBC News NOW, NBC LX, SiriusXM. National Press Foundation fellowship: "Your Body, Their Data?" Departed Nov 17, 2023 due to CNBC layoffs.'
+    notes: 'Started as tech general assignments reporter, evolved into tech policy reporter. 5-year tenure covering antitrust
+      (Google trial), privacy, content moderation reform. Based in Washington, D.C. Appeared on MSNBC, NBC News NOW, NBC LX,
+      SiriusXM. National Press Foundation fellowship: "Your Body, Their Data?" Departed Nov 17, 2023 due to CNBC layoffs.'
     source_url: https://barrettmedia.com/2023/11/17/lauren-feiner-departing-cnbc/
   - publication: the-verge
     role: senior_policy_reporter
     start: 2024-01-30
     end: present
     beat: tech policy, Silicon Valley vs Capitol Hill, antitrust, kids online safety, free expression, AI regulation
-    notes: 'Hired as senior policy reporter. Covers intersection of Silicon Valley and Capitol Hill: kids online safety, free expression, antitrust enforcement against major tech companies, immigration/ICE enforcement and tech. University of Pennsylvania BA Communication. KEY MIGRATION: CNBC → The Verge represents financial/business media → tech-native publication pipeline for policy coverage. Policy beat at CNBC was oriented toward investor-relevant regulatory risk; at The Verge it shifts toward consumer/civil liberties framing.'
+    notes: 'Hired as senior policy reporter. Covers intersection of Silicon Valley and Capitol Hill: kids online safety, free
+      expression, antitrust enforcement against major tech companies, immigration/ICE enforcement and tech. University of
+      Pennsylvania BA Communication. KEY MIGRATION: CNBC → The Verge represents financial/business media → tech-native publication
+      pipeline for policy coverage. Policy beat at CNBC was oriented toward investor-relevant regulatory risk; at The Verge
+      it shifts toward consumer/civil liberties framing.'
     source_url: https://talkingbiznews.com/media-news/the-verge-hires-feiner-as-senior-policy-reporter/
   multi_publication: true
   name: Lauren Feiner
-  notes: 'Senior policy reporter at The Verge covering tech policy. Career: podcast industry → CNBC (2018–2023, laid off) → The Verge (Jan 2024). Based in Washington, D.C. UPenn BA Communication. KEY for MediaScope: CNBC → Verge migration represents a framing shift from investor-oriented policy coverage (how does regulation affect stock price?) to user-oriented coverage (how does regulation affect rights?). Appeared on NPR, MSNBC, SiriusXM. Signal handle: laurenfeiner.64.'
+  notes: 'Senior policy reporter at The Verge covering tech policy. Career: podcast industry → CNBC (2018–2023, laid off)
+    → The Verge (Jan 2024). Based in Washington, D.C. UPenn BA Communication. KEY for MediaScope: CNBC → Verge migration represents
+    a framing shift from investor-oriented policy coverage (how does regulation affect stock price?) to user-oriented coverage
+    (how does regulation affect rights?). Appeared on NPR, MSNBC, SiriusXM. Signal handle: laurenfeiner.64.'
   source_urls:
   - https://talkingbiznews.com/media-news/the-verge-hires-feiner-as-senior-policy-reporter/
   - https://barrettmedia.com/2023/11/17/lauren-feiner-departing-cnbc/
@@ -13168,25 +13216,36 @@ journalists:
     start: '2012'
     end: 2015-10-09
     beat: local politics, NYC government, infrastructure
-    notes: '3.5-year tenure covering NYC politics. Left for The Verge. Self-described as covering politics for 8 years total (including Daily News tenure). Described the city as "the greatest city in the world."'
+    notes: 3.5-year tenure covering NYC politics. Left for The Verge. Self-described as covering politics for 8 years total
+      (including Daily News tenure). Described the city as "the greatest city in the world."
     source_url: https://everything-pr.com/andrew-hawkins-leaving-crains-new-york/
   - publication: the-verge
     role: transportation_reporter
     start: 2015-10-19
     end: '2020'
     beat: transportation, EVs, autonomous vehicles, mass transit, Uber, Lyft, Tesla, infrastructure
-    notes: 'Hired as transportation reporter. Nilay Patel announcement. Covered "transportation, Uber, Lyft, hyperloops, Tesla, mass transit, our nation''s shitty infrastructure." KEY MIGRATION: NYC political reporting → tech transportation journalism. Unique path — most Verge hires come from other tech publications. Hawkins brought a government/infrastructure reporting lens to tech transportation coverage.'
+    notes: 'Hired as transportation reporter. Nilay Patel announcement. Covered "transportation, Uber, Lyft, hyperloops, Tesla,
+      mass transit, our nation''s shitty infrastructure." KEY MIGRATION: NYC political reporting → tech transportation journalism.
+      Unique path — most Verge hires come from other tech publications. Hawkins brought a government/infrastructure reporting
+      lens to tech transportation coverage.'
     source_url: https://everything-pr.com/andrew-hawkins-leaving-crains-new-york/
   - publication: the-verge
     role: senior_transportation_editor
     start: '2020'
     end: present
     beat: EVs, public transportation, aviation, self-driving cars, robotaxis, Tesla, Waymo
-    notes: 'Promoted to senior transportation editor. 10+ years at The Verge. Over 5,700 articles. Frequently appears on Vergecast and Decoder podcasts. Based in New Jersey. Also known as "Andy." Interviewed Pete Buttigieg for Decoder CES 2022. KEY for MediaScope: Hawkins is the only major tech publication transportation editor with a local government reporting background. His framing of EV/robotaxi policy tends toward infrastructure/governance angles rather than pure consumer tech.'
+    notes: 'Promoted to senior transportation editor. 10+ years at The Verge. Over 5,700 articles. Frequently appears on Vergecast
+      and Decoder podcasts. Based in New Jersey. Also known as "Andy." Interviewed Pete Buttigieg for Decoder CES 2022. KEY
+      for MediaScope: Hawkins is the only major tech publication transportation editor with a local government reporting background.
+      His framing of EV/robotaxi policy tends toward infrastructure/governance angles rather than pure consumer tech.'
     source_url: https://muckrack.com/andyjayhawk
   multi_publication: true
   name: Andrew J. Hawkins
-  notes: 'Transportation editor at The Verge since 2015. Career: New York Daily News → Crain''s New York Business → The Verge. Also known as "Andy Hawkins." Based in New Jersey. 10+ years experience. Over 5,700 articles. KEY for MediaScope: Unusual pipeline — local NYC political reporter → tech transportation editor. This government-reporting background distinctly shapes how The Verge covers transportation policy compared to other tech outlets. The infrastructure/governance lens contrasts with purely consumer-tech transportation coverage at outlets like CNET or Wired.'
+  notes: 'Transportation editor at The Verge since 2015. Career: New York Daily News → Crain''s New York Business → The Verge.
+    Also known as "Andy Hawkins." Based in New Jersey. 10+ years experience. Over 5,700 articles. KEY for MediaScope: Unusual
+    pipeline — local NYC political reporter → tech transportation editor. This government-reporting background distinctly
+    shapes how The Verge covers transportation policy compared to other tech outlets. The infrastructure/governance lens contrasts
+    with purely consumer-tech transportation coverage at outlets like CNET or Wired.'
   source_urls:
   - https://everything-pr.com/andrew-hawkins-leaving-crains-new-york/
   - https://muckrack.com/andyjayhawk
@@ -13211,18 +13270,28 @@ journalists:
     start: '2016'
     end: '2018'
     beat: features, culture
-    notes: Senior Editor at GQ (Condé Nast). Prior writing appeared in NYT, The Atlantic, Grantland, The Awl, The Paris Review, The New Republic. Brooklyn Magazine 100 Most Influential in Brooklyn Culture (2016) and 30 Under 30 (2015).
+    notes: Senior Editor at GQ (Condé Nast). Prior writing appeared in NYT, The Atlantic, Grantland, The Awl, The Paris Review,
+      The New Republic. Brooklyn Magazine 100 Most Influential in Brooklyn Culture (2016) and 30 Under 30 (2015).
     source_url: https://voxmedia.com/2018/5/14/the-verge-welcomes-kevin-nguyen-as-new-features-editor
   - publication: the-verge
     role: features_editor
     start: '2018'
     end: present
     beat: features, longform, technology and culture
-    notes: 'Hired as Features Editor, now Deputy Editor, Features. Reports to Nilay Patel. Published stories that were finalists for the Pulitzer Prize and National Magazine Award. Also a novelist: "New Waves" (One World, 2020, NPR/Kirkus best of year), "Mỹ Documents" (One World, 2025, NYT Editor''s Choice). Currently writing Ryuichi Sakamoto biography. Vietnamese American. Brooklyn, NY. KEY MIGRATION: GQ (Condé Nast) → The Verge (Vox Media, now PMX Global). Represents Condé Nast → Vox pipeline for features/cultural journalism. His literary background shapes The Verge''s longform feature voice.'
+    notes: 'Hired as Features Editor, now Deputy Editor, Features. Reports to Nilay Patel. Published stories that were finalists
+      for the Pulitzer Prize and National Magazine Award. Also a novelist: "New Waves" (One World, 2020, NPR/Kirkus best of
+      year), "Mỹ Documents" (One World, 2025, NYT Editor''s Choice). Currently writing Ryuichi Sakamoto biography. Vietnamese
+      American. Brooklyn, NY. KEY MIGRATION: GQ (Condé Nast) → The Verge (Vox Media, now PMX Global). Represents Condé Nast
+      → Vox pipeline for features/cultural journalism. His literary background shapes The Verge''s longform feature voice.'
     source_url: https://voxmedia.com/2018/5/14/the-verge-welcomes-kevin-nguyen-as-new-features-editor
   multi_publication: true
   name: Kevin Nguyen
-  notes: 'Deputy Editor, Features at The Verge. Vietnamese American author and editor. Career: Oyster (editorial director) → Google Play Books (after acquisition) → GQ senior editor (Condé Nast) → The Verge features editor (2018). Novelist: "New Waves" (2020), "Mỹ Documents" (2025, NYT Editor''s Choice). Pulitzer Prize and National Magazine Award finalist for journalism. Currently writing Ryuichi Sakamoto biography. Brooklyn, NY. KEY for MediaScope: GQ → Verge migration represents Condé Nast features/culture pipeline → tech publication. His literary voice and cultural criticism background shapes The Verge''s feature section identity differently from tech-native editors.'
+  notes: 'Deputy Editor, Features at The Verge. Vietnamese American author and editor. Career: Oyster (editorial director)
+    → Google Play Books (after acquisition) → GQ senior editor (Condé Nast) → The Verge features editor (2018). Novelist:
+    "New Waves" (2020), "Mỹ Documents" (2025, NYT Editor''s Choice). Pulitzer Prize and National Magazine Award finalist for
+    journalism. Currently writing Ryuichi Sakamoto biography. Brooklyn, NY. KEY for MediaScope: GQ → Verge migration represents
+    Condé Nast features/culture pipeline → tech publication. His literary voice and cultural criticism background shapes The
+    Verge''s feature section identity differently from tech-native editors.'
   source_urls:
   - https://en.wikipedia.org/wiki/Kevin_Nguyen
   - https://voxmedia.com/2018/5/14/the-verge-welcomes-kevin-nguyen-as-new-features-editor
@@ -13247,25 +13316,39 @@ journalists:
     start: '2019'
     end: '2021'
     beat: immigration, DHS surveillance, border policy
-    notes: Immigration reporter at VICE News. Covered DHS surveillance of US citizens, border militarization, immigration enforcement. Based in Brooklyn.
+    notes: Immigration reporter at VICE News. Covered DHS surveillance of US citizens, border militarization, immigration
+      enforcement. Based in Brooklyn.
     source_url: https://thebreakthrough.org/people/gaby-del-valle
   - publication: freelance
     role: freelancer
     start: '2021'
     end: '2023'
     beat: immigration policy, far right, eugenics, surveillance
-    notes: 'Freelanced for The Nation, The Baffler, The Drift, The New York Review of Books, Harper''s, Political Research Associates. Co-founded BORDER/LINES, a weekly immigration policy newsletter with Felipe De La Hoz. Covered DHS surveillance, CPAC, eugenics resurgence, border technology.'
+    notes: Freelanced for The Nation, The Baffler, The Drift, The New York Review of Books, Harper's, Political Research Associates.
+      Co-founded BORDER/LINES, a weekly immigration policy newsletter with Felipe De La Hoz. Covered DHS surveillance, CPAC,
+      eugenics resurgence, border technology.
     source_url: https://politicalresearch.org/about/gaby-del-valle
   - publication: the-verge
     role: policy_reporter
     start: '2023'
     end: present
     beat: tech policy, immigration, surveillance, Silicon Valley politics, DOGE, eugenics
-    notes: 'Policy reporter at The Verge. "The Most Surveilled Place in America" (US-Mexico border militarization) was 2023 Livingston Award finalist for National Reporting. Covered Elon Musk/DOGE, eugenic ideas in Silicon Valley. Working on first book "BLOOD AND SOIL" (Bloomsbury Press, 2027) — history of conservation movement''s entanglements with eugenics and anti-immigration. Appeared on Tech Won''t Save Us podcast (Jan 2025). KEY for MediaScope: Del Valle brings an immigration/surveillance framing to tech coverage that is unique among major tech publication reporters. Her critical lens on border technology and DHS surveillance connects tech platform accountability to broader state surveillance questions.'
+    notes: 'Policy reporter at The Verge. "The Most Surveilled Place in America" (US-Mexico border militarization) was 2023
+      Livingston Award finalist for National Reporting. Covered Elon Musk/DOGE, eugenic ideas in Silicon Valley. Working on
+      first book "BLOOD AND SOIL" (Bloomsbury Press, 2027) — history of conservation movement''s entanglements with eugenics
+      and anti-immigration. Appeared on Tech Won''t Save Us podcast (Jan 2025). KEY for MediaScope: Del Valle brings an immigration/surveillance
+      framing to tech coverage that is unique among major tech publication reporters. Her critical lens on border technology
+      and DHS surveillance connects tech platform accountability to broader state surveillance questions.'
     source_url: https://politicalresearch.org/about/gaby-del-valle
   multi_publication: true
   name: Gaby Del Valle
-  notes: 'Policy reporter at The Verge. Career: The Outline → Vox (The Goods) → VICE News (immigration) → freelance (The Nation, Baffler, Harper''s, NYRB) → The Verge. Co-founded BORDER/LINES immigration newsletter. 2023 Livingston Award finalist. Working on "BLOOD AND SOIL" (Bloomsbury, 2027) on conservation-eugenics history. KEY for MediaScope: Unique pipeline — immigration/surveillance journalism → tech policy. Most Verge policy reporters come from business or tech media (Lauren Feiner from CNBC, Adi Robertson internal). Del Valle came from investigative immigration reporting (VICE News) and critical left publications (The Nation, The Baffler), bringing structural critique of tech-state surveillance apparatus rather than regulatory/business-impact framing.'
+  notes: 'Policy reporter at The Verge. Career: The Outline → Vox (The Goods) → VICE News (immigration) → freelance (The Nation,
+    Baffler, Harper''s, NYRB) → The Verge. Co-founded BORDER/LINES immigration newsletter. 2023 Livingston Award finalist.
+    Working on "BLOOD AND SOIL" (Bloomsbury, 2027) on conservation-eugenics history. KEY for MediaScope: Unique pipeline —
+    immigration/surveillance journalism → tech policy. Most Verge policy reporters come from business or tech media (Lauren
+    Feiner from CNBC, Adi Robertson internal). Del Valle came from investigative immigration reporting (VICE News) and critical
+    left publications (The Nation, The Baffler), bringing structural critique of tech-state surveillance apparatus rather
+    than regulatory/business-impact framing.'
   source_urls:
   - https://politicalresearch.org/about/gaby-del-valle
   - https://thebreakthrough.org/people/gaby-del-valle
@@ -13284,31 +13367,51 @@ journalists:
     start: '2020'
     end: '2021'
     beat: political corruption, organized labor
-    notes: 'Reporting fellow at Type Investigations (formerly The Investigative Fund). Produced Joe Manchin coal empire investigation for The Intercept (Sep 2021).'
+    notes: Reporting fellow at Type Investigations (formerly The Investigative Fund). Produced Joe Manchin coal empire investigation
+      for The Intercept (Sep 2021).
     source_url: https://typeinvestigations.org/staff/daniel-boguslaw/
   - publication: the-intercept
     role: investigative_reporter
     start: '2021'
     end: '2024'
     beat: national security, military, intelligence, political corruption
-    notes: 'Prolific investigative reporter. Key stories: Joe Manchin coal network (Sep 2021), Army PSYOP report (Apr 2024), Secret US-Israel alliance vs Iran (Apr 2024), DHS high school spying (Mar 2024), Pentagon civilian death safeguards (Mar 2024). Frequently covered intelligence community, military operations, and government surveillance. ~15+ bylined articles at The Intercept between 2021-2024.'
+    notes: 'Prolific investigative reporter. Key stories: Joe Manchin coal network (Sep 2021), Army PSYOP report (Apr 2024),
+      Secret US-Israel alliance vs Iran (Apr 2024), DHS high school spying (Mar 2024), Pentagon civilian death safeguards
+      (Mar 2024). Frequently covered intelligence community, military operations, and government surveillance. ~15+ bylined
+      articles at The Intercept between 2021-2024.'
     source_url: https://theintercept.com/staff/daniel-boguslaw/
   - publication: freelance
     role: freelancer
     start: '2024'
     end: '2025'
     beat: investigations, intelligence, politics, Epstein
-    notes: 'Published across multiple outlets simultaneously: UnHerd (CIA Epstein problem, Sep 2025), The American Prospect (Epstein documents, Summers/Project 2029, Nov 2025), New Republic (ICE mass deportation from Vermont, Oct 2025), The Baffler, The Nation, The American Conservative. Also obtained and published Bohemian Grove 2023 membership list on Substack (2024), widely covered by SF Standard and other outlets. Substack: danboguslaw.substack.com.'
+    notes: 'Published across multiple outlets simultaneously: UnHerd (CIA Epstein problem, Sep 2025), The American Prospect
+      (Epstein documents, Summers/Project 2029, Nov 2025), New Republic (ICE mass deportation from Vermont, Oct 2025), The
+      Baffler, The Nation, The American Conservative. Also obtained and published Bohemian Grove 2023 membership list on Substack
+      (2024), widely covered by SF Standard and other outlets. Substack: danboguslaw.substack.com.'
     source_url: https://danboguslaw.substack.com/
   - publication: wired
     role: staff_writer
     start: '2026'
     end: present
     beat: tech companies, AI, corporate power, investigations
-    notes: 'Joined Wired circa early 2026. By May 2026 confirmed as Wired staff (referred to as "Wired''s Daniel Boguslaw" on Fast Politics podcast May 29, 2026). Listed on Wired masthead under Business desk. KEY STORIES: "''Tell Him Hes a Piece of Shit: Metas New AI Unit Is a Total Mess" — major investigative piece using internal sources and internal discussions showing Meta Superintelligence Labs chaos. Also covered DOJ targeting anti-data center activists (May 2026 article + podcast appearance). On the Wired staff page alongside Zoë Schiffer, Paresh Dave, and Joel Khalili under Business desk.'
+    notes: 'Joined Wired circa early 2026. By May 2026 confirmed as Wired staff (referred to as "Wired''s Daniel Boguslaw"
+      on Fast Politics podcast May 29, 2026). Listed on Wired masthead under Business desk. KEY STORIES: "''Tell Him Hes a
+      Piece of Shit: Metas New AI Unit Is a Total Mess" — major investigative piece using internal sources and internal discussions
+      showing Meta Superintelligence Labs chaos. Also covered DOJ targeting anti-data center activists (May 2026 article +
+      podcast appearance). On the Wired staff page alongside Zoë Schiffer, Paresh Dave, and Joel Khalili under Business desk.'
   multi_publication: true
   name: Daniel Boguslaw
-  notes: 'Investigative reporter at Wired. Education: Reed College (political science). Based in Massachusetts (Turners Falls, per Type Investigations). Twitter: @drboguslaw (~24.9K followers). Contact: danielboguslaw@proton.me, Signal: 617-922-8830. Career: Revolving Door Project → Type Investigations → The Intercept → freelance (UnHerd, American Prospect, New Republic, Baffler, Nation, American Conservative) → Wired. KEY for MediaScope: Boguslaw represents a NOTABLE CAREER MIGRATION from progressive investigative outlets (Intercept, Nation, American Prospect, Type Investigations) to Condé Nast mainstream tech media. His investigative background in political corruption, organized labor, and intelligence community → tech corporate coverage creates a distinctive ideological lens. His first major Meta piece at Wired was sharply adversarial ("piece of shit" in headline, "total mess" framing). His cross-ideological publication history (American Prospect AND American Conservative, Intercept AND UnHerd) suggests anti-corporate-power framing that transcends left-right axis. Worth tracking for: framing of corporate chaos, use of anonymous internal sources, adversarial tone calibration vs other Wired Meta reporters.'
+  notes: 'Investigative reporter at Wired. Education: Reed College (political science). Based in Massachusetts (Turners Falls,
+    per Type Investigations). Twitter: @drboguslaw (~24.9K followers). Contact: danielboguslaw@proton.me, Signal: 617-922-8830.
+    Career: Revolving Door Project → Type Investigations → The Intercept → freelance (UnHerd, American Prospect, New Republic,
+    Baffler, Nation, American Conservative) → Wired. KEY for MediaScope: Boguslaw represents a NOTABLE CAREER MIGRATION from
+    progressive investigative outlets (Intercept, Nation, American Prospect, Type Investigations) to Condé Nast mainstream
+    tech media. His investigative background in political corruption, organized labor, and intelligence community → tech corporate
+    coverage creates a distinctive ideological lens. His first major Meta piece at Wired was sharply adversarial ("piece of
+    shit" in headline, "total mess" framing). His cross-ideological publication history (American Prospect AND American Conservative,
+    Intercept AND UnHerd) suggests anti-corporate-power framing that transcends left-right axis. Worth tracking for: framing
+    of corporate chaos, use of anonymous internal sources, adversarial tone calibration vs other Wired Meta reporters.'
   source_urls:
   - https://therevolvingdoorproject.org/staff/daniel-boguslaw/
   - https://typeinvestigations.org/staff/daniel-boguslaw/
@@ -13332,14 +13435,16 @@ journalists:
     start: 2013-02
     end: '2015'
     beat: agriculture policy, farm economics, food policy
-    notes: 'Named associate editor Feb 2013 after starting as fall 2012 intern. Covered farm, food, and rural issues on Capitol Hill. First full-time journalism role.'
+    notes: Named associate editor Feb 2013 after starting as fall 2012 intern. Covered farm, food, and rural issues on Capitol
+      Hill. First full-time journalism role.
     source_url: https://www.agri-pulse.com/articles/1698-agri-pulse-communications-inc-hires-new-associate-editor
   - publication: bloomberg-citylab
     role: writer
     start: '2015'
     end: '2016'
     beat: urban planning, cities, transportation
-    notes: 'Writer at CityLab, then still an Atlantic property (later acquired by Bloomberg Media in 2019). Covered urban solutions and city infrastructure. Also known as Atlantic Cities.'
+    notes: Writer at CityLab, then still an Atlantic property (later acquired by Bloomberg Media in 2019). Covered urban solutions
+      and city infrastructure. Also known as Atlantic Cities.
     source_url: https://www.colorado.edu/cwa/aarian-marshall
   - publication: bloomberg
     role: editorial_fellow
@@ -13353,11 +13458,21 @@ journalists:
     start: '2016'
     end: present
     beat: transportation, cities, EVs, autonomous vehicles, automotive industry
-    notes: 'Long-tenured Wired staff writer since 2016 (~10 years). Beat: transportation, cities, and automotive. Key coverage areas: EV charging infrastructure, subscription-based car features, autonomous vehicle ethics (MIT Moral Machine coverage, 2018), Tesla/Elon Musk, EV battery technology. Regular guest on WIRED''s Gadget Lab / Uncanny Valley podcast. Also published via Ars Technica and WIRED en Español syndication. Contact: aarian_marshall@wired.com. Twitter: @AarianMarshall.'
+    notes: 'Long-tenured Wired staff writer since 2016 (~10 years). Beat: transportation, cities, and automotive. Key coverage
+      areas: EV charging infrastructure, subscription-based car features, autonomous vehicle ethics (MIT Moral Machine coverage,
+      2018), Tesla/Elon Musk, EV battery technology. Regular guest on WIRED''s Gadget Lab / Uncanny Valley podcast. Also published
+      via Ars Technica and WIRED en Español syndication. Contact: aarian_marshall@wired.com. Twitter: @AarianMarshall.'
     source_url: https://www.wired.com/author/aarian-marshall/
   multi_publication: true
   name: Aarian Marshall
-  notes: 'Staff writer at Wired covering transportation and cities since 2016. Education: Princeton University (A.B., Religion and Urban Studies, 2012). Based in San Diego. Career: Agri-Pulse → Bloomberg/CityLab → Wired. Also appeared in Bloomberg News, The Atlantic, Yahoo Tech, Ars Technica, Quartz, Mother Jones. KEY for MediaScope: Marshall is one of Wired''s longest-tenured current staff writers. Her transportation/cities beat means she does not typically cover Meta directly, but her coverage of Tesla, autonomous vehicles, and EV infrastructure provides comparative data for how Wired frames non-Meta tech companies (especially Tesla/Musk). Interesting Atlantic CityLab → Wired pipeline predates Bloomberg''s CityLab acquisition. Her coverage style is more explanatory/analytical than adversarial — useful as a framing baseline within Wired to compare against the security/investigations desk''s more adversarial Meta coverage.'
+  notes: 'Staff writer at Wired covering transportation and cities since 2016. Education: Princeton University (A.B., Religion
+    and Urban Studies, 2012). Based in San Diego. Career: Agri-Pulse → Bloomberg/CityLab → Wired. Also appeared in Bloomberg
+    News, The Atlantic, Yahoo Tech, Ars Technica, Quartz, Mother Jones. KEY for MediaScope: Marshall is one of Wired''s longest-tenured
+    current staff writers. Her transportation/cities beat means she does not typically cover Meta directly, but her coverage
+    of Tesla, autonomous vehicles, and EV infrastructure provides comparative data for how Wired frames non-Meta tech companies
+    (especially Tesla/Musk). Interesting Atlantic CityLab → Wired pipeline predates Bloomberg''s CityLab acquisition. Her
+    coverage style is more explanatory/analytical than adversarial — useful as a framing baseline within Wired to compare
+    against the security/investigations desk''s more adversarial Meta coverage.'
   source_urls:
   - https://www.colorado.edu/cwa/aarian-marshall
   - https://rocketreach.co/aarian-marshall-email_44832389
@@ -13380,18 +13495,18 @@ journalists:
     end: '2017'
     beat: technology, politics, media
     event_type: hired
-    notes: 'Reporter at Crikey, an Australian independent online news outlet. Expanded beat beyond telecoms to broader technology
+    notes: Reporter at Crikey, an Australian independent online news outlet. Expanded beat beyond telecoms to broader technology
       and politics coverage. Crikey is subscription-funded and explicitly progressive/adversarial — tests whether this editorial
-      culture carried forward to Guardian.'
+      culture carried forward to Guardian.
   - publication: buzzfeed-news
     role: reporter
     start: '2017'
     end: '2019'
     beat: politics, technology, federal government
     event_type: hired
-    notes: 'BuzzFeed News Australia. Covered federal politics and technology. Bylines include Bob Hawke''s death coverage (May
+    notes: BuzzFeed News Australia. Covered federal politics and technology. Bylines include Bob Hawke's death coverage (May
       2019), Pauline Hanson parliamentary incidents, COVIDSafe tracking app critique, banking royal commission. Left around
-      mid-2019.'
+      mid-2019.
     source_url: https://www.buzzfeed.com/joshtaylor
   - publication: guardian
     role: reporter
@@ -13402,10 +13517,10 @@ journalists:
       technology and politics in Australia. Key coverage: Australia under-16 social media ban (June 2026), COVIDSafe app failure,
       Cambridge Analytica Australian privacy suit, Epic antitrust cases, AI governance, encryption/E2EE debates. Appeared
       on ABC RN, ABC News, Ten News, The Project, Technogaze podcast. Known for "blank phone and social media account experiment"
-      investigating platform algorithmic feeds (State of Social ''24). ANALYTICAL VALUE: Guardian Australia is a distinct editorial
-      entity from Guardian UK/US — same ownership (Scott Trust) but different editorial leadership (Lenore Taylor, founding
-      EIC). Taylor''s framing of platform regulation from Australian perspective provides a geographic control for comparing
-      how Guardian frames Big Tech in different markets (UK: Dan Milmo regulation focus; US: Blake Montgomery adversarial
+      investigating platform algorithmic feeds (State of Social ''24). ANALYTICAL VALUE: Guardian Australia is a distinct
+      editorial entity from Guardian UK/US — same ownership (Scott Trust) but different editorial leadership (Lenore Taylor,
+      founding EIC). Taylor''s framing of platform regulation from Australian perspective provides a geographic control for
+      comparing how Guardian frames Big Tech in different markets (UK: Dan Milmo regulation focus; US: Blake Montgomery adversarial
       investigations; AU: Josh Taylor accountability/transparency focus).'
     source_url: https://stateofsocial.com.au/speaker/josh-taylor/
   multi_publication: true
@@ -13415,9 +13530,9 @@ journalists:
     KEY for MediaScope: (1) ZDNet → Crikey → BuzzFeed → Guardian pipeline tests how adversarial editorial culture (Crikey,
     BuzzFeed) shapes later Guardian framing; (2) as Guardian Australia''s primary tech reporter, his output shapes an entire
     geographic edition''s tech coverage; (3) his FOI/transparency focus makes him a natural accountability journalist — the
-    blank-phone experiment investigated algorithmic manipulation directly, unusual methodology for a reporter at a legacy broadsheet;
-    (4) his coverage of Australian-specific tech regulation (social media age bans, encryption debates) provides international
-    comparison data for how Guardian frames similar issues across UK/US/AU markets.'
+    blank-phone experiment investigated algorithmic manipulation directly, unusual methodology for a reporter at a legacy
+    broadsheet; (4) his coverage of Australian-specific tech regulation (social media age bans, encryption debates) provides
+    international comparison data for how Guardian frames similar issues across UK/US/AU markets.'
   source_urls:
   - https://muckrack.com/joshtaylor
   - https://stateofsocial.com.au/speaker/josh-taylor/
@@ -13429,8 +13544,8 @@ journalists:
     end: '2016'
     beat: general
     event_type: hired
-    notes: 'Early career at BuzzFeed News. Ghaffary is part of the BuzzFeed News alumni diaspora (along with Ryan Mac → NYT,
-      Nitasha Tiku → WaPo, Blake Montgomery → Guardian). This network effect is analytically significant.'
+    notes: Early career at BuzzFeed News. Ghaffary is part of the BuzzFeed News alumni diaspora (along with Ryan Mac → NYT,
+      Nitasha Tiku → WaPo, Blake Montgomery → Guardian). This network effect is analytically significant.
     source_url: https://talkingbiznews.com/they-re-hiring/ghaffary-to-cover-social-media-for-recode/
   - publication: elementum
     role: non_journalism
@@ -13438,9 +13553,9 @@ journalists:
     end: '2017'
     beat: enterprise software
     event_type: hired
-    notes: 'Non-journalism role at Elementum, an enterprise software startup. Brief industry detour before returning to journalism.
-      Parallels Blake Montgomery''s Cozymeal detour and Zoë Schiffer''s Uber experience — insider tech industry exposure
-      before covering it.'
+    notes: Non-journalism role at Elementum, an enterprise software startup. Brief industry detour before returning to journalism.
+      Parallels Blake Montgomery's Cozymeal detour and Zoë Schiffer's Uber experience — insider tech industry exposure before
+      covering it.
     source_url: https://non-stop.kr/recode/authors/shirin-ghaffary
   - publication: recode
     role: reporter
@@ -13448,29 +13563,29 @@ journalists:
     end: '2021'
     beat: labor and tech, social media, big tech
     event_type: hired
-    notes: 'General assignment reporter at Recode (Vox Media). Initially covered labor and tech, then promoted to cover social
+    notes: General assignment reporter at Recode (Vox Media). Initially covered labor and tech, then promoted to cover social
       media and big tech. Also associate producer and host on "Above the Noise" YouTube series (PBS Digital/KQED). UC Berkeley
       BA, executive news editor of the Daily Californian. Also interned at WSJ and TechCrunch. Originally from San Francisco
-      Bay Area, raised in Silicon Valley next door to Apple HQ.'
+      Bay Area, raised in Silicon Valley next door to Apple HQ.
     source_url: https://non-stop.kr/recode/authors/shirin-ghaffary
   - publication: recode
     role: senior_correspondent
     start: '2021'
-    end: '2023-08'
+    end: 2023-08
     beat: social media policy, politics, big tech
     event_type: promoted
-    notes: 'Promoted to senior correspondent at Vox/Recode. Covered social media policy and its intersection with politics.
-      Co-hosted Google season of "Land of the Giants" narrative podcast series. This podcast gave her deep access to Google''s
-      corporate culture and decision-making — institutional knowledge that carried forward to her Bloomberg AI coverage.'
+    notes: Promoted to senior correspondent at Vox/Recode. Covered social media policy and its intersection with politics.
+      Co-hosted Google season of "Land of the Giants" narrative podcast series. This podcast gave her deep access to Google's
+      corporate culture and decision-making — institutional knowledge that carried forward to her Bloomberg AI coverage.
     source_url: https://talkingbiznews.com/they-re-hiring/ghaffary-to-cover-social-media-policy-and-politics-for-vox-recode/
   - publication: bloomberg
     role: reporter
-    start: '2023-09'
+    start: 2023-09
     beat: AI ethics, policy, OpenAI
     event_type: hired
     notes: 'Reporter at Bloomberg covering AI ethics and policy. Started weekly AI newsletter. Coverage focuses on OpenAI,
-      funding/valuation dynamics, ChatGPT, and government regulation of AI. Significant beat: covers the intersection of
-      AI development and policy/politics. Bloomberg is not in our 5-pub tracker but this migration (Vox → Bloomberg) parallels
+      funding/valuation dynamics, ChatGPT, and government regulation of AI. Significant beat: covers the intersection of AI
+      development and policy/politics. Bloomberg is not in our 5-pub tracker but this migration (Vox → Bloomberg) parallels
       the broader 2023 AI-beat migration wave as legacy financial media invested heavily in dedicated AI coverage.'
     source_url: https://matternow.com/media-on-the-move-july-2023/
   multi_publication: true
@@ -13480,13 +13595,63 @@ journalists:
     Google season of "Land of the Giants" podcast. Publicly disclosed ethics statement (no individual stock ownership, no
     paid speaking from sources). KEY for MediaScope: (1) Recode/Vox → Bloomberg migration tests how Vox Media''s advocacy-journalism
     framing (Recode was founded by Kara Swisher, one of tech journalism''s most adversarial voices) adapts to Bloomberg''s
-    financial-wire editorial norms; (2) her AI ethics/policy beat at Bloomberg is precisely where framing matters most —
-    how "AI risk" is characterized (existential vs regulatory vs competitive) shapes public discourse; (3) the BuzzFeed News
-    alumni network (Mac, Tiku, Montgomery, Ghaffary) has now dispersed across NYT, WaPo, Guardian, and Bloomberg — testing
-    whether shared editorial origins produce detectable framing similarities across institutions; (4) her Silicon Valley
-    upbringing and tech industry experience (Elementum) give her insider perspective that may moderate or amplify adversarial
-    framing depending on institutional context.'
+    financial-wire editorial norms; (2) her AI ethics/policy beat at Bloomberg is precisely where framing matters most — how
+    "AI risk" is characterized (existential vs regulatory vs competitive) shapes public discourse; (3) the BuzzFeed News alumni
+    network (Mac, Tiku, Montgomery, Ghaffary) has now dispersed across NYT, WaPo, Guardian, and Bloomberg — testing whether
+    shared editorial origins produce detectable framing similarities across institutions; (4) her Silicon Valley upbringing
+    and tech industry experience (Elementum) give her insider perspective that may moderate or amplify adversarial framing
+    depending on institutional context.'
   source_urls:
   - https://talkingbiznews.com/they-re-hiring/ghaffary-to-cover-social-media-policy-and-politics-for-vox-recode/
   - https://non-stop.kr/recode/authors/shirin-ghaffary
   - https://matternow.com/media-on-the-move-july-2023/
+- name: Deepa Seetharaman
+  beats:
+  - artificial_intelligence
+  - facebook_meta
+  - social_media_enterprise
+  - openai
+  - ecommerce
+  education:
+    institution: Northwestern University
+    school: Medill School of Journalism
+    degree: BSJ
+    graduation: 2008
+    source_url: https://magazine.medill.northwestern.edu/emily-glazer-bsj10-and-deepa-seetharaman-bsj08/
+  awards:
+  - name: George Polk Award
+    year: 2021
+    category: Business Reporting
+    for: Facebook Files investigation at WSJ (with Jeff Horwitz and team)
+    source_url: https://magazine.medill.northwestern.edu/emily-glazer-bsj10-and-deepa-seetharaman-bsj08/
+  - name: Gerald Loeb Award
+    category: Beat Reporting
+    for: Facebook/Meta beat coverage at WSJ
+    source_url: https://talkingbiznews.com/they-talk-biz-news/wsj-tech-reporter-seetharaman-departing/
+  - name: Gerald Loeb Award finalist
+    year: 2012
+    for: United Auto Workers union financial coverage at Reuters
+    source_url: https://talkingbiznews.com/they-talk-biz-news/wsjs-facebook-reporter-moving-to-enterprise-beat/
+  career:
+  - publication: reuters
+    role: reporter
+    start: 2008-01
+    end: 2015-02
+    notes: Started at Reuters covering US auto industry and labor unions from Detroit. Later covered e-commerce (Amazon, eBay)
+      from San Francisco. Gerald Loeb finalist 2012 for UAW coverage.
+    source_url: https://talkingbiznews.com/they-talk-biz-news/wsjs-facebook-reporter-moving-to-enterprise-beat/
+  - publication: wall-street-journal
+    role: technology_reporter
+    start: 2015-03
+    end: 2025-05
+    notes: Joined March 2015. Facebook/Meta beat reporter (~2015-2019), then enterprise social media beat (~2019), then AI
+      reporter (~2022-2025). Co-broke Facebook Files series with Jeff Horwitz (2021 George Polk Award). Covered Instagram
+      teen effects, AI content moderation failures, antitrust, Silicon Valley executive profiles. Decade at WSJ.
+    source_url: https://talkingbiznews.com/they-talk-biz-news/wsj-tech-reporter-seetharaman-departing/
+    migration_type: outbound
+  - publication: reuters
+    role: tech_correspondent
+    start: 2025-06
+    notes: Rejoined Reuters as Tech Correspondent. Covers AI and OpenAI from San Francisco. 2025 Business Journalist in Residence
+      at Wisconsin School of Business.
+    source_url: https://newerest.space/reuters-hires-seetharaman-to-cover-artificial-intelligence/
