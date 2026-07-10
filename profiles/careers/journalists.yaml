@@ -2284,6 +2284,14 @@ journalists:
     narrative construction in tech reporting; (5) the BuzzFeed alumni network connects him to Ryan Mac (NYT), Nitasha Tiku
     (WaPo), and other tracked journalists who passed through the same digital-native pipeline.'
 - career:
+  - publication: mother-jones
+    role: online_editorial_fellow
+    start: 2013-01
+    end: 2014-01
+    beat: politics, investigative
+    event_type: hired
+    notes: Online editorial fellow. Early career in progressive investigative media before pivoting to tech journalism.
+    source_url: https://talkingbiznews.com/they-re-hiring/recode-reboots-as-part-of-vox-hires-oltman-as-editor/
   - beat: homepage/digital
     end: 2017-06
     event_type: hired
@@ -2335,8 +2343,18 @@ journalists:
     source_url: https://talkingbiznews.com/they-re-hiring/bloomberg-hires-oltman-as-editor-for-ai-vc-and-startups/
     start: 2026-06
   name: Samantha Oltman
-  notes: 'Complex multi-publication career: Wired → BuzzFeed News → Recode/Vox → Good Luck Media → Guardian → Bloomberg. Primarily
-    editor/leadership, not reporter. Brief Guardian stint leading Reworked AI series.'
+  notes: 'Complex multi-publication career: Mother Jones → Wired → BuzzFeed News → Recode/Vox → Good Luck Media → Guardian
+    → Bloomberg. Primarily editor/leadership, not reporter. Brief Guardian stint (Feb–Jun 2026) leading Reworked AI & work
+    series before departing to Bloomberg under Sarah Frier. USC B.A. in Print Journalism and French. KEY migration: 7 publications
+    in ~13 years. Her Recode/Kara Swisher lineage and progressive-media roots (Mother Jones) shape editorial framing of Big
+    Tech. Executive-produced CNN ''Titans of Tech'' documentary and Vox''s ''Land of the Giants'' podcast. Co-founded Good
+    Luck Media with climate podcast ''Sabotage'' (Apple Podcasts best show 2025).'
+  multi_publication: true
+  source_urls:
+  - https://talkingbiznews.com/they-re-hiring/bloomberg-hires-oltman-as-editor-for-ai-vc-and-startups/
+  - https://talkingbiznews.com/they-re-hiring/recode-reboots-as-part-of-vox-hires-oltman-as-editor/
+  - https://www.editorandpublisher.com/stories/guardian-launches-reporting-initiative-ai-work-power,262263
+  - https://patrioticmillionaires.org/how-we-win-2026/
 - career:
   - beat: international, conflict, environment
     end: 2014-08
@@ -13655,3 +13673,143 @@ journalists:
     notes: Rejoined Reuters as Tech Correspondent. Covers AI and OpenAI from San Francisco. 2025 Business Journalist in Residence
       at Wisconsin School of Business.
     source_url: https://newerest.space/reuters-hires-seetharaman-to-cover-artificial-intelligence/
+- name: Betsy Reed
+  multi_publication: true
+  career:
+  - publication: conde-nast-traveller
+    role: assistant
+    start: '1990'
+    end: '1992'
+    beat: travel
+    event_type: hired
+    notes: 'First media job out of Harvard. Self-described "Devil Wears Prada job." KEY: Personal career connection to Condé
+      Nast publishing empire — Guardian US EIC started her career inside the same corporate family that owns Wired. Not a
+      current conflict, but part of the cross-publication talent network the editorial histories module tracks.'
+    source_url: https://uk.themedialeader.com/betsy-reed-wants-investigative-journalism-to-build-the-guardians-us-brand/
+  - publication: the-nation
+    role: senior_editor
+    start: '1998'
+    end: '2006'
+    beat: politics, investigative
+    event_type: hired
+    notes: Senior editor at progressive weekly magazine. 16-year total tenure at The Nation.
+    source_url: https://en.wikipedia.org/wiki/Betsy_Reed
+  - publication: the-nation
+    role: executive_editor
+    start: '2006'
+    end: 2014-12
+    beat: politics, investigative
+    event_type: promoted
+    notes: 'Promoted to executive editor. Led investigative coverage. Edited books including "Blackwater" and "Dirty Wars"
+      by Jeremy Scahill, and "Going Rouge: Sarah Palin, An American Nightmare."'
+    source_url: https://en.wikipedia.org/wiki/Betsy_Reed
+  - publication: the-intercept
+    role: eic
+    start: 2015-01
+    end: 2022-07
+    beat: investigative, national security, civil liberties
+    event_type: hired
+    notes: 'Editor-in-chief of The Intercept for 8 years. Won George Polk Award, National Magazine Awards, Sidney Hillman
+      Prize. The Intercept was founded by Glenn Greenwald, Jeremy Scahill, and Laura Poitras to pursue aggressive adversarial
+      journalism against government and corporate power. KEY: This editorial posture — skepticism of concentrated power, adversarial
+      by design — is the lens Reed brought to Guardian US.'
+    source_url: https://www.editorandpublisher.com/stories/new-guardian-us-editor-appointed,218802
+  - publication: guardian
+    role: us_eic
+    start: 2022-09
+    beat: editorial leadership
+    event_type: hired
+    notes: 'Editor-in-chief of Guardian US. Succeeded John Mulholland (April 2017-2022). Viner: "one of America''s foremost
+      and experienced editors." Vision: "Cover the US for the world and the world for the US." Under her leadership: hired
+      Samantha Oltman for Reworked AI series (Feb 2026), expanded tech desk (Dara Kerr, Aisha Down as Tarbell fellow). Career
+      arc: Condé Nast → progressive media (The Nation) → adversarial investigative (Intercept) → Guardian US. Each step deepened
+      the editorial posture of institutional skepticism toward corporate power.'
+    source_url: https://en.wikipedia.org/wiki/Betsy_Reed
+  notes: 'Guardian US editor-in-chief since Sep 2022. Career: Condé Nast Traveller (assistant) → The Nation (16 years, senior→executive
+    editor) → The Intercept (EIC, 8 years) → Guardian US (EIC). Harvard A.B. in History and Literature, 1990. KEY for MediaScope:
+    (1) Her career started at Condé Nast — the same corporate family that owns Wired, our primary tracked publication for
+    Meta coverage bias; (2) Her Intercept background instilled an adversarial-by-default editorial posture that shapes Guardian
+    US tech coverage; (3) She oversees the US tech desk that produces most Guardian Meta/AI coverage tracked in our toolkit.'
+  source_urls:
+  - https://en.wikipedia.org/wiki/Betsy_Reed
+  - https://uk.themedialeader.com/betsy-reed-wants-investigative-journalism-to-build-the-guardians-us-brand/
+  - https://www.editorandpublisher.com/stories/new-guardian-us-editor-appointed,218802
+  - https://talkingbiznews.com/they-re-hiring/the-intercepts-reed-joins-the-guardian-as-top-editor/
+- name: Lois Beckett
+  multi_publication: true
+  career:
+  - publication: sf-weekly
+    role: fellow
+    start: 2010-01
+    end: 2010-07
+    beat: news innovation
+    event_type: hired
+    notes: Village Voice Media Fellow. Covered innovation in the news industry.
+    source_url: https://theorg.com/org/guardian-media-group/people/lois-beckett
+  - publication: nieman-journalism-lab
+    role: contributor
+    start: 2010-09
+    end: 2011-05
+    beat: media innovation
+    event_type: hired
+    source_url: https://theorg.com/org/guardian-media-group/people/lois-beckett
+  - publication: propublica
+    role: reporter
+    start: 2011-09
+    end: '2016'
+    beat: data, technology, politics, gun violence
+    event_type: hired
+    notes: Reporter for 5 years. Won 2011 Livingston Award for National Reporting (with Olga Pierce and Jeff Larson). Finalist
+      for 2012 Livingston Award. Covered intersection of data, technology and politics. Shifted to gun violence coverage after
+      Sandy Hook.
+    source_url: https://socialsciencespace.com/author/lois-beckett-propublica/
+  - publication: guardian
+    role: senior_reporter
+    start: '2016'
+    beat: gun policy, criminal justice, far right, surveillance
+    event_type: hired
+    notes: 'Senior reporter at Guardian US, based in Los Angeles. Primary beats: gun policy, criminal justice, far-right extremism.
+      Crosses into surveillance technology and tech-enabled policing. Collaborated with Sam Levin on Wi Spa misinformation
+      investigation. NOT primarily a tech reporter, but her ProPublica data/tech background and surveillance coverage means
+      she occasionally produces tech-adjacent stories that affect our Meta coverage tracking. Regular CNN, NPR, KQED guest.'
+    source_url: https://adweek.com/tvnewser/propublicas-lois-beckett-will-cover-gun-control-for-guardian-us/285662/
+  notes: 'Guardian US senior reporter (2016–present), based in LA. Career: SF Weekly → Nieman Lab → ProPublica (5 years) →
+    Guardian. Harvard A.B. in Social Studies, 2005–2009. Livingston Award winner (2011). Primary beats: gun policy, criminal
+    justice, far-right extremism. Tech-adjacent through surveillance/policing data journalism. ProPublica pedigree gives her
+    data journalism and investigative chops that occasionally surface in tech coverage.'
+  source_urls:
+  - https://theorg.com/org/guardian-media-group/people/lois-beckett
+  - https://socialsciencespace.com/author/lois-beckett-propublica/
+  - https://zocalopublicsquare.org/2021/11/17/interview-guardians-lois-beckett/
+- name: Ariel Bogle
+  multi_publication: true
+  career:
+  - publication: abc-australia
+    role: technology_reporter
+    start: '2017'
+    end: '2021'
+    beat: technology, internet culture
+    event_type: hired
+    notes: Technology reporter at the Australian Broadcasting Corporation. Contributed to programs across the network.
+    source_url: https://arielbogle.com
+  - publication: guardian
+    role: investigations_reporter
+    start: '2021'
+    beat: technology, law, internet, extremism, surveillance
+    event_type: hired
+    notes: 'Investigations reporter at Guardian Australia. Focus: technology, law, internet, online extremism. Won Walkley
+      Award (Australia''s equivalent of a Pulitzer), Kennedy Award, NSW Council for Civil Liberties journalism award. Co-author
+      of "Conspiracy Nation" (with Cam Wilson, shortlisted for Victorian Premier''s Literary Awards). Key investigation: secret
+      Serco immigration detention risk-rating algorithm (Mar 2024). Covers intersection of surveillance tech, government power,
+      and online extremism. Published in NYT, Atlantic, AFR, Slate. Guardian Australia is editorially separate from Guardian
+      UK/US but shares the same institutional posture.'
+    source_url: https://arielbogle.com
+  notes: 'Guardian Australia investigations reporter (2021–present). Career: ABC Australia → Guardian Australia. Walkley Award
+    winner. Focus: technology, law, internet, surveillance, online extremism. Co-author of "Conspiracy Nation" (2025, shortlisted
+    Victorian Premier''s Literary Awards). KEY for MediaScope: (1) Represents Guardian''s Australian tech coverage pipeline
+    — editorially separate but shares institutional framing; (2) Her Serco algorithm investigation (Mar 2024) is the kind
+    of surveillance-tech story that shapes the Guardian''s broader editorial posture toward tech platforms; (3) Cross-published
+    in Atlantic and NYT, demonstrating cross-publication reach.'
+  source_urls:
+  - https://arielbogle.com
+  - https://podscan.fm/episode/conspiracy-nation-book-discussion-with-authors-ariel-bogle-and-cam-wilson

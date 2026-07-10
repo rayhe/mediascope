@@ -2,6 +2,39 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-10 06:00 PT — Type A: Article Deep Dive (Barron's $1T backlash + WSJ EU DSA, investor_advisory framing)
+
+**Focus:** Analyze two fresh articles from July 10, 2026. Bug fix in source extraction. New framing device type `investor_advisory`.
+
+**Articles analyzed:**
+1. **Barron's** — "Facebook Faces a $1 Trillion Backlash. Investors Ignore the Threat at Their Peril." (Adam Levine)
+2. **WSJ** — "Meta Failed to Protect Users From Addictive Apps, EU Says" (Kim Mackrael)
+
+**Bug found and fixed:**
+- Source extraction: "Four states—California..." extracted "Four" as a named source
+- Fix: Added number words (One through Trillion), plural quantifiers (Dozens through Billions), and "New" (prevents "New Jersey"/"New Mexico") to `_NAME_STOP_FIRST_WORDS` in `sources.py`
+
+**New framing device: `investor_advisory` (type #92, 6 patterns):**
+- Author adopts investment-advisor posture, directly warning investors and prescribing behavior
+- Patterns: "Investors ignore [X] at their peril," "should start paying attention," "Investors may be making the wrong choice," "it's time for investors to," "the market is pricing in too little risk," "don't be fooled by"
+- Distinct from `analyst_authority` (named firms) and `bull_bear_structuring` (thesis/anti-thesis)
+- Genre-normative in Barron's/MarketWatch/Motley Fool; higher signal in general news
+
+**Toolkit validation highlights:**
+- WSJ article: framing correction fired correctly (raw +0.11 → corrected -0.27) — clean positive validation of the correction system
+- Barron's article: sentiment -0.57 matched manual -0.50 to -0.55 — accurate without correction needed
+
+**Changes (16 files, +490/−28 lines, commit b89f8e6):**
+- `mediascope/analyze/framing.py`: +79 lines (investor_advisory patterns, docstring updates)
+- `mediascope/analyze/sources.py`: +15 lines (number-word stop words)
+- `mediascope/cli.py`: device count 91→92
+- 2 new article files + 2 new analysis annotations
+- docs: ARCHITECTURE, METHODOLOGY, FRAMING_REFERENCE, QUALITY_STANDARDS, AGENT_GUIDE, README — updated to 92 device types (85 pattern-matched + 7 structural), 525 patterns, 142 articles, 44 publications
+- tests: updated 3 test files (device count guards, pattern count guards, expected-types sets)
+- All 2,147 tests pass
+
+**Stats after this iteration:** 92 framing device types, 525 regex patterns, 142 annotated articles, 44 publications, 2,147 tests
+
 ## 2026-07-10 05:00 PT — Type D: Toolkit Quality & Documentation (topic_classification_demo.py stale counts + missing buckets)
 
 **Focus:** Fix stale bucket counts and missing topic buckets in `topic_classification_demo.py`, and fix the genre detection demo that never triggered.
