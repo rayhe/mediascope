@@ -1,0 +1,34 @@
+Title: Meta's stock rebounds as agentic AI coding and custom chips ease spending fears
+Publication: MarketWatch
+Date: July 10, 2026
+URL: https://www.marketwatch.com/story/metas-stock-rebounds-as-agentic-ai-coding-and-custom-chips-ease-spending-fears-16d1cb24
+
+Investors are warming up to Meta Platforms' artificial-intelligence strategy after the company's most recent business updates.
+
+Meta's AI capabilities are getting a boost with Thursday's launch of Muse Spark 1.1, an agentic coding model comparable to leading industry benchmarks from OpenAI and Anthropic.
+
+It's seen as a sign that Meta is getting serious about its enterprise coding offerings. Muse Spark 1.1 is the company's first pay-to-use model, BNP Paribas analyst Nick Jones wrote in a Thursday note — meaning that it now has an opportunity to directly monetize its AI products. Developers can use Muse Spark 1.1 through the a new cloud hosting platform, Meta Model API.
+
+Investors cheered the development, with shares of Meta META rising 4.7% on Thursday.
+
+Read: Is Meta 'giving up' on cutting-edge AI? Wall Street is divided over potential cloud pivot.
+
+The company's AI strategy has long been criticized, as investors saw insufficient return on the billions of dollars that Meta poured into hiring top researchers for Meta Superintelligence Labs and toward building data centers.
+
+Earlier this month, reports of Meta's plan to monetize its data-center capacity through a new Meta Compute division led to mixed analyst reactions. Some viewed the potential pivot as a sign that the company had fallen behind on the AI race and was scaling back its capital expenditures, while others saw a new revenue opportunity.
+
+However, Jones flagged that "the potential cloud offering and fees for access to its AI model all serve to provide incremental revenue beyond its core advertising revenue." These developments "demonstrate a clear immediate path to high return on Meta's AI investments," he added.
+
+Investor sentiment also received a boost from a Reuters report Thursday suggesting that Meta is moving its proprietary in-house chips, dubbed Iris, into mass production in September. It would be a major hardware milestone for the company, which has been developing its own chips under the Meta Training and Inference Accelerator (MTIA) program since 2023. Such a move could reduce Meta's dependency on chip maker Nvidia NVDA and help the company reduce costs associated with AI as it builds out a more comprehensive cloud offering.
+
+See more: How Meta's little-known chip business fits in with Zuckerberg's 'superintelligence' ambitions
+
+The Reuters report also revealed that Meta plans to double its data-center compute capacity from 7 gigawatts in 2026 to 14 gigawatts in 2027, which initially led shares of Meta to fall Thursday morning on overspending fears.
+
+Meta did not immediately respond to a MarketWatch request for comment.
+
+Jefferies analyst Brent Thill highlighted in a Wednesday note that Meta is likely to continue ramping up its AI spending and cloud ambitions. At a recent conference, Meta shared that its Prometheus data center in Ohio recently came online in July. The company anticipates that capacity and infrastructure will only become more constrained going forward as AI demand increases.
+
+Deutsche Bank analyst Benjamin Black believes Meta could achieve up to 35% lower data-center costs in 2027 using a combination of Iris and Nvidia chips.
+
+"MTIA progress should improve the cost curve over time, particularly for inference and core recommendation workloads," Black wrote in a Thursday note. "The incremental cost may not be as high as feared, while the incremental high-margin revenue opportunity may be larger than we — and the Street — previously underwrote."

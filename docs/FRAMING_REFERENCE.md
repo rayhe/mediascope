@@ -1,6 +1,6 @@
 # Framing Device Quick Reference
 
-> A compact lookup card for all 93 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
+> A compact lookup card for all 94 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
 
 ---
 
@@ -80,7 +80,7 @@ Devices that frame entities, companies, or individuals through power dynamics, c
 | 31 | **Guilt by Association** | C | Entity linked to controversial actors/events | Entity + controversial entity in same paragraph |
 | 32 | **Isolation Framing** | E | Entity singled out as "the only" one not doing something | "The only major company that has not," "unlike its peers" |
 | 33 | **Hypocrisy Frame** | E | Entity singled out as sole holdout, framing inaction as moral failing | "uniquely among its peers," "alone in refusing" |
-| 34 | **Competitive Positioning** | E | Competitor explicitly elevated over subject entity | "good news for [competitor]," "buy from a more reputable company" |
+| 34 | **Competitive Positioning** | E | Competitor elevated over subject entity (negative), OR subject elevated to competitor parity (positive) | **Neg:** "good news for [competitor]," "buy from a more reputable company." **Pos:** "comparable to leading industry benchmarks from," "on par with" |
 | 35 | **Competitive Deficit** | E | Multiple named competitors enumerated to amplify subject's failure | "failed to rival [A]'s X, [B]'s Y, and [C]'s Z" — pile-on effect |
 | 36 | **Competitive Displacement** | E | Entity A fills vacuum left by Entity B's retreat/pivot | "at a time when X is reorienting," "filling the void left by" |
 | 37 | **Industry Normalization Undercut** | E | Acknowledges industry-wide practice, then singles out target | "Other companies also X, but [Target] is especially…" |
@@ -212,6 +212,7 @@ Devices specific to financial journalism, earnings coverage, and analyst reporti
 | 91 | **Heritage Nostalgia** | E | Age, generational continuity, or historical significance establishing emotional stakes for disruption | "141-year-old brick manufacturer," "fifth generation working at the company," "iconic buildings," "family-owned since 1892" |
 | 92 | **Investor Advisory** | E | Author adopts investment-advisor posture, directly warning investors about risks and prescribing behavior. Two variants: *prescriptive* (Barron's — "investors ignore at their peril") and *observational* (IBD/Investopedia — "despite [risk], stock rallied") | "Investors ignore [X] at their peril," "should start paying attention," "Investors may be making the wrong choice," "it's time for investors to," "despite [regulatory action], [stock] rallied" |
 | 93 | **Regulatory Risk Subordination** | E | Regulatory/legal risk acknowledged but architecturally sandwiched between positive market signals so reading experience begins and ends with optimism. Genre-normative for IBD/Investopedia/Motley Fool; higher signal in WSJ/NYT/Bloomberg | "Despite [regulatory/legal action], [stock positive]," article opens with stock performance before regulatory news, regulatory content >70% through article, "shrugging off [regulatory] headwinds" |
+| 94 | **Recovery Narrative** | E | Three-beat article architecture: (1) prior decline/criticism, (2) catalyst event, (3) forward recovery projection via analyst quotes. Converts neutral news into "turning point" narrative. Genre-normative for MarketWatch/Barron's/Motley Fool | **Beat 1:** "has long been criticized," "stock was down X%." **Beat 2:** "investors cheered," "ease spending fears." **Beat 3:** forward-looking analyst projections, "up to N% lower costs" |
 
 ---
 
@@ -241,9 +242,9 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 | Tier | Count | Detection Method |
 |---|---|---|
 | Core | 10 | Pattern matching — fundamental editorial techniques |
-| Extended | 74 | Pattern matching — discovered from real article analysis |
+| Extended | 77 | Pattern matching — discovered from real article analysis |
 | Structural (post-pass) | 7 | Full-article heuristics (position, accumulation, structure) |
-| **Total** | **92** | |
+| **Total** | **94** | |
 
 ---
 

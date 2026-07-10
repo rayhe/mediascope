@@ -7751,21 +7751,97 @@ _DEVICE_PATTERNS["regulatory_risk_subordination"] = (
 )
 
 
+# ---------------------------------------------------------------------------
+# recovery_narrative (#94)
+#
+# Three-beat article architecture common in financial/investor media:
+#   Beat 1 (Decline): Prior weakness, criticism, stock decline
+#   Beat 2 (Catalyst): Product launch, positive data, analyst upgrade
+#   Beat 3 (Recovery projection): Forward-looking analyst projections
+#
+# Distinct from financial_reassurance (single pivot), bull_bear_structuring
+# (both sides), investor_advisory (prescribes behavior), and
+# overbuilding_narrative (frames spending as excessive).
+#
+# Discovered from MarketWatch "Meta's stock rebounds as agentic AI coding
+# and custom chips ease spending fears" (Jul 10, 2026).
+# ---------------------------------------------------------------------------
+
+_RECOVERY_NARRATIVE_PATTERNS = [
+    # Beat 1: Decline/criticism language
+    re.compile(
+        r"has\s+long\s+been\s+criticized",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"(?:insufficient|poor|disappointing)\s+return",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"(?:spending|overspending|capex)\s+(?:fears|concerns|worries)",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"(?:strategy|approach)\s+has\s+(?:long\s+)?been\s+(?:criticized|questioned|scrutinized)",
+        re.IGNORECASE,
+    ),
+    # Beat 2: Catalyst/cheer language
+    re.compile(
+        r"(?:investors?|the\s+market)\s+(?:cheered|welcomed|applauded|embraced)",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:ease|easing|eased|alleviate|alleviating)\s+(?:spending\s+)?(?:fears|concerns|worries)",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"(?:warming\s+up|warmed\s+up)\s+to",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"(?:stock|shares)\s+(?:rose|climbed|surged|jumped|rallied|rebounded)\s+\d",
+        re.IGNORECASE,
+    ),
+    # Beat 3: Recovery projection language
+    re.compile(
+        r"(?:analyst|strategist|researcher)\s+\w+\s+(?:believes?|projects?|estimates?|anticipates?|expects?)",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"(?:high[- ]margin|incremental|additional)\s+(?:revenue|opportunity|growth)",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"(?:improve|improving)\s+the\s+(?:cost|revenue)\s+(?:curve|trajectory|outlook)",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"(?:larger|greater|bigger)\s+than\s+(?:we|the\s+Street|analysts?)\s+(?:previously\s+)?(?:expected|underwrote|estimated|forecast)",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"(?:continue|likely\s+to\s+continue)\s+(?:ramping|building|expanding|growing)",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["recovery_narrative"] = _RECOVERY_NARRATIVE_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 86 pattern-matched device types plus 7 structural
-    post-pass types (93 total).
+    Scans for 87 pattern-matched device types plus 7 structural
+    post-pass types (94 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (86): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (87): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_displacement,
@@ -7794,7 +7870,7 @@ def detect_framing_devices(
     pathologizing_metaphor, policy_reversal, power_asymmetry,
     precedent_analogy, precedent_framing,
     prescriptive_solutionism,
-    pressure_language, refusal_amplification, regulatory_favoritism,
+    pressure_language, recovery_narrative, refusal_amplification, regulatory_favoritism,
     regulatory_shadow, repeated_disruption, rhetorical_question,
     sarcastic_correction, scandal_comparison, scale_magnitude,
     selective_omission_signal, strategic_disclosure,

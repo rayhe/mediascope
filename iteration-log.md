@@ -18671,3 +18671,102 @@ Sardonic editorial on Meta's Muse Spark 1.1 launch. Zuckerberg's "people's champ
 - Editorial genres: **8**
 - Topic buckets: **29**
 - Structural consistency tests: **98**
+
+---
+
+## 2026-07-10 15:00 PT — Type A: Article Deep Dive
+
+**Focus:** CNN "Facebook and Instagram's 'addictive design' may violate European law" (Jul 10, 2026)
+
+**Commit:** `b0fedf0` — "Type A: CNN EU DSA addictive design analysis (#147)"
+
+### Changes
+
+1. **`examples/sample_output/cnn_eu_dsa_meta_addictive_design_2026_07_10_analysis.md`** — NEW. Full annotation: entity assessment (all correct, 9 types), framing device assessment (7 detected, 3 missed: regulatory_shadow, parenthetical_doubt_injection, cross_publication_import variant), source extraction assessment (5 sources after fixes), sentiment assessment (toolkit -0.562 vs manual -0.35/-0.40, regulatory VADER inflation). 3rd article in Cluster 13 (EU DSA enforcement) alongside WSJ and Reuters.
+
+2. **`mediascope/analyze/sources.py`** — Three source extraction enhancements:
+   - **Legal party coreference merging:** Post-extraction pass merges `legal_party` sources (e.g. "the commission said") into matching earlier named sources when the core noun is contained in the earlier source's name. Eliminates orphaned anonymous legal-party attributions.
+   - **Research report source extraction:** Two new `source_type="research_report"` patterns: "a report from researchers at [Institution] found that" and "researchers at [Institution] found that".
+   - **Containment-aware dedup:** Research report dedup now uses substring containment instead of exact-match, preventing duplicates when both patterns fire on the same text (e.g. "New York University and Northeastern" vs "New York University and Northeastern University" — correctly keeps the longer form).
+
+3. **Count updates across docs:**
+   - Annotated articles: 146 → 147 (METHODOLOGY.md §17, ARCHITECTURE.md, QUALITY_STANDARDS.md)
+   - Source extraction patterns: 12 → 14
+
+### Proposed improvements (not implemented)
+- `parenthetical_doubt_injection` as new framing device type (LOW priority)
+- Regulatory vocabulary VADER dampening (MEDIUM priority — documented as Correction Path K candidate)
+
+### Test Results
+2,155 passed, 0 failed
+
+### Running Totals
+
+- Framing device types: **93** (10 core + 76 extended + 7 structural)
+- Regex patterns: **532**
+- Annotated articles: **147**
+- Distinct publications: **42**
+- Same-event clusters: **13** (5 Tier 1, 8 Tier 2)
+- Emotional language terms: **853**
+- Entity clusters: **81** (786+ aliases)
+- Journalists: **205** (630 auto-detected migrations)
+- Adversarial device types: **27**
+- Sentiment correction paths: **10** (A–J)
+- Source extraction patterns: **14**
+- Editorial genres: **8**
+- Topic buckets: **29**
+- Structural consistency tests: **98**
+
+---
+
+## 2026-07-10 16:00 PT — Type A: Article Deep Dive
+
+**Article:** MarketWatch "Meta's stock rebounds as agentic AI coding and custom chips ease spending fears" (Jul 10, 2026)
+**Source:** `examples/sample_output/marketwatch_meta_stock_rebound_muse_spark_iris_2026_07_10_article.txt`
+**Analysis:** `examples/sample_output/marketwatch_meta_stock_rebound_muse_spark_iris_2026_07_10_analysis.md`
+
+### Key additions
+
+1. **New framing device: Recovery Narrative (#94)**
+   - Three-beat structure: decline → catalyst → recovery projection
+   - Confidence scoring based on beat completeness
+   - Added to METHODOLOGY.md and FRAMING_REFERENCE.md (Category 12: Financial & Investor Media Framing)
+   - Framing device total: 93 → 94 (10 core + 76 extended → 75 extended + 1 new = still 10 core + 77 extended + 7 structural)
+
+2. **Bidirectional Competitive Positioning expansion**
+   - Updated definition in METHODOLOGY.md to cover positive variant (subject elevated to parity with competitors), not just negative (competitor elevated over subject)
+   - MarketWatch example added: "potentially positioning it as a legitimate player alongside Nvidia"
+   - FRAMING_REFERENCE.md entry updated with bidirectional note
+
+3. **Source asymmetry finding**
+   - 3 bullish analyst sources (Bernstein, Baird, Jefferies), 0 bearish — 100% directional alignment
+   - Documented in analysis as notable source stance pattern
+
+4. **Test file:** `tests/test_recovery_narrative.py` (10 tests)
+   - Three-beat detection, confidence scoring, negative cases (neutral wire, decline-only), bidirectional competitive positioning regex
+
+5. **Structural consistency fixes**
+   - Added test_recovery_narrative.py to ARCHITECTURE.md and README.md test listings
+   - Updated test file count: 92 → 93
+   - Updated test count: 2155 → 2165
+   - Updated annotated article count: 147 → 148 (ARCHITECTURE.md, QUALITY_STANDARDS.md, METHODOLOGY.md §17)
+
+### Test Results
+2,165 passed, 0 failed
+
+### Running Totals
+
+- Framing device types: **94** (10 core + 77 extended + 7 structural)
+- Regex patterns: **532+** (recovery_narrative patterns added)
+- Annotated articles: **148**
+- Distinct publications: **42**
+- Same-event clusters: **13** (5 Tier 1, 8 Tier 2)
+- Emotional language terms: **853**
+- Entity clusters: **81** (786+ aliases)
+- Journalists: **205** (630 auto-detected migrations)
+- Adversarial device types: **27**
+- Sentiment correction paths: **10** (A–J)
+- Source extraction patterns: **14**
+- Editorial genres: **8**
+- Topic buckets: **29**
+- Structural consistency tests: **98**
