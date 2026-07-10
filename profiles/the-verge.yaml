@@ -940,3 +940,37 @@ litigation_connections:
     case_reference: "Streamz et al. v. Belgium, ECJ (oral hearing Jul 6-7, 2026)"
     source_urls:
       - "https://www.reuters.com/denmark-eu-publishers-rights-streamz/"
+
+# ===================================================================
+# LEGAL COUNSEL CROSS-REPRESENTATION — new section, 2026-07-10
+# ===================================================================
+legal_counsel_cross_representation:
+  firm: "Susman Godfrey LLP"
+  description: >
+    CRITICAL FINDING: PMC's lead counsel in PMC v. Google (Susman Godfrey, with partners Ian
+    Crosby, Davida Brook, and Geng Chen) is the SAME law firm — and in some cases the SAME
+    individual attorneys — representing The New York Times in NYT v. OpenAI/Microsoft (S.D.N.Y.).
+    
+    Susman Godfrey's confirmed publisher representations (as of Jul 2026):
+    - PMC v. Google (D.D.C.): AI Overviews antitrust — The Verge's parent
+    - NYT v. OpenAI/Microsoft (S.D.N.Y., MDL 25-md-03143): copyright — NYT/Daily News/etc
+    - Encyclopaedia Britannica v. Perplexity AI
+    - Bartz class action (book authors v. OpenAI)
+    
+    Ian Crosby specifically is named as lead attorney for BOTH NYT (Jul 9 sanctions motion)
+    and PMC (PMC v. Google complaint). Davida Brook signed filings in both cases.
+    
+    ANALYTICAL SIGNIFICANCE FOR THE VERGE:
+    The Verge, editorially, presents as an independent publication with its own coverage
+    decisions. But its parent company (PMC) and the New York Times are both represented by
+    the same law firm advancing the same theory: that AI companies must pay publishers for
+    content. This creates ambient legal-strategic alignment between publications that cover
+    the same AI companies. Neither The Verge nor NYT has disclosed this shared legal counsel
+    in editorial coverage of AI companies.
+    
+    Cross-reference: Full analysis in nytimes.yaml `legal_counsel_cross_representation` section.
+  source_urls:
+    - "https://chatgptiseatingtheworld.com/2025/09/14/penske-media-v-google-complaint/"
+    - "https://www.reuters.com/legal/litigation/new-york-times-led-group-asks-court-sanction-openai-us-copyright-dispute-2026-07-09/"
+    - "https://authorsguild.org/news/new-york-times-sues-openai/"
+  last_updated: "2026-07-10"

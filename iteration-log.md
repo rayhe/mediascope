@@ -18047,3 +18047,44 @@ Expand The Verge coverage from 25 to 34 tracked journalists using 2026 masthead 
 - Tests: 2,147 passed (97 structural consistency, all green)
 
 **Sources:** ZDNet Australia, Crikey staff pages, Guardian Australia bylines, BuzzFeed News archive, newslocker.com (TechScape transition), newsworks.org.uk (Hern/Stokel-Walker profiles), cybernews.com, stokel-walker.com, champions-speakers.co.uk, talkingbiznews.com, matternow.com, non-stop.kr/recode
+
+---
+
+## 2026-07-10 03:00 PT — Type C: Ownership & Funding Deep Dive
+
+**Focus:** NYT v. OpenAI sanctions motion, Susman Godfrey cross-representation discovery, Reddit/Advance stake update.
+
+**New findings:**
+
+1. **NYT v. OpenAI Sanctions Motion (Jul 9, 2026)** — Added to `profiles/nytimes.yaml` under OpenAI litigation entry:
+   - NYT + NY Daily News filed sanctions motion alleging OpenAI misrepresented for 2+ years its ability to search LLMs for copyrighted content
+   - OpenAI employee testified under oath they HAD performed such searches "even before the first News Plaintiff filed suit"
+   - Court filings allege deletion of billions of ChatGPT conversations
+   - NYT dropped secondary copyright claim in June 2026 amended complaint
+   - Source: Reuters, Jul 9, 2026 (reuters.com)
+
+2. **Susman Godfrey Cross-Representation** — New `legal_counsel_cross_representation` section added to BOTH `nytimes.yaml` AND `the-verge.yaml`:
+   - Same law firm (Susman Godfrey LLP) represents NYT (v. OpenAI, SDNY) AND PMC/The Verge's parent Penske Media (v. Google, antitrust)
+   - Same partner **Ian Crosby** appears as lead counsel for both plaintiffs
+   - Partner **Davida Brook** signed filings in both cases
+   - Susman Godfrey also represents Encyclopaedia Britannica (v. Perplexity) and the Bartz book-author class action (v. Anthropic/OpenAI)
+   - Significance: undisclosed shared legal alignment between editorially "independent" publications; creates structural incentive alignment on AI IP policy that readers cannot see
+   - Sources: SDNY docket 1:23-cv-11195 filings, Reuters (Jul 9), susmangodfrey.com client list, Ars Technica (Britannica filing)
+
+3. **Reddit (RDDT) Stock & Analyst Update** — Updated in `profiles/wired.yaml`:
+   - Price: $200.31 (Jul 9 close, +2.56%), beta 2.23
+   - Advance Publications stake value: ~$8.46B (42.3M shares × $200.31)
+   - Q2 2026 earnings date: Jul 30 (guidance $715-725M revenue)
+   - Wells Fargo boost Jul 7: PT raised to $220 from $200 (Overweight)
+   - Sources: finance.yahoo.com, marketbeat.com analyst data
+
+**Profile line counts (updated):**
+- `nytimes.yaml`: +109 lines (sanctions motion + cross-representation)
+- `the-verge.yaml`: +34 lines (cross-representation section)
+- `wired.yaml`: +11 net lines (RDDT price/analyst refresh)
+
+**Tests:** 2,147 passed (no regressions)
+
+**Key insight:** The Susman Godfrey discovery is methodologically significant — it surfaces a non-obvious structural alignment between NYT and PMC/Verge through shared outside counsel. Neither publication discloses this shared legal posture when covering AI copyright issues. This is the kind of institutional-network finding the toolkit is designed to detect.
+
+**Sources:** Reuters (Jul 9, 2026), SDNY docket 1:23-cv-11195, susmangodfrey.com, Ars Technica (Britannica v. Perplexity), finance.yahoo.com (RDDT), marketbeat.com (analyst consensus), Wells Fargo equity research note (Jul 7)
