@@ -2,6 +2,37 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-10 13:00 PT — Type D: Toolkit Quality & Documentation (TOPIC_REFERENCE.md)
+
+**Focus:** Created a standalone quick-reference card for the 29 topic buckets, matching the proven FRAMING_REFERENCE.md format. The topic classification system is used in every analysis run, but its documentation was buried in a dense paragraph in METHODOLOGY.md — the biggest documentation gap in the toolkit.
+
+**New file created:**
+
+### docs/TOPIC_REFERENCE.md (~190 lines)
+- **7 category groups:** AI & Technology (4 topics), Business & Finance (5), Regulation & Legal (5), Society & Safety (4), Workforce & Labor (5), Infrastructure & Hardware (4), Specialized (2)
+- **Boundary rules for every topic:** explicit "NOT X" disambiguation against adjacent buckets, matching the adjacency confusion problems documented in `topic_classification_demo.py`
+- **15-entry adjacency map:** commonly confused pairs with disambiguation rules AND concrete examples (e.g., "Meta cut 10,000 jobs" → `layoffs` vs "Employees describe soul-crushing environment" → `workplace_culture`)
+- **Multi-topic classification patterns:** 8 common multi-topic patterns with real article examples (regulatory+safety, legal+financial, tech+ethics, etc.)
+- **Genre detection bridge:** table linking topic triggers to sentiment scoring effects (financial VADER inflation, security domain language dampening, investment framing)
+- **CLI reference:** topic-aware commands for classification, asymmetry scoring, and cross-publication comparison
+
+**Cross-reference updates:**
+- README.md: Added topic classification as item #3 in "What It Does" list (was missing — jumped from entity detection to sentiment analysis). Added TOPIC_REFERENCE.md to documentation table between FRAMING_REFERENCE.md and QUALITY_STANDARDS.md
+- METHODOLOGY.md §3.1: Added "Quick Reference" pointer at top of topic bucket section
+- AGENT_GUIDE.md: Added reference link from the compact topic table to the new detailed card
+
+**Design rationale:** FRAMING_REFERENCE.md (249 lines) proved that a scannable quick-reference card dramatically improves agent and human usability for complex taxonomies. The 29 topic buckets had the same problem the 92 framing devices had before FRAMING_REFERENCE.md was created — critical classification information scattered across a 1,780-line methodology document. The boundary rules are the most important addition: topic misclassification directly corrupts asymmetry scores, and the adjacency warnings prevent the most common errors.
+
+**Doc count updates:**
+- Documentation files: 7 → 8
+- Total doc lines: 5,200 → ~5,390
+- README "What It Does" items: 16 → 17
+- Documentation table entries: 7 → 8
+
+**Tests:** 2,148 passed (no change — documentation-only commit)
+
+**Commit:** `76f82fc` — pushed to GitHub
+
 ## 2026-07-10 20:00 PT — Type C: Ownership & Funding (OpenAI IPO Cross-Profile Implications + Stock Updates)
 
 **Focus:** OpenAI's confidential IPO filing (June 2026, $1T+ target) and BofA $520M credit line (Jul 8) create new cross-publication conflict vectors for every profile with AI licensing relationships. Stock price updates for RDDT (-3.10%), CHTR (-2.53%), WBD (-0.17%).
