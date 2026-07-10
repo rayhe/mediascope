@@ -2,6 +2,80 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-10 02:00 PT — Type B: Journalist/Publication Research (NYT Meta/AI Core Reporters + Deepa Seetharaman)
+
+**Focus:** Deep expansion of 5 key NYT technology reporters covering Meta/AI, plus adding Deepa Seetharaman (Reuters→WSJ→Reuters).
+
+### Expanded Profiles (5 journalists)
+
+1. **Ryan Mac** (NYT, tech accountability)
+   - Added: 5 beats (tech_accountability, billionaires, facebook_meta, silicon_valley_power, elon_musk)
+   - Added: 2 awards — Mirror Award 2019, George Polk Award 2020 (both for Facebook reporting at BuzzFeed News)
+   - Added: Book — *Character Limit: How Elon Musk Destroyed Twitter* (2024, Penguin Press, co-author Kate Conger)
+   - Updated: 4 career entries with source URLs (Stanford Daily → Forbes → BuzzFeed News → NYT)
+   - Sources: Wikipedia, NYT Company announcements, characterlimit.net
+
+2. **Mike Isaac** (NYT, Silicon Valley correspondent)
+   - Added: Education — UC Berkeley, BA English Literature, 2010
+   - Added: 5 beats (facebook_meta, uber, silicon_valley, social_media, tech_leaders)
+   - Added: Gerald Loeb Award (Uber coverage)
+   - Added: Book — *Super Pumped: The Battle for Uber* (2019, W.W. Norton; 2022 Showtime series)
+   - Added: Early career at Paste Magazine (music journalism)
+   - Updated: 5 career entries with source URLs (Paste Magazine → Wired → AllThingsD → Recode → NYT)
+   - Noted role elevation: tech reporter → Silicon Valley correspondent (~2025, broader beat)
+   - Sources: FreightWaves bio, NYT Company announcements, Talking Biz News
+
+3. **Sheera Frenkel** (NYT, technology reporter)
+   - Added: Education — Boston University
+   - Added: 5 beats (cybersecurity, facebook_meta, social_media, misinformation, tech_policy)
+   - Added: 4 awards — Pulitzer finalist 2019, George Polk 2019, Gerald Loeb 2019, Mirror Award 2022
+   - Added: Book — *An Ugly Truth: Inside Facebook's Battle for Domination* (2021, HarperCollins, co-author Cecilia Kang)
+   - Added: Languages — Hebrew (fluent), Arabic (conversational)
+   - Updated: 5 career entries with source URLs (McClatchy → NPR → Times of London → BuzzFeed News → NYT)
+   - Sources: USENIX bio, NYT Company announcements, HarperCollins, All American Speakers
+
+4. **Kate Conger** (NYT, technology reporter)
+   - Added: 6 beats (twitter_x, elon_musk, hackers_cybersecurity, ai_weapons, gig_economy_labor, xai)
+   - Added: Book — *Character Limit* (2024, FT/New Statesman/Kirkus Best Book of 2024)
+   - Added: Missing early career — San Francisco Examiner, Ratter (edited 3 local news sites)
+   - Updated: 5 career entries with source URLs (SF Weekly → Ratter → TechCrunch → Gizmodo → NYT)
+   - Key detail: First to publish James Damore Google memo; broke Google Pentagon AI dissent
+   - Sources: NYT Company announcement, characterlimit.net, Goodreads
+
+5. **Eli Tan** (NYT, technology reporter — covers Meta)
+   - Added: Education — The Bush School Seattle (6th-12th), St. Olaf College, Columbia J-School
+   - Added: 4 beats (meta, technology_society, data_centers, ai_daily_life)
+   - Updated: 5 career entries with source URLs (CoinDesk → Columbia → Washington Post → NYT fellow → NYT reporter)
+   - Key detail: Hired specifically to cover Meta after distinguished fellowship
+   - Sources: Bush School alumni profile, NYT Company announcements, Muck Rack
+
+### New Journalist Added
+
+6. **Deepa Seetharaman** (Reuters, tech correspondent)
+   - Education: Northwestern University, Medill School of Journalism, BSJ 2008
+   - 5 beats: artificial_intelligence, facebook_meta, social_media_enterprise, openai, ecommerce
+   - 3 awards: George Polk 2021 (Facebook Files, with Jeff Horwitz), Gerald Loeb (Beat Reporting), Gerald Loeb finalist 2012 (UAW)
+   - Career: Reuters Detroit (auto/labor, 2008-2015) → WSJ (Facebook/Meta beat → enterprise → AI, 2015-2025) → Reuters SF (AI/OpenAI, 2025-)
+   - Notable migration: WSJ→Reuters (return migration after decade at WSJ)
+   - Co-broke Facebook Files series with Jeff Horwitz (already tracked) — 2021 George Polk Award
+   - 2025 Business Journalist in Residence at Wisconsin School of Business
+   - Sources: Talking Biz News, Newerest.space, Medill Magazine, Wisconsin School of Business
+
+### Changes
+- `profiles/careers/journalists.yaml`: 5 profiles expanded with beats/awards/education/books/sourced careers + 1 new journalist
+- `README.md`: journalist count 207→208, migration count updated to 644 (CareerTracker algorithm)
+- `docs/EDITORIAL_HISTORIES.md`: journalist count 207→208, multi-pub 199→200, migrations updated
+- `examples/careers_demo.py`: docstring count 207→208
+
+### Stats
+- Tests: 2,147 passing (unchanged — no new test files)
+- Journalists: 208 (was 207)
+- Multi-pub journalists: 200 (was 199)
+- Auto-detected migrations: 644 (CareerTracker algorithm)
+- Unique publications: 382 (added paste-magazine, ratter)
+- Sourced career entries across 6 journalists: 27/27 (100% sourced)
+- Commit: `f051dfd` — pushed to GitHub
+
 ## 2026-07-09 20:00 PT — Type A: Article Deep Dive (Barron's Meta Gigawatt/Iris)
 
 **Article:** "A Gigawatt Jolt for Meta Stock" by Nate Wolf, Barron's, July 9, 2026
