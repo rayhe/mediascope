@@ -217,7 +217,7 @@ advance_investments:
       42,191,092 shares Class B + 16,182 shares Class A (per Schedule 13G filed Nov 14, 2024,
       reporting ownership as of Sep 30, 2024 — unchanged through 2026 proxy). 83.5% of Class B
       common stock (50,543,398 total Class B as of March 31, 2026). Class B carries 10 votes/share.
-      TOTAL VOTING POWER: 65.2% (calculated from 2026 proxy share counts, March 31, 2026 record
+      TOTAL VOTING POWER: 65.2% (calculated from 2026 proxy share counts, record date April 13, 2026
       date). VOTING POWER CONCENTRATION TREND: 65.2% (2024) → 62.0% (2025) → 65.2% (2026).
       The rebound occurred because other Class B holders (insiders, Tencent) converted 4.58M Class B
       shares to Class A for open-market sale, shrinking total Class B from 55.1M to 50.5M — while
@@ -419,6 +419,19 @@ advance_investments:
       Class A+B; or (c) Advance drops below 50% of IPO equity AND Class B <7.5% of total.
       This is near-controlling governance, NOT mere "significant influence."
     governance_source_url: "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000060/rddt-20260423.htm"
+    advance_reddit_subleases: >
+      NEW (2026 Proxy, DEF 14A filed Apr 23, 2026): Advance subleases office space to Reddit at
+      TWO locations — New York City (~$3.1M/yr) and Chicago (~$0.5M/yr) — totaling ~$3.6M/yr in
+      ongoing related-party transactions. Disclosed as Related Person Transactions in the 2026 proxy
+      filing. This adds a PHYSICAL ENTANGLEMENT dimension beyond equity/governance: Advance and Reddit
+      share office infrastructure, with money flowing from Reddit to Advance for real estate access.
+      While $3.6M/yr is immaterial to Reddit's $2.2B+ revenue, the sublease relationship means
+      Advance and Reddit employees may share building lobbies, elevator banks, and other common
+      spaces — creating informal proximity that deepens the relationship beyond pure financial
+      holdings. Combined with governance veto rights, board seats, $1.2B margin loan, and $8.46B
+      equity stake, this sublease is one more thread in a dense web of Advance-Reddit entanglement
+      that Wired's Meta coverage never discloses.
+    advance_reddit_subleases_source_url: "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000060/rddt-20260423.htm"
     collateralized_lending: >
       NEW FINDING (Bloomberg Law, Nov 22, 2024): Advance Magazine Publishers Inc. established
       a credit facility pledging 7.8M Reddit shares as collateral (~$1.2B at $145.38-$148.54/share,

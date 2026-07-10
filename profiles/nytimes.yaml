@@ -631,6 +631,28 @@ revenue_relationships:
     source_url: "https://www.wsj.com/tech/ai/microsoft-ai-content-marketplace-publishers"
     last_updated: "2026-07-05"
 
+  - type: "snowflake_cortex_knowledge_extensions"
+    description: >
+      NEW MARKETPLACE (Digiday, May 29, 2026): Snowflake's Cortex Knowledge Extensions has
+      signed 17 publishers for monetized RAG licensing, including The Washington Post, AP,
+      People Inc., and USA Today Network. Publishers closing "six-figure deals" with financial
+      institutions. Snowflake takes NO revenue share — charges on compute/storage only.
+      Contracts structured as flat-fee licenses or usage-based access, often from enterprise
+      customers' existing Snowflake spending commitments. FT and The Economist expressed interest.
+      DISTINCTIVE MODEL: Unlike bilateral OpenAI/Microsoft deals or the Microsoft marketplace
+      pilot, Snowflake's model is enterprise-to-publisher RAG access — no model training.
+      Publishers retain more control. NYT is NOT among the 17 named participants.
+      SIGNIFICANCE: This represents a THIRD AI licensing channel (bilateral, Microsoft marketplace,
+      Snowflake RAG) emerging simultaneously. NYT's absence from both the Snowflake and Microsoft
+      marketplaces while maintaining bilateral deals with Amazon/Google and suing OpenAI/Microsoft
+      reinforces the selective, high-leverage strategy. But the growing marketplace ecosystem
+      could commoditize content licensing and dilute NYT's premium positioning.
+      Snowflake signed $6B/5yr AWS infrastructure deal (May 2026), signaling scale ambitions.
+    severity: 2
+    evidence: "Digiday May 29, 2026 (Jessica Davies)"
+    source_url: "https://digiday.com/media/publishers-quietly-cut-six-figure-deals-via-snowflakes-ai-licensing-platform/"
+    last_updated: "2026-07-10"
+
 # ===================================================================
 # BOARD OF DIRECTORS — comprehensive, added 2026-06-26
 # ===================================================================

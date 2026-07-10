@@ -91,7 +91,28 @@ ownership_chain:
 
       REVENUE: Private, no public filings. Described as one of the largest digital media companies
       in the US, reaching "hundreds of millions of people every month" and producing "300+ live events
-      each year" (PMC press release, June 2026).
+      each year" (PMC press release, June 2026). SRMG partnership (May 2025) disclosed more specific
+      reach metrics: 412M monthly users across 40+ international media brands, 150M social media
+      followers, 6B video views. These numbers predate the Vox Media brand acquisition (June 2026),
+      which added The Verge's tens of millions of monthly uniques, Eater, SB Nation, etc.
+
+      EXTERNAL INVESTMENT: In February 2018, PMC received a $200M investment from Saudi Arabia's
+      Public Investment Fund (PIF) subsidiary MBC Group, valuing PMC at approximately $700M at the time
+      (WWD, Feb 28, 2018). This Saudi sovereign wealth connection is relevant to PMC's coverage of
+      tech companies operating in the Gulf region and to geopolitical coverage generally.
+
+      AD TECH INFRASTRUCTURE: The June 2026 Vox Media acquisition specifically included Concert
+      (Vox Media's premium ad marketplace, competing in the same ecosystem as Google and Meta's
+      ad platforms) and Forte (Vox Media's first-party data platform for audience targeting).
+      PMC separately operates its own CDP (Customer Data Platform) infrastructure for first-party
+      data collection across all PMC brands. Prior to CDP implementation, 95% of PMC's digital
+      visitors were unauthenticated (MarTech). PMC's ad tech stack competes directly with the ad
+      platforms of the companies The Verge covers editorially — Google and Meta chief among them.
+
+      WORKPLACE: In June 2026, Jay Penske issued a return-to-office mandate requiring all PMC
+      employees to be in-office at least four days per week or face termination, with an October 4
+      compliance deadline (Midland, Jun 9, 2026). This is relevant as a signal of Penske's
+      management style and editorial control posture as The Verge transitions to PMC ownership.
 
       INVESTMENT HISTORY WITH VOX MEDIA:
       - Feb 2023: PMC invested $100M for 20% stake in Vox Media (NYT, TheWrap). Valuation implied
@@ -974,3 +995,72 @@ legal_counsel_cross_representation:
     - "https://www.reuters.com/legal/litigation/new-york-times-led-group-asks-court-sanction-openai-us-copyright-dispute-2026-07-09/"
     - "https://authorsguild.org/news/new-york-times-sues-openai/"
   last_updated: "2026-07-10"
+
+# ===================================================================
+# AI LICENSING LANDSCAPE — added 2026-07-10 (Type C: Ownership & Funding)
+# ===================================================================
+ai_licensing_landscape:
+  snowflake_cortex_knowledge_extensions:
+    description: >
+      LANDSCAPE DEVELOPMENT (Digiday, May 29, 2026): Snowflake launched Cortex Knowledge Extensions,
+      a monetized RAG pipeline that lets enterprises query publisher content inside Snowflake's AI
+      environment. 17 publishers signed on, including The Washington Post, Associated Press (AP),
+      People Inc., and USA Today Network. Financial Times and The Economist expressed interest.
+      Publishers are closing "six-figure deals" with financial institutions. Contracts structured
+      as flat-fee licenses or usage-based access, often paid from enterprise customers' existing
+      multi-year Snowflake spending commitments (pre-paid credit pools). Snowflake takes NO revenue
+      share — charges on compute/storage only, positioning itself as a no-middleman alternative
+      to platforms that skim content fees.
+
+      KEY QUOTES:
+      - Ben Srour, Principal Product Manager, Snowflake: "You cannot scrape the data — you can't
+        steal it and use it for model training. So that's why the product has really resonated with
+        publishers."
+      - Prasanna Krishnan, Head of Collaboration and Horizon, Snowflake: Cortex is how enterprises
+        combine their own sensitive data with outside news "from outside your own four walls" so
+        staff or agents can make better decisions.
+
+      RELEVANCE TO THE VERGE/PMC:
+      Neither Condé Nast, PMC, nor any of the 5 MediaScope-tracked publications are among the 17
+      named Snowflake Cortex publishers. This is notable because:
+      (a) The Verge's parent PMC already has AI licensing relationships via the OpenAI/Vox Media
+          content deal (May 2024) and the Azure OpenAI enterprise agreement — both with Meta's
+          direct AI competitors. The absence from Snowflake's publisher-neutral marketplace may
+          suggest PMC prefers bilateral deals with specific AI companies (OpenAI) over neutral
+          marketplace distribution.
+      (b) The Snowflake Cortex model is structurally different from the OpenAI/publisher licensing
+          model: it's enterprise-to-publisher RAG access, not model training. Publishers retain
+          more control, and the marketplace operator (Snowflake) takes no content fee.
+      (c) The growing AI licensing marketplace creates a new revenue landscape where publishers
+          monetize content for enterprise AI without ceding training rights — a dynamic that will
+          increasingly shape how tech publications cover AI companies. Publications that have
+          bilateral deals with specific AI companies (like The Verge/PMC with OpenAI) face a
+          different incentive structure than those distributing via neutral marketplaces.
+
+      INFRASTRUCTURE CONTEXT: Snowflake agreed to spend $6B over five years on AWS custom chips
+      and AI infrastructure (May 2026, CNBC), underscoring how much of its growth story hinges
+      on AI workloads.
+    source_urls:
+      - "https://digiday.com/media/publishers-quietly-cut-six-figure-deals-via-snowflakes-ai-licensing-platform/"
+      - "https://www.cnbc.com/snowflake-6-billion-aws-deal/"
+    last_updated: "2026-07-10"
+
+  pmc_srmg_ad_partnership:
+    description: >
+      SRMG Media Solutions (SMS, Saudi Arabia) entered a strategic partnership with PMC (May 2025,
+      BroadcastPro ME) to enable Saudi and regional advertisers to launch programmatic campaigns
+      across PMC's 40+ international media brands. Key metrics disclosed: 412M monthly users,
+      150M social media followers, 6B video views across PMC's portfolio. SRMG operates as the
+      exclusive media partner for SRMG's flagship brands (Asharq Al-Awsat, Asharq News, Akhbaar24),
+      reaching 170M users globally.
+
+      RELEVANCE: (1) The 412M monthly users figure is the most specific PMC reach metric publicly
+      available, given PMC is a private company with no SEC filings. (2) The partnership with a
+      Saudi media company is relevant alongside PIF's 2018 $200M investment in PMC — together
+      they show a pattern of Saudi financial entanglement with PMC's business. (3) The partnership
+      specifically enables "co-created custom content and campaigns with PMC's premium publishers,
+      pending editorial approval" — meaning commercial content relationships can influence editorial
+      priorities.
+    source_urls:
+      - "https://www.broadcastprome.com/news/srmg-media-solutions-and-penske-media-to-elevate-mena-advertisers-on-global-stage/"
+    last_updated: "2026-07-10"
