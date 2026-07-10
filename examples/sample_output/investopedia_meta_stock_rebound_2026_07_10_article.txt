@@ -1,0 +1,25 @@
+# Meta Stock Had a Lousy First Half. Here's Why the Tech Giant's Shares Are Rising Again
+# Source: Investopedia (investopedia.com)
+# Date: July 10, 2026 (updated with Friday close data)
+# URL: https://www.investopedia.com/meta-stock-had-a-lousy-first-half-here-s-why-the-tech-giant-s-shares-are-rising-again-12016084
+# Sources cited: Reuters, Bank of America, The New York Times
+
+Meta was the best-performing stock in the S&P 500 on Friday as investors continued to cheer the social media giant's push to monetize its AI investments.
+
+In an internal memo, Meta (META) laid out plans to double its cloud computing capacity to 14 gigawatts next year and begin producing its own AI chips with designer Broadcom (AVGO) in September, Reuters reported on Thursday. On Thursday, Meta also released its latest AI model, Muse Spark 1.1, which developers can pay to use through a new API platform.
+
+The shares rose 6% on Friday after jumping nearly 5% yesterday. Meta stock came into this week down 12% since the start of the year. Friday's gains erased those losses and put shares up 1% year-to-date.
+
+Wall Street started to ask questions about Meta's AI infrastructure spending this year, with some investors expressing concern the social media giant is spending hundreds of billions on data centers for its own use, unlike Alphabet (GOOG) and Amazon (AMZN), which sell computing capacity to cloud customers.
+
+Meta has been one of Big Tech's laggards this year. It was the only Magnificent Seven stock to fall in both the first and second quarters. And its 15% first-half decline was the second-worst of the Mag Seven, trailing only Microsoft's (MSFT) 23% slump.
+
+Sentiment has improved in the second half. Shares popped 9% on July 1 following reports the company is considering renting out unused computing capacity to third parties, similar to SpaceX's (SPCX) $1.25 billion-per-month agreement with Anthropic. Shares are up nearly 20% since that report.
+
+Bank of America analyst Justin Post, in a note earlier this week, argued Wall Street is undervaluing Meta's AI infrastructure. Post estimates investors are valuing Meta's computing capacity at just $4 billion per gigawatt, compared with Amazon's $59 billion and Alphabet's $110 billion. Post believes it's worth $12 billion per GW, with the potential for "significant upside considering specialized AI capacity that Meta is building." According to Post, SpaceX's recent deals with Anthropic and Google valued its specialized capacity at about $50 billion per GW.
+
+Investor enthusiasm for Meta's AI push has offset regulatory and legal headwinds facing its core social media business. The EU Commission on Friday said in a preliminary report that Meta violated its Digital Services Act with "addictive" features like infinite scroll and autoplay. The commission told Meta to change the violating design features, or risk facing a fine of up to 6% of its global revenue.
+
+Meta faces mounting scrutiny of its social media platforms and their impact on youth mental health and safety. The company lost two trials centered on child safety earlier this year, potentially setting a precedent for a slew of similar cases being litigated.
+
+Update—July 10, 2026: This article was updated after initial publication with stock performance as of Friday's close.

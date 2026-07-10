@@ -51,8 +51,8 @@ class TestFramingDeviceTypeCount:
     """
 
     # --- Update ONLY this constant when adding new device types ---
-    EXPECTED_TOTAL = 92
-    EXPECTED_PATTERN_MATCHED = 85  # core + extended (in _DEVICE_PATTERNS)
+    EXPECTED_TOTAL = 93
+    EXPECTED_PATTERN_MATCHED = 86  # core + extended (in _DEVICE_PATTERNS)
     EXPECTED_STRUCTURAL = {"kicker_framing", "analogy_stacking",
                            "speculative_framing", "trend_bundling",
                            "social_proof_amplification",
@@ -1071,7 +1071,7 @@ class TestAdversarialDeviceListConsistency:
     # Track the total number of compiled regex patterns across all device
     # types in _DEVICE_PATTERNS.  When patterns are added, this test fails
     # and forces a deliberate count update, preventing undocumented drift.
-    EXPECTED_TOTAL_PATTERNS = 526  # sum(len(v) for v in _DEVICE_PATTERNS.values())
+    EXPECTED_TOTAL_PATTERNS = 530  # sum(len(v) for v in _DEVICE_PATTERNS.values())
 
     def test_total_regex_pattern_count(self):
         """Total compiled regex patterns must match expected count."""
@@ -2153,6 +2153,7 @@ class TestAnnotatedArticleCountConsistency:
             # Tech editorial — added 2026-07-10 Type D
             ("techlusive", "techlusive"),
             ("bloomberg", "bloomberg"),
+            ("investopedia", "investopedia"),
         ]
         for f in sample_dir.glob("*_analysis.md"):
             name = f.stem.replace("_analysis", "")

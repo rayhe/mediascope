@@ -7664,21 +7664,89 @@ _INVESTOR_ADVISORY_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["investor_advisory"] = _INVESTOR_ADVISORY_PATTERNS
 
 
+# ---------------------------------------------------------------------------
+# regulatory_risk_subordination (#93)
+#
+# Structural editorial pattern where regulatory, legal, or policy risk is
+# acknowledged in the article body but architecturally sandwiched between
+# positive market/business signals — the reading experience begins and ends
+# with optimism.  Distinct from investor_advisory (addresses reader as
+# investor), competitive_positioning (frames business strategy), and
+# delayed_defense (measures where corporate response appears).
+#
+# Regulatory_risk_subordination operates at the article *architecture* level:
+# the position and proportion of regulatory content relative to positive
+# framing.  Genre-normative for IBD, Investopedia, Motley Fool; higher
+# signal when detected in WSJ, NYT, Bloomberg.
+#
+# Discovered in IBD Meta EU DSA article (Jul 10, 2026): lede "Despite the
+# report, Meta stock added on to a rally" + closer section "Meta Stock Rises
+# On AI News."  And Investopedia Meta stock article (Jul 10, 2026):
+# regulatory content begins at paragraph 9 of 11 (~81% through article).
+# ---------------------------------------------------------------------------
+_REGULATORY_RISK_SUBORDINATION_PATTERNS: list[re.Pattern] = [
+    # "despite [the|a|this] [regulatory/legal action], [stock/company] [positive]"
+    re.compile(
+        r"\bdespite\s+(?:the\s+|a\s+|this\s+)?"
+        r"(?:report|ruling|investigation|probe|fine|penalty|lawsuit|"
+        r"charges?|complaint|regulatory|antitrust|crackdown|scrutiny|"
+        r"enforcement|litigation|sanction|ban|restriction|warning|hearing)"
+        r".{0,120}?"
+        r"(?:stock|shares?|price)\s+"
+        r"(?:rose|rallied|gained|added|climbed|jumped|surged|advanced|"
+        r"rebounded|recovered|held|ticked up|moved higher|was up|were up)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "shrugging off [regulatory/legal] [headwinds/concerns/risks]"
+    re.compile(
+        r"\bshrugg(?:ing|ed)\s+off\s+"
+        r"(?:the\s+|a\s+|this\s+)?"
+        r"(?:regulatory|legal|antitrust|EU|FTC|DOJ|enforcement|policy|"
+        r"legislative|government|congressional|oversight|compliance)"
+        r"\s+(?:headwinds?|concerns?|risks?|pressures?|threats?|overhang|clouds?)\b",
+        re.IGNORECASE,
+    ),
+    # "[regulatory/EU/FTC action]... offset by [positive market/AI/earnings signal]"
+    re.compile(
+        r"\b(?:regulatory|antitrust|EU|FTC|DOJ|enforcement|legal|litigation)"
+        r".{0,80}?"
+        r"\boffset\s+(?:by|with)\s+"
+        r"(?:strong|robust|solid|better|positive|upbeat|improving|record|"
+        r"AI|revenue|earnings|growth|gains|momentum|optimism)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "even as [regulatory/EU action]... [stock/shares] [positive]"
+    re.compile(
+        r"\beven\s+as\s+"
+        r"(?:the\s+|a\s+)?"
+        r"(?:EU|FTC|DOJ|regulators?|legislators?|lawmakers?|government|"
+        r"antitrust authorities|enforcement agencies)"
+        r".{0,120}?"
+        r"(?:stock|shares?)\s+"
+        r"(?:rose|rallied|gained|climbed|jumped|surged|advanced)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+_DEVICE_PATTERNS["regulatory_risk_subordination"] = (
+    _REGULATORY_RISK_SUBORDINATION_PATTERNS
+)
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 85 pattern-matched device types plus 7 structural
-    post-pass types (92 total).
+    Scans for 86 pattern-matched device types plus 7 structural
+    post-pass types (93 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (84): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (86): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_displacement,
@@ -7719,7 +7787,8 @@ def detect_framing_devices(
     valuation_comparison, worker_replacement_irony,
     narrative_reframing, dismissive_qualifier,
     bull_bear_structuring, analyst_authority,
-    investor_advisory, and editorial_cross_promotion.
+    investor_advisory, editorial_cross_promotion,
+    and regulatory_risk_subordination.
 
     Structural post-pass (7): delayed_defense, kicker_framing,
     analogy_stacking, speculative_framing, trend_bundling,
