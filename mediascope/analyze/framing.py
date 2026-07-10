@@ -4592,6 +4592,25 @@ _ANALOGY_METAPHOR_PATTERNS: list[re.Pattern] = [
         r"\bas if\s+(?:they|it|the company|the platform|the app)\s+(?:were|was|had)\b",
         re.IGNORECASE,
     ),
+    # ---------------------------------------------------------------------------
+    # "would be like calling/saying/asking" — editorial damning-analogy
+    # construction.  The writer rejects a claim by comparing it to an
+    # absurdly inapplicable statement.  Common in opinion/analysis pieces.
+    #
+    # Identified in Gizmodo "Zuckerberg Wants to Save You" (Jul 9, 2026):
+    #   "To call Meta a champion of democratic ideals, though, would be
+    #    like calling Texaco a pillar of environmental stewardship."
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b(?:would|could|might)\s+be\s+like\s+(?:call|say|ask|claim|argu|describ|label|brand|declar|hail|proclai)\w*"
+        r"\s+.{3,80}",
+        re.IGNORECASE,
+    ),
+    # "is like [verb]ing" / "was like [verb]ing" — simile with gerund
+    re.compile(
+        r"\b(?:is|was|be)\s+like\s+\w+ing\b",
+        re.IGNORECASE,
+    ),
 ]
 _DEVICE_PATTERNS["analogy_metaphor"] = _ANALOGY_METAPHOR_PATTERNS
 

@@ -18624,3 +18624,50 @@ Created `cross_pub_eu_dsa_investor_expansion_ibd_investopedia_2026_07_10.md`:
 - Editorial genres: **8**
 - Topic buckets: **29**
 - Structural consistency tests: **98**
+
+---
+
+## Type A — Jul 10, 2026 15:00 PT
+
+### Article
+**Gizmodo: "Mark Zuckerberg Wants to Save You From the Permanent Underclass"** (Jul 9, 2026)
+
+Sardonic editorial on Meta's Muse Spark 1.1 launch. Zuckerberg's "people's champ" positioning undercut by Texaco analogy, Myanmar/Rohingya reference, and $1.4T state lawsuits. VADER scores +0.997 (maximally wrong — classic sarcastic editorial polarity inversion).
+
+### Changes
+
+1. **`mediascope/analyze/framing.py`** — 2 new `analogy_metaphor` patterns:
+   - `"would/could/might be like calling/saying..."` — damning-analogy construction
+   - `"is/was like [verb]ing"` — gerund simile pattern
+
+2. **`mediascope/analyze/sentiment.py`** — 3 new loaded language terms: `ignominious`, `disingenuous`, `hubris`
+
+3. **`tests/test_gizmodo_zuckerberg_underclass.py`** — 7 new tests (analogy_metaphor Texaco, would-be-like regex, loaded_language ignominious, scale_magnitude $1.4T, full article framing, gerund simile, Anthropic entity cluster)
+
+4. **`examples/sample_output/`** — Article text + full analysis annotation (146th annotated article). VADER polarity inversion documented (+0.997 vs manual ~-0.65, delta ~1.6).
+
+5. **Count updates across docs/tests:**
+   - Regex patterns: 530 → 532
+   - Emotional language terms: 850 → 853
+   - Annotated articles: 145 → 146
+   - Stale guards fixed in `test_structural_consistency.py`, `test_foxbusiness_meta_1_4t_penalty.py`, `test_nyt_ai_reviews.py`
+
+### Test Results
+2155 passed, 0 failed (92 test files)
+
+### Running Totals
+
+- Framing device types: **93** (10 core + 76 extended + 7 structural)
+- Regex patterns: **532**
+- Annotated articles: **146**
+- Distinct publications: **42**
+- Same-event clusters: **13** (5 Tier 1, 8 Tier 2)
+- Emotional language terms: **853**
+- Entity clusters: **81** (786+ aliases)
+- Journalists: **205** (630 auto-detected migrations)
+- Adversarial device types: **27**
+- Sentiment correction paths: **10** (A–J)
+- Source extraction patterns: **12**
+- Editorial genres: **8**
+- Topic buckets: **29**
+- Structural consistency tests: **98**
