@@ -76,6 +76,8 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "data security", "data exposure", "data exposed",
         "digital activity", "mouse-tracking", "mouse tracking",
         "screen scraping", "screen scraped", "keystroke",
+        "always-on recording", "always-on camera", "always-on microphone",
+        "super-sensing", "super sensing",
     ],
     "antitrust_regulation": [
         "antitrust", "anti-trust", "monopoly", "monopolistic",

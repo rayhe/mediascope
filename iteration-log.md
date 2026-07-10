@@ -37,7 +37,7 @@ Tracks every improvement cycle run on the toolkit.
 - Added `conflict_disclosure_demo.py` to examples table with description
 
 **Tests:** 2,129 passed, 0 failed (97 structural consistency tests all green, including all count guards, numbering guards, and cross-reference consistency checks)
-**Commit:** (pending push)
+**Commit:** `c4c2cd5` — pushed to GitHub
 **Verification method:** Extracted all 91 device types from `framing.py` code (84 pattern-matched + 7 structural post-pass), cross-referenced against FRAMING_REFERENCE.md sequential numbering — confirmed 1:1 match.
 
 **Cumulative stats:** ~10,356 profile lines, 192 journalists, 595 auto-detected migrations, 360+ publications, 91 framing device types (10C/74E/7S), 2,129 tests, 10 example scripts
@@ -17374,7 +17374,7 @@ Fixed `cli.py` passing wrong kwargs (`db=db, profile=profile`) to `ArticleAnalyz
 - **Journalists:** 176 (553 auto-detected migrations)
 - **Publication profiles loading:** 6/6 (was 3/6)
 
-**Commit:** (pending)
+**Commit:** `0850c22` — pushed to GitHub
 
 ## 2026-07-09 05:00 PT — Type C: Ownership & Funding Deep Dive (The Verge / PMC + Wired stock update)
 
@@ -17721,3 +17721,60 @@ Still untracked Atlantic hires from E&P: Luis Parrales (staff writer), Adam Kirs
 *35 reflects re-serialized YAML — original had 31 tracked + some implicit.
 
 **Commit:** `953dd1b` — pushed to GitHub
+
+---
+
+## 2026-07-09 18:00 PT — Type A: Article Deep Dive
+
+**Article:** Gizmodo — "Meta Is Toying With the Idea of Smart Glasses That Record Everything, All the Time" (July 9, 2026)
+**Author:** Unnamed (first-person editorial voice)
+**Subject:** FT report on Meta "super-sensing" prototype glasses with always-on recording, no LED indicator
+
+### Toolkit Fixes
+
+1. **Sentiment — 7 loaded language terms added (841→848):**
+   - `ick people out`, `ick people`, `face computers`, `face computer`, `unsavory`, `unsavoury`, `problematic history`
+
+2. **Topics — privacy_data keywords expanded:**
+   - Added `always-on recording`, `always-on camera`, `always-on microphone`, `super-sensing`, `super sensing`
+
+3. **Sources — `_KNOWN_PUBS` expanded:**
+   - Added `Svenska Dagbladet`, `TheWrap`, `Digital Trends`
+
+4. **Sources — new pub-cite regex pattern:**
+   - `[a/A] report from/by [optional descriptor] [Publication]` — catches "A report from Swedish newspaper Svenska Dagbladet..."
+   - First live validation successful: Svenska Dagbladet correctly extracted as `publication_citation` source type
+
+5. **Structural consistency guards updated:**
+   - EL count test: 841→848
+   - QUALITY_STANDARDS.md §8.1 and §8.4: 841→848
+   - ARCHITECTURE.md test count: 90→91 files, 2129→2147 tests
+   - README.md test count: 90→91 files, 2129→2147 tests
+
+### New Files
+
+- `tests/test_gizmodo_super_sensing_glasses.py` — 18 tests covering entities, sources (including Svenska Dagbladet), framing, topics, loaded language
+- `examples/sample_output/gizmodo_meta_super_sensing_glasses_2026_07_09_article.txt` — full article text
+- `examples/sample_output/gizmodo_meta_super_sensing_glasses_2026_07_09_analysis.md` — full analysis with manual vs toolkit comparison
+
+### Key Findings
+
+1. **VADER polarity inversion (critical):** Toolkit returned +0.66 overall_tone for a clearly negative editorial (manual: -0.45). Classic positive inversion caused by hedged positive language, corporate PR statement, and sarcastic hope construction. No correction path fired. Identified as candidate for new Path K: polarity-check for privacy editorials with high speculative + high emotional intensity.
+
+2. **Gizmodo `is_expert=True` bug:** Publishing outlet flagged as expert source because spokesperson "told Gizmodo." Needs structural fix — cross-reference source names against `_KNOWN_PUBS` and strip expert status.
+
+3. **Framing gap — editorial sarcasm:** "If we can do it, we probably will" is the article's core thesis expressed as ironic resignation. No device type captures first-person editorial sarcasm. Taxonomy gap identified.
+
+4. **4 of ~8 framing devices detected:** ironic_quotation ✅, denial_contradiction ✅, anonymous_authority ✅, loaded_language ⚠️ (right neighborhood, wrong span). Missed: editorial sarcasm, speculative amplification, historical scandal invocation, minimization via concession.
+
+### Cumulative Stats
+| Metric | Before | After |
+|--------|--------|-------|
+| Tests | 2,129 | 2,147 |
+| Test files | 90 | 91 |
+| EL terms | 841 | 848 |
+| Example scripts | 10 | 10 |
+| Example outputs | — | +2 (article + analysis) |
+| Known pubs | — | +3 (Svenska Dagbladet, TheWrap, Digital Trends) |
+
+**Commit:** (pending)

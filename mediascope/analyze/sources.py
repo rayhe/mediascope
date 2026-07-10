@@ -1954,6 +1954,7 @@ def extract_sources(text: str) -> list[SourceMention]:
         "The Washington Post", "BBC", "CNN", "NBC News", "ABC News",
         "Axios", "Politico", "Vox", "Gizmodo", "Engadget",
         "9to5Mac", "MacRumors", "The Register", "Futurism",
+        "Svenska Dagbladet", "TheWrap", "Digital Trends",
     }
     _pub_alt = "|".join(re.escape(p) for p in sorted(_KNOWN_PUBS, key=len, reverse=True))
     pub_cite_patterns: list[re.Pattern] = [
@@ -1971,6 +1972,15 @@ def extract_sources(text: str) -> list[SourceMention]:
         # "according to a report by/in [Publication]"
         re.compile(
             rf"\baccording\s+to\s+(?:a\s+)?(?:report|story|investigation|analysis)\s+(?:by|in|from)\s+(?:the\s+)?({_pub_alt})\b",
+            re.IGNORECASE,
+        ),
+        # "[a/A] report from/by [optional descriptor] [Publication]"
+        # Handles: "A report from Swedish newspaper Svenska Dagbladet that..."
+        # "a report by Bloomberg detailed..."
+        re.compile(
+            rf"\b[Aa]n?\s+(?:report|investigation|story|analysis|exposé)\s+"
+            rf"(?:from|by)\s+(?:[\w\-]+\s+)?(?:newspaper|publication|outlet|magazine|website)?\s*"
+            rf"({_pub_alt})\b",
             re.IGNORECASE,
         ),
     ]

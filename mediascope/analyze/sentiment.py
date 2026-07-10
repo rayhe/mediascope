@@ -266,14 +266,17 @@ EMOTIONAL_LANGUAGE: list[str] = [
     # (non-standard vocabulary).  Gap discovered during Gizmodo Meta Fury
     # review analysis (Jun 2026): 0.418 emotional intensity vs manual 0.65.
     "icky", "ickier", "ickiest", "ickiness", "ick factor",
+    "ick people out", "ick people",
     "glassholism", "glasshole", "glassholes",
+    "face computers", "face computer",
     "privacy minefield", "minefield",
     "spying", "spy", "spied",
     "encroaching", "encroach",
     "intrusion", "intrusions",
     "paranoid", "paranoia",
     "bad actor", "bad actors",
-    "problematic",
+    "problematic", "problematic history",
+    "unsavory", "unsavoury",
     "conflicted",
     "obnoxious",
     "worst person", "worst company",

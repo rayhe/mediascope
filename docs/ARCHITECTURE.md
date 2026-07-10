@@ -413,7 +413,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 100 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2129 tests across 90 test files (all from real articles)
+├── tests/                       # 2147 tests across 91 test files (all from real articles)
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
@@ -430,6 +430,7 @@ mediascope/
 │   ├── test_gizmodo_1_4t_deep_dive.py # Gizmodo $1.4T existential threat deep dive: headline scale_magnitude, loaded_language gaps (exploiting, hooked), litigation cascade, sentiment
 │   ├── test_gizmodo_1_4t_consumer_protection.py # Gizmodo $1.4T consumer protection: consumer_protection topic classification, valuation_comparison framing device, strategic_disclosure with curly quotes, entity extraction for AGs and legal actors
 │   ├── test_gizmodo_1_4t_teen_safety.py # Gizmodo $1.4T teen safety existential threat: litigation_cascade (new — multi-front legal stacking), defensive_verb_framing (new — loaded attribution verbs), zero named human sources, sentiment intensity 1.0, entity detection for state AG coalitions
+│   ├── test_gizmodo_super_sensing_glasses.py # Gizmodo super-sensing glasses editorial: entity detection (Meta, FT, Zuckerberg), source extraction (Svenska Dagbladet via pub-cite pattern, anonymous sources), ironic_quotation/loaded_language/anonymous_authority framing, privacy_data + hardware_wearables topics, new emotional language terms (ick people out, face computers, unsavory, problematic history)
 │   ├── test_investor_framing.py # Investor-media framing patterns and ticker entity detection: narrative_reframing, dismissive_qualifier, bull_bear_structuring device types; NVDA/Rubin/Blackwell ticker/platform entity detection; integration tests against Motley Fool Meta compute article
 │   ├── test_market_overbuilding_framing.py # market_verdict and overbuilding_narrative framing devices (Category 12: Financial & Investor Media Framing), plus speculative_framing pattern expansions (may be [verb]ing, would [adverb] [verb], could be [past participle]); discovered from WSJ AI Spending article (Jul 8, 2026)
 │   ├── test_watermelon_bofa_entities.py # Watermelon/Muse Image/Muse Video Meta entity detection, BofA/Berkshire Hathaway financial entity detection, and analyst_authority framing device regression tests; discovered from Barron's BofA AI spending article (Jul 7, 2026)
