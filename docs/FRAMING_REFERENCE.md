@@ -1,6 +1,6 @@
 # Framing Device Quick Reference
 
-> A compact lookup card for all 91 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
+> A compact lookup card for all 92 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
 
 ---
 
@@ -210,6 +210,7 @@ Devices specific to financial journalism, earnings coverage, and analyst reporti
 | 89 | **Market Verdict** | E | Market drops/investor behavior framed as editorial judgment on strategy | "fell X% as/amid concerns," "investors have spoken," "wiping $X in value" |
 | 90 | **Overbuilding Narrative** | E | Infrastructure spending framed as excess, bubble, or unsustainable arms race | "spending war," "arms race," "overcapacity," "bubble," "when will someone blink" |
 | 91 | **Heritage Nostalgia** | E | Age, generational continuity, or historical significance establishing emotional stakes for disruption | "141-year-old brick manufacturer," "fifth generation working at the company," "iconic buildings," "family-owned since 1892" |
+| 92 | **Investor Advisory** | E | Author adopts investment-advisor posture, directly warning investors about risks and prescribing behavior | "Investors ignore [X] at their peril," "should start paying attention," "Investors may be making the wrong choice," "it's time for investors to" |
 
 ---
 
@@ -241,7 +242,7 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 | Core | 10 | Pattern matching — fundamental editorial techniques |
 | Extended | 74 | Pattern matching — discovered from real article analysis |
 | Structural (post-pass) | 7 | Full-article heuristics (position, accumulation, structure) |
-| **Total** | **91** | |
+| **Total** | **92** | |
 
 ---
 

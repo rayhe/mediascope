@@ -183,7 +183,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 91 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (74 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 92 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (75 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -273,6 +273,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Dismissive Qualifier** | Using pejorative or dismissive adjectives to characterize a viewpoint or argument before presenting it, subtly delegitimizing it. The labeling precedes engagement with the substance. Distinct from sarcastic_correction (which mocks after) and editorial_deflation (which deflates after building up) | "The lazy/sloppy/naive version"; "an easy/convenient/cheap worry/concern/narrative"; "gives investors an easy worry" | Motley Fool Meta Compute article (Jul 7, 2026) — "gives investors an easy worry" and "The lazy version says" pre-label opposing viewpoints as unserious before engaging |
 | **Bull/Bear Structuring** | Investor-media genre pattern organizing analysis into explicit "what would support/break the thesis" or "bull case / bear case" sections with enumerated signals. Creates appearance of balanced analysis while structural weight (word count, position, elaboration) can tilt toward one side | "What Would Support/Break the Thesis?"; "The bull/bear case gets stronger if"; "The first/second/third signal/warning would be" | Motley Fool Meta Compute article (Jul 7, 2026) — 14 instances across two structured sections: 4 bullish signals (presented first, more expansively) and 4 bearish signals, with conclusion tilting bullish ("less like a capex surrender and more like an infrastructure shuffle") |
 | **Analyst Authority** | Named analyst firms used as authority sources to frame corporate spending decisions. Distinct from anonymous_authority (unnamed "some experts say") — this catches named financial institutions whose credentialing function shapes how readers evaluate spending narratives | "BofA warns"; "according to Goldman Sachs"; "Morgan Stanley analyst [Name]"; "[Firm] raised its capex estimate ... could heighten investor anxiety" | Barron's BofA AI Spending article (Jul 7, 2026) — BofA Securities analyst Justin Post cited as authority for $145B capex estimate and "Watermelon" model codename reveal; analyst name and firm lending credibility to alarm framing |
+| **Investor Advisory** | Editorial technique where the author adopts an investment-advisor posture, directly warning investors about risks and implicitly prescribing behavior. Distinct from analyst_authority (which uses named analyst firms as sources) and bull_bear_structuring (which organizes analysis into thesis/anti-thesis). The investor_advisory pattern addresses the *reader as investor* and tells them what to do. Most common in Barron's, MarketWatch, Motley Fool, and Seeking Alpha — genre-normative for investor-facing publications; higher framing signal when detected in general-news publications | "Investors ignore [X] at their peril"; "should start paying attention"; "Investors may be making the wrong choice"; "it's time for investors to"; "the market is pricing in too little risk"; "don't be fooled/misled by" | Barron's "Facebook Faces a $1 Trillion Backlash" (Jul 10, 2026) — headline "Investors Ignore the Threat at Their Peril," body "should start paying attention," "investors ignore the legal risk at their own peril," final sentence "Investors may be making the wrong choice." Four distinct investor-directive instances across headline and body, adopting advisory posture throughout |
 | **Default Burden Privacy** | Editorial technique of framing a feature that is enabled by default and offers a standard opt-out as inherently violating user consent. The framing emphasises the *burden* on the user to discover and toggle the setting, treating default-on as a quasi-deceptive practice regardless of whether the opt-out is accessible. Distinct from policy_reversal (which tracks actual changes in policy), regulatory_shadow (which inserts regulatory context into unrelated stories), and corporate_reassurance_undercut (which undercuts a company's own PR language). Default-burden privacy is about how *existing* default-on features are framed as consent violations | "enabled/turned on by default"; "opt-out" near "users may not know/realize/be aware"; "buried in settings"; "without [explicit/informed] consent/knowledge/permission"; "users have to [actively] opt out/disable/turn off" | TechLusive Meta Muse Image privacy article (Jul 8, 2026) — "opt-out, in which users can have their photos deleted from public Instagram accounts" frames a standard opt-out control as a privacy failing by emphasising the burden on users. The existence of the opt-out mechanism is presented as insufficient rather than standard practice. Distinct from the Meta-specific pattern where Cambridge Analytica is guilt-by-association'd into every privacy story |
 | **Editorial Cross-Promotion** | All-caps interstitial headline blocks or CTA blocks embedded in article body text, importing the framing of linked headlines into the host article's narrative. Common in Fox News/Fox Business/NY Post and other News Corp properties. These blocks serve dual editorial functions: (1) interrupt reader flow to drive clicks to related coverage, and (2) import adversarial or sensational framing from linked headlines into otherwise balanced reporting. Creates plausible deniability — the publication can maintain neutral prose while injecting loaded framing through "just links" | All-caps blocks of 5+ words in article body; "CLICK HERE TO GET THE FOX BUSINESS APP"; "JUDGE LETS STATES PURSUE CLAIMS THAT META DESIGNED FACEBOOK AND INSTAGRAM TO ADDICT CHILDREN" | Fox Business Meta $1.4T penalty article (Jul 7, 2026) — two all-caps blocks import adversarial framing ("DESIGNED...TO ADDICT CHILDREN," "CHILD SOCIAL MEDIA ADDICTION") into an otherwise defense-forward, balanced business report. The host article carefully uses "claims" and "allegations" while the cross-promo blocks state the addiction framing as the linked headline's premise. Distinct from self_referential_investigation (same publication citing its own prior reporting as evidence) and cross_publication_import (importing another outlet's characterization as settled fact) |
 | **Emotion Attribution** | Editorial attribution of emotional states — disappointment, frustration, alarm — to subjects who expressed only factual observations, upgrading neutral statements into emotional reactions. Distinct from loaded_language (which uses emotionally charged words) and editorial_dramatization (which rewrites facts in dramatic language) — emotion attribution specifically *invents* an inner emotional state the subject never expressed | "[Name] is disappointed/frustrated/alarmed that/by/about"; "investors/analysts are worried/anxious/nervous"; "leading investors to fret/worry/panic" | Barron's "What Meta Said About Slow Progress on AI Agents" (Jul 2, 2026) — Zuckerberg's factual "the trajectory for this hasn't quite accelerated" becomes "Zuckerberg is disappointed that AI agents haven't developed." Also "leading investors to fret" — emotional state attributed to investors with no sourced evidence of actual investor sentiment |
@@ -761,7 +762,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 91-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 92-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1251,13 +1252,13 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **140 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **142 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
 ### 17.2 Publication Distribution
 
-The corpus spans **43 distinct publications** across 5 editorial modes:
+The corpus spans **44 distinct publications** across 5 editorial modes:
 
 #### Tracked Publications (5 publications, 55 articles)
 
@@ -1361,7 +1362,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 140 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 142 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
@@ -1393,7 +1394,7 @@ The Zuckerberg town hall cluster (Jul 2–4, 2026) is the highest-value comparis
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 91 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 92 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|

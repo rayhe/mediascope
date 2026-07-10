@@ -1,0 +1,42 @@
+Facebook Faces a $1 Trillion Backlash. Investors Ignore the Threat at Their Peril.
+
+By Adam Levine
+Barron's, July 10, 2026
+
+The courtroom of Judge Yvonne Gonzalez Rogers in the U.S. Northern District of California has seen lots of tech trials over the years, but it has probably never seen this: plaintiffs asking for $1 trillion-plus in damages. Until now.
+
+Gonzalez Rogers is overseeing the consolidation of thousands of civil actions against Meta Platforms, home of Facebook and Instagram. One of those actions will come to trial in August. Four states—California, Colorado, New Jersey, and Kentucky—are asking the court for $1.4 trillion, almost as large as Meta's entire market value.
+
+Investors, who tend to overlook fines and regulatory issues, should start paying attention. Across the world, lawmakers, regulators, and lawyers see Meta and other social-media companies as a ripe target. And they're now getting sympathetic hearings from juries and judges.
+
+The latest $1.4 trillion figure is based on Meta's interpretation of how the states could proceed. For now, the states themselves aren't talking. The filings are sealed by the court, and the attorneys general of California and Kentucky didn't respond to a request for comment. The attorneys general offices of New Jersey and Colorado declined to comment.
+
+Meta, however, is speaking up: "The plaintiffs' outlandish calculations have no basis in fact or law," a Meta spokesperson said. "We'll continue to defend ourselves against headline-seeking demands that are untethered from reality."
+
+After years of losing against social-media companies in courts, plaintiffs are finding traction by focusing less on content itself and more on how the platforms' market their offerings. In the current trial, attorneys allege that Meta falsely claims it has created a safe platform by tightly regulating children's access.
+
+The penalties against such deceptive practices—ranging from $2,000 to $20,000 per violation in the four states—could quickly add up.
+
+Separately, there are disgorgement-of-profit calculations from these laws, in addition to further disgorgement under the 1998 federal Children's Online Privacy Protection Act. Meta says it would all add up to $1.4 trillion.
+
+At a Friday hearing, Meta lawyer Paul Schmidt had numerous objections to state calculations and the assumptions underlying them. Judge Gonzalez Rogers also voiced some skepticism over the disgorgement math.
+
+If Meta's calculations are right, it is indeed an outsize request, representing more than double Meta's operating cash flow for its entire existence as a public company. It's unlikely that Meta would ever be forced to pay anything close. Indeed, the market is shrugging off the threat, with shares rising 2.4% on Tuesday after headlines about the threat of $1 trillion-plus in damages. For now, Meta investors seem far more wrapped up in the company's AI computing capacity.
+
+But investors ignore the legal risk at their own peril. Even if a loss at trial doesn't come with a 13-figure penalty, it could have an enormous impact on Meta and the social-media landscape.
+
+The current four-state case is a "bellwether" trial for similar suits from 25 other states. Decisions in such bellwethers don't predetermine the outcomes in other cases, but they create a framework for subsequent trials. A bad result for Meta this time could pressure the company to settle on unfavorable terms with the other states.
+
+The federal court will next hear from U.S. school districts that are suing, with a trial scheduled for early next year. In May, Meta followed other social-media companies in settling the first school bellwether case with the Breathitt County School District in Kentucky. Breathitt County is home to about 2,000 residents ages 5 to 17, according to the U.S. Census Bureau. The terms of the deal weren't officially disclosed.
+
+There is separate consolidated litigation involving thousands of cases in California state courts. The first of those bellwether cases went against Meta and Alphabet's YouTube in March for a total penalty of $6 million. The plaintiff was a woman who alleges she became addicted to social media as a child, harming her mental health and opening her up to abuse by adults.
+
+The next related case is scheduled for the end of the month. The plaintiff is a 15-year-old Florida boy who says he began using social media when he was 8. YouTube and TikTok have already settled, leaving Meta and Snap as the remaining defendants in the trial, scheduled for later this month. Another loss could lead to an avalanche of settlements.
+
+It has become easy to ignore each of these cases because the individual penalties are small and manageable for the large companies. But the sheer volume of cases will add up. Moreover, the cases attack Meta's growth story; after all, children will eventually be the adults that drive profits.
+
+And these cases are just one slice of social media's legal exposure in the U.S. New Mexico recently won a $375 million judgment against Meta, and age verification is beginning to come through state legislatures, most notably in Texas and Florida. Though teens are adept at evading them, social-media bans for young people are already in place in Australia and Indonesia, with more coming this year and next year.
+
+Roblox is the one major company trying to get in front of the risks to children—and the related risk to its own business. It now requires users to go through an age verification process to use communications features on the social gaming platform; the platform limits communication across different age groups.
+
+It's a costly effort, though. This one, investors haven't ignored. Roblox shares are down 32% this year as the verification process impacts user and sales growth this year; Meta stock, by comparison is down just 6.7%. Investors may be making the wrong choice.

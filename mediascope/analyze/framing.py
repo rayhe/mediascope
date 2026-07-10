@@ -7573,21 +7573,92 @@ _COMPETITIVE_DISPLACEMENT_PATTERNS: list[re.Pattern[str]] = [
 _DEVICE_PATTERNS["competitive_displacement"] = _COMPETITIVE_DISPLACEMENT_PATTERNS
 
 
+# ---------------------------------------------------------------------------
+# Investor advisory: editorial technique where the author adopts an
+# investment-advisor posture, directly warning investors about risks and
+# implicitly prescribing behavior.  Distinct from analyst_authority (which
+# uses named analyst firms as sources) and bull_bear_structuring (which
+# organizes analysis into thesis/anti-thesis).  The investor_advisory
+# pattern addresses the *reader as investor* and tells them what to do.
+#
+# Most common in Barron's, MarketWatch, Motley Fool, Seeking Alpha — genre-
+# normative for investor-facing publications.  Higher framing signal when
+# detected in general-news publications (NYT, WSJ news sections).
+#
+# Discovered in Barron's Meta $1T backlash article (Jul 10, 2026):
+# "Investors Ignore the Threat at Their Peril," "should start paying
+# attention," "Investors may be making the wrong choice."
+# ---------------------------------------------------------------------------
+_INVESTOR_ADVISORY_PATTERNS: list[re.Pattern] = [
+    # "Investors ignore [X] at their [own] peril"
+    re.compile(
+        r"\binvestors?\s+"
+        r"(?:who\s+\w+\s+)?(?:ignore|overlook|dismiss|shrug off|discount|downplay)"
+        r".{0,80}?"
+        r"\bat\s+(?:their\s+(?:own\s+)?)?peril\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "Investors should [start] [paying attention / take note / be worried]"
+    re.compile(
+        r"\binvestors?\s+"
+        r"(?:should|ought to|need to|would be (?:wise|smart|prudent) to)"
+        r"\s+(?:start\s+)?"
+        r"(?:pay(?:ing)?\s+(?:attention|closer attention|heed|more attention)|"
+        r"take\s+(?:note|notice|heed|a closer look)|"
+        r"be\s+(?:worried|concerned|cautious|wary|alarmed|paying attention)|"
+        r"wake up|sit up|reconsider|reassess|rethink)\b",
+        re.IGNORECASE,
+    ),
+    # "Investors may be making the wrong [choice/bet/call]"
+    re.compile(
+        r"\binvestors?\s+"
+        r"(?:may|might|could)\s+be\s+"
+        r"(?:making|placing|taking)\s+"
+        r"(?:the\s+)?(?:wrong|bad|misguided|risky|dangerous)"
+        r"\s+(?:choice|bet|call|wager|decision|move|play)\b",
+        re.IGNORECASE,
+    ),
+    # "it's time for investors to..." / "the time has come for investors"
+    re.compile(
+        r"\b(?:it(?:'s| is) time|the time has come|now is the time)"
+        r"\s+for\s+investors?\s+to\b",
+        re.IGNORECASE,
+    ),
+    # "the market is [pricing in too little / underestimating / ignoring]"
+    re.compile(
+        r"\bthe\s+market\s+(?:is|seems? to be|appears? to be)\s+"
+        r"(?:pricing\s+in\s+too\s+little|"
+        r"underestimating|ignoring|overlooking|shrugging off|"
+        r"not\s+(?:pricing|accounting|factoring)\s+(?:in|for))\s+"
+        r"(?:the\s+)?(?:risk|threat|danger|exposure|downside|liability|headwind)",
+        re.IGNORECASE,
+    ),
+    # "don't/do not be fooled/misled by [the stock's / shares']"
+    re.compile(
+        r"\b(?:don'?t|do not)\s+(?:be\s+)?"
+        r"(?:fooled|misled|lulled|comforted|reassured|distracted)"
+        r"\s+by\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["investor_advisory"] = _INVESTOR_ADVISORY_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 84 pattern-matched device types plus 7 structural
-    post-pass types (91 total).
+    Scans for 85 pattern-matched device types plus 7 structural
+    post-pass types (92 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (83): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (84): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_displacement,
@@ -7628,7 +7699,7 @@ def detect_framing_devices(
     valuation_comparison, worker_replacement_irony,
     narrative_reframing, dismissive_qualifier,
     bull_bear_structuring, analyst_authority,
-    and editorial_cross_promotion.
+    investor_advisory, and editorial_cross_promotion.
 
     Structural post-pass (7): delayed_defense, kicker_framing,
     analogy_stacking, speculative_framing, trend_bundling,

@@ -1,0 +1,34 @@
+Meta Failed to Protect Users From Addictive Apps, EU Says
+
+By Kim Mackrael
+Wall Street Journal, July 10, 2026
+
+BRUSSELS—Meta Platforms isn't doing enough to protect users' physical and mental health from its addictive designs of Instagram and Facebook, the European Union said, escalating a probe that could yield heavy fines.
+
+The European Commission on Friday issued preliminary findings that Meta breached the bloc's Digital Services Act, a landmark law that requires the world's biggest online platforms to assess and mitigate risks.
+
+If the findings are confirmed, Meta could face a fine of up to 6% of its global revenue for each platform.
+
+Meta said it disagrees with the findings, which it said don't accurately account for steps it has taken to protect teens. "We share the European Commission's commitment to providing teens with safe, positive online experiences," the company said.
+
+The commission's findings add to a slew of legal challenges that Meta and other social-media companies are facing in the U.S.
+
+A jury in California earlier this year found Meta and Google's YouTube negligent for operating a product that harmed young children and teens. In a separate case in New Mexico, a jury found Meta liable for failing to protect young people from online dangers. Thousands of similar lawsuits targeting social-media companies have been filed in the U.S.
+
+Meta previously said it planned to appeal the California and New Mexico verdicts, and Google has said it would appeal the California verdict.
+
+Despite Meta's argument that it has taken steps to protect teens, European regulators said they found the company didn't adequately assess the risks of its platforms' addictive design, and measures to mitigate risks didn't go far enough. For example, the platforms' existing time-management tools can easily be dismissed and parental controls aren't simple to use, it said.
+
+Options for changing the platforms' design could include disabling features such as default autoplay and infinite scrolling or creating screen time breaks for users, it said. Facebook and Instagram's highly personalized recommendation systems could also be changed.
+
+"These features fuel the user's urge to keep scrolling and shift the brain into 'autopilot mode', contributing to unhealthy habits and compulsive use," the commission said.
+
+The Digital Services Act, adopted in 2022, has at times been a flashpoint in the EU's relationship with the Trump administration. President Trump has said the bloc targets U.S. companies unfairly and some U.S. officials have accused it of censorship.
+
+European officials say American platforms face scrutiny because they are among the world's largest. Europeans say censorship allegations are unfounded. The Digital Services Act focuses on companies' policies and risk-mitigation measures, rather than on policing individual posts.
+
+Meta will now have an opportunity to respond before the commission issues a final decision. The findings issued Friday don't prejudge the final outcome, the commission said.
+
+The bloc's regulators earlier alleged that Meta wasn't adequately enforcing its own minimum-age rules. The regulators are also still investigating what they refer to as the "rabbit hole" effects of Facebook and Instagram's algorithm-based recommender systems, which they say may exploit children's vulnerability.
+
+The EU previously told TikTok it may be breaking EU rules over addictive design features. Last year, it fined Elon Musk's X almost $140 million for what it said was a deceptive blue-check-mark system and other transparency-related breaches.

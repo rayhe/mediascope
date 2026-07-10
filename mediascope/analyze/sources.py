@@ -215,6 +215,21 @@ _NAME_STOP_FIRST_WORDS: set[str] = {
     # "Capacity charges at..." mis-parsed "Capacity" as a named source.
     "Capacity", "Manufacturing", "Production", "Infrastructure",
     "Electricity", "Technology", "Industry",
+    # Number words — "Four states are asking" should not extract "Four" as
+    # a source name; quantifiers starting sentences are common in journalism.
+    # Discovered in Barron's Meta $1T backlash article (Jul 10, 2026):
+    # "Four states—California, Colorado, New Jersey, and Kentucky—are
+    # asking the court" mis-parsed "Four" as a named source.
+    "One", "Two", "Three", "Four", "Five", "Six", "Seven",
+    "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen",
+    "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen",
+    "Nineteen", "Twenty", "Thirty", "Forty", "Fifty",
+    "Sixty", "Seventy", "Eighty", "Ninety", "Hundred",
+    "Thousand", "Million", "Billion", "Trillion",
+    "Dozens", "Hundreds", "Thousands", "Millions", "Billions",
+    # "New" prevents "New Jersey" / "New Mexico" / "New Zealand" from
+    # having "New" extracted as a source first-word.
+    "New",
 }
 
 # Publication / organization partial names that look like "First Last"
