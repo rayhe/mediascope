@@ -1,6 +1,6 @@
 """MediaScope Topic Classification Demo.
 
-Demonstrates the 28-bucket topic classification system with real-world
+Demonstrates the 29-bucket topic classification system with real-world
 article snippets. Topic classification is used for:
 
 1. Apples-to-apples asymmetry comparison within topic (§3 methodology)
@@ -188,13 +188,40 @@ SAMPLE_ARTICLES: list[dict[str, str]] = [
         ),
         "expected_top_topic": "consumer_protection",
     },
+    {
+        "name": "Content licensing / publisher fees",
+        "source": "Reuters French antitrust Meta publishers 2026-07-08",
+        "text": (
+            "France's competition authority fined Meta for failing to pay "
+            "publishing fees owed to news publishers under neighboring "
+            "rights legislation. The ruling found Meta re-used published "
+            "content without fair compensation, violating the EU copyright "
+            "directive. French media groups demanded a content licensing "
+            "deal and a bargaining code to settle unpaid fees."
+        ),
+        "expected_top_topic": "content_licensing",
+    },
+    {
+        "name": "Financial markets / stock catalyst",
+        "source": "Barron's Meta gigawatt Iris Muse Spark 2026-07-09",
+        "text": (
+            "Melius Research analyst Ben Reitzes raised his price target "
+            "on Meta to $800, citing the Iris custom chip and Muse Spark "
+            "AI model as catalysts for a stock rally. Wall Street analysts "
+            "are increasingly bullish on Meta's valuation, seeing upside "
+            "potential from a re-rating as the company's AI investments "
+            "reach inflection. The consensus estimate implies a forward P/E "
+            "of 22x, below the sector multiple."
+        ),
+        "expected_top_topic": "financial_markets",
+    },
 ]
 
 
 def demo_single_classification():
     """Classify each sample article and show top-3 topic matches."""
     print("=" * 72)
-    print("TOPIC CLASSIFICATION DEMO — 27-Bucket System")
+    print("TOPIC CLASSIFICATION DEMO — 29-Bucket System")
     print("=" * 72)
     print()
 
@@ -276,11 +303,20 @@ def demo_genre_detection():
     """
     financial_text = (
         "Meta Platforms reported first-quarter revenue of $56.31 billion, "
-        "beating analyst estimates of $55.3 billion. Earnings per share "
-        "came in at $6.43 versus the $6.21 consensus. Reality Labs posted "
-        "a quarterly loss of $4.03 billion. Bank of America raised its "
-        "price target to $680 from $650, maintaining a Buy rating. The "
-        "stock rose 3.2% in after-hours trading."
+        "beating analyst expectations by $1 billion. Earnings per share "
+        "came in at $6.43 versus the $6.21 Wall Street consensus. "
+        "Operating income rose to $22.4 billion, while net income climbed "
+        "to $16.6 billion. Reality Labs posted a quarterly earnings loss "
+        "of $4.03 billion, missing guidance. The company's fiscal year "
+        "forecast was raised, guiding for profit margins above 35%. "
+        "Revenue growth was driven by advertising and AI monetization. "
+        "Shareholders responded positively as the stock price rose 3.2% "
+        "in after-hours trading. Bank of America raised its price target "
+        "to $680, maintaining a Buy rating. Several Wall Street analysts "
+        "upgraded their earnings estimates. Market cap climbed past $1.6 "
+        "trillion. Stock buybacks totaled $6.3 billion in the quarter, "
+        "and the board approved a new $10 billion buyback program, "
+        "signaling confidence in future quarterly results."
     )
 
     print("=" * 72)
@@ -308,7 +344,7 @@ def demo_genre_detection():
 
 
 def demo_topic_bucket_reference():
-    """Print the complete 28-bucket reference table.
+    """Print the complete 29-bucket reference table.
 
     Useful for agents that need to look up what each bucket captures
     and which buckets are adjacent/confusable.
@@ -341,6 +377,8 @@ def demo_topic_bucket_reference():
         "energy_climate": "Fossil fuel dependency, carbon emissions, renewable energy, climate policy",
         "hardware_wearables": "Smart glasses, VR/AR headsets, fitness trackers, wearable computing",
         "consumer_protection": "AG enforcement, deceptive practices, UDAP, dark patterns, consumer fraud",
+        "content_licensing": "Publishing fees, neighboring rights, content compensation, news licensing deals",
+        "financial_markets": "Stock price, analyst ratings, price targets, valuations, market-cap, investment thesis",
     }
 
     # Adjacency warnings: commonly confused bucket pairs
@@ -357,10 +395,13 @@ def demo_topic_bucket_reference():
         ("corporate_strategy", "product_launch", "corporate_strategy = M&A/partnerships; product_launch = specific releases"),
         ("infrastructure_impact", "energy_climate", "infrastructure = data center construction/NIMBY; energy_climate = emissions/renewables"),
         ("worker_ai_displacement", "labor_market", "worker_ai_displacement = recursive self-automation; labor_market = macro trends"),
+        ("financial_markets", "financial_results", "financial_markets = stock price/analyst ratings/valuation; financial_results = earnings/revenue reporting"),
+        ("content_licensing", "antitrust_regulation", "content_licensing = publisher fees/neighboring rights; antitrust_regulation = competition law/monopoly"),
+        ("content_licensing", "litigation", "content_licensing = content compensation disputes; litigation = general legal proceedings"),
     ]
 
     print("=" * 72)
-    print("TOPIC BUCKET REFERENCE — 27 Standardized Buckets")
+    print("TOPIC BUCKET REFERENCE — 29 Standardized Buckets")
     print("=" * 72)
     print()
 
