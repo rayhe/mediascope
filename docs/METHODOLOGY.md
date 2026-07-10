@@ -1252,7 +1252,7 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **142 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **143 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1272,7 +1272,7 @@ These are the publications with full YAML profiles (ownership chains, revenue re
 | **The Guardian** | 5 | UK regulatory pressure, whistleblower coverage, CSAM, DeepMind philosophy |
 | **The Atlantic** | 5 | AI slop, data center infrastructure, workplace surveillance, creativity |
 
-#### Wire Services (3 publications, 21 articles)
+#### Wire Services (3 publications, 22 articles)
 
 Reuters, Bloomberg, and AP serve as the analytical baseline for same-event comparison methodology (§13):
 
@@ -1280,7 +1280,7 @@ Reuters, Bloomberg, and AP serve as the analytical baseline for same-event compa
 |---|---|---|
 | **AP** | 1 | Mosseri addiction testimony — congressional hearing baseline coverage |
 | **Bloomberg** | 1 | Muse Image launch — structural juxtaposition (peer-scandal kicker), wire-service genre with cross-entity guilt-by-association |
-| **Reuters** | 19 | MCI data exposure, Gemini compute limits, child addiction litigation, town hall coverage, BoE regulation, insurance defense, Dalton Smith departure, EU WhatsApp AI antitrust, Zuckerberg AI agents, $1.4T penalty demand |
+| **Reuters** | 20 | MCI data exposure, Gemini compute limits, child addiction litigation, town hall coverage, BoE regulation, insurance defense, Dalton Smith departure, EU WhatsApp AI antitrust, Zuckerberg AI agents, $1.4T penalty demand, Meta AI image detector cropping failure |
 
 #### Tech Editorial (13 publications, 31 articles)
 
@@ -1368,7 +1368,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 142 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 143 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|

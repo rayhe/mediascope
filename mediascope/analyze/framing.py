@@ -2064,6 +2064,26 @@ _SELF_REFERENTIAL_INVESTIGATION_PATTERNS: list[re.Pattern] = [
         r"(?:The )?Verge|(?:The )?Information)\b",
         re.IGNORECASE,
     ),
+    # Named investigation/analysis: "a/the [PUBLICATION] analysis/investigation"
+    # Catches: "a Reuters analysis", "the WIRED investigation",
+    # "according to a Bloomberg review", "the Guardian's analysis"
+    # Wire services commonly use this form when conducting their own tests.
+    re.compile(
+        r"\b(?:a|an|the)\s+"
+        r"(?:WIRED|Wired|(?:The )?Guardian|"
+        r"(?:The )?New York Times|NYT|"
+        r"(?:The )?Atlantic|"
+        r"MIT Technology Review|"
+        r"Reuters|Bloomberg|"
+        r"(?:The )?Washington Post|"
+        r"(?:The )?Wall Street Journal|WSJ|"
+        r"Business Insider|Insider|"
+        r"(?:The )?Verge|(?:The )?Information)"
+        r"(?:'s)?\s+"
+        r"(?:investigation|analysis|review|report|findings?|"
+        r"examination|inquiry|test(?:ing)?|assessment|study)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["self_referential_investigation"] = (

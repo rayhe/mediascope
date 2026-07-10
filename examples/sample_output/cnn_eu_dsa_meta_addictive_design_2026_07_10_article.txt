@@ -1,0 +1,25 @@
+Facebook and Instagram's 'addictive design' may violate European law, EU Commission finds
+
+The European Commission says Meta must make significant changes to Facebook and Instagram to address the "addictive design" of the social media platforms.
+
+Features on the apps such as autoplay, infinitely scrolling feeds, personalized recommendations and push notifications could compromise users' "physical and mental wellbeing," the commission said in a statement Thursday. It found that Meta has failed to adequately address or warn users of those risks, and that it may be running afoul of the EU's Digital Services Act.
+
+The statement is the result of an investigation launched in 2024 into whether Meta is violating the DSA, the EU's sweeping regulations for online platforms that went into effect the year prior.
+
+The findings, which Meta disputes, follow rulings from two US juries this year that Meta has intentionally addicted and harmed young users — cases that focused on many of the same features. A number of countries, including some in the EU, are also moving to block young teens from accessing social media, after Australia implemented a world-first ban on social media for children under 16 last year.
+
+Meta spokesperson Ben Walters said in a statement that Meta disagrees with the findings, "which don't accurately take into account the significant steps we've taken to protect teens."
+
+"Since this investigation began, we rolled out Teen Accounts that automatically protect teens and put parents in control — allowing them to block access to Instagram at night and cap daily screen time at just 15 minutes," the statement reads. "We share the European Commission's commitment to providing teens with safe, positive online experiences and will continue to engage constructively with them."
+
+The European Commission's findings are preliminary, and Meta will have the opportunity to dispute them. But if Meta is found in violation of the DSA, it could be fined as much as 6% of its global revenue — which could total more than $12 billion, based on last year's earnings.
+
+The commission's findings state that Meta failed to consider the risks of autoplay, infinite scroll and personalized recommendations, which "fuel the user's urge to keep scrolling and shift the brain into 'autopilot mode,' contributing to unhealthy habits and compulsive use." The report also states that Meta disregarded information about how much time teens spend on its apps at night.
+
+Meta's efforts to mitigate those risks aren't working, the commission found. It said that time management reminders can easily be dismissed and that the app's parental control tools require parents to have some level of technical expertise and devote time to understanding them, undermining their effectiveness.
+
+Last month, a report from researchers at New York University and Northeastern University evaluating the effectiveness of social media youth safety features found that 66% of Instagram's tools were either non-functional or too hard for a young person to find. The report also called out concerns around how easily young people could dismiss Instagram's time management reminders. In response to that report, Meta said the feature was working as intended — that it was designed to be a reminder but ultimately let young people decide how much time to spend on the app, although parents could set strict time limits.
+
+Meta first rolled out its "Teen Accounts" safety settings in 2024, following years of criticism from parents and lawmakers over the app's impact on teens' mental health and well-being. The settings provide default privacy protections, time limits and content restrictions for users under the age of 18 — assuming they registered with the accurate birthdate — although 16- and 17-year-olds can opt out of some of those settings themselves. (Meta has said it's using artificial intelligence to detect when a teen is lying about their age, but it's not clear how well the technology works.)
+
+The European Commission said Meta should disable key addictive features such as autoplay and infinite scroll, which would be a major shift to how the platforms operate. It also said it should adjust its "recommender system to make it less engagement-oriented."

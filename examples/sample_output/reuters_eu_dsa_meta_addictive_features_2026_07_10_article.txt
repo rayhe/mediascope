@@ -1,0 +1,35 @@
+EU tells Instagram, Facebook to change addictive features or risk fines
+
+The EU charged Meta Platforms' (META.O) Instagram and Facebook on Friday with breaching its tech rules, with regulators targeting features they say are designed to keep users hooked and demanding changes to autoplay and infinite scroll or risk fines.
+
+The European Commission's preliminary findings follow a two-year investigation under the European Union's landmark Digital Services Act, which requires large online platforms to do more to tackle illegal and harmful content.
+
+Social media companies face growing scrutiny around the world over concerns that their platforms are contributing to a mental health crisis among children, prompting some governments to impose or consider bans for underage users.
+
+The Commission, the EU's tech regulator, said Meta had failed to adequately assess the addictive risks posed by highly personalised recommendations, autoplay and infinite scroll, which continuously feed users new content and encourage prolonged engagement.
+
+It said reels and stories on Facebook and Instagram could contribute to excessive or compulsive use.
+
+The regulator criticised Meta's measures to mitigate these risks, saying time management tools can be easily dismissed, while parental controls require significant time, effort and technical knowledge to use effectively.
+
+Meta should disable features such as autoplay and infinite scroll by default, introduce effective screen-time breaks and make its recommendation system less focused on driving engagement, the Commission said.
+
+"We disagree with these preliminary findings, which don't accurately take into account the significant steps we've taken to protect teens," Meta spokesperson Ben Walters said.
+
+"Since this investigation began, we rolled out Teen Accounts that automatically protect teens and put parents in control - allowing them to block access to Instagram at night and cap daily screen time at just 15 minutes."
+
+Meta added it would continue to engage constructively with EU regulators.
+
+"Our starting point is that, based on our findings, this design is too addictive and changes need to be made," EU tech chief Henna Virkkunen told Reuters.
+
+"The next step is either that Meta changes its design or a non compliance decision will follow."
+
+Meta, which risks a fine of up to 6% of its global annual turnover, can respond to the charges before the Commission issues a final decision in the coming months.
+
+The company last month failed in its bid to dismiss claims by 29 U.S. state attorneys general's that Facebook and Instagram are addictive to children.
+
+The EU charges against Meta mirror those brought against TikTok in February, when regulators demanded similar changes to its app.
+
+The Commission is separately investigating so-called rabbit hole effects caused by Facebook and Instagram recommendation systems, where users can be drawn into prolonged viewing by algorithmic recommendations that push them towards similar content. In another case announced in April, it told Meta to do more to prevent children under 13 from accessing its social networks or risk fines.
+
+The Commission is due to receive findings from experts on Monday that could help pave the way for a Europe-wide social media ban for teenagers that Commission President Ursula von der Leyen is expected to announce in her September state of the union address.

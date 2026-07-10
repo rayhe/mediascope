@@ -2,6 +2,41 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-10 12:00 PT — Type D: Toolkit Quality & Documentation
+
+**Focus:** Publication prefix coverage fix (count inflation bug), ARCHITECTURE.md annotated article guard, §17.2 table completeness.
+
+**Changes:**
+
+### test_structural_consistency.py
+- **BUG FIX:** `_PUB_PREFIXES` was missing 8 publication prefixes: `wsj`, `bloomberg`, `ibd`, `nypost`, `foxbusiness`, `inc`, `techlusive`, `motleyfool→motley_fool` alias. The fallback slug extraction created per-article slugs (e.g., `wsj_ai_spending_blink` and `wsj_meta_eu_dsa_addictive_apps` counted as 2 separate pubs), inflating stated count from 41 → 44
+- Added `test_architecture_annotated_article_count` guard: catches ARCHITECTURE.md file-tree inline comment drift (previously drifted from 100 to 142 without detection)
+- Test count: 97 → 98 in structural consistency (2147 → 2148 total across suite)
+
+### METHODOLOGY.md §17.2 Publication Distribution
+- Fixed distinct publication count: **44 → 41** (3 phantom pubs from fallback over-counting)
+- Updated Tracked section: MIT TR 20→23, header 55→58 articles
+- Updated Wire section: added AP (1 article), Reuters 9→19, header 2→3 pubs/10→21 articles
+- Updated Tech Editorial: Gizmodo 7→13, Memeburn 3→4, TechCrunch 1→2, added Techlusive (1), header 12→13 pubs/22→31 articles
+- Updated Financial: Barron's 1→5, Motley Fool 1→2, added WSJ (2), IBD (2), Fox Business (1), header 8→10 pubs/8→18 articles
+- Updated General Interest: iPhoneInCanada 1→2, added NY Post (1), header 6→10 pubs/12→14 articles
+- Line count: 1,774 → 1,780
+
+### ARCHITECTURE.md
+- Updated test count header: 2147 → 2148
+- Added ARCHITECTURE.md annotated article count guard to test description
+- Updated annotated article count: already at 142 (confirmed)
+
+### README.md
+- Updated test count header: 2147 → 2148
+- Updated test_structural_consistency.py per-file count: 96 → 97
+- Updated METHODOLOGY.md line count reference: 1,774 → 1,780
+- Added ARCHITECTURE.md annotated article count guard to test description
+
+**Commit:** `d81018d` — pushed to GitHub
+
+---
+
 ## 2026-07-10 10:00 PT — Type C: Ownership & Funding (Stock revaluation + $1.4T penalty + EU DSM Article 15)
 
 **Focus:** Multi-profile stock price update (Jul 10 intraday), major new litigation finding ($1.4T Meta penalty demand), and new Guardian EU conflict vector (ECJ Streamz case/Denmark intervention).
