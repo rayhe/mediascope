@@ -13235,3 +13235,95 @@ journalists:
   - https://thebreakthrough.org/people/gaby-del-valle
   - https://objectivejournalism.org/2021/01/13/qa-gaby-del-valle-on-objectivity-in-immigration-reporting/
   - https://thebaffler.com/authors/gaby-del-valle
+- career:
+  - publication: revolving-door-project
+    role: researcher
+    start: '2019'
+    end: '2020'
+    beat: money in politics, corporate corruption
+    notes: Researcher at the Revolving Door Project, a progressive watchdog tracking corporate influence in government.
+    source_url: https://therevolvingdoorproject.org/staff/daniel-boguslaw/
+  - publication: type-investigations
+    role: reporting_fellow
+    start: '2020'
+    end: '2021'
+    beat: political corruption, organized labor
+    notes: 'Reporting fellow at Type Investigations (formerly The Investigative Fund). Produced Joe Manchin coal empire investigation for The Intercept (Sep 2021).'
+    source_url: https://typeinvestigations.org/staff/daniel-boguslaw/
+  - publication: the-intercept
+    role: investigative_reporter
+    start: '2021'
+    end: '2024'
+    beat: national security, military, intelligence, political corruption
+    notes: 'Prolific investigative reporter. Key stories: Joe Manchin coal network (Sep 2021), Army PSYOP report (Apr 2024), Secret US-Israel alliance vs Iran (Apr 2024), DHS high school spying (Mar 2024), Pentagon civilian death safeguards (Mar 2024). Frequently covered intelligence community, military operations, and government surveillance. ~15+ bylined articles at The Intercept between 2021-2024.'
+    source_url: https://theintercept.com/staff/daniel-boguslaw/
+  - publication: freelance
+    role: freelancer
+    start: '2024'
+    end: '2025'
+    beat: investigations, intelligence, politics, Epstein
+    notes: 'Published across multiple outlets simultaneously: UnHerd (CIA Epstein problem, Sep 2025), The American Prospect (Epstein documents, Summers/Project 2029, Nov 2025), New Republic (ICE mass deportation from Vermont, Oct 2025), The Baffler, The Nation, The American Conservative. Also obtained and published Bohemian Grove 2023 membership list on Substack (2024), widely covered by SF Standard and other outlets. Substack: danboguslaw.substack.com.'
+    source_url: https://danboguslaw.substack.com/
+  - publication: wired
+    role: staff_writer
+    start: '2026'
+    end: present
+    beat: tech companies, AI, corporate power, investigations
+    notes: 'Joined Wired circa early 2026. By May 2026 confirmed as Wired staff (referred to as "Wired''s Daniel Boguslaw" on Fast Politics podcast May 29, 2026). Listed on Wired masthead under Business desk. KEY STORIES: "''Tell Him Hes a Piece of Shit: Metas New AI Unit Is a Total Mess" — major investigative piece using internal sources and internal discussions showing Meta Superintelligence Labs chaos. Also covered DOJ targeting anti-data center activists (May 2026 article + podcast appearance). On the Wired staff page alongside Zoë Schiffer, Paresh Dave, and Joel Khalili under Business desk.'
+  multi_publication: true
+  name: Daniel Boguslaw
+  notes: 'Investigative reporter at Wired. Education: Reed College (political science). Based in Massachusetts (Turners Falls, per Type Investigations). Twitter: @drboguslaw (~24.9K followers). Contact: danielboguslaw@proton.me, Signal: 617-922-8830. Career: Revolving Door Project → Type Investigations → The Intercept → freelance (UnHerd, American Prospect, New Republic, Baffler, Nation, American Conservative) → Wired. KEY for MediaScope: Boguslaw represents a NOTABLE CAREER MIGRATION from progressive investigative outlets (Intercept, Nation, American Prospect, Type Investigations) to Condé Nast mainstream tech media. His investigative background in political corruption, organized labor, and intelligence community → tech corporate coverage creates a distinctive ideological lens. His first major Meta piece at Wired was sharply adversarial ("piece of shit" in headline, "total mess" framing). His cross-ideological publication history (American Prospect AND American Conservative, Intercept AND UnHerd) suggests anti-corporate-power framing that transcends left-right axis. Worth tracking for: framing of corporate chaos, use of anonymous internal sources, adversarial tone calibration vs other Wired Meta reporters.'
+  source_urls:
+  - https://therevolvingdoorproject.org/staff/daniel-boguslaw/
+  - https://typeinvestigations.org/staff/daniel-boguslaw/
+  - https://danboguslaw.substack.com/
+  - https://muckrack.com/daniel-boguslaw
+- career:
+  - publication: faith-in-public-life
+    role: communications_intern
+    start: '2011'
+    end: '2012'
+    beat: faith advocacy, politics
+    notes: Communications intern at Faith in Public Life, a faith advocacy group in Washington, DC. While at Princeton.
+  - publication: moment-magazine
+    role: editorial_intern
+    start: '2012'
+    end: '2012'
+    beat: Jewish culture, politics, religion
+    notes: Editorial intern at Moment Magazine, focusing on Jewish culture, politics, and religion.
+  - publication: agri-pulse
+    role: associate_editor
+    start: 2013-02
+    end: '2015'
+    beat: agriculture policy, farm economics, food policy
+    notes: 'Named associate editor Feb 2013 after starting as fall 2012 intern. Covered farm, food, and rural issues on Capitol Hill. First full-time journalism role.'
+    source_url: https://www.agri-pulse.com/articles/1698-agri-pulse-communications-inc-hires-new-associate-editor
+  - publication: bloomberg-citylab
+    role: writer
+    start: '2015'
+    end: '2016'
+    beat: urban planning, cities, transportation
+    notes: 'Writer at CityLab, then still an Atlantic property (later acquired by Bloomberg Media in 2019). Covered urban solutions and city infrastructure. Also known as Atlantic Cities.'
+    source_url: https://www.colorado.edu/cwa/aarian-marshall
+  - publication: bloomberg
+    role: editorial_fellow
+    start: '2014'
+    end: '2015'
+    beat: general assignment
+    notes: Editorial fellow at Bloomberg. Per RocketReach employment record.
+    source_url: https://rocketreach.co/aarian-marshall-email_44832389
+  - publication: wired
+    role: staff_writer
+    start: '2016'
+    end: present
+    beat: transportation, cities, EVs, autonomous vehicles, automotive industry
+    notes: 'Long-tenured Wired staff writer since 2016 (~10 years). Beat: transportation, cities, and automotive. Key coverage areas: EV charging infrastructure, subscription-based car features, autonomous vehicle ethics (MIT Moral Machine coverage, 2018), Tesla/Elon Musk, EV battery technology. Regular guest on WIRED''s Gadget Lab / Uncanny Valley podcast. Also published via Ars Technica and WIRED en Español syndication. Contact: aarian_marshall@wired.com. Twitter: @AarianMarshall.'
+    source_url: https://www.wired.com/author/aarian-marshall/
+  multi_publication: true
+  name: Aarian Marshall
+  notes: 'Staff writer at Wired covering transportation and cities since 2016. Education: Princeton University (A.B., Religion and Urban Studies, 2012). Based in San Diego. Career: Agri-Pulse → Bloomberg/CityLab → Wired. Also appeared in Bloomberg News, The Atlantic, Yahoo Tech, Ars Technica, Quartz, Mother Jones. KEY for MediaScope: Marshall is one of Wired''s longest-tenured current staff writers. Her transportation/cities beat means she does not typically cover Meta directly, but her coverage of Tesla, autonomous vehicles, and EV infrastructure provides comparative data for how Wired frames non-Meta tech companies (especially Tesla/Musk). Interesting Atlantic CityLab → Wired pipeline predates Bloomberg''s CityLab acquisition. Her coverage style is more explanatory/analytical than adversarial — useful as a framing baseline within Wired to compare against the security/investigations desk''s more adversarial Meta coverage.'
+  source_urls:
+  - https://www.colorado.edu/cwa/aarian-marshall
+  - https://rocketreach.co/aarian-marshall-email_44832389
+  - https://www.agri-pulse.com/articles/1698-agri-pulse-communications-inc-hires-new-associate-editor
+  - https://muckrack.com/aarian-marshall

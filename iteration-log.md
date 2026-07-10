@@ -17921,3 +17921,27 @@ Expand The Verge coverage from 25 to 34 tracked journalists using 2026 masthead 
 
 **Commit:** `d4177d8` — pushed to GitHub
 **Sources:** thevergetoday.pages.dev (2026 masthead), Wikipedia (Verge ownership: Vox Media → PMX Global/Penske 2026), Columbia Journalism Review (Jeong NYT hire/controversy), Nieman Lab (Feiner CNBC→Verge), The Verge staff pages/bylines, Muck Rack profiles, LinkedIn (career verification)
+
+---
+
+### 2026-07-10 00:00 PT — Type B (Journalist/Publication Research)
+
+**Focus:** Wired staff expansion — added 2 new journalist profiles from Wired masthead review.
+
+**New profiles:**
+1. **Daniel Boguslaw** — 5 career steps: Revolving Door Project (researcher, 2019-20) → Type Investigations (reporting fellow, 2020-21) → The Intercept (investigative reporter, 2021-24) → freelance/UnHerd/American Prospect/New Republic (2024-25) → Wired (staff writer, 2026-present). Key Meta story: "'Tell Him He's a Piece of Shit': Meta's New AI Unit Is a Total Mess." Investigative background in political corruption/intelligence → tech corporate coverage. Sources: Revolving Door Project staff page, Type Investigations staff page, BuzzSumo/Muck Rack profiles, Fast Politics podcast (May 29, 2026).
+2. **Aarian Marshall** — 6 career steps: Faith in Public Life → Moment Magazine → Agri-Pulse → Bloomberg/CityLab → Bloomberg editorial fellow → Wired (staff writer since ~2016, ~10 years). Transportation/cities beat. Sources: Agri-Pulse hire announcement, CU Boulder CWA profile, RocketReach, Muck Rack.
+
+**Fixes:**
+- YAML quote escaping: Boguslaw's notes field had unescaped single quotes inside single-quoted YAML string ('"Tell Him He''s" pattern). Fixed by doubling quotes.
+- Updated `careers_demo.py`: 203→205 tracked journalists (missed in prior doc update round)
+- Updated `README.md`: 622→630 auto-detected migrations (2 places)
+- Updated `docs/EDITORIAL_HISTORIES.md`: 622→630 migrations
+
+**Counts:**
+- Journalists: 205 (was 203)
+- Multi-publication: 53 (was 53 — both new profiles are multi-pub but the flagged count was already correct from prior updates)
+- Auto-detected migrations: 630 (was 622)
+- Tests: 2,147 passed (3 were failing before doc count fixes, all pass now)
+
+**Sources:** Wired masthead (wired.com/about/), Revolving Door Project (therevolvingdoorproject.org/staff/daniel-boguslaw/), Type Investigations (typeinvestigations.org/staff/daniel-boguslaw/), Muck Rack (muckrack.com/daniel-boguslaw, muckrack.com/aarian-marshall-2), Agri-Pulse (agri-pulse.com, hire announcement), CU Boulder CWA profile, Fast Politics podcast (May 29, 2026)
