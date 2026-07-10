@@ -9,7 +9,7 @@
 During article analysis, scan the text for trigger keywords and structural patterns listed below. Each device name links to the detailed entry in METHODOLOGY.md. The **tier** column indicates detection method:
 
 - **C** = Core (10 types) — fundamental editorial techniques, pattern-matched
-- **E** = Extended (73 types) — discovered from real article analysis, pattern-matched
+- **E** = Extended (74 types) — discovered from real article analysis, pattern-matched
 - **S** = Structural (7 types) — detected via post-pass heuristics over full article structure
 
 ---
@@ -83,9 +83,9 @@ Devices that frame entities, companies, or individuals through power dynamics, c
 | 34 | **Competitive Positioning** | E | Competitor explicitly elevated over subject entity | "good news for [competitor]," "buy from a more reputable company" |
 | 35 | **Competitive Deficit** | E | Multiple named competitors enumerated to amplify subject's failure | "failed to rival [A]'s X, [B]'s Y, and [C]'s Z" — pile-on effect |
 | 36 | **Competitive Displacement** | E | Entity A fills vacuum left by Entity B's retreat/pivot | "at a time when X is reorienting," "filling the void left by" |
-| 38 | **Industry Normalization Undercut** | E | Acknowledges industry-wide practice, then singles out target | "Other companies also X, but [Target] is especially…" |
-| 39 | **Latecomer Narrative** | E | Company framed as entering a space after competitors | "joining the race," "playing catch-up," "copycat," "me-too product" |
-| 40 | **Refusal Amplification** | E | Entity's non-cooperation emphasized beyond its news value | "declined," "refused," positioned to imply guilt |
+| 37 | **Industry Normalization Undercut** | E | Acknowledges industry-wide practice, then singles out target | "Other companies also X, but [Target] is especially…" |
+| 38 | **Latecomer Narrative** | E | Company framed as entering a space after competitors | "joining the race," "playing catch-up," "copycat," "me-too product" |
+| 39 | **Refusal Amplification** | E | Entity's non-cooperation emphasized beyond its news value | "declined," "refused," positioned to imply guilt |
 
 ---
 
@@ -148,11 +148,11 @@ Devices that shape how regulatory, legal, and government actions are presented.
 | 63 | **Regulatory Favoritism** | E | Government oversight framed as picking winners and losers | "picking winners and losers," "favorable treatment," "tilting the playing field" |
 | 64 | **Geopolitical Regulatory Pressure** | E | Regulatory tensions framed as geopolitical confrontation | Embassy/diplomatic submissions, sovereignty/defiance rhetoric |
 | 65 | **Strategic Disclosure** | E | Party in dispute discloses opponent's position to frame it as extreme | "Meta said in a recent court filing" — framing originates with disclosing party |
-| 84 | **Default Burden Privacy** | E | Default-on feature framed as consent violation by emphasising opt-out burden | "enabled by default," "opt-out," "users may not know," "without consent" |
-| 85 | **Editorial Cross-Promotion** | E | All-caps interstitial headline blocks importing linked headline framing into otherwise balanced reporting | All-caps blocks 5+ words; "CLICK HERE TO GET THE FOX BUSINESS APP"; imports adversarial linked headlines |
-| 86 | **Emotion Attribution** | E | Editorial attribution of emotional states never expressed by the subject — upgrading factual observations into disappointment, frustration, or alarm | "[Name] is disappointed that"; "leading investors to fret"; "[Name] is alarmed by" |
-| 87 | **Litigation Cascade** | E | Stacking multiple legal proceedings, case counts, plaintiff numbers to create avalanche effect | "N states have banded/sued"; "more than N,NNN cases pending"; "Another N states also brought claims" |
-| 88 | **Defensive Verb Framing** | E | Loaded attribution verbs framing subject as reactive or embattled | "attempted yet failed to"; "was forced/compelled to"; "grudgingly acknowledged"; "scrambled/struggled to"; "has been plagued by" |
+| 66 | **Default Burden Privacy** | E | Default-on feature framed as consent violation by emphasising opt-out burden | "enabled by default," "opt-out," "users may not know," "without consent" |
+| 67 | **Editorial Cross-Promotion** | E | All-caps interstitial headline blocks importing linked headline framing into otherwise balanced reporting | All-caps blocks 5+ words; "CLICK HERE TO GET THE FOX BUSINESS APP"; imports adversarial linked headlines |
+| 68 | **Emotion Attribution** | E | Editorial attribution of emotional states never expressed by the subject — upgrading factual observations into disappointment, frustration, or alarm | "[Name] is disappointed that"; "leading investors to fret"; "[Name] is alarmed by" |
+| 69 | **Litigation Cascade** | E | Stacking multiple legal proceedings, case counts, plaintiff numbers to create avalanche effect | "N states have banded/sued"; "more than N,NNN cases pending"; "Another N states also brought claims" |
+| 70 | **Defensive Verb Framing** | E | Loaded attribution verbs framing subject as reactive or embattled | "attempted yet failed to"; "was forced/compelled to"; "grudgingly acknowledged"; "scrambled/struggled to"; "has been plagued by" |
 
 ---
 
@@ -162,13 +162,13 @@ Devices that construct or redirect overarching narrative frames.
 
 | # | Device | Tier | One-Line Description | Key Triggers |
 |---|--------|------|----------------------|-------------|
-| 66 | **False Balance** | C | Fringe views presented as equivalent to mainstream | "some say... others say" with asymmetric evidence |
-| 67 | **Selective Omission Signal** | C | Notable absences detectable in text | "declined to comment" without context, missing competitor comparison |
-| 68 | **Straw Man** | E | Entity's position misrepresented to make it easier to attack | Simplified-claim-then-rebut constructions |
-| 69 | **Narrative Reframing** | E | Existing narrative acknowledged then dismissed as incomplete | "That concern is fair. It is also incomplete," "The lazy version says" |
-| 70 | **Editorial Deflation** | E | Ambitious vision built up across paragraphs, then punctured | "That's the idea, anyway," "or so X claims," "if it ever actually works" |
-| 71 | **Prescriptive Solutionism** | E | Accountability story transformed into management playbook | "actionable steps for IT leaders," "executives must balance/evaluate" |
-| 83 | **Tempering Coda** | S | Article ends by contextualizing or walking back its own headline-level framing | Final 25% contains explicit moderating language ("likely far higher than," "in context") contradicting headline severity |
+| 71 | **False Balance** | C | Fringe views presented as equivalent to mainstream | "some say... others say" with asymmetric evidence |
+| 72 | **Selective Omission Signal** | C | Notable absences detectable in text | "declined to comment" without context, missing competitor comparison |
+| 73 | **Straw Man** | E | Entity's position misrepresented to make it easier to attack | Simplified-claim-then-rebut constructions |
+| 74 | **Narrative Reframing** | E | Existing narrative acknowledged then dismissed as incomplete | "That concern is fair. It is also incomplete," "The lazy version says" |
+| 75 | **Editorial Deflation** | E | Ambitious vision built up across paragraphs, then punctured | "That's the idea, anyway," "or so X claims," "if it ever actually works" |
+| 76 | **Prescriptive Solutionism** | E | Accountability story transformed into management playbook | "actionable steps for IT leaders," "executives must balance/evaluate" |
+| 77 | **Tempering Coda** | S | Article ends by contextualizing or walking back its own headline-level framing | Final 25% contains explicit moderating language ("likely far higher than," "in context") contradicting headline severity |
 
 ---
 
@@ -178,12 +178,12 @@ Devices specific to workforce, employment, and organizational coverage.
 
 | # | Device | Tier | One-Line Description | Key Triggers |
 |---|--------|------|----------------------|-------------|
-| 72 | **Worker Replacement Irony** | E | Workers who built/trained the AI now replaced by it | "trained AI models now face replacement by those same systems" |
-| 73 | **Two-Tier Treatment** | E | Full-time vs. contractor treatment contrasted side by side | "[employees] receive X... [contractors] get far less" |
-| 74 | **Talent Hemorrhage** | E | Multiple departures cataloged in sequence to build exodus narrative | "left for [Company]... recently left... is also leaving" |
-| 75 | **Repeated Disruption** | E | Language implying chronic organizational instability | "shakes up... again," "yet another restructuring," "months of tumult" |
-| 76 | **Absence as Evidence** | E | Non-action or omission framed as proof of guilt | "the audit that never happened," "has never disclosed," "failed to act" |
-| 77 | **Silence as Guilt** | E | Non-response explicitly treated as confession | "That silence is its own answer," "the lack of denial speaks volumes" |
+| 78 | **Worker Replacement Irony** | E | Workers who built/trained the AI now replaced by it | "trained AI models now face replacement by those same systems" |
+| 79 | **Two-Tier Treatment** | E | Full-time vs. contractor treatment contrasted side by side | "[employees] receive X... [contractors] get far less" |
+| 80 | **Talent Hemorrhage** | E | Multiple departures cataloged in sequence to build exodus narrative | "left for [Company]... recently left... is also leaving" |
+| 81 | **Repeated Disruption** | E | Language implying chronic organizational instability | "shakes up... again," "yet another restructuring," "months of tumult" |
+| 82 | **Absence as Evidence** | E | Non-action or omission framed as proof of guilt | "the audit that never happened," "has never disclosed," "failed to act" |
+| 83 | **Silence as Guilt** | E | Non-response explicitly treated as confession | "That silence is its own answer," "the lack of denial speaks volumes" |
 
 ---
 
@@ -193,8 +193,8 @@ Devices specific to consumer technology, product reviews, and subscription/prici
 
 | # | Device | Tier | One-Line Description | Key Triggers |
 |---|--------|------|----------------------|-------------|
-| 78 | **Consumer Ownership** | E | Corporate restriction framed as violating what consumer "already paid for" | "hardware you've already paid for," "runs entirely on the device" + "subscription" |
-| 79 | **Loss-Leader Framing** | E | Hardware sold at cost to capture subscription revenue | "sold at cost," "user base grows, subscription service grows revenue" |
+| 84 | **Consumer Ownership** | E | Corporate restriction framed as violating what consumer "already paid for" | "hardware you've already paid for," "runs entirely on the device" + "subscription" |
+| 85 | **Loss-Leader Framing** | E | Hardware sold at cost to capture subscription revenue | "sold at cost," "user base grows, subscription service grows revenue" |
 
 ---
 
@@ -204,9 +204,9 @@ Devices specific to financial journalism, earnings coverage, and analyst reporti
 
 | # | Device | Tier | One-Line Description | Key Triggers |
 |---|--------|------|----------------------|-------------|
-| 80 | **Financial Reassurance** | E | Negative operational news immediately reframed as positive market signal | "could soothe concerns," "easing fears," "investors shrugged off" |
-| 81 | **Historical Legitimation** | E | Temporally distant positive data inserted to dilute fresh negative news | "reported [quarter] results ... beat/topped expectations" in negative-news article |
-| 82 | **Marginal Endorsement** | E | Analyst action of negligible magnitude presented as meaningful signal | Price target raise of <1% framed as "analysts remain bullish" |
+| 86 | **Financial Reassurance** | E | Negative operational news immediately reframed as positive market signal | "could soothe concerns," "easing fears," "investors shrugged off" |
+| 87 | **Historical Legitimation** | E | Temporally distant positive data inserted to dilute fresh negative news | "reported [quarter] results ... beat/topped expectations" in negative-news article |
+| 88 | **Marginal Endorsement** | E | Analyst action of negligible magnitude presented as meaningful signal | Price target raise of <1% framed as "analysts remain bullish" |
 | 89 | **Market Verdict** | E | Market drops/investor behavior framed as editorial judgment on strategy | "fell X% as/amid concerns," "investors have spoken," "wiping $X in value" |
 | 90 | **Overbuilding Narrative** | E | Infrastructure spending framed as excess, bubble, or unsustainable arms race | "spending war," "arms race," "overcapacity," "bubble," "when will someone blink" |
 | 91 | **Heritage Nostalgia** | E | Age, generational continuity, or historical significance establishing emotional stakes for disruption | "141-year-old brick manufacturer," "fifth generation working at the company," "iconic buildings," "family-owned since 1892" |
@@ -239,9 +239,9 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 | Tier | Count | Detection Method |
 |---|---|---|
 | Core | 10 | Pattern matching — fundamental editorial techniques |
-| Extended | 73 | Pattern matching — discovered from real article analysis |
+| Extended | 74 | Pattern matching — discovered from real article analysis |
 | Structural (post-pass) | 7 | Full-article heuristics (position, accumulation, structure) |
-| **Total** | **90** | |
+| **Total** | **91** | |
 
 ---
 

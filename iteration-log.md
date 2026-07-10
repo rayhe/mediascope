@@ -2,6 +2,70 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-09 17:00 PT — Type D: Toolkit Quality & Documentation
+
+**Focus:** FRAMING_REFERENCE.md numbering/count fixes, new conflict disclosure example, ARCHITECTURE.md updates.
+
+**Changes:**
+
+### FRAMING_REFERENCE.md — Numbering & Count Fixes
+- **Fixed numbering gap:** #37 was missing (jumped from #36 Competitive Displacement to #38 Industry Normalization Undercut). Renumbered #38→#37, #39→#38, #40 (Refusal Amplification)→#39.
+- **Fixed duplicate #40:** Both "Refusal Amplification" and "Analogy/Metaphor" were numbered #40. After fix, Refusal Amplification is #39, Analogy/Metaphor is sole #40.
+- **Fixed out-of-sequence Category 8 devices:** #84-88 (Default Burden Privacy through Defensive Verb Framing) renumbered to #66-70 to follow sequentially after #65 Strategic Disclosure.
+- **Fixed Category 9 numbering:** #66-71,#83 renumbered to #71-77.
+- **Fixed Categories 10-12 numbering:** Cascading renumber from #78-91.
+- **Fixed tier count table:** Extended was listed as 73, corrected to 74. Total was listed as 90, corrected to 91. Both now match the 91 unique device types in `framing.py` (10 Core + 74 Extended + 7 Structural).
+- **Fixed "How to Use" section:** Updated Extended tier description from "73 types" to "74 types".
+- **Verification:** All 91 devices now numbered sequentially 1-91 with no gaps or duplicates. Confirmed via `grep -oP` on the fixed file.
+
+### New Example: `conflict_disclosure_demo.py`
+- Added `examples/conflict_disclosure_demo.py` — demonstrates the conflict disclosure pipeline:
+  - Ownership chain mapping (Condé Nast → Advance Publications hierarchy)
+  - Revenue relationship analysis (Meta has NO revenue relationship with Condé Nast)
+  - Litigation funding connections
+  - Full and social-media format disclosure generation
+  - Cross-publication conflict comparison (5 pubs)
+  - Positive-conflict example (Wired → OpenAI, where revenue tie creates favorable-coverage incentive)
+- Key insight surfaced in demo: absence of a revenue relationship is itself a conflict signal
+
+### ARCHITECTURE.md Updates
+- Added `conflict_disclosure_demo.py` to file layout
+- Added `the-verge.yaml` to profiles listing (was present in repo but missing from layout)
+- Added documentary source detection to `sources.py` module description
+
+### README.md Updates
+- Added `conflict_disclosure_demo.py` to examples table with description
+
+**Tests:** 2,129 passed, 0 failed (97 structural consistency tests all green, including all count guards, numbering guards, and cross-reference consistency checks)
+**Commit:** (pending push)
+**Verification method:** Extracted all 91 device types from `framing.py` code (84 pattern-matched + 7 structural post-pass), cross-referenced against FRAMING_REFERENCE.md sequential numbering — confirmed 1:1 match.
+
+**Cumulative stats:** ~10,356 profile lines, 192 journalists, 595 auto-detected migrations, 360+ publications, 91 framing device types (10C/74E/7S), 2,129 tests, 10 example scripts
+
+## 2026-07-09 16:00 PT — Type C: Ownership & Funding Deep Dive (Atlantic / Emerson Collective)
+
+**Focus:** Stock revaluation, NYT sanctions motion, OpenAI financial context, political tension conflict.
+
+**Changes:**
+- **Atlantic profile (atlantic.yaml, 1,456 lines):**
+  - Stock revaluation: AAPL $308.63→$316.22 (+2.46%), LPJ holding ~$17.2B+; DIS $99.50→$96.17 (-3.35%), 40.3M shares = ~$3.87B
+  - Added NYT sanctions motion (Jul 9): publishers allege OpenAI lied about content-search capability, deleted billions of ChatGPT conversations — Atlantic's licensing partner accused of lying to federal court about capabilities relevant to Atlantic's deal
+  - OpenAI financial context expanded: ~$2B/mo revenue, 900M+ weekly users, $852B valuation, confidential IPO filing Jun 2026, BofA $520M credit line (Jul 8), GPT-5.6 gov-approved Jul 10 launch, 5% government equity proposal (~$42.6B) to Trump admin, Anthropic surpassed OpenAI at $965B-$1.09T
+  - New known_conflict: political_investment_tension — OpenAI's Trump admin equity proposal vs LPJ's 100% Democratic giving record; LPJ sits on Partnership for San Francisco with Altman
+  - PMC Azure OpenAI enterprise agreement cross-reference (PMC's second OpenAI-ecosystem financial tie)
+  - 15 known_conflicts total
+- **Wired profile (wired.yaml):** RDDT $195.47→$200.31 (+2.48%), Advance stake ~$8.45B
+- **Documentation consistency fixes:**
+  - README.md: migrations 613→595, publications 330+→360+
+  - EDITORIAL_HISTORIES.md: same count updates
+  - careers_demo.py: journalist count alignment
+
+**Tests:** 2,129 passed, 0 failed (97 structural consistency tests all green)
+**Commit:** `f19e05b` — pushed to GitHub
+**Sources:** Reuters (NYT sanctions Jul 9), Bloomberg Law (NYT sanctions), NBC Palm Springs (OpenAI equity), Finnhub (AAPL/DIS/RDDT prices Jul 9), MarketBeat historical
+
+**Cumulative stats:** ~10,356 profile lines, 192 journalists, 595 auto-detected migrations, 360+ publications, 15 Atlantic known_conflicts, 2,129 tests
+
 ## 2026-07-09 15:00 PT — Type B: Journalist/Publication Research (MIT Technology Review Staff)
 
 **Focus:** Expanding MIT TR journalist coverage — staff, editors, and freelance contributors not previously tracked.

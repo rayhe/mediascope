@@ -209,6 +209,7 @@ Journalist YAML ──→ Career Tracker ──→ Migration Detection
 - **Source stance analysis**: Classifies each source as adversarial, supportive, or neutral based on quote content + attribution verbs. Computes `stance_balance` from −1.0 (all adversarial) to +1.0 (all supportive)
 - **Outsourced intensity detection**: Splits text into quoted vs. editorial prose, measures emotional intensity in each. High outsourced ratio (>0.5) means the journalist delegates emotional impact to sources while maintaining measured prose — a sophisticated editorial technique that defeats lexical sentiment analysis
 - **Power asymmetry framing detection**: Dollar-magnitude near individual vulnerability, "army of lawyers" language, David vs Goliath constructions, fine-per-violation-could-bankrupt patterns
+- **Documentary source detection**: Identifies cited artifacts — recordings, leaked documents, court filings, internal memos, regulatory orders — as `source_type="documentary"`, distinguishing them from named and anonymous human sources for accurate authority scoring and source-type breakdowns
 
 ### `topics.py`
 - TF-IDF weighted keyword classification into 28 topic buckets
@@ -392,6 +393,7 @@ mediascope/
 │   ├── guardian.yaml
 │   ├── atlantic.yaml
 │   ├── mit-tech-review.yaml
+│   ├── the-verge.yaml
 │   └── careers/
 │       ├── journalists.yaml
 │       └── editorial_changes.yaml
@@ -406,6 +408,7 @@ mediascope/
 │   ├── quick_start.py
 │   ├── full_pipeline.py
 │   ├── same_event_comparison.py
+│   ├── conflict_disclosure_demo.py
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
