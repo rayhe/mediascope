@@ -1191,6 +1191,14 @@ def extract_sources(text: str) -> list[SourceMention]:
             if _CALLED_NAMING_LOOKBEHIND.search(pre_ctx):
                 continue
 
+        # Skip possessive forms — "told Barron's" is a publication or
+        # brand reference (Barron's, Forbes's), not a person being quoted.
+        # No human source attribution ever appears as "verb Name's that…".
+        # Discovered in Barron's "Gigawatt Jolt" article (Jul 2026).
+        match_end = m.end()
+        if match_end < len(text) and text[match_end] in ("'", "\u2019"):
+            continue
+
         seen_names.add(name)
 
         ctx_start = max(0, m.start() - 100)
@@ -1349,7 +1357,7 @@ def extract_sources(text: str) -> list[SourceMention]:
     # signals about the target entity's engagement with the reporter.
     no_comment_patterns: list[re.Pattern] = [
         re.compile(
-            r"\b(?:did not|declined to|chose not to|refused to|would not|couldn't)"
+            r"\b(?:did not|didn't|declined to|chose not to|refused to|would not|wouldn't|couldn't)"
             r" (?:immediately )?"
             r"(?:respond|comment|reply|return|answer|provide)"
             r"(?: to)?"
@@ -1479,14 +1487,14 @@ def extract_sources(text: str) -> list[SourceMention]:
     # rather than using the refusal phrase itself as the source name.
     _NO_COMMENT_SUBJECT_RE = re.compile(
         r"\b([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)\s+"
-        r"(?:did not|declined to|chose not to|refused to|would not|couldn't)",
+        r"(?:did not|didn't|declined to|chose not to|refused to|would not|wouldn't|couldn't)",
     )
     # Compound no-comment subjects: "X and Y did not respond"
     _NO_COMMENT_COMPOUND_RE = re.compile(
         r"\b([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)"
         r"\s+and\s+"
         r"([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)*)\s+"
-        r"(?:did not|declined to|chose not to|refused to|would not|couldn't)",
+        r"(?:did not|didn't|declined to|chose not to|refused to|would not|wouldn't|couldn't)",
     )
     for pat in no_comment_patterns:
         for m in pat.finditer(text):
@@ -1955,6 +1963,7 @@ def extract_sources(text: str) -> list[SourceMention]:
         "Axios", "Politico", "Vox", "Gizmodo", "Engadget",
         "9to5Mac", "MacRumors", "The Register", "Futurism",
         "Svenska Dagbladet", "TheWrap", "Digital Trends",
+        "Barron's",
     }
     _pub_alt = "|".join(re.escape(p) for p in sorted(_KNOWN_PUBS, key=len, reverse=True))
     pub_cite_patterns: list[re.Pattern] = [

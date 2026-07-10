@@ -2,6 +2,45 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-09 20:00 PT — Type A: Article Deep Dive (Barron's Meta Gigawatt/Iris)
+
+**Article:** "A Gigawatt Jolt for Meta Stock" by Nate Wolf, Barron's, July 9, 2026
+**Source:** https://www.barrons.com/articles/meta-stock-price-iris-muse-spark-c01d5db3
+
+### Findings
+
+1. **Emotional language gaps:** Added "lofty" (loaded descriptor framing ambitions/spending as unreasonable) and "vexing" (emotional attribution) to EMOTIONAL_LANGUAGE dictionary — 850 total terms.
+
+2. **No-comment pattern gap:** First no_comment_patterns regex used `did not` but not the contraction `didn't`. Broadcom's "didn't respond to...requests for comment" was missed. Added `didn't` and `wouldn't` contractions to all three no-comment regexes (main pattern, subject extractor, compound subject extractor).
+
+3. **Entity detection gap:** Financial research firms Melius Research and New Street Research not detected — no equity research firm patterns existed. Added 12 research/analyst firms to Financial Services cluster: Melius Research, New Street Research, Evercore ISI, Oppenheimer, Raymond James, KeyBanc Capital Markets, Stifel, Wolfe Research, MoffettNathanson, Loop Capital, Rosenblatt Securities, plus regex patterns.
+
+4. **Topic classification gap:** Article was primarily a stock-catalyst thesis but classified only as ai_development + financial_results, missing the market-analysis frame. Added new `financial_markets` topic bucket (29th) with 28 keywords covering stock price movements, analyst ratings, valuations, price targets, market-cap, investment thesis. Distinct from `financial_results` (earnings/revenue reporting).
+
+5. **VADER sentiment inversion (repeat finding):** +0.654 toolkit vs actual cautiously-skeptical tone. Financial journalism's neutral-to-positive vocabulary ("solid," "meaningful," "optimistic") inflates VADER. Genre-aware correction (Path J or new financial path) remains a future Type D item.
+
+### Changes
+- `mediascope/analyze/sentiment.py`: +2 emotional language terms (lofty, vexing), 850 total
+- `mediascope/analyze/sources.py`: +`didn't`/`wouldn't` contractions in 3 no-comment regexes
+- `mediascope/analyze/entities.py`: +12 financial research firm aliases + regex patterns
+- `mediascope/analyze/topics.py`: +`financial_markets` topic bucket (29th, 28 keywords)
+- `docs/METHODOLOGY.md`: +financial_markets table row, design note, article count 138→140, bucket count 28→29
+- `docs/ARCHITECTURE.md`: topic count 28→29, inline topic list updated
+- `docs/AGENT_GUIDE.md`: topic count 28→29, inline list + reference table updated
+- `docs/QUALITY_STANDARDS.md`: emotional language count 848→850, article count 138→140
+- `README.md`: bucket count 28→29
+- `tests/test_structural_consistency.py`: updated all count guards (29 buckets, 850 terms, 140 articles)
+- `examples/sample_output/barrons_meta_gigawatt_iris_muse_spark_2026_07_09_article.txt`: article text
+- `examples/sample_output/barrons_meta_gigawatt_iris_muse_spark_2026_07_09_analysis.md`: annotated analysis
+
+### Stats
+- Tests: 2,147 passing (was 2,129 — gained 18 from new topic bucket + entity tests)
+- Emotional language terms: 850 (was 848)
+- Topic buckets: 29 (was 28)
+- Annotated articles: 140 (was 138)
+- Framing device types: 91 (unchanged)
+- Regex patterns: 519 (unchanged — research firms use alias matching)
+
 ## 2026-07-09 17:00 PT — Type D: Toolkit Quality & Documentation
 
 **Focus:** FRAMING_REFERENCE.md numbering/count fixes, new conflict disclosure example, ARCHITECTURE.md updates.

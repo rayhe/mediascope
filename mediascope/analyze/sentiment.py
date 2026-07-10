@@ -614,6 +614,10 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "splashy departure", "splashy",
     # Resignation/normalization framing (Jul 9)
     "grown accustomed",
+    # Financial editorial loaded terms — "lofty" frames ambitions/spending
+    # as unreasonable, "vexing" frames problems as frustrating. Discovered
+    # in Barron's Meta gigawatt/Iris article analysis (Jul 9).
+    "lofty", "vexing",
 ]
 
 # Passive/victim vs. active/powerful framing indicators

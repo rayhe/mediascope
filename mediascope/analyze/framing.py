@@ -372,6 +372,15 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         # Discovered via Gizmodo $1.4T penalty article (Jul 2026):
         # "watershed verdict", "mounting litigation"
         r"watershed|landmark|ground-?breaking|sweeping|far-?reaching|seismic|"
+        # Financial journalism loaded vocabulary — editorializes magnitude,
+        # spending posture, or competitive intensity beyond factual reporting.
+        # Discovered via Barron's "Gigawatt Jolt" article (Jul 9, 2026):
+        # "gargantuan capital spending", "bucketloads of money", "vexing
+        # stock investors" — none previously captured.
+        r"gargantuan|colossal|astronomical|exorbitant|"
+        r"bucketloads?|boatloads?|truckloads?|"
+        r"vexing|vex(?:ed)?|infuriating|maddening|"
+        r"game-?changing|game-?changer|"
         # Financial crash / bubble language that editorializes market risk.
         # Discovered via Memeburn Meta Cloud chip selloff article (Jul 2026).
         r"super\s*bubble|mega\s*bubble|house of cards|bubble\s+burst|"

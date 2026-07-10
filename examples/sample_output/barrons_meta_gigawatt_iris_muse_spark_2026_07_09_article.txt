@@ -1,0 +1,29 @@
+Title: A Gigawatt Jolt for Meta Stock
+Publication: Barron's (Dow Jones / News Corp)
+Author: Nate Wolf
+Date: July 9, 2026
+URL: https://www.barrons.com/articles/meta-stock-price-muse-ai-model-broadcom-chips-cd81befb
+
+Meta Platforms' lofty artificial-intelligence investments are vexing stock investors, but the market got some early signs of the company's AI progress on Thursday.
+
+Meta wants to double its overall computing capacity to 14 gigawatts in 2027 from seven this year, Reuters reported Thursday, citing an internal memo. As if that weren't enough, the company also plans to begin producing its first-ever AI chip starting in September, with design help from Broadcom, the memo said.
+
+Meta declined to comment on the report. Broadcom didn't respond to Barron's requests for comment.
+
+Hours later, the plans began to make more sense. Meta unveiled its latest AI model, Muse Spark 1.1, and launched a preview of a new API platform, where developers can pay to use the model. CEO Mark Zuckerberg broke a three-year hiatus from social-media platform X to announce the news.
+
+Wall Street, which has had reservations about Meta's gargantuan capital spending, seemed pleased: The stock was up 1.7% in afternoon trading. Shares had tumbled 8.5% this year entering Thursday.
+
+Broadcom and Meta extended an existing partnership in April, so the chip-making plans aren't a surprise. That 14-gigawatt figure is the real jolt. Analysts at Morgan Stanley estimated last week that Meta would add four gigawatts in new capacity next year, much lower than the seven gigawatts Zuckerberg is reportedly eyeing.
+
+Meta will need capacity if it has designs on a large API business, which typically involves enterprises paying by the token to build tools atop a foundational AI model.
+
+Adding an incremental seven gigawatts "probably means Meta thinks they have a good model coming," Melius Research analyst Ben Reitzes told Barron's about an hour before the Muse Spark release.
+
+Whether Muse Spark 1.1 is that game-changing frontier model is an open question. Meta is charging $1.25 per million input tokens and $4.25 per million output tokens for the API. That is above OpenAI's entry-level GPT-4.5-mini model, but significantly lower than its more advanced GPT-5.5, which costs $5 per 1 million input tokens and $30 per 1 million output tokens.
+
+Either way, progress on Muse Spark may make investors more comfortable with the bucketloads of money Meta is spending on compute.
+
+Meta expects to deploy $125 billion to $145 billion in capital investments this year, which analysts estimate will send its free cash flow into the red. Uncertainty about where that figure will land in 2027 has left investors anxious, New Street Research analyst Dan Salmon said last week.
+
+Seven gigawatts of new capacity — each gigawatt coming in at tens of billions of dollars apiece — would suggest those investments will remain quite high.

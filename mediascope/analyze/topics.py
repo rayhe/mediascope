@@ -535,6 +535,32 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "eye tracking", "gaze tracking",
         "spatial computing", "spatial audio",
     ],
+    # Financial markets — analyst ratings, stock movements, valuation,
+    # market-cap milestones.  Distinct from financial_results (earnings/revenue
+    # reporting).  Gap discovered in Barron's Meta gigawatt article (Jul 9):
+    # article was primarily about stock price catalyst thesis but classified
+    # as ai_development + financial_results, missing the market-analysis frame.
+    "financial_markets": [
+        "stock price", "share price", "stock market", "shares",
+        "market cap", "market capitalization", "market value",
+        "valuation", "valuations", "price target", "price targets",
+        "analyst rating", "analyst ratings", "analyst upgrade",
+        "analyst downgrade", "buy rating", "sell rating", "hold rating",
+        "overweight", "underweight", "outperform", "underperform",
+        "bull case", "bear case", "bullish", "bearish",
+        "upside", "downside", "upside potential",
+        "stock rally", "rally", "rallied", "sell-off", "selloff",
+        "correction", "pullback",
+        "P/E ratio", "price-to-earnings", "forward P/E",
+        "EV/EBITDA", "multiple", "multiples", "trading multiple",
+        "Wall Street", "Wall Street analysts",
+        "consensus estimate", "consensus estimates",
+        "investor sentiment", "investor confidence",
+        "total addressable market", "TAM",
+        "sum-of-the-parts", "SOTP",
+        "catalyst", "catalysts", "stock catalyst",
+        "re-rating", "rerate", "rerating",
+    ],
 }
 
 

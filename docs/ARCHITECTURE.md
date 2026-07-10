@@ -212,9 +212,9 @@ Journalist YAML ──→ Career Tracker ──→ Migration Detection
 - **Documentary source detection**: Identifies cited artifacts — recordings, leaked documents, court filings, internal memos, regulatory orders — as `source_type="documentary"`, distinguishing them from named and anonymous human sources for accurate authority scoring and source-type breakdowns
 
 ### `topics.py`
-- TF-IDF weighted keyword classification into 28 topic buckets
+- TF-IDF weighted keyword classification into 29 topic buckets
 - Multi-label (top 3 by confidence retained)
-- Topics: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, prediction_markets, corporate_strategy, defense_military, labor_market, workplace_culture, government_oversight, infrastructure_impact, worker_ai_displacement, health_tech, cybersecurity, ai_ethics_safety, education, subscription_monetization, energy_climate, hardware_wearables, consumer_protection, content_licensing
+- Topics: layoffs, ai_development, privacy_data, antitrust_regulation, child_safety, content_moderation, ai_generated_content, financial_results, product_launch, executive_behavior, litigation, prediction_markets, corporate_strategy, defense_military, labor_market, workplace_culture, government_oversight, infrastructure_impact, worker_ai_displacement, health_tech, cybersecurity, ai_ethics_safety, education, subscription_monetization, energy_climate, hardware_wearables, consumer_protection, content_licensing, financial_markets
 
 ## Careers Layer — Module Detail
 
@@ -455,7 +455,7 @@ mediascope/
 │   ├── test_source_stance.py    # Source extraction, stance, outsourced intensity, kicker framing
 │   ├── test_source_extraction_fixes.py # Pattern 3 case fix, Pattern 5c verb-before-surname, attribution verb expansion
 │   ├── test_possessive_affiliation.py # Possessive affiliation extraction: "Org's Person Name" pattern, cross-contamination prevention
-│   ├── test_topics.py           # Topic classification, all 28 buckets, confidence scoring, density normalization
+│   ├── test_topics.py           # Topic classification, all 29 buckets, confidence scoring, density normalization
 │   ├── test_wynn_williams_fixes.py # Litigation framing, source extraction false positives, power asymmetry
 │   ├── test_virtue_ai_acquihire.py # Virtue AI entities, FAIR, BIS/CAISI, tech-jargon ironic_quotation filter
 │   ├── test_sarcastic_correction.py # Sarcastic correction framing: concede-then-retract, standalone sarcasm, false-positive exclusion
