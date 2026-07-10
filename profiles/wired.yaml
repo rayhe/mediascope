@@ -288,13 +288,14 @@ advance_investments:
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
     current_value_estimate: >
-      ~$8.46B at $200.31/share (Jul 9, 2026 close, +2.56%). Reddit market cap ~$37.6B.
+      ~$8.32B at $197.05/share (Jul 10, 2026 intraday, -1.63%). Reddit market cap ~$37.6B.
       PRICE TRAJECTORY: +13.69% on Jul 1 (close $197.42, high $201.16 intraday), then
       -1.44% pullback Jul 2 (close $194.67), recovery to $200.67 Jul 6, then
-      -0.77% to $199.32 Jul 7, +0.50% to $200.31 Jul 9 close (Jul 8/9 data merged).
-      Net +15.3% from Jun 30 close ($173.65). 52-week range $119.27-$282.95. Beta 2.23.
+      -0.77% to $199.32 Jul 7, +0.50% to $200.31 Jul 9 close. Jul 10: -1.63% intraday
+      to $197.05 (high $208.05, low $193.73 — significant intraday volatility range of $14.32).
+      Net +13.5% from Jun 30 close ($173.65). 52-week range $119.27-$282.95. Beta 2.23.
       Year-to-date: still below Jan 2026 highs ~$231. Reddit now
-      ~60.5% of Advance's public equity. 42,207,274 total shares × $200.31 = $8.46B.
+      ~59.5% of Advance's public equity. 42,207,274 total shares × $197.05 = $8.32B.
       ADVANCE SHARE BREAKDOWN (verified from Reddit 2025 proxy, Dkt. rddt-20250428):
         - 42,191,092 shares of Class B common stock (10 votes/share)
         - 16,182 shares of Class A common stock (1 vote/share)
@@ -309,7 +310,7 @@ advance_investments:
       Consensus EPS ~$0.99-1.01 (Zacks/MarketBeat range). Revenue consensus ~$712-747M.
       Reddit beat consensus ALL 4 trailing quarters by significant margins.
       MARGIN LOAN BUFFER: The 7.8M shares pledged as collateral (at $145-148 offering)
-      are now worth ~$1.56B at $200.31 — 35-38% above offering price, comfortable cushion.
+      are now worth ~$1.53B at $197.05 — 33-35% above offering price, comfortable cushion.
       INSIDER SELLING (last 90 days, MarketBeat Jul 7): Reddit insiders sold $36.9M total.
       CEO Steve Huffman sold 18,000 shares at $178.26 ($3.2M, Jun 15, 10b5-1 plan, -4.59%).
       COO Jennifer Wong sold 39,166 shares at $176.94 ($6.9M, Jun 16, 10b5-1 plan, -3.59%).
@@ -324,6 +325,15 @@ advance_investments:
       Zacks consensus: $4.83 EPS, $3.25B revenue. Reddit beat consensus ALL 4 trailing quarters
       by significant margins (Q1 2026: $1.01 vs $0.62 est, $663M vs $608M, +69.1% rev YoY).
       RDDT Zacks Rank: #2 (Buy). Reddit annual revenue: $2.20B, net income $529.72M, P/E 56.95.
+      This is a potential volatility catalyst for Advance's collateral value.
+      NOTE: Reddit Q2 earnings Jul 30 — if Reddit misses consensus, RDDT could gap down given
+      2.23 beta and Advance's concentrated position + margin loan. Conversely, continued beats
+      could push past $200 resistance.
+      ADVANCE TOTAL PUBLIC EQUITY SNAPSHOT (Jul 10 intraday):
+        - Reddit: $8.32B (42.2M shares × $197.05)
+        - Charter: $2.68B (20.6M shares × $129.80, CHTR down -3.39% intraday)
+        - WBD: ~$2.56B (98M shares × ~$26.15 Jul 8)
+        - Total: ~$13.56B (declining from ~$13.77B on Jul 9 — net -$210M in 1 day)
       This is a potential volatility catalyst for Advance's collateral value.
     credit_facility_monetization: >
       REDDIT MARGIN LOAN (reported Jun 12, 2026, Bloomberg Law): Advance Magazine Publishers Inc.
@@ -361,7 +371,7 @@ advance_investments:
       Q2 2026 GUIDANCE: $715M-$725M, representing 43-45% YoY revenue growth (~44% at midpoint).
       Q2 2026 EARNINGS DATE: July 30 (after market close). Consensus EPS: $0.71 (range $0.45-$0.97,
       MarketBeat) or $0.99 (Zacks, +120% YoY). Revenue est: $712.9M (MarketBeat) or $746.89M (Zacks).
-      Market cap ~$37.6B at $200.31/share (Jul 9, 2026 intraday).
+      Market cap ~$37.6B at $197.05/share (Jul 10, 2026 intraday).
       Previous close ~$173.65 (Jun 30). 52-week range $119.27-$282.95. Beta 2.16.
       YTD PERFORMANCE: Down ~31% from 52-week high ($282.95). Stock volatility elevated (beta 2.16).
       Forward P/E: 40.28 (trailing P/E: 55.59). Net margin: 28.60%. ROE: 25.48%.
@@ -392,7 +402,7 @@ advance_investments:
       Advance/Wired conflict more acute. Reddit is no longer competing with Meta only for attention
       and ad impressions — it is competing for the entire purchase funnel. Every dollar of commerce
       revenue Reddit captures via its AI shopping features and Shopify integrations is a dollar that
-      could have flowed through Meta's commerce platforms. Advance's $7B+ Reddit stake benefits
+      could have flowed through Meta's commerce platforms. Advance's $8B+ Reddit stake benefits
       directly from Reddit's commerce growth, while Wired covers Meta's commerce competitors without
       disclosing this interest.
     source_urls_financials:
@@ -428,7 +438,7 @@ advance_investments:
       While $3.6M/yr is immaterial to Reddit's $2.2B+ revenue, the sublease relationship means
       Advance and Reddit employees may share building lobbies, elevator banks, and other common
       spaces — creating informal proximity that deepens the relationship beyond pure financial
-      holdings. Combined with governance veto rights, board seats, $1.2B margin loan, and $8.46B
+      holdings. Combined with governance veto rights, board seats, $1.2B margin loan, and $8.32B
       equity stake, this sublease is one more thread in a dense web of Advance-Reddit entanglement
       that Wired's Meta coverage never discloses.
     advance_reddit_subleases_source_url: "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000060/rddt-20260423.htm"
@@ -489,11 +499,12 @@ advance_investments:
       from 26.3% (2016) to 12.3% (2023) via share repurchases and conversions.
     deterioration_note: >
       CHTR is in steep long-term decline: -67.49% over 1 year, -82.03% over 5 years (as of Jun 25, 2026).
-      Stock down from 52-week high of $422.29 to $133.54 (Jul 8, 2026 close) — a 68% drop. Wall Street
-      consensus rating is "Reduce" (6 sell, 9 hold, 5 buy out of 20 analysts). Q1 2026 earnings missed:
-      EPS $9.17 vs consensus $10.01 (missed by $0.84), revenue down 1.0% YoY at $13.60B. Q2 2026 earnings
-      due July 24 (before market open). Charter faces structural headwinds from cord-cutting, fiber
-      overbuilds, and fixed wireless competition.
+      Stock down from 52-week high of $413.14 to $129.80 (Jul 10, 2026 intraday) — a 68.6% drop,
+      approaching 52-week low of $124.05. Jul 10 alone: -3.39% ($136.28 high → $129.40 low).
+      Wall Street consensus rating is "Reduce" (6 sell, 8 hold, 5 buy out of 19 analysts). Q1 2026
+      earnings missed: EPS $9.17 vs consensus $10.01 (missed by $0.84), revenue down 1.0% YoY at
+      $13.60B. Q2 2026 earnings due July 24 (before market open). Charter faces structural headwinds
+      from cord-cutting, fiber overbuilds, and fixed wireless competition.
       SPACEX MOBILE PARTNERSHIP (Bloomberg News, Jun 26, 2026): SpaceX and Charter have held
       EXECUTIVE-LEVEL talks about partnering on a consumer mobile phone offering in the US. Under the
       discussed arrangement, Charter would route SpaceX's phone traffic through its ground-based
@@ -510,7 +521,7 @@ advance_investments:
       Advance. Despite Charter's 82% 5-year decline, a SpaceX mobile partnership could re-rate the
       stock. Advance's ~$2.75B stake (at $133.54) could see meaningful upside if Charter pivots from
       declining cable to space-enabled mobile connectivity.
-    current_value_estimate: "~$2.75B at $133.54/share (Jul 8, 2026 close). Down from $8.7B at 52-week high of $422.29."
+    current_value_estimate: "~$2.68B at $129.80/share (Jul 10, 2026 intraday, -3.39%). Down from $8.7B at 52-week high of $413.14. Approaching 52-week low of $124.05."
     competitive_with: []
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
     spacex_partnership_source_urls:
@@ -754,7 +765,7 @@ advance_investments:
 # ===================================================================
 # TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (updated Jul 7, 2026)
 # ===================================================================
-# Reddit (RDDT): ~$8.45B (42.2M shares @ $200.31, Jul 9 2026 intraday)
+# Reddit (RDDT): ~$8.32B (42.2M shares @ $197.05, Jul 10 2026 intraday)
 #   PRICE TRAJECTORY: +13.69% on Jul 1 (momentum breakout, briefly touched $201.16 intraday),
 #   -1.44% pullback Jul 2, recovery to $200.86 by Jul 7, -1.99% to $195.47 by Jul 8.
 #   Driven by strong Q1 fundamentals + AI licensing repricing narrative.
@@ -1210,7 +1221,7 @@ known_conflicts:
       The financial incentive structure is now: companies paying Condé Nast for AI licensing
       (OpenAI, Amazon, Perplexity, Microsoft, Apple) = favorable content partnerships; Meta, the only
       major tech company not paying Condé Nast = adversarial coverage from a publication whose parent's
-      $7B+ Reddit stake directly benefits from Meta's struggles. The Microsoft Copilot deal (announced
+      $8B+ Reddit stake directly benefits from Meta's struggles. The Microsoft Copilot deal (announced
       Dec 2025, formalized Feb 2026) adds a SIXTH Meta competitor to Condé Nast's licensing portfolio,
       making the revenue asymmetry even more stark.
     severity: 5
@@ -1241,7 +1252,7 @@ known_conflicts:
       and community engagement. Reddit FY2025 revenue ~$1.3B, growing rapidly, in direct competition
       for the same performance advertising dollars Meta commands. Reddit's market cap ~$32.8B. Every
       Meta stumble (regulatory, reputational, or financial) potentially benefits Reddit's competitive
-      position and therefore Advance's $7B+ stake.
+      position and therefore Advance's $8B+ stake.
     severity: 4
     evidence: "Reddit S-1, earnings reports, advertising market analysis"
     source_url: ""
@@ -1473,7 +1484,14 @@ litigation_connections:
          Rogers quoted: "To the extent plaintiffs' evidence shows that the platforms are in fact designed
          to [cause teens to compulsively use the platforms to their detriment], a jury could reasonably
          find the statements were untrue to a reasonable person."
-         Source: Reuters (Jun 30, 2026), Fox Business (Jul 1, 2026).
+         CRITICAL NEW: STATES SEEKING $1.4 TRILLION IN PENALTIES (Reuters, Jul 8, 2026):
+         Meta disclosed in a court filing that the 29 states are collectively seeking approximately
+         $1.4 TRILLION in penalties. States calculated this by multiplying the number of violations
+         by fine amounts set by state law, with violations based on estimated number of teens and
+         young users affected. The filings are sealed, but the methodology was disclosed at a June
+         hearing. For context: $1.4T exceeds Meta's entire market capitalization (~$1.3T as of Jul 10).
+         If even a fraction is awarded, it would be the largest tech penalty in history.
+         Source: Reuters (Jun 30, 2026), Fox Business (Jul 1, 2026), Reuters (Jul 8, 2026).
 
       RECENT VERDICTS/SETTLEMENTS (2026):
       - KGM v. Meta/YouTube (JCCP 5255, March 2026): $6M total ($4.2M Meta, $1.8M Google). First
@@ -1497,7 +1515,8 @@ litigation_connections:
       - 10,000+ individual PI claims (MDL 3047)
       - ~800 school district claims (MDL 3047)
       - 3,300+ addiction cases in California state court (JCCP 5255)
-      - 41+ state AGs in coordinated action
+      - 41+ state AGs in coordinated action (29 in Aug 18 trial, 14 more in Feb trial)
+      - States seeking $1.4 TRILLION in penalties (disclosed Jul 8, 2026) — exceeds Meta's market cap
       - Cumulative verdict/settlement: $408M+ (and accelerating)
       - Cornell Law professor (Alexandra Lahav): "the pressure is going to be on for a massive
         settlement" — analogized to the $6B 3M Combat Arms earplug MDL.

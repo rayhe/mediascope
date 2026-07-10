@@ -2,6 +2,147 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-10 10:00 PT — Type C: Ownership & Funding (Stock revaluation + $1.4T penalty + EU DSM Article 15)
+
+**Focus:** Multi-profile stock price update (Jul 10 intraday), major new litigation finding ($1.4T Meta penalty demand), and new Guardian EU conflict vector (ECJ Streamz case/Denmark intervention).
+
+**Changes:**
+
+### Wired profile (wired.yaml)
+- RDDT price update: $200.31 → $197.05 (Jul 10 intraday, -1.63%). Advance Reddit stake: $8.46B → $8.32B
+- CHTR price update: $133.54 → $129.80 (Jul 10 intraday, -3.39%). Approaching 52-week low of $124.05. Advance Charter stake: ~$2.75B → ~$2.68B
+- **NEW FINDING:** $1.4 TRILLION penalty demand by 29 states in Meta youth safety trial (Reuters, Jul 8, 2026). Exceeds Meta's entire market capitalization (~$1.3T). Added to litigation convergence section with full methodology context (violations × fine amounts × estimated teens affected)
+- Added Advance total public equity snapshot: $13.56B and declining (-$210M in 1 day)
+- Added Reddit Q2 earnings Jul 30 catalyst note with beta volatility warning
+- Updated all stale $7B+ references to $8B+ throughout
+- Source: Reuters Jul 8, 2026
+
+### Atlantic profile (atlantic.yaml)
+- AAPL price update: $316.22 → $313.57 (Jul 10 intraday, -0.84%). LPJ holding: ~$17.2B+ → ~$17.06B+
+- DIS price update: $96.17 → $96.14 (Jul 10 intraday, essentially flat)
+- Updated all downstream references to LPJ holding, Apple market cap, Disney holding
+- Updated stock history section at bottom of profile
+
+### Guardian profile (guardian.yaml)
+- **NEW CONFLICT:** `eu_dsm_publisher_rights` (severity 3) — ECJ Streamz et al. v. Belgium case. Meta, Google, Spotify, Sony challenged Belgium's Article 15 DSM Directive implementation. Denmark Culture Ministry intervened Jul 6-7 in favor of publishers. Key insight: Guardian and Meta share SAME SIDE of publisher rights — both benefit from strong Article 15 — complicating adversarial coverage narrative. Source: Reuters Jul 7, 2026
+- Guardian conflicts: 20 → 21
+
+### NYT profile (nytimes.yaml)
+- Added $1.4T penalty context to `no_meta_counterweight` conflict — NYT has zero financial incentive to temper coverage of this historic penalty demand
+
+**Tests:** 2,147 passed (no change)
+
+**Sources cited:**
+- Reuters: $1.4T Meta penalty disclosure (Jul 8, 2026)
+- Reuters: Denmark ECJ intervention (Jul 7, 2026)
+- Finnhub: RDDT, CHTR intraday prices (Jul 10, 2026)
+- MarketBeat: AAPL, DIS closing/intraday (Jul 10, 2026)
+
+---
+
+## 2026-07-10 08:00 PT — Type B: Journalist/Publication Research (Guardian deep expansion, 12 journalists)
+
+**Focus:** Guardian had the thinnest journalist roster (18 current) among the 6 tracked publications. Deep expansion of 12 Guardian-affiliated journalists with full career histories, beats, education, awards, and analytical notes.
+
+**Expanded Profiles (12 journalists):**
+
+1. **Dan Milmo** (Guardian, Global Technology Editor)
+   - Career lifer: joined Guardian in 2000, 26+ years. Industrial editor → media business editor → deputy business editor → global technology editor (~2020).
+   - Added: 5 beats (ai_policy, platform_regulation, social_media, cybersecurity, uk_tech_policy)
+   - Added: 3 career entries with source URLs (London Tech Week, Web Summit)
+   - Sources: londontechweek.com, websummit.com, buzzsumo.com
+
+2. **Johana Bhuiyan** (Guardian US, Senior Tech Reporter & Editor)
+   - Added: Education — Lehigh University, BA Journalism
+   - Added: 5 beats (tech_accountability, surveillance, privacy, marginalized_communities, gig_economy)
+   - Added: 7 career entries: World Policy Institute → PolicyMic → Politico NY → BuzzFeed News → Recode → LA Times → Guardian (Aug 2021)
+   - Key detail: Hijab-wearing Muslim journalist. "Boo-Yah" pronunciation. Amazon driver tipping investigation led to settlement.
+   - Sources: TheOrg, Talking Biz News, Castbox, Muck Rack
+
+3. **Alex Hern** (The Economist, AI Writer — ex-Guardian)
+   - Added: 5 beats (artificial_intelligence, platform_regulation, cybersecurity, data_privacy, quantum_computing)
+   - Added: 6 career entries: New Statesman trainee (2012) → economics correspondent → Guardian reporter (2013) → features writer → UK technology editor (2018-2024) → Economist AI writer (Oct 2024)
+   - CRITICAL MIGRATION: 11 years at Guardian → Economist. High-value for DiD analysis.
+   - Sources: ResponseSource, SpeakOut, Champions Speakers, podcast appearances
+
+4. **Julia Carrie Wong** (Guardian, Senior Writer — off tech beat)
+   - Added: Education — Harvard BA English, Iowa MFA Writing
+   - Added: 5 beats (facebook_meta, white_supremacism_online, critical_race_theory, silicon_valley, tech_accountability)
+   - Added: 5 career entries: freelance → SF Weekly → Guardian tech reporter (2016, part of 3-person wave with Bowles/Yadron) → senior tech reporter → senior writer (left tech ~2021)
+   - Key detail: Wikipedia page. 2019 white nationalist Facebook investigation led to targeted harassment. Broke Sophie Zhang whistleblower story.
+   - Sources: Wikipedia, Talking Biz News, Adweek, TechPolicy.Press
+
+5. **Kari Paul** (ex-Guardian, now Paris College of Art MFA)
+   - Added: Education — Univ of Missouri-Columbia (BA Journalism + International Studies, 2014), Universidad Austral Buenos Aires (exchange 2013), Paris College of Art (MFA Transdisciplinary New Media, 2024-2026)
+   - Added: 5 beats (technology, social_media, ai, tech_policy, privacy)
+   - Added: 5 career entries: Vice Motherboard → Complex → MarketWatch → Guardian (2019-2024) → Paris art school
+   - Key detail: Left journalism entirely for art school. Was one of only 2 US tech reporters at Guardian.
+   - Sources: Talking Biz News (hire + departure announcements), RocketReach
+
+6. **Caspar Llewellyn Smith** (Guardian, Chief AI Officer)
+   - Added: 4 beats (ai_strategy, digital_product, ai_licensing, newsroom_ai)
+   - Added: 7 career entries: Daily Telegraph → Guardian (2003): Observer Music Monthly → Head of Culture → Editor theguardian.com → Director Digital Strategy (exec committee 2015) → Chief Product Officer (5 years) → Chief AI Officer (~2023)
+   - NOT a reporter — shapes Guardian's entire AI posture. Among first UK newspapers to appoint dedicated CAIO. Four focus areas: licensing, internal deployment, strategic planning, org-wide literacy. Set up internal AI Council.
+   - Sources: TheOrg, The Media Stack, REMIX Summits, Cision
+
+7. **Betsy Reed** (Guardian US, Editor-in-Chief)
+   - Added: Education — Harvard BA History & Literature (1990)
+   - Added: 3 beats (editorial_leadership, investigative_journalism, progressive_politics)
+   - Added: 3 awards — George Polk, National Magazine Award, Sidney Hillman Prize (all as Intercept editor)
+   - Added: 5 career entries: Condé Nast Traveller (first job, "Devil Wears Prada" experience) → The Nation senior editor (1998) → executive editor (2006, 16 years total) → The Intercept EIC (2015-2022) → Guardian US EIC (Sept 2022)
+   - Key detail: Under her leadership, Guardian US added 50+ journalists, grew paying supporters 60%. Born 1968. 2025 CUNY Newmark commencement speaker. Wikipedia page.
+   - Sources: Wikipedia, CUNY J-School, Editor & Publisher, The Media Leader, Talking Biz News
+
+8. **Dara Kerr** (Guardian US, Tech Reporter)
+   - Added: Education — NYU, Columbia, UC Berkeley (details sparse)
+   - Added: 5 beats (technology, gig_economy_labor, surveillance, ai, tech_accountability)
+   - Added: 5 career entries: freelance → CNET senior reporter → The Markup (labor beat) → NPR tech reporter (Jan 2023-Dec 2024) → Guardian US tech reporter (Jan 2025)
+   - Key detail: Hired Jan 2025, likely replacing Kari Paul's departure. Colorado native, Bay Area based. Signal: darakerr.01.
+   - Sources: Talking Biz News (Markup hire, NPR hire), Diary Directory (Guardian appointment), Muck Rack
+
+9. **Josh Taylor** (Guardian Australia, Reporter)
+   - Added: 5 beats (technology, platform_regulation, infosec, australian_politics, social_media_algorithms)
+   - Added: 4 career entries: ZDNet → Crikey → BuzzFeed News → Guardian Australia (~2019)
+   - Key detail: "Blank phone experiment" — set up fresh phone with new social accounts to empirically audit algorithmic content serving. Covers Australian social media under-16 bans.
+   - Sources: State of Social, Muck Rack, Techmeme aggregations
+
+10. **Ariel Bogle** (Guardian Australia, Investigations Reporter)
+    - Added: 5 beats (technology, online_extremism, surveillance, immigration_detention, conspiracy_theories)
+    - Added: 3 awards — Walkley Award, Kennedy Award, NSW Council for Civil Liberties Award
+    - Added: Book — *Conspiracy Nation* (2025, with Cam Wilson, shortlisted Victorian Premier's Literary Awards)
+    - Added: 4 career entries: various US media → ASPI International Cyber Policy Centre (analyst, disinformation research) → ABC Australia → Guardian Australia
+    - Key detail: Rare think-tank-to-journalism pipeline (ASPI). Serco immigration detention algorithm investigation is signature piece.
+    - Sources: arielbogle.com, Australia Institute, SlackBastard, podcast appearances
+
+11. **Blake Montgomery** (Guardian US, US Tech Editor)
+    - Added: Education — Stanford BA English, Phi Beta Kappa. Published nonfiction graphic novel *A Place Among the Stars*.
+    - Added: 5 beats (technology, breaking_news, ai, protests_extremism, tech_companies)
+    - Added: 6 career entries: Cozymeal → EdSurge → BuzzFeed (arrested while reporting, charges dropped) → Daily Beast → Gizmodo deputy editor → Guardian US tech editor (~2023)
+    - Key detail: Gatekeeper for Guardian US tech coverage. Hosts TechScape newsletter. Also a fiction writer.
+    - Sources: Talking Biz News (multiple announcements), EdSurge, Muck Rack
+
+12. **Lois Beckett** (Guardian US, Senior Reporter)
+    - Added: Education — Harvard AB Social Studies (2009). Harvard Crimson.
+    - Added: 5 beats (gun_policy, criminal_justice, far_right, technology_politics, data_privacy)
+    - Added: 2 awards — 2011 Livingston Award for National Reporting (with Pierce & Larson at ProPublica), 2015 Deadline Award (Essence collaboration)
+    - Added: 4 career entries: SF Weekly → Nieman Journalism Lab → ProPublica (2011-2016) → Guardian US senior reporter (2016)
+    - Key detail: Not primarily tech, but covers tech intersections with guns, criminal justice, far right. Based in LA. Hosted OTM "Face the Racist Nation" special.
+    - Sources: Podchaser, RocketReach, Adweek, Social Science Space, Zócalo interview
+
+**New unique publications added:** politico-new-york, policymic, world-policy-institute, cozymeal, paris-college-of-art, aspi, abc-australia, various-us-media, universidad-austral, vice-motherboard, complex
+
+**Changes (3 files, +3,895/−6,018 lines, commit 8a06416):**
+- `profiles/careers/journalists.yaml`: 12 profiles expanded with beats, sourced careers, education, awards, analytical notes
+- `README.md`: migration count 650→651 (2 occurrences)
+- `docs/EDITORIAL_HISTORIES.md`: migration count 650→651
+
+**Verification:**
+- All 2,147 tests pass (112.11s)
+- CareerTracker finds 651 migrations (was 650)
+- 211 journalists, 203 multi-pub, ~386 unique publications
+
+**Stats after this iteration:** 211 journalists (unchanged — no new additions, only expansions), 651 migrations, 203 multi-pub, ~386 publications, 2,147 tests
+
 ## 2026-07-10 06:00 PT — Type A: Article Deep Dive (Barron's $1T backlash + WSJ EU DSA, investor_advisory framing)
 
 **Focus:** Analyze two fresh articles from July 10, 2026. Bug fix in source extraction. New framing device type `investor_advisory`.

@@ -1423,6 +1423,33 @@ known_conflicts:
     evidence: "Reuters reporting (June 2, 2026). CMA Digital Markets Competition Regime."
     source_url: "https://reuters.com/technology/google-must-let-uk-publishers-opt-out-ai-search-under-new-rules-2026-06-02/"
     notes: "Severity 0 — regulatory action, not a conflict per se, but shapes the conflict landscape. Creates leverage that benefits the Guardian while potentially contradicting its pilot participation."
+  - type: "eu_dsm_publisher_rights"
+    description: >
+      EU DSM ARTICLE 15 ECJ CASE — GUARDIAN INTEREST (NEW FINDING Jul 10, 2026): An active
+      European Court of Justice case (Streamz et al. v. Belgium, filed 2023) directly threatens
+      the press publisher rights that underpin the Guardian's AI licensing revenue model.
+      Google, Meta, Spotify, and Sony sued Belgium challenging its implementation of Article 15
+      of the Digital Single Market (DSM) Directive, arguing Belgium's law undermines EU-level
+      press publishers' rights. If the ECJ rules in favor of the tech companies, it could
+      dilute publisher content rights across ALL EU member states — weakening the very rights
+      framework that Guardian, FT, and other SPUR members are trying to standardize.
+      DENMARK INTERVENTION (Jul 6-7, 2026): Denmark's Culture Ministry formally intervened
+      in favor of Belgium and publishers at the oral hearing, arguing tech giants must be held
+      accountable for paying when publisher content appears on their platforms. Culture Minister
+      Zenia Stampe: "tech giants should not be allowed to use media content without paying for it."
+      Denmark also participated in the separate ECJ case on Google's AI training of press releases.
+      GUARDIAN CONFLICT VECTOR: The Guardian's SPUR coalition (Feb 2026), OpenAI licensing deal
+      (Feb 2025), and Google News AI pilot (Dec 2025) all depend on robust publisher rights.
+      An adverse ECJ ruling would undermine the Guardian's entire AI licensing negotiation framework
+      while simultaneously strengthening Meta's argument that it can train on publisher content
+      without licensing. This creates a shared-adversary alignment: Guardian and Meta are on the
+      SAME SIDE of publisher rights (both benefit from strong Article 15), which complicates the
+      adversarial coverage narrative.
+    severity: 3
+    evidence: "Reuters reporting (Jul 7, 2026). Denmark Culture Ministry intervention."
+    source_urls:
+      - "https://www.reuters.com/technology/denmark-intervenes-eu-court-case-publishers-rights-2026-07-07/"
+    notes: "Severity 3 — does not create a direct editorial conflict but shapes the broader rights landscape that underpins Guardian's AI licensing revenue. Novel angle: Meta and Guardian share the same interest in strong publisher rights, creating tension with the adversarial coverage posture."
   - type: "revolving_door"
     description: >
       ANNA BATESON — GOOGLE → GMG CEO REVOLVING DOOR (NEW FINDING Jun 29, 2026): GMG CEO

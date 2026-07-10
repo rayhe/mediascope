@@ -87,10 +87,10 @@ ownership_chain:
       - entity: "Apple (via LPJ Trust)"
         relationship: >
           Laurene Powell Jobs is Steve Jobs' widow. LPJ Trust holds massive Apple stock.
-          Apple (AAPL) at $316.22/share (Jul 9, 2026), market cap ~$4.62T.
-          LPJ estimated to hold ~$17.2B+ in Apple stock. Among Apple's largest individual shareholders.
+          Apple (AAPL) at $313.57/share (Jul 10, 2026 intraday, -0.84%), market cap ~$4.62T.
+          LPJ estimated to hold ~$17.06B+ in Apple stock. Among Apple's largest individual shareholders.
         competitive_with: ["Meta"]
-        notes: "Apple competes with Meta in hardware (Vision Pro vs Quest), AI (Apple Intelligence vs Meta AI), and uses 'privacy' narrative that undermines Meta's advertising model. LPJ serves on Stanford Board of Trustees alongside OpenAI CFO Sarah Friar — see civic_connections. Stock update: AAPL $316.22 (Jul 9, 2026), LPJ holding ~$17.2B+."
+        notes: "Apple competes with Meta in hardware (Vision Pro vs Quest), AI (Apple Intelligence vs Meta AI), and uses 'privacy' narrative that undermines Meta's advertising model. LPJ serves on Stanford Board of Trustees alongside OpenAI CFO Sarah Friar — see civic_connections. Stock update: AAPL $313.57 (Jul 10, 2026 intraday), LPJ holding ~$17.06B+."
       - entity: "Walt Disney Company (via LPJ Trust)"
         relationship: >
           LPJ Trust inherited a massive Disney stake from Steve Jobs' Pixar acquisition (Disney
@@ -101,9 +101,9 @@ ownership_chain:
             - 2016 (SC 13G/A, Amendment 2): 40,284,667 shares = 2.5% of Disney
             - Post-2016: Below SEC reporting threshold; current holdings unknown but presumed
               to retain some position given no public report of full divestiture.
-          Disney (DIS) at ~$96.17/share (Jul 9, 2026), market cap ~$168.23B.
+          Disney (DIS) at ~$96.14/share (Jul 10, 2026 intraday, -0.03%), market cap ~$168.23B.
           Even the reduced 2016 position (40.3M shares) would be worth ~$3.87B at current prices.
-          DIS down 3.3% from $99.50 (Jul 2) to $96.17 (Jul 9).
+          DIS essentially flat from $96.17 (Jul 9) to $96.14 (Jul 10).
         competitive_with: ["Meta"]
         source_urls:
           - "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001540902&type=SC%2013G&dateb=&owner=include&count=40"
@@ -177,7 +177,7 @@ ownership_chain:
           - "https://spectrum.ieee.org/fei-fei-li-world-labs"
         notes: >
           Strengthens the pattern: EC/LPJ now has financial positions in FIVE direct Meta
-          competitors — Apple (via LPJ Trust, $17.2B+ stock), Disney (via LPJ Trust, ~$3.87B+ stock),
+          competitors — Apple (via LPJ Trust, $17.06B+ stock), Disney (via LPJ Trust, ~$3.87B+ stock),
           OpenAI (via io Products exit + licensing),
           Mistral (open-source LLMs vs Llama), and World Labs (spatial AI/3D vs Reality Labs). Each
           investment creates editorial incentive for Atlantic coverage that frames Meta's competitive
@@ -428,7 +428,7 @@ ownership_chain:
 revenue_relationships:
   - partner: "Apple"
     relationship_type: "indirect_financial"
-    estimated_value: "~$17.2B+ (stock holdings, AAPL at $316.22 Jul 9 2026)"
+    estimated_value: "~$17.06B+ (stock holdings, AAPL at $313.57 Jul 10 2026)"
     description: >
       Owner LPJ holds massive Apple stock. Apple competes with Meta in hardware (Vision Pro
       vs Quest), AI (Apple Intelligence vs Meta AI), and privacy positioning. Apple's 'privacy'
@@ -594,7 +594,7 @@ key_journalists:
 
 known_conflicts:
   - type: "investment"
-    description: "Owner Laurene Powell Jobs holds ~$17.2B+ in Apple stock (AAPL at $316.22, Jul 9 2026). Apple directly competes with Meta in hardware, AI, and uses 'privacy' narrative that undermines Meta's advertising model."
+    description: "Owner Laurene Powell Jobs holds ~$17.06B+ in Apple stock (AAPL at $313.57, Jul 10 2026 intraday). Apple directly competes with Meta in hardware, AI, and uses 'privacy' narrative that undermines Meta's advertising model."
     severity: 4
     evidence: "Forbes wealth estimates, Apple shareholder records"
     source_url: ""
@@ -603,7 +603,7 @@ known_conflicts:
       Owner Laurene Powell Jobs / LPJ Trust holds a significant Walt Disney Company stake
       inherited from Steve Jobs' Pixar acquisition. SEC filings document: 128.6M shares (7.6%)
       in 2014, reduced to 40.3M shares (2.5%) by 2016 (SC 13G/A). Below SEC disclosure threshold
-      since ~2016 but no public divestiture reported. At current DIS price (~$96.17, Jul 9 2026),
+      since ~2016 but no public divestiture reported. At current DIS price (~$96.14, Jul 10 2026 intraday),
       even the reduced 2016 position would be worth ~$3.87B. Disney competes with Meta in streaming/content
       (Disney+/Hulu vs Facebook Watch/Reels), advertising (Disney's ad-supported tiers compete for
       the same brand budgets), and the broader attention economy (parks, sports, entertainment).
@@ -633,7 +633,7 @@ known_conflicts:
       - "https://pitchbook.com/news/articles/openai-jony-ive-io-products-acquisition"
       - "https://techcrunch.com/2025/04/07/openai-reportedly-mulls-buying-jony-ive-and-sam-altmans-ai-hardware-startup/"
     notes: >
-      Also creates Apple tension: LPJ holds $17.2B+ Apple stock, but io Products
+      Also creates Apple tension: LPJ holds $17.06B+ Apple stock, but io Products
       was explicitly designed to compete with Apple. Jony Ive's OpenAI device is
       positioned as the next iPhone. EC profits from both sides of the
       Apple-vs-OpenAI hardware competition.
@@ -1181,7 +1181,7 @@ editorial_history:
   ownership_change:
     - event: "Emerson Collective acquisition"
       date: "2017-07"
-      notes: "Laurene Powell Jobs' Emerson Collective acquired majority stake from David G. Bradley (who retained minority, still held as of 2020). Peter Lattman (Emerson Collective staffer) named vice chairman immediately. LPJ holds ~$17.2B in Apple stock AND ~$3.87B+ in Disney stock (Meta competitors). Key question: did coverage tone toward Apple/Disney competitors change after this ownership change?"
+      notes: "Laurene Powell Jobs' Emerson Collective acquired majority stake from David G. Bradley (who retained minority, still held as of 2020). Peter Lattman (Emerson Collective staffer) named vice chairman immediately. LPJ holds ~$17.06B in Apple stock AND ~$3.87B+ in Disney stock (Meta competitors). Key question: did coverage tone toward Apple/Disney competitors change after this ownership change?"
     - event: "Nicholas Thompson named CEO"
       date: "2020-12"
       notes: "Former Wired EIC hired as CEO. Creates direct Condé Nast editorial culture bridge. Under Thompson: profitability achieved, record subscriptions (1.4M+ by Feb 2026), 3 Pulitzer Prizes, OpenAI licensing deal (May 2024). Revenue over $100M. Also poached ~20 journalists from Washington Post."
@@ -1191,10 +1191,10 @@ notes: |
   sanctions motion (filed today), OpenAI IPO context, GPT-5.6 launch, government equity proposal.
 
   STOCK PRICE UPDATES (Jul 9, 2026):
-  - AAPL: $316.22 (up from $308.63 on Jul 3 — +2.46%). LPJ holding ~$17.2B+.
-  - DIS: $96.17 (down from $99.50 on Jul 2 — -3.35%). 2016-era 40.3M shares = ~$3.87B.
-  - DIS market cap: $168.23B (down from $172.78B).
-  - AAPL market cap: $4.62T (up from $4.53T).
+  - AAPL: $313.57 (Jul 10 intraday, down from $316.22 on Jul 9 — -0.84%). LPJ holding ~$17.06B+.
+  - DIS: $96.14 (Jul 10 intraday, essentially flat from $96.17 Jul 9). 2016-era 40.3M shares = ~$3.87B.
+  - DIS market cap: $168.23B (flat).
+  - AAPL market cap: $4.62T (down marginally from Jul 9).
   - RDDT: $200.31 intraday (up from $195.47 close Jul 8 — +2.48%). Cross-ref: Advance/Wired.
 
   NYT SANCTIONS MOTION (Jul 9, 2026):
@@ -1234,8 +1234,8 @@ notes: |
   executive, complicating the clean adversarial narrative.
 
   STOCK PRICE UPDATES (Jul 9 2026):
-  - AAPL: $316.22 (Jul 9) up from $308.63 (Jul 3) — +2.46%. LPJ holding ~$17.2B+.
-  - DIS: $96.17 (Jul 9) down from $99.50 (Jul 2) — -3.35%. 2016-era 40.3M shares = ~$3.87B.
+  - AAPL: $313.57 (Jul 10 intraday) down from $316.22 (Jul 9) — -0.84%. LPJ holding ~$17.06B+.
+  - DIS: $96.14 (Jul 10 intraday) essentially flat from $96.17 (Jul 9). 2016-era 40.3M shares = ~$3.87B.
 
   UPDATED 2026-06-28: The Atlantic is now the MOST DENSELY FINANCIALLY CONFLICTED
   publication in the 5-publication tracking set per entity (Meta/OpenAI/Apple).
