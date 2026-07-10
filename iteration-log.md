@@ -17817,3 +17817,50 @@ Still untracked Atlantic hires from E&P: Luis Parrales (staff writer), Adam Kirs
 | Known pubs | — | +3 (Svenska Dagbladet, TheWrap, Digital Trends) |
 
 **Commit:** (pending)
+
+## 2026-07-09 21:00 PT — Type B: Journalist/Publication Research (Guardian & Verge Personnel)
+
+**Focus:** Recent journalist hires, departures, and migrations across Guardian and The Verge.
+
+### Research Conducted
+
+Searched TalkingBizNews, ResponseSource, Muck Rack, DiaryDirectory, champions-speakers.co.uk, and Cision UK for Guardian and Verge personnel changes in 2024-2026. Cross-referenced existing YAML data against public announcement records.
+
+### New Journalist Profiles Added (2 new → 194 total)
+
+| Name | Current Role | Career Entries | Key Migration/Notes |
+|------|-------------|----------------|---------------------|
+| Robert Hart | AI Reporter, The Verge (Oct 2024–) | 3 | Lexology → Forbes (senior reporter, London) → The Verge. **Tarbell Center Senior Fellow** — first tracked journalist with a named Tarbell fellowship embedded at one of our 6 tracked publications. The Tarbell Center was previously identified in MediaScope as a cross-cutting editorial influence vector shaping AI coverage. Also freelanced for Wired, Time, Slate, Quartz, Guardian. |
+| Siraj Datoo | Deputy Digital Editor, The Guardian (Jan 2026–) | 6 | The Student Journals (founder) → BuzzFeed UK (politics) → Bloomberg (9+ years: digital news editor → APAC weekend editor Singapore → EMEA Equality Editor) → Guardian. Editorial gatekeeper role: controls front-page curation, live blog editorial choices, and digital surfacing of stories — shapes how audience encounters all coverage including tech/AI. DEI beat carryover from Bloomberg may influence tech industry diversity framing. |
+
+### Editorial Changes Added (1 new → 24 Guardian total)
+
+- **Jan 2026:** Siraj Datoo hired as Deputy Digital Editor (from Bloomberg EMEA Equality Editor)
+
+### Key Analytical Findings
+
+1. **Tarbell Center → tracked publication pipeline confirmed.** Robert Hart is the first journalist in our database with a direct, named Tarbell Center fellowship while simultaneously being staff at a tracked publication (The Verge). Previously the Tarbell Center was identified as an editorial influence vector but without a concrete named link to our tracked newsrooms. This makes the influence pathway concrete and trackable.
+
+2. **Guardian's digital editorial layer is now Bloomberg-influenced.** Siraj Datoo spent 9+ years at Bloomberg before becoming Guardian's Deputy Digital Editor. This is not a tech reporter hire — it's an editorial infrastructure position that shapes how ALL Guardian stories (including tech/AI) are surfaced and framed to the digital audience. His equality/DEI beat specialization at Bloomberg may influence Guardian's framing of tech industry diversity, workplace culture, and corporate accountability stories. Worth tracking whether Guardian's digital presentation of tech stories shifts toward equity/accountability framing post-hire.
+
+3. **Alex Hern → Economist migration already captured but worth noting in context:** The Guardian lost its 11-year UK Technology Editor to The Economist (Oct 2024) and replaced him with Robert Booth. Combined with Dara Kerr joining from NPR (Jan 2025) and Siraj Datoo from Bloomberg (Jan 2026), the Guardian's tech/digital editorial team has undergone significant turnover in 15 months — the institutional voice on tech is being reshaped by incoming journalists' prior publication cultures.
+
+### Changes
+- `profiles/careers/journalists.yaml`: +2 journalists (Robert Hart, Siraj Datoo), 194 total
+- `profiles/careers/editorial_changes.yaml`: +1 Guardian editorial change (Datoo), 24 Guardian total
+- `docs/EDITORIAL_HISTORIES.md`: journalist count 192→194, multi-pub 185→187, migrations 595→600
+- `README.md`: journalist count 192→194, migrations 595→600
+- `examples/careers_demo.py`: journalist count 192→194
+- All documentation count references updated for consistency
+
+### Stats
+- Tests: 2,147 passing (unchanged count — no new test files)
+- Journalists: 194 (was 192)
+- Multi-publication journalists: 187 (was 185)
+- Auto-detected migrations: 600 (was 595)
+- Guardian editorial changes: 24 (was 23)
+- Annotated articles: 140 (unchanged)
+- Emotional language terms: 850 (unchanged)
+
+**Commit:** `949d912` — pushed to GitHub
+**Sources:** TalkingBizNews (Hart hire, Datoo hire, Montgomery hire, Hern departure), ResponseSource (Datoo Jan 7 2026 announcement, Hart appointment), Muck Rack (Hern Economist profile, Datoo Bloomberg profile), champions-speakers.co.uk (Hern Economist bio), DiaryDirectory (Kerr Guardian appointment Jan 6 2025), Cision UK (Datoo media moves)
