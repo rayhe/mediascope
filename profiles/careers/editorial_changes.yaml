@@ -460,6 +460,15 @@ editorial_changes:
     outgoing: Alex Hern
     position: uk_technology_editor
     source_url: https://talkingbiznews.com/they-re-hiring/guardian-tech-editor-hern-is-departing/
+  - date: 2024-10
+    incoming: Blake Montgomery
+    notes: 'TechScape newsletter authorship transferred from Alex Hern (founder, July 2021) to Blake Montgomery (US tech editor)
+      after Hern''s departure. Montgomery''s TechScape bylines confirmed through July 2026 (covering AI/climate-goals tension,
+      Meta business diversification, X/Musk). Significant editorial shift: TechScape moved from UK-based tech specialist
+      (Hern''s economics→tech pipeline, nuanced regulatory analysis) to US-based adversarial editor (Montgomery''s Gawker-adjacent
+      pipeline, confrontational framing). Tests whether newsletter tone is determined by author or institutional constraints.'
+    outgoing: Alex Hern
+    position: techscape_newsletter_author
   - date: 2024-12
     incoming: Dara Kerr
     notes: 'Kerr replaced Kari Paul (departed mid-2024 for art school) as Guardian''s West Coast/Bay Area tech reporter. Career

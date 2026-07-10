@@ -2262,12 +2262,14 @@ journalists:
     event_type: hired
     notes: 'US tech editor. Based in New York City. Contact: blake.montgomery@theguardian.com, 650.731.5423. Oversees Guardian
       US technology coverage — breaking news, tech industry, protests and extremism. 4,143+ total articles across career (per
-      JournalistHunt). As editor, his framing choices shape the Guardian''s entire US tech desk output. Key question: does
-      the editing role (vs reporting) shape Guardian''s US tech coverage tone differently than the UK desk under Dan Milmo
-      (global technology editor, London)? His previous publications (all Gawker Media-adjacent — BuzzFeed, Daily Beast, Gizmodo)
-      share an adversarial/irreverent institutional culture distinct from the Guardian''s social-justice framework. The Gawker-pipeline
-      → Guardian transition tests whether digital-native adversarial framing adapts to or is absorbed by legacy-broadsheet
-      editorial norms.'
+      JournalistHunt). Inherited authorship of TechScape (Guardian''s flagship tech newsletter, founded by Alex Hern July 2021)
+      after Hern departed for The Economist in Oct 2024. Actively writes TechScape as of July 2026 — confirmed bylines include
+      AI/climate-goals tension, Meta business diversification, and X/Musk coverage. As editor, his framing choices shape the
+      Guardian''s entire US tech desk output. Key question: does the editing role (vs reporting) shape Guardian''s US tech
+      coverage tone differently than the UK desk under Dan Milmo (global technology editor, London)? His previous publications
+      (all Gawker Media-adjacent — BuzzFeed, Daily Beast, Gizmodo) share an adversarial/irreverent institutional culture distinct
+      from the Guardian''s social-justice framework. The Gawker-pipeline → Guardian transition tests whether digital-native
+      adversarial framing adapts to or is absorbed by legacy-broadsheet editorial norms.'
     publication: guardian
     role: editor
     source_url: https://talkingbiznews.com/they-re-hiring/guardian-hires-montgomery-to-be-us-tech-editor/
@@ -7649,6 +7651,25 @@ journalists:
     Pulitzer team membership (NSA surveillance reporting) establishes baseline adversarial-toward-government-surveillance
     posture that may transfer to Big Tech surveillance coverage.'
 - career:
+  - beat: politics, economics
+    end: '2012'
+    event_type: hired
+    notes: Started as a blogger at Left Foot Forward, a UK political blog. This blogging background predates his formal
+      journalism career and mirrors early-2010s "blogger-to-journalist" pipeline.
+    publication: freelance
+    role: blogger
+    source_url: https://newsworks.org.uk/10-minutes-with-alex-hern-uk-technology-editor-the-guardian/
+    start: '2010'
+  - beat: economics, digital culture
+    end: '2013'
+    event_type: hired
+    notes: 'Online graduate trainee at New Statesman, hired to run their economics blog. Quickly progressed to writing about
+      digital culture and technology. This is the same New Statesman → Guardian pipeline that Alex Hern used (Hern: 2012-2013
+      New Statesman, then Guardian 2013). Both started as economics-adjacent and pivoted to tech — institutional pattern.'
+    publication: new-statesman
+    role: trainee
+    source_url: https://newsworks.org.uk/10-minutes-with-alex-hern-uk-technology-editor-the-guardian/
+    start: '2012'
   - beat: technology, digital culture, social media, AI
     event_type: hired
     notes: Began freelance journalism career. Early work focused on YouTube and internet culture. Previous editorial roles
@@ -7678,6 +7699,15 @@ journalists:
     role: contributor
     source_url: https://www.theguardian.com/profile/chris-stokel-walker
     start: 2016-01
+  - beat: technology, digital culture, social media
+    event_type: freelance
+    notes: Regular freelance contributor to the BBC. Hosted BBC Radio 4 documentaries including Everyone's a Star (2020)
+      and Artificial Implosion (2023). BBC contributions add another editorial lens — public-service broadcasting vs commercial
+      media framing.
+    publication: bbc
+    role: contributor
+    source_url: https://stokel-walker.com
+    start: '2015'
   - beat: technology, internet culture
     event_type: freelance
     notes: Freelance contributor to the New York Times. Less frequent than Guardian or Wired contributions but significant
@@ -7722,6 +7752,7 @@ journalists:
     role: lecturer
     source_url: https://www.ncl.ac.uk/arts-cultures/staff/profile/chrisstokelwalker.html
     start: 2020-01
+  multi_publication: true
   name: Chris Stokel-Walker
   notes: 'Career: Freelance journalist since ~2013, contributing to NYT, Guardian, Wired, MIT Tech Review, Fast Company, Scientific
     American, BBC, Economist, New Scientist, Washington Post, Tom''s Hardware, LeadDev, and others. Lecturer at Newcastle
@@ -7734,6 +7765,11 @@ journalists:
     — if the same journalist''s tone shifts between Wired and the Guardian, that''s evidence of institutional editorial effect,
     not individual bias; (3) AI/tech platform expertise (author of How AI Ate the World) means his Meta/AI coverage carries
     domain authority; (4) Academic position (PhD, university lecturer) provides additional credibility dimension.'
+  source_urls:
+  - https://stokel-walker.com
+  - https://champions-speakers.co.uk/speaker-agent/chris-stokel-walker
+  - https://cybernews.com/author/chris-stokel-walker/
+  - https://newsworks.org.uk/10-minutes-with-alex-hern-uk-technology-editor-the-guardian/
 - career:
   - beat: N/A (education)
     end: 2017-05
@@ -13327,3 +13363,130 @@ journalists:
   - https://rocketreach.co/aarian-marshall-email_44832389
   - https://www.agri-pulse.com/articles/1698-agri-pulse-communications-inc-hires-new-associate-editor
   - https://muckrack.com/aarian-marshall
+- career:
+  - publication: zdnet
+    role: reporter
+    start: '2010'
+    end: '2015'
+    beat: telecommunications, federal government technology
+    event_type: hired
+    notes: 'Technology journalist at ZDNet Australia. Based in Sydney. Covered telecommunications and federal government technology
+      policy. His Muck Rack bio from this period: "I am primarily a technology journalist for ZDNet. Based in Sydney, Australia
+      and mainly covering telecommunications and federal government technology and the associated political issues."'
+    source_url: https://muckrack.com/joshtaylor
+  - publication: crikey
+    role: reporter
+    start: '2015'
+    end: '2017'
+    beat: technology, politics, media
+    event_type: hired
+    notes: 'Reporter at Crikey, an Australian independent online news outlet. Expanded beat beyond telecoms to broader technology
+      and politics coverage. Crikey is subscription-funded and explicitly progressive/adversarial — tests whether this editorial
+      culture carried forward to Guardian.'
+  - publication: buzzfeed-news
+    role: reporter
+    start: '2017'
+    end: '2019'
+    beat: politics, technology, federal government
+    event_type: hired
+    notes: 'BuzzFeed News Australia. Covered federal politics and technology. Bylines include Bob Hawke''s death coverage (May
+      2019), Pauline Hanson parliamentary incidents, COVIDSafe tracking app critique, banking royal commission. Left around
+      mid-2019.'
+    source_url: https://www.buzzfeed.com/joshtaylor
+  - publication: guardian
+    role: reporter
+    start: '2019'
+    beat: technology, infosec, FOI, politics, media
+    event_type: hired
+    notes: 'Reporter at Guardian Australia. Beat: tech, infosec, FOI, politics, and media. Award-winning, 10+ years covering
+      technology and politics in Australia. Key coverage: Australia under-16 social media ban (June 2026), COVIDSafe app failure,
+      Cambridge Analytica Australian privacy suit, Epic antitrust cases, AI governance, encryption/E2EE debates. Appeared
+      on ABC RN, ABC News, Ten News, The Project, Technogaze podcast. Known for "blank phone and social media account experiment"
+      investigating platform algorithmic feeds (State of Social ''24). ANALYTICAL VALUE: Guardian Australia is a distinct editorial
+      entity from Guardian UK/US — same ownership (Scott Trust) but different editorial leadership (Lenore Taylor, founding
+      EIC). Taylor''s framing of platform regulation from Australian perspective provides a geographic control for comparing
+      how Guardian frames Big Tech in different markets (UK: Dan Milmo regulation focus; US: Blake Montgomery adversarial
+      investigations; AU: Josh Taylor accountability/transparency focus).'
+    source_url: https://stateofsocial.com.au/speaker/josh-taylor/
+  multi_publication: true
+  name: Josh Taylor
+  notes: 'Career: ZDNet → Crikey → BuzzFeed News → Guardian Australia. 10+ year Australian tech journalist covering technology,
+    politics, infosec, and freedom of information. Based in Sydney. Education not confirmed. Contact: josh.taylor@theguardian.com.
+    KEY for MediaScope: (1) ZDNet → Crikey → BuzzFeed → Guardian pipeline tests how adversarial editorial culture (Crikey,
+    BuzzFeed) shapes later Guardian framing; (2) as Guardian Australia''s primary tech reporter, his output shapes an entire
+    geographic edition''s tech coverage; (3) his FOI/transparency focus makes him a natural accountability journalist — the
+    blank-phone experiment investigated algorithmic manipulation directly, unusual methodology for a reporter at a legacy broadsheet;
+    (4) his coverage of Australian-specific tech regulation (social media age bans, encryption debates) provides international
+    comparison data for how Guardian frames similar issues across UK/US/AU markets.'
+  source_urls:
+  - https://muckrack.com/joshtaylor
+  - https://stateofsocial.com.au/speaker/josh-taylor/
+  - https://www.buzzfeed.com/joshtaylor
+- career:
+  - publication: buzzfeed-news
+    role: reporter
+    start: '2015'
+    end: '2016'
+    beat: general
+    event_type: hired
+    notes: 'Early career at BuzzFeed News. Ghaffary is part of the BuzzFeed News alumni diaspora (along with Ryan Mac → NYT,
+      Nitasha Tiku → WaPo, Blake Montgomery → Guardian). This network effect is analytically significant.'
+    source_url: https://talkingbiznews.com/they-re-hiring/ghaffary-to-cover-social-media-for-recode/
+  - publication: elementum
+    role: non_journalism
+    start: '2016'
+    end: '2017'
+    beat: enterprise software
+    event_type: hired
+    notes: 'Non-journalism role at Elementum, an enterprise software startup. Brief industry detour before returning to journalism.
+      Parallels Blake Montgomery''s Cozymeal detour and Zoë Schiffer''s Uber experience — insider tech industry exposure
+      before covering it.'
+    source_url: https://non-stop.kr/recode/authors/shirin-ghaffary
+  - publication: recode
+    role: reporter
+    start: '2017'
+    end: '2021'
+    beat: labor and tech, social media, big tech
+    event_type: hired
+    notes: 'General assignment reporter at Recode (Vox Media). Initially covered labor and tech, then promoted to cover social
+      media and big tech. Also associate producer and host on "Above the Noise" YouTube series (PBS Digital/KQED). UC Berkeley
+      BA, executive news editor of the Daily Californian. Also interned at WSJ and TechCrunch. Originally from San Francisco
+      Bay Area, raised in Silicon Valley next door to Apple HQ.'
+    source_url: https://non-stop.kr/recode/authors/shirin-ghaffary
+  - publication: recode
+    role: senior_correspondent
+    start: '2021'
+    end: '2023-08'
+    beat: social media policy, politics, big tech
+    event_type: promoted
+    notes: 'Promoted to senior correspondent at Vox/Recode. Covered social media policy and its intersection with politics.
+      Co-hosted Google season of "Land of the Giants" narrative podcast series. This podcast gave her deep access to Google''s
+      corporate culture and decision-making — institutional knowledge that carried forward to her Bloomberg AI coverage.'
+    source_url: https://talkingbiznews.com/they-re-hiring/ghaffary-to-cover-social-media-policy-and-politics-for-vox-recode/
+  - publication: bloomberg
+    role: reporter
+    start: '2023-09'
+    beat: AI ethics, policy, OpenAI
+    event_type: hired
+    notes: 'Reporter at Bloomberg covering AI ethics and policy. Started weekly AI newsletter. Coverage focuses on OpenAI,
+      funding/valuation dynamics, ChatGPT, and government regulation of AI. Significant beat: covers the intersection of
+      AI development and policy/politics. Bloomberg is not in our 5-pub tracker but this migration (Vox → Bloomberg) parallels
+      the broader 2023 AI-beat migration wave as legacy financial media invested heavily in dedicated AI coverage.'
+    source_url: https://matternow.com/media-on-the-move-july-2023/
+  multi_publication: true
+  name: Shirin Ghaffary
+  notes: 'Career: BuzzFeed News → Elementum (tech industry) → Recode/Vox → Bloomberg. UC Berkeley BA. Bay Area native, raised
+    in Silicon Valley next to Apple HQ. Executive news editor of Daily Californian. Interned at WSJ and TechCrunch. Co-hosted
+    Google season of "Land of the Giants" podcast. Publicly disclosed ethics statement (no individual stock ownership, no
+    paid speaking from sources). KEY for MediaScope: (1) Recode/Vox → Bloomberg migration tests how Vox Media''s advocacy-journalism
+    framing (Recode was founded by Kara Swisher, one of tech journalism''s most adversarial voices) adapts to Bloomberg''s
+    financial-wire editorial norms; (2) her AI ethics/policy beat at Bloomberg is precisely where framing matters most —
+    how "AI risk" is characterized (existential vs regulatory vs competitive) shapes public discourse; (3) the BuzzFeed News
+    alumni network (Mac, Tiku, Montgomery, Ghaffary) has now dispersed across NYT, WaPo, Guardian, and Bloomberg — testing
+    whether shared editorial origins produce detectable framing similarities across institutions; (4) her Silicon Valley
+    upbringing and tech industry experience (Elementum) give her insider perspective that may moderate or amplify adversarial
+    framing depending on institutional context.'
+  source_urls:
+  - https://talkingbiznews.com/they-re-hiring/ghaffary-to-cover-social-media-policy-and-politics-for-vox-recode/
+  - https://non-stop.kr/recode/authors/shirin-ghaffary
+  - https://matternow.com/media-on-the-move-july-2023/

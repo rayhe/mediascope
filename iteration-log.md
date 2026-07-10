@@ -17945,3 +17945,31 @@ Expand The Verge coverage from 25 to 34 tracked journalists using 2026 masthead 
 - Tests: 2,147 passed (3 were failing before doc count fixes, all pass now)
 
 **Sources:** Wired masthead (wired.com/about/), Revolving Door Project (therevolvingdoorproject.org/staff/daniel-boguslaw/), Type Investigations (typeinvestigations.org/staff/daniel-boguslaw/), Muck Rack (muckrack.com/daniel-boguslaw, muckrack.com/aarian-marshall-2), Agri-Pulse (agri-pulse.com, hire announcement), CU Boulder CWA profile, Fast Politics podcast (May 29, 2026)
+
+---
+
+### 2026-07-10 01:00 PT — Type B (Journalist/Publication Research)
+
+**Focus:** Guardian technology desk expansion + duplicate journalist fix.
+
+**New profiles:**
+1. **Josh Taylor** — 4 career steps: ZDNet Australia (reporter, 2012-15) → Crikey/BuzzFeed News Australia (reporter/editor, 2015-19) → Guardian Australia (technology reporter, ~2019-present). Sydney-based, covers tech regulation, infosec, privacy, FOI. Key: Guardian's Australian technology desk voice; tests whether institutional Guardian framing persists across geographic bureaus (London vs Sydney).
+2. **Shirin Ghaffary** — 5 career steps: BuzzFeed News (reporter, 2015-16) → Elementum (non-journalism, 2016-17) → Recode/Vox (reporter→senior correspondent, 2017-23) → Bloomberg (AI ethics/policy reporter, 2023-present). UC Berkeley BA, Bay Area native. Part of BuzzFeed News alumni diaspora (Mac→NYT, Tiku→WaPo, Montgomery→Guardian). Tests Vox advocacy-journalism framing → Bloomberg financial-wire norms migration.
+
+**Merged duplicate:**
+3. **Chris Stokel-Walker** — had two separate YAML entries (indices 111 and 206). Merged into single entry with 11 career events (was 8 in original + 6 in duplicate with overlap). Added from duplicate: Left Foot Forward blogger (2010-12), New Statesman trainee (2012-13), BBC contributor (2015). Added `multi_publication: true` flag and 4 `source_urls`. Removed duplicate entry. Root cause: earlier session added him without checking if he already existed.
+
+**Editorial changes:**
+- Blake Montgomery's TechScape newsletter authorship (inherited from Alex Hern, Oct 2024) added to `editorial_changes.yaml`.
+
+**Fixes:**
+- `test_tracker_loads_all_journalists` was failing (207 loaded vs 208 YAML) due to CareerTracker using `name.lower()` as dict key — duplicate Chris Stokel-Walker entries caused overwrite. Fixed by merging.
+- Updated doc counts: 208→207 journalists, 200→199 multi-pub, 630→638 auto-detected migrations across README.md, EDITORIAL_HISTORIES.md, careers_demo.py.
+
+**Counts:**
+- Journalists: 207 (was 205, net +2 after adding 3 and merging 1 duplicate)
+- Multi-publication: 199 (was 197, +2 new multi-pub profiles)
+- Auto-detected migrations: 638 (was 630)
+- Tests: 2,147 passed (97 structural consistency, all green)
+
+**Sources:** ZDNet Australia, Crikey staff pages, Guardian Australia bylines, BuzzFeed News archive, newslocker.com (TechScape transition), newsworks.org.uk (Hern/Stokel-Walker profiles), cybernews.com, stokel-walker.com, champions-speakers.co.uk, talkingbiznews.com, matternow.com, non-stop.kr/recode
