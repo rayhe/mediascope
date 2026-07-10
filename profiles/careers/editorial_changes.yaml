@@ -599,6 +599,16 @@ editorial_changes:
     outgoing: null
     position: associate_editor_guardian_australia
     source_url: https://bandt.com.au/guardian-australia-bolsters-editorial-leadership/
+  - date: 2026-01
+    position: deputy_digital_editor
+    incoming: Siraj Datoo
+    outgoing: null
+    notes: 'Siraj Datoo hired from Bloomberg (9+ year tenure, most recently EMEA Equality Editor) as Deputy Digital Editor.
+      Oversees digital news operations including live blogs and front-page curation. KEY CONTEXT: editorial gatekeeper role
+      that shapes how all Guardian stories (including tech/AI coverage) are surfaced and framed to the digital audience. His
+      equality/DEI beat at Bloomberg creates potential framing carryover into how Guardian handles tech industry diversity
+      and corporate accountability stories. Announced Jan 7, 2026.'
+    source_url: https://talkingbiznews.com/media-news/bloombergs-datoo-joins-guardian/
   mit-tech-review:
   - date: 2017-10
     incoming: Elizabeth Bramson-Boudreau
@@ -666,25 +676,22 @@ editorial_changes:
     source_url: https://talkingbiznews.com/media-news/mit-tech-review-hires-chen-as-tech-reporter/
   - date: 2022-02
     incoming: Allison Arieff
-    notes: 'NEW ROLE: Arieff hired as Editorial Director of Print. Career: Dwell EIC (co-founder,
-      National Magazine Award) → SPUR editorial director → NYT Opinion columnist (2007-2020) →
-      Replica → MIT TR. Launched MIT TR''s first design issue in its 120-year history. UCLA BA
-      History, UC Davis MA Art History. Her hire signaled MIT TR''s investment in design criticism
-      alongside tech reporting — a differentiation play. Departed Dec 2024 for SF Chronicle.'
+    notes: 'NEW ROLE: Arieff hired as Editorial Director of Print. Career: Dwell EIC (co-founder, National Magazine Award)
+      → SPUR editorial director → NYT Opinion columnist (2007-2020) → Replica → MIT TR. Launched MIT TR''s first design issue
+      in its 120-year history. UCLA BA History, UC Davis MA Art History. Her hire signaled MIT TR''s investment in design
+      criticism alongside tech reporting — a differentiation play. Departed Dec 2024 for SF Chronicle.'
     outgoing: null
     position: editorial_director_print
     source_url: https://talkingbiznews.com/media-news/mit-technology-review-appoints-arieff-editorial-director-of-print/
   - date: 2022-07
     incoming: Teresa Elsey
-    notes: 'NEW HIRE: Elsey joined as Editor, Insights — later became Managing Editor for the
-      newsroom. Harvard AB English & American Literature. Previously: NewGlobe (managing editor
-      instructional design, global ed-tech), HMH (senior managing editor digital, ~1,500 ebooks/yr),
-      O''Reilly Media, Emerson College instructor. KEY DUAL ROLE: manages both editorial journalism
-      operations AND MIT TR Insights (sponsored research reports for Databricks, Deloitte, Nokia,
-      Thoughtworks). This dual responsibility creates a potential editorial independence concern —
-      same person overseeing journalistic fact-checking and client-funded research publications.
-      Credited on all major MIT TR projects: 10 Breakthrough Technologies, Innovators Under 35,
-      Hype Correction, Power Hungry.'
+    notes: 'NEW HIRE: Elsey joined as Editor, Insights — later became Managing Editor for the newsroom. Harvard AB English
+      & American Literature. Previously: NewGlobe (managing editor instructional design, global ed-tech), HMH (senior managing
+      editor digital, ~1,500 ebooks/yr), O''Reilly Media, Emerson College instructor. KEY DUAL ROLE: manages both editorial
+      journalism operations AND MIT TR Insights (sponsored research reports for Databricks, Deloitte, Nokia, Thoughtworks).
+      This dual responsibility creates a potential editorial independence concern — same person overseeing journalistic fact-checking
+      and client-funded research publications. Credited on all major MIT TR projects: 10 Breakthrough Technologies, Innovators
+      Under 35, Hype Correction, Power Hungry.'
     outgoing: null
     position: managing_editor
     source_url: https://theorg.com/org/mit-technology-review/org-chart/teresa-elsey
