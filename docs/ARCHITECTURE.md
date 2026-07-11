@@ -321,6 +321,27 @@ Extend the framing detection by adding new device patterns. The framing detector
 
 The source stance classifier uses configurable lists of negative and positive stance terms plus adversarial attribution verbs. Add domain-specific terms for specialized coverage areas (e.g., environmental, financial, defense).
 
+## Known Limitations & Open Research Questions
+
+### Sentiment Correction Gaps
+
+Two documented failure classes lack correction paths:
+
+1. **Financial journalism inflation (Path K proposed):** Investment recommendation vocabulary (e.g., "strong buy," "bonanza," "attractive valuation") inflates VADER scores by +0.3–0.5 regardless of editorial stance. The proposed Path K would use headline sentiment as an anchor combined with framing device density. See [METHODOLOGY.md §16](METHODOLOGY.md#16-financial-journalism-sentiment-bias) for full analysis and design constraints.
+
+2. **Structural-split articles (Path L proposed):** Articles with an adversarial editorial lead followed by a promotional corporate-quote tail (or vice versa) produce VADER scores dominated by whichever half is longer, not by the framing that shapes reader takeaway. No existing correction path fires because the article isn't uniformly adversarial. See [METHODOLOGY.md §16.7](METHODOLOGY.md#167-structural-split-articles-no-correction-path) for details.
+
+### Source Extraction
+
+- **LinkedIn as a data source:** Career data enrichment from LinkedIn is blocked by Chrome App-Bound Encryption, limiting automated profile expansion. Career entries must be manually researched from public sources (conference bios, author pages, press releases).
+- **Freelance/concurrent roles:** The migration detector uses gap analysis to distinguish genuine job changes from concurrent freelance roles, but short-duration freelance stints (< 3 months) between permanent positions can be miscounted as migrations.
+
+### Scope
+
+- The toolkit currently tracks **6 publications** with full ownership profiles. Adding publications requires manual research into ownership chains, revenue relationships, and litigation connections (see [ADDING_PUBLICATIONS.md](ADDING_PUBLICATIONS.md)).
+- Entity clusters (83) are optimized for the tech/media/finance domain. Analysis of other verticals (e.g., pharmaceutical, energy, defense) would require domain-specific cluster expansion.
+- The DiD analysis for journalist migrations requires a minimum of 5 articles per publication per journalist — low-output contributors cannot be analyzed even when their career path is well-documented.
+
 ## Dependencies
 
 ### Required

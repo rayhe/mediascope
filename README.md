@@ -567,6 +567,17 @@ Every article analysis improvement requires at least one regression test before 
 
 MIT License. See [LICENSE](LICENSE).
 
+## Known Limitations
+
+MediaScope documents its own gaps with the same rigor it applies to media analysis:
+
+- **Sentiment correction coverage:** Two article genres lack correction paths — financial journalism (VADER inflated by investment vocabulary) and structural-split articles (adversarial lead + promotional quote tail). Both are fully documented with proposed solutions in [METHODOLOGY.md §16](docs/METHODOLOGY.md#16-financial-journalism-sentiment-bias).
+- **Career data sourcing:** LinkedIn automation is blocked; journalist career entries require manual research from public sources (conference bios, author pages, press releases).
+- **Domain specificity:** Entity clusters and framing devices are optimized for tech/media coverage. Other verticals require domain-specific expansion.
+- **Minimum data thresholds:** DiD migration analysis requires ≥5 articles per journalist per publication. Low-output contributors can't be analyzed even with documented career paths.
+
+See [ARCHITECTURE.md § Known Limitations](docs/ARCHITECTURE.md#known-limitations--open-research-questions) for the full list.
+
 ## Disclaimer
 
 MediaScope is a transparency tool for media accountability research. It is designed to surface undisclosed conflicts of interest and measure coverage asymmetry using statistical methods. It does not make editorial judgments about whether coverage is "right" or "wrong" — it measures whether coverage patterns correlate with financial interests.

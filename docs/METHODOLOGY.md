@@ -1267,6 +1267,43 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 **Validation requirement:** Path K should be validated against all 4 financial articles in the annotated corpus before deployment, plus at least 3 additional financial articles from different publications (Seeking Alpha, Investor's Business Daily, Bloomberg Opinion) to ensure cross-publication generalization.
 
+### 16.7 Structural-Split Articles (No Correction Path)
+
+A second documented gap in the correction pipeline affects articles with a **structural split** — an adversarial editorial lead followed by a promotional corporate-quote tail (or vice versa). In these articles, VADER bag-of-words scoring is overwhelmed by whichever half contains more lexically positive/negative vocabulary, regardless of the *reader's* takeaway, which is dominated by the lead.
+
+**Discovery article:** Washington Examiner "Privacy advocates fret over Meta image tool that works on public accounts" (Jul 10, 2026) — Overall tone **+0.65** (VADER inflated by Meta's promotional self-quotes in paragraphs 6–15), manual assessment **+0.1 to +0.2** (adversarial framing in the lead drives the reader takeaway).
+
+#### The Pattern
+
+| Article Section | Character | VADER Contribution |
+|---|---|---|
+| Paragraphs 1–5 | Adversarial editorial setup: concern framing, privacy critique, advocacy quotes | Negative |
+| Paragraphs 6–15 | Extended block-quoted corporate defense: Meta spokesperson, product messaging, optimistic framing | Strongly positive |
+| Final paragraphs | Brief editorial reframe or kicker | Mildly negative |
+
+VADER's lexicon sums all three sections equally, so the longer corporate-defense section dominates the composite score. Existing correction paths don't fire because:
+
+- **Path A** requires agency < −0.3 (the article's overall agency isn't that negative due to the promotional section)
+- **Path B** requires raw ∈ (−0.5, 0) (the raw score is positive)
+- **Path D** requires ≥7 loaded language terms (typically fewer in this structure)
+- **Kicker framing** fires when the tail is negative, not when it's the lead that carries the critique
+
+#### Why This Is Hard
+
+Unlike adversarial investigative journalism (where the *entire* article is editorially critical but lexically measured), structural-split articles have genuinely mixed lexical content. A simple framing override would mis-correct articles where the corporate defense IS the point (e.g., company response stories, press release coverage). The correction needs to:
+
+1. **Detect the split** — identify where the editorial voice yields to extended direct quotation
+2. **Weight position** — the lead establishes the frame; a reader who stops at paragraph 5 walks away with the adversarial impression
+3. **Distinguish block-quoted defense from editorial prose** — outsourced intensity detection partially addresses this, but doesn't yet weight by article position
+
+#### Interim Recommendation
+
+When analyzing structural-split articles, compare the **emotional intensity in editorial prose** (outsourced intensity module) with the overall tone score. A low emotional intensity in editorial prose combined with a high overall tone score is a strong signal of the structural-split problem. Report both the composite score and the outsourced intensity breakdown, and flag articles where the editorial-prose emotional intensity diverges from the composite by > 0.3 as "potential structural-split distortion."
+
+#### Future Work: Path L (Structural-Split Correction)
+
+A potential correction would segment articles into editorial-prose and block-quoted sections, compute VADER independently on each, and weight the editorial-prose score higher (reflecting the journalist's framing authority). The outsourced intensity module already performs the prose/quote split — extending it with positional weighting (lead paragraphs weighted 2× over tail) could address this failure class. Validation would require at least 5 structural-split articles from distinct publications.
+
 ---
 
 ## 17. Annotated Corpus Statistics

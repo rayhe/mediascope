@@ -19394,3 +19394,46 @@ Gizmodo LED tamper article ("Destroying the Privacy LED on Meta Smart Glasses Wi
 **Commit:** `5fe1868` — "Type C: Atlantic profile — Apple v. OpenAI cross-conflict (Jul 11)"
 **Tests:** 2,237 passed, 0 failed
 **Sources:** Reuters, CNN, USA Today, Barron's, Fox Business, MarketWatch, NY Post, WSJ (all Jul 10-11, 2026)
+
+### Type D: Toolkit Quality — recidivism_framing device + count fixes (2026-07-11 ~10:00 PT)
+
+**Focus:** Implement `recidivism_framing` (#97), fix stale doc counts
+
+**Changes:**
+- **New device:** `recidivism_framing` — 7 regex patterns for "once again/yet again + negative verb", "continues to + negative verb", "not for the first time", "has a history of + negative", "serial/repeat/habitual + offender language", "track record of + negative", "keeps + violating"
+- **New test file:** `test_recidivism_framing.py` — 20 positive + 5 negative cases
+- **Count updates:** 96→97 device types, 89→90 pattern-matched, 564→571 total patterns, 79→80 Extended tier, 2237→2262 tests, 98→99 test files
+- **Migration count fix:** Reverted 871→689 in EDITORIAL_HISTORIES.md and README.md (871 was raw career moves, 689 is CareerTracker's gap-analysis migration count)
+- **Multi-pub count fix:** Reverted 218→214 in EDITORIAL_HISTORIES.md (matches YAML computed value)
+- **Test fixes:** Updated hardcoded pattern counts in test_foxbusiness (89→90), test_nyt_ai_reviews (89→90 + added recidivism_framing to expected set), test_structural_consistency (96→97, 89→90, 564→571)
+
+**Commit:** `a6c5dbc` — "Add recidivism_framing device (#97) with 7 patterns, 25 tests; fix stale counts"
+**Tests:** 2,262 passed, 0 failed
+
+
+### Type D: Toolkit Quality — Known Limitations documentation + structural-split gap (2026-07-11 ~11:00 PT)
+
+**Focus:** Document known correction pipeline gaps, add Known Limitations sections to ARCHITECTURE.md and README.md
+
+**Changes:**
+
+1. **METHODOLOGY.md — New §16.7: Structural-Split Articles**
+   - Documented the structural-split VADER failure class (adversarial editorial lead + promotional corporate-quote tail)
+   - Discovery article: Washington Examiner "Privacy advocates fret over Meta image tool" (Jul 10, 2026) — VADER +0.65, manual +0.1–0.2
+   - Explained why existing paths A, B, D, and kicker_framing don't fire on this structure
+   - Documented why correction is hard (mixed lexical content, must distinguish block-quoted defense from editorial voice)
+   - Added interim recommendation: compare outsourced intensity editorial-prose score against composite to flag distortion
+   - Proposed Path L design: segment articles into editorial-prose and block-quoted sections, weight editorial-prose and lead paragraphs higher, extend outsourced intensity module with positional weighting
+
+2. **ARCHITECTURE.md — New "Known Limitations & Open Research Questions" section**
+   - Sentiment correction gaps: financial journalism (Path K) and structural-split (Path L)
+   - Source extraction: LinkedIn blocked, freelance gap analysis edge cases
+   - Scope: 6 publications, tech/media domain specificity, DiD minimum data thresholds
+
+3. **README.md — New "Known Limitations" section before Disclaimer**
+   - Concise summary of all documented gaps with link to detailed ARCHITECTURE.md section
+   - Covers: correction path coverage, career data sourcing, domain specificity, data thresholds
+
+**Verification:** All 2,262 tests passing (113 structural consistency tests, 0 failures). No guarded counts changed — all additions are new sections.
+
+**Rationale:** The QUALITY_STANDARDS.md §3 requires every analysis to include a Limitations section. The toolkit's own docs should meet the same standard. The structural-split gap was identified in the 05:00 PT Type A iteration (Washington Examiner analysis) and now has a permanent home in the methodology docs.
