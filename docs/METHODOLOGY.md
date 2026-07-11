@@ -185,7 +185,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 96 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (79 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 97 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (80 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -773,7 +773,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 96-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 97-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1421,14 +1421,14 @@ The EU DSA "Addictive Design" cluster (Jul 10, 2026) is the widest genre-control
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 96 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 97 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|
 | Initial taxonomy (through Jun 22) | 10 core + ~30 extended | Wired Meta coverage, NYT AI voluntary review, Guardian UK crackdown |
 | Jun 23–30 | ~20 extended + 3 structural | Prediction market articles (Arena), Wynn-Williams lawsuit cluster, Brain2Qwerty research |
 | Jul 1–5 | ~12 extended + 3 structural | Subscription paywall cluster (Conversation Focus), financial journalism expansion, Cannes contractor coverage |
-| Jul 6–10 | 4 extended (regulatory_risk_subordination, recovery_narrative, grudging_concession, ultimatum_framing) | EU DSA 5-way investor expansion cluster (IBD, Investopedia added to Reuters/CNN/WSJ); investor_advisory observational variant documented; MarketWatch Meta stock rebound (three-beat decline→catalyst→recovery architecture); Gizmodo LED tamper cross-narrative analysis (same-outlet calibration pair with super-sensing article); NY Post EU DSA ultimatum framing (procedural compression into binary "do X or Y" construction) |
+| Jul 6–10 | 4 extended (regulatory_risk_subordination, recovery_narrative, grudging_concession, ultimatum_framing) + recidivism_framing code implementation | EU DSA 5-way investor expansion cluster (IBD, Investopedia added to Reuters/CNN/WSJ); investor_advisory observational variant documented; MarketWatch Meta stock rebound (three-beat decline→catalyst→recovery architecture); Gizmodo LED tamper cross-narrative analysis (same-outlet calibration pair with super-sensing article); NY Post EU DSA ultimatum framing (procedural compression into binary "do X or Y" construction) |
 
 The most productive single article for framing device discovery was the **Wired "Meta Is Charging a Subscription" article (Jul 2, 2026)**, which contributed 4 new device types (expert_contradiction, loss_leader_framing, consumer_ownership, usage_dismissal_undercut) and led to Path J discovery.
 

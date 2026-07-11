@@ -244,6 +244,6 @@ class TestStructuralConsistency:
         """Pattern-matched device type count should be 89."""
         from mediascope.analyze.framing import _DEVICE_PATTERNS
 
-        assert len(_DEVICE_PATTERNS) == 89, (
-            f"Expected 89 pattern-matched device types, got {len(_DEVICE_PATTERNS)}"
+        assert len(_DEVICE_PATTERNS) == 90, (
+            f"Expected 90 pattern-matched device types, got {len(_DEVICE_PATTERNS)}"
         )

@@ -8044,21 +8044,89 @@ _ULTIMATUM_FRAMING_PATTERNS = [
 _DEVICE_PATTERNS["ultimatum_framing"] = _ULTIMATUM_FRAMING_PATTERNS
 
 
+# ── recidivism_framing ─────────────────────────────────────────────────
+# Entity framed as serial offender through temporal recurrence markers.
+# Distinct from repeated_disruption (organizational instability narrative)
+# and loaded_language (individual word choices).  Recidivism framing
+# constructs a *pattern-of-behavior* narrative: the entity is not just
+# doing something bad *now*, it has done it before and will do it again.
+#
+# Discovered during cross-article analysis of FTC/AG penalty coverage
+# (Jul 2026): "Meta has a long history of privacy violations," "once
+# again caught violating its own promises," "continues to flout its
+# commitments to regulators."
+
+_RECIDIVISM_FRAMING_PATTERNS: list[re.Pattern] = [
+    # "once again" / "yet again" / "again and again" + negative action
+    re.compile(
+        r"\b(?:once again|yet again|again and again|time and again|"
+        r"for the (?:second|third|fourth|\w+) time)\b"
+        r".{0,80}?"
+        r"\b(?:caught|violat|breach|fail|broke|flout|ignor|deceiv|misled"
+        r"|accused|fined|penali[sz]|censur)\w*\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "continues to" / "has continued to" + negative verb
+    re.compile(
+        r"\b(?:continues? to|has continued to)\s+"
+        r"(?:violat|breach|flout|ignor|fail|deceiv|mislead|break|abus"
+        r"|exploit|circumvent|disregard|undermin|evad)\w*\b",
+        re.IGNORECASE,
+    ),
+    # "keeps violating / breaking / flouting"
+    re.compile(
+        r"\bkeeps?\s+(?:\w+\s+)?(?:violat|break|flout|ignor|deceiv|mislead"
+        r"|circumvent|disregard|evad)\w*\b",
+        re.IGNORECASE,
+    ),
+    # "not for the first time" / "not the first time"
+    re.compile(
+        r"\bnot (?:for )?the first time\b",
+        re.IGNORECASE,
+    ),
+    # "has a (?:long )?history of" + negative noun
+    re.compile(
+        r"\bha(?:s|ve|d) a (?:long |troubled |well-documented |extensive )?"
+        r"history of "
+        r"(?:violat|breach|fail|mislead|deceiv|ignor|flout|abus|exploit"
+        r"|privacy|antitrust|regulatory)\w*\b",
+        re.IGNORECASE,
+    ),
+    # "serial" / "repeat" / "habitual" + offender/violator language
+    re.compile(
+        r"\b(?:serial|repeat(?:ed)?|habitual|chronic|persistent|systemic|"
+        r"pattern of)\s+"
+        r"(?:offend|violat|abus|breach|fail|misconduct|non-?compliance"
+        r"|infring|deceiv)\w*\b",
+        re.IGNORECASE,
+    ),
+    # "track record of" + negative
+    re.compile(
+        r"\btrack record of\s+"
+        r"(?:violat|breach|fail|mislead|deceiv|ignor|flout|abus|exploit"
+        r"|broken|empty|unfulfilled)\w*\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["recidivism_framing"] = _RECIDIVISM_FRAMING_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 89 pattern-matched device types plus 7 structural
-    post-pass types (96 total).
+    Scans for 90 pattern-matched device types plus 7 structural
+    post-pass types (97 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (87): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (90): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_displacement,
@@ -8068,41 +8136,41 @@ def detect_framing_devices(
     corporate_reassurance_undercut, cross_publication_import,
     default_burden_privacy, defensive_verb_framing,
     denial_contradiction,
-    editorial_aside, editorial_deflation, editorial_dramatization,
+    editorial_aside, editorial_cross_promotion,
+    editorial_deflation, editorial_dramatization,
     emotion_attribution, emotional_appeal,
     escalation_amplification, expert_consensus_authority,
     expert_contradiction,
     failure_precedent, false_balance,
     financial_reassurance,
-    geopolitical_regulatory_pressure, guilt_by_association,
+    geopolitical_regulatory_pressure, grudging_concession,
+    guilt_by_association,
     heritage_nostalgia, historical_legitimation,
     hypocrisy_frame, industry_normalization_undercut,
-    ironic_quotation, isolation_framing,
+    investor_advisory, ironic_quotation, isolation_framing,
     juxtaposition, latecomer_narrative, litigation_cascade,
     litigation_framing,
     loaded_language, loss_leader_framing,
     marginal_endorsement, market_verdict,
-    military_techno_optimism, outsourced_intensity,
-    overbuilding_narrative,
+    military_techno_optimism, narrative_reframing,
+    outsourced_intensity, overbuilding_narrative,
     pathologizing_metaphor, policy_reversal, power_asymmetry,
     precedent_analogy, precedent_framing,
     prescriptive_solutionism,
-    pressure_language, recovery_narrative, grudging_concession,
-    ultimatum_framing,
-    refusal_amplification, regulatory_favoritism,
+    pressure_language, recidivism_framing,
+    recovery_narrative, refusal_amplification,
+    regulatory_favoritism, regulatory_risk_subordination,
     regulatory_shadow, repeated_disruption, rhetorical_question,
-    sarcastic_correction, scandal_comparison, scale_magnitude,
-    selective_omission_signal, strategic_disclosure,
-    selective_rehabilitation, self_referential_investigation,
+    sarcastic_correction, scale_magnitude, scandal_comparison,
+    selective_omission_signal, selective_rehabilitation,
+    self_referential_investigation,
     silence_as_guilt, slippery_slope, sovereignty_framing,
-    strategic_reversal, straw_man, talent_hemorrhage,
-    taxonomy_framing, timeline_implication,
-    two_tier_treatment, usage_dismissal_undercut,
-    valuation_comparison, worker_replacement_irony,
-    narrative_reframing, dismissive_qualifier,
-    bull_bear_structuring, analyst_authority,
-    investor_advisory, editorial_cross_promotion,
-    regulatory_risk_subordination, and ultimatum_framing.
+    strategic_disclosure, strategic_reversal, straw_man,
+    talent_hemorrhage, taxonomy_framing, timeline_implication,
+    two_tier_treatment, ultimatum_framing,
+    usage_dismissal_undercut, valuation_comparison,
+    worker_replacement_irony,
+    bull_bear_structuring, dismissive_qualifier.
 
     Structural post-pass (7): delayed_defense, kicker_framing,
     analogy_stacking, speculative_framing, trend_bundling,

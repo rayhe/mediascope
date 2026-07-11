@@ -374,8 +374,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 89, (
-            f"Expected 89 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 90, (
+            f"Expected 90 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -528,6 +528,8 @@ class TestFramingDeviceRegistry:
             "grudging_concession",
             # Ultimatum framing (1) — multi-stage process compressed into binary "do X or Y"
             "ultimatum_framing",
+            # Recidivism framing (1) — "once again" / habitual offender language
+            "recidivism_framing",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual
