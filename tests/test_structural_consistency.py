@@ -1001,8 +1001,8 @@ class TestEmotionalLanguageCount:
         """EMOTIONAL_LANGUAGE should contain exactly 612 unique terms."""
         from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
 
-        assert len(EMOTIONAL_LANGUAGE) == 861, (
-            f"Expected 861 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
+        assert len(EMOTIONAL_LANGUAGE) == 875, (
+            f"Expected 875 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
             "If you added or removed terms, update this test to the new count.\n"
             "Also check for duplicates: len(set(EMOTIONAL_LANGUAGE)) should match."
         )
@@ -2154,6 +2154,8 @@ class TestAnnotatedArticleCountConsistency:
             ("techlusive", "techlusive"),
             ("bloomberg", "bloomberg"),
             ("investopedia", "investopedia"),
+            # Added 2026-07-11 Type A
+            ("washexaminer", "washexaminer"),
         ]
         for f in sample_dir.glob("*_analysis.md"):
             name = f.stem.replace("_analysis", "")
@@ -2450,4 +2452,81 @@ class TestEntityReferenceConsistency:
         assert "ENTITY_REFERENCE.md" in doc, (
             "ARCHITECTURE.md should reference ENTITY_REFERENCE.md. "
             "Add it to the file tree and entity detection section."
+        )
+
+
+class TestPrivacyConcernTerms:
+    """Tests for privacy concern / criticism-framing emotional terms added
+    in Jul 11 2026 iteration (Washington Examiner Muse Image article)."""
+
+    def test_fret_terms_in_emotional_language(self):
+        from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
+        for term in ["fret", "frets", "fretting", "fretted"]:
+            assert term in EMOTIONAL_LANGUAGE, f"'{term}' missing from EMOTIONAL_LANGUAGE"
+
+    def test_sparking_terms_in_emotional_language(self):
+        from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
+        for term in ["sparking criticism", "sparking backlash", "sparking concerns"]:
+            assert term in EMOTIONAL_LANGUAGE, f"'{term}' missing from EMOTIONAL_LANGUAGE"
+
+    def test_raised_concerns_in_emotional_language(self):
+        from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
+        assert "raised concerns" in EMOTIONAL_LANGUAGE
+
+
+class TestThreeWordOrgSourceExtraction:
+    """Tests for 3-word org name source extraction fix (Jul 11 2026).
+    
+    Regression: 'Creative Artists Agency wrote in a statement' was parsed
+    as source='Artists Agency' because Pattern 1 (2-word person name + verb)
+    matched before the org patterns.  Fix: Pattern 1 now checks if the match
+    is the tail of a 3-word org in _KNOWN_ORGS_LOWER."""
+
+    def test_creative_artists_agency_extracted_as_org(self):
+        from mediascope.analyze.sources import extract_sources
+        text = (
+            '"No one\'s name should be used without consent," '
+            'Creative Artists Agency wrote in a statement to TheWrap.'
+        )
+        sources = extract_sources(text)
+        names = [s.name for s in sources]
+        assert "Creative Artists Agency" in names, (
+            f"Expected 'Creative Artists Agency' in sources, got {names}"
+        )
+        # Should NOT have "Artists Agency" as a separate source
+        assert "Artists Agency" not in names, (
+            "'Artists Agency' should not appear — Pattern 1 should skip 3-word org tails"
+        )
+
+    def test_creative_artists_agency_is_organizational(self):
+        from mediascope.analyze.sources import extract_sources
+        text = (
+            '"Protect creators," Creative Artists Agency wrote in a statement.'
+        )
+        sources = extract_sources(text)
+        caa = [s for s in sources if s.name == "Creative Artists Agency"]
+        assert len(caa) == 1
+        assert caa[0].source_type == "organizational"
+
+
+class TestNewEntityClusters:
+    """Tests for Black Forest Labs and Creative Artists Agency entity clusters
+    added in Jul 11 2026 iteration."""
+
+    def test_black_forest_labs_detected(self):
+        from mediascope.analyze.entities import detect_entities
+        text = "Meta invested $100 million in Black Forest Labs for image generation."
+        mentions = detect_entities(text)
+        canonicals = {m.canonical_name for m in mentions}
+        assert "Black Forest Labs" in canonicals, (
+            f"Expected 'Black Forest Labs' in entities, got {canonicals}"
+        )
+
+    def test_creative_artists_agency_detected(self):
+        from mediascope.analyze.entities import detect_entities
+        text = "Creative Artists Agency issued a statement opposing AI training on public images."
+        mentions = detect_entities(text)
+        canonicals = {m.canonical_name for m in mentions}
+        assert "Creative Artists Agency" in canonicals, (
+            f"Expected 'Creative Artists Agency' in entities, got {canonicals}"
         )

@@ -2,6 +2,35 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-11 04:00 PT — Type D: Toolkit Quality & Documentation (ENTITY_REFERENCE.md)
+
+**Created `docs/ENTITY_REFERENCE.md`** — the fourth and final quick-reference card, completing the set alongside FRAMING_REFERENCE.md, TOPIC_REFERENCE.md, and SOURCE_ANALYSIS_REFERENCE.md.
+
+The entity detection system (1,339 lines in `entities.py`) had no compact reference card despite being the **first stage** of the analysis pipeline — every downstream system (topics, sentiment, framing, asymmetry, conflict disclosure) depends on it. The entity module has 81 clusters with 804 aliases, 60 custom regex patterns, and 4 disambiguation filter layers, all undocumented outside the code itself.
+
+**New file: `docs/ENTITY_REFERENCE.md` (~490 lines)**
+- **Part 1–12:** All 81 clusters organized into 12 categories (Big Tech, Semiconductor, AI/Cloud, Consumer, XR/Wearables, Government, Defense, Media, Finance, Academic, Energy, Misc)
+- **Part 6 Appendix:** 4 disambiguation filter layers documented: homograph verb filters, lookbehind homograph filters, case-sensitive entity filters, custom regex context windows
+- **Part 7 Appendix:** How to add new entities (code + YAML + standalone YAML)
+- **Part 8 Appendix:** Cluster size distribution (3 clusters with 50+ aliases, 36 with 1–4)
+- **Part 9 Appendix:** Entity → pipeline interactions (asymmetry, framing, source analysis, conflict disclosure)
+
+**Cross-references updated:**
+- README.md: "Detects entities" line now references ENTITY_REFERENCE.md; docs table row added
+- ARCHITECTURE.md: file tree entry added, entity detection section now references ENTITY_REFERENCE.md, fixed stale "78-cluster" → "81 clusters" count
+
+**Tests: +8 new (TestEntityReferenceConsistency)**
+- `test_entity_reference_exists` — file existence
+- `test_entity_reference_cluster_count_header` — "all N entity clusters" matches code
+- `test_entity_reference_alias_count_header` — "(N aliases)" matches code
+- `test_entity_reference_cluster_completeness` — every code cluster appears in tables
+- `test_entity_reference_no_phantom_clusters` — no table clusters absent from code
+- `test_entity_reference_custom_regex_count` — custom/auto regex counts match code
+- `test_entity_reference_in_readme` — README.md cross-reference exists
+- `test_entity_reference_in_architecture` — ARCHITECTURE.md cross-reference exists
+
+**Counts:** 2,230 tests (was 2,222), 98 test files, 0 failures. Commit `9592282`, pushed to GitHub.
+
 ## 2026-07-11 03:00 PT — Type C: Ownership & Funding Deep Dive (Guardian Cohere correction)
 
 **Major factual correction:** Guardian was incorrectly classified as `strategic_licensing_over_litigation`. Research confirmed Guardian News & Media Limited is a **named plaintiff** in *Advance Local Media v. Cohere Inc.* (SDNY 1:25-cv-01305, Judge McMahon, MTD denied 2025-11-13). Reclassified to `triple_path_ai_strategy` — Guardian uniquely pursues litigation + licensing + standards-setting simultaneously.

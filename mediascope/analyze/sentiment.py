@@ -631,6 +631,16 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "presumably",
     "long overdue",
     "slop generator",
+    # Privacy concern / criticism-framing vocabulary — terms used to frame
+    # corporate decisions as alarming or controversial without traditionally
+    # loaded words.  VADER reads these as neutral.  Gap discovered via
+    # Washington Examiner Muse Image privacy article (Jul 10, 2026):
+    #   "Privacy advocates fret" / "sparking criticism" / "concerns have arisen"
+    "fret", "frets", "fretting", "fretted",
+    "sparking criticism", "sparking backlash", "sparking concerns",
+    "sparking controversy", "sparking outrage", "sparking debate",
+    "concerns have arisen", "concerns arose", "raised concerns",
+    "privacy advocates",
 ]
 
 # Passive/victim vs. active/powerful framing indicators

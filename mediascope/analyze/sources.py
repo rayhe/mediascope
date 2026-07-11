@@ -155,6 +155,7 @@ _KNOWN_ORGS_LOWER: set[str] = {
     "bytedance", "reddit", "pinterest", "discord", "spotify",
     "netflix", "uber", "lyft", "airbnb", "stripe", "shopify",
     "reuters", "bloomberg",
+    "creative artists agency", "caa",
 }
 _NAME_STOP_FIRST_WORDS: set[str] = {
     "After", "Before", "Because", "Since", "While", "During",
@@ -758,6 +759,18 @@ def extract_sources(text: str) -> list[SourceMention]:
         verb = m.group(2).strip().lower()
         if name in seen_names:
             continue
+
+        # Check if this 2-word match is actually the tail of a 3-word org name.
+        # Look back for a preceding capitalized word.  E.g. "Creative Artists
+        # Agency wrote" matches "Artists Agency" at Pattern 1, but the full org
+        # is "Creative Artists Agency".  If the 3-word name (lowered) is in
+        # _KNOWN_ORGS_LOWER, skip — the org patterns below will handle it.
+        pre_match = text[max(0, m.start() - 30):m.start()]
+        _pre_word_m = re.search(r'([A-Z][a-z]+)\s+$', pre_match)
+        if _pre_word_m:
+            three_word = f"{_pre_word_m.group(1)} {name}"
+            if three_word.lower() in _KNOWN_ORGS_LOWER:
+                continue
 
         # Filter out false-positive names where the first word is a common
         # English word that happened to be capitalised at sentence start
@@ -1791,8 +1804,12 @@ def extract_sources(text: str) -> list[SourceMention]:
             r"([A-Z][a-z]+ [A-Z][a-z]+)\b",
         ),
         # "[Company] said/told/confirmed in [a statement/an emailed response]"
+        # Supports up to 3-word org names (e.g. "Creative Artists Agency wrote
+        # in a statement").  Extended from 2-word in Jul 11 2026 iteration
+        # after Washington Examiner Muse Image analysis: "Creative Artists
+        # Agency" was truncated to "Artists Agency".
         re.compile(
-            rf"\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)"
+            rf"\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+){{0,2}})"
             rf"\s+({verb_alternation})"
             rf"\s+(?:in (?:a|an|the|its)\s+(?:statement|emailed? (?:response|statement|comment)|"
             rf"blog post|press release|filing|report|letter|memo|announcement))\b",
@@ -1800,8 +1817,9 @@ def extract_sources(text: str) -> list[SourceMention]:
         # "[Company] said/told/reported" — direct organizational attribution
         # without requiring "in a statement" qualifier.  Validated against
         # _KNOWN_ORGS below to prevent false positives from person surnames.
+        # Supports up to 3-word org names.
         re.compile(
-            rf"\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+)?)"
+            rf"\b([A-Z][a-z]+(?:\s+[A-Z][a-z]+){{0,2}})"
             rf"\s+({verb_alternation})\b",
         ),
         # "[ACRONYM] ... said/told" — all-caps acronym org with possible
@@ -1919,6 +1937,9 @@ def extract_sources(text: str) -> list[SourceMention]:
         # French media associations — discovered in Reuters French
         # antitrust article (Jul 2026).
         "dvp", "apig",
+        # Entertainment/talent agencies — discovered in Washington Examiner
+        # Muse Image article (Jul 2026).
+        "creative artists agency", "caa",
     }
 
     for pat in org_source_patterns:

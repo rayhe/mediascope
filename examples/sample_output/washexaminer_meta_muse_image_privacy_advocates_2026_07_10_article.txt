@@ -1,0 +1,45 @@
+Title: Privacy advocates fret over Meta image tool that works on public accounts
+Source: Washington Examiner
+URL: https://www.washingtonexaminer.com/policy/technology/4642733/privacy-advocates-fret-meta-image-tool-public-accounts/
+Date: July 10, 2026
+Author: Not attributed (staff report)
+
+Meta's new artificial intelligence image-generation technology allows users to modify pictures on public accounts to create new images, sparking criticism among tech analysts and users.
+
+Users can manipulate and edit images from any public Instagram account, including profile pictures, unless the user changes a setting available only in the Instagram app under the "Sharing and reuse" tab in the settings menu.
+
+"This is the sort of setting that should absolutely be opt-in for Instagram users," Electronic Frontier Foundation analyst Thorin Klosowski told the Washington Examiner. "It's a new use of the photos they've been posting publicly for years, and certainly wasn't on anyone's mind when they signed up for Instagram years ago."
+
+Even if a user now disables the use of AI image generation on their content, the existing AI-generated images won't be removed.
+
+Meta did not respond to a request for comment.
+
+AI model Muse image, developed by Meta Superintelligence Labs and released Tuesday, draws on Instagram for social context, composes from multiple references, and works through self-refining behavior to generate an image.
+
+"Muse Image is our most advanced image generation model yet," Meta said in a statement. "It follows instructions faithfully [and] edits with precision."
+
+Alongside its release, Meta shared an early preview of the Muse video, built on the same pretraining base.
+
+Meta is also expanding its presence in the AI ecosystem by introducing an upgraded version of Muse Spark, its reasoning engine. The new model introduced Thursday is called Muse Spark 1.1, representing Meta's latest efforts to pursue its vision of personal "superintelligence" and compete with Anthropic and OpenAI.
+
+"We're actively building remarkable things in key areas of AI that are shaping an AI-driven future," Meta said in a statement.
+
+Concerns have arisen about whether these AI image-generation technologies are prioritizing users' and creators' safety and privacy.
+
+"No one's name, image, likeness, voice or creative work should be used by any third party, including AI models, without clear, documented consent," Creative Artists Agency wrote in a statement to TheWrap. "True innovation puts creators first: respecting their rights, protecting their livelihoods and giving them real control, not handing it over to platforms."
+
+Before releasing its own models, Meta had relied on third-party AI models, including Midjourney and Black Forest Labs, for image and video generation, according to CNBC.
+
+For instance, the company invested more than $100 million to use Black Forest Labs' AI for image processing in 2025, according to Bloomberg.
+
+As of today, Muse image is now available in the Meta app and on meta.ai, on Instagram stories in the United States, and on WhatsApp in select countries. It is expected to be available on Facebook soon. Muse Video will soon be available to creators and Meta AI.
+
+Meta also launched a public preview of the new Meta Model API available in "Thinking" mode, where developers can access the Muse Spark 1.1 in the Meta AI app and on meta.ai.
+
+Meta also plans to deploy seven gigawatts of computing infrastructure, according to a memo reviewed by Reuters.
+
+Memory and AI chips have experienced a surge in demand as tech companies race to expand data centers to keep pace with AI's thirst for computing power.
+
+Meta expects to spend up to $145 billion on AI infrastructure this year and has secured multiyear supply agreements with companies such as Samsung Electronics and SanDisk, according to Reuters.
+
+Still, CEO Mark Zuckerberg recently said the Agentic AI tech is progressing more slowly than expected, according to Reuters.

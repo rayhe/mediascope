@@ -497,6 +497,19 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         ],
         "regex": r"(?<!\w)(Midjourney(?:\s+Inc\.?)?)(?!\w)",
     },
+    "Black Forest Labs": {
+        "aliases": [
+            "Black Forest Labs", "BFL",
+            "FLUX", "FLUX.1",
+        ],
+        "regex": r"(?<!\w)(Black\s+Forest\s+Labs|(?-i:BFL)(?=\s)|(?-i:FLUX)(?:\.1)?)(?!\w)",
+    },
+    "Creative Artists Agency": {
+        "aliases": [
+            "Creative Artists Agency", "CAA",
+        ],
+        "regex": r"(?<!\w)(Creative\s+Artists?\s+Agency|(?-i:CAA)(?=\s|[,.'\")\]]|$))(?!\w)",
+    },
     "EssilorLuxottica": {
         "aliases": [
             "EssilorLuxottica", "Essilor", "Luxottica",

@@ -1,6 +1,6 @@
 # Entity Detection & Clustering Quick Reference
 
-> A compact lookup card for all 81 entity clusters (804 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
+> A compact lookup card for all 83 entity clusters (810 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
 
 ---
 
@@ -15,8 +15,8 @@ Entity detection is the **first stage** of the analysis pipeline — every downs
 | **Cluster** | A named group representing a single trackable entity (company, org, person category). Example: `Meta` |
 | **Alias** | A text string that maps to a cluster. Example: `"Facebook"`, `"Zuckerberg"`, `"Instagram"` all → `Meta` |
 | **Canonical Name** | The best alias match for a given text span. `"Andrew Bosworth"` matched in the Meta cluster resolves to canonical name `"Andrew Bosworth"`, not `"Meta"` |
-| **Custom Regex** | A hand-tuned regex for the cluster (60 of 81 clusters). Handles homographs, negative lookaheads, and context-sensitive matching |
-| **Auto Regex** | Word-boundary patterns auto-generated from the alias list (21 of 81 clusters). Simpler but adequate for unambiguous names |
+| **Custom Regex** | A hand-tuned regex for the cluster (62 of 83 clusters). Handles homographs, negative lookaheads, and context-sensitive matching |
+| **Auto Regex** | Word-boundary patterns auto-generated from the alias list (21 of 83 clusters). Simpler but adequate for unambiguous names |
 
 ### Pipeline Position
 
@@ -132,8 +132,10 @@ Cloud providers, AI startups, and infrastructure companies.
 | 40 | **Spotify** | 2 | auto | Spotify, Daniel Ek | |
 | 41 | **Uber** | 3 | custom | Uber, Dara Khosrowshahi | Excludes `Uber Eats` (separate brand context) |
 | 42 | **Midjourney** | 2 | custom | Midjourney | |
-| 43 | **Chinese Tech Platforms** | 10 | custom | Lark, DingTalk, Rednote, Xiaohongshu, WeChat, Weibo, Taobao, Alipay, Tencent, Alibaba | Alibaba excludes `Alibaba Cloud` (routes to Chinese AI cluster) |
-| 44 | **OpenClaw** | 2 | custom | OpenClaw, Hatch | Hatch requires trailing context (`agent`, `AI`, `platform`) |
+| 43 | **Black Forest Labs** | 4 | custom | Black Forest Labs, BFL, FLUX, FLUX.1 | BFL/FLUX require word boundary; FLUX.1 variant included |
+| 44 | **Creative Artists Agency** | 2 | custom | Creative Artists Agency, CAA | CAA requires trailing context to avoid acronym collisions |
+| 45 | **Chinese Tech Platforms** | 10 | custom | Lark, DingTalk, Rednote, Xiaohongshu, WeChat, Weibo, Taobao, Alipay, Tencent, Alibaba | Alibaba excludes `Alibaba Cloud` (routes to Chinese AI cluster) |
+| 46 | **OpenClaw** | 2 | custom | OpenClaw, Hatch | Hatch requires trailing context (`agent`, `AI`, `platform`) |
 
 ---
 
@@ -141,10 +143,10 @@ Cloud providers, AI startups, and infrastructure companies.
 
 | # | Cluster | Aliases | Regex | Key Aliases | Notes |
 |---|---------|---------|-------|-------------|-------|
-| 45 | **VR/Metaverse** | 10 | custom | Horizon Worlds, Quest, Meta Quest, Quest 3/3S/Pro, VRChat, metaverse, Reality Labs | Quest requires capital Q in source text (case-sensitive inline flag) |
-| 46 | **Smart Glasses Competitors** | 6 | custom | Gentle Monster, XREAL, Even Realities, Halo, Solos, Brilliant Labs | |
-| 47 | **EssilorLuxottica** | 6 | auto | EssilorLuxottica, Essilor, Luxottica, Francesco Milleri, LensCrafters | |
-| 48 | **Garmin** | 1 | auto | Garmin | |
+| 47 | **VR/Metaverse** | 10 | custom | Horizon Worlds, Quest, Meta Quest, Quest 3/3S/Pro, VRChat, metaverse, Reality Labs | Quest requires capital Q in source text (case-sensitive inline flag) |
+| 48 | **Smart Glasses Competitors** | 6 | custom | Gentle Monster, XREAL, Even Realities, Halo, Solos, Brilliant Labs | |
+| 49 | **EssilorLuxottica** | 6 | auto | EssilorLuxottica, Essilor, Luxottica, Francesco Milleri, LensCrafters | |
+| 50 | **Garmin** | 1 | auto | Garmin | |
 
 ---
 
@@ -152,13 +154,13 @@ Cloud providers, AI startups, and infrastructure companies.
 
 | # | Cluster | Aliases | Regex | Key Aliases | Notes |
 |---|---------|---------|-------|-------------|-------|
-| 49 | **US Government** | 47 | custom | Pentagon, DoD, FBI, CIA, NSA, FTC, ICE, DEA, DOGE, IRS, SEC, DOJ, BIS, White House, ICAC, military branches | Largest non-corporate cluster. All acronyms use case-sensitive inline flags (`(?-i:FBI)`) |
-| 50 | **US Congress** | 8 | custom | Congress, Senate, House, committees, lawmakers, legislators | |
-| 51 | **State Attorneys General** | 4 | custom | attorney(s) general + named AGs (Torrez, Bonta, Weiser, Platkin, Coleman, Bird, Campbell, Ferguson) | Critical for child safety and antitrust litigation coverage |
-| 52 | **Political Figures** | 7 | custom | Trump, Biden, Kamala Harris, J.D. Vance | Trump excludes `Trump Tower/Hotel/Organization/National/International` |
-| 53 | **EU Regulatory** | 9 | auto | GDPR, DPC, European Commission, Autorité de la concurrence | |
-| 54 | **Australia** | 3 | custom | Australia, eSafety Commissioner | |
-| 55 | **Legal/Judicial** | 6 | custom | Delaware courts, Section 230, DSA, MDL numbers, federal courts/judges, Supreme Court | Extended in Jul 2026 to catch federal judges invisible in Reuters $1.4T article |
+| 51 | **US Government** | 47 | custom | Pentagon, DoD, FBI, CIA, NSA, FTC, ICE, DEA, DOGE, IRS, SEC, DOJ, BIS, White House, ICAC, military branches | Largest non-corporate cluster. All acronyms use case-sensitive inline flags (`(?-i:FBI)`) |
+| 52 | **US Congress** | 8 | custom | Congress, Senate, House, committees, lawmakers, legislators | |
+| 53 | **State Attorneys General** | 4 | custom | attorney(s) general + named AGs (Torrez, Bonta, Weiser, Platkin, Coleman, Bird, Campbell, Ferguson) | Critical for child safety and antitrust litigation coverage |
+| 54 | **Political Figures** | 7 | custom | Trump, Biden, Kamala Harris, J.D. Vance | Trump excludes `Trump Tower/Hotel/Organization/National/International` |
+| 55 | **EU Regulatory** | 9 | auto | GDPR, DPC, European Commission, Autorité de la concurrence | |
+| 56 | **Australia** | 3 | custom | Australia, eSafety Commissioner | |
+| 57 | **Legal/Judicial** | 6 | custom | Delaware courts, Section 230, DSA, MDL numbers, federal courts/judges, Supreme Court | Extended in Jul 2026 to catch federal judges invisible in Reuters $1.4T article |
 
 ---
 
@@ -166,10 +168,10 @@ Cloud providers, AI startups, and infrastructure companies.
 
 | # | Cluster | Aliases | Regex | Key Aliases | Notes |
 |---|---------|---------|-------|-------------|-------|
-| 56 | **Defense Tech** | 21 | auto | Anduril, Palmer Luckey, Elbit, L3Harris, Northrop Grumman, Lockheed, Raytheon, Shield AI, Skydio | Includes Anduril-specific product names (Lattice, EagleEye, SBMC) |
-| 57 | **Surveillance/Biometrics** | 8 | auto | Rank One Computing, Clearview AI, NEC, Cognitec, Idemia | |
-| 58 | **Data/Intelligence Industry** | 12 | auto | ShadowDragon, Babel Street, LexisNexis, Voyager Labs, Dataminr, Cellebrite, NSO Group, Pegasus | |
-| 59 | **Cybersecurity/Research** | 11 | auto | Brian Krebs, Troy Hunt, Bruce Schneier, Mudge, METR, CISA, NIST | |
+| 58 | **Defense Tech** | 21 | auto | Anduril, Palmer Luckey, Elbit, L3Harris, Northrop Grumman, Lockheed, Raytheon, Shield AI, Skydio | Includes Anduril-specific product names (Lattice, EagleEye, SBMC) |
+| 59 | **Surveillance/Biometrics** | 8 | auto | Rank One Computing, Clearview AI, NEC, Cognitec, Idemia | |
+| 60 | **Data/Intelligence Industry** | 12 | auto | ShadowDragon, Babel Street, LexisNexis, Voyager Labs, Dataminr, Cellebrite, NSO Group, Pegasus | |
+| 61 | **Cybersecurity/Research** | 11 | auto | Brian Krebs, Troy Hunt, Bruce Schneier, Mudge, METR, CISA, NIST | |
 
 ---
 
@@ -177,10 +179,10 @@ Cloud providers, AI startups, and infrastructure companies.
 
 | # | Cluster | Aliases | Regex | Key Aliases | Notes |
 |---|---------|---------|-------|-------------|-------|
-| 60 | **Media/Publications** | 31 | auto | NYT, Washington Post, Guardian, WIRED, Atlantic, MIT TR, Reuters, AP, Bloomberg, FT, TechCrunch, The Verge, Gizmodo, WSJ, 404 Media | These are the publications being analyzed. Detection enables self-referential investigation framing device. |
-| 61 | **French Media Associations** | 6 | custom | DVP, APIG, Le Monde, Les Echos | French content licensing context |
-| 62 | **Whistleblowers/Critics** | 10 | auto | Sarah Wynn-Williams, Frances Haugen, Sophie Zhang, Christopher Wylie, Carole Cadwalladr, Tim Wu | Key actors in Meta-specific narratives |
-| 63 | **Cambridge Analytica** | 1 | custom | Cambridge Analytica | Separate from Meta cluster — distinct entity in coverage, frequently co-occurring |
+| 62 | **Media/Publications** | 31 | auto | NYT, Washington Post, Guardian, WIRED, Atlantic, MIT TR, Reuters, AP, Bloomberg, FT, TechCrunch, The Verge, Gizmodo, WSJ, 404 Media | These are the publications being analyzed. Detection enables self-referential investigation framing device. |
+| 63 | **French Media Associations** | 6 | custom | DVP, APIG, Le Monde, Les Echos | French content licensing context |
+| 64 | **Whistleblowers/Critics** | 10 | auto | Sarah Wynn-Williams, Frances Haugen, Sophie Zhang, Christopher Wylie, Carole Cadwalladr, Tim Wu | Key actors in Meta-specific narratives |
+| 65 | **Cambridge Analytica** | 1 | custom | Cambridge Analytica | Separate from Meta cluster — distinct entity in coverage, frequently co-occurring |
 
 ---
 
@@ -188,12 +190,12 @@ Cloud providers, AI startups, and infrastructure companies.
 
 | # | Cluster | Aliases | Regex | Key Aliases | Notes |
 |---|---------|---------|-------|-------------|-------|
-| 64 | **Financial Services** | 57 | custom | Visa, Mastercard, Goldman Sachs, JPMorgan, BofA, PayPal, Stripe, Berkshire Hathaway, Buffett | Second-largest cluster. Visa excludes `Visa application/interview/status/waiver`. Stripe/Square require trailing context. Includes 20+ equity analyst firms. |
-| 65 | **VC/Tech Investors** | 10 | custom | Marc Andreessen, a16z, Sequoia, Benchmark, Kleiner Perkins, Y Combinator | Benchmark requires trailing context (`Capital`, `partner`, `led`, `invested`, etc.) |
-| 66 | **Prediction Markets/Fintech** | 13 | custom | Polymarket, Kalshi, Robinhood, CFTC | |
-| 67 | **Indian Fintech** | 4 | custom | CRED, Kunal Shah, PhonePe, UPI | |
-| 68 | **Insurance/Litigation Finance** | 13 | custom | Hartford, Chubb, Flashlight Capital, Innsworth Capital, Burford Capital | Key cluster for litigation funding network analysis |
-| 69 | **Child Safety Legislation** | 10 | custom | KIDS Act, COPPA, KOSA, EARN IT Act, REPORT Act, Age Appropriate Design Code | |
+| 66 | **Financial Services** | 57 | custom | Visa, Mastercard, Goldman Sachs, JPMorgan, BofA, PayPal, Stripe, Berkshire Hathaway, Buffett | Second-largest cluster. Visa excludes `Visa application/interview/status/waiver`. Stripe/Square require trailing context. Includes 20+ equity analyst firms. |
+| 67 | **VC/Tech Investors** | 10 | custom | Marc Andreessen, a16z, Sequoia, Benchmark, Kleiner Perkins, Y Combinator | Benchmark requires trailing context (`Capital`, `partner`, `led`, `invested`, etc.) |
+| 68 | **Prediction Markets/Fintech** | 13 | custom | Polymarket, Kalshi, Robinhood, CFTC | |
+| 69 | **Indian Fintech** | 4 | custom | CRED, Kunal Shah, PhonePe, UPI | |
+| 70 | **Insurance/Litigation Finance** | 13 | custom | Hartford, Chubb, Flashlight Capital, Innsworth Capital, Burford Capital | Key cluster for litigation funding network analysis |
+| 71 | **Child Safety Legislation** | 10 | custom | KIDS Act, COPPA, KOSA, EARN IT Act, REPORT Act, Age Appropriate Design Code | |
 
 ---
 
@@ -201,13 +203,13 @@ Cloud providers, AI startups, and infrastructure companies.
 
 | # | Cluster | Aliases | Regex | Key Aliases | Notes |
 |---|---------|---------|-------|-------------|-------|
-| 70 | **Academic/Research** | 54 | custom | 20+ universities (NYU, Stanford, MIT, Harvard, etc.), academic journals (Nature, Science, PNAS, Lancet, JAMA), IEEE, ACM, named researchers | Third-largest cluster. Journal names use case-sensitive flags to avoid "nature" (common noun) and "science" (common noun) |
-| 71 | **Research Centers** | 15 | custom | CCDH, Center for Humane Technology, NCMEC, CyberTipline, Thorn, IWF, FOSI, Palisade Research | |
-| 72 | **Child Safety Researchers** | 10 | auto | Arturo Béjar, Laura Edelson, Rumman Chowdhury | Named researchers who appear in child safety coverage |
-| 73 | **Policy Research** | 13 | auto | RAND, Brookings, CSIS, CFR, Carnegie, Pew Research | |
-| 74 | **Education/Advocacy** | 5 | custom | National PTA, NEA, AFT | |
-| 75 | **Privacy/Civil Liberties Orgs** | 12 | auto | EFF, ACLU, Access Now, EPIC, NOYB | |
-| 76 | **Environmental Advocacy** | 12 | custom | Sierra Club, Greenpeace, NRDC, EDF, Earthjustice, 350.org | |
+| 72 | **Academic/Research** | 54 | custom | 20+ universities (NYU, Stanford, MIT, Harvard, etc.), academic journals (Nature, Science, PNAS, Lancet, JAMA), IEEE, ACM, named researchers | Third-largest cluster. Journal names use case-sensitive flags to avoid "nature" (common noun) and "science" (common noun) |
+| 73 | **Research Centers** | 15 | custom | CCDH, Center for Humane Technology, NCMEC, CyberTipline, Thorn, IWF, FOSI, Palisade Research | |
+| 74 | **Child Safety Researchers** | 10 | auto | Arturo Béjar, Laura Edelson, Rumman Chowdhury | Named researchers who appear in child safety coverage |
+| 75 | **Policy Research** | 13 | auto | RAND, Brookings, CSIS, CFR, Carnegie, Pew Research | |
+| 76 | **Education/Advocacy** | 5 | custom | National PTA, NEA, AFT | |
+| 77 | **Privacy/Civil Liberties Orgs** | 12 | auto | EFF, ACLU, Access Now, EPIC, NOYB | |
+| 78 | **Environmental Advocacy** | 12 | custom | Sierra Club, Greenpeace, NRDC, EDF, Earthjustice, 350.org | |
 
 ---
 
@@ -215,8 +217,8 @@ Cloud providers, AI startups, and infrastructure companies.
 
 | # | Cluster | Aliases | Regex | Key Aliases | Notes |
 |---|---------|---------|-------|-------------|-------|
-| 77 | **Energy/Utilities** | 24 | custom | Entergy, Duke Energy, Southern Company, Dominion, NextEra, PG&E, TVA | Critical for `infrastructure_impact` and `energy_climate` topic coverage |
-| 78 | **Energy Research/Regulatory** | 16 | custom | EPRI, EIA, FERC, IEA, NREL, DOE, Rhodium Group | |
+| 79 | **Energy/Utilities** | 24 | custom | Entergy, Duke Energy, Southern Company, Dominion, NextEra, PG&E, TVA | Critical for `infrastructure_impact` and `energy_climate` topic coverage |
+| 80 | **Energy Research/Regulatory** | 16 | custom | EPRI, EIA, FERC, IEA, NREL, DOE, Rhodium Group | |
 
 ---
 
@@ -224,9 +226,9 @@ Cloud providers, AI startups, and infrastructure companies.
 
 | # | Cluster | Aliases | Regex | Key Aliases | Notes |
 |---|---------|---------|-------|-------------|-------|
-| 79 | **Labor/Unions** | 10 | auto | UTAW, CWU, Alphabet Workers Union, SEIU, AFL-CIO | Includes organizing verbs (`unionize`, `unionization`) |
-| 80 | **Outsourcing/Contractors** | 3 | custom | Covalen, Sama, Accenture | Sama requires trailing context (company-specific keywords) to avoid common word |
-| 81 | **Celebrity/Influencer** | 2 | custom | Kylie Jenner | |
+| 81 | **Labor/Unions** | 10 | auto | UTAW, CWU, Alphabet Workers Union, SEIU, AFL-CIO | Includes organizing verbs (`unionize`, `unionization`) |
+| 82 | **Outsourcing/Contractors** | 3 | custom | Covalen, Sama, Accenture | Sama requires trailing context (company-specific keywords) to avoid common word |
+| 83 | **Celebrity/Influencer** | 2 | custom | Kylie Jenner | |
 
 ---
 
