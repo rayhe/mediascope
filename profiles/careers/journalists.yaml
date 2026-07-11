@@ -10394,79 +10394,6 @@ journalists:
     source_url: https://talkingbiznews.com/media-news/tech-reporter-nix-among-the-washington-post-layoffs/
   name: Naomi Nix
 - career:
-  - beat: copyright law, intellectual property
-    end: '2008'
-    event_type: hired
-    notes: 'Post-JD legal career in Chicago. Advised college students accused of copyright infringement for file-sharing.
-      Inspired by Napster legal battles (undergrad). Left because settlement-focused IP practice was unfulfilling. Shaped
-      his later journalism: unique ability to parse TOS, licensing agreements, and legal tech disputes.'
-    publication: saper-law-offices
-    role: copyright_attorney
-    source_url: https://poynter.org/reporting-editing/2013/why-news-sites-benefit-from-having-writers-with-legal-backgrounds/
-    start: '2006'
-  - beat: Chicago-centric blogging
-    end: '2008'
-    event_type: hired
-    notes: First journalism role. Chicago community blog. Concurrent with legal career.
-    publication: gapers-block
-    role: blogger
-    source_url: https://en.wikipedia.org/wiki/Nilay_Patel
-    start: '2007'
-  - beat: technology, consumer electronics, legal analysis
-    end: 2011-04
-    event_type: hired
-    notes: Full-time tech journalism debut. 4 years as Managing Editor. SAY Media named him one of 10 'voices that matter'
-      in technology journalism. Developed niche explaining complex legal/IP situations in accessible terms. Left in mass departure
-      with Joshua Topolsky to co-found The Verge.
-    publication: engadget
-    role: managing_editor
-    source_url: https://en.wikipedia.org/wiki/Nilay_Patel
-    start: '2008'
-  - beat: technology, consumer electronics, tech policy, legal analysis
-    end: 2014-03
-    event_type: founded
-    notes: Co-founded The Verge (launched Nov 1, 2011) with Joshua Topolsky as part of Vox Media. First Managing Editor. Co-launched
-      Vergecast podcast (launched before the site itself).
-    publication: the-verge
-    role: co-founder_managing_editor
-    source_url: https://en.wikipedia.org/wiki/Nilay_Patel
-    start: 2011-11
-  - beat: explanatory journalism
-    end: 2014-07
-    event_type: other
-    notes: Brief internal transfer to sister Vox Media site Vox.com for launch. Returned to The Verge 4 months later.
-    publication: vox
-    role: acting_managing_editor
-    source_url: https://en.wikipedia.org/wiki/Nilay_Patel
-    start: 2014-03
-  - beat: technology, tech policy, AI, consumer electronics, antitrust
-    event_type: promoted
-    notes: 'EIC after Joshua Topolsky left for Bloomberg. 11+ years in role. Webby Award (Vergecast), NMA nomination, Pulitzer
-      nomination. Launched Decoder podcast (2020). Regular CNBC contributor. Coined ''Google Zero.'' Legal background gives
-      distinctive antitrust/IP/platform governance expertise. Navigated Vox Media ownership transitions to PMC/PMX (2026).
-      ANALYTICALLY SIGNIFICANT: Sets The Verge''s institutional editorial posture. ''Google Zero'' framing adversarial toward
-      Big Tech AI scraping — directly relevant to Meta AI coverage.'
-    publication: the-verge
-    role: editor_in_chief
-    source_url: https://leighbureau.com/speaker/nilay-patel/
-    start: 2014-07
-  education:
-  - degree: AB
-    field: Political Science
-    institution: University of Chicago
-    year: 2003
-  - degree: JD
-    field: Law (copyright focus)
-    institution: University of Wisconsin Law School
-    year: 2006
-  multi_publication: true
-  name: Nilay Patel
-  source_urls:
-  - https://en.wikipedia.org/wiki/Nilay_Patel
-  - https://siliconflatirons.org/speaker/nilay-patel/
-  - https://poynter.org/reporting-editing/2013/why-news-sites-benefit-from-having-writers-with-legal-backgrounds/
-  - https://leighbureau.com/speaker/nilay-patel/
-- career:
   - beat: Apple, consumer tech
     end: '2015'
     event_type: hired
@@ -14211,3 +14138,197 @@ journalists:
   - https://www.technologyreview.com/author/jennifer-strong/
   - https://talkingbiznews.com/they-talk-biz-news/tech-journalist-strong-named-host-of-the-next-innovation-podcast/
   - https://rainforestjournalismfund.org/journalist/jennifer-strong
+- career:
+  - publication: engadget
+    role: managing_editor
+    start: 2008-01
+    end: 2011-04
+    beat: consumer technology, gadgets, legal/tech policy
+    notes: Joined Engadget as blogger, rose to managing editor. Background as a copyright attorney — SAY Media named him one
+      of 10 "voices that matter" in technology journalism. JD from University of Wisconsin Law School (2006), AB Political
+      Science from University of Chicago (2003).
+    source_url: https://en.wikipedia.org/wiki/Nilay_Patel
+  - publication: the-verge
+    role: co-founder_managing_editor
+    start: 2011-04
+    end: 2014-03
+    beat: technology, consumer electronics, tech policy, legal analysis
+    notes: Co-founded The Verge with Joshua Topolsky and others from Engadget exodus. First managing editor. Co-hosted The
+      Vergecast from its first episode (Nov 4, 2011).
+    source_url: https://en.wikipedia.org/wiki/The_Verge
+  - publication: vox
+    role: acting_managing_editor
+    start: 2014-03
+    end: 2014-07
+    beat: technology, politics
+    notes: Brief stint at Vox Media sister site.
+    source_url: https://en.wikipedia.org/wiki/Nilay_Patel
+  - publication: the-verge
+    role: editor_in_chief
+    start: 2014-07
+    end: present
+    beat: technology, policy, consumer electronics, AI, media
+    notes: 'EIC since July 2014 after Joshua Topolsky departed for Bloomberg. Under his leadership: Webby Award-winning Vergecast
+      podcast, Pulitzer Prize nomination, National Magazine Award nomination. Launched Decoder podcast (2020) interviewing
+      tech and policy leaders. Coined "Google Zero" term criticizing AI-driven search scraping. Introduced paywall/subscription
+      model (December 2024, $7/mo or $50/yr). Oversaw transition from Vox Media Chorus CMS to WordPress (Jan 28, 2025). Navigated
+      Vox Media → PMC/PMX ownership change (June 2026). Regular CNBC contributor. Adweek Creative 100 (2021). JD background
+      gives The Verge distinctive legal/policy analytical capability. 12+ year tenure as EIC makes him one of the longest-serving
+      editors at any major tech publication.'
+    source_url: https://computerhistory.org/profile/nilay-patel/
+  multi_publication: true
+  name: Nilay Patel
+  notes: 'Co-founder and Editor-in-Chief of The Verge since 2014, host of Decoder and The Vergecast podcasts. One of the most
+    influential voices in tech journalism. Career: copyright attorney → Engadget managing editor → The Verge co-founder →
+    EIC. University of Chicago AB Political Science (2003), University of Wisconsin JD (2006). Practiced copyright law briefly
+    at Saper Law Offices before journalism. FRAMING SIGNATURE: legal-analytical lens on tech policy, consumer advocacy posture,
+    adversarial toward Big Tech AI scraping (coined "Google Zero"). His legal background shapes The Verge''s distinctive policy
+    coverage. KEY for MediaScope: as EIC for 12+ years, Patel is the single most influential figure in determining The Verge''s
+    institutional editorial posture. Every major hiring, coverage, and tone decision flows through him.'
+  source_urls:
+  - https://en.wikipedia.org/wiki/Nilay_Patel
+  - https://computerhistory.org/profile/nilay-patel/
+  - https://podcasts.voxmedia.com/show/decoder
+  - https://leighbureau.com/speakers/nilay-patel/
+- career:
+  - publication: engadget
+    role: reporter
+    start: '2007'
+    end: 2011-11
+    beat: smartphones, mobile OS, consumer electronics
+    notes: Joined Engadget from reviews circuit. Part of founding team that left for The Verge.
+    source_url: https://en.wikipedia.org/wiki/The_Verge
+  - publication: the-verge
+    role: executive_editor
+    start: 2011-11
+    end: 2022-03
+    beat: mobile, computing, smartphones, platform strategy
+    notes: 'Executive Editor from The Verge''s founding through its first decade. Co-hosted The Vergecast with Nilay Patel.
+      Key reviewer of smartphones and computing products. Oversaw the editorial team including managing editors, features,
+      and news desks. DEPARTURE: Left for Google in March 2022 after 10+ years. His departure removed a founding editorial
+      voice and created the leadership vacuum that Alex Heath (deputy editor) and Alex Cranz (managing editor) partially filled.'
+    source_url: https://talkingbiznews.com/media-news/the-verge-executive-editor-bohn-is-leaving-for-google/
+  - publication: google
+    role: product_manager
+    start: 2022-03
+    end: present
+    beat: N/A
+    notes: Left journalism for Google product management. Specific role/team not publicly disclosed.
+    source_url: https://talkingbiznews.com/media-news/the-verge-executive-editor-bohn-is-leaving-for-google/
+  multi_publication: true
+  name: Dieter Bohn
+  notes: 'The Verge co-founder and Executive Editor (2011-2022). One of the original Engadget exodus team. Co-hosted The Vergecast
+    for a decade. KEY MIGRATION: journalism → Big Tech (Google). His departure after 10+ years was a significant editorial
+    transition for The Verge. Created the opening that led to restructured leadership under Patel with Alex Cranz (managing
+    editor) and Alex Heath (deputy editor). Also appeared briefly on Vox Media''s acting managing editor roster during The
+    Verge''s early years.'
+  source_urls:
+  - https://talkingbiznews.com/media-news/the-verge-executive-editor-bohn-is-leaving-for-google/
+  - https://en.wikipedia.org/wiki/The_Verge
+- career:
+  - publication: toms-guide
+    role: associate_reviews_editor
+    start: '2014'
+    end: '2016'
+    beat: consumer electronics, gadgets, reviews
+    notes: Also covered Laptop Magazine (sister publication under Purch). Entry-level reviews role.
+    source_url: https://rocketreach.co/alex-cranz-email_40804199
+  - publication: gizmodo
+    role: senior_consumer_tech_editor
+    start: 2016-01
+    end: '2021'
+    beat: consumer tech, gadgets, reviews, audio
+    notes: 'Rose from reporter to senior consumer tech editor at Gizmodo (G/O Media, formerly Gizmodo Media Group). 5-year
+      tenure covering consumer electronics. Gizmodo''s adversarial culture and Gawker lineage shapes editorial instincts.
+      MIGRATION SIGNIFICANCE: Gizmodo → The Verge represents a G/O Media → Vox Media pipeline that also includes Johana Bhuiyan
+      (Gizmodo → Guardian → Wired) and Sean Hollister (Verge → Gizmodo → CNET → Verge).'
+    source_url: https://talkingbiznews.com/media-news/the-verge-hires-cranz-as-managing-editor/
+  - publication: the-verge
+    role: managing_editor
+    start: '2021'
+    end: present
+    beat: consumer tech, editorial operations, podcast co-hosting
+    notes: 'Hired as managing editor in 2021. Reports to Nilay Patel. Co-hosts The Vergecast alongside Nilay Patel and David
+      Pierce — the primary editorial trio. Oversees day-to-day newsroom operations, story assignments, editorial calendar.
+      University of the South graduate. Based in New York. Also runs a self-employed freelance operation. Skills include audio
+      engineering, content strategy, creative writing. EDITORIALLY SIGNIFICANT: as managing editor, Cranz is the operational
+      gatekeeper — she determines which stories get staffed and prioritized on a daily basis. Her consumer tech orientation
+      (from Tom''s Guide and Gizmodo reviews culture) influences The Verge''s product coverage posture.'
+    source_url: https://talkingbiznews.com/media-news/the-verge-hires-cranz-as-managing-editor/
+  multi_publication: true
+  name: Alex Cranz
+  notes: 'Managing Editor of The Verge (2021-present) and Vergecast co-host. Career: Tom''s Guide → Gizmodo (5 years, senior
+    consumer tech editor) → The Verge. University of the South graduate. Brings Gizmodo/G/O Media editorial culture to Vox
+    Media newsroom. Part of The Verge''s core editorial leadership alongside Patel (EIC) and Pierce (editor-at-large). Audio
+    engineering and content strategy background. KEY for MediaScope: as managing editor and Vergecast co-host, Cranz shapes
+    daily editorial decisions and audience-facing tone on The Verge''s most popular media property (the podcast). Her Gizmodo
+    background represents a specific editorial culture import into The Verge''s institutional voice.'
+  source_urls:
+  - https://talkingbiznews.com/media-news/the-verge-hires-cranz-as-managing-editor/
+  - https://rocketreach.co/alex-cranz-email_40804199
+- career:
+  - publication: freelance
+    role: freelancer
+    start: '2020'
+    end: '2022'
+    beat: consumer tech, entertainment, gaming
+    notes: Freelance tech journalist. Published in CNN, Wall Street Journal, PCWorld, Gizmodo Australia, Tom's Hardware, Tom's
+      Guide, The Advocate Magazine, Flipboard. Based in Milwaukee, Wisconsin.
+    source_url: https://journalisthunt.com/wes-davis
+  - publication: the-verge
+    role: weekend_editor
+    start: '2022'
+    end: present
+    beat: consumer tech, entertainment, AI, streaming, policy, gadgets
+    notes: 'Weekend editor and one of The Verge''s most prolific writers — 1,725+ published articles as of mid-2025. Covers
+      an extremely broad beat: streaming, consumer tech, AI, crypto, social media, Big Tech policy, gadgets, gaming. Writes
+      news, reviews, and features. VOLUME SIGNIFICANCE: Davis''s output rivals or exceeds most full-time news writers, meaning
+      he shapes a substantial portion of The Verge''s weekend and overnight news framing. His broad beat coverage means he
+      touches nearly every topic area rather than specializing, making his framing choices widely impactful across content
+      categories.'
+    source_url: https://muckrack.com/wes-davis-42/articles
+  name: Wes Davis
+  notes: 'Weekend Editor at The Verge (2022-present). One of the site''s highest-volume writers with 1,725+ articles. Career:
+    freelance (CNN, WSJ, PCWorld, Gizmodo AU, Tom''s Hardware) → The Verge. Based in Milwaukee, WI. Interests outside journalism:
+    Magic: The Gathering, board games, LEGO, collectibles, philosophy. Does not cover alcohol, religion, or meat. KEY for
+    MediaScope: high-volume writers like Davis disproportionately shape a publication''s daily news framing because they write
+    so many of the aggregation and breaking-news pieces that set audience tone. His broad beat means his framing choices are
+    not confined to one coverage area.'
+  source_urls:
+  - https://journalisthunt.com/wes-davis
+  - https://muckrack.com/wes-davis-42/articles
+- career:
+  - publication: techradar
+    role: reporter
+    start: '2017'
+    end: '2019'
+    beat: audio, TV equipment, consumer electronics, smart home
+    notes: First journalism role. Covered consumer electronics hardware. Future plc publication.
+    source_url: https://muckrack.com/jon-porter-1/articles
+  - publication: trusted-reviews
+    role: senior_news_writer
+    start: '2019'
+    end: '2019'
+    beat: consumer tech, news
+    notes: Brief stint (~6 months) as Senior News Writer before joining The Verge.
+    source_url: https://muckrack.com/jon-porter-1/articles
+  - publication: the-verge
+    role: reporter
+    start: '2019'
+    end: '2024'
+    beat: EU tech policy, consumer tech, online platforms, video games, mechanical keyboards
+    notes: 'UK-based reporter, 5-year tenure. Part of The Verge''s London team alongside Tom Warren. Primary focus: European
+      consumer tech releases and EU tech policy (DMA, DSA, GDPR, AI Act). Also covered online platforms and video games. Made
+      regular appearances on BBC World News, BBC World Service, BBC Radio 4, ABC, CBC. DEPARTURE: Left The Verge after 5 years.
+      His departure reduced The Verge''s EU policy coverage capacity, though Lauren Feiner and Gaby Del Valle cover some policy
+      territory from the US side.'
+    source_url: https://talkingbiznews.com/media-news/the-verge-tech-reporter-porter-is-departing/
+  name: Jon Porter
+  notes: 'UK-based reporter who covered EU tech policy and consumer electronics at The Verge (2019-2024). Career: TechRadar
+    → Trusted Reviews → The Verge (5 years). Also wrote for Gizmodo UK, Kotaku UK, T3, Real Homes. BBC regular (World News,
+    Radio 4, World Service). KEY for MediaScope: Porter was The Verge''s primary EU tech regulation reporter during the critical
+    DMA/DSA/AI Act legislative period. His departure means The Verge''s European policy coverage is now primarily handled
+    from the US side, potentially shifting framing from EU-regulatory-insider perspective to US-observer perspective.'
+  source_urls:
+  - https://talkingbiznews.com/media-news/the-verge-tech-reporter-porter-is-departing/
+  - https://muckrack.com/jon-porter-1/articles
