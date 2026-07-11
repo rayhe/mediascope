@@ -2,6 +2,24 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-11 05:00 PT — Type A: Article Deep Dive (Washington Examiner / Muse Image Privacy)
+
+**Article:** "Privacy advocates fret over Meta image tool that works on public accounts" (Washington Examiner, Jul 10, 2026)
+
+**Fixes applied:**
+1. Added 14 emotional language terms for privacy concern/criticism-framing vocabulary ("fret", "fretting", "sparking criticism/backlash/concerns", "raised concerns", "privacy advocates" etc.) — emotional intensity improved from 0.0 to 0.33
+2. Added 2 entity clusters: Black Forest Labs (4 aliases), Creative Artists Agency (2 aliases) — 81 → 83 clusters, 804 → 810 aliases
+3. Fixed 3-word org source extraction: Pattern 1 (2-word person name + verb) now checks if match is tail of a 3-word org in `_KNOWN_ORGS_LOWER` before extracting — prevents "Artists Agency" truncation of "Creative Artists Agency"
+4. Added "creative artists agency" and "caa" to both `_KNOWN_ORGS` sets (module-level and local in `extract_sources`)
+5. Added "washexaminer" to `_PUB_PREFIXES` in tests
+
+**New annotated analysis:** 155th article, 43rd distinct publication (Washington Examiner is new)
+
+**Remaining issue:** Overall tone (+0.65) still inflated — structural split (adversarial lead → promotional tail) means VADER bag-of-words is overwhelmed by Meta's promotional quotes in paragraphs 6-15. No correction path fires because the article is neither uniformly adversarial nor sarcastic. Would need a new correction path for "structural split" articles.
+
+**Tests:** 2237 passed (7 new), 0 failed  
+**Commit:** `7c66ab8` pushed to GitHub
+
 ## 2026-07-11 04:00 PT — Type D: Toolkit Quality & Documentation (ENTITY_REFERENCE.md)
 
 **Created `docs/ENTITY_REFERENCE.md`** — the fourth and final quick-reference card, completing the set alongside FRAMING_REFERENCE.md, TOPIC_REFERENCE.md, and SOURCE_ANALYSIS_REFERENCE.md.
