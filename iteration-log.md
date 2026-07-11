@@ -18897,3 +18897,34 @@ Gizmodo LED tamper article ("Destroying the Privacy LED on Meta Smart Glasses Wi
 - Total tests: **2,184** across **95** test files
 - Framing device types: **95** (10 core + 78 extended + 7 structural)
 - Same-event clusters: **13** (5 Tier 1, 8 Tier 2)
+
+## 2026-07-10 20:00 PT — Type A (Article Deep Dive)
+
+**Iteration focus:** Implement `ultimatum_framing` (#96) — the last unimplemented device discovered during the 18:00 PT NY Post EU DSA analysis.
+
+**New framing device:**
+- **`ultimatum_framing` (#96):** Transforms multi-stage regulatory/legal proceedings into binary "do X or face Y" constructions. Compresses procedural complexity into an "or else" fork. 6 regex patterns: em-dash-or (canonical NY Post pattern), must-or-face, comply-or, deadline ultimatum, either-or, and dashless regulatory variant (requires institutional subject context to avoid false positives). Category 14: Procedural Compression (new).
+- Discovery article: NY Post "European Union warns Meta to change 'addictive' Facebook, Instagram features — or get big fines" (Jul 10, 2026)
+- Cross-publication: Reuters "or risk fines" (softer variant, matches via dashless pattern); CNN "may violate" and WSJ "failed to protect" correctly excluded
+
+**Test coverage:**
+- 25 new tests: 14 positive (5 em-dash, 3 must-or-face, 2 comply-or, 2 deadline, 2 either-or), 6 negative guards, 3 cross-device, 2 cross-publication comparisons
+
+**Doc updates:**
+- METHODOLOGY.md: 95→96 framing types, 78→79 extended, discovery cluster updated, extended device table entry added
+- FRAMING_REFERENCE.md: device #96 in summary table, Category 14 section added
+- ARCHITECTURE.md: 96 device types, Extended (79), test file listing, 562 patterns, 2209 tests across 96 files
+- AGENT_GUIDE.md: 96 device types, 79 extended
+- README.md: 96 device types, 562 patterns, 2209 tests across 96 files, test table entry
+- CLI docstring: 96 types
+- framing.py docstring: 89 pattern-matched + 7 structural = 96 total
+
+**Test results:** 2,209 passed, 0 failed. All 98 structural consistency tests pass.
+
+**Running totals:**
+- Annotated articles: **152** (150 single-pub + 1 multi-source + 1 cross-narrative)
+- Distinct publications: **42**
+- Total tests: **2,209** across **96** test files
+- Total regex patterns: **562** across **89** pattern-matched device types
+- Framing device types: **96** (10 core + 79 extended + 7 structural)
+- Same-event clusters: **13** (5 Tier 1, 8 Tier 2)
