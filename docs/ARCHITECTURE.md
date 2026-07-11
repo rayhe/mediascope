@@ -403,6 +403,9 @@ mediascope/
 │   ├── AGENT_GUIDE.md
 │   ├── ADDING_PUBLICATIONS.md
 │   ├── QUALITY_STANDARDS.md
+│   ├── FRAMING_REFERENCE.md
+│   ├── TOPIC_REFERENCE.md
+│   ├── SOURCE_ANALYSIS_REFERENCE.md
 │   └── ARCHITECTURE.md      # (this file)
 ├── examples/
 │   ├── quick_start.py

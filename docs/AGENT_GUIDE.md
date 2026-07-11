@@ -522,6 +522,8 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
 
 ### analyze_source_stance
 
+> See [SOURCE_ANALYSIS_REFERENCE.md](SOURCE_ANALYSIS_REFERENCE.md) for the full source analysis quick-reference card: 14 extraction patterns, 10 source types, stance classification, outsourced intensity, and common failure modes.
+
 ```json
 {
     "name": "analyze_source_stance",

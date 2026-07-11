@@ -252,6 +252,7 @@ Statistical methodology is documented at academic quality in [docs/METHODOLOGY.m
 | [METHODOLOGY.md](docs/METHODOLOGY.md) | Full statistical methodology, scoring frameworks, and academic references (19 sections, 1,780 lines) |
 | [FRAMING_REFERENCE.md](docs/FRAMING_REFERENCE.md) | **Quick-reference card for all 96 framing device types** — scannable lookup during article analysis |
 | [TOPIC_REFERENCE.md](docs/TOPIC_REFERENCE.md) | **Quick-reference card for all 29 topic buckets** — boundary rules, adjacency warnings, genre detection triggers |
+| [SOURCE_ANALYSIS_REFERENCE.md](docs/SOURCE_ANALYSIS_REFERENCE.md) | **Quick-reference card for source extraction, stance analysis, outsourced intensity, and active-negative agency** — 14 pattern groups, 10 source types, failure modes |
 | [QUALITY_STANDARDS.md](docs/QUALITY_STANDARDS.md) | Citation requirements, anti-slop standards, analytical rigor rules |
 | [AGENT_GUIDE.md](docs/AGENT_GUIDE.md) | AI agent integration: schemas, JSON formats, sample prompts, framework patterns |
 | [ADDING_PUBLICATIONS.md](docs/ADDING_PUBLICATIONS.md) | Step-by-step guide for creating new publication profiles |

@@ -317,6 +317,8 @@ The choice of attribution verb signals editorial stance:
 
 ## 5. Source Authority Analysis
 
+> **Quick Reference:** See [SOURCE_ANALYSIS_REFERENCE.md](SOURCE_ANALYSIS_REFERENCE.md) for a compact lookup card covering all 14 extraction patterns, 10 source types, stance analysis, outsourced intensity, and active-negative agency.
+
 ### 5.1 Source Grading
 
 | Grade | Type | Examples |
