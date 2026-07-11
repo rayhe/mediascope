@@ -108,10 +108,49 @@ ownership_chain:
       CNIL ENFORCEMENT (Nov 20, 2025): France's CNIL fined Condé Nast's French entity €750,000 for
       cookie consent violations on vanityfair.fr, affecting approximately 7.4 million visitors (Jun-Oct 2023).
 
+      DATA BREACH — "LOVELY" INCIDENT (Dec 20-25, 2025): A hacker operating under the alias "Lovely"
+      breached Condé Nast's subscriber database systems and leaked 2,366,576 records (2,366,574 unique
+      email addresses) from Wired.com subscribers, with timestamps ranging from April 26, 1996 to
+      September 9, 2025. Data includes subscriber IDs, emails, and optional fields: first/last names
+      (~285,000 records), phone numbers (~32,000), physical addresses (~108,000), gender, and birthday.
+      Some entries also included last session dates and IP addresses, indicating the database contained
+      live session data, not a static marketing repository.
+      The data was dumped on BreachForums and Breach Stars hacking forums on Dec 20, posted publicly
+      on Christmas Day. BleepingComputer validated 20 records as legitimate Wired subscribers. Troy Hunt
+      incorporated the leak into Have I Been Pwned.
+      Lovely accused Condé Nast of ignoring vulnerability reports for a month: "Condé Nast does not
+      care about the security of their users' data. It took us an entire month to convince them to fix
+      the vulnerabilities on their websites. We will leak more of their users' data (40+ million) over
+      the next few weeks. Enjoy!" The hacker also shared record counts for other Condé Nast properties
+      they claimed to have stolen from, including The New Yorker, Epicurious, SELF, Vogue, Allure,
+      Vanity Fair, Glamour, Men's Journal, Architectural Digest, Golf Digest, Teen Vogue, Style.com,
+      and Condé Nast Traveler — threatening up to 40M total records.
+      Ars Technica (also Condé Nast-owned) reported on the breach noting it was NOT affected because
+      it runs its own separate tech stack — confirming the vulnerability was in Condé Nast's shared
+      subscriber infrastructure. DataBreaches.net initially acted as intermediary but later concluded
+      Lovely was "a cybercriminal seeking a payout," not a legitimate security researcher.
+      Condé Nast never issued an official public statement confirming or denying the breach. Reported
+      by BleepingComputer, The Register, Security Affairs, TechRadar, PYMNTS, Editor & Publisher.
+      ANALYTICAL SIGNIFICANCE: The breach exposed the subscriber infrastructure that underpins Condé
+      Nast's subscription revenue pivot (the very strategy replacing declining ad revenue). The shared
+      database vulnerability across brands (Wired, Vogue, TNY, VF) reveals a single-point-of-failure
+      architecture for the subscriber data that CEO Lynch has called the foundation of the company's
+      future. Potential GDPR, CCPA, and other regulatory exposure for a breach of this scale. The
+      company's CPTO Vasanth Williams (hired Dec 2025, same month as the breach) inherited this
+      security debt on arrival.
+      Sources: BleepingComputer, The Register, Security Affairs, TechRadar, PYMNTS, Editor & Publisher.
+
       Restructuring ongoing: Self shut down, Glamour international editions closing,
       Wired Italy ending, technology division restructured "reflecting the rapid advancement of AI."
       Multiple layoff rounds: 270 jobs (Nov 2023), C-suite cuts (Jan 2025, 14+ executives including 2 CBOs),
       16 unionized employees (Apr 2026). Condé Nast Union (NewsGuild/CWA) active; contentious bargaining sessions.
+    data_breach_source_urls:
+      - "https://www.bleepingcomputer.com/news/security/hacker-claims-to-leak-wired-database-with-23-million-records/"
+      - "https://www.theregister.com/2025/12/28/conde_nast_wired_data_breach/"
+      - "https://securityaffairs.com/172561/data-breach/conde-nast-wired-data-breach.html"
+      - "https://www.techradar.com/pro/security/hackers-say-they-have-stolen-40-million-conde-nast-records"
+      - "https://www.pymnts.com/cybersecurity/2025/conde-nast-hack-exposes-40-million-users-data/"
+      - "https://www.editorandpublisher.com/stories/conde-nast-data-breach-lovely-hacker/"
     commercial_pivot: >
       STRATEGIC REVENUE SHIFT (Adweek, May 2026): Condé Nast is executing a fundamental pivot away from
       advertising as a growth engine. CEO Lynch (Oct 2025): advertising is "no longer expected to be a
@@ -587,17 +626,21 @@ advance_investments:
         NZ, Ukraine, Serbia, North Macedonia + FDI authorities in Spain, Germany, Slovenia, Belgium,
         Czechia, Italy, France, Romania. Canada: no statutory impediment after Competition Act
         waiting period expired.
-        STATE AG ESCALATION (Jul 8-9): Oregon AG Dan Rayfield seeking expedited court order to
-        compel Paramount to produce "Project Warrior" documents — internal code name for regulatory
-        clearance strategy — and records of Trump administration lobbying (Reuters, Jul 8). Oregon
-        also seeking either expedited hearing or injunction preventing close until hearing can be held.
-        Paramount initially targeted Jul 16 close; now committed not to close before Jul 22
-        (per Oregon AG office statement, Jul 9 — Reuters). CNN reports multistate AG antitrust
-        lawsuit "likely to be filed next week" (as of Jul 8-9). States investigating DOJ clearance
-        process — reports that higher DOJ officials overrode staff attorneys initially inclined to
-        challenge the merger. CA AG Rob Bonta (Jun 28): "red flags in the air everywhere." Late
-        September close now considered more realistic timeline per NBC/industry analysts.
-        Paramount executives have argued an antitrust suit by the states would be meritless.
+        STATE AG ESCALATION (Jul 8-11): Oregon AG Dan Rayfield initially sought expedited court
+        order to compel Paramount to produce "Project Warrior" documents — internal code name for
+        regulatory clearance strategy — and records of Trump administration lobbying (Reuters, Jul 8).
+        Oregon also sought either expedited hearing or injunction preventing close until hearing.
+        Paramount initially targeted Jul 16 close; committed not to close before Jul 22
+        (per Oregon AG office statement, Jul 9 — Reuters).
+        OREGON AG WITHDRAWAL (Jul 11): Oregon DOJ withdrew its court motion to delay the deal.
+        Statement: "Paramount made it clear they weren't going to comply" — Oregon withdrew "to
+        consider next steps." This removes the most immediate legal obstacle to closing, though
+        multistate AG antitrust lawsuit still expected. CNN reported (Jul 8-9) multistate suit
+        "likely to be filed next week." States investigating DOJ clearance process — reports that
+        higher DOJ officials overrode staff attorneys initially inclined to challenge the merger.
+        CA AG Rob Bonta (Jun 28): "red flags in the air everywhere." Late September close now
+        considered more realistic timeline per NBC/industry analysts. Paramount executives have
+        argued an antitrust suit by the states would be meritless.
       - DEAL PROTECTIONS: If transaction does not close by Sept 30, 2026, WBD shareholders receive
         $0.25/share "ticking fee" per quarter (~$627.5M/quarter per Morningstar estimate based on
         ~192M WBD shares × $30 × 0.25/4 + overhead). If deal fails due to regulatory matters,
@@ -607,7 +650,7 @@ advance_investments:
       realized from June 2024 sale = ~$4.04B total from WBD investment. This would be Advance's largest
       single liquidity event since the Reddit IPO and could significantly alter the family office's capital
       allocation and media strategy.
-    current_value_estimate: "~$2.59B remaining at market ($26.48 Jul 2 close) or ~$2.94B at Paramount tender ($30/share) + $1.1B already realized = ~$3.70-4.04B total. WBD market cap $66.4B."
+    current_value_estimate: "~$2.61B remaining at market ($26.59 Jul 10 close) or ~$2.94B at Paramount tender ($30/share) + $1.1B already realized = ~$3.71-4.04B total. WBD market cap ~$64.5B."
     competitive_with: ["Meta (streaming/content)"]
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse+programming&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
     source_urls:
@@ -619,6 +662,7 @@ advance_investments:
       - "https://www.thestreet.com/investing/paramount-wbd-merger-faces-major-regulatory-hurdle"
       - "https://www.barchart.com/story/news/unusual-options-activity-wbd-paramount-deal-close"
       - "https://ainvest.com/post/eu-regulatory-hurdle-paramount-warner-bros-acquisition/"
+      - "https://www.reuters.com/legal/litigation/oregon-drops-motion-delay-paramount-warner-bros-deal-2026-07-11/"
       - "https://www.reuters.com/business/media-telecom/britains-paramount-warner-review-may-be-aimed-commitments-not-veto-2026-07-02/"
       - "https://www.wsj.com/business/paramount-skydance-offers-concessions-eu-approval-warner-bros-deal/"
 
@@ -796,15 +840,16 @@ advance_investments:
 #   STEEP DECLINE: -68% from 52-week high, -82% over 5yr. Consensus "Reduce" (6 sell, 9 hold, 5 buy).
 #   CONTINUED SLIDE: $133.54 (Jul 8) vs $137.20 (Jul 2) — another -2.67% in 4 trading days.
 # Turnitin: ~$1.75B+ (acquired 2019, likely appreciated given AI detection boom)
-# WBD remaining: ~$2.61B at market ($26.59, Jul 10 intraday) or ~$2.94B at Paramount $30 tender + $1.1B realized
+# WBD remaining: ~$2.61B at market ($26.59, Jul 10 close) or ~$2.94B at Paramount $30 tender + $1.1B realized
 #   EU Phase I deadline July 22 (via UIP divestiture remedy submission).
 #   DOJ cleared Jun 19. EU Commission expected to approve without objection.
 #   UK: Culture Secretary Lisa Nandy's "minded to intervene" notice (Jun 30) — Jul 6 response deadline
 #   has passed, formal decision pending. If she proceeds, Ofcom + CMA review up to 24 weeks.
 #   CMA parallel antitrust investigation: Aug 7 deadline.
-#   Oregon AG seeking court order for "Project Warrior" documents (regulatory clearance lobbying).
-#   Paramount delayed close from Jul 16 to Jul 22+ due to Oregon probe. Multistate AG antitrust
-#   lawsuit "likely next week" (CNN, Jul 8-9). Late September close now considered realistic.
+#   Oregon AG WITHDREW court motion to delay deal (Jul 11) — "Paramount made it clear they weren't
+#   going to comply." Oregon "considering next steps." Removes most immediate legal obstacle.
+#   Multistate AG antitrust lawsuit still expected — CNN reported "likely next week" (Jul 8-9).
+#   Paramount committed not to close before Jul 22. Late September close considered realistic.
 #   $627M/quarter ticking fee (~$7M/day) triggers if not closed by Sept 30.
 #   WBD Q1 2026 missed badly: EPS -$1.17 vs consensus -$0.10 (missed by $1.07). Rev $8.89B (-1% YoY).
 #   WBD Q2 2026 earnings: Aug 6 (before market open).
