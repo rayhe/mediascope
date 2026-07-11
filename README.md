@@ -35,6 +35,22 @@ This is not an attack tool. It works equally well pointed at Fox News covering r
 16. **Source extraction stop-word filtering** — prevents false-positive extractions like "After Meta said" → source "After Meta" **(new)**
 17. **Documentary source detection** — identifies cited artifacts (recordings, leaked documents, court filings, internal memos) as `source_type="documentary"`, distinguishing them from named and anonymous human sources for accurate authority scoring **(new)**
 
+### Pipeline Statistics (auto-verified)
+
+| Component | Count | Notes |
+|---|---|---|
+| Entity clusters | 83 | 810 aliases, 62 with custom regex, 21 auto-generated |
+| Framing device types | 97 | 10 core + 80 extended + 7 structural (post-pass) |
+| Framing patterns | 571 | Compiled regex patterns across 90 pattern-based types |
+| Emotional language terms | 875 | Domain-specific lexicon for editorial EI scoring |
+| Adversarial device types | 28 | Used by sentiment correction pipeline |
+| Sentiment correction paths | 10 | Paths A–J, each addressing a specific VADER failure mode |
+| Annotated articles | 155 | Full manual analysis in `examples/sample_output/` |
+| Journalists tracked | 222 | Career data with source URLs |
+| Career-entry migrations | 871 | Across 402 distinct publications |
+| Topic buckets | 29 | Standardized for cross-entity comparison |
+| Tests | 2,262 | Across 99 test files |
+
 ## ✨ Novel: Editorial Histories
 
 MediaScope's most original contribution is the **Editorial Histories** module. When a journalist moves from Publication A to Publication B, it creates a natural experiment:
@@ -60,7 +76,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **222 journalists** across 400+ publications (689 auto-detected migrations). Notable high-value migrations include:
+Ships with verified career data for **222 journalists** across 400+ publications (871 career-entry migrations, 689 auto-detected). Notable high-value migrations include:
 
 | Journalist | Migration Path | Analytical Value |
 |---|---|---|
@@ -571,7 +587,7 @@ MIT License. See [LICENSE](LICENSE).
 
 MediaScope documents its own gaps with the same rigor it applies to media analysis:
 
-- **Sentiment correction coverage:** Two article genres lack correction paths — financial journalism (VADER inflated by investment vocabulary) and structural-split articles (adversarial lead + promotional quote tail). Both are fully documented with proposed solutions in [METHODOLOGY.md §16](docs/METHODOLOGY.md#16-financial-journalism-sentiment-bias).
+- **Sentiment correction coverage:** Two article genres lack correction paths — financial journalism (VADER inflated by investment vocabulary) and structural-split articles (adversarial lead + promotional quote tail). Both are fully documented with proposed solutions in [METHODOLOGY.md §16](docs/METHODOLOGY.md#16-financial-journalism-sentiment-bias). The 10 existing paths (A–J) each address a distinct VADER failure mode; see [METHODOLOGY.md §9](docs/METHODOLOGY.md#9-framing-aware-tone-correction) for the full decision tree with trigger thresholds and blend formulas.
 - **Career data sourcing:** LinkedIn automation is blocked; journalist career entries require manual research from public sources (conference bios, author pages, press releases).
 - **Domain specificity:** Entity clusters and framing devices are optimized for tech/media coverage. Other verticals require domain-specific expansion.
 - **Minimum data thresholds:** DiD migration analysis requires ≥5 articles per journalist per publication. Low-output contributors can't be analyzed even with documented career paths.
