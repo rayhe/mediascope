@@ -657,6 +657,16 @@ editorial_changes:
     outgoing: Megan McCarthy
     notes: McCarthy left MIT TR for Reviewed.com (USA Today) as executive editor of growth. Brief tenure under Lichfield.
     source_url: https://talkingbiznews.com/media-news/biz-journalist-mccarthy-hired-as-executive-editor-of-growth-for-reviewed-com/
+  - date: 2019-09
+    position: editorial_director_audio
+    incoming: Jennifer Strong
+    outgoing: null
+    notes: 'Strong joined from WSJ where she created ''The Future of Everything'' podcast (2019 Webby winner). At MIT TR,
+      she built the audio franchise: ''In Machines We Trust'' (AI podcast, 70+ countries, 2021 Webby finalist, Ambie nominee)
+      and ''The Extortion Economy'' (ransomware, ProPublica co-production). First dedicated audio editorial leader at MIT
+      TR — expanded reach beyond traditional website readership to podcast audiences during critical AI coverage growth period.
+      BA Gardner-Webb, MA American University (International Affairs).'
+    source_url: https://www.technologyreview.com/author/jennifer-strong/
   - date: 2020-01
     incoming: Will Douglas Heaven
     notes: Senior editor for AI — shapes entire AI editorial direction. PhD Computer Science (Imperial College London). Previously
@@ -731,6 +741,16 @@ editorial_changes:
     notes: O'Neill left MIT TR for MITRE Corporation (lead cyber operations analyst). 160+ posts over ~3.5 years. Returned
       to journalism at Bloomberg News in 2025. Cybersecurity beat was not refilled — position eliminated.
     source_url: https://talkingbiznews.com/media-news/oneill-who-covered-cybersecurity-departing-mit-tech-review/
+  - date: ~2023
+    position: editorial_director_audio_departure
+    incoming: null
+    outgoing: Jennifer Strong
+    notes: 'Strong departed to create independent ''SHIFT with Jennifer Strong'' podcast (PRX). Not replaced on MIT TR''s
+      ''Our people'' page as of 2026, suggesting audio editorial directorship was not backfilled — strategic de-emphasis of
+      podcast operations. Subsequently hired as host of ''The Next Innovation'' podcast. ANALYTICAL NOTE: Her unreplaced departure
+      may signal MIT TR shifting resources from audio production back to written/digital content under Honan''s editorial
+      strategy.'
+    source_url: https://talkingbiznews.com/they-talk-biz-news/tech-journalist-strong-named-host-of-the-next-innovation-podcast/
   - date: 2023-02
     position: senior_editor_departure
     incoming: null
@@ -738,6 +758,13 @@ editorial_changes:
     notes: Ohlheiser left MIT TR to freelance. Covered internet culture and misinformation since March 2020. Later joined
       Vox as senior tech writer. Previously at Washington Post (digital culture, 2014-2020) and Atlantic/The Wire.
     source_url: https://talkingbiznews.com/media-news/senior-editor-ohlheiser-departing-mit-tech-review/
+  - date: ~2024
+    incoming: Adam Rogers
+    outgoing: null
+    position: editor
+    notes: 'HIRE: Adam Rogers joined MIT TR as editor. Previously 18 years at Wired (deputy editor) → Business Insider (senior
+      tech correspondent ~2022-2024). KSJ Fellow 2003. NYT bestselling author. Confirmed in Hype Correction editing credits
+      (Dec 2025) and 10BT 2026 masthead.'
   - date: 2024-01
     incoming: Caiwei Chen
     notes: 'REPLACEMENT: Chen hired from Rest of World to cover China tech. Filled gap created by Zeyi Yang''s departure (or
@@ -746,6 +773,13 @@ editorial_changes:
     outgoing: null
     position: china_tech_reporter
     source_url: https://talkingbiznews.com/media-news/mit-tech-review-hires-chen-as-tech-reporter/
+  - date: ~2025
+    incoming: Mary Beth Griggs
+    outgoing: null
+    position: science_editor
+    notes: 'HIRE/PROMOTION: Mary Beth Griggs as science editor. Previously at Popular Science and The Verge. Confirmed via
+      Oct 2025 Roundtable (Climate Solutions) and Jun 2026 Roundtable (Longevity). Listed in Hype Correction editing credits
+      (Dec 2025).'
   - date: 2025-01
     incoming: null
     notes: 'DEPARTURE: Zeyi Yang left MIT TR for Wired as senior writer (~Jan 2025). MIT TR author page uses past tense (''covered'').
@@ -774,6 +808,13 @@ editorial_changes:
     notes: 'DEPARTURE: Melissa Heikkilä left MIT TR for Financial Times as AI correspondent (Jan 27, 2025). KEY MIGRATION
       for DiD analysis: specialist AI pub → business press. Had been at MIT TR since May 2022. Previously at Politico EU.
       Won/nominated ABSW awards at MIT TR.'
+  - date: ~2025-01
+    incoming: null
+    outgoing: Zeyi Yang
+    position: senior_writer_departure
+    notes: 'DEPARTURE: Zeyi Yang left MIT TR for Wired as senior writer (~Jan 2025). MIT TR author page uses past tense. Created
+      China Report newsletter. Won 2024 ASME NEXT Award. KEY MIGRATION for DiD analysis: specialist → general tech. His departure
+      reduced MIT TR''s China tech coverage (replaced by Caiwei Chen).'
   - date: '2025-10-29'
     incoming: null
     notes: 'STRATEGIC PARTNERSHIP: MIT TR × Financial Times ''State of AI'' newsletter series. 6-part series pairing MIT TR
@@ -803,27 +844,6 @@ editorial_changes:
     outgoing: null
     position: national_magazine_award_finalist
     source_url: https://ca.advfn.com
-  - date: ~2024
-    incoming: Adam Rogers
-    outgoing: null
-    position: editor
-    notes: 'HIRE: Adam Rogers joined MIT TR as editor. Previously 18 years at Wired (deputy editor) → Business Insider (senior
-      tech correspondent ~2022-2024). KSJ Fellow 2003. NYT bestselling author. Confirmed in Hype Correction editing credits
-      (Dec 2025) and 10BT 2026 masthead.'
-  - date: ~2025
-    incoming: Mary Beth Griggs
-    outgoing: null
-    position: science_editor
-    notes: 'HIRE/PROMOTION: Mary Beth Griggs as science editor. Previously at Popular Science and The Verge. Confirmed via
-      Oct 2025 Roundtable (Climate Solutions) and Jun 2026 Roundtable (Longevity). Listed in Hype Correction editing credits
-      (Dec 2025).'
-  - date: ~2025-01
-    incoming: null
-    outgoing: Zeyi Yang
-    position: senior_writer_departure
-    notes: 'DEPARTURE: Zeyi Yang left MIT TR for Wired as senior writer (~Jan 2025). MIT TR author page uses past tense. Created
-      China Report newsletter. Won 2024 ASME NEXT Award. KEY MIGRATION for DiD analysis: specialist → general tech. His departure
-      reduced MIT TR''s China tech coverage (replaced by Caiwei Chen).'
   nytimes:
   - date: 2022-06
     incoming: Joseph Kahn

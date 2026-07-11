@@ -2,6 +2,31 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-11 02:00 PT — Type B: Journalist/Publication Research (MIT Tech Review depth)
+
+**New journalist added:**
+
+### Jennifer Strong (#218)
+- **Career:** NPR → WSJ (created "Future of Everything" podcast) → MIT Tech Review (~2019-09, editorial director audio, created "In Machines We Trust" podcast) → freelance/PRX (~2023, "SHIFT" podcast, "The Next Innovation" host)
+- **Migration count:** 4 (NPR→WSJ, WSJ→MIT TR, MIT TR→freelance, freelance→PRX)
+- **Notable:** Departure from MIT TR unreplaced — strategic signal of audio de-prioritization. Audio journalism specialist with cross-format (radio→podcast→editorial) career arc.
+- **Sources:** Wikipedia, technologyreview.com author page, Talking Biz News, Rainforest Journalism Fund
+
+**Journalist updated:**
+
+### Melissa Heikkilä — expanded early career + recognition
+- Added Yle (Finnish public broadcaster) news anchor role at career start
+- Added Forbes 30 under 30 European Media 2020
+- Added 3 source URLs (Talking Biz News, Good Robot Podcast/AIhub)
+
+**Editorial changes:**
+- `editorial_changes.yaml`: +2 MIT TR entries (Strong joining ~2019-09, Strong departing ~2023)
+- MIT TR editorial changes: 25 → 27
+
+**Counts:** 218 journalists, 210 multi-pub, 683 migrations. 98 structural + 21 career tests passing.
+
+---
+
 ## 2026-07-11 01:00 PT — Type A: Article Deep Dive (Fox Business Muse Image Shutdown)
 
 **Article:** Fox Business — "Meta shuts down AI tool after backlash over public Instagram accounts" (2026-07-11)
