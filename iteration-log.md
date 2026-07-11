@@ -2,6 +2,42 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-11 00:00 PT — Type D: Toolkit Quality & Documentation (SOURCE_ANALYSIS_REFERENCE.md)
+
+**Focus:** Created a standalone quick-reference card for the source analysis pipeline — the toolkit's third pillar alongside framing devices and topic classification. Source analysis spans 2,818 lines of code (`sources.py`) and 4 methodology sections (§5–§8) but had no compact reference card, while framing (FRAMING_REFERENCE.md) and topics (TOPIC_REFERENCE.md) already did.
+
+**New file created:**
+
+### docs/SOURCE_ANALYSIS_REFERENCE.md (~345 lines)
+- **Part 1: Source Type Taxonomy** — 10 source types (`named`, `anonymous`, `no_comment`, `organizational`, `documentary`, `group_expert`, `collective_research`, `legal_party`, `publication_citation`, `news_outlet`) with ratio inclusion and stance analysis behavior for each
+- **Part 2: Source Extraction Patterns** — All 14 pattern groups documented with examples, priority order, and notes on why certain patterns must precede others (e.g., Pattern 0c prevents org names like "KeyBanc Capital" from being misidentified as person "Capital")
+- **Part 3: Source Authority Grading** — Primary/Secondary/Tertiary hierarchy with weights, anonymous source ratio thresholds
+- **Part 4: Source Stance Analysis** — Stance classification method, stance_balance formula, and the analytical power quadrant (high-authority + adversarial = sophisticated editorial bias)
+- **Part 5: Outsourced Intensity** — Detection method (quoted vs. editorial prose split), ratio scale, and combined signal with stance balance
+- **Part 6: Active-Negative Agency** — 5 verb categories (surveillance, coercion, exploitation, destruction, deception) and interaction with tone correction
+- **Part 7: Zero Named Sources Flag** — 4 detection patterns, −12 score penalty, genre sensitivity for wire services
+- **Part 8: Common Failure Modes** — 8 documented extraction failures with root causes, mitigations, and discovery articles. Self-validating organizational patterns documented.
+- **Part 9: CLI Quick Reference** — Python API usage and 3 function calling schemas
+- **Part 10: Subsystem Interactions** — How source analysis feeds framing detection, tone correction, same-event comparison, quality standards, and genre-aware analysis
+
+**Design rationale:** FRAMING_REFERENCE.md (276 lines) and TOPIC_REFERENCE.md (190 lines) proved that compact quick-reference cards dramatically improve agent and human usability for complex taxonomies. Source analysis was the last major subsystem without one — its 14 extraction patterns, 10 source types, and multi-dimensional analysis (authority × stance × outsourced intensity × agency) were scattered across the 1,820-line METHODOLOGY.md. The reference card makes the system scannable and actionable without reading the full methodology.
+
+**Cross-reference updates:**
+- README.md: Documentation table entry added between TOPIC_REFERENCE and QUALITY_STANDARDS (8→9 entries)
+- METHODOLOGY.md §5: Added "Quick Reference" pointer at top of Source Authority Analysis section
+- AGENT_GUIDE.md: Added reference link before `analyze_source_stance` function calling schema
+- ARCHITECTURE.md: File tree updated to include all 3 reference cards (FRAMING_REFERENCE, TOPIC_REFERENCE, SOURCE_ANALYSIS_REFERENCE)
+
+**Doc count updates:**
+- Documentation files: 8 → **9**
+- Total doc lines: ~5,390 → **~5,811** (+421 lines)
+- README "What It Does" items: 17 (no change — source analysis was already listed as a capability)
+- Documentation table entries: 8 → **9**
+
+**Tests:** 2,209 passed, 0 failed. All 98 structural consistency tests pass.
+
+**Commit:** `eb0fb56` — pushed to GitHub
+
 ## 2026-07-10 23:00 PT — Type C: Ownership & Funding (SRMG Sovereign Deep Dive — PMC investor correction + PIF portfolio dynamics)
 
 **Focus:** CRITICAL CORRECTION of PMC's Saudi investor identity and comprehensive deep dive into the SRMG-PIF-PMC ownership chain, SRMG advertising partnership, and PIF's anti-Meta portfolio alignment.
