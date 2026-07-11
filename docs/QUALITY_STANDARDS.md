@@ -198,7 +198,7 @@ These gaps demonstrate that **raw VADER scores on investigative journalism are u
 
 MediaScope's framing-aware correction fires when three conditions are all met:
 
-1. **Adversarial framing density:** ≥3 devices from the adversarial set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, editorial_aside, failure_precedent, editorial_deflation, competitive_positioning, consumer_ownership, slippery_slope, competitive_deficit, competitive_displacement, absence_as_evidence, silence_as_guilt, expert_contradiction, loss_leader_framing)
+1. **Adversarial framing density:** ≥3 devices from the adversarial set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, recidivism_framing, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, editorial_aside, failure_precedent, editorial_deflation, competitive_positioning, consumer_ownership, slippery_slope, competitive_deficit, competitive_displacement, absence_as_evidence, silence_as_guilt, expert_contradiction, loss_leader_framing)
 2. **Negative agency signal:** Active-negative agency (tracking, cutting, forcing) or passive victim framing
 3. **Positive raw VADER score:** The uncorrected composite score misleadingly reads as positive
 
@@ -227,7 +227,7 @@ Every article analysis that introduces a toolkit correction must include:
 4. **Gap analysis** — why the gap exists and which specific framing devices or detection failures caused it
 5. **Regression tests** — at least one test per correction to prevent future regressions
 
-This ensures the correction pipeline is validated against real articles, not synthetic examples. All 152 annotated articles in `examples/sample_output/` follow this pattern.
+This ensures the correction pipeline is validated against real articles, not synthetic examples. All 153 annotated articles in `examples/sample_output/` follow this pattern.
 
 ## 8. Emotional Language Validation
 

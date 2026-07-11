@@ -173,6 +173,7 @@ def analyze_with_path_h_details(
         "competitive_deficit", "competitive_displacement",
         "absence_as_evidence", "silence_as_guilt",
         "expert_contradiction", "loss_leader_framing",
+        "recidivism_framing",
     }
 
     print(f"\n{'=' * 70}")

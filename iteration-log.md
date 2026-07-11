@@ -2,6 +2,60 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-10 21:00 PT — Type B: Journalist/Publication Research (MIT TR editorial depth — 4 new profiles)
+
+**Focus:** MIT Technology Review editorial staff gaps. Added 4 previously untracked journalists with exceptionally high DiD (difference-in-differences) migration value, plus 6 missing editorial change records.
+
+**New journalist profiles (4):**
+
+1. **Megan McCarthy** — 12-position career chain: Wired (staff writer, ~2008-09) → Valleywag (~2009-10) → Techmeme (1st human editor, founded Mediagazer, ~2010-11) → NY Observer (news editor) → Reuters (deputy tech editor) → Fortune (deputy managing editor) → Alley Interactive (editorial strategy) → MIT TR (executive editor under Lichfield, Feb 2018-~2019) → Reviewed.com/USA Today (exec editor of growth) → The Messenger (breaking news editor, shut Jan 2024) → Diageo (SEO manager, non-editorial) → Morning Brew (editor of Founder Brew, May 2026). 4 source URLs.
+   - **DiD value:** Exceptionally high. 10+ publication migrations. Wired → MIT TR = double-tracked-publication data point. Career oscillation between editorial leadership and non-editorial roles (Alley Interactive, Diageo) documents market pressures on mid-career tech editors. Founding role at Mediagazer provides gatekeeping ecosystem insight.
+
+2. **Patrick Howell O'Neill** — 5-position career: Daily Dot (staff writer, ~2013-16) → CyberScoop (reporter, ~2016-19) → MIT TR (cybersecurity senior editor, ~2019-Aug 2022, 160+ posts) → MITRE Corporation (lead cyber operations analyst, ~2022-25) → Bloomberg News (cybersecurity reporter, ~2025-present). 5 source URLs.
+   - **DiD value:** Rare journalist→practitioner→journalist arc. Same cybersecurity beat across Daily Dot, CyberScoop, MIT TR, Bloomberg enables controlled tone/framing comparison. 3-year MITRE industry detour is a natural experiment for how practitioner experience affects subsequent reporting.
+
+3. **Abby Ohlheiser** — 6-position career: Slate (writer, Sep 2011-May 2013) → Atlantic/The Wire (staff writer, Jul 2013-Jul 2014) → Washington Post (reporter/digital culture, Jul 2014-Mar 2020) → MIT TR (senior editor, internet culture/misinfo, Mar 2020-Feb 2023) → freelance → Vox (senior tech writer, ~2024-present). 4 source URLs.
+   - **DiD value:** WaPo → MIT TR → Vox triple migration on overlapping internet culture beat. Beat consistency (digital/internet culture) with changing editorial environments (legacy newspaper → tech-specialist → digital-native) is ideal for institutional bias decomposition.
+
+4. **Michael Reilly** — 7-position career: Discovery News (reporter, ~2010-13) → New Scientist (senior tech editor, ~2013-15) → Timeline (EIC, ~2015-16) → MIT TR (executive editor, Jan 2016-Jul 2022, 6.5yr tenure, 2x NMA finalist) → Protocol (editorial director, Jul-Nov 2022, shut down) → The Markup (managing editor, ~2023-24) → Every (managing editor, ~2025-present). 3 source URLs.
+   - **DiD value:** Longest recent MIT TR editorial leadership tenure (6.5 years). MIT TR → Protocol → Markup migration captures three different editorial cultures (institutional tech, political tech policy, nonprofit investigative). Protocol shutdown 5 months after joining documents startup-era publication lifecycle.
+
+**Editorial changes added (6, total 19→25):**
+- 2016-01: Reilly joins as executive editor
+- 2018-02: McCarthy joins as executive editor (under Lichfield)
+- ~2019: McCarthy departs for Reviewed.com/USA Today
+- 2022-07: Reilly departs for Protocol
+- 2022-08: O'Neill departs for MITRE (cybersecurity beat not refilled)
+- 2023-02: Ohlheiser departs to freelance
+
+**Doc updates:**
+- README.md: 213→217 journalists, 657→680 auto-detected migrations, 388+→390+ publications
+- EDITORIAL_HISTORIES.md: 213→217 journalists, 205→209 multi-pub, 657→680 migrations, 380+→395+ feeder outlets, 388+→390+ publications
+- careers_demo.py: 213→217 journalists, 657→680 migrations
+- ARCHITECTURE.md: no changes needed (counts referenced indirectly)
+
+**Research sources:**
+- Talking Biz News (talkingbiznews.com): primary source for all 4 profiles — hire/departure announcements with career summaries
+- MIT Technology Review author pages (technologyreview.com/author/*)
+- Muck Rack journalist profiles (muckrack.com)
+- Abby Ohlheiser personal résumé (awohlheiser.com)
+- Security Conversations podcast interview (Patrick Howell O'Neill episode)
+- CyberScoop hire announcement
+- EmTech AI 2026 speaker list (confirmed current MIT TR editorial structure: Mat Honan EIC, Amy Nordrum exec editor, Will Douglas Heaven senior AI editor)
+- FT partnership announcement (confirmed current reporter titles and beats)
+
+**Test results:** 2,209 passed, 0 failed. All 98 structural consistency tests pass.
+
+**Running totals:**
+- Total journalists: **217** (was 213)
+- Multi-publication: **209** (was 205)
+- Auto-detected migrations: **680** (was 657)
+- Total publications tracked: **393** (was 388+)
+- MIT TR editorial changes: **25** (was 19)
+- MIT TR journalists in DB: **28** (24 current + 4 departed)
+
+**Commit:** `f52623b` — pushed to GitHub
+
 ## 2026-07-10 13:00 PT — Type D: Toolkit Quality & Documentation (TOPIC_REFERENCE.md)
 
 **Focus:** Created a standalone quick-reference card for the 29 topic buckets, matching the proven FRAMING_REFERENCE.md format. The topic classification system is used in every analysis run, but its documentation was buried in a dense paragraph in METHODOLOGY.md — the biggest documentation gap in the toolkit.

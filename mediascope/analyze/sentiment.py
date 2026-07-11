@@ -1387,6 +1387,13 @@ _ADVERSARIAL_DEVICE_TYPES: set[str] = {
     # narratively dependent on the subject's failure.
     # Discovered in MIT TR open-weight models article (Jul 9 2026).
     "competitive_displacement",
+    # Recidivism framing positions the entity as a serial offender via
+    # temporal markers ("once again," "yet again," "continues to," "not
+    # for the first time").  Implies the current behavior is part of a
+    # pattern of repeat violations rather than an isolated event.
+    # Discovered in Fast Company Muse Image opt-out article (Jul 9 2026):
+    # "Meta is once again testing the limits of privacy rights."
+    "recidivism_framing",
 }
 
 # Anchor device types that create negative reader takeaway even when

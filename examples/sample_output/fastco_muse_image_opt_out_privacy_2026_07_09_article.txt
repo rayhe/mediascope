@@ -1,0 +1,39 @@
+Source: Fast Company
+URL: https://www.fastcompany.com/91571325/meta-muse-image-ai-how-to-opt-out-instagram-public-photos
+Author: Sarah Fielding
+Published: July 9, 2026
+Retrieved: July 10, 2026
+
+Title: Meta Muse Image: How to opt out of AI using your Instagram photos
+
+This week, Meta launched Muse Image, Meta Superintelligence Lab's first image generation model. And with the new AI tool, Meta is once again testing the limits of privacy rights.
+
+As Meta explains it, Muse Image "uses advanced reasoning to understand complex prompts, seamlessly blending multiple photos into high-quality creations you can download and share anywhere—including directly to your chat, story, or feed." Examples provided by Meta include creating animated versions of images, putting famous landmarks in the background, and changing everything from a person's accessories to food.
+
+Oh, yeah—and it can use photos from other accounts without permission.
+
+Meta touts features like generating images directly in WhatsApp chats, and 30 AI-powered effects available in Instagram stories, with more coming to Messenger and Facebook soon. But, it further highlights that Instagram users can easily take other people's content for their AI creations.
+
+"You can also @-mention Instagram accounts in the Meta AI app to bring specific Instagram profiles right into your images," Meta's post reads. "Whether you want to design a custom event invitation, mock up a collaborative creative concept, or generate a personalized graphic, tagging a username lets Meta AI use public photos to build a visual that's ready to post."
+
+Unsurprisingly, Meta is positioning this as a positive thing, stating that Muse Image is "rooted in your world." It gives a theoretically wholesome example of using a friend's profile to create an AI-generated birthday card.
+
+Yet it doesn't take much imagination to guess the ways such easy access could be abused. Social media users were, not so shockingly, unhappy about this development. One Reddit user wrote, "The tool itself is not the surprising part. The surprising part is still pretending 'you can turn it off in settings' is meaningful consent for normal users."
+
+Reached for comment, a Meta spokesperson told Fast Company: "We built Muse Image with strong controls and safety guardrails from day one. Private accounts and those belonging to users under 18 are automatically excluded and adult users with public accounts can opt out with just a couple clicks. We will take action against any content that violates our Community Standards."
+
+You can, as mentioned, turn off AI access to your public photos. Here's how.
+
+How to block Meta AI from using your content
+
+Right now, everyone aged 18 or over with a public account is opted in for use.
+
+Thankfully, it's possible to opt out of access, even without going private.
+
+Take these steps to opt out of Meta's Muse Image:
+
+- Go to Settings on your Instagram profile
+- Click the tab called Share and Reuse
+- Turn off the toggle for "Allow people to reuse your content on Instagram and with AI features."
+
+Private accounts won't have this option, as they are already excluded from use.

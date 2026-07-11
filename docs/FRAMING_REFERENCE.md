@@ -1,6 +1,6 @@
 # Framing Device Quick Reference
 
-> A compact lookup card for all 95 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
+> A compact lookup card for all 96 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
 
 ---
 
@@ -86,6 +86,7 @@ Devices that frame entities, companies, or individuals through power dynamics, c
 | 37 | **Industry Normalization Undercut** | E | Acknowledges industry-wide practice, then singles out target | "Other companies also X, but [Target] is especially…" |
 | 38 | **Latecomer Narrative** | E | Company framed as entering a space after competitors | "joining the race," "playing catch-up," "copycat," "me-too product" |
 | 39 | **Refusal Amplification** | E | Entity's non-cooperation emphasized beyond its news value | "declined," "refused," positioned to imply guilt |
+| 97 | **Recidivism Framing** | E | Entity framed as serial offender through temporal recurrence markers | "once again," "yet again," "continues to," "not for the first time," "has a history of" |
 
 ---
 
@@ -264,9 +265,9 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 | Tier | Count | Detection Method |
 |---|---|---|
 | Core | 10 | Pattern matching — fundamental editorial techniques |
-| Extended | 78 | Pattern matching — discovered from real article analysis |
+| Extended | 79 | Pattern matching — discovered from real article analysis |
 | Structural (post-pass) | 7 | Full-article heuristics (position, accumulation, structure) |
-| **Total** | **95** | |
+| **Total** | **96** | |
 
 ---
 

@@ -96,10 +96,84 @@ ownership_chain:
       followers, 6B video views. These numbers predate the Vox Media brand acquisition (June 2026),
       which added The Verge's tens of millions of monthly uniques, Eater, SB Nation, etc.
 
-      EXTERNAL INVESTMENT: In February 2018, PMC received a $200M investment from Saudi Arabia's
-      Public Investment Fund (PIF) subsidiary MBC Group, valuing PMC at approximately $700M at the time
-      (WWD, Feb 28, 2018). This Saudi sovereign wealth connection is relevant to PMC's coverage of
-      tech companies operating in the Gulf region and to geopolitical coverage generally.
+      EXTERNAL INVESTMENT — SRMG (CORRECTED):
+      In February 2018, PMC received a $200M+ investment from Saudi Research and Media Group
+      (SRMG, Tadawul: 4210), valuing PMC at approximately $700M (WWD, Feb 28, 2018; NYPost).
+      An additional $25M was committed via a MENA joint venture (Gulf Business). PMC was
+      deliberately opaque about the investor's identity — even its own properties Rolling Stone
+      and Variety misidentified the source as "a Saudi fund" or "MBC Group." Only after TheWrap
+      investigated and pressured PMC in July 2019 did PMC's WWD.com update its original
+      announcement to name SRMG (TheWrap, Sharon Waxman, Jul 2019). SRMG did not respond to
+      TheWrap's inquiries and does not list the PMC investment on its website.
+
+      CORRECTION: The original profile identified the investor as "PIF subsidiary MBC Group."
+      This was incorrect. MBC Group is a separate Saudi broadcasting conglomerate. The actual
+      investor is SRMG, which is linked to PIF through a different chain (see below).
+
+      SRMG OWNERSHIP CHAIN (PIF → SRMG):
+      SRMG is a publicly listed joint-stock company on Saudi Tadawul exchange (since 2006).
+      Its majority shareholder is **Al Ahli Capital Fund 13**, an investment vehicle managed
+      by **NCB Capital** (the asset management arm of **Saudi National Bank / SNB**). SNB is
+      itself majority owned by the **Public Investment Fund (PIF)** — Saudi Arabia's $1.15
+      trillion sovereign wealth fund. This chain (PIF → SNB → NCB Capital → Al Ahli Capital
+      Fund 13 → SRMG → PMC) creates an indirect but institutional linkage between PMC and the
+      Saudi government. The State Media Monitor classifies SRMG as "Captured Public/State-Managed
+      (CaPu)" — their highest category of state influence.
+
+      SRMG GOVERNANCE & POLITICAL CONNECTIONS:
+      - **Prince Badr bin Abdullah** was SRMG's head until becoming Saudi Arabia's first Culture
+        Minister — described as a "confidante of Crown Prince Mohammed bin Salman" (TheWrap).
+      - **Ahmed bin Aqeel Al-Khatib**, Saudi Arabia's current Minister of Tourism, sits on
+        SRMG's board of directors (State Media Monitor).
+      - CEO since October 2020: **Jomana Rashed Al-Rashid** (first female CEO of SRMG).
+      - Middle East expert Dennis Ross (Washington Institute): "Multiple experts in the region
+        regard the company as an arm of 'soft power' of the Saudi government."
+
+      SRMG FINANCIAL DETERIORATION:
+      - Share capital: SAR 800M (80M shares at SAR 10 each)
+      - Revenue: $996M (FY2023) → $712M (FY2025) → $740M (TTM Mar 2026) — 26% decline
+      - EBITDA: $227M (FY2023) → -$9.6M (FY2025) → $14M (TTM) — near-collapse
+      - Net Income: +$149M (FY2023) → -$98M (FY2025) → -$97M (TTM) — sustained losses
+      - Enterprise Value: $5.89B (FY2024) → $1.95B (TTM) — 67% decline
+      - Total Assets: ~$1.93B; Total Debt: $319M (PitchBook)
+      Source: PitchBook, Morningstar (publicly traded on Saudi Tadawul).
+
+      SRMG MEDIA ASSETS (State Media Monitor):
+      Print: Al Eqtisadiah, Asharq Al-Awsat, Arab News, The Majalla, Urdu News, Sayidaty,
+      Al Jamila, Arrajol, Bassim, Heya. Digital: Asharq News. JV: Asharq Business with
+      Bloomberg (launched Sep 2017). Also: Billboard Arabia (SRMG × Billboard partnership).
+      Subsidiaries: 18+ across KSA, Kuwait, UAE, Morocco, Pakistan. 170M+ global users.
+
+      SRMG VENTURES (corporate VC arm, launched ~2022):
+      Invests seed-to-Series-B in digital media, generative AI, immersive/interactive
+      entertainment. Investments include: Telfaz11 (Saudi creative media studio), VUZ (VR
+      social media app), Anghami (MENA music streaming, Nasdaq-listed — with SRMG board seat),
+      Qvest Group JV (2024, media technology services). The AI investment mandate creates an
+      additional layer of financial interest in AI ecosystem outcomes relevant to The Verge's
+      coverage of AI companies.
+
+      KHASHOGGI NON-DIVESTITURE:
+      After the October 2018 murder and dismemberment of Washington Post journalist Jamal
+      Khashoggi — ordered by Crown Prince MBS per U.S. intelligence — Endeavor (WME parent)
+      returned its $400M Saudi PIF investment in March 2019. PMC did NOT return its $200M+
+      SRMG investment. The UK opened a state inquiry into Saudi investment in The Independent
+      and Evening Standard. PMC's retention of the Saudi investment, combined with its
+      deliberate opacity about the investor's identity, represents a distinct editorial
+      independence risk: a media company maintaining sovereign state financial ties while
+      declining to disclose them. Dennis Ross: "There has to be transparency. If there's no
+      transparency I'd be much less inclined to go along with it."
+
+      PIF TECH PORTFOLIO DYNAMICS (Q2 2025, latest 13F):
+      PIF **sold all Meta shares** in Q2 2025 (previously held 667,996 class A shares, ~$380M+).
+      Also exited: Shopify, PayPal, Alibaba, Nu Holdings, FedEx. PIF shifted to: semiconductors
+      (Arm Holdings position increased ~400M shares, ASML added, Analog Devices), healthcare
+      (UnitedHealth, Eli Lilly, Merck), Apple (new position), and Lucid Group (massive increase).
+      Total US equity exposure: $23.8B across 57 positions. AUM: $1.15T (2025, Global SWF).
+      SIGNIFICANCE: PIF is financially aligned AGAINST Meta (divested) and WITH Meta's
+      competitors (Apple, Arm/chip ecosystem). Through SRMG, PIF has a $200M+ stake in PMC
+      (The Verge's parent). The Verge's ultimate beneficial ownership chain includes a sovereign
+      investor that actively sold Meta stock while retaining its media investment — creating
+      structural financial alignment against The Verge's most-covered company.
 
       AD TECH INFRASTRUCTURE: The June 2026 Vox Media acquisition specifically included Concert
       (Vox Media's premium ad marketplace, competing in the same ecosystem as Google and Meta's
@@ -124,6 +198,9 @@ ownership_chain:
       - "https://pmc.com"
       - "https://www.thewrap.com/penske-media-corporation-invests-100-million-vox-20-percent-stake/"
       - "https://www.exchange4media.com/media-print-news/penske-media-corporation-to-acquire-major-vox-media-brands"
+      - "https://www.thewrap.com/jay-penske-saudi-stake-media-company-200-million-khashoggi-murder/"
+      - "https://gulfbusiness.com/saudis-pif-acquires-stake-in-us-media-business-for-200m/"
+      - "https://statemediamonitor.com/srmg/"
 
   - name: "Eldridge Industries, LLC"
     entity_type: "jv_partner"
@@ -430,6 +507,48 @@ revenue_relationships:
 
       IMPORTANT: No confirmed AI licensing deal between Meta and PMC/Vox Media as of July 2026.
     date_established: "ongoing"
+
+  - partner: "SRMG Media Solutions (SMS)"
+    relationship_type: "advertising_partnership"
+    estimated_value: "undisclosed (strategic partnership)"
+    description: >
+      SRMG Media Solutions (SMS), the advertising subsidiary of Saudi Research and Media Group
+      (PMC's $200M+ equity investor), announced a strategic advertising partnership with PMC in
+      May 2025. This enables Saudi and MENA region advertisers to run programmatic campaigns
+      across PMC's 40+ international media brands — including The Verge — in formats including
+      video, banners, and audience layering.
+
+      KEY SECTORS TARGETED: tourism, government departments, investment sectors, and mega
+      projects — all Saudi Vision 2030 priorities. The partnership explicitly enables
+      advertisers to "co-create custom content and campaigns with PMC's premium publishers,
+      pending editorial approval."
+
+      SRMG reach: 170M+ global users via Asharq Al-Awsat, Asharq News, Akhbaar24, Arab News.
+      PMC reach: 412M monthly users, 150M social media followers, 6B video views.
+      SMS Managing Director Ziad Moussa: "This collaboration aligns perfectly with our goal
+      of providing unprecedented access to the world's top platforms."
+
+      CONFLICT SIGNIFICANCE:
+      This is a SECOND financial relationship between SRMG and PMC, beyond the $200M+ equity
+      investment. Revenue now flows in BOTH directions:
+      (a) Equity investment: SRMG → PMC (capital, board influence)
+      (b) Advertising: Saudi government/private sector → SRMG/SMS → PMC brands (ad revenue)
+
+      The "government departments" and "mega projects" advertising sectors mean Saudi government
+      advertising revenue flows directly to PMC editorial properties. Coverage of Saudi Arabia's
+      Vision 2030 megaprojects (NEOM, The Line, Red Sea), Saudi human rights record, Saudi tech
+      investments, or Saudi geopolitical activities occurs in the context of Saudi government
+      entities being paying advertising clients of The Verge's parent company.
+
+      No editorial guardrails have been publicly disclosed for this advertising partnership.
+      By contrast, Bloomberg's separate JV with SRMG (Asharq Business with Bloomberg) includes
+      explicit editorial rules allowing Bloomberg to terminate over content deemed "deliberately
+      offensive to any racial or ethnic minority" or "bringing Bloomberg into business disrepute"
+      (Guardian, 2018).
+    date_established: "2025-05"
+    source_urls:
+      - "https://broadcastprome.com/tech/srmg-media-solutions-and-penske-media-to-elevate-mena-advertisers-on-global-stage/"
+      - "https://www.campaignme.com/srmg-naif-alrajhi-investment-partnership/"
 
   - partner: "Vivid Seats (NASDAQ: SEAT)"
     relationship_type: "jv_partner_cross_holding"
@@ -815,6 +934,67 @@ known_conflicts:
       - "https://www.sportcal.com/chelsea-fc-infinite-athlete-sponsor/"
       - "https://www.screendaily.com/a24-raises-225m-equity-investment/"
       - "https://web.archive.org/web/2025/https://www.newyorker.com/magazine/a24-empire-auteurs"
+
+  - type: "saudi_sovereign_investment"
+    description: >
+      PMC's $200M+ equity investor SRMG (Saudi Research and Media Group) is majority-owned by
+      the Saudi government via the chain: PIF → Saudi National Bank (SNB) → NCB Capital →
+      Al Ahli Capital Fund 13 → SRMG. The State Media Monitor classifies SRMG as "Captured
+      Public/State-Managed (CaPu)" — the highest state influence category. SRMG's board includes
+      Saudi Arabia's sitting Minister of Tourism (Ahmed bin Aqeel Al-Khatib), and its former head
+      Prince Badr bin Abdullah is an MBS confidante who became Saudi Arabia's first Culture Minister.
+
+      This sovereign investment creates FIVE distinct conflict dimensions for The Verge:
+
+      1. EDITORIAL INDEPENDENCE: A Saudi sovereign-linked entity holds $200M+ equity in PMC
+         with no publicly disclosed editorial guardrails (unlike Bloomberg's SRMG JV, which has
+         explicit editorial termination rights). PMC was deliberately opaque about the investor —
+         its own publications misidentified SRMG until TheWrap forced disclosure (Jul 2019).
+
+      2. KHASHOGGI NON-DIVESTITURE: After the MBS-ordered murder of WaPo journalist Jamal
+         Khashoggi (Oct 2018), Endeavor returned its $400M Saudi PIF investment. PMC did NOT
+         return its $200M+ SRMG investment. The Verge covers press freedom and journalist
+         safety — doing so while funded by the Saudi government is a profound editorial tension.
+
+      3. PIF ANTI-META PORTFOLIO ALIGNMENT: PIF sold ALL its Meta shares (667,996 Class A,
+         ~$380M+) in Q2 2025 while retaining its indirect PMC investment via SRMG. PIF
+         simultaneously added positions in Apple, Arm Holdings (~400M share increase), and ASML —
+         Meta's semiconductor and hardware competitors. The Verge's ownership chain includes a
+         sovereign investor that actively divested from Meta while maintaining its media investment.
+
+      4. SRMG ADVERTISING PARTNERSHIP: Beyond equity, SRMG Media Solutions has an active
+         advertising partnership with PMC (May 2025) that routes Saudi "government departments"
+         and "mega projects" advertising revenue directly through PMC's editorial properties
+         (including The Verge). This means Saudi government ad dollars flow to The Verge's parent.
+
+      5. VISION 2030 COVERAGE: Saudi Arabia's $3.5T+ Vision 2030 involves massive tech
+         partnerships (NEOM, AI investments, entertainment). The Verge covers these projects
+         editorially while its parent company receives both equity investment and advertising
+         revenue from Saudi sovereign-linked entities. PIF's $1.15T AUM makes it the world's
+         4th-largest sovereign wealth fund and a major stakeholder in companies The Verge covers.
+
+      DISCLOSURE STATUS: No Verge article has disclosed the SRMG investment, the SRMG
+      advertising partnership, or PIF's role in The Verge's ownership chain. The Verge discloses
+      the Google lawsuit ("Disclosure is our brand") but not the Saudi sovereign financial
+      relationship.
+    severity: 5
+    evidence: >
+      TheWrap (Sharon Waxman, Jul 2019): PMC SRMG investment and opacity investigation.
+      State Media Monitor: SRMG classified as Captured Public/State-Managed (CaPu).
+      BroadcastPro ME (May 2025): SRMG Media Solutions × PMC advertising partnership.
+      Gulf Business (Mar 2018): PIF/SRMG $200M+ investment with $25M MENA JV.
+      PitchBook (Jul 2026): SRMG financials — $1.95B EV, -$97M net income TTM.
+      Reuters (Aug 2025): PIF sold all Meta shares in Q2 2025.
+      Markets Group (Q2 2025): PIF US portfolio $23.8B, 57 positions, no Meta.
+      WSJ (2018): SRMG-Vice JV talks, "soft power" characterization.
+      Guardian (2018): Bloomberg SRMG JV editorial guardrails.
+    source_urls:
+      - "https://www.thewrap.com/jay-penske-saudi-stake-media-company-200-million-khashoggi-murder/"
+      - "https://statemediamonitor.com/srmg/"
+      - "https://broadcastprome.com/tech/srmg-media-solutions-and-penske-media-to-elevate-mena-advertisers-on-global-stage/"
+      - "https://gulfbusiness.com/saudis-pif-acquires-stake-in-us-media-business-for-200m/"
+      - "https://pitchbook.com/profiles/company/saudi-research-and-media-group"
+      - "https://reuters.com/saudi-wealth-fund-sold-stakes-meta-q2-2025"
 
 # ===================================================================
 # LITIGATION CONNECTIONS

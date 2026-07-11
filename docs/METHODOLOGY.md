@@ -210,6 +210,7 @@ These were added through systematic analysis of real articles from the five trac
 |---|---|---|---|
 | **Straw Man** | Misrepresenting an entity's position to make it easier to attack | Simplified-claim-then-rebut constructions | General pattern |
 | **Refusal Amplification** | Emphasizing an entity's refusal/non-cooperation beyond its news value | "declined," "refused," "would not say," positioned to imply guilt | General pattern |
+| **Recidivism Framing** | Entity framed as a serial offender through temporal markers that convert an isolated incident into an episode in an established behavioral pattern. The editorial effect is pre-judgment: before any specific feature or action is described, the reader processes it as "another one." Distinct from repeated_disruption (organizational instability — "yet another restructuring"), hypocrisy_frame (holdout isolation — "the only one not doing X"), and loaded_language (individual word-level bias). Recidivism_framing operates at the sentence level: a temporal recurrence marker + a loaded characterization of the action together establish a track record of transgression | "once again [verb]-ing [loaded characterization]"; "yet again [entity] [negative verb]"; "continues to [loaded verb]"; "not for the first time"; "has a history of [negative pattern]"; "for the umpteenth time"; "[entity]'s latest [negative noun]" (when "latest" implies a series); "is back at it"; "true to form" | Fast Company Muse Image opt-out (Jul 9, 2026) — "Meta is once again testing the limits of privacy rights." The phrase "once again" frames the Muse Image launch as the latest in a series of privacy transgressions, pre-loading negative judgment before the @-mention feature is even described. "Testing the limits" is the loaded characterization; "once again" is the recidivism marker. The reader enters the feature description already positioned to view it as part of Meta's behavioral pattern, not as a standalone product decision |
 | **Juxtaposition** | Placing contrasting facts side-by-side for editorial effect | Investment/spending figures adjacent to layoffs/harm; surveillance tech near consumer product language | NYT Meta AI employees article; Wired glasses launch |
 | **Timeline Implication** | Using temporal sequencing to imply causation | "After X happened, Y occurred" (when X did not cause Y) | Guardian whistleblower article |
 | **Military Techno-Optimism** | Editorial framing that normalizes violence through technology language | "Optimize the human as a weapons system," "AI-driven targeting," UX language for weapons | MIT TR Anduril/Meta glasses article |
@@ -514,7 +515,7 @@ The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overa
 | Trigger | Threshold |
 |---|---|
 | Raw composite tone | ≥ 0.0 (non-negative) |
-| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, competitive_positioning, consumer_ownership, editorial_aside, failure_precedent, editorial_deflation, slippery_slope, competitive_deficit, competitive_displacement, absence_as_evidence, silence_as_guilt, expert_contradiction, loss_leader_framing)) |
+| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, recidivism_framing, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, competitive_positioning, consumer_ownership, editorial_aside, failure_precedent, editorial_deflation, slippery_slope, competitive_deficit, competitive_displacement, absence_as_evidence, silence_as_guilt, expert_contradiction, loss_leader_framing)) |
 | Agency attribution | < −0.3 (passive/target of scrutiny) |
 
 **Blend:** 10% raw + 90% framing-derived estimate. The framing estimate is computed from agency, emotional intensity, and adversarial device density.
@@ -612,6 +613,8 @@ Short opinion pieces (typically <500 words) where the editorial voice is sarcast
 **Key distinction from Path D (sardonic/mocking):** Path D requires high loaded_language count (≥7) and strongly positive agency (≥0.3) — the subject is actively pursuing something framed as foolish. Path H fires on shorter articles with fewer total devices but concentrated sarcastic indicators (editorial_aside, assumed_consensus) and neutral agency (the subject is doing things, but the editorial register signals disapproval through sarcasm rather than loaded vocabulary).
 
 **Discovery article:** Gizmodo Meta glasses subscription article (Jul 1, 2026) — VADER scored +0.65 on a clearly negative article with "People hate" (assumed consensus), "brace yourself", "let's be honest", "something tells me" (editorial asides), and "hate", "grievances", "slapping", "paywall" (emotional language). Agency = 0.0.
+
+**Assumed_consensus density note:** When 2+ `assumed_consensus` instances appear within 200 characters of each other, the combined rhetorical effect exceeds the sum of individual detections. This stacking creates an implicit "everyone knows" frame that pervades the surrounding text. Discovery: Fast Company Muse Image article (Jul 9, 2026) — "undoubtedly" and "once again" within 150 chars create a compounded certainty-of-wrongdoing effect. Proposed: add a `density_multiplier` flag when ≥2 assumed_consensus instances co-occur within 200 chars, amplifying the sarcasm_density contribution by 1.5× for Path H scoring.
 
 #### Path I: Direct Consumer Critique
 
@@ -1134,6 +1137,14 @@ entities = detect_entities(text, clusters=custom_clusters)
 
 See [ADDING_PUBLICATIONS.md](ADDING_PUBLICATIONS.md) for the full guide to adding entity clusters in publication profiles.
 
+### 15.7 Singular/Plural Alias Normalization
+
+Entity aliases should normalize singular and plural variants of organizational divisions to the same cluster. Discovery: "Meta Superintelligence Lab" (singular, Fast Company Jul 9 2026) vs. "Meta Superintelligence Labs" (plural, used in Wired, NYT, MarketWatch, LiveMint articles). Both refer to the same organization and should resolve to the Meta entity cluster.
+
+**Rule:** When adding organizational division aliases, always include both singular and plural forms (e.g., "Meta Superintelligence Lab", "Meta Superintelligence Labs"). Apply possessive forms as well ("Meta Superintelligence Lab's", "Meta Superintelligence Labs'").
+
+**Affected clusters:** Meta (primary — add "Meta Superintelligence Lab" alongside existing "Meta Superintelligence Labs" alias).
+
 ## 16. Financial Journalism Sentiment Bias
 
 ### 16.1 The Problem
@@ -1258,7 +1269,7 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **152 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **153 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1331,7 +1342,7 @@ Specialty press and multi-source analyses:
 
 | Publication | Articles | Coverage Focus |
 |---|---|---|
-| **Fast Company** | 3 | AI draft reversal, Wynn-Williams lawsuit, Zuckerberg AI job fears |
+| **Fast Company** | 4 | AI draft reversal, Wynn-Williams lawsuit, Zuckerberg AI job fears, Muse Image opt-out privacy |
 | **iPhoneInCanada** | 2 | Zuckerberg AI agents (editorial dramatization discovery) |
 | **AV Club** | 1 | Meta Arena gambling framing |
 | **CNN** | 1 | Social media child safety features |
@@ -1355,13 +1366,13 @@ Specialty press and multi-source analyses:
 | Apr 2026 | 3 | MIT TR Chinese workers, resistance, LLM surveillance |
 | May 2026 | 7 | MIT TR Anduril/warfare glasses, Wired dark mood, WebProNews Dublin |
 | Jun 2026 | 63 | Primary collection window — 60% of corpus |
-| Jul 2026 | 26 | Second-highest month — financial journalism genre expansion, wire service addition, EU DSA 6-outlet cluster, controlled retreat language discovery |
+| Jul 2026 | 27 | Second-highest month — financial journalism genre expansion, wire service addition, EU DSA 6-outlet cluster, controlled retreat language discovery, how-to hybrid genre discovery |
 
 **Collection trajectory:** The corpus grew from ~10 articles (late June 2026) to 121 over ~14 days, with the most intensive collection in June–July 2026. Earlier articles (Aug 2025 – May 2026) were retroactively collected to extend temporal coverage and test the toolkit's temporal generalization. The June 2026 concentration reflects the initial sprint to discover and validate framing device types.
 
 ### 17.4 Genre Distribution
 
-Articles cluster into 6 editorial genres. Genre determines which VADER failure modes apply and which correction paths are relevant:
+Articles cluster into 9 editorial genres. Genre determines which VADER failure modes apply and which correction paths are relevant:
 
 | Genre | Articles | VADER Behavior | Primary Correction Paths |
 |---|---|---|---|
@@ -1374,7 +1385,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 152 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 153 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
@@ -1455,7 +1466,7 @@ This section formalizes the genre taxonomy, documents validated per-genre scorin
 
 ### 18.2 Genre Taxonomy
 
-MediaScope recognizes **8 editorial genres**, identified from article structural features. Genre classification is currently manual (assigned during annotation) but follows consistent criteria:
+MediaScope recognizes **9 editorial genres**, identified from article structural features. Genre classification is currently manual (assigned during annotation) but follows consistent criteria:
 
 | # | Genre | Identification Criteria | Corpus Count | VADER Reliability |
 |---|---|---|---|---|
@@ -1467,6 +1478,7 @@ MediaScope recognizes **8 editorial genres**, identified from article structural
 | 6 | **Academic/specialist** | Expert sourcing; policy analysis; research citations; measured prose | ~18 | ★★★☆☆ Moderate |
 | 7 | **Q&A/interview** | Question-answer format; conversational register; named interviewee | ~2 | ★☆☆☆☆ Very Low |
 | 8 | **Sardonic entertainment** | Short (<500 words); heavy sarcasm; pop-culture register; Gizmodo/AV Club/Kotaku | ~5 | ★☆☆☆☆ Very Low |
+| 9 | **How-to + editorial hybrid** | Instructional/procedural sections interleaved with editorial commentary; imperative verbs ("go to," "select"); settings/UI terminology; privacy/opt-out guidance wrapping critique | ~1 | ★★☆☆☆ Low |
 
 Approximate counts derive from the corpus statistics in §17.4. Some articles span genres (e.g., a product review with investigative elements); classify by dominant mode.
 
@@ -1661,6 +1673,7 @@ Quick-reference for agents encountering a new article. Classify genre first, the
 | Academic | Run standard pipeline. Security-context articles get automatic intensity adjustment. Trust source authority scores. Check for expert_contradiction as bias signal. |
 | Q&A | **Manual annotation required.** Do not trust source extraction (will return zero). VADER positive bias expected. Report framing devices and agency attribution only. |
 | Sardonic | **Expect severe VADER misscoring.** Run Path D/H correction. Normalize framing density by word count. Do not use absolute framing device counts for cross-genre comparison. |
+| How-to + editorial hybrid | **Split-section scoring required.** Instructional sections ("go to Settings > Privacy > AI Data") generate false-positive VADER positivity from imperative verbs and neutral-positive vocabulary. Editorial commentary sections ("Meta is once again testing the limits") carry the actual editorial stance. Score each section type independently — suppress instructional VADER contribution and weight editorial register-shift detection. See §18.9 below. |
 
 ### 18.8 Genre Classification for Automated Pipelines
 
@@ -1688,6 +1701,25 @@ These heuristics are sufficient for flagging articles that need genre-specific h
 4. **Genre conventions evolve.** The distinction between "investigative" and "tech editorial" is blurring as outlets like Wired assign investigative pieces to product review editors (Michael Calore) and product reviews to investigative reporters (Zoë Schiffer). Genre classification based on structural features may need updating as editorial practices shift.
 
 5. **Genre heuristics are approximate.** The automated detection signals in §18.8 will misclassify edge cases. A short Reuters article with 3 framing devices might be flagged as sardonic; an investigative article under 1,500 words might be classified as tech editorial. Human judgment remains necessary for ambiguous cases.
+
+### 18.9 How-To + Editorial Hybrid Genre
+
+**Discovery article:** Fast Company "Meta Muse Image: How to opt out of AI using your Instagram photos" (Jul 9, 2026, Sarah Fielding).
+
+**Defining characteristic:** Articles that alternate between instructional/procedural sections (step-by-step opt-out guidance, settings navigation, feature descriptions) and editorial commentary sections (privacy critique, recidivism framing, assumed consensus about corporate behavior). The two modes have fundamentally different VADER profiles:
+
+| Section Type | VADER Behavior | Correction |
+|---|---|---|
+| **Instructional** | Neutral-positive (imperative verbs, product names, action words: "go to," "select," "turn off") — false positive | Suppress; instructional content carries no editorial stance |
+| **Editorial** | Variable — depends on device density and register | Score normally; apply standard correction paths |
+
+**VADER failure mode:** VADER averages across the full article, diluting the editorial signal with instructional noise. A 490-word article with ~200 words of procedural steps and ~200 words of editorial critique will produce a compound score biased toward neutral even if the editorial sections are adversarial.
+
+**Proposed correction (future Path K variant):** Segment article by section type (instructional vs. editorial). Compute VADER only on editorial sections. Apply standard framing correction to editorial sections only. Report the editorial-only score alongside the full-article score.
+
+**Genre detection heuristic:** Imperative verbs ≥ 5 per 100 words + settings/UI terminology ("Settings," "Privacy," "toggle," "opt out") + framing devices in non-instructional paragraphs only.
+
+**First validated example:** Fast Company article scores VADER ~+0.35 full-article but editorial sections alone would score ~−0.25 based on recidivism framing ("once again"), assumed consensus ("undoubtedly plenty more on the horizon"), and loaded language ("surreptitiously"). The instructional sections ("Open your Instagram app. Tap your profile icon...") contribute ~+0.55 VADER that is entirely genre noise.
 
 
 ## 19. External Editorial Influence Vectors: Fellowship Programs
