@@ -156,6 +156,7 @@ _KNOWN_ORGS_LOWER: set[str] = {
     "netflix", "uber", "lyft", "airbnb", "stripe", "shopify",
     "reuters", "bloomberg",
     "creative artists agency", "caa",
+    "electronic frontier foundation", "eff",
 }
 _NAME_STOP_FIRST_WORDS: set[str] = {
     "After", "Before", "Because", "Since", "While", "During",
@@ -386,7 +387,8 @@ def _extract_affiliation(context: str) -> str:
             r"(?:(?:[Tt]echnology|[Ff]inancial|[Oo]perating|[Pp]roduct|[Mm]arketing|[Ii]nformation|[Ll]egal|[Rr]evenue|[Ss]trategy|"
             r"[Ss]cience|[Dd]ata|[Cc]ommunications?|[Cc]reative|[Ee]ditorial|[Cc]ontent|[Pp]olicy|[Ee]ngineering|[Rr]esearch|[Dd]esign|"
             r"[Ii]ndustrial|[Ee]nvironmental|[Ss]ustainability|[Ff]acilities|[Oo]perations|[Hh]uman\s+[Rr]esources)\s+)*"
-            r"(?:[Oo]fficer|[Dd]irector|[Pp]resident|[Cc]ounsel|[Ss]pokesperson|[Ss]pokesman|[Ss]pokeswoman|[Ee]ditor|[Ss]ecretary|"
+            r"(?:CEO|CTO|CFO|COO|CMO|CIO|CISO|CSO|"
+            r"[Oo]fficer|[Dd]irector|[Pp]resident|[Cc]ounsel|[Ss]pokesperson|[Ss]pokesman|[Ss]pokeswoman|[Ee]ditor|[Ss]ecretary|"
             r"[Mm]anager|[Hh]ead|[Ee]xecutive)\s+[A-Z]",
             re.DOTALL,
         ),
@@ -1138,8 +1140,10 @@ def extract_sources(text: str) -> list[SourceMention]:
             continue
         # Skip if this single name is the last word of an already-seen
         # full name — e.g., skip "Bosworth" if "Andrew Bosworth" already
-        # captured.  Prevents duplicate source entries for the same person.
-        if any(seen.endswith(" " + name) for seen in seen_names):
+        # captured.  Also handles hyphenated surnames: skip "Kassaby" if
+        # "Dina El-Kassaby" already seen.  Prevents duplicate source
+        # entries for the same person.
+        if any(seen.endswith(" " + name) or seen.endswith("-" + name) for seen in seen_names):
             continue
         # Also skip if this single name is the FIRST word of a full name
         # already seen — e.g., skip "Neil" if "Neil Gong" already captured.
@@ -1206,8 +1210,9 @@ def extract_sources(text: str) -> list[SourceMention]:
         if name in _NAME_STOP_NAMES:
             continue
         # Skip if this single name is the last word of an already-seen
-        # full name — same dedup logic as Pattern 5b.
-        if any(seen.endswith(" " + name) for seen in seen_names):
+        # full name — same dedup logic as Pattern 5b.  Includes hyphen
+        # check for names like "El-Kassaby".
+        if any(seen.endswith(" " + name) or seen.endswith("-" + name) for seen in seen_names):
             continue
         # Also skip first-name matches — same as Pattern 5b.
         if any(seen.startswith(name + " ") for seen in seen_names):
@@ -1940,6 +1945,9 @@ def extract_sources(text: str) -> list[SourceMention]:
         # Entertainment/talent agencies — discovered in Washington Examiner
         # Muse Image article (Jul 2026).
         "creative artists agency", "caa",
+        # Civil liberties organizations — discovered in Fast Company
+        # Meta glasses controversies roundup (Jul 10, 2026).
+        "electronic frontier foundation", "eff",
     }
 
     for pat in org_source_patterns:

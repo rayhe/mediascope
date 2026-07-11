@@ -2,6 +2,33 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-11 15:00 PT — Type A: Article Deep Dive
+
+**Article:** "The many controversies of Meta's AI glasses" — Fast Company, July 10, 2026
+**URL:** https://www.fastcompany.com/91571430/the-many-controversies-of-metas-ai-glasses
+
+### Bugs Fixed (3 of 4)
+
+1. **Pattern 0b C-suite titles** — Added CEO/CTO/CFO/COO/CMO/CIO/CISO/CSO to title alternation. Without this, "Meta CTO Andrew Bosworth" extracted Bosworth with affiliation "LED light" instead of "Meta".
+
+2. **EFF 3-word org name** — Added "electronic frontier foundation" + "eff" to `_KNOWN_ORGS_LOWER` and `_KNOWN_ORGS`. Pattern 1 was matching "Frontier Foundation points" as a 2-word person name before Pattern 6 could extract the full org. The 3-word lookback now correctly skips the truncated match.
+
+3. **Hyphenated surname dedup** — Extended Pattern 5b and 5c dedup to check `endswith("-" + name)` in addition to `endswith(" " + name)`. "Dina El-Kassaby" → "Kassaby" was a duplicate because the hyphen wasn't being treated as a name separator.
+
+4. **(NOT FIXED)** Bosworth quote misattribution — "a very thoughtful approach." belongs to company statement, not Bosworth directly. Low priority — no impact on source count or stance.
+
+### Tests Added
+- `tests/test_fastco_meta_glasses_2026_07_10.py`: 10 tests covering EFF name extraction (3), hyphenated surname dedup (3), CTO title extraction (2), generalized hyphen dedup (2).
+
+### Test Suite
+2,262 tests passing (all existing + 10 new).
+
+### Analysis
+- `examples/sample_output/fastco_meta_glasses_controversies_roundup_2026_07_10_analysis.md`
+- Sentiment: −0.5217 (corrected), VADER raw +0.633 (inverted)
+- 5 sources: 3 supportive (Meta side), 2 adversarial (EFF, privacy lawyer)
+- "Gallery of horribles" framing structure — roundup format inherently tilts negative
+
 ## 2026-07-11 13:00 PT — Type D: Toolkit Quality & Documentation
 
 **Focus:** Path B documentation sync with code evolution, README Pipeline Statistics table, stale stat corrections
