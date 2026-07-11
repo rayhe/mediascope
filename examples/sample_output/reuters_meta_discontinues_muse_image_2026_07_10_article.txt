@@ -1,0 +1,10 @@
+# Reuters — Meta discontinues AI image feature days after launch
+# Published: July 10, 2026 (Friday evening PT)
+# URL: https://www.reuters.com/business/meta-ai-image-feature-discontinued-2026-07-10/
+# Source: reuters.com
+
+Meta (META.O) said on Friday it is discontinuing an AI feature that allowed users to generate images using public Instagram accounts, days after rolling out the feature.
+
+"Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way," Meta said in a statement.
+
+"We've heard the feedback that this feature missed the mark, so it's no longer available," it said.

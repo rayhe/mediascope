@@ -116,7 +116,7 @@ Devices that frame changes of position, denials, or admissions.
 | 49 | **Denial Contradiction** | E | Source's denial placed alongside contradicting evidence | "does not exist" near code analysis; "misleading" + removal evidence |
 | 50 | **Corporate Reassurance Undercut** | E | Corporate reassurance language immediately undercut by evidence | "carefully designed" + "but/however/yet" + failure evidence |
 | 51 | **Usage Dismissal Undercut** | E | Corporate "most users don't" minimization challenged by journalist | "most users don't use X" near "but/however" + ownership argument |
-| 52 | **Policy Reversal** | E | Change of position framed as flip-flop or inconsistency | "reversed course," "backtracked," "flip-flopped," "walked back" |
+| 52 | **Policy Reversal** | E | Change of position framed as flip-flop or inconsistency. Subtype: **Controlled Retreat Language** — corporate statement uses intent displacement, active listening, target-miss euphemism, and passive unavailability to minimize failure signals | "reversed course," "backtracked," "flip-flopped," "walked back"; **controlled retreat:** "missed the mark," "heard the feedback," "no longer available," "Our intent was" |
 | 53 | **Strategic Reversal** | E | Company reversing a core strategic position | "a major departure from longtime philosophy," "chosen to abandon" |
 | 54 | **Selective Rehabilitation** | E | Past controversy juxtaposed with current acceptance to imply opportunism | "Ousted from X... now welcomed at Y," "friendlier posture" |
 

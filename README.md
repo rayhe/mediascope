@@ -438,7 +438,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **2175 tests** across 94 test files, each covering a different analytical capability:
+MediaScope has **2184 tests** across 95 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -536,6 +536,7 @@ MediaScope has **2175 tests** across 94 test files, each covering a different an
 | `test_reuters_muse_spark_11_jul9.py` | 23 | Reuters Muse Spark 1.1 developer preview Jul 9: pathologizing_metaphor "intervention" false positive suppression (neutral technical context — "less human intervention", "without intervention", "minimal/no/reduced intervention"), pricing comparison phrases in NEGATIVE_COMPARISON/POSITIVE_COMPARISON ("above openai", "below anthropic", "priced above/below", "cheaper than", "undercuts"), loaded_language competitive dramatization ("heated competition/race", "AI supremacy", "tech arms race"), competitive_positioning "pitting...against" and "close/narrow the gap" |
 | `test_recovery_narrative.py` | 10 | Recovery narrative framing device (#94): three-beat decline→catalyst→recovery structure in financial articles, bidirectional competitive_positioning (positive parity variant), confidence scoring, negative guards for neutral wire articles and decline-only articles; discovered from MarketWatch Meta stock rebound article (Jul 10, 2026) |
 | `test_speculative_quote_suppression.py` | 16 | Speculative framing quote-context suppression: `_find_quoted_spans` and `_is_in_quoted_span` helpers (5 tests), editorial prose hedges still fire at 5+ threshold (1 test), analyst quotes suppressed in straight and smart quotes (3 tests), mixed editorial/quoted context (1 test), BofA research note and Motley Fool editorial article patterns (2 tests). Type D fix for financial article false-positive risk. |
+| `test_controlled_retreat_language.py` | 9 | Controlled retreat language detection: `policy_reversal` subtype for corporate damage-control statements — intent displacement, active listening performance, target-miss euphemism, passive unavailability, control reassurance, useful-tool salvage. Entity detection for Meta/Muse Image discontinuation context. Lifecycle cross-narrative analysis (launch phase default burden, backlash phase default burden privacy). Discovered from Reuters Meta Muse Image discontinuation (Jul 10, 2026). |
 
 ```bash
 # Run all tests

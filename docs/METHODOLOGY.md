@@ -257,7 +257,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Competitive Positioning** | Explicitly elevating a competitor over the subject entity, using comparative language or benefit framing that positions a rival as the beneficiary of the subject's failure. Also detectable in reverse (parity/elevation claims): when the subject entity is framed as "comparable to" or "on par with" established competitors, this is a positive competitive-positioning move. Distinct from simple comparative sentiment (which is a sentiment dimension measuring favorable/unfavorable comparisons) because competitive positioning is a rhetorical device where the author recommends or implies a competitor is preferable (negative variant) or where the subject is positioned as having achieved parity with established leaders (positive variant) | **Negative (competitor elevated):** "good news for [competitor]"; "buy from a more reputable company"; "[competitor] has always/would never [do bad thing]"; "another reason to [buy/choose/switch to] [competitor]." **Positive (subject elevated to parity):** "comparable to leading industry benchmarks from [competitors]"; "on par with [competitor] and [competitor]"; "competitive with [established leaders]"; "[subject] outperformed [competitor] on" | **Negative:** 9to5Mac Meta Conversation Focus paywall (Jul 1, 2026) — "All this may be good news for the upcoming Apple Glasses — it helps provide another reason for consumers to buy their AI-powered glasses from a more reputable company." Apple is explicitly positioned as the moral and strategic beneficiary of Meta's paywall decision. **Positive:** MarketWatch "Meta's stock rebounds" (Jul 10, 2026) — "an agentic coding model comparable to leading industry benchmarks from OpenAI and Anthropic" elevates Meta to competitor parity level. Three analyst quotes then reinforce the parity claim without any counterpoint |
 | **Competitive Deficit** | Enumerating multiple named competitors to amplify the subject's failure or inadequacy, creating a pile-on effect where the subject appears surrounded and outpaced. The list of competitors positions the subject as losing on multiple fronts simultaneously, rather than simply behind one rival | "failed to launch a successful rival to [Competitor A]'s X, [Competitor B]'s Y, and [Competitor C]'s Z"; "while [A], [B], and [C] have all [succeeded]... [Subject] has not"; "lagging behind [A], [B], and [C]" | Reuters Zuckerberg town hall article (Jul 3, 2026) — competitor enumeration creates an impression of being surrounded and outpaced. Distinct from competitive_positioning (which elevates one specific rival as beneficiary) and isolation_framing (which focuses on being "the only one" not doing something) |
 | **Competitive Displacement** | Framing one entity's action as filling a vacuum left by another entity's retreat, decline, or strategic pivot. The temporal conjunction — "at a time when X is stepping back" — positions the subject as losing ground while a competitor capitalizes on the opening | "at a time when [Entity] may be reorienting toward closed releases"; "filling the void left by [Entity's] shift"; "[Entity] previously dominated... but may be losing its grip"; "notable as [Entity] cedes ground" | MIT Technology Review open-weight models article (Jul 9, 2026) — OpenAI's release framed as filling Meta's vacuum: "particularly notable at a time when Meta... may be reorienting toward closed releases." Distinct from competitive_deficit (which enumerates competitors) and competitive_positioning (which elevates one specific rival) |
-| **Policy Reversal** | Framing a subject's change of position, decision, or policy as a reversal, flip-flop, or U-turn, implying inconsistency, unreliability, or capitulation rather than legitimate evolution of thinking | "reversed course"; "backtracked"; "flip-flopped"; "U-turn"; "walked back"; "now says... previously said" | Cross-article pattern — common in tech policy coverage where platform rule changes are framed as inconsistency rather than iteration |
+| **Policy Reversal** | Framing a subject's change of position, decision, or policy as a reversal, flip-flop, or U-turn, implying inconsistency, unreliability, or capitulation rather than legitimate evolution of thinking. **Subtype: Controlled Retreat Language** — when the corporate statement itself uses specific damage-control techniques to minimize failure signals: (a) intent displacement ("Our intent was"), (b) active listening performance ("heard the feedback"), (c) target-miss euphemism ("missed the mark"), (d) passive unavailability ("no longer available"), (e) control reassurance ("give people control"), (f) useful-tool salvage ("useful creative tool"). These techniques are optimized to read as VADER-positive even in a product-failure context | "reversed course"; "backtracked"; "flip-flopped"; "U-turn"; "walked back"; "now says... previously said"; **Controlled retreat subtype:** "missed the mark"; "no longer available/supported"; "heard/listened to the feedback"; "Our intent was"; "didn't land as we intended" | Cross-article pattern — common in tech policy coverage where platform rule changes are framed as inconsistency rather than iteration. **Controlled retreat provenance:** Reuters Meta Muse Image discontinuation (Jul 10, 2026) — Meta pulled the @-mention feature 3 days after launch. Statement used all 6 controlled retreat patterns: "Our intent was to provide a useful creative tool and to give people control... We've heard the feedback that this feature missed the mark, so it's no longer available." Every technique designed to minimize failure signals and maintain lexical positivity |
 | **Absence as Evidence** | Framing non-action, non-disclosure, or omission as proof of guilt or bad intent. Converts non-events into indictments by treating what a subject *didn't* do as more revealing than what they did | "Not one [noun] was directed at"; "the [audit/review] that never happened"; "[Subject] did not do that"; "has never [disclosed/addressed/tested]"; "failed to [act/disclose/comply]" | Newzlet Meta/Cannes editorial analysis (Jul 3, 2026) — "Not one task... was directed at Meta AI," "The internal audit that never happened is the data point," "Meta did not do that." Sustained absence-as-evidence framing converts Meta's non-testing of its own product into the article's central indictment. Distinct from refusal_amplification (which emphasizes active refusal to comment) and silence_as_guilt (which treats non-response as admission) |
 | **Silence as Guilt** | Explicitly treating silence, non-response, or non-disclosure as a confession or admission of guilt. Goes beyond factual noting of a no-comment to assert that the silence itself proves something | "That silence is its own answer"; "the lack of denial speaks volumes"; "refusal to comment is telling"; "no response — and that says everything" | Newzlet Meta/Cannes editorial analysis (Jul 3, 2026) — "That silence is its own answer" treats Meta's non-response as a confession rather than a media-relations decision. Distinct from refusal_amplification (which amplifies the act of refusing) because silence_as_guilt makes an epistemic claim: the silence constitutes evidence |
 | **Expert Contradiction** | Named expert source directly contradicts a company's stated rationale using "it's not about X; it's about Y" inversion or reporter-framed skepticism. Different from corporate_reassurance_undercut (journalist's own challenge) — here the undercut comes from a credentialed third-party source | "It's not about [stated reason]; it's about [real reason]"; "doesn't think the [action] is to help [stated purpose]" | Wired Conversation Focus paywall article (Jul 2, 2026) — Chris Harrison (Carnegie Mellon): "It's not about recovering AI costs; it's about monetizing customers." Expert explicitly reframes Meta's stated justification as profit extraction |
@@ -1257,7 +1257,7 @@ The blend would use headline sentiment as an anchor (financial headlines are mor
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **150 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **152 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1277,7 +1277,7 @@ These are the publications with full YAML profiles (ownership chains, revenue re
 | **The Guardian** | 5 | UK regulatory pressure, whistleblower coverage, CSAM, DeepMind philosophy |
 | **The Atlantic** | 5 | AI slop, data center infrastructure, workplace surveillance, creativity |
 
-#### Wire Services (3 publications, 22 articles)
+#### Wire Services (3 publications, 23 articles)
 
 Reuters, Bloomberg, and AP serve as the analytical baseline for same-event comparison methodology (§13):
 
@@ -1285,7 +1285,7 @@ Reuters, Bloomberg, and AP serve as the analytical baseline for same-event compa
 |---|---|---|
 | **AP** | 1 | Mosseri addiction testimony — congressional hearing baseline coverage |
 | **Bloomberg** | 1 | Muse Image launch — structural juxtaposition (peer-scandal kicker), wire-service genre with cross-entity guilt-by-association |
-| **Reuters** | 20 | MCI data exposure, Gemini compute limits, child addiction litigation, town hall coverage, BoE regulation, insurance defense, Dalton Smith departure, EU WhatsApp AI antitrust, Zuckerberg AI agents, $1.4T penalty demand, Meta AI image detector cropping failure |
+| **Reuters** | 21 | MCI data exposure, Gemini compute limits, child addiction litigation, town hall coverage, BoE regulation, insurance defense, Dalton Smith departure, EU WhatsApp AI antitrust, Zuckerberg AI agents, $1.4T penalty demand, Meta AI image detector cropping failure, Muse Image discontinuation (controlled retreat language discovery) |
 
 #### Tech Editorial (13 publications, 31 articles)
 
@@ -1324,7 +1324,7 @@ Critical for documenting the VADER financial journalism inflation bias (§16):
 | **PYMNTS** | 1 | Zuckerberg AI agents admission |
 | **TheStreet** | 1 | Meta AI warning before earnings (100th article — worst VADER false positive: 0.9788) |
 
-#### General Interest / Other (10 publications + cross-analyses, 14 articles)
+#### General Interest / Other (10 publications + cross-analyses, 15 articles)
 
 Specialty press and multi-source analyses:
 
@@ -1338,7 +1338,7 @@ Specialty press and multi-source analyses:
 | **Inc.com** | 1 | Threads 500M MAU milestone, competitive positioning vs X |
 | **Kotaku** | 1 | Meta Arena / Polymarket rivalry (sardonic correction Path D discovery) |
 | **Newzlet** | 1 | Meta Cannes competitive intelligence (absence-as-evidence/silence-as-guilt discovery) |
-| **NY Post** | 1 | Meta $1.4T teen mental health penalty |
+| **NY Post** | 2 | Meta $1.4T teen mental health penalty, EU DSA addictive design ultimatum framing |
 | **WebProNews** | 1 | Meta Dublin contractors AI replacement (worker_replacement_irony, two_tier_treatment discovery) |
 | **Multi-source** | 1 | Meta Claude/Codex restriction (cross-outlet aggregation) |
 
@@ -1354,7 +1354,7 @@ Specialty press and multi-source analyses:
 | Apr 2026 | 3 | MIT TR Chinese workers, resistance, LLM surveillance |
 | May 2026 | 7 | MIT TR Anduril/warfare glasses, Wired dark mood, WebProNews Dublin |
 | Jun 2026 | 63 | Primary collection window — 60% of corpus |
-| Jul 2026 | 24 | Second-highest month — financial journalism genre expansion, wire service addition |
+| Jul 2026 | 26 | Second-highest month — financial journalism genre expansion, wire service addition, EU DSA 6-outlet cluster, controlled retreat language discovery |
 
 **Collection trajectory:** The corpus grew from ~10 articles (late June 2026) to 121 over ~14 days, with the most intensive collection in June–July 2026. Earlier articles (Aug 2025 – May 2026) were retroactively collected to extend temporal coverage and test the toolkit's temporal generalization. The June 2026 concentration reflects the initial sprint to discover and validate framing device types.
 
@@ -1373,7 +1373,7 @@ Articles cluster into 6 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 150 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 152 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
@@ -1401,7 +1401,7 @@ The corpus includes **13 same-event comparison clusters** validated in §10.2 of
 | **Tier 1** (dedicated cross-analysis files) | 5 | 20 | Tone gaps 0.25–1.23; framing device differentials 1:1 to 10:0 |
 | **Tier 2** (same-event article clusters) | 8 | ~24 | Tone ranges 0.21–1.00; genre-controlled signal extraction |
 
-The EU DSA "Addictive Design" cluster (Jul 10, 2026) is the widest genre-controlled comparison: 5 articles spanning wire service (Reuters), cable news (CNN), business newspaper (WSJ), investment news (IBD), and investment analysis (Investopedia) — demonstrating that identical facts produce a 0.70-point corrected tone spread when genre effects are controlled. The regulatory content's structural position migrates from ~5% (wire service lede) to ~81% (investment analysis caveat) as genre shifts from news to investment-first.
+The EU DSA "Addictive Design" cluster (Jul 10, 2026) is the widest genre-controlled comparison: 6 articles spanning wire service (Reuters), cable news (CNN), business newspaper (WSJ), investment news (IBD), investment analysis (Investopedia), and tabloid (NY Post) — demonstrating that identical facts produce a 0.70-point corrected tone spread when genre effects are controlled. The regulatory content's structural position migrates from ~5% (wire service lede) to ~81% (investment analysis caveat) as genre shifts from news to investment-first. The NY Post addition introduces ultimatum framing and tempering coda patterns characteristic of tabloid coverage.
 
 ### 17.7 Framing Device Discovery Provenance
 

@@ -412,8 +412,8 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
-│   └── sample_output/       # 150 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2175 tests across 94 test files (all from real articles)
+│   └── sample_output/       # 152 annotated real-article analyses (see METHODOLOGY.md §17)
+├── tests/                       # 2184 tests across 95 test files (all from real articles)
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
@@ -508,6 +508,7 @@ mediascope/
 │   ├── test_reuters_muse_spark_11_jul9.py # Reuters Muse Spark 1.1 developer preview Jul 9: pathologizing_metaphor "intervention" false positive suppression (neutral technical context — "less human intervention", "without intervention"), pricing comparison phrases in NEGATIVE_COMPARISON/POSITIVE_COMPARISON ("above openai", "below anthropic", "priced above/below", "cheaper than", "undercuts"), loaded_language competitive dramatization ("heated competition", "AI supremacy", "tech arms race"), competitive_positioning "pitting...against" and "close/narrow the gap"
 │   ├── test_recovery_narrative.py # Recovery narrative framing device (#94): three-beat decline→catalyst→recovery structure in financial articles, bidirectional competitive_positioning (positive parity variant), confidence scoring, negative guards for neutral wire articles and decline-only articles; discovered from MarketWatch Meta stock rebound article (Jul 10, 2026)
 │   ├── test_speculative_quote_suppression.py # Speculative framing quote-context suppression: _find_quoted_spans helper, _is_in_quoted_span helper, editorial prose hedges still fire at 5+ threshold, analyst quotes suppressed (straight + smart quotes), mixed editorial/quoted context, BofA research note style, Motley Fool editorial hedging
+│   ├── test_controlled_retreat_language.py # Controlled retreat language detection: policy_reversal subtype for corporate damage-control statements (intent displacement, active listening performance, target-miss euphemism, passive unavailability, control reassurance, useful-tool salvage); discovered from Reuters Meta Muse Image discontinuation (Jul 10, 2026)
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

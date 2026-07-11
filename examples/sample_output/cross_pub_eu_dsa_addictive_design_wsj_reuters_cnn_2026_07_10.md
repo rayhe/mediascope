@@ -134,3 +134,9 @@ Reuters' exclusive forward look to von der Leyen's September teen ban announceme
 | Unique value | Geopolitical framing | Exclusive sources + policy forward look | Independent academic evidence |
 
 **Cluster ID:** 13 (same-event comparison, Tier 1 — all three articles published same day on same event with meaningfully different framing choices)
+
+---
+
+## 9. Cluster Expansion: NY Post (Added Jul 10, 2026 19:00 PT)
+
+The NY Post EU DSA article (`nypost_eu_dsa_meta_addictive_features_2026_07_10_analysis.md`) extends this cluster to 6 outlets. NY Post introduces **ultimatum framing** (headline: "Meta told to change 'addictive' features on Facebook, Instagram or face steep fines") and **tempering coda** patterns characteristic of tabloid coverage. Corrected tone: −0.50 (most negative in cluster). Defense at 60% of article, with unrebutted tail — the most asymmetric source balance in the 6-outlet comparison. See also `cross_pub_eu_dsa_investor_expansion_ibd_investopedia_2026_07_10.md` for the IBD/Investopedia investment-press expansion.

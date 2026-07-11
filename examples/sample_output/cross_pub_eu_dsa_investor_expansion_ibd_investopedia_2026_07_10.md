@@ -147,18 +147,18 @@ The toolkit should track `market_reaction_as_editorial` — when stock price mov
 
 ## 8. Summary: 5-Way Comparison Table
 
-| Dimension | Reuters | CNN | WSJ | IBD | Investopedia |
-|-----------|---------|-----|-----|-----|-------------|
-| **Headline severity** | Medium | Medium-Low | High | Medium | None (absent) |
-| **Regulatory content share** | ~85% | ~70% | ~65% | ~55% | ~20% |
-| **Defense positioning** | 50% | 38% | 45% | 30% | N/A (omitted) |
-| **Fine quantification** | % only | % + $12B | Per-platform % | % only | % only |
-| **Stock data used** | ❌ | ❌ | ❌ | ✅ (bookends) | ✅ (throughout) |
-| **Corrected tone** | -0.28 | -0.40 | -0.27 | +0.10 | +0.30 |
-| **Dominant frame** | Regulatory arc | Child safety crisis | Legal/regulatory risk | Stock shrugs off risk | AI bull thesis |
-| **Key framing devices** | stakes_escalation, regulatory_arc | academic_import, scale_magnitude | geopolitical_tension, failure_attribution | regulatory_risk_subordination, positive_bookending | analyst_authority, recovery_narrative |
+| Dimension | Reuters | CNN | WSJ | IBD | Investopedia | NY Post |
+|-----------|---------|-----|-----|-----|-------------|---------|
+| **Headline severity** | Medium | Medium-Low | High | Medium | None (absent) | High (ultimatum) |
+| **Regulatory content share** | ~85% | ~70% | ~65% | ~55% | ~20% | ~40% |
+| **Defense positioning** | 50% | 38% | 45% | 30% | N/A (omitted) | 60% |
+| **Fine quantification** | % only | % + $12B | Per-platform % | % only | % only | "steep fines" (no number) |
+| **Stock data used** | ❌ | ❌ | ❌ | ✅ (bookends) | ✅ (throughout) | ❌ |
+| **Corrected tone** | -0.28 | -0.40 | -0.27 | +0.10 | +0.30 | -0.50 |
+| **Dominant frame** | Regulatory arc | Child safety crisis | Legal/regulatory risk | Stock shrugs off risk | AI bull thesis | Ultimatum/tabloid |
+| **Key framing devices** | stakes_escalation, regulatory_arc | academic_import, scale_magnitude | geopolitical_tension, failure_attribution | regulatory_risk_subordination, positive_bookending | analyst_authority, recovery_narrative | ultimatum_framing, tempering_coda |
 
-**Cluster ID:** 13 (expanded from 3-way to 5-way — now the deepest same-event cluster in the corpus)
+**Cluster ID:** 13 (expanded from 5-way to 6-way — now the deepest same-event cluster in the corpus)
 **Tier:** 1 (dedicated cross-analysis file)
-**Articles involved:** 5 (up from 3)
-**Tone spread:** 0.70 points (corrected), widest in corpus
+**Articles involved:** 6 (up from 5)
+**Tone spread:** 0.80 points (corrected, NY Post −0.50 to Investopedia +0.30), widest in corpus

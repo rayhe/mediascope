@@ -18867,3 +18867,33 @@ Gizmodo LED tamper article ("Destroying the Privacy LED on Meta Smart Glasses Wi
 - Editorial genres: **8**
 - Topic buckets: **29**
 - Structural consistency tests: **98**
+
+## 2026-07-10 19:00 PT — Type A: Article Deep Dive (NY Post EU DSA addictive design + Reuters Muse Image discontinuation)
+
+**Articles analyzed:**
+1. NY Post — "Meta told to change 'addictive' features on Facebook, Instagram or face steep fines" (Jul 10, 2026). Extends EU DSA Cluster 13 from 5 to 6 outlets. Ultimatum framing, tempering coda. Corrected tone −0.50, most negative in cluster. Most asymmetric source balance (defense at 60%, unrebutted tail).
+2. Reuters — Meta discontinues Muse Image @-mention feature (Jul 10, 2026). Discovery article for **controlled retreat language** — new `policy_reversal` subtype detecting 6 corporate damage-control techniques: intent displacement, active listening performance, target-miss euphemism, passive unavailability, control reassurance, useful-tool salvage.
+
+**New test file:** `test_controlled_retreat_language.py` (9 tests) — controlled retreat pattern detection, entity detection, lifecycle cross-narrative analysis.
+
+**Bug fix:** Added `analyze_text()` convenience function to `mediascope/analysis.py` wrapping `ArticleAnalyzer` for test compatibility.
+
+**Doc updates:**
+- METHODOLOGY.md §17.1: 150 → 152 real articles
+- METHODOLOGY.md §17.2: Reuters 20 → 21 articles, NY Post 1 → 2 articles, wire total 22 → 23, general interest total 14 → 15
+- METHODOLOGY.md §17.3: Jul 2026 24 → 26 articles
+- METHODOLOGY.md §17.5: 150 → 152 annotated articles
+- METHODOLOGY.md §17.6: EU DSA cluster 5 → 6 articles, tone spread 0.70 → 0.80
+- QUALITY_STANDARDS.md: 151 → 152 annotated articles
+- ARCHITECTURE.md: 150 → 152 annotated analyses, 94 → 95 test files, 2175 → 2184 tests, added test_controlled_retreat_language.py listing
+- README.md: 2175 → 2184 tests, 94 → 95 test files, added test_controlled_retreat_language.py listing
+- Cross-pub EU DSA files updated with NY Post as 6th outlet (tone spread widened to 0.80)
+
+**Test results:** 2,184 passed, 0 failed. All 98 structural consistency tests pass.
+
+**Running totals:**
+- Annotated articles: **152** (150 single-pub + 1 multi-source + 1 cross-narrative)
+- Distinct publications: **42**
+- Total tests: **2,184** across **95** test files
+- Framing device types: **95** (10 core + 78 extended + 7 structural)
+- Same-event clusters: **13** (5 Tier 1, 8 Tier 2)

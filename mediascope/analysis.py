@@ -79,3 +79,56 @@ class ArticleAnalyzer:
             )
             for a in articles
         ]
+
+
+def analyze_text(text: str, title: str = "", target_entity: str = "Meta") -> dict:
+    """Convenience function: analyse *text* and return a plain dict.
+
+    This wraps :class:`ArticleAnalyzer` for quick one-shot analysis in tests
+    and scripts that don't need the full pipeline configuration.
+
+    Returns a dict with keys ``entities``, ``framing_devices``, ``sentiment``,
+    ``topics``, ``sources``, ``primary_entity``, and ``anonymous_source_count``.
+    Each value is a plain dict/list of dicts for easy ``.get()`` access.
+    """
+    from dataclasses import asdict, fields as dc_fields
+
+    def _to_dict(obj):
+        """Convert a dataclass instance to a dict, or return obj if already a dict."""
+        if isinstance(obj, dict):
+            return obj
+        if hasattr(obj, "__dataclass_fields__"):
+            return {f.name: getattr(obj, f.name) for f in dc_fields(obj)}
+        return obj
+
+    analyzer = ArticleAnalyzer(target_entity=target_entity)
+    result = analyzer.analyze(text, title=title)
+
+    # Entities: could be a list of EntityMention or a dict of clusters
+    raw_entities = result.entities
+    if isinstance(raw_entities, dict):
+        entity_list = []
+        for cluster_name, mentions in raw_entities.items():
+            if isinstance(mentions, list):
+                entity_list.extend([_to_dict(m) for m in mentions])
+            else:
+                entity_list.append({"name": cluster_name, "cluster": cluster_name})
+    elif isinstance(raw_entities, list):
+        entity_list = [_to_dict(e) for e in raw_entities]
+    else:
+        entity_list = []
+
+    # Normalise entity dicts: ensure "name" key exists (alias for canonical_name or entity)
+    for e in entity_list:
+        if "name" not in e:
+            e["name"] = e.get("canonical_name", e.get("entity", ""))
+
+    return {
+        "entities": entity_list,
+        "framing_devices": [_to_dict(d) for d in result.framing_devices],
+        "sentiment": _to_dict(result.sentiment) if result.sentiment else {},
+        "topics": [_to_dict(t) for t in result.topics] if result.topics else [],
+        "sources": [_to_dict(s) for s in result.sources] if result.sources else [],
+        "primary_entity": result.primary_entity,
+        "anonymous_source_count": result.anonymous_source_count,
+    }

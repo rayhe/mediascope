@@ -214,6 +214,8 @@ When all three fire, the corrected `overall_tone` is derived from structural fra
 | **Wire-service vs. magazine genre** | Different genre conventions (length, framing density) affect comparisons | Use same-event comparison methodology to control for genre |
 | **Counted anonymous sources** | "Two employees said" reads as zero anonymous sources to simple regex | `count_anonymous_sources()` delegates to comprehensive `extract_sources()` |
 | **Product-name entities** | "Meta Glasses" extracted as a source name | Product-name stop-filter in source extraction |
+| **Product-launch VADER inflation** | Product description language ("powerful," "advanced," "enable") overwhelms editorial criticism in product-launch articles | Documented in 5-way Muse Image cross-analysis. Framing correction compensates for TechCrunch-style editorial pieces but not for wire-service articles with 0 framing devices |
+| **Corporate damage-control VADER inflation** | When article content is majority corporate PR statements (product-failure announcements, discontinuation statements), VADER scores the PR language's lexical positivity without accounting for the failure context. "Heard the feedback" = positive listening. "Missed the mark" = sports metaphor. "Useful creative tool" = positive product description. PR industry has effectively evolved language optimized to game lexical sentiment analysis | Documented from Reuters Meta Muse Image discontinuation (Jul 10, 2026): 80-word article consisting entirely of Meta's controlled-retreat statement predicted VADER +0.25 to +0.40 for an article about a product failure. No current mitigation — article is too short for framing correction to fire |
 
 ### Scoring Calibration Validation
 
@@ -225,7 +227,7 @@ Every article analysis that introduces a toolkit correction must include:
 4. **Gap analysis** — why the gap exists and which specific framing devices or detection failures caused it
 5. **Regression tests** — at least one test per correction to prevent future regressions
 
-This ensures the correction pipeline is validated against real articles, not synthetic examples. All 150 annotated articles in `examples/sample_output/` follow this pattern.
+This ensures the correction pipeline is validated against real articles, not synthetic examples. All 152 annotated articles in `examples/sample_output/` follow this pattern.
 
 ## 8. Emotional Language Validation
 

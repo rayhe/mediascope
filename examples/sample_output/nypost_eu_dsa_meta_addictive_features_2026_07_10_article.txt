@@ -1,0 +1,35 @@
+European Union warns Meta to change 'addictive' Facebook, Instagram features — or get big fines
+
+The European Union's tech regulator told Meta on Friday to make big changes to Facebook and Instagram's "addictive" features — or face steep fines.
+
+The European Commission called out Mark Zuckerberg's company for several specific features, including "highly personalized recommendations, autoplay and infinite scroll" that allegedly combine to keep users – including vulnerable kids – hooked on social media.
+
+Firms can face fines of up to 6% of their annual revenue if they don't make changes to comply with the EU's Digital Services Act, a sweeping regulatory framework that requires Big Tech firms to maintain standards for the content and design of their apps.
+
+In a highly unusual move, the European Commission said Meta needs to nix features like infinite scroll and roll out new "screen time breaks" and tweak its recommendation system so it's "less engagement oriented."
+
+"The Commission's investigation indicates that Meta did not adequately assess the risks of its addictive design on the physical and mental wellbeing of users, including minors and vulnerable adults," the European Commission said in a press release.
+
+"These features fuel the user's urge to keep scrolling and shift the brain into 'autopilot mode', contributing to unhealthy habits and compulsive use," the agency added.
+
+Based on Meta's fiscal 2025 revenue, it's looking at potential fine of about $12 billion – though the EU's penalties to date in similar cases have come in far below that level.
+
+EU investigators also found that Meta "disregarded available information about the time minors spend on Instagram or Facebook at night and how the optimization of its different formats – such as reels and stories – could lead to excessive or compulsive use of the services."
+
+Meta pushed back on the EU's findings.
+
+"We disagree with these preliminary findings, which don't accurately take into account the significant steps we've taken to protect teens," a company spokesperson said in a statement.
+
+Meta noted that it has launched a Teen Accounts feature meant to shield kids from social media addiction, including by giving parents the option to block their access to Facebook and Instagram at night.
+
+Zuckerberg's company has faced intense scrutiny in both Europe and the US over its alleged role in fueling social media addiction and other forms of online harm.
+
+Earlier this year, the European Commission ruled that Meta had failed to stop users under age 13 from accessing its platforms.
+
+The Facebook and Instagram parent also faces a wave of more than 2,400 lawsuits in the US over its addictive features.
+
+It suffered back-to-back court losses earlier this year, one in Los Angeles and another in New Mexico, in what critics hailed as a "Big Tobacco moment" for social media.
+
+Source: New York Post
+URL: https://nypost.com/2026/07/10/business/european-union-tells-meta-to-change-addictive-facebook-instagram-features/
+Date: July 10, 2026
