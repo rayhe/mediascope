@@ -19325,3 +19325,46 @@ Gizmodo LED tamper article ("Destroying the Privacy LED on Meta Smart Glasses Wi
 - `iteration-log.md`: this entry
 
 **Tests:** 2,237 passed, 0 failed
+
+---
+
+## 2026-07-11 08:00 PT — Type C: Ownership & Funding Deep Dive (Atlantic / Apple v. OpenAI Cross-Conflict)
+
+**Focus:** The Atlantic — chosen as smallest profile (1,473 lines) and the publication with the most acute Apple v. OpenAI cross-conflict through Emerson Collective's unprecedented five-way entanglement.
+
+### Key Findings
+
+#### 1. Emerson Collective Five-Way Apple v. OpenAI Conflict
+- **AAPL stock:** LPJ holds ~$17.06B+ in Apple stock (plaintiff)
+- **io Products investment:** EC was founding backer of io Products LLC (named defendant)
+- **OpenAI licensing:** Atlantic has existing content licensing deal with OpenAI (primary defendant)
+- **io Products acquisition profit:** EC profited from io Products' $6.5B acquisition by OpenAI
+- **Atlantic Labs:** Atlantic co-develops products with OpenAI
+- This is severity 5 — the owner's largest single stock holding is suing a company the owner invested in, while the publication licenses content to the primary defendant
+
+#### 2. Apple-OpenAI Partnership Collapse
+- WSJ reports Apple's new Siri AI (WWDC Jun 2026) now powered by Google Gemini, not ChatGPT
+- OpenAI reportedly considered suing Apple for breach of contract before Apple filed first
+- io Products $6.5B acquisition positioned as catalyst — Apple saw it as talent/IP pipeline from former employees
+
+#### 3. Atlantic Editorial Coverage Gap
+- Zero articles published about Apple v. OpenAI as of Jul 11, 2026
+- Every major wire service (Reuters, CNN, USA Today, Barron's, Fox Business, MarketWatch, NY Post) covered within hours
+- Significant given EC's direct financial exposure on both sides of the lawsuit
+
+#### 4. Stock Price Updates (Jul 10 close)
+- AAPL: $315.32 (-0.28%)
+- DIS: $95.64 (-0.55%)
+- META: $669.21 (+5.97%)
+
+### Profile Changes (1 file, +154/−5 lines)
+- `profiles/atlantic.yaml`: 1,473 → 1,622 lines
+  - Expanded io Products entity entry with full Apple v. OpenAI lawsuit details, partnership collapse context, Siri-Gemini pivot
+  - New `active_litigation_cross_conflict` known_conflicts entry (severity 5)
+  - New `apple_v_openai_owner_cross_conflict` litigation_connections entry with case analysis and prior iyO context
+  - Updated AAPL stock price in revenue_relationships
+  - Added 2026-07-11 notes section header
+
+**Commit:** `5fe1868` — "Type C: Atlantic profile — Apple v. OpenAI cross-conflict (Jul 11)"
+**Tests:** 2,237 passed, 0 failed
+**Sources:** Reuters, CNN, USA Today, Barron's, Fox Business, MarketWatch, NY Post, WSJ (all Jul 10-11, 2026)
