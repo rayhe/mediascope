@@ -214,6 +214,7 @@ Devices specific to financial journalism, earnings coverage, and analyst reporti
 | 93 | **Regulatory Risk Subordination** | E | Regulatory/legal risk acknowledged but architecturally sandwiched between positive market signals so reading experience begins and ends with optimism. Genre-normative for IBD/Investopedia/Motley Fool; higher signal in WSJ/NYT/Bloomberg | "Despite [regulatory/legal action], [stock positive]," article opens with stock performance before regulatory news, regulatory content >70% through article, "shrugging off [regulatory] headwinds" |
 | 94 | **Recovery Narrative** | E | Three-beat article architecture: (1) prior decline/criticism, (2) catalyst event, (3) forward recovery projection via analyst quotes. Converts neutral news into "turning point" narrative. Genre-normative for MarketWatch/Barron's/Motley Fool | **Beat 1:** "has long been criticized," "stock was down X%." **Beat 2:** "investors cheered," "ease spending fears." **Beat 3:** forward-looking analyst projections, "up to N% lower costs" |
 | 95 | **Grudging Concession** | E | Positive action acknowledged but editorially minimized — framing legitimate progress as reluctant, forced, or insufficient. Distinct from defensive_verb_framing (loaded verbs on neutral actions) and editorial_deflation (puncturing ambition with asides). Genre: Category 13 (Concession & Acknowledgment Framing) | "finally [positive action]"; "it's about time"; "only after [backlash/pressure/outcry]"; "[positive], but it's too little, too late"; "took [entity] long enough"; "belatedly [positive verb]" |
+| 96 | **Ultimatum Framing** | E | Multi-stage regulatory/legal proceeding compressed into a binary "do X or face Y" construction — collapsing procedural complexity into an "or else" fork. Distinct from regulatory_shadow (ambient fear) and pressure_language (coercive verbs). Genre: Category 14 (Procedural Compression) | "change X — or get/face Y"; "must [action] or face [consequence]"; "comply or face fines"; "either [fix] or [consequence]" |
 
 ---
 
@@ -224,6 +225,16 @@ Devices that shape how positive developments or admissions are presented.
 | # | Device | Tier | One-Line Description | Key Triggers |
 |---|--------|------|----------------------|-------------|
 | 95 | **Grudging Concession** | E | Positive development framed through qualifiers and historical failure context that ensure the good news reads as reactive or insufficient. Author acknowledges genuine improvement while dampening it via credit displacement, deflating qualifiers, or surprise markers | "is now *actually* rolling out," "what it purports to be," "is finally addressing," "it took [external pressure] to get [entity] to," "credit where it's due, but" |
+
+---
+
+## Category 14: Procedural Compression
+
+Devices that collapse multi-step processes into simplified binary constructions.
+
+| # | Device | Tier | One-Line Description | Key Triggers |
+|---|--------|------|----------------------|-------------|
+| 96 | **Ultimatum Framing** | E | Multi-stage regulatory or legal proceeding (investigation → findings → response → decision → fine) compressed into a binary "do X or face Y" construction. Collapses procedural complexity into an "or else" fork. Distinct from regulatory_shadow (ambient fear), pressure_language (coercive verbs), and scale_magnitude (number amplification) | "change/fix X — or get/face Y," "must [action] or face [consequence]," "comply or face fines/penalties," "either [action] or [consequence]" |
 
 ---
 

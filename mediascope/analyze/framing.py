@@ -7949,6 +7949,80 @@ _GRUDGING_CONCESSION_PATTERNS = [
 
 _DEVICE_PATTERNS["grudging_concession"] = _GRUDGING_CONCESSION_PATTERNS
 
+# ---------------------------------------------------------------------------
+# ultimatum_framing (#96)
+#
+# Transforms a multi-stage regulatory or legal proceeding (investigation →
+# preliminary findings → response period → final decision → potential fine)
+# into a binary "do X or face Y" construction.  Compresses procedural
+# complexity — which protects both parties — into a single-sentence binary.
+#
+# Distinct from regulatory_shadow (ambient fear of regulation without a
+# specific demand), scale_magnitude (amplifying specific numbers), and
+# pressure_language (coercive verbs on neutral actions).  Ultimatum framing
+# operates at the sentence-architecture level: the entire regulatory
+# process is collapsed into an "or else" fork.
+#
+# Discovered from NY Post "European Union warns Meta to change 'addictive'
+# Facebook, Instagram features — or get big fines" (Jul 10, 2026).
+# ---------------------------------------------------------------------------
+
+_ULTIMATUM_FRAMING_PATTERNS = [
+    # "change/fix/stop/remove X — or get/face/risk/suffer Y"
+    # The canonical em-dash-or construction from the NY Post headline
+    re.compile(
+        r"\b(?:change|fix|stop|remove|modify|address|overhaul|eliminate|end|drop"
+        r"|shut\s+down|pull|revamp|redesign)\b"
+        r".{0,60}?"
+        r"(?:—|--|–)\s*or\s+"
+        r"(?:get|face|risk|suffer|pay|incur|receive)\b",
+        re.IGNORECASE,
+    ),
+    # "[entity] must/has to [action] or face [consequence]"
+    # Regulatory imperative + binary consequence without em-dash
+    re.compile(
+        r"\b(?:must|has\s+to|needs?\s+to|will\s+have\s+to)\s+"
+        r"(?:change|fix|stop|remove|modify|address|comply|act|respond)"
+        r".{0,50}?\bor\s+(?:face|risk|suffer|pay|incur)\b",
+        re.IGNORECASE,
+    ),
+    # "comply [with X] or [consequence]" — direct regulatory ultimatum
+    re.compile(
+        r"\bcomply\b.{0,40}?\bor\s+"
+        r"(?:face|risk|suffer|pay|incur|get|be\s+(?:fined|penalized|sanctioned))\b",
+        re.IGNORECASE,
+    ),
+    # "[do X] by [deadline] or [consequence]" — deadline ultimatum
+    re.compile(
+        r"\b(?:by|before|within)\s+(?:\w+\s+){1,4}"
+        r"or\s+(?:face|risk|suffer|pay|incur|get)\s+"
+        r"(?:fines?|penalties?|sanctions?|consequences?|punishment)\b",
+        re.IGNORECASE,
+    ),
+    # "either [fix/change/comply] or [consequence]" — explicit binary
+    re.compile(
+        r"\beither\s+(?:change|fix|stop|remove|modify|address|comply|act)"
+        r".{0,50}?\bor\s+(?:face|risk|suffer|pay|get)\b",
+        re.IGNORECASE,
+    ),
+    # "change/fix/stop X or risk/face Y" — dashless ultimatum (softer variant)
+    # Requires a regulatory/institutional subject context ("tells", "warns",
+    # "orders", "instructs") upstream or a consequence noun downstream to
+    # avoid false positives on ordinary business choices.
+    re.compile(
+        r"\b(?:tells?|warns?|orders?|instructs?|directs?|demands?)\b"
+        r".{0,80}?"
+        r"\b(?:change|fix|stop|remove|modify|address|overhaul|comply)\b"
+        r".{0,60}?"
+        r"\bor\s+(?:risk|face|get|suffer|pay|incur)\s+"
+        r"(?:fines?|penalties?|sanctions?|punishment|consequences?|litigation"
+        r"|prosecution|enforcement)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["ultimatum_framing"] = _ULTIMATUM_FRAMING_PATTERNS
+
 
 def detect_framing_devices(
     text: str,
@@ -7956,8 +8030,8 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 88 pattern-matched device types plus 7 structural
-    post-pass types (95 total).
+    Scans for 89 pattern-matched device types plus 7 structural
+    post-pass types (96 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
@@ -7994,6 +8068,7 @@ def detect_framing_devices(
     precedent_analogy, precedent_framing,
     prescriptive_solutionism,
     pressure_language, recovery_narrative, grudging_concession,
+    ultimatum_framing,
     refusal_amplification, regulatory_favoritism,
     regulatory_shadow, repeated_disruption, rhetorical_question,
     sarcastic_correction, scandal_comparison, scale_magnitude,
@@ -8007,7 +8082,7 @@ def detect_framing_devices(
     narrative_reframing, dismissive_qualifier,
     bull_bear_structuring, analyst_authority,
     investor_advisory, editorial_cross_promotion,
-    and regulatory_risk_subordination.
+    regulatory_risk_subordination, and ultimatum_framing.
 
     Structural post-pass (7): delayed_defense, kicker_framing,
     analogy_stacking, speculative_framing, trend_bundling,

@@ -241,9 +241,9 @@ class TestStructuralConsistency:
     """Verify device type count stays consistent after adding editorial_cross_promotion."""
 
     def test_device_pattern_count(self):
-        """Pattern-matched device type count should be 78."""
+        """Pattern-matched device type count should be 89."""
         from mediascope.analyze.framing import _DEVICE_PATTERNS
 
-        assert len(_DEVICE_PATTERNS) == 88, (
-            f"Expected 85 pattern-matched device types, got {len(_DEVICE_PATTERNS)}"
+        assert len(_DEVICE_PATTERNS) == 89, (
+            f"Expected 89 pattern-matched device types, got {len(_DEVICE_PATTERNS)}"
         )
