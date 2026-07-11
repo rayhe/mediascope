@@ -1637,24 +1637,34 @@ journalists:
     role: reporter
     start: '2000'
     end: '2010'
-    notes: Industrial editor, media business editor, various roles.
+    notes: Joined Guardian in 2000. Covered industrial affairs, media business. Various byline roles through the 2000s decade.
+      UK-based throughout.
     source_url: https://londontechweek.com/speakers/dan-milmo
   - publication: guardian
     role: deputy_business_editor
     start: '2010'
     end: '2020'
-    notes: Deputy business editor and media business editor.
+    notes: Deputy business editor and media business editor. Edited business section coverage, shaped Guardian's approach
+      to media industry reporting. Transitioned from reporter to editorial management.
     source_url: https://londontechweek.com/speakers/dan-milmo
   - publication: guardian
     role: global_technology_editor
     start: '2020'
-    notes: Global technology editor. Covers AI, platform regulation, Elon Musk, cybersecurity, UK social media bans. Interviewed
-      Demis Hassabis at Bletchley Park AI Safety Summit. Spoke at Web Summit.
+    notes: 'Global technology editor since ~2020. Covers AI policy, platform regulation, Elon Musk/X/Twitter, cybersecurity,
+      UK social media bans. Key articles: Rohingya sued Facebook for £150B over Myanmar genocide (Dec 2021); Guardian will
+      no longer post on Elon Musk''s X (Nov 2024); UK under-16s social media ban series (Jun 2026); UK critical infrastructure
+      200 cyber incidents/year (Jun 2026). Interviewed Demis Hassabis at Bletchley Park AI Safety Summit. Speaker at Web Summit
+      and London Tech Week. Syndicated widely: MSN (US/UK/AU/Ireland/MY/PH/SG/ZA), Yahoo Canada, Yahoo News. Buzzsumo Power
+      score 3,203. One of the Guardian''s most prolific tech bylines — high-frequency output on UK tech policy, AI regulation,
+      and Big Tech accountability.'
     source_url: https://londontechweek.com/speakers/dan-milmo
   name: Dan Milmo
-  notes: UK-based. Career entirely at Guardian (26+ years). Promoted from industrial/media business editor to global technology
-    editor. Key role in shaping Guardian's AI and tech regulation coverage from London. Covers UK social media bans, AI safety,
-    cybersecurity. Buzzsumo profile shows high-frequency output on UK tech policy.
+  notes: UK-based. Career entirely at Guardian (26+ years, joined 2000). Rare single-publication lifer — promoted from industrial/media
+    business editor to deputy business editor to global technology editor. Zero cross-publication migrations makes him a PURE
+    control case for institutional bias analysis (no confounding employer changes). Key editorial gatekeeper for how the Guardian
+    covers Big Tech globally. His longevity means his framing reflects Guardian institutional voice, not personal career-hopping
+    bias. Covers UK social media bans, AI safety policy, cybersecurity, platform accountability. High-frequency output (multiple
+    articles/week). Syndicated across 11+ MSN/Yahoo regional editions, amplifying Guardian framing internationally.
   beats:
   - ai_policy
   - platform_regulation
@@ -1664,6 +1674,13 @@ journalists:
   education:
     institution: Unknown
     notes: Joined Guardian in 2000, details not publicly available
+  source_urls:
+  - https://londontechweek.com/speakers/dan-milmo
+  - https://www.theguardian.com/profile/danmilmo
+  - https://muckrack.com/dan-milmo
+  - https://websummit.com/speakers/dan-milmo
+  - https://buzzsumo.com/journalist/dan-milmo-theguardian-com/
+  - https://transcend.org/tms/author/?a=Dan+Milmo
 - career:
   - beat: student journalism, general
     end: 2013-05
@@ -2073,11 +2090,12 @@ journalists:
       GRU''s Olympic Destroyer malware; won Gerald Loeb (international), Sigma Delta Chi (SPJ), 3 Deadline Club Awards (NY
       SPJ), Cornelius Ryan Citation for Excellence (Overseas Press Club). "Tracers in the Dark: The Global Hunt for the Crime
       Lords of Cryptocurrency" (Doubleday, Nov 2022) — cryptocurrency tracing/dark web; won second Gerald Loeb Award for Feature
-      Reporting (2023). Total: 2 Gerald Loeb Awards, Sigma Delta Chi, Cornelius Ryan Citation, 3 Deadline Club Awards. 2026
-      National Magazine Award finalist (Service Journalism) with Lily Hay Newman for government surveillance article. KEY:
-      Institutional longevity (~12 years) makes him a control case for Drummond-era editorial drift. Forbes → Wired is a cross-ownership
-      test (Forbes independent; Wired = Condé Nast). His security beat gives natural adversarial framing toward Big Tech —
-      the question is whether Drummond-era Wired amplifies or simply inherits that posture.'
+      Reporting (2023) for "The Crypto Trap: Inside the Bitcoin Bust That Took Down the Web''s Biggest Child Abuse Site."
+      Total: 2 Gerald Loeb Awards, Sigma Delta Chi, Cornelius Ryan Citation, 3 Deadline Club Awards. 2026 National Magazine
+      Award finalist (Service Journalism) with Lily Hay Newman for government surveillance article. KEY: Institutional longevity
+      (~12 years) makes him a control case for Drummond-era editorial drift. Forbes → Wired is a cross-ownership test (Forbes
+      independent; Wired = Condé Nast). His security beat gives natural adversarial framing toward Big Tech — the question
+      is whether Drummond-era Wired amplifies or simply inherits that posture.'
     publication: wired
     role: senior_writer
     source_url: https://www.wired.com/author/andy-greenberg/
@@ -2092,6 +2110,14 @@ journalists:
     Malika Zouhali-Worrall (filmmaker). ANALYTICAL VALUE: Like Steven Levy, Greenberg is an institutional fixture whose continuous
     12+ year tenure makes him a control case for measuring Drummond-era editorial posture changes. Forbes → Wired migration
     is also a cross-ownership test.'
+  source_urls:
+  - https://en.wikipedia.org/wiki/Andy_Greenberg
+  - https://www.wired.com/author/andy-greenberg/
+  - https://andygreenberg.net
+  - https://penguinrandomhouse.com/authors/2117299/andy-greenberg/
+  - https://allamericanspeakers.com/speakers/andy-greenberg/
+  - https://engineering.nyu.edu/news/inaugural-award-cybersecurity-journalism-honors-wireds-andy-greenberg
+  - https://computerhistory.org/profile/cade-metz/
 - career:
   - publication: world-policy-institute
     role: editorial_assistant
@@ -5787,43 +5813,64 @@ journalists:
     Nickie and two sons. Giants and 49ers fan. Had a personal internet privacy incident (filmed on London subway, video went
     viral on SubwayCreatures Instagram) that he turned into a Bloomberg Decrypted podcast episode about online privacy.'
 - career:
-  - beat: corporate credit, stocks, insurance, retail
+  - publication: bloomberg
+    role: reporter
+    start: '2009'
     end: 2013-06
+    beat: corporate credit, stocks, insurance, retail
     event_type: hired
-    notes: Bloomberg News reporter covering corporate credit, stocks, insurance companies and retail. UNC-Chapel Hill graduate
-      (business journalism program).
-    publication: bloomberg
+    notes: Bloomberg News reporter. First year (2009) was rotating reporter covering currencies, insurance, and stocks. Then
+      moved to corporate credit before covering retail. Regularly contributed to Bloomberg Businessweek. UNC-Chapel Hill graduate
+      (business journalism program). Started career ~4 years earlier than previously recorded.
+    source_url: https://talkingbiznews.com/they-re-hiring/how-a-business-journalist-can-improve-in-social-media/
+  - publication: buzzfeed
     role: reporter
-    source_url: https://talkingbiznews.com/they-re-hiring/buzzfeeds-maheshwari-to-join-ny-times-biz-desk/
-    start: 2011-01
-  - beat: retail, e-commerce
-    end: 2016-07
-    event_type: hired
-    notes: Distinguished herself with aggressive retail/e-commerce coverage. JustFab investigation won SABEW Best in Business.
-      Chinese Facebook knockoff clothing piece was most-read investigative feature ever on BuzzFeed (3.6M views). Victoria's
-      Secret on-call shifts investigation won Front Page Award (Newswomen's Club of New York). Named by Time as one of "140
-      Best Twitter Feeds" (2014).
-    publication: buzzfeed
-    role: reporter
-    source_url: https://talkingbiznews.com/they-re-hiring/buzzfeeds-maheshwari-to-join-ny-times-biz-desk/
     start: 2013-07
-  - beat: advertising, then retail, then TikTok/emerging media
+    end: 2016-07
+    beat: retail, e-commerce
+    event_type: hired
+    notes: BuzzFeed News business vertical (launched May 2013). JustFab investigation won SABEW Best in Business (investigative,
+      digital, 2015). Chinese Facebook knockoff clothing piece was most-read investigative feature ever on BuzzFeed (3.6M
+      views). Victoria's Secret on-call shifts investigation (with colleague) won Front Page Award from Newswomen's Club of
+      New York (2015) — Victoria's Secret and other major retailers changed staffing policies after story ran. Named by Time
+      as one of "140 Best Twitter Feeds" (2014). Won Punderdome 3000, a NYC pun competition. Appointed to SABEW board of governors
+      during BuzzFeed tenure.
+    source_url: https://talkingbiznews.com/they-re-hiring/buzzfeeds-maheshwari-to-join-ny-times-biz-desk/
+  - publication: nytimes
+    role: reporter
+    start: 2016-08
+    beat: advertising → retail → TikTok/emerging media
     event_type: hired
     notes: 'Three distinct beats at NYT: (1) Advertising (Aug 2016 - 2019) — wrote about inappropriate YouTube videos served
-      to children, viral misinformation, got "programmatic advertising" onto front page. (2) Retail (2019 - ~2022) — Victoria''s
-      Secret scandal, Outdoor Voices internal clashes, Forever 21 downfall. (3) TikTok/emerging media (~2022 - present) —
-      covers TikTok as primary social media/platform reporter. Editor: Connor Ennis ("Sapna is an editor''s dream"). Critical
-      for meta-analysis: as NYT''s TikTok reporter, her framing of TikTok vs Meta coverage provides natural experiment for
-      platform-level bias detection. Appeared in Netflix documentary "White Hot: The Rise & Fall of Abercrombie & Fitch" (2022).'
-    publication: nytimes
-    role: reporter
+      to children, viral misinformation before it was widely recognized, got "programmatic advertising" onto front page without
+      using those words. (2) Retail (2019 - ~2022) — Victoria''s Secret corporate scandal, Outdoor Voices internal clashes/implosion,
+      Forever 21 family-run descent into bankruptcy, also covered "denim cycles" and retail trends. (3) TikTok/emerging media
+      (~2022 - present) — covers TikTok as primary social media/platform reporter. Beat change announced by editors Ellen
+      Pollock, Rich Barbieri, Pui-Wing Tam, Joseph Plambeck, and Connor Ennis. Longtime editor: Connor Ennis ("Sapna is an
+      editor''s dream. She''s competitive, ambitious, fearless and amazingly versatile"). Appeared as herself in Netflix documentary
+      "White Hot: The Rise & Fall of Abercrombie & Fitch" (2022, dir. Alison Klayman), providing commentary on Abercrombie''s
+      marketing under ex-CEO Mike Jeffries. Critical for meta-analysis: as NYT''s TikTok reporter, her framing of TikTok vs
+      Meta provides natural experiment for platform-level bias detection.'
     source_url: https://nytco.com/press/a-new-role-for-sapna-maheshwari/
-    start: 2016-08
   name: Sapna Maheshwari
-  notes: 'Key migration: Bloomberg → BuzzFeed → NYT. Covers TikTok and emerging media — direct Meta competitor coverage. Award-winning
-    investigative reporter (SABEW Best in Business, Front Page Award). Her retail/advertising background gives her deep understanding
-    of platform business models. Critical for analyzing NYT''s comparative framing of Meta vs TikTok — does she apply the
-    same critical scrutiny to both platforms?'
+  notes: 'Key migration: Bloomberg (2009) → BuzzFeed (2013) → NYT (2016). Indian American, born Mystic, CT; grew up East Lyme,
+    CT. UNC-Chapel Hill graduate (business journalism). Covers TikTok and emerging media — direct Meta competitor coverage.
+    Award-winning investigative reporter: SABEW Best in Business (2015), Front Page Award (2015, Newswomen''s Club of NY),
+    Time "140 Best Twitter Feeds" (2014). Former SABEW board member. Her retail/advertising background gives her deep understanding
+    of platform business models. Netflix documentary appearance (White Hot, 2022). Critical for analyzing NYT''s comparative
+    framing of Meta vs TikTok — does she apply the same critical scrutiny to both platforms? Her TikTok beat specialization
+    since ~2022 means she covers Meta''s primary competitor in short-form video.'
+  source_urls:
+  - https://en.wikipedia.org/wiki/Sapna_Maheshwari
+  - https://nytco.com/press/a-new-role-for-sapna-maheshwari/
+  - https://talkingbiznews.com/they-re-hiring/buzzfeeds-maheshwari-to-join-ny-times-biz-desk/
+  - https://talkingbiznews.com/they-re-hiring/how-a-business-journalist-can-improve-in-social-media/
+  - https://talkingbiznews.com/they-re-hiring/maheshwari-named-to-sabew-board/
+  - https://salute.community/speakers/sapna-maheshwari
+  education:
+    institution: UNC-Chapel Hill
+    degree: Business Journalism
+    notes: Graduate of UNC-Chapel Hill business journalism program
 - career:
   - beat: consumer advocacy, consumer rights
     end: 2015-12
@@ -13446,10 +13493,8 @@ journalists:
   - ecommerce
   education:
     institution: Northwestern University
-    school: Medill School of Journalism
-    degree: BSJ
-    graduation: 2008
-    source_url: https://magazine.medill.northwestern.edu/emily-glazer-bsj10-and-deepa-seetharaman-bsj08/
+    degree: BA
+    notes: Bachelor's degree from Northwestern University
   awards:
   - name: George Polk Award
     year: 2021
@@ -13467,26 +13512,51 @@ journalists:
   career:
   - publication: reuters
     role: reporter
-    start: 2008-01
+    start: '2008'
     end: 2015-02
-    notes: Started at Reuters covering US auto industry and labor unions from Detroit. Later covered e-commerce (Amazon, eBay)
-      from San Francisco. Gerald Loeb finalist 2012 for UAW coverage.
-    source_url: https://talkingbiznews.com/they-talk-biz-news/wsjs-facebook-reporter-moving-to-enterprise-beat/
+    beat: e-commerce, auto industry, labor
+    event_type: hired
+    notes: Reuters reporter covering e-commerce (Amazon, eBay) from San Francisco bureau, and US auto industry and labor unions
+      from Detroit bureau. Gerald Loeb Award finalist (2012) for reporting on United Auto Workers union financial woes. Northwestern
+      University BA.
+    source_url: https://talkingbiznews.com/they-re-hiring/wsjs-facebook-reporter-moving-to-enterprise-beat/
   - publication: wall-street-journal
     role: technology_reporter
     start: 2015-03
     end: 2025-05
-    notes: Joined March 2015. Facebook/Meta beat reporter (~2015-2019), then enterprise social media beat (~2019), then AI
-      reporter (~2022-2025). Co-broke Facebook Files series with Jeff Horwitz (2021 George Polk Award). Covered Instagram
-      teen effects, AI content moderation failures, antitrust, Silicon Valley executive profiles. Decade at WSJ.
-    source_url: https://talkingbiznews.com/they-talk-biz-news/wsj-tech-reporter-seetharaman-departing/
-    migration_type: outbound
+    beat: Facebook/Meta → social media enterprise → AI
+    event_type: hired
+    notes: 'Decade at WSJ (10 years). Multiple beats: (1) Facebook/LinkedIn tech companies from global tech bureau. (2) Enterprise
+      reporting beat focused on social media (~2018, after parental leave). (3) AI coverage from SF tech bureau (later years).
+      KEY COVERAGE: Instagram''s effect on teen girls, AI systems'' racist/hateful content, antitrust issues, Silicon Valley
+      executive profiles. Named WSJ''s primary Facebook beat reporter. Worked with Kirsten Grind on Facebook internal documents.
+      Won George Polk Award for Business Reporting and Gerald Loeb Award in Beat Reporting (2 of journalism''s most prestigious
+      honors). Departure announced May 2025 after a decade. Critical for MediaScope: as WSJ''s primary Meta/Facebook beat
+      reporter for years, her framing of Meta provides cross-publication comparison point against NYT (Sheera Frenkel, Mike
+      Isaac) and Wired coverage of the same company.'
+    source_url: https://talkingbiznews.com/they-re-hiring/wsj-tech-reporter-seetharaman-departing/
   - publication: reuters
     role: tech_correspondent
     start: 2025-06
-    notes: Rejoined Reuters as Tech Correspondent. Covers AI and OpenAI from San Francisco. 2025 Business Journalist in Residence
-      at Wisconsin School of Business.
-    source_url: https://newerest.space/reuters-hires-seetharaman-to-cover-artificial-intelligence/
+    beat: AI, tech companies
+    event_type: hired
+    notes: 'Returned to Reuters to cover AI. Covers OpenAI, Anthropic, Meta, major AI companies. High-profile scoops include
+      Anthropic revenue projections. Wisconsin School of Business 2025 Business Journalist in Residence. Syndicated via UOL,
+      Valor Econômico, Business Insider, ETTelecom, Fox News, HuffPost, MSN, Reuters Japan. Bluesky: deepa.bsky.social. Contact:
+      deepa.seetharaman@tr.com, @dseetharaman.23 on Signal.'
+    source_url: https://muckrack.com/deepa-seetharaman
+  notes: 'Key migration: Reuters (2008) → WSJ (2015, 10-year tenure) → Reuters (2025, return). Northwestern University BA.
+    Former WSJ primary Facebook/Meta beat reporter — her decade at WSJ covering Meta makes her one of the most experienced
+    Meta-focused reporters across any publication. Won George Polk Award for Business Reporting and Gerald Loeb Award in Beat
+    Reporting. Gerald Loeb finalist 2012 (UAW). Wisconsin School of Business 2025 BJIR. Boomerang return to Reuters in 2025
+    is a notable migration: WSJ → Reuters is a Murdoch-orbit → Thomson Reuters shift. WSJ is outside the 6 tracked publications
+    but provides critical cross-comparison for Meta coverage framing. Her return to Reuters covering AI (OpenAI, Anthropic,
+    Meta) means she now shapes wire-service framing that feeds into all tracked publications'' coverage.'
+  source_urls:
+  - https://talkingbiznews.com/they-re-hiring/wsj-tech-reporter-seetharaman-departing/
+  - https://talkingbiznews.com/they-re-hiring/wsjs-facebook-reporter-moving-to-enterprise-beat/
+  - https://muckrack.com/deepa-seetharaman
+  - https://business.wisc.edu/news/wisconsin-school-of-business-hosts-award-winning-journalist-deepa-seetharaman/
 - name: Betsy Reed
   multi_publication: true
   career:
