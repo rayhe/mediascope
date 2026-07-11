@@ -439,7 +439,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **2214 tests** across 97 test files, each covering a different analytical capability:
+MediaScope has **2222 tests** across 98 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -500,6 +500,7 @@ MediaScope has **2214 tests** across 97 test files, each covering a different an
 | `test_mittr_anthropic_feud.py` | 25 | MIT TR "Three things to watch amid Anthropic's feud" article deep dive: entity detection (Fable, Mythos, Zhipu, Chinese AI cluster), scare quotes (doomers, exporting, wake-up call), speculative rhetorical questions (is it possible...?), cliffhanger questions (What will X bring?), loaded language (drastic, superficial), cross-domain precedent analogy (nuclear nonproliferation), speculative framing threshold, sovereignty framing, pattern unit tests |
 | `test_mittr_meta_hack_ai_security.py` | 20 | MIT TR "The Meta hack shows there's more to AI security than Mythos" deep dive: Bo Li/Dawn Song/Sanmi Koyejo as Academic/Research (not Meta), university affiliation entity detection (Duke, Wisconsin, Illinois), case-sensitive Nature entity guard, education topic analogy-context suppression ("like an elementary school student"), AI agent security topic classification, composite sentiment on measured-critical security reporting |
 | `test_government_oversight_topic.py` | 15 | government_oversight topic bucket (national security, export controls, AI regulation, military AI, beats product_launch on regulation articles, MIT TR Anthropic feud article), group_expert source detection (cybersecurity experts open letter, AI researchers joint statement, petition signed by experts, not anonymous) |
+| `test_guardian_cohere_correction.py` | 8 | Guardian Cohere lawsuit correction: `triple_path_ai_strategy` replacing incorrect `strategic_licensing_over_litigation`, case *Advance Local Media v. Cohere Inc.* (SDNY 1:25-cv-01305), MTD denied 2025-11-13, 14 co-plaintiffs, legal counsel, analytical note corrections (NYT not sole enforcer), cross-reference to NYT v OpenAI sanctions motion |
 | `test_grudging_concession.py` | 10 | Grudging concession framing device (#95): positive action editorially minimized via "finally," "only after backlash," "it's about time" — framing legitimate progress as reluctant, forced, or insufficient; discovered from Gizmodo LED tamper article (Jul 8, 2026); negative guards for neutral reporting |
 | `test_ultimatum_framing.py` | 25 | Ultimatum framing device (#96): multi-stage regulatory/legal proceeding compressed into binary "do X or face Y" construction; em-dash-or, must-or-face, comply-or, deadline, either-or variants; discovered from NY Post EU DSA headline (Jul 10, 2026); cross-publication comparison (Reuters softer variant, CNN/WSJ non-matches); 6 negative guards |
 | `test_confession_framing.py` | 31 | Confession framing (#33): "admitted," "conceded," "finally acknowledged," "was forced to admit" reframing corporate statements as confessions. Cross-publication patterns (Guardian, NYT, Atlantic, MIT TR). False-positive exclusion for legal/judicial confessions, direct-quote self-description. Attribution asymmetry detection. |

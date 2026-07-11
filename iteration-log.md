@@ -2,6 +2,20 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-11 03:00 PT — Type C: Ownership & Funding Deep Dive (Guardian Cohere correction)
+
+**Major factual correction:** Guardian was incorrectly classified as `strategic_licensing_over_litigation`. Research confirmed Guardian News & Media Limited is a **named plaintiff** in *Advance Local Media v. Cohere Inc.* (SDNY 1:25-cv-01305, Judge McMahon, MTD denied 2025-11-13). Reclassified to `triple_path_ai_strategy` — Guardian uniquely pursues litigation + licensing + standards-setting simultaneously.
+
+**Profile edits (guardian.yaml, ~+148 net lines):**
+- Cohere lawsuit section with case number, judge, MTD denial date, 14 co-plaintiffs, legal counsel, key allegations, 6 source URLs
+- Observer/Tortoise exact transfer date (Apr 22, 2025), deal announcement (Dec 6, 2024), Richard Furness GMG→Tortoise co-CEO personnel migration, editorial appointments (Lucy Rock, Basia Cummings, Jessica Winch)
+- Brittin BBC update: BBC-Channel 4 partnership proposal at 6-week mark, "subscale" characterization
+- Analytical notes corrected: fixed claim "only NYT chose enforcement" → Guardian, Condé Nast, Atlantic are all Cohere co-plaintiffs
+- NYT v OpenAI cross-reference: sanctions motion Jul 10, 2026 (MDL 3143) evidence destruction allegations
+
+**Tests:** 8 new in `test_guardian_cohere_correction.py`
+**Counts:** 2222 tests, 98 test files, Guardian profile ~2000+ lines
+
 ## 2026-07-11 02:00 PT — Type B: Journalist/Publication Research (MIT Tech Review depth)
 
 **New journalist added:**
