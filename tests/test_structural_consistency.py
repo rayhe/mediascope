@@ -2317,3 +2317,137 @@ class TestMITTechReviewPartnership:
         ]
         assert "commissioning_editor" in mit_roles, "Missing commissioning_editor stage"
         assert "executive_editor" in mit_roles, "Missing executive_editor promotion"
+
+
+
+class TestEntityReferenceConsistency:
+    """Guards: ENTITY_REFERENCE.md stays in sync with entities.py code.
+
+    ENTITY_REFERENCE.md is a quick-reference card for the entity detection
+    system, documenting all 81 clusters across 12 categorized parts.
+    These tests ensure the stated counts and cluster lists stay accurate
+    as the codebase evolves.
+
+    Added: 2026-07-11 04:00 PT, Type D iteration.
+    """
+
+    def test_entity_reference_exists(self):
+        """ENTITY_REFERENCE.md must exist in docs/."""
+        path = _REPO_ROOT / "docs" / "ENTITY_REFERENCE.md"
+        assert path.exists(), (
+            "docs/ENTITY_REFERENCE.md does not exist. "
+            "Create it with the entity detection quick-reference card."
+        )
+
+    def test_entity_reference_cluster_count_header(self):
+        """ENTITY_REFERENCE.md header cluster count must match code."""
+        from mediascope.analyze.entities import DEFAULT_ENTITY_CLUSTERS
+
+        doc = (_REPO_ROOT / "docs" / "ENTITY_REFERENCE.md").read_text()
+        code_count = len(DEFAULT_ENTITY_CLUSTERS)
+        # Match "all 81 entity clusters" in the header
+        match = re.search(r"all (\d+) entity clusters", doc)
+        assert match, (
+            "ENTITY_REFERENCE.md should contain 'all N entity clusters' "
+            "in its header line."
+        )
+        stated = int(match.group(1))
+        assert stated == code_count, (
+            f"ENTITY_REFERENCE.md header says {stated} entity clusters but "
+            f"code has {code_count}. Update the header."
+        )
+
+    def test_entity_reference_alias_count_header(self):
+        """ENTITY_REFERENCE.md header alias count must match code."""
+        from mediascope.analyze.entities import DEFAULT_ENTITY_CLUSTERS, _normalize_cluster
+
+        doc = (_REPO_ROOT / "docs" / "ENTITY_REFERENCE.md").read_text()
+        total_aliases = sum(
+            len(_normalize_cluster(entry).get("aliases", []))
+            for entry in DEFAULT_ENTITY_CLUSTERS.values()
+        )
+        # Match "(804 aliases)" in the header
+        match = re.search(r"\((\d+) aliases\)", doc)
+        assert match, (
+            "ENTITY_REFERENCE.md should contain '(N aliases)' "
+            "in its header line."
+        )
+        stated = int(match.group(1))
+        assert stated == total_aliases, (
+            f"ENTITY_REFERENCE.md header says {stated} aliases but "
+            f"code has {total_aliases}. Update the header."
+        )
+
+    def test_entity_reference_cluster_completeness(self):
+        """Every cluster in code must appear in ENTITY_REFERENCE.md tables."""
+        from mediascope.analyze.entities import DEFAULT_ENTITY_CLUSTERS
+
+        doc = (_REPO_ROOT / "docs" / "ENTITY_REFERENCE.md").read_text()
+        missing = []
+        for cluster_name in DEFAULT_ENTITY_CLUSTERS:
+            # Clusters appear as "| ... **ClusterName** ..." in tables
+            if f"**{cluster_name}**" not in doc:
+                missing.append(cluster_name)
+        assert not missing, (
+            f"ENTITY_REFERENCE.md is missing {len(missing)} cluster(s) "
+            f"that exist in code: {missing}. Add them to the tables."
+        )
+
+    def test_entity_reference_no_phantom_clusters(self):
+        """ENTITY_REFERENCE.md should not reference clusters that don't exist in code."""
+        from mediascope.analyze.entities import DEFAULT_ENTITY_CLUSTERS
+
+        doc = (_REPO_ROOT / "docs" / "ENTITY_REFERENCE.md").read_text()
+        # Extract cluster names from data rows: "| N | **Name** | ..."
+        # The leading digit distinguishes data rows from header rows and
+        # non-cluster bold text in the Core Concepts table.
+        table_clusters = re.findall(r"\| \d+ \| \*\*([^*]+)\*\* \|", doc)
+        code_clusters = set(DEFAULT_ENTITY_CLUSTERS.keys())
+        phantoms = [c for c in table_clusters if c not in code_clusters]
+        assert not phantoms, (
+            f"ENTITY_REFERENCE.md references {len(phantoms)} cluster(s) "
+            f"not in code: {phantoms}. Remove them or add to entities.py."
+        )
+
+    def test_entity_reference_custom_regex_count(self):
+        """ENTITY_REFERENCE.md custom regex count must match code."""
+        from mediascope.analyze.entities import DEFAULT_ENTITY_CLUSTERS, _normalize_cluster
+
+        doc = (_REPO_ROOT / "docs" / "ENTITY_REFERENCE.md").read_text()
+        custom_count = sum(
+            1 for entry in DEFAULT_ENTITY_CLUSTERS.values()
+            if _normalize_cluster(entry).get("regex")
+        )
+        auto_count = len(DEFAULT_ENTITY_CLUSTERS) - custom_count
+        # Match "60 of 81 clusters" for custom regex
+        match = re.search(r"(\d+) of \d+ clusters\).*custom", doc)
+        if match:
+            stated_custom = int(match.group(1))
+            assert stated_custom == custom_count, (
+                f"ENTITY_REFERENCE.md says {stated_custom} custom regex clusters but "
+                f"code has {custom_count}. Update the Core Concepts table."
+            )
+        # Match "21 of 81 clusters" for auto regex
+        match2 = re.search(r"(\d+) of \d+ clusters\).*auto", doc)
+        if match2:
+            stated_auto = int(match2.group(1))
+            assert stated_auto == auto_count, (
+                f"ENTITY_REFERENCE.md says {stated_auto} auto regex clusters but "
+                f"code has {auto_count}. Update the Core Concepts table."
+            )
+
+    def test_entity_reference_in_readme(self):
+        """README.md must reference ENTITY_REFERENCE.md."""
+        doc = (_REPO_ROOT / "README.md").read_text()
+        assert "ENTITY_REFERENCE.md" in doc, (
+            "README.md should reference docs/ENTITY_REFERENCE.md. "
+            "Add it to the documentation table."
+        )
+
+    def test_entity_reference_in_architecture(self):
+        """ARCHITECTURE.md must reference ENTITY_REFERENCE.md."""
+        doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
+        assert "ENTITY_REFERENCE.md" in doc, (
+            "ARCHITECTURE.md should reference ENTITY_REFERENCE.md. "
+            "Add it to the file tree and entity detection section."
+        )
