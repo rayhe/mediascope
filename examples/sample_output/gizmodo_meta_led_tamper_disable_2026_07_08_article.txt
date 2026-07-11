@@ -1,0 +1,24 @@
+# Destroying the Privacy LED on Meta Smart Glasses Will No Longer Enable Creepiness
+
+**Source:** Gizmodo
+**URL:** https://gizmodo.com/destroying-the-privacy-led-on-meta-smart-glasses-will-no-longer-enable-creepiness-2000782720
+**Date:** July 8, 2026
+**Author:** (not attributed in fetched text — byline not visible)
+
+---
+
+Messing with the LED on your Meta smart glasses may soon no longer get you the creepy result you're hoping for.
+
+If you are someone who enjoys smart glasses, you are going around the world wearing what 90s TV news shows used to call a "spy camera"—a tool used by investigative reporters hoping to expose corruption and scams. But in all likelihood, all you're exposing with your smart glasses are strangers minding their own business, which is why there's an LED light that comes on when you record video or take a photo. *Ah, but what if you tamper with the LED*?
+
+In a statement to Gizmodo last year, a Meta representative said that if you cover your LED, "you'll be notified to clear it," and that the company has "made tangible improvements to bystander privacy with a larger and more noticeable LED and innovations such as tamper detection."
+
+But in terms of tamper detection, the main thing Meta had come up with was a light sensor to fix the famous tape-on-the-LED trick, and it wasn't all that effective if the user was determined to find a workaround.
+
+But that was just the beginning. Last month, tech reporter Joanna Stern found a cottage industry of people who perform surgery on Meta smart glasses to make them fully LED-free, and ready for covert spying.
+
+So, as noticed by the Verge's Victoria Song on Tuesday, Meta is now actually rolling out what it purports to be tamper-proofing for the privacy LED on its smart glasses above and beyond the light sensor safeguard. This is now spelled out on the smart glasses FAQ at FB.com:
+
+> Since the introduction of this safeguard, we've seen some people go beyond using tape to sophisticated efforts to modify or destroy the capture LED. We are continuously improving our ability to detect tampering, and now we're updating the glasses to disable the camera if they detect the LED was physically tampered with or destroyed. No other kind of camera has done this and we're proud to lead the industry forward.
+
+This effort comes amid a growing public backlash to smart glasses. On Tuesday, New York State banned smart glasses in all courtrooms.

@@ -18770,3 +18770,100 @@ Sardonic editorial on Meta's Muse Spark 1.1 launch. Zuckerberg's "people's champ
 - Editorial genres: **8**
 - Topic buckets: **29**
 - Structural consistency tests: **98**
+
+---
+
+## 2026-07-10 17:00 PDT — Type A: Article Deep Dive
+
+**Article:** Gizmodo — "If You Have a Public Instagram Account, You Might Be Surprised at What AI Users Can Now Do With Your Face" (Jul 8, 2026)
+**Commit:** `ea281b1`
+
+### Focus
+Sardonic first-person test-drive of Meta's Muse Image AI generator, covering default opt-in of public Instagram accounts for AI image generation. Article uses understatement sarcasm and escalating hedged concern rather than explicit negative vocabulary.
+
+### Changes
+
+**framing.py:**
+- `escalation_amplification`: +1 pattern — comparative-adverb concern ("more worryingly", "even more worryingly")
+- `editorial_aside`: +3 patterns — sardonic hedge ("So I guess from a certain standpoint"), reader correction ("but you would be wrong"), memory erasure aside ("In case you blocked out this memory")
+- `cross_publication_import`: +1 pattern — "As noted/reported by [publication]"
+
+**sentiment.py:**
+- EMOTIONAL_LANGUAGE: +8 terms (worryingly, worrying, sexualized, sexualised, unsurprisingly, presumably, long overdue, slop generator)
+
+**examples/sample_output/:**
+- Added article text + analysis for 149th annotated article
+
+### Impact
+- Framing devices on this article: 4 → 8 (+100%)
+- Emotional intensity: 0.208 → 0.492 (+137%)
+- VADER polarity inversion still unresolved: composite +0.60 for clearly skeptical article (same #1 accuracy problem as Gizmodo Muse Spark)
+
+### Test Results
+2,165 passed, 0 failed
+
+### Running Totals
+
+- Framing device types: **94** (10 core + 77 extended + 7 structural)
+- Regex patterns: **550**
+- Annotated articles: **149**
+- Distinct publications: **42**
+- Same-event clusters: **13** (5 Tier 1, 8 Tier 2)
+- Emotional language terms: **861**
+- Entity clusters: **81** (786+ aliases)
+- Journalists: **205** (630 auto-detected migrations)
+- Adversarial device types: **27**
+- Sentiment correction paths: **10** (A–J)
+- Source extraction patterns: **14**
+- Editorial genres: **8**
+- Topic buckets: **29**
+- Structural consistency tests: **98**
+
+---
+
+## 2026-07-10 18:00 PT — Type A: Article Deep Dive
+
+### Focus
+Gizmodo LED tamper article ("Destroying the Privacy LED on Meta Smart Glasses Will No Longer Enable Creepiness," Jul 8, 2026) — calibration companion to the Gizmodo super-sensing article (Jul 9). First same-outlet narrative contradiction analysis in the corpus.
+
+### New Framing Device
+- **#95: `grudging_concession`** — Positive action acknowledged but editorially minimized via "finally," "only after backlash," "it's about time." Framing legitimate progress as reluctant, forced, or insufficient. Category 13: Concession & Acknowledgment Framing. 6 regex patterns.
+
+### New Sample Output Files
+- `gizmodo_meta_led_tamper_disable_2026_07_08_article.txt`
+- `gizmodo_meta_led_tamper_disable_2026_07_08_analysis.md` (~14KB)
+- `cross_narrative_led_vs_supersensing_2026_07_08_09.md` (~9.5KB) — first same-outlet narrative contradiction analysis
+
+### Changes
+- `mediascope/analyze/framing.py`: Added 6 grudging_concession patterns
+- `mediascope/cli.py`: Updated device count 94→95
+- `docs/FRAMING_REFERENCE.md`: Added #95, updated total count
+- `docs/METHODOLOGY.md`: Added grudging_concession to §4 extended table, updated §17 article/publication counts, updated §17.7 discovery provenance
+- `docs/ARCHITECTURE.md`: Updated device/pattern counts, added test file entry, updated annotated article count
+- `docs/AGENT_GUIDE.md`: Updated tier counts
+- `docs/QUALITY_STANDARDS.md`: Updated annotated article count
+- `README.md`: Updated device/pattern/test counts, added test file entry
+- `tests/test_grudging_concession.py`: 10 tests (pattern matching, negative guards)
+- `tests/test_structural_consistency.py`: Updated EXPECTED_TOTAL_PATTERNS 550→556
+- `tests/test_foxbusiness_meta_1_4t_penalty.py`: Updated pattern-matched count 87→88
+- `tests/test_nyt_ai_reviews.py`: Updated pattern-matched count 87→88, added grudging_concession to expected set
+
+### Test Results
+2,175 passed, 0 failed
+
+### Running Totals
+
+- Framing device types: **95** (10 core + 78 extended + 7 structural)
+- Regex patterns: **556**
+- Annotated articles: **150**
+- Distinct publications: **42**
+- Same-event clusters: **13** (5 Tier 1, 8 Tier 2)
+- Emotional language terms: **861**
+- Entity clusters: **81** (786+ aliases)
+- Journalists: **205** (630 auto-detected migrations)
+- Adversarial device types: **27**
+- Sentiment correction paths: **10** (A–J)
+- Source extraction patterns: **14**
+- Editorial genres: **8**
+- Topic buckets: **29**
+- Structural consistency tests: **98**

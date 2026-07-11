@@ -7890,6 +7890,65 @@ _RECOVERY_NARRATIVE_PATTERNS = [
 ]
 _DEVICE_PATTERNS["recovery_narrative"] = _RECOVERY_NARRATIVE_PATTERNS
 
+# ---------------------------------------------------------------------------
+# grudging_concession (#95)
+#
+# Positive development framed through language that simultaneously
+# acknowledges the good news while maintaining a skeptical or negative
+# editorial posture.  The author concedes a genuine improvement but deploys
+# qualifiers, historical context, and credit displacement to ensure the
+# positive reads as reactive/insufficient.
+#
+# Distinct from editorial_deflation (ED punctures ambition; GC acknowledges
+# genuine improvement while dampening it), sarcastic_correction (SC mockingly
+# retracts; GC never retracts), and corporate_reassurance_undercut (CRU
+# directly contradicts reassurance; GC doesn't contradict the news).
+#
+# Discovered from Gizmodo "Destroying the Privacy LED on Meta Smart Glasses
+# Will No Longer Enable Creepiness" (Jul 8, 2026).
+# ---------------------------------------------------------------------------
+
+_GRUDGING_CONCESSION_PATTERNS = [
+    # "is now actually rolling out" — "actually" before positive action implies
+    # surprise that the entity is doing something good
+    re.compile(
+        r"\b(?:is|are|has|have)\s+(?:now\s+)?actually\s+"
+        r"(?:rolling|delivering|implementing|providing|offering|introducing|releasing)",
+        re.IGNORECASE,
+    ),
+    # "what it purports to be [positive noun]" — "purports" deflates claim
+    re.compile(
+        r"\bwhat\s+(?:it|they|the\s+company)\s+purports?\s+to\s+be\b",
+        re.IGNORECASE,
+    ),
+    # "finally [positive action]" after describing failures
+    re.compile(
+        r"\b(?:is|are)\s+finally\s+"
+        r"(?:addressing|fixing|rolling|delivering|implementing|acting|responding)",
+        re.IGNORECASE,
+    ),
+    # "it took [external pressure] to get [entity] to [positive action]"
+    re.compile(
+        r"\bit\s+took\s+.{5,60}\s+to\s+(?:get|force|push|compel)\s+",
+        re.IGNORECASE,
+    ),
+    # "only after [negative event]" preceding a positive action
+    re.compile(
+        r"\bonly\s+after\s+.{5,80}\s+(?:did|has|is)\s+\w+\s+"
+        r"(?:finally|actually|now)\b",
+        re.IGNORECASE,
+    ),
+    # "[entity] deserves credit, but" / "credit where it's due, but/however"
+    re.compile(
+        r"\b(?:credit\s+where\s+(?:it'?s|credit\s+is)\s+due|"
+        r"deserves?\s+(?:some\s+)?credit)"
+        r"(?:\s+\w+){0,8}\s*[,.]?\s*(?:but|however|yet|though|still)\b",
+        re.IGNORECASE,
+    ),
+]
+
+_DEVICE_PATTERNS["grudging_concession"] = _GRUDGING_CONCESSION_PATTERNS
+
 
 def detect_framing_devices(
     text: str,
@@ -7897,8 +7956,8 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 87 pattern-matched device types plus 7 structural
-    post-pass types (94 total).
+    Scans for 88 pattern-matched device types plus 7 structural
+    post-pass types (95 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
@@ -7934,7 +7993,8 @@ def detect_framing_devices(
     pathologizing_metaphor, policy_reversal, power_asymmetry,
     precedent_analogy, precedent_framing,
     prescriptive_solutionism,
-    pressure_language, recovery_narrative, refusal_amplification, regulatory_favoritism,
+    pressure_language, recovery_narrative, grudging_concession,
+    refusal_amplification, regulatory_favoritism,
     regulatory_shadow, repeated_disruption, rhetorical_question,
     sarcastic_correction, scandal_comparison, scale_magnitude,
     selective_omission_signal, strategic_disclosure,
