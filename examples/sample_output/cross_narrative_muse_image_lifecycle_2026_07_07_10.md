@@ -143,3 +143,57 @@ This 4-phase arc provides a complete narrative lifecycle for toolkit calibration
 ---
 
 *Extended from cross_pub_muse_image_5way_2026_07_07.md. Analysis: 2026-07-10 19:00 PT.*
+*Phase 5 added: 2026-07-11 01:00 PT.*
+
+---
+
+## Phase 5: Aftermath & Accountability (July 11)
+
+### New coverage: Fox Business
+Fox Business published the first **aftermath article** with original reporting: a direct interview with Neal K. Shah, an NIH-funded caregiving researcher whose likeness was used in AI-generated scam advertisements targeting elderly people with dementia supplement fraud.
+
+### Phase 5 framing profile
+| Attribute | Value |
+|-----------|-------|
+| Dominant framing | Outsourced intensity (victim testimony) + editorial cross-promotion |
+| Source balance | −0.55 (adversarial-weighted) |
+| New sources | SAG-AFTRA (institutional critic), Neal K. Shah (named victim-expert) |
+| Emotional language source | 100% outsourced to Shah quotes |
+| Editorial prose tone | Neutral-factual (no loaded language in editorial prose) |
+
+### Phase 5 significance
+The Muse Image lifecycle now has 5 documented phases:
+
+| Phase | Duration | Narrative Function |
+|-------|----------|--------------------|
+| 1. Launch | Day 0 | Product announcement |
+| 2. Backlash | Days 0–2 | Privacy critique escalation |
+| 3. Empirical test | Day 3 AM | Verification journalism |
+| 4. Retreat | Day 3 PM | Corporate damage control |
+| **5. Aftermath** | **Day 4** | **Victim testimony + narrative accumulation** |
+
+Phase 5 introduces the **accountability dimension**: coverage shifts from "what happened to the product" to "who was harmed by it." The Shah anecdote — elderly people scammed by AI-generated ads using his likeness — converts an abstract privacy debate into a concrete human harm story.
+
+### Editorial technique: Fox Business structural framing
+Fox Business uses a distinctive technique where:
+1. Body text maintains neutral-factual editorial prose
+2. All emotional language is outsourced to named, credible sources
+3. Structural elements (all-caps callout blocks) do the editorial work of narrative association
+
+Three editorial cross-promotion callouts were embedded:
+- `FOUR STATES SEEKING $1.4 TRILLION IN PENALTIES IN CHILD SOCIAL MEDIA ADDICTION TRIAL, META SAYS`
+- `JUDGE LETS STATES PURSUE CLAIMS THAT META DESIGNED FACEBOOK AND INSTAGRAM TO ADDICT CHILDREN`
+- `CLICK HERE TO GET FOX BUSINESS ON THE GO`
+
+The first two link unrelated legal/regulatory Meta stories to the Muse Image discontinuation, creating a **cumulative corporate recklessness narrative** through structural juxtaposition rather than editorial assertion.
+
+### Source evolution update (5 phases)
+| Phase | Corporate Voice | Independent/Critical | Expert/Institutional |
+|-------|----------------|---------------------|---------------------|
+| Launch | 100% | 0% | 0% |
+| Backlash | ~30% | ~50% | ~20% |
+| Empirical test | ~30% | 0% | ~70% |
+| Retreat | 100% | 0% | 0% |
+| **Aftermath** | **~40%** | **0%** | **~60% (SAG-AFTRA + Shah)** |
+
+The source profile now forms a **W-shape**: corporate-dominated at launch and retreat, with expert/institutional voices dominant in backlash, empirical test, and aftermath phases. Phase 5 reintroduces expert/institutional sources after the corporate-only retreat phase.

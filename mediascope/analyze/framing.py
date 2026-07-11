@@ -404,7 +404,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"tone-deaf|out of touch|nefarious|scandalous|"
         r"comically|laughably|absurdly|laughable|"
         r"dishonest|dishonesty|fundamentally\s+(?:dishonest|unethical|flawed|problematic)|"
-        r"deceptive|misleading|disingenuous|"
+        r"deceptive|misleading|disingenuous|misuse[sd]?|"
         r"exploit(?:ing|ed|s)?\s+(?:its|their|the|young|child|teen|minor|user|worker|consumer|employee|customer|people|citizen|student|immigrant|refugee)|\bexploitative\b|dubious|rancid|sordid|"
         # Polemical / invective nouns — nouns that characterize speech or
         # documents as extreme, aggressive, or unhinged.  "diatribe",
@@ -6075,6 +6075,23 @@ _POLICY_REVERSAL_PATTERNS: list[re.Pattern] = [
         r"\b(?:now|instead|has since|have since|will|reversed?)\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # "no longer available/offered/supported" — feature/product discontinuation
+    re.compile(
+        r"\b(?:it(?:'s| is| was)|(?:the )?(?:feature|tool|option|service|product)"
+        r"(?:'s| is| was)?)\s+"
+        r"(?:no longer|will no longer|would no longer)\s+"
+        r"(?:available|offered|supported|active|accessible|live|enabled)\b",
+        re.IGNORECASE,
+    ),
+    # corporate admission of failure: "missed the mark" / "fell short" /
+    # "didn't get it right" — controlled retreat language in PR statements
+    re.compile(
+        r"\b(?:missed the mark|fell short|didn'?t (?:get|do) (?:it |this )?"
+        r"right|failed to (?:meet|live up to)|heard the (?:feedback|concerns|criticism)"
+        r".{1,80}?(?:no longer|discontinued|shut(?:ting)? down|removed|"
+        r"pulling|pulled|paused|suspended))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
 ]
 
 _DEVICE_PATTERNS["policy_reversal"] = _POLICY_REVERSAL_PATTERNS
@@ -7216,8 +7233,11 @@ _DEVICE_PATTERNS["default_burden_privacy"] = _DEFAULT_BURDEN_PRIVACY_PATTERNS
 # ────────────────────────────────────────────────────────────────────────
 _EDITORIAL_CROSS_PROMO_PATTERNS: list[re.Pattern] = [
     # All-caps blocks of 5+ words in article body (editorial callouts)
+    # Extended to handle dollar signs, digits, commas, and periods
+    # which appear in financial callouts like "$1.4 TRILLION" and case
+    # references like "CHILD SOCIAL MEDIA ADDICTION TRIAL, META SAYS"
     re.compile(
-        r"(?:^|\n)\s*([A-Z][A-Z\s'''\-]{20,}[A-Z])\s*(?:\n|$)",
+        r"(?:^|\n)\s*([A-Z][A-Z0-9\s'''\-\$,\.]{20,}[A-Z])\s*(?:\n|$)",
         re.MULTILINE,
     ),
     # "CLICK HERE TO GET THE FOX BUSINESS APP" / "GET FOX BUSINESS ON THE GO"

@@ -2,6 +2,30 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-11 01:00 PT — Type A: Article Deep Dive (Fox Business Muse Image Shutdown)
+
+**Article:** Fox Business — "Meta shuts down AI tool after backlash over public Instagram accounts" (2026-07-11)
+
+**Analysis file:** `examples/sample_output/foxbusiness_meta_muse_image_shutdown_2026_07_11_analysis.md` (~11KB, 8-dimension tone scoring, 5 framing devices, entity extraction, cross-pub comparison with Reuters)
+
+**Article file:** `examples/sample_output/foxbusiness_meta_muse_image_shutdown_2026_07_11_article.txt`
+
+**Cross-narrative extension:** Phase 5 ("Aftermath & Accountability") appended to `examples/sample_output/cross_narrative_muse_image_lifecycle_2026_07_07_10.md`. Source evolution now shows W-shape pattern across 5 phases. Original victim testimony (Neal K. Shah) adds external source authority absent from Phase 4.
+
+**Toolkit improvements:**
+
+1. **Regex fix — `editorial_cross_promotion`** (framing.py ~L7218): Extended character class from `[A-Z\s'''\-]` to `[A-Z0-9\s'''\-\$,\.]` to handle dollar signs, digits, commas, and periods in all-caps interstitial callout blocks (e.g. "FOUR STATES SEEKING $1.4 TRILLION IN PENALTIES...").
+
+2. **New loaded language term — `misuse[sd]?`** (framing.py ~L408): Added to catch "misuse" / "misused" in editorial language.
+
+3. **New `policy_reversal` patterns** (framing.py, 2 patterns):
+   - "no longer available/offered/supported" — feature/product discontinuation language
+   - "missed the mark" / "fell short" / "didn't get it right" + discontinuation — corporate controlled-retreat admission language in PR statements
+
+4. **New test file:** `tests/test_foxbusiness_muse_image_shutdown.py` — 5 tests covering regex fix, policy_reversal controlled retreat, loaded_language "misuse", dollar-sign regression guard.
+
+**Counts:** 154 annotated articles, 564 patterns, 97 test files, 2,214 tests. 0 failures.
+
 ## 2026-07-11 00:00 PT — Type D: Toolkit Quality & Documentation (SOURCE_ANALYSIS_REFERENCE.md)
 
 **Focus:** Created a standalone quick-reference card for the source analysis pipeline — the toolkit's third pillar alongside framing devices and topic classification. Source analysis spans 2,818 lines of code (`sources.py`) and 4 methodology sections (§5–§8) but had no compact reference card, while framing (FRAMING_REFERENCE.md) and topics (TOPIC_REFERENCE.md) already did.

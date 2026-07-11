@@ -1,0 +1,41 @@
+SOURCE: Fox Business
+URL: https://foxbusiness.com/technology/meta-shuts-down-ai-tool-after-backlash-over-public-instagram-accounts
+DATE: 2026-07-11
+BYLINE: (not attributed)
+FETCH: 2026-07-11T01:00:00-0700
+
+Meta shuts down AI tool after backlash over public Instagram accounts
+
+Meta on Friday discontinued an artificial intelligence feature that allowed users to generate images by referencing public Instagram accounts, days after introducing the tool as part of a broader rollout of AI-powered creative features on Instagram.
+
+The company announced the decision in an update to its Instagram blog.
+
+"Earlier this week, we announced that one way for people to generate images in Meta AI is by @-mentioning public Instagram accounts that they want to reference," the company wrote. "Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way. We've heard the feedback that this feature missed the mark, so it's no longer available."
+
+FOUR STATES SEEKING $1.4 TRILLION IN PENALTIES IN CHILD SOCIAL MEDIA ADDICTION TRIAL, META SAYS
+
+The feature was announced Tuesday alongside more than 30 new AI-powered effects for Instagram Stories using Muse Image, the first image-generation model from Meta Superintelligence Labs. According to Instagram, the new effects allow users to transform photos with a single tap, while a redesigned editing composer lets users preview AI-generated edits before sharing them.
+
+As part of the rollout, Meta also introduced a feature allowing users to @-mention public Instagram accounts in Meta AI to generate creative images featuring those accounts, including personalized birthday cards, group trip memes and other edited images.
+
+"We want our community to have control over how their content is used for creation," Instagram said in Tuesday's announcement. The company said users who did not want their public Instagram content used through the AI feature could disable it through the app's Sharing and Reuse settings.
+
+JUDGE LETS STATES PURSUE CLAIMS THAT META DESIGNED FACEBOOK AND INSTAGRAM TO ADDICT CHILDREN
+
+SAG-AFTRA, which represents performers across film, television and other media, urged members Thursday to opt out of the feature, writing on social media, "Take action to protect your likeness."
+
+Neal K. Shah, an NIH-funded caregiving researcher and CEO of CareYaya, said he has already seen AI-generated ads misuse his likeness to promote supplements falsely claiming to help people with dementia.
+
+"I think the major alarm bells that went off for me was I saw fraud actually happening in real time," Shah told FOX Business. He said followers began messaging him after seeing advertisements that appeared to show him endorsing products he had never promoted.
+
+"All of these older people have been scammed, and my image has been used to scam them, and I can't do anything about it," Shah said, adding that he has spent hours responding to followers to warn them the advertisements were fake.
+
+Shah said he has since started warning viewers in his own videos not to trust advertisements that appear to show him promoting products and has spent hours responding to followers who asked whether the endorsements were real. He also said he repeatedly reported the advertisements to Meta but said they remained on the platform.
+
+Friday's update removes the ability to generate images by @-mentioning public Instagram accounts, while leaving the broader rollout of Instagram's new AI-powered creative tools in place.
+
+CLICK HERE TO GET FOX BUSINESS ON THE GO
+
+Meta has made artificial intelligence a central focus of its business, expanding AI-powered features across Facebook, Instagram, WhatsApp and Messenger while investing heavily in AI infrastructure and its Llama family of AI models.
+
+In response to a request for comment from FOX Business, Meta directed Fox Business to the updated Instagram blog post announcing the change.
