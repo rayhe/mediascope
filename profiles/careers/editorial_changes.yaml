@@ -464,8 +464,8 @@ editorial_changes:
     incoming: Blake Montgomery
     notes: 'TechScape newsletter authorship transferred from Alex Hern (founder, July 2021) to Blake Montgomery (US tech editor)
       after Hern''s departure. Montgomery''s TechScape bylines confirmed through July 2026 (covering AI/climate-goals tension,
-      Meta business diversification, X/Musk). Significant editorial shift: TechScape moved from UK-based tech specialist
-      (Hern''s economics→tech pipeline, nuanced regulatory analysis) to US-based adversarial editor (Montgomery''s Gawker-adjacent
+      Meta business diversification, X/Musk). Significant editorial shift: TechScape moved from UK-based tech specialist (Hern''s
+      economics→tech pipeline, nuanced regulatory analysis) to US-based adversarial editor (Montgomery''s Gawker-adjacent
       pipeline, confrontational framing). Tests whether newsletter tone is determined by author or institutional constraints.'
     outgoing: Alex Hern
     position: techscape_newsletter_author
@@ -619,6 +619,13 @@ editorial_changes:
       and corporate accountability stories. Announced Jan 7, 2026.'
     source_url: https://talkingbiznews.com/media-news/bloombergs-datoo-joins-guardian/
   mit-tech-review:
+  - date: 2016-01
+    position: executive_editor
+    incoming: Michael Reilly
+    outgoing: null
+    notes: Reilly joined from Timeline (EIC) / New Scientist. 6.5-year tenure. Two-time National Magazine Award finalist under
+      his editorial leadership. Pioneered MIT TR newsletter operation and award-winning podcast team.
+    source_url: https://talkingbiznews.com/media-news/protocol-hires-mit-techs-reilly-as-editorial-director/
   - date: 2017-10
     incoming: Elizabeth Bramson-Boudreau
     notes: Pontin listed as 'Former President, Publisher and CEO' on FY2018 990 ($515K). Bramson-Boudreau came from Atlantic
@@ -637,6 +644,19 @@ editorial_changes:
     outgoing: David Rotman (acting)
     position: eic
     source_url: https://www.technologyreview.com/2017/12/05/3720/a-letter-from-mit-technology-reviews-new-editor-in-chief/
+  - date: 2018-02
+    position: executive_editor
+    incoming: Megan McCarthy
+    outgoing: null
+    notes: McCarthy joined from Alley Interactive (editorial strategy). Previously at Wired, Reuters, Fortune. Reported to
+      EIC Lichfield. Brief ~1 year tenure. Wired → MIT TR is a tracked double-publication migration.
+    source_url: https://talkingbiznews.com/media-news/biz-journalist-mccarthy-named-executive-editor-of-mit-tech-review/
+  - date: '2019'
+    position: executive_editor_departure
+    incoming: null
+    outgoing: Megan McCarthy
+    notes: McCarthy left MIT TR for Reviewed.com (USA Today) as executive editor of growth. Brief tenure under Lichfield.
+    source_url: https://talkingbiznews.com/media-news/biz-journalist-mccarthy-hired-as-executive-editor-of-growth-for-reviewed-com/
   - date: 2020-01
     incoming: Will Douglas Heaven
     notes: Senior editor for AI — shapes entire AI editorial direction. PhD Computer Science (Imperial College London). Previously
@@ -667,22 +687,6 @@ editorial_changes:
     outgoing: null
     position: news_editor_promotion
     source_url: https://me.sh/Charlotte+Jee
-  - date: 2022-08
-    incoming: Niall Firth
-    notes: 'PROMOTION: Firth promoted from editorial director of digital to executive editor, newsroom. Oversees all online
-      journalism and manages entire reporting team. Previously chief news editor at New Scientist. Key editorial gatekeeper
-      — all MIT TR online reporting passes through his desk. Based in London, managing US and UK reporters.'
-    outgoing: null
-    position: executive_editor_newsroom
-    source_url: https://talkingbiznews.com/media-news/firth-named-executive-editor-newsroom-of-mit-tech-review/
-  - date: 2024-01
-    incoming: Caiwei Chen
-    notes: 'REPLACEMENT: Chen hired from Rest of World to cover China tech. Filled gap created by Zeyi Yang''s departure (or
-      preceded it — timing unclear). Columbia MA. 5+ years covering Chinese internet. Part of Chaoyang Trap newsletter. Part
-      of MIT TR + FT ''State of AI'' partnership (paired with FT''s John Thornhill on ''The US vs. China'').'
-    outgoing: null
-    position: china_tech_reporter
-    source_url: https://talkingbiznews.com/media-news/mit-tech-review-hires-chen-as-tech-reporter/
   - date: 2022-02
     incoming: Allison Arieff
     notes: 'NEW ROLE: Arieff hired as Editorial Director of Print. Career: Dwell EIC (co-founder, National Magazine Award)
@@ -704,6 +708,44 @@ editorial_changes:
     outgoing: null
     position: managing_editor
     source_url: https://theorg.com/org/mit-technology-review/org-chart/teresa-elsey
+  - date: 2022-07
+    position: executive_editor_departure
+    incoming: null
+    outgoing: Michael Reilly
+    notes: Reilly left for Protocol (editorial director). Protocol shut down November 2022. Reilly then went to The Markup
+      (managing editor) and Every (managing editor, current). 6.5-year MIT TR tenure was longest recent editorial leadership
+      after Lichfield.
+    source_url: https://talkingbiznews.com/media-news/protocol-hires-mit-techs-reilly-as-editorial-director/
+  - date: 2022-08
+    incoming: Niall Firth
+    notes: 'PROMOTION: Firth promoted from editorial director of digital to executive editor, newsroom. Oversees all online
+      journalism and manages entire reporting team. Previously chief news editor at New Scientist. Key editorial gatekeeper
+      — all MIT TR online reporting passes through his desk. Based in London, managing US and UK reporters.'
+    outgoing: null
+    position: executive_editor_newsroom
+    source_url: https://talkingbiznews.com/media-news/firth-named-executive-editor-newsroom-of-mit-tech-review/
+  - date: 2022-08
+    position: cybersecurity_senior_editor_departure
+    incoming: null
+    outgoing: Patrick Howell O'Neill
+    notes: O'Neill left MIT TR for MITRE Corporation (lead cyber operations analyst). 160+ posts over ~3.5 years. Returned
+      to journalism at Bloomberg News in 2025. Cybersecurity beat was not refilled — position eliminated.
+    source_url: https://talkingbiznews.com/media-news/oneill-who-covered-cybersecurity-departing-mit-tech-review/
+  - date: 2023-02
+    position: senior_editor_departure
+    incoming: null
+    outgoing: Abby Ohlheiser
+    notes: Ohlheiser left MIT TR to freelance. Covered internet culture and misinformation since March 2020. Later joined
+      Vox as senior tech writer. Previously at Washington Post (digital culture, 2014-2020) and Atlantic/The Wire.
+    source_url: https://talkingbiznews.com/media-news/senior-editor-ohlheiser-departing-mit-tech-review/
+  - date: 2024-01
+    incoming: Caiwei Chen
+    notes: 'REPLACEMENT: Chen hired from Rest of World to cover China tech. Filled gap created by Zeyi Yang''s departure (or
+      preceded it — timing unclear). Columbia MA. 5+ years covering Chinese internet. Part of Chaoyang Trap newsletter. Part
+      of MIT TR + FT ''State of AI'' partnership (paired with FT''s John Thornhill on ''The US vs. China'').'
+    outgoing: null
+    position: china_tech_reporter
+    source_url: https://talkingbiznews.com/media-news/mit-tech-review-hires-chen-as-tech-reporter/
   - date: 2025-01
     incoming: null
     notes: 'DEPARTURE: Zeyi Yang left MIT TR for Wired as senior writer (~Jan 2025). MIT TR author page uses past tense (''covered'').
@@ -1885,7 +1927,8 @@ editorial_changes:
     incoming: Jacob Kastrenakes
     outgoing: null
     publication: the-verge
-    notes: Jacob Kastrenakes promoted to Executive Editor after 10 years (intern 2014 → executive editor 2024). Reports to Nilay Patel.
+    notes: Jacob Kastrenakes promoted to Executive Editor after 10 years (intern 2014 → executive editor 2024). Reports to
+      Nilay Patel.
     source_url: https://pronthego.com/media/meet-the-media/jacob-kastrenakes
   - date: 2024-01-30
     position: senior_policy_reporter
@@ -1899,5 +1942,6 @@ editorial_changes:
     incoming: Sarah Jeong
     outgoing: null
     publication: the-verge
-    notes: Sarah Jeong rejoins The Verge as deputy features editor from NYT (opinion columnist). Notable double migration — originally left Verge for NYT editorial board in 2018.
+    notes: Sarah Jeong rejoins The Verge as deputy features editor from NYT (opinion columnist). Notable double migration
+      — originally left Verge for NYT editorial board in 2018.
     source_url: https://en.wikipedia.org/wiki/Sarah_Jeong

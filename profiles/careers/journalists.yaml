@@ -11798,3 +11798,233 @@ journalists:
   - https://talkingbiznews.com/they-talk-biz-news/wired-hires-features-editor-senior-writer/
   - https://talkingbiznews.com/media-news/titunik-returns-to-ny-times-biz-news-desk/
   - https://theorg.com/org/the-new-york-times/org-chart/vera-titunik
+- career:
+  - publication: wired
+    role: staff_writer
+    start: '2008'
+    end: '2009'
+    beat: startups, Silicon Valley
+  - publication: valleywag
+    role: writer
+    start: '2009'
+    end: '2010'
+    beat: tech gossip, Silicon Valley
+  - publication: techmeme
+    role: editor
+    start: '2010'
+    end: '2011'
+    beat: tech news aggregation
+    notes: First dedicated human editor at Techmeme. Founded Mediagazer (Techmeme spinoff for media industry news) in March 2010.
+  - publication: new-york-observer
+    role: news_editor
+    start: '2011'
+    end: '2012'
+    beat: general assignment
+  - publication: reuters
+    role: deputy_technology_editor
+    start: '2012'
+    end: '2013'
+    beat: technology
+    notes: Worked on Reuters Digital team editing tech stories and managing Reuters.com homepage.
+  - publication: fortune
+    role: deputy_managing_editor
+    start: 2013-11
+    end: '2015'
+    beat: technology, digital platforms
+    notes: Initially hired as Senior Editor for Fortune.com overseeing tech coverage. Promoted to deputy managing editor.
+  - publication: alley-interactive
+    role: head_of_editorial_strategy
+    start: '2016'
+    end: '2018'
+    beat: editorial strategy consulting
+    notes: Agency that builds digital platforms for publishers.
+  - publication: mit-tech-review
+    role: executive_editor
+    start: 2018-02
+    end: '2019'
+    beat: editorial operations
+    notes: Reported to EIC Gideon Lichfield. Hired to help establish MIT TR as "a powerhouse of journalistic creativity and innovation."
+  - publication: reviewed-usa-today
+    role: executive_editor_growth
+    start: '2019'
+    end: '2020'
+    beat: product reviews, consumer tech
+    notes: USA Today's product review website (Reviewed.com). Hired to expand into new and emerging categories.
+  - publication: the-messenger
+    role: breaking_news_editor
+    start: '2023'
+    end: '2024'
+    beat: breaking news, audience development
+    notes: Also held title "head of editorial audience." The Messenger shut down January 2024 after less than a year.
+  - publication: diageo
+    role: seo_manager
+    start: '2024'
+    end: '2025'
+    beat: non-editorial
+    notes: Left journalism for corporate SEO role at Diageo (spirits company). Non-editorial career break.
+  - publication: morning-brew
+    role: editor
+    start: 2026-05
+    end: present
+    beat: founders, startups, entrepreneurship
+    notes: 'Editor of Founder Brew, a new newsletter from Morning Brew. Hired May 2026.'
+  multi_publication: true
+  name: Megan McCarthy
+  notes: 'Exceptionally high DiD value: 10+ publication migrations spanning Wired, Reuters, Fortune, MIT TR, and The Messenger. Was the first human editor at Techmeme
+    and founding editor of Mediagazer — key aggregator positions for understanding tech media ecosystem gatekeeping. MIT TR tenure under Lichfield was brief (~1 year)
+    but critical executive role. Career oscillates between editorial leadership and non-editorial roles (Alley Interactive consulting, Diageo SEO), suggesting market
+    pressures on mid-career tech editors. Wired → MIT TR migration is a direct double-tracked-publication data point.'
+  source_urls:
+  - https://talkingbiznews.com/media-news/biz-journalist-mccarthy-named-executive-editor-of-mit-tech-review/
+  - https://talkingbiznews.com/media-news/mccarthy-hired-as-editor-of-founder-brew/
+  - https://talkingbiznews.com/media-news/biz-journalist-mccarthy-hired-as-executive-editor-of-growth-for-reviewed-com/
+  - https://talkingbiznews.com/media-news/reuters-hires-mccarthy-for-tech-team/
+- career:
+  - publication: daily-dot
+    role: staff_writer
+    start: '2013'
+    end: '2016'
+    beat: cybersecurity
+    notes: One of the best cybersecurity reporters at the outlet. Covered encrypted messaging, Dark Web, government surveillance.
+  - publication: cyberscoop
+    role: reporter
+    start: '2016'
+    end: '2019'
+    beat: cybersecurity, national security
+    notes: Covered public-private sector security intersection. Based in San Francisco office. Started a podcast on government surveillance of dissidents.
+  - publication: mit-tech-review
+    role: cybersecurity_senior_editor
+    start: '2019'
+    end: 2022-08
+    beat: cybersecurity, national security, election security
+    notes: '160+ posts. Covered nation-state attacks, election integrity, geopolitical cyber operations. Notable investigation: multi-country cybercrime investigation
+      undone by corruption and rivalry. Left August 2022.'
+  - publication: mitre
+    role: lead_cyber_operations_analyst
+    start: '2022'
+    end: '2025'
+    beat: non-editorial
+    notes: 'Left journalism for MITRE Corporation think tank. Lead Cyber Operations Analyst working on ATT&CK framework. 3-year industry detour provides practitioner
+      perspective.'
+  - publication: bloomberg-news
+    role: cybersecurity_reporter
+    start: '2025'
+    end: present
+    beat: cybersecurity
+    notes: 'Returned to journalism at Bloomberg News. Hired ~June 2025. MIT TR → industry → Bloomberg migration is analytically valuable: same beat, different editorial
+      culture, with industry detour providing grounding.'
+  multi_publication: true
+  name: Patrick Howell O'Neill
+  notes: 'Rare journalist→practitioner→journalist career arc. MIT TR cybersecurity senior editor (2019-2022) who left journalism for 3 years at MITRE as a lead
+    cyber operations analyst before returning to Bloomberg News (2025). DiD value: cybersecurity beat consistency across Daily Dot, CyberScoop, MIT TR, Bloomberg
+    enables tone/framing comparison with controlled subject matter. Industry detour at MITRE is a natural experiment for how practitioner experience affects subsequent
+    reporting. 160+ MIT TR posts provide substantial text corpus.'
+  source_urls:
+  - https://talkingbiznews.com/media-news/oneill-who-covered-cybersecurity-departing-mit-tech-review/
+  - https://talkingbiznews.com/media-news/bloomberg-hires-oneill-to-cover-cybersecurity/
+  - https://technologyreview.com/author/patrick-howell-oneill/
+  - https://securityconversations.com/episode/patrick-howell-oneill-cybersecurity-editor-mit-technology-review/
+  - https://cyberscoop.com/introducing-new-reporter-patrick-howell-oneill/
+- career:
+  - publication: slate
+    role: writer
+    start: 2011-09
+    end: 2013-05
+    beat: politics, culture
+    notes: Writer for The Slatest and feature contributor covering politics and culture.
+  - publication: atlantic
+    role: staff_writer
+    start: 2013-07
+    end: 2014-07
+    beat: breaking news, politics, religion
+    notes: Staff writer at The Wire (Atlantic Media subsidiary). Covered breaking news with focus on politics, religion, women's and LGBT issues.
+  - publication: washington-post
+    role: reporter
+    start: 2014-07
+    end: 2020-03
+    beat: digital culture, internet culture
+    notes: 'Started as general assignment/religion reporter, then moved to digital culture reporter in features department (Oct 2015-Mar 2020). Covered internet culture,
+      including influential TikTok adoption piece.'
+  - publication: mit-tech-review
+    role: senior_editor
+    start: 2020-03
+    end: 2023-02
+    beat: internet culture, misinformation
+    notes: 'Covered internet culture and misinformation. Notable stories: anti-abortion license plate surveillance, anti-vaxxer/YouTuber symbiosis, QAnon. Left to
+      freelance January 2023.'
+  - publication: freelance
+    role: freelancer
+    start: 2023-02
+    end: '2024'
+    beat: media, technology, digital culture
+  - publication: vox
+    role: senior_tech_writer
+    start: '2024'
+    end: present
+    beat: media, conservative politics, religion, technology
+    notes: Senior tech writer at Vox. Based in Baltimore. Pronouns they/them.
+  multi_publication: true
+  name: Abby Ohlheiser
+  notes: 'Strong DiD value: Washington Post → MIT TR → Vox triple migration on overlapping internet culture beat. Atlantic (The Wire) early career establishes another
+    tracked-publication data point. The WaPo → MIT TR transition (2020) is especially valuable because the beat stayed consistent (digital/internet culture) while the
+    editorial environment changed — from a legacy newspaper with institutional constraints to a tech-focused publication owned by MIT. Career spans both mainstream
+    (WaPo, Atlantic) and tech-specialist (MIT TR) editorial cultures. Education: Hampshire College BA, NYU MA Religious Studies + Journalism.'
+  source_urls:
+  - https://awohlheiser.com
+  - https://talkingbiznews.com/media-news/senior-editor-ohlheiser-departing-mit-tech-review/
+  - https://talkingbiznews.com/media-news/washington-post-reporter-ohlheiser-leaving-for-mit-tech-review/
+  - https://muckrack.com/abby-ohlheiser
+- career:
+  - publication: discovery-news
+    role: reporter
+    start: '2010'
+    end: '2013'
+    beat: science, technology
+  - publication: new-scientist
+    role: senior_technology_editor
+    start: '2013'
+    end: '2015'
+    beat: technology
+  - publication: timeline
+    role: editor_in_chief
+    start: '2015'
+    end: '2016'
+    beat: history, technology
+    notes: 'Also served as deputy editor. Timeline was a media startup combining historical context with current events.'
+  - publication: mit-tech-review
+    role: executive_editor
+    start: 2016-01
+    end: 2022-07
+    beat: editorial operations, newsletters, podcasts
+    notes: '6.5-year tenure spanning Lichfield era through Honan transition. Under his leadership, MIT TR was a two-time National Magazine Award finalist. Pioneered
+      the newsletter operation and established the award-winning podcasting team. Edited print and online features. Won Webbys, ABSW investigative prizes, NCNY awards,
+      ABA recognition.'
+  - publication: protocol
+    role: editorial_director
+    start: 2022-07
+    end: 2022-11
+    beat: technology policy
+    notes: 'Protocol was a tech policy news site launched by Politico parent company Axel Springer. Shut down November 2022, less than 5 months after Reilly joined.
+      EIC Tim Grieve departed when Reilly arrived.'
+  - publication: the-markup
+    role: managing_editor
+    start: '2023'
+    end: '2024'
+    beat: investigative tech journalism
+    notes: The Markup is a nonprofit investigative tech newsroom focused on how technology affects society. Founded by former ProPublica journalist Julia Angwin.
+  - publication: every
+    role: managing_editor
+    start: '2025'
+    end: present
+    beat: business, technology, entrepreneurship
+    notes: Every covers the future of business and technology. Newsletter-first publication model.
+  multi_publication: true
+  name: Michael Reilly
+  notes: 'High DiD value: 6.5-year MIT TR executive editor (Jan 2016-Jul 2022) is the longest recent editorial leadership tenure after Lichfield. Career spans
+    New Scientist, MIT TR, Protocol, The Markup, and Every — a trajectory through mid-tier tech publications that tracks the startup-era publication lifecycle
+    (Protocol shutting down 5 months after he joined). MIT TR → Protocol → Markup migration chain captures three very different editorial cultures (institutional
+    tech, political tech policy, nonprofit investigative). Discovery News origin adds science journalism baseline for DiD analysis.'
+  source_urls:
+  - https://talkingbiznews.com/media-news/protocol-hires-mit-techs-reilly-as-editorial-director/
+  - https://talkingbiznews.com/media-news/reilly-hired-as-me-for-every/
+  - https://technologyreview.com/author/michael-reilly/
