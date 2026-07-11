@@ -2,6 +2,83 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-10 23:00 PT — Type C: Ownership & Funding (SRMG Sovereign Deep Dive — PMC investor correction + PIF portfolio dynamics)
+
+**Focus:** CRITICAL CORRECTION of PMC's Saudi investor identity and comprehensive deep dive into the SRMG-PIF-PMC ownership chain, SRMG advertising partnership, and PIF's anti-Meta portfolio alignment.
+
+**Critical Correction:**
+The profile previously identified PMC's $200M+ Saudi investor as "PIF subsidiary MBC Group." This was INCORRECT. MBC Group is a separate Saudi broadcasting conglomerate. The actual investor is **Saudi Research and Media Group (SRMG)**, a publicly listed joint-stock company on Saudi Tadawul exchange (ticker 4210). Even PMC's own properties (Rolling Stone, Variety) misidentified the source until TheWrap (Sharon Waxman) investigated and forced disclosure in July 2019.
+
+**SRMG Ownership Chain (new):**
+PIF → Saudi National Bank (SNB, majority owner) → NCB Capital (asset management arm) → Al Ahli Capital Fund 13 (investment vehicle) → SRMG → PMC ($200M+ equity investment). State Media Monitor classifies SRMG as "Captured Public/State-Managed (CaPu)" — highest state influence category.
+
+**Key findings:**
+
+1. **SRMG governance ties to Saudi ruling elite:**
+   - Former head Prince Badr bin Abdullah (MBS confidante) became Saudi Arabia's first Culture Minister
+   - Current board member Ahmed bin Aqeel Al-Khatib is Saudi Arabia's sitting Minister of Tourism
+   - CEO since Oct 2020: Jomana Rashed Al-Rashid (first female CEO)
+   - Dennis Ross (Washington Institute): SRMG regarded as "arm of soft power" by regional experts
+
+2. **SRMG Media Solutions (SMS) advertising partnership with PMC (May 2025):**
+   - Strategic partnership enabling MENA advertisers to run programmatic campaigns across PMC's 40+ brands
+   - Key sectors: tourism, **government departments**, investment sectors, and **mega projects** — Saudi Vision 2030 priorities
+   - Includes "co-create custom content and campaigns with PMC's premium publishers, pending editorial approval"
+   - No publicly disclosed editorial guardrails (unlike Bloomberg's SRMG JV which has explicit termination rights)
+   - Creates SECOND revenue relationship beyond equity investment: Saudi government ad revenue → SRMG/SMS → PMC brands
+
+3. **PIF tech portfolio dynamics (Q2 2025 13F):**
+   - PIF **sold ALL Meta shares** (667,996 Class A, ~$380M+)
+   - Also exited: Shopify, PayPal, Alibaba, Nu Holdings, FedEx
+   - Shifted to: Arm Holdings (~400M share increase), ASML, Analog Devices, Apple (new), healthcare (UnitedHealth, Eli Lilly, Merck)
+   - Total US equity: $23.8B across 57 positions; AUM: $1.15T (4th-largest SWF globally)
+   - SIGNIFICANCE: PIF is financially aligned AGAINST Meta (divested) and WITH Meta's competitors (Apple, Arm/chip ecosystem)
+
+4. **SRMG financial deterioration:**
+   - Revenue: $996M (FY2023) → $712M (FY2025) → $740M (TTM Mar 2026) — 26% decline
+   - EBITDA: $227M → -$9.6M → $14M — near-collapse
+   - Net income: +$149M → -$98M → -$97M — sustained losses
+   - Enterprise value: $5.89B → $1.95B — 67% decline
+
+5. **Khashoggi non-divestiture:**
+   - Endeavor returned its $400M Saudi PIF investment after Khashoggi murder (Mar 2019)
+   - PMC did NOT return its $200M+ SRMG investment
+   - No public statement from PMC addressing the investment's sovereign implications
+
+6. **SRMG Ventures (corporate VC arm):**
+   - Invests seed-to-Series-B in digital media, generative AI, immersive entertainment
+   - Portfolio: Telfaz11, VUZ (VR social media), Anghami (Nasdaq-listed music streaming, with board seat), Qvest Group JV
+
+**Profile changes:**
+- Corrected PMC ownership section: replaced "MBC Group" with full SRMG identity and ownership chain (~80 lines added)
+- New revenue_relationship: SRMG Media Solutions advertising partnership (~45 lines)
+- New known_conflict: `saudi_sovereign_investment` (severity 5 — highest in toolkit, ~55 lines)
+- Updated README publication table entry for The Verge
+- Added 6 source URLs to PMC ownership section
+
+**Research sources:**
+- TheWrap (Sharon Waxman, Jul 2019): "Why Does Jay Penske's Media Company Have a $200 Million Saudi Stake 9 Months After Khashoggi's Murder?"
+- State Media Monitor (statemediamonitor.com): SRMG classification as CaPu
+- BroadcastPro ME (May 2025): SRMG Media Solutions × PMC partnership announcement
+- Sahm Capital (May 2025): SRMG Media Solutions × PMC press release
+- Campaign Middle East (Apr 2025): SRMG × Naif Alrajhi Investment partnership context
+- Gulf Business (Mar 2018): PIF/SRMG $200M+ investment with $25M MENA JV
+- PitchBook: SRMG financials (TTM Mar 2026)
+- Saudi Exchange (Tadawul): SRMG subsidiary list, share capital
+- Reuters (Aug 2025): PIF sold all Meta shares in Q2 2025
+- Markets Group: PIF US portfolio $23.8B analysis
+- YourStory: SRMG Ventures corporate VC arm
+
+**Profile metrics:**
+- Verge profile: 1,068 → **1,246 lines** (+178 lines)
+- Known conflicts: 7 → **8** (new severity-5 saudi_sovereign_investment)
+- Revenue relationships: 5 → **6** (new SRMG Media Solutions advertising partnership)
+- Total profiles: ~10,594 → **~12,177 lines** (includes prior uncommitted changes across other files)
+
+**Tests:** 98 structural consistency tests passed, 0 failed.
+
+**Commit:** `62b0bee` — pushed to GitHub
+
 ## 2026-07-10 21:00 PT — Type B: Journalist/Publication Research (MIT TR editorial depth — 4 new profiles)
 
 **Focus:** MIT Technology Review editorial staff gaps. Added 4 previously untracked journalists with exceptionally high DiD (difference-in-differences) migration value, plus 6 missing editorial change records.
