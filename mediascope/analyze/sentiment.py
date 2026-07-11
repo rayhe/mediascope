@@ -660,6 +660,20 @@ EMOTIONAL_LANGUAGE: list[str] = [
     # Sarcastic-register terms that signal editorial contempt
     "buds", "lumbering behemoth",
     "gormless", "randos",
+    # Consent/privacy violation emotional terms — needed for coverage of
+    # AI-generated imagery, non-consensual deepfakes, and opt-out/opt-in
+    # consent debates where editorial deploys bodily-autonomy and explosive-
+    # metaphor language that VADER treats as neutral.  Gap discovered during
+    # The Tab Muse Image backlash analysis (Jul 2026): 5 emotional terms
+    # detected vs 11 manual, missing disaster/landmine/detonate/harms/
+    # non-consensual cluster.
+    "disaster", "recipe of disaster", "recipe for disaster",
+    "landmine", "privacy landmine", "ticking time bomb",
+    "detonate", "detonating", "detonation",
+    "non-consensual", "nonconsensual", "without consent",
+    "harms", "harm", "harmful",
+    "raw material to be exploited", "raw material",
+    "criticism", "criticised", "criticized",
 ]
 
 # Passive/victim vs. active/powerful framing indicators

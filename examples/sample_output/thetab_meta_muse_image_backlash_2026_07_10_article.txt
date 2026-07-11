@@ -1,0 +1,31 @@
+Meta faces backlash after facilitating AI images of public profiles
+
+Meta is facing criticism over an update on Instagram that allows people to generate AI images of users with public profiles.
+
+The update includes Muse Image, a text-to-image tool available for public use, which can generate images based on a few lines of text.
+
+The feature can be accessed through the Meta AI app and web browser, as well as Whatsapp and in Instagram Stories for users based in the US.
+
+Meta says users with public profiles can opt out of their image being used, but Donald Campbell, advocacy director at tech justice non-profit Foxglove, said the update was an "obvious recipe of disaster."
+
+"We've already seen a catalogue of harms from non-consensual AI-altered images on social platforms just in the past year.
+
+"It is hard to see why Mark Zuckerberg thinks facilitating yet more of this creepy image manipulation is a good idea."
+
+The update has also faced criticism from Privacy International, which argued Muse Image is "the latest sign AI companies see people's images and data as raw material to be exploited".
+
+One user on X described the act of using AI to generate photos of people without their consent as "a privacy landmine waiting to detonate."
+
+Meta has created a dedicated setting that allows users to opt out of Muse Image even if they have a public account.
+
+Users can access this setting, which is separate from account privacy controls, by going to Instagram's settings menu, selecting "Sharing and Reuse" and switching off "Allow people to reuse your content on Instagram and with AI features at Meta" for posts and reels. This setting is only available for public accounts. Users with a private account will already have it switched off by default.
+
+While there are existing tools in the market which generate AI images from text, Meta's use of the this technology on the Instagram platform makes it new and very powerful.
+
+Meta released a blog post addressing the new announcement and said: "Advanced reasoning to understand complex prompts, seamlessly blending multiple photos into high-quality creations you can download and share anywhere."
+
+Meta claimed users will have presets and suggested prompts to choose from, which can "spark ideas," as well as have the ability to sketch edits directly onto images. While Muse Image is free to use for "everyday creation," Meta said that frequent users can access additional usage through one of its subscription plans.
+
+The company said Muse Image will soon be available to use on Facebook and Messenger, and through another tool that can be accessed and used by advertisers. Meta is reportedly developing a video-generation version.
+
+A spokesperson for Meta said: "We built Muse Image with strong controls and safety guardrails from day one. Private accounts and those belonging to users under 18 are automatically excluded and adult users with public accounts can opt out with just a couple clicks. We will take action against any content that violates our community standards."

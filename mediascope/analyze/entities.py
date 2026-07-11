@@ -998,6 +998,26 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         ],
         "regex": r"(?<!\w)(Visa(?!\s+(?:application|interview|status|waiver|holder|stamp|fee|office|policy|requirement|process|categor))|Mastercard|American Express|(?-i:Amex)|Goldman Sachs|JPMorgan(?:\s+Chase)?|JP Morgan|Morgan Stanley|Bank of America|BofA(?:\s+Securities)?|Citigroup|(?-i:Citi)(?=\s+(?:is|was|has|had|'s|,|group|bank))|Wells Fargo|PayPal|Stripe(?=\s+(?:is|was|has|had|'s|,|payment|process|partner|integration|Inc|announced|said|report))|Square(?=\s+(?:is|was|has|had|'s|,|payment|terminal|reader|Inc|announced|said))|Block Inc|Adyen|Worldpay|Fiserv|(?-i:FIS)(?=\s+(?:is|was|has|had|payment|process|Global))|Discover Financial|Capital One|(?-i:SWIFT)(?=\s+(?:network|payment|transfer|system|code|message))|Visa Direct|Mastercard Send|Bernstein|Deloitte|D\.A\.\s*Davidson|Needham|Jefferies|Wedbush|Piper\s+Sandler|Baird|Morningstar|Cowen|Melius\s+Research|New\s+Street(?:\s+Research)?|Evercore(?:\s+ISI)?|Oppenheimer|Raymond\s+James|KeyBanc(?:\s+Capital\s+Markets)?|Stifel|Wolfe\s+Research|MoffettNathanson|Loop\s+Capital|Rosenblatt(?:\s+Securities)?|Berkshire Hathaway|Warren Buffett|(?-i:Buffett)(?=\s+(?:is|was|has|had|'s|,|said|warned|portfolio|stake)))(?!\w)",
     },
+    # Privacy & digital rights advocacy organizations — needed to track
+    # non-Meta sources frequently cited in privacy/AI backlash coverage.
+    # Gap discovered during The Tab Muse Image analysis (Jul 2026):
+    # Foxglove and Privacy International appeared as sources but had no
+    # entity cluster, so entity distribution was 100% Meta-cluster.
+    "Privacy Advocacy": {
+        "aliases": [
+            "Foxglove", "Privacy International",
+            "Electronic Frontier Foundation", "EFF",
+            "Access Now", "Big Brother Watch",
+            "Open Rights Group", "ORG",
+            "Center for AI and Digital Policy", "CAIDP",
+            "noyb", "NOYB",
+            "Fight for the Future",
+            "Digital Rights Foundation",
+            "Ranking Digital Rights",
+            "AlgorithmWatch",
+        ],
+        "regex": r"(?<!\w)(Foxglove|Privacy International|Electronic Frontier Foundation|(?-i:EFF)(?=\s+(?:is|was|has|had|'s|,|said|argued|warned|filed|called|urged))|Access Now|Big Brother Watch|Open Rights Group|(?-i:ORG)(?=\s+(?:is|was|has|had|'s|,|said|argued))|Center for AI and Digital Policy|(?-i:CAIDP)|(?-i:noyb|NOYB)|Fight for the Future|Digital Rights Foundation|Ranking Digital Rights|AlgorithmWatch)(?!\w)",
+    },
 }
 
 

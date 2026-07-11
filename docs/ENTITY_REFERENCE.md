@@ -1,6 +1,6 @@
 # Entity Detection & Clustering Quick Reference
 
-> A compact lookup card for all 83 entity clusters (810 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
+> A compact lookup card for all 84 entity clusters (826 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
 
 ---
 
@@ -172,6 +172,7 @@ Cloud providers, AI startups, and infrastructure companies.
 | 59 | **Surveillance/Biometrics** | 8 | auto | Rank One Computing, Clearview AI, NEC, Cognitec, Idemia | |
 | 60 | **Data/Intelligence Industry** | 12 | auto | ShadowDragon, Babel Street, LexisNexis, Voyager Labs, Dataminr, Cellebrite, NSO Group, Pegasus | |
 | 61 | **Cybersecurity/Research** | 11 | auto | Brian Krebs, Troy Hunt, Bruce Schneier, Mudge, METR, CISA, NIST | |
+| 84 | **Privacy Advocacy** | 16 | auto | Foxglove, Privacy International, EFF, Access Now, Big Brother Watch, noyb, CAIDP | Jul 2026: The Tab Muse Image analysis |
 
 ---
 

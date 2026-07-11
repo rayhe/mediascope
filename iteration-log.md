@@ -19511,3 +19511,31 @@ Gizmodo LED tamper article ("Destroying the Privacy LED on Meta Smart Glasses Wi
 **Annotated article count:** 155 → 156. Analysis: `examples/sample_output/avclub_meta_muse_image_remix_2026_07_08_analysis.md`.
 
 **Tests:** 2,262 passed, 0 failed.
+
+### 2026-07-11 15:00 PT — Type A (Article Deep Dive)
+
+**Article:** The Tab, "Meta faces backlash after facilitating AI images of public profiles" (Jul 10, 2026)
+
+**Publication:** First Tab article in corpus. UK student digital publication, no known Condé Nast / Advance Publications ties — useful as baseline comparator for Muse Image coverage framing.
+
+**Core findings:**
+
+1. **Emotional language gap (consent/privacy cluster):** 5 of 16 manual emotional terms detected pre-fix. Missing: disaster, landmine, detonate, non-consensual, harms, criticism, raw material. All are consent-violation vocabulary common in AI-generated imagery backlash coverage.
+
+2. **Entity cluster gap (Privacy Advocacy):** Foxglove and Privacy International — the article's two named critical sources — had no entity cluster. Entity distribution showed 100% Meta-cluster, masking the adversarial source ecosystem.
+
+3. **Source extraction bugs (3 distinct failure modes):** (a) Mark Zuckerberg false positive — "Zuckerberg thinks" matched as a source inside Campbell's quote (no in-quote guard). (b) Privacy International "which argued" pattern not caught. (c) Anonymous X user "One user on X described" not caught. Source extraction accuracy: ~20% recall, ~50% precision on this article.
+
+**Fixes applied:**
+
+1. **Emotional language expansion (+20 terms):** Added consent/privacy violation cluster: `disaster`, `recipe of disaster`, `recipe for disaster`, `landmine`, `privacy landmine`, `ticking time bomb`, `detonate`, `detonating`, `detonation`, `non-consensual`, `nonconsensual`, `without consent`, `harms`, `harm`, `harmful`, `raw material to be exploited`, `raw material`, `criticism`, `criticised`, `criticized`. Total: 911 → 931 terms. Emotional intensity: 0.241 → 1.000 on test article.
+
+2. **New "Privacy Advocacy" entity cluster (+16 aliases):** Foxglove, Privacy International, EFF, Electronic Frontier Foundation, Access Now, Big Brother Watch, Open Rights Group, ORG, CAIDP, Center for AI and Digital Policy, noyb, NOYB, Fight for the Future, Digital Rights Foundation, Ranking Digital Rights, AlgorithmWatch. With auto-generated regex. Total clusters: 83 → 84, aliases: 810 → 826.
+
+3. **Source extraction bugs documented** (not fixed — complex parsing changes deferred): in-quote name+verb false positives, organizational "which argued" pattern, anonymous source "One user on X" pattern. Documented in analysis for future Type D iteration.
+
+**Doc updates:** METHODOLOGY.md (cluster count 83→84, alias count, publication count 43→44, annotated article count 156→157, cluster table + Privacy Advocacy row), ARCHITECTURE.md (cluster/alias count, annotated article count), QUALITY_STANDARDS.md (emotional term count 911→931, annotated article count), ENTITY_REFERENCE.md (cluster/alias count header, Privacy Advocacy row), README.md (cluster/alias/regex counts).
+
+**Annotated article count:** 156 → 157. Analysis: `examples/sample_output/thetab_meta_muse_image_backlash_2026_07_10_analysis.md`.
+
+**Tests:** 2,262 passed, 0 failed.

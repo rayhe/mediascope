@@ -1,0 +1,55 @@
+Title: The many controversies of Meta's AI glasses
+Publication: Fast Company
+Author: (staff/uncredited roundup)
+Date: July 10, 2026
+URL: https://www.fastcompany.com/91571430/the-many-controversies-of-metas-ai-glasses
+
+Meta says its AI glasses are an "assistant that understands the world from your perspective." Critics say they're "even more privacy invasive than you think." One thing both parties can agree upon, though, is that these smart glasses are a technology that has attracted all manner of controversy.
+
+Since the 2023 release of the Ray-Ban Meta, these smart lenses have divided people. Evangelists praise the ability to take photos and videos without having to dig out their phone, as well as the navigational assistance. Opponents point to the company's less than impressive track record with privacy and say the glasses opens a huge number of issues around tracking, consent, and facial recognition.
+
+The fight over Meta glasses isn't slowing down, with the most recent story seeing courts in New York state ban the technology to stop filming of legal proceedings. Here's a look at some of the biggest points of contention the company has faced.
+
+## Covert recording
+
+By far, the most controversial aspects of Meta glasses center on its embedded camera, which can be used to take pictures or video of others without permission. Given that some users leave the camera on all the time, The Electronic Frontier Foundation points out that the camera could capture someone entering their passcode or password into their phone, computer, or an ATM.
+
+The glasses have a small indicator light shows when the glasses are recording video footage, but there has been a robust black market for workarounds that disable this feature for quite some time. Meta responded on July 7, 2026, updating the product FAQ to say the glasses' camera will be disabled when users tamper with or destroy the recording LED. The company rolled out a mandatory update to enable that feature—and began removing ads, posts and Marketplace listings for services that offer workarounds to the LED light.
+
+In a statement, Meta spokesperson Dina El-Kassaby wrote that "The people who use [Meta Glasses] and those around them need to trust them. That's why we built privacy into our AI glasses from the ground up. For example, every pair has a capture LED that blinks when you take a photo or video that you can save or share, it can't be turned off, and if someone covers or damages the LED, the camera is disabled. We will keep strengthening our protections as our glasses become even more capable."
+
+## Private data. Human review.
+
+Meta found itself facing a class action lawsuit in March over reports that human workers review footage from Meta glasses, including content that includes nudity, people having sex, and using the toilet. That would seemingly run counter to the marketing Meta used, which included phrases like "designed for privacy, controlled by you."
+
+Meta's terms of service for its AI, which includes the Meta Glasses, does include a line that it preserves the right to review interactions with AIs and "may do so through automated or manual (i.e. human) review and through third-party vendors in some instances."
+
+## Facial recognition
+
+Just over a month ago, Meta was found to have quietly embedded face-recognition software into the Meta AI app, which is used in conjunction with the glasses. That came just two months after the company said it wouldn't roll out facial recognition without taking "a very thoughtful approach." The code has not yet been enabled by the company.
+
+The blowback from privacy advocates was intense. Meta CTO Andrew Bosworth, in a recent interview, said facial recognition would be used to identify people they know, not one that pulls data from a central database.
+
+As with the LED light, though, there are unofficial ways to enable facial recognition even if Meta decides to remove that code. In March, a cybersecurity specialist paired the glasses with a commercially available facial recognition platform and was able to identify people and pull personal details about them in real time.
+
+The EFF has warned that the idea of adding a facial recognition functionality to the glasses "is a monumentally bad idea that should be abandoned by Meta and any of its competitors considering a similar feature. But regardless of whether they launch this feature, it's a pretty clear indication of where Meta wants these sorts of devices to go."
+
+## Banned from courts
+
+As a result of privacy concerns over the embedded camera, New York state will begin banning Meta glasses (and all forms of smart glasses) from courtrooms starting July 20. It's hardly the first state to do so. Pennsylvania, Hawaii, and Wisconsin have banned them in some court systems, but New York new policy is the first to cover all courtrooms in an entire state.
+
+"The reason for this prohibition is to ensure that individuals cannot surreptitiously record court proceedings in violation of the New York State Civil Rights Law and applicable court rules," read an internal memo from the New York State Unified Court System.
+
+## Paywalling on-device features
+
+Earlier this month, Meta began restricting the Conversation Focus feature on its smart glasses, which boosts nearby voices in noisy environments. Previously, this was included with glasses, but now users only get three hours of that feature each month. Beyond that (and up to 15 hours) will cost $20 per month, part of the Meta One Premium program.
+
+That undercuts consumer expectations and is the latest example of tech companies attempting to monetize features that were once free. The backlash on social media sites, like Reddit, has been swift and furious.
+
+As of the end of last year, 12 states, including California, Florida, Illinois, Maryland, Massachusetts, Connecticut, Montana, New Hampshire, Pennsylvania, and Washington, require all parties involved in a conversation to consent to audio recording of private communications.
+
+Because Meta's glasses can capture audio passively, that raises legal questions about whether wearers are liable—and could end up with them facing criminal penalties, including potential jail time.
+
+Among the other questions: Do bystanders meaningfully consent to being recorded? And can businesses prohibit the devices?
+
+"The fact that many AI glasses lack obvious recording indicators—or have only tiny LED lights that are easily missed—compounds the risk," wrote Joseph J. Lazzarotti, an attorney at JacksonLewis. "AI-generated transcripts created without consent or even awareness raise a myriad of issues."
