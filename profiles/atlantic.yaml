@@ -122,21 +122,78 @@ ownership_chain:
         relationship: >
           Emerson Collective was a founding backer of io Products, the AI hardware startup
           co-founded by Jony Ive (former Apple design chief) and Sam Altman. Team included
-          former Apple designers Tang Tan and Evans Hankey. OpenAI acquired io Products for
+          former Apple designers Tang Yew Tan and Evans Hankey. OpenAI acquired io Products for
           $6.5 BILLION in 2025 — OpenAI's largest acquisition ever. Other backers: Thrive Capital,
           SV Angel, Sutter Hill Ventures. $5B in equity + $1.5B from prior 23% stake.
           EC's exact investment size undisclosed but exit likely worth hundreds of millions.
           Ive became head of design at OpenAI. First devices slated to debut 2026.
+
+          APPLE v. OPENAI LAWSUIT (Filed Jul 10-11, 2026, N.D. Cal.):
+          Apple sued OpenAI Foundation, OpenAI Group PBC, AND io Products as defendants — meaning
+          EC's PORTFOLIO COMPANY is a named defendant in a trade secret theft lawsuit brought by
+          the company where LPJ holds ~$17B+ in stock. This is a FIVE-WAY conflict unprecedented
+          in the tracked publication set:
+
+          (1) LPJ holds ~$17.06B+ in Apple stock (AAPL $315.32, Jul 10 close) — PLAINTIFF
+          (2) EC backed io Products — DEFENDANT
+          (3) Atlantic has licensing deal with OpenAI — PRIMARY DEFENDANT
+          (4) EC profited from io Products' $6.5B acquisition by OpenAI — EXIT from DEFENDANT
+          (5) Atlantic co-develops products with OpenAI via Atlantic Labs — COLLABORATOR with DEFENDANT
+
+          KEY ALLEGATIONS INVOLVING io Products:
+          - Tang Yew Tan (24-year Apple veteran, former VP iPhone/Apple Watch design) left Apple
+            to CO-FOUND io Products alongside Ive — the same startup EC backed. Tan is now OpenAI's
+            Chief Hardware Officer. Apple alleges Tan emailed himself supplier info, used Apple
+            codenames in interviews, directed "show and tell" sessions with stolen Apple parts.
+          - io Products is accused of participating in misconduct at an "institutional level"
+          - Apple: "This is the tip of the iceberg. Apple lacks visibility into what's been
+            happening behind closed doors at OpenAI, where such misconduct is normalized and
+            exemplified by leadership"
+          - Chang Liu (ex-Apple engineer → OpenAI Jan 2026): unreturned laptop, exploited auth
+            bug to access Apple network, coached colleague Alyssa Peng on evasion
+          - 400+ former Apple employees now at OpenAI
+
+          APPLE-OPENAI RELATIONSHIP COLLAPSE:
+          - WSJ reports Apple's new Siri AI (announced WWDC Jun 2026) is powered by Google's
+            Gemini technology — NOT OpenAI's ChatGPT
+          - OpenAI was considering suing Apple for breach of contract re: Siri/ChatGPT promotion
+            (Bloomberg, May 2026) before Apple filed first
+          - NY Post: lawsuit "seems sure to end the high-profile partnership Apple and OpenAI
+            launched in 2024"
+          - Apple contacted OpenAI about trade secret concerns in Feb 2026 — received no reply
+
+          SIRI-GEMINI PIVOT SIGNIFICANCE FOR LPJ:
+          Apple pivoting from OpenAI to Google for Siri means LPJ's $17B+ Apple stake now
+          benefits from Google's AI success (Gemini) rather than OpenAI's. LPJ co-chairs the
+          Partnership for San Francisco alongside Ruth Porat (Alphabet/Google President). The
+          Google-Apple alignment STRENGTHENS LPJ's civic co-chair partner (Porat/Google) at the
+          expense of LPJ's business partner (OpenAI/Atlantic licensing). If the Apple-OpenAI
+          partnership fully collapses, OpenAI loses a major consumer distribution channel, which
+          could affect the Atlantic's licensing deal value (fewer users seeing Atlantic content
+          through ChatGPT on Apple devices).
+
+          EDITORIAL COVERAGE GAP: As of Jul 11, 2026, The Atlantic has published ZERO articles
+          about Apple v. OpenAI despite having the densest financial conflict of any publication
+          in the tracked set. NYT, CNN, Reuters, WSJ, Fox Business, MarketWatch, and USA Today
+          all covered the filing within hours.
         competitive_with: ["Meta", "Apple"]
         source_urls:
           - "https://pitchbook.com/news/articles/openai-jony-ive-io-products-acquisition"
           - "https://techcrunch.com/2025/04/07/openai-reportedly-mulls-buying-jony-ive-and-sam-altmans-ai-hardware-startup/"
           - "https://thehindubusinessline.com/openai-acquires-jony-ive-ai-device-io-6-5-billion/"
+          - "https://www.reuters.com/apple-openai-trade-secrets-lawsuit-2026-07-11/"
+          - "https://www.cnn.com/2026/07/11/tech/apple-openai-trade-secrets-lawsuit/"
+          - "https://www.wsj.com/apple-sues-openai-trade-secrets/"
         notes: >
           CRITICAL: This creates a DIRECT FINANCIAL EXIT for Emerson Collective from OpenAI,
           deepening the financial relationship far beyond the content licensing deal. EC profited
           directly from OpenAI's growth. Also puts OpenAI in direct competition with Apple
-          (where LPJ holds $17.2B+ stock) — an internal portfolio tension.
+          (where LPJ holds $17.06B+ stock) — an internal portfolio tension.
+
+          The Apple v. OpenAI lawsuit transforms this from a latent tension into an ACTIVE LEGAL
+          CONFLICT. EC is simultaneously financially aligned with BOTH sides of a federal lawsuit.
+          No other tracked publication owner has a portfolio company named as a defendant in a
+          lawsuit brought by their own largest stock holding.
       - entity: "Mistral AI"
         relationship: >
           Emerson Collective participated in Mistral's $415M Series A (Dec 2023) and/or
@@ -428,7 +485,7 @@ ownership_chain:
 revenue_relationships:
   - partner: "Apple"
     relationship_type: "indirect_financial"
-    estimated_value: "~$17.06B+ (stock holdings, AAPL at $313.57 Jul 10 2026)"
+    estimated_value: "~$17.06B+ (stock holdings, AAPL at $315.32 Jul 10 2026 close)"
     description: >
       Owner LPJ holds massive Apple stock. Apple competes with Meta in hardware (Vision Pro
       vs Quest), AI (Apple Intelligence vs Meta AI), and privacy positioning. Apple's 'privacy'
@@ -645,15 +702,46 @@ known_conflicts:
       (licensing revenue + capital gain) makes any Atlantic coverage of OpenAI structurally
       compromised.
     severity: 5
-    evidence: "PitchBook, TechCrunch, The Information, Bloomberg. io Products backers: Emerson Collective, Thrive Capital, SV Angel, Sutter Hill Ventures."
+    evidence: "PitchBook, TechCrunch, The Information, Bloomberg. io Products backers: Emerson Collective, Thrive Capital, SV Angel, Sutter Hill Ventures. Apple v. OpenAI (N.D. Cal., filed Jul 10-11, 2026): io Products named as defendant."
     source_urls:
       - "https://pitchbook.com/news/articles/openai-jony-ive-io-products-acquisition"
       - "https://techcrunch.com/2025/04/07/openai-reportedly-mulls-buying-jony-ive-and-sam-altmans-ai-hardware-startup/"
+      - "https://www.reuters.com/apple-openai-trade-secrets-lawsuit-2026-07-11/"
     notes: >
       Also creates Apple tension: LPJ holds $17.06B+ Apple stock, but io Products
       was explicitly designed to compete with Apple. Jony Ive's OpenAI device is
       positioned as the next iPhone. EC profits from both sides of the
-      Apple-vs-OpenAI hardware competition.
+      Apple-vs-OpenAI hardware competition. Now BOTH sides are in active federal
+      litigation — EC is financially aligned with plaintiff AND defendant.
+  - type: "active_litigation_cross_conflict"
+    description: >
+      APPLE v. OPENAI (N.D. Cal., filed Jul 10-11, 2026): Apple sued OpenAI Foundation,
+      OpenAI Group PBC, io Products, Tang Yew Tan, and Chang Liu for systematic trade
+      secret theft through 400+ former Apple employees. Emerson Collective (Atlantic's owner)
+      is simultaneously:
+      (a) A major Apple shareholder via LPJ Trust (~$17.06B+ at $315.32, Jul 10 close) — PLAINTIFF
+      (b) A founding backer of io Products — NAMED DEFENDANT
+      (c) Licensing partner with OpenAI — PRIMARY DEFENDANT
+      (d) Equity exit beneficiary from io Products' $6.5B OpenAI acquisition — EXIT from DEFENDANT
+      (e) Product development collaborator with OpenAI via Atlantic Labs — COLLABORATOR with DEFENDANT
+
+      This is the MOST ACUTE ACTIVE CONFLICT in the entire tracked publication set: no other
+      publication owner has a portfolio company as a named defendant in a lawsuit brought by
+      their largest stock holding. The lawsuit alleges "institutional" misconduct by io Products
+      and OpenAI — the entities EC invested in and profited from.
+
+      EDITORIAL COVERAGE: As of Jul 11, The Atlantic has published ZERO articles about Apple v.
+      OpenAI. Every major wire service and business publication covered it within hours.
+
+      APPLE-OPENAI PARTNERSHIP COLLAPSE: WSJ reports Apple's new Siri AI (WWDC Jun 2026) is
+      now powered by Google Gemini, not OpenAI ChatGPT. If the partnership fully ends, OpenAI
+      loses consumer distribution that supports the Atlantic's licensing deal value.
+    severity: 5
+    evidence: "Reuters, CNN, USA Today, WSJ, NY Post, Fox Business, MarketWatch (all Jul 10-11, 2026). Apple complaint filed N.D. Cal."
+    source_urls:
+      - "https://www.reuters.com/apple-openai-trade-secrets-lawsuit-2026-07-11/"
+      - "https://www.cnn.com/2026/07/11/tech/apple-openai-trade-secrets-lawsuit/"
+      - "https://www.wsj.com/apple-sues-openai-trade-secrets/"
   - type: "investment"
     description: "Emerson Collective has invested $1B+ in AI startups since 2022, including Mistral AI ($415M round), World Labs ($1B round), and Formation Bio ($372M round). Mistral's open-source LLMs directly compete with Meta's Llama. These investments create financial incentive for Atlantic coverage that benefits OpenAI-alternative/anti-Meta-AI narratives."
     severity: 3
@@ -1059,6 +1147,57 @@ litigation_connections:
     source_urls:
       - "https://reuters.com/legal/new-york-times-led-group-asks-court-sanction-openai-us-copyright-dispute-2026-07-09/"
       - "https://news.bloomberglaw.com/ip-law/new-york-times-seeks-sanctions-for-openai-in-copyright-case"
+  - type: "apple_v_openai_owner_cross_conflict"
+    description: >
+      APPLE v. OPENAI (N.D. Cal., filed Jul 10-11, 2026): Apple Inc. sued OpenAI Foundation,
+      OpenAI Group PBC, io Products, Tang Yew Tan, and Chang Liu for systematic trade secret
+      theft involving 400+ former Apple employees at OpenAI. The Atlantic's owner Emerson
+      Collective is a FOUNDING BACKER of io Products (named defendant), while LPJ Trust holds
+      ~$17.06B+ in Apple stock (plaintiff). This creates the most acute active litigation cross-
+      conflict in the tracked publication set.
+
+      KEY FACTS:
+      - Tang Yew Tan (io Products co-founder, OpenAI Chief Hardware Officer): 24-year Apple
+        veteran, former VP iPhone/Apple Watch design. Apple alleges he emailed himself supplier
+        info, used Apple codenames in interviews, directed "show and tell" sessions with stolen
+        Apple hardware parts
+      - io Products is accused of participating in misconduct at an "institutional level"
+      - Chang Liu (ex-Apple → OpenAI Jan 2026): unreturned laptop, exploited auth bug for
+        remote Apple network access, coached colleague on security evasion
+      - Apple: "This is the tip of the iceberg"
+      - OpenAI: "We have no interest in other companies' trade secrets"
+      - Jony Ive NOT named as defendant (co-founded io Products with Tan and Altman)
+
+      APPLE-OPENAI PARTNERSHIP COLLAPSE:
+      - WSJ: Apple's new Siri AI (WWDC Jun 2026) powered by Google Gemini, NOT ChatGPT
+      - Bloomberg (May 2026): OpenAI was considering suing Apple for breach of contract re:
+        Siri/ChatGPT promotion before Apple filed first
+      - NY Post: lawsuit "seems sure to end the high-profile partnership"
+      - Apple contacted OpenAI about concerns in Feb 2026, received no reply
+
+      ATLANTIC ANALYTICAL SIGNIFICANCE:
+      EC/LPJ is financially aligned with BOTH sides of active federal litigation:
+      (a) Plaintiff: ~$17.06B+ AAPL stock via LPJ Trust
+      (b) Defendant (io Products): founding backer, equity exit via $6.5B OpenAI acquisition
+      (c) Defendant (OpenAI): licensing deal, Atlantic Labs product collaboration
+      Any Atlantic coverage of this lawsuit involves disclosing financial relationships with
+      both parties — a disclosure challenge no other tracked publication faces. As of Jul 11,
+      The Atlantic has published ZERO articles about the filing despite every major wire
+      service covering it within hours. Silence is itself an editorial decision when the
+      conflicts are this dense.
+
+      PRIOR iyO LAWSUIT: Separately, iyO (a startup developing a screenless voice device)
+      sued OpenAI in 2025 alleging a former engineer stole files and gave them to Tang Yew
+      Tan at io Products. OpenAI denied theft. This establishes a PATTERN of trade secret
+      allegations specifically around the io Products / OpenAI hardware team that EC backed.
+    case_reference: "Apple Inc. v. OpenAI Foundation et al., N.D. Cal. (filed Jul 10-11, 2026)"
+    evidence: "Reuters, CNN, USA Today, WSJ, NY Post, MarketWatch, Fox Business (all Jul 10-11, 2026)."
+    source_urls:
+      - "https://www.reuters.com/apple-openai-trade-secrets-lawsuit-2026-07-11/"
+      - "https://www.cnn.com/2026/07/11/tech/apple-openai-trade-secrets-lawsuit/"
+      - "https://www.wsj.com/apple-sues-openai-trade-secrets/"
+      - "https://www.usatoday.com/story/money/2026/07/11/apple-sues-openai-trade-secrets/"
+      - "https://www.foxbusiness.com/technology/apple-accuses-openai-trade-secret-theft-recruits"
   - type: "union_bargaining_dispute"
     description: >
       Atlantic Union (NewsGuild of New York) demanded transparency on OpenAI deal terms (May 30,
@@ -1204,6 +1343,16 @@ editorial_history:
       notes: "Former Wired EIC hired as CEO. Creates direct Condé Nast editorial culture bridge. Under Thompson: profitability achieved, record subscriptions (1.4M+ by Feb 2026), 3 Pulitzer Prizes, OpenAI licensing deal (May 2024). Revenue over $100M. Also poached ~20 journalists from Washington Post."
 
 notes: |
+  UPDATED 2026-07-11: Type C — Apple v. OpenAI trade secrets lawsuit (N.D. Cal., filed Jul 10-11).
+  io Products is a NAMED DEFENDANT, and EC was a founding backer. This creates the most acute
+  active conflict in the tracked set: LPJ/EC simultaneously aligned with plaintiff (Apple, $17B+
+  stock), defendant (io Products, founding backer; OpenAI, licensing partner + equity exit), and
+  collaborator (Atlantic Labs). Atlantic has published zero coverage as of Jul 11 despite every
+  major wire service/business pub covering it within hours. Apple's Siri pivot from OpenAI to
+  Google Gemini (WSJ) threatens the OpenAI distribution channel that supports Atlantic licensing
+  deal value. DIS $95.64 close Jul 10 (down from $96.14 intraday), AAPL $315.32 close Jul 10,
+  META $669.21 (+5.97%).
+
   UPDATED 2026-07-09: Type C ownership deep dive — stock price revaluation, NYT v. OpenAI
   sanctions motion (filed today), OpenAI IPO context, GPT-5.6 launch, government equity proposal.
 
