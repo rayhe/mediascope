@@ -1001,7 +1001,7 @@ class TestEmotionalLanguageCount:
         """EMOTIONAL_LANGUAGE should contain exactly 612 unique terms."""
         from mediascope.analyze.sentiment import EMOTIONAL_LANGUAGE
 
-        assert len(EMOTIONAL_LANGUAGE) == 875, (
+        assert len(EMOTIONAL_LANGUAGE) == 911, (
             f"Expected 875 emotional language terms, got {len(EMOTIONAL_LANGUAGE)}.\n"
             "If you added or removed terms, update this test to the new count.\n"
             "Also check for duplicates: len(set(EMOTIONAL_LANGUAGE)) should match."
@@ -1071,7 +1071,7 @@ class TestAdversarialDeviceListConsistency:
     # Track the total number of compiled regex patterns across all device
     # types in _DEVICE_PATTERNS.  When patterns are added, this test fails
     # and forces a deliberate count update, preventing undocumented drift.
-    EXPECTED_TOTAL_PATTERNS = 571  # sum(len(v) for v in _DEVICE_PATTERNS.values())
+    EXPECTED_TOTAL_PATTERNS = 575  # sum(len(v) for v in _DEVICE_PATTERNS.values())
 
     def test_total_regex_pattern_count(self):
         """Total compiled regex patterns must match expected count."""
@@ -1545,7 +1545,7 @@ class TestAgentGuideConsistency:
 
 
 class TestCorrectionPathDocumentation:
-    """Validate that all 10 sentiment correction paths (A-J) are documented
+    """Validate that all 11 sentiment correction paths (A-K) are documented
     across METHODOLOGY.md, ARCHITECTURE.md, and AGENT_GUIDE.md.
 
     The 10 paths are defined in ``_compute_framing_correction`` (Paths A-F, H, I, J)
@@ -1554,7 +1554,7 @@ class TestCorrectionPathDocumentation:
     stays in sync with code when paths are added, removed, or renamed.
     """
 
-    EXPECTED_PATHS = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J"}
+    EXPECTED_PATHS = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"}
 
     @staticmethod
     def _extract_code_paths():
@@ -1578,7 +1578,7 @@ class TestCorrectionPathDocumentation:
         """METHODOLOGY.md section 9.2 should document all 10 correction paths."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
         # Each path should appear as "#### Path X:" or "Path X" in text
-        documented = set(re.findall(r"(?:####\s+)?Path\s+([A-J])[\s:.]", doc))
+        documented = set(re.findall(r"(?:####\s+)?Path\s+([A-K])[\s:.]", doc))
         missing = self.EXPECTED_PATHS - documented
         assert not missing, (
             f"METHODOLOGY.md is missing documentation for correction "
@@ -1588,7 +1588,7 @@ class TestCorrectionPathDocumentation:
     def test_architecture_documents_all_paths(self):
         """ARCHITECTURE.md should reference all 10 correction paths."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
-        documented = set(re.findall(r"Path\s+([A-J])[\s:.\|]", doc))
+        documented = set(re.findall(r"Path\s+([A-K])[\s:.\|]", doc))
         missing = self.EXPECTED_PATHS - documented
         assert not missing, (
             f"ARCHITECTURE.md is missing references to correction "
@@ -1598,9 +1598,9 @@ class TestCorrectionPathDocumentation:
     def test_agent_guide_documents_all_paths(self):
         """AGENT_GUIDE.md should reference all 10 correction paths."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
-        documented = set(re.findall(r"Path\s+([A-J])[\s:.\|]", doc))
+        documented = set(re.findall(r"Path\s+([A-K])[\s:.\|]", doc))
         # Also check for "**G**" table format
-        table_paths = set(re.findall(r"\*\*([A-J])\*\*", doc))
+        table_paths = set(re.findall(r"\*\*([A-K])\*\*", doc))
         all_documented = documented | table_paths
         missing = self.EXPECTED_PATHS - all_documented
         assert not missing, (
@@ -1612,7 +1612,7 @@ class TestCorrectionPathDocumentation:
         """METHODOLOGY.md should have a summary table with all 10 paths."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
         # Find the summary table by looking for "| **A**" through "| **G**"
-        table_paths = set(re.findall(r"\|\s*\*\*([A-J])\*\*\s*\|", doc))
+        table_paths = set(re.findall(r"\|\s*\*\*([A-K])\*\*\s*\|", doc))
         missing = self.EXPECTED_PATHS - table_paths
         assert not missing, (
             f"METHODOLOGY.md summary table is missing paths: {sorted(missing)}. "
@@ -1630,14 +1630,14 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_readme_correction_path_count(self):
-        """README.md example table should reference correct path count (A-J)."""
+        """README.md example table should reference correct path count (A-K)."""
         readme = (_REPO_ROOT / "README.md").read_text()
         expected_count = len(self.EXPECTED_PATHS)
         # The README example table describes the framing_correction_demo.py
         # and should reference the correct correction path count and range.
-        assert f"{expected_count} distinct correction paths (A–J)" in readme, (
+        assert f"{expected_count} distinct correction paths (A–K)" in readme, (
             f"README.md example table should reference "
-            f"'{expected_count} distinct correction paths (A–J)' but does not. "
+            f"'{expected_count} distinct correction paths (A–K)' but does not. "
             f"Update the framing_correction_demo.py description in README.md."
         )
 
@@ -1647,13 +1647,13 @@ class TestCorrectionPathDocumentation:
             _REPO_ROOT / "examples" / "framing_correction_demo.py"
         ).read_text()
         expected_count = len(self.EXPECTED_PATHS)
-        # The demo prints "Ten correction paths (A-J)" in its summary
+        # The demo prints "Ten correction paths (A-K)" in its summary
         count_word = {10: "Ten", 9: "Nine", 8: "Eight", 11: "Eleven"}.get(
             expected_count, str(expected_count)
         )
-        assert f"{count_word} correction paths (A-J)" in demo, (
+        assert f"{count_word} correction paths (A-K)" in demo, (
             f"framing_correction_demo.py summary should reference "
-            f"'{count_word} correction paths (A-J)' but does not. "
+            f"'{count_word} correction paths (A-K)' but does not. "
             f"Update line ~314 in framing_correction_demo.py."
         )
 

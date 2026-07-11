@@ -506,7 +506,7 @@ This is not a VADER bug; it is a fundamental limitation of lexical sentiment ana
 
 ### 9.2 Correction Pipeline
 
-MediaScope implements **10 distinct correction paths (A–J), each addressing a specific VADER/TextBlob failure mode discovered through real article analysis. The paths are evaluated in priority order; the first match fires and returns the corrected score.
+MediaScope implements **11 distinct correction paths (A–K), each addressing a specific VADER/TextBlob failure mode discovered through real article analysis. The paths are evaluated in priority order; the first match fires and returns the corrected score.
 
 The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overall_tone` (corrected) with metadata documenting when and why correction fired.
 
@@ -517,7 +517,7 @@ The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overa
 | Trigger | Threshold |
 |---|---|
 | Raw composite tone | ≥ 0.0 (non-negative) |
-| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, recidivism_framing, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, competitive_positioning, consumer_ownership, editorial_aside, failure_precedent, editorial_deflation, slippery_slope, competitive_deficit, competitive_displacement, absence_as_evidence, silence_as_guilt, expert_contradiction, loss_leader_framing)) |
+| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, recidivism_framing, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, competitive_positioning, consumer_ownership, editorial_aside, failure_precedent, editorial_deflation, slippery_slope, competitive_deficit, competitive_displacement, absence_as_evidence, silence_as_guilt, expert_contradiction, loss_leader_framing, sarcastic_correction)) |
 | Agency attribution | < −0.3 (passive/target of scrutiny) |
 
 **Blend:** 10% raw + 90% framing-derived estimate. The framing estimate is computed from agency, emotional intensity, and adversarial device density.
@@ -685,6 +685,24 @@ Measured editorial where criticism is embedded through expert sources contradict
 
 **Discovery article:** Wired "Meta Is Charging a Subscription for Smart Glasses Features" (Jul 2, 2026) — VADER scored +0.69. Agency = +0.33. EI = 0.26. Adversarial count = 8. Expert Chris Harrison (Carnegie Mellon): "It's not about recovering AI costs; it's about monetizing customers." Loss-leader framing: "sold at cost... subscription service grows revenue."
 
+#### Path K: Sarcastic Rejection Editorial
+
+Satirical or vulgar short pieces where contempt is conveyed through sarcastic_correction devices (ironic negation, mock-certainty, sarcastic farewells) and high emotional intensity from profane/contemptuous vocabulary. VADER fails catastrophically on these because it reads profanity and exclamations as emotionally positive ("fuck yeah" → positive sentiment) while completely missing the ironic context. Unlike Path D (sardonic) which requires massive loaded_language count, and Path H (sarcastic) which requires editorial_aside devices, Path K fires on the sarcastic register carried by sarcastic_correction devices regardless of other framing.
+
+| Trigger | Threshold |
+|---|---|
+| Raw tone | ≥ 0.3 |
+| sarcastic_correction devices | ≥ 2 |
+| Emotional intensity | ≥ 0.7 |
+
+**Blend:** 10% raw + 90% target. Target tone: −(0.35 + 0.20 × sarcasm_density + 0.10 × EI), clamped to [−0.7, −0.2]. Sarcasm density = min(sc_count / 4.0, 1.0).
+
+**Key distinction from Path D (sardonic):** Path D requires loaded_language ≥ 7 and adversarial count ≥ 8 — massive loaded vocabulary dominance. Path K fires on articles with fewer devices but concentrated sarcastic_correction patterns.
+
+**Key distinction from Path H (sarcastic editorial):** Path H requires editorial_aside ≥ 2 (direct reader address like "brace yourself," "let's be honest"). Path K fires on articles where the sarcasm is conveyed through ironic negation and mock-certainty constructions, not reader-directed asides.
+
+**Discovery article:** AV Club "Instagram about to start letting internet randos 'remix' your photos with AI" (Jul 8, 2026) — VADER scored +0.99 (compound). Raw composite +0.65. 3 sarcastic_correction devices: "'Oh fuck yeah,' nobody said," "we're sure some of these graphics are going to get extremely," "Thanks for making everything suck more, buds!" EI = 1.0 (14 emotional terms including profanity). Agency = +0.33 (positive — Meta is doing things). Corrected: −0.48.
+
 #### Path G: VADER Long-Text Normalization
 
 Not a framing correction — this fixes a fundamental VADER math problem. VADER's compound score uses `sum / sqrt(sum² + alpha)` where `alpha=15`, tuned for tweet-length texts. For long articles (10+ sentences), this normalization amplifies small biases.
@@ -722,6 +740,7 @@ The paths are evaluated in code order: **A → B → C → E → D → F → H �
 | **H** | Sarcastic editorial | ≥ 0.3 | ≥ −0.1 | ≥2 editorial_aside + ≥4 adversarial + ≥0.5 EI | 15/85 (raw/target) |
 | **I** | Direct consumer critique | ≥ 0.3 | > 0 | ≥5 adversarial + ≥2 consumer devices + ≥0.5 EI | 20/80 (raw/target) |
 | **J** | Expert-driven structural critique | ≥ 0.3 | ≥ 0 | ≥5 adversarial + ≥1 expert_contradiction + ≥2 structural + ≥0.10 EI | 30/70 (raw/target) |
+| **K** | Sarcastic rejection | ≥ 0.3 | any | ≥2 sarcastic_correction + ≥0.7 EI | 10/90 (raw/target) |
 
 ### 9.3 Headline Framing Override
 
@@ -770,7 +789,7 @@ When evaluating articles from target publications, MediaScope applies a quality 
 ### Known Biases in the Tool Itself
 - Keyword-based entity detection may miss oblique references
 - Sentiment models have known biases toward certain writing styles (see §16 for the financial journalism inflation class specifically)
-- **VADER financial journalism inflation (0.3–0.5 points):** Investment recommendation articles, analyst-debate formats, and financial opinion pieces systematically inflate VADER compound scores by 0.3–0.5 points due to boosterism vocabulary ("strong buy," "upside potential," "cash cow"), financial reassurance language ("fears ease," "soothe concerns"), and corporate PR quotes containing forward-looking positive language. None of the existing correction paths (A–J) fire on these articles because they typically lack the negative agency signal (< −0.3) that most paths require. See §16 for the full analysis and interim workarounds.
+- **VADER financial journalism inflation (0.3–0.5 points):** Investment recommendation articles, analyst-debate formats, and financial opinion pieces systematically inflate VADER compound scores by 0.3–0.5 points due to boosterism vocabulary ("strong buy," "upside potential," "cash cow"), financial reassurance language ("fears ease," "soothe concerns"), and corporate PR quotes containing forward-looking positive language. None of the existing correction paths (A–K) fire on these articles because they typically lack the negative agency signal (< −0.3) that most paths require. See §16 for the full analysis and interim workarounds.
 - **Topic classification density normalization (RESOLVED):** Short texts (< 500 words) previously received inflated topic confidence scores because keyword density (matches per 100 words) is naturally higher when text is shorter. Fixed by applying a length-aware dampening factor: `density *= min(word_count / 500, 1.0)`. This scales density linearly below 500 words (the lower bound of a standard article) while leaving full-length articles unaffected. The fix dampens multi-topic inflation in blurbs, summaries, and headlines without breaking topic detection — 4 regression tests guard the behavior. See `topics.py` §3.1 comments.
 - English-language only in current version
 - RSS feeds may not capture all articles (paywalled content, newsletters)
@@ -1238,7 +1257,7 @@ Meanwhile, the bullish quotes pack VADER-positive words: "rational," "significan
 
 ### 16.3 Why Existing Correction Paths Don't Fire
 
-The ten correction paths (§9.2, Paths A–J) were designed for editorial and investigative journalism. They require specific combinations of:
+The eleven correction paths (§9.2, Paths A–K) were designed for editorial and investigative journalism. They require specific combinations of:
 
 | Signal | Typical in Investigative | Typical in Financial |
 |---|---|---|
@@ -1341,7 +1360,7 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **155 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **156 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1457,7 +1476,7 @@ Articles cluster into 9 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 155 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 156 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|

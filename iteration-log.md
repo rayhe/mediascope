@@ -2,6 +2,45 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-11 13:00 PT — Type D: Toolkit Quality & Documentation
+
+**Focus:** Path B documentation sync with code evolution, README Pipeline Statistics table, stale stat corrections
+
+### Path B Documentation Overhaul (METHODOLOGY.md §9)
+- **Problem:** Path B docs described a simple "50% raw + 50% framing estimate" blend, but the code had evolved significantly with three progressive refinement layers
+- **Fix:** Rewrote Path B section with full documentation of:
+  1. **Dynamic blend (EI > 0.6):** raw_weight slides from 0.50 to 0.15 as emotional intensity rises — at EI = 1.0, blend is 15% raw + 85% framing
+  2. **EI amplification (EI > 0.7):** framing estimate boosted up to 15% for viscerally disturbing content (child exploitation, self-harm, graphic violence) where agency alone underestimates impact
+  3. **Density boost (EI > 0.6 AND adversarial_count ≥ 12):** additional amplification for deep investigative pieces with extreme framing density, capped at 30%
+- Added worked example: Wired Cannes contractors — VADER -0.16, manual -0.45, base blend -0.25, full correction -0.44 (96% gap closure vs 50% with original blend)
+- Updated §17.5 correction path coverage table: Path B row now references dynamic blend
+
+### README Pipeline Statistics Table (new)
+- Added auto-verified statistics table after "What It Does" section:
+  - 83 entity clusters (810 aliases, 62 custom regex, 21 auto-generated)
+  - 97 framing device types (10C + 80E + 7S)
+  - 571 compiled framing patterns
+  - 875 emotional language terms
+  - 28 adversarial device types
+  - 10 sentiment correction paths (A–J)
+  - 155 annotated articles
+  - 222 journalists across 402 publications
+  - 871 career-entry migrations
+  - 29 topic buckets
+  - 2,262 tests across 99 files
+
+### Stale Stat Corrections
+- **Migration count:** README previously said "689 auto-detected migrations" — updated to "871 career-entry migrations, 689 auto-detected" (871 = total career entries with ≥2 positions, 689 = auto-detected subset)
+- **Known Limitations:** Added cross-reference to METHODOLOGY.md §9 for the 10 correction paths' full decision tree
+
+### Verification
+- All 2,262 tests passing (0 failures)
+- Stats verified programmatically against actual code (entities.py, framing.py, sentiment.py, journalists.yaml)
+- `_DEVICE_PATTERNS` has 90 keys (pattern-based) + 7 structural post-pass types = 97 total (consistent with docs)
+
+### Commit
+- `b43dda3`: Type D — 53 insertions, 6 deletions across README.md and METHODOLOGY.md. Pushed to GitHub.
+
 ## 2026-07-11 09:00 PT — Type C: Ownership & Funding Deep Dive (Wired/Condé Nast)
 
 **Focus:** Advance/Newhouse portfolio valuation update + WBD/Paramount merger developments + Condé Nast data breach addition
@@ -19437,3 +19476,38 @@ Gizmodo LED tamper article ("Destroying the Privacy LED on Meta Smart Glasses Wi
 **Verification:** All 2,262 tests passing (113 structural consistency tests, 0 failures). No guarded counts changed — all additions are new sections.
 
 **Rationale:** The QUALITY_STANDARDS.md §3 requires every analysis to include a Limitations section. The toolkit's own docs should meet the same standard. The structural-split gap was identified in the 05:00 PT Type A iteration (Washington Examiner analysis) and now has a permanent home in the methodology docs.
+
+
+---
+
+### 2026-07-11 14:00 PT — Type A: Article Deep Dive (AV Club Muse Image Remix)
+
+**Article:** AV Club, "Instagram about to start letting internet randos 'remix' your photos with AI" (Jul 8, 2026)
+
+**Core finding:** Catastrophic VADER polarity inversion on satirical/sarcastic editorial. VADER compound = +0.99 on an article that is openly contemptuous ("Oh fuck yeah," nobody said / "Thanks for making everything suck more, buds!"). Composite scored +0.65, framing_corrected=False. Manual assessment: −0.50.
+
+**Root cause:** Three interconnected gaps — (1) missing emotional vocabulary (11 of 14 terms not in lexicon), (2) missing sarcastic_correction framing patterns (ironic negation, mock-certainty, sarcastic farewell), and (3) no correction path for articles whose contempt is carried by sarcastic register rather than structural adversarial framing.
+
+**Fixes applied:**
+
+1. **Emotional language expansion (+36 terms, net):** Added `crappy`, `suck/sucks/sucking/sucked`, `terrible/terribly`, `damnedest/damn/damned`, `creepers/creeper`, `devolve/devolves/devolving/devolved`, `indignity/indignities`, `fuck/fucked/fucking`, `crap/craptastic/half-assed`, `garbage/trash/trashy`, `abysmal/godawful/god-awful`, `spigot/spigots`, `buds`, `lumbering behemoth`, `gormless`, `randos`. Removed 2 duplicates (`creepy`, `creepiest`). Total: 875 → 911 terms.
+
+2. **New sarcastic_correction framing patterns (+4):**
+   - Broadened "we're sure" mock-certainty pattern (no longer requires specific positive adjective)
+   - Added `"X," nobody said` / `said no one` ironic negation patterns (2 variants)
+   - Added `"Thanks for X, buds/guys/folks"` sarcastic farewell pattern
+   - Total regex patterns: 571 → 575.
+
+3. **`sarcastic_correction` added to `_ADVERSARIAL_DEVICE_TYPES`:** Inherently adversarial device was not counted as such, preventing correction path activation.
+
+4. **New correction Path K: Sarcastic rejection editorial:** Triggers on raw_tone ≥ 0.3, sarcastic_correction ≥ 2, emotional_intensity ≥ 0.7. Blend: 10% raw + 90% target. Distinct from Path D (sardonic, needs loaded_language dominance) and Path H (sarcastic, needs editorial_aside). Total correction paths: 10 → 11 (A–K).
+
+5. **`summarize_framing` robustness:** Added isinstance guard to auto-detect raw text input (common caller mistake).
+
+**Result:** Raw +0.6489 → corrected −0.4751 (framing_corrected=True via Path K). Gap closure: 98.3% (manual −0.50 vs toolkit −0.48).
+
+**Doc updates:** METHODOLOGY.md (Path K section, summary table, adversarial list), ARCHITECTURE.md (path diagram, pattern count, path references), AGENT_GUIDE.md (summary table, adversarial list), QUALITY_STANDARDS.md (adversarial list, term count), README.md (path count, pattern count), example demos (adversarial sets, path lists).
+
+**Annotated article count:** 155 → 156. Analysis: `examples/sample_output/avclub_meta_muse_image_remix_2026_07_08_analysis.md`.
+
+**Tests:** 2,262 passed, 0 failed.

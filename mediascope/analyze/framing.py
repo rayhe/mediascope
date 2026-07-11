@@ -2888,6 +2888,20 @@ _SARCASTIC_CORRECTION_PATTERNS: list[re.Pattern] = [
         r"overjoyed|ecstatic|happy|pleased|fine|great|wonderful)\b",
         re.IGNORECASE,
     ),
+    # Broader "we're sure" — catches "we're sure some/this/that/these"
+    # without requiring a specific adjective.  The mock-certainty signal
+    # is in the "we're sure" + clause structure itself.
+    # Discovered via AV Club Muse Image remix article (Jul 8, 2026):
+    #   "we're sure some of these graphics are going to get extremely
+    #    personalized pretty quickly"
+    re.compile(
+        r"\b(?:we.re|I.m)\s+sure\s+"
+        r"(?:some|this|that|these|those|all|most|plenty)\b"
+        r".{5,120}?"
+        r"(?:quickly|soon|fast|eventually|shortly|pretty|extremely|"
+        r"real\s+quick|in\s+no\s+time)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
     # "You know, like how [X]" — post-quote sarcastic aside, deflating
     # the preceding quoted material by comparing to absurd normal
     re.compile(
@@ -2925,6 +2939,38 @@ _SARCASTIC_CORRECTION_PATTERNS: list[re.Pattern] = [
         r"[.!]"
         r"(?:\s|$)",
         re.MULTILINE,
+    ),
+    # ---------------------------------------------------------------------------
+    # "X," nobody said — ironic negation / sarcastic reversal
+    # The writer attributes a statement (often enthusiastic) to "nobody"
+    # or "no one", signaling the opposite is true. A staple of online-native
+    # sardonic journalism (AV Club, Gizmodo, Kotaku).
+    #
+    # Discovered via AV Club Muse Image remix article (Jul 8, 2026):
+    #   '"Oh fuck yeah," nobody said this week'
+    # Also handles variants: "said no one", "said no one ever",
+    #   "thought nobody", "asked no one"
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r'".{2,80}?"\s*,?\s*(?:nobody|no\s*one)\s+(?:said|thought|asked|replied|added)',
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r'".{2,80}?"\s*,?\s*(?:said|thought|asked)\s+(?:nobody|no\s*one)(?:\s+ever)?\b',
+        re.IGNORECASE,
+    ),
+    # ---------------------------------------------------------------------------
+    # "Thanks for X, buds/guys/folks" — sarcastic farewell/sign-off
+    # Direct address with mock gratitude used to close a piece with contempt.
+    # Discovered via AV Club Muse Image remix article (Jul 8, 2026):
+    #   "Thanks for making everything suck more, buds!"
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b(?:Thanks|Thank you|Cheers|Good job|Way to go|Nice work)\s+"
+        r"(?:for\s+)?(?:making|ruining|breaking|destroying|ensuring)"
+        r".{5,120}?"
+        r"(?:buds|guys|folks|pal|pals|bud|champ|champs|gang)[.!]",
+        re.IGNORECASE | re.DOTALL,
     ),
 ]
 
@@ -8885,11 +8931,15 @@ def summarize_framing(devices: list[FramingDevice]) -> dict[str, int]:
     """Summarize detected framing devices by type.
 
     Args:
-        devices: List of FramingDevice objects.
+        devices: List of FramingDevice objects.  If a plain text string
+            is passed (common caller mistake), it is auto-detected first.
 
     Returns:
         Dict mapping device type to count.
     """
+    # Guard: accept raw text as convenience
+    if isinstance(devices, str):
+        devices = detect_framing_devices(devices)
     counts: dict[str, int] = {}
     for device in devices:
         counts[device.device_type] = counts.get(device.device_type, 0) + 1

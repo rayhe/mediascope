@@ -101,7 +101,7 @@ RSS Feeds ──→ Article Text ──→ Entity Detection ──→ Sentiment 
 
 ### Sentiment Correction Pipeline
 
-The toolkit uses a multi-layer correction pipeline with **10 distinct paths (A–J)** that addresses known VADER/TextBlob blind spots when scoring editorial prose:
+The toolkit uses a multi-layer correction pipeline with **11 distinct paths (A–K)** that addresses known VADER/TextBlob blind spots when scoring editorial prose:
 
 ```
 Raw Text
@@ -116,7 +116,7 @@ Raw Text
   └── (Optional) LLM score ─────┘          │
                                            ▼
                                  Framing Device Detection
-                                 (97 device types, 571 patterns)
+                                 (97 device types, 575 patterns)
                                            │
                                            ▼
                                  Active-Negative Agency Check
@@ -129,9 +129,9 @@ Raw Text
                                     │
            ┌────────┬──────────┬────┼────┬──────────┐
            ▼        ▼          ▼    ▼    ▼          ▼
-        Path A   Path B    Path C  Path E  Path D  Path F  Path H  Path I  Path J
-        Full     Amplify   Anchor  Mil.   Sardonic Contra- Sarcastic Consumer Expert
-        correct  understat embed   techno mocking  dictory editorial critique struct.
+        Path A   Path B    Path C  Path E  Path D  Path F  Path H  Path I  Path J  Path K
+        Full     Amplify   Anchor  Mil.   Sardonic Contra- Sarcastic Consumer Expert Sarcastic
+        correct  understat embed   techno mocking  dictory editorial critique struct. rejection
                                    optim          review
                                            │
                                            ▼
@@ -437,7 +437,7 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
-│   └── sample_output/       # 155 annotated real-article analyses (see METHODOLOGY.md §17)
+│   └── sample_output/       # 156 annotated real-article analyses (see METHODOLOGY.md §17)
 ├── tests/                       # 2262 tests across 99 test files (all from real articles)
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -504,7 +504,7 @@ mediascope/
 │   ├── test_postpass_activation.py # Structural post-pass framing activation: analogy stacking, speculative framing thresholds
 │   ├── test_precedent_analogy.py # Precedent analogy framing: opioid/tobacco/asbestos crisis comparisons, era-based villainy import
 │   ├── test_resistance_patterns.py # MIT TR Resistance article patterns: catastrophizing (threat to humanity), alarm/anxiety idioms, intensity/polemical/violence loaded language, poll-based social proof, stalled-dollar and workforce-percentage scale magnitude
-│   ├── test_structural_consistency.py # Structural consistency: framing device type registry completeness, total regex pattern count guard (571 patterns), doc count sync guards, test file listing guards, README/ARCHITECTURE total test count header guards (validates pytest-collected count including parametrize expansions), stale voting power purge across all doc files, cross-reference consistency (stale framing taxonomy count purge including parenthetical annotations, README topic bucket count guard), inline topic list validation (ARCHITECTURE.md, AGENT_GUIDE.md, METHODOLOGY.md topic names match code), quality standards banned phrase count and completeness guards, framing.py docstring count and device list completeness validation, ARCHITECTURE.md extended device count label guard, ARCHITECTURE.md device name list completeness (Core + Extended inline lists enumerate all device types from code), ARCHITECTURE.md test_topics bucket count guard, METHODOLOGY.md device table completeness (Extended + Structural tables vs code), METHODOLOGY.md intro tier count guard (97/10/80/7 matches code), METHODOLOGY.md §17 annotated article count and publication count guards (corpus article count and distinct publication count match actual files on disk), adversarial device type list consistency (METHODOLOGY.md + QUALITY_STANDARDS.md + AGENT_GUIDE.md + example demo scripts vs sentiment.py), stale regex pattern count purge (ARCHITECTURE.md + README.md), AGENT_GUIDE.md framing tier count guard (97/10/80/7 matches code), correction path documentation completeness (all 10 paths A-J in METHODOLOGY.md + ARCHITECTURE.md + AGENT_GUIDE.md + README.md + example demos with summary table), migration count guards (README.md careers_demo + EDITORIAL_HISTORIES.md both match CareerTracker), publication count floor guards (README.md + EDITORIAL_HISTORIES.md), entity cluster consistency (METHODOLOGY.md §15 cluster count matches code, table completeness with no missing/phantom clusters, alias count accuracy), ENTITY_REFERENCE.md consistency (cluster count header, alias count header, cluster completeness, no phantom clusters, custom/auto regex counts, README and ARCHITECTURE cross-references), annotated article count guard (QUALITY_STANDARDS.md vs examples/sample_output/), ARCHITECTURE.md annotated article count guard (file-tree comment vs examples/sample_output/), same-event cluster count guard (QUALITY_STANDARDS.md §10.2 Tier 1 + Tier 2 table rows), example demo adversarial type set completeness (framing_correction_demo.py + sarcastic_editorial_demo.py inline adversarial_types vs code), stale device type count purge (rejects historic device type counts in any doc that don't match the current total, including parenthetical annotations), stale journalist/multi-pub count purge (all EDITORIAL_HISTORIES.md references match current YAML counts)
+│   ├── test_structural_consistency.py # Structural consistency: framing device type registry completeness, total regex pattern count guard (575 patterns), doc count sync guards, test file listing guards, README/ARCHITECTURE total test count header guards (validates pytest-collected count including parametrize expansions), stale voting power purge across all doc files, cross-reference consistency (stale framing taxonomy count purge including parenthetical annotations, README topic bucket count guard), inline topic list validation (ARCHITECTURE.md, AGENT_GUIDE.md, METHODOLOGY.md topic names match code), quality standards banned phrase count and completeness guards, framing.py docstring count and device list completeness validation, ARCHITECTURE.md extended device count label guard, ARCHITECTURE.md device name list completeness (Core + Extended inline lists enumerate all device types from code), ARCHITECTURE.md test_topics bucket count guard, METHODOLOGY.md device table completeness (Extended + Structural tables vs code), METHODOLOGY.md intro tier count guard (97/10/80/7 matches code), METHODOLOGY.md §17 annotated article count and publication count guards (corpus article count and distinct publication count match actual files on disk), adversarial device type list consistency (METHODOLOGY.md + QUALITY_STANDARDS.md + AGENT_GUIDE.md + example demo scripts vs sentiment.py), stale regex pattern count purge (ARCHITECTURE.md + README.md), AGENT_GUIDE.md framing tier count guard (97/10/80/7 matches code), correction path documentation completeness (all 11 paths A-K in METHODOLOGY.md + ARCHITECTURE.md + AGENT_GUIDE.md + README.md + example demos with summary table), migration count guards (README.md careers_demo + EDITORIAL_HISTORIES.md both match CareerTracker), publication count floor guards (README.md + EDITORIAL_HISTORIES.md), entity cluster consistency (METHODOLOGY.md §15 cluster count matches code, table completeness with no missing/phantom clusters, alias count accuracy), ENTITY_REFERENCE.md consistency (cluster count header, alias count header, cluster completeness, no phantom clusters, custom/auto regex counts, README and ARCHITECTURE cross-references), annotated article count guard (QUALITY_STANDARDS.md vs examples/sample_output/), ARCHITECTURE.md annotated article count guard (file-tree comment vs examples/sample_output/), same-event cluster count guard (QUALITY_STANDARDS.md §10.2 Tier 1 + Tier 2 table rows), example demo adversarial type set completeness (framing_correction_demo.py + sarcastic_editorial_demo.py inline adversarial_types vs code), stale device type count purge (rejects historic device type counts in any doc that don't match the current total, including parenthetical annotations), stale journalist/multi-pub count purge (all EDITORIAL_HISTORIES.md references match current YAML counts)
 │   ├── test_arena_cross_analysis.py # Cross-publication analysis: NYT vs Gizmodo on Arena story — tone separation, emotional intensity, ironic quotation filtering, agency detection
 │   ├── test_latecomer_regulatory_framing.py # Latecomer narrative and regulatory shadow framing: catch-up/copycat positioning, ambient regulatory context insertion, Arena article integration
 │   ├── test_editorial_deflation.py     # Editorial deflation framing: post-buildup dismissal phrases ("That's the idea, anyway"), attribution-as-skepticism, MIT TR Anduril article integration

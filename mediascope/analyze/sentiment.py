@@ -641,6 +641,25 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "sparking controversy", "sparking outrage", "sparking debate",
     "concerns have arisen", "concerns arose", "raised concerns",
     "privacy advocates",
+    # Colloquial/vulgar negative terms — online-native journalism (AV Club,
+    # Gizmodo, Kotaku, etc.) uses informal register that VADER reads as neutral.
+    # Gap discovered via AV Club Muse Image remix article (Jul 8, 2026):
+    #   "crappy AI images game", "slop spigots", "the planet's creepers",
+    #   "terrible things", "everything suck more", "damnedest"
+    "crappy", "suck", "sucks", "sucking", "sucked",
+    "terrible", "terribly",
+    "damnedest", "damn", "damned",
+    "creepers", "creeper",
+    "devolve", "devolves", "devolving", "devolved",
+    "indignity", "indignities",
+    "fuck", "fucked", "fucking",
+    "crap", "craptastic", "half-assed",
+    "garbage", "trash", "trashy",
+    "abysmal", "godawful", "god-awful",
+    "spigot", "spigots",
+    # Sarcastic-register terms that signal editorial contempt
+    "buds", "lumbering behemoth",
+    "gormless", "randos",
 ]
 
 # Passive/victim vs. active/powerful framing indicators
@@ -1404,6 +1423,14 @@ _ADVERSARIAL_DEVICE_TYPES: set[str] = {
     # Discovered in Fast Company Muse Image opt-out article (Jul 9 2026):
     # "Meta is once again testing the limits of privacy rights."
     "recidivism_framing",
+    # Sarcastic correction directly mocks or ridicules the subject
+    # through ironic negation ("X," nobody said), mock-certainty
+    # ("we're sure..."), or sarcastic farewell ("Thanks for X, buds!").
+    # These are inherently adversarial — the author is openly contemptuous.
+    # Discovered in AV Club Muse Image remix article (Jul 2026) where
+    # 3 sarcastic_correction devices were the primary tone carriers but
+    # weren't counted as adversarial, causing the correction to miss.
+    "sarcastic_correction",
 }
 
 # Anchor device types that create negative reader takeaway even when
@@ -1805,6 +1832,43 @@ def _compute_framing_correction(
         sarcasm_density = min((aside_count + consensus_count) / 5.0, 1.0)
         target_tone = -(0.30 + 0.20 * sarcasm_density + 0.10 * emotional_intensity)
         corrected = 0.15 * raw_tone + 0.85 * target_tone
+        corrected = max(-0.7, min(0.0, round(corrected, 4)))
+        return corrected, True
+
+    # --- Path K: Sarcastic rejection editorial ---
+    # Satirical or vulgar short pieces where contempt is conveyed through
+    # sarcastic_correction devices (ironic negation, mock-certainty,
+    # sarcastic farewells) rather than structural adversarial framing
+    # (juxtaposition, isolation, kicker).  VADER reads active language
+    # and profanity as emotionally positive ("fuck yeah" → positive
+    # sentiment) while completely missing the ironic context.
+    #
+    # Key distinguishing signals: sarcastic_correction devices (>= 2),
+    # high emotional intensity from vulgar/contemptuous vocabulary,
+    # and positive agency (the subject IS doing things — just being
+    # mocked for it).  Unlike Path D (sardonic) which requires massive
+    # loaded_language count, this path fires on the sarcastic register
+    # regardless of loaded_language density.
+    #
+    # Discovered in AV Club Muse Image remix article (Jul 2026): VADER
+    # scored +0.99 (compound), composite +0.65 on a clearly contemptuous
+    # piece with "Oh fuck yeah," nobody said / "we're sure some of these
+    # graphics are going to get extremely" / "Thanks for making everything
+    # suck more, buds!" — 3 sarcastic_correction + 14 emotional terms.
+    _SARCASTIC_REJECTION_MIN_SC = 2   # at least 2 sarcastic_correction
+    _SARCASTIC_REJECTION_MIN_EI = 0.7  # high emotional intensity
+    sc_count = framing_summary.get("sarcastic_correction", 0)
+    if (
+        raw_tone >= 0.3
+        and sc_count >= _SARCASTIC_REJECTION_MIN_SC
+        and emotional_intensity >= _SARCASTIC_REJECTION_MIN_EI
+    ):
+        # Strong correction: these articles are unambiguously negative.
+        # Weight toward -0.40 to -0.55 depending on sarcasm density.
+        sc_density = min(sc_count / 4.0, 1.0)
+        target_tone = -(0.35 + 0.20 * sc_density + 0.10 * emotional_intensity)
+        target_tone = max(-0.7, min(-0.2, target_tone))
+        corrected = 0.10 * raw_tone + 0.90 * target_tone
         corrected = max(-0.7, min(0.0, round(corrected, 4)))
         return corrected, True
 
