@@ -2,6 +2,41 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-11 07:00 PT — Type B: Journalist/Publication Research (4 profile expansions)
+
+**Journalists updated:** Andy Greenberg (Wired), Dan Milmo (Guardian), Sapna Maheshwari (NYT), Deepa Seetharaman (WSJ→Reuters)
+
+### Andy Greenberg (#3 — source URL expansion)
+- Added 7 source URLs: Wikipedia, Wired author page, andygreenberg.net, Penguin Random House, All American Speakers, NYU CSAW inaugural award, Computer History Museum
+- Updated Wired career entry: added specific 2023 Loeb award article title ("The Crypto Trap: Inside the Bitcoin Bust That Took Down the Web's Biggest Child Abuse Site")
+
+### Dan Milmo (#206 — enriched notes + source URLs)
+- Added 6 source URLs: London Tech Week speaker bio, Guardian profile, Muck Rack, Web Summit, Buzzsumo, Transcend Media Service
+- Expanded all 3 career entries with key articles: Rohingya v Facebook £150B lawsuit (Dec 2021), Guardian quitting X (Nov 2024), UK under-16s social media ban series (Jun 2026), UK critical infrastructure 200 cyber incidents (Jun 2026)
+- Added analytical insight: 26+ year single-publication lifer = PURE control case for institutional bias analysis (zero cross-publication migrations, no confounding employer changes)
+- Added syndication data: 11+ MSN/Yahoo regional editions, Buzzsumo Power score 3,203
+
+### Sapna Maheshwari (#207 — major career correction)
+- **CORRECTION:** Bloomberg start date changed from 2011 to 2009. First year was rotating reporter (currencies, insurance, stocks) before corporate credit and retail. Career is 4 years longer than previously recorded.
+- Added 6 source URLs: Wikipedia, NYTco press release, 3× Talking Biz News articles, SALUTE community bio
+- Added education field: UNC-Chapel Hill, business journalism program
+- Expanded personal details: Indian American, born Mystic CT, grew up East Lyme CT, SABEW board of governors member, Punderdome 3000 winner
+- Enriched NYT entry: all 3 beat transitions (advertising → retail → TikTok/emerging media), editor names (Ellen Pollock, Rich Barbieri, Pui-Wing Tam, Joseph Plambeck, Connor Ennis), Netflix documentary "White Hot" (2022)
+- Sources: Wikipedia, NYTco announcement, Talking Biz News (3 articles), SALUTE community
+
+### Deepa Seetharaman (#208 — COMPLETE REBUILD from 0 chars)
+- **Was:** 3 career entries, 0 source URLs, 0 chars notes (completely empty profile)
+- **Now:** Full 3-career entry rebuild with detailed notes, 4 source URLs, education field, analytical notes
+- Career: Reuters (2008-2015, e-commerce/auto/labor from SF & Detroit bureaus) → WSJ (2015-2025, 10-year tenure as primary Facebook/Meta beat reporter) → Reuters return (2025-present, AI coverage)
+- Awards: George Polk Award for Business Reporting, Gerald Loeb Award in Beat Reporting, Loeb finalist 2012 (UAW)
+- Education: Northwestern University BA
+- Recognition: Wisconsin School of Business 2025 Business Journalist in Residence
+- Key analytical insight: WSJ → Reuters boomerang migration. As former primary Meta beat reporter at WSJ, now shapes wire-service AI framing that feeds into all tracked publications. Syndicated via 11+ outlets (UOL, Business Insider, Fox News, HuffPost, MSN, etc.)
+- Sources: Talking Biz News (2 articles), Muck Rack, Wisconsin School of Business
+
+**Tests:** 2,237 passed, 0 failed (no test changes — profile data only)
+**Commit:** `11646ce` pushed to GitHub
+
 ## 2026-07-11 05:00 PT — Type A: Article Deep Dive (Washington Examiner / Muse Image Privacy)
 
 **Article:** "Privacy advocates fret over Meta image tool that works on public accounts" (Washington Examiner, Jul 10, 2026)
