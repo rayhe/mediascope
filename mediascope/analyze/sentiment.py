@@ -619,6 +619,18 @@ EMOTIONAL_LANGUAGE: list[str] = [
     # as unreasonable, "vexing" frames problems as frustrating. Discovered
     # in Barron's Meta gigawatt/Iris article analysis (Jul 9).
     "lofty", "vexing",
+    # Sardonic/critical concern vocabulary — terms used to build incremental
+    # editorial alarm through understatement rather than explicit negativity.
+    # VADER reads these as neutral because they're not traditionally loaded,
+    # but they carry significant editorial weight in skeptical tech coverage.
+    # Gap discovered via Gizmodo Muse Image article (Jul 8, 2026):
+    #   "Somewhat more worryingly" / "Even *more* worryingly"
+    "worryingly", "worrying",
+    "unsurprisingly",
+    "sexualized", "sexualised",
+    "presumably",
+    "long overdue",
+    "slop generator",
 ]
 
 # Passive/victim vs. active/powerful framing indicators

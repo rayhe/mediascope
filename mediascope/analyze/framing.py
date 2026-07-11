@@ -1119,6 +1119,19 @@ _CROSS_PUBLICATION_IMPORT_PATTERNS: list[re.Pattern] = [
         r"labeled|labelled|characterized\s+as)\b",
         re.IGNORECASE,
     ),
+    # "As noted/reported/documented/found by [publication]" — direct
+    # credibility-import phrasing that lends another outlet's investigation
+    # weight to the current article's claims.
+    # Discovered via Gizmodo Muse Image article (Jul 8, 2026):
+    #   "As noted by Wired, allowing others to access your likeness..."
+    re.compile(
+        r"\b[Aa]s\s+(?:noted|reported|documented|found|revealed|"
+        r"described|detailed|highlighted|shown|uncovered|"
+        r"first reported|previously reported|initially reported)\s+"
+        r"(?:by|in)\s+(?:[A-Z][\w\s]{0,40}?)"
+        r"(?:\s*,|\s*\.|\s+(?:the|this|that|it|they|allowing|users?))",
+        re.DOTALL,
+    ),
     # Secondary-reporting attribution: "[pub] reports", "per the [pub]",
     # "[source] told [pub]".  These import credibility from the original
     # investigation.  Distinct from self_referential_investigation (which
@@ -4460,6 +4473,22 @@ _ESCALATION_AMPLIFICATION_PATTERNS: list[re.Pattern] = [
         r"discontent|resentment)s?\b",
         re.IGNORECASE,
     ),
+    # Comparative-adverb concern escalation: "more worryingly",
+    # "even more worryingly", "more alarming(ly)", "more troubling(ly)".
+    # This pattern catches editorial escalation through comparative
+    # adverbs paired with concern words, a device that builds dread
+    # incrementally across paragraphs.
+    # Discovered via Gizmodo Muse Image article (Jul 8, 2026):
+    #   "Somewhat more worryingly, however..."
+    #   "Even *more* worryingly, this works with random people"
+    re.compile(
+        r"\b(?:(?:even|somewhat|far|much|still|yet)\s+)?"
+        r"(?:\*?)more(?:\*?)\s+"
+        r"(?:worrying(?:ly)?|alarming(?:ly)?|troubling(?:ly)?|"
+        r"disturbing(?:ly)?|concerning(?:ly)?|frightening(?:ly)?|"
+        r"ominous(?:ly)?|unsettling(?:ly)?|chilling(?:ly)?)\b",
+        re.IGNORECASE,
+    ),
     # "a growing/mounting/rising/increasing number of [noun]" — trend-
     # magnification phrase that editorially amplifies perceived momentum
     # by framing isolated events as part of an accelerating trend.
@@ -4908,6 +4937,41 @@ _EDITORIAL_ASIDE_PATTERNS: list[re.Pattern] = [
         r"(?:after all|in the end|it turns out|apparently|somehow)"
         r"[.!]",
         re.MULTILINE,
+    ),
+    # Sarcastic hedge: "So I guess" / "I guess from a certain standpoint"
+    # — the author feigns uncertainty or concession to create a sardonic
+    # tone, typically followed by an absurd or self-evidently negative
+    # conclusion.  Not a genuine hedge but a rhetorical stance.
+    # Discovered via Gizmodo Muse Image article (Jul 8, 2026):
+    #   "So I guess from a certain standpoint, a social media slop
+    #   generator from Meta is long overdue."
+    re.compile(
+        r"\b(?:So\s+)?I\s+guess\s+(?:from\s+|in\s+|by\s+)?"
+        r"(?:a\s+certain\s+|some\s+|that\s+|one\s+|this\s+)?"
+        r"(?:standpoint|perspective|point\s+of\s+view|angle|sense|logic)",
+        re.IGNORECASE,
+    ),
+    # Reader correction: "you would be wrong" / "but you'd be wrong"
+    # — direct address that sets up a reader assumption then punctures it,
+    # positioning the subject as deceptive or surprising.
+    # Discovered via Gizmodo Muse Image article (Jul 8, 2026):
+    #   "but you would be wrong"
+    re.compile(
+        r"\b(?:but\s+)?you\s+(?:would|'?d)\s+be\s+"
+        r"(?:wrong|mistaken|incorrect|surprised|disappointed)\b",
+        re.IGNORECASE,
+    ),
+    # Memory erasure aside: "In case you blocked out this memory" /
+    # "In case you forgot" — sardonic reminder that assumes the reader
+    # is deliberately avoiding an unpleasant truth, creating complicity.
+    # Discovered via Gizmodo Muse Image article (Jul 8, 2026):
+    #   "In case you blocked out this memory"
+    re.compile(
+        r"\b[Ii]n\s+case\s+you\s+(?:blocked\s+out|forgot|"
+        r"missed|don'?t\s+remember|hadn'?t\s+(?:noticed|heard)|"
+        r"weren'?t\s+(?:paying\s+attention|aware)|"
+        r"managed\s+to\s+(?:forget|miss|avoid))\b",
+        re.IGNORECASE,
     ),
 ]
 _DEVICE_PATTERNS["editorial_aside"] = _EDITORIAL_ASIDE_PATTERNS

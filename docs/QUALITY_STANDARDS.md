@@ -225,13 +225,13 @@ Every article analysis that introduces a toolkit correction must include:
 4. **Gap analysis** — why the gap exists and which specific framing devices or detection failures caused it
 5. **Regression tests** — at least one test per correction to prevent future regressions
 
-This ensures the correction pipeline is validated against real articles, not synthetic examples. All 148 annotated articles in `examples/sample_output/` follow this pattern.
+This ensures the correction pipeline is validated against real articles, not synthetic examples. All 149 annotated articles in `examples/sample_output/` follow this pattern.
 
 ## 8. Emotional Language Validation
 
 ### 8.1 The Term Lexicon
 
-MediaScope maintains a curated lexicon of **853 emotional language terms** used for emotional intensity scoring (§1.2, dimension 2), outsourced intensity measurement (§7), and framing device detection. Unlike VADER's fixed sentiment lexicon, this list is continuously expanded from real article analysis — every article deep dive that reveals missing terms results in additions with regression tests.
+MediaScope maintains a curated lexicon of **861 emotional language terms** used for emotional intensity scoring (§1.2, dimension 2), outsourced intensity measurement (§7), and framing device detection. Unlike VADER's fixed sentiment lexicon, this list is continuously expanded from real article analysis — every article deep dive that reveals missing terms results in additions with regression tests.
 
 ### 8.2 Term Categories
 
@@ -265,7 +265,7 @@ Every addition to the emotional language lexicon must meet these standards:
 
 ### 8.4 Impact on Scoring
 
-Emotional intensity is the ratio of emotional language hits to total word count. Because the lexicon started at ~500 terms and has grown to 853, scores on older analyses may differ from current runs. The `SentimentResult` includes the raw hit count and word count so the density can be recomputed.
+Emotional intensity is the ratio of emotional language hits to total word count. Because the lexicon started at ~500 terms and has grown to 861, scores on older analyses may differ from current runs. The `SentimentResult` includes the raw hit count and word count so the density can be recomputed.
 
 **Common patterns by score range:**
 

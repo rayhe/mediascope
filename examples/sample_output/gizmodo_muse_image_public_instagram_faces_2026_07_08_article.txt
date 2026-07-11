@@ -1,0 +1,32 @@
+# If You Have a Public Instagram Account, You Might Be Surprised at What AI Users Can Now Do With Your Face
+
+Publication: Gizmodo
+Date: July 8, 2026
+Author: Not credited in body (Gizmodo staff)
+URL: https://gizmodo.com/if-you-have-a-public-instagram-account-you-might-be-surprised-what-ai-users-can-now-do-with-your-face-2000782694
+
+In a blog post on Tuesday, Meta announced the release of an AI image generator called Muse Image, along with an as-yet unreleased video generator called Muse Video. Elon Musk's X rolled out something very much like this image generator, which features social media integration, about two years ago, and OpenAI released its video generator via the Sora social media app in September of last year. So I guess from a certain standpoint, a social media slop generator from Meta is long overdue.
+
+Then again, OpenAI announced it was killing Sora this past March, before pivoting its company's entire focus. Meanwhile X's integration of Grok images hasn't gone all that well either. In case you blocked out this memory, during this past holiday season it became a meme on X to ask Grok to generate sexualized images of people, including minors.
+
+You might assume Meta would not want this to be in any way reminiscent of those past AI social media products, but you would be wrong. Muse Image pulls information from your Instagram. If you're in a browser, the cleanest way to see it in action is to go to the Meta AI web app at meta.ai, log in using your Instagram account, and ask the chatbot interface to generate a picture of yourself.
+
+My Instagram account is private, but apparently since I was prompting it about my own account—the one I was logged in as—it was able to dig around in my photos anyway. However, the visible chain-of-reasoning display in the app said there wasn't enough information in my photo feed about my appearance for Muse Image to draw on, so instead it generated an image of a random guy and explained that it would pretend that was me, and I could alter it later. That was a silly alternative to just saying it couldn't fulfill my prompt, but it didn't bother me.
+
+Somewhat more worryingly, however, you can also prompt the chatbot to generate an image using details pulled from someone else's Instagram account. Unsurprisingly, I was allowed to do this with prompts about Mark Zuckerberg.
+
+Even *more* worryingly, this works with random people as well. I was able to generate (completely anodyne) images of someone I'm friends with on Instagram. In another test, I was able to generate an image of a real-world friend I've never followed or interacted with on Instagram—essentially a digital stranger—without asking this person's permission.
+
+As noted by Wired, allowing others to access your likeness in this way is currently the default setting in Instagram if you have a public account. Instagram has updated the relevant help page to disclose this, alongside a related disclosure that's worth reading. That section now says (emphasis mine):
+
+"If you have a public account, other Instagram users may be able to create new reels, posts or stories that reuse part or all of your published photos, videos or reels in features like remix, sequence, templates and stickers. In addition, people may be able to create content with your Instagram content using AI features at Meta. Depending on the settings of the other user, this means your reused content may be discoverable in search engine results."
+
+In my tests, the quickest way for an Instagram user to shut this down was to set their account to private using a browser. If you have the Instagram smartphone app, you can opt-out (per Wired) by going to your profile, tapping the hamburger button at the top-right corner, and finding the tab for "Sharing and reuse." There'll be an option to "Allow people to use your content on Instagram and with AI features on Meta," and you can toggle "Posts" and "Reels" to the off setting.
+
+According to Meta's blog post this functionality is now built into Instagram Stories for U.S. users, and in some territories, to WhatsApp. Facebook will apparently get it soon. Meanwhile, Muse Video is coming soon to Meta AI, the blog post says. Presumably that will generate videos as easily as it can currently generate photos.
+
+Gizmodo reached out to Meta for comment.
+
+Update: Shortly after publication, a Meta spokesperson provided the statement below.
+
+"Muse Image has built-in protections to help prevent the generation of policy-violating content, including violent, sexual, or defamatory imagery of real people. Content that violates our policies — whether reported by users or detected by our systems — is subject to enforcement under our Community Standards."
