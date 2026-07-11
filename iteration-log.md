@@ -19205,3 +19205,88 @@ Gizmodo LED tamper article ("Destroying the Privacy LED on Meta Smart Glasses Wi
 - Total regex patterns: **562** across **89** pattern-matched device types
 - Framing device types: **96** (10 core + 79 extended + 7 structural)
 - Same-event clusters: **13** (5 Tier 1, 8 Tier 2)
+
+## 2026-07-11 06:00 PT — Type B: Journalist/Publication Research (The Verge editorial depth)
+
+**Focus:** The Verge had the second-fewest tracked journalists (34) among tracked publications and ZERO editorial_changes entries when the `the_verge:` key's entries were checked — critical gap given PMC ownership change.
+
+**Major discovery:** Verified Penske Media Corporation (PMC) acquisition of The Verge from Vox Media (June 2026), creating PMX subsidiary. Already documented in the-verge.yaml ownership chain but not cross-referenced with editorial changes timeline. Also verified Lupa Systems (James Murdoch) separate acquisition of New York Magazine, Vox.com, and Vox Media Podcast Network (May 2026).
+
+**New journalists added (#218→222, +4 net after Patel dedup):**
+
+### Nilay Patel (comprehensive rewrite, replaced skeletal entry)
+- **Career:** Saper Law Offices (copyright attorney) → Engadget (managing editor, 2008-2011) → The Verge (co-founder/managing editor, 2011-2014) → Vox (acting ME, brief) → The Verge (EIC, 2014-present)
+- **Key context:** University of Chicago AB (2003), UWisconsin JD (2006). Host of Decoder + The Vergecast. Coined "Google Zero." Adweek Creative 100 (2021). Introduced subscription paywall (Dec 2024). Navigated PMC transition. 12+ year EIC tenure.
+- **Sources:** Wikipedia, Computer History Museum, Vox Media Podcast Network bio, Leigh Bureau speaker profile, Talking Biz News
+
+### Dieter Bohn (#219, new)
+- **Career:** Engadget (reporter, 2007-2011) → The Verge (executive editor/co-founder, 2011-2022) → Google (PM, 2022-present)
+- **Key context:** Co-hosted Vergecast for a decade. Departure for Google created leadership vacuum filled by Cranz (ME) + Heath (deputy editor) + Kastrenakes (promoted to exec editor 2024)
+- **Sources:** Talking Biz News, Wikipedia (The Verge)
+
+### Alex Cranz (#220, new)
+- **Career:** Tom's Guide/Laptop Magazine (associate reviews editor, ~2014-2016) → Gizmodo (senior consumer tech editor, 2016-2021) → The Verge (managing editor, 2021-present)
+- **Key context:** Vergecast co-host (core trio with Patel + Pierce). Daily editorial gatekeeper. Gizmodo/G/O Media adversarial culture import. University of the South.
+- **Sources:** Talking Biz News, RocketReach, podcast appearances
+
+### Wes Davis (#221, new)
+- **Career:** Freelance (CNN, WSJ, PCWorld, Gizmodo AU, Tom's Hardware, Tom's Guide, 2020-2022) → The Verge (weekend editor, 2022-present)
+- **Key context:** 1,725+ articles — one of The Verge's most prolific writers. Milwaukee-based. Extremely broad beat. Volume shapes weekend/overnight news framing disproportionately.
+- **Sources:** JournalistHunt profile, Muck Rack
+
+### Jon Porter (#222, new)
+- **Career:** TechRadar (~2017-2019) → Trusted Reviews (senior news writer, ~6mo, 2019) → The Verge (reporter, 2019-2024)
+- **Key context:** UK-based, EU tech policy specialist (DMA, DSA, GDPR, AI Act). BBC regular. 5-year tenure. Departure reduced EU regulatory coverage capacity.
+- **Sources:** Talking Biz News departure notice, Muck Rack
+
+**New editorial changes added (the_verge section, 29→34 entries):**
+1. Alex Cranz managing editor hire (2021)
+2. Dieter Bohn executive editor departure (2022-03, to Google PM)
+3. Wes Davis weekend editor hire (2022)
+4. Jon Porter UK reporter departure (~2024)
+5. December 2024 paywall launch (structural business model change)
+
+**Data quality fixes:**
+- Removed 5 entries with extraneous `publication: the-verge` keys (already correctly nested under `the_verge:` key)
+- Removed duplicate Nilay Patel entry (skeletal, no notes) — kept comprehensive new entry
+
+**Documentation updates:** README.md, EDITORIAL_HISTORIES.md, careers_demo.py — journalist count 218→222, multi-pub 210→214, migrations 683→689, publications 390+→400+
+
+**Tests:** 2,237 passed (0 new tests this iteration — purely data additions), 0 failed
+**Commit:** `32f0e9b` pushed to GitHub
+
+## 2026-07-11 07:00 PT — Type C: Ownership & Funding Deep Dive (Apple v. OpenAI + Advance Equity Refresh)
+
+**Focus:** Apple v. OpenAI trade secrets lawsuit (filed Jul 10-11, NDCA) and its cross-publication conflict implications; Advance Publications public equity portfolio refresh with Jul 10 close prices.
+
+**New findings:**
+
+### 1. Apple v. OpenAI Trade Secrets Lawsuit (Filed Jul 10-11, 2026)
+- **Case:** Apple Inc. v. OpenAI Foundation et al., N.D. Cal.
+- **Defendants:** OpenAI Foundation, OpenAI Group PBC, io Products (Jony Ive's company), Tang Yew Tan, Chang Liu
+- **Allegations:** Systematic trade secret theft through 400+ former Apple employees at OpenAI
+  - Tang Yew Tan: 24-year Apple veteran, ex-VP iPhone/Apple Watch design → OpenAI Chief Hardware Officer. Emailed himself supplier info, used Apple codenames in interviews, directed "show and tell" sessions with stolen Apple parts
+  - Chang Liu: ex-Senior System Electrical Engineer → OpenAI (Jan 2026). Unreturned laptop, exploited auth bug to access Apple network remotely, coached colleague Alyssa Peng on evasion (she also left for OpenAI Apr 2026)
+  - OpenAI denial: "We have no interest in other companies' trade secrets"
+- **CONFLICT SIGNIFICANCE FOR TRACKED PUBLICATIONS:**
+  - **Condé Nast (Wired):** Has AI licensing deals with BOTH Apple Intelligence (in negotiations) AND OpenAI (~$70M/yr). Any coverage of this lawsuit involves TWO current/prospective AI revenue partners — a novel dual-partner conflict with no existing disclosure framework
+  - **NYT:** Suing OpenAI separately (sanctions motion Jul 9) — covers Apple v. OpenAI as a co-plaintiff in interest against the same defendant
+  - **Susman Godfrey:** Represents both NYT and PMC/Verge against different defendants; Apple lawsuit adds material OpenAI IPO risk factor atop existing sanctions motion
+- **Added to:** wired.yaml (new APPLE v. OPENAI section, 30 lines), nytimes.yaml (cross-reference, 10 lines), the-verge.yaml (Susman Godfrey update, 7 lines)
+- **Sources:** Reuters, CNN, USA Today, Barron's, Fox Business, MarketWatch, NY Post (all Jul 10-11)
+
+### 2. Advance Publications Public Equity Refresh (Jul 10 close prices)
+- **RDDT:** $195.09 (close, -2.61%). Advance stake: 42,207,274 × $195.09 = $8.24B. Q2 earnings Jul 30. TTM: revenue $2.2B, net income $530M, P/E 55.74. YTD -15.17%
+- **CHTR:** $130.73 (close, -2.69%). Market cap $18.6B. Advance ~13% ≈ $2.42B. Consensus "Reduce" (6 sell, 8 hold, 5 buy). Q2 earnings Jul 24
+- **WBD:** $26.59 (close, -0.15%). Market cap $64.5B. Advance ~3.97% ≈ $2.56B. Consensus "Hold" (2 sell, 13 hold, 7 buy). Q2 earnings Aug 6
+- **Total Advance public equity:** ~$13.23B (down from ~$13.51B, -2.1%)
+- **Reddit concentration:** 62.3% of total (up from 60.7%, reflecting larger CHTR decline)
+- Updated in wired.yaml: RDDT price trajectory, margin loan buffer, total equity, concentration ratio
+
+**Profile changes (4 files, +114/−20 lines):**
+- `profiles/wired.yaml`: +49 net lines (RDDT/CHTR/WBD refresh, Apple v. OpenAI conflict section, equity totals)
+- `profiles/nytimes.yaml`: +9 lines (Apple v. OpenAI cross-reference in OpenAI litigation)
+- `profiles/the-verge.yaml`: +7 lines (Susman Godfrey Apple v. OpenAI update)
+- `iteration-log.md`: this entry
+
+**Tests:** 2,237 passed, 0 failed

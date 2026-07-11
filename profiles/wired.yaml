@@ -288,15 +288,14 @@ advance_investments:
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
     current_value_estimate: >
-      ~$8.20B at $194.11/share (Jul 10, 2026 afternoon, -3.10% from prev close). Reddit market cap ~$37.6B.
+      ~$8.25B at $195.09/share (Jul 10, 2026 close, -2.61%). Reddit market cap ~$37.6B.
       PRICE TRAJECTORY: +13.69% on Jul 1 (close $197.42, high $201.16 intraday), then
       -1.44% pullback Jul 2 (close $194.67), recovery to $200.67 Jul 6, then
-      -0.77% to $199.32 Jul 7, +0.50% to $200.31 Jul 9 close. Jul 10: sharp selloff
-      -3.10% to $194.11 (high $208.05, low $193.66 — significant intraday volatility range
-      of $14.39). Broke below $200 support. Biggest single-day decline since mid-June.
-      Net +11.8% from Jun 30 close ($173.65). 52-week range $119.27-$282.95. Beta 2.23.
-      Year-to-date: still below Jan 2026 highs ~$231. Reddit now
-      ~60.8% of Advance's public equity. 42,207,274 total shares × $194.11 = $8.20B.
+      -0.77% to $199.32 Jul 7, +0.50% to $200.31 Jul 9 close. Jul 10: selloff
+      -2.61% to $195.09 (high $208.05, low $192.61). Broke below $200 support.
+      Net +12.4% from Jun 30 close ($173.65). 52-week range $119.27-$282.95. Beta 2.23.
+      Year-to-date: -15.17%. Reddit now
+      ~62.3% of Advance's public equity. 42,207,274 total shares × $195.09 = $8.24B.
       ADVANCE SHARE BREAKDOWN (verified from Reddit 2025 proxy, Dkt. rddt-20250428):
         - 42,191,092 shares of Class B common stock (10 votes/share)
         - 16,182 shares of Class A common stock (1 vote/share)
@@ -304,15 +303,16 @@ advance_investments:
         - AP board (voting/investment decisions): Michael A. Newhouse, Steven O. Newhouse,
           Samuel I. Newhouse III, Thomas S. Summer, Jamie Miller, Victor F. Ganzi.
         - Huffman irrevocable proxy covers all shares per Advance Voting Agreement.
-      Analyst consensus (Jul 9): 18 buy, 12 hold, avg 12-mo PT $231.14. Moderate Buy.
-      Predicted upside: 18.25%. Recent: Wells Fargo boosted $176→$187 (Jul 7, Equal Weight),
+      Analyst consensus (Jul 10): 18 buy, 12 hold, avg 12-mo PT $231.14. Moderate Buy.
+      Predicted upside: 18.5%. Recent: Wells Fargo boosted $176→$187 (Jul 7, Equal Weight),
       Needham $300 (Jun 24, Buy — highest on Street), Loop Capital $260 (Jun 4, Buy).
       Q2 2026 EARNINGS: July 30 (after market close). Reddit Q2 guidance: $715-725M revenue.
-      Consensus EPS ~$0.99-1.01 (Zacks/MarketBeat range). Revenue consensus ~$712-747M.
+      Consensus EPS ~$0.99-1.01. Revenue consensus ~$712-747M.
+      Reddit Q1 2026: EPS $1.01 (beat $0.62 by $0.39), revenue $663.41M (+69.1% YoY).
+      TTM: revenue $2.2B, net income $530M, EPS $3.50, P/E 55.74.
       Reddit beat consensus ALL 4 trailing quarters by significant margins.
       MARGIN LOAN BUFFER: The 7.8M shares pledged as collateral (at $145-148 offering)
-      are now worth ~$1.53B at $194.11 — 30-32% above offering price, comfortable cushion
-      but narrowing from previous $197+ levels.
+      are now worth ~$1.52B at $195.09 — 31-34% above offering price, comfortable cushion.
       INSIDER SELLING (last 90 days, MarketBeat Jul 7): Reddit insiders sold $36.9M total.
       CEO Steve Huffman sold 18,000 shares at $178.26 ($3.2M, Jun 15, 10b5-1 plan, -4.59%).
       COO Jennifer Wong sold 39,166 shares at $176.94 ($6.9M, Jun 16, 10b5-1 plan, -3.59%).
@@ -822,16 +822,16 @@ advance_investments:
 # ACBJ: Private
 # IRONMAN Group: Private
 # Other holdings: Private
-# TOTAL PUBLIC EQUITY: ~$13.51B at market (Reddit + Charter + WBD, Jul 10 afternoon prices)
-# TOTAL PUBLIC EQUITY (if Paramount closes at $30): ~$13.94B
+# TOTAL PUBLIC EQUITY: ~$13.23B at market (Reddit + Charter + WBD, Jul 10 close prices)
+# Breakdown: RDDT $8.24B + CHTR ~$2.42B (13% × $18.6B mktcap) + WBD ~$2.56B (3.97% × $64.5B mktcap)
+# Down from ~$13.51B (Jul 9) — broad market pullback hit RDDT (-2.61%) and CHTR (-2.69%) hardest.
+# CHTR: $130.73 close, consensus "Reduce" (6 sell, 8 hold, 5 buy). Q2 earnings Jul 24.
+# WBD: $26.59 close, consensus "Hold" (2 sell, 13 hold, 7 buy). Q2 earnings Aug 6. TTM EPS -$0.70.
 # TOTAL PRIVATE SUBSIDIARIES: Turnitin (~$1.75B+ est.), Condé Nast, ACBJ, IRONMAN, PADI, POP, Stage, NSF
 # HawkEye 360: EXITED via IPO May 2026 at ~$2.4B valuation
 # Donald Newhouse net worth at death: $15.4B (Forbes May 2026)
 #
-# KEY PORTFOLIO CONCENTRATION: Reddit is now ~60.7% of Advance's public equity (~$8.20B of ~$13.51B).
-# This is the highest Reddit concentration on record, driven by the Jul 1 surge and continued
-# recovery. Advance's public equity increased ~$1.50B in 6 trading days (Jun 27→Jul 7), almost
-# entirely from Reddit's +15.7%.
+# KEY PORTFOLIO CONCENTRATION: Reddit is now ~62.3% of Advance's public equity (~$8.24B of ~$13.23B).
 # Advance is also LEVERAGING Reddit for capital (Nov 2024: $1.2B credit facility collateralized
 # by 7.8M Reddit shares). This means Advance's capital access — which could fund Condé Nast
 # operations — is directly tied to Reddit's stock price. Combined with Reddit's Q1 2026
@@ -914,6 +914,35 @@ advance_investments:
 #      with BOTH OpenAI and Anthropic deals (like The Atlantic) face dual disclosure.
 # SOURCE: Reuters Jul 8, 2026 (BofA $520M credit line); Bloomberg Law; Reuters Jul 10
 # (NYT sanctions motion); SEC EDGAR (IPO filing tracking)
+#
+# APPLE v. OPENAI TRADE SECRETS LAWSUIT (Filed Jul 10-11, 2026):
+# Apple Inc. v. OpenAI Foundation et al., NDCA (N.D. Cal.). Apple alleges systematic
+# trade secret theft by former employees now at OpenAI:
+#   - Tang Yew Tan: 24-year Apple veteran, ex-VP iPhone & Apple Watch design → OpenAI
+#     Chief Hardware Officer. Allegedly emailed himself supplier info, used Apple codenames
+#     to probe candidates about unreleased products, directed Apple employees to bring
+#     "actual parts" to OpenAI interviews for "show and tell" sessions.
+#   - Chang Liu: ex-Senior System Electrical Engineer → OpenAI Technical Staff (Jan 2026).
+#     Allegedly failed to return company laptop, exploited auth bug to access Apple network
+#     remotely, downloaded dozens of confidential hardware files. Coached colleague Alyssa
+#     Peng (who also left for OpenAI Apr 2026) on security evasion.
+#   - io Products (Jony Ive's company, acquired by OpenAI 2025) also named as defendant.
+#     Jony Ive NOT named/accused personally.
+#   - Apple alleges 400+ former Apple employees now work at OpenAI. Calls this
+#     "institutional" theft — "the tip of the iceberg."
+#   - OpenAI denied allegations: "We have no interest in other companies' trade secrets."
+#   CONFLICT SIGNIFICANCE FOR TRACKED PUBLICATIONS:
+#     Condé Nast has AI licensing deals with BOTH Apple Intelligence (in negotiations)
+#     AND OpenAI (~$70M/yr). Coverage of Apple v. OpenAI by any Condé Nast property
+#     (Wired, New Yorker, etc.) inherently involves TWO of Condé Nast's current or
+#     prospective AI revenue partners. This is a DUAL-PARTNER conflict: any editorial
+#     framing that favors one party disadvantages the other — but both are Condé Nast
+#     licensees/partners. No disclosure framework currently covers this scenario.
+#     NYT (suing OpenAI separately) covers this as a co-plaintiff in interest.
+#     Susman Godfrey represents BOTH NYT and PMC/Verge — shared outside counsel
+#     covering Apple v. OpenAI while representing clients against OpenAI and Google.
+#   SOURCES: Reuters, CNN, USA Today, Barron's, Fox Business, MarketWatch (all Jul 10-11, 2026);
+#   NDCA filing; NY Post
 
 # ===================================================================
 # REVENUE RELATIONSHIPS — Condé Nast AI licensing deals
@@ -1338,8 +1367,8 @@ known_conflicts:
       from 52-week high, though SpaceX mobile partnership talks may offer inflection) and WBD approaches
       a Paramount Skydance acquisition at $30/share (now delayed to Jul 22+ amid Oregon AG probe and
       imminent multistate lawsuit), Reddit is becoming an ever-larger share
-      of Advance's public portfolio. Reddit now represents ~60.8% of Advance's public equity (~$8.25B of
-      ~$13.51B), up from ~40% at time of IPO. If Paramount closes and WBD cash is redeployed, and Charter
+      of Advance's public portfolio. Reddit now represents ~62.3% of Advance's public equity (~$8.24B of
+      ~$13.23B), up from ~40% at time of IPO. If Paramount closes and WBD cash is redeployed, and Charter
       continues declining (or pivots to SpaceX mobile but doesn't immediately recover), Reddit could
       represent 65-70%+ of Advance's public portfolio. This CONCENTRATION makes the conflict-of-interest
       between Reddit (direct Meta competitor) and Wired's Meta coverage even more acute — the Newhouse
