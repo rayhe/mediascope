@@ -2,6 +2,32 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-11 09:00 PT — Type C: Ownership & Funding Deep Dive (Wired/Condé Nast)
+
+**Focus:** Advance/Newhouse portfolio valuation update + WBD/Paramount merger developments + Condé Nast data breach addition
+
+### Stock Price Updates (Jul 10 close)
+- RDDT: $195.34 (Advance stake ~$8.24B)
+- CHTR: $130.73 (Advance stake ~$2.69B, -2.69% on day)
+- WBD: $26.59 (Advance remaining ~$2.56B at market, ~$2.94B at $30 tender)
+- Total Advance public equity: ~$13.23B
+- WBD current_value_estimate updated from stale Jul 2 price ($26.48 → $26.59)
+
+### WBD/Paramount Merger — Oregon AG Withdrawal (Jul 11)
+- Oregon AG Dan Rayfield WITHDREW court motion to delay Paramount-WBD deal (Reuters, Jul 11)
+- Oregon DOJ: "Paramount made it clear they weren't going to comply... We've withdrawn the motion to consider our next steps"
+- Removes most immediate legal obstacle; multistate AG antitrust lawsuit still expected
+- Updated both merger narrative section and portfolio summary comments
+- Added Reuters source URL for withdrawal
+
+### Condé Nast "Lovely" Data Breach (Dec 2025)
+- Added ~45-line section documenting 2,366,576 Wired subscriber records leaked by hacker "Lovely"
+- 6 source URLs (BleepingComputer, The Register, Security Affairs, TechRadar, PYMNTS, E&P)
+- Fixed YAML parse error: data_breach_source_urls key was breaking description flow, moved after text block
+
+### Commit
+- `e829e45`: Type C — 61 insertions, 16 deletions. All tests passing (2,242 total, 0 failures).
+
 ## 2026-07-11 07:00 PT — Type B: Journalist/Publication Research (4 profile expansions)
 
 **Journalists updated:** Andy Greenberg (Wired), Dan Milmo (Guardian), Sapna Maheshwari (NYT), Deepa Seetharaman (WSJ→Reuters)
