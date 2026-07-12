@@ -1,5 +1,40 @@
 # MediaScope Iteration Log
 
+## 2026-07-12 06:00 PT — Type A: Article Deep Dive (Gizmodo Siege/Surveillance Roundup)
+
+**Focus:** Gizmodo "Meta's Social Media Empire Is Under Siege. Its Plan for the Future Is to Watch You Even More Closely" (Jul 11, 2026) — a consolidation article weaving 6 distinct Meta narratives into a single "siege + ironic escalation" frame.
+
+### Article Analysis
+
+Full analysis at `examples/sample_output/gizmodo_meta_siege_surveillance_roundup_2026_07_11_analysis.md`.
+
+**6 narratives consolidated:** EU DSA addictive design findings, $1.4T state penalty demand, VR/Horizon Worlds shutdown, data center leasing pivot, super sensing glasses prototype (FT), emotion-tracking patent (Patentlyze).
+
+**8 framing devices confirmed:** Escalation Amplification, Juxtaposition (structural — first half: threats, second half: surveillance products), Editorial Dramatization, Loaded Language, Reader Positioning ("If you think that sounds creepy"), Editorial Aside ("And somehow, all of that is supposed to lead to better workouts"), Kicker Framing (predictive ominous close), Recidivism Framing (implied serial offender pattern).
+
+**Notable absence:** CEO Personalization — Zuckerberg is NOT mentioned by name anywhere. Unusual for Meta coverage; the article frames problems as institutional rather than personal.
+
+**Proposed new framing device:** "Ironic Consolidation" — bundling multiple independent negative narratives into a single piece with ironic connections between them. Each story alone is standard news; combined, they create a "pattern of corporate character" argument. Distinct from Trend Bundling (#27), Recidivism (#97), and Juxtaposition (#24). Needs 3+ additional examples before promotion to device #99.
+
+**Sentiment gap:** Manual assessment −0.72, expected VADER −0.38 to −0.45 — a **0.27–0.34 underestimate** due to structural irony. The article's negativity is achieved through macro-level organization (juxtaposition of regulatory threats against surveillance expansion), which is invisible at the sentence level. Proposed Path L candidate: "Structural Irony" correction.
+
+### Entity Improvements (2 changes)
+
+1. **New cluster #85: Patent/IP Research** — Patentlyze, PatSnap, Innography. Patent analysis firms acting as intermediary sources in tech journalism. Patentlyze discovered Meta's emotion-tracking patent filing; their findings then propagated to Gizmodo and 404 Media. Growing pattern worth tracking.
+
+2. **EU Regulatory expanded (#55): 9→12 aliases** — Added Henna Virkkunen (EU Executive Vice-President for Tech Sovereignty, Security and Democracy), Margrethe Vestager (former competition chief), and the Tech Sovereignty title reference. Virkkunen is the key official quoted in DSA enforcement coverage and was previously untracked.
+
+### Stats After This Iteration
+
+- Entity clusters: 85 (was 84)
+- Total aliases: 835 (was 827)
+- Annotated articles: 160 (was 159)
+- Tests: 2,272 passed, 0 failed
+
+**Commit:** `7e37957` — pushed to GitHub.
+
+---
+
 ## 2026-07-12 05:00 PT — Type D: Toolkit Quality & Documentation (Sentiment Correction Reference Card)
 
 **Focus:** Created `SENTIMENT_CORRECTION_REFERENCE.md` — the missing quick-reference card for the sentiment correction pipeline. Every other major subsystem (entities, framing, topics, sources) already had a dedicated reference card; the 11 correction paths (A–K) were only documented inline in METHODOLOGY.md and sentiment.py.
