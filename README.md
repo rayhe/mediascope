@@ -43,8 +43,8 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 |---|---|---|
 | Entity clusters | 85 | 835 aliases, 63 with custom regex, 22 auto-generated |
 | Framing device types | 101 | 10 core + 84 extended + 7 structural (post-pass) |
-| Framing patterns | 637 | Compiled regex patterns across 91 pattern-based types |
-| Emotional language terms | 941 | Domain-specific lexicon for editorial EI scoring |
+| Framing patterns | 641 | Compiled regex patterns across 91 pattern-based types |
+| Emotional language terms | 971 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 29 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 11 | Paths A–K, each addressing a specific VADER failure mode |
 | Annotated articles | 161 | Full manual analysis in `examples/sample_output/` |
