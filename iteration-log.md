@@ -19958,3 +19958,34 @@ Both vectors serve the Atlantic's 2025-2026 expansion strategy: 51 editorial cha
 
 ### Commit
 - `3940323`: Type B — 5,995 insertions, 3,715 deletions (YAML reserialization + Kang profile expansion). Pushed to GitHub.
+
+## 2026-07-12 02:00 PT — Type B: Journalist/Publication Research
+
+**Focus:** Deep research on Will Oremus (WaPo → Atlantic) and Gilad Edelman (Wired → FTC → freelance)
+
+### Why These Two
+- Both had **0 source_urls** and sparse notes despite being significant tech journalists
+- Oremus's WaPo → Atlantic migration (Feb 2026 layoff wave → ~30-person talent wave) is a live DiD natural experiment
+- Edelman's Wired → FTC → freelance trajectory is unique in the dataset — regulator-journalist revolving door
+
+### Will Oremus — Profile Expansion
+1. **Added early career**: Palo Alto Daily News (local news reporter) — previously undocumented
+2. **Expanded Slate entry**: "If Then" podcast co-hosted with April Glaser, 2012 NMA nomination, Columbus OH origin
+3. **OneZero**: Medium buyout March 2021
+4. **WaPo**: team size 35, Tech 202 newsletter, notable works, Feb 2026 layoff context
+5. **Atlantic**: Part of ~30-person WaPo→Atlantic talent wave; Goldberg/Thompson quotes from The Wrap
+6. **Added 5 source_urls**, set `multi_publication: true`
+
+### Gilad Edelman — Profile Expansion
+1. **Fixed Wired role**: `politics_writer` not `senior_writer` per all sources
+2. **Washington Monthly**: cover stories added (Monopoly Nov 2017, Socialist Network Jul 2018)
+3. **Wired**: cover story "Paradise at the Crypto Arcade" May 2022, podcast appearances
+4. **FTC**: "briefly @FTC" self-description, ~7 months Sep 2022–Apr 2023
+5. **Added 5 source_urls** (TheOrg, TalkingBizNews, MuckRack, BuzzSumo, Orchid), set `multi_publication: true`
+
+### Stats
+- 226 journalists (unchanged), 894 career-entry migrations (+1), 413 distinct publications (+1)
+- 2,272 tests passing
+
+### Commit
+- `6ac76f6`: Type B — Deep dive on Will Oremus and Gilad Edelman profiles. Pushed to GitHub.
