@@ -886,6 +886,36 @@ editorial_changes:
       Douglas Heaven as his replacement in January 2020 (4-month gap). Knight had been MIT Tech Review's longest-tenured AI
       specialist and had built the publication's China AI coverage vertical from scratch.
     source_url: https://talkingbiznews.com/they-talk-biz-news/wired-hires-knight-to-cover-artificial-intelligence/
+  - date: '2025-08'
+    event_type: scandal
+    incoming: null
+    notes: 'AI-GENERATED CONTENT SCANDAL: Multiple articles attributed to "Margaux Blanchard" were removed from both Wired
+      and Business Insider after freelance journalist Jacob Furedi investigated and found the byline was fake — the articles
+      were AI-generated. Blanchard had no verifiable identity, social media presence, or prior publication history. Condé Nast
+      acknowledged the articles did not meet editorial standards and removed them. Business Insider (also Axel Springer) similarly
+      retracted pieces under the same byline. The incident occurred under Katie Drummond''s editorial leadership and exposed
+      gaps in Wired''s freelancer vetting process. Press Gazette covered the investigation. ANALYTICAL SIGNIFICANCE: Wired
+      positions itself as an authority on AI risks and accountability journalism, making an AI-generated content scandal
+      particularly damaging to editorial credibility. The incident is relevant to the broader Condé Nast AI strategy analysis
+      — the same organization licensing content to OpenAI/Amazon/Apple failed to detect AI-generated content in its own
+      publications.'
+    outgoing: null
+    position: ai_content_scandal
+    source_url: https://en.wikipedia.org/wiki/Wired_(magazine)
+  - date: '2026-04'
+    event_type: structural
+    incoming: null
+    notes: 'ITALIAN PRINT EDITION CEASED: Wired Italy stopped publishing its print edition in April 2026, following the UK
+      print cancellation in January 2026. Part of Condé Nast''s broader global print contraction under CEO Roger Lynch. Wired
+      Italy had been published since 2009 — a 17-year run. The closure leaves Wired with only its US print edition active
+      (quarterly). Combined with UK print cessation, this represents the near-complete dissolution of Wired''s international
+      print footprint within a 4-month window. ANALYTICAL SIGNIFICANCE: Drummond''s "creating a sustainable and growing
+      subscription business is the future of Wired" framing positions print closures as strategic digital transformation
+      rather than cost-cutting. The Italian closure further centralizes editorial control in the US — Italian editorial output
+      now flows through digital-only channels under Drummond''s global editorial director structure.'
+    outgoing: null
+    position: italian_print_edition_ceased
+    source_url: https://en.wikipedia.org/wiki/Wired_(magazine)
   nytimes:
   - date: 2022-06
     incoming: Joseph Kahn
