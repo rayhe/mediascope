@@ -9321,15 +9321,29 @@ journalists:
   - https://talkingbiznews.com/they-re-hiring/morning-brew-hires-field-as-tech-writer/
   - https://theorg.com/org/the-verge/org-chart/hayden-field
 - career:
+  - publication: uw-madison
+    role: student
+    beat: journalism, political science
+    start: '2013'
+    end: '2017'
+    event_type: education
+    notes: 'University of Wisconsin-Madison, BA in Journalism and Political Science (2017). School of Journalism and Mass Communication
+      (SJMC). Her dual major provided both the craft skills (journalism) and the analytical framework (political science) for
+      covering platform governance as a power-dynamics story. UW-Madison SJMC alumni network includes reporters at NYT, WaPo,
+      and major broadcast outlets.'
+    source_url: https://journalism.wisc.edu/three-questions-for-mia-sato-17/
   - publication: nonprofit-newsrooms
     role: audience_engagement
     beat: social media, audience development
-    start: ~2017
+    start: '2017'
     end: '2020'
     event_type: hired
-    notes: 'Started career in audience engagement roles at nonprofit newsrooms — running social channels, building Instagram presence, thinking about how readers find journalism. Pre-reporting career. In
-      her own words: "I actually started in journalism working in audience engagement roles. I was running the social channels for nonprofit newsrooms, getting their Instagram presence started." This audience-centric
-      perspective profoundly shapes her reporting approach and platform coverage instincts.'
+    notes: 'Started career in audience engagement roles at nonprofit newsrooms — running social channels, building Instagram
+      presence, thinking about how readers find journalism. Pre-reporting career. Based in New York area. In her own words:
+      "I actually started in journalism working in audience engagement roles. I was running the social channels for nonprofit
+      newsrooms, getting their Instagram presence started." This audience-centric perspective profoundly shapes her reporting
+      approach and platform coverage instincts. Her understanding of algorithmic distribution from the operator side distinguishes
+      her from traditional J-school-to-newsroom reporters.'
     source_url: https://embedded.substack.com/p/mia-sato-tiktok-interview-the-verge
   - publication: freelance
     role: freelancer
@@ -9382,17 +9396,18 @@ journalists:
     source_url: https://talkingbiznews.com/they-talk-biz-news/the-verge-hires-sato-to-cover-tech-companies-and-platforms/
   multi_publication: true
   name: Mia Sato
-  notes: 'Career arc: nonprofit newsroom audience engagement → freelance (cold-pitched The Verge, wrote Hmong American radio feature) → The Markup (audience engagement editor) → MIT Technology Review (Pandemic
+  notes: 'Career arc: UW-Madison BA (Journalism + Political Science, 2017) → nonprofit newsroom audience engagement → freelance (cold-pitched The Verge, wrote Hmong American radio feature) → The Markup (audience engagement editor) → MIT Technology Review (Pandemic
     Technology Project reporter) → The Verge (Nov 2021-present, reporter → senior reporter → features writer). Based in Brooklyn, NY. Contact: mia@theverge.com, Signal: miasato.11. Vox Media Union (WGA
     East) member. 8+ years writing professionally. Also writes ''mia buys things'' fashion/shopping/internet newsletter on Beehiiv. Active on TikTok (videos about her reporting, millions of views, zero
     income) and Bluesky (primary social). Left X/Twitter entirely. AWARDS: 2024 Livingston Award finalist in International Reporting (for work released in 2023, journalists under 35); ASME NEXT Award for
-    Journalists Under 30 Honorees (60th annual National Magazine Awards, announced Jun 2025). EDUCATIONAL WORK: News Literacy Project on-camera series about AI and algorithms. KEY ANALYTICAL VALUE: (1)
+    Journalists Under 30 Honorees (60th annual National Magazine Awards, announced Jun 2025 — nominated by Nilay Patel, EIC of The Verge; title at time of nomination: Feature Writer). EDUCATIONAL WORK: News Literacy Project on-camera series about AI and algorithms (get.checkology.org). KEY ANALYTICAL VALUE: (1)
     Audience-engagement-to-reporter pipeline is a non-traditional career path that gives her genuinely different instincts about platform mechanics vs traditional J-school graduates — she understands algorithmic
     distribution from the operator side. (2) Her platform beat at The Verge is the primary editorial position covering Meta/Instagram as a governance/community story — her framing choices directly shape
     institutional posture on platform power. (3) Her TikTok journalism presence creates a recursive loop: she covers platform dynamics on a platform, making her simultaneously reporter and subject of the
     forces she covers. (4) Post-Heath-departure, she is the strongest remaining voice for The Verge''s platform coverage posture — her migration or departure would be the next highest-signal editorial change
     at The Verge for MediaScope tracking. (5) Non-traditional path means less capture by J-school conventions about how platform stories ''should'' be framed — her instincts come from user/community experience
-    rather than institutional journalism training.'
+    rather than institutional journalism training. (6) Extremely self-aware about the economics of journalism distribution — strict 30-min time cap per TikTok video, deliberate cost-benefit analysis of which
+    platforms to invest free labor in (dropped X/Twitter, adopted Bluesky for superior link distribution).'
   source_urls:
   - https://talkingbiznews.com/they-talk-biz-news/the-verge-hires-sato-to-cover-tech-companies-and-platforms/
   - https://technologyreview.com/author/mia-sato/
@@ -9403,6 +9418,8 @@ journalists:
   - https://blog.onepitch.co/cwaj-136-mia-sato-the-verge
   - https://wallacehouse.umich.edu/livingston-awards/
   - https://talkingbiznews.com/media-news/stat-news-sato-of-the-verge-recognized-by-asme/
+  - https://asme.memberclicks.net/asme-presents-60th-annual-national-magazine-awards
+  - https://journalism.wisc.edu/three-questions-for-mia-sato-17/
 - career:
   - beat: biomedical engineering, brain-computer interfaces
     end: '2021'
