@@ -1901,98 +1901,108 @@ journalists:
   - https://talkingbiznews.com/they-talk-biz-news/financial-times-hires-heikkila-as-ai-correspondent/
   - https://talkingbiznews.com/they-talk-biz-news/politico-taps-heikkila-as-ai-correspondent/
   - https://aihub.org/2024/01/31/the-good-robot-podcast-melissa-heikkila-on-why-the-stories-we-tell-about-ai-matter/
-- career:
-  - beat: cybersecurity, national security, politics
-    end: 2017-04
-    event_type: hired
-    notes: 'Staff writer at The Daily Dot covering security and politics (2013-2017, confirmed by Cameron''s own bio). Covered
-      cybercrime, surveillance, and national security from the start. Major investigations: (1) Co-authored ''The Sabu Files''
-      — an award-nominated multi-part investigation into the FBI''s use of hacker Hector ''Sabu'' Monsegur as a cyber-informant,
-      published jointly with Vice/Motherboard. The series revealed the FBI directed Monsegur to orchestrate cyberattacks on
-      30+ countries including Brazil, Turkey, and the UK; the Stratfor hack was facilitated by Monsegur under FBI surveillance;
-      and Hammond was placed on a terrorist watchlist. Series had its own website (sabufiles.com) and is foundational cybersecurity-journalism.
-      (2) In 2015, revealed the existence of an American hacker on the U.S. government''s terrorist watchlist. (3) Broke the
-      93.4M Mexican voter records data breach (Apr 2016), cited by Privacy International in multiple reports. (4) Filed FOIA
-      requests to DOJ for Flynn-Kislyak call records (Feb 2017, confirmed by DOJ FOIA log). NOTE: The Sabu Files collaboration
-      with Motherboard was a joint investigation, not separate Vice employment — Cameron''s bio lists only Daily Dot (2013-2017)
-      before Gizmodo.'
-    publication: daily-dot
+- name: Dell Cameron
+  multi_publication: true
+  beats:
+  - national_security
+  - surveillance
+  - privacy
+  - tech_policy
+  - cybersecurity
+  - government_surveillance
+  - content_moderation
+  - immigration_enforcement
+  awards:
+  - name: Edward R. Murrow Award for Investigative Reporting
+    year: 2022
+    for: 'Co-recipient for "Prediction: Bias" — joint investigation with The Markup into Geolitica/PredPol predictive policing
+      software that disproportionately directed police to patrol Black and Latino neighborhoods. Investigation led to senators
+      demanding DOJ halt funding to predictive policing programs.'
+    shared_with: Dhruv Mehrotra (Gizmodo), The Markup team
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-gizmodas-cameron/
+  - name: Society of Professional Journalists National Award
+    for: National security/investigative reporting (1 of 2 SPJ national awards)
+    source_url: https://dellcameron.me/
+  - name: Society of Professional Journalists National Award
+    for: National security/investigative reporting (2 of 2 SPJ national awards)
+    source_url: https://dellcameron.me/
+  career:
+  - publication: daily-dot
     role: staff_writer
-    source_url: https://dellcameron.me/
     start: 2013-01
-  - beat: tech policy, national security, surveillance
-    end: 2022-12
+    end: 2017-04
+    beat: cybercrime, national security, surveillance
     event_type: hired
-    notes: 'Senior reporter at Gizmodo (May 2017 — Dec 2022). Covered tech policy and national security. Won Edward R. Murrow
-      Award for Investigative Reporting (2022, RTDNA) for ''Prediction: Bias'' — the first independent analysis of PredPol''s
-      actual crime predictions across 38 US jurisdictions. The investigation obtained 5.9M+ predictions from an unsecured
-      AWS server and demonstrated that the algorithm ''relentlessly targeted the Census block groups that were the most heavily
-      populated by people of color and the poor.'' Collaboration with The Markup (Dhruv Mehrotra, Surya Mattu, Annie Gilbertson,
-      Aaron Sankin). Also won 2 SPJ national awards for reporting. KEY: This investigation established the Cameron-Mehrotra
-      reporting partnership that later carried to Wired, where both transferred. Represented by Writers Guild of America,
-      East (WGA East) at G/O Media. Other notable Gizmodo coverage: FBI hacking powers (child exploitation cases), DHS border
-      surveillance contractor hack (terabyte of CBP contractor data), surveillance scores in e-commerce, border camera ransomware,
-      warrantless phone location tracking, FBI internet surveillance.'
-    publication: gizmodo
-    role: senior_reporter
-    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-gizmodos-cameron/
-    start: 2017-05
-  - beat: national security, surveillance, privacy, Big Tech
-    event_type: hired
-    notes: "Senior writer at Wired (hired Jan 9, 2023 as 'senior policy writer,' title evolved to 'senior writer'). Based\
-      \ in Dallas, TX. Represented by NewsGuild-CWA (@wiredunion). Reports to Brian Barrett (Director, Security & Investigations).\
-      \ Self-described 'pro-union, Texas-based journalist covering tech policy and regulation, with an eye toward privacy\
-      \ law, content moderation, and government/commercial surveillance.' Contact: dell_cameron@wired.com. Social: @dell.bsky.social\
-      \ (Bluesky), @dell@journa.host (Mastodon). \n\nKEY WIRED INVESTIGATIONS:\n(1) Meta NameTag/Face Recognition series (Jun\
-      \ 4-8, 2026): Co-broke with Dhruv Mehrotra that Meta silently added face-recognition code ('NameTag') to its smart glasses\
-      \ companion app, prototyping with Rank One Computing (Pentagon/DHS supplier). Pipeline: face detection → crop → biometric\
-      \ signature → database match. 4-article series: 'Meta Silently Added Face-Recognition Code...' (Jun 4), Meta response/deletion\
-      \ (Jun 8), wrongful arrest exposing failures in oldest US police face-recognition tools (Jun 10), Meta tapped Pentagon\
-      \ supplier to prototype face recognition for glasses (Jun 15). IMPACT: 3 US senators (Markey, Wyden, Merkley) sent formal\
-      \ demand letter to Zuckerberg (Mar 18, 2026 based on NYT disclosure, amplified by Cameron's Jun investigation); 70+\
-      \ civil liberties organizations (ACLU, EPIC, Fight for the Future, Access Now, Leadership Conference on Civil and Human\
-      \ Rights) demanded Meta kill NameTag; Meta deleted face-recognition system from app after Wired report. One of Wired's\
-      \ most consequential direct policy outcomes from tech coverage.\n(2) Dialog/Peter Thiel leak series (Jun 16-26, 2026):\
-      \ 4-article investigation of data leak from Thiel's secretive 'Dialog' society (co-founded with Auren Hoffman ~2006,\
-      \ ~222 registrants for Dublin retreat). Exposed members including Treasury Secretary Scott Bessent, Sen. Ted Cruz, Xbox\
-      \ president Sarah Bond, Sam Harris, Bryan Johnson, Google DeepMind executives, ADL CEO Jonathan Greenblatt, Cato Institute\
-      \ president, Charles Koch Foundation executive director, Nobel laureate Roger Myerson. Pentagon opened investigation\
-      \ after Cameron's reporting exposed intelligence officials. Revealed internal dating app, political leaning data collection,\
-      \ retreat sessions titled 'Navigating WWIII' and 'Build-a-Cult.' Airtable database with private access tokens, not published\
-      \ by Wired.\n(3) ICE/surveillance reporting (2025-2026): ICE shadow deportation network in Texas, surveillance driving\
-      \ patients from medical care (EPIC report, Jan 2026), DHS reconnaissance drones along US-Canada border.\n(4) 41 state\
-      \ AGs vs Meta: covered state attorneys general letter demanding Meta address 'dramatic increase' in Facebook/Instagram\
-      \ account takeovers.\n(5) License plate surveillance: 'FBI Wants Near Real-Time Access to US License Plate Readers'\
-      \ (May 23, 2026), 'Bipartisan Amendment Would End Police License Plate Tracking Nationwide' (May 20, 2026) — directly\
-      \ relevant to Flock Safety, LPR policy, and the civilian LPR networks MediaScope tracks.\n(6) Twitter/X ban (2023):\
-      \ Banned from Twitter after reporting on Matt Walsh account hack (SIM swap attack by hacker 'Doomed') — Cameron interviewed\
-      \ the hacker and reported obtaining Walsh's W2, Crowder messages. Ban for 'distribution of hacked material.' Reported\
-      \ by Forbes' Matt Novak.\n(7) Data brokers/AI opt-out failures, Pentagon phone tracking, Spotify drug podcast ranking\
-      \ manipulation, Cole Allen Trump assassination attempt.\n\nANALYTICAL SIGNIFICANCE: Cameron-Mehrotra is Wired's most\
-      \ consequential investigative partnership on surveillance/Meta topics. Both transferred together from Gizmodo to Wired\
-      \ (Cameron: Jan 2023, Mehrotra: tracked). Their Prediction: Bias collaboration at Gizmodo → NameTag investigation at\
-      \ Wired represents a decade-long reporting partnership that consistently frames commercial tech through a surveillance-state/civil-liberties\
-      \ lens. Cameron's beat (national security/surveillance) + Mehrotra's skills (data analysis, security research) combine\
-      \ to produce Wired's most impactful investigations. The NameTag series is the only recent Wired investigation that directly\
-      \ triggered both legislative action AND corporate policy change. Their work under Barrett at Wired Security continues\
-      \ the Gizmodo → Wired pipeline that also includes Barrett himself."
-    publication: wired
-    role: senior_writer
+    notes: Staff writer at The Daily Dot covering cybercrime, national security, and surveillance. Co-authored "The Sabu Files"
+      with Vice/Motherboard — an award-nominated multi-part investigation into the FBI's use of hacker-informant Hector "Sabu"
+      Monsegur and the Anonymous/LulzSec hacking campaign. The investigation used sealed court documents (chat logs, surveillance
+      photos, government documents) under protective order in SDNY to reveal that the FBI informant directed Anonymous hackers
+      to attack government websites in 30+ countries. In 2015, revealed the existence of an American hacker on the U.S. government's
+      terrorist watchlist. The Daily Dot was his first staff journalism position; Austin/Dallas-based.
     source_url: https://dellcameron.me/
+  - publication: gizmodo
+    role: senior_reporter
+    start: 2017-05
+    end: 2022-12
+    beat: tech policy, national security, surveillance, privacy
+    event_type: hired
+    notes: 'Senior reporter at Gizmodo (G/O Media) covering tech policy and national security. 5.5-year tenure. KEY INVESTIGATIONS:
+      (1) "Prediction: Bias" — joint investigation with The Markup (published Dec 2, 2021) exposing Geolitica/PredPol predictive
+      policing software that disproportionately directed officers to patrol Black and Latino neighborhoods. Analyzed millions
+      of crime predictions left on an unsecured server. Won Edward R. Murrow Award for Investigative Reporting (2022). Investigation
+      contributed to Geolitica shutting down operations. (2) FCC Chairman Ajit Pai cellphone location data probe — exposed
+      that Pai''s office withheld documents from Democratic FCC commissioners on unauthorized sale of US cellphone location
+      data (Techmeme lead). (3) Various data breach investigations and cybersecurity reporting. Established working partnership
+      with Dhruv Mehrotra (Gizmodo data reporter) that would carry forward to Wired. Represented by Writers Guild of America,
+      East (WGA East) at G/O Media. Last day at Gizmodo was in December 2022.'
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-gizmodas-cameron/
+  - publication: wired
+    role: senior_writer
     start: 2023-01
-  name: Dell Cameron
-  notes: 'Key migration: Daily Dot (2013-2017) → Gizmodo (2017-2022) → Wired (2023-present). Based in Dallas, TX. Pro-union
-    journalist (NewsGuild-CWA at Wired, formerly WGA East at G/O Media). Edward R. Murrow Award for Investigative Reporting
-    (2022, ''Prediction: Bias'' predictive policing investigation). 2 SPJ national awards. Co-author of ''The Sabu Files''
-    (Daily Dot × Vice/Motherboard, FBI hacker-informant investigation). Most important investigative partnership: with Dhruv
-    Mehrotra (tracked), carried from Gizmodo to Wired. Cameron-Mehrotra co-bylines at Wired consistently frame commercial
-    tech through surveillance-state/civil-liberties lens. Their Meta NameTag investigation (Jun 2026) is the only recent Wired
-    investigation that directly triggered both legislative action (3 senators) and corporate policy change (Meta deleting
-    face-recognition code). Beat: national security, surveillance, privacy, Big Tech. Frames ALL tech policy through surveillance
-    infrastructure lens — commercial tech, government surveillance, and their intersection. This framing is analytically significant:
-    when Cameron writes about Meta (e.g., NameTag, account takeovers), the default frame is ''surveillance company builds
-    surveillance tool'' — connecting Meta''s commercial products to Pentagon suppliers, ICE data brokers, and law enforcement
-    databases. Compare to reporters who frame the same products through consumer/business lens.'
+    beat: national security, tech policy, surveillance, privacy, content moderation
+    event_type: hired
+    notes: 'Senior policy writer at Wired (Condé Nast). Hired as senior policy writer, started Jan 9, 2023. Title on BuzzSumo/X
+      bio: "Sr. writer @WIRED." Reports within Wired Security desk under executive editor Brian Barrett. Based in Dallas,
+      TX — one of Wired''s few non-NYC/SF reporters. Represented by NewsGuild-CWA. KEY INVESTIGATIONS AT WIRED (2023-2026):
+      (1) NameTag/Meta face recognition (Jun 2026, with Dhruv Mehrotra): Discovered dormant facial recognition system ("NameTag")
+      hidden in Meta AI app code, distributed to 50M+ phones. Three AI models convert faces to biometric faceprints. Investigation
+      triggered both legislative action (3 senators) and corporate policy change — Meta deleted the face-recognition code
+      after WIRED''s report. Andrew Bosworth (Meta CTO) called reporting "incredibly misleading" and "absolutely dishonest."
+      Most consequential Meta investigation by any Wired reporter in 2026. (2) Dialog/Peter Thiel investigation (Jun 2026,
+      4-part series with Yulia Almazova): Exposed membership list and internal ranking system of Peter Thiel''s secretive
+      "Dialog" society — an invitation-only network of ~1,000+ paying elite members from tech, politics, military, entertainment.
+      Revealed Dialog grades members by wealth/fame, uses algorithms for seating/matching. Pentagon investigating the data
+      exposure for potential unmasking of national security officials. (3) SignalGate (Apr 2025): Reported on fate of Trump
+      administration Signal messages from the national security group chat accidentally shared with Atlantic EIC Jeffrey Goldberg.
+      (4) FBI location data purchase (Mar 2023): First FBI acknowledgment of buying US location data. (5) Pentagon phone tracking
+      (May 2026). (6) ICE deportation network in Texas (Jul 2026). (7) Spotify drug podcast ranking manipulation (Jun 2026,
+      with Mehrotra). (8) Data broker/AI opt-out failures (May 2026). Total article count: ~3,887 across all publications
+      (per BuzzSumo). ANALYTICAL SIGNIFICANCE: Cameron-Mehrotra is Wired''s most consequential investigative partnership on
+      surveillance/Meta topics. Cameron frames ALL tech policy through surveillance infrastructure lens — connecting commercial
+      tech products to Pentagon suppliers, ICE data brokers, and law enforcement databases. When he writes about Meta (e.g.,
+      NameTag, account takeovers), the default frame is "surveillance company builds surveillance tool." This framing is analytically
+      significant for MediaScope because it provides the most adversarial surveillance-state interpretation of Meta''s consumer
+      products, distinct from business-desk or consumer-tech framing.'
+    source_url: https://dellcameron.me/
+  notes: 'Key migration: Daily Dot (2013-2017) → Gizmodo (2017-2022) → Wired (2023-present). Texas-based (Dallas), pro-union
+    investigative reporter. Self-describes as covering "tech policy and regulation, with an eye toward privacy law, content
+    moderation, and government/commercial surveillance." 2 SPJ national awards + co-recipient Edward R. Murrow Award for Investigative
+    Reporting (2022, "Prediction: Bias"). Co-author of "The Sabu Files" (Daily Dot × Vice/Motherboard, award-nominated FBI
+    hacker-informant investigation). Contact: dell_cameron@wired.com, @dellcam on X, @dell.bsky.social on Bluesky, @dell@journa.host
+    on Mastodon. Phone: 817-928-3260 (DFW area code). Most important investigative partnership: with Dhruv Mehrotra (tracked),
+    carried from Gizmodo to Wired — their co-bylines consistently frame commercial tech through surveillance-state/civil-liberties
+    lens. KEY FOR MEDIASCOPE: (1) His NameTag investigation (Jun 2026) is the only recent Wired investigation that directly
+    triggered BOTH legislative action AND corporate policy change (Meta deleting face-recognition code). (2) Dialog series
+    (Jun 2026) demonstrates his reach beyond tech into national security/elite power networks. (3) His surveillance-infrastructure
+    framing lens is the most analytically significant alternative framing to business-desk coverage of the same Meta products.
+    (4) Gizmodo → Wired pipeline (also shared by Barrett, Mehrotra) suggests institutional framing continuity from G/O Media
+    to Condé Nast.'
+  source_urls:
+  - https://dellcameron.me/
+  - https://talkingbiznews.com/they-re-hiring/wired-hires-gizmodas-cameron/
+  - https://theorg.com/org/wired/org-chart/dell-cameron
+  - https://muckrack.com/dell-cameron
+  - https://www.sabufiles.com/
 - career:
   - beat: network engineering, cellular networks
     end: 2018-12
@@ -14402,3 +14412,189 @@ journalists:
   source_urls:
   - https://talkingbiznews.com/media-news/the-verge-tech-reporter-porter-is-departing/
   - https://muckrack.com/jon-porter-1/articles
+- name: Yulia Almazova
+  career:
+  - publication: wired
+    role: fellow
+    start: 2026-05
+    beat: privacy, politics, surveillance, cybersecurity
+    event_type: hired
+    notes: 'Wired Summer 2026 fellow. Brooklyn-based journalist from Russia with background blending tech and political science.
+      Student at Craig Newmark Graduate School of Journalism. Co-bylined with Dell Cameron on the Dialog/Peter Thiel 4-part
+      investigation (Jun 16-26, 2026) — one of the highest-profile Wired investigations of 2026. Topics covered: privacy,
+      politics, surveillance, cybersecurity, data leaks, Peter Thiel, Department of Defense, Congress, ICE.'
+    source_url: https://www.wired.com/author/yulia-almazova/
+  education:
+    institution: Craig Newmark Graduate School of Journalism (CUNY)
+    status: current_student
+    notes: Student at Craig Newmark Graduate School of Journalism. Wired Summer 2026 fellowship concurrent with studies.
+  notes: 'Brooklyn-based journalist from Russia. Student at Craig Newmark Graduate School of Journalism (CUNY). Wired Summer
+    2026 fellow. Co-reported the Dialog/Peter Thiel investigation with Dell Cameron — 4-part series (Jun 16-26, 2026) exposing
+    the membership, ranking system, and data exposure of Thiel''s secretive elite network. Pentagon investigating the leak.
+    ANALYTICAL VALUE: As a fellow (not permanent staff), her Dialog co-byline represents Wired''s investment in investigative
+    capacity even through its fellowship pipeline. Her Russia background + privacy/surveillance beat is notable context for
+    her reporting on elite power networks and surveillance.'
+  source_urls:
+  - https://www.wired.com/author/yulia-almazova/
+- career:
+  - publication: washington-post
+    role: foreign_correspondent
+    start: '2005'
+    end: '2012'
+    beat: foreign affairs, war reporting, Afghanistan, Iraq, Latin America
+    notes: 'Joined WaPo as foreign correspondent. Baghdad bureau (Iraq War coverage), then Kabul bureau chief (2009-2012).
+      Made his name as particularly brave and resourceful reporter in Baghdad. Also reported from Latin America. Shared 2010
+      Overseas Press Club award with Rajiv Chandrasekaran for best newspaper reporting from abroad (Afghanistan series).'
+  - publication: washington-post
+    role: bureau_chief_mexico
+    start: '2012'
+    end: '2018'
+    beat: Latin America, Mexico, foreign affairs
+    notes: 'Mexico City bureau chief. Published "A Kingdom of Their Own: The Family Karzai and the Afghan Disaster" (Knopf,
+      2016) based on his Afghanistan reporting. Wilson Center public policy scholar.'
+  - publication: washington-post
+    role: correspondent_rio
+    start: '2018'
+    end: '2022'
+    beat: Latin America, Brazil, foreign affairs
+    notes: 'Rio de Janeiro bureau chief covering South America.'
+  - publication: washington-post
+    role: reporter
+    start: '2022'
+    end: '2026'
+    beat: environment, extreme weather, American West, natural disasters
+    notes: 'Shifted to domestic environmental reporting, covering extreme weather and natural disasters in the American West.
+      Stories on Lake Tahoe avalanche, Alaska typhoon airlifts, Yosemite BASE jumpers during federal shutdown. Departed in
+      WaPo Feb 2026 layoffs (~1/3 of staff, 300+ people cut).'
+  - publication: atlantic
+    role: staff_writer
+    start: '2026-06'
+    end: present
+    beat: extreme weather, natural disasters, environment
+    notes: 'Announced June 23, 2026. Covers extreme weather and natural disasters. Already published striking Lake Tahoe
+      avalanche story before official hire. Part of Atlantic''s 2025-2026 hiring spree absorbing WaPo talent displaced by
+      layoffs (alongside Will Oremus, Jonathan L. Fischer, Sebastian Smee). Goldberg described him as "a powerhouse reporter"
+      and "particularly brave and resourceful."'
+  multi_publication: true
+  name: Joshua Partlow
+  notes: 'Duke University (1996-2000). Author of "A Kingdom of Their Own: The Family Karzai and the Afghan Disaster" (Knopf,
+    2016). 2010 Overseas Press Club award (shared, Afghanistan coverage). Wilson Center public policy scholar. ANALYTICAL VALUE:
+    Partlow''s WaPo→Atlantic migration is part of the massive 2025-2026 WaPo exodus under Jeff Bezos''s ownership — the Feb
+    2026 layoffs (cutting 1/3 of staff) drove talent to competitors, particularly The Atlantic under Nicholas Thompson (himself
+    ex-Wired EIC). While Partlow is not a tech reporter, his hire demonstrates the Atlantic''s strategy of absorbing premium
+    WaPo journalists across beats. His foreign correspondent background (Baghdad, Kabul, Mexico City, Rio) makes him one of
+    the most internationally experienced reporters in the Atlantic''s 2026 cohort. Part of the WaPo→Atlantic pipeline that
+    also includes Fischer, Smee, and Oremus.'
+  source_urls:
+  - https://www.editorandpublisher.com/stories/the-atlantic-announces-joshua-partlow-ariel-sabar-and-sebastian-smee-as-staff-writers,262288
+  - https://muckrack.com/joshua-partlow
+  - https://www.theatlantic.com/author/joshua-partlow/
+- career:
+  - publication: la-weekly
+    role: intern
+    start: '1995'
+    end: '1997'
+    beat: general
+    notes: 'Summer intern during college years.'
+  - publication: providence-journal
+    role: staff_writer
+    start: '1998'
+    end: '2002'
+    beat: general
+    notes: 'Early career staff writer position.'
+  - publication: baltimore-sun
+    role: staff_writer
+    start: '2002'
+    end: '2006'
+    beat: general
+    notes: 'Staff writer at The Baltimore Sun.'
+  - publication: christian-science-monitor
+    role: staff_writer
+    start: '2006'
+    end: '2010'
+    beat: politics, presidential campaigns
+    notes: 'Covered 2008 presidential campaigns.'
+  - publication: atlantic
+    role: freelance_contributor
+    start: '2015'
+    end: '2026'
+    beat: narrative nonfiction, investigations, religion, true crime, history
+    notes: 'Contributing freelancer since 2015. Produced major investigative narratives: "A Biblical Mystery at Oxford,"
+      "The Billion-Dollar Ponzi Scheme that Hooked Warren Buffett and the U.S. Treasury," "The Unbelievable Tale of Jesus''s
+      Wife" (turned into book "Veritas," 2020). Also contributing editor at Smithsonian Magazine and Washingtonian Magazine.'
+  - publication: atlantic
+    role: staff_writer
+    start: '2026-06'
+    end: present
+    beat: narrative nonfiction, investigations, long-form reporting
+    notes: 'Announced June 23, 2026. Converted from 11-year freelance contributor to full staff writer. Focuses on in-depth
+      narrative reporting. Goldberg described him as "a truly inexhaustible reporter with a gift for writing narratives that
+      you can''t put down." NOTABLE: Unlike the WaPo hires, Sabar represents the Atlantic''s conversion of its strongest
+      freelance talent into permanent staff — an internal talent pipeline strategy.'
+  multi_publication: true
+  name: Ariel Sabar
+  notes: 'Brown University (magna cum laude). Author: "My Father''s Paradise: A Son''s Search for His Family''s Past" (2008,
+    won National Book Critics Circle Award 2009), "Heart of the City" (2011), "Veritas: A Harvard Professor, a Con Man and
+    the Gospel of Jesus''s Wife" (2020, Edgar Allan Poe Award finalist for best true-crime, IRE Book Award runner-up). Contributing
+    editor at Smithsonian Magazine and Washingtonian Magazine. Taught creative writing at George Washington University. Poynter
+    Fellow in Journalism at Yale. Iraqi-Kurdish Jewish heritage — father grew up in Kurdish Iraq. ANALYTICAL VALUE: Sabar''s
+    hire represents a different Atlantic talent acquisition vector: unlike the WaPo exodus hires (Partlow, Smee, Fischer, Oremus),
+    he was converted from an 11-year freelance relationship. This freelance-to-staff pathway is analytically distinct — it
+    shows the Atlantic building from proven relationships, not just poaching displaced talent. His beat (narrative nonfiction,
+    religious/academic investigations) is also distinct from the tech/politics focus of most MediaScope-tracked journalists,
+    but his investigative methodology overlaps with the scrutiny applied to tech companies.'
+  source_urls:
+  - https://www.editorandpublisher.com/stories/the-atlantic-announces-joshua-partlow-ariel-sabar-and-sebastian-smee-as-staff-writers,262288
+  - https://www.theatlantic.com/author/ariel-sabar/
+  - https://arielsabar.com
+- career:
+  - publication: the-australian
+    role: national_art_critic
+    start: '1996'
+    end: '2008'
+    beat: visual art, art criticism
+    notes: 'National art critic for The Australian. Also contributed to The Daily Telegraph, The Guardian, The Times, The Financial
+      Times, The Independent on Sunday, The Art Newspaper, Modern Painters, Prospect, and The Spectator. Lived in UK 2001-2004.'
+  - publication: boston-globe
+    role: art_critic
+    start: '2008'
+    end: '2018'
+    beat: visual art, art criticism, culture
+    notes: 'Moved to Boston in 2008. Won 2011 Pulitzer Prize for Criticism for "vivid and exuberant writing about art, often
+      bringing great works to life with love and appreciation." Published "The Art of Rivalry" (2016). In 2015, famously challenged
+      to a duel by Max Geller (leader of "Renoir Sucks at Painting" protest at MFA Boston) after Smee criticised the protest.'
+  - publication: washington-post
+    role: art_critic
+    start: 2018-01
+    end: 2026-02
+    beat: visual art, art criticism, culture, arts commentary
+    notes: 'Art critic at WaPo for 8 years. Launched "Great Works, in Focus" column illuminating artworks in permanent collections.
+      Covered megadealer rise, Jackson Pollock theft, Baltimore Museum of Art deaccession controversy, Philip Guston show
+      postponement. Published "Paris in Ruins: Love, War, and the Birth of Impressionism" (2024). Laid off in Feb 2026 WaPo
+      cuts (~1/3 of staff, 300+ people). Hyperallergic described the WaPo Arts section cuts as a "bloodbath" — all in-house
+      photographers also eliminated.'
+  - publication: atlantic
+    role: staff_writer
+    start: '2026-06'
+    end: present
+    beat: visual art, art criticism, culture, modern life
+    notes: 'Announced June 23, 2026. Writes widely on visual art and its influence on modern life and culture. Goldberg described
+      him as "one of the most respected arts commentators and critics in the English-speaking world" with "deep humanity and
+      sustained attention." Part of the WaPo→Atlantic exodus alongside Partlow, Fischer, and Oremus.'
+  multi_publication: true
+  name: Sebastian Smee
+  notes: 'Australian-born. St Peter''s College, Adelaide. University of Sydney, Honours degree in Fine Arts (1994). Author:
+    "Side by Side: Picasso v Matisse" (2002), "Lucian Freud" (2007), "The Art of Rivalry" (2016), "Net Loss: The Inner Life
+    in the Digital Age" (Quarterly Essay #72, 2018), "Paris in Ruins: Love, War, and the Birth of Impressionism" (2024). 2011
+    Pulitzer Prize for Criticism. ANALYTICAL VALUE: Smee is the most decorated arts critic the Atlantic has ever hired —
+    a Pulitzer winner with global credentials (The Australian, UK publications, Boston Globe, WaPo). His hire signals the Atlantic
+    expanding beyond politics/tech/policy into prestige arts criticism, competing directly with the NYT for cultural authority.
+    His WaPo→Atlantic migration is part of the broader Feb 2026 WaPo exodus. Unlike the tech/policy journalists who are the
+    core MediaScope focus, Smee''s cultural criticism beat makes him a "halo hire" — someone who elevates the publication''s
+    overall prestige and subscriber appeal without directly affecting tech coverage posture. But his Quarterly Essay "Net Loss"
+    (2018) on digital technology''s effects on inner life shows he can speak to tech themes when called upon.'
+  source_urls:
+  - https://www.editorandpublisher.com/stories/the-atlantic-announces-joshua-partlow-ariel-sabar-and-sebastian-smee-as-staff-writers,262288
+  - https://hyperallergic.com/art-critic-sebastian-smee-laid-off-from-the-washington-post/
+  - https://en.wikipedia.org/wiki/Sebastian_Smee
+  - https://www.theatlantic.com/author/sebastian-smee/

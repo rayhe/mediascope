@@ -45,11 +45,11 @@ This is not an attack tool. It works equally well pointed at Fox News covering r
 | Emotional language terms | 875 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 28 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 11 | Paths A–K, each addressing a specific VADER failure mode |
-| Annotated articles | 155 | Full manual analysis in `examples/sample_output/` |
+| Annotated articles | 158 | Full manual analysis in `examples/sample_output/` |
 | Journalists tracked | 222 | Career data with source URLs |
 | Career-entry migrations | 871 | Across 402 distinct publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 2,262 | Across 99 test files |
+| Tests | 2,272 | Across 100 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -76,7 +76,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **222 journalists** across 400+ publications (871 career-entry migrations, 689 auto-detected). Notable high-value migrations include:
+Ships with verified career data for **223 journalists** across 400+ publications (871 career-entry migrations, 689 auto-detected). Notable high-value migrations include:
 
 | Journalist | Migration Path | Analytical Value |
 |---|---|---|
@@ -370,7 +370,7 @@ The `examples/` directory contains runnable demos that walk through MediaScope's
 | [`framing_correction_demo.py`](examples/framing_correction_demo.py) | How MediaScope corrects VADER's positive bias on investigative journalism using 11 distinct correction paths (A–K), framing device signals, active-negative agency detection, and source stance analysis |
 | [`sarcastic_editorial_demo.py`](examples/sarcastic_editorial_demo.py) | **NEW:** Path H sarcastic editorial detection — how VADER misscores short sarcastic opinion pieces as positive (editorial asides, assumed consensus, reader-address register), with step-by-step trigger diagnostics |
 | [`financial_journalism_demo.py`](examples/financial_journalism_demo.py) | **NEW:** Financial journalism VADER inflation — how investment recommendation boosterism, financial reassurance language, and analyst-debate formats inflate VADER scores by 0.3–0.5 points, with diagnostic flags and interim workarounds (METHODOLOGY §16) |
-| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 222 journalists, 689 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
+| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 223 journalists, 689 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
 | [`topic_classification_demo.py`](examples/topic_classification_demo.py) | **NEW:** 29-bucket topic classification system — demonstrates single-article classification, multi-topic overlap, genre detection via topic confidence, and the full bucket reference with adjacency warnings for commonly confused pairs |
 | [`agent_integration.py`](examples/agent_integration.py) | Integration patterns for LangChain, CrewAI, and raw function calling |
 
@@ -456,7 +456,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **2262 tests** across 99 test files, each covering a different analytical capability:
+MediaScope has **2272 tests** across 100 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -559,6 +559,7 @@ MediaScope has **2262 tests** across 99 test files, each covering a different an
 | `test_recovery_narrative.py` | 10 | Recovery narrative framing device (#94): three-beat decline→catalyst→recovery structure in financial articles, bidirectional competitive_positioning (positive parity variant), confidence scoring, negative guards for neutral wire articles and decline-only articles; discovered from MarketWatch Meta stock rebound article (Jul 10, 2026) |
 | `test_speculative_quote_suppression.py` | 16 | Speculative framing quote-context suppression: `_find_quoted_spans` and `_is_in_quoted_span` helpers (5 tests), editorial prose hedges still fire at 5+ threshold (1 test), analyst quotes suppressed in straight and smart quotes (3 tests), mixed editorial/quoted context (1 test), BofA research note and Motley Fool editorial article patterns (2 tests). Type D fix for financial article false-positive risk. |
 | `test_controlled_retreat_language.py` | 9 | Controlled retreat language detection: `policy_reversal` subtype for corporate damage-control statements — intent displacement, active listening performance, target-miss euphemism, passive unavailability, control reassurance, useful-tool salvage. Entity detection for Meta/Muse Image discontinuation context. Lifecycle cross-narrative analysis (launch phase default burden, backlash phase default burden privacy). Discovered from Reuters Meta Muse Image discontinuation (Jul 10, 2026). |
+| `test_fastco_meta_glasses_2026_07_10.py` | 10 | Fast Company Meta AI glasses controversies roundup Jul 10: EFF 3-word org name extraction fix (_KNOWN_ORGS), C-suite title affiliation (CEO/CTO pattern 0b), hyphenated surname dedup (endswith-hyphen check), VADER polarity inversion (raw +0.633 → corrected −0.5217) |
 
 ```bash
 # Run all tests

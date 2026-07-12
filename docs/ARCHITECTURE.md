@@ -437,8 +437,8 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
-│   └── sample_output/       # 157 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2262 tests across 99 test files (all from real articles)
+│   └── sample_output/       # 158 annotated real-article analyses (see METHODOLOGY.md §17)
+├── tests/                       # 2272 tests across 100 test files (all from real articles)
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
@@ -528,6 +528,7 @@ mediascope/
 │   ├── test_superintelligence_org_suppression.py # Topic classification: "Superintelligence Labs" proper-noun suppression for ai_ethics_safety, Reuters Muse Image wire false positive fix
 │   ├── test_reuters_french_antitrust.py # Reuters French antitrust: "The Information" case-sensitive false positive fix, French media association entities (DVP/APIG/Le Monde/Les Echos), content_licensing topic bucket, acronym org source extraction with appositive clause
 │   ├── test_reuters_french_antitrust_jul8.py # Reuters French antitrust publishing fees Jul 8: escalation_amplification framing (trend magnification), precedent_analogy framing (enforcement precedent citing), content_licensing as primary topic, French media entity clustering (DVP/APIG/Le Monde/Les Echos), Alphabet/Google cluster
+│   ├── test_fastco_meta_glasses_2026_07_10.py # Fast Company Meta AI glasses controversies roundup Jul 10: EFF 3-word org name extraction fix (_KNOWN_ORGS), C-suite title affiliation (CEO/CTO pattern 0b), hyphenated surname dedup (endswith-hyphen check), VADER polarity inversion (raw +0.633 → corrected −0.5217)
 │   ├── test_foxbusiness_meta_1_4t_penalty.py # Fox Business Meta $1.4T penalty Jul 7: editorial_cross_promotion framing device (new — all-caps interstitial blocks), reached_out_for_comment no_comment source pattern (new), valuation_comparison detection, litigation/child_safety topic assignment, structural consistency guard (84 pattern-matched device types)
 │   ├── test_foxbusiness_muse_image_shutdown.py # Fox Business Muse Image shutdown Jul 11: editorial_cross_promotion regex fix (dollar signs/digits in all-caps callouts), policy_reversal controlled retreat patterns (new — "missed the mark"/"no longer available"), loaded_language "misuse" addition, dollar-sign regression guard
 │   ├── test_guardian_cohere_correction.py # Guardian Cohere lawsuit correction Jul 11: factual correction — Guardian News & Media Limited is a NAMED PLAINTIFF in Advance Local Media v. Cohere (SDNY 1:25-cv-01305), contradicting previous "strategic_licensing_over_litigation" classification. Tests: triple_path_ai_strategy reclassification, Cohere MTD denial (McMahon, Nov 13 2025), Observer/Tortoise transfer date (Apr 22 2025), Richard Furness GMG→Tortoise personnel migration, Brittin BBC-Channel 4 partnership, NYT v OpenAI MDL 3143 cross-reference, co-plaintiff verification

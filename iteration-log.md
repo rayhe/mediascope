@@ -19566,3 +19566,34 @@ Gizmodo LED tamper article ("Destroying the Privacy LED on Meta Smart Glasses Wi
 **Annotated article count:** 156 → 157. Analysis: `examples/sample_output/thetab_meta_muse_image_backlash_2026_07_10_analysis.md`.
 
 **Tests:** 2,262 passed, 0 failed.
+
+## 2026-07-11T17:00 PT — Type B: Journalist/Publication Research
+
+**Focus:** Atlantic June 2026 staff writer hires (announced June 23, 2026)
+
+### Added 3 journalist profiles to `journalists.yaml` (204→207):
+
+1. **Joshua Partlow** (WaPo→Atlantic) — 20+ year WaPo foreign correspondent (Baghdad, Kabul bureau chief 2009-2012, Mexico City bureau chief, Rio bureau chief), shifted to American West environmental reporting before Feb 2026 layoffs. Duke University. Author of "A Kingdom of Their Own" (Knopf, 2016). 2010 Overseas Press Club award. Now covers extreme weather/natural disasters at Atlantic.
+   - Sources: Editor & Publisher, Muck Rack, NPR Fresh Air, Amazon/Knopf
+
+2. **Ariel Sabar** (11-year freelance→Atlantic staff) — Brown University magna cum laude. Career: LA Weekly intern → Providence Journal → Baltimore Sun → Christian Science Monitor → freelance. Contributing editor at Smithsonian Magazine and Washingtonian Magazine. Poynter Fellow at Yale. Author of "My Father's Paradise" (NBCC Award 2009) and "Veritas" (Edgar finalist, IRE runner-up). ANALYTICALLY DISTINCT from WaPo exodus hires — represents freelance-to-staff conversion pipeline.
+   - Sources: Editor & Publisher, LitHub, Yale News, Coast to Coast AM
+
+3. **Sebastian Smee** (WaPo→Atlantic) — Australian-born Pulitzer Prize winner (Criticism, 2011). University of Sydney Honours Fine Arts 1994. Career: The Australian (national art critic) → Boston Globe (2008-2018) → WaPo art critic (2018-2026, laid off Feb 2026). Author of 5 books. "Net Loss" Quarterly Essay (2018) shows digital/tech capacity. HALO HIRE: Prestige arts criticism, not core tech beat.
+   - Sources: Editor & Publisher, Hyperallergic, Wikipedia, Lonely Palette Podcast
+
+### Updated `editorial_changes.yaml` (atlantic section: 35→38 entries):
+- 3 new June 23, 2026 hire entries with full context and source URLs
+- All three connected to WaPo→Atlantic pipeline narrative (Partlow + Smee as WaPo exodus, Sabar as freelance conversion)
+
+### Key analytical finding:
+The June 23 triple hire announcement reveals TWO distinct Atlantic talent acquisition vectors operating simultaneously:
+- **WaPo exodus pipeline** (Partlow, Smee): Absorbing premium talent displaced by Bezos-era WaPo layoffs (Feb 2026, ~1/3 of staff). Joins Fischer and Oremus in this pattern. Nicholas Thompson (ex-Wired EIC, Atlantic CEO since Dec 2020) running what amounts to a WaPo talent raid.
+- **Freelance conversion pipeline** (Sabar): Converting proven 11-year freelance relationships into permanent staff. Different from poaching — demonstrates internal talent development.
+
+Both vectors serve the Atlantic's 2025-2026 expansion strategy: 51 editorial changes now tracked, making Atlantic the 4th most-documented publication in MediaScope.
+
+### Validation:
+- Both YAML files pass `yaml.safe_load()` validation
+- 207 total journalist profiles, 16,651 total lines across both files
+- Atlantic: 38 editorial change entries (up from 35)
