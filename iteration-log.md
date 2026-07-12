@@ -1,5 +1,39 @@
 # MediaScope Iteration Log
 
+## 2026-07-12 04:00 PT — Type C: Ownership & Funding Deep Dive (NYT — OpenAI Leadership Instability & Dual IPO Pressure)
+
+**Focus:** The New York Times — chosen because NYT hasn't had a dedicated Type C iteration recently despite major developments in its primary litigation target (OpenAI) this week.
+
+### Key Findings
+
+#### 1. OpenAI Leadership Instability (Jul 10, 2026)
+- **Fidji Simo** stepped down as CEO of AGI Deployment (effectively #2 executive) on Jul 10, citing chronic neuroimmune condition worsened during medical leave (began April 2026).
+- **META REVOLVING DOOR:** Simo was Head of the Facebook App at Meta (~2018-2021) and VP at Facebook (2011-2021, ~10 years) before becoming Instacart CEO, then joining OpenAI. Highest-ranking former Meta executive at OpenAI — relevant because NYT's Mike Isaac and Sheera Frenkel built careers investigating the Facebook App that Simo led.
+- **Greg Brockman** (co-founder, President) assumed product responsibilities, now oversees ChatGPT, enterprise, go-to-market, and compute.
+- **IPO impact:** Simo was expected to take an even larger role post-IPO. Departure requires additional S-1 risk disclosure (key executive loss).
+- Sources: WSJ, Reuters, NY Post, CNBC (all Jul 10)
+
+#### 2. Dual IPO Race — OpenAI + Anthropic
+- **OpenAI:** $852B last private valuation. S-1 filed June 2026. BofA $520M credit line (Jul 8). Could list autumn 2026.
+- **Anthropic:** ~$965B valuation. Also filed confidential S-1 (June 2026). BofA eyeing advisory role on both IPOs.
+- **ChatGPT commercial weakness:** Growth stalled late 2025, missed internal revenue goals (WSJ). Pivoting from consumer to enterprise/coding tools. Revenue ~$2B/month (~$24B annualized), 900M WAU, 50M+ paid subs.
+- **Publisher leverage:** Dual IPO creates maximum leverage for publisher litigants — both companies need sustainable content access to justify valuations. Added as new subsection (d) in NYT profile's IPO implications analysis.
+
+#### 3. Stock & Valuation Refreshes
+- NYT stock: $74.96 (Jul 11 close, +0.89%). Market cap $11.87B.
+- Slim position updated: 29.1M shares × $74.96 = ~$2.18B (was $2.15B at $73.85 on Jul 2).
+- Q2 2026 earnings: Aug 5, 2026. No new SEC filings since Jun 5 (Welch Form 4).
+- Second Slim valuation reference (analysis section) also updated from $2.07B → $2.18B.
+
+### Profile Changes (1 file, +101/−8 lines)
+- `profiles/nytimes.yaml`: Expanded IPO section from 18 lines to ~65 lines (Simo departure, Meta revolving door, Brockman takeover, ChatGPT commercial context, Anthropic competitive IPO, new subsection (d)). Stock/Slim valuation refreshed in 2 locations. New notes section with analytical significance.
+
+**Commit:** `992a936` — pushed to GitHub.
+**Tests:** 2,272 passed, 0 failed.
+**Sources:** Reuters Jul 8/10, WSJ Jul 10, NY Post Jul 11, CNBC Jul 10, eWeek Jun 9, MarketBeat Jul 11, Bloomberg Law Jul 9.
+
+---
+
 ## 2026-07-12 03:00 PT — Type B: Journalist/Publication Research
 
 **Focus:** Journalist profile expansion and sourcing gaps.
