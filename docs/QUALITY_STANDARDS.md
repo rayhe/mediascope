@@ -447,3 +447,39 @@ Some events generate coverage over days or weeks, not a single news cycle. These
 | Jun 17 | TechTimes | "gulag" imported from Wired | Cross-pub import |
 
 The "gulag" characterization, originated by Wired on Jun 16, propagated to TechTimes within 24 hours and to TechCrunch within 16 days (Jul 2) — demonstrating how editorial framing originating at one outlet becomes industry consensus through repetition and cross-publication import.
+
+## 11. Pipeline Statistics Verification
+
+### Purpose
+
+The README's "Pipeline Statistics" table is a public-facing summary of the toolkit's scope. Stale numbers undermine credibility — if our own counts are wrong, why trust the analysis?
+
+### Automated Verification
+
+`scripts/count_stats.py` introspects the codebase at runtime and produces the current counts for every stat in the README table. Run it after any change that adds entity clusters, framing patterns, emotional language terms, journalist profiles, or annotated articles:
+
+```bash
+# Print current counts
+python3 scripts/count_stats.py
+
+# Check README against actual counts — exits 1 if stale
+python3 scripts/count_stats.py --check
+```
+
+### What It Checks
+
+| Stat | Source |
+|---|---|
+| Entity clusters / aliases / regex | `DEFAULT_ENTITY_CLUSTERS` dict in `entities.py` |
+| Framing device types | `_DEVICE_PATTERNS` dispatch dict + structural post-pass types in `framing.py` |
+| Compiled framing patterns | `re.compile()` calls in `framing.py` |
+| Emotional language terms | `EMOTIONAL_LANGUAGE` list in `sentiment.py` |
+| Adversarial device types | `_ADVERSARIAL_DEVICE_TYPES` set in `sentiment.py` |
+| Sentiment correction paths | Path [A-Z] references in `sentiment.py` |
+| Annotated articles | `*_analysis.md` files in `examples/sample_output/` |
+| Journalists / migrations | Career YAML files in `profiles/careers/` |
+| Test files | `test_*.py` files in `tests/` |
+
+### Contribution Rule
+
+Every commit that changes pipeline data (patterns, lexicons, entities, profiles, annotated articles) should end with `python3 scripts/count_stats.py --check` passing. If it reports stale stats, update the README table before committing.
