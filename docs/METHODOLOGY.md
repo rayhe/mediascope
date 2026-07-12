@@ -185,7 +185,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 97 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (80 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 98 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (81 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -288,6 +288,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Overbuilding Narrative** | Infrastructure investment framed as inherently excessive, unsustainable, or bubble-like through war/race metaphors, overcapacity language, sustainability questioning, and bubble analogies. Distinct from scale_magnitude (which just captures large numbers), catastrophizing (which predicts extreme negative outcomes), and loaded_language (which uses emotionally charged individual words). Overbuilding_narrative is a thesis-level framing that positions the spending *itself* as the problem, often via metaphor or challenge-question framing | "spending/capex/AI war"; "arms race"; "overcapacity/overbuilt/overinvestment/infrastructure glut"; "unsustainable" near spending/capex; bubble/mania/euphoria/frenzy near AI/tech/infrastructure; "when will someone blink/pull back"; "throwing/pouring/dumping money/cash/billions at/into" | WSJ "Will Someone Finally Blink in the AI Spending War?" (Jul 8, 2026) — the article's central thesis frames massive AI capex as an arms race requiring an exit rather than strategic investment requiring returns. "Spending war" in the headline, "unsustainable trajectory," and "when will someone blink" collectively construct the overbuilding frame |
 | **Litigation Cascade** | Structural stacking of multiple legal proceedings, case counts, plaintiff numbers, or lawsuit figures across consecutive sentences to create a sense of overwhelming, insurmountable legal pressure. Distinct from litigation_framing (which detects individual legal action vocabulary) and escalation_amplification (which catches intensifying adjectives like "mounting"). Litigation cascade detects the *structural* pattern of enumerating multiple distinct legal fronts to create avalanche effect | "N states have sued/banded/joined"; "more than N,NNN similar/pending cases/lawsuits"; "Another N states/plaintiffs have also brought/filed"; "over/approximately N,NNN lawsuits/cases pending" | Gizmodo "Meta's Teen Safety Case Just Became a $1.4 Trillion Existential Threat" (Jul 8, 2026) — "Thirty-three states have banded together to sue," "more than 3,000 similar cases pending," "Another 14 states have also brought claims" — three consecutive legal fronts stacked to create avalanche effect |
 | **Defensive Verb Framing** | Editorial choice of attribution verbs that frame a subject's statements as reactive, embattled, or on the defensive rather than as substantive positions. "Denied," "attempted yet failed," "conceded," "was forced to" are editorialised verb choices; neutral alternatives include "said," "stated," "contended," "responded." Distinct from confession_framing (which catches "admitted to") and corporate_reassurance_undercut (which catches "insisted/maintained" + "but/however"). Defensive verb framing detects the standalone editorial choice of loaded attribution verbs | "attempted yet/but failed to"; "was/were forced/compelled/obliged to"; "grudgingly/reluctantly acknowledged/conceded"; "scrambled/struggled/fought to"; "has been plagued/beset/dogged/haunted by" | Gizmodo "Meta's Teen Safety Case Just Became a $1.4 Trillion Existential Threat" (Jul 8, 2026) — "attempted yet failed to get the addiction claims dismissed" frames a routine motion-to-dismiss denial as a defeat; "has been plagued with mounting litigation" uses victimisation language. Neutral alternatives: "a judge denied the company's motion" and "faces ongoing litigation" |
+| **Reader Positioning** | Second-person constructions that align the reader with the author's editorial stance before evidence is presented, creating a presumption of shared judgment. The writer addresses the reader directly as a reasonable person who would naturally agree with the framing. Distinct from assumed_consensus (which claims everyone agrees) and editorial_aside (which breaks register for sarcastic asides). Reader positioning uses second-person concessive constructions that presuppose the reader's agreement | "you couldn't be blamed"; "you'd be forgiven for thinking"; "hard to blame anyone"; "nobody could fault you"; "you'd be right to worry/wonder/suspect"; "reasonable/natural/logical to assume/think" | Gizmodo "Meta Thinks It Can Convince You That Smart Glasses Need Facial Recognition" (Jul 11, 2026) — "you couldn't be blamed for thinking" positions the reader as already sharing the author's skeptical stance toward Meta's facial recognition push before evidence is presented. The construction presupposes agreement rather than earning it |
 | **Heritage Nostalgia** | Age references, generational continuity, or historical significance establishing emotional stakes for disruption — implying that what is threatened has deep, irreplaceable value. Distinct from precedent_framing (which signals rarity through time-span comparison) and historical_legitimation (which inserts old positive data to dilute negative news). Heritage nostalgia creates implicit argument that the subject of disruption carries intergenerational weight the reader should feel protective of | "\d+-year-old [entity]"; "fifth/third/N generation [working at/family]"; "iconic/storied/historic [building/landmark]"; "for N years/decades/centuries"; "family-owned/run since [year]" | Reuters "Big Tech data centers are driving up power bills at America's Rust Belt factories" (Jul 7, 2026) — "141-year-old brick manufacturer," "fifth generation working at the company," "products can be found in iconic buildings" — establishes the emotional weight of industrial heritage threatened by Big Tech electricity demand |
 
 #### Structural Devices (Post-Pass)
@@ -823,7 +824,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 97-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 98-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1076,7 +1077,7 @@ The following table documents all 84 entity clusters shipped with MediaScope, or
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
-| **Media/Publications** | 31 | The New York Times, New York Times, NYT, The Washington Post, Washington Post, The Guardian (+25 more) |
+| **Media/Publications** | 32 | The New York Times, New York Times, NYT, The Washington Post, Washington Post, The Guardian (+25 more) |
 | **Whistleblowers/Critics** | 10 | Sarah Wynn-Williams, Wynn-Williams, Frances Haugen, Haugen, Sophie Zhang, Christopher Wylie (+4 more) |
 | **Celebrity/Influencer** | 2 | Kylie Jenner, Jenner |
 
@@ -1361,7 +1362,7 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **158 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **159 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1477,7 +1478,7 @@ Articles cluster into 9 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 158 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 159 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
@@ -1509,7 +1510,7 @@ The EU DSA "Addictive Design" cluster (Jul 10, 2026) is the widest genre-control
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 97 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 98 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|

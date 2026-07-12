@@ -1170,6 +1170,29 @@ _DEVICE_PATTERNS: dict[str, list[re.Pattern]] = {
 }
 
 
+# --- Reader-positioning device ---
+# Editorial phrases that pre-validate the reader's expected reaction,
+# framing skepticism as the reasonable default and trust as naive.
+# Examples: "you couldn't be blamed", "you'd be forgiven for thinking",
+# "it's hard to blame anyone for".
+# Discovered via Gizmodo NameTag/facial-recognition article (Jul 11, 2026).
+_READER_POSITIONING_PATTERNS: list[re.Pattern] = [
+    re.compile(
+        r"\b(?:you (?:couldn.?t|can.?t|could not) be blamed|"
+        r"you.?d be forgiven for|"
+        r"(?:it.?s |it is )?(?:hard|difficult) to blame (?:anyone|you|them)|"
+        r"(?:no one|nobody) (?:could|would|can) blame you|"
+        r"(?:no one|nobody) (?:could|would|can) fault you|"
+        r"(?:who|you) could blame (?:them|you|anyone)|"
+        r"understandably|"
+        r"(?:reasonable|natural|logical) (?:to (?:assume|think|wonder|suspect))|"
+        r"you.?d be right to (?:worry|wonder|suspect|question))\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["reader_positioning"] = _READER_POSITIONING_PATTERNS
+
+
 # Military techno-optimism: editorial framing that normalises violence
 # through technology language.  Phrases like "optimize the human as a
 # weapons system" or "ordering drone strikes via eye-tracking" present
@@ -8164,15 +8187,15 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 90 pattern-matched device types plus 7 structural
-    post-pass types (97 total).
+    Scans for 91 pattern-matched device types plus 7 structural
+    post-pass types (98 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (90): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (91): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_displacement,
@@ -8203,7 +8226,7 @@ def detect_framing_devices(
     pathologizing_metaphor, policy_reversal, power_asymmetry,
     precedent_analogy, precedent_framing,
     prescriptive_solutionism,
-    pressure_language, recidivism_framing,
+    pressure_language, reader_positioning, recidivism_framing,
     recovery_narrative, refusal_amplification,
     regulatory_favoritism, regulatory_risk_subordination,
     regulatory_shadow, repeated_disruption, rhetorical_question,
@@ -8301,6 +8324,26 @@ def detect_framing_devices(
                             "reduce", "fewer",
                         )
                         if any(cue in _lookback_pm for cue in _NEUTRAL_INTERVENTION):
+                            continue
+
+                    # Suppress when "enabling" is used literally in
+                    # accessibility/functional contexts, not as
+                    # addiction-enabler metaphor.  E.g. "enabling a
+                    # person who is blind", "enabling accessibility",
+                    # "enabling users to".
+                    # Discovered in Gizmodo NameTag article (Jul 11):
+                    # "enabling, for instance, a person who is blind"
+                    # is functional, not pathologizing.
+                    if "enabling" in _matched_pm or "enabler" in _matched_pm:
+                        _lookahead_pm = text[end:end + 80].lower()
+                        _FUNCTIONAL_ENABLING = (
+                            "accessibility", "blind", "low-vision",
+                            "disabled", "deaf", "impairment",
+                            "users to", "people to", "person to",
+                            "for instance",
+                            "developers to", "a person who",
+                        )
+                        if any(cue in _lookahead_pm for cue in _FUNCTIONAL_ENABLING):
                             continue
 
                 # --- Geopolitical pressure: physical "stood/standing firm" ---

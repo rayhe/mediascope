@@ -400,6 +400,8 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "The New Yorker", "New Yorker",
             "Fast Company",
             "PYMNTS", "Barron's", "Wall Street Journal", "WSJ",
+            # Editorial leaders tracked for career-migration analysis
+            "Nicholas Thompson",  # Former Wired EIC (2017-2022), Atlantic CEO (2022-)
         ],
     },
     "Whistleblowers/Critics": {
@@ -1216,7 +1218,20 @@ def detect_entities(
             if matched_lower in _HOMOGRAPH_VERB_FILTERS:
                 lookahead = text[end : end + 30]
                 if _HOMOGRAPH_VERB_FILTERS[matched_lower].match(lookahead):
-                    continue
+                    # Exception: attribution contexts like "by Wired",
+                    # "from Wired", "reported by Wired", "says Wired"
+                    # indicate proper-noun usage even when followed by
+                    # a preposition that would normally trigger the
+                    # verb filter.
+                    lookback_hom = text[max(0, start - 30) : start]
+                    _ATTRIBUTION_OVERRIDE = re.compile(
+                        r"(?:by|from|per|says|said|told|reported\s+by|"
+                        r"found\s+by|according\s+to|source[sd]?\s+by|"
+                        r"covered\s+by|published\s+by)\s*$",
+                        re.IGNORECASE,
+                    )
+                    if not _ATTRIBUTION_OVERRIDE.search(lookback_hom):
+                        continue
 
             # Lookbehind homograph filter (e.g. "context windows" vs Windows)
             if matched_lower in _HOMOGRAPH_LOOKBEHIND_FILTERS:

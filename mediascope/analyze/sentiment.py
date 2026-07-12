@@ -674,6 +674,11 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "harms", "harm", "harmful",
     "raw material to be exploited", "raw material",
     "criticism", "criticised", "criticized",
+    # Added 2026-07-12: discovered via Gizmodo NameTag/facial-recognition article
+    "unholy", "unholy marriage", "cramming",
+    "colliding", "unethical", "far-fetched",
+    "bad track record", "couldn't be blamed",
+    "nude videos", "nude footage",
 ]
 
 # Passive/victim vs. active/powerful framing indicators

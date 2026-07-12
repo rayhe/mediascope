@@ -1,5 +1,42 @@
 # MediaScope Iteration Log
 
+## 2026-07-12 01:00 PT — Type A: Article Deep Dive
+
+**Article:** Gizmodo — "Meta Thinks It Can Convince You That Smart Glasses Need Facial Recognition" (Jul 11, 2026)
+**URL:** https://gizmodo.com/meta-thinks-it-can-convince-you-that-smart-glasses-need-facial-recognition-2000618159
+
+### Key Improvements
+
+#### 1. New framing device: `reader_positioning` (#98)
+Second-person concessive constructions that align the reader with the author's editorial stance before evidence is presented — "you couldn't be blamed," "you'd be forgiven for thinking," "hard to blame anyone," "you'd be right to worry." Presupposes reader agreement rather than earning it. Distinct from `assumed_consensus` (claims everyone agrees) and `editorial_aside` (breaks register for sarcastic asides). Discovered from the article's "you couldn't be blamed for thinking" construction that positions the reader as already sharing the author's skepticism toward Meta's facial recognition push.
+
+#### 2. Bug fix: Wired homograph filter (`entities.py`)
+The "wired" verb filter was suppressing "Wired" as a publication when followed by "in" (e.g., "found by Wired in a latent state"). Added attribution-context override with lookback for "by/from/per/found by" patterns.
+
+#### 3. Nicholas Thompson added to `Media/Publications` entity cluster
+Added with comment noting he's former Wired EIC (2017–2022), now Atlantic CEO (2022–).
+
+#### 4. 10 emotional language terms added
+"unholy," "unholy marriage," "cramming," "colliding," "unethical," "far-fetched," "bad track record," "couldn't be blamed," "nude videos," "nude footage" — all missed from Gizmodo article analysis.
+
+#### 5. Bug fix: Pathologizing metaphor false-positive (`framing.py`)
+Added suppression for "enabling/enabler" when followed by accessibility-context cues like "blind," "low-vision," "accessibility," "a person who."
+
+#### 6. Full doc/test cascade update
+Updated 98/10/81/7 counts across: METHODOLOGY.md (§4 intro, §4.1 table, §8 reference, §17), ARCHITECTURE.md (diagram, Extended list, test tree), AGENT_GUIDE.md (CLI description, tier count), README.md (stats table, test descriptions), FRAMING_REFERENCE.md (card table + total), CLI docstring, QUALITY_STANDARDS.md (emotional language count). Also fixed stale journalist count (227→226 per YAML) and annotated article count (158→159).
+
+### Stats Change
+| Stat | Before | After | Δ |
+|---|---|---|---|
+| Framing device types | 97 | 98 | +1 |
+| Pattern-based types | 90 | 91 | +1 |
+| Compiled patterns | 636 | 637 | +1 |
+| Emotional language terms | 931 | 941 | +10 |
+| Annotated articles | 158 | 159 | +1 |
+
+### Test Suite
+All tests passing (count updated after run).
+
 Tracks every improvement cycle run on the toolkit.
 
 ## 2026-07-12 00:00 PT — Type D: Toolkit Quality & Documentation

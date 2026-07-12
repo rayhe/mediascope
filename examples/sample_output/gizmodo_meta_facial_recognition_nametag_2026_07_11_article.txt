@@ -1,0 +1,42 @@
+Title: Meta Thinks It Can Convince You That Smart Glasses Need Facial Recognition
+Publication: Gizmodo
+Author: Not explicitly attributed (Gizmodo staff)
+Date: July 11, 2026
+URL: https://gizmodo.com/meta-thinks-it-can-convince-you-that-smart-glasses-need-facial-recognition-2000784081
+
+---
+
+Meta Thinks It Can Convince You That Smart Glasses Need Facial Recognition
+
+Whether Meta has made it official or not, all signs point to its smart glasses eventually colliding with facial recognition. The question, at this point, isn't whether Meta is interested in cramming those two very complex and potentially problematic technologies together (it most likely is); it's how exactly it will go about the unholy marriage.
+
+In a recent interview with journalist and author Nicholas Thompson, Meta CTO Andrew Bosworth gave some insight into the company's plans for how Meta's smart glasses could use facial recognition.
+
+One stand-out bit has to do with the actual storing of faces. According to Bosworth, Meta envisions the feature as something that runs locally on a person's device, meaning there would be no "central database" of faces it pulls from.
+
+"[It would be] encrypted locally to your device, somebody that you met in person with your glasses on who introduced themselves, or you said, 'Okay, this is David, remember this person.' Only available to you when you are wearing your glasses," Bosworth said of its NameTag feature that was reportedly already found by Wired in a latent state inside the Meta AI app.
+
+"This is a person you've met before. Here's their name. They're right in front of you. That's what I'm talking about. That's what we call the NameTag feature. And so I think people get confused because they hear 'face recognition' and they think, 'Oh, there's a central face database that everyone's being scanned constantly into.'"
+
+If a central database of faces is where your head went immediately when you saw "Meta" and "facial recognition" in the same sentence, you couldn't be blamed. Meta *has* actually done just that in the past when it was found to have collected and stored the faces of 1 billion people through Facebook. That massive and unethical biometric database was deleted after lawsuits from the states of Texas and Illinois.
+
+Reporting about Meta's interest in facial recognition has been bubbling up, but this is the first time Meta has officially elaborated on its plans with some specificity, despite being pressed by lawmakers earlier this year following a report from the New York Times.
+
+In Bosworth's telling, Meta's interest in the use of facial recognition could involve accessibility, enabling, for instance, a person who is blind to have their glasses recognize someone who's in the same room. Bosworth then goes on, however, to open the door to more general uses for such a feature that don't involve accessibility at all.
+
+"By the way, and I've told the story through the blind, low-vision community… you'd use it. I'd use it," Bosworth tells Thompson. "You're a journalist; you must meet people constantly, but constantly in your head be like, 'I know this person's name, face, what was the last time we talked? What's the context here?' We call it the cocktail party problem."
+
+Even if Meta *did* make a facial recognition feature that runs locally without storing information on its servers, convincing people to use it or even just accept it would be a massive hurdle. Meta, as I mentioned before, has a bad track record with facial recognition and with respecting user privacy in general. Explaining Meta's intent might give peace of mind to anyone who was likely to accept face recognition in the first place, but to everyone else, it might feel far-fetched that Meta's tune has changed so drastically.
+
+But that's what happens when you have a reputation. If Meta wants people to accept facial recognition as a benign technology, it probably shouldn't also be using nude videos taken by people who own its smart glasses to train its AI. Privacy is already a tough guarantee, and doubly so when you're a company that consistently finds itself encroaching on it.
+
+---
+
+External references (from hyperlinks):
+- [0] Gizmodo tag page on facial recognition
+- [1] Nicholas Thompson interview (YouTube)
+- [2] Wired report on NameTag found in Meta AI app (wired.com)
+- [3] EFF on lawsuits re Meta facial recognition database (eff.org)
+- [4] New York Times report on lawmakers pressing Meta (nytimes.com)
+- [5] Gizmodo coverage of Meta's bad track record
+- [6] Swedish SVD report on nude videos used for AI training (svd.se)

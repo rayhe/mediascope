@@ -215,7 +215,7 @@ def analyze(publication, target, since, force):
     \b
     • Entity detection and co-occurrence mapping
     • 8-dimension sentiment scoring (tone, emotional intensity, agency, etc.)
-    • Framing device detection (97 types: loaded language, CEO personalization, etc.)
+    • Framing device detection (98 types: loaded language, CEO personalization, etc.)
     • Source extraction with stance analysis (adversarial / supportive / neutral)
     • Outsourced intensity measurement (editorial prose vs. quoted intensity)
     • Headline vs. body sentiment comparison with framing-aware correction
