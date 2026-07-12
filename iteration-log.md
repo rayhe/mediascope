@@ -19694,3 +19694,4 @@ Both vectors serve the Atlantic's 2025-2026 expansion strategy: 51 editorial cha
 2,272 tests passing (0 failures after README/EDITORIAL_HISTORIES stat updates).
 
 ### Commit
+- `cfa04e8`: Type B — Lauren Feiner deep-dive, 195 insertions, 25 deletions across journalists.yaml, README.md, EDITORIAL_HISTORIES.md, iteration-log.md. Pushed to GitHub.
