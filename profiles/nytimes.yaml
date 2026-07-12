@@ -26,10 +26,11 @@ ownership_chain:
   - name: "The New York Times Company"
     entity_type: "parent_company"
     description: >
-      Publicly traded (NYSE: NYT). Market cap ~$11.52B (Jul 2026). Stock ~$73.85/share (Jul 2, 2026).
-      52-week range: $51.03–$87.10. Beta: 0.97. Quarterly dividend $0.23/share (payable Jul 23, 2026).
-      Q2 2026 earnings expected ~Aug 5, 2026. Consensus estimates: FY2026 EPS $2.93, FY2027 $3.22.
-      Analyst consensus target: $83.22 (+12.7% upside). Ratings: 0 Sell, 6 Hold, 4 Buy, 1 Strong Buy.
+      Publicly traded (NYSE: NYT). Market cap ~$11.87B (Jul 11, 2026). Stock $74.96/share (Jul 11, 2026 close).
+      52-week range: $51.03–$87.10. Beta: 0.94. Quarterly dividend $0.23/share (payable Jul 23, 2026).
+      Q2 2026 earnings: Aug 5, 2026 (confirmed per MarketBeat). Consensus estimates: FY2026 EPS $2.93, FY2027 $3.22.
+      TTM revenue: $2.8B. TTM net income: $344M. Operating cash flow: $584.5M. Net margin: 12.2%.
+      Analyst consensus target: $83.22 (+11.0% upside from $74.96). Ratings: 0 Sell, 6 Hold, 4 Buy, 1 Strong Buy.
       Dual-class share structure gives Sulzberger family control despite ~11% economic ownership.
       95.37% of Class A stock held by institutional investors.
       Annual meeting April 22, 2026: all directors re-elected, EY ratified as auditor,
@@ -247,7 +248,10 @@ legal_counsel_cross_representation:
     - "https://chatgptiseatingtheworld.com/2025/09/14/penske-media-v-google-complaint/"
     - "https://authorsguild.org/news/new-york-times-sues-openai/"
     - "https://www.courtlistener.com/docket/69879510/1584/in-re-openai-inc-copyright-infringement-litigation/"
-  last_updated: "2026-07-10"
+    - "https://news.bloomberglaw.com/tech-and-telecom-law/new-york-times-seeks-sanctions-against-openai-in-copyright-case"
+    - "https://www.fastcompany.com/91571899/new-york-times-other-news-outlets-want-sanctions-on-openai"
+    - "https://www.mondaq.com/unitedstates/copyright/1646714/in-vacating-1-billion-judgment-the-supreme-court-narrows-contributory-copyright-infringement"
+  last_updated: "2026-07-11"
 
 # ===================================================================
 # WIRECUTTER & AFFILIATE REVENUE — new section, 2026-06-24
@@ -527,30 +531,69 @@ revenue_relationships:
       
       SANCTIONS MOTION (Jul 9, 2026):
       - NYT and NY Daily News filed motion for sanctions against OpenAI (Dkt. filed Jul 9,
-        2026, S.D.N.Y.). Key allegations:
+        2026, S.D.N.Y., No. 1:25-md-03143). Key allegations:
         (a) OpenAI falsely told the court it could NOT search its LLMs and output logs for
             copyrighted content, calling such searches "infeasible, burdensome, and invasive
-            of users' privacy."
-        (b) An OpenAI employee subsequently testified that the company had "performed multiple
-            searches for News Plaintiffs' content" — and had done so "even before the first
-            News Plaintiff filed suit."
+            of users' privacy." OpenAI's acts are characterized as a "deliberate and
+            systematic effort to obstruct discovery" spanning two years (Bloomberg Law).
+        (b) An April 2026 deposition of an OpenAI EXPERT WITNESS upended OpenAI's prior
+            claims — testimony confirmed the company had "performed multiple searches for
+            News Plaintiffs' content" and had done so "even before the first News Plaintiff
+            filed suit." Specific expert admissions were REDACTED in the motion. This is
+            qualitatively different from prior discovery disputes: a sworn expert contradicted
+            the company's own representations to the court.
         (c) OpenAI "deleted billions of relevant ChatGPT conversations or made them
             unsearchable" — spoliation of evidence that could demonstrate systemic use of
-            publishers' copyrighted works.
-      - Plaintiffs seek: sanctions including attorneys' fees AND a court finding that the
-        destroyed/concealed chat logs showed OpenAI misused their copyrighted works
-        (adverse inference sanction).
-      - NYT lead attorney Ian Crosby (Susman Godfrey): "For over two years, OpenAI lied to
-        The Times, The Daily News Plaintiffs, the public, and the court."
+            publishers' copyrighted works. Times also alleged OpenAI VIOLATED A COURT ORDER
+            TO PRESERVE materials related to ChatGPT's output of copyrighted content.
+        (d) The 20M de-identified "sample" ChatGPT output logs OpenAI provided contained
+            so many redactions the court previously called them "unusable." A second 20M
+            log sample with fewer redactions was disclosed only ONE WEEK before end of
+            discovery — still hampered plaintiffs' searches (Bloomberg Law).
+      - REMEDIES SOUGHT (Bloomberg Law, specific detail):
+        (i) Attorneys' fees, expert fees, and costs for efforts to secure improperly
+            withheld discovery
+        (ii) PROHIBIT OpenAI from relying on the output logs it provided "for any purpose"
+        (iii) ADVERSE INFERENCE: Court finding that the output logs "include (or would have
+              shown if properly produced in discovery) substantial and systematic grounding on
+              and regurgitation of News Plaintiffs' copyrighted material in outputs"
+        (iv) OpenAI PROHIBITED from arguing against that assertion
+        (v) JURY INSTRUCTION on the findings "and their binding effects"
+      - PLAINTIFF COUNSEL (Bloomberg Law): Susman Godfrey, Rothwell Figg Ernst & Manbeck,
+        Loevy & Loevy, Klaris Law, and Ruttenberg IP Law.
+      - OPENAI DEFENSE COUNSEL: Latham & Watkins, Morrison & Foerster, and Keker Van Nest
+        & Peters. (Same firms defending across OpenAI AI litigation portfolio.)
+      - NYT lead attorney Ian Crosby (partner, Susman Godfrey): "For over two years, OpenAI
+        lied to The Times, The Daily News Plaintiffs, the public, and the court. It claimed
+        searching ChatGPT outputs for copies of The Times' and the Daily News Plaintiffs'
+        content was infeasible, burdensome, and invasive of users' privacy — while at the
+        same time concealing that it had already done such searches. If OpenAI genuinely
+        believed that copying our clients' journalism was fair and legal, it wouldn't have
+        hid the truth about having done it."
       - Daily News attorney Steven Lieberman: motion "asks the court to punish OpenAI for
         hiding and destroying evidence showing how ChatGPT was trained on stolen journalism."
       - OpenAI spokesperson Drew Pusateri: "As the Times' case weakens and they've been
         forced to drop claims against us, they're persisting with their efforts to invade
         the privacy of people who have nothing to do with this case, including by making
-        these blatantly false allegations."
+        these blatantly false allegations. We'll continue defending our users' privacy and
+        the long-established principles of fair use."
       - Context: NYT dropped a secondary copyright infringement claim in an amended
-        complaint filed in June 2026 (per Reuters), narrowing the case. OpenAI frames
-        this as case weakening; NYT frames it as strategic focus on strongest claims.
+        complaint filed in June 2026 (per Reuters), narrowing the case after SCOTUS Cox
+        Communications ruling. OpenAI frames this as case weakening; NYT frames it as
+        strategic focus on strongest claims.
+      
+      LITIGATION COSTS (Jul 11, 2026 — first disclosed):
+      NYT has spent more than $28 MILLION on fighting AI companies in court, per filings
+      with financial regulators (Fast Company/AP, Jul 10-11, 2026). This figure includes
+      BOTH the OpenAI/Microsoft MDL and the separate Perplexity AI lawsuit. For context,
+      the 10-K noted $4.4M in pretax litigation costs for Q1 related to the copyright
+      lawsuit. The $28M cumulative figure means litigation costs are accelerating — the
+      sanctions motion's request for attorneys' fees would partially offset this burden if
+      granted. The $28M figure is material: it represents ~2.4% of FY2025 operating profit
+      ($431.6M) and is approximately equal to one year of the Amazon AI licensing deal
+      ($20-25M/yr). NYT is spending roughly as much on AI litigation as it earns from AI
+      licensing — a strategic investment in precedent-setting, not a profit center.
+      Source: "filings with financial regulators" per AP/Fast Company Jul 10-11, 2026.
       
       DISCOVERY OBSTRUCTION PATTERN: This is the THIRD sanctions-related event in 6 weeks:
         1. Jun 2, 2026: $100/day sanctions for withholding Musk v. Altman deposition exhibits
@@ -609,7 +652,7 @@ revenue_relationships:
       - "https://docs.justia.com/docket/68117049/1/the-new-york-times-company-v-microsoft-corporation/"
       - "https://www.courtlistener.com/docket/69879510/1584/in-re-openai-inc-copyright-infringement-litigation/"
       - "https://docs.justia.com/cases/federal/district-courts/new-york/nysdce/1:2023cv11195/612697/551"
-    last_updated: "2026-07-10"
+    last_updated: "2026-07-11"
 
   - partner: "Apple"
     relationship_type: "former_partnership_and_ongoing_selective"
@@ -1624,9 +1667,17 @@ litigation_connections:
           targeting Microsoft's infrastructure role rather than OpenAI's end-user facilitation.
         source_url: "https://news.bloomberglaw.com/ip-law/new-york-times-narrows-openai-suit-targets-microsofts-conduct"
         notes: >
-          Cox Communications v. BMG Rights (SCOTUS, Mar 25, 2026, 9-0): raised the standard
-          for contributory infringement claims against platforms. NYT adapted by narrowing
-          its theory. CEO Levien at Axios event: 'The stakes are really, really high here...
+          Cox Communications, Inc. v. Sony Music Entertainment (SCOTUS, Mar 25, 2026, 9-0,
+          authored by Justice Thomas): raised the standard for contributory infringement
+          claims against platforms. Held: "contributory liability can be shown only if
+          the party induced the infringement" through specific acts OR the provided service
+          "is tailored to that infringement" with no "'substantial' or 'commercially
+          significant' non-infringing uses." Vacated $1B judgment against Cox. Also:
+          failure to follow DMCA notice-and-takedown NOT a basis for contributory liability.
+          (Source: Mondaq, Ballard Spahr analysis, Mar 25, 2026.) NYT adapted by narrowing
+          its theory — dropping the claim that OpenAI users' infringement made OpenAI
+          contributorily liable, and instead targeting Microsoft's infrastructure role.
+          CEO Levien at Axios event: 'The stakes are really, really high here...
           These companies that make the LLMs have taken our work.'
     consolidated_mdl_status: >
       Case is part of consolidated pretrial proceedings for 16 copyright lawsuits against OpenAI
@@ -1956,13 +2007,21 @@ notes: |
 
   12. NYT AMENDED COMPLAINT — COX COMMUNICATIONS SCOTUS IMPACT (late Jun 2026):
   NYT filed amended complaint in SDNY: (a) DROPPED contributory infringement claim against
-  OpenAI after Supreme Court's Cox Communications ruling (Mar 25, 2026, 9-0) raised the bar
-  for platform liability for customer piracy. (b) FORTIFIED claims against Microsoft, accusing
-  it of "actively encouraging OpenAI's infringement" through purpose-built supercomputer
-  infrastructure. Strategic pivot from diffuse platform liability to concentrated provider
-  liability. CEO Levien at Axios: "The stakes are really, really high here."
+  OpenAI after Supreme Court's Cox Communications, Inc. v. Sony Music Entertainment ruling
+  (Mar 25, 2026, 9-0, Thomas J.) held that contributory liability requires inducement OR
+  product "tailored to infringement" with no commercially significant non-infringing uses.
+  (b) FORTIFIED claims against Microsoft, accusing it of "actively encouraging OpenAI's
+  infringement" through purpose-built supercomputer infrastructure. Strategic pivot from
+  diffuse platform liability to concentrated provider liability. CEO Levien at Axios:
+  "The stakes are really, really high here."
 
-  13. STOCK PRICE UPDATE: $71.79/share (Jul 1, 2026), market cap ~$11.5B.
+  13. STOCK PRICE UPDATE: $74.96/share (Jul 11, 2026), market cap ~$11.87B.
+
+  14. LITIGATION COST DISCLOSURE (Jul 11, 2026):
+  NYT has spent $28M+ fighting AI companies in court, per filings with financial regulators
+  (AP/Fast Company, Jul 10-11, 2026). Includes OpenAI MDL + Perplexity lawsuit. The $28M is
+  ~2.4% of FY2025 operating profit and roughly equals the Amazon AI licensing deal value.
+  NYT's legal investment exceeds its AI licensing revenue — a bet on precedent over revenue.
 
   PRIOR UPDATES PRESERVED BELOW:
 
