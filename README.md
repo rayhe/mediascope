@@ -49,7 +49,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Sentiment correction paths | 11 | Paths A–K, each addressing a specific VADER failure mode |
 | Annotated articles | 159 | Full manual analysis in `examples/sample_output/` |
 | Journalists tracked | 227 | Career data with source URLs |
-| Career-entry migrations | 894 | Across 413 distinct publications |
+| Career-entry migrations | 895 | Across 413 distinct publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
 | Tests | 2,272 | Across 100 test files |
 
@@ -78,7 +78,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **226 journalists** across 400+ publications (894 career-entry migrations, 703 auto-detected). Notable high-value migrations include:
+Ships with verified career data for **227 journalists** across 400+ publications (895 career-entry migrations, 706 auto-detected). Notable high-value migrations include:
 
 | Journalist | Migration Path | Analytical Value |
 |---|---|---|
@@ -372,7 +372,7 @@ The `examples/` directory contains runnable demos that walk through MediaScope's
 | [`framing_correction_demo.py`](examples/framing_correction_demo.py) | How MediaScope corrects VADER's positive bias on investigative journalism using 11 distinct correction paths (A–K), framing device signals, active-negative agency detection, and source stance analysis |
 | [`sarcastic_editorial_demo.py`](examples/sarcastic_editorial_demo.py) | **NEW:** Path H sarcastic editorial detection — how VADER misscores short sarcastic opinion pieces as positive (editorial asides, assumed consensus, reader-address register), with step-by-step trigger diagnostics |
 | [`financial_journalism_demo.py`](examples/financial_journalism_demo.py) | **NEW:** Financial journalism VADER inflation — how investment recommendation boosterism, financial reassurance language, and analyst-debate formats inflate VADER scores by 0.3–0.5 points, with diagnostic flags and interim workarounds (METHODOLOGY §16) |
-| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 226 journalists, 703 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
+| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 227 journalists, 706 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
 | [`topic_classification_demo.py`](examples/topic_classification_demo.py) | **NEW:** 29-bucket topic classification system — demonstrates single-article classification, multi-topic overlap, genre detection via topic confidence, and the full bucket reference with adjacency warnings for commonly confused pairs |
 | [`agent_integration.py`](examples/agent_integration.py) | Integration patterns for LangChain, CrewAI, and raw function calling |
 

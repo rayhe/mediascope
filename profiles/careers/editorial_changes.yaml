@@ -158,8 +158,6 @@ editorial_changes:
     source_url: https://rss.ponder.cat/post/172398
   - date: 2025-06
     incoming: Quinta Jurecic
-    outgoing: null
-    position: staff_writer_law_governance
     notes: 'THINK-TANK PIPELINE HIRE: Elevated from contributing writer (since ~2018) to staff writer. Announced in batch
       with Olorunnipa and Youssef. Previously fellow at Brookings Institution Governance Studies and senior editor at Lawfare.
       WaPo editorial writer (2017-2018). Wesleyan BA Political Science 2015. Unique career path through think tanks (Brookings)
@@ -168,11 +166,11 @@ editorial_changes:
       SIGNIFICANCE: First tracked journalist entering a publication via the policy-institution pipeline (Brookings/Lawfare)
       rather than a competing newsroom. Tests whether governance/regulatory framing produces structurally different tech coverage
       than the adversarial-exposé mode of former tech-beat reporters.'
+    outgoing: null
+    position: staff_writer_law_governance
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-staff-writers-quinta-jurecic-toluse-olorunnipa-and-nancy-youssef,256335
   - date: 2025-06
     incoming: Toluse Olorunnipa
-    outgoing: null
-    position: staff_writer_politics
     notes: 'WaPo→ATLANTIC MIGRATION (Bureau Chief level): Pulitzer Prize winner (2023, "His Name Is George Floyd"). Was WaPo
       White House Bureau Chief (2022-2025) — first reporter of native African/Nigerian descent to cover the White House. Stanford
       BA/MSc. Previously at Bloomberg News and Miami Herald. Part of massive 2025 WaPo→Atlantic exodus post-Bezos endorsement
@@ -181,11 +179,11 @@ editorial_changes:
       — tests whether White House-level political framing shifts between Bezos-owned WaPo and Emerson Collective-owned Atlantic,
       especially for tech-government intersection stories (AI executive orders, platform oversight, government shutdown impacts
       on tech regulation).'
+    outgoing: null
+    position: staff_writer_politics
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-staff-writers-quinta-jurecic-toluse-olorunnipa-and-nancy-youssef,256335
   - date: '2025-07-07'
     incoming: Nancy Youssef
-    outgoing: null
-    position: staff_writer_national_security
     notes: 'WSJ→ATLANTIC MIGRATION: 20+ year national security veteran. Was WSJ national security correspondent (2021-2025).
       Previously: BuzzFeed News (senior national security), Daily Beast (senior defense), McClatchy (Baghdad bureau chief,
       chief Pentagon correspondent, Middle East bureau chief in Cairo covering 2011 Egyptian Revolution). Founded Pentagon
@@ -196,31 +194,31 @@ editorial_changes:
       business press, and Emerson Collective magazine. Her national security beat intersects with tech coverage when covering
       defense AI, military procurement, cyber operations, and surveillance. Recent Atlantic coverage: Hegseth/military restructuring
       (NPR Fresh Air appearance, 2026).'
+    outgoing: null
+    position: staff_writer_national_security
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-staff-writers-quinta-jurecic-toluse-olorunnipa-and-nancy-youssef,256335
   - date: 2026-03
     incoming: Sophia Nguyen
-    outgoing: null
-    position: staff_writer_culture_books
     notes: 'WAPO → ATLANTIC PIPELINE: Staff writer covering culture and books. Joined from Washington Post where she covered
       news and wrote features for the Books section. Part of the spring 2026 Atlantic hiring wave that drew at least 4 journalists
       from WaPo in a single batch. Announcement by EIC Jeffrey Goldberg praised her "impressive doggedness" and "elegance
       of her writing." Not tech-focused but represents the institutional talent drain from WaPo → Atlantic under Emerson Collective
       expansion.'
+    outgoing: null
+    position: staff_writer_culture_books
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff,260673
   - date: 2026-03
     incoming: Kevin Sieff
-    outgoing: null
-    position: staff_writer_international
     notes: 'WAPO → ATLANTIC PIPELINE: Staff writer, international/Latin America focus. Spent 15 years overseas at Washington
       Post (Kabul, Nairobi, Mexico City, Barcelona). Two Overseas Press Club awards, Pulitzer and Livingston finalist. His
       WaPo story on Mexican police apprehending American fugitives was adapted as Netflix series "The Gringo Hunters." Part
       of spring 2026 batch hire from WaPo. Not tech-focused but signals Atlantic''s aggressive poaching of WaPo''s most decorated
       correspondents.'
+    outgoing: null
+    position: staff_writer_international
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff,260673
   - date: 2026-03
     incoming: Theo Balcomb
-    outgoing: null
-    position: senior_editor_podcasts
     notes: 'KEY MIGRATION: NPR → NYT → WaPo → Atlantic. Co-created The Daily at New York Times — one of the most influential
       podcast franchises in journalism. Career: NPR fellow → All Things Considered supervising producer → co-created The Daily
       (NYT) → WaPo (edited Peabody Award-winning "The Empty Grave of Comrade Bishop," Pulitzer finalist "Broken Doors," duPont-nominated
@@ -228,31 +226,31 @@ editorial_changes:
       4-institution migration spanning audio journalism''s prestige outlets. Her NPR → NYT → WaPo → Atlantic arc is the audio
       equivalent of the print journalist pipeline and represents editorial DNA transfer across institutions. Tests whether
       podcast editorial framing carries institutional culture the way print framing does.'
+    outgoing: null
+    position: senior_editor_podcasts
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff,260673
   - date: 2026-03
     incoming: Jonathan L. Fischer
-    outgoing: null
-    position: senior_editor_culture
     notes: 'WAPO → ATLANTIC PIPELINE: Senior editor focusing on Kennedy Center, Smithsonian, and Trump administration''s cultural
       policy. Came from Washington Post where he led similar coverage and "guided his reporters to scoop after scoop." Also
       edits broader culture stories including business of entertainment and media. Part of spring 2026 batch hire. PATTERN
       NOTE: This is the 4th WaPo journalist in a single announcement — the most aggressive single-batch poach of WaPo talent
       by any outlet since Bezos ownership turbulence began.'
+    outgoing: null
+    position: senior_editor_culture
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff,260673
   - date: 2026-01
     incoming: Caity Weaver
-    outgoing: null
-    position: staff_writer_features
     notes: 'NYT MAGAZINE → ATLANTIC: Staff writer, features. One of the most celebrated feature writers of her generation.
       Known for adventurous, riotously funny long-form pieces (profiling Progressive''s Flo, searching for Tom Cruise, eating
       endless appetizers at TGI Friday''s). EIC Goldberg: "one of the most formidable nonfiction writers of her generation."
       ANALYTICAL VALUE: NYT Magazine → Atlantic migration represents a different pipeline than the WaPo → Atlantic wave —
       this is Atlantic poaching from NYT''s premier feature-writing talent pool.'
+    outgoing: null
+    position: staff_writer_features
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-hires-caity-weaver-as-staff-writer/259237
   - date: 2025-08
     incoming: Emily Bobrow
-    outgoing: null
-    position: senior_editor_politics_global_ideas
     notes: 'WSJ → ATLANTIC PIPELINE: Senior editor on the politics, global, and ideas team. Was features editor and reporter
       for WSJ Review section, known as "a creative, thoughtful and supportive editor." Previously wrote WSJ''s "Weekend Confidential"
       column (2020-2023). Earlier career at The Economist, covering culture, politics, and policy in New York, London, and
@@ -261,11 +259,11 @@ editorial_changes:
       Zezima, Will Gottsegen, and Jonathan Lemire. ANALYTICAL VALUE: WSJ → Atlantic represents Murdoch/Dow Jones → Emerson
       Collective editorial pipeline (same pattern as Paul Beckett, Oct 2025). Her editing gatekeeps which political and policy
       stories get shaped at Atlantic — downstream influence on tech-government intersection coverage.'
+    outgoing: null
+    position: senior_editor_politics_global_ideas
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-emily-bobrow-and-katie-zezima-as-senior-editors-will-gottsegen-and-jonathan-lemire-join-as-staff-writers,261030
   - date: 2025-08
     incoming: Katie Zezima
-    outgoing: null
-    position: senior_editor_politics_global_ideas
     notes: 'KEY MIGRATION — WAPO → ATLANTIC PIPELINE: Senior editor on the politics, global, and ideas team. 11-year Washington
       Post career spanning White House correspondent (Obama administration) → national political reporter → America desk editor
       (drugs, guns, gambling, NRA coverage) → health desk assignment editor (pandemic) → climate science and impact editor
@@ -277,11 +275,11 @@ editorial_changes:
       coverage where tech regulation, AI environmental impact, and government accountability intersect. Part of the massive
       WaPo → Atlantic exodus post-Bezos endorsement controversy (Oct 2024). At least 30 WaPo reporters/editors hired by Atlantic
       in recent years per Mediagazer and TheWrap reporting.'
+    outgoing: null
+    position: senior_editor_politics_global_ideas
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-emily-bobrow-and-katie-zezima-as-senior-editors-will-gottsegen-and-jonathan-lemire-join-as-staff-writers,261030
   - date: 2025-08
     incoming: Jonathan Lemire
-    outgoing: null
-    position: staff_writer_politics
     notes: 'ELEVATED from contributing writer (Jan 2025) to staff writer (Aug 2025). Co-host of MSNBC''s Morning Joe. Career:
       Columbia graduate → NY Daily News (10+ years, covered 9/11 aftermath, City Hall) → AP White House correspondent (2013-2021,
       asked Putin the Helsinki summit question alongside Trump) → MSNBC ''Way Too Early'' host (2021-2024) → Politico White
@@ -291,11 +289,11 @@ editorial_changes:
       service pipeline. His dual role at MSNBC + Atlantic creates a broadcast-print amplification loop — framing that originates
       in Atlantic reporting gets national cable airtime the same day. His AP → Politico → Atlantic arc maps the prestige ladder
       in DC political journalism.'
+    outgoing: null
+    position: staff_writer_politics
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-emily-bobrow-and-katie-zezima-as-senior-editors-will-gottsegen-and-jonathan-lemire-join-as-staff-writers,261030
   - date: 2025-10
     incoming: Adam Kirsch
-    outgoing: null
-    position: senior_editor_ideas_culture
     notes: 'WSJ → ATLANTIC PIPELINE: Senior editor. Most recently features editor for WSJ''s Review section (same section
       as Emily Bobrow — two editors from the same WSJ desk moved to Atlantic within months). Before WSJ: editor, writer, and
       critic for The New Republic, Tablet, The New York Sun, and The American Scholar. Author of four volumes of poetry. Taught
@@ -304,11 +302,11 @@ editorial_changes:
       Benjamín Labatut). Announced Oct 31, 2025 alongside Luis Parrales (fact-checker → staff writer). ANALYTICAL VALUE: WSJ
       Review section → Atlantic pipeline now accounts for 3 senior editorial hires (Beckett from WSJ news, Bobrow from WSJ
       Review, Kirsch from WSJ Review). Murdoch/Dow Jones → Emerson Collective talent drain is a structural pattern.'
+    outgoing: null
+    position: senior_editor_ideas_culture
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-adam-kirsch-as-senior-editor-and-luis-parrales-as-staff-writer,258550
   - date: 2025-12
     incoming: Michael Leibel
-    outgoing: null
-    position: senior_editor_community
     notes: 'BLOOMBERG → ATLANTIC: Senior editor for community, leading efforts to build comments and a larger conversation
       forum on Atlantic''s website and app. Spent 8 years at Bloomberg News and Businessweek, leading audience, social-media,
       and video-curation strategy. Also developing a daily trivia game for readers alongside Drew Goins. Works closely with
@@ -318,11 +316,11 @@ editorial_changes:
       significant: reader comments and forums shape how Atlantic''s institutional framing gets amplified or challenged by
       the audience. If community moderation adopts the adversarial tech-skeptic posture, it creates a feedback loop between
       editorial voice and reader engagement.'
+    outgoing: null
+    position: senior_editor_community
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-adds-four-journalists-to-its-staff,259365
   - date: 2026-01
     incoming: Chris Suellentrop
-    outgoing: null
-    position: senior_editor
     notes: 'KEY MIGRATION — WAPO → ATLANTIC PIPELINE: Senior editor. Was WaPo opinions editor. Earlier career: story editor
       at NYT Magazine (edited Ellie Award-winning profile of Mike Allen by Atlantic''s Mark Leibovich) → NYT op-ed page staff
       editor (paper''s first blogger) → senior editor at Politico → deputy Washington bureau chief at Slate. Part of Jan 2026
@@ -332,86 +330,88 @@ editorial_changes:
       editor, his gatekeeping decisions on which stories get developed and how they get framed carry institutional weight.
       WaPo → Atlantic continues the post-Bezos exodus pattern — at least 6 senior editors/reporters made this specific move
       in 2025-2026.'
+    outgoing: null
+    position: senior_editor
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-adds-four-journalists-to-its-staff,259365
   - date: 2024-05
     incoming: Ali Breland
-    outgoing: null
-    position: staff_writer
     notes: Hired from Mother Jones as staff writer covering disinformation and extremism. Announced alongside Matteo Wong
       promotion. Hired by deputy editor Paul Bisceglio. Brings extremism/tech-politics intersection beat — Nick Fuentes specialist,
       Livingston Awards finalist. Part of Atlantic's expansion of technology-adjacent coverage under LaFrance/Goldberg.
+    outgoing: null
+    position: staff_writer
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-news-about-four-new-staff-writers,253076
   - date: 2025-05
     event_type: hire
     incoming: Alexandra Petri
-    role: staff_writer
     notes: 'ATLANTIC EXPANSION — WaPo EXODUS: Alexandra Petri hired as staff writer by EIC Jeffrey Goldberg. 15-year WaPo
       columnist (2010-2025), youngest person to have a Post column. 2025 Thurber Prize winner for ''AP''s US History: Important
       American Documents I Made Up.'' Part of the largest single-publication talent exodus in recent media history (WaPo→Atlantic
       2024-2026). Not a tech reporter — humor/satire columnist — but her departure demonstrates the breadth of the Post''s
       talent bleed extending beyond hard news into opinion and cultural commentary.'
+    role: staff_writer
     source_url: https://en.wikipedia.org/wiki/Alexandra_Petri
   - date: '2026'
     event_type: hire
     incoming: Sarah A. Topol
-    role: staff_writer
     notes: 'ATLANTIC EXPANSION — NYT POACHING: Sarah A. Topol hired from NYT Magazine as staff writer. Two-time National Magazine
       Award winner for Feature Writing (2020, 2025). George Polk Award. Reported from 40+ countries. Unlike most 2025-2026
       Atlantic hires, Topol did not come from WaPo but from NYT Magazine — represents a different talent acquisition vector:
       competitive poaching of the NYT''s most decorated long-form talent. Goldberg: ''her combination of bravery, rigor, relentlessness,
       and humanity is almost unique in journalism.'''
+    role: staff_writer
     source_url: https://citybiz.co/article/the-atlantic-announces-sarah-a-topol-and-jenisha-watts-as-staff-writers/
   - date: '2026'
     event_type: promotion
     incoming: Jenisha Watts
-    role: staff_writer
     notes: 'ATLANTIC EXPANSION — INTERNAL PROMOTION: Jenisha Watts promoted from senior editor (Ideas team, since 2019) to
       staff writer. Authored 2023 cover story ''Jenisha From Kentucky'' as editor. Most recent piece: ''The Impossible Predicament
       of the Uninsured.'' Signals Atlantic building from within alongside the external hiring spree — not purely poaching.
       Goldberg: ''one of the best, most talented, smartest, and most supportive colleagues we have.'''
+    role: staff_writer
     source_url: https://citybiz.co/article/the-atlantic-announces-sarah-a-topol-and-jenisha-watts-as-staff-writers/
   - date: '2025'
     event_type: hire
     incoming: Jonathan L. Fischer
-    role: senior_editor
     notes: 'ATLANTIC EXPANSION — WaPo EXODUS: Jonathan L. Fischer hired as senior editor from WaPo, where he was arts and
       entertainment editor (Jan 2024-2025, first-ever A&E editor role at WaPo). Before WaPo, ran Slate''s business/tech/media
       section for 9 years (2014-2024). At Atlantic, focuses on Kennedy Center, Smithsonian, and Trump administration cultural
       policy — a beat that intersects with tech policy when government targets tech companies. Goldberg: ''creative, thoughtful,
       and experienced.'''
+    role: senior_editor
     source_url: https://editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff/
   - date: 2026-06-23
     event_type: hire
     incoming: Joshua Partlow
-    role: staff_writer
     notes: 'ATLANTIC EXPANSION — WaPo EXODUS: Joshua Partlow hired as staff writer from WaPo, covering extreme weather and
-      natural disasters. 20+ year WaPo veteran — foreign correspondent in Baghdad, Kabul bureau chief (2009-2012), Mexico City
-      bureau chief, Rio bureau chief, then American West environment reporter. Author of "A Kingdom of Their Own" (Knopf, 2016).
-      Duke University. 2010 Overseas Press Club award. Departed in Feb 2026 WaPo layoffs (~1/3 of staff). Most internationally
+      natural disasters. 20+ year WaPo veteran — foreign correspondent in Baghdad, Kabul bureau chief (2009-2012), Mexico
+      City bureau chief, Rio bureau chief, then American West environment reporter. Author of "A Kingdom of Their Own" (Knopf,
+      2016). Duke University. 2010 Overseas Press Club award. Departed in Feb 2026 WaPo layoffs (~1/3 of staff). Most internationally
       experienced reporter in Atlantic''s 2026 cohort. Part of the WaPo→Atlantic pipeline (alongside Oremus, Fischer, Smee).'
+    role: staff_writer
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-joshua-partlow-ariel-sabar-and-sebastian-smee-as-staff-writers,262288
   - date: 2026-06-23
     event_type: hire
     incoming: Ariel Sabar
-    role: staff_writer
     notes: 'FREELANCE→STAFF CONVERSION: Ariel Sabar hired as staff writer after 11 years as Atlantic freelance contributor
       (since 2015). Produced major investigative narratives: "A Biblical Mystery at Oxford," "The Billion-Dollar Ponzi Scheme
       that Hooked Warren Buffett and the U.S. Treasury," "The Unbelievable Tale of Jesus''s Wife." Author of "My Father''s
       Paradise" (NBCC Award 2009) and "Veritas" (Edgar finalist, IRE runner-up). Brown University magna cum laude. Contributing
       editor at Smithsonian Magazine and Washingtonian Magazine. Poynter Fellow at Yale. DISTINCT from WaPo exodus hires —
       represents internal talent pipeline strategy.'
+    role: staff_writer
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-joshua-partlow-ariel-sabar-and-sebastian-smee-as-staff-writers,262288
   - date: 2026-06-23
     event_type: hire
     incoming: Sebastian Smee
-    role: staff_writer
     notes: 'ATLANTIC EXPANSION — WaPo EXODUS: Sebastian Smee hired as staff writer from WaPo, covering visual art and its
-      influence on modern life and culture. Pulitzer Prize for Criticism (2011, Boston Globe). Australian-born (University of
-      Sydney, Honours Fine Arts 1994). Career: The Australian (national art critic) → Boston Globe (2008-2018) → WaPo art
+      influence on modern life and culture. Pulitzer Prize for Criticism (2011, Boston Globe). Australian-born (University
+      of Sydney, Honours Fine Arts 1994). Career: The Australian (national art critic) → Boston Globe (2008-2018) → WaPo art
       critic (2018-2026). Laid off in Feb 2026 WaPo cuts (Hyperallergic called it a "bloodbath"). Author of 5 books including
       "The Art of Rivalry" (2016) and "Paris in Ruins" (2024). "Net Loss: The Inner Life in the Digital Age" (Quarterly Essay
       #72, 2018) shows capacity for tech/digital themes. Goldberg: "one of the most respected arts commentators and critics
       in the English-speaking world." HALO HIRE: Elevates Atlantic''s cultural prestige beyond politics/tech core.'
+    role: staff_writer
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-joshua-partlow-ariel-sabar-and-sebastian-smee-as-staff-writers,262288
   guardian:
   - date: 2015-06
@@ -586,14 +586,14 @@ editorial_changes:
     source_url: https://adweek.com/fishbowlny/guardian-us-selects-west-coast-bureau-team/
   - date: ~2012
     incoming: Dominic Rushe
-    outgoing: null
-    position: us_business_editor
     notes: 'Rushe promoted from correspondent to US Business Editor after joining from the Sunday Times (NYC correspondent,
       2001-2010). Part of 2014 Pulitzer team (Snowden/NSA). Oversees ALL Guardian US business/tech reporting. Direct reports
       have included Sam Thielman, Jana Kasperkevic, Kari Paul, Dara Kerr, and Jeremy Barr. His editorial gatekeeping shapes
       how Guardian US frames Big Tech coverage. Cross-publication migration: Sunday Times (News Corp/Murdoch) → Guardian (Scott
       Trust) — diametrically opposite ownership models. 15+ year Guardian tenure makes him one of the longest-serving Guardian
       US editors.'
+    outgoing: null
+    position: us_business_editor
     source_url: https://theorg.com/org/guardian-media-group/org-chart/dominic-rushe
   - date: 2026-07
     incoming: null
@@ -642,22 +642,22 @@ editorial_changes:
     position: associate_editor_guardian_australia
     source_url: https://bandt.com.au/guardian-australia-bolsters-editorial-leadership/
   - date: 2026-01
-    position: deputy_digital_editor
     incoming: Siraj Datoo
-    outgoing: null
     notes: 'Siraj Datoo hired from Bloomberg (9+ year tenure, most recently EMEA Equality Editor) as Deputy Digital Editor.
       Oversees digital news operations including live blogs and front-page curation. KEY CONTEXT: editorial gatekeeper role
       that shapes how all Guardian stories (including tech/AI coverage) are surfaced and framed to the digital audience. His
       equality/DEI beat at Bloomberg creates potential framing carryover into how Guardian handles tech industry diversity
       and corporate accountability stories. Announced Jan 7, 2026.'
+    outgoing: null
+    position: deputy_digital_editor
     source_url: https://talkingbiznews.com/media-news/bloombergs-datoo-joins-guardian/
   mit-tech-review:
   - date: 2016-01
-    position: executive_editor
     incoming: Michael Reilly
-    outgoing: null
     notes: Reilly joined from Timeline (EIC) / New Scientist. 6.5-year tenure. Two-time National Magazine Award finalist under
       his editorial leadership. Pioneered MIT TR newsletter operation and award-winning podcast team.
+    outgoing: null
+    position: executive_editor
     source_url: https://talkingbiznews.com/media-news/protocol-hires-mit-techs-reilly-as-editorial-director/
   - date: 2017-10
     incoming: Elizabeth Bramson-Boudreau
@@ -678,27 +678,27 @@ editorial_changes:
     position: eic
     source_url: https://www.technologyreview.com/2017/12/05/3720/a-letter-from-mit-technology-reviews-new-editor-in-chief/
   - date: 2018-02
-    position: executive_editor
     incoming: Megan McCarthy
-    outgoing: null
     notes: McCarthy joined from Alley Interactive (editorial strategy). Previously at Wired, Reuters, Fortune. Reported to
       EIC Lichfield. Brief ~1 year tenure. Wired → MIT TR is a tracked double-publication migration.
+    outgoing: null
+    position: executive_editor
     source_url: https://talkingbiznews.com/media-news/biz-journalist-mccarthy-named-executive-editor-of-mit-tech-review/
   - date: '2019'
-    position: executive_editor_departure
     incoming: null
-    outgoing: Megan McCarthy
     notes: McCarthy left MIT TR for Reviewed.com (USA Today) as executive editor of growth. Brief tenure under Lichfield.
+    outgoing: Megan McCarthy
+    position: executive_editor_departure
     source_url: https://talkingbiznews.com/media-news/biz-journalist-mccarthy-hired-as-executive-editor-of-growth-for-reviewed-com/
   - date: 2019-09
-    position: editorial_director_audio
     incoming: Jennifer Strong
-    outgoing: null
     notes: 'Strong joined from WSJ where she created ''The Future of Everything'' podcast (2019 Webby winner). At MIT TR,
       she built the audio franchise: ''In Machines We Trust'' (AI podcast, 70+ countries, 2021 Webby finalist, Ambie nominee)
       and ''The Extortion Economy'' (ransomware, ProPublica co-production). First dedicated audio editorial leader at MIT
       TR — expanded reach beyond traditional website readership to podcast audiences during critical AI coverage growth period.
       BA Gardner-Webb, MA American University (International Affairs).'
+    outgoing: null
+    position: editorial_director_audio
     source_url: https://www.technologyreview.com/author/jennifer-strong/
   - date: 2020-01
     incoming: Will Douglas Heaven
@@ -752,12 +752,12 @@ editorial_changes:
     position: managing_editor
     source_url: https://theorg.com/org/mit-technology-review/org-chart/teresa-elsey
   - date: 2022-07
-    position: executive_editor_departure
     incoming: null
-    outgoing: Michael Reilly
     notes: Reilly left for Protocol (editorial director). Protocol shut down November 2022. Reilly then went to The Markup
       (managing editor) and Every (managing editor, current). 6.5-year MIT TR tenure was longest recent editorial leadership
       after Lichfield.
+    outgoing: Michael Reilly
+    position: executive_editor_departure
     source_url: https://talkingbiznews.com/media-news/protocol-hires-mit-techs-reilly-as-editorial-director/
   - date: 2022-08
     incoming: Niall Firth
@@ -768,36 +768,36 @@ editorial_changes:
     position: executive_editor_newsroom
     source_url: https://talkingbiznews.com/media-news/firth-named-executive-editor-newsroom-of-mit-tech-review/
   - date: 2022-08
-    position: cybersecurity_senior_editor_departure
     incoming: null
-    outgoing: Patrick Howell O'Neill
     notes: O'Neill left MIT TR for MITRE Corporation (lead cyber operations analyst). 160+ posts over ~3.5 years. Returned
       to journalism at Bloomberg News in 2025. Cybersecurity beat was not refilled — position eliminated.
+    outgoing: Patrick Howell O'Neill
+    position: cybersecurity_senior_editor_departure
     source_url: https://talkingbiznews.com/media-news/oneill-who-covered-cybersecurity-departing-mit-tech-review/
   - date: ~2023
-    position: editorial_director_audio_departure
     incoming: null
-    outgoing: Jennifer Strong
     notes: 'Strong departed to create independent ''SHIFT with Jennifer Strong'' podcast (PRX). Not replaced on MIT TR''s
       ''Our people'' page as of 2026, suggesting audio editorial directorship was not backfilled — strategic de-emphasis of
       podcast operations. Subsequently hired as host of ''The Next Innovation'' podcast. ANALYTICAL NOTE: Her unreplaced departure
       may signal MIT TR shifting resources from audio production back to written/digital content under Honan''s editorial
       strategy.'
+    outgoing: Jennifer Strong
+    position: editorial_director_audio_departure
     source_url: https://talkingbiznews.com/they-talk-biz-news/tech-journalist-strong-named-host-of-the-next-innovation-podcast/
   - date: 2023-02
-    position: senior_editor_departure
     incoming: null
-    outgoing: Abby Ohlheiser
     notes: Ohlheiser left MIT TR to freelance. Covered internet culture and misinformation since March 2020. Later joined
       Vox as senior tech writer. Previously at Washington Post (digital culture, 2014-2020) and Atlantic/The Wire.
+    outgoing: Abby Ohlheiser
+    position: senior_editor_departure
     source_url: https://talkingbiznews.com/media-news/senior-editor-ohlheiser-departing-mit-tech-review/
   - date: ~2024
     incoming: Adam Rogers
-    outgoing: null
-    position: editor
     notes: 'HIRE: Adam Rogers joined MIT TR as editor. Previously 18 years at Wired (deputy editor) → Business Insider (senior
       tech correspondent ~2022-2024). KSJ Fellow 2003. NYT bestselling author. Confirmed in Hype Correction editing credits
       (Dec 2025) and 10BT 2026 masthead.'
+    outgoing: null
+    position: editor
   - date: 2024-01
     incoming: Caiwei Chen
     notes: 'REPLACEMENT: Chen hired from Rest of World to cover China tech. Filled gap created by Zeyi Yang''s departure (or
@@ -808,11 +808,11 @@ editorial_changes:
     source_url: https://talkingbiznews.com/media-news/mit-tech-review-hires-chen-as-tech-reporter/
   - date: ~2025
     incoming: Mary Beth Griggs
-    outgoing: null
-    position: science_editor
     notes: 'HIRE/PROMOTION: Mary Beth Griggs as science editor. Previously at Popular Science and The Verge. Confirmed via
       Oct 2025 Roundtable (Climate Solutions) and Jun 2026 Roundtable (Longevity). Listed in Hype Correction editing credits
       (Dec 2025).'
+    outgoing: null
+    position: science_editor
   - date: 2024-08
     incoming: null
     notes: 'DEPARTURE: Zeyi Yang left MIT TR for Wired as senior writer (~Aug 2024). MIT TR author page uses past tense (''covered'').
@@ -836,18 +836,18 @@ editorial_changes:
     source_url: https://talkingbiznews.com/media-news/financial-times-hires-heikkila-as-ai-correspondent/
   - date: 2025-01
     incoming: null
-    outgoing: Melissa Heikkilä
-    position: ai_correspondent_departure
     notes: 'DEPARTURE: Melissa Heikkilä left MIT TR for Financial Times as AI correspondent (Jan 27, 2025). KEY MIGRATION
       for DiD analysis: specialist AI pub → business press. Had been at MIT TR since May 2022. Previously at Politico EU.
       Won/nominated ABSW awards at MIT TR.'
+    outgoing: Melissa Heikkilä
+    position: ai_correspondent_departure
   - date: ~2025-01
     incoming: null
-    outgoing: Zeyi Yang
-    position: senior_writer_departure
     notes: 'DEPARTURE: Zeyi Yang left MIT TR for Wired as senior writer (~Jan 2025). MIT TR author page uses past tense. Created
       China Report newsletter. Won 2024 ASME NEXT Award. KEY MIGRATION for DiD analysis: specialist → general tech. His departure
       reduced MIT TR''s China tech coverage (replaced by Caiwei Chen).'
+    outgoing: Zeyi Yang
+    position: senior_writer_departure
   - date: '2025-10-29'
     incoming: null
     notes: 'STRATEGIC PARTNERSHIP: MIT TR × Financial Times ''State of AI'' newsletter series. 6-part series pairing MIT TR
@@ -1028,8 +1028,6 @@ editorial_changes:
     source_url: https://nytco.com/press/stuart-thompson-joins-business/
   - date: 2026-04
     incoming: null
-    outgoing: Jason Sobel
-    position: cto_departure
     notes: 'CTO Jason Sobel departing after joining in August 2021 (from Airbnb head of infrastructure, before that Facebook
       engineer/VP). California-based. CEO Meredith Kopit Levien said he informed her of his decision to leave late 2025. Remaining
       until successor found. Levien memo: next CTO should be "a ranking tech executive who can be present very regularly in
@@ -1040,34 +1038,412 @@ editorial_changes:
       AI product vision oversight — Hardiman will coordinate efforts to use AI to "enhance journalism, improve product accessibility,
       and support colleagues'' work." This AI product vision role could influence how NYT deploys AI in its editorial and
       subscription pipeline.'
+    outgoing: Jason Sobel
+    position: cto_departure
     source_url: https://www.nytco.com/press/an-organizational-evolution/
   - date: 2026-04
     incoming: Alex Hardiman (promoted)
-    outgoing: null
-    position: evp_product_ai
     notes: 'Promoted to Executive Vice President with shared oversight of engineering (alongside incoming CTO) and cross-company
       AI product vision. Already oversaw product, cooking, and games. Instrumental in subscription strategy driving NYT commercial
       growth. New responsibility: leading AI product vision across news and product teams. Reports to CEO Levien. SIGNIFICANCE:
       Creates a single executive owner for AI deployment across NYT — from newsroom tools to subscriber-facing products. Her
       product background (subscriptions, cooking, games) rather than editorial background shapes what "AI-enhanced journalism"
       means at the Times.'
+    outgoing: null
+    position: evp_product_ai
     source_url: https://www.nytco.com/press/an-organizational-evolution/
   - date: 2026-04
     incoming: Hannah Yang (promoted)
-    outgoing: null
-    position: evp_growth_customer
     notes: 'Promoted to Executive Vice President (Chief Growth and Customer Officer) with shared oversight of data and consolidated
       leadership of marketing, growth, and customer care. Nearly 15 years at NYT building and leading subscription business.
       STRUCTURAL: Jeff Shah (VP home delivery and customer care) now reports to Yang; Amy Weisenbach (SVP head of marketing)
       continues leading marketing/brand communications now under Yang. Part of same organizational restructuring as Sobel
       departure and Hardiman AI elevation.'
+    outgoing: null
+    position: evp_growth_customer
     source_url: https://www.nytco.com/press/an-organizational-evolution/
+  the_verge:
+  - date: 2011-11
+    incoming: Joshua Topolsky
+    notes: The Verge launched Nov 1, 2011 as part of Vox Media. Co-founded by Topolsky (from Engadget), Nilay Patel, and Trei
+      Brundrett. Mass departure from Engadget created The Verge as a direct competitor.
+    outgoing: null
+    position: eic
+    source_url: https://en.wikipedia.org/wiki/The_Verge
+  - date: 2012-01
+    incoming: Tom Warren
+    notes: The Verge's first non-US editorial hire. Senior Editor for the UK, covering Microsoft. Previously founded WinRumors
+      and worked at Morgan Stanley (IT infrastructure). Has remained at The Verge 13+ years — the longest-tenured beat reporter.
+      Launched Notepad paid newsletter (May 2024).
+    outgoing: null
+    position: senior_editor_uk
+    source_url: https://neowin.net/news/tom-warren-of-winrumors-moves-to-the-verge/
+  - date: 2014-07
+    incoming: Nilay Patel
+    notes: 'KEY TRANSITION: Topolsky departed for Bloomberg. Patel promoted from Managing Editor to EIC. Has held the position
+      for 11+ years (as of 2026). Under Patel: Webby Award (Vergecast), National Magazine Award nomination, Pulitzer Prize
+      nomination, Decoder podcast launch. Patel''s JD background gives The Verge distinctive legal/policy expertise. His ''Google
+      Zero'' framing signals adversarial posture toward Big Tech AI scraping.'
+    outgoing: Joshua Topolsky
+    position: eic
+    source_url: https://en.wikipedia.org/wiki/Nilay_Patel
+  - date: 2017-05-30
+    incoming: Ashley Feinberg
+    notes: 'PRE-DRUMMOND Gizmodo → Wired pipeline hire. Feinberg hired as senior writer covering politics and internet culture,
+      writing across all Wired sections. NYC office. Hired during Noah Shachtman era (EIC 2017-2021). From Gizmodo digital
+      investigations team (Special Projects Desk). John Cook farewell described her as embodying "the character of Gawker
+      Media." Known for internet-sleuthing scoops (Comey Twitter, Josh Duggar). Forbes 30 Under 30. EXTREMELY BRIEF TENURE:
+      departed for HuffPost after only ~5 months — the shortest known Wired stint until Kylie Robison (6-7 months, 2025).
+      Significance: earliest documented Gizmodo → Wired migration, predating Drummond by 4 years, and its failure suggests
+      Condé Nast/Gawker culture mismatch was structural, not Drummond-specific.'
+    outgoing: null
+    position: senior_writer_politics_culture
+    source_url: https://talkingbiznews.com/media-news/wired-hires-feinberg-to-cover-politics-and-culture/
+  - date: 2017-10
+    incoming: null
+    notes: 'Feinberg departed for HuffPost after only ~5 months at Wired. Left under Shachtman era. One of the shortest tenures
+      in Wired''s modern editorial history. Went on to Slate (May 2019) where she continued her signature internet-sleuthing
+      scoops (Mitt Romney''s secret Twitter "Pierre Delecto", Pete Buttigieg''s anon social media). The brevity foreshadows
+      the pattern that would intensify under Drummond: experienced reporters from adversarial-culture outlets (Gizmodo, Vice,
+      Platformer) having short Wired tenures.'
+    outgoing: Ashley Feinberg
+    position: senior_writer_politics_culture_departure
+    source_url: https://en.wikipedia.org/wiki/Ashley_Feinberg
+  - date: '2018'
+    incoming: Kevin Nguyen
+    notes: Kevin Nguyen hired as Features Editor from GQ (Condé Nast). Novelist, Pulitzer/NMA finalist. Reports to Nilay Patel.
+    outgoing: null
+    position: features_editor
+    source_url: https://voxmedia.com/2018/5/14/the-verge-welcomes-kevin-nguyen-as-new-features-editor
+  - date: 2018-10
+    incoming: Sean Hollister
+    notes: 'BOOMERANG: Hollister returned to The Verge as senior news editor. Founding member (2011-2014), he left for Gizmodo
+      (reviews editor) then CNET (senior editor, Speed Desk initiative that nearly tripled breaking news traffic). Return
+      hire to oversee the news team. UC Santa Barbara (Communication and Japanese). Now senior editor covering gadgets, games,
+      toys, consumer advocacy. Notable Apple recusal since June 2023 (wife employed at Apple as video producer). 15+ years
+      editing at Verge, CNET, Gizmodo, Engadget.'
+    outgoing: null
+    position: senior_news_editor
+    source_url: https://talkingbiznews.com/media-news/hollister-returns-to-the-verge-as-senior-news-editor/
+  - date: 2019-08
+    incoming: Justine Calma
+    notes: Justine Calma hired as science reporter from Grist. First dedicated environment/climate reporter.
+    outgoing: null
+    position: science_reporter
+    source_url: https://talkingbiznews.com/media-news/justine-calma-joins-the-verge/
+  - date: '2021'
+    incoming: Alex Heath
+    notes: 'KEY HIRE: Heath joined from The Information as deputy editor. Became The Verge''s primary Meta/Big Tech corporate
+      strategy reporter. Broke Facebook→Meta rebrand, led Musk/Twitter coverage, broke Altman/OpenAI coup. Launched Command
+      Line paid newsletter. Conducted multiple exclusive Zuckerberg interviews. Work cited by Congress.'
+    outgoing: null
+    position: deputy_editor
+    source_url: https://voxmedia.com/2023/5/11/the-verge-command-line-newsletter-alex-heath
+  - date: '2021'
+    incoming: Alex Cranz
+    notes: 'KEY HIRE: Cranz hired as managing editor from Gizmodo (G/O Media), where she was senior consumer tech editor for
+      5 years. Reports to Nilay Patel. Co-hosts The Vergecast alongside Patel and David Pierce. Oversees day-to-day newsroom
+      operations, story assignments, editorial calendar. Previously associate reviews editor at Tom''s Guide/Laptop Magazine.
+      University of the South graduate. Based in New York. EDITORIALLY SIGNIFICANT: as managing editor, Cranz is the operational
+      gatekeeper for daily editorial decisions. Her Gizmodo background imports G/O Media''s adversarial editorial culture
+      into The Verge''s institutional voice.'
+    outgoing: null
+    position: managing_editor
+    source_url: https://talkingbiznews.com/media-news/the-verge-hires-cranz-as-managing-editor/
+  - date: 2021-11
+    incoming: Mia Sato
+    notes: 'Sato hired to cover tech companies and their platforms. Came from MIT Tech Review''s Pandemic Technology Project
+      (contract reporter). Previously audience engagement editor at The Markup (Julia Angwin''s nonprofit). Unusual career
+      arc: audience engagement → reporting, pivoting during COVID-19. Her user-centric perspective from running social channels
+      informs her platform coverage. Now one of the most senior platform reporters at The Verge (5+ years), covering Meta/Instagram,
+      TikTok, internet culture. 2024 Livingston Award finalist (International Reporting). ASME NEXT Award for Journalists
+      Under 30 Honorees (60th National Magazine Awards, Jun 2025). Pioneer of TikTok-as-journalism-distribution — creates
+      front-facing videos discussing her reporting. Post-Heath-departure, she is the strongest remaining voice for The Verge''s
+      platform governance coverage posture.'
+    outgoing: null
+    position: platforms_reporter
+    source_url: https://talkingbiznews.com/they-talk-biz-news/the-verge-hires-sato-to-cover-tech-companies-and-platforms/
+  - date: '2022'
+    incoming: Adi Robertson
+    notes: Promoted after 11 years as reporter/senior reporter. Founding staff member (2011). Now senior editor for tech and
+      policy, covering VR/AR, online platforms, and free expression. Her VR/AR expertise is directly relevant to Meta Reality
+      Labs coverage. Shapes which XR stories get covered and how they're framed.
+    outgoing: null
+    position: senior_editor_tech_policy
+    source_url: https://talkingbiznews.com/media-news/robertson-named-senior-editor-for-tech-and-policy-at-the-verge/
+  - date: '2022'
+    incoming: Emma Roth
+    notes: Roth hired as news writer from MUO (MakeUseOf). Central Connecticut State University. Covers streaming wars, consumer
+      tech, AI, crypto, social media, Big Tech-government interactions. Promoted to News Writer III/weekend news editor. Based
+      in Port St. Lucie, Florida. Extremely prolific — 8,000+ articles published. High-volume output means she shapes a significant
+      portion of The Verge's daily news framing.
+    outgoing: null
+    position: news_writer
+    source_url: https://muckrack.com/emma-roth-2/articles
+  - date: '2022'
+    incoming: Jess Weatherbed
+    notes: Weatherbed hired as news writer, UK-based team. Previously at TechRadar (Future plc) covering computing, PC gaming,
+      hardware reviews. Also contributed to GamesRadar, PCGamer, Creative Bloq, Space.com. Originally trained in prosthetics
+      makeup and wig-making. Covers creative industries, computing, internet culture, AI copyright. Significant coverage of
+      AI training data disputes and artist rights — directly relevant to Meta generative AI legal exposure.
+    outgoing: null
+    position: news_writer
+    source_url: https://theorg.com/org/the-verge/org-chart/jess-weatherbed
+  - date: '2022'
+    incoming: Wes Davis
+    notes: 'Davis hired as weekend editor from freelance career (previously published in CNN, WSJ, PCWorld, Gizmodo Australia,
+      Tom''s Hardware, Tom''s Guide). Based in Milwaukee, WI. One of The Verge''s most prolific writers — 1,725+ articles
+      by mid-2025. Covers an extremely broad beat: streaming, consumer tech, AI, crypto, social media, Big Tech policy. VOLUME
+      SIGNIFICANCE: Davis''s output shapes a substantial portion of The Verge''s weekend and overnight news framing. High-volume
+      generalist writers disproportionately set audience tone through aggregation and breaking-news pieces.'
+    outgoing: null
+    position: weekend_editor
+    source_url: https://muckrack.com/wes-davis-42/articles
+  - date: 2022-01
+    incoming: Sarah Jeong
+    notes: Sarah Jeong rejoins The Verge as deputy features editor from NYT (opinion columnist). Notable double migration
+      — originally left Verge for NYT editorial board in 2018.
+    outgoing: null
+    position: deputy_features_editor
+    source_url: https://en.wikipedia.org/wiki/Sarah_Jeong
+  - date: 2022-03
+    incoming: null
+    notes: 'KEY DEPARTURE: Dieter Bohn resigned as Executive Editor after 10+ years to join Google. One of The Verge''s co-founders
+      from the original 2011 Engadget exodus. Co-hosted The Vergecast for a decade. His departure removed a founding editorial
+      voice and created a leadership restructuring: Alex Heath (deputy editor) took on more strategic corporate coverage,
+      Jacob Kastrenakes was eventually promoted to Executive Editor (March 2024), and Alex Cranz (managing editor) expanded
+      operational control. MIGRATION: journalism → Big Tech (Google PM). Part of a broader pattern of senior tech journalists
+      joining the companies they cover (cf. Casey Newton → Meta consulting, Chris Ziegler → Apple).'
+    outgoing: Dieter Bohn
+    position: executive_editor
+    source_url: https://talkingbiznews.com/media-news/the-verge-executive-editor-bohn-is-leaving-for-google/
+  - date: 2022-04
+    incoming: David Pierce
+    notes: 'BOOMERANG: Pierce returned to The Verge after 7-year circuit through Wired (2015), WSJ (2017), Protocol (2020).
+      One of Verge''s founding hires (2011). Rehired as editor-at-large and Vergecast co-host. 5-publication career provides
+      natural experiment for institutional culture comparison (Condé Nast vs News Corp vs Vox Media).'
+    outgoing: null
+    position: editor_at_large
+    source_url: https://talkingbiznews.com/media-news/protocols-pierce-hired-by-the-verge-to-co-host-podcast/
+  - date: '2024'
+    incoming: Tess Owen
+    notes: Vice → Wired pipeline hire. Owen joined Wired after Vice Media collapsed (bankruptcy, Fortress sale). ~9 years
+      at Vice (2015-2024) covering extremism, far-right movements, political violence, disinformation, crime and policing.
+      Also published in New Yorker, NY Magazine, Guardian. Brief tenure — departed for WSJ within approximately one year.
+      Part of the Vice diaspora that scattered editorial talent across mainstream outlets under Drummond era (alongside Manisha
+      Krishnan from VICE/CNN/Guardian who joined as senior editor, culture, Mar 2025).
+    outgoing: null
+    position: reporter_investigations
+    source_url: https://talkingbiznews.com/media-news/wsj-hires-owen-as-senior-video-journalist/
+  - date: '2024'
+    incoming: null
+    notes: 'DEPARTURE: Jon Porter left The Verge after 5 years as UK-based reporter. Primary focus was European consumer tech
+      and EU tech policy (DMA, DSA, GDPR, AI Act). Also covered online platforms and video games. Career: TechRadar → Trusted
+      Reviews → The Verge. Regular BBC appearances (World News, Radio 4, World Service, ABC, CBC). His departure reduced The
+      Verge''s EU policy coverage capacity during the critical DMA enforcement period. EU regulatory coverage now primarily
+      handled from US side by Lauren Feiner and Gaby Del Valle, potentially shifting framing from EU-insider to US-observer
+      perspective.'
+    outgoing: Jon Porter
+    position: reporter_uk
+    source_url: https://talkingbiznews.com/media-news/the-verge-tech-reporter-porter-is-departing/
+  - date: 2024-01-30
+    incoming: Lauren Feiner
+    notes: Lauren Feiner hired as senior policy reporter from CNBC (laid off Nov 2023). Washington, D.C. based.
+    outgoing: null
+    position: senior_policy_reporter
+    source_url: https://talkingbiznews.com/media-news/the-verge-hires-feiner-as-senior-policy-reporter/
+  - date: 2024-03-11
+    incoming: Jacob Kastrenakes
+    notes: Jacob Kastrenakes promoted to Executive Editor after 10 years (intern 2014 → executive editor 2024). Reports to
+      Nilay Patel.
+    outgoing: null
+    position: executive_editor
+    source_url: https://pronthego.com/media/meet-the-media/jacob-kastrenakes
+  - date: 2024-12
+    incoming: null
+    notes: 'STRUCTURAL: The Verge launched subscription paywall for premium content. Initial pricing: $7/month or $50/year.
+      Nilay Patel announced the move as necessary for "the kind of rigorous, independent journalism we want to do" in an increasingly
+      difficult ad market. Paywalled content includes premium reports, newsletters (Command Line by Alex Heath, Notepad by
+      Tom Warren), and reviews, plus fewer ads. Ad-free Vergecast feed for subscribers launched October 2025. ANALYTICALLY
+      SIGNIFICANT: subscription model changes the publication''s relationship with its audience — paywalled content prioritizes
+      subscriber retention over viral reach, which could moderate clickbait incentives but also reduce the public visibility
+      of investigative coverage. Also creates a financial incentive to produce exclusive scoops (subscriber-only) rather than
+      open-access accountability journalism.'
+    outgoing: null
+    position: business_model
+    source_url: https://en.wikipedia.org/wiki/The_Verge
+  - date: 2024-06
+    incoming: Brooke Minters
+    notes: 'Minters hired as editorial director for audio, overseeing The Verge''s podcast operation. Came from Politico (executive
+      producer of video). Previously led video teams at Gizmodo Media Group, Fusion, and AJ+. Under her direction: The Vergecast
+      expanded to two episodes per week (Mon with Patel/Cranz, Wed with Pierce); Alex Cranz became permanent Vergecast co-host;
+      ad-free Vergecast for subscribers launched Oct 2025. Patel framed the hire as "taking the flagship podcast into the
+      next generation." ANALYTICALLY SIGNIFICANT: audio/podcast is increasingly how The Verge reaches audiences — Decoder
+      and Vergecast are high-influence channels where editorial framing bypasses article-level scrutiny. Minters''s editorial
+      authority over audio content shapes how listeners encounter Big Tech narratives.'
+    outgoing: null
+    position: editorial_director_audio
+    source_url: https://talkingbiznews.com/media-news/the-verge-hires-minters-as-editorial-director-for-audio/
+  - date: 2025-01
+    incoming: Tina Nguyen
+    notes: 'Nguyen hired as senior reporter covering the Trump administration, Elon Musk''s takeover of the federal government,
+      and the tech industry''s embrace of the MAGA movement. Joined from Puck (founding partner and national correspondent
+      covering the MAGA political ecosystem). Before Puck: Politico, Vanity Fair (Washington correspondent). Known for deep
+      sourcing inside MAGA world. Her hire added an explicitly political-tech intersection beat — covering how tech companies
+      and executives navigate the second Trump administration. ANALYTICALLY SIGNIFICANT: creates a dedicated editorial position
+      for framing tech companies'' political alignment, which can shade Meta coverage through a political lens (e.g. Zuckerberg''s
+      Trump dinner, Meta content moderation policy changes).'
+    outgoing: null
+    position: senior_reporter_politics
+    source_url: https://talkingbiznews.com/media-news/the-verge-hires-nguyen-as-senior-reporter/
+  - date: 2025-01
+    incoming: Marina Galperina
+    notes: 'Galperina hired as senior technology editor. Previously managing editor of Popular Science (3 years). Also served
+      as features editor at Gizmodo and senior editor at Gawker. GAWKER/GIZMODO PIPELINE: Another G/O Media alum joining The
+      Verge, following Alex Cranz (managing editor, from Gizmodo) and Catie Keck (reporter, from Gizmodo). This G/O Media
+      → Vox Media pipeline imports adversarial digital-native editorial culture into The Verge''s newsroom. Her editorial
+      authority as senior tech editor shapes which technology stories get priority and how they''re framed.'
+    outgoing: null
+    position: senior_technology_editor
+    source_url: https://talkingbiznews.com/media-news/the-verge-hires-galperina-as-senior-tech-editor/
+  - date: '2025'
+    incoming: null
+    notes: 'Owen departed Wired for WSJ (Dow Jones/News Corp) as senior video journalist. Brief Wired tenure (<1 year). Her
+      Vice → Wired → WSJ migration spans three distinct institutional cultures: Vice adversarial digital-native → Condé Nast
+      prestige adversarial → Dow Jones business journalism. Creates a natural experiment for DiD analysis of framing evolution
+      across institutional contexts. The move to "senior video journalist" also reflects the broader text-to-video pivot in
+      investigative journalism.'
+    outgoing: Tess Owen
+    position: reporter_investigations_departure
+    source_url: https://talkingbiznews.com/media-news/wsj-hires-owen-as-senior-video-journalist/
+  - date: 2025-02
+    incoming: Dominic Preston
+    notes: Preston appointed News Editor from Android Police (Managing Reviews Editor). 10+ year journalism career across
+      UK and US tech publications (Tech Advisor, Android Police, TechRadar, PCWorld, NME, HuffPost). Brings product-testing
+      rigor and hardware expertise. UK-based — one of The Verge's non-US editorial staff. Also writes Braise cooking newsletter
+      (Substack). Fills news desk capacity after multiple departures.
+    outgoing: null
+    position: news_editor
+    source_url: https://diarydirectory.com/diary-daily/the-verge-usa-appoints-news-editor-8/
+  - date: '2025-04-28'
+    incoming: Kylie Robison
+    notes: 'Kylie Robison hired as senior correspondent on business desk, covering the business of AI. Reports to Zoë Schiffer.
+      Launching newsletter focused on scoops around OpenAI, xAI, Anthropic. Barrett positioned her as complement to Will Knight
+      (future of AI), Kate Knibbs (AI + copyright), and Reece Rogers (consumer AI). Came from The Verge (senior AI reporter,
+      ~11 months) → Fortune (senior tech reporter, ~2 years) → Business Insider. Known for OpenAI cover story at Fortune and
+      scooping OpenAI social network at The Verge. BRIEF TENURE: departed for Core Media (Ashlee Vance''s venture) by December
+      2025 after only ~6-7 months — one of the shortest stints of any Drummond-era hire.'
+    outgoing: null
+    position: senior_correspondent_ai_business
+    source_url: https://talkingbiznews.com/media-news/wired-hires-robison-as-senior-correspondent/
+  - date: 2025-06
+    incoming: Hayden Field
+    notes: 'KEY HIRE: Hayden Field hired as senior AI reporter to lead coverage of OpenAI, Anthropic, Google, Meta, Apple,
+      plus AI societal impact and regulation. Joined from CNBC (2 years). 5+ year AI beat tenure across Protocol, Morning
+      Brew, CNBC. Started June 2, 2025. Nilay Patel praised her "deep sourcing and sharp analysis." STRATEGICALLY SIGNIFICANT:
+      The Verge''s first dedicated AI beat reporter. Timed ahead of Alex Heath''s departure (Sep 2025) — suggests editorial
+      planning to ensure AI/Big Tech coverage continuity. Her CNBC→Verge migration tests whether business-news AI framing
+      adapts under Patel''s consumer-advocacy editorial culture.'
+    outgoing: null
+    position: senior_ai_reporter
+    source_url: https://talkingbiznews.com/media-news/the-verge-hires-hayden-field-as-senior-ai-reporter/
+  - date: 2025-09
+    incoming: null
+    notes: 'KEY DEPARTURE: Heath left The Verge to launch ''Sources'' (independent Substack) and ''Access'' podcast (with
+      Vox Media, co-hosted with Ellis Hamburger). Retains contributor status. Part of ''Altogether'' indie journalism collective
+      (Casey Newton, Alex Konrad, Alex Kantrowitz). First independent interview: exclusive Zuckerberg sit-down for Meta Ray-Ban
+      Display glasses (Sep 18, 2025). ANALYTICALLY SIGNIFICANT: Removes the single most Meta-connected reporter from The Verge''s
+      editorial staff. His departure leaves a gap in insider Big Tech coverage — no obvious internal successor for the Zuckerberg
+      relationship. Tests whether The Verge''s Meta coverage posture shifts post-Heath.'
+    outgoing: Alex Heath
+    position: deputy_editor
+    source_url: https://talkingbiznews.com/media-news/heath-departs-the-verge-to-launch-podcast-publication/
+  - date: 2025-10
+    incoming: Elissa Welle
+    notes: 'KEY HIRE: Welle appointed AI Reporter, supported by Tarbell Center for AI Journalism fellowship. NYC-based. Former
+      neural engineer — Cornell BS Bioengineering, Michigan PhD Biomedical Engineering (brain-computer interfaces). Career:
+      Michigan Daily → Detroit Free Press → STAT News (AAAS fellowship) → Reuters → Nature → Chronicle of Higher Education
+      → The Transmitter → freelance → The Verge. TARBELL SIGNIFICANCE: The Tarbell Center provides $60-80K stipends with an
+      explicit mission to ''hold frontier AI companies accountable.'' This externally funded accountability mandate creates
+      a structural editorial influence — Tarbell fellows bring pre-defined adversarial posture toward AI companies. Host newsrooms
+      in 2025 included The Verge, Bloomberg, Guardian, MIT Tech Review, TIME. The Verge now has two dedicated AI reporters
+      (Welle + Hayden Field), an investment signaling editorial priority. Welle''s PhD in BCI hardware is directly relevant
+      to Meta''s Neural Band/EMG technology.'
+    outgoing: null
+    position: ai_reporter
+    source_url: https://diarydirectory.com/diary-daily/the-verge-usa-appoints-ai-reporter/
+  - date: 2025-12
+    incoming: null
+    notes: 'STRUCTURAL: Wired cancelled UK print edition effective 2026. Seven editorial staff left London office at end of
+      2025. Team rebuilt to focus on audience development roles and UK/Europe-focused reporting. Drummond told Press Gazette:
+      "creating a sustainable and growing subscription business is the future of Wired." Direct subscribers up 20% in 2025,
+      digital-only subscribers doubled. Isabella Ward (Bloomberg, Jun 2026) and deputy editor Rosie Swash (Guardian veteran)
+      are the two editorial hires rebuilding Wired UK presence post-cancellation. Part of broader Condé Nast digital transformation:
+      Pitchfork absorbed into GQ, Bon Appétit layoffs, Vogue podcast team let go. Print cancellation eliminates a revenue
+      stream and editorial identity pillar, pushing Wired further toward subscription-funded digital journalism model.'
+    outgoing: null
+    position: uk_print_cancellation
+    source_url: https://talkingbiznews.com/media-news/wired-pulls-plug-on-uk-print-edition/
+  - date: '2025-12-10'
+    incoming: null
+    notes: 'RAPID DEPARTURE: Robison left Wired after only ~6-7 months for Core Media (Ashlee Vance''s new science/tech publication).
+      Her departure meant Wired lost its dedicated AI business correspondent and the planned AI scoops newsletter. The AI
+      business beat was redistributed across Maxwell Zeff and other business desk writers. Robison''s four-publication career
+      (BI → Fortune → Verge → Wired → Core Media) in ~5 years suggests either strong pull from Core Media or poor fit with
+      Wired''s editorial culture under Drummond/Schiffer. Her move mirrors a broader pattern of reporters leaving established
+      outlets for independent/startup media (cf. Casey Newton → Platformer, Ashlee Vance → Core Media).'
+    outgoing: Kylie Robison
+    position: senior_correspondent_ai_business_departure
+    source_url: https://talkingbiznews.com/media-news/robison-joins-vances-core-media/
+  - date: 2026-01-16
+    incoming: null
+    notes: 'LAYOFF: Ash Parrish (gaming specialist, ex-Kotaku) laid off as part of Vox Media post-Polygon-sale contraction.
+      Two Vox Media Union members cut from The Verge alongside PopSugar/Eater reductions. Gaming coverage effectively gutted
+      — Polygon had been sold to Valnet (May 2025) and remaining gaming staff trimmed. Vox Media Union confirmed the cuts.
+      Concurrent with Inverse (BDG) eliminating its entire gaming section the same day. Part of a broader collapse in dedicated
+      games journalism coverage across the industry.'
+    outgoing: Ash Parrish
+    position: gaming_coverage
+    source_url: https://aftermath.site/inverse-vox-media-the-verge-layoffs-gaming-coverage
+  - date: 2026-05
+    incoming: James Murdoch / Lupa Systems
+    notes: 'Vox Media split: Lupa Systems (James Murdoch''s investment vehicle) acquired New York Magazine, Vox.com, and Vox
+      Media Podcast Network for ~$300M. The Verge was NOT part of this deal — remained with Vox Media''s other brands.'
+    outgoing: null
+    position: ownership
+    source_url: https://www.wsj.com/james-murdoch-buy-new-york-magazine-vox-300-million
+  - date: 2026-06
+    incoming: PMC / PMX
+    notes: 'KEY OWNERSHIP CHANGE: Penske Media Corporation acquired remaining Vox Media brands (The Verge, Eater, SB Nation,
+      Popsugar, The Dodo, Punch, Thrillist) into new PMX subsidiary. Ryan Pauley (former Vox Media President) became PMX President,
+      reporting to Jay Penske. The Verge now part of 25+ title portfolio including Variety, Rolling Stone, Billboard, Deadline.
+      Roger Penske (Jay''s father) received Presidential Medal of Freedom from Trump (2019). Jay Penske has been described
+      as quietly shifting SXSW and portfolio publications toward more conservative voices. ANALYTICALLY SIGNIFICANT: The Verge''s
+      ownership shifted from Vox Media (independent, journalist-founded) to PMC (family-controlled media conglomerate with
+      entertainment/business portfolio and political connections). This is a structural change that may affect editorial independence
+      over time.'
+    outgoing: Vox Media (independent)
+    position: ownership
+    source_url: https://www.exchange4media.com/media-print-news/penske-media-corporation-to-acquire-major-vox-media-brands
   wired:
   - date: 2012-07
     incoming: Scott Dadich
     notes: Anderson left to run 3D Robotics. Dadich was Wired's creative director.
     outgoing: Chris Anderson
     position: eic
+  - date: 2016-06
+    incoming: Sandra Upson
+    notes: 'Arrived via Condé Nast acquisition of Backchannel from Medium. Co-founded Backchannel with Steven Levy (2014)
+      as executive editor. Previously managing editor of Scientific American Mind and editor at IEEE Spectrum. Continued as
+      Backchannel executive editor within Wired Media Group until Backchannel folded into Wired proper (Jun 2017, under Nicholas
+      Thompson), when she became features editor. Currently one of six features editors (alongside Gravois, Katwala, Kehe,
+      Kelly, Lydgate). Based in San Francisco. EDITORIAL INFLUENCE: Features editors commission and shape Wired''s most ambitious
+      long-form journalism — the investigations and magazine covers that define institutional reputation. Her science journalism
+      background (IEEE Spectrum, Scientific American) and Levy partnership mean she carries access-journalism and rigorous-technical
+      editorial instincts, a different posture than the adversarial Gizmodo/Vice pipeline that dominates Drummond-era hires.'
+    outgoing: null
+    position: features_editor
+    source_url: https://theorg.com/org/wired/org-chart/sandra-upson
   - date: 2017-02
     incoming: Nicholas Thompson
     notes: Thompson came from The New Yorker (another CN title). Expanded Wired's political coverage significantly.
@@ -1219,10 +1595,10 @@ editorial_changes:
       CROSS-PUBLICATION MIGRATION — second MIT TR → Wired migration after Will Knight (2018). Hired as part of batch of four
       (with Verity Burns, Skye Battles, Alana Yzola) announced by Katie Drummond. 2024 ASME NEXT Award winner (Journalists
       Under 30). Created MIT TR''s China Report weekly newsletter. Yale Poynter Fellow (Mar 2026). Only tracked journalist
-      who can read primary Chinese-language sources (Peking University BA + Mandarin podcast co-founder). Reports to Zoë
-      Schiffer on business desk alongside Matsakis, Kleeman, Zeff. Based in New York. Tests whether MIT TR''s nuanced China
-      coverage framing changes under Wired''s Drummond-era adversarial editorial posture — the cleanest tracked-to-tracked
-      migration available for DiD analysis because the beat (China tech) remains constant.'
+      who can read primary Chinese-language sources (Peking University BA + Mandarin podcast co-founder). Reports to Zoë Schiffer
+      on business desk alongside Matsakis, Kleeman, Zeff. Based in New York. Tests whether MIT TR''s nuanced China coverage
+      framing changes under Wired''s Drummond-era adversarial editorial posture — the cleanest tracked-to-tracked migration
+      available for DiD analysis because the beat (China tech) remains constant.'
     outgoing: null
     position: senior_writer_china
     source_url: https://talkingbiznews.com/media-news/wired-hires-four-new-editorial-staffers/
@@ -1605,14 +1981,14 @@ editorial_changes:
   - date: 2026-01
     event_type: departure
     incoming: null
-    outgoing: Camille Bromley
-    position: features_editor
     notes: 'WIRED → NYT OPINION MIGRATION: Camille Bromley left Wired features editor role to join NYT Opinion special projects
       team as staff editor. Her Wired features on generative AI, Silicon Valley''s political shift right, and crypto were
       NMA finalists and Best American anthologized. Departure during Drummond era — potential signal that long-form literary
       features talent is being displaced by news/adversarial coverage expansion under Schiffer and Barrett. Previously at
       The Believer (McSweeney''s ecosystem) and CJR/Harper''s. ANALYTICAL VALUE: Tests talent-retention hypothesis — is Wired''s
       Drummond-era editorial pivot from features to breaking news pushing out narrative specialists?'
+    outgoing: Camille Bromley
+    position: features_editor
     source_url: https://talkingbiznews.com/media-news/bromley-former-wired-features-editor-joins-ny-times-opinion/
   - date: 2025-07
     incoming: Idrees Kahloon (Economist), Vivian Salama (WSJ), Tom Bartlett (Chronicle of Higher Ed)
@@ -1665,8 +2041,6 @@ editorial_changes:
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff,260627
   - date: 2025-12
     incoming: null
-    outgoing: Rob Reddick
-    position: science_editor_uk_departure
     notes: 'WIRED UK DEPARTURE: Rob Reddick, UK science editor since April 2022, left Wired as part of the broader London
       editorial contraction. His role covered health, medicine, biotech, environment, climate, space, energy, and robotics.
       Previously commissioning editor at The Conversation UK (Mosaic magazine, COVID-19). Oxford BA (English Language and
@@ -1674,11 +2048,11 @@ editorial_changes:
       (Jan 2026). His science desk role was NOT directly replaced by a UK-based hire — Brian Kahn (Bloomberg, hired May 2026
       as US-based senior editor science) is the only science desk editorial hire since, reporting from San Francisco to Tim
       Marchman.'
+    outgoing: Rob Reddick
+    position: science_editor_uk_departure
     source_url: https://talkingbiznews.com/media-news/wireds-reddick-is-leaving-publication/
   - date: '2025-10-31'
     incoming: null
-    outgoing: Evelyn Kwong
-    position: director_social_multiplatform_departure
     notes: 'DEPARTURE: Evelyn Kwong, director of social and multiplatform strategy, departed Oct 31, 2025. Joined 404 Media
       as contributor two days later (Nov 3). She was the architect of Wired''s journalist-as-influencer vertical video strategy
       — Nieman Lab profiled her approach of embedding smartphone videos into editorial stories (e.g. Waymo robotaxi piece
@@ -1687,11 +2061,11 @@ editorial_changes:
       (exec global director audience development) continuing the platform strategy. ANALYTICAL VALUE: Her exit removes the
       key social strategy architect but the journalist-influencer playbook she built survives — Wired OOH campaign (2025)
       and eMarketer analysis credit this strategy with 31% MoM subscription increase.'
+    outgoing: Evelyn Kwong
+    position: director_social_multiplatform_departure
     source_url: https://talkingbiznews.com/media-news/kwong-is-departing-wired/
   - date: '2026-04-06'
     incoming: null
-    outgoing: null
-    position: staff_editor_open
     notes: 'OPEN POSITION: Staff editor for newsroom, reporting to Director of Science, Politics, and Security (Tim Marchman).
       NYC or SF office. Guild position. Responsibilities: edit stories from multiple desks (breaking news ransomware to embargoed
       biotech), manage syndications from international Wired brands. Cross-desk collaboration with science, politics, security,
@@ -1700,11 +2074,11 @@ editorial_changes:
       Director structure — this is a mid-level editorial role that touches all desks, giving the holder significant influence
       over story framing across Wired''s newsroom. The international syndication management component is notable: this role
       decides which stories from Wired Italy, Japan, Germany, etc. get adapted for US publication.'
+    outgoing: null
+    position: staff_editor_open
     source_url: https://talkingbiznews.com/biz-news-help-wanted/full-time/wired-seeks-a-staff-editor-in-nyc-or-san-fran/
   - date: 2026-06
-    position: senior_director_science_politics_security
     incoming: Tim Marchman
-    outgoing: null
     notes: 'TITLE UPGRADE: Marchman promoted from Director to Senior Director of Science, Politics, and Security within 18
       months of hire. CJR interview (June 2026) identifies him as "senior director" — Bulletin interview (March 2025) still
       used "director." Title upgrade reflects success of DOGE coverage (200K+ new subscribers, award recognition) and institutional
@@ -1712,377 +2086,16 @@ editorial_changes:
       his title as "Director" — the upgrade may be very recent. Philadelphia-based. Oversees: politics desk (Leah Feiger,
       4 reporters + Hugo Lowell as senior correspondent), science desk (Brian Kahn senior editor, Molly Taft senior writer),
       security coverage. Also appears regularly on WIRED Politics Lab and Uncanny Valley podcasts.'
+    outgoing: null
+    position: senior_director_science_politics_security
     source_url: https://www.cjr.org/kicker/wired-tim-marchman-technology-accountability-government-ties-bay-area-tech-leaders-elon-musk-doge.php
   - date: '2022'
     event_type: departure
-    outgoing: Gian M. Volpicelli
-    role: senior_writer
     notes: Volpicelli departed Wired UK after ~5 years (contributing editor 2017, then senior editor/writer). Moved to Politico
       Europe to cover tech policy in Brussels. Part of the broader Wired UK talent drain that preceded the 2025 London office
       exits and UK print cancellation. His departure removed one of the UK team's most prominent tech/society writers with
       book-author credibility (Cryptocurrency, Penguin 2021). Subsequently joined Bloomberg News (2024) — now covers European
       tech from Brussels.
+    outgoing: Gian M. Volpicelli
+    role: senior_writer
     source_url: https://talkingbiznews.com/media-news/wired-reporter-volpicelli-set-to-depart/
-  the_verge:
-  - date: 2011-11
-    position: eic
-    incoming: Joshua Topolsky
-    outgoing: null
-    notes: The Verge launched Nov 1, 2011 as part of Vox Media. Co-founded by Topolsky (from Engadget), Nilay Patel, and Trei
-      Brundrett. Mass departure from Engadget created The Verge as a direct competitor.
-    source_url: https://en.wikipedia.org/wiki/The_Verge
-  - date: 2012-01
-    position: senior_editor_uk
-    incoming: Tom Warren
-    outgoing: null
-    notes: The Verge's first non-US editorial hire. Senior Editor for the UK, covering Microsoft. Previously founded WinRumors
-      and worked at Morgan Stanley (IT infrastructure). Has remained at The Verge 13+ years — the longest-tenured beat reporter.
-      Launched Notepad paid newsletter (May 2024).
-    source_url: https://neowin.net/news/tom-warren-of-winrumors-moves-to-the-verge/
-  - date: 2014-07
-    position: eic
-    incoming: Nilay Patel
-    outgoing: Joshua Topolsky
-    notes: 'KEY TRANSITION: Topolsky departed for Bloomberg. Patel promoted from Managing Editor to EIC. Has held the position
-      for 11+ years (as of 2026). Under Patel: Webby Award (Vergecast), National Magazine Award nomination, Pulitzer Prize
-      nomination, Decoder podcast launch. Patel''s JD background gives The Verge distinctive legal/policy expertise. His ''Google
-      Zero'' framing signals adversarial posture toward Big Tech AI scraping.'
-    source_url: https://en.wikipedia.org/wiki/Nilay_Patel
-  - date: 2017-05-30
-    incoming: Ashley Feinberg
-    outgoing: null
-    position: senior_writer_politics_culture
-    notes: 'PRE-DRUMMOND Gizmodo → Wired pipeline hire. Feinberg hired as senior writer covering politics and internet culture,
-      writing across all Wired sections. NYC office. Hired during Noah Shachtman era (EIC 2017-2021). From Gizmodo digital
-      investigations team (Special Projects Desk). John Cook farewell described her as embodying "the character of Gawker
-      Media." Known for internet-sleuthing scoops (Comey Twitter, Josh Duggar). Forbes 30 Under 30. EXTREMELY BRIEF TENURE:
-      departed for HuffPost after only ~5 months — the shortest known Wired stint until Kylie Robison (6-7 months, 2025).
-      Significance: earliest documented Gizmodo → Wired migration, predating Drummond by 4 years, and its failure suggests
-      Condé Nast/Gawker culture mismatch was structural, not Drummond-specific.'
-    source_url: https://talkingbiznews.com/media-news/wired-hires-feinberg-to-cover-politics-and-culture/
-  - date: 2017-10
-    incoming: null
-    outgoing: Ashley Feinberg
-    position: senior_writer_politics_culture_departure
-    notes: 'Feinberg departed for HuffPost after only ~5 months at Wired. Left under Shachtman era. One of the shortest tenures
-      in Wired''s modern editorial history. Went on to Slate (May 2019) where she continued her signature internet-sleuthing
-      scoops (Mitt Romney''s secret Twitter "Pierre Delecto", Pete Buttigieg''s anon social media). The brevity foreshadows
-      the pattern that would intensify under Drummond: experienced reporters from adversarial-culture outlets (Gizmodo, Vice,
-      Platformer) having short Wired tenures.'
-    source_url: https://en.wikipedia.org/wiki/Ashley_Feinberg
-  - date: '2018'
-    position: features_editor
-    incoming: Kevin Nguyen
-    outgoing: null
-    notes: Kevin Nguyen hired as Features Editor from GQ (Condé Nast). Novelist, Pulitzer/NMA finalist. Reports to Nilay Patel.
-    source_url: https://voxmedia.com/2018/5/14/the-verge-welcomes-kevin-nguyen-as-new-features-editor
-  - date: 2018-10
-    position: senior_news_editor
-    incoming: Sean Hollister
-    outgoing: null
-    notes: 'BOOMERANG: Hollister returned to The Verge as senior news editor. Founding member (2011-2014), he left for Gizmodo
-      (reviews editor) then CNET (senior editor, Speed Desk initiative that nearly tripled breaking news traffic). Return
-      hire to oversee the news team. UC Santa Barbara (Communication and Japanese). Now senior editor covering gadgets, games,
-      toys, consumer advocacy. Notable Apple recusal since June 2023 (wife employed at Apple as video producer). 15+ years
-      editing at Verge, CNET, Gizmodo, Engadget.'
-    source_url: https://talkingbiznews.com/media-news/hollister-returns-to-the-verge-as-senior-news-editor/
-  - date: 2019-08
-    position: science_reporter
-    incoming: Justine Calma
-    outgoing: null
-    notes: Justine Calma hired as science reporter from Grist. First dedicated environment/climate reporter.
-    source_url: https://talkingbiznews.com/media-news/justine-calma-joins-the-verge/
-  - date: '2021'
-    position: deputy_editor
-    incoming: Alex Heath
-    outgoing: null
-    notes: 'KEY HIRE: Heath joined from The Information as deputy editor. Became The Verge''s primary Meta/Big Tech corporate
-      strategy reporter. Broke Facebook→Meta rebrand, led Musk/Twitter coverage, broke Altman/OpenAI coup. Launched Command
-      Line paid newsletter. Conducted multiple exclusive Zuckerberg interviews. Work cited by Congress.'
-    source_url: https://voxmedia.com/2023/5/11/the-verge-command-line-newsletter-alex-heath
-  - date: '2021'
-    position: managing_editor
-    incoming: Alex Cranz
-    outgoing: null
-    notes: 'KEY HIRE: Cranz hired as managing editor from Gizmodo (G/O Media), where she was senior consumer tech editor for
-      5 years. Reports to Nilay Patel. Co-hosts The Vergecast alongside Patel and David Pierce. Oversees day-to-day newsroom
-      operations, story assignments, editorial calendar. Previously associate reviews editor at Tom''s Guide/Laptop Magazine.
-      University of the South graduate. Based in New York. EDITORIALLY SIGNIFICANT: as managing editor, Cranz is the operational
-      gatekeeper for daily editorial decisions. Her Gizmodo background imports G/O Media''s adversarial editorial culture
-      into The Verge''s institutional voice.'
-    source_url: https://talkingbiznews.com/media-news/the-verge-hires-cranz-as-managing-editor/
-  - date: 2021-11
-    position: platforms_reporter
-    incoming: Mia Sato
-    outgoing: null
-    notes: 'Sato hired to cover tech companies and their platforms. Came from MIT Tech Review''s Pandemic Technology Project
-      (contract reporter). Previously audience engagement editor at The Markup (Julia Angwin''s nonprofit). Unusual career
-      arc: audience engagement → reporting, pivoting during COVID-19. Her user-centric perspective from running social channels
-      informs her platform coverage. Now one of the most senior platform reporters at The Verge (5+ years), covering Meta/Instagram,
-      TikTok, internet culture. 2024 Livingston Award finalist (International Reporting). ASME NEXT Award for Journalists
-      Under 30 Honorees (60th National Magazine Awards, Jun 2025). Pioneer of TikTok-as-journalism-distribution — creates
-      front-facing videos discussing her reporting. Post-Heath-departure, she is the strongest remaining voice for The Verge''s
-      platform governance coverage posture.'
-    source_url: https://talkingbiznews.com/they-talk-biz-news/the-verge-hires-sato-to-cover-tech-companies-and-platforms/
-  - date: '2022'
-    position: senior_editor_tech_policy
-    incoming: Adi Robertson
-    outgoing: null
-    notes: Promoted after 11 years as reporter/senior reporter. Founding staff member (2011). Now senior editor for tech and
-      policy, covering VR/AR, online platforms, and free expression. Her VR/AR expertise is directly relevant to Meta Reality
-      Labs coverage. Shapes which XR stories get covered and how they're framed.
-    source_url: https://talkingbiznews.com/media-news/robertson-named-senior-editor-for-tech-and-policy-at-the-verge/
-  - date: '2022'
-    position: news_writer
-    incoming: Emma Roth
-    outgoing: null
-    notes: Roth hired as news writer from MUO (MakeUseOf). Central Connecticut State University. Covers streaming wars, consumer
-      tech, AI, crypto, social media, Big Tech-government interactions. Promoted to News Writer III/weekend news editor. Based
-      in Port St. Lucie, Florida. Extremely prolific — 8,000+ articles published. High-volume output means she shapes a significant
-      portion of The Verge's daily news framing.
-    source_url: https://muckrack.com/emma-roth-2/articles
-  - date: '2022'
-    position: news_writer
-    incoming: Jess Weatherbed
-    outgoing: null
-    notes: Weatherbed hired as news writer, UK-based team. Previously at TechRadar (Future plc) covering computing, PC gaming,
-      hardware reviews. Also contributed to GamesRadar, PCGamer, Creative Bloq, Space.com. Originally trained in prosthetics
-      makeup and wig-making. Covers creative industries, computing, internet culture, AI copyright. Significant coverage of
-      AI training data disputes and artist rights — directly relevant to Meta generative AI legal exposure.
-    source_url: https://theorg.com/org/the-verge/org-chart/jess-weatherbed
-  - date: '2022'
-    position: weekend_editor
-    incoming: Wes Davis
-    outgoing: null
-    notes: 'Davis hired as weekend editor from freelance career (previously published in CNN, WSJ, PCWorld, Gizmodo Australia,
-      Tom''s Hardware, Tom''s Guide). Based in Milwaukee, WI. One of The Verge''s most prolific writers — 1,725+ articles
-      by mid-2025. Covers an extremely broad beat: streaming, consumer tech, AI, crypto, social media, Big Tech policy. VOLUME
-      SIGNIFICANCE: Davis''s output shapes a substantial portion of The Verge''s weekend and overnight news framing. High-volume
-      generalist writers disproportionately set audience tone through aggregation and breaking-news pieces.'
-    source_url: https://muckrack.com/wes-davis-42/articles
-  - date: 2022-01
-    position: deputy_features_editor
-    incoming: Sarah Jeong
-    outgoing: null
-    notes: Sarah Jeong rejoins The Verge as deputy features editor from NYT (opinion columnist). Notable double migration
-      — originally left Verge for NYT editorial board in 2018.
-    source_url: https://en.wikipedia.org/wiki/Sarah_Jeong
-  - date: 2022-03
-    position: executive_editor
-    incoming: null
-    outgoing: Dieter Bohn
-    notes: 'KEY DEPARTURE: Dieter Bohn resigned as Executive Editor after 10+ years to join Google. One of The Verge''s co-founders
-      from the original 2011 Engadget exodus. Co-hosted The Vergecast for a decade. His departure removed a founding editorial
-      voice and created a leadership restructuring: Alex Heath (deputy editor) took on more strategic corporate coverage,
-      Jacob Kastrenakes was eventually promoted to Executive Editor (March 2024), and Alex Cranz (managing editor) expanded
-      operational control. MIGRATION: journalism → Big Tech (Google PM). Part of a broader pattern of senior tech journalists
-      joining the companies they cover (cf. Casey Newton → Meta consulting, Chris Ziegler → Apple).'
-    source_url: https://talkingbiznews.com/media-news/the-verge-executive-editor-bohn-is-leaving-for-google/
-  - date: 2022-04
-    position: editor_at_large
-    incoming: David Pierce
-    outgoing: null
-    notes: 'BOOMERANG: Pierce returned to The Verge after 7-year circuit through Wired (2015), WSJ (2017), Protocol (2020).
-      One of Verge''s founding hires (2011). Rehired as editor-at-large and Vergecast co-host. 5-publication career provides
-      natural experiment for institutional culture comparison (Condé Nast vs News Corp vs Vox Media).'
-    source_url: https://talkingbiznews.com/media-news/protocols-pierce-hired-by-the-verge-to-co-host-podcast/
-  - date: '2024'
-    incoming: Tess Owen
-    outgoing: null
-    position: reporter_investigations
-    notes: Vice → Wired pipeline hire. Owen joined Wired after Vice Media collapsed (bankruptcy, Fortress sale). ~9 years
-      at Vice (2015-2024) covering extremism, far-right movements, political violence, disinformation, crime and policing.
-      Also published in New Yorker, NY Magazine, Guardian. Brief tenure — departed for WSJ within approximately one year.
-      Part of the Vice diaspora that scattered editorial talent across mainstream outlets under Drummond era (alongside Manisha
-      Krishnan from VICE/CNN/Guardian who joined as senior editor, culture, Mar 2025).
-    source_url: https://talkingbiznews.com/media-news/wsj-hires-owen-as-senior-video-journalist/
-  - date: '2024'
-    position: reporter_uk
-    incoming: null
-    outgoing: Jon Porter
-    notes: 'DEPARTURE: Jon Porter left The Verge after 5 years as UK-based reporter. Primary focus was European consumer tech
-      and EU tech policy (DMA, DSA, GDPR, AI Act). Also covered online platforms and video games. Career: TechRadar → Trusted
-      Reviews → The Verge. Regular BBC appearances (World News, Radio 4, World Service, ABC, CBC). His departure reduced The
-      Verge''s EU policy coverage capacity during the critical DMA enforcement period. EU regulatory coverage now primarily
-      handled from US side by Lauren Feiner and Gaby Del Valle, potentially shifting framing from EU-insider to US-observer
-      perspective.'
-    source_url: https://talkingbiznews.com/media-news/the-verge-tech-reporter-porter-is-departing/
-  - date: 2024-01-30
-    position: senior_policy_reporter
-    incoming: Lauren Feiner
-    outgoing: null
-    notes: Lauren Feiner hired as senior policy reporter from CNBC (laid off Nov 2023). Washington, D.C. based.
-    source_url: https://talkingbiznews.com/media-news/the-verge-hires-feiner-as-senior-policy-reporter/
-  - date: 2024-03-11
-    position: executive_editor
-    incoming: Jacob Kastrenakes
-    outgoing: null
-    notes: Jacob Kastrenakes promoted to Executive Editor after 10 years (intern 2014 → executive editor 2024). Reports to
-      Nilay Patel.
-    source_url: https://pronthego.com/media/meet-the-media/jacob-kastrenakes
-  - date: 2024-12
-    position: business_model
-    incoming: null
-    outgoing: null
-    notes: 'STRUCTURAL: The Verge launched subscription paywall for premium content. Initial pricing: $7/month or $50/year.
-      Nilay Patel announced the move as necessary for "the kind of rigorous, independent journalism we want to do" in an increasingly
-      difficult ad market. Paywalled content includes premium reports, newsletters (Command Line by Alex Heath, Notepad by
-      Tom Warren), and reviews, plus fewer ads. Ad-free Vergecast feed for subscribers launched October 2025. ANALYTICALLY
-      SIGNIFICANT: subscription model changes the publication''s relationship with its audience — paywalled content prioritizes
-      subscriber retention over viral reach, which could moderate clickbait incentives but also reduce the public visibility
-      of investigative coverage. Also creates a financial incentive to produce exclusive scoops (subscriber-only) rather than
-      open-access accountability journalism.'
-    source_url: https://en.wikipedia.org/wiki/The_Verge
-  - date: 2024-06
-    position: editorial_director_audio
-    incoming: Brooke Minters
-    outgoing: null
-    notes: 'Minters hired as editorial director for audio, overseeing The Verge''s podcast operation. Came from Politico (executive
-      producer of video). Previously led video teams at Gizmodo Media Group, Fusion, and AJ+. Under her direction: The Vergecast
-      expanded to two episodes per week (Mon with Patel/Cranz, Wed with Pierce); Alex Cranz became permanent Vergecast co-host;
-      ad-free Vergecast for subscribers launched Oct 2025. Patel framed the hire as "taking the flagship podcast into the next
-      generation." ANALYTICALLY SIGNIFICANT: audio/podcast is increasingly how The Verge reaches audiences — Decoder and Vergecast
-      are high-influence channels where editorial framing bypasses article-level scrutiny. Minters''s editorial authority over
-      audio content shapes how listeners encounter Big Tech narratives.'
-    source_url: https://talkingbiznews.com/media-news/the-verge-hires-minters-as-editorial-director-for-audio/
-  - date: 2025-01
-    position: senior_reporter_politics
-    incoming: Tina Nguyen
-    outgoing: null
-    notes: 'Nguyen hired as senior reporter covering the Trump administration, Elon Musk''s takeover of the federal government,
-      and the tech industry''s embrace of the MAGA movement. Joined from Puck (founding partner and national correspondent
-      covering the MAGA political ecosystem). Before Puck: Politico, Vanity Fair (Washington correspondent). Known for deep
-      sourcing inside MAGA world. Her hire added an explicitly political-tech intersection beat — covering how tech companies
-      and executives navigate the second Trump administration. ANALYTICALLY SIGNIFICANT: creates a dedicated editorial position
-      for framing tech companies'' political alignment, which can shade Meta coverage through a political lens (e.g. Zuckerberg''s
-      Trump dinner, Meta content moderation policy changes).'
-    source_url: https://talkingbiznews.com/media-news/the-verge-hires-nguyen-as-senior-reporter/
-  - date: 2025-01
-    position: senior_technology_editor
-    incoming: Marina Galperina
-    outgoing: null
-    notes: 'Galperina hired as senior technology editor. Previously managing editor of Popular Science (3 years). Also served
-      as features editor at Gizmodo and senior editor at Gawker. GAWKER/GIZMODO PIPELINE: Another G/O Media alum joining The
-      Verge, following Alex Cranz (managing editor, from Gizmodo) and Catie Keck (reporter, from Gizmodo). This G/O Media →
-      Vox Media pipeline imports adversarial digital-native editorial culture into The Verge''s newsroom. Her editorial authority
-      as senior tech editor shapes which technology stories get priority and how they''re framed.'
-    source_url: https://talkingbiznews.com/media-news/the-verge-hires-galperina-as-senior-tech-editor/
-  - date: '2025'
-    incoming: null
-    outgoing: Tess Owen
-    position: reporter_investigations_departure
-    notes: 'Owen departed Wired for WSJ (Dow Jones/News Corp) as senior video journalist. Brief Wired tenure (<1 year). Her
-      Vice → Wired → WSJ migration spans three distinct institutional cultures: Vice adversarial digital-native → Condé Nast
-      prestige adversarial → Dow Jones business journalism. Creates a natural experiment for DiD analysis of framing evolution
-      across institutional contexts. The move to "senior video journalist" also reflects the broader text-to-video pivot in
-      investigative journalism.'
-    source_url: https://talkingbiznews.com/media-news/wsj-hires-owen-as-senior-video-journalist/
-  - date: 2025-02
-    position: news_editor
-    incoming: Dominic Preston
-    outgoing: null
-    notes: Preston appointed News Editor from Android Police (Managing Reviews Editor). 10+ year journalism career across
-      UK and US tech publications (Tech Advisor, Android Police, TechRadar, PCWorld, NME, HuffPost). Brings product-testing
-      rigor and hardware expertise. UK-based — one of The Verge's non-US editorial staff. Also writes Braise cooking newsletter
-      (Substack). Fills news desk capacity after multiple departures.
-    source_url: https://diarydirectory.com/diary-daily/the-verge-usa-appoints-news-editor-8/
-  - date: '2025-04-28'
-    incoming: Kylie Robison
-    notes: 'Kylie Robison hired as senior correspondent on business desk, covering the business of AI. Reports to Zoë Schiffer.
-      Launching newsletter focused on scoops around OpenAI, xAI, Anthropic. Barrett positioned her as complement to Will Knight
-      (future of AI), Kate Knibbs (AI + copyright), and Reece Rogers (consumer AI). Came from The Verge (senior AI reporter,
-      ~11 months) → Fortune (senior tech reporter, ~2 years) → Business Insider. Known for OpenAI cover story at Fortune and
-      scooping OpenAI social network at The Verge. BRIEF TENURE: departed for Core Media (Ashlee Vance''s venture) by December
-      2025 after only ~6-7 months — one of the shortest stints of any Drummond-era hire.'
-    outgoing: null
-    position: senior_correspondent_ai_business
-    source_url: https://talkingbiznews.com/media-news/wired-hires-robison-as-senior-correspondent/
-  - date: 2025-06
-    position: senior_ai_reporter
-    incoming: Hayden Field
-    outgoing: null
-    notes: 'KEY HIRE: Hayden Field hired as senior AI reporter to lead coverage of OpenAI, Anthropic, Google, Meta, Apple,
-      plus AI societal impact and regulation. Joined from CNBC (2 years). 5+ year AI beat tenure across Protocol, Morning
-      Brew, CNBC. Started June 2, 2025. Nilay Patel praised her "deep sourcing and sharp analysis." STRATEGICALLY SIGNIFICANT:
-      The Verge''s first dedicated AI beat reporter. Timed ahead of Alex Heath''s departure (Sep 2025) — suggests editorial
-      planning to ensure AI/Big Tech coverage continuity. Her CNBC→Verge migration tests whether business-news AI framing
-      adapts under Patel''s consumer-advocacy editorial culture.'
-    source_url: https://talkingbiznews.com/media-news/the-verge-hires-hayden-field-as-senior-ai-reporter/
-  - date: 2025-09
-    position: deputy_editor
-    incoming: null
-    outgoing: Alex Heath
-    notes: 'KEY DEPARTURE: Heath left The Verge to launch ''Sources'' (independent Substack) and ''Access'' podcast (with
-      Vox Media, co-hosted with Ellis Hamburger). Retains contributor status. Part of ''Altogether'' indie journalism collective
-      (Casey Newton, Alex Konrad, Alex Kantrowitz). First independent interview: exclusive Zuckerberg sit-down for Meta Ray-Ban
-      Display glasses (Sep 18, 2025). ANALYTICALLY SIGNIFICANT: Removes the single most Meta-connected reporter from The Verge''s
-      editorial staff. His departure leaves a gap in insider Big Tech coverage — no obvious internal successor for the Zuckerberg
-      relationship. Tests whether The Verge''s Meta coverage posture shifts post-Heath.'
-    source_url: https://talkingbiznews.com/media-news/heath-departs-the-verge-to-launch-podcast-publication/
-  - date: 2025-10
-    position: ai_reporter
-    incoming: Elissa Welle
-    outgoing: null
-    notes: 'KEY HIRE: Welle appointed AI Reporter, supported by Tarbell Center for AI Journalism fellowship. NYC-based. Former
-      neural engineer — Cornell BS Bioengineering, Michigan PhD Biomedical Engineering (brain-computer interfaces). Career:
-      Michigan Daily → Detroit Free Press → STAT News (AAAS fellowship) → Reuters → Nature → Chronicle of Higher Education
-      → The Transmitter → freelance → The Verge. TARBELL SIGNIFICANCE: The Tarbell Center provides $60-80K stipends with an
-      explicit mission to ''hold frontier AI companies accountable.'' This externally funded accountability mandate creates
-      a structural editorial influence — Tarbell fellows bring pre-defined adversarial posture toward AI companies. Host newsrooms
-      in 2025 included The Verge, Bloomberg, Guardian, MIT Tech Review, TIME. The Verge now has two dedicated AI reporters
-      (Welle + Hayden Field), an investment signaling editorial priority. Welle''s PhD in BCI hardware is directly relevant
-      to Meta''s Neural Band/EMG technology.'
-    source_url: https://diarydirectory.com/diary-daily/the-verge-usa-appoints-ai-reporter/
-  - date: 2025-12
-    incoming: null
-    outgoing: null
-    position: uk_print_cancellation
-    notes: 'STRUCTURAL: Wired cancelled UK print edition effective 2026. Seven editorial staff left London office at end of
-      2025. Team rebuilt to focus on audience development roles and UK/Europe-focused reporting. Drummond told Press Gazette:
-      "creating a sustainable and growing subscription business is the future of Wired." Direct subscribers up 20% in 2025,
-      digital-only subscribers doubled. Isabella Ward (Bloomberg, Jun 2026) and deputy editor Rosie Swash (Guardian veteran)
-      are the two editorial hires rebuilding Wired UK presence post-cancellation. Part of broader Condé Nast digital transformation:
-      Pitchfork absorbed into GQ, Bon Appétit layoffs, Vogue podcast team let go. Print cancellation eliminates a revenue
-      stream and editorial identity pillar, pushing Wired further toward subscription-funded digital journalism model.'
-    source_url: https://talkingbiznews.com/media-news/wired-pulls-plug-on-uk-print-edition/
-  - date: '2025-12-10'
-    incoming: null
-    notes: 'RAPID DEPARTURE: Robison left Wired after only ~6-7 months for Core Media (Ashlee Vance''s new science/tech publication).
-      Her departure meant Wired lost its dedicated AI business correspondent and the planned AI scoops newsletter. The AI
-      business beat was redistributed across Maxwell Zeff and other business desk writers. Robison''s four-publication career
-      (BI → Fortune → Verge → Wired → Core Media) in ~5 years suggests either strong pull from Core Media or poor fit with
-      Wired''s editorial culture under Drummond/Schiffer. Her move mirrors a broader pattern of reporters leaving established
-      outlets for independent/startup media (cf. Casey Newton → Platformer, Ashlee Vance → Core Media).'
-    outgoing: Kylie Robison
-    position: senior_correspondent_ai_business_departure
-    source_url: https://talkingbiznews.com/media-news/robison-joins-vances-core-media/
-  - date: 2026-01-16
-    position: gaming_coverage
-    incoming: null
-    outgoing: Ash Parrish
-    notes: 'LAYOFF: Ash Parrish (gaming specialist, ex-Kotaku) laid off as part of Vox Media post-Polygon-sale contraction.
-      Two Vox Media Union members cut from The Verge alongside PopSugar/Eater reductions. Gaming coverage effectively gutted
-      — Polygon had been sold to Valnet (May 2025) and remaining gaming staff trimmed. Vox Media Union confirmed the cuts.
-      Concurrent with Inverse (BDG) eliminating its entire gaming section the same day. Part of a broader collapse in dedicated
-      games journalism coverage across the industry.'
-    source_url: https://aftermath.site/inverse-vox-media-the-verge-layoffs-gaming-coverage
-  - date: 2026-05
-    position: ownership
-    incoming: James Murdoch / Lupa Systems
-    outgoing: null
-    notes: 'Vox Media split: Lupa Systems (James Murdoch''s investment vehicle) acquired New York Magazine, Vox.com, and Vox
-      Media Podcast Network for ~$300M. The Verge was NOT part of this deal — remained with Vox Media''s other brands.'
-    source_url: https://www.wsj.com/james-murdoch-buy-new-york-magazine-vox-300-million
-  - date: 2026-06
-    position: ownership
-    incoming: PMC / PMX
-    outgoing: Vox Media (independent)
-    notes: 'KEY OWNERSHIP CHANGE: Penske Media Corporation acquired remaining Vox Media brands (The Verge, Eater, SB Nation,
-      Popsugar, The Dodo, Punch, Thrillist) into new PMX subsidiary. Ryan Pauley (former Vox Media President) became PMX President,
-      reporting to Jay Penske. The Verge now part of 25+ title portfolio including Variety, Rolling Stone, Billboard, Deadline.
-      Roger Penske (Jay''s father) received Presidential Medal of Freedom from Trump (2019). Jay Penske has been described
-      as quietly shifting SXSW and portfolio publications toward more conservative voices. ANALYTICALLY SIGNIFICANT: The Verge''s
-      ownership shifted from Vox Media (independent, journalist-founded) to PMC (family-controlled media conglomerate with
-      entertainment/business portfolio and political connections). This is a structural change that may affect editorial independence
-      over time.'
-    source_url: https://www.exchange4media.com/media-print-news/penske-media-corporation-to-acquire-major-vox-media-brands
