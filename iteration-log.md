@@ -1,5 +1,24 @@
 # MediaScope Iteration Log
 
+## 2026-07-12 03:00 PT — Type B: Journalist/Publication Research
+
+**Focus:** Journalist profile expansion and sourcing gaps.
+
+**Changes:**
+1. **Sandra Upson added** (journalist #227): IEEE Spectrum → Scientific American Mind (managing editor) → Medium/Backchannel (co-founded with Steven Levy, executive editor) → Wired (features editor, 2016+). 4 career entries, 4 source URLs. Added to `editorial_changes.yaml` under Wired.
+2. **Joel Khalili expanded:** Added 4 source URLs, article count (2,112+), contact info, OCCRP/AllAfrica contributions noted.
+3. **Source URLs added** for 5 previously-unsourced journalists: Mike Isaac, Sheera Frenkel, Casey Newton, Kate Conger, Kara Swisher.
+4. **victoria-song.yaml** standalone file removed (already merged into journalists.yaml).
+5. **Doc counts updated:** 706 migrations (was 703), 218 multi-pub (was 217), 227 in careers_demo.py (was 226).
+
+**Stats:** 227 journalists, 895 career entries, 706 auto-detected migrations, 218 multi-pub, 413 distinct publications. 2,272 tests pass.
+
+**Commit:** `4eaf993` — pushed to GitHub.
+
+**Remaining gaps:** 130 journalists still lack `source_urls` — future Type B work.
+
+---
+
 ## 2026-07-12 01:00 PT — Type A: Article Deep Dive
 
 **Article:** Gizmodo — "Meta Thinks It Can Convince You That Smart Glasses Need Facial Recognition" (Jul 11, 2026)

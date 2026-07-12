@@ -109,8 +109,8 @@ ownership_chain:
       zero results for 2026. The next mandatory 13G/A is due within 45 days of any 5%+
       threshold crossing or by Feb 14, 2027 (annual amendment deadline).
 
-      VALUE: At $73.85/share (Jul 2, 2026), the position is worth ~$2.15B (up from ~$2.09B
-      at $71.79 on Jul 1). Carlos Slim's net worth is ~$99.1B (Bloomberg, Jul 2025, 18th
+      VALUE: At $74.96/share (Jul 11, 2026), the position is worth ~$2.18B (up from ~$2.15B
+      at $73.85 on Jul 2). Carlos Slim's net worth is ~$99.1B (Bloomberg, Jul 2025, 18th
       richest globally). Core fortune: Telmex/América Móvil (Latin American telecom monopoly),
       Grupo Carso (conglomerate).
 
@@ -615,24 +615,65 @@ revenue_relationships:
       evidence of systemic reproduction of copyrighted content. OpenAI approved internally
       by NYT staff via non-ChatGPT API (irony noted).
 
-      OPENAI IPO IMPLICATIONS (Jul 10, 2026): OpenAI confidentially filed for US IPO in
-      June 2026, targeting $1T+ valuation (Reuters). BofA extended $520M credit line (Jul 8).
+      OPENAI IPO & LEADERSHIP INSTABILITY (updated Jul 12, 2026):
+      OpenAI confidentially filed S-1 for US IPO in June 2026. Last private valuation:
+      $852B. Targeting $1T+ valuation in listing that could come as early as autumn 2026.
+      BofA extended $520M credit line (Jul 8) — its first loan to OpenAI, positioning as
+      lead advisor. BofA also eyeing advisory role on Anthropic IPO (source: Reuters).
+      Anthropic filed its own confidential IPO separately, valued at ~$965B. Both AI
+      leaders racing to public markets simultaneously.
+
+      LEADERSHIP INSTABILITY (Jul 10, 2026): Fidji Simo, OpenAI's CEO of AGI Deployment
+      (effectively #2 executive), stepped down from her full-time role to become part-time
+      advisor, citing a chronic neuroimmune condition that worsened during medical leave
+      (began April 2026). Simo joined OpenAI board March 2024 (post-Altman return), took
+      full-time role August 2025. She oversaw product, go-to-market, CFO, and CRO.
+      
+      META REVOLVING DOOR: Simo was previously HEAD OF THE FACEBOOK APP at Meta (~2018-2021)
+      and VP at Facebook (2011-2021, ~10 years). Before joining OpenAI, she was CEO of
+      Instacart. This is the HIGHEST-RANKING former Meta executive to have held a senior
+      role at OpenAI — a company that NYT covers while also suing. Simo's decade-long Meta
+      tenure (including leading the core Facebook app that NYT's Mike Isaac and Sheera Frenkel
+      have extensively covered) represents a documented Meta→OpenAI revolving door connection
+      at C-suite level.
+      
+      Greg Brockman (co-founder, President) assumed Simo's product responsibilities. Reports
+      directly to CEO Altman. Now oversees ChatGPT, enterprise teams, go-to-market, and
+      compute initiatives. The departure creates IPO uncertainty: Simo was expected to take
+      an even larger role post-IPO. Altman must now find an alternative commercial leader.
+      
+      OPENAI COMMERCIAL CONTEXT: ChatGPT growth stalled late 2025, causing missed internal
+      revenue goals (WSJ). Falling behind Anthropic in business/coding tools market. Pivoted
+      to enterprise coding "superapp" (launched Jul 10, same day as Simo departure).
+      Revenue: ~$2B/month (~$24B annualized). 900M weekly active users, 50M+ paid subscribers.
+      Introduced ads to ChatGPT under Simo's leadership.
+      
       IPO creates THREE specific implications for NYT litigation:
       (a) MANDATORY RISK DISCLOSURE: OpenAI's S-1/prospectus MUST disclose the NYT lawsuit
           as a material risk factor. The sanctions motion (if granted) would require disclosure
           that OpenAI was found to have lied to a federal court about its own capabilities —
           a devastating signal to potential investors about management credibility and legal
           risk management. IPO underwriters (BofA, others) will require full diligence on this.
+          Simo's departure adds further S-1 risk disclosure: key executive loss pre-IPO.
       (b) SETTLEMENT PRESSURE: An IPO quiet period creates a window where negative litigation
           developments are maximally damaging. OpenAI has strong financial incentive to settle
           or at minimum resolve the sanctions motion before pricing. The NYT's bargaining
-          position is stronger now than at any point since filing (Dec 2023).
+          position is stronger now than at any point since filing (Dec 2023). The leadership
+          transition (Simo → Brockman) may deprioritize legal strategy during handoff.
       (c) DISCOVERY SCOPE: As a pre-IPO company, OpenAI's financials face SEC scrutiny.
           If the court orders OpenAI to prove it did NOT delete evidence (reverse burden
           from sanctions motion), the financial records produced may include AI training
           cost breakdowns that have been undisclosed to date — relevant to all publisher
-          licensing negotiations.
-      SOURCE: Reuters Jul 8, 2026 (BofA credit line / IPO filing disclosure)
+          licensing negotiations. The $2B/month revenue figure, once made public in S-1,
+          will anchor publisher licensing expectations.
+      (d) ANTHROPIC COMPETITIVE IPO PRESSURE: Anthropic's parallel IPO filing (~$965B
+          valuation, also 2026) creates a competitive dynamic. If publishers hold licensing
+          rights that both AI companies need for competitive products, the dual IPO race
+          increases settlement incentives. Anthropic faces its own publisher lawsuits
+          (Atlantic Records, Universal Music, Concord Music — different content vertical
+          but same legal theories). Publishers can play the two IPOs against each other
+          in licensing negotiations.
+      SOURCES: Reuters Jul 8/10, WSJ Jul 10, NY Post Jul 11, CNBC Jul 10, eWeek Jun 9
       APPLE v. OPENAI TRADE SECRETS (Jul 10-11, 2026): Apple sued OpenAI in NDCA
       alleging systematic trade secret theft via 400+ ex-Apple employees, naming
       Tang Yew Tan (now OpenAI Chief Hardware Officer) and Chang Liu. Alleges
@@ -2072,7 +2113,7 @@ notes: |
   The Slim Family's 25.1% Class A shareholding is the largest individual ownership
   position in any of the 5 tracked publications. Per SEC Schedule 13G/A filed Feb 9,
   2026: Control Empresarial de Capitales S.A. de C.V. holds 29,123,098 Class A shares.
-  At $71.22/share (Jun 24, 2026), the position is worth ~$2.07B. This was entirely
+  At $74.96/share (Jul 11, 2026), the position is worth ~$2.18B. This was entirely
   missing from the prior profile. While Slim files as passive (13G) and has no board
   seats, and his core businesses (Telmex/América Móvil) don't directly compete with
   Meta in US markets, the concentration is extraordinary. Historical context: Slim's
@@ -2170,3 +2211,36 @@ notes: |
   The publishers that chose licensing are becoming MORE ISOLATED as the litigation wave grows.
   Sources: Reuters (Dec 2025 chat logs), Bloomberg Law (Jun 2026 400-newspaper suit),
   PYMNTS (Jun 2026), Law.com (Stein affirmation).
+
+# ===================================================================
+# NOTES 2026-07-12: OpenAI Leadership Instability & Dual IPO Pressure
+# ===================================================================
+# ANALYTICAL SIGNIFICANCE OF FIDJI SIMO DEPARTURE:
+# Simo's career arc (Facebook → Instacart → OpenAI) traces the EXACT talent pipeline
+# that creates revolving-door conflicts in publisher AI coverage. As Head of the Facebook
+# App (~2018-2021), she oversaw the product that NYT journalists Mike Isaac and Sheera
+# Frenkel built careers investigating. Her move to OpenAI — the company NYT is suing —
+# represents a Meta→OpenAI C-suite revolving door. Rebecca Van Dyck (NYT board member,
+# former Meta COO of Reality Labs) has an analogous Meta background — the company NYT
+# covers is connected to both a NYT board member and a key executive at the company
+# NYT is litigating against.
+#
+# DUAL IPO RACE (Jul 2026): OpenAI ($852B, S-1 filed Jun 2026) and Anthropic (~$965B,
+# S-1 filed Jun 2026) are racing to public markets simultaneously. For NYT and other
+# publisher litigants, this creates maximum leverage: both companies need to demonstrate
+# sustainable content access to justify valuations. Publisher copyright litigation is
+# the single largest unresolved IP risk for both IPOs. NYT's first-mover lawsuit
+# (Dec 2023) and the Jul 9 sanctions motion position it to influence both S-1
+# risk disclosures.
+#
+# CHATGPT COMMERCIAL WEAKNESS: WSJ reports ChatGPT growth stalled late 2025, missing
+# internal revenue goals. OpenAI pivoted from consumer to enterprise/coding tools,
+# launched "superapp" Jul 10. If ChatGPT's consumer growth declines while enterprise
+# AI grows, the value of publisher content (which primarily powers consumer-facing
+# search/answer products) could become a negotiating chip — publishers can frame their
+# content as essential to reviving consumer engagement.
+#
+# Stock update: NYT $74.96 (Jul 11 close, +0.89%). Market cap $11.87B. Q2 earnings
+# Aug 5, 2026. Analyst consensus $83.22 target (+11% upside). Slim position: $2.18B.
+# No new SEC filings since Jun 5 (Welch Form 4).
+# Updated: 2026-07-12
