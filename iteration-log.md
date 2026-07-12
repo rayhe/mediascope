@@ -2,6 +2,49 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-12 00:00 PT — Type D: Toolkit Quality & Documentation
+
+**Focus:** Pipeline statistics staleness — README and docs had 5 stale stat counts accumulated over recent Type A/B/C iterations. Created automated verification script to prevent future staleness.
+
+### Key Improvements
+
+#### 1. New: `scripts/count_stats.py` — Automated Stats Verification
+- Introspects the codebase at runtime to produce current counts for all README table stats
+- `--check` mode compares README against actual counts and exits 1 if any are stale
+- Covers: entity clusters/aliases/regex, framing device types/compiled patterns, emotional language terms, adversarial device types, sentiment correction paths, annotated articles, journalists/migrations/publications, topic buckets, test files
+- Designed for CI-style pre-commit validation
+
+#### 2. README Stats Table Fix (5 stale values)
+| Stat | Old (stale) | New (actual) | Drift |
+|---|---|---|---|
+| Compiled framing patterns | 571 | 636 | +65 |
+| Emotional language terms | 875 | 931 | +56 |
+| Adversarial device types | 28 | 29 | +1 |
+| Journalists tracked | 222 | 227 | +5 |
+| Career-entry migrations | 875 | 893 | +18 |
+
+Also updated: distinct publications 411 → 412, career demo journalist count 226 → 227, added "Verify these counts" note linking to count_stats.py.
+
+#### 3. docs/EDITORIAL_HISTORIES.md — 2 stale references updated
+- Journalist count 226 → 227 (2 locations)
+- Publication count "400+" → 412
+
+#### 4. docs/QUALITY_STANDARDS.md — New §11 Pipeline Statistics Verification
+- Documents the count_stats.py script, what it checks, and the contribution rule
+- Establishes that every commit changing pipeline data should run `--check` before committing
+
+### Profile Changes (4 files, +300/−9 lines)
+- `README.md`: Stats table + career demo description + verification note
+- `docs/EDITORIAL_HISTORIES.md`: 2 journalist/publication count updates
+- `docs/QUALITY_STANDARDS.md`: New §11 (stats verification)
+- `scripts/count_stats.py`: New 200-line auto-verification script
+
+### Test Suite
+2,272 tests passing (no code changes — docs and tooling only).
+
+### Commit
+- `759b9ee`: Type D — 300 insertions, 9 deletions across 4 files. Pushed to GitHub.
+
 ## 2026-07-11 23:00 PT — Type C: Ownership & Funding Deep Dive (NYT)
 
 **Focus:** NYT profile — sanctions motion detail expansion from Bloomberg Law full text, $28M litigation costs first disclosure, Cox Communications SCOTUS case citation correction, stock/market cap refresh.
