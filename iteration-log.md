@@ -20115,3 +20115,91 @@ Both vectors serve the Atlantic's 2025-2026 expansion strategy: 51 editorial cha
 
 ### Commit
 - `6ac76f6`: Type B — Deep dive on Will Oremus and Gilad Edelman profiles. Pushed to GitHub.
+
+## 2026-07-12 07:00 PT — Type B: Journalist/Publication Research (Will Knight Deep Dive)
+
+**Focus:** Will Knight — Wired Senior Writer covering AI. Previously had only 142 chars of notes despite being one of Wired's most prolific AI reporters and a core journalist at a tracked publication.
+
+### Profile Expansion (notes: 142 → ~2,500+ chars)
+
+**Education discovered:**
+- University of Kent, BA (Applied Science) in Anthropology (1994–1997)
+- University of the Arts London, Journalism (1998–2000)
+- His anthropology background gives him a distinctive social-science lens on AI's impact — rare among AI beat reporters
+
+**Career entries expanded (4 entries, all with detailed notes and source_urls):**
+
+1. **New Scientist (2002–2008):** Editor and online managing editor at Reed Business Information's UK science weekly. Prolific output covering robotics, nanotech, cybersecurity, space tech. Articles span 15+ paginated author pages on the site, suggesting hundreds of pieces. Broad science-tech grounding before AI specialization.
+
+2. **CNET (2007–2008):** Brief overlap with New Scientist end period. Limited public record.
+
+3. **MIT Technology Review (2008–2019-09):** ~11-year tenure as Senior Editor for AI. Also online managing editor. Landmark article: "The Dark Secret at the Heart of AI" (April 2017) — widely cited in CIA intelligence publications, ACM, American Journal of International Law, and major policy papers. Deep China AI specialization: "How AI Is Feeding China's Internet Dragon" (2016), "China wants to shape the global future of AI" (2018), "Why does Beijing suddenly care about AI ethics?" (2019) — cited by Brookings, New America, Carnegie Endowment. Wrote the "Fast Forward" newsletter.
+
+4. **Wired (2019-09–present):** Senior Writer covering AI. Writes the "AI Lab" newsletter — Wired's flagship weekly AI content product (Wednesdays). Covers OpenAI, Google, Meta, Anthropic talent wars. Notable: "OpenAI's Long-Term AI Risk Team Has Disbanded" (May 2024, cited in AJIL). Interviewed Jerome Pesenti (VP of AI at Facebook) — direct Meta AI coverage.
+
+**Personal details added:** Cambridge MA base, British, X @willknight, Signal wak.01 (no PR pitches), name pronounced "wee-all" per his own bio.
+
+**Speaking engagements added:** Yale Poynter Fellowship in Journalism, Carnegie Council for Ethics in International Affairs ("Tales from the Hype Beat"), News Literacy Project podcast.
+
+### Editorial Changes (2 additions)
+
+1. **Wired (2019-09):** Added Will Knight hire as KEY HIRE — senior_writer_ai position. Notes MIT Tech Review → Wired migration significance for DiD analysis.
+
+2. **MIT Tech Review (2019-09):** Added Will Knight departure — senior_editor_ai_departure. Notes 4-month gap before Will Douglas Heaven replacement (Jan 2020).
+
+### DiD Analysis Insight
+
+Knight is one of only two journalists (with Cade Metz) who has worked at BOTH MIT Technology Review and Wired (Condé Nast), making both DiD candidates for cross-institutional framing analysis. But their migrations are mirrors: **Metz moved OUT of Condé Nast** (Wired → NYT, Oct 2017), while **Knight moved INTO Condé Nast** (MIT Tech Review → Wired, Sep 2019). This paired directional migration is analytically powerful — it controls for the individual's portable bias while varying the institutional framing environment in opposite directions.
+
+### Other Updates
+
+- EDITORIAL_HISTORIES.md migration table: corrected date from 2018 to 2019-09, expanded analytical notes
+- README.md: updated career-entry count from 895 to 1,122
+
+### Stats After This Iteration
+
+- Journalists: 227 (unchanged)
+- Career entries: 1,122 (was 895 — YAML reserialization counted more entries)
+- Annotated articles: 160 (unchanged)
+- Tests: 2,272 passed, 0 failed
+
+**Commit:** `c1199ab` — pushed to GitHub.
+
+## 2026-07-12 08:00 PT — Type B: Journalist Research (Hugo Lowell deep-dive)
+
+### Focus: Hugo Lowell — Guardian → Wired migration (Apr 2026)
+
+Expanded Hugo Lowell's existing profile from a 4-entry career stub to a comprehensive 6-entry profile with full biographical detail, awards, education, and source URLs.
+
+### Career entries added/enriched
+
+1. **Education (new):** Dalton School (NYC) + St Paul's School (London) + BSc Economics & Philosophy, University of Bristol (2017-09 to 2020-06). Elite transatlantic educational trajectory.
+2. **Zetland Capital (enriched):** Updated from `event_type: other` to `hired`, corrected dates (2018-01 to 2018-12), added £2bn AUM detail and analytical note about financial literacy → DOGE coverage mapping.
+3. **i-newspaper (existing):** Retained, already well-documented.
+4. **Freelance (new):** The Independent + The Telegraph (2019-01 to 2020-12). Mueller report and Trump impeachment coverage. Bridges sports reporting → congressional beat.
+5. **Guardian (existing):** Retained, already comprehensive.
+6. **Wired (existing):** Retained, already comprehensive.
+
+### New fields added
+
+- `source_urls`: 5 sources (Wikipedia, Politicon, Talking Biz News, CityBiz, Lucid Substack)
+- `awards`: Sandy Hume Memorial Award 2022 (National Press Club), Paul Miller Fellow (NPF), British Sports Journalism Awards finalist
+- `education`: BSc Economics & Philosophy, University of Bristol
+- `multi_publication: true`
+- Expanded `notes` with full biography: DOB Mar 30 1999, dual US-UK national, competitive swimmer, Lahut→Lowell succession chain, 4-point analytical value assessment
+
+### Source URLs
+
+- https://en.wikipedia.org/wiki/Hugo_Lowell
+- https://politicon.com/hugo-lowell/
+- https://talkingbiznews.com/they-re-hiring/wired-hires-lowell-as-senior-correspondent/
+- https://citybiz.co/article/wired-hires-hugo-lowell-trump-politics-coverage/
+- https://lucid.substack.com/p/will-we-ever-know-the-full-truth
+
+### Stats After This Iteration
+
+- Journalists: 227 (unchanged — Lowell was already in dataset)
+- Multi-pub: 218 (unchanged — Lowell already had 4+ publications)
+- Auto-detected migrations: 707 (was 706 — +1 from new freelance career entry)
+- Tests: 113 passed, 0 failed
+

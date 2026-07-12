@@ -6599,15 +6599,28 @@ journalists:
     ownership structures (Condé Nast → Sulzberger). Earlier career in financial trade press (Buyouts magazine, peHub) gives
     her a finance-native analytical lens distinct from most tech reporters.'
 - career:
+  - beat: N/A (education)
+    end: 2020-06
+    event_type: education
+    notes: 'Born in NYC. Attended the Dalton School (private K-12, Upper East Side, Manhattan) and St Paul''s School (London).
+      BSc Economics and Philosophy from University of Bristol (UK). Dual US-UK national. Also a competitive swimmer — two-time
+      finalist at British National Championships. ANALYTICAL NOTE: Dalton School (NYC) + St Paul''s (London) + Bristol is
+      an elite transatlantic educational trajectory uncommon in the journalist dataset.'
+    publication: university-of-bristol
+    role: student
+    source_url: https://en.wikipedia.org/wiki/Hugo_Lowell
+    start: 2017-09
   - beat: distressed debt, special situations
     end: 2018-12
-    event_type: other
-    notes: Pre-journalism career at Zetland Capital, a London-based private equity firm (£2bn AUM). Worked on distressed desk
-      and special situations desk. Finance background — unusual for a political journalist.
+    event_type: hired
+    notes: 'Pre-journalism career on the distressed desk and special situations desk at Zetland Capital, a private equity
+      firm in London with £2bn under management. ANALYTICAL NOTE: Financial industry background is extremely rare among political
+      journalists — gives him fluency with corporate structures, financial instruments, and institutional incentives that
+      most political reporters lack. This background maps well to DOGE/government-spending coverage at Wired.'
     publication: zetland-capital
     role: analyst
-    source_url: https://politicon.com/speaker/hugo-lowell/
-    start: 2017-01
+    source_url: https://politicon.com/hugo-lowell/
+    start: 2018-01
   - beat: sports politics, doping
     end: 2020-12
     event_type: hired
@@ -6618,6 +6631,16 @@ journalists:
     role: reporter
     source_url: https://en.wikipedia.org/wiki/Hugo_Lowell
     start: 2017-01
+  - beat: US politics, Trump investigations
+    end: 2020-12
+    event_type: freelance
+    notes: 'Wrote for The Independent and The Telegraph (both UK publications) about the Mueller report and Trump impeachment
+      inquiry. Transition from UK-based sports politics to US political coverage. This freelance period bridges the i newspaper
+      sports reporting and the Guardian congressional beat.'
+    publication: freelance
+    role: freelance_correspondent
+    source_url: https://en.wikipedia.org/wiki/Hugo_Lowell
+    start: 2019-01
   - beat: Trump, DOJ, January 6, White House
     end: 2026-04
     event_type: hired
@@ -6644,9 +6667,41 @@ journalists:
     start: 2026-04
   name: Hugo Lowell
   notes: 'GUARDIAN → WIRED MIGRATION (2026): Pure political journalist with zero tech reporting background joining Wired''s
-    politics desk. Born 1999, one of the youngest journalists in the dataset. His hire signals Wired''s evolution from tech
-    magazine with politics coverage into a politics-and-tech hybrid publication. No prior tech journalism experience — his
-    entire career is political investigations and sports doping.'
+    politics desk. Born March 30, 1999 (NYC), one of the youngest journalists in the dataset (~27 at Wired hire). His hire
+    signals Wired''s evolution from tech magazine with politics coverage into a politics-and-tech hybrid publication. No prior
+    tech journalism experience — his entire career is political investigations and sports doping. Education: Dalton School
+    (NYC) + St Paul''s School (London) + BSc Economics & Philosophy (University of Bristol). Former competitive swimmer —
+    two-time finalist at British National Championships. Dual US-UK national. ANALYTICAL VALUE: (1) Guardian → Wired cross-publication
+    migration is the single purest political-journalist-into-tech-magazine migration in the dataset — tests whether Wired''s
+    politics desk requires any tech subject-matter expertise or whether adversarial political methodology transfers cleanly.
+    (2) Takes over Wired politics newsletter from Jake Lahut, who was fired in the Fired Four labor dispute (Nov 2025) — the
+    Lahut → Lowell succession chain shows Wired rebuilding politics desk after internal institutional trauma. (3) Pre-journalism
+    career in private equity (Zetland Capital, £2bn AUM) gives him financial literacy that maps to tech-financial intersection
+    coverage (DOGE, government contracts, AI spending). (4) His reporting has driven real congressional action — Jan 6 subpoenas
+    issued based on his scoops, making him an accountability journalist whose work has enforcement consequences.'
+  source_urls:
+  - https://en.wikipedia.org/wiki/Hugo_Lowell
+  - https://politicon.com/hugo-lowell/
+  - https://talkingbiznews.com/they-re-hiring/wired-hires-lowell-as-senior-correspondent/
+  - https://citybiz.co/article/wired-hires-hugo-lowell-trump-politics-coverage/
+  - https://lucid.substack.com/p/will-we-ever-know-the-full-truth
+  awards:
+  - name: Sandy Hume Memorial Award for Excellence in Political Journalism
+    year: 2022
+    organization: National Press Club
+    notes: For series on Donald Trump's attempts to stop Biden certification at the Jan 6 joint session of Congress. Reporting
+      led House select committee to issue subpoenas to Trump's personal lawyers.
+  - name: Paul Miller Fellow
+    organization: National Press Foundation
+    notes: Fellowship for political journalism.
+  - name: British Sports Journalism Awards finalist
+    category: Young Sports Writer of the Year
+    notes: For i newspaper sports politics coverage (IAAF World Athletics Championships 2017).
+  education:
+  - degree: BSc
+    field: Economics and Philosophy
+    institution: University of Bristol
+  multi_publication: true
 - career:
   - beat: general assignment
     end: 2009-12
