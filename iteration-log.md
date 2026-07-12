@@ -19597,3 +19597,100 @@ Both vectors serve the Atlantic's 2025-2026 expansion strategy: 51 editorial cha
 - Both YAML files pass `yaml.safe_load()` validation
 - 207 total journalist profiles, 16,651 total lines across both files
 - Atlantic: 38 editorial change entries (up from 35)
+
+## 2026-07-11 18:00 PT — Type B: Journalist/Publication Research
+
+**Focus:** Deep-dive profiles for Jeff Horwitz (Reuters/WSJ) and Naomi Nix (WaPo/Bloomberg)
+
+### Jeff Horwitz — Major Profile Expansion (notes: 1,179 → 4,832 chars)
+
+**Education added:**
+- Pomona College (BA), Columbia University (MA Business Journalism, 2009), Knight-Bagehot Fellow 2013-14
+- Won Christopher J. Welles Memorial Prize during fellowship
+- Born ~1982 (was 31 in 2013 Knight-Bagehot listing)
+
+**Career entries expanded with sourced detail:**
+- Washington City Paper: freelanced from Rwanda/East Africa, also wrote for Slate, WaPo, Portfolio, The Atlantic, Dallas Morning News, Sacramento Bee
+- Associated Press: SABEW award + Gerald Loeb Award finalist (with colleagues) for Facebook India hate speech coverage
+- WSJ: Full Facebook Files narrative — Frances Haugen relationship, Sep 13 2021 first piece, civic integrity team restructuring trigger. "Broken Code" book details: Doubleday Nov 2023, 336pp, ISBN 978-0-385-54918-9, NYT Book Review Editors' Choice, Porchlight Best Business Book. Review quotes from NYT, WaPo, Ronan Farrow, James B. Stewart. Film adaptation: "The Social Reckoning" (Aaron Sorkin, Sony/Columbia, Oct 9 2026, cast: Jeremy Allen White as Horwitz, Mikey Madison as Haugen, Jeremy Strong as Zuckerberg, filmed Vancouver Oct-Dec 2025)
+- Reuters: 2026 Pulitzer Beat Reporting (with Engen Tham) for "The Secrets of Meta's Success" — 5 key findings itemized: (1) AI chatbot "sensual" conversations with children, (2) cognitively disabled NJ man death, (3) $16B annual scam ad revenue (~10% of total), (4) Chinese ad companies' role, (5) "global playbook" for defeating anti-scam regulations. Creative methodology: fictitious 14-year-old account, experimental bogus ads. Impact: FTC inquiry, Senate calls, litigation, Meta policy changes
+
+**Analytical notes added:** WSJ→Reuters migration as DiD natural experiment (Murdoch ownership → Thomson Reuters). Social Reckoning film (Oct 2026) predicted to generate narrative recycling across tracked publications.
+
+### Naomi Nix — Profile Built from Scratch (notes: 0 → 1,847 chars)
+
+**Career expanded from 4 to 7 entries:**
+- Added: WaPo intern (~2010), Patch.com local editor (~2011), The 74 Media senior education reporter (NYC, ~2016-18)
+- Enhanced existing: Star-Ledger (led post-Booker mayoral election coverage), Bloomberg (joined "tech clash" team, beat expanded from policy to Facebook/Snap), WaPo (Meta AI privacy investigation with Nitasha Tiku, Scale AI coverage)
+
+**Education enhanced:** Princeton BA Sociology with certificate in African-American Studies. Worked at Daily Princetonian + WPRB News (campus radio).
+
+**Notes created:** Full career narrative from childhood newspaper "Triple N" through local journalism → tech policy → Big Tech accountability. Analytical significance: WaPo was strongest ownership-conflict-free comparison outlet (Bezos-owned, no Condé Nast AI licensing, no Reddit/Advance stake). Contact info added.
+
+### Stats Updated
+- Journalists: 223 → 226 (docs synced across README, EDITORIAL_HISTORIES, careers_demo)
+- Auto-detected migrations: 689 → 699
+- Multi-publication: 214 → 217
+
+### Sources
+- Jeff Horwitz: Wikipedia, Reuters media center, Talking Biz News (x3), Harvard Crimson, Publishers Weekly, EW, Polygon, The Wrap, Screen Rant, AbeBooks, B&N, Bookshop.org
+- Naomi Nix: Talking Biz News (x4), Podchaser, Muck Rack, Tech Policy Press, socialcrisis.net
+
+### Test Suite
+2,272 tests passing (all existing + 10 from prior iteration).
+
+### Commit
+- `3c45ce1`: Type B — 3,758 insertions, 5,834 deletions across journalists.yaml, README.md, EDITORIAL_HISTORIES.md, careers_demo.py. Pushed to GitHub.
+
+## 2026-07-11 19:00 PT — Type B: Journalist/Publication Research
+
+**Focus:** Lauren Feiner (The Verge senior policy reporter) — deep-dive profile expansion
+
+### Lauren Feiner — Major Profile Expansion (3 → 7 career entries, 466 → 2,043 char notes, 4 → 8 source URLs)
+
+**New career entries discovered and added:**
+1. **Daily Pennsylvanian** (2017-2018): Editor-in-Chief of UPenn's 200-person student newspaper. Led daily production and spearheaded digital transformation. Also hosted a podcast for the DP.
+2. **Boston Globe** (2017-2018): Freelance contributor — city policy, health, events (patio dog regulations, 2017 free speech rally coverage, solar eclipse)
+3. **Philadelphia Inquirer** (2017-2018): Freelance contributor — education, transportation
+4. **Forbes** (2017-2018): Freelance contributor — business topics
+
+**Existing entries enhanced:**
+- **Indicative** (2017-2018): Podcast name identified — "Deciding by Data" at data analytics startup. Noted as non-journalism tech industry experience before pivoting to journalism.
+- **CNBC** (2018-2023): Added specific article history — first piece "Facebook's worst year ever" (Dec 31, 2018), US state AG Google antitrust investigation (Sept 2019), House antitrust committee Big Tech documents, Google antitrust trial courtroom coverage (Pichai testimony, $26B default payments, Oct 2023), Meta whistleblower teen safety testimony (Nov 2023), Gannett v. Google, lobbying spend analysis, Utah TikTok lawsuit. Added CNBC layoff context (~12+ editorial staff cut). Added career progression: News Associate → Tech Reporter → Tech Policy Reporter.
+- **The Verge** (Jan 30, 2024-present): Added key stories — SCOTUS NetChoice ruling (June 2025), US v. Google ad tech trial remedy phase with live courtroom coverage (Sept-Oct 2025), Facebook ICE-tracking removal (Oct 14, 2025), DC government shutdown/tech workers (Oct 22, 2025), immigration enforcement and social media (Oct 16, 2025), CFPB technologist firings.
+
+**New biographical details:**
+- Education: University of Pennsylvania BA Communication (Annenberg School, ~Class of 2018)
+- Media appearances expanded: CNN added (from personal site laurenfeiner.com), plus NPR, MSNBC, SiriusXM, NBC News NOW, NBC LX
+- Podcast guest: CAFE Stay Tuned with Preet Bharara (TikTok ban, March 25, 2024)
+- Podcast guest: The Vergecast (Google antitrust remedy, Nov 2024)
+- Conference: Moderated at State of the Net conference
+- Social: X @lauren_feiner, Signal laurenfeiner.64, Bluesky presence
+- Pronouns: she/her
+
+**Analytical value for MediaScope:**
+- The CNBC → Verge migration is a high-value framing-shift case study: same policy beat (antitrust, tech regulation) shifts from investor-oriented framing (stock impact, earnings risk, lobbying spend) to user/civil-liberties framing (rights, safety, government overreach).
+- Her Google antitrust coverage spans both institutions — CNBC (trial opening, Oct 2023) and The Verge (ad tech trial remedy phase, Oct 2025) — enabling before/after comparison of the same reporter covering the same ongoing case from different institutional contexts.
+- Her Meta coverage similarly evolved: financial scandal framing at CNBC (Cambridge Analytica stock impact, "worst year" 2018) → platform governance framing at The Verge (Facebook ICE tracking removal, child safety legislation).
+- Immigration enforcement coverage (ICE tracking, social media visa screening) is a new beat expansion not present at CNBC — demonstrates Verge editorial shaping.
+
+### Stats Updated
+- Career-entry migrations: 871 → 875 (4 new entries)
+- Auto-detected migrations: 699 → 703 (4 new migration events)
+- Publication slugs: 402 → 411 (3 new: daily-pennsylvanian, boston-globe, philadelphia-inquirer)
+
+### Sources
+- laurenfeiner.com (personal site, 5 days old crawl)
+- ltfeiner.journoportfolio.com (old CNBC-era portfolio — Boston Globe/Inquirer/Forbes clips, DP EIC confirmation)
+- barrettmedia.com (CNBC departure, Nov 17 2023 layoff confirmation)
+- talkingbiznews.com (Verge hire, Jan 30 2024)
+- editorandpublisher.com (Verge hire coverage)
+- cafe.com (Stay Tuned with Preet Bharara podcast episode)
+- muckrack.com (article feed, bio)
+- prowly.com/buzzsumo (Signal handle, Bluesky confirmation)
+- Techmeme aggregator (CNBC and Verge article citations)
+
+### Test Suite
+2,272 tests passing (0 failures after README/EDITORIAL_HISTORIES stat updates).
+
+### Commit

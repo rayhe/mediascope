@@ -11161,41 +11161,114 @@ journalists:
   - https://talkingbiznews.com/media-news/justine-calma-joins-the-verge/
   - https://icfj.org/our-network/justine-calma
   - https://muckrack.com/justinecalma
-- career:
-  - publication: indicative-podcasts
-    role: podcast_host
+- name: Lauren Feiner
+  multi_publication: true
+  beats:
+  - tech policy
+  - antitrust
+  - kids online safety
+  - content moderation
+  - free expression
+  - AI regulation
+  - immigration enforcement and tech
+  notes: 'Senior policy reporter at The Verge covering the intersection of Silicon Valley and Capitol Hill. Full career arc: Daily Pennsylvanian EIC → Boston Globe/Philly Inquirer/Forbes freelance → Indicative
+    (podcast startup) → CNBC (2018–2023, laid off in Nov 2023 cuts) → The Verge (Jan 2024–present). Based in Washington, D.C. University of Pennsylvania BA Communication (Annenberg School, ~Class of 2018).
+    Editor-in-Chief of The Daily Pennsylvanian, the 200-person student newspaper at UPenn — led daily production and spearheaded digital transformation. KEY for MediaScope: The CNBC → Verge migration is
+    an analytically valuable framing-shift case study. At CNBC, her policy coverage was oriented toward investor-relevant regulatory risk (how does antitrust affect stock price? what does lobbying spend
+    signal?). At The Verge, the same policy beat shifts toward consumer/civil liberties framing (how does regulation affect user rights? platform governance and government overreach). Her Google antitrust
+    coverage spans both institutions — CNBC (trial opening, Pichai testimony, $26B default payment revelation, Oct 2023) and The Verge (ad tech trial remedy phase, Oct 2025) — enabling before/after comparison
+    of the same reporter covering the same ongoing case from different institutional contexts. Her Meta coverage similarly evolved: from financial scandal framing at CNBC (Cambridge Analytica stock impact,
+    Facebook "worst year" 2018) to platform governance framing at The Verge (Facebook ICE tracking removal, child safety legislation, content moderation under political pressure). Appeared on CNN, NPR,
+    MSNBC, SiriusXM, NBC News NOW, NBC LX. Guest on CAFE''s Stay Tuned with Preet Bharara (TikTok ban, March 2024) and The Vergecast (Google antitrust remedy, Nov 2024). Moderated at State of the Net conference.
+    National Press Foundation fellowship: "Your Body, Their Data? Reporting on Privacy, Tech and Biometrics." Pronouns: she/her. Signal handle: laurenfeiner.64. X: @lauren_feiner. Has Bluesky presence.
+    Personal site: laurenfeiner.com.'
+  career:
+  - publication: daily-pennsylvanian
+    role: editor_in_chief
+    beat: campus news, student journalism leadership
     start: '2017'
     end: '2018'
-    beat: podcasting
-    notes: Worked at podcast company Indicative. Also hosted a podcast for The Daily Pennsylvanian, the University of Pennsylvania college newspaper.
+    notes: Editor-in-Chief of The Daily Pennsylvanian, the independent student newspaper at the University of Pennsylvania. Led a 200-person staff across daily print and digital production. Spearheaded
+      digital transformation of the paper. Also hosted a podcast for the DP. The Daily Pennsylvanian is a non-profit corporation with ~$2M annual revenue, making EIC a significant management and editorial
+      leadership role. UPenn Annenberg School, BA Communication.
+    source_url: https://ltfeiner.journoportfolio.com/
+  - publication: boston-globe
+    role: freelance_contributor
+    beat: city policy, health, events
+    start: '2017'
+    end: '2018'
+    notes: Freelance contributor. Articles covered Boston city policy (patio dog regulations, eclipse coverage, protest logistics for 2017 free speech rally/counter-protest). Demonstrated early range across
+      policy, health/science, and breaking news coverage.
+    source_url: https://ltfeiner.journoportfolio.com/
+  - publication: philadelphia-inquirer
+    role: freelance_contributor
+    beat: general assignments
+    start: '2017'
+    end: '2018'
+    notes: Freelance contributor, topics included education and transportation.
+    source_url: https://ltfeiner.journoportfolio.com/
+  - publication: forbes
+    role: freelance_contributor
+    beat: business, tech
+    start: '2017'
+    end: '2018'
+    notes: Freelance contributor covering business topics.
+    source_url: https://ltfeiner.journoportfolio.com/
+  - publication: indicative-podcasts
+    role: podcast_developer
+    beat: data analytics, podcasting
+    start: '2017'
+    end: '2018'
+    notes: 'Developed and launched a podcast called "Deciding by Data" at data analytics startup Indicative, Inc. Non-journalism role — worked in content/marketing at a tech company before pivoting to full-time
+      journalism at CNBC. This brief tech-industry experience is notable: she understands the company side of tech before covering it as a reporter.'
     source_url: https://barrettmedia.com/2023/11/17/lauren-feiner-departing-cnbc/
   - publication: cnbc
     role: tech_reporter
+    title: News Associate → Tech Reporter → Tech Policy Reporter
+    beat: tech general assignments, tech policy, antitrust, privacy, content moderation, lobbying
     start: '2018'
     end: '2023-11-17'
-    beat: tech general assignments, tech policy, antitrust, privacy, content moderation
-    notes: 'Started as tech general assignments reporter, evolved into tech policy reporter. 5-year tenure covering antitrust (Google trial), privacy, content moderation reform. Based in Washington, D.C.
-      Appeared on MSNBC, NBC News NOW, NBC LX, SiriusXM. National Press Foundation fellowship: "Your Body, Their Data?" Departed Nov 17, 2023 due to CNBC layoffs.'
+    notes: 'Joined as News Associate (first articles Dec 2018), evolved into tech policy reporter covering antitrust, privacy, content moderation reform. 5-year tenure based in Washington, D.C. Departed
+      Nov 17, 2023 due to CNBC.com layoffs (~12+ editorial staff cut as CNBC reduced non-core digital coverage). KEY CNBC STORIES: (1) "Facebook''s worst year ever" year-end analysis (Dec 31, 2018) — her
+      first major piece, covering Cambridge Analytica/privacy scandal stock impact. (2) US state AG Google antitrust investigation launch (Sept 2019) — covered all 50 states (excl. CA, AL) plus DC and PR
+      joining probe. (3) House antitrust committee Big Tech document release — analyzed hundreds of pages from Facebook, Amazon, Apple, Google. (4) Google antitrust trial (Sept-Oct 2023) — courtroom coverage
+      including Sundar Pichai testimony, DuckDuckGo CEO Gabriel Weinberg testimony, revelation that Google paid $26B in 2021 to be default search engine, Microsoft CEO Satya Nadella testimony about competing
+      with Google. (5) Meta whistleblower teen safety testimony (Nov 7, 2023) — second whistleblower on Meta failure to protect teens. (6) Gannett/USA Today antitrust suit against Google ad tech monopoly.
+      (7) Apple/Amazon/Meta/Google lobbying spend analysis from filings (Jan 2023). (8) Utah TikTok safety lawsuit (2023). Appeared on MSNBC, NBC News NOW, NBC LX, SiriusXM. National Press Foundation fellowship:
+      "Your Body, Their Data? Reporting on Privacy, Tech and Biometrics." Moderated at State of the Net conference. FRAMING NOTE: CNBC policy coverage consistently indexed to investor-relevant regulatory
+      risk — articles typically included stock price reaction, earnings impact, market cap context.'
     source_url: https://barrettmedia.com/2023/11/17/lauren-feiner-departing-cnbc/
   - publication: the-verge
     role: senior_policy_reporter
-    start: 2024-01-30
+    beat: tech policy, Silicon Valley vs Capitol Hill, antitrust, kids online safety, free expression, AI regulation, immigration/ICE enforcement and tech
+    start: '2024-01-30'
     end: present
-    beat: tech policy, Silicon Valley vs Capitol Hill, antitrust, kids online safety, free expression, AI regulation
-    notes: 'Hired as senior policy reporter. Covers intersection of Silicon Valley and Capitol Hill: kids online safety, free expression, antitrust enforcement against major tech companies, immigration/ICE
-      enforcement and tech. University of Pennsylvania BA Communication. KEY MIGRATION: CNBC → The Verge represents financial/business media → tech-native publication pipeline for policy coverage. Policy
-      beat at CNBC was oriented toward investor-relevant regulatory risk; at The Verge it shifts toward consumer/civil liberties framing.'
+    notes: 'Hired as senior policy reporter Jan 30, 2024. Covers the intersection of Silicon Valley and Capitol Hill. KEY VERGE STORIES: (1) SCOTUS NetChoice ruling analysis — how social media platforms''
+      First Amendment rights affect kids'' online safety legislation (June 2025). (2) US v. Google ad tech trial — live courtroom coverage of remedy phase (Sept-Oct 2025), including "Breaking up (Google)
+      is hard to do" analysis piece, Daily Mail executive testimony, Google technical expert warnings, court-appointed compliance monitoring discussion. This is the same Google antitrust case she covered
+      at CNBC in 2023 — different phase, same reporter, different publication framing. (3) Facebook removes ICE-tracking page after DOJ "outreach" (Oct 14, 2025) — platform governance under Trump administration
+      pressure. (4) "DC''s shutdown is hurting government tech workers" (Oct 22, 2025). (5) Immigration enforcement and social media posts (Oct 16, 2025). (6) CFPB technologist firings — ~20 specialists
+      gutted from Big Tech financial products oversight team (2025). (7) Guest on CAFE Stay Tuned with Preet Bharara discussing TikTok ban (March 25, 2024). (8) Guest on The Vergecast discussing DOJ Google
+      breakup proposal (Nov 2024). Also appeared on CNN, NPR. FRAMING NOTE: Verge policy coverage consistently indexes to user rights and civil liberties — same regulatory events framed through consumer
+      impact, government overreach, platform accountability rather than stock/earnings impact. Immigration enforcement coverage is new beat expansion not present at CNBC.'
     source_url: https://talkingbiznews.com/media-news/the-verge-hires-feiner-as-senior-policy-reporter/
-  multi_publication: true
-  name: Lauren Feiner
-  notes: 'Senior policy reporter at The Verge covering tech policy. Career: podcast industry → CNBC (2018–2023, laid off) → The Verge (Jan 2024). Based in Washington, D.C. UPenn BA Communication. KEY for
-    MediaScope: CNBC → Verge migration represents a framing shift from investor-oriented policy coverage (how does regulation affect stock price?) to user-oriented coverage (how does regulation affect rights?).
-    Appeared on NPR, MSNBC, SiriusXM. Signal handle: laurenfeiner.64.'
   source_urls:
-  - https://talkingbiznews.com/media-news/the-verge-hires-feiner-as-senior-policy-reporter/
-  - https://barrettmedia.com/2023/11/17/lauren-feiner-departing-cnbc/
-  - https://laurenfeiner.com
-  - https://muckrack.com/laurenfeiner
+  - url: https://laurenfeiner.com
+    notes: Personal website. Updated bio mentioning CNN appearances (not in earlier profiles).
+  - url: https://talkingbiznews.com/media-news/the-verge-hires-feiner-as-senior-policy-reporter/
+    notes: Verge hire announcement, Jan 30, 2024.
+  - url: https://barrettmedia.com/2023/11/17/lauren-feiner-departing-cnbc/
+    notes: CNBC departure announcement, Nov 17, 2023. Confirms layoff context and 5-year tenure.
+  - url: https://ltfeiner.journoportfolio.com/
+    notes: Old portfolio site from CNBC era. Contains Boston Globe, Philly Inquirer, Forbes clips. Confirms DP Editor-in-Chief role and Indicative podcast.
+  - url: https://muckrack.com/laurenfeiner
+    notes: Muck Rack profile with article feed.
+  - url: https://www.editorandpublisher.com/stories/the-verge-hires-lauren-feiner-as-senior-policy-reporter,249128
+    notes: Editor & Publisher coverage of Verge hire.
+  - url: https://cafe.com/podcast/is-tiktoks-time-up-with-lauren-feiner/
+    notes: CAFE Stay Tuned with Preet Bharara, TikTok ban discussion, March 25, 2024.
+  - url: https://prowly.com/media-database/lauren-feiner-at-cnbc-online
+    notes: Prowly media database — Buzzsumo bio confirms Signal handle and Bluesky presence.
 - career:
   - publication: new-york-daily-news
     role: reporter
