@@ -97,33 +97,94 @@ journalists:
     longest continuous careers in tech journalism — his framing evolution across PC Magazine (product reviews) → Register
     (adversarial British tabloid tech) → Wired (Condé Nast longform) → NYT (institutional prestige) traces the entire arc
     of how AI coverage went from niche to front-page.'
-- career:
-  - beat: technology
-    end: '2008'
-    publication: new-scientist
+- name: Will Knight
+  career:
+  - publication: new-scientist
     role: editor
+    beat: technology, robotics, cybersecurity, space tech
     start: '2002'
-  - end: '2008'
-    publication: cnet
+    end: '2008'
+    event_type: hired
+    notes: Editor and online managing editor at the UK science weekly (Reed Business Information). Wrote extensively on robotics,
+      nanotechnology, computer security, space technology, and emerging computing. Prolific news output covering a wide tech
+      beat before specializing in AI. New Scientist articles span at least 15 paginated author pages on the site, suggesting
+      hundreds of pieces over this period. His broad science-tech grounding here shaped his later ability to contextualize
+      AI within wider scientific developments.
+    source_url: https://www.newscientist.com/author/will-knight/
+  - publication: cnet
     role: writer
     start: '2007'
-  - beat: AI, machine learning, China AI
-    end: 2019-09
-    publication: mit-tech-review
+    end: '2008'
+    notes: Brief stint overlapping with end of New Scientist tenure. Limited public record of work here.
+    source_url: https://talkingbiznews.com/they-talk-biz-news/wired-hires-knight-to-cover-artificial-intelligence/
+  - publication: mit-tech-review
     role: senior_editor
+    beat: AI, machine learning, China AI, automated driving, robotics
     start: '2008'
-  - beat: AI, machine learning
-    end: present
-    publication: wired
+    end: 2019-09
+    event_type: hired
+    notes: 'Senior Editor for Artificial Intelligence. Also served as online managing editor. ~11-year tenure during which
+      AI coverage went from niche to front-page. Landmark article: "The Dark Secret at the Heart of AI" (April 2017) — widely
+      cited in academic literature, government intelligence publications (CIA), ACM, and AI governance policy papers. Developed
+      deep China AI specialization: "How AI Is Feeding China''s Internet Dragon" (Mar 2016), "China wants to shape the global
+      future of AI" (Mar 2018), "Why does Beijing suddenly care about AI ethics?" (May 2019). These pieces are cited in Brookings,
+      New America, Carnegie Endowment policy papers. Interviewed Yasheng Huang (MIT Sloan) on US-China tech competition. Also
+      covered self-driving cars, military AI, and early deep learning breakthroughs. Wrote the "Fast Forward" newsletter.
+      KEY for MediaScope: longest continuous AI beat reporter at a major US tech publication — his departure to Wired represented
+      a significant talent loss for MIT Tech Review.'
+    source_url: https://roboticssummit.com/speaker/will-knight/
+  - publication: wired
     role: senior_writer
+    beat: AI, machine learning, robotics, autonomous systems
     start: 2019-09
+    end: present
+    event_type: hired
+    notes: 'Senior Writer covering AI. Writes the "AI Lab" newsletter — a weekly Wednesday dispatch from the cutting edge
+      of AI, which became Wired''s flagship AI newsletter product. Covers OpenAI, Google, Meta, Anthropic talent wars and
+      model releases, military robotics, AI agents, and AI policy. Notable Wired pieces: "OpenAI''s Long-Term AI Risk Team
+      Has Disbanded" (May 2024, cited in American Journal of International Law), "OpenAI Poaches 4 High-Ranking Engineers
+      From Tesla, xAI, and Meta" (Jul 2026). Interviewed Jerome Pesenti (VP of AI at Facebook) for Wired — direct Meta AI
+      coverage. KEY MIGRATION: MIT Tech Review → Wired represents an institutional pipeline where the same AI reporter''s
+      framing shifts from MIT''s academic/technical audience to Wired''s Condé Nast consumer-tech audience. Question for DiD
+      analysis: did his AI framing become more consumer-oriented or alarmist after moving? His coverage of AI talent poaching
+      between Meta, OpenAI, and Anthropic is particularly relevant for tracking how Wired frames Meta''s AI ambitions.'
+    source_url: https://talkingbiznews.com/they-talk-biz-news/wired-hires-knight-to-cover-artificial-intelligence/
+  education:
+  - institution: University of Kent
+    degree: BA (Applied Science)
+    field: Anthropology
+    start: '1994'
+    end: '1997'
+    source_url: https://rocketreach.co/
+  - institution: University of the Arts London
+    field: Journalism
+    start: '1998'
+    end: '2000'
+    source_url: https://rocketreach.co/
   multi_publication: true
-  name: Will Knight
-  notes: Writes the 'AI Lab' newsletter at Wired. Based in Cambridge, MA. Studied anthropology and journalism in UK. Covered
-    AI for more than a decade.
+  notes: 'British AI/tech journalist with 20+ years in tech journalism and one of the longest continuous AI beats in the field.
+    Based in Cambridge, Massachusetts. Education: University of Kent BA Anthropology (1994-97), University of the Arts London
+    Journalism (1998-2000). Studied anthropology and journalism in the UK before turning his attention to machines — his anthropology
+    background gives him a distinctive social-science lens on AI''s impact on human societies. X/Twitter: @willknight. Signal:
+    wak.01 (no PR pitches). Name pronounced "wee-all" per his own bio. Speaker: Yale Poynter Fellowship in Journalism ("Exploring
+    AI in Journalism and Higher Education"), Carnegie Council for Ethics in International Affairs ("Tales from the Hype Beat"),
+    News Literacy Project podcast ("Is that a fact?"). KEY for MediaScope: one of only two journalists (with Cade Metz) who
+    has worked at BOTH Wired (Condé Nast) and MIT Technology Review, making both DiD candidates for cross-institutional framing
+    analysis. His migration MIT Tech Review → Wired (Sep 2019) is the reverse of Metz''s Wired → NYT pipeline — Knight moved
+    INTO Condé Nast while Metz moved OUT. Both carried deep AI expertise into their new institutions. His AI Lab newsletter
+    is Wired''s primary AI content product, giving him significant agenda-setting power within Condé Nast''s AI coverage ecosystem.
+    Unlike Zoë Schiffer (business/labor) or Lauren Goode (consumer tech), Knight covers the fundamental technology — model
+    capabilities, research breakthroughs, talent movements — which shapes how Wired frames the underlying AI race that Meta,
+    OpenAI, Google, and Anthropic are competing in.'
   source_urls:
   - https://www.wired.com/author/will-knight/
   - https://talkingbiznews.com/they-talk-biz-news/wired-hires-knight-to-cover-artificial-intelligence/
+  - https://poynter.yale.edu/will-knight
+  - https://politicalscience.yale.edu/events/poynter-fellowship-journalism-exploring-ai-journalism-and-higher-education
+  - https://newslit.org/updates/chatbots-are-supercharging-search/
+  - https://rocketreach.co/
+  - https://www.newscientist.com/author/will-knight/
+  - https://buzzsumo.com/
 - career:
   - beat: tech industry (non-journalism)
     event_type: hired

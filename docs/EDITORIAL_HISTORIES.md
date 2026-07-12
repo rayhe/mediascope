@@ -192,7 +192,7 @@ MediaScope ships with career data for **227 journalists** across the 5 starter p
 |---|---|---|---|---|
 | **Karen Hao** | MIT Tech Review | The Atlantic | 2022 | Adversarial AI reporter crossing outlets — did her viral anti-Meta tone carry over? |
 | **Cade Metz** | Wired | NYT | 2017 | AI reporter leaving Condé Nast for Sulzberger — portable bias test |
-| **Will Knight** | MIT Tech Review | Wired | 2018 | 13 years at MIT TR → Wired AI beat — deep institutional encoding vs. adaptation |
+| **Will Knight** | MIT Tech Review | Wired | 2019-09 | 11 years at MIT TR → Wired AI beat. UK-educated (Kent BA Anthropology, UAL Journalism). Wrote landmark "The Dark Secret at the Heart of AI" (2017, cited by CIA/ACM/policy). Deep China AI specialization. Now writes Wired's "AI Lab" newsletter. DiD candidate: did AI framing shift from academic to consumer audience under Condé Nast? |
 | **Zoë Schiffer** | The Verge → Platformer | Wired | 2024 | Tech labor reporter with 3 outlets — rich decomposition data |
 | **Charlie Warzel** | BuzzFeed → NYT | The Atlantic | 2020 | Anti-Big-Tech stance across three outlets — high portable bias candidate |
 | **Mat Honan** | Wired/BuzzFeed | MIT Tech Review (EIC) | 2021 | Became EIC — tests whether a journalist changes an institution from the top |

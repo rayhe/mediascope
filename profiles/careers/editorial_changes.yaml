@@ -877,6 +877,15 @@ editorial_changes:
     outgoing: null
     position: national_magazine_award_finalist
     source_url: https://ca.advfn.com
+  - date: 2019-09
+    incoming: null
+    outgoing: Will Knight
+    position: senior_editor_ai_departure
+    notes: Will Knight departed MIT Tech Review after an ~11-year tenure as Senior Editor for AI. Moved to Wired (Condé Nast)
+      as Senior Writer. His departure left a significant gap in MIT Tech Review's AI coverage — the publication hired Will
+      Douglas Heaven as his replacement in January 2020 (4-month gap). Knight had been MIT Tech Review's longest-tenured AI
+      specialist and had built the publication's China AI coverage vertical from scratch.
+    source_url: https://talkingbiznews.com/they-talk-biz-news/wired-hires-knight-to-cover-artificial-intelligence/
   nytimes:
   - date: 2022-06
     incoming: Joseph Kahn
@@ -2099,3 +2108,16 @@ editorial_changes:
     outgoing: Gian M. Volpicelli
     role: senior_writer
     source_url: https://talkingbiznews.com/media-news/wired-reporter-volpicelli-set-to-depart/
+  - date: 2019-09
+    incoming: Will Knight
+    outgoing: null
+    position: senior_writer_ai
+    notes: 'KEY HIRE: Will Knight joined from MIT Technology Review as Senior Writer covering AI. Brought 11 years of AI beat
+      expertise and deep China AI specialization from MIT Tech Review. Launched the "AI Lab" newsletter, which became Wired''s
+      flagship AI content product (weekly, Wednesdays). This hire positioned Wired to dominate AI coverage among consumer-tech
+      publications during the critical 2020-2026 period when AI went mainstream. His previous "The Dark Secret at the Heart
+      of AI" (MIT Tech Review, 2017) had already been cited in CIA, ACM, and major policy publications. KEY MIGRATION for
+      DiD: MIT Tech Review → Wired represents a move from academic/technical audience to consumer-tech audience under Condé
+      Nast. Landed under EIC Nicholas Thompson (who would leave for Atlantic CEO in Dec 2020), then continued under Gideon
+      Lichfield and Katie Drummond. University of Kent BA Anthropology, University of the Arts London Journalism.'
+    source_url: https://talkingbiznews.com/they-talk-biz-news/wired-hires-knight-to-cover-artificial-intelligence/
