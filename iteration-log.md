@@ -1,5 +1,85 @@
 # MediaScope Iteration Log
 
+## 2026-07-12 10:00 PT — Type C: Ownership & Funding Deep Dive (Atlantic — OpenAI Executive Attrition + Apple v. OpenAI Enrichment)
+
+**Focus:** The Atlantic / Emerson Collective — chosen because the Apple v. OpenAI lawsuit (filed Jul 10) creates the most acute active conflict in the tracked set, and OpenAI's executive instability directly affects the Atlantic's licensing partner.
+
+### Key Findings
+
+#### 1. OpenAI Executive Attrition (NEW SECTION)
+6+ senior departures in ~3 months (Apr-Jul 2026), the most severe leadership hemorrhage at any Atlantic business partner:
+- **Apr 17-18, 2026:** Triple same-day exit — Kevin Weil (CPO → Science VP), Bill Peebles (Sora head), Srinivas Narayanan (Enterprise CTO). OpenAI for Science dissolved, Prism absorbed into Codex. Sora shut down (~$1M/day compute costs).
+- **Joshua Achiam** (Chief Futurist): departed (timing unspecified)
+- **Brad Lightcap** (COO): sidelined to "special projects"
+- **Fidji Simo** (CEO AGI Deployment, effectively #2): medical leave April, formal departure Jul 10. POTS diagnosis (Postural Orthostatic Tachycardia Syndrome). Served <1 year after leaving Instacart CEO role. **KEY META ANGLE:** Simo was Head of the Facebook App (~2018-2021), VP at Facebook (2011-2021, ~10 years) — highest-ranking former Meta executive at OpenAI.
+- **Greg Brockman** (co-founder, President): assumes expanded product responsibilities from Simo (ChatGPT, enterprise, go-to-market, compute). Reports to Altman.
+- The Atlantic has published ZERO coverage of OpenAI leadership instability despite being a licensing partner and product collaborator.
+- Sources: LiveMint (Apr 17), CNBC (Jul 10), Stocktwits (Jul 9-10), The Decoder (Apr 18), Medium (Apr 2026)
+
+#### 2. Apple v. OpenAI Case Enrichment
+Case details expanded from original entry:
+- 41-page civil complaint filed USDC N.D. Cal.
+- **Relief sought:** jury trial, preliminary + permanent injunction, product redesign of upcoming hardware, destruction of all confidential materials, unspecified monetary damages
+- **Legal analysis:** Mark Lemley (Stanford Law) — "potential to be a very big case" but notes California law protects employee mobility. Camilla Hrdy (Rutgers Law) — novel complexity because prior AI trade secret cases involved software, not hardware.
+- **New details:** Tan shared Apple "Need to Know" security document with new hires to help them evade departure security protocols. Liu texted colleague: "LOL, I found out I can access the [network storage], so funny." Apple alleges OpenAI tricked an Apple supplier into performing a "specific trade secret metal-finishing technique" by falsely claiming Apple's permission.
+- **AAPL flat after-hours:** $314.97 (-0.11%) after $315.32 close — market shrugged off the filing.
+- Sources: Reuters, USA Today, MacRumors, Washington Examiner, Daily Caller, Outlook Business
+
+#### 3. Atlantic Coverage Gap — Extended to 48+ Hours
+- **site:theatlantic.com Apple OpenAI lawsuit** → ZERO results (confirmed Jul 12)
+- **site:theatlantic.com OpenAI July 2026** → ZERO results. The Atlantic has published NO OpenAI-related articles in all of July 2026.
+- Coverage by comparison: Reuters, CNN, WSJ, USA Today, Fox Business, MarketWatch, NY Post, Washington Examiner, Daily Caller, MacRumors, DevDiscourse, TechLusive, Inshorts, Outlook Business all covered it within hours.
+- This is now the longest editorial absence on this story in the tracked publication set.
+
+#### 4. EC AUM & GPT-5.6 Updates
+- **EC AUM:** ~$28B managed assets (InforCapital, Jan 2026 estimate). Added to ownership_chain.
+- **GPT-5.6 competitive positioning:** Sol ranked #2 per Artificial Analysis intelligence index, behind only Claude Fable 5 — at ~1/3 the cost ($1.04/task vs ~$3). Altman claims 54% more efficient on coding tasks. OpenAI committed ~$1.4T total spending. Altman told CNBC "not focused on timing" of IPO.
+
+### Profile Changes (1 file, +92/−9 lines)
+- `profiles/atlantic.yaml`:
+  - NEW subsection: OpenAI executive attrition timeline (Feb-Jul 2026) in revenue_relationships OpenAI entry
+  - Enriched Apple v. OpenAI case details (41-page complaint, legal scholars, relief sought, new factual details)
+  - Extended coverage gap analysis to 48+ hours (through Jul 12), confirmed zero July 2026 OpenAI articles
+  - EC AUM added (~$28B, InforCapital Jan 2026)
+  - GPT-5.6 competitive positioning expanded (Sol ranking, $1.04/task cost, $1.4T committed spending)
+  - Notes section updated with full change summary
+
+### Stats After This Iteration
+- Entity clusters: 85 (unchanged)
+- Total aliases: 835 (unchanged)
+- Annotated articles: 160 (unchanged — profile-only update)
+- Tests: 2,272 passed, 0 failed
+- Commit: `877013a` — pushed to GitHub
+
+---
+
+## 2026-07-12 09:00 PT — Type B: Journalist/Publication Research (Katie Drummond Deep Sourcing)
+
+**Focus:** Katie Drummond — Wired's Global Editorial Director (EIC since Sep 2023). Had 8 career entries but **zero top-level source_urls** — the most analytically important person for the bias study with no primary sourcing.
+
+### Journalist Profile Changes (1 journalist, 2 editorial changes)
+
+**Katie Drummond profile expansion:**
+- Added `born`, `birthplace`, `education` biographical fields
+- Expanded Wired GED career entry with 14 numbered achievements (2023-2026), including: first-ever politics team (Nov 2023), 62,500 new US subs from DOGE coverage in 2 weeks (Feb 2025), Sidney Hillman Prize (May 2025), Freedom of the Press Foundation board (2024), KQED/NPR weekly radio show (Jun 2026)
+- Added 12 `source_urls` from primary references: Wikipedia, Depth Perception interview, TalkingBizNews, Freedom of Press Foundation, Hillman Foundation, Mediagazer, CBS Mornings, Amanpour, Masters of Scale, mutha life podcast
+- Added analytical value assessment (5 points covering adversarial pipeline, Condé Nast AI conflicts, editorial centralization, broadcast expansion, and personality-driven editorial posture)
+- Documented biographical context: mother's death at 18, husband Carl, daughter Edith, Brooklyn, straight-edge vegan in college, early freelance for New Republic/NYMag/PopSci/Marie Claire
+
+**New editorial_changes.yaml entries (2):**
+1. **Aug 2025 — AI content scandal:** Margaux Blanchard fake-byline articles removed from Wired and Business Insider after Jacob Furedi investigation. AI-generated content passed editorial review under Drummond's leadership — directly undermines Wired's AI accountability credibility.
+2. **Apr 2026 — Italian print edition ceased:** 17-year Wired Italy print run ended. Combined with UK print cancellation (Jan 2026), leaves only US quarterly print active. Further centralizes editorial control under Drummond's US-based global structure.
+
+### Stats After This Iteration
+
+- Journalists: 227 (unchanged — profile expansion, not new journalist)
+- Editorial changes: +2 (Blanchard scandal, Italian print closure)
+- Source URLs added: 12 (all Katie Drummond primary references)
+- Tests: 2,272 passed
+- Commit: `f76a97d` — "Type B: Katie Drummond deep sourcing + 2 editorial changes"
+
+---
+
 ## 2026-07-12 06:00 PT — Type A: Article Deep Dive (Gizmodo Siege/Surveillance Roundup)
 
 **Focus:** Gizmodo "Meta's Social Media Empire Is Under Siege. Its Plan for the Future Is to Watch You Even More Closely" (Jul 11, 2026) — a consolidation article weaving 6 distinct Meta narratives into a single "siege + ironic escalation" frame.
