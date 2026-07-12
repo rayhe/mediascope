@@ -1,6 +1,6 @@
 # Entity Detection & Clustering Quick Reference
 
-> A compact lookup card for all 84 entity clusters (827 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
+> A compact lookup card for all 85 entity clusters (835 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
 
 ---
 
@@ -158,7 +158,8 @@ Cloud providers, AI startups, and infrastructure companies.
 | 52 | **US Congress** | 8 | custom | Congress, Senate, House, committees, lawmakers, legislators | |
 | 53 | **State Attorneys General** | 4 | custom | attorney(s) general + named AGs (Torrez, Bonta, Weiser, Platkin, Coleman, Bird, Campbell, Ferguson) | Critical for child safety and antitrust litigation coverage |
 | 54 | **Political Figures** | 7 | custom | Trump, Biden, Kamala Harris, J.D. Vance | Trump excludes `Trump Tower/Hotel/Organization/National/International` |
-| 55 | **EU Regulatory** | 9 | auto | GDPR, DPC, European Commission, Autorité de la concurrence | |
+| 55 | **EU Regulatory** | 12 | auto | GDPR, DPC, European Commission, Autorité de la concurrence, Henna Virkkunen, Margrethe Vestager | Added EVP Virkkunen (DSA enforcement) and Vestager (former competition chief) Jul 2026 |
+| 85 | **Patent/IP Research** | 5 | custom | Patentlyze, PatSnap, Innography | New cluster: patent analysis firms acting as intermediary sources in tech journalism. Discovered from Gizmodo Jul 11 article. |
 | 56 | **Australia** | 3 | custom | Australia, eSafety Commissioner | |
 | 57 | **Legal/Judicial** | 6 | custom | Delaware courts, Section 230, DSA, MDL numbers, federal courts/judges, Supreme Court | Extended in Jul 2026 to catch federal judges invisible in Reuters $1.4T article |
 

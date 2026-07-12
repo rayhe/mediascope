@@ -541,6 +541,15 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Autorité de la concurrence",
             "France's competition authority",
             "French competition authority",
+            "Henna Virkkunen",
+            "Margrethe Vestager",
+            "Tech Sovereignty, Security and Democracy",
+        ],
+    },
+    "Patent/IP Research": {
+        "aliases": [
+            "Patentlyze", "PatSnap", "Innography",
+            "patent application", "patent filing",
         ],
     },
     "French Media Associations": {

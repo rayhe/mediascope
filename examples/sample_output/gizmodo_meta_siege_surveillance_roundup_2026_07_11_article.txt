@@ -1,0 +1,53 @@
+Source: Gizmodo
+URL: https://gizmodo.com/metas-social-media-empire-is-under-siege-its-plan-for-the-future-is-to-watch-you-even-more-closely-2000784135
+Date: July 11, 2026
+Title: Meta's Social Media Empire Is Under Siege. Its Plan for the Future Is to Watch You Even More Closely
+Type: News roundup / consolidation analysis
+
+---
+
+Meta's social media platforms are coming under growing legal fire over their allegedly addictive designs. Still, the company can't seem to stop thinking up new ways to monitor users more closely and embed itself even deeper into their lives.
+
+The European Commission this week told Meta to make major changes to Facebook and Instagram that would make them less addictive. Following a two-year investigation, the Commission's preliminary findings determined that the platforms' designs violate the European Union's laws governing digital services.
+
+The investigation focused on features such as infinite scroll and autoplay, along with highly personalized recommendation algorithms that continually feed users new content.
+
+European regulators also said Meta's efforts to address addiction risks, including time-management tools, parental controls, and Teen Accounts, are not effective.
+
+Regulators now want Meta to disable features such as autoplay and infinite scroll by default, introduce more effective screen-time breaks, and make its recommendation systems less focused on driving up engagement.
+
+"Protecting the physical and mental health of Europeans must be a priority for social media platforms," said the Commission's Executive Vice-President for Tech Sovereignty, Security and Democracy, Henna Virkkunen, in a press release.
+
+Meta now has an opportunity to respond to the preliminary findings. But if the Commission ultimately confirms them, the company could face a fine of up to 6% of its annual worldwide revenue.
+
+For its part, Meta told Gizmodo that it disagrees with the Commission's findings.
+
+"Since this investigation began, we rolled out Teen Accounts that automatically protect teens and put parents in control – allowing them to block access to Instagram at night and cap daily screen time at just 15 minutes," a Meta spokesperson said in an emailed statement. "We share the European Commission's commitment to providing teens with safe, positive online experiences and will continue to engage constructively with them."
+
+Unfortunately for Meta, this isn't the only existential threat to the core of its businesses.
+
+Across the pond, Meta said in a court filing this week that California, Colorado, Kentucky, and New Jersey are seeking $1.4 trillion in potential penalties over allegations that the company designed Facebook and Instagram to addict young users and misled the public about their safety. That figure is just under Meta's market capitalization of roughly $1.7 trillion.
+
+This all comes as Meta has perfected the business of collecting data from its massive, highly attentive user base and using it to sell targeted ads. During the first three months of 2026, the company generated $56 billion in revenue, $55 billion coming from advertising alone.
+
+Now, that very business model is under threat.
+
+In recent years, Meta has spent billions of dollars trying and mostly failing to diversify beyond social media. First with virtual reality and now with AI.
+
+Since acquiring Oculus in 2014, the company has scaled back its VR ambitions, even shutting down its Horizon Worlds metaverse.
+
+Currently, the company is trying its best to compete with frontier AI labs, but it now appears ready to start leasing space in its data centers to other AI companies.
+
+Somewhat ironically, new reports also suggest Meta is exploring AI devices that could collect a lot more data about users and potentially make them even more dependent on the company's tech.
+
+The Financial Times reported this week that Meta is testing prototype smart glasses designed to photograph a wearer's surroundings every few seconds. The prototype, reportedly dubbed "super-sensing" glasses, could serve as an AI assistant that can answer questions like where a user left their keys.
+
+If you think that sounds creepy, a recently published Meta patent application takes things to another level.
+
+Patentlyze recently discovered an application Meta filed late last year for an AI fitness-coaching device that could continuously listen to a user's voice and track their emotions over time.
+
+The system could detect cues such as laughter, sighs, and tone, and then connect them with a particular time, location, or activity. Over time, it could identify patterns such as when and where a user typically appears happy, sad, stressed, or relaxed. And somehow, all of that is supposed to lead to better workouts.
+
+Meta did not respond to Gizmodo's request for comment on the patent. However, a Meta spokesperson told 404 Media, "Like other companies, patents at Meta are often filed to disclose concepts that may or may not be implemented, and a granted patent does not guarantee that Meta has pursued or will pursue the technology described."
+
+But should Meta continue down this path, it would not be shocking at all to see the company face another wave of similar legal scrutiny a decade from now.

@@ -18,7 +18,7 @@ This is not an attack tool. It works equally well pointed at Fox News covering r
 ## What It Does
 
 1. **Ingests articles** from any publication via RSS feeds and web scraping
-2. **Detects entities** mentioned in coverage (companies, executives, products) using 84 clusters with 827 aliases and disambiguation filters (see [docs/ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md))
+2. **Detects entities** mentioned in coverage (companies, executives, products) using 85 clusters with 835 aliases and disambiguation filters (see [docs/ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md))
 3. **Classifies topics** into 29 standardized buckets for apples-to-apples comparison across companies (see [docs/TOPIC_REFERENCE.md](docs/TOPIC_REFERENCE.md))
 4. **Analyzes sentiment** using an 8-dimension scoring framework (not just positive/negative)
 5. **Calculates asymmetry** — is Company X covered more negatively than peers, with statistical significance?
@@ -41,13 +41,13 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 
 | Component | Count | Notes |
 |---|---|---|
-| Entity clusters | 84 | 827 aliases, 63 with custom regex, 21 auto-generated |
+| Entity clusters | 84 | 835 aliases, 63 with custom regex, 21 auto-generated |
 | Framing device types | 98 | 10 core + 81 extended + 7 structural (post-pass) |
 | Framing patterns | 637 | Compiled regex patterns across 91 pattern-based types |
 | Emotional language terms | 941 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 29 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 11 | Paths A–K, each addressing a specific VADER failure mode |
-| Annotated articles | 159 | Full manual analysis in `examples/sample_output/` |
+| Annotated articles | 160 | Full manual analysis in `examples/sample_output/` |
 | Journalists tracked | 227 | Career data with source URLs |
 | Career-entry migrations | 895 | Across 413 distinct publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
@@ -271,7 +271,7 @@ Statistical methodology is documented at academic quality in [docs/METHODOLOGY.m
 | [FRAMING_REFERENCE.md](docs/FRAMING_REFERENCE.md) | **Quick-reference card for all 98 framing device types** — scannable lookup during article analysis |
 | [TOPIC_REFERENCE.md](docs/TOPIC_REFERENCE.md) | **Quick-reference card for all 29 topic buckets** — boundary rules, adjacency warnings, genre detection triggers |
 | [SOURCE_ANALYSIS_REFERENCE.md](docs/SOURCE_ANALYSIS_REFERENCE.md) | **Quick-reference card for source extraction, stance analysis, outsourced intensity, and active-negative agency** — 14 pattern groups, 10 source types, failure modes |
-| [ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md) | **Quick-reference card for all 84 entity clusters (827 aliases)** — disambiguation filters, cluster categories, custom regex patterns, pipeline interactions |
+| [ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md) | **Quick-reference card for all 85 entity clusters (835 aliases)** — disambiguation filters, cluster categories, custom regex patterns, pipeline interactions |
 | [SENTIMENT_CORRECTION_REFERENCE.md](docs/SENTIMENT_CORRECTION_REFERENCE.md) | **Quick-reference card for all 11 sentiment correction paths (A–K)** — trigger conditions, blend formulas, validation articles, path selection flowchart |
 | [QUALITY_STANDARDS.md](docs/QUALITY_STANDARDS.md) | Citation requirements, anti-slop standards, analytical rigor rules |
 | [AGENT_GUIDE.md](docs/AGENT_GUIDE.md) | AI agent integration: schemas, JSON formats, sample prompts, framework patterns |

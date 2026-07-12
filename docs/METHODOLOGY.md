@@ -981,7 +981,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **84 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **85 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -999,7 +999,7 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 84 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 85 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
@@ -1087,7 +1087,7 @@ The following table documents all 84 entity clusters shipped with MediaScope, or
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
-| **EU Regulatory** | 9 | GDPR, General Data Protection Regulation, DPC, Data Protection Commission, European Commission, EU Commission, Autorité de la concurrence, France's competition authority, French competition authority |
+| **EU Regulatory** | 12 | GDPR, General Data Protection Regulation, DPC, Data Protection Commission, European Commission, EU Commission, Autorité de la concurrence, France's competition authority, French competition authority, Henna Virkkunen, Margrethe Vestager, Tech Sovereignty Security and Democracy |
 | **French Media Associations** | 6 | DVP, Digital Video Publishers, APIG, Alliance de la Presse d'Information Générale, Le Monde, Les Echos |
 | **US Congress** | 8 | Congress, Senate, House of Representatives, Senate Judiciary Committee, Senate Commerce Committee, House Energy and Commerce Committee (+2 more) |
 | **US Government** | 47 | Pentagon, Department of Defense, FBI, CIA, NSA, National Security Agency (+41 more) |
@@ -1111,6 +1111,7 @@ The following table documents all 84 entity clusters shipped with MediaScope, or
 | **Policy Research** | 13 | RAND Corporation, RAND, Brookings Institution, Brookings, Center for Strategic and International Studies, CSIS (+7 more) |
 | **Cybersecurity/Research** | 11 | Brian Krebs, Krebs, Jane Manchun Wong, Troy Hunt, Bruce Schneier, Schneier (+5 more) |
 | **Privacy Advocacy** | 16 | Foxglove, Privacy International, EFF, Electronic Frontier Foundation, Access Now, Big Brother Watch, Open Rights Group, noyb, CAIDP, Fight for the Future (+6 more) |
+| **Patent/IP Research** | 5 | Patentlyze, PatSnap, Innography, patent application, patent filing |
 
 #### Finance & Markets
 
@@ -1163,6 +1164,7 @@ Entity clusters are added organically as new articles reveal detection gaps. The
 | **Consumer & Misc** | +14 | Ongoing: Garmin, EssilorLuxottica, Smart Glasses Competitors, Indian Fintech, etc. |
 | **Financial Services** | +1 | PYMNTS agentic commerce article (Jul 3): Visa, Mastercard, AmEx, Goldman Sachs, Adyen, PayPal, Stripe, JPMorgan, etc. |
 | **Energy & Environment** | +3 | MIT TR Meta Louisiana natural gas article (May 2026): Energy/Utilities, Energy Research/Regulatory, Environmental Advocacy |
+| **Patent/IP Research** | +1 | Gizmodo Meta siege roundup (Jul 11): Patentlyze, PatSnap, Innography — patent analysis firms as intermediary sources |
 
 ### 15.5 False-Positive Prevention
 
@@ -1364,7 +1366,7 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **159 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **160 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1480,7 +1482,7 @@ Articles cluster into 9 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 159 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 160 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|

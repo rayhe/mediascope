@@ -1,5 +1,43 @@
 # MediaScope Iteration Log
 
+## 2026-07-12 05:00 PT — Type D: Toolkit Quality & Documentation (Sentiment Correction Reference Card)
+
+**Focus:** Created `SENTIMENT_CORRECTION_REFERENCE.md` — the missing quick-reference card for the sentiment correction pipeline. Every other major subsystem (entities, framing, topics, sources) already had a dedicated reference card; the 11 correction paths (A–K) were only documented inline in METHODOLOGY.md and sentiment.py.
+
+### New Documentation
+
+**`docs/SENTIMENT_CORRECTION_REFERENCE.md`** (497 lines, 5 parts):
+
+1. **Part 1: The 29 Adversarial Device Types** — complete table with discovery provenance for each device. Anchor device subset explained separately.
+2. **Part 2: Correction Paths (A–K)** — each path documented with:
+   - Problem statement (what VADER failure mode it addresses)
+   - Trigger conditions table (thresholds with rationale)
+   - Correction formula with blend weights
+   - Validation articles with raw/corrected/manual scores and gap closed
+   - Contrast with adjacent paths (prevents confusion)
+3. **Part 3: Path Selection Flowchart** — ASCII decision tree showing evaluation order (A → B → C → E → D → F → H → K → I → J, with G pre-stage)
+4. **Part 4: Correction Strength Summary** — all 11 paths sorted by blend ratio (strongest to lightest) with target ranges and typical gap closed
+5. **Part 5: Adding a New Correction Path** — 8-step checklist for extending the pipeline, naming convention (alphabetical by discovery order)
+
+### Cross-References Added (6 files updated)
+
+- **METHODOLOGY.md §9:** Quick Reference callout linking to new card
+- **QUALITY_STANDARDS.md §7:** Quick Reference callout linking to new card
+- **AGENT_GUIDE.md:** Quick Reference callout in correction paths section
+- **README.md:** New row in docs table; fixed stale test description ("10 paths A-J" → "11 paths A-K")
+- **ARCHITECTURE.md:** Added to file tree listing
+- **SOURCE_ANALYSIS_REFERENCE.md:** Fixed stale "10 correction paths (A–J)" → "11 correction paths (A–K)" with link to new card
+
+### Bug Fixes
+
+- **Stale path count in SOURCE_ANALYSIS_REFERENCE.md:** Referenced "10 correction paths (A–J)" — Path K (sarcastic rejection, discovered from AV Club article Jul 2026) was missing. Updated to 11 (A–K).
+- **Stale path count in README.md test description:** `test_structural_consistency.py` description referenced "all 10 sentiment correction paths A-J" — updated to 11 A-K.
+
+**Commit:** `eff5f17` — pushed to GitHub.
+**Tests:** 2,272 passed (including all 113 structural consistency guards), 0 failed.
+
+---
+
 ## 2026-07-12 04:00 PT — Type C: Ownership & Funding Deep Dive (NYT — OpenAI Leadership Instability & Dual IPO Pressure)
 
 **Focus:** The New York Times — chosen because NYT hasn't had a dedicated Type C iteration recently despite major developments in its primary litigation target (OpenAI) this week.
