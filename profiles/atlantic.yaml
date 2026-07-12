@@ -70,6 +70,7 @@ ownership_chain:
       Inside Philanthropy named LPJ its "Least Transparent Mega-Giver" of the year (2019).
       Venture team invests across AI, climate, healthcare, fintech, edtech, future of work,
       and media. 130+ investments, majority in technology. $1B+ invested in AI startups since 2022.
+      Assets under management: ~$28B (InforCapital estimate, Jan 2026).
     legal_structure:
       type: "LLC (Limited Liability Corporation)"
       parent_entity: "Emerson Collective Foundation (501(c)(3))"
@@ -172,10 +173,17 @@ ownership_chain:
           could affect the Atlantic's licensing deal value (fewer users seeing Atlantic content
           through ChatGPT on Apple devices).
 
-          EDITORIAL COVERAGE GAP: As of Jul 11, 2026, The Atlantic has published ZERO articles
-          about Apple v. OpenAI despite having the densest financial conflict of any publication
-          in the tracked set. NYT, CNN, Reuters, WSJ, Fox Business, MarketWatch, and USA Today
-          all covered the filing within hours.
+          EDITORIAL COVERAGE GAP: As of Jul 12, 2026 (48+ hours post-filing), The Atlantic has
+          published ZERO articles about Apple v. OpenAI despite having the densest financial
+          conflict of any publication in the tracked set. Additionally, a site-specific search
+          (site:theatlantic.com) returns ZERO results for any OpenAI-related coverage in all of
+          July 2026. NYT, CNN, Reuters, WSJ, Fox Business, MarketWatch, USA Today, Daily Caller,
+          Washington Examiner, Outlook Business, and MacRumors all covered the filing within hours.
+          Legal scholars Mark Lemley (Stanford Law) and Camilla Hrdy (Rutgers Law) both provided
+          analysis to Reuters: Lemley called it "a potential very big case," Hrdy noted complexity
+          because most prior AI trade secret cases involved software, not hardware. Even trade press
+          (DevDiscourse, TechLusive, Inshorts) covered it. The Atlantic's silence is now the longest
+          editorial absence on this story in the tracked publication set.
         competitive_with: ["Meta", "Apple"]
         source_urls:
           - "https://pitchbook.com/news/articles/openai-jony-ive-io-products-acquisition"
@@ -513,9 +521,36 @@ revenue_relationships:
         - $122B primary capital raised in aggregate
         - Confidential IPO filing submitted June 2026, targeting >$1T valuation (may delay to 2027)
         - BofA extended $520M credit line (Jul 8, 2026) ahead of IPO
-        - GPT-5.6 (Sol/Terra/Luna) US government-approved for public launch Jul 10, 2026
+        - GPT-5.6 (Sol/Terra/Luna) general availability Jul 10, 2026. Sol ranked #2 per Artificial
+          Analysis intelligence index, behind only Anthropic Claude Fable 5 — but at ~1/3 the cost.
+          Altman claims 54% more efficient on coding tasks. $1.04/task vs ~$3/task for Fable 5.
+        - OpenAI committed ~$1.4T in total spending (cloud/chip deals: Microsoft, Oracle, CoreWeave, AMD, Broadcom)
         - OpenAI proposing 5% equity (~$42.6B) to Trump administration as "public wealth fund"
+        - Altman told CNBC "not focused on timing" of IPO, dismissing speculation
         - CRITICAL: Anthropic has SURPASSED OpenAI — valued at $965B-$1.09T (May 2026), ARR $30B-$47B
+
+      OPENAI EXECUTIVE ATTRITION (Feb-Jul 2026) — THE INSTABILITY PROBLEM:
+        OpenAI has lost a historically severe concentration of senior leadership during the period
+        Atlantic's licensing deal is active. This destabilization of a key business partner raises
+        editorial questions the Atlantic has not explored:
+        - Apr 17-18, 2026: TRIPLE SAME-DAY EXIT — Kevin Weil (CPO → Science VP, departed),
+          Bill Peebles (Sora head, departed), Srinivas Narayanan (Enterprise CTO, departed).
+          Weil cited OpenAI for Science dissolution; Narayanan cited family; Peebles departed
+          weeks after Sora shutdown (compute costs ~$1M/day unsustainable).
+        - OpenAI for Science absorbed into Codex (coding product). Prism platform dissolved.
+        - Joshua Achiam (Chief Futurist) also departed (timing unspecified).
+        - Brad Lightcap (COO) moved to "special projects" — a sidelining, not a promotion.
+        - Fidji Simo (CEO of AGI Deployment, effectively #2): medical leave April, formal
+          departure Jul 10. POTS (Postural Orthostatic Tachycardia Syndrome) diagnosis. Hired
+          from Instacart CEO role, served <1 year. KEY META ANGLE: Simo was Head of the
+          Facebook App (~2018-2021), VP at Facebook (2011-2021, ~10 years) — highest-ranking
+          former Meta executive at OpenAI.
+        - Greg Brockman (co-founder, President) assumed product responsibilities from Simo,
+          now oversees ChatGPT, enterprise, go-to-market, and compute. Reports to Altman.
+        This executive hemorrhage — at least 6 senior departures in ~3 months — affects the
+        stability of the organization Atlantic is licensing content to and co-developing products
+        with. No Atlantic coverage of OpenAI leadership instability has been observed.
+        Sources: LiveMint (Apr 17), CNBC (Jul 10), Stocktwits (Jul 9-10), The Decoder (Apr 18).
         
       The Atlantic's licensing deal grows more valuable as OpenAI scales: 900M weekly users
       see Atlantic content through ChatGPT. GPT-5.6's three-tier model (Sol/Terra/Luna)
@@ -730,8 +765,9 @@ known_conflicts:
       their largest stock holding. The lawsuit alleges "institutional" misconduct by io Products
       and OpenAI — the entities EC invested in and profited from.
 
-      EDITORIAL COVERAGE: As of Jul 11, The Atlantic has published ZERO articles about Apple v.
-      OpenAI. Every major wire service and business publication covered it within hours.
+      EDITORIAL COVERAGE: As of Jul 12 (48+ hours post-filing), The Atlantic has published
+      ZERO articles about Apple v. OpenAI, and ZERO OpenAI articles in all of July 2026.
+      Every major wire service and business publication covered it within hours.
 
       APPLE-OPENAI PARTNERSHIP COLLAPSE: WSJ reports Apple's new Siri AI (WWDC Jun 2026) is
       now powered by Google Gemini, not OpenAI ChatGPT. If the partnership fully ends, OpenAI
@@ -1160,13 +1196,26 @@ litigation_connections:
       - Tang Yew Tan (io Products co-founder, OpenAI Chief Hardware Officer): 24-year Apple
         veteran, former VP iPhone/Apple Watch design. Apple alleges he emailed himself supplier
         info, used Apple codenames in interviews, directed "show and tell" sessions with stolen
-        Apple hardware parts
+        Apple hardware parts, retained a "Need to Know" security procedures document and shared
+        it with new hires to help them evade Apple's departure security protocols
       - io Products is accused of participating in misconduct at an "institutional level"
       - Chang Liu (ex-Apple → OpenAI Jan 2026): unreturned laptop, exploited auth bug for
-        remote Apple network access, coached colleague on security evasion
+        remote Apple network access, downloaded dozens of confidential hardware files, texted
+        friend "LOL, I found out I can access the [network storage], so funny," coached
+        colleague Alyssa Peng on evasion
+      - 400+ former Apple employees now work at OpenAI
+      - 41-page civil complaint filed in USDC N.D. Cal.
       - Apple: "This is the tip of the iceberg"
       - OpenAI: "We have no interest in other companies' trade secrets"
       - Jony Ive NOT named as defendant (co-founded io Products with Tan and Altman)
+      - AAPL stock unmoved after-hours: $314.97 (-0.11%) after $315.32 close on Jul 10
+      - Legal analysis: Mark Lemley (Stanford Law) — "potential to be a very big case" but
+        notes California law allows employees to leave for competitors (re: 400+ hires).
+        Camilla Hrdy (Rutgers Law) — case could become complex because most prior AI trade
+        secret cases involved software, not hardware.
+      - Apple's relief sought: jury trial, preliminary and permanent injunction, product
+        redesign of upcoming OpenAI hardware, destruction of all confidential materials,
+        unspecified monetary damages
 
       APPLE-OPENAI PARTNERSHIP COLLAPSE:
       - WSJ: Apple's new Siri AI (WWDC Jun 2026) powered by Google Gemini, NOT ChatGPT
@@ -1343,6 +1392,40 @@ editorial_history:
       notes: "Former Wired EIC hired as CEO. Creates direct Condé Nast editorial culture bridge. Under Thompson: profitability achieved, record subscriptions (1.4M+ by Feb 2026), 3 Pulitzer Prizes, OpenAI licensing deal (May 2024). Revenue over $100M. Also poached ~20 journalists from Washington Post."
 
 notes: |
+  UPDATED 2026-07-12: Type C — OpenAI executive attrition + Apple v. OpenAI enrichment.
+  
+  OPENAI EXECUTIVE ATTRITION (new section in revenue_relationships):
+  6+ senior departures in ~3 months (Apr-Jul 2026): Kevin Weil (CPO/Science), Bill Peebles
+  (Sora), Srinivas Narayanan (Enterprise CTO), Joshua Achiam (Chief Futurist), Brad Lightcap
+  (COO, sidelined to "special projects"), and Fidji Simo (CEO AGI Deployment, POTS diagnosis).
+  Greg Brockman (co-founder/President) assumes product leadership. Simo is analytically
+  significant as the highest-ranking former Meta executive at OpenAI (Head of Facebook App
+  2018-2021, VP Facebook 2011-2021). Atlantic has published zero coverage of OpenAI leadership
+  instability despite being a licensing partner and product collaborator.
+
+  APPLE v. OPENAI ENRICHMENT:
+  - Coverage gap extended: 48+ hours of Atlantic silence (through Jul 12). Additionally,
+    site:theatlantic.com returns zero results for ANY OpenAI coverage in all of July 2026.
+  - Case details: 41-page complaint, USDC N.D. Cal. Apple seeks jury trial, injunction,
+    product redesign, destruction of materials, unspecified damages.
+  - Legal analysis: Lemley (Stanford) "potential to be a very big case," Hrdy (Rutgers)
+    notes software vs hardware complexity as novel.
+  - AAPL flat after-hours ($314.97, -0.11%) — market shrugged off the filing.
+  - New details: Tan shared Apple "Need to Know" security document with new hires to help
+    them evade departure protocols. Liu texted "LOL, I found out I can access the [network
+    storage], so funny." Apple also alleges OpenAI tricked an Apple supplier into performing
+    a "specific trade secret metal-finishing technique" by claiming Apple's permission.
+
+  EC AUM: ~$28B managed assets (InforCapital, Jan 2026). Added to ownership_chain.
+
+  GPT-5.6 COMPETITIVE POSITIONING: Sol ranked #2 per Artificial Analysis (behind Claude
+  Fable 5 only) at ~1/3 the cost ($1.04/task vs ~$3). Altman claims 54% more efficient on
+  coding tasks. OpenAI committed ~$1.4T total spending. Updated in revenue_relationships.
+
+  Sources: Reuters (Jul 10-11), USA Today (Jul 11), MacRumors (Jul 10), Stocktwits (Jul 9-10),
+  LiveMint (Apr 17), CNBC (Jul 10), The Decoder (Apr 18), Barron's (Jul 10), InforCapital,
+  Washington Examiner (Jul 11), Daily Caller (Jul 12).
+
   UPDATED 2026-07-11: Type C — Apple v. OpenAI trade secrets lawsuit (N.D. Cal., filed Jul 10-11).
   io Products is a NAMED DEFENDANT, and EC was a founding backer. This creates the most acute
   active conflict in the tracked set: LPJ/EC simultaneously aligned with plaintiff (Apple, $17B+
