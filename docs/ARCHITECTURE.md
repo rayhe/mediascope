@@ -428,6 +428,7 @@ mediascope/
 │   ├── TOPIC_REFERENCE.md
 │   ├── ENTITY_REFERENCE.md
 │   ├── SOURCE_ANALYSIS_REFERENCE.md
+│   ├── SENTIMENT_CORRECTION_REFERENCE.md
 │   └── ARCHITECTURE.md      # (this file)
 ├── examples/
 │   ├── quick_start.py

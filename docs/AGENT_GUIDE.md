@@ -1026,6 +1026,8 @@ The 29 topic buckets enable apples-to-apples asymmetry comparison within a topic
 
 VADER and TextBlob systematically misprice editorial tone in investigative journalism. Professional prose uses measured, confident language that lexical sentiment models score as positive — even when the editorial stance is clearly adversarial. MediaScope's tone correction pipeline fixes this through **11 correction paths (A–K)**, each addressing a specific VADER failure mode.
 
+> **Quick Reference:** For a scannable lookup card with trigger conditions, blend formulas, validation articles, and a path selection flowchart, see [SENTIMENT_CORRECTION_REFERENCE.md](SENTIMENT_CORRECTION_REFERENCE.md).
+
 See `METHODOLOGY.md` §9 and `examples/framing_correction_demo.py` for a hands-on walkthrough.
 
 ### Correction Paths

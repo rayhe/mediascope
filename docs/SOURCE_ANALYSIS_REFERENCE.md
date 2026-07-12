@@ -210,7 +210,7 @@ VADER's lexical model cannot distinguish "Meta is tracking users across apps" (n
 
 ### Impact on Tone Correction
 
-Active-negative agency is one of three conditions (alongside adversarial framing density ≥3 and positive raw VADER score) that trigger the framing-aware tone correction pipeline. See [FRAMING_REFERENCE.md](FRAMING_REFERENCE.md) and `METHODOLOGY.md §9` for the 10 correction paths (A–J).
+Active-negative agency is one of three conditions (alongside adversarial framing density ≥3 and positive raw VADER score) that trigger the framing-aware tone correction pipeline. See [SENTIMENT_CORRECTION_REFERENCE.md](SENTIMENT_CORRECTION_REFERENCE.md) for a quick-reference card covering all 11 correction paths (A–K), or [METHODOLOGY.md §9](METHODOLOGY.md#9-framing-aware-tone-correction) for the full theory.
 
 ---
 

@@ -509,6 +509,8 @@ This is not a VADER bug; it is a fundamental limitation of lexical sentiment ana
 
 MediaScope implements **11 distinct correction paths (A–K), each addressing a specific VADER/TextBlob failure mode discovered through real article analysis. The paths are evaluated in priority order; the first match fires and returns the corrected score.
 
+> **Quick Reference:** For a scannable lookup card with trigger conditions, blend formulas, validation articles, and a path selection flowchart, see [SENTIMENT_CORRECTION_REFERENCE.md](SENTIMENT_CORRECTION_REFERENCE.md).
+
 The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overall_tone` (corrected) with metadata documenting when and why correction fired.
 
 #### Path A: Full Correction (VADER Got Direction Wrong)
