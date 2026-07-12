@@ -19736,3 +19736,40 @@ Both vectors serve the Atlantic's 2025-2026 expansion strategy: 51 editorial cha
 
 ### Commit
 - `923cb3d`: Type B — Mia Sato career expansion + 3 missing Verge editorial changes. Pushed to GitHub.
+
+## 2026-07-11 21:00 PT — Type B: Journalist/Publication Research
+
+**Focus:** Deep research on Cecilia Kang (NYT national technology correspondent)
+
+### Why Cecilia Kang
+- NYT's primary tech regulation/antitrust reporter — her framing directly shapes public understanding of Meta breakup case
+- Had 5 career entries and detailed analytical_notes but **0 top-level notes** and **0 source_urls**
+- Lead reporter on 2 of the highest-stakes Meta cases: FTC antitrust trial (2025) and upcoming youth safety bellwether trial (Aug 2026, $1.4T penalty demand)
+- WaPo → NYT migration (2015) is a clean DiD natural experiment: same beat, same city, different institutional context
+
+### Profile Expansion
+1. **Added top-level notes** (2,765 chars): Full career summary covering 30+ years across 5 publications (AP-Dow Jones Seoul → Mercury News → Seattle P-I → WaPo → NYT). Korean American background, awards (Pulitzer finalist, George Polk, Gerald Loeb), book ("An Ugly Truth" with Sheera Frenkel), analytical value for MediaScope including NYT AI licensing conflict
+2. **Added 9 source_urls**: NYTCo press release, TalkingBizNews hiring announcement, Georgetown IOP profile, Aspen Ideas Festival bio, Whitman College commencement announcement, Whitman trustee appointment, Muck Rack profile, NYT author page, Longform podcast interview
+3. **Added multi_publication flag**
+4. **Updated NYT career entry** with 2025-2026 coverage:
+   - FTC v. Meta antitrust trial (Apr-May 2025): Zuckerberg testimony (Apr 14-17), Kevin Systrom testimony (Apr 22, "Meta starved Instagram of resources"), Sheryl Sandberg testimony, trial conclusion (May 27)
+   - Co-authored coverage with Mike Isaac and David McCabe
+   - DOJ v. Google ad tech monopoly remedies hearing (2025)
+   - Google AI cybercrime lawsuit vs Outsider Enterprise (Jun 12 2026)
+   - Lead reporter on upcoming Aug 2026 bellwether trial (4 states v. Meta, Judge Yvonne Gonzalez Rogers, $1.4T penalty demand)
+   - NYT The Daily podcast appearances (Apr 17 2025)
+5. **Added institutional roles**: Georgetown IOP discussion group leader, Berkeley Law Executive Education guest (Feb 2024), Aspen Ideas Festival, Whitman College Board of Trustees (~2024), 2024 Commencement Speaker + honorary degree, Hosokawa Journalism Lecture (Apr 2011)
+6. **Updated education source_url**
+7. **Updated beat field** to include "youth safety" — critical given Aug 2026 trial
+
+### Key Analytical Findings
+- **Kang-Frenkel partnership** is the most productive policy-cybersecurity collaboration in tech journalism: Kang provides DC regulatory access, Frenkel provides Silicon Valley source network
+- **WaPo → NYT migration timing** (2015, ~2 years post-Bezos acquisition) raises DiD question about whether WaPo coverage direction shifted under tech-billionaire ownership
+- **NYT institutional conflict**: NYT has AI licensing deals with Google ($100M+), Apple, Amazon — the same companies Kang covers on the regulation beat. Undisclosed institutional conflict parallel to Wired/Condé Nast conflicts
+- **Regulatory framing power**: Kang's in-app purchases investigation at WaPo directly generated FTC charges against Apple ($32.5M), Google ($19M), Amazon (liable) — demonstrating capacity to move policy through reporting
+
+### Test Suite
+2,272 tests passing (all existing, no new tests needed for journalist profile updates).
+
+### Commit
+- `3940323`: Type B — 5,995 insertions, 3,715 deletions (YAML reserialization + Kang profile expansion). Pushed to GitHub.
