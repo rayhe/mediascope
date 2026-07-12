@@ -813,12 +813,12 @@ editorial_changes:
     notes: 'HIRE/PROMOTION: Mary Beth Griggs as science editor. Previously at Popular Science and The Verge. Confirmed via
       Oct 2025 Roundtable (Climate Solutions) and Jun 2026 Roundtable (Longevity). Listed in Hype Correction editing credits
       (Dec 2025).'
-  - date: 2025-01
+  - date: 2024-08
     incoming: null
-    notes: 'DEPARTURE: Zeyi Yang left MIT TR for Wired as senior writer (~Jan 2025). MIT TR author page uses past tense (''covered'').
+    notes: 'DEPARTURE: Zeyi Yang left MIT TR for Wired as senior writer (~Aug 2024). MIT TR author page uses past tense (''covered'').
       Created China Report newsletter. Won 2024 ASME NEXT Award. His departure leaves MIT TR without a dedicated China tech
       correspondent — a significant editorial gap given US-China tech competition is the decade''s defining geopolitical tech
-      story. 144 posts during tenure.'
+      story. 144 posts during tenure. MIT TR later hired Caiwei Chen from Rest of World to fill the gap.'
     outgoing: Zeyi Yang
     position: china_tech_reporter
     source_url: https://www.technologyreview.com/author/zeyi-yang/
@@ -1213,16 +1213,19 @@ editorial_changes:
     outgoing: null
     position: senior_business_editor
     source_url: https://EditorandPublisher.com/stories/louise-matsakis-is-returning-to-wired-as-a-senior-editor-of-the-business-desk,252182
-  - date: 2025-01
+  - date: 2024-08
     incoming: Zeyi Yang
     notes: 'KEY HIRE: Zeyi Yang joined from MIT Technology Review as senior writer covering China technology and business.
-      CROSS-PUBLICATION MIGRATION — second MIT TR → Wired migration after Will Knight (2018). 2024 ASME NEXT Award winner.
-      Created MIT TR''s China Report newsletter. Yale Poynter Fellow (Mar 2026). Only tracked journalist who can read primary
-      Chinese-language sources. Tests whether MIT TR''s nuanced China coverage framing changes under Wired''s Drummond-era
-      adversarial editorial posture.'
+      CROSS-PUBLICATION MIGRATION — second MIT TR → Wired migration after Will Knight (2018). Hired as part of batch of four
+      (with Verity Burns, Skye Battles, Alana Yzola) announced by Katie Drummond. 2024 ASME NEXT Award winner (Journalists
+      Under 30). Created MIT TR''s China Report weekly newsletter. Yale Poynter Fellow (Mar 2026). Only tracked journalist
+      who can read primary Chinese-language sources (Peking University BA + Mandarin podcast co-founder). Reports to Zoë
+      Schiffer on business desk alongside Matsakis, Kleeman, Zeff. Based in New York. Tests whether MIT TR''s nuanced China
+      coverage framing changes under Wired''s Drummond-era adversarial editorial posture — the cleanest tracked-to-tracked
+      migration available for DiD analysis because the beat (China tech) remains constant.'
     outgoing: null
     position: senior_writer_china
-    source_url: https://law.yale.edu/yls-today/yale-law-school-events/paul-tsai-china-center-conversation-poynter-fellow-zeyi-yang
+    source_url: https://talkingbiznews.com/media-news/wired-hires-four-new-editorial-staffers/
   - date: 2026-02
     incoming: null
     notes: 'FIRST POLITICS TEAM DEPARTURE: Turton left for ProPublica as national reporter covering FBI/DOJ after ~2.3 years
