@@ -1,5 +1,45 @@
 # MediaScope Iteration Log
 
+## 2026-07-12 13:00 PT — Type B: Journalist/Publication Research (Adrienne LaFrance Deep Sourcing)
+
+**Focus:** Adrienne LaFrance — The Atlantic's executive editor, first woman in 162-year history. Had 9 career entries but **zero top-level source_urls** — the most editorially powerful person at the Atlantic (and author of its three most influential anti-Facebook/Meta pieces) with no primary sourcing.
+
+### Journalist Profile Changes (1 journalist, 4 editorial changes)
+
+**Adrienne LaFrance profile expansion:**
+- Added `born`, `birthplace`, `education` biographical fields
+- Added 12 `source_urls` from primary references: Wikipedia, The Atlantic author page, Nieman Lab (2019 interview), Chautauqua Daily (2019 career interview), FIPP (promotion announcement), MediaPost (EE promotion), ASC Penn (conspiracy panel), Aspen Ideas Festival (speaker bio), OnePitch podcast (Coffee with a Journalist), Muck Rack (journalist profile), TalkingBizNews (promotions), WBUR (On Point gender in media)
+- Expanded executive_editor career entry (9th career entry) with:
+  - Editorial leadership team structure: Sarah Yager (deputy EE), Yoni Appelbaum (deputy editor), Juliet Lapidos (deputy editor), John Swansburg (managing editor, print), Bhumika Tharoor (managing editor, strategy), Griff Witte (managing editor, politics/accountability)
+  - Key editorial output: "The Prophecies of Q" (June 2020 cover), "Facebook Is a Doomsday Machine" (Dec 15, 2020), "The Largest Autocracy on Earth" (Sep 27, 2021)
+  - SignalGate role (March 2025): oversaw Goldberg's editorial decisions, appeared on GBH News
+  - 2025-2026 hiring spree: 14+ staff writers and 3+ senior editors from WSJ, WaPo, Economist, Politico, AP, Time
+- Added Omidyar patronage analytical note (Civil Beat → Emerson Collective tech-billionaire media funding theme)
+- Added Nieman Lab colleague connections (Shan Wang, Megan Garber)
+- Expanded notes with ideological arc analysis: three Facebook/Meta pieces form escalating metaphoric framing — "doomsday machine" (broken tool, 2020) → "autocracy" (rival state, 2021) → "hostile foreign power" (geopolitical threat, 2021). This arc is now institutionalized as The Atlantic's editorial posture under her leadership.
+- Added comparison with Katie Drummond (Wired GED): Drummond's anti-tech posture is editorial-by-default; LaFrance's is author-specific — she personally wrote the landmark pieces, then rose to control the entire editorial operation.
+- Added hiring pattern analysis: 2025-2026 hires show deliberate acquisition of national security and politics reporters (Beckett, Witte, Salama, Youssef, Lemire, Ryan) — building capacity for government accountability coverage that often intersects with Big Tech regulatory stories.
+
+**New editorial_changes.yaml entries (4):**
+1. **Jul 2025 — Idrees Kahloon:** Economist Washington bureau chief → Atlantic staff writer. National politics coverage.
+2. **Jul 2025 — Vivian Salama:** WSJ → Atlantic staff writer for national security/foreign policy. 5+ publication career (AP → WSJ → CNN → NBC → WSJ → Atlantic). Part of natsec hiring wave.
+3. **Jul 2025 — Tom Bartlett:** Chronicle of Higher Education (22-year tenure) → Atlantic staff writer for health/science. Longest single-publication tenure in dataset before joining.
+4. **Jan 2026 — Henry Grabar:** Slate → Atlantic staff writer covering housing/infrastructure/urban life. Author of "Paved Paradise."
+
+### README Stats Sync (2 fixes)
+- Framing patterns: 637 → 641
+- Emotional language terms: 941 → 971 (from Type A iteration earlier today, not synced to README until now)
+
+### Stats After This Iteration
+- Journalists: 227 (unchanged — profile expansion, not new journalist)
+- Source URLs added: 12 (all Adrienne LaFrance primary references)
+- Editorial changes: +4 (Kahloon, Salama, Bartlett, Grabar)
+- Total Atlantic editorial changes: 38 (highest of any tracked publication)
+- Tests: 2,272 passed, 0 failed
+- Commit: `60a9e5d` — pushed to GitHub
+
+---
+
 ## 2026-07-12 12:00 PT — Type A: Article Deep Dive (NY Post Muse Image Opt-Out, Jul 10)
 
 **Article:** "New Meta feature lets anyone use your Instagram photos in AI images – here's how to opt out" (NY Post, Jul 10, 2026)
