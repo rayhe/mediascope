@@ -4088,14 +4088,12 @@ journalists:
   - beat: freelance, China tech, startups
     end: 2021-01
     event_type: fellowship
-    notes: 'Reporting fellow at Rest of World, a nonprofit publication covering technology
-      outside the Western bubble. Reported on startups, entrepreneurs, and tech ecosystems
-      in non-Western markets. Also freelanced concurrently for South China Morning Post,
-      Nikkei Asian Review, Columbia Journalism Review, and Atlas Obscura. Brokered and
-      interpreted interviews with Wuhan locals for reporters at other publications during
-      the early COVID-19 pandemic. First full journalism role after Columbia MA. Rest of
-      World''s editorial mission — centering non-Western tech narratives — shaped Yang''s
-      subsequent career focus on bridging Chinese tech for English-speaking audiences.'
+    notes: Reporting fellow at Rest of World, a nonprofit publication covering technology outside the Western bubble. Reported
+      on startups, entrepreneurs, and tech ecosystems in non-Western markets. Also freelanced concurrently for South China
+      Morning Post, Nikkei Asian Review, Columbia Journalism Review, and Atlas Obscura. Brokered and interpreted interviews
+      with Wuhan locals for reporters at other publications during the early COVID-19 pandemic. First full journalism role
+      after Columbia MA. Rest of World's editorial mission — centering non-Western tech narratives — shaped Yang's subsequent
+      career focus on bridging Chinese tech for English-speaking audiences.
     publication: rest-of-world
     role: reporting_fellow
     source_url: https://talkingbiznews.com/they-talk-biz-news/protocol-hires-yang-to-cover-china-technology/
@@ -4103,14 +4101,12 @@ journalists:
   - beat: China technology
     end: 2022-04
     event_type: hired
-    notes: 'Reporter covering China''s tech industry at Protocol, a tech news site launched
-      by Politico''s parent company Axel Springer in 2020. Covered Chinese tech companies,
-      AI developments, semiconductor supply chains, and US-China tech competition. Protocol
-      was among the first dedicated tech-policy-focused publications to create a China
-      beat. Yang departed for MIT Technology Review in April 2022 before Protocol shut down
-      entirely in August 2022 when Axel Springer restructured Politico. His Protocol tenure
-      established his specialty: making Chinese tech developments comprehensible to a
-      Western policy-aware audience.'
+    notes: 'Reporter covering China''s tech industry at Protocol, a tech news site launched by Politico''s parent company
+      Axel Springer in 2020. Covered Chinese tech companies, AI developments, semiconductor supply chains, and US-China tech
+      competition. Protocol was among the first dedicated tech-policy-focused publications to create a China beat. Yang departed
+      for MIT Technology Review in April 2022 before Protocol shut down entirely in August 2022 when Axel Springer restructured
+      Politico. His Protocol tenure established his specialty: making Chinese tech developments comprehensible to a Western
+      policy-aware audience.'
     publication: protocol
     role: reporter
     source_url: https://talkingbiznews.com/they-talk-biz-news/protocol-hires-yang-to-cover-china-technology/
@@ -4118,29 +4114,22 @@ journalists:
   - beat: China, East Asia technology, AI, social issues
     end: 2024-08
     event_type: hired
-    notes: 'China and East Asia technology reporter at MIT Technology Review. Created and
-      wrote "China Report," a weekly newsletter bridging the Chinese tech industry and
-      English-speaking readers (published every Tuesday). Covered AI regulation, EV industry,
-      semiconductors, social media censorship, LGBTQ rights in China, and the intersection
-      of technology and social issues. KEY STORIES: (1) Investigated Tencent''s secretive
-      customer service center in Shenzhen — traveled there in person to try to unlock his
-      own 15-year-old QQ account, which was suspended in Nov 2021 months after he used it
-      to report on QQ''s censorship of LGBTQ content. (2) Covered Chinese creators using
-      Midjourney to generate retro urban "photography" (early AI image generation trend).
-      (3) Analyzed China''s draft regulation on generative AI (Apr 2023) — one of the
-      earliest detailed English-language breakdowns. (4) TikTok coverage — guest on NüVoices
-      podcast explaining what the West gets wrong about TikTok and ByteDance. Won 2024
-      ASME NEXT Award for Journalists Under 30 (American Society of Magazine Editors) while
-      at MIT TR — same award previously given to Karen Hao (MIT TR, 2022). Also received
-      awards from Asian American Journalists Association (AAJA), Association of LGBTQ
-      Journalists (NLGJA), and Society of Professional Journalists (SPJ). Contributed to
-      MIT TR''s "The Download" daily newsletter. 144+ articles published. Participated in
-      Yale''s "Journalism and Free Speech: The China Stories" program (while at MIT TR).
-      KEY MIGRATION: MIT TR → Wired is a tracked → tracked publication migration. Both
-      publications are in MediaScope''s monitored set, making Yang one of the highest-value
-      natural experiments for DiD analysis of institutional vs individual framing. His China
-      Report newsletter framing at MIT TR (analytical, policy-focused, academic audience)
-      can be directly compared to his Wired output (adversarial-adjacent, broader consumer
+    notes: 'China and East Asia technology reporter at MIT Technology Review. Created and wrote "China Report," a weekly newsletter
+      bridging the Chinese tech industry and English-speaking readers (published every Tuesday). Covered AI regulation, EV
+      industry, semiconductors, social media censorship, LGBTQ rights in China, and the intersection of technology and social
+      issues. KEY STORIES: (1) Investigated Tencent''s secretive customer service center in Shenzhen — traveled there in person
+      to try to unlock his own 15-year-old QQ account, which was suspended in Nov 2021 months after he used it to report on
+      QQ''s censorship of LGBTQ content. (2) Covered Chinese creators using Midjourney to generate retro urban "photography"
+      (early AI image generation trend). (3) Analyzed China''s draft regulation on generative AI (Apr 2023) — one of the earliest
+      detailed English-language breakdowns. (4) TikTok coverage — guest on NüVoices podcast explaining what the West gets
+      wrong about TikTok and ByteDance. Won 2024 ASME NEXT Award for Journalists Under 30 (American Society of Magazine Editors)
+      while at MIT TR — same award previously given to Karen Hao (MIT TR, 2022). Also received awards from Asian American
+      Journalists Association (AAJA), Association of LGBTQ Journalists (NLGJA), and Society of Professional Journalists (SPJ).
+      Contributed to MIT TR''s "The Download" daily newsletter. 144+ articles published. Participated in Yale''s "Journalism
+      and Free Speech: The China Stories" program (while at MIT TR). KEY MIGRATION: MIT TR → Wired is a tracked → tracked
+      publication migration. Both publications are in MediaScope''s monitored set, making Yang one of the highest-value natural
+      experiments for DiD analysis of institutional vs individual framing. His China Report newsletter framing at MIT TR (analytical,
+      policy-focused, academic audience) can be directly compared to his Wired output (adversarial-adjacent, broader consumer
       audience under Drummond''s editorial direction).'
     publication: mit-tech-review
     role: reporter
@@ -4148,33 +4137,25 @@ journalists:
     start: 2022-04
   - beat: China technology, AI, electric vehicles, semiconductors, social media, US-China relations
     event_type: hired
-    notes: 'Senior writer on Wired''s business desk covering China, reporting to Zoë Schiffer
-      (Director, Business & Industry). Hired in Katie Drummond''s continued newsroom expansion
-      as part of a batch of four editorial hires announced simultaneously (alongside Verity
-      Burns, Skye Battles, and Alana Yzola). Based in New York office. Joined WIRED''s
-      business desk — the same desk led by Schiffer that includes Louise Matsakis, Sophie
-      Kleeman, and Maxwell Zeff. Coverage focus: artificial intelligence, electric vehicles,
-      semiconductors, social media, and the broader US-China technology landscape. KEY
-      COVERAGE: (1) DeepSeek analysis — appeared on Slate''s "What Next TBD" podcast (Feb
-      2025) explaining the DeepSeek panic and its implications for Silicon Valley. (2)
-      Tesla in China — Marketplace podcast (Apr 2025) on whether Tesla is "on the outs"
-      in China amid rising tariffs and EV competition. (3) China EV dominance — major piece
-      on how China built a world-leading EV industry (Jun 2025, also narrated as audio via
-      News Over Audio). (4) "How to Cover ''The Chinese Century''" — invited talk at Yale
-      Law School as Poynter Fellow (Mar 25, 2026), co-sponsored by Paul Tsai China Center,
-      discussing how WIRED covers China from afar using official announcements, online
-      sources, and lived experiences. ANALYTICAL SIGNIFICANCE: (1) Yang is WIRED''s ONLY
-      dedicated China correspondent — his framing choices on Chinese tech companies (AI
-      labs, EV makers, chip firms) directly shape WIRED''s institutional narrative on
-      US-China tech competition. (2) His move to Schiffer''s business desk means his China
-      coverage is edited through the same adversarial-leaning editorial pipeline as WIRED''s
-      Meta, Google, and AI startup coverage. (3) The MIT TR → Wired migration is one of
-      only a few tracked-to-tracked publication migrations in the dataset, offering the
-      cleanest possible natural experiment for measuring how institutional editorial culture
-      reshapes a reporter''s framing when the beat stays constant but the publication changes.
-      (4) His Yale Poynter Fellowship talk explicitly describes WIRED''s China reporting
-      methodology, providing rare primary-source insight into institutional editorial
-      decision-making.'
+    notes: 'Senior writer on Wired''s business desk covering China, reporting to Zoë Schiffer (Director, Business & Industry).
+      Hired in Katie Drummond''s continued newsroom expansion as part of a batch of four editorial hires announced simultaneously
+      (alongside Verity Burns, Skye Battles, and Alana Yzola). Based in New York office. Joined WIRED''s business desk — the
+      same desk led by Schiffer that includes Louise Matsakis, Sophie Kleeman, and Maxwell Zeff. Coverage focus: artificial
+      intelligence, electric vehicles, semiconductors, social media, and the broader US-China technology landscape. KEY COVERAGE:
+      (1) DeepSeek analysis — appeared on Slate''s "What Next TBD" podcast (Feb 2025) explaining the DeepSeek panic and its
+      implications for Silicon Valley. (2) Tesla in China — Marketplace podcast (Apr 2025) on whether Tesla is "on the outs"
+      in China amid rising tariffs and EV competition. (3) China EV dominance — major piece on how China built a world-leading
+      EV industry (Jun 2025, also narrated as audio via News Over Audio). (4) "How to Cover ''The Chinese Century''" — invited
+      talk at Yale Law School as Poynter Fellow (Mar 25, 2026), co-sponsored by Paul Tsai China Center, discussing how WIRED
+      covers China from afar using official announcements, online sources, and lived experiences. ANALYTICAL SIGNIFICANCE:
+      (1) Yang is WIRED''s ONLY dedicated China correspondent — his framing choices on Chinese tech companies (AI labs, EV
+      makers, chip firms) directly shape WIRED''s institutional narrative on US-China tech competition. (2) His move to Schiffer''s
+      business desk means his China coverage is edited through the same adversarial-leaning editorial pipeline as WIRED''s
+      Meta, Google, and AI startup coverage. (3) The MIT TR → Wired migration is one of only a few tracked-to-tracked publication
+      migrations in the dataset, offering the cleanest possible natural experiment for measuring how institutional editorial
+      culture reshapes a reporter''s framing when the beat stays constant but the publication changes. (4) His Yale Poynter
+      Fellowship talk explicitly describes WIRED''s China reporting methodology, providing rare primary-source insight into
+      institutional editorial decision-making.'
     publication: wired
     role: senior_writer
     source_url: https://talkingbiznews.com/media-news/wired-hires-four-new-editorial-staffers/
@@ -4186,72 +4167,58 @@ journalists:
   - degree: MA
     field: Journalism and International Affairs
     institution: Columbia University
-    notes: 'Dual-degree MA combining journalism training with international affairs
-      specialization. The international affairs component is atypical for tech journalists
-      and directly informs Yang''s policy-aware framing of US-China tech competition.
-      Columbia''s journalism program is also the institutional home of ASME and the
-      National Magazine Awards.'
+    notes: Dual-degree MA combining journalism training with international affairs specialization. The international affairs
+      component is atypical for tech journalists and directly informs Yang's policy-aware framing of US-China tech competition.
+      Columbia's journalism program is also the institutional home of ASME and the National Magazine Awards.
     source_url: https://talkingbiznews.com/they-talk-biz-news/protocol-hires-yang-to-cover-china-technology/
   - degree: Poynter Fellow
     institution: Yale University
     year: 2026
-    notes: 'Poynter Fellowship in Journalism at Yale (Spring 2026). Gave talk "How to
-      Cover ''The Chinese Century''" at Paul Tsai China Center (Mar 25, 2026). The Poynter
-      Fellowship is one of Yale''s signature journalism programs, inviting working journalists
-      for campus engagement. Previous Poynter Fellows include major figures in journalism.'
+    notes: Poynter Fellowship in Journalism at Yale (Spring 2026). Gave talk "How to Cover 'The Chinese Century'" at Paul
+      Tsai China Center (Mar 25, 2026). The Poynter Fellowship is one of Yale's signature journalism programs, inviting working
+      journalists for campus engagement. Previous Poynter Fellows include major figures in journalism.
     source_url: https://law.yale.edu/yls-today/yale-law-school-events/paul-tsai-china-center-conversation-poynter-fellow-zeyi-yang
   awards:
   - name: ASME NEXT Award for Journalists Under 30
     year: 2024
     organization: American Society of Magazine Editors
-    notes: 'Recognized for work at MIT Technology Review. The ASME NEXT Award honors
-      outstanding achievement by magazine journalists under 30. Karen Hao won the same
-      award in 2022 while also at MIT TR — making this the second consecutive MIT TR
-      China/AI reporter to receive it. Nominees submit portfolios of print and digital
-      content and are judged on accomplishments and potential.'
+    notes: Recognized for work at MIT Technology Review. The ASME NEXT Award honors outstanding achievement by magazine journalists
+      under 30. Karen Hao won the same award in 2022 while also at MIT TR — making this the second consecutive MIT TR China/AI
+      reporter to receive it. Nominees submit portfolios of print and digital content and are judged on accomplishments and
+      potential.
     source_url: https://www.technologyreview.com/supertopic/awards/
   - name: Asian American Journalists Association Award
     organization: AAJA
-    notes: Recognized for coverage at the intersection of tech and Asian/Asian American
-      communities.
+    notes: Recognized for coverage at the intersection of tech and Asian/Asian American communities.
     source_url: https://journalismandfreespeech.sites.yale.edu/speakers/zeyi-yang
   - name: Association of LGBTQ Journalists Award
     organization: NLGJA
-    notes: Recognized for coverage of LGBTQ issues, particularly in the Chinese tech
-      and social context.
+    notes: Recognized for coverage of LGBTQ issues, particularly in the Chinese tech and social context.
     source_url: https://journalismandfreespeech.sites.yale.edu/speakers/zeyi-yang
   - name: Society of Professional Journalists Award
     organization: SPJ
     source_url: https://journalismandfreespeech.sites.yale.edu/speakers/zeyi-yang
   multi_publication: true
   name: Zeyi Yang
-  notes: 'KEY MIGRATION: MIT Technology Review → Wired (tracked → tracked). One of the
-    most analytically significant cross-publication migrations in the dataset because
-    both publications are in MediaScope''s monitored set, and the beat (China technology)
-    remains constant across the move. Career arc: freelance (SCMP, Nikkei, CJR) → Rest of
-    World (reporting fellow) → Protocol (China tech reporter) → MIT Technology Review
-    (China Report newsletter, ASME NEXT Award) → Wired (business desk senior writer under
-    Schiffer). Born in China; Peking University BA, Columbia MA (Journalism & International
-    Affairs). Pronouns he/him. Based in New York. Twitter/X: @ZeyiYang. Bio: "Two cats
-    in a trench coat writing about China and tech for @WIRED." Co-founded Mandarin podcast
-    无所不JI covering LGBTIQ stories — one of the few tech journalists who also operates
-    in Chinese-language media. Also works as translator and fact-checker. Coverage
-    specialties: AI regulation, electric vehicles, semiconductors, social media censorship,
-    LGBTQ rights in China, US-China tech competition, DeepSeek/Chinese AI labs. His personal
-    experience with Tencent QQ account suspension (after covering LGBTQ censorship) gives
-    him direct lived experience of Chinese platform censorship — a rarity among Western
-    tech reporters covering China. ANALYTICAL VALUE: (1) The MIT TR → Wired migration is
-    the cleanest natural experiment available for measuring how Drummond/Schiffer editorial
-    culture reshapes reporter framing when the beat stays constant. (2) His dual-language
-    capability (Mandarin/English) means he can access Chinese primary sources that
-    English-only reporters cannot, giving his framing choices unusual upstream influence —
-    when Yang characterizes a Chinese government document or WeChat post for WIRED readers,
-    that characterization becomes the framing baseline for other English-language outlets.
-    (3) His position on Schiffer''s business desk (alongside Matsakis, Kleeman, Zeff)
-    means his China coverage passes through the same editorial pipeline as WIRED''s most
-    adversarial Big Tech coverage. (4) His ASME NEXT Award and Yale Poynter Fellowship
-    signal rising institutional prestige — his framing influence will likely increase as
-    he takes on more prominent assignments.'
+  notes: 'KEY MIGRATION: MIT Technology Review → Wired (tracked → tracked). One of the most analytically significant cross-publication
+    migrations in the dataset because both publications are in MediaScope''s monitored set, and the beat (China technology)
+    remains constant across the move. Career arc: freelance (SCMP, Nikkei, CJR) → Rest of World (reporting fellow) → Protocol
+    (China tech reporter) → MIT Technology Review (China Report newsletter, ASME NEXT Award) → Wired (business desk senior
+    writer under Schiffer). Born in China; Peking University BA, Columbia MA (Journalism & International Affairs). Pronouns
+    he/him. Based in New York. Twitter/X: @ZeyiYang. Bio: "Two cats in a trench coat writing about China and tech for @WIRED."
+    Co-founded Mandarin podcast 无所不JI covering LGBTIQ stories — one of the few tech journalists who also operates in Chinese-language
+    media. Also works as translator and fact-checker. Coverage specialties: AI regulation, electric vehicles, semiconductors,
+    social media censorship, LGBTQ rights in China, US-China tech competition, DeepSeek/Chinese AI labs. His personal experience
+    with Tencent QQ account suspension (after covering LGBTQ censorship) gives him direct lived experience of Chinese platform
+    censorship — a rarity among Western tech reporters covering China. ANALYTICAL VALUE: (1) The MIT TR → Wired migration
+    is the cleanest natural experiment available for measuring how Drummond/Schiffer editorial culture reshapes reporter framing
+    when the beat stays constant. (2) His dual-language capability (Mandarin/English) means he can access Chinese primary
+    sources that English-only reporters cannot, giving his framing choices unusual upstream influence — when Yang characterizes
+    a Chinese government document or WeChat post for WIRED readers, that characterization becomes the framing baseline for
+    other English-language outlets. (3) His position on Schiffer''s business desk (alongside Matsakis, Kleeman, Zeff) means
+    his China coverage passes through the same editorial pipeline as WIRED''s most adversarial Big Tech coverage. (4) His
+    ASME NEXT Award and Yale Poynter Fellowship signal rising institutional prestige — his framing influence will likely increase
+    as he takes on more prominent assignments.'
   source_urls:
   - https://talkingbiznews.com/they-talk-biz-news/mit-technology-review-hires-yang-to-cover-china-and-east-asia/
   - https://law.yale.edu/yls-today/yale-law-school-events/paul-tsai-china-center-conversation-poynter-fellow-zeyi-yang
@@ -5745,8 +5712,11 @@ journalists:
   - beat: politics, policy
     end: 2019-11
     event_type: hired
-    notes: Editor, then executive editor. Progressive policy magazine. Covered intersection of politics and policy. Columbia
-      BA (2005-2009), Yale JD (2012-2015). Legal training shapes regulatory analysis lens.
+    notes: 'Editor, then executive editor. Progressive policy magazine focused on wonkish subjects mainstream press overlooked.
+      Cover story: "The Democrats Confront Monopoly" (Nov 2017). Also: "The Socialist Network" (Jul 2018), "The First Amendment
+      vs. Democracy" (Apr 2019), "Planet Earth Gets a Ground Game" (Apr 2018). Part of magazine''s "two-year stint" model
+      for up-and-coming journalists. Education: Columbia BA (2005-2009), Yale Law School JD (2012-2015) — legal training shapes
+      regulatory analysis lens.'
     publication: washington-monthly
     role: editor
     source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-edelman-as-a-senior-editor-for-economics-coverage/
@@ -5754,39 +5724,55 @@ journalists:
   - beat: tech policy, politics, law
     end: 2022-09
     event_type: hired
-    notes: Politics writer covering tech-politics-law intersection. Section 230 expert. Covered content moderation, disinformation,
-      social media censorship. Appeared on podcasts as Wired's tech policy voice. Overlapped with Nicholas Thompson (EIC)
-      and early Lichfield era. Left for FTC under Chair Lina Khan.
+    notes: 'Politics writer (NOT senior writer — all sources consistently say "politics writer") covering tech-politics-law
+      intersection. Section 230 expert. Cover story: "Paradise at the Crypto Arcade: Inside the Web3 Revolution" (May 2022).
+      Key pieces: "Why Don''t We Just Ban Targeted Advertising?" (Jan 2020), "Elon Musk Is Right About Twitter" (Apr 2022),
+      "The American Innovation and Choice Online Act Scares Big Tech" (Apr 2022). Appeared on Uncanny Valley/Gadget Lab and
+      Priv8 podcasts. Overlapped with Nicholas Thompson (EIC, departed Dec 2020) and Gideon Lichfield (EIC from Feb 2021).
+      Left for FTC under Chair Lina Khan — rare journalist-to-government transition.'
     publication: wired
-    role: senior_writer
+    role: politics_writer
     source_url: https://www.wired.com/author/gilad-edelman/
     start: 2019-11
   - beat: government communications
     end: 2023-04
     event_type: hired
-    notes: Communications strategist at Federal Trade Commission under Chair Lina Khan. Brief government stint (~7 months).
-      Rare journalist-to-regulator move gives insider perspective on tech enforcement.
+    notes: Communications strategist at Federal Trade Commission under Chair Lina Khan. Brief government stint (~7 months,
+      Sep 2022 - Apr 2023). Rare journalist → regulator → journalist career arc — one of the only tech policy writers to serve
+      inside a major enforcement agency mid-career. Gives insider perspective on antitrust and tech enforcement processes.
+      Self-described as "briefly @FTC" (BuzzSumo/Twitter bio).
     publication: ftc
     role: communications_strategist
-    source_url: https://theorg.com/org/the-atlantic/people/gilad-edelman
+    source_url: https://theorg.com/org/the-atlantic/org-chart/gilad-edelman
     start: 2022-09
   - beat: economics, political economy, tech policy
     event_type: hired
-    notes: 'Senior editor expanding economics and political economy coverage. Also contributes to Slate. Recent articles:
-      "Will Google Ever Have to Pay for Its Sins?" (Jan 2026), "Guilt by Association With Epstein" (Feb 2026), "The Rise of
-      Libertarian Authoritarianism" (Jan 2026). 307+ total articles across career per JournalistHunt. Key question: does Atlantic''s
-      Emerson Collective ownership shape coverage differently than Condé Nast?'
+    notes: 'Senior editor expanding economics and political economy coverage. Reports alongside Tim Marchman (Director, Science)
+      and Mike Calore (Director, Consumer Tech & Culture) under Executive Editor Brian Barrett. Also contributes to Slate
+      (lexicon_valley). Recent articles: "Will Google Ever Have to Pay for Its Sins?" (Jan 2026), "Guilt by Association With
+      Epstein" (Feb 2026), "The Rise of Libertarian Authoritarianism" (Jan 2026), "You Don''t Have to Snore" (Mar 2026). 307+
+      total articles across career per JournalistHunt. Key DiD question: does Atlantic''s Emerson Collective ownership shape
+      coverage differently than Condé Nast (Wired)?'
     publication: atlantic
     role: senior_editor
     source_url: https://talkingbiznews.com/they-re-hiring/the-atlantic-hires-edelman-as-a-senior-editor-for-economics-coverage/
     start: 2023-04
   name: Gilad Edelman
-  notes: 'Key migration: Washington Monthly → Wired → FTC → Atlantic. Yale JD (2012-2015) brings legal/regulatory lens to
-    tech policy coverage. Rare government-to-journalism-to-government-to-journalism career arc. At Wired, covered intersection
-    of tech, politics, and law — Section 230, content moderation, disinformation. FTC stint (Sep 2022) as communications strategist
-    under Chair Lina Khan gave insider regulatory perspective. Now senior editor at Atlantic covering economics and political
-    economy with tech policy focus. Covers Google antitrust, Epstein associations, libertarian authoritarianism. Critical
-    DiD test case: did his framing shift when moving from Condé Nast (Wired) to Emerson Collective (Atlantic)?'
+  notes: 'Key migration: Washington Monthly → Wired → FTC → Atlantic. Columbia BA (2005-2009), Yale Law School JD (2012-2015)
+    brings legal/regulatory lens to tech policy coverage. Rare government-to-journalism-to-government-to-journalism career
+    arc — one of very few tech policy writers to serve inside the FTC mid-career (under Chair Lina Khan, Sep 2022 - Apr 2023).
+    At Washington Monthly, wrote cover stories on monopoly and political economy. At Wired (2019-2022), covered intersection
+    of tech, politics, and law — Section 230, content moderation, disinformation, crypto/web3. Wired cover story: "Paradise
+    at the Crypto Arcade" (May 2022). Now senior editor at Atlantic covering economics and political economy with tech policy
+    focus. Covers Google antitrust, Epstein associations, libertarian authoritarianism. Critical DiD test case: did his framing
+    shift when moving from Condé Nast (Wired) to Emerson Collective (Atlantic), with a government interlude?'
+  multi_publication: true
+  source_urls:
+  - https://theorg.com/org/the-atlantic/org-chart/gilad-edelman
+  - https://talkingbiznews.com/tag/the-atlantic/page/3/
+  - https://muckrack.com/gilad-edelman
+  - https://buzzsumo.com/journalist/gilad-edelman-148776732/
+  - https://blog.orchid.com/wireds-gilad-edelman-on-the-role-of-social-media-in-propaganda/
 - career:
   - beat: state government, general assignment
     end: 2021-10
@@ -6245,12 +6231,21 @@ journalists:
     have been Turton''s editor, creating a mentorship lineage that feeds into the Drummond orbit. His investigations oversight
     means any cross-desk investigative story (including Meta coverage) passes through his editorial judgment.'
 - career:
+  - publication: palo-alto-daily-news
+    role: reporter
+    beat: local news
+    event_type: hired
+    notes: Local news reporter. First journalism role after call-center tech support job in Columbus, Ohio. Pre-dates his
+      tech coverage era.
+    source_url: https://talkingbiznews.com/media-news/oremus-to-co-write-tech-202-newsletter-at-washington-post/
   - beat: technology
     end: 2020-06
     event_type: hired
-    notes: 'Senior technology writer. Co-hosted "If Then" podcast. Covered tech since ~2012. Nominated for National Magazine
-      Award 2012. Also freelanced for NYT and Atlantic during this period. Served on Columbia Journalism School board of visitors.
-      Earlier career: local news reporter at Palo Alto Daily News, call-center tech support.'
+    notes: 'Senior technology writer. Co-hosted "If Then" podcast with April Glaser (Slate + Future Tense collaboration with
+      Arizona State University and New America). National Magazine Award nomination in 2012 for interactive feature visualizing
+      the US presidential campaign as a literal horse race. Also freelanced for NYT and Atlantic during this period. Served
+      on Columbia University Journalism School board of visitors. Beat: platform governance, social media algorithms, online
+      speech. Grew up in Columbus, Ohio. First full-time job was call-center tech support agent (dial-up troubleshooting).'
     publication: slate
     role: senior_writer
     source_url: https://slate.com/author/will-oremus
@@ -6258,38 +6253,57 @@ journalists:
   - beat: technology, AI
     end: 2021-06
     event_type: hired
-    notes: Senior writer at OneZero (Medium's science and tech publication). Wrote "Pattern Matching" weekly newsletter.
+    notes: Senior writer at OneZero (Medium's science and tech publication). Wrote "Pattern Matching" weekly newsletter covering
+      platforms, online speech, and tech policy. Covered Nextdoor's pandemic-era rise. Accepted buyout from Medium in March
+      2021 when OneZero was shut down.
     publication: onezero-medium
     role: senior_writer
-    source_url: https://medium.com/@WillOremus
+    source_url: https://mediagazer.com/210325/p13
     start: 2020-06
   - beat: technology, AI, online speech
     end: 2026-03
     event_type: hired
-    notes: Technology news analysis writer. Part of major WaPo tech coverage expansion. Co-wrote "Tech 202" newsletter with
-      Cristiano Lima-Strong. Covered AI, online speech, conspiracy theories, AI copyright disputes (Disney/Midjourney). Under
-      deputy biz editor Zachary Goldfarb and tech editor Christina Passariello. Departed amid WaPo's Feb 2026 layoffs (~1/3
-      of staff), though unclear if laid off or departed voluntarily.
+    notes: 'Technology news analysis writer — a new role created as part of major WaPo tech coverage expansion (team grew
+      to 35 reporters/editors/video journalists by 2021). Started June 21, 2021. Co-wrote "Tech 202" newsletter with Cristiano
+      Lima-Strong. Under deputy business editor Zachary Goldfarb and technology editor Christina Passariello. Notable work:
+      broke news about AI industry scanning millions of books, profiled policeman jailed for Charlie Kirk meme, covered conspiracy
+      theory proliferation after Hurricane Helene in North Carolina. Survived Feb 2026 WaPo layoffs (~300+ journalists cut,
+      ~1/3 of staff) but departed voluntarily, part of broader WaPo talent drain to Atlantic, NOTUS, and other outlets.'
     publication: washington-post
     role: technology_reporter
-    source_url: https://www.washingtonpost.com/people/will-oremus/
+    source_url: https://talkingbiznews.com/they-talk-biz-news/washington-post-hires-oremus-as-tech-news-analysis-reporter/
     start: 2021-06-21
   - beat: online speech, AI, information economy
     event_type: hired
-    notes: 'Tech reporter covering "online speech, the information economy and AI weirdness" (per Bluesky bio, 78.1K followers).
-      KEY MIGRATION: WaPo (Bezos-owned, unstable post-layoffs) → Atlantic (Emerson Collective-owned, profitable under CEO
-      Nicholas Thompson — himself a former Wired EIC). Thompson''s presence at Atlantic creates a Condé Nast editorial culture
-      bridge. Tests: (1) Does Oremus''s explanatory/analysis style shift toward Atlantic''s longer-form essay voice? (2) Does
-      coverage of Meta/AI carry different framing under Emerson Collective vs Bezos ownership? Education: BA Philosophy (Stanford),
-      MA Politics (Columbia).'
+    notes: 'Tech reporter. Part of Atlantic''s massive ~30-person hiring wave from Washington Post (alongside Ashley Parker,
+      Michael Scherer, Shane Harris, Sally Jenkins, Will Viser, Kelsey Ables, Janay Kingsberry, and others). Announced alongside
+      Kelsey Ables and Janay Kingsberry in late March / early April 2026. EIC Jeffrey Goldberg explicitly noted WaPo''s "existential
+      crisis" created hiring opportunities; CEO Nicholas Thompson (former Wired EIC 2017-2022) described Atlantic as "having
+      a very good moment." KEY MIGRATION for DiD: WaPo (Bezos-owned, post-layoff instability) → Atlantic (Emerson Collective-owned,
+      profitable, 200+ newsroom staffers). Tests: (1) Does Oremus''s explanatory analysis style shift toward Atlantic''s essay
+      voice? (2) Does Meta/AI coverage carry different framing under Emerson Collective vs Bezos ownership? Education: BA
+      Philosophy (Stanford), MA Politics (Columbia).'
     publication: atlantic
     role: tech_reporter
-    source_url: https://www.theatlantic.com/author/will-oremus/
+    source_url: https://talkingbiznews.com/media-news/the-atlantic-hires-oremus-to-cover-tech/
     start: 2026-04
   name: Will Oremus
-  notes: 'Key migration: Washington Post → Atlantic. Analysis-oriented tech reporter who crossed from Bezos-owned WaPo to
-    Emerson Collective-owned Atlantic amid WaPo instability. Tests whether his measured, explanatory framing adapts to Atlantic''s
-    institutional voice under Thompson/Goldberg.'
+  notes: 'Key migration: Palo Alto Daily News → Slate → OneZero/Medium → Washington Post → Atlantic. Analysis-oriented tech
+    reporter who crossed from Bezos-owned WaPo to Emerson Collective-owned Atlantic amid WaPo''s Feb 2026 layoff crisis (~300+
+    staff cut). BA Philosophy (Stanford), MA Politics (Columbia). Grew up in Columbus, Ohio; first job was call-center tech
+    support troubleshooting dial-up connections. At Slate, co-hosted "If Then" podcast with April Glaser. National Magazine
+    Award nominee (2012). At WaPo, co-wrote "Tech 202" newsletter. Part of the largest single-publication talent drain in
+    recent media history — Atlantic hired ~30 WaPo journalists in 2025-2026 under CEO Nicholas Thompson (ex-Wired EIC). Tests
+    whether his measured, explanatory framing adapts to Atlantic''s institutional voice and whether tech coverage shifts under
+    different ownership (Bezos → Emerson Collective). Also freelanced for NYT and Atlantic before joining full-time. Served
+    on Columbia University Journalism School board of visitors.'
+  multi_publication: true
+  source_urls:
+  - https://talkingbiznews.com/they-talk-biz-news/washington-post-hires-oremus-as-tech-news-analysis-reporter/
+  - https://talkingbiznews.com/media-news/the-atlantic-hires-oremus-to-cover-tech/
+  - https://talkingbiznews.com/media-news/oremus-to-co-write-tech-202-newsletter-at-washington-post/
+  - https://mediagazer.com/210325/p13
+  - https://www.thewrap.com/media-platforms/journalism/washington-post-dc-media-changes-notus-atlantic/
 - career:
   - beat: tech aggregation
     end: 2012-06
