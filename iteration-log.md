@@ -2,6 +2,55 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-11 22:00 PT — Type B: Journalist/Publication Research
+
+**Target:** Zeyi Yang — MIT Technology Review → Wired (tracked → tracked migration)
+
+### Profile Expansion (15 lines → 175 lines)
+
+**Why Zeyi Yang:** One of only a handful of journalists who migrated between two tracked publications (MIT TR → Wired) while keeping the same beat (China technology). This makes him the cleanest possible natural experiment for difference-in-differences analysis of institutional vs individual framing effects.
+
+### Career Entries Added/Expanded (4 detailed entries)
+
+1. **Rest of World (Jun 2020 – Jan 2021):** Reporting fellow. Covered startups, entrepreneurs in non-Western markets. Freelanced concurrently for SCMP, Nikkei, CJR, Atlas Obscura. Brokered Wuhan interviews during COVID-19.
+
+2. **Protocol (Jan 2021 – Apr 2022):** Reporter on China tech beat. Left for MIT TR before Protocol shut down (Aug 2022). Established specialty: making Chinese tech comprehensible to Western policy-aware audiences.
+
+3. **MIT Technology Review (Apr 2022 – Aug 2024):** China/East Asia reporter. Created weekly "China Report" newsletter. KEY STORIES: Tencent QQ customer service center (personal account suspended after LGBTQ censorship reporting), Chinese AI-generated retro photography, China generative AI regulation analysis. Won 2024 ASME NEXT Award for Journalists Under 30. 144+ articles. Participated in Yale "Journalism and Free Speech: The China Stories" program.
+
+4. **Wired (Aug 2024 – present):** Senior writer on business desk under Zoë Schiffer. Hired in batch of 4 announced by Katie Drummond (alongside Verity Burns, Skye Battles, Alana Yzola). Based in New York. Covers AI, EVs, semiconductors, social media, US-China tech competition. KEY COVERAGE: DeepSeek analysis (Slate podcast Feb 2025), Tesla in China (Marketplace Apr 2025), China EV dominance (Jun 2025). Yale Poynter Fellow (Mar 2026) — talk "How to Cover 'The Chinese Century'" at Paul Tsai China Center.
+
+### Education & Awards Added
+- **Education:** Peking University BA, Columbia MA (Journalism & International Affairs), Yale Poynter Fellowship 2026
+- **Awards:** ASME NEXT 2024 (same award Karen Hao won 2022 at MIT TR), AAJA, NLGJA, SPJ — all with source URLs
+
+### Date Corrections
+- **Wired hire date:** Corrected from 2025-01 to 2024-08 (TBN article confirmed ~2 years before Jul 2026 via archive pagination)
+- **MIT TR departure date:** Corrected from 2025-01 to 2024-08 (consistent with Wired hire)
+- Updated both `journalists.yaml` and `editorial_changes.yaml`
+
+### Source URLs Added (8 total)
+- TBN hiring announcements (Protocol, MIT TR, Wired four staffers)
+- MIT TR awards page (ASME NEXT confirmation)
+- Yale Law School event page (Poynter Fellowship)
+- Yale J&FS speaker bio page
+- Wired author page
+- Muck Rack profile
+
+### Analytical Notes
+- Only tracked-to-tracked migration where beat stays constant (China tech)
+- Only tracked journalist with Mandarin primary-source capability (Peking U BA + podcast co-founder)
+- Reports through Schiffer's business desk editorial pipeline (same as Meta/Google coverage)
+- Personal experience with Chinese platform censorship (QQ suspension after LGBTQ coverage)
+- "Two cats in a trench coat" — informal Muck Rack bio signals indie-journalist sensibility despite institutional role
+- Rising institutional prestige (ASME NEXT + Yale Poynter) means increasing framing influence
+
+### Test Suite
+2,272 tests passing (all existing — no code changes, profile data only).
+
+### Commit
+- `0e34669`: Type B — 175 insertions, 23 deletions across `journalists.yaml` and `editorial_changes.yaml`. Pushed to GitHub.
+
 ## 2026-07-11 15:00 PT — Type A: Article Deep Dive
 
 **Article:** "The many controversies of Meta's AI glasses" — Fast Company, July 10, 2026
