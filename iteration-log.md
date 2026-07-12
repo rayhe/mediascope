@@ -2,6 +2,62 @@
 
 Tracks every improvement cycle run on the toolkit.
 
+## 2026-07-11 23:00 PT — Type C: Ownership & Funding Deep Dive (NYT)
+
+**Focus:** NYT profile — sanctions motion detail expansion from Bloomberg Law full text, $28M litigation costs first disclosure, Cox Communications SCOTUS case citation correction, stock/market cap refresh.
+
+### Key Findings
+
+#### 1. $28M+ Cumulative Litigation Costs (First Disclosure)
+- NYT has spent **$28M+** fighting AI companies in court (AP/Fast Company, Jul 10-11, citing "filings with financial regulators")
+- Includes BOTH OpenAI/Microsoft MDL and separate Perplexity AI lawsuit
+- For context: Q1 alone was $4.4M pretax (per 10-K); $28M cumulative confirms acceleration
+- **Analytical significance:** $28M ≈ 2.4% of FY2025 operating profit ($431.6M), roughly equals the Amazon AI licensing deal (~$20-25M/yr). NYT is spending more on AI litigation than it earns from AI licensing — a strategic bet on precedent, not a profit center
+
+#### 2. Sanctions Motion Detail Expansion (Bloomberg Law full text)
+- **Expert witness correction:** Bloomberg Law confirms it was an "OpenAI expert witness" who testified in April deposition, not an "employee." Profile updated
+- **Full law firm rosters:**
+  - Plaintiffs: Susman Godfrey, Rothwell Figg Ernst & Manbeck, Loevy & Loevy, Klaris Law, Ruttenberg IP Law
+  - OpenAI defense: Latham & Watkins, Morrison & Foerster, Keker Van Nest & Peters
+- **Specific remedies sought (5 items):**
+  (i) Attorneys' fees + expert fees + costs
+  (ii) Prohibit OpenAI from relying on output logs "for any purpose"
+  (iii) Adverse inference: court finding of "substantial and systematic grounding on and regurgitation" of copyrighted material
+  (iv) OpenAI prohibited from arguing against that finding
+  (v) Jury instruction on findings "and their binding effects"
+- **Preservation order violation:** Times accused OpenAI of violating court order to preserve materials
+- **20M log sample detail:** First production contained "so many redactions the court called them 'unusable'"; second production with fewer redactions disclosed one week before end of discovery
+- **Extended Crosby quote:** Added full two-paragraph statement re: "concealing that it had already done such searches"
+- **Extended Pusateri response:** Added "We'll continue defending our users' privacy and the long-established principles of fair use"
+
+#### 3. Cox Communications SCOTUS Case Citation Correction
+- **Corrected case name:** Was "Cox Communications v. BMG Rights" → Now "Cox Communications, Inc. v. Sony Music Entertainment"
+- **Added:** Justice Thomas authorship, full holding language ("contributory liability can be shown only if the party induced the infringement" OR product "tailored to infringement" with no "commercially significant non-infringing uses"), vacated $1B judgment, DMCA notice-and-takedown not basis for contributory liability
+- **Source:** Mondaq analysis (Mar 25, 2026), Ballard Spahr analysis, Bloomberg Tax
+- Updated in both the litigation timeline section AND the known_conflicts summary
+
+#### 4. Stock/Market Cap Refresh
+- **NYT stock:** $74.96 (Jul 11 close), up from $73.85 (Jul 2), +1.5%
+- **Market cap:** ~$11.87B (up from ~$11.52B)
+- **Beta:** 0.94 (was 0.97)
+- **TTM financials added:** Revenue $2.8B, net income $344M, operating cash flow $584.5M, net margin 12.2%
+- **Q2 2026 earnings:** Confirmed Aug 5, 2026 (MarketBeat)
+
+### Profile Changes (1 file, +89/−30 lines)
+- `profiles/nytimes.yaml`: 2,113 → 2,172 lines (+59 net)
+
+### Sources (7 new URLs added)
+- Bloomberg Law: sanctions motion full text (Jul 9 filing)
+- Fast Company/AP: $28M litigation costs disclosure (Jul 10-11)
+- Mondaq: Cox Communications SCOTUS analysis
+- Reuters, MarketBeat, Finnhub, StockTitan: financial data
+
+### Test Suite
+2,272 tests passing (all existing — no code changes, profile data only).
+
+### Commit
+- `8cdb156`: Type C — 89 insertions, 30 deletions in `nytimes.yaml`. Pushed to GitHub.
+
 ## 2026-07-11 22:00 PT — Type B: Journalist/Publication Research
 
 **Target:** Zeyi Yang — MIT Technology Review → Wired (tracked → tracked migration)
