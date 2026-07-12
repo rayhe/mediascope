@@ -1495,6 +1495,23 @@ _RHETORICAL_QUESTION_PATTERNS: list[re.Pattern] = [
         r"(?:supposed to|meant to|expected to|going to)\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # ---------------------------------------------------------------------------
+    # Tag-question rhetorical device — colloquial editorial aside where the
+    # author makes a statement then appends a conversational tag that assumes
+    # the reader's agreement.  Pattern: "[statement], anyone?" or
+    # "[statement], right?" or "[statement], no?"
+    #
+    # Discovered in iPhone in Canada EU DSA article (Jul 10 2026):
+    # "Endless dopamine hits at 1am anyone?" — the "anyone?" tag converts a
+    # factual description into a shared-experience appeal, editorialising
+    # without attribution.  Distinct from emphatic rhetorical questions
+    # (which use interrogative word order) and speculative questions (which
+    # use "is it possible" constructions).
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r".{10,100}?\b(?:anyone|right|no|amirite)\s*\?\s*$",
+        re.IGNORECASE | re.MULTILINE,
+    ),
 ]
 
 _DEVICE_PATTERNS["rhetorical_question"] = _RHETORICAL_QUESTION_PATTERNS

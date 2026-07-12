@@ -676,6 +676,23 @@ def classify_topic(
         _window_end = m.end()
         _superint_org_spans.add((_window_start, _window_end))
 
+    # ── Title/role suppression for "executive_behavior" topic ──
+    # The keyword "executive" appears in job titles like "Executive
+    # Vice-President", "Executive Editor", "Executive Director" etc.
+    # These are proper-noun titles, not indicators of executive behavior
+    # coverage.  Suppress matches that fall inside title contexts.
+    # Discovered: iPhone in Canada EU DSA article (Jul 10, 2026) scored
+    # executive_behavior at 0.11 solely from "Executive Vice-President"
+    # (Henna Virkkunen's title).
+    _EXECUTIVE_TITLE_RE = re.compile(
+        r"\bExecutive\s+(?:Vice[- ]President|Editor|Director|Producer|"
+        r"Chairman|Secretary|Officer|Advisor|Counsel)\b",
+        re.IGNORECASE,
+    )
+    _exec_title_spans: set[tuple[int, int]] = set()
+    for m in _EXECUTIVE_TITLE_RE.finditer(text):
+        _exec_title_spans.add((m.start(), m.end()))
+
     for topic, patterns in topic_patterns.items():
         matched_keywords: list[str] = []
         total_matches = 0
@@ -715,6 +732,23 @@ def classify_topic(
                     ]
                     if not literal_hits:
                         continue  # all matches are org-name references
+                    matched_keywords.append(keyword)
+                    total_matches += len(literal_hits)
+                # For the executive_behavior topic, discount matches
+                # of "executive" that appear inside job-title contexts
+                # like "Executive Vice-President" or "Executive Editor".
+                elif (topic == "executive_behavior"
+                      and keyword.lower() == "executive"
+                      and _exec_title_spans):
+                    literal_hits = [
+                        h for h in hits
+                        if not any(
+                            s <= h.start() <= e
+                            for s, e in _exec_title_spans
+                        )
+                    ]
+                    if not literal_hits:
+                        continue  # all matches are title references
                     matched_keywords.append(keyword)
                     total_matches += len(literal_hits)
                 else:

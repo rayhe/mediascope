@@ -1,5 +1,5 @@
 # Same-Event Comparison: EU DSA "Addictive Design" Ruling (July 10, 2026)
-## WSJ vs Reuters vs CNN
+## WSJ vs Reuters vs CNN vs iPhone in Canada
 
 **Event:** European Commission preliminary finding that Meta's Facebook and Instagram violate the Digital Services Act through "addictive design" features (autoplay, infinite scroll, personalized recommendations).
 
@@ -9,6 +9,7 @@
 1. **WSJ** — "Meta Failed to Protect Users From Addictive Apps, EU Says" (Kim Mackrael, Brussels)
 2. **Reuters** — "EU tells Instagram, Facebook to change addictive features or risk fines"
 3. **CNN** — "Facebook and Instagram's 'addictive design' may violate European law, EU Commission finds"
+4. **iPhone in Canada** — "The EU Says Instagram Is Built to Addict You. Now Meta Has to Change It."
 
 ---
 
@@ -19,8 +20,9 @@
 | **WSJ** | "Meta Failed to Protect Users From Addictive Apps, EU Says" | **Failure attribution** — active verb "failed," Meta as subject failing to protect | High — implies moral/systemic failure |
 | **Reuters** | "EU tells Instagram, Facebook to change addictive features or risk fines" | **Regulatory command** — EU as subject issuing directives; consequence-focused | Medium — transactional, procedural |
 | **CNN** | "Facebook and Instagram's 'addictive design' may violate European law, EU Commission finds" | **Legal finding** — passive/tentative "may violate"; hedging with "finds" | Low-Medium — conditional, preliminary |
+| **iPhone in Canada** | "The EU Says Instagram Is Built to Addict You. Now Meta Has to Change It." | **Direct address** — second person "You," imperative "Has to Change," causative certainty | High — declarative, presents ruling as fait accompli |
 
-**Analysis:** The headline gradient runs from WSJ (most assertive, most negative toward Meta) through Reuters (neutral/procedural) to CNN (most hedged). WSJ's "Failed to Protect" is a loaded construction — it presupposes a duty to protect and declares Meta didn't meet it. Reuters focuses on the regulatory action itself. CNN preserves maximum optionality with "may violate."
+**Analysis:** The headline gradient runs from WSJ (most assertive, most negative toward Meta) through iPhone in Canada (declarative, second-person direct) through Reuters (neutral/procedural) to CNN (most hedged). WSJ's "Failed to Protect" is a loaded construction — it presupposes a duty to protect and declares Meta didn't meet it. iPhone in Canada's "Built to Addict You" is equally assertive but uses direct address to make it personal. Reuters focuses on the regulatory action itself. CNN preserves maximum optionality with "may violate."
 
 This is an important framing pattern: **same set of facts, same day, three different severity levels in headlines.** The facts support all three framings, but the editorial choice about which framing to lead with reveals each outlet's default posture.
 
@@ -33,6 +35,7 @@ This is an important framing pattern: **same set of facts, same day, three diffe
 | **WSJ** | ~45% | Mid-article | Moderate: "disagrees," "doesn't accurately take into account," Teen Accounts reference |
 | **Reuters** | ~50% | Mid-article | Full: same quote + Ben Walters named + "continue to engage constructively" |
 | **CNN** | ~38% | Upper-mid | Full: same quote + "share the European Commission's commitment" + Teen Accounts detail |
+| **iPhone in Canada** | N/A | **None** | **No Meta defense quote included** — only outlet in cluster with zero counterpoint |
 
 **Analysis:** All three publications place Meta's defense in the upper half of the article — significantly earlier than the **delayed_defense** 65% threshold. None of these articles buries Meta's response. CNN actually gives Meta its defense *earliest*, which is somewhat surprising given CNN's general editorial posture on tech accountability.
 
@@ -50,6 +53,7 @@ Meta's statement is identical across all three outlets (Ben Walters quote), conf
 | **WSJ** | ✅ California + New Mexico verdicts | ❌ | ❌ | ❌ | ❌ |
 | **Reuters** | ✅ 29-state AG case, failed dismissal | ✅ February TikTok charges | ❌ | ❌ | ✅ Von der Leyen teen ban announcement |
 | **CNN** | ✅ Two US jury verdicts + multiple countries moving on bans | ❌ | ✅ | ✅ NYU/Northeastern safety features report (66% non-functional) | ❌ |
+| **iPhone in Canada** | ❌ | ❌ | ❌ | ❌ | ✅ Canadian social media ban for under-16 |
 
 **Analysis:** Each publication contextualizes the EU ruling differently:
 
@@ -68,6 +72,7 @@ Meta's statement is identical across all three outlets (Ben Walters quote), conf
 | **WSJ** | "up to 6% of its global revenue for each platform" | Per-platform |
 | **Reuters** | "up to 6% of its global annual turnover" | Single percentage |
 | **CNN** | "as much as 6% of its global revenue — which could total more than $12 billion" | Percentage + absolute dollar amount |
+| **iPhone in Canada** | "up to 6% of the total worldwide annual turnover of the provider" | Single percentage — verbatim Commission language |
 
 **Analysis:** CNN is the only outlet to translate the percentage into an absolute dollar amount ($12B+). This is a **scale_magnitude** framing choice: "$12 billion" hits harder than "6% of revenue" even though they describe the same thing. WSJ's "for each platform" note is the most legally precise. Reuters provides the cleanest regulatory language.
 
@@ -91,6 +96,12 @@ Meta's statement is identical across all three outlets (Ben Walters quote), conf
 - **Age verification doubt:** Parenthetical noting Meta uses AI to detect age lying "but it's not clear how well the technology works"
 - **Historical context:** Full Teen Accounts origin story (2024, years of criticism)
 - **autopilot_metaphor:** Quotes commission's "shift the brain into 'autopilot mode'" without challenge
+
+### iPhone in Canada-only:
+- **Tag-question rhetorical:** "Endless dopamine hits at 1am anyone?" — sarcastic editorial aside breaking from paraphrased findings
+- **No Meta defense:** Only outlet in cluster with zero counterpoint from Meta
+- **Canadian policy bridge:** Closes with domestic Canadian social media ban for under-16, framing EU action as global trend
+- **Second-person address:** "you use every day," "your feed," "keeping you glued" — collapses journalistic distance
 
 ---
 
@@ -124,14 +135,14 @@ Reuters' exclusive forward look to von der Leyen's September teen ban announceme
 
 ## 8. Summary Table
 
-| Dimension | WSJ | Reuters | CNN |
-|-----------|-----|---------|-----|
-| Headline severity | High | Medium | Low-Medium |
-| Defense positioning | Mid-article | Mid-article | Upper-mid |
-| Contextual scope | US legal + EU geopolitics | EU regulatory arc + policy trajectory | Global child safety + academic research |
-| Fine quantification | Per-platform % | Single % | % + $12B dollar amount |
-| Tone | -0.27 | -0.28 | -0.40 |
-| Unique value | Geopolitical framing | Exclusive sources + policy forward look | Independent academic evidence |
+| Dimension | WSJ | Reuters | CNN | iPhone in Canada |
+|-----------|-----|---------|-----|-----------------|
+| Headline severity | High | Medium | Low-Medium | High (direct address) |
+| Defense positioning | Mid-article | Mid-article | Upper-mid | **None** |
+| Contextual scope | US legal + EU geopolitics | EU regulatory arc + policy trajectory | Global child safety + academic research | Minimal — Canadian ban only |
+| Fine quantification | Per-platform % | Single % | % + $12B dollar amount | Single % (Commission verbatim) |
+| Tone | -0.27 | -0.28 | -0.40 | -0.287 |
+| Unique value | Geopolitical framing | Exclusive sources + policy forward look | Independent academic evidence | Editorial voice + no counterpoint |
 
 **Cluster ID:** 13 (same-event comparison, Tier 1 — all three articles published same day on same event with meaningfully different framing choices)
 

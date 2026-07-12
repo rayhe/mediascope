@@ -1,0 +1,24 @@
+Title: The EU Says Instagram Is Built to Addict You. Now Meta Has to Change It.
+Source: iPhone in Canada (iphoneincanada.ca)
+Published: July 10, 2026
+URL: https://www.iphoneincanada.ca/2026/07/10/the-eu-says-instagram-is-built-to-addict-you-now-meta-has-to-change-it/
+
+The European Commission says Meta is breaking the rules with the way Instagram and Facebook are built to keep people hooked.
+
+On July 9, the Commission put out preliminary findings saying Meta ran afoul of the Digital Services Act with the "addictive design" of both apps. The investigation zeroes in on stuff you use every day: infinite scroll, autoplay, push notifications, and the heavily personalized recommendation systems that decide what shows up in your feed.
+
+The main complaint is that Meta didn't properly weigh how all this affects people's physical and mental health, especially minors and vulnerable adults. The Commission says features like personalized recommendations, autoplay and infinite scroll keep throwing new content at you, which fuel the user's urge to keep scrolling and shift the brain into 'autopilot mode', contributing to unhealthy habits and compulsive use. Endless dopamine hits at 1am anyone?
+
+It also flagged that Meta disregarded available information about the time minors spend on Instagram or Facebook at night, and how formats like reels and stories can push people toward compulsive use.
+
+The Commission isn't impressed with Meta's fixes either. It says the time management tools, including the ones switched on by default for teens, are easily dismissed and do not lead to a meaningful reduction and control of the usage of the service. Parental controls only really work if parents have the technical know-how and the time to figure them out, and the mental health tips buried in a separate "safety centre" page don't do enough.
+
+So what does the EU want? At this stage it says Meta needs to actually change the design of both apps. That could mean turning off autoplay and infinite scroll by default, adding real screen time breaks, and tweaking the recommendation system so it's less focused on keeping you glued to the screen.
+
+Meta can go through the Commission's files and respond in writing to the findings. If the Commission's view holds up in the end, Meta could be hit with a fine of up to 6% of the total worldwide annual turnover of the provider.
+
+For context, this is all part of a bigger probe into Meta that the Commission kicked off back in May 2024. It also overlaps with a separate look at age checks for kids under 13, and an ongoing investigation into the "rabbit hole" effect, where the apps' recommendation systems can prey on younger users.
+
+Henna Virkkunen, the Commission's Executive Vice-President for Tech Sovereignty, Security and Democracy, said protecting the physical and mental health of Europeans must be a priority for social media platforms.
+
+It's not just the EU going after Meta and the addictive nature of its apps. In Canada, the federal government has tabled a law to ban social media apps and AI chatbots for kids under 16. But that has some critics worried about how it will result in one person controlling the entire internet in Canada.

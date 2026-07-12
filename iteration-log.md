@@ -1,5 +1,46 @@
 # MediaScope Iteration Log
 
+## 2026-07-12 14:00 PT — Type C: Ownership & Funding Deep Dive (MIT Technology Review)
+
+**Focus:** MIT Technology Review — CSAIL Alliance Program expansion, Pegatron bilateral partnership, and MIT Quantum Systems Laboratory (QSL). All three represent significant new institutional/funding relationships discovered since last Type C pass.
+
+### Profile Changes (`profiles/mit-tech-review.yaml`: 2,144→2,327 lines, +183 net)
+
+**CSAIL Alliance Program expansion (27→~50 members):**
+- Verified live CSAIL membership page (Jul 12 2026) showing 49 Affiliates + 1 Partner (EY)
+- 22 new members documented, including high-conflict additions:
+  - IAI (Israel Aerospace Industries) — state-owned defense contractor
+  - Mercedes-Benz R&D North America
+  - Schlumberger/SLB — oilfield services
+  - Pegatron — Foxconn competitor, dual CSAIL relationship
+  - CIBC, Itaú Unibanco — financial sector
+  - Omantel — Oman state telecom
+  - ITRI — Taiwan state research institute
+  - Taichung Veterans General Hospital — Taiwan state hospital
+- Conflict severity upgraded 2→3 (expansion includes sovereign/defense actors)
+
+**CSAIL-Pegatron 5-Year Robotics Partnership:**
+- Announced Oct 23, 2025, runs 2026-2031, led by Daniela Rus
+- Pegatron has dual CSAIL relationship (Alliance member + bilateral partnership)
+- Focus: factory robotics, human-robot collaboration
+
+**MIT Quantum Systems Laboratory (QSL):**
+- Announced May 28, 2026 by President Kornbluth + Governor Healey
+- $25M Massachusetts state funding + MIT + Thomas Tull philanthropy
+- Physical home for QMIT initiative, Building 39, construction summer 2026
+
+**Conflict taxonomy updates:**
+- Consortium/Events dimension: CSAIL 27→~50 members
+- Sovereign/International dimension: expanded to 6+ countries (Israel, Oman, Taiwan, Brazil, Canada, Germany)
+
+### Stats
+- Tests: 2,272 (all pass)
+- Profile lines: 2,327 (MIT Tech Review)
+- Commit: `2d6d9aa`
+- Pushed: ✅ (`035e8dd..2d6d9aa`)
+
+---
+
 ## 2026-07-12 13:00 PT — Type B: Journalist/Publication Research (Adrienne LaFrance Deep Sourcing)
 
 **Focus:** Adrienne LaFrance — The Atlantic's executive editor, first woman in 162-year history. Had 9 career entries but **zero top-level source_urls** — the most editorially powerful person at the Atlantic (and author of its three most influential anti-Facebook/Meta pieces) with no primary sourcing.
@@ -20390,3 +20431,49 @@ Expanded Hugo Lowell's existing profile from a 4-entry career stub to a comprehe
 - Auto-detected migrations: 707 (was 706 — +1 from new freelance career entry)
 - Tests: 113 passed, 0 failed
 
+
+---
+
+## 15:00 PT — Type A: Article Deep Dive
+
+**Article:** "The EU Says Instagram Is Built to Addict You. Now Meta Has to Change It." — iPhone in Canada (iphoneincanada.ca), July 10, 2026
+
+**Cluster:** EU DSA Addictive Design (Cluster 13) — 4th article (after WSJ, Reuters, CNN)
+
+### Toolkit Analysis Results
+
+- **Sentiment:** overall_tone=-0.287, raw_tone=-0.287, emotional_language_intensity=0.625. No framing correction fired.
+- **Entities:** 22 detected. Meta (12), Instagram (4), Facebook (3), European Commission (4), Digital Services Act (1), Henna Virkkunen (1). Minor false positive: iPhone clustered to Apple from source name.
+- **Topics:** child_safety=0.453 ✅, antitrust_regulation=0.190 ✅, ai_generated_content=0.098 (marginal). **executive_behavior false positive fixed** — was triggered by "Executive Vice-President" in Virkkunen's title.
+- **Framing devices (12):** loaded_language×2, ironic_quotation×2, emotional_appeal×3, rhetorical_question (NEW), default_burden_privacy, geopolitical_regulatory_pressure, sovereignty_framing, kicker_framing.
+- **Sources (2):** European Commission, Henna Virkkunen. Zero Meta defense quotes — unique in this cluster.
+
+### Code Changes
+
+**Fix 1: Tag-question rhetorical_question pattern**
+- File: `mediascope/analyze/framing.py`
+- Added regex: `.{10,100}?\b(?:anyone|right|no|amirite)\s*\?\s*$` (re.MULTILINE)
+- Catches "Endless dopamine hits at 1am anyone?" and similar tag-question constructions
+- Pattern count: 580 → 581
+
+**Fix 2: Executive title suppression for executive_behavior topic**
+- File: `mediascope/analyze/topics.py`
+- Added `_EXECUTIVE_TITLE_RE` span detection for official titles (Executive Vice-President, Executive Director, Chief Executive, Executive Secretary)
+- Suppresses executive_behavior scoring when keyword "executive" falls within a title span
+
+### Files Created/Modified
+- `tests/test_iphoneincanada_eu_dsa_regressions.py` — 6 regression tests (4 rhetorical question, 2 executive title)
+- `examples/sample_output/iphoneincanada_eu_dsa_meta_addictive_design_2026_07_10_analysis.md` — full annotated analysis
+- `examples/sample_output/cross_pub_eu_dsa_addictive_design_wsj_reuters_cnn_2026_07_10.md` — expanded to 4-way comparison
+- `docs/ARCHITECTURE.md` — updated pattern count (581), test count (2278/101), added test file entry
+- `README.md` — updated stats (2278 tests, 101 files, 162 annotated articles, 581 patterns), added test file entry
+- `docs/METHODOLOGY.md` — updated annotated article count (162)
+- `docs/QUALITY_STANDARDS.md` — updated annotated article count (162)
+- `tests/test_structural_consistency.py` — updated EXPECTED_TOTAL_PATTERNS (581)
+
+### Stats After This Iteration
+- Tests: 2,278 (was 2,272, +6)
+- Test files: 101 (was 100, +1)
+- Patterns: 581 (was 580, +1)
+- Annotated articles: 162 (was 161, +1)
+- Same-event cluster 13: 4 outlets (was 3, +1 iPhone in Canada)
