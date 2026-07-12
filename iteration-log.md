@@ -19695,3 +19695,44 @@ Both vectors serve the Atlantic's 2025-2026 expansion strategy: 51 editorial cha
 
 ### Commit
 - `cfa04e8`: Type B — Lauren Feiner deep-dive, 195 insertions, 25 deletions across journalists.yaml, README.md, EDITORIAL_HISTORIES.md, iteration-log.md. Pushed to GitHub.
+
+## 2026-07-11 20:00 PT — Type B: Journalist/Publication Research
+
+**Focus:** Mia Sato career profile expansion + The Verge editorial changes gap fill
+
+### Mia Sato Profile Updates (journalists.yaml)
+
+**Problem:** Mia Sato — The Verge's primary platform/Meta beat reporter — had detailed notes and career entries but was missing education background and several key details confirmed by primary sources.
+
+**Research sources consulted:**
+- UW-Madison SJMC alumni interview (journalism.wisc.edu): confirmed BA Journalism + Political Science, 2017 graduation
+- Embedded (kate lindsay interview, embedded.substack.com): career timeline, audience engagement origins, TikTok distribution philosophy
+- How I Make Money Writing (howimakemoneywriting.substack.com): 8+ years professional writing, freelance economics, Vox Media approval for outside work
+- TalkingBizNews hire announcement (Nov 19, 2021): The Markup → MIT TR → Verge pipeline
+- ASME 60th National Magazine Awards press release (asme.memberclicks.net): confirmed "Feature Writer" title at time of nomination, nominated by Nilay Patel (EIC)
+- Muck Rack profile: 2025 title = "features writer" (previously "senior reporter")
+- The Org profile: "Platforms & Communities Reporter" (earlier title)
+
+**Changes made:**
+1. **Added education career entry:** UW-Madison, BA Journalism + Political Science (2013-2017), with SJMC alumni interview source URL
+2. **Updated notes:** Added "UW-Madison BA" to career arc opening, ASME nomination detail ("nominated by Nilay Patel"), News Literacy Project URL (get.checkology.org)
+3. **Added KEY ANALYTICAL VALUE point (6):** Platform labor economics awareness — her deliberate cost-benefit analysis of which platforms to invest free journalism labor in (dropped X/Twitter, adopted Bluesky, strict 30-min TikTok cap)
+4. **Fixed nonprofit-newsrooms start date:** Changed from "~2017" to "2017" (confirmed via 2017 graduation year)
+5. **Added 3 new source URLs:** ASME press release, UW-Madison alumni interview, journalism.wisc.edu
+
+### The Verge Editorial Changes (editorial_changes.yaml)
+
+**Problem:** The Verge section was comprehensive through 2024 but missing three notable 2024-2025 hires found during Verge staff research.
+
+**3 editorial changes added:**
+
+1. **Brooke Minters (Jun 2024)** — Editorial director for audio. From Politico (exec producer video). Previously Gizmodo Media Group, Fusion, AJ+. Oversees Vergecast expansion (2 eps/week), Cranz as permanent co-host. Source: TalkingBizNews
+2. **Tina Nguyen (Jan 2025)** — Senior reporter covering Trump/MAGA/tech intersection. From Puck (founding partner). Previously Politico, Vanity Fair. Creates dedicated political-tech beat that can shade Meta coverage through political lens. Source: TalkingBizNews
+3. **Marina Galperina (Jan 2025)** — Senior technology editor. From Popular Science (managing editor, 3 yrs). Previously Gizmodo features editor, Gawker senior editor. Third G/O Media → Verge pipeline hire (after Cranz, Keck). Source: TalkingBizNews
+
+### Verification
+- All 2,272 tests passing (0 failures)
+- 58 insertions, 7 deletions across 2 files
+
+### Commit
+- `923cb3d`: Type B — Mia Sato career expansion + 3 missing Verge editorial changes. Pushed to GitHub.
