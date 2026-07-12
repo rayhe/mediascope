@@ -591,6 +591,30 @@ mit_corporate_research_partnerships:
       description: "Honeywell collaboration with MIT Center for Sustainability Science and Strategy. Joint research titled 'Accelerating Energy Expansion' modeling AI-enabled cost reductions in fuel production ($225B in oil-based fuels, $80B in LNG by 2050). Published June 24, 2026. Honeywell is a major industrial tech company — its AI/automation products compete in the same enterprise space MIT TR covers."
       source_url: "https://www.prnewswire.com/news-releases/honeywell-and-mit-find-digital-technologies-can-help-increase-energy-supply-reduce-energy-production-cost-by-tens-of-billions-annually-302463974.html"
       relevance: "New corporate research partnership announced June 2026. Honeywell is an industrial AI company that MIT TR covers. Partnership involves MIT Center (not CSAIL/Schwarzman), showing how MIT-industry ties extend beyond the computing college."
+    - name: "CSAIL-Pegatron 5-Year Robotics Partnership"
+      amount: "Undisclosed"
+      established: "2025-10"
+      description: >
+        Five-year research partnership (2026-2031) between MIT CSAIL and Pegatron Corporation
+        (Taiwan, ~$40B revenue), announced October 23, 2025. Led by CSAIL Director Daniela
+        Rus (MIT) and Alan Lin (Corporate Partner Lead, Pegatron). Focus: physically intelligent
+        robots — dexterous, adaptive, safe operation using advanced mechanical design, tactile
+        sensing, multimodal perception, and AI-driven control. Aims to create robots capable
+        of human-centered interaction in complex real-world scenarios.
+        
+        CONFLICT SIGNIFICANCE: Pegatron is a MAJOR contract manufacturer for Apple (iPhones,
+        iPads) and Microsoft (Xbox). It is ALSO a CSAIL Alliance affiliate member, creating
+        a DUAL relationship — bilateral partnership PLUS Alliance membership. The partnership
+        is led by Daniela Rus, who ALSO directs the DAF-MIT AI Accelerator ($15M/year from
+        Air Force) and formerly served on the Defense Innovation Board. Pegatron's robotics
+        work intersects with MIT TR's coverage of industrial automation, robotics, and
+        manufacturing AI. Pegatron also manufactures for Qualcomm and other CSAIL Alliance
+        members, creating supply-chain-level overlaps.
+        
+        Rus's quote: "Our goal is to create robots that not only perform tasks with precision
+        but also understand and adapt to the physical world around them."
+      source_url: "https://www.csail.mit.edu/news/mit-csail-and-pegatron-launch-five-year-initiative-pioneer-physically-intelligent-robots"
+      relevance: "Major Apple/Microsoft contract manufacturer with 5-year bilateral partnership + Alliance membership. Deepens MIT's corporate partnership web in manufacturing/robotics."
   hardware_program_partners:
     - partner: "TSMC"
       relationship_type: "institutional_funding"
@@ -1050,6 +1074,75 @@ mit_corporate_research_partnerships:
       - "https://www.airandspaceforces.com"
     verified_date: "2026-06-28"
 
+  quantum_systems_laboratory:
+    description: >
+      MIT Quantum Systems Laboratory (QSL) — a new shared-use quantum research facility
+      announced May 28, 2026 by President Sally Kornbluth and Massachusetts Governor
+      Maura Healey. Located at MIT Building 39. Physical home for the MIT Quantum
+      Initiative (QMIT, announced December 2025 by Kornbluth).
+      
+      FUNDING:
+      - $25M from Commonwealth of Massachusetts (state matching funds)
+      - MIT's own financial commitment (undisclosed amount)
+      - Philanthropic support from THOMAS TULL
+      - Matches existing federal quantum research funding at MIT
+      
+      CAPABILITIES: Will host a state-of-the-art quantum computer with peripheral
+      hardware (sensors, quantum interconnects for direct multi-quantum-computer
+      communication). Designed for scalable, practical quantum technology for real-world
+      problems. First-of-its-kind shared-use facility.
+      
+      OPEN ACCESS: Explicitly open to researchers beyond MIT — UMass, Harvard, and
+      other institutions. Kornbluth: "Just as MIT.nano is a facility for all, there
+      will be many people from beyond MIT that come to use this equipment."
+      
+      CONSTRUCTION: Groundbreaking expected summer 2026. Will create 150+ on-site jobs
+      plus 75-100 supply chain/professional services jobs.
+      
+      COMPLEMENTS: MIT.nano (nanofabrication) and MIT Lincoln Laboratory's SQUILL
+      foundry (superconducting qubit fabrication). All three share the mission of
+      democratizing access to advanced facilities.
+      
+      THOMAS TULL — PHILANTHROPIC DONOR: Tull is the founder of Legendary Entertainment
+      (sold to Dalian Wanda Group for $3.5B in 2016), co-owner of the Pittsburgh
+      Steelers, and an active AI/tech investor. He sits on the board of General Electric.
+      His AI investment portfolio includes stakes in Palantir, Applied Intuition, and
+      other defense/enterprise AI companies. Tull's philanthropy to the QSL creates
+      a donor relationship between MIT and a major AI/defense investor — similar in
+      structure (though smaller in scale) to Schwarzman's $350M Blackstone-connected
+      gift to the College of Computing.
+      
+      CONFLICT SIGNIFICANCE: The QSL expands MIT's quantum research infrastructure
+      at a time when MIT TR covers quantum computing as a major beat. The facility
+      is partially state-funded (Massachusetts taxpayer money), adding a third
+      government funding stream (after federal grants and Lincoln Lab DoD contracts).
+      The MIT-IBM Computing Research Lab (renamed April 2026) now includes quantum
+      computing as a formal pillar — IBM funds $90M to MIT researchers for this lab.
+      Engine Ventures portfolio company Atlantic Quantum was acquired by Google
+      Quantum AI (Oct 2025). MIT's quantum research is thus funded by state government,
+      federal government, IBM, and philanthropists with AI investment portfolios —
+      while MIT TR covers quantum computing developments for all of these funders'
+      competitor ecosystems.
+      
+      EmTech Future 2026 speaker Danna Freedman (inaugural Director of Quantum@MIT)
+      will present on quantum technologies — connecting the QSL's institutional
+      context directly to MIT TR's events business.
+    funding_total: "$25M+ (state) + MIT commitment + Tull philanthropy + federal matching"
+    state_funding: "$25M (Commonwealth of Massachusetts)"
+    philanthropic_donor: "Thomas Tull (Legendary Entertainment founder, GE board member)"
+    location: "Building 39, MIT campus"
+    announced: "2026-05-28"
+    construction_start: "Summer 2026"
+    jobs_created: "150+ on-site, 75-100 supply chain"
+    complements: ["MIT.nano", "Lincoln Laboratory SQUILL foundry"]
+    initiative: "MIT Quantum Initiative (QMIT, announced December 2025)"
+    source_urls:
+      - "https://news.mit.edu/2026/new-laboratory-mit-aims-advance-quantum-research-for-nation-0528"
+      - "https://climate.mit.edu/posts/new-laboratory-mit-aims-advance-quantum-research-nation"
+      - "https://quantumcomputingreport.com/massachusetts-commits-25-million-to-anchor-mits-landmark-quantum-systems-laboratory/"
+      - "https://www.interestingengineering.com/science/us-scientists-new-quantum-lab-targets-future-computing-breakthroughs"
+    verified_date: "2026-07-12"
+
   media_lab_consortium:
     description: >
       MIT Media Lab operates a corporate consortium where member companies pay annual
@@ -1332,23 +1425,108 @@ known_conflicts:
     source_url: "https://news.mit.edu/2018/mit-sensetime-announce-effort-advance-artificial-intelligence-research-0228"
   - type: "csail_corporate_affiliates"
     description: >
-      MIT CSAIL Alliance Program has 27 corporate members (verified June 2026): Acbel,
-      Accenture, Akamai, Apple, Balyasny, Bayer, BNY, Caterpillar, Dell EMC, Ferrovial,
-      Jane Street, Khosla Ventures, Lenovo, Microsoft, Nebius (Yandex AI spinoff),
-      Northrop Grumman, Qualcomm, Quanta Computer, Raytheon, Red Hat, Rokt, Samsung
-      Ventures, STMicroelectronics, Underscore VC, UPS, UST, Wistron. These companies
-      get research access and recruiting pipelines. MIT TR covers many of these companies
-      — particularly Apple, Microsoft, Samsung, Qualcomm. Apple's membership is especially
-      notable: combined with Kate Bergeron's (Apple VP) election to the MIT Corporation
-      (July 1, 2026), Apple now has both a research alliance AND a governing board seat
-      at MIT — neither is disclosed in MIT TR's Apple coverage. Nebius
-      (formerly part of Yandex) is a significant new addition given its Russian-origin
-      AI infrastructure business. Notable absences: Google, Amazon, Meta are NOT CSAIL
-      members — they have separate bilateral programs.
-    severity: 2
-    evidence: "CSAIL Alliance Program membership page (verified June 27, 2026). Cross-referenced with MIT TR coverage of Apple, Microsoft, Qualcomm, Samsung."
-    source_url: "https://www.csail.mit.edu/about/alliance-program"
-    verified_date: "2026-06-27"
+      MIT CSAIL Alliance Program has EXPANDED from 27 to ~50 members since last verified.
+      The program now has multiple tiers: at least one "Partner" (EY / Ernst & Young) and
+      49 "Affiliates." Two new verticals — FinTechAI@CSAIL and MachineLearningApplications@CSAIL
+      — indicate deeper industry segmentation.
+      
+      FULL AFFILIATE LIST (verified July 12, 2026, 49 members):
+      Acbel, Accenture, Akamai, Apple, Balyasny, Bayer, BNY, Caterpillar, CEO Connection,
+      Certis, CIBC, Cosmic Labs, Dell EMC, Devo Lab, Ensign InfoSecurity, Ferrovial,
+      FirstHabit, Grosvenor, IAI, Itaú Unibanco, ITRI, Jane Street, JIMCO, Jobcase,
+      Khosla Ventures, Lenovo HK Services Limited, Linedata, Massive Dynamics,
+      Mercedes-Benz Research & Development North America Inc., Microsoft, Nebius,
+      Northrop Grumman, Omantel, Pegatron, Qualcomm, Quanta Computer, Quantiphi,
+      Raytheon Technologies, Red Hat, Rokt, Samsung Ventures, Schlumberger,
+      STMicroelectronics, Taichung Veterans General Hospital, Underscore VC, UPS, UST,
+      WCAS, Wistron Corporation.
+      
+      PARTNER TIER: EY (Ernst & Young) — one of the Big Four accounting/consulting firms.
+      EY's advisory practice covers AI strategy for enterprises that MIT TR profiles.
+      Partner tier implies deeper access/commitment than Affiliate status.
+      
+      NEW HIGH-CONFLICT MEMBERS (22 additions since June 2026 verification):
+      
+      1. IAI (Israel Aerospace Industries) — Israel's LARGEST STATE-OWNED defense company.
+         Maker of military drones (Heron, Harop loitering munitions), missiles (Arrow, Barak),
+         satellites, and cyber/ISR systems. ~$6B annual revenue, 16,000+ employees. This is
+         the FIRST foreign state-owned defense contractor in the CSAIL Alliance — distinct
+         from Northrop Grumman and Raytheon (US private sector defense). MIT TR covers
+         military AI, drone warfare, and Israeli defense tech. IAI's CSAIL membership creates
+         a DIRECT financial relationship between a foreign defense contractor and MIT's AI
+         research lab — the same lab whose director (Daniela Rus) also directs the DAF-MIT
+         AI Accelerator for the US Air Force. The interoperability implications of US-allied
+         defense contractors sharing access to the same AI lab where US military AI is
+         developed are significant and never disclosed.
+      
+      2. Mercedes-Benz R&D North America — Major automotive AI/autonomous driving player.
+         MIT TR covers autonomous vehicles, AI in transportation, and automotive tech.
+         Mercedes was first to get SAE Level 3 autonomous driving approval in the US (2023).
+      
+      3. Schlumberger (now SLB) — World's largest oilfield services company (~$36B revenue).
+         MIT TR covers energy technology, climate/decarbonization, and the role of AI in
+         energy production. Schlumberger's core business (fossil fuel extraction optimization)
+         creates tension with MIT TR's climate/clean energy coverage.
+      
+      4. Pegatron — Major Apple/Microsoft contract manufacturer (Taiwan, ~$40B revenue).
+         ALSO has a SEPARATE 5-year CSAIL robotics partnership (Oct 2025, see below).
+         Manufactures iPhones, Xbox, other electronics. Pegatron's DUAL relationship
+         (Alliance member + bilateral partnership) gives it uniquely deep CSAIL access.
+      
+      5. CIBC — Canadian Imperial Bank of Commerce. One of Canada's Big Five banks
+         (~C$63B revenue). Financial services coverage conflict.
+      
+      6. Itaú Unibanco — Latin America's largest bank by total assets (~$500B).
+         Extends MIT's corporate funding surface to Brazilian/LatAm financial sector.
+      
+      7. Ensign InfoSecurity — Singapore-based cybersecurity firm (subsidiary of
+         Singapore Telecommunications/Singtel). MIT TR covers cybersecurity extensively;
+         Lincoln Lab also does cybersecurity R&D for DoD.
+      
+      8. WCAS (Welsh, Carson, Anderson & Stowe) — Major PE firm (~$60B assets under
+         management). Healthcare, tech, and financial services focus.
+      
+      9. Omantel — Oman Telecommunications Company. State-controlled telecom (Oman
+         government majority shareholder). Another sovereign entity joining CSAIL,
+         alongside MBZUAI (UAE) and IAI (Israel).
+      
+      10. Grosvenor — UK real estate group owned by the Duke of Westminster family
+          (Gerald Grosvenor's estate). ~£8B portfolio. Extends MIT corporate ties to
+          UK landed aristocracy / real estate.
+      
+      11. ITRI — Industrial Technology Research Institute (Taiwan government-funded).
+          State research institute that spun off TSMC. Another sovereign entity.
+      
+      12. Taichung Veterans General Hospital — Taiwan government hospital. Healthcare
+          AI research. Sovereign healthcare entity.
+      
+      13. Cosmic Labs — Added April 2026 (per logo upload date). Details pending.
+      
+      14. Quantiphi — AI/data engineering firm (Google Cloud partner).
+      
+      SOVEREIGN/STATE ENTITY COUNT: The CSAIL Alliance now includes AT LEAST 4
+      sovereign/state-affiliated entities: IAI (Israel), Omantel (Oman), ITRI (Taiwan),
+      Taichung Veterans General Hospital (Taiwan). Combined with ILP members CDTI
+      Innovation (Spain) and Union Properties (Dubai), and the MBZUAI (UAE) bilateral
+      partnership, MIT's sovereign state corporate access surface spans 5+ countries.
+      
+      MIT TR covers many of these companies — particularly Apple, Microsoft, Samsung,
+      Mercedes-Benz, Qualcomm, Schlumberger. Apple's membership is especially notable:
+      combined with Kate Bergeron's (Apple VP) election to the MIT Corporation (July 1,
+      2026), Apple now has both a research alliance AND a governing board seat at MIT
+      — neither is disclosed in MIT TR's Apple coverage. Notable absences: Google,
+      Amazon, Meta are NOT CSAIL members — they have separate bilateral programs.
+    severity: 3
+    evidence: >
+      CSAIL Alliance Program membership page (cap.csail.mit.edu/current-members,
+      verified July 12, 2026). Cross-referenced with MIT TR coverage of Apple,
+      Microsoft, Mercedes-Benz, Qualcomm, Samsung, Schlumberger. IAI logo added
+      with "2025-01" in filename (January 2025 upload). Cosmic Labs logo filename
+      "screenshot-2026-04-29" (April 2026 upload). Severity upgraded from 2 to 3
+      due to expanded member count, IAI state-owned defense contractor addition,
+      and Pegatron dual-relationship status.
+    source_url: "https://cap.csail.mit.edu/current-members"
+    verified_date: "2026-07-12"
   - type: "genai_divide_institutional_conflict"
     description: "MIT researchers published 'The GenAI Divide' (Project NANDA, 2025): ~95% of organizations saw no measurable financial return from generative AI despite $30-40B in enterprise spending. This is one of the most significant anti-AI-hype research findings from any institution — and it comes from MIT TR's own parent. MIT TR's AI coverage must navigate between its parent institution's skeptical research findings and the fact that the same parent institution receives hundreds of millions from AI companies (Google, IBM, Amazon, Microsoft, Apple, Meta). The tension between MIT research showing AI underdelivers and MIT's financial dependence on AI industry funding is a unique institutional conflict."
     severity: 2
@@ -2029,14 +2207,19 @@ notes: |
   4. DEFENSE/GOVERNMENT: MIT receives DoD funding ($12.2B Lincoln Lab contract,
      DAF-MIT AI Accelerator $15M/year, $1.36B annual FFRDC expenditures)
   5. CONSORTIUM/EVENTS: Companies pay for access (Media Lab $400K/yr members,
-     CSAIL Alliance 27 companies, ILP ~240 companies, AI Hardware Program 5 companies
-     including TSMC + ASML, EmTech sponsors ~33% revenue, Schwarzman College 5+
-     bilateral programs)
+     CSAIL Alliance ~50 companies including EY Partner tier, ILP ~240 companies,
+     AI Hardware Program 5 companies including TSMC + ASML, EmTech sponsors ~33%
+     revenue, Schwarzman College 5+ bilateral programs, CSAIL-Pegatron 5-year
+     robotics partnership)
   6. SOVEREIGN/INTERNATIONAL: MBZUAI (UAE government-backed AI university) funds
      MIT AI research through 5-year collaboration; CDTI Innovation (Spanish government
      agency) is ILP institutional member; HPI (SAP co-founder Hasso Plattner's
-     institute) co-funds AI and Creativity Hub. State-funded research partnerships
-     extend the conflict surface beyond corporate to governmental sponsors.
+     institute) co-funds AI and Creativity Hub. CSAIL Alliance now includes IAI
+     (Israel state-owned defense), Omantel (Oman state telecom), ITRI (Taiwan
+     state research), and Taichung Veterans General Hospital (Taiwan state).
+     QSL receives $25M from Massachusetts state government. State-funded research
+     partnerships extend the conflict surface beyond corporate to governmental
+     sponsors across 6+ countries.
   7. LITIGATION ALIGNMENT: MIT is an active co-plaintiff against
      NIH, DOE, and NSF — agencies whose policies MIT TR covers. Creates structural
      incentive to frame federal funding cuts as harmful rather than as legitimate
