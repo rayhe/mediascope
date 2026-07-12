@@ -215,8 +215,8 @@ Devices specific to financial journalism, earnings coverage, and analyst reporti
 | 92 | **Investor Advisory** | E | Author adopts investment-advisor posture, directly warning investors about risks and prescribing behavior. Two variants: *prescriptive* (Barron's — "investors ignore at their peril") and *observational* (IBD/Investopedia — "despite [risk], stock rallied") | "Investors ignore [X] at their peril," "should start paying attention," "Investors may be making the wrong choice," "it's time for investors to," "despite [regulatory action], [stock] rallied" |
 | 93 | **Regulatory Risk Subordination** | E | Regulatory/legal risk acknowledged but architecturally sandwiched between positive market signals so reading experience begins and ends with optimism. Genre-normative for IBD/Investopedia/Motley Fool; higher signal in WSJ/NYT/Bloomberg | "Despite [regulatory/legal action], [stock positive]," article opens with stock performance before regulatory news, regulatory content >70% through article, "shrugging off [regulatory] headwinds" |
 | 94 | **Recovery Narrative** | E | Three-beat article architecture: (1) prior decline/criticism, (2) catalyst event, (3) forward recovery projection via analyst quotes. Converts neutral news into "turning point" narrative. Genre-normative for MarketWatch/Barron's/Motley Fool | **Beat 1:** "has long been criticized," "stock was down X%." **Beat 2:** "investors cheered," "ease spending fears." **Beat 3:** forward-looking analyst projections, "up to N% lower costs" |
-| 95 | **Grudging Concession** | E | Positive action acknowledged but editorially minimized — framing legitimate progress as reluctant, forced, or insufficient. Distinct from defensive_verb_framing (loaded verbs on neutral actions) and editorial_deflation (puncturing ambition with asides). Genre: Category 13 (Concession & Acknowledgment Framing) | "finally [positive action]"; "it's about time"; "only after [backlash/pressure/outcry]"; "[positive], but it's too little, too late"; "took [entity] long enough"; "belatedly [positive verb]" |
-| 96 | **Ultimatum Framing** | E | Multi-stage regulatory/legal proceeding compressed into a binary "do X or face Y" construction — collapsing procedural complexity into an "or else" fork. Distinct from regulatory_shadow (ambient fear) and pressure_language (coercive verbs). Genre: Category 14 (Procedural Compression) | "change X — or get/face Y"; "must [action] or face [consequence]"; "comply or face fines"; "either [fix] or [consequence]" |
+
+> **Devices #95–96** are in their own categories below: [Category 13: Concession & Acknowledgment Framing](#category-13-concession--acknowledgment-framing) and [Category 14: Procedural Compression](#category-14-procedural-compression).
 
 ---
 
@@ -272,4 +272,27 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 
 ---
 
-*Last updated: 2026-07-11. See [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection) for full device descriptions, detection patterns, and discovery provenance articles.*
+*Last updated: 2026-07-12. See [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection) for full device descriptions, detection patterns, and discovery provenance articles.*
+
+---
+
+## Proposed Additions (Pending Validation)
+
+Candidate framing devices discovered during analysis but not yet formally added. Each requires **≥3 independent real-article examples** demonstrating the pattern before promotion to the taxonomy.
+
+| Candidate | Category | Description | Discovery Provenance | Examples Found | Status |
+|-----------|----------|-------------|---------------------|----------------|--------|
+| **Ironic Consolidation** | Narrative & Editorial Architecture | Bundling multiple independent negative narratives into a single article, connecting them with ironic thematic links to amplify perceived systemic failure. Distinct from `trend_bundling` (which groups similar actions by peers) — ironic consolidation groups *disparate* failures of a *single* entity. | Gizmodo siege roundup (Jul 2026) | 1 | Needs 2+ more |
+
+### Proposed Correction Paths
+
+| Candidate | Problem | Distinguishing Signal | Discovery Provenance | Status |
+|-----------|---------|----------------------|---------------------|--------|
+| **Path L — Structural Irony** | Macro-level article organization creates negative framing invisible at sentence level. VADER and even individual framing devices read each paragraph as neutral, but the *sequence* and *juxtaposition* of sections constructs an editorial argument. | Low adversarial_count + low EI + neutral agency, but manual assessment is clearly negative. Signal is in section ordering, not vocabulary. | Gizmodo siege roundup (Jul 2026) | Needs validation articles |
+
+### Promotion Criteria
+
+1. **≥3 independent articles** from ≥2 different publications demonstrating the pattern
+2. **Distinguishable from existing devices** — must not overlap with conditions of any existing device type
+3. **Measurable impact on scoring** — must cause a demonstrable gap between raw and manual assessment
+4. **Regression tests** — at least one test per new device/path validating the discovery article

@@ -495,3 +495,7 @@ When a new article analysis reveals a VADER failure mode not covered by existing
 ### Naming Convention
 
 Paths are lettered alphabetically by discovery order, not by evaluation order. The current sequence (A, B, C, D, E, F, G, H, I, J, K) reflects the chronological order in which VADER failure modes were discovered during real article analysis. The next path would be **L**.
+
+### Proposed Path L — Structural Irony
+
+A candidate path for macro-level article organization that creates negative framing invisible at the sentence level. Currently tracked in [FRAMING_REFERENCE.md § Proposed Additions](FRAMING_REFERENCE.md#proposed-additions-pending-validation) pending validation across ≥3 articles from ≥2 publications. Key challenge: the distinguishing signal is in section ordering and narrative structure, not in vocabulary, making it harder to detect with existing pattern-based methods.
