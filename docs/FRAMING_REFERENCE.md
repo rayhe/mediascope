@@ -9,7 +9,7 @@
 During article analysis, scan the text for trigger keywords and structural patterns listed below. Each device name links to the detailed entry in METHODOLOGY.md. The **tier** column indicates detection method:
 
 - **C** = Core (10 types) — fundamental editorial techniques, pattern-matched
-- **E** = Extended (80 types) — discovered from real article analysis, pattern-matched
+- **E** = Extended (84 types) — discovered from real article analysis, pattern-matched
 - **S** = Structural (7 types) — detected via post-pass heuristics over full article structure
 
 ---

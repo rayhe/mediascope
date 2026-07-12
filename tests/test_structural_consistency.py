@@ -1305,6 +1305,58 @@ class TestArchitectureExtendedDeviceCount:
 
 
 
+class TestFramingReferenceExtendedCount:
+    """Guard: FRAMING_REFERENCE.md tier legend must show correct Extended count.
+
+    The 'How to Use This Reference' section at the top of FRAMING_REFERENCE.md
+    lists tier abbreviations with counts: 'E = Extended (N types)'.  The bottom
+    'Counts by Tier' table is already correct (84), but the legend can drift.
+
+    Added: 2026-07-12 16:00 PT, Type D iteration.
+    """
+
+    CORE_TYPES = {
+        "guilt_by_association", "anonymous_authority", "catastrophizing",
+        "false_balance", "selective_omission_signal", "emotional_appeal",
+        "loaded_language", "power_asymmetry", "ceo_personalization",
+        "litigation_framing",
+    }
+
+    def test_framing_reference_extended_count(self):
+        """FRAMING_REFERENCE.md tier legend 'Extended (N types)' must match code."""
+        from mediascope.analyze.framing import _DEVICE_PATTERNS
+        actual_extended = len(set(_DEVICE_PATTERNS.keys()) - self.CORE_TYPES)
+        doc = (_REPO_ROOT / "docs" / "FRAMING_REFERENCE.md").read_text()
+        match = re.search(r"\*\*E\*\*\s*=\s*Extended\s*\((\d+)\s*types?\)", doc)
+        assert match, (
+            "FRAMING_REFERENCE.md is missing the 'E = Extended (N types)' "
+            "tier legend entry."
+        )
+        claimed = int(match.group(1))
+        assert claimed == actual_extended, (
+            f"FRAMING_REFERENCE.md tier legend says 'Extended ({claimed} types)' "
+            f"but code has {actual_extended} extended device types "
+            f"({len(_DEVICE_PATTERNS)} pattern-matched minus 10 core). "
+            f"Update the legend."
+        )
+
+    def test_framing_reference_tier_table_extended_count(self):
+        """FRAMING_REFERENCE.md 'Counts by Tier' table Extended row must match code."""
+        from mediascope.analyze.framing import _DEVICE_PATTERNS
+        actual_extended = len(set(_DEVICE_PATTERNS.keys()) - self.CORE_TYPES)
+        doc = (_REPO_ROOT / "docs" / "FRAMING_REFERENCE.md").read_text()
+        match = re.search(r"\|\s*Extended\s*\|\s*(\d+)\s*\|", doc)
+        assert match, (
+            "FRAMING_REFERENCE.md is missing the 'Extended' row in the "
+            "'Counts by Tier' table."
+        )
+        claimed = int(match.group(1))
+        assert claimed == actual_extended, (
+            f"FRAMING_REFERENCE.md 'Counts by Tier' table says Extended={claimed} "
+            f"but code has {actual_extended}. Update the table."
+        )
+
+
 class TestArchitectureDeviceNameListCompleteness:
     """Guard: ARCHITECTURE.md framing.py section inline device name lists
     contain all device types from code, not just the correct count labels.
