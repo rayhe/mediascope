@@ -1,5 +1,72 @@
 # MediaScope Iteration Log
 
+## 2026-07-12 12:00 PT — Type A: Article Deep Dive (NY Post Muse Image Opt-Out, Jul 10)
+
+**Article:** "New Meta feature lets anyone use your Instagram photos in AI images – here's how to opt out" (NY Post, Jul 10, 2026)
+**Files:** `nypost_muse_image_opt_out_privacy_2026_07_10_article.txt`, `nypost_muse_image_opt_out_privacy_2026_07_10_analysis.md`
+
+**Why this article:** First NY Post article in the corpus — News Corp / Murdoch ownership chain, distinct from all other tracked publications. Service journalism format with consent alarm framing and competitive guilt transfer, both previously undetectable. Domain blocks on Wired/NYT/Verge prevented access to tracked-pub articles from Jul 10-12.
+
+### Toolkit Bugs Fixed (3)
+
+1. **emotional_language_intensity = 0.0 on privacy alarm articles:** EMOTIONAL_LANGUAGE dictionary was entirely missing privacy/consent alarm terms. Added 30 terms (deepfake, nudify, class-action lawsuit, automatically enrolled, without your knowledge, lawsuit, controversy, etc.). Dictionary: 941 → 971 terms. Impact: 0.0 → 1.0 on this article.
+
+2. **privacy_data topic underscored at 0.28:** TOPIC_KEYWORDS["privacy_data"] missing consent-enrollment terms. Added 11 terms. Impact: 0.28 → 0.527 (correctly promoted to primary topic).
+
+3. **Missing framing device types for privacy service journalism:** Added 3 new device types (4 regex patterns):
+   - `consent_alarm` — default-opt-in / automatic enrollment framing (6 detections)
+   - `no_comment_implication` — non-response published as evasiveness (1 detection)
+   - `competitive_guilt_transfer` — competitor scandal guilt transfer (2 detections)
+
+### Stats After This Iteration
+- Framing device types: 98 → **101** (10 core + 84 extended + 7 structural)
+- Total regex patterns: 576 → **580**
+- Emotional language terms: 941 → **971**
+- Annotated articles: 160 → **161**
+- All 2,272 tests pass
+
+### Remaining Issue
+VADER raw_tone (+0.6023) is still inverted for this clearly alarmist article. New VADER failure category identified: **procedural service journalism** where alarm is structural (consent_alarm devices, guilt transfer sections) rather than lexical. No correction path fires because the article lacks adversarial editorial vocabulary — the alarm comes from structural framing, not word choice.
+
+---
+
+## 2026-07-12 11:00 PT — Type D: Toolkit Quality & Documentation (Stats Sync, Framing Dedup, Proposed Additions)
+
+**Focus:** Documentation accuracy and structural cleanup — stale README stats, duplicated framing device entries, and missing tracking for proposed additions.
+
+### Changes Made
+
+#### 1. README Stats Sync (3 fixes)
+- **Entity clusters:** 84 → 85 (Patent/IP Research cluster #85 was added Jul 12 but README wasn't updated)
+- **Entity auto-generated:** 21 → 22 (same cluster)
+- **Career-entry migrations:** 895 → 897 in stats table; 1,122 → 897 in editorial histories prose section (the 1,122 number was a stale count that predated multiple migrations being cleaned up)
+- `python3 scripts/count_stats.py --check` now returns ✅
+
+#### 2. FRAMING_REFERENCE.md Deduplication
+- **Problem:** Devices #95 (Grudging Concession) and #96 (Ultimatum Framing) appeared in both Category 12 (Financial & Investor Media Framing) table AND as standalone entries in their own dedicated Categories 13 (Concession & Acknowledgment) and 14 (Procedural Compression). The Category 12 entries had different, less specific key triggers than the dedicated category entries.
+- **Fix:** Removed the Category 12 duplicate rows. Added a cross-reference note after device #94 pointing readers to Categories 13/14 where the devices are fully documented with better descriptions and more specific trigger examples.
+- **Impact:** No code changes — devices 95/96 are only used by name in pattern matching, and the canonical descriptions in Categories 13/14 are unchanged. Purely a documentation clarity fix.
+
+#### 3. Proposed Additions Section (NEW)
+Added a "Proposed Additions (Pending Validation)" section to FRAMING_REFERENCE.md tracking:
+- **Ironic Consolidation** — candidate framing device for bundling multiple independent negative narratives with ironic thematic links. 1 example found (Gizmodo siege roundup), needs 2+ more.
+- **Path L — Structural Irony** — candidate correction path for macro-level article organization that creates negative framing invisible at sentence level. Needs validation articles.
+- **Formal promotion criteria** documented: ≥3 independent articles from ≥2 publications, distinguishable from existing devices, measurable scoring impact, regression tests required.
+
+Also added cross-reference to proposed Path L in SENTIMENT_CORRECTION_REFERENCE.md's naming convention section.
+
+#### 4. Test Verification
+- 2,272 tests passed both before and after changes (no regressions)
+
+### Stats After This Iteration
+- Entity clusters: 85 (unchanged)
+- Total aliases: 835 (unchanged)
+- Annotated articles: 160 (unchanged — documentation-only)
+- Tests: 2,272 passed, 0 failed
+- Commit: `21af8e7` — pushed to GitHub
+
+---
+
 ## 2026-07-12 10:00 PT — Type C: Ownership & Funding Deep Dive (Atlantic — OpenAI Executive Attrition + Apple v. OpenAI Enrichment)
 
 **Focus:** The Atlantic / Emerson Collective — chosen because the Apple v. OpenAI lawsuit (filed Jul 10) creates the most acute active conflict in the tracked set, and OpenAI's executive instability directly affects the Atlantic's licensing partner.

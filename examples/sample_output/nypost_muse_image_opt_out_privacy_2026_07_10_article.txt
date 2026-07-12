@@ -1,0 +1,53 @@
+SOURCE: New York Times Post
+URL: https://nypost.com/2026/07/10/business/new-meta-feature-lets-anyone-use-your-instagram-photos-in-ai-images-how-to-opt-out/
+PUBLISHED: 2026-07-10
+ACCESSED: 2026-07-12
+TITLE: New Meta feature lets anyone use your Instagram photos in AI images – here's how to opt out
+BYLINE: Not attributed (NY Post Tech desk)
+SECTION: Business/Tech
+
+---
+
+New Meta feature lets anyone use your Instagram photos in AI images – here's how to opt out
+
+Meta has launched its first AI image generator – and it has automatically enrolled Instagram accounts, meaning anyone on the internet can use your photos unless you turn off the feature.
+
+Meta's Superintelligence Labs on Tuesday introduced Muse Image, a bot meant to compete with OpenAI's ChatGPT Images 2.0 and Google's Nano Banana 2.
+
+The new model has been folded into Instagram and automatically opts-in all public accounts on Instagram – meaning anyone can simply tag your username in an AI prompt and use Muse Image to generate an image using your likeness.
+
+Instagram accounts will not be notified about content created using AI features, according to Meta – so your photos and videos could be remixed and transformed by other users without your knowledge.
+
+How to turn off the feature
+
+Instagram users with private accounts are not opted-in to the new model, so you can switch your account's status from public to private.
+
+If you'd like to keep your account public, you'll have to turn off the feature in the app's settings.
+
+The first step is to make sure your Instagram app is updated. Otherwise, the option to turn off the feature will not be available.
+
+Open the Instagram app, tap on your profile and then tap the three lines in the top-right corner of the screen, which say "Menu."
+
+Scroll to "How others can interact with you" and tap "Sharing and reuse."
+
+Below "Allow people to reuse your content on Instagram and with AI features at Meta," tap the "Toggle off" button to turn off access to your posts.
+
+Switching your account to private or toggling off the feature will only prevent new images from being generated, so any AI images already created by other users with your content will not be deleted.
+
+What is Muse Image?
+
+The AI generation bot is first rolling out across the US.
+
+If users do not opt-out of Muse Image, then anyone on Instagram can create an AI-generated image using all or part of your photos, Reels and feed videos.
+
+In a blog post, Meta marketed Muse Image as a helpful tool to "design a custom event invitation, mock up a collaborative creative concept, or generate a personalized graphic."
+
+The bot can also be used "to place your pet in a famous painting or combine a selfie with a vacation photo to create a custom postcard," the company said.
+
+Meta did not immediately respond to The Post's inquiry about why public accounts are automatically opted in.
+
+Deepfake controversies
+
+Elon Musk's chatbot, Grok, is facing a class-action lawsuit and an EU privacy investigation after its AI image-generation feature allowed users to "nudify" images of real women and children on social-media platform X.
+
+Apple reportedly privately threatened to remove Grok from its App Store in January over the deepfake controversy.

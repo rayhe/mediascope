@@ -679,6 +679,25 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "colliding", "unethical", "far-fetched",
     "bad track record", "couldn't be blamed",
     "nude videos", "nude footage",
+    # Privacy/consent alarm language — service journalism articles that frame
+    # products as threats use these terms to signal danger without editorial
+    # adjectives.  Discovered from NY Post Muse Image opt-out article
+    # (Jul 10 2026) where emotional_intensity was 0.0 despite clearly
+    # alarming tone.
+    "deepfake", "deepfakes", "deepfake controversy",
+    "nudify", "nudified",
+    "class-action lawsuit", "class-action",
+    "without your knowledge", "without their knowledge",
+    "without your consent", "without their consent",
+    "automatically enrolled", "automatically opted in", "automatically opts-in",
+    "automatically opted-in", "auto-enrolled",
+    "use your likeness", "using your likeness",
+    "use your photos", "using your photos",
+    "privacy investigation", "privacy probe",
+    "threatened to remove", "privately threatened",
+    "controversy", "controversies",
+    "lawsuit", "lawsuits",
+    "class action", "class actions",
 ]
 
 # Passive/victim vs. active/powerful framing indicators

@@ -374,7 +374,7 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 91, (
+        assert len(_DEVICE_PATTERNS) == 94, (
             f"Expected 90 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
@@ -532,6 +532,12 @@ class TestFramingDeviceRegistry:
             "recidivism_framing",
             # Reader positioning (1) — second-person concessive constructions presupposing agreement
             "reader_positioning",
+            # No-comment implication (1) — "did not immediately respond" evasiveness framing
+            "no_comment_implication",
+            # Competitive guilt transfer (1) — linking product to competitor's scandal
+            "competitive_guilt_transfer",
+            # Consent alarm (1) — default opt-in / automatic enrollment as consent violation
+            "consent_alarm",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual

@@ -1,6 +1,6 @@
 # Framing Device Quick Reference
 
-> A compact lookup card for all 98 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
+> A compact lookup card for all 101 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
 
 ---
 
@@ -88,6 +88,9 @@ Devices that frame entities, companies, or individuals through power dynamics, c
 | 39 | **Refusal Amplification** | E | Entity's non-cooperation emphasized beyond its news value | "declined," "refused," positioned to imply guilt |
 | 97 | **Recidivism Framing** | E | Entity framed as serial offender through temporal recurrence markers | "once again," "yet again," "continues to," "not for the first time," "has a history of" |
 | 98 | **Reader Positioning** | E | Second-person concessive constructions presupposing reader agreement | "you couldn't be blamed," "you'd be forgiven for thinking," "hard to blame anyone," "you'd be right to worry" |
+| 99 | **No-Comment Implication** | E | Non-response published as implicit evasiveness | "did not immediately respond," "declined to comment," "could not be reached for comment" |
+| 100 | **Competitive Guilt Transfer** | E | Competitor scandal juxtaposed to transfer culpability | "facing a class-action lawsuit," "threatened to remove from App Store" |
+| 101 | **Consent Alarm** | E | Default opt-in / automatic enrollment framed as consent violation | "automatically enrolled," "without your knowledge," "use your likeness" |
 
 ---
 
@@ -266,9 +269,9 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 | Tier | Count | Detection Method |
 |---|---|---|
 | Core | 10 | Pattern matching — fundamental editorial techniques |
-| Extended | 80 | Pattern matching — discovered from real article analysis |
+| Extended | 84 | Pattern matching — discovered from real article analysis |
 | Structural (post-pass) | 7 | Full-article heuristics (position, accumulation, structure) |
-| **Total** | **98** | |
+| **Total** | **101** | |
 
 ---
 

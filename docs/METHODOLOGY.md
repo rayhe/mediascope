@@ -185,7 +185,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 98 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (81 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 101 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (84 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -290,6 +290,9 @@ These were added through systematic analysis of real articles from the five trac
 | **Defensive Verb Framing** | Editorial choice of attribution verbs that frame a subject's statements as reactive, embattled, or on the defensive rather than as substantive positions. "Denied," "attempted yet failed," "conceded," "was forced to" are editorialised verb choices; neutral alternatives include "said," "stated," "contended," "responded." Distinct from confession_framing (which catches "admitted to") and corporate_reassurance_undercut (which catches "insisted/maintained" + "but/however"). Defensive verb framing detects the standalone editorial choice of loaded attribution verbs | "attempted yet/but failed to"; "was/were forced/compelled/obliged to"; "grudgingly/reluctantly acknowledged/conceded"; "scrambled/struggled/fought to"; "has been plagued/beset/dogged/haunted by" | Gizmodo "Meta's Teen Safety Case Just Became a $1.4 Trillion Existential Threat" (Jul 8, 2026) — "attempted yet failed to get the addiction claims dismissed" frames a routine motion-to-dismiss denial as a defeat; "has been plagued with mounting litigation" uses victimisation language. Neutral alternatives: "a judge denied the company's motion" and "faces ongoing litigation" |
 | **Reader Positioning** | Second-person constructions that align the reader with the author's editorial stance before evidence is presented, creating a presumption of shared judgment. The writer addresses the reader directly as a reasonable person who would naturally agree with the framing. Distinct from assumed_consensus (which claims everyone agrees) and editorial_aside (which breaks register for sarcastic asides). Reader positioning uses second-person concessive constructions that presuppose the reader's agreement | "you couldn't be blamed"; "you'd be forgiven for thinking"; "hard to blame anyone"; "nobody could fault you"; "you'd be right to worry/wonder/suspect"; "reasonable/natural/logical to assume/think" | Gizmodo "Meta Thinks It Can Convince You That Smart Glasses Need Facial Recognition" (Jul 11, 2026) — "you couldn't be blamed for thinking" positions the reader as already sharing the author's skeptical stance toward Meta's facial recognition push before evidence is presented. The construction presupposes agreement rather than earning it |
 | **Heritage Nostalgia** | Age references, generational continuity, or historical significance establishing emotional stakes for disruption — implying that what is threatened has deep, irreplaceable value. Distinct from precedent_framing (which signals rarity through time-span comparison) and historical_legitimation (which inserts old positive data to dilute negative news). Heritage nostalgia creates implicit argument that the subject of disruption carries intergenerational weight the reader should feel protective of | "\d+-year-old [entity]"; "fifth/third/N generation [working at/family]"; "iconic/storied/historic [building/landmark]"; "for N years/decades/centuries"; "family-owned/run since [year]" | Reuters "Big Tech data centers are driving up power bills at America's Rust Belt factories" (Jul 7, 2026) — "141-year-old brick manufacturer," "fifth generation working at the company," "products can be found in iconic buildings" — establishes the emotional weight of industrial heritage threatened by Big Tech electricity demand |
+| **No-Comment Implication** | Publishing a subject's non-response ("did not immediately respond," "declined to comment") as an implicit editorial judgment of evasiveness. Distinct from silence_as_guilt (which treats absence of action as confession) and the source-extraction no_comment type (which classifies the source, not the framing effect). No-comment implication operates at the structural level: the journalist includes the non-response specifically to frame the subject as uncooperative | "did not immediately respond"; "declined to comment"; "did not return a request for comment"; "could not be reached for comment"; "would not comment"; "has not responded" | NY Post Muse Image opt-out (Jul 10, 2026) — "Meta did not immediately respond to The Post's inquiry about why public accounts are automatically opted in." The non-response is published specifically to frame Meta as evasive about the opt-in default, implying the question has no good answer |
+| **Competitive Guilt Transfer** | Linking a product or company to a competitor's scandal in the same section or paragraph, creating guilt by proximity without directly accusing the subject. The editorial effect is transferred culpability: the reader processes the subject's product through the lens of the competitor's scandal. Distinct from guilt_by_association (which links the subject to specific bad actors) and scandal_comparison (which explicitly draws parallels between scandals) | "facing a class-action lawsuit"; "facing an EU privacy investigation"; "threatened to remove from App Store"; "banned from"; "pulled from" | NY Post Muse Image opt-out (Jul 10, 2026) — the article's final section pivots from Muse Image to Grok's "nudify" deepfake controversy, creating an inference chain Meta→AI images→Grok→nudify→children→lawsuit without directly accusing Meta of enabling deepfakes. The juxtaposition transfers the scandal's emotional weight |
+| **Consent Alarm** | Default-opt-in or automatic enrollment language that frames product defaults as a consent violation. Common in privacy service journalism, where the very existence of opt-out instructions implies the default is threatening. Distinct from loaded_language (individual loaded words) and default_burden_privacy (which focuses on the burden of opting out). Consent alarm targets the structural framing of enrollment/consent mechanisms | "automatically enrolled"; "automatically opted in"; "without your knowledge"; "without your consent"; "use your likeness"; "anyone can use/create/generate" | NY Post Muse Image opt-out (Jul 10, 2026) — "automatically enrolled Instagram accounts, meaning anyone on the internet can use your photos unless you turn off the feature." Six consent_alarm instances in one article, establishing the core editorial frame: the default is a violation, not a feature |
 
 #### Structural Devices (Post-Pass)
 
@@ -826,7 +829,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 98-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 101-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1366,7 +1369,7 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **160 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **161 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1482,7 +1485,7 @@ Articles cluster into 9 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 160 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 161 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
@@ -1514,7 +1517,7 @@ The EU DSA "Addictive Design" cluster (Jul 10, 2026) is the widest genre-control
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 98 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 101 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|

@@ -8181,27 +8181,86 @@ _RECIDIVISM_FRAMING_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["recidivism_framing"] = _RECIDIVISM_FRAMING_PATTERNS
 
 
+# --- No-comment implication ---
+# "X did not immediately respond" / "X declined to comment" positions the
+# subject as evasive.  Distinct from the source-extraction no_comment type:
+# this captures the *framing* effect of publishing the non-response.
+# Discovered via NY Post Muse Image opt-out article (Jul 10, 2026).
+_NO_COMMENT_IMPLICATION_PATTERNS: list[re.Pattern] = [
+    re.compile(
+        r"\b(?:did not (?:immediately )?respond|declined to comment|"
+        r"did not (?:return|reply to)|refused to comment|"
+        r"could not be reached for comment|"
+        r"would not comment|has not responded)\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["no_comment_implication"] = _NO_COMMENT_IMPLICATION_PATTERNS
+
+
+# --- Competitive guilt transfer ---
+# Links a product/company to a competitor's scandal in the same section or
+# paragraph, creating guilt by proximity.  The Grok "nudify" deepfake
+# section at the end of the NY Post Muse Image article (Jul 10, 2026) is
+# the canonical example: Meta→Grok→nudify→children→lawsuit creates an
+# inference chain without directly accusing Meta of enabling deepfakes.
+_COMPETITIVE_GUILT_TRANSFER_PATTERNS: list[re.Pattern] = [
+    re.compile(
+        r"\b(?:facing (?:a |the )?(?:class[- ]action )?lawsuit|"
+        r"facing (?:an? )?(?:EU |federal |state )?(?:privacy )?investigation|"
+        r"facing (?:a |the )?probe)\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:threatened to remove|banned from|pulled from|"
+        r"removed from (?:the |its )?(?:app ?store|platform))\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["competitive_guilt_transfer"] = (
+    _COMPETITIVE_GUILT_TRANSFER_PATTERNS
+)
+
+
+# --- Consent alarm framing ---
+# Default-opt-in / "automatically enrolled" language that frames product
+# defaults as a consent violation, common in privacy service journalism.
+# Distinct from loaded_language because it targets structural consent framing,
+# not individual loaded words.
+_CONSENT_ALARM_PATTERNS: list[re.Pattern] = [
+    re.compile(
+        r"\b(?:automatically (?:enrolled|opted[- ]in|opt[s]?[- ]in)|"
+        r"default(?:ed)? opt[- ]?in|opted[- ]in by default|"
+        r"enrolled by default|without (?:your |their )?(?:knowledge|consent|"
+        r"permission)|(?:use|using) your (?:likeness|photos?|images?|face)|"
+        r"anyone (?:on the internet |)can (?:use|create|generate))\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["consent_alarm"] = _CONSENT_ALARM_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 91 pattern-matched device types plus 7 structural
-    post-pass types (98 total).
+    Scans for 94 pattern-matched device types plus 7 structural
+    post-pass types (101 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (91): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (94): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_displacement,
-    competitive_positioning,
+    competitive_guilt_transfer, competitive_positioning,
     commodification_metaphor, confession_framing,
-    consumer_ownership,
+    consent_alarm, consumer_ownership,
     corporate_reassurance_undercut, cross_publication_import,
     default_burden_privacy, defensive_verb_framing,
     denial_contradiction,
@@ -8222,7 +8281,7 @@ def detect_framing_devices(
     loaded_language, loss_leader_framing,
     marginal_endorsement, market_verdict,
     military_techno_optimism, narrative_reframing,
-    outsourced_intensity, overbuilding_narrative,
+    no_comment_implication, outsourced_intensity, overbuilding_narrative,
     pathologizing_metaphor, policy_reversal, power_asymmetry,
     precedent_analogy, precedent_framing,
     prescriptive_solutionism,

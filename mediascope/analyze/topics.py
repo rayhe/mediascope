@@ -78,6 +78,14 @@ TOPIC_KEYWORDS: dict[str, list[str]] = {
         "screen scraping", "screen scraped", "keystroke",
         "always-on recording", "always-on camera", "always-on microphone",
         "super-sensing", "super sensing",
+        # Consent/enrollment alarm terms — discovered via NY Post Muse Image
+        # opt-out article (Jul 10 2026) where privacy_data scored only 0.28
+        "without your knowledge", "without their knowledge",
+        "automatically enrolled", "automatically opted in", "automatically opts-in",
+        "your likeness", "public accounts", "public profiles",
+        "deepfake", "deepfakes", "nudify",
+        "how to opt out", "how to turn off",
+        "privacy investigation", "privacy probe",
     ],
     "antitrust_regulation": [
         "antitrust", "anti-trust", "monopoly", "monopolistic",
