@@ -1,5 +1,47 @@
 # MediaScope Iteration Log
 
+## 2026-07-12 17:00 PT — Type D: Toolkit Quality & Documentation (Path K Staleness Fix, Known Limitations Update)
+
+**Focus:** Cross-document consistency audit for Path K (Sarcastic Rejection Editorial) — discovered that Path K's implementation created stale references across ARCHITECTURE.md and METHODOLOGY.md, where "Path K" was still proposed for financial journalism genre correction.
+
+### Changes Made
+
+#### 1. ARCHITECTURE.md — Path K Table Entry (missing)
+- **Problem:** Path K existed in the ASCII pipeline diagram (added when Path K was implemented) but was never added to the correction paths data table below the diagram. The table went A–J.
+- **Fix:** Added row for Path K: `Sarcastic rejection editorial | raw ≥ 0.3, ≥2 sarcastic_correction, EI ≥ 0.7 | 10% raw / 90% target`
+
+#### 2. ARCHITECTURE.md — Known Limitations Section (stale)
+- **Problem:** Section said "Financial journalism inflation (Path K proposed)" — but Path K is now implemented as Sarcastic Rejection Editorial. The financial journalism inflation issue is real but needs a new path letter.
+- **Fix:** Changed to "Financial journalism inflation (unaddressed)" with note explaining the letter assignment. Added third Known Limitation: "Procedural service journalism (unaddressed)" — VADER misscores privacy alarm articles where negative tone is structural (consent_alarm devices) rather than lexical. Discovered Jul 10 via NY Post Muse Image opt-out article.
+
+#### 3. ARCHITECTURE.md — Entity Clusters Count (stale)
+- **Problem:** Said "Entity clusters (83)" but count_stats.py shows 85 (clusters #84 Privacy Advocacy and #85 Patent/IP Research were added Jul 11–12).
+- **Fix:** Updated to "Entity clusters (85)".
+
+#### 4. METHODOLOGY.md — §16.6 Title (stale)
+- **Problem:** Section titled "Future Work: Path K (Financial Genre Correction)" with body text saying "A potential Path K correction…" — all references to "Path K" for financial journalism were stale.
+- **Fix:** Retitled to "Future Work: Financial Genre Correction (Unaddressed)" with explanatory note that Path K letter is now assigned to sarcastic rejection. Updated design constraint and validation requirement prose to remove "Path K" references.
+
+#### 5. METHODOLOGY.md — Two Table References (stale)
+- **Line 1485:** Financial genre row said "Future Path K" → "Unaddressed (see §16.6)"
+- **Line 1634:** Correction path row said "future Path K planned" → "unaddressed; financial genre correction unaddressed (see §16.6)"
+
+#### 6. Verified Pattern Count Consistency
+- Investigated discrepancy: count_stats.py reports 642 "Compiled framing patterns" (total `re.compile()` calls in framing.py) vs. test_structural_consistency.py guards `_DEVICE_PATTERNS` dict count at 581 (runtime dispatch patterns). These are different measures — 61 additional compiled patterns are helper/sub-patterns not in the dispatch dict. Both are correct; ARCHITECTURE diagram correctly uses 581 (runtime count) while README uses 642 (source-level count). No change needed.
+
+### Verification
+- 2,280 tests passed (0 failures)
+- 115 structural consistency tests passed (guards device count, doc cross-references, Path K table presence)
+- `count_stats.py --check` → ✅ README stats current
+- No stale "Future Path K" or "Path K proposed" references remain in any doc file
+
+### Stats After This Iteration
+- Tests: 2,280 (unchanged — doc-only changes, no code)
+- Commit: `b1aa030`
+- Pushed: ✅ (`9e13476..b1aa030`)
+
+---
+
 ## 2026-07-12 14:00 PT — Type C: Ownership & Funding Deep Dive (MIT Technology Review)
 
 **Focus:** MIT Technology Review — CSAIL Alliance Program expansion, Pegatron bilateral partnership, and MIT Quantum Systems Laboratory (QSL). All three represent significant new institutional/funding relationships discovered since last Type C pass.
