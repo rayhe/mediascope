@@ -204,7 +204,8 @@ _EMOTIONAL_APPEAL_PATTERNS: list[re.Pattern] = [
         r"\b(?:shocking|outrageous|alarming|horrifying|"
         r"heartbreaking|sickening|infuriating|appalling|"
         r"disgusting|shameful|disgraceful|deplorable|"
-        r"unconscionable|unforgivable|inexcusable)\b",
+        r"unconscionable|unforgivable|inexcusable|"
+        r"nauseating|repugnant|revolting)\b",
         re.IGNORECASE,
     ),
     # Alarm / anxiety idioms — editorial language that conveys urgency
@@ -402,6 +403,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"controversial|notorious|disgraced|under fire|"
         r"under siege|besieged|defiant|brazen|arrogant|"
         r"tone-deaf|out of touch|nefarious|scandalous|"
+        r"ill-fated|doomed|ill-conceived|"
         r"comically|laughably|absurdly|laughable|"
         r"dishonest|dishonesty|fundamentally\s+(?:dishonest|unethical|flawed|problematic)|"
         r"deceptive|misleading|disingenuous|misuse[sd]?|"
@@ -4146,6 +4148,18 @@ _EDITORIAL_DEFLATION_PATTERNS.extend([
         r"(?:just|merely|only|basically|essentially|nothing\s+more\s+than)?\s*"
         r"(?:a\s+)?(?:neat|nice|interesting|cool|cute|modest|small|incremental|minor"
         r"|limited|preliminary|early|niche)\b",
+        re.IGNORECASE,
+    ),
+    # --- Added 2026-07-12: Gizmodo Muse Image "scrapped" article ---
+    # Standalone adjective "supposed [noun]" — delegitimizes by treating
+    # a claimed feature/benefit as dubious.  "supposed breakthroughs",
+    # "supposed improvements", "supposed benefits".  Distinct from
+    # the existing "supposed to" / "meant to" patterns which capture
+    # verb-phrase constructions (expectation vs. reality).
+    re.compile(
+        r"\bsupposed\s+(?:breakthrough|improvement|benefit|advantage|"
+        r"innovation|advance|feature|capability|progress|upgrade|"
+        r"safeguard|protection|gain|achievement|revolution|fix|solution)s?\b",
         re.IGNORECASE,
     ),
     # Faint praise / damning with diminutives: "a neat/nice/interesting

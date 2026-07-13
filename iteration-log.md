@@ -20634,3 +20634,37 @@ Documentation audit found stale counts across README, FRAMING_REFERENCE, and ARC
 - All 2,325 tests pass (full suite, 179s)
 - All 115 structural consistency tests pass
 - Sample output created: `gizmodo_meta_ai_detector_content_seal_2026_07_11_analysis.md`
+
+---
+
+## 2026-07-12 21:00 PT — Type A: Article Deep Dive
+
+**Article:** Gizmodo — "The Public Got So Mad at Meta's New AI Photo Tool That It's Scrapped Already" (Jul 11, 2026)
+
+### Focus
+Gizmodo's post-mortem on Meta Muse Image shutdown.  Short editorial piece (~400 words) with heavy embedded quote inflation (Meta blog post PR language + SAG-AFTRA formal statement).  Final phase of the Muse Image lifecycle cross-narrative arc.
+
+### Toolkit Gaps Found & Fixed
+
+1. **"nauseating" missing from emotional_appeal + EMOTIONAL_LANGUAGE:** "frankly nauseating episodes" went undetected.  Added "nauseating", "repugnant", "revolting" to `_EMOTIONAL_APPEAL_PATTERNS` in framing.py and to `EMOTIONAL_LANGUAGE` in sentiment.py.
+
+2. **"ill-fated" missing from loaded_language:** "ill-fated video generator Sora" — judgmental modifier not in character-descriptor group.  Added "ill-fated", "doomed", "ill-conceived" to loaded_language patterns.  Added "ill-fated" to `EMOTIONAL_LANGUAGE`.
+
+3. **Standalone "supposed [noun]" editorial_deflation miss:** "supposed breakthroughs in work productivity" — existing patterns only caught "supposed to" verb constructions, not standalone adjective + noun.  Added new pattern for "supposed [breakthrough|improvement|benefit|advantage|innovation|...]".
+
+### Sentiment Correction Validation
+Path L (Quote-inflated body with negative headline) — designed from this article — correctly addresses the VADER inflation (+0.9385 compound) caused by embedded Meta PR blockquote and SAG-AFTRA formal language.  The 1 sarcastic_correction device is below Path K's threshold (≥2), so Path L is the correct correction path for this article.
+
+### Analysis File
+- `examples/sample_output/gizmodo_meta_muse_image_scrapped_2026_07_11_analysis.md`
+
+### Stats Change
+- Regex patterns: 592 → 593 (+1 editorial_deflation "supposed [noun]")
+- Emotional language terms: 971 → 975 (+4: nauseating, repugnant, revolting, ill-fated)
+- Annotated articles: 164 → 165
+- Tests: 2,325 (unchanged count, updated assertions)
+- Entity clusters: 85 (unchanged)
+
+### Verification
+- All 2,325 tests pass (full suite, 162s)
+- All 115 structural consistency tests pass

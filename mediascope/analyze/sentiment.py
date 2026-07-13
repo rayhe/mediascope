@@ -131,6 +131,7 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "unprecedented", "catastrophic", "disastrous", "scandalous",
     "shameful", "disgraceful", "appalling", "egregious", "reckless",
     "ignominious", "disingenuous", "hubris",
+    "nauseating", "repugnant", "revolting", "ill-fated",
     "sinister", "insidious", "toxic", "predatory", "ruthless",
     "brazen", "defiant", "embattled", "beleaguered", "under fire",
     "under siege", "slammed", "blasted", "hammered", "crushed",
