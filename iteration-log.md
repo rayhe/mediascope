@@ -1,5 +1,31 @@
 # MediaScope Iteration Log
 
+## 2026-07-12 23:00 PT — Type B: Journalist Research (Zoë Schiffer Profile Expansion)
+
+**Focus:** Expanded Zoë Schiffer's `journalists.yaml` entry from a notes-only stub to a fully structured profile with education, awards, source URLs, and updated analytical notes.
+
+**Why Schiffer:** Director of Business & Industry at Wired — the highest editorial authority for all business/Big Tech coverage below Barrett/Drummond. Her entry had 7 career entries but lacked `education`, `awards`, `source_urls`, and `multi_publication` fields. Also: Wired posted a job for "editor to lead business coverage" on 2026-07-02 that overlaps with her Director role — possible departure signal.
+
+**Research sources verified:**
+- Stanford alumni article: `journalism.stanford.edu/news/stanford-alums-translate-journalism-skills-book-publishing` (confirmed MA 2019, mentored by Janine Zacharia)
+- Penguin Random House: `penguinrandomhouse.com/books/741192/extremely-hardcore-by-zoe-schiffer/9780593716618/` (ISBN 9780593716601, Feb 13 2024, 352pp)
+- Muck Rack profile: `muckrack.com/zoe-schiffer/articles` (252+ articles)
+- TalkingBizNews departure/hire announcements (already in career entries)
+- PRH author bio confirms media appearances: CNN, NBC, CNBC, BBC
+
+**Changes:**
+- `profiles/careers/journalists.yaml`: +35 lines for Schiffer entry:
+  - 3 education entries (Liceo Scientifico Galileo Galilei, UC Berkeley BA Political Science, Stanford MA Journalism 2018-19)
+  - 1 book award (Extremely Hardcore, Portfolio/PRH, 2024)
+  - 6 verified source URLs
+  - `multi_publication: true` flag
+  - Updated notes with departure signal analysis, media appearances, social handles (@reporterzoe), Uncanny Valley podcast co-hosting
+- All 2,342 tests pass (no new tests needed — profile data changes only)
+
+**Commit:** `a8bd724` — pushed to GitHub
+
+**New journalists check:** Searched TalkingBizNews and Editor & Publisher for recent Wired hires. All found (Brian Kahn, Sophie Kleeman, Miles Klee, Alana Hope Levinson, Maxwell Zeff) are already tracked with full profiles.
+
 ## 2026-07-12 22:00 PT — Type A: Article Deep Dive (AP Meta Appeals Verdict)
 
 **Focus:** AP wire article "Meta appeals verdict in social media addiction lawsuit" (Jul 11, 2026). Manually analyzed framing in a short-form legal/litigation wire report, compared against toolkit output, fixed 3 detection gaps.
