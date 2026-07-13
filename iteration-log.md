@@ -1,5 +1,88 @@
 # MediaScope Iteration Log
 
+## 2026-07-13 12:00 PT — Type C: Ownership & Funding Deep Dive (Guardian — SPUR Telemetry, BBC-Channel 4, Int'l Regulatory)
+
+**Commit:** `0a886e4` — "Type C: Guardian profile — SPUR telemetry comment period extended (Jul 24), 12 GitHub issues, BBC-Channel 4 sovereign streaming, French antitrust Meta ruling, NYT-OpenAI sanctions (Jul 13)"
+
+### Focus Areas
+
+#### 1. SPUR Telemetry Standard — Comment Period Extension + New Issues
+
+**Key finding:** Comment period extended from July 10 to **July 24, 2026** (14-day extension). Updated profile accordingly.
+
+**GitHub issues expanded from 9 → 12.** New issues since last update (Jul 6):
+- **#22 (Jul 12):** Entitlement-verification unspecified — most sophisticated issue filed yet. Separates verification into two axes: (a) was the event true? vs (b) was the reporting party entitled/licensed? Filed by "Wallace, LicenseFoundry" (implementer/SDK author). Proposes W3C Verifiable Credentials + `did:web` resolution. Highlights that revoked grants are currently indistinguishable from valid ones.
+- **#20 (Jul 10):** Verification beyond origin — recomputable attribution, tiered evidence disclosure, accredited auditor seats (abnerguzman)
+- **#19 (Jul 10):** No carrier for computed attribution — fractional attribution report standard (abnerguzman)
+- **#18 (Jul 10):** Verification profile for grounding/citation — publisher-seeded markers + audit ledger (pwright-bf)
+- **#17 (Jul 6):** Promote `content_id` scheme registration to normative requirement (RedHorseMane)
+- **#16 (Jul 6):** Content-derived ISCC fingerprint fields for grounding/citation (RedHorseMane)
+
+**Notable pattern:** 4 of last 5 issues (#18, #19, #20, #22) address the self-reporting verification gap — confirming this is the community's primary concern.
+
+**Still NO major AI company comments** — now even more significant given the extension. Also discovered that `jalexspringer` (issues #12, #13, #14) is SPUR's own Alex Springer filing self-clarification issues on the standard. Genuine external comments: 9 (not 12).
+
+#### 2. BBC-Channel 4 "Sovereign Streaming Platform" — Expanded Brittin Analysis
+
+Updated `bbc_spur_revolving_door.analytical_significance` with:
+- Brittin's specific quotes to MPs: Channel 4 "very subscale," licence fee "busted flush"
+- ITV-Comcast/Sky acquisition context driving PSB consolidation urgency
+- Brittin's BBC-C4 proposal as SPUR leverage amplification: combined PSB streaming entity would be the single largest collective content owner in UK public service media
+- Channel 4 CEO Priya Dogra's openness to collaboration (not wholesale merger)
+- BBC Sounds expansion to third parties (audio parallel to video consolidation)
+
+#### 3. New Section: `global_publisher_ai_regulatory_developments_jul2026`
+
+Added cross-cutting international regulatory section between CMA ruling and Cloudflare sections:
+
+- **French antitrust Meta ruling (Jul 8):** Autorité de la concurrence ordered Meta to resume publisher payment talks with DVP/APIG within 15 days. First regulatory ORDER mandating payment (vs CMA opt-out). Two-jurisdiction enforcement pincer: UK exit rights + France payment mandates.
+- **NYT-OpenAI sanctions motion (Jul 9):** NYT alleges OpenAI concealed evidence searches for copyrighted content. Validates SPUR telemetry premise: self-reporting cannot be trusted without independent verification.
+
+### Sources
+- GitHub: SPUR-Coalition/telemetry/issues (12 issues, comment period extended text in README)
+- Reuters (Jul 8): French antitrust Meta publisher fees ruling
+- Reuters (Jul 9): NYT-OpenAI sanctions motion
+- The Times/The Sun/BroadbandTVNews (Jul 8-13): BBC-Channel 4 partnership details
+- TechCrunch/ComputerWeekly/AEI (Jun 3-4): CMA Google AI Overviews ruling context
+- WAN-IFRA/Ringier/ConnexionBlog: SPUR expansion to 36 members
+
+### Stats after commit
+- Guardian profile: ~2,139 lines (was ~2,034)
+- 2,437 tests passing across 108 files (no change)
+
+---
+
+## 2026-07-13 11:00 PT — Type B: Journalist Research (James Vincent)
+
+**Journalist:** James Vincent — The Verge's primary AI reporter (~2015–2023), now freelance
+
+**Profile added:** `profiles/careers/journalists.yaml` — 5 career entries:
+1. Science and Technology Reporter, The Independent (UK, pre-2015)
+2. Senior Editor (AI/ML/Robotics), The Verge (~2015–2023)
+3. Freelance writer/author (2023–present)
+4. Essayist, London Review of Books (2023–present)
+5. Opinion contributor (AI), The Guardian (2025–present)
+
+**Editorial changes added:** `profiles/careers/editorial_changes.yaml`
+- The Verge departure (2023): senior_editor_ai — one of most prolific AI reporters of modern deep learning era
+- Guardian arrival (2025): opinion_contributor_ai — DeepSeek opinion piece cited in EU Parliament, Alberta Law Review
+
+**Key biographical facts (all sourced):**
+- Cambridge University graduate, London-based
+- Author of *Beyond Measure: The Hidden History of Measurement* (Faber 2022, W.W. Norton 2023) — New Yorker + Economist book of the year
+- Literary agent: Sophie Scard, United Agents, London
+- "AI is killing the old web" (Jun 2023) one of most-cited tech journalism articles of the year
+- Also written for: Financial Times, Wired, New Statesman
+- Twitter: @jjvincent (~20,700 followers)
+
+**Migration significance:** The Verge → Guardian pipeline adds experienced AI-critical voice to Guardian opinion pages. His independent credibility from nearly a decade at The Verge distinguishes him from staff writers whose output is more institutionally shaped.
+
+**Stats after commit:** 229 journalists, 904 career-entry migrations, 418 publications, 220 multi-pub, 712 auto-detected migrations, 171 annotated articles. 2,437 tests pass.
+
+**Commit:** `f1766c8` — pushed to GitHub
+
+---
+
 ## 2026-07-13 10:00 PT — Type A: Article Deep Dive (IBD Morgan Stanley Capex)
 
 **Article:** IBD — "AI Costs Keep Rising As Morgan Stanley Ups CapEx Estimates For Amazon, Meta" (Jul 13, 2026)
