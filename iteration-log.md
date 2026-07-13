@@ -1,5 +1,25 @@
 # MediaScope Iteration Log
 
+## 2026-07-12 22:00 PT — Type A: Article Deep Dive (AP Meta Appeals Verdict)
+
+**Focus:** AP wire article "Meta appeals verdict in social media addiction lawsuit" (Jul 11, 2026). Manually analyzed framing in a short-form legal/litigation wire report, compared against toolkit output, fixed 3 detection gaps.
+
+**Article:** Neutral-toned AP wire report on Meta's appeal of the LA social media addiction verdict ($3M + $3M punitive). 470 words, balanced quotes from both sides, but subtle editorial devices throughout (loaded verb choice, legal-protection-as-hiding metaphor, kicker cascade).
+
+**Changes:**
+- `mediascope/analyze/framing.py`: Fixed 3 loaded_language gaps:
+  1. `hook` base verb — changed `hooked` → `hook(?:ed|s|ing)?` to capture bare infinitive ("to hook young users")
+  2. `legal/financial/regulatory woes` — new pattern for editorial dramatization ("a time of legal woes")
+  3. `shielded from/against/by` — new pattern for legal-protection-as-hiding metaphor ("shielded from legal responsibility")
+- `tests/test_ap_appeals_deep_dive.py`: 11 new tests (17 with parametrize expansions) covering all 3 fixes + full-article integration
+- `examples/sample_output/ap_meta_appeals_addiction_verdict_2026_07_11_article.txt`: Article text
+- `examples/sample_output/ap_meta_appeals_addiction_verdict_2026_07_11_analysis.md`: Full annotated analysis with manual vs toolkit comparison, cross-publication context
+- Doc count updates: 2342 tests, 104 test files, 166 annotated articles across ARCHITECTURE.md, README.md, QUALITY_STANDARDS.md, METHODOLOGY.md
+
+**Detection improvement:** 10 → 13 devices on this article. No false positives. 2342 tests pass (was 2325).
+
+**Remaining gaps logged (not regex-fixable):** Recycled statement flagging, legal procedure minimization, settlement-as-implied-guilt, attribution asymmetry quantification.
+
 ## 2026-07-12 17:00 PT — Type D: Toolkit Quality & Documentation (Path K Staleness Fix, Known Limitations Update)
 
 **Focus:** Cross-document consistency audit for Path K (Sarcastic Rejection Editorial) — discovered that Path K's implementation created stale references across ARCHITECTURE.md and METHODOLOGY.md, where "Path K" was still proposed for financial journalism genre correction.

@@ -442,8 +442,8 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
-│   └── sample_output/       # 165 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2325 tests across 103 test files (all from real articles)
+│   └── sample_output/       # 166 annotated real-article analyses (see METHODOLOGY.md §17)
+├── tests/                       # 2342 tests across 104 test files (all from real articles)
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
@@ -457,6 +457,7 @@ mediascope/
 │   ├── test_gizmodo_fury_review.py # Gizmodo Meta Fury contradictory review: entity detection, Path F tone correction, emotional terms
 │   ├── test_gizmodo_brain2qwerty_v2.py # Context-aware false-positive suppression: dream/sleep catastrophizing, medical loaded language, factual medical emotional appeal, definitional ironic quotation
 │   ├── test_gizmodo_meta_1_4t_penalty.py # Gizmodo $1.4T penalty: source extraction patterns (filing_as_source, legal_party, per-source)
+│   ├── test_ap_appeals_deep_dive.py # AP Meta appeals verdict deep dive: hook infinitive (loaded_language), legal woes editorialization, shielded-from metaphor, kicker/trend_bundling integration
 │   ├── test_gizmodo_1_4t_deep_dive.py # Gizmodo $1.4T existential threat deep dive: headline scale_magnitude, loaded_language gaps (exploiting, hooked), litigation cascade, sentiment
 │   ├── test_gizmodo_1_4t_consumer_protection.py # Gizmodo $1.4T consumer protection: consumer_protection topic classification, valuation_comparison framing device, strategic_disclosure with curly quotes, entity extraction for AGs and legal actors
 │   ├── test_gizmodo_1_4t_teen_safety.py # Gizmodo $1.4T teen safety existential threat: litigation_cascade (new — multi-front legal stacking), defensive_verb_framing (new — loaded attribution verbs), zero named human sources, sentiment intensity 1.0, entity detection for state AG coalitions

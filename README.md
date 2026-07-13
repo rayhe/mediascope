@@ -459,7 +459,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **2325 tests** across 103 test files, each covering a different analytical capability:
+MediaScope has **2342 tests** across 104 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -491,6 +491,7 @@ MediaScope has **2325 tests** across 103 test files, each covering a different a
 | `test_gizmodo_fury_review.py` | 19 | Gizmodo Meta Fury contradictory review: entity detection (Fury, Adventurer, Starfire, Garmin, Llama 4), Path F framing correction for mixed product reviews, emotional terms (ickiness, glassholism, privacy minefield, spying, paranoid) |
 | `test_gizmodo_brain2qwerty_v2.py` | 13 | Context-aware false-positive suppression: catastrophizing in dream/sleep narrative, loaded language "invasive" in medical/surgical context, emotional appeal "unable to speak" as factual medical description, ironic quotation definitional introduction, framing correction guard on positive medical articles |
 | `test_gizmodo_meta_1_4t_penalty.py` | — | Gizmodo $1.4T penalty: source extraction patterns (filing_as_source, legal_party, per-source attribution) |
+| `test_ap_appeals_deep_dive.py` | 11 | AP Meta appeals verdict deep dive: hook infinitive loaded_language (base verb form gap), legal woes editorialization, shielded-from legal metaphor, kicker/trend_bundling integration, full-article 13-device regression |
 | `test_gizmodo_1_4t_deep_dive.py` | 16 | Gizmodo $1.4T existential threat deep dive: headline scale_magnitude for bare large-dollar amounts, loaded_language gaps (exploiting, hooked), litigation cascade accumulation, trend bundling, topic classification, sentiment, entity detection |
 | `test_gizmodo_1_4t_consumer_protection.py` | 19 | Gizmodo $1.4T consumer protection: consumer_protection topic classification and confidence, valuation_comparison framing device detection (curly apostrophe handling), strategic_disclosure with quote tolerance, entity extraction for attorneys general and legal actors, framing summary completeness |
 | `test_gizmodo_1_4t_teen_safety.py` | 29 | Gizmodo $1.4T teen safety existential threat: litigation_cascade framing device (new — multi-front legal stacking with state coalition, pending cases, KGM verdict), defensive_verb_framing (new — loaded attribution verbs editorializing corporate actions), zero named human sources quality warning, sentiment intensity 1.0, entity detection for state AG coalitions and Section 230 |

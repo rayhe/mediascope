@@ -359,7 +359,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"crushed|obliterated|demolished|annihilated|"
         r"staggering|whopping|jaw-dropping|eye-watering|eye-popping|"
         r"shockingly\s+(?:high|large|low|expensive|cheap|massive|huge)|"
-        r"mastermind(?:ed)?|explosive|hooked|"
+        r"mastermind(?:ed)?|explosive|hook(?:ed|s|ing)?|"
         r"turned a blind eye|strike fear|struck fear|"
         r"indefensible|abusive|defamatory|"
         r"drastic(?:ally)?|superficial(?:ly)?|"
@@ -382,6 +382,22 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"bucketloads?|boatloads?|truckloads?|"
         r"vexing|vex(?:ed)?|infuriating|maddening|"
         r"game-?changing|game-?changer|"
+        # Loaded editorial characterization of negative state — "woes"
+        # editorializes by compressing disparate legal/financial problems
+        # into a single loaded noun implying misfortune or deserved trouble.
+        # Discovered via AP Meta appeals verdict article (Jul 11, 2026):
+        # "a time of legal woes for Meta" — not neutral ("challenges",
+        # "difficulties"), but editorially dramatic.
+        r"(?:legal|financial|regulatory|mounting|growing|continued|ongoing) woes|"
+        # "Shielded from" positions legal protection (e.g. Section 230) as
+        # defensive hiding rather than neutral legal framework.  Distinct
+        # from "convenient shield" (already captured in kicker patterns) —
+        # this is the active-verb form used in body text to editorialize
+        # by framing legal protections as cover.
+        # Discovered via AP Meta appeals verdict article (Jul 11, 2026):
+        # "shielded from legal responsibility" — implies Meta is hiding
+        # behind the law rather than legitimately protected by it.
+        r"shielded (?:from|against|by)|"
         # Financial crash / bubble language that editorializes market risk.
         # Discovered via Memeburn Meta Cloud chip selloff article (Jul 2026).
         r"super\s*bubble|mega\s*bubble|house of cards|bubble\s+burst|"
