@@ -20569,3 +20569,35 @@ Documentation audit found stale counts across README, FRAMING_REFERENCE, and ARC
 - All 101 devices present in FRAMING_REFERENCE.md (automated check: no missing, no duplicates)
 - All 2,280 tests pass
 - count_stats.py --check: not re-run (no code changes)
+
+
+---
+
+## Jul 12, 2026 — 18:00 PT — Type A: Article Deep Dive
+
+**Article:** Gizmodo — "Meta's Social Media Empire Is Under Siege. Its Plan for the Future Is to Watch You Even More Closely" (~Jul 11, 2026)
+
+**Focus:** Roundup article bundling 5+ independent negative Meta narratives (EU DSA, $1.4T penalties, VR failure, super-sensing glasses, emotion-tracking patent) into a unified siege metaphor. Tested sarcastic_correction, recidivism_framing, and multi-narrative bundling detection.
+
+### Issues Found & Fixed
+
+1. **Sarcastic "somehow...supposed to" pattern** — gap in `_SARCASTIC_CORRECTION_PATTERNS`. Added new regex after line ~3015 in `framing.py` to catch editorial sarcasm that undermines stated product goals ("And somehow, all of that is supposed to lead to better workouts"). Pattern: `r"(?i)\bsomehow[,\s]+.*(?:supposed to|expected to|meant to)\b"`.
+
+2. **Predictive recidivism patterns** — gap in `_RECIDIVISM_FRAMING_PATTERNS`. Added 2 new regexes after line ~8222 in `framing.py`:
+   - Accumulation-of-scrutiny: `"another wave of similar (?:legal |regulatory )?scrutiny"`
+   - Predictive-scrutiny: `"would not be (?:shocking|surprising).*?(?:face|see).*?similar.*?scrutiny"`
+   - Also fixed a double-escape bug (`\\\\b` → `\\b`) in the predictive-scrutiny pattern.
+
+3. **Entity cluster #85 (Patent/IP Research)** — new cluster added for patent analysis firms as intermediary sources (Patentlyze, PatSnap, Innography). Discovered from Gizmodo article citing Patentlyze for emotion-tracking patent analysis.
+
+### Stats Change
+- Regex patterns: 581 → 585 (+4: 1 sarcastic_correction, 2 recidivism_framing, 1 bug fix counts as replacement)
+- Tests: 2,280 → 2,301 (+21 in new `test_gizmodo_siege_roundup_jul11.py`)
+- Test files: 101 → 102
+- Annotated articles: 162 → 163
+- Entity clusters: 85 (unchanged — cluster #85 added in prior iteration)
+
+### Verification
+- All 2,301 tests pass (full suite, 159s)
+- All 115 structural consistency tests pass
+- Sample output created: `gizmodo_siege_roundup_meta_surveillance_2026_07_11_analysis.md`

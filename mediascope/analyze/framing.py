@@ -3012,6 +3012,33 @@ _SARCASTIC_CORRECTION_PATTERNS: list[re.Pattern] = [
         r"(?:buds|guys|folks|pal|pals|bud|champ|champs|gang)[.!]",
         re.IGNORECASE | re.DOTALL,
     ),
+    # ---------------------------------------------------------------------------
+    # "And somehow, X is supposed to Y" — sarcastic dismissal through
+    # feigned bewilderment.  The writer uses "somehow" to signal disbelief
+    # at a causal claim, combined with "supposed to" / "meant to" to mark
+    # the claim as dubious.  A common editorial device in tech journalism
+    # when a company's stated justification for a feature is absurd.
+    #
+    # Discovered via Gizmodo Meta siege roundup (Jul 11, 2026):
+    #   "And somehow, all of that is supposed to lead to better workouts."
+    # Also handles: "Somehow this is meant to...", "Somehow, that's going
+    # to make X better", "Somehow, we're supposed to believe..."
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b(?:and\s+)?somehow,?\s+"
+        r".{3,120}?"
+        r"(?:supposed to|meant to|expected to|going to|will\s+(?:somehow\s+)?)"
+        r".{3,80}?[.!]",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Broader "somehow" at sentence boundary — sarcastic bewilderment
+    # without requiring "supposed to": "Somehow, Meta thinks this is fine."
+    re.compile(
+        r"(?:^|\.\s+)(?:And\s+)?[Ss]omehow,?\s+"
+        r"(?:all of (?:that|this|it)|that|this|it|none of (?:that|this))\s+"
+        r"(?:is|was|has|will|should|would|could)\b",
+        re.MULTILINE,
+    ),
 ]
 
 _DEVICE_PATTERNS["sarcastic_correction"] = _SARCASTIC_CORRECTION_PATTERNS
@@ -8192,6 +8219,40 @@ _RECIDIVISM_FRAMING_PATTERNS: list[re.Pattern] = [
         r"(?:violat|breach|fail|mislead|deceiv|ignor|flout|abus|exploit"
         r"|broken|empty|unfulfilled)\w*\b",
         re.IGNORECASE,
+    ),
+    # -----------------------------------------------------------------------
+    # Predictive recidivism: article closes (or editorializes) by asserting
+    # the entity *will* repeat its behavior, framing future legal/regulatory
+    # trouble as inevitable.  Distinct from the retrospective patterns above
+    # which reference *past* offenses.
+    #
+    # Discovered via Gizmodo siege roundup (Jul 11, 2026):
+    #   "it would not be shocking at all to see the company face another
+    #    wave of similar legal scrutiny a decade from now"
+    # Also handles: "expect to see more lawsuits", "will inevitably face
+    # more scrutiny", "another round of investigations is all but certain"
+    # -----------------------------------------------------------------------
+    re.compile(
+        r"\b(?:another|a\s+(?:new|fresh|further|second|next))\s+"
+        r"(?:wave|round|series|string|barrage|slew|flood)\s+"
+        r"(?:of\s+)?"
+        r"(?:similar\s+)?(?:legal|regulatory|antitrust|privacy|enforcement)"
+        r".{0,60}?"
+        r"(?:scrutiny|action|trouble|problems|challenges|lawsuits?|"
+        r"investigations?|penalties|fines|complaints?)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "will inevitably / is bound to / is sure to + face/encounter scrutiny"
+    re.compile(
+        r"\b(?:will\s+(?:inevitably|undoubtedly|certainly|surely|likely)|\s+"
+        r"is\s+(?:bound|sure|destined|poised)\s+to|\s+"
+        r"(?:would|could)\s+not\s+be\s+(?:shocking|surprising|unexpected))\b"
+        r".{5,120}?"
+        r"\b(?:face|encounter|draw|attract|invite|trigger|spark|prompt)\s+"
+        r"(?:more|further|additional|another|similar|renewed)\s+"
+        r"(?:scrutiny|legal|regulatory|litigation|lawsuits?|investigations?|"
+        r"penalties|enforcement|backlash)\b",
+        re.IGNORECASE | re.DOTALL,
     ),
 ]
 
