@@ -1,5 +1,81 @@
 # MediaScope Iteration Log
 
+## 2026-07-13 05:00 PT — Type C: Ownership & Funding Deep Dive (The Verge/PMC Financial Updates)
+
+**Commit:** `67c455e` — "Type C: The Verge/PMC financial updates — SRMG Q1 2026 recovery, PAG $194, SEAT -$1.35 EPS miss, NYT sanctions motion"
+
+### Focus
+The Verge / PMC profile — last Type C was Jul 8 02:00 (Eldridge Industries). Five days of financial data staleness across three linked entities (SRMG, PAG, SEAT) plus significant litigation developments (NYT sanctions motion).
+
+### Changes Made
+
+#### 1. SRMG Financial Update (Q1 2026 Results)
+**Source:** Decypha/Mubasher (May 10, 2026), Multiples.vc/Morningstar, Simply Wall St
+- **Q1 2026 partial recovery:** Net profit SAR 33.07M (+6.88% YoY), breaking 3 consecutive quarterly losses
+- Revenue SAR 769.63M (+18.26% YoY); sequential recovery from Q4 2025 loss of SAR 357M
+- FY2025 full-year: Net loss SAR 366.28M (vs profit SAR 201.69M in FY2024)
+- **LTM financials (Q1 2026):** Revenue $784M (up from $714M FY2025), EBITDA $43M (recovery from -$5M FY2025), Net Loss ($54M) (improving from -$98M FY2025)
+- Enterprise Value: $1.6B (down from $1.95B Jul 7 value, $5.89B FY2024 peak — 73% decline)
+- Market cap: SAR 6.20B (~$1.65B). Share price: SAR 77.00
+- Added granular margin data: Gross margin compressed from 31% (FY2023) → 10% (FY2025) → 14% (LTM)
+- **Analytical note:** Q1 recovery is real but fragile — revenue still 22% below FY2023 peak, margins severely compressed vs historical norms
+
+#### 2. Penske Automotive (PAG) Stock Update
+**Source:** Finnhub (real-time), MarketBeat (Jul 10), StockTitan
+- Stock: $194.27 (Jul 10 close) — up from $183.65 (Jul 7). New 52-week high: $197.69
+- Market cap: ~$12.6B (was $11.8B)
+- **Q1 2026 EPS CORRECTED:** $3.05 (beat consensus $2.91 by $0.14) — profile previously stated $3.56, which was incorrect. MarketBeat confirms $3.05
+- Revenue $7.86B corrected to -1.1% YoY (was stated +1.2% QoQ — different metrics)
+- FY2026 consensus EPS updated: $14.51 (was $13.60) — +7.88% expected growth
+- Q2 earnings confirmed: July 29 (before market open)
+- Analyst breakdown: 10 analysts — 6 Buy, 4 Hold, 0 Sell (was previously listed by individual firm without total count)
+
+#### 3. Vivid Seats (SEAT) Collapse Update
+**Source:** Finnhub, MarketBeat (Jul 10), StockTitan, Robinhood
+- Stock: $6.98 (Jul 10 close). 52-week range: $5.06–$41.20
+- Market cap: ~$76M (down from ~$77M Jul 7)
+- **Q1 2026 EPS: -$1.35** (missed consensus -$1.03 by $0.32) — NEW DATA, was not in profile
+- TTM revenue: $450.5M. Operating cash flow: -$91.6M (cash burn)
+- **Analyst consensus: Hold** (9 analysts: 2 Sell, 5 Hold, 2 Buy) — NEW DATA, previously undocumented
+- Q2 earnings: Aug 4 (before market open) — NEW DATA
+- Warrants (SEATW) at $0.026 — essentially worthless (down 81.4% YoY) — NEW DATA
+- CEO: Lawrence C. Fey — confirmed
+
+#### 4. NYT Sanctions Motion (Jul 10, 2026)
+**Source:** Reuters Jul 10, Fast Company Jul 11
+- NYT and other newspapers filed motion asking S.D.N.Y. to sanction OpenAI for:
+  (1) Lying to court about ability to search LLMs for copyrighted content
+  (2) Deleting billions of ChatGPT conversations or making them unsearchable
+- Sanctions sought include attorney fees + court finding that chat logs showed misuse
+- NYT has spent $28M+ on AI litigation (financial regulator filings)
+- OpenAI spokesperson: "blatantly false allegations"
+- **Cross-reference significance:** Same Susman Godfrey attorneys (Ian Crosby, Davida Brook) represent BOTH NYT and PMC, creating aligned litigation posture across The Verge's parent and NYT
+- Updated `legal_counsel_cross_representation.last_updated` to 2026-07-13
+
+#### 5. SRMG Known Conflict Reference Updated
+- Updated PitchBook EV reference: $1.95B → $1.6B, net income -$97M → -$54M LTM
+
+### Stats After This Iteration
+- Journalists: 228 (unchanged)
+- Career-entry migrations: 900 (unchanged)
+- Distinct publications: 416 (unchanged)
+- Annotated articles: 167 (unchanged)
+- Emotional language terms: 1,022 (unchanged)
+- Tests: 118 structural consistency tests pass
+- `count_stats.py --check`: ✅ clean
+
+### Source URLs
+- https://www.decypha.com/en/companies/srmg-q1-2026-results (via search result, Mubasher contribution May 10, 2026)
+- https://simplywall.st/stocks/sa/media/sase-4210/saudi-research-and-media-group (fundamentals, Q1 2026)
+- https://multiples.vc/companies/srmg (LTM financials, Morningstar-powered)
+- https://www.marketbeat.com/stocks/NYSE/PAG/earnings/ (PAG Q1 EPS $3.05 correction)
+- https://www.marketbeat.com/stocks/NASDAQ/SEAT/earnings/ (SEAT Q1 EPS -$1.35)
+- https://robinhood.com/stocks/SEAT (SEAT key statistics, CEO)
+- https://www.reuters.com/legal/litigation/new-york-times-led-group-asks-court-sanction-openai-us-copyright-dispute-2026-07-09/
+- https://www.fastcompany.com/91333847/nyt-openai-sanctions-2026-07-11
+
+---
+
 ## 2026-07-13 03:00 PT — Type B: Journalist/Publication Research (Ted Chiang)
 
 **Commit:** `938608a` — "Type B: add Ted Chiang profile (New Yorker → Atlantic AI critic)"
