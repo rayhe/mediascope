@@ -330,6 +330,16 @@ editorial_changes:
       beyond politics/tech core.'
     role: staff_writer
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-joshua-partlow-ariel-sabar-and-sebastian-smee-as-staff-writers,262288
+  - date: 2026-06
+    event_type: contributor
+    incoming: Ted Chiang
+    notes: 'MARQUEE CONTRIBUTOR: Ted Chiang published "No, Artificial Intelligence Is Not Conscious" (Jun 3, 2026) — his first Atlantic byline after years as a New Yorker AI critic. Chiang (Brown BS CS
+      1989, Microsoft technical writer, 4x Hugo, 4x Nebula, TIME100 AI 2023, PEN/Malamud 2024) is the most influential non-journalist voice shaping public AI discourse. His New Yorker essays ("ChatGPT
+      Is a Blurry JPEG of the Web" Feb 2023, "Will A.I. Become the New McKinsey?" May 2023, "Why A.I. Isn''t Going to Make Art" Aug 2024) created frames that entered mainstream vocabulary. The Atlantic
+      piece targeted Anthropic directly on AI consciousness — landing during peak Meta AI/Muse coverage and the Hinton/Hassabis consciousness debates. Whether this signals a sustained Atlantic relationship
+      or a one-off commission is TBD, but it represents the Atlantic attracting the single highest-profile AI critic from the New Yorker''s contributor stable.'
+    role: contributing_writer
+    source_url: https://en.wikipedia.org/wiki/Ted_Chiang
   guardian:
   - date: 2015-06
     incoming: Katharine Viner

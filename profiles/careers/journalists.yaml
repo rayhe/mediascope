@@ -13041,3 +13041,87 @@ journalists:
   - https://hyperallergic.com/art-critic-sebastian-smee-laid-off-from-the-washington-post/
   - https://en.wikipedia.org/wiki/Sebastian_Smee
   - https://www.theatlantic.com/author/sebastian-smee/
+- career:
+  - beat: software documentation, technical writing
+    end: '2019'
+    notes: Freelance technical writer in the software industry after graduating from Brown. Based in Seattle area. Worked for various tech companies writing software documentation. This is not journalism
+      but is foundational context — his day job gave him first-hand knowledge of how software systems actually work, which grounds his AI criticism in technical rather than theoretical understanding.
+    publication: freelance-tech
+    role: technical_writer
+    source_url: https://en.wikipedia.org/wiki/Ted_Chiang
+    start: '1989'
+  - beat: software documentation, technical manuals
+    end: present
+    notes: Technical manual writer at Microsoft. Met his partner Marcia Glover while working there. Maintains this as his primary employment, with fiction and non-fiction writing as a parallel career. Santa
+      Fe Institute Miller Scholar (2022). University of Notre Dame NDIAS artist-in-residence (2020-2021).
+    publication: microsoft
+    role: technical_writer
+    source_url: https://www.thebeliever.net/an-interview-with-ted-chiang/
+    start: '2019'
+  - beat: AI, technology, language, philosophy of mind
+    end: present
+    notes: 'Primary non-fiction home. Major AI criticism essays that shaped public discourse: "Bad Character" (May 2016, on Chinese character encoding), "What If Parents Loved Strangers'' Children As Much
+      As Their Own?" (Dec 2017), "Why Computers Won''t Make Themselves Smarter" (Mar 2021, debunking intelligence explosion), "ChatGPT Is a Blurry JPEG of the Web" (Feb 2023, most viral — framed LLMs as
+      lossy compression, widely cited in AI discourse), "Will A.I. Become the New McKinsey?" (May 2023, accountability laundering frame), "Why A.I. Isn''t Going to Make Art" (Aug 2024, won BSFA Short Non-Fiction
+      Award). Pattern: one major essay every 6-18 months, each providing a new metaphor/frame that enters mainstream discourse.'
+    publication: new-yorker
+    role: contributing_writer
+    source_url: https://www.newyorker.com/contributors/ted-chiang
+    start: '2016'
+  - beat: AI consciousness, philosophy of AI, technology criticism
+    end: present
+    notes: '"No, Artificial Intelligence Is Not Conscious" (Jun 3, 2026) — 10,000+ word essay arguing LLM conversations are sentence-completion exercises, not evidence of consciousness. Targeted Anthropic
+      specifically. Generated significant debate (Substack rebuttals, YouTube analysis, Reddit threads). MIGRATION SIGNIFICANCE: First byline at Atlantic after years at New Yorker suggests either (1) a broadening
+      contributor relationship or (2) Atlantic actively recruiting high-profile tech critics. The piece appeared during heightened Meta AI coverage and industry-wide AI consciousness debates (Hinton, Hassabis).
+      One of the most-discussed AI essays of 2026.'
+    publication: atlantic
+    role: contributing_writer
+    source_url: https://www.theatlantic.com/philosophy/archive/2026/06/ai-consciousness-llm/684200/
+    start: '2026'
+  education:
+    degree: BS Computer Science
+    graduation_year: '1989'
+    institution: Brown University
+    notes: Also studied physics before switching to CS. Attended Clarion Writers Workshop (UC San Diego) 1989, sold first story same year. Father is engineering professor at Stony Brook University; mother
+      was a librarian.
+  awards:
+  - name: Nebula Award
+    count: 4
+    notes: Won for "Tower of Babylon" (1990), "Story of Your Life" (1998), "Hell Is the Absence of God" (2001), "The Merchant and the Alchemist's Gate" (2007)
+  - name: Hugo Award
+    count: 4
+    notes: Won for "Hell Is the Absence of God" (2002), "The Merchant and the Alchemist's Gate" (2008), "Exhalation" (2009), "The Lifecycle of Software Objects" (2011)
+  - name: Locus Award
+    count: 6
+    notes: Multiple wins across novelette, novella, short story, and collection categories
+  - name: John W. Campbell Award for Best New Writer
+    year: 1992
+  - name: PEN/Malamud Award
+    year: 2024
+    notes: For "excellence in the art of the short story"
+  - name: BSFA Award for Short Non-Fiction
+    year: 2024
+    notes: Won for "Why A.I. Isn't Going to Make Art" (New Yorker, Aug 2024)
+  - name: TIME100 AI
+    year: 2023
+    notes: Named one of Time's 100 most influential people in AI
+  - name: Science Fiction and Fantasy Hall of Fame
+    year: 2020
+  multi_publication: true
+  name: Ted Chiang
+  notes: 'Taiwanese American science fiction writer (born 1967, Port Jefferson, NY). Chinese name: 姜峯楠 (Jiāng Fēngnán). Brown University BS CS 1989. Day job: technical writer (freelance → Microsoft).
+    Lives in Bellevue, WA with partner Marcia Glover (met at Microsoft). Author of "Stories of Your Life and Others" (2002) and "Exhalation: Stories" (2019). "Story of Your Life" adapted into film "Arrival"
+    (2016, dir. Denis Villeneuve). Only 18 published fiction works in 35+ years — one of the most decorated-per-word
+    writers in genre fiction. Obama 2019 summer reading list. KEY FOR MEDIASCOPE: Chiang is the most influential non-journalist voice shaping public discourse about AI through essays. His frames — "blurry
+    JPEG," "new McKinsey," "sentence completion" — enter mainstream vocabulary and are cited by other journalists whose work MediaScope analyzes. His New Yorker → Atlantic migration in 2026 means his framing
+    influence now directly overlaps with one of the 6 tracked publications. Unlike staff journalists who produce weekly/daily content, Chiang publishes ~1 essay per year but each has outsized impact on how
+    other journalists frame AI stories. His computer science background (Brown CS, Microsoft technical writer) gives his criticism technical credibility that most arts/culture critics lack — he cannot be
+    dismissed as a humanities outsider misunderstanding the technology. His anti-AI-consciousness essay at The Atlantic directly intersects with coverage of Meta AI, Anthropic Claude, and Google DeepMind
+    that MediaScope tracks.'
+  source_urls:
+  - https://en.wikipedia.org/wiki/Ted_Chiang
+  - https://www.newyorker.com/contributors/ted-chiang
+  - https://www.thebeliever.net/an-interview-with-ted-chiang/
+  - https://locusmag.com/2025/08/ted-chiang-scientific-method/
+  - https://electricliterature.com/the-legendary-ted-chiang-on-seeing-his-stories-adapted-and-the-ever-expanding-popularity-of-sf/
+  - https://gradesaver.com/story-of-your-life/about
