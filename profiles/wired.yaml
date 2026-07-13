@@ -865,11 +865,22 @@ advance_investments:
 #   CMA parallel antitrust investigation: Aug 7 deadline.
 #   Oregon AG WITHDREW court motion to delay deal (Jul 11) — "Paramount made it clear they weren't
 #   going to comply." Oregon "considering next steps." Removes most immediate legal obstacle.
-#   Multistate AG antitrust lawsuit still expected — CNN reported "likely next week" (Jul 8-9).
-#   Paramount committed not to close before Jul 22. Late September close considered realistic.
-#   $627M/quarter ticking fee (~$7M/day) triggers if not closed by Sept 30.
-#   Rep. Darrell Issa (R-CA) publicly warned CA AG Bonta against blocking (Jul 11, Reuters).
-#   Paramount weighing CA HQ exodus threat if Bonta files suit. Combined entity ~$80B debt (WSJ/Times).
+#   ***CATALYTIC WEEK OF JUL 14***: CNN reported (Jul 9) multistate AG antitrust suit "likely
+#   next week" = week of Jul 14. CA AG Bonta leading; his office stated Jul 9: "remains an
+#   active investigation, and we do not have any update to share at this time." If filed,
+#   could inject TRO/PI risk and delay closing beyond EU deadline.
+#   Paramount tender/exchange offers for WBD issuer notes expire July 15, 2026 at 5:00 PM ET.
+#   Paramount committed not to close before Jul 22 (EU Phase I deadline). Late Sept close realistic.
+#   $627M/quarter ticking fee (~$7M/day) triggers if not closed by Sept 30 (per Morningstar;
+#   Reuters approximates ~$650M/quarter at 2.6B diluted shares × $0.25/share).
+#   Rep. Darrell Issa (R-CA) publicly warned CA AG Bonta against blocking (Jul 11, letter to
+#   Newsom+Bonta, posted on X). Cited 24 nations' regulatory clearance, DOJ approval, and
+#   Paramount's 30+ film/year commitment. Called CA "inhospitable" business environment.
+#   NY Post/Semafor (Jul 12): Paramount advisers encouraging CEO David Ellison to consider
+#   moving HQ and redirecting $30B spending outside CA if Bonta sues. Ellison "not sold" on
+#   leaving but Bayonne NJ studio lease (300K sq ft) provides alternative foothold.
+#   Combined entity ~$80B debt (WSJ/Times Jul 10). PSKY stock $9.41 (Jul 10 close, -9% intraday).
+#   Arete Research reaffirmed Sell on PSKY. Analysts cite deal risk and execution uncertainty.
 #   WBD Q1 2026 missed badly: EPS -$1.17 vs consensus -$0.10 (missed by $1.07). Rev $8.89B (-1% YoY).
 #   WBD Q2 2026 earnings: Aug 6 (before market open).
 # Condé Nast: Private (~$1.9-2.0B revenue, profitable 2025, events rev +40% YoY, projecting +22% in 2026)
@@ -890,6 +901,11 @@ advance_investments:
 # Breakdown: RDDT $8.24B + CHTR ~$2.42B (13% × $18.6B mktcap) + WBD ~$2.56B (3.97% × $64.5B mktcap)
 # Down from ~$13.51B (Jul 9) — broad market pullback hit RDDT (-2.61%) and CHTR (-2.69%) hardest.
 # CHTR: $130.73 close, consensus "Reduce" (6 sell, 8 hold, 5 buy). Q2 earnings Jul 24.
+#   CHTR STRESS: YTD -37.34%, approaching 52-week low of $124.05 (-68% from 52W high $413.14).
+#   Q1 2026 EPS miss ($9.17 vs $10.01 consensus, missed by -$0.84). Revenue fell -1.0% YoY.
+#   Market cap collapsed from ~$57B (52W high) to ~$18.6B. If CHTR hits 52W low ($124.05),
+#   Advance's CHTR stake drops to ~$2.30B (from ~$2.42B). Charter is the weakest link in
+#   Advance's public portfolio — deepening Reddit concentration risk.
 # WBD: $26.59 close, consensus "Hold" (2 sell, 13 hold, 7 buy). Q2 earnings Aug 6. TTM EPS -$0.70.
 # TOTAL PRIVATE SUBSIDIARIES: Turnitin (~$1.75B+ est.), Condé Nast, ACBJ, IRONMAN, PADI, POP, Stage, NSF
 # HawkEye 360: EXITED via IPO May 2026 at ~$2.4B valuation
@@ -1427,10 +1443,10 @@ known_conflicts:
 
   - type: "portfolio_concentration"
     description: >
-      STRUCTURAL SHIFT (updated Jul 9, 2026): As Charter Communications continues declining (-68%
-      from 52-week high, though SpaceX mobile partnership talks may offer inflection) and WBD approaches
-      a Paramount Skydance acquisition at $30/share (now delayed to Jul 22+ amid Oregon AG probe and
-      imminent multistate lawsuit), Reddit is becoming an ever-larger share
+      STRUCTURAL SHIFT (updated Jul 13, 2026): As Charter Communications continues declining (YTD -37.34%,
+      approaching 52-week low of $124.05, Q1 EPS miss) and WBD approaches Paramount Skydance acquisition
+      at $30/share (multistate AG antitrust lawsuit expected week of Jul 14 per CNN; EU Phase I deadline
+      Jul 22; PSKY tender/exchange offers for WBD notes expire Jul 15), Reddit is becoming an ever-larger share
       of Advance's public portfolio. Reddit now represents ~62.3% of Advance's public equity (~$8.24B of
       ~$13.23B), up from ~40% at time of IPO. If Paramount closes and WBD cash is redeployed, and Charter
       continues declining (or pivots to SpaceX mobile but doesn't immediately recover), Reddit could
@@ -1445,13 +1461,15 @@ known_conflicts:
       carousels. This transforms the Reddit vs Meta competition from attention/ad impressions to the
       full purchase funnel — making the portfolio concentration conflict more commercially material.
     severity: 5
-    evidence: "RDDT $195.47, CHTR $133.54, WBD $26.15, all Jul 8 2026 close; Paramount tender offer SEC filings; Oregon AG court docs Jul 8 (Reuters); CNN multistate lawsuit report Jul 8-9"
+    evidence: "RDDT $195.09, CHTR $130.73, WBD $26.59, all Jul 10 2026 close; PSKY $9.41 Jul 10; Paramount tender offer SEC filings; CNN multistate lawsuit report Jul 9; Oregon AG withdrawal Jul 11 (Reuters); NY Post/Semafor CA exodus report Jul 12; CHTR YTD -37.34% approaching 52W low $124.05"
     source_urls:
       - "https://www.marketbeat.com/stocks/NYSE/RDDT/chart/"
       - "https://www.marketbeat.com/stocks/NASDAQ/CHTR/chart/"
       - "https://www.reuters.com/legal/oregon-ag-ask-court-order-paramount-comply-merger-probe-2026-07-08/"
       - "https://www.cnn.com/2026/07/08/media/state-ags-paramount-wbd-merger-lawsuit/"
       - "https://www.reuters.com/business/media-telecom/paramount-delays-warner-bros-deal-closure-2026-07-09/"
+      - "https://www.reuters.com/business/media-telecom/oregon-drops-motion-delay-paramount-warner-bros-deal-2026-07-11/"
+      - "https://nypost.com/2026/07/12/business/paramount-weighs-california-exodus-after-states-war-on-110b-warner-bros-takeover/"
 
   - type: "collateralized_financial_dependency"
     description: >
