@@ -152,6 +152,7 @@ Each path addresses a specific VADER failure mode discovered through real articl
 | **H** | Sarcastic short editorial tone | raw ≥ 0.3, agency ≥ −0.1, ≥2 editorial_aside, EI ≥ 0.5 | 15% raw / 85% target |
 | **I** | Direct consumer critique with positive agency | raw ≥ 0.3, agency > 0, ≥5 adv. + ≥2 consumer devices, EI ≥ 0.5 | 20% raw / 80% target |
 | **J** | Expert-driven structural critique | raw ≥ 0.3, agency ≥ 0, ≥5 adv. + ≥1 expert_contradiction, EI ≥ 0.10 | 30% raw / 70% target |
+| **K** | Sarcastic rejection editorial | raw ≥ 0.3, ≥2 sarcastic_correction, EI ≥ 0.7 | 10% raw / 90% target |
 
 Only one framing path (A–F, H–J) fires per article. Path G runs independently before the composite is computed, correcting VADER's input signal. See [METHODOLOGY.md §9.2](METHODOLOGY.md#92-correction-pipeline) for full trigger conditions, blend formulas, and discovery articles.
 
@@ -327,9 +328,11 @@ The source stance classifier uses configurable lists of negative and positive st
 
 Two documented failure classes lack correction paths:
 
-1. **Financial journalism inflation (Path K proposed):** Investment recommendation vocabulary (e.g., "strong buy," "bonanza," "attractive valuation") inflates VADER scores by +0.3–0.5 regardless of editorial stance. The proposed Path K would use headline sentiment as an anchor combined with framing device density. See [METHODOLOGY.md §16](METHODOLOGY.md#16-financial-journalism-sentiment-bias) for full analysis and design constraints.
+1. **Financial journalism inflation (unaddressed):** Investment recommendation vocabulary (e.g., "strong buy," "bonanza," "attractive valuation") inflates VADER scores by +0.3–0.5 regardless of editorial stance. A future correction path would use headline sentiment as an anchor combined with framing device density. See [METHODOLOGY.md §16](METHODOLOGY.md#16-financial-journalism-sentiment-bias) for full analysis and design constraints.
 
 2. **Structural-split articles (Path L proposed):** Articles with an adversarial editorial lead followed by a promotional corporate-quote tail (or vice versa) produce VADER scores dominated by whichever half is longer, not by the framing that shapes reader takeaway. No existing correction path fires because the article isn't uniformly adversarial. See [METHODOLOGY.md §16.7](METHODOLOGY.md#167-structural-split-articles-no-correction-path) for details.
+
+3. **Procedural service journalism (unaddressed):** VADER misscores privacy alarm articles where the negative tone is structural (consent_alarm devices, guilt transfer sections) rather than lexical. No correction path fires because the article lacks adversarial editorial vocabulary — the alarm comes from framing, not word choice. Discovered via NY Post Muse Image opt-out article (Jul 10, 2026).
 
 ### Source Extraction
 
@@ -339,7 +342,7 @@ Two documented failure classes lack correction paths:
 ### Scope
 
 - The toolkit currently tracks **6 publications** with full ownership profiles. Adding publications requires manual research into ownership chains, revenue relationships, and litigation connections (see [ADDING_PUBLICATIONS.md](ADDING_PUBLICATIONS.md)).
-- Entity clusters (83) are optimized for the tech/media/finance domain. Analysis of other verticals (e.g., pharmaceutical, energy, defense) would require domain-specific cluster expansion.
+- Entity clusters (85) are optimized for the tech/media/finance domain. Analysis of other verticals (e.g., pharmaceutical, energy, defense) would require domain-specific cluster expansion.
 - The DiD analysis for journalist migrations requires a minimum of 5 articles per publication per journalist — low-output contributors cannot be analyzed even when their career path is well-documented.
 
 ## Dependencies

@@ -1308,9 +1308,11 @@ Until a dedicated financial journalism correction path is implemented:
 
 5. **Report both scores.** When presenting financial article analysis, always report the composite score alongside the framing device count and types. The framing-based assessment is more reliable than the sentiment score for this genre.
 
-### 16.6 Future Work: Path K (Financial Genre Correction)
+### 16.6 Future Work: Financial Genre Correction (Unaddressed)
 
-A potential Path K correction for financial journalism would fire on:
+> **Note:** This section previously proposed "Path K" for financial genre correction. Path K has since been assigned to *Sarcastic Rejection Editorial* (see §9.2, Path K). The financial genre correction remains an open research problem and will receive a new path letter when implemented.
+
+A dedicated correction path for financial journalism would fire on:
 
 | Signal | Threshold | Rationale |
 |---|---|---|
@@ -1322,9 +1324,9 @@ A potential Path K correction for financial journalism would fire on:
 
 The blend would use headline sentiment as an anchor (financial headlines are more transparent about editorial stance than bodies) combined with framing device density, producing an estimate weighted toward the reader's likely takeaway rather than VADER's lexical reading.
 
-**Design constraint:** Path K must not over-correct genuinely positive financial coverage (e.g., Motley Fool buy recommendations where the article IS bullish). The headline-body alignment threshold (< 0.4) serves as the guard — genuinely positive articles have aligned headlines and bodies, while editorially negative articles masked by financial vocabulary show the telltale headline-body divergence.
+**Design constraint:** The financial genre correction must not over-correct genuinely positive financial coverage (e.g., Motley Fool buy recommendations where the article IS bullish). The headline-body alignment threshold (< 0.4) serves as the guard — genuinely positive articles have aligned headlines and bodies, while editorially negative articles masked by financial vocabulary show the telltale headline-body divergence.
 
-**Validation requirement:** Path K should be validated against all 4 financial articles in the annotated corpus before deployment, plus at least 3 additional financial articles from different publications (Seeking Alpha, Investor's Business Daily, Bloomberg Opinion) to ensure cross-publication generalization.
+**Validation requirement:** The financial genre correction should be validated against all 4 financial articles in the annotated corpus before deployment, plus at least 3 additional financial articles from different publications (Seeking Alpha, Investor's Business Daily, Bloomberg Opinion) to ensure cross-publication generalization.
 
 ### 16.7 Structural-Split Articles (No Correction Path)
 
@@ -1480,7 +1482,7 @@ Articles cluster into 9 editorial genres. Genre determines which VADER failure m
 | **Tech editorial** (Gizmodo, Engadget, TechCrunch) | ~20 | Moderate inflation — editorial voice partially captured | D, H, I |
 | **Wire service** (Reuters) | 7 | Generally accurate — neutral prose aligns with VADER assumptions | None needed |
 | **Academic/specialist** (MIT TR, The Register) | ~18 | Variable — depends on whether article is analysis or investigative | A, E, J |
-| **Financial/investment** (Barron's, Motley Fool, TheStreet) | 8 | Severe inflation (0.3–0.5 points) — boosterism vocabulary dominates | Future Path K |
+| **Financial/investment** (Barron's, Motley Fool, TheStreet) | 8 | Severe inflation (0.3–0.5 points) — boosterism vocabulary dominates | Unaddressed (see §16.6) |
 | **Opinion/editorial** (Atlantic, Fast Company, AV Club) | ~12 | Often wrong direction — sarcasm and irony invert polarity | D, F, H |
 
 ### 17.5 Sentiment Correction Path Coverage
@@ -1629,7 +1631,7 @@ Product reviews with embedded editorial commentary (Wired glasses launch, Gizmod
 | Metric | Typical Value |
 |---|---|
 | **VADER gap** | +0.30 to +1.14 (severe inflation — worst genre) |
-| **Correction path** | None fire reliably (see §16.3); future Path K planned |
+| **Correction path** | None fire reliably (see §16.3); financial genre correction unaddressed (see §16.6) |
 | **Framing devices** | 2–5 per article (moderate) |
 | **Source extraction** | Moderate (analyst quotes common; attribution via firm name, not individual) |
 | **Primary failure mode** | Genre-conventional financial vocabulary (revenue, growth, opportunity) is lexically positive regardless of editorial stance |
