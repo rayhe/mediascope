@@ -409,7 +409,26 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"heated (?:competition|race|battle|rivalry|contest|fight|war)|"
         r"(?:AI|tech(?:nology)?|data|digital|cloud|compute|chip|arms?) supremacy|"
         r"(?:AI|tech|arms|data|compute) (?:war|wars)|"
-        r"(?:AI|tech|arms|data|compute) arms race"
+        r"(?:AI|tech|arms|data|compute) arms race|"
+        # Gambling / high-risk metaphors applied to business decisions —
+        # editorializes by framing capital allocation as reckless wagering.
+        # Discovered via WSJ Meta Louisiana data center article (Jul 13, 2026):
+        # "aggressive bets" — neutral phrasing would be "investments" or
+        # "commitments".  Also covers "big gamble", "enormous wager", etc.
+        r"aggressive (?:bet|bets|gamble|gambles|wager|wagers|play|plays)|"
+        r"(?:big|enormous|massive|risky|audacious|bold) (?:bet|gamble|wager)|"
+        # Infrastructure burden language — editorializes by framing energy
+        # infrastructure impacts with loaded cost/damage vocabulary.
+        # Discovered via WSJ Meta Louisiana data center article (Jul 13, 2026):
+        # "burdening...customers", "surging electricity prices", "taxed grids"
+        # — frames infrastructure effects as harm rather than change.
+        r"burden(?:ing|ed|s)?\s+(?:\w+\s+){0,3}(?:customer|ratepayer|taxpayer|resident|consumer|community|household)s?|"
+        r"surging\s+(?:electricity|energy|power|utility|water)\s+(?:price|cost|rate|bill|demand)s?|"
+        r"(?:taxed|strained|overburdened|overwhelmed|overtaxed)\s+(?:grid|infrastructure|system|network|water\s+supply)s?|"
+        # Positive magnitude idioms used editorially — "life-altering",
+        # "life-changing" when applied to describe corporate impact amplifies
+        # significance beyond factual reporting.
+        r"life-?altering|life-?changing|life-?transforming"
         r")\b",
         re.IGNORECASE,
     ),
@@ -4660,6 +4679,19 @@ _ESCALATION_AMPLIFICATION_PATTERNS: list[re.Pattern] = [
         r"discontent|resentment)s?\b",
         re.IGNORECASE,
     ),
+    # "growing/rising public/community/local opposition" — same escalation
+    # pattern but with an intervening adjective qualifying the opposition.
+    # Discovered via WSJ Meta Louisiana data center article (Jul 13, 2026):
+    # "growing public opposition" was missed because "public" sits between
+    # the escalation verb and the negative noun.
+    re.compile(
+        r"\b(?:growing|rising|surging|mounting|increasing|intensifying)\s+"
+        r"(?:public|community|local|popular|grassroots|civic|"
+        r"neighborhood|residential|environmental|bipartisan)\s+"
+        r"(?:opposition|resistance|backlash|outcry|protest|pushback|"
+        r"anger|outrage|concern|discontent|unrest)s?\b",
+        re.IGNORECASE,
+    ),
     # Comparative-adverb concern escalation: "more worryingly",
     # "even more worryingly", "more alarming(ly)", "more troubling(ly)".
     # This pattern catches editorial escalation through comparative
@@ -8132,6 +8164,19 @@ _RECOVERY_NARRATIVE_PATTERNS = [
     ),
     re.compile(
         r"(?:continue|likely\s+to\s+continue)\s+(?:ramping|building|expanding|growing)",
+        re.IGNORECASE,
+    ),
+    # Revitalization idioms — positive editorial framing that portrays a
+    # corporate action as rescuing or transforming a community/economy.
+    # Discovered via Fox Business Meta Louisiana data center article
+    # (Jul 13, 2026): "breathing new life into" frames Meta's investment
+    # as salvation rather than neutral capital deployment.
+    re.compile(
+        r"\b(?:breath(?:ing|ed|es?)\s+(?:new\s+)?life\s+(?:into|back)|"
+        r"injecting\s+(?:new\s+)?life\s+into|"
+        r"revitaliz(?:ing|ed|es?)|rejuvenat(?:ing|ed|es?)|"
+        r"transform(?:ing|ed)?\s+(?:the\s+)?(?:local|rural|regional)\s+"
+        r"(?:economy|community|area|region|landscape))\b",
         re.IGNORECASE,
     ),
 ]

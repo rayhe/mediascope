@@ -1,0 +1,29 @@
+Meta Lifts Cost of Louisiana Data Center to $50 Billion
+
+Wall Street Journal — July 13, 2026
+
+Meta Platforms has scaled up the size of its massive data-center project in Northeast Louisiana to 5 gigawatts of compute capacity and said it would now cost more than $50 billion.
+
+The project in the rural Richland Parish region, originally pegged at a cost of $27 billion, will be the company's largest data center. The latest expansion also makes it one of the largest investments in artificial-intelligence infrastructure in the world, Meta said Monday.
+
+Private-credit manager Blue Owl Capital owns a major stake in the project, which has attracted investors including BlackRock, according to The Wall Street Journal.
+
+Meta said it has agreed to pay the costs of energy, water and related infrastructure used by the data center. In March, it reached a deal with Entergy Louisiana to fund the energy infrastructure of the project.
+
+Already, increased tax revenue linked to the project has translated to annual bonuses of up to around $50,000 for teachers in the local school district. For some teachers, the bonuses may be larger than their salaries.
+
+Officials in the Richland Parish community said the project has brought an influx of economic activity that is breathing new life into the region.
+
+"Meta's investment has made Richland Parish a destination for education as well as industry," Richland Parish School District Superintendent Sheldon Jones said, according to a Meta blog post on Monday.
+
+The project is underway amid growing public opposition to data centers around the U.S. Their effect on affordability has been repeatedly cited in polls and public comments as a concern.
+
+The Wall Street Journal previously reported that the project in Louisiana had raised concerns about burdening Louisiana electricity customers with higher costs.
+
+Across much of the country, the rapid buildout of energy-hungry data centers has led to taxed grids and surging electricity prices, prompting calls for tech companies to provide for their own energy needs.
+
+Publication: Wall Street Journal (wsj.com)
+Topic: AI infrastructure investment, data center expansion, community impact
+Date: July 13, 2026
+Sources referenced: Meta (company statement/blog post), Blue Owl Capital, BlackRock, Entergy Louisiana, Sheldon Jones (Richland Parish School District Superintendent)
+Cross-references: Reuters version, Fox Business version, Barron's coverage, IBD coverage

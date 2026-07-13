@@ -229,7 +229,7 @@ Every article analysis that introduces a toolkit correction must include:
 4. **Gap analysis** — why the gap exists and which specific framing devices or detection failures caused it
 5. **Regression tests** — at least one test per correction to prevent future regressions
 
-This ensures the correction pipeline is validated against real articles, not synthetic examples. All 167 annotated articles in `examples/sample_output/` follow this pattern.
+This ensures the correction pipeline is validated against real articles, not synthetic examples. All 168 annotated articles in `examples/sample_output/` follow this pattern.
 
 ## 8. Emotional Language Validation
 

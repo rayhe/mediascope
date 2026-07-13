@@ -1,6 +1,6 @@
 # Entity Detection & Clustering Quick Reference
 
-> A compact lookup card for all 86 entity clusters (852 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
+> A compact lookup card for all 86 entity clusters (863 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
 
 ---
 
@@ -193,7 +193,7 @@ Cloud providers, AI startups, and infrastructure companies.
 
 | # | Cluster | Aliases | Regex | Key Aliases | Notes |
 |---|---------|---------|-------|-------------|-------|
-| 66 | **Financial Services** | 57 | custom | Visa, Mastercard, Goldman Sachs, JPMorgan, BofA, PayPal, Stripe, Berkshire Hathaway, Buffett | Second-largest cluster. Visa excludes `Visa application/interview/status/waiver`. Stripe/Square require trailing context. Includes 20+ equity analyst firms. |
+| 66 | **Financial Services** | 68 | custom | Visa, Mastercard, Goldman Sachs, JPMorgan, BofA, PayPal, Stripe, Berkshire Hathaway, Buffett, BlackRock, Blue Owl Capital, KKR | Second-largest cluster. Visa excludes `Visa application/interview/status/waiver`. Stripe/Square require trailing context. Includes 20+ equity analyst firms and asset managers/private credit firms (Jul 13). |
 | 67 | **VC/Tech Investors** | 10 | custom | Marc Andreessen, a16z, Sequoia, Benchmark, Kleiner Perkins, Y Combinator | Benchmark requires trailing context (`Capital`, `partner`, `led`, `invested`, etc.) |
 | 68 | **Prediction Markets/Fintech** | 13 | custom | Polymarket, Kalshi, Robinhood, CFTC | |
 | 69 | **Indian Fintech** | 4 | custom | CRED, Kunal Shah, PhonePe, UPI | |
@@ -334,7 +334,7 @@ Understanding the alias distribution helps prioritize disambiguation work — la
 
 | Size Tier | Clusters | Examples |
 |---|---|---|
-| **50+ aliases** | 3 | Meta (88), Financial Services (57), Academic/Research (54) |
+| **50+ aliases** | 3 | Meta (88), Financial Services (68), Academic/Research (54) |
 | **20–49 aliases** | 4 | US Government (47), Media/Publications (31), Energy/Utilities (24), Defense Tech (21) |
 | **10–19 aliases** | 13 | Nvidia (17), Research Centers (15), OpenAI (14), etc. |
 | **5–9 aliases** | 25 | Apple (11), Google (11), Microsoft (9), Amazon (9), etc. |
