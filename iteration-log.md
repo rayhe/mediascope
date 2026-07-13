@@ -1,5 +1,49 @@
 # MediaScope Iteration Log
 
+## 2026-07-13 03:00 PT — Type B: Journalist/Publication Research (Ted Chiang)
+
+**Commit:** `938608a` — "Type B: add Ted Chiang profile (New Yorker → Atlantic AI critic)"
+
+### Summary
+Added Ted Chiang (journalist #228) — the most influential non-journalist voice shaping public AI discourse through essays. Already cited in our annotated article analysis (`atlantic_ai_not_conscious_2026_06_analysis.md`) but was not profiled in `journalists.yaml`. His June 2026 byline at The Atlantic makes him directly relevant to MediaScope's tracked publication set.
+
+### New Journalist Profile: Ted Chiang
+- **Born:** 1967, Port Jefferson, NY (Taiwanese American)
+- **Education:** Brown University BS Computer Science (1989), Clarion Writers Workshop (1989)
+- **Day job:** Technical writer — freelance (1989-2019) → Microsoft (2019-present)
+- **Fiction:** 18 published works in 35+ years. 4x Hugo, 4x Nebula, 6x Locus, PEN/Malamud 2024, SF Hall of Fame 2020, TIME100 AI 2023. "Story of Your Life" → film "Arrival" (2016)
+- **Non-fiction career:** New Yorker contributing writer (2016-present), Atlantic contributing writer (2026-present)
+
+### Key New Yorker → Atlantic Migration
+- **New Yorker essays (6 major pieces, 2016-2024):** "Bad Character" (2016), "Why Computers Won't Make Themselves Smarter" (2021), "ChatGPT Is a Blurry JPEG of the Web" (Feb 2023, most viral — framed LLMs as lossy compression), "Will A.I. Become the New McKinsey?" (May 2023, accountability laundering frame), "Why A.I. Isn't Going to Make Art" (Aug 2024, won BSFA Short Non-Fiction Award)
+- **Atlantic essay (2026):** "No, Artificial Intelligence Is Not Conscious" (Jun 3, 2026) — 10,000+ word essay targeting Anthropic specifically, arguing LLM conversations are sentence-completion exercises. Generated major debate (Substack rebuttals, YouTube analysis, Reddit threads)
+- **Migration significance:** First Atlantic byline after years at New Yorker. Whether sustained contributor relationship or one-off commission TBD, but represents Atlantic attracting the highest-profile AI critic from New Yorker's contributor stable during peak AI consciousness debates (Hinton, Hassabis, June 2026)
+
+### MediaScope Analytical Value
+Chiang is unique in the database — not a journalist but a fiction writer/technical writer whose AI criticism essays create metaphors and frames ("blurry JPEG," "new McKinsey," "sentence completion") that enter mainstream vocabulary and are cited by the staff journalists MediaScope tracks. His Brown CS background + Microsoft employment gives his criticism technical credibility that most arts/culture critics lack. His anti-AI-consciousness essay directly intersects with coverage of Meta AI, Anthropic Claude, and Google DeepMind.
+
+### Also Updated
+- `editorial_changes.yaml`: Atlantic entry for Chiang's June 2026 arrival as contributing writer
+- README.md, EDITORIAL_HISTORIES.md, careers_demo.py: updated counts (228 journalists, 900 career-entry migrations, 416 distinct publications, 219 multi-pub)
+
+### Stats After This Iteration
+- Journalists: 228 (was 227, +1)
+- Career-entry migrations: 900 (was 897, +3)
+- Distinct publications: 416 (was 414, +2: freelance-tech, microsoft)
+- Multi-publication: 219 (was 218, +1)
+- Tests: 118 structural consistency tests pass
+- count_stats.py --check: ✅ clean
+
+### Source URLs
+- https://en.wikipedia.org/wiki/Ted_Chiang
+- https://www.newyorker.com/contributors/ted-chiang
+- https://www.thebeliever.net/an-interview-with-ted-chiang/
+- https://locusmag.com/2025/08/ted-chiang-scientific-method/
+- https://electricliterature.com/the-legendary-ted-chiang-on-seeing-his-stories-adapted-and-the-ever-expanding-popularity-of-sf/
+- https://gradesaver.com/story-of-your-life/about
+
+---
+
 ## 2026-07-13 02:00 PT — Type A: Article Deep Dive (AV Club — Muse Image Shutdown)
 
 **Article:** AV Club — "Meta successfully shamed out of its terrible 'remix total strangers' Instagram photos with AI' plan" (Jul 11, 2026)
