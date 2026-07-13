@@ -538,6 +538,17 @@ editorial_changes:
     outgoing: null
     position: deputy_digital_editor
     source_url: https://talkingbiznews.com/media-news/bloombergs-datoo-joins-guardian/
+  - date: '2025'
+    incoming: James Vincent
+    notes: 'ARRIVAL: James Vincent began contributing opinion and commentary to The Guardian after departing The Verge (~2015-2023) where he was senior editor covering AI, machine learning, and robotics.
+      Cambridge University graduate. London-based. His Guardian opinion piece "The DeepSeek panic reveals an AI world ready to blow" (28 Jan 2025) was widely cited: EU Parliament EuroStack report, Alberta
+      Law Review, Journal of Democracy. Also contributes essays to London Review of Books ("Instrumental Tricks" Oct 2023, "Do Chatbots Dream of AI Poetry?" Feb 2024) and has written for FT, Wired, New
+      Statesman. Author of "Beyond Measure: The Hidden History of Measurement" (Faber 2022 / W.W. Norton 2023, New Yorker + Economist book of the year). MIGRATION SIGNIFICANCE: The Verge → Guardian pipeline
+      adds an experienced AI specialist to Guardian opinion pages. His AI-critical framing aligns with Guardian editorial posture but carries independent credibility from nearly a decade at The Verge. Unlike
+      staff hires, opinion contributor status means less institutional editorial control over his output.'
+    outgoing: null
+    position: opinion_contributor_ai
+    source_url: https://www.theguardian.com/commentisfree/2025/jan/28/deepseek-panic-ai-artificial-intelligence
   mit-tech-review:
   - date: 2016-01
     incoming: Michael Reilly
@@ -1118,6 +1129,17 @@ editorial_changes:
     outgoing: null
     position: senior_technology_editor
     source_url: https://talkingbiznews.com/media-news/the-verge-hires-galperina-as-senior-tech-editor/
+  - date: '2023'
+    incoming: null
+    notes: 'DEPARTURE: James Vincent departed The Verge after approximately nine years (~2015-2023) as senior editor covering AI, machine learning, robotics, and science. UK-based (London). One of the most
+      prolific and influential AI reporters of the modern deep learning era. His "AI is killing the old web" piece (Jun 2023) was one of the most-cited tech journalism articles of the year, referenced in
+      EU Parliament research, Journal of Democracy, and multiple law reviews. Also co-investigated CNET AI writing controversy with Mia Sato (Jan 2023). Verge AI coverage author of Samsung moon photo faking,
+      Stable Diffusion artist controversy, Amazon Rekognition bias investigations. His departure alongside Jon Porter left The Verge without any UK-based reporters, reducing its European perspective. Transitioned
+      to freelance work: book writing ("Beyond Measure", Faber/W.W. Norton), Guardian opinion contributor, London Review of Books essayist. MIGRATION SIGNIFICANCE: The Verge lost its longest-serving dedicated
+      AI reporter during the peak of the ChatGPT-era AI coverage boom, while The Guardian gained an experienced AI voice for its opinion pages.'
+    outgoing: James Vincent
+    position: senior_editor_ai
+    source_url: https://talkingbiznews.com/media-news/vincent-departing-the-verge-after-eight-years/
   - date: '2025'
     incoming: null
     notes: 'Owen departed Wired for WSJ (Dow Jones/News Corp) as senior video journalist. Brief Wired tenure (<1 year). Her Vice → Wired → WSJ migration spans three distinct institutional cultures: Vice
@@ -1760,3 +1782,4 @@ editorial_changes:
       for DiD: MIT Tech Review → Wired represents a move from academic/technical audience to consumer-tech audience under Condé Nast. Landed under EIC Nicholas Thompson (who would leave for Atlantic CEO
       in Dec 2020), then continued under Gideon Lichfield and Katie Drummond. University of Kent BA Anthropology, University of the Arts London Journalism.'
     source_url: https://talkingbiznews.com/they-talk-biz-news/wired-hires-knight-to-cover-artificial-intelligence/
+

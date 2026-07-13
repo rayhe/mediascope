@@ -13125,3 +13125,101 @@ journalists:
   - https://locusmag.com/2025/08/ted-chiang-scientific-method/
   - https://electricliterature.com/the-legendary-ted-chiang-on-seeing-his-stories-adapted-and-the-ever-expanding-popularity-of-sf/
   - https://gradesaver.com/story-of-your-life/about
+- career:
+  - beat: science, technology
+    end: '2015'
+    notes: 'Online science and technology reporter/editor. Covered topics including emerging
+      tech, gaming (PS TV review, Call of Duty), space science (Philae comet lander),
+      aviation (AirAsia flight QZ8501 black box explainer), net neutrality. Title on
+      Independent page: "Science and Technology Reporter."'
+    publication: independent-uk
+    role: tech_reporter
+    start: '2013'
+  - beat: AI, machine learning, robotics, science, technology
+    end: '2023'
+    event_type: departed
+    notes: 'Nine-year tenure (~2015-2023) covering artificial intelligence, machine learning,
+      robotics, and broader science/technology. Rose from reporter to senior reporter
+      to senior editor. UK-based (London) — one of The Verge''s few non-US staff reporters,
+      giving him a European perspective on tech regulation and AI governance. KEY ARTICLES:
+      "AI is killing the old web, and the new web struggles to be born" (Jun 26, 2023) —
+      widely cited in academic papers (Journal of Democracy, Alberta Law Review, EU Parliament
+      research), one of the most-referenced tech journalism pieces of 2023. "The scary truth
+      about AI copyright is nobody knows what will happen next" (Dec 2022). Samsung Moon
+      photo faking investigation (2023). CNET AI controversy investigation with Mia Sato
+      (Jan 2023). Stable Diffusion artist/NSFW controversy (Nov 24, 2022). Amazon Rekognition
+      facial recognition bias (Jan 2019, cited by MIT News). Putin "ruler of the world"
+      AI quote (Sep 2017). Ultrasound voice assistant attacks (Sep 2017). Also contributed
+      to Vergecast podcast as senior audio contributor. During his tenure, The Verge became
+      a primary source for AI coverage cited by policymakers, academics, and other journalists.
+      Departure announced via Talking Biz News (late 2023).'
+    publication: the-verge
+    role: senior_editor
+    start: '2015'
+  - beat: AI, technology, culture, measurement, history of science
+    end: present
+    notes: 'Freelance writing career following Verge departure. Published "Beyond Measure:
+      The Hidden History of Measurement from Cubits to Quantum Constants" (Faber UK 2022,
+      W.W. Norton US Nov 2023, 432pp). Two-book deal with Faber via agent Sophie Scard
+      at United Agents (London). Named book of the year by The Economist and The New Yorker.
+      Also written for Financial Times, Wired, New Statesman. Literary agent: Sophie Scard,
+      United Agents, London.'
+    publication: freelance
+    role: freelancer
+    start: '2024'
+  - beat: AI commentary, technology opinion
+    end: present
+    notes: 'Contributing writer for LRB covering AI, technology, and culture through
+      long-form literary essays. "Instrumental Tricks: Prosthetic Brainpower" (LRB Vol 45
+      No 19, 5 Oct 2023) — review essay on AI and cognition. "Horny Robot Baby Voice" —
+      essay on AI chatbot companion (Replika) and the 2021 Windsor Castle crossbow attack
+      where perpetrator was encouraged by AI chatbot. "Do Chatbots Dream of AI Poetry?"
+      (Feb 2024) — analysis of ChatGPT''s Feb 20, 2024 breakdown where it produced
+      incomprehensible responses. These essays represent a shift from news reporting to
+      literary criticism of technology — the LRB''s essay form allows deeper cultural analysis
+      than daily Verge coverage permitted.'
+    publication: london-review-of-books
+    role: contributing_writer
+    start: '2023'
+  - beat: AI opinion, technology commentary
+    end: present
+    notes: 'Opinion/commentary contributor. "The DeepSeek panic reveals an AI world ready
+      to blow" (Guardian, 28 Jan 2025) — analysis of DeepSeek R1''s impact on AI industry
+      assumptions about compute cost and Western AI dominance. Widely cited in academic
+      papers: EU Parliament EuroStack report, Alberta Law Review "Data Centres, AI, and
+      Electrification," Energy Law Foundation. The Guardian is a tracked MediaScope publication,
+      making Vincent''s Verge→Guardian migration a natural experiment for institutional
+      framing analysis. His Guardian pieces adopt a more essayistic, analytical tone vs his
+      Verge news reporting — a measurable style shift that the DiD framework can decompose
+      into individual vs institutional voice.'
+    publication: guardian
+    role: contributing_writer
+    start: '2025'
+  multi_publication: true
+  name: James Vincent
+  notes: 'British journalist and author based in London. Cambridge University graduate.
+    Twitter/X: @jjvincent (~20,700 followers). One of the most influential AI journalists
+    of the 2015-2023 era — his nine-year Verge tenure coincided with the entire modern
+    AI boom from deep learning breakthroughs through the ChatGPT era. His "AI is killing
+    the old web" piece (Jun 2023) became one of the most-cited tech journalism articles
+    of the decade, referenced in EU Parliament research, Journal of Democracy, Alberta
+    Law Review, and dozens of academic papers. KEY FOR MEDIASCOPE: Vincent''s career
+    represents a high-value natural experiment for the editorial migrations DiD framework.
+    He spent ~9 years as The Verge''s primary AI voice, then transitioned to freelance
+    work at The Guardian (a tracked publication). This Verge→Guardian migration allows
+    direct comparison of how institutional context shapes framing: same journalist, same
+    beat (AI), different publication constraints. His Verge work was news-oriented (daily
+    reporting, investigation, explainers); his Guardian output is opinion/commentary (essayistic,
+    analytical, explicitly labeled opinion). The LRB essays represent a third register:
+    literary criticism of technology, with 5,000+ word pieces that embed AI critique within
+    cultural history. Tracking all three registers from one writer provides a control
+    for individual voice when measuring institutional framing bias.'
+  source_urls:
+  - https://muckrack.com/james-vincent-32
+  - https://talkingbiznews.com/media-news/vincent-departing-the-verge-after-eight-years/
+  - https://www.penguinrandomhouse.com/authors/2286855/james-vincent/
+  - https://www.unitedagents.co.uk/james-vincent
+  - https://www.buzzsumo.com/journalist/james-vincent/jjvincent/
+  - https://www.theguardian.com/commentisfree/2025/jan/28/deepseek-panic-ai-world
+  - https://www.lrb.co.uk/the-paper/v45/n19/james-vincent/instrumental-tricks
+  - https://www.independent.co.uk/author/james-vincent
