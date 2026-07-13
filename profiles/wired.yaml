@@ -641,6 +641,12 @@ advance_investments:
         CA AG Rob Bonta (Jun 28): "red flags in the air everywhere." Late September close now
         considered more realistic timeline per NBC/industry analysts. Paramount executives have
         argued an antitrust suit by the states would be meritless.
+        POLITICAL PRESSURE ON CA AG (Jul 11): Rep. Darrell Issa (R-CA) publicly warned CA AG
+        Bonta against blocking the deal, framing state intervention as overreach (Reuters, Jul 11).
+        PARAMOUNT CA EXODUS THREAT: Paramount reportedly weighing relocation of California
+        headquarters if AG Bonta files suit — leverage play to dissuade state-level challenge
+        (WSJ, Jul 9-10). Combined Paramount-WBD entity would carry ~$80B in debt (WSJ/Times),
+        a figure cited by state AGs as a risk to content investment and local employment.
       - DEAL PROTECTIONS: If transaction does not close by Sept 30, 2026, WBD shareholders receive
         $0.25/share "ticking fee" per quarter (~$627.5M/quarter per Morningstar estimate based on
         ~192M WBD shares × $30 × 0.25/4 + overhead). If deal fails due to regulatory matters,
@@ -650,7 +656,7 @@ advance_investments:
       realized from June 2024 sale = ~$4.04B total from WBD investment. This would be Advance's largest
       single liquidity event since the Reddit IPO and could significantly alter the family office's capital
       allocation and media strategy.
-    current_value_estimate: "~$2.61B remaining at market ($26.59 Jul 10 close) or ~$2.94B at Paramount tender ($30/share) + $1.1B already realized = ~$3.71-4.04B total. WBD market cap ~$64.5B."
+    current_value_estimate: "~$2.61B remaining at market ($26.59 Jul 10 close) or ~$2.94B at Paramount tender ($30/share) + $1.1B already realized = ~$3.71-4.04B total. WBD market cap ~$64.5B. Combined Paramount-WBD ~$80B debt (WSJ/Times)."
     competitive_with: ["Meta (streaming/content)"]
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse+programming&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
     source_urls:
@@ -704,6 +710,17 @@ advance_investments:
       Also runs plagiarism.org informational site.
       ACQUISITIONS UNDER ADVANCE: VeriCite (2018, pre-acquisition), Unicheck (2020), Ouriginal (2021, merger
       of Urkund + PlagScan). Each consolidated Turnitin's global monopoly position in academic integrity software.
+      ADDITIONAL SUBSIDIARIES:
+      - ExamSoft (exam security): AI-powered remote proctoring via ExamMonitor (facial recognition +
+        AI-driven behavior analysis to flag suspicious activity during exams) and ExamID (identity
+        verification via biometric facial comparison). Raises civil liberties concerns about AI
+        surveillance in education. ExamSoft is widely used by bar exam boards, medical licensing, and
+        universities for high-stakes assessments.
+      - ProctorExam (Amsterdam): European online proctoring subsidiary, expanding Turnitin's AI
+        surveillance footprint internationally.
+      These subsidiaries deepen the DUAL-SIDED AI CONFLICT: Advance profits from AI content generation
+      (Condé Nast licensing), AI content detection (Turnitin Originality), AND AI-powered human
+      surveillance (ExamSoft/ProctorExam) — three sides of the AI arms race, all under one owner.
       AI WRITING DETECTION (launched Apr 2023): Claims <1% false positive rate for documents >20% AI-written.
       Processes 200M+ papers through AI detector. Data shows ~11% of submissions have ≥20% AI writing, ~3% have
       ≥80% AI writing. Higher false positive rates for documents <20% AI-written (asterisk added to those scores).
@@ -810,9 +827,9 @@ advance_investments:
     source_url: "https://advance.com"
 
 # ===================================================================
-# TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (updated Jul 10, 2026 afternoon)
+# TOTAL ADVANCE/NEWHOUSE PORTFOLIO VALUATION (updated Jul 10, 2026 close)
 # ===================================================================
-# Reddit (RDDT): ~$8.20B (42.2M shares @ $194.11, Jul 10 2026 afternoon, -3.10%)
+# Reddit (RDDT): ~$8.23B (42.2M shares @ $195.09, Jul 10 2026 close, -2.61%)
 #   PRICE TRAJECTORY: +13.69% on Jul 1 (momentum breakout, briefly touched $201.16 intraday),
 #   -1.44% pullback Jul 2, recovery to $200.86 by Jul 7, -1.99% to $195.47 by Jul 8.
 #   Driven by strong Q1 fundamentals + AI licensing repricing narrative.
@@ -833,7 +850,7 @@ advance_investments:
 #   ARPU: $5.23 global, $9.63 US. Beats Pinterest ($7.12) and Snapchat ($9.23). Only Meta ($15.66)
 #   is higher. Reddit ARPU runway: still has room for more ad frequency, better targeting, and
 #   monetizing search + video features that "barely make money yet." 70 hedge funds hold RDDT.
-# Charter (CHTR): ~$2.70B (20.6M shares @ $130.95, Jul 10 afternoon, -2.53%)
+# Charter (CHTR): ~$2.69B (20.6M shares @ $130.73, Jul 10 close, -2.69%)
 #   SpaceX mobile partnership talks (Bloomberg, Jun 26): executive-level discussions for consumer
 #   mobile service in US. Charter would route SpaceX phone traffic through ground infrastructure.
 #   Charter passes 43.2M locations (post-Cox acquisition). Q2 earnings Jul 24 (before market open).
@@ -851,6 +868,8 @@ advance_investments:
 #   Multistate AG antitrust lawsuit still expected — CNN reported "likely next week" (Jul 8-9).
 #   Paramount committed not to close before Jul 22. Late September close considered realistic.
 #   $627M/quarter ticking fee (~$7M/day) triggers if not closed by Sept 30.
+#   Rep. Darrell Issa (R-CA) publicly warned CA AG Bonta against blocking (Jul 11, Reuters).
+#   Paramount weighing CA HQ exodus threat if Bonta files suit. Combined entity ~$80B debt (WSJ/Times).
 #   WBD Q1 2026 missed badly: EPS -$1.17 vs consensus -$0.10 (missed by $1.07). Rev $8.89B (-1% YoY).
 #   WBD Q2 2026 earnings: Aug 6 (before market open).
 # Condé Nast: Private (~$1.9-2.0B revenue, profitable 2025, events rev +40% YoY, projecting +22% in 2026)
@@ -1846,6 +1865,10 @@ restructuring_timeline:
       resignations with letters of recommendation. Five suspended workers received back pay and had
       disciplinary records expunged. Jake Lahut (Wired) DECLINED settlement as probationary employee,
       instead pursuing NLRB unfair labor practice charge — still pending as of July 2026.
+      CWA VINDICATION (Jun 11, 2026): Communications Workers of America declared the settlement a
+      "vindication" of the fired and suspended workers, framing it as confirmation that Condé Nast's
+      actions were retaliatory and illegal. CWA statement amplified by labor press, reinforcing the
+      narrative that Condé Nast management engages in union-busting.
       WIRED EDITORIAL SIGNIFICANCE: Lahut was a senior politics reporter on Drummond's signature
       politics team (the first in Wired history). His firing and ongoing NLRB case means Wired's
       politics desk lost a key staffer in circumstances the NY AG characterized as union-busting.
