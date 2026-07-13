@@ -1,5 +1,59 @@
 # MediaScope Iteration Log
 
+## 2026-07-13 06:00 PT — Type D: Toolkit Quality & Documentation
+
+**Commit:** `aaa333c` — "Type D: fix stale Path L refs across 4 docs, add intro-text guard tests"
+
+### Focus
+Documentation audit and structural consistency hardening. The Jul 12 Path L implementation updated path tables across docs but missed narrative intro text — 6 stale "11 paths (A–K)" references survived in ARCHITECTURE.md, AGENT_GUIDE.md, and METHODOLOGY.md. Also found stale entity cluster count and a "Path L proposed" item in Known Limitations (Path L is now implemented).
+
+### Issues Found & Fixed
+
+#### 1. ARCHITECTURE.md (4 fixes)
+- **Intro text:** "11 distinct paths (A–K)" → "12 distinct paths (A–L)"
+- **Pipeline diagram:** Added Path L (Quote-inflated) to visual path split — was showing only A through K
+- **Known Limitations:** Removed "Structural-split articles (Path L proposed)" item — Path L is implemented since Jul 12. Renumbered from 3 items → 2 (financial journalism inflation + procedural service journalism remain)
+- **Known Limitations:** Entity clusters "(85)" → "(86)" — cluster #85 (Patent/IP Research) was added Jul 12 but scope section not updated
+
+#### 2. AGENT_GUIDE.md (1 fix)
+- **Correction Paths intro:** "11 paths (A–K)" → "12 paths (A–L)"
+
+#### 3. METHODOLOGY.md (3 fixes)
+- **§9.2 intro:** "11 distinct correction paths (A–K)" → "12 distinct correction paths (A–L)"
+- **§16 financial inflation ref:** "existing correction paths (A–K)" → "existing correction paths (A–L)"
+- **§16 word count:** "eleven correction paths" → "twelve correction paths"
+
+#### 4. Structural Consistency Tests (+4 tests, 117→121)
+New guard tests that prevent intro-text drift when correction paths are added:
+- `test_architecture_intro_path_count` — validates `**N distinct paths (X–Y)**` in ARCHITECTURE.md matches code
+- `test_agent_guide_intro_path_count` — validates `N paths (X–Y)` in AGENT_GUIDE.md matches code
+- `test_methodology_intro_path_count` — validates `**N distinct correction paths (X–Y)` in METHODOLOGY.md matches code
+- `test_methodology_financial_ref_path_range` — validates `existing correction paths (X–Y)` in §16 matches code
+- Fixed stale class docstring: "all 11 sentiment correction paths (A-K)" → "all 12 (A-L)"
+- Fixed 5 stale method docstrings: "all 10 paths/correction paths" → "all 12"
+
+#### 5. Count Updates
+- README.md: Tests 2,345 → 2,349, per-file count 117 → 121
+- ARCHITECTURE.md: Tests 2345 → 2349
+- README.md + ARCHITECTURE.md test description updated with new guard test coverage
+
+### Root Cause Analysis
+The Jul 12 20:00 Type A iteration (Gizmodo Content Seal article) added Path L and claimed in the iteration log: "Updated all references from '11 correction paths (A–K)' to '12 correction paths (A–L)' across METHODOLOGY.md, AGENT_GUIDE.md, QUALITY_STANDARDS.md, SOURCE_ANALYSIS_REFERENCE.md, and sarcastic_editorial_demo.py." However:
+- ARCHITECTURE.md was not in the update list
+- METHODOLOGY.md had 3 "A–K" references but only the table was checked; 2 narrative references were missed
+- AGENT_GUIDE.md had its table checked but its intro sentence was missed
+
+The existing `TestCorrectionPathDocumentation` tests validated path _tables_ (all 12 paths present in `| **A** |` format) but not the narrative introductory text that uses a different format ("N distinct paths (A–L)"). The 4 new tests close this gap by parsing the intro text format specifically.
+
+### Stats After This Iteration
+- Tests: 2,349 (was 2,345, +4 new structural consistency tests)
+- Structural consistency tests: 121 (was 117)
+- All other counts unchanged (86 clusters, 101 types, 654 compiled patterns, 1,022 EL terms, etc.)
+- count_stats.py --check: ✅ clean
+- Full suite: 2,349 passed in 130s
+
+---
+
 ## 2026-07-13 05:00 PT — Type C: Ownership & Funding Deep Dive (The Verge/PMC Financial Updates)
 
 **Commit:** `67c455e` — "Type C: The Verge/PMC financial updates — SRMG Q1 2026 recovery, PAG $194, SEAT -$1.35 EPS miss, NYT sanctions motion"
