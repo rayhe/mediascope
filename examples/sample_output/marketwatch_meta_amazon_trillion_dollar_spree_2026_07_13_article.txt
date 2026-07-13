@@ -1,0 +1,20 @@
+# Meta and Amazon are leading a trillion-dollar Big Tech spending spree
+
+**Publication:** MarketWatch (marketwatch.com)
+**Date:** July 13, 2026
+
+Investors who worry that Big Tech companies will pull back on their artificial-intelligence spending should think again.
+
+The cost of the AI race is on track to rise even higher as companies like Meta Platforms META, Amazon.com AMZN, Alphabet GOOGL GOOG, Microsoft MSFT and SpaceX SPCX scramble to bring more capacity online amid supply-chain bottlenecks, according to Morgan Stanley analyst Brian Nowak.
+
+In a Monday note, Nowak raised his capital-expenditure forecasts for those five hyperscalers — and is now projecting a combined $1.2 trillion in 2027 and $1.4 trillion by 2028. The new estimates are up 9% and 10%, respectively, from previous levels.
+
+This level of investment is expected to quadruple the amount of total available hyperscale compute capacity to 120 gigawatts by 2028, Morgan Stanley predicts.
+
+Meta and Amazon, in particular, are driving the entire group's spending higher. Morgan Stanley raised Amazon's total companywide capital expenditures for 2027 and 2028 by 15% and 29%, respectively — with the company now projected to spend $308 billion in 2027 and $318 billion in 2028. Meta's capex estimates rose 29% for 2027 to reach $225 billion and 22% for 2028 to $250 billion.
+
+On Monday, Meta raised the expected cost of its data center being built in Louisiana to $50 billion, from the $27 billion that was announced in October.
+
+With hardware shortages increasing the time between breaking ground to opening data centers to as much as three years, and impending political uncertainty heading into the 2028 presidential election, Nowak believes hyperscalers are increasing their budgets to overcome these obstacles. Increasing social and political backlash to data-center development could be leading Big Tech companies "to start building sooner to emphasize job creation," Nowak noted.
+
+Also read: Big Tech's $700 billion spending on AI this year is called the 'greatest capital misallocation in history'

@@ -338,6 +338,18 @@ Two documented failure classes lack correction paths:
 - **LinkedIn as a data source:** Career data enrichment from LinkedIn is blocked by Chrome App-Bound Encryption, limiting automated profile expansion. Career entries must be manually researched from public sources (conference bios, author pages, press releases).
 - **Freelance/concurrent roles:** The migration detector uses gap analysis to distinguish genuine job changes from concurrent freelance roles, but short-duration freelance stints (< 3 months) between permanent positions can be miscounted as migrations.
 
+### Genre as Confounding Variable (Open — Identified Jul 13, 2026)
+
+Same-event cross-publication analysis of the Meta Hyperion Louisiana datacenter expansion (5 outlets, same day) revealed that **article genre predicts framing more reliably than publication identity**. The two news-genre articles (Fox Business, WSJ) both included community impact voices; the three investor-analysis articles (Barron's, IBD, MarketWatch) all omitted community voices and led with analyst framing. See `examples/sample_output/cross_pub_meta_louisiana_datacenter_5way_2026_07_13.md` for full evidence.
+
+**Implication for asymmetry scoring:** When comparing publications, an apparent asymmetry between Publication A and Publication B may actually reflect genre-mix differences (e.g., A publishes more investor-angled coverage, B publishes more news reports). The asymmetry score would attribute to editorial bias what is actually a genre composition effect.
+
+**Proposed solution:** Add `genre` as a confounding variable in asymmetry calculations. Minimum genre categories: `news_report`, `investor_analysis`, `opinion_editorial`, `investigative`, `service_journalism`. This would enable within-genre comparisons that better isolate genuine editorial asymmetry from genre effects. Not yet implemented — requires genre classification as a pre-analysis step.
+
+### Competitor Sentiment Augmentation (Open — Requested Jul 12, 2026)
+
+The current asymmetry scoring compares a target entity's sentiment against peers, but does not weight competitor mentions within target articles. When an article about Meta favorably mentions Google or Apple, that favorable competitor mention currently counts only toward the competitor's entity sentiment — it does not register as an implicit negative signal *within* the Meta article. A future enhancement would compute intra-article competitor sentiment differentials.
+
 ### Scope
 
 - The toolkit currently tracks **6 publications** with full ownership profiles. Adding publications requires manual research into ownership chains, revenue relationships, and litigation connections (see [ADDING_PUBLICATIONS.md](ADDING_PUBLICATIONS.md)).
@@ -440,7 +452,7 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
-│   └── sample_output/       # 171 annotated real-article analyses (see METHODOLOGY.md §17)
+│   └── sample_output/       # 172 annotated real-article analyses (see METHODOLOGY.md §17)
 ├── tests/                       # 2437 tests across 108 test files (all from real articles)
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI

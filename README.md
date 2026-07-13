@@ -47,7 +47,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Emotional language terms | 1022 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 31 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 12 | Paths A–L, each addressing a specific VADER failure mode |
-| Annotated articles | 171 | Full manual analysis in `examples/sample_output/` |
+| Annotated articles | 172 | Full manual analysis in `examples/sample_output/` |
 | Journalists tracked | 229 | Career data with source URLs |
 | Career-entry migrations | 904 | Across 418 distinct publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
