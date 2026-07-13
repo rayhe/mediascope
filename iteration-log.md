@@ -1,5 +1,47 @@
 # MediaScope Iteration Log
 
+## 2026-07-13 00:00 PT — Type C: Ownership & Funding Deep Dive (Advance Portfolio Update)
+
+**Focus:** Refreshed Advance Publications portfolio data in `profiles/wired.yaml` — Paramount-WBD political dynamics, Turnitin subsidiary expansion (ExamSoft AI proctoring), CWA labor vindication, and stock close prices.
+
+**Research areas and findings:**
+
+1. **Paramount-WBD Political Escalation (Jul 11):**
+   - Rep. Darrell Issa (R-CA) publicly warned CA AG Bonta against blocking the deal (Reuters, Jul 11)
+   - Paramount weighing CA HQ exodus threat as leverage against state-level challenge (WSJ, Jul 9-10)
+   - Combined Paramount-WBD entity would carry ~$80B in debt (WSJ/Times), cited by state AGs as content investment risk
+   - Oregon AG withdrawal already in profile from prior iteration; mirrored new Issa/exodus/debt details in both narrative and equity snapshot sections
+
+2. **Turnitin ExamSoft AI Proctoring (NEW SUBSIDIARY DETAIL):**
+   - ExamSoft uses ExamMonitor (facial recognition + AI-driven behavior analysis for exam proctoring) and ExamID (biometric identity verification)
+   - ProctorExam (Amsterdam) = separate European online proctoring subsidiary
+   - This deepens the ownership conflict to THREE-SIDED: Advance profits from AI content licensing (Condé Nast), AI content detection (Turnitin Originality), AND AI-powered human surveillance (ExamSoft/ProctorExam) — all under one family office
+
+3. **CWA Vindication Statement (Jun 11, 2026):**
+   - Communications Workers of America declared the Fired Four settlement a "vindication," framing it as confirmation of retaliatory firings
+   - Added to the Fired Four settlement entry in the timeline and mirrored in the fired_four_incident analytical significance
+
+4. **Stock Close Prices (Jul 10):**
+   - RDDT: $195.09 close (-2.61%), Advance stake ~$8.23B (was $194.11 afternoon / ~$8.20B)
+   - CHTR: $130.73 close (-2.69%), Advance stake ~$2.69B (was $130.95 afternoon / ~$2.70B)
+   - WBD: $26.59 close (-0.15%), unchanged
+   - Updated valuation header from "afternoon" to "close" for consistency
+
+**Changes:**
+- `profiles/wired.yaml`: +27 lines, -4 lines
+  - Paramount section: 6 new lines (Issa, exodus, $80B debt)
+  - Turnitin section: 12 new lines (ExamSoft/ProctorExam subsidiaries, three-sided conflict note)
+  - Timeline: 4 new lines (CWA vindication statement)
+  - Equity snapshot: 2 new comment lines (Issa, exodus/debt), 3 price corrections
+
+**Commit:** `070c5ce` — pushed to GitHub
+
+**Not changed (already current):**
+- Oregon AG withdrawal (Jul 11) — added in prior iteration
+- Condé Nast portfolio changes (Self shutdown, Wired Italy, Glamour closures) — already documented
+- EU Phase I deadline July 22 — already documented
+
+
 ## 2026-07-12 23:00 PT — Type B: Journalist Research (Zoë Schiffer Profile Expansion)
 
 **Focus:** Expanded Zoë Schiffer's `journalists.yaml` entry from a notes-only stub to a fully structured profile with education, awards, source URLs, and updated analytical notes.
