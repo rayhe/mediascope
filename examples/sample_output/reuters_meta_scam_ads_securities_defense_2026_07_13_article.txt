@@ -1,0 +1,67 @@
+Meta presses new defense tactic in cases over scam ads promoting stocks
+
+The Facebook ad featured a "Shark Tank" host and promised extraordinary investment returns.
+
+Wisconsin retiree Maurie Daigneau clicked.
+
+The ad led him to what appeared to be a legitimate investment club. According to a lawsuit filed last year against Meta on behalf of Daigneau and other investors, it was actually a network of scammers.
+
+There was no connection to "Shark Tank," no secret investment strategy and no easy profits, the plaintiffs contend. Instead, Daigneau and his wife were allegedly persuaded to invest in a Chinese penny stock that was being used in a pump-and-dump scheme, ultimately losing $715,000 — nearly all of their retirement savings.
+
+Daigneau's story is depressingly familiar. As my Reuters colleagues Jeff Horwitz and Engen Tham documented in Pulitzer Prize-winning reporting, Meta's platforms have become fertile ground for scammers looking for victims — and a lucrative source of advertising revenue for the company.
+
+But efforts to hold Meta liable for investment-related scams are running into a peculiar legal obstacle: The closer the alleged fraud is tied to a stock purchase, the harder it may be to pursue a consumer class action against the company.
+
+In essence, the Facebook and Instagram parent argues, the key issue is that deceptive ads drove investors to buy worthless stock. That's classic securities-law territory and cannot be repackaged as a consumer class action, Meta says.
+
+The issue took center stage at a hearing last week in San Francisco federal court before U.S. District Judge William Orrick. The judge said he was likely to dismiss Daigneau's case as well as a second, related investor class action, for lack of jurisdiction.
+
+Orrick said he was "inclined to follow" the reasoning of his colleague in San Francisco, U.S. District Judge Richard Seeborg, who already tossed a class action against Meta with similar allegations in June. Seeborg ruled that federal securities law precluded the suit.
+
+As I'll explain, Seeborg's reasoning seems persuasive. But if his decision — now on appeal before the 9th U.S. Circuit Court of Appeals — stands, it could create a liability gap, where Meta is less exposed to lawsuits over investment scams than other types of online fraud.
+
+Unlike ordinary consumer class actions, securities fraud suits face stricter pleading standards, creating additional hurdles for investors.
+
+A spokesperson for Meta, which denies wrongdoing, did not respond to a request for comment.
+
+BEYOND SECTION 230
+
+The cases before Orrick and Seeborg were brought by the same lawyer, Andrew Robertson of Morris Kandinov in New York, who told me they are on behalf of thousands of investors who lost hundreds of millions of dollars.
+
+"Meta played a critical role in enabling these frauds because it chose to do business with known scammers to bolster its ad revenue," he said.
+
+The central allegations in all three complaints are the same, with investors claiming they clicked on Facebook or Instagram ads falsely touting endorsements by celebrities, financiers or advisory firms.
+
+The plaintiffs were then allegedly funneled into private groups on WhatsApp (also owned by Meta), where fraudsters posing as financial advisors encouraged them to buy stock in overseas companies at artificially inflated prices. The plaintiffs say the scammers then dumped their shares, causing the stock price to collapse and wiping out their investments.
+
+Federal authorities have brought criminal charges against some of the scammers. Meta is not implicated in any of those cases.
+
+The investors are seeking to hold Meta civilly liable for allowing the fake ads to appear on its platforms in the first place.
+
+Meta's initial response was predictable: It invoked Section 230 of the Communications Decency Act, a 1996 federal law that protects online platforms from liability over user-generated content. As Meta's lawyers from WilmerHale argued in court papers, the "scammers alone provided the content that allegedly made the ads unlawful."
+
+But Seeborg in March refused to dismiss the case, noting the scammers allegedly used Meta's AI-powered advertising tools to create and optimize the phony ads.
+
+It is "at least plausible that some of the illegal content...was created by Meta, not by the scammers," Seeborg wrote. That degree of participation would not be protected by Section 230, he said.
+
+For the plaintiffs, it was a big win — while it lasted.
+
+PRECLUDED BY SECURITIES LAW
+
+Meta countered with a new argument — that the litigation was precluded by securities law, pointing to the Securities Litigation Uniform Standards Act, or SLUSA. Enacted in 1998, it was designed to prevent plaintiffs from sidestepping stricter federal securities rules.
+
+Specifically, it bars certain class actions alleging fraud under state law "in connection with" the purchase or sale of a security.
+
+The question here, Seeborg wrote, is whether the fraudulent ads on Facebook and Instagram made a significant difference in the investors' decision to buy the worthless stock.
+
+"Under Plaintiffs' theory of the case, the answer must be yes," he wrote.
+
+He dismissed the case without prejudice, noting that it could be refiled under federal securities laws or another theory.
+
+Plaintiffs' lawyer Robertson urged Orrick not to follow suit. He argued that siding with Meta would create "inconsistent standards and inconsistent rights on the part of users of Meta's platforms."
+
+If a Facebook or Instagram user was lured into a scam that involved, say, a household product or cryptocurrency, they could bring a consumer-protection class action against Meta, he said. "But just because the downstream scam involves securities," Robertson said, "all of a sudden the victim would no longer have that right."
+
+Robertson's criticism may be self-interested, but it raises a legitimate question: Should Meta's potential liability hinge less on its own conduct than on what a fraudulent ad ultimately persuades a user to buy?
+
+Orrick promised that his decision would come soon. In the meantime, Meta and the investors are left waiting to learn whether this case is really about online scams — or the reach of securities law.

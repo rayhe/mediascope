@@ -446,6 +446,15 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"comically|laughably|absurdly|laughable|"
         r"dishonest|dishonesty|fundamentally\s+(?:dishonest|unethical|flawed|problematic)|"
         r"deceptive|misleading|disingenuous|misuse[sd]?|"
+        # Editorial judgment adverbs/adjectives — words that editorialize
+        # tone by injecting the author's evaluation of familiarity,
+        # predictability, or oddity into otherwise neutral descriptions.
+        # Discovered via Reuters Meta scam ads article (Jul 13, 2026):
+        # "depressingly familiar", "peculiar legal obstacle", "predictable"
+        # "predictable" as standalone editorial judgment (e.g. "Meta's
+        # initial response was predictable") — always dismissive when
+        # applied to a response, action, or strategy.
+        r"depressingly|peculiar(?:ly)?|predictable|"
         r"exploit(?:ing|ed|s)?\s+(?:its|their|the|young|child|teen|minor|user|worker|consumer|employee|customer|people|citizen|student|immigrant|refugee)|\bexploitative\b|dubious|rancid|sordid|"
         # Polemical / invective nouns — nouns that characterize speech or
         # documents as extreme, aggressive, or unhinged.  "diatribe",
@@ -979,13 +988,15 @@ _POWER_ASYMMETRY_PATTERNS: list[re.Pattern] = [
         r".{0,120}?"
         r"\b(?:individual|person|worker|employee|whistleblower|"
         r"activist|critic|plaintiff|woman|man|mother|father|"
+        r"retiree|investor|homeowner|taxpayer|consumer|customer|"
         r"her\b|him\b|she\b|he\b)\b",
         re.IGNORECASE | re.DOTALL,
     ),
     # Reverse direction: individual near corporate financial scale
     re.compile(
         r"\b(?:individual|person|worker|employee|whistleblower|"
-        r"activist|critic|plaintiff|woman|man|single mother|single father)\b"
+        r"activist|critic|plaintiff|woman|man|single mother|single father|"
+        r"retiree|investor|homeowner|taxpayer|consumer|customer)\b"
         r".{0,120}?"
         r"\b(?:(?:trillion|billion|multi.?billion|multi.?million).?dollar|"
         r"\$\d+(?:\.\d+)?\s*(?:trillion|billion|million)|"
@@ -1057,6 +1068,20 @@ _POWER_ASYMMETRY_PATTERNS: list[re.Pattern] = [
         r"involuntar(?:y|ily)|mandatory|compulsory|non.?optional|"
         r"(?:employees?|workers?|staff)\s+(?:likely\s+)?(?:won't|will\s+not)\s+have\s+(?:much\s+)?power)\b",
         re.IGNORECASE | re.DOTALL,
+    ),
+    # Personal-loss savings narrative near corporate entity — editorial
+    # device that maximizes sympathy by naming the individual's loss as
+    # "retirement savings", "life savings", "nest egg", etc.  Creates
+    # David-vs-Goliath emotional resonance even without explicit dollar-
+    # billion comparisons.
+    # Discovered via Reuters Meta scam ads article (Jul 13, 2026):
+    # "losing $715,000 — nearly all of their retirement savings"
+    re.compile(
+        r"\b(?:retirement savings|life savings|nest egg|"
+        r"college fund|pension|401\(?k\)?|"
+        r"entire savings|all of (?:their|her|his|our) savings|"
+        r"everything (?:they|she|he|we) (?:had|saved|owned))\b",
+        re.IGNORECASE,
     ),
 ]
 
@@ -1552,6 +1577,19 @@ _RHETORICAL_QUESTION_PATTERNS: list[re.Pattern] = [
     re.compile(
         r".{10,100}?\b(?:anyone|right|no|amirite)\s*\?\s*$",
         re.IGNORECASE | re.MULTILINE,
+    ),
+    # "Should [entity/noun]...?" — editorial rhetorical question implying
+    # the answer (no, it shouldn't).  Common in legal analysis and opinion
+    # pieces where the author frames a policy question as self-answering.
+    # Discovered via Reuters Meta scam ads article (Jul 13, 2026):
+    # "Should Meta's potential liability hinge less on its own conduct
+    #  than on what a fraudulent ad ultimately persuades a user to buy?"
+    re.compile(
+        r"\bShould\s+(?:\w+(?:'s)?\s+){1,8}?"
+        r"(?:hinge|depend|rest|turn|rely|be\s+(?:determined|decided|judged"
+        r"|measured|based|conditional|contingent))"
+        r".{5,120}?\?",
+        re.IGNORECASE,
     ),
 ]
 
@@ -2176,6 +2214,27 @@ _SELF_REFERENTIAL_INVESTIGATION_PATTERNS: list[re.Pattern] = [
         r"(?:'s)?\s+"
         r"(?:investigation|analysis|review|report|findings?|"
         r"examination|inquiry|test(?:ing)?|assessment|study)\b",
+        re.IGNORECASE,
+    ),
+    # First-person colleague citation: "my [Publication] colleagues"
+    # Personalizes the self-referential by claiming direct collegial
+    # connection to the cited work, often paired with authority boosters
+    # like "Pulitzer Prize-winning" or "award-winning".
+    # Discovered via Reuters Meta scam ads article (Jul 13, 2026):
+    # "As my Reuters colleagues Jeff Horwitz and Engen Tham documented
+    #  in Pulitzer Prize-winning reporting"
+    re.compile(
+        r"\bmy\s+"
+        r"(?:WIRED|Wired|(?:The\s+)?Guardian|"
+        r"(?:The\s+)?New York Times|NYT|"
+        r"(?:The\s+)?Atlantic|"
+        r"MIT Technology Review|"
+        r"Reuters|Bloomberg|"
+        r"(?:The\s+)?Washington Post|"
+        r"(?:The\s+)?Wall Street Journal|WSJ|"
+        r"Business Insider|Insider|"
+        r"(?:The\s+)?Verge|(?:The\s+)?Information)"
+        r"\s+colleague",
         re.IGNORECASE,
     ),
 ]
@@ -7243,6 +7302,18 @@ _EDITORIAL_DRAMATIZATION_PATTERNS: list[re.Pattern] = [
         r"unrest|dislocation|disarray|uncertainty|angst)\b",
         re.IGNORECASE,
     ),
+    # Dramatic literary aside — "it was X — while it lasted" / "X — or so
+    # they thought" / "X, at least for now" — short parenthetical or em-dash
+    # qualifiers that create narrative tension by undercutting a preceding
+    # positive/neutral statement.  Common in legal analysis and feature writing.
+    # Discovered via Reuters Meta scam ads article (Jul 13, 2026):
+    # "For the plaintiffs, it was a big win — while it lasted."
+    re.compile(
+        r"(?:—|--)\s*(?:while it lasted|or so (?:they|it|he|she) thought|"
+        r"at least (?:for now|for the moment|until)|"
+        r"for now|until it (?:wasn't|didn't|couldn't|fell apart))",
+        re.IGNORECASE,
+    ),
 ]
 _DEVICE_PATTERNS["editorial_dramatization"] = _EDITORIAL_DRAMATIZATION_PATTERNS
 
@@ -7362,7 +7433,7 @@ _DISMISSIVE_QUALIFIER_PATTERNS: list[re.Pattern] = [
     # "easy worry" / "convenient narrative"
     re.compile(
         r"\b(?:an?\s+)?(?:easy|convenient|cheap|comfortable|familiar|predictable|tired|stale|fashionable|trendy)"
-        r"\s+(?:worry|concern|narrative|argument|explanation|take|framing|criticism|objection|talking point)",
+        r"\s+(?:worry|concern|narrative|argument|explanation|take|framing|criticism|objection|talking point|response|answer|strategy|defense|defence|move|tactic|approach|reply)",
         re.IGNORECASE,
     ),
     # "gives investors an easy worry/excuse"

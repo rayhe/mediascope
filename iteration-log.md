@@ -21370,3 +21370,57 @@ Barron's is the only outlet to use pathologizing language ("splurge") for the sa
 - Framing device types: 101 (unchanged)
 - Compiled patterns: 666 (+7)
 - Tests: 2,453 (109 files, +16 tests, +1 file)
+
+---
+
+## 2026-07-13 15:00 PT — Type A: Article Deep Dive
+
+**Article:** Reuters Legal — "Meta presses new defense tactic in cases over scam ads promoting stocks" (Jul 13, 2026)
+
+**Article file:** `reuters_meta_scam_ads_securities_defense_2026_07_13_article.txt`
+**Analysis file:** `reuters_meta_scam_ads_securities_defense_2026_07_13_analysis.md`
+
+### Changes
+
+1. **Framing — `loaded_language` (2 additions):**
+   - Added "depressingly" and "peculiar(ly)" to loaded language patterns
+   - Both are editorial judgment vocabulary — "depressingly familiar" and "peculiar" defense strategy
+
+2. **Framing — `power_asymmetry` (2 additions):**
+   - Added victim-role identifiers: "retiree", "investor", "homeowner", "taxpayer", "consumer", "customer" to both forward and reverse individual patterns
+   - Added personal-loss savings narrative pattern: "retirement savings", "life savings", "nest egg", "college fund", "pension", "children's inheritance" in proximity to loss/wiped/gone/lost/depleted/drained/vanished/stolen
+   - Fixes gap where "$715,000 in retirement savings" wasn't triggering power_asymmetry
+
+3. **Framing — `self_referential_investigation` (1 addition):**
+   - Added "my [Publication] colleagues" pattern — first-person collegial self-citation
+   - Discovered via "As my Reuters colleagues Jeff Horwitz and Engen Tham documented in Pulitzer Prize-winning reporting"
+   - Note: requires `source_publication` parameter to survive the wire-service cross-citation post-filter
+
+4. **Framing — `rhetorical_question` (1 addition):**
+   - Added "Should [entity]... [hinge/depend/rest]...?" pattern
+   - Captures rhetorical questions that imply their own answer through "should" + consequence verb
+
+5. **Framing — `editorial_dramatization` (1 addition):**
+   - Added literary-aside undercutting pattern: "— while it lasted", "— or so they thought", "— or so it seemed", "— at least on paper", "— for now"
+   - Standalone dramatic punctuation that undercuts the preceding positive statement
+
+6. **Detection results:** 18 total framing devices (up from 12 pre-fix). 14/18 true positives (78% precision). 4 false positives: ironic_quotation on judicial quote, editorial_cross_promotion on section heading, timeline_implication ×2 on "inconsistent."
+
+### Doc Updates
+- `EXPECTED_TOTAL_PATTERNS`: 605 → 609 (test_structural_consistency.py)
+- Stale pattern count purge: ARCHITECTURE.md + README.md updated from 605 → 609
+- Compiled patterns stat in README: 666 → 670
+- Annotated article counts: 173 → 174 across ARCHITECTURE.md, METHODOLOGY.md, QUALITY_STANDARDS.md, README.md
+- Test file listings: added `test_reuters_eu_dsa_meta_jul10.py` (25 tests, missing from prior iteration) and `test_reuters_scam_ads_securities_jul13.py` (17 tests)
+- Test count headers: 2,453/109 → 2,495/111 in README.md and ARCHITECTURE.md
+
+### Test Results
+- 2,495 passed, 0 failed (all structural consistency tests green)
+- New: `test_reuters_scam_ads_securities_jul13.py` (17 tests)
+
+### Stats After This Iteration
+- Entity aliases: 866 (unchanged)
+- Annotated articles: 174 (+1)
+- Framing device types: 101 (unchanged)
+- Compiled patterns: 670 (+4)
+- Tests: 2,495 (111 files, +42 tests, +2 files)
