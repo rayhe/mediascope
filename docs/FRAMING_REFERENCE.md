@@ -12,6 +12,8 @@ During article analysis, scan the text for trigger keywords and structural patte
 - **E** = Extended (84 types) — discovered from real article analysis, pattern-matched
 - **S** = Structural (7 types) — detected via post-pass heuristics over full article structure
 
+> **Note on device numbering:** Devices are numbered by discovery order (1–101), not by category. When new devices are discovered during article analysis, they receive the next sequential number. The reference organizes them by thematic category for readability, so device numbers within a category are not contiguous.
+
 ---
 
 ## Category 1: Attribution & Source Manipulation
@@ -29,6 +31,7 @@ Devices that shape how sources, experts, and quotes are deployed.
 | 7 | **Self-Referential Investigation** | E | Publication cites its own prior reporting as evidence | "a WIRED investigation found," "as WIRED previously reported" |
 | 8 | **Analyst Authority** | E | Named analyst firms used as authority sources | "BofA warns," "according to Goldman Sachs," "[Firm] estimates" |
 | 9 | **Social Proof Amplification** | S | Reaction counts cited to convert opinion into collective sentiment | "received X likes," "went viral with X comments" |
+| 99 | **No-Comment Implication** | E | Non-response published as implicit evasiveness | "did not immediately respond," "declined to comment," "could not be reached for comment" |
 
 ---
 
@@ -50,6 +53,7 @@ Devices that use word choice, register shifts, and rhetorical techniques to colo
 | 19 | **Confession Framing** | E | Attribution verbs frame statements as admissions of guilt | "[Person] admits/concedes/acknowledged," "forced to admit," "mea culpa" |
 | 20 | **Pressure Language** | E | Word choices framing actions as coercive | "pressing," "pushing," "strong-arming," "private demand" |
 | 21 | **Sovereignty Framing** | E | National/patriotic identity language to delegitimize foreign positions | "British families," "our children," "national interest/security" |
+| 98 | **Reader Positioning** | E | Second-person concessive constructions presupposing reader agreement | "you couldn't be blamed," "you'd be forgiven for thinking," "hard to blame anyone," "you'd be right to worry" |
 
 ---
 
@@ -87,10 +91,7 @@ Devices that frame entities, companies, or individuals through power dynamics, c
 | 38 | **Latecomer Narrative** | E | Company framed as entering a space after competitors | "joining the race," "playing catch-up," "copycat," "me-too product" |
 | 39 | **Refusal Amplification** | E | Entity's non-cooperation emphasized beyond its news value | "declined," "refused," positioned to imply guilt |
 | 97 | **Recidivism Framing** | E | Entity framed as serial offender through temporal recurrence markers | "once again," "yet again," "continues to," "not for the first time," "has a history of" |
-| 98 | **Reader Positioning** | E | Second-person concessive constructions presupposing reader agreement | "you couldn't be blamed," "you'd be forgiven for thinking," "hard to blame anyone," "you'd be right to worry" |
-| 99 | **No-Comment Implication** | E | Non-response published as implicit evasiveness | "did not immediately respond," "declined to comment," "could not be reached for comment" |
 | 100 | **Competitive Guilt Transfer** | E | Competitor scandal juxtaposed to transfer culpability | "facing a class-action lawsuit," "threatened to remove from App Store" |
-| 101 | **Consent Alarm** | E | Default opt-in / automatic enrollment framed as consent violation | "automatically enrolled," "without your knowledge," "use your likeness" |
 
 ---
 
@@ -154,6 +155,7 @@ Devices that shape how regulatory, legal, and government actions are presented.
 | 64 | **Geopolitical Regulatory Pressure** | E | Regulatory tensions framed as geopolitical confrontation | Embassy/diplomatic submissions, sovereignty/defiance rhetoric |
 | 65 | **Strategic Disclosure** | E | Party in dispute discloses opponent's position to frame it as extreme | "Meta said in a recent court filing" — framing originates with disclosing party |
 | 66 | **Default Burden Privacy** | E | Default-on feature framed as consent violation by emphasising opt-out burden | "enabled by default," "opt-out," "users may not know," "without consent" |
+| 101 | **Consent Alarm** | E | Default opt-in / automatic enrollment framed as consent violation | "automatically enrolled," "without your knowledge," "use your likeness" |
 | 67 | **Editorial Cross-Promotion** | E | All-caps interstitial headline blocks importing linked headline framing into otherwise balanced reporting | All-caps blocks 5+ words; "CLICK HERE TO GET THE FOX BUSINESS APP"; imports adversarial linked headlines |
 | 68 | **Emotion Attribution** | E | Editorial attribution of emotional states never expressed by the subject — upgrading factual observations into disappointment, frustration, or alarm | "[Name] is disappointed that"; "leading investors to fret"; "[Name] is alarmed by" |
 | 69 | **Litigation Cascade** | E | Stacking multiple legal proceedings, case counts, plaintiff numbers to create avalanche effect | "N states have banded/sued"; "more than N,NNN cases pending"; "Another N states also brought claims" |

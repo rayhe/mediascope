@@ -20477,3 +20477,53 @@ Expanded Hugo Lowell's existing profile from a 4-entry career stub to a comprehe
 - Patterns: 581 (was 580, +1)
 - Annotated articles: 162 (was 161, +1)
 - Same-event cluster 13: 4 outlets (was 3, +1 iPhone in Canada)
+
+---
+
+## 2026-07-12 16:00 PT — Type D: Toolkit Quality & Documentation
+
+**Commit:** `077c512` — "Type D: fix stale doc counts, add FRAMING_REFERENCE consistency guards"
+
+### Summary
+Documentation audit found stale counts across README, FRAMING_REFERENCE, and ARCHITECTURE after recent Type A work. Fixed all mismatches and added 3 new structural consistency guard tests to prevent future drift in FRAMING_REFERENCE.md.
+
+### Issues Found & Fixed
+
+1. **README.md** — framing patterns count 641→642, "91 pattern-based types"→"94 pattern-based types", tests 2278→2280, `test_structural_consistency.py` description updated (112→114 tests + FRAMING_REFERENCE guard mention)
+2. **FRAMING_REFERENCE.md** — tier legend said "Extended (80 types)" but tier table correctly showed 84. Legend updated to match.
+3. **ARCHITECTURE.md** — test count header 2278→2280, `test_structural_consistency.py` description updated
+
+### New Tests (3)
+- `TestFramingReferenceExtendedCount.test_framing_reference_extended_count` — validates tier legend "E = Extended (N types)" matches actual extended type count
+- `TestFramingReferenceExtendedCount.test_framing_reference_tier_table_extended_count` — validates "Counts by Tier" table Extended row matches actual count
+- Parametrized count in `test_cross_reference_doc_counts` incremented for new coverage
+
+### Stats After This Iteration
+- Tests: 2,280 (was 2,278, +2 new + 1 parametrize increment = +3 test functions total but pytest reports +2 test items)
+- Structural consistency tests: 115 (was 112)
+- count_stats.py --check: ✅ clean
+- All doc counts verified current
+
+---
+
+## 2026-07-12 17:00 PT — Type D: Documentation Sync & Known Limitations
+
+**Focus:** Fix stale path count in AGENT_GUIDE, reorganize FRAMING_REFERENCE device categorization, document procedural service journalism VADER gap.
+
+### Issues Found & Fixed
+
+1. **AGENT_GUIDE.md line 1035** — said "7 paths" but pipeline has 11 paths (A–K). Fixed to "11 paths (A–K)". The table below it already listed all 11 correctly; only the introductory sentence was stale.
+
+2. **FRAMING_REFERENCE.md — device misplacement** — Devices 97–101 (added Jul 10–12) were all appended to the end of Category 4 (Entity & Power Framing) regardless of their actual thematic fit:
+   - **#99 No-Comment Implication** → moved to Category 1 (Attribution & Source Manipulation) — it's about how sources' non-response is published
+   - **#98 Reader Positioning** → moved to Category 2 (Language & Tone Manipulation) — it's a rhetorical construction using second-person address
+   - **#101 Consent Alarm** → moved to Category 8 (Regulatory & Legal Framing) alongside #66 Default Burden Privacy — both address consent/opt-out framing
+   - **#97 Recidivism Framing** and **#100 Competitive Guilt Transfer** — kept in Category 4 (proper fit)
+   - Added explanatory note about device numbering (discovery order, not category order)
+
+3. **SENTIMENT_CORRECTION_REFERENCE.md — new Part 6: Known Limitations** — documented the "procedural service journalism" VADER gap discovered in today's 12:00 Type A (NY Post Muse Image article). VADER scores procedural how-to articles as positive (+0.60) even when editorial stance is alarmist, because consent_alarm devices bypass all correction path triggers. Documented why each path fails to fire and the distinguishing signal for a future correction path.
+
+### Verification
+- All 101 devices present in FRAMING_REFERENCE.md (automated check: no missing, no duplicates)
+- All 2,280 tests pass
+- count_stats.py --check: not re-run (no code changes)

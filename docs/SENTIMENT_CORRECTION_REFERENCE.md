@@ -499,3 +499,32 @@ Paths are lettered alphabetically by discovery order, not by evaluation order. T
 ### Proposed Path L — Structural Irony
 
 A candidate path for macro-level article organization that creates negative framing invisible at the sentence level. Currently tracked in [FRAMING_REFERENCE.md § Proposed Additions](FRAMING_REFERENCE.md#proposed-additions-pending-validation) pending validation across ≥3 articles from ≥2 publications. Key challenge: the distinguishing signal is in section ordering and narrative structure, not in vocabulary, making it harder to detect with existing pattern-based methods.
+
+---
+
+## Part 6: Known Limitations
+
+Documented VADER failure modes where no correction path currently fires. These are not bugs — they represent gaps in the pipeline's coverage that may become future correction paths when sufficient validation examples exist.
+
+### Procedural Service Journalism
+
+**Discovered:** NY Post Muse Image opt-out article (Jul 10, 2026)
+
+**Problem:** VADER raw_tone scores procedural "how-to" service journalism as positive (+0.60 or higher) even when the article's editorial stance is clearly alarmist. The alarm comes from structural framing devices (`consent_alarm`, `competitive_guilt_transfer`, `no_comment_implication`) rather than adversarial vocabulary.
+
+**Why no path fires:** Service journalism uses instructional language ("Here's how to turn it off," "Follow these steps") that VADER reads as positive. The article lacks adversarial editorial vocabulary — no `loaded_language`, no `editorial_aside`, no sarcastic register breaks. Agency is often near-neutral (the company is active, the user is given instructions). Emotional intensity may be moderate. This combination falls outside every existing path's trigger conditions:
+
+| Path | Why It Doesn't Fire |
+|---|---|
+| A | `agency` is not strongly negative (article focuses on user action, not company scrutiny) |
+| B | `raw_tone` is positive, not mildly negative |
+| D | No `loaded_language` density, no sarcastic register |
+| H | No `editorial_aside` devices |
+| I | May lack `consumer_ownership` devices |
+| K | No `sarcastic_correction` devices |
+
+**Distinguishing signal:** High `consent_alarm` count (≥3) + instructional/procedural prose structure + positive VADER raw tone. The alarm is *structural* — the article's very existence as a "how to protect yourself" guide implies the default is dangerous, without any sentence explicitly saying so.
+
+**Current workaround:** Manual annotation. When encountering procedural service journalism with high consent_alarm density but positive VADER raw_tone, note the gap in the analysis and report both scores with the caveat that VADER is systematically inflated for this genre.
+
+**Path to resolution:** Requires ≥3 validated examples from ≥2 publications to establish the pattern. Candidate correction would key on `consent_alarm ≥ 3` + procedural prose markers (step-by-step instructions, imperative verbs like "go to Settings," "tap," "toggle off") + `raw_tone ≥ 0.3`.

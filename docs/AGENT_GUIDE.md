@@ -1032,7 +1032,7 @@ See `METHODOLOGY.md` §9 and `examples/framing_correction_demo.py` for a hands-o
 
 ### Correction Paths
 
-The pipeline evaluates 7 paths in priority order — the first match fires:
+The pipeline evaluates 11 paths (A–K) in priority order — the first match fires:
 
 | Path | Failure Mode | When It Fires | Agent Action |
 |---|---|---|---|
