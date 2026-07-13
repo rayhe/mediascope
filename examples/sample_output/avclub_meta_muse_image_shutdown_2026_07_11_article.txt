@@ -1,0 +1,11 @@
+# Meta successfully shamed out of its terrible "remix total strangers' Instagram photos with AI" plan
+
+Source: A.V. Club (avclub.com)
+Date: July 11, 2026
+URL: https://www.avclub.com/meta-shamed-out-of-instagram-photos-ai-remix-plan
+
+Well, that was quick: Retreating like a spanked puppy, Mark Zuckerberg's Meta announced today that, now that it thinks about it, it *won't* let users of its new Muse Images AI slop factory start remixing people's photos on Instagram; a press statement from the company attempted to put a "We're all adults and nobody's mad at us" spin on this, declaring that the "feature missed the mark." Which is, y'know, a pretty diplomatic way of framing "Literally everyone yelled at us about what a crappy idea this was."
+
+This is per THR, which notes that pushback against the recently announced ability to remix the public Instagram photos of anyone you tagged in an AI generation prompt—barring those who'd deliberately opted out of the feature—didn't just get pushback from normals: Hollywood agency CAA and acting union SAG-AFTRA—whose clients, as The Beautiful People, would presumably come in for a disproportionate percentage of all this feverish and sweaty-handed remixing—were quick to condemn the whole thing, too. CAA put out a statement on Wednesday saying that "No one's name, image, likeness, voice, or creative work should be used by any third party, including AI models, without clear, documented consent," while SAG-AFTRA—whose recent negotiations have included hefty arguments with the studios on very similar topics—added that making the technology opt-out was untenable: "Anything other than a clear and conspicuous OPT-IN for these types of uses of Instagram users' images is unacceptable, and an utter miscalculation of public sentiment regarding the obvious dangers and harms inherent in such use."
+
+Meta has now been successfully shamed out of this latest bad idea, even as it tried to ruefully explain that "Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way." Which is a fun lesson that there are, in fact, ideas so bad and unpopular that even AI techbros will abandon them if you yell at them enough. (At least, until they find some other avenue to shoehorn this concept in.)

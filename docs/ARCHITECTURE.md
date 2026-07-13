@@ -442,7 +442,7 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
-│   └── sample_output/       # 166 annotated real-article analyses (see METHODOLOGY.md §17)
+│   └── sample_output/       # 167 annotated real-article analyses (see METHODOLOGY.md §17)
 ├── tests/                       # 2345 tests across 104 test files (all from real articles)
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI

@@ -1,5 +1,68 @@
 # MediaScope Iteration Log
 
+## 2026-07-13 02:00 PT — Type A: Article Deep Dive (AV Club — Muse Image Shutdown)
+
+**Article:** AV Club — "Meta successfully shamed out of its terrible 'remix total strangers' Instagram photos with AI' plan" (Jul 11, 2026)
+
+**Companion to:** `avclub_meta_muse_image_remix_2026_07_08_analysis.md` (same topic, pre-shutdown)
+
+### Changes
+- **+48 emotional language terms** (net +47 after removing 1 duplicate `ridiculous`): sardonic/scornful register — `spanked`, `shamed`/`shaming`/`shame`, `shoehorn` variants, `techbros`/`techbro`, `feverish`, `sweaty`/`sweaty-handed`, `yell`/`yelled`/`yelling`, `condemn` variants, `scorn` variants, `ridicule` variants, `mock`/`mocked`/`mocking`/`mockery`, `deride` variants, `sneer` variants, `unpopular`, `bad idea`/`crappy idea`/`terrible idea`, `ruefully`, `untenable`
+- Emotional language terms: 975 → 1,022 (removed 1 duplicate: `ridiculous` at lines 590 and 718)
+- Annotated articles: 166 → 167
+- Updated docs: README.md, QUALITY_STANDARDS.md, METHODOLOGY.md, ARCHITECTURE.md
+
+### Key Findings
+- **VADER success case** contrasting Jul 8 VADER failure (+0.99): same publication, same topic, same contemptuous tone, but VADER scored −0.82 (correct). Difference: Jul 11 uses direct negative vocabulary; Jul 8 used ironic-positive surfaces. Path K correctly fires only when needed
+- **22/22 emotional terms detected** (vs 14/400 on Jul 8 pre-fix). 13 of 22 terms were from the Jul 8 + Jul 13 additions — validates vocabulary expansion
+- **4 sarcastic_correction devices missed** by toolkit: "Which is, y'know, a pretty diplomatic way of..." / "Which is a fun lesson..." / "(At least, until they...)" — all share a "sentence-initial evaluative connector + ironic reframing" structure that needs broader regex (flagged for Type D)
+- **Muse Image lifecycle Phase 5** (Post-Mortem) documented — completes the 5-phase cross-narrative tracking
+
+### Test Results
+- 2,345 passed, 0 failed (118 structural consistency tests all green)
+- `count_stats.py --check` ✅
+
+## 2026-07-13 01:00 PT — Type D: Toolkit Quality & Documentation
+
+**Commit:** `45c070f` — "Type D: fix stale doc counts, add SENTIMENT_CORRECTION_REFERENCE guard tests"
+
+### Summary
+Documentation audit found stale counts across README.md and SENTIMENT_CORRECTION_REFERENCE.md after recent Type A iterations added patterns, emotional language terms, adversarial device types, and annotated articles. Fixed all mismatches, added 2 missing adversarial device types to SENTIMENT_CORRECTION_REFERENCE.md table, and added 3 new structural consistency guard tests to prevent future drift in that doc.
+
+### Issues Found & Fixed
+
+1. **README.md** — 7 stale counts:
+   - Framing patterns: 642→654
+   - Emotional language terms: 971→975
+   - Adversarial device types: 29→31
+   - Annotated articles: 163→166
+   - Tests: 2,280→2,345
+   - Test files: 101→104
+   - Entity auto-generated: 22→23
+   - test_structural_consistency.py per-file count: 114→117
+   - test_structural_consistency.py description: added SENTIMENT_CORRECTION_REFERENCE.md to adversarial consistency list
+
+2. **SENTIMENT_CORRECTION_REFERENCE.md** — adversarial device types stale (29→31):
+   - Part 1 header: "The 29 Adversarial Device Types" → "The 31 Adversarial Device Types"
+   - Key Input Signals table: "Sum of 29" → "Sum of 31"
+   - Added missing table rows #30 (`consent_alarm`, Gizmodo Muse Image scrapped article Jul 11 2026) and #31 (`precedent_analogy`, Reuters insurance-defense article Jun 2026)
+   - Root cause: no structural consistency guard existed for this doc — adversarial types could be added to code and all other docs while SENTIMENT_CORRECTION_REFERENCE.md table silently drifted
+
+3. **ARCHITECTURE.md** — test count header: 2342→2345, test_structural_consistency.py description updated
+
+### New Tests (3) — TestSentimentCorrectionReferenceConsistency
+- `test_part1_header_count` — validates "Part 1: The N Adversarial Device Types" header matches `_ADVERSARIAL_DEVICE_TYPES` set length
+- `test_key_input_signals_count` — validates "Sum of N adversarial device types" in Key Input Signals table matches code
+- `test_adversarial_table_completeness` — validates every device type in code appears as a table row in Part 1 (and no phantom entries exist)
+
+### Stats After This Iteration
+- Tests: 2,345 (was 2,342, +3 new guard tests)
+- Structural consistency tests: 118 (was 115)
+- count_stats.py --check: ✅ clean
+- All doc counts verified current
+
+---
+
 ## 2026-07-13 00:00 PT — Type C: Ownership & Funding Deep Dive (Advance Portfolio Update)
 
 **Focus:** Refreshed Advance Publications portfolio data in `profiles/wired.yaml` — Paramount-WBD political dynamics, Turnitin subsidiary expansion (ExamSoft AI proctoring), CWA labor vindication, and stock close prices.

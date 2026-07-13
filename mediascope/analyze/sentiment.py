@@ -699,6 +699,30 @@ EMOTIONAL_LANGUAGE: list[str] = [
     "controversy", "controversies",
     "lawsuit", "lawsuits",
     "class action", "class actions",
+    # Sarcastic/sardonic editorial commentary emotional terms — needed for
+    # entertainment-angle and opinion coverage where writers deploy
+    # contemptuous colloquialisms, animal metaphors, and scornful labels.
+    # Gap discovered during AV Club Muse Image shutdown analysis (Jul 11
+    # 2026): only 2 of 15 terms detected in a ~350-word article saturated
+    # with editorial contempt. VADER scored the article near maximum
+    # positivity (+0.99) while true sentiment was strongly negative.
+    "spanked", "spanking",
+    "shamed", "shaming", "shame",
+    "shoehorn", "shoehorned", "shoehorning",
+    "techbros", "techbro", "tech bros", "tech bro",
+    "feverish", "feverishly",
+    "sweaty", "sweaty-handed",
+    "yell", "yelled", "yelling",
+    "condemn", "condemned", "condemning", "condemnation",
+    "scorn", "scorned", "scornful", "scornfully",
+    "ridicule", "ridiculed", "ridiculing",
+    "mock", "mocked", "mocking", "mockery",
+    "deride", "derided", "derisive", "derisively",
+    "sneer", "sneered", "sneering",
+    "unpopular",
+    "bad idea", "crappy idea", "terrible idea",
+    "ruefully",
+    "untenable",
 ]
 
 # Passive/victim vs. active/powerful framing indicators
