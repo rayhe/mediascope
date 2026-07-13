@@ -19,7 +19,7 @@ All paths except G and B require `raw_tone >= 0.3` (VADER got the direction wron
 | Signal | Source | Range | What It Measures |
 |---|---|---|---|
 | `raw_tone` | VADER + TextBlob composite | −1.0 to +1.0 | Lexical sentiment (often wrong for editorial prose) |
-| `adversarial_count` | Sum of 29 adversarial device types | 0–∞ | How many editorial devices signal adversarial stance |
+| `adversarial_count` | Sum of 31 adversarial device types | 0–∞ | How many editorial devices signal adversarial stance |
 | `agency` | Agency attribution scorer | −1.0 to +1.0 | Whether subject is passive/victim (−) or active/powerful (+) |
 | `emotional_intensity` (EI) | Emotional language ratio | 0.0 to 1.0 | Density of emotionally charged vocabulary |
 | `loaded_count` | `loaded_language` framing count | 0–∞ | Raw contemptuous word choice density |
@@ -29,7 +29,7 @@ All paths except G and B require `raw_tone >= 0.3` (VADER got the direction wron
 
 ---
 
-## Part 1: The 29 Adversarial Device Types
+## Part 1: The 31 Adversarial Device Types
 
 These are the framing devices counted toward `adversarial_count`. When ≥3 fire alongside negative agency, the correction pipeline activates. Full descriptions in [FRAMING_REFERENCE.md](FRAMING_REFERENCE.md).
 
@@ -64,6 +64,8 @@ These are the framing devices counted toward `adversarial_count`. When ≥3 fire
 | 27 | `competitive_displacement` | MIT TR open-weight models (Jul 9, 2026) |
 | 28 | `recidivism_framing` | Fast Company Muse Image opt-out (Jul 9, 2026) |
 | 29 | `sarcastic_correction` | AV Club Muse Image remix (Jul 2026) |
+| 30 | `consent_alarm` | Gizmodo Muse Image scrapped article (Jul 11, 2026) |
+| 31 | `precedent_analogy` | Reuters insurance-defense article (Jun 2026) |
 
 ### Anchor Device Types (subset)
 

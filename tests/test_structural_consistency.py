@@ -2583,3 +2583,88 @@ class TestNewEntityClusters:
         assert "Creative Artists Agency" in canonicals, (
             f"Expected 'Creative Artists Agency' in entities, got {canonicals}"
         )
+
+
+class TestSentimentCorrectionReferenceConsistency:
+    """Guard: SENTIMENT_CORRECTION_REFERENCE.md adversarial device counts
+    and table rows stay in sync with code.
+
+    The SENTIMENT_CORRECTION_REFERENCE.md has three places that reference the
+    adversarial device type count: the Part 1 header, the Key Input Signals
+    table, and the adversarial device type table itself. All must match the
+    actual _ADVERSARIAL_DEVICE_TYPES set in sentiment.py.
+
+    Added: 2026-07-13 01:00 PT, Type D iteration.
+    """
+
+    def _adversarial_types_from_code(self) -> set[str]:
+        """Get the adversarial device type set from sentiment.py."""
+        src = (_REPO_ROOT / "mediascope" / "analyze" / "sentiment.py").read_text()
+        match = re.search(
+            r"_ADVERSARIAL_DEVICE_TYPES:\s*set\[str\]\s*=\s*\{(.*?)\}",
+            src,
+            re.DOTALL,
+        )
+        assert match, "Cannot find _ADVERSARIAL_DEVICE_TYPES in sentiment.py"
+        return set(re.findall(r'"(\w+)"', match.group(1)))
+
+    def test_part1_header_count(self):
+        """Part 1 header count must match code."""
+        code_count = len(self._adversarial_types_from_code())
+        doc = (_REPO_ROOT / "docs" / "SENTIMENT_CORRECTION_REFERENCE.md").read_text()
+        match = re.search(
+            r"Part 1: The (\d+) Adversarial Device Types",
+            doc,
+        )
+        assert match, (
+            "SENTIMENT_CORRECTION_REFERENCE.md is missing the "
+            "'Part 1: The N Adversarial Device Types' header."
+        )
+        doc_count = int(match.group(1))
+        assert doc_count == code_count, (
+            f"SENTIMENT_CORRECTION_REFERENCE.md Part 1 header says "
+            f"{doc_count} adversarial types but code has {code_count}."
+        )
+
+    def test_key_input_signals_count(self):
+        """Key Input Signals table adversarial count must match code."""
+        code_count = len(self._adversarial_types_from_code())
+        doc = (_REPO_ROOT / "docs" / "SENTIMENT_CORRECTION_REFERENCE.md").read_text()
+        match = re.search(
+            r"Sum of (\d+) adversarial device types",
+            doc,
+        )
+        assert match, (
+            "SENTIMENT_CORRECTION_REFERENCE.md is missing the "
+            "'Sum of N adversarial device types' description."
+        )
+        doc_count = int(match.group(1))
+        assert doc_count == code_count, (
+            f"SENTIMENT_CORRECTION_REFERENCE.md Key Input Signals table says "
+            f"'Sum of {doc_count}' but code has {code_count} adversarial types."
+        )
+
+    def test_adversarial_table_completeness(self):
+        """Adversarial device table must list every type from code."""
+        code_types = self._adversarial_types_from_code()
+        doc = (_REPO_ROOT / "docs" / "SENTIMENT_CORRECTION_REFERENCE.md").read_text()
+        # Extract device names from the table rows (format: | N | `device_name` | ... |)
+        table_types = set(re.findall(r"\|\s*\d+\s*\|\s*`(\w+)`\s*\|", doc))
+        # Filter to only those in the adversarial table (between Part 1 header and Anchor header)
+        part1_match = re.search(r"## Part 1:.*?### Anchor", doc, re.DOTALL)
+        assert part1_match, (
+            "Cannot find Part 1 adversarial table section in "
+            "SENTIMENT_CORRECTION_REFERENCE.md"
+        )
+        part1_types = set(re.findall(
+            r"\|\s*\d+\s*\|\s*`(\w+)`\s*\|", part1_match.group(0)
+        ))
+        missing = code_types - part1_types
+        extra = part1_types - code_types
+        assert not missing and not extra, (
+            f"SENTIMENT_CORRECTION_REFERENCE.md adversarial table is out of sync.\n"
+            f"Missing from table: {sorted(missing)}\n"
+            f"Extra in table: {sorted(extra)}\n"
+            f"Code has {len(code_types)}: {sorted(code_types)}"
+        )
+
