@@ -1,0 +1,42 @@
+AI Costs Keep Rising As Morgan Stanley Ups CapEx Estimates For Amazon, Meta
+
+Investor's Business Daily
+July 13, 2026
+
+Spending on AI data centers by cloud hyperscalers could reach $1.4 trillion by 2028, analysts with Morgan Stanley said Monday. The investment bank raised its estimates for capital expenditures by Meta Platforms and Amazon — with returns on AI spending a key debate for both stocks.
+
+Morgan Stanley analyst Brian Nowak said in a client note that he expects Meta's capex to reach $225 billion in 2027 and $250 billion in 2028, up 29% and 22% from his prior estimates. He projects Meta will spend $145 billion this year.
+
+Nowak also raised his 2027 estimates for Amazon capex by 15%, to $308 billion, and 2028 estimates by 29% to $318 billion. He projects Amazon will spend $218 billion this year.
+
+The Morgan Stanley analyst already raised 2027 capex estimates for Google parent Alphabet by 16%, to $350 billion, in a late June client note. The firm forecasts total hyperscaler capex will reach $1.2 trillion next year and $1.4 trillion in 2028, when also including Microsoft and SpaceX.
+
+That marks huge growth from the $426 billion that Morgan Stanley calculates the four tech giants (not including SpaceX) spent in 2025.
+
+The higher estimates reflect a technology sector that "remains compute-constrained" and has an urgency to spend, Nowak wrote. Cost per gigawatt of computing capacity is rising along with the price of key components such as chips, memory and networking.
+
+The rising backlash against data centers could also drive costs higher, the analyst added.
+
+"We also believe growing social backlash to data center development and political uncertainty into the 2028 presidential election are causing hyperscalers to start building sooner to emphasize job creation," Nowak wrote. "This adds even further to inflationary pressures."
+
+On the stock market today, Amazon stock gained more than 1% to 248 in midday trades. Shares have hovered around Amazon's 50-day moving average for much of the month so far.
+
+Amazon stock has slightly underperformed the S&P 500 this year, with a gain of 7.6% year-to-date.
+
+Nowak reiterated an overweight, or buy, rating and price target of 330 for Amazon stock in his client note.
+
+"Amazon compute capacity is scaling nicely and likely set to drive better than expected (and priced) Amazon Web Services revenue growth," Nowak wrote.
+
+Amazon last week launched a bond sale to raise $25 billion.
+
+Meta stock, meanwhile, fell more than 1% to 659.94. The Facebook parent announced Monday that it will spend $50 billion on a massive AI data center in Louisiana.
+
+Shares of the Facebook parent company closed last week on a strong rally. The stock added 6% on Friday after climbing 4.7% on Thursday.
+
+The gains catapulted Meta stock back above its 200-day moving average for the first time since April. Meta stock is flat for the year.
+
+The release of Meta latest AI model helped power the rally. Chief Executive Mark Zuckerberg also confirmed that the company will consider selling some of it excess cloud capacity as a new line of business.
+
+Nowak rates Meta's stock as overweight and a "top pick." He reiterated that view and a price target of 775 with the Monday's note. He believes products such as AI-powered search, new subscription tiers and improvements to Meta's advertising tools could power upside from Meta's investments.
+
+"We recognize the risk of these and that the company needs to deliver these products to drive higher earnings power and multiple expansion," Nowak wrote. "But Meta still has the most call optionality, where the market is penalizing them for the spend and not giving them credit for potential revenue from the spend."

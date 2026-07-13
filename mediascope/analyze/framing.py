@@ -4686,7 +4686,8 @@ _ESCALATION_AMPLIFICATION_PATTERNS: list[re.Pattern] = [
     # the escalation verb and the negative noun.
     re.compile(
         r"\b(?:growing|rising|surging|mounting|increasing|intensifying)\s+"
-        r"(?:public|community|local|popular|grassroots|civic|"
+        r"(?:public|community|local|popular|grassroots|civic|social|"
+        r"political|consumer|national|corporate|industry|widespread|"
         r"neighborhood|residential|environmental|bipartisan)\s+"
         r"(?:opposition|resistance|backlash|outcry|protest|pushback|"
         r"anger|outrage|concern|discontent|unrest)s?\b",
@@ -7600,6 +7601,20 @@ _MARKET_VERDICT_PATTERNS: list[re.Pattern] = [
         r"unnerved|worried|concerned)\b",
         re.IGNORECASE,
     ),
+    # "market is penalizing/punishing/discounting" — personifies market as
+    # punitive agent acting against a company's strategy. Distinct from
+    # factual price reporting; this frames investor sentiment as judgment.
+    # Discovered in IBD Morgan Stanley capex article (Jul 13, 2026):
+    #   "the market is penalizing them for the spend"
+    re.compile(
+        r"\b(?:the\s+)?(?:market|Wall\s+Street|investors?|street)\s+"
+        r"(?:(?:is|are|has|have|has been|have been|keeps?|continues? to)\s+)?"
+        r"(?:penaliz(?:ing|ed)|punish(?:ing|ed)|discount(?:ing|ed)|"
+        r"not giv(?:ing|en)\s+(?:them\s+)?credit|refus(?:ing|ed)\s+to\s+(?:credit|reward)|"
+        r"ignor(?:ing|ed)|overlook(?:ing|ed)|undervaluing|"
+        r"writing\s+off|dismiss(?:ing|ed))\b",
+        re.IGNORECASE,
+    ),
 ]
 _DEVICE_PATTERNS["market_verdict"] = _MARKET_VERDICT_PATTERNS
 
@@ -8195,9 +8210,22 @@ _RECOVERY_NARRATIVE_PATTERNS = [
     re.compile(
         r"\b(?:breath(?:ing|ed|es?)\s+(?:new\s+)?life\s+(?:into|back)|"
         r"injecting\s+(?:new\s+)?life\s+into|"
-        r"revitaliz(?:ing|ed|es?)|rejuvenat(?:ing|ed|es?)|"
-        r"transform(?:ing|ed)?\s+(?:the\s+)?(?:local|rural|regional)\s+"
-        r"(?:economy|community|area|region|landscape))\b",
+        r"revitaliz(?:ing|ed|es?)|rejuvenat(?:ing|ed|es?))\b",
+        re.IGNORECASE,
+    ),
+    # Broadened transformation/reshaping idioms — captures "transforming
+    # our/the/their [institution]" and "reshaping [place/community]".
+    # Discovered via Fox Business Meta Louisiana data center article
+    # (Jul 13, 2026): "it's transforming our schools" and "reshaping
+    # Richland Parish" missed because the prior pattern required
+    # "the local/rural/regional economy/community" — too narrow.
+    re.compile(
+        r"\b(?:transform(?:ing|ed)?|reshap(?:ing|ed)?)\s+"
+        r"(?:the\s+|our\s+|their\s+|its\s+|a\s+)?"
+        r"(?:local\s+|rural\s+|regional\s+|entire\s+)?"
+        r"(?:\w+\s+)?"
+        r"(?:economy|community|area|region|landscape|"
+        r"schools?|district|parish|town|city|village|neighborhood)\b",
         re.IGNORECASE,
     ),
 ]

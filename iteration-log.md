@@ -1,5 +1,33 @@
 # MediaScope Iteration Log
 
+## 2026-07-13 10:00 PT — Type A: Article Deep Dive (IBD Morgan Stanley Capex)
+
+**Article:** IBD — "AI Costs Keep Rising As Morgan Stanley Ups CapEx Estimates For Amazon, Meta" (Jul 13, 2026)
+**Genre:** Financial news / analyst note coverage (single-source: Morgan Stanley's Brian Nowak)
+
+### Toolkit Gaps Found & Fixed
+
+1. **`escalation_amplification` adjective expansion** — "growing social backlash" missed because `social` wasn't in the intervening adjective list. Added 7 adjectives: `social|political|consumer|national|corporate|industry|widespread`.
+
+2. **New `market_verdict` framing device** — "the market is penalizing them for the spend and not giving them credit" had no pattern. Created 7 compiled patterns for market-as-punitive-agent language (penalizing, punishing, discounting, dismissing, rewarding positive variant, negated reward, auxiliary verbs).
+
+3. **`recovery_narrative` proper-noun fix** — "reshaping Richland Parish" (companion Fox Business article) missed because regex didn't allow a proper noun before institution nouns. Changed to allow one optional word before parish/county/city/town etc.
+
+### Tests
+
+- **Created** `test_ibd_morgan_stanley_capex_jul13.py` — 27 tests (market_verdict, escalation_amplification adjectives, recovery_narrative proper-noun, entity detection, composite analysis)
+- **Updated** `test_foxbusiness_louisiana_datacenter_jul13.py` — device count 7→8, recovery_narrative evidence updated (18 tests total)
+- **Updated** `test_structural_consistency.py` — EXPECTED_TOTAL_PATTERNS 597→598
+- **Updated** `docs/ARCHITECTURE.md` — pattern count 597→598, test file listing +2 files
+- **Updated** `README.md` — framing patterns 654→659, annotated articles 167→170, pattern count 597→598, test file table +2 entries
+- **Suite:** 2,437 tests passing across 108 files
+
+### Analysis
+
+- Written to `examples/sample_output/ibd_morgan_stanley_capex_meta_amazon_2026_07_13_analysis.md`
+- Manual sentiment: +0.15 (slightly bullish — analyst "top pick" framing with capex magnitude as secondary concern)
+- Single-source article (Brian Nowak/Morgan Stanley); no contrarian voices
+
 ## 2026-07-13 06:00 PT — Type D: Toolkit Quality & Documentation
 
 **Commit:** `aaa333c` — "Type D: fix stale Path L refs across 4 docs, add intro-text guard tests"
