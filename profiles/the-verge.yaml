@@ -129,14 +129,25 @@ ownership_chain:
       - Middle East expert Dennis Ross (Washington Institute): "Multiple experts in the region
         regard the company as an arm of 'soft power' of the Saudi government."
 
-      SRMG FINANCIAL DETERIORATION:
+      SRMG FINANCIAL DETERIORATION (UPDATED JUL 13, 2026):
       - Share capital: SAR 800M (80M shares at SAR 10 each)
-      - Revenue: $996M (FY2023) → $712M (FY2025) → $740M (TTM Mar 2026) — 26% decline
-      - EBITDA: $227M (FY2023) → -$9.6M (FY2025) → $14M (TTM) — near-collapse
-      - Net Income: +$149M (FY2023) → -$98M (FY2025) → -$97M (TTM) — sustained losses
-      - Enterprise Value: $5.89B (FY2024) → $1.95B (TTM) — 67% decline
-      - Total Assets: ~$1.93B; Total Debt: $319M (PitchBook)
-      Source: PitchBook, Morningstar (publicly traded on Saudi Tadawul).
+      - Share price: SAR 77.00 (Jul 13, 2026); Market cap: SAR 6.20B (~$1.65B)
+      - Revenue: $996M (FY2023) → $872M (FY2024) → $714M (FY2025) → $784M (LTM Q1 2026)
+      - Gross Margin: 31% (FY2023) → 26% (FY2024) → 10% (FY2025) → 14% (LTM) — severe compression
+      - EBITDA: $237M (FY2023) → $159M (FY2024) → -$5M (FY2025) → $43M (LTM) — partial recovery
+      - Net Income: +$150M (FY2023) → +$54M (FY2024) → -$98M (FY2025) → -$54M (LTM)
+      - Enterprise Value: $5.89B (FY2024) → $1.95B (Jul 7) → $1.6B (Jul 13) — 73% decline from peak
+      - Total Assets: ~$1.93B; Total Debt: $319M; Net Debt: $91M (FY2025)
+      Q1 2026 PARTIAL RECOVERY (Decypha, May 10, 2026):
+      - Net profit: SAR 33.07M (+6.88% YoY vs Q1 2025's SAR 30.94M)
+      - Revenue: SAR 769.63M (+18.26% YoY vs SAR 650.76M)
+      - EPS: SAR 0.41 (up from SAR 0.39 YoY)
+      - Sequential: Q4 2025 loss was SAR 357.04M — Q1 2026 recovery is dramatic but fragile
+      - FY2025 full-year net loss: SAR 366.28M (vs profit SAR 201.69M in FY2024)
+      - Employees: ~2,000 (Multiples.vc)
+      NOTE: SRMG's Q1 2026 recovery breaks 3 consecutive quarters of losses but revenue
+      remains 22% below FY2023 peak and margins are severely compressed vs historical norms.
+      Source: Decypha/Mubasher, Multiples.vc/Morningstar, Simply Wall St, Saudi Tadawul.
 
       SRMG MEDIA ASSETS (State Media Monitor):
       Print: Al Eqtisadiah, Asharq Al-Awsat, Arab News, The Majalla, Urdu News, Sayidaty,
@@ -559,13 +570,18 @@ revenue_relationships:
       enterprise value at closing, ~2021). Todd Boehly (Eldridge CEO, PMC JV partner) sits on
       VSEAT's board of directors.
 
-      CURRENT FINANCIALS (Jul 7, 2026):
-      - Stock: $6.75 (down from ~$41 52-week high)
-      - Market cap: ~$77M (down ~96% from SPAC valuation)
-      - Q1 2026: Revenue $125.8M (down 23% YoY), net loss $14.6M (widened from $5.9M loss YoY)
+      CURRENT FINANCIALS (UPDATED Jul 13, 2026):
+      - Stock: $6.98 (Jul 10 close; down from $41.20 52-week high). 52-week range: $5.06–$41.20.
+      - Market cap: ~$76M (down ~96% from SPAC valuation of ~$2B)
+      - Q1 2026 (May 5): Revenue $125.78M (down 23% YoY), EPS -$1.35 (missed consensus -$1.03
+        by $0.32). TTM revenue: $450.5M. Operating cash flow: -$91.6M.
       - Marketplace GOV down 25% YoY
       - 565 employees (down 26.4% YoY, 203 cut)
       - Lost major Private Label partner (revenues down 64%)
+      - Analyst consensus: Hold (9 analysts: 2 Sell, 5 Hold, 2 Buy) — bearish shift
+      - Q2 2026 earnings: Aug 4 (before market open)
+      - Warrants (SEATW): $0.026 — essentially worthless (down 81.4% YoY)
+      - CEO: Lawrence C. Fey
 
       CIRCULAR COMMERCIAL RELATIONSHIP:
       Vivid Seats partners with Rolling Stone (a PMC property) for live event promotions and
@@ -983,7 +999,7 @@ known_conflicts:
       State Media Monitor: SRMG classified as Captured Public/State-Managed (CaPu).
       BroadcastPro ME (May 2025): SRMG Media Solutions × PMC advertising partnership.
       Gulf Business (Mar 2018): PIF/SRMG $200M+ investment with $25M MENA JV.
-      PitchBook (Jul 2026): SRMG financials — $1.95B EV, -$97M net income TTM.
+      PitchBook (Jul 2026): SRMG financials — $1.6B EV, -$54M net income LTM (Q1 2026 partial recovery).
       Reuters (Aug 2025): PIF sold all Meta shares in Q2 2025.
       Markets Group (Q2 2025): PIF US portfolio $23.8B, 57 positions, no Meta.
       WSJ (2018): SRMG-Vice JV talks, "soft power" characterization.
@@ -1161,6 +1177,21 @@ legal_counsel_cross_representation:
     Ian Crosby specifically is named as lead attorney for BOTH NYT (Jul 9 sanctions motion)
     and PMC (PMC v. Google complaint). Davida Brook signed filings in both cases.
     
+    NYT SANCTIONS MOTION UPDATE (Jul 10, 2026):
+    NYT and other newspapers (including Daily News) filed motion asking S.D.N.Y. to sanction
+    OpenAI for allegedly lying to the court about its ability to search its systems for evidence
+    of copyrighted content use. Key allegations: (1) OpenAI falsely told court it could not
+    search its LLMs for copyrighted material while having previously done so "even before the
+    first News Plaintiff filed suit." (2) OpenAI deleted billions of relevant ChatGPT
+    conversations or made them unsearchable. Sanctions sought include attorney fees and a court
+    finding that chat logs showed OpenAI misused copyrighted works. OpenAI spokesperson Drew
+    Pusateri: "As the Times' case weakens... they're persisting with their efforts to invade
+    the privacy of people who have nothing to do with this case." NYT has spent $28M+ on AI
+    litigation (per financial regulator filings). The sanctions motion, filed by the same Susman
+    Godfrey attorneys who represent PMC, represents an aggressive litigation posture that aligns
+    all of Susman Godfrey's publisher clients against AI companies using publisher content.
+    Source: Reuters Jul 10, 2026; Fast Company Jul 11, 2026.
+    
     ANALYTICAL SIGNIFICANCE FOR THE VERGE:
     The Verge, editorially, presents as an independent publication with its own coverage
     decisions. But its parent company (PMC) and the New York Times are both represented by
@@ -1181,7 +1212,8 @@ legal_counsel_cross_representation:
     - "https://chatgptiseatingtheworld.com/2025/09/14/penske-media-v-google-complaint/"
     - "https://www.reuters.com/legal/litigation/new-york-times-led-group-asks-court-sanction-openai-us-copyright-dispute-2026-07-09/"
     - "https://authorsguild.org/news/new-york-times-sues-openai/"
-  last_updated: "2026-07-10"
+    - "https://www.fastcompany.com/nyt-openai-sanctions-2026-07-11/"
+  last_updated: "2026-07-13"
 
 # ===================================================================
 # AI LICENSING LANDSCAPE — added 2026-07-10 (Type C: Ownership & Funding)

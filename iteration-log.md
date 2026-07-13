@@ -20863,3 +20863,72 @@ Path L (Quote-inflated body with negative headline) — designed from this artic
 ### Verification
 - All 2,325 tests pass (full suite, 162s)
 - All 115 structural consistency tests pass
+
+## 2026-07-13 04:00 PT — Type C: Ownership & Funding Deep Dive (WBD/Paramount Catalytic Week + CHTR Stress)
+
+**Commit:** `a53e800` — "Type C: WBD/Paramount catalytic week (Jul 14) + CHTR stress + NYT amended complaint analysis"
+
+### Summary
+Two-profile Type C iteration focused on the WBD/Paramount merger entering its catalytic week and CHTR portfolio stress deepening Advance's concentration risk. Also expanded NYT amended complaint analysis with new framing-detection insight.
+
+### Wired/Advance Profile Updates
+
+#### 1. WBD/Paramount Merger — Catalytic Week of Jul 14
+- **Multistate AG antitrust lawsuit expected THIS WEEK** (CNN, Jul 9): "likely next week" = week of Jul 14. CA AG Bonta leading; his office stated Jul 9: "remains an active investigation, and we do not have any update to share at this time"
+- **Paramount tender/exchange offers for WBD notes expire July 15** (StockTitan event calendar) — near-term catalytic event
+- **NY Post/Semafor (Jul 12):** Paramount advisers encouraging CEO David Ellison to consider moving HQ and redirecting $30B spending outside CA if Bonta sues. One adviser called CA "inhospitable." Ellison "not sold" on leaving but Bayonne NJ studio lease provides alternative
+- **PSKY stock $9.41** (Jul 10 close), -9% intraday. Arete Research reaffirmed Sell. Deal risk front and center for investors
+- **24 nations regulatory clearance** context added from Issa letter (Rep. Darrell Issa, R-CA, Jul 11)
+- **Ticking fee:** Added Reuters ~$650M/quarter alternate figure (from diluted share count) alongside Morningstar $627M estimate
+- Updated portfolio concentration evidence to Jul 10 close prices + 7 source URLs (added Reuters Oregon AG withdrawal Jul 11, NY Post CA exodus Jul 12)
+
+#### 2. CHTR Portfolio Stress Analysis
+- **CHTR: $130.73 (Jul 10), YTD -37.34%, approaching 52-week low of $124.05**
+- 52-week high was $413.14 → current price represents -68% decline
+- Market cap collapsed from ~$57B to ~$18.6B
+- Q1 2026 EPS miss: $9.17 vs $10.01 consensus (-$0.84). Revenue -1.0% YoY
+- Q2 earnings Jul 24 (before market open) — next catalyst
+- Analyst consensus: "Reduce" (6 sell, 8 hold, 5 buy)
+- **Portfolio impact:** If CHTR hits 52W low ($124.05), Advance's CHTR stake drops from ~$2.42B to ~$2.30B
+- Flagged CHTR as "weakest link in Advance's public portfolio — deepening Reddit concentration risk"
+
+#### 3. Portfolio Concentration Updated
+- Updated description date from "Jul 9" to "Jul 13" with current CHTR stress context
+- WBD approach now includes: multistate AG suit expected week of Jul 14, EU Phase I deadline Jul 22, PSKY tender/exchange expire Jul 15
+
+### NYT Profile Updates
+
+#### 4. Amended Complaint Strategic Analysis (Jun 25, 2026)
+- **Graham James quote added:** NYT spokesperson: "Beyond amending that claim and streamlining the case to its most potent arguments, our core claims remain the same from the day we filed this lawsuit"
+- **Bloomberg Law characterization:** Microsoft accused of providing supercomputer infrastructure "specifically designed to infringe copyrighted works to train models"
+- **MediaScope analytical note (NEW):** OpenAI's "forced to drop claims" narrative is itself a frameable device — editorial deflation without Cox Communications context. The dropped claim was abandoned because SCOTUS removed the legal theory (Cox v. Sony Music, 9-0, Thomas J., Mar 25 2026), not because of evidentiary weakness. Any article repeating OpenAI's framing without Cox context is performing editorial deflation
+- **Fast Company characterization added:** OpenAI "chose obstruction" and "discovery misconduct" (quoting plaintiffs' filing)
+- **AP coverage angle:** led with "evidence hiding" frame
+
+### Source URLs
+- https://www.cnn.com/2026/07/08/media/state-ags-paramount-wbd-merger-lawsuit/ (CNN multistate AG lawsuit report)
+- https://www.reuters.com/business/media-telecom/oregon-drops-motion-delay-paramount-warner-bros-deal-2026-07-11/ (Reuters Oregon AG withdrawal)
+- https://nypost.com/2026/07/12/business/paramount-weighs-california-exodus-after-states-war-on-110b-warner-bros-takeover/ (NY Post CA exodus)
+- https://www.stocktitan.net/sec-filings/PSKY/ (PSKY tender offer expiration Jul 15)
+- https://www.marketbeat.com/stocks/NASDAQ/CHTR/chart/ (CHTR price history)
+- https://www.marketbeat.com/stocks/NASDAQ/CHTR/earnings/ (CHTR Q1 earnings miss)
+- https://www.fastcompany.com/91571899/new-york-times-other-news-outlets-want-sanctions-on-openai (Fast Company sanctions)
+- https://www.reuters.com/technology/new-york-times-led-group-asks-court-sanction-openai-us-copyright-dispute-2026-07-10/ (Reuters sanctions + dropped claim)
+- https://news.bloomberglaw.com/ip-law/new-york-times-narrows-openai-suit-targets-microsofts-conduct (Bloomberg Law amended complaint)
+- https://www.mediapost.com/publications/article/403021/ (MediaPost amended complaint)
+
+### Test Results
+- 2,345 passed, 0 failed (118 structural consistency tests all green)
+- `count_stats.py --check` ✅ README stats current
+
+### Stats After This Iteration
+- Journalists: 228
+- Career-entry migrations: 900
+- Distinct publications: 416
+- Annotated articles: 167
+- Emotional language terms: 1,022
+- Framing device types: 101
+- Compiled patterns: 654
+- Tests: 2,345 (104 files)
+- Profile sizes: wired.yaml 2,065 lines (+11), nytimes.yaml 2,260 lines (+14)
+
