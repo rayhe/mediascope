@@ -1,5 +1,20 @@
 # MediaScope Iteration Log
 
+## 2026-07-13 15:00 PT — Type A: Article Deep Dive (Reuters EU DSA Meta addictive features)
+
+**Article:** Reuters, "EU says Meta's Facebook, Instagram have addictive features harmful to children" (Jul 10, 2026)
+**Analysis file:** `examples/sample_output/reuters_eu_dsa_meta_addictive_features_2026_07_10_analysis.md`
+
+**Code fixes:**
+- `mediascope/analyze/framing.py` ~L454: Added `predictable` as standalone loaded_language term (previously only caught in `dismissive_qualifier` when followed by specific nouns)
+- `mediascope/analyze/framing.py` ~L7435: Expanded `dismissive_qualifier` noun list with 9 terms: `response`, `answer`, `strategy`, `defense`, `defence`, `move`, `tactic`, `approach`, `reply`
+
+**Tests:** New file `tests/test_reuters_eu_dsa_meta_jul10.py` — 25 tests across 5 classes (entities, framing devices, predictable loaded language gap fix, source balance, cross-article comparison). All pass.
+
+**Stats after commit:** 2,495 tests (111 files), 175 annotated articles, 101 framing device types, 670 patterns, 1,022 emotional language terms, 86 entity clusters (866 aliases), 31 adversarial device types, 12 sentiment correction paths
+
+---
+
 ## 2026-07-13 13:00 PT — Type D: Toolkit Quality & Documentation (MarketWatch example, 5-way cross-pub comparison, ARCHITECTURE.md)
 
 **Commit:** `f124f1f` — "Type D: MarketWatch annotated example, 5-way cross-pub comparison (Louisiana datacenter), ARCHITECTURE.md improvements"
