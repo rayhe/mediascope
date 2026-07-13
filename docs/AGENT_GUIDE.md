@@ -1024,7 +1024,7 @@ The 29 topic buckets enable apples-to-apples asymmetry comparison within a topic
 
 ## Framing-Aware Tone Correction Workflow
 
-VADER and TextBlob systematically misprice editorial tone in investigative journalism. Professional prose uses measured, confident language that lexical sentiment models score as positive — even when the editorial stance is clearly adversarial. MediaScope's tone correction pipeline fixes this through **11 correction paths (A–K)**, each addressing a specific VADER failure mode.
+VADER and TextBlob systematically misprice editorial tone in investigative journalism. Professional prose uses measured, confident language that lexical sentiment models score as positive — even when the editorial stance is clearly adversarial. MediaScope's tone correction pipeline fixes this through **12 correction paths (A–L)**, each addressing a specific VADER failure mode.
 
 > **Quick Reference:** For a scannable lookup card with trigger conditions, blend formulas, validation articles, and a path selection flowchart, see [SENTIMENT_CORRECTION_REFERENCE.md](SENTIMENT_CORRECTION_REFERENCE.md).
 
@@ -1047,10 +1047,11 @@ The pipeline evaluates 11 paths (A–K) in priority order — the first match fi
 | **I** | Direct consumer critique | raw ≥ 0.3, agency > 0, ≥5 adversarial + ≥2 consumer devices + EI ≥ 0.5 | Moral condemnation of corporate decisions — consumer_ownership/competitive_positioning dominant |
 | **J** | Expert-driven structural critique | raw ≥ 0.3, agency ≥ 0, ≥5 adversarial + ≥1 expert_contradiction + ≥2 structural devices + EI ≥ 0.10 | Measured editorial with criticism through expert sources + structural devices (consumer_ownership, loss_leader_framing) rather than vocabulary — VADER fooled by corporate PR quotes |
 | **K** | Sarcastic rejection | raw ≥ 0.3, ≥2 sarcastic_correction + EI ≥ 0.7 | Satirical/vulgar short pieces with ironic negation, mock-certainty, sarcastic farewells — VADER reads profanity as positive ("fuck yeah" → positive sentiment) |
+| **L** | Quote-inflated body with negative headline | raw ≥ 0.3, headline_body ≤ -0.5, adversarial ≥ 4, ≥3 distinct adversarial types | Articles where quoted material inflates VADER body score but negative headline + adversarial framing density reveals editorial stance — corrects toward mild negative (-0.05 to -0.50) |
 
 Only one framing path (A–F, H–K) fires per article. Path G runs independently before the composite is computed.
 
-**Adversarial device types** (29 types trigger Paths A/B): absence_as_evidence, assumed_consensus, catastrophizing, competitive_deficit, competitive_displacement, competitive_positioning, consumer_ownership, editorial_aside, editorial_deflation, emotional_appeal, failure_precedent, guilt_by_association, hypocrisy_frame, isolation_framing, juxtaposition, kicker_framing, loaded_language, military_techno_optimism, power_asymmetry, pressure_language, recidivism_framing, refusal_amplification, self_referential_investigation, silence_as_guilt, slippery_slope, timeline_implication, expert_contradiction, loss_leader_framing, sarcastic_correction.
+**Adversarial device types** (31 types trigger Paths A/B): absence_as_evidence, assumed_consensus, catastrophizing, competitive_deficit, competitive_displacement, competitive_positioning, consent_alarm, consumer_ownership, editorial_aside, editorial_deflation, emotional_appeal, failure_precedent, guilt_by_association, hypocrisy_frame, isolation_framing, juxtaposition, kicker_framing, loaded_language, military_techno_optimism, power_asymmetry, precedent_analogy, pressure_language, recidivism_framing, refusal_amplification, self_referential_investigation, silence_as_guilt, slippery_slope, timeline_implication, expert_contradiction, loss_leader_framing, sarcastic_correction.
 
 **Anchor device types** (3 types trigger Path C): kicker_framing, self_referential_investigation, juxtaposition.
 

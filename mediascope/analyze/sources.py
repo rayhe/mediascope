@@ -157,6 +157,8 @@ _KNOWN_ORGS_LOWER: set[str] = {
     "reuters", "bloomberg",
     "creative artists agency", "caa",
     "electronic frontier foundation", "eff",
+    # Entertainment/labor unions
+    "sag-aftra", "wga", "dga", "iatse",
 }
 _NAME_STOP_FIRST_WORDS: set[str] = {
     "After", "Before", "Because", "Since", "While", "During",
@@ -1425,8 +1427,9 @@ def extract_sources(text: str) -> list[SourceMention]:
     # unnamed but institutionally identified, distinct from truly anonymous
     # sources ("people familiar with the matter").
     # Added iteration 2026-07-06 from Reuters EU WhatsApp antitrust analysis.
+    # Handles hyphenated org names like SAG-AFTRA and all-caps acronyms.
     _CORPORATE_SPOKESPERSON_RE = re.compile(
-        r"\b(?:an?|the)\s+([A-Z][A-Za-z]+(?:\s+[A-Z][A-Za-z]+)?)\s+"
+        r"\b(?:an?|the)\s+([A-Z][A-Za-z-]+(?:\s+[A-Z][A-Za-z-]+)?)\s+"
         r"(?:spokesperson|spokesman|spokeswoman|representative)\b",
         re.IGNORECASE,
     )
@@ -1759,6 +1762,22 @@ def extract_sources(text: str) -> list[SourceMention]:
             r"made available|given)\b",
             re.IGNORECASE,
         ),
+        # "the blog post / press release / announcement calls/says/states"
+        # Non-legal public documents used as sources with attribution verbs.
+        # Discovered in Gizmodo Muse Image scrapped article (Jul 11, 2026):
+        #   "the blog post announcing it calls it, 'the creative partner...'"
+        #   "the blog post now has an update, added Friday"
+        re.compile(
+            r"\b(?:the|a|an)\s+"
+            r"(?:blog\s+post|press\s+release|announcement|statement|"
+            r"white\s*paper|policy\s+(?:update|change)|release\s+notes|"
+            r"company\s+(?:blog|post)|corporate\s+blog)\s+"
+            r"(?:also\s+|now\s+|further\s+)?"
+            r"(?:state|states|said|says|say|calls|call|"
+            r"note|notes|noted|read|reads|describe|describes|"
+            r"explained|explains|mention|mentions|has|had|have)\b",
+            re.IGNORECASE,
+        ),
         # "documents/emails/recordings [that/which] [Outlet] has seen/reviewed"
         re.compile(
             r"\b(?:internal\s+|leaked\s+|confidential\s+)?"
@@ -1948,6 +1967,9 @@ def extract_sources(text: str) -> list[SourceMention]:
         # Civil liberties organizations — discovered in Fast Company
         # Meta glasses controversies roundup (Jul 10, 2026).
         "electronic frontier foundation", "eff",
+        # Entertainment/labor unions — discovered in Gizmodo Muse Image
+        # scrapped article (Jul 11, 2026).
+        "sag-aftra", "wga", "dga", "iatse",
     }
 
     for pat in org_source_patterns:
@@ -2034,6 +2056,15 @@ def extract_sources(text: str) -> list[SourceMention]:
             rf"\b[Aa]n?\s+(?:report|investigation|story|analysis|exposé)\s+"
             rf"(?:from|by)\s+(?:[\w\-]+\s+)?(?:newspaper|publication|outlet|magazine|website)?\s*"
             rf"({_pub_alt})\b",
+            re.IGNORECASE,
+        ),
+        # "according to [Publication]" — direct attribution without
+        # intermediate "report/story" noun.  Common with wire services:
+        # "According to Reuters, ..." or "according to Bloomberg, ..."
+        # Discovered in Gizmodo Muse Image scrapped article (Jul 11, 2026):
+        #   "According to Reuters, after the feature was pulled, ..."
+        re.compile(
+            rf"\baccording\s+to\s+({_pub_alt})\b",
             re.IGNORECASE,
         ),
     ]

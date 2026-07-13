@@ -1,6 +1,6 @@
 # Sentiment Correction Quick Reference
 
-> A compact lookup card for all 11 tone correction paths (A–K) used by MediaScope's framing-aware sentiment pipeline. For the full scoring framework, VADER limitations, and academic foundations, see [METHODOLOGY.md §1](METHODOLOGY.md#1-sentiment-analysis-framework) and [QUALITY_STANDARDS.md §7](QUALITY_STANDARDS.md#7-automated-scoring-accuracy).
+> A compact lookup card for all 12 tone correction paths (A–L) used by MediaScope's framing-aware sentiment pipeline. For the full scoring framework, VADER limitations, and academic foundations, see [METHODOLOGY.md §1](METHODOLOGY.md#1-sentiment-analysis-framework) and [QUALITY_STANDARDS.md §7](QUALITY_STANDARDS.md#7-automated-scoring-accuracy).
 
 ---
 
@@ -411,6 +411,31 @@ corrected = 0.10 × raw_tone + 0.90 × target_tone
 
 ---
 
+### Path L — Quote-Inflated Body with Negative Headline
+
+**Problem:** Short editorial pieces where VADER scores the body positive because embedded quotes (corporate blog posts, PR statements, formal union statements) dominate the lexical signal, but the headline and editorial framing clearly position the article as critical. The headline VADER is strongly negative while the body VADER is positive.
+
+**When it fires:**
+| Condition | Threshold | Rationale |
+|---|---|---|
+| `raw_tone` | ≥ 0.3 | VADER inflated by quote material |
+| `headline_body_alignment` | ≤ -0.5 | Strong headline-body divergence |
+| `adversarial_count` | ≥ 4 | Substantial adversarial framing |
+| distinct adversarial types | ≥ 3 | Breadth of adversarial framing |
+
+**Correction formula:** Corrects toward mild negative range (-0.05 to -0.50), using adversarial density and headline-body divergence to calibrate severity.
+
+**Contrast with other paths:**
+- **vs Path A:** Path A requires adversarial ≥ 6 and agency < -0.3. Path L uses headline-body divergence as compensating evidence at lower adversarial threshold.
+- **vs Path C:** Path C requires anchor devices ≥ 2 and positive agency. Path L has no anchor requirement — it's driven by headline-body mismatch.
+
+**Validated on:**
+| Article | VADER Raw | Corrected | Manual |
+|---|---|---|---|
+| Gizmodo Muse Image scrapped (Jul 2026) | +0.63 | ~−0.13 | −0.13 |
+
+---
+
 ## Part 3: Path Selection Flowchart
 
 ```
@@ -445,6 +470,10 @@ Article arrives with raw_tone, agency, adversarial_count, EI, framing_summary
 │
 ├─ raw_tone ≥ 0.3 AND sc ≥ 2 AND EI ≥ 0.7?
 │  → Path K: Sarcastic rejection (10/90)
+│
+├─ raw_tone ≥ 0.3 AND headline_body ≤ -0.5 AND adversarial ≥ 4
+│  AND ≥ 3 distinct adversarial types?
+│  → Path L: Quote-inflated body + negative headline (mild negative)
 │
 ├─ raw_tone ≥ 0.3 AND adversarial ≥ 5 AND EI ≥ 0.5 AND consumer_devices ≥ 2
 │  AND agency > 0?

@@ -1,0 +1,25 @@
+The Public Got So Mad at Meta's New AI Photo Tool That It's Scrapped Already
+
+Source: Gizmodo
+Date: July 11, 2026
+URL: https://gizmodo.com/the-public-got-so-mad-at-metas-new-ai-photo-tool-that-its-scrapped-already-2000649261
+
+I don't know what the world record is for killing bad AI features quickly, but this has to be a competitor. On Tuesday, July 7, Meta released an AI photo generation feature that pulled face data from any public Instagram account by default. It made it to Friday—a little over three days in operation by my count.
+
+The model tied to the feature, Muse Image, is still available. Muse Image is the first Image Generator released by Meta's Superintelligence Labs, and the blog post announcing it calls it, "the creative partner that knows your world, making it easy to turn your ideas into high-quality visuals that you can download and share anywhere, including directly to your feed, story, or chat."
+
+However, the blog post now has an update, added Friday:
+
+"Earlier this week, we announced that one way for people to generate images in Meta AI is by @-mentioning public Instagram accounts that they want to reference. Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way. We've heard the feedback that this feature missed the mark, so it's no longer available."
+
+The showbiz performers' union, SAG-AFTRA, captured the popular mood pretty well with its Friday statement on this feature:
+
+"Anything other than a clear and conspicuous OPT-IN for these types of uses of Instagram users' images is unacceptable, and an utter miscalculation of public sentiment regarding the obvious dangers and harms inherent in such use," the blunt statement reads.
+
+According to Reuters, after the feature was pulled, a SAG-AFTRA spokesperson said, "With the dangers of nonconsensual digital replicas well known to all, a feature that encouraged that behavior is unwise. We appreciate its discontinuance. It is the responsible thing to do."
+
+As I've written before, a pattern emerged in releases of AI products after ChatGPT—perhaps you could call it "The Ghibli Meme Effect"—in which models would arrive on the scene and make a splash by offending copyright holders or privacy activists, and that backlash would sometimes be followed by a retreat after sufficient ink had been spilled denouncing the product.
+
+But the downfall of OpenAI's ill-fated video generator Sora, and the large number of frankly nauseating episodes tied to SpaceXAI's Grok image generator seems to have interrupted that pattern somewhat. Over the past six months or so, these companies have transitioned from pitching video and image generation at top volume to highlighting supposed breakthroughs in work productivity.
+
+In that sense, this release from Meta seems like it was either a throwback, or, as SAG-AFTRA suggested, a genuine miscalculation.

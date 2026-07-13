@@ -20601,3 +20601,36 @@ Documentation audit found stale counts across README, FRAMING_REFERENCE, and ARC
 - All 2,301 tests pass (full suite, 159s)
 - All 115 structural consistency tests pass
 - Sample output created: `gizmodo_siege_roundup_meta_surveillance_2026_07_11_analysis.md`
+
+---
+
+## Jul 12, 2026 — 20:00 PT — Type A: Article Deep Dive
+
+**Article:** Gizmodo — "Meta's AI Detector Can't Detect Images It Generated Itself, Report Finds" (Jul 11, 2026)
+
+**Focus:** Content Seal watermarking failure after cropping (55% detection failure rate per Reuters testing). Part of the Muse Image lifecycle tracked through 5 cross-narrative phases. Tests scale_magnitude with adjective gaps, competitive_deficit with generic competitor references.
+
+### Issues Found & Fixed
+
+1. **`scale_magnitude` — adjective between `%` and growth noun (line 2442):** "900% annual growth" missed because pattern required `%` immediately followed by growth noun. Changed `\s+` to `\s+(?:\w+\s+)?` to allow one optional adjective between percentage and noun.
+
+2. **`competitive_deficit` — generic competitor references (lines 6306–6408):** "trailing its competitors in the AI space" missed because all existing patterns required named competitors (OpenAI, Google, etc.). Added new pattern for `trailing/lagging/falling behind/playing catch-up + its/the/their + competitors/rivals/peers/competition`.
+
+3. **Path L summary table missing from METHODOLOGY.md:** Path L (Quote-inflated body with negative headline) was implemented in code but missing from the summary table. Added row and updated all cross-references from "11 correction paths (A–K)" to "12 correction paths (A–L)" across METHODOLOGY.md, AGENT_GUIDE.md, QUALITY_STANDARDS.md, SOURCE_ANALYSIS_REFERENCE.md, and sarcastic_editorial_demo.py.
+
+### Open Gaps Documented
+- `editorial_deflation` negation+understatement pattern ("isn't working entirely as advertised")
+- Proposed `claim_contradiction` device (promise → test → failure structure)
+- Proposed `preview_qualifier_retreat` device ("previewing" as responsibility hedge)
+- Contrastive/ironic VADER inversion remains the #1 accuracy problem — this article scores +0.61 (should be −0.30) and no correction path fires
+
+### Stats Change
+- Regex patterns: 585 → 592 (+1 scale_magnitude adjective, +1 competitive_deficit generic, +5 from pre-existing Path L doc fixes)
+- Tests: 2,301 → 2,325 (structural consistency updates)
+- Annotated articles: 163 → 164
+- Entity clusters: 85 (unchanged)
+
+### Verification
+- All 2,325 tests pass (full suite, 179s)
+- All 115 structural consistency tests pass
+- Sample output created: `gizmodo_meta_ai_detector_content_seal_2026_07_11_analysis.md`

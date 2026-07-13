@@ -196,11 +196,11 @@ These gaps demonstrate that **raw VADER scores on investigative journalism are u
 
 ### Tone Correction Pipeline
 
-> **Quick Reference:** For a scannable lookup card covering all 11 correction paths (A–K) with trigger conditions, blend formulas, and validation articles, see [SENTIMENT_CORRECTION_REFERENCE.md](SENTIMENT_CORRECTION_REFERENCE.md).
+> **Quick Reference:** For a scannable lookup card covering all 12 correction paths (A–L) with trigger conditions, blend formulas, and validation articles, see [SENTIMENT_CORRECTION_REFERENCE.md](SENTIMENT_CORRECTION_REFERENCE.md).
 
 MediaScope's framing-aware correction fires when three conditions are all met:
 
-1. **Adversarial framing density:** ≥3 devices from the adversarial set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, recidivism_framing, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, editorial_aside, failure_precedent, editorial_deflation, competitive_positioning, consumer_ownership, slippery_slope, competitive_deficit, competitive_displacement, absence_as_evidence, silence_as_guilt, expert_contradiction, loss_leader_framing, sarcastic_correction)
+1. **Adversarial framing density:** ≥3 devices from the adversarial set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, recidivism_framing, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, editorial_aside, failure_precedent, editorial_deflation, competitive_positioning, consumer_ownership, slippery_slope, competitive_deficit, competitive_displacement, absence_as_evidence, silence_as_guilt, expert_contradiction, loss_leader_framing, sarcastic_correction, consent_alarm, precedent_analogy)
 2. **Negative agency signal:** Active-negative agency (tracking, cutting, forcing) or passive victim framing
 3. **Positive raw VADER score:** The uncorrected composite score misleadingly reads as positive
 
@@ -229,7 +229,7 @@ Every article analysis that introduces a toolkit correction must include:
 4. **Gap analysis** — why the gap exists and which specific framing devices or detection failures caused it
 5. **Regression tests** — at least one test per correction to prevent future regressions
 
-This ensures the correction pipeline is validated against real articles, not synthetic examples. All 163 annotated articles in `examples/sample_output/` follow this pattern.
+This ensures the correction pipeline is validated against real articles, not synthetic examples. All 164 annotated articles in `examples/sample_output/` follow this pattern.
 
 ## 8. Emotional Language Validation
 

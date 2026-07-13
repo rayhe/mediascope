@@ -2319,6 +2319,30 @@ _PRECEDENT_ANALOGY_PATTERNS.extend([
         r"such as|like)\s+(?:[A-Z][\w'-]+)",
         re.IGNORECASE | re.DOTALL,
     ),
+    # -----------------------------------------------------------------------
+    # Coined-term pattern analogy: writer coins or references a named
+    # phenomenon to frame the current event as part of a recognized pattern.
+    # Uses "The [X] Effect/Syndrome/Playbook/Cycle" or "perhaps you could
+    # call it 'The X'" to elevate an observation into a predictive model.
+    # Discovered in Gizmodo Muse Image scrapped article (Jul 11, 2026):
+    #   "perhaps you could call it 'The Ghibli Meme Effect'"
+    # Also handles: "the Streisand Effect", "the Facebook playbook",
+    #   "what I call 'The X'", "dubbed 'the Y effect'"
+    # -----------------------------------------------------------------------
+    re.compile(
+        r"\b(?:perhaps (?:you|we) could call (?:it|this|that)|"
+        r"what (?:I|we) (?:call|dub|term|refer to as)|"
+        r"(?:has been|is being|was) (?:called|dubbed|termed|referred to as)|"
+        r"a (?:pattern|phenomenon|dynamic|cycle) (?:I|we|they) (?:call|term|dub))\s+"
+        r"['\"\u201c\u201d].{3,60}?['\"\u201c\u201d]",
+        re.IGNORECASE,
+    ),
+    # "the [Coined Name] Effect/Syndrome/Playbook/Cycle/Problem/Paradox"
+    re.compile(
+        r"\b[Tt]he\s+[A-Z][\w'-]+(?:\s+[A-Z][\w'-]+){0,3}\s+"
+        r"(?:Effect|Syndrome|Playbook|Cycle|Problem|Paradox|Doctrine|"
+        r"Dilemma|Phenomenon|Fallacy|Pattern|Rule|Principle|Model)\b",
+    ),
 ])
 
 
@@ -2415,7 +2439,7 @@ _SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
     # Comparison amplifiers: "more than double/triple", "nearly double", or "X% spike/surge/jump"
     re.compile(
         r"\b(?:(?:more than|nearly|almost|close to) (?:double|double[ds]?|triple[ds]?|quadruple[ds]?)|"
-        r"\d+(?:\.\d+)?%\s+(?:spike|surge|jump|increase|rise|hike|growth))",
+        r"\d+(?:\.\d+)?%\s+(?:\w+\s+)?(?:spike|surge|jump|increase|rise|hike|growth))",
         re.IGNORECASE,
     ),
     # Market-size growth projections: "$X billion market", "expected to
@@ -3038,6 +3062,26 @@ _SARCASTIC_CORRECTION_PATTERNS: list[re.Pattern] = [
         r"(?:all of (?:that|this|it)|that|this|it|none of (?:that|this))\s+"
         r"(?:is|was|has|will|should|would|could)\b",
         re.MULTILINE,
+    ),
+    # -----------------------------------------------------------------------
+    # Sardonic record / speed superlative: writer opens with feigned
+    # ignorance about a "record" to frame the subject's failure as
+    # historically notable.  Structure: "I don't know what the world
+    # record is for [X], but this has to be a [competitor/contender]."
+    # Discovered in Gizmodo Muse Image scrapped article (Jul 11, 2026):
+    #   "I don't know what the world record is for killing bad AI features
+    #    quickly, but this has to be a competitor."
+    # Also handles: "this must be some kind of record", "that has to be
+    # a new record for", "fastest [X] in history"
+    # -----------------------------------------------------------------------
+    re.compile(
+        r"\b(?:I don.?t know what the (?:world |)record is for|"
+        r"must be (?:some (?:kind|sort) of )?(?:a |the )?(?:new )?"
+        r"(?:world )?record|"
+        r"has to be (?:a |the |some (?:kind|sort) of )?(?:new )?"
+        r"(?:world )?record|"
+        r"a (?:new )?(?:world )?record for)\b",
+        re.IGNORECASE,
     ),
 ]
 
@@ -6205,6 +6249,36 @@ _POLICY_REVERSAL_PATTERNS: list[re.Pattern] = [
         r"pulling|pulled|paused|suspended))\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # -----------------------------------------------------------------------
+    # Temporal compression: editorial emphasis on how briefly a feature or
+    # product survived before being killed.  Uses precise duration or
+    # calendar markers to amplify the humiliation of the reversal.
+    # Discovered in Gizmodo Muse Image scrapped article (Jul 11, 2026):
+    #   "a little over three days in operation by my count"
+    #   "It made it to Friday"
+    # -----------------------------------------------------------------------
+    # "[N] days/hours/weeks in operation/existence/on the market"
+    re.compile(
+        r"\b(?:a\s+(?:little\s+)?(?:over|under)\s+)?"
+        r"(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|"
+        r"a few|several|barely|just|only|mere(?:ly)?)\s+"
+        r"(?:days?|hours?|weeks?|months?)\s+"
+        r"(?:in (?:operation|existence|service|the market|production)|"
+        r"on (?:the market|the air|the shelf)|"
+        r"before (?:being|it was|they were)?\s*(?:killed|scrapped|pulled|"
+        r"yanked|shelved|discontinued|axed|removed|dropped|shut down)|"
+        r"old|live)\b",
+        re.IGNORECASE,
+    ),
+    # "made it to / lasted until / survived until [day/date]"
+    re.compile(
+        r"\b(?:made it to|lasted (?:until|to|through)|survived (?:until|to|through)|"
+        r"didn'?t (?:make it|last|survive) (?:past|beyond|through))\s+"
+        r"(?:Friday|Monday|Tuesday|Wednesday|Thursday|Saturday|Sunday|"
+        r"the (?:end|weekend|next (?:day|week|morning))|"
+        r"\w+ \d+)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["policy_reversal"] = _POLICY_REVERSAL_PATTERNS
@@ -6327,6 +6401,16 @@ _COMPETITIVE_DEFICIT_PATTERNS: list[re.Pattern] = [
     re.compile(
         r"\b(?:fill(?:ing)?|step(?:ping)? into|mov(?:e|ing) into)\s+"
         r"(?:the |a )?(?:vacuum|void|gap|space)\b",
+        re.IGNORECASE,
+    ),
+    # Generic trailing/lagging pattern without named competitors —
+    # "trailing its competitors", "lagging behind its peers/rivals"
+    re.compile(
+        r"\b(?:trail(?:s|ing|ed)?|lag(?:s|ging|ged)?|fall(?:s|ing|en)?\s+behind"
+        r"|playing\s+catch[- ]?up)\s+"
+        r"(?:\w+\s+){0,2}?"
+        r"(?:its|the|their)\s+"
+        r"(?:competitors?|rivals?|peers?|counterparts?|competition)\b",
         re.IGNORECASE,
     ),
 ]
@@ -8313,6 +8397,20 @@ _CONSENT_ALARM_PATTERNS: list[re.Pattern] = [
         r"permission)|(?:use|using) your (?:likeness|photos?|images?|face)|"
         r"anyone (?:on the internet |)can (?:use|create|generate))\b",
         re.IGNORECASE,
+    ),
+    # "pulled/scraped/used [face/photo/image/user] data... by default"
+    # Editorial framing that highlights non-consensual default data use.
+    # Discovered in Gizmodo Muse Image scrapped article (Jul 11, 2026):
+    #   "pulled face data from any public Instagram account by default"
+    re.compile(
+        r"\b(?:pull(?:s|ed|ing)?|scrap(?:es?|ed|ing)?|harvest(?:s|ed|ing)?|"
+        r"collect(?:s|ed|ing)?|gather(?:s|ed|ing)?|grab(?:s|bed|bing)?|"
+        r"us(?:es?|ed|ing))\s+"
+        r"(?:face|facial|photo|image|user|personal|biometric)\s+"
+        r"(?:data|information|content|photos?)?"
+        r".{0,60}?"
+        r"\bby default\b",
+        re.IGNORECASE | re.DOTALL,
     ),
 ]
 _DEVICE_PATTERNS["consent_alarm"] = _CONSENT_ALARM_PATTERNS

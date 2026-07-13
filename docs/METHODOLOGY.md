@@ -523,7 +523,7 @@ The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overa
 | Trigger | Threshold |
 |---|---|
 | Raw composite tone | ≥ 0.0 (non-negative) |
-| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, recidivism_framing, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, competitive_positioning, consumer_ownership, editorial_aside, failure_precedent, editorial_deflation, slippery_slope, competitive_deficit, competitive_displacement, absence_as_evidence, silence_as_guilt, expert_contradiction, loss_leader_framing, sarcastic_correction)) |
+| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, recidivism_framing, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, competitive_positioning, consumer_ownership, editorial_aside, failure_precedent, editorial_deflation, slippery_slope, competitive_deficit, competitive_displacement, absence_as_evidence, silence_as_guilt, expert_contradiction, loss_leader_framing, sarcastic_correction, consent_alarm, precedent_analogy)) |
 | Agency attribution | < −0.3 (passive/target of scrutiny) |
 
 **Blend:** 10% raw + 90% framing-derived estimate. The framing estimate is computed from agency, emotional intensity, and adversarial device density.
@@ -709,6 +709,22 @@ Satirical or vulgar short pieces where contempt is conveyed through sarcastic_co
 
 **Discovery article:** AV Club "Instagram about to start letting internet randos 'remix' your photos with AI" (Jul 8, 2026) — VADER scored +0.99 (compound). Raw composite +0.65. 3 sarcastic_correction devices: "'Oh fuck yeah,' nobody said," "we're sure some of these graphics are going to get extremely," "Thanks for making everything suck more, buds!" EI = 1.0 (14 emotional terms including profanity). Agency = +0.33 (positive — Meta is doing things). Corrected: −0.48.
 
+#### Path L: Quote-Inflated Body with Negative Headline
+
+Short editorial pieces where VADER scores the body positive because embedded quotes (corporate blog posts, PR statements, formal union statements) dominate the lexical signal, but the headline and editorial framing clearly position the article as critical. The headline VADER is strongly negative while the body VADER is positive — a divergence that signals editorial framing is doing work that VADER's sentence-level polarity misses.
+
+**Trigger conditions (all must be met):**
+1. raw_tone ≥ 0.3 (VADER inflated positive)
+2. headline_body_alignment ≤ -0.5 (strong headline-body divergence)
+3. adversarial_count ≥ 4 (substantial adversarial framing density)
+4. ≥ 3 distinct adversarial device types (breadth of adversarial framing)
+
+**Blend formula:** Corrects toward mild negative range (-0.05 to -0.50), using adversarial density and headline-body divergence to calibrate severity.
+
+**Key distinction from Path A (adversarial density):** Path A requires adversarial count ≥ 6 and a positive agency signal. Path L fires at a lower adversarial threshold (≥ 4) but requires strong headline-body divergence as compensating evidence.
+
+**Discovery article:** Gizmodo "The Public Got So Mad at Meta's New AI Photo Tool That It's Scrapped Already" (Jul 11, 2026) — VADER raw +0.63 due to embedded SAG-AFTRA statement and Meta blog post quotes. Headline VADER strongly negative. 8 framing devices including consent_alarm, policy_reversal ×3, sarcastic_correction, precedent_analogy. Corrected: −0.13.
+
 #### Path G: VADER Long-Text Normalization
 
 Not a framing correction — this fixes a fundamental VADER math problem. VADER's compound score uses `sum / sqrt(sum² + alpha)` where `alpha=15`, tuned for tweet-length texts. For long articles (10+ sentences), this normalization amplifies small biases.
@@ -747,6 +763,7 @@ The paths are evaluated in code order: **A → B → C → E → D → F → H �
 | **I** | Direct consumer critique | ≥ 0.3 | > 0 | ≥5 adversarial + ≥2 consumer devices + ≥0.5 EI | 20/80 (raw/target) |
 | **J** | Expert-driven structural critique | ≥ 0.3 | ≥ 0 | ≥5 adversarial + ≥1 expert_contradiction + ≥2 structural + ≥0.10 EI | 30/70 (raw/target) |
 | **K** | Sarcastic rejection | ≥ 0.3 | any | ≥2 sarcastic_correction + ≥0.7 EI | 10/90 (raw/target) |
+| **L** | Quote-inflated body with negative headline | ≥ 0.3 | any | HBA ≤ −0.5 + ≥3 distinct adversarial device types + ≥4 adversarial | 20/80 (raw/target) |
 
 ### 9.3 Headline Framing Override
 
@@ -984,7 +1001,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **85 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **86 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -1002,7 +1019,7 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 85 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 86 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
@@ -1115,6 +1132,7 @@ The following table documents all 85 entity clusters shipped with MediaScope, or
 | **Cybersecurity/Research** | 11 | Brian Krebs, Krebs, Jane Manchun Wong, Troy Hunt, Bruce Schneier, Schneier (+5 more) |
 | **Privacy Advocacy** | 16 | Foxglove, Privacy International, EFF, Electronic Frontier Foundation, Access Now, Big Brother Watch, Open Rights Group, noyb, CAIDP, Fight for the Future (+6 more) |
 | **Patent/IP Research** | 5 | Patentlyze, PatSnap, Innography, patent application, patent filing |
+| **Entertainment/Talent** | 8 | Creative Artists Agency, CAA, William Morris Endeavor, WME, United Talent Agency, UTA, ICM Partners, Hannah Einbinder |
 
 #### Finance & Markets
 
@@ -1129,7 +1147,7 @@ The following table documents all 85 entity clusters shipped with MediaScope, or
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
-| **Labor/Unions** | 10 | United Tech and Allied Workers, United Tech & Allied Workers, Communication Workers Union, CWU, Alphabet Workers Union, SEIU (+4 more) |
+| **Labor/Unions** | 19 | United Tech and Allied Workers, United Tech & Allied Workers, Communication Workers Union, CWU, Alphabet Workers Union, SEIU, SAG-AFTRA, WGA, DGA, IATSE, Teamsters (+8 more) |
 | **Chinese AI** | 13 | Zhipu, Z.ai, GLM, DeepSeek, Baidu, Alibaba Cloud (+7 more) |
 | **Chinese Tech Platforms** | 10 | Lark, DingTalk, Rednote, Xiaohongshu, WeChat, Weibo (+4 more) |
 | **Australia** | 3 | Australia, Australian government, eSafety Commissioner |
@@ -1361,7 +1379,7 @@ Unlike adversarial investigative journalism (where the *entire* article is edito
 
 When analyzing structural-split articles, compare the **emotional intensity in editorial prose** (outsourced intensity module) with the overall tone score. A low emotional intensity in editorial prose combined with a high overall tone score is a strong signal of the structural-split problem. Report both the composite score and the outsourced intensity breakdown, and flag articles where the editorial-prose emotional intensity diverges from the composite by > 0.3 as "potential structural-split distortion."
 
-#### Future Work: Path L (Structural-Split Correction)
+#### Future Work: Path M (Structural-Split Correction)
 
 A potential correction would segment articles into editorial-prose and block-quoted sections, compute VADER independently on each, and weight the editorial-prose score higher (reflecting the journalist's framing authority). The outsourced intensity module already performs the prose/quote split — extending it with positional weighting (lead paragraphs weighted 2× over tail) could address this failure class. Validation would require at least 5 structural-split articles from distinct publications.
 
@@ -1371,7 +1389,7 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **163 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **164 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1487,7 +1505,7 @@ Articles cluster into 9 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 163 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 164 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|

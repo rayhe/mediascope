@@ -453,7 +453,20 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Communication Workers Union", "CWU",
             "Alphabet Workers Union",
             "SEIU", "AFL-CIO",
+            "SAG-AFTRA", "SAG AFTRA", "Screen Actors Guild",
+            "Writers Guild of America", "WGA",
+            "Directors Guild of America", "DGA",
+            "IATSE", "Teamsters",
             "unionize", "unionization", "labor union",
+        ],
+    },
+    "Entertainment/Talent": {
+        "aliases": [
+            "Creative Artists Agency", "CAA",
+            "William Morris Endeavor", "WME",
+            "United Talent Agency", "UTA",
+            "ICM Partners",
+            "Hannah Einbinder",
         ],
     },
     "TikTok": {

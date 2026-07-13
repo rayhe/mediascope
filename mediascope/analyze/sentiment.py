@@ -1469,6 +1469,20 @@ _ADVERSARIAL_DEVICE_TYPES: set[str] = {
     # 3 sarcastic_correction devices were the primary tone carriers but
     # weren't counted as adversarial, causing the correction to miss.
     "sarcastic_correction",
+    # Consent alarm frames product defaults as consent violations
+    # ("automatically enrolled", "pulled face data by default"),
+    # positioning the company's design choice as inherently harmful.
+    # Adversarial because it invokes privacy/consent frameworks to
+    # condemn the feature rather than simply describing its mechanics.
+    # Discovered in Gizmodo Muse Image scrapped article (Jul 11, 2026).
+    "consent_alarm",
+    # Precedent analogy links the current event to historical patterns
+    # of failure, misconduct, or controversy ("The Ghibli Meme Effect",
+    # "echoes the Microsoft antitrust era"), framing the subject as
+    # repeating a recognized pattern of harmful behavior.
+    # Adversarial because it positions the current event as predictable
+    # failure rather than an isolated incident.
+    "precedent_analogy",
 }
 
 # Anchor device types that create negative reader takeaway even when
@@ -1585,6 +1599,7 @@ def _compute_framing_correction(
     agency: float,
     emotional_intensity: float,
     framing_summary: dict[str, int],
+    headline_body_alignment: float = 0.0,
 ) -> tuple[float, bool]:
     """Compute a framing-aware tone correction.
 
@@ -2021,6 +2036,49 @@ def _compute_framing_correction(
         corrected = max(-0.45, min(0.0, round(corrected, 4)))
         return corrected, True
 
+    # --- Path L: Quote-inflated body with negative headline ---
+    # Short editorial pieces where VADER scores the body positive because
+    # embedded quotes (corporate blog posts, PR statements, formal union
+    # statements) dominate the lexical signal, but the headline + editorial
+    # framing clearly position the article as critical.  The headline VADER
+    # is strongly negative while the body VADER is positive — a divergence
+    # that indicates embedded-quote inflation rather than genuine editorial
+    # positivity.
+    #
+    # Key distinguishing signals:
+    # - Strong headline-body misalignment (< -0.5): headline negative,
+    #   body positive → VADER is reading quotes, not editorial stance
+    # - At least 3 distinct framing device types: editorial variety
+    #   indicates intentional critical framing, not incidental word choice
+    # - Moderate adversarial count (>= 4): enough devices to confirm
+    #   critical stance even in a short article
+    #
+    # Discovered in Gizmodo Muse Image scrapped article (Jul 11, 2026):
+    #   VADER body +0.63, headline -0.8, agency +0.33, adversarial 8.
+    #   Meta's blog post quote ("creative partner that knows your world,
+    #   making it easy to turn your ideas into high-quality visuals")
+    #   inflated VADER; editorial stance is unambiguously critical.
+    _QUOTE_INFLATION_MIN_ADVERSARIAL = 4
+    _QUOTE_INFLATION_MIN_DEVICE_TYPES = 3
+    _QUOTE_INFLATION_MAX_HBA = -0.5
+    distinct_device_types = len([dt for dt, count in framing_summary.items()
+                                 if count > 0 and dt in _ADVERSARIAL_DEVICE_TYPES])
+    if (
+        raw_tone >= 0.3
+        and headline_body_alignment <= _QUOTE_INFLATION_MAX_HBA
+        and adversarial_count >= _QUOTE_INFLATION_MIN_ADVERSARIAL
+        and distinct_device_types >= _QUOTE_INFLATION_MIN_DEVICE_TYPES
+    ):
+        # Correct toward mild negative.  The editorial stance is critical
+        # but not scorched-earth — these are typically news-editorial
+        # pieces, not long investigative takedowns.
+        hba_severity = min(abs(headline_body_alignment), 1.0)
+        target_tone = -(0.10 + 0.20 * hba_severity + 0.10 * emotional_intensity)
+        target_tone = max(-0.50, min(-0.05, target_tone))
+        corrected = 0.20 * raw_tone + 0.80 * target_tone
+        corrected = max(-0.50, min(0.0, round(corrected, 4)))
+        return corrected, True
+
     return raw_tone, False
 
 
@@ -2186,6 +2244,7 @@ def analyze_composite(text: str, headline: str = "") -> SentimentResult:
         agency=agency,
         emotional_intensity=emotional_intensity,
         framing_summary=framing_summary,
+        headline_body_alignment=alignment,
     )
 
     # When framing correction fired, the body's true direction is negative
