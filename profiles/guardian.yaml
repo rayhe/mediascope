@@ -89,9 +89,15 @@ gmg_board:
         BBC UPDATE (Jul 2026): At 6-week mark as BBC DG, Brittin proposed BBC-Channel 4
         partnership talks before MPs on the cross-party media and culture select committee.
         Told MPs Channel 4 looks "very subscale" in global media environment. Proposing Channel
-        4 content on iPlayer while remaining ad-funded. This is significant: a former GMG SID
-        and 18-year Google executive is now actively shaping UK public service media policy,
-        including potential consolidation of the two largest UK public service broadcasters.
+        4 content on iPlayer while remaining ad-funded — a "sovereign streaming platform in
+        the UK." Described the licence fee as "yesterday's model, it's a busted flush, it's
+        no longer fit for purpose." Warned of "real jeopardy" from "a handful of US and Chinese
+        tech players which will dominate the creation and distribution of content." Context:
+        ITV-Comcast acquisition (Sky acquiring ITV's Media & Entertainment business),
+        Paramount-Warner Bros Discovery merger. Channel 4 CEO Priya Dogra more open to
+        collaboration than wholesale merger. Channel 4's BBC green paper submission called for
+        "more joined-up approach" to distribution and AI. BBC proposal goes beyond just video —
+        also exploring opening BBC Sounds to UK third parties.
         Both BBC and Channel 4 are SPUR members or affiliates.
         Source: https://www.thetimes.com/article/bbc-and-channel-4-in-partnership-talks-amid-licence-fee-debate (Jul 9, 2026)
         ANALYTICAL SIGNIFICANCE (UPGRADED): Brittin's role as SID means he had the HIGHEST
@@ -777,11 +783,11 @@ spur_coalition:
   purpose: "Shape 'the rules, standards and infrastructure that enable publishers and AI platforms to do business.' Create shared technical standards, streamline licensing, identify IP protection gaps, promote transparent rights-cleared access."
   telemetry_standard:
     status: "PUBLISHED FOR PUBLIC COMMENT (June 12, 2026)"
-    comment_period: "June 12 – July 10, 2026"
-    revised_versions_due: "August 10, 2026"
+    comment_period: "June 12 – July 24, 2026 (extended from original July 10 deadline)"
+    revised_versions_due: "Post-comment-close revision cycle; original August 10 target may shift with extension"
     public_comment_activity:
-      total_github_issues: 9
-      date_range: "Jun 17 – Jul 3, 2026"
+      total_github_issues: 12
+      date_range: "Jun 17 – Jul 12, 2026"
       key_issues:
         - title: "Provenance gap for third-party-sourced grounding (the scraper-resale supply path)"
           date: "2026-06-17"
@@ -798,19 +804,65 @@ spur_coalition:
         - title: "Proposal: telemetry for advertising and signals-driven content usage"
           date: "2026-06-20"
           topic: "Extending telemetry to cover ad-supported content usage beyond editorial"
+        - title: "Normative evidentiary tiers + scheme-property model on top of content_fingerprint/provenance"
+          date: "2026-06-25"
+          topic: "Follow-up proposal for tiered evidence requirements and fingerprinting (erik-sv, #11)"
+        - title: "Position Content Telemetry as the outcome layer for resource discovery (ARD)"
+          date: "2026-06-26"
+          topic: "Align telemetry with Automated Resource Discovery protocol (jalexspringer, #12 — SPUR's own Alex Springer)"
+        - title: "Clarify inference-only scope: training, fine-tuning, embeddings, and indexes"
+          date: "2026-07-01"
+          topic: "Spec currently covers inference; training-time interactions need clarification (jalexspringer, #13)"
+        - title: "Clarify citation/display semantics for non-chat response surfaces"
+          date: "2026-07-01"
+          topic: "AI agents embedded in non-chat surfaces (widgets, browser plugins) — citation/display model unclear (jalexspringer, #14)"
+        - title: "Counting model left to commercial agreement"
+          date: "2026-07-03"
+          topic: "Business-side: how to count usage for billing purposes (B-Szymbo, #15)"
+        - title: "Content-derived fingerprint fields (content_iscc, excerpt_iscc) for grounding/citation"
+          date: "2026-07-06"
+          topic: "Add optional ISCC-based fingerprint fields for content identity verification (RedHorseMane, #16)"
+        - title: "Promote content_id scheme registration to normative requirement at Citation level"
+          date: "2026-07-06"
+          topic: "Strengthen content_id from SHOULD to MUST at Citation conformance (RedHorseMane, #17)"
+        - title: "Verification profile for grounding/citation open question — publisher-seeded markers + audit ledger"
+          date: "2026-07-10"
+          topic: "Concrete proposal: canary content, sampled audits, no wire-format change (pwright-bf, #18)"
+        - title: "No carrier for computed attribution — standardise fractional attribution report"
+          date: "2026-07-10"
+          topic: "When multiple sources contribute to an answer, no standard way to report fractional attribution (abnerguzman, #19)"
+        - title: "Verification beyond origin — recomputable attribution, tiered evidence disclosure, accredited auditor seats"
+          date: "2026-07-10"
+          topic: "Full verification architecture proposal with third-party audit framework (abnerguzman, #20)"
+        - title: "Entitlement-verification unspecified: license_ref can carry verifiable grant but pieces to check it are deferred"
+          date: "2026-07-12"
+          topic: >
+            MOST SOPHISTICATED ISSUE YET. Separates verification into two orthogonal axes:
+            (a) Was the event true/complete? (canary content, audits target this) vs
+            (b) Was the reporting party entitled/licensed? (license_ref exists but verification
+            mechanism is deferred). Proposes W3C Verifiable Credentials + did:web resolution.
+            Filed by 'Wallace, LicenseFoundry' — an implementer/SDK author. Highlights that
+            a revoked grant is currently byte-indistinguishable from a valid one.
+            (ReadBridge, #22)
       notable_absence: >
         NO PUBLIC COMMENTS from any major AI company (Google, OpenAI, Meta, Anthropic, Microsoft,
-        Amazon) as of Jul 6, 2026 — 4 days before the comment period closes. This absence is
-        analytically significant: either AI companies are engaging through private channels (which
-        undermines the open-standard ethos), or they are ignoring the standard entirely (which
-        suggests it may lack practical adoption pressure). The 9 issues appear to be from
-        technically sophisticated individual commenters and smaller implementers, not from the
-        AI companies whose compliance the standard is designed to require.
+        Amazon) as of Jul 13, 2026 — 11 days before the extended comment period closes. This
+        absence is even MORE analytically significant now that the deadline was extended by 14
+        days (presumably to solicit more industry input): the extension gave AI companies additional
+        time to engage, yet they have not. The 12 issues are from technically sophisticated
+        individual commenters and smaller implementers (LicenseFoundry, RedHorseMane, abnerguzman),
+        not from the AI companies whose compliance the standard is designed to require.
+        NOTE: jalexspringer filed issues #12, #13, #14 — this handle matches SPUR's own
+        technical lead Alex Springer (alex@spurcoalition.org). These are effectively SPUR's
+        own team filing issues on their own standard — clarification requests, not external
+        feedback. Excluding jalexspringer's self-issues, genuine external comment count is 9.
       deadline_note: >
-        Comment period closes July 10, 2026. Revised versions due August 10, 2026. Any late-filed
-        corporate comments from AI companies would be noteworthy — it would suggest either last-
-        minute strategic engagement or an attempt to influence the standard after public scrutiny
-        has passed.
+        Extended comment period closes July 24, 2026. Any late-filed corporate comments from
+        AI companies would be noteworthy — the extension already gave additional runway, so
+        continued silence strengthens the inference of either private engagement or strategic
+        indifference. The verification theme dominates recent issues: 4 of the last 5 issues
+        (#18, #19, #20, #22) directly address the self-reporting verification gap, confirming
+        this is the community's primary concern with the standard.
     spec_version: "0.1 (preview)"
     technical_lead: "Alex Springer (alex@spurcoalition.org)"
     github_standard: "https://github.com/SPUR-Coalition/telemetry"
@@ -890,6 +942,19 @@ spur_coalition:
       structural tension: SPUR advocates collective standards while Brittin's "experiment and
       move now" AI philosophy may favor bilateral deals. Monitor for any BBC AI content licensing
       announcements that bypass the SPUR framework.
+      CHANNEL 4 CONSOLIDATION ANGLE (Jul 2026): Brittin's "sovereign streaming platform"
+      proposal to combine BBC iPlayer + Channel 4 content would create the UK's dominant
+      ad-funded + licence-fee funded streaming entity. If realized, this combined platform's
+      AI content licensing position would be vastly stronger than either broadcaster alone.
+      Channel 4's own BBC green paper response explicitly called for "joined-up approach" to AI.
+      A merged BBC-C4 streaming platform negotiating AI content terms as a bloc — potentially
+      through SPUR — would be the single largest collective content owner in UK public service
+      media. This is a second-order SPUR amplification effect: Brittin moves from GMG board
+      (SPUR founding member) to BBC DG and immediately proposes consolidating public service
+      media, which would concentrate SPUR's negotiating leverage.
+      COMCAST/SKY PARALLEL: Sky acquiring ITV's M&E business creates a UK commercial streaming
+      giant. Brittin's BBC-C4 proposal is the PSB response. Both consolidations strengthen
+      publisher-side bargaining power vs AI platforms — exactly SPUR's strategic objective.
     source_urls:
       - "https://www.youtube.com/watch?v=f5osAEH-rxk"
       - "https://tvbeurope.com/business/why-the-bbc-appointed-a-tech-bro-as-director-general"
@@ -962,6 +1027,46 @@ uk_cma_google_ruling:
     broader content-use terms. The Guardian is navigating three simultaneous Google relationships:
     (1) advertising (programmatic revenue), (2) AI pilot (direct payments for content), (3) CMA
     opt-out rights (regulatory protection). These create both leverage and dependency.
+
+global_publisher_ai_regulatory_developments_jul2026:
+  description: >
+    Cross-cutting regulatory and litigation developments (July 2026) affecting the publisher-AI
+    ecosystem the Guardian operates in. These strengthen the collective publisher position the
+    Guardian advances through SPUR while also reinforcing bilateral licensing leverage.
+  french_antitrust_meta_ruling:
+    date: "2026-07-08"
+    description: >
+      France's competition authority (Autorité de la concurrence) ordered Meta Platforms to
+      put forward a payment plan and resume talks with French media groups DVP (Le Monde,
+      Les Echos) and APIG within 15 days. The authority found Meta likely abused its dominant
+      position by imposing its own fee-calculation method while refusing to provide information
+      needed for publishers to evaluate remuneration. Meta said it disagreed but would engage.
+      GUARDIAN RELEVANCE: This is the first regulatory ORDER forcing a tech platform to pay
+      publishers for content reuse — distinct from the CMA's opt-out approach (which gives
+      publishers the choice to withdraw, not the right to be paid). Combined with the CMA
+      ruling (UK, June 2), this creates a two-jurisdiction enforcement pincer: UK gives
+      publishers exit rights, France mandates payment negotiations. The Guardian benefits from
+      both as a SPUR founding member, though its own bilateral deals (OpenAI, Google pilot)
+      operate outside these regulatory frameworks.
+    source_url: "https://reuters.com/technology/french-antitrust-orders-meta-resume-talks-media-groups-over-publishing-fees-2026-07-08/"
+  nyt_openai_sanctions_motion:
+    date: "2026-07-09"
+    description: >
+      NYT-led plaintiff group (including NY Daily News) filed motion asking court to sanction
+      OpenAI for alleged evidence destruction and concealment. Key allegation: OpenAI told the
+      court it did not have tools to search its datasets and output logs for copyrighted material,
+      but an OpenAI employee later testified the company had "performed multiple searches for
+      News Plaintiffs' content." Lead attorney Ian Crosby: "For over two years, OpenAI lied to
+      The Times." Motion alleges OpenAI was "hiding and destroying evidence showing how ChatGPT
+      was trained on stolen journalism."
+      GUARDIAN RELEVANCE: The Guardian is a co-plaintiff against Cohere (a $5.5B Canadian AI
+      startup), not OpenAI. But the NYT sanctions motion sets significant precedent: if courts
+      sanction OpenAI for evidence destruction, it establishes that AI companies have discovery
+      obligations on training data provenance — which strengthens the case in ALL publisher-AI
+      lawsuits, including the Guardian's Cohere case. Also validates the SPUR telemetry
+      standard's core premise: AI companies' self-reporting on content usage cannot be trusted
+      without independent verification mechanisms.
+    source_url: "https://reuters.com/legal/nyt-led-group-asks-court-sanction-openai-us-copyright-dispute-2026-07-09/"
 
 cloudflare_publisher_infrastructure:
   description: >
