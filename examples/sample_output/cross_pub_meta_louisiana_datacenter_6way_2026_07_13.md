@@ -1,9 +1,9 @@
 # Same-Event Comparison: Meta Hyperion Louisiana Data Center $50B Expansion (July 13, 2026)
-## WSJ vs Fox Business vs Barron's vs IBD vs MarketWatch
+## WSJ vs Fox Business vs Barron's vs IBD vs MarketWatch vs Washington Examiner
 
 **Event:** Meta announces expansion of its Hyperion data center in Richland Parish, Louisiana, from 2 GW to 5 GW of compute capacity, increasing the total investment from $27 billion to over $50 billion.
 
-**Date:** July 13, 2026 (all five articles published same day)
+**Date:** July 13, 2026 (all six articles published same day)
 
 **Articles compared:**
 1. **WSJ** — "Meta Lifts Cost of Louisiana Data Center to $50 Billion" (news report)
@@ -11,8 +11,9 @@
 3. **Barron's** — "Meta Spends $50 Billion More on AI. Is That a Good Thing?" / "Meta AI Splurge Continues and J.P. Morgan Is Worried for the Stock" (investor analysis)
 4. **IBD** — "AI Costs Keep Rising As Morgan Stanley Ups CapEx Estimates For Amazon, Meta" (analyst note relay)
 5. **MarketWatch** — "Meta and Amazon are leading a trillion-dollar Big Tech spending spree" (analyst note relay)
+6. **Washington Examiner** — "Meta reaches $50 billion investment in 10 million-square-foot Louisiana data center" (news report)
 
-**Note:** Barron's and IBD/MarketWatch represent different editorial angles on the same event. Barron's integrates the J.P. Morgan (Neutral) view with the datacenter news. IBD and MarketWatch both relay the Morgan Stanley (Overweight) view with the datacenter as supporting evidence. This analyst-vs-analyst framing creates an unintentional bull/bear structuring across the coverage cluster.
+**Note:** Barron's and IBD/MarketWatch represent different editorial angles on the same event. Barron's integrates the J.P. Morgan (Neutral) view with the datacenter news. IBD and MarketWatch both relay the Morgan Stanley (Overweight) view with the datacenter as supporting evidence. This analyst-vs-analyst framing creates an unintentional bull/bear structuring across the coverage cluster. The Washington Examiner adds a distinctly patriotic/economic-development frame not present in any of the other five articles.
 
 ---
 
@@ -26,7 +27,9 @@
 | **MarketWatch** | "Meta and Amazon are leading a trillion-dollar Big Tech spending spree" | `overbuilding_narrative` — "spending spree" | **Negative** — spending framed as excessive/uncontrolled |
 | **Barron's** | "Meta Spends $50 Billion More on AI. Is That a Good Thing?" | `pathologizing_metaphor` — "Splurge" (subhead) + rhetorical doubt | **Most Negative** — questions whether spending is wise, invokes J.P. Morgan skepticism |
 
-**Analysis:** The headline spectrum runs from Fox Business (pure uplift) through WSJ (factual) through IBD (cautious) to MarketWatch ("spending spree") and Barron's ("Is That a Good Thing?"). The same set of facts — Meta will spend $50B on a 5 GW datacenter — is framed five different ways, revealing each outlet's default editorial posture on Big Tech infrastructure spending.
+**Washington Examiner placement:** Between Fox Business and WSJ on the positive-neutral spectrum. Headline "Meta reaches $50 billion investment in 10 million-square-foot Louisiana data center" is factual but uses patriotic sovereignty framing ("America's future," "compete and lead globally") throughout the body text. It shares Fox Business's community uplift lens but adds a nationalist dimension absent from all other outlets.
+
+**Analysis:** The headline spectrum runs from Fox Business (pure uplift) through Washington Examiner (patriotic uplift) through WSJ (factual) through IBD (cautious) to MarketWatch ("spending spree") and Barron's ("Is That a Good Thing?"). The same set of facts — Meta will spend $50B on a 5 GW datacenter — is framed six different ways, revealing each outlet's default editorial posture on Big Tech infrastructure spending.
 
 **Key distinction:** The three news outlets (Fox Business, WSJ, Reuters) lead with the *event*. The two financial-audience outlets (IBD, MarketWatch) lead with the *analyst interpretation* of the event. Barron's bridges both, integrating the event with a specific analyst's skepticism.
 

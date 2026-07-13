@@ -1,5 +1,61 @@
 # MediaScope Iteration Log
 
+## 2026-07-13 13:00 PT — Type D: Toolkit Quality & Documentation (MarketWatch example, 5-way cross-pub comparison, ARCHITECTURE.md)
+
+**Commit:** `f124f1f` — "Type D: MarketWatch annotated example, 5-way cross-pub comparison (Louisiana datacenter), ARCHITECTURE.md improvements"
+
+### Focus Areas
+
+#### 1. New Annotated Article: MarketWatch "Trillion-Dollar Spending Spree" (Jul 13, 2026)
+
+Full analysis added: `examples/sample_output/marketwatch_meta_amazon_trillion_dollar_spree_2026_07_13_analysis.md`
+
+- **Article:** Morgan Stanley analyst Brian Nowak raises capex forecasts; combined $1.2T (2027) / $1.4T (2028) for 5 hyperscalers
+- **Entity detection:** 6/6 entities correctly detected (Meta, Amazon, Alphabet, Microsoft, SpaceX, Morgan Stanley). No false positives.
+- **Framing analysis:** 9 devices detected — 7× scale_magnitude (magnitude-saturated), 1× overbuilding_narrative ("spending spree"), 1× escalation_amplification ("increasing social and political backlash"), 1× analyst_authority
+- **Gaps identified:** "scramble" (urgency/desperation verb) not in loaded_language; "greatest capital misallocation in history" in cross-linked callout is editorial_cross_promotion candidate
+- **Source diversity:** Single-source article (Brian Nowak only), identical structure to IBD's relay of the same note
+
+#### 2. New Cross-Publication Comparison: 5-Way Louisiana Datacenter Analysis
+
+Full comparison: `examples/sample_output/cross_pub_meta_louisiana_datacenter_5way_2026_07_13.md`
+
+Compared WSJ, Fox Business, Barron's, IBD, and MarketWatch coverage of the same Meta Hyperion $50B expansion announcement.
+
+**Key finding: Genre predicts framing more reliably than publication identity.**
+- News-genre articles (Fox Business, WSJ) both include community impact voices (Sheldon Jones, teacher bonuses)
+- Investor-genre articles (Barron's, IBD, MarketWatch) all omit community voices and lead with analyst framing
+- The genre boundary creates a predictable framing bifurcation that cuts across publication identity
+
+**Selective omission gradient:** Fox Business → Barron's/IBD/MarketWatch → WSJ
+- Fox Business: 0 critical framing devices, maximum omission of opposition context
+- WSJ: 3 critical devices (escalation_amplification, regulatory_shadow, loaded_language), most balanced
+- Barron's: 2 critical devices (pathologizing_metaphor, competitive_deficit), most skeptical
+- All 5 articles are single-source (total: 3 distinct human sources across 5 articles)
+
+**Implication:** Asymmetry scoring should control for genre. Apparent publication-level asymmetry may actually reflect genre-mix differences.
+
+#### 3. ARCHITECTURE.md Improvements
+
+Two new open research questions added to Known Limitations:
+
+1. **Genre as Confounding Variable:** Documents the finding from the 5-way comparison with evidence and proposes minimum genre categories (news_report, investor_analysis, opinion_editorial, investigative, service_journalism) for within-genre asymmetry calculations
+2. **Competitor Sentiment Augmentation (requested Jul 12):** Documents the gap where favorable competitor mentions within target articles don't register as implicit negative signals for the target entity
+
+#### 4. Annotated Article Count Updated
+
+Updated 171→172 across README.md, ARCHITECTURE.md, METHODOLOGY.md, QUALITY_STANDARDS.md. Verified via `python3 scripts/count_stats.py --check` (✅ all stats current).
+
+### Test Results
+- 2,437 tests passing across 108 files (confirmed twice, no regressions)
+
+### Stats after commit
+- 172 annotated articles (was 171)
+- 6 cross-publication comparisons (was 5)
+- 2,437 tests, 108 files
+
+---
+
 ## 2026-07-13 12:00 PT — Type C: Ownership & Funding Deep Dive (Guardian — SPUR Telemetry, BBC-Channel 4, Int'l Regulatory)
 
 **Commit:** `0a886e4` — "Type C: Guardian profile — SPUR telemetry comment period extended (Jul 24), 12 GitHub issues, BBC-Channel 4 sovereign streaming, French antitrust Meta ruling, NYT-OpenAI sanctions (Jul 13)"
@@ -21270,3 +21326,47 @@ Barron's is the only outlet to use pathologizing language ("splurge") for the sa
 - Framing device types: 101 (unchanged)
 - Compiled patterns: 596 (+1)
 - Tests: 2,392 (106 files, +19 tests, +1 file)
+
+## Type A — Washington Examiner: Meta Louisiana $50B Data Center (2026-07-13 14:00 PT)
+
+### Article
+- **Washington Examiner:** "Meta reaches $50 billion investment in 10 million-square-foot Louisiana data center" (Jul 13, 2026)
+- Full text: `examples/sample_output/washexaminer_meta_louisiana_datacenter_50b_2026_07_13_article.txt`
+- Full analysis: `examples/sample_output/washexaminer_meta_louisiana_datacenter_50b_2026_07_13_analysis.md`
+
+### Toolkit Improvements
+
+1. **scale_magnitude — physical-unit patterns (3 new patterns):**
+   - `N million/billion + physical unit noun` (million-square-foot, billion gallons, etc.) with plural support
+   - `Spelled-out number + infrastructure unit` (five-gigawatt, twenty-megawatt)
+   - `Analogical energy comparison` ("as much energy as New York City")
+   - `Enough to power/supply N homes/people` construction
+
+2. **sovereignty_framing — American patriotic patterns (3 new patterns):**
+   - `America's/our nation's + future/leadership/competitiveness`
+   - `helping/positioning the nation to compete/lead`
+   - `at the center/forefront of [country/AI]'s future`
+
+3. **anonymous_authority — singular person fix (1 pattern updated):**
+   - Added "familiar with" to the `(?:one|a) person (?:involved in|close to|...)` alternatives
+   - "A person familiar with Meta's investment plans told Bloomberg" now detected
+
+4. **Source extraction — corporate title stop-words (1 fix):**
+   - Added Vice, Deputy, Associate, Executive, Managing, Senior, Junior, Chief, Assistant, Acting, Interim, Former, Emeritus to `_NAME_STOP_FIRST_WORDS`
+   - Fixes "Vice President" being mis-parsed as a person name (split Rachel Peterson into two entries)
+
+5. **Cross-publication comparison — 5-way → 6-way:**
+   - Renamed `cross_pub_meta_louisiana_datacenter_5way_2026_07_13.md` → `6way`
+   - Added Washington Examiner as 6th outlet with patriotic sovereignty framing note
+   - Updated ARCHITECTURE.md and MarketWatch analysis cross-references
+
+### Test Results
+- 2,453 passed, 0 failed (all structural consistency tests green)
+- New: `test_washexaminer_meta_louisiana_50b.py` (16 tests)
+
+### Stats After This Iteration
+- Entity aliases: 866 (unchanged)
+- Annotated articles: 173 (+1)
+- Framing device types: 101 (unchanged)
+- Compiled patterns: 666 (+7)
+- Tests: 2,453 (109 files, +16 tests, +1 file)

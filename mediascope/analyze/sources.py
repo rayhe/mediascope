@@ -234,6 +234,14 @@ _NAME_STOP_FIRST_WORDS: set[str] = {
     # "New" prevents "New Jersey" / "New Mexico" / "New Zealand" from
     # having "New" extracted as a source first-word.
     "New",
+    # Corporate title words — "Vice President said" should not parse "Vice"
+    # as a first name.  Discovered in Washington Examiner Meta Louisiana
+    # data center article (Jul 13, 2026): "Meta Vice President of Data
+    # Centers Rachel Peterson said" → Pattern 0c mis-parsed "Vice President"
+    # as a person name with affiliation "Data Centers Rachel Peterson".
+    "Vice", "Deputy", "Associate", "Executive", "Managing",
+    "Senior", "Junior", "Chief", "Assistant", "Acting",
+    "Interim", "Former", "Emeritus",
 }
 
 # Publication / organization partial names that look like "First Last"

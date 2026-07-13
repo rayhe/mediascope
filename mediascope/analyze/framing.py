@@ -84,10 +84,14 @@ _ANONYMOUS_AUTHORITY_PATTERNS: list[re.Pattern] = [
         r"(?:said|told|confirmed|added|indicated)\b",
         re.IGNORECASE,
     ),
-    # "one/a person involved in / close to" — person described by proximity
+    # "one/a person involved in / close to / familiar with" — person
+    # described by proximity or knowledge.  "familiar with" added after
+    # Washington Examiner Meta Louisiana article (Jul 13 2026): "A person
+    # familiar with Meta's investment plans told Bloomberg" was missed
+    # because the plural pattern on line 69 only handles "people familiar".
     re.compile(
         r"\b(?:one|a) person (?:involved in|close to|inside|with the|within the|"
-        r"privy to|briefed on|engaged in)\b",
+        r"privy to|briefed on|engaged in|familiar with)\b",
         re.IGNORECASE,
     ),
     # "one/a senior [party/adjective]? [title]" — unnamed political/industry
@@ -2233,6 +2237,39 @@ _SOVEREIGNTY_FRAMING_PATTERNS: list[re.Pattern] = [
         r"(?:the UK|Britain|us|America|this (?:government|country))\b",
         re.IGNORECASE,
     ),
+    # ---------------------------------------------------------------------------
+    # American patriotic sovereignty: "America's future", "our nation to
+    # compete", "positioning [entity] at the center of [country]'s future",
+    # "compete and lead globally".  Common in US corporate/political
+    # statements about infrastructure investment.
+    # Discovered via Washington Examiner Meta Louisiana data center article
+    # (Jul 13, 2026): "AI infrastructure that will power the future" and
+    # "helping the nation compete and lead globally" both import patriotic
+    # sovereignty framing but used American-specific language the UK/EU-
+    # weighted patterns missed.
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b(?:America'?s|our (?:country|nation)'?s|this nation'?s)\s+"
+        r"(?:future|leadership|competitiveness|prosperity|strength|"
+        r"security|standing|position|edge|advantage)\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:help(?:ing)?|ensur(?:e|ing)|position(?:ing)?|keep(?:ing)?|"
+        r"mak(?:e|ing)|build(?:ing)?|secur(?:e|ing)|power(?:ing)?)\s+"
+        r"(?:the\s+)?(?:nation|America|our country|this country|the country|"
+        r"the United States|the U\.?S\.?)\s+"
+        r"(?:to\s+)?(?:compete|lead|win|succeed|dominate|prosper)\b",
+        re.IGNORECASE,
+    ),
+    # "at the center/forefront/heart of [country/AI/tech]'s future"
+    re.compile(
+        r"\bat the (?:center|forefront|heart|cutting edge|leading edge)\s+of\s+"
+        r"(?:America'?s|the nation'?s|our|the country'?s|"
+        r"AI'?s?|technology'?s?|the world'?s)\s+"
+        r"(?:future|revolution|transformation|economy|growth)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["sovereignty_framing"] = _SOVEREIGNTY_FRAMING_PATTERNS
@@ -2666,6 +2703,48 @@ _SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
         r"(?:monthly\s+active\s+|daily\s+active\s+|registered\s+)?"
         r"(?:users?|subscribers?|accounts?|members?|people|downloads?|"
         r"sign[- ]?ups?|MAU|DAU)",
+        re.IGNORECASE,
+    ),
+    # ---------------------------------------------------------------------------
+    # Physical-unit scale magnitude: "10 million-square-foot", "five-gigawatt",
+    # "4 million homes" — non-dollar quantities at infrastructure scale.
+    # Discovered via Washington Examiner Meta Louisiana data center article
+    # (Jul 13 2026): "10 million-square-foot" and "five-gigawatt" both convey
+    # massive scale but were undetected because all existing patterns required
+    # dollar amounts, multipliers, or user milestones.
+    # ---------------------------------------------------------------------------
+    # N million/billion + physical unit noun (hyphenated or space-separated)
+    re.compile(
+        r"\b\d[\d,.]*\s*(?:million|billion)[\s-]+"
+        r"(?:square[\s-]?(?:foot|feet|meters?)|"
+        r"acres?|hectares?|watts?|kilowatts?|megawatts?|gigawatts?|terawatts?|"
+        r"tons?|tonnes?|gallons?|liters?|litres?|barrels?|"
+        r"homes?|houses?|households?|residents?|"
+        r"miles?|kilometers?|kilometres?)\b",
+        re.IGNORECASE,
+    ),
+    # Spelled-out number + unit at infrastructure scale (e.g. "five-gigawatt")
+    re.compile(
+        r"\b(?:two|three|four|five|six|seven|eight|nine|ten|"
+        r"twenty|thirty|forty|fifty|hundred)[\s-]+"
+        r"(?:gigawatt|megawatt|terawatt|kilowatt|"
+        r"megabyte|gigabyte|terabyte|petabyte|exabyte)\b",
+        re.IGNORECASE,
+    ),
+    # Analogical comparison: "as much energy as [city/state/country]"
+    re.compile(
+        r"\bas much (?:energy|power|electricity|water|capacity|bandwidth)\s+"
+        r"as\s+(?:a\s+)?(?:New York|Los Angeles|London|Paris|Tokyo|"
+        r"the (?:entire\s+)?(?:state|city|country|nation|continent)|"
+        r"[A-Z][a-z]+(?: [A-Z][a-z]+)?)\b",
+        re.IGNORECASE,
+    ),
+    # "enough to power/serve/supply N million/billion homes/people"
+    re.compile(
+        r"\benough to (?:power|supply|serve|support|fuel|light|heat|cool)\s+"
+        r"(?:up to\s+)?(?:about\s+|approximately\s+|roughly\s+|nearly\s+|more than\s+|over\s+)?"
+        r"\d[\d,.]*\s*(?:million|billion)?\s*"
+        r"(?:homes?|households?|people|residents?|families|businesses|cities|towns)\b",
         re.IGNORECASE,
     ),
 ]

@@ -117,4 +117,4 @@ This article + the IBD article both relay the same Morgan Stanley note. Key diff
 - **Cross-linked adversarial content:** MarketWatch's "Also read" link imports external adversarial framing; IBD has no cross-linked content
 - **Stock data:** IBD includes stock performance metrics (standard for IBD); MarketWatch does not
 
-See `cross_pub_meta_louisiana_datacenter_5way_2026_07_13.md` for the full same-event comparison across 5 outlets.
+See `cross_pub_meta_louisiana_datacenter_6way_2026_07_13.md` for the full same-event comparison across 6 outlets.

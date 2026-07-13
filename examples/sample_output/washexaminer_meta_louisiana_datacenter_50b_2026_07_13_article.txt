@@ -1,0 +1,37 @@
+Meta reaches $50 billion investment in 10 million-square-foot Louisiana data center
+
+Meta announced Monday that its Louisiana data center investment has grown from $10 billion to $50 billion and that it expects to generate substantial local tax revenues as it pursues artificial superintelligence.
+
+The Richland Parish Data Center, nicknamed "Hyperion," will be a nearly 10 million-square-foot, five-gigawatt facility, equivalent to a power plant capable of supplying enough electricity to power roughly 4 million average U.S. homes simultaneously. Altogether, that is about as much energy as New York City uses on a winter day.
+
+"We're delivering real economic impact alongside the AI infrastructure that will power the future," Meta Vice President of Data Centers Rachel Peterson said in a statement.
+
+Total spending, though, may be far higher than the announced $50 billion total. A person familiar with Meta's investment plans told Bloomberg that the project is now estimated to cost $250 billion.
+
+Because Meta is paying the full cost of the infrastructure needed to support its data center during the 20-year term of its service agreement, the company said customers will be protected from any utility rate increases that could otherwise result from the project's massive power needs.
+
+"Meta's presence drives down rates for other customers by covering a sizable portion of Entergy's costs to serve, strengthens our grid and helps ensure bills are lower than they otherwise would have been without this transformative project," Entergy Louisiana President and CEO Phillip May said in a statement.
+
+States are competing to attract massive AI projects, such as Hyperion, because they bring thousands of local jobs, tax revenue, and funding for public infrastructure. The tech giant has already contracted more than $1.6 billion with local Louisiana businesses.
+
+Hyperion is "already seeing life-changing returns for teachers, local businesses, and students," Meta posted on X.
+
+Gov. Jeff Landry (R-LA) approved a 20-year sales tax exemption in 2024 for data centers built before July 2029, as long as they create at least 50 jobs and $200 million in capital investment in the state.
+
+Meta's data center meets the state requirements, as it will support 7,500 construction jobs, 1,000 operational jobs, and generate significant investments in local infrastructure and community services.
+
+"This commitment from Meta puts Louisiana at the center of America's future in artificial intelligence, positioning our nation to compete and lead globally," Landry said in a statement. "In just two years, we've secured more than $150 billion in new investment by creating an environment where companies can move quickly and build at scale."
+
+Meta will also contribute $215 million to Entergy's The Power to Care low-income bill assistance and energy efficiency programs, while committing to fund up to 2.5 gigawatts of clean, renewable energy over the 20-year agreement.
+
+The company did not respond to a request for comment.
+
+Meta is investing heavily in AI. Just last week, the company announced the release of two major AI models, positioning it for its best week on the stock market since 2024, according to CNBC.
+
+Still, CEO Mark Zuckerberg recently said the Agentic AI tech is progressing more slowly than expected, according to Reuters.
+
+Some consumer and environmental watchdogs have advocated against the expansion of data centers, claiming that the projects strain water supplies and increase pollution. The Hyperion project has met opposition from the Alliance for Affordable Energy, which has argued it will raise utility bills.
+
+Source: Washington Examiner, July 13, 2026
+Author: Not credited in fetched text
+URL: https://www.washingtonexaminer.com/policy/technology/4646247/meta-50-billion-investment-louisiana-data-center/
