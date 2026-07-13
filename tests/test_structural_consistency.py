@@ -1597,10 +1597,10 @@ class TestAgentGuideConsistency:
 
 
 class TestCorrectionPathDocumentation:
-    """Validate that all 11 sentiment correction paths (A-K) are documented
+    """Validate that all 12 sentiment correction paths (A-L) are documented
     across METHODOLOGY.md, ARCHITECTURE.md, and AGENT_GUIDE.md.
 
-    The 10 paths are defined in ``_compute_framing_correction`` (Paths A-F, H, I, J)
+    The 12 paths are defined in ``_compute_framing_correction`` (Paths A-F, H-L)
     and ``analyze_composite`` (Path G) in sentiment.py.  Each path has a
     ``# --- Path X: ...`` comment in code.  These tests ensure documentation
     stays in sync with code when paths are added, removed, or renamed.
@@ -1618,7 +1618,7 @@ class TestCorrectionPathDocumentation:
         return set(re.findall(r"#\s*---\s*Path\s+([A-Z]):", code))
 
     def test_code_has_all_expected_paths(self):
-        """sentiment.py should have comment markers for all 10 paths."""
+        """sentiment.py should have comment markers for all 12 paths."""
         code_paths = self._extract_code_paths()
         missing = self.EXPECTED_PATHS - code_paths
         assert not missing, (
@@ -1627,7 +1627,7 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_methodology_documents_all_paths(self):
-        """METHODOLOGY.md section 9.2 should document all 10 correction paths."""
+        """METHODOLOGY.md section 9.2 should document all 12 correction paths."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
         # Each path should appear as "#### Path X:" or "Path X" in text
         documented = set(re.findall(r"(?:####\s+)?Path\s+([A-L])[\s:.]", doc))
@@ -1638,7 +1638,7 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_architecture_documents_all_paths(self):
-        """ARCHITECTURE.md should reference all 10 correction paths."""
+        """ARCHITECTURE.md should reference all 12 correction paths."""
         doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
         documented = set(re.findall(r"Path\s+([A-L])[\s:.\|]", doc))
         missing = self.EXPECTED_PATHS - documented
@@ -1648,7 +1648,7 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_agent_guide_documents_all_paths(self):
-        """AGENT_GUIDE.md should reference all 10 correction paths."""
+        """AGENT_GUIDE.md should reference all 12 correction paths."""
         doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
         documented = set(re.findall(r"Path\s+([A-L])[\s:.\|]", doc))
         # Also check for "**G**" table format
@@ -1661,7 +1661,7 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_summary_table_in_methodology(self):
-        """METHODOLOGY.md should have a summary table with all 10 paths."""
+        """METHODOLOGY.md should have a summary table with all 12 paths."""
         doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
         # Find the summary table by looking for "| **A**" through "| **G**"
         table_paths = set(re.findall(r"\|\s*\*\*([A-L])\*\*\s*\|", doc))
@@ -1672,13 +1672,110 @@ class TestCorrectionPathDocumentation:
         )
 
     def test_path_count_consistent(self):
-        """Code path count should match expected count of 10."""
+        """Code path count should match expected count of 12."""
         code_paths = self._extract_code_paths()
         assert len(code_paths) == len(self.EXPECTED_PATHS), (
             f"Expected {len(self.EXPECTED_PATHS)} correction paths but "
             f"code has {len(code_paths)}: {sorted(code_paths)}. "
             f"If a path was added or removed, update EXPECTED_PATHS and "
             f"all three documentation files."
+        )
+
+    def _path_range_label(self) -> str:
+        """Return the expected path range label, e.g. 'A–L'."""
+        sorted_paths = sorted(self.EXPECTED_PATHS)
+        return f"{sorted_paths[0]}–{sorted_paths[-1]}"
+
+    def test_architecture_intro_path_count(self):
+        """ARCHITECTURE.md intro text must state correct path count and range."""
+        doc = (_REPO_ROOT / "docs" / "ARCHITECTURE.md").read_text()
+        expected_count = len(self.EXPECTED_PATHS)
+        label = self._path_range_label()
+        pattern = re.compile(
+            rf"\*\*(\d+)\s+distinct\s+paths\s+\(([A-Z])–([A-Z])\)\*\*"
+        )
+        match = pattern.search(doc)
+        assert match, (
+            f"ARCHITECTURE.md should contain '**N distinct paths (X–Y)**' "
+            f"intro text for the correction pipeline."
+        )
+        claimed_count = int(match.group(1))
+        claimed_range = f"{match.group(2)}–{match.group(3)}"
+        assert claimed_count == expected_count, (
+            f"ARCHITECTURE.md intro says {claimed_count} distinct paths "
+            f"but code has {expected_count}. Update the intro text."
+        )
+        assert claimed_range == label, (
+            f"ARCHITECTURE.md intro says paths ({claimed_range}) "
+            f"but expected ({label}). Update the intro text."
+        )
+
+    def test_agent_guide_intro_path_count(self):
+        """AGENT_GUIDE.md intro text must state correct path count and range."""
+        doc = (_REPO_ROOT / "docs" / "AGENT_GUIDE.md").read_text()
+        expected_count = len(self.EXPECTED_PATHS)
+        label = self._path_range_label()
+        pattern = re.compile(
+            rf"(\d+)\s+paths?\s+\(([A-Z])–([A-Z])\)"
+        )
+        match = pattern.search(doc)
+        assert match, (
+            f"AGENT_GUIDE.md should contain 'N paths (X–Y)' "
+            f"intro text for the correction pipeline."
+        )
+        claimed_count = int(match.group(1))
+        claimed_range = f"{match.group(2)}–{match.group(3)}"
+        assert claimed_count == expected_count, (
+            f"AGENT_GUIDE.md intro says {claimed_count} paths "
+            f"but code has {expected_count}. Update the intro text."
+        )
+        assert claimed_range == label, (
+            f"AGENT_GUIDE.md intro says paths ({claimed_range}) "
+            f"but expected ({label}). Update the intro text."
+        )
+
+    def test_methodology_intro_path_count(self):
+        """METHODOLOGY.md intro text must state correct path count and range."""
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        expected_count = len(self.EXPECTED_PATHS)
+        label = self._path_range_label()
+        # Match "**12 distinct correction paths (A–L)" in the intro
+        pattern = re.compile(
+            rf"\*\*(\d+)\s+distinct\s+correction\s+paths\s+\(([A-Z])–([A-Z])\)"
+        )
+        match = pattern.search(doc)
+        assert match, (
+            f"METHODOLOGY.md should contain '**N distinct correction paths (X–Y)' "
+            f"intro text."
+        )
+        claimed_count = int(match.group(1))
+        claimed_range = f"{match.group(2)}–{match.group(3)}"
+        assert claimed_count == expected_count, (
+            f"METHODOLOGY.md intro says {claimed_count} distinct correction paths "
+            f"but code has {expected_count}. Update the intro text."
+        )
+        assert claimed_range == label, (
+            f"METHODOLOGY.md intro says paths ({claimed_range}) "
+            f"but expected ({label}). Update the intro text."
+        )
+
+    def test_methodology_financial_ref_path_range(self):
+        """METHODOLOGY.md financial inflation ref must use current path range."""
+        doc = (_REPO_ROOT / "docs" / "METHODOLOGY.md").read_text()
+        label = self._path_range_label()
+        # Check the "existing correction paths (A–L)" reference in §16
+        pattern = re.compile(
+            r"existing correction paths \(([A-Z])–([A-Z])\)"
+        )
+        match = pattern.search(doc)
+        assert match, (
+            "METHODOLOGY.md should reference 'existing correction paths (X–Y)' "
+            "in the financial inflation section."
+        )
+        claimed_range = f"{match.group(1)}–{match.group(2)}"
+        assert claimed_range == label, (
+            f"METHODOLOGY.md financial ref says paths ({claimed_range}) "
+            f"but expected ({label}). Update the reference."
         )
 
     def test_readme_correction_path_count(self):

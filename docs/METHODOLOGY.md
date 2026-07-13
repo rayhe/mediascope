@@ -510,7 +510,7 @@ This is not a VADER bug; it is a fundamental limitation of lexical sentiment ana
 
 ### 9.2 Correction Pipeline
 
-MediaScope implements **11 distinct correction paths (A–K), each addressing a specific VADER/TextBlob failure mode discovered through real article analysis. The paths are evaluated in priority order; the first match fires and returns the corrected score.
+MediaScope implements **12 distinct correction paths (A–L), each addressing a specific VADER/TextBlob failure mode discovered through real article analysis. The paths are evaluated in priority order; the first match fires and returns the corrected score.
 
 > **Quick Reference:** For a scannable lookup card with trigger conditions, blend formulas, validation articles, and a path selection flowchart, see [SENTIMENT_CORRECTION_REFERENCE.md](SENTIMENT_CORRECTION_REFERENCE.md).
 
@@ -812,7 +812,7 @@ When evaluating articles from target publications, MediaScope applies a quality 
 ### Known Biases in the Tool Itself
 - Keyword-based entity detection may miss oblique references
 - Sentiment models have known biases toward certain writing styles (see §16 for the financial journalism inflation class specifically)
-- **VADER financial journalism inflation (0.3–0.5 points):** Investment recommendation articles, analyst-debate formats, and financial opinion pieces systematically inflate VADER compound scores by 0.3–0.5 points due to boosterism vocabulary ("strong buy," "upside potential," "cash cow"), financial reassurance language ("fears ease," "soothe concerns"), and corporate PR quotes containing forward-looking positive language. None of the existing correction paths (A–K) fire on these articles because they typically lack the negative agency signal (< −0.3) that most paths require. See §16 for the full analysis and interim workarounds.
+- **VADER financial journalism inflation (0.3–0.5 points):** Investment recommendation articles, analyst-debate formats, and financial opinion pieces systematically inflate VADER compound scores by 0.3–0.5 points due to boosterism vocabulary ("strong buy," "upside potential," "cash cow"), financial reassurance language ("fears ease," "soothe concerns"), and corporate PR quotes containing forward-looking positive language. None of the existing correction paths (A–L) fire on these articles because they typically lack the negative agency signal (< −0.3) that most paths require. See §16 for the full analysis and interim workarounds.
 - **Topic classification density normalization (RESOLVED):** Short texts (< 500 words) previously received inflated topic confidence scores because keyword density (matches per 100 words) is naturally higher when text is shorter. Fixed by applying a length-aware dampening factor: `density *= min(word_count / 500, 1.0)`. This scales density linearly below 500 words (the lower bound of a standard article) while leaving full-length articles unaffected. The fix dampens multi-topic inflation in blurbs, summaries, and headlines without breaking topic detection — 4 regression tests guard the behavior. See `topics.py` §3.1 comments.
 - English-language only in current version
 - RSS feeds may not capture all articles (paywalled content, newsletters)
@@ -1284,7 +1284,7 @@ Meanwhile, the bullish quotes pack VADER-positive words: "rational," "significan
 
 ### 16.3 Why Existing Correction Paths Don't Fire
 
-The eleven correction paths (§9.2, Paths A–K) were designed for editorial and investigative journalism. They require specific combinations of:
+The twelve correction paths (§9.2, Paths A–L) were designed for editorial and investigative journalism. They require specific combinations of:
 
 | Signal | Typical in Investigative | Typical in Financial |
 |---|---|---|
