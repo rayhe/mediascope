@@ -1,0 +1,23 @@
+# Meta AI Splurge Continues and J.P. Morgan Is Worried for the Stock
+
+By Adam Clark
+Published: July 13, 2026
+Source: Barron's (barrons.com)
+
+Meta Platforms isn't letting up in its artificial-intelligence push. The latest news is that it will invest more than $50 billion in a Louisiana data center but J.P. Morgan analysts are still cautious on the stock.
+
+Meta said Monday that it intends to increase the size of its data-center project in Northeast Louisiana to five gigawatts of compute capacity, meaning it will now cost more than $50 billion—up from an estimated cost of $27 billion.
+
+It's just one more signal that Meta CEO Mark Zuckerberg isn't ready to pull back on AI spending, despite concerns his company lags behind in cutting-edge models compared with the likes of ChatGPT-developer OpenAI or Claude maker Anthropic.
+
+J.P. Morgan analyst Doug Anmuth reiterated a Neutral rating and $725 target price on Meta stock in a research note Monday. He argued a recent update to its Muse Spark AI model was encouraging but the company has yet to show evidence of wider adoption.
+
+"We're optimistic on early signs of AI monetization beyond digital advertising, but much will depend on traction of Muse Spark 1.1 & the subsequent Watermelon, and whether Meta gains trust from developers & enterprises," Anmuth wrote.
+
+Meta shares were down 0.6% at $665.47 in premarket trading but have risen 13% in the past month.
+
+Meta wants to double its computing capacity to 14 gigawatts next year, according to a Reuters report last week. A typical one-gigawatt AI data center requires $38 billion in upfront capital expenditure according to analysis firm Epoch AI—so Meta's reported plan would imply roughly $266 billion in capex.
+
+The social-media company isn't bearing the full cost of the buildout. Private-credit manager Blue Owl Capital owns a major stake in the Louisiana project, which has attracted investors including BlackRock, according to The Wall Street Journal.
+
+"Meta pays the full costs of the energy, water, and related infrastructure the [Louisiana] data center uses so consumers aren't paying the cost," Meta said in a blog post. "Meta's recent agreement with Entergy will fund seven new natural gas-fueled generating plants, three grid-scale batteries, nuclear updates, and other purchased power."

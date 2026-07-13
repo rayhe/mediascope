@@ -21062,3 +21062,100 @@ Two-profile Type C iteration focused on the WBD/Paramount merger entering its ca
 - Tests: 2,345 (104 files)
 - Profile sizes: wired.yaml 2,065 lines (+11), nytimes.yaml 2,260 lines (+14)
 
+
+---
+
+## 2026-07-13 07:00 PT — Type A: Article Deep Dive
+
+### Article
+**WSJ — "Meta Lifts Cost of Louisiana Data Center to $50 Billion" (Jul 13, 2026)**
+
+Cross-references: Reuters, Fox Business, Barron's, IBD (all same-day coverage)
+
+### Toolkit Gaps Found & Fixed
+
+**Entities (entities.py):**
+- Financial Services cluster missing asset managers/private credit: Added 11 aliases (BlackRock, Vanguard, State Street, Blue Owl Capital, Blue Owl, KKR, Apollo Global, Apollo, Brookfield Asset Management, Brookfield, BNP Paribas). Updated regex. 852→863 aliases.
+
+**Framing (framing.py):**
+1. `escalation_amplification` (+1 pattern): "growing [adjective] opposition" — intervening adjective variant ("growing public opposition", "rising community resistance"). Previously only matched adjacent noun.
+2. `loaded_language` (+3 sub-patterns): Gambling metaphors ("aggressive bets/gamble/wager"), infrastructure burden ("burdening customers", "surging electricity prices", "taxed grids"), positive magnitude ("life-altering/life-changing/life-transforming").
+3. `recovery_narrative` (+1 pattern): Revitalization idioms ("breathing new life into", "injecting life into", "revitalizing", "transforming the rural economy").
+4. Pattern count: 593→595.
+
+**Sources (sources.py):**
+- Sheldon Jones (Richland Parish School District Superintendent) correctly detected by existing Pattern 1 — no fix needed.
+
+### Key Analytical Finding
+Same-event, same-day coverage of Meta's $50B Louisiana data center expansion shows four distinct editorial postures from the same facts:
+- **WSJ:** Balanced — leads with community impact (teacher bonuses), contextualizes with infrastructure concerns. Sentiment 0.61.
+- **Reuters:** Neutral/slightly negative — frontloads environmental opposition (Earthjustice), includes Trump.
+- **Fox Business:** Strongly positive — "boosting rural community" headline, no critical sourcing.
+- **Barron's:** Cautious/negative — frames as investor concern, J.P. Morgan Neutral rating.
+
+### Sources
+- https://www.wsj.com/real-estate/commercial/meta-lifts-cost-of-louisiana-data-center-to-50-billion-72e2d2e3 (WSJ)
+- Reuters: "Meta expands Louisiana data center to 5 gigawatts, investment crosses $50 billion"
+- Fox Business: "Meta expands Louisiana data center in $50B AI push, boosting rural community"
+- Barron's: "Meta AI Splurge Continues and J.P. Morgan Is Worried for the Stock"
+
+### Test Results
+- 2,373 passed, 0 failed (122 structural consistency tests all green)
+- New: `test_datacenter_framing_jul13.py` (24 tests)
+
+### Stats After This Iteration
+- Entity aliases: 863 (+11)
+- Annotated articles: 168 (+1)
+- Framing device types: 101 (unchanged)
+- Compiled patterns: 595 (+2)
+- Tests: 2,373 (105 files, +24 tests, +1 file)
+- Commit: bb8d6dd
+
+---
+
+## Iteration 2026-07-13 ~08:00 PT — Type A: Article Deep Dive
+
+### Article
+**Barron's: "Meta AI Splurge Continues and J.P. Morgan Is Worried for the Stock"** (Adam Clark, Jul 13, 2026)
+- J.P. Morgan maintains Neutral on Meta amid $50B Louisiana datacenter expansion
+- Analyst Doug Anmuth: Meta stock "lags behind" Alphabet/Microsoft on valuation
+- Epoch AI cited for datacenter cost projections ($800B+ by 2030)
+
+### Gaps Found & Fixed
+
+**Framing (framing.py):**
+1. `pathologizing_metaphor` (+1 pattern): Added `splurge[ds]?(?:\s+on)?|splurging` to gluttony block. "Splurge" pathologizes corporate spending as compulsive/excessive — editorial choice over neutral "invest" or "spend."
+2. `competitive_deficit` (+1 pattern): Added "compared with/to [competitors]" bridge pattern for `lags behind...compared with Alphabet and Microsoft` construction where the deficit verb and comparison targets are separated by intervening text.
+3. Pattern count: 595→596.
+
+**Entities (entities.py):**
+1. J.P. Morgan: Added `J\.P\.?\s*Morgan` regex variant to handle period-separated formatting (Barron's uses "J.P. Morgan" not "JPMorgan").
+2. Epoch AI: Added to Financial Services cluster aliases + regex.
+3. Alias count: 863→866.
+
+**Sentiment:**
+- VADER returns 0.616 (positive) for a clearly bearish/skeptical article — confirmed polarity inversion. This is the #1 accuracy problem (known, documented in prior iterations).
+
+### Key Analytical Finding
+Cross-article comparison of the same $50B Louisiana announcement (5 outlets, Jul 12-13, 2026):
+- **WSJ:** Balanced community/infrastructure framing (0.61 sentiment)
+- **Reuters:** Neutral, environmental opposition lead
+- **Fox Business:** Strongly positive, rural economic uplift
+- **Barron's:** Bearish investor lens, pathologizing "splurge" + competitive deficit framing
+- **MarketWatch:** Recovery narrative from earlier selloff
+
+Barron's is the only outlet to use pathologizing language ("splurge") for the same spending every other outlet calls "investment" or "expansion."
+
+### Sources
+- https://www.barrons.com/articles/meta-ai-splurge-continues-jpmorgan-worried-stock (Barron's, paywalled)
+
+### Test Results
+- 2,392 passed, 0 failed (all structural consistency tests green)
+- New: `test_barrons_splurge_jpmorgan_jul13.py` (19 tests)
+
+### Stats After This Iteration
+- Entity aliases: 866 (+3)
+- Annotated articles: 169 (+1)
+- Framing device types: 101 (unchanged)
+- Compiled patterns: 596 (+1)
+- Tests: 2,392 (106 files, +19 tests, +1 file)

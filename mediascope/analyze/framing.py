@@ -4933,6 +4933,7 @@ _PATHOLOGIZING_METAPHOR_PATTERNS: list[re.Pattern] = [
         r"glutton(?:ous(?:ly)?)?|"
         r"binge[ds]?\s+(?:on|buying|spending|consuming)|"
         r"bingeing|"
+        r"splurge[ds]?(?:\s+on)?|splurging|"
         r"feasting\s+on|feeding\s+frenzy|"
         r"(?:swallow|consume|inhale)[ds]?\s+(?:vast|enormous|massive|huge))\b",
         re.IGNORECASE,
@@ -6474,6 +6475,26 @@ _COMPETITIVE_DEFICIT_PATTERNS: list[re.Pattern] = [
         r"(?:its|the|their)\s+"
         r"(?:competitors?|rivals?|peers?|counterparts?|competition)\b",
         re.IGNORECASE,
+    ),
+    # "lags behind in X compared with/to [competitors]" —
+    # Discovered in Barron's article (Jul 13, 2026): "lags behind in
+    # cutting-edge models compared with the likes of ChatGPT-developer
+    # OpenAI or Claude maker Anthropic" was not detected because
+    # existing patterns required either immediate company name or the
+    # word "competitors/rivals" before "including/such as/like".
+    # This pattern bridges "lags behind" through intervening text to
+    # "compared with/to" and then competitor names.
+    re.compile(
+        r"\b(?:lag(?:s|ged|ging)?\s+behind|trail(?:s|ed|ing)?\s*"
+        r"(?:behind)?|fallen?\s+behind|falling\s+behind)\b"
+        r".{1,100}?"
+        r"\b(?:compared\s+(?:with|to)|relative\s+to|"
+        r"(?:when\s+)?(?:measured|stacked|pitted)\s+against|"
+        r"(?:next|up)\s+(?:to|against))\b"
+        r".{0,40}?"
+        r"\b(?:OpenAI|Google|Anthropic|Apple|Microsoft|Amazon|"
+        r"Samsung|Nvidia|xAI|Mistral|DeepSeek)\b",
+        re.IGNORECASE | re.DOTALL,
     ),
 ]
 
