@@ -12045,12 +12045,103 @@ journalists:
     start: '2019'
   multi_publication: true
   name: Josh Taylor
-  notes: Guardian Australia tech reporter. Key for AU tech regulation coverage (social media under-16 bans, age verification, Epic v Apple/Google AU). ZDNet → Crikey → BuzzFeed → Guardian pipeline. "Blank
-    phone experiment" is notable methodology — empirical algorithmic audit. He/him pronouns. @GuardianAus.
+  notes: 'Career arc: ZDNet Australia → Crikey → BuzzFeed News Australia → Guardian Australia. Based in Sydney.
+    Education: Computer Science degree + Masters in Journalism. Award-winning journalist who has covered technology
+    and politics in Australia for over a decade (per State of Social 2024 bio). Journalism has focused on holding
+    those in power to account, transparency, security, and freedom of information. Increasingly focused on digital
+    platforms. Appears regularly on ABC RN, ABC News, Ten News, The Project, and Technogaze podcast (JOY FM).
+    He/him pronouns. @GuardianAus. KEY FOR MEDIASCOPE: (1) Only Guardian Australia tech reporter in the database —
+    covers all AU tech regulation stories that become international reference points (under-16 social media ban,
+    age verification, Epic v Apple/Google AU, crypto scam ads, anti-encryption laws, COVIDSafe app, AI regulation).
+    Australian regulatory actions frequently set global precedents that US/UK outlets then cite — Taylor is the
+    primary anglophone source for these stories. (2) His ZDNet → Crikey → BuzzFeed → Guardian pipeline is unique
+    in the dataset: each outlet represents a different editorial model (trade/B2B tech → indie political media →
+    viral/engagement-driven news → institutional public-interest journalism). Tests whether framing evolves through
+    editorial culture or stays fixed with the journalist. (3) Computer Science degree is unusual among Guardian
+    reporters and gives him genuine technical depth on encryption, network infrastructure, and platform mechanics
+    that most political journalists lack. (4) His "blank phone experiment" — setting up a fresh phone with new
+    social media accounts to empirically audit algorithmic recommendations — is a notable methodological innovation
+    that goes beyond interview-based platform reporting. (5) Filed FOI request to ACNC (decided Apr 2020) in his
+    own name — demonstrates active use of Australia FOI laws as a reporting tool, consistent with transparency
+    beat. (6) Guardian Australia operates under Scott Trust ownership (no commercial owner), making it the cleanest
+    ownership-conflict-free comparison outlet for platform coverage among our tracked publications.'
+  career:
+  - beat: telecoms, NBN, government IT, cybersecurity
+    end: '2015'
+    event_type: hired
+    notes: 'Technology journalist at ZDNet Australia (CBS Interactive). Based in Sydney. Covered telecommunications,
+      the National Broadband Network (NBN), federal government technology policy, and cybersecurity. Photo credits
+      at CeBIT 2010. ZDNet "Meet the Team" bio described him as "primarily a technology journalist for ZDNet"
+      covering "telecommunications and federal government technology and the associated political issues." Early
+      career — his Muckrack bio still uses the ZDNet description, suggesting it was his first major byline role.
+      Also covered IPv6 adoption, cloud computing, and government IT infrastructure. ZDNet Australia was part of
+      CBS Interactive (later Red Ventures) and provided enterprise/B2B tech coverage — a different editorial culture
+      from the public-interest journalism he later pursued.'
+    publication: zdnet
+    role: technology_journalist
+    source_url: https://www.zdnet.com/meet-the-team/au/josh-taylor/
+    start: '2010'
+  - beat: technology, politics, media, FOI
+    end: '2017'
+    event_type: hired
+    notes: 'Journalist at Crikey, the independent Australian political and media news site (founded by Stephen
+      Mayne). Co-authored "Police pursue journalists in Parliament House NBN raid" (Aug 24, 2016) with Bernard
+      Keane, covering the Australian Federal Police raid on parliamentary offices over NBN leaks — a landmark press
+      freedom story cited in MEAA''s 2017 Chilling Effect press freedom report. Crikey operates on a subscription
+      model with adversarial editorial culture toward political and media power — this formative environment shaped
+      Taylor''s accountability instincts. Also listed in Crikey journalist index (BuzzSumo). Overlap between
+      Crikey and ZDNet stints unclear — may have contributed to both simultaneously.'
+    publication: crikey
+    role: journalist
+    source_url: https://www.crikey.com.au
+    start: '2015'
+  - beat: politics, technology, government, legal, breaking news
+    end: '2019'
+    event_type: hired
+    notes: 'Senior News Reporter at BuzzFeed News Australia. Covered politics, government, technology, legal affairs,
+      and breaking news including the 2017 same-sex marriage postal survey live coverage. Listed as "Josh Taylor,
+      Senior News Reporter" in the BuzzFeed Staff Council PTO petition (Medium, Jan 2019) during the major BuzzFeed
+      layoffs. Confirmed as BuzzFeed journalist in ACCC Digital Platforms Inquiry report: "Alice Workman and Josh
+      Taylor (Buzzfeed)." BuzzFeed bylines span Nov 2017 (same-sex marriage vote) through May 2019 (PM Bob Hawke
+      death coverage). Also covered foreign donations legislation, charities political advocacy rules, One Nation
+      parliamentary fights. BuzzFeed News Australia had a small but influential team (Head of News: Marni Cordell)
+      and was distinct from BuzzFeed entertainment — provided serious political and government reporting. BuzzFeed
+      News ultimately shut down in 2023; Taylor departed well before closure.'
+    publication: buzzfeed-news
+    role: senior_news_reporter
+    source_url: https://www.buzzfeed.com/joshtaylor
+    start: '2017'
+  - beat: technology, infosec, FOI, politics, media, digital platforms, AI regulation
+    event_type: hired
+    notes: 'Reporter at Guardian Australia. Covers technology, information security, freedom of information,
+      politics, and media. Primary tech reporter for Guardian''s Australian bureau. Notable coverage includes:
+      (1) Australia''s under-16 social media ban and age verification regime (multiple articles 2024-2026);
+      (2) "Blank phone experiment" — empirical algorithmic audit setting up fresh social media accounts to document
+      what platforms serve to new users (presented at State of Social 2024);
+      (3) Meta/Facebook crypto scam ads investigation (Aug 2024, cited in US class action complaint Bouck v Meta);
+      (4) COVIDSafe contact tracing app scrutiny (2020-2021);
+      (5) Australia anti-encryption law (Assistance and Access Act) coverage and its implications for press freedom;
+      (6) AI regulation coverage: models "doing things their creators never intended" (Jul 2026), AI scribes
+      privacy concerns, AI datacenter inflation warnings;
+      (7) Pokémon Go/Niantic data training military drone AI (Jun 2026);
+      (8) Telstra network outage analysis (Jul 2026);
+      (9) eSafety Commissioner investigations of platform child safety compliance.
+      Filed FOI request to ACNC in own name (decided Apr 2020 by Information Commissioner A. Falk). Described as
+      "award-winning journalist" by State of Social 2024. Recognized by peers: Mediaweek July 2024 named him
+      alongside ABC''s Ange Lavoipierre as one of Australia''s leading tech journalists "doing pretty wonderful
+      work that has moved the needle on big issues." Guardian Australia articles regularly syndicated via MSN
+      (US/AU/CA/IN/IE).'
+    publication: guardian
+    role: reporter
+    source_url: https://stateofsocial.com.au/speaker/josh-taylor/
+    start: '2019'
   source_urls:
   - https://muckrack.com/joshtaylor
   - https://stateofsocial.com.au/speaker/josh-taylor/
   - https://www.buzzfeed.com/joshtaylor
+  - https://www.zdnet.com/meet-the-team/au/josh-taylor/
+  - https://buzzsumo.com/media-database/theguardian.com/josh-taylor/
+  - https://medium.com/@buzzfeednewsunion/we-demand-buzzfeed-pay-out-earned-paid-time-off-to-its-recently-laid-off-employees-f59edea06f18
 - career:
   - beat: general
     end: '2016'

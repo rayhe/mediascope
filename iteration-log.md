@@ -22022,3 +22022,39 @@ Previous iteration (Type C at 01:00 PT) added `test_accuracy_guide.py` as part o
 ### Sources consulted
 - Code inspection: `mediascope/analyze/framing.py` (re.compile count), `mediascope/analyze/sentiment.py` (Path L implementation at line 2064)
 - Test output: `python3 -m pytest tests/ -q --co` (2530 collected), `python3 -m pytest tests/test_structural_consistency.py -q` (124 passed)
+
+## 2026-07-14 06:00 PT — Type B: Journalist/Publication Research
+
+### Target: Josh Taylor (Guardian Australia)
+
+**Problem identified:** Josh Taylor's YAML entry (line 12047) had notes and source_urls but zero career entries — the career block that followed actually belonged to Shirin Ghaffary (next journalist in file). Taylor was the only Guardian Australia tech reporter in the database with no career history tracked.
+
+**Research completed — 4 career entries added:**
+
+1. **ZDNet Australia (~2010–2015):** Technology journalist. CS degree + Masters in Journalism. Covered telecoms, NBN, government IT, cybersecurity. Photo credits from CeBIT 2010. ZDNet "Meet the Team" bio confirmed role.
+   - Source: https://www.zdnet.com/meet-the-team/au/josh-taylor/
+
+2. **Crikey (~2015–2017):** Journalist. Co-authored "Police pursue journalists in Parliament House NBN raid" (Aug 2016) with Bernard Keane — landmark press freedom story cited in MEAA 2017 report. Independent subscription-model outlet with adversarial editorial culture.
+   - Source: https://www.crikey.com.au
+
+3. **BuzzFeed News Australia (~2017–2019):** Senior News Reporter. Covered politics, government, technology, legal, breaking news. Confirmed by BuzzFeed Staff Council PTO petition (Medium, Jan 2019) and ACCC Digital Platforms Inquiry report. Bylines span Nov 2017 (same-sex marriage) to May 2019 (Bob Hawke).
+   - Source: https://www.buzzfeed.com/joshtaylor
+
+4. **Guardian Australia (2019–present):** Reporter covering technology, infosec, FOI, politics, media, digital platforms, AI regulation. Award-winning. Notable: blank phone experiment (empirical algorithmic audit), Meta crypto scam ads (cited in US lawsuit Bouck v Meta), under-16 social media ban, COVIDSafe, anti-encryption law, AI regulation. Filed FOI to ACNC in own name (Apr 2020).
+   - Source: https://www.theguardian.com/profile/josh-taylor
+
+**Analytical value:** ZDNet → Crikey → BuzzFeed → Guardian pipeline is unique in dataset — each outlet represents a different editorial model (trade B2B → indie political → viral engagement → institutional public-interest). Natural experiment for whether framing evolves through editorial culture or stays fixed. CS degree gives genuine technical depth unusual among Guardian reporters.
+
+### Stats after edit
+- Journalists: 231 (unchanged — expanded existing entry)
+- Career entries: 1,148 (+4 from Josh Taylor)
+- Source URLs: 472 (+6 from Josh Taylor)
+- Tests: 2,556 passed (0 failures)
+
+### Sources consulted
+- ZDNet Meet the Team: https://www.zdnet.com/meet-the-team/au/josh-taylor/
+- Crikey/MEAA 2017 press freedom report
+- BuzzFeed Staff Council PTO petition (Medium, Jan 2019)
+- ACCC Digital Platforms Inquiry report
+- State of Social 2024 speaker bio
+- Guardian Australia profile: https://www.theguardian.com/profile/josh-taylor
