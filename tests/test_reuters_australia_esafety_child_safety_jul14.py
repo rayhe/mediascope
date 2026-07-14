@@ -144,8 +144,9 @@ class TestMultiEntityDistribution:
 class TestFramingDevices:
     """Framing device detection for a wire-service regulatory article."""
 
+    @classmethod
     @pytest.fixture(scope="class")
-    def devices(self, article_text):
+    def devices(cls, article_text):
         return detect_framing_devices(article_text)
 
     def test_no_comment_detected(self, devices):

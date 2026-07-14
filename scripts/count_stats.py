@@ -129,10 +129,40 @@ def count_journalists():
 
 
 def count_tests():
-    """Count test files and (by convention) total test count from last pytest run."""
+    """Count test files and total test cases (including parametrize expansions).
+
+    Uses pytest --collect-only when available for exact count; falls back to
+    regex-based counting of test functions as a lower bound.
+    """
+    import subprocess
+
     test_dir = os.path.join(REPO_ROOT, "tests")
     test_files = glob.glob(os.path.join(test_dir, "test_*.py"))
-    return len(test_files)
+    file_count = len(test_files)
+
+    # Try pytest --collect-only for exact count (fast: ~2-4s with cached bytecode)
+    try:
+        result = subprocess.run(
+            [sys.executable, "-m", "pytest", "--collect-only", "-q", test_dir],
+            capture_output=True,
+            text=True,
+            timeout=60,
+            cwd=REPO_ROOT,
+        )
+        # Last line is like "2556 tests collected in 2.34s"
+        m = re.search(r"(\d+) tests? collected", result.stdout)
+        if m:
+            return {"test_files": file_count, "total_tests": int(m.group(1))}
+    except (subprocess.TimeoutExpired, FileNotFoundError):
+        pass
+
+    # Fallback: regex count (underreports parametrized tests)
+    total_tests = 0
+    for tf in test_files:
+        with open(tf) as f:
+            content = f.read()
+        total_tests += len(re.findall(r"^\s+def test_\w+|^def test_\w+", content, re.MULTILINE))
+    return {"test_files": file_count, "total_tests": total_tests}
 
 
 def count_topics():
@@ -189,7 +219,8 @@ def main():
         "Career-entry migrations": careers["migrations"],
         "Distinct publications": careers["publications"],
         "Topic buckets": topics,
-        "Test files": test_files,
+        "Test files": test_files["test_files"],
+        "Total tests": test_files["total_tests"],
     }
 
     # Print table
@@ -217,6 +248,7 @@ def main():
             ("Annotated articles", r"\|\s*Annotated articles\s*\|\s*(\d+)"),
             ("Journalists tracked", r"\|\s*Journalists tracked\s*\|\s*(\d+)"),
             ("Career-entry migrations", r"\|\s*Career-entry migrations\s*\|\s*(\d+)"),
+            ("Tests", r"\|\s*Tests\s*\|\s*([\d,]+)"),
         ]
 
         actual_map = {
@@ -229,12 +261,13 @@ def main():
             "Annotated articles": annotated,
             "Journalists tracked": careers["journalists"],
             "Career-entry migrations": careers["migrations"],
+            "Tests": test_files["total_tests"],
         }
 
         for label, pattern in checks:
             m = re.search(pattern, readme, re.IGNORECASE)
             if m:
-                readme_val = int(m.group(1))
+                readme_val = int(m.group(1).replace(",", ""))
                 actual_val = actual_map[label]
                 if readme_val != actual_val:
                     stale.append(f"  {label}: README={readme_val}, actual={actual_val}")

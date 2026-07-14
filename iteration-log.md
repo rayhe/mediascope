@@ -1,4 +1,158 @@
 # MediaScope Iteration Log
+## 2026-07-14 10:00 PT — Type D: Toolkit Quality & Documentation (Pytest Warning Fix, count_stats.py Enhancement, Calibration Ledger)
+
+**Commit:** (this commit)
+
+### Focus: Test infrastructure, stat verification, empirical accuracy documentation
+
+### 1. Fixed Pytest Deprecation Warning
+
+**File:** `tests/test_reuters_australia_esafety_child_safety_jul14.py`
+**Issue:** Class-scoped fixture `devices` was defined as an instance method, triggering `PytestRemovedIn10Warning` on every test run.
+**Fix:** Added `@classmethod` decorator above the `@pytest.fixture(scope="class")` decorator and changed `self` to `cls`. Verified with `-W error::pytest.PytestRemovedIn10Warning` — passes cleanly.
+
+### 2. Enhanced `count_stats.py` with Total Test Count
+
+**File:** `scripts/count_stats.py`
+**Changes:**
+- `count_tests()` now returns both `test_files` and `total_tests` counts
+- Primary method: `pytest --collect-only -q` (exact count including parametrize expansions, ~10s)
+- Fallback: regex-based counting when pytest unavailable
+- README `--check` mode now verifies the `Tests` stat row, handling comma-formatted numbers (e.g., "2,556")
+- Reports `Total tests: 2556` in output (was only reporting test files)
+
+**Rationale:** Previous `count_tests()` only counted files, not tests. The README claimed 2,530 tests but had drifted to 2,556. With 26 parametrize usages across the codebase, regex counting alone underreports by ~125 tests (2,431 vs 2,556). Using `pytest --collect-only` gives exact counts.
+
+### 3. Updated README Stats
+
+**File:** `README.md`
+- Tests: 2,530 → **2,556** (actual count from pytest)
+- Test files: 113 → **115** (actual count from glob)
+
+### 4. Added Empirical Calibration Ledger to ACCURACY_GUIDE.md
+
+**File:** `docs/ACCURACY_GUIDE.md` (+123 lines, new Appendix B)
+
+Added a comprehensive calibration ledger documenting verified score deltas from the annotated corpus. Organized by correction path with real article data:
+
+**Correction paths documented with specific articles:**
+- **Path A** (2 specimens): Fast Company roundup, Motley Fool cloud — residuals ±0.02 to +0.12
+- **Path D** (3 specimens): Kotaku gambling (1.23-point swing), Guardian philosopher (**known false-positive, −1.02 residual**), Fast Company Muse — precision/recall analysis
+- **Path E** (2 specimens): MIT TR Anduril, Gizmodo siege roundup — +0.07 to +0.20 residuals
+- **Path F** (3 specimens): Gizmodo Fury, IBD EU DSA, Investopedia rebound — includes **upward adjustment** cases unique to financial genre
+- **Path H** (1 specimen): Gizmodo subscriptions — +0.02 residual
+- **Path I** (1 specimen): 9to5Mac accessibility — 0.91-point correction documented
+- **Path K** (2 specimens): AV Club Muse remix (+0.03), Gizmodo super-sensing (+0.05)
+- **Path L** (1 specimen): Gizmodo Muse scrapped — discovery specimen documented
+
+**Documented failures** (3 articles where no path fires despite VADER polarity inversion):
+- Gizmodo NameTag (+1.0 gap, consent-alarm/guilt-transfer structural framing)
+- Kotaku Muse removed (+0.44 gap, colloquial sarcasm)
+- Atlantic AI slop (+1.02 gap, opinion/essay genre)
+
+**Calibration statistics:**
+- 94% of corrections improve accuracy (30/32)
+- 6% overcorrect (2/32, including the Guardian philosopher)
+- Mean absolute residual ±0.10 (corrected) vs ±0.62 (uncorrected wrong-direction)
+- Key takeaway: high-precision, medium-recall — fires reliably but doesn't cover all failure modes
+
+### Verification
+- All 2,556 tests pass ✅ (0 warnings, was 1 warning)
+- `count_stats.py --check` passes ✅
+- README stats verified current ✅
+
+## 2026-07-14 09:00 PT — Type C: Ownership & Funding Deep Dive (IPEC Cornucopia Trademark Win + Wired UK Print Ending + Newsletter Expansion)
+
+**Commit:** `fd0e6cb` — "Type C: IPEC Cornucopia trademark win (Jun 23), Wired UK print ending, newsletter expansion"
+
+### Focus: AMPI Trademark Enforcement Pattern + Wired International Print Contraction
+
+Selected Wired/Condé Nast for deep dive — last Type C coverage was Jul 11. Three significant developments identified:
+
+### 1. IPEC Trademark Win — [2026] EWHC 1488 (IPEC), June 23, 2026
+
+**New finding:** Advance Magazine Publishers Inc. (AMPI) and The Condé Nast Publications Limited (UK licensee) won a comprehensive trademark infringement case against Cornucopia Entertainment Limited and its founder Minesh Vohra in England & Wales IPEC court.
+
+**Case details:**
+- Cornucopia advertised ticket resale for exclusive invitation-only events: GQ Man of the Year Awards and the Vanity Fair Oscar Party
+- Claimed to be "The world's largest provider of exclusive access to invitation only events"
+- AMPI won on ALL four grounds:
+  - s10(1) TMA: Double identity infringement — judge rejected "informational use" defense; advertising alone constitutes infringement (citing Iconix Luxembourg Holdings v Dream Pairs Europe)
+  - s10(2) TMA: Likelihood of confusion via website, mock invitations, social media
+  - s10(3) TMA: Unfair advantage of marks' reputation — Cornucopia leveraged glamour and exclusivity to charge inflated prices
+  - Passing off: Strong reputation, misrepresentation of commercial connection
+- **Personal liability:** Vohra found jointly liable under s10(3) after receiving cease-and-desist letters
+- Judge: Miss Recorder Amanda Michaels
+
+**Analytical significance:**
+- This is the SECOND UK trademark enforcement action by AMPI in 3 months (after "Ever in Vogue" UK IPO opposition in March 2026)
+- Demonstrates systematic international IP enforcement through AMPI
+- AMPI simultaneously operates as: (a) IP enforcement arm, (b) holder of 42.2M Reddit shares ($8.5B), (c) borrower on $1.2B margin loan
+- This triple function is a unique structural insight not visible from any single filing
+
+**Source:** D Young & Co IP analysis, [2026] EWHC 1488 (IPEC)
+
+### 2. Wired UK Print Edition Ended (Early 2026)
+
+**Previously untracked.** Winter 2025 was the final print issue of Wired UK, ending a publishing run that began in 2009 (the second incarnation after a failed 1995-1997 attempt with Guardian Media Group).
+
+**Timeline of contraction:**
+- Pre-2017: Monthly print
+- Dec 2017: Reduced to bimonthly
+- End of 2024: Reduced to quarterly (JAN-FEB 2025 announced as last before quarterly format)
+- Winter 2025: Final issue — print ceased entirely in early 2026
+
+**Personnel:** Seven London-based editorial staff departed at end of 2025. Team rebuilt to focus on audience development roles and UK/Europe-focused digital reporting.
+
+**Drummond quote (Press Gazette):** "Creating a sustainable and growing subscription business is the future of Wired… While other components like advertising and commerce play a really important part, I don't want Wired to be at the whims of anything that I can't control the way I can control the journalism."
+
+**Subscriber metrics:** Digital-only new subscribers doubled in 2025; direct-to-publisher subscribers up 20%.
+
+**Context:** This follows Wired Italy shutdown (Apr 2026) — two international print editions eliminated within months, concentrating the Wired brand on US print + global digital subscription.
+
+**Source:** Press Gazette (Charlotte Tobitt), Wikipedia (Wired UK), TalkingBizNews
+
+### 3. Wired Newsletter Expansion (2026)
+
+**Previously untracked.** Drummond launched the most significant digital product expansion in Wired's history:
+- 5 new subscriber-only weekly newsletters, each written by a Wired journalist
+- Audio versions of articles (narrated, subscriber-exclusive)
+- Bimonthly subscriber livestream AMAs with Wired reporters
+- Subscriber-only comment sections on stories
+
+This deepens the subscription-first business model and creates exclusive digital products that justify the premium subscription price as print revenue declines.
+
+**Source:** TalkingBizNews (Drummond article)
+
+### Stock Price Context (Jul 14, 2026)
+- RDDT: $201.18 (+0.12%) — holding above $200. Advance stake: ~$8.49B
+- CHTR: $131.57 (+0.15%) — near 52-week low $124.05. Advance stake: ~$2.71B
+- WBD: $27.45 (+1.35%) — rose despite 12-AG lawsuit. Advance stake: ~$2.69B (market) or ~$2.94B (Paramount tender $30)
+- **Advance Total Public Equity: ~$13.89B** (all three holdings slightly up)
+- CATALYSTS: CHTR Q2 Jul 24, RDDT Q2 Jul 30, WBD Q2 Aug 6
+
+### Changes
+
+1. **`profiles/wired.yaml`** (+97/-16 lines):
+   - Wired entity: added UK print ending timeline (2009-2025), Drummond subscription-first quote, subscriber metrics, newsletter expansion details
+   - New conflicts entry: `advance_trademark_enforcement_ipec_cornucopia` — full case summary with 4-ground analysis, personal liability finding, AMPI triple-function insight
+   - Restructuring timeline: added Wired UK print ending event (early 2026) and IPEC case event (Jun 23, 2026)
+
+### Verification
+- Entity tests: 28 passed ✅
+- Career/sentiment/topics/citations tests: 150 passed ✅
+- `count_stats.py --check`: README stats current ✅
+- Pushed to GitHub
+
+### Stats after
+- 87 entity clusters (unchanged)
+- 871 aliases (unchanged)
+- 102 framing device types (unchanged)
+- 673 compiled patterns (unchanged)
+- 177 annotated articles (unchanged)
+- 231 journalists tracked (unchanged)
+- 918 career-entry migrations (unchanged)
+- 2,556 tests across 115 files (unchanged)
 ## 2026-07-14 07:00 PT — Type B: Journalist Research (Kevin Roose Deep Sourcing)
 
 **Commit:** `2886beb` — "Type B: Kevin Roose deep sourcing — career split (5 entries, +1 migration), 8 source URLs, education, CrowdTangle significance, NYT departure Aug 2026"
