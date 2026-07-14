@@ -957,50 +957,76 @@ journalists:
   notes: 'NYT''s definitive privacy and surveillance reporter. Career arc: legal blogging → Forbes → Fusion → Gizmodo investigative → NYT. Author of ''Your Face Belongs to Us'' (2023) on Clearview AI —
     shortlisted for Royal Society Science Book Prize. Her Clearview AI investigation (Jan 2020) changed facial recognition policy nationwide. KEY for MediaScope: her beat (privacy/surveillance) puts her
     in direct analytical contact with Meta''s data practices, face recognition systems, and tracking technology. Her coverage directly overlaps with Ray''s Face Watch Space interests.'
-- career:
-  - beat: Wall Street, finance
-    end: 2012-06
-    event_type: hired
-    notes: First NYT stint. ~1 year covering Wall Street and finance culture. Young reporter straight from Brown University. Work led to 'Young Money' (2014). Left for New York Magazine.
-    publication: nytimes
+- name: Kevin Roose
+  career:
+  - publication: nytimes
     role: finance_reporter
-    source_url: https://adweek.com/performance-marketing/kevin-roose-leaves-new-york-times-for-new-york/
+    beat: Wall Street, finance
     start: 2011-06
-  - beat: business, technology, Silicon Valley
-    end: 2014-11
+    end: 2012-05
     event_type: hired
-    notes: 'Lead business writer for nymag.com''s Daily Intel blog. Covered intersection of New York and Silicon Valley money centers. Wrote features for GQ, ESPN: The Magazine, SPIN. Published ''Young
-      Money'' (2014) — NYT bestseller.'
-    publication: new-york-magazine
-    role: lead_business_writer
-    source_url: https://talkingbiznews.com/they-move/new-york-magazine-hires-nyt-biz-reporter/
-    start: 2012-06
-  - beat: technology, business
-    end: 2017-03
-    event_type: hired
-    notes: 'Senior editor, then VP overseeing editorial projects and strategy. Co-executive producer of ''Real Future'' — a documentary TV series about technology and innovation. NOTE: Kashmir Hill was
-      also at Fusion during this period (editor of Real Future tech vertical). Fusion was a joint venture of ABC News and Univision targeting younger audiences.'
-    publication: fusion
-    role: senior_editor_and_vp
-    source_url: https://talkingbiznews.com/they-move/roose-joining-new-york-times-as-biz-columnist/
-    start: 2014-11
-  - beat: technology, business, culture, AI
-    event_type: hired
-    notes: 'Rejoined NYT (second stint) as Business Day columnist. Hired by Ellen Pollock. ''The Shift'' column examines intersection of tech, business, and culture. Created ''Rabbit Hole'' investigative
-      podcast (2020) on internet radicalization. Co-hosts ''Hard Fork'' weekly podcast with Casey Newton (since ~2022). Feb 2023: Viral Bing/Sydney conversation — most-discussed AI interaction of the year.
-      Published ''Futureproof: 9 Rules for Humans in the Age of Automation'' (2021). Currently writing ''The AGI Chronicles'' (coming 2026) on the race to build artificial general intelligence. Forbes ''30
-      Under 30.'' Part of team that won 2018 Gerald Loeb Award for breaking news. Regular guest on ''The Daily'' podcast and CNBC. Lives in Oakland, CA. Education: Brown University. DEPARTURE (Jun 2026):
-      Announced leaving NYT in August 2026 to start an independent media venture with Casey Newton focused on AI. Hard Fork ending as NYT production after ~4 years. "Start a new show together, under our
-      own shingle."'
-    publication: nytimes
+    notes: First NYT stint. Covered Wall Street and finance culture for Business Day. Hired straight out of Brown University (Class of 2009). Reporting here led to his first NYT bestseller "Young Money"
+      (2014). Left for New York Magazine.
+    source_url: https://adweek.com/performance-marketing/kevin-roose-leaves-new-york-times-for-new-york/
+  - publication: new-york-magazine
     role: columnist
+    beat: business, technology, Silicon Valley
+    start: 2012-05
+    end: 2014-10
+    event_type: hired
+    notes: 'Lead business columnist for nymag.com''s Daily Intel blog. Covered intersection of New York and Silicon Valley. Published "Young Money: Inside the Hidden World of Wall Street''s Post-Crash Recruits"
+      (2014) — NYT bestseller. Also wrote features for GQ, ESPN: The Magazine, SPIN.'
+    source_url: https://talkingbiznews.com/they-move/new-york-magazine-hires-nyt-biz-reporter/
+  - publication: fusion
+    role: news_director
+    beat: technology, business, innovation
+    start: 2014-10
+    end: 2016-11
+    event_type: hired
+    notes: News Director at Fusion Media Group (ABC News/Univision joint venture targeting younger audiences). Co-executive producer of "Real Future," a documentary TV series about technology and innovation.
+      Kashmir Hill was also at Fusion during this period, editing the Real Future tech vertical.
+    source_url: https://talkingbiznews.com/they-move/roose-joining-new-york-times-as-biz-columnist/
+  - publication: fusion
+    role: vp_editorial
+    beat: technology, strategy
+    start: 2016-11
+    end: 2017-05
+    event_type: promoted
+    notes: Promoted to VP overseeing editorial projects and strategy. Brief tenure before returning to the New York Times.
+    source_url: https://talkingbiznews.com/they-move/roose-joining-new-york-times-as-biz-columnist/
+  - publication: nytimes
+    role: columnist
+    beat: technology, business, culture, AI
+    start: 2017-06
+    end: 2026-08
+    event_type: hired
+    notes: 'Rejoined NYT (second stint) as Business Day columnist, hired by editor Ellen Pollock. "The Shift" column examines intersection of tech, business, and culture. KEY WORKS: Created "Rabbit Hole"
+      investigative podcast (8-part series, 2020) on internet radicalization via YouTube — Peabody Award finalist, Vanity Fair "podcasts that defined the 2020s." Co-hosts "Hard Fork" weekly podcast with
+      Casey Newton (premiered Oct 7, 2022). Feb 2023: Viral Bing/Sydney conversation — most-discussed AI interaction of the year. Created CrowdTangle "Facebook''s Top 10" Twitter account showing right-wing
+      content dominated Facebook engagement — became an influential narrative tool in Facebook''s content moderation debate. Mar 2021: Sold his own NYT column as an NFT for $560,000 (proceeds to NYT Neediest
+      Cases Fund). BOOKS: Published "Futureproof: 9 Rules for Humans in the Age of Automation" (2021). Fourth book "The AGI Chronicles" forthcoming 2026 — inside story of the race to build AGI. AWARDS:
+      Forbes 30 Under 30 (2015), Gerald Loeb Award (2018, team). Regular guest/host on "The Daily" podcast and CNBC. DEPARTURE (Aug 2026): Leaving NYT to launch independent media venture with Casey Newton,
+      extending Hard Fork format into new formats. Signed with UTA for representation in all areas. Casey Newton continues Platformer alongside the new venture.'
     source_url: https://nytco.com/press/kevin-roose-joins-biz-day/
-    start: 2017-03
-  name: Kevin Roose
-  notes: 'NYT''s most prominent AI/technology columnist. Unique career: NYT (finance) → NYMag → Fusion TV → NYT (tech columnist). Author of 3 books, 4th (AGI Chronicles) coming 2026. Co-hosts Hard Fork
-    podcast with Casey Newton — ending Aug 2026 when Roose leaves NYT. Launching independent media venture with Newton focused on AI. Known for experiential journalism — went undercover at Liberty University,
-    lived as a billionaire for a day, had viral Bing Sydney AI conversation.  Institutional importance: ''The Shift'' column shapes public discourse on AI/automation more than almost any other single journalist.
-    KEY TRANSITION: Roose leaving NYT for independence mirrors Newton''s 2020 Verge departure — both testing whether individual brand > institutional platform in the AI journalism era.'
+  multi_publication: true
+  notes: 'NYT''s most prominent AI/technology columnist and one of the most influential tech journalists in the US. Unique career arc: NYT (finance) → NYMag → Fusion TV → NYT (tech columnist, 9 years).
+    Author of 4 books: The Unlikely Disciple (2009, Liberty University undercover — written as Brown sophomore), Young Money (2014, NYT bestseller), Futureproof (2021), The AGI Chronicles (2026, forthcoming).
+    Born 1987/1988. Education: Westtown School ''05 (Quaker boarding school, Chester County PA) → Brown University ''09 (English major, Brown Daily Herald columnist). Co-hosted Hard Fork podcast with Casey
+    Newton (Oct 2022 – Aug 2026) — one of the most popular tech podcasts globally. Known for experiential/participatory journalism: undercover at Liberty University, lived as a Wall Streeter, had viral
+    Bing/Sydney AI conversation, went phone-free for 30 days. Created CrowdTangle "Facebook Top 10" Twitter account that showed right-wing publishers dominated Facebook engagement — instrumental in Meta
+    content-moderation discourse. MEDIASCOPE SIGNIFICANCE: Roose''s coverage framing of Meta specifically includes the Oct 2021 article "Facebook Is Weaker Than We Knew" (coinciding with Facebook Files)
+    characterizing Facebook as in "slow, steady decline" with "frenetic pivots, executive paranoia, and talent attrition." The CrowdTangle Top 10 project was perhaps the most consequential single journalistic
+    tool in shaping the narrative that Facebook amplifies right-wing misinformation. KEY TRANSITION: Leaving NYT Aug 2026 for independent venture with Casey Newton — mirrors Newton''s 2020 Verge departure.
+    Both testing whether individual brand > institutional platform in the AI journalism era. Lives in Bay Area.'
+  source_urls:
+  - https://en.wikipedia.org/wiki/Kevin_Roose
+  - https://kevinroose.com/
+  - https://talkingbiznews.com/they-move/roose-joining-new-york-times-as-biz-columnist/
+  - https://nytco.com/press/kevin-roose-joins-biz-day/
+  - https://en.wikipedia.org/wiki/Rabbit_Hole_(podcast)
+  - https://adweek.com/performance-marketing/kevin-roose-leaves-new-york-times-for-new-york/
+  - https://en.wikipedia.org/wiki/List_of_Brown_University_alumni
+  - https://westtown.edu
 - career:
   - beat: N/A (education)
     event_type: education
@@ -10273,25 +10299,25 @@ journalists:
     notes: 'Joined MIT Technology Review in 1998 after the magazine''s 1997 editorial restructuring under John Benditt. One of the longest-tenured editorial staff — 27+ year continuous tenure as of 2026.
       Held multiple editorial roles over the decades: titled "editor" in 2010 (announced TR50 companies list) and 2013 (wrote "From the editor" editorials during Pontin era). Curated the annual 10 Breakthrough
       Technologies list for multiple years (confirmed 2018, 2020 presentations). Served as acting EIC during Pontin → Lichfield transition (~Jun-Nov 2017). Current role: editor-at-large, focused on story
-      strategy and the intersection of chemistry, materials science, energy, manufacturing, and economics. Multiple Folio Magazine Eddie Awards: gold for "The Price of Biofuels" (2008), gold/silver for "Can
-      Technology Save the Economy?" (2009), gold for "Natural Gas Changes the Energy Map" and "Chasing the Sun" (2010). Featured in FT State of AI partnership (Oct 2025): "The Economic Singularity" with
-      FT Columnist Richard Waters. Listed as writer in Hype Correction series (Dec 2025). Moderates MIT Technology Review Roundtable events (batteries/materials Feb 2024, AI/climate Dec 2024). 146+ published
-      articles on technologyreview.com. Notable long-form: "How Technology Is Destroying Jobs" (Jun 2013), "The Relentless Pace of Automation" (Mar/Apr 2017, cited in Harvard/MIT AI ethics curricula), "Race
-      and Medicine" (Apr 2005), "Why tech didn''t save us from covid-19" (Jun 2020). Twitter: @DavidRotman. ANALYTICAL VALUE: Rotman is the institutional memory of MIT Technology Review — his 27-year tenure
-      spans four EIC regimes (Benditt/Buderi, Pontin, Lichfield, Honan). His beat evolution from science/biotech to economics/AI-and-jobs mirrors the magazine''s own shift from pure technology coverage to
-      technology''s societal impact. As editor-at-large, he shapes which stories the magazine prioritizes without daily byline pressure, making him an invisible hand on MIT Tech Review''s editorial posture
+      strategy and the intersection of chemistry, materials science, energy, manufacturing, and economics. Multiple Folio Magazine Eddie Awards: gold for "The Price of Biofuels" (2008), gold/silver for
+      "Can Technology Save the Economy?" (2009), gold for "Natural Gas Changes the Energy Map" and "Chasing the Sun" (2010). Featured in FT State of AI partnership (Oct 2025): "The Economic Singularity"
+      with FT Columnist Richard Waters. Listed as writer in Hype Correction series (Dec 2025). Moderates MIT Technology Review Roundtable events (batteries/materials Feb 2024, AI/climate Dec 2024). 146+
+      published articles on technologyreview.com. Notable long-form: "How Technology Is Destroying Jobs" (Jun 2013), "The Relentless Pace of Automation" (Mar/Apr 2017, cited in Harvard/MIT AI ethics curricula),
+      "Race and Medicine" (Apr 2005), "Why tech didn''t save us from covid-19" (Jun 2020). Twitter: @DavidRotman. ANALYTICAL VALUE: Rotman is the institutional memory of MIT Technology Review — his 27-year
+      tenure spans four EIC regimes (Benditt/Buderi, Pontin, Lichfield, Honan). His beat evolution from science/biotech to economics/AI-and-jobs mirrors the magazine''s own shift from pure technology coverage
+      to technology''s societal impact. As editor-at-large, he shapes which stories the magazine prioritizes without daily byline pressure, making him an invisible hand on MIT Tech Review''s editorial posture
       toward Big Tech and AI.'
     publication: mit-tech-review
     role: editor_at_large
     source_url: https://www.technologyreview.com/author/david-rotman/
     start: '1998'
-    verified: 'Jul 2026: Deep-dive via GlobeNewsWire 2018 event bio (1998 join date), Folio Eddie Awards via Alchetron, FT partnership (Oct 2025), Hype Correction credits, Roundtable appearances, MIT
-      news archives.'
+    verified: 'Jul 2026: Deep-dive via GlobeNewsWire 2018 event bio (1998 join date), Folio Eddie Awards via Alchetron, FT partnership (Oct 2025), Hype Correction credits, Roundtable appearances, MIT news
+      archives.'
   multi_publication: false
   name: David Rotman
-  notes: 'Editor-at-Large at MIT Technology Review since 1998 — 27+ year tenure spanning four EIC regimes. Science and business journalist; written extensively on chemistry, biotechnology, materials science,
+  notes: Editor-at-Large at MIT Technology Review since 1998 — 27+ year tenure spanning four EIC regimes. Science and business journalist; written extensively on chemistry, biotechnology, materials science,
     environmental issues, and the economics of technological change. Multiple Folio Eddie Awards (2008-2010). Curated 10 Breakthrough Technologies list. Served as acting EIC (~2017). Featured in FT State
-    of AI "Economic Singularity" partnership (Oct 2025). The institutional memory of MIT Technology Review and an invisible editorial hand on the magazine''s posture toward Big Tech and AI.'
+    of AI "Economic Singularity" partnership (Oct 2025). The institutional memory of MIT Technology Review and an invisible editorial hand on the magazine's posture toward Big Tech and AI.
   source_urls:
   - https://www.technologyreview.com/author/david-rotman/
   - https://www.technologyreview.com/supertopic/hype-correction/
@@ -12019,64 +12045,13 @@ journalists:
   - australian_politics
   - social_media_algorithms
   career:
-  - end: '2015'
-    notes: Technology journalist. Covered telecommunications and federal government technology. Sydney-based.
-    publication: zdnet
-    role: reporter
-    source_url: https://muckrack.com/josh-taylor
-    start: '2010'
-  - end: '2017'
-    notes: Australian independent media outlet.
-    publication: crikey
-    role: reporter
-    source_url: https://stateofsocial.com.au/speakers/josh-taylor/
-    start: '2015'
-  - end: '2019'
-    notes: BuzzFeed News Australia.
-    publication: buzzfeed-news
-    role: reporter
-    source_url: https://stateofsocial.com.au/speakers/josh-taylor/
-    start: '2017'
-  - notes: Guardian Australia. Award-winning. Covers tech, infosec, FOI, politics, media. 10+ years covering technology in Australia. "Blank phone experiment" — set up fresh phone with new social accounts
-      to investigate algorithmic content serving. Covers Australian social media bans, platform regulation, age verification. Appeared on ABC RN, ABC News, Ten News, The Project.
-    publication: guardian
-    role: reporter
-    source_url: https://stateofsocial.com.au/speakers/josh-taylor/
-    start: '2019'
-  multi_publication: true
-  name: Josh Taylor
-  notes: 'Career arc: ZDNet Australia → Crikey → BuzzFeed News Australia → Guardian Australia. Based in Sydney.
-    Education: Computer Science degree + Masters in Journalism. Award-winning journalist who has covered technology
-    and politics in Australia for over a decade (per State of Social 2024 bio). Journalism has focused on holding
-    those in power to account, transparency, security, and freedom of information. Increasingly focused on digital
-    platforms. Appears regularly on ABC RN, ABC News, Ten News, The Project, and Technogaze podcast (JOY FM).
-    He/him pronouns. @GuardianAus. KEY FOR MEDIASCOPE: (1) Only Guardian Australia tech reporter in the database —
-    covers all AU tech regulation stories that become international reference points (under-16 social media ban,
-    age verification, Epic v Apple/Google AU, crypto scam ads, anti-encryption laws, COVIDSafe app, AI regulation).
-    Australian regulatory actions frequently set global precedents that US/UK outlets then cite — Taylor is the
-    primary anglophone source for these stories. (2) His ZDNet → Crikey → BuzzFeed → Guardian pipeline is unique
-    in the dataset: each outlet represents a different editorial model (trade/B2B tech → indie political media →
-    viral/engagement-driven news → institutional public-interest journalism). Tests whether framing evolves through
-    editorial culture or stays fixed with the journalist. (3) Computer Science degree is unusual among Guardian
-    reporters and gives him genuine technical depth on encryption, network infrastructure, and platform mechanics
-    that most political journalists lack. (4) His "blank phone experiment" — setting up a fresh phone with new
-    social media accounts to empirically audit algorithmic recommendations — is a notable methodological innovation
-    that goes beyond interview-based platform reporting. (5) Filed FOI request to ACNC (decided Apr 2020) in his
-    own name — demonstrates active use of Australia FOI laws as a reporting tool, consistent with transparency
-    beat. (6) Guardian Australia operates under Scott Trust ownership (no commercial owner), making it the cleanest
-    ownership-conflict-free comparison outlet for platform coverage among our tracked publications.'
-  career:
   - beat: telecoms, NBN, government IT, cybersecurity
     end: '2015'
     event_type: hired
-    notes: 'Technology journalist at ZDNet Australia (CBS Interactive). Based in Sydney. Covered telecommunications,
-      the National Broadband Network (NBN), federal government technology policy, and cybersecurity. Photo credits
-      at CeBIT 2010. ZDNet "Meet the Team" bio described him as "primarily a technology journalist for ZDNet"
-      covering "telecommunications and federal government technology and the associated political issues." Early
-      career — his Muckrack bio still uses the ZDNet description, suggesting it was his first major byline role.
-      Also covered IPv6 adoption, cloud computing, and government IT infrastructure. ZDNet Australia was part of
-      CBS Interactive (later Red Ventures) and provided enterprise/B2B tech coverage — a different editorial culture
-      from the public-interest journalism he later pursued.'
+    notes: Technology journalist at ZDNet Australia (CBS Interactive). Based in Sydney. Covered telecommunications, the National Broadband Network (NBN), federal government technology policy, and cybersecurity.
+      Photo credits at CeBIT 2010. ZDNet "Meet the Team" bio described him as "primarily a technology journalist for ZDNet" covering "telecommunications and federal government technology and the associated
+      political issues." Early career — his Muckrack bio still uses the ZDNet description, suggesting it was his first major byline role. Also covered IPv6 adoption, cloud computing, and government IT infrastructure.
+      ZDNet Australia was part of CBS Interactive (later Red Ventures) and provided enterprise/B2B tech coverage — a different editorial culture from the public-interest journalism he later pursued.
     publication: zdnet
     role: technology_journalist
     source_url: https://www.zdnet.com/meet-the-team/au/josh-taylor/
@@ -12084,13 +12059,10 @@ journalists:
   - beat: technology, politics, media, FOI
     end: '2017'
     event_type: hired
-    notes: 'Journalist at Crikey, the independent Australian political and media news site (founded by Stephen
-      Mayne). Co-authored "Police pursue journalists in Parliament House NBN raid" (Aug 24, 2016) with Bernard
-      Keane, covering the Australian Federal Police raid on parliamentary offices over NBN leaks — a landmark press
-      freedom story cited in MEAA''s 2017 Chilling Effect press freedom report. Crikey operates on a subscription
-      model with adversarial editorial culture toward political and media power — this formative environment shaped
-      Taylor''s accountability instincts. Also listed in Crikey journalist index (BuzzSumo). Overlap between
-      Crikey and ZDNet stints unclear — may have contributed to both simultaneously.'
+    notes: Journalist at Crikey, the independent Australian political and media news site (founded by Stephen Mayne). Co-authored "Police pursue journalists in Parliament House NBN raid" (Aug 24, 2016)
+      with Bernard Keane, covering the Australian Federal Police raid on parliamentary offices over NBN leaks — a landmark press freedom story cited in MEAA's 2017 Chilling Effect press freedom report.
+      Crikey operates on a subscription model with adversarial editorial culture toward political and media power — this formative environment shaped Taylor's accountability instincts. Also listed in Crikey
+      journalist index (BuzzSumo). Overlap between Crikey and ZDNet stints unclear — may have contributed to both simultaneously.
     publication: crikey
     role: journalist
     source_url: https://www.crikey.com.au
@@ -12098,43 +12070,42 @@ journalists:
   - beat: politics, technology, government, legal, breaking news
     end: '2019'
     event_type: hired
-    notes: 'Senior News Reporter at BuzzFeed News Australia. Covered politics, government, technology, legal affairs,
-      and breaking news including the 2017 same-sex marriage postal survey live coverage. Listed as "Josh Taylor,
-      Senior News Reporter" in the BuzzFeed Staff Council PTO petition (Medium, Jan 2019) during the major BuzzFeed
-      layoffs. Confirmed as BuzzFeed journalist in ACCC Digital Platforms Inquiry report: "Alice Workman and Josh
-      Taylor (Buzzfeed)." BuzzFeed bylines span Nov 2017 (same-sex marriage vote) through May 2019 (PM Bob Hawke
-      death coverage). Also covered foreign donations legislation, charities political advocacy rules, One Nation
-      parliamentary fights. BuzzFeed News Australia had a small but influential team (Head of News: Marni Cordell)
-      and was distinct from BuzzFeed entertainment — provided serious political and government reporting. BuzzFeed
-      News ultimately shut down in 2023; Taylor departed well before closure.'
+    notes: 'Senior News Reporter at BuzzFeed News Australia. Covered politics, government, technology, legal affairs, and breaking news including the 2017 same-sex marriage postal survey live coverage.
+      Listed as "Josh Taylor, Senior News Reporter" in the BuzzFeed Staff Council PTO petition (Medium, Jan 2019) during the major BuzzFeed layoffs. Confirmed as BuzzFeed journalist in ACCC Digital Platforms
+      Inquiry report: "Alice Workman and Josh Taylor (Buzzfeed)." BuzzFeed bylines span Nov 2017 (same-sex marriage vote) through May 2019 (PM Bob Hawke death coverage). Also covered foreign donations legislation,
+      charities political advocacy rules, One Nation parliamentary fights. BuzzFeed News Australia had a small but influential team (Head of News: Marni Cordell) and was distinct from BuzzFeed entertainment
+      — provided serious political and government reporting. BuzzFeed News ultimately shut down in 2023; Taylor departed well before closure.'
     publication: buzzfeed-news
     role: senior_news_reporter
     source_url: https://www.buzzfeed.com/joshtaylor
     start: '2017'
   - beat: technology, infosec, FOI, politics, media, digital platforms, AI regulation
     event_type: hired
-    notes: 'Reporter at Guardian Australia. Covers technology, information security, freedom of information,
-      politics, and media. Primary tech reporter for Guardian''s Australian bureau. Notable coverage includes:
-      (1) Australia''s under-16 social media ban and age verification regime (multiple articles 2024-2026);
-      (2) "Blank phone experiment" — empirical algorithmic audit setting up fresh social media accounts to document
-      what platforms serve to new users (presented at State of Social 2024);
-      (3) Meta/Facebook crypto scam ads investigation (Aug 2024, cited in US class action complaint Bouck v Meta);
-      (4) COVIDSafe contact tracing app scrutiny (2020-2021);
-      (5) Australia anti-encryption law (Assistance and Access Act) coverage and its implications for press freedom;
-      (6) AI regulation coverage: models "doing things their creators never intended" (Jul 2026), AI scribes
-      privacy concerns, AI datacenter inflation warnings;
-      (7) Pokémon Go/Niantic data training military drone AI (Jun 2026);
-      (8) Telstra network outage analysis (Jul 2026);
-      (9) eSafety Commissioner investigations of platform child safety compliance.
-      Filed FOI request to ACNC in own name (decided Apr 2020 by Information Commissioner A. Falk). Described as
-      "award-winning journalist" by State of Social 2024. Recognized by peers: Mediaweek July 2024 named him
-      alongside ABC''s Ange Lavoipierre as one of Australia''s leading tech journalists "doing pretty wonderful
-      work that has moved the needle on big issues." Guardian Australia articles regularly syndicated via MSN
-      (US/AU/CA/IN/IE).'
+    notes: 'Reporter at Guardian Australia. Covers technology, information security, freedom of information, politics, and media. Primary tech reporter for Guardian''s Australian bureau. Notable coverage
+      includes: (1) Australia''s under-16 social media ban and age verification regime (multiple articles 2024-2026); (2) "Blank phone experiment" — empirical algorithmic audit setting up fresh social media
+      accounts to document what platforms serve to new users (presented at State of Social 2024); (3) Meta/Facebook crypto scam ads investigation (Aug 2024, cited in US class action complaint Bouck v Meta);
+      (4) COVIDSafe contact tracing app scrutiny (2020-2021); (5) Australia anti-encryption law (Assistance and Access Act) coverage and its implications for press freedom; (6) AI regulation coverage: models
+      "doing things their creators never intended" (Jul 2026), AI scribes privacy concerns, AI datacenter inflation warnings; (7) Pokémon Go/Niantic data training military drone AI (Jun 2026); (8) Telstra
+      network outage analysis (Jul 2026); (9) eSafety Commissioner investigations of platform child safety compliance. Filed FOI request to ACNC in own name (decided Apr 2020 by Information Commissioner
+      A. Falk). Described as "award-winning journalist" by State of Social 2024. Recognized by peers: Mediaweek July 2024 named him alongside ABC''s Ange Lavoipierre as one of Australia''s leading tech
+      journalists "doing pretty wonderful work that has moved the needle on big issues." Guardian Australia articles regularly syndicated via MSN (US/AU/CA/IN/IE).'
     publication: guardian
     role: reporter
     source_url: https://stateofsocial.com.au/speaker/josh-taylor/
     start: '2019'
+  multi_publication: true
+  name: Josh Taylor
+  notes: 'Career arc: ZDNet Australia → Crikey → BuzzFeed News Australia → Guardian Australia. Based in Sydney. Education: Computer Science degree + Masters in Journalism. Award-winning journalist who has
+    covered technology and politics in Australia for over a decade (per State of Social 2024 bio). Journalism has focused on holding those in power to account, transparency, security, and freedom of information.
+    Increasingly focused on digital platforms. Appears regularly on ABC RN, ABC News, Ten News, The Project, and Technogaze podcast (JOY FM). He/him pronouns. @GuardianAus. KEY FOR MEDIASCOPE: (1) Only
+    Guardian Australia tech reporter in the database — covers all AU tech regulation stories that become international reference points (under-16 social media ban, age verification, Epic v Apple/Google
+    AU, crypto scam ads, anti-encryption laws, COVIDSafe app, AI regulation). Australian regulatory actions frequently set global precedents that US/UK outlets then cite — Taylor is the primary anglophone
+    source for these stories. (2) His ZDNet → Crikey → BuzzFeed → Guardian pipeline is unique in the dataset: each outlet represents a different editorial model (trade/B2B tech → indie political media →
+    viral/engagement-driven news → institutional public-interest journalism). Tests whether framing evolves through editorial culture or stays fixed with the journalist. (3) Computer Science degree is unusual
+    among Guardian reporters and gives him genuine technical depth on encryption, network infrastructure, and platform mechanics that most political journalists lack. (4) His "blank phone experiment" —
+    setting up a fresh phone with new social media accounts to empirically audit algorithmic recommendations — is a notable methodological innovation that goes beyond interview-based platform reporting.
+    (5) Filed FOI request to ACNC (decided Apr 2020) in his own name — demonstrates active use of Australia FOI laws as a reporting tool, consistent with transparency beat. (6) Guardian Australia operates
+    under Scott Trust ownership (no commercial owner), making it the cleanest ownership-conflict-free comparison outlet for platform coverage among our tracked publications.'
   source_urls:
   - https://muckrack.com/joshtaylor
   - https://stateofsocial.com.au/speaker/josh-taylor/
@@ -13420,8 +13391,8 @@ journalists:
   - beat: investigative journalism
     end: '2017'
     event_type: education
-    notes: MA in Investigative Journalism from City, University of London (2016-2017). Foundation for data-driven and source-heavy
-      tech reporting that defines her career. City University London has a strong UK investigative journalism program.
+    notes: MA in Investigative Journalism from City, University of London (2016-2017). Foundation for data-driven and source-heavy tech reporting that defines her career. City University London has a strong
+      UK investigative journalism program.
     publication: city-university-london
     role: student
     source_url: https://contactout.com/Jyoti-Mann
@@ -13437,10 +13408,8 @@ journalists:
   - beat: hedge funds, consulting
     end: 2021-07
     event_type: career_change
-    notes: Self-employed hedge fund consultant for approximately 3.5 years between journalism stints. Non-journalism career period.
-      This finance-sector experience gives her an analytical framework for understanding Big Tech business models and M&A that
-      most tech reporters lack — relevant because The Information's Meta coverage requires deep financial analysis alongside
-      product reporting.
+    notes: Self-employed hedge fund consultant for approximately 3.5 years between journalism stints. Non-journalism career period. This finance-sector experience gives her an analytical framework for understanding
+      Big Tech business models and M&A that most tech reporters lack — relevant because The Information's Meta coverage requires deep financial analysis alongside product reporting.
     publication: self-employed
     role: consultant
     source_url: https://contactout.com/Jyoti-Mann
@@ -13448,8 +13417,7 @@ journalists:
   - beat: journalism, crime desk
     end: 2019-10
     event_type: intern
-    notes: Brief freelance/internship on The Times (UK) crime desk. One month overlap during consulting career. The Times is
-      a Murdoch/News Corp publication — notable for pipeline context.
+    notes: Brief freelance/internship on The Times (UK) crime desk. One month overlap during consulting career. The Times is a Murdoch/News Corp publication — notable for pipeline context.
     publication: the-times-uk
     role: journalist
     source_url: https://contactout.com/Jyoti-Mann
@@ -13457,9 +13425,8 @@ journalists:
   - beat: companies, business
     end: 2022-02
     event_type: fellowship
-    notes: Marjorie Deane Fellow at the Financial Times — a prestigious 6-month journalism fellowship for emerging business
-      journalists. Worked on the companies desk. The FT fellowship is a recognized pipeline into elite business journalism
-      (past fellows have gone to Bloomberg, WSJ, FT staff). This is her entry point into mainstream business/tech journalism.
+    notes: Marjorie Deane Fellow at the Financial Times — a prestigious 6-month journalism fellowship for emerging business journalists. Worked on the companies desk. The FT fellowship is a recognized pipeline
+      into elite business journalism (past fellows have gone to Bloomberg, WSJ, FT staff). This is her entry point into mainstream business/tech journalism.
     publication: financial-times
     role: reporter
     source_url: https://talkingbiznews.com/they-re-hiring/the-information-hires-mann-to-cover-meta/
@@ -13467,9 +13434,8 @@ journalists:
   - beat: business news, weekend desk
     end: 2023-10
     event_type: hired
-    notes: Business news reporter covering weekend business news. First full-time staff journalism role at a major English-language
-      digital publication. Based in London (Greater London). Published across Markets Insider, Yahoo, MSN, HuffPost syndication
-      network. High-volume output — 2,900+ total career articles by 2025 per Journalist Hunt.
+    notes: Business news reporter covering weekend business news. First full-time staff journalism role at a major English-language digital publication. Based in London (Greater London). Published across
+      Markets Insider, Yahoo, MSN, HuffPost syndication network. High-volume output — 2,900+ total career articles by 2025 per Journalist Hunt.
     publication: business-insider
     role: reporter
     source_url: https://talkingbiznews.com/they-re-hiring/business-insider-taps-mann-to-serve-as-tech-reporter/
@@ -13477,10 +13443,9 @@ journalists:
   - beat: tech, AI, big tech companies, Meta
     end: 2025-03
     event_type: promoted
-    notes: Promoted to tech reporter at Business Insider (Oct 2023). Covered Meta organizational changes (Bosworth metaverse
-      restructuring memo scoop), Amazon layoffs (14,000 jobs investigation), Elon Musk companies, and broader Big Tech. Co-bylined
-      with Pranav Dixit on Meta stories. Beat coverage focused on corporate structure, layoffs, and executive decision-making
-      rather than product reviews or consumer tech.
+    notes: Promoted to tech reporter at Business Insider (Oct 2023). Covered Meta organizational changes (Bosworth metaverse restructuring memo scoop), Amazon layoffs (14,000 jobs investigation), Elon Musk
+      companies, and broader Big Tech. Co-bylined with Pranav Dixit on Meta stories. Beat coverage focused on corporate structure, layoffs, and executive decision-making rather than product reviews or consumer
+      tech.
     publication: business-insider
     role: tech_reporter
     source_url: https://contactout.com/Jyoti-Mann
@@ -13488,42 +13453,32 @@ journalists:
   - beat: tech, AI, big tech, Meta
     end: 2026-01
     event_type: promoted
-    notes: Promoted to senior tech reporter at Business Insider (Mar 2025). Continued Meta corporate coverage. Her departure
-      for The Information creates a dedicated Meta beat gap at Business Insider.
+    notes: Promoted to senior tech reporter at Business Insider (Mar 2025). Continued Meta corporate coverage. Her departure for The Information creates a dedicated Meta beat gap at Business Insider.
     publication: business-insider
     role: senior_tech_reporter
     source_url: https://contactout.com/Jyoti-Mann
     start: 2025-03
   - beat: Meta Platforms (dedicated beat)
     event_type: hired
-    notes: 'Hired by The Information as its dedicated Meta beat reporter — a newly created role filled in response to a January
-      2026 posting that described Meta as "at a pivotal moment in its history." The job description explicitly frames Meta
-      as "racing to catch up in artificial intelligence, after a series of stumbles" — adversarial framing baked into the
-      beat definition. Expected output: 2 scoops or 1 high-impact feature per month, plus TITV (The Information''s daily
-      video show) appearances. Based in NY or SF. The Information is a subscription-only ($449/yr) tech publication whose
-      scoops are frequently cited by NYT, Bloomberg, Reuters, and Wired — making this a high-leverage position in the Meta
-      coverage ecosystem despite the publication''s smaller direct audience. KEY ANALYTICAL VALUE: (1) Her Business Insider
-      Meta coverage (Bosworth memos, restructuring scoops) was corporate-internal-focused, not adversarial-framing. Her
-      output at The Information will reveal whether the publication''s editorial environment shifts her framing. (2) The
-      Information''s paywall model incentivizes insider-access journalism over adversarial coverage — contrasts with Wired/
-      Guardian''s ad-supported adversarial model. (3) She joins alongside Eli Rosenberg (AI/tech wealth reporter from NBC
-      News/WaPo) — The Information is building out its Big Tech investigative capacity.'
+    notes: 'Hired by The Information as its dedicated Meta beat reporter — a newly created role filled in response to a January 2026 posting that described Meta as "at a pivotal moment in its history."
+      The job description explicitly frames Meta as "racing to catch up in artificial intelligence, after a series of stumbles" — adversarial framing baked into the beat definition. Expected output: 2 scoops
+      or 1 high-impact feature per month, plus TITV (The Information''s daily video show) appearances. Based in NY or SF. The Information is a subscription-only ($449/yr) tech publication whose scoops are
+      frequently cited by NYT, Bloomberg, Reuters, and Wired — making this a high-leverage position in the Meta coverage ecosystem despite the publication''s smaller direct audience. KEY ANALYTICAL VALUE:
+      (1) Her Business Insider Meta coverage (Bosworth memos, restructuring scoops) was corporate-internal-focused, not adversarial-framing. Her output at The Information will reveal whether the publication''s
+      editorial environment shifts her framing. (2) The Information''s paywall model incentivizes insider-access journalism over adversarial coverage — contrasts with Wired/ Guardian''s ad-supported adversarial
+      model. (3) She joins alongside Eli Rosenberg (AI/tech wealth reporter from NBC News/WaPo) — The Information is building out its Big Tech investigative capacity.'
     publication: the-information
     role: reporter
     source_url: https://talkingbiznews.com/they-re-hiring/the-information-hires-mann-to-cover-meta/
     start: 2026-01
   multi_publication: true
   name: Jyoti Mann
-  notes: 'Career arc: City University London MA → Daily Star → hedge fund consulting (3.5 years) → The Times UK (brief) → FT
-    (Marjorie Deane Fellow) → Business Insider (business news → tech reporter → senior tech reporter) → The Information
-    (dedicated Meta beat). London-based for most of career; The Information role may be NY/SF. Hedge fund consulting background
-    distinguishes her from typical J-school-to-newsroom pipeline — gives her financial analysis skills for understanding
-    Meta''s $125-145B capex, AI investment strategy, and corporate restructuring. Extremely prolific: 2,900+ articles by
-    2025 (Journalist Hunt). KEY for MediaScope: (1) The Information''s dedicated Meta beat reporter — her scoops will be
-    cited across our tracked publications (Wired, NYT, etc.), making her a primary source in the Meta coverage supply chain.
-    (2) Non-adversarial editorial environment (subscription/insider-access model) provides a natural control for comparing
-    framing differences on the same stories when they''re picked up by adversarial outlets. (3) Migration from BI (high-volume
-    general coverage) to The Information (premium scoop-driven) tests whether output cadence changes affect framing intensity.'
+  notes: 'Career arc: City University London MA → Daily Star → hedge fund consulting (3.5 years) → The Times UK (brief) → FT (Marjorie Deane Fellow) → Business Insider (business news → tech reporter → senior
+    tech reporter) → The Information (dedicated Meta beat). London-based for most of career; The Information role may be NY/SF. Hedge fund consulting background distinguishes her from typical J-school-to-newsroom
+    pipeline — gives her financial analysis skills for understanding Meta''s $125-145B capex, AI investment strategy, and corporate restructuring. Extremely prolific: 2,900+ articles by 2025 (Journalist
+    Hunt). KEY for MediaScope: (1) The Information''s dedicated Meta beat reporter — her scoops will be cited across our tracked publications (Wired, NYT, etc.), making her a primary source in the Meta
+    coverage supply chain. (2) Non-adversarial editorial environment (subscription/insider-access model) provides a natural control for comparing framing differences on the same stories when they''re picked
+    up by adversarial outlets. (3) Migration from BI (high-volume general coverage) to The Information (premium scoop-driven) tests whether output cadence changes affect framing intensity.'
   source_urls:
   - https://talkingbiznews.com/they-re-hiring/the-information-hires-mann-to-cover-meta/
   - https://talkingbiznews.com/they-re-hiring/business-insider-taps-mann-to-serve-as-tech-reporter/
