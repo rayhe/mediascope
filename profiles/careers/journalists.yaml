@@ -10237,22 +10237,38 @@ journalists:
   - https://www.technologyreview.com/supertopic/hype-correction/
   - https://www.technologyreview.com/2025/10/28/1109180/roundtables-climate-solutions/
 - career:
-  - beat: economics, technology, innovation
+  - beat: chemistry, biotechnology, materials science, energy, manufacturing, economics
     end: present
     event_type: hired
-    notes: 'Editor-at-Large. Featured in FT State of AI partnership (Oct 2025): "The Economic Singularity" with FT Columnist Richard Waters. Listed as writer in Hype Correction series (Dec 2025). Served
-      as acting EIC during transition from Pontin to Lichfield (~2017). Long-tenured.'
+    notes: 'Joined MIT Technology Review in 1998 after the magazine''s 1997 editorial restructuring under John Benditt. One of the longest-tenured editorial staff — 27+ year continuous tenure as of 2026.
+      Held multiple editorial roles over the decades: titled "editor" in 2010 (announced TR50 companies list) and 2013 (wrote "From the editor" editorials during Pontin era). Curated the annual 10 Breakthrough
+      Technologies list for multiple years (confirmed 2018, 2020 presentations). Served as acting EIC during Pontin → Lichfield transition (~Jun-Nov 2017). Current role: editor-at-large, focused on story
+      strategy and the intersection of chemistry, materials science, energy, manufacturing, and economics. Multiple Folio Magazine Eddie Awards: gold for "The Price of Biofuels" (2008), gold/silver for "Can
+      Technology Save the Economy?" (2009), gold for "Natural Gas Changes the Energy Map" and "Chasing the Sun" (2010). Featured in FT State of AI partnership (Oct 2025): "The Economic Singularity" with
+      FT Columnist Richard Waters. Listed as writer in Hype Correction series (Dec 2025). Moderates MIT Technology Review Roundtable events (batteries/materials Feb 2024, AI/climate Dec 2024). 146+ published
+      articles on technologyreview.com. Notable long-form: "How Technology Is Destroying Jobs" (Jun 2013), "The Relentless Pace of Automation" (Mar/Apr 2017, cited in Harvard/MIT AI ethics curricula), "Race
+      and Medicine" (Apr 2005), "Why tech didn''t save us from covid-19" (Jun 2020). Twitter: @DavidRotman. ANALYTICAL VALUE: Rotman is the institutional memory of MIT Technology Review — his 27-year tenure
+      spans four EIC regimes (Benditt/Buderi, Pontin, Lichfield, Honan). His beat evolution from science/biotech to economics/AI-and-jobs mirrors the magazine''s own shift from pure technology coverage to
+      technology''s societal impact. As editor-at-large, he shapes which stories the magazine prioritizes without daily byline pressure, making him an invisible hand on MIT Tech Review''s editorial posture
+      toward Big Tech and AI.'
     publication: mit-tech-review
     role: editor_at_large
     source_url: https://www.technologyreview.com/author/david-rotman/
-    start: '?'
-    verified: 'Jul 2026: Confirmed via FT partnership (Oct 2025) as editor-at-large and Hype Correction writing credits.'
+    start: '1998'
+    verified: 'Jul 2026: Deep-dive via GlobeNewsWire 2018 event bio (1998 join date), Folio Eddie Awards via Alchetron, FT partnership (Oct 2025), Hype Correction credits, Roundtable appearances, MIT
+      news archives.'
   multi_publication: false
   name: David Rotman
-  notes: Editor-at-Large at MIT Technology Review. One of the longest-tenured editorial staff. Featured in FT State of AI partnership covering "The Economic Singularity" (Oct 2025).
+  notes: 'Editor-at-Large at MIT Technology Review since 1998 — 27+ year tenure spanning four EIC regimes. Science and business journalist; written extensively on chemistry, biotechnology, materials science,
+    environmental issues, and the economics of technological change. Multiple Folio Eddie Awards (2008-2010). Curated 10 Breakthrough Technologies list. Served as acting EIC (~2017). Featured in FT State
+    of AI "Economic Singularity" partnership (Oct 2025). The institutional memory of MIT Technology Review and an invisible editorial hand on the magazine''s posture toward Big Tech and AI.'
   source_urls:
   - https://www.technologyreview.com/author/david-rotman/
   - https://www.technologyreview.com/supertopic/hype-correction/
+  - https://www.globenewswire.com/news-release/2018/04/25/1487285/0/en/MIT-Enterprise-Forum-of-Cambridge-Hosts-MIT-Technology.html
+  - https://alchetron.com/MIT-Technology-Review
+  - https://spreadingfacts.pubpub.org/user/david-rotman
+  - https://mciworldwide.com/30-01-2024-todays-insights-from-mit-technology-review/
 - career:
   - beat: technology, engineering
     end: '?'
