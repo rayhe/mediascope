@@ -454,8 +454,8 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
-│   └── sample_output/       # 180 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2625 tests across 118 test files (all from real articles)
+│   └── sample_output/       # 181 annotated real-article analyses (see METHODOLOGY.md §17)
+├── tests/                       # 2656 tests across 119 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -495,6 +495,7 @@ mediascope/
 │   ├── test_nyt_ai_reviews.py   # Isolation framing, pressure language, VADER correction
 │   ├── test_nyt_article_improvements.py  # NYT-specific: agency, coercion, juxtaposition
 │   ├── test_nyt_school_targeting.py  # NYT school targeting: education topic, National PTA entity, safety team overrule hypocrisy, role-based adversarial stance
+│   ├── test_nypost_muse_image_yanks_jul13.py  # NY Post Muse Image: capitulation verbs, Path C forced-retreat override, policy_reversal adversarial
 │   ├── test_platform_death.py   # Platform eulogy detection, tone distinction
 │   ├── test_policy_reversal_competitive_deficit.py # Policy reversal and competitive deficit framing device detection, documentary source extraction
 │   ├── test_competitive_displacement.py # Competitive displacement framing device (new — fills-vacuum temporal conjunction), entity cluster additions: AI Research Orgs (AI2), HuggingFace, Princeton, plus OpenAI cluster expansions (GPT-2, gpt-oss, Miles Brundage)

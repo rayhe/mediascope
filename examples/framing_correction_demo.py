@@ -274,7 +274,7 @@ def analyze_with_details(text: str, headline: str, label: str) -> None:
 
     # Adversarial device count (the ones that trigger correction)
     # Canonical adversarial device types — must match sentiment.py's
-    # _ADVERSARIAL_DEVICE_TYPES (31 types as of Jul 2026).
+    # _ADVERSARIAL_DEVICE_TYPES (32 types as of Jul 2026).
     adversarial_types = {
         "loaded_language", "emotional_appeal", "guilt_by_association",
         "catastrophizing", "power_asymmetry", "isolation_framing",
@@ -289,6 +289,7 @@ def analyze_with_details(text: str, headline: str, label: str) -> None:
         "expert_contradiction", "loss_leader_framing",
         "recidivism_framing", "sarcastic_correction",
         "consent_alarm", "precedent_analogy",
+        "policy_reversal",
     }
     adversarial_count = sum(
         1 for d in framing_devices if d.device_type in adversarial_types

@@ -458,6 +458,29 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         # "unsavory" and "unnerving" editorialize by injecting disgust
         # or anxiety into descriptions of technology.
         r"unsavory|unsavoury|unnerving|"
+        # Strong negative characterization — "diabolical" frames
+        # a feature or action as evil/villainous, even in user quotes
+        # the editorial choice to surface it amplifies condemnation.
+        # Discovered via NY Post Meta Muse Image article (Jul 13, 2026):
+        # '"This is diabolical," one user wrote'
+        r"diabolical|nefarious|sinister|villainous|"
+        # Derogatory dismissal of AI-generated content — "slop" frames
+        # AI output as worthless/low-quality refuse.  Increasingly common
+        # across tabloid and editorial tech coverage.
+        # Discovered via NY Post Meta Muse Image article (Jul 13, 2026):
+        # "Force their slop down everyone's throat"
+        r"(?:AI\s+)?slop|"
+        # Loaded "heated" + public response noun — "heated backlash"
+        # editorializes intensity of opposition beyond "backlash" alone.
+        # Existing pattern only matched "heated competition/race/battle".
+        # Discovered via NY Post Meta Muse Image article (Jul 13, 2026).
+        r"heated\s+(?:backlash|outcry|criticism|controversy|debate|opposition|protest|response|reaction|pushback)|"
+        # Data predation metaphors — "harvesting" frames data collection
+        # as predatory extraction.  "Harvesting my identity" is loaded
+        # where neutral alternatives are "collecting" or "using."
+        # Discovered via NY Post Meta Muse Image article (Jul 13, 2026):
+        # "a feature requires harvesting my identity"
+        r"harvest(?:ing|ed|s)?\s+(?:my\s+|your\s+|their\s+|our\s+|user\s+|personal\s+)?(?:identity|data|information|likeness|photos?|images?|content|biometric)|"
         # Suspicion-amplification language — "quell suspicions" frames
         # a company's actions as failing to address ongoing distrust.
         r"(?:quell|allay|dispel|ease)\s+(?:suspicion|fear|concern|doubt|unease|distrust)s?|"
@@ -467,7 +490,10 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         # Discovered via Inc.com Meta Muse Image backlash article (Jul 14, 2026):
         # "pulled the plug" — implies mercy-killing rather than a product decision.
         r"pull(?:ed|s|ing)?\s+the\s+plug|"
-        r"(?:killed|axed|yanked|gutted|nuked|torpedoed|scrapped)\s+(?:the\s+)?(?:\w+\s+){0,2}(?:feature|product|project|service|tool|app|update|initiative|program|plan|effort|launch|rollout|release)|"
+        # Gap widened {0,2} → {0,4} to catch "yanks controversial AI image
+        # tool" (3 adjectives before target noun).  Discovered via NY Post
+        # Meta Muse Image article (Jul 13, 2026).
+        r"(?:killed|axed|yanked|yanks|gutted|nuked|torpedoed|scrapped)\s+(?:the\s+)?(?:\S+\s+){0,4}(?:feature|product|project|service|tool|app|update|initiative|program|plan|effort|launch|rollout|release)|"
         r"(?:feature|product|project|service|tool|app|update|initiative|program|plan|effort|launch|rollout|release)\s+(?:was|were|got|been)\s+(?:killed|axed|yanked|gutted|nuked|torpedoed|scrapped)|"
         r"death\s+(?:of|knell|blow|sentence)\s+(?:for\s+)?(?:the\s+)?(?:\w+\s+){0,2}(?:feature|product|project|service|tool|app)"
         r")\b",

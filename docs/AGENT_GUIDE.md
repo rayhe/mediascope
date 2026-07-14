@@ -1053,7 +1053,7 @@ The pipeline evaluates 12 paths (A–L) in priority order — the first match fi
 
 Only one framing path (A–F, H–L) fires per article. Path G runs independently before the composite is computed.
 
-**Adversarial device types** (31 types trigger Paths A/B): absence_as_evidence, assumed_consensus, catastrophizing, competitive_deficit, competitive_displacement, competitive_positioning, consent_alarm, consumer_ownership, editorial_aside, editorial_deflation, emotional_appeal, failure_precedent, guilt_by_association, hypocrisy_frame, isolation_framing, juxtaposition, kicker_framing, loaded_language, military_techno_optimism, power_asymmetry, precedent_analogy, pressure_language, recidivism_framing, refusal_amplification, self_referential_investigation, silence_as_guilt, slippery_slope, timeline_implication, expert_contradiction, loss_leader_framing, sarcastic_correction.
+**Adversarial device types** (32 types trigger Paths A/B): absence_as_evidence, assumed_consensus, catastrophizing, competitive_deficit, competitive_displacement, competitive_positioning, consent_alarm, consumer_ownership, editorial_aside, editorial_deflation, emotional_appeal, failure_precedent, guilt_by_association, hypocrisy_frame, isolation_framing, juxtaposition, kicker_framing, loaded_language, military_techno_optimism, power_asymmetry, precedent_analogy, pressure_language, recidivism_framing, refusal_amplification, self_referential_investigation, silence_as_guilt, slippery_slope, timeline_implication, expert_contradiction, loss_leader_framing, sarcastic_correction, policy_reversal.
 
 **Anchor device types** (3 types trigger Path C): kicker_framing, self_referential_investigation, juxtaposition.
 

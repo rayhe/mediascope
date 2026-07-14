@@ -524,7 +524,7 @@ The `SentimentResult` preserves both `raw_overall_tone` (uncorrected) and `overa
 | Trigger | Threshold |
 |---|---|
 | Raw composite tone | ≥ 0.0 (non-negative) |
-| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, recidivism_framing, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, competitive_positioning, consumer_ownership, editorial_aside, failure_precedent, editorial_deflation, slippery_slope, competitive_deficit, competitive_displacement, absence_as_evidence, silence_as_guilt, expert_contradiction, loss_leader_framing, sarcastic_correction, consent_alarm, precedent_analogy)) |
+| Adversarial framing devices | ≥ 3 (from the adversarial device type set (loaded_language, emotional_appeal, guilt_by_association, catastrophizing, power_asymmetry, isolation_framing, pressure_language, timeline_implication, juxtaposition, refusal_amplification, recidivism_framing, self_referential_investigation, kicker_framing, hypocrisy_frame, military_techno_optimism, assumed_consensus, competitive_positioning, consumer_ownership, editorial_aside, failure_precedent, editorial_deflation, slippery_slope, competitive_deficit, competitive_displacement, absence_as_evidence, silence_as_guilt, expert_contradiction, loss_leader_framing, sarcastic_correction, consent_alarm, precedent_analogy, policy_reversal)) |
 | Agency attribution | < −0.3 (passive/target of scrutiny) |
 
 **Blend:** 10% raw + 90% framing-derived estimate. The framing estimate is computed from agency, emotional intensity, and adversarial device density.
@@ -1393,7 +1393,7 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **180 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **181 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1509,7 +1509,7 @@ Articles cluster into 9 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 180 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 181 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|

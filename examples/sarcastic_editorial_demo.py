@@ -175,6 +175,7 @@ def analyze_with_path_h_details(
         "expert_contradiction", "loss_leader_framing",
         "recidivism_framing", "sarcastic_correction",
         "consent_alarm", "precedent_analogy",
+        "policy_reversal",
     }
 
     print(f"\n{'=' * 70}")

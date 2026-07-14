@@ -863,6 +863,25 @@ ACTIVE_NEGATIVE_FRAMING: list[str] = [
     "involuntarily transferred",
     "installing tracking", "installs tracking",
     "seizing", "seized",
+    # Capitulation / forced-retreat verbs — the subject is active but the
+    # action is backing down under pressure.  VADER reads these as neutral
+    # or positive agency because the subject is grammatically the agent,
+    # but editorially the frame is humiliation: the company was *forced*
+    # to reverse.  Discovered in NY Post Muse Image article (Jul 14 2026):
+    # "yanks controversial AI image tool" scored agency +0.33 and blocked
+    # the framing correction.
+    "yanked", "yanks", "yanking",
+    "scrapped", "scrapping", "scraps",
+    "axed", "axing", "axes",
+    "backtracked", "backtracking", "backtracks",
+    "walked back", "walking back", "walks back",
+    "backed down", "backing down", "backs down",
+    "reversed course", "reversing course",
+    "caved", "caving",
+    "capitulated", "capitulating",
+    "pulled the plug", "pulling the plug",
+    "killed the feature", "killed the tool",
+    "shelved", "shelving",
 ]
 
 # Comparative framing indicators
@@ -1508,6 +1527,15 @@ _ADVERSARIAL_DEVICE_TYPES: set[str] = {
     # Adversarial because it positions the current event as predictable
     # failure rather than an isolated incident.
     "precedent_analogy",
+    # Policy reversal frames the subject as having been forced to reverse
+    # course under public pressure, positioning corporate capitulation
+    # as an admission of wrongdoing.  Adversarial because the editorial
+    # takeaway is "they knew it was wrong and only stopped when caught."
+    # Discovered in NY Post Muse Image article (Jul 14 2026):
+    # "this feature missed the mark" + "it's no longer available" framed
+    # Meta's reversal as a humiliating retreat rather than responsive
+    # product management.
+    "policy_reversal",
 }
 
 # Anchor device types that create negative reader takeaway even when
@@ -1656,14 +1684,45 @@ def _compute_framing_correction(
         framing_summary.get(dt, 0) for dt in _ADVERSARIAL_DEVICE_TYPES
     )
 
+    # --- Path C: Forced-retreat override (Jul 14 2026) ---
+    # When policy_reversal is present alongside consent_alarm and heavy
+    # loaded_language, the article is a "corporate capitulation" narrative.
+    # The subject has positive grammatical agency (they yanked, reversed,
+    # acknowledged) but the editorial frame is humiliation: the company
+    # was *forced* to back down.  Agency correctly reads as positive, but
+    # that should NOT block the framing correction.
+    #
+    # Discovered in NY Post Muse Image article: "yanks controversial AI
+    # image tool after privacy backlash" had VADER +0.30, agency +0.33,
+    # 11 adversarial devices — correction was blocked by agency > -0.3.
+    #
+    # Override: when policy_reversal >= 1 AND consent_alarm >= 2 (or
+    # loaded_language >= 5), waive the agency threshold.
+    has_policy_reversal = framing_summary.get("policy_reversal", 0) >= 1
+    has_consent_alarm = framing_summary.get("consent_alarm", 0) >= 2
+    has_heavy_loaded = framing_summary.get("loaded_language", 0) >= 5
+    forced_retreat = has_policy_reversal and (has_consent_alarm or has_heavy_loaded)
+
+    # Effective agency threshold: waived for forced-retreat narratives
+    agency_check = forced_retreat or agency < _FRAMING_MAX_AGENCY
+
     # --- Path A: Full correction (raw non-negative, VADER got it wrong) ---
     if (
         raw_tone >= 0
         and adversarial_count >= _FRAMING_MIN_ADVERSARIAL_DEVICES
-        and agency < _FRAMING_MAX_AGENCY
+        and agency_check
     ):
         # Compute framing-derived tone estimate
-        base = agency
+        # For forced-retreat narratives with positive or near-zero agency,
+        # use emotional intensity as the primary tone driver instead of
+        # agency (which is unreliable in capitulation narratives: the
+        # subject's grammatical agency doesn't map to editorial valence).
+        if forced_retreat and agency > _FRAMING_MAX_AGENCY:
+            # Dampen: capitulation narratives are moderately negative,
+            # not as extreme as passive-agency investigative pieces.
+            base = -0.5 * emotional_intensity  # EI 1.0 → base -0.5
+        else:
+            base = agency
         amplified = base * (0.6 + 0.4 * emotional_intensity)
         density_factor = min(adversarial_count / 8.0, 1.0)
         framing_tone = amplified * (0.7 + 0.3 * density_factor)
@@ -1704,7 +1763,7 @@ def _compute_framing_correction(
         raw_tone < 0
         and raw_tone > -0.5  # only amplify mildly-negative scores
         and adversarial_count >= _AMPLIFICATION_MIN_DEVICES
-        and agency < _FRAMING_MAX_AGENCY
+        and agency_check
     ):
         base = agency
         amplified = base * (0.6 + 0.4 * emotional_intensity)

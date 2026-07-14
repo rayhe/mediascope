@@ -1,4 +1,43 @@
 # MediaScope Iteration Log
+## 2026-07-14 15:00 PT — Type A: Article Deep Dive (NY Post Muse Image Forced Retreat)
+
+**Article:** NY Post — "Meta yanks controversial AI image tool after privacy backlash: 'Force their slop down everyone's throat'" (Jul 13, 2026)
+**Note:** NY Post is outside the 5 tracked publications. Selected because tracked publication articles were inaccessible (domain blocks on wired.com/theverge.com, 403s on nytimes.com). Analysis still validates and improves toolkit detection patterns.
+
+### Key Discovery: VADER Polarity Inversion in Forced-Retreat Narratives
+
+VADER scored +0.30 on a clearly negative article because corporate capitulation language ("Our intent was to," "We've heard the feedback") reads as neutral/positive. The existing framing correction (Path A) was blocked by agency = +0.33 — Meta is the active agent (yanking, acknowledging) but the editorial frame is humiliation.
+
+**Root cause:** Path A requires `agency < -0.3`, designed for investigative pieces where the subject is passively scrutinized. "Forced retreat" narratives have the subject actively capitulating — high grammatical agency, negative editorial valence.
+
+### Fixes
+
+**framing.py:**
+1. Death/termination metaphor gap widened `{0,2}` → `{0,4}`, added `yanks`
+2. New loaded_language terms: `diabolical|nefarious|sinister|villainous`, `AI slop`, `heated backlash/outcry/...`, `harvest(ing) identity/data/...`
+
+**sentiment.py:**
+3. 18 capitulation verbs added to `ACTIVE_NEGATIVE_FRAMING` (yanked/yanks/yanking, scrapped, backtracked, walked back, backed down, reversed course, caved, capitulated, pulled the plug, killed the feature/tool, shelved, etc.)
+4. `policy_reversal` reclassified as adversarial device type (31 → 32)
+5. **Path C: Forced-retreat override** — when `policy_reversal ≥ 1` AND (`consent_alarm ≥ 2` OR `loaded_language ≥ 5`), the agency threshold is waived. Uses dampened emotional intensity (0.5×) as base tone for capitulation narratives.
+
+### Results
+
+| Metric | Before | After |
+|--------|--------|-------|
+| Framing devices | 12 | 15 |
+| Agency | +0.33 | -0.20 |
+| VADER compound | +0.30 | +0.30 (unchanged) |
+| Composite overall_tone | +0.20 (no correction) | **-0.43** (corrected) |
+| framing_corrected | False | **True** |
+| Manual estimate | — | -0.45 |
+
+### Stats
+
+- Article #181, tests: 2,656 (119 files), adversarial device types: 32, patterns: 630
+
+---
+
 ## 2026-07-14 14:00 PT — Type D: Toolkit Quality & Documentation (The Register Muse Image Article)
 
 **Commit:** `c956e92` — "Type D: Register Muse Image article #180, 4 regex fixes + sardonic enumeration pattern"

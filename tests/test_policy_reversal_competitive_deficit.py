@@ -93,9 +93,14 @@ class TestPolicyReversal:
         types = {d.device_type for d in devices}
         assert "policy_reversal" in types
 
-    def test_not_adversarial(self):
-        """policy_reversal should NOT be in adversarial device types."""
-        assert "policy_reversal" not in _ADVERSARIAL_DEVICE_TYPES
+    def test_is_adversarial(self):
+        """policy_reversal IS adversarial — frames subject as forced to
+        reverse course under pressure, positioning capitulation as an
+        admission of wrongdoing.  Reclassified Jul 14 2026 after NY Post
+        Muse Image article showed that consent_alarm + policy_reversal
+        creates a 'corporate humiliation' narrative that VADER misreads
+        as positive."""
+        assert "policy_reversal" in _ADVERSARIAL_DEVICE_TYPES
 
     def test_no_false_positive_future_plans(self):
         """Should not fire on simple future plans without a prior policy."""

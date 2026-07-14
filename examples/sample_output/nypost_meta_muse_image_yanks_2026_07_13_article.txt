@@ -1,0 +1,19 @@
+Meta yanks controversial AI image tool after privacy backlash: 'Force their slop down everyone's throat'
+
+Meta yanked its new Instagram AI image feature – which automatically opted in photos from all public accounts – just a few days after launch following heated backlash over privacy concerns.
+
+"Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way," Meta said in a statement Friday.
+
+"We've heard the feedback that this feature missed the mark, so it's no longer available."
+
+The Instagram, Facebook and WhatsApp owner last Tuesday launched Muse Image, its first AI image generator meant to compete with OpenAI's ChatGPT Images 2.0 and Google's Nano Banana 2.
+
+Meta's Superintelligence Labs folded the new bot into Instagram and automatically enrolled all public accounts, meaning anyone on the internet could simply tag your username in an AI prompt and generate an image using your likeness.
+
+Instagram accounts would not be notified about content created using the AI image tool, so your photos and videos could be transformed by other users without your knowledge – unless you manually turned off the feature in settings.
+
+"This is diabolical," one user wrote in a post on X, complaining that they were unable to turn off the feature. "It keeps automatically toggling it back on. I can't turn it off unless I go private."
+
+Another user complained: "Basically now anyone can clone your voice, face easily on Insta. And even if you figure this privacy setting out and switch it off, some are reporting it turns on by itself. So I have a simple recommendation as always. Stop using Meta's products."
+
+Many online blasted Meta for automatically enrolling public accounts, with one writing, "Classic Instagram making us do homework just to keep our privacy," while another wrote, "If a feature requires harvesting my identity, it should never start as a 'yes.'"
