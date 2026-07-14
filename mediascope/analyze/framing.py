@@ -849,6 +849,19 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"stabbed|stabbing)\b",
         re.IGNORECASE,
     ),
+    # -----------------------------------------------------------------------
+    # Failure-outcome verbs and editorial judgment adjectives — standalone
+    # editorial characterizations of corporate actions or products.
+    # Discovered in The Register Muse Image article (Jul 13, 2026):
+    #   "has now backfired", "too stupid to survive"
+    # -----------------------------------------------------------------------
+    re.compile(
+        r"\b(?:backfired|blew up in|spectacularly (?:failed|backfired|imploded)|"
+        r"too (?:stupid|dumb|naive|blind|arrogant|lazy|slow|late) to\s+\w+|"
+        r"fell flat|face-planted|flopped|face-palmed|"
+        r"blundered|botched|bungled|fumbled|stumbled)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 
@@ -1130,7 +1143,7 @@ _POWER_ASYMMETRY_PATTERNS: list[re.Pattern] = [
 _CEO_PERSONALIZATION_PATTERNS: list[re.Pattern] = [
     # "[CEO]'s [Company]" — possessive CEO-company naming
     re.compile(
-        r"\b(?:Mark Zuckerberg|Zuckerberg|Elon Musk|Musk|Tim Cook|Cook|"
+        r"\b(?:Mark Zuckerberg|Zuckerberg|Zuck|Elon Musk|Musk|Tim Cook|Cook|"
         r"Sundar Pichai|Pichai|Satya Nadella|Nadella|Jeff Bezos|Bezos|"
         r"Sam Altman|Altman|Jensen Huang|Huang|Andy Jassy|Jassy)'s\s+"
         r"(?:Meta|Facebook|Instagram|WhatsApp|Tesla|Apple|Google|Alphabet|"
@@ -1140,10 +1153,13 @@ _CEO_PERSONALIZATION_PATTERNS: list[re.Pattern] = [
     # "[CEO]'s [plan/vision/strategy/initiative]" — personalizing corporate
     # strategy under the CEO's name, implying individual authoritarian control
     # over institutional decisions.  Common in Atlantic/NYT coverage.
+    # Allows 0-3 modifying adjectives between possessive and strategy noun
+    # (e.g. "Zuck's latest big bet").
     re.compile(
-        r"\b(?:Mark Zuckerberg|Zuckerberg|Elon Musk|Musk|Tim Cook|Cook|"
+        r"\b(?:Mark Zuckerberg|Zuckerberg|Zuck|Elon Musk|Musk|Tim Cook|Cook|"
         r"Sundar Pichai|Pichai|Satya Nadella|Nadella|Jeff Bezos|Bezos|"
         r"Sam Altman|Altman|Jensen Huang|Huang|Andy Jassy|Jassy)'s\s+"
+        r"(?:\w+\s+){0,3}?"
         r"(?:plan|vision|strategy|initiative|ambition|quest|mission|"
         r"push|drive|bet|gamble|gambit|dream|pitch|promise|agenda|"
         r"obsession|fixation|crusade|campaign)\b",
@@ -1151,9 +1167,23 @@ _CEO_PERSONALIZATION_PATTERNS: list[re.Pattern] = [
     ),
     # "[CEO]-led [Company]" or "[Company], led by [CEO]"
     re.compile(
-        r"\b(?:Mark Zuckerberg|Zuckerberg|Elon Musk|Musk|Tim Cook|Cook|"
+        r"\b(?:Mark Zuckerberg|Zuckerberg|Zuck|Elon Musk|Musk|Tim Cook|Cook|"
         r"Sundar Pichai|Pichai|Satya Nadella|Nadella|Sam Altman|Altman)"
         r"(?:-led|[\s,]+led)\s+\w+\b",
+        re.IGNORECASE,
+    ),
+    # -----------------------------------------------------------------------
+    # "[CEO] believes/wants/thinks/insists" — CEO as subject of belief or
+    # opinion verbs, personalizing institutional strategy as individual whim.
+    # Discovered in The Register Muse Image article (Jul 13, 2026):
+    #   "Zuck believes users of his social networks mostly want to see..."
+    # -----------------------------------------------------------------------
+    re.compile(
+        r"\b(?:Mark Zuckerberg|Zuckerberg|Zuck|Elon Musk|Musk|Tim Cook|Cook|"
+        r"Sundar Pichai|Pichai|Satya Nadella|Nadella|Jeff Bezos|Bezos|"
+        r"Sam Altman|Altman|Jensen Huang|Huang|Andy Jassy|Jassy)\s+"
+        r"(?:believes?|thinks?|wants?|insists?|envisions?|imagines?|"
+        r"decided|expects?|hopes?|bets?|argues?)\b",
         re.IGNORECASE,
     ),
 ]
@@ -4049,6 +4079,40 @@ _CONFESSION_FRAMING_PATTERNS: list[re.Pattern] = [
 
 _DEVICE_PATTERNS["confession_framing"] = _CONFESSION_FRAMING_PATTERNS
 
+# -----------------------------------------------------------------------
+# Additional confession_framing patterns discovered in The Register Muse
+# Image article (Jul 13, 2026):
+#
+# 1. "[Entity] admits [clause with negative characterization]" — broader
+#    pattern where "admits" precedes a negative judgment, not just a
+#    failure noun.  E.g. "Meta admits its first 'superintelligence' was
+#    too stupid to survive."
+# 2. "realized the error of [possessive] ways" — confession-adjacent
+#    language framing a business decision as moral reckoning.
+# -----------------------------------------------------------------------
+_CONFESSION_FRAMING_PATTERNS.extend([
+    # "[Entity] admits [its/the/that] ... [negative adjective/outcome]"
+    # Gap uses \S+ (not \w+) to handle punctuation like scare-quoted words.
+    # Terminal negatives use \b boundary (not trailing \s+) to match at
+    # sentence end.
+    re.compile(
+        r"\b(?:admit(?:ted|s)?|conced(?:ed|es|ing)|acknowledg(?:ed|es|ing))\s+"
+        r"(?:its?\s+|the\s+|that\s+)?"
+        r"(?:\S+\s+){0,8}?"
+        r"(?:too\s+\w+|wasn't|isn't|failed?|couldn't|"
+        r"didn't|won't|unable|incapable|"
+        r"wasn't\s+good\s+enough|fell\s+short|was\s+wrong|"
+        r"backfired|flopped|bombed|tanked|collapsed|"
+        r"stupid|broken|flawed|inadequate|insufficient)\b",
+        re.IGNORECASE,
+    ),
+    # "realized the error of [its/his/her/their] ways"
+    re.compile(
+        r"\brealized?\s+(?:the\s+)?error\s+of\s+(?:its|his|her|their)\s+ways\b",
+        re.IGNORECASE,
+    ),
+])
+
 
 # ---------------------------------------------------------------------------
 # Latecomer narrative — editorial device that frames a company as entering
@@ -4486,6 +4550,41 @@ _EDITORIAL_DEFLATION_PATTERNS.extend([
         r"\b(?:and\s+such|or\s+whatever|or\s+something|and\s+whatnot"
         r"|and\s+all\s+that|and\s+stuff\s+like\s+that)\b"
         r"(?:\s*[?.!])",
+        re.IGNORECASE,
+    ),
+    # -----------------------------------------------------------------------
+    # Scare-quoted aspirational term + negative characterization — editorial
+    # deflation where corporate branding is placed in scare quotes and then
+    # immediately undermined by negative language.
+    # Discovered in The Register Muse Image article (Jul 13, 2026):
+    #   "'superintelligence' was too stupid to survive"
+    #   "'groundbreaking' product failed within hours"
+    # -----------------------------------------------------------------------
+    re.compile(
+        r"""['"\u2018\u2019\u201c\u201d]"""
+        r"(?:superintelligen\w+|groundbreaking|revolutionary|transformative|"
+        r"innovative|cutting[- ]edge|game[- ]changing|breakthrough|"
+        r"world[- ]class|best[- ]in[- ]class|next[- ]gen(?:eration)?|"
+        r"state[- ]of[- ]the[- ]art|pioneering|disruptive|visionary)"
+        r"""['"\u2018\u2019\u201c\u201d]"""
+        r"\s+(?:\w+\s+){0,4}?"
+        r"(?:was|were|is|isn't|failed|couldn't|didn't|too\s+\w+\s+to|"
+        r"flopped|backfired|collapsed|stumbled|crumbled|fell\s+(?:flat|short)|"
+        r"lasted?\s+(?:only|just|barely|fewer|less))\b",
+        re.IGNORECASE,
+    ),
+    # Temporal deflation: aspirational lab/brand name immediately followed
+    # by short lifespan emphasizing institutional failure.
+    # "withdrawn ... from its Superintelligence Labs fewer than 72 hours"
+    # Gap uses \S+ (not \w+) and widened to 12 tokens to span descriptive
+    # noun phrases between the action verb and the temporal qualifier.
+    re.compile(
+        r"\b(?:withdrawn|pulled|removed|killed|yanked|scrapped|axed|shelved)"
+        r"\s+(?:\S+\s+){0,12}?"
+        r"(?:fewer than|less than|under|within|in just|barely|only)\s+"
+        r"(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|"
+        r"a few|several|a mere)\s+"
+        r"(?:hours?|days?|weeks?)\b",
         re.IGNORECASE,
     ),
 ])
@@ -5412,6 +5511,41 @@ _EDITORIAL_ASIDE_PATTERNS: list[re.Pattern] = [
     ),
 ]
 _DEVICE_PATTERNS["editorial_aside"] = _EDITORIAL_ASIDE_PATTERNS
+
+# -----------------------------------------------------------------------
+# Additional editorial_aside patterns discovered in The Register Muse Image
+# article (Jul 13, 2026).  Three new signal types:
+#
+# 1. Disbelief markers: "Yet somehow", "And yet" — signal editorial
+#    incredulity at institutional incompetence.
+# 2. Sentence-initial ironic qualifiers: "Interestingly", "Curiously",
+#    "Remarkably", "Unsurprisingly" — signal editorial skepticism.
+# 3. Jargon gloss: "X-speak for Y" — parenthetical translation of corporate
+#    jargon, with implicit dismissal of the terminology.
+# -----------------------------------------------------------------------
+_EDITORIAL_ASIDE_PATTERNS.extend([
+    # Disbelief markers: "Yet somehow", "And yet", "But somehow"
+    re.compile(
+        r"\b(?:Yet somehow|And yet|But somehow|"
+        r"Somehow,?\s+(?:though|however)|"
+        r"But of course|And of course|"
+        r"Oddly enough|Strangely enough|Funnily enough)\b",
+        re.IGNORECASE,
+    ),
+    # Sentence-initial ironic qualifiers
+    re.compile(
+        r"(?:^|(?<=\.\s)|(?<=\.\s\s))(?:Interestingly|Curiously|"
+        r"Remarkably|Unsurprisingly|Predictably|Ironically|"
+        r"Conveniently|Notably|Fascinatingly|Amusingly|Tellingly)"
+        r",?\s",
+        re.MULTILINE,
+    ),
+    # Jargon gloss: "X-speak for Y" / "corporate-speak for Y"
+    re.compile(
+        r"\b\w+[- ]speak\s+for\s+",
+        re.IGNORECASE,
+    ),
+])
 
 
 def _detect_analogy_stacking(text: str) -> list[FramingDevice]:
@@ -6528,6 +6662,21 @@ _POLICY_REVERSAL_PATTERNS: list[re.Pattern] = [
         r".{1,80}?(?:no longer|discontinued|shut(?:ting)? down|removed|"
         r"pulling|pulled|paused|suspended))\b",
         re.IGNORECASE | re.DOTALL,
+    ),
+    # -----------------------------------------------------------------------
+    # Intent displacement + active listening: "Our intent was to provide"
+    # and "We've heard the feedback" — standalone controlled retreat markers
+    # that signal corporate PR damage control language.  These are policy
+    # reversal signals even without explicit "no longer available" nearby.
+    # Discovered in The Register Muse Image article (Jul 13, 2026).
+    # -----------------------------------------------------------------------
+    re.compile(
+        r"\b(?:our\s+intent\s+(?:was|is)\s+to\s+"
+        r"|we(?:'ve| have)\s+heard\s+(?:the\s+)?(?:feedback|concerns|criticism|outcry)"
+        r"|we\s+(?:hear|understand|appreciate)\s+(?:the\s+)?(?:feedback|concerns|criticism)"
+        r"|this\s+feature\s+missed\s+the\s+mark"
+        r"|we\s+missed\s+the\s+mark)\b",
+        re.IGNORECASE,
     ),
     # -----------------------------------------------------------------------
     # Temporal compression: editorial emphasis on how briefly a feature or
@@ -8714,6 +8863,49 @@ _RECIDIVISM_FRAMING_PATTERNS: list[re.Pattern] = [
 
 _DEVICE_PATTERNS["recidivism_framing"] = _RECIDIVISM_FRAMING_PATTERNS
 
+# -----------------------------------------------------------------------
+# Additional recidivism_framing patterns discovered in The Register Muse
+# Image article (Jul 13, 2026):
+#
+# Sardonic enumeration of repeated failures — "leads the world in...
+# dealing with community backlashes after privacy abuses."  The
+# recidivism signal is in framing the entity as experienced at being
+# criticized, implying the behavior is chronic.
+# -----------------------------------------------------------------------
+_RECIDIVISM_FRAMING_PATTERNS.extend([
+    # "[Entity] ... backlash/controversy/scandal ... again/repeatedly/always"
+    re.compile(
+        r"\b(?:backlash(?:es)?|controvers(?:y|ies)|scandal|privacy\s+abuse)\w*\b"
+        r".{0,40}?"
+        r"\b(?:again|repeatedly|always|every\s+time|time\s+after\s+time)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Experience-at-failure: "[Entity] ... [experienced at/accustomed to/no
+    # stranger to] ... backlash/controversy/privacy"
+    re.compile(
+        r"\b(?:experienced?\s+(?:at|with|in)|accustomed\s+to|no\s+stranger\s+to|"
+        r"well[- ]versed\s+in|familiar\s+with)\s+"
+        r"(?:\w+\s+){0,3}?"
+        r"(?:backlash|controversy|scandal|privacy|criticism|public\s+outcry)\b",
+        re.IGNORECASE,
+    ),
+    # Sardonic competence enumeration: "leads the world in" / "best known
+    # for" / "notorious for" followed within ~200 chars by a negative noun
+    # (backlash, scandal, privacy abuse, etc.).  Catches sardonic lists that
+    # ironically credit the entity with expertise at failing.
+    # Discovered in The Register Muse Image article (Jul 13, 2026):
+    #   "Meta almost certainly leads the world in three things: ...
+    #    dealing with community backlashes after privacy abuses."
+    re.compile(
+        r"\b(?:leads?(?:\s+the\s+world)?\s+in|best\s+known\s+for|famous\s+for|"
+        r"notorious\s+for|known\s+(?:mainly|primarily|chiefly|mostly)?\s*for)\b"
+        r".{0,200}?"
+        r"\b(?:backlash(?:es)?|controvers(?:y|ies)|scandal|privacy\s+abuse|"
+        r"failure|violation|breach|misstep|blunder|fiasco)s?\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+])
+
 
 # --- No-comment implication ---
 # "X did not immediately respond" / "X declined to comment" positions the
@@ -8786,6 +8978,31 @@ _CONSENT_ALARM_PATTERNS: list[re.Pattern] = [
     ),
 ]
 _DEVICE_PATTERNS["consent_alarm"] = _CONSENT_ALARM_PATTERNS
+
+# -----------------------------------------------------------------------
+# Additional consent_alarm patterns discovered in The Register Muse Image
+# article (Jul 13, 2026) and SAG-AFTRA statement:
+#
+# 1. "enabling/turned on by default" — broader "by default" framing
+# 2. "OPT-IN" (caps) and "opt-in" demands as consent-alarm signal
+# -----------------------------------------------------------------------
+_CONSENT_ALARM_PATTERNS.extend([
+    # "[feature/setting/tool] [enabled/turned on/activated] by default"
+    re.compile(
+        r"\b(?:enabl(?:ed|ing)|turn(?:ed|ing)\s+on|activat(?:ed|ing)|"
+        r"switch(?:ed|ing)\s+on|set|toggled)\s+"
+        r"(?:\w+\s+){0,3}?"
+        r"by\s+default\b",
+        re.IGNORECASE,
+    ),
+    # Explicit "opt-in" demands: "clear and conspicuous OPT-IN",
+    # "should have been opt-in", "requires opt-in"
+    re.compile(
+        r"\b(?:opt[- ]?in|explicit consent|informed consent|"
+        r"affirmative consent|prior consent)\b",
+        re.IGNORECASE,
+    ),
+])
 
 # ---- editorial_character_attack ----
 # Detects ad-hominem editorial framing where the journalist inserts

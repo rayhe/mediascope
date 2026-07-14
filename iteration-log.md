@@ -1,4 +1,42 @@
 # MediaScope Iteration Log
+## 2026-07-14 14:00 PT — Type D: Toolkit Quality & Documentation (The Register Muse Image Article)
+
+**Commit:** pending
+
+### Summary
+Added The Register's sardonic "Meta admits its first 'superintelligence' was too stupid to survive for three days" (Jul 13, 2026) as annotated article #180. Fixed 4 regex pattern bugs across 3 device types, added 1 new recidivism sub-pattern, and widened CEO_personalization to handle modifier adjectives.
+
+### Pattern Fixes (4 bugs, 1 new pattern)
+1. **confession_framing** — `\w+\s+` gap couldn't match scare-quoted words (`'superintelligence'`); changed to `\S+\s+`. Terminal negative words required trailing `\s+`, failing at sentence end; switched to `\b` boundary.
+2. **editorial_deflation** (temporal deflation) — gap `{0,6}` with `\w+\s+` was too narrow for long descriptive noun phrases ("the first image generation product created by its Superintelligence Labs"); widened to `\S+\s+{0,12}`.
+3. **ceo_personalization** — pattern 2 required strategy noun immediately after possessive (`Zuck's bet`), missing cases with modifier adjectives (`Zuck's latest big bet`); added `(\w+\s+){0,3}?` gap.
+4. **recidivism_framing** — new sardonic competence enumeration pattern: "leads the world in" / "best known for" / "notorious for" + negative noun within 200 chars. Catches ironic expertise-at-failure framing.
+
+### New Annotated Article (#180)
+- **The Register** — "Meta admits its first 'superintelligence' was too stupid to survive for three days" (Jul 13, 2026)
+- Genre: sardonic tech editorial (~450 words, British register)
+- 15 adversarial framing devices across 9 types
+- VADER polarity inversion: +0.38 raw vs -0.55 manual
+
+### New Test File
+- `test_register_muse_image_superintelligence_jul13.py` — 22 tests covering 9 device types
+
+### Stats
+- Framing patterns: 615 → 630 (+15 compiled regex patterns)
+- Annotated articles: 179 → 180
+- Tests: 2,603 → 2,625 (117 → 118 files)
+- All 2,625 tests passing, zero regressions
+
+### Files Modified
+- `mediascope/analyze/framing.py` — 4 pattern fixes + 1 new pattern
+- `examples/sample_output/register_meta_muse_image_superintelligence_2026_07_13_article.txt` (new)
+- `examples/sample_output/register_meta_muse_image_superintelligence_2026_07_13_analysis.md` (new)
+- `tests/test_register_muse_image_superintelligence_jul13.py` (new)
+- `README.md` — stats 676→691 patterns, 2603→2625 tests, 117→118 files, new test entry
+- `docs/ARCHITECTURE.md` — stats 615→630 patterns, 2603→2625 tests, 117→118 files, new test entry
+- `docs/METHODOLOGY.md`, `docs/QUALITY_STANDARDS.md`, `docs/ACCURACY_GUIDE.md` — article count 179→180
+- `tests/test_structural_consistency.py` — EXPECTED_TOTAL_PATTERNS 615→630
+
 ## 2026-07-14 13:00 PT — Type C: Ownership & Funding Deep Dive (PMC Layoff Pattern + PAG New 52-Week High + Cross-Portfolio Stock Update)
 
 **Commit:** `a893d66` — "Type C: PMC layoff pattern (Dec 2025–Jan 2026), PAG new 52-week high, VSEAT update (Jul 14)"
