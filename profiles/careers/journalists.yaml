@@ -632,56 +632,143 @@ journalists:
   - https://talkingbiznews.com/they-talk-biz-news/mit-tech-review-hires-honan-as-editor-in-chief/
   - https://en.wikipedia.org/wiki/MIT_Technology_Review
 - career:
-  - beat: science
+  - beat: science, technology
     end: '2003'
+    event_type: hired
+    notes: 'Began journalism career in 1996 on The Economist''s science desk in London. First
+      job in journalism. British national, born Aug 4 1971 in London.'
     publication: economist
     role: science_correspondent
+    source_url: https://en.wikipedia.org/wiki/Gideon_Lichfield
     start: '1996'
   - beat: Mexico City bureau
     end: '2005'
+    event_type: hired
+    notes: Foreign correspondent posting in Mexico City. Part of a 16-year Economist career
+      spanning four foreign bureaus. Speaks Spanish fluently.
     publication: economist
     role: correspondent
+    source_url: https://en.wikipedia.org/wiki/Gideon_Lichfield
     start: '2003'
   - beat: Moscow bureau
     end: '2008'
+    event_type: hired
+    notes: Foreign correspondent posting in Moscow. Speaks Russian. Covered post-Soviet
+      political developments. Self-described as generation shaped by the fall of the Berlin
+      Wall — "I was 18 when the Berlin Wall came down."
     publication: economist
     role: correspondent
+    source_url: https://en.wikipedia.org/wiki/Gideon_Lichfield
     start: '2005'
   - beat: Jerusalem bureau
     end: '2011'
+    event_type: hired
+    notes: Foreign correspondent posting in Jerusalem. Speaks Hebrew. Final foreign bureau
+      before returning to New York City.
     publication: economist
     role: correspondent
+    source_url: https://en.wikipedia.org/wiki/Gideon_Lichfield
     start: '2008'
-  - end: '2012'
+  - beat: digital strategy, executive education
+    end: '2012'
+    event_type: hired
+    notes: 'Returned to NYC. Dual role: Deputy Digital Editor and editorial head of Economist
+      Education, an internal startup aimed at business executives. Final Economist position
+      before departing for Quartz. Also served as adjunct professor at NYU''s Arthur L.
+      Carter Journalism Institute (2011), teaching graduate course in foreign reporting.'
     publication: economist
     role: deputy_digital_editor
+    source_url: https://en.wikipedia.org/wiki/Gideon_Lichfield
     start: '2011'
-  - beat: founding editor, ethics policy, style guide
+  - beat: founding editor, ethics policy, style guide, newsletters
     end: '2017'
+    event_type: hired
+    notes: 'One of the founding editors at Quartz (launched by The Atlantic in 2012 as a
+      global business/economics news site). Led initial newsroom hiring, established editorial
+      voice, developed ethics policy and style guide, edited Quartz Daily Brief newsletter
+      — a pioneer in the email newsletter space. Title evolved to senior editor for business
+      news. CONCURRENT: One-year fellowship at Data & Society Research Institute (2014-15)
+      as Science Fiction Writer in Residence, writing speculative fiction exploring social/political
+      implications of technological advances.'
     publication: quartz
     role: global_news_editor
+    source_url: https://talkingbiznews.com/they-talk-biz-news/quartz-lichfield-named-editor-of-mit-tech-review/
     start: '2012'
-  - end: 2021-03
+  - beat: technology, society, policy
+    end: 2021-03
+    event_type: hired
+    notes: 'EIC from early Dec 2017. Oversaw editorial content and products: website, digital
+      newsletters, print magazine, live events, new platforms. Gave MIT TR new mission: "to
+      make technology a greater force for good." Led aggressive coverage of MIT-Epstein scandal
+      (2019). Added podcasts, themed print issues, grant-funded journalism, collaborations
+      with investigative outlets. Grew audience development team, increased long-form online
+      features output. Improved diversity recruiting/hiring practices. Edited ''Make Shift:
+      Dispatches from the Post-Pandemic Future'' (MIT Press, May 2021). Compensation $269K-$278K
+      (FY2019-2021 990 filings). KEY MIGRATION: Left for Wired as Global Editorial Director
+      — replaced by Mat Honan (from BuzzFeed News).'
     publication: mit-tech-review
     role: eic
+    source_url: https://www.technologyreview.com/2017/12/05/3720/a-letter-from-mit-technology-reviews-new-editor-in-chief/
     start: 2017-12
-  - end: 2023-08
+  - beat: technology, culture, society, global
+    end: 2023-09
+    event_type: hired
+    notes: 'Appointed Global Editorial Director (not just EIC) — responsible for content
+      strategy, vision and tone across all Wired editions: US, UK, Italy, Japan. Started
+      March 22, 2021. Replaced Nicholas Thompson (who left for The Atlantic as CEO). Reported
+      to Anna Wintour (Chief Content Officer, Condé Nast). Title change from "EIC" to "Global
+      Editorial Director" reflected Condé Nast global reorganization under Wintour. Co-created
+      and co-hosted "Have a Nice Future" podcast with Lauren Goode — 58 episodes through
+      Oct 25, 2023. Also co-hosted "WIRED Politics Lab" with Goode. Announced departure
+      May 31, 2023: "I want to begin focusing more of my energies on [how societies can govern
+      themselves]... at least some of it probably involves committing acts of journalism with
+      my own two hands, a thing I''ve increasingly missed doing." Stayed until mid-September
+      2023. Replaced by Katie Drummond (from Vice News, announced Aug 10, started Aug 28).
+      KEY: Only held position ~2.5 years — significantly shorter than predecessor Thompson
+      (~7 years). Remained as Wired Contributor through Oct 2023 for final HANF podcast episodes.'
     publication: wired
     role: global_editorial_director
+    source_url: https://talkingbiznews.com/media-news/wired-eic-lichfield-is-departing/
     start: 2021-03
-  - beat: Harvard Ash Center, Futurepolis Substack
+  - beat: democracy, governance, technology regulation
     end: present
-    publication: independent
+    event_type: hired
+    notes: 'Post-Wired career pivot from tech journalism to democracy/governance. Mini-sabbatical
+      (Collision conference, Sept 2023). Currently: Fellow at Harvard Ash Center for Democratic
+      Governance; Data & Society affiliate; writes "Futurepolis" Substack ($5/mo, $50/yr)
+      on reinventing democratic governance for the 21st century. Self-describes as "Democracy
+      Futurist" on LinkedIn. Speaker on tech regulation and citizens'' assemblies (Templeton
+      World Charity Foundation, FWD50, Beyond Intractability). Splits time between NYC and
+      Bay Area. KEY ANALYTICAL NOTE: NOT at The Independent newspaper — "independent" refers
+      to independent/freelance status. Publication slug corrected from prior erroneous "independent"
+      to "freelance".'
+    publication: freelance
     role: democracy_futurist
-    start: '2023'
+    source_url: https://beyondintractability.org/gideon-lichfield-interview
+    start: 2023-10
   multi_publication: true
   name: Gideon Lichfield
-  notes: 'Born Aug 4, 1971. BSc Physics & Philosophy (Bristol), MSc Philosophy of Social Science (LSE). Speaks 5 languages. Edited ''Make Shift: Dispatches from the Post-Pandemic Future'' (MIT Press, 2021).
-    Currently Harvard Ash Center for Democratic Governance.'
+  notes: 'Born Aug 4, 1971 in London. BSc Physics & Philosophy (University of Bristol),
+    MSc Philosophy of Social Science (London School of Economics). British national. Speaks
+    5 languages: English, Spanish, French, Russian, Hebrew. Edited ''Make Shift: Dispatches
+    from the Post-Pandemic Future'' (MIT Press, 2021). Data & Society fellow (2014-15,
+    Science Fiction Writer in Residence). NYU adjunct professor (2011, Arthur L. Carter
+    Journalism Institute). Currently Harvard Ash Center for Democratic Governance fellow
+    + Futurepolis Substack. Self-described: "polyglot, climber, biker, cocktailer, and
+    vagabond." ANALYTICAL SIGNIFICANCE: Dual EIC at two tracked publications (MIT Technology
+    Review 2017-2021, Wired 2021-2023) makes him the single most valuable natural experiment
+    for DiD editorial influence analysis. His departure letter explicitly stated wanting
+    to return to hands-on journalism and focus on governance — a rare voluntary departure
+    by a top-tier EIC from a Condé Nast title.'
   source_urls:
   - https://en.wikipedia.org/wiki/Gideon_Lichfield
-  - https://mediapost.com/publications/article/359824/gideon-lichfield-named-global-editorial-director.html
+  - https://talkingbiznews.com/media-news/wired-eic-lichfield-is-departing/
+  - https://talkingbiznews.com/they-talk-biz-news/new-wired-editor-lichfield-says-goodbye-to-mit-technology-review/
+  - https://www.mediapost.com/publications/article/361048/gideon-lichfield-named-global-editorial-director.html
   - https://beyondintractability.org/gideon-lichfield-interview
+  - https://datasociety.net/people/lichfield-gideon/
+  - https://sternstrategy.com/speaker/gideon-lichfield/
+  - https://sidestack.io/directory/substack/futurepolis
 - career:
   - beat: general, local news
     end: 1986-01
