@@ -1,4 +1,68 @@
 # MediaScope Iteration Log
+## 2026-07-14 00:00 PT — Type B: Journalist Research (Lauren Goode Deep Sourcing)
+
+**Journalist:** Lauren Goode — Wired Senior Correspondent (upgraded from Senior Writer ~2025)
+**Commit:** `015fcea` — "Type B: Lauren Goode deep sourcing — title upgrade to Senior Correspondent, education, 8 source URLs"
+
+### Summary
+
+Lauren Goode had 7 career entries but **zero top-level source_urls** — one of the most prominent Wired reporters in the MediaScope dataset with no primary sourcing for verification. Also had an outdated title (senior_writer) and no structured education data.
+
+### Changes
+
+1. **Title upgrade discovered: senior_writer → senior_correspondent**
+   - Confirmed by 6 independent 2025-2026 sources: Muck Rack bio, BuzzSumo profile, HumanX 2026 panel (Micron/AMD), Cooper Union John Jay Iselin Memorial Lecture, TWiT Tech News Weekly, Big Technology AI Summit (Mike Krieger co-interview)
+   - Earlier sources (~2023) still use "Senior Staff Writer" → upgrade happened ~2025
+   - Analytically significant: signals increased editorial authority within Condé Nast
+
+2. **Beat expansion documented**
+   - From: consumer tech, apps, services, Big Tech trends
+   - To: AI, semiconductors, Silicon Valley culture, tech-humanity intersection
+   - Cooper Union event bio (Mar 2026): "writes about artificial intelligence, semiconductors, Silicon Valley culture, and the intersection of technology and humanity"
+   - Beat expansion parallels Wired's broader editorial pivot under Drummond
+
+3. **Education structured**
+   - Clark University BA English, class of 2003
+   - Stanford MA Communication (Department of Communication houses journalism program; some bios say "MA in Journalism," others "MA in Communications" — same program)
+
+4. **8 top-level source_urls added**
+   - Clark University alumni profile, AllThingsD intro (Mossberg/Swisher), TalkingBizNews hire announcement, Computer History Museum, Muck Rack, Zócalo Public Square, Worth magazine, Powerful Ladies podcast
+
+5. **Analytical notes expanded**
+   - Mossberg/Swisher talent pipeline analysis (Mike Isaac, Peter Kafka, Ina Fried lineage)
+   - Multi-format career arc significance (TV production → video journalism → multimedia editor → writer/podcaster)
+   - Institutional assimilation metric: longest single-publication tenure at Wired (8+ years)
+   - Beat expansion as proxy for Wired editorial strategy changes under Drummond
+
+6. **Editorial change entry added** for ~2025 Senior Correspondent promotion
+
+7. **Podcast co-hosting details corrected**: Gadget Lab + Get WIRED + Uncanny Valley (with Calore and Schiffer)
+
+8. **2025-2026 panel/event appearances documented**: HumanX, Cooper Union, Big Technology AI Summit
+
+### Stats after
+- 200 journalists tracked (unchanged)
+- Lauren Goode: 7 career entries, 8 source_urls (was 0), structured education, multi_publication=true
+- Wired editorial_changes: 61 entries (was 60)
+- 2,517 tests passing across 112 files (unchanged)
+- 124 structural consistency tests (up from 123)
+
+### Sources consulted
+- clarku.edu (alumni profile)
+- allthingsd.com (2011 introduction by Mossberg/Swisher)
+- talkingbiznews.com (2018 Wired hire)
+- computerhistory.org (CHM speaker profile)
+- muckrack.com (current journalist profile)
+- zocalopublicsquare.org (event bio)
+- worth.com (contributor profile)
+- thepowerfulladies.com (podcast episode 110)
+- eventible.com (speaker directory)
+- buzzsumo.com (journalist profile)
+- youtube.com (HumanX 2026, Cooper Union, Big Technology AI Summit panels)
+- famousbirthdays.com, birthdayfamous.com (background only, not used as authoritative sources)
+
+---
+
 ## 2026-07-13 23:00 PT — Type A: Article Deep Dive (Kotaku Muse Image — editorial_character_attack)
 
 **Article:** Kotaku — "Meta Removes Default AI Integration On Instagram" (~Jul 11, 2026)
