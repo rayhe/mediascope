@@ -27,7 +27,18 @@ ownership_chain:
       Digital and print technology publication, founded 1993 by Louis Rossetto and Jane Metcalfe.
       Acquired by Condé Nast (via Advance) in 1998 for ~$80M. One of Condé Nast's 7 "marquee brands"
       that account for 85% of company revenue (FT, Feb 2026). Wired Italy edition shuttered Apr 2026.
+      WIRED UK PRINT ENDED (early 2026): Winter 2025 was the final print issue of Wired UK, ending
+      a run that began in 2009. Seven London-based editorial staff left at end of 2025; team rebuilt
+      to focus on audience development and UK/Europe-focused digital reporting (Press Gazette, Apr 2, 2026).
+      EIC Katie Drummond: "Creating a sustainable and growing subscription business is the future of Wired...
+      I don't want Wired to be at the whims of anything that I can't control the way I can control the
+      journalism." Digital-only subscribers doubled in 2025; direct-to-publisher subscribers up 20%.
+      Print had already reduced from bimonthly (2017) to quarterly (2024) before full cessation.
       Wired Consulting and live events continue across Europe via UK team.
+      NEWSLETTER EXPANSION (2026): Drummond launched 5 new subscriber-only weekly newsletters, each
+      written by a Wired journalist; audio versions of articles; bimonthly subscriber livestream AMAs
+      with Wired reporters; and subscriber-only comment sections. This represents the most significant
+      digital product expansion in Wired's history and deepens the subscription-first business model.
       Global Editorial Director: Katie Drummond (since Aug 2023).
     source_url: "https://www.ft.com/content/conde-nast-seven-brands-85-percent-revenue"
 
@@ -327,15 +338,15 @@ advance_investments:
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
     current_value_estimate: >
-      ~$8.48B at $200.93/share (Jul 13, 2026 close, +2.86%). Reddit market cap ~$37.6B.
+      ~$8.49B at $201.18/share (Jul 14, 2026, +0.12%). Reddit market cap ~$37.6B.
       PRICE TRAJECTORY: +13.69% on Jul 1 (close $197.42, high $201.16 intraday), then
       -1.44% pullback Jul 2 (close $194.67), recovery to $200.67 Jul 6, then
       -0.77% to $199.32 Jul 7, +0.50% to $200.31 Jul 9 close. Jul 10: selloff
       -2.61% to $195.09 (high $208.05, low $192.61). Broke below $200 support.
       Jul 13: recovery +2.86% to $200.93 (high $204.07, low $193.88), reclaiming $200 level.
-      Net +15.7% from Jun 30 close ($173.65). 52-week range $119.27-$282.95. Beta 2.23.
-      Year-to-date: -12.4%. Reddit now
-      ~61.4% of Advance's public equity. 42,207,274 total shares × $200.93 = $8.48B.
+      Jul 14: $201.18 (+0.12%), holding above $200. High $204.89, low $197.18.
+      Net +15.9% from Jun 30 close ($173.65). 52-week range $119.27-$282.95. Beta 2.23.
+      Reddit now ~61.1% of Advance's public equity. 42,207,274 total shares × $201.18 = $8.49B.
       ADVANCE SHARE BREAKDOWN (verified from Reddit 2025 proxy, Dkt. rddt-20250428):
         - 42,191,092 shares of Class B common stock (10 votes/share)
         - 16,182 shares of Class A common stock (1 vote/share)
@@ -371,12 +382,14 @@ advance_investments:
       NOTE: Reddit Q2 earnings Jul 30 — if Reddit misses consensus, RDDT could gap down given
       2.23 beta and Advance's concentrated position + margin loan. Conversely, continued beats
       could push past $200 resistance.
-      ADVANCE TOTAL PUBLIC EQUITY SNAPSHOT (Jul 13 close):
-        - Reddit: $8.48B (42.2M shares × $200.93, RDDT up +2.86% — reclaimed $200 level)
-        - Charter: $2.69B (20.6M shares × $130.73, CHTR flat from Jul 10)
-        - WBD: ~$2.65B (98M shares × ~$27.09 Jul 13, +1.88% on 12-AG lawsuit filing day)
-        - Total: ~$13.82B (up from ~$13.23B Jul 10 — RDDT recovery driving rebound)
-        - CATALYSTS: RDDT Q2 earnings Jul 30, CHTR Q2 earnings Jul 24, WBD Q2 earnings Aug 6
+      ADVANCE TOTAL PUBLIC EQUITY SNAPSHOT (Jul 14):
+        - Reddit: $8.49B (42.2M shares × $201.18, RDDT +0.12% — holding above $200)
+        - Charter: $2.71B (20.6M shares × $131.61, CHTR +0.18% — near 52-week low $124.05)
+        - WBD: ~$2.70B (98M shares × ~$27.535 Jul 14, +1.64% — rose despite 12-AG lawsuit)
+        - Total: ~$13.90B (up from ~$13.82B Jul 13 — broad minor gains across all three)
+        - CATALYSTS: CHTR Q2 earnings Jul 24 (next up), RDDT Q2 earnings Jul 30, WBD Q2 Aug 6
+        - CHTR: CPUC (California) sole remaining regulatory hurdle for Cox merger; target Aug 13
+          CPUC meeting for approval; DOJ HSR clearance expires Sep 15, 2026
         - WBD: 12-AG antitrust lawsuit filed Jul 13 to block Paramount merger; market unperturbed
       This is a potential volatility catalyst for Advance's collateral value.
     credit_facility_monetization: >
@@ -548,10 +561,21 @@ advance_investments:
       5 buy out of 19 analysts). Q1 2026 earnings missed: EPS $9.17 vs consensus $10.01 (missed
       by $0.84), revenue down 1.0% YoY at $13.60B. Q2 2026 earnings due July 24 (before market open).
       Charter faces structural headwinds from cord-cutting, fiber overbuilds, and fixed wireless competition.
-      COX MERGER PROGRESS (Jul 2026): Charter-Cox $34.5B merger advancing toward mid-2026 close.
-      >99% stockholder approval obtained. New York PSC conditionally approved (Jul 2026, requiring
-      $100M network upgrade commitment to symmetric 1 Gbps + replacing 500+ outdoor Wi-Fi access
-      points). Post-merger governance: Advance/Newhouse retains 2 board nominees on 13-member board.
+      COX MERGER PROGRESS (updated Jul 14, 2026): Charter-Cox $34.5B merger in final regulatory
+      stretch. >99% stockholder approval obtained. NY PSC approved Mar 20, 2026 ($100M network
+      upgrade commitment + replace 500+ outdoor Wi-Fi access points + $3M broadband/shelter
+      investment). FCC approved Mar 9, 2026. DOJ cleared Sep 2025 (HSR expires Sep 15, 2026).
+      Connecticut approved. ALL local, state, and federal approvals secured EXCEPT California CPUC.
+      CA SETTLEMENT AGREEMENTS (May 28, 2026): Charter reached settlements with CalAdvocates
+      (CPUC consumer advocacy office) and California Emerging Technology Fund (CETF). Terms:
+      $275M in CA network upgrades + low-income price locks for 5 years (Lifeline Pilot
+      participants get $20/mo 100×20 Mbps plan). Both CalAdvocates and CETF asked CPUC to
+      approve the deal. Parties asked CPUC to approve at its **August 13, 2026 meeting** —
+      Charter said Sep 2 meeting would be too late to close before HSR expiration. If CPUC
+      misses the window, companies must refile HSR ($2.5M fee + new 30-day review period).
+      Charter spokesperson (Jul 10): "We're very pleased to now have all local, state, and
+      federal regulatory approvals other than California."
+      Post-merger governance: Advance/Newhouse retains 2 board nominees on 13-member board.
       Cox Enterprises gets 23% of combined entity (via $4B cash + $6B convertible preferred units +
       ~$11.9B in partnership units). Liberty Broadband merger expected to close simultaneously;
       3 Liberty directors resign at closing. Combined entity to rebrand as Cox Communications
@@ -574,7 +598,7 @@ advance_investments:
       Advance. Despite Charter's 82% 5-year decline, a SpaceX mobile partnership could re-rate the
       stock. Advance's ~$2.75B stake (at $133.54) could see meaningful upside if Charter pivots from
       declining cable to space-enabled mobile connectivity.
-    current_value_estimate: "~$2.69B at $130.73/share (Jul 13, 2026 close, flat). Down from $8.7B at 52-week high of $413.14. Approaching 52-week low of $124.05. Q2 earnings Jul 24. Cox merger expected mid-2026 close."
+    current_value_estimate: "~$2.71B at $131.61/share (Jul 14, 2026, +0.18%). Down from $8.7B at 52-week high of $413.14. Near 52-week low of $124.05. Goldman Sachs cut PT to $125 sell (Jul 2), Barclays cut to $130 underweight (Jul 8). Consensus 'Reduce' (6 sell, 8 hold, 5 buy). Q2 earnings Jul 24. Cox merger: CPUC Aug 13 target, HSR expires Sep 15."
     competitive_with: []
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
     spacex_partnership_source_urls:
@@ -585,6 +609,11 @@ advance_investments:
       - "https://dps.ny.gov/psc-approves-coxs-indirect-non-controlling-interest-charters-new-york-cable-and-telephone"
       - "https://www.phonearena.com/news/spacex-charter-mobile-service-partner/"
       - "https://www.devdiscourse.com/article/technology/spacex-charter-communications-mobile/"
+      - "https://broadbandbreakfast.com/new-york-approves-charter-cox-deal/"
+      - "https://broadbandbreakfast.com/charter-agrees-to-infrastructure-upgrades-statewide-low-income-price-locks-if-california-approves-cox-deal/"
+      - "https://broadbandbreakfast.com/charter-warns-california-delay-could-jeopardize-cox-merger-timeline/"
+      - "https://www.lexology.com/library/detail.aspx?g=fcc-green-lights-charter-cox-deal"
+      - "https://www.mnacritique.mergersindia.com/fcc-approves-charter-communications-cox/"
 
   - entity: "Warner Bros. Discovery (WBD)"
     stake: "~98M shares remaining (~4% after sales, down from 198.18M / ~8%)"
@@ -691,7 +720,7 @@ advance_investments:
       realized from June 2024 sale = ~$4.04B total from WBD investment. This would be Advance's largest
       single liquidity event since the Reddit IPO and could significantly alter the family office's capital
       allocation and media strategy.
-    current_value_estimate: "~$2.65B remaining at market ($27.09 Jul 13 close, +1.88%) or ~$2.94B at Paramount tender ($30/share) + $1.1B already realized = ~$3.75-4.04B total. WBD market cap ~$67.9B. 12-AG lawsuit filed Jul 13 to block merger; market shrugged (WBD up on filing day). Combined Paramount-WBD ~$80B debt (WSJ/Times)."
+    current_value_estimate: "~$2.70B remaining at market ($27.535 Jul 14, +1.64%) or ~$2.94B at Paramount tender ($30/share) + $1.1B already realized = ~$3.81-4.04B total. WBD market cap ~$64.5B. 12-AG lawsuit filed Jul 13 to block merger; WBD rose on filing day (+1.88%), market views state challenge as unlikely to succeed. Q2 earnings Aug 6. Ticking fee ($0.25/share/quarter) triggers if deal doesn't close by Sep 30."
     competitive_with: ["Meta (streaming/content)"]
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse+programming&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
     source_urls:
@@ -1887,6 +1916,35 @@ litigation_connections:
     evidence: "UK IPO opposition decision O/0243/26, March 23, 2026"
     source_url: "https://www.ipo.gov.uk/types/tm/t-os/t-find/t-challenge-decision-results/o024326.pdf"
 
+  - type: "advance_trademark_enforcement_ipec_cornucopia"
+    description: >
+      IPEC JUDGMENT [2026] EWHC 1488 (IPEC) (June 23, 2026): Advance Magazine Publishers Inc. (AMPI)
+      and The Condé Nast Publications Limited (UK licensee) v Cornucopia Entertainment Limited and
+      Minesh Vohra (founder/director). AMPI won on ALL four grounds:
+      (1) s10(1) TMA — double identity infringement of Vanity Fair and GQ marks through advertising
+          ticket resale for exclusive events (GQ Man of the Year Awards, Vanity Fair Oscar Party).
+          Judge rejected "informational use" defense; advertising alone constitutes infringement.
+      (2) s10(2) TMA — likelihood of confusion established via website, mock invitations, social media.
+      (3) s10(3) TMA — unfair advantage of marks' reputation. Cornucopia charged inflated prices
+          leveraging the exclusivity and glamour of the marks.
+      (4) Passing off — strong reputation, misrepresentation of commercial connection, damage to goodwill.
+      PERSONAL LIABILITY: Vohra found jointly liable under s10(3) for authorizing infringing conduct
+      after receiving cease-and-desist letters. Not jointly liable under s10(1)/s10(2) because
+      insufficient evidence he appreciated the confusion risk.
+      Miss Recorder Amanda Michaels presided. Key precedent cited: Iconix Luxembourg Holdings v Dream
+      Pairs Europe (infringement from advertising alone) and BMW v Deenik (informative vs. misleading use).
+      ANALYTICAL SIGNIFICANCE: This is the SECOND UK trademark enforcement action by AMPI in 3 months
+      (after the "Ever in Vogue" UK IPO opposition in March 2026). Demonstrates systematic international
+      IP enforcement through AMPI — the SAME entity holding the Reddit shares and the $1.2B margin loan
+      credit facility. AMPI simultaneously operates as: (a) IP enforcement arm for Condé Nast brands,
+      (b) holder of 42.2M Reddit shares ($8.5B), (c) borrower on $1.2B margin loan against Reddit shares.
+      This triple function is unique and not commonly disclosed.
+    severity: 2
+    evidence: "[2026] EWHC 1488 (IPEC), D Young & Co analysis, Jun 23 2026"
+    source_urls:
+      - "https://www.dyoung.com/en/knowledgebank/articles/ipec-insights-advance-magazine-cornucopia-exclusive-advertising-trademarks"
+      - "https://dycip.com/2026-ewhc-1488-ipec"
+
   - type: "cnil_enforcement"
     description: >
       France's CNIL fined Condé Nast's French entity €750,000 on November 20, 2025 for cookie consent
@@ -1968,6 +2026,29 @@ restructuring_timeline:
       Mexico winding down. 16 unionized employees laid off. Technology division restructured for AI.
       Lynch memo: affected titles = 1% of revenue, "remain unprofitable." Glamour EIC Samantha Barry departs.
     source_url: "https://www.thewrap.com/conde-nast-shuts-down-self-magazine/"
+
+  - date: "2026-early"
+    event: >
+      WIRED UK PRINT ENDS: Winter 2025 was the final print issue of Wired UK. Seven London-based
+      editorial staff departed end of 2025; team rebuilt to focus on audience development and
+      UK/Europe-focused digital reporting. Had been reducing frequency: monthly → bimonthly (2017)
+      → quarterly (2024) → ceased entirely. Drummond: "Creating a sustainable and growing subscription
+      business is the future of Wired." Digital-only new subscribers doubled in 2025, direct-to-publisher
+      subscribers up 20%. This follows Wired Italy shutdown (Apr 2026) — two international print editions
+      eliminated within months, concentrating the brand on US print + global digital subscription.
+    source_urls:
+      - "https://talkingbiznews.com/media-news/wired-pulls-plug-on-uk-print-edition/"
+      - "https://en.wikipedia.org/wiki/Wired_UK"
+
+  - date: "2026-06-23"
+    event: >
+      IPEC TRADEMARK WIN: AMPI + Condé Nast Publications Ltd v Cornucopia Entertainment Ltd + Minesh Vohra
+      [2026] EWHC 1488 (IPEC). Successful enforcement of Vanity Fair and GQ marks against unauthorized
+      ticket reselling for exclusive events (Oscar Party, Man of the Year). All 4 claims won (s10(1),
+      s10(2), s10(3) TMA + passing off). Vohra found personally liable under s10(3). Second UK enforcement
+      action by AMPI in 3 months (after "Ever in Vogue" IPO opposition Mar 2026).
+    source_urls:
+      - "https://www.dyoung.com/en/knowledgebank/articles/ipec-insights-advance-magazine-cornucopia-exclusive-advertising-trademarks"
 
   - date: "2025-11-05"
     event: >
