@@ -1,6 +1,6 @@
 # Framing Device Quick Reference
 
-> A compact lookup card for all 101 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
+> A compact lookup card for all 102 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
 
 ---
 
@@ -9,10 +9,10 @@
 During article analysis, scan the text for trigger keywords and structural patterns listed below. Each device name links to the detailed entry in METHODOLOGY.md. The **tier** column indicates detection method:
 
 - **C** = Core (10 types) — fundamental editorial techniques, pattern-matched
-- **E** = Extended (84 types) — discovered from real article analysis, pattern-matched
+- **E** = Extended (85 types) — discovered from real article analysis, pattern-matched
 - **S** = Structural (7 types) — detected via post-pass heuristics over full article structure
 
-> **Note on device numbering:** Devices are numbered by discovery order (1–101), not by category. When new devices are discovered during article analysis, they receive the next sequential number. The reference organizes them by thematic category for readability, so device numbers within a category are not contiguous.
+> **Note on device numbering:** Devices are numbered by discovery order (1–102), not by category. When new devices are discovered during article analysis, they receive the next sequential number. The reference organizes them by thematic category for readability, so device numbers within a category are not contiguous.
 
 ---
 
@@ -156,6 +156,7 @@ Devices that shape how regulatory, legal, and government actions are presented.
 | 65 | **Strategic Disclosure** | E | Party in dispute discloses opponent's position to frame it as extreme | "Meta said in a recent court filing" — framing originates with disclosing party |
 | 66 | **Default Burden Privacy** | E | Default-on feature framed as consent violation by emphasising opt-out burden | "enabled by default," "opt-out," "users may not know," "without consent" |
 | 101 | **Consent Alarm** | E | Default opt-in / automatic enrollment framed as consent violation | "automatically enrolled," "without your knowledge," "use your likeness" |
+| 102 | **Editorial Character Attack** | E | Journalist inserts their own characterization of a named person's reputation or moral standing as established fact, rather than attributing the claim to a source | "best known for unethical use of," "he's *the guy* for that," "has a long history of exploiting" |
 | 67 | **Editorial Cross-Promotion** | E | All-caps interstitial headline blocks importing linked headline framing into otherwise balanced reporting | All-caps blocks 5+ words; "CLICK HERE TO GET THE FOX BUSINESS APP"; imports adversarial linked headlines |
 | 68 | **Emotion Attribution** | E | Editorial attribution of emotional states never expressed by the subject — upgrading factual observations into disappointment, frustration, or alarm | "[Name] is disappointed that"; "leading investors to fret"; "[Name] is alarmed by" |
 | 69 | **Litigation Cascade** | E | Stacking multiple legal proceedings, case counts, plaintiff numbers to create avalanche effect | "N states have banded/sued"; "more than N,NNN cases pending"; "Another N states also brought claims" |
@@ -271,9 +272,9 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 | Tier | Count | Detection Method |
 |---|---|---|
 | Core | 10 | Pattern matching — fundamental editorial techniques |
-| Extended | 84 | Pattern matching — discovered from real article analysis |
+| Extended | 85 | Pattern matching — discovered from real article analysis |
 | Structural (post-pass) | 7 | Full-article heuristics (position, accumulation, structure) |
-| **Total** | **101** | |
+| **Total** | **102** | |
 
 ---
 

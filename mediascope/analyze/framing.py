@@ -432,7 +432,29 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         # Positive magnitude idioms used editorially — "life-altering",
         # "life-changing" when applied to describe corporate impact amplifies
         # significance beyond factual reporting.
-        r"life-?altering|life-?changing|life-?transforming"
+        r"life-?altering|life-?changing|life-?transforming|"
+        # Invasion/territorial metaphors applied to corporate strategy —
+        # "encroachment" frames a product launch as territorial aggression.
+        # Derogatory process verbs — "regurgitated" frames AI output as
+        # mindless vomiting of content.  Secrecy/conspiracy language —
+        # "cloak and dagger" implies deliberate concealment.
+        # Discovered via Kotaku Meta Muse Image article (Jul 11, 2026).
+        r"encroachment|encroach(?:ing|es)?|"
+        r"regurgitat(?:ed|ing|es?)|"
+        r"cloak and dagger(?:y)?|"
+        # Fear-amplification phrases — "cause for alarm" editorializes
+        # by elevating concern to alarm level.
+        r"cause for (?:alarm|concern|worry|panic)|"
+        # Loaded adverbs characterizing tone of a response — "curtly"
+        # frames the subject's communication as dismissive/rude.
+        r"curtly|tersely|coldly|icily|brusquely|"
+        # Negative sensory/evaluative adjectives applied to AI or tech —
+        # "unsavory" and "unnerving" editorialize by injecting disgust
+        # or anxiety into descriptions of technology.
+        r"unsavory|unsavoury|unnerving|"
+        # Suspicion-amplification language — "quell suspicions" frames
+        # a company's actions as failing to address ongoing distrust.
+        r"(?:quell|allay|dispel|ease)\s+(?:suspicion|fear|concern|doubt|unease|distrust)s?"
         r")\b",
         re.IGNORECASE,
     ),
@@ -8689,6 +8711,55 @@ _CONSENT_ALARM_PATTERNS: list[re.Pattern] = [
 ]
 _DEVICE_PATTERNS["consent_alarm"] = _CONSENT_ALARM_PATTERNS
 
+# ---- editorial_character_attack ----
+# Detects ad-hominem editorial framing where the journalist inserts
+# their own characterization of a named person's reputation or moral
+# standing as established fact, rather than attributing the claim to
+# a source.  E.g. "Mark Zuckerberg is best known for unethical use of
+# user data, he's *the guy* for that" — this is the journalist's own
+# voice asserting a character judgment, not reporting one.
+#
+# Distinct from loaded_language (which targets individual words) and
+# guilt_by_association (which links subject to a separate bad actor).
+# Character attack is the journalist themselves making the moral
+# judgment in their editorial voice.
+#
+# Discovered via Kotaku Meta Muse Image article (Jul 11, 2026).
+_EDITORIAL_CHARACTER_ATTACK_PATTERNS: list[re.Pattern] = [
+    # "X is best known for [negative]" — editorial reputation assertion
+    re.compile(
+        r"\b(?:best|most|primarily|chiefly|mainly)\s+"
+        r"known\s+for\s+"
+        r"(?:\w+\s+){0,3}"
+        r"(?:unethical|illegal|deceptive|exploiting|violating|abusing|"
+        r"misleading|manipulating|stealing|surveillance|lying|"
+        r"scandal|privacy\s+violation|data\s+(?:breach|misuse|abuse|theft))",
+        re.IGNORECASE,
+    ),
+    # "he's/she's/they're *the guy* for that" — casual character dismissal
+    re.compile(
+        r"\b(?:he(?:'?s)?|she(?:'?s)?|they(?:'re)?)\s+"
+        r"(?:\*?the\s+guy\*?|\*?the\s+one\*?|\*?that\s+guy\*?)\s+"
+        r"(?:for\s+(?:that|this|it)|when\s+it\s+comes\s+to)",
+        re.IGNORECASE,
+    ),
+    # "X has a long/well-documented/terrible history of [negative]"
+    # when stated as editorial fact without attribution
+    re.compile(
+        r"\b(?:has|have|with)\s+a\s+"
+        r"(?:long|well-?documented|terrible|troubled|checkered|"
+        r"dark|ugly|notorious|sordid|scandalous|infamous)\s+"
+        r"(?:history|track\s+record|record|reputation)\s+"
+        r"(?:of|for|with)\s+"
+        r"(?:\w+\s+){0,3}"
+        r"(?:exploit|violat|abus|deceiv|mislead|manipulat|steal|"
+        r"scandal|privacy|breach|misuse|surveillance|unethical|"
+        r"discrimination|censor)",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["editorial_character_attack"] = _EDITORIAL_CHARACTER_ATTACK_PATTERNS
+
 
 def detect_framing_devices(
     text: str,
@@ -8696,15 +8767,15 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 94 pattern-matched device types plus 7 structural
-    post-pass types (101 total).
+    Scans for 95 pattern-matched device types plus 7 structural
+    post-pass types (102 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (94): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (95): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_displacement,
@@ -8714,7 +8785,8 @@ def detect_framing_devices(
     corporate_reassurance_undercut, cross_publication_import,
     default_burden_privacy, defensive_verb_framing,
     denial_contradiction,
-    editorial_aside, editorial_cross_promotion,
+    editorial_aside, editorial_character_attack,
+    editorial_cross_promotion,
     editorial_deflation, editorial_dramatization,
     emotion_attribution, emotional_appeal,
     escalation_amplification, expert_consensus_authority,

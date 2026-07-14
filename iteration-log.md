@@ -1,4 +1,48 @@
 # MediaScope Iteration Log
+## 2026-07-13 23:00 PT — Type A: Article Deep Dive (Kotaku Muse Image — editorial_character_attack)
+
+**Article:** Kotaku — "Meta Removes Default AI Integration On Instagram" (~Jul 11, 2026)
+**Focus:** New framing device type discovery + loaded_language vocabulary expansion
+
+### Changes
+
+1. **New framing device type: `editorial_character_attack` (#102)**
+   - 3 regex patterns detecting journalist's own character judgment stated as editorial fact
+   - Patterns: "best known for [negative]", "he's/she's the guy for that", "has a long/terrible history of [negative]"
+   - Distinct from loaded_language (individual words) and guilt_by_association (linking to separate actors)
+   - Discovery article: Kotaku Muse Image (Jul 11, 2026)
+
+2. **9 new loaded_language terms**
+   - `encroachment`, `regurgitated`, `cloak and daggery`, `cause for alarm/concern/worry/panic`
+   - `curtly/tersely/coldly/icily/brusquely`, `unsavory/unsavoury`, `unnerving`
+   - `quell/allay/dispel suspicions`
+
+3. **Detection improvement:** 3 → 14 devices on Kotaku article (was massively under-detecting)
+
+4. **Full cross-cutting doc/test consistency update:**
+   - Device types: 101 → 102 (95 pattern-matched + 7 structural)
+   - Compiled patterns: 670 → 673 (README stats), 609 → 612 (test guard)
+   - Updated: README.md, METHODOLOGY.md, ARCHITECTURE.md, FRAMING_REFERENCE.md, AGENT_GUIDE.md, CROSS_PUBLICATION_REFERENCE.md, cli.py
+   - Test constants: EXPECTED_TOTAL 101→102, EXPECTED_PATTERN_MATCHED 94→95, EXPECTED_TOTAL_PATTERNS 609→612
+   - Device registry: added to test_nyt_ai_reviews.py expected_pattern_types
+   - Annotated articles: 175 → 176
+   - Tests: 2,497 → 2,517 across 112 files (was 111)
+
+5. **New test file:** `test_kotaku_muse_image_editorial_attack.py` (12 methods, 20 collected)
+   - editorial_character_attack detection (3 tests)
+   - 9 parametrized loaded_language term tests + count guard
+   - policy_reversal detection
+   - Entity detection (Meta cluster, SAG-AFTRA, Instagram, Muse Image)
+   - Overall detection quality guards
+
+6. **Analysis file:** `examples/sample_output/kotaku_meta_muse_image_removed_2026_07_11_analysis.md`
+
+### Stats after
+- 102 framing device types (95 pattern + 7 structural)
+- 673 compiled regex patterns
+- 176 annotated articles
+- 2,517 tests across 112 files — all passing
+
 ## 2026-07-13 22:00 PT — Type D: Toolkit Quality & Documentation (Path L demo, stale path range fixes, inline range guard)
 
 **Commit:** `fac4842` — "Type D: Path L demo article, stale path range fixes, inline range guard, docstring completeness guard"

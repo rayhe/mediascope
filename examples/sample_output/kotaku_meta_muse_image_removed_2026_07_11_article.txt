@@ -1,0 +1,19 @@
+Source: Kotaku
+URL: https://kotaku.com/meta-removes-latest-ai-integration-on-instagram-following-sag-aftra-backlash-2000714982
+Title: Meta Removes Default AI Integration On Instagram
+Date: ~July 11, 2026
+Author: Not attributed (Kotaku staff)
+
+---
+
+This week, Meta introduced "Muse Image," a new tool suite for Instagram and WhatsApp. Currently available stateside, what stirred controversy was how it was integrated, automatically using other posts unless opting out manually. Backlash to any AI and privacy infringements are to be expected, but the quick spread of the outrage and formal push back was more fevered than usual. After only a few days, Meta has already retracted the integration, though not the underlying AI encroachment.
+
+Since its inception there have always been skepticism about Instagram and ownership over the media it hosts. As it has grown, and its acquisition by Facebook, so have these concerns. Instagram has become one of the de facto platforms for artists, performers, photographers and proof of life from high school friends. As AI and Meta's enthusiasm for it enters the picture, there is cause for worry about how the social media network will feed its learning models.
+
+As you likely came across somewhere online this week, a new toggle in Instagram's settings raised cause for alarm. The option emerged overnight, asking if you'd like your posts and reels to be used by Meta AI for use elsewhere. By default, the toggle is set to approve, meaning that unaware or abandoned accounts will have their posts regurgitated for all kinds of unsavory, unnerving AI media without explicit permission.
+
+News of the update circulated on social media and the general public, but it also prompted response from labor groups as well. As the subject is especially sensitive for performers and the use of their image, the feature was condemned by SAG-AFTRA, who took issue with the ethical implications or general cloak and daggery. "Anything other than a clear and conspicuous OPT-IN for these types of uses of Instagram users' images is unacceptable," writes the Guild, "an utter miscalculation of public sentiment regarding the obvious dangers."
+
+In short time, Meta has removed the automatic vacation photo draft and apologized, curtly telling the CBC, "We've heard the feedback that this feature missed the mark, so it's no longer available."
+
+Of course, removing the new settings toggles doesn't quell suspicions. Meta still remains steadfast on AI and Muse despite distaste from the general public. Mark Zuckerberg is best known for unethical use of user data, he's *the guy* for that, and it continues to be true in his AI campaign.
