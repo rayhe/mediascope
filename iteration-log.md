@@ -21439,3 +21439,71 @@ Barron's is the only outlet to use pathologizing language ("splurge") for the sa
 - Framing device types: 101 (unchanged)
 - Compiled patterns: 670 (+4)
 - Tests: 2,495 (111 files, +42 tests, +2 files)
+
+## 2026-07-13 18:00 PT — Type B: Journalist/Publication Research (Fred Vogelstein deep-dive + Paresh Dave expansion)
+
+**Focus:** Two Wired journalists with zero source_urls — Fred Vogelstein (contributing editor, 20+ year tenure) and Paresh Dave (senior writer, Big Five beat).
+
+### Fred Vogelstein Profile Expansion (notes: 1,607 → 2,907 chars; source_urls: 0 → 8)
+
+**Major discovery: Family PE/finance background**
+- Father is **John L. Vogelstein** (b. 1934) — co-founder and former president/vice-chairman of **Warburg Pincus LLC**, one of the world's largest private equity firms ($100B+ invested in 1,000+ companies across 40+ countries)
+- John was partner at **Lazard Frères** (1954–1966), then built Warburg Pincus with Lionel Pincus (1967–2002)
+- John is also chairman of **Third Way** (Democratic think tank), chairman emeritus of NYC Ballet, chairman emeritus of Prep for Prep, former vice-chairman of NYU Stern Board of Overseers
+- Fred's full name: **Hans Alfred Vogelstein II** (named after paternal grandfather Hans Vogelstein, who ran American Metal Company/AMAX)
+- Source: Computer History Museum NVCA Venture Capital Oral History Collection (Feb 5, 2013 interview), Wikipedia, Warburg Pincus team page, LittleSis interlocks
+
+**Additional profile enrichments:**
+- Recent Wired output (2024-2025): Google antitrust (argued for settlement over breakup), Bluesky analysis, NotebookLM AI review
+- Also publishes in: The Atlantic, NYT Magazine, Washington Post, CNN, Reuters, Business Insider, Medium, LA Times
+- Has personal website fredvogelstein.com + "Fred's Newsletter" on Substack separately from CrazyStupidTech
+- JournalistHunt lists 88 total articles on file
+- Wired career entry enriched with full publication list and recent output details
+
+**8 source URLs added:**
+1. https://tedai-sanfrancisco.ted.com/panelists/2025/fred-vogelstein/
+2. https://www.penguinrandomhouse.com/authors/250812/fred-vogelstein/
+3. https://www.goodreads.com/author/show/6922203.Fred_Vogelstein
+4. https://www.writersgrotto.org/people/fred-vogelstein
+5. https://www.audible.ca/author/Fred-Vogelstein/B00E9BE85O
+6. https://muckrack.com/fvogelstein/articles
+7. https://journalisthunt.com/journalists/fred-vogelstein
+8. https://en.wikipedia.org/wiki/John_Vogelstein (father — Warburg Pincus)
+
+**Analytical significance:**
+- Family PE connections tracked as biographical context (not accusation of conflict)
+- No direct Warburg Pincus → Meta investment identified, but PE ecosystem creates adjacencies
+- Third Way (centrist Democratic think tank) chairmanship adds political-network context
+- Contributing editor status (non-staff) over 4 EIC transitions tests institutional vs individual framing
+
+### Paresh Dave Profile Expansion (notes: 1,392 → 2,103 chars; source_urls: 0 → 4)
+
+**Career enrichments:**
+- LA Times (~4.5 years, ~2013–2017): Silicon Beach, cybersecurity, sports business, breaking news, LA criminal courts
+- Team reporting on Snapchat IPO recognized by SABEW
+- Reuters (2017–late 2022): 324 indexed bylines. Notable stories: Cambridge Analytica Zuckerberg deposition, Twitter policy upheaval under Musk, Apple-states iPhone throttling settlement, Google labor violations, TikTok government bans
+- Wired (late 2022–present): Covers all Big Five (AAPL, AMZN, GOOGL, META, MSFT). Member of @wiredunion (CWA-affiliated)
+- Contact info: paresh_dave@wired.com, Signal peard33.24, WhatsApp/Telegram +1-415-565-1302
+- Syndication: Folha de S.Paulo, G1 Globo, Medium, Yahoo Entertainment/Tech, Business Insider, Daily Mail, ETCIO, ETCISO, ETTelecom
+
+**4 source URLs added:**
+1. https://theorg.com/org/wired/org-chart/paresh-dave
+2. https://talkingbiznews.com/media-news/wired-hires-dave-as-a-senior-writer-covering-big-tech/amp/
+3. https://talkingbiznews.com/they-talk-biz-news/reuters-hires-dave-from-la-times-to-cover-google/amp/
+4. https://muckrack.com/peard33
+
+**Career entry source_urls added:** LA Times, Reuters, Wired entries all now have source_url fields.
+
+**DiD analysis insight:** Reuters → Wired migration is a key difference-in-differences candidate — wire service neutrality norms vs Condé Nast institutional framing. Can compare his Reuters-era Big Tech coverage tone against his Wired-era coverage of the same companies (especially Google, which was his primary Reuters beat).
+
+### Editorial Changes (1 addition)
+
+- **Wired (2022-12):** Added Paresh Dave hire as `senior_writer_big_tech`. Notes Reuters → Condé Nast migration significance for DiD analysis, Maynard Institute fellowship, CWA union membership.
+
+### Stats After This Iteration
+- Journalists: 230 (unchanged)
+- Career entries: 909 (was 904 — net +5 from YAML additions/enrichment)
+- Annotated articles: 175 (unchanged)
+- Tests: 2,495 passed, 0 failed (111 files)
+
+**Commit:** `7650390` — pushed to GitHub.
