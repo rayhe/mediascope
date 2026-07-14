@@ -1,7 +1,7 @@
 # MediaScope Iteration Log
 ## 2026-07-14 14:00 PT — Type D: Toolkit Quality & Documentation (The Register Muse Image Article)
 
-**Commit:** pending
+**Commit:** `c956e92` — "Type D: Register Muse Image article #180, 4 regex fixes + sardonic enumeration pattern"
 
 ### Summary
 Added The Register's sardonic "Meta admits its first 'superintelligence' was too stupid to survive for three days" (Jul 13, 2026) as annotated article #180. Fixed 4 regex pattern bugs across 3 device types, added 1 new recidivism sub-pattern, and widened CEO_personalization to handle modifier adjectives.
