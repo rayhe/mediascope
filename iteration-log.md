@@ -1,4 +1,58 @@
 # MediaScope Iteration Log
+## 2026-07-14 07:00 PT — Type B: Journalist Research (Kevin Roose Deep Sourcing)
+
+**Commit:** `2886beb` — "Type B: Kevin Roose deep sourcing — career split (5 entries, +1 migration), 8 source URLs, education, CrowdTangle significance, NYT departure Aug 2026"
+
+### Focus: Kevin Roose — NYT's Most Prominent AI/Tech Columnist
+
+Selected Kevin Roose for deep sourcing — had 4 career entries and 0 top-level source URLs despite being one of the most influential tech journalists in the US. His coverage framing of Meta (especially the CrowdTangle project and "Facebook Is Weaker Than We Knew" article) makes him analytically significant for MediaScope.
+
+### Research Findings
+
+**Education (newly sourced):**
+- Westtown School Class of '05 — Quaker boarding school in Chester County, PA (confirmed from donor list and alumni magazine)
+- Brown University Class of '09 — English major, columnist for Brown Daily Herald (confirmed from Brown alumni list and book bio)
+- Born 1987/1988
+
+**Career Refinement:**
+- Split Fusion entry into two roles: News Director (Oct 2014 – Nov 2016) → VP Editorial (Nov 2016 – May 2017), sourced from LinkedIn timeline
+- NYT second stint end date: August 2026 (confirmed from TalkingBizNews)
+- Added Bing/Sydney conversation (Feb 2023), Rabbit Hole podcast (2020, 8-part series, Peabody finalist), NFT column sale ($560K, Mar 2021)
+- AGI Chronicles (4th book) confirmed forthcoming 2026 via kevinroose.com
+
+**NYT Departure (Aug 2026):**
+- Leaving after 9 years to launch independent media venture with Casey Newton
+- Hard Fork ending as NYT production
+- Signed with UTA for representation in all areas (reported by Corbin Bolies, Variety)
+- Newton continues Platformer alongside new venture
+- Already tracked in editorial_changes.yaml (verified, no duplicate added)
+
+**MediaScope Significance (new analysis):**
+- CrowdTangle "Facebook's Top 10" Twitter account — Roose created an influential public dashboard showing right-wing content dominated Facebook engagement. Perhaps the most consequential single journalistic tool in shaping the narrative that Facebook amplifies right-wing misinformation
+- Oct 2021 article "Facebook Is Weaker Than We Knew" — characterized Facebook as in "slow, steady decline" with "frenetic pivots, executive paranoia, and talent attrition" (coinciding with Facebook Files)
+- KEY TRANSITION: Departure mirrors Casey Newton's 2020 Verge departure — both testing whether individual brand > institutional platform
+
+### Changes
+
+1. **`profiles/careers/journalists.yaml`:**
+   - Career: 4 → 5 entries (Fusion split into News Director + VP Editorial)
+   - Added 8 top-level `source_urls` (Wikipedia, kevinroose.com, TalkingBizNews ×2, NYTCo, Rabbit Hole wiki, Brown alumni list, Westtown)
+   - Source URLs on each career entry verified
+   - Expanded notes: 878 → ~2,100 chars with education, CrowdTangle, MediaScope significance, departure details
+
+2. **`README.md`:** 917 → 918 career-entry migrations (2 references updated)
+
+### Verification
+- All 2,556 tests pass
+- `count_stats.py --check`: README stats current ✅
+- Pushed to GitHub
+
+### Stats after
+- 87 entity clusters (unchanged)
+- 871 aliases (unchanged)
+- 918 career-entry migrations (was 917)
+- 231 journalists tracked (unchanged)
+- 2,556 tests across 115 files (unchanged)
 ## 2026-07-14 05:00 PT — Type A: Article Deep Dive (Reuters Australia eSafety Child Safety — Entity Gap Fixes)
 
 **Commit:** (pending) — "Type A: Reuters Australia eSafety child safety annotation, 4 entity gap fixes (+1 new cluster), 24 new tests"
