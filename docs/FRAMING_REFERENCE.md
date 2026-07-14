@@ -278,7 +278,7 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 
 ---
 
-*Last updated: 2026-07-12. See [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection) for full device descriptions, detection patterns, and discovery provenance articles.*
+*Last updated: 2026-07-14. See [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection) for full device descriptions, detection patterns, and discovery provenance articles.*
 
 ---
 
@@ -294,7 +294,9 @@ Candidate framing devices discovered during analysis but not yet formally added.
 
 | Candidate | Problem | Distinguishing Signal | Discovery Provenance | Status |
 |-----------|---------|----------------------|---------------------|--------|
-| **Path L — Structural Irony** | Macro-level article organization creates negative framing invisible at sentence level. VADER and even individual framing devices read each paragraph as neutral, but the *sequence* and *juxtaposition* of sections constructs an editorial argument. | Low adversarial_count + low EI + neutral agency, but manual assessment is clearly negative. Signal is in section ordering, not vocabulary. | Gizmodo siege roundup (Jul 2026) | Needs validation articles |
+| **Path M — Structural Irony** | Macro-level article organization creates negative framing invisible at sentence level. VADER and even individual framing devices read each paragraph as neutral, but the *sequence* and *juxtaposition* of sections constructs an editorial argument. | Low adversarial_count + low EI + neutral agency, but manual assessment is clearly negative. Signal is in section ordering, not vocabulary. | Gizmodo siege roundup (Jul 2026) | Needs validation articles |
+
+> **Note:** Path L (quote-inflated body with negative headline) is already implemented. This candidate uses the next available letter.
 
 ### Promotion Criteria
 

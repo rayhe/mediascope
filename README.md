@@ -51,7 +51,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 231 | Career data with source URLs |
 | Career-entry migrations | 917 | Across 425 distinct publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 2,517 | Across 112 test files |
+| Tests | 2,530 | Across 113 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -461,10 +461,11 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **2517 tests** across 112 test files, each covering a different analytical capability:
+MediaScope has **2530 tests** across 113 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
+| `test_accuracy_guide.py` | 13 | ACCURACY_GUIDE.md documentation consistency: existence and size, cross-references from README/AGENT_GUIDE/ARCHITECTURE, content structure (VADER polarity, genre accuracy, decision tree, correction paths A-L, misinterpretation patterns, validation checklist, known gaps), annotated article count sync with corpus |
 | `test_analyst_quote_attribution.py` | 13 | Analyst/financial coverage: firm-level post-attribution suppression for short/long quotes, wire service cross-citation filtering, genuine scare quote preservation |
 | `test_entities.py` | 28 | Entity detection, regex patterns, false-positive exclusion, cluster formats, Mosseri/Instagram leadership |
 | `test_sentiment.py` | 46 | 8-dimension scoring, VADER/TextBlob composite, framing correction pipeline, active-negative agency, headline override, security context adjustment, self-referential investigation detection |
