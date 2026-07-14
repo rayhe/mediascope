@@ -334,10 +334,10 @@ editorial_changes:
     event_type: contributor
     incoming: Ted Chiang
     notes: 'MARQUEE CONTRIBUTOR: Ted Chiang published "No, Artificial Intelligence Is Not Conscious" (Jun 3, 2026) — his first Atlantic byline after years as a New Yorker AI critic. Chiang (Brown BS CS
-      1989, Microsoft technical writer, 4x Hugo, 4x Nebula, TIME100 AI 2023, PEN/Malamud 2024) is the most influential non-journalist voice shaping public AI discourse. His New Yorker essays ("ChatGPT
-      Is a Blurry JPEG of the Web" Feb 2023, "Will A.I. Become the New McKinsey?" May 2023, "Why A.I. Isn''t Going to Make Art" Aug 2024) created frames that entered mainstream vocabulary. The Atlantic
-      piece targeted Anthropic directly on AI consciousness — landing during peak Meta AI/Muse coverage and the Hinton/Hassabis consciousness debates. Whether this signals a sustained Atlantic relationship
-      or a one-off commission is TBD, but it represents the Atlantic attracting the single highest-profile AI critic from the New Yorker''s contributor stable.'
+      1989, Microsoft technical writer, 4x Hugo, 4x Nebula, TIME100 AI 2023, PEN/Malamud 2024) is the most influential non-journalist voice shaping public AI discourse. His New Yorker essays ("ChatGPT Is
+      a Blurry JPEG of the Web" Feb 2023, "Will A.I. Become the New McKinsey?" May 2023, "Why A.I. Isn''t Going to Make Art" Aug 2024) created frames that entered mainstream vocabulary. The Atlantic piece
+      targeted Anthropic directly on AI consciousness — landing during peak Meta AI/Muse coverage and the Hinton/Hassabis consciousness debates. Whether this signals a sustained Atlantic relationship or
+      a one-off commission is TBD, but it represents the Atlantic attracting the single highest-profile AI critic from the New Yorker''s contributor stable.'
     role: contributing_writer
     source_url: https://en.wikipedia.org/wiki/Ted_Chiang
   guardian:
@@ -1259,6 +1259,23 @@ editorial_changes:
     outgoing: Scott Dadich
     position: eic
     source_url: https://www.nytimes.com/2017/01/17/business/media/wired-nicholas-thompson-editor.html
+  - date: 2019-09
+    incoming: Will Knight
+    outgoing: null
+    position: senior_writer_ai
+    notes: 'KEY HIRE: Will Knight joined from MIT Technology Review as Senior Writer covering AI. Brought 11 years of AI beat expertise and deep China AI specialization from MIT Tech Review. Launched the
+      "AI Lab" newsletter, which became Wired''s flagship AI content product (weekly, Wednesdays). This hire positioned Wired to dominate AI coverage among consumer-tech publications during the critical
+      2020-2026 period when AI went mainstream. His previous "The Dark Secret at the Heart of AI" (MIT Tech Review, 2017) had already been cited in CIA, ACM, and major policy publications. KEY MIGRATION
+      for DiD: MIT Tech Review → Wired represents a move from academic/technical audience to consumer-tech audience under Condé Nast. Landed under EIC Nicholas Thompson (who would leave for Atlantic CEO
+      in Dec 2020), then continued under Gideon Lichfield and Katie Drummond. University of Kent BA Anthropology, University of the Arts London Journalism.'
+    source_url: https://talkingbiznews.com/they-talk-biz-news/wired-hires-knight-to-cover-artificial-intelligence/
+  - date: 2020-06
+    incoming: null
+    notes: 'DEPARTURE: Martineau left Wired''s business desk after ~2 years to join The Information as tech/investigative reporter. Part of a broader pattern of Wired reporters leaving for paywalled or
+      specialized outlets during the Thompson-to-Drummond editorial transition period. She was hired Oct 2018 (Thompson era) and departed before Drummond''s arrival (Jan 2023).'
+    outgoing: Paris Martineau
+    position: staff_writer_business
+    source_url: https://talkingbiznews.com/media-news/wired-hires-martineau-as-a-staff-writer/
   - date: 2020-09
     incoming: Gideon Lichfield
     notes: 'Thompson left for The Atlantic (CEO). Lichfield appointed Global Editorial Director (not just EIC — responsible for content strategy, vision and tone across all Wired editions: US, UK, Italy,
@@ -1267,22 +1284,14 @@ editorial_changes:
     outgoing: Nicholas Thompson
     position: eic
     source_url: https://www.wired.com/story/gideon-lichfield-new-editor-wired/
-  - date: 2022-07
-    incoming: Vittoria Elliott
-    notes: 'Hired from Rest of World to cover technology platforms and their power. Background: international development (Ghana, Kenya, India) → freelance (Al Jazeera, ProPublica, The New Humanitarian)
-      → Rest of World → Wired. Non-traditional pipeline into Wired tech journalism. Led Wired''s AI Elections Project (2024). Promoted to senior writer by 2025-2026. Tufts BA, Columbia Journalism MS.'
-    outgoing: null
-    position: platforms_power_reporter
-    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-elliott-to-cover-platforms-and-power/
-  - date: 2023-09
-    incoming: Katie Drummond
-    notes: 'KEY EVENT: Drummond became Global Editorial Director. Previously ran VICE''s digital reporting globally (SVP, 2019-2023), was Gizmodo EIC (2015-2017), and started career as Wired intern (2009).
-      Explicitly adversarial framing: ''If you do wrong, I want the world to know.'' Created first-ever Wired politics team (Nov 2023). DOGE coverage drove 62,500 new US subs in 2 weeks (Feb 2025). Won
-      Sidney Hillman Prize. Launched ''Story Zero'' newsroom ethos. Reports to Anna Wintour. Freedom of the Press Foundation board (2024). This is the most important leadership change for detecting Wired''s
-      adversarial editorial shift — her entire career (Gizmodo → Vice → Wired) is an adversarial-journalism pipeline.'
-    outgoing: Gideon Lichfield
-    position: editorial_director
-    source_url: https://www.nytimes.com/2023/09/11/business/media/wired-katie-drummond.html
+  - date: '2022'
+    event_type: departure
+    notes: Volpicelli departed Wired UK after ~5 years (contributing editor 2017, then senior editor/writer). Moved to Politico Europe to cover tech policy in Brussels. Part of the broader Wired UK talent
+      drain that preceded the 2025 London office exits and UK print cancellation. His departure removed one of the UK team's most prominent tech/society writers with book-author credibility (Cryptocurrency,
+      Penguin 2021). Subsequently joined Bloomberg News (2024) — now covers European tech from Brussels.
+    outgoing: Gian M. Volpicelli
+    role: senior_writer
+    source_url: https://talkingbiznews.com/media-news/wired-reporter-volpicelli-set-to-depart/
   - date: 2022-04
     incoming: Andrew Couts
     notes: 'FOUNDATIONAL HIRE: Couts joined as Senior Editor, Security & Investigations ~18 months before Drummond arrived. Previously executive editor at Gizmodo (4+ years), politics editor at The Daily
@@ -1293,6 +1302,38 @@ editorial_changes:
     outgoing: null
     position: senior_editor_security_investigations
     source_url: https://theorg.com/org/wired/org-chart/andrew-couts
+  - date: 2022-07
+    incoming: Vittoria Elliott
+    notes: 'Hired from Rest of World to cover technology platforms and their power. Background: international development (Ghana, Kenya, India) → freelance (Al Jazeera, ProPublica, The New Humanitarian)
+      → Rest of World → Wired. Non-traditional pipeline into Wired tech journalism. Led Wired''s AI Elections Project (2024). Promoted to senior writer by 2025-2026. Tufts BA, Columbia Journalism MS.'
+    outgoing: null
+    position: platforms_power_reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-elliott-to-cover-platforms-and-power/
+  - date: 2022-12
+    incoming: Paresh Dave
+    outgoing: null
+    position: senior_writer_big_tech
+    notes: 'KEY HIRE: Dave hired from Reuters as senior writer covering all Big Five tech companies (AAPL, AMZN, GOOGL, META, MSFT). Reuters → Wired migration represents wire service → Condé Nast institutional
+      framing transition — important DiD candidate. USC Annenberg BA summa cum laude, Maynard Institute fellow. Member of Wired''s CWA-affiliated union (@wiredunion). Brought Reuters investigative rigor
+      and Google/Alphabet deep-beat expertise to Wired''s Big Tech desk.'
+    source_url: https://talkingbiznews.com/media-news/wired-hires-dave-as-a-senior-writer-covering-big-tech/amp/
+  - date: 2023-03
+    incoming: Meg Marco
+    notes: 'KEY HIRE: Drummond''s first executive editor of news. Marco came from Observer (EIC, 2 years) and before that ProPublica (senior editor, Pulitzer finalist 2021 for COVID coverage), WSJ (masthead
+      editor, founded Media Science Lab), Axios (Deep Dive editor), Consumerist (Gawker Media → Consumer Reports). Consumer advocacy and audience strategy background — not a traditional newsroom operator.
+      Her Gawker Media connection (Consumerist) links her to the adversarial media ecosystem that later populated Wired''s senior ranks. Oversaw launch of politics team (Feiger, Turton, Gilbert).'
+    outgoing: null
+    position: executive_editor_news
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-marco-as-executive-editor-of-news/
+  - date: 2023-09
+    incoming: Katie Drummond
+    notes: 'KEY EVENT: Drummond became Global Editorial Director. Previously ran VICE''s digital reporting globally (SVP, 2019-2023), was Gizmodo EIC (2015-2017), and started career as Wired intern (2009).
+      Explicitly adversarial framing: ''If you do wrong, I want the world to know.'' Created first-ever Wired politics team (Nov 2023). DOGE coverage drove 62,500 new US subs in 2 weeks (Feb 2025). Won
+      Sidney Hillman Prize. Launched ''Story Zero'' newsroom ethos. Reports to Anna Wintour. Freedom of the Press Foundation board (2024). This is the most important leadership change for detecting Wired''s
+      adversarial editorial shift — her entire career (Gizmodo → Vice → Wired) is an adversarial-journalism pipeline.'
+    outgoing: Gideon Lichfield
+    position: editorial_director
+    source_url: https://www.nytimes.com/2023/09/11/business/media/wired-katie-drummond.html
   - date: 2023-11
     incoming: Leah Feiger
     notes: 'KEY STRUCTURAL CHANGE: First-ever Wired politics editor. Feiger hired from Vice News (where she overlapped with Drummond). Team also included William Turton (Bloomberg, cybersecurity) and David
@@ -1310,21 +1351,6 @@ editorial_changes:
     outgoing: null
     position: politics_team_writer
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-kelly-for-politics-team/
-  - date: 2024-01
-    incoming: Michael Calore
-    notes: Promoted to Director, Consumer Tech & Culture — first of three Director positions Drummond created to restructure Wired's newsroom. Oversees all Wired Gear, Culture, and Service coverage across
-      US and UK. Longtime Wired editor. Announced alongside Barrett's executive editor hire.
-    outgoing: null
-    position: director_consumer_tech_culture
-    source_url: https://talkingbiznews.com/they-re-hiring/wired-names-barrett-its-executive-editor/
-  - date: 2023-03
-    incoming: Meg Marco
-    notes: 'KEY HIRE: Drummond''s first executive editor of news. Marco came from Observer (EIC, 2 years) and before that ProPublica (senior editor, Pulitzer finalist 2021 for COVID coverage), WSJ (masthead
-      editor, founded Media Science Lab), Axios (Deep Dive editor), Consumerist (Gawker Media → Consumer Reports). Consumer advocacy and audience strategy background — not a traditional newsroom operator.
-      Her Gawker Media connection (Consumerist) links her to the adversarial media ecosystem that later populated Wired''s senior ranks. Oversaw launch of politics team (Feiger, Turton, Gilbert).'
-    outgoing: null
-    position: executive_editor_news
-    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-marco-as-executive-editor-of-news/
   - date: 2023-12
     incoming: null
     notes: 'RAPID DEPARTURE: Marco left after only ~9 months. "I''m proud of the all the amazing work we accomplished in what felt like an instant, and can''t thank everyone enough." Departed to Harvard
@@ -1334,6 +1360,23 @@ editorial_changes:
     outgoing: Meg Marco
     position: executive_editor_news
     source_url: https://talkingbiznews.com/media-news/executive-editor-marco-is-leaving-wired/
+  - date: 2024-01
+    incoming: Michael Calore
+    notes: Promoted to Director, Consumer Tech & Culture — first of three Director positions Drummond created to restructure Wired's newsroom. Oversees all Wired Gear, Culture, and Service coverage across
+      US and UK. Longtime Wired editor. Announced alongside Barrett's executive editor hire.
+    outgoing: null
+    position: director_consumer_tech_culture
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-names-barrett-its-executive-editor/
+  - date: 2024-01
+    incoming: Tim Marchman
+    notes: 'KEY STRUCTURAL HIRE: Marchman recruited by Katie Drummond as Director of Science, Politics, and Security — the second of three Director positions created. Oversees politics desk (Leah Feiger),
+      science desk (Brian Kahn), and security coverage. Career: sportswriter (Chicago baseball) → Deadspin EIC (Gawker Media) → Gizmodo Media special projects editor (2018-2019, overlapping with Drummond''s
+      Gizmodo tenure) → Vice Media features director (2019-2024, during Vice''s bankruptcy) → Wired. Philadelphia-based. Led Wired''s DOGE scoops that consistently beat NYT/WaPo. His Gizmodo → Vice → Wired
+      trajectory parallels Drummond''s own adversarial-journalism pipeline (Wired intern → Gizmodo EIC → Vice SVP → Wired editorial director). Third Gizmodo/Vice alumnus in Wired leadership alongside Drummond
+      and Leah Feiger.'
+    outgoing: null
+    position: director_science_politics_security
+    source_url: https://thebulletin.org/2025/03/staring-into-the-doge-abyss-with-wireds-tim-marchman/
   - date: '2024-01-16'
     incoming: Brian Barrett
     notes: 'KEY STRUCTURAL HIRE: Barrett returned to Wired as executive editor of news, REPLACING Meg Marco who departed after only ~9 months. Barrett had a prior ~8 year stint at Wired (2014-2022) and
@@ -1344,6 +1387,14 @@ editorial_changes:
     outgoing: Meg Marco
     position: executive_editor_news
     source_url: https://talkingbiznews.com/they-re-hiring/wired-names-barrett-its-executive-editor/
+  - date: 2024-03
+    incoming: Noah Shachtman
+    notes: 'RETURN: Shachtman returned to Wired as contributing editor, announced personally by Katie Drummond. Previously at Wired 1998-2014 (freelancer, then contributing editor; co-founded Danger Room
+      blog). Interim career: Foreign Policy exec editor → Daily Beast EIC (2018-2021) → Rolling Stone EIC (2021-2024, departed over brand direction dispute with Gus Wenner). Joins Brendan Koerner, Lauren
+      Smily, Virginia Heffernan, Samanth Subramanian as contributing editors. Writes features, enterprise, assists with politics coverage talent scouting.'
+    outgoing: null
+    position: contributing_editor
+    source_url: https://mediapost.com/publications/article/394143/former-rolling-stone-eic-noah-shachtman-reunites.html
   - date: 2024-06
     incoming: null
     notes: 'WIRED UK EDITORIAL LAYOFF: James Temperton, Wired UK''s news editor — the most senior day-to-day operational editorial role in the UK newsroom — laid off as part of broader Wired restructuring.
@@ -1357,6 +1408,30 @@ editorial_changes:
     outgoing: James Temperton
     position: news_editor_uk_layoff
     source_url: https://talkingbiznews.com/media-news/temperton-joins-logic-as-deputy-me/
+  - date: 2024-06
+    incoming: null
+    notes: 'DEPARTURE: Simonite left for Washington Post as Tech Companies Editor. Had been at Wired since Jun 2017 (7 years), rising from senior writer (AI/ML) to senior editor for business coverage. Launched
+      Fast Forward AI newsletter. His departure removed a senior Silicon Valley business editor during Drummond''s restructuring — a knowledge/source network loss for Wired''s Big Tech coverage.'
+    outgoing: Tom Simonite
+    position: senior_editor_business_departure
+    source_url: https://editorandpublisher.com/stories/tom-simonite-joins-the-washington-post-as-tech-companies-editor,256005
+  - date: 2024-08
+    incoming: Zeyi Yang
+    notes: 'KEY HIRE: Zeyi Yang joined from MIT Technology Review as senior writer covering China technology and business. CROSS-PUBLICATION MIGRATION — second MIT TR → Wired migration after Will Knight
+      (2018). Hired as part of batch of four (with Verity Burns, Skye Battles, Alana Yzola) announced by Katie Drummond. 2024 ASME NEXT Award winner (Journalists Under 30). Created MIT TR''s China Report
+      weekly newsletter. Yale Poynter Fellow (Mar 2026). Only tracked journalist who can read primary Chinese-language sources (Peking University BA + Mandarin podcast co-founder). Reports to Zoë Schiffer
+      on business desk alongside Matsakis, Kleeman, Zeff. Based in New York. Tests whether MIT TR''s nuanced China coverage framing changes under Wired''s Drummond-era adversarial editorial posture — the
+      cleanest tracked-to-tracked migration available for DiD analysis because the beat (China tech) remains constant.'
+    outgoing: null
+    position: senior_writer_china
+    source_url: https://talkingbiznews.com/media-news/wired-hires-four-new-editorial-staffers/
+  - date: 2024-09
+    incoming: null
+    notes: 'DEPARTURE: Meaker left after 3 years covering Europe. Joined Bloomberg Weekend as senior writer. Won BSME ''best of best'' 2023 during Wired tenure. Her departure leaves Wired without a dedicated
+      Europe correspondent — significant gap given EU tech regulation (DSA, DMA, AI Act) is increasingly relevant to Meta/Big Tech coverage. No replacement announced as of Jun 2026.'
+    outgoing: Morgan Meaker
+    position: senior_writer_europe
+    source_url: https://talkingbiznews.com/media-news/wired-senior-writer-meaker-is-departing/
   - date: 2024-11
     incoming: Louise Matsakis
     notes: 'BOOMERANG HIRE: Matsakis returned to Wired as Senior Business Editor on the business desk, starting November 11. Reports to Zoë Schiffer (Director, Business & Industry). Works closely with US-based
@@ -1369,70 +1444,13 @@ editorial_changes:
     outgoing: null
     position: senior_business_editor
     source_url: https://EditorandPublisher.com/stories/louise-matsakis-is-returning-to-wired-as-a-senior-editor-of-the-business-desk,252182
-  - date: 2024-08
-    incoming: Zeyi Yang
-    notes: 'KEY HIRE: Zeyi Yang joined from MIT Technology Review as senior writer covering China technology and business. CROSS-PUBLICATION MIGRATION — second MIT TR → Wired migration after Will Knight
-      (2018). Hired as part of batch of four (with Verity Burns, Skye Battles, Alana Yzola) announced by Katie Drummond. 2024 ASME NEXT Award winner (Journalists Under 30). Created MIT TR''s China Report
-      weekly newsletter. Yale Poynter Fellow (Mar 2026). Only tracked journalist who can read primary Chinese-language sources (Peking University BA + Mandarin podcast co-founder). Reports to Zoë Schiffer
-      on business desk alongside Matsakis, Kleeman, Zeff. Based in New York. Tests whether MIT TR''s nuanced China coverage framing changes under Wired''s Drummond-era adversarial editorial posture — the
-      cleanest tracked-to-tracked migration available for DiD analysis because the beat (China tech) remains constant.'
+  - date: 2025-01
+    incoming: Caity Weaver (NYT Magazine), Jonathan Lemire (Politico/MSNBC), Alex Reisner (existing contributor)
+    notes: Weaver (staff writer) from NYT Magazine (Gawker → GQ → NYT Mag trajectory). Lemire (contributing writer) from Politico/MSNBC. Reisner (contributing writer) already doing AI training data investigations.
+      Same wave as Ashley Parker, Michael Scherer (staff writers), Kristen V. Brown, Jonathan Chait, Nicholas Florko, Shane Harris, Shayla Love.
     outgoing: null
-    position: senior_writer_china
-    source_url: https://talkingbiznews.com/media-news/wired-hires-four-new-editorial-staffers/
-  - date: 2026-02
-    incoming: null
-    notes: 'FIRST POLITICS TEAM DEPARTURE: Turton left for ProPublica as national reporter covering FBI/DOJ after ~2.3 years at Wired. The first departure from Drummond''s Nov 2023 politics team (Feiger,
-      Turton, Gilbert). His exit is analytically significant: he moved from tech-politics intersection to pure federal law enforcement, suggesting his beat evolved beyond Wired''s tech-first editorial framing.
-      Also breaks the Drummond orbit — Turton had followed Drummond through Gizmodo → The Outline → Wired. Wired''s DOGE coverage likely continues through Feiger (now Director of Politics & Science) but
-      loses Turton''s cybersecurity + political campaigns hybrid expertise.'
-    outgoing: William Turton
-    position: politics_team_departure
-    source_url: https://propublica.org/article/william-turton-joins-propublica-as-national-reporter
-  - date: '2026-01-01'
-    incoming: null
-    notes: 'STRUCTURAL: Wired pulled UK print edition for 2026. 7 editorial staff left London office at end of 2025. Team rebuilt to focus on audience development roles and some UK/Europe-focused reporting.
-      Global editorial director Katie Drummond: "creating a sustainable and growing subscription business is the future of Wired." Digital-only subscribers doubled in 2025, direct-to-publisher subscribers
-      up 20%. Significant because it reduces Wired''s London editorial capacity while Joel Khalili and Matt Burgess still report from UK. Signals Condé Nast cost-cutting that may affect editorial independence.'
-    outgoing: null
-    position: uk_print_edition
-    source_url: https://talkingbiznews.com/media-news/wired-pulls-plug-on-uk-print-edition/
-  - date: '2026-05-04'
-    incoming: Brian Kahn
-    notes: Brian Kahn hired as senior editor on science desk, reports to Tim Marchman. Previously at Bloomberg (climate team editor, flagship newsletter), Protocol (climate coverage), Earther. Based in
-      San Francisco office. Oversaw clean tech coverage, decommissioning satellites, Australia-Singapore power cable, firefighting planes competition. Climate/clean tech expertise adds to Wired's science
-      desk capacity.
-    outgoing: null
-    position: senior_editor_science
-    source_url: https://talkingbiznews.com/media-news/wired-hires-editors-from-business-insider-bloomberg/
-  - date: '2026-05-11'
-    incoming: Sophie Kleeman
-    notes: 'Sophie Kleeman hired as senior editor on business desk, reports to Zoë Schiffer. Previously deputy enterprise editor at Business Insider — edited award-winning stories on data centers, C-sections,
-      transgender violence, Elon Musk''s Tesla empire. Also followed Pelosi''s ice-cream-and-hot-dog diet for a week. Before BI: reporter and editor at Gizmodo, freelance. Based in New York office. KEY:
-      reports to Zoë Schiffer, who herself migrated from The Verge → Platformer → Wired. Business desk editorial hierarchy now has Drummond → Schiffer → Kleeman for enterprise tech.'
-    outgoing: null
-    position: senior_editor_business
-    source_url: https://talkingbiznews.com/media-news/wired-hires-editors-from-business-insider-bloomberg/
-  - date: '2026-05-18'
-    incoming: Dhruv Mehrotra
-    notes: 'BOOMERANG RETURN: Mehrotra returned to Wired from Bloomberg News, starting May 18, 2026. Exec editor Brian Barrett welcomed him back in a staff memo, calling his return "coming home" and pairing
-      him with Maddy Varner as "a force to be reckoned with." Reports to Andrew Couts on the security & investigations desk, based in New York. Left Wired in Jan 2025 for Bloomberg after ~2.5 years; returned
-      after ~16 months. Career: Northwestern EE → Gizmodo (2019-2022, overlapping with Drummond/Couts/Cameron) → Center for Investigative Reporting/Reveal (2021-2022) → Wired (2022-2024) → Bloomberg (2025-2026)
-      → Wired (2026-). Within weeks of return, co-broke Meta/Rank One face recognition smart glasses story with Dell Cameron, then co-authored "Project Cannes" (Jun 29, 2026) with Joel Khalili — exposing
-      Meta contractors posing as minors to test rival AI chatbots. KEY: boomerang hire reinforces Barrett/Couts Gizmodo talent pipeline. Fourth journalist to follow the Gizmodo → Wired path under Drummond
-      era (after Cameron, Couts, and Drummond herself).'
-    outgoing: null
-    position: senior_writer_investigations
-    source_url: https://www.editorandpublisher.com/stories/dhruv-mehrotra-is-welcomed-back-to-wired,262263
-  - date: 2024-01
-    incoming: Tim Marchman
-    notes: 'KEY STRUCTURAL HIRE: Marchman recruited by Katie Drummond as Director of Science, Politics, and Security — the second of three Director positions created. Oversees politics desk (Leah Feiger),
-      science desk (Brian Kahn), and security coverage. Career: sportswriter (Chicago baseball) → Deadspin EIC (Gawker Media) → Gizmodo Media special projects editor (2018-2019, overlapping with Drummond''s
-      Gizmodo tenure) → Vice Media features director (2019-2024, during Vice''s bankruptcy) → Wired. Philadelphia-based. Led Wired''s DOGE scoops that consistently beat NYT/WaPo. His Gizmodo → Vice → Wired
-      trajectory parallels Drummond''s own adversarial-journalism pipeline (Wired intern → Gizmodo EIC → Vice SVP → Wired editorial director). Third Gizmodo/Vice alumnus in Wired leadership alongside Drummond
-      and Leah Feiger.'
-    outgoing: null
-    position: director_science_politics_security
-    source_url: https://thebulletin.org/2025/03/staring-into-the-doge-abyss-with-wireds-tim-marchman/
+    position: staff_and_contributing_writers
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-hires-caity-weaver-as-staff-writer-jonathan-lemire-and-alex-reisner-to-join-as-contributing-writers,252424
   - date: '2025-03-24'
     incoming: Molly Taft
     notes: 'Molly Taft hired as senior writer covering climate on science desk. Reports to Tim Marchman. Previously reporter/editor at Drilled Media (climate investigative outlet), contributing senior editor
@@ -1442,247 +1460,6 @@ editorial_changes:
     outgoing: null
     position: senior_writer_climate
     source_url: https://talkingbiznews.com/media-news/wired-hires-taft-as-senior-writer/
-  - date: '2026-02-02'
-    incoming: Miles Klee
-    notes: Miles Klee hired as senior writer on culture desk. Reports to Michael Calore (Director, Consumer Tech & Culture). Previously culture writer at Rolling Stone (~3.5 years), senior staff writer
-      at MEL Magazine (~5 years), staff writer at The Daily Dot. Also written for Washington Post, Vanity Fair, Slate, Vulture. Los Angeles-based. Covers internet culture, conspiracy theories, memes, digital
-      subcultures. Announced by executive editor Brian Barrett. Author of novels and story collections. Unusual hire — non-traditional pipeline from cultural criticism and internet culture journalism, not
-      from tech reporting. Signals Wired's editorial expansion beyond pure tech coverage under Drummond.
-    outgoing: null
-    position: senior_writer_culture
-    source_url: https://editorandpublisher.com/stories/wired-adds-senior-writer-to-the-culture-desk/
-  - date: '2026-02-11'
-    incoming: Kate Knibbs
-    notes: 'BEAT SHIFT: Kate Knibbs moved from AI copyright/media beat to prediction markets. Previously covered "the human side of the generative AI boom" and AI copyright litigation — the exact intersection
-      of Condé Nast''s undisclosed AI licensing conflicts. Now covers Polymarket, Kalshi, insider trading in prediction markets, regulatory battles. Beat shift may reduce Wired''s dedicated AI copyright
-      coverage capacity — significant given the Richner v. Microsoft 400-newspaper lawsuit filed Jun 24, 2026. Tests: did editorial leadership reassign her because AI copyright was getting too close to
-      Condé Nast''s own licensing deals?'
-    outgoing: null
-    position: senior_writer_beat_shift
-    source_url: https://talkingbiznews.com/they-re-hiring/wired-senior-reporter-knibbs-moves-to-prediction-market-beat/
-  - date: '2026-03-17'
-    incoming: null
-    notes: 'OPEN POSITION: Wired seeking a chief business correspondent — 12+ years experience, "break high-impact news," "deep and extensive sourcing within the tech world," "authority on the business
-      of tech" for video, events, podcasts. Must "work closely with the Executive Editor and the Senior Director to define and shape editorial strategy for the business desk." Guild position. Reports to
-      Zoë Schiffer (Director, Business & Industry). This is the most senior open editorial position at Wired as of mid-2026 — whoever fills it shapes business/Big Tech coverage framing.'
-    outgoing: null
-    position: chief_business_correspondent_open
-    source_url: https://talkingbiznews.com/they-re-hiring/wired-seeks-a-chief-business-correspondent/
-  - date: '2025-12-01'
-    incoming: null
-    notes: Peter Guest departed Wired London for Coda Story as senior editor. Was acting business editor for Wired UK. Previously enterprise editor at Rest of World (Singapore), features editor at Nikkei
-      Asia (Tokyo). Written for Bloomberg Businessweek, The Atlantic, GQ, FT, WSJ, MIT Tech Review. Won Society of Publishers in Asia award (2022). Departure part of broader Wired UK contraction — his exit
-      + 7 other UK staff departures at end of 2025 coincide with UK print edition cancellation.
-    outgoing: Peter Guest
-    position: acting_business_editor_uk
-    source_url: https://talkingbiznews.com/media-news/guest-departs-wired-for-coda-story/
-  - date: '2026-04-06'
-    incoming: Ej Dickson
-    notes: 'CULTURE DESK EXPANSION: Ej Dickson hired as senior writer on culture desk, based in New York. Reports to Michael Calore (Director, Consumer Tech & Culture). Previously senior writer at New York
-      Magazine''s The Cut (Sep 2024-Mar 2026) covering internet culture, sex, relationships; before that senior writer at Rolling Stone (2019-2024) covering internet culture and influencers — published
-      cover stories on Mr. Beast and Doja Cat, broke stories on Andrew Tate, Jojo Siwa child exploitation allegations, and Ron Jeremy rape allegations. Earlier career: Daily Dot, Mic, Bustle, Hearst Magazines,
-      Nerve.com, Death+Taxes. Author of "One Bad Mother: In Praise of Psycho Housewives, Stage Parents, Momfluencers, and Other Women We Love to Hate" (book). Oberlin College BA, NYU MA Journalism (Cultural
-      Reporting and Criticism). Co-hosted "Don''t Let This Flop" podcast at Rolling Stone covering internet culture. Drummond''s personal note: "It''s hard to think of a more adept observer of pop culture
-      — and how the internet shapes relationships at every level — than Ej." NON-TRADITIONAL PIPELINE: culture/influencer journalism (Rolling Stone → NYMag) rather than tech or adversarial pipeline (Gizmodo/Vice/Guardian).
-      Her beat — internet culture, power dynamics in creator economy, exploitation — maps onto Wired''s expanding interest in platforms'' social impact. First hire explicitly framed around "how the internet
-      shapes relationships" rather than corporate accountability or policy.'
-    outgoing: null
-    position: senior_writer_culture
-    source_url: https://editorandpublisher.com/stories/ej-dickson-to-join-wired-as-a-senior-writer
-  - date: '2026-04-27'
-    incoming: Hugo Lowell
-    notes: 'GUARDIAN → WIRED MIGRATION: Hugo Lowell hired as senior correspondent on politics desk, replacing William Turton (departed Feb 2026 for ProPublica). Previously Guardian US White House correspondent
-      (2021-2026) — broke major stories on Trump classified documents, Jan 6 committee. Won National Press Club Sandy Hume Memorial Award 2022. Before Guardian: sports politics/doping reporter at i newspaper
-      (London), private equity analyst at Zetland Capital (London). Born 1999, NYC. Dalton School + St Paul''s School (London) + BSc Economics & Philosophy, University of Bristol. Reports to Leah Feiger
-      (Director, Politics & Science). Takes over Wired politics newsletter. Regular MSNBC/CNN/BBC analyst. DC-based. ANALYTICAL VALUE: Second Guardian → Wired migration in 2026 (alongside Rosie Swash).
-      Brings pure political investigative DNA rather than tech journalism background — tests whether Wired''s politics desk is becoming a standalone political publication that happens to sit inside a tech
-      magazine. His Guardian coverage of Trump-DOJ intersection maps cleanly onto Wired''s DOGE coverage (led by Tim Marchman). No prior tech reporting experience whatsoever.'
-    outgoing: null
-    position: senior_correspondent_politics
-    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-lowell-as-senior-correspondent/
-  - date: '2026-05-05'
-    incoming: Rosie Swash
-    notes: 'GUARDIAN → WIRED MIGRATION: Rosie Swash hired as Deputy Editor in London — a newly created role. Previously 17+ years at the Guardian (Observer → Guardian, senior news editor leading tech/environment/science/health
-      desks), then editor at Mill Media. Reports to Brian Barrett (exec editor of news). Won 2024 Amnesty Media Prize for ''The Mystery of Bangladesh''s Missing Children'' investigation. Covered Afghanistan,
-      Iran, Ukraine for Guardian''s ''Rights and Freedoms'' series. ANALYTICAL VALUE: Third Guardian → Wired pipeline hire in 2025-2026 (after Blake Montgomery as US tech editor Sep 2023 via Gizmodo, and
-      Hugo Lowell Apr 2026). The Deputy Editor role is new — Swash shapes UK editorial output directly. Paired with Isabella Ward as London staff writer (hired June 2026 — Barrett''s "general assignment
-      staff writer, another new role" referenced in this announcement). Her Guardian investigative and accountability DNA (Grenfell-era newsroom, conflict reporting) entering Wired''s London desk mirrors
-      the Robert Booth appointment at Guardian (housing investigator → tech editor). Signals Wired UK rebuilding post-print-cancellation with Guardian-trained editorial leadership rather than tech-native
-      journalists.'
-    outgoing: null
-    position: deputy_editor_london
-    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-swash-as-deputy-editor-in-london/
-  - date: 2024-06
-    incoming: null
-    notes: 'DEPARTURE: Simonite left for Washington Post as Tech Companies Editor. Had been at Wired since Jun 2017 (7 years), rising from senior writer (AI/ML) to senior editor for business coverage. Launched
-      Fast Forward AI newsletter. His departure removed a senior Silicon Valley business editor during Drummond''s restructuring — a knowledge/source network loss for Wired''s Big Tech coverage.'
-    outgoing: Tom Simonite
-    position: senior_editor_business_departure
-    source_url: https://editorandpublisher.com/stories/tom-simonite-joins-the-washington-post-as-tech-companies-editor,256005
-  - date: 2024-03
-    incoming: Noah Shachtman
-    notes: 'RETURN: Shachtman returned to Wired as contributing editor, announced personally by Katie Drummond. Previously at Wired 1998-2014 (freelancer, then contributing editor; co-founded Danger Room
-      blog). Interim career: Foreign Policy exec editor → Daily Beast EIC (2018-2021) → Rolling Stone EIC (2021-2024, departed over brand direction dispute with Gus Wenner). Joins Brendan Koerner, Lauren
-      Smily, Virginia Heffernan, Samanth Subramanian as contributing editors. Writes features, enterprise, assists with politics coverage talent scouting.'
-    outgoing: null
-    position: contributing_editor
-    source_url: https://mediapost.com/publications/article/394143/former-rolling-stone-eic-noah-shachtman-reunites.html
-  - date: 2024-09
-    incoming: null
-    notes: 'DEPARTURE: Meaker left after 3 years covering Europe. Joined Bloomberg Weekend as senior writer. Won BSME ''best of best'' 2023 during Wired tenure. Her departure leaves Wired without a dedicated
-      Europe correspondent — significant gap given EU tech regulation (DSA, DMA, AI Act) is increasingly relevant to Meta/Big Tech coverage. No replacement announced as of Jun 2026.'
-    outgoing: Morgan Meaker
-    position: senior_writer_europe
-    source_url: https://talkingbiznews.com/media-news/wired-senior-writer-meaker-is-departing/
-  - date: 2020-06
-    incoming: null
-    notes: 'DEPARTURE: Martineau left Wired''s business desk after ~2 years to join The Information as tech/investigative reporter. Part of a broader pattern of Wired reporters leaving for paywalled or
-      specialized outlets during the Thompson-to-Drummond editorial transition period. She was hired Oct 2018 (Thompson era) and departed before Drummond''s arrival (Jan 2023).'
-    outgoing: Paris Martineau
-    position: staff_writer_business
-    source_url: https://talkingbiznews.com/media-news/wired-hires-martineau-as-a-staff-writer/
-  - date: '2025-11-17'
-    incoming: Maxwell Zeff
-    notes: 'AI BUSINESS HIRE: Zeff hired as senior writer covering the business of AI. Announced by Brian Barrett Nov 13, 2025. From TechCrunch (senior AI reporter), previously Gizmodo and Bloomberg. Barrett:
-      "Few people have delivered more scoops at such a critical time for the industry. Max is relentless, well-sourced, and brings a deep understanding of both the technological and financial intricacies
-      of AI." Based in San Francisco. THIRD Gizmodo → Wired migration under Barrett (after Dell Cameron and Dhruv Mehrotra), reinforcing the Gizmodo talent pipeline. Reports to Zoë Schiffer on business
-      desk. @wiredunion member. Fills AI business coverage gap left after Tom Simonite''s June 2024 departure to Washington Post.'
-    outgoing: null
-    position: senior_writer_ai_business
-    source_url: https://www.editorandpublisher.com/stories/wired-welcomes-two-new-staff-members-alana-hope-levinson-and-maxwell-zeff,252685
-  - date: '2026-06-03'
-    incoming: Isabella Ward
-    notes: 'BLOOMBERG → WIRED MIGRATION: Isabella Ward hired as staff writer in London. Previously Bloomberg News reporter covering multiple desks (Tech, Economy, Government, Markets Today, Breaking News,
-      EMEA equities — UK retail stocks and ECM). MSci Physics from Imperial College London. 2025 John Schofield Trust Fellow. Notable quantum computing coverage (Google Willow chip, Nu Quantum, JPMorgan
-      quantum random numbers). 539+ articles at Bloomberg. First Wired byline: biotech/ longevity piece on Life Biosciences cellular rejuvenation FDA trial. This is the "general assignment staff writer
-      (another new role, more on that soon)" that Brian Barrett referenced in the Rosie Swash deputy editor announcement (April 2026). Reports to Rosie Swash (deputy editor, London) → Brian Barrett (exec
-      editor). London rebuild: Ward + Swash are the two editorial hires reconstituting Wired''s UK editorial presence after print edition cancellation and 7 staff departures at end of 2025. ANALYTICAL VALUE:
-      Unlike most Drummond-era hires (Gizmodo/Vice/Guardian adversarial-journalism pipeline), Ward comes from Bloomberg — financial/markets institutional DNA rather than adversarial journalism. Her physics
-      degree gives her scientific depth unusual for Wired. Tests whether Wired London''s rebuilt desk inherits Drummond''s adversarial editorial posture or develops a more data-driven/science-native framing
-      through Ward''s Bloomberg training.'
-    outgoing: null
-    position: staff_writer_london
-    source_url: https://talkingbiznews.com/media-news/wired-hires-bloombergs-ward-as-a-staff-writer/
-  - date: '2025-11-17'
-    incoming: Alana Hope Levinson
-    notes: 'FEATURES EDITOR HIRE: Levinson hired as features editor. Announced by Brian Barrett Nov 13, 2025. Career: writer/editor at Medium and MEL Magazine (instrumental in building editorial teams),
-      last five years ran her own consultancy launching print publications, podcasts, and newsletters. Written for New York, GQ, Vogue, Dwell, Rolling Stone. Based in Wired LA office. Barrett: "a sharp
-      eye for digital culture, an entrepreneurial outlook, and a bottomless well of ideas." Not a tech-journalism-pipeline hire — brings digital culture and longform editorial sensibility from magazine
-      world.'
-    outgoing: null
-    position: features_editor
-    source_url: https://www.editorandpublisher.com/stories/wired-welcomes-two-new-staff-members-alana-hope-levinson-and-maxwell-zeff,252685
-  - date: 2025-11
-    incoming: Maddy Varner
-    notes: 'INVESTIGATIONS HIRE: Senior writer focused on investigations, security desk, working across all desks. Brian Barrett announcement. Came from FTC (technologist in residence) after stints at The
-      Markup (4+ years) and ProPublica. Won Gerald Loeb Award (2018) at ProPublica for "Monetizing Hate" series examining Facebook ad practices. FTC tenure provides insider regulatory perspective unusual
-      among Wired journalists. Paired with Dhruv Mehrotra (boomerang from Bloomberg, May 2026) — Barrett called them "a force to be reckoned with." Based in NYC office. Already covering Meta scam ad lawsuits
-      at Wired, extending her original ProPublica Facebook beat. FOIA specialist, data journalist, tool builder. PIPELINE: ProPublica → The Markup → FTC → Wired represents the investigative-nonprofit →
-      government-regulator → commercial-media arc, distinct from the Gizmodo/Vice adversarial pipeline of other Drummond-era hires.'
-    outgoing: null
-    position: senior_writer_investigations
-    source_url: https://talkingbiznews.com/media-news/wired-hires-varner-as-senior-writer/
-  - date: '2026-07-01'
-    incoming: Kate Taylor
-    notes: 'BUSINESS DESK EXPANSION: Kate Taylor hired as senior writer covering future of work and AI impact on employment. Announced by exec editor Brian Barrett. Previously: Business Insider (~9 years,
-      senior features correspondent), Forbes/ ForbesWomen intern, Entrepreneur magazine reporter. Most recently completed MBA at Columbia Business School "to better understand the companies she covers."
-      Known for investigative exposés that became documentaries: Dan Schneider/ Nickelodeon → "Quiet on Set: The Dark Side of Kids TV" (HBO/Discovery, Emmy nominated, Taylor was EP), Brandy Melville → "Brandy
-      Hellville & the Cult of Fast Fashion" (HBO, Taylor was consultant). Won NAREE Silver Medal 2023, LA Press Club 2nd place. Based in New York. Reports to Zoë Schiffer (Director, Business & Industry).
-      Barrett: "the deeper investigative features that have been her trademark." ANALYTICAL VALUE: (1) Beat overlap with Guardian "Reworked" AI/ work series (lost founding editor Oltman to Bloomberg Jun
-      2026) — Wired now directly competing on this coverage area. (2) Non-adversarial pipeline (BI/entertainment, not Gizmodo/Vice/Guardian) — tests whether Wired business desk hires adopt or resist institutional
-      adversarial posture. (3) Business desk now: Schiffer (Director) + Matsakis + Kleeman (senior editors) + Taylor (AI/work) + Zeff (AI business) + unfilled chief business correspondent. Dartmouth BA,
-      Columbia MBA.'
-    outgoing: null
-    position: senior_writer_ai_work
-    source_url: https://talkingbiznews.com/media-news/wired-hires-taylor-as-senior-writer/
-  - date: 2026-06
-    incoming: null
-    notes: 'MEDIA EXPANSION: Wired launched "Uncanny Valley" as a weekly radio show on KQED, an NPR San Francisco station, airing Saturdays at 7 PM PT. Hosted by global editorial director Katie Drummond,
-      featuring highlights from the flagship podcast of the same name and Drummond''s Big Interview series. Also features clips from exec editor Brian Barrett, Director of Business & Industry Zoë Schiffer,
-      and Director of Politics & Science Leah Feiger. Signals Wired''s expansion from digital-first publication into broadcast media — public radio reach extends Wired''s editorial framing to NPR audiences
-      who may not read wired.com.'
-    outgoing: null
-    position: uncanny_valley_kqed_radio
-    source_url: https://talkingbiznews.com/media-news/wired-is-starting-a-show-on-a-radio-station/
-  - date: 2026-06
-    incoming: null
-    notes: 'PLATFORM EXPANSION: Wired announced a forum-style subscriber app "launching very soon" that lets readers interact with Wired journalists in forums organized by subject matter. Arielle Goldstein
-      (audience development manager) described it as a "community power play" aimed at keeping readers on Wired''s own platforms rather than social media. Discussed at Audiencers Festival in London. Significance:
-      creates direct journalist-reader feedback loops that may reinforce existing framing or create audience-driven editorial pressure. In the context of adversarial Big Tech coverage, a community app where
-      readers can engage directly with writers like Schiffer could amplify reader-confirmation dynamics in coverage direction.'
-    outgoing: null
-    position: community_app_launch
-    source_url: https://talkingbiznews.com/media-news/wired-launching-app-to-lead-readers-interact-with-staff/
-  - date: '2025-11-06'
-    incoming: null
-    notes: 'LABOR DISPUTE — "FIRED FOUR": Jake Lahut fired Nov 6, 2025, one day after ~20 Condé United union members confronted CPO Stan Duncan outside his 34th-floor office at 1 World Trade Center over
-      Teen Vogue restructuring/layoffs and Wired layoffs. Fired alongside Jasper Lo (New Yorker fact-checker), Alma Avalle (Bon Appétit), Ben Dewey (Condé Nast Entertainment). Five additional union members
-      suspended. TheWrap obtained video — did NOT show "extreme misconduct" as Condé Nast claimed. Lahut was ONE WEEK shy of his probationary period ending (more vulnerable than guild-protected staff).
-      He represented Wired on MSNBC the morning of his termination and was pulled from scheduled evening appearance. Condé Nast filed own NLRB complaint against NewsGuild, claimed "extreme misconduct."
-      NY AG Letitia James threatened legal action Nov 12, called firings "union-busting." Settlement reached May 27, 2026: Lo/Avalle/Dewey received $400K+ combined, converted to voluntary resignation with
-      letters of recommendation, suspended workers got back pay and records expunged. LAHUT DECLINED LESSER SETTLEMENT — pursuing independent NLRB unfair labor practice charge. Now freelancing and working
-      as breaking news editor at Sherwood News. Newsletter: "Straight From The Hut." Still appearing on MSNBC. INSTITUTIONAL SIGNIFICANCE: Wired hired an adversarial political reporter who then turned adversarial
-      energy against Condé Nast management itself — management responded by firing him during his probationary period. The dual NLRB complaints (union vs company AND company vs union) show institutional
-      fracture lines at Condé Nast during Drummond editorial expansion.'
-    outgoing: Jake Lahut
-    position: senior_writer_fired_labor_dispute
-    source_url: https://thewrap.com/conde-nast-fires-4-employees-labor-complaint-union/
-  - date: '2026-03-10'
-    incoming: Caroline Haskins
-    notes: 'BUSINESS DESK EXPANSION: Haskins hired as business reporter covering tech companies and their influence. Previously freelancing (1+ year) after leaving Business Insider, where she was research
-      editor and senior tech reporter covering AI and surveillance tech (Aug 2021 - Dec 2023). Earlier career: BuzzFeed News senior tech reporter (broke Ring/Clearview AI stories, Oct 2019 - Jul 2021),
-      Motherboard/Vice staff writer (obtained Palantir police manual, 2018-2019), The Outline intern. NYU graduate. Reports to Zoë Schiffer (Director, Business & Industry). Based in New York. ANALYTICAL
-      SIGNIFICANCE: Surveillance-tech accountability specialist whose entire career has been oriented toward corporate power critique. KEY: within 4 months of joining, produced the Project Cannes investigation
-      (Jul 1 2026) — broke story that Meta contractor Covalen hired hundreds of contractors posing as teens to test rival AI chatbots with 45,000+ prompts about suicide, drugs, sex, eating disorders. Directly
-      adversarial Meta story with wide pickup (NY Post, Reuters, Livemint, eWeek). Business desk roster now: Schiffer (Director) + Matsakis + Kleeman (senior editors) + Taylor + Zeff + Haskins (reporters/writers).
-      Reporting chain Haskins → Schiffer → Barrett → Drummond is adversarial-journalism DNA at every level.'
-    outgoing: null
-    position: business_reporter
-    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-haskins-as-a-business-reporter/
-  - date: '2026-03-24'
-    incoming: Manisha Krishnan
-    notes: 'CULTURE DESK HIRE: Krishnan hired as senior editor, culture. Emmy award-winning journalist with nearly 9 years at VICE News covering drugs, race, and cultural beats. Also worked at Guardian,
-      Business Insider, CNN. Reports to Michael Calore (Director, Consumer Tech & Culture). VICE → WIRED PIPELINE: Her nearly 9-year Vice News tenure overlaps with Katie Drummond''s Vice SVP period (2019-2023),
-      making her another Drummond-orbit hire. GUARDIAN PIPELINE: Also a Guardian alumnus, adding to the 2026 Guardian → Wired migration wave (Hugo Lowell Apr 2026, Rosie Swash May 2026). Culture desk now:
-      Calore (Director) + Krishnan (senior editor) + Klee + Dickson (writers).'
-    outgoing: null
-    position: senior_editor_culture
-    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-krishnan-as-senior-editor/
-  - date: '2026-07-02'
-    incoming: null
-    notes: 'OPEN LEADERSHIP POSITION: Wired posted job for "editor to lead business coverage" — a senior management position reporting to executive editor Brian Barrett with "oversight of 10+ reporters
-      and editors across US and UK teams." This is functionally the Director-level business desk role currently held by Zoë Schiffer. Salary range $145K-$225K (vs chief business correspondent $165K-$270K
-      — still unfilled). Posting language: "We are less interested in earnings reports than getting inside pivotal companies and exploring their influence" — explicit adversarial framing mandate. Requires
-      "an informed view of the power of big platforms, the impact of artificial intelligence, the future of work." ANALYTICAL SIGNIFICANCE: (1) Posted one day after Kate Taylor hire announcement — suggests
-      planned desk restructuring not an emergency. (2) The role description overlaps heavily with Schiffer Director, Business and Industry position — possible departure signal or title restructuring. (3)
-      If Schiffer is leaving, her replacement would inherit editorial authority over Wired entire Big Tech coverage operation (Matsakis, Kleeman, Taylor, Zeff, Haskins, et al.), making this the most consequential
-      open editorial role at any of the 5 tracked publications. (4) Combined with the still-unfilled chief business correspondent role (posted March 2026), Wired business desk has two major leadership gaps
-      while simultaneously expanding its writer roster. WATCH: Monitor for Schiffer departure announcement.'
-    outgoing: null
-    position: business_editor_open
-    source_url: https://talkingbiznews.com/biz-news-help-wanted/wired-seeks-an-editor-to-lead-its-business-coverage/
-  - date: 2026-04
-    incoming: null
-    notes: 'WIRED UK LEADERSHIP DEPARTURE: Greg Williams, editor of Wired UK for 9 years (16 total years at Wired), departed to join Exponential View (Azeem Azhar''s research studio on exponential technologies)
-      as its inaugural executive editor. Previously was executive editor of print and digital at Wired; also previously executive editor at Details Magazine. His departure is part of the broader Wired UK
-      contraction narrative: UK print edition cancelled (Jan 2026), 7 editorial staff left London office at end of 2025, Peter Guest departed (Dec 2025). Williams was the most senior Wired UK editorial
-      figure, and his exit effectively marks the end of Wired UK as a semi-autonomous editorial entity — replaced by Rosie Swash (Deputy Editor London, hired May 2026) and Isabella Ward (staff writer, hired
-      June 2026) reporting directly to Brian Barrett (US exec editor) rather than having their own UK editor. ANALYTICAL VALUE: Wired UK under Williams published a distinctive editorial product with its
-      own cover stories and editorial voice for nearly a decade. Its dissolution under Drummond''s "global editorial director" structure centralizes editorial control in the US — US-centric adversarial
-      tech framing now applies uniformly to UK/European coverage that previously had Williams''s own editorial judgment.'
-    outgoing: Greg Williams
-    position: editor_wired_uk_departure
-    source_url: https://talkingbiznews.com/media-news/williams-departs-wired-for-exponential-view/
-  - date: 2026-01
-    event_type: departure
-    incoming: null
-    notes: 'WIRED → NYT OPINION MIGRATION: Camille Bromley left Wired features editor role to join NYT Opinion special projects team as staff editor. Her Wired features on generative AI, Silicon Valley''s
-      political shift right, and crypto were NMA finalists and Best American anthologized. Departure during Drummond era — potential signal that long-form literary features talent is being displaced by
-      news/adversarial coverage expansion under Schiffer and Barrett. Previously at The Believer (McSweeney''s ecosystem) and CJR/Harper''s. ANALYTICAL VALUE: Tests talent-retention hypothesis — is Wired''s
-      Drummond-era editorial pivot from features to breaking news pushing out narrative specialists?'
-    outgoing: Camille Bromley
-    position: features_editor
-    source_url: https://talkingbiznews.com/media-news/bromley-former-wired-features-editor-joins-ny-times-opinion/
   - date: 2025-07
     incoming: Idrees Kahloon (Economist), Vivian Salama (WSJ), Tom Bartlett (Chronicle of Higher Ed)
     notes: 'Triple hire wave: Kahloon from Economist (Washington bureau chief → staff writer), Salama from WSJ (national security → national security), Bartlett from Chronicle (22-year tenure → health/science).
@@ -1704,36 +1481,6 @@ editorial_changes:
     outgoing: null
     position: staff_writers_and_editors
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-emily-bobrow-and-katie-zezima-as-senior-editors-will-gottsegen-and-jonathan-lemire-join-as-staff-writers,253449
-  - date: 2025-01
-    incoming: Caity Weaver (NYT Magazine), Jonathan Lemire (Politico/MSNBC), Alex Reisner (existing contributor)
-    notes: Weaver (staff writer) from NYT Magazine (Gawker → GQ → NYT Mag trajectory). Lemire (contributing writer) from Politico/MSNBC. Reisner (contributing writer) already doing AI training data investigations.
-      Same wave as Ashley Parker, Michael Scherer (staff writers), Kristen V. Brown, Jonathan Chait, Nicholas Florko, Shane Harris, Shayla Love.
-    outgoing: null
-    position: staff_and_contributing_writers
-    source_url: https://www.editorandpublisher.com/stories/the-atlantic-hires-caity-weaver-as-staff-writer-jonathan-lemire-and-alex-reisner-to-join-as-contributing-writers,252424
-  - date: 2026-01
-    incoming: Henry Grabar (Slate), Judith Shulevitz (upgrade), Chris Suellentrop (WaPo), Uzodinma Iweala
-    notes: Grabar (staff writer) from 12-year Slate tenure. Shulevitz upgraded from contributing to staff writer after contributing since 2015. Suellentrop (senior editor) from WaPo op-ed editing. Iweala
-      (contributing writer) — author of "Beasts of No Nation."
-    outgoing: null
-    position: staff_writers_and_editors
-    source_url: https://www.editorandpublisher.com/stories/the-atlantic-adds-four-journalists-to-its-staff,258176
-  - date: 2026-04
-    incoming: Sophia Nguyen (WaPo), Kevin Sieff (WaPo 15yr), Theo Balcomb (NPR/NYT/WaPo), Jonathan L. Fischer (WaPo)
-    notes: 'WaPo-heavy wave: 4 hires, 3 directly from WaPo (Nguyen, Sieff, Fischer) plus Balcomb who had WaPo freelance editorial work. Sieff''s 15-year WaPo foreign posting tenure is the longest WaPo departure.
-      Balcomb''s 4-publication trajectory (NPR → NYT → WaPo → Atlantic) provides the richest DiD migration path in the dataset. This wave brings total WaPo → Atlantic pipeline to 5+ in 12 months.'
-    outgoing: null
-    position: staff_writers_and_editors
-    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff,260627
-  - date: 2025-12
-    incoming: null
-    notes: 'WIRED UK DEPARTURE: Rob Reddick, UK science editor since April 2022, left Wired as part of the broader London editorial contraction. His role covered health, medicine, biotech, environment,
-      climate, space, energy, and robotics. Previously commissioning editor at The Conversation UK (Mosaic magazine, COVID-19). Oxford BA (English Language and Literature). His departure is one of 7+ London
-      staff exits at end of 2025, coinciding with UK print edition cancellation (Jan 2026). His science desk role was NOT directly replaced by a UK-based hire — Brian Kahn (Bloomberg, hired May 2026 as
-      US-based senior editor science) is the only science desk editorial hire since, reporting from San Francisco to Tim Marchman.'
-    outgoing: Rob Reddick
-    position: science_editor_uk_departure
-    source_url: https://talkingbiznews.com/media-news/wireds-reddick-is-leaving-publication/
   - date: '2025-10-31'
     incoming: null
     notes: 'DEPARTURE: Evelyn Kwong, director of social and multiplatform strategy, departed Oct 31, 2025. Joined 404 Media as contributor two days later (Nov 3). She was the architect of Wired''s journalist-as-influencer
@@ -1744,6 +1491,178 @@ editorial_changes:
     outgoing: Evelyn Kwong
     position: director_social_multiplatform_departure
     source_url: https://talkingbiznews.com/media-news/kwong-is-departing-wired/
+  - date: 2025-11
+    incoming: Maddy Varner
+    notes: 'INVESTIGATIONS HIRE: Senior writer focused on investigations, security desk, working across all desks. Brian Barrett announcement. Came from FTC (technologist in residence) after stints at The
+      Markup (4+ years) and ProPublica. Won Gerald Loeb Award (2018) at ProPublica for "Monetizing Hate" series examining Facebook ad practices. FTC tenure provides insider regulatory perspective unusual
+      among Wired journalists. Paired with Dhruv Mehrotra (boomerang from Bloomberg, May 2026) — Barrett called them "a force to be reckoned with." Based in NYC office. Already covering Meta scam ad lawsuits
+      at Wired, extending her original ProPublica Facebook beat. FOIA specialist, data journalist, tool builder. PIPELINE: ProPublica → The Markup → FTC → Wired represents the investigative-nonprofit →
+      government-regulator → commercial-media arc, distinct from the Gizmodo/Vice adversarial pipeline of other Drummond-era hires.'
+    outgoing: null
+    position: senior_writer_investigations
+    source_url: https://talkingbiznews.com/media-news/wired-hires-varner-as-senior-writer/
+  - date: '2025-11-06'
+    incoming: null
+    notes: 'LABOR DISPUTE — "FIRED FOUR": Jake Lahut fired Nov 6, 2025, one day after ~20 Condé United union members confronted CPO Stan Duncan outside his 34th-floor office at 1 World Trade Center over
+      Teen Vogue restructuring/layoffs and Wired layoffs. Fired alongside Jasper Lo (New Yorker fact-checker), Alma Avalle (Bon Appétit), Ben Dewey (Condé Nast Entertainment). Five additional union members
+      suspended. TheWrap obtained video — did NOT show "extreme misconduct" as Condé Nast claimed. Lahut was ONE WEEK shy of his probationary period ending (more vulnerable than guild-protected staff).
+      He represented Wired on MSNBC the morning of his termination and was pulled from scheduled evening appearance. Condé Nast filed own NLRB complaint against NewsGuild, claimed "extreme misconduct."
+      NY AG Letitia James threatened legal action Nov 12, called firings "union-busting." Settlement reached May 27, 2026: Lo/Avalle/Dewey received $400K+ combined, converted to voluntary resignation with
+      letters of recommendation, suspended workers got back pay and records expunged. LAHUT DECLINED LESSER SETTLEMENT — pursuing independent NLRB unfair labor practice charge. Now freelancing and working
+      as breaking news editor at Sherwood News. Newsletter: "Straight From The Hut." Still appearing on MSNBC. INSTITUTIONAL SIGNIFICANCE: Wired hired an adversarial political reporter who then turned adversarial
+      energy against Condé Nast management itself — management responded by firing him during his probationary period. The dual NLRB complaints (union vs company AND company vs union) show institutional
+      fracture lines at Condé Nast during Drummond editorial expansion.'
+    outgoing: Jake Lahut
+    position: senior_writer_fired_labor_dispute
+    source_url: https://thewrap.com/conde-nast-fires-4-employees-labor-complaint-union/
+  - date: '2025-11-17'
+    incoming: Maxwell Zeff
+    notes: 'AI BUSINESS HIRE: Zeff hired as senior writer covering the business of AI. Announced by Brian Barrett Nov 13, 2025. From TechCrunch (senior AI reporter), previously Gizmodo and Bloomberg. Barrett:
+      "Few people have delivered more scoops at such a critical time for the industry. Max is relentless, well-sourced, and brings a deep understanding of both the technological and financial intricacies
+      of AI." Based in San Francisco. THIRD Gizmodo → Wired migration under Barrett (after Dell Cameron and Dhruv Mehrotra), reinforcing the Gizmodo talent pipeline. Reports to Zoë Schiffer on business
+      desk. @wiredunion member. Fills AI business coverage gap left after Tom Simonite''s June 2024 departure to Washington Post.'
+    outgoing: null
+    position: senior_writer_ai_business
+    source_url: https://www.editorandpublisher.com/stories/wired-welcomes-two-new-staff-members-alana-hope-levinson-and-maxwell-zeff,252685
+  - date: '2025-11-17'
+    incoming: Alana Hope Levinson
+    notes: 'FEATURES EDITOR HIRE: Levinson hired as features editor. Announced by Brian Barrett Nov 13, 2025. Career: writer/editor at Medium and MEL Magazine (instrumental in building editorial teams),
+      last five years ran her own consultancy launching print publications, podcasts, and newsletters. Written for New York, GQ, Vogue, Dwell, Rolling Stone. Based in Wired LA office. Barrett: "a sharp
+      eye for digital culture, an entrepreneurial outlook, and a bottomless well of ideas." Not a tech-journalism-pipeline hire — brings digital culture and longform editorial sensibility from magazine
+      world.'
+    outgoing: null
+    position: features_editor
+    source_url: https://www.editorandpublisher.com/stories/wired-welcomes-two-new-staff-members-alana-hope-levinson-and-maxwell-zeff,252685
+  - date: 2025-12
+    incoming: null
+    notes: 'WIRED UK DEPARTURE: Rob Reddick, UK science editor since April 2022, left Wired as part of the broader London editorial contraction. His role covered health, medicine, biotech, environment,
+      climate, space, energy, and robotics. Previously commissioning editor at The Conversation UK (Mosaic magazine, COVID-19). Oxford BA (English Language and Literature). His departure is one of 7+ London
+      staff exits at end of 2025, coinciding with UK print edition cancellation (Jan 2026). His science desk role was NOT directly replaced by a UK-based hire — Brian Kahn (Bloomberg, hired May 2026 as
+      US-based senior editor science) is the only science desk editorial hire since, reporting from San Francisco to Tim Marchman.'
+    outgoing: Rob Reddick
+    position: science_editor_uk_departure
+    source_url: https://talkingbiznews.com/media-news/wireds-reddick-is-leaving-publication/
+  - date: '2025-12-01'
+    incoming: null
+    notes: Peter Guest departed Wired London for Coda Story as senior editor. Was acting business editor for Wired UK. Previously enterprise editor at Rest of World (Singapore), features editor at Nikkei
+      Asia (Tokyo). Written for Bloomberg Businessweek, The Atlantic, GQ, FT, WSJ, MIT Tech Review. Won Society of Publishers in Asia award (2022). Departure part of broader Wired UK contraction — his exit
+      + 7 other UK staff departures at end of 2025 coincide with UK print edition cancellation.
+    outgoing: Peter Guest
+    position: acting_business_editor_uk
+    source_url: https://talkingbiznews.com/media-news/guest-departs-wired-for-coda-story/
+  - date: 2026-01
+    event_type: departure
+    incoming: null
+    notes: 'WIRED → NYT OPINION MIGRATION: Camille Bromley left Wired features editor role to join NYT Opinion special projects team as staff editor. Her Wired features on generative AI, Silicon Valley''s
+      political shift right, and crypto were NMA finalists and Best American anthologized. Departure during Drummond era — potential signal that long-form literary features talent is being displaced by
+      news/adversarial coverage expansion under Schiffer and Barrett. Previously at The Believer (McSweeney''s ecosystem) and CJR/Harper''s. ANALYTICAL VALUE: Tests talent-retention hypothesis — is Wired''s
+      Drummond-era editorial pivot from features to breaking news pushing out narrative specialists?'
+    outgoing: Camille Bromley
+    position: features_editor
+    source_url: https://talkingbiznews.com/media-news/bromley-former-wired-features-editor-joins-ny-times-opinion/
+  - date: 2026-01
+    incoming: Henry Grabar (Slate), Judith Shulevitz (upgrade), Chris Suellentrop (WaPo), Uzodinma Iweala
+    notes: Grabar (staff writer) from 12-year Slate tenure. Shulevitz upgraded from contributing to staff writer after contributing since 2015. Suellentrop (senior editor) from WaPo op-ed editing. Iweala
+      (contributing writer) — author of "Beasts of No Nation."
+    outgoing: null
+    position: staff_writers_and_editors
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-adds-four-journalists-to-its-staff,258176
+  - date: '2026-01-01'
+    incoming: null
+    notes: 'STRUCTURAL: Wired pulled UK print edition for 2026. 7 editorial staff left London office at end of 2025. Team rebuilt to focus on audience development roles and some UK/Europe-focused reporting.
+      Global editorial director Katie Drummond: "creating a sustainable and growing subscription business is the future of Wired." Digital-only subscribers doubled in 2025, direct-to-publisher subscribers
+      up 20%. Significant because it reduces Wired''s London editorial capacity while Joel Khalili and Matt Burgess still report from UK. Signals Condé Nast cost-cutting that may affect editorial independence.'
+    outgoing: null
+    position: uk_print_edition
+    source_url: https://talkingbiznews.com/media-news/wired-pulls-plug-on-uk-print-edition/
+  - date: 2026-02
+    incoming: null
+    notes: 'FIRST POLITICS TEAM DEPARTURE: Turton left for ProPublica as national reporter covering FBI/DOJ after ~2.3 years at Wired. The first departure from Drummond''s Nov 2023 politics team (Feiger,
+      Turton, Gilbert). His exit is analytically significant: he moved from tech-politics intersection to pure federal law enforcement, suggesting his beat evolved beyond Wired''s tech-first editorial framing.
+      Also breaks the Drummond orbit — Turton had followed Drummond through Gizmodo → The Outline → Wired. Wired''s DOGE coverage likely continues through Feiger (now Director of Politics & Science) but
+      loses Turton''s cybersecurity + political campaigns hybrid expertise.'
+    outgoing: William Turton
+    position: politics_team_departure
+    source_url: https://propublica.org/article/william-turton-joins-propublica-as-national-reporter
+  - date: '2026-02-02'
+    incoming: Miles Klee
+    notes: Miles Klee hired as senior writer on culture desk. Reports to Michael Calore (Director, Consumer Tech & Culture). Previously culture writer at Rolling Stone (~3.5 years), senior staff writer
+      at MEL Magazine (~5 years), staff writer at The Daily Dot. Also written for Washington Post, Vanity Fair, Slate, Vulture. Los Angeles-based. Covers internet culture, conspiracy theories, memes, digital
+      subcultures. Announced by executive editor Brian Barrett. Author of novels and story collections. Unusual hire — non-traditional pipeline from cultural criticism and internet culture journalism, not
+      from tech reporting. Signals Wired's editorial expansion beyond pure tech coverage under Drummond.
+    outgoing: null
+    position: senior_writer_culture
+    source_url: https://editorandpublisher.com/stories/wired-adds-senior-writer-to-the-culture-desk/
+  - date: '2026-02-11'
+    incoming: Kate Knibbs
+    notes: 'BEAT SHIFT: Kate Knibbs moved from AI copyright/media beat to prediction markets. Previously covered "the human side of the generative AI boom" and AI copyright litigation — the exact intersection
+      of Condé Nast''s undisclosed AI licensing conflicts. Now covers Polymarket, Kalshi, insider trading in prediction markets, regulatory battles. Beat shift may reduce Wired''s dedicated AI copyright
+      coverage capacity — significant given the Richner v. Microsoft 400-newspaper lawsuit filed Jun 24, 2026. Tests: did editorial leadership reassign her because AI copyright was getting too close to
+      Condé Nast''s own licensing deals?'
+    outgoing: null
+    position: senior_writer_beat_shift
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-senior-reporter-knibbs-moves-to-prediction-market-beat/
+  - date: '2026-03-10'
+    incoming: Caroline Haskins
+    notes: 'BUSINESS DESK EXPANSION: Haskins hired as business reporter covering tech companies and their influence. Previously freelancing (1+ year) after leaving Business Insider, where she was research
+      editor and senior tech reporter covering AI and surveillance tech (Aug 2021 - Dec 2023). Earlier career: BuzzFeed News senior tech reporter (broke Ring/Clearview AI stories, Oct 2019 - Jul 2021),
+      Motherboard/Vice staff writer (obtained Palantir police manual, 2018-2019), The Outline intern. NYU graduate. Reports to Zoë Schiffer (Director, Business & Industry). Based in New York. ANALYTICAL
+      SIGNIFICANCE: Surveillance-tech accountability specialist whose entire career has been oriented toward corporate power critique. KEY: within 4 months of joining, produced the Project Cannes investigation
+      (Jul 1 2026) — broke story that Meta contractor Covalen hired hundreds of contractors posing as teens to test rival AI chatbots with 45,000+ prompts about suicide, drugs, sex, eating disorders. Directly
+      adversarial Meta story with wide pickup (NY Post, Reuters, Livemint, eWeek). Business desk roster now: Schiffer (Director) + Matsakis + Kleeman (senior editors) + Taylor + Zeff + Haskins (reporters/writers).
+      Reporting chain Haskins → Schiffer → Barrett → Drummond is adversarial-journalism DNA at every level.'
+    outgoing: null
+    position: business_reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-haskins-as-a-business-reporter/
+  - date: '2026-03-17'
+    incoming: null
+    notes: 'OPEN POSITION: Wired seeking a chief business correspondent — 12+ years experience, "break high-impact news," "deep and extensive sourcing within the tech world," "authority on the business
+      of tech" for video, events, podcasts. Must "work closely with the Executive Editor and the Senior Director to define and shape editorial strategy for the business desk." Guild position. Reports to
+      Zoë Schiffer (Director, Business & Industry). This is the most senior open editorial position at Wired as of mid-2026 — whoever fills it shapes business/Big Tech coverage framing.'
+    outgoing: null
+    position: chief_business_correspondent_open
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-seeks-a-chief-business-correspondent/
+  - date: '2026-03-24'
+    incoming: Manisha Krishnan
+    notes: 'CULTURE DESK HIRE: Krishnan hired as senior editor, culture. Emmy award-winning journalist with nearly 9 years at VICE News covering drugs, race, and cultural beats. Also worked at Guardian,
+      Business Insider, CNN. Reports to Michael Calore (Director, Consumer Tech & Culture). VICE → WIRED PIPELINE: Her nearly 9-year Vice News tenure overlaps with Katie Drummond''s Vice SVP period (2019-2023),
+      making her another Drummond-orbit hire. GUARDIAN PIPELINE: Also a Guardian alumnus, adding to the 2026 Guardian → Wired migration wave (Hugo Lowell Apr 2026, Rosie Swash May 2026). Culture desk now:
+      Calore (Director) + Krishnan (senior editor) + Klee + Dickson (writers).'
+    outgoing: null
+    position: senior_editor_culture
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-krishnan-as-senior-editor/
+  - date: 2026-04
+    incoming: null
+    notes: 'WIRED UK LEADERSHIP DEPARTURE: Greg Williams, editor of Wired UK for 9 years (16 total years at Wired), departed to join Exponential View (Azeem Azhar''s research studio on exponential technologies)
+      as its inaugural executive editor. Previously was executive editor of print and digital at Wired; also previously executive editor at Details Magazine. His departure is part of the broader Wired UK
+      contraction narrative: UK print edition cancelled (Jan 2026), 7 editorial staff left London office at end of 2025, Peter Guest departed (Dec 2025). Williams was the most senior Wired UK editorial
+      figure, and his exit effectively marks the end of Wired UK as a semi-autonomous editorial entity — replaced by Rosie Swash (Deputy Editor London, hired May 2026) and Isabella Ward (staff writer, hired
+      June 2026) reporting directly to Brian Barrett (US exec editor) rather than having their own UK editor. ANALYTICAL VALUE: Wired UK under Williams published a distinctive editorial product with its
+      own cover stories and editorial voice for nearly a decade. Its dissolution under Drummond''s "global editorial director" structure centralizes editorial control in the US — US-centric adversarial
+      tech framing now applies uniformly to UK/European coverage that previously had Williams''s own editorial judgment.'
+    outgoing: Greg Williams
+    position: editor_wired_uk_departure
+    source_url: https://talkingbiznews.com/media-news/williams-departs-wired-for-exponential-view/
+  - date: 2026-04
+    incoming: Sophia Nguyen (WaPo), Kevin Sieff (WaPo 15yr), Theo Balcomb (NPR/NYT/WaPo), Jonathan L. Fischer (WaPo)
+    notes: 'WaPo-heavy wave: 4 hires, 3 directly from WaPo (Nguyen, Sieff, Fischer) plus Balcomb who had WaPo freelance editorial work. Sieff''s 15-year WaPo foreign posting tenure is the longest WaPo departure.
+      Balcomb''s 4-publication trajectory (NPR → NYT → WaPo → Atlantic) provides the richest DiD migration path in the dataset. This wave brings total WaPo → Atlantic pipeline to 5+ in 12 months.'
+    outgoing: null
+    position: staff_writers_and_editors
+    source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-four-journalists-joining-its-growing-staff,260627
+  - date: '2026-04-06'
+    incoming: Ej Dickson
+    notes: 'CULTURE DESK EXPANSION: Ej Dickson hired as senior writer on culture desk, based in New York. Reports to Michael Calore (Director, Consumer Tech & Culture). Previously senior writer at New York
+      Magazine''s The Cut (Sep 2024-Mar 2026) covering internet culture, sex, relationships; before that senior writer at Rolling Stone (2019-2024) covering internet culture and influencers — published
+      cover stories on Mr. Beast and Doja Cat, broke stories on Andrew Tate, Jojo Siwa child exploitation allegations, and Ron Jeremy rape allegations. Earlier career: Daily Dot, Mic, Bustle, Hearst Magazines,
+      Nerve.com, Death+Taxes. Author of "One Bad Mother: In Praise of Psycho Housewives, Stage Parents, Momfluencers, and Other Women We Love to Hate" (book). Oberlin College BA, NYU MA Journalism (Cultural
+      Reporting and Criticism). Co-hosted "Don''t Let This Flop" podcast at Rolling Stone covering internet culture. Drummond''s personal note: "It''s hard to think of a more adept observer of pop culture
+      — and how the internet shapes relationships at every level — than Ej." NON-TRADITIONAL PIPELINE: culture/influencer journalism (Rolling Stone → NYMag) rather than tech or adversarial pipeline (Gizmodo/Vice/Guardian).
+      Her beat — internet culture, power dynamics in creator economy, exploitation — maps onto Wired''s expanding interest in platforms'' social impact. First hire explicitly framed around "how the internet
+      shapes relationships" rather than corporate accountability or policy.'
+    outgoing: null
+    position: senior_writer_culture
+    source_url: https://editorandpublisher.com/stories/ej-dickson-to-join-wired-as-a-senior-writer
   - date: '2026-04-06'
     incoming: null
     notes: 'OPEN POSITION: Staff editor for newsroom, reporting to Director of Science, Politics, and Security (Tim Marchman). NYC or SF office. Guild position. Responsibilities: edit stories from multiple
@@ -1754,6 +1673,74 @@ editorial_changes:
     outgoing: null
     position: staff_editor_open
     source_url: https://talkingbiznews.com/biz-news-help-wanted/full-time/wired-seeks-a-staff-editor-in-nyc-or-san-fran/
+  - date: '2026-04-27'
+    incoming: Hugo Lowell
+    notes: 'GUARDIAN → WIRED MIGRATION: Hugo Lowell hired as senior correspondent on politics desk, replacing William Turton (departed Feb 2026 for ProPublica). Previously Guardian US White House correspondent
+      (2021-2026) — broke major stories on Trump classified documents, Jan 6 committee. Won National Press Club Sandy Hume Memorial Award 2022. Before Guardian: sports politics/doping reporter at i newspaper
+      (London), private equity analyst at Zetland Capital (London). Born 1999, NYC. Dalton School + St Paul''s School (London) + BSc Economics & Philosophy, University of Bristol. Reports to Leah Feiger
+      (Director, Politics & Science). Takes over Wired politics newsletter. Regular MSNBC/CNN/BBC analyst. DC-based. ANALYTICAL VALUE: Second Guardian → Wired migration in 2026 (alongside Rosie Swash).
+      Brings pure political investigative DNA rather than tech journalism background — tests whether Wired''s politics desk is becoming a standalone political publication that happens to sit inside a tech
+      magazine. His Guardian coverage of Trump-DOJ intersection maps cleanly onto Wired''s DOGE coverage (led by Tim Marchman). No prior tech reporting experience whatsoever.'
+    outgoing: null
+    position: senior_correspondent_politics
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-lowell-as-senior-correspondent/
+  - date: '2026-05-04'
+    incoming: Brian Kahn
+    notes: Brian Kahn hired as senior editor on science desk, reports to Tim Marchman. Previously at Bloomberg (climate team editor, flagship newsletter), Protocol (climate coverage), Earther. Based in
+      San Francisco office. Oversaw clean tech coverage, decommissioning satellites, Australia-Singapore power cable, firefighting planes competition. Climate/clean tech expertise adds to Wired's science
+      desk capacity.
+    outgoing: null
+    position: senior_editor_science
+    source_url: https://talkingbiznews.com/media-news/wired-hires-editors-from-business-insider-bloomberg/
+  - date: '2026-05-05'
+    incoming: Rosie Swash
+    notes: 'GUARDIAN → WIRED MIGRATION: Rosie Swash hired as Deputy Editor in London — a newly created role. Previously 17+ years at the Guardian (Observer → Guardian, senior news editor leading tech/environment/science/health
+      desks), then editor at Mill Media. Reports to Brian Barrett (exec editor of news). Won 2024 Amnesty Media Prize for ''The Mystery of Bangladesh''s Missing Children'' investigation. Covered Afghanistan,
+      Iran, Ukraine for Guardian''s ''Rights and Freedoms'' series. ANALYTICAL VALUE: Third Guardian → Wired pipeline hire in 2025-2026 (after Blake Montgomery as US tech editor Sep 2023 via Gizmodo, and
+      Hugo Lowell Apr 2026). The Deputy Editor role is new — Swash shapes UK editorial output directly. Paired with Isabella Ward as London staff writer (hired June 2026 — Barrett''s "general assignment
+      staff writer, another new role" referenced in this announcement). Her Guardian investigative and accountability DNA (Grenfell-era newsroom, conflict reporting) entering Wired''s London desk mirrors
+      the Robert Booth appointment at Guardian (housing investigator → tech editor). Signals Wired UK rebuilding post-print-cancellation with Guardian-trained editorial leadership rather than tech-native
+      journalists.'
+    outgoing: null
+    position: deputy_editor_london
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-swash-as-deputy-editor-in-london/
+  - date: '2026-05-11'
+    incoming: Sophie Kleeman
+    notes: 'Sophie Kleeman hired as senior editor on business desk, reports to Zoë Schiffer. Previously deputy enterprise editor at Business Insider — edited award-winning stories on data centers, C-sections,
+      transgender violence, Elon Musk''s Tesla empire. Also followed Pelosi''s ice-cream-and-hot-dog diet for a week. Before BI: reporter and editor at Gizmodo, freelance. Based in New York office. KEY:
+      reports to Zoë Schiffer, who herself migrated from The Verge → Platformer → Wired. Business desk editorial hierarchy now has Drummond → Schiffer → Kleeman for enterprise tech.'
+    outgoing: null
+    position: senior_editor_business
+    source_url: https://talkingbiznews.com/media-news/wired-hires-editors-from-business-insider-bloomberg/
+  - date: '2026-05-18'
+    incoming: Dhruv Mehrotra
+    notes: 'BOOMERANG RETURN: Mehrotra returned to Wired from Bloomberg News, starting May 18, 2026. Exec editor Brian Barrett welcomed him back in a staff memo, calling his return "coming home" and pairing
+      him with Maddy Varner as "a force to be reckoned with." Reports to Andrew Couts on the security & investigations desk, based in New York. Left Wired in Jan 2025 for Bloomberg after ~2.5 years; returned
+      after ~16 months. Career: Northwestern EE → Gizmodo (2019-2022, overlapping with Drummond/Couts/Cameron) → Center for Investigative Reporting/Reveal (2021-2022) → Wired (2022-2024) → Bloomberg (2025-2026)
+      → Wired (2026-). Within weeks of return, co-broke Meta/Rank One face recognition smart glasses story with Dell Cameron, then co-authored "Project Cannes" (Jun 29, 2026) with Joel Khalili — exposing
+      Meta contractors posing as minors to test rival AI chatbots. KEY: boomerang hire reinforces Barrett/Couts Gizmodo talent pipeline. Fourth journalist to follow the Gizmodo → Wired path under Drummond
+      era (after Cameron, Couts, and Drummond herself).'
+    outgoing: null
+    position: senior_writer_investigations
+    source_url: https://www.editorandpublisher.com/stories/dhruv-mehrotra-is-welcomed-back-to-wired,262263
+  - date: 2026-06
+    incoming: null
+    notes: 'MEDIA EXPANSION: Wired launched "Uncanny Valley" as a weekly radio show on KQED, an NPR San Francisco station, airing Saturdays at 7 PM PT. Hosted by global editorial director Katie Drummond,
+      featuring highlights from the flagship podcast of the same name and Drummond''s Big Interview series. Also features clips from exec editor Brian Barrett, Director of Business & Industry Zoë Schiffer,
+      and Director of Politics & Science Leah Feiger. Signals Wired''s expansion from digital-first publication into broadcast media — public radio reach extends Wired''s editorial framing to NPR audiences
+      who may not read wired.com.'
+    outgoing: null
+    position: uncanny_valley_kqed_radio
+    source_url: https://talkingbiznews.com/media-news/wired-is-starting-a-show-on-a-radio-station/
+  - date: 2026-06
+    incoming: null
+    notes: 'PLATFORM EXPANSION: Wired announced a forum-style subscriber app "launching very soon" that lets readers interact with Wired journalists in forums organized by subject matter. Arielle Goldstein
+      (audience development manager) described it as a "community power play" aimed at keeping readers on Wired''s own platforms rather than social media. Discussed at Audiencers Festival in London. Significance:
+      creates direct journalist-reader feedback loops that may reinforce existing framing or create audience-driven editorial pressure. In the context of adversarial Big Tech coverage, a community app where
+      readers can engage directly with writers like Schiffer could amplify reader-confirmation dynamics in coverage direction.'
+    outgoing: null
+    position: community_app_launch
+    source_url: https://talkingbiznews.com/media-news/wired-launching-app-to-lead-readers-interact-with-staff/
   - date: 2026-06
     incoming: Tim Marchman
     notes: 'TITLE UPGRADE: Marchman promoted from Director to Senior Director of Science, Politics, and Security within 18 months of hire. CJR interview (June 2026) identifies him as "senior director" —
@@ -1764,22 +1751,42 @@ editorial_changes:
     outgoing: null
     position: senior_director_science_politics_security
     source_url: https://www.cjr.org/kicker/wired-tim-marchman-technology-accountability-government-ties-bay-area-tech-leaders-elon-musk-doge.php
-  - date: '2022'
-    event_type: departure
-    notes: Volpicelli departed Wired UK after ~5 years (contributing editor 2017, then senior editor/writer). Moved to Politico Europe to cover tech policy in Brussels. Part of the broader Wired UK talent
-      drain that preceded the 2025 London office exits and UK print cancellation. His departure removed one of the UK team's most prominent tech/society writers with book-author credibility (Cryptocurrency,
-      Penguin 2021). Subsequently joined Bloomberg News (2024) — now covers European tech from Brussels.
-    outgoing: Gian M. Volpicelli
-    role: senior_writer
-    source_url: https://talkingbiznews.com/media-news/wired-reporter-volpicelli-set-to-depart/
-  - date: 2019-09
-    incoming: Will Knight
+  - date: '2026-06-03'
+    incoming: Isabella Ward
+    notes: 'BLOOMBERG → WIRED MIGRATION: Isabella Ward hired as staff writer in London. Previously Bloomberg News reporter covering multiple desks (Tech, Economy, Government, Markets Today, Breaking News,
+      EMEA equities — UK retail stocks and ECM). MSci Physics from Imperial College London. 2025 John Schofield Trust Fellow. Notable quantum computing coverage (Google Willow chip, Nu Quantum, JPMorgan
+      quantum random numbers). 539+ articles at Bloomberg. First Wired byline: biotech/ longevity piece on Life Biosciences cellular rejuvenation FDA trial. This is the "general assignment staff writer
+      (another new role, more on that soon)" that Brian Barrett referenced in the Rosie Swash deputy editor announcement (April 2026). Reports to Rosie Swash (deputy editor, London) → Brian Barrett (exec
+      editor). London rebuild: Ward + Swash are the two editorial hires reconstituting Wired''s UK editorial presence after print edition cancellation and 7 staff departures at end of 2025. ANALYTICAL VALUE:
+      Unlike most Drummond-era hires (Gizmodo/Vice/Guardian adversarial-journalism pipeline), Ward comes from Bloomberg — financial/markets institutional DNA rather than adversarial journalism. Her physics
+      degree gives her scientific depth unusual for Wired. Tests whether Wired London''s rebuilt desk inherits Drummond''s adversarial editorial posture or develops a more data-driven/science-native framing
+      through Ward''s Bloomberg training.'
     outgoing: null
-    position: senior_writer_ai
-    notes: 'KEY HIRE: Will Knight joined from MIT Technology Review as Senior Writer covering AI. Brought 11 years of AI beat expertise and deep China AI specialization from MIT Tech Review. Launched the
-      "AI Lab" newsletter, which became Wired''s flagship AI content product (weekly, Wednesdays). This hire positioned Wired to dominate AI coverage among consumer-tech publications during the critical
-      2020-2026 period when AI went mainstream. His previous "The Dark Secret at the Heart of AI" (MIT Tech Review, 2017) had already been cited in CIA, ACM, and major policy publications. KEY MIGRATION
-      for DiD: MIT Tech Review → Wired represents a move from academic/technical audience to consumer-tech audience under Condé Nast. Landed under EIC Nicholas Thompson (who would leave for Atlantic CEO
-      in Dec 2020), then continued under Gideon Lichfield and Katie Drummond. University of Kent BA Anthropology, University of the Arts London Journalism.'
-    source_url: https://talkingbiznews.com/they-talk-biz-news/wired-hires-knight-to-cover-artificial-intelligence/
-
+    position: staff_writer_london
+    source_url: https://talkingbiznews.com/media-news/wired-hires-bloombergs-ward-as-a-staff-writer/
+  - date: '2026-07-01'
+    incoming: Kate Taylor
+    notes: 'BUSINESS DESK EXPANSION: Kate Taylor hired as senior writer covering future of work and AI impact on employment. Announced by exec editor Brian Barrett. Previously: Business Insider (~9 years,
+      senior features correspondent), Forbes/ ForbesWomen intern, Entrepreneur magazine reporter. Most recently completed MBA at Columbia Business School "to better understand the companies she covers."
+      Known for investigative exposés that became documentaries: Dan Schneider/ Nickelodeon → "Quiet on Set: The Dark Side of Kids TV" (HBO/Discovery, Emmy nominated, Taylor was EP), Brandy Melville → "Brandy
+      Hellville & the Cult of Fast Fashion" (HBO, Taylor was consultant). Won NAREE Silver Medal 2023, LA Press Club 2nd place. Based in New York. Reports to Zoë Schiffer (Director, Business & Industry).
+      Barrett: "the deeper investigative features that have been her trademark." ANALYTICAL VALUE: (1) Beat overlap with Guardian "Reworked" AI/ work series (lost founding editor Oltman to Bloomberg Jun
+      2026) — Wired now directly competing on this coverage area. (2) Non-adversarial pipeline (BI/entertainment, not Gizmodo/Vice/Guardian) — tests whether Wired business desk hires adopt or resist institutional
+      adversarial posture. (3) Business desk now: Schiffer (Director) + Matsakis + Kleeman (senior editors) + Taylor (AI/work) + Zeff (AI business) + unfilled chief business correspondent. Dartmouth BA,
+      Columbia MBA.'
+    outgoing: null
+    position: senior_writer_ai_work
+    source_url: https://talkingbiznews.com/media-news/wired-hires-taylor-as-senior-writer/
+  - date: '2026-07-02'
+    incoming: null
+    notes: 'OPEN LEADERSHIP POSITION: Wired posted job for "editor to lead business coverage" — a senior management position reporting to executive editor Brian Barrett with "oversight of 10+ reporters
+      and editors across US and UK teams." This is functionally the Director-level business desk role currently held by Zoë Schiffer. Salary range $145K-$225K (vs chief business correspondent $165K-$270K
+      — still unfilled). Posting language: "We are less interested in earnings reports than getting inside pivotal companies and exploring their influence" — explicit adversarial framing mandate. Requires
+      "an informed view of the power of big platforms, the impact of artificial intelligence, the future of work." ANALYTICAL SIGNIFICANCE: (1) Posted one day after Kate Taylor hire announcement — suggests
+      planned desk restructuring not an emergency. (2) The role description overlaps heavily with Schiffer Director, Business and Industry position — possible departure signal or title restructuring. (3)
+      If Schiffer is leaving, her replacement would inherit editorial authority over Wired entire Big Tech coverage operation (Matsakis, Kleeman, Taylor, Zeff, Haskins, et al.), making this the most consequential
+      open editorial role at any of the 5 tracked publications. (4) Combined with the still-unfilled chief business correspondent role (posted March 2026), Wired business desk has two major leadership gaps
+      while simultaneously expanding its writer roster. WATCH: Monitor for Schiffer departure announcement.'
+    outgoing: null
+    position: business_editor_open
+    source_url: https://talkingbiznews.com/biz-news-help-wanted/wired-seeks-an-editor-to-lead-its-business-coverage/

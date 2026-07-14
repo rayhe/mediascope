@@ -85,28 +85,24 @@ journalists:
     (''The Parlour Game'', ''The Roof''). Author of ''Genius Makers'' (2021, Dutton/Penguin). Controversial NYT piece revealing Scott Alexander''s real identity (Slate Star Codex). KEY for MediaScope: one
     of the longest continuous careers in tech journalism — his framing evolution across PC Magazine (product reviews) → Register (adversarial British tabloid tech) → Wired (Condé Nast longform) → NYT (institutional
     prestige) traces the entire arc of how AI coverage went from niche to front-page.'
-- name: Will Knight
-  career:
-  - publication: new-scientist
-    role: editor
-    beat: technology, robotics, cybersecurity, space tech
-    start: '2002'
+- career:
+  - beat: technology, robotics, cybersecurity, space tech
     end: '2008'
     event_type: hired
     notes: Editor and online managing editor at the UK science weekly (Reed Business Information). Wrote extensively on robotics, nanotechnology, computer security, space technology, and emerging computing.
       Prolific news output covering a wide tech beat before specializing in AI. New Scientist articles span at least 15 paginated author pages on the site, suggesting hundreds of pieces over this period.
       His broad science-tech grounding here shaped his later ability to contextualize AI within wider scientific developments.
+    publication: new-scientist
+    role: editor
     source_url: https://www.newscientist.com/author/will-knight/
-  - publication: cnet
-    role: writer
-    start: '2007'
-    end: '2008'
+    start: '2002'
+  - end: '2008'
     notes: Brief stint overlapping with end of New Scientist tenure. Limited public record of work here.
+    publication: cnet
+    role: writer
     source_url: https://talkingbiznews.com/they-talk-biz-news/wired-hires-knight-to-cover-artificial-intelligence/
-  - publication: mit-tech-review
-    role: senior_editor
-    beat: AI, machine learning, China AI, automated driving, robotics
-    start: '2008'
+    start: '2007'
+  - beat: AI, machine learning, China AI, automated driving, robotics
     end: 2019-09
     event_type: hired
     notes: 'Senior Editor for Artificial Intelligence. Also served as online managing editor. ~11-year tenure during which AI coverage went from niche to front-page. Landmark article: "The Dark Secret at
@@ -115,11 +111,11 @@ journalists:
       in Brookings, New America, Carnegie Endowment policy papers. Interviewed Yasheng Huang (MIT Sloan) on US-China tech competition. Also covered self-driving cars, military AI, and early deep learning
       breakthroughs. Wrote the "Fast Forward" newsletter. KEY for MediaScope: longest continuous AI beat reporter at a major US tech publication — his departure to Wired represented a significant talent
       loss for MIT Tech Review.'
+    publication: mit-tech-review
+    role: senior_editor
     source_url: https://roboticssummit.com/speaker/will-knight/
-  - publication: wired
-    role: senior_writer
-    beat: AI, machine learning, robotics, autonomous systems
-    start: 2019-09
+    start: '2008'
+  - beat: AI, machine learning, robotics, autonomous systems
     end: present
     event_type: hired
     notes: 'Senior Writer covering AI. Writes the "AI Lab" newsletter — a weekly Wednesday dispatch from the cutting edge of AI, which became Wired''s flagship AI newsletter product. Covers OpenAI, Google,
@@ -128,20 +124,24 @@ journalists:
       MIT Tech Review → Wired represents an institutional pipeline where the same AI reporter''s framing shifts from MIT''s academic/technical audience to Wired''s Condé Nast consumer-tech audience. Question
       for DiD analysis: did his AI framing become more consumer-oriented or alarmist after moving? His coverage of AI talent poaching between Meta, OpenAI, and Anthropic is particularly relevant for tracking
       how Wired frames Meta''s AI ambitions.'
+    publication: wired
+    role: senior_writer
     source_url: https://talkingbiznews.com/they-talk-biz-news/wired-hires-knight-to-cover-artificial-intelligence/
+    start: 2019-09
   education:
-  - institution: University of Kent
-    degree: BA (Applied Science)
-    field: Anthropology
-    start: '1994'
+  - degree: BA (Applied Science)
     end: '1997'
+    field: Anthropology
+    institution: University of Kent
     source_url: https://rocketreach.co/
-  - institution: University of the Arts London
+    start: '1994'
+  - end: '2000'
     field: Journalism
-    start: '1998'
-    end: '2000'
+    institution: University of the Arts London
     source_url: https://rocketreach.co/
+    start: '1998'
   multi_publication: true
+  name: Will Knight
   notes: 'British AI/tech journalist with 20+ years in tech journalism and one of the longest continuous AI beats in the field. Based in Cambridge, Massachusetts. Education: University of Kent BA Anthropology
     (1994-97), University of the Arts London Journalism (1998-2000). Studied anthropology and journalism in the UK before turning his attention to machines — his anthropology background gives him a distinctive
     social-science lens on AI''s impact on human societies. X/Twitter: @willknight. Signal: wak.01 (no PR pitches). Name pronounced "wee-all" per his own bio. Speaker: Yale Poynter Fellowship in Journalism
@@ -160,7 +160,14 @@ journalists:
   - https://rocketreach.co/
   - https://www.newscientist.com/author/will-knight/
   - https://buzzsumo.com/
-- career:
+- awards:
+  - notes: 'Portfolio/Penguin Random House, Feb 13 2024, 352pp, hardcover, ISBN 9780593716601. Based on 60+ employee interviews, thousands of internal docs/Slack messages. NYT: "crisp, matter-of-fact style
+      to excellent effect." FT: "sharp and deeply sourced fly-on-the-wall account." Matt Levine (Bloomberg): "A fast-paced and riveting account of a hilarious and tragic mess."'
+    source_url: https://penguinrandomhouse.com/books/741192/extremely-hardcore-by-zoe-schiffer/9780593716618/
+    title: 'Extremely Hardcore: Inside Elon Musk''s Twitter'
+    type: book
+    year: '2024'
+  career:
   - beat: tech industry (non-journalism)
     event_type: hired
     notes: Pre-journalism career in tech. Content manager at an unnamed startup. First role after education. Direct experience in tech industry provided foundation for later workplace/labor beat coverage.
@@ -222,6 +229,23 @@ journalists:
     role: director_business_industry
     source_url: https://talkingbiznews.com/media-news/wired-hires-schiffer-as-director-of-business-and-industry/
     start: 2025-01
+  education:
+  - degree: Diploma
+    field: Science (Italian high school)
+    institution: Liceo Scientifico Galileo Galilei
+    notes: Italian high school — suggests Italian heritage or period living abroad. Unique among tracked journalists.
+  - degree: BA
+    field: Political Science
+    institution: University of California, Berkeley
+    source_url: https://rocketreach.co/zoe-schiffer-email_5073753
+  - degree: MA
+    end: '2019'
+    field: Journalism
+    institution: Stanford University
+    notes: Mentored by Janine Zacharia. Part of the 2019 cohort alongside Aliyah Chavez (MA 2019). Program emphasizes multimedia storytelling and data reporting.
+    source_url: http://journalism.stanford.edu/news/stanford-alums-translate-journalism-skills-book-publishing
+    start: '2018'
+  multi_publication: true
   name: Zoë Schiffer
   notes: 'Key migration: tech industry → freelance → The Verge → NBC → Platformer → Wired. Unusual career arc: started in tech (content manager, Uber UX writer) before pivoting to journalism via Stanford
     MA. Education: Liceo Scientifico Galileo Galilei (Italian HS), UC Berkeley BA (Political Science), Stanford MA (Journalism). Published "Extremely Hardcore" (2024, Portfolio/PRH) on Musk/Twitter takeover.
@@ -229,33 +253,8 @@ journalists:
     era) gives insider knowledge but also personal experience with the workplace culture she now covers; (2) career arc from labor reporter → newsletter editor → institutional director tracks the indie-to-legacy
     pipeline; (3) Drummond hired her explicitly to lead adversarial Big Tech coverage; (4) her Platformer tenure produced the most influential anti-Musk book of 2024; (5) the Director role gives her editorial
     authority over Wired entire business desk, making her framing choices institutionally amplified; (6) Italian high school background is unique among tracked journalists; (7) Wired posted a job for "editor
-    to lead business coverage" on 2026-07-02 with salary $145K-$225K — overlaps with her Director role, possible departure signal or role restructuring (see editorial_changes.yaml 2026-07-02 entry). Media appearances:
-    CNN, NBC, CNBC, BBC. Social: Threads @reporterzoe, 252+ articles per Muck Rack. Co-hosts "Uncanny Valley" podcast with Michael Calore and Lauren Goode.'
-  education:
-  - institution: Liceo Scientifico Galileo Galilei
-    degree: Diploma
-    field: Science (Italian high school)
-    notes: Italian high school — suggests Italian heritage or period living abroad. Unique among tracked journalists.
-  - institution: University of California, Berkeley
-    degree: BA
-    field: Political Science
-    source_url: https://rocketreach.co/zoe-schiffer-email_5073753
-  - institution: Stanford University
-    degree: MA
-    field: Journalism
-    start: '2018'
-    end: '2019'
-    notes: Mentored by Janine Zacharia. Part of the 2019 cohort alongside Aliyah Chavez (MA 2019). Program emphasizes multimedia storytelling and data reporting.
-    source_url: http://journalism.stanford.edu/news/stanford-alums-translate-journalism-skills-book-publishing
-  awards:
-  - title: 'Extremely Hardcore: Inside Elon Musk''s Twitter'
-    type: book
-    year: '2024'
-    notes: 'Portfolio/Penguin Random House, Feb 13 2024, 352pp, hardcover, ISBN 9780593716601. Based on 60+ employee interviews, thousands of internal docs/Slack messages.
-      NYT: "crisp, matter-of-fact style to excellent effect." FT: "sharp and deeply sourced fly-on-the-wall account." Matt Levine (Bloomberg): "A fast-paced and riveting
-      account of a hilarious and tragic mess."'
-    source_url: https://penguinrandomhouse.com/books/741192/extremely-hardcore-by-zoe-schiffer/9780593716618/
-  multi_publication: true
+    to lead business coverage" on 2026-07-02 with salary $145K-$225K — overlaps with her Director role, possible departure signal or role restructuring (see editorial_changes.yaml 2026-07-02 entry). Media
+    appearances: CNN, NBC, CNBC, BBC. Social: Threads @reporterzoe, 252+ articles per Muck Rack. Co-hosts "Uncanny Valley" podcast with Michael Calore and Lauren Goode.'
   source_urls:
   - http://journalism.stanford.edu/news/stanford-alums-translate-journalism-skills-book-publishing
   - https://penguinrandomhouse.com/books/741192/extremely-hardcore-by-zoe-schiffer/9780593716618/
@@ -1453,10 +1452,106 @@ journalists:
   - https://about.me/sandraupson
   - https://spectrum.ieee.org/u/sandra-upson
   - https://muckrack.com/sandra-upson
-- name: Adrienne LaFrance
+- birthplace: Unknown (attended Michigan State University, likely Midwest)
   born: circa 1984
-  birthplace: Unknown (attended Michigan State University, likely Midwest)
+  career:
+  - beat: general news
+    end: 2008-12
+    event_type: hired
+    notes: News writer at WBUR, Boston's NPR station. First journalism job after completing MS at Boston University. Part of a generation of journalists who came up through public radio.
+    publication: wbur
+    role: news_writer
+    source_url: https://chqdaily.com/2019/10/adrienne-lafrance-explains-internet-has-made-us-all-part-of-the-news/
+    start: 2006-01
+  - beat: general news
+    end: 2010-12
+    event_type: hired
+    notes: Reporter and news anchor. Moved from Boston to Hawaii for local journalism. Demonstrates commitment to ground-level reporting before national career.
+    publication: hawaii-public-radio
+    role: reporter_anchor
+    source_url: https://chqdaily.com/2019/10/adrienne-lafrance-explains-internet-has-made-us-all-part-of-the-news/
+    start: 2009-01
+  - beat: general, local news
+    end: 2011-06
+    event_type: hired
+    notes: Managing editor of Honolulu Weekly, an alt-weekly. First editorial leadership role. Honolulu Weekly ceased publication in 2013.
+    publication: honolulu-weekly
+    role: managing_editor
+    source_url: https://chqdaily.com/2019/10/adrienne-lafrance-explains-internet-has-made-us-all-part-of-the-news/
+    start: 2010-01
+  - beat: politics, government
+    end: 2012-06
+    event_type: hired
+    notes: 'Ran the DC bureau for Civil Beat, Pierre Omidyar''s nonprofit news site. Covered national politics from a Hawaii perspective. Experience with tech-billionaire-funded journalism (Civil Beat was
+      Omidyar''s venture). ANALYTICAL NOTE: Working for an Omidyar-funded publication is an early connection to tech-billionaire media patronage — a theme that deepens at The Atlantic under Emerson Collective
+      (Laurene Powell Jobs).'
+    publication: honolulu-civil-beat
+    role: reporter
+    source_url: https://chqdaily.com/2019/10/adrienne-lafrance-explains-internet-has-made-us-all-part-of-the-news/
+    start: 2011-01
+  - beat: media, journalism innovation
+    end: 2013-06
+    event_type: hired
+    notes: Staff writer at Nieman Journalism Lab (Harvard). Covered the future of journalism and media innovation. Meta-journalism role — writing about the industry she would later lead. Also a former Nieman
+      Lab staffer alongside future Atlantic colleagues Shan Wang and Megan Garber.
+    publication: nieman-journalism-lab
+    role: staff_writer
+    source_url: https://www.niemanlab.org/author/alafrance/
+    start: 2012-07
+  - beat: national news, digital
+    end: 2014-01
+    event_type: hired
+    notes: National reporter for Project Thunderdome, Digital First Media's centralized digital newsroom experiment. Thunderdome was an ambitious attempt to create a shared national reporting team for local
+      newspaper chains. Project ultimately dissolved. During this period and subsequent freelancing in NYC/DC, she covered Hurricane Sandy (2012), the Boston Marathon bombing (2013), and the Sandy Hook
+      elementary school massacre — major breaking news events that built her reputation before The Atlantic.
+    publication: digital-first-media
+    role: national_reporter
+    source_url: https://chqdaily.com/2019/10/adrienne-lafrance-explains-internet-has-made-us-all-part-of-the-news/
+    start: 2013-01
+  - beat: technology
+    event_type: hired
+    notes: 'Joined as staff writer covering technology after an Atlantic editor reached out to her during a freelance period. Rapid trajectory: within 3 years became editor of TheAtlantic.com. Background
+      in local/public media and digital-first newsrooms shaped her approach to platform power stories. Also freelanced for NYT, WaPo, Gawker, Slate, The Awl during this period.'
+    publication: atlantic
+    role: staff_writer
+    source_url: https://www.theatlantic.com/author/adrienne-lafrance/
+    start: 2014-02
+  - beat: overall site editorial
+    event_type: promoted
+    notes: Editor of TheAtlantic.com, succeeding J.J. Gould. Oversaw reporting team across ten news desks. Managed the site's digital editorial direction. At that time, she was the first woman in charge
+      of the website. Per the 2017 FIPP announcement, she and Matt Thompson (promoted to executive editor simultaneously) both reported to Jeffrey Goldberg alongside magazine editor Scott Stossel, Atlantic
+      Studios EP Kasia Cieplak-Mayr von Baldegg, and creative director David Somerville.
+    publication: atlantic
+    role: editor
+    source_url: https://fipp.com/news/adrienne-lafrance-named-executive-editor-of-the-atlantic/
+    start: 2017-01
+  - beat: overall editorial direction
+    event_type: promoted
+    notes: 'First woman to serve as executive editor in The Atlantic''s 162-year history (promoted March/May 2019 per FIPP, Wikipedia, MediaPost). Reports to Jeffrey Goldberg (EIC). Her editorial leadership
+      team includes Sarah Yager (deputy executive editor), Yoni Appelbaum (deputy editor), Juliet Lapidos (deputy editor), John Swansburg (managing editor, print), Bhumika Tharoor (managing editor, strategy/subscriber
+      growth), Griff Witte (managing editor, politics/accountability, hired Jan 2025 from WaPo). 2021 TalkingBizNews report confirmed her role "expanded" to oversee "all of editorial." KEY EDITORIAL OUTPUT:
+      "The Prophecies of Q" (June 2020 cover story — defining QAnon investigation, led to Fresh Air appearance, recommended read per CNN), "Facebook Is a Doomsday Machine" (Dec 15, 2020 — described Facebook
+      as architecturally harmful, not merely negligent), "The Largest Autocracy on Earth" (Sep 27, 2021 — labeled Facebook "a hostile foreign power" with 2.9B citizens, proposed treating it like a state
+      actor). SignalGate (March 2025): oversaw editorial decisions around Goldberg''s Houthi war plans Signal chat leak — appeared on GBH News defending The Atlantic''s decision to publish. 2025-2026 hiring
+      spree: leading massive editorial expansion, 14+ staff writers and 3+ senior editors added in 2025 alone — hires from WSJ, WaPo, Economist, Politico, AP, Time. ANALYTICAL VALUE: LaFrance''s three Facebook/Meta
+      articles form a coherent ideological arc from "doomsday machine" to "autocracy" to "hostile foreign power" — escalating the metaphoric framing of Facebook from a broken tool (2020) to a rival state
+      (2021). This editorial posture is now institutionalized across The Atlantic''s entire editorial operation under her leadership. Her rapid rise from tech staff writer to institution-wide editorial
+      authority means her personal anti-platform-power worldview is now the Atlantic''s editorial posture, not merely one writer''s opinion.'
+    publication: atlantic
+    role: executive_editor
+    source_url: https://www.mediapost.com/publications/article/332858/
+    start: 2019-05
   education: BA Journalism, Michigan State University; MS Journalism, Boston University
+  name: Adrienne LaFrance
+  notes: 'KEY FIGURE: Atlantic executive editor — first woman in 162-year history. Rose from staff writer to executive editor in 5 years (2014-2019). Background in local journalism (Hawaii public radio,
+    alt-weeklies) and digital-first newsrooms, including Pierre Omidyar''s Civil Beat. Education: BA Journalism (Michigan State), MS Journalism (Boston University). Former Nieman Lab staffer. Known for
+    anti-tech-platforms editorial stance: authored "The Prophecies of Q" (June 2020 cover), "Facebook Is a Doomsday Machine" (Dec 2020), and "The Largest Autocracy on Earth" (Sep 2021) — three landmark
+    Facebook/Meta pieces forming a coherent ideological arc from broken tool to rival state. Appeared on NPR Fresh Air (2020), WBUR On Point (2018, gender in media), Aspen Ideas Festival, Chautauqua Institution.
+    Key role in SignalGate (March 2025): oversaw Goldberg''s editorial decisions on publishing Hegseth war plans. Leading aggressive 2025-2026 hiring spree — 20+ hires from WSJ, WaPo, Economist, AP, Time,
+    Politico. ANALYTICAL NOTE: Unlike Katie Drummond (Wired GED) whose anti-tech posture is editorial-by-default, LaFrance''s is author-specific — she personally wrote the three most influential anti-Facebook
+    pieces in Atlantic history, then rose to control the entire editorial operation. Her worldview IS the institution''s worldview in a way that''s more complete than at any other tracked publication. Her
+    hiring patterns in 2025-2026 show deliberate acquisition of national security and politics reporters (Beckett, Witte, Salama, Youssef, Lemire, Ryan) — building capacity for government accountability
+    coverage that often intersects with Big Tech regulatory stories.'
   source_urls:
   - https://en.wikipedia.org/wiki/Adrienne_LaFrance
   - https://www.theatlantic.com/author/adrienne-lafrance/
@@ -1470,102 +1565,6 @@ journalists:
   - https://muckrack.com/adrienne-lafrance
   - https://talkingbiznews.com/they-re-hiring/the-atlantic-announces-four-editorial-promotions/
   - https://www.wbur.org/onpoint/2018/05/24/gender-imbalance-in-media
-  career:
-  - publication: wbur
-    role: news_writer
-    beat: general news
-    start: 2006-01
-    end: 2008-12
-    event_type: hired
-    source_url: https://chqdaily.com/2019/10/adrienne-lafrance-explains-internet-has-made-us-all-part-of-the-news/
-    notes: News writer at WBUR, Boston's NPR station. First journalism job after completing MS at Boston University. Part of a generation of journalists who came up through public radio.
-  - publication: hawaii-public-radio
-    role: reporter_anchor
-    beat: general news
-    start: 2009-01
-    end: 2010-12
-    event_type: hired
-    source_url: https://chqdaily.com/2019/10/adrienne-lafrance-explains-internet-has-made-us-all-part-of-the-news/
-    notes: Reporter and news anchor. Moved from Boston to Hawaii for local journalism. Demonstrates commitment to ground-level reporting before national career.
-  - publication: honolulu-weekly
-    role: managing_editor
-    beat: general, local news
-    start: 2010-01
-    end: 2011-06
-    event_type: hired
-    source_url: https://chqdaily.com/2019/10/adrienne-lafrance-explains-internet-has-made-us-all-part-of-the-news/
-    notes: Managing editor of Honolulu Weekly, an alt-weekly. First editorial leadership role. Honolulu Weekly ceased publication in 2013.
-  - publication: honolulu-civil-beat
-    role: reporter
-    beat: politics, government
-    start: 2011-01
-    end: 2012-06
-    event_type: hired
-    source_url: https://chqdaily.com/2019/10/adrienne-lafrance-explains-internet-has-made-us-all-part-of-the-news/
-    notes: 'Ran the DC bureau for Civil Beat, Pierre Omidyar''s nonprofit news site. Covered national politics from a Hawaii perspective. Experience with tech-billionaire-funded journalism (Civil Beat was
-      Omidyar''s venture). ANALYTICAL NOTE: Working for an Omidyar-funded publication is an early connection to tech-billionaire media patronage — a theme that deepens at The Atlantic under Emerson Collective
-      (Laurene Powell Jobs).'
-  - publication: nieman-journalism-lab
-    role: staff_writer
-    beat: media, journalism innovation
-    start: 2012-07
-    end: 2013-06
-    event_type: hired
-    source_url: https://www.niemanlab.org/author/alafrance/
-    notes: Staff writer at Nieman Journalism Lab (Harvard). Covered the future of journalism and media innovation. Meta-journalism role — writing about the industry she would later lead. Also a former Nieman
-      Lab staffer alongside future Atlantic colleagues Shan Wang and Megan Garber.
-  - publication: digital-first-media
-    role: national_reporter
-    beat: national news, digital
-    start: 2013-01
-    end: 2014-01
-    event_type: hired
-    source_url: https://chqdaily.com/2019/10/adrienne-lafrance-explains-internet-has-made-us-all-part-of-the-news/
-    notes: National reporter for Project Thunderdome, Digital First Media's centralized digital newsroom experiment. Thunderdome was an ambitious attempt to create a shared national reporting team for local
-      newspaper chains. Project ultimately dissolved. During this period and subsequent freelancing in NYC/DC, she covered Hurricane Sandy (2012), the Boston Marathon bombing (2013), and the Sandy Hook
-      elementary school massacre — major breaking news events that built her reputation before The Atlantic.
-  - publication: atlantic
-    role: staff_writer
-    beat: technology
-    start: 2014-02
-    event_type: hired
-    source_url: https://www.theatlantic.com/author/adrienne-lafrance/
-    notes: 'Joined as staff writer covering technology after an Atlantic editor reached out to her during a freelance period. Rapid trajectory: within 3 years became editor of TheAtlantic.com. Background
-      in local/public media and digital-first newsrooms shaped her approach to platform power stories. Also freelanced for NYT, WaPo, Gawker, Slate, The Awl during this period.'
-  - publication: atlantic
-    role: editor
-    beat: overall site editorial
-    start: 2017-01
-    event_type: promoted
-    source_url: https://fipp.com/news/adrienne-lafrance-named-executive-editor-of-the-atlantic/
-    notes: Editor of TheAtlantic.com, succeeding J.J. Gould. Oversaw reporting team across ten news desks. Managed the site's digital editorial direction. At that time, she was the first woman in charge
-      of the website. Per the 2017 FIPP announcement, she and Matt Thompson (promoted to executive editor simultaneously) both reported to Jeffrey Goldberg alongside magazine editor Scott Stossel, Atlantic
-      Studios EP Kasia Cieplak-Mayr von Baldegg, and creative director David Somerville.
-  - publication: atlantic
-    role: executive_editor
-    beat: overall editorial direction
-    start: 2019-05
-    event_type: promoted
-    source_url: https://www.mediapost.com/publications/article/332858/
-    notes: 'First woman to serve as executive editor in The Atlantic''s 162-year history (promoted March/May 2019 per FIPP, Wikipedia, MediaPost). Reports to Jeffrey Goldberg (EIC). Her editorial leadership
-      team includes Sarah Yager (deputy executive editor), Yoni Appelbaum (deputy editor), Juliet Lapidos (deputy editor), John Swansburg (managing editor, print), Bhumika Tharoor (managing editor, strategy/subscriber
-      growth), Griff Witte (managing editor, politics/accountability, hired Jan 2025 from WaPo). 2021 TalkingBizNews report confirmed her role "expanded" to oversee "all of editorial." KEY EDITORIAL OUTPUT:
-      "The Prophecies of Q" (June 2020 cover story — defining QAnon investigation, led to Fresh Air appearance, recommended read per CNN), "Facebook Is a Doomsday Machine" (Dec 15, 2020 — described Facebook
-      as architecturally harmful, not merely negligent), "The Largest Autocracy on Earth" (Sep 27, 2021 — labeled Facebook "a hostile foreign power" with 2.9B citizens, proposed treating it like a state
-      actor). SignalGate (March 2025): oversaw editorial decisions around Goldberg''s Houthi war plans Signal chat leak — appeared on GBH News defending The Atlantic''s decision to publish. 2025-2026 hiring
-      spree: leading massive editorial expansion, 14+ staff writers and 3+ senior editors added in 2025 alone — hires from WSJ, WaPo, Economist, Politico, AP, Time. ANALYTICAL VALUE: LaFrance''s three Facebook/Meta
-      articles form a coherent ideological arc from "doomsday machine" to "autocracy" to "hostile foreign power" — escalating the metaphoric framing of Facebook from a broken tool (2020) to a rival state
-      (2021). This editorial posture is now institutionalized across The Atlantic''s entire editorial operation under her leadership. Her rapid rise from tech staff writer to institution-wide editorial
-      authority means her personal anti-platform-power worldview is now the Atlantic''s editorial posture, not merely one writer''s opinion.'
-  notes: 'KEY FIGURE: Atlantic executive editor — first woman in 162-year history. Rose from staff writer to executive editor in 5 years (2014-2019). Background in local journalism (Hawaii public radio,
-    alt-weeklies) and digital-first newsrooms, including Pierre Omidyar''s Civil Beat. Education: BA Journalism (Michigan State), MS Journalism (Boston University). Former Nieman Lab staffer. Known for
-    anti-tech-platforms editorial stance: authored "The Prophecies of Q" (June 2020 cover), "Facebook Is a Doomsday Machine" (Dec 2020), and "The Largest Autocracy on Earth" (Sep 2021) — three landmark
-    Facebook/Meta pieces forming a coherent ideological arc from broken tool to rival state. Appeared on NPR Fresh Air (2020), WBUR On Point (2018, gender in media), Aspen Ideas Festival, Chautauqua Institution.
-    Key role in SignalGate (March 2025): oversaw Goldberg''s editorial decisions on publishing Hegseth war plans. Leading aggressive 2025-2026 hiring spree — 20+ hires from WSJ, WaPo, Economist, AP, Time,
-    Politico. ANALYTICAL NOTE: Unlike Katie Drummond (Wired GED) whose anti-tech posture is editorial-by-default, LaFrance''s is author-specific — she personally wrote the three most influential anti-Facebook
-    pieces in Atlantic history, then rose to control the entire editorial operation. Her worldview IS the institution''s worldview in a way that''s more complete than at any other tracked publication. Her
-    hiring patterns in 2025-2026 show deliberate acquisition of national security and politics reporters (Beckett, Witte, Salama, Youssef, Lemire, Ryan) — building capacity for government accountability
-    coverage that often intersects with Big Tech regulatory stories.'
 - beats:
   - artificial_intelligence
   - platform_regulation
@@ -1701,13 +1700,22 @@ journalists:
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-dave-as-a-senior-writer-covering-big-tech/
     start: 2023-01
   name: Paresh Dave
-  notes: 'Wired senior writer covering all Big Five tech companies (Apple, Amazon, Google, Meta, Microsoft) and AI. Career arc: Neon Tommy (USC) → LA Times → Reuters → Wired. USC Annenberg BA summa cum
-    laude (2013), minors in business law and web technologies. Lifelong Californian. Maynard Institute Investigative Reporting Fellow (2022). SABEW honorable mention (Snap IPO team, 2017). KEY for MediaScope:
-    his career represents a distinctly NON-Gizmodo/Vice pipeline into Wired — the traditional local newspaper (LA Times) → wire service (Reuters) → magazine path. He arrived at Wired in Jan 2023, the same
-    month Drummond became editorial director candidate (she started Sep 2023). His hiring under the pre-Drummond editorial regime (Lichfield era) and continuation under Drummond makes him a natural control
-    for measuring editorial tone shifts: does his Big Tech coverage framing change after Drummond''s arrival? His Reuters background (wire service neutrality norms) is the opposite of the Gizmodo/Vice adversarial
-    DNA that Drummond, Barrett, Marchman, and Feiger share. ANALYTICAL VALUE: As the sole Wired reporter covering ALL five Big Tech companies, his framing decisions have outsized influence on how Wired''s
-    readers perceive each company''s relative accountability. Compare his Meta coverage against his Google coverage (his original beat at Reuters) to test for company-specific framing bias.'
+  notes: 'Wired senior writer covering all Big Five tech companies (Apple, Amazon, Google, Meta, Microsoft) and AI/tech manufacturing. Career arc: Neon Tommy (USC) → LA Times → Reuters → Wired. USC Annenberg
+    BA summa cum laude (2013), minors in business law and web technologies. Lifelong Californian. Maynard Institute Investigative Reporting Fellow. Contact: paresh_dave@wired.com, Signal peard33.24, WhatsApp/Telegram/iMessage
+    +1-415-565-1302. Based in San Francisco. At LA Times (~4.5 years, ~2013-2017): covered Silicon Beach (convergence of tech and entertainment), cybersecurity, sports business, breaking US news, LA criminal
+    courts. Team reporting on Snapchat''s IPO recognized by SABEW (Society for Advancing Business Editing and Writing). Also interned at ''Marketplace'' (APM) in Los Angeles. At Reuters (2017-late 2022):
+    SF Bay Area-based, covered Google/YouTube/Waymo/Alphabet as primary beat. 324 Reuters bylines indexed. Notable stories include Cambridge Analytica Zuckerberg deposition, Twitter policy upheaval under
+    Musk, Apple-states iPhone throttling settlement, Google labor violations, TikTok government bans. At Wired (late 2022-present): Hired as senior writer covering Big Tech (AAPL, AMZN, GOOGL, META, MSFT).
+    Member of @wiredunion (Wired''s unionized newsroom under Condé Nast). Notable Wired Meta coverage includes Meta''s California-to-Texas content moderation relocation (sources inside Meta contradicted
+    official messaging). Also seen in: Folha de S.Paulo, G1 Globo, Medium, Yahoo Entertainment, Yahoo Tech, Business Insider, Daily Mail, ETCIO, ETCISO, ETTelecom (syndication). KEY FOR MEDIASCOPE: (1)
+    Primary Big Five reporter — covers all tracked companies, not just one, giving him unique cross-comparative perspective but also potential for inconsistent framing standards across subjects. (2) Reuters
+    → Wired migration is a key DiD candidate — wire service neutrality norms vs Condé Nast institutional framing. (3) Union member — Wired''s CWA union status affects editorial independence dynamics. (4)
+    Maynard Institute fellowship signals diversity/ethics orientation in tech coverage.'
+  source_urls:
+  - https://theorg.com/org/wired/org-chart/paresh-dave
+  - https://talkingbiznews.com/media-news/wired-hires-dave-as-a-senior-writer-covering-big-tech/amp/
+  - https://talkingbiznews.com/they-talk-biz-news/reuters-hires-dave-from-la-times-to-cover-google/amp/
+  - https://muckrack.com/peard33
 - career:
   - beat: business
     end: 2010-12
@@ -2807,7 +2815,9 @@ journalists:
     start: 2024-05
   name: Ellen Cushing
   notes: 'Former Atlantic tech desk leader, now staff writer covering food/culture. Key role: she built Atlantic''s SF tech bureau (2018) and shaped the tech desk that Tiffany, Wong, and others joined.'
-- career:
+- birthplace: Calgary, Alberta, Canada
+  born: 1985/1986
+  career:
   - beat: national security, military research
     end: 2012-12
     event_type: hired
@@ -2891,8 +2901,6 @@ journalists:
     role: global_editorial_director
     source_url: https://www.condenast.com/news/cond-nast-appoints-katie-drummond-as-wireds-global-editorial-director
     start: 2023-08
-  born: 1985/1986
-  birthplace: Calgary, Alberta, Canada
   education:
   - degree: BA
     field: Philosophy
@@ -5648,7 +5656,18 @@ journalists:
   notes: 'KEY MIGRATION: Fortune → Wired → NYT. Clean three-publication pipeline traversing two of MediaScope''s tracked outlets. Short Wired tenure (~10 months under Nicholas Thompson) produced notable
     pieces including "The Other Tech Bubble" (Dec 2017). Now NYT''s primary startups/VC reporter. Tests portability of editorial framing across institutions with very different ownership structures (Condé
     Nast → Sulzberger). Earlier career in financial trade press (Buyouts magazine, peHub) gives her a finance-native analytical lens distinct from most tech reporters.'
-- career:
+- awards:
+  - name: Sandy Hume Memorial Award for Excellence in Political Journalism
+    notes: For series on Donald Trump's attempts to stop Biden certification at the Jan 6 joint session of Congress. Reporting led House select committee to issue subpoenas to Trump's personal lawyers.
+    organization: National Press Club
+    year: 2022
+  - name: Paul Miller Fellow
+    notes: Fellowship for political journalism.
+    organization: National Press Foundation
+  - category: Young Sports Writer of the Year
+    name: British Sports Journalism Awards finalist
+    notes: For i newspaper sports politics coverage (IAAF World Athletics Championships 2017).
+  career:
   - beat: N/A (education)
     end: 2020-06
     event_type: education
@@ -5707,6 +5726,11 @@ journalists:
     role: senior_correspondent
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-lowell-as-senior-correspondent/
     start: 2026-04
+  education:
+  - degree: BSc
+    field: Economics and Philosophy
+    institution: University of Bristol
+  multi_publication: true
   name: Hugo Lowell
   notes: 'GUARDIAN → WIRED MIGRATION (2026): Pure political journalist with zero tech reporting background joining Wired''s politics desk. Born March 30, 1999 (NYC), one of the youngest journalists in the
     dataset (~27 at Wired hire). His hire signals Wired''s evolution from tech magazine with politics coverage into a politics-and-tech hybrid publication. No prior tech journalism experience — his entire
@@ -5722,22 +5746,6 @@ journalists:
   - https://talkingbiznews.com/they-re-hiring/wired-hires-lowell-as-senior-correspondent/
   - https://citybiz.co/article/wired-hires-hugo-lowell-trump-politics-coverage/
   - https://lucid.substack.com/p/will-we-ever-know-the-full-truth
-  awards:
-  - name: Sandy Hume Memorial Award for Excellence in Political Journalism
-    year: 2022
-    organization: National Press Club
-    notes: For series on Donald Trump's attempts to stop Biden certification at the Jan 6 joint session of Congress. Reporting led House select committee to issue subpoenas to Trump's personal lawyers.
-  - name: Paul Miller Fellow
-    organization: National Press Foundation
-    notes: Fellowship for political journalism.
-  - name: British Sports Journalism Awards finalist
-    category: Young Sports Writer of the Year
-    notes: For i newspaper sports politics coverage (IAAF World Athletics Championships 2017).
-  education:
-  - degree: BSc
-    field: Economics and Philosophy
-    institution: University of Bristol
-  multi_publication: true
 - career:
   - beat: general assignment
     end: 2009-12
@@ -13041,7 +13049,30 @@ journalists:
   - https://hyperallergic.com/art-critic-sebastian-smee-laid-off-from-the-washington-post/
   - https://en.wikipedia.org/wiki/Sebastian_Smee
   - https://www.theatlantic.com/author/sebastian-smee/
-- career:
+- awards:
+  - count: 4
+    name: Nebula Award
+    notes: Won for "Tower of Babylon" (1990), "Story of Your Life" (1998), "Hell Is the Absence of God" (2001), "The Merchant and the Alchemist's Gate" (2007)
+  - count: 4
+    name: Hugo Award
+    notes: Won for "Hell Is the Absence of God" (2002), "The Merchant and the Alchemist's Gate" (2008), "Exhalation" (2009), "The Lifecycle of Software Objects" (2011)
+  - count: 6
+    name: Locus Award
+    notes: Multiple wins across novelette, novella, short story, and collection categories
+  - name: John W. Campbell Award for Best New Writer
+    year: 1992
+  - name: PEN/Malamud Award
+    notes: For "excellence in the art of the short story"
+    year: 2024
+  - name: BSFA Award for Short Non-Fiction
+    notes: Won for "Why A.I. Isn't Going to Make Art" (New Yorker, Aug 2024)
+    year: 2024
+  - name: TIME100 AI
+    notes: Named one of Time's 100 most influential people in AI
+    year: 2023
+  - name: Science Fiction and Fantasy Hall of Fame
+    year: 2020
+  career:
   - beat: software documentation, technical writing
     end: '2019'
     notes: Freelance technical writer in the software industry after graduating from Brown. Based in Seattle area. Worked for various tech companies writing software documentation. This is not journalism
@@ -13071,9 +13102,9 @@ journalists:
   - beat: AI consciousness, philosophy of AI, technology criticism
     end: present
     notes: '"No, Artificial Intelligence Is Not Conscious" (Jun 3, 2026) — 10,000+ word essay arguing LLM conversations are sentence-completion exercises, not evidence of consciousness. Targeted Anthropic
-      specifically. Generated significant debate (Substack rebuttals, YouTube analysis, Reddit threads). MIGRATION SIGNIFICANCE: First byline at Atlantic after years at New Yorker suggests either (1) a broadening
-      contributor relationship or (2) Atlantic actively recruiting high-profile tech critics. The piece appeared during heightened Meta AI coverage and industry-wide AI consciousness debates (Hinton, Hassabis).
-      One of the most-discussed AI essays of 2026.'
+      specifically. Generated significant debate (Substack rebuttals, YouTube analysis, Reddit threads). MIGRATION SIGNIFICANCE: First byline at Atlantic after years at New Yorker suggests either (1) a
+      broadening contributor relationship or (2) Atlantic actively recruiting high-profile tech critics. The piece appeared during heightened Meta AI coverage and industry-wide AI consciousness debates
+      (Hinton, Hassabis). One of the most-discussed AI essays of 2026.'
     publication: atlantic
     role: contributing_writer
     source_url: https://www.theatlantic.com/philosophy/archive/2026/06/ai-consciousness-llm/684200/
@@ -13084,40 +13115,16 @@ journalists:
     institution: Brown University
     notes: Also studied physics before switching to CS. Attended Clarion Writers Workshop (UC San Diego) 1989, sold first story same year. Father is engineering professor at Stony Brook University; mother
       was a librarian.
-  awards:
-  - name: Nebula Award
-    count: 4
-    notes: Won for "Tower of Babylon" (1990), "Story of Your Life" (1998), "Hell Is the Absence of God" (2001), "The Merchant and the Alchemist's Gate" (2007)
-  - name: Hugo Award
-    count: 4
-    notes: Won for "Hell Is the Absence of God" (2002), "The Merchant and the Alchemist's Gate" (2008), "Exhalation" (2009), "The Lifecycle of Software Objects" (2011)
-  - name: Locus Award
-    count: 6
-    notes: Multiple wins across novelette, novella, short story, and collection categories
-  - name: John W. Campbell Award for Best New Writer
-    year: 1992
-  - name: PEN/Malamud Award
-    year: 2024
-    notes: For "excellence in the art of the short story"
-  - name: BSFA Award for Short Non-Fiction
-    year: 2024
-    notes: Won for "Why A.I. Isn't Going to Make Art" (New Yorker, Aug 2024)
-  - name: TIME100 AI
-    year: 2023
-    notes: Named one of Time's 100 most influential people in AI
-  - name: Science Fiction and Fantasy Hall of Fame
-    year: 2020
   multi_publication: true
   name: Ted Chiang
-  notes: 'Taiwanese American science fiction writer (born 1967, Port Jefferson, NY). Chinese name: 姜峯楠 (Jiāng Fēngnán). Brown University BS CS 1989. Day job: technical writer (freelance → Microsoft).
-    Lives in Bellevue, WA with partner Marcia Glover (met at Microsoft). Author of "Stories of Your Life and Others" (2002) and "Exhalation: Stories" (2019). "Story of Your Life" adapted into film "Arrival"
-    (2016, dir. Denis Villeneuve). Only 18 published fiction works in 35+ years — one of the most decorated-per-word
-    writers in genre fiction. Obama 2019 summer reading list. KEY FOR MEDIASCOPE: Chiang is the most influential non-journalist voice shaping public discourse about AI through essays. His frames — "blurry
-    JPEG," "new McKinsey," "sentence completion" — enter mainstream vocabulary and are cited by other journalists whose work MediaScope analyzes. His New Yorker → Atlantic migration in 2026 means his framing
-    influence now directly overlaps with one of the 6 tracked publications. Unlike staff journalists who produce weekly/daily content, Chiang publishes ~1 essay per year but each has outsized impact on how
-    other journalists frame AI stories. His computer science background (Brown CS, Microsoft technical writer) gives his criticism technical credibility that most arts/culture critics lack — he cannot be
-    dismissed as a humanities outsider misunderstanding the technology. His anti-AI-consciousness essay at The Atlantic directly intersects with coverage of Meta AI, Anthropic Claude, and Google DeepMind
-    that MediaScope tracks.'
+  notes: 'Taiwanese American science fiction writer (born 1967, Port Jefferson, NY). Chinese name: 姜峯楠 (Jiāng Fēngnán). Brown University BS CS 1989. Day job: technical writer (freelance → Microsoft). Lives
+    in Bellevue, WA with partner Marcia Glover (met at Microsoft). Author of "Stories of Your Life and Others" (2002) and "Exhalation: Stories" (2019). "Story of Your Life" adapted into film "Arrival" (2016,
+    dir. Denis Villeneuve). Only 18 published fiction works in 35+ years — one of the most decorated-per-word writers in genre fiction. Obama 2019 summer reading list. KEY FOR MEDIASCOPE: Chiang is the
+    most influential non-journalist voice shaping public discourse about AI through essays. His frames — "blurry JPEG," "new McKinsey," "sentence completion" — enter mainstream vocabulary and are cited
+    by other journalists whose work MediaScope analyzes. His New Yorker → Atlantic migration in 2026 means his framing influence now directly overlaps with one of the 6 tracked publications. Unlike staff
+    journalists who produce weekly/daily content, Chiang publishes ~1 essay per year but each has outsized impact on how other journalists frame AI stories. His computer science background (Brown CS, Microsoft
+    technical writer) gives his criticism technical credibility that most arts/culture critics lack — he cannot be dismissed as a humanities outsider misunderstanding the technology. His anti-AI-consciousness
+    essay at The Atlantic directly intersects with coverage of Meta AI, Anthropic Claude, and Google DeepMind that MediaScope tracks.'
   source_urls:
   - https://en.wikipedia.org/wiki/Ted_Chiang
   - https://www.newyorker.com/contributors/ted-chiang
@@ -13128,92 +13135,59 @@ journalists:
 - career:
   - beat: science, technology
     end: '2015'
-    notes: 'Online science and technology reporter/editor. Covered topics including emerging
-      tech, gaming (PS TV review, Call of Duty), space science (Philae comet lander),
-      aviation (AirAsia flight QZ8501 black box explainer), net neutrality. Title on
-      Independent page: "Science and Technology Reporter."'
+    notes: 'Online science and technology reporter/editor. Covered topics including emerging tech, gaming (PS TV review, Call of Duty), space science (Philae comet lander), aviation (AirAsia flight QZ8501
+      black box explainer), net neutrality. Title on Independent page: "Science and Technology Reporter."'
     publication: independent-uk
     role: tech_reporter
     start: '2013'
   - beat: AI, machine learning, robotics, science, technology
     end: '2023'
     event_type: departed
-    notes: 'Nine-year tenure (~2015-2023) covering artificial intelligence, machine learning,
-      robotics, and broader science/technology. Rose from reporter to senior reporter
-      to senior editor. UK-based (London) — one of The Verge''s few non-US staff reporters,
-      giving him a European perspective on tech regulation and AI governance. KEY ARTICLES:
-      "AI is killing the old web, and the new web struggles to be born" (Jun 26, 2023) —
-      widely cited in academic papers (Journal of Democracy, Alberta Law Review, EU Parliament
-      research), one of the most-referenced tech journalism pieces of 2023. "The scary truth
-      about AI copyright is nobody knows what will happen next" (Dec 2022). Samsung Moon
-      photo faking investigation (2023). CNET AI controversy investigation with Mia Sato
-      (Jan 2023). Stable Diffusion artist/NSFW controversy (Nov 24, 2022). Amazon Rekognition
-      facial recognition bias (Jan 2019, cited by MIT News). Putin "ruler of the world"
-      AI quote (Sep 2017). Ultrasound voice assistant attacks (Sep 2017). Also contributed
-      to Vergecast podcast as senior audio contributor. During his tenure, The Verge became
-      a primary source for AI coverage cited by policymakers, academics, and other journalists.
-      Departure announced via Talking Biz News (late 2023).'
+    notes: 'Nine-year tenure (~2015-2023) covering artificial intelligence, machine learning, robotics, and broader science/technology. Rose from reporter to senior reporter to senior editor. UK-based (London)
+      — one of The Verge''s few non-US staff reporters, giving him a European perspective on tech regulation and AI governance. KEY ARTICLES: "AI is killing the old web, and the new web struggles to be
+      born" (Jun 26, 2023) — widely cited in academic papers (Journal of Democracy, Alberta Law Review, EU Parliament research), one of the most-referenced tech journalism pieces of 2023. "The scary truth
+      about AI copyright is nobody knows what will happen next" (Dec 2022). Samsung Moon photo faking investigation (2023). CNET AI controversy investigation with Mia Sato (Jan 2023). Stable Diffusion artist/NSFW
+      controversy (Nov 24, 2022). Amazon Rekognition facial recognition bias (Jan 2019, cited by MIT News). Putin "ruler of the world" AI quote (Sep 2017). Ultrasound voice assistant attacks (Sep 2017).
+      Also contributed to Vergecast podcast as senior audio contributor. During his tenure, The Verge became a primary source for AI coverage cited by policymakers, academics, and other journalists. Departure
+      announced via Talking Biz News (late 2023).'
     publication: the-verge
     role: senior_editor
     start: '2015'
   - beat: AI, technology, culture, measurement, history of science
     end: present
-    notes: 'Freelance writing career following Verge departure. Published "Beyond Measure:
-      The Hidden History of Measurement from Cubits to Quantum Constants" (Faber UK 2022,
-      W.W. Norton US Nov 2023, 432pp). Two-book deal with Faber via agent Sophie Scard
-      at United Agents (London). Named book of the year by The Economist and The New Yorker.
-      Also written for Financial Times, Wired, New Statesman. Literary agent: Sophie Scard,
-      United Agents, London.'
+    notes: 'Freelance writing career following Verge departure. Published "Beyond Measure: The Hidden History of Measurement from Cubits to Quantum Constants" (Faber UK 2022, W.W. Norton US Nov 2023, 432pp).
+      Two-book deal with Faber via agent Sophie Scard at United Agents (London). Named book of the year by The Economist and The New Yorker. Also written for Financial Times, Wired, New Statesman. Literary
+      agent: Sophie Scard, United Agents, London.'
     publication: freelance
     role: freelancer
     start: '2024'
   - beat: AI commentary, technology opinion
     end: present
-    notes: 'Contributing writer for LRB covering AI, technology, and culture through
-      long-form literary essays. "Instrumental Tricks: Prosthetic Brainpower" (LRB Vol 45
-      No 19, 5 Oct 2023) — review essay on AI and cognition. "Horny Robot Baby Voice" —
-      essay on AI chatbot companion (Replika) and the 2021 Windsor Castle crossbow attack
-      where perpetrator was encouraged by AI chatbot. "Do Chatbots Dream of AI Poetry?"
-      (Feb 2024) — analysis of ChatGPT''s Feb 20, 2024 breakdown where it produced
-      incomprehensible responses. These essays represent a shift from news reporting to
-      literary criticism of technology — the LRB''s essay form allows deeper cultural analysis
-      than daily Verge coverage permitted.'
+    notes: 'Contributing writer for LRB covering AI, technology, and culture through long-form literary essays. "Instrumental Tricks: Prosthetic Brainpower" (LRB Vol 45 No 19, 5 Oct 2023) — review essay
+      on AI and cognition. "Horny Robot Baby Voice" — essay on AI chatbot companion (Replika) and the 2021 Windsor Castle crossbow attack where perpetrator was encouraged by AI chatbot. "Do Chatbots Dream
+      of AI Poetry?" (Feb 2024) — analysis of ChatGPT''s Feb 20, 2024 breakdown where it produced incomprehensible responses. These essays represent a shift from news reporting to literary criticism of
+      technology — the LRB''s essay form allows deeper cultural analysis than daily Verge coverage permitted.'
     publication: london-review-of-books
     role: contributing_writer
     start: '2023'
   - beat: AI opinion, technology commentary
     end: present
-    notes: 'Opinion/commentary contributor. "The DeepSeek panic reveals an AI world ready
-      to blow" (Guardian, 28 Jan 2025) — analysis of DeepSeek R1''s impact on AI industry
-      assumptions about compute cost and Western AI dominance. Widely cited in academic
-      papers: EU Parliament EuroStack report, Alberta Law Review "Data Centres, AI, and
-      Electrification," Energy Law Foundation. The Guardian is a tracked MediaScope publication,
-      making Vincent''s Verge→Guardian migration a natural experiment for institutional
-      framing analysis. His Guardian pieces adopt a more essayistic, analytical tone vs his
-      Verge news reporting — a measurable style shift that the DiD framework can decompose
-      into individual vs institutional voice.'
+    notes: 'Opinion/commentary contributor. "The DeepSeek panic reveals an AI world ready to blow" (Guardian, 28 Jan 2025) — analysis of DeepSeek R1''s impact on AI industry assumptions about compute cost
+      and Western AI dominance. Widely cited in academic papers: EU Parliament EuroStack report, Alberta Law Review "Data Centres, AI, and Electrification," Energy Law Foundation. The Guardian is a tracked
+      MediaScope publication, making Vincent''s Verge→Guardian migration a natural experiment for institutional framing analysis. His Guardian pieces adopt a more essayistic, analytical tone vs his Verge
+      news reporting — a measurable style shift that the DiD framework can decompose into individual vs institutional voice.'
     publication: guardian
     role: contributing_writer
     start: '2025'
   multi_publication: true
   name: James Vincent
-  notes: 'British journalist and author based in London. Cambridge University graduate.
-    Twitter/X: @jjvincent (~20,700 followers). One of the most influential AI journalists
-    of the 2015-2023 era — his nine-year Verge tenure coincided with the entire modern
-    AI boom from deep learning breakthroughs through the ChatGPT era. His "AI is killing
-    the old web" piece (Jun 2023) became one of the most-cited tech journalism articles
-    of the decade, referenced in EU Parliament research, Journal of Democracy, Alberta
-    Law Review, and dozens of academic papers. KEY FOR MEDIASCOPE: Vincent''s career
-    represents a high-value natural experiment for the editorial migrations DiD framework.
-    He spent ~9 years as The Verge''s primary AI voice, then transitioned to freelance
-    work at The Guardian (a tracked publication). This Verge→Guardian migration allows
-    direct comparison of how institutional context shapes framing: same journalist, same
-    beat (AI), different publication constraints. His Verge work was news-oriented (daily
-    reporting, investigation, explainers); his Guardian output is opinion/commentary (essayistic,
-    analytical, explicitly labeled opinion). The LRB essays represent a third register:
-    literary criticism of technology, with 5,000+ word pieces that embed AI critique within
-    cultural history. Tracking all three registers from one writer provides a control
-    for individual voice when measuring institutional framing bias.'
+  notes: 'British journalist and author based in London. Cambridge University graduate. Twitter/X: @jjvincent (~20,700 followers). One of the most influential AI journalists of the 2015-2023 era — his nine-year
+    Verge tenure coincided with the entire modern AI boom from deep learning breakthroughs through the ChatGPT era. His "AI is killing the old web" piece (Jun 2023) became one of the most-cited tech journalism
+    articles of the decade, referenced in EU Parliament research, Journal of Democracy, Alberta Law Review, and dozens of academic papers. KEY FOR MEDIASCOPE: Vincent''s career represents a high-value natural
+    experiment for the editorial migrations DiD framework. He spent ~9 years as The Verge''s primary AI voice, then transitioned to freelance work at The Guardian (a tracked publication). This Verge→Guardian
+    migration allows direct comparison of how institutional context shapes framing: same journalist, same beat (AI), different publication constraints. His Verge work was news-oriented (daily reporting,
+    investigation, explainers); his Guardian output is opinion/commentary (essayistic, analytical, explicitly labeled opinion). The LRB essays represent a third register: literary criticism of technology,
+    with 5,000+ word pieces that embed AI critique within cultural history. Tracking all three registers from one writer provides a control for individual voice when measuring institutional framing bias.'
   source_urls:
   - https://muckrack.com/james-vincent-32
   - https://talkingbiznews.com/media-news/vincent-departing-the-verge-after-eight-years/
@@ -13223,3 +13197,85 @@ journalists:
   - https://www.theguardian.com/commentisfree/2025/jan/28/deepseek-panic-ai-world
   - https://www.lrb.co.uk/the-paper/v45/n19/james-vincent/instrumental-tricks
   - https://www.independent.co.uk/author/james-vincent
+- career:
+  - beat: general, business
+    end: '1996'
+    event_type: hired
+    notes: Early career at New York Newsday (Pulitzer-winning daily, closed 1995). Started career in New York after Pomona College.
+    publication: new-york-newsday
+    role: reporter
+    source_url: https://www.goodreads.com/author/show/4006714.Fred_Vogelstein
+    start: '1993'
+  - beat: business, technology
+    end: '1999'
+    event_type: hired
+    notes: Staff writer at WSJ. Dates approximate based on career sequence from Penguin bio and Goodreads.
+    publication: wall-street-journal
+    role: reporter
+    source_url: https://penguinrandomhouse.com/authors/2108038/fred-vogelstein
+    start: '1996'
+  - beat: business, technology
+    end: '2001'
+    event_type: hired
+    notes: Staff writer. Dates approximate. Career moved from New York-based publications to national magazine reporting.
+    publication: us-news-and-world-report
+    role: reporter
+    source_url: https://penguinrandomhouse.com/authors/2108038/fred-vogelstein
+    start: '1999'
+  - beat: technology, Silicon Valley
+    end: '2006'
+    event_type: hired
+    notes: Staff writer at Fortune magazine. Covered Silicon Valley during dotcom bust and recovery. Authored early investigations into Bill Gates's fear of Google and the Yahoo mess. Likely relocated to
+      San Francisco during this period. Knight-Bagehot Fellow at Columbia during or adjacent to Fortune tenure.
+    publication: fortune
+    role: senior_writer
+    source_url: https://writersgrotto.org/member/fred-vogelstein
+    start: '2001'
+  - beat: technology, Silicon Valley, smartphones, Big Tech
+    end: present
+    event_type: hired
+    notes: 'Contributing editor (not staff) for ~20 years. One of Wired''s longest-tenured contributors. KEY WORK: Some of earliest investigations into smartphone wars (Apple vs Google), Facebook''s rise
+      and growing pains, Microsoft PR culture. 2010 Gerald Loeb Award finalist for Wired work. The 2007 Microsoft PR incident (Waggener Edstrom sending dossier to him) became a case study in tech journalism.
+      Published ''And Then Steve Said, Let There Be an iPhone'' (NYT Magazine excerpt from Dogfight book). Survived 4 EIC transitions: Chris Anderson → Scott Dadich → Nicholas Thompson → Gideon Lichfield
+      → Katie Drummond. Also writes for NYT Magazine, Washington Post, LA Times, The Atlantic, CNN, Reuters, Business Insider alongside Wired contributing role. Recent Wired output (2024-2025) includes
+      Google antitrust analysis (argued for settlement over breakup), Bluesky/social media, NotebookLM AI review. Has personal website fredvogelstein.com and also publishes ''Fred''s Newsletter'' on Substack
+      separately from CrazyStupidTech. JournalistHunt lists 88 total articles on file.'
+    publication: wired
+    role: contributing_editor
+    source_url: https://penguinrandomhouse.com/authors/2108038/fred-vogelstein
+    start: '2006'
+  - beat: AI, innovation, technology
+    end: present
+    event_type: founded
+    notes: Co-founded innovation newsletter CrazyStupidTech with Om Malik (VC/journalist, founder of GigaOm). Part of the journalist-to-newsletter migration trend. Publishes on Substack. Content focuses
+      on AI, tech industry trends, digital transformation. Vogelstein maintains Wired contributing editor role simultaneously.
+    publication: crazy-stupid-tech
+    role: co_founder_editor
+    source_url: https://tedai-sanfrancisco.ted.com/panelists/2025/fred-vogelstein/
+    start: '2024'
+  multi_publication: true
+  name: Fred Vogelstein
+  notes: 'Full name: Hans Alfred Vogelstein II (named after paternal grandfather Hans Vogelstein, who was involved with American Metal Company/AMAX). Based in Berkeley, CA. Originally from New York City.
+    Pomona College (BA Political Science), Columbia University (Knight-Bagehot Fellow, partial MBA). Career spans 30+ years across 6 major publications. Author of ''Dogfight: How Apple and Google Went to
+    War and Started a Revolution'' (2013, Farrar Straus and Giroux, published in 17 countries). 2x Gerald Loeb Award finalist (2010 Wired, plus one earlier). Board member of Columbia Journalism Review.
+    Treasurer of San Francisco Writers Grotto. TEDAI San Francisco 2025 speaker. Notable incident: Microsoft PR firm Waggener Edstrom accidentally sent internal dossier about him TO him (April 2007, covered
+    by NYT) — described as ''tricky'' who ''looks deeply for any dirt.'' Also written about family epilepsy struggles — helped jumpstart development of Epidiolex (FDA approved 2018). FAMILY BACKGROUND:
+    Father is John L. Vogelstein (b. 1934), co-founder and former president/vice-chairman of Warburg Pincus LLC — one of the world''s largest private equity firms ($100B+ invested in 1,000+ companies across
+    40+ countries). John was partner at Lazard Frères (1954–1966), then built Warburg Pincus with Lionel Pincus (1967–2002). John is also chairman of Third Way (Democratic think tank), chairman emeritus
+    of NYC Ballet, chairman emeritus of Prep for Prep, former vice-chairman of NYU Stern Board of Overseers, and co-founder/chairman of New Providence Asset Management. Grandfather Hans Vogelstein was with
+    American Metal Company. ANALYTICALLY SIGNIFICANT FOR MEDIASCOPE: (1) EARLY FACEBOOK CHRONICLER — authored some of the earliest Wired investigations into Facebook''s rise and growing pains, predating
+    the current adversarial coverage era. Provides historical baseline for how Wired''s Meta framing evolved from entrepreneurial narrative to accountability journalism under Drummond. (2) CONTRIBUTING
+    EDITOR status means he''s not on staff but has long institutional influence — survived 4 EIC transitions: Chris Anderson → Scott Dadich → Nicholas Thompson → Gideon Lichfield → Katie Drummond. Tests
+    whether contributing editors carry the same institutional framing as staff writers. (3) NEWSLETTER PIVOT — co-founded CrazyStupidTech with Om Malik (VC/journalist, founder of GigaOm), part of the broader
+    journalist-to-newsletter migration trend. Still listed as Wired contributing editor while running independent newsletter, dual-allegiance model. (4) FAMILY PE/FINANCE CONNECTIONS — father''s Warburg
+    Pincus is a major global PE firm; no direct Meta investment identified, but the PE ecosystem creates adjacencies worth tracking in the broader ownership mapping. Father''s chairmanship of Third Way
+    (centrist Democratic think tank) adds political-network context. This is biographical context, not an accusation of conflict.'
+  source_urls:
+  - https://tedai-sanfrancisco.ted.com/panelists/2025/fred-vogelstein/
+  - https://www.penguinrandomhouse.com/authors/250812/fred-vogelstein/
+  - https://www.goodreads.com/author/show/6922203.Fred_Vogelstein
+  - https://www.writersgrotto.org/people/fred-vogelstein
+  - https://www.audible.ca/author/Fred-Vogelstein/B00E9BE85O
+  - https://muckrack.com/fvogelstein/articles
+  - https://journalisthunt.com/journalists/fred-vogelstein
+  - https://en.wikipedia.org/wiki/John_Vogelstein
