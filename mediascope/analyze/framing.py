@@ -361,6 +361,12 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"\b(?:slammed|blasted|hammered|torched|eviscerated|"
         r"lambasted|excoriated|ripped|grilled|destroyed|"
         r"crushed|obliterated|demolished|annihilated|"
+        # "slashed" as standalone loaded verb for cuts/layoffs/budgets —
+        # violent metaphor; neutral alternatives: "cut", "reduced", "trimmed".
+        # Discovered via Reuters Meta AI layoff discrimination (Jul 14, 2026):
+        # "slashed thousands of jobs" — compound patterns existed but missed
+        # the standalone verb.
+        r"slashed|"
         r"staggering|whopping|jaw-dropping|eye-watering|eye-popping|"
         r"shockingly\s+(?:high|large|low|expensive|cheap|massive|huge)|"
         r"mastermind(?:ed)?|explosive|hook(?:ed|s|ing)?|"
@@ -9448,10 +9454,11 @@ def detect_framing_devices(
                 if device_type == "loaded_language":
                     _ll_lower2 = match.group().lower()
                     _LEGAL_TERMS_OF_ART = (
-                        "violation", "violations",
+                        "violation", "violations", "violating",
                         "sanction", "sanctions",
                         "enforcement",
                         "misconduct",
+                        "retaliation", "retaliatory",
                     )
                     if any(t in _ll_lower2 for t in _LEGAL_TERMS_OF_ART):
                         _ll_ctx_start2 = max(0, start - 120)
@@ -9468,9 +9475,38 @@ def detect_framing_devices(
                             "privacy act", "data protection",
                             "section 230", "per-violation",
                             "per violation",
+                            "accusing", "accused", "claim",
+                            "complaint", "discrimination",
+                            "disability", "medical leave",
                         )
                         if any(w in _ll_context2 for w in _LEGAL_CONTEXT_TERMS):
                             continue
+
+                # ---------------------------------------------------------
+                # absence_as_evidence legal-context suppression:
+                # When "failed to" / "chose not to" etc. are part of a
+                # plaintiff allegation in a lawsuit article, they are
+                # reporting the claim, not the journalist making an
+                # absence-as-evidence argument.
+                # Discovered via Reuters Meta AI layoff discrimination
+                # article (Jul 14, 2026): "Meta failed to test its AI
+                # systems for bias" is a plaintiff claim, not editorial.
+                # ---------------------------------------------------------
+                if device_type == "absence_as_evidence":
+                    _ae_ctx_start = max(0, start - 150)
+                    _ae_ctx_end = min(len(text), end + 150)
+                    _ae_context = text[_ae_ctx_start:_ae_ctx_end].lower()
+                    _LEGAL_ALLEGATION_TERMS = (
+                        "lawsuit", "complaint", "plaintiff",
+                        "filed", "filing", "accusing", "accused",
+                        "claim", "claims", "alleged", "alleging",
+                        "according to the complaint",
+                        "according to the lawsuit",
+                        "according to the filing",
+                        "court", "arbitration",
+                    )
+                    if any(w in _ae_context for w in _LEGAL_ALLEGATION_TERMS):
+                        continue
 
                 seen_spans.add(span_key)
                 evidence = match.group().strip()

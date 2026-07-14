@@ -43,15 +43,15 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 |---|---|---|
 | Entity clusters | 87 | 871 aliases, 64 with custom regex, 23 auto-generated |
 | Framing device types | 102 | 10 core + 85 extended + 7 structural (post-pass) |
-| Framing patterns | 673 | Compiled regex patterns across 95 pattern-based types |
+| Framing patterns | 676 | Compiled regex patterns across 95 pattern-based types |
 | Emotional language terms | 1022 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 31 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 12 | Paths A–L, each addressing a specific VADER failure mode |
-| Annotated articles | 177 | Full manual analysis in `examples/sample_output/` |
+| Annotated articles | 179 | Full manual analysis in `examples/sample_output/` |
 | Journalists tracked | 231 | Career data with source URLs |
 | Career-entry migrations | 918 | Across 425 distinct publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 2,593 | Across 116 test files |
+| Tests | 2,603 | Across 117 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -461,7 +461,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **2593 tests** across 116 test files, each covering a different analytical capability:
+MediaScope has **2603 tests** across 117 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -570,6 +570,7 @@ MediaScope has **2593 tests** across 116 test files, each covering a different a
 | `test_reuters_rust_belt_jul9.py` | 33 | Reuters Big Tech data centers Rust Belt factories Jul 9: heritage_nostalgia framing device (new — age/generational continuity establishing emotional stakes), source false positive elimination (Capacity/Energy Consumers/White House/Synergy Research/Smart Electric Power), Pattern 0f affiliation extraction ("president of the trade group Industrial Energy Consumers of America"), environmental domain keyword in affiliation patterns, infrastructure_energy topic assignment |
 | `test_reuters_scam_ads_securities_jul13.py` | 17 | Reuters Meta scam ads securities defense Jul 13: power_asymmetry personal-loss savings narrative ("retirement savings"), loaded_language additions ("depressingly", "peculiar"), self_referential_investigation "my [Publication] colleagues" pattern (with source_publication wire-service filter), editorial_dramatization literary-aside undercut ("— while it lasted"), rhetorical_question "Should [entity]... hinge" pattern, entity extraction (Meta cluster with Facebook/Instagram/WhatsApp subsidiaries), sentiment negative lean |
 | `test_reuters_australia_esafety_child_safety_jul14.py` | 24 | Reuters Australia eSafety child safety Jul 14: iMessage → Apple cluster (new alias), Google Messages → Google cluster (new alias), Discord cluster (new), Julie Inman Grant → Australia cluster (new alias), multi-entity distribution (7+ clusters, Australia primary), framing: no_comment_implication, regulatory_shadow, scale_magnitude, catastrophizing |
+| `test_reuters_meta_ai_layoff_discrimination_jul14.py` | 10 | Reuters Meta AI layoff discrimination Jul 14: District of Columbia entity resolution (not Columbia University), legal-context loaded_language suppression (violating/retaliation as legal terms of art), legal-context absence_as_evidence suppression (plaintiff allegation vs journalistic framing), standalone "slashed" loaded_language verb |
 | `test_reuters_iris_chip_jul9.py` | 20 | Reuters Meta Iris chip production Jul 9: Sumitomo Electric entity cluster (new), inverted analyst attribution ("Morgan Stanley analysts said"), compound no-comment subject extraction ("Samsung Electronics and Sumitomo Electric did not respond"), "floundered" passive framing term, ai_development + corporate_strategy topic classification |
 | `test_reuters_muse_spark_11_jul9.py` | 23 | Reuters Muse Spark 1.1 developer preview Jul 9: pathologizing_metaphor "intervention" false positive suppression (neutral technical context — "less human intervention", "without intervention", "minimal/no/reduced intervention"), pricing comparison phrases in NEGATIVE_COMPARISON/POSITIVE_COMPARISON ("above openai", "below anthropic", "priced above/below", "cheaper than", "undercuts"), loaded_language competitive dramatization ("heated competition/race", "AI supremacy", "tech arms race"), competitive_positioning "pitting...against" and "close/narrow the gap" |
 | `test_recovery_narrative.py` | 10 | Recovery narrative framing device (#94): three-beat decline→catalyst→recovery structure in financial articles, bidirectional competitive_positioning (positive parity variant), confidence scoring, negative guards for neutral wire articles and decline-only articles; discovered from MarketWatch Meta stock rebound article (Jul 10, 2026) |

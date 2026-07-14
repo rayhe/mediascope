@@ -76,6 +76,11 @@ _HOMOGRAPH_LOOKBEHIND_FILTERS: dict[str, re.Pattern] = {
         r"(?:mid|trans|north|south|cross)[- ]$",
         re.IGNORECASE,
     ),
+    # "District of Columbia" is a geographic entity, not Columbia University.
+    "columbia": re.compile(
+        r"(?:District\s+of\s+|British\s+)$",
+        re.IGNORECASE,
+    ),
 }
 
 # Type alias — clusters accept either format; code normalizes to dict format.

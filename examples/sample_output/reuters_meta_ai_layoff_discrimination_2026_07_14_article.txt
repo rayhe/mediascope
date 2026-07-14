@@ -1,0 +1,23 @@
+Meta used AI to target workers with medical conditions for layoffs, lawsuit claims
+
+Twenty-six employees of Meta Platforms (META.O) have filed a novel lawsuit accusing the tech giant of using AI-powered software that disproportionately targeted people with disabilities or who took medical leave in selecting workers for mass layoffs.
+
+The lawsuit, filed in Oakland, California, federal court late Monday, says that the company relied on factors such as productivity and AI token usage when it slashed thousands of jobs earlier this year, disadvantaging people who missed work because of medical conditions or to care for family members.
+
+The plaintiffs, who were notified in May that their jobs would be eliminated starting on July 22, are seeking a preliminary ruling from the court blocking Meta from completing the layoffs while they pursue their claims in private arbitration. The workers say Meta's agreements require employees to arbitrate workplace disputes individually, but do not apply to requests for temporary relief.
+
+A Meta spokesperson on Tuesday said the claims lack merit.
+
+"Workforce management and organizational decisions were and are made by people, not AI," the spokesperson said.
+
+The lawsuit appears to be the first against a major U.S. company to challenge the alleged use of AI in conducting layoffs.
+
+Meta laid off 10% of its global workforce in May, or nearly 8,000 people, and was planning more job cuts later this year, Reuters had reported. CEO Mark Zuckerberg has since said that he does not expect any more company-wide layoffs this year.
+
+The changes are part of a far-reaching overhaul as the company increases its AI investments and centers AI agents in both its product offerings and its approach to work internally.
+
+The 26 plaintiffs, who filed the lawsuit anonymously, are accusing Meta of violating federal and state laws that ban discrimination or retaliation against workers who have disabilities, take medical leave or are pregnant. They also claim that Meta failed to test its AI systems for bias in violation of recently adopted California and New York City laws.
+
+The plaintiffs come from six states, including California and New York, and the District of Columbia.
+
+According to the complaint, Meta used a number of internal AI-assisted systems to score and rank employees on a termination list. Those included "Metamate," a large language model assistant; an employee-trained "second brain" that tracked workers' communications and documents; and a productivity score drawn from scanning keystrokes, screen content, emails and browser history, according to the lawsuit.
