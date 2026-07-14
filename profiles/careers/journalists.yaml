@@ -315,21 +315,51 @@ journalists:
     role: senior_editor
     source_url: https://www.theverge.com/authors/lauren-goode
     start: 2015-06
-  - beat: consumer tech, apps, services, Big Tech trends
+  - beat: consumer tech, AI, semiconductors, Silicon Valley culture
     event_type: hired
-    notes: Senior gear/staff writer. Covers products, apps, services, and consumer tech issues and trends. Co-hosts WIRED's flagship Gadget Lab podcast and Get WIRED podcast. Hired to write online and print
-      plus develop a new video series. Based in San Francisco/Bay Area. 8+ years and counting — her longest single-publication tenure. Condé Nast institutional DNA has replaced her Mossberg/Swisher lineage
-      frame.
+    notes: 'Hired April 2018 as senior gear writer covering products, apps, services, and consumer tech. Promoted to Senior Correspondent by ~2025 (confirmed by Muck Rack, BuzzSumo, HumanX 2026 panel credits,
+      Cooper Union event, TWiT podcast, and Big Technology AI Summit). Co-hosts WIRED''s flagship Gadget Lab podcast (long-running, with Michael Calore) and Get WIRED podcast. Also co-hosts "Uncanny Valley"
+      podcast with Michael Calore and Zoë Schiffer. Beat expanded beyond consumer products to AI, semiconductors, Silicon Valley culture, and "the intersection of technology and humanity" (per 2026 Cooper
+      Union event bio). Notable 2025-2026 coverage: shipped a Notion feature using Cursor and Claude (AI coding tools), Intel investment analysis, data center infrastructure. Moderated HumanX 2026 panel
+      with AMD CTO Mark Papermaster and Micron CBO Sumit Sadana on AI silicon infrastructure. Co-interviewed Mike Krieger (Anthropic Labs head, Instagram co-founder) at Big Technology AI Summit (Jun 2026).
+      Appeared at Cooper Union John Jay Iselin Memorial Lecture with David Pogue (CBS) and Joanna Stern for Apple 50th anniversary discussion (Mar 2026). Based in San Francisco/Bay Area. 8+ years at Wired
+      — her longest single-publication tenure by far. Signal handle: ChaoticGoode.12. Title upgrade to Senior Correspondent is analytically significant: signals increased editorial authority within Condé
+      Nast, and her beat expansion from product reviews to AI/semiconductors/culture mirrors Wired''s broader editorial pivot under Drummond.'''
     publication: wired
-    role: senior_writer
+    role: senior_correspondent
     source_url: https://talkingbiznews.com/media-news/wired-hires-goode-from-the-verge-as-senior-writer/
     start: 2018-04
+  education:
+  - degree: BA
+    field: English
+    institution: Clark University
+    year: '2003'
+  - degree: MA
+    field: Communication
+    institution: Stanford University
+    notes: Stanford Department of Communication houses the journalism program. Some bios describe this as "MA in Journalism" (CHM) while others say "MA in Communications" (TalkingBizNews, Eventible). Both
+      refer to the same Stanford Communication program.
+  multi_publication: true
   name: Lauren Goode
   notes: 'Key migration chain: ESPN → A&E Networks → Wall Street Journal → AllThingsD → Recode → The Verge → Wired. Protégé of Walt Mossberg and Kara Swisher — followed them through every entity transition.
-    Clark University BA English, Stanford MA Communications. Emmy Award winner (Next Level video series, NorCal 2018). Co-hosts WIRED''s Gadget Lab and Get WIRED podcasts. At Wired, covers consumer tech,
-    apps, services, and Big Tech issues. KEY for MediaScope: her entire career was shaped inside the Mossberg/Swisher talent pipeline — a lineage that includes Mike Isaac (now NYT), Peter Kafka, Ina Fried,
-    and others who went through AllThingsD/Recode. This cohort shares editorial DNA forged in the WSJ''s tech orbit before Vox Media absorption. Her migration to Wired (Condé Nast) represents a clean break
-    from the Vox/Recode lineage into a different institutional frame.'
+    Clark University BA English (class of 2003), Stanford MA Communication. NorCal Emmy Award winner 2018 (Next Level video series at The Verge, technology reporting category). Currently Senior Correspondent
+    at WIRED (promoted from Senior Writer ~2025). Co-hosts WIRED''s Gadget Lab, Get WIRED, and Uncanny Valley podcasts. Beat evolved from pure consumer tech/product reviews to AI, semiconductors, Silicon
+    Valley culture, and tech-humanity intersection. 15+ years covering technology as of 2026. KEY for MediaScope: (1) Her entire career was shaped inside the Mossberg/Swisher talent pipeline — a lineage
+    that includes Mike Isaac (now NYT), Peter Kafka, Ina Fried, and others who went through AllThingsD/Recode. This cohort shares editorial DNA forged in the WSJ''s tech orbit before Vox Media absorption.
+    (2) Her migration to Wired (Condé Nast) represents a clean break from the Vox/Recode lineage into a different institutional frame — the longest single-publication tenure of her career suggests deep
+    institutional assimilation. (3) Title upgrade to Senior Correspondent signals growing editorial authority — she now moderates major industry panels (HumanX, Big Technology AI Summit) alongside C-suite
+    executives, which complicates a pure "reporter" classification. (4) Beat expansion from consumer products to AI infrastructure parallels Wired''s broader editorial pivot under Drummond, making her coverage
+    evolution a proxy for institutional editorial strategy changes. (5) Her career arc — TV production (ESPN/A&E) → video journalism (WSJ) → multimedia editor (Verge) → writer/podcaster (Wired) — is unusually
+    multi-format, giving her an instinct for narrative packaging that shapes how her text articles frame complex topics.'
+  source_urls:
+  - https://clarku.edu/news/lauren-goode-03-stays-wired-to-the-tech-world/
+  - https://allthingsd.com/20110824/introducing-lauren-goode/
+  - https://talkingbiznews.com/media-news/wired-hires-goode-from-the-verge-as-senior-writer/
+  - https://computerhistory.org/profile/lauren-goode/
+  - https://muckrack.com/laurengoode/articles
+  - https://zocalopublicsquare.org/event/how-much-information-is-too-much/
+  - https://worth.com/author/lauren-goode/
+  - https://thepowerfulladies.com/episode-110-understanding-the-intersection-of-tech-and-humanity-lauren-goode-emmy-winning-journalist-host-of-gadget-lab
 - career:
   - beat: news production
     end: 2009-12

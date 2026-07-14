@@ -1790,3 +1790,13 @@ editorial_changes:
     outgoing: null
     position: business_editor_open
     source_url: https://talkingbiznews.com/biz-news-help-wanted/wired-seeks-an-editor-to-lead-its-business-coverage/
+  - date: '2025'
+    incoming: Lauren Goode
+    notes: 'TITLE UPGRADE: Lauren Goode promoted from Senior Writer/Senior Staff Writer to Senior Correspondent at Wired. Exact date unclear — Muck Rack, BuzzSumo, HumanX 2026 panel credits (Apr 2026),
+      Cooper Union event (Mar 2026), TWiT podcast (Jan 2026), and Big Technology AI Summit (Jun 2026) all use "Senior Correspondent." Earlier references (Eventible speaker profile, ivy.fm ~2023) still
+      use "Senior Staff Writer." Beat expanded from consumer tech product reviews to AI, semiconductors, Silicon Valley culture. Title change reflects both her increased editorial authority (now moderates
+      major industry panels alongside C-suite executives) and Wired''s broader editorial strategy under Drummond to elevate AI-focused coverage. She is the most senior Wired reporter in continuous tenure
+      (~7+ years by 2025) after Steven Levy.'
+    outgoing: null
+    position: senior_correspondent_promotion
+    source_url: https://muckrack.com/laurengoode/articles
