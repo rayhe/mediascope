@@ -163,19 +163,23 @@ Topic classification feeds into MediaScope's genre detection pipeline, which adj
 
 ## CLI Reference
 
+Topic classification runs automatically during the `analyze` step — every article is assigned up to 3 topic buckets with confidence scores, stored in the database alongside sentiment, framing, and source analysis results. There is no separate topic command; topics are part of the standard analysis pipeline.
+
 ```bash
-# Classify a single article by text
-mediascope analyze --text "Article text here..." --show-topics
+# Run full analysis (including topic classification) on ingested articles
+mediascope analyze --publication wired --target Meta --since 2026-07-01
 
-# List topics detected in a stored article
-mediascope analyze --publication wired --target Meta --since 2026-07-01 --show-topics
+# Generate a report that includes topic-level breakdowns
+mediascope report --publication wired --target Meta --format md
 
-# Run asymmetry within a specific topic
-mediascope score --publication wired --target Meta --topic child_safety
+# Score asymmetry (uses all analyzed articles; filter by topic in report output)
+mediascope score --publication wired --target Meta
 
-# Compare topic-level asymmetry across publications
-mediascope score --publication wired --target Meta --topic child_safety --compare guardian nytimes
+# Compare asymmetry across publications (topic data included in per-article results)
+mediascope score --publication wired --target Meta --compare guardian nytimes
 ```
+
+> **Note:** Topic-level filtering (e.g., scoring asymmetry within a single topic bucket) is available programmatically via `mediascope.analyze.topics.classify_topic()` and the stored analysis results in the database. See `examples/topic_classification_demo.py` for programmatic usage.
 
 ---
 

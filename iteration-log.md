@@ -1,4 +1,56 @@
 # MediaScope Iteration Log
+## 2026-07-14 04:00 PT — Type D: Toolkit Quality & Documentation (Phantom CLI Flag Fix + Doc-CLI Consistency Guard)
+
+**Commit:** (pending) — "Type D: fix phantom CLI flags in TOPIC_REFERENCE.md, add doc-CLI consistency test, update test counts"
+
+### Focus: Documentation-CLI Synchronization
+
+Discovered 4 phantom CLI flags documented in `TOPIC_REFERENCE.md` that were never implemented in the actual CLI. These phantom examples would mislead any agent or user attempting to use the documented commands.
+
+### Bug Found: Phantom CLI Flags in TOPIC_REFERENCE.md
+
+The "CLI Reference" section documented 4 commands using flags that don't exist:
+
+| Documented Flag | Command | Status |
+|---|---|---|
+| `--show-topics` | `analyze` | **Not implemented** — topic classification runs automatically during `analyze` and is stored in DB |
+| `--text` | `analyze` | **Not implemented** — `analyze` requires `--publication` + `--target` against ingested articles |
+| `--topic` | `score` | **Not implemented** — `score` operates on all analyzed articles, no topic filter |
+
+These phantom flags were present in lines 168, 171, 174, 177 of TOPIC_REFERENCE.md. All other documentation files (AGENT_GUIDE.md, ADDING_PUBLICATIONS.md, EDITORIAL_HISTORIES.md, README.md, SOURCE_ANALYSIS_REFERENCE.md) use only valid CLI flags — the bug was isolated to TOPIC_REFERENCE.md.
+
+### Changes
+
+1. **Fixed TOPIC_REFERENCE.md CLI Reference section**
+   - Replaced 4 phantom CLI examples with working commands that use real flags
+   - Added explanatory note that topic classification runs automatically during `analyze` — no separate topic command needed
+   - Added note pointing to `mediascope.analyze.topics.classify_topic()` and `examples/topic_classification_demo.py` for programmatic topic filtering
+   - Added `mediascope report` example showing topic breakdowns in report output
+
+2. **New test file: `test_cli_doc_consistency.py`** (2 tests)
+   - `test_no_phantom_cli_flags_in_docs`: Scans all `docs/*.md` and `README.md` for `mediascope` CLI invocations, parses the command and flags, validates every flag against `--help` output from the real CLI. Handles short flags (`-p` → `--publication`), `careers` subcommands, and `--help`/`--version` exclusion. Would have caught all 4 phantom flags found in this iteration.
+   - `test_documented_commands_are_real`: Validates that every command name used in documented CLI examples maps to a real top-level or careers subcommand.
+
+3. **Updated test counts across documentation**
+   - README.md pipeline stats table: 2,530 → 2,532 tests, 113 → 114 test files
+   - README.md test listing: added `test_cli_doc_consistency.py` entry
+   - ARCHITECTURE.md tree: 2530 → 2532 tests, 113 → 114 test files, added file entry
+   - `count_stats.py --check`: passes with updated counts
+
+### Verification
+
+- All CLI flags used in docs validated against `--help` output for every command: `analyze`, `score`, `ingest`, `report`, `disclose`, `add-publication`, `list-publications`, `status`, `careers list`, `careers show`, `careers migrations`, `careers leadership`, `careers diff`, `careers analyze`
+- No phantom flags remain in any documentation file
+- Full test suite: **2,532 passed** across 114 test files
+
+### Stats after
+- 102 framing device types (unchanged)
+- 673 compiled patterns (unchanged)
+- 176 annotated articles (unchanged)
+- 231 journalists tracked (unchanged)
+- 2,532 tests across 114 files (was 2,530 across 113)
+- 0 phantom CLI flags in documentation (was 4)
+
 ## 2026-07-14 01:00 PT — Type C: Ownership & Funding Deep Dive (NYT Insider Transaction Expansion + OpenAI Loss Projection)
 
 **Commit:** `a8d2b15` — "Type C: NYT insider transaction expansion (9 sells, zero buys, $8.6M+ YTD), OpenAI $14B loss projection, BofA AI capital context"
@@ -21851,3 +21903,44 @@ Searched for July 2026 journalist hires at tracked publications — no new untra
 - https://mciworldwide.com/30-01-2024-todays-insights-from-mit-technology-review/ (25+ year veteran)
 - https://www.technologyreview.com/author/david-rotman/
 - https://www.technologyreview.com/supertopic/hype-correction/
+
+## 2026-07-14 03:00 PT — Type D: Toolkit Quality & Documentation
+
+**Commit:** `d4b4156` — "Type D: fix 4 structural consistency failures (test_accuracy_guide.py registration), fix stale proposed Path L→M in FRAMING_REFERENCE"
+
+### Focus: Structural Consistency Fix + Documentation Accuracy
+
+Previous iteration (Type C at 01:00 PT) added `test_accuracy_guide.py` as part of a prior round but didn't register it in ARCHITECTURE.md or README.md. This caused 4 structural consistency test failures that compound over time if unfixed.
+
+### Changes
+
+1. **ARCHITECTURE.md: test_accuracy_guide.py registration**
+   - Added `test_accuracy_guide.py` entry in alphabetical position in the test file tree
+   - Updated test file count: 112 → 113
+   - Updated total test count: 2517 → 2530 (reflecting 13 new tests in this file)
+
+2. **README.md: test_accuracy_guide.py registration**
+   - Added entry to the test table with description: "ACCURACY_GUIDE.md documentation consistency: existence and size, cross-references from README/AGENT_GUIDE/ARCHITECTURE, content structure (VADER polarity, genre accuracy, decision tree, correction paths A-L, misinterpretation patterns, validation checklist, known gaps), annotated article count sync with corpus"
+   - Updated stats table: 2,517 → 2,530 tests, 112 → 113 files
+   - Updated test section header to match
+
+3. **FRAMING_REFERENCE.md: Proposed Path letter collision fix**
+   - Renamed proposed "Path L — Structural Irony" to "Path M — Structural Irony"
+   - Path L (quote-inflated body with negative headline) is already implemented in sentiment.py line 2064 — the proposed candidate was using a taken letter
+   - Added clarifying note: "Path L (quote-inflated body with negative headline) is already implemented. This candidate uses the next available letter."
+   - Updated last-updated date: 2026-07-12 → 2026-07-14
+
+4. **Verified: README stats table "673 patterns" is correct**
+   - `grep -c "re.compile"` in framing.py returns 673 (total compiled regex)
+   - `_DEVICE_PATTERNS` contains 612 (positive detection patterns)
+   - Remaining 61 are negative guards, exclusion patterns, and false-positive suppression
+   - README stats table correctly counts ALL compiled regex, not just positive patterns
+
+### Test results after
+- 2,530 tests across 113 files (all passing)
+- 124 structural consistency tests (was 120 passing + 4 failing, now 124 passing)
+- test_accuracy_guide.py: 13 tests (all passing) — validates ACCURACY_GUIDE.md existence, cross-references, content structure, correction path documentation, and annotated article count sync
+
+### Sources consulted
+- Code inspection: `mediascope/analyze/framing.py` (re.compile count), `mediascope/analyze/sentiment.py` (Path L implementation at line 2064)
+- Test output: `python3 -m pytest tests/ -q --co` (2530 collected), `python3 -m pytest tests/test_structural_consistency.py -q` (124 passed)

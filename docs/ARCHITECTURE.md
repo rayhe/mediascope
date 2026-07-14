@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 176 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2530 tests across 113 test files (all from real articles)
+├── tests/                       # 2532 tests across 114 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -464,6 +464,7 @@ mediascope/
 │   ├── test_bofa_capex_watermelon.py # BofA capex/Watermelon model: comma-after-entity lookahead fix, Barron's + Memeburn entity/framing detection, scale_magnitude "nearly double"
 │   ├── test_careers.py          # Career loading, migration detection, DiD, leadership ITS
 │   ├── test_citations.py       # Citation extraction, source grading, domain classification
+│   ├── test_cli_doc_consistency.py # Structural consistency: validates all CLI examples in docs/*.md and README.md use real CLI flags (catches phantom flags) and that documented commands are real
 │   ├── test_claims.py          # Claim-to-source mapping, statistic/quote detection
 │   ├── test_entities.py        # Entity detection, regex, false-positive exclusion
 │   ├── test_glasses_deep_dive.py # Glasses launch fixes: kicker framing, product-name stop-filter, emotional_appeal exclusion
