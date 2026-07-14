@@ -21602,3 +21602,42 @@ All counts updated across README.md, EDITORIAL_HISTORIES.md, careers_demo.py:
 - https://journalisthunt.com/journalists/jyoti-mann (2,900+ article count)
 - https://app.qwoted.com/publications/the-information (The Information Meta reporter job posting, Jan 6 2026)
 - https://talkingbiznews.com/they-re-hiring/wired-seeks-a-chief-business-correspondent/ (still unfilled)
+
+---
+
+## 2026-07-13T20:07 PT — Type B (Journalist Research)
+
+### Focus: David Rotman deep-dive (MIT Technology Review)
+
+#### 1. David Rotman Profile Expansion
+
+Expanded from a thin 1-entry profile (start date unknown, <200 chars notes) to a comprehensive deep-dive with 6 source URLs:
+
+- **Start date confirmed:** 1998 (via GlobeNewsWire 2018 MITEF event bio — "Rothman joined Technology Review in 1998")
+- **Tenure:** 27+ years — one of the longest-tenured editorial staff at any tracked publication
+- **Multiple Folio Magazine Eddie Awards:**
+  - 2008 gold: "The Price of Biofuels"
+  - 2009 gold/silver: "Can Technology Save the Economy?"
+  - 2010 gold: "Natural Gas Changes the Energy Map" + "Chasing the Sun"
+- **Role evolution:** Held "editor" title during Pontin era (confirmed via 2010 TR50 announcement, 2013 "From the editor" editorials) → acting EIC during Pontin→Lichfield transition (~Jun-Nov 2017) → editor-at-large (current)
+- **10 Breakthrough Technologies list:** Curated/presented for multiple years (confirmed 2018, 2020 via event bios and interviews)
+- **Notable long-form articles:** "How Technology Is Destroying Jobs" (Jun 2013), "The Relentless Pace of Automation" (Mar/Apr 2017, cited in Harvard/MIT AI ethics curricula), "Race and Medicine" (Apr 2005), "Why tech didn't save us from covid-19" (Jun 2020)
+- **Roundtable moderator:** Batteries/materials (Feb 2024), AI/climate (Dec 2024)
+- **146+ published articles** on technologyreview.com
+- **Analytical value:** Institutional memory spanning 4 EIC regimes (Benditt/Buderi → Pontin → Lichfield → Honan). Beat evolution from science/biotech to economics/AI mirrors the magazine's own shift. As editor-at-large, shapes story priorities without daily byline pressure — invisible hand on MIT Tech Review's editorial posture.
+
+#### 2. Thin Profile Audit
+
+Identified 5 thin profiles (≤2 career entries, <200 chars notes): Rachel Courtland, Kevin Sieff, Henry Grabar, Tom Bartlett, David Rotman. Rotman was highest-value (editor-at-large at core tracked publication) and is now fully expanded. Remaining 4 are lower-priority (non-editorial roles or non-core publications).
+
+#### 3. Verified No New Hires
+
+Searched for July 2026 journalist hires at tracked publications — no new untracked journalists found. Kate Taylor, Isabella Ward, Dhruv Mehrotra, Jake Lahut all already tracked.
+
+### Sources
+- https://www.globenewswire.com/news-release/2018/04/25/1487285/0/en/MIT-Enterprise-Forum-of-Cambridge-Hosts-MIT-Technology.html
+- https://alchetron.com/MIT-Technology-Review (Folio Eddie Awards)
+- https://spreadingfacts.pubpub.org/user/david-rotman
+- https://mciworldwide.com/30-01-2024-todays-insights-from-mit-technology-review/ (25+ year veteran)
+- https://www.technologyreview.com/author/david-rotman/
+- https://www.technologyreview.com/supertopic/hype-correction/
