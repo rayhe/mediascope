@@ -325,6 +325,8 @@ The source stance classifier uses configurable lists of negative and positive st
 
 ## Known Limitations & Open Research Questions
 
+> For a practical guide to working around these limitations — including when to trust raw vs. corrected scores, a decision tree, and genre-specific accuracy benchmarks — see [ACCURACY_GUIDE.md](ACCURACY_GUIDE.md).
+
 ### Sentiment Correction Gaps
 
 Two documented failure classes lack correction paths:

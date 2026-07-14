@@ -47,7 +47,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Emotional language terms | 1022 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 31 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 12 | Paths A–L, each addressing a specific VADER failure mode |
-| Annotated articles | 175 | Full manual analysis in `examples/sample_output/` |
+| Annotated articles | 176 | Full manual analysis in `examples/sample_output/` |
 | Journalists tracked | 231 | Career data with source URLs |
 | Career-entry migrations | 917 | Across 425 distinct publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
@@ -273,6 +273,7 @@ Statistical methodology is documented at academic quality in [docs/METHODOLOGY.m
 | [SOURCE_ANALYSIS_REFERENCE.md](docs/SOURCE_ANALYSIS_REFERENCE.md) | **Quick-reference card for source extraction, stance analysis, outsourced intensity, and active-negative agency** — 14 pattern groups, 10 source types, failure modes |
 | [ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md) | **Quick-reference card for all 86 entity clusters (866 aliases)** — disambiguation filters, cluster categories, custom regex patterns, pipeline interactions |
 | [SENTIMENT_CORRECTION_REFERENCE.md](docs/SENTIMENT_CORRECTION_REFERENCE.md) | **Quick-reference card for all 12 sentiment correction paths (A–L)** — trigger conditions, blend formulas, validation articles, path selection flowchart |
+| [ACCURACY_GUIDE.md](docs/ACCURACY_GUIDE.md) | **Practical accuracy reference** — when to trust scores, genre-specific accuracy, known failure modes, decision tree for interpreting results, common misinterpretation patterns |
 | [CROSS_PUBLICATION_REFERENCE.md](docs/CROSS_PUBLICATION_REFERENCE.md) | **Quick-reference card for same-event cross-publication comparison** — the most powerful evidence technique; 7-dimension matrix, wire-service baseline method, editorial mode taxonomy, 13 validated comparison clusters |
 | [QUALITY_STANDARDS.md](docs/QUALITY_STANDARDS.md) | Citation requirements, anti-slop standards, analytical rigor rules |
 | [AGENT_GUIDE.md](docs/AGENT_GUIDE.md) | AI agent integration: schemas, JSON formats, sample prompts, framework patterns |

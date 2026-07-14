@@ -300,6 +300,8 @@ if meta_scores and peer_scores:
 
 ## Financial Journalism: Known VADER Inflation
 
+> **For the full accuracy reference** — including genre-specific accuracy, the VADER polarity inversion problem, a decision tree for interpreting results, and common misinterpretation patterns — see [ACCURACY_GUIDE.md](ACCURACY_GUIDE.md).
+
 When analyzing financial/investor journalism (Motley Fool, Barron's, MarketWatch, Seeking Alpha, etc.), be aware that VADER systematically inflates scores by 0.3–0.5 points. This is documented in detail in [METHODOLOGY.md §16](METHODOLOGY.md#16-financial-journalism-sentiment-bias).
 
 **Quick diagnostic:** If a financial article scores composite > +0.50 AND has ≥3 adversarial framing devices, trust the framing devices over the sentiment score. The editorial stance is likely more negative than the composite indicates.
