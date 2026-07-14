@@ -336,6 +336,8 @@ mapping = map_claims_to_evidence(claims)
 
 ## 10. Same-Event Comparison Standards
 
+*For the compact quick-reference card covering comparison types, editorial mode baselines, wire-service method, validated clusters, and cross-publication import detection, see [CROSS_PUBLICATION_REFERENCE.md](CROSS_PUBLICATION_REFERENCE.md).*
+
 ### 10.1 Article Pair Requirements
 
 When performing cross-publication same-event comparisons (the most powerful evidence for editorial framing bias), the following quality standards apply:

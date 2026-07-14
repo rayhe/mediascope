@@ -832,6 +832,8 @@ When evaluating articles from target publications, MediaScope applies a quality 
 
 ## 13. Cross-Publication Same-Event Comparison
 
+*For the compact quick-reference card covering comparison types, the seven-dimension matrix, editorial mode baselines, wire-service method, validated clusters, and cross-publication import detection, see [CROSS_PUBLICATION_REFERENCE.md](CROSS_PUBLICATION_REFERENCE.md).*
+
 ### 13.1 The Method
 
 The most powerful evidence for editorial framing bias comes from comparing how different publications cover **the same event on the same day**. When two journalists attend the same press conference, read the same press release, or report on the same court filing, the raw facts are held constant — any difference in tone, framing device density, source selection, or structural choices is attributable to editorial DNA rather than event severity.

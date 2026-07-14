@@ -830,7 +830,7 @@ state the parallel trends assumption and sample size limitations.
 
 The most powerful evidence technique in MediaScope is comparing how different publications cover the **same event on the same day**. When the raw facts are held constant, any difference in tone, framing density, source selection, or structural choices is attributable to editorial DNA rather than event severity. This is the media-analysis equivalent of a controlled experiment.
 
-See `METHODOLOGY.md` §13 for the full theoretical framework and `examples/same_event_comparison.py` for a runnable demo.
+See [CROSS_PUBLICATION_REFERENCE.md](CROSS_PUBLICATION_REFERENCE.md) for the quick-reference card (comparison types, seven-dimension matrix, editorial mode baselines, wire-service method, validated clusters), `METHODOLOGY.md` §13 for the full theoretical framework, and `examples/same_event_comparison.py` for a runnable demo.
 
 ### Agent Workflow
 
@@ -1049,7 +1049,7 @@ The pipeline evaluates 12 paths (A–L) in priority order — the first match fi
 | **K** | Sarcastic rejection | raw ≥ 0.3, ≥2 sarcastic_correction + EI ≥ 0.7 | Satirical/vulgar short pieces with ironic negation, mock-certainty, sarcastic farewells — VADER reads profanity as positive ("fuck yeah" → positive sentiment) |
 | **L** | Quote-inflated body with negative headline | raw ≥ 0.3, headline_body ≤ -0.5, adversarial ≥ 4, ≥3 distinct adversarial types | Articles where quoted material inflates VADER body score but negative headline + adversarial framing density reveals editorial stance — corrects toward mild negative (-0.05 to -0.50) |
 
-Only one framing path (A–F, H–K) fires per article. Path G runs independently before the composite is computed.
+Only one framing path (A–F, H–L) fires per article. Path G runs independently before the composite is computed.
 
 **Adversarial device types** (31 types trigger Paths A/B): absence_as_evidence, assumed_consensus, catastrophizing, competitive_deficit, competitive_displacement, competitive_positioning, consent_alarm, consumer_ownership, editorial_aside, editorial_deflation, emotional_appeal, failure_precedent, guilt_by_association, hypocrisy_frame, isolation_framing, juxtaposition, kicker_framing, loaded_language, military_techno_optimism, power_asymmetry, precedent_analogy, pressure_language, recidivism_framing, refusal_amplification, self_referential_investigation, silence_as_guilt, slippery_slope, timeline_implication, expert_contradiction, loss_leader_framing, sarcastic_correction.
 

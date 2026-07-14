@@ -32,6 +32,7 @@ The Fix:
         Path I: Direct consumer critique with positive agency (20/80)
         Path J: Expert-driven structural critique (30/70)
         Path K: Sarcastic rejection editorial (10/90)
+        Path L: Quote-inflated body with negative headline (20/80)
 
     Only one framing path fires per article (except Path G, which runs
     independently before the composite is computed). See METHODOLOGY.md
@@ -175,6 +176,61 @@ environment in the Applied AI division.
 """
 
 
+# -------------------------------------------------------------------
+# Article 4: Gizmodo "Meta Scraps Muse Image" (Jul 11, 2026)
+# -------------------------------------------------------------------
+# VADER scores the body as strongly POSITIVE (+0.63) because the article
+# quotes Meta's own PR language extensively: "creative partner that knows
+# your world, making it easy to turn your ideas into high-quality visuals."
+# The headline is strongly NEGATIVE. But the editorial stance is clearly
+# adversarial: sarcastic_correction ("world record" opener for shortest
+# product lifespan), consent_alarm ("pulled face data by default"),
+# precedent_analogy ("The Ghibli Meme Effect"), and policy_reversal
+# framing all signal critical stance. Path L detects the divergence
+# between headline VADER and body VADER as evidence of quote inflation,
+# then overrides with a framing-derived negative score.
+
+GIZMODO_MUSE_SCRAPPED_HEADLINE = (
+    "Meta Scraps Its AI Image Generator After Three Days"
+)
+
+GIZMODO_MUSE_SCRAPPED_TEXT = """
+In what may set a world record for the shortest-lived product launch
+in Big Tech history, Meta has pulled its Muse Image AI image generator
+just three days after making it available to users. The tool, which
+Meta described as "a creative partner that knows your world, making it
+easy to turn your ideas into high-quality visuals," was quietly removed
+on Friday after a wave of criticism.
+
+The backlash centered on Muse Image's default behavior of pulling face
+data from users' photo libraries without explicit opt-in consent. Privacy
+researchers immediately flagged the practice, and SAG-AFTRA issued a
+statement calling it "a direct threat to performers' likeness rights."
+
+Meta said in a blog post that it had "heard the feedback" and that the
+tool was "no longer available" while the company "refines the experience."
+The company emphasized that no face data had been stored permanently and
+that the feature had been designed to "put creative control in users'
+hands."
+
+But critics weren't buying it. "This is the Ghibli Meme Effect all over
+again," said one AI ethics researcher, referring to the viral Studio
+Ghibli-style image generation trend that raised similar consent questions
+earlier this year. "You launch first, apologize later, and hope nobody
+remembers by next quarter."
+
+According to Reuters, Meta had internally debated the consent model for
+months before launch, with some engineers advocating for explicit opt-in.
+The company chose the default-on approach to maximize engagement, a
+decision that one former employee described as "predictable."
+
+The rapid reversal marks yet another stumble in Meta's AI rollout
+strategy. The company has faced sustained criticism over its approach
+to AI safety, content moderation, and user consent — a pattern that
+privacy advocates say shows no signs of changing.
+"""
+
+
 def analyze_with_details(text: str, headline: str, label: str) -> None:
     """Run the full analysis pipeline and print correction details."""
 
@@ -218,7 +274,7 @@ def analyze_with_details(text: str, headline: str, label: str) -> None:
 
     # Adversarial device count (the ones that trigger correction)
     # Canonical adversarial device types — must match sentiment.py's
-    # _ADVERSARIAL_DEVICE_TYPES (16 types as of Jul 2026).
+    # _ADVERSARIAL_DEVICE_TYPES (31 types as of Jul 2026).
     adversarial_types = {
         "loaded_language", "emotional_appeal", "guilt_by_association",
         "catastrophizing", "power_asymmetry", "isolation_framing",
@@ -280,13 +336,15 @@ def main():
     print("stance is adversarial. MediaScope detects structural framing signals")
     print("and corrects the tone score.")
     print()
-    print("Three articles demonstrate the correction pipeline:")
+    print("Four articles demonstrate the correction pipeline:")
     print("  1. NYT 'U.S. Presses Meta on AI Reviews'")
-    print("     → Isolation framing + pressure language")
+    print("     → Isolation framing + pressure language (Path A)")
     print("  2. NYT 'Meta AI Making Employees Miserable'")
-    print("     → Active-negative agency + workplace coercion")
+    print("     → Active-negative agency + workplace coercion (Path A)")
     print("  3. Wired 'Meta Exposed Employee Badge Data'")
-    print("     → CEO personalization + self-referential investigation + kicker")
+    print("     → CEO personalization + self-referential investigation + kicker (Path A/C)")
+    print("  4. Gizmodo 'Meta Scraps Muse Image'")
+    print("     → Quote-inflated body with negative headline (Path L)")
 
     analyze_with_details(
         NYT_AI_REVIEWS_TEXT,
@@ -304,6 +362,12 @@ def main():
         WIRED_MCI_TEXT,
         WIRED_MCI_HEADLINE,
         "Article 3: Wired — Meta Exposed Employee Badge Data",
+    )
+
+    analyze_with_details(
+        GIZMODO_MUSE_SCRAPPED_TEXT,
+        GIZMODO_MUSE_SCRAPPED_HEADLINE,
+        "Article 4: Gizmodo — Meta Scraps Muse Image (Path L)",
     )
 
     # ---- Summary ----

@@ -1818,6 +1818,62 @@ class TestCorrectionPathDocumentation:
             f"Update the test count line in sarcastic_editorial_demo.py."
         )
 
+    def test_no_stale_inline_path_ranges(self):
+        """All inline path range mentions must end at the current max path letter.
+
+        Catches stale references like '(A–F, H–K)' when the actual range
+        extends to L.  Scans docs/ and examples/ for any interrupted range
+        pattern '(A–X, H–Y)' or simple range '(A–Y)' where Y is not the
+        current maximum path letter.
+        """
+        label = self._path_range_label()
+        max_letter = sorted(self.EXPECTED_PATHS)[-1]
+        stale_hits: list[str] = []
+
+        # Scan docs/ and examples/ for path range patterns
+        for search_dir in ("docs", "examples"):
+            dir_path = _REPO_ROOT / search_dir
+            if not dir_path.exists():
+                continue
+            for fpath in dir_path.iterdir():
+                if fpath.suffix not in (".md", ".py", ".yaml", ".yml"):
+                    continue
+                content = fpath.read_text()
+                # Match interrupted ranges like "(A–F, H–K)" or "(A-F, H-K)"
+                for m in re.finditer(
+                    r"\([A-Z][–\-][A-Z],\s*[A-Z][–\-]([A-Z])\)", content
+                ):
+                    end_letter = m.group(1)
+                    if end_letter != max_letter:
+                        stale_hits.append(
+                            f"{fpath.name}: '{m.group(0)}' ends at "
+                            f"{end_letter} but max path is {max_letter}"
+                        )
+
+        assert not stale_hits, (
+            f"Found stale inline path ranges (expected max path {max_letter}):\n"
+            + "\n".join(f"  • {h}" for h in stale_hits)
+        )
+
+    def test_framing_demo_docstring_lists_all_paths(self):
+        """framing_correction_demo.py docstring must list every correction path.
+
+        The demo docstring enumerates 'Path X: description' lines.  All
+        expected paths must appear so users see the complete set.
+        """
+        demo = (
+            _REPO_ROOT / "examples" / "framing_correction_demo.py"
+        ).read_text()
+        # Extract path letters from docstring lines like "        Path L: ..."
+        docstring_paths = set(
+            re.findall(r"^\s+Path ([A-Z]):", demo, re.MULTILINE)
+        )
+        missing = self.EXPECTED_PATHS - docstring_paths
+        assert not missing, (
+            f"framing_correction_demo.py docstring is missing paths: "
+            f"{sorted(missing)}. Add 'Path X: description' lines for each."
+        )
+
 
 class TestJournalistCountConsistency:
     """Guard against stale journalist counts across documentation files.
