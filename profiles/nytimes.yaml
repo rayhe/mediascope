@@ -26,11 +26,13 @@ ownership_chain:
   - name: "The New York Times Company"
     entity_type: "parent_company"
     description: >
-      Publicly traded (NYSE: NYT). Market cap ~$11.87B (Jul 11, 2026). Stock $74.96/share (Jul 11, 2026 close).
-      52-week range: $51.03–$87.10. Beta: 0.94. Quarterly dividend $0.23/share (payable Jul 23, 2026).
+      Publicly traded (NYSE: NYT). Market cap ~$11.87B (Jul 11, 2026). Stock $75.04/share (Jul 11, 2026 close).
+      52-week range: $51.03–$87.10. All-time high: $82.74 (Mar 5, 2026). Beta: 0.94.
+      Quarterly dividend $0.23/share (payable Jul 23, 2026).
       Q2 2026 earnings: Aug 5, 2026 (confirmed per MarketBeat). Consensus estimates: FY2026 EPS $2.93, FY2027 $3.22.
+      P/E ratio: 32.20 (Jul 12). Dividend yield: 1.03%.
       TTM revenue: $2.8B. TTM net income: $344M. Operating cash flow: $584.5M. Net margin: 12.2%.
-      Analyst consensus target: $83.22 (+11.0% upside from $74.96). Ratings: 0 Sell, 6 Hold, 4 Buy, 1 Strong Buy.
+      Analyst consensus target: $83.22 (+11.0% upside from $75.04). Ratings: 0 Sell, 6 Hold, 4 Buy, 1 Strong Buy.
       Dual-class share structure gives Sulzberger family control despite ~11% economic ownership.
       95.37% of Class A stock held by institutional investors.
       Annual meeting April 22, 2026: all directors re-elected, EY ratified as auditor,
@@ -170,21 +172,179 @@ institutional_shareholders:
 # INSIDER TRANSACTIONS — added 2026-07-05
 # ===================================================================
 insider_transactions:
+  # ===================================================================
+  # COMPLETE 2026 YTD INSIDER TRANSACTION LOG — updated 2026-07-14
+  # ALL SELLS, ZERO BUYS. See analytical_note below.
+  # Sources: SEC EDGAR Form 4 filings, MarketBeat, Simply Wall St
+  # ===================================================================
+  - officer: "Meredith Kopit Levien"
+    title: "President & CEO"
+    transaction_type: "Sale (Form 4)"
+    date: "2026-03-03"
+    shares_sold: 51949
+    price_per_share: "$79.95 (weighted avg)"
+    total_value: "$4,153,322"
+    shares_remaining: "undisclosed (see May transaction)"
+    sec_filing: "Form 4 filed Mar 3, 2026"
+    source_url: "https://simplywall.st/stocks/us/media/nyse-nyt/new-york-times/ownership"
+    notes: >
+      LARGEST SINGLE INSIDER SALE IN 2026. Levien disposed 51,949 Class A shares at
+      ~$79.95/share. Combined with May 12 sale, Levien has sold 61,699 shares in 2026
+      totaling ~$4.8M. Levien's total 24-month sales: ~$5.14M (MarketBeat). Likely
+      10b5-1 pre-planned, but timing is notable: shares at ~$80, near 52-week high of
+      $87.10 (hit Mar 5, two days later).
+    last_updated: "2026-07-14"
+  - officer: "Arthur G. Sulzberger"
+    title: "Chairman & Publisher"
+    transaction_type: "Sale (Form 4)"
+    date: "2026-03-03"
+    shares_sold: 13000
+    price_per_share: "$79.95"
+    total_value: "$1,039,350"
+    shares_remaining: 172338
+    sec_filing: "Form 4 filed Mar 3, 2026"
+    source_url: "https://www.marketbeat.com/stocks/NYSE/NYT/insider-trades/"
+    notes: >
+      Sulzberger's only 2026 transaction. Retains 172,338 shares (~$12.9M at current
+      price). 7.01% reduction in personal position. As controlling family chairman, any
+      sell signals bear watching. Position value still substantial.
+    last_updated: "2026-07-14"
+  - officer: "William Bardeen"
+    title: "EVP & CFO"
+    transaction_type: "Sale (Form 4)"
+    date: "2026-03-03"
+    shares_sold: 13000
+    price_per_share: "$79.56"
+    total_value: "$1,034,280"
+    shares_remaining: "18,681 (pre-May sale)"
+    sec_filing: "Form 4 filed Mar 3, 2026"
+    source_url: "https://www.marketbeat.com/stocks/NYSE/NYT/insider-trades/"
+    notes: >
+      Same-day sale as Sulzberger and Levien — coordinated 10b5-1 execution window.
+      Bardeen sold additional 4,121 shares May 12 (see below). 24-month total:
+      $1,896,495 across three transactions.
+    last_updated: "2026-07-14"
+  - officer: "Diane Brayton"
+    title: "EVP & General Counsel"
+    transaction_type: "Sale (Form 4)"
+    date: "2026-02-20"
+    shares_sold: 4600
+    price_per_share: "$73.57 (weighted avg)"
+    total_value: "$300,762"
+    sec_filing: "Form 4 filed Feb 20, 2026"
+    source_url: "https://simplywall.st/stocks/us/media/nyse-nyt/new-york-times/ownership"
+    notes: >
+      General Counsel selling shares is analytically notable in context of active
+      OpenAI/Microsoft copyright litigation. Sale likely pre-planned (10b5-1) but
+      represents the legal team's own assessment of company valuation.
+    last_updated: "2026-07-14"
+  - officer: "R. Anthony Benten"
+    title: "CAO"
+    transaction_type: "Sale (Form 4)"
+    date: "2026-02-17"
+    shares_sold: 1913
+    price_per_share: "$73.57"
+    total_value: "$140,739"
+    sec_filing: "Form 4 filed Feb 17, 2026"
+    source_url: "https://www.marketbeat.com/stocks/NYSE/NYT/insider-trades/"
+    notes: >
+      Smallest 2026 insider transaction. Routine CAO sale.
+    last_updated: "2026-07-14"
+  - officer: "David S. Perpich"
+    title: "Director"
+    transaction_type: "Sale (Form 4)"
+    date: "2026-05-11"
+    shares_sold: 9000
+    price_per_share: "$77.06"
+    total_value: "$693,540"
+    shares_remaining: 28469
+    sec_filing: "Form 4 filed May 11, 2026"
+    source_url: "https://www.marketbeat.com/stocks/NYSE/NYT/insider-trades/"
+    notes: >
+      24.02% reduction in personal position. Perpich is Director and EVP of Product
+      & Technology (runs NYT digital products including Games, Cooking, Athletic).
+      Sold within a week of Q1 2026 earnings beat (May 6). Retained 28,469 shares
+      (~$2.14M).
+    last_updated: "2026-07-14"
+  - officer: "Meredith Kopit Levien"
+    title: "President & CEO"
+    transaction_type: "Sale (Form 4)"
+    date: "2026-05-12"
+    shares_sold: 9750
+    price_per_share: "$77.85 (weighted avg)"
+    total_value: "$648,630"
+    sec_filing: "Form 4 filed May 12, 2026"
+    source_url: "https://simplywall.st/stocks/us/media/nyse-nyt/new-york-times/ownership"
+    notes: >
+      Second 2026 CEO sale, one week after Q1 earnings beat. Combined 2026 total:
+      61,699 shares, ~$4.8M. Both sales at prices near recent highs ($77-80 range).
+    last_updated: "2026-07-14"
+  - officer: "William Bardeen"
+    title: "EVP & CFO"
+    transaction_type: "Sale (Form 4)"
+    date: "2026-05-12"
+    shares_sold: 4121
+    price_per_share: "$77.85"
+    total_value: "$320,820"
+    shares_remaining: 14560
+    sec_filing: "Form 4 filed May 12, 2026"
+    source_url: "https://www.marketbeat.com/stocks/NYSE/NYT/insider-trades/"
+    notes: >
+      22.06% reduction from pre-trade position. CFO Bardeen has sold in both March
+      and May 2026 execution windows. Post-trade position 14,560 shares (~$1.09M).
+    last_updated: "2026-07-14"
   - officer: "Jacqueline M. Welch"
     title: "EVP & Chief Human Resources Officer"
     transaction_type: "Sale (Form 4)"
     date: "2026-06-03"
     shares_sold: 4000
-    price_per_share: "$74.137 (weighted average)"
+    price_per_share: "$74.14"
+    total_value: "$296,560"
     shares_remaining: 23873
     sec_filing: "Form 4 filed Jun 3, 2026"
     source_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000071691&type=4&dateb=&owner=include&count=40"
     notes: >
-      Routine insider sale by C-suite officer. Welch sold 4,000 Class A shares at a
-      weighted average of $74.137/share (~$296,548 total). Retains 23,873 shares
-      (~$1.77M at current price). No unusual pattern — likely part of a 10b5-1 plan.
-      Only SEC Form 4 filing for NYT officers since June 1, 2026.
-    last_updated: "2026-07-05"
+      14.35% decrease in personal position. Most recent insider transaction.
+      Retains 23,873 shares (~$1.79M at current price).
+    last_updated: "2026-07-14"
+
+  # INSIDER PATTERN ANALYSIS (2026 YTD)
+  insider_pattern_analysis:
+    period: "2026-01-01 to 2026-07-14"
+    total_transactions: 9
+    total_shares_sold: 111333
+    total_value_sold: "$8,628,003"
+    total_shares_bought: 0
+    total_value_bought: "$0"
+    unique_sellers: 7
+    pattern: "ALL_SELL_ZERO_BUY"
+    description: >
+      ANALYTICAL SIGNIFICANCE: In 2026 YTD, 7 unique insiders (including CEO, Chairman,
+      CFO, General Counsel, CHRO, CAO, and a Director) executed 9 separate sell transactions
+      totaling $8.6M+ in shares sold, with ZERO insider purchases. Over the full 24-month
+      lookback, the pattern is identical: 84,324+ shares sold for $5.7M+ across 6 unique
+      sellers with zero buys (MarketBeat data, which may undercount the Simply Wall St
+      Levien/Brayton transactions).
+
+      This all-sell pattern has specific implications for MediaScope's conflict analysis:
+      (1) If NYT management believed the $28M+ OpenAI litigation would produce a massive
+          settlement or licensing windfall, rational insiders would at minimum HOLD shares.
+          The sell-through suggests management is NOT pricing in a transformative legal
+          outcome. This is consistent with rational expectations: copyright statutory damages
+          are modest per-infringement, and fair use remains a real defense.
+      (2) The Mar 3 coordinated sell window (Levien $4.15M + Sulzberger $1.04M + Bardeen
+          $1.03M = $6.22M in one day) occurred 2 days before the all-time high of $82.74
+          (Mar 5). Either excellent 10b5-1 timing or informed selling near the peak.
+      (3) The May 11-12 cluster (Perpich + Levien + Bardeen = $1.66M in 2 days) came
+          immediately after Q1 earnings beat — selling into good news rather than holding.
+      (4) Brayton (General Counsel) selling Feb 20 is notable given active litigation
+          oversight — she is the executive most directly informed about case prospects.
+      (5) Insiders own only 1.90% of Class A stock, so even collectively, insider
+          transactions are not market-moving. The signal is in the pattern, not the volume.
+    source_urls:
+      - "https://www.marketbeat.com/stocks/NYSE/NYT/insider-trades/"
+      - "https://simplywall.st/stocks/us/media/nyse-nyt/new-york-times/ownership"
+    last_updated: "2026-07-14"
 
 # ===================================================================
 # LEGAL COUNSEL CROSS-REPRESENTATION — new section, 2026-07-10
@@ -660,7 +820,14 @@ revenue_relationships:
       revenue goals (WSJ). Falling behind Anthropic in business/coding tools market. Pivoted
       to enterprise coding "superapp" (launched Jul 10, same day as Simo departure).
       Revenue: ~$2B/month (~$24B annualized). 900M weekly active users, 50M+ paid subscribers.
-      Introduced ads to ChatGPT under Simo's leadership.
+      Introduced ads to ChatGPT under Simo's leadership. PROJECTED $14B NET LOSS IN 2026
+      (internal documents, Inc. Jun 2026). Not expected to be profitable until 2029-2030.
+      BofA BROADER AI CAPITAL CONTEXT: BofA has helped raise nearly $500B in capital for
+      AI-related companies since 2025, accounting for 60% of such fundraising across
+      investment-grade debt, leveraged finance, and equity capital markets (Reuters/
+      internal BofA data Jul 9). This positions the entire banking establishment as
+      financially aligned with AI companies — creating structural incentive to minimize
+      publisher copyright claims that could impair AI company valuations and deal flow.
       
       IPO creates THREE specific implications for NYT litigation:
       (a) MANDATORY RISK DISCLOSURE: OpenAI's S-1/prospectus MUST disclose the NYT lawsuit
