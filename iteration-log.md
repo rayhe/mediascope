@@ -1,4 +1,65 @@
 # MediaScope Iteration Log
+## 2026-07-14 13:00 PT — Type C: Ownership & Funding Deep Dive (PMC Layoff Pattern + PAG New 52-Week High + Cross-Portfolio Stock Update)
+
+**Commit:** `a893d66` — "Type C: PMC layoff pattern (Dec 2025–Jan 2026), PAG new 52-week high, VSEAT update (Jul 14)"
+
+### Focus: PMC workforce contraction pattern extending into The Verge, PAG wealth divergence
+
+Selected The Verge/PMC for deep dive — most recent Type C for this publication was Jul 14 at 09:00 (IPEC trademark + Wired UK print ending). This iteration focuses on the workforce contraction pattern that bridges the Vox Media → PMC ownership transition.
+
+### 1. PMC Layoff Pattern (Dec 2025–Jan 2026) — NEW SECTION
+
+Previously untracked in the profile. Compiled from TheWrap, Press Gazette, and TechinBengali reporting.
+
+**December 2025:** Piecemeal layoffs across PMC's entertainment trades before the holidays:
+- Rolling Stone: 11-year writer Brittany Spanos, Andre Gee
+- Variety: Senior writer Adam B. Vary, associate news editor J. Kim Murphy
+- Billboard: Editors at large Robert Levine + Steve Knopper, senior director Dave Brooks, lead analyst Glenn Peoples, executive editor Frank DiGiacomo
+- Followed September 2025 Rolling Stone cuts (executive digital director Lisa Tozzi, chief TV critic Alan Sepinwall)
+
+**January 2026:** Vox Media Union confirmed 8+ unionized employees cut:
+- 2 from The Verge (including gaming specialist Ash Parrish, ex-Kotaku)
+- 3 from PopSugar
+- 3 from Eater
+- Plus "a number of out-of-unit employees"
+- Vox Media Union: company has "laid off workers at an average of once per quarter in the last year"
+
+**Analytical significance (4 points):**
+- RTO mandate (Oct 4) + Dec-Jan layoffs = two-stage workforce reduction (attrition then cuts)
+- Ash Parrish removal eliminated last dedicated gaming specialist after Polygon sale (May 2025)
+- CBA successor clause (§39) required union layoff compliance (2 weeks notice + 12 weeks severance)
+- Pre-acquisition cuts may have been designed to reduce headcount before PMC's June 2026 full acquisition
+
+### 2. PAG Stock at New 52-Week High
+
+**File:** `profiles/the-verge.yaml` → Penske Family section
+- PAG: $193.68 (Jul 14) — broke above prior 52-week high of $189.51
+- Rally: ~5.5% in one week (up from $183.65 on Jul 7)
+- Market cap: ~$11.9B
+- Q2 2026 earnings: Jul 29. Q2 consensus EPS: $3.39 (range $3.30–$3.48, 5 estimates)
+- FY 2026 consensus revised slightly down: $13.46 (from $13.60), range $13.30–$13.68
+
+**Wealth divergence note added:** PAG's new 52-week high occurs simultaneously with PMC's editorial workforce contraction — Roger Penske's automotive empire gains value while Jay Penske's media empire cuts staff.
+
+### 3. Vivid Seats (VSEAT) Stock Update
+
+- VSEAT: $6.98 (Jul 14, up from $6.75 on Jul 7)
+- Still down ~96% from SPAC peak ($41.20 52-week high)
+- Q2 2026 earnings: Aug 4
+
+### 4. Cross-Portfolio Context (Advance/Competitor Landscape)
+
+Not in The Verge profile directly, but researched for competitive context:
+- RDDT: $202.92 (+0.99%) — Advance stake ~$8.56B
+- CHTR: $127.90 (-2.64%) — approaching 52-week low ($124.05). Goldman Sachs SELL with $125 PT (Jul 2). Barclays Underweight $130 PT (Jul 8). Consensus: "Reduce" (6 Sell, 8 Hold, 5 Buy). Q2 Jul 24.
+- WBD: $27.49 (+1.46%) — 12-AG lawsuit filed Jul 13 to block $110B WBD-Paramount merger. CA AG Rob Bonta leading. DOJ had cleared deal. Combined entity would control 27% film distribution, 30% blockbuster releases, 27% basic cable. Paramount faces $650M/quarter fees if deal doesn't close before October.
+- Advance Total Public Equity: ~$13.83B (down from $13.89B, driven by CHTR decline)
+
+### Verification
+- All 2,603 tests pass ✅
+- Pushed to GitHub ✅
+
+---
 ## 2026-07-14 12:20 PT — Type B: Journalist Research (Gideon Lichfield Deep Sourcing)
 
 **Commit:** `0056768` — "Type B: Gideon Lichfield deep sourcing — 9 events with source URLs, publication slug fix, enriched notes"
