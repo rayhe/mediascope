@@ -22,7 +22,7 @@ The goal is not perfect automation. It is *reliable flagging* — surfacing arti
 
 VADER (Valence Aware Dictionary and sEntiment Reasoner) reads individual words and short phrases, not editorial intent. Professional journalism uses measured, confident, active language — "major step forward," "unprecedented scale," "innovative approach" — that VADER scores as positive *regardless of whether the article approves or condemns the subject*.
 
-This creates **polarity inversion**: VADER assigns a positive raw score to an article whose editorial stance is clearly negative. Of the 176 manually annotated articles in MediaScope's corpus, **at least 20 exhibit documented polarity inversion** where VADER's raw score is positive (+0.30 to +0.99) but the true editorial tone is negative (−0.20 to −0.72).
+This creates **polarity inversion**: VADER assigns a positive raw score to an article whose editorial stance is clearly negative. Of the 177 manually annotated articles in MediaScope's corpus, **at least 20 exhibit documented polarity inversion** where VADER's raw score is positive (+0.30 to +0.99) but the true editorial tone is negative (−0.20 to −0.72).
 
 ### Why It Happens
 
@@ -79,7 +79,7 @@ Article genre is the strongest predictor of toolkit accuracy. The table below su
 
 ### Accuracy by the Numbers
 
-From the 176 annotated articles:
+From the 177 annotated articles:
 
 - **32 articles** (18%) required framing correction — correction paths fired and improved accuracy
 - **20 articles** (11%) had documented VADER polarity inversion — raw score wrong direction

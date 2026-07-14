@@ -281,7 +281,7 @@ Default storage is SQLite (`mediascope.db` in working directory). For production
 
 ### Custom Entity Clusters
 
-Define entity clusters in publication profiles or pass custom clusters to `detect_entities()`. See [ENTITY_REFERENCE.md](ENTITY_REFERENCE.md) for the complete quick-reference card with all 86 clusters, 866 aliases, disambiguation filters, and pipeline interactions, and [METHODOLOGY.md §15](METHODOLOGY.md#15-entity-detection--cluster-reference) for the cluster reference table with analytical categories and growth history.
+Define entity clusters in publication profiles or pass custom clusters to `detect_entities()`. See [ENTITY_REFERENCE.md](ENTITY_REFERENCE.md) for the complete quick-reference card with all 87 clusters, 871 aliases, disambiguation filters, and pipeline interactions, and [METHODOLOGY.md §15](METHODOLOGY.md#15-entity-detection--cluster-reference) for the cluster reference table with analytical categories and growth history.
 
 ```python
 custom_clusters = {
@@ -454,8 +454,8 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
-│   └── sample_output/       # 176 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2532 tests across 114 test files (all from real articles)
+│   └── sample_output/       # 177 annotated real-article analyses (see METHODOLOGY.md §17)
+├── tests/                       # 2556 tests across 115 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -560,6 +560,7 @@ mediascope/
 │   ├── test_zuckerberg_ai_agents_same_event.py # Reuters vs Barron's same-event comparison on Zuckerberg AI agent admission (Jul 2, 2026 town hall): emotion_attribution framing device (new — editorial attribution of emotional states never expressed by subject), competitive_deficit detection, confession_framing divergence, entity detection (Claude Code, Alexandr Wang, Muse/Spark), topic classification, source extraction (documentary "recording heard by Reuters"), same-event framing divergence analysis
 │   ├── test_reuters_rust_belt_jul9.py # Reuters Big Tech data centers Rust Belt factories Jul 9: heritage_nostalgia framing device (new — age/generational continuity establishing emotional stakes), source false positive elimination (Capacity/Energy Consumers/White House/Synergy Research/Smart Electric Power), Pattern 0f affiliation extraction ("president of the trade group Industrial Energy Consumers of America"), environmental domain keyword in affiliation patterns, infrastructure_energy topic assignment
 │   ├── test_reuters_scam_ads_securities_jul13.py # Reuters Meta scam ads securities defense Jul 13: power_asymmetry personal-loss savings narrative ("retirement savings"), loaded_language additions ("depressingly", "peculiar"), self_referential_investigation "my [Publication] colleagues" pattern (with source_publication wire-service filter), editorial_dramatization literary-aside undercut ("— while it lasted"), rhetorical_question "Should [entity]... hinge" pattern, entity extraction (Meta cluster with Facebook/Instagram/WhatsApp subsidiaries), sentiment negative lean
+│   ├── test_reuters_australia_esafety_child_safety_jul14.py # Reuters Australia eSafety child safety Jul 14: iMessage → Apple cluster (new alias), Google Messages → Google cluster (new alias), Discord cluster (new), Julie Inman Grant → Australia cluster (new alias), multi-entity distribution (7+ clusters, Australia primary), framing: no_comment_implication, regulatory_shadow, scale_magnitude, catastrophizing
 │   ├── test_reuters_iris_chip_jul9.py # Reuters Meta Iris chip production Jul 9: Sumitomo Electric entity cluster (new), inverted analyst attribution ("Morgan Stanley analysts said"), compound no-comment subject extraction ("Samsung Electronics and Sumitomo Electric did not respond"), "floundered" passive framing term, ai_development + corporate_strategy topic classification
 │   ├── test_reuters_muse_spark_11_jul9.py # Reuters Muse Spark 1.1 developer preview Jul 9: pathologizing_metaphor "intervention" false positive suppression (neutral technical context — "less human intervention", "without intervention"), pricing comparison phrases in NEGATIVE_COMPARISON/POSITIVE_COMPARISON ("above openai", "below anthropic", "priced above/below", "cheaper than", "undercuts"), loaded_language competitive dramatization ("heated competition", "AI supremacy", "tech arms race"), competitive_positioning "pitting...against" and "close/narrow the gap"
 │   ├── test_recovery_narrative.py # Recovery narrative framing device (#94): three-beat decline→catalyst→recovery structure in financial articles, bidirectional competitive_positioning (positive parity variant), confidence scoring, negative guards for neutral wire articles and decline-only articles; discovered from MarketWatch Meta stock rebound article (Jul 10, 2026)

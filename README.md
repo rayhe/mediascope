@@ -18,7 +18,7 @@ This is not an attack tool. It works equally well pointed at Fox News covering r
 ## What It Does
 
 1. **Ingests articles** from any publication via RSS feeds and web scraping
-2. **Detects entities** mentioned in coverage (companies, executives, products) using 86 clusters with 866 aliases and disambiguation filters (see [docs/ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md))
+2. **Detects entities** mentioned in coverage (companies, executives, products) using 87 clusters with 871 aliases and disambiguation filters (see [docs/ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md))
 3. **Classifies topics** into 29 standardized buckets for apples-to-apples comparison across companies (see [docs/TOPIC_REFERENCE.md](docs/TOPIC_REFERENCE.md))
 4. **Analyzes sentiment** using an 8-dimension scoring framework (not just positive/negative)
 5. **Calculates asymmetry** — is Company X covered more negatively than peers, with statistical significance?
@@ -41,13 +41,13 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 
 | Component | Count | Notes |
 |---|---|---|
-| Entity clusters | 86 | 866 aliases, 63 with custom regex, 23 auto-generated |
+| Entity clusters | 87 | 871 aliases, 64 with custom regex, 23 auto-generated |
 | Framing device types | 102 | 10 core + 85 extended + 7 structural (post-pass) |
 | Framing patterns | 673 | Compiled regex patterns across 95 pattern-based types |
 | Emotional language terms | 1022 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 31 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 12 | Paths A–L, each addressing a specific VADER failure mode |
-| Annotated articles | 176 | Full manual analysis in `examples/sample_output/` |
+| Annotated articles | 177 | Full manual analysis in `examples/sample_output/` |
 | Journalists tracked | 231 | Career data with source URLs |
 | Career-entry migrations | 917 | Across 425 distinct publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
@@ -271,7 +271,7 @@ Statistical methodology is documented at academic quality in [docs/METHODOLOGY.m
 | [FRAMING_REFERENCE.md](docs/FRAMING_REFERENCE.md) | **Quick-reference card for all 102 framing device types** — scannable lookup during article analysis |
 | [TOPIC_REFERENCE.md](docs/TOPIC_REFERENCE.md) | **Quick-reference card for all 29 topic buckets** — boundary rules, adjacency warnings, genre detection triggers |
 | [SOURCE_ANALYSIS_REFERENCE.md](docs/SOURCE_ANALYSIS_REFERENCE.md) | **Quick-reference card for source extraction, stance analysis, outsourced intensity, and active-negative agency** — 14 pattern groups, 10 source types, failure modes |
-| [ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md) | **Quick-reference card for all 86 entity clusters (866 aliases)** — disambiguation filters, cluster categories, custom regex patterns, pipeline interactions |
+| [ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md) | **Quick-reference card for all 87 entity clusters (871 aliases)** — disambiguation filters, cluster categories, custom regex patterns, pipeline interactions |
 | [SENTIMENT_CORRECTION_REFERENCE.md](docs/SENTIMENT_CORRECTION_REFERENCE.md) | **Quick-reference card for all 12 sentiment correction paths (A–L)** — trigger conditions, blend formulas, validation articles, path selection flowchart |
 | [ACCURACY_GUIDE.md](docs/ACCURACY_GUIDE.md) | **Practical accuracy reference** — when to trust scores, genre-specific accuracy, known failure modes, decision tree for interpreting results, common misinterpretation patterns |
 | [CROSS_PUBLICATION_REFERENCE.md](docs/CROSS_PUBLICATION_REFERENCE.md) | **Quick-reference card for same-event cross-publication comparison** — the most powerful evidence technique; 7-dimension matrix, wire-service baseline method, editorial mode taxonomy, 13 validated comparison clusters |
@@ -461,7 +461,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **2532 tests** across 114 test files, each covering a different analytical capability:
+MediaScope has **2556 tests** across 115 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -568,6 +568,7 @@ MediaScope has **2532 tests** across 114 test files, each covering a different a
 | `test_zuckerberg_ai_agents_same_event.py` | 37 | Reuters vs Barron's same-event comparison on Zuckerberg AI agent admission (Jul 2, 2026 town hall): emotion_attribution framing device (new — editorial attribution of emotional states never expressed by subject, with parametrized true/false-positive tests), competitive_deficit detection, confession_framing divergence, entity detection (Claude Code, Alexandr Wang, Muse/Spark), topic classification, source extraction (documentary "recording heard by Reuters"), same-event framing divergence analysis |
 | `test_reuters_rust_belt_jul9.py` | 33 | Reuters Big Tech data centers Rust Belt factories Jul 9: heritage_nostalgia framing device (new — age/generational continuity establishing emotional stakes), source false positive elimination (Capacity/Energy Consumers/White House/Synergy Research/Smart Electric Power), Pattern 0f affiliation extraction ("president of the trade group Industrial Energy Consumers of America"), environmental domain keyword in affiliation patterns, infrastructure_energy topic assignment |
 | `test_reuters_scam_ads_securities_jul13.py` | 17 | Reuters Meta scam ads securities defense Jul 13: power_asymmetry personal-loss savings narrative ("retirement savings"), loaded_language additions ("depressingly", "peculiar"), self_referential_investigation "my [Publication] colleagues" pattern (with source_publication wire-service filter), editorial_dramatization literary-aside undercut ("— while it lasted"), rhetorical_question "Should [entity]... hinge" pattern, entity extraction (Meta cluster with Facebook/Instagram/WhatsApp subsidiaries), sentiment negative lean |
+| `test_reuters_australia_esafety_child_safety_jul14.py` | 24 | Reuters Australia eSafety child safety Jul 14: iMessage → Apple cluster (new alias), Google Messages → Google cluster (new alias), Discord cluster (new), Julie Inman Grant → Australia cluster (new alias), multi-entity distribution (7+ clusters, Australia primary), framing: no_comment_implication, regulatory_shadow, scale_magnitude, catastrophizing |
 | `test_reuters_iris_chip_jul9.py` | 20 | Reuters Meta Iris chip production Jul 9: Sumitomo Electric entity cluster (new), inverted analyst attribution ("Morgan Stanley analysts said"), compound no-comment subject extraction ("Samsung Electronics and Sumitomo Electric did not respond"), "floundered" passive framing term, ai_development + corporate_strategy topic classification |
 | `test_reuters_muse_spark_11_jul9.py` | 23 | Reuters Muse Spark 1.1 developer preview Jul 9: pathologizing_metaphor "intervention" false positive suppression (neutral technical context — "less human intervention", "without intervention", "minimal/no/reduced intervention"), pricing comparison phrases in NEGATIVE_COMPARISON/POSITIVE_COMPARISON ("above openai", "below anthropic", "priced above/below", "cheaper than", "undercuts"), loaded_language competitive dramatization ("heated competition/race", "AI supremacy", "tech arms race"), competitive_positioning "pitting...against" and "close/narrow the gap" |
 | `test_recovery_narrative.py` | 10 | Recovery narrative framing device (#94): three-beat decline→catalyst→recovery structure in financial articles, bidirectional competitive_positioning (positive parity variant), confidence scoring, negative guards for neutral wire articles and decline-only articles; discovered from MarketWatch Meta stock rebound article (Jul 10, 2026) |

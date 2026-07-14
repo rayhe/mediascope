@@ -1,4 +1,82 @@
 # MediaScope Iteration Log
+## 2026-07-14 05:00 PT — Type A: Article Deep Dive (Reuters Australia eSafety Child Safety — Entity Gap Fixes)
+
+**Commit:** (pending) — "Type A: Reuters Australia eSafety child safety annotation, 4 entity gap fixes (+1 new cluster), 24 new tests"
+
+### Focus: Multi-Entity Regulatory Coverage + Product-Level Entity Detection
+
+Selected Reuters wire report "Australia finds serious gaps in Big Tech response to online child sexual abuse" (published Jul 14, 2026). The article covers Australia's eSafety Commissioner Julie Inman Grant releasing the third transparency report under the Basic Online Safety Expectations framework, finding "significant gaps" in how Apple, Meta, Google, Snap, Microsoft, and Discord handle CSAM, grooming, and sexual extortion.
+
+### Entity Gaps Discovered & Fixed (4 aliases added, 1 new cluster)
+
+The article exposed product-level entity detection gaps — individual messaging products named in the eSafety report were invisible to the toolkit:
+
+| Gap | Fix | Cluster | Impact |
+|---|---|---|---|
+| `iMessage` not in any cluster | Added to Apple aliases + regex | Apple | Product named in reporting-tool gaps paragraph; without it, Apple under-counted |
+| `Google Messages` not in any cluster | Added to Google aliases + regex (priority match before exclusion) | Google | Product named alongside WhatsApp, iMessage, Discord |
+| `Discord` not in any cluster | **New cluster** with custom regex | Discord | Gaming/communication platform appearing in child safety, moderation coverage |
+| `Julie Inman Grant` not matched | Added to Australia cluster aliases + regex | Australia | Named commissioner appeared in 3+ prior eSafety articles undetected |
+
+### Article Analysis Summary
+
+- **Genre:** Wire-service regulatory news (unbylined Reuters)
+- **Primary entity:** Australia (8 mentions — regulator is the actor, not the target)
+- **Entity distribution:** 8 clusters detected (Australia 8, Meta 5, Google 4, Apple 3, Snap 3, Media/Publications 3, Microsoft 2, Discord 2)
+- **Framing devices:** 14 detected (12 true positives, 2 false positives — 86% precision)
+- **Sentiment:** Moderately negative (-0.35 to -0.45) — negativity from subject matter, not editorial bias
+- **Source balance:** 4 regulator/report quotes vs. 0 company quotes (all 5 companies declined comment)
+- **Key finding:** Multi-entity regulatory article with distributed blame — no single company singled out. Wire-service "did not immediately respond" is less adversarial than editorial "declined to comment"
+
+### Changes
+
+1. **`mediascope/analyze/entities.py`:**
+   - Apple cluster: added `iMessage` to aliases + regex
+   - Google cluster: added `Google Messages` to aliases; updated regex to match `Google Messages` explicitly as priority alternative before exclusion; added `Messages` to exclusion list for bare `Google`
+   - Australia cluster: added `Julie Inman Grant` and `Inman Grant` to aliases + regex
+   - New `Discord` cluster with 1 alias + custom regex
+
+2. **New sample output files:**
+   - `reuters_australia_esafety_child_safety_2026_07_14_article.txt` — full article text
+   - `reuters_australia_esafety_child_safety_2026_07_14_analysis.md` — full manual annotation (entity, framing, sentiment, source analysis, 7 sections)
+
+3. **New test file: `test_reuters_australia_esafety_child_safety_jul14.py`** (24 tests)
+   - `TestEntityIMessageApple` (3): iMessage detection, Apple cluster mapping, canonical name
+   - `TestEntityGoogleMessages` (2): Google Messages detection, Google cluster mapping
+   - `TestEntityDiscord` (3): Discord detection, Discord cluster mapping, count validation
+   - `TestEntityJulieInmanGrant` (2): Julie Inman Grant detection, Australia cluster mapping
+   - `TestMultiEntityDistribution` (9): Australia highest count, primary entity, 7 cluster presence checks
+   - `TestFramingDevices` (5): no_comment_implication, regulatory_shadow, scale_magnitude, catastrophizing, total device count range
+
+4. **Documentation updates:**
+   - METHODOLOGY.md: 86→87 clusters, updated Apple/Google/Snap/Australia rows, added Discord row
+   - ENTITY_REFERENCE.md: 86→87 clusters, 866→871 aliases, updated Apple/Google/Australia entries, added Discord entry
+   - ARCHITECTURE.md: updated cluster/alias/test counts, added test file entry
+   - ACCURACY_GUIDE.md: 176→177 annotated articles (2 references)
+   - QUALITY_STANDARDS.md: 176→177 annotated articles
+   - README.md: updated pipeline stats table, test listing, entity cluster counts
+
+### Known Remaining Gaps
+1. `grudging_concession` should match passive openings like "Some improvements were noted" — currently only fires on explicit hedging conjunctions
+2. `editorial_cross_promotion` false-positives on all-caps section headings (seen in both this article and Reuters scam-ads Jul 13)
+3. Standalone `eSafety` (without "Commissioner") unmatched — low priority, Australia cluster has strong coverage through other aliases
+4. No `trend_bundling` device type — articles that homogenize multiple companies into collective responsibility use a distinct framing strategy worth tracking
+
+### Verification
+- All 24 new tests pass
+- Full test suite: **2,556 passed** across 115 test files (was 2,532 across 114)
+- `count_stats.py --check`: README stats current ✅
+
+### Stats after
+- 87 entity clusters (was 86)
+- 871 aliases (was 866)
+- 64 custom regex clusters (was 63)
+- 102 framing device types (unchanged)
+- 673 compiled patterns (unchanged)
+- 177 annotated articles (was 176)
+- 231 journalists tracked (unchanged)
+- 2,556 tests across 115 files (was 2,532 across 114)
+
 ## 2026-07-14 04:00 PT — Type D: Toolkit Quality & Documentation (Phantom CLI Flag Fix + Doc-CLI Consistency Guard)
 
 **Commit:** (pending) — "Type D: fix phantom CLI flags in TOPIC_REFERENCE.md, add doc-CLI consistency test, update test counts"

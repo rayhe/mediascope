@@ -1,0 +1,41 @@
+Australia finds serious gaps in Big Tech response to online child sexual abuse
+
+Big Tech companies, including Apple (AAPL.O), Meta (META.O) and Google (GOOGL.O), have "significant gaps" in tackling child sexual abuse and the growing threat of online sexual extortion, Australia's internet regulator said on Tuesday.
+
+Online platforms are failing to use available technologies that can identify well-known coercion scripts used by sexual extortion offenders, eSafety said in a transparency report.
+
+"In several cases, we have provided these platforms with evidence of how their services are being colonised by criminals to devastating impact, with clear guidance on how to stem the abuse," said eSafety Commissioner Julie Inman Grant.
+
+"Even when we've laid this out, we haven't seen adequate responses, despite the technology being readily available."
+
+Google, Meta, Snap (SNAP.N), Microsoft (MSFT.O) and Apple (AAPL.O) did not immediately respond to Reuters' requests for comment.
+
+The latest report comes after the government introduced legislation in June to give eSafety more power to pursue tech giants in court for failing to comply with its ban on social media for under-16s, escalating a regulatory clash over how to protect children and teenagers online.
+
+Australia was the first country in the world to impose such a ban with other countries including Britain and several European nations now taking similar measures.
+
+Australia has also been raising concerns over the safety of children when they use chat and gaming platforms. In April, eSafety asked some online gaming platforms to detail how they protect children from grooming by sexual predators.
+
+COERCIVE ONLINE SEXUAL EXTORTION
+
+eSafety in 2024 directed eight technology platforms to report every six months on their compliance with Australia's "Basic Online Safety Expectations" rules, focusing on detecting and preventing child sexual exploitation and abuse.
+
+The latest report, the third in a planned series of four, mainly focuses on sexual extortion. The first report established a baseline for comparison, while the second raised concerns about companies' failure to proactively detect abuse content.
+
+Sexual extortion is a form of online blackmail where perpetrators share, or threaten to share, intimate material unless their victims comply with their demands.
+
+The regulator said it had received more than 2,000 complaints about sexual extortion between July and December 2025, with young men aged 18 to 24 most affected. An eSafety study last year found more than one in 10 teenagers aged 16-18 had been victims of sexual extortion, with more than half of them being targeted before they were 16.
+
+eSafety investigators found the same tactics were used in multiple sexual extortion scams but companies failed to detect them.
+
+"Responses from the companies show there are serious gaps in the use of available technologies like language analysis that can identify well-known coercion scripts used by sexual extortion offenders," the report said.
+
+"Gaps in reporting tools also persist across services like WhatsApp, iMessage, Discord and Google Messages, with some services lacking clear, accessible ways for users to report sexual extortion or child abuse or failing to provide dedicated reporting categories for these harms."
+
+Technology already exists to better detect livestreamed child sexual abuse but it is not being consistently deployed, the report said.
+
+Some improvements were noted, including Google and Snap taking steps to proactively detect known child sexual abuse material, Discord blocking links to abuse content, Meta using new tools to detect grooming and Microsoft detecting live abuse in video calls, the report said.
+
+Source: Reuters
+URL: https://www.reuters.com/legal/government/australia-finds-serious-gaps-big-tech-response-online-child-sexual-abuse-2026-07-14/
+Date: July 14, 2026

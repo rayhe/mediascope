@@ -152,18 +152,18 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         "aliases": [
             "Alphabet", "Google", "YouTube", "DeepMind", "Waymo",
             "Sundar Pichai", "Gemini", "Google Cloud", "Android",
-            "AlphaFold",
+            "AlphaFold", "Google Messages",
             "the search giant",
         ],
-        "regex": r"(?<!\w)(Alphabet|Google(?!\s+(?:Sheet|Doc|Drive|Form|Search))|YouTube|DeepMind|Waymo|Sundar Pichai|Gemini|Google Cloud|Android|AlphaFold|the search giant)(?!\w)",
+        "regex": r"(?<!\w)(Alphabet|Google Messages|Google(?!\s+(?:Sheet|Doc|Drive|Form|Search|Messages))|YouTube|DeepMind|Waymo|Sundar Pichai|Gemini|Google Cloud|Android|AlphaFold|the search giant)(?!\w)",
     },
     "Apple": {
         "aliases": [
             "Apple", "iPhone", "iPad", "Tim Cook", "John Ternus",
             "Apple Intelligence", "Apple Vision Pro", "Siri", "macOS",
-            "AirPods", "Apple Watch",
+            "AirPods", "Apple Watch", "iMessage",
         ],
-        "regex": r"(?<!\w)(Apple(?!\s+(?:pie|cider|sauce|tree|juice|cinnamon))|iPhone|iPad|Tim Cook|John Ternus|Apple Intelligence|Apple Vision Pro|Siri|macOS|AirPods|Apple Watch)(?!\w)",
+        "regex": r"(?<!\w)(Apple(?!\s+(?:pie|cider|sauce|tree|juice|cinnamon))|iPhone|iPad|Tim Cook|John Ternus|Apple Intelligence|Apple Vision Pro|Siri|macOS|AirPods|Apple Watch|iMessage)(?!\w)",
     },
     "Amazon": {
         "aliases": [
@@ -505,6 +505,12 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Snap", "Snapchat", "Spectacles", "Evan Spiegel",
         ],
         "regex": r"(?<!\w)(Snap(?:chat)?|Spectacles|Evan Spiegel)(?!\w)",
+    },
+    "Discord": {
+        "aliases": [
+            "Discord",
+        ],
+        "regex": r"(?<!\w)(Discord)(?!\w)",
     },
     "Midjourney": {
         "aliases": [
@@ -850,9 +856,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
     "Australia": {
         "aliases": [
             "Australia", "Australian government",
-            "eSafety Commissioner",
+            "eSafety Commissioner", "Julie Inman Grant", "Inman Grant",
         ],
-        "regex": r"(?<!\w)(Australia(?:n(?:\s+government)?)?|eSafety Commissioner)(?!\w)",
+        "regex": r"(?<!\w)(Australia(?:n(?:\s+government)?)?|eSafety Commissioner|Julie Inman Grant|Inman Grant)(?!\w)",
     },
     "Cybersecurity/Research": {
         "aliases": [

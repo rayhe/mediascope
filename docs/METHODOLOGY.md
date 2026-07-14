@@ -1004,7 +1004,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **86 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **87 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -1022,15 +1022,15 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 86 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 87 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
 | Cluster | Aliases | Key Members |
 |---|---|---|
 | **Meta** |  85 | Meta, Meta Platforms, Facebook, Instagram, WhatsApp, Threads (+69 more) |
-| **Google** | 11 | Alphabet, Google, YouTube, DeepMind, Waymo, Sundar Pichai (+5 more) |
-| **Apple** | 11 | Apple, iPhone, iPad, Tim Cook, John Ternus, Apple Intelligence (+5 more) |
+| **Google** | 12 | Alphabet, Google, YouTube, DeepMind, Waymo, Sundar Pichai, Google Messages (+5 more) |
+| **Apple** | 12 | Apple, iPhone, iPad, Tim Cook, John Ternus, Apple Intelligence, iMessage (+5 more) |
 | **Amazon** | 9 | Amazon, AWS, Alexa, Jeff Bezos, Andy Jassy, Amazon Web Services (+3 more) |
 | **Microsoft** | 9 | Microsoft, Satya Nadella, Azure, Bing, LinkedIn, GitHub (+3 more) |
 | **OpenAI** | 14 | OpenAI, Sam Altman, ChatGPT, GPT-4, GPT-5, GPT-2, gpt-oss, DALL-E, Miles Brundage (+5 more) |
@@ -1066,6 +1066,7 @@ The following table documents all 86 entity clusters shipped with MediaScope, or
 | Cluster | Aliases | Key Members |
 |---|---|---|
 | **Snap** | 4 | Snap, Snapchat, Spectacles, Evan Spiegel |
+| **Discord** | 1 | Discord |
 | **TikTok** | 3 | TikTok, ByteDance, Shou Zi Chew |
 | **X/Twitter** | 4 | Twitter, X Corp, Elon Musk, Musk |
 | **Spotify** | 2 | Spotify, Daniel Ek |
@@ -1153,7 +1154,7 @@ The following table documents all 86 entity clusters shipped with MediaScope, or
 | **Labor/Unions** | 19 | United Tech and Allied Workers, United Tech & Allied Workers, Communication Workers Union, CWU, Alphabet Workers Union, SEIU, SAG-AFTRA, WGA, DGA, IATSE, Teamsters (+8 more) |
 | **Chinese AI** | 13 | Zhipu, Z.ai, GLM, DeepSeek, Baidu, Alibaba Cloud (+7 more) |
 | **Chinese Tech Platforms** | 10 | Lark, DingTalk, Rednote, Xiaohongshu, WeChat, Weibo (+4 more) |
-| **Australia** | 3 | Australia, Australian government, eSafety Commissioner |
+| **Australia** | 5 | Australia, Australian government, eSafety Commissioner, Julie Inman Grant, Inman Grant |
 
 #### Internal & Legacy
 
@@ -1392,7 +1393,7 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **176 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **177 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1508,7 +1509,7 @@ Articles cluster into 9 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 176 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 177 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
