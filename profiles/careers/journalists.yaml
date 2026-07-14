@@ -13279,3 +13279,117 @@ journalists:
   - https://muckrack.com/fvogelstein/articles
   - https://journalisthunt.com/journalists/fred-vogelstein
   - https://en.wikipedia.org/wiki/John_Vogelstein
+- career:
+  - beat: investigative journalism
+    end: '2017'
+    event_type: education
+    notes: MA in Investigative Journalism from City, University of London (2016-2017). Foundation for data-driven and source-heavy
+      tech reporting that defines her career. City University London has a strong UK investigative journalism program.
+    publication: city-university-london
+    role: student
+    source_url: https://contactout.com/Jyoti-Mann
+    start: '2016'
+  - beat: news, general
+    end: 2018-02
+    event_type: hired
+    notes: Brief stint at the UK tabloid. Freelanced and interned. One of earliest professional journalism roles post-MA.
+    publication: daily-star
+    role: journalist
+    source_url: https://talkingbiznews.com/they-re-hiring/business-insider-taps-mann-to-serve-as-tech-reporter/
+    start: 2018-01
+  - beat: hedge funds, consulting
+    end: 2021-07
+    event_type: career_change
+    notes: Self-employed hedge fund consultant for approximately 3.5 years between journalism stints. Non-journalism career period.
+      This finance-sector experience gives her an analytical framework for understanding Big Tech business models and M&A that
+      most tech reporters lack — relevant because The Information's Meta coverage requires deep financial analysis alongside
+      product reporting.
+    publication: self-employed
+    role: consultant
+    source_url: https://contactout.com/Jyoti-Mann
+    start: 2018-02
+  - beat: journalism, crime desk
+    end: 2019-10
+    event_type: intern
+    notes: Brief freelance/internship on The Times (UK) crime desk. One month overlap during consulting career. The Times is
+      a Murdoch/News Corp publication — notable for pipeline context.
+    publication: the-times-uk
+    role: journalist
+    source_url: https://contactout.com/Jyoti-Mann
+    start: 2019-10
+  - beat: companies, business
+    end: 2022-02
+    event_type: fellowship
+    notes: Marjorie Deane Fellow at the Financial Times — a prestigious 6-month journalism fellowship for emerging business
+      journalists. Worked on the companies desk. The FT fellowship is a recognized pipeline into elite business journalism
+      (past fellows have gone to Bloomberg, WSJ, FT staff). This is her entry point into mainstream business/tech journalism.
+    publication: financial-times
+    role: reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/the-information-hires-mann-to-cover-meta/
+    start: 2021-08
+  - beat: business news, weekend desk
+    end: 2023-10
+    event_type: hired
+    notes: Business news reporter covering weekend business news. First full-time staff journalism role at a major English-language
+      digital publication. Based in London (Greater London). Published across Markets Insider, Yahoo, MSN, HuffPost syndication
+      network. High-volume output — 2,900+ total career articles by 2025 per Journalist Hunt.
+    publication: business-insider
+    role: reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/business-insider-taps-mann-to-serve-as-tech-reporter/
+    start: 2022-03
+  - beat: tech, AI, big tech companies, Meta
+    end: 2025-03
+    event_type: promoted
+    notes: Promoted to tech reporter at Business Insider (Oct 2023). Covered Meta organizational changes (Bosworth metaverse
+      restructuring memo scoop), Amazon layoffs (14,000 jobs investigation), Elon Musk companies, and broader Big Tech. Co-bylined
+      with Pranav Dixit on Meta stories. Beat coverage focused on corporate structure, layoffs, and executive decision-making
+      rather than product reviews or consumer tech.
+    publication: business-insider
+    role: tech_reporter
+    source_url: https://contactout.com/Jyoti-Mann
+    start: 2023-10
+  - beat: tech, AI, big tech, Meta
+    end: 2026-01
+    event_type: promoted
+    notes: Promoted to senior tech reporter at Business Insider (Mar 2025). Continued Meta corporate coverage. Her departure
+      for The Information creates a dedicated Meta beat gap at Business Insider.
+    publication: business-insider
+    role: senior_tech_reporter
+    source_url: https://contactout.com/Jyoti-Mann
+    start: 2025-03
+  - beat: Meta Platforms (dedicated beat)
+    event_type: hired
+    notes: 'Hired by The Information as its dedicated Meta beat reporter — a newly created role filled in response to a January
+      2026 posting that described Meta as "at a pivotal moment in its history." The job description explicitly frames Meta
+      as "racing to catch up in artificial intelligence, after a series of stumbles" — adversarial framing baked into the
+      beat definition. Expected output: 2 scoops or 1 high-impact feature per month, plus TITV (The Information''s daily
+      video show) appearances. Based in NY or SF. The Information is a subscription-only ($449/yr) tech publication whose
+      scoops are frequently cited by NYT, Bloomberg, Reuters, and Wired — making this a high-leverage position in the Meta
+      coverage ecosystem despite the publication''s smaller direct audience. KEY ANALYTICAL VALUE: (1) Her Business Insider
+      Meta coverage (Bosworth memos, restructuring scoops) was corporate-internal-focused, not adversarial-framing. Her
+      output at The Information will reveal whether the publication''s editorial environment shifts her framing. (2) The
+      Information''s paywall model incentivizes insider-access journalism over adversarial coverage — contrasts with Wired/
+      Guardian''s ad-supported adversarial model. (3) She joins alongside Eli Rosenberg (AI/tech wealth reporter from NBC
+      News/WaPo) — The Information is building out its Big Tech investigative capacity.'
+    publication: the-information
+    role: reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/the-information-hires-mann-to-cover-meta/
+    start: 2026-01
+  multi_publication: true
+  name: Jyoti Mann
+  notes: 'Career arc: City University London MA → Daily Star → hedge fund consulting (3.5 years) → The Times UK (brief) → FT
+    (Marjorie Deane Fellow) → Business Insider (business news → tech reporter → senior tech reporter) → The Information
+    (dedicated Meta beat). London-based for most of career; The Information role may be NY/SF. Hedge fund consulting background
+    distinguishes her from typical J-school-to-newsroom pipeline — gives her financial analysis skills for understanding
+    Meta''s $125-145B capex, AI investment strategy, and corporate restructuring. Extremely prolific: 2,900+ articles by
+    2025 (Journalist Hunt). KEY for MediaScope: (1) The Information''s dedicated Meta beat reporter — her scoops will be
+    cited across our tracked publications (Wired, NYT, etc.), making her a primary source in the Meta coverage supply chain.
+    (2) Non-adversarial editorial environment (subscription/insider-access model) provides a natural control for comparing
+    framing differences on the same stories when they''re picked up by adversarial outlets. (3) Migration from BI (high-volume
+    general coverage) to The Information (premium scoop-driven) tests whether output cadence changes affect framing intensity.'
+  source_urls:
+  - https://talkingbiznews.com/they-re-hiring/the-information-hires-mann-to-cover-meta/
+  - https://talkingbiznews.com/they-re-hiring/business-insider-taps-mann-to-serve-as-tech-reporter/
+  - https://contactout.com/Jyoti-Mann
+  - https://muckrack.com/jyotimann/articles
+  - https://journalisthunt.com/journalists/jyoti-mann
