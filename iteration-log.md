@@ -1,4 +1,92 @@
 # MediaScope Iteration Log
+## 2026-07-14 12:20 PT — Type B: Journalist Research (Gideon Lichfield Deep Sourcing)
+
+**Commit:** `0056768` — "Type B: Gideon Lichfield deep sourcing — 9 events with source URLs, publication slug fix, enriched notes"
+
+### Focus: Deep sourcing of Gideon Lichfield — dual EIC at two tracked publications
+
+**Subject selection rationale:** Lichfield was EIC of both MIT Technology Review (2017-2021) AND Wired (2021-2023), making him the single most valuable journalist for difference-in-differences editorial influence analysis across tracked publications. He was one of 22 journalists still lacking source_urls.
+
+### 1. Publication Slug Fix (Data Correction)
+
+**File:** `profiles/careers/journalists.yaml`
+**Issue:** The post-Wired career entry used `publication: independent` — which the CareerTracker interpreted as The Independent (UK newspaper). Lichfield is actually at Harvard Ash Center for Democratic Governance as an independent fellow/freelancer, not at The Independent.
+**Fix:** Changed publication slug from `independent` to `freelance`, role remains `democracy_futurist`.
+**Impact:** Removed a false migration to The Independent, added correct `wired → freelance` migration. Migration count: 917 → 918.
+
+### 2. Wired End Date Correction
+
+**Old:** `end: 2023-08`
+**New:** `end: 2023-09`
+**Source:** Departure letter (May 31, 2023) stated "I'll stay in the editor's chair until mid-September." Katie Drummond started Aug 28 but Lichfield stayed through transition.
+
+### 3. Source URLs Added (0 → 9 events sourced)
+
+All 9 career events now have individual `source_url` fields:
+- Economist events (5): Wikipedia biography
+- Quartz: TalkingBizNews hiring announcement
+- MIT Technology Review: Official MIT TR letter from new EIC (Dec 5, 2017)
+- Wired: TalkingBizNews departure coverage (May 31, 2023)
+- Freelance/Harvard: Beyond Intractability interview (Mar 16, 2026)
+
+Profile-level `source_urls` expanded from 3 → 8.
+
+### 4. Enriched Career Notes
+
+Key additions:
+- **Data & Society fellowship (2014-15):** Science Fiction Writer in Residence. Concurrent with Quartz tenure. Wrote speculative fiction on social/political implications of tech.
+- **NYU adjunct (2011):** Graduate course in foreign reporting at Arthur L. Carter Journalism Institute. Concurrent with Economist final years.
+- **Economist Education:** Internal startup he headed (business executive education). Added to deputy_digital_editor event notes.
+- **MIT TR specifics:** New mission statement ("make technology a greater force for good"), MIT-Epstein scandal coverage leadership, themed print issues, grant-funded journalism, compensation from 990 filings ($269K-$278K).
+- **Wired specifics:** "Global Editorial Director" title (not just EIC) reflecting Condé Nast global reorg under Anna Wintour. 58-episode "Have a Nice Future" podcast co-hosted with Lauren Goode (through Oct 25, 2023). Departure letter quotes preserved.
+- **Post-Wired pivot:** Harvard Ash Center fellow, Data & Society affiliate, Futurepolis Substack, "Democracy Futurist" self-description, NYC/Bay Area split.
+- **Analytical significance:** Flagged as most valuable DiD natural experiment subject given dual EIC tenure at two tracked publications.
+
+### 5. Education & Personal Details Consolidated
+
+Full biography details in profile `notes`: Born Aug 4, 1971 London. BSc Physics & Philosophy (Bristol), MSc Philosophy of Social Science (LSE). 5 languages (English, Spanish, French, Russian, Hebrew). Self-described "polyglot, climber, biker, cocktailer, and vagabond."
+
+### Verification
+- All 2,603 tests pass ✅
+- README stats current ✅ (918 migrations)
+- CareerTracker loads profile correctly with 9 events, 4 migrations
+
+---
+
+## 2026-07-14 12:00 PT — Type A: Article Deep Dive (Reuters Meta AI Layoff Discrimination)
+
+**Commit:** `c46f513` — "Type A: Reuters Meta AI layoff discrimination (Jul 14) — entity, framing, legal-context fixes"
+
+### Focus: Reuters article "Meta used AI to target workers with medical conditions for layoffs, lawsuit claims" (Jul 14, 2026)
+
+### 1. Entity Resolution Fix
+
+**File:** `mediascope/analyze/entities.py`
+**Issue:** "District of Columbia" was incorrectly mapping to Columbia University (Academic/Research cluster).
+**Fix:** Added lookbehind filter for "District of" and "British" prefixes in `_HOMOGRAPH_LOOKBEHIND_FILTERS`.
+
+### 2. Legal-Context Loaded Language Suppression
+
+**File:** `mediascope/analyze/framing.py`
+**Changes:**
+- Extended `_LEGAL_TERMS_OF_ART` with "violating", "retaliation", "retaliatory"
+- Extended `_LEGAL_CONTEXT_TERMS` with "accusing", "accused", "claim", "complaint", "discrimination", "disability", "medical leave"
+- New post-filter block: suppresses `absence_as_evidence` matches when lawsuit/complaint/plaintiff context detected within 150 chars
+
+### 3. Standalone "slashed" Loaded Language
+
+Added "slashed" to first `_LOADED_LANGUAGE_PATTERNS` regex alongside other violent verbs.
+
+### Files Created
+- `examples/sample_output/reuters_meta_ai_layoff_discrimination_2026_07_14_article.txt`
+- `examples/sample_output/reuters_meta_ai_layoff_discrimination_2026_07_14_analysis.md` (179th annotated article)
+- `tests/test_reuters_meta_ai_layoff_discrimination_jul14.py` (10 tests, 4 classes)
+
+### Verification
+- All 2,603 tests pass ✅
+
+---
+
 ## 2026-07-14 10:00 PT — Type D: Toolkit Quality & Documentation (Pytest Warning Fix, count_stats.py Enhancement, Calibration Ledger)
 
 **Commit:** (this commit)
