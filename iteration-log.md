@@ -1,4 +1,46 @@
 # MediaScope Iteration Log
+## 2026-07-13 22:00 PT — Type D: Toolkit Quality & Documentation (Path L demo, stale path range fixes, inline range guard)
+
+**Commit:** `fac4842` — "Type D: Path L demo article, stale path range fixes, inline range guard, docstring completeness guard"
+
+### Focus Areas
+
+#### 1. framing_correction_demo.py — Path L Gap + Stale Comment
+
+**Bug found:** Docstring claimed "Twelve distinct correction paths (A–L)" but only listed 11 (A–K). Path L (Quote-Inflated Body with Negative Headline) was missing from the inline list — added as "Path L: Quote-inflated body with negative headline (20/80)".
+
+**Stale comment:** Line ~222 said "16 types as of Jul 2026" but there are 31 adversarial device types. Fixed to 31.
+
+**New demo article:** Added Article 4 demonstrating Path L — a Gizmodo-style "Meta Scraps Muse Image" article where Meta's PR quote ("creative partner that knows your world, making it easy to turn your ideas into high-quality visuals") inflates VADER body score to +0.591, but the negative headline + 6 adversarial framing devices trigger Path L correction to -0.170 (gap: 0.761). Demonstrates quote-inflation detection in practice.
+
+#### 2. AGENT_GUIDE.md + ARCHITECTURE.md — Stale Inline Path Ranges
+
+**AGENT_GUIDE.md line 1052:** Said "(A–F, H–K)" — missing both K and L path letters. Fixed to "(A–F, H–L)".
+
+**ARCHITECTURE.md line 158:** Said "(A–F, H–J)" — even more stale, missing J, K, and L. Fixed to "(A–F, H–L)".
+
+These bugs slipped through because existing structural consistency guards checked the main intro text (which was correct) but NOT inline range mentions with interrupted notation like "(A–F, H–X)".
+
+#### 3. New Structural Consistency Guards (2 tests)
+
+**test_no_stale_inline_path_ranges:** Scans all files in docs/ and examples/ for interrupted path range patterns like `(A–F, H–X)` and verifies the end letter matches the current maximum path letter. Would have caught both bugs found in this iteration.
+
+**test_framing_demo_docstring_lists_all_paths:** Verifies the framing_correction_demo.py docstring contains a `Path X:` line for every correction path in EXPECTED_PATHS. Catches the A–K gap found above.
+
+#### 4. CROSS_PUBLICATION_REFERENCE.md (Previously Untracked)
+
+Committed the cross-publication comparison quick reference doc that was on disk but never tracked in git. Added cross-references to it from METHODOLOGY.md §13 and QUALITY_STANDARDS.md §10.
+
+### Test Results
+- 2,497 tests passing across 111 files (was 2,495 — +2 new structural guards)
+- test_structural_consistency.py: 123 tests (was 121)
+- Full suite: 0 failures
+
+### Key Takeaway
+The structural consistency test suite is strong for checking specific intro text patterns but was blind to inline mentions with non-contiguous notation. The new `test_no_stale_inline_path_ranges` guard closes this gap and will catch future staleness when paths M+ are added.
+
+---
+
 
 ## 2026-07-13 20:00 PT — Type C: Ownership & Funding Deep Dive (12-AG Paramount-WBD lawsuit, Advance portfolio update, Meta litigation expansion)
 
