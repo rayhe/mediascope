@@ -1,5 +1,47 @@
 # MediaScope Iteration Log
 
+## 2026-07-13 20:00 PT — Type C: Ownership & Funding Deep Dive (12-AG Paramount-WBD lawsuit, Advance portfolio update, Meta litigation expansion)
+
+**Commit:** See git log — "Type C: 12-AG Paramount-WBD lawsuit, Advance portfolio valuation update, Meta litigation expansion, French neighboring rights, Charter-Cox merger progress"
+
+### Focus Areas
+
+#### 1. Paramount-WBD 12-State AG Antitrust Lawsuit (BREAKING, Jul 13)
+- CA AG Rob Bonta led 12 Democratic AGs filing lawsuit in N.D. Cal. to block $110B Paramount-WBD merger
+- Alleges Clayton Act Section 7 violation: combined entity would control ~27% theatrical films + ~27% basic cable
+- DOJ had CLEARED deal (Jun 19) after 8-month review; states acting independently
+- Market reaction: WBD ROSE +1.88% to $27.09, PSKY +2.5% — market views challenge as unlikely to succeed
+- Paramount called complaint "distortion of settled antitrust law"
+- States seeking TRO if companies don't voluntarily pause closing
+- All 12 AGs are Democrats — political dimension noted
+- Added full timeline, implications for Advance's ~$2.94B tender value, and 3 new source URLs
+
+#### 2. Advance Portfolio Valuation Update (Jul 13 close prices)
+- **RDDT:** $200.93 (+2.86%), stake $8.48B (up from $8.24B Jul 10). Reclaimed $200 level.
+- **CHTR:** $130.73 (flat). Added Charter-Cox $34.5B merger progress: >99% stockholder approval, NY PSC conditionally approved (w/ $100M upgrade commitment), expected mid-2026 close. Advance retains 2 board seats, Cox gets 23%. Combined entity to rebrand as Cox Communications.
+- **WBD:** $27.09 (+1.88%), stake ~$2.65B at market / ~$2.94B at $30 tender
+- **Total:** ~$13.82B (up from ~$13.23B Jul 10). Reddit concentration: 61.4%
+- Updated price trajectory, total equity snapshot, comments block, concentration metrics
+
+#### 3. Meta Litigation Expansion — 3 New Legal Fronts Added
+- **FTC v. Meta monopolization appeal:** FTC lost Nov 2025 trial but filed formal appeal Jan 2026. Trump-Vance FTC continuing. If successful, could force Instagram/WhatsApp spinoff.
+- **Scam ads SLUSA defense (Jul 13, Reuters):** Meta deploying novel securities law defense against class action over fraudulent stock-promotion ads. Could create broad immunity carve-out for securities-related scam ads.
+- **French neighboring rights (Jul 8, Reuters):** Competition authority ordered Meta to resume publisher payment negotiations. Previous agreement expired 2024, no payments since 2025.
+- **Barron's $1.4T analysis (Jul 10):** Added investor warning context — "investors ignore the legal risk at their own peril." Judge showed "some skepticism" but bellwether loss framework threat remains.
+
+#### 4. French Neighboring Rights as New Conflict Entry
+- Added `french_neighboring_rights_enforcement` conflict type (severity 3)
+- Highlights regulatory asymmetry: Meta COMPELLED by law to pay publishers, while Condé Nast receives $0 from Meta but tens of millions from Meta's AI competitors voluntarily
+
+### Files Changed
+- `profiles/wired.yaml`: 177 insertions, 33 deletions (WBD section, RDDT prices, CHTR merger, litigation expansion, new conflict entry)
+
+### Test Results
+- 122/122 structural consistency tests passing
+- Stats check: ✅ README stats current (no YAML structural changes requiring count updates)
+
+---
+
 ## 2026-07-13 15:00 PT — Type A: Article Deep Dive (Reuters EU DSA Meta addictive features)
 
 **Article:** Reuters, "EU says Meta's Facebook, Instagram have addictive features harmful to children" (Jul 10, 2026)
@@ -21507,3 +21549,56 @@ Barron's is the only outlet to use pathologizing language ("splurge") for the sa
 - Tests: 2,495 passed, 0 failed (111 files)
 
 **Commit:** `7650390` — pushed to GitHub.
+
+---
+
+## 2026-07-13 19:00 PT — Type B: Journalist/Publication Research (Jyoti Mann, Meta beat ecosystem audit)
+
+**Commit:** `42a5f1c` — "Type B: Add Jyoti Mann (The Information Meta reporter), update stats to 231 journalists/917 migrations/720 auto-detected/222 multi-pub"
+
+### Focus Areas
+
+#### 1. New Journalist Profile: Jyoti Mann (The Information, dedicated Meta beat)
+
+Full career profile added to `profiles/careers/journalists.yaml`:
+
+- **Career arc:** City University London MA Investigative Journalism → Daily Star → hedge fund consulting (3.5 yrs, non-journalism) → The Times UK (brief crime desk intern) → Financial Times (Marjorie Deane Fellow, companies desk) → Business Insider (business news reporter → tech reporter → senior tech reporter, Mar 2022–Jan 2026) → The Information (dedicated Meta Platforms reporter, Jan 2026–present)
+- **10 career entries** across 7 publications, `multi_publication: true`
+- **Key scoops at BI:** Bosworth metaverse restructuring memo (exclusive internal email), Amazon 14,000 job cuts investigation, co-bylines with Pranav Dixit on Meta organizational coverage
+- **Analytical value:**
+  1. The Information's dedicated Meta reporter — her scoops are cited across tracked publications (Wired, NYT, Bloomberg), making her a primary source in the Meta coverage supply chain
+  2. Non-adversarial editorial environment (subscription/insider-access $449/yr model) provides natural control for framing comparison when same stories are picked up by adversarial outlets like Wired
+  3. Hedge fund consulting background (3.5 years) gives financial analysis frame distinct from typical J-school pipeline — relevant for Meta's $125-145B capex and AI investment coverage
+  4. Migration from BI (high-volume, ~2,900+ articles) to The Information (premium, 2 scoops/month target) tests whether output cadence changes affect framing intensity
+
+#### 2. Meta Beat Ecosystem Audit — All 6 Tracked Publications
+
+Verified current state of Meta coverage staffing across tracked publications and key adjacents:
+
+- **Wired:** Caroline Haskins (business reporter, Mar 2026) ✅ fully tracked with Project Cannes scoop. Chief business correspondent role (posted Mar 15, 2026) **still unfilled** — most senior open editorial position. Business editor role (posted Jul 2, 2026) also open — possible Zoë Schiffer departure signal.
+- **MIT Tech Review:** Melissa Heikkilä departure to FT (Jan 2025) ✅ tracked. James O'Donnell replacement as senior AI reporter ✅ tracked. ASME finalist for AI energy investigation noted.
+- **The Verge:** Hayden Field (senior AI reporter from CNBC, 2025) ✅ tracked.
+- **Atlantic:** Alex Reisner (AI Watchdog, staff writer Oct 2025) ✅ tracked. All 2025-2026 hires verified current.
+- **Guardian:** No new tech reporter hires identified since 2024 job posting. Matt Brittin SID vacancy (to BBC DG) noted in prior Type C.
+- **NYT:** No new Meta-specific staffing changes identified.
+- **The Information (adjacent):** Jyoti Mann (Meta reporter) ← **added this iteration**. Also hired Eli Rosenberg (AI/tech wealth from NBC News/WaPo) — building Big Tech investigative capacity.
+
+#### 3. Stats Updated
+
+All counts updated across README.md, EDITORIAL_HISTORIES.md, careers_demo.py:
+- Journalists: 230 → 231
+- Career-entry migrations: 909 → 917
+- Auto-detected migrations: 717 → 720
+- Multi-pub journalists: 221 → 222
+- `count_stats.py --check`: ✅ current
+- `test_structural_consistency`: 122/122 pass
+- `test_careers`: 21/21 pass
+
+### Sources
+- https://talkingbiznews.com/they-re-hiring/the-information-hires-mann-to-cover-meta/
+- https://talkingbiznews.com/they-re-hiring/business-insider-taps-mann-to-serve-as-tech-reporter/
+- https://contactout.com/Jyoti-Mann (LinkedIn-derived career timeline)
+- https://muckrack.com/jyotimann/articles
+- https://journalisthunt.com/journalists/jyoti-mann (2,900+ article count)
+- https://app.qwoted.com/publications/the-information (The Information Meta reporter job posting, Jan 6 2026)
+- https://talkingbiznews.com/they-re-hiring/wired-seeks-a-chief-business-correspondent/ (still unfilled)
