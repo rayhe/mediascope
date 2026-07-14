@@ -454,7 +454,16 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"unsavory|unsavoury|unnerving|"
         # Suspicion-amplification language — "quell suspicions" frames
         # a company's actions as failing to address ongoing distrust.
-        r"(?:quell|allay|dispel|ease)\s+(?:suspicion|fear|concern|doubt|unease|distrust)s?"
+        r"(?:quell|allay|dispel|ease)\s+(?:suspicion|fear|concern|doubt|unease|distrust)s?|"
+        # Death/termination metaphors applied to products, features, or
+        # projects — editorializes by framing business decisions (sunset,
+        # discontinuation, removal) as violent acts or executions.
+        # Discovered via Inc.com Meta Muse Image backlash article (Jul 14, 2026):
+        # "pulled the plug" — implies mercy-killing rather than a product decision.
+        r"pull(?:ed|s|ing)?\s+the\s+plug|"
+        r"(?:killed|axed|yanked|gutted|nuked|torpedoed|scrapped)\s+(?:the\s+)?(?:\w+\s+){0,2}(?:feature|product|project|service|tool|app|update|initiative|program|plan|effort|launch|rollout|release)|"
+        r"(?:feature|product|project|service|tool|app|update|initiative|program|plan|effort|launch|rollout|release)\s+(?:was|were|got|been)\s+(?:killed|axed|yanked|gutted|nuked|torpedoed|scrapped)|"
+        r"death\s+(?:of|knell|blow|sentence)\s+(?:for\s+)?(?:the\s+)?(?:\w+\s+){0,2}(?:feature|product|project|service|tool|app)"
         r")\b",
         re.IGNORECASE,
     ),
@@ -1235,6 +1244,27 @@ _CROSS_PUBLICATION_IMPORT_PATTERNS: list[re.Pattern] = [
         r"\b(?:according to (?:the )?(?:magazine|newspaper|outlet|publication|"
         r"report(?:ing)?|investigation|story))\b",
         re.IGNORECASE,
+    ),
+    # -----------------------------------------------------------------------
+    # Named publication cross-reference: "According to The New York Times",
+    # "per Reuters", "as Bloomberg reported".  The most common import
+    # pattern in journalism uses the publication's proper name directly.
+    # Prior patterns only matched generic references ("the magazine",
+    # "the outlet") which missed the dominant form.
+    # Discovered in Inc.com Muse Image article (Jul 14, 2026):
+    #   "According to The New York Times, Meta is pricing..."
+    # -----------------------------------------------------------------------
+    re.compile(
+        r"\b[Aa]ccording\s+to\s+(?:\*?(?:The\s+)?)"
+        r"(?:New\s+York\s+Times|Washington\s+Post|Wall\s+Street\s+Journal|"
+        r"Financial\s+Times|Guardian|Reuters|Bloomberg|Associated\s+Press|"
+        r"Wired|Atlantic|MIT\s+Technology\s+Review|The\s+Verge|"
+        r"TechCrunch|The\s+Information|Business\s+Insider|Axios|"
+        r"CNBC|BBC|NPR|Economist|Politico|Vox|Ars\s+Technica|"
+        r"The\s+Register|Gizmodo|Engadget|Mashable)\*?"
+        r"(?:\s*,|\s*\.(?!com)|\s+(?:the|this|that|it|they|Meta|"
+        r"Apple|Google|Amazon|Microsoft|\w+\s+is|\w+\s+has|\w+\s+was))",
+        re.DOTALL,
     ),
 ]
 
@@ -3989,6 +4019,26 @@ _CONFESSION_FRAMING_PATTERNS: list[re.Pattern] = [
         r"miscalculat(?:ion|ions)|blunder(?:s)?)\b",
         re.IGNORECASE,
     ),
+    # -----------------------------------------------------------------------
+    # Post-quote confession attribution: the confession verb follows
+    # quoted speech rather than introducing it.  This is the most common
+    # attribution pattern in news articles:
+    #   "'We missed the mark,' Meta admits."
+    #   "'It was atrocious,' Bosworth acknowledged."
+    # The core patterns require verb + (that|") which misses this form.
+    # Discovered in Inc.com Muse Image article (Jul 14, 2026).
+    # -----------------------------------------------------------------------
+    re.compile(
+        r"""[,.'"”’]\s*"""  # closing quote/comma
+        r"(?:[A-Z][a-z]+(?:\s+[A-Z][a-z]+)?|"  # Name(s)
+        r"(?:the|a|an) (?:CEO|CTO|COO|CFO|chief|executive|company|firm|"
+        r"spokesperson|official|director|president|chairman|VP|"
+        r"vice president|head|manager|leader))\s+"
+        r"(?:also\s+)?"
+        r"(?:admit(?:ted|s)?|conced(?:ed|es|ing)|acknowledg(?:ed|es|ing))"
+        r"\s*[.,;!]",  # sentence-ending punctuation
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["confession_framing"] = _CONFESSION_FRAMING_PATTERNS
@@ -6501,6 +6551,26 @@ _POLICY_REVERSAL_PATTERNS: list[re.Pattern] = [
         r"(?:Friday|Monday|Tuesday|Wednesday|Thursday|Saturday|Sunday|"
         r"the (?:end|weekend|next (?:day|week|morning))|"
         r"\w+ \d+)\b",
+        re.IGNORECASE,
+    ),
+    # -----------------------------------------------------------------------
+    # "just/merely/only N days after its debut/launch/release" — temporal
+    # urgency qualifier that amplifies the humiliation of a rapid reversal.
+    # Unlike the "N days in operation" pattern above which focuses on
+    # duration, this captures the journalistic phrasing that emphasizes
+    # how quickly something was killed relative to its introduction.
+    # Discovered in Inc.com Muse Image article (Jul 14, 2026):
+    #   "shelving it just three days after its debut"
+    # -----------------------------------------------------------------------
+    re.compile(
+        r"\b(?:just|merely|only|barely|a mere)\s+"
+        r"(?:\d+|one|two|three|four|five|six|seven|eight|nine|ten|"
+        r"a few|several)\s+"
+        r"(?:days?|hours?|weeks?|months?)\s+"
+        r"(?:after|since|from|following|into)\s+"
+        r"(?:its|the|their)\s+"
+        r"(?:debut|launch|release|rollout|introduction|unveiling|"
+        r"announcement|premiere|deployment|activation)\b",
         re.IGNORECASE,
     ),
 ]

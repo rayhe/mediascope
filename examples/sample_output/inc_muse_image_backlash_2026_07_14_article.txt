@@ -1,0 +1,29 @@
+3 Days After Introducing an AI Feature, Meta Hits Pause in Wake of Privacy Backlash
+
+Muse Image allowed users to create AI-generated images from photos posted on Instagram—without permission. 'We missed the mark,' Meta admits.
+
+Meta has pulled the plug on a controversial new artificial intelligence feature that enabled users to create AI-generated images from photos posted to public Instagram accounts, shelving it just three days after its debut.
+
+The feature, called Muse Image, was introduced on Tuesday as part of Meta Superintelligence Labs' broader push into generative AI products. The company hit the pause button on Friday.
+
+Critics, citing privacy and copyright concerns, objected to the fact that public Instagram accounts were included by default rather than through an explicit opt-in process.
+
+"Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way," Meta said in a statement issued Friday afternoon. "We've heard the feedback that this feature missed the mark, so it's no longer available."
+
+Some of the harshest blowback came from Hollywood. Creative Artists Agency, the Los Angeles-based talent agency, said Meta's decision to give the AI feature access to public Instagram content was irresponsible.
+
+"Artists deserve to decide if and how their likeness and work is used," CAA said in a statement released a day after Muse Image's debut.
+
+SAG-AFTRA, the union representing more than 170,000 media professionals, including actors, broadcast journalists, recording artists, and DJs, urged members to opt out of the feature and accused Meta of underestimating issues related to digital likeness rights.
+
+"Anything other than a clear and conspicuous opt-in for these types of uses of Instagram users' images is unacceptable, and an utter miscalculation of public sentiment regarding the obvious dangers and harms inherent in such use," SAG-AFTRA said in a statement posted on X.
+
+After Meta reversed course on Friday, the union welcomed the decision. "With the dangers of nonconsensual digital replicas well known to all, a feature that encouraged that behavior is unwise," a union spokesperson told Reuters. "We appreciate its discontinuance. It is the responsible thing to do."
+
+Much of the criticism aimed at Muse Image centered on consent. Opponents argued that allowing AI systems to create new images from people's publicly available photos without explicit approval created risks related to the unauthorized use of personal likenesses and digital identity.
+
+Despite the setback, Meta is continuing to expand its AI offerings. Last week, the company unveiled Muse Spark 1.1, a paid version of its flagship AI model designed to compete with leading models from Anthropic, Google, OpenAI, and xAI.
+
+According to The New York Times, Meta is pricing Muse Spark below competing frontier AI models as it seeks to gain market share.
+
+Mark Zuckerberg, Meta's chief executive officer, said Muse Spark is "strongest at agentic performance, tool use, and computer use."

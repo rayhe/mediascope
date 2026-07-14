@@ -22266,3 +22266,79 @@ Previous iteration (Type C at 01:00 PT) added `test_accuracy_guide.py` as part o
 - ACCC Digital Platforms Inquiry report
 - State of Social 2024 speaker bio
 - Guardian Australia profile: https://www.theguardian.com/profile/josh-taylor
+
+---
+
+## 2026-07-14 11:00 PT — Type A: Article Deep Dive (Inc.com Muse Image Backlash)
+
+**Article:** Inc.com — "3 Days After Introducing an AI Feature, Meta Hits Pause in Wake of Privacy Backlash" by Kevin Haynes (Jul 12, 2026)
+
+**Selection rationale:** Meta Muse Image launch/reversal story exercises multiple framing patterns around product reversal narratives. Inc.com is not one of the 5 tracked publications but references NYT coverage, making it useful for cross-publication import detection.
+
+### Manual analysis vs toolkit detection
+
+**Initially detected (7 hits):** consent_alarm, default_burden_privacy, loaded_language (×2: "Backlash", "controversial"), policy_reversal (×4), strategic_reversal, trend_bundling
+
+**Gaps identified (4):**
+1. confession_framing: "'We missed the mark,' Meta admits." — post-quote attribution pattern
+2. policy_reversal temporal urgency: "just three days after its debut" — urgency qualifier
+3. cross_publication_import: "According to *The New York Times*" — named publication reference
+4. loaded_language: "pulled the plug" — death/termination metaphor
+
+### Patches applied (4)
+
+1. **confession_framing — post-quote attribution** (framing.py ~line 4031): Added regex for confession verbs (admits/conceded/acknowledged) appearing after quoted speech with preceding quote punctuation. Also fixed article determiner to accept "a/an" in addition to "the" (e.g., "a spokesperson acknowledged").
+
+2. **cross_publication_import — named publication** (framing.py ~line 3730): Added pattern matching "According to [named major publication]" for ~25 outlets (NYT, WSJ, Reuters, Bloomberg, Guardian, Wired, Washington Post, Financial Times, etc.).
+
+3. **policy_reversal — temporal urgency** (framing.py ~line 6510): Added pattern for "just/merely/only N days/weeks/months after its debut/launch/release/rollout" — urgency qualifiers that editorialize the speed of a reversal.
+
+4. **loaded_language — death/termination metaphors** (framing.py ~line 457): Added 3 new regex patterns:
+   - "pulled/pulls/pulling the plug" (idiom)
+   - "killed/axed/yanked/gutted/nuked/torpedoed/scrapped [the] [feature/product/...]" (active voice)
+   - "[feature/product/...] was/were/got/been killed/axed/..." (passive voice)
+   - "death of/knell/blow/sentence for [feature/product/...]" (noun form)
+
+### Post-patch detection: 13 devices (up from 7)
+
+| Device Type | Evidence |
+|------------|----------|
+| default_burden_privacy | Privacy Backlash (headline) |
+| loaded_language | Backlash |
+| consent_alarm | without permission |
+| policy_reversal | missed the mark |
+| confession_framing | ' Meta admits. |
+| loaded_language | pulled the plug |
+| loaded_language | controversial |
+| policy_reversal | just three days after its debut |
+| policy_reversal | default rather than through an explicit opt-in |
+| policy_reversal | it's no longer available |
+| policy_reversal | opt out of the feature |
+| strategic_reversal | reversed course |
+| cross_publication_import | According to The New York Times, |
+
+### Test file
+- `tests/test_inc_muse_image_backlash_jul14.py` — 37 tests across 5 classes:
+  - TestConfessionFramingPostQuote (4 tests)
+  - TestCrossPublicationImportNamed (7 tests)
+  - TestPolicyReversalTemporalUrgency (5 tests)
+  - TestLoadedLanguageDeathMetaphors (12 tests incl. negative guards)
+  - TestIncMuseImageFullArticle (8 integration tests)
+
+### Sample output
+- `examples/sample_output/inc_muse_image_backlash_2026_07_14_article.txt`
+- `examples/sample_output/inc_muse_image_backlash_2026_07_14_analysis.md`
+
+### Bookkeeping updates
+- `EXPECTED_TOTAL_PATTERNS`: 612 → 615 (in test_structural_consistency.py)
+- README.md: test count 2,556 → 2,593, test files 115 → 116, pattern count 612 → 615
+- ARCHITECTURE.md: pattern count 612 → 615, test count 2,556 → 2,593, test files 115 → 116, annotated articles 177 → 178
+- METHODOLOGY.md: annotated article count 177 → 178
+- QUALITY_STANDARDS.md: annotated article count 177 → 178
+
+### Stats after edit
+- Pattern-matched device types: 95 (unchanged)
+- Total regex patterns: 615 (+3 loaded_language death metaphors)
+- Annotated articles: 178 (+1)
+- Tests: 2,593 (+37 from new test file)
+- Test files: 116 (+1)
