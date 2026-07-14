@@ -1,4 +1,64 @@
 # MediaScope Iteration Log
+## 2026-07-14 01:00 PT — Type C: Ownership & Funding Deep Dive (NYT Insider Transaction Expansion + OpenAI Loss Projection)
+
+**Commit:** `a8d2b15` — "Type C: NYT insider transaction expansion (9 sells, zero buys, $8.6M+ YTD), OpenAI $14B loss projection, BofA AI capital context"
+
+### Focus: NYT Insider Transaction History & OpenAI Financial Context
+
+The NYT profile's `insider_transactions` section had only 1 transaction (Welch Jun 3). SEC Form 4 filings via MarketBeat and Simply Wall St revealed 8 additional 2026 transactions — creating a complete YTD insider activity log and a significant analytical finding.
+
+### Changes
+
+1. **Complete 2026 YTD Insider Transaction Log (9 transactions, 7 unique sellers)**
+   - Meredith Kopit Levien (CEO): 51,949 shares @ $79.95 ($4.15M, Mar 3) + 9,750 shares @ $77.85 ($649K, May 12) = **$4.80M total, largest individual seller**
+   - Arthur G. Sulzberger (Chairman): 13,000 shares @ $79.95 ($1.04M, Mar 3), retains 172,338 shares
+   - William Bardeen (CFO): 13,000 shares @ $79.56 ($1.03M, Mar 3) + 4,121 shares @ $77.85 ($321K, May 12)
+   - Diane Brayton (General Counsel): 4,600 shares @ $73.57 ($301K, Feb 20) — notable given active litigation oversight
+   - R. Anthony Benten (CAO): 1,913 shares @ $73.57 ($141K, Feb 17)
+   - David S. Perpich (Director/EVP Product): 9,000 shares @ $77.06 ($694K, May 11)
+   - Jacqueline M. Welch (CHRO): 4,000 shares @ $74.14 ($297K, Jun 3) — was already documented
+
+2. **Insider Pattern Analysis Section**
+   - ALL-SELL, ZERO-BUY pattern across 9 transactions, $8.63M total, 111,333 shares
+   - Analytical significance: insiders not pricing in a transformative OpenAI litigation outcome
+   - Mar 3 coordinated window: $6.22M in one day (CEO + Chairman + CFO), 2 days before ATH of $82.74
+   - May 11-12 cluster: $1.66M sold immediately after Q1 earnings beat — selling into good news
+   - General Counsel selling is uniquely significant given direct litigation oversight
+
+3. **OpenAI Projected $14B Loss in 2026**
+   - Internal documents (Inc., Jun 2026): OpenAI projects $14B net loss in 2026, not profitable until 2029-2030
+   - Added to IPO section, contextualizes the $852B valuation vs. ongoing cash burn
+
+4. **BofA AI Capital Context**
+   - BofA has helped raise nearly $500B in AI-related capital since 2025, 60% of all such fundraising (Reuters/internal data Jul 9)
+   - Added analytical note: banking establishment financially aligned with AI companies, creating structural incentive to minimize publisher copyright claims that could impair valuations
+
+5. **Stock Price & Metrics Update**
+   - Updated to $75.04 (Jul 11 close, Finnhub). Added ATH $82.74 (Mar 5, 2026), P/E 32.20, dividend yield 1.03%
+
+### Analytical Discovery
+
+The ALL-SELL pattern is the iteration's primary analytical contribution. The NYT's $28M litigation spend against OpenAI is the largest publisher copyright investment, yet every C-suite officer with material stock holdings has been selling — including the General Counsel who directly oversees the case. This creates a testable hypothesis: **insider trading patterns can serve as a revealed-preference indicator of expected litigation outcomes**, independent of public statements about case strength. If NYT management believed a transformative settlement or licensing windfall was likely, at least some insiders would hold or accumulate. The sell-through pattern is consistent with expectations of a modest outcome (statutory damages, licensing deal at market rates) rather than a landmark award.
+
+### Stats after
+- 200 journalists tracked (unchanged)
+- NYT profile: 2,437 lines (was 2,260, +177)
+- 9 insider transactions logged with full SEC detail (was 1)
+- 124 structural consistency tests passing (unchanged)
+- Insider pattern analysis: new section type (first publication to have full insider activity log)
+
+### Sources consulted
+- MarketBeat (marketbeat.com/stocks/NYSE/NYT/insider-trades/) — 6 transactions with USD pricing
+- Simply Wall St (simplywall.st/stocks/us/media/nyse-nyt/new-york-times/ownership) — 9 transactions, includes Levien/Brayton not in MarketBeat
+- SEC EDGAR (sec.gov, CIK 71691) — Form 4 filing index
+- Robinhood (robinhood.com, Jul 12 snapshot) — stock price, P/E, key stats
+- Finnhub (finnhub.io) — real-time stock price $75.04
+- Reuters (Jul 9) — BofA $520M credit line, $500B AI capital raising context
+- Inc. (Jun 2026) — OpenAI $14B projected loss, 2029 profitability target
+- eWeek, MedaNama, TradingView — OpenAI S-1, IPO context
+
+---
+
 ## 2026-07-14 00:00 PT — Type B: Journalist Research (Lauren Goode Deep Sourcing)
 
 **Journalist:** Lauren Goode — Wired Senior Correspondent (upgraded from Senior Writer ~2025)
