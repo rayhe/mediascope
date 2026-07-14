@@ -635,8 +635,7 @@ journalists:
   - beat: science, technology
     end: '2003'
     event_type: hired
-    notes: 'Began journalism career in 1996 on The Economist''s science desk in London. First
-      job in journalism. British national, born Aug 4 1971 in London.'
+    notes: Began journalism career in 1996 on The Economist's science desk in London. First job in journalism. British national, born Aug 4 1971 in London.
     publication: economist
     role: science_correspondent
     source_url: https://en.wikipedia.org/wiki/Gideon_Lichfield
@@ -644,8 +643,7 @@ journalists:
   - beat: Mexico City bureau
     end: '2005'
     event_type: hired
-    notes: Foreign correspondent posting in Mexico City. Part of a 16-year Economist career
-      spanning four foreign bureaus. Speaks Spanish fluently.
+    notes: Foreign correspondent posting in Mexico City. Part of a 16-year Economist career spanning four foreign bureaus. Speaks Spanish fluently.
     publication: economist
     role: correspondent
     source_url: https://en.wikipedia.org/wiki/Gideon_Lichfield
@@ -653,9 +651,8 @@ journalists:
   - beat: Moscow bureau
     end: '2008'
     event_type: hired
-    notes: Foreign correspondent posting in Moscow. Speaks Russian. Covered post-Soviet
-      political developments. Self-described as generation shaped by the fall of the Berlin
-      Wall — "I was 18 when the Berlin Wall came down."
+    notes: Foreign correspondent posting in Moscow. Speaks Russian. Covered post-Soviet political developments. Self-described as generation shaped by the fall of the Berlin Wall — "I was 18 when the Berlin
+      Wall came down."
     publication: economist
     role: correspondent
     source_url: https://en.wikipedia.org/wiki/Gideon_Lichfield
@@ -663,8 +660,7 @@ journalists:
   - beat: Jerusalem bureau
     end: '2011'
     event_type: hired
-    notes: Foreign correspondent posting in Jerusalem. Speaks Hebrew. Final foreign bureau
-      before returning to New York City.
+    notes: Foreign correspondent posting in Jerusalem. Speaks Hebrew. Final foreign bureau before returning to New York City.
     publication: economist
     role: correspondent
     source_url: https://en.wikipedia.org/wiki/Gideon_Lichfield
@@ -672,10 +668,8 @@ journalists:
   - beat: digital strategy, executive education
     end: '2012'
     event_type: hired
-    notes: 'Returned to NYC. Dual role: Deputy Digital Editor and editorial head of Economist
-      Education, an internal startup aimed at business executives. Final Economist position
-      before departing for Quartz. Also served as adjunct professor at NYU''s Arthur L.
-      Carter Journalism Institute (2011), teaching graduate course in foreign reporting.'
+    notes: 'Returned to NYC. Dual role: Deputy Digital Editor and editorial head of Economist Education, an internal startup aimed at business executives. Final Economist position before departing for Quartz.
+      Also served as adjunct professor at NYU''s Arthur L. Carter Journalism Institute (2011), teaching graduate course in foreign reporting.'
     publication: economist
     role: deputy_digital_editor
     source_url: https://en.wikipedia.org/wiki/Gideon_Lichfield
@@ -683,13 +677,9 @@ journalists:
   - beat: founding editor, ethics policy, style guide, newsletters
     end: '2017'
     event_type: hired
-    notes: 'One of the founding editors at Quartz (launched by The Atlantic in 2012 as a
-      global business/economics news site). Led initial newsroom hiring, established editorial
-      voice, developed ethics policy and style guide, edited Quartz Daily Brief newsletter
-      — a pioneer in the email newsletter space. Title evolved to senior editor for business
-      news. CONCURRENT: One-year fellowship at Data & Society Research Institute (2014-15)
-      as Science Fiction Writer in Residence, writing speculative fiction exploring social/political
-      implications of technological advances.'
+    notes: 'One of the founding editors at Quartz (launched by The Atlantic in 2012 as a global business/economics news site). Led initial newsroom hiring, established editorial voice, developed ethics
+      policy and style guide, edited Quartz Daily Brief newsletter — a pioneer in the email newsletter space. Title evolved to senior editor for business news. CONCURRENT: One-year fellowship at Data &
+      Society Research Institute (2014-15) as Science Fiction Writer in Residence, writing speculative fiction exploring social/political implications of technological advances.'
     publication: quartz
     role: global_news_editor
     source_url: https://talkingbiznews.com/they-talk-biz-news/quartz-lichfield-named-editor-of-mit-tech-review/
@@ -697,15 +687,10 @@ journalists:
   - beat: technology, society, policy
     end: 2021-03
     event_type: hired
-    notes: 'EIC from early Dec 2017. Oversaw editorial content and products: website, digital
-      newsletters, print magazine, live events, new platforms. Gave MIT TR new mission: "to
-      make technology a greater force for good." Led aggressive coverage of MIT-Epstein scandal
-      (2019). Added podcasts, themed print issues, grant-funded journalism, collaborations
-      with investigative outlets. Grew audience development team, increased long-form online
-      features output. Improved diversity recruiting/hiring practices. Edited ''Make Shift:
-      Dispatches from the Post-Pandemic Future'' (MIT Press, May 2021). Compensation $269K-$278K
-      (FY2019-2021 990 filings). KEY MIGRATION: Left for Wired as Global Editorial Director
-      — replaced by Mat Honan (from BuzzFeed News).'
+    notes: 'EIC from early Dec 2017. Oversaw editorial content and products: website, digital newsletters, print magazine, live events, new platforms. Gave MIT TR new mission: "to make technology a greater
+      force for good." Led aggressive coverage of MIT-Epstein scandal (2019). Added podcasts, themed print issues, grant-funded journalism, collaborations with investigative outlets. Grew audience development
+      team, increased long-form online features output. Improved diversity recruiting/hiring practices. Edited ''Make Shift: Dispatches from the Post-Pandemic Future'' (MIT Press, May 2021). Compensation
+      $269K-$278K (FY2019-2021 990 filings). KEY MIGRATION: Left for Wired as Global Editorial Director — replaced by Mat Honan (from BuzzFeed News).'
     publication: mit-tech-review
     role: eic
     source_url: https://www.technologyreview.com/2017/12/05/3720/a-letter-from-mit-technology-reviews-new-editor-in-chief/
@@ -713,19 +698,12 @@ journalists:
   - beat: technology, culture, society, global
     end: 2023-09
     event_type: hired
-    notes: 'Appointed Global Editorial Director (not just EIC) — responsible for content
-      strategy, vision and tone across all Wired editions: US, UK, Italy, Japan. Started
-      March 22, 2021. Replaced Nicholas Thompson (who left for The Atlantic as CEO). Reported
-      to Anna Wintour (Chief Content Officer, Condé Nast). Title change from "EIC" to "Global
-      Editorial Director" reflected Condé Nast global reorganization under Wintour. Co-created
-      and co-hosted "Have a Nice Future" podcast with Lauren Goode — 58 episodes through
-      Oct 25, 2023. Also co-hosted "WIRED Politics Lab" with Goode. Announced departure
-      May 31, 2023: "I want to begin focusing more of my energies on [how societies can govern
-      themselves]... at least some of it probably involves committing acts of journalism with
-      my own two hands, a thing I''ve increasingly missed doing." Stayed until mid-September
-      2023. Replaced by Katie Drummond (from Vice News, announced Aug 10, started Aug 28).
-      KEY: Only held position ~2.5 years — significantly shorter than predecessor Thompson
-      (~7 years). Remained as Wired Contributor through Oct 2023 for final HANF podcast episodes.'
+    notes: 'Appointed Global Editorial Director (not just EIC) — responsible for content strategy, vision and tone across all Wired editions: US, UK, Italy, Japan. Started March 22, 2021. Replaced Nicholas
+      Thompson (who left for The Atlantic as CEO). Reported to Anna Wintour (Chief Content Officer, Condé Nast). Title change from "EIC" to "Global Editorial Director" reflected Condé Nast global reorganization
+      under Wintour. Co-created and co-hosted "Have a Nice Future" podcast with Lauren Goode — 58 episodes through Oct 25, 2023. Also co-hosted "WIRED Politics Lab" with Goode. Announced departure May 31,
+      2023: "I want to begin focusing more of my energies on [how societies can govern themselves]... at least some of it probably involves committing acts of journalism with my own two hands, a thing I''ve
+      increasingly missed doing." Stayed until mid-September 2023. Replaced by Katie Drummond (from Vice News, announced Aug 10, started Aug 28). KEY: Only held position ~2.5 years — significantly shorter
+      than predecessor Thompson (~7 years). Remained as Wired Contributor through Oct 2023 for final HANF podcast episodes.'
     publication: wired
     role: global_editorial_director
     source_url: https://talkingbiznews.com/media-news/wired-eic-lichfield-is-departing/
@@ -733,33 +711,21 @@ journalists:
   - beat: democracy, governance, technology regulation
     end: present
     event_type: hired
-    notes: 'Post-Wired career pivot from tech journalism to democracy/governance. Mini-sabbatical
-      (Collision conference, Sept 2023). Currently: Fellow at Harvard Ash Center for Democratic
-      Governance; Data & Society affiliate; writes "Futurepolis" Substack ($5/mo, $50/yr)
-      on reinventing democratic governance for the 21st century. Self-describes as "Democracy
-      Futurist" on LinkedIn. Speaker on tech regulation and citizens'' assemblies (Templeton
-      World Charity Foundation, FWD50, Beyond Intractability). Splits time between NYC and
-      Bay Area. KEY ANALYTICAL NOTE: NOT at The Independent newspaper — "independent" refers
-      to independent/freelance status. Publication slug corrected from prior erroneous "independent"
-      to "freelance".'
+    notes: 'Post-Wired career pivot from tech journalism to democracy/governance. Mini-sabbatical (Collision conference, Sept 2023). Currently: Fellow at Harvard Ash Center for Democratic Governance; Data
+      & Society affiliate; writes "Futurepolis" Substack ($5/mo, $50/yr) on reinventing democratic governance for the 21st century. Self-describes as "Democracy Futurist" on LinkedIn. Speaker on tech regulation
+      and citizens'' assemblies (Templeton World Charity Foundation, FWD50, Beyond Intractability). Splits time between NYC and Bay Area. KEY ANALYTICAL NOTE: NOT at The Independent newspaper — "independent"
+      refers to independent/freelance status. Publication slug corrected from prior erroneous "independent" to "freelance".'
     publication: freelance
     role: democracy_futurist
     source_url: https://beyondintractability.org/gideon-lichfield-interview
     start: 2023-10
   multi_publication: true
   name: Gideon Lichfield
-  notes: 'Born Aug 4, 1971 in London. BSc Physics & Philosophy (University of Bristol),
-    MSc Philosophy of Social Science (London School of Economics). British national. Speaks
-    5 languages: English, Spanish, French, Russian, Hebrew. Edited ''Make Shift: Dispatches
-    from the Post-Pandemic Future'' (MIT Press, 2021). Data & Society fellow (2014-15,
-    Science Fiction Writer in Residence). NYU adjunct professor (2011, Arthur L. Carter
-    Journalism Institute). Currently Harvard Ash Center for Democratic Governance fellow
-    + Futurepolis Substack. Self-described: "polyglot, climber, biker, cocktailer, and
-    vagabond." ANALYTICAL SIGNIFICANCE: Dual EIC at two tracked publications (MIT Technology
-    Review 2017-2021, Wired 2021-2023) makes him the single most valuable natural experiment
-    for DiD editorial influence analysis. His departure letter explicitly stated wanting
-    to return to hands-on journalism and focus on governance — a rare voluntary departure
-    by a top-tier EIC from a Condé Nast title.'
+  notes: 'Born Aug 4, 1971 in London. BSc Physics & Philosophy (University of Bristol), MSc Philosophy of Social Science (London School of Economics). British national. Speaks 5 languages: English, Spanish,
+    French, Russian, Hebrew. Edited ''Make Shift: Dispatches from the Post-Pandemic Future'' (MIT Press, 2021). Data & Society fellow (2014-15, Science Fiction Writer in Residence). NYU adjunct professor
+    (2011, Arthur L. Carter Journalism Institute). Currently Harvard Ash Center for Democratic Governance fellow + Futurepolis Substack. Self-described: "polyglot, climber, biker, cocktailer, and vagabond."
+    ANALYTICAL SIGNIFICANCE: Dual EIC at two tracked publications (MIT Technology Review 2017-2021, Wired 2021-2023) makes him the single most valuable natural experiment for DiD editorial influence analysis.
+    His departure letter explicitly stated wanting to return to hands-on journalism and focus on governance — a rare voluntary departure by a top-tier EIC from a Condé Nast title.'
   source_urls:
   - https://en.wikipedia.org/wiki/Gideon_Lichfield
   - https://talkingbiznews.com/media-news/wired-eic-lichfield-is-departing/
@@ -4531,40 +4497,86 @@ journalists:
     entries verified with primary source URLs. Russian Vogue founding confirmed via Podchaser and me.sh bio aggregators (no direct Russian Vogue archives available). The Forward Moscow bureau confirmed
     via same secondary bio sources. Outside Magazine correspondent confirmed via first-person interview on outsideonline.com. Knight fellowship confirmed via TalkingBizNews announcement. Book details confirmed
     via Amazon listing and W.W. Norton catalog.'
-- career:
-  - beat: policy, disinformation, labor, human rights, conflict
+- name: Vittoria Elliott
+  career:
+  - publication: international-development
+    role: development_worker
+    beat: international development, social enterprise, entrepreneurship
+    start: '2014'
+    end: '2016'
+    event_type: other
+    notes: Pre-journalism career in international development, policy, and entrepreneurship with experience working in Ghana, Kenya, and India. Worked with startups and social enterprises in emerging markets.
+      This phase is unusual for a tech platform reporter and shaped her structural lens on platform power in the Global South. Tufts University BA in International Relations and Psychology (International
+      Relations Research Scholar). The development work preceded her pivot to journalism at Columbia.
+    source_url: https://vittoriaelliott.com/about
+  - publication: columbia-journalism-school
+    role: graduate_student
+    beat: journalism
+    start: '2016'
+    end: '2017'
+    event_type: education
+    notes: Columbia University Graduate School of Journalism MS. Participated in ProPublica's inaugural Electionland project (2016), monitoring the presidential election and verifying social media posts
+      and information in real time. This early exposure to disinformation and election integrity work became a throughline in her career.
+    source_url: https://www.newsguardtech.com/team/vittoria-elliott/
+  - publication: freelance
+    role: freelance_journalist
+    beat: policy, disinformation, labor, human rights, conflict, technology
+    start: '2017'
     end: 2020-12
     event_type: freelance
-    notes: 'Freelance for The New Humanitarian, Al Jazeera, ProPublica (investigative data research), CBS (fact checking), Washington Post, Atlas Obscura, OneZero, CannabisWire, NewsGuard, Architectural
-      Record, Univision, The Independent. Before journalism: international development and startups in Ghana, Kenya, India. Tufts BA (International Relations & Psychology), Columbia School of Journalism
-      MS.'
-    publication: freelance
-    role: freelance_journalist
-    source_url: https://vittoriaelliott.com/
-    start: 2017-01
-  - beat: disinformation, labor, tech platforms in non-Western markets
+    notes: 'Extensive freelance portfolio spanning investigative data research, fact-checking, and international reporting. Key roles: Deputy News Editor at Al Jazeera English (freelance); investigative
+      data research for ProPublica; fact-checker for Washingtonian Magazine and CBS; Contributing Analyst for NewsGuard (misinformation/media credibility ratings). Also wrote for ZDF, Women in the World,
+      PRI, The Washington Post, Atlas Obscura, OneZero (Medium''s tech vertical), CannabisWire, The New Humanitarian, Architectural Record, Univision, The Independent. Taught a writing course for the Social
+      Sciences Research Council (SSRC). The breadth of this freelance phase — spanning German public television (ZDF), Gulf-based English-language news (Al Jazeera), Latin American media (Univision), and
+      US investigative outlets (ProPublica) — built an unusually international perspective for a US tech reporter. The NewsGuard analyst role gave her direct experience evaluating media credibility, which
+      now informs her beat covering platforms'' content moderation failures.'
+    source_url: https://vittoriaelliott.com/about
+  - publication: rest-of-world
+    role: staff_writer
+    beat: disinformation, labor, tech platforms in non-Western markets
+    start: 2021-01
     end: 2022-06
     event_type: hired
-    notes: Staff writer covering disinformation and labor in markets outside the US and Western Europe. Nominated for One World Media award.
-    publication: rest-of-world
-    role: staff_writer
+    notes: 'Staff writer at the nonprofit tech news site (founded by Sophie Schmidt, daughter of former Google CEO Eric Schmidt) covering disinformation and labor in markets outside the US and Western Europe.
+      Nominated for One World Media award. Notable stories include Latin American tech talent nearshoring by US firms, Russia''s accidental blocking of domains containing ''t.co'' while targeting Twitter,
+      and coverage of microtask platform labor forces (Remotasks, etc.) in the Global South creating datasets for self-driving cars. Rest of World''s editorial mission — tech coverage from the perspective
+      of the majority of the world''s internet users — aligned with Elliott''s development background and shaped her framing of tech platform power as a global, not just Silicon Valley, phenomenon. KEY
+      MIGRATION: Rest of World → Wired represents a move from a nonprofit Global South-focused outlet to a Condé Nast institutional publication, a significant framing environment shift for DiD analysis.'
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-elliott-to-cover-platforms-and-power/
-    start: 2021-01
-  - beat: platforms and power, AI governance, elections
-    event_type: hired
-    notes: 'Hired to cover technology platforms and their power. Led Wired''s AI Elections Project (2024) — appeared on TED AI Show discussing AI''s role in global elections. Promoted to senior writer by
-      2025-2026. Reports on DOGE, government tech, Elon Musk, platform regulation. Co-bylined with Matt Burgess on EU-Big Tech coverage. Regular TV/radio appearances: PBS NewsHour, Al Jazeera, BBC, NPR,
-      NBC. Speaker at Concordia 2024 Annual Summit (billed as "platforms and power reporter"). Prior to journalism career, contributed to NewsGuard as a contributing analyst (misinformation/media credibility
-      ratings).'
-    publication: wired
+  - publication: wired
     role: senior_writer
-    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-elliott-to-cover-platforms-and-power/
+    beat: platforms and power, AI governance, elections, DOGE, content moderation
     start: 2022-07
-  name: Vittoria Elliott
-  notes: 'Wired senior writer covering platforms and power. Background in international development (Ghana, Kenya, India) before journalism — unusual pipeline for a tech platform reporter. Rest of World
-    → Wired migration. Led Wired''s AI Elections Project (2024). ANALYTICAL VALUE: Elliott''s international development background gives her a structural lens on tech platform power that differs from the
-    Silicon Valley insider perspective of most Wired tech reporters. Her beat (platforms and power) directly overlaps with Meta coverage territory. One World Media award nomination suggests Global South
-    framing. Appeared on TED AI Show, PBS NewsHour, Al Jazeera, BBC, NPR, NBC. Guest lectured at NYU.'
+    event_type: hired
+    notes: 'Hired as platforms and power reporter at Condé Nast''s Wired (July 2022). Beat covers technology''s implications for policy, disinformation, labor, human rights, and conflict. Major coverage
+      arcs: (1) Twitter/Musk purchase (Oct 2022-2023) — spoke to fired trust and safety staff, covered ''Fork in the Road'' email parallels with later DOGE operations. (2) Meta Oversight Board — broke stories
+      on deepfake porn investigations involving unnamed celebrities, Meta ad enforcement failures (PragerU Kids political ads), and trust & safety outsourcing to startups like Sero AI after Big Tech cut
+      thousands of T&S staff. (3) AI Elections Project (2024) — led Wired''s coverage of AI in 50+ global elections during the biggest election year in modern history. Appeared on TED AI Show (Sep 2024,
+      283K+ plays) discussing AI election interference. (4) DOGE coverage (2025-2026) — Wired''s DOGE reporting team was described by On the Media as ''beating the New York Times, the Washington Post, NBC''
+      on the story. Elliott personally credited Wired''s years of covering tech executives'' views on government as preparation: ''We understand how they like to run their companies... Now they are in a
+      position to make the world run that way.'' Wired gained 62,500 new US subscribers in the first two weeks of February 2025 alone during this coverage. Regularly appears on Wired''s PoliticsLab podcast.
+      Speaker at 2024 Concordia Annual Summit. Co-bylines with Matt Burgess on EU-Big Tech coverage. Regular TV/radio: PBS NewsHour, Al Jazeera, BBC, NPR, NBC. Guest lecturer at NYU. Member of @wiredunion
+      (CWA). KEY ANALYTICAL VALUE for MediaScope: (1) Her beat ''platforms and power'' directly maps onto Meta coverage territory — content moderation, Oversight Board, AI governance, privacy. (2) Rest
+      of World → Wired migration (nonprofit Global South outlet → Condé Nast institutional) is a high-value DiD candidate for measuring how institutional framing environment affects coverage posture. (3)
+      Her international development background gives her a structural/power-dynamics lens on tech platforms that differs markedly from the Silicon Valley insider perspective of most Wired tech reporters
+      (cf. Lauren Goode''s consumer tech lens, Paresh Dave''s wire-service neutrality). (4) Her experience as a NewsGuard Contributing Analyst means she has direct, professional experience evaluating media
+      credibility — a meta-awareness of editorial bias that could either sharpen or bias her own platform coverage.'
+    source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-elliott-to-cover-platforms-and-power/
+  multi_publication: true
+  source_urls:
+  - https://vittoriaelliott.com/about
+  - https://talkingbiznews.com/they-re-hiring/wired-hires-elliott-to-cover-platforms-and-power/
+  - https://www.newsguardtech.com/team/vittoria-elliott/
+  - https://concordialive.com/speakers/vittoria-elliot/
+  - https://muckrack.com/vittoria-elliott
+  - https://www.ted.com/talks/the_ted_ai_show_humanity_s_first_ai_election_w_wired_s_vittoria_elliott
+  notes: 'Wired senior writer covering platforms and power — the beat that most directly overlaps with Meta coverage at Wired. Career arc: International development (Ghana, Kenya, India) → Columbia Journalism
+    School → Freelance (Al Jazeera, ProPublica, NewsGuard, Washington Post, The Independent, etc.) → Rest of World → Wired. Led Wired''s AI Elections Project (2024). Tufts BA International Relations & Psychology
+    (International Relations Research Scholar). Columbia Journalism School MS. One World Media award nomination (Rest of World). ANALYTICAL VALUE: (1) Unusual pipeline — international development → journalism
+    gives her a structural power-dynamics lens on tech platforms that differs from Silicon Valley insider framing. (2) Rest of World → Wired migration is a DiD natural experiment: nonprofit Global South
+    outlet → Condé Nast institutional. (3) Her direct NewsGuard experience (media credibility analyst) creates meta-awareness of editorial bias patterns. (4) DOGE coverage impact: Wired gained 62,500 US
+    subscribers in 2 weeks (Feb 2025) during her team''s government-tech reporting, demonstrating adversarial coverage''s commercial value to Condé Nast. (5) TED AI Show appearance (283K plays) and Concordia
+    Annual Summit speaking suggest growing public intellectual profile beyond byline work.'
 - career:
   - beat: breaking news
     end: 2017-06
