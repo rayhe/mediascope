@@ -1039,6 +1039,7 @@ The pipeline evaluates 12 paths (A–L) in priority order — the first match fi
 | Path | Failure Mode | When It Fires | Agent Action |
 |---|---|---|---|
 | **A** | VADER scores adversarial prose positive | raw ≥ 0, agency < −0.3, ≥3 adversarial devices | Full override — trust corrected score, not raw |
+| **A (forced-retreat)** | Capitulation articles (subject "yanks," "scraps") read positive | raw ≥ 0, `policy_reversal + consent_alarm` co-occur, agency positive | Fires Path A despite positive agency — retreat verbs have grammatical agency but editorial valence is negative |
 | **B** | VADER understates negative magnitude | raw ∈ (−0.5, 0), agency < −0.3, ≥6 adversarial devices | Magnitude adjustment — corrected score is more negative than raw |
 | **C** | Product reviews with embedded anchors | raw > 0.3, agency ≥ 0, ≥2 anchor devices + ≥4 adversarial | Mixed article — corrected score reflects reader takeaway, not word count |
 | **D** | Sardonic/mocking contempt | raw ≥ 0.3, agency ≥ 0.3, ≥7 loaded language + ≥8 adversarial | High-contempt override — loaded language is the dominant signal |
@@ -1211,3 +1212,110 @@ profile = mediascope.config.load_profile("wired")
 articles = mediascope.ingest.rss.fetch_all_feeds(profile)
 # ... analyze, score, report
 ```
+
+## Troubleshooting & Common Pitfalls
+
+Practical problems agents encounter when using MediaScope, with diagnostic steps and fixes.
+
+### Problem 1: Sentiment Score Seems Wrong
+
+**Symptom:** An article that reads as clearly negative scores +0.30 to +0.65.
+
+**Diagnosis:**
+1. Check `result.framing_corrected` — if `False`, no correction path fired.
+2. Check `result.raw_tone` vs `result.overall_tone` — if they're the same, correction didn't activate.
+3. Run `detect_framing_devices(text)` and count adversarial types. If ≥3 adversarial devices + negative agency but no correction fired, you may be hitting a known gap.
+
+**Common causes:**
+- **Financial journalism:** VADER inflates by +0.3 to +0.5. No dedicated correction path yet. See [METHODOLOGY.md §16](METHODOLOGY.md#16-financial-journalism-sentiment-bias).
+- **Q&A format:** Source extraction returns zero, breaking correction. Manual annotation required.
+- **"Facts-speak-for-themselves" irony:** No adversarial vocabulary, no sarcastic devices — irony is purely structural. Manual annotation required.
+- **Consent-alarm articles without policy_reversal:** Service journalism with `consent_alarm` framing but no `policy_reversal` won't trigger the forced-retreat override. Flag as uncorrected.
+
+**Action:** Report both raw and corrected scores. When correction didn't fire but framing devices signal adversarial stance, trust the framing devices over the sentiment score and note the limitation.
+
+### Problem 2: Entity Not Detected
+
+**Symptom:** A company or product mentioned in the article doesn't appear in entity detection results.
+
+**Diagnosis:**
+1. Check `ENTITY_REFERENCE.md` — is the entity in one of the 87 clusters?
+2. Check for disambiguation: terms like "Apple" (vs. fruit), "Meta" (vs. "meta tag"), or "Amazon" (vs. river) may be filtered by negative-lookahead patterns.
+3. Check for aliases: some entities have specific forms. "Google" works but "Alphabet" may require the full cluster.
+
+**Fix:** If the entity is genuinely missing, add it as a custom cluster:
+```python
+custom_clusters = {
+    "NewEntity": {
+        "aliases": ["NewEntity", "NE Corp", "NEC"],
+        "regex": r"\b(NewEntity|NE Corp|NEC)\b"
+    }
+}
+entities = detect_entities(text, clusters=custom_clusters)
+```
+
+### Problem 3: Source Extraction Returns Zero
+
+**Symptom:** `extract_sources(text)` returns an empty list on an article with obvious quotes.
+
+**Common causes:**
+- **Q&A format:** Question-answer structure breaks all 14 extraction patterns. This is a known limitation with no automated fix.
+- **Non-English sources:** Extraction patterns are English-only.
+- **Unusual attribution style:** Some publications (blogs, opinion) use non-standard attribution ("As X puts it" without a verb pattern).
+- **Stop-word filtering:** Source extraction filters phrases like "After Meta" to prevent false positives, but may over-filter in edge cases.
+
+**Action:** For Q&A articles, skip source extraction and report framing devices + agency attribution only. Note zero sources in your output.
+
+### Problem 4: Correction Path Fires When It Shouldn't
+
+**Symptom:** A genuinely positive article gets corrected to negative.
+
+**Diagnosis:**
+1. Check which path fired: `result.correction_path` or check `result.framing_corrected`.
+2. Count adversarial devices — do they genuinely signal adversarial editorial stance, or are they false positives from the domain?
+3. Check agency attribution — is the subject genuinely framed as passive/under scrutiny?
+
+**Common cause:** Corporate PR articles quoting only supportive sources can still trigger framing devices like `juxtaposition` or `scale_magnitude` through normal business reporting language. The correction pipeline has guardrails (minimum device counts, agency thresholds), but high-device-count press-release-driven articles can occasionally cross them.
+
+**Action:** When the correction seems wrong, report the raw score with a note about the correction firing. Cross-check with source stance: if stance_balance > 0.3 (mostly supportive sources), the corrected score may be too aggressive.
+
+### Problem 5: Two Pattern Count Numbers (635 vs 696)
+
+**Context:** `_DEVICE_PATTERNS` contains 635 patterns organized by device type. The README reports 696 "compiled regex patterns." These count different things:
+- **635:** Patterns in the `_DEVICE_PATTERNS` dispatch dictionary — these are the device-type-specific detection patterns.
+- **696:** All `re.compile()` calls in `framing.py`, including helper patterns (stop-word filters, attribution verb matchers, structural-pass detection regex) that aren't part of any device type.
+
+Both numbers are correct. The 635 is the number that matters for device detection coverage; the 696 is the total compiled regex footprint. When adding new framing patterns, only the `_DEVICE_PATTERNS` count (635) is guarded by the test suite.
+
+### Problem 6: Cross-Publication Comparison Shows Large Gap
+
+**Symptom:** Two outlets show a 0.5+ tone gap on the same event.
+
+**Before concluding bias, check:**
+1. **Genre difference:** Wire service vs investigative journalism inherently produces a tone gap. See [Genre-Aware Analysis](#genre-aware-analysis-workflow).
+2. **Word count ratio:** A 300-word wire brief vs a 2,500-word investigation will have different framing density.
+3. **Framing density:** Normalize framing device counts per 100 words before comparing across genres.
+4. **Headline-body alignment:** A negative headline with a positive body (or vice versa) is normal in certain genres but distorts aggregate scores.
+
+**Action:** Always include a wire-service baseline in N-way comparisons. Report `magazine_tone - wire_tone` as the editorial framing contribution, not the raw magazine tone.
+
+### Problem 7: Legal Vocabulary Inflates/Deflates Scores
+
+**Symptom:** Lawsuit-coverage articles score more negative than expected (legal terms like "discriminatory," "retaliation" inflate VADER negative scores by ~0.15–0.20).
+
+**Diagnosis:** Check `classify_topic()` — if `litigation` confidence ≥ 0.4, the article is primarily lawsuit coverage.
+
+**Action:** For litigation articles, expect VADER magnitude to be overstated by ~0.15–0.20. Cross-check against wire-service baseline on the same case filing. When expert-source presence is high, the editorial voice is typically more measured than VADER suggests. See [ACCURACY_GUIDE.md](ACCURACY_GUIDE.md) for the full legal vocabulary calibration gap analysis.
+
+### Quick Reference: When to Trust Which Score
+
+| Scenario | Trust Raw? | Trust Corrected? | Primary Signal |
+|---|---|---|---|
+| Wire service article | ✅ Yes | N/A (rarely fires) | Raw composite |
+| Investigative, correction fired | ❌ No | ✅ Yes | Corrected + framing devices |
+| Financial, no correction | ❌ No | N/A | Framing devices + source stance |
+| Sardonic, correction fired | ❌ No | ✅ Yes | Corrected (expect Path D/H/K) |
+| Q&A format | ❌ No | ❌ No | Framing devices + agency only |
+| Correction fired but seems wrong | ⚠️ Maybe | ⚠️ Maybe | Source stance as tiebreaker |
+
+For the full decision tree with worked examples, see [ACCURACY_GUIDE.md](ACCURACY_GUIDE.md#part-3-when-to-trust-each-score).

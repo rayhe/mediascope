@@ -116,7 +116,7 @@ Raw Text
   └── (Optional) LLM score ─────┘          │
                                            ▼
                                  Framing Device Detection
-                                 (102 device types, 635 patterns)
+                                 (102 device types, 696 compiled regex)
                                            │
                                            ▼
                                  Active-Negative Agency Check
@@ -333,7 +333,7 @@ Two documented failure classes lack correction paths:
 
 1. **Financial journalism inflation (unaddressed):** Investment recommendation vocabulary (e.g., "strong buy," "bonanza," "attractive valuation") inflates VADER scores by +0.3–0.5 regardless of editorial stance. A future correction path would use headline sentiment as an anchor combined with framing device density. See [METHODOLOGY.md §16](METHODOLOGY.md#16-financial-journalism-sentiment-bias) for full analysis and design constraints.
 
-2. **Procedural service journalism (unaddressed):** VADER misscores privacy alarm articles where the negative tone is structural (consent_alarm devices, guilt transfer sections) rather than lexical. No correction path fires because the article lacks adversarial editorial vocabulary — the alarm comes from framing, not word choice. Discovered via NY Post Muse Image opt-out article (Jul 10, 2026).
+2. **Procedural service journalism (partially addressed):** VADER misscores privacy alarm articles where the negative tone is structural (consent_alarm devices, guilt transfer sections) rather than lexical. No standard correction path fires because the article lacks adversarial editorial vocabulary — the alarm comes from framing, not word choice. Discovered via NY Post Muse Image opt-out article (Jul 10, 2026). **Partial fix (Jul 14, 2026):** The forced-retreat override (Path A variant) now handles the subset of service journalism where `policy_reversal + consent_alarm` co-occur, by waiving the agency threshold so Path A can fire even with positive agency. Articles with consent_alarm *without* policy_reversal remain uncorrected. See [ACCURACY_GUIDE.md](ACCURACY_GUIDE.md) and [SENTIMENT_CORRECTION_REFERENCE.md](SENTIMENT_CORRECTION_REFERENCE.md#path-a-variant-forced-retreat-override-jul-14-2026) for details.
 
 ### Source Extraction
 
@@ -355,7 +355,7 @@ The current asymmetry scoring compares a target entity's sentiment against peers
 ### Scope
 
 - The toolkit currently tracks **6 publications** with full ownership profiles. Adding publications requires manual research into ownership chains, revenue relationships, and litigation connections (see [ADDING_PUBLICATIONS.md](ADDING_PUBLICATIONS.md)).
-- Entity clusters (86) are optimized for the tech/media/finance domain. Analysis of other verticals (e.g., pharmaceutical, energy, defense) would require domain-specific cluster expansion.
+- Entity clusters (87) are optimized for the tech/media/finance domain. Analysis of other verticals (e.g., pharmaceutical, energy, defense) would require domain-specific cluster expansion.
 - The DiD analysis for journalist migrations requires a minimum of 5 articles per publication per journalist — low-output contributors cannot be analyzed even when their career path is well-documented.
 
 ## Dependencies
