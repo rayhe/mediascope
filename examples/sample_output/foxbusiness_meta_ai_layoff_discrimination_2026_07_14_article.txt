@@ -1,0 +1,35 @@
+Meta employees sue on allegations company used AI to target workers on medical, parental leave for layoffs
+
+A group of 26 Meta employees sued the tech giant over accusations that it used AI-powered software to choose people for mass layoffs, disproportionately targeting workers with disabilities or those who took medical, parental or family leave.
+
+The lawsuit, filed in federal court in Oakland, California, on Monday, alleges that the company relied on factors such as internal AI systems, keystroke and activity-monitoring data, AI token-usage dashboards and algorithmically assisted performance rankings when making job cuts earlier this year.
+
+Many of these factors "by design, cannot be accumulated by an employee who is on protected medical or family leave, or whose output is reduced by a disability," the lawsuit reads, adding that the company did not factor in protected leave when taking employees' scores into account and "did not pause the system for the individualized, leave- and accommodation-neutral review that the law requires."
+
+The plaintiffs are among the 8,000 employees, or about 10% of its workforce, who Meta said in May would be impacted by layoffs, and they were told their jobs would be eliminated starting July 22.
+
+FOUR STATES SEEKING $1.4 TRILLION IN PENALTIES IN CHILD SOCIAL MEDIA ADDICTION TRIAL, META SAYS
+
+They claim that Meta violated state and federal laws — including the Family and Medical Leave Act, the Americans with Disabilities Act, the Pregnancy Discrimination Act and the Pregnant Workers Fairness Act — that prohibit discrimination or retaliation against workers who take medical leave, have disabilities or are pregnant.
+
+The workers also say the company failed to test its AI systems for bias, which they allege violated newly adopted laws in California and New York City.
+
+The plaintiffs, who come from six states, including California and New York, as well as Washington, D.C., are seeking a preliminary ruling from the court to block Meta from completing the layoffs while they pursue their claims in private arbitration.
+
+The employees argue that Meta's agreements require employees to arbitrate workplace disputes individually, but do not apply to requests for temporary relief.
+
+They said the lawsuit asks just to preserve the status quo and keep them employed pending arbitration.
+
+"Once these terminations are finalized, the harm to Plaintiffs cannot be undone by money damages alone," the lawsuit reads, citing the loss of employer-subsidized health coverage during pregnancy, postpartum recovery and active medical treatment.
+
+Meta has pushed back on the allegations outlined in the lawsuit, saying that it does not use AI when determining who to cut from its workforce.
+
+"These claims lack merit and are not based on facts. Workforce management and organizational decisions were and are made by people, not AI," a Meta spokesperson told Fox Business.
+
+META SHUTS DOWN AI TOOL AFTER BACKLASH OVER PUBLIC INSTAGRAM ACCOUNTS
+
+About half of the plaintiffs had taken leave for caregiving or pregnancy-related reasons.
+
+Eight employees are women who had taken maternity or pregnancy-related leave, four are men who had taken parental leave and one is a woman who had taken leave to take care of a family member and later bereavement leave.
+
+The plaintiffs argued that Meta's "algorithmically assisted selection process, by systematically recording such absences as reduced performance, falls more heavily on women than on men" because women disproportionately take pregnancy and caregiving leave.

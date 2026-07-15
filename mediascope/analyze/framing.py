@@ -3050,6 +3050,39 @@ _PRECEDENT_FRAMING_PATTERNS: list[re.Pattern] = [
         r"(?:\w+\s+){0,3}ever\b",
         re.IGNORECASE,
     ),
+    # "novel [legal/policy term]" — novelty-by-descriptor.
+    # "novel lawsuit" / "novel claim" / "novel legal theory" etc. signals
+    # the event is unprecedented through the adjective rather than a
+    # temporal anchor.
+    #
+    # Gap discovered via Reuters Meta AI layoff discrimination article
+    # (Jul 14, 2026): "a novel lawsuit accusing the tech giant" was not
+    # detected because existing patterns all required temporal anchors
+    # ("in N years", "since YYYY", "ever").
+    re.compile(
+        r"\bnovel\s+(?:lawsuit|claim|theory|challenge|approach|case|"
+        r"action|strategy|argument|ruling|complaint|suit)\b",
+        re.IGNORECASE,
+    ),
+    # "appears to be the first" / "believed to be the first" / "said to
+    # be the first" — hedged novelty claims that amplify significance
+    # through historical rarity without a temporal anchor.
+    #
+    # Gap discovered via Reuters Meta AI layoff discrimination article
+    # (Jul 14, 2026): "The lawsuit appears to be the first against a
+    # major U.S. company to challenge the alleged use of AI in conducting
+    # layoffs" — establishes significance through categorical novelty,
+    # not temporal distance.
+    re.compile(
+        r"\b(?:appears|believed|said|thought|reported|considered|widely"
+        r"\s+(?:seen|regarded))\s+to\s+be\s+the\s+first\b",
+        re.IGNORECASE,
+    ),
+    # "first of its kind" / "first-of-its-kind" — generic novelty phrase
+    re.compile(
+        r"\bfirst[- ]of[- ]its[- ]kind\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["precedent_framing"] = _PRECEDENT_FRAMING_PATTERNS
@@ -9679,6 +9712,45 @@ def detect_framing_devices(
                             "communicate", "dream",
                         )
                         if any(w in _ea_context for w in _MEDICAL_CONDITION_TERMS):
+                            continue
+
+                # --- emotional_appeal: legal-context suppression -------
+                # Terms like "disability", "disabled", "medical leave",
+                # "pregnancy" are legal descriptors in lawsuit articles,
+                # not emotional rhetoric.  Suppress emotional_appeal when
+                # the matched term is a protected-status descriptor and
+                # legal/litigation vocabulary appears nearby.
+                #
+                # Discovered in Fox Business Meta AI layoff
+                # discrimination article (Jul 14, 2026): "disability"
+                # flagged as emotional_appeal, but it is the legal basis
+                # of an ADA claim, not editorial emotional language.
+                # ---------------------------------------------------------
+                if device_type == "emotional_appeal":
+                    _ea_legal_lower = match.group().lower()
+                    _LEGAL_STATUS_TERMS = (
+                        "disability", "disabled", "disabilities",
+                        "medical leave", "pregnancy", "pregnant",
+                        "parental leave", "family leave",
+                        "bereavement", "caregiving",
+                        "accommodation", "accommodations",
+                    )
+                    if any(t in _ea_legal_lower for t in _LEGAL_STATUS_TERMS):
+                        _ea_legal_ctx_start = max(0, start - 150)
+                        _ea_legal_ctx_end = min(len(text), end + 150)
+                        _ea_legal_context = text[_ea_legal_ctx_start:_ea_legal_ctx_end].lower()
+                        _LEGAL_LITIGATION_TERMS = (
+                            "lawsuit", "complaint", "plaintiff",
+                            "filed", "filing", "accusing", "accused",
+                            "claim", "claims", "alleged", "alleging",
+                            "court", "arbitration", "discrimination",
+                            "americans with disabilities act",
+                            "family and medical leave act",
+                            "pregnancy discrimination act",
+                            "ada", "fmla", "eeoc",
+                            "violat", "retaliat",
+                        )
+                        if any(w in _ea_legal_context for w in _LEGAL_LITIGATION_TERMS):
                             continue
 
                 # --- Loaded language: legal terms-of-art filter --------

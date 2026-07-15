@@ -85,9 +85,9 @@ Three false positives in a single article because the toolkit doesn't distinguis
 **Severity:** High  
 The headline "Meta used AI to target workers with medical conditions for layoffs" presents a lawsuit claim as established fact. This is a common wire-service pattern where the headline omits attribution even when the subhead ("lawsuit claims") provides it. This is arguably the single most impactful framing device in any news article because most readers only see the headline.
 
-### 5. Missing precedent_framing device type
+### 5. ~~Missing precedent_framing device type~~ ✅ FIXED
 **Severity:** Medium  
-"novel lawsuit" + "appears to be the first" are precedent-amplification phrases that increase perceived significance. Not currently a detected device type.
+"novel lawsuit" + "appears to be the first" are precedent-amplification phrases that increase perceived significance. **Fixed:** Added 3 new `precedent_framing` regex patterns: novelty-by-descriptor ("novel lawsuit/claim/theory"), hedged novelty ("appears/believed/said to be the first"), and compound form ("first-of-its-kind" / "first of its kind"). Total precedent_framing patterns: 8.
 
 ### 6. Source extraction misses lawsuit-as-source
 **Severity:** Medium  

@@ -280,6 +280,12 @@ _NAME_STOP_NAMES: set[str] = {
     "Business Insider", "Tech Review", "Technology Review",
     "Daily Beast", "Daily Mail", "Morning Post",
     "Evening Standard",
+    # TV / digital media publication names — "told Fox Business" is a
+    # publication self-reference, not a human source.  Discovered in
+    # Fox Business Meta AI layoff discrimination article (Jul 14, 2026).
+    "Fox Business", "Fox News", "Fox Corp",
+    "USA Today", "Daily Caller", "Daily Wire",
+    "Sky News", "Sky Business",
     # Government / institutional names that match "First Last"
     "White House",
     # Partial organization names that truncate from longer names
@@ -1089,6 +1095,7 @@ def extract_sources(text: str) -> list[SourceMention]:
         "Pinterest", "Reddit", "Discord", "Slack", "Zoom", "Stripe",
         "Square", "Block", "Shopify", "Congress", "Pentagon",
         "Reuters", "Bloomberg", "WIRED", "Wired",
+        "Fox",    # "told Fox Business" — single-word match from Pattern 5b/5c
         "Media",  # "404 Media" → regex strips numeric prefix, leaving "Media"
         "Insider",  # "Business Insider" — full name blocked by _NAME_STOP_NAMES
                     # but Pattern 5b catches "Insider reported" as single-name

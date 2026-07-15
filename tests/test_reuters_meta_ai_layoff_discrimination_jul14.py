@@ -137,3 +137,54 @@ class TestSlashedLoadedLanguage:
         assert _has(text, "loaded_language"), (
             "'slashed' should trigger loaded_language even without job/layoff context"
         )
+
+
+# ── Precedent Framing: novelty patterns ──────────────────────────────────
+
+
+class TestPrecedentFramingNovelty:
+    """Precedent-framing patterns for novelty-by-descriptor and hedged
+    first-of-kind claims, gap-filled from Reuters AI discrimination article."""
+
+    def test_novel_lawsuit(self):
+        text = (
+            "Twenty-six employees have filed a novel lawsuit accusing "
+            "the tech giant of using AI-powered software."
+        )
+        assert _has(text, "precedent_framing"), (
+            "'novel lawsuit' should trigger precedent_framing"
+        )
+
+    def test_appears_to_be_the_first(self):
+        text = (
+            "The lawsuit appears to be the first against a major U.S. "
+            "company to challenge the alleged use of AI in conducting layoffs."
+        )
+        assert _has(text, "precedent_framing"), (
+            "'appears to be the first' should trigger precedent_framing"
+        )
+
+    def test_believed_to_be_the_first(self):
+        text = "This is believed to be the first case involving AI-driven hiring."
+        assert _has(text, "precedent_framing"), (
+            "'believed to be the first' should trigger precedent_framing"
+        )
+
+    def test_first_of_its_kind(self):
+        text = "The first-of-its-kind ruling could reshape data privacy law."
+        assert _has(text, "precedent_framing"), (
+            "'first-of-its-kind' should trigger precedent_framing"
+        )
+
+    def test_novel_claim(self):
+        text = "Legal experts say the novel claim could set new precedent."
+        assert _has(text, "precedent_framing"), (
+            "'novel claim' should trigger precedent_framing"
+        )
+
+    def test_existing_temporal_pattern_still_works(self):
+        """Existing patterns (first X in N years) should still work."""
+        text = "This was the first such order in 17 years."
+        assert _has(text, "precedent_framing"), (
+            "Existing 'first X in N years' pattern should still fire"
+        )

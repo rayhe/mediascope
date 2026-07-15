@@ -137,7 +137,7 @@ Devices that amplify the magnitude, significance, or threatening nature of event
 | 55 | **Catastrophizing** | C | Outcomes framed as existential or irreversible | "crisis," "catastrophe," "existential threat," "doomsday" |
 | 56 | **Scale/Magnitude Framing** | E | Large raw numbers, calculated maximums, or scale analogies for impact | "up to 6% of global revenue," "enough to power 750,000 homes" |
 | 57 | **Valuation Comparison** | E | Penalty/cost compared to market cap to imply existential threat | "$1.4 trillion ... market capitalization just above $1.5 trillion" |
-| 58 | **Precedent Framing** | E | Event significance signaled through historical rarity | "first [X] in 17 years," "first [X] since YYYY," "unprecedented" |
+| 58 | **Precedent Framing** | E | Event significance signaled through historical rarity | "first [X] in 17 years," "first [X] since YYYY," "unprecedented," "novel lawsuit/claim/theory," "appears to be the first," "first-of-its-kind" |
 | 59 | **Slippery Slope** | E | Specific action extrapolated to broader systemic threat | "sets an uncomfortable precedent," "if this approach extends," "opens the door to" |
 | 60 | **Speculative Framing** | S | 5+ cumulative speculative hedges convert possibility into implied certainty | "could potentially," "might be able to," "could feasibly" stacked |
 
