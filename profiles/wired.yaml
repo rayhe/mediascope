@@ -2157,12 +2157,109 @@ restructuring_timeline:
 # ===================================================================
 labor_union_relations:
   union_name: "Condé Nast Union (NewsGuild of New York / CWA)"
-  status: "Active, contentious bargaining"
+  status: "Active — first CBA ratified May 2024; settlement resolved May 2026; Lahut NLRB case pending"
   description: >
     Condé Nast Union represents editorial and production workers across multiple Condé Nast titles
     including Wired, The New Yorker, Vanity Fair, GQ, Bon Appétit, Ars Technica, and others.
-    Affiliated with NewsGuild of New York (TNG-CWA Local 31003). Contract negotiations have been
+    Affiliated with NewsGuild of New York (TNG-CWA Local 31003). Contract negotiations were
     contentious, particularly around layoff protections, AI use in editorial, and benefits.
+    First contract ratified May 2024. Separate New Yorker/Pitchfork/Ars Technica units have
+    their own contracts (see below).
+
+  # ---------------------------------------------------------------
+  # CBA CONTRACT HISTORY — updated 2026-07-15
+  # ---------------------------------------------------------------
+  collective_bargaining_agreements:
+    - name: "Condé Union First Contract (Condé United)"
+      unit: "Allure, AD, Bon Appétit, CNT, Epicurious, Glamour, GQ, Self, Teen Vogue, Vanity Fair, Vogue, Them, CNE"
+      note_excludes: "Wired is covered by Condé Union. The New Yorker, Pitchfork, and Ars Technica have SEPARATE bargaining units."
+      certification_date: "2022-09"
+      tentative_agreement: "2024-05-06 (hours before Met Gala; marathon session wrapped 3 AM ET)"
+      ratification: "Week of May 6, 2024 (ratified by member vote)"
+      key_terms:
+        total_wage_increases: "$3.6 million (across unit)"
+        minimum_salary_floor: "$61,500 (all positions)"
+        parental_leave: "14 weeks fully paid (+2 weeks from prior)"
+        just_cause: "Yes — establishes standards management must meet for discipline/termination"
+        permalance_reform: "End to two-tier permalance system; conversion of subcontracted employees to permanent staff"
+        overtime: "Guaranteed comp time after 40 hours"
+        bereavement: "Expanded to cover biological and chosen family"
+        hybrid_work: "Protections for remote/hybrid arrangements"
+        layoff_terms: "8 weeks severance + 3 months COBRA (or lump sum in lieu of insurance) for laid-off workers"
+        layoff_moratorium: "Through July 31, 2024"
+      leverage_context: >
+        Condé Union leveraged the Met Gala (Vogue's marquee annual event) as a strike deadline.
+        A supermajority of members pledged to walk out on Met Gala day if no contract was reached.
+        The union visited Anna Wintour's neighborhood with fliers reading "Anna wears Prada:
+        workers get nada." Management settled in a marathon weekend session.
+      source_urls:
+        - "https://www.thewrap.com/conde-nast-union-tentative-contract-agreement/"
+        - "https://cwa-union.org/news/conde-union-settles-contract-averts-work-stoppage-ahead-met-gala"
+        - "https://newsguild.org/conde-union-settles-contract-averting-work-stoppage-ahead-of-met-gala/"
+        - "https://hypebeast.com/2024/4/conde-nast-union-met-gala-protest-work-stoppage-news"
+
+    - name: "New Yorker Union Contract (Renewal)"
+      unit: "The New Yorker"
+      tentative_agreement: "2024-10-15 (11 days before 25th annual New Yorker Festival)"
+      ratification: "Week of October 15, 2024"
+      key_terms:
+        salary_floor: "$63,000 on ratification; $64,500 effective April 1, 2026"
+        general_wage_increase: "6% in first 6 months, 12% total over 3-year deal"
+        ratification_bonus: "$1,000 for all full-time members"
+        cash_bonus: "$2,000 for anyone under $65,000"
+        comp_time: "Flexible comp time policy defended (management attempted severe restrictions)"
+        vacation_layoff: "Comp time/vacation paid out in event of layoff"
+      leverage_context: >
+        100% strike authorization vote preceded settlement. Support pledge signed by dozens of
+        New Yorker staff writers. Unit Chair Hannah Aizenman: "We refused to give in to the
+        company's attempts to erode the progress we've made since unionizing in 2018."
+      source_urls:
+        - "https://nyguild.org/days-after-new-yorker-festival-threatened-with-strike-conde-nast-and-new-yorker-union-settle-contract"
+
+    - name: "New Yorker / Pitchfork / Ars Technica First Contracts"
+      unit: "The New Yorker, Pitchfork, Ars Technica (separate bargaining units)"
+      first_agreement: "~2021 (agreement in principle, after nearly 3 years of negotiation)"
+      key_terms:
+        wage_increases: "Up to 63% (New Yorker), 58% (Pitchfork), 35% (Ars Technica)"
+        salary_floor: "$60,000 by final year (all three units)"
+        work_hours: "40-hour week, 8-hour day (defined for salaried employees)"
+        nda_ban: "Ban on NDAs related to discrimination and harassment"
+        diversity: "50% of interview candidates from underrepresented groups; joint labor-management diversity committees"
+        successorship: "Provisions ensuring CBA survives if a publication is sold"
+        health_care: "Strict limitations on future health-care cost increases"
+        permalance: "Strong jurisdiction language limiting company's reliance on temporary employees"
+      analytical_significance: >
+        The Ars Technica contract is particularly relevant: Ars Technica is also owned by Condé
+        Nast and covers technology, creating a direct comparator for Wired's editorial labor
+        conditions. Ars Technica's unionized workforce achieved a $60K floor — comparable to
+        Wired's via the Condé Union contract. The successorship clause also became relevant
+        when Condé Nast sold Them (to Equalpride, Feb 2026) and shut down Self (Apr 2026).
+      note: >
+        Pitchfork was subsequently folded into GQ (2024), making its contract terms moot for
+        active coverage but relevant as precedent.
+      source_urls:
+        - "https://nyguild.org/strike-averted-the-new-yorker-pitchfork-and-ars-technica-unions-reach-agreement-in-principle-with-conde-nast"
+
+  # ---------------------------------------------------------------
+  # JAKE LAHUT NLRB CASE — updated 2026-07-15
+  # ---------------------------------------------------------------
+  lahut_nlrb_case:
+    status: "Pending before NLRB (as of Jul 2026)"
+    details: >
+      Jake Lahut was one week shy of his probationary status ending when he was fired on Nov 6,
+      2025. Because he was still probationary, he was not covered by the CBA's "just cause"
+      protections and was offered a lesser settlement than the other three. He declined.
+      As of mid-2026, he is freelancing and working as a breaking news editor at Sherwood News
+      on a contract basis. In his own words: "I really don't understand how standing in a hallway
+      and asking questions is enough to merit what's happened here."
+      NLRB cases can take months to years, especially in the current political climate (2026).
+      Lahut has stated: "I'm prepared to wait months, years if I have to."
+      On the day of his firing, Lahut had represented Wired on MSNBC that morning and was
+      scheduled for another MSNBC appearance that evening. An MSNBC staffer reportedly informed
+      him that Condé Nast had pulled him from the subsequent appearance.
+    source_urls:
+      - "https://talkingbiznews.com/fired-wired-worker-pursuing-case-with-nlrb/"
+      - "https://fashionunited.uk/news/business/conde-nast-agrees-on-400-000-us-dollar-settlement-with-three-fired-employees/2026052988353"
 
   fired_four_incident:
     date: "2025-11-05 to 2026-05-27"
@@ -2176,10 +2273,16 @@ labor_union_relations:
       - name: "Jake Lahut"
         title: "Senior Politics Reporter"
         publication: "Wired"
-        outcome: "DECLINED settlement (a lesser settlement was offered per FashionUnited). Pursuing NLRB unfair labor practice charge (still pending Jul 2026). Was probationary employee — ineligible for standard severance terms."
+        outcome: >
+          DECLINED settlement (a lesser settlement was offered per FashionUnited). Pursuing NLRB
+          unfair labor practice charge (still pending Jul 2026). Was probationary employee (one week
+          shy of probation ending) — ineligible for standard severance terms. Now freelancing and
+          working as breaking news editor at Sherwood News on a contract basis.
         editorial_significance: >
           Part of Drummond's inaugural politics team — the first politics desk in Wired history,
           launched Nov 2023. His firing removed a key member of Wired's signature editorial initiative.
+          On the day of firing, had represented Wired on MSNBC that morning — was pulled from a
+          subsequent evening appearance by Condé Nast.
       - name: "Jasper Lo"
         title: "Fact-Checker"
         publication: "The New Yorker"
@@ -2231,6 +2334,17 @@ labor_union_relations:
       layoffs are constant and union protections are being tested). This is a confounding variable for
       any analysis attributing framing patterns solely to institutional editorial policy or ownership
       conflicts.
+      CBA TIMELINE SIGNIFICANCE (added Jul 15, 2026): The full CBA chronology reveals a pattern of
+      management concessions extracted ONLY under credible strike threats (Met Gala 2024, New Yorker
+      Festival 2024). The Nov 2025 Fired Four incident occurred AFTER the first CBA was ratified and
+      just-cause protections were in place — the firings were explicitly characterized as violating
+      those protections, which is why the NLRB charges have legal weight. Management's own counter-charge
+      against the union suggests a strategy of aggressive legal posture even after contractual defeat.
+      The CWA/NewsGuild description of the settlement outcome as "vindication" (Jun 11, 2026) and
+      the $400K+ payout further demonstrate that the labor-management relationship remains adversarial
+      despite having a ratified contract. The Jun 2026 CWA statement explicitly used the phrase
+      "bully union-busting bosses" — language the national union (not just local) chose to deploy
+      publicly about Condé Nast management.
     source_urls:
       - "https://www.thewrap.com/conde-nast-fired-four-union-members-settlement/"
       - "https://www.hrexecutive.com/conde-nast-settles-with-3-of-4-fired-union-members/"
