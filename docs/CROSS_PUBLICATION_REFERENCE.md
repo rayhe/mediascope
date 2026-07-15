@@ -81,7 +81,7 @@ Every cross-publication comparison must report these seven dimensions. Partial c
 |---|---|---|---|
 | 1 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | 2 | **Tone score** | 8-dimension composite (raw and corrected) | Raw editorial stance; corrected score accounts for genre VADER bias |
-| 3 | **Framing device count** | Total devices from the 104-type taxonomy | Framing density — how many editorial techniques are deployed |
+| 3 | **Framing device count** | Total devices from the 106-type taxonomy | Framing density — how many editorial techniques are deployed |
 | 4 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | 5 | **Source roster** | Named vs. anonymous count + affiliations | Who the journalist chose to quote; who was excluded |
 | 6 | **Source stance balance** | Adversarial vs. supportive vs. neutral ratio | Whether sources are deployed one-directionally or balanced |
@@ -162,9 +162,9 @@ If no wire service covered the event, use the **most neutral outlet** as a proxy
 
 ## Part 5: Validated Comparison Clusters
 
-The corpus includes **13 same-event comparison clusters** across two tiers:
+The corpus includes **15 same-event comparison clusters** across two tiers:
 
-### Tier 1: Dedicated Cross-Analysis Files (7 clusters, 24+ articles)
+### Tier 1: Dedicated Cross-Analysis Files (9 clusters, 30+ articles)
 
 | Event | Publications Compared | Tone Gap | Framing Gap | Key Finding |
 |---|---|---|---|---|
@@ -175,6 +175,8 @@ The corpus includes **13 same-event comparison clusters** across two tiers:
 | Muse Image launch (Jul 7–8) | Reuters / Bloomberg / TechCrunch / TechLusive / iPhone in Canada | 0.35 | 0–18 per outlet | TechCrunch 18 devices on same product Reuters covered with 0 |
 | Zuckerberg AI agents (Jul 2) | Reuters vs Barron's | ~0.14 | confession_framing vs emotion_attribution | Same Zuckerberg quotes → different attribution verbs |
 | EU DSA addictive design (Jul 10) | WSJ / Reuters / CNN (+IBD / Investopedia expansion) | 0.13 (core) | Headline gradient | Regulatory content migrates from 5% (wire lede) to 81% (investment caveat) |
+| Meta Hyperion $50B Louisiana datacenter (Jul 13) | WSJ / Fox Business / Barron's / IBD / MarketWatch / Wash. Examiner | 0.70+ | 6-way genre gradient | Identical facts produce 0.70+ point spread across financial/news/political modes |
+| Meta AI layoff discrimination lawsuit (Jul 14) | Reuters / Fox Business / WSJ | 0.018 | 2 vs 6 vs 9 | Tightest tone convergence in corpus; 4.5× framing device divergence masks identical tone; Fox Business siege narrative via cross-promotion; WSJ independent expert sourcing |
 
 ### Tier 2: Same-Event Article Clusters (6 clusters, ~18 articles)
 
@@ -187,17 +189,11 @@ The corpus includes **13 same-event comparison clusters** across two tiers:
 | Gemini compute limits (Jun 28–Jul 1) | Reuters / Memeburn | ~0.40 | Wire vs blog framing |
 | Applied AI reorg (Jun 13–17) | Wired (×4) / TechTimes | variable | Longitudinal escalation + "gulag" cross-pub import |
 
-### Tier 1 + Louisiana Datacenter (Jul 13)
-
-| Event | Publications Compared | Key Signal |
-|---|---|---|
-| Meta Hyperion $50B Louisiana datacenter | WSJ / Fox Business / Barron's / IBD / MarketWatch / Wash. Examiner | 6-way genre gradient; identical facts produce 0.70+ point spread across financial/news/political modes |
-
 ### Statistical Summary
 
 | Metric | Range | Notes |
 |---|---|---|
-| Tone gaps | 0.13–1.23 | Widest in multi-genre comparisons |
+| Tone gaps | 0.018–1.23 | Widest in multi-genre comparisons; tightest in litigation (legal vocabulary convergence artifact) |
 | Framing differentials | 1:1 to 18:0 | TechCrunch Muse Image is the most extreme |
 | Wire baseline anchor | ±0.10 in 100% of clusters | Validates Reuters/AP as neutral reference |
 | Genre-controlled spread | Up to 0.70 points | Same facts, different editorial modes |
@@ -252,7 +248,7 @@ Cross-publication import matters because it converts one outlet's editorial fram
 3. RUN full MediaScope pipeline on EACH article independently
    └─ Entity detection
    └─ 8-dimension sentiment (raw + corrected)
-   └─ Framing device detection (104 types)
+   └─ Framing device detection (106 types)
    └─ Source extraction + stance analysis
    └─ Outsourced intensity measurement
    └─ Topic classification

@@ -361,7 +361,7 @@ When performing cross-publication same-event comparisons (the most powerful evid
 
 ### 10.2 Validated Comparisons in the Corpus
 
-The `examples/sample_output/` directory contains validated same-event comparisons across 13 distinct event clusters, ranging from 2-article pairs to 5-article multi-outlet analyses:
+The `examples/sample_output/` directory contains validated same-event comparisons across 15 distinct event clusters, ranging from 2-article pairs to 6-article multi-outlet analyses:
 
 #### Tier 1: Explicit Cross-Analysis Files
 
@@ -376,6 +376,8 @@ These comparisons have dedicated cross-analysis documents with side-by-side metr
 | Muse Image launch (Jul 7–8) | Reuters (0.00) vs Bloomberg (−0.05) vs TechCrunch (−0.35) vs TechLusive (−0.25) vs iPhone in Canada (−0.05) | 0.35 | 0 vs 5 vs 18 vs 8 vs 4 | `cross_pub_muse_image_5way_2026_07_07.md` |
 | Zuckerberg AI agents (Jul 2) | Reuters (wire) vs Barron's (editorial) | ~0.14 | confession_framing vs emotion_attribution | `reuters_vs_barrons_zuckerberg_ai_agents_2026_07_02_cross_analysis.md` |
 | EU DSA addictive design (Jul 10) | WSJ (−0.27) vs Reuters (−0.28) vs CNN (−0.40) | 0.13 | failure_attribution headline gradient; WSJ most assertive, CNN most hedged | `cross_pub_eu_dsa_addictive_design_wsj_reuters_cnn_2026_07_10.md` |
+| Meta AI layoff discrimination (Jul 14) | Reuters (−0.561) vs Fox Business (−0.572) vs WSJ (−0.554) | 0.018 | Tightest tone convergence in corpus; 4.5× framing device divergence (2→9); Fox Business siege narrative via cross-promotion; WSJ independent expert sourcing | `cross_pub_meta_ai_layoff_discrimination_3way_2026_07_14.md` |
+| Meta Hyperion $50B Louisiana datacenter (Jul 13) | WSJ / Fox Business / Barron's / IBD / MarketWatch / Wash. Examiner | 0.70+ | 6-way genre gradient; identical facts produce 0.70+ point spread across financial/news/political modes | `cross_pub_meta_louisiana_datacenter_6way_2026_07_13.md` |
 
 #### Tier 2: Same-Event Article Clusters
 
@@ -393,7 +395,7 @@ These share a common underlying event and can be compared via their individual a
 #### Statistical Summary
 
 Across all validated comparison clusters:
-- **Tone gaps** range from 0.21 (Wynn-Williams lawsuit, all outlets editorially negative) to 1.00 (Brain2Qwerty, genuinely opposite editorial stances on same research paper)
+- **Tone gaps** range from 0.018 (Meta AI layoff discrimination, VADER convergence artifact from legal vocabulary) to 1.00 (Brain2Qwerty, genuinely opposite editorial stances on same research paper)
 - **Framing device differentials** range from 1:1 (both outlets use similar techniques) to 10:0 (one outlet deploys extensive framing, the other stays neutral)
 - **Wire-service baseline** (Reuters/AP) anchors at ±0.10 in 100% of comparison clusters where included, validating its use as a neutral reference
 - **Genre-controlled comparisons** (wire vs magazine vs blog vs financial) produce the cleanest signal — same facts, different editorial modes
