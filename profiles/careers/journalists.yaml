@@ -43,6 +43,12 @@ journalists:
   - https://en.wikipedia.org/wiki/Karen_Hao
   - https://karendhao.com
   - https://talkingbiznews.com
+  education:
+  - degree: BS
+    field: Mechanical Engineering
+    institution: Massachusetts Institute of Technology
+    year: '2015'
+    source_url: https://en.wikipedia.org/wiki/Karen_Hao
 - career:
   - beat: technology, product reviews
     end: 2007-01
@@ -97,6 +103,12 @@ journalists:
     longest continuous careers in tech journalism — his framing evolution across PC Magazine (product reviews) → Register
     (adversarial British tabloid tech) → Wired (Condé Nast longform) → NYT (institutional prestige) traces the entire arc
     of how AI coverage went from niche to front-page.'
+  education:
+  - degree: BA
+    field: English
+    institution: Duke University
+    year: '1994'
+    source_url: https://english.duke.edu/news/cade-metz-duke-english-alum-technology-correspondent
 - career:
   - beat: technology, robotics, cybersecurity, space tech
     end: '2008'
@@ -535,6 +547,12 @@ journalists:
     now Atlantic CEO), creating an editorial culture bridge between Wired and Atlantic tech coverage. His Galaxy Brain podcast
     amplifies his framing influence beyond text into audio/video. Framing signature: platform-as-threat narrative, skepticism
     of tech industry self-regulation, attention to information warfare and online radicalization dynamics.'
+  education:
+  - degree: BA
+    field: Government
+    institution: Hamilton College
+    year: '2010'
+    source_url: https://muckrack.com/charlie-warzel
 - career:
   - beat: state politics, local government
     end: 2010-11
@@ -653,6 +671,11 @@ journalists:
   source_urls:
   - https://en.wikipedia.org/wiki/Casey_Newton
   - https://www.platformer.news/
+  education:
+  - degree: BS
+    field: Journalism
+    institution: Northwestern University (Medill School of Journalism)
+    source_url: https://muckrack.com/caseynewton
 - beats:
   - twitter_x
   - elon_musk
@@ -867,6 +890,15 @@ journalists:
   - https://datasociety.net/people/lichfield-gideon/
   - https://sternstrategy.com/speaker/gideon-lichfield/
   - https://sidestack.io/directory/substack/futurepolis
+  education:
+  - degree: BSc
+    field: Physics
+    institution: Imperial College London
+    source_url: https://en.wikipedia.org/wiki/Gideon_Lichfield
+  - degree: MA
+    field: Journalism
+    institution: City University London (London Journalism Institute)
+    source_url: https://en.wikipedia.org/wiki/Gideon_Lichfield
 - career:
   - beat: general, local news
     end: 1986-01
@@ -969,6 +1001,14 @@ journalists:
     bias dominates institutional bias for established columnists.'
   source_urls:
   - https://en.wikipedia.org/wiki/Kara_Swisher
+  education:
+  - degree: BA
+    institution: Georgetown University
+    source_url: https://en.wikipedia.org/wiki/Kara_Swisher
+  - degree: MS
+    field: Journalism
+    institution: Columbia University Graduate School of Journalism
+    source_url: https://en.wikipedia.org/wiki/Kara_Swisher
 - awards:
   - category: Distinguished Business Reporting
     for: Uber coverage at NYT
@@ -1180,6 +1220,10 @@ journalists:
     Her Clearview AI investigation (Jan 2020) changed facial recognition policy nationwide. KEY for MediaScope: her beat (privacy/surveillance)
     puts her in direct analytical contact with Meta''s data practices, face recognition systems, and tracking technology.
     Her coverage directly overlaps with Ray''s Face Watch Space interests.'
+  education:
+  - degree: BA
+    institution: Duke University
+    source_url: https://en.wikipedia.org/wiki/Kashmir_Hill
 - name: Kevin Roose
   career:
   - publication: nytimes
@@ -1421,6 +1465,15 @@ journalists:
     reporters read broadcast contracts. This makes his Apple/Google coverage more focused on margin economics and corporate
     strategy than the average tech correspondent. The ''culture of corporate omertà'' phrase is his signature and has been
     adopted widely in Apple journalism.'
+  education:
+  - degree: BA
+    institution: Wake Forest University
+    year: '2003'
+    source_url: https://muckrack.com/tripp-mickle
+  - degree: MA
+    field: Journalism
+    institution: Columbia University Graduate School of Journalism
+    source_url: https://muckrack.com/tripp-mickle
 - career:
   - beat: N/A (education)
     end: 2017-01
@@ -1477,6 +1530,15 @@ journalists:
     important: his departure creates a gap on NYT''s Google beat. Key Bloomberg scoops: Google AI group turmoil (discrimination/harassment),
     Google mental health crisis. Key NYT coverage: Brin AGI memo, YouTube piracy investigation. ANALYTICAL VALUE: Bloomberg
     → NYT pipeline tests whether framing shifts from wire-service neutral to NYT institutional posture.'
+  education:
+  - degree: BA
+    field: Media Studies
+    institution: Hunter College
+    source_url: https://muckrack.com/nico-grant
+  - degree: MA
+    field: Journalism
+    institution: City University of New York
+    source_url: https://muckrack.com/nico-grant
 - beats:
   - meta
   - technology_society
@@ -2275,6 +2337,11 @@ journalists:
     pipeline. PhD in Comparative Literature (UCLA), not CS — gives him a humanities-critical lens on technology unusual among
     tech writers. Founded game design studio. Georgia Tech distinguished professor for 17 years before moving to WashU. 11
     books on technology, games, and philosophy. Known for philosophical/critical take on tech and AI skepticism.'
+  education:
+  - degree: PhD
+    field: Comparative Literature
+    institution: University of California, Los Angeles
+    source_url: https://en.wikipedia.org/wiki/Ian_Bogost
 - career:
   - beat: news broadcasting
     end: '2016'
@@ -2319,6 +2386,11 @@ journalists:
   - https://talkingbiznews.com/they-talk-biz-news/financial-times-hires-heikkila-as-ai-correspondent/
   - https://talkingbiznews.com/they-talk-biz-news/politico-taps-heikkila-as-ai-correspondent/
   - https://aihub.org/2024/01/31/the-good-robot-podcast-melissa-heikkila-on-why-the-stories-we-tell-about-ai-matter/
+  education:
+  - degree: BA
+    field: Communication
+    institution: University of Helsinki
+    source_url: https://muckrack.com/melissa-heikkila
 - awards:
   - for: 'Co-recipient for "Prediction: Bias" — joint investigation with The Markup into Geolitica/PredPol predictive policing
       software that disproportionately directed police to patrol Black and Latino neighborhoods. Investigation led to senators
@@ -2574,6 +2646,15 @@ journalists:
   - https://allamericanspeakers.com/speakers/andy-greenberg/
   - https://engineering.nyu.edu/news/inaugural-award-cybersecurity-journalism-honors-wireds-andy-greenberg
   - https://computerhistory.org/profile/cade-metz/
+  education:
+  - degree: BA
+    field: History
+    institution: Haverford College
+    source_url: https://muckrack.com/a-greenberg
+  - degree: MA
+    field: Business and Economics Journalism
+    institution: Columbia University
+    source_url: https://muckrack.com/a-greenberg
 - beats:
   - tech_accountability
   - surveillance
@@ -3183,6 +3264,12 @@ journalists:
     no migration signal. However, his exclusively-Atlantic career means his framing is a clean measurement of Atlantic institutional
     culture without cross-pollination from other newsrooms. Emerson Collective ownership context (Laurene Powell Jobs) relevant
     — The Atlantic received $100M+ investment in 2017 and majority ownership by 2021.'
+  education:
+  - degree: BA
+    field: History and Literature
+    institution: Harvard University
+    year: '2022'
+    source_url: https://muckrack.com/matteo-wong/articles
 - career:
   - beat: technology, AI, data investigations
     end: 2023-07
@@ -3350,6 +3437,11 @@ journalists:
   - https://talkingbiznews.com/they-re-hiring/kaitlyn-tiffany-joins-the-atlantics-tech-team/
   - https://www.theatlantic.com/author/kaitlyn-tiffany/
   - https://www.theverge.com/authors/kaitlyn-tiffany
+  education:
+  - degree: BA
+    institution: Cornell University
+    year: ~2015
+    source_url: https://muckrack.com/kaitlyn-tiffany
 - career:
   - beat: N/A (education)
     end: 2014-05
@@ -4048,6 +4140,11 @@ journalists:
     Future Now (founding editor) → freelance → MIT TR. UK-based, which gives MIT TR a London anchor for its AI team alongside
     DeepMind and UK AI startups. Also writes under ''Douglas Heaven.'' Co-led FT partnership ''State of AI'' newsletter series
     (Oct 2025). 219+ articles. Moderates EmTech AI and subscriber roundtables alongside Honan.'
+  education:
+  - degree: PhD
+    field: Computer Science
+    institution: Imperial College London
+    source_url: https://muckrack.com/will-douglas-heaven
 - career:
   - beat: investigative
     end: 2021-06
@@ -7316,6 +7413,15 @@ journalists:
   - https://editorandpublisher.com/stories/tom-simonite-joins-the-washington-post-as-tech-companies-editor
   - https://talkingbiznews.com/media-news/simonite-moves-to-editing-role-at-wired/
   - https://talkingbiznews.com/they-talk-biz-news/washington-post-hires-simonite-as-tech-companies-editor/
+  education:
+  - degree: BA
+    field: Natural Sciences
+    institution: University of Cambridge
+    source_url: https://muckrack.com/tom-simonite
+  - degree: MSc
+    field: Science Communication
+    institution: Imperial College London
+    source_url: https://muckrack.com/tom-simonite
 - career:
   - beat: national security, technology
     end: '2006'

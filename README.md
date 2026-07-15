@@ -79,7 +79,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **239 journalists** across 429+ publications (932 career-entry migrations). Notable high-value migrations include:
+Ships with verified career data for **239 journalists** (57 with structured education records) across 429+ publications (932 career-entry migrations). Notable high-value migrations include:
 
 | Journalist | Migration Path | Analytical Value |
 |---|---|---|
