@@ -1,0 +1,27 @@
+These disabled workers lost their jobs. They say AI targeted them
+
+A lawsuit lodged against Meta Platforms accuses the technology giant of using AI-powered software to target people with disabilities or employees on medical leave for layoffs.
+
+Legal experts say the legal action – likely the first of its kind against a major U.S. company – challenges the growing use of AI to help make hiring, promotion, performance and termination decisions.
+
+The lawsuit, in Oakland, California, federal court this month, alleges Meta relied on AI-assisted systems to score and rank employees on such factors as productivity when it cut thousands of jobs this year, harming employees who missed work because of illness or to care for family members.
+
+The 26 anonymous plaintiffs from six states were notified in May that their jobs would be eliminated on July 22. They allege the company violated federal and state anti-discrimination laws that shield workers with disabilities, who take medical leave or who are pregnant and they are seeking a preliminary ruling blocking Meta from carrying out the layoffs until they can pursue their claims in private arbitration.
+
+Meta denied the layoffs were conducted by AI.
+
+"These claims lack merit and are not based on facts," the company said in a statement. "Workforce management and organizational decisions were and are made by people, not AI."
+
+Increasingly artificial intelligence is playing a big role in who gets hired. Now at issue is how big a role it plays in who gets fired.
+
+Employers are increasingly using AI to screen resumes, rank job applicants and handle preliminary interviews. While these automated tools increase efficiency and reduce headcount, they also raise legal risks.
+
+A federal judge in San Francisco recently ruled that enterprise software company Workday must face a class-action lawsuit alleging its AI screening software discriminates against job applicants.
+
+Jon Hyman, chair of the employment and labor practice at the Wickens Herzer Panza law firm, said the Meta lawsuit is a warning to employers who rely on artificial intelligence to guide critical employment decisions.
+
+While AI can be a valuable tool to inform those decisions, if it penalizes employees for protected absences, disabilities or other legally protected characteristics, employers will be held accountable, he said.
+
+Meta laid off 10% of its global workforce in May – about 8,000 people – part of a restructuring as the company increases its use of AI.
+
+"The legal question won't be whether an employer used AI but whether it blindly trusted it," Hyman said. "The companies that fare best won't be those that avoid AI altogether, but those that rigorously audit it, understand how it reaches its recommendations and ensure that a human exercises independent judgment before any employment decision is made."

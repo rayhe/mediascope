@@ -1398,13 +1398,13 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **187 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **188 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
 ### 17.2 Publication Distribution
 
-The corpus spans **45 distinct publications** across 5 editorial modes:
+The corpus spans **46 distinct publications** across 5 editorial modes:
 
 #### Tracked Publications (5 publications, 58 articles)
 
@@ -1481,6 +1481,7 @@ Specialty press and multi-source analyses:
 | **Kotaku** | 1 | Meta Arena / Polymarket rivalry (sardonic correction Path D discovery) |
 | **Newzlet** | 1 | Meta Cannes competitive intelligence (absence-as-evidence/silence-as-guilt discovery) |
 | **NY Post** | 2 | Meta $1.4T teen mental health penalty, EU DSA addictive design ultimatum framing |
+| **USA Today** | 1 | Meta AI layoff discrimination lawsuit — litigation_framing, precedent_framing, anthropomorphization; 5-way same-event cluster 15 comparison |
 | **WebProNews** | 1 | Meta Dublin contractors AI replacement (worker_replacement_irony, two_tier_treatment discovery) |
 | **Multi-source** | 1 | Meta Claude/Codex restriction (cross-outlet aggregation) |
 
@@ -1515,7 +1516,7 @@ Articles cluster into 9 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 187 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 188 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|

@@ -1071,7 +1071,7 @@ class TestAdversarialDeviceListConsistency:
     # Track the total number of compiled regex patterns across all device
     # types in _DEVICE_PATTERNS.  When patterns are added, this test fails
     # and forces a deliberate count update, preventing undocumented drift.
-    EXPECTED_TOTAL_PATTERNS = 655  # sum(len(v) for v in _DEVICE_PATTERNS.values())
+    EXPECTED_TOTAL_PATTERNS = 656  # sum(len(v) for v in _DEVICE_PATTERNS.values())
 
     def test_total_regex_pattern_count(self):
         """Total compiled regex patterns must match expected count."""
@@ -2364,6 +2364,8 @@ class TestAnnotatedArticleCountConsistency:
             ("thetab", "thetab"),
             # Added 2026-07-15 Type D
             ("buzzfeed", "buzzfeed"),
+            # Added 2026-07-15 Type A
+            ("usatoday", "usatoday"),
         ]
         for f in sample_dir.glob("*_analysis.md"):
             name = f.stem.replace("_analysis", "")

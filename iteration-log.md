@@ -23730,3 +23730,44 @@ Gizmodo's +0.457 is the outlier — VADER failure, not editorial divergence. Wid
 - Same-event cluster: Muse Image shutdown now 8-way
 - Register articles: 2→4
 
+
+## 2026-07-15 15:00 PT — Type A: Article Deep Dive (USA Today)
+
+### Article
+**USA Today: "These disabled workers lost their jobs. They say AI targeted them"** (Jul 15, 2026)
+- Same-event cluster 15 (Meta AI Layoff Discrimination Lawsuit) — 5th publication
+- 5-way comparison: Reuters (Jul 14), Fox Business (Jul 14), WSJ (Jul 14), Gizmodo (Jul 15), USA Today (Jul 15)
+- USA Today is the 46th distinct publication added to the corpus
+
+### Key Findings
+- **3 framing devices detected:** litigation_framing ("lawsuit lodged against"), precedent_framing ("first of its kind"), anthropomorphization ("blindly trusted it")
+- **USA Today's editorial DNA:** Maximum systemic frame, minimum visceral impact — omits all named AI tools (Metamate, second brain), omits pregnancy vignettes, introduces cross-case Workday reference for industry-wide framing
+- **Only publication in cluster** to cite a separate AI discrimination case (Workday) to establish pattern
+- **Expert architecture:** Jon Hyman (Wickens Herzer Panza) provides prescriptive kicker — distinct from WSJ's Hirsch (systemic framing)
+
+### Code Changes
+1. **Framing: litigation_framing** — Added `lodged` to forward pattern AND new reversed-construction pattern for "lawsuit/complaint lodged/filed/brought against"
+2. **Framing: surveillance_enumeration Pattern 3 tightened** — Broad "relied on... to score" regex false-positived on USA Today's generic "AI-assisted systems." Now requires specific monitoring terms (keystroke, screen, email, etc.) or comma-separated enumeration
+
+### Documented Gaps (3)
+1. **scale_magnitude:** No percentage + headcount combined pattern ("10% of its global workforce... about 8,000 people")
+2. **escalation_amplification:** "growing use" + enumeration and "increasingly" + enumeration not matched
+3. **cross_case_citation:** No device for cross-case legal references (Workday paragraph)
+
+### Files Created/Modified
+- `examples/sample_output/usatoday_meta_ai_layoff_discrimination_2026_07_15_article.txt` (new)
+- `examples/sample_output/usatoday_meta_ai_layoff_discrimination_2026_07_15_analysis.md` (new)
+- `tests/test_usatoday_meta_ai_layoff_discrimination_jul15.py` (new, 23 tests)
+- `mediascope/analyze/framing.py` (litigation_framing lodged + surveillance_enumeration tightened)
+- `tests/test_structural_consistency.py` (EXPECTED_TOTAL_PATTERNS 655→656, usatoday pub prefix)
+- `README.md` (188 articles, 717 patterns, 2820 tests/127 files, USA Today test row)
+- `docs/ARCHITECTURE.md` (188 articles, 717 patterns, 2820 tests/127 files, USA Today test row)
+- `docs/METHODOLOGY.md` (188 articles, 46 publications, USA Today in General Interest table)
+- `docs/QUALITY_STANDARDS.md` (188 articles)
+
+### Stats
+- 188 annotated articles (+1), 46 distinct publications (+1 USA Today)
+- 2820 tests (127 files), +23 new tests
+- 717 compiled framing patterns (+1), 656 total device patterns (+1)
+- Same-event cluster 15 now 5-way (was 4-way)
+- Next iteration should be Type B (journalist research)

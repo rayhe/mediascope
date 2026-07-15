@@ -1247,7 +1247,7 @@ _LITIGATION_FRAMING_PATTERNS: list[re.Pattern] = [
     # "[entity] seeking/launching/filing legal/judicial action"
     re.compile(
         r"\b(?:seeking|launched?|filed?|pursuing|mounting|initiated?|"
-        r"brought|bringing|challenging|fighting)\s+"
+        r"brought|bringing|challenging|fighting|lodged)\s+"
         r"(?:a\s+)?(?:judicial review|legal challenge|legal action|lawsuit|"
         r"complaint|suit|counter.?suit|court challenge|legal battle|"
         r"antitrust challenge|constitutional challenge|injunction|appeal|"
@@ -1274,6 +1274,16 @@ _LITIGATION_FRAMING_PATTERNS: list[re.Pattern] = [
     re.compile(
         r"\b(?:arbitration|arbitrator|severance)\s+"
         r"(?:ruling|order|process|agreement|clause|hearing|proceeding)\b",
+        re.IGNORECASE,
+    ),
+    # "lawsuit/complaint lodged/filed against" — reversed construction
+    # where the legal noun precedes the verb
+    # Discovered in USA Today Meta AI layoff discrimination (Jul 15, 2026):
+    #   "A lawsuit lodged against Meta Platforms accuses..."
+    re.compile(
+        r"\b(?:lawsuit|complaint|suit|legal action|class action|petition)\s+"
+        r"(?:lodged|filed|brought|launched|initiated|submitted|raised)\s+"
+        r"(?:against|in)\b",
         re.IGNORECASE,
     ),
 ]
@@ -9433,10 +9443,24 @@ _SURVEILLANCE_ENUMERATION_PATTERNS: list[re.Pattern] = [
         re.IGNORECASE,
     ),
     # Tool/system enumeration in monitoring context:
-    # "[tool], [tool], and [tool] ... to score/rank/track"
+    # "used [tool], [tool], and [tool] ... to score/rank/track"
+    # The span between trigger verb and scoring verb must contain at least
+    # one specific monitoring/tracking term or comma-separated enumeration.
+    # Without this, generic "relied on AI systems to score" false-positives.
+    # Tightened after USA Today Meta AI layoff discrimination (Jul 15, 2026)
+    # false-positive on "relied on AI-assisted systems to score."
     re.compile(
         r"(?:used|relied on|deployed|employed|utiliz(?:ed|ing)|"
         r"leverag(?:ed|ing)|included?)\s+"
+        r"(?=.{0,200}?"
+        r"(?:keystroke|screen\s+(?:content|activity|time|monitoring)|"
+        r"email|browser|chat\s+log|message|communication|"
+        r"click(?:s|stream)?|mouse|login|badge|GPS|webcam|"
+        r"microphone|typing|activity[- ]monitoring|"
+        r"token[- ](?:usage|consumption)|AI[- ](?:native|usage|token)|"
+        r"calibration|performance\s+(?:rating|score|metric|ranking)|"
+        r"second\s+brain|Metamate|dashboard|"
+        r"\w+\s*,\s*\w+\s*,\s*(?:and\s+)?\w+))"
         r".{0,200}?"
         r"(?:to\s+(?:score|rank|monitor|track|evaluate|assess|select|"
         r"identify|determine|flag|target))\b",
