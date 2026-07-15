@@ -244,3 +244,93 @@ class TestCrossDeviceInteractions:
         device_types = set(d.device_type for d in devices)
         # Should fire at least 2: recidivism_framing + editorial_aside
         assert len(device_types) >= 2, f"Only found {device_types}"
+
+
+# ---- Integration tests added with article analysis (Jul 15, 2026) ----
+# These validate the full-article entity, framing, and sentiment pipeline
+# against the sample_output article file, complementing the unit-level tests above.
+
+import pathlib as _pathlib
+from mediascope.analyze.entities import detect_entities
+from mediascope.analyze.framing import detect_framing_devices
+from mediascope.analyze.sentiment import analyze_composite, analyze_vader
+
+_FULL_ARTICLE_PATH = (
+    _pathlib.Path(__file__).resolve().parent.parent
+    / "examples"
+    / "sample_output"
+    / "register_muse_image_superintelligence_pulled_2026_07_13_article.txt"
+)
+
+
+class TestFullArticleEntities:
+    """Entity detection on the full Register Muse Image article."""
+
+    @pytest.fixture(autouse=True)
+    def _detect(self):
+        text = _FULL_ARTICLE_PATH.read_text(encoding="utf-8")
+        self.entities = detect_entities(text)
+
+    def test_zuck_possessive_detected(self):
+        """Zuck's (possessive) must be detected after regex fix."""
+        zuck = [e for e in self.entities if e.entity == "Zuck"]
+        assert len(zuck) >= 1, "Zuck possessive not detected"
+
+    def test_zuck_believes_detected(self):
+        """'Zuck believes' must be detected after adding 'believes' context."""
+        zuck = [e for e in self.entities if e.entity == "Zuck"]
+        assert len(zuck) >= 2, f"Expected >=2 Zuck mentions, got {len(zuck)}"
+
+    def test_sagaftra_in_labor_cluster(self):
+        sagaftra = [e for e in self.entities if "SAG-AFTRA" in e.entity]
+        assert sagaftra, "SAG-AFTRA not detected"
+        assert sagaftra[0].cluster == "Labor/Unions"
+
+    def test_total_entity_count(self):
+        assert 20 <= len(self.entities) <= 26
+
+
+class TestFullArticleFraming:
+    """Framing device detection on the full Register Muse Image article."""
+
+    @pytest.fixture(autouse=True)
+    def _detect(self):
+        text = _FULL_ARTICLE_PATH.read_text(encoding="utf-8")
+        self.devices = detect_framing_devices(text)
+        self.types = [d.device_type for d in self.devices]
+
+    def test_kicker_backfired(self):
+        assert "kicker_framing" in self.types
+
+    def test_at_least_18_devices(self):
+        assert len(self.devices) >= 18, f"Got {len(self.devices)}"
+
+    def test_confession_framing_present(self):
+        assert "confession_framing" in self.types
+
+    def test_recidivism_framing_present(self):
+        assert "recidivism_framing" in self.types
+
+
+class TestFullArticleSentiment:
+    """Sentiment analysis on the full Register Muse Image article."""
+
+    @pytest.fixture(autouse=True)
+    def _analyze(self):
+        text = _FULL_ARTICLE_PATH.read_text(encoding="utf-8")
+        headline = "Meta admits its first 'superintelligence' was too stupid to survive for three days"
+        self.vader = analyze_vader(text)
+        self.result = analyze_composite(text, headline)
+
+    def test_vader_massive_positive(self):
+        """VADER must be > +0.9 — extreme PR-language polarity inversion."""
+        assert self.vader["compound"] > 0.9
+
+    def test_correction_fires(self):
+        assert self.result.framing_corrected is True
+
+    def test_corrected_tone_not_positive(self):
+        assert self.result.overall_tone <= 0.05
+
+    def test_raw_tone_strongly_positive(self):
+        assert self.result.raw_tone > 0.5

@@ -1,0 +1,33 @@
+Meta admits its first 'superintelligence' was too stupid to survive for three days
+
+Pulls AI-powered image tweaker after allowing free-for-all
+
+Meta has withdrawn the first image generation product created by its Superintelligence Labs fewer than 72 hours after launch.
+
+The product was called "Muse Image" and Meta launched it on July 8, billing it as "the first AI image generation model from Meta Superintelligence Labs."
+
+That lab is Zuck's latest big bet and aims to create a "personal superintelligence that knows us deeply, understands our goals, and can help us achieve them."
+
+In the case of Muse AI, that help came in the form of applying one of 30 new filters that "uniquely understand Instagram videos and photos and can interpret your photo's scene — the lighting, composition, and subject — to make nuanced edits that feel natural and true to you."
+
+Instagram users could use those effects to "transform your photos with a single tap," the social networking company promised.
+
+Users could also apply the filters to content posted by third parties.
+
+"Meta is also launching the ability to @mention friends' public Instagram accounts in Meta AI and generate creative AI images featuring them, such as personalized birthday cards, group trip memes, or playful edits between friends. It's an upgrade to what people can create with AI features at Meta, making it more personal, fun, and social," the company said.
+
+Meta almost certainly leads the world in three things: The number of people signed up to its social networks; experience of people behaving horribly online, and; dealing with community backlashes after privacy abuses.
+
+Yet somehow it didn't imagine that enabling this feature by default might be controversial, or that allowing users to alter images with AI might be abused.
+
+Backlash was therefore swift and widespread. Actors' union SAG-AFTRA condemned the product.
+
+"Anything other than a clear and conspicuous OPT-IN for these types of uses of Instagram users' images is unacceptable, and an utter miscalculation of public sentiment regarding the obvious dangers and harms inherent in such use," it posted on Instagram.
+
+Within three days of release, Meta realized the error of its ways and pulled the product.
+
+"Earlier this week, we announced that one way for people to generate images in Meta AI is by @-mentioning public Instagram accounts that they want to reference," the company wrote. "Our intent was to provide a useful creative tool and to give people control over whether their public content could be referenced in this way. We've heard the feedback that this feature missed the mark, so it's no longer available."
+
+Interestingly, Meta says several of the effects it offered were "designed by Instagram creators, who used Meta AI to amplify their creativity and bring their ideas to life."
+
+Zuck believes users of his social networks mostly want to see content made by creators – Meta-speak for prominent accounts who post a lot – rather than content produced by media outlets or others. Involving creators in Meta's own creative processes has now backfired.

@@ -3902,7 +3902,7 @@ _KICKER_NEGATIVE_SIGNALS: list[re.Pattern] = [
         r"anticompetitive|anti.?competitive|convenient cover|"
         r"governance gray zone|governance grey zone|"
         r"convenient (?:excuse|pretext|shield|fig leaf)|"
-        r"wake.?up call|cautionary|warning sign|red flag)\b",
+        r"backfired|wake.?up call|cautionary|warning sign|red flag)\b",
         re.IGNORECASE,
     ),
     # Open-ended threat / unresolved-question kicker — the article ends

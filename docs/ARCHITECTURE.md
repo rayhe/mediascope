@@ -454,8 +454,8 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
-│   └── sample_output/       # 186 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2785 tests across 126 test files (all from real articles)
+│   └── sample_output/       # 187 annotated real-article analyses (see METHODOLOGY.md §17)
+├── tests/                       # 2797 tests across 126 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI

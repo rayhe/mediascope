@@ -1,4 +1,64 @@
 # MediaScope Iteration Log
+## 2026-07-15 14:00 PT — Type D: Toolkit Quality & Documentation (SENTIMENT_CORRECTION_REFERENCE fixes + BuzzFeed sample + stale count sweep)
+
+**Commit:** `50c0a8d` — "Type D: Fix SENTIMENT_CORRECTION_REFERENCE.md inconsistencies, add BuzzFeed sample, update stale counts"
+
+### Focus
+Fix internal inconsistencies in SENTIMENT_CORRECTION_REFERENCE.md introduced when Path L was added, add a new annotated BuzzFeed article (first in corpus) with cross-publication comparison, and sweep all stale stats across 5+ documentation files.
+
+### Work Done
+
+1. **SENTIMENT_CORRECTION_REFERENCE.md — 3 consistency fixes**
+   - Evaluation order in intro now includes Path L: "A → B → C → E → D → F → H → K → L → I → J" (was missing L)
+   - Part 4 Correction Strength Summary table: added Path L row (~70/30 blend, [−0.50, −0.05] range, ~0.76 typical gap)
+   - Naming convention: updated from "(A, B, C, D, E, F, G, H, I, J, K)" to include L, changed "next path would be L" → "next path would be M"
+
+2. **Stale count sweep across 6 files**
+   - Annotated articles 185→186: README.md, QUALITY_STANDARDS.md, ARCHITECTURE.md, METHODOLOGY.md (2 occurrences)
+   - Entity aliases 874→875: README.md (2 occurrences), ARCHITECTURE.md
+   - Publication count 44→45: METHODOLOGY.md §17
+
+3. **New BuzzFeed sample (first in corpus)**
+   - Article: "Lorde Slams Meta AI Glasses After Kylie Jenner Collab" (Jul 15, 2026)
+   - Full article text (buzzfeed_lorde_meta_glasses_2026_07_15_article.txt)
+   - Full annotated analysis (buzzfeed_lorde_meta_glasses_2026_07_15_analysis.md) with:
+     - 14 framing devices identified (4× social_proof_amplification, 4× loaded_language, 3× assumed_consensus, 2× escalation_amplification, 1× each editorial_aside, hypocrisy_frame, juxtaposition, power_asymmetry, emotional_appeal)
+     - Cross-publication comparison vs Gizmodo (Jul 14) on same celebrity backlash event
+     - Seven-dimension comparison matrix
+     - Split-valence advocacy gap documented (no correction path fires — positive-toward-opponents + negative-toward-product cancels in VADER)
+   - Added BuzzFeed to test_structural_consistency.py _PUB_PREFIXES table
+   - Added BuzzFeed to METHODOLOGY.md §17.2 General Interest table
+
+4. **Test suite runtime investigation**
+   - Full suite (2,785 tests) takes ~6 min, not hanging — earlier apparent hang was output buffering from `| tail`
+   - Structural consistency subset (124 tests): ~38s
+   - All 124 structural consistency tests pass after changes (0 regressions)
+
+### Analytical Observations
+
+- **Split-Valence Advocacy gap:** BuzzFeed's article is adversarial toward Meta's product but celebratory toward Lorde's opposition. VADER reads the fan praise as positive, producing raw tone ~+0.05 when manual assessment is −0.35. No existing correction path fires because: Path A needs agency < −0.3 (has +0.25), Path H needs aside ≥ 2 (has 1), Path D needs loaded ≥ 7 (has 4), Path I needs consumer_devices ≥ 2 (has 1). This is a distinct failure mode from Proposed Path M (structural irony) — could be a Path N candidate for "split-valence advocacy."
+
+- **Social proof amplification as adversarial device:** BuzzFeed uses 4 cherry-picked social media comments as the sole "evidence" for public backlash. No polling data, no sales figures, no counterexamples. This is opinion-curation dressed as reporting. Currently social_proof_amplification is NOT in the 32 adversarial device types — should be considered for addition when ≥50% of sources are anonymous social media comments aligned with editorial thesis.
+
+- **BuzzFeed editorial DNA:** First-person register ("I'm sure you're at least aware"), cross-publication self-citation (sourcing own BuzzFeed News archive), engagement-farming closer ("Let us know what you think"). Distinct from tech-editorial DNA.
+
+### Verification
+- All 124 structural consistency tests pass (0 regressions)
+- `count_stats.py --check`: all counts match (was stale on annotated articles before fix)
+- Git push to origin/main successful
+
+### Sources
+- BuzzFeed article: https://www.buzzfeed.com/leylamohammed/lorde-slams-meta-ai-glasses-after-kylie-jenner-collab
+- Gizmodo comparison: existing `gizmodo_smart_glasses_celebrity_backlash_jul14.md`
+- Internal docs: SENTIMENT_CORRECTION_REFERENCE.md, METHODOLOGY.md, QUALITY_STANDARDS.md, ARCHITECTURE.md, README.md
+
+### Notes
+- Next iteration should be Type A (Article Deep Dive)
+- BuzzFeed is the 45th publication in the corpus — no YAML profile needed unless Ray wants to add BuzzFeed as a tracked publication
+- The split-valence advocacy gap (Path N candidate) needs ≥3 validated examples from ≥2 publications before formalizing
+
+---
+
 ## 2026-07-15 13:00 PT — Type C: Ownership & Funding Deep Dive (Condé Nast Union CBA Complete History + Lahut NLRB Update)
 
 **Commit:** `df5015b` — "Type C: Complete CBA contract history + Lahut NLRB update for Wired/Condé Nast labor analysis"
@@ -23632,3 +23692,41 @@ Gizmodo's +0.457 is the outlier — VADER failure, not editorial divergence. Wid
 - 185 annotated articles (+1), 875 entity aliases (+1 Metamate)
 - 2785 tests (2781 passed, 4 xfailed), 126 test files (+1)
 - Same-event cluster 15: 3-way → 4-way (Reuters/FoxBiz/WSJ/Gizmodo)
+
+---
+
+## 2026-07-15 15:00 PT — Type A: The Register Muse Image Pulled (Jul 13)
+
+### Article
+**The Register**: "Meta admits its first 'superintelligence' was too stupid to survive for three days" (Jul 13, 2026)
+- Genre: British tech editorial (~480 words)
+- Topic: Meta's Muse Image withdrawal after 72 hours; SAG-AFTRA backlash; opt-in-by-default consent alarm
+- Joins Muse Image same-event cluster (8th article in arc)
+
+### Key Findings
+- **VADER compound +0.9807** — highest positive score in corpus for a negative article. Classic PR-language polarity inversion: ~55% of word count is embedded Meta quotes full of product-launch vocabulary that VADER reads as highly positive.
+- **21 framing devices** — highest in the Muse Image cluster and one of the densest in the corpus. Every paragraph contains at least one device.
+- **Framing correction fires** (raw +0.649 → corrected −0.045) but undershoots — manual assessment is −0.45.
+
+### Fixes Applied
+1. **Entity: Zuck possessive regex** — `(?-i:Zuck)` lookahead required `\s+` before `'s`, so `Zuck's` never matched. Fixed by adding `'s` as direct alternative before the space-required group.
+2. **Entity: Zuck believes context** — Added `believes?` to the Zuck trailing context keyword list. Previously only `thinks?` was covered.
+3. **Framing: backfired kicker** — Added `backfired` to `_KICKER_NEGATIVE_SIGNALS`. "Backfired" is a concise editorial verdict placed at article end — textbook kicker word.
+
+### Files Created/Modified
+- `examples/sample_output/register_muse_image_superintelligence_pulled_2026_07_13_article.txt` (new)
+- `examples/sample_output/register_muse_image_superintelligence_pulled_2026_07_13_analysis.md` (new)
+- `tests/test_register_muse_image_superintelligence_jul13.py` (extended: 22→34 tests)
+- `mediascope/analyze/entities.py` (Zuck possessive + believes fix)
+- `mediascope/analyze/framing.py` (backfired kicker signal)
+- `docs/METHODOLOGY.md` (187 articles, Register 2→4)
+- `docs/QUALITY_STANDARDS.md` (187 articles)
+- `docs/ARCHITECTURE.md` (2797 tests, 187 articles)
+- `README.md` (2797 tests, test_register 22→34)
+
+### Stats
+- 187 annotated articles (+1), 46 publications
+- 2797 tests (126 files), +12 integration tests
+- Same-event cluster: Muse Image shutdown now 8-way
+- Register articles: 2→4
+
