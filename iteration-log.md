@@ -1,4 +1,19 @@
 # MediaScope Iteration Log
+## 2026-07-15 16:00 PT — Type A: Article Deep Dive (BuzzFeed smart glasses misuse)
+- **Article:** "Smart Glasses Are Changing How We See The World. But Are We Ready For How They Can Be Misused?" by Becca Monaghan, BuzzFeed (~Jul 13, 2026)
+- **URL:** https://www.buzzfeed.com/beccamonaghan/smart-glasses-womens-safety-concerns
+- **7 improvements from manual vs. toolkit gap analysis:**
+  1. **latecomer_narrative abstract-subject filter:** New suppression for "playing catch-up" when subject is abstract (conversations, debates, regulations, safety) rather than a company. Prevents false positive on "conversations about privacy...seem to be playing catch-up."
+  2. **ironic_quotation policy jargon filter:** Added "safety by design", "privacy by design", "duty of care", "age verification", and 8 more policy/regulatory terms to `_TECH_JARGON` set. UK government VAWG Strategy policy term was being flagged as scare quotes.
+  3. **ironic_quotation attribution verb expansion:** Added "adding that", "noting that", "explaining that", "stating that", "stressing that", "emphasising that" to `_DIRECT_QUOTE` tuple. "Adding that they will take action 'up to banning accounts'" is reported speech, not ironic distance.
+  4. **rhetorical_question range extension:** Extended negative-interrogative pattern from `.{5,120}?` to `.{5,200}?` — BuzzFeed's "shouldn't we be asking...incel-ism." is 122 chars from "be" to period, exceeding old 120-char limit.
+  5. **rhetorical_question "What about someone who" pattern:** New pattern catches challenging what-about constructions using "What about someone/people/those/anyone who..." — stacked "Someone who..." clauses create accumulative moral force.
+  6. **loaded_language "weaponisation":** Already caught by existing patterns (confirming `weaponisation/weaponize` added in prior iteration works).
+  7. **analogy_metaphor seatbelt/safety-engineering:** Already caught by pattern added in prior iteration. "We don't design seatbelts because we expect everyone to crash" correctly detected.
+- **Stats:** 659 regex patterns (+3 net new), 720 compiled patterns (+3), 189 annotated articles (+1), 124 tests pass, 0 regressions.
+- **Sample output:** `buzzfeed_smart_glasses_misuse_2026_07_13_article.txt` + `buzzfeed_smart_glasses_misuse_2026_07_13_analysis.md`
+- **Cross-publication note:** Pairs with WSJ "Meta Is Flooding the Market With Smartglasses" (Jul 14) — BuzzFeed takes societal/safety angle, WSJ takes market/competition angle. Same company (Meta), radically different framing.
+
 ## 2026-07-15 14:00 PT — Type D: Toolkit Quality & Documentation (SENTIMENT_CORRECTION_REFERENCE fixes + BuzzFeed sample + stale count sweep)
 
 **Commit:** `50c0a8d` — "Type D: Fix SENTIMENT_CORRECTION_REFERENCE.md inconsistencies, add BuzzFeed sample, update stale counts"

@@ -542,6 +542,13 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         # Discovered via MIT TR "Resistance" article (Apr 2026):
         # "found carrying an anti-AI diatribe"
         r"diatribe|screed|tirade|rant|harangue|polemic|manifesto|"
+        # Military / violence metaphors applied to consumer tech — "weaponise"
+        # and "weaponisation" frame consumer devices or features as instruments
+        # of aggression.  Neutral alternatives: "misuse", "exploit", "abuse".
+        # Discovered via BuzzFeed smart glasses misuse article (Jul 13, 2026):
+        # "the weaponisation of smart accessories" — imports military metaphor
+        # into a consumer-tech privacy discussion.
+        r"weaponi[sz](?:ed?|ing|ation|isation)|"
         r"unprecedented\s+(?:\w+\s+)?(?:breach|breaches|violation|exposure|threat|risk|danger|harm|crisis|failure))\b",
         re.IGNORECASE,
     ),
@@ -1772,6 +1779,41 @@ _RHETORICAL_QUESTION_PATTERNS: list[re.Pattern] = [
         r"\bShould\s+(?:\w+(?:'s)?\s+){1,8}?"
         r"(?:hinge|depend|rest|turn|rely|be\s+(?:determined|decided|judged"
         r"|measured|based|conditional|contingent))"
+        r".{5,120}?\?",
+        re.IGNORECASE,
+    ),
+    # ---------------------------------------------------------------------------
+    # Negative-interrogative inclusive rhetorical question — editorial device
+    # where the author frames their thesis as a collective obligation using
+    # first-person inclusive "we" with a negative auxiliary.
+    #
+    # Discovered in BuzzFeed smart glasses misuse article (Jul 13, 2026):
+    #   "shouldn't we be asking why it's becoming normalised rather than
+    #    being recognised for what it is"
+    # The "shouldn't we" form converts an assertion into a question that
+    # presupposes agreement.  Distinct from the "Should X...?" pattern
+    # (which targets third-person entities).
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b(?:shouldn't|shouldn't|shouldn.t|wouldn't|wouldn't|couldn't|couldn't"
+        r"|shouldn.t|wouldn.t|couldn.t)\s+we\s+(?:be|all\s+be|start|stop)\b"
+        r".{5,200}?(?:\?|[.!](?:\s|$))",
+        re.IGNORECASE,
+    ),
+    # ---------------------------------------------------------------------------
+    # "What about [someone/people/those who]..." — challenging what-about
+    # construction that uses rhetorical series to broaden scope of harm.
+    #
+    # Discovered in BuzzFeed smart glasses misuse article (Jul 13, 2026):
+    #   "What about someone who has escaped a toxic relationship and is
+    #    trying to rebuild their privacy? Someone who has experienced
+    #    stalking or harassment?"
+    # The stacked "What about..." / "Someone who..." creates accumulative
+    # moral force without directly asserting a claim.
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\bwhat about\s+(?:someone|people|those|anyone|the (?:people|workers|"
+        r"women|children|victims|employees|users))\s+who\b"
         r".{5,120}?\?",
         re.IGNORECASE,
     ),
@@ -5318,6 +5360,28 @@ _ANALOGY_METAPHOR_PATTERNS: list[re.Pattern] = [
     # "is like [verb]ing" / "was like [verb]ing" — simile with gerund
     re.compile(
         r"\b(?:is|was|be)\s+like\s+\w+ing\b",
+        re.IGNORECASE,
+    ),
+    # ---------------------------------------------------------------------------
+    # Parallel-construction safety analogy — editorial device where a writer
+    # imports an unrelated safety-engineering domain to frame the current
+    # issue.  Uses parallel "We don't X because Y; we X because Z" or
+    # "You don't X for Y; you X for Z" construction.
+    #
+    # Discovered in BuzzFeed smart glasses misuse article (Jul 13, 2026):
+    #   "We don't design seatbelts because we expect everyone to crash;
+    #    we design them because incidents happen."
+    # The seatbelt analogy imports automotive safety norms to frame tech
+    # privacy as a design obligation, not a user responsibility.
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b(?:we|you|they|companies|designers?)\s+don(?:'t|'t|.t)\s+"
+        r"(?:design|build|add|include|install|create|require|mandate|test)\s+"
+        r"(?:seatbelts?|airbags?|guardrails?|fire (?:exits?|escapes?|alarms?)|"
+        r"safety (?:nets?|harnesses?|rails?|features?)|smoke detectors?|"
+        r"circuit breakers?|fuses?|locks?|helmets?|life ?(?:jackets?|vests?))\b"
+        r".{5,120}?"
+        r"\b(?:because|expecting|assuming)\b",
         re.IGNORECASE,
     ),
 ]
@@ -9656,6 +9720,36 @@ def detect_framing_devices(
                         if any(actor in _lookback_geo for actor in _PHYSICAL_ACTORS):
                             continue
 
+                # --- Latecomer narrative: abstract subject filter -------------
+                # Suppress latecomer_narrative when "playing catch-up" /
+                # "catch up" / "behind the curve" subject is an abstract
+                # concept (conversations, debates, regulations, safety,
+                # policy, legislation, standards) rather than a company or
+                # product.  When safety discussions or regulations are
+                # described as "playing catch-up" with innovation, that is
+                # commentary on the pace of governance, not a competitive
+                # positioning device aimed at a company.
+                #
+                # Discovered in BuzzFeed smart-glasses/women's-safety
+                # article (Jul 13, 2026): "playing catch-up" referred to
+                # safety conversations lagging behind tech innovation,
+                # not a company entering a market late.
+                # ---------------------------------------------------------
+                if device_type == "latecomer_narrative":
+                    _lookback_ln = text[max(0, start - 80):start].lower()
+                    _ABSTRACT_SUBJECTS = (
+                        "conversation", "debate", "discussion",
+                        "regulation", "legislation", "law ",
+                        "policy", "policies", "standard",
+                        "safety", "governance", "oversight",
+                        "discourse", "dialogue", "awareness",
+                        "understanding", "ethics", "ethical",
+                        "accountability", "transparency",
+                        "compliance", "enforcement",
+                    )
+                    if any(subj in _lookback_ln for subj in _ABSTRACT_SUBJECTS):
+                        continue
+
                 # --- Ironic-quotation attribution filter ----------------------
                 # Suppress ironic_quotation matches that are short (≤3 words)
                 # product-naming terms embedded in attribution context, not
@@ -9741,6 +9835,17 @@ def detect_framing_devices(
                         # (Jul 4, 2026): "world model" is established AI
                         # research terminology, not editorial distancing.
                         "world model", "world models",
+                        # Added from BuzzFeed smart-glasses article
+                        # (Jul 13, 2026): "safety by design" is an
+                        # established UK government policy framework
+                        # term, not editorial scare quotes.  Extends
+                        # to similar regulatory/policy terms.
+                        "safety by design", "privacy by design",
+                        "security by design", "ethics by design",
+                        "by design", "by default",
+                        "duty of care", "best practice",
+                        "best practices", "due diligence",
+                        "age verification", "age assurance",
                     }
                     # Strip trailing punctuation before jargon lookup —
                     # quoted terms often retain commas/periods from the
@@ -9916,6 +10021,15 @@ def detect_framing_devices(
                             " describes as ", " described as ",
                             " what he call", " what she call",
                             " what they call",
+                            # --- Added from BuzzFeed smart-glasses article
+                            # (Jul 13, 2026): "adding that they will take
+                            # action 'up to banning accounts'" — "adding
+                            # that" introduces reported speech, not ironic
+                            # distance.
+                            " adding that ", " noting that ",
+                            " explaining that ", " stating that ",
+                            " stressing that ", " emphasising that ",
+                            " emphasizing that ",
                         )
                         if any(verb in _lookback for verb in _DIRECT_QUOTE):
                             continue
