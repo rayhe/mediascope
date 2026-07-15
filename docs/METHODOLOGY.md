@@ -185,7 +185,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 102 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (85 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 104 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (87 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -294,6 +294,8 @@ These were added through systematic analysis of real articles from the five trac
 | **Competitive Guilt Transfer** | Linking a product or company to a competitor's scandal in the same section or paragraph, creating guilt by proximity without directly accusing the subject. The editorial effect is transferred culpability: the reader processes the subject's product through the lens of the competitor's scandal. Distinct from guilt_by_association (which links the subject to specific bad actors) and scandal_comparison (which explicitly draws parallels between scandals) | "facing a class-action lawsuit"; "facing an EU privacy investigation"; "threatened to remove from App Store"; "banned from"; "pulled from" | NY Post Muse Image opt-out (Jul 10, 2026) — the article's final section pivots from Muse Image to Grok's "nudify" deepfake controversy, creating an inference chain Meta→AI images→Grok→nudify→children→lawsuit without directly accusing Meta of enabling deepfakes. The juxtaposition transfers the scandal's emotional weight |
 | **Consent Alarm** | Default-opt-in or automatic enrollment language that frames product defaults as a consent violation. Common in privacy service journalism, where the very existence of opt-out instructions implies the default is threatening. Distinct from loaded_language (individual loaded words) and default_burden_privacy (which focuses on the burden of opting out). Consent alarm targets the structural framing of enrollment/consent mechanisms | "automatically enrolled"; "automatically opted in"; "without your knowledge"; "without your consent"; "use your likeness"; "anyone can use/create/generate" | NY Post Muse Image opt-out (Jul 10, 2026) — "automatically enrolled Instagram accounts, meaning anyone on the internet can use your photos unless you turn off the feature." Six consent_alarm instances in one article, establishing the core editorial frame: the default is a violation, not a feature |
 | **Editorial Character Attack** | Journalist inserts their own characterization of a named person's reputation or moral standing as established fact, rather than attributing the claim to a source. Distinct from loaded_language (which targets individual words) and guilt_by_association (which links subject to a separate bad actor). Editorial character attack is the journalist themselves making the moral judgment in their editorial voice | "best known for unethical/illegal/deceptive"; "he's/she's the guy for that"; "has a long/well-documented/terrible history/track record of exploiting/violating/abusing" | Kotaku Meta Muse Image removed (Jul 11, 2026) — "Mark Zuckerberg is best known for unethical use of user data, he's the guy for that" — journalist's own character judgment stated as established fact, not attributed to any source |
+| **Surveillance Creep** | Frames ambient always-on recording, continuous capture, or incremental expansion of monitoring scope as normalizing total information awareness. Distinct from consent_alarm (which targets enrollment/opt-out) and default_burden_privacy (which targets settings burden). Surveillance creep targets the framing of the recording act itself | "constantly capture audio and visuals without notifying"; "record a user throughout the day"; "AI is listening"; "ambient recording"; "capture without notifying" | WSJ Meta smartglasses privacy (Jul 14, 2026) — "constantly capture audio and visuals of the world around them, with some glasses able to record a user throughout the day" — framing continuous capture as defining characteristic |
+| **Market Flooding** | Casts volume, speed, or scale of product distribution as aggressive or overwhelming through metaphors of flooding, saturation, or inundation. Distinct from scale_magnitude (which amplifies numerical values) and competitive_positioning (which elevates competitors). Market flooding targets the distribution strategy framing itself | "flooding the market"; "flood of devices"; "market saturation"; "into the hands of as many people as possible" | WSJ Meta smartglasses privacy (Jul 14, 2026) — headline "Meta Is Flooding the Market With Smartglasses" — uses flooding metaphor to frame distribution ambition as overwhelming force |
 
 #### Structural Devices (Post-Pass)
 
@@ -849,7 +851,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 102-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 104-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1393,7 +1395,7 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **183 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **184 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1509,7 +1511,7 @@ Articles cluster into 9 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 183 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 184 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|
@@ -1541,7 +1543,7 @@ The EU DSA "Addictive Design" cluster (Jul 10, 2026) is the widest genre-control
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 102 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 104 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|

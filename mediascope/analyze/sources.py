@@ -474,8 +474,16 @@ def _extract_affiliation(context: str) -> str:
                 aff = m.group(1).strip() + "'s " + m.group(2).strip()
             else:
                 aff = m.group(1).strip()
-            # Filter out generic words and overly short matches
-            if len(aff) > 2 and aff not in {"The", "A", "An", "This", "That"}:
+            # Filter out generic words, overly short matches, and title
+            # words that Pattern 0b can false-positive on.  "Chief Executive
+            # Mark Zuckerberg" → Pattern 0b captures "Chief" as org, but
+            # "Chief" is a title prefix, not an organization.  Discovered in
+            # WSJ Meta smartglasses privacy article (Jul 2026).
+            _TITLE_FALSE_POS = {
+                "Chief", "Vice", "Deputy", "Senior", "Executive",
+                "Associate", "Assistant", "Managing", "Former", "Acting",
+            }
+            if len(aff) > 2 and aff not in {"The", "A", "An", "This", "That"} and aff not in _TITLE_FALSE_POS:
                 return aff
     return ""
 
@@ -769,8 +777,10 @@ def extract_sources(text: str) -> list[SourceMention]:
     # Pattern 1: "Name said/told/etc." — named source with attribution verb
     # Supports hyphenated surnames (e.g. "Hadfield-Menell") — discovered in
     # MIT Tech Review AI agents article (Jul 4, 2026 iteration).
+    # Allows optional comma before the verb — handles appositive constructions
+    # like "Andrew Bosworth, said" (WSJ Meta smartglasses article, Jul 2026).
     named_before_verb = re.compile(
-        rf"\b([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+(?:-[A-Z][a-z]+)?)\s+({verb_alternation})\b",
+        rf"\b([A-Z][a-z]+ (?:[A-Z]\. )?[A-Z][a-z]+(?:-[A-Z][a-z]+)?),?\s+({verb_alternation})\b",
     )
     for m in named_before_verb.finditer(text):
         name = m.group(1).strip()
@@ -797,6 +807,21 @@ def extract_sources(text: str) -> list[SourceMention]:
             continue
         # Filter out publication/organization partial names
         if name in _NAME_STOP_NAMES:
+            continue
+        # Filter out names whose last word is an institutional suffix —
+        # these are org-name fragments, not person names.  The comma
+        # tolerance in the regex can match "Liberties Union, said" from
+        # "American Civil Liberties Union, said".  Discovered in WSJ Meta
+        # smartglasses privacy article (Jul 2026).
+        _INSTITUTIONAL_SUFFIXES = {
+            "Union", "League", "Agency", "Association", "Foundation",
+            "Institute", "Committee", "Bureau", "Coalition", "Council",
+            "Commission", "Corporation", "Company", "Society", "Board",
+            "Authority", "Network", "Organization", "Federation",
+            "Consortium", "Alliance", "Forum", "Exchange", "Trust",
+        }
+        last_word = name.split()[-1]
+        if last_word in _INSTITUTIONAL_SUFFIXES:
             continue
 
         seen_names.add(name)

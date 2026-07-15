@@ -9145,6 +9145,114 @@ _EDITORIAL_CHARACTER_ATTACK_PATTERNS: list[re.Pattern] = [
 ]
 _DEVICE_PATTERNS["editorial_character_attack"] = _EDITORIAL_CHARACTER_ATTACK_PATTERNS
 
+# -----------------------------------------------------------------------
+# surveillance_creep — ambient always-on recording, continuous capture,
+# and incremental expansion of monitoring scope.  Distinct from
+# consent_alarm (which focuses on notification/consent gaps) and
+# loaded_language surveillance terms: surveillance_creep emphasizes the
+# ambient, persistent, expanding nature of data capture — the idea that
+# recording becomes the default state, gradually normalizing total
+# information awareness.
+#
+# Discovered in WSJ Meta smartglasses privacy article (Jul 15, 2026):
+#   "constantly capture audio and visuals without notifying"
+#   "record a user throughout the day to assess their mood"
+# -----------------------------------------------------------------------
+_SURVEILLANCE_CREEP_PATTERNS: list[re.Pattern] = [
+    # "constantly/continuously/always capture/record/listen/monitor"
+    re.compile(
+        r"\b(?:constantly|continuously|always|perpetually|persistently|"
+        r"around the clock|24/7|all day|throughout the day)\s+"
+        r"(?:captur(?:e|es|ed|ing)|record(?:s|ed|ing)?|listen(?:s|ed|ing)?|"
+        r"monitor(?:s|ed|ing)?|track(?:s|ed|ing)?|surveill?(?:ed|ing)?|"
+        r"observ(?:e|es|ed|ing)|film(?:s|ed|ing)?|scann?(?:ed|ing)?)\b",
+        re.IGNORECASE,
+    ),
+    # "capture/record ... without notifying/alerting/consent/knowledge"
+    re.compile(
+        r"\b(?:captur(?:e|es|ed|ing)|record(?:s|ed|ing)?|film(?:s|ed|ing)?|"
+        r"listen(?:s|ed|ing)?|monitor(?:s|ed|ing)?)\b"
+        r".{0,80}?"
+        r"\b(?:without\s+(?:notify(?:ing)?|alert(?:ing)?|consent(?:ing)?|"
+        r"knowledge|permission|awareness|telling|informing|warning)|"
+        r"(?:no|zero|lacking|absent)\s+(?:notification|consent|indicator|"
+        r"warning|signal|alert))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "ambient recording/listening/capture/monitoring"
+    re.compile(
+        r"\b(?:ambient|passive|background|persistent|continuous|pervasive|"
+        r"ubiquitous|always-on|always on)\s+"
+        r"(?:recording|listening|capture|capturing|monitoring|tracking|"
+        r"surveillance|data\s+collection|scanning)\b",
+        re.IGNORECASE,
+    ),
+    # "AI is listening" + device context
+    re.compile(
+        r"\b(?:AI|artificial intelligence|the (?:device|glasses|camera))\s+"
+        r"(?:is\s+)?(?:listening|watching|recording|monitoring|tracking|"
+        r"capturing|observing)\b",
+        re.IGNORECASE,
+    ),
+    # "record ... throughout the day / all the time / at all times"
+    re.compile(
+        r"\b(?:record(?:s|ed|ing)?|captur(?:e|es|ed|ing)|monitor(?:s|ed|ing)?|"
+        r"track(?:s|ed|ing)?|log(?:s|ged|ging)?)\b"
+        r".{0,60}?"
+        r"\b(?:throughout the day|all (?:the )?time|at all times|"
+        r"every (?:moment|waking hour)|around the clock)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+_DEVICE_PATTERNS["surveillance_creep"] = _SURVEILLANCE_CREEP_PATTERNS
+
+# -----------------------------------------------------------------------
+# market_flooding — editorial framing that casts volume, speed, or scale
+# of product distribution as aggressive or overwhelming.  Uses metaphors
+# of flooding, saturation, inundation, or dumping.  Distinct from
+# scale_magnitude (which emphasizes numerical bigness) and
+# competitive_displacement (which emphasizes harm to rivals):
+# market_flooding frames the company's own distribution strategy as
+# coercive or out of control.
+#
+# Discovered in WSJ Meta smartglasses privacy article (Jul 15, 2026):
+#   headline "Flooding the Market"
+# -----------------------------------------------------------------------
+_MARKET_FLOODING_PATTERNS: list[re.Pattern] = [
+    # "[entity] is flooding / floods / flooded the market"
+    re.compile(
+        r"\b(?:flood(?:s|ed|ing)?|saturat(?:e|es|ed|ing)|inundat(?:e|es|ed|ing)|"
+        r"dump(?:s|ed|ing)?|swamp(?:s|ed|ing)?|overwhelm(?:s|ed|ing)?|"
+        r"delug(?:e|es|ed|ing))\s+"
+        r"(?:the\s+)?(?:market|consumer|world|industry|stores?|shelves|"
+        r"users?|public)\b",
+        re.IGNORECASE,
+    ),
+    # "flood of [products/devices/glasses]"
+    re.compile(
+        r"\b(?:flood|deluge|torrent|avalanche|tsunami|wave|barrage|glut|"
+        r"oversupply|oversaturation)\s+of\s+"
+        r"(?:devices?|products?|gadgets?|glasses|hardware|offerings?|"
+        r"models?|releases?|launches?)\b",
+        re.IGNORECASE,
+    ),
+    # "market saturation / saturating the market"
+    re.compile(
+        r"\b(?:market\s+(?:saturation|flooding|inundation|glut|oversupply)|"
+        r"saturating\s+the\s+market|flooded\s+market)\b",
+        re.IGNORECASE,
+    ),
+    # "into the hands of as many [people/consumers/users] as possible"
+    # — a common editorial paraphrase of aggressive distribution
+    re.compile(
+        r"\b(?:into the hands|in(?:to)? the hands)\s+of\s+"
+        r"(?:as\s+many\s+)?(?:people|consumers?|users?|customers?)\s+"
+        r"(?:as\s+possible)\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["market_flooding"] = _MARKET_FLOODING_PATTERNS
+
 
 def detect_framing_devices(
     text: str,
@@ -9152,15 +9260,15 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 95 pattern-matched device types plus 7 structural
-    post-pass types (102 total).
+    Scans for 97 pattern-matched device types plus 7 structural
+    post-pass types (104 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (95): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (97): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_displacement,
@@ -9186,7 +9294,7 @@ def detect_framing_devices(
     juxtaposition, latecomer_narrative, litigation_cascade,
     litigation_framing,
     loaded_language, loss_leader_framing,
-    marginal_endorsement, market_verdict,
+    marginal_endorsement, market_flooding, market_verdict,
     military_techno_optimism, narrative_reframing,
     no_comment_implication, outsourced_intensity, overbuilding_narrative,
     pathologizing_metaphor, policy_reversal, power_asymmetry,
@@ -9201,6 +9309,7 @@ def detect_framing_devices(
     self_referential_investigation,
     silence_as_guilt, slippery_slope, sovereignty_framing,
     strategic_disclosure, strategic_reversal, straw_man,
+    surveillance_creep,
     talent_hemorrhage, taxonomy_framing, timeline_implication,
     two_tier_treatment, ultimatum_framing,
     usage_dismissal_undercut, valuation_comparison,
@@ -9515,6 +9624,15 @@ def detect_framing_devices(
                             # scare quote when Baird's Sebastian wrote it.
                             " wrote ", " wrote in ", " writes ",
                             " writes in ", " wrote that ",
+                            # Voice-command / UI-instruction context — a user
+                            # saying a phrase is a product feature description,
+                            # not editorial scare quotes.  Discovered in WSJ
+                            # Meta smartglasses article (Jul 14, 2026):
+                            # "remember this person" is the literal command,
+                            # not ironic usage.
+                            "would say ", "a user would ",
+                            "by saying ", "you say ",
+                            "the command ", "voice command ",
                         )
                         if any(attr in _lookback for attr in _ATTRIBUTION_SHORT):
                             continue
@@ -9728,6 +9846,33 @@ def detect_framing_devices(
                 # 2026): "had a dream in which we were unable to speak or
                 # move" describes the actual experience of paralysis patients,
                 # the very people the technology aims to help.
+                # ---------------------------------------------------------
+
+                # --- Loaded language: product-feature "tracking" filter --------
+                # "tracking" in the surveillance sense is loaded; "tracking"
+                # in "fitness tracking", "activity tracking", "sleep tracking"
+                # is a product feature description.  Suppress when the 60-char
+                # lookback contains a fitness/product-feature keyword.
+                #
+                # Discovered in WSJ Meta smartglasses article (Jul 14, 2026):
+                # "AI-powered motivation and fitness tracking, $379 Meta
+                # Ray-Bans" flags as loaded_language surveillance pattern but
+                # "tracking" here describes a product capability.
+                # ---------------------------------------------------------
+                if device_type == "loaded_language":
+                    _ll_lower_trk = match.group().lower()
+                    if _ll_lower_trk.startswith("tracking"):
+                        _trk_ctx_start = max(0, start - 60)
+                        _trk_context = text[_trk_ctx_start:start].lower()
+                        _PRODUCT_FEATURE_TERMS = (
+                            "fitness", "activity", "health",
+                            "sleep", "step", "workout",
+                            "heart rate", "calorie",
+                            "motivation", "gps",
+                            "running", "cycling",
+                        )
+                        if any(w in _trk_context for w in _PRODUCT_FEATURE_TERMS):
+                            continue
                 # ---------------------------------------------------------
                 if device_type == "emotional_appeal":
                     _ea_lower = match.group().lower()

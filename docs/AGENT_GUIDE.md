@@ -466,7 +466,7 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
 ```json
 {
     "name": "detect_framing_devices",
-    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 102 device types across three tiers: core (10 pattern-matched), extended (85 from real-article analysis), and structural post-pass (7 heuristic-based).",
+    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 104 device types across three tiers: core (10 pattern-matched), extended (87 from real-article analysis), and structural post-pass (7 heuristic-based).",
     "parameters": {
         "type": "object",
         "properties": {
@@ -1281,11 +1281,11 @@ entities = detect_entities(text, clusters=custom_clusters)
 
 ### Problem 5: Two Pattern Count Numbers (635 vs 696)
 
-**Context:** `_DEVICE_PATTERNS` contains 635 patterns organized by device type. The README reports 696 "compiled regex patterns." These count different things:
+**Context:** `_DEVICE_PATTERNS` contains 644 patterns organized by device type. The README reports 696 "compiled regex patterns." These count different things:
 - **635:** Patterns in the `_DEVICE_PATTERNS` dispatch dictionary — these are the device-type-specific detection patterns.
 - **696:** All `re.compile()` calls in `framing.py`, including helper patterns (stop-word filters, attribution verb matchers, structural-pass detection regex) that aren't part of any device type.
 
-Both numbers are correct. The 635 is the number that matters for device detection coverage; the 696 is the total compiled regex footprint. When adding new framing patterns, only the `_DEVICE_PATTERNS` count (635) is guarded by the test suite.
+Both numbers are correct. The 644 is the number that matters for device detection coverage; the 696 is the total compiled regex footprint. When adding new framing patterns, only the `_DEVICE_PATTERNS` count (644) is guarded by the test suite.
 
 ### Problem 6: Cross-Publication Comparison Shows Large Gap
 

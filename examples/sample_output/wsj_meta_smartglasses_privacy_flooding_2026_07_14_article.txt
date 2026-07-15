@@ -1,0 +1,54 @@
+Meta Is Flooding the Market With Smartglasses. Privacy Advocates Are Up in Arms.
+
+By Meghan Bobrowsky
+WSJ, July 14, 2026
+
+Meta is betting that AI-enabled smartglasses capable of capturing everything you see and hear are the future—and the company is doing all it can to make its fast-evolving devices catch on.
+
+Company executives wear smartglasses at public events. Meta donated more than 100,000 pairs to blind veterans on President Trump's birthday weekend. And it has partnered with celebrities and creators, including Kylie Jenner, for help promoting them.
+
+Along the way, the camera-equipped, audio- and video-recording devices have become a privacy lightning rod.
+
+Meta employees were asked to take them off at a trial where Chief Executive Mark Zuckerberg was testifying earlier this year. On social media, people have complained about being filmed without their knowledge, with accounts surfacing of users disabling the white light that signals the glasses are recording. (Meta recently addressed the problem with a software update.)
+
+The glasses—made in partnership with eyewear giant EssilorLuxottica—are part of Meta's grand plan to control the next phase of the internet. The company is working to bolster the revenue it earns beyond ads and build a future in which artificial-intelligence assistants help us live and work.
+
+It envisions a future in which consumers still have smartphones, but increasingly use other devices worn on their bodies to talk to AI chatbots, send texts and take pictures or videos. Meta also is experimenting with different AI device form factors, including small devices that users could either wear as a pin, don as jewelry or put in their pockets, according to people familiar with the matter.
+
+Meta has said glasses are likely to be the new dominant form factor for non-smartphone AI devices, in part because of what the company believes is a large addressable market. Nearly two billion people already wear prescription glasses, Meta executives frequently say.
+
+Meta has launched different versions of the product in the past few years: the $499 Oakley sports glasses that offer AI-powered motivation and fitness tracking, $379 Meta Ray-Bans, and non-Ray-Ban glasses for $299. The less expensive glasses are meant to help Meta get its devices into the hands of as many people as possible.
+
+At a recent event, Meta unveiled a pair of sleeker, oval-shaped glasses designed in collaboration with Jenner. The beauty brand founder took selfies with Meta executives at the New York event while wearing the shades. Fashion and tech influencers have also been hawking the glasses on TikTok and Instagram.
+
+The company plans to release a new generation of the Ray-Ban smartglasses at its annual developer conference in September, according to people familiar with the matter. The company sold seven million pairs of the glasses in 2025.
+
+"We're at this moment now where everyone had flip phones and then smartphones came out, and it felt pretty clear that in five years or whatever, all of the flip phones were going to be smartphones, and that's basically how I feel about glasses today," Zuckerberg said in a recent interview with Complex.
+
+Meanwhile, Meta has been testing two features for its glasses that have drawn the ire of privacy advocates. The first feature, called NameTag, would remember the faces of people that the user met and remind them who the person was the next time they ran into them.
+
+Meta's technology chief, Andrew Bosworth, said on a recent podcast that a user would say "remember this person" about someone they met in real life. The data would only be available to the user when they are wearing their glasses, would be encrypted locally to the device and wouldn't be stored in a central database, he said.
+
+More than 70 local, state and national organizations that advocate for consumer privacy and civil rights signed a letter in April, calling on Meta to halt and publicly disavow its plans to equip its glasses with the NameTag feature.
+
+"The principle here is quite simple: Your glasses should not know my name," Cody Venzke, a senior staff attorney for the American Civil Liberties Union, said in a news release.
+
+Meta says it hasn't yet shipped the feature to consumers and no final decision on whether to do so has been made.
+
+Another feature it is exploring would allow the glasses to constantly capture audio and visuals without notifying those around the user via the white light, according to people familiar with the project. The data captured from that feature wouldn't be stored by Meta or made available to the user directly via a library of audio and video, one of the people said.
+
+Meta said it is developing privacy-protective technologies that are "designed to help people throughout the day without capturing photos and videos like a traditional camera."
+
+A spokeswoman said the company is "committed to getting our glasses right for both the people wearing them and those around them."
+
+Meta also recently filed a patent application for a system that would record a user throughout the day to assess their mood and create customized workout plans for them based on that data, according to a public filing.
+
+To illustrate the concept, the patent application gives examples of what Meta might record.
+
+"User laughs with friend at dinner at 5:15 p.m. Audio is recognized and logged by AI," the filing says. "User sighs at 9:15 p.m. AI is listening from a smart home device and logs it."
+
+A Meta spokeswoman said the company files patent applications to explore inventions or ideas but filing one doesn't necessarily mean it is actively developing the technology.
+
+The Financial Times previously reported some details of the new Meta glasses feature and The Information earlier reported on the company's work on a potential AI pendant.
+
+Across the country, some locales are starting to ban smartglasses. Earlier this month, the New York state court System sent out a memo, prohibiting anyone in their courthouses from wearing the devices.

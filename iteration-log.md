@@ -1,4 +1,44 @@
 # MediaScope Iteration Log
+## 2026-07-15 04:00 PT — Type D: Toolkit Quality & Documentation
+
+**Commit:** `cc7faae`
+
+### Focus
+AGENT_GUIDE.md troubleshooting section + ARCHITECTURE.md staleness fixes. Practical diagnostic content for agents hitting common pipeline problems.
+
+### Work Done
+
+1. **AGENT_GUIDE.md: Troubleshooting & Common Pitfalls (NEW — ~108 lines)**
+   - 7 diagnostic problems with causes, diagnosis steps, and fixes:
+     - Problem 1: Sentiment Score Seems Wrong (VADER polarity inversion, financial inflation, Q&A, consent-alarm gaps)
+     - Problem 2: Entity Not Detected (cluster coverage, disambiguation, custom clusters)
+     - Problem 3: Source Extraction Returns Zero (Q&A format, non-English, stop-word filtering)
+     - Problem 4: Correction Path Fires When It Shouldn't (false positive from PR articles)
+     - Problem 5: Two Pattern Count Numbers — 635 vs 696 (disambiguates `_DEVICE_PATTERNS` count from total `re.compile()` count)
+     - Problem 6: Cross-Publication Comparison Shows Large Gap (genre confounding, word count, framing density normalization)
+     - Problem 7: Legal Vocabulary Inflates/Deflates Scores (~0.15–0.20 overshoot on litigation articles)
+   - "Quick Reference: When to Trust Which Score" decision table (wire/investigative/financial/sardonic/Q&A/correction-disagreement)
+   - Path A forced-retreat variant added to correction paths summary table
+
+2. **ARCHITECTURE.md: Pipeline Diagram Pattern Count**
+   - Changed "(102 device types, 635 patterns)" → "(102 device types, 696 compiled regex)" to align with README stats table
+   - 635 = patterns in `_DEVICE_PATTERNS` dispatch dict; 696 = all `re.compile()` in framing.py including helpers and structural-pass patterns
+   - Clarification added to AGENT_GUIDE Problem 5 explaining the two metrics
+
+3. **ARCHITECTURE.md: Known Limitations Update**
+   - "Procedural service journalism" updated from "(unaddressed)" to "(partially addressed)" — forced-retreat override (Jul 14) handles `policy_reversal + consent_alarm` co-occurrence; consent_alarm-only articles remain uncorrected
+   - Entity cluster count: 86 → 87 (stale since last entity cluster addition)
+
+### Verification
+- All 2,706 tests pass (0 regressions)
+- All 124 structural consistency guards pass (includes stale count purges, doc cross-reference checks, device list completeness)
+- `count_stats.py` verified: 87 clusters, 871 aliases, 102 device types, 696 compiled patterns, 1,022 EL terms, 32 adversarial types, 12 correction paths, 183 annotated articles, 239 journalists, 932 migrations, 29 topics
+
+### Sources
+Internal documentation audit against code and prior iteration outputs
+
+---
+
 ## 2026-07-15 03:00 PT — Type C: Ownership & Funding Deep Dive (The Verge / PMC)
 
 **Commit:** `6a6abad`
@@ -23147,5 +23187,44 @@ Analyzed Fox Business coverage of a class action by 26 anonymous Meta employees 
 ### Stats
 - Articles: 182 (+1), patterns: 633 (+3), tests: 2,671 (+9), test files: 120 (+1)
 - All 2,671 tests passing, zero regressions
+
+---
+
+## Iteration 2026-07-15 05:00 PT — Type A: Article Deep Dive
+
+**Article:** WSJ — "Meta Is Flooding the Market With Smartglasses. Privacy Advocates Are Up in Arms." (Jul 14, 2026, Meghan Bobrowsky)
+
+### Summary
+Analyzed WSJ coverage of Meta's smartglasses push and privacy backlash. Moderately balanced article (tone 0.62) — gives Meta defense space (Bosworth quote, two spokeswoman responses) but headlines with "Flooding" metaphor and leads with privacy controversy. 3 anonymous sources for unreleased product details (standard WSJ pre-announcement sourcing).
+
+### Work Done
+1. **Article saved:** `examples/sample_output/wsj_meta_smartglasses_privacy_flooding_2026_07_14_article.txt`
+2. **Full toolkit analysis + manual assessment:** `examples/sample_output/wsj_meta_smartglasses_privacy_flooding_2026_07_14_analysis.md`
+
+#### Framing Fixes (2, from previous pass this iteration)
+3. **Fix: ironic_quotation false positive on voice commands** — "remember this person" flagged as ironic quoting, actually a literal UI command. Added voice-command patterns to `_ATTRIBUTION_SHORT` tuple in `framing.py`.
+4. **Fix: loaded_language false positive on "fitness tracking"** — "fitness tracking, $379" triggered surveillance loaded_language. Added product-feature suppression filter in `framing.py`.
+
+#### Source Extraction Fixes (3)
+5. **Fix: comma before verb (Bosworth)** — "Andrew Bosworth, said" missed because Pattern 1 required `\s+` between name and verb. Changed to `,?\s+` for appositive constructions.
+6. **Fix: affiliation title false positive** — "Chief Executive Mark Zuckerberg" extracted "Chief" as affiliation. Added `_TITLE_FALSE_POS` set to `_extract_affiliation` filter.
+7. **Fix: institutional suffix filter** — Comma tolerance introduced regression: "Liberties Union, said" from "American Civil Liberties Union, said" falsely matched as person. Added `_INSTITUTIONAL_SUFFIXES` check (Union, League, Agency, Foundation, etc.) to Pattern 1.
+
+#### New Framing Devices (2)
+8. **surveillance_creep** — ambient always-on recording, continuous capture without consent. 5 patterns: "constantly capture", "record throughout the day", "AI is listening", "ambient recording", "capture without notifying".
+9. **market_flooding** — aggressive distribution framing. 4 patterns: "flooding the market", "flood of devices", "market saturation", "into the hands of as many people as possible".
+
+#### Tests
+10. **Test file:** `tests/test_wsj_meta_smartglasses_jul15.py` — 24 tests covering all 7 fixes (voice-command ironic_quotation, fitness-tracking loaded_language, comma-before-verb, title affiliation, institutional suffix, surveillance_creep, market_flooding). All pass.
+
+### Known Issues (noted, not yet fixed)
+- "A spokeswoman" bare descriptor: first spokeswoman mention lacks "Meta" in text — should be corporate_spokesperson but needs contextual proximity heuristic
+- Meta organizational source inherits ACLU quote text — `_extract_nearby_quote` scope issue
+- Zuckerberg affiliation "Complex" — correct extraction of interview context but not employer
+
+### Stats
+- Articles: 184 (+1), framing device types: 104 (+2: surveillance_creep, market_flooding), patterns: ~700
+- Tests: 2,730 (+24), test files: 123 (+1)
+- All tests passing, zero regressions
 
 ---
