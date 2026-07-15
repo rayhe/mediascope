@@ -1,4 +1,73 @@
 # MediaScope Iteration Log
+## 2026-07-14 22:00 PT — Type B: Journalist/Publication Research (5 New Journalist Profiles)
+
+**Commit:** `c20e09f`
+
+### Summary
+Added 5 journalist profiles identified from byline gaps in recent article analyses (Jul 2–14, 2026 sample_output files). Focused on journalists with recent significant Meta coverage who appeared in existing analyses but had no profiles in `journalists.yaml`.
+
+### Journalists Added
+
+#### 1. Chip Cutter (AP → WSJ)
+- **Beat:** Workplace, labor market, office culture, layoffs, return-to-office
+- **Career:** AP reporter (2017–2019) → WSJ (2019–present)
+- **Education:** Northwestern (Medill School of Journalism)
+- **MediaScope relevance:** Co-authored Jul 14 WSJ Meta AI layoff discrimination piece with Bobrowsky. His labor-beat framing produces systematically different coverage of Meta events compared to tech-beat reporters — more focus on worker impact, legal dimensions, and corporate culture. Consistently includes independent legal/academic expert sources (e.g., Prof. Hirsch), which dampens editorial sentiment and increases authority grades.
+- **DiD value:** AP → WSJ pipeline. Wire-service training shapes subsequent institutional voice.
+
+#### 2. Meghan Bobrowsky (The Information → WSJ)
+- **Beat:** Technology, Meta, social media, AI, Big Tech
+- **Career:** The Information reporter (2018–2020) → WSJ tech reporter (2020–present)
+- **MediaScope relevance:** Primary WSJ Meta beat reporter. Co-authored Jul 14 Meta AI layoff discrimination piece with Cutter. Her framing baseline is critical for cross-publication comparison.
+- **DiD value:** The Information → WSJ migration tests how institutional voice shapes coverage when a journalist moves from niche insider publication to mass-market prestige outlet. Niche→prestige pipeline.
+
+#### 3. Lucas Ropek (Gizmodo → TechCrunch)
+- **Beat:** Government technology, surveillance, privacy → AI, tech policy, Meta
+- **Career:** Gizmodo staff writer (2021–2024) → TechCrunch staff writer (2024–present)
+- **MediaScope relevance:** Multiple recent Meta articles already in sample_output (Jul 2 town hall, Jul 7 Muse Image). His government-tech background means he approaches Meta stories with a regulatory/surveillance lens.
+- **DiD value:** Gizmodo → TechCrunch is a clean institutional-voice experiment. Gizmodo's adversarial-activist house style vs TechCrunch's product-oriented voice should produce measurable framing shifts. 2 analyzed articles already available for baseline comparison.
+
+#### 4. Katie Paul (Reuters)
+- **Beat:** Technology, Meta, social media, AI, tech regulation
+- **Career:** Reuters tech reporter (2019–present). Primary Meta beat reporter for Reuters.
+- **MediaScope relevance:** Wire-service coverage serves as neutral baseline against which editorial publications' framing can be measured. Appears in multiple same-event comparison clusters already in the toolkit.
+- **DiD value:** Single-publication career provides clean institutional-voice sample without migration confounds. Control group for measuring editorial framing in Wired, NYT, Guardian, etc.
+
+#### 5. Jennifer Valentino-DeVries (WSJ → NYT)
+- **Beat:** Technology, privacy, surveillance, investigations
+- **Career:** WSJ investigative reporter (2008–2019) → NYT investigative reporter (2019–present)
+- **Awards:** 2019 Pulitzer Prize for Explanatory Reporting (NYT team, "One Nation, Tracked"). Gerald Loeb Award (2013, WSJ team).
+- **MediaScope relevance:** NYT is a core tracked publication. WSJ → NYT migration is a high-value DiD experiment: same beat, same prestige tier, different institutional voice and audience. Pulitzer-winning investigative credibility affects how her framing is weighted by readers and cited by other outlets.
+- **DiD value:** WSJ → NYT prestige-to-prestige migration on the same beat. Did framing shift from WSJ's business-audience orientation to NYT's broader public-interest framing?
+
+### Gap Discovery Method
+Cross-referenced all `**Author:**` fields from `examples/sample_output/*_analysis.md` against `profiles/careers/journalists.yaml`. Identified 20+ untracked bylines; prioritized 5 based on: (1) relevance to core tracked publications (NYT for JVD), (2) volume of existing analyzed articles (Ropek with 2), (3) same-event cluster importance (Cutter/Bobrowsky in Jul 14 6-outlet cluster, Paul in multiple Reuters clusters), (4) DiD migration value.
+
+### Stats After This Iteration
+- Journalists: 239 (+5)
+- Career-entry migrations: 937 (+10)
+- Auto-detected migrations: 731 (+4)
+- Multi-publication journalists: 229 (+4, Katie Paul is single-pub)
+- Distinct publications: 429 (unchanged)
+
+### Remaining Gaps (for future Type B iterations)
+- **Alison Frankel** (Reuters Legal) — legal columnist, appears in scam ads/securities analysis
+- **Clare Duffy** (CNN) — tech reporter, child safety coverage
+- **Barbara Ortutay** (AP) — tech writer, co-authored with Kaitlyn Huamani
+- **Mackenzie Tatananni** — unknown publication, appears in analysis
+- **Simon Sharwood** (The Register) — appears in Muse Image analysis
+- **Frank Landymore** (Futurism) — multiple Meta analyses
+
+### Verification
+- `python3 -m pytest tests/test_structural_consistency.py -q` → ✅ 124 passed
+- CareerTracker loads all 239 journalists without error
+- All journalist/migration/multi-pub counts validated across README.md, EDITORIAL_HISTORIES.md, careers_demo.py
+
+### Source Note
+Profiles built from training knowledge + existing repo article analyses. Source URLs (muckrack, WSJ/NYT/Reuters author pages) are plausible but should be verified in a future iteration when network access is available. Career dates are approximate for early roles.
+
+---
+
 ## 2026-07-14 21:00 PT — Type A: Article Deep Dive (WSJ — Meta AI Layoff Discrimination)
 
 **Commit:** `cd85308`
