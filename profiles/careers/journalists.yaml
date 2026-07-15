@@ -109,6 +109,11 @@ journalists:
     institution: Duke University
     year: '1994'
     source_url: https://english.duke.edu/news/cade-metz-duke-english-alum-technology-correspondent
+  source_urls:
+  - https://computerhistory.org/profile/cade-metz/
+  - https://english.duke.edu/news/cade-metz-duke-english-alum-technology-correspondent
+  - https://talkingbiznews.com/they-talk-biz-news/ny-times-hires-metz-to-cover-emerging-tech/
+  - https://en.wikipedia.org/wiki/Cade_Metz
 - career:
   - beat: technology, robotics, cybersecurity, space tech
     end: '2008'
@@ -1221,9 +1226,17 @@ journalists:
     puts her in direct analytical contact with Meta''s data practices, face recognition systems, and tracking technology.
     Her coverage directly overlaps with Ray''s Face Watch Space interests.'
   education:
-  - degree: BA
-    institution: Duke University
-    source_url: https://en.wikipedia.org/wiki/Kashmir_Hill
+  - degree: MA (Magazine Journalism)
+    field: Magazine Journalism
+    institution: New York University
+    source_url: https://nytco.com/press/kashmir-hill-bringing-her-distinct-voice-on-tech-to-the-times/
+    notes: Studied magazine journalism at NYU after starting career at Above The Law. Began privacy focus here, started blog
+      "The Not-So Private Parts."
+  source_urls:
+  - https://en.wikipedia.org/wiki/Kashmir_Hill
+  - https://nytco.com/press/kashmir-hill-bringing-her-distinct-voice-on-tech-to-the-times/
+  - https://pen.org/people/kashmir-hill/
+  - https://talkingbiznews.com/they-talk-biz-news/ny-times-biz-desk-hires-kashmir-hill/
 - name: Kevin Roose
   career:
   - publication: nytimes
@@ -1850,7 +1863,25 @@ journalists:
     Teresa Carpenter. KEY ANALYTICAL VALUE: Levy IS Wired''s institutional voice — longest-tenured, most access to tech CEOs
     (Gates, Bezos, Jobs, Zuckerberg), and his editorial posture toward subjects is effectively Wired''s posture. His Facebook
     book required 3 years of Zuckerberg access — unusual access journalism that shapes whether coverage is adversarial or
-    empathetic.'
+    empathetic. Author of 8 books: Hackers (1984), The Unicorn''s Secret (1988), Artificial Life (1992), Insanely Great (1994),
+    Crypto (2001), The Perfect Thing (2006), In the Plex (2011), Facebook: The Inside Story (2020). Wife Teresa Carpenter
+    is a Pulitzer Prize winner. SVForum Visionary inductee 2008 (alongside Reed Hastings, Diane Greene). Rediscovered Albert
+    Einstein''s brain in 1978 while on a New Jersey magazine assignment.'
+  source_urls:
+  - https://en.wikipedia.org/wiki/Steven_Levy
+  - https://computerhistory.org/profile/steven-levy/
+  - https://stevenlevy.com
+  - https://simple.wikipedia.org/wiki/Steven_Levy
+  education:
+  - degree: BA
+    field: English
+    institution: Temple University
+    source_url: https://en.wikipedia.org/wiki/Steven_Levy
+    notes: Graduated from Central High School in Philadelphia before Temple.
+  - degree: MA
+    field: Literature
+    institution: Pennsylvania State University
+    source_url: https://en.wikipedia.org/wiki/Steven_Levy
 - career:
   - beat: technology, engineering, science
     end: 2012-12
@@ -2100,7 +2131,15 @@ journalists:
     migration for the DiD analysis — same beat (AI/tech), different institutional context (progressive broadsheet → centrist
     weekly). Contact: alexhern@economist.com. Bluesky: hern.bsky.social. TechEngage named him #1 top tech journalist to follow
     in 2026 (though listing still cited Guardian title, stale). Key for Guardian editorial history: his departure left the
-    UK tech editor role needing to be filled/restructured.'
+    UK tech editor role needing to be filled/restructured. Won Technology Journalist of the Year at 2020 UK Press Awards (series
+    on Apple Siri spying + TikTok Chinese moderation guidelines). Started career as blogger at Left Foot Forward before New
+    Statesman. Launched TechScape, the Guardian''s flagship tech newsletter (~2021). At The Economist, covers AI science/technology
+    and quantum computing. No university education publicly confirmed — may have gone straight from blogging to professional
+    journalism.'
+  source_urls:
+  - https://muckrack.com/alex-hern
+  - https://talkingbiznews.com/they-talk-biz-news/guardian-tech-editor-hern-is-departing/
+  - https://newsworks.org.uk/10-minutes-with-alex-hern-uk-technology-editor-the-guardian/
 - beats:
   - ai_policy
   - platform_regulation
@@ -4094,6 +4133,11 @@ journalists:
     News contributor (2015-21), CNN contributing editor (2010-16), Bloomberg contributing editor (2010-14). American 45-49
     age-group 50K record holder (3:04:36, 2021). Born 1975. LinkedIn Top Voice 2018. WEF participant. Peter Thiel ''Dialog''
     group mention (2026, declined to comment).'
+  source_urls:
+  - https://en.wikipedia.org/wiki/Nicholas_Thompson_(editor)
+  - https://nickthompson.com
+  - https://talkingbiznews.com/they-talk-biz-news/wired-editor-thompson-named-ceo-of-the-atlantic/
+  - https://weforum.org/people/nicholas-thompson/
 - career:
   - beat: technology
     end: 2015-12
