@@ -34,6 +34,7 @@ This is not an attack tool. It works equally well pointed at Fox News covering r
 15. **Framing-aware tone correction** — when VADER scores factual investigative prose as positive but framing devices signal adversarial editorial stance, overrides with framing-derived tone **(new)**
 16. **Source extraction stop-word filtering** — prevents false-positive extractions like "After Meta said" → source "After Meta" **(new)**
 17. **Documentary source detection** — identifies cited artifacts (recordings, leaked documents, court filings, internal memos) as `source_type="documentary"`, distinguishing them from named and anonymous human sources for accurate authority scoring **(new)**
+18. **Forced-retreat override** — detects "corporate capitulation" narratives where the subject is grammatically active (yanking, scrapping, reversing) but editorially framed as humiliated. Waives agency thresholds when `policy_reversal + consent_alarm` co-occur, preventing false-positive VADER scores on retreat/apology articles **(new)**
 
 ### Pipeline Statistics (auto-verified)
 
@@ -47,7 +48,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Emotional language terms | 1022 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 32 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 12 | Paths A–L, each addressing a specific VADER failure mode |
-| Annotated articles | 180 | Full manual analysis in `examples/sample_output/` |
+| Annotated articles | 181 | Full manual analysis in `examples/sample_output/` |
 | Journalists tracked | 234 | Career data with source URLs |
 | Career-entry migrations | 927 | Across 429+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |

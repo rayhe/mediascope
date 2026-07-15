@@ -58,7 +58,7 @@ MediaScope's 12 correction paths (A–L) address polarity inversion in specific,
 |---|---|---|
 | **"Facts-speak-for-themselves" irony** | No adversarial vocabulary, no sarcastic devices — irony is purely structural (juxtaposing damning facts without editorial comment) | Manual annotation required. Flag when framing device count is low but source stance is heavily adversarial |
 | **Financial journalism inflation** | Investment vocabulary ("strong buy," "attractive valuation") inflates by +0.3–0.5 | Trust framing devices over sentiment score. See [METHODOLOGY.md §16](METHODOLOGY.md#16-financial-journalism-sentiment-bias) |
-| **Procedural service journalism** | Negative tone is structural (consent_alarm, guilt transfer) rather than lexical | Flag articles with ≥2 consent_alarm + low adversarial count |
+| **Procedural service journalism** | Negative tone is structural (consent_alarm, guilt transfer) rather than lexical | Flag articles with ≥2 consent_alarm + low adversarial count. Note: the forced-retreat override (Jul 14) now partially addresses this — when `policy_reversal + consent_alarm` appear together, Path A fires even with positive agency. See [SENTIMENT_CORRECTION_REFERENCE.md](SENTIMENT_CORRECTION_REFERENCE.md#path-a-variant-forced-retreat-override-jul-14-2026) |
 | **Q&A format** | Source extraction returns zero; question-answer structure breaks all detection | Manual annotation required. Report framing devices and agency only |
 
 ---
@@ -74,6 +74,7 @@ Article genre is the strongest predictor of toolkit accuracy. The table below su
 | **Tech editorial** | ⚠️ Mixed | ✅ High (Path C/F/J) | Product praise mixed with critical editorial wrapper | Run correction. Check headline-body alignment |
 | **Sardonic** (Gizmodo, AV Club, Kotaku) | ❌ Very low | ✅ High (Path D/H/K) | Profanity, sarcasm, and irony all score positive in VADER | Always run correction. Expect Path D/H/K |
 | **Financial/investor** | ❌ Low (systematic inflation) | ⚠️ Partial (no dedicated path yet) | Investment vocabulary inflates by +0.3–0.5 | Flag as genre-inflated. Weight framing devices over score |
+| **Tabloid/capitulation** (NY Post, The Tab, Inc) | ❌ Low (active-voice retreat reads positive) | ✅ High (Path A forced-retreat variant) | Capitulation verbs ("yanks," "scraps") have positive grammatical agency but negative editorial valence | Run correction. Expect forced-retreat override when `policy_reversal + consent_alarm` present |
 | **Opinion/essay** | ⚠️ Mixed | ⚠️ Mixed | First-person voice with genuine emotional vocabulary | Check agency attribution — opinion pieces have high legitimate agency |
 | **Q&A** | ❌ Not applicable | ❌ Not applicable | Format breaks source extraction entirely | Manual annotation. Report framing + agency only |
 
@@ -81,10 +82,10 @@ Article genre is the strongest predictor of toolkit accuracy. The table below su
 
 From the 181 annotated articles:
 
-- **32 articles** (18%) required framing correction — correction paths fired and improved accuracy
-- **20 articles** (11%) had documented VADER polarity inversion — raw score wrong direction
-- **~144 articles** (82%) had acceptable raw scores — correction was either unnecessary or did not fire
-- **Path A** is the workhorse — covers 13 of the 32 corrected articles (41% of corrections)
+- **33 articles** (18%) required framing correction — correction paths fired and improved accuracy
+- **21 articles** (12%) had documented VADER polarity inversion — raw score wrong direction
+- **~144 articles** (80%) had acceptable raw scores — correction was either unnecessary or did not fire
+- **Path A** is the workhorse — covers 14 of the 33 corrected articles (42% of corrections), including 1 via the forced-retreat override
 - **Typical correction magnitude:** 0.50–1.20 points (raw → corrected gap)
 - **Largest documented correction:** 1.23 points (Kotaku Meta Arena gambling: raw +0.68 → corrected −0.55, Path D)
 

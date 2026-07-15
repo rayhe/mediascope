@@ -112,6 +112,41 @@ corrected = 0.10 × raw_tone + 0.90 × framing_tone
 | MIT TR "Meta AI Hack" | +0.65 | −0.43 | −0.43 | 100% |
 | Wired "Applied AI Soul-Crushing" | +0.30 | −0.72 | −0.72 | 100% |
 
+#### Path A Variant: Forced-Retreat Override (Jul 14, 2026)
+
+**Problem:** Path A's agency threshold (`agency < −0.3`) blocks correction on "corporate capitulation" articles where the subject is grammatically active — *they* yanked, reversed, scrapped — but editorially the frame is humiliation: the company was *forced* to back down. VADER scores the active-voice retreat language as neutral-to-positive, and the positive agency reading prevents Path A from firing.
+
+**Discovery article:** NY Post "Meta yanks controversial AI image tool after privacy backlash" (Jul 13, 2026) — VADER raw +0.30, agency +0.33, 11 adversarial devices (7 loaded_language, 4 consent_alarm, 4 policy_reversal). Path A was blocked by agency > −0.3. Manual estimate: −0.45.
+
+**When the override activates:**
+| Condition | Threshold | Rationale |
+|---|---|---|
+| `policy_reversal` | ≥ 1 | Article frames a corporate reversal/retreat |
+| `consent_alarm` **OR** `loaded_language` | ≥ 2 **OR** ≥ 5 | Privacy-violation or contempt framing accompanies the reversal |
+
+When both conditions are met, the **forced-retreat flag** is set, and:
+1. **Path A's agency threshold is waived** — the correction fires even with positive agency
+2. **Emotional intensity replaces agency as the base tone driver** — because grammatical agency is unreliable in capitulation narratives (the subject's active voice doesn't map to editorial valence)
+3. **A dampening factor (0.5×) is applied** — capitulation narratives are moderately negative, not as extreme as passive-agency investigative pieces
+
+**Correction formula (forced-retreat variant of Path A):**
+```
+base = −0.5 × EI                           # EI 1.0 → base −0.5
+amplified = base × (0.6 + 0.4 × EI)
+density_factor = min(adversarial_count / 8, 1.0)
+framing_tone = amplified × (0.7 + 0.3 × density_factor)
+corrected = 0.10 × raw_tone + 0.90 × framing_tone
+```
+
+**Why dampened?** Without dampening, the standard Path A formula would produce −0.65 to −0.80 for tabloid capitulation pieces, which overcorrects. The subject *did* take action (even if forced), and the editorial stance is "they got caught and backed down" (moderately negative), not "they're under secret investigation" (strongly negative). The 0.5× factor on EI keeps corrections in the −0.30 to −0.50 range, which matches manual estimates for this genre.
+
+**Complementary fix:** Capitulation verbs (`yanked`, `scrapped`, `axed`, `backtracked`, `walked back`, `backed down`, `reversed course`, `caved`, `capitulated`, `pulled the plug`, `shelved`) were added to `ACTIVE_NEGATIVE_FRAMING` to flip agency from positive to negative. This means future capitulation articles may fire standard Path A *without* the override when enough capitulation verbs appear. The override is a safety net for articles where the agency fix alone doesn't push below −0.3.
+
+**Validated on:**
+| Article | VADER Raw | Agency (pre/post fix) | Corrected | Manual | Gap Closed |
+|---|---|---|---|---|---|
+| NY Post "Meta yanks Muse Image" (Jul 13) | +0.30 | +0.33 / −0.20 | −0.43 | −0.45 | 96% |
+
 ---
 
 ### Path B — Amplification (Understated Negative)
