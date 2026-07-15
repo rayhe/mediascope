@@ -23289,3 +23289,31 @@ Analyzed WSJ coverage of Meta's smartglasses push and privacy backlash. Moderate
 - All 2,745 tests passing, zero regressions
 
 ---
+
+## 2026-07-15 07:00 PT — Type B: Journalist Profile Enrichment
+
+**Rotation:** B (Journalist/Publication Research)
+**Commit:** dd49736
+**Files changed:** profiles/careers/journalists.yaml (+88/-7)
+
+### Work Done
+
+1. **Dhruv Mehrotra** — Expanded latest Wired career entry with full NameTag investigation details: Jun 4 dormant facial recognition code discovery in Meta AI app (50M+ phones), three AI models (detect/crop/encode biometric faceprints), Cooper Quintin (EFF) independent reproduction, Meta code removal within 24 hours (Jun 5), Rank One Computing licensing follow-up (Denver-based law enforcement/military FR vendor with SOCOM/NCIS/US Marshals clients, board includes former CIA Deputy Director Dawn Meyerriecks). Added source_urls (4), beats (6), multi_publication flag. Updated top-level notes emphasizing NameTag as only 2026 investigation to trigger both legislative action AND corporate policy change.
+
+2. **Victoria Song** (The Verge) — Added source_urls (3: theverge.com, gizmodo.com, pcmag.com author pages), beats (6: wearables, health_tech, smart_glasses, fitness_tech, AI_wearables, consumer_electronics).
+
+3. **Kaitlyn Tiffany** (The Atlantic, ex-Verge) — Added source_urls (3), beats (6: internet_culture, online_communities, conspiracy_movements, platform_effects, fandom, youth_and_tech).
+
+4. **Nitasha Tiku** (Washington Post, ex-Verge/Wired) — Added source_urls (4: washingtonpost.com, wired.com, theverge.com, cjr.org), beats (5: tech_culture, AI_safety_ethics, Silicon_Valley_power, labor_and_tech, surveillance).
+
+5. **Makena Kelly** (Wired, ex-Verge) — Added source_urls (4), beats (5: politics, tech_policy, political_influencers, DOGE, CFPB).
+
+6. **James Temple** (MIT Tech Review, ex-Verge) — Added source_urls (2), beats (5: energy, climate_tech, carbon_removal, renewable_energy, climate_adaptation).
+
+### Sources
+pxlnv.com, petapixel.com, idtechwire.com, sofx.com, techtimes.com, engadget.com, theverge.com, talkingbiznews.com, wired.com, cjr.org, podchaser.com, gizmodo.com, pcmag.com, technologyreview.com
+
+### Stats
+- 239 journalists, 932 career-entry migrations, 429 publications
+- 2769 tests passed (4 xfailed), 2773 total
+- 0 Verge journalists remaining without source_urls (was 4)
