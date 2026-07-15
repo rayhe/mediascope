@@ -1398,13 +1398,13 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **185 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **186 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
 ### 17.2 Publication Distribution
 
-The corpus spans **44 distinct publications** across 5 editorial modes:
+The corpus spans **45 distinct publications** across 5 editorial modes:
 
 #### Tracked Publications (5 publications, 58 articles)
 
@@ -1465,7 +1465,7 @@ Critical for documenting the VADER financial journalism inflation bias (§16):
 | **PYMNTS** | 1 | Zuckerberg AI agents admission |
 | **TheStreet** | 1 | Meta AI warning before earnings (100th article — worst VADER false positive: 0.9788) |
 
-#### General Interest / Other (10 publications + cross-analyses, 15 articles)
+#### General Interest / Other (11 publications + cross-analyses, 16 articles)
 
 Specialty press and multi-source analyses:
 
@@ -1474,6 +1474,7 @@ Specialty press and multi-source analyses:
 | **Fast Company** | 4 | AI draft reversal, Wynn-Williams lawsuit, Zuckerberg AI job fears, Muse Image opt-out privacy |
 | **iPhoneInCanada** | 2 | Zuckerberg AI agents (editorial dramatization discovery) |
 | **AV Club** | 1 | Meta Arena gambling framing |
+| **BuzzFeed** | 1 | Lorde vs Kylie Jenner smart glasses backlash — social proof amplification, hypocrisy framing, celebrity authority |
 | **CNN** | 1 | Social media child safety features |
 | **Futurism** | 1 | Cannes reframe contractor trauma |
 | **Inc.com** | 1 | Threads 500M MAU milestone, competitive positioning vs X |
@@ -1514,7 +1515,7 @@ Articles cluster into 9 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 185 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 186 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|

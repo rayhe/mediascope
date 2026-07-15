@@ -8,7 +8,7 @@
 
 VADER + TextBlob produce a raw composite tone score for every article. This raw score is unreliable for investigative and editorial journalism because professional prose uses measured, active language that lexical models read as positive — even when the editorial stance is clearly adversarial. The correction pipeline fixes this by detecting structural framing signals that reveal the true editorial stance.
 
-Each correction path fires when a specific combination of conditions is met. **Paths are evaluated in order (A → B → C → E → D → F → H → K → I → J)**; the first match wins. Path G operates earlier in the pipeline (during raw VADER computation) and is always active for long texts.
+Each correction path fires when a specific combination of conditions is met. **Paths are evaluated in order (A → B → C → E → D → F → H → K → L → I → J)**; the first match wins. Path G operates earlier in the pipeline (during raw VADER computation) and is always active for long texts.
 
 ### When Correction Fires
 
@@ -542,6 +542,7 @@ Sorted from strongest to lightest blend:
 | **E** | 70/30 | [−0.5, +0.2] | ~0.74 | Military: aspirational warfare language inflates VADER |
 | **J** | 70/30 | [−0.45, 0.0] | ~0.89 | Expert structural: measured criticism via expert contradiction |
 | **G** | 70/30 (VADER stage) | n/a | varies | Long-text normalization: fixes VADER statistical artifact |
+| **L** | ~70/30 | [−0.50, −0.05] | ~0.76 | Quote-inflated body: headline-body divergence overrides PR-quote-dominated VADER |
 | **C** | 45/55 (toward +0.15) | [−0.2, raw] | ~0.29 | Anchor: product review with negative kicker/investigation |
 
 ---
@@ -561,7 +562,7 @@ When a new article analysis reveals a VADER failure mode not covered by existing
 
 ### Naming Convention
 
-Paths are lettered alphabetically by discovery order, not by evaluation order. The current sequence (A, B, C, D, E, F, G, H, I, J, K) reflects the chronological order in which VADER failure modes were discovered during real article analysis. The next path would be **L**.
+Paths are lettered alphabetically by discovery order, not by evaluation order. The current sequence (A, B, C, D, E, F, G, H, I, J, K, L) reflects the chronological order in which VADER failure modes were discovered during real article analysis. The next path would be **M**.
 
 ### Proposed Path M — Structural Irony
 

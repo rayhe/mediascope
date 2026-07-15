@@ -18,7 +18,7 @@ This is not an attack tool. It works equally well pointed at Fox News covering r
 ## What It Does
 
 1. **Ingests articles** from any publication via RSS feeds and web scraping
-2. **Detects entities** mentioned in coverage (companies, executives, products) using 88 clusters with 874 aliases and disambiguation filters (see [docs/ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md))
+2. **Detects entities** mentioned in coverage (companies, executives, products) using 88 clusters with 875 aliases and disambiguation filters (see [docs/ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md))
 3. **Classifies topics** into 29 standardized buckets for apples-to-apples comparison across companies (see [docs/TOPIC_REFERENCE.md](docs/TOPIC_REFERENCE.md))
 4. **Analyzes sentiment** using an 8-dimension scoring framework (not just positive/negative)
 5. **Calculates asymmetry** — is Company X covered more negatively than peers, with statistical significance?
@@ -42,13 +42,13 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 
 | Component | Count | Notes |
 |---|---|---|
-| Entity clusters | 88 | 874 aliases, 65 with custom regex, 23 auto-generated |
+| Entity clusters | 88 | 875 aliases, 65 with custom regex, 23 auto-generated |
 | Framing device types | 106 | 10 core + 89 extended + 7 structural (post-pass) |
 | Framing patterns | 716 | Compiled regex patterns across 99 pattern-based types |
 | Emotional language terms | 1022 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 32 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 12 | Paths A–L, each addressing a specific VADER failure mode |
-| Annotated articles | 185 | Full manual analysis in `examples/sample_output/` |
+| Annotated articles | 186 | Full manual analysis in `examples/sample_output/` |
 | Journalists tracked | 239 | Career data with source URLs |
 | Career-entry migrations | 932 | Across 429+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |

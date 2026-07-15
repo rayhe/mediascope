@@ -2362,6 +2362,8 @@ class TestAnnotatedArticleCountConsistency:
             # Added 2026-07-11 Type A
             ("washexaminer", "washexaminer"),
             ("thetab", "thetab"),
+            # Added 2026-07-15 Type D
+            ("buzzfeed", "buzzfeed"),
         ]
         for f in sample_dir.glob("*_analysis.md"):
             name = f.stem.replace("_analysis", "")

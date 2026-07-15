@@ -281,7 +281,7 @@ Default storage is SQLite (`mediascope.db` in working directory). For production
 
 ### Custom Entity Clusters
 
-Define entity clusters in publication profiles or pass custom clusters to `detect_entities()`. See [ENTITY_REFERENCE.md](ENTITY_REFERENCE.md) for the complete quick-reference card with all 88 clusters, 874 aliases, disambiguation filters, and pipeline interactions, and [METHODOLOGY.md §15](METHODOLOGY.md#15-entity-detection--cluster-reference) for the cluster reference table with analytical categories and growth history.
+Define entity clusters in publication profiles or pass custom clusters to `detect_entities()`. See [ENTITY_REFERENCE.md](ENTITY_REFERENCE.md) for the complete quick-reference card with all 88 clusters, 875 aliases, disambiguation filters, and pipeline interactions, and [METHODOLOGY.md §15](METHODOLOGY.md#15-entity-detection--cluster-reference) for the cluster reference table with analytical categories and growth history.
 
 ```python
 custom_clusters = {
@@ -454,7 +454,7 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
-│   └── sample_output/       # 185 annotated real-article analyses (see METHODOLOGY.md §17)
+│   └── sample_output/       # 186 annotated real-article analyses (see METHODOLOGY.md §17)
 ├── tests/                       # 2785 tests across 126 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
