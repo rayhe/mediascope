@@ -65,7 +65,9 @@ No new entity clusters needed. The existing Meta and Google clusters handled the
 ### Toolkit MISSED:
 | Device | Evidence | Status |
 |--------|----------|--------|
-| **investor_advisory** (NEW) | "Investors Ignore the Threat at Their Peril," "should start paying attention," "Investors may be making the wrong choice" | See §5 — new pattern proposed |
+| **investor_advisory** | "Investors Ignore the Threat at Their Peril," "should start paying attention," "Investors may be making the wrong choice" | ✅ **FIXED Jul 15** — investor_advisory now detects all 3 instances (4 total hits). Parenthetical clause in "should start paying attention" still not matched (xfail documented). |
+| **loaded_language** — "ripe target" | "see Meta and other social-media companies as a ripe target" | ✅ **FIXED Jul 15** — added `(ripe\|easy\|soft\|prime\|...) target` pattern to loaded_language |
+| **scale_magnitude** — "13-figure penalty" | "a loss at trial doesn't come with a 13-figure penalty" | ✅ **FIXED Jul 15** — added N-figure magnitude idiom to scale_magnitude patterns |
 | **comparative_shaming** | "Roblox shares are down 32% this year... Meta stock, by comparison is down just 6.7%. Investors may be making the wrong choice." — uses one company's responsible behavior + stock decline to shame investors in the target company | Not yet a device type; edge case of comparative_framing |
 | **headline_brand_substitution** | "Facebook" in headline vs "Meta" in body — deliberate use of the more negatively-valenced brand | Not yet a device type; subtle but recurrent |
 

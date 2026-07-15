@@ -1,4 +1,33 @@
 # MediaScope Iteration Log
+## 2026-07-15 06:00 PT — Type A: Article Deep Dive
+
+**Article:** "Facebook Faces a $1 Trillion Backlash. Investors Ignore the Threat at Their Peril." — Adam Levine, Barron's, July 10, 2026
+
+### Changes
+
+**Entity detection:**
+- Added **Roblox** entity cluster (aliases: Roblox, Roblox Corporation, David Baszucki; custom regex). Cluster #88 (was 87). Total aliases 874 (was 871), custom regex clusters 65 (was 64).
+
+**Framing patterns:**
+- Added **loaded_language** pattern: `(ripe|easy|soft|prime|...) target` — predatory targeting metaphor. "ripe target" from article now detected.
+- Added **scale_magnitude** pattern: N-figure magnitude idiom (`13-figure penalty`, `nine-figure settlement`, etc.). "13-figure penalty" from article now detected.
+
+**Tests:**
+- New test file: `test_barrons_1t_child_safety_backlash_jul10.py` — 28 tests (24 passed, 4 xfail known gaps)
+- Updated `test_structural_consistency.py` EXPECTED_TOTAL_PATTERNS 653→655
+
+**Documentation:**
+- Updated README.md, ARCHITECTURE.md, ENTITY_REFERENCE.md, METHODOLOGY.md, AGENT_GUIDE.md for 88 clusters / 874 aliases / 655 patterns / 2773 tests / 125 files
+- Updated analysis file with fix annotations
+
+**Known gaps documented (xfail):**
+1. `$375 million` — raw dollar amount not detected as scale_magnitude
+2. `soft targets` (plural) — singular pattern doesn't match
+3. Parenthetical clause between "Investors" and "should" breaks investor_advisory
+4. "didn't respond to a request for comment" — pattern expects "declined/refused"
+
+---
+
 ## 2026-07-15 04:00 PT — Type D: Toolkit Quality & Documentation
 
 **Commit:** `cc7faae`

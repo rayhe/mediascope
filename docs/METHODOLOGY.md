@@ -1008,7 +1008,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **87 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **88 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -1026,7 +1026,7 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 87 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 88 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
@@ -1071,6 +1071,7 @@ The following table documents all 87 entity clusters shipped with MediaScope, or
 |---|---|---|
 | **Snap** | 4 | Snap, Snapchat, Spectacles, Evan Spiegel |
 | **Discord** | 1 | Discord |
+| **Roblox** | 3 | Roblox, Roblox Corporation, David Baszucki |
 | **TikTok** | 3 | TikTok, ByteDance, Shou Zi Chew |
 | **X/Twitter** | 4 | Twitter, X Corp, Elon Musk, Musk |
 | **Spotify** | 2 | Spotify, Daniel Ek |

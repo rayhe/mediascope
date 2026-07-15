@@ -517,6 +517,12 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         ],
         "regex": r"(?<!\w)(Discord)(?!\w)",
     },
+    "Roblox": {
+        "aliases": [
+            "Roblox", "Roblox Corporation", "David Baszucki",
+        ],
+        "regex": r"(?<!\w)(Roblox(?:\s+Corporation)?|David Baszucki)(?!\w)",
+    },
     "Midjourney": {
         "aliases": [
             "Midjourney", "Midjourney Inc",

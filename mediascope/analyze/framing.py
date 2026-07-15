@@ -699,6 +699,17 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"\b",
         re.IGNORECASE,
     ),
+    # Predatory targeting metaphor — framing a company or entity as
+    # easy prey for regulators, litigants, or critics.  "ripe target",
+    # "easy target", "sitting duck", "soft target" import hunting/warfare
+    # imagery into legal/regulatory analysis.  Discovered via Barron's
+    # "$1 Trillion Backlash" article (Jul 10 2026) where "ripe target"
+    # went undetected.
+    re.compile(
+        r"\b(?:ripe|easy|soft|prime|obvious|clear|natural|tempting|attractive)"
+        r"\s+target\b",
+        re.IGNORECASE,
+    ),
     # Legal silencing / corporate censorship language — terms that frame
     # legal action as suppression of free expression
     re.compile(
@@ -2967,6 +2978,22 @@ _SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
         r"(?:up to\s+)?(?:about\s+|approximately\s+|roughly\s+|nearly\s+|more than\s+|over\s+)?"
         r"\d[\d,.]*\s*(?:million|billion)?\s*"
         r"(?:homes?|households?|people|residents?|families|businesses|cities|towns)\b",
+        re.IGNORECASE,
+    ),
+    # ---------------------------------------------------------------------------
+    # N-figure penalty/fine/sum: "13-figure penalty", "nine-figure settlement"
+    # — expressing magnitude via digit-count rather than explicit dollar amount.
+    # Common in legal/regulatory reporting to amplify scale without quoting the
+    # exact number.  Discovered via Barron's Meta child-safety backlash article
+    # (Jul 10 2026): "13-figure penalty" went undetected because existing
+    # patterns required explicit dollar amounts or multipliers.
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b(?:\d{1,2}|single|double|triple|four|five|six|seven|eight|nine|ten|"
+        r"eleven|twelve|thirteen)[- ]figure\s+"
+        r"(?:penalty|fine|settlement|judgment|damages?|sum|amount|"
+        r"payout|award|bill|cost|price|number|figure|demand|claim|"
+        r"verdict|liability|loss|revenue|profit|valuation)\b",
         re.IGNORECASE,
     ),
 ]
