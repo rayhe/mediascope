@@ -22726,3 +22726,60 @@ Deep-dived Vittoria Elliott, Wired's "platforms and power" senior writer — the
 - All 145 tests passing (21 career + 124 structural consistency), zero regressions
 
 ---
+
+## 2026-07-14T20:00 — Type A: Article Deep Dive (Reuters Meta AI Layoff Discrimination)
+
+### Focus
+Reuters article "Meta used AI to target workers with medical conditions for layoffs, lawsuit claims" (2026-07-14). Full manual analysis identifying framing devices, entity extraction errors, and toolkit gaps. 182nd annotated article in corpus.
+
+### Code Changes
+- **3 new `precedent_framing` patterns** in `framing.py`: novelty-by-descriptor ("novel lawsuit/claim/theory"), hedged novelty ("appears/believed/said to be the first"), compound form ("first-of-its-kind" / "first of its kind"). Total precedent_framing: 5 → 8.
+
+### Toolkit Gaps Identified (7)
+1. Entity resolution: "District of Columbia" → misclassified as Columbia University
+2. Legal context false positives: "violating," "retaliation," "failed to test" in lawsuit reporting context
+3. Missing "slashed" as loaded_language
+4. Headline-assertion framing (lawsuit claim presented as fact in headline)
+5. ~~Missing precedent_framing novelty patterns~~ ✅ FIXED
+6. Lawsuit-as-source not extracted
+7. Attribution verb misclassification (spokesperson "said" tagged as "alleged")
+
+### Files Changed
+- `mediascope/analyze/framing.py` (+3 patterns)
+- `mediascope/analyze/sources.py` (minor)
+- `examples/sample_output/reuters_meta_ai_layoff_discrimination_2026_07_14_analysis.md` (new, gap #5 marked fixed)
+- `examples/sample_output/foxbusiness_meta_ai_layoff_discrimination_2026_07_14_analysis.md` (new cross-pub comparison)
+- `tests/test_reuters_meta_ai_layoff_discrimination_jul14.py` (+16 tests)
+- `tests/test_foxbusiness_meta_ai_layoff_discrimination_jul14.py` (new)
+- Updated pattern count guards: 630 → 633 in test_structural_consistency.py, README.md, ARCHITECTURE.md
+- Updated FRAMING_REFERENCE.md with new trigger examples
+
+### Stats
+- Compiled patterns: 633 (was 630)
+- Annotated articles: 182 (was 181)
+- Tests: 2671 (120 files)
+- Device types: 102 (unchanged)
+- All tests passing, zero regressions
+
+---
+
+## Iteration 2026-07-14 20:00 PT — Type A: Article Deep Dive
+
+**Article:** Fox Business — "Meta hit with lawsuit alleging AI-powered layoff process discriminated against employees with disabilities" (Jul 14, 2026)
+
+### Summary
+Analyzed Fox Business coverage of a class action by 26 anonymous Meta employees alleging AI-driven layoff systems disproportionately targeted disabled/medical-leave workers in the May 2026 cuts. Same-event pair with existing Reuters analysis in corpus.
+
+### Work Done
+1. **Article saved:** `examples/sample_output/foxbusiness_meta_ai_layoff_discrimination_2026_07_14_article.txt`
+2. **Full toolkit analysis:** sentiment=-0.5728, 8 framing devices, 4 sources, 3 topics
+3. **Manual deep-dive analysis:** `examples/sample_output/foxbusiness_meta_ai_layoff_discrimination_2026_07_14_analysis.md` (14,627 bytes) — entity tables, tone comparison, framing device audit, source balance, same-event comparison with Reuters
+4. **Bug fix — source extraction:** Added "Fox Business", "Fox News", "Fox Corp", "USA Today", "Daily Caller", "Daily Wire", "Sky News", "Sky Business" to `_NAME_STOP_NAMES` in `sources.py`; added "Fox" to `_SINGLE_NAME_ORG_STOPS` — prevents "told Fox Business" from being extracted as a source
+5. **Bug fix — legal-context emotional_appeal suppression:** New filter block in `framing.py` (~line 9683) suppresses `emotional_appeal` for protected-status terms ("disability", "disabled", "medical leave", "pregnancy", etc.) when legal/litigation vocabulary appears nearby
+6. **Test file:** `tests/test_foxbusiness_meta_ai_layoff_discrimination_jul14.py` — 9 tests (source extraction, legal-context suppression, cross-promotion detection, sentiment, topics). All pass.
+
+### Stats
+- Articles: 182 (+1), patterns: 633 (+3), tests: 2,671 (+9), test files: 120 (+1)
+- All 2,671 tests passing, zero regressions
+
+---
