@@ -1,4 +1,54 @@
 # MediaScope Iteration Log
+## 2026-07-15 09:00 PT — Type C: Ownership & Funding Deep Dive (CHTR Buyback Program + Equity Snapshot)
+
+**Commit:** `444b16d` — "Type C: CHTR buyback program + Jul 15 equity snapshot + pattern count fixes"
+
+### Focus
+Wired/Advance equity portfolio update with new CHTR buyback program analysis and Jul 15 intraday equity snapshot. Also fixed stale compiled pattern counts in README and ARCHITECTURE.md.
+
+### Work Done
+
+1. **CHTR Buyback Program (NEW ~20-line section)**
+   - Charter executed $963M in share repurchases in Q1 2026 (~4% of market cap in one quarter)
+   - Agreed to repurchase $100M/month from Liberty Broadband until merger closes
+   - Seeking Alpha projects ~20% total share reduction in 2026
+   - ADVANCE IMPLICATION: Advance's 12.3% beneficial ownership could increase to ~15.4% on dilution-adjusted basis without buying new shares — percentage stake rising even as dollar value collapses
+   - Dual strategy analysis: consolidation (Cox merger) + concentration (buybacks) to arrest structural decline
+   - Source: Seeking Alpha (Jun 23, 2026)
+
+2. **Jul 15 Intraday Equity Snapshot**
+   - RDDT: $201.84 (-0.70%), stake $8.52B (down from $8.60B Jul 14)
+   - CHTR: $131.15 (+2.53% bounce), stake $2.70B (up from $2.64B — relief bounce from 52W low zone)
+   - WBD: $27.25 (-0.84%), stake $2.67B (down slightly from $2.69B)
+   - Total: ~$13.89B (down ~$40M from $13.93B)
+   - Reddit concentration: 61.3% (down from 61.7% as CHTR bounced)
+
+3. **CHTR Deterioration Note Updates**
+   - Jul 15 bounce analysis: +2.53% technical bounce off 52W low zone, no positive catalyst
+   - Market cap corrected from $15.73B to $17.71B (Robinhood data)
+   - Added buyback floor support context
+
+4. **Pattern Count Fixes (stale stats)**
+   - README: framing patterns 714→716
+   - ARCHITECTURE.md: compiled regex 655→716 (very stale — off by 61)
+
+### Verification
+- All 124 structural consistency tests pass
+- 2,773 total tests
+- count_stats.py verified: 88 clusters, 874 aliases, 106 device types, 716 compiled patterns, 1,022 EL terms, 32 adversarial types, 12 correction paths, 184 annotated articles, 239 journalists, 932 migrations, 29 topics
+
+### Sources
+- Finnhub (RDDT, CHTR, WBD intraday prices Jul 15)
+- MarketBeat (RDDT close $203.72, CHTR close $127.91, WBD close $27.48 — all Jul 14)
+- Robinhood (CHTR market cap $17.71B, CHTR 52W high $402.15)
+- Seeking Alpha (CHTR buyback analysis, Jun 23, 2026)
+
+### Notes
+- Browser search was largely unavailable this iteration (persistent timeouts) — worked with data from initial successful queries
+- Next C iteration could target: (1) Advance 13D/A filings for updated share counts post-buyback, (2) Condé Nast union CBA bargaining status, (3) CHTR CPUC Aug 13 hearing preview
+
+---
+
 ## 2026-07-15 08:00 PT — Type B: Journalist/Publication Research
 
 **Focus:** Structured education fields for journalists missing them.
