@@ -1,4 +1,26 @@
 # MediaScope Iteration Log
+## 2026-07-15 00:00 PT — Type D: Toolkit Quality & Documentation
+
+**Commit:** `f5e5611` — "Type D: Fix stale stats, naming convention, add legal vocabulary gap + 2 proposed framing devices"
+
+### Summary
+Documentation hygiene pass: fixed stale stats in README (career-entry migrations 937→932), corrected naming convention drift in SENTIMENT_CORRECTION_REFERENCE (path sequence A–K→A–L, next path L→M), updated ACCURACY_GUIDE calibration stats and added legal vocabulary calibration as known gap, proposed 2 new framing devices (`surveillance_enumeration`, `emotional_humanization`) discovered from WSJ Meta AI layoff discrimination article (Jul 14).
+
+### Changes
+1. **README.md** — Fixed career-entry migrations count 937→932 in stats table and prose
+2. **SENTIMENT_CORRECTION_REFERENCE.md** — Fixed stale naming: path sequence A–K→A–L, next path L→M, renamed "Proposed Path L" heading to "Proposed Path M"
+3. **ACCURACY_GUIDE.md** — Updated annotated articles 177→183, correction count 32→33, improved 30→31; added "Legal vocabulary calibration" gap and "Litigation reporting" genre row
+4. **FRAMING_REFERENCE.md** — Added 2 proposed framing devices to Pending Validation table: `surveillance_enumeration` and `emotional_humanization`
+5. **SOURCE_ANALYSIS_REFERENCE.md** — Updated last-updated date
+
+### Stats After Iteration
+- 239 journalists, 932 career-entry migrations, 429 publications
+- 183 annotated articles, 1,022 emotional language terms
+- 102 framing device types, 630 patterns
+- 2,689 tests (121 files), all passing
+
+---
+
 ## 2026-07-14 23:00 PT — Type C: Ownership & Funding Deep Dive (CHTR Approaching Floor + WGA Lawsuit + TRO Hearing)
 
 **Commit:** `9ad4980` — "Type C: CHTR approaching 52W low (BNP target $120 below floor), WGA lawsuit + TRO hearing Fri Jul 18, portfolio snapshot Jul 14 close"
