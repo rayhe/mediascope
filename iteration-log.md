@@ -1,4 +1,54 @@
 # MediaScope Iteration Log
+## 2026-07-15 02:00 PT — Type B: Journalist/Publication Research (Niall Firth, MIT TR Executive Editor)
+
+**Commit:** `1cc707d`
+
+### Summary
+Deep profile expansion for Niall Firth, MIT Technology Review's executive editor of the newsroom — the primary editorial gatekeeper for all MIT TR online journalism. Enriched from 4 unsourced career entries with a 134-character notes field to 4 fully sourced career entries with detailed beats/notes and 1,600+ character biographical notes. Added 7 source URLs across TalkingBizNews, MIT TR, TheOrg, New Scientist, Black Spring Press Group, eWeek, and KSJ Handbook.
+
+### Key Discoveries
+
+#### 1. Daily Mail/MailOnline Origin (2008-2010)
+- Science editor and assistant news editor. Co-bylined with Sean Poulter (consumer affairs) and Tim Shipman (political)
+- Coverage: Samsung Galaxy Tab, human extinction predictions, Rebekah Wade phone-tapping, MI5 human rights rulings
+- **Only tabloid-origin senior editor on MIT TR's current editorial team** — unique framing perspective blending accessibility with institutional rigor
+
+#### 2. New Scientist (2010-2017)
+- Dual roles: technology editor (~2013-2014 confirmed) and chief news editor
+- Prolific author archive: AI, robotics, drones, VR gaming, blockchain democracy, fake meat testing, poetry/culture reviews
+- Referenced as expert source by UKRI researchers (2013, sign language machine translation)
+- New Scientist's curiosity-driven science communication culture (vs adversarial tech accountability) shaped his editorial instincts
+
+#### 3. MIT Technology Review (2017-present)
+- Editorial director of digital (2017) → executive editor, newsroom (promoted Aug 2022)
+- Top-edits feature stories (confirmed by colleague Amanda Silverman: "He top-edits most of my stories")
+- Keynoted SXSW Austin 2025 "10 Breakthrough Technologies" (packed Ballroom D, hundreds turned away)
+- Announced as SXSW Sydney 2025 keynote speaker (AI in 2026)
+- Panel speaker at Hello Tomorrow, World Summit AI Amsterdam, MIT Club of Great Britain
+- Moderates MIT TR Roundtables: Karen Hao/OpenAI (Jun 2025), Conspiracies with Mike Rothschild, AI Search with Mat Honan
+- Coined "LLMs+" concept for 2025 Breakthrough Technologies list
+- Edited "In Machines We Trust" podcast (Facebook whistleblower Sophie Zhang episode)
+- KSJ Handbook contributor: dislikes "start-up" for "company" and "individuals" for "people"
+- 35 bylined posts, 179 total articles (JournalistHunt)
+
+#### 4. Published Poet
+- *Superposition* (Black Spring Press Group, ~2017) — debut poetry pamphlet about "uncertainty, time and bodies"
+- Published in The Rialto, Butcher's Dog, And Other Poems, The Interpreter's House, Under the Radar
+- Toast mentoring scheme 2017
+- Blurbed by Rishi Dastidar ("precise language, controlled energy") and Helen Mort ("Urban and whip-smart")
+- Analytically significant: poetic sensibility toward precise language likely informs editorial voice at MIT TR
+
+### Files Changed
+- `profiles/careers/journalists.yaml` — Niall Firth entry expanded (4 career entries enriched + 7 source_urls + detailed notes)
+
+### Stats After Iteration
+- 239 journalists, 932 career-entry migrations, 429 publications
+- 184 annotated articles, 1,022 emotional language terms
+- 102 framing device types, 635 patterns (structural consistency test confirms 635; count_stats.py reports 696 compiled — includes adversarial + post-pass patterns)
+- 2,706 tests (122 files), all passing
+
+---
+
 ## 2026-07-15 01:00 PT — Type A: Article Deep Dive (Gizmodo Smart Glasses Celebrity Backlash)
 
 **Commit:** `281614b`
