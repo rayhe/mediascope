@@ -1398,7 +1398,7 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **184 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **185 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1428,13 +1428,13 @@ Reuters, Bloomberg, and AP serve as the analytical baseline for same-event compa
 | **Bloomberg** | 1 | Muse Image launch — structural juxtaposition (peer-scandal kicker), wire-service genre with cross-entity guilt-by-association |
 | **Reuters** | 21 | MCI data exposure, Gemini compute limits, child addiction litigation, town hall coverage, BoE regulation, insurance defense, Dalton Smith departure, EU WhatsApp AI antitrust, Zuckerberg AI agents, $1.4T penalty demand, Meta AI image detector cropping failure, Muse Image discontinuation (controlled retreat language discovery) |
 
-#### Tech Editorial (13 publications, 31 articles)
+#### Tech Editorial (13 publications, 32 articles)
 
 Independent tech press with varying editorial postures, from neutral product coverage to adversarial editorial voice:
 
 | Publication | Articles | Coverage Focus |
 |---|---|---|
-| **Gizmodo** | 16 | Smart glasses, prediction markets, AI tokens, product reviews, child safety, super-sensing, LED tamper |
+| **Gizmodo** | 17 | Smart glasses, prediction markets, AI tokens, product reviews, child safety, super-sensing, LED tamper, AI layoff discrimination |
 | **Memeburn** | 4 | Gemini compute limits, smart glasses cameras, Qualcomm Dragonfly |
 | **Engadget** | 2 | Wynn-Williams lawsuit, child safety broken features |
 | **The Register** | 2 | Brain2Qwerty BCI research |
@@ -1495,7 +1495,7 @@ Specialty press and multi-source analyses:
 | Apr 2026 | 3 | MIT TR Chinese workers, resistance, LLM surveillance |
 | May 2026 | 7 | MIT TR Anduril/warfare glasses, Wired dark mood, WebProNews Dublin |
 | Jun 2026 | 63 | Primary collection window — 60% of corpus |
-| Jul 2026 | 27 | Second-highest month — financial journalism genre expansion, wire service addition, EU DSA 6-outlet cluster, controlled retreat language discovery, how-to hybrid genre discovery |
+| Jul 2026 | 28 | Second-highest month — financial journalism genre expansion, wire service addition, EU DSA 6-outlet cluster, controlled retreat language discovery, how-to hybrid genre discovery |
 
 **Collection trajectory:** The corpus grew from ~10 articles (late June 2026) to 121 over ~14 days, with the most intensive collection in June–July 2026. Earlier articles (Aug 2025 – May 2026) were retroactively collected to extend temporal coverage and test the toolkit's temporal generalization. The June 2026 concentration reflects the initial sprint to discover and validate framing device types.
 
@@ -1514,7 +1514,7 @@ Articles cluster into 9 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 184 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 185 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|

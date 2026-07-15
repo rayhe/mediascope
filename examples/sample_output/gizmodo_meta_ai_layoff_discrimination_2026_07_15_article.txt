@@ -1,0 +1,30 @@
+# Meta Sued For Allegedly Using Discriminatory AI In Layoff Decisions
+Source: Gizmodo
+Date: July 15, 2026
+URL: https://gizmodo.com/meta-sued-for-allegedly-using-discriminatory-ai-in-layoff-decisions-2000785427
+
+Twenty-six anonymous Meta employees are suing the tech giant, claiming that it used inherently discriminatory AI-powered software systems in a massive round of layoffs.
+
+Meta conducted a substantial round of layoffs in May that impacted 8,000 employees, representing 10% of its entire workforce. The layoffs were done in an effort to help offset the hundreds of billions of dollars the tech giant prepares to spend on artificial intelligence development.
+
+"Meta did not assemble the termination list through the considered judgment of managers who knew the work," the complaint filed in the Northern District Court of California said. Instead, it allegedly relied on "a constellation of internal artificial-intelligence systems" in order to "score, rank, and select employees for inclusion on the list."
+
+These systems allegedly included an internal large-language model assistant called Metamate, a "second brain" that was trained on employee communications and documents, algorithmic productivity scores based on things like keystroke, browser history, and email data, along with AI-assisted performance review tools. The tech giant's layoff decisions also allegedly relied on internal records of AI token consumption.
+
+According to the lawsuit, the AI systems' emphasis on metrics like keystroke and AI token consumption discriminated against employees who had to miss work or produce reduced output due to a disability or protected medical or family leave. When Meta was allegedly made aware of this problem, it apparently did not take the precautions the employees deemed necessary, such as pausing the system for a more neutral review process.
+
+"The result was that employees who took protected leaves were disproportionately selected for layoff, based on scoring that not only failed to account for their protected leaves, but in effect penalized the employees for exercising their legal rights to these leaves," the lawsuit claims.
+
+According to the lawsuit, multiple employees that were selected by the system were on maternity leave at the time, including a scientist that was just two days away from giving birth. Another employee, a manager, was on approved pregnancy-related disability leave when she became the only person on her team that was selected by the system.
+
+Now, the plaintiffs are asking the court to block Meta from completing the layoffs on July 22, giving the employees time to pursue claims in private arbitration, as required by their contracts.
+
+Meta denies the allegations.
+
+The plaintiffs, who were notified in May that their jobs would be eliminated starting on July 22, are seeking a preliminary ruling from the court blocking Meta from completing the layoffs while they pursue their claims in private arbitration. The workers say Meta's agreements require employees to arbitrate workplace disputes individually, but do not apply to requests for temporary relief.
+
+"These claims lack merit and are not based on facts," a Meta spokesperson told Gizmodo. "Workforce management and organizational decisions were and are made by people, not AI."
+
+The lawsuit comes just months after Meta was hit by yet another workplace discrimination lawsuit, this time by a former employee who said older workers were disproportionately targeted in the company's February 2025 round of layoffs, which impacted 5% of its workforce. At the time, the company said the layoffs were targeting its lowest performers.
+
+One of the engineers in the lawsuit filed this week also claims that "he was aware that employees who took paternity leave had been laid off" in the February 2025 round of layoffs as well.

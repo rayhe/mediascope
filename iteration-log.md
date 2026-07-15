@@ -1,4 +1,52 @@
 # MediaScope Iteration Log
+## 2026-07-15 10:00 PT — Type D: Toolkit Quality & Documentation (Cross-Pub Cluster #15 + Stale Count Fixes)
+
+**Commit:** `c170c98` — "Type D: Cross-pub comparison cluster #15 (Meta AI layoff discrimination 3-way) + stale count fixes"
+
+### Focus
+New same-event cross-publication comparison analysis for the Meta AI layoff discrimination lawsuit (Jul 14, 2026), plus sweeping stale-number fixes across 3 documentation files.
+
+### Work Done
+
+1. **New Same-Event Comparison: Meta AI Layoff Discrimination (Cluster #15)**
+   - 3-way analysis: Reuters vs Fox Business vs WSJ
+   - All three cover the same court filing (26 Meta employees suing over AI-driven layoff discrimination)
+   - Pipeline results: Reuters −0.561 (2 devices), Fox Business −0.572 (6 devices), WSJ −0.554 (9 devices)
+   - **Tightest tone convergence in entire corpus** — 0.018 gap across 3 editorial modes
+   - Key finding: **tone parity with framing divergence** — legal vocabulary creates a VADER convergence artifact that masks a 4.5× framing device differential
+   - Fox Business unique editorial signature: `editorial_cross_promotion` ×2 (all-caps embedded headlines create siege narrative — 3 unrelated Meta controversies in one article)
+   - WSJ unique editorial signature: independent expert sourcing (Prof. Jeffrey M. Hirsch, UNC) — neither wire nor cable news sought independent comment
+   - File: `examples/sample_output/cross_pub_meta_ai_layoff_discrimination_3way_2026_07_14.md`
+
+2. **README Stale Count Fixes**
+   - Tests: 2,730 → 2,773
+   - Test files: 123 → 125
+
+3. **CROSS_PUBLICATION_REFERENCE.md Fixes**
+   - Cluster count: 13 → 15 (was undercounting — Louisiana datacenter was in addendum, not counted)
+   - Tier 1 table consolidated from 7 clusters + separate addendum → 9 clusters in one table
+   - Two stale "104-type taxonomy" references → "106-type taxonomy" (correct since surveillance_creep + market_flooding were added)
+   - Tone gap range: 0.13–1.23 → 0.018–1.23
+   - Removed redundant "Tier 1 + Louisiana Datacenter" section (merged into main table)
+
+4. **QUALITY_STANDARDS.md Fixes**
+   - Cluster count: 13 → 15
+   - Added Louisiana datacenter + discrimination lawsuit to Tier 1 table
+   - Tone gap range updated to 0.018 floor
+   - Article range description: "5-article" → "6-article" (Louisiana datacenter is 6-way)
+
+### Verification
+- All 124 structural consistency tests pass (including `test_same_event_cluster_count` which dynamically validates table row counts against stated totals)
+- README consistency tests (16 tests) all pass
+- `count_stats.py`: 88 clusters, 874 aliases, 106 device types, 716 patterns, 1,022 EL terms, 184 annotated articles, 239 journalists, 2,773 tests
+
+### Notes
+- The discrimination lawsuit cluster is analytically significant because it demonstrates that **tone scores are insufficient for litigation reporting** — the VADER convergence artifact from legal vocabulary makes three editorially distinct articles appear identical by tone alone. Framing device counts are the primary divergence signal in this genre.
+- Fox Business's `editorial_cross_promotion` pattern (all-caps embedded headlines) has now appeared in 3+ articles — strong enough to track as a publication-specific editorial fingerprint.
+- Next D iteration could target: (1) add publication-specific editorial fingerprint section to METHODOLOGY.md, (2) expand ACCURACY_GUIDE.md litigation genre section with this cluster's data, (3) CLI help text improvements.
+
+---
+
 ## 2026-07-15 09:00 PT — Type C: Ownership & Funding Deep Dive (CHTR Buyback Program + Equity Snapshot)
 
 **Commit:** `444b16d` — "Type C: CHTR buyback program + Jul 15 equity snapshot + pattern count fixes"
@@ -23393,3 +23441,60 @@ pxlnv.com, petapixel.com, idtechwire.com, sofx.com, techtimes.com, engadget.com,
 - 239 journalists, 932 career-entry migrations, 429 publications
 - 2769 tests passed (4 xfailed), 2773 total
 - 0 Verge journalists remaining without source_urls (was 4)
+
+---
+
+## Iteration: 2026-07-15T11:00 PT — Type A: Article Deep Dive
+
+**Focus:** Gizmodo "Meta Sued For Allegedly Using Discriminatory AI In Layoff Decisions" (Jul 15, 2026)
+**Source:** https://gizmodo.com/meta-sued-for-allegedly-using-discriminatory-ai-in-layoff-decisions-2000785427
+
+### Article Context
+26 anonymous Meta employees sued in Northern District Court of California, alleging AI-powered systems (Metamate, "second brain", keystroke/productivity scoring) created discriminatory termination lists in the May 2026 layoffs (~8,000 employees). Plaintiffs include employees on maternity, pregnancy disability, and medical leave. Seeking preliminary injunction before July 22 separation date.
+
+This is the 4th outlet to cover the same lawsuit (Reuters Jul 14, Fox Business Jul 14, WSJ Jul 14, Gizmodo Jul 15), expanding same-event cluster #15 from 3-way to 4-way comparison.
+
+### Pipeline Analysis
+- **Entities:** 17 total (Meta ×13 including Metamate, Media/Publications ×3, Legal/Judicial ×1)
+- **Framing devices:** 9 total (litigation_framing ×2, humanization ×2, juxtaposition, scale_magnitude, surveillance_enumeration, delayed_defense, kicker_framing)
+- **VADER compound:** +0.457 (**polarity inversion** — positive score for discrimination lawsuit article, canonical VADER failure)
+- **Sources:** 6 total (2 false positives: "District Court" venue, "Gizmodo" publication-as-source)
+
+### Fixes Applied
+1. **Entity: Metamate added to Meta cluster** — alias + regex. Internal LLM assistant cited in lawsuit. Meta alias count: 88→89. Total aliases: 874→875.
+2. **Framing: humanization timing pattern** — Added "away from" to preposition list (catches "two days away from giving birth"). Previously only matched "before/after/prior to/following".
+3. **Framing: humanization pregnancy-near-harm pattern** — Added "selected" to termination verb list (catches "on pregnancy-related disability leave...selected by the system"). Also added to disability-near-harm pattern. Previously only matched laid off/fired/terminated/eliminated/let go/cut/dismissed/separated/axed.
+
+### Issues Noted (Not Fixed This Iteration)
+1. **VADER polarity inversion (P0, pre-existing):** +0.457 for discrimination lawsuit. Legal vocabulary ("rights," "protect," "merit," "relief") triggers VADER positive bias. Known #1 accuracy problem.
+2. **Source extraction: venue false positive** — "District Court" extracted as named source from "the complaint filed in the Northern District Court of California *said*."
+3. **Source extraction: publication false positive** — "told Gizmodo" extracts "Gizmodo" as source (real source is the spokesperson).
+4. **Speculative language ratio inflated by legal register** — 0.777 from "allegedly," "claims," "apparently" (standard litigation vocabulary).
+
+### 4-Way Cross-Pub Comparison (Cluster 15 Update)
+| Outlet | VADER | Framing | Humanization | Sources | Delayed Defense |
+|---|---|---|---|---|---|
+| Reuters | −0.561 | 2 | 0 | 2 | No |
+| Fox Business | −0.572 | 6 | 0 | 3 | No |
+| WSJ | −0.554 | 9 | 2 | 7 | No |
+| **Gizmodo** | **+0.457** | **9** | **2** | **6** | **Yes (82%)** |
+
+Gizmodo's +0.457 is the outlier — VADER failure, not editorial divergence. Widest VADER spread in corpus for this cluster (1.029 points).
+
+### Files Created/Modified
+- `examples/sample_output/gizmodo_meta_ai_layoff_discrimination_2026_07_15_article.txt` (new)
+- `examples/sample_output/gizmodo_meta_ai_layoff_discrimination_2026_07_15_analysis.md` (new)
+- `tests/test_gizmodo_layoff_discrimination_jul15.py` (new, 12 tests)
+- `mediascope/analyze/entities.py` (Metamate alias + regex)
+- `mediascope/analyze/framing.py` (humanization patterns: "away from" preposition, "selected" verb)
+- `docs/ENTITY_REFERENCE.md` (alias count 874→875, Meta 88→89, Metamate in examples)
+- `docs/METHODOLOGY.md` (185 articles, Gizmodo 16→17, Jul 28 articles, 32 tech editorial)
+- `docs/ACCURACY_GUIDE.md` (185 annotated articles)
+- `docs/QUALITY_STANDARDS.md` (185 annotated articles, cluster 15 updated to 4-way)
+- `docs/ARCHITECTURE.md` (2785 tests / 126 files, 185 articles, test file listing)
+- `README.md` (2785 tests / 126 files, 185 articles, test file listing)
+
+### Stats
+- 185 annotated articles (+1), 875 entity aliases (+1 Metamate)
+- 2785 tests (2781 passed, 4 xfailed), 126 test files (+1)
+- Same-event cluster 15: 3-way → 4-way (Reuters/FoxBiz/WSJ/Gizmodo)

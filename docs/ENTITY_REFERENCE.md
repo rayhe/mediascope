@@ -1,6 +1,6 @@
 # Entity Detection & Clustering Quick Reference
 
-> A compact lookup card for all 88 entity clusters (874 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
+> A compact lookup card for all 88 entity clusters (875 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
 
 ---
 
@@ -65,7 +65,7 @@ The primary analysis targets — companies whose coverage is compared for asymme
 
 | # | Cluster | Aliases | Regex | Key Aliases | Notes |
 |---|---------|---------|-------|-------------|-------|
-| 1 | **Meta** | 88 | custom | Meta, Facebook, Instagram, WhatsApp, Threads, Zuckerberg, Reality Labs, Ray-Ban Meta, Llama, MTIA, Iris, Muse Spark/Image/Video, Fury, Virtue AI, LeCun, Mosseri | Largest cluster. Custom regex handles `Meta` vs HTML `<meta>` tag (negative lookahead for `tag`, `data`, `description`, etc.). Codenames (Mango, Watermelon, Creator, Pocket) require trailing context keywords. |
+| 1 | **Meta** | 89 | custom | Meta, Facebook, Instagram, WhatsApp, Threads, Zuckerberg, Reality Labs, Ray-Ban Meta, Llama, MTIA, Iris, Muse Spark/Image/Video, Fury, Metamate, Virtue AI, LeCun, Mosseri | Largest cluster. Custom regex handles `Meta` vs HTML `<meta>` tag (negative lookahead for `tag`, `data`, `description`, etc.). Codenames (Mango, Watermelon, Creator, Pocket) require trailing context keywords. |
 | 2 | **Google** | 12 | custom | Alphabet, Google, YouTube, DeepMind, Waymo, Sundar Pichai, Gemini, Google Messages, AlphaFold | Excludes `Google Sheet/Doc/Drive/Form/Search/Messages` to avoid tool-usage false positives; `Google Messages` matched explicitly before the exclusion fires |
 | 3 | **Apple** | 12 | custom | Apple, iPhone, iPad, Tim Cook, John Ternus, Apple Intelligence, Apple Vision Pro, Siri, iMessage | Excludes `Apple pie/cider/sauce/tree/juice/cinnamon` |
 | 4 | **Amazon** | 9 | custom | Amazon, AWS, Alexa, Jeff Bezos, Andy Jassy, Kindle, Ring, Prime Video | Excludes `Amazon rain/forest/river/basin` |

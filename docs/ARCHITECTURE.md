@@ -454,8 +454,8 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
-│   └── sample_output/       # 184 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2773 tests across 125 test files (all from real articles)
+│   └── sample_output/       # 185 annotated real-article analyses (see METHODOLOGY.md §17)
+├── tests/                       # 2785 tests across 126 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -481,6 +481,7 @@ mediascope/
 │   ├── test_kotaku_muse_image_editorial_attack.py # Kotaku Meta Muse Image removed article (Jul 11): editorial_character_attack device type (new — journalist's own character judgment as fact), 9 new loaded_language terms (encroachment, regurgitated, cloak and daggery, cause for alarm/worry, unsavory, unnerving, curtly, quell suspicions), policy_reversal, Meta/Instagram/SAG-AFTRA entity detection
 │   ├── test_gizmodo_muse_scrapped.py # Gizmodo Muse Image scrapped article (Jul 11): SAG-AFTRA corporate_spokesperson reclassification (hyphenated org regex), blog post documentary source, Reuters pub citation ("according to [Pub]"), consent_alarm ("pulled face data by default"), temporal compression in policy_reversal ("three days in operation", "made it to Friday"), sarcastic_correction ("world record" opener), precedent_analogy coined-term ("The Ghibli Meme Effect"), Path L sentiment correction (quote-inflated body + negative headline: raw +0.63→corrected -0.13)
 │   ├── test_gizmodo_smart_glasses_celebrity_backlash_jul14.py # Gizmodo smart glasses celebrity backlash (Jul 14): entity detection (Meta cluster with Ray-Ban Meta/Instagram/Starfire, Apple, Google, Samsung, Kylie Jenner Celebrity/Influencer cluster, Wired), loaded_language framing ("backlash", "blasted"), failure_precedent framing (Google Glass "tried, and failed" temporal setup), source extraction Ray-Ban hyphen false-positive regression (Pattern 5c compound-word fix), Lorde source detection
+│   ├── test_gizmodo_layoff_discrimination_jul15.py # Gizmodo Meta AI layoff discrimination (Jul 15): Metamate entity detection (Meta cluster), humanization framing fixes ("away from" preposition, "selected" termination verb), full-article integration (≥9 framing devices, surveillance_enumeration), pregnancy-near-harm pattern expansion
 │   ├── test_investor_framing.py # Investor-media framing patterns and ticker entity detection: narrative_reframing, dismissive_qualifier, bull_bear_structuring device types; NVDA/Rubin/Blackwell ticker/platform entity detection; integration tests against Motley Fool Meta compute article
 │   ├── test_market_overbuilding_framing.py # market_verdict and overbuilding_narrative framing devices (Category 12: Financial & Investor Media Framing), plus speculative_framing pattern expansions (may be [verb]ing, would [adverb] [verb], could be [past participle]); discovered from WSJ AI Spending article (Jul 8, 2026)
 │   ├── test_watermelon_bofa_entities.py # Watermelon/Muse Image/Muse Video Meta entity detection, BofA/Berkshire Hathaway financial entity detection, and analyst_authority framing device regression tests; discovered from Barron's BofA AI spending article (Jul 7, 2026)

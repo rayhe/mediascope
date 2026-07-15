@@ -229,7 +229,7 @@ Every article analysis that introduces a toolkit correction must include:
 4. **Gap analysis** — why the gap exists and which specific framing devices or detection failures caused it
 5. **Regression tests** — at least one test per correction to prevent future regressions
 
-This ensures the correction pipeline is validated against real articles, not synthetic examples. All 184 annotated articles in `examples/sample_output/` follow this pattern.
+This ensures the correction pipeline is validated against real articles, not synthetic examples. All 185 annotated articles in `examples/sample_output/` follow this pattern.
 
 ## 8. Emotional Language Validation
 
@@ -376,7 +376,7 @@ These comparisons have dedicated cross-analysis documents with side-by-side metr
 | Muse Image launch (Jul 7–8) | Reuters (0.00) vs Bloomberg (−0.05) vs TechCrunch (−0.35) vs TechLusive (−0.25) vs iPhone in Canada (−0.05) | 0.35 | 0 vs 5 vs 18 vs 8 vs 4 | `cross_pub_muse_image_5way_2026_07_07.md` |
 | Zuckerberg AI agents (Jul 2) | Reuters (wire) vs Barron's (editorial) | ~0.14 | confession_framing vs emotion_attribution | `reuters_vs_barrons_zuckerberg_ai_agents_2026_07_02_cross_analysis.md` |
 | EU DSA addictive design (Jul 10) | WSJ (−0.27) vs Reuters (−0.28) vs CNN (−0.40) | 0.13 | failure_attribution headline gradient; WSJ most assertive, CNN most hedged | `cross_pub_eu_dsa_addictive_design_wsj_reuters_cnn_2026_07_10.md` |
-| Meta AI layoff discrimination (Jul 14) | Reuters (−0.561) vs Fox Business (−0.572) vs WSJ (−0.554) | 0.018 | Tightest tone convergence in corpus; 4.5× framing device divergence (2→9); Fox Business siege narrative via cross-promotion; WSJ independent expert sourcing | `cross_pub_meta_ai_layoff_discrimination_3way_2026_07_14.md` |
+| Meta AI layoff discrimination (Jul 14–15) | Reuters (−0.561) vs Fox Business (−0.572) vs WSJ (−0.554) vs Gizmodo (+0.457) | 1.029 | 4-way; Gizmodo VADER polarity inversion (+0.457 for negative article); 4.5× framing device divergence (2→9); Gizmodo delayed defense at 82%; Fox Business siege narrative; WSJ independent expert sourcing | `cross_pub_meta_ai_layoff_discrimination_3way_2026_07_14.md`, `gizmodo_meta_ai_layoff_discrimination_2026_07_15_analysis.md` |
 | Meta Hyperion $50B Louisiana datacenter (Jul 13) | WSJ / Fox Business / Barron's / IBD / MarketWatch / Wash. Examiner | 0.70+ | 6-way genre gradient; identical facts produce 0.70+ point spread across financial/news/political modes | `cross_pub_meta_louisiana_datacenter_6way_2026_07_13.md` |
 
 #### Tier 2: Same-Event Article Clusters

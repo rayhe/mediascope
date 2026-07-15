@@ -48,11 +48,11 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Emotional language terms | 1022 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 32 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 12 | Paths A–L, each addressing a specific VADER failure mode |
-| Annotated articles | 184 | Full manual analysis in `examples/sample_output/` |
+| Annotated articles | 185 | Full manual analysis in `examples/sample_output/` |
 | Journalists tracked | 239 | Career data with source URLs |
 | Career-entry migrations | 932 | Across 429+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 2,773 | Across 125 test files |
+| Tests | 2,785 | Across 126 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -462,7 +462,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **2773 tests** across 125 test files, each covering a different analytical capability:
+MediaScope has **2785 tests** across 126 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -507,6 +507,7 @@ MediaScope has **2773 tests** across 125 test files, each covering a different a
 | `test_kotaku_muse_image_editorial_attack.py` | 12 | Kotaku Meta Muse Image removed (Jul 11): editorial_character_attack device type (new — journalist's own character judgment as fact), 9 new loaded_language terms (encroachment, regurgitated, cloak and daggery, cause for alarm/worry, unsavory, unnerving, curtly, quell suspicions), policy_reversal detection, Meta/Instagram/SAG-AFTRA entity detection, overall detection quality guards |
 | `test_gizmodo_muse_scrapped.py` | 16 | Gizmodo Muse Image scrapped (Jul 11): SAG-AFTRA corporate_spokesperson reclassification (hyphenated org regex fix), blog post documentary source, Reuters "according to [Pub]" citation, consent_alarm ("pulled face data by default"), temporal compression policy_reversal ("three days in operation", "made it to Friday"), sarcastic_correction ("world record" opener), precedent_analogy coined-term ("The Ghibli Meme Effect"), Path L sentiment correction (quote-inflated body + negative headline: raw +0.63→corrected -0.13) |
 | `test_gizmodo_smart_glasses_celebrity_backlash_jul14.py` | 17 | Gizmodo smart glasses celebrity backlash (Jul 14): entity detection (Meta cluster with Ray-Ban Meta/Instagram/Starfire, Apple, Google, Samsung, Kylie Jenner Celebrity/Influencer cluster, Wired), loaded_language framing ("backlash", "blasted"), failure_precedent framing (Google Glass "tried, and failed" temporal setup), source extraction Ray-Ban hyphen false-positive regression fix (Pattern 5c compound-word boundary), Lorde source detection |
+| `test_gizmodo_layoff_discrimination_jul15.py` | 12 | Gizmodo Meta AI layoff discrimination (Jul 15): Metamate entity detection (Meta cluster alias + regex), humanization framing fixes ("away from" preposition in timing pattern, "selected" termination verb in pregnancy-near-harm pattern), full-article integration (≥9 framing devices, ≥2 humanization, surveillance_enumeration) |
 | `test_investor_framing.py` | 36 | Investor-media framing patterns and ticker entity detection: narrative_reframing, dismissive_qualifier, bull_bear_structuring device types with false-positive guards; NVDA/Rubin/Blackwell ticker and platform codename entity detection; Motley Fool Meta compute article integration tests |
 | `test_market_overbuilding_framing.py` | 32 | market_verdict and overbuilding_narrative framing devices (Category 12), speculative_framing pattern expansions; WSJ AI Spending article gap fixes |
 | `test_watermelon_bofa_entities.py` | 16 | Watermelon/Muse Image/Muse Video Meta entity detection, BofA/Berkshire Hathaway financial entity detection, and analyst_authority framing device regression tests; discovered from Barron's BofA AI spending article (Jul 7, 2026) |

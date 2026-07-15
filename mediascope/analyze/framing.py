@@ -9317,7 +9317,7 @@ _HUMANIZATION_PATTERNS: list[re.Pattern] = [
     # "X days/weeks before giving birth / her wedding / his surgery"
     re.compile(
         r"\b(?:days?|weeks?|hours?|moments?)\s+"
-        r"(?:before|after|prior to|following)\s+"
+        r"(?:before|after|prior to|following|away from)\s+"
         r"(?:giving birth|her (?:due date|delivery|wedding|surgery|"
         r"cancer treatment|funeral|graduation)|"
         r"his (?:wedding|surgery|cancer treatment|funeral|graduation)|"
@@ -9344,7 +9344,7 @@ _HUMANIZATION_PATTERNS: list[re.Pattern] = [
         r"(?:baby|child)|newborn|new mother|due date)\b"
         r".{0,120}?"
         r"\b(?:laid off|fired|terminated|eliminated|let go|"
-        r"cut|dismissed|separated|axed)\b",
+        r"cut|dismissed|separated|axed|selected)\b",
         re.IGNORECASE | re.DOTALL,
     ),
     # Age-specific vulnerability near harm:
@@ -9366,7 +9366,7 @@ _HUMANIZATION_PATTERNS: list[re.Pattern] = [
         r"multiple sclerosis|cerebral palsy|autism|chronic\s+\w+)\b"
         r".{0,100}?"
         r"\b(?:laid off|fired|terminated|denied|rejected|cut|"
-        r"dismissed|eliminated)\b",
+        r"dismissed|eliminated|selected)\b",
         re.IGNORECASE | re.DOTALL,
     ),
 ]
