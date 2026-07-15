@@ -1,7 +1,7 @@
 # MediaScope Iteration Log
 ## 2026-07-14 21:00 PT — Type A: Article Deep Dive (WSJ — Meta AI Layoff Discrimination)
 
-**Commit:** `pending`
+**Commit:** `cd85308`
 
 ### Summary
 Deep dive on WSJ article "Meta Workers Accuse It of Using AI to Conduct Discriminatory Layoffs" by Chip Cutter and Meghan Bobrowsky (July 14, 2026). Coverage of Oakland federal court filing by 26 Meta employees alleging AI-assisted layoff discrimination. Same-event cluster with Reuters, Fox Business, NY Post, USA Today, and Daily Caller.

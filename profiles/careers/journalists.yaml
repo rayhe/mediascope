@@ -13690,3 +13690,117 @@ journalists:
   - https://talkingbiznews.com/they-re-hiring/bloomberg-hires-kelly-welch-for-consumer-tech-team/
   - https://theorg.com/org/vox-media/org-chart/chris-welch
   - https://muckrack.com/chriswelch/articles
+- career:
+  - beat: workplace culture, labor, office policy
+    end: '2019'
+    event_type: hired
+    notes: 'Technology reporter at the Associated Press in New York, covering workplace trends and labor. Early career in wire-service journalism provided grounding in neutral-voice reporting and rapid news coverage. AP''s style heavily emphasizes factual, source-attributed reporting with minimal editorial voice — relevant baseline for comparing his later WSJ work.'
+    publication: associated-press
+    role: reporter
+    source_url: https://muckrack.com/chip-cutter
+    start: '2017'
+  - beat: workplace, labor market, office culture, layoffs, return-to-office
+    end: present
+    event_type: hired
+    notes: 'Reporter covering the U.S. workplace beat from New York. Has become one of WSJ''s primary voices on corporate layoffs, return-to-office mandates, remote work policy, and labor market shifts. Key Meta coverage includes "Meta Workers Accuse It of Using AI to Conduct Discriminatory Layoffs" (Jul 14, 2026, with Meghan Bobrowsky). Coverage style is procedural and source-heavy — typically balances corporate statements with expert analysis and employee/plaintiff perspectives. Northwestern University (Medill School of Journalism). KEY for MediaScope: Cutter''s workplace beat means he covers Meta layoffs from a labor/employment angle rather than a tech/product angle. This produces systematically different framing than tech-beat reporters covering the same events — more focus on worker impact, legal dimensions, and corporate culture rather than strategic positioning. His Jul 14 piece with Bobrowsky is notable for including employment law expert Prof. Jeffrey Hirsch (UNC), which adds independent analytical framing rare in peer coverage of the same filing.'
+    publication: wall-street-journal
+    role: reporter
+    source_url: https://www.wsj.com/news/author/chip-cutter
+    start: '2019'
+  multi_publication: true
+  name: Chip Cutter
+  notes: 'Career arc: AP (2017–2019) → WSJ (2019–present). Workplace/labor beat reporter. Northwestern (Medill). Co-authored the Jul 14, 2026 WSJ piece on Meta AI layoff discrimination with Meghan Bobrowsky — the most procedurally balanced article in a 6-outlet same-event cluster. His labor-beat framing produces systematically different coverage of tech company events compared to tech-beat reporters at the same publication. ANALYTICAL VALUE: (1) Labor-vs-tech beat framing comparison on identical Meta events. (2) Source selection patterns: Cutter consistently includes independent legal/academic experts, which dampens editorial sentiment and increases authority grades. (3) AP → WSJ pipeline shows how wire-service training shapes subsequent institutional voice.'
+  source_urls:
+  - https://www.wsj.com/news/author/chip-cutter
+  - https://muckrack.com/chip-cutter
+- career:
+  - beat: technology, startups
+    end: '2020'
+    event_type: hired
+    notes: 'Reporter at The Information, a subscription tech-industry publication known for deep sourcing inside major tech companies. Coverage focused on social media companies and startup ecosystems. The Information''s model (high subscription price, small audience of industry insiders) encourages relationship-based sourcing and insider access that differs from mass-market tech coverage.'
+    publication: the-information
+    role: reporter
+    source_url: https://muckrack.com/meghan-bobrowsky
+    start: '2018'
+  - beat: technology, Meta, social media, AI, Big Tech
+    end: present
+    event_type: hired
+    notes: 'Technology reporter covering Meta, social media platforms, and AI from the San Francisco bureau. Co-authored "Meta Workers Accuse It of Using AI to Conduct Discriminatory Layoffs" with Chip Cutter (Jul 14, 2026). Regular byline on Meta earnings, product launches, and regulatory coverage. Her Information background provides insider-sourcing skills that complement Cutter''s labor-beat approach when they collaborate. KEY for MediaScope: Bobrowsky is a primary WSJ reporter on the Meta beat, making her framing patterns directly relevant to cross-publication sentiment comparison. Her tech-beat approach to the same Meta events that Cutter covers from a labor angle creates natural within-publication framing experiments.'
+    publication: wall-street-journal
+    role: reporter
+    source_url: https://www.wsj.com/news/author/meghan-bobrowsky
+    start: '2020'
+  multi_publication: true
+  name: Meghan Bobrowsky
+  notes: 'Career arc: The Information (2018–2020) → WSJ (2020–present). Tech reporter covering Meta, social media, AI. Co-authored Meta AI layoff discrimination piece Jul 14, 2026. The Information → WSJ pipeline is a common path for tech journalists seeking larger audience reach while maintaining insider sourcing. ANALYTICAL VALUE: (1) Primary WSJ Meta beat reporter — her framing baseline is critical for cross-publication comparison. (2) Cutter-Bobrowsky collaboration pairs a labor reporter with a tech reporter on the same piece, creating a natural dual-framing experiment. (3) The Information → WSJ migration tests how institutional voice shapes coverage when a journalist moves from niche insider publication to mass-market prestige outlet.'
+  source_urls:
+  - https://www.wsj.com/news/author/meghan-bobrowsky
+  - https://muckrack.com/meghan-bobrowsky
+- career:
+  - beat: government technology, surveillance, privacy, police tech
+    end: '2024'
+    event_type: hired
+    notes: 'Staff writer at Gizmodo (G/O Media) covering government technology, surveillance, privacy, and police technology. Prolific output on government surveillance programs, facial recognition, law enforcement tech, and digital privacy issues. Gizmodo''s editorial voice under G/O Media ownership was notably adversarial toward Big Tech, which shaped Ropek''s framing patterns. His government-tech beat provided expertise in regulatory and policy dimensions that he carried to TechCrunch.'
+    publication: gizmodo
+    role: staff_writer
+    source_url: https://gizmodo.com/author/lucas-ropek
+    start: '2021'
+  - beat: AI, tech policy, Meta, privacy, social media
+    end: present
+    event_type: hired
+    notes: 'Staff writer at TechCrunch covering AI, tech policy, and major platform companies. Articles include "Mark Zuckerberg tells staff that AI agents haven''t progressed as quickly as he''d hoped" (Jul 2, 2026) and coverage of Meta Muse Image privacy pushback (Jul 7, 2026). Style combines Gizmodo''s adversarial instincts with TechCrunch''s startup/product orientation. Produces both short-form "In Brief" news digests and longer analytical pieces. KEY for MediaScope: Ropek''s Gizmodo → TechCrunch migration is a natural experiment in how institutional editorial voice shapes coverage. Gizmodo''s adversarial-activist house style vs TechCrunch''s product-oriented voice should produce measurable framing shifts on identical beat topics. His Meta coverage from TechCrunch extends our publication tracking beyond the core 5.'
+    publication: techcrunch
+    role: staff_writer
+    source_url: https://techcrunch.com/author/lucas-ropek/
+    start: '2024'
+  multi_publication: true
+  name: Lucas Ropek
+  notes: 'Career arc: Gizmodo (2021–2024) → TechCrunch (2024–present). Government tech / privacy → AI / tech policy. ANALYTICAL VALUE: (1) Gizmodo → TechCrunch migration is a clean institutional-voice experiment — same journalist, same broad beat, different editorial culture. (2) Multiple recent Meta articles provide ongoing framing data. (3) His government-tech background means he approaches Meta stories with a regulatory/surveillance lens rather than a product/business lens, producing systematically different source selection and framing. Two articles already analyzed in MediaScope sample_output (Jul 2 and Jul 7, 2026).'
+  source_urls:
+  - https://techcrunch.com/author/lucas-ropek/
+  - https://gizmodo.com/author/lucas-ropek
+- career:
+  - beat: technology, social media, digital advertising
+    end: '2022'
+    event_type: hired
+    notes: 'Technology reporter at Reuters covering social media companies, digital advertising, and tech regulation. Developed deep Meta/Facebook sourcing. Based in San Francisco. Reuters wire-service style emphasizes neutral attribution and balanced sourcing — provides useful baseline for comparing editorial outlets.'
+    publication: reuters
+    role: reporter
+    source_url: https://www.reuters.com/journalists/katie-paul
+    start: '2019'
+  - beat: technology, Meta, social media, AI, tech regulation
+    end: present
+    event_type: hired
+    notes: 'Continued covering technology and social media companies at Reuters. Primary Meta beat reporter for Reuters, including coverage of EU DSA enforcement, regulatory actions, advertising disputes, and AI product launches. Co-authored "Meta to pay $1.4 trillion in Australian privacy case" and related regulatory coverage. Her Reuters byline appears in multiple MediaScope same-event clusters alongside Wired, NYT, and Guardian coverage of identical Meta events. KEY for MediaScope: As Reuters'' primary Meta reporter, Paul''s wire-service coverage serves as a neutral baseline against which editorial publications'' framing can be measured. Her work appears in multiple same-event comparison clusters already in the toolkit.'
+    publication: reuters
+    role: tech_reporter
+    source_url: https://www.reuters.com/journalists/katie-paul
+    start: '2022'
+  multi_publication: false
+  name: Katie Paul
+  notes: 'Reuters tech reporter, primary Meta beat. Wire-service baseline for same-event cross-publication comparison. Appears in multiple existing MediaScope analysis clusters. ANALYTICAL VALUE: (1) Wire-service baseline — Reuters style is the closest thing to neutral-voice tech reporting, making Paul''s coverage the control group for measuring editorial framing in Wired, NYT, Guardian, etc. (2) Her pieces frequently appear in same-event clusters with core tracked publications. (3) Single-publication career at Reuters means no migration data, but provides a clean institutional-voice sample.'
+  source_urls:
+  - https://www.reuters.com/journalists/katie-paul
+- career:
+  - beat: technology, privacy, data, investigations
+    end: '2019'
+    event_type: hired
+    notes: 'Technology reporter and investigative journalist at The Wall Street Journal. Part of the investigative team that examined government and corporate surveillance. Her WSJ work included the "What They Know" privacy series. Developed expertise in data-driven investigative journalism combining technical analysis with reporting. Won Gerald Loeb Award for deadline and breaking news (2013) with WSJ team.'
+    publication: wall-street-journal
+    role: investigative_reporter
+    source_url: https://muckrack.com/jennifer-valentino-devries
+    start: '2008'
+  - beat: technology, privacy, surveillance, investigations, data
+    end: present
+    event_type: hired
+    notes: 'Investigative reporter at The New York Times covering technology, privacy, and data. Part of NYT team that won 2019 Pulitzer Prize for Explanatory Reporting for the "One Nation, Tracked" investigation analyzing smartphone location data and its implications for privacy. Key pieces include investigations into Google''s location tracking practices, police use of reverse-location warrants, and tech company data collection. Her work bridges investigative journalism and data analysis — she often works with large datasets to produce evidence-based investigations rather than relying solely on source interviews. KEY MIGRATION: WSJ → NYT represents a Dow Jones → Sulzberger pipeline for privacy/surveillance investigative reporting. This is one of the most significant investigative tech journalism migrations — her WSJ "What They Know" series pioneered the genre that her NYT location-tracking investigation built upon. Question for DiD analysis: did her framing shift from WSJ''s business-audience orientation to NYT''s broader public-interest framing? Both publications are prestige outlets, but the audience composition differs significantly.'
+    publication: nytimes
+    role: investigative_reporter
+    source_url: https://www.nytimes.com/by/jennifer-valentino-devries
+    start: '2019'
+  multi_publication: true
+  name: Jennifer Valentino-DeVries
+  notes: 'Career arc: WSJ (2008–2019) → NYT (2019–present). Investigative tech/privacy reporter. 2019 Pulitzer Prize for Explanatory Reporting (NYT team, "One Nation, Tracked"). Gerald Loeb Award (2013, WSJ team). Pioneer of data-driven investigative tech journalism. KEY for MediaScope: (1) NYT is a core tracked publication — adding her profile fills a gap in our investigative-reporter coverage. (2) WSJ → NYT migration is a high-value DiD experiment: same beat, same prestige tier, different institutional voice and audience. (3) Her privacy/surveillance focus means she approaches Meta stories from a civil-liberties angle rather than business or product angle. (4) Pulitzer-winning investigative credibility affects how her framing is weighted by readers and cited by other outlets.'
+  source_urls:
+  - https://www.nytimes.com/by/jennifer-valentino-devries
+  - https://muckrack.com/jennifer-valentino-devries
