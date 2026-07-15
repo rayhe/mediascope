@@ -1,4 +1,19 @@
 # MediaScope Iteration Log
+## 2026-07-14 17:00 PT — Type B: Journalist/Publication Research
+
+**New profiles (3):**
+- **Kate Cox** — freelance gaming → Consumerist → CQ Roll Call → Ars Technica (Condé Nast) → Protocol (Axel Springer, closed Nov 2022) → The Verge (Vox Media). 5 corporate ownership structures. Senior Producer, Decoder podcast.
+- **Umar Shakir** — 15+ years IT support → Verge Fellow → The Verge news writer. 2,600+ articles. BA Film/Video & Animation (UMBC).
+- **Chris Welch** — The Verge founding-era (2011–2025, 14 years, 6,000+ articles) → Bloomberg (hired by Mark Gurman's consumer tech team, 2025).
+
+**Editorial changes:** Chris Welch departure from The Verge added to editorial_changes.yaml.
+
+**Sources:** TalkingBizNews, Bluesky (@kcoxdc), TheOrg, JournalistHunt, MuckRack, chris-welch.com
+
+**Stats after:** 234 journalists, 225 multi-pub, 927 career entries, 727 migrations, 429 publications, 2,656 tests passing.
+
+**Commit:** `d3e66c9` — pushed to GitHub.
+
 ## 2026-07-14 15:00 PT — Type A: Article Deep Dive (NY Post Muse Image Forced Retreat)
 
 **Article:** NY Post — "Meta yanks controversial AI image tool after privacy backlash: 'Force their slop down everyone's throat'" (Jul 13, 2026)
