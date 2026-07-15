@@ -382,15 +382,20 @@ advance_investments:
       NOTE: Reddit Q2 earnings Jul 30 — if Reddit misses consensus, RDDT could gap down given
       2.23 beta and Advance's concentrated position + margin loan. Conversely, continued beats
       could push past $200 resistance.
-      ADVANCE TOTAL PUBLIC EQUITY SNAPSHOT (Jul 14):
-        - Reddit: $8.49B (42.2M shares × $201.18, RDDT +0.12% — holding above $200)
-        - Charter: $2.71B (20.6M shares × $131.61, CHTR +0.18% — near 52-week low $124.05)
-        - WBD: ~$2.70B (98M shares × ~$27.535 Jul 14, +1.64% — rose despite 12-AG lawsuit)
-        - Total: ~$13.90B (up from ~$13.82B Jul 13 — broad minor gains across all three)
-        - CATALYSTS: CHTR Q2 earnings Jul 24 (next up), RDDT Q2 earnings Jul 30, WBD Q2 Aug 6
-        - CHTR: CPUC (California) sole remaining regulatory hurdle for Cox merger; target Aug 13
-          CPUC meeting for approval; DOJ HSR clearance expires Sep 15, 2026
-        - WBD: 12-AG antitrust lawsuit filed Jul 13 to block Paramount merger; market unperturbed
+      ADVANCE TOTAL PUBLIC EQUITY SNAPSHOT (Jul 14 CLOSE):
+        - Reddit: $8.60B (42.2M shares × $203.72 close, RDDT +1.39% — firmly above $200)
+        - Charter: $2.64B (20.6M shares × $127.91 close, CHTR -2.63% — $3.86 above 52W low $124.05)
+        - WBD: ~$2.69B (98M shares × $27.48 close, +1.44% — still resilient despite dual lawsuits)
+        - Total: ~$13.93B (RDDT gain +$110M offset CHTR loss -$70M; WBD flat)
+        - Reddit concentration: 61.7% of Advance public equity (up from 61.1% Jul 13 — CHTR decline widens)
+        - CATALYSTS: PARAMOUNT TRO HEARING Fri Jul 18 (Judge Pitts, 10am PT). CHTR Q2 Jul 24.
+          RDDT Q2 Jul 30. WBD Q2 Aug 6. CHTR CPUC Aug 13.
+        - CHTR: BNP Paribas Exane cut target to $120 (Jul 14) — BELOW 52W low of $124.05, most
+          bearish call yet. Barclays already at $130 underweight (Jul 8). Goldman $125 sell (Jul 2).
+          Three separate analysts now targeting at or below current price. Consensus: "Reduce."
+        - WBD: 12-AG antitrust lawsuit (Jul 13) + WGA lawsuit (Jul 14) = TWO active suits to block
+          Paramount merger. TRO hearing Fri Jul 18 could temporarily halt deal. Market unperturbed
+          (WBD +1.44% Jul 14). FCC Chair Brendan Carr questioned antitrust basis for state suit.
       This is a potential volatility catalyst for Advance's collateral value.
     credit_facility_monetization: >
       REDDIT MARGIN LOAN (reported Jun 12, 2026, Bloomberg Law): Advance Magazine Publishers Inc.
@@ -555,11 +560,13 @@ advance_investments:
       Charter Holdings partnership; Class B stock provided as-if-converted voting. Stake has diluted
       from 26.3% (2016) to 12.3% (2023) via share repurchases and conversions.
     deterioration_note: >
-      CHTR is in steep long-term decline: -67.49% over 1 year, -82.03% over 5 years (as of Jun 25, 2026).
-      Stock down from 52-week high of $413.14 to $130.73 (Jul 13, 2026 close) — a 68.4% drop,
-      approaching 52-week low of $124.05. Wall Street consensus rating is "Reduce" (6 sell, 8 hold,
-      5 buy out of 19 analysts). Q1 2026 earnings missed: EPS $9.17 vs consensus $10.01 (missed
-      by $0.84), revenue down 1.0% YoY at $13.60B. Q2 2026 earnings due July 24 (before market open).
+      CHTR is in steep long-term decline: -67.99% over 1 year, -81.76% over 5 years (as of Jul 14, 2026).
+      Stock down from 52-week high of $413.14 to $127.91 (Jul 14, 2026 close) — a 69.0% drop,
+      only $3.86 above 52-week low of $124.05. BNP Paribas Exane cut target to $120 (Jul 14) — first
+      analyst target BELOW the 52-week low, signaling expectation of further new lows. Wall Street
+      consensus rating is "Reduce" (6 sell, 8 hold, 5 buy out of 19 analysts). Q1 2026 earnings
+      missed: EPS $9.17 vs consensus $10.01 (missed by $0.84), revenue down 1.0% YoY at $13.60B.
+      Q2 2026 earnings due July 24 (before market open). Market cap now ~$15.73B (was $16.2B Jul 13).
       Charter faces structural headwinds from cord-cutting, fiber overbuilds, and fixed wireless competition.
       COX MERGER PROGRESS (updated Jul 14, 2026): Charter-Cox $34.5B merger in final regulatory
       stretch. >99% stockholder approval obtained. NY PSC approved Mar 20, 2026 ($100M network
@@ -598,7 +605,7 @@ advance_investments:
       Advance. Despite Charter's 82% 5-year decline, a SpaceX mobile partnership could re-rate the
       stock. Advance's ~$2.75B stake (at $133.54) could see meaningful upside if Charter pivots from
       declining cable to space-enabled mobile connectivity.
-    current_value_estimate: "~$2.71B at $131.61/share (Jul 14, 2026, +0.18%). Down from $8.7B at 52-week high of $413.14. Near 52-week low of $124.05. Goldman Sachs cut PT to $125 sell (Jul 2), Barclays cut to $130 underweight (Jul 8). Consensus 'Reduce' (6 sell, 8 hold, 5 buy). Q2 earnings Jul 24. Cox merger: CPUC Aug 13 target, HSR expires Sep 15."
+    current_value_estimate: "~$2.64B at $127.91/share (Jul 14 close, -2.63%). Down from $8.7B at 52-week high of $413.14. Only $3.86 above 52-week low of $124.05. BNP Paribas Exane cut PT to $120 (Jul 14) — BELOW 52W low, most bearish call. Goldman $125 sell (Jul 2), Barclays $130 underweight (Jul 8). Consensus 'Reduce' (6 sell, 8 hold, 5 buy). Q2 earnings Jul 24. Cox merger: CPUC Aug 13 target, HSR expires Sep 15."
     competitive_with: []
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
     spacex_partnership_source_urls:
@@ -707,6 +714,37 @@ advance_investments:
         $27.61 intraday). Paramount PSKY also rose 2.5%. Market appears to view state AG challenge
         as unlikely to succeed given DOJ clearance and 24+ international regulatory approvals.
         Source: Fox9, Washington Examiner, Daily Caller, Barron's (all Jul 13, 2026).
+      - WGA LAWSUIT FILED (Jul 14, 2026): Writers Guild of America (18,000 members) filed SEPARATE
+        antitrust lawsuit in N.D. Cal. (same court as state AGs) to block the merger. WGA alleges
+        combined Paramount-WBD would be the LARGEST employer of film and television writers,
+        enabling downward pressure on wages and working conditions. WGA East President Tom Fontana:
+        "will not stand idly by as Paramount attempts to violate our country's antitrust laws."
+        Paramount rebuttal: pledged 30+ theatrical films/year, argued deal "will have the scale and
+        resources to reverse current trends and expand opportunities for writers." (WSJ, Jul 14).
+        DUAL LAWSUIT DYNAMICS: Two independent lawsuits now active in same court — state AGs
+        (Clayton Act §7) + labor union (antitrust + employment impact). Different theories could
+        compound regulatory risk even if each alone is insufficient.
+      - TRO HEARING FRIDAY JUL 18: U.S. District Judge P. Casey Pitts will hear emergency motion
+        from AG Bonta and 12 states to temporarily halt the merger while antitrust lawsuit proceeds.
+        Hearing: 10 AM PT / 1 PM ET. Paramount must file opposition by Thursday noon Jul 17.
+        States seeking ruling before July 22 (Paramount's earliest possible close date).
+        If TRO granted: deal closure delayed pending full litigation. If denied: Paramount could
+        attempt to close as early as Jul 22, though still faces ongoing litigation risk.
+      - FCC COMMENTARY (Jul 14): FCC Chairman Brendan Carr reportedly questioned the antitrust basis
+        for the state AG lawsuit, also flagging Disney under "heightened scrutiny." Federal-state
+        tension emerging: DOJ cleared the deal; FCC chair skeptical of state challenge; but 12 state
+        AGs + WGA proceeding regardless. Creates political dimension (all 12 filing AGs are Democrats;
+        Carr is a Trump appointee).
+      - CA AG BONTA ESCALATION (Jul 14): Bonta called Paramount's threat to move HQ out of California
+        "blackmail" on Matthew Belloni's "The Town" podcast. Characterized merger as "simply an illegal
+        merger." Cited three markets: wide-release theatrical films distribution, blockbuster distribution,
+        and cable channel licensing. Paramount still says deal to close by end of September.
+        (Fox Business, Bleeding Cool, Reuters Breakingviews — all Jul 14).
+      - REUTERS BREAKINGVIEWS ANALYSIS (Jul 14): Jennifer Saba's column characterizes the state lawsuit
+        as heading for "tragic ending" — argues case centers on theater and cable industries "that are
+        dying no matter what happens." Suggests structural decline of the relevant markets weakens
+        the states' competition argument. This framing itself is analytically significant for MediaScope:
+        it exemplifies how editorial voice can shape perceptions of legal merit.
         ADVANCE IMPLICATIONS: If the deal closes at $30/share, Advance realizes ~$2.94B from
         remaining ~98M shares. If it fails, WBD trades ~$27 at market. The $7B termination fee
         (paid by Paramount if deal fails due to regulatory matters) provides downside protection
@@ -720,7 +758,7 @@ advance_investments:
       realized from June 2024 sale = ~$4.04B total from WBD investment. This would be Advance's largest
       single liquidity event since the Reddit IPO and could significantly alter the family office's capital
       allocation and media strategy.
-    current_value_estimate: "~$2.70B remaining at market ($27.535 Jul 14, +1.64%) or ~$2.94B at Paramount tender ($30/share) + $1.1B already realized = ~$3.81-4.04B total. WBD market cap ~$64.5B. 12-AG lawsuit filed Jul 13 to block merger; WBD rose on filing day (+1.88%), market views state challenge as unlikely to succeed. Q2 earnings Aug 6. Ticking fee ($0.25/share/quarter) triggers if deal doesn't close by Sep 30."
+    current_value_estimate: "~$2.69B remaining at market ($27.48 Jul 14 close, +1.44%) or ~$2.94B at Paramount tender ($30/share) + $1.1B already realized = ~$3.79-4.04B total. WBD market cap ~$68.9B. 12-AG lawsuit (Jul 13) + WGA lawsuit (Jul 14) = dual active suits. TRO hearing Fri Jul 18. Market resilient (+1.44% on WGA filing day). FCC Chair Carr questioned antitrust basis. Q2 earnings Aug 6. Ticking fee ($0.25/share/quarter) triggers if deal doesn't close by Sep 30."
     competitive_with: ["Meta (streaming/content)"]
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse+programming&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
     source_urls:
@@ -738,6 +776,11 @@ advance_investments:
       - "https://www.fox9.com/news/minnesota-ag-joins-lawsuit-block-warner-bros-paramount-merger"
       - "https://www.washingtonexaminer.com/news/california-leads-multistate-antitrust-lawsuit-paramount-warner-bros-merger"
       - "https://www.barrons.com/articles/paramount-warner-bros-stocks-lawsuit-block-merger/"
+      - "https://www.foxbusiness.com/media/california-ag-blasts-paramount-wbd-merger-illegal-says-threat-leave-state-blackmail-effort"
+      - "https://www.bleedingcool.com/2026/07/14/paramount-warner-bros-update-big-hearing-on-friday/"
+      - "https://www.wsj.com/arts-culture/entertainment/writers-guild-paramount-warner-bros-discovery-merger-lawsuit/"
+      - "https://www.reuters.com/breakingviews/paramount-wbd-lawsuit-heads-tragic-ending/"
+      - "https://www.awfulannouncing.com/entertainment/california-leads-antitrust-lawsuit-paramount-warner-bros-discovery/"
 
   - entity: "Condé Nast"
     stake: "100% subsidiary"
