@@ -278,7 +278,7 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 
 ---
 
-*Last updated: 2026-07-14. See [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection) for full device descriptions, detection patterns, and discovery provenance articles.*
+*Last updated: 2026-07-15. See [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection) for full device descriptions, detection patterns, and discovery provenance articles.*
 
 ---
 
@@ -289,6 +289,8 @@ Candidate framing devices discovered during analysis but not yet formally added.
 | Candidate | Category | Description | Discovery Provenance | Examples Found | Status |
 |-----------|----------|-------------|---------------------|----------------|--------|
 | **Ironic Consolidation** | Narrative & Editorial Architecture | Bundling multiple independent negative narratives into a single article, connecting them with ironic thematic links to amplify perceived systemic failure. Distinct from `trend_bundling` (which groups similar actions by peers) — ironic consolidation groups *disparate* failures of a *single* entity. | Gizmodo siege roundup (Jul 2026) | 1 | Needs 2+ more |
+| **Surveillance Enumeration** | Language & Tone Manipulation | 3+ comma-separated monitoring/tracking terms in a single clause, creating a surveillance-cascade effect ("tracking employees' locations, monitoring badge swipes, scrutinizing internal messages"). The enumeration itself carries negative valence — each additional term amplifies the impression of invasive oversight. Distinct from `loaded_language` (individual word choice) and `scale_magnitude` (numerical amplification). | WSJ Meta AI layoff discrimination (Jul 14, 2026) | 1 | Needs 2+ more |
+| **Emotional Humanization** | Language & Tone Manipulation | Specific personal detail placed in temporal proximity to harm, using the granularity of the detail to amplify emotional impact ("two days before giving birth," "a single mother of three," "just weeks before retirement"). The technique converts institutional actions (layoffs, denials, penalties) into individual human-cost narratives. Distinct from `power_asymmetry` (which frames power differentials) and `emotional_appeal` (which uses abstract emotional vocabulary). | WSJ Meta AI layoff discrimination (Jul 14, 2026) | 1 | Needs 2+ more |
 
 ### Proposed Correction Paths
 

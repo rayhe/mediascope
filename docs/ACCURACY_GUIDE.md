@@ -60,6 +60,7 @@ MediaScope's 12 correction paths (A–L) address polarity inversion in specific,
 | **Financial journalism inflation** | Investment vocabulary ("strong buy," "attractive valuation") inflates by +0.3–0.5 | Trust framing devices over sentiment score. See [METHODOLOGY.md §16](METHODOLOGY.md#16-financial-journalism-sentiment-bias) |
 | **Procedural service journalism** | Negative tone is structural (consent_alarm, guilt transfer) rather than lexical | Flag articles with ≥2 consent_alarm + low adversarial count. Note: the forced-retreat override (Jul 14) now partially addresses this — when `policy_reversal + consent_alarm` appear together, Path A fires even with positive agency. See [SENTIMENT_CORRECTION_REFERENCE.md](SENTIMENT_CORRECTION_REFERENCE.md#path-a-variant-forced-retreat-override-jul-14-2026) |
 | **Q&A format** | Source extraction returns zero; question-answer structure breaks all detection | Manual annotation required. Report framing devices and agency only |
+| **Legal vocabulary inflation** | Legal terms of art ("discriminatory," "retaliation," "wrongful termination") are emotionally neutral in litigation reporting but VADER scores them as negative, causing −0.15 to −0.20 systematic overshoot on lawsuit articles. Conversely, legal-context verbs ("alleged," "filed," "claimed") that VADER reads as mild negative are standard neutral procedural language | Use genre-aware calibration for litigation articles. When article is primarily lawsuit coverage (topic = `litigation`), expect VADER magnitude to be overstated by ~0.15–0.20. Cross-check against wire-service baseline on same case filing. Discovered from WSJ Meta AI layoff discrimination article (Jul 14, 2026) |
 
 ---
 
@@ -76,6 +77,7 @@ Article genre is the strongest predictor of toolkit accuracy. The table below su
 | **Financial/investor** | ❌ Low (systematic inflation) | ⚠️ Partial (no dedicated path yet) | Investment vocabulary inflates by +0.3–0.5 | Flag as genre-inflated. Weight framing devices over score |
 | **Tabloid/capitulation** (NY Post, The Tab, Inc) | ❌ Low (active-voice retreat reads positive) | ✅ High (Path A forced-retreat variant) | Capitulation verbs ("yanks," "scraps") have positive grammatical agency but negative editorial valence | Run correction. Expect forced-retreat override when `policy_reversal + consent_alarm` present |
 | **Opinion/essay** | ⚠️ Mixed | ⚠️ Mixed | First-person voice with genuine emotional vocabulary | Check agency attribution — opinion pieces have high legitimate agency |
+| **Litigation reporting** | ⚠️ Mixed (magnitude overshoot) | ⚠️ Mixed | Legal terms of art inflate VADER negative magnitude by ~0.15–0.20; procedural verbs ("alleged," "filed") also misscored | Compare against wire-service baseline on same case. Use expert-source presence as correction signal (expert quotes moderate editorial voice). See legal vocabulary calibration gap above |
 | **Q&A** | ❌ Not applicable | ❌ Not applicable | Format breaks source extraction entirely | Manual annotation. Report framing + agency only |
 
 ### Accuracy by the Numbers
@@ -248,7 +250,7 @@ Detailed accuracy characteristics of each correction path, based on validated ex
 
 ## Appendix B: Empirical Calibration Ledger
 
-> Verified score deltas from the 177-article annotated corpus. Each entry shows the raw VADER score, the corrected score (if correction fired), the manual assessment, and the residual error. Use this to calibrate expectations for each correction path.
+> Verified score deltas from the 183-article annotated corpus. Each entry shows the raw VADER score, the corrected score (if correction fired), the manual assessment, and the residual error. Use this to calibrate expectations for each correction path.
 >
 > **How to read this:** A *positive* residual means the toolkit overestimates positivity vs. manual assessment. A *negative* residual means the toolkit overestimates negativity. Residuals within ±0.15 are acceptable; larger gaps warrant investigation.
 >
@@ -353,8 +355,8 @@ These articles expose gaps where no correction path fires despite clear VADER po
 
 | Metric | Value |
 |---|---|
-| Articles requiring correction | 32 (18%) |
-| Articles with correction that improved accuracy | 30 (94% of corrected) |
+| Articles requiring correction | 33 (18%) |
+| Articles with correction that improved accuracy | 31 (94% of corrected) |
 | Articles with correction that overcorrected | 2 (6% of corrected — Guardian philosopher, 1 other) |
 | Mean absolute residual (corrected articles) | ±0.10 |
 | Mean absolute residual (uncorrected, correct-direction) | ±0.08 |

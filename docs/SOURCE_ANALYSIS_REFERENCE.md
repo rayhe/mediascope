@@ -342,4 +342,4 @@ print(f"Outsourced ratio: {outsourced.outsourced_ratio:.2f}")  # 0.0 to 1.0
 
 ---
 
-*Last updated: 2026-07-11. 14 extraction pattern groups, 10 source types, 4 analysis dimensions. See [METHODOLOGY.md §5–§8](METHODOLOGY.md#5-source-authority-analysis) for the full framework.*
+*Last updated: 2026-07-15. 14 extraction pattern groups, 10 source types, 4 analysis dimensions. See [METHODOLOGY.md §5–§8](METHODOLOGY.md#5-source-authority-analysis) for the full framework.*
