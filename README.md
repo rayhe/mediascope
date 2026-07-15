@@ -48,11 +48,11 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Emotional language terms | 1022 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 32 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 12 | Paths A–L, each addressing a specific VADER failure mode |
-| Annotated articles | 182 | Full manual analysis in `examples/sample_output/` |
+| Annotated articles | 183 | Full manual analysis in `examples/sample_output/` |
 | Journalists tracked | 234 | Career data with source URLs |
 | Career-entry migrations | 927 | Across 429+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 2,671 | Across 120 test files |
+| Tests | 2,689 | Across 121 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -462,7 +462,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **2671 tests** across 120 test files, each covering a different analytical capability:
+MediaScope has **2689 tests** across 121 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -574,6 +574,7 @@ MediaScope has **2671 tests** across 120 test files, each covering a different a
 | `test_reuters_australia_esafety_child_safety_jul14.py` | 24 | Reuters Australia eSafety child safety Jul 14: iMessage → Apple cluster (new alias), Google Messages → Google cluster (new alias), Discord cluster (new), Julie Inman Grant → Australia cluster (new alias), multi-entity distribution (7+ clusters, Australia primary), framing: no_comment_implication, regulatory_shadow, scale_magnitude, catastrophizing |
 | `test_reuters_meta_ai_layoff_discrimination_jul14.py` | 16 | Reuters Meta AI layoff discrimination Jul 14: District of Columbia entity resolution (not Columbia University), legal-context loaded_language suppression (violating/retaliation as legal terms of art), legal-context absence_as_evidence suppression (plaintiff allegation vs journalistic framing), standalone "slashed" loaded_language verb |
 | `test_foxbusiness_meta_ai_layoff_discrimination_jul14.py` | 9 | Fox Business Meta AI layoff discrimination Jul 14: publication self-reference source extraction ("told Fox Business" is not a source), legal-context emotional_appeal suppression ("disability" as ADA legal descriptor), editorial_cross_promotion detection for embedded all-caps links, same-event comparison with Reuters version |
+| `test_wsj_meta_ai_layoff_discrimination_jul14.py` | 18 | WSJ Meta AI layoff discrimination Jul 14: independent expert source extraction (Prof. Jeffrey M. Hirsch, UNC — is_expert=true with affiliation), corporate spokesperson extraction, lawsuit-as-documentary source, litigation_framing and timeline_implication detection, entity clustering (Zuckerberg→Meta), source diversity validation (expert + corporate + documentary), same-event comparison with Fox Business and Reuters |
 | `test_reuters_iris_chip_jul9.py` | 20 | Reuters Meta Iris chip production Jul 9: Sumitomo Electric entity cluster (new), inverted analyst attribution ("Morgan Stanley analysts said"), compound no-comment subject extraction ("Samsung Electronics and Sumitomo Electric did not respond"), "floundered" passive framing term, ai_development + corporate_strategy topic classification |
 | `test_reuters_muse_spark_11_jul9.py` | 23 | Reuters Muse Spark 1.1 developer preview Jul 9: pathologizing_metaphor "intervention" false positive suppression (neutral technical context — "less human intervention", "without intervention", "minimal/no/reduced intervention"), pricing comparison phrases in NEGATIVE_COMPARISON/POSITIVE_COMPARISON ("above openai", "below anthropic", "priced above/below", "cheaper than", "undercuts"), loaded_language competitive dramatization ("heated competition/race", "AI supremacy", "tech arms race"), competitive_positioning "pitting...against" and "close/narrow the gap" |
 | `test_recovery_narrative.py` | 10 | Recovery narrative framing device (#94): three-beat decline→catalyst→recovery structure in financial articles, bidirectional competitive_positioning (positive parity variant), confidence scoring, negative guards for neutral wire articles and decline-only articles; discovered from MarketWatch Meta stock rebound article (Jul 10, 2026) |

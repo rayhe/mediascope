@@ -1,4 +1,62 @@
 # MediaScope Iteration Log
+## 2026-07-14 21:00 PT — Type A: Article Deep Dive (WSJ — Meta AI Layoff Discrimination)
+
+**Commit:** `pending`
+
+### Summary
+Deep dive on WSJ article "Meta Workers Accuse It of Using AI to Conduct Discriminatory Layoffs" by Chip Cutter and Meghan Bobrowsky (July 14, 2026). Coverage of Oakland federal court filing by 26 Meta employees alleging AI-assisted layoff discrimination. Same-event cluster with Reuters, Fox Business, NY Post, USA Today, and Daily Caller.
+
+### Article Analysis
+- **Toolkit tone:** -0.5575 (VADER overshoot)
+- **Manual tone:** -0.35 (moderately negative, appropriate for litigation reporting)
+- **Gap:** -0.2075 systematic overshoot — legal vocabulary ("discriminatory," "retaliation," "wrongful termination") scored as emotionally negative when they are neutral legal terms of art
+- **Topics:** layoffs, workplace_culture, litigation
+- **Entities:** Meta (9×), Mark Zuckerberg, WSJ
+- **Sources:** 3 types — expert (Hirsch, employment attorney), corporate (Meta spokesman), documentary (lawsuit filing)
+
+### Toolkit Gaps Identified
+
+1. **`surveillance_enumeration`** (proposed device #103): 3+ comma-separated monitoring terms in one clause — missed across entire lawsuit cluster. Example: "tracking employees' locations, monitoring badge swipes, scrutinizing internal messages"
+2. **`emotional_humanization`** (proposed device #104): specific personal detail + temporal proximity to harm — "two days before giving birth." High emotional impact, not captured by existing taxonomy
+3. **Legal vocabulary calibration**: legal terms of art systematically scored as emotionally negative, causing -0.15 to -0.20 overshoot in litigation articles. Affects all lawsuit coverage
+4. **Expert presence discount**: articles with independent expert sourcing should receive sentiment-toward-neutral correction (expert quotes moderate editorial voice)
+5. **Headline loaded language**: "Discriminatory" in headline not detected as loaded language by toolkit
+
+### Same-Event Comparison
+| Publication | Tone | Frame | Notable |
+|------------|------|-------|---------|
+| WSJ | Measured/procedural | Legal filing + expert analysis | Most balanced — Hirsch expert source adds objectivity |
+| Reuters | Wire-neutral | Factual summary | Shortest, most neutral |
+| Fox Business | Conservative editorial | Anti-corporate-DEI angle | Amplifies political dimension |
+| NY Post | Tabloid aggressive | Sensational framing | Strongest loaded language |
+
+### Files Added
+- `examples/sample_output/wsj_meta_ai_layoff_discrimination_2026_07_14_article.txt` — full article text
+- `examples/sample_output/wsj_meta_ai_layoff_discrimination_2026_07_14_analysis.md` — 16,600-byte manual analysis
+- `tests/test_wsj_meta_ai_layoff_discrimination_jul14.py` — 18 tests across 7 test classes
+
+### Docs Updated
+- README.md: annotated articles 182→183, tests 2,671→2,689, test files 120→121
+- ARCHITECTURE.md: test file listing and counts updated
+- ACCURACY_GUIDE.md, METHODOLOGY.md, QUALITY_STANDARDS.md: annotated article count 182→183
+
+### Verification
+- `python3 -m pytest tests/test_structural_consistency.py -q` → ✅ 124 passed
+- `python3 -m pytest tests/test_wsj_meta_ai_layoff_discrimination_jul14.py -q` → ✅ 18 passed
+- `python3 scripts/count_stats.py --check` → ✅ stats current
+
+### Stats After This Iteration
+- Annotated articles: 183
+- Tests: 2,689 (121 files)
+- Journalists: 234
+- Career-entry migrations: 927
+- Distinct publications: 429
+- Emotional language terms: 1,022
+- Framing device types: 102
+- Compiled patterns: 694
+
+---
+
 ## 2026-07-14 19:00 PT — Type D: Toolkit Quality & Documentation
 
 **Commit:** `025ed0e` — "Type D: Document forced-retreat override, fix README stats (180→181), update accuracy numbers"

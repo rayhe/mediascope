@@ -454,8 +454,8 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
-│   └── sample_output/       # 182 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2671 tests across 120 test files (all from real articles)
+│   └── sample_output/       # 183 annotated real-article analyses (see METHODOLOGY.md §17)
+├── tests/                       # 2689 tests across 121 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -565,6 +565,7 @@ mediascope/
 │   ├── test_reuters_australia_esafety_child_safety_jul14.py # Reuters Australia eSafety child safety Jul 14: iMessage → Apple cluster (new alias), Google Messages → Google cluster (new alias), Discord cluster (new), Julie Inman Grant → Australia cluster (new alias), multi-entity distribution (7+ clusters, Australia primary), framing: no_comment_implication, regulatory_shadow, scale_magnitude, catastrophizing
 │   ├── test_reuters_meta_ai_layoff_discrimination_jul14.py # Reuters Meta AI layoff discrimination Jul 14: District of Columbia entity resolution (not Columbia University), legal-context loaded_language suppression (violating/retaliation as legal terms of art), legal-context absence_as_evidence suppression (plaintiff allegation vs journalistic framing), standalone "slashed" loaded_language verb
 │   ├── test_foxbusiness_meta_ai_layoff_discrimination_jul14.py # Fox Business Meta AI layoff discrimination Jul 14: publication self-reference source extraction ("told Fox Business"), legal-context emotional_appeal suppression ("disability" as ADA descriptor), editorial_cross_promotion for embedded all-caps links
+│   ├── test_wsj_meta_ai_layoff_discrimination_jul14.py # WSJ Meta AI layoff discrimination Jul 14: independent expert source extraction (Prof. Hirsch, UNC), corporate spokesperson, lawsuit-as-documentary source, litigation_framing, timeline_implication, entity clustering, source diversity
 │   ├── test_reuters_iris_chip_jul9.py # Reuters Meta Iris chip production Jul 9: Sumitomo Electric entity cluster (new), inverted analyst attribution ("Morgan Stanley analysts said"), compound no-comment subject extraction ("Samsung Electronics and Sumitomo Electric did not respond"), "floundered" passive framing term, ai_development + corporate_strategy topic classification
 │   ├── test_reuters_muse_spark_11_jul9.py # Reuters Muse Spark 1.1 developer preview Jul 9: pathologizing_metaphor "intervention" false positive suppression (neutral technical context — "less human intervention", "without intervention"), pricing comparison phrases in NEGATIVE_COMPARISON/POSITIVE_COMPARISON ("above openai", "below anthropic", "priced above/below", "cheaper than", "undercuts"), loaded_language competitive dramatization ("heated competition", "AI supremacy", "tech arms race"), competitive_positioning "pitting...against" and "close/narrow the gap"
 │   ├── test_recovery_narrative.py # Recovery narrative framing device (#94): three-beat decline→catalyst→recovery structure in financial articles, bidirectional competitive_positioning (positive parity variant), confidence scoring, negative guards for neutral wire articles and decline-only articles; discovered from MarketWatch Meta stock rebound article (Jul 10, 2026)
