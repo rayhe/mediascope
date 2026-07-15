@@ -1,4 +1,112 @@
 # MediaScope Iteration Log
+## 2026-07-14 19:00 PT — Type D: Toolkit Quality & Documentation
+
+**Commit:** `025ed0e` — "Type D: Document forced-retreat override, fix README stats (180→181), update accuracy numbers"
+
+### Summary
+Focused Type D on documenting the forced-retreat override added Jul 14 — a significant correction behavior that was implemented in code (sentiment.py) but missing from all reference guides. Also fixed stale README stats.
+
+### Gap Identified
+The forced-retreat override modifies Path A's firing conditions for "corporate capitulation" narratives (e.g., NY Post "Meta yanks controversial AI image tool"). These articles have positive grammatical agency (the subject *yanked*, *scrapped*, *reversed*) but negative editorial valence (the company was *humiliated* into backing down). Without the override, Path A's `agency < -0.3` threshold blocks the correction, leaving VADER's false-positive score uncorrected.
+
+The override was:
+- Implemented in `sentiment.py` lines 1688–1721 with inline comments
+- Validated in `examples/sample_output/nypost_meta_muse_image_yanks_2026_07_13_analysis.md`
+- But NOT documented in SENTIMENT_CORRECTION_REFERENCE.md, ACCURACY_GUIDE.md, or FRAMING_REFERENCE.md
+
+### Documentation Updates
+
+#### 1. SENTIMENT_CORRECTION_REFERENCE.md (+35 lines)
+- New section: **"Path A Variant: Forced-Retreat Override (Jul 14, 2026)"** between Path A and Path B
+- Documents: conditions (`policy_reversal >= 1 AND (consent_alarm >= 2 OR loaded_language >= 5)`), formula (EI replaces agency as base, dampened by 0.5×), rationale for dampening (capitulation is moderately negative, not investigative-level), complementary capitulation verb fix, and validation table
+
+#### 2. ACCURACY_GUIDE.md (+5 lines, -5 lines)
+- Updated accuracy-by-numbers: 32→33 corrected articles, 20→21 polarity inversions, Path A now 14/33 (42%)
+- Added **Tabloid/capitulation** genre row (NY Post, The Tab, Inc) with accuracy characteristics
+- Updated Procedural service journalism workaround to cross-reference new override
+
+#### 3. FRAMING_REFERENCE.md (+1 line)
+- Added correction pipeline role note to `policy_reversal` device (#52): co-occurrence with `consent_alarm`/`loaded_language` triggers forced-retreat override
+
+#### 4. README.md (+2 lines)
+- Fixed annotated articles 180→181 (verified by `count_stats.py --check`)
+- Added feature #18: Forced-retreat override description
+
+### Verification
+- `python3 scripts/count_stats.py --check` → ✅ README stats are current
+- `python3 -m pytest tests/ -q` → ✅ 2,656 passed in 193s
+- Pushed to GitHub via HTTPS proxy
+
+### Stats After This Iteration
+- Journalists: 234
+- Career-entry migrations: 927
+- Distinct publications: 429
+- Annotated articles: 181
+- Emotional language terms: 1,022
+- Framing device types: 102
+- Compiled patterns: 691
+- Tests: 2,656 (119 files)
+- Docs updated: SENTIMENT_CORRECTION_REFERENCE.md, ACCURACY_GUIDE.md, FRAMING_REFERENCE.md, README.md
+
+---
+
+## 2026-07-14 18:00 PT — Type C: Ownership & Funding Deep Dive (The Verge / PMC)
+
+**Commit:** `778f90a` — "Type C: Verge profile — Lupa deal closed Jul 8, German ZAK ruling Jul 14, stock updates (CHTR/PAG/SEAT)"
+
+### Summary
+Focused Type C on The Verge profile (thinnest at 1,320 lines pre-edit, now 1,381). Three material updates: Lupa Systems deal completion timeline, new German regulatory ruling directly supporting PMC v. Google litigation position, and portfolio stock refreshes.
+
+### Updates
+
+#### 1. Lupa Systems Deal Completed (July 8, 2026)
+- **Official close confirmed** via PR Newswire press release (Jul 8). Deal announced May 20, closed exactly within the 4-6 week estimate.
+- Jim Bankoff serves as CEO of new Vox Media subsidiary under Lupa. James Murdoch: "We look forward to providing the magazine, podcast network, and Vox with the resources and partnership they need to do their best work yet."
+- Added **separation timeline** to ownership chain showing the complete three-phase breakup:
+  - May 20: Lupa/Murdoch deal announced (~$300M+)
+  - June 18: PMC acquires remaining brands → PMX subsidiary
+  - July 8: Lupa deal closes, organizations fully separated
+- **Analytical note:** Jim Bankoff (co-founder, CEO since early days) went with Lupa. Ryan Pauley went with PMC. The Verge's founding editorial DNA (Bankoff's stewardship) now resides at a different company than The Verge itself.
+
+#### 2. German ZAK Media Regulator Ruling (July 14, 2026 — TODAY)
+- **Commission for Licensing and Supervision (ZAK)**, representing Germany's 14 state media authorities, declared Google AI Overviews and Perplexity AI subject to German media law.
+- Key findings: AI-generated summaries = content created by the provider (not third-party display); DSA liability exemption does NOT apply; AI Overviews "unfairly disadvantage third-party media content."
+- ZAK Chairman Schmiege: "AI search engines and chatbots are content providers."
+- Google will appeal: "fails to recognise how people's preferences... are changing."
+- **PMC litigation significance:** This is the THIRD European legal/regulatory action treating AI Overviews as provider-created content (after Munich court ~Jun 13, CJEU Android antitrust Jul 2). Each undermines Google's defense in PMC v. Google (D.D.C., 1:25-cv-03192-APM) that AI Overviews are "part of search" and content is "non-rivalrous."
+- Source: Reuters Jul 14, 2026.
+
+#### 3. Stock Updates (Jul 14 close/intraday)
+- **PAG (Penske Automotive):** $193.55 (market cap ~$12.7B). Reached $197.69 on Jul 10 (new 52W high), pulled back slightly. Penske family wealth up +38% from 52W low of $140.12. Q2 earnings Jul 29. Updated Simply Wall St fair value to $206.
+- **CHTR (Charter):** $127.91 (down -2.63% today). Approaching 52W low of $124.05 more closely than ever. Q2 earnings Jul 24. Advance portfolio stress deepening.
+- **WBD (Warner Bros Discovery):** $27.48 (+1.44%). Near 52W high of $30. Market cap ~$64.5-68.9B. 12-AG antitrust lawsuit filed Jul 13 to block Paramount merger — market unperturbed.
+- **RDDT (Reddit):** $201-203 range. Market cap ~$37.6-38.7B. Advance's dominant equity holding.
+- **SEAT (Vivid Seats):** $7.97 (+14.9% from Jul 10). Analyst consensus shifted to "Hold" (2 Sell, 5 Hold, 2 Buy). Still -80.7% from 52W high. Updated in Verge profile's Eldridge cross-holdings section.
+
+### Profile Impact
+- The Verge profile: 1,320 → 1,381 lines (+61)
+- New litigation connection added: `related_german_zak_ai_overviews_media_law`
+- Lupa deal separation timeline formalized with all 3 phases
+
+### Source URLs
+- https://prnewswire.com/... (Lupa Systems completion PR, Jul 8, 2026)
+- https://www.reuters.com/legal/government/german-media-regulator-says-googles-ai-overviews-subject-german-media-law-2026-07-14/ (ZAK ruling)
+- https://en.wikipedia.org/wiki/Vox_Media (deal timeline)
+- Finnhub, Robinhood, MarketBeat, StockTitan (stock data)
+
+### Stats After This Iteration
+- Journalists: 234
+- Career-entry migrations: 927
+- Distinct publications: 429
+- Annotated articles: 181
+- Emotional language terms: 1,022
+- Framing device types: 102
+- Compiled patterns: 630
+- Tests: 2,656 (119 files)
+- Profile sizes: the-verge.yaml 1,381 lines (+61)
+
+---
+
 ## 2026-07-14 17:00 PT — Type B: Journalist/Publication Research
 
 **New profiles (3):**
