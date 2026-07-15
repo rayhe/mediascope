@@ -374,8 +374,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 97, (
-            f"Expected 97 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 99, (
+            f"Expected 99 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -544,6 +544,10 @@ class TestFramingDeviceRegistry:
             "surveillance_creep",
             # Market flooding — aggressive distribution framing
             "market_flooding",
+            # Humanization — emotionally resonant personal biographical detail
+            "humanization",
+            # Surveillance enumeration — multi-item monitoring tech/data lists
+            "surveillance_enumeration",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual

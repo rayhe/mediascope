@@ -332,6 +332,22 @@ _EMOTIONAL_APPEAL_PATTERNS: list[re.Pattern] = [
         r"(?:tumbleweeds?|crickets?))\b",
         re.IGNORECASE,
     ),
+    # Censored profanity — asterisk-censored or character-substituted
+    # profanity in article text or quotes, signaling high emotional
+    # intensity. Common in celebrity quotes and user reactions.
+    # Discovered in Gizmodo celebrity backlash article (Jul 14, 2026):
+    #   "f*ck the glasses"  "talking a whole lot of sh*t"
+    re.compile(
+        r"\b(?:f[\*\#\$@!_]ck(?:ed|ing|s)?|"
+        r"sh[\*\#\$@!_]t(?:ty|s)?|"
+        r"bull[\*\#\$@!_]{0,2}t|"
+        r"a[\*\#\$@!_]{2}hole|"
+        r"d[\*\#\$@!_]mn(?:ed)?|"
+        r"[\*\#\$@!]{3,}|"
+        r"f[-–—]bomb|"
+        r"f-word|s-word)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _STRAW_MAN_PATTERNS: list[re.Pattern] = [
@@ -9253,6 +9269,155 @@ _MARKET_FLOODING_PATTERNS: list[re.Pattern] = [
 ]
 _DEVICE_PATTERNS["market_flooding"] = _MARKET_FLOODING_PATTERNS
 
+# -----------------------------------------------------------------------
+# humanization — emotionally resonant personal details that create
+# identification between the reader and an affected individual.
+# These are specific biographical facts (pregnancy, age, family status,
+# timing of harm) placed near descriptions of institutional action to
+# amplify emotional impact.  Distinct from emotional_appeal (which uses
+# charged vocabulary) and loss_leader_framing (which focuses on
+# financial losses): humanization uses specific personal narrative
+# details to make systemic harm feel individual and visceral.
+#
+# Discovered in WSJ Meta AI layoff discrimination article (Jul 14, 2026):
+#   "told she was being laid off two days before giving birth"
+#   "one plaintiff was on preapproved pregnancy leave"
+# Also seen in Reuters meta scam ads article (Jul 13, 2026):
+#   "lost $715,000 — nearly all of their retirement savings"
+# -----------------------------------------------------------------------
+_HUMANIZATION_PATTERNS: list[re.Pattern] = [
+    # Timing of harm relative to life events:
+    # "X days/weeks before giving birth / her wedding / his surgery"
+    re.compile(
+        r"\b(?:days?|weeks?|hours?|moments?)\s+"
+        r"(?:before|after|prior to|following)\s+"
+        r"(?:giving birth|her (?:due date|delivery|wedding|surgery|"
+        r"cancer treatment|funeral|graduation)|"
+        r"his (?:wedding|surgery|cancer treatment|funeral|graduation)|"
+        r"their (?:wedding|surgery|cancer treatment|funeral|graduation)|"
+        r"the (?:birth|funeral|wedding|surgery|diagnosis))\b",
+        re.IGNORECASE,
+    ),
+    # Personal financial devastation with narrative context:
+    # "lost $X — nearly all of their savings/retirement"
+    re.compile(
+        r"\b(?:los(?:t|ing)|wiped? out|drained?)\s+"
+        r".{0,40}?"
+        r"(?:nearly|almost|virtually|practically)\s+"
+        r"(?:all|everything|their entire)\s+"
+        r"(?:of their|of his|of her)?\s*"
+        r"(?:savings?|retirement|nest egg|life savings?|"
+        r"inheritance|pension)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Pregnancy/birth context near layoff/firing/harm:
+    # "on pregnancy/maternity leave ... laid off/fired/terminated"
+    re.compile(
+        r"\b(?:pregnan(?:t|cy)|maternity|giving birth|expecting a "
+        r"(?:baby|child)|newborn|new mother|due date)\b"
+        r".{0,120}?"
+        r"\b(?:laid off|fired|terminated|eliminated|let go|"
+        r"cut|dismissed|separated|axed)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Age-specific vulnerability near harm:
+    # "82-year-old retiree ... lost/scammed/defrauded"
+    re.compile(
+        r"\b\d{2}[- ]year[- ]old\s+"
+        r"(?:retiree|grandmother|grandfather|veteran|widow|widower|"
+        r"mother|father|teacher|nurse)\b"
+        r".{0,100}?"
+        r"\b(?:lost|scammed|defrauded|victims?|duped|tricked|"
+        r"deceived|exploited|harmed)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Named individual with specific disability/condition near harm:
+    # "who has/had [condition] ... was laid off/denied"
+    re.compile(
+        r"\bwho\s+(?:has|had|suffers? from|lives? with|was diagnosed with)\s+"
+        r"(?:a\s+)?(?:disabilit(?:y|ies)|cancer|diabetes|PTSD|epilepsy|"
+        r"multiple sclerosis|cerebral palsy|autism|chronic\s+\w+)\b"
+        r".{0,100}?"
+        r"\b(?:laid off|fired|terminated|denied|rejected|cut|"
+        r"dismissed|eliminated)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+_DEVICE_PATTERNS["humanization"] = _HUMANIZATION_PATTERNS
+
+# -----------------------------------------------------------------------
+# surveillance_enumeration — multi-item comma-separated lists of
+# monitoring technologies, data types, or scoring inputs that
+# collectively amplify the sense of invasiveness through accumulation.
+# This is a structural framing device: the length of the list itself
+# is the rhetorical move, creating a sense of total information capture.
+# Distinct from surveillance_creep (which emphasizes ambient/always-on
+# nature) and loaded_language (individual pejorative words):
+# surveillance_enumeration uses list structure to imply comprehensive
+# monitoring.
+#
+# Discovered in WSJ/Reuters/FoxBusiness Meta AI layoff discrimination
+# cluster (Jul 14, 2026):
+#   "performance ratings, calibration scores, productivity and output
+#    metrics, 'AI-native' ratings, and AI-token consumption"
+#   "keystroke and activity-monitoring data, AI token-usage dashboards
+#    and algorithmically assisted performance rankings"
+# -----------------------------------------------------------------------
+_SURVEILLANCE_ENUMERATION_PATTERNS: list[re.Pattern] = [
+    # 3+ comma-separated monitoring/data terms:
+    # "keystrokes, screen content, emails and browser history"
+    re.compile(
+        r"\b(?:keystroke|screen\s+(?:content|activity|time)|"
+        r"email|browser\s+history|browsing|chat\s+logs?|"
+        r"messages?|communications?|documents?|"
+        r"click(?:s|stream)?|mouse\s+movement|login|"
+        r"badge\s+swipe|location|GPS|webcam|microphone|"
+        r"activity[- ]monitoring|"
+        r"search(?:es|\s+history)?|typing)"
+        r"\b(?:\s+(?:data|logs?|records?|history|patterns?))?"
+        r"(?:\s*,\s*(?:\band\s+)?"
+        r"(?:keystroke|screen\s+(?:content|activity|time)|"
+        r"email|browser\s+history|browsing|chat\s+logs?|"
+        r"messages?|communications?|documents?|"
+        r"click(?:s|stream)?|mouse\s+movement|login|"
+        r"badge\s+swipe|location|GPS|webcam|microphone|"
+        r"activity[- ]monitoring|"
+        r"search(?:es|\s+history)?|typing)"
+        r"\b(?:\s+(?:data|logs?|records?|history|patterns?))?){2,}",
+        re.IGNORECASE,
+    ),
+    # Performance metric accumulation lists:
+    # "ratings, scores, metrics, rankings, and consumption"
+    re.compile(
+        r"\b(?:performance\s+)?(?:rating|score|metric|ranking|"
+        r"evaluat(?:ion|ing)|assessment|calibration|review|"
+        r"productivity|output|token\s+(?:usage|consumption)|"
+        r"AI[- ](?:native|usage|token)|"
+        r"efficiency|throughput|utilization)"
+        r"(?:s)?"
+        r"(?:\s*,\s*(?:\band\s+)?"
+        r"(?:(?:performance\s+)?(?:rating|score|metric|ranking|"
+        r"evaluat(?:ion|ing)|assessment|calibration|review|"
+        r"productivity|output|token\s+(?:usage|consumption)|"
+        r"AI[- ](?:native|usage|token)|"
+        r"efficiency|throughput|utilization)"
+        r"(?:s)?"
+        r")){2,}",
+        re.IGNORECASE,
+    ),
+    # Tool/system enumeration in monitoring context:
+    # "[tool], [tool], and [tool] ... to score/rank/track"
+    re.compile(
+        r"(?:used|relied on|deployed|employed|utiliz(?:ed|ing)|"
+        r"leverag(?:ed|ing)|included?)\s+"
+        r".{0,200}?"
+        r"(?:to\s+(?:score|rank|monitor|track|evaluate|assess|select|"
+        r"identify|determine|flag|target))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+_DEVICE_PATTERNS["surveillance_enumeration"] = _SURVEILLANCE_ENUMERATION_PATTERNS
+
 
 def detect_framing_devices(
     text: str,
@@ -9260,8 +9425,8 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 97 pattern-matched device types plus 7 structural
-    post-pass types (104 total).
+    Scans for 99 pattern-matched device types plus 7 structural
+    post-pass types (106 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
@@ -9289,7 +9454,7 @@ def detect_framing_devices(
     geopolitical_regulatory_pressure, grudging_concession,
     guilt_by_association,
     heritage_nostalgia, historical_legitimation,
-    hypocrisy_frame, industry_normalization_undercut,
+    humanization, hypocrisy_frame, industry_normalization_undercut,
     investor_advisory, ironic_quotation, isolation_framing,
     juxtaposition, latecomer_narrative, litigation_cascade,
     litigation_framing,
@@ -9309,7 +9474,7 @@ def detect_framing_devices(
     self_referential_investigation,
     silence_as_guilt, slippery_slope, sovereignty_framing,
     strategic_disclosure, strategic_reversal, straw_man,
-    surveillance_creep,
+    surveillance_creep, surveillance_enumeration,
     talent_hemorrhage, taxonomy_framing, timeline_implication,
     two_tier_treatment, ultimatum_framing,
     usage_dismissal_undercut, valuation_comparison,

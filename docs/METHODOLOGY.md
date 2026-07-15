@@ -185,7 +185,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 104 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (87 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 106 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (89 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -296,6 +296,8 @@ These were added through systematic analysis of real articles from the five trac
 | **Editorial Character Attack** | Journalist inserts their own characterization of a named person's reputation or moral standing as established fact, rather than attributing the claim to a source. Distinct from loaded_language (which targets individual words) and guilt_by_association (which links subject to a separate bad actor). Editorial character attack is the journalist themselves making the moral judgment in their editorial voice | "best known for unethical/illegal/deceptive"; "he's/she's the guy for that"; "has a long/well-documented/terrible history/track record of exploiting/violating/abusing" | Kotaku Meta Muse Image removed (Jul 11, 2026) — "Mark Zuckerberg is best known for unethical use of user data, he's the guy for that" — journalist's own character judgment stated as established fact, not attributed to any source |
 | **Surveillance Creep** | Frames ambient always-on recording, continuous capture, or incremental expansion of monitoring scope as normalizing total information awareness. Distinct from consent_alarm (which targets enrollment/opt-out) and default_burden_privacy (which targets settings burden). Surveillance creep targets the framing of the recording act itself | "constantly capture audio and visuals without notifying"; "record a user throughout the day"; "AI is listening"; "ambient recording"; "capture without notifying" | WSJ Meta smartglasses privacy (Jul 14, 2026) — "constantly capture audio and visuals of the world around them, with some glasses able to record a user throughout the day" — framing continuous capture as defining characteristic |
 | **Market Flooding** | Casts volume, speed, or scale of product distribution as aggressive or overwhelming through metaphors of flooding, saturation, or inundation. Distinct from scale_magnitude (which amplifies numerical values) and competitive_positioning (which elevates competitors). Market flooding targets the distribution strategy framing itself | "flooding the market"; "flood of devices"; "market saturation"; "into the hands of as many people as possible" | WSJ Meta smartglasses privacy (Jul 14, 2026) — headline "Meta Is Flooding the Market With Smartglasses" — uses flooding metaphor to frame distribution ambition as overwhelming force |
+| **Humanization** | Emotionally resonant personal details that create sympathy for affected individuals and implicitly indict the entity responsible. Uses specific narrative elements (timing of harm near life events, personal financial devastation, pregnancy near workplace action, age-specific vulnerability, disability context) to move the reader from policy abstraction to personal identification with the victim. Distinct from emotional_appeal (which uses loaded individual words) and anecdotal_evidence (which uses a personal story to represent a trend). Humanization operates through the strategic placement of intimate biographical detail | "laid off [timeframe] before/after [life event]"; "[entity] lost [financial amount]"; "pregnant when [company action]"; "[age] years old when [harm]"; "despite [disability/condition]" | WSJ Meta AI layoffs article (Jul 14, 2026) — "laid off two days before giving birth" — timing-of-harm detail creates maximum emotional resonance by juxtaposing corporate action with personal vulnerability |
+| **Surveillance Enumeration** | Multi-item comma-separated or semicolon-separated lists of monitoring technologies, data types, or performance metrics that amplify perceived invasiveness through sheer accumulation. The length and specificity of the list itself is the editorial device — even if each item is factually accurate, the enumeration structure frames the subject as comprehensively surveilled. Distinct from surveillance_creep (which targets the framing of the recording act itself) and loaded_language (individual word-level bias) | "track [item], [item], [item], and [item]"; "monitors [metric], [metric], [metric]"; "collecting [data type], [data type], [data type]" | WSJ Meta AI layoffs article (Jul 14, 2026) — enumeration of multiple monitoring technologies and data types in surveillance context creates cumulative impression of pervasive oversight |
 
 #### Structural Devices (Post-Pass)
 
@@ -851,7 +853,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 104-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 106-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1543,7 +1545,7 @@ The EU DSA "Addictive Design" cluster (Jul 10, 2026) is the widest genre-control
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 104 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 106 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|

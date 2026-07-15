@@ -466,7 +466,7 @@ For AI agents that use function calling (OpenAI, Anthropic, etc.), here are the 
 ```json
 {
     "name": "detect_framing_devices",
-    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 104 device types across three tiers: core (10 pattern-matched), extended (87 from real-article analysis), and structural post-pass (7 heuristic-based).",
+    "description": "Detect editorial framing devices in article text. Returns a list of FramingDevice objects with device_type, evidence_text, and character offsets. Detects 106 device types across three tiers: core (10 pattern-matched), extended (89 from real-article analysis), and structural post-pass (7 heuristic-based).",
     "parameters": {
         "type": "object",
         "properties": {
@@ -1279,13 +1279,13 @@ entities = detect_entities(text, clusters=custom_clusters)
 
 **Action:** When the correction seems wrong, report the raw score with a note about the correction firing. Cross-check with source stance: if stance_balance > 0.3 (mostly supportive sources), the corrected score may be too aggressive.
 
-### Problem 5: Two Pattern Count Numbers (635 vs 696)
+### Problem 5: Two Pattern Count Numbers (653 vs compiled regex total)
 
-**Context:** `_DEVICE_PATTERNS` contains 644 patterns organized by device type. The README reports 696 "compiled regex patterns." These count different things:
-- **635:** Patterns in the `_DEVICE_PATTERNS` dispatch dictionary — these are the device-type-specific detection patterns.
-- **696:** All `re.compile()` calls in `framing.py`, including helper patterns (stop-word filters, attribution verb matchers, structural-pass detection regex) that aren't part of any device type.
+**Context:** `_DEVICE_PATTERNS` contains 653 patterns organized by device type. The README reports compiled regex patterns including helpers. These count different things:
+- **653:** Patterns in the `_DEVICE_PATTERNS` dispatch dictionary — these are the device-type-specific detection patterns.
+- **Compiled total:** All `re.compile()` calls in `framing.py`, including helper patterns (stop-word filters, attribution verb matchers, structural-pass detection regex) that aren't part of any device type.
 
-Both numbers are correct. The 644 is the number that matters for device detection coverage; the 696 is the total compiled regex footprint. When adding new framing patterns, only the `_DEVICE_PATTERNS` count (644) is guarded by the test suite.
+Both numbers are correct. The 653 is the number that matters for device detection coverage; the compiled total is the total compiled regex footprint. When adding new framing patterns, only the `_DEVICE_PATTERNS` count (653) is guarded by the test suite.
 
 ### Problem 6: Cross-Publication Comparison Shows Large Gap
 

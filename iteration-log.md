@@ -23228,3 +23228,35 @@ Analyzed WSJ coverage of Meta's smartglasses push and privacy backlash. Moderate
 - All tests passing, zero regressions
 
 ---
+
+## 2026-07-15T05:00 — Type A: Article Deep Dive (WSJ Meta AI Layoffs + Gizmodo Celebrity Backlash)
+
+**Focus:** Gap analysis of WSJ Meta AI layoff discrimination and Gizmodo celebrity backlash articles; new framing device implementation.
+
+**Articles analyzed:**
+- WSJ "Meta Workers Accuse It of Using AI to Conduct Discriminatory Layoffs" (Jul 14/15, 2026)
+- Gizmodo "Smart Glasses Backlash Is Reaching New Celebrity Heights" (Jul 14, 2026)
+- WSJ "Meta Is Flooding the Market With Smartglasses" (Jul 14, 2026) — prior iteration
+
+**New framing devices (2):**
+1. `humanization` — emotionally resonant personal biographical details creating sympathy (timing-of-harm near life events, financial devastation, pregnancy near layoffs, age-specific vulnerability, disability near termination). 5 regex patterns.
+2. `surveillance_enumeration` — multi-item comma-separated lists of monitoring technologies or performance metrics amplifying perceived invasiveness through sheer accumulation. 3 regex patterns.
+
+**New emotional_appeal pattern (1):**
+3. Censored profanity — detects asterisk/character-censored profanity (f*ck, sh*t, a**hole, bull$#t, d*mn, f-bomb, f-word, s-word). From Gizmodo "f*ck the glasses" Lorde quote.
+
+**Changes:**
+- `framing.py`: +2 device types (humanization, surveillance_enumeration) with 8 patterns, +1 censored profanity emotional_appeal pattern. Docstring updated.
+- `tests/test_humanization_and_surveillance_enumeration.py`: New test file, 15 tests (7 humanization, 4 surveillance_enumeration, 4 censored profanity)
+- `tests/test_structural_consistency.py`: EXPECTED_TOTAL 104→106, EXPECTED_PATTERN_MATCHED 97→99, EXPECTED_TOTAL_PATTERNS 644→653
+- `tests/test_foxbusiness_meta_1_4t_penalty.py`: Device pattern count guard 97→99
+- `tests/test_nyt_ai_reviews.py`: Device pattern count guard 97→99, expected types set +2
+- Docs updated: METHODOLOGY.md (intro tier counts, §4.1 extended device table, §8.1 taxonomy ref, §17.7 provenance count), ARCHITECTURE.md (diagram count, tier counts, device name list, test file tree, test count header), AGENT_GUIDE.md (detect_framing_devices description, Problem 5 pattern counts), README.md (stats table, FRAMING_REFERENCE.md description, test file listing, structural consistency test description), FRAMING_REFERENCE.md (header, tier legend, device table, counts by tier table), cli.py docstring
+
+**Stats after:**
+- Framing device types: 106 (10 core + 89 extended + 7 structural)
+- Pattern-matched types: 99, total patterns in _DEVICE_PATTERNS: 653, total re.compile: 714
+- Tests: 2,745 (+15), test files: 124 (+1)
+- All 2,745 tests passing, zero regressions
+
+---
