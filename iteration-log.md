@@ -1,4 +1,80 @@
 # MediaScope Iteration Log
+## 2026-07-15 13:00 PT — Type C: Ownership & Funding Deep Dive (Condé Nast Union CBA Complete History + Lahut NLRB Update)
+
+**Commit:** `df5015b` — "Type C: Complete CBA contract history + Lahut NLRB update for Wired/Condé Nast labor analysis"
+
+### Focus
+Complete the missing CBA contract history in the Wired profile's labor_union_relations section. The existing profile had extensive Fired Four coverage but no documentation of the actual collective bargaining agreements — their terms, ratification dates, leverage tactics, and analytical significance.
+
+### Work Done
+
+1. **Condé Union First Contract (May 2024)**
+   - Tentative agreement: May 6, 2024 (hours before Met Gala; marathon session ended 3 AM ET)
+   - Ratified by member vote within one week
+   - Key terms: $3.6M total wage increases, $61,500 minimum salary floor, 14 weeks fully paid parental leave (+2), just-cause protections, end to two-tier permalance system, 8 weeks severance for layoffs, layoff moratorium through Jul 31, 2024
+   - Leverage: Met Gala strike deadline — supermajority pledged walkout; union visited Wintour's neighborhood ("Anna wears Prada: workers get nada")
+   - Sources: TheWrap, CWA, NewsGuild, Hypebeast
+
+2. **New Yorker Union Renewal Contract (Oct 2024)**
+   - Tentative agreement: Oct 15, 2024 (11 days before 25th New Yorker Festival)
+   - Key terms: $63,000 salary floor (rising to $64,500 Apr 2026), 12% GWI over 3 years, $1,000 ratification bonus, $2,000 cash bonus for sub-$65K
+   - Leverage: 100% strike authorization vote; support pledge from dozens of staff writers
+   - Source: nyguild.org
+
+3. **New Yorker / Pitchfork / Ars Technica First Contracts (~2021)**
+   - Up to 63% wage increases (New Yorker), 58% (Pitchfork), 35% (Ars Technica)
+   - $60,000 floor by final year, 40-hour week/8-hour day, NDA ban for discrimination/harassment, 50% diversity interview mandate, successorship provisions
+   - Analytical note: Pitchfork subsequently folded into GQ (2024), Ars Technica CBA creates direct Wired comparator
+   - Source: nyguild.org
+
+4. **Lahut NLRB Case Section (NEW)**
+   - Probationary timing: one week shy of probation ending at time of firing
+   - Current status: freelancing + contract breaking news editor at Sherwood News
+   - Key detail: was on MSNBC representing Wired the morning of his firing; Condé Nast pulled him from evening MSNBC appearance
+   - Own words: "I'm prepared to wait months, years if I have to"
+   - Sources: Talking Biz News, FashionUnited
+
+5. **Fired Members Entry Update**
+   - Lahut entry expanded with Sherwood News employment and MSNBC detail
+
+6. **Analytical Significance Expanded**
+   - Pattern: management concessions extracted ONLY under credible strike threats (Met Gala, New Yorker Festival)
+   - Fired Four occurred AFTER CBA ratification — just-cause protections were already in place, giving NLRB charges legal weight
+   - CWA national used "bully union-busting bosses" language about Condé Nast management in Jun 2026 public statement
+   - Labor-management relationship remains adversarial DESPITE ratified contract — confounding variable for editorial posture analysis
+
+### Research Performed
+- `browser_search`: Condé Nast union contract bargaining 2026 (+ alt queries)
+- `browser_search`: Advance Publications Reddit stake SEC filing 13D
+- `browser_open`: TheWrap Condé Nast settlement article (full text)
+- `browser_search`: Condé Nast union CBA ratified first contract terms
+- `browser_search`: Jake Lahut Wired fired NLRB case
+- `browser_search`: Condé Nast layoffs restructuring 2026
+- `browser_search`: Advance Publications Charter Communications stake 2026
+- `browser_search`: Condé Nast AI licensing deal Apple Intelligence 2026
+
+### Verification
+- All 124 structural consistency tests pass (0 regressions)
+- All 21 career tests pass
+- YAML parses cleanly
+
+### Sources
+- TheWrap (thewrap.com): Condé Nast union tentative agreement, Fired Four settlement, HR confrontation video
+- CWA (cwa-union.org): Condé Union contract settlement, vindication statement (Jun 11, 2026)
+- NewsGuild of New York (newsguild.org, nyguild.org): Condé Union CBA details, New Yorker/Pitchfork/Ars Technica first contracts, New Yorker renewal
+- Hypebeast: Met Gala strike threat with terms update
+- HR Executive (hrexecutive.com): Settlement terms with Lahut details
+- Talking Biz News (talkingbiznews.com): Lahut NLRB case details, Sherwood News employment
+- FashionUnited (fashionunited.uk): Settlement terms, Lahut lesser offer declined
+- HR Grapevine (hrgrapevine.com): Fired Four union backlash analysis
+
+### Notes
+- The CBA contract history was a significant gap: the profile documented the Fired Four incident in detail but had zero information about the actual collective bargaining agreements that provide the legal framework for the labor dispute. This is like analyzing a courtroom battle without knowing the laws at issue.
+- The pattern of strike threats keyed to marquee events (Met Gala for Condé Union, New Yorker Festival for TNY) is a distinctive union tactic worth tracking — it's the editorial equivalent of a transit strike on Christmas Eve.
+- Next C iteration could target: (1) Advance 13D/A filings for updated Reddit share counts post-margin loan, (2) CHTR CPUC Aug 13 hearing preview, (3) SRMG Q2 2026 earnings (Aug 12) preview — workforce cut 65%, at 52-week low.
+
+---
+
 ## 2026-07-15 12:00 PT — Type B: Journalist/Publication Research (5 Senior Journalist Enrichments + Education Fix)
 
 **Commit:** `4e65cfb` — "Type B: Enrich 5 senior journalists — source_urls, education, bio notes"
