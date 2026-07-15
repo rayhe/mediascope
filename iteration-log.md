@@ -1,4 +1,62 @@
 # MediaScope Iteration Log
+## 2026-07-15 12:00 PT — Type B: Journalist/Publication Research (5 Senior Journalist Enrichments + Education Fix)
+
+**Commit:** `4e65cfb` — "Type B: Enrich 5 senior journalists — source_urls, education, bio notes"
+
+### Focus
+Deep enrichment of 5 high-priority senior journalists at tracked publications: source_urls, education records, biographical notes, book credits, and awards. Also corrected one incorrect education record.
+
+### Work Done
+
+1. **Cade Metz (NYT)**
+   - Added 4 source_urls: Computer History Museum, Duke English Dept, Talking Biz News, Wikipedia
+   - Enriched notes: Genius Makers book (Random House, 2021), IBM heritage (father developed UPC barcode), Duke honors novella thesis, ASBPE Best Feature Award 2002
+
+2. **Kashmir Hill (NYT)**
+   - Added 4 source_urls: Wikipedia, NYT Co, PEN America, Talking Biz News
+   - **FIXED education:** Was incorrectly listed as Duke University BA → corrected to NYU (Magazine Journalism) per nytco.com hiring announcement. Prior "Duke" attribution had no supporting evidence in cited Wikipedia source.
+   - Enriched notes: Your Face Belongs to Us (Random House, 2023), Royal Society Trivedi shortlist 2024, FT Best Books 2023, Jan 2020 Clearview AI scoop impact
+
+3. **Steven Levy (Wired)**
+   - Added 4 source_urls: Wikipedia, CHM, stevenlevy.com, Simple Wikipedia
+   - **NEW education:** Temple University BA (English) + Penn State MA (Literature). Source: Wikipedia (confirmed by multiple speaker bio sources)
+   - Enriched notes: 8 books (Hackers through Facebook: The Inside Story), wife Teresa Carpenter (Pulitzer winner), SVForum Visionary 2008, Einstein's brain discovery 1978
+
+4. **Nicholas Thompson (Atlantic CEO, ex-Wired EIC)**
+   - Added 4 source_urls: Wikipedia, nickthompson.com, Talking Biz News, WEF
+   - Enriched notes: The Atavist (sold to WordPress 2018), Speakeasy.ai (sold to Amplica Labs), CBS News/CNN contributor, The Running Ground book (2025), American 50K record (men 45+, 2021), Atlantic metrics (2022 NMA, 2nd Pulitzer, Digiday POTY), Wired metrics (300% digital sub growth, Get Wired app, WIRED25)
+
+5. **Alex Hern (Economist, ex-Guardian)**
+   - Added 3 source_urls: Muck Rack, Talking Biz News, Newsworks
+   - Enriched notes: Technology Journalist of the Year 2020 (Apple Siri + TikTok moderation), TechScape newsletter launch, Left Foot Forward origins. No university education confirmed in any public source.
+
+### Key Correction
+Kashmir Hill's education was listed as Duke University with a Wikipedia source_url — but the actual Wikipedia article doesn't mention Duke. The only confirmed education is NYU magazine journalism (per nytco.com hiring announcement). This is a data integrity fix: incorrect source attribution was carried from an earlier ingestion.
+
+### Verification
+- All 145 career/structural consistency tests pass (0 regressions)
+- YAML parses cleanly, all 5 entries validate
+- README education stat updated: 57 → 58
+
+### Sources
+- Computer History Museum (computerhistory.org/profile/cade-metz/)
+- Duke English Department (english.duke.edu/news/cade-metz)
+- NYT Co (nytco.com/press/kashmir-hill-bringing-her-distinct-voice)
+- Wikipedia (en.wikipedia.org: Kashmir Hill, Steven Levy, Nicholas Thompson)
+- PEN America (pen.org/people/kashmir-hill)
+- Talking Biz News (talkingbiznews.com: Metz hire, Hill hire, Thompson/Atlantic, Hern departure)
+- Newsworks (newsworks.org.uk: Alex Hern interview)
+- Muck Rack (muckrack.com/alex-hern)
+- WEF (weforum.org/people/nicholas-thompson)
+- nickthompson.com (personal site / about page)
+
+### Notes
+- 105 journalists still without source_urls (down from 110). Remaining gaps are mostly minor/non-tracked-publication journalists.
+- Alex Hern's lack of publicly confirmed university education is unusual for a UK Technology Editor → Economist AI Writer trajectory. Possibly went straight from political blogging to graduate trainee scheme — the New Statesman "online graduate trainee" role in 2012 may have been his entry point without a degree.
+- Kashmir Hill education fix is analytically significant: the prior Duke BA attribution incorrectly linked her to Cade Metz's alma mater, which would have been flagged as a "same-university pipeline" signal in the DiD migration analysis. The actual NYU journalism program connection is a more common J-school pipeline.
+
+---
+
 ## 2026-07-15 10:00 PT — Type D: Toolkit Quality & Documentation (Cross-Pub Cluster #15 + Stale Count Fixes)
 
 **Commit:** `c170c98` — "Type D: Cross-pub comparison cluster #15 (Meta AI layoff discrimination 3-way) + stale count fixes"
