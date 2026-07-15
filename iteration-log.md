@@ -1,4 +1,92 @@
 # MediaScope Iteration Log
+## 2026-07-14 23:00 PT — Type C: Ownership & Funding Deep Dive (CHTR Approaching Floor + WGA Lawsuit + TRO Hearing)
+
+**Commit:** `9ad4980` — "Type C: CHTR approaching 52W low (BNP target $120 below floor), WGA lawsuit + TRO hearing Fri Jul 18, portfolio snapshot Jul 14 close"
+
+### Summary
+Three-axis Type C update: (1) CHTR accelerating decline with first analyst target below the 52-week low, (2) second independent lawsuit (WGA) to block Paramount-WBD merger, (3) emergency TRO hearing scheduled Friday Jul 18. Updated Advance portfolio snapshot to Jul 14 closing prices.
+
+### Wired/Advance Profile Updates
+
+#### 1. CHTR Deterioration — BNP Paribas Exane Target Below 52W Low
+- **CHTR close Jul 14: $127.91 (-2.63%)**, intraday low $127.78
+- Only **$3.86 above 52-week low of $124.05** — approaching critical support
+- **BNP Paribas Exane cut target to $120 (Jul 14)** — first analyst target BELOW the 52-week low, signaling expectation of further new lows
+- Three separate bearish calls now: BNP $120, Goldman $125 sell (Jul 2), Barclays $130 underweight (Jul 8)
+- YTD: -38.73%, 1-year: -67.99%, 5-year: -81.76%
+- Market cap collapsed to $15.73B (was $16.2B Jul 13, $57B at 52W high)
+- Updated deterioration_note with Jul 14 data, market cap, BNP Paribas Exane downgrade
+- Updated current_value_estimate: ~$2.64B (was ~$2.71B)
+- **Advance portfolio impact:** CHTR decline widening Reddit concentration — Reddit now 61.7% of Advance's public equity (up from 61.1%)
+- Sources: MarketBeat CHTR price history/forecast (Jul 14)
+
+#### 2. WGA Lawsuit Filed (Jul 14)
+- Writers Guild of America (18,000 members) filed **separate antitrust lawsuit** in N.D. Cal.
+- Same court as 12-state AG lawsuit — two independent suits now active
+- WGA alleges combined Paramount-WBD would be **largest employer of film/TV writers**, enabling wage suppression
+- WGA East President Tom Fontana: "will not stand idly by"
+- Paramount rebuttal: pledged 30+ theatrical films/year, argued deal expands writer opportunities
+- **Dual lawsuit dynamics:** Different legal theories (Clayton Act §7 vs antitrust+employment) could compound risk
+- Source: WSJ "Hollywood Writers Sue to Block Paramount-Warner Deal" (Jul 14)
+
+#### 3. TRO Hearing Friday Jul 18
+- U.S. District Judge **P. Casey Pitts** will hear emergency motion from AG Bonta and 12 states
+- Hearing: 10 AM PT / 1 PM ET, Friday Jul 18
+- Paramount must file opposition by **Thursday noon Jul 17**
+- States seeking ruling before July 22 (Paramount's earliest possible close date)
+- If TRO granted: deal closure delayed pending full litigation
+- If denied: Paramount could attempt close as early as Jul 22
+- Source: Bleeding Cool (Jul 14), with hearing details from court filings
+
+#### 4. FCC Chair Brendan Carr Commentary
+- Reportedly questioned antitrust basis for state AG lawsuit
+- Also flagged Disney under "heightened scrutiny"
+- Creates federal-state tension: DOJ cleared deal, FCC chair skeptical of state challenge, but 12 AGs + WGA proceeding
+- Political dimension: all 12 filing AGs are Democrats; Carr is a Trump appointee
+- Source: StockTwits/Fox Business news feed (Jul 14)
+
+#### 5. CA AG Bonta "Blackmail" Escalation
+- Called Paramount's HQ relocation threat "blackmail" on Matthew Belloni's "The Town" podcast
+- Characterized merger as "simply an illegal merger"
+- Cited three specific markets: wide-release theatrical film distribution, blockbuster distribution, cable channel licensing
+- Source: Fox Business (Jul 14)
+
+#### 6. Reuters Breakingviews Analysis
+- Jennifer Saba column: state lawsuit heading for "tragic ending"
+- Argues case centers on theater and cable industries "that are dying no matter what happens"
+- Added MediaScope analytical note: this framing itself is significant — editorial voice shaping perceptions of legal merit
+- Source: Reuters Breakingviews (Jul 14)
+
+#### 7. Portfolio Concentration Updated (Jul 14 close)
+- Reddit: $8.60B (42.2M × $203.72, +1.39%)
+- Charter: $2.64B (20.6M × $127.91, -2.63%)
+- WBD: $2.69B (98M × $27.48, +1.44%)
+- Total: ~$13.93B
+- Reddit concentration: 61.7% (widening as CHTR declines)
+- Net movement: RDDT +$110M offset CHTR -$70M; WBD flat
+
+### New Source URLs Added
+- Fox Business: CA AG "blackmail" characterization
+- Bleeding Cool: TRO hearing details, WGA update
+- WSJ: WGA lawsuit filing
+- Reuters Breakingviews: "tragic ending" analysis
+- Awful Announcing: Full CA lawsuit analysis
+
+### Test Results
+- 124 passed, 0 failed (structural consistency all green)
+- YAML validates cleanly (2,307 lines, +242 from prior)
+
+### Stats After This Iteration
+- Journalists: 239 (unchanged)
+- Career-entry migrations: 937 (unchanged)
+- Distinct publications: 429 (unchanged)
+- Annotated articles: 181 (unchanged)
+- Emotional language terms: 1,022 (unchanged)
+- Framing device types: 102 (unchanged)
+- Profile sizes: wired.yaml 2,307 lines (+242)
+
+---
+
 ## 2026-07-14 22:00 PT — Type B: Journalist/Publication Research (5 New Journalist Profiles)
 
 **Commit:** `c20e09f`
