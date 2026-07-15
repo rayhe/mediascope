@@ -1,4 +1,30 @@
 # MediaScope Iteration Log
+## 2026-07-15 08:00 PT — Type B: Journalist/Publication Research
+
+**Focus:** Structured education fields for journalists missing them.
+
+### Changes
+
+**Journalist education entries added (16 journalists):**
+- Lauren Goode (Northwestern Medill), Lily Hay Newman (Georgetown), Dell Cameron (n/a — self-taught),
+  Aarian Marshall (UC Berkeley), Paresh Dave (Northwestern Medill), Morgan Meaker (Oxford),
+  Amanda Hoover (Columbia), Vittoria Elliott (Columbia), Joel Khalili (Bristol),
+  Kate Conger (Stanford), Ryan Mac (UC San Diego + USC), Sheera Frenkel (UC Berkeley),
+  Mike Isaac (San Francisco State), Cecilia Kang (UC Berkeley), Kashmir Hill (Duke),
+  Emily Chang (Harvard + NYU)
+
+**Stats update:**
+- Journalists with structured education: 57/239 (was 41/239)
+- Updated README.md to reflect 57 education records
+
+**No new journalists added** — all 239 in pipeline have career entries; un-tracked names (Thomas Germain, Tatum Hunter, etc.) are at non-tracked publications.
+
+**Tests:** 145 career/structural consistency tests pass. No regressions.
+
+**Commit:** `bbcc916` — "Type B: Add structured education for 16 key journalists"
+
+---
+
 ## 2026-07-15 06:00 PT — Type A: Article Deep Dive
 
 **Article:** "Facebook Faces a $1 Trillion Backlash. Investors Ignore the Threat at Their Peril." — Adam Levine, Barron's, July 10, 2026

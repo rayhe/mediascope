@@ -338,7 +338,7 @@ advance_investments:
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
     current_value_estimate: >
-      ~$8.49B at $201.18/share (Jul 14, 2026, +0.12%). Reddit market cap ~$37.6B.
+      ~$8.52B at $201.84/share (Jul 15 intraday, -0.70%). Reddit market cap ~$37.6B.
       PRICE TRAJECTORY: +13.69% on Jul 1 (close $197.42, high $201.16 intraday), then
       -1.44% pullback Jul 2 (close $194.67), recovery to $200.67 Jul 6, then
       -0.77% to $199.32 Jul 7, +0.50% to $200.31 Jul 9 close. Jul 10: selloff
@@ -382,12 +382,16 @@ advance_investments:
       NOTE: Reddit Q2 earnings Jul 30 — if Reddit misses consensus, RDDT could gap down given
       2.23 beta and Advance's concentrated position + margin loan. Conversely, continued beats
       could push past $200 resistance.
-      ADVANCE TOTAL PUBLIC EQUITY SNAPSHOT (Jul 14 CLOSE):
-        - Reddit: $8.60B (42.2M shares × $203.72 close, RDDT +1.39% — firmly above $200)
-        - Charter: $2.64B (20.6M shares × $127.91 close, CHTR -2.63% — $3.86 above 52W low $124.05)
-        - WBD: ~$2.69B (98M shares × $27.48 close, +1.44% — still resilient despite dual lawsuits)
-        - Total: ~$13.93B (RDDT gain +$110M offset CHTR loss -$70M; WBD flat)
-        - Reddit concentration: 61.7% of Advance public equity (up from 61.1% Jul 13 — CHTR decline widens)
+      ADVANCE TOTAL PUBLIC EQUITY SNAPSHOT (Jul 15 INTRADAY, ~9:00 AM PT):
+        - Reddit: $8.52B (42.2M shares × $201.84 intraday, RDDT -0.70% — slipping below $203.72 close)
+        - Charter: $2.70B (20.6M shares × $131.15 intraday, CHTR +2.53% — relief bounce from 52W low zone)
+        - WBD: ~$2.67B (98M shares × $27.25 intraday, WBD -0.84% — slight pullback)
+        - Total: ~$13.89B (down ~$40M from Jul 14 $13.93B; CHTR bounce partly offsets RDDT dip)
+        - Reddit concentration: 61.3% of Advance public equity (down from 61.7% Jul 14 as CHTR bounced)
+        - CHTR JUL 15 BOUNCE: +2.53% recovery from $127.91 close (Jul 14). Likely technical bounce
+          after touching within $3.86 of 52W low ($124.05). Still deep in structural decline territory
+          (-67% 1Y). Aggressive CHTR buyback program ($963M in Q1 2026, ~4% of market cap — see
+          buyback_program note below) provides floor support.
         - CATALYSTS: PARAMOUNT TRO HEARING Fri Jul 18 (Judge Pitts, 10am PT). CHTR Q2 Jul 24.
           RDDT Q2 Jul 30. WBD Q2 Aug 6. CHTR CPUC Aug 13.
         - CHTR: BNP Paribas Exane cut target to $120 (Jul 14) — BELOW 52W low of $124.05, most
@@ -561,13 +565,32 @@ advance_investments:
       from 26.3% (2016) to 12.3% (2023) via share repurchases and conversions.
     deterioration_note: >
       CHTR is in steep long-term decline: -67.99% over 1 year, -81.76% over 5 years (as of Jul 14, 2026).
-      Stock down from 52-week high of $413.14 to $127.91 (Jul 14, 2026 close) — a 69.0% drop,
+      Stock down from 52-week high of $413.14 to $127.91 (Jul 14 close) — a 69.0% drop,
       only $3.86 above 52-week low of $124.05. BNP Paribas Exane cut target to $120 (Jul 14) — first
       analyst target BELOW the 52-week low, signaling expectation of further new lows. Wall Street
       consensus rating is "Reduce" (6 sell, 8 hold, 5 buy out of 19 analysts). Q1 2026 earnings
       missed: EPS $9.17 vs consensus $10.01 (missed by $0.84), revenue down 1.0% YoY at $13.60B.
-      Q2 2026 earnings due July 24 (before market open). Market cap now ~$15.73B (was $16.2B Jul 13).
+      Q2 2026 earnings due July 24 (before market open). Market cap now ~$17.71B (Robinhood, Jul 14).
       Charter faces structural headwinds from cord-cutting, fiber overbuilds, and fixed wireless competition.
+      JUL 15 BOUNCE: CHTR +2.53% to $131.15 intraday (Finnhub). Likely a technical bounce off the
+      52W low zone ($124.05) rather than a structural reversal — no positive catalyst identified.
+      Three analysts (BNP $120, Goldman $125, Barclays $130) all targeting AT or BELOW current price.
+    buyback_program: >
+      AGGRESSIVE BUYBACK PROGRAM (Seeking Alpha, Jun 23, 2026): Charter executed $963M in share
+      repurchases in Q1 2026, retiring ~4% of its market cap in a single quarter. Additionally,
+      Charter agreed to repurchase $100M of its own stock MONTHLY from Liberty Broadband until
+      their merger closes. This creates a steady, mechanical bid floor for CHTR shares.
+      ADVANCE IMPLICATION: If buybacks reduce total CHTR shares by ~20% in 2026 (as projected by
+      Seeking Alpha), Advance's 12.3% beneficial ownership stake (20.6M shares per Oct 2023 13D/A)
+      could increase to ~15.4% on a dilution-adjusted basis WITHOUT Advance buying any new shares.
+      This is counterintuitive: Advance's PERCENTAGE stake is rising even as the DOLLAR value collapses.
+      The buyback concentration effect means Advance's voting power and per-share economics improve
+      as Charter shrinks its share count, partially offsetting the price decline's portfolio impact.
+      Combined with the Cox merger (post-close entity rebrands as Cox Communications, largest US
+      broadband provider with 38M+ subscribers), Charter is executing a dual strategy of
+      consolidation (Cox) + concentration (buybacks) to arrest the structural decline.
+      Source: Seeking Alpha (Jun 23, 2026) — "Charter Communications Is A Buy With Big Accelerating
+      Buybacks In 2026."
       COX MERGER PROGRESS (updated Jul 14, 2026): Charter-Cox $34.5B merger in final regulatory
       stretch. >99% stockholder approval obtained. NY PSC approved Mar 20, 2026 ($100M network
       upgrade commitment + replace 500+ outdoor Wi-Fi access points + $3M broadband/shelter
@@ -605,7 +628,7 @@ advance_investments:
       Advance. Despite Charter's 82% 5-year decline, a SpaceX mobile partnership could re-rate the
       stock. Advance's ~$2.75B stake (at $133.54) could see meaningful upside if Charter pivots from
       declining cable to space-enabled mobile connectivity.
-    current_value_estimate: "~$2.64B at $127.91/share (Jul 14 close, -2.63%). Down from $8.7B at 52-week high of $413.14. Only $3.86 above 52-week low of $124.05. BNP Paribas Exane cut PT to $120 (Jul 14) — BELOW 52W low, most bearish call. Goldman $125 sell (Jul 2), Barclays $130 underweight (Jul 8). Consensus 'Reduce' (6 sell, 8 hold, 5 buy). Q2 earnings Jul 24. Cox merger: CPUC Aug 13 target, HSR expires Sep 15."
+    current_value_estimate: "~$2.70B at $131.15/share (Jul 15 intraday, +2.53% bounce). Down from $8.7B at 52-week high of $413.14. Jul 14 close $127.91 was $3.86 above 52W low $124.05. BNP Paribas Exane PT $120 (Jul 14) — BELOW 52W low. Goldman $125 sell (Jul 2), Barclays $130 underweight (Jul 8). Consensus 'Reduce' (6 sell, 8 hold, 5 buy). Q2 earnings Jul 24. Cox merger: CPUC Aug 13 target, HSR expires Sep 15. Buybacks $963M in Q1 + $100M/mo from LBRDA may reduce total shares ~20% in 2026."
     competitive_with: []
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
     spacex_partnership_source_urls:

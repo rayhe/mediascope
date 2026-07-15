@@ -116,7 +116,7 @@ Raw Text
   └── (Optional) LLM score ─────┘          │
                                            ▼
                                  Framing Device Detection
-                                 (106 device types, 655 compiled regex)
+                                 (106 device types, 716 compiled regex)
                                            │
                                            ▼
                                  Active-Negative Agency Check
