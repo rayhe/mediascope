@@ -1,7 +1,7 @@
 # MediaScope Iteration Log
 ## 2026-07-15 01:00 PT — Type A: Article Deep Dive (Gizmodo Smart Glasses Celebrity Backlash)
 
-**Commit:** _(pending)_
+**Commit:** `281614b`
 
 ### Summary
 Analyzed Gizmodo "Smart Glasses Backlash Is Reaching New Celebrity Heights" (Jul 14, 2026). Found 8 framing devices manually vs toolkit's 3 — revealing gaps in `failure_precedent` temporal setup detection and editorial aside patterns. Fixed 2 bugs: (1) Ray-Ban hyphen false-positive in source extraction Pattern 5c, (2) added 2 new `failure_precedent` regex patterns for "tried and failed" temporal narratives. 17 new tests, all passing.
