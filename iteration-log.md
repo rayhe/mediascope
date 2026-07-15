@@ -22568,3 +22568,38 @@ Previous iteration (Type C at 01:00 PT) added `test_accuracy_guide.py` as part o
 - Annotated articles: 178 (+1)
 - Tests: 2,593 (+37 from new test file)
 - Test files: 116 (+1)
+
+## 2026-07-14 16:00 PT — Type B: Journalist/Publication Research (Vittoria Elliott Deep Dive)
+
+**Commit:** `1b49878` — "Type B: Expand Vittoria Elliott profile — 5 career entries, 6 source URLs, deep analytical notes"
+
+### Summary
+Deep-dived Vittoria Elliott, Wired's "platforms and power" senior writer — the beat that most directly overlaps with Meta coverage territory at Wired. Expanded from 3 sparse career entries with no top-level source URLs to 5 richly annotated entries with 6 verified source URLs.
+
+### Career Timeline Reconstructed
+1. **International development** (~2014–2016) — Ghana, Kenya, India startups/social enterprise. Tufts BA International Relations & Psychology (IR Research Scholar). Pre-journalism phase.
+2. **Columbia Journalism School** (~2016–2017) — MS Journalism. ProPublica's inaugural Electionland project (2016 election monitoring). Early disinformation exposure.
+3. **Freelance** (2017–2020) — 15+ clients: Al Jazeera English (Deputy News Editor), ProPublica (investigative data research), NewsGuard (Contributing Analyst, media credibility ratings), Washingtonian (fact-checker), CBS (fact-checking), Washington Post, ZDF, PRI, Atlas Obscura, OneZero, CannabisWire, The New Humanitarian, Architectural Record, Univision, The Independent. SSRC writing instructor.
+4. **Rest of World** (2021–mid-2022) — Staff writer. Covered disinformation and labor in non-Western markets. Sophie Schmidt (Google CEO's daughter) founded outlet. One World Media award nomination. Notable stories: Latin American nearshoring, Russia "t.co" Twitter block, Global South microtask labor (Remotasks).
+5. **Wired** (Jul 2022–present) — Senior writer, platforms and power. 4 major arcs: (a) Twitter/Musk purchase 2022-23, (b) Meta Oversight Board (deepfake porn, PragerU Kids ads, T&S outsourcing), (c) AI Elections Project 2024 (TED AI Show, 283K plays), (d) DOGE coverage 2025-26 (Wired gained 62,500 subscribers in 2 weeks, Feb 2025). PoliticsLab podcast. Concordia 2024 speaker. CWA union member.
+
+### Analytical Value for MediaScope
+1. **Unusual pipeline:** International development → journalism gives her a structural power-dynamics lens distinct from Silicon Valley insiders
+2. **Key DiD migration:** Rest of World → Wired (nonprofit Global South outlet → Condé Nast institutional) — high-value natural experiment for institutional framing analysis
+3. **NewsGuard meta-awareness:** Direct professional experience rating media credibility — could either sharpen or bias her own platform coverage
+4. **DOGE commercial impact:** 62,500 subscriber surge demonstrates adversarial coverage's business value to Condé Nast, creating institutional incentive alignment
+5. **Growing public intellectual profile:** TED AI Show (283K plays), Concordia, PBS/BBC/NPR/NBC appearances
+
+### Source URLs Added (6)
+- vittoriaelliott.com/about (personal site, bio, freelance client list)
+- talkingbiznews.com (Wired hire announcement, ~Jul 2022)
+- newsguardtech.com (Contributing Analyst bio, pre-journalism background)
+- concordialive.com (2024 Annual Summit speaker profile)
+- muckrack.com (Muck Rack journalist profile, publication list)
+- ted.com (TED AI Show appearance, Sep 2024)
+
+### Stats
+- Journalists: 231 (unchanged), career entries: +2 (net), publications: +1 new (international-development)
+- All 145 tests passing (21 career + 124 structural consistency), zero regressions
+
+---

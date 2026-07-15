@@ -13584,3 +13584,109 @@ journalists:
   - https://contactout.com/Jyoti-Mann
   - https://muckrack.com/jyotimann/articles
   - https://journalisthunt.com/journalists/jyoti-mann
+- career:
+  - beat: video games, game culture
+    end: '2013'
+    event_type: freelance
+    notes: Freelance writer and blogger covering video games and game culture. Self-described entry point into journalism. Wrote for Kotaku and other gaming outlets.
+    publication: freelance-gaming
+    role: freelance_writer
+    source_url: https://talkingbiznews.com/they-re-hiring/protocol-hires-cox-as-editor-on-policy-team/
+    start: '2011'
+  - beat: tech policy, privacy, healthcare, consumer issues
+    end: '2017'
+    event_type: hired
+    notes: Covered tech policy, privacy, healthcare, and other consumer issues at Consumers Union's editorial arm. Consumerist was shut down by Consumer Reports in 2017, triggering her move to CQ Roll Call. Non-traditional career path — game blogger to consumer advocacy to policy reporting.
+    publication: consumerist
+    role: reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/protocol-hires-cox-as-editor-on-policy-team/
+    start: 2013-10
+  - beat: mergers, antitrust
+    end: '2019'
+    event_type: hired
+    notes: Reported on mergers and antitrust matters at CQ Roll Call (Congressional Quarterly). Covered FTC, DOJ antitrust enforcement. Policy and regulatory reporting foundation that would define her later career. CQ Roll Call provides congressional and regulatory intelligence.
+    publication: cq-roll-call
+    role: reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/protocol-hires-cox-as-editor-on-policy-team/
+    start: '2017'
+  - beat: tech policy, privacy, antitrust, accessibility, facial recognition
+    end: '2021'
+    event_type: hired
+    notes: 'Tech policy reporter at Condé Nast''s Ars Technica. Covered Meta extensively — wrote retrospective on Facebook''s decade of growth and regulatory crosshairs, covered Facebook''s Tim Kendall testimony to Congress comparing Facebook to Big Tobacco. Also covered ADA web accessibility, police facial recognition at BLM protests, phone search warrants. KEY for MediaScope: Ars Technica is Condé Nast-owned, so her framing while there operated under the same corporate ownership structure as Wired.'
+    publication: ars-technica
+    role: reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/protocol-hires-cox-as-editor-on-policy-team/
+    start: '2019'
+  - beat: tech policy (editing)
+    end: '2022'
+    event_type: hired
+    notes: 'Editor on Protocol''s policy team. Moved from reporting to editing role. Protocol was a tech news site launched by Politico parent company Axel Springer in 2020. Protocol shut down in November 2022 as part of Axel Springer cost cuts, triggering mass migration of tech journalists to other outlets. KEY MIGRATION: Ars Technica (Condé Nast) → Protocol (Axel Springer) represents cross-corporate editorial migration. Her policy editing shaped Protocol''s regulatory coverage framing.'
+    publication: protocol
+    role: editor
+    source_url: https://talkingbiznews.com/they-re-hiring/protocol-hires-cox-as-editor-on-policy-team/
+    start: '2021'
+  - beat: tech policy, tech leadership interviews (Decoder podcast)
+    end: present
+    event_type: hired
+    notes: 'Senior Producer for Decoder at The Verge (Vox Media). Runs the Decoder podcast with Nilay Patel, interviewing tech and policy leaders. Moved from editing back to production/editorial role. KEY MIGRATION: Protocol (Axel Springer, closed Nov 2022) → The Verge (Vox Media). One of many Protocol refugees absorbed by Vox Media properties. Career arc: freelance game blogger → consumer advocacy (Consumerist) → congressional reporting (CQ Roll Call) → Condé Nast policy reporting (Ars Technica) → Axel Springer policy editing (Protocol) → Vox Media production (The Verge). Five different corporate ownership structures.'
+    publication: the-verge
+    role: senior_producer
+    source_url: https://bsky.app/profile/kcoxdc.bsky.social
+    start: '2023'
+  multi_publication: true
+  name: Kate Cox
+  notes: 'Career arc: freelance gaming → Consumerist → CQ Roll Call → Ars Technica → Protocol → The Verge. Five corporate ownership structures (independent → Consumers Union → CQ/FiscalNote → Condé Nast → Axel Springer → Vox Media). BA History (UMass Amherst), MFA Film Studies (Boston University). Originally from Boston, based in Washington DC area since 2008. Lives with husband, kids, and cat. Twitter/Bluesky: @KCoxDC. ANALYTICAL VALUE: (1) Rare cross-corporate migration across 5 ownership structures — ideal for institutional vs individual framing decomposition. (2) Protocol closure (Nov 2022) is a natural experiment: how do journalists'' framing patterns change when their publication dies? (3) Consumerist → CQ Roll Call → Ars Technica career path represents consumer advocacy → congressional → tech journalism pipeline that may carry regulatory-skeptic framing. (4) Currently runs Decoder, which interviews tech CEOs — editorial gatekeeping role for how tech leaders are presented.'
+  source_urls:
+  - https://talkingbiznews.com/they-re-hiring/protocol-hires-cox-as-editor-on-policy-team/
+  - https://bsky.app/profile/kcoxdc.bsky.social
+  - https://chris-welch.com
+  - https://theorg.com/org/the-verge/org-chart/kate-cox
+- career:
+  - beat: IT support
+    end: '2021'
+    event_type: career_change
+    notes: Over 15 years in IT support before transitioning to journalism. Non-traditional pathway into tech journalism — came from the technical operations side rather than journalism school. Self-described as an undercover barista at home for 5 years. BA in Film/Video and Animation from University of Maryland, Baltimore County (UMBC). Participates in local filmmaking competitions.
+    publication: it-support
+    role: it_support
+    source_url: https://theorg.com/org/the-verge/org-chart/umar-shakir
+    start: '2006'
+  - beat: technology, consumer electronics, EVs, mobile, gaming
+    end: present
+    event_type: hired
+    notes: 'Started as a Verge Fellow, now news writer. Extremely prolific — 2,600+ articles and counting. Covers a broad tech beat including electric vehicles, USB-C devices, smartphones, gaming, streaming, Google products, Samsung, Apple, and Meta. Not a specialist in Meta coverage per se, but his high volume means he frequently writes Meta-related news. Based in Baltimore. ANALYTICAL VALUE: (1) High-volume news writer whose framing patterns can be measured against The Verge''s institutional baseline with statistical significance due to large sample size. (2) IT support → journalism career change is atypical — tests whether technical background correlates with more neutral hardware/product framing vs editorial opinion.'
+    publication: the-verge
+    role: news_writer
+    source_url: https://journalisthunt.com/journalists/umar-shakir
+    start: '2021'
+  name: Umar Shakir
+  notes: 'Career arc: 15+ years IT support → Verge Fellow → The Verge news writer. BA Film/Video & Animation (UMBC). Based in Baltimore. 2,600+ articles — one of The Verge''s most prolific contributors by volume. Covers EVs, consumer electronics, USB-C, gaming, mobile. Non-traditional journalism pathway from IT support. Twitter: @UmarShakir.'
+  source_urls:
+  - https://theorg.com/org/the-verge/org-chart/umar-shakir
+  - https://journalisthunt.com/journalists/umar-shakir
+  - https://muckrack.com/umar-shakir/articles
+  - https://buzzsumo.com/journalist/umar-shakir
+- career:
+  - beat: consumer electronics, personal audio, home theater, smartphones
+    end: '2025'
+    event_type: hired
+    notes: 'Among the earliest hires at The Verge, joining ahead of its November 2011 debut under co-founders Joshua Topolsky and Nilay Patel. Rose through multiple roles: staff writer → news editor → reviewer/editor → photographer. Published over 6,000 articles — more than any other Verge journalist. Became the publication''s top source for Sonos scoops; his reporting on Sonos''s controversial app overhaul in 2024 contributed to the CEO''s ouster. Also a prolific product photographer who helped define The Verge''s visual style. Member of Vox Media Union (WGA East). BA Public Communications, The College of Saint Rose.'
+    publication: the-verge
+    role: reviewer_editor
+    source_url: https://chris-welch.com
+    start: '2011'
+  - beat: consumer tech reviews, product launches, Sonos
+    end: present
+    event_type: hired
+    notes: 'Hired by Mark Gurman''s consumer tech team at Bloomberg alongside Samantha Murphy Kelly (ex-CNN/CNET/Mashable). Leads reviews coverage, reports on product launches, breaks consumer tech news. Continues Sonos reporting. Regular contributor to Bloomberg TV, video, and podcast programming. KEY MIGRATION: The Verge (Vox Media) → Bloomberg. One of the most significant consumer tech journalism departures from Vox Media. Represents talent drain from digital-native outlets to legacy financial media expanding tech coverage. Bloomberg''s consumer tech expansion under Gurman is building a team that directly competes with The Verge''s core coverage area.'
+    publication: bloomberg
+    role: consumer_tech_reporter
+    source_url: https://talkingbiznews.com/they-re-hiring/bloomberg-hires-kelly-welch-for-consumer-tech-team/
+    start: '2025'
+  multi_publication: true
+  name: Chris Welch
+  notes: 'Career arc: The Verge (2011-2025, 14 years, 6,000+ articles) → Bloomberg (2025-present). BA Public Communications (College of Saint Rose). One of The Verge''s founding-era journalists. More published articles than any other Verge writer. Defining Sonos beat reporter whose coverage had real corporate impact (CEO ouster). Also a professional-grade photographer. ANALYTICAL VALUE: (1) 14-year Verge tenure with 6,000+ articles provides the largest single-journalist corpus at any tracked publication — ideal for longitudinal framing analysis. (2) Verge → Bloomberg migration tests whether consumer tech framing shifts when moving from digital-native editorial to financial media context. (3) His departure represents Bloomberg''s aggressive consumer tech expansion that is reshaping the competitive landscape for The Verge.'
+  source_urls:
+  - https://chris-welch.com
+  - https://talkingbiznews.com/they-re-hiring/bloomberg-hires-kelly-welch-for-consumer-tech-team/
+  - https://theorg.com/org/vox-media/org-chart/chris-welch
+  - https://muckrack.com/chriswelch/articles

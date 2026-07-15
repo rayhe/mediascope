@@ -1237,6 +1237,15 @@ editorial_changes:
     outgoing: Vox Media (independent)
     position: ownership
     source_url: https://www.exchange4media.com/media-print-news/penske-media-corporation-to-acquire-major-vox-media-brands
+  - date: '2025'
+    incoming: null
+    notes: 'KEY DEPARTURE: Chris Welch left The Verge for Bloomberg after 14 years (2011-2025). Most-published journalist in The Verge history (6,000+ articles). Recruited by Mark Gurman for Bloomberg''s
+      expanding consumer tech team alongside Samantha Murphy Kelly (ex-CNN/CNET/Mashable). His Sonos reporting drove the CEO''s ouster in 2024-2025. Welch''s departure represents Bloomberg''s aggressive
+      move to compete directly with The Verge on consumer tech coverage. This is the most significant individual talent loss from The Verge since Dieter Bohn left for Google (2023) and Alex Heath departed
+      to launch his own podcast publication (2026).'
+    outgoing: Chris Welch
+    position: reviewer_editor_departure
+    source_url: https://talkingbiznews.com/they-re-hiring/bloomberg-hires-kelly-welch-for-consumer-tech-team/
   wired:
   - date: 2012-07
     incoming: Scott Dadich
