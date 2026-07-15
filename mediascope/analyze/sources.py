@@ -1249,6 +1249,16 @@ def extract_sources(text: str) -> list[SourceMention]:
         if match_end < len(text) and text[match_end] in ("'", "\u2019"):
             continue
 
+        # Skip hyphenated compound words — "blasted Ray-Ban" should NOT
+        # extract "Ray" as a source.  When the matched name is immediately
+        # followed by a hyphen+letter, it's part of a compound word (brand
+        # name, place name, etc.), not a journalist source.
+        # Discovered in Gizmodo smart glasses celebrity backlash article
+        # (Jul 14, 2026): "Tyler the Creator recently blasted Ray-Ban Meta
+        # AI glasses" → false-positive "Ray" extracted as source.
+        if match_end < len(text) - 1 and text[match_end] == "-" and text[match_end + 1].isalpha():
+            continue
+
         seen_names.add(name)
 
         ctx_start = max(0, m.start() - 100)

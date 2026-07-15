@@ -1,4 +1,44 @@
 # MediaScope Iteration Log
+## 2026-07-15 01:00 PT — Type A: Article Deep Dive (Gizmodo Smart Glasses Celebrity Backlash)
+
+**Commit:** _(pending)_
+
+### Summary
+Analyzed Gizmodo "Smart Glasses Backlash Is Reaching New Celebrity Heights" (Jul 14, 2026). Found 8 framing devices manually vs toolkit's 3 — revealing gaps in `failure_precedent` temporal setup detection and editorial aside patterns. Fixed 2 bugs: (1) Ray-Ban hyphen false-positive in source extraction Pattern 5c, (2) added 2 new `failure_precedent` regex patterns for "tried and failed" temporal narratives. 17 new tests, all passing.
+
+### Article
+- **Publication:** Gizmodo
+- **Title:** "Smart Glasses Backlash Is Reaching New Celebrity Heights"
+- **Date:** July 14, 2026
+- **Topic:** Celebrity pushback against smart glasses (Kylie Jenner, Lorde, Google Glass precedent)
+
+### Gaps Found & Fixed
+1. **Source extraction false-positive (Pattern 5c):** "Ray" extracted from "Ray-Ban" — hyphen compound-word boundary check added
+2. **`failure_precedent` gap:** "Way back in 2013, when Google tried, and failed" not detected — 2 new regex patterns added for temporal setup + tried/failed narratives
+
+### Gaps Found (Unfixed — documented for future iterations)
+- Lorde affiliation mis-extraction ("Wired about smart glasses" instead of actual affiliation)
+- `editorial_aside` not detected ("some of those people are actual celebrities")
+- `juxtaposition` not detected (Kylie vs Lorde contrasting positions)
+- Potential new device: "Celebrity Authority Framing" — celebrities as cultural opinion leaders determining market outcomes
+
+### Files Changed
+- `mediascope/analyze/sources.py` — hyphen compound-word false-positive guard in Pattern 5c
+- `mediascope/analyze/framing.py` — 2 new `failure_precedent` regex patterns
+- `tests/test_gizmodo_smart_glasses_celebrity_backlash_jul14.py` — 17 tests (entity, framing, source)
+- `examples/sample_output/gizmodo_smart_glasses_celebrity_backlash_jul14.md` — manual analysis
+- `docs/ARCHITECTURE.md` — test file listing, stats (122 files, 2706 tests, 635 patterns)
+- `README.md` — test file listing, stats (122 files, 2706 tests, 635 patterns)
+- `tests/test_structural_consistency.py` — pattern count 633→635
+
+### Stats After Iteration
+- 239 journalists, 932 career-entry migrations, 429 publications
+- 184 annotated articles, 1,022 emotional language terms
+- 102 framing device types, 635 patterns
+- 2,706 tests (122 files), all passing
+
+---
+
 ## 2026-07-15 00:00 PT — Type D: Toolkit Quality & Documentation
 
 **Commit:** `f5e5611` — "Type D: Fix stale stats, naming convention, add legal vocabulary gap + 2 proposed framing devices"

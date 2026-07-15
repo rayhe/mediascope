@@ -1506,6 +1506,39 @@ _FAILURE_PRECEDENT_PATTERNS: list[re.Pattern] = [
         r"all[- ]in|doubled down|bet big)\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # -----------------------------------------------------------------------
+    # Temporal setup + failure: "Way back in [year], when [Entity] tried,
+    # and failed" or "[Back] in [year], [Entity] tried to / attempted to
+    # ... failed / didn't / couldn't".
+    # Imports a specific historical failure as predictive template for
+    # the current situation.  Different from the era-based precedent_analogy
+    # patterns — this construction names a specific year, entity, and failure
+    # outcome.
+    #
+    # Discovered in Gizmodo "Smart Glasses Backlash" (Jul 14, 2026):
+    #   "Way back in 2013, when Google tried, and failed, to force Google
+    #    Glass onto the scene, the proverbial nail in the coffin wasn't
+    #    regulation, policy, or anything even remotely official; it was
+    #    social perception."
+    # -----------------------------------------------------------------------
+    re.compile(
+        r"\b(?:way )?back in \d{4}\b"
+        r".{0,80}?"
+        r"\b(?:tried|attempt(?:ed|ing)|fail(?:ed|ing)|didn'?t|couldn'?t|"
+        r"never (?:took off|caught on|gained traction)|flopp(?:ed|ing)|"
+        r"nail in the coffin)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "[Entity] tried to [X] in/back in [year]" — reverse temporal setup
+    re.compile(
+        r"\b[A-Z][\w]+ (?:tried|attempted|sought) to\b"
+        r".{0,60}?"
+        r"\b(?:back )?in \d{4}\b"
+        r".{0,60}?"
+        r"\b(?:fail(?:ed|ing)|didn'?t|couldn'?t|"
+        r"never (?:took off|caught on|worked|succeeded))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
 ]
 
 _DEVICE_PATTERNS["failure_precedent"] = _FAILURE_PRECEDENT_PATTERNS
