@@ -1,4 +1,43 @@
 # MediaScope Iteration Log
+## 2026-07-15 03:00 PT — Type C: Ownership & Funding Deep Dive (The Verge / PMC)
+
+**Commit:** `6a6abad`
+
+### Focus
+The Verge profile (`profiles/the-verge.yaml`) — three substantive updates targeting financial distress signals, portfolio enrichment, and a major new legal conflict.
+
+### Work Done
+
+1. **SRMG Financial Deterioration (CRITICAL)**
+   - SRMG (PMC's $200M+ Saudi sovereign-linked equity investor) hit 52-week low: SAR 68.00 (Jul 15), down 12% in 2 days from SAR 77.00
+   - Workforce slashed from ~2,000 to 700 (65% reduction) per StockAnalysis.com
+   - Negative interest coverage (-2.31), ROE -18.66%, Debt/EBITDA 8.90
+   - Added analytical note: distressed investor may need to liquidate PMC equity or extract commercial value
+
+2. **Vivid Seats (SEAT) Q1 2026 Enrichment**
+   - Corrected 52-week high from $41.20 to $38.00 (per Robinhood data)
+   - Added: App GOV up 20% YoY, app share >40%, Adjusted EBITDA $9.5M positive, cash $144M
+   - Clarified Q1 exceeded internal guidance despite consensus miss of -$0.32
+
+3. **OpenAI MDL Spoliation Crisis (NEW ~75-line section)**
+   - Judge Wang ordered disclosure of privileged OpenAI comms re LibGen dataset deletion
+   - Crime-fraud exception invoked (first known use in copyright case)
+   - Anthropic $1.5B settlement benchmark
+   - Dual-conflict analysis: The Verge has licensing deal WITH OpenAI while parent's law firm (Susman Godfrey) prosecutes sanctions AGAINST OpenAI
+   - Source URLs: Bloomberg Law, Reuters
+
+4. **README stats fix:** Framing patterns 694 → 696
+
+### Sources
+StockAnalysis.com, Finnhub, Bloomberg Law, Reuters, MarketBeat, Robinhood
+
+### Stats
+- Profile: 1,381 → 1,465 lines (+84 net)
+- Tests: 2,706 (122 files) — all passing, zero regressions
+- README stats verified current via count_stats.py
+
+---
+
 ## 2026-07-15 02:00 PT — Type B: Journalist/Publication Research (Niall Firth, MIT TR Executive Editor)
 
 **Commit:** `1cc707d`
