@@ -2465,20 +2465,48 @@ journalists:
     start: 2025-01
   - beat: investigative data, surveillance, Big Tech
     event_type: hired
-    notes: Returned to Wired from Bloomberg. Started May 18, 2026. Brian Barrett (exec editor) announcement praised him as
-      'story zero' originator. Reports to Andrew. Co-broke Meta/Rank One face recognition story with Dell Cameron within weeks
-      of return. Co-authored "Project Cannes" Meta/AI child safety investigation with Joel Khalili (published Jun 29, 2026)
-      — exposing Meta contractors posing as minors to test rival chatbots with 45,000+ prompts. Story triggered wide pickup
-      (NY Post, CNN, Techmeme lead). Demonstrates cross-desk collaboration between London (Khalili) and NYC (Mehrotra) investigation
-      teams.
+    notes: 'Returned to Wired from Bloomberg. Started May 18, 2026. Brian Barrett (exec editor) announcement praised him as
+      "story zero" originator. Reports to Andrew. KEY INVESTIGATIONS AT WIRED (2026 return): (1) NameTag/Meta facial recognition
+      (Jun 4, 2026, with Dell Cameron): Co-discovered dormant facial recognition system ("NameTag") hidden in Meta AI companion
+      app code, distributed to 50M+ phones. Three AI models convert faces to biometric faceprints — one detects faces, one
+      crops them, one encodes biometric data. Cooper Quintin (EFF) independently reproduced analysis, said code was "nearly
+      ready to go." Meta removed the code within one day (Jun 5) after WIRED''s report. Follow-up (Jun 16) revealed Meta licensed
+      Rank One Computing — a Denver-based law enforcement/military facial recognition vendor (clients include SOCOM, US Marshals,
+      NCIS; board includes former CIA Deputy Director Dawn Meyerriecks) — for NameTag''s facial recognition and liveness detection
+      in a test version of the Meta AI app. Investigation triggered both legislative action (3 senators) and corporate policy
+      change. Andrew Bosworth (Meta CTO) called reporting "incredibly misleading" and "absolutely dishonest." Most consequential
+      Meta investigation by any Wired reporter in 2026. (2) "Project Cannes" Meta/AI child safety investigation (Jun 29, 2026,
+      with Joel Khalili): Exposed Meta contractors posing as minors to test rival chatbots with 45,000+ prompts. Story triggered
+      wide pickup (NY Post, CNN, Techmeme lead). Demonstrates cross-desk collaboration between London (Khalili) and NYC (Mehrotra)
+      investigation teams. (3) Spotify drug podcast ranking manipulation (Jun 2026, with Dell Cameron). (4) Data broker/AI
+      opt-out failures (May 2026). ANALYTICAL SIGNIFICANCE: Mehrotra''s computational forensics skillset (code analysis, data
+      extraction) complements Cameron''s policy/narrative framing — together they are Wired''s most consequential investigative
+      partnership on surveillance/Meta topics. His Bloomberg departure and rapid return within ~5 months signals Barrett/Wired
+      specifically recruited him back for the NameTag investigation timeline.'
     publication: wired
     role: senior_writer
     source_url: https://www.editorandpublisher.com/stories/dhruv-mehrotra-is-welcomed-back-to-wired,262263
     start: 2026-05
+  beats:
+  - surveillance
+  - privacy
+  - investigative_data
+  - Big_Tech
+  - biometrics
+  - law_enforcement_tech
+  multi_publication: true
   name: Dhruv Mehrotra
   notes: 'Key migration: Gizmodo → Reveal/CIR → Wired → Bloomberg → Wired (returned). Computational journalist/technologist.
     Builds custom tools to analyze datasets. Known for high-impact investigations (Epstein Island phone data, JD Vance Venmo,
-    ShotSpotter).'
+    ShotSpotter, NameTag/Meta facial recognition). Most significant current role: co-lead (with Dell Cameron) on Wired''s
+    NameTag investigation — the only 2026 investigation to trigger both legislative action AND corporate policy change (Meta
+    deleting face-recognition code from 50M+ phones within 24 hours of publication). His computational forensics methodology
+    (code decompilation, data pipeline analysis) is the investigative complement to Cameron''s policy/narrative framing.'
+  source_urls:
+  - https://www.editorandpublisher.com/stories/dhruv-mehrotra-is-welcomed-back-to-wired,262263
+  - https://talkingbiznews.com/they-re-hiring/mehrotra-departs-nonprofit-reveal-for-wired/
+  - https://www.wired.com/author/dhruv-mehrotra/
+  - https://talkingbiznews.com/they-re-hiring/wireds-mehrotra-hired-by-bloomberg-news/
 - career:
   - beat: N/A (education)
     end: 2007-01
@@ -3292,6 +3320,13 @@ journalists:
     role: staff_writer
     source_url: https://talkingbiznews.com/they-re-hiring/kaitlyn-tiffany-joins-the-atlantics-tech-team/
     start: 2019-08
+  beats:
+  - internet_culture
+  - online_communities
+  - conspiracy_movements
+  - platform_effects
+  - fandom
+  - youth_and_tech
   name: Kaitlyn Tiffany
   notes: 'Key migration: Cornell literary magazines → The Verge → Vox (The Goods) → The Atlantic. Cornell University BA (~2015).
     Author of three books: (1) "Everything I Need I Get from You: How Fangirls Created the Internet as We Know It" (MCD/FSG
@@ -3311,6 +3346,10 @@ journalists:
     and third books reveal an intellectual pattern: communities of passionate outsiders (fangirls, Warren Commission housewives)
     who create alternative information ecosystems — a framework she applies to her platform coverage. This makes her a valuable
     natural experiment subject for DiD analysis: does her distinctive cultural lens shift when applied to Meta vs. other platforms?'
+  source_urls:
+  - https://talkingbiznews.com/they-re-hiring/kaitlyn-tiffany-joins-the-atlantics-tech-team/
+  - https://www.theatlantic.com/author/kaitlyn-tiffany/
+  - https://www.theverge.com/authors/kaitlyn-tiffany
 - career:
   - beat: N/A (education)
     end: 2014-05
@@ -5250,6 +5289,17 @@ journalists:
     cultural lens from journalism''s beginning — compare to reporters who entered via traditional newspapers. (3) Feb 2026
     layoff + rehire adds institutional loyalty dimension. (4) Her career arc (gossip blog → prestige newspaper) parallels
     the broader legitimation of tech accountability journalism.'
+  beats:
+  - tech_culture
+  - AI_safety_ethics
+  - Silicon_Valley_power
+  - labor_and_tech
+  - surveillance
+  source_urls:
+  - https://www.washingtonpost.com/people/nitasha-tiku/
+  - https://www.wired.com/author/nitasha-tiku/
+  - https://www.theverge.com/authors/nitasha-tiku
+  - https://www.cjr.org/analysis/washington-post-tries-regroup-after-major-cuts-layoffs-delayed-rehire-former-staff.php
 - career:
   - beat: comparative literature
     event_type: education
@@ -5504,6 +5554,12 @@ journalists:
     role: senior_writer
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-kelly-for-politics-team/
     start: '2023-11-27'
+  beats:
+  - politics
+  - tech_policy
+  - political_influencers
+  - DOGE
+  - CFPB
   name: Makena Kelly
   notes: 'Wired senior writer for politics team. Key hire in Drummond''s Nov 2023 politics team expansion (alongside Leah
     Feiger and William Turton). CQ Roll Call → The Verge → Wired pipeline represents a politics-to-tech-politics career trajectory.
@@ -5511,6 +5567,11 @@ journalists:
     a DC framing lens that''s distinct from the Silicon Valley perspective of most Wired writers. Her coverage of political
     influencers since 2018 and appearance at DNC 2024 with press credentials shows how Wired''s politics team operates as
     quasi-political media under Drummond. Nebraska Wesleyan BA (Journalism), former editor-in-chief of student newspaper.'
+  source_urls:
+  - https://talkingbiznews.com/they-re-hiring/wired-hires-kelly-for-politics-team/
+  - https://www.wired.com/author/makena-kelly/
+  - https://www.theverge.com/authors/makena-kelly
+  - https://podchaser.com/creators/makena-kelly-107a91YLIq
 - career:
   - beat: politics
     end: 2016-06
@@ -10250,6 +10311,12 @@ journalists:
     start: ~2018
     verified: 'Jul 2026: MIT TR author page (crawled Jun 2026): "Senior editor, energy." 436 posts. Oct 2025 Roundtable. Muck
       Rack current. SEAL 2020 winner.'
+  beats:
+  - energy
+  - climate_tech
+  - carbon_removal
+  - renewable_energy
+  - climate_adaptation
   name: James Temple
   notes: 'Key migration: San Francisco Chronicle → Recode → The Verge → MIT Technology Review. Senior editor for energy/climate
     at MIT TR with 436+ posts (1,623+ total articles). Ohio University BS Journalism. Career arc: Bay Area tech columnist
@@ -10260,6 +10327,9 @@ journalists:
     (1) 4-publication migration provides rich institutional comparison data; (2) Prolific output (436+ at MIT TR alone) creates
     large framing sample; (3) Climate beat sits at intersection of science and policy — different framing dynamics than AI/Big
     Tech coverage.'
+  source_urls:
+  - https://www.technologyreview.com/author/james-temple/
+  - https://www.theverge.com/authors/james-temple
 - career:
   - beat: corporate law, California
     end: '2019'
@@ -10609,6 +10679,13 @@ journalists:
     role: senior_reporter
     source_url: https://www.theverge.com/authors/victoria-song
     start: 2022-08
+  beats:
+  - wearables
+  - health_tech
+  - smart_glasses
+  - fitness_tech
+  - AI_wearables
+  - consumer_electronics
   name: Victoria Song
   notes: 'Key migrations: PC Magazine → Gizmodo → The Verge. 13+ years wearables/health tech expertise. Author of The Verge
     "Optimizer" newsletter. Most authoritative wearables reviewer in mainstream tech media. Meta Ray-Ban coverage spans product
@@ -10617,6 +10694,10 @@ journalists:
     voice on surveillance/privacy. Korean-American cultural context visible in Samsung/Korean tech coverage.
 
     '
+  source_urls:
+  - https://www.theverge.com/authors/victoria-song
+  - https://gizmodo.com/author/victoria-song
+  - https://www.pcmag.com/author/victoria-song
 - career:
   - beat: daily news
     end: 2015
