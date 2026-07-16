@@ -1,4 +1,47 @@
 # MediaScope Iteration Log
+## 2026-07-16 03:00 PT — Type C: Ownership & Funding Deep Dive (EU DSA Regulatory Convergence + CHTR-Cox Critical Timeline + Litigation Funding Regulation)
+
+**Rotation:** C (Ownership & Funding Deep Dive)
+**Commit:** (see below)
+
+### What was done
+
+1. **EU DSA "Addictive Design" Finding (Jul 11, 2026):** Added to wired.yaml `litigation_connections` → `LEGISLATIVE/REGULATORY ACCELERATION` section. European Commission found Facebook and Instagram's autoplay, infinite scrolling, personalized recommendations, and push notifications may compromise users' "physical and mental wellbeing" under the Digital Services Act. This is the result of a 2024-launched investigation. Meta disputes findings, citing Teen Accounts rollout.
+
+   **Conflict significance:** The EU finding cites the EXACT SAME features named in US MDL 3047 bellwether trials, creating a mutually reinforcing evidence loop — EU regulatory findings can be cited as evidence in US litigation, and US verdicts strengthen EU enforcement precedent. Publications covering both jurisdictions gain amplified narrative momentum without disclosing their owners' competing financial interests (Advance/Reddit vs Meta).
+
+2. **Australia eSafety "Significant Gaps" Report (Jul 14, 2026):** Added to regulatory section. Commissioner Julie Inman Grant found Apple, Meta, Google, Snap, Microsoft have "significant gaps" in CSAM detection and sexual extortion prevention despite available technology. Government introduced June 2026 legislation expanding eSafety's court enforcement powers for under-16 ban. Source: Reuters (Jul 14).
+
+3. **UK Ofcom TikTok Inquiry + Under-16 Ban (Jul 15-16, 2026):** Added to regulatory section. Ofcom launched formal inquiry into TikTok child safety. PM Starmer announced government ban on social media for under-16s, effective spring 2027 — affects all major platforms. Source: The Times (Jul 16).
+
+4. **NY Consumer Litigation Funding Act (effective Jun 17, 2026):** Added to regulatory section. Most comprehensive US state-level regulation of pre-settlement litigation funding: caps funder recovery at 25% of gross litigation proceeds, requires registration + bond, 10-day rescission period, bars funders from influencing settlement decisions or legal strategy. Directly constrains Flashlight Capital's economics (SMVLC funder) but also legitimizes the practice. Other states watching. Source: Bloomberg Law (Jun 2026).
+
+5. **Advance Equity Portfolio Verification (Jul 15 close):** Confirmed stock prices unchanged from prior check — RDDT $198.03, CHTR $131.24, WBD $27.27. Total Advance public equity ~$13.73B. Key Q2 earnings catalysts verified: CHTR Q2 Jul 24 (before market opens, consensus EPS ~$10.01, Q1 missed by $0.84), RDDT Q2 Jul 30 (after market closes, Q1 beat by $0.39), WBD Q2 Aug 7.
+
+6. **CHTR-Cox Merger CPUC Status:** Today (Jul 16) was Charter's originally requested CPUC decision date (Feb 17 filing). CPUC is now targeting Aug 13 voting meeting. DOJ HSR clearance expires Sep 15 — if CPUC delays to Sep 2 meeting, Charter says insufficient time to close. NY approved Jul ~10 — California is the SOLE remaining hurdle. CalAdvocates + CETF settled (support approval with $275M infrastructure commitment + low-income plans). Only TURN opposes. Merger creates largest US broadband provider (36M subscribers, 70M passings). Six consumer advocacy groups filed reply comments urging 10-year affordability commitment (vs Charter's 5-year offer). Charter Q1 financials: rev -1.0% YoY to $13.6B, lost 120K internet customers, 51K video subs, adjusted EBITDA -2.2% YoY.
+
+### Analytical significance
+
+This iteration reveals **regulatory convergence across 4 jurisdictions** (US, EU, UK, Australia) on the same Meta child safety narrative within a 5-day window (Jul 11-16). The EU DSA finding is particularly significant because it uses the same technical vocabulary ("addictive design," "autoplay," "infinite scrolling") as the US bellwether trials, creating a cross-jurisdictional evidence amplification loop that benefits plaintiffs on both sides of the Atlantic. For the conflict analysis: publications whose owners compete with Meta (Advance/Reddit for Wired, Scott Trust/no-competitor for Guardian, Sulzberger/no-competitor for NYT) all cover this regulatory wave without disclosing that Meta's regulatory setbacks directly benefit their owners' competing investments.
+
+The CHTR-Cox merger status is a CRITICAL Advance portfolio variable — if CPUC approves Aug 13 and the merger closes, Charter rebrands as Cox Communications, becomes the largest US broadband provider, and Advance's $2.7B CHTR stake recovers from structural decline. If CPUC delays past Sep 15, the deal enters regulatory limbo. CHTR Q2 earnings on Jul 24 will be the first test of whether Charter's operational decline (-1% rev, -120K internet subs) is stabilizing.
+
+The NY Consumer Litigation Funding Act creates a novel intersection with the Flashlight/SMVLC funding chain. By capping funder recovery at 25% of gross proceeds, NY forces funders to be more selective — but the 29-state, $1.4T Meta child safety exposure represents exactly the kind of high-expected-value cases that survive the cap. The regulation also legitimizes what critics call "ambulance chasing with other people's money," potentially increasing institutional capital flows into social media litigation.
+
+### Files changed
+- `profiles/wired.yaml` — 27 new lines in `litigation_connections` → `LEGISLATIVE/REGULATORY ACCELERATION` section (EU DSA, Australia eSafety, UK Ofcom, NY litigation funding act)
+
+### Stats snapshot
+- Wired profile: 2,501 lines (+27)
+- Entity clusters: 91 (879 aliases)
+- Framing device types: 106 (723 patterns)
+- Emotional language terms: 1,022
+- Annotated articles: 192 (48 publications)
+- Journalists: 239 (934 career entries, 429 publications)
+- Tests: 2,893 (131 files), 124 structural consistency tests passed
+
+---
+
 ## 2026-07-16 02:00 PT — Type B: Dan Milmo (Guardian) Deep Dive
 
 **Rotation:** B (Journalist/Publication Research)
