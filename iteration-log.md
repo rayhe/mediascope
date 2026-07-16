@@ -1,4 +1,23 @@
 # MediaScope Iteration Log
+## 2026-07-15 18:00 PT — Type C: Condé Nast/Advance Ownership & Funding Deep Dive
+
+**Rotation:** C (Ownership & Funding)
+**Commit:** `7cbcd2f`
+**Focus:** Wired/Condé Nast profile — Google Zero venue conflict expansion + Advance equity snapshot update
+
+**What changed:**
+- **Google Zero section expanded** in `profiles/wired.yaml`: Added TBPN-OpenAI venue conflict (OpenAI acquired The Bold Italic's parent network Apr 2026, per Search Engine Journal), Nilay Patel editorial amplification of the "Google Zero" term via Decoder podcast, third-party validation data (Chartbeat 60% traffic drop, Pew Research 1% AIO click-through rate, Reuters Institute 40%+ projected decline), MediaPost Mar 2026 chronology with Lynch "death blow" quote, and 4 new source URLs.
+- **Advance equity snapshot updated** to Jul 15 close prices: RDDT $198.03 (-2.58%), CHTR $131.24 (+2.60%), WBD $27.27 (-0.76%). Total portfolio ~$13.73B. Added RDDT concentration risk note (~61% of portfolio) and Q2 earnings calendar (RDDT Jul 29, CHTR Jul 25, WBD Aug 7).
+- **Comment-section total** updated from Jul 13 to Jul 15 close prices.
+
+**Sources:** APNews (TBPN acquisition), Search Engine Journal, Pew Research Center, Reuters Institute Digital News Report 2025, Chartbeat, MediaPost, The Verge/Decoder podcast.
+
+**Stats snapshot:** 88 entity clusters, 875 aliases, 106 framing types, 720 patterns, 1,022 emotional language terms, 189 annotated articles, 239 journalists, 932 career-entry migrations, 429 publications, 2,820 tests (127 files).
+
+**No regressions.** YAML valid, structural tests pass.
+
+---
+
 ## 2026-07-15 17:00 PT — Type B: Journalist Profile Enrichment (Dell Cameron Deep Dive)
 
 **Rotation:** B (Journalist/Publication Research)
