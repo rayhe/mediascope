@@ -364,15 +364,17 @@ advance_investments:
       Advance is the largest single investor; outperformed Sam Altman's funds (6-7x larger
       gains) and Sequoia Capital (17x larger gains).
     current_value_estimate: >
-      ~$8.52B at $201.84/share (Jul 15 intraday, -0.70%). Reddit market cap ~$37.6B.
+      ~$8.07B at ~$191.16/share (Jul 16 intraday, -3.47% on day). Reddit market cap ~$36.8B.
       PRICE TRAJECTORY: +13.69% on Jul 1 (close $197.42, high $201.16 intraday), then
       -1.44% pullback Jul 2 (close $194.67), recovery to $200.67 Jul 6, then
       -0.77% to $199.32 Jul 7, +0.50% to $200.31 Jul 9 close. Jul 10: selloff
       -2.61% to $195.09 (high $208.05, low $192.61). Broke below $200 support.
       Jul 13: recovery +2.86% to $200.93 (high $204.07, low $193.88), reclaiming $200 level.
       Jul 14: $201.18 (+0.12%), holding above $200. High $204.89, low $197.18.
+      Jul 15: $198.03 (-1.56%), fell back below $200 on broad tech selloff.
+      Jul 16: ~$191.16 intraday (-3.47%), sharp decline. Approaching $190 support.
       Net +15.9% from Jun 30 close ($173.65). 52-week range $119.27-$282.95. Beta 2.23.
-      Reddit now ~61.1% of Advance's public equity. 42,207,274 total shares × $201.18 = $8.49B.
+      Reddit now ~59.9% of Advance's public equity. 42,207,274 total shares × ~$191.16 = ~$8.07B.
       ADVANCE SHARE BREAKDOWN (verified from Reddit 2025 proxy, Dkt. rddt-20250428):
         - 42,191,092 shares of Class B common stock (10 votes/share)
         - 16,182 shares of Class A common stock (1 vote/share)
@@ -408,27 +410,37 @@ advance_investments:
       NOTE: Reddit Q2 earnings Jul 30 — if Reddit misses consensus, RDDT could gap down given
       2.23 beta and Advance's concentrated position + margin loan. Conversely, continued beats
       could push past $200 resistance.
-      ADVANCE TOTAL PUBLIC EQUITY SNAPSHOT (Jul 15 CLOSE):
-        - Reddit: $8.36B (42.2M shares × $198.03, RDDT -2.79% — gave back gains, closed below $200)
-        - Charter: $2.70B (20.6M shares × $131.24, CHTR +2.60% — relief bounce from $127.91 52W low zone)
-        - WBD: ~$2.67B (98M shares × $27.27, WBD -0.76% — slight pullback on merger uncertainty)
-        - Total: ~$13.73B (down from $13.89B intraday; RDDT selloff erased morning gains)
-        - Reddit concentration: 60.9% of Advance public equity (slipped below 61% as RDDT declined)
-        - CHTR JUL 15 BOUNCE: +2.60% recovery from $127.91 close (Jul 14). Likely technical bounce
-          after touching within $3.86 of 52W low ($124.05). Still deep in structural decline territory
-          (-67% 1Y). Aggressive CHTR buyback program ($963M in Q1 2026, ~4% of market cap — see
-          buyback_program note below) provides floor support.
+      ADVANCE TOTAL PUBLIC EQUITY SNAPSHOT (Jul 16 INTRADAY):
+        - Reddit: ~$8.07B (42.2M shares × ~$191.16, RDDT -3.47% — sharp decline, broke below $195)
+        - Charter: ~$2.75B (20.6M shares × ~$133.48, CHTR +1.70% — continued rebound off 52W low zone)
+        - WBD: ~$2.65B (98M shares × ~$27.08, WBD -0.70% — slight drift on merger litigation drag)
+        - Total: ~$13.47B (down from $13.73B at Jul 15 close; RDDT selloff driving decline)
+        - Reddit concentration: ~59.9% of Advance public equity (slipped below 60% as RDDT declined)
+        - CHTR REBOUND: +1.70% to ~$133.48 (Jul 16), second consecutive green day after touching
+          $127.91 (Jul 14) near 52W low ($124.05). Still deep in structural decline territory.
+          Aggressive buyback ($963M Q1 + $100M/mo LBRDA) providing floor support.
+        - REDDIT $1B BUYBACK PROGRAM (announced Feb 5, 2026): Reddit authorized $1B share
+          repurchase program for Class A shares ONLY. Since Advance holds almost exclusively
+          Class B shares (42.19M of 42.21M total), every Class A share Reddit retires mechanically
+          increases Advance's VOTING POWER further — without Advance spending a cent. The buyback
+          effectively concentrates Advance's already-dominant 65.2% voting control. This mirrors the
+          Charter buyback dynamic where Advance's percentage stake rises as the company shrinks its
+          float. Combined with the automatic Class B concentration from insider conversions (76.5% →
+          83.5% of Class B, 2024→2026), Advance's governance grip on Reddit is tightening through
+          purely mechanical effects.
         - CATALYSTS: PARAMOUNT TRO HEARING Fri Jul 18 (Judge Pitts, 10am PT). CHTR Q2 Jul 24.
           RDDT Q2 Jul 30. WBD Q2 Aug 6. CHTR CPUC Aug 13.
-        - CHTR: BNP Paribas Exane cut target to $120 (Jul 14) — BELOW 52W low of $124.05, most
-          bearish call yet. Barclays already at $130 underweight (Jul 8). Goldman $125 sell (Jul 2).
-          Three separate analysts now targeting at or below current price. Consensus: "Reduce."
+        - CHTR ANALYST DOWNGRADE CASCADE (Jul 2-14): Goldman $125 Sell (Jul 2), Zacks Strong Sell
+          (Jul 6), Wells Fargo $160 Underweight (Jul 7), Barclays $130 Underweight (Jul 8),
+          Bernstein $170 Hold (Jul 13), BNP Paribas Exane $120 Underperform (Jul 14 — BELOW 52W
+          low of $124.05, most bearish call). SIX analyst actions in 12 days. Consensus: "Reduce."
         - WBD: 12-AG antitrust lawsuit (Jul 13) + WGA lawsuit (Jul 14) = TWO active suits to block
           Paramount merger. TRO hearing Fri Jul 18 could temporarily halt deal. Market unperturbed
           (WBD +1.44% Jul 14). FCC Chair Brendan Carr questioned antitrust basis for state suit.
-        - RDDT: Closed at $198.03 (Jul 15), -2.58% on day. Jefferies set $250 target (Jul 10).
+        - RDDT: Closed at $198.03 (Jul 15), -2.58% on day. Then ~$191.16 intraday Jul 16 (-3.47%).
+          Two-day decline of ~6%. Jefferies set $250 target (Jul 10).
           Q2 earnings Jul 30. RDDT annual TTM revenue $2.2B, net income $530M, P/E ~57. Advance
-          stake concentration risk: a 10% RDDT decline would wipe ~$836M from Advance equity.
+          stake concentration risk: a 10% RDDT decline would wipe ~$807M from Advance equity.
           Reddit AI licensing revenue ($200M+/yr, renewing 2027) remains the fastest-growing stream.
       This is a potential volatility catalyst for Advance's collateral value.
     credit_facility_monetization: >
@@ -511,6 +523,8 @@ advance_investments:
       - "https://www.mediapost.com/publications/article/reddit-expands-shopify-integration-all-advertisers/"
       - "https://www.insidermonkey.com/blog/wall-street-bullish-on-reddit-rddt-heres-why-1789767/"
       - "https://techcrunch.com/reddit-testing-ai-search-feature-shopping/"
+      - "https://finance.yahoo.com/quote/RDDT/"
+      - "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001713445&type=8-K&dateb=&owner=include&count=40"
     governance_control: >
       FAR DEEPER THAN 2 BOARD SEATS. Per Reddit 2026 proxy (SEC filing rddt-20260423, DEF 14A filed Apr 23, 2026),
       Advance has consent/veto rights over Reddit's most consequential decisions:
@@ -569,6 +583,14 @@ advance_investments:
       engagement. Reddit's advertising business (~$1.3B FY2025 rev, projected $3.25B FY2026)
       competes directly with Meta's ad platform for performance advertising dollars. Reddit's
       69.1% YoY revenue growth means the competitive threat is ACCELERATING.
+      REDDIT MAX CAMPAIGNS (launched Jan 2026 at CES): Reddit's AI-powered ad automation product,
+      directly competing with Meta Advantage+ and Google Performance Max. Early alpha results:
+      17% lower CPA and 27% higher conversion volume vs manual campaigns. Brands like Coinbase
+      reported strong performance. Active advertiser count +75% YoY in Q1 2026. This is Reddit's
+      most direct competitive assault on Meta's core ad business: automated, AI-driven campaign
+      optimization that lowers the bar for advertisers to shift budget from Meta to Reddit. The
+      competitive significance is structural — Reddit is no longer competing for awareness budgets
+      but for the same performance/conversion dollars that drive Meta's $150B+ ad revenue.
       SHOPIFY PARTNERSHIP (Mar-May 2026): Reddit announced Shopify integration at Shoptalk (March 25,
       2026), expanded globally to all advertisers (May 29, 2026). Merchants can link Shopify storefronts
       directly to Reddit Ads, with automated product catalog syncing, codeless Reddit Pixel for conversion
@@ -596,14 +618,19 @@ advance_investments:
     deterioration_note: >
       CHTR is in steep long-term decline: -67.99% over 1 year, -81.76% over 5 years (as of Jul 14, 2026).
       Stock down from 52-week high of $413.14 to $127.91 (Jul 14 close) — a 69.0% drop,
-      only $3.86 above 52-week low of $124.05. BNP Paribas Exane cut target to $120 (Jul 14) — first
-      analyst target BELOW the 52-week low, signaling expectation of further new lows. Wall Street
-      consensus rating is "Reduce" (6 sell, 8 hold, 5 buy out of 19 analysts). Q1 2026 earnings
+      only $3.86 above 52-week low of $124.05. ANALYST DOWNGRADE CASCADE (Jul 2-14): Goldman $125
+      Sell (Jul 2), Zacks Strong Sell (Jul 6), Wells Fargo $160 Underweight (Jul 7), Barclays $130
+      Underweight (Jul 8), Bernstein $170 Hold (Jul 13), BNP Paribas Exane $120 Underperform
+      (Jul 14) — first analyst target BELOW the 52-week low. SIX analyst actions in 12 days,
+      signaling institutional capitulation. Wall Street consensus rating is "Reduce" (6 sell, 8 hold,
+      5 buy out of 19 analysts). Q1 2026 earnings
       missed: EPS $9.17 vs consensus $10.01 (missed by $0.84), revenue down 1.0% YoY at $13.60B.
       Q2 2026 earnings due July 24 (before market open). Market cap now ~$17.71B (Robinhood, Jul 14).
       Charter faces structural headwinds from cord-cutting, fiber overbuilds, and fixed wireless competition.
-      JUL 15 BOUNCE: CHTR +2.53% to $131.15 intraday (Finnhub). Likely a technical bounce off the
-      52W low zone ($124.05) rather than a structural reversal — no positive catalyst identified.
+      JUL 15-16 REBOUND: CHTR +2.53% to $131.24 (Jul 15 close), then +1.70% to ~$133.48 (Jul 16
+      intraday). Two consecutive green days after touching $127.91 near 52W low ($124.05). Likely
+      technical bounce off oversold conditions — no positive catalyst identified beyond CPUC
+      settlement progress (CalAdvocates + CETF both supporting approval, only TURN opposing).
       Three analysts (BNP $120, Goldman $125, Barclays $130) all targeting AT or BELOW current price.
     buyback_program: >
       AGGRESSIVE BUYBACK PROGRAM (Seeking Alpha, Jun 23, 2026): Charter executed $963M in share
@@ -633,7 +660,8 @@ advance_investments:
       approve the deal. Parties asked CPUC to approve at its **August 13, 2026 meeting** —
       Charter said Sep 2 meeting would be too late to close before HSR expiration. If CPUC
       misses the window, companies must refile HSR ($2.5M fee + new 30-day review period).
-      Charter spokesperson (Jul 10): "We're very pleased to now have all local, state, and
+      Only consumer advocacy group TURN still opposes — all other intervenors have settled or
+      withdrawn. Charter spokesperson (Jul 10): "We're very pleased to now have all local, state, and
       federal regulatory approvals other than California."
       Post-merger governance: Advance/Newhouse retains 2 board nominees on 13-member board.
       Cox Enterprises gets 23% of combined entity (via $4B cash + $6B convertible preferred units +
@@ -658,7 +686,7 @@ advance_investments:
       Advance. Despite Charter's 82% 5-year decline, a SpaceX mobile partnership could re-rate the
       stock. Advance's ~$2.75B stake (at $133.54) could see meaningful upside if Charter pivots from
       declining cable to space-enabled mobile connectivity.
-    current_value_estimate: "~$2.70B at $131.15/share (Jul 15 intraday, +2.53% bounce). Down from $8.7B at 52-week high of $413.14. Jul 14 close $127.91 was $3.86 above 52W low $124.05. BNP Paribas Exane PT $120 (Jul 14) — BELOW 52W low. Goldman $125 sell (Jul 2), Barclays $130 underweight (Jul 8). Consensus 'Reduce' (6 sell, 8 hold, 5 buy). Q2 earnings Jul 24. Cox merger: CPUC Aug 13 target, HSR expires Sep 15. Buybacks $963M in Q1 + $100M/mo from LBRDA may reduce total shares ~20% in 2026."
+    current_value_estimate: "~$2.75B at ~$133.48/share (Jul 16 intraday, +1.70%). Down from $8.7B at 52-week high of $413.14. Jul 15 close $131.24, rebounding from Jul 14 close $127.91 ($3.86 above 52W low $124.05). ANALYST DOWNGRADE CASCADE (Jul 2-14): Goldman $125 Sell (Jul 2), Zacks Strong Sell (Jul 6), Wells Fargo $160 Underweight (Jul 7), Barclays $130 Underweight (Jul 8), Bernstein $170 Hold (Jul 13), BNP Paribas Exane $120 Underperform (Jul 14) — BELOW 52W low, most bearish. SIX analyst actions in 12 days. Consensus 'Reduce' (6 sell, 8 hold, 5 buy). Q2 earnings Jul 24. Cox merger: FCC approved, NY approved, CPUC sole remaining hurdle — CalAdvocates + CETF settled (support approval), only TURN opposes. Aug 13 CPUC target, HSR expires Sep 15. Buybacks $963M in Q1 + $100M/mo from LBRDA may reduce total shares ~20% in 2026."
     competitive_with: []
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
     spacex_partnership_source_urls:
@@ -811,7 +839,7 @@ advance_investments:
       realized from June 2024 sale = ~$4.04B total from WBD investment. This would be Advance's largest
       single liquidity event since the Reddit IPO and could significantly alter the family office's capital
       allocation and media strategy.
-    current_value_estimate: "~$2.69B remaining at market ($27.48 Jul 14 close, +1.44%) or ~$2.94B at Paramount tender ($30/share) + $1.1B already realized = ~$3.79-4.04B total. WBD market cap ~$68.9B. 12-AG lawsuit (Jul 13) + WGA lawsuit (Jul 14) = dual active suits. TRO hearing Fri Jul 18. Market resilient (+1.44% on WGA filing day). FCC Chair Carr questioned antitrust basis. Q2 earnings Aug 6. Ticking fee ($0.25/share/quarter) triggers if deal doesn't close by Sep 30."
+    current_value_estimate: "~$2.65B remaining at market (~$27.08 Jul 16 intraday, -0.70%) or ~$2.94B at Paramount tender ($30/share) + $1.1B already realized = ~$3.76-4.04B total. WBD market cap ~$68.7B. 12-AG lawsuit (Jul 13) + WGA lawsuit (Jul 14) = dual active suits. TRO hearing Fri Jul 18 (Judge Pitts, 10am PT). Market resilient (+1.44% on WGA filing day). FCC Chair Carr questioned antitrust basis. Q2 earnings Aug 6. Ticking fee ($0.25/share/quarter) triggers if deal doesn't close by Sep 30."
     competitive_with: ["Meta (streaming/content)"]
     sec_filing_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=advance%2Fnewhouse+programming&CIK=&type=13D&dateb=&owner=include&count=40&search_text=&action=getcompany"
     source_urls:
