@@ -106,7 +106,33 @@ ownership_chain:
       relationship to collapse entirely. The timing of this directive (May 2026) is significant —
       it came weeks after the Self/Glamour/Wired Italy closures (Apr 16), suggesting the portfolio
       pruning is part of the same strategic response to Google traffic zeroing out.
+      VENUE CONFLICT: TBPN was acquired by OpenAI in April 2026 (confirmed Search Engine Journal).
+      Lynch chose to announce his anti-Google strategy on a show OWNED by OpenAI — while Condé Nast
+      has a multiyear AI licensing deal with OpenAI (since Aug 2024). This creates a circular dynamic:
+      OpenAI's platform amplifies the narrative that Google search is dying → publishers abandon Google →
+      publishers become more dependent on AI licensing deals (including with OpenAI) for replacement
+      revenue. Lynch's three appearances on TBPN/Channels constitute executive-level platform alignment
+      with the company's largest AI licensing partner.
+      VERGE AMPLIFICATION: Nilay Patel (The Verge EIC) explicitly shared and endorsed Lynch's TBPN
+      interview on Decoder podcast, adopting the term "Google Zero" — which Patel says HE coined. Patel
+      said: "that's what I've been calling Google Zero." The Verge's EIC is editorially aligning with
+      the parent company's commercial anti-Google posture, propagating it through PMC-owned (formerly
+      Vox Media) podcast infrastructure. This blurs editorial independence from commercial strategy.
+      THIRD-PARTY VALIDATION (cited by Lynch): Chartbeat found 60% drop in search referral traffic for
+      small publishers over 2 years. Pew Research (Jul 2025): when Google AI Overview is featured, only
+      1% of users click on cited links, and only 8% click organic blue links below AIO (vs 15% when no
+      AIO present). Reuters Institute projects 40%+ further decline over next 3 years. Google I/O 2026
+      redesigned search with "information agents" that monitor the web for users without requiring
+      click-through.
+      CHRONOLOGY: MediaPost (Mar 3, 2026) was earliest public report of Lynch's FT comments. Lynch
+      called AI Overviews "another sort of death blow" in search traffic. He confirmed Condé Nast
+      "increased its revenue last year" despite worse-than-expected search traffic declines, attributing
+      growth to subscriptions and non-search revenue. He criticized Google's opt-out arrangement but has
+      NOT reached an AI licensing deal with Google (the only major tech platform excluded alongside Meta).
       Source: Adweek (May 2026) — https://www.adweek.com/media/conde-nast-events-revenue-2026/
+      Source: Search Engine Journal (May 12, 2026) — https://www.searchenginejournal.com/conde-nast-ceo-plan-as-if-search-traffic-will-be-zero/
+      Source: MediaPost (Mar 3, 2026) — https://www.mediapost.com/publications/article/407108/
+      Source: Pew Research Center (Jul 2025) — cited in MediaPost
 
       REGULATORY CONTEXT: European Commission opened formal antitrust probe into Google's AI content
       practices (Dec 9, 2025). UK CMA proposed binding conduct requirements under Digital Markets,
@@ -382,13 +408,13 @@ advance_investments:
       NOTE: Reddit Q2 earnings Jul 30 — if Reddit misses consensus, RDDT could gap down given
       2.23 beta and Advance's concentrated position + margin loan. Conversely, continued beats
       could push past $200 resistance.
-      ADVANCE TOTAL PUBLIC EQUITY SNAPSHOT (Jul 15 INTRADAY, ~9:00 AM PT):
-        - Reddit: $8.52B (42.2M shares × $201.84 intraday, RDDT -0.70% — slipping below $203.72 close)
-        - Charter: $2.70B (20.6M shares × $131.15 intraday, CHTR +2.53% — relief bounce from 52W low zone)
-        - WBD: ~$2.67B (98M shares × $27.25 intraday, WBD -0.84% — slight pullback)
-        - Total: ~$13.89B (down ~$40M from Jul 14 $13.93B; CHTR bounce partly offsets RDDT dip)
-        - Reddit concentration: 61.3% of Advance public equity (down from 61.7% Jul 14 as CHTR bounced)
-        - CHTR JUL 15 BOUNCE: +2.53% recovery from $127.91 close (Jul 14). Likely technical bounce
+      ADVANCE TOTAL PUBLIC EQUITY SNAPSHOT (Jul 15 CLOSE):
+        - Reddit: $8.36B (42.2M shares × $198.03, RDDT -2.79% — gave back gains, closed below $200)
+        - Charter: $2.70B (20.6M shares × $131.24, CHTR +2.60% — relief bounce from $127.91 52W low zone)
+        - WBD: ~$2.67B (98M shares × $27.27, WBD -0.76% — slight pullback on merger uncertainty)
+        - Total: ~$13.73B (down from $13.89B intraday; RDDT selloff erased morning gains)
+        - Reddit concentration: 60.9% of Advance public equity (slipped below 61% as RDDT declined)
+        - CHTR JUL 15 BOUNCE: +2.60% recovery from $127.91 close (Jul 14). Likely technical bounce
           after touching within $3.86 of 52W low ($124.05). Still deep in structural decline territory
           (-67% 1Y). Aggressive CHTR buyback program ($963M in Q1 2026, ~4% of market cap — see
           buyback_program note below) provides floor support.
@@ -400,6 +426,10 @@ advance_investments:
         - WBD: 12-AG antitrust lawsuit (Jul 13) + WGA lawsuit (Jul 14) = TWO active suits to block
           Paramount merger. TRO hearing Fri Jul 18 could temporarily halt deal. Market unperturbed
           (WBD +1.44% Jul 14). FCC Chair Brendan Carr questioned antitrust basis for state suit.
+        - RDDT: Closed at $198.03 (Jul 15), -2.58% on day. Jefferies set $250 target (Jul 10).
+          Q2 earnings Jul 30. RDDT annual TTM revenue $2.2B, net income $530M, P/E ~57. Advance
+          stake concentration risk: a 10% RDDT decline would wipe ~$836M from Advance equity.
+          Reddit AI licensing revenue ($200M+/yr, renewing 2027) remains the fastest-growing stream.
       This is a potential volatility catalyst for Advance's collateral value.
     credit_facility_monetization: >
       REDDIT MARGIN LOAN (reported Jun 12, 2026, Bloomberg Law): Advance Magazine Publishers Inc.
@@ -1041,8 +1071,8 @@ advance_investments:
 # ACBJ: Private
 # IRONMAN Group: Private
 # Other holdings: Private
-# TOTAL PUBLIC EQUITY: ~$13.82B at market (Reddit + Charter + WBD, Jul 13 close prices)
-# Breakdown: RDDT $8.48B (42.2M × $200.93) + CHTR ~$2.69B (20.6M × $130.73) + WBD ~$2.65B (98M × $27.09)
+# TOTAL PUBLIC EQUITY: ~$13.73B at market (Reddit + Charter + WBD, Jul 15 close prices)
+# Breakdown: RDDT $8.36B (42.2M × $198.03) + CHTR ~$2.70B (20.6M × $131.24) + WBD ~$2.67B (98M × $27.27)
 # Up from ~$13.23B (Jul 10) — RDDT recovery driving rebound. RDDT reclaimed $200 level.
 # CHTR: $130.73 close, consensus "Reduce" (6 sell, 8 hold, 5 buy). Q2 earnings Jul 24.
 #   CHTR STRESS: YTD -37.34%, approaching 52-week low of $124.05 (-68% from 52W high $413.14).
