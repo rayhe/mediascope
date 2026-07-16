@@ -1,4 +1,42 @@
 # MediaScope Iteration Log
+## 2026-07-15 19:00 PT — Type D: Toolkit Quality & Documentation (Stale Proposed Additions Fix + Path N + Calibration Ledger)
+
+**Rotation:** D (Toolkit Quality & Documentation)
+**Commit:** `1235e7b`
+**Files changed:** docs/ACCURACY_GUIDE.md (+29/−8), docs/FRAMING_REFERENCE.md (+11/−5)
+
+### Focus: Cross-document consistency audit and documentation of recent discoveries
+
+Found and fixed documentation inconsistencies between the codebase (framing.py, tests) and reference docs, plus documented the newly identified split-valence advocacy gap and forced-retreat override validation data.
+
+### Changes
+
+**FRAMING_REFERENCE.md:**
+1. **Fixed stale Proposed Additions section** — `humanization` (#105) and `surveillance_enumeration` (#106) were listed as "Pending Validation" but both are fully implemented in `framing.py` (lines 9374–9534) with complete pattern sets and regression tests (`test_humanization_and_surveillance_enumeration.py`). Removed from proposed table; added promotion note with dates (Jul 14–15, 2026).
+2. **Added Path N (Split-Valence Advocacy)** as candidate correction path — discovered from BuzzFeed "Lorde Slams Meta AI Glasses" (Jul 15). Problem: VADER averages positive celebrity-praise and negative product-critique into false near-zero. No existing path fires (agency +0.25 blocks A, loaded 4 < 7 blocks D, aside 1 < 2 blocks H, consumer_devices 1 < 2 blocks I). Cross-validated against Gizmodo same-event coverage (fires Path A correctly because it uses pure adversarial framing). Status: needs ≥2 more validation articles.
+3. **Expanded kicker_framing (#22)** with backfired-kicker subtype — body describes positive initiative, final sentence uses single conclusory verb ("has now backfired") to invert entire article reading. Validated on Register Muse Image/superintelligence (Jul 13).
+4. Updated last-modified timestamp to 2026-07-16.
+
+**ACCURACY_GUIDE.md:**
+1. **Added forced-retreat override to calibration ledger** (Path A section) — NY Post "Meta yanks Muse Image" (Jul 13): raw +0.30, agency +0.33/−0.20, corrected −0.43, manual −0.45, residual +0.02. Documented 0.5× EI dampening rationale.
+2. **Added split-valence advocacy to known gaps table** — new row with workaround: compare against same-event single-valence coverage, flag when raw tone ±0.10 with adversarial count ≥ 6.
+3. **Added celebrity/fan advocacy genre** to genre-specific accuracy table — BuzzFeed, People, Us Weekly class. Raw accuracy: Low (split-valence cancellation). Corrected: No path fires. Candidate Path N.
+4. **Added BuzzFeed Lorde article to documented correction failures** — 4th failure specimen (raw +0.05, manual −0.35, gap +0.40).
+5. **Updated corpus counts:** 185 → 189 annotated articles (4 occurrences). Correction stats: 33 → 34 articles requiring correction, 31 → 32 improved. Polarity inversions: 20 → 21.
+6. **Updated key takeaway** to reference 4 documented failure modes (was 3): consent-alarm structural, colloquial sarcasm, opinion/essay, split-valence advocacy.
+
+### Verification
+- All 124 structural consistency tests pass (0 regressions)
+- YAML valid
+- Git push to origin/main successful
+
+### Analytical Observations
+- The stale proposed additions (humanization, surveillance_enumeration still listed as "pending" despite full implementation) is a process gap — the Type A iteration that implemented these devices (Jul 14) updated the main taxonomy but didn't clean up the proposed section. Adding a promotion note preserves the audit trail.
+- Path N vs Path M distinction: Path M (structural irony) is about section-ordering creating negative meaning invisible at sentence level. Path N (split-valence) is about two-entity valence cancellation at the lexical level. Different failure modes with different detection signals.
+- The forced-retreat override residual (+0.02) is the tightest in the Path A family, suggesting the 0.5× dampening factor is well-calibrated for capitulation narratives.
+
+---
+
 ## 2026-07-15 18:00 PT — Type C: Condé Nast/Advance Ownership & Funding Deep Dive
 
 **Rotation:** C (Ownership & Funding)
