@@ -1672,11 +1672,29 @@ def extract_sources(text: str) -> list[SourceMention]:
         ),
     ]
 
+    # Regex to strip trailing attribution verb phrases from group expert
+    # names.  Pattern 7's first regex matches the full "Legal analysts
+    # noted that" — the verb + trailing connector must be removed so the
+    # source name is just "Legal analysts".
+    _STRIP_VERB_TAIL_RE = re.compile(
+        rf"\s+(?:have\s+)?(?:{verb_alternation})"
+        rf"(?:\s+(?:as much|similarly|likewise|that|in))?$",
+        re.IGNORECASE,
+    )
+
     for pat in group_expert_patterns:
         for m in pat.finditer(text):
             descriptor = m.group().strip()
-            # Deduplicate
-            if descriptor.lower() in {n.lower() for n in seen_names}:
+
+            # Strip trailing attribution verb phrases from the name so
+            # "Legal analysts noted that" becomes "Legal analysts".
+            descriptor = _STRIP_VERB_TAIL_RE.sub("", descriptor).strip()
+
+            # Deduplicate — also check if this name is a substring of
+            # an existing name or vice versa to catch truncated
+            # duplicates like "Legal" vs "Legal analysts".
+            descriptor_lower = descriptor.lower()
+            if descriptor_lower in {n.lower() for n in seen_names}:
                 continue
             seen_names.add(descriptor)
 
@@ -2334,6 +2352,48 @@ def extract_sources(text: str) -> list[SourceMention]:
                 source_type="research_report",
             ))
 
+    # ---- Post-extraction: prefix-truncation deduplication ----
+    # Remove sources whose name is a strict prefix of another source's
+    # name, keeping the longer (more specific) version.  Prevents e.g.
+    # "Legal" (Pattern 5b single-name match) from surviving alongside
+    # "Legal analysts" (Pattern 7 group expert match).
+    #
+    # Uses prefix matching (not arbitrary substring) to avoid false
+    # positives: "Meta" is a legitimate organizational source even when
+    # "the attorneys for Meta argued" exists — "Meta" is embedded in the
+    # middle, not a prefix truncation.
+    _indices_to_drop: list[int] = []
+    for i, src_a in enumerate(sources):
+        if i in _indices_to_drop:
+            continue
+        for j, src_b in enumerate(sources):
+            if j <= i or j in _indices_to_drop:
+                continue
+            a_lower = src_a.name.lower().strip()
+            b_lower = src_b.name.lower().strip()
+            # Skip if names are identical (already handled by seen_names)
+            if a_lower == b_lower:
+                _indices_to_drop.append(j)
+                continue
+            # If shorter name is a prefix of the longer name (word-
+            # boundary aligned), drop the shorter one as a truncation.
+            if len(a_lower) < len(b_lower):
+                if (
+                    b_lower.startswith(a_lower + " ")
+                    or b_lower.startswith(a_lower + "'")
+                ):
+                    _indices_to_drop.append(i)
+                    break
+            elif len(b_lower) < len(a_lower):
+                if (
+                    a_lower.startswith(b_lower + " ")
+                    or a_lower.startswith(b_lower + "'")
+                ):
+                    _indices_to_drop.append(j)
+    if _indices_to_drop:
+        sources = [s for i, s in enumerate(sources)
+                   if i not in _indices_to_drop]
+
     return sources
 
 
@@ -2895,6 +2955,30 @@ def analyze_source_stance(
                             break
 
             if is_adversarial_role:
+                adversarial.append(source.name)
+            # --- Documentary complaint/lawsuit stance ---
+            # Court complaints, lawsuits, and legal filings cited as
+            # documentary sources are inherently adversarial toward the
+            # defendant entity.  A "complaint" is filed BY a plaintiff
+            # AGAINST a defendant — its allegations are adversarial by
+            # nature regardless of the neutral language used in
+            # attribution ("the complaint states").
+            #
+            # Discovered in Analytics Insight Meta AI Layoff article
+            # (Jul 15, 2026): the lawsuit/complaint was scored neutral
+            # because its attribution verb was "states" (neutral) and
+            # quote content discussed discrimination without matching
+            # the negative stance terms directly.
+            elif (
+                getattr(source, "source_type", "") == "documentary"
+                and re.search(
+                    r"\b(?:complaint|lawsuit|suit|litigation|"
+                    r"class[ -]action|legal[ -]action|"
+                    r"court[ -]filing|petition|indictment|"
+                    r"charge|allegation|claim)\b",
+                    (source.name + " " + source.quote + " " + context_text).lower(),
+                )
+            ):
                 adversarial.append(source.name)
             elif neg_count > pos_count:
                 adversarial.append(source.name)

@@ -1,0 +1,28 @@
+Title: Did Meta Use AI to Decide on Layoffs? Company Responds
+Publication: Analytics Insight (analyticsinsight.net)
+Date: July 15, 2026
+URL: https://www.analyticsinsight.net/news/did-meta-use-ai-to-decide-on-layoffs-company-responds
+
+Meta is facing what appears to be the first major lawsuit in the United States to challenge the alleged use of AI in conducting corporate layoffs, and the company is pushing back hard. Twenty-six current and former employees filed suit in the US District Court for the Northern District of California on July 14, accusing Meta of using an internal constellation of AI systems to score, rank, and select workers for termination and doing so in a way that disproportionately targeted people on medical, maternity, or parental leave.
+
+Meta has flatly denied the allegations, with a spokesperson stating that "workforce management and organizational decisions were and are made by people, not AI."
+
+What the Lawsuit Actually Alleges
+
+The complaint centers on Meta's May 2026 layoffs, which eliminated roughly 8,000 employees around 10% of its global workforce, as the company repositioned itself as an 'AI-first' organization. The plaintiffs, whose identities have been redacted from court filings, include engineers, managers, researchers, designers, and at least one director with direct access to the AI platform in question.
+
+They allege Meta's selection process relied on an internal large language model called Metamate, which was trained on employee communications and documents, alongside algorithmic productivity scores derived from keystroke activity, browser history, and email data, as well as internal records of AI token consumption and AI-assisted performance review tools. Crucially, the complaint argues this scoring framework failed to account for time spent on legally protected leave, meaning employees who had taken maternity, parental, or medical absence were effectively penalized for reduced output during periods when they were legally entitled to be away.
+
+Nearly half of the plaintiffs say their termination directly followed protected leave. "Meta did not assemble the termination list through the considered judgment of managers who knew the work," the complaint states, a framing that puts the case squarely at the intersection of employment discrimination law and algorithmic accountability.
+
+Meta's Denial and What's at Stake
+
+Meta's denial has been consistent across outlets. A spokesperson told CNBC that the claims "lack merit and are not based on facts," maintaining that human judgment drove all workforce decisions. The plaintiffs are now seeking a preliminary court ruling to block Meta from completing the layoffs on July 22 while they pursue their claims in private arbitration, the channel their employment contracts require for dispute resolution. Legal analysts noted that a human manager signing off on an algorithm's output doesn't automatically insulate a company from discrimination claims if the underlying scoring criteria were themselves discriminatory.
+
+The lawsuit arrives just weeks after a federal judge in California ruled that Workday must face similar claims that its AI-powered job-screening services allegedly violate state and federal anti-discrimination laws. This precedent may make judges more receptive to scrutinizing AI's role in employment decisions, not just hiring but now termination as well.
+
+Why This Case Could Set a Precedent
+
+This isn't Meta's only discrimination lawsuit tied to its 2026 layoffs, a separate suit filed earlier this year alleged the cuts disproportionately affected older workers. But the AI-selection angle makes this case particularly significant. It is the first of its kind against a major US company, and its outcome could directly shape how courts evaluate the use of AI systems in workforce decisions, what disclosure obligations employers carry when algorithmic tools inform layoffs, and whether "a human approved it" constitutes sufficient oversight when the upstream scoring methodology was built without legal-leave exemptions.
+
+For the broader tech industry, which has rapidly adopted AI-driven performance and productivity tools across HR functions, the case represents an early signal of where legal and regulatory exposure could be building quietly beneath the efficiency gains these systems appear to deliver.

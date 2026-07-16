@@ -9798,6 +9798,41 @@ def detect_framing_devices(
                 # not ironic quotation.  Longer quotes and quotes followed by
                 # editorial undermining are preserved.
                 # -----------------------------------------------------------------
+
+                # --- Hypocrisy frame: legal-precedent filter ------------------
+                # Suppress hypocrisy_frame when the match contains "precedent"
+                # in a legal/judicial context.  "Set a precedent" in litigation
+                # coverage describes a novel legal ruling, not a company's
+                # contradictory say-one-thing-do-another behavior.  The pattern
+                # "set a precedent ... but" is normal legal writing
+                # (describing precedent followed by a qualification), not
+                # hypocrisy framing.
+                #
+                # Discovered in Analytics Insight Meta AI Layoff article
+                # (Jul 15, 2026): section heading "Set a Precedent" near
+                # "but" triggered hypocrisy_frame — this article is about
+                # legal precedent (first AI-layoff discrimination lawsuit),
+                # not corporate hypocrisy.
+                # ---------------------------------------------------------
+                if device_type == "hypocrisy_frame":
+                    _matched_hyp = match.group().lower()
+                    if "precedent" in _matched_hyp:
+                        _context_hyp = text[
+                            max(0, start - 120):min(len(text), end + 120)
+                        ].lower()
+                        _LEGAL_CONTEXT_CUES = (
+                            "court", "judge", "lawsuit", "suit ",
+                            "plaintiff", "defendant", "legal",
+                            "litigation", "ruling", "filing",
+                            "complaint", "statute", "judicial",
+                            "discrimination", "trial", "verdict",
+                            "first of its kind", "first-of-its-kind",
+                            "class action", "class-action",
+                        )
+                        if any(cue in _context_hyp
+                               for cue in _LEGAL_CONTEXT_CUES):
+                            continue
+
                 if device_type == "ironic_quotation":
                     _quoted = match.group().strip('" \u201c\u201d')
                     _word_count = len(_quoted.split())
