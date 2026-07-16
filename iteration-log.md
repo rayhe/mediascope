@@ -1,4 +1,55 @@
 # MediaScope Iteration Log
+## 2026-07-16 08:00 PT — Type B: Journalist Research (Parmy Olson + Shira Ovide)
+
+**Rotation:** B (Journalist/Publication Research)
+**Commit:** `f08280b` — "Type B: Add Parmy Olson (Bloomberg Opinion) and Shira Ovide (WaPo/NYT/Bloomberg/WSJ) profiles"
+
+### What was done
+
+Added 2 strategically important journalist profiles not previously tracked:
+
+#### Parmy Olson (Bloomberg Opinion) — Full new profile
+- **Career:** 6 entries — local radio/BBC (2004-06) → Forbes staff reporter (2006-08) → Forbes London bureau chief (2008-12) → Forbes senior correspondent SF/London (2012-19) → WSJ tech reporter London (2019-21) → Bloomberg Opinion technology columnist (2021-present)
+- **Awards:** 5 — FT & Schroders Business Book of Year 2024 ("Supremacy"), PRCA Digital Journalist of Year 2023, Palo Alto Networks Cyber Security Cannon Award 2014, 2x SABEW honorable mentions (Facebook/WhatsApp), Business Insider Top 100 UK Tech 2019
+- **Source URLs:** 8 (Wikipedia, Chartwell Speakers, Pan Macmillan, Turing Institute, Eventible, Knect365, ResponseSource, TalkingBizNews)
+- **Key Meta coverage:** open-source AI strategy ("Free AI Is a Clever Form of Bait"), $100M AI hiring blitz, Yann LeCun departure, Superintelligence Labs, user data as AI training, AI slop/synthetic content, Zuckerberg+Musk AI Failure Club
+- **Strategic value:** Arguably the single most influential opinion columnist shaping investor/policymaker perception of Zuckerberg's AI strategy. Bloomberg Opinion syndicated via Bloomberg Law, Bloomberg Terminal, Techmeme — her frames propagate to tracked publications
+- **Books:** "We Are Anonymous" (2012, Little Brown), "Supremacy" (2023, Pan Macmillan; FT Business Book of Year 2024; updated 2025 edition)
+
+#### Shira Ovide (Washington Post) — Full new profile
+- **Career:** 6 entries — Star-Ledger intern (2003) → Dow Jones (2004-07) → WSJ reporter/columnist (2007-15) → Bloomberg Opinion tech columnist (2015-20) → NYT "On Tech" newsletter (2020-22) → WaPo Help Desk strategy editor / "Tech Friend" newsletter (2022-present)
+- **Education:** 2 records — BA Political Science (Haverford College), MS Journalism (Columbia)
+- **Source URLs:** 6 (NYTCo, TheOrg, TalkingBizNews x2, Editor&Publisher, Muck Rack)
+- **Strategic value:** EXCEPTIONAL DiD candidate — 4-publication career spanning reporting (WSJ), opinion (Bloomberg), newsletter (NYT), consumer advice (WaPo). Same journalist, three distinct institutional framings of tech accountability. Bloomberg column was sharp/witty financial-analytical; NYT "On Tech" was accessible/explanatory; WaPo "Tech Friend" is consumer-empowerment/practical. Natural experiment in institutional editorial influence vs individual voice.
+
+### Bug fix
+- Fixed invalid `event_type: transferred` on Parmy Olson Forbes career entry → `career_change` (valid enum value)
+
+### Stats updated
+- README.md: journalists 242→244, career migrations 942→952, auto-detected migrations 737→743
+- EDITORIAL_HISTORIES.md: journalists 242→244, multi-pub 232→234, auto-detected migrations 737→743, publications 433→435
+- careers_demo.py: 242→244 tracked journalists
+
+### Verification
+- All 124 structural consistency tests pass
+- `count_stats.py --check` returns ✅
+- Pushed to GitHub: `a57e665..f08280b`
+
+### Sources consulted
+- en.wikipedia.org/wiki/Parmy_Olson
+- chartwellspeakers.com/speaker/parmy-olson/
+- panmacmillan.com/authors/parmy-olson
+- turing.ac.uk/people/parmy-olson
+- eventible.com/speakers/parmy-olson/
+- tmt.knect365.com/startup-elevate/speakers/parmy-olson
+- responsesource.com/press-releases/parmy-olson-joins-the-wall-street-journal/
+- talkingbiznews.com (Bloomberg Opinion hire memo, Forbes brand-building, Forbes EU audience, WSJ hire)
+- news.bloomberglaw.com (7 Olson columns: Free AI Bait, $100M Offers, AI Slop, Free Days Numbered, Secret Weapon, AI Failure Club, Groupthink vs Godfather)
+- nytco.com/press/shira-ovide-joining-the-times/
+- theorg.com/org/the-washington-post/org-chart/shira-ovide
+- editorandpublisher.com (WaPo hire, Tech Friend launch)
+- muckrack.com/shira-ovide
+- goodreads.com/author/show/5803212.Parmy_Olson
 ## 2026-07-16 05:00 PT — Type A: WSJ AI Backlash Executive Threats Deep Dive
 
 **Rotation:** A (Article Deep Dive)
