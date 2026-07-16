@@ -6749,6 +6749,30 @@ _COMPETITIVE_POSITIONING_PATTERNS: list[re.Pattern] = [
         r"\b(?:close|narrow|bridge|shrink)\s+the\s+gap\b",
         re.IGNORECASE,
     ),
+    # ---------------------------------------------------------------------------
+    # Analyst preference framing: "prefers X to/over Y", "better pick(s) than",
+    # "more cautious on X", "remain on the sidelines" — analyst language that
+    # explicitly ranks one company above or below another.
+    # Discovered via IBD Wedbush hyperscalers article (Jul 16, 2026):
+    # "Prefers Google And Amazon To Meta" and "better picks than Meta" are
+    # competitive positioning that wasn't caught by existing patterns.
+    # ---------------------------------------------------------------------------
+    re.compile(
+        r"\b(?:prefers?|favou?rs?)\s+\w+(?:\s+and\s+\w+)?\s+(?:to|over)\s+\w+\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\bbetter\s+(?:picks?|bets?|positioned|choice)\s+(?:than|in that race)\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\b(?:more|most)\s+(?:cautious|bearish|skeptical|negative)\s+on\b",
+        re.IGNORECASE,
+    ),
+    re.compile(
+        r"\bremain(?:s|ing)?\s+on\s+the\s+sidelines?\b",
+        re.IGNORECASE,
+    ),
 ]
 _DEVICE_PATTERNS["competitive_positioning"] = _COMPETITIVE_POSITIONING_PATTERNS
 

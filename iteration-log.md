@@ -1,4 +1,52 @@
 # MediaScope Iteration Log
+## 2026-07-16 10:00 PT — Type D: Toolkit Quality & Documentation (litigation_framing pronoun guard)
+
+**Rotation:** D (Toolkit Quality & Documentation)
+**Commit:** `1c9c214` — "Type D: fix litigation_framing 'sue me' false positive, add pronoun guard + 21 tests, document resolved/deferred bugs"
+
+### What was done
+
+#### 1. Bug Fix: litigation_framing colloquial "sue me" false positive
+
+**Root cause:** The suing pattern (`\b(?:is\s+)?su(?:ing|ed?|es)\s+(?:the\s+)?(?:[A-Z]\w+)`) used `re.IGNORECASE`, which made `[A-Z]\w+` match lowercase pronouns like "me", "him", "us" as if they were named entities. This caused colloquial/idiomatic uses ("sue me — occasionally impatient", "so sue me", "go ahead and sue us") to trigger as genuine litigation framing.
+
+**Fix:** Added negative lookahead for 12 personal pronouns: `(?!(?:me|him|her|us|them|you|yourself|myself|himself|herself|ourselves|themselves)\b)`. Named-entity litigation detection (sued Meta, suing Apple, is suing the Federal Trade Commission) fully preserved.
+
+**Discovery provenance:** Atlantic emotion-AI workplace surveillance article (May 2026) — Ellen Cushing's essay humor ("sue me — occasionally impatient"), first flagged in Type A iteration as "queued for Type D fix."
+
+#### 2. Test Coverage: 21 new regression tests
+
+`test_litigation_framing_pronoun_guard.py` with 3 test classes:
+- **TestColloquialSueMeSuppression** (9 tests): "sue me", "so sue me", "sued him", "sue us", "sue them", "suing her", "sue yourself", essay-prose dash context, gerund hedge
+- **TestGenuineLitigationFramingPreserved** (10 tests): sued [Company], suing [Entity], sues [Entity], sued the [Govt Body], filed lawsuit, seeking legal action, took to court, lawsuit lodged against, arbitration ruling, legal challenge against
+- **TestLitigationFramingEdgeCases** (2 tests): mixed-context article with both colloquial and genuine uses, capitalized "Sue me" at sentence start
+
+#### 3. Documentation Improvements
+
+**FRAMING_REFERENCE.md:** New "Pattern Guards & Resolved False Positives" section with table tracking fixes and a process note for documenting future pattern guards. Placed before "Proposed Additions" so the document flows from implemented devices → resolved fixes → pending additions.
+
+**ACCURACY_GUIDE.md:** Two new sections:
+- **Part 6: Resolved Pattern Bugs** — table of fixed issues with date, component, root cause, fix, and test reference
+- **Part 7: Open Deferred Bugs** — 5 known issues formally tracked with impact ratings and recommended fix approaches:
+  1. Source extraction in-quote name+verb false positives (Low)
+  2. Source extraction "which argued" organizational pattern (Low)
+  3. Source extraction "One user on X" anonymous pattern (Low)
+  4. sarcastic_correction sentence-initial evaluative connector gap (Medium)
+  5. Financial genre VADER inflation — no correction path (High, §16)
+
+**ARCHITECTURE.md + README.md:** Registered new test file, updated test counts (2,908 → 2,929 across 132 → 133 files).
+
+### Verification
+- All 2,929 tests pass (+ 9 xfailed)
+- 124 structural consistency tests pass
+- `count_stats.py --check` returns ✅
+- Pushed to GitHub: `e43861d..1c9c214`
+
+### Deferred item closed
+- ✅ "litigation_framing fires on colloquial 'sure, sue me' — not actual litigation framing. Pattern needs negative lookahead for casual/dismissive context. Queued for next Type D iteration." (first flagged in Type A iteration, Atlantic emotion-AI article)
+
+---
+
 ## 2026-07-16 09:00 PT — Type C: Ownership & Funding (Advance Portfolio Jul 16 Update)
 
 **Rotation:** C (Ownership & Funding Deep Dive)

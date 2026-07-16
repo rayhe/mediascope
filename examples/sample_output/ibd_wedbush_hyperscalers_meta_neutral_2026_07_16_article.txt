@@ -1,0 +1,49 @@
+AI Internet Hyperscalers: Why Wedbush Prefers Google And Amazon To Meta
+
+Published: July 16, 2026
+Source: Investor's Business Daily (investors.com)
+URL: https://www.investors.com/news/technology/amazon-stock-meta-google-wedbush-ai-hypscalers/
+
+Alphabet (GOOGL), Meta Platforms (META) and Amazon (AMZN) are each shelling out hundreds of billions to establish themselves as AI winners. Analysts at Wedbush Securities say Google and Amazon stocks are better picks in that race than Meta.
+
+Wedbush analyst Ygal Arounian assumed coverage of the three internet-focused cloud hyperscalers with a new research note for clients Thursday. Google and Amazon were started at outperform ratings, while Meta got a neutral grade.
+
+For Alphabet, the outperform call reflects "our view that Google has built the best-positioned full-stack AI franchise in our coverage," the Wedbush note said. Google was Wedbush's top mega-capitalization pick.
+
+Arounian pointed to Google's wide distribution through its search, Android and YouTube products. That distribution is paired with Google's custom Gemini AI model and a full cloud infrastructure business with custom processors.
+
+"Alphabet has become the clear leader in our view within the AI race offering a full-stack monetization opportunity around its AI spend," Arounian wrote.
+
+Google is trading at a higher multiple to projected earnings than Amazon and Meta, he added. But "We see more upside than downside from here," the note said. He set a price target of 445.
+
+Arounian also gave Amazon stock an outperform rating, with a price target of 293. Amazon's custom chips such as Trainium3 for AI have helped revitalize revenue growth for the profit-driving Amazon Web Services business, he wrote.
+
+"The AWS re-acceleration story still has room to run, alongside underappreciated upside in retail margins and long-duration optionality in other areas like satellite broadband," the Wedbush analyst wrote.
+
+Why Wedbush Is Neutral On Meta Stock
+
+Meta was given a neutral view with a 671 price target.
+
+In Arounian's view, Meta has yet to show a clear "AI capex (capital expenditures) return story" beyond improvements to its core advertising business. Its Muse Spark models, subscription offerings and potential cloud business are still in early stages, he added.
+
+"That gap between capex intensity and diversified monetization is the central debate for the stock, in our view, and the reason we remain on the sidelines despite Meta's valuation discount to peers," Arounian wrote.
+
+The ratings are part of a report where Wedbush's Arounian assumed coverage of 21 stocks with internet-focused business models.
+
+Arounian rated Uber Technologies (UBER) as a top pick among large capitalization internet-focused stocks (Google, Meta and Amazon are considered megacaps). Reddit (RDDT) was his pick for midsize capitalization stocks, and Xometry (XMTR) was top small-cap pick. Xometry operates an on-demand marketplace for custom manufacturing.
+
+"The distinction between spending on AI and owning a durable position because of it is the thread that runs through the report," Arounian wrote. "It's why we're constructive on Alphabet's full-stack advantage even at a premium multiple, more cautious on Meta until its AI story broadens past advertising, and positive on names like Reddit, Amazon, Uber, and eBay (EBAY), where we think good execution and product is being underpriced."
+
+Amazon Stock Edges Up, Meta Falls
+
+On the stock market today, Amazon stock gained a fraction to 256.09. Shares are hovering just above Amazon's 50-day moving average.
+
+While Amazon has pulled back 8% from a 52-week high reached in early May, the stock is ahead 10.6% this year. That is roughly equal to the overall gain for the S&P 500.
+
+Google stock is ahead slightly in recent trades, near 371.16. Like Amazon, shares are hovering near its 50-day line. Google is ahead 19% year to date but 9% below a high from May 18.
+
+Meta stock is down more than 1% at 673.
+
+Meta shares are ahead 2.9% year to date. A strong rally late last week pushed Meta back above its 200-day moving average, following an extended slump.
+
+The release of Meta's latest AI model helped power the rally. Chief Executive Mark Zuckerberg also confirmed that the company will consider selling some of its excess cloud capacity as a new line of business.

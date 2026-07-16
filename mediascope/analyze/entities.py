@@ -175,8 +175,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         "aliases": [
             "Amazon", "AWS", "Alexa", "Jeff Bezos", "Andy Jassy",
             "Amazon Web Services", "Kindle", "Ring", "Prime Video",
+            "Trainium", "Trainium2", "Trainium3", "Inferentia",
         ],
-        "regex": r"(?<!\w)(Amazon(?!\s+(?:rain|forest|river|basin))|AWS|Alexa|Jeff Bezos|Andy Jassy|Amazon Web Services|Kindle|Ring|Prime Video)(?!\w)",
+        "regex": r"(?<!\w)(Amazon(?!\s+(?:rain|forest|river|basin))|AWS|Alexa|Jeff Bezos|Andy Jassy|Amazon Web Services|Kindle|Ring|Prime Video|(?-i:Trainium\d?)|(?-i:Inferentia))(?!\w)",
     },
     "Microsoft": {
         "aliases": [
@@ -511,6 +512,18 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Snap", "Snapchat", "Spectacles", "Evan Spiegel",
         ],
         "regex": r"(?<!\w)(Snap(?:chat)?|Spectacles|Evan Spiegel)(?!\w)",
+    },
+    "Reddit": {
+        "aliases": [
+            "Reddit", "RDDT",
+        ],
+        "regex": r"(?<!\w)(Reddit|(?-i:RDDT))(?!\w)",
+    },
+    "eBay": {
+        "aliases": [
+            "eBay", "EBAY",
+        ],
+        "regex": r"(?<!\w)(eBay|(?-i:EBAY))(?!\w)",
     },
     "Discord": {
         "aliases": [

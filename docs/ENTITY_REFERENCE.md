@@ -1,6 +1,6 @@
 # Entity Detection & Clustering Quick Reference
 
-> A compact lookup card for all 91 entity clusters (879 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
+> A compact lookup card for all 93 entity clusters (887 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
 
 ---
 
@@ -15,8 +15,8 @@ Entity detection is the **first stage** of the analysis pipeline — every downs
 | **Cluster** | A named group representing a single trackable entity (company, org, person category). Example: `Meta` |
 | **Alias** | A text string that maps to a cluster. Example: `"Facebook"`, `"Zuckerberg"`, `"Instagram"` all → `Meta` |
 | **Canonical Name** | The best alias match for a given text span. `"Andrew Bosworth"` matched in the Meta cluster resolves to canonical name `"Andrew Bosworth"`, not `"Meta"` |
-| **Custom Regex** | A hand-tuned regex for the cluster (62 of 83 clusters). Handles homographs, negative lookaheads, and context-sensitive matching |
-| **Auto Regex** | Word-boundary patterns auto-generated from the alias list (23 of 91 clusters). Simpler but adequate for unambiguous names |
+| **Custom Regex** | A hand-tuned regex for the cluster (68 of 93 clusters). Handles homographs, negative lookaheads, and context-sensitive matching |
+| **Auto Regex** | Word-boundary patterns auto-generated from the alias list (25 of 93 clusters). Simpler but adequate for unambiguous names |
 
 ### Pipeline Position
 
@@ -68,7 +68,7 @@ The primary analysis targets — companies whose coverage is compared for asymme
 | 1 | **Meta** | 89 | custom | Meta, Facebook, Instagram, WhatsApp, Threads, Zuckerberg, Reality Labs, Ray-Ban Meta, Llama, MTIA, Iris, Muse Spark/Image/Video, Fury, Metamate, Virtue AI, LeCun, Mosseri | Largest cluster. Custom regex handles `Meta` vs HTML `<meta>` tag (negative lookahead for `tag`, `data`, `description`, etc.). Codenames (Mango, Watermelon, Creator, Pocket) require trailing context keywords. |
 | 2 | **Google** | 12 | custom | Alphabet, Google, YouTube, DeepMind, Waymo, Sundar Pichai, Gemini, Google Messages, AlphaFold | Excludes `Google Sheet/Doc/Drive/Form/Search/Messages` to avoid tool-usage false positives; `Google Messages` matched explicitly before the exclusion fires |
 | 3 | **Apple** | 12 | custom | Apple, iPhone, iPad, Tim Cook, John Ternus, Apple Intelligence, Apple Vision Pro, Siri, iMessage | Excludes `Apple pie/cider/sauce/tree/juice/cinnamon` |
-| 4 | **Amazon** | 9 | custom | Amazon, AWS, Alexa, Jeff Bezos, Andy Jassy, Kindle, Ring, Prime Video | Excludes `Amazon rain/forest/river/basin` |
+| 4 | **Amazon** | 13 | custom | Amazon, AWS, Alexa, Jeff Bezos, Andy Jassy, Amazon Web Services, Kindle, Ring, Prime Video, Trainium, Trainium2, Trainium3, Inferentia | Excludes `Amazon rain/forest/river/basin`. Trainium/Inferentia custom chips added Jul 16. |
 | 5 | **Microsoft** | 9 | auto | Microsoft, Satya Nadella, Azure, Bing, LinkedIn, GitHub, Copilot, Xbox, Windows | Windows disambiguation via lookbehind filter (see Part 6) |
 | 6 | **OpenAI** | 14 | auto | OpenAI, Sam Altman, ChatGPT, GPT-4/5, DALL-E, Sora, Stargate, Jalapeño (chip codename) | Includes historical (GPT-2) and open-weight (gpt-oss) models |
 | 7 | **Anthropic** | 9 | auto | Anthropic, Dario/Daniela Amodei, Claude, Mythos, Fable, Project Glasswing, Amanda Askell | |
@@ -166,6 +166,8 @@ Cloud providers, AI startups, and infrastructure companies.
 | 89 | **Warby Parker** | 1 | auto | Warby Parker | Eyewear competitor in smart glasses space. Added Jul 15 from TechCentral smart glasses privacy article. |
 | 90 | **Be My Eyes** | 1 | auto | Be My Eyes | Accessibility partner for Meta Ray-Ban glasses. Added Jul 15 from TechCentral smart glasses privacy article. |
 | 91 | **BBC** | 2 | custom | BBC, British Broadcasting Corporation | Major international media organization. Added Jul 15 from TechCentral smart glasses privacy article. |
+| 92 | **Reddit** | 2 | custom | Reddit, RDDT | Social platform; critical for Advance Publications ownership tracking. Added Jul 16 from IBD Wedbush hyperscalers article. |
+| 93 | **eBay** | 2 | custom | eBay, EBAY | E-commerce marketplace. Added Jul 16 from IBD Wedbush hyperscalers article. |
 | 56 | **Australia** | 5 | custom | Australia, Australian government, eSafety Commissioner, Julie Inman Grant, Inman Grant | Extended Jul 14: added eSafety Commissioner Julie Inman Grant by name — previously only the title was matched. |
 | 57 | **Legal/Judicial** | 6 | custom | Delaware courts, Section 230, DSA, MDL numbers, federal courts/judges, Supreme Court | Extended in Jul 2026 to catch federal judges invisible in Reuters $1.4T article |
 
@@ -342,7 +344,7 @@ Understanding the alias distribution helps prioritize disambiguation work — la
 | **50+ aliases** | 3 | Meta (88), Financial Services (68), Academic/Research (54) |
 | **20–49 aliases** | 4 | US Government (47), Media/Publications (31), Energy/Utilities (24), Defense Tech (21) |
 | **10–19 aliases** | 13 | Nvidia (17), Research Centers (15), OpenAI (14), etc. |
-| **5–9 aliases** | 25 | Apple (12), Google (12), Microsoft (9), Amazon (9), etc. |
+| **5–9 aliases** | 25 | Apple (12), Google (12), Microsoft (9), Amazon (12), etc. |
 | **1–4 aliases** | 36 | Garmin (1), Cambridge Analytica (1), World Labs (1), etc. |
 
 **Coverage by category:**

@@ -1493,9 +1493,16 @@ def extract_sources(text: str) -> list[SourceMention]:
     # sources ("people familiar with the matter").
     # Added iteration 2026-07-06 from Reuters EU WhatsApp antitrust analysis.
     # Handles hyphenated org names like SAG-AFTRA and all-caps acronyms.
+    # Extended 2026-07-16 (IBD Wedbush article): "the Wedbush analyst" was
+    # misclassified as anonymous — analyst/editor/director/etc. with a named
+    # org are institutionally identified, not anonymous.
     _CORPORATE_SPOKESPERSON_RE = re.compile(
         r"\b(?:an?|the)\s+([A-Z][A-Za-z-]+(?:\s+[A-Z][A-Za-z-]+)?)\s+"
-        r"(?:spokesperson|spokesman|spokeswoman|representative)\b",
+        r"(?:spokesperson|spokesman|spokeswoman|representative|"
+        r"analyst|analysts|editor|director|executive|manager|"
+        r"researcher|scientist|engineer|lawyer|attorney|"
+        r"official|officer|chief|head|lead|partner|"
+        r"strategist|economist|correspondent|reporter)\b",
         re.IGNORECASE,
     )
 
