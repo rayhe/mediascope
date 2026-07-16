@@ -1,4 +1,87 @@
 # MediaScope Iteration Log
+## 2026-07-16 05:00 PT — Type A: WSJ AI Backlash Executive Threats Deep Dive
+
+**Rotation:** A (Article Deep Dive)
+**Article:** "The AI Backlash Has Tech Executives Fearing for Their Lives" — WSJ, Jul 16 2026, Lindsay Ellis / Zusha Elinson / Tina Li
+**Source:** https://www.wsj.com/tech/ai/ai-executive-threats-security-anthropic-zuckerberg-de3b2ce6
+
+### Files Changed
+- `examples/sample_output/wsj_ai_backlash_exec_threats_2026_07_16_article.txt` (new)
+- `examples/sample_output/wsj_ai_backlash_exec_threats_2026_07_16_analysis.md` (new)
+- `tests/test_wsj_ai_backlash_exec_threats_jul16.py` (new — 15 tests, 11 pass, 4 xfail)
+- `README.md` (193 articles, 2908 tests / 132 files, new test listing)
+- `docs/ARCHITECTURE.md` (193 articles, 2908 tests / 132 files, new test listing)
+- `docs/METHODOLOGY.md` (193 articles)
+- `docs/ACCURACY_GUIDE.md` (193 articles)
+- `docs/QUALITY_STANDARDS.md` (193 articles)
+
+### Toolkit Gaps Found (4 xfail)
+1. **ceo_personalization possessive gap:** "Mark Zuckerberg's yacht" uses possessive + personal property but doesn't trigger the device — pattern requires company attribution, not just CEO name + noun.
+2. **scale_magnitude multiplier gap:** "sevenfold", "150%", "85.5%", "$5.6 million" — percentage-change and multiplier language not detected as scale/magnitude framing.
+3. **humanization personal-detail enumeration gap:** "Bonnie Kate Wolf, 34, a Pinterest designer" with personal testimony doesn't trigger humanization — pattern requires proximity to life events (pregnancy, birth).
+4. **Reported-violence tone correction:** Toolkit scores -0.1674 (slightly negative) vs manual -0.60. Violence vocabulary in factual/quoted context overcorrected toward neutral. Needs a "reported-violence" correction path.
+
+### Toolkit Strengths Confirmed
+- Entity extraction: 5/5 — detected Anthropic, OpenAI, Meta, Palantir, all 4+ clusters
+- Escalation amplification: correctly triggered by "mounting opposition" + "surge of violent rhetoric"
+- No-comment/refusal detection: correctly triggered by 4 company non-responses (3 device types: no_comment_implication, refusal_amplification, absence_as_evidence)
+- Trend bundling: correctly triggered by 3-company security spending enumeration
+- Source extraction: Karp and Graff both correctly extracted as named sources
+
+### Stats After
+- Annotated articles: 193
+- Test files: 132
+- Total tests: 2,908 (2,891 pass + 9 xfail + 8 → 0 structural fixes)
+
+## 2026-07-16 04:00 PT — Type D: Toolkit Quality & Documentation (Pytest Fix + Stale Stats + Path N Documentation)
+
+**Rotation:** D (Toolkit Quality & Documentation)
+**Commit:** `8e5966d` — "Type D: Fix pytest deprecation warnings, update stale README stats, document candidate Path N"
+
+### What was done
+
+1. **Fixed pytest deprecation warnings (2 warnings → 0):** `test_usatoday_meta_ai_layoff_discrimination_jul15.py` had class-scoped fixtures defined as instance methods (`def devices(self)`) instead of classmethods. This triggers `PytestRemovedIn10Warning` in pytest 8.x and will break in pytest 10. Converted both fixtures to `@classmethod` with `cls` parameter. All 23 tests in file still pass, zero warnings.
+
+2. **Updated stale README.md pipeline statistics:** `python3 scripts/count_stats.py --check` flagged 3 stale values (accumulated from recent Type A/B iterations that added articles and patterns without sweeping README). Fixed:
+   - Entity regex: 65 → 66
+   - Entity auto-generated: 23 → 25
+   - Framing patterns: 720 → 723
+   - Annotated articles: 189 → 192
+   - Career-entry migrations: 932 → 934 (both stats table and prose on line 82)
+   Post-fix: `count_stats.py --check` returns ✅.
+
+3. **Documented candidate Path N (Split-Valence Advocacy) in SENTIMENT_CORRECTION_REFERENCE.md:** Path N was already documented in ACCURACY_GUIDE.md (known gaps table, genre-specific accuracy table, documented correction failures) and FRAMING_REFERENCE.md (proposed correction paths table) from the 19:00 PT Jul 15 iteration, but was missing from the correction reference's Part 5 "Adding a New Correction Path" section — the primary reference document for correction pipeline design. Added:
+   - Full description of the two-entity valence cancellation failure mode
+   - Why each existing path (A/D/H/I) fails to fire
+   - Distinguishing signal (near-zero raw_tone with high adversarial count)
+   - Candidate trigger conditions table
+   - Discovery article details and cross-validation against Gizmodo same-event coverage
+   - Status: needs ≥2 more validation articles from ≥2 publications
+   - Cross-references to ACCURACY_GUIDE.md and FRAMING_REFERENCE.md
+
+### Verification
+
+- All 2,893 tests pass (2,888 passed + 5 xfailed, 0 warnings — previously 2 warnings)
+- All 124 structural consistency tests pass
+- `count_stats.py --check` returns ✅ (README stats current)
+- Pushed to GitHub: `38d2bc8..8e5966d`
+
+### Files changed
+- `README.md` — 5 stat values updated (entity regex, auto-generated, framing patterns, annotated articles, career-entry migrations)
+- `docs/SENTIMENT_CORRECTION_REFERENCE.md` — 24 new lines: candidate Path N documentation in Part 5
+- `tests/test_usatoday_meta_ai_layoff_discrimination_jul15.py` — 2 fixtures converted to classmethods
+
+### Stats snapshot
+- Entity clusters: 91 (879 aliases, 66 custom regex, 25 auto-generated)
+- Framing device types: 106 (723 patterns)
+- Emotional language terms: 1,022
+- Annotated articles: 192 (48 publications)
+- Journalists: 239 (934 career entries, 429 publications)
+- Tests: 2,893 (131 files), 124 structural consistency tests passed
+- Candidate correction paths: M (structural irony), N (split-valence advocacy)
+
+---
+
 ## 2026-07-16 03:00 PT — Type C: Ownership & Funding Deep Dive (EU DSA Regulatory Convergence + CHTR-Cox Critical Timeline + Litigation Funding Regulation)
 
 **Rotation:** C (Ownership & Funding Deep Dive)

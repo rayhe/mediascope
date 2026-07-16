@@ -1,0 +1,82 @@
+The AI Backlash Has Tech Executives Fearing for Their Lives
+
+By Lindsay Ellis, Zusha Elinson, and Tina Li
+Wall Street Journal, July 16, 2026
+
+SAN FRANCISCO—A security guard at Anthropic rushed to stop the man sneaking into the lobby of the world's most-valuable AI startup.
+
+The man had entered by following closely behind a badge-swiping employee. He showed the guard an envelope marked with the name of a top Anthropic executive.
+
+The executive was "going to be killed," he told the guard, and he needed to warn someone, according to records of the April 15 incident viewed by The Wall Street Journal.
+
+The encounter, which took place five days after an attempted firebombing of OpenAI Chief Executive Officer Sam Altman's house, ended without violence or an arrest. But for executives at Anthropic—and across the artificial-intelligence industry—the threat was far from over.
+
+In recent months, mounting opposition to AI has given rise to a surge of violent rhetoric, threats against people and property, and a serious attempt at harm. The phenomenon has executives at tech companies large and small reconsidering their personal security arrangements and how they talk about their products to a public that is increasingly wary of the technology and the societal changes it is ushering in.
+
+Police in San Francisco have responded to several threats against employees of Anthropic and OpenAI, according to records viewed by the Journal.
+
+The Texas man who allegedly threw an incendiary device at Altman's house was charged with attempted murder and attempted arson. Officers found a manifesto advocating for the killing of AI CEOs and investors. He pleaded not guilty.
+
+That same month, a man who had applied for a job at Anthropic using a fake name allegedly posted a threat to skin the children of company employees as "punishment" for what he alleged was the theft of his work, according to police records. Police categorized the incident as a terroristic threat but made no arrest. The man said he had "no actual desire to physically harm anyone."
+
+In June, Anthropic security officials reported an Oklahoma man to police after he threatened violence while seeking a refund, according to police records. He wanted to talk to a human.
+
+"Since yall refuse to have a real person to contact me and refund my money ill be coming to your office with my pistol and then we will have a f—ing talk about my money," the man wrote.
+
+The volume of digital threats targeting AI chiefs and data centers grew sevenfold between late February and May, according to Liferaft, which scans social media and the dark web for Fortune 100 companies.
+
+"What has surprised me is how bad it's gotten over such a short period of time," said Jonathan Graff, Liferaft's CEO. The number of threats declined somewhat in June.
+
+Aware of the backlash, some tech leaders have begun traveling with armed guards. Some stay quiet on the topic of AI to avoid attention. Industry leaders who had been issuing dire warnings about the risks artificial intelligence poses to the workforce have pivoted to talking up its potential benefits. Still, they are pushing ahead on developing more-sophisticated models, just as Americans increasingly use the technology while expressing misgivings about its impact on jobs, their children's well-being and energy prices.
+
+Altman responded to the attack on his home by posting a photo of his husband and baby "in the hopes that it might dissuade the next person from throwing a Molotov cocktail at our house, no matter what they think about me." OpenAI didn't respond to requests for comment.
+
+'Go for the pitchfork'
+
+The AI insurance company Corgi runs a cafe in San Francisco's Financial District. With about 200 employees, Corgi isn't as well-known as Anthropic or OpenAI. Yet passersby stop outside the cafe daily, shouting or cursing, Corgi Chief Executive Nico Laqua said. At times, they rail against AI "raising their rents and stealing their water," Laqua said.
+
+"We have pretty thick skin at this point," he said.
+
+Earlier this year, Laqua hired extra security for the cafe after someone vandalized the company's free shuttle bus.
+
+In 2025, 38.1% of S&P 500 technology companies disclosed spending on executive protection, according to an analysis of filings by Equilar, up from 26.8% in 2021.
+
+Three companies reporting major jumps in security spending operate near the center of the AI boom. The spending by Palantir Technologies on executive protection rose 150% in a year to nearly $3 million in 2025. At Oracle, spending rose 85.5% to $5.6 million from $3 million in the prior year. Disclosures show that most of that money funded Larry Ellison's residential security in an environment with "specific threats and safety concerns." Salesforce's spending grew to about $4 million, about $1 million more than in 2024.
+
+Salesforce declined to comment. Oracle and Palantir didn't respond to requests for comment. At a conference this year on AI and labor hosted by American Compass, Alex Karp, Palantir's chief executive, said fear of unemployment is feeding a backlash. When told "your job is going to disappear," he said, "people go for the pitchfork."
+
+"Tech CEOs, a few years ago, definitely did not have security," said Dakota Dominguez, vice president of client relations at JPT Security, which is based in Silicon Valley. "A lot of tech companies now are incorporating that into their budgets."
+
+Dominguez said tech companies are increasingly requesting armed guards because of the backlash against the industry. Unlike music stars or politicians who often prefer hulking bodyguards, tech execs usually ask for less-conspicuous security, he said.
+
+"In tech environments, what I see is a lot more of a slender profile," he said.
+
+AI companies increasingly discourage their rank-and-file workers from wearing corporate logos because of the risk of targeted attacks, particularly in unfamiliar areas, said Nabih Numair, a longtime security professional in Silicon Valley.
+
+A current Anthropic security employee and a former one said in online posts viewed by the Journal that security has grown considerably at the company in the past few years. One said that in 2025 his role was to protect CEO Dario Amodei, but that the remit soon expanded to support founders, other C-suite executives and their families globally. The security employees didn't respond to requests for comment.
+
+Anthropic has run round-the-clock security since 2024 and communicates regularly with employees about emerging threats, a company spokesman said in a statement.
+
+"We track concerning behavior over time through a person-of-interest process, allowing us to catch escalation patterns early," the spokesman said.
+
+The spokesman said several individuals involved in incidents reported to police were already being tracked by Anthropic security. In the case of the man who sneaked into the lobby, the spokesman said the company's security team is instructed to seek de-escalation and not to detain people.
+
+'You can't go back to serfdom'
+
+In polls, which show public enthusiasm for AI has been plummeting, Americans regularly express concern about the technology's effects on jobs and affordability. Employee anger with AI has mounted as companies attribute layoffs to the efficiencies it creates.
+
+Daniel Green, a Kansas City, Mo., consultant who works on AI training and corporate-tech adoption, said people he encounters have absorbed executives' rhetoric that the technology is a job killer and that using it is akin to training a replacement.
+
+"People talk about AI in the context of the Industrial Revolution, and the Luddites were actually very violent," he said.
+
+In May, Mark Zuckerberg's yacht was spotted in Seattle. Meta Platforms had just announced around 1,400 layoffs, in the midst of an AI pivot, in Washington state. Online commenters said they wished someone would light it ablaze, blow it up or sink it. Meta declined to comment.
+
+At the conference on AI and labor, Palantir's Karp called political unrest the industry's No. 1 challenge. Karp said he would advise his peers that "none of us are going to make any money when the country blows up."
+
+Americans concerned about AI outnumber those who aren't by more than a 4 to 1 margin, according to a March survey of about 1,400 U.S. adults by Quinnipiac University. A growing share of respondents to that survey—55%—said they believed AI was doing more harm than good.
+
+Bonnie Kate Wolf, 34, a Pinterest designer, was laid off as the company embraced AI in operations. Before her accounts were deactivated, she posted to an office Slack channel: "PLS DO NOT FORGET ALL OF US WHO ARE BEING LEFT BEHIND AND REPLACED BY THE AI. RESIST." Hundreds responded with emojis of hearts or raised fists.
+
+Wolf, of Seattle, said it seems executives accept that job loss is reasonable because the potential to make money with AI is so great. "That's why people are setting warehouses on fire," she said. "You can't go back to serfdom. It really feels like the people in power want to be kings. Historically, that doesn't work out for kings."
+
+Write to Lindsay Ellis at lindsay.ellis@wsj.com, Zusha Elinson at zusha.elinson@wsj.com and Tina Li at tina.li@wsj.com

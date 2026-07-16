@@ -454,8 +454,8 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
-│   └── sample_output/       # 192 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2893 tests across 131 test files (all from real articles)
+│   └── sample_output/       # 193 annotated real-article analyses (see METHODOLOGY.md §17)
+├── tests/                       # 2908 tests across 132 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -570,6 +570,7 @@ mediascope/
 │   ├── test_reuters_meta_ai_layoff_discrimination_jul14.py # Reuters Meta AI layoff discrimination Jul 14: District of Columbia entity resolution (not Columbia University), legal-context loaded_language suppression (violating/retaliation as legal terms of art), legal-context absence_as_evidence suppression (plaintiff allegation vs journalistic framing), standalone "slashed" loaded_language verb
 │   ├── test_foxbusiness_meta_ai_layoff_discrimination_jul14.py # Fox Business Meta AI layoff discrimination Jul 14: publication self-reference source extraction ("told Fox Business"), legal-context emotional_appeal suppression ("disability" as ADA descriptor), editorial_cross_promotion for embedded all-caps links
 │   ├── test_wsj_meta_smartglasses_jul15.py # WSJ Meta smartglasses privacy Jul 15: surveillance_creep (5 patterns), market_flooding (4 patterns), voice-command ironic_quotation suppression, fitness-tracking loaded_language suppression, comma-before-verb source extraction ("Bosworth, said"), title affiliation false positive filter ("Chief Executive"), institutional suffix filter ("Liberties Union, said")
+│   ├── test_wsj_ai_backlash_exec_threats_jul16.py # WSJ AI backlash exec threats Jul 16: multi-entity extraction (Anthropic, OpenAI, Meta, Palantir), escalation_amplification, no_comment_implication, trend_bundling, tone correction gap (reported-violence), xfail: ceo_personalization, scale_magnitude, humanization
 │   ├── test_wsj_meta_ai_layoff_discrimination_jul14.py # WSJ Meta AI layoff discrimination Jul 14: independent expert source extraction (Prof. Hirsch, UNC), corporate spokesperson, lawsuit-as-documentary source, litigation_framing, timeline_implication, entity clustering, source diversity
 │   ├── test_reuters_iris_chip_jul9.py # Reuters Meta Iris chip production Jul 9: Sumitomo Electric entity cluster (new), inverted analyst attribution ("Morgan Stanley analysts said"), compound no-comment subject extraction ("Samsung Electronics and Sumitomo Electric did not respond"), "floundered" passive framing term, ai_development + corporate_strategy topic classification
 │   ├── test_reuters_muse_spark_11_jul9.py # Reuters Muse Spark 1.1 developer preview Jul 9: pathologizing_metaphor "intervention" false positive suppression (neutral technical context — "less human intervention", "without intervention"), pricing comparison phrases in NEGATIVE_COMPARISON/POSITIVE_COMPARISON ("above openai", "below anthropic", "priced above/below", "cheaper than", "undercuts"), loaded_language competitive dramatization ("heated competition", "AI supremacy", "tech arms race"), competitive_positioning "pitting...against" and "close/narrow the gap"

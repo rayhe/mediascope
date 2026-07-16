@@ -48,11 +48,11 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Emotional language terms | 1022 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 32 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 12 | Paths A–L, each addressing a specific VADER failure mode |
-| Annotated articles | 192 | Full manual analysis in `examples/sample_output/` |
+| Annotated articles | 193 | Full manual analysis in `examples/sample_output/` |
 | Journalists tracked | 239 | Career data with source URLs |
 | Career-entry migrations | 934 | Across 429+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 2,893 | Across 131 test files |
+| Tests | 2,908 | Across 132 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -462,7 +462,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **2893 tests** across 131 test files, each covering a different analytical capability:
+MediaScope has **2908 tests** across 132 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -579,6 +579,7 @@ MediaScope has **2893 tests** across 131 test files, each covering a different a
 | `test_reuters_meta_ai_layoff_discrimination_jul14.py` | 16 | Reuters Meta AI layoff discrimination Jul 14: District of Columbia entity resolution (not Columbia University), legal-context loaded_language suppression (violating/retaliation as legal terms of art), legal-context absence_as_evidence suppression (plaintiff allegation vs journalistic framing), standalone "slashed" loaded_language verb |
 | `test_foxbusiness_meta_ai_layoff_discrimination_jul14.py` | 9 | Fox Business Meta AI layoff discrimination Jul 14: publication self-reference source extraction ("told Fox Business" is not a source), legal-context emotional_appeal suppression ("disability" as ADA legal descriptor), editorial_cross_promotion detection for embedded all-caps links, same-event comparison with Reuters version |
 | `test_wsj_meta_smartglasses_jul15.py` | 24 | WSJ Meta smartglasses privacy Jul 15: surveillance_creep device (5 patterns), market_flooding device (4 patterns), voice-command ironic_quotation suppression, fitness-tracking loaded_language suppression, comma-before-verb source extraction, title affiliation false positive filter, institutional suffix filter |
+| `test_wsj_ai_backlash_exec_threats_jul16.py` | 15 | WSJ AI backlash exec threats Jul 16: multi-entity extraction (Anthropic, OpenAI, Meta, Palantir, 4+ clusters), escalation_amplification (surge/mounting), no_comment_implication (4 company non-responses), trend_bundling (3-company security spending), tone correction gap (reported-violence overcorrects to -0.17 vs manual -0.60), xfail: ceo_personalization possessive gap, scale_magnitude multiplier gap, humanization personal-detail-enumeration gap |
 | `test_wsj_meta_ai_layoff_discrimination_jul14.py` | 18 | WSJ Meta AI layoff discrimination Jul 14: independent expert source extraction (Prof. Jeffrey M. Hirsch, UNC — is_expert=true with affiliation), corporate spokesperson extraction, lawsuit-as-documentary source, litigation_framing and timeline_implication detection, entity clustering (Zuckerberg→Meta), source diversity validation (expert + corporate + documentary), same-event comparison with Fox Business and Reuters |
 | `test_reuters_iris_chip_jul9.py` | 20 | Reuters Meta Iris chip production Jul 9: Sumitomo Electric entity cluster (new), inverted analyst attribution ("Morgan Stanley analysts said"), compound no-comment subject extraction ("Samsung Electronics and Sumitomo Electric did not respond"), "floundered" passive framing term, ai_development + corporate_strategy topic classification |
 | `test_reuters_muse_spark_11_jul9.py` | 23 | Reuters Muse Spark 1.1 developer preview Jul 9: pathologizing_metaphor "intervention" false positive suppression (neutral technical context — "less human intervention", "without intervention", "minimal/no/reduced intervention"), pricing comparison phrases in NEGATIVE_COMPARISON/POSITIVE_COMPARISON ("above openai", "below anthropic", "priced above/below", "cheaper than", "undercuts"), loaded_language competitive dramatization ("heated competition/race", "AI supremacy", "tech arms race"), competitive_positioning "pitting...against" and "close/narrow the gap" |
