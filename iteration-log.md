@@ -1,4 +1,72 @@
 # MediaScope Iteration Log
+## 2026-07-15 17:00 PT — Type B: Journalist Profile Enrichment (Dell Cameron Deep Dive)
+
+**Rotation:** B (Journalist/Publication Research)
+**Commit:** `b4c48c8`
+**Files changed:** profiles/careers/journalists.yaml (+86/-39)
+
+### Focus: Dell Cameron — Wired's Most Consequential Surveillance/Meta Investigative Reporter
+
+Dell Cameron had detailed `notes` and `source_urls` but his career entries lacked specificity on individual investigations, his press freedom case, and his Twitter ban. This iteration enriched all three career positions with sourced investigation details.
+
+### Gizmodo Career Entry (2017-2022) — 6 investigations added
+
+1. **Facebook Papers (Apr 18, 2022):** Led publication of 1,000+ previously confidential internal Facebook documents (with Shoshana Wodinsky, Mack DeGeurin, Thomas Germain). Multi-article series covering Trump/2020 election/Jan 6 content decisions, News Feed ranking algorithms. First public release of Haugen-era documents. Cited in congressional testimony (House docs.house.gov, Lawyers' Committee statements).
+2. **Meta Covid misinformation (Oct 20, 2022, with DeGeurin):** Also cited in congressional statements.
+3. **Minneapolis PD fake social media accounts:** Exposed MPD using fake accounts to surveil innocent Black people; state investigation found "pattern and practice" of racial discrimination.
+4. **Former Twitter employees charged with Saudi espionage (Nov 2019):** Breaking alongside Reuters.
+5. **Booz Allen Hamilton data breach (Jun 2017):** First month at Gizmodo — researcher found 60K+ files on public Amazon S3 including US government passwords/credentials. Techmeme lead.
+6. **OnlyFans/Meta bribery coverage (Oct 2022):** Dangaard v. Instagram coverage that directly led to his Wired subpoena.
+7. **Enriched Prediction:Bias entry** with DOJ funding halt outcome (senators demanded halt, Geolitica shut down operations).
+
+### Wired Career Entry (2023-present) — 6 investigations + 2 incidents added
+
+1. **NameTag follow-ups:** (a) 70+ civil liberties orgs letter vs Meta NameTag (Apr 13, 2026) — ACLU, EPIC, Fight for the Future coalition. (b) "Here's the Truth About Whether Meta's NameTag Face Recognition Tech 'Exists'" (Jul 2026, with Couts & Mehrotra) — used Boz's own podcast description (Nicholas Thompson's show, Jul 8) contradicting Andy Stone's Jun 5 "doesn't exist" denial. (c) Rank One Computing licensing follow-up (Jun 16).
+2. **Mobile Fortify / ICE face recognition (Feb 2026, with Maddy Varner):** DHS deployed NEC's Mobile Fortify to ICE/CBP without required Privacy Impact Assessment. Triggered Senator Markey's "ICE Out of Our Faces Act" legislation.
+3. **ICE Texas statewide transport (Jul 2026):** Exposed privately-run 254-county deportation transport grid.
+4. **Role title evolution documented:** Senior Policy Writer (Jan 2023) → Senior Reporter, Politics and Policy → Senior Reporter, National Security (current). Sources: Talking Biz News, The Org, article footers.
+5. **Press freedom case:** Dangaard v. Instagram subpoena (Apr 5, 2023, N.D. Cal., Judge William Alsup). Subpoenaed alongside editor Andrew Couts and Condé Nast parent Advance. Testified May 24, 2024 — declined most questions on reporter's privilege (per U.S. Press Freedom Tracker). Advance attorney Duffy Carolan defended. Plaintiffs withdrew bribery claim; judge ruled they failed remaining claims (Sep 2024). Analytically significant: shows Advance/Condé Nast will fund press freedom litigation for reporters, potentially lowering institutional cost of aggressive coverage.
+6. **Twitter/X permanent suspension (2023):** Banned after reporting on Matt Walsh hack (SIM swap by "Doomed"). Violated Twitter's rules on "distribution of hacked material" (per Forbes/Talking Biz News).
+
+### Notes Enrichment
+
+- Added frequent co-authors list (7 collaborators across 3 outlets)
+- Added press freedom significance analysis for DiD institutional framework
+- Added union representation transition history (WGA East → NewsGuild-CWA)
+- Added Facebook Papers congressional citation significance
+- Added 2 new source URLs: pressfreedomtracker.us (subpoena case) and talkingbiznews.com (Twitter ban)
+- Total source URLs: 5→7
+
+### Analytical Observations
+
+1. **Press freedom litigation as institutional signal:** Advance/Condé Nast retaining attorney Duffy Carolan to defend Cameron and Couts suggests the parent company views aggressive investigative reporting as worth defending in court. For the DiD framework, this is an institutional variable — reporters at outlets with press freedom litigation backing may produce more adversarial coverage because the downside risk (subpoena, source exposure) is absorbed by the company.
+
+2. **Cameron-Mehrotra pipeline as investigative franchise:** Their collaboration spans Gizmodo (Prediction:Bias) → Wired (NameTag, Dialog, Spotify) — ~5 years of co-bylines. This is one of the longest-running investigative partnerships in the tracked corpus. For DiD, their joint migration from G/O Media to Condé Nast is a natural experiment: did their framing change when the institutional context changed?
+
+3. **Facebook Papers → NameTag continuity:** Cameron published 1,000+ internal Facebook documents at Gizmodo (2022), then broke the NameTag facial recognition story at Wired (2026). Both investigations center on Meta's internal decision-making about user privacy — the Facebook Papers exposed what Meta knew and hid; NameTag exposed what Meta built and hid. This thematic continuity across employers suggests the adversarial framing travels with the journalist, not the institution.
+
+### Verification
+- All 124 structural consistency tests pass (0 regressions)
+- YAML valid (python3 yaml.safe_load)
+- `count_stats.py`: 239 journalists, 932 migrations (unchanged — enrichment of existing entries)
+- Git push to origin/main successful
+
+### Sources
+- dellcameron.me (personal bio, contact, "on background" policy)
+- talkingbiznews.com (Wired hire announcement Dec 2022, Twitter ban report)
+- theorg.com (Wired org chart, Dallas location)
+- muckrack.com (publication list, verified profile)
+- sabufiles.com (Daily Dot investigation archive)
+- pressfreedomtracker.us (Dangaard v. Instagram subpoena case)
+- static.obstracts.com (Wired article mirrors — NameTag, Dialog, Mobile Fortify)
+- aise123.com (Daily Dot-era bio with terrorist watchlist revelation)
+- techdirt.com (Mobile Fortify analysis, Wired story link)
+- pxlnv.com (NameTag coverage analysis)
+- gizmodo.com (Facebook Papers, author pages)
+- techmeme.com (FCC/Ajit Pai coverage, Booz Allen Hamilton story leads)
+- entrepreneur.com (OnlyFans/Meta bribery lawsuit coverage)
+
+---
 ## 2026-07-15 16:00 PT — Type A: Article Deep Dive (BuzzFeed smart glasses misuse)
 - **Article:** "Smart Glasses Are Changing How We See The World. But Are We Ready For How They Can Be Misused?" by Becca Monaghan, BuzzFeed (~Jul 13, 2026)
 - **URL:** https://www.buzzfeed.com/beccamonaghan/smart-glasses-womens-safety-concerns
