@@ -2470,43 +2470,79 @@ journalists:
   - beat: tech policy, national security, surveillance, privacy
     end: 2022-12
     event_type: hired
-    notes: 'Senior reporter at Gizmodo (G/O Media) covering tech policy and national security. 5.5-year tenure. KEY INVESTIGATIONS:
-      (1) "Prediction: Bias" — joint investigation with The Markup (published Dec 2, 2021) exposing Geolitica/PredPol predictive
-      policing software that disproportionately directed officers to patrol Black and Latino neighborhoods. Analyzed millions
-      of crime predictions left on an unsecured server. Won Edward R. Murrow Award for Investigative Reporting (2022). Investigation
-      contributed to Geolitica shutting down operations. (2) FCC Chairman Ajit Pai cellphone location data probe — exposed
-      that Pai''s office withheld documents from Democratic FCC commissioners on unauthorized sale of US cellphone location
-      data (Techmeme lead). (3) Various data breach investigations and cybersecurity reporting. Established working partnership
-      with Dhruv Mehrotra (Gizmodo data reporter) that would carry forward to Wired. Represented by Writers Guild of America,
-      East (WGA East) at G/O Media. Last day at Gizmodo was in December 2022.'
+    notes: 'Senior reporter at Gizmodo (G/O Media) covering tech policy and national security. 5.5-year tenure (May 2017 –
+      Dec 2022). KEY INVESTIGATIONS: (1) "Prediction: Bias" — joint investigation with The Markup (published Dec 2, 2021)
+      exposing Geolitica/PredPol predictive policing software that disproportionately directed officers to patrol Black and
+      Latino neighborhoods. Analyzed millions of crime predictions left on an unsecured server. Won Edward R. Murrow Award
+      for Investigative Reporting (2022, shared with Mehrotra and The Markup team). Investigation contributed to Geolitica
+      shutting down operations and senators demanding DOJ halt funding to predictive policing programs. (2) Facebook Papers
+      (Apr 18, 2022): Led publication of 1,000+ previously confidential internal Facebook documents, with Shoshana Wodinsky,
+      Mack DeGeurin, and Thomas Germain. Multi-article series covering Trump/2020 election/Jan 6 content decisions, News Feed
+      ranking algorithms, and Covid-19 misinformation. First public release of documents that had been basis for news stories
+      since Frances Haugen disclosures. (3) Meta as internet''s biggest hub of Covid misinformation (Oct 20, 2022, with DeGeurin)
+      — cited in congressional testimony (House docs.house.gov and Lawyers'' Committee statements). (4) FCC Chairman Ajit
+      Pai cellphone location data probe — exposed that Pai''s office withheld documents from Democratic FCC commissioners
+      on unauthorized sale of US cellphone location data (Techmeme lead). (5) Minneapolis Police Department fake social media
+      accounts — exposed MPD using fake accounts to surveil innocent Black people; state investigation found "pattern and
+      practice" of racial discrimination. (6) Former Twitter employees charged with spying for Saudi Arabia (Nov 2019, breaking
+      alongside Reuters). (7) Booz Allen Hamilton data breach (Jun 2017, first month at Gizmodo) — researcher found 60K+
+      files from government consulting firm on public Amazon server including US government passwords and security credentials.
+      (8) OnlyFans/Meta bribery allegations (Dangaard v. Instagram coverage, Oct 2022) — reported on bribery claims and sealed
+      documents, which later led to his subpoena at Wired. (9) U.S. government website redirect flaw (2018-2019, follow-up
+      reporting). Established working partnership with Dhruv Mehrotra (Gizmodo data reporter) that would carry forward to
+      Wired. Represented by Writers Guild of America, East (WGA East) at G/O Media. Last day at Gizmodo was in December 2022.'
     publication: gizmodo
     role: senior_reporter
     source_url: https://talkingbiznews.com/they-re-hiring/wired-hires-gizmodas-cameron/
     start: 2017-05
-  - beat: national security, tech policy, surveillance, privacy, content moderation
+  - beat: national security, tech policy, surveillance, privacy, content moderation, immigration_enforcement
     event_type: hired
-    notes: 'Senior policy writer at Wired (Condé Nast). Hired as senior policy writer, started Jan 9, 2023. Title on BuzzSumo/X
-      bio: "Sr. writer @WIRED." Reports within Wired Security desk under executive editor Brian Barrett. Based in Dallas,
-      TX — one of Wired''s few non-NYC/SF reporters. Represented by NewsGuild-CWA. KEY INVESTIGATIONS AT WIRED (2023-2026):
-      (1) NameTag/Meta face recognition (Jun 2026, with Dhruv Mehrotra): Discovered dormant facial recognition system ("NameTag")
-      hidden in Meta AI app code, distributed to 50M+ phones. Three AI models convert faces to biometric faceprints. Investigation
-      triggered both legislative action (3 senators) and corporate policy change — Meta deleted the face-recognition code
-      after WIRED''s report. Andrew Bosworth (Meta CTO) called reporting "incredibly misleading" and "absolutely dishonest."
-      Most consequential Meta investigation by any Wired reporter in 2026. (2) Dialog/Peter Thiel investigation (Jun 2026,
-      4-part series with Yulia Almazova): Exposed membership list and internal ranking system of Peter Thiel''s secretive
-      "Dialog" society — an invitation-only network of ~1,000+ paying elite members from tech, politics, military, entertainment.
-      Revealed Dialog grades members by wealth/fame, uses algorithms for seating/matching. Pentagon investigating the data
-      exposure for potential unmasking of national security officials. (3) SignalGate (Apr 2025): Reported on fate of Trump
-      administration Signal messages from the national security group chat accidentally shared with Atlantic EIC Jeffrey Goldberg.
-      (4) FBI location data purchase (Mar 2023): First FBI acknowledgment of buying US location data. (5) Pentagon phone tracking
-      (May 2026). (6) ICE deportation network in Texas (Jul 2026). (7) Spotify drug podcast ranking manipulation (Jun 2026,
-      with Mehrotra). (8) Data broker/AI opt-out failures (May 2026). Total article count: ~3,887 across all publications
-      (per BuzzSumo). ANALYTICAL SIGNIFICANCE: Cameron-Mehrotra is Wired''s most consequential investigative partnership on
-      surveillance/Meta topics. Cameron frames ALL tech policy through surveillance infrastructure lens — connecting commercial
-      tech products to Pentagon suppliers, ICE data brokers, and law enforcement databases. When he writes about Meta (e.g.,
-      NameTag, account takeovers), the default frame is "surveillance company builds surveillance tool." This framing is analytically
-      significant for MediaScope because it provides the most adversarial surveillance-state interpretation of Meta''s consumer
-      products, distinct from business-desk or consumer-tech framing.'
+    notes: 'Senior policy writer at Wired (Condé Nast). Hired as senior policy writer, started Jan 9, 2023. Role title has
+      evolved: "Senior Policy Writer" at hire (per Talking Biz News, The Org), later "Senior Reporter, Politics and Policy"
+      (per Wired bio), now "Senior Reporter, National Security" (per recent article footers). Reports within Wired Security
+      desk under executive editor Brian Barrett, alongside Andy Greenberg, Lily Hay Newman, and Dhruv Mehrotra (returned May
+      2026). Based in Dallas, TX — one of Wired''s few non-NYC/SF reporters. Represented by NewsGuild-CWA (previously WGA
+      East at Gizmodo). KEY INVESTIGATIONS AT WIRED (2023-2026): (1) NameTag/Meta face recognition (Jun 4, 2026, with Dhruv
+      Mehrotra): Discovered dormant facial recognition system ("NameTag") hidden in Meta AI app code, distributed to 50M+
+      phones. Three AI models convert faces to biometric faceprints. Investigation triggered both legislative action (3 senators)
+      and corporate policy change — Meta deleted the face-recognition code within 24 hours of WIRED''s report. Andrew Bosworth
+      (Meta CTO) called reporting "incredibly misleading" and "absolutely dishonest." Andy Stone (VP Communications) claimed
+      the feature "doesn''t exist." Most consequential Meta investigation by any Wired reporter in 2026. Follow-up Jun 16
+      revealed Meta licensed Rank One Computing (Denver-based law enforcement/military FR vendor, clients include SOCOM, US
+      Marshals, NCIS, board includes former CIA Deputy Director Dawn Meyerriecks). Jul 2026 article "Here''s the Truth About
+      Whether Meta''s NameTag Face Recognition Tech Exists" (with Andrew Couts and Mehrotra) used Boz''s own podcast description
+      (Nicholas Thompson''s show, Jul 8) contradicting Stone''s Jun 5 denial. (1b) 70+ civil liberties orgs letter vs Meta
+      NameTag (Apr 13, 2026): Reported on coalition (ACLU, EPIC, Fight for the Future, Access Now, Leadership Conference on
+      Civil and Human Rights) demanding Meta kill NameTag before launch. (2) Dialog/Peter Thiel investigation (Jun 2026, 4-part
+      series with Yulia Almazova): Exposed membership list and internal ranking system of Peter Thiel''s secretive "Dialog"
+      society — an invitation-only network of ~1,000+ paying elite members from tech, politics, military, entertainment. Revealed
+      Dialog grades members by wealth/fame, uses algorithms for seating/matching. Source was maia arson crimew (Swiss hacktivist).
+      Pentagon investigating the data exposure for potential unmasking of national security officials. (3) SignalGate (Apr
+      2025): Reported on fate of Trump administration Signal messages from the national security group chat accidentally shared
+      with Atlantic EIC Jeffrey Goldberg. (4) FBI location data purchase (Mar 2023): First FBI acknowledgment of buying US
+      location data — Director Christopher Wray disclosed "national security pilot project" that was no longer active. (5)
+      Mobile Fortify / ICE face recognition (Feb 2026, with Maddy Varner): Exposed that DHS deployed NEC''s Mobile Fortify
+      face recognition app to ICE and CBP without completing required Privacy Impact Assessment paperwork. App identifies
+      people in the field — undocumented immigrants and US citizens alike. CBP operational since May 2025, ICE access from
+      May 20, 2025. Triggered Senator Markey''s "ICE Out of Our Faces Act" legislation. (6) Pentagon phone tracking (May 2026).
+      (7) ICE deportation network in Texas (Jul 2026): Exposed privately-run statewide transportation system for funneling
+      detained immigrants across 254 Texas counties. (8) Spotify drug podcast ranking manipulation (Jun 2026, with Mehrotra).
+      (9) Data broker/AI opt-out failures (May 2026). PRESS FREEDOM CASE: Subpoenaed Apr 5, 2023 (Dangaard v. Instagram,
+      N.D. Cal., Judge William Alsup) alongside editor Andrew Couts and Condé Nast parent Advance. Plaintiffs (adult entertainers)
+      sought confidential source information about a whistleblower-provided transcript of an internal Meta investigation into
+      alleged OnlyFans/Meta bribery. Attorney Duffy Carolan (Advance) objected on First Amendment qualified reporter''s privilege
+      and reporter''s privilege grounds. Cameron testified May 24, 2024, as his own behalf and corporate representative but
+      declined most questions on reporter''s privilege (per U.S. Press Freedom Tracker). Plaintiffs later withdrew bribery
+      claim; judge ruled they failed to prove remaining claims (Sep 2024). Case demonstrates institutional backing from Condé
+      Nast/Advance on source protection. TWITTER/X BAN (2023-2024): Permanently suspended from Twitter after reporting on
+      Matt Walsh Twitter hack (SIM swap by hacker "Doomed") — banned for violating Twitter''s rules on "distribution of hacked
+      material" (per Forbes/Talking Biz News). Total article count: ~3,887 across all publications (per BuzzSumo). ANALYTICAL
+      SIGNIFICANCE: Cameron-Mehrotra is Wired''s most consequential investigative partnership on surveillance/Meta topics.
+      Cameron frames ALL tech policy through surveillance infrastructure lens — connecting commercial tech products to Pentagon
+      suppliers, ICE data brokers, and law enforcement databases. When he writes about Meta (e.g., NameTag, account takeovers),
+      the default frame is "surveillance company builds surveillance tool." This framing is analytically significant for MediaScope
+      because it provides the most adversarial surveillance-state interpretation of Meta''s consumer products, distinct from
+      business-desk or consumer-tech framing.'
     publication: wired
     role: senior_writer
     source_url: https://dellcameron.me/
@@ -2520,18 +2556,29 @@ journalists:
     hacker-informant investigation). Contact: dell_cameron@wired.com, @dellcam on X, @dell.bsky.social on Bluesky, @dell@journa.host
     on Mastodon. Phone: 817-928-3260 (DFW area code). Most important investigative partnership: with Dhruv Mehrotra (tracked),
     carried from Gizmodo to Wired — their co-bylines consistently frame commercial tech through surveillance-state/civil-liberties
-    lens. KEY FOR MEDIASCOPE: (1) His NameTag investigation (Jun 2026) is the only recent Wired investigation that directly
-    triggered BOTH legislative action AND corporate policy change (Meta deleting face-recognition code). (2) Dialog series
-    (Jun 2026) demonstrates his reach beyond tech into national security/elite power networks. (3) His surveillance-infrastructure
-    framing lens is the most analytically significant alternative framing to business-desk coverage of the same Meta products.
-    (4) Gizmodo → Wired pipeline (also shared by Barrett, Mehrotra) suggests institutional framing continuity from G/O Media
-    to Condé Nast.'
+    lens. FREQUENT CO-AUTHORS: Dhruv Mehrotra (NameTag, Prediction:Bias, Spotify, Dialog Pt3), Yulia Almazova (Dialog series),
+    Andrew Couts (NameTag Truth follow-up, editor), Andy Greenberg (weekly security roundups), Maddy Varner (Mobile Fortify),
+    Shoshana Wodinsky + Mack DeGeurin + Thomas Germain (Facebook Papers at Gizmodo). PRESS FREEDOM SIGNIFICANCE: Subpoenaed
+    in Dangaard v. Instagram (N.D. Cal., Judge William Alsup, 2023-24) — invoked and sustained reporter''s privilege. Advance/Condé
+    Nast attorney Duffy Carolan defended. This is analytically significant: it shows Advance/Condé Nast will fund press freedom
+    litigation for its reporters, which may lower the institutional cost of aggressive investigative coverage. Permanently
+    suspended from X/Twitter after reporting on Matt Walsh hack (2023). UNION REPRESENTATION: WGA East at Gizmodo → NewsGuild-CWA
+    at Wired. Explicitly identifies as "pro-union" in bio. KEY FOR MEDIASCOPE: (1) His NameTag investigation (Jun 2026) is
+    the only recent Wired investigation that directly triggered BOTH legislative action AND corporate policy change (Meta
+    deleting face-recognition code). (2) Dialog series (Jun 2026) demonstrates his reach beyond tech into national security/elite
+    power networks. (3) His surveillance-infrastructure framing lens is the most analytically significant alternative framing
+    to business-desk coverage of the same Meta products. (4) Gizmodo → Wired pipeline (also shared by Barrett, Mehrotra)
+    suggests institutional framing continuity from G/O Media to Condé Nast. (5) His Facebook Papers publication at Gizmodo
+    (Apr 2022) created a primary-source document archive that has been cited in congressional testimony — connecting him
+    to the most consequential Meta accountability reporting pre-WIRED.'
   source_urls:
   - https://dellcameron.me/
   - https://talkingbiznews.com/they-re-hiring/wired-hires-gizmodas-cameron/
   - https://theorg.com/org/wired/org-chart/dell-cameron
   - https://muckrack.com/dell-cameron
   - https://www.sabufiles.com/
+  - https://pressfreedomtracker.us/all-incidents/wired-reporter-subpoenaed-in-adult-entertainers-lawsuit-against-meta/
+  - https://talkingbiznews.com/they-talk-biz-news/wired-reporter-banned-from-twitter-after-reporting-on-hack/
 - career:
   - beat: network engineering, cellular networks
     end: 2018-12
