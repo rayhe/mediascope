@@ -196,7 +196,7 @@ These gaps demonstrate that **raw VADER scores on investigative journalism are u
 
 ### Tone Correction Pipeline
 
-> **Quick Reference:** For a scannable lookup card covering all 12 correction paths (A–L) with trigger conditions, blend formulas, and validation articles, see [SENTIMENT_CORRECTION_REFERENCE.md](SENTIMENT_CORRECTION_REFERENCE.md).
+> **Quick Reference:** For a scannable lookup card covering all 13 correction paths (A–N) with trigger conditions, blend formulas, and validation articles, see [SENTIMENT_CORRECTION_REFERENCE.md](SENTIMENT_CORRECTION_REFERENCE.md).
 
 MediaScope's framing-aware correction fires when three conditions are all met:
 
@@ -229,7 +229,7 @@ Every article analysis that introduces a toolkit correction must include:
 4. **Gap analysis** — why the gap exists and which specific framing devices or detection failures caused it
 5. **Regression tests** — at least one test per correction to prevent future regressions
 
-This ensures the correction pipeline is validated against real articles, not synthetic examples. All 194 annotated articles in `examples/sample_output/` follow this pattern.
+This ensures the correction pipeline is validated against real articles, not synthetic examples. All 195 annotated articles in `examples/sample_output/` follow this pattern.
 
 ## 8. Emotional Language Validation
 

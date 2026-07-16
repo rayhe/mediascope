@@ -515,7 +515,7 @@ This is not a VADER bug; it is a fundamental limitation of lexical sentiment ana
 
 ### 9.2 Correction Pipeline
 
-MediaScope implements **12 distinct correction paths (A–L), each addressing a specific VADER/TextBlob failure mode discovered through real article analysis. The paths are evaluated in priority order; the first match fires and returns the corrected score.
+MediaScope implements **13 distinct correction paths (A–N), each addressing a specific VADER/TextBlob failure mode discovered through real article analysis. The paths are evaluated in priority order; the first match fires and returns the corrected score.
 
 > **Quick Reference:** For a scannable lookup card with trigger conditions, blend formulas, validation articles, and a path selection flowchart, see [SENTIMENT_CORRECTION_REFERENCE.md](SENTIMENT_CORRECTION_REFERENCE.md).
 
@@ -730,6 +730,24 @@ Short editorial pieces where VADER scores the body positive because embedded quo
 
 **Discovery article:** Gizmodo "The Public Got So Mad at Meta's New AI Photo Tool That It's Scrapped Already" (Jul 11, 2026) — VADER raw +0.63 due to embedded SAG-AFTRA statement and Meta blog post quotes. Headline VADER strongly negative. 8 framing devices including consent_alarm, policy_reversal ×3, sarcastic_correction, precedent_analogy. Corrected: −0.13.
 
+#### Path N: Positive-Action Negative-Domain VADER Inflation
+
+Articles describing a company taking **positive action** in a domain with inherently negative vocabulary (child safety, mental health, crisis prevention, harm reduction, disaster relief). VADER assigns a strongly negative score because domain words like "suicide", "self-harm", "distressing", "crisis" are lexically negative — but the editorial stance toward the subject is positive or neutral.
+
+**Trigger conditions (all must be met):**
+1. raw_tone < -0.3 (VADER strongly negative)
+2. adversarial_count ≤ 1 (virtually no adversarial framing)
+3. agency ≥ -0.1 (subject not passively framed)
+4. emotional_intensity ≥ 0.5 (domain vocabulary inflating the signal)
+
+**Blend formula:** `0.15 * raw_tone + 0.85 * 0.0`, clamped to [-0.15, +0.05]. The target is neutral (0.0) because these are factual product announcements, not editorialized praise.
+
+**Key diagnostic:** The adversarial framing gap. If a VADER-negative article were *editorially* negative, it would have loaded_language, consent_alarm, surveillance_enumeration, or other adversarial devices. The *absence* of adversarial framing combined with negative VADER is the signature of domain-vocabulary inflation.
+
+**Key distinction from Path C (forced-retreat override):** Path C handles positive agency with embedded adversarial anchors (≥ 2 anchor devices). Path N handles near-zero adversarial count — the editorial stance is genuinely positive, but VADER is fooled by crisis/safety vocabulary.
+
+**Discovery article:** NY Post "Meta creates monitoring tool for kids using its chatbot to discuss self-harm — and alerts their parents" (Jul 16, 2026) — VADER raw -0.541 on an article presenting Meta as proactively protecting teens. Zero adversarial framing devices, agency 0.0, but emotional_intensity 1.0 from "suicide", "self-harm", "crisis", "distressing". Corrected: -0.08.
+
 #### Path G: VADER Long-Text Normalization
 
 Not a framing correction — this fixes a fundamental VADER math problem. VADER's compound score uses `sum / sqrt(sum² + alpha)` where `alpha=15`, tuned for tweet-length texts. For long articles (10+ sentences), this normalization amplifies small biases.
@@ -769,6 +787,7 @@ The paths are evaluated in code order: **A → B → C → E → D → F → H �
 | **J** | Expert-driven structural critique | ≥ 0.3 | ≥ 0 | ≥5 adversarial + ≥1 expert_contradiction + ≥2 structural + ≥0.10 EI | 30/70 (raw/target) |
 | **K** | Sarcastic rejection | ≥ 0.3 | any | ≥2 sarcastic_correction + ≥0.7 EI | 10/90 (raw/target) |
 | **L** | Quote-inflated body with negative headline | ≥ 0.3 | any | HBA ≤ −0.5 + ≥3 distinct adversarial device types + ≥4 adversarial | 20/80 (raw/target) |
+| **N** | Positive-action negative-domain VADER inflation | < −0.3 | ≥ −0.1 | ≤1 adversarial + ≥0.5 EI (domain vocab) | 15/85 (raw/neutral) |
 
 ### 9.3 Headline Framing Override
 
@@ -817,7 +836,7 @@ When evaluating articles from target publications, MediaScope applies a quality 
 ### Known Biases in the Tool Itself
 - Keyword-based entity detection may miss oblique references
 - Sentiment models have known biases toward certain writing styles (see §16 for the financial journalism inflation class specifically)
-- **VADER financial journalism inflation (0.3–0.5 points):** Investment recommendation articles, analyst-debate formats, and financial opinion pieces systematically inflate VADER compound scores by 0.3–0.5 points due to boosterism vocabulary ("strong buy," "upside potential," "cash cow"), financial reassurance language ("fears ease," "soothe concerns"), and corporate PR quotes containing forward-looking positive language. None of the existing correction paths (A–L) fire on these articles because they typically lack the negative agency signal (< −0.3) that most paths require. See §16 for the full analysis and interim workarounds.
+- **VADER financial journalism inflation (0.3–0.5 points):** Investment recommendation articles, analyst-debate formats, and financial opinion pieces systematically inflate VADER compound scores by 0.3–0.5 points due to boosterism vocabulary ("strong buy," "upside potential," "cash cow"), financial reassurance language ("fears ease," "soothe concerns"), and corporate PR quotes containing forward-looking positive language. None of the existing correction paths (A–N) fire on these articles because they typically lack the negative agency signal (< −0.3) that most paths require. See §16 for the full analysis and interim workarounds.
 - **Topic classification density normalization (RESOLVED):** Short texts (< 500 words) previously received inflated topic confidence scores because keyword density (matches per 100 words) is naturally higher when text is shorter. Fixed by applying a length-aware dampening factor: `density *= min(word_count / 500, 1.0)`. This scales density linearly below 500 words (the lower bound of a standard article) while leaving full-length articles unaffected. The fix dampens multi-topic inflation in blurbs, summaries, and headlines without breaking topic detection — 4 regression tests guard the behavior. See `topics.py` §3.1 comments.
 - English-language only in current version
 - RSS feeds may not capture all articles (paywalled content, newsletters)
@@ -1298,7 +1317,7 @@ Meanwhile, the bullish quotes pack VADER-positive words: "rational," "significan
 
 ### 16.3 Why Existing Correction Paths Don't Fire
 
-The twelve correction paths (§9.2, Paths A–L) were designed for editorial and investigative journalism. They require specific combinations of:
+The thirteen correction paths (§9.2, Paths A–N) were designed for editorial and investigative journalism. They require specific combinations of:
 
 | Signal | Typical in Investigative | Typical in Financial |
 |---|---|---|
@@ -1403,7 +1422,7 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **194 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **195 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1521,7 +1540,7 @@ Articles cluster into 9 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 194 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 195 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|

@@ -10509,6 +10509,60 @@ def detect_framing_devices(
                 # article (Jul 14, 2026): "Meta failed to test its AI
                 # systems for bias" is a plaintiff claim, not editorial.
                 # ---------------------------------------------------------
+
+                # --- Outsourced intensity: crisis-prevention context guard ---
+                # Suppress outsourced_intensity from the dense disturbing-
+                # content enumeration pattern when the matched text appears
+                # in a protective/preventive context (safety features, crisis
+                # helplines, parental alerts).  In these articles, terms like
+                # "suicide", "self-harm" appear 3+ times because the article
+                # is *describing protective measures* not cataloging horrors
+                # via journalistic accumulation of evidence.
+                #
+                # Discovered in NY Post Meta child-safety chatbot monitoring
+                # article (Jul 16, 2026): "suicide or self-harm with Meta AI.
+                # These protections allow Meta AI to direct teenagers to a
+                # crisis helpline if they mention suicide" -- three disturbing
+                # terms in a span describing a safety feature, not editorial
+                # outsourcing of intensity.
+                # ---------------------------------------------------------
+                if device_type == "outsourced_intensity":
+                    _oi_matched = match.group().lower()
+                    _oi_ctx_start = max(0, start - 100)
+                    _oi_ctx_end = min(len(text), end + 100)
+                    _oi_context = text[_oi_ctx_start:_oi_ctx_end].lower()
+                    _PROTECTIVE_CUES = (
+                        "protection", "protections", "helpline",
+                        "crisis helpline", "crisis line", "crisis text",
+                        "alert parents", "alerts parents", "notify parents",
+                        "notifies parents", "parental supervision",
+                        "parental controls", "parental alert",
+                        "safety feature", "safety tool", "child safety",
+                        "youth safety", "teen safety",
+                        "direct teenagers", "directing teens",
+                        "monitoring tool", "detection system",
+                        "err on the side of caution",
+                        "trusted adult", "reach out to",
+                        "manual review", "manually reviewed",
+                        "emergency services", "prevent suicide",
+                        "suicide prevention", "crisis support",
+                    )
+                    if any(cue in _oi_context for cue in _PROTECTIVE_CUES):
+                        # Only suppress if there are NO investigative/
+                        # documentary cues that would indicate genuine
+                        # outsourced-intensity cataloging.
+                        _INVESTIGATIVE_CUES = (
+                            "reviewed by", "obtained by", "seen by",
+                            "internal documents", "spreadsheet",
+                            "according to the complaint",
+                            "the lawsuit", "alleges", "alleged",
+                        )
+                        if not any(
+                            inv in _oi_context
+                            for inv in _INVESTIGATIVE_CUES
+                        ):
+                            continue
+
                 if device_type == "absence_as_evidence":
                     _ae_ctx_start = max(0, start - 150)
                     _ae_ctx_end = min(len(text), end + 150)

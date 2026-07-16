@@ -1,4 +1,55 @@
 # MediaScope Iteration Log
+## 2026-07-16 13:00 PT — Type A: BuzzFeed Smart Glasses Women's Safety Deep Dive
+
+**Rotation:** A (Article Deep Dive)
+**Article:** "Smart Glasses Are Changing How We See The World. But Are We Ready For How They Can Be Misused?" — BuzzFeed, Becca Monaghan, July 14, 2026
+**Note:** BuzzFeed is not one of the 5 tracked publications. No fresh, unanalyzed article from a tracked publication was available for this iteration window (Jul 14–16); selected because article covers Meta smart glasses — a core toolkit domain.
+
+### What was done
+
+#### 1. Full manual analysis (8 sections)
+
+- **Entities:** 8 identified (Meta ×5, Refuge ×2, UK Government ×2, NPCC ×1, Samuels Solicitors ×1, ICO ×1, Facebook Marketplace ×1, BuzzFeed ×3)
+- **Framing devices:** 13 manually identified including rhetorical_question, power_asymmetry, escalation_amplification, loaded_language, emotional_appeal, analogy_metaphor, corporate_reassurance_undercut, editorial_aside, reader_positioning, assumed_consensus, sovereignty_framing, delayed_defense, slippery_slope
+- **Sentiment:** Manual −0.55 (moderately negative toward Meta/smart glasses)
+- **Sources:** 5 (Refuge, UK Government spokesperson, Samuels Solicitors, NPCC, Meta spokesperson)
+- **Topics:** wearable_technology (high), privacy_surveillance (high), regulatory_policy (medium), gender_technology (gap)
+- **4 potential toolkit gaps:** gendered tech framing, self-undermining corporate transparency, subcultural labeling, legal offense enumeration
+
+#### 2. Toolkit comparison — actual output vs manual
+
+- **Entities:** Toolkit found 3 unique (Meta, Facebook→Meta, GDPR→EU Regulatory). Missing: Refuge, UK Government, NPCC, Samuels Solicitors, ICO, BuzzFeed
+- **Framing:** Toolkit detected 13 device types — more than predicted. Found: analogy_metaphor, catastrophizing, consent_alarm, default_burden_privacy, editorial_aside, emotional_appeal, ironic_quotation, litigation_framing, loaded_language, power_asymmetry, rhetorical_question, surveillance_creep, tempering_coda
+- **Sources:** Toolkit found 4 (Refuge, government spokesperson, Meta spokesperson, Meta). Missing: Samuels Solicitors, NPCC
+- **Sentiment:** Toolkit scored +0.24 (analyze_composite) / +0.64 (analyze_text pipeline) for manual −0.55 — VADER polarity inversion
+
+#### 3. Bugs discovered
+
+1. **Source affiliation cross-paragraph bleed:** Refuge's affiliation parsed as "BTEC introduction to incel-ism" from preceding paragraph. The affiliation parser doesn't respect paragraph boundaries.
+2. **VADER polarity inversion on advocacy articles:** +0.64 for a clearly negative article. Corporate defense quotes ("proud to lead the industry") dominate the lexical signal.
+3. **tempering_coda pipeline filtering:** Device fires via `detect_framing_devices()` on full text but is filtered out by `analyze_text()` pipeline — structural post-pass discrepancy.
+
+#### 4. Test file: 38 tests (27 passed, 11 xfail)
+
+`tests/test_buzzfeed_smart_glasses_womens_safety_jul14.py` — 6 test classes:
+- **TestEntityExtraction** (5 tests): Meta cluster, Facebook clustering, GDPR, Refuge (xfail), UK institutional entities (xfail)
+- **TestFramingDevices** (15 tests): 12 confirmed device types + device count guard + 3 xfail (assumed_consensus, sovereignty_framing, tempering_coda pipeline)
+- **TestSourceExtraction** (7 tests): Refuge, government/Meta spokesperson, affiliation bleed (xfail), Samuels (xfail), NPCC (xfail)
+- **TestSentiment** (3 tests): emotional intensity, tone negative (xfail), not strongly positive (xfail)
+- **TestAdvocacyFramingPatterns** (5 tests): ironic_quotation, consent_alarm, seatbelt analogy, weaponisation, catastrophizing
+- **TestSourceAffiliationBleed** (2 tests): cross-paragraph Refuge bleed (xfail), Meta affiliation correct
+
+#### 5. Files changed
+
+- `examples/sample_output/buzzfeed_smart_glasses_womens_safety_2026_07_14_article.txt` (new)
+- `examples/sample_output/buzzfeed_smart_glasses_womens_safety_2026_07_14_analysis.md` (new)
+- `tests/test_buzzfeed_smart_glasses_womens_safety_jul14.py` (new)
+- `README.md` (stats: 195 articles, 2999 tests/136 files, 13 correction paths A–N, new test/article listings)
+- `docs/ARCHITECTURE.md` (test count, new test listing)
+- `docs/SENTIMENT_CORRECTION_REFERENCE.md` (13 paths A–N)
+
+---
+
 ## 2026-07-16 10:00 PT — Type D: Toolkit Quality & Documentation (litigation_framing pronoun guard)
 
 **Rotation:** D (Toolkit Quality & Documentation)

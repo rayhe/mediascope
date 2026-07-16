@@ -1,6 +1,6 @@
 # Sentiment Correction Quick Reference
 
-> A compact lookup card for all 12 tone correction paths (A–L) used by MediaScope's framing-aware sentiment pipeline. For the full scoring framework, VADER limitations, and academic foundations, see [METHODOLOGY.md §1](METHODOLOGY.md#1-sentiment-analysis-framework) and [QUALITY_STANDARDS.md §7](QUALITY_STANDARDS.md#7-automated-scoring-accuracy).
+> A compact lookup card for all 13 tone correction paths (A–N) used by MediaScope's framing-aware sentiment pipeline. For the full scoring framework, VADER limitations, and academic foundations, see [METHODOLOGY.md §1](METHODOLOGY.md#1-sentiment-analysis-framework) and [QUALITY_STANDARDS.md §7](QUALITY_STANDARDS.md#7-automated-scoring-accuracy).
 
 ---
 
@@ -474,6 +474,31 @@ corrected = 0.10 × raw_tone + 0.90 × target_tone
 
 ---
 
+### Path N — Positive-Action Negative-Domain VADER Inflation
+
+**What it fixes:** VADER assigns strongly negative scores to articles about companies doing positive things in domains with inherently negative vocabulary (child safety, mental health, crisis prevention).
+
+**Trigger:**
+- `raw_tone < -0.3`
+- `adversarial_count ≤ 1`
+- `agency ≥ -0.1`
+- `emotional_intensity ≥ 0.5`
+
+**Formula:** `0.15 * raw_tone + 0.85 * 0.0`, clamped `[-0.15, +0.05]`
+
+**Key diagnostic:** Negative VADER + virtually no adversarial framing devices. If the article were editorially critical, it would have loaded_language, consent_alarm, or similar devices. Their absence signals VADER is fooled by domain vocabulary, not editorial stance.
+
+**Boundary conditions:**
+- **vs Path C:** Path C handles positive agency with embedded adversarial anchors (≥ 2). Path N handles near-zero adversarial count — genuinely positive editorial stance.
+- **vs Path I:** Path I addresses consumer critique (agency ≤ -0.3). Path N has neutral-to-positive agency.
+
+**Validated on:**
+| Article | VADER Raw | Corrected | Manual |
+|---|---|---|---|
+| NY Post Meta child-safety monitoring (Jul 2026) | −0.541 | −0.08 | ~+0.10 |
+
+---
+
 ## Part 3: Path Selection Flowchart
 
 ```
@@ -512,6 +537,9 @@ Article arrives with raw_tone, agency, adversarial_count, EI, framing_summary
 ├─ raw_tone ≥ 0.3 AND headline_body ≤ -0.5 AND adversarial ≥ 4
 │  AND ≥ 3 distinct adversarial types?
 │  → Path L: Quote-inflated body + negative headline (mild negative)
+│
+├─ raw_tone < -0.3 AND adversarial ≤ 1 AND agency ≥ -0.1 AND EI ≥ 0.5?
+│  → Path N: Positive-action negative-domain inflation (toward neutral)
 │
 ├─ raw_tone ≥ 0.3 AND adversarial ≥ 5 AND EI ≥ 0.5 AND consumer_devices ≥ 2
 │  AND agency > 0?

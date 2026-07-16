@@ -1,0 +1,20 @@
+Meta creates monitoring tool for kids using its chatbot to discuss self-harm — and alerts their parents
+
+By NY Post Staff
+New York Post, July 16, 2026
+
+Meta is launching a new feature designed to prioritize child safety within its AI chatbots.
+
+The update will notify parents via Instagram's supervision tools if their teenager discusses suicide or self-harm with Meta AI.
+
+These protections allow Meta AI to direct teenagers to a crisis helpline if they mention suicide or self-harm in messages, while also encouraging them to reach out to a parent or a trusted adult.
+
+Meta will send an alert to parents if a chat suggests their child is at risk. Experts have collaborated with Meta to identify signals that warrant an alert, flagging clear or subtle references to self-harm. A dedicated AI system was specifically developed to identify these sensitive conversations.
+
+Once the technology flags a chat, it undergoes a manual review before an alert is sent. If the intent is ambiguous, Meta stated it will err on the side of caution and notify the parent. The company noted that it would rather issue a false alarm than miss a potential risk, citing this as the appropriate starting point.
+
+In a statement, Meta — Facebook's parent company — said, "We understand how distressing these alerts may be for a parent to receive. That's why, as we continue to improve our detection, all chats flagged by our AI will be manually reviewed before an alert is sent."
+
+Instagram already sends alerts to supervising parents if a teenager uses Instagram to search for suicide or self-harm content, which started in February. These AI alerts are now live for the parents who use Instagram parental supervision in the US, UK, Australia and Canada and will be available globally by the end of the year.
+
+Meta also stated that they are building a plan to contact emergency services if a conversation suggests that the user is at imminent risk of suicide. Meta currently looks across Facebook and Instagram for posts suggesting a credible risk of suicide and alerts emergency services.

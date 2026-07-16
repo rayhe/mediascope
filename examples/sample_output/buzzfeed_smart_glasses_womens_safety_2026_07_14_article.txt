@@ -1,0 +1,70 @@
+Smart Glasses Are Changing How We See The World. But Are We Ready For How They Can Be Misused?
+
+By Becca Monaghan, BuzzFeed, July 14, 2026.
+Source: https://www.buzzfeed.com/beccamonaghan/smart-glasses-womens-safety-concerns
+
+Every time a new bit of tech promises to change the world, women seem to be left dealing with the risks – and it's a conversation we're still avoiding.
+
+And yet, feeds are filled with women unknowingly being recorded by men while they're working, walking down the street, or simply trying to enjoy a night out.
+
+We're still debating whether secretly filming strangers for social media is creepy (it is) when the more uncomfortable question is why we're still acting surprised by the misuse of tech when it's used in ways developers didn't intend.
+
+Technology itself isn't the problem. The problem is that innovation often moves at lightning speed, while conversations about privacy, consent, and safety seem to be playing catch-up.  For the women who discover they've been recorded without their knowledge, that debate is anything but theoretical.
+
+Take the latest so-called "rizzing" trend on social media, where men approach women in public – from busy shopping streets to public-facing workplaces – asking for numbers under the guise of innocent interactions before uploading the footage online.
+
+Some women featured in these videos were not aware they were being recorded in the first place, particularly as smart glasses began appearing more widely.
+
+Once those clips hit the internet, they can attract thousands of comments, from unwanted scrutiny to criticism from strangers online. There are also concerns about how short clips can be edited, reframed or taken out of context, leaving the person filmed with little control over how they are portrayed.
+
+What's ironic is how some Brits wave the banner of "protecting our women and children" when it suits their political agenda. Yet when women ask for something as basic as respect, consent, and common decency, suddenly it's treated as an overreaction.
+
+Scroll through the snarky comments, and you'll find plenty of people insisting the backlash is overblown, such as 'People film in public all the time.' 'Just don't go outside if you're worried.' 'It's no different to a phone.'
+
+But those arguments often come from assuming the only thing at stake is a stranger feeling uncomfortable on camera. What about someone who has escaped a toxic relationship and is trying to rebuild their privacy? Someone who has experienced stalking or harassment? Someone who simply does not want their image, their body, or their personal information shared online without their knowledge? And what about children – which is a whole other topic for another day. The consequences of being recorded without consent are not the same for everyone.
+
+Instead of arguing about whether people can secretly record strangers, shouldn't we be asking why it's becoming normalised rather than being recognised for what it is – a sort of BTEC introduction to incel-ism.
+
+Women's charity Refuge reported a 62 per cent increase in referrals to its specialist Technology-Facilitated Abuse and Economic Empowerment team in 2025 alone. Among the emerging patterns is the weaponisation of smart accessories, including glasses used to secretly record people.
+
+"It is currently far too easy for perpetrators to access and weaponise smart accessories, and our frontline teams are seeing the devastating consequences of this abuse," they shared.
+
+"Enough is enough. As wearable technology becomes embedded in our lives, protections for survivors must keep pace. It is unacceptable for the safety and well-being of women and girls to be treated as an afterthought once a technology has been developed and distributed. Their safety must be a foundational principle shaping both the design of wearable technology and the regulatory frameworks that surround it," they added.
+
+Meta says, however, it does have safeguards in place, including a capture LED that cannot be switched off and a feature that automatically disables the camera if the recording indicator is blocked or tampered with.
+
+"Since the introduction of this safeguard, we've seen some people go beyond using tape to sophisticated efforts to modify or destroy the capture LED," Meta acknowledges in its FAQs. "We are continuously improving our ability to detect tampering, and now we're updating the glasses to disable the camera if they detect the LED was physically tampered with or destroyed. No other kind of camera has done this, and we're proud to lead the industry forward."
+
+They also said these efforts extend across platforms, including Facebook Marketplace listings that advertise tampering services, adding that they will take action "up to banning accounts that do this".
+
+"We also take legal action against people or businesses that sell services designed for tampering with the capture LED — both on and off our own platforms," they said.
+
+The vast majority of people buying smart glasses won't misuse them – but that's not really the point. We don't design seatbelts because we expect everyone to crash; we design them because incidents happen.
+
+As part of its Violence Against Women and Girls Strategy, the government has committed to exploring what more can be done to encourage "safety by design" in smart and connected technology.
+
+"Recording someone in public without consent to cause alarm, distress or for sexual gratification may constitute offences such as harassment, stalking, or voyeurism," a government spokesperson told BuzzFeed. "For cases involving intimate recording, we are already further strengthening protections for victims of intimate image abuse through new offences in the Crime and Policing Bill."
+
+"We will continue to engage with the Information Commissioner's Office to ensure regulation remains effective as technology evolves and that people's information rights are protected," they added.
+
+So where does that leave someone who discovers they've been secretly recorded? In the UK, filming someone in public is not usually illegal. However, that can change when footage is shared or used in ways that cause harm.
+
+Legal experts at Samuels Solicitors say that depending on the situation, individuals may be able to bring claims for breach of privacy, misuse of private information, harassment, or unlawful data processing under UK GDPR.
+
+Harassment law can apply where someone is repeatedly filmed or targeted in a way that is distressing or intrusive, especially if that content is then posted online. In more serious cases, where footage is used to pressure, threaten, or coerce someone, offences such as blackmail may also come into play.
+
+They also note that the person recording may be classed as a "data controller" under UK data protection law, meaning they can carry legal responsibilities for how identifiable images are collected and shared. Under UK GDPR, personal data must be handled lawfully, fairly, and transparently, and individuals may have rights over how it is used.
+
+But in practice, these protections often depend on context and intent, and can be difficult to enforce when recording is discreet, mobile, and not always visible.
+
+A spokesperson for the National Police Chiefs' Council told BuzzFeed: "If anyone has any concerns with this behaviour, we encourage them to come forward at the earliest opportunity and report it to the police."
+
+They added that people should use the technology responsibly, and report incidents where they feel uncomfortable, distressed, or violated.
+
+"We designed our AI glasses with privacy and safety features built in from the start — informed by engagement with safety experts, including women's safety organisations," a Meta spokesperson told BuzzFeed.
+
+"Our glasses have always had an LED light that activates whenever someone captures a photo or video for their gallery. They also feature tamper detection technology, and we are updating the glasses to disable the camera if they detect the LED was physically tampered with or destroyed," they continued.
+
+"No other kind of camera has done this and we're proud to lead the industry forward. We have teams dedicated to ensuring our glasses feel great for wearers and the people around them, so we can continue delivering products that make everyday life better."
+
+The question isn't whether wearable technology is here to stay – it almost certainly is. The challenge is making sure safety features evolve alongside the technology, particularly as products enter the world and some people inevitably find new ways to exploit the gaps.

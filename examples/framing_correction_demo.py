@@ -19,7 +19,7 @@ The Fix:
     negative agency patterns, and source deployment — then overrides the
     lexical score when these structural signals contradict VADER.
 
-    Twelve distinct correction paths (A–L) each address a specific VADER
+    Thirteen distinct correction paths (A–N) each address a specific VADER
     failure mode discovered through real-article analysis:
         Path A: Wrong direction on adversarial prose (10/90 blend)
         Path B: Understated negative magnitude (50/50 blend)
@@ -32,7 +32,8 @@ The Fix:
         Path I: Direct consumer critique with positive agency (20/80)
         Path J: Expert-driven structural critique (30/70)
         Path K: Sarcastic rejection editorial (10/90)
-        Path L: Quote-inflated body with negative headline (20/80)
+        Path L: Quote-inflated body with negative headline
+    Path N: Positive-action negative-domain VADER inflation (15/85)
 
     Only one framing path fires per article (except Path G, which runs
     independently before the composite is computed). See METHODOLOGY.md
@@ -380,7 +381,7 @@ def main():
     print("  of lexical sentiment analysis when applied to professional journalism.")
     print("  VADER was designed for social media ('I love this!', 'This sucks').")
     print("  Investigative journalism uses measured, declarative prose that VADER")
-    print("  reads as neutral-to-positive. Twelve correction paths (A-L) detect:")
+    print("  reads as neutral-to-positive. Thirteen correction paths (A-N) detect:")
     print()
     print("    1. Adversarial framing devices (loaded language, isolation framing,")
     print("       pressure language, power asymmetry, assumed consensus, etc.)")

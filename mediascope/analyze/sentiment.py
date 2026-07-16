@@ -2163,6 +2163,47 @@ def _compute_framing_correction(
         corrected = max(-0.50, min(0.0, round(corrected, 4)))
         return corrected, True
 
+
+    # --- Path N: Positive-action negative-domain VADER inflation ---
+    # When an article describes a company taking POSITIVE action in a
+    # domain with inherently negative vocabulary (child safety, mental
+    # health, crisis prevention, harm reduction), VADER assigns a
+    # negative score because words like "suicide", "self-harm",
+    # "distressing", "risk" are lexically negative -- even though the
+    # editorial stance is positive toward the subject.
+    #
+    # Key diagnostic: negative VADER + very few adversarial framing
+    # devices.  If the article were editorially critical, it would
+    # have loaded_language, consent_alarm, or other adversarial
+    # devices.  The absence of adversarial framing combined with
+    # negative VADER is the signature of domain-vocabulary inflation.
+    #
+    # Discovered in NY Post Meta child-safety chatbot monitoring
+    # article (Jul 16, 2026): VADER scored -0.541 on an article
+    # presenting Meta as proactively protecting teens from self-harm.
+    # Zero adversarial framing devices, agency ~0.0 (neutral), but
+    # emotional_intensity 1.0 from crisis vocabulary.
+    #
+    # Correction: nudge toward neutral (0.0).  The article is factual
+    # reporting of a positive corporate action, not editorially
+    # negative or positive -- neutral is the right baseline.
+    # ---------------------------------------------------------
+    if (
+        raw_tone < -0.3
+        and adversarial_count <= 1
+        and agency >= -0.1  # subject is not framed passively
+        and emotional_intensity >= 0.5  # domain vocabulary present
+    ):
+        # Blend toward neutral: the heavier the negative VADER, the
+        # more we correct, but never fully to 0.0 (we trust VADER
+        # has SOME signal, just badly calibrated for this domain).
+        # Use 0.15 raw weight because the raw score is dominated by
+        # domain vocabulary, not editorial stance.
+        target = 0.0
+        corrected = 0.15 * raw_tone + 0.85 * target
+        corrected = max(-0.15, min(0.05, round(corrected, 4)))
+        return corrected, True
+
     return raw_tone, False
 
 
