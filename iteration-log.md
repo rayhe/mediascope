@@ -1,4 +1,38 @@
 # MediaScope Iteration Log
+## 2026-07-16 09:00 PT — Type C: Ownership & Funding (Advance Portfolio Jul 16 Update)
+
+**Rotation:** C (Ownership & Funding Deep Dive)
+**Commit:** `fc46d58` — "Type C: Advance portfolio Jul 16 update — RDDT selloff, buyback concentration, Max campaigns, CHTR analyst cascade"
+
+### What was done
+
+Updated Advance Publications' public equity portfolio with Jul 16 intraday pricing and two significant new competitive/governance findings:
+
+#### Price Updates (Jul 16 intraday)
+- **RDDT:** ~$191.16 (-3.47%), down from $198.03 Jul 15 close. Two-day decline ~6%. Broke below $195. Advance Reddit stake: ~$8.07B (down from $8.36B)
+- **CHTR:** ~$133.48 (+1.70%), second consecutive green day off $127.91 Jul 14 low. Advance Charter stake: ~$2.75B
+- **WBD:** ~$27.08 (-0.70%), slight drift ahead of Jul 18 TRO hearing. Advance WBD stake: ~$2.65B
+- **Advance total public equity:** ~$13.47B (down from $13.73B Jul 15 close)
+- **Reddit concentration:** slipped below 60% (~59.9%) as RDDT declined
+
+#### New Finding: Reddit $1B Buyback Program (Feb 2026)
+Reddit authorized $1B Class A share repurchase program. Since Advance holds almost exclusively Class B shares (42.19M of 42.21M total), every Class A share retired mechanically increases Advance's voting power — without Advance spending a cent. This mirrors the Charter buyback dynamic. Combined with automatic Class B concentration from insider conversions (76.5% → 83.5% of Class B, 2024→2026), Advance's governance grip on Reddit is tightening through purely mechanical effects. Added to ADVANCE TOTAL PUBLIC EQUITY SNAPSHOT.
+
+#### New Finding: Reddit Max Campaigns (CES Jan 2026)
+Reddit's AI-powered ad automation product directly competing with Meta Advantage+ and Google Performance Max. Alpha results: 17% lower CPA, 27% higher conversion volume. Active advertiser count +75% YoY. This is Reddit's most direct competitive assault on Meta's core performance ad business — structural competition for the same conversion dollars that drive Meta's $150B+ ad revenue. Added to `meta_competition` field.
+
+#### CHTR Analyst Downgrade Cascade Documented
+Full cascade documented across profile: Goldman $125 Sell (Jul 2), Zacks Strong Sell (Jul 6), Wells Fargo $160 Underweight (Jul 7), Barclays $130 Underweight (Jul 8), Bernstein $170 Hold (Jul 13), BNP Paribas $120 Underperform (Jul 14). SIX analyst actions in 12 days — institutional capitulation signal.
+
+#### CPUC Status Update
+CalAdvocates + CETF both settled and support CPUC approval. Only consumer group TURN still opposes. Aug 13 CPUC meeting target. Added to Cox merger narrative.
+
+### Source URLs added
+- Yahoo Finance RDDT quote page
+- SEC EDGAR Reddit 8-K filings index
+
+---
+
 ## 2026-07-16 08:00 PT — Type B: Journalist Research (Parmy Olson + Shira Ovide)
 
 **Rotation:** B (Journalist/Publication Research)
