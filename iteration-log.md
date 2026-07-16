@@ -23911,3 +23911,49 @@ Gizmodo's +0.457 is the outlier — VADER failure, not editorial divergence. Wid
 - 717 compiled framing patterns (+1), 656 total device patterns (+1)
 - Same-event cluster 15 now 5-way (was 4-way)
 - Next iteration should be Type B (journalist research)
+
+---
+
+## 20:00 PT — Type A: NY Post Meta AI Layoff Discrimination (Jul 14, 2026)
+
+### Article
+**NY Post:** "Meta accused of using AI to target workers on medical leave in bloodbath layoffs: lawsuit" (Jul 14, 2026)
+- Same-event cluster 15 (Meta AI Layoff Discrimination Lawsuit), 6th outlet
+- ~520 words, tabloid register
+
+### Key Analytical Observations
+1. **Tabloid register concentrates in vocabulary, not structure.** Defense at 28% position (paragraph 4/14) — among the earliest in the cluster. Editorial aggression is entirely lexical ("bloodbath," "root out," "tanking," "skyrocketing"), not structural. Key finding: extreme lexical intensity and balanced structural framing can coexist.
+2. **Capex trend-bundling is unique.** NY Post is the ONLY outlet to extend into macro AI-spending narrative (Apple/Xbox price hikes, "AI bubble" akin to "dot-com bubble"). This reframes Meta-specific culpability across the tech sector — a form of culpability dilution through trend_bundling.
+3. **Missing humanization is analytically surprising.** No individual plaintiff stories (contrast Gizmodo's "two days before giving birth"). Wire credit to Reuters suggests derivative reporting without deeper complaint analysis.
+4. **Unique sourcing:** Only outlet citing Challenger, Gray & Christmas labor data; only outlet with explicit wire credit to Reuters.
+
+### Code Changes
+1. **Framing: loaded_language** — Added 3 new patterns for workforce violence/carnage metaphors:
+   - `bloodbath|carnage|massacre|slaughter` + layoff/firing/cut/round (forward)
+   - Reverse: layoff/firing terms described as bloodbath/carnage
+   - `root out|weed out|cull` + employee/worker/workforce terms (hunting/purging vocabulary)
+2. **Documentation updates** — All structural consistency counts updated (128 test files, 662 patterns, 190 annotated articles, 2834 tests)
+
+### Documented Gaps (2)
+1. **Entity extraction:** "Challenger, Gray & Christmas" not detected — ampersand in partnership names breaks entity extractor. Filed as xfail.
+2. **trend_bundling on isolated snippets:** Capex tail section alone doesn't trigger trend_bundling without full article context — pattern needs broader entity density. Detected as competitive_guilt_transfer/overbuilding_narrative in full article context.
+
+### Files Created/Modified
+- `examples/sample_output/nypost_meta_ai_layoff_discrimination_2026_07_14_article.txt` (existing)
+- `examples/sample_output/nypost_meta_ai_layoff_discrimination_2026_07_14_analysis.md` (existing)
+- `examples/sample_output/cross_pub_meta_ai_layoff_discrimination_3way_2026_07_14.md` (updated: 3-way → 6-way with NY Post + Gizmodo + USA Today)
+- `tests/test_nypost_meta_ai_layoff_discrimination_jul14.py` (new, 14 tests, 1 xfail)
+- `mediascope/analyze/framing.py` (+3 loaded_language patterns: workforce bloodbath, reverse, root/weed/cull)
+- `tests/test_structural_consistency.py` (EXPECTED_TOTAL_PATTERNS 659→662)
+- `README.md` (190 articles, 662 patterns, 2834 tests/128 files, NY Post test row)
+- `docs/ARCHITECTURE.md` (190 articles, 662 patterns, 2834 tests/128 files, NY Post test row)
+- `docs/METHODOLOGY.md` (190 articles)
+- `docs/QUALITY_STANDARDS.md` (190 articles)
+- `docs/ACCURACY_GUIDE.md` (190 articles)
+
+### Stats
+- 190 annotated articles (+1), same-event cluster 15 now 6-way (was 5-way)
+- 2834 tests (128 files), +14 new tests
+- 662 total device patterns (+3), loaded_language now at 32 patterns
+- Cross-publication comparison expanded from 3-way to 6-way
+- Next iteration should be Type B (journalist research)

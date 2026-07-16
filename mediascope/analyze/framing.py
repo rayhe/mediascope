@@ -686,6 +686,43 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
         r"\b",
         re.IGNORECASE,
     ),
+    # Workforce violence / carnage metaphors — loaded language that frames
+    # layoffs, firings, and restructurings as physical violence or warfare.
+    # "bloodbath" was previously only captured in a market-crash context
+    # (sell-off/rout near concern/fear at line ~8179) but NOT for
+    # workforce/layoff usage, which is a different editorial framing.
+    # "root out" implies hunting/purging, framing HR processes as military
+    # search-and-destroy operations.  Neutral alternatives: "identify",
+    # "select", "choose", "determine".
+    # Discovered via NY Post Meta AI layoff discrimination article
+    # (Jul 14, 2026): "bloodbath layoffs", "root out unproductive workers".
+    re.compile(
+        r"\b(?:bloodbath|carnage|massacre|slaughter)\s+"
+        r"(?:layoff|layoffs|firing|firings|cut|cuts|"
+        r"restructuring|downsizing|round|rounds?(?:\s+of))\b",
+        re.IGNORECASE,
+    ),
+    # Reverse: "layoffs" / "firings" etc. described as bloodbath/carnage
+    re.compile(
+        r"\b(?:layoff|layoffs|firing|firings|job.?cut|restructuring|"
+        r"downsizing)\s+(?:was|were|is|are)?\s*(?:a\s+)?"
+        r"(?:bloodbath|carnage|massacre|slaughter)\b",
+        re.IGNORECASE,
+    ),
+    # "root out" / "weed out" / "cull" — hunting/purging vocabulary
+    # applied to employees or workforce management
+    re.compile(
+        r"\b(?:root(?:ing|ed|s)?\s+out|weed(?:ing|ed|s)?\s+out|"
+        r"cull(?:ing|ed|s)?)\s+"
+        r"(?:(?:the\s+|those\s+|any\s+)?"
+        r"(?:unproductive|underperforming|low.?performing|"
+        r"poor.?performing|surplus|redundant|inefficient|"
+        r"dead.?weight|dead\s+wood|weak)?\s*"
+        r"(?:worker|workers|employee|employees|staff|people|"
+        r"talent|team\s+members?|workforce|roles?|positions?|"
+        r"headcount|personnel))\b",
+        re.IGNORECASE,
+    ),
     # Privacy-violation and social-predation language — terms that frame
     # commercial products or their users as threats to personal safety
     re.compile(

@@ -1,0 +1,39 @@
+# Meta accused of using AI to target workers on medical leave in bloodbath layoffs: lawsuit
+
+Meta is facing a lawsuit from 26 employees accusing the tech giant of using AI-powered software that disproportionately selected workers with disabilities and those who took medical leave to be impacted in a round of layoffs earlier this year.
+
+The company allegedly used an internal bot known as "Metamate;" "second-brain" agents that were trained by workers; AI-usage dashboards; and keystroke and computer activity data to root out unproductive workers, according to the suit filed Monday in Oakland, Calif., federal court.
+
+But this tech failed to account for workers who were out on valid medical leave — and "in effect penalized the employees for exercising their legal rights to these leaves," according to the suit.
+
+A Meta spokesperson denied the claims in the suit, saying they lack merit.
+
+"Workforce management and organizational decisions were and are made by people, not AI," a Meta spokesperson told The Post.
+
+Reuters earlier reported the case.
+
+It's seemingly the first lawsuit targeting a major company for allegedly using AI in carrying out layoffs.
+
+In May, Mark Zuckerberg's Meta kicked off a bloodbath round of 8,000 job cuts — nearly 10% of its global workforce and among the largest layoff rounds in its history — as it ramped up its AI investment plans. Another 7,000 staffers were also reassigned to AI-focused roles.
+
+The 26 plaintiffs — a group of anonymous Meta managers, engineers, scientists and researchers from California, New York and Washington, DC — are asking the court to block Meta from completing the layoffs while they arbitrate their workplace disputes individually.
+
+The suit alleged Meta ranked employees on a termination list using data from keystrokes, screen content, emails and browser history — effectively tanking the ratings for employees who had been out on leave and logging fewer hours.
+
+Meta's layoff practices violated federal and state laws that ban discrimination or retaliation against workers with disabilities and those who take medical leave or are pregnant, according to the suit.
+
+Plaintiffs also alleged Meta did not test its AI systems for bias, which would violate new legislation in California and New York City.
+
+In the spring, Meta leadership said the layoffs were an attempt to boost the firm's efficiency as it ramped up spending on artificial intelligence.
+
+So far this year, nearly a third of all job cuts have hit the tech sector — and AI came in as the leading reason for announced layoffs in June for the fourth month in a row, Challenger, Gray & Christmas said in a report earlier this month.
+
+Meta has said it plans to spend $125 billion to $145 billion this year alone on AI infrastructure, including power-hungry data centers — and the chips needed to power them.
+
+A huge boost in demand has caused severe memory-chip shortages, sending costs skyrocketing. Tech giants like Apple and Xbox have hiked prices on their gadgets, blaming the higher component costs.
+
+In the meantime, investors have grown concerned that huge spending on AI might not result in blowout earnings — creating an "AI bubble" akin to the "dot-com bubble" of the early 2000s.
+
+Source: NY Post, July 14, 2026
+Author: Not specified in available text
+URL: https://nypost.com/2026/07/14/business/meta-accused-of-using-ai-to-target-workers-on-medical-leave-in-bloodbath-layoffs-lawsuit/
