@@ -17176,3 +17176,38 @@ journalists:
   - https://talkingbiznews.com/they-talk-biz-news/washington-post-hires-ovide-as-help-desk-strategy-editor/
   - https://www.editorandpublisher.com/stories/shira-ovide-joins-the-washington-post-as-help-desk-strategy-editor,234580
   - https://muckrack.com/shira-ovide
+- career:
+  - beat: general news, data journalism
+    end: '2016'
+    publication: financial-times
+    role: world_news_desk
+    start: '2015'
+    notes: 'Started at FT on world news desk. Data journalism focus. Earlier bylines at Reuters, Bloomberg, The Independent, and The Evening Standard before joining FT full-time.'
+  - beat: financial services, fintech, crypto, online trading, market structure
+    end: '2019'
+    publication: financial-times
+    role: reporter
+    start: '2016'
+    notes: 'Covered financial services from FT London office. Reported on online trading, stockbroking, market structure, and emerging crypto assets. Won MHP 30 under 30 To Watch: Young Journalists of the Year 2018.'
+  - beat: Meta, social media, AI, AR/VR, disinformation, cyber security, election security
+    end: present
+    publication: financial-times
+    role: tech_correspondent
+    start: '2019'
+    notes: 'Moved to San Francisco ~2019 to become FT Facebook/Meta beat reporter, replacing Hannah Kuchler (who moved to biotech/pharma). Covers Meta, X/Twitter, TikTok, AI, metaverse, disinformation, cyber/election security. Channel 4 documentary "Billionaires" (Zuckerberg focus). FT Tech Tonic podcast contributor. FT Video documentary maker. BBC live broadcast appearances. Prolific source-driven scoops: Meta equity award cuts (Feb 2026), Vishal Shah metaverse→AI PM move, Meta AI glasses continuous recording, Alexandr Wang/Muse Spark model, Meta agentic tools, Oversight Board free-speech tensions (Jan 2026), "Zuck Bucks" virtual currency plans (2022), Meta NFT/creator monetization (2022), Trump ban deliberations (2023). One of the most productive and well-sourced Meta reporters across all tracked publications.'
+  multi_publication: false
+  name: Hannah Murphy
+  notes: 'FT tech correspondent, San Francisco. Primary Meta beat reporter since ~2019. Oxford BA Hons, City University London MA Financial Journalism. MHP 30 under 30 Young Journalists of the Year 2018. Previous bylines: Reuters, Bloomberg, The Independent, The Evening Standard. Moderates tech events/panels. Creates FT Video documentaries. Appeared on BBC. Channel 4 "Billionaires" documentary on Zuckerberg. Her FT career is entirely single-publication (FT since 2015) — not a multi-publication migration candidate for DiD analysis, but extremely high-value as Meta beat primary. FT has NO AI licensing deals with Meta competitors (unlike Wired/Condé Nast), making her coverage a useful structural comparator: if her framing tracks Wired/WIRED on the same stories, it suggests industry-wide posture rather than conflict-driven bias. If it diverges, that difference isolates the Condé Nast revenue conflict effect.'
+  source_urls:
+  - https://me.sh/profile/hannahmurphyftcom
+  - https://rio.websummit.com/speakers/hannah-murphy
+  - https://blog.onepitch.co/coffee-with-a-journalist-hannah-murphy-financial-times
+  - https://talkingbiznews.com/they-talk-biz-news/fts-facebook-reporter-switches-to-biotech-pharma-beat/
+  education:
+  - degree: BA Hons
+    institution: University of Oxford
+    source_url: https://me.sh/profile/hannahmurphyftcom
+  - degree: MA
+    field: Financial Journalism
+    institution: City, University of London
+    source_url: https://me.sh/profile/hannahmurphyftcom

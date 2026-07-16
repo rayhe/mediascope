@@ -1,0 +1,144 @@
+name: "Financial Times"
+slug: "financial-times"
+url: "https://www.ft.com"
+
+rss_feeds:
+  - url: "https://www.ft.com/technology?format=rss"
+    category: "technology"
+  - url: "https://www.ft.com/companies/technology?format=rss"
+    category: "tech-companies"
+  - url: "https://www.ft.com/companies?format=rss"
+    category: "companies"
+
+# ===================================================================
+# OWNERSHIP CHAIN — compiled 2026-07-16 from Reuters, TechCrunch,
+# Pearson sale records, Nikkei corporate disclosures
+# ===================================================================
+ownership_chain:
+  - name: "Financial Times"
+    entity_type: "publisher"
+    description: >
+      Founded 1884, first printed on pink paper 1893. Premier global business newspaper.
+      Acquired by Nikkei from Pearson for £844M ($1.3B) in 2015, beating Axel Springer.
+      FT Group includes FT.com, How to Spend It (now HTSI), FT Labs, FTChinese,
+      FT Specialist (The Banker, Investors Chronicle, etc.). Pearson retained 50% stake
+      in The Economist Group and FT's One Southwark Bridge London HQ. Circulation ~737K
+      at time of sale, 70% digital. First major newspaper to successfully charge for online
+      access. Strong subscription model — digital-first. FT had £334M revenue in 2014.
+      FT Video, podcast network (Tech Tonic, etc.), and live events arm.
+  - name: "Nikkei Inc."
+    entity_type: "parent_company"
+    description: >
+      Japan's largest media company, employee-owned (unusual structure — not publicly
+      traded). Publishes The Nikkei, Japan's most-read business newspaper with 3M+ print
+      circulation. Lends name to the Nikkei 225 stock index. Founded 1876. Headquarters
+      Tokyo. 26 global news bureaus. Operations: newspapers, magazines, digital media,
+      database services, broadcasting, economic/cultural events. Acquired FT as strategic
+      hedge against Japan's shrinking domestic market (population projected -30% by 2065).
+      Also owns Nikkei Asian Review (now Nikkei Asia). Chairman/CEO at time of acquisition:
+      Tsuneo Kita. Current CEO: Naotoshi Okada (since 2018). Revenue est. $3B+
+      (consolidated, Nikkei group, private — limited financial disclosure). No US-listed
+      equity. Nikkei's deep ties to corporate Japan raise editorial independence questions
+      re: Japanese companies covered by FT.
+
+# Revenue Relationships
+revenue_relationships:
+  - partner: "Apple"
+    relationship_type: "distribution"
+    description: >
+      FT was notably one of the first major publishers to bypass Apple's App Store
+      in 2011, building a web app instead to avoid Apple's 30% revenue cut on
+      subscriptions. Later returned to App Store. Relationship is distribution, not
+      licensing.
+    date_established: "2011"
+  # NOTE: FT has NOT signed AI content licensing deals with OpenAI, Google, or Apple
+  # as of mid-2026 — unlike NYT (lawsuit), Atlantic (OpenAI deal), Wired/Condé Nast
+  # (OpenAI + Amazon + Apple deals). This is notable: FT has no AI licensing revenue
+  # relationship creating competitive conflict with Meta's Llama.
+
+# Editorial Leadership
+editorial_leadership:
+  - name: "Roula Khalaf"
+    title: "Editor-in-Chief"
+    notes: >
+      First woman to lead the FT, appointed January 2020. Succeeded Lionel Barber
+      (2005-2020). Lebanese-British journalist. Previously deputy editor, Middle East
+      editor, Lex Column. Known for investigative push and digital strategy expansion.
+      Under her tenure FT expanded video, podcasts, newsletters.
+
+# Key Journalists (Meta/tech beat)
+key_journalists:
+  - name: "Hannah Murphy"
+    beat: "Meta, social media, AI, AR/VR, disinformation, cyber security"
+    location: "San Francisco"
+    known_patterns: >
+      Primary Meta/Facebook beat reporter since ~2019. Based in SF/Silicon Valley.
+      Previously covered financial services, fintech, crypto from FT London office.
+      Source-heavy reporting — frequently first to break internal Meta reorgs, product
+      strategy shifts, and AI development milestones. Contributed to Channel 4
+      documentary 'Billionaires' on Zuckerberg. Co-hosts FT Tech Tonic podcast episodes
+      on Meta/AI. Recent 2026 scoops: Meta equity award cuts (Feb), Vishal Shah metaverse
+      → AI PM move, Meta AI glasses continuous recording feature, Alexandr Wang/Muse Spark
+      AI model, Meta agentic tools/OpenClaw-like assistant, Oversight Board tensions over
+      Zuckerberg "free speech" overhaul. High-volume, high-impact Meta coverage.
+
+# Known Conflicts of Interest
+known_conflicts:
+  - type: "ownership_structure"
+    description: >
+      Nikkei is employee-owned and privately held, meaning limited financial transparency
+      compared to publicly traded media parents (NYT Co, Advance/Reddit). This makes it
+      harder to trace potential conflicts through investment holdings, board interlocks,
+      or revenue dependencies. The opacity itself is a conflict-relevant structural feature.
+    severity: 2
+    evidence: "Nikkei corporate structure — no SEC filings, no public proxy statements"
+  - type: "corporate_japan_ties"
+    description: >
+      Nikkei has deep institutional ties to corporate Japan — historically criticized for
+      running earnings "previews" (leaks) days before official corporate results. Japanese
+      companies covered by FT (Sony, SoftBank, Toyota, Nintendo) may receive different
+      editorial treatment than non-Japanese competitors. However, this is a Japanese-market
+      issue with limited direct impact on FT's US tech/Meta coverage.
+    severity: 1
+    evidence: "Reuters 2015 acquisition coverage; Japanese media criticism"
+  - type: "no_ai_licensing_conflict"
+    description: >
+      NOTABLE ABSENCE: Unlike Condé Nast (Wired parent — OpenAI, Amazon Rufus, Apple
+      deals), The Atlantic (OpenAI deal), and NYT (OpenAI lawsuit), the FT has NOT
+      signed AI content licensing deals with any major Meta AI competitor as of mid-2026.
+      This means FT's Meta coverage lacks the specific competitive revenue conflict
+      that is central to the Wired/Condé Nast analysis. FT's Meta coverage should be
+      evaluated on its merits without the AI-licensing overlay.
+    severity: 1
+    evidence: "Absence from public AI licensing deal announcements through Jul 2026"
+
+# Litigation Connections
+litigation_connections: []
+
+# AI Crawl Policy
+ai_crawl_policy:
+  blocks_gptbot: true
+  blocks_ccbot: true
+  blocks_google_extended: false
+  notes: "FT has been aggressive about protecting content from AI training. Has not signed major AI licensing deals."
+
+# Target Entity Clusters
+target_entities:
+  "Meta":
+    aliases: ["Meta Platforms", "Facebook", "Instagram", "WhatsApp", "Threads", "Reality Labs"]
+    regex: "\\b(Meta(?:\\s+Platforms)?|Facebook|Instagram|WhatsApp|Threads|Reality Labs)\\b"
+  "Nikkei":
+    aliases: ["Nikkei Inc", "Nikkei Asia", "Nikkei Asian Review"]
+    regex: "\\b(Nikkei(?:\\s+(?:Inc|Asia|Asian Review))?)\\b"
+
+# Media Bias Ratings
+bias_ratings:
+  ad_fontes:
+    reliability: null  # FT not prominently rated by Ad Fontes
+    bias: null
+  allsides: "Center"
+  mbfc: "Least Biased"
+  notes: >
+    FT is generally regarded as centrist/business-oriented with high factual reporting
+    standards. MBFC rates it "Least Biased" with "Very High" factual reporting.
+    Paywall limits public access and therefore limits bias-rating coverage.
