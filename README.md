@@ -18,7 +18,7 @@ This is not an attack tool. It works equally well pointed at Fox News covering r
 ## What It Does
 
 1. **Ingests articles** from any publication via RSS feeds and web scraping
-2. **Detects entities** mentioned in coverage (companies, executives, products) using 88 clusters with 875 aliases and disambiguation filters (see [docs/ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md))
+2. **Detects entities** mentioned in coverage (companies, executives, products) using 91 clusters with 879 aliases and disambiguation filters (see [docs/ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md))
 3. **Classifies topics** into 29 standardized buckets for apples-to-apples comparison across companies (see [docs/TOPIC_REFERENCE.md](docs/TOPIC_REFERENCE.md))
 4. **Analyzes sentiment** using an 8-dimension scoring framework (not just positive/negative)
 5. **Calculates asymmetry** — is Company X covered more negatively than peers, with statistical significance?
@@ -42,7 +42,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 
 | Component | Count | Notes |
 |---|---|---|
-| Entity clusters | 88 | 875 aliases, 65 with custom regex, 23 auto-generated |
+| Entity clusters | 91 | 879 aliases, 65 with custom regex, 23 auto-generated |
 | Framing device types | 106 | 10 core + 89 extended + 7 structural (post-pass) |
 | Framing patterns | 720 | Compiled regex patterns across 99 pattern-based types |
 | Emotional language terms | 1022 | Domain-specific lexicon for editorial EI scoring |
@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 239 | Career data with source URLs |
 | Career-entry migrations | 932 | Across 429+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 2,820 | Across 128 test files |
+| Tests | 2,878 | Across 130 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -272,7 +272,7 @@ Statistical methodology is documented at academic quality in [docs/METHODOLOGY.m
 | [FRAMING_REFERENCE.md](docs/FRAMING_REFERENCE.md) | **Quick-reference card for all 106 framing device types** — scannable lookup during article analysis |
 | [TOPIC_REFERENCE.md](docs/TOPIC_REFERENCE.md) | **Quick-reference card for all 29 topic buckets** — boundary rules, adjacency warnings, genre detection triggers |
 | [SOURCE_ANALYSIS_REFERENCE.md](docs/SOURCE_ANALYSIS_REFERENCE.md) | **Quick-reference card for source extraction, stance analysis, outsourced intensity, and active-negative agency** — 14 pattern groups, 10 source types, failure modes |
-| [ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md) | **Quick-reference card for all 88 entity clusters (874 aliases)** — disambiguation filters, cluster categories, custom regex patterns, pipeline interactions |
+| [ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md) | **Quick-reference card for all 91 entity clusters (879 aliases)** — disambiguation filters, cluster categories, custom regex patterns, pipeline interactions |
 | [SENTIMENT_CORRECTION_REFERENCE.md](docs/SENTIMENT_CORRECTION_REFERENCE.md) | **Quick-reference card for all 12 sentiment correction paths (A–L)** — trigger conditions, blend formulas, validation articles, path selection flowchart |
 | [ACCURACY_GUIDE.md](docs/ACCURACY_GUIDE.md) | **Practical accuracy reference** — when to trust scores, genre-specific accuracy, known failure modes, decision tree for interpreting results, common misinterpretation patterns |
 | [CROSS_PUBLICATION_REFERENCE.md](docs/CROSS_PUBLICATION_REFERENCE.md) | **Quick-reference card for same-event cross-publication comparison** — the most powerful evidence technique; 7-dimension matrix, wire-service baseline method, editorial mode taxonomy, 13 validated comparison clusters |
@@ -462,7 +462,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **2834 tests** across 128 test files, each covering a different analytical capability:
+MediaScope has **2878 tests** across 130 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -594,6 +594,8 @@ MediaScope has **2834 tests** across 128 test files, each covering a different a
 | `test_washexaminer_meta_louisiana_50b.py` | 16 | Washington Examiner Meta Louisiana $50B data center (Jul 13, 2026): scale_magnitude physical-unit patterns (million-square-foot, five-gigawatt, analogical energy comparisons "as much energy as New York", "enough to power N homes"), sovereignty_framing American patriotic patterns ("America's future", "helping the nation compete"), anonymous_authority singular "a person familiar with" fix, source extraction corporate title stop-words (Vice/Deputy/Chief preventing "Vice President" as person name) |
 | `test_usatoday_meta_ai_layoff_discrimination_jul15.py` | 23 | USA Today Meta AI layoff discrimination lawsuit (Jul 15, 2026): litigation_framing "lawsuit lodged against" detection, precedent_framing "first of its kind" detection, anthropomorphization "blindly trusted" detection, entity detection (Meta cluster 6 mentions, Workday not misclassified), documented gaps (scale_magnitude percentage+headcount, escalation_amplification "growing use"+enumeration, cross_case_citation Workday reference), 5-way same-event structural contrasts (no surveillance_enumeration, no humanization vs WSJ/Gizmodo) |
 | `test_nypost_meta_ai_layoff_discrimination_jul14.py` | 14 | NY Post Meta AI layoff discrimination lawsuit (Jul 14, 2026): bloodbath loaded_language in workforce/layoff context (2), root_out/weed_out hunting/purging vocabulary (2), ceo_personalization "Zuckerberg's Meta" (1), trend_bundling/competitive_guilt_transfer capex tail section (1), juxtaposition AI spending vs layoffs (1), entity detection Meta/Apple/Zuckerberg (3), Challenger entity xfail ampersand gap (1), negative tone (1), litigation+workplace topics (2) |
+| `test_analyticsinsight_meta_ai_layoff_discrimination_jul15.py` | 12 | Analytics Insight Meta AI layoff discrimination (Jul 15, 2026): hypocrisy_frame precedent-in-legal-context suppression, entity detection Meta cluster, sentiment legal article tone |
+| `test_techcentral_smartglasses_glassholes_jul14.py` | 26 | TechCentral smart glasses privacy editorial (Jul 14, 2026): negated loaded_language suppression "not a gimmick" (5), editorial conclusion ironic_quotation suppression (3), source extraction false positive suppression Name Tag/Balance/Name (3), entity detection Warby Parker/Be My Eyes/BBC (8), sentiment opinion editorial (4), framing device accuracy (8) |
 
 ```bash
 # Run all tests

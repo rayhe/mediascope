@@ -1,6 +1,6 @@
 # Entity Detection & Clustering Quick Reference
 
-> A compact lookup card for all 88 entity clusters (875 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
+> A compact lookup card for all 91 entity clusters (879 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
 
 ---
 
@@ -16,7 +16,7 @@ Entity detection is the **first stage** of the analysis pipeline — every downs
 | **Alias** | A text string that maps to a cluster. Example: `"Facebook"`, `"Zuckerberg"`, `"Instagram"` all → `Meta` |
 | **Canonical Name** | The best alias match for a given text span. `"Andrew Bosworth"` matched in the Meta cluster resolves to canonical name `"Andrew Bosworth"`, not `"Meta"` |
 | **Custom Regex** | A hand-tuned regex for the cluster (62 of 83 clusters). Handles homographs, negative lookaheads, and context-sensitive matching |
-| **Auto Regex** | Word-boundary patterns auto-generated from the alias list (23 of 88 clusters). Simpler but adequate for unambiguous names |
+| **Auto Regex** | Word-boundary patterns auto-generated from the alias list (23 of 91 clusters). Simpler but adequate for unambiguous names |
 
 ### Pipeline Position
 
@@ -163,6 +163,9 @@ Cloud providers, AI startups, and infrastructure companies.
 | 86 | **Entertainment/Talent** | 8 | custom | Creative Artists Agency, CAA, William Morris Endeavor, WME, United Talent Agency, UTA, ICM Partners, Hannah Einbinder | Talent agencies and entertainment industry figures relevant to AI/creative-rights coverage. Discovered from Gizmodo Muse Image scrapped article Jul 11. |
 | 87 | **Discord** | 1 | custom | Discord | Gaming/communication platform. Appeared in eSafety transparency reports alongside Meta, Apple, Google, Snap. Added Jul 14 from Reuters Australia child safety article. |
 | 88 | **Roblox** | 3 | custom | Roblox, Roblox Corporation, David Baszucki | Gaming platform. Major child safety litigation target alongside Meta. Added Jul 15 from Barron's $1T child safety backlash article. |
+| 89 | **Warby Parker** | 1 | auto | Warby Parker | Eyewear competitor in smart glasses space. Added Jul 15 from TechCentral smart glasses privacy article. |
+| 90 | **Be My Eyes** | 1 | auto | Be My Eyes | Accessibility partner for Meta Ray-Ban glasses. Added Jul 15 from TechCentral smart glasses privacy article. |
+| 91 | **BBC** | 2 | custom | BBC, British Broadcasting Corporation | Major international media organization. Added Jul 15 from TechCentral smart glasses privacy article. |
 | 56 | **Australia** | 5 | custom | Australia, Australian government, eSafety Commissioner, Julie Inman Grant, Inman Grant | Extended Jul 14: added eSafety Commissioner Julie Inman Grant by name — previously only the title was matched. |
 | 57 | **Legal/Judicial** | 6 | custom | Delaware courts, Section 230, DSA, MDL numbers, federal courts/judges, Supreme Court | Extended in Jul 2026 to catch federal judges invisible in Reuters $1.4T article |
 

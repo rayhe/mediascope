@@ -24004,3 +24004,63 @@ Same AI-layoff discrimination lawsuit covered by 6 other outlets Jul 14-15.
 - 2841 tests (129 files), +12 new tests
 - 106 framing device types (unchanged), 1 new false-positive filter
 - Next iteration should be Type B (journalist research)
+
+---
+
+## 2026-07-15 22:00 PT — Type A: Article Deep Dive
+
+### Article
+**"We laughed off the 'glassholes' — this time it's serious"**
+- Publication: TechCentral (South Africa)
+- Author: Fanie van Rooyen
+- Date: July 14, 2026
+- Genre: Opinion/Editorial
+- Topic: Meta smart glasses privacy concerns, always-on cameras
+
+### Findings & Fixes
+
+1. **Negated loaded_language filter (framing.py):** "That is not a gimmick" was flagged
+   as loaded_language despite explicit negation. Added general-purpose negation lookback
+   filter checking for "not a/an/the", "no longer", "far from", "hardly", "never",
+   "isn't", "anything but" in 30-char window before loaded terms. Suppresses detection
+   when the loaded term is being *rejected*, not deployed.
+
+2. **Editorial conclusion ironic_quotation filter (framing.py):** `"no"` at article end
+   flagged as ironic_quotation. "The answer ... should be 'no'" is a sincere editorial
+   conclusion. Added filter for single-word quotes preceded by prescriptive cues
+   ("should be", "must be", "ought to be", "the answer is/should be/must be").
+
+3. **Source extraction false positives (sources.py):**
+   - "Name Tag" (product name from "internally called Name Tag") → added to `_NAME_STOP_NAMES`
+   - "Balance" (sentence-opening abstract noun) → added abstract nouns to `_NAME_STOP_FIRST_WORDS`
+   - "Name" (single-word residual) → added to `_SINGLE_NAME_ORG_STOPS`
+
+4. **New entity clusters (entities.py):**
+   - **Warby Parker** — eyewear competitor in smart glasses space
+   - **Be My Eyes** — accessibility organization, key Meta Ray-Ban partnership
+   - **BBC** — major international media org with custom regex
+
+5. **Sentiment undercount (documented):** Tone -0.1503 vs manual estimate -0.55 to -0.65.
+   Further validates ACCURACY_GUIDE failure mode #3 (opinion/essay genre gap). High
+   `emotional_language_intensity` (0.5625) and `agency_attribution` (0.5556) detect
+   editorial force but no correction path fires.
+
+### Commit
+`5500fc0` — `fix: negated loaded_language, editorial ironic_quotation, source false positives, 3 entity clusters`
+
+### Files Created/Modified
+- `examples/sample_output/techcentral_smartglasses_glassholes_2026_07_14_article.txt` (existed)
+- `examples/sample_output/techcentral_smartglasses_glassholes_2026_07_14_analysis.md` (new)
+- `mediascope/analyze/framing.py` (2 fixes: negation filter, editorial conclusion filter)
+- `mediascope/analyze/sources.py` (3 fixes: Name Tag, Balance, Name stop lists)
+- `mediascope/analyze/entities.py` (3 new clusters: Warby Parker, Be My Eyes, BBC)
+- `tests/test_techcentral_smartglasses_glassholes_jul14.py` (new, 26 tests)
+- `tests/test_structural_consistency.py` (pub prefix update for analyticsinsight, techcentral)
+- `docs/ENTITY_REFERENCE.md`, `docs/METHODOLOGY.md`, `docs/ARCHITECTURE.md`, `docs/ACCURACY_GUIDE.md`, `docs/QUALITY_STANDARDS.md`, `README.md` (count updates: 91 clusters, 879 aliases, 192 articles, 130 test files, 2878 tests, 48 publications)
+
+### Stats
+- 192 annotated articles (+1), 48 publications (+2: analyticsinsight, techcentral)
+- 2878 tests (130 files), +26 new tests
+- 91 entity clusters (+3), 879 aliases (+4)
+- 2 new framing false-positive filters (negation, editorial conclusion)
+- Next iteration should be Type B (journalist research)

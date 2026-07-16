@@ -219,6 +219,12 @@ _NAME_STOP_FIRST_WORDS: set[str] = {
     # "Capacity charges at..." mis-parsed "Capacity" as a named source.
     "Capacity", "Manufacturing", "Production", "Infrastructure",
     "Electricity", "Technology", "Industry",
+    # Abstract nouns that open editorial paragraphs — "Balance demands
+    # acknowledging..." should not extract "Balance" as a source name.
+    # Discovered in TechCentral smart glasses article (Jul 14, 2026).
+    "Balance", "Transparency", "Privacy", "Security", "Safety",
+    "Progress", "Innovation", "Regulation", "Accountability",
+    "Evidence", "History", "Experience", "Research", "Analysis",
     # Number words — "Four states are asking" should not extract "Four" as
     # a source name; quantifiers starting sentences are common in journalism.
     # Discovered in Barron's Meta $1T backlash article (Jul 10, 2026):
@@ -260,6 +266,11 @@ _NAME_STOP_NAMES: set[str] = {
     "Meta Glasses", "Meta Adventurer", "Meta Fury",
     "Meta Starfire", "Meta Quest", "Meta Horizon",
     "Ray Ban", "Smart Glasses", "Gentle Monster",
+    # Product/feature names that match "First Last" name pattern
+    # Discovered in TechCentral smart glasses article (Jul 14, 2026):
+    # "internally called Name Tag" → "Name Tag" false-positived as a source
+    # via "called" attribution verb.
+    "Name Tag",
     # AI model / product names that look like "First Last"
     "Muse Spark", "Muse Image", "Muse Video",
     "Llama Scout", "Llama Maverick",
@@ -1162,6 +1173,10 @@ def extract_sources(text: str) -> list[SourceMention]:
         # Economic/infrastructure nouns that start sentences (Jul 2026):
         # "Capacity charges at..." → false-positive "Capacity" as source
         "Capacity", "Manufacturing", "Production", "Electricity",
+        # Abstract / common nouns that start sentences or appear in
+        # product-naming context (Jul 2026):
+        # "internally called Name Tag" → false-positive "Name" as source
+        "Name", "Tag", "Balance",
         # Institutional nouns that appear as single words after verbs
         # (e.g. "said the White House" → Pattern 5c extracts "House")
         "House", "Senate", "Parliament", "Cabinet",

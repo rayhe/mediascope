@@ -281,7 +281,7 @@ Default storage is SQLite (`mediascope.db` in working directory). For production
 
 ### Custom Entity Clusters
 
-Define entity clusters in publication profiles or pass custom clusters to `detect_entities()`. See [ENTITY_REFERENCE.md](ENTITY_REFERENCE.md) for the complete quick-reference card with all 88 clusters, 875 aliases, disambiguation filters, and pipeline interactions, and [METHODOLOGY.md §15](METHODOLOGY.md#15-entity-detection--cluster-reference) for the cluster reference table with analytical categories and growth history.
+Define entity clusters in publication profiles or pass custom clusters to `detect_entities()`. See [ENTITY_REFERENCE.md](ENTITY_REFERENCE.md) for the complete quick-reference card with all 91 clusters, 879 aliases, disambiguation filters, and pipeline interactions, and [METHODOLOGY.md §15](METHODOLOGY.md#15-entity-detection--cluster-reference) for the cluster reference table with analytical categories and growth history.
 
 ```python
 custom_clusters = {
@@ -454,8 +454,8 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
-│   └── sample_output/       # 190 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2834 tests across 128 test files (all from real articles)
+│   └── sample_output/       # 192 annotated real-article analyses (see METHODOLOGY.md §17)
+├── tests/                       # 2878 tests across 130 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -584,6 +584,8 @@ mediascope/
 │   ├── test_washexaminer_meta_louisiana_50b.py # WashExaminer Meta Louisiana $50B Jul 13: scale_magnitude physical-unit patterns (5), sovereignty_framing American patriotic (3), anonymous_authority singular person fix (2), source extraction corporate title stop-words (2), isolated regression tests (4)
 │   ├── test_usatoday_meta_ai_layoff_discrimination_jul15.py # USA Today Meta AI layoff discrimination Jul 15: litigation_framing (1), precedent_framing (1), anthropomorphization (1), entity Meta cluster (3), documented gaps scale_magnitude/escalation/cross_case_citation (3), Workday cross-case reference (3), expert source architecture (2), same-event structural contrasts (4)
 │   ├── test_nypost_meta_ai_layoff_discrimination_jul14.py # NY Post Meta AI layoff discrimination Jul 14: bloodbath loaded_language workforce context (2), root_out/weed_out hunting vocabulary (2), ceo_personalization Zuckerberg's Meta (1), trend_bundling/competitive_guilt_transfer capex tail (1), juxtaposition AI spending vs layoffs (1), entity detection Meta/Apple/Zuckerberg (3), Challenger entity xfail ampersand gap (1), negative tone (1), litigation+workplace topics (2)
+│   ├── test_analyticsinsight_meta_ai_layoff_discrimination_jul15.py # Analytics Insight Meta AI layoff discrimination Jul 15: hypocrisy_frame precedent-in-legal-context suppression (1), entity detection Meta cluster (1), sentiment legal article tone (1)
+│   ├── test_techcentral_smartglasses_glassholes_jul14.py # TechCentral smart glasses privacy editorial Jul 14: negated loaded_language suppression "not a gimmick" (5), editorial conclusion ironic_quotation suppression (3), source extraction false positive suppression Name Tag/Balance/Name (3), entity detection Warby Parker/Be My Eyes/BBC (8), sentiment opinion editorial (4), framing device accuracy (8)
 │   └── fixtures/
 ├── pyproject.toml
 ├── requirements.txt

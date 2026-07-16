@@ -9929,6 +9929,29 @@ def detect_framing_devices(
                     _quoted_clean = _quoted.lower().rstrip('.,;:!?')
                     if _quoted_clean in _TECH_JARGON:
                         continue
+                    # --- Editorial conclusion filter -------------------------
+                    # Single-word quoted terms at or near the end of an
+                    # article that express the author's sincere editorial
+                    # position should not be flagged as ironic quotation.
+                    # E.g. "the answer ... should be 'no'" is an explicit
+                    # editorial conclusion, not scare quoting.
+                    #
+                    # Discovered in TechCentral smart glasses privacy article
+                    # (Jul 14, 2026): final paragraph concludes with
+                    # 'should be "no"' — flagged as ironic_quotation but
+                    # is the author's sincere recommendation.
+                    # ---------------------------------------------------------
+                    if _word_count == 1:
+                        _lookback_conc = text[max(0, start - 80):start].lower()
+                        _EDITORIAL_CONCLUSION_CUES = (
+                            "should be ", "must be ", "ought to be ",
+                            "has to be ", "needs to be ",
+                            "the answer is ", "the answer should be ",
+                            "the answer must be ",
+                        )
+                        if any(cue in _lookback_conc
+                               for cue in _EDITORIAL_CONCLUSION_CUES):
+                            continue
                     # --- Definitional introduction filter --------------------
                     # Short quoted terms (≤3 words) followed immediately by
                     # a definitional or explanatory clause ("X, whose",
@@ -10184,6 +10207,40 @@ def detect_framing_devices(
                         )
                         if any(w in _cat_context for w in _DREAM_CONTEXT):
                             continue
+
+                # --- Loaded language: negation filter -----------------------
+                # When a loaded term is explicitly negated in its immediate
+                # context ("not a gimmick", "is no longer surveillance",
+                # "far from a stunt"), the author is rejecting the loaded
+                # framing, not deploying it.  Suppress the detection.
+                #
+                # Discovered in TechCentral smart glasses privacy article
+                # (Jul 14, 2026): "That is not a gimmick" — the author is
+                # defending Meta's Be My Eyes accessibility feature, not
+                # using "gimmick" as adversarial loaded language.
+                # ---------------------------------------------------------
+                if device_type == "loaded_language":
+                    _ll_neg_lower = match.group().lower().strip()
+                    _neg_lookback = text[max(0, start - 30):start].lower()
+                    # Normalize whitespace for cross-line matching
+                    _neg_lookback = re.sub(r'\s+', ' ', _neg_lookback)
+                    _NEGATION_CUES = (
+                        "not a ", "not an ", "not the ",
+                        "no longer ", "no longer a ",
+                        "is not ", "is no ", "was not ", "was no ",
+                        "are not ", "were not ",
+                        "isn't a ", "isn't an ", "isn't the ",
+                        "wasn't a ", "wasn't an ",
+                        "aren't ", "weren't ",
+                        "far from a ", "far from an ",
+                        "hardly a ", "hardly an ",
+                        "never a ", "never an ",
+                        "anything but a ", "anything but an ",
+                    )
+                    if any(_neg_lookback.rstrip().endswith(cue.rstrip())
+                           or cue in _neg_lookback
+                           for cue in _NEGATION_CUES):
+                        continue
 
                 # --- Loaded language: medical-context filter ----------------
                 # "invasive" is a standard medical/surgical term (invasive

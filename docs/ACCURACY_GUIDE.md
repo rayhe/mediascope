@@ -22,7 +22,7 @@ The goal is not perfect automation. It is *reliable flagging* — surfacing arti
 
 VADER (Valence Aware Dictionary and sEntiment Reasoner) reads individual words and short phrases, not editorial intent. Professional journalism uses measured, confident, active language — "major step forward," "unprecedented scale," "innovative approach" — that VADER scores as positive *regardless of whether the article approves or condemns the subject*.
 
-This creates **polarity inversion**: VADER assigns a positive raw score to an article whose editorial stance is clearly negative. Of the 190 manually annotated articles in MediaScope's corpus, **at least 21 exhibit documented polarity inversion** where VADER's raw score is positive (+0.30 to +0.99) but the true editorial tone is negative (−0.20 to −0.72).
+This creates **polarity inversion**: VADER assigns a positive raw score to an article whose editorial stance is clearly negative. Of the 192 manually annotated articles in MediaScope's corpus, **at least 21 exhibit documented polarity inversion** where VADER's raw score is positive (+0.30 to +0.99) but the true editorial tone is negative (−0.20 to −0.72).
 
 ### Why It Happens
 
@@ -84,7 +84,7 @@ Article genre is the strongest predictor of toolkit accuracy. The table below su
 
 ### Accuracy by the Numbers
 
-From the 190 annotated articles:
+From the 192 annotated articles:
 
 - **33 articles** (18%) required framing correction — correction paths fired and improved accuracy
 - **21 articles** (12%) had documented VADER polarity inversion — raw score wrong direction
@@ -252,7 +252,7 @@ Detailed accuracy characteristics of each correction path, based on validated ex
 
 ## Appendix B: Empirical Calibration Ledger
 
-> Verified score deltas from the 190-article annotated corpus. Each entry shows the raw VADER score, the corrected score (if correction fired), the manual assessment, and the residual error. Use this to calibrate expectations for each correction path.
+> Verified score deltas from the 192-article annotated corpus. Each entry shows the raw VADER score, the corrected score (if correction fired), the manual assessment, and the residual error. Use this to calibrate expectations for each correction path.
 >
 > **How to read this:** A *positive* residual means the toolkit overestimates positivity vs. manual assessment. A *negative* residual means the toolkit overestimates negativity. Residuals within ±0.15 are acceptable; larger gaps warrant investigation.
 >
@@ -364,7 +364,7 @@ These articles expose gaps where no correction path fires despite clear VADER po
 | Atlantic: AI slop vibes (Oct 2025) | ~+0.30 | −0.72 | **+1.02** | Genre: opinion/essay. First-person voice with genuine emotional vocabulary creates VADER inflation without structural adversarial patterns |
 | BuzzFeed: Lorde slams Meta AI glasses (Jul 15) | +0.05 | ~−0.35 | **+0.40** | **Split-valence advocacy gap.** Article is adversarial toward Meta's product but celebratory toward Lorde's opposition. VADER averages positive celebrity-praise language and negative product-critique language into a false near-zero. Path A blocked (agency +0.25), Path D blocked (loaded 4 < 7), Path H blocked (aside 1 < 2), Path I blocked (consumer_devices 1 < 2). Cross-validated against Gizmodo celebrity backlash (Jul 14) on same event — Gizmodo fires Path A correctly because it uses pure adversarial framing without celebratory counter-narrative. **Candidate Path N** — see [FRAMING_REFERENCE.md Proposed Correction Paths](FRAMING_REFERENCE.md#proposed-correction-paths) |
 
-### Calibration Statistics (from 190 annotated articles)
+### Calibration Statistics (from 192 annotated articles)
 
 | Metric | Value |
 |---|---|

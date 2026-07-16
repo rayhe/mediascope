@@ -1008,7 +1008,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **88 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **91 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -1026,7 +1026,7 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 88 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 91 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
@@ -1072,6 +1072,9 @@ The following table documents all 88 entity clusters shipped with MediaScope, or
 | **Snap** | 4 | Snap, Snapchat, Spectacles, Evan Spiegel |
 | **Discord** | 1 | Discord |
 | **Roblox** | 3 | Roblox, Roblox Corporation, David Baszucki |
+| **Warby Parker** | 1 | Warby Parker |
+| **Be My Eyes** | 1 | Be My Eyes |
+| **BBC** | 2 | BBC, British Broadcasting Corporation |
 | **TikTok** | 3 | TikTok, ByteDance, Shou Zi Chew |
 | **X/Twitter** | 4 | Twitter, X Corp, Elon Musk, Musk |
 | **Spotify** | 2 | Spotify, Daniel Ek |
@@ -1398,13 +1401,13 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **190 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **192 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
 ### 17.2 Publication Distribution
 
-The corpus spans **46 distinct publications** across 5 editorial modes:
+The corpus spans **48 distinct publications** across 5 editorial modes:
 
 #### Tracked Publications (5 publications, 58 articles)
 
@@ -1516,7 +1519,7 @@ Articles cluster into 9 editorial genres. Genre determines which VADER failure m
 
 ### 17.5 Sentiment Correction Path Coverage
 
-Of the 190 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
+Of the 192 annotated articles, **20 explicitly document** which correction path(s) would fire. The remaining 89 either require no correction (VADER was approximately correct) or were analyzed before the correction path annotations became standard practice.
 
 | Path | Articles Triggering | Discovery Article | Failure Mode |
 |---|---|---|---|

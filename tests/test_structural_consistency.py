@@ -2366,6 +2366,10 @@ class TestAnnotatedArticleCountConsistency:
             ("buzzfeed", "buzzfeed"),
             # Added 2026-07-15 Type A
             ("usatoday", "usatoday"),
+            # Added 2026-07-15 Type D (previous iteration)
+            ("analyticsinsight_meta_ai_layoff_discrimination", "analyticsinsight_meta_ai_layoff_discrimination"),
+            # Added 2026-07-15 Type A (this iteration)
+            ("techcentral", "techcentral"),
         ]
         for f in sample_dir.glob("*_analysis.md"):
             name = f.stem.replace("_analysis", "")

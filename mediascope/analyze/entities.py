@@ -1069,6 +1069,26 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         ],
         "regex": r"(?<!\w)(Foxglove|Privacy International|Electronic Frontier Foundation|(?-i:EFF)(?=\s+(?:is|was|has|had|'s|,|said|argued|warned|filed|called|urged))|Access Now|Big Brother Watch|Open Rights Group|(?-i:ORG)(?=\s+(?:is|was|has|had|'s|,|said|argued))|Center for AI and Digital Policy|(?-i:CAIDP)|(?-i:noyb|NOYB)|Fight for the Future|Digital Rights Foundation|Ranking Digital Rights|AlgorithmWatch)(?!\w)",
     },
+    # --- Eyewear / accessories -------------------------------------------
+    # Warby Parker is a competitor in the smart glasses space.
+    # Discovered in TechCentral smart glasses privacy article (Jul 14, 2026).
+    "Warby Parker": {
+        "aliases": ["Warby Parker"],
+    },
+    # --- Accessibility organizations -------------------------------------
+    # Be My Eyes is a key Meta partnership for accessibility features on
+    # Ray-Ban Meta glasses.  Discovered in TechCentral article (Jul 14, 2026).
+    "Be My Eyes": {
+        "aliases": ["Be My Eyes"],
+    },
+    # --- Media organizations (non-US) ------------------------------------
+    # BBC is a major international media org frequently cited in tech coverage.
+    # Discovered in TechCentral article (Jul 14, 2026): "A BBC investigation"
+    # was not detected as an entity.
+    "BBC": {
+        "aliases": ["BBC", "British Broadcasting Corporation"],
+        "regex": r"(?<!\w)(?-i:BBC)(?!\w)",
+    },
 }
 
 

@@ -1,0 +1,50 @@
+Title: We laughed off the 'glassholes' - this time it's serious
+Author: Fanie van Rooyen
+Publication: TechCentral (South Africa)
+Date: July 14, 2026
+URL: https://techcentral.co.za/we-laughed-off-the-glassholes-this-time-its-serious/283652/
+Type: Opinion/Editorial
+
+---
+
+Look around your gym, your local coffee shop, the beach at Camps Bay. Can you tell whether you are being filmed? Until recently, you could tell instantly: a phone held aloft is hard to miss. That certainty is being engineered out of public life, one stylish pair of spectacles at a time, and no one asked your permission.
+
+Big Tech has decided that the next computing platform will sit on our faces. Camera-equipped smart glasses are marketed as the future of photography and AI assistance. What they also are, unavoidably, is a surveillance device that looks exactly like ordinary eyewear, pointed at everyone except the person who bought it.
+
+The public has already delivered a verdict on face cameras once. When Google Glass arrived in 2013 (2014 for the non-developer public), wearers were branded "glassholes", the device was banned from bars, cinemas and casinos, and bystanders complained that they could not tell when they were being recorded. Google withdrew the consumer version by 2015. Snap fared no better: its camera-fitted Spectacles sold to a fraction of a percent of Snapchat users, and the company wrote off roughly US$40-million in unsold stock, with fewer than half of buyers still using them after a month.
+
+The industry appears to have concluded that the problem was the styling, not the surveillance. A decade later the cameras are back, hidden in frames indistinguishable from ordinary Ray-Bans.
+
+This time Meta leads the charge. Its partnership with Ray-Ban maker EssilorLuxottica has shifted millions of pairs of Ray-Ban and Oakley smart glasses, with sales more than tripling in 2025, and its $799 Meta Ray-Ban Display, sold with the muscle-signal-reading Meta Neural Band, put a full-colour screen in the lens. By early 2026 Meta was the clear market leader in smart glasses.
+
+The rest of the tech industry is sprinting to catch up. Google and Samsung are readying Android XR glasses with Gemini AI built in, working with eyewear brands Warby Parker and Gentle Monster, and Apple is reported to be targeting 2027 with a product squarely aimed at Meta's. Snap, Amazon and a wave of Chinese manufacturers are crowding in behind them.
+
+A little white light
+
+Millions of buyers represent real demand; it would be dishonest to pretend otherwise. But the people wearing the glasses were never the problem. The problem is the rest of us, the billions who never opted in, whose faces, children and conversations now sit in the frame of a camera we cannot see working.
+
+The industry's answer to this objection has always been the recording indicator: a small LED that glows when the camera is on. That safeguard collapsed almost immediately. Meta itself has admitted that users went "beyond using tape to sophisticated efforts to modify or destroy the capture LED", and a cottage industry sprang up offering to remove the light for a fee.
+
+Meta's response, rolled out in July 2026, is firmware that disables the camera if the LED is covered or damaged. Credit where it's due: it is a genuine engineering effort. But it concedes the central point. Every safeguard bolted onto a device designed for frictionless recording becomes a target, and the history of consumer electronics is a history of jailbreaks. A protection that must be perpetually defended against its own customers is not a protection; it is an arms race, and bystanders are the ones standing downrange.
+
+The deeper danger needs no tampering at all. In 2024, two Harvard students paired ordinary Ray-Ban Metas with facial recognition software and, in a project called I-XRAY, identified strangers on the street in real time, retrieving their names, home addresses and relatives' details. They never released the code. Others will not be so restrained, and Meta itself has been testing first-party facial recognition, internally called Name Tag, for its glasses. The company quietly removed the code from its companion app in June after the coalition of 75 organisations led by the American Civil Liberties Union urged it to abandon the idea, but says it has made no final decision.
+
+The abuse has arrived on schedule. A BBC investigation found hundreds of videos of women filmed covertly with smart glasses in gyms, on beaches and on public transport, posted by influencers and viewed millions of times. A dating coach in Spain was arrested for allegedly filming women without their knowledge. A Russian vlogger travelled through Kenya and Ghana allegedly recording intimate encounters with women and posting the footage online for profit.
+
+A Swedish newspaper investigation reported in February that workers at a Kenyan subcontractor were reviewing video captured by Meta's AI glasses for training purposes, including footage of bathroom visits, nudity and sexual activity inside users' own homes, much of it recorded inadvertently when users invoked the glasses' AI visual search. In March, plaintiffs sued Meta and Luxottica in the US, alleging the companies paired privacy-first marketing with inadequate disclosure of how footage is transmitted, processed and reviewed by humans.
+
+Peeping toms, shame porn, stalking, espionage, the surveillance of children: none of this requires imagination. It requires only a camera no one can see working, sold in the millions, at your local mall.
+
+Balance demands acknowledging what these devices do well. Meta's partnership with Be My Eyes lets blind and low-vision users say a voice command and connect to a network of millions of sighted volunteers who see through the glasses' camera and talk them through a task, hands-free. That is not a gimmick; for some users it is life-changing. Live translation between a growing list of languages, spoken quietly into the wearer's ear, is genuinely useful, and hands-free capture matters to paramedics, artisans and parents alike.
+
+But notice the pattern: every benefit accrues to the wearer, while the privacy cost is exported to everyone around them. Accessibility is a powerful argument for assistive devices; it is not a licence for covert recording by millions of able-bodied users, and the two should not be allowed to shelter behind each other.
+
+South Africans should not assume this is someone else's fight. The glasses are here, and our legal protections fit them badly. The Protection of Personal Information Act treats biometric data such as faces as special personal information, with processing generally prohibited without authorisation. But Popia largely exempts "purely personal or household" activity - the exact loophole a casual wearer will hide behind while filming you at the local mall.
+
+Legal commentators have warned that the technology is moving faster than our regulation. The Information Regulator should be studying this category now, not after our own version of the BBC investigation airs.
+
+There is a familiar script here. A technology arrives that most people did not request. Its makers assure us the safeguards are robust. The safeguards fail, the abuses mount and a decade later we hold hearings about a problem too big to fix. We ran this experiment with social media, and the results are in.
+
+Smart glasses may yet find legitimate, even wonderful uses, and the people who buy them are entitled to their gadgets. But the burden of proof belongs with the companies profiting from cameras on faces, not with the public being filmed. Until the burden shifts - wearers proving consent, rather than bystanders proving harm - the answer to always-on cameras in public should be "no".
+
+Ten years ago we laughed the glassholes out of the bar; this time, the thing being broken is the last assumption of privacy we have left - and once every face on the street is a lens, there is no walking that back.

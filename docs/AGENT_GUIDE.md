@@ -1239,7 +1239,7 @@ Practical problems agents encounter when using MediaScope, with diagnostic steps
 **Symptom:** A company or product mentioned in the article doesn't appear in entity detection results.
 
 **Diagnosis:**
-1. Check `ENTITY_REFERENCE.md` — is the entity in one of the 88 clusters?
+1. Check `ENTITY_REFERENCE.md` — is the entity in one of the 91 clusters?
 2. Check for disambiguation: terms like "Apple" (vs. fruit), "Meta" (vs. "meta tag"), or "Amazon" (vs. river) may be filtered by negative-lookahead patterns.
 3. Check for aliases: some entities have specific forms. "Google" works but "Alphabet" may require the full cluster.
 
