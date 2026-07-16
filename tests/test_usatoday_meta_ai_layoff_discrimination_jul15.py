@@ -129,12 +129,14 @@ class TestUsaTodayFramingDevices:
     - No escalation_amplification ('growing use' + enumeration not detected)
     """
 
+    @classmethod
     @pytest.fixture(scope="class")
-    def devices(self):
+    def devices(cls):
         return detect_framing_devices(ARTICLE_TEXT)
 
+    @classmethod
     @pytest.fixture(scope="class")
-    def device_types(self, devices):
+    def device_types(cls, devices):
         return {d.device_type for d in devices}
 
     def test_total_device_count(self, devices):

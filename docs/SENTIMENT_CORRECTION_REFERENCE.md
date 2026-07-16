@@ -568,6 +568,30 @@ Paths are lettered alphabetically by discovery order, not by evaluation order. T
 
 A candidate path for macro-level article organization that creates negative framing invisible at the sentence level. Currently tracked in [FRAMING_REFERENCE.md § Proposed Additions](FRAMING_REFERENCE.md#proposed-additions-pending-validation) pending validation across ≥3 articles from ≥2 publications. Key challenge: the distinguishing signal is in section ordering and narrative structure, not in vocabulary, making it harder to detect with existing pattern-based methods.
 
+### Proposed Path N — Split-Valence Advocacy
+
+A candidate path for articles that are adversarial toward the target entity but celebratory toward opponents or critics. VADER reads the fan-praise and celebrity-endorsement language as positive, producing near-zero raw tone when manual assessment is clearly negative. No existing path fires because:
+
+- **Path A** needs `agency < −0.3` — split-valence articles have positive agency from the celebratory framing
+- **Path D** needs `loaded_count ≥ 7` — split-valence articles have moderate loaded language, not extreme
+- **Path H** needs `aside_count ≥ 2` — typically only 0–1 editorial asides
+- **Path I** needs `consumer_devices ≥ 2` — typically only 0–1 consumer-device types
+
+**Distinguishing signal:** Two-entity valence divergence — positive toward one entity (the critic/opponent) and negative toward another (the target) in the same article, with VADER averaging them into a false neutral. When `raw_tone` is within ±0.10 of zero and `adversarial_count ≥ 6`, check for two-entity valence cancellation before trusting the raw score.
+
+**Discovery article:** BuzzFeed "Lorde Slams Meta AI Glasses" (Jul 15, 2026) — VADER raw +0.05, manual −0.35, agency +0.25, 14 framing devices. Cross-validated against Gizmodo celebrity backlash coverage (Jul 14) on the same event: Gizmodo fires Path A correctly because it uses pure adversarial framing without a celebratory counter-narrative.
+
+**Candidate trigger conditions:**
+
+| Condition | Threshold | Rationale |
+|---|---|---|
+| `raw_tone` | −0.10 to +0.10 | Near-zero — valence cancellation signature |
+| `adversarial_count` | ≥ 6 | Substantial adversarial framing present but masked |
+| `agency` | > 0 | Positive from celebratory framing toward opponents |
+| `positive_entity_count` | ≥ 1 | At least one non-target entity framed positively |
+
+**Status:** Needs ≥2 additional validation articles from ≥2 publications. Primary genre: celebrity/fan advocacy outlets (BuzzFeed, People, Us Weekly). See also [ACCURACY_GUIDE.md § Known Gaps](ACCURACY_GUIDE.md) and [FRAMING_REFERENCE.md § Proposed Correction Paths](FRAMING_REFERENCE.md#proposed-correction-paths).
+
 ---
 
 ## Part 6: Known Limitations

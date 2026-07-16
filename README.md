@@ -42,15 +42,15 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 
 | Component | Count | Notes |
 |---|---|---|
-| Entity clusters | 91 | 879 aliases, 65 with custom regex, 23 auto-generated |
+| Entity clusters | 91 | 879 aliases, 66 with custom regex, 25 auto-generated |
 | Framing device types | 106 | 10 core + 89 extended + 7 structural (post-pass) |
-| Framing patterns | 720 | Compiled regex patterns across 99 pattern-based types |
+| Framing patterns | 723 | Compiled regex patterns across 99 pattern-based types |
 | Emotional language terms | 1022 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 32 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 12 | Paths A–L, each addressing a specific VADER failure mode |
-| Annotated articles | 189 | Full manual analysis in `examples/sample_output/` |
+| Annotated articles | 192 | Full manual analysis in `examples/sample_output/` |
 | Journalists tracked | 239 | Career data with source URLs |
-| Career-entry migrations | 932 | Across 429+ publications |
+| Career-entry migrations | 934 | Across 429+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
 | Tests | 2,893 | Across 131 test files |
 
@@ -79,7 +79,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **239 journalists** (58 with structured education records) across 429+ publications (932 career-entry migrations). Notable high-value migrations include:
+Ships with verified career data for **239 journalists** (58 with structured education records) across 429+ publications (934 career-entry migrations). Notable high-value migrations include:
 
 | Journalist | Migration Path | Analytical Value |
 |---|---|---|
