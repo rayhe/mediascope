@@ -286,6 +286,18 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 
 ---
 
+## Pattern Guards & Resolved False Positives
+
+Known false positives that have been fixed with pattern-level guards. Documented here so future analysis iterations don't re-report them.
+
+| Device | False Positive | Root Cause | Fix | Test File | Date Fixed |
+|--------|---------------|------------|-----|-----------|------------|
+| `litigation_framing` | Colloquial "sue me" / "sue him" / "sue us" detected as litigation framing | `re.IGNORECASE` on suing pattern made `[A-Z]\w+` match lowercase pronouns ("me", "him", "us") as if they were named entities (Meta, Apple, Google) | Negative lookahead for 12 personal pronouns (me, him, her, us, them, you, myself, yourself, himself, herself, ourselves, themselves) on the suing/sued/sues pattern | `test_litigation_framing_pronoun_guard.py` (21 tests) | 2026-07-16 |
+
+> **When adding new pattern guards:** Add them to this table, create a dedicated test file with both false-positive suppression tests AND genuine-positive preservation tests, and include at least one mixed-context edge case where both colloquial and genuine uses appear in the same article.
+
+---
+
 ## Proposed Additions (Pending Validation)
 
 Candidate framing devices discovered during analysis but not yet formally added. Each requires **≥3 independent real-article examples** demonstrating the pattern before promotion to the taxonomy.

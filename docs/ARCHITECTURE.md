@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 193 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2908 tests across 132 test files (all from real articles)
+├── tests/                       # 2929 tests across 133 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -552,6 +552,7 @@ mediascope/
 │   ├── test_wsj_ai_spending_sources.py # WSJ AI spending article source extraction: Pattern 0c "Name of Org VERB" (KeyBanc Capital fix), Pattern 0d reverse "VERB Name of Org" (Jefferies fix), Pattern 0e "Org analyst Name VERB" (Bernstein Research affiliation fix), full-text expert detection fallback
 │   ├── test_compound_attribution_verbs.py # Compound negative attribution verb detection: contrastive failure/concession/defensive failure multi-word phrases, classification priority over single-word lookup
 │   ├── test_litigation_cascade.py # Litigation cascade regression tests: multi-jurisdiction cascade detection, escalation patterns, threshold validation, negative cases
+│   ├── test_litigation_framing_pronoun_guard.py # litigation_framing pronoun guard: colloquial "sue me/him/us/them" suppression via negative lookahead, genuine named-entity litigation preserved, mixed-context edge cases
 │   ├── test_techcrunch_muse_image_fixes.py # TechCrunch Muse Image privacy article: "Muse Video" product-name source false positive, Cambridge Analytica entity cluster separation, "landmark" literal-usage loaded_language suppression
 │   ├── test_ibd_meta_cloud_sources.py # IBD Meta cloud article source extraction regression tests
 │   ├── test_ibd_sticker_shock.py # IBD open-source AI article: competitive_deficit framing (acknowledges defeat, catch up to, fill the vacuum), single-surname affiliation full-text fallback, conditional org source filter, D.A. Davidson entity detection

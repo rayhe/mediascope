@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 244 | Career data with source URLs |
 | Career-entry migrations | 952 | Across 433+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 2,908 | Across 132 test files |
+| Tests | 2,929 | Across 133 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -462,7 +462,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **2908 tests** across 132 test files, each covering a different analytical capability:
+MediaScope has **2929 tests** across 133 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -563,6 +563,7 @@ MediaScope has **2908 tests** across 132 test files, each covering a different a
 | `test_bofa_capex_watermelon.py` | 16 | BofA capex/Watermelon entity detection and framing: Watermelon codename cluster (comma-lookahead fix for appositive clauses), Muse Spark entity, BofA/Bank of America analyst note entities, hyperscaler capex entities (Microsoft, Google, Amazon), Meta Compute/neocloud entities, OpenAI Jalapeño codename, scale_magnitude "10x compute" and "nearly double" patterns, loaded_language bubble-risk and percentage-decline framing, cross-article (Barron's + Memeburn) entity and framing coverage. |
 | `test_compound_attribution_verbs.py` | 10 | Compound negative attribution verb detection: contrastive failure ("attempted yet failed"), contrastive concession ("reluctantly admitted"), defensive failure ("denied but was found") multi-word phrases, classification priority over single-word lookup, extraction preference |
 | `test_litigation_cascade.py` | 7 | Litigation cascade regression tests: multi-jurisdiction cascade detection, Gizmodo-style escalation patterns, minimal threshold validation, negative cases (single lawsuit, repeated same count) |
+| `test_litigation_framing_pronoun_guard.py` | 21 | litigation_framing pronoun guard: colloquial "sue me/him/us/them" suppression via negative lookahead (9 pronoun tests), genuine named-entity litigation preserved (10 positive tests), mixed-context edge cases (2 tests) |
 | `test_techcrunch_muse_image_fixes.py` | 12 | TechCrunch Muse Image privacy article fixes: "Muse Video"/"Muse Image" product-name source false positive filter, Cambridge Analytica entity cluster separation from Meta, "landmark" literal-usage loaded_language context-aware suppression |
 | `test_ibd_meta_cloud_sources.py` | — | IBD Meta cloud article source extraction regression tests |
 | `test_ibd_sticker_shock.py` | 17 | IBD open-source AI article: competitive_deficit framing (acknowledges defeat, catch up to, fill the vacuum), single-surname affiliation full-text fallback, conditional org source filter, D.A. Davidson entity detection |

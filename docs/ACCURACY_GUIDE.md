@@ -380,3 +380,29 @@ These articles expose gaps where no correction path fires despite clear VADER po
 ### Key Takeaway
 
 The correction pipeline is *high-precision, medium-recall*: when it fires, it almost always improves accuracy (94% of the time), but it does not fire on every article that needs correction. The four documented failures above — consent-alarm structural framing, colloquial sarcasm, opinion/essay genre, and split-valence advocacy — are the priority targets for future correction paths.
+
+---
+
+## Part 6: Resolved Pattern Bugs
+
+Issues that were identified during article analysis and subsequently fixed. Tracked here so analysts don't re-report them.
+
+| Date | Component | Issue | Fix | Test |
+|------|-----------|-------|-----|------|
+| 2026-07-16 | `litigation_framing` (suing pattern) | Colloquial "sue me" / "sued him" / "sue us" triggered as genuine litigation framing. Root cause: `re.IGNORECASE` on `[A-Z]\w+` made the pattern match lowercase pronouns as if they were named entities | Added negative lookahead for 12 personal pronouns (me, him, her, us, them, you, + reflexive forms). Named-entity litigation detection preserved. | `test_litigation_framing_pronoun_guard.py` (21 tests) |
+
+---
+
+## Part 7: Open Deferred Bugs
+
+Known issues flagged during analysis but not yet fixed. Each includes the iteration that discovered it and the recommended fix approach.
+
+| # | Component | Issue | Impact | Recommended Fix | Discovered |
+|---|-----------|-------|--------|-----------------|------------|
+| 1 | `source_extraction` | In-quote name+verb false positives — quoted speech containing "[Name] said" patterns extracted as sources when the quote is describing a third party, not attributing | Low — affects articles with nested attribution ("He told me that Sarah said...") | Add quoted-span guard to source extraction similar to framing device quoted-span suppression | Type A, Jul 2026 |
+| 2 | `source_extraction` | Organizational "which argued" pattern — relative clauses with attribution verbs after organization names generate false source entries | Low — limited to formal legal/regulatory articles | Add negative lookahead for relative pronoun "which" before attribution verbs in organizational source patterns | Type A, Jul 2026 |
+| 3 | `source_extraction` | Anonymous source "One user on X" pattern — social media user references extracted as anonymous sources with inflated count | Low — affects social media reaction roundup articles | Exclude social media user references from anonymous source counting or create new `social_media_user` source type | Type A, Jul 2026 |
+| 4 | `sarcastic_correction` | "Sentence-initial evaluative connector + ironic reframing" structure not detected — phrases like "Which is, y'know, a pretty diplomatic way of..." and "Which is a fun lesson..." | Medium — reduces sarcastic device detection in AV Club and Gizmodo articles by ~20% | Broader regex for `sarcastic_correction` covering "Which is [evaluative]" and "At least, until" constructions | Type A, Jul 2026 |
+| 5 | `sentiment` (financial genre) | VADER inflation +0.3–0.5 points on financial articles — no correction path fires because they lack negative agency signal | High — largest per-genre scoring gap (see §16 in METHODOLOGY.md) | Dedicated financial genre correction path using headline-body alignment diagnostic + financial topic confidence ≥ 0.4 | Multiple iterations |
+
+> **Prioritization:** #5 (financial genre sentiment) is the highest-impact open bug. #4 (sarcastic_correction gaps) has medium impact. #1–3 are low-impact source extraction refinements.

@@ -1310,8 +1310,16 @@ _LITIGATION_FRAMING_PATTERNS: list[re.Pattern] = [
         re.IGNORECASE,
     ),
     # "is suing / sued / sues [entity]"
+    # Excludes colloquial "sue me" (essay prose humor, not litigation) and
+    # other pronoun objects that never represent legal targets.
+    # Discovered false positive: Atlantic emotion-AI article ("sue me —
+    # occasionally impatient") — Cushing's humor, not actual litigation.
+    # Fix: negative lookahead for personal pronouns + "for [gerund]" hedge.
     re.compile(
-        r"\b(?:is\s+)?su(?:ing|ed?|es)\s+(?:the\s+)?(?:[A-Z]\w+)",
+        r"\b(?:is\s+)?su(?:ing|ed?|es)\s+"
+        r"(?!(?:me|him|her|us|them|you|yourself|myself|himself|herself|"
+        r"ourselves|themselves)\b)"
+        r"(?:the\s+)?(?:[A-Z]\w+)",
         re.IGNORECASE,
     ),
     # "arbitration ruling/order/process" — legal mechanism framing
