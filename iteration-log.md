@@ -23957,3 +23957,50 @@ Gizmodo's +0.457 is the outlier — VADER failure, not editorial divergence. Wid
 - 662 total device patterns (+3), loaded_language now at 32 patterns
 - Cross-publication comparison expanded from 3-way to 6-way
 - Next iteration should be Type B (journalist research)
+
+
+---
+
+## 2026-07-15 21:00 PT — Type A (Article Deep Dive)
+
+### Focus
+Analytics Insight "Did Meta Use AI to Decide on Layoffs? Company Responds" (Jul 15, 2026).
+Same AI-layoff discrimination lawsuit covered by 6 other outlets Jul 14-15.
+
+### Bugs Found & Fixed
+
+1. **Source name extraction (sources.py):** Pattern 7 (group expert) captured full match
+   including attribution verb — "Legal analysts noted that" as source name. Fixed by
+   stripping trailing verb phrases via regex built from `verb_alternation`.
+
+2. **Source deduplication (sources.py):** Truncated names ("Legal") survived alongside
+   full group expert names ("Legal analysts"). Added post-extraction prefix-truncation
+   dedup. Uses prefix matching (not arbitrary substring) to avoid false positives —
+   initial substring approach broke 2 existing tests by incorrectly dropping "Meta"
+   (org source) when "the attorneys for Meta argued" (legal_party) existed.
+
+3. **Source stance (sources.py):** Documentary complaint/lawsuit sources scored neutral
+   instead of adversarial. Court complaints are filed BY plaintiffs AGAINST defendants;
+   their allegations are inherently adversarial. Added detection: source_type="documentary"
+   + legal terms (complaint, lawsuit, filing, etc.) → adversarial.
+
+4. **Hypocrisy frame false positive (framing.py):** "Set a Precedent" section heading
+   near "but" triggered hypocrisy_frame. In a legal-precedent article, "set a precedent"
+   is judicial terminology, not corporate hypocrisy. Added filter: suppress when "precedent"
+   in match text AND surrounding context contains legal terms.
+
+### Commit
+`dc1a20b` — `fix: source name extraction, dedup, stance, and hypocrisy_frame false positive`
+
+### Files Created/Modified
+- `examples/sample_output/analyticsinsight_meta_ai_layoff_discrimination_2026_07_15_article.txt` (new)
+- `examples/sample_output/analyticsinsight_meta_ai_layoff_discrimination_2026_07_15_analysis.md` (new)
+- `mediascope/analyze/sources.py` (3 fixes: name strip, prefix dedup, stance)
+- `mediascope/analyze/framing.py` (1 fix: hypocrisy_frame legal-precedent filter)
+- `tests/test_analyticsinsight_meta_ai_layoff_discrimination_jul15.py` (new, 12 tests)
+
+### Stats
+- 191 annotated articles (+1), same-event cluster 15 now 7-way
+- 2841 tests (129 files), +12 new tests
+- 106 framing device types (unchanged), 1 new false-positive filter
+- Next iteration should be Type B (journalist research)
