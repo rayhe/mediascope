@@ -63,7 +63,7 @@ Devices that use article structure, sequencing, and placement for editorial effe
 
 | # | Device | Tier | One-Line Description | Key Triggers |
 |---|--------|------|----------------------|-------------|
-| 22 | **Kicker Framing** | S | Article ends on discordant negative note unrelated to main topic | Final ~400 chars contain negative signals when body is neutral-to-positive |
+| 22 | **Kicker Framing** | S | Article ends on discordant negative note unrelated to main topic. **Subtypes:** (a) *Standard kicker* — final paragraph introduces new negative context absent from body. (b) *Backfired kicker* — body describes positive initiative, final sentence reframes it as having "backfired" or failed, using a single conclusory verb to invert the entire article's reading (e.g., "has now backfired"). Validated on: Register Muse Image/superintelligence article (Jul 13, 2026). | Final ~400 chars contain negative signals when body is neutral-to-positive |
 | 23 | **Delayed Defense** | S | Corporate rebuttal buried after 65% of article text | First response pattern appears in last 35% of article |
 | 24 | **Juxtaposition** | E | Contrasting facts placed side-by-side for editorial effect | Investment figures adjacent to layoffs; surveillance tech near consumer language |
 | 25 | **Timeline Implication** | E | Temporal sequencing used to imply causation | "After X happened, Y occurred" (when X did not cause Y) |
@@ -282,7 +282,7 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 
 ---
 
-*Last updated: 2026-07-15. See [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection) for full device descriptions, detection patterns, and discovery provenance articles.*
+*Last updated: 2026-07-16. See [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection) for full device descriptions, detection patterns, and discovery provenance articles.*
 
 ---
 
@@ -290,19 +290,20 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 
 Candidate framing devices discovered during analysis but not yet formally added. Each requires **≥3 independent real-article examples** demonstrating the pattern before promotion to the taxonomy.
 
+> **Recently promoted (Jul 14–15, 2026):** `humanization` (#105) and `surveillance_enumeration` (#106) were promoted from this section to the main taxonomy after implementation in `framing.py` with full pattern sets and regression tests. Discovery provenance: WSJ "Meta Workers Accuse It of Using AI to Conduct Layoffs" (Jul 14, 2026). See [Category 10](#category-10-personnel--labor-framing) for their current entries.
+
 | Candidate | Category | Description | Discovery Provenance | Examples Found | Status |
 |-----------|----------|-------------|---------------------|----------------|--------|
 | **Ironic Consolidation** | Narrative & Editorial Architecture | Bundling multiple independent negative narratives into a single article, connecting them with ironic thematic links to amplify perceived systemic failure. Distinct from `trend_bundling` (which groups similar actions by peers) — ironic consolidation groups *disparate* failures of a *single* entity. | Gizmodo siege roundup (Jul 2026) | 1 | Needs 2+ more |
-| **Surveillance Enumeration** | Language & Tone Manipulation | 3+ comma-separated monitoring/tracking terms in a single clause, creating a surveillance-cascade effect ("tracking employees' locations, monitoring badge swipes, scrutinizing internal messages"). The enumeration itself carries negative valence — each additional term amplifies the impression of invasive oversight. Distinct from `loaded_language` (individual word choice) and `scale_magnitude` (numerical amplification). | WSJ Meta AI layoff discrimination (Jul 14, 2026) | 1 | Needs 2+ more |
-| **Emotional Humanization** | Language & Tone Manipulation | Specific personal detail placed in temporal proximity to harm, using the granularity of the detail to amplify emotional impact ("two days before giving birth," "a single mother of three," "just weeks before retirement"). The technique converts institutional actions (layoffs, denials, penalties) into individual human-cost narratives. Distinct from `power_asymmetry` (which frames power differentials) and `emotional_appeal` (which uses abstract emotional vocabulary). | WSJ Meta AI layoff discrimination (Jul 14, 2026) | 1 | Needs 2+ more |
 
 ### Proposed Correction Paths
 
 | Candidate | Problem | Distinguishing Signal | Discovery Provenance | Status |
 |-----------|---------|----------------------|---------------------|--------|
 | **Path M — Structural Irony** | Macro-level article organization creates negative framing invisible at sentence level. VADER and even individual framing devices read each paragraph as neutral, but the *sequence* and *juxtaposition* of sections constructs an editorial argument. | Low adversarial_count + low EI + neutral agency, but manual assessment is clearly negative. Signal is in section ordering, not vocabulary. | Gizmodo siege roundup (Jul 2026) | Needs validation articles |
+| **Path N — Split-Valence Advocacy** | Article is adversarial toward the target entity's product/action but celebratory toward opponents/critics. VADER reads the fan praise and celebrity endorsement language as positive, producing near-zero raw tone when manual assessment is clearly negative. No existing path fires because: Path A needs agency < −0.3 (split-valence articles have positive agency from the celebratory framing), Path D needs loaded ≥ 7 (split-valence articles have moderate loaded language, not extreme), Path H needs aside ≥ 2, Path I needs consumer_devices ≥ 2. The distinguishing signal is two-entity valence divergence: positive toward one entity (the critic/opponent) and negative toward another (the target) in the same article, with VADER averaging them into a false neutral. | BuzzFeed "Lorde Slams Meta AI Glasses" (Jul 15, 2026) — VADER raw +0.05, manual −0.35, agency +0.25. 14 framing devices but positive celebrity language cancels adversarial signals. Cross-validated against Gizmodo celebrity backlash (Jul 14) on same event (Gizmodo fires Path A correctly because it uses pure adversarial framing without celebratory counter-narrative). | Needs 2+ more validation articles from ≥2 publications |
 
-> **Note:** Path L (quote-inflated body with negative headline) is already implemented. This candidate uses the next available letter.
+> **Note:** Path L (quote-inflated body with negative headline) is already implemented. Candidates use the next available letters (M, N).
 
 ### Promotion Criteria
 

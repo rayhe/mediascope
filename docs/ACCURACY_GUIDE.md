@@ -22,7 +22,7 @@ The goal is not perfect automation. It is *reliable flagging* — surfacing arti
 
 VADER (Valence Aware Dictionary and sEntiment Reasoner) reads individual words and short phrases, not editorial intent. Professional journalism uses measured, confident, active language — "major step forward," "unprecedented scale," "innovative approach" — that VADER scores as positive *regardless of whether the article approves or condemns the subject*.
 
-This creates **polarity inversion**: VADER assigns a positive raw score to an article whose editorial stance is clearly negative. Of the 185 manually annotated articles in MediaScope's corpus, **at least 20 exhibit documented polarity inversion** where VADER's raw score is positive (+0.30 to +0.99) but the true editorial tone is negative (−0.20 to −0.72).
+This creates **polarity inversion**: VADER assigns a positive raw score to an article whose editorial stance is clearly negative. Of the 189 manually annotated articles in MediaScope's corpus, **at least 21 exhibit documented polarity inversion** where VADER's raw score is positive (+0.30 to +0.99) but the true editorial tone is negative (−0.20 to −0.72).
 
 ### Why It Happens
 
@@ -61,6 +61,7 @@ MediaScope's 12 correction paths (A–L) address polarity inversion in specific,
 | **Procedural service journalism** | Negative tone is structural (consent_alarm, guilt transfer) rather than lexical | Flag articles with ≥2 consent_alarm + low adversarial count. Note: the forced-retreat override (Jul 14) now partially addresses this — when `policy_reversal + consent_alarm` appear together, Path A fires even with positive agency. See [SENTIMENT_CORRECTION_REFERENCE.md](SENTIMENT_CORRECTION_REFERENCE.md#path-a-variant-forced-retreat-override-jul-14-2026) |
 | **Q&A format** | Source extraction returns zero; question-answer structure breaks all detection | Manual annotation required. Report framing devices and agency only |
 | **Legal vocabulary inflation** | Legal terms of art ("discriminatory," "retaliation," "wrongful termination") are emotionally neutral in litigation reporting but VADER scores them as negative, causing −0.15 to −0.20 systematic overshoot on lawsuit articles. Conversely, legal-context verbs ("alleged," "filed," "claimed") that VADER reads as mild negative are standard neutral procedural language | Use genre-aware calibration for litigation articles. When article is primarily lawsuit coverage (topic = `litigation`), expect VADER magnitude to be overstated by ~0.15–0.20. Cross-check against wire-service baseline on same case filing. Discovered from WSJ Meta AI layoff discrimination article (Jul 14, 2026) |
+| **Split-valence advocacy** | Article is adversarial toward target entity but celebratory toward opponents/critics. Positive celebrity-praise language and negative product-critique language cancel in VADER, producing near-zero raw tone. No existing path fires because positive agency from celebratory framing blocks Path A, and moderate loaded language and low aside/consumer-device counts block Paths D/H/I. Discovered from BuzzFeed "Lorde Slams Meta AI Glasses" (Jul 15, 2026): VADER raw +0.05, manual −0.35, 14 framing devices | Candidate Path N. Compare against same-event coverage from a single-entity-valence publication (e.g., Gizmodo on same celebrity backlash event fires Path A correctly). When raw tone is ±0.10 and adversarial count ≥ 6, check for two-entity valence divergence before trusting the raw score. See [FRAMING_REFERENCE.md Proposed Correction Paths](FRAMING_REFERENCE.md#proposed-correction-paths) |
 
 ---
 
@@ -78,11 +79,12 @@ Article genre is the strongest predictor of toolkit accuracy. The table below su
 | **Tabloid/capitulation** (NY Post, The Tab, Inc) | ❌ Low (active-voice retreat reads positive) | ✅ High (Path A forced-retreat variant) | Capitulation verbs ("yanks," "scraps") have positive grammatical agency but negative editorial valence | Run correction. Expect forced-retreat override when `policy_reversal + consent_alarm` present |
 | **Opinion/essay** | ⚠️ Mixed | ⚠️ Mixed | First-person voice with genuine emotional vocabulary | Check agency attribution — opinion pieces have high legitimate agency |
 | **Litigation reporting** | ⚠️ Mixed (magnitude overshoot) | ⚠️ Mixed | Legal terms of art inflate VADER negative magnitude by ~0.15–0.20; procedural verbs ("alleged," "filed") also misscored | Compare against wire-service baseline on same case. Use expert-source presence as correction signal (expert quotes moderate editorial voice). See legal vocabulary calibration gap above |
+| **Celebrity/fan advocacy** (BuzzFeed, People, Us Weekly) | ❌ Low (split-valence cancellation) | ❌ No path fires | Celebratory language toward critics/opponents cancels adversarial language toward target — VADER averages to near-zero. Positive agency from fan-advocacy framing blocks Path A | Flag when raw tone ±0.10 with adversarial count ≥ 6. Check for two-entity valence divergence. Compare against same-event coverage from single-entity-valence outlets. Candidate Path N |
 | **Q&A** | ❌ Not applicable | ❌ Not applicable | Format breaks source extraction entirely | Manual annotation. Report framing + agency only |
 
 ### Accuracy by the Numbers
 
-From the 185 annotated articles:
+From the 189 annotated articles:
 
 - **33 articles** (18%) required framing correction — correction paths fired and improved accuracy
 - **21 articles** (12%) had documented VADER polarity inversion — raw score wrong direction
@@ -250,7 +252,7 @@ Detailed accuracy characteristics of each correction path, based on validated ex
 
 ## Appendix B: Empirical Calibration Ledger
 
-> Verified score deltas from the 183-article annotated corpus. Each entry shows the raw VADER score, the corrected score (if correction fired), the manual assessment, and the residual error. Use this to calibrate expectations for each correction path.
+> Verified score deltas from the 189-article annotated corpus. Each entry shows the raw VADER score, the corrected score (if correction fired), the manual assessment, and the residual error. Use this to calibrate expectations for each correction path.
 >
 > **How to read this:** A *positive* residual means the toolkit overestimates positivity vs. manual assessment. A *negative* residual means the toolkit overestimates negativity. Residuals within ±0.15 are acceptable; larger gaps warrant investigation.
 >
@@ -265,7 +267,17 @@ The workhorse path. Fires most often, covers the broadest category of investigat
 | Fast Company: Meta glasses controversies roundup (Jul 10) | Investigative roundup | +0.633 | −0.522 | ~−0.50 | −0.02 | Classic VADER inversion; measured professional language |
 | Motley Fool: Meta cloud $500B market (Jul 2) | Financial recommendation | +0.997 | +0.674 | +0.55 | +0.12 | Path A fired but article is genuinely positive; correction overcorrected slightly but direction maintained |
 
-**Path A accuracy:** High precision (rarely false-positive), medium recall (misses articles with positive active agency despite adversarial intent). Conservative agency < −0.3 threshold is the main recall limiter.
+**Path A accuracy:** High precision (rarely false-positive), medium recall (misses articles with positive active agency despite adversarial intent). Conservative agency < −0.3 threshold is the main recall limiter. The forced-retreat override (Jul 14) extends Path A's reach to capitulation narratives where the subject has positive grammatical agency ("Meta yanks," "Meta scraps") but negative editorial valence.
+
+### Path A Forced-Retreat Override (Jul 14, 2026)
+
+Extends Path A to capitulation/retreat articles by waiving the agency threshold when `policy_reversal + consent_alarm` co-occur.
+
+| Article | Genre | Raw | Agency (pre/post fix) | Corrected | Manual | Residual | Notes |
+|---|---|---|---|---|---|---|---|
+| NY Post "Meta yanks Muse Image" (Jul 13) | Tabloid/capitulation | +0.30 | +0.33 / −0.20 | −0.43 | −0.45 | +0.02 | 11 adversarial devices (7 loaded_language, 4 consent_alarm, 4 policy_reversal). Standard Path A blocked by agency > −0.3. Override waives threshold; 0.5× EI dampening keeps correction in −0.30 to −0.50 range (moderately negative, matching "got caught and backed down" editorial stance) |
+
+**Override accuracy:** High precision — fires only when explicit corporate reversal is framed as humiliation. The 0.5× dampening factor prevents overcorrection on articles where the subject actively took remedial action. See [SENTIMENT_CORRECTION_REFERENCE.md](SENTIMENT_CORRECTION_REFERENCE.md#path-a-variant-forced-retreat-override-jul-14-2026) for the full correction formula.
 
 ### Path D — Sardonic Contempt with Loaded Vocabulary
 
@@ -350,13 +362,14 @@ These articles expose gaps where no correction path fires despite clear VADER po
 | Gizmodo: Meta facial recognition NameTag (Jul 11) | +0.607 | ~−0.40 | **+1.0** | Consent-alarm + guilt-transfer framing is structural, not lexical. No adversarial device combination triggers any path. **SEVERITY: HIGH** — largest uncorrected gap in corpus |
 | Kotaku: Muse Image removed (Jul 11) | −0.114 | ~−0.55 | **+0.44** | Colloquial sarcasm and cultural reference ("proof of life from high school friends") defeat VADER. EI=0.87 but no sarcastic_correction devices detected. Known gap in informal/blog register |
 | Atlantic: AI slop vibes (Oct 2025) | ~+0.30 | −0.72 | **+1.02** | Genre: opinion/essay. First-person voice with genuine emotional vocabulary creates VADER inflation without structural adversarial patterns |
+| BuzzFeed: Lorde slams Meta AI glasses (Jul 15) | +0.05 | ~−0.35 | **+0.40** | **Split-valence advocacy gap.** Article is adversarial toward Meta's product but celebratory toward Lorde's opposition. VADER averages positive celebrity-praise language and negative product-critique language into a false near-zero. Path A blocked (agency +0.25), Path D blocked (loaded 4 < 7), Path H blocked (aside 1 < 2), Path I blocked (consumer_devices 1 < 2). Cross-validated against Gizmodo celebrity backlash (Jul 14) on same event — Gizmodo fires Path A correctly because it uses pure adversarial framing without celebratory counter-narrative. **Candidate Path N** — see [FRAMING_REFERENCE.md Proposed Correction Paths](FRAMING_REFERENCE.md#proposed-correction-paths) |
 
-### Calibration Statistics (from 185 annotated articles)
+### Calibration Statistics (from 189 annotated articles)
 
 | Metric | Value |
 |---|---|
-| Articles requiring correction | 33 (18%) |
-| Articles with correction that improved accuracy | 31 (94% of corrected) |
+| Articles requiring correction | 34 (18%) |
+| Articles with correction that improved accuracy | 32 (94% of corrected) |
 | Articles with correction that overcorrected | 2 (6% of corrected — Guardian philosopher, 1 other) |
 | Mean absolute residual (corrected articles) | ±0.10 |
 | Mean absolute residual (uncorrected, correct-direction) | ±0.08 |
@@ -366,4 +379,4 @@ These articles expose gaps where no correction path fires despite clear VADER po
 
 ### Key Takeaway
 
-The correction pipeline is *high-precision, medium-recall*: when it fires, it almost always improves accuracy (94% of the time), but it does not fire on every article that needs correction. The three documented failures above — consent-alarm structural framing, colloquial sarcasm, and opinion/essay genre — are the priority targets for future correction paths.
+The correction pipeline is *high-precision, medium-recall*: when it fires, it almost always improves accuracy (94% of the time), but it does not fire on every article that needs correction. The four documented failures above — consent-alarm structural framing, colloquial sarcasm, opinion/essay genre, and split-valence advocacy — are the priority targets for future correction paths.
