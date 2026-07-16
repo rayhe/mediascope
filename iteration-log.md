@@ -24494,3 +24494,23 @@ Identified 25 journalists at tracked publications with 0 top-level `source_urls`
 - followfridaypodcast.com (Bhuiyan interview)
 - edsurge.com/writers/blake-montgomery
 - pressfreedomtracker.us (Montgomery arrest incident)
+
+## 2026-07-16T11:00 PT — Type A: IBD Wedbush Hyperscalers Article
+
+**Article:** "AI Internet Hyperscalers: Why Wedbush Prefers Google And Amazon To Meta" (IBD, Jul 16 2026)
+**Commit:** `1e744e9`
+
+### Improvements
+1. **Entity clusters (+2):** Added Reddit (Reddit, RDDT) and eBay (eBay, EBAY). Reddit critical for Advance Publications ownership tracking.
+2. **Amazon cluster expanded:** Added Trainium, Trainium2, Trainium3, Inferentia (AWS custom silicon). 9→13 aliases.
+3. **Source attribution bug fix:** Extended `_CORPORATE_SPOKESPERSON_RE` with 16 additional organizational roles (analyst, director, editor, executive, etc.). "the Wedbush analyst" was misclassified as anonymous — now correctly identified as corporate_spokesperson. Impact: anonymous_source_ratio 0.333→0.000.
+4. **Competitive positioning framing (+4 patterns):** Analyst preference language — "prefers X to Y", "better picks than", "more cautious on", "remain on the sidelines". Article framing detection 4→8 devices.
+
+### Key finding: VADER financial genre inflation (known §16)
+VADER scores article 0.654 (positive) despite neutral-to-negative Meta positioning. Financial vocabulary ("outperform", "rally", "upside") inflates tone. Documented but not fixed this iteration — deferred bug.
+
+### Stats after
+- 93 entity clusters, 887 aliases
+- 666 regex patterns across 99 pattern-based types
+- 2,950 tests across 134 test files
+- 194 annotated articles
