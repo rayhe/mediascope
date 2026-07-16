@@ -16764,3 +16764,175 @@ journalists:
   source_urls:
   - https://www.nytimes.com/by/jennifer-valentino-devries
   - https://muckrack.com/jennifer-valentino-devries
+- career:
+  - beat: general reporting, investigations
+    end: '2015'
+    notes: 'Early career reporting at the Center for Investigative Reporting (now Reveal), a nonprofit investigative journalism
+      organization based in Emeryville, CA. One of his first professional journalism roles after St. John''s College.'
+    publication: center-for-investigative-reporting
+    role: reporter
+    source_url: https://www.goodreads.com/author/show/22107938.Zusha_Elinson
+    start: "?"
+  - beat: Bay Area news
+    end: "?"
+    notes: 'Wrote for the New York Times Bay Area section as a local reporter/contributor before joining the Wall Street Journal.
+      Part of the NYT''s regional coverage operation.'
+    publication: nytimes
+    role: regional_contributor
+    source_url: https://www.goodreads.com/author/show/22107938.Zusha_Elinson
+    start: "?"
+  - beat: guns, violence, crime, AI societal impact
+    end: present
+    event_type: hired
+    notes: 'National reporter based in San Francisco/California covering guns and violence. Co-authored "American Gun: The True
+      Story of the AR-15" (Farrar, Straus & Giroux, 2023) with Cameron McWhirter — a moral history of the AR-15 tracking its
+      path from military weapon to mass-shooting instrument to cultural icon. MacDowell Fellow in Literature (2022 residency,
+      Sorosis studio) to complete the manuscript. Beat has evolved from pure guns/violence/crime to encompass AI societal impact
+      — his Jul 2026 "AI Backlash Has Tech Executives Fearing for Their Lives" piece (with Lindsay Ellis and Tina Li) bridges
+      his crime/violence expertise with the tech sector, covering threats against Anthropic and OpenAI executives, the Altman
+      firebombing aftermath, and rising anti-AI sentiment. Also covered Silicon Valley embryo IQ screening (Aug 2025) and Tyler
+      Robinson murder suspect profile (Sep 2025). KEY FOR MEDIASCOPE: Not a traditional tech reporter — approaches AI/tech stories
+      through a crime/violence/societal lens rather than a product or business lens. This framing choice matters because it casts
+      tech executives as potential victims of populist backlash rather than as actors creating societal harm — a distinctly different
+      narrative frame from adversarial tech reporters like Wired''s security/investigations team.'
+    publication: wall-street-journal
+    role: national_reporter
+    source_url: https://muckrack.com/zusha-elinson/articles
+    start: "?"
+  education:
+  - institution: St. John's College
+    location: Santa Fe, NM
+    source_url: https://www.goodreads.com/author/show/22107938.Zusha_Elinson
+  multi_publication: true
+  name: Zusha Elinson
+  notes: 'Career arc: Center for Investigative Reporting → NYT Bay Area → WSJ (present). National reporter covering guns, violence,
+    crime, and AI societal impact. Co-author of "American Gun: The True Story of the AR-15" (FSG, 2023). MacDowell Fellow (2022).
+    Based in California. Grew up on a dirt road in upstate New York, worked as a chimney sweep before journalism. KEY for MediaScope:
+    (1) Approaches AI/tech through crime/violence lens — distinctly different from traditional tech reporters. (2) His AI Backlash
+    article frames tech executives as targets of populist violence, establishing a "tech-as-victim" narrative that runs counter
+    to adversarial tech journalism at Wired/Gizmodo. (3) WSJ''s crime desk covering AI societal impact represents beat-expansion
+    where guns/violence expertise is deployed on technology stories. (4) Co-byline with Lindsay Ellis (workplace) and Tina Li
+    (tech) shows WSJ assembling cross-beat teams for AI societal impact coverage.'
+  source_urls:
+  - https://muckrack.com/zusha-elinson/articles
+  - https://www.goodreads.com/author/show/22107938.Zusha_Elinson
+  - https://macdowell.org/artists/zusha-elinson
+  - https://lithub.com/cameron-mcwhirter-and-zusha-elinson-on-the-history-of-the-ar-15/
+- career:
+  - beat: US news, corporate news
+    end: "?"
+    notes: 'Started career as an intern in the Wall Street Journal''s Atlanta bureau, covering U.S. and corporate news. This
+      was her entry point into Dow Jones.'
+    publication: wall-street-journal
+    role: intern
+    source_url: https://talkingbiznews.com/they-re-hiring/wsj-hires-ellis-to-cover-business-schools/
+    start: "?"
+  - beat: business
+    end: "?"
+    notes: 'Covered business at the Albany Times-Union in upstate New York. Early career position.'
+    publication: times-union-albany
+    role: reporter
+    source_url: https://rocketreach.co/lindsay-ellis-email_100068508
+    start: "?"
+  - beat: higher education, Texas education policy
+    end: '2018'
+    notes: 'Covered Texas higher-education issues for the Houston Chronicle. Part of a team that won an APME Grand Prize and
+      was a finalist for the Pulitzer Prize for breaking-news coverage of Hurricane Harvey.'
+    publication: houston-chronicle
+    role: reporter
+    source_url: https://www.nationalpress.org/journalist/lindsay-ellis/
+    start: "?"
+  - beat: research universities, college finance, governance, crisis management, Covid-19 response
+    end: '2019'
+    notes: 'Staff reporter at The Chronicle of Higher Education covering research universities and higher education governance.'
+    publication: chronicle-of-higher-education
+    role: staff_reporter
+    source_url: https://rocketreach.co/lindsay-ellis-email_100068508
+    start: '2018'
+  - beat: research universities, college finance, governance, political polarization, public-university boards
+    end: '2022'
+    notes: 'Promoted to senior reporter. Coverage of public-university boards earned a finalist designation for the Dateline Award
+      for Investigative Journalism from the D.C. Chapter of the Society of Professional Journalists. Also covered higher education''s
+      response to Covid-19.'
+    publication: chronicle-of-higher-education
+    role: senior_reporter
+    source_url: https://www.nationalpress.org/journalist/lindsay-ellis/
+    start: '2019'
+  - beat: workplace, careers, business schools, college-to-career, AI employment impact
+    end: present
+    event_type: hired
+    notes: 'Joined WSJ Jan 31, 2022 to cover business schools, young professionals, and the college-to-career transition. Beat
+      has expanded significantly to cover AI''s impact on white-collar employment. DC-based, Boston roots. Key articles: "Tens
+      of Thousands of White-Collar Jobs Are Disappearing as AI Starts to Bite" (Oct 2025), "AI is wrecking an already fragile
+      job market for college graduates" (Jul 2025 with Katherine Bindley), MBA programs reorienting around AI. Jul 2026 "AI
+      Backlash Has Tech Executives Fearing for Their Lives" piece (with Zusha Elinson and Tina Li) represents her broadest AI
+      societal impact story, extending beyond workforce to physical security. Briefed NPF journalists Dec 2022 on workplace
+      mental health. KEY FOR MEDIASCOPE: Beat evolution from higher-ed reporter to AI-employment impact reporter illustrates
+      how AI is pulling workplace/labor reporters into tech coverage. Her framing approaches AI through the lens of workers
+      and job loss — distinct from both tech-product reporters and business/revenue reporters. This "AI-as-threat-to-workers"
+      frame is one of the dominant narrative structures in current AI coverage.'
+    publication: wall-street-journal
+    role: reporter
+    source_url: https://muckrack.com/lindsay-ellis/articles
+    start: 2022-01-31
+  education:
+  - degree: BA
+    field: English
+    institution: Dartmouth College
+    source_url: https://rocketreach.co/lindsay-ellis-email_100068508
+  multi_publication: true
+  name: Lindsay Ellis
+  notes: 'Career arc: WSJ Atlanta intern → Times-Union (Albany) → Houston Chronicle → Chronicle of Higher Education → WSJ (present).
+    Reporter covering workplace, careers, and increasingly AI employment impact. DC-based, Boston roots. Pulitzer finalist (team,
+    Hurricane Harvey breaking news). Dateline Award finalist (SPJ DC Chapter, public-university boards investigation). KEY for
+    MediaScope: (1) Beat evolution from higher-ed to AI-employment is a canonical example of how AI coverage is pulling in
+    non-tech reporters. (2) Her "AI destroys white-collar jobs" framing establishes a worker-centric narrative structure. (3) Cross-beat
+    collaboration with Elinson (crime) and Tina Li (tech) on AI Backlash shows WSJ building AI societal impact coverage through
+    beat-combination rather than single-desk ownership. (4) Her higher-ed background gives her unique sourcing into universities
+    and business schools studying AI''s labor market impact — she is both reporting on and citing the same academic ecosystem.'
+  source_urls:
+  - https://muckrack.com/lindsay-ellis/articles
+  - https://www.nationalpress.org/journalist/lindsay-ellis/
+  - https://talkingbiznews.com/they-re-hiring/wsj-hires-ellis-to-cover-business-schools/
+  - https://rocketreach.co/lindsay-ellis-email_100068508
+  - https://chronicle.com/article/lindsay-ellis
+- career:
+  - beat: features, investigations, campus journalism
+    end: "?"
+    notes: 'Student journalist at The New Journal, Yale''s features magazine. Published long-form features including "Unforced
+      Error" (on STEM researchers affected by federal cuts), "The Long Ride Home" (44 pedestrian/cyclist deaths on New Haven
+      streets since 2019), "Independent Declarations" (New Haven Independent community), and poetry. English major.'
+    publication: new-journal-yale
+    role: student_journalist
+    source_url: https://thenewjournalatyale.com/author/tina-li/
+    start: "?"
+  - beat: tech, AI, startups, venture capital
+    end: present
+    event_type: hired
+    notes: 'Started as tech reporting intern (Twitter bio: "tech reporting intern @wsj and english @yale"), promoted to staff
+      reporter with full bylines. Key articles: "The AI Price War Is Here, Piling Pressure on OpenAI and Anthropic" (with Bradley
+      Olson, Jun 2026), "AI Backlash Has Tech Executives Fearing for Their Lives" (with Lindsay Ellis and Zusha Elinson, Jul
+      2026), Mirendil $200M seed round at $1B valuation, drone-boat rescue story. Twitter: @tinajhli. KEY FOR MEDIASCOPE: (1)
+      Earliest-career journalist in the dataset — represents a new generation of AI-native reporters who entered journalism when
+      AI was already the dominant tech story. (2) Yale English → WSJ tech pipeline is a non-STEM pathway into AI coverage that
+      may produce different framing instincts than CS/engineering backgrounds. (3) Cross-beat byline with Ellis (workplace) and
+      Elinson (crime) on AI Backlash shows WSJ using junior reporters alongside veterans for major societal impact stories.'
+    publication: wall-street-journal
+    role: reporter
+    source_url: https://www.wsj.com/tech/ai/the-ai-price-war-is-here-piling-pressure-on-openai-and-anthropic-86e1d21b
+    start: "?"
+  education:
+  - field: English
+    institution: Yale University
+    source_url: https://thenewjournalatyale.com/author/tina-li/
+  name: Tina Li
+  notes: 'Career arc: Yale (English, student journalism at The New Journal) → WSJ tech intern → WSJ tech reporter (present). Earliest-career
+    journalist in the MediaScope dataset. Twitter: @tinajhli. KEY for MediaScope: (1) Represents the emerging generation of
+    AI-native tech reporters who began their careers when AI was already the dominant story. (2) Non-STEM background (English
+    at Yale, published poetry and long-form investigations) — suggests humanistic/literary framing instincts that may produce
+    different coverage patterns than CS-trained reporters. (3) Working on major AI stories (price wars, societal backlash) very
+    early in career — WSJ is investing in training junior reporters on the AI beat. (4) Her New Journal work shows strong
+    investigative instincts (pedestrian deaths, STEM funding cuts) that may carry into her AI coverage.'
+  source_urls:
+  - https://thenewjournalatyale.com/author/tina-li/
+  - https://www.wsj.com/tech/ai/the-ai-price-war-is-here-piling-pressure-on-openai-and-anthropic-86e1d21b
