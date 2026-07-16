@@ -536,6 +536,13 @@ journalists:
     source_url: https://www.editorandpublisher.com/stories/the-atlantic-announces-hire-of-charlie-warzel-as-staff-writer,249102
     start: 2021-11
   name: Charlie Warzel
+  source_urls:
+  - https://www.hamilton.edu/news/story/charlie-warzel-10-interns-at-meet-the-press
+  - https://about.me/charliewarzel
+  - https://nytco.com/press/charlie-warzel-to-join-the-new-york-times-opinion-pages/
+  - https://warzel.substack.com/p/welcome-to-galaxy-brain
+  - https://www.editorandpublisher.com/stories/the-atlantic-announces-hire-of-charlie-warzel-as-staff-writer,249102
+  - https://muckrack.com/charlie-warzel
   notes: 'Key migration chain: NBC News (intern) → InTheCapital → Adweek → BuzzFeed News → NYT Opinion → Substack (Galaxy
     Brain) → Atlantic. The Shipley School (Bryn Mawr, PA, Class of 2006). Hamilton College BA Government (Class of 2010, January
     ''07 admit). Alpha Delta Phi fraternity. Clubs: Adirondack Adventure, Buffers, Sino-American Relations Club, Untitled
@@ -2784,44 +2791,53 @@ journalists:
   - gig_economy
   career:
   - end: '2013'
-    notes: Editorial assistant at World Policy Institute.
+    notes: Editorial assistant at World Policy Institute, early career stepping stone before pivoting to journalism.
     publication: world-policy-institute
     role: editorial_assistant
     source_url: https://theorg.com/org/guardian-media-group/org-chart/johana-bhuiyan
     start: '2013'
   - end: '2014'
-    notes: Writer at PolicyMic (now Mic).
+    notes: Writer at PolicyMic (now Mic). Early digital-native outlet covering policy and politics for millennials.
     publication: policymic
     role: writer
     source_url: https://theorg.com/org/guardian-media-group/org-chart/johana-bhuiyan
     start: '2013'
   - end: '2015'
-    notes: Covered media for Politico New York.
+    notes: Covered media beat for Politico New York. First traditional newsroom role, building sourcing skills in NYC
+      media ecosystem.
     publication: politico-new-york
     role: reporter
     source_url: https://theorg.com/org/guardian-media-group/org-chart/johana-bhuiyan
     start: '2014'
   - end: '2016'
-    notes: Future of transportation reporter.
+    notes: Future of transportation reporter at BuzzFeed News. Began covering ride-hailing and gig economy — beat
+      that would define her career trajectory through Recode and LA Times.
     publication: buzzfeed-news
     role: future_of_transportation_reporter
-    source_url: https://theorg.com/org/guardian-media-group/org-chart/johana-bhuiyan
+    source_url: https://muckrack.com/johana-bhuiyan
     start: '2015'
   - end: '2018'
-    notes: Senior transportation editor at Re/code.
+    notes: Senior transportation editor at Recode/Vox Media. Deep Uber/Lyft coverage during peak ride-hailing disruption
+      era. Built expertise in gig economy labor dynamics and tech platform accountability.
     publication: recode
     role: senior_transportation_editor
-    source_url: https://theorg.com/org/guardian-media-group/org-chart/johana-bhuiyan
+    source_url: https://muckrack.com/johana-bhuiyan
     start: '2016'
   - end: 2021-08
-    notes: Tech investigative reporter on business desk. Focus on tech accountability.
+    notes: 'Technology reporter on business desk, LA Times. Shifted from transportation to broader tech accountability
+      beat: surveillance of marginalized communities, Google employee walkout coverage, LAPD predictive policing harms,
+      Voyager predictive policing investigation. Covered gig economy labor issues. Departure announced by TalkingBizNews
+      when she left for Guardian.'
     publication: los-angeles-times
     role: technology_reporter
     source_url: https://talkingbiznews.com/they-re-leaving/tech-accountability-reporter-bhuiyan-departing-la-times-for-the-guardian/
     start: '2018'
-  - notes: Senior tech reporter and editor, Guardian US. Covers surveillance of marginalized communities, immigration tech,
-      ICE monitoring. Based in New York. Investigation of cattle monitoring company's ICE surveillance contracts. Amazon tipping
-      investigation led to settlement.
+  - notes: 'Senior tech reporter and editor, Guardian US. Joined Aug 30, 2021; relocated to New York 2022. Covers
+      surveillance of marginalized communities, immigration tech, ICE monitoring. Key investigations: cattle monitoring
+      company working with ICE (ankle monitors, facial recognition, smartwatches, data stored 75 years); Amazon withholding
+      Flex driver tips (led to FTC $61.7M settlement + DC AG $3.95M settlement); Uyghur-identifying camera technology.
+      Beat trajectory: transportation → tech accountability → surveillance of marginalized groups represents a consistent
+      deepening focus on how technology surveils and harms vulnerable populations.'
     publication: guardian
     role: senior_tech_reporter_editor
     source_url: https://talkingbiznews.com/they-re-leaving/tech-accountability-reporter-bhuiyan-departing-la-times-for-the-guardian/
@@ -2831,10 +2847,23 @@ journalists:
     field: Journalism
     institution: Lehigh University
     source_url: https://theorg.com/org/guardian-media-group/org-chart/johana-bhuiyan
+    year: '2013'
+    notes: Won Williams Prize twice for short fiction at Lehigh.
   name: Johana Bhuiyan
-  notes: 'Pronounced "Boo-Yah". Hijab-wearing Muslim woman journalist. Based in New York (formerly SF). Covers surveillance
-    of marginalized groups: BIPOC, Muslim, immigrant communities, gig workers. Previously covered transportation/ride-hailing
-    at BuzzFeed/Recode. Amazon driver tipping investigation led to settlement. X: @JMBooyah. Contact: Johana.Bhuiyan@theguardian.com.'
+  source_urls:
+  - https://theorg.com/org/guardian-media-group/org-chart/johana-bhuiyan
+  - https://talkingbiznews.com/they-re-leaving/tech-accountability-reporter-bhuiyan-departing-la-times-for-the-guardian/
+  - https://muckrack.com/johana-bhuiyan
+  - https://www.birthdaydbs.com/who-is-johana-bhuiyan
+  - https://castbox.fm/episode/Muslim-in-Plain-Sight-Johana-Bhuiyan
+  - https://followfridaypodcast.com/johana-bhuiyan
+  notes: 'Pronounced "Boo-Yah". Born October 22, 1991, New York. Hijab-wearing Muslim woman journalist whose personal
+    experience growing up in post-9/11 NYC shaped her surveillance beat focus (discussed on Muslim in Plain Sight podcast).
+    Based in New York (formerly SF). Career arc: transportation/ride-hailing (BuzzFeed/Recode) → tech accountability
+    (LA Times) → surveillance of marginalized groups (Guardian). Covers BIPOC, Muslim, immigrant communities, and gig
+    workers. Amazon driver tipping investigation led to FTC $61.7M + DC AG $3.95M settlements. Cattle monitoring company
+    ICE investigation exposed 75-year data retention. Podcast appearances: Muslim in Plain Sight, Muslims Doing Things,
+    FannBoy Friday, Follow Friday. X: @JMBooyah. Phone: 4156303604. Contact: Johana.Bhuiyan@theguardian.com.'
 - beats:
   - technology
   - breaking_news
@@ -2886,6 +2915,12 @@ journalists:
     notes: Phi Beta Kappa. Published nonfiction graphic novel "A Place Among the Stars" while at Stanford.
     source_url: https://edsurge.com/writers/blake-montgomery
   name: Blake Montgomery
+  source_urls:
+  - https://talkingbiznews.com/they-re-hiring/guardian-hires-montgomery-to-be-us-tech-editor/
+  - https://talkingbiznews.com/they-re-hiring/the-daily-beast-hires-montgomery-to-cover-tech/
+  - https://edsurge.com/writers/blake-montgomery
+  - https://muckrack.com/blake-montgomery/articles
+  - https://pressfreedomtracker.us/all-incidents/buzzfeed-news-journalist-arrested-seattle-while-asking-comment/
   notes: 'Stanford BA (English, Phi Beta Kappa). EdSurge → BuzzFeed → Daily Beast → Gizmodo → Guardian pipeline. US tech editor
     — the gatekeeper for Guardian US tech coverage. Hosts TechScape newsletter. Fiction writer. Arrested while reporting (2018,
     charges dropped). Graphic novel author. ANALYTICAL VALUE: As US tech editor, his editorial judgment shapes which stories

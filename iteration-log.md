@@ -24266,3 +24266,98 @@ Same AI-layoff discrimination lawsuit covered by 6 other outlets Jul 14-15.
 - 91 entity clusters (+3), 879 aliases (+4)
 - 2 new framing false-positive filters (negation, editorial conclusion)
 - Next iteration should be Type B (journalist research)
+
+## 2026-07-16 06:00 PT — Type B: Journalist Research (3 WSJ AI Backlash Byliners)
+
+**Rotation:** B (Journalist/Publication Research)
+**Commit:** `c7d6199` — "Type B: Add 3 WSJ journalists (Elinson, Ellis, Tina Li) from AI Backlash article"
+
+### What was done
+
+Researched and added full career profiles for all 3 byliners from the Type A article analyzed last hour ("The AI Backlash Has Tech Executives Fearing for Their Lives," WSJ Jul 16 2026):
+
+1. **Zusha Elinson** — WSJ national reporter, guns/violence/crime beat evolving to AI societal impact. Career: Center for Investigative Reporting → NYT Bay Area → WSJ. Co-author "American Gun: The True Story of the AR-15" (FSG 2023). MacDowell Fellow 2022. St. John's College, Santa Fe. Approaches AI/tech through crime/violence lens — frames tech execs as victims of populist backlash (distinct from adversarial Wired/Gizmodo framing). 3 career entries, 4 source URLs.
+
+2. **Lindsay Ellis** — WSJ workplace/careers reporter, DC-based, Boston roots. Career: WSJ intern (Atlanta) → Times-Union (Albany) → Houston Chronicle (Pulitzer finalist for Hurricane Harvey) → Chronicle of Higher Education (2018-2022, senior reporter, SPJ Dateline Award finalist) → WSJ (Jan 2022). Dartmouth BA English. Beat evolved from higher-ed/business-schools to AI employment impact — canonical example of AI coverage pulling in non-tech reporters. 6 career entries, 5 source URLs.
+
+3. **Tina Li** — WSJ tech reporter, earliest-career journalist in MediaScope dataset. Career: Yale English (student journalism at The New Journal — features, poetry, investigations) → WSJ intern → WSJ tech reporter. Twitter: @tinajhli. Key bylines: "The AI Price War" (with Bradley Olson, Jun 2026), "AI Backlash" (Jul 2026). Represents AI-native generation entering journalism when AI was already the dominant tech story. 2 career entries, 2 source URLs.
+
+### Analytical significance
+
+WSJ assembled a **cross-beat team** (crime + workplace + tech) for the AI Backlash story — a distinctly different editorial approach from Wired's single-desk Security & Investigations team (Andrew Couts) or NYT's tech correspondent model (Cade Metz). This suggests WSJ frames major AI societal impact stories through beat-combination rather than single-desk ownership, producing multi-perspective pieces.
+
+### Stats update
+
+All stat references updated across README.md, EDITORIAL_HISTORIES.md, careers_demo.py:
+- Journalists: 239 → 242 (+3)
+- Career entries: 934 → 942 (+8)  
+- Career-entry migrations: 731 → 737 (+6, auto-detected by CareerTracker)
+- Publications: 429 → 433 (+4: Center for Investigative Reporting, Times-Union Albany, Houston Chronicle, Chronicle of Higher Education)
+- Multi-publication journalists: 229 → 232 (+3)
+- Education records: 58 → 60 (+2: Elinson + Ellis have structured education; Li has field but no degree yet)
+
+### Verification
+
+- All 145 tests pass (structural consistency + careers), 0 warnings
+- YAML valid (python3 yaml.safe_load)
+- `count_stats.py` values consistent with README
+- Pushed to GitHub: `64c63d6..c7d6199`
+
+### Sources consulted
+- MacDowell (macdowell.org/artists/zusha-elinson)
+- Goodreads (goodreads.com/author/show/22107938.Zusha_Elinson)
+- LitHub (lithub.com interview on American Gun)
+- National Press Foundation (nationalpress.org/journalist/lindsay-ellis/)
+- Muck Rack (muckrack.com profiles for both Elinson and Ellis)
+- RocketReach (work history + education for Ellis)
+- Chronicle of Higher Education (chronicle.com/article/lindsay-ellis)
+- Talking Biz News (WSJ hiring announcement for Ellis, Jan 2022)
+- The New Journal at Yale (thenewjournalatyale.com/author/tina-li/)
+- WSJ article bylines and contact emails
+- Twitter (@tinajhli profile bio)
+
+---
+
+## 2026-07-16 07:00 PT — Type B (Journalist Profile Enrichment)
+
+### Focus: Filling top-level `source_urls` gaps and enriching thin profiles
+
+Identified 25 journalists at tracked publications with 0 top-level `source_urls`. Enriched 3 profiles:
+
+#### Johana Bhuiyan (Guardian) — Full enrichment
+- Added 6 top-level `source_urls` (theorg.com, TalkingBizNews, Muck Rack, birthdaydbs.com, castbox.fm, followfridaypodcast.com)
+- Diversified career-entry source URLs (was all theorg.com; now includes muckrack.com for BuzzFeed/Recode entries)
+- Enriched all 7 career entry notes with investigation details, beat evolution, analytical context
+- Added education year (2013) and Williams Prize award notation
+- Expanded top-level notes: birth year (1991), phone number, podcast appearances, FTC/DC AG settlement amounts ($61.7M + $3.95M), cattle monitoring 75-year data retention, career arc trajectory analysis
+- Career trajectory: World Policy Institute → PolicyMic → Politico NY → BuzzFeed News → Recode → LA Times → Guardian (transportation → tech accountability → surveillance of marginalized groups)
+
+#### Charlie Warzel (Atlantic) — Source URL addition
+- Added 6 top-level `source_urls` (hamilton.edu, about.me, nytco.com, warzel.substack.com, editorandpublisher.com, muckrack.com)
+- Profile was already extremely detailed (7 career entries with deep analytical notes); only gap was missing top-level source_urls list
+
+#### Blake Montgomery (Guardian) — Source URL addition
+- Added 5 top-level `source_urls` (TalkingBizNews ×2, EdSurge, Muck Rack, Press Freedom Tracker)
+- Profile was already well-documented (6 career entries with notes); only gap was missing top-level source_urls list
+
+### Stats (unchanged)
+- Journalists: 242
+- Career-entry migrations: 942
+- Publications: 433
+- Journalists with top-level source_urls: 140 (was 137, +3)
+- Journalists without top-level source_urls: 102 (was 105, -3)
+
+### Verification
+- YAML valid (yaml.safe_load)
+- 2,899 tests pass, 9 xfailed, 0 failures
+- `count_stats.py` consistent with README
+
+### Sources consulted
+- theorg.com/org/guardian-media-group/org-chart/johana-bhuiyan
+- talkingbiznews.com (departure/hire announcements for all 3 journalists)
+- muckrack.com (Bhuiyan + Montgomery profiles)
+- birthdaydbs.com (Bhuiyan birth date)
+- castbox.fm (Muslim in Plain Sight podcast appearance)
+- followfridaypodcast.com (Bhuiyan interview)
+- edsurge.com/writers/blake-montgomery
+- pressfreedomtracker.us (Montgomery arrest incident)
