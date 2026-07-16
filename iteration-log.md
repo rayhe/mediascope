@@ -1,4 +1,42 @@
 # MediaScope Iteration Log
+## 2026-07-15 23:00 PT — Type A: MIT Tech Review OpenAI Open-Weight / Meta Pivot Deep Dive
+
+**Rotation:** A (Article Deep Dive)
+**Article:** MIT Technology Review — "OpenAI has finally released open-weight language models" (~Jul 2026)
+**Analysis file:** `examples/sample_output/mittr_openai_open_weight_meta_pivot_2026_07_analysis.md`
+**Commit:** (see below)
+
+### What was done
+
+1. **Entity verification:** Ran toolkit against article text. All 6 previously-identified entity gaps (Princeton, AI2, HuggingFace, Percy Liang, Miles Brundage, GPT-2/gpt-oss) are now detected — fixes were already in place from prior iterations. Current counts: OpenAI (23), Meta (6), Academic/Research (7), Chinese AI (6), Chinese Tech Platforms (2), HuggingFace (2), Apple (1), AI Research Orgs (1), Political Figures (1).
+
+2. **`analogy_metaphor` false positive FIX:** "like the possibility that agentic models" was firing as `analogy_metaphor` but is exemplification, not metaphor. Added suppression filter in `framing.py` for "like the [abstract noun] that/of" constructions (possibility, idea, fact, risk, prospect, notion, concern, chance, likelihood, danger, threat, fear, hope, belief, assumption, claim, suggestion, argument, hypothesis). After fix: article correctly detects only `ironic_quotation` ("gpt-oss") and `competitive_displacement` ("previously dominated...reorienting").
+
+3. **New test file:** `tests/test_mittr_openai_open_weight_meta_pivot.py` — 15 tests:
+   - Entity detection (9): OpenAI count ≥15, GPT-2/gpt-oss in OpenAI, Meta ≥3, Academic/Research ≥4, Princeton in Academic, Percy Liang/Stanford in Academic, Chinese AI ≥3, HuggingFace detected, AI Research Orgs detected
+   - Framing detection (4): ironic_quotation fires, evidence contains "gpt-oss", competitive_displacement fires, evidence contains "previously dominated" or "reorienting"
+   - Regression guard (1): analogy_metaphor must NOT fire on "like the possibility" exemplification
+   - Framing count sanity (1): expected device types present, no false positives
+
+4. **Analysis doc updated:** Marked all entity gaps as resolved, documented analogy_metaphor fix, restructured from "gaps identified" to "resolved/future work" format, added test coverage section.
+
+5. **Regression:** Full structural consistency suite (124 tests) + new test file (15 tests) — all pass.
+
+### Files changed
+- `mediascope/analyze/framing.py` — analogy_metaphor suppression filter
+- `tests/test_mittr_openai_open_weight_meta_pivot.py` — NEW (15 tests)
+- `examples/sample_output/mittr_openai_open_weight_meta_pivot_2026_07_analysis.md` — updated
+
+### Stats
+- Entity clusters: 88 (875 aliases)
+- Framing types: 106 (720 patterns)
+- Emotional language terms: 1,022
+- Annotated articles: 192 (48 publications)
+- Journalists: 239 (932 career entries, 429 publications)
+- Tests: ~2,835 (128 files)
+
+---
+
 ## 2026-07-15 19:00 PT — Type D: Toolkit Quality & Documentation (Stale Proposed Additions Fix + Path N + Calibration Ledger)
 
 **Rotation:** D (Toolkit Quality & Documentation)

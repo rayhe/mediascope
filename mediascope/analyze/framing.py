@@ -9694,6 +9694,25 @@ def detect_framing_devices(
                     ):
                         continue
 
+                    # --- "like the [abstract noun] that/of" exemplification ---
+                    # Suppress when "like" means "such as" / "for example"
+                    # before abstract nouns, not a metaphorical comparison.
+                    #
+                    # Discovered in MIT Tech Review OpenAI open-weight article
+                    # (Jul 2026): "like the possibility that agentic models
+                    # could purposefully write vulnerable code" is an example
+                    # enumeration, not a simile.
+                    # ----------------------------------------------------------
+                    if re.search(
+                        r"\blike the (?:possibility|idea|fact|likelihood|"
+                        r"chance|risk|prospect|notion|concern|worry|fear|"
+                        r"scenario|threat|concept|question|problem|issue|"
+                        r"danger|reality|suggestion|claim|argument|hope|"
+                        r"expectation)\b",
+                        _matched_am,
+                    ):
+                        continue
+
                 # --- Pathologizing metaphor: neutral "intervention" filter ----
                 # Suppress pathologizing_metaphor when "intervention" appears
                 # in neutral technical context: "human intervention", "less
