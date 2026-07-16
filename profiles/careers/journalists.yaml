@@ -2154,52 +2154,51 @@ journalists:
   - cybersecurity
   - uk_tech_policy
   career:
-  - end: '~2006'
+  - end: ~2006
     notes: Joined Guardian in 2000. Self-describes early career as covering "a variety of roles at the organisation." UK-based
       throughout. Exact early beats not publicly documented.
     publication: guardian
     role: reporter
     source_url: https://londontechweek.com/speakers/dan-milmo
     start: '2000'
-  - end: '~2013'
-    notes: 'Industrial editor covering transport, aviation, and industry. Confirmed by multiple bylines: "Dan Milmo and
-      Ian Griffiths" on Ryanair coverage (2006), Go-Ahead/FirstGroup transport articles (2007-2009), Heathrow capacity
-      bylined "Dan Milmo, industrial editor" (2011). Beat included airlines, rail operators, and broader industrial
-      affairs. Self-identifies this role in London Tech Week bio.'
+  - end: ~2013
+    notes: 'Industrial editor covering transport, aviation, and industry. Confirmed by multiple bylines: "Dan Milmo and Ian
+      Griffiths" on Ryanair coverage (2006), Go-Ahead/FirstGroup transport articles (2007-2009), Heathrow capacity bylined
+      "Dan Milmo, industrial editor" (2011). Beat included airlines, rail operators, and broader industrial affairs. Self-identifies
+      this role in London Tech Week bio.'
     publication: guardian
     role: industrial_editor
     source_url: https://londontechweek.com/speakers/dan-milmo
-    start: '~2006'
-  - end: '~2015'
-    notes: Media business editor. Covered media industry, broadcasting, telecoms. Transition from industrial/transport
-      beat to media business represented lateral move within Guardian business desk. Self-identifies this role in London
-      Tech Week bio.
+    start: ~2006
+  - end: ~2015
+    notes: Media business editor. Covered media industry, broadcasting, telecoms. Transition from industrial/transport beat
+      to media business represented lateral move within Guardian business desk. Self-identifies this role in London Tech Week
+      bio.
     publication: guardian
     role: media_business_editor
     source_url: https://londontechweek.com/speakers/dan-milmo
-    start: '~2013'
+    start: ~2013
   - end: '2020'
-    notes: Deputy business editor. Edited business section coverage, shaped Guardian's approach to media and business
-      industry reporting. Management role before pivoting to technology. Self-identifies this role in London Tech Week bio.
+    notes: Deputy business editor. Edited business section coverage, shaped Guardian's approach to media and business industry
+      reporting. Management role before pivoting to technology. Self-identifies this role in London Tech Week bio.
     publication: guardian
     role: deputy_business_editor
     source_url: https://londontechweek.com/speakers/dan-milmo
-    start: '~2015'
+    start: ~2015
   - notes: 'Global technology editor since ~2020. Covers AI policy, platform regulation, Elon Musk/X/Twitter, cybersecurity,
-      UK social media bans, children''s online safety, AI datacenter policy, and Big Tech accountability. Key articles:
-      Rohingya sued Facebook for £150B over Myanmar genocide (Dec 2021); Elon Musk Twitter buyout co-byline with Kari Paul
-      (2022); anti-hate speech group vs X Corp/Musk (2023); Meta E2E encryption delay — Techmeme lead (2023); Guardian will
-      no longer post on Elon Musk''s X (Nov 2024); UK under-16s social media ban series (Jun 2026); UK critical infrastructure
-      200 cyber incidents/year (Jun 2026); UK scam ad ban proposals (Jul 2026); stymied UK datacentre projects (Jul 2026);
-      AI nudification apps (Jul 2026); Apple/Google duopoly (Jul 2026); Meta employee tracker pause (Jul 2026); TfL cyber-attack
-      investigation (Jul 2026). Interviewed Demis Hassabis at Bletchley Park AI Safety Summit. Guardian is founding member
-      of SPUR (Standards for Publisher Usage Rights) coalition with BBC, FT, Sky News, Telegraph — announced Feb-Mar 2026 —
-      positioning Guardian in AI licensing standards governance. Regular co-authors: Kari Paul (US tech, departed mid-2024),
-      Alex Hern (UK tech, departed Oct 2024 to Economist), Robert Booth (UK tech, investigative). Speaker at Web Summit
-      and London Tech Week (multiple years). Syndicated widely: MSN (US/UK/AU/Ireland/MY/PH/SG/ZA), Yahoo Canada, Yahoo
-      News. Buzzsumo Power score 3,203. One of the Guardian''s most prolific tech bylines — high-frequency output on UK
-      tech policy, AI regulation, and Big Tech accountability. Appeared on France 24 and other broadcast media as Guardian
-      tech voice.'
+      UK social media bans, children''s online safety, AI datacenter policy, and Big Tech accountability. Key articles: Rohingya
+      sued Facebook for £150B over Myanmar genocide (Dec 2021); Elon Musk Twitter buyout co-byline with Kari Paul (2022);
+      anti-hate speech group vs X Corp/Musk (2023); Meta E2E encryption delay — Techmeme lead (2023); Guardian will no longer
+      post on Elon Musk''s X (Nov 2024); UK under-16s social media ban series (Jun 2026); UK critical infrastructure 200 cyber
+      incidents/year (Jun 2026); UK scam ad ban proposals (Jul 2026); stymied UK datacentre projects (Jul 2026); AI nudification
+      apps (Jul 2026); Apple/Google duopoly (Jul 2026); Meta employee tracker pause (Jul 2026); TfL cyber-attack investigation
+      (Jul 2026). Interviewed Demis Hassabis at Bletchley Park AI Safety Summit. Guardian is founding member of SPUR (Standards
+      for Publisher Usage Rights) coalition with BBC, FT, Sky News, Telegraph — announced Feb-Mar 2026 — positioning Guardian
+      in AI licensing standards governance. Regular co-authors: Kari Paul (US tech, departed mid-2024), Alex Hern (UK tech,
+      departed Oct 2024 to Economist), Robert Booth (UK tech, investigative). Speaker at Web Summit and London Tech Week (multiple
+      years). Syndicated widely: MSN (US/UK/AU/Ireland/MY/PH/SG/ZA), Yahoo Canada, Yahoo News. Buzzsumo Power score 3,203.
+      One of the Guardian''s most prolific tech bylines — high-frequency output on UK tech policy, AI regulation, and Big
+      Tech accountability. Appeared on France 24 and other broadcast media as Guardian tech voice.'
     publication: guardian
     role: global_technology_editor
     source_url: https://londontechweek.com/speakers/dan-milmo
@@ -2211,17 +2210,17 @@ journalists:
   name: Dan Milmo
   notes: 'UK-based. Career entirely at Guardian (26+ years, joined 2000). Self-describes career arc: "I joined the Guardian
     in 2000 and have covered a variety of roles at the organisation including industrial editor, media business editor and
-    deputy business editor" (London Tech Week bio). Rare single-publication lifer — promoted through five distinct roles
-    (reporter → industrial editor → media business editor → deputy business editor → global technology editor). Zero
-    cross-publication migrations makes him a PURE control case for institutional bias analysis (no confounding employer
-    changes). Key editorial gatekeeper for how the Guardian covers Big Tech globally. His longevity means his framing
-    reflects Guardian institutional voice, not personal career-hopping bias. The industrial editor phase (transport/aviation
-    2006-2013) is significant: he came to tech journalism from infrastructure and regulation reporting, not from tech itself
-    — bringing a framework of public interest, safety, and accountability that predates his tech beat. Covers UK social
-    media bans, AI safety policy, cybersecurity, platform accountability, AI datacenter policy. High-frequency output
-    (multiple articles/week). Syndicated across 11+ MSN/Yahoo regional editions, amplifying Guardian framing internationally.
-    Co-author network: Kari Paul (US-based), Alex Hern (UK, pre-departure), Robert Booth (UK, investigative/digital ID).
-    Conference circuit: Web Summit, London Tech Week (regular speaker).'
+    deputy business editor" (London Tech Week bio). Rare single-publication lifer — promoted through five distinct roles (reporter
+    → industrial editor → media business editor → deputy business editor → global technology editor). Zero cross-publication
+    migrations makes him a PURE control case for institutional bias analysis (no confounding employer changes). Key editorial
+    gatekeeper for how the Guardian covers Big Tech globally. His longevity means his framing reflects Guardian institutional
+    voice, not personal career-hopping bias. The industrial editor phase (transport/aviation 2006-2013) is significant: he
+    came to tech journalism from infrastructure and regulation reporting, not from tech itself — bringing a framework of public
+    interest, safety, and accountability that predates his tech beat. Covers UK social media bans, AI safety policy, cybersecurity,
+    platform accountability, AI datacenter policy. High-frequency output (multiple articles/week). Syndicated across 11+ MSN/Yahoo
+    regional editions, amplifying Guardian framing internationally. Co-author network: Kari Paul (US-based), Alex Hern (UK,
+    pre-departure), Robert Booth (UK, investigative/digital ID). Conference circuit: Web Summit, London Tech Week (regular
+    speaker).'
   source_urls:
   - https://londontechweek.com/speakers/dan-milmo
   - https://www.theguardian.com/profile/danmilmo
@@ -2527,8 +2526,8 @@ journalists:
       on unauthorized sale of US cellphone location data (Techmeme lead). (5) Minneapolis Police Department fake social media
       accounts — exposed MPD using fake accounts to surveil innocent Black people; state investigation found "pattern and
       practice" of racial discrimination. (6) Former Twitter employees charged with spying for Saudi Arabia (Nov 2019, breaking
-      alongside Reuters). (7) Booz Allen Hamilton data breach (Jun 2017, first month at Gizmodo) — researcher found 60K+
-      files from government consulting firm on public Amazon server including US government passwords and security credentials.
+      alongside Reuters). (7) Booz Allen Hamilton data breach (Jun 2017, first month at Gizmodo) — researcher found 60K+ files
+      from government consulting firm on public Amazon server including US government passwords and security credentials.
       (8) OnlyFans/Meta bribery allegations (Dangaard v. Instagram coverage, Oct 2022) — reported on bribery claims and sealed
       documents, which later led to his subpoena at Wired. (9) U.S. government website redirect flaw (2018-2019, follow-up
       reporting). Established working partnership with Dhruv Mehrotra (Gizmodo data reporter) that would carry forward to
@@ -2569,8 +2568,8 @@ journalists:
       May 20, 2025. Triggered Senator Markey''s "ICE Out of Our Faces Act" legislation. (6) Pentagon phone tracking (May 2026).
       (7) ICE deportation network in Texas (Jul 2026): Exposed privately-run statewide transportation system for funneling
       detained immigrants across 254 Texas counties. (8) Spotify drug podcast ranking manipulation (Jun 2026, with Mehrotra).
-      (9) Data broker/AI opt-out failures (May 2026). PRESS FREEDOM CASE: Subpoenaed Apr 5, 2023 (Dangaard v. Instagram,
-      N.D. Cal., Judge William Alsup) alongside editor Andrew Couts and Condé Nast parent Advance. Plaintiffs (adult entertainers)
+      (9) Data broker/AI opt-out failures (May 2026). PRESS FREEDOM CASE: Subpoenaed Apr 5, 2023 (Dangaard v. Instagram, N.D.
+      Cal., Judge William Alsup) alongside editor Andrew Couts and Condé Nast parent Advance. Plaintiffs (adult entertainers)
       sought confidential source information about a whistleblower-provided transcript of an internal Meta investigation into
       alleged OnlyFans/Meta bribery. Attorney Duffy Carolan (Advance) objected on First Amendment qualified reporter''s privilege
       and reporter''s privilege grounds. Cameron testified May 24, 2024, as his own behalf and corporate representative but
@@ -2609,10 +2608,10 @@ journalists:
     the only recent Wired investigation that directly triggered BOTH legislative action AND corporate policy change (Meta
     deleting face-recognition code). (2) Dialog series (Jun 2026) demonstrates his reach beyond tech into national security/elite
     power networks. (3) His surveillance-infrastructure framing lens is the most analytically significant alternative framing
-    to business-desk coverage of the same Meta products. (4) Gizmodo → Wired pipeline (also shared by Barrett, Mehrotra)
-    suggests institutional framing continuity from G/O Media to Condé Nast. (5) His Facebook Papers publication at Gizmodo
-    (Apr 2022) created a primary-source document archive that has been cited in congressional testimony — connecting him
-    to the most consequential Meta accountability reporting pre-WIRED.'
+    to business-desk coverage of the same Meta products. (4) Gizmodo → Wired pipeline (also shared by Barrett, Mehrotra) suggests
+    institutional framing continuity from G/O Media to Condé Nast. (5) His Facebook Papers publication at Gizmodo (Apr 2022)
+    created a primary-source document archive that has been cited in congressional testimony — connecting him to the most
+    consequential Meta accountability reporting pre-WIRED.'
   source_urls:
   - https://dellcameron.me/
   - https://talkingbiznews.com/they-re-hiring/wired-hires-gizmodas-cameron/
@@ -2803,41 +2802,41 @@ journalists:
     source_url: https://theorg.com/org/guardian-media-group/org-chart/johana-bhuiyan
     start: '2013'
   - end: '2015'
-    notes: Covered media beat for Politico New York. First traditional newsroom role, building sourcing skills in NYC
-      media ecosystem.
+    notes: Covered media beat for Politico New York. First traditional newsroom role, building sourcing skills in NYC media
+      ecosystem.
     publication: politico-new-york
     role: reporter
     source_url: https://theorg.com/org/guardian-media-group/org-chart/johana-bhuiyan
     start: '2014'
   - end: '2016'
-    notes: Future of transportation reporter at BuzzFeed News. Began covering ride-hailing and gig economy — beat
-      that would define her career trajectory through Recode and LA Times.
+    notes: Future of transportation reporter at BuzzFeed News. Began covering ride-hailing and gig economy — beat that would
+      define her career trajectory through Recode and LA Times.
     publication: buzzfeed-news
     role: future_of_transportation_reporter
     source_url: https://muckrack.com/johana-bhuiyan
     start: '2015'
   - end: '2018'
-    notes: Senior transportation editor at Recode/Vox Media. Deep Uber/Lyft coverage during peak ride-hailing disruption
-      era. Built expertise in gig economy labor dynamics and tech platform accountability.
+    notes: Senior transportation editor at Recode/Vox Media. Deep Uber/Lyft coverage during peak ride-hailing disruption era.
+      Built expertise in gig economy labor dynamics and tech platform accountability.
     publication: recode
     role: senior_transportation_editor
     source_url: https://muckrack.com/johana-bhuiyan
     start: '2016'
   - end: 2021-08
-    notes: 'Technology reporter on business desk, LA Times. Shifted from transportation to broader tech accountability
-      beat: surveillance of marginalized communities, Google employee walkout coverage, LAPD predictive policing harms,
-      Voyager predictive policing investigation. Covered gig economy labor issues. Departure announced by TalkingBizNews
-      when she left for Guardian.'
+    notes: 'Technology reporter on business desk, LA Times. Shifted from transportation to broader tech accountability beat:
+      surveillance of marginalized communities, Google employee walkout coverage, LAPD predictive policing harms, Voyager
+      predictive policing investigation. Covered gig economy labor issues. Departure announced by TalkingBizNews when she
+      left for Guardian.'
     publication: los-angeles-times
     role: technology_reporter
     source_url: https://talkingbiznews.com/they-re-leaving/tech-accountability-reporter-bhuiyan-departing-la-times-for-the-guardian/
     start: '2018'
-  - notes: 'Senior tech reporter and editor, Guardian US. Joined Aug 30, 2021; relocated to New York 2022. Covers
-      surveillance of marginalized communities, immigration tech, ICE monitoring. Key investigations: cattle monitoring
-      company working with ICE (ankle monitors, facial recognition, smartwatches, data stored 75 years); Amazon withholding
-      Flex driver tips (led to FTC $61.7M settlement + DC AG $3.95M settlement); Uyghur-identifying camera technology.
-      Beat trajectory: transportation → tech accountability → surveillance of marginalized groups represents a consistent
-      deepening focus on how technology surveils and harms vulnerable populations.'
+  - notes: 'Senior tech reporter and editor, Guardian US. Joined Aug 30, 2021; relocated to New York 2022. Covers surveillance
+      of marginalized communities, immigration tech, ICE monitoring. Key investigations: cattle monitoring company working
+      with ICE (ankle monitors, facial recognition, smartwatches, data stored 75 years); Amazon withholding Flex driver tips
+      (led to FTC $61.7M settlement + DC AG $3.95M settlement); Uyghur-identifying camera technology. Beat trajectory: transportation
+      → tech accountability → surveillance of marginalized groups represents a consistent deepening focus on how technology
+      surveils and harms vulnerable populations.'
     publication: guardian
     role: senior_tech_reporter_editor
     source_url: https://talkingbiznews.com/they-re-leaving/tech-accountability-reporter-bhuiyan-departing-la-times-for-the-guardian/
@@ -2857,13 +2856,13 @@ journalists:
   - https://www.birthdaydbs.com/who-is-johana-bhuiyan
   - https://castbox.fm/episode/Muslim-in-Plain-Sight-Johana-Bhuiyan
   - https://followfridaypodcast.com/johana-bhuiyan
-  notes: 'Pronounced "Boo-Yah". Born October 22, 1991, New York. Hijab-wearing Muslim woman journalist whose personal
-    experience growing up in post-9/11 NYC shaped her surveillance beat focus (discussed on Muslim in Plain Sight podcast).
-    Based in New York (formerly SF). Career arc: transportation/ride-hailing (BuzzFeed/Recode) → tech accountability
-    (LA Times) → surveillance of marginalized groups (Guardian). Covers BIPOC, Muslim, immigrant communities, and gig
-    workers. Amazon driver tipping investigation led to FTC $61.7M + DC AG $3.95M settlements. Cattle monitoring company
-    ICE investigation exposed 75-year data retention. Podcast appearances: Muslim in Plain Sight, Muslims Doing Things,
-    FannBoy Friday, Follow Friday. X: @JMBooyah. Phone: 4156303604. Contact: Johana.Bhuiyan@theguardian.com.'
+  notes: 'Pronounced "Boo-Yah". Born October 22, 1991, New York. Hijab-wearing Muslim woman journalist whose personal experience
+    growing up in post-9/11 NYC shaped her surveillance beat focus (discussed on Muslim in Plain Sight podcast). Based in
+    New York (formerly SF). Career arc: transportation/ride-hailing (BuzzFeed/Recode) → tech accountability (LA Times) → surveillance
+    of marginalized groups (Guardian). Covers BIPOC, Muslim, immigrant communities, and gig workers. Amazon driver tipping
+    investigation led to FTC $61.7M + DC AG $3.95M settlements. Cattle monitoring company ICE investigation exposed 75-year
+    data retention. Podcast appearances: Muslim in Plain Sight, Muslims Doing Things, FannBoy Friday, Follow Friday. X: @JMBooyah.
+    Phone: 4156303604. Contact: Johana.Bhuiyan@theguardian.com.'
 - beats:
   - technology
   - breaking_news
@@ -16802,52 +16801,52 @@ journalists:
 - career:
   - beat: general reporting, investigations
     end: '2015'
-    notes: 'Early career reporting at the Center for Investigative Reporting (now Reveal), a nonprofit investigative journalism
-      organization based in Emeryville, CA. One of his first professional journalism roles after St. John''s College.'
+    notes: Early career reporting at the Center for Investigative Reporting (now Reveal), a nonprofit investigative journalism
+      organization based in Emeryville, CA. One of his first professional journalism roles after St. John's College.
     publication: center-for-investigative-reporting
     role: reporter
     source_url: https://www.goodreads.com/author/show/22107938.Zusha_Elinson
-    start: "?"
+    start: '?'
   - beat: Bay Area news
-    end: "?"
-    notes: 'Wrote for the New York Times Bay Area section as a local reporter/contributor before joining the Wall Street Journal.
-      Part of the NYT''s regional coverage operation.'
+    end: '?'
+    notes: Wrote for the New York Times Bay Area section as a local reporter/contributor before joining the Wall Street Journal.
+      Part of the NYT's regional coverage operation.
     publication: nytimes
     role: regional_contributor
     source_url: https://www.goodreads.com/author/show/22107938.Zusha_Elinson
-    start: "?"
+    start: '?'
   - beat: guns, violence, crime, AI societal impact
     end: present
     event_type: hired
-    notes: 'National reporter based in San Francisco/California covering guns and violence. Co-authored "American Gun: The True
-      Story of the AR-15" (Farrar, Straus & Giroux, 2023) with Cameron McWhirter — a moral history of the AR-15 tracking its
-      path from military weapon to mass-shooting instrument to cultural icon. MacDowell Fellow in Literature (2022 residency,
-      Sorosis studio) to complete the manuscript. Beat has evolved from pure guns/violence/crime to encompass AI societal impact
-      — his Jul 2026 "AI Backlash Has Tech Executives Fearing for Their Lives" piece (with Lindsay Ellis and Tina Li) bridges
-      his crime/violence expertise with the tech sector, covering threats against Anthropic and OpenAI executives, the Altman
-      firebombing aftermath, and rising anti-AI sentiment. Also covered Silicon Valley embryo IQ screening (Aug 2025) and Tyler
-      Robinson murder suspect profile (Sep 2025). KEY FOR MEDIASCOPE: Not a traditional tech reporter — approaches AI/tech stories
-      through a crime/violence/societal lens rather than a product or business lens. This framing choice matters because it casts
-      tech executives as potential victims of populist backlash rather than as actors creating societal harm — a distinctly different
-      narrative frame from adversarial tech reporters like Wired''s security/investigations team.'
+    notes: 'National reporter based in San Francisco/California covering guns and violence. Co-authored "American Gun: The
+      True Story of the AR-15" (Farrar, Straus & Giroux, 2023) with Cameron McWhirter — a moral history of the AR-15 tracking
+      its path from military weapon to mass-shooting instrument to cultural icon. MacDowell Fellow in Literature (2022 residency,
+      Sorosis studio) to complete the manuscript. Beat has evolved from pure guns/violence/crime to encompass AI societal
+      impact — his Jul 2026 "AI Backlash Has Tech Executives Fearing for Their Lives" piece (with Lindsay Ellis and Tina Li)
+      bridges his crime/violence expertise with the tech sector, covering threats against Anthropic and OpenAI executives,
+      the Altman firebombing aftermath, and rising anti-AI sentiment. Also covered Silicon Valley embryo IQ screening (Aug
+      2025) and Tyler Robinson murder suspect profile (Sep 2025). KEY FOR MEDIASCOPE: Not a traditional tech reporter — approaches
+      AI/tech stories through a crime/violence/societal lens rather than a product or business lens. This framing choice matters
+      because it casts tech executives as potential victims of populist backlash rather than as actors creating societal harm
+      — a distinctly different narrative frame from adversarial tech reporters like Wired''s security/investigations team.'
     publication: wall-street-journal
     role: national_reporter
     source_url: https://muckrack.com/zusha-elinson/articles
-    start: "?"
+    start: '?'
   education:
   - institution: St. John's College
     location: Santa Fe, NM
     source_url: https://www.goodreads.com/author/show/22107938.Zusha_Elinson
   multi_publication: true
   name: Zusha Elinson
-  notes: 'Career arc: Center for Investigative Reporting → NYT Bay Area → WSJ (present). National reporter covering guns, violence,
-    crime, and AI societal impact. Co-author of "American Gun: The True Story of the AR-15" (FSG, 2023). MacDowell Fellow (2022).
-    Based in California. Grew up on a dirt road in upstate New York, worked as a chimney sweep before journalism. KEY for MediaScope:
-    (1) Approaches AI/tech through crime/violence lens — distinctly different from traditional tech reporters. (2) His AI Backlash
-    article frames tech executives as targets of populist violence, establishing a "tech-as-victim" narrative that runs counter
-    to adversarial tech journalism at Wired/Gizmodo. (3) WSJ''s crime desk covering AI societal impact represents beat-expansion
-    where guns/violence expertise is deployed on technology stories. (4) Co-byline with Lindsay Ellis (workplace) and Tina Li
-    (tech) shows WSJ assembling cross-beat teams for AI societal impact coverage.'
+  notes: 'Career arc: Center for Investigative Reporting → NYT Bay Area → WSJ (present). National reporter covering guns,
+    violence, crime, and AI societal impact. Co-author of "American Gun: The True Story of the AR-15" (FSG, 2023). MacDowell
+    Fellow (2022). Based in California. Grew up on a dirt road in upstate New York, worked as a chimney sweep before journalism.
+    KEY for MediaScope: (1) Approaches AI/tech through crime/violence lens — distinctly different from traditional tech reporters.
+    (2) His AI Backlash article frames tech executives as targets of populist violence, establishing a "tech-as-victim" narrative
+    that runs counter to adversarial tech journalism at Wired/Gizmodo. (3) WSJ''s crime desk covering AI societal impact represents
+    beat-expansion where guns/violence expertise is deployed on technology stories. (4) Co-byline with Lindsay Ellis (workplace)
+    and Tina Li (tech) shows WSJ assembling cross-beat teams for AI societal impact coverage.'
   source_urls:
   - https://muckrack.com/zusha-elinson/articles
   - https://www.goodreads.com/author/show/22107938.Zusha_Elinson
@@ -16855,40 +16854,40 @@ journalists:
   - https://lithub.com/cameron-mcwhirter-and-zusha-elinson-on-the-history-of-the-ar-15/
 - career:
   - beat: US news, corporate news
-    end: "?"
-    notes: 'Started career as an intern in the Wall Street Journal''s Atlanta bureau, covering U.S. and corporate news. This
-      was her entry point into Dow Jones.'
+    end: '?'
+    notes: Started career as an intern in the Wall Street Journal's Atlanta bureau, covering U.S. and corporate news. This
+      was her entry point into Dow Jones.
     publication: wall-street-journal
     role: intern
     source_url: https://talkingbiznews.com/they-re-hiring/wsj-hires-ellis-to-cover-business-schools/
-    start: "?"
+    start: '?'
   - beat: business
-    end: "?"
-    notes: 'Covered business at the Albany Times-Union in upstate New York. Early career position.'
+    end: '?'
+    notes: Covered business at the Albany Times-Union in upstate New York. Early career position.
     publication: times-union-albany
     role: reporter
     source_url: https://rocketreach.co/lindsay-ellis-email_100068508
-    start: "?"
+    start: '?'
   - beat: higher education, Texas education policy
     end: '2018'
-    notes: 'Covered Texas higher-education issues for the Houston Chronicle. Part of a team that won an APME Grand Prize and
-      was a finalist for the Pulitzer Prize for breaking-news coverage of Hurricane Harvey.'
+    notes: Covered Texas higher-education issues for the Houston Chronicle. Part of a team that won an APME Grand Prize and
+      was a finalist for the Pulitzer Prize for breaking-news coverage of Hurricane Harvey.
     publication: houston-chronicle
     role: reporter
     source_url: https://www.nationalpress.org/journalist/lindsay-ellis/
-    start: "?"
+    start: '?'
   - beat: research universities, college finance, governance, crisis management, Covid-19 response
     end: '2019'
-    notes: 'Staff reporter at The Chronicle of Higher Education covering research universities and higher education governance.'
+    notes: Staff reporter at The Chronicle of Higher Education covering research universities and higher education governance.
     publication: chronicle-of-higher-education
     role: staff_reporter
     source_url: https://rocketreach.co/lindsay-ellis-email_100068508
     start: '2018'
   - beat: research universities, college finance, governance, political polarization, public-university boards
     end: '2022'
-    notes: 'Promoted to senior reporter. Coverage of public-university boards earned a finalist designation for the Dateline Award
-      for Investigative Journalism from the D.C. Chapter of the Society of Professional Journalists. Also covered higher education''s
-      response to Covid-19.'
+    notes: Promoted to senior reporter. Coverage of public-university boards earned a finalist designation for the Dateline
+      Award for Investigative Journalism from the D.C. Chapter of the Society of Professional Journalists. Also covered higher
+      education's response to Covid-19.
     publication: chronicle-of-higher-education
     role: senior_reporter
     source_url: https://www.nationalpress.org/journalist/lindsay-ellis/
@@ -16896,15 +16895,15 @@ journalists:
   - beat: workplace, careers, business schools, college-to-career, AI employment impact
     end: present
     event_type: hired
-    notes: 'Joined WSJ Jan 31, 2022 to cover business schools, young professionals, and the college-to-career transition. Beat
-      has expanded significantly to cover AI''s impact on white-collar employment. DC-based, Boston roots. Key articles: "Tens
-      of Thousands of White-Collar Jobs Are Disappearing as AI Starts to Bite" (Oct 2025), "AI is wrecking an already fragile
-      job market for college graduates" (Jul 2025 with Katherine Bindley), MBA programs reorienting around AI. Jul 2026 "AI
-      Backlash Has Tech Executives Fearing for Their Lives" piece (with Zusha Elinson and Tina Li) represents her broadest AI
-      societal impact story, extending beyond workforce to physical security. Briefed NPF journalists Dec 2022 on workplace
-      mental health. KEY FOR MEDIASCOPE: Beat evolution from higher-ed reporter to AI-employment impact reporter illustrates
-      how AI is pulling workplace/labor reporters into tech coverage. Her framing approaches AI through the lens of workers
-      and job loss — distinct from both tech-product reporters and business/revenue reporters. This "AI-as-threat-to-workers"
+    notes: 'Joined WSJ Jan 31, 2022 to cover business schools, young professionals, and the college-to-career transition.
+      Beat has expanded significantly to cover AI''s impact on white-collar employment. DC-based, Boston roots. Key articles:
+      "Tens of Thousands of White-Collar Jobs Are Disappearing as AI Starts to Bite" (Oct 2025), "AI is wrecking an already
+      fragile job market for college graduates" (Jul 2025 with Katherine Bindley), MBA programs reorienting around AI. Jul
+      2026 "AI Backlash Has Tech Executives Fearing for Their Lives" piece (with Zusha Elinson and Tina Li) represents her
+      broadest AI societal impact story, extending beyond workforce to physical security. Briefed NPF journalists Dec 2022
+      on workplace mental health. KEY FOR MEDIASCOPE: Beat evolution from higher-ed reporter to AI-employment impact reporter
+      illustrates how AI is pulling workplace/labor reporters into tech coverage. Her framing approaches AI through the lens
+      of workers and job loss — distinct from both tech-product reporters and business/revenue reporters. This "AI-as-threat-to-workers"
       frame is one of the dominant narrative structures in current AI coverage.'
     publication: wall-street-journal
     role: reporter
@@ -16917,14 +16916,15 @@ journalists:
     source_url: https://rocketreach.co/lindsay-ellis-email_100068508
   multi_publication: true
   name: Lindsay Ellis
-  notes: 'Career arc: WSJ Atlanta intern → Times-Union (Albany) → Houston Chronicle → Chronicle of Higher Education → WSJ (present).
-    Reporter covering workplace, careers, and increasingly AI employment impact. DC-based, Boston roots. Pulitzer finalist (team,
-    Hurricane Harvey breaking news). Dateline Award finalist (SPJ DC Chapter, public-university boards investigation). KEY for
-    MediaScope: (1) Beat evolution from higher-ed to AI-employment is a canonical example of how AI coverage is pulling in
-    non-tech reporters. (2) Her "AI destroys white-collar jobs" framing establishes a worker-centric narrative structure. (3) Cross-beat
-    collaboration with Elinson (crime) and Tina Li (tech) on AI Backlash shows WSJ building AI societal impact coverage through
-    beat-combination rather than single-desk ownership. (4) Her higher-ed background gives her unique sourcing into universities
-    and business schools studying AI''s labor market impact — she is both reporting on and citing the same academic ecosystem.'
+  notes: 'Career arc: WSJ Atlanta intern → Times-Union (Albany) → Houston Chronicle → Chronicle of Higher Education → WSJ
+    (present). Reporter covering workplace, careers, and increasingly AI employment impact. DC-based, Boston roots. Pulitzer
+    finalist (team, Hurricane Harvey breaking news). Dateline Award finalist (SPJ DC Chapter, public-university boards investigation).
+    KEY for MediaScope: (1) Beat evolution from higher-ed to AI-employment is a canonical example of how AI coverage is pulling
+    in non-tech reporters. (2) Her "AI destroys white-collar jobs" framing establishes a worker-centric narrative structure.
+    (3) Cross-beat collaboration with Elinson (crime) and Tina Li (tech) on AI Backlash shows WSJ building AI societal impact
+    coverage through beat-combination rather than single-desk ownership. (4) Her higher-ed background gives her unique sourcing
+    into universities and business schools studying AI''s labor market impact — she is both reporting on and citing the same
+    academic ecosystem.'
   source_urls:
   - https://muckrack.com/lindsay-ellis/articles
   - https://www.nationalpress.org/journalist/lindsay-ellis/
@@ -16933,41 +16933,246 @@ journalists:
   - https://chronicle.com/article/lindsay-ellis
 - career:
   - beat: features, investigations, campus journalism
-    end: "?"
-    notes: 'Student journalist at The New Journal, Yale''s features magazine. Published long-form features including "Unforced
+    end: '?'
+    notes: Student journalist at The New Journal, Yale's features magazine. Published long-form features including "Unforced
       Error" (on STEM researchers affected by federal cuts), "The Long Ride Home" (44 pedestrian/cyclist deaths on New Haven
-      streets since 2019), "Independent Declarations" (New Haven Independent community), and poetry. English major.'
+      streets since 2019), "Independent Declarations" (New Haven Independent community), and poetry. English major.
     publication: new-journal-yale
     role: student_journalist
     source_url: https://thenewjournalatyale.com/author/tina-li/
-    start: "?"
+    start: '?'
   - beat: tech, AI, startups, venture capital
     end: present
     event_type: hired
     notes: 'Started as tech reporting intern (Twitter bio: "tech reporting intern @wsj and english @yale"), promoted to staff
-      reporter with full bylines. Key articles: "The AI Price War Is Here, Piling Pressure on OpenAI and Anthropic" (with Bradley
-      Olson, Jun 2026), "AI Backlash Has Tech Executives Fearing for Their Lives" (with Lindsay Ellis and Zusha Elinson, Jul
-      2026), Mirendil $200M seed round at $1B valuation, drone-boat rescue story. Twitter: @tinajhli. KEY FOR MEDIASCOPE: (1)
-      Earliest-career journalist in the dataset — represents a new generation of AI-native reporters who entered journalism when
-      AI was already the dominant tech story. (2) Yale English → WSJ tech pipeline is a non-STEM pathway into AI coverage that
-      may produce different framing instincts than CS/engineering backgrounds. (3) Cross-beat byline with Ellis (workplace) and
-      Elinson (crime) on AI Backlash shows WSJ using junior reporters alongside veterans for major societal impact stories.'
+      reporter with full bylines. Key articles: "The AI Price War Is Here, Piling Pressure on OpenAI and Anthropic" (with
+      Bradley Olson, Jun 2026), "AI Backlash Has Tech Executives Fearing for Their Lives" (with Lindsay Ellis and Zusha Elinson,
+      Jul 2026), Mirendil $200M seed round at $1B valuation, drone-boat rescue story. Twitter: @tinajhli. KEY FOR MEDIASCOPE:
+      (1) Earliest-career journalist in the dataset — represents a new generation of AI-native reporters who entered journalism
+      when AI was already the dominant tech story. (2) Yale English → WSJ tech pipeline is a non-STEM pathway into AI coverage
+      that may produce different framing instincts than CS/engineering backgrounds. (3) Cross-beat byline with Ellis (workplace)
+      and Elinson (crime) on AI Backlash shows WSJ using junior reporters alongside veterans for major societal impact stories.'
     publication: wall-street-journal
     role: reporter
     source_url: https://www.wsj.com/tech/ai/the-ai-price-war-is-here-piling-pressure-on-openai-and-anthropic-86e1d21b
-    start: "?"
+    start: '?'
   education:
   - field: English
     institution: Yale University
     source_url: https://thenewjournalatyale.com/author/tina-li/
   name: Tina Li
-  notes: 'Career arc: Yale (English, student journalism at The New Journal) → WSJ tech intern → WSJ tech reporter (present). Earliest-career
-    journalist in the MediaScope dataset. Twitter: @tinajhli. KEY for MediaScope: (1) Represents the emerging generation of
-    AI-native tech reporters who began their careers when AI was already the dominant story. (2) Non-STEM background (English
-    at Yale, published poetry and long-form investigations) — suggests humanistic/literary framing instincts that may produce
-    different coverage patterns than CS-trained reporters. (3) Working on major AI stories (price wars, societal backlash) very
-    early in career — WSJ is investing in training junior reporters on the AI beat. (4) Her New Journal work shows strong
-    investigative instincts (pedestrian deaths, STEM funding cuts) that may carry into her AI coverage.'
+  notes: 'Career arc: Yale (English, student journalism at The New Journal) → WSJ tech intern → WSJ tech reporter (present).
+    Earliest-career journalist in the MediaScope dataset. Twitter: @tinajhli. KEY for MediaScope: (1) Represents the emerging
+    generation of AI-native tech reporters who began their careers when AI was already the dominant story. (2) Non-STEM background
+    (English at Yale, published poetry and long-form investigations) — suggests humanistic/literary framing instincts that
+    may produce different coverage patterns than CS-trained reporters. (3) Working on major AI stories (price wars, societal
+    backlash) very early in career — WSJ is investing in training junior reporters on the AI beat. (4) Her New Journal work
+    shows strong investigative instincts (pedestrian deaths, STEM funding cuts) that may carry into her AI coverage.'
   source_urls:
   - https://thenewjournalatyale.com/author/tina-li/
   - https://www.wsj.com/tech/ai/the-ai-price-war-is-here-piling-pressure-on-openai-and-anthropic-86e1d21b
+- name: Parmy Olson
+  multi_publication: true
+  beats:
+  - artificial_intelligence
+  - social_media_regulation
+  - tech_regulation
+  - cybersecurity
+  - big_tech_strategy
+  career:
+  - publication: local-radio-bbc
+    role: reporter
+    start: '2004'
+    end: '2006'
+    beat: general news
+    event_type: hired
+    notes: Started journalism career in local radio reporting, then moved to the BBC. Pre-Forbes period, UK-based. Described
+      as "cutting her teeth in local radio and the BBC."
+    source_url: https://tmt.knect365.com/startup-elevate/speakers/parmy-olson
+  - publication: forbes
+    role: staff_reporter
+    start: '2006'
+    end: '2008'
+    beat: financial markets, subprime crisis
+    event_type: hired
+    notes: Early Forbes career covering financial markets, valued billionaire wealth for Forbes eponymous list. Wrote series
+      on the subprime mortgage crisis. London-based.
+    source_url: https://en.wikipedia.org/wiki/Parmy_Olson
+  - publication: forbes
+    role: london_bureau_chief
+    start: '2008'
+    end: '2012'
+    beat: technology, cybersecurity, hacktivism
+    event_type: promoted
+    notes: Forbes London bureau chief. Spent a year researching Anonymous/LulzSec, published "We Are Anonymous" (Little Brown,
+      2012) — NYT called it "lively, startling." Appeared on Daily Show with Jon Stewart (June 18, 2012). Developed extensive
+      hacker sources in Britain. Controversial email interview with purported 16-year-old girl hacker was most popular Forbes
+      post.
+    source_url: https://en.wikipedia.org/wiki/Parmy_Olson
+  - publication: forbes
+    role: senior_correspondent
+    start: '2012'
+    end: '2019'
+    beat: technology, AI, mobile, social media
+    event_type: career_change
+    notes: 'Moved to Forbes San Francisco office (2012), then back to London/Europe Soho office. Covered Silicon Valley from
+      both coasts. KEY COVERAGE: Exclusive inside story on Facebook''s $19B WhatsApp acquisition — first journalist to interview
+      founders after year of persistent requests, ~2M views on Forbes.com, 2 cover stories. Also profiled Yahoo founders,
+      French president Macron, Russian Facebook backer Yuri Milner. From ~2016 covered AI, robotics, chatbots, digital assistants,
+      voice tech. Named "tech journalism''s deep diver." Thomas Fox-Brewster was Soho colleague.'
+    source_url: https://tmt.knect365.com/startup-elevate/speakers/parmy-olson
+  - publication: wall-street-journal
+    role: technology_reporter
+    start: '2019'
+    end: '2021'
+    beat: AI, surveillance, facial recognition, tech regulation
+    event_type: hired
+    notes: 'WSJ tech reporter in London bureau. Replaced Stu Woo. Published multiple exclusive investigations: facial recognition
+      technology, Google/DeepMind secret spin-out effort (first to report DeepMind''s non-profit aspirations being stifled
+      by corporate interests), AI capability exaggeration by companies. Gave TEDx talk on facial recognition during this period.
+      Covered AI, surveillance, social media, regulation.'
+    source_url: https://responsesource.com/press-releases/parmy-olson-joins-the-wall-street-journal/
+  - publication: bloomberg-opinion
+    role: technology_columnist
+    start: '2021'
+    end: present
+    beat: AI, social media, tech regulation, big tech strategy
+    event_type: hired
+    notes: 'Bloomberg Opinion technology columnist, London-based. Announced alongside Paul J. Davies (banking) by SE David
+      Shipley. Extremely prolific — writes ~3 columns/week on AI business, big tech strategy, Meta/Zuckerberg, OpenAI, Google,
+      regulation. KEY META COVERAGE: Zuckerberg open-source AI strategy ("Free AI Is a Clever Form of Bait"), $100M AI hiring
+      blitz, Yann LeCun departure, Superintelligence Labs, Meta user data as AI training secret weapon, AI slop/synthetic
+      content strategy, Zuckerberg+Musk AI Failure Club. Ran weekly Twitter Spaces 2022 (~3,000 avg listeners) on frontier
+      tech. Published "Supremacy: AI, ChatGPT and the Race That Will Change the World" (2023, Pan Macmillan; updated 2025
+      edition). Won 2024 FT & Schroders Business Book of the Year — Supremacy framed the OpenAI vs DeepMind race as defining
+      contest. Spoke at Oxford Gen AI Summit 2025. CRITICAL FOR MEDIASCOPE: Bloomberg Opinion is the most influential op-ed
+      column covering Meta AI strategy. Olson provides arguably the sharpest outside analysis of Zuckerberg''s AI moves —
+      her framing shapes institutional investor perception. Not part of the 6 tracked publications but her columns are syndicated
+      via Bloomberg Law, Bloomberg Terminal, Techmeme, and shape the narrative that the tracked publications respond to.'
+    source_url: https://talkingbiznews.com/they-talk-biz-news/bloomberg-opinion-adds-three-new-staffers/
+  awards:
+  - name: FT & Schroders Business Book of the Year
+    year: 2024
+    for: 'Supremacy: AI, ChatGPT and the Race That Will Change the World'
+    source_url: https://www.booksandpublishing.com.au/articles/2024/12/11/265126/supremacy-wins-2024-ft-business-book-of-the-year/
+  - name: PRCA Digital Journalist of the Year
+    year: 2023
+    for: Technology coverage at Bloomberg
+    source_url: https://www.panmacmillan.com/authors/parmy-olson
+  - name: Palo Alto Networks Cyber Security Cannon Award
+    year: 2014
+    for: We Are Anonymous (first recipient)
+    source_url: https://www.goodreads.com/author/show/5803212.Parmy_Olson
+  - name: SABEW Business Journalism Award (2x Honorable Mention)
+    for: Reporting on Facebook and WhatsApp at Forbes
+    source_url: https://www.panmacmillan.com/authors/parmy-olson
+  - name: Business Insider Top 100 People in UK Tech
+    year: 2019
+    for: Overall tech journalism career
+    source_url: https://www.panmacmillan.com/authors/parmy-olson
+  notes: 'Key migration: local radio/BBC → Forbes (2006, 13 years) → WSJ (2019) → Bloomberg Opinion (2021). British, London-based
+    throughout career with Silicon Valley stint at Forbes SF (2012-~2016). One of Bloomberg''s most prolific and influential
+    tech opinion columnists. Unique value: long-form investigative background (Anonymous book, WhatsApp exclusive) married
+    with high-frequency opinion column format. Writes ~3 columns/week — exceptional output. X: @parmy. Author of "We Are Anonymous"
+    (2012) and "Supremacy" (2023, FT Book of Year 2024). Covers Meta/AI extensively — probably the single most influential
+    opinion columnist shaping investor and policymaker perception of Zuckerberg''s AI strategy. Her framing ("clever form
+    of bait", "AI failure club", "groupthink over AI godfather") sets narrative frames that tracked publications respond to.
+    Critical cross-publication reference: her WSJ investigations (DeepMind, facial recognition) vs Bloomberg opinion columns
+    show shift from shoe-leather reporting to analytical commentary. GQ "100 most connected men" listee. TEDx speaker on facial
+    recognition.'
+  source_urls:
+  - https://talkingbiznews.com/they-talk-biz-news/bloomberg-opinion-adds-three-new-staffers/
+  - https://en.wikipedia.org/wiki/Parmy_Olson
+  - https://chartwellspeakers.com/speaker/parmy-olson/
+  - https://www.panmacmillan.com/authors/parmy-olson
+  - https://www.turing.ac.uk/people/parmy-olson
+  - https://eventible.com/speakers/parmy-olson/
+  - https://tmt.knect365.com/startup-elevate/speakers/parmy-olson
+  - https://responsesource.com/press-releases/parmy-olson-joins-the-wall-street-journal/
+- name: Shira Ovide
+  multi_publication: true
+  beats:
+  - technology
+  - social_media
+  - personal_tech
+  - tech_accountability
+  - media_deals
+  career:
+  - publication: star-ledger
+    role: intern
+    start: '2003'
+    end: '2003'
+    beat: general news
+    event_type: hired
+    notes: Summer internship at The Star-Ledger (Newark, NJ).
+    source_url: https://theorg.com/org/the-washington-post/org-chart/shira-ovide
+  - publication: dow-jones
+    role: reporter
+    start: '2004'
+    end: '2007'
+    beat: financial news
+    event_type: hired
+    notes: Reporter at Dow Jones (parent company of WSJ). Covered financial news. New York-based.
+    source_url: https://theorg.com/org/the-washington-post/org-chart/shira-ovide
+  - publication: wall-street-journal
+    role: reporter_and_columnist
+    start: '2007'
+    end: '2015'
+    beat: media, tech deals, Twitter
+    event_type: promoted
+    notes: 'Over a decade at Dow Jones/WSJ combined. At WSJ: covered media, was deals columnist (lead writer for Deal Journal),
+      reported on technology companies including Twitter. Both New York and San Francisco bureaus.'
+    source_url: https://nytco.com/press/shira-ovide-joining-the-times/
+  - publication: bloomberg-opinion
+    role: technology_columnist
+    start: '2015'
+    end: '2020'
+    beat: tech companies, social media, surveillance, privacy
+    event_type: hired
+    notes: Bloomberg Opinion tech columnist for 5 years. Wrote 3-5 data-driven columns per week. Known for sharp, witty analysis
+      — "WeWork is so unicorn, it hurts." Covered Facebook, WeWork, surveillance, privacy. Took tech titans like Larry Page
+      to task. Analytical/opinion format, not straight reporting.
+    source_url: https://nytco.com/press/shira-ovide-joining-the-times/
+  - publication: new-york-times
+    role: newsletter_writer
+    start: '2020'
+    end: '2022'
+    beat: technology impact, digital life
+    event_type: hired
+    notes: Launched and wrote "On Tech" newsletter — daily guide to how tech affects culture, politics, industry. Spanned
+      Newsroom and Opinion. Unique accessible format making tech coverage digestible for non-techies. 2.5 years. Covered tech
+      company power, freedom of expression, digital livelihoods. Hired by Ellen Pollock and Pui-Wing Tam.
+    source_url: https://nytco.com/press/shira-ovide-joining-the-times/
+  - publication: washington-post
+    role: help_desk_strategy_editor
+    start: 2022-10
+    end: present
+    beat: personal tech, consumer tech, digital life
+    event_type: hired
+    notes: 'Help Desk strategy editor. Writes "The Tech Friend" newsletter (twice-weekly, launched Nov 22, 2022). Empowers
+      readers to take control of technology. Covers facial recognition opt-outs, Starlink, AI-faked voices, social media relationships.
+      Works across departments in audio, video, live journalism. Reports to Lori Montgomery (business), Christina Passariello
+      (tech), Yun-Hee Kim (personal tech). Team: Geoffrey A. Fowler, Heather Kelly, Chris Velazco, Tatum Hunter, Danielle
+      Abril.'
+    source_url: https://www.editorandpublisher.com/stories/shira-ovide-joins-the-washington-post-as-help-desk-strategy-editor,234580
+  education:
+  - degree: BA
+    field: Political Science
+    institution: Haverford College
+  - degree: MS
+    field: Journalism
+    institution: Columbia University Graduate School of Journalism
+  notes: 'Key migration: Dow Jones/WSJ (2004, ~11 years) → Bloomberg Opinion (2015) → NYT (2020) → Washington Post (2022).
+    Four-publication career spanning reporting, opinion, and newsletter formats. EXCEPTIONAL DiD CANDIDATE: wrote opinion
+    columns at Bloomberg, then a newsletter at NYT, then a newsletter at WaPo — same journalist, three different institutional
+    framings of tech accountability. Her Bloomberg column was sharp/witty financial-analytical; her NYT "On Tech" was accessible/explanatory;
+    her WaPo "Tech Friend" is consumer-empowerment/practical. Comparing her tone, framing, and target selection across these
+    three publications would be a natural experiment in institutional editorial influence vs individual voice. Raised in Ohio.
+    Cycling fan (Marianne Vos GOAT). Contact: shira.ovide@washpost.com.'
+  source_urls:
+  - https://nytco.com/press/shira-ovide-joining-the-times/
+  - https://theorg.com/org/the-washington-post/org-chart/shira-ovide
+  - https://talkingbiznews.com/they-talk-biz-news/ny-times-hires-bloombergs-ovide-to-start-a-tech-newsletter/
+  - https://talkingbiznews.com/they-talk-biz-news/washington-post-hires-ovide-as-help-desk-strategy-editor/
+  - https://www.editorandpublisher.com/stories/shira-ovide-joins-the-washington-post-as-help-desk-strategy-editor,234580
+  - https://muckrack.com/shira-ovide
