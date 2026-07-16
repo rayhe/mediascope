@@ -10256,8 +10256,22 @@ def detect_framing_devices(
                         "never a ", "never an ",
                         "anything but a ", "anything but an ",
                     )
-                    if any(_neg_lookback.rstrip().endswith(cue.rstrip())
-                           or cue in _neg_lookback
+                    # Only suppress when the negation cue is close to the
+                    # loaded term — at most 2 intervening words.  A distant
+                    # "not the" (e.g. "not the underlying AI encroachment")
+                    # negates the verb, not the noun.
+                    # Discovered in Kotaku Muse Image article (Jul 15, 2026):
+                    # "retracted the integration, though not the underlying
+                    # AI encroachment" — "encroachment" is still loaded.
+                    def _neg_is_close(lookback: str, cue: str) -> bool:
+                        idx = lookback.rfind(cue)
+                        if idx < 0:
+                            return False
+                        after_cue = lookback[idx + len(cue):].strip()
+                        # Allow at most 1 intervening word
+                        return len(after_cue.split()) <= 1
+
+                    if any(_neg_is_close(_neg_lookback, cue)
                            for cue in _NEGATION_CUES):
                         continue
 

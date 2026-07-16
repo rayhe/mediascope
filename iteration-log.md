@@ -1,16 +1,53 @@
 # MediaScope Iteration Log
+## 2026-07-16 02:00 PT — Type B: Dan Milmo (Guardian) Deep Dive
+
+**Rotation:** B (Journalist/Publication Research)
+**Target:** Dan Milmo — Guardian Global Technology Editor
+**Files changed:** `profiles/careers/journalists.yaml`
+**Commit:** (see below)
+
+### What was done
+
+1. **Career entry expansion (3 → 5 entries):** Split the generic 2000–2010 "reporter" and 2010–2020 "deputy_business_editor" entries into five granular career phases based on Milmo's own self-description ("industrial editor, media business editor and deputy business editor" — London Tech Week bio) and confirmed bylines:
+   - **Reporter** (2000–~2006): Early career, various roles
+   - **Industrial editor** (~2006–~2013): Transport/aviation/industry. Confirmed by 2006 Ryanair co-byline with Ian Griffiths, 2007–2009 Go-Ahead/FirstGroup transport articles, 2011 Heathrow capacity article bylined "Dan Milmo, industrial editor"
+   - **Media business editor** (~2013–~2015): Media industry, broadcasting, telecoms
+   - **Deputy business editor** (~2015–2020): Editorial management
+   - **Global technology editor** (2020–present): Already documented, enriched below
+
+2. **Global technology editor notes enriched:** Added 10+ new article citations (Jul 2026 coverage: scam ad bans, stymied datacentres, AI nudification, Apple/Google duopoly, Meta employee tracker pause, TfL cyber-attack). Added SPUR coalition involvement (Guardian founding member with BBC/FT/Sky/Telegraph, Feb–Mar 2026). Added co-author network (Kari Paul, Alex Hern, Robert Booth). Added broadcast appearances (France 24). Added 2022–2023 key articles (Musk/Twitter co-byline, anti-hate speech vs X Corp, Meta E2E encryption Techmeme lead).
+
+3. **Education field updated:** Changed from "Unknown" to "Not publicly confirmed" with note that no university degree found in any public source — may have entered journalism through non-degree route, common in UK media at the time.
+
+4. **Top-level notes enriched:** Added direct quote from London Tech Week self-description. Added analytical note on industrial editor background (infrastructure/regulation framing predates tech beat). Added co-author network summary and conference circuit details.
+
+5. **Source URLs expanded (6 → 8):** Added Wiza profile (wiza.co) and InPublishing SPUR coalition article as new source references.
+
+### Analytical significance
+
+Milmo's career arc — from industrial/transport reporter to global technology editor via media business and deputy business editing — is significant for the DiD analysis. His framing of tech accountability comes from a PUBLIC INFRASTRUCTURE lens (aviation safety, transport regulation, industrial affairs), not from a tech-native background. This explains the Guardian's institutional tendency to frame tech companies as public utilities requiring regulation rather than as innovative businesses. Milmo literally transferred regulatory accountability framing from one sector (transport/infrastructure) to another (technology). His 26-year single-publication tenure makes this a clean signal of institutional voice development.
+
+### Stats snapshot
+- Journalists: 239 (unchanged)
+- Career entries: 1,173 (+2 net new)
+- Guardian journalists: 30 (unchanged)
+- Test files: 131 (unchanged)
+- Structural tests: 124 passed
+
 ## 2026-07-15 23:00 PT — Type A: MIT Tech Review OpenAI Open-Weight / Meta Pivot Deep Dive
 
 **Rotation:** A (Article Deep Dive)
 **Article:** MIT Technology Review — "OpenAI has finally released open-weight language models" (~Jul 2026)
 **Analysis file:** `examples/sample_output/mittr_openai_open_weight_meta_pivot_2026_07_analysis.md`
-**Commit:** (see below)
+**Commit:** `453cc06`
 
 ### What was done
 
 1. **Entity verification:** Ran toolkit against article text. All 6 previously-identified entity gaps (Princeton, AI2, HuggingFace, Percy Liang, Miles Brundage, GPT-2/gpt-oss) are now detected — fixes were already in place from prior iterations. Current counts: OpenAI (23), Meta (6), Academic/Research (7), Chinese AI (6), Chinese Tech Platforms (2), HuggingFace (2), Apple (1), AI Research Orgs (1), Political Figures (1).
 
 2. **`analogy_metaphor` false positive FIX:** "like the possibility that agentic models" was firing as `analogy_metaphor` but is exemplification, not metaphor. Added suppression filter in `framing.py` for "like the [abstract noun] that/of" constructions (possibility, idea, fact, risk, prospect, notion, concern, chance, likelihood, danger, threat, fear, hope, belief, assumption, claim, suggestion, argument, hypothesis). After fix: article correctly detects only `ironic_quotation` ("gpt-oss") and `competitive_displacement` ("previously dominated...reorienting").
+
+3. **Loaded language negation proximity FIX:** Pre-existing test failure — `encroachment` in Kotaku Muse Image article was suppressed by the negation filter because "not the underlying AI encroachment" contained "not the " in the 30-char lookback. But "not the" here negates the verb "retracted", not the noun "encroachment" — there are 2 intervening words. Tightened the negation filter to require at most 1 intervening word between the negation cue and the loaded term. "Not a gimmick" (0 intervening) still correctly suppresses.
 
 3. **New test file:** `tests/test_mittr_openai_open_weight_meta_pivot.py` — 15 tests:
    - Entity detection (9): OpenAI count ≥15, GPT-2/gpt-oss in OpenAI, Meta ≥3, Academic/Research ≥4, Princeton in Academic, Percy Liang/Stanford in Academic, Chinese AI ≥3, HuggingFace detected, AI Research Orgs detected
@@ -23,9 +60,10 @@
 5. **Regression:** Full structural consistency suite (124 tests) + new test file (15 tests) — all pass.
 
 ### Files changed
-- `mediascope/analyze/framing.py` — analogy_metaphor suppression filter
+- `mediascope/analyze/framing.py` — analogy_metaphor suppression filter + negation proximity fix
 - `tests/test_mittr_openai_open_weight_meta_pivot.py` — NEW (15 tests)
 - `examples/sample_output/mittr_openai_open_weight_meta_pivot_2026_07_analysis.md` — updated
+- `docs/ARCHITECTURE.md` — registered new test file
 
 ### Stats
 - Entity clusters: 88 (875 aliases)

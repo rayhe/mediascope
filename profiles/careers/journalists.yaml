@@ -2147,41 +2147,74 @@ journalists:
   - cybersecurity
   - uk_tech_policy
   career:
-  - end: '2010'
-    notes: Joined Guardian in 2000. Covered industrial affairs, media business. Various byline roles through the 2000s decade.
-      UK-based throughout.
+  - end: '~2006'
+    notes: Joined Guardian in 2000. Self-describes early career as covering "a variety of roles at the organisation." UK-based
+      throughout. Exact early beats not publicly documented.
     publication: guardian
     role: reporter
     source_url: https://londontechweek.com/speakers/dan-milmo
     start: '2000'
+  - end: '~2013'
+    notes: 'Industrial editor covering transport, aviation, and industry. Confirmed by multiple bylines: "Dan Milmo and
+      Ian Griffiths" on Ryanair coverage (2006), Go-Ahead/FirstGroup transport articles (2007-2009), Heathrow capacity
+      bylined "Dan Milmo, industrial editor" (2011). Beat included airlines, rail operators, and broader industrial
+      affairs. Self-identifies this role in London Tech Week bio.'
+    publication: guardian
+    role: industrial_editor
+    source_url: https://londontechweek.com/speakers/dan-milmo
+    start: '~2006'
+  - end: '~2015'
+    notes: Media business editor. Covered media industry, broadcasting, telecoms. Transition from industrial/transport
+      beat to media business represented lateral move within Guardian business desk. Self-identifies this role in London
+      Tech Week bio.
+    publication: guardian
+    role: media_business_editor
+    source_url: https://londontechweek.com/speakers/dan-milmo
+    start: '~2013'
   - end: '2020'
-    notes: Deputy business editor and media business editor. Edited business section coverage, shaped Guardian's approach
-      to media industry reporting. Transitioned from reporter to editorial management.
+    notes: Deputy business editor. Edited business section coverage, shaped Guardian's approach to media and business
+      industry reporting. Management role before pivoting to technology. Self-identifies this role in London Tech Week bio.
     publication: guardian
     role: deputy_business_editor
     source_url: https://londontechweek.com/speakers/dan-milmo
-    start: '2010'
+    start: '~2015'
   - notes: 'Global technology editor since ~2020. Covers AI policy, platform regulation, Elon Musk/X/Twitter, cybersecurity,
-      UK social media bans. Key articles: Rohingya sued Facebook for £150B over Myanmar genocide (Dec 2021); Guardian will
+      UK social media bans, children''s online safety, AI datacenter policy, and Big Tech accountability. Key articles:
+      Rohingya sued Facebook for £150B over Myanmar genocide (Dec 2021); Elon Musk Twitter buyout co-byline with Kari Paul
+      (2022); anti-hate speech group vs X Corp/Musk (2023); Meta E2E encryption delay — Techmeme lead (2023); Guardian will
       no longer post on Elon Musk''s X (Nov 2024); UK under-16s social media ban series (Jun 2026); UK critical infrastructure
-      200 cyber incidents/year (Jun 2026). Interviewed Demis Hassabis at Bletchley Park AI Safety Summit. Speaker at Web Summit
-      and London Tech Week. Syndicated widely: MSN (US/UK/AU/Ireland/MY/PH/SG/ZA), Yahoo Canada, Yahoo News. Buzzsumo Power
-      score 3,203. One of the Guardian''s most prolific tech bylines — high-frequency output on UK tech policy, AI regulation,
-      and Big Tech accountability.'
+      200 cyber incidents/year (Jun 2026); UK scam ad ban proposals (Jul 2026); stymied UK datacentre projects (Jul 2026);
+      AI nudification apps (Jul 2026); Apple/Google duopoly (Jul 2026); Meta employee tracker pause (Jul 2026); TfL cyber-attack
+      investigation (Jul 2026). Interviewed Demis Hassabis at Bletchley Park AI Safety Summit. Guardian is founding member
+      of SPUR (Standards for Publisher Usage Rights) coalition with BBC, FT, Sky News, Telegraph — announced Feb-Mar 2026 —
+      positioning Guardian in AI licensing standards governance. Regular co-authors: Kari Paul (US tech, departed mid-2024),
+      Alex Hern (UK tech, departed Oct 2024 to Economist), Robert Booth (UK tech, investigative). Speaker at Web Summit
+      and London Tech Week (multiple years). Syndicated widely: MSN (US/UK/AU/Ireland/MY/PH/SG/ZA), Yahoo Canada, Yahoo
+      News. Buzzsumo Power score 3,203. One of the Guardian''s most prolific tech bylines — high-frequency output on UK
+      tech policy, AI regulation, and Big Tech accountability. Appeared on France 24 and other broadcast media as Guardian
+      tech voice.'
     publication: guardian
     role: global_technology_editor
     source_url: https://londontechweek.com/speakers/dan-milmo
     start: '2020'
   education:
-    institution: Unknown
-    notes: Joined Guardian in 2000, details not publicly available
+    institution: Not publicly confirmed
+    notes: No university degree found in any public source (London Tech Week bio, Muck Rack, Wiza, conference bios). Joined
+      Guardian in 2000 — may have entered journalism through non-degree route, common in UK media at the time.
   name: Dan Milmo
-  notes: UK-based. Career entirely at Guardian (26+ years, joined 2000). Rare single-publication lifer — promoted from industrial/media
-    business editor to deputy business editor to global technology editor. Zero cross-publication migrations makes him a PURE
-    control case for institutional bias analysis (no confounding employer changes). Key editorial gatekeeper for how the Guardian
-    covers Big Tech globally. His longevity means his framing reflects Guardian institutional voice, not personal career-hopping
-    bias. Covers UK social media bans, AI safety policy, cybersecurity, platform accountability. High-frequency output (multiple
-    articles/week). Syndicated across 11+ MSN/Yahoo regional editions, amplifying Guardian framing internationally.
+  notes: 'UK-based. Career entirely at Guardian (26+ years, joined 2000). Self-describes career arc: "I joined the Guardian
+    in 2000 and have covered a variety of roles at the organisation including industrial editor, media business editor and
+    deputy business editor" (London Tech Week bio). Rare single-publication lifer — promoted through five distinct roles
+    (reporter → industrial editor → media business editor → deputy business editor → global technology editor). Zero
+    cross-publication migrations makes him a PURE control case for institutional bias analysis (no confounding employer
+    changes). Key editorial gatekeeper for how the Guardian covers Big Tech globally. His longevity means his framing
+    reflects Guardian institutional voice, not personal career-hopping bias. The industrial editor phase (transport/aviation
+    2006-2013) is significant: he came to tech journalism from infrastructure and regulation reporting, not from tech itself
+    — bringing a framework of public interest, safety, and accountability that predates his tech beat. Covers UK social
+    media bans, AI safety policy, cybersecurity, platform accountability, AI datacenter policy. High-frequency output
+    (multiple articles/week). Syndicated across 11+ MSN/Yahoo regional editions, amplifying Guardian framing internationally.
+    Co-author network: Kari Paul (US-based), Alex Hern (UK, pre-departure), Robert Booth (UK, investigative/digital ID).
+    Conference circuit: Web Summit, London Tech Week (regular speaker).'
   source_urls:
   - https://londontechweek.com/speakers/dan-milmo
   - https://www.theguardian.com/profile/danmilmo
@@ -2189,6 +2222,8 @@ journalists:
   - https://websummit.com/speakers/dan-milmo
   - https://buzzsumo.com/journalist/dan-milmo-theguardian-com/
   - https://transcend.org/tms/author/?a=Dan+Milmo
+  - https://wiza.co/d/guardian-media-group/dan-milmo
+  - https://inpublishing.co.uk/articles/the-guardian-joins-coalition-22764
 - career:
   - beat: student journalism, general
     end: 2013-05

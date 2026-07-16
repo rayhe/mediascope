@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 192 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2878 tests across 130 test files (all from real articles)
+├── tests/                       # 2893 tests across 131 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -530,6 +530,7 @@ mediascope/
 │   ├── test_law_enforcement_outsourced.py # Law enforcement outsourced intensity: ICAC officer/agent/investigator loaded quotes, testimony-outsourced patterns, policy advocate/watchdog critique, entity detection for ICAC/Public Citizen/Report Act/CyberTipline
 │   ├── test_mittr_anthropic_feud.py # MIT Tech Review Anthropic feud article: entity detection, framing, topic classification
 │   ├── test_mittr_meta_hack_ai_security.py # MIT TR Meta hack AI security: Bo Li/Dawn Song/Sanmi Koyejo academic entity fix, case-sensitive Nature guard, education analogy suppression, AI agent security topics
+│   ├── test_mittr_openai_open_weight_meta_pivot.py # MIT TR OpenAI open-weight models: entity clusters (OpenAI/Meta/Academic/Chinese AI/HuggingFace/AI Research Orgs), competitive_displacement framing, analogy_metaphor false-positive regression guard
 │   ├── test_postpass_activation.py # Structural post-pass framing activation: analogy stacking, speculative framing thresholds
 │   ├── test_precedent_analogy.py # Precedent analogy framing: opioid/tobacco/asbestos crisis comparisons, era-based villainy import
 │   ├── test_resistance_patterns.py # MIT TR Resistance article patterns: catastrophizing (threat to humanity), alarm/anxiety idioms, intensity/polemical/violence loaded language, poll-based social proof, stalled-dollar and workforce-percentage scale magnitude
