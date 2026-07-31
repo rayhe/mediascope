@@ -1,4 +1,87 @@
 # MediaScope Iteration Log
+## 2026-07-31 15:00 PT — Type B: Wearables Beat Journalist Profiles — Raymond Wong & Lisa Eadicicco
+
+**Rotation:** B (Journalist/Publication Research)
+**Focus:** Two key wearables-beat journalists missing from the career database
+**Commit:** `2dc688e`
+
+### What was done
+
+#### 1. Raymond Wong (Gizmodo) — New Profile
+
+Career path researched and verified:
+- **Mashable** (2012–2018): Senior Tech Correspondent, ~6 year tenure covering consumer tech
+- **Input/Inverse** (2018–2024): Founding editor of Input Magazine (Bustle Digital Group), then Deputy Editor of Reviews & Guides at Inverse. Known for Samsung Galaxy S21 Ultra AI moon photo investigation.
+- **Freelance** (Jul 2024 – Apr 2025): ~9 months freelancing after BDG shut down Input (2023)
+- **Gizmodo** (Apr 2025 – present): Senior Editor, Consumer Tech. Rebooting consumer tech section.
+
+**Source URLs verified:**
+- https://talkingbiznews.com/media-news/gizmodo-hires-wong-as-senior-editor-of-consumer-tech/ (hire announcement)
+- https://muckrack.com/raymond-wong (profile: Senior Editor, Consumer Tech, Gizmodo)
+- https://nc.inverse.com/input/profile/raymond-wong-18812870 (Input/Inverse bio)
+- https://gearjunkie.com/author/raymond-wong (freelance period)
+- https://www.diarydirectory.com/newsarticle/gizmodo-usa-appoints-senior-editor-consumer-tech/64402 (Apr 2025 appointment)
+
+**Wearables narrative significance:** Wong is Gizmodo's primary smart glasses reviewer since April 2025, filling the institutional gap left by Victoria Song's 2022 departure to The Verge. His Jul 30, 2026 article "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up" analyzes the tension between EssilorLuxottica's revenue nearly doubling and mounting privacy backlash. His framing is notably balanced — acknowledges both market growth AND privacy concerns without pure advocacy in either direction.
+
+**Education:** Hunter College (CUNY) BA
+
+#### 2. Lisa Eadicicco (CNN Business) — New Profile
+
+Career path researched and verified:
+- **Tom's Guide / Laptop Mag** (2012–2013): Staff writer (Purch/Future plc). Entry-level after SUNY Purchase BA Journalism
+- **International Business Times** (2013–2015): Tech reporter (IBT Media)
+- **TIME** (2015–2017): Tech columnist. Prestige-media credibility building.
+- **Business Insider/Insider** (2019–2021): Senior Tech Correspondent, Apple beat
+- **CNET** (2021–2025): Senior Editor covering mobile devices (Red Ventures)
+- **CNN Business** (2025–present): Tech Editor
+
+**Source URLs verified:**
+- https://talkingbiznews.com/media-news/cnn-business-hires-eadicicco-as-tech-editor/ (hire announcement)
+- https://www.purchase.edu/live/profiles/7925-lisa-eadicicco-12 (alumni profile)
+- https://muckrack.com/lisa-eadicicco (profile)
+- https://rocketreach.co/lisa-eadicicco-email_1460931 (career timeline)
+
+**Wearables narrative significance:** Wrote "AI devices that see, listen and record: Are we ready for the post-smartphone world?" (CNN, Jul 26, 2026) — a multi-month hands-on review testing Meta Ray-Ban glasses, Amazon Bee Pioneer wristband, and Plaud Notepin S. CNN is the largest mainstream news outlet to run a comprehensive AI wearables privacy piece in late July 2026. Article positions smart glasses as part of a broader "AI devices that observe" category. Notably balanced but skepticism-leaning: acknowledges utility while emphasizing social awkwardness and privacy concerns. Includes Lorde quote ("F**k the glasses"), Meta spokesperson (Dina El-Kassaby), EPIC's Calli Schroeder, Santa Clara University's Irina Raicu.
+
+**Education:** SUNY Purchase BA Journalism (2012)
+
+#### 3. Cross-journalist pattern analysis: Wearables beat migration map
+
+The wearables/smart glasses beat in July 2026 is covered by journalists from 3 distinct migration pipelines:
+
+| Pipeline | Journalists | Pattern |
+|----------|------------|---------|
+| Gizmodo alumni network | Victoria Song (PC Mag → Gizmodo → **Verge**), Raymond Wong (Mashable → Input → **Gizmodo**) | Wong fills Song's institutional gap at Gizmodo. Both are product-reviewers with increasing privacy commentary. |
+| Consumer tech ladder | Lisa Eadicicco (Tom's Guide → IBTimes → TIME → BI → CNET → **CNN Business**) | Steady upward trajectory through consumer tech hierarchy. No lateral reshuffling. |
+| WIRED investigative | Dell Cameron + Dhruv Mehrotra (**WIRED**) | NameTag investigation. Adversarial-investigative framing. Already profiled. |
+
+**Key observation:** The wearables narrative is split between product-reviewer-turned-privacy-critic (Wong, Song, Eadicicco) and investigative-adversarial (Cameron/Mehrotra at WIRED). The product reviewers bring consumer credibility ("I tested this for months") while the investigators bring technical depth ("we found code in the app"). Both channels amplify each other — CNN cites WIRED's NameTag findings; Gizmodo cites the Swedish investigation. No coordination signal between channels; rather, this is natural beat-convergence where a privacy story matures from niche investigation to mainstream consumer concern.
+
+#### 4. Stats update
+
+- Journalists: 245 → 247 (+2)
+- Career-entry migrations: 954 → 962 (+8)
+- Multi-publication: 234 → 236 (+2)
+- Auto-detected migrations: 743 → 749 (+6)
+- All 145 structural + career tests pass
+- All doc stats updated (README, EDITORIAL_HISTORIES.md, careers_demo.py)
+
+#### 5. Files changed
+
+- `profiles/careers/journalists.yaml` (+2 journalist profiles: Raymond Wong, Lisa Eadicicco)
+- `README.md` (stats: 247 journalists, 962 career-entry migrations, 749 auto-detected migrations)
+- `docs/EDITORIAL_HISTORIES.md` (stats: 247 journalists, 236 multi-publication, 749 auto-detected migrations)
+- `examples/careers_demo.py` (journalist count: 247)
+
+### Verification
+- YAML syntax validation: ✅ (247 journalists parsed)
+- `count_stats.py --check`: ✅ README stats current
+- Career + structural consistency tests: 145 passed
+- Pushed to GitHub: `ef8c3f6..2dc688e`
+
+---
+
 ## 2026-07-31 14:00 PT — Type A: MarketWatch Smart Glasses Market Skepticism Deep Dive
 
 **Rotation:** A (Article Deep Dive)
