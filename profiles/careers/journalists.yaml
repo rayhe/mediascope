@@ -17211,3 +17211,187 @@ journalists:
     field: Financial Journalism
     institution: City, University of London
     source_url: https://me.sh/profile/hannahmurphyftcom
+
+- career:
+  - beat: consumer technology, gadgets, smartphones
+    end: '2018'
+    event_type: hired
+    notes: 'Senior Tech Correspondent at Mashable. ~6 year tenure. Led consumer tech coverage. Built reputation for hands-on
+      product reviews and photography-driven gadget journalism. Covered smartphones, laptops, gaming, cameras. Known for sharp
+      visual review style with original product photography. INSTITUTIONAL CONTEXT: Mashable under Pete Cashmore was
+      viral-social-first media before pivoting to entertainment/commerce. Wong left as Mashable''s tech coverage declined.'
+    publication: mashable
+    role: senior_correspondent
+    source_url: https://muckrack.com/raymond-wong
+    start: '2012'
+  - beat: consumer tech reviews, smartphones, gaming, design
+    end: '2022'
+    event_type: hired
+    notes: 'Founding editor of Input Magazine (Bustle Digital Group), later became Deputy Editor of Reviews & Guides at
+      Inverse (also BDG). Led tech reviews, guides, and gaming verticals. Known investigation: Samsung Galaxy S21 Ultra
+      AI moon photo manipulation story, which influenced Samsung''s product response. Also contributed to GearJunkie.
+      INSTITUTIONAL CONTEXT: BDG acquired Input/Inverse — Wong was founding editorial voice at Input, a rare consumer-tech
+      vertical inside a lifestyle media company. BDG shut down Input in 2023, triggering Wong''s departure.'
+    publication: inverse
+    role: deputy_editor
+    source_url: https://nc.inverse.com/input/profile/raymond-wong-18812870
+    start: '2018'
+  - beat: freelance consumer tech reviews
+    end: 2025-04
+    event_type: freelance
+    notes: 'Freelance tech journalist for ~9 months after BDG/Input shutdown. Contributed to GearJunkie and other outlets.
+      Maintained consumer tech review expertise during interstitial period.'
+    publication: freelance
+    role: freelancer
+    source_url: https://talkingbiznews.com/media-news/gizmodo-hires-wong-as-senior-editor-of-consumer-tech/
+    start: 2024-07
+  - beat: consumer tech, smart glasses, wearables, smartphones, foldables, gaming
+    event_type: hired
+    notes: 'Senior Editor, Consumer Tech at Gizmodo (Gizmodo Media Group / G/O Media). Rebooting and rebuilding the consumer
+      tech section. PRIMARY COVERAGE: Meta Ray-Ban smart glasses (product reviews, privacy analysis, market commentary),
+      Samsung Galaxy Unpacked events, Apple WWDC, Google Pixel, smart glasses bubble/market analysis. KEY ARTICLES:
+      "We''re Already Barrelling Toward a Smart Glasses Bubble" (Nov 2025), "Nobody Seems to Agree on Smart Glasses" (Dec 2025),
+      "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up" (Jul 30, 2026 — analyzing EssilorLuxottica earnings vs
+      privacy backlash). FRAMING ANALYSIS: Wong occupies a unique position — product-reviewer with increasing editorial
+      commentary on privacy/surveillance tensions. His framing is notably balanced: acknowledges both market growth AND
+      privacy concerns without pure advocacy in either direction. His photography credits appear on Gizmodo''s smart glasses
+      coverage (''© Raymond Wong / Gizmodo''), indicating he does his own product photography — a consumer-reviewer marker.
+      WEARABLES NARRATIVE SIGNIFICANCE: As Gizmodo''s primary smart glasses reviewer, his framing choices determine how
+      the largest remaining G/O Media tech property positions the wearables narrative. Post-Victoria Song departure from
+      Gizmodo to Verge, Wong is the institutional replacement for wearables authority at Gizmodo. His Jul 30 2026 article
+      is the most recent comprehensive smart glasses market piece, notable for acknowledging revenue doubling while also
+      cataloging the full privacy incident history.'
+    publication: gizmodo
+    role: senior_editor
+    source_url: https://talkingbiznews.com/media-news/gizmodo-hires-wong-as-senior-editor-of-consumer-tech/
+    start: 2025-04
+  beats:
+  - wearables
+  - consumer_tech
+  - smart_glasses
+  - smartphones
+  - gaming
+  multi_publication: true
+  name: Raymond Wong
+  notes: 'Key migration: Mashable → Input/Inverse (BDG) → freelance → Gizmodo. Consumer tech reviewer and smart glasses beat
+    reporter with 14+ years experience. Hunter College graduate (NYC). Known for high-quality original product photography.
+    Samsung AI moon photo investigation demonstrated investigative capability beyond pure product reviewing.
+    MIGRATION SIGNIFICANCE: Mashable → Inverse/Input → Gizmodo represents lateral moves within mid-tier consumer tech media,
+    all product-review focused. No migration to prestige investigative outlet. This positions him as a consistent product
+    reviewer whose framing reflects consumer-advocate perspective rather than investigative-adversarial posture.
+    WEARABLES BEAT ROLE: Gizmodo''s primary smart glasses/wearables voice since April 2025. His coverage directly follows
+    Victoria Song''s departure from Gizmodo to The Verge in 2022 — he fills the institutional gap she left.
+    Twitter/X: @raywongy. Email: ray.wong@gizmodo.com.'
+  source_urls:
+  - https://muckrack.com/raymond-wong
+  - https://talkingbiznews.com/media-news/gizmodo-hires-wong-as-senior-editor-of-consumer-tech/
+  - https://nc.inverse.com/input/profile/raymond-wong-18812870
+  - https://gizmodo.com/author/raywong
+  - https://gearjunkie.com/author/raymond-wong
+  - https://www.diarydirectory.com/newsarticle/gizmodo-usa-appoints-senior-editor-consumer-tech/64402
+  education:
+  - degree: BA
+    institution: Hunter College (CUNY)
+    source_url: https://talkingbiznews.com/media-news/gizmodo-hires-wong-as-senior-editor-of-consumer-tech/
+- career:
+  - beat: consumer tech, gadgets
+    end: '2013'
+    event_type: hired
+    notes: 'Staff writer at Tom''s Guide and Laptop Mag (both Purch/Future plc properties). Entry-level tech journalism
+      after SUNY Purchase BA (2012). Built initial product review skills in structured review-format environment.'
+    publication: toms-guide
+    role: staff_writer
+    source_url: https://www.purchase.edu/live/profiles/7925-lisa-eadicicco-12
+    start: '2012'
+  - beat: technology news
+    end: '2015'
+    event_type: hired
+    notes: 'Tech reporter at International Business Times (IBT Media). Covered consumer tech news and product announcements.
+      Also contributed to Digital Trends as freelancer during this period.'
+    publication: international-business-times
+    role: tech_reporter
+    source_url: https://www.purchase.edu/live/profiles/7925-lisa-eadicicco-12
+    start: '2013'
+  - beat: consumer technology
+    end: '2017'
+    event_type: hired
+    notes: 'Tech columnist at TIME magazine (Meredith/Time Inc). Covered consumer technology for TIME''s digital presence.
+      INSTITUTIONAL SIGNIFICANCE: TIME provides prestige-media credibility and general-audience framing training.'
+    publication: time
+    role: tech_columnist
+    source_url: https://www.purchase.edu/live/profiles/7925-lisa-eadicicco-12
+    start: '2015'
+  - beat: Apple, consumer tech
+    end: '2021'
+    event_type: hired
+    notes: 'Senior Tech Correspondent at Business Insider/Insider. Primary Apple beat reporter. Covered broader consumer
+      tech industry. INSTITUTIONAL CONTEXT: Business Insider (Axel Springer) emphasizes accessible tech coverage for
+      business-curious general audience. Apple beat experience shapes product-launch framing instincts.'
+    publication: business-insider
+    role: senior_correspondent
+    source_url: https://talkingbiznews.com/media-news/cnn-business-hires-eadicicco-as-tech-editor/
+    start: 2019
+  - beat: mobile devices, consumer tech
+    end: '2025'
+    event_type: hired
+    notes: 'Senior Editor at CNET covering mobile devices. CNET is Red Ventures property. 4-year tenure focused on smartphones,
+      tablets, and emerging mobile tech. CNET''s institutional style emphasizes structured product reviews with consumer
+      buying-guide framing.'
+    publication: cnet
+    role: senior_editor
+    source_url: https://talkingbiznews.com/media-news/cnn-business-hires-eadicicco-as-tech-editor/
+    start: '2021'
+  - beat: technology, AI devices, wearables, smartphones, Apple, Samsung
+    event_type: hired
+    notes: 'Tech Editor at CNN Business. Covers all consumer technology including AI wearables, smart glasses, smartphones,
+      and Big Tech product launches. KEY ARTICLE: "AI devices that see, listen and record: Are we ready for the
+      post-smartphone world?" (Jul 26, 2026) — multi-month hands-on review of Meta Ray-Ban glasses, Amazon Bee Pioneer
+      wristband, and Plaud Notepin S. Article is balanced but skepticism-leaning: acknowledges utility while emphasizing
+      social awkwardness and privacy concerns. Notable for first-person testing methodology across months and multiple
+      contexts (work, travel, social gatherings). FRAMING ANALYSIS: Compared to Gizmodo/WIRED adversarial approach,
+      Eadicicco''s CNN framing is experiential and consumer-narrative: "I tried living in this future" rather than
+      "here is what Big Tech is doing wrong." This personal-experience framing is characteristic of CNN Business tech
+      coverage — makes abstract privacy concerns concrete through anecdote. WEARABLES NARRATIVE SIGNIFICANCE: CNN is
+      the largest mainstream news outlet to run a comprehensive AI wearables privacy piece in late July 2026. The
+      article positions smart glasses as part of a broader "AI devices that observe" category alongside wristbands
+      and clip-on recorders — a narrative frame that broadens the privacy concern beyond just Meta. Quotes Lorde:
+      "F**k the glasses." Includes Meta spokesperson response (Dina El-Kassaby). Includes EPIC''s Calli Schroeder
+      and Santa Clara University''s Irina Raicu as expert sources.'
+    publication: cnn-business
+    role: tech_editor
+    source_url: https://talkingbiznews.com/media-news/cnn-business-hires-eadicicco-as-tech-editor/
+    start: '2025'
+  beats:
+  - consumer_tech
+  - wearables
+  - smart_glasses
+  - smartphones
+  - apple
+  multi_publication: true
+  name: Lisa Eadicicco
+  notes: 'Key migration: Tom''s Guide → IBTimes → TIME → Business Insider → CNET → CNN Business. Consumer tech journalist
+    with 14+ years experience, now serving as CNN Business'' tech editor. SUNY Purchase BA Journalism (2012). Based in
+    New York. Migration pattern shows consistent upward trajectory through consumer tech media hierarchy: review-focused
+    (Tom''s Guide, CNET) → business-tech hybrid (BI, CNN Business). Her move to CNN Business (2025) is significant for
+    wearables narrative analysis because CNN reaches the broadest general audience of any outlet covering smart glasses.
+    Her Jul 26 2026 wearables piece reached CNN''s full distribution network including CNN en Español translation,
+    indicating editorial investment in the wearables-privacy story.
+    ANALYTICAL VALUE: (1) 6-publication trajectory provides richest non-migration-clustered career path — each move
+    was a genuine career advancement, not lateral reshuffling within the same media group. (2) Her Apple beat experience
+    at BI gives her a specific competitor lens on Meta wearables — she evaluates Meta glasses against Apple''s potential
+    smart glasses entry. (3) CNN Business position means her framing choices reach the widest general audience of any
+    wearables journalist tracked. (4) Personal-testing methodology (wearing devices for months) produces first-person
+    narrative frames that are more persuasive to general audiences than investigative-adversarial approaches.
+    Email: Via CNN Business. Twitter/X: @lisaeadicicco.'
+  source_urls:
+  - https://muckrack.com/lisa-eadicicco
+  - https://talkingbiznews.com/media-news/cnn-business-hires-eadicicco-as-tech-editor/
+  - https://www.purchase.edu/live/profiles/7925-lisa-eadicicco-12
+  - https://rocketreach.co/lisa-eadicicco-email_1460931
+  - https://www.digitaltrends.com/users/leadicicco/
+  education:
+  - degree: BA
+    field: Journalism
+    institution: SUNY Purchase
+    year: '2012'
+    source_url: https://www.purchase.edu/live/profiles/7925-lisa-eadicicco-12
