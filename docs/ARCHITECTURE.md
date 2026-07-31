@@ -454,8 +454,8 @@ mediascope/
 │   ├── framing_correction_demo.py
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
-│   └── sample_output/       # 195 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 2999 tests across 136 test files (all from real articles)
+│   └── sample_output/       # 196 annotated real-article analyses (see METHODOLOGY.md §17)
+├── tests/                       # 3029 tests across 137 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -583,6 +583,7 @@ mediascope/
 │   ├── test_barrons_splurge_jpmorgan_jul13.py # Barron's Meta AI Splurge JPMorgan Jul 13: pathologizing_metaphor "splurge" variants (6), competitive_deficit "compared with" bridge pattern (7), J.P. Morgan period-variant entity detection (4), Epoch AI entity detection (2)
 │   ├── test_barrons_1t_child_safety_backlash_jul10.py # Barron's $1T child safety backlash Jul 10: Roblox entity cluster (3), scale_magnitude N-figure idiom "13-figure penalty" (4), loaded_language "ripe/easy/prime target" (4), investor_advisory (3), catastrophizing (1), pathologizing_metaphor (1), emotional_appeal (1), refusal_amplification (2), 4 xfail known gaps
 │   ├── test_buzzfeed_smart_glasses_womens_safety_jul14.py # BuzzFeed smart glasses women's safety Jul 14: Meta/Facebook cluster, GDPR EU Regulatory, 13 framing device types, Refuge affiliation cross-paragraph bleed bug, VADER polarity inversion (+0.64 for manual −0.55), 11 xfail known gaps
+│   ├── test_marketwatch_smart_glasses_convince_jun27.py # MarketWatch smart glasses market skepticism Jun 27: CRITICAL VADER +0.65 vs manual −0.20 (largest polarity inversion in corpus), professional skepticism genre, all 3 sources unanimously skeptical, 8 xfail, candidate Path O
 │   ├── test_foxbusiness_louisiana_datacenter_jul13.py # Fox Business Meta Louisiana datacenter $50B Jul 13: recovery_narrative broadened "reshaping [ProperNoun] Parish" + "transforming [institution]", loaded_language "life-altering", full article regression
 │   ├── test_ibd_morgan_stanley_capex_jul13.py # IBD Morgan Stanley CapEx Jul 13: escalation_amplification social/political/consumer/national adjectives (11), market_verdict penalizing/punishing/discounting (8), recovery_narrative proper-noun fix (4), Morgan Stanley + SpaceX entities (3)
 │   ├── test_ibd_wedbush_hyperscalers_2026_07_16.py # IBD Wedbush hyperscalers Jul 16: Reddit/eBay entity clusters (2), Trainium3 Amazon cluster (1), "the [Org] analyst" corporate spokesperson fix (1), analyst-preference competitive_positioning framing (4 patterns), full-article integration

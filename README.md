@@ -48,11 +48,11 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Emotional language terms | 1022 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 32 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 13 | Paths A–N, each addressing a specific VADER failure mode |
-| Annotated articles | 195 | Full manual analysis in `examples/sample_output/` |
-| Journalists tracked | 244 | Career data with source URLs |
-| Career-entry migrations | 952 | Across 433+ publications |
+| Annotated articles | 196 | Full manual analysis in `examples/sample_output/` |
+| Journalists tracked | 245 | Career data with source URLs |
+| Career-entry migrations | 954 | Across 433+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 2,999 | Across 136 test files |
+| Tests | 3,029 | Across 137 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -79,7 +79,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **244 journalists** (60 with structured education records) across 435+ publications (952 career-entry migrations). Notable high-value migrations include:
+Ships with verified career data for **245 journalists** (60 with structured education records) across 435+ publications (954 career-entry migrations). Notable high-value migrations include:
 
 | Journalist | Migration Path | Analytical Value |
 |---|---|---|
@@ -376,7 +376,7 @@ The `examples/` directory contains runnable demos that walk through MediaScope's
 | [`framing_correction_demo.py`](examples/framing_correction_demo.py) | How MediaScope corrects VADER's positive bias on investigative journalism using 13 distinct correction paths (A–N), framing device signals, active-negative agency detection, and source stance analysis |
 | [`sarcastic_editorial_demo.py`](examples/sarcastic_editorial_demo.py) | **NEW:** Path H sarcastic editorial detection — how VADER misscores short sarcastic opinion pieces as positive (editorial asides, assumed consensus, reader-address register), with step-by-step trigger diagnostics |
 | [`financial_journalism_demo.py`](examples/financial_journalism_demo.py) | **NEW:** Financial journalism VADER inflation — how investment recommendation boosterism, financial reassurance language, and analyst-debate formats inflate VADER scores by 0.3–0.5 points, with diagnostic flags and interim workarounds (METHODOLOGY §16) |
-| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 244 journalists, 743 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
+| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 245 journalists, 743 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
 | [`topic_classification_demo.py`](examples/topic_classification_demo.py) | **NEW:** 29-bucket topic classification system — demonstrates single-article classification, multi-topic overlap, genre detection via topic confidence, and the full bucket reference with adjacency warnings for commonly confused pairs |
 | [`agent_integration.py`](examples/agent_integration.py) | Integration patterns for LangChain, CrewAI, and raw function calling |
 
@@ -453,6 +453,7 @@ The `examples/sample_output/` directory contains annotated analyses of real arti
 | `barchart_meta_investor_urgency_ai_capex_2026_06_30_*` | Barchart: "Meta Shows Urgency as Investors Get Exasperated" | **Financial opinion genre test.** Author discloses META/NVDA positions (standard in financial writing, not yet tracked by toolkit). 14 framing devices including editorial_deflation, precedent_analogy, catastrophizing ("tsunami" of depreciation). Emotional intensity jumped from 0.05 → 0.40 after financial metaphor vocabulary added. |
 | `barrons_meta_1t_backlash_legal_risk_2026_07_10_*` | Barron's: "Facebook Faces a $1 Trillion Backlash" | **Discovered `investor_advisory` framing device (#92).** Author adopts investment-advisor posture ("Investors Ignore the Threat at Their Peril," "should start paying attention"). Headline uses "Facebook" (legacy consumer brand) while body uses "Meta" — deliberate brand selection for child-safety negative valence. Third $1.4T corpus article (after Reuters/Gizmodo). Roblox comparison as cautionary counter-narrative. See `test_investor_framing.py`. |
 | `buzzfeed_smart_glasses_womens_safety_2026_07_14_*` | BuzzFeed: "Smart Glasses Are Changing How We See The World" | Advocacy-style women's safety article examining Meta smart glasses through gendered tech-risk lens. "Rizzing" trend, Refuge charity 62% abuse increase, Meta LED safeguard defense, UK government/legal sources. 13 framing device types detected. **Bugs discovered:** source affiliation cross-paragraph bleed (Refuge gets "BTEC introduction to incel-ism" as affiliation), VADER polarity inversion (+0.64 for manual −0.55). Missing entities: Refuge, NPCC, Samuels Solicitors, ICO. See `test_buzzfeed_smart_glasses_womens_safety_jul14.py`. |
+| `marketwatch_smart_glasses_convince_2026_06_27_*` | MarketWatch: "Big Tech is obsessed with smart glasses. Now it has to convince people to wear them." | **Financial/investor-facing market skepticism.** CRITICAL polarity inversion: VADER +0.65 vs manual −0.20 (0.85 gap — largest in corpus). Three independent analysts unanimously skeptical; zero bullish sources quoted. Thesis quote: "No one really wants Meta glasses." Professional language masks structural negativity. Google Glass invoked as cautionary precedent. **Bugs discovered:** No correction path fires for financial skepticism genre. Missing framing: rhetorical_question (editorial value-prop undermining), outsourced_hostility/damning_quotation. Entity gaps: Franklin Templeton, Prada, Counterpoint Research misaffiliation. **Candidate Path O (Professional Skepticism Inversion).** See `test_marketwatch_smart_glasses_convince_jun27.py`. |
 | `pymnts_zuckerberg_ai_agents_slower_2026_07_03_*` | PYMNTS: "Zuckerberg: AI Agents Are Advancing Slower Than Expected" | **Payments trade publication genre test.** Zuckerberg town hall admission (via Reuters recording) that AI agents haven't progressed as expected. **Toolkit improvements:** new Financial Services entity cluster (27 aliases: Visa, Mastercard, AmEx, Goldman Sachs, Adyen, JPMorgan, PayPal, Stripe, etc.), PYMNTS/Barron's/WSJ added to Media/Publications. VADER sentiment gap: compound 0.9598 (very positive) for a disappointment article — forward-looking optimism language dominates. Topic classification gap: `privacy_data` (0.49) outranks `ai_development` (0.47) due to mouse-tracking paragraph keyword density. |
 | `wsj_meta_eu_dsa_addictive_apps_2026_07_10_*` | WSJ: "Meta Failed to Protect Users From Addictive Apps, EU Says" | **Positive validation of framing correction.** Raw VADER +0.11 → corrected −0.27: bureaucratic/procedural language and Meta's defensive quotes mask adversarial headline ("Failed to Protect") and EU enforcement escalation. Three-jurisdiction regulatory stacking (EU DSA, California jury verdict, New Mexico verdict) — informational rather than manipulative since cases are genuinely related. Tests toolkit on regulatory cross-jurisdiction coverage. |
 | `weekly_report.md` | Synthetic weekly report | Demonstrates full report format with statistical tables |
@@ -463,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **2999 tests** across 136 test files, each covering a different analytical capability:
+MediaScope has **3029 tests** across 137 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -593,6 +594,7 @@ MediaScope has **2999 tests** across 136 test files, each covering a different a
 | `test_barrons_splurge_jpmorgan_jul13.py` | 19 | Barron's Meta AI Splurge JPMorgan article (Jul 13, 2026): pathologizing_metaphor "splurge" gluttony variants (6), competitive_deficit "compared with" bridge pattern (7), J.P. Morgan period-variant entity detection (4), Epoch AI entity detection (2). |
 | `test_barrons_1t_child_safety_backlash_jul10.py` | 28 | Barron's "$1 Trillion Backlash" child safety litigation article (Jul 10, 2026): Roblox entity cluster detection (3), scale_magnitude N-figure idiom "13-figure penalty" (4), loaded_language "ripe/easy/prime target" (4), investor_advisory (3), catastrophizing (1), pathologizing_metaphor (1), emotional_appeal (1), refusal_amplification (2). 4 xfail known gaps (plural "targets", parenthetical clause, $NNN million, "didn't respond"). |
 | `test_buzzfeed_smart_glasses_womens_safety_jul14.py` | 38 | BuzzFeed smart glasses women's safety article (Jul 14, 2026): Meta/Facebook cluster detection, GDPR EU Regulatory cluster, 13 framing device types (rhetorical_question, loaded_language, analogy_metaphor, power_asymmetry, consent_alarm, surveillance_creep, editorial_aside, ironic_quotation, emotional_appeal, default_burden_privacy, catastrophizing, litigation_framing), Refuge source affiliation cross-paragraph bleed bug ("BTEC introduction to incel-ism" parsed as affiliation), VADER polarity inversion (+0.64 for manual −0.55 article). 11 xfail known gaps (Refuge/NPCC/Samuels entities, sovereignty_framing, assumed_consensus, tempering_coda pipeline filter, VADER tone, affiliation bleed). |
+| `test_marketwatch_smart_glasses_convince_jun27.py` | 30 | MarketWatch smart glasses market skepticism (Jun 27, 2026): financial-publication investor-facing analysis. Entity: Meta (12×), Google, Snap, Apple, EssilorLuxottica, Samsung, Kylie Jenner. Framing: loaded_language, catastrophizing, expert_consensus_authority. **CRITICAL sentiment gap:** VADER +0.65 vs manual −0.20 — largest polarity inversion in corpus. Professional skepticism ("No one really wants Meta glasses") reads as positive due to measured analyst language. No correction path fires. Candidate Path O (Professional Skepticism Inversion). 8 xfail: Franklin Templeton entity, Prada entity, rhetorical_question, damning_quotation, precedent_analogy, Counterpoint Research misaffiliation, tone correction, no path fires. Source direction bias: all 3 expert sources skeptical, zero bullish voices. |
 | `test_fastco_meta_glasses_2026_07_10.py` | 10 | Fast Company Meta AI glasses controversies roundup Jul 10: EFF 3-word org name extraction fix (_KNOWN_ORGS), C-suite title affiliation (CEO/CTO pattern 0b), hyphenated surname dedup (endswith-hyphen check), VADER polarity inversion (raw +0.633 → corrected −0.5217) |
 | `test_foxbusiness_louisiana_datacenter_jul13.py` | 18 | Fox Business Louisiana data center article (Jul 13, 2026): recovery_narrative proper-noun fix (allows one optional word before institution nouns e.g. "Richland Parish"), escalation_amplification with "social" adjective, loaded_language infrastructure burden, full-article device count and type coverage |
 | `test_ibd_morgan_stanley_capex_jul13.py` | 27 | IBD Morgan Stanley capex estimates article (Jul 13, 2026): market_verdict framing device (new — market-as-punitive-agent "penalizing/punishing/discounting", auxiliary verb variants, negated-reward "not giving credit"), escalation_amplification "growing social backlash" adjective expansion, recovery_narrative proper-noun before institution noun, entity detection (Morgan Stanley, Amazon, SpaceX, Richland Parish), full-article composite analysis |
