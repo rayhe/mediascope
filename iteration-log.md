@@ -1,4 +1,78 @@
 # MediaScope Iteration Log
+## 2026-07-31 14:00 PT — Type A: MarketWatch Smart Glasses Market Skepticism Deep Dive
+
+**Rotation:** A (Article Deep Dive)
+**Article:** "Big Tech is obsessed with smart glasses. Now it has to convince people to wear them." — MarketWatch, Jun 27, 2026
+**URL:** https://www.marketwatch.com/story/big-tech-is-obsessed-with-smart-glasses-now-it-has-to-convince-people-to-wear-them-0d5ebd43
+**Commit:** `d055ce0`
+
+### What was done
+
+#### 1. Full manual analysis (6 sections)
+
+- **Entities:** 17 identified manually. Toolkit detected 8 clusters (Meta 12×, Google 3×, Snap 3×, Apple 3×, EssilorLuxottica 4×, Samsung, Warby Parker, Gentle Monster). MISSED: Franklin Templeton, Creative Strategies (as entity), Prada, Oakley, Robert Downey Jr.
+- **Framing devices:** 11 manual vs 5 toolkit. Toolkit found: loaded_language (groundbreaking, ill-fated), expert_consensus_authority, catastrophizing (demise of), ironic_quotation. MISSED: rhetorical_question (editorial value-prop undermining), outsourced_hostility/damning_quotation ("No one really wants Meta glasses"), precedent_analogy (ill-fated Google Glass), juxtaposition (celebrity vs regular people), trend_bundling (4 companies enumerated), scale_magnitude (84% market share).
+- **Sources:** 3 named experts (Sara Araghi/Franklin Templeton, Max Weinbach/Creative Strategies, Flora Tang/Counterpoint Research) — ALL skeptical, zero bullish sources. Counterpoint Research MISAFFILIATED with Meta in toolkit output.
+- **Sentiment:** CRITICAL — VADER +0.6528 vs manual −0.20. **0.85 gap is the largest polarity inversion documented in the corpus.** Professional financial language (groundbreaking, front-runner, building early momentum, 84% market share) masks structural skepticism.
+- **Topics:** hardware_wearables (0.48), product_launch (0.35), subscription_monetization (0.12). MISSED: market_competition, investor_analysis.
+
+#### 2. CRITICAL sentiment gap: Proposed Path O (Professional Skepticism Inversion)
+
+No existing correction path fires. The article is fundamentally negative (all sources skeptical, "no one really wants" thesis, Google Glass cautionary tale, adoption barriers listed) but VADER reads +0.65 because:
+- "groundbreaking" (aspirational positive)
+- "front-runner" (competitive positive)
+- "building early momentum" (growth positive)
+- "84% of global market share" (achievement positive)
+- Analyst language is clinical ("unclear", "still trying to figure out") not emotionally negative
+
+**Path O candidate triggers:**
+1. All named sources express uncertainty/skepticism (no bullish source)
+2. Headline contains obligation framing ("has to", "needs to", "must")
+3. Article cites adoption barriers or skepticism about product-market fit
+4. VADER raw_tone ≥ +0.40 with zero loaded_language count ≥ 5
+5. Publication is financial/investor audience
+
+#### 3. Wearables narrative significance
+
+This article is the first financial-publication wearables-skepticism piece in the corpus. The framing axis is DIFFERENT from WIRED/Gizmodo (privacy/ethics focus) — MarketWatch questions business viability and product-market fit. Combined with the WSJ companion piece "Smartglasses Are Inevitable. But What—or Who—Are They For?" (Christopher Mims, same week, same Dow Jones parent), financial publications are now running a coordinated skepticism narrative about the wearables market alongside the existing privacy-surveillance narrative from tech publications.
+
+Key quote analysis: "No one really wants Meta glasses, so you have to try to convince them that this is cool" (Max Weinbach, Creative Strategies) — arguably the most devastating single quote about Meta wearables in any publication. A respected analyst directly stating zero organic demand, placed as the article's structural thesis.
+
+#### 4. New test file: 30 tests (22 passed, 8 xfail)
+
+`tests/test_marketwatch_smart_glasses_convince_jun27.py` — 5 test classes:
+- **TestEntityExtraction** (11 tests): 9 passing (Meta cluster ≥10, Google, Snap, Apple, EssilorLuxottica, Samsung, Kylie Jenner, Zuckerberg in Meta, Ray-Ban in Meta) + 2 xfail (Franklin Templeton, Prada)
+- **TestFramingDevices** (7 tests): 4 passing (loaded_language, catastrophizing, expert_consensus_authority, count ≥4) + 3 xfail (rhetorical_question, damning_quotation, precedent_analogy)
+- **TestSourceExtraction** (6 tests): 5 passing (Araghi, Weinbach, Tang, affiliation check, named sources) + 1 xfail (Counterpoint Research misaffiliation)
+- **TestSentiment** (4 tests): 2 passing (not strongly positive, raw tone confirms gap) + 2 xfail (tone negative, correction fires)
+- **TestSourceDirectionBias** (2 tests): 2 passing (3 named experts, no Meta spokesperson)
+
+#### 5. Files changed
+
+- `examples/sample_output/marketwatch_smart_glasses_convince_2026_06_27_article.txt` (new)
+- `examples/sample_output/marketwatch_smart_glasses_convince_2026_06_27_analysis.md` (new)
+- `tests/test_marketwatch_smart_glasses_convince_jun27.py` (new)
+- `README.md` (stats: 196 articles, 3029 tests/137 files, 245 journalists, 954 career-entry migrations, new sample + test listings)
+- `docs/ARCHITECTURE.md` (stats, new test listing)
+- `docs/METHODOLOGY.md` (article count)
+- `docs/ACCURACY_GUIDE.md` (article count)
+- `docs/QUALITY_STANDARDS.md` (article count)
+- `docs/EDITORIAL_HISTORIES.md` (journalist count)
+- `examples/careers_demo.py` (journalist count)
+
+### Verification
+- All 30 new tests pass (22 pass + 8 xfail)
+- All 124 structural consistency tests pass
+- `count_stats.py --check` returns ✅
+- Pushed to GitHub: `f0b4bbd..d055ce0`
+
+### Cross-publication comparison note
+This article should be analyzed alongside:
+- WSJ "Smartglasses Are Inevitable. But What—or Who—Are They For?" (Christopher Mims, Jun 26, 2026) — same Dow Jones parent, same week, same skeptical-but-measured financial framing, different rhetorical approach (hypothetical persona scenarios vs. market analysis)
+- Gizmodo "Meta's Smart Glasses Are Long Ways From Their 'Eureka' Moment" (Jun 20, 2026) — tech publication skepticism uses more emotionally loaded language, VADER would likely score lower (closer to manual assessment)
+
+---
+
 ## 2026-07-16 13:00 PT — Type A: BuzzFeed Smart Glasses Women's Safety Deep Dive
 
 **Rotation:** A (Article Deep Dive)
