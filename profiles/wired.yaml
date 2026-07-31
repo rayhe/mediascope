@@ -410,15 +410,41 @@ advance_investments:
       NOTE: Reddit Q2 earnings Jul 30 — if Reddit misses consensus, RDDT could gap down given
       2.23 beta and Advance's concentrated position + margin loan. Conversely, continued beats
       could push past $200 resistance.
-      ADVANCE TOTAL PUBLIC EQUITY SNAPSHOT (Jul 16 INTRADAY):
-        - Reddit: ~$8.07B (42.2M shares × ~$191.16, RDDT -3.47% — sharp decline, broke below $195)
-        - Charter: ~$2.75B (20.6M shares × ~$133.48, CHTR +1.70% — continued rebound off 52W low zone)
-        - WBD: ~$2.65B (98M shares × ~$27.08, WBD -0.70% — slight drift on merger litigation drag)
-        - Total: ~$13.47B (down from $13.73B at Jul 15 close; RDDT selloff driving decline)
-        - Reddit concentration: ~59.9% of Advance public equity (slipped below 60% as RDDT declined)
-        - CHTR REBOUND: +1.70% to ~$133.48 (Jul 16), second consecutive green day after touching
-          $127.91 (Jul 14) near 52W low ($124.05). Still deep in structural decline territory.
-          Aggressive buyback ($963M Q1 + $100M/mo LBRDA) providing floor support.
+      ADVANCE TOTAL PUBLIC EQUITY SNAPSHOT (Jul 31, 2026 — POST-RDDT CRASH):
+        - Reddit: ~$5.94B (42.2M shares × ~$140.67, RDDT -21.0% on Jul 31 — CATASTROPHIC post-earnings crash)
+        - Charter: ~$2.99B (20.6M shares × ~$145.20, CHTR close Jul 29 — Q2 EPS beat, Cox acquisition pending)
+        - WBD: ~$2.58B (98M shares × ~$26.30, WBD intraday Jul 31 — merger in deep freeze)
+        - Total: ~$11.51B (DOWN from ~$13.47B on Jul 16 — $1.96B decline in 15 days, driven by RDDT)
+        - Reddit concentration: ~51.6% of Advance public equity (dropped from 59.9% as RDDT crashed)
+        - RDDT Q2 2026 EARNINGS (Jul 30, after market close): Revenue $805M (+61% YoY, CRUSHED $731M
+          consensus). EPS $1.25 (beat $0.95 consensus by $0.30). Q3 guidance $860-870M (above $829M est).
+          DAUq 130.3M (+18% YoY). BUT: US DAUq DECLINED to 53.2M from 53.5M. CEO Huffman flagged
+          "choppy search-engine traffic" and "SEO headwinds" from Google AI Overviews. Meta explicitly
+          identified as competitor targeting Reddit's core model via Threads/Forum. Stock crashed ~21%
+          on Jul 31 despite massive beat — market punishing user growth deceleration and AI traffic fears.
+          LightShed's Rich Greenfield on call: "Your stock is down sharply because there is just a
+          sense from investors that you have a—I don't want to be blunt—a user problem."
+          IRONY: Reddit's search traffic problem is EXACTLY what Condé Nast CEO Lynch has been railing
+          about (Google AI Overviews). Both Condé Nast and Reddit — both Advance subsidiaries/portfolio
+          companies — are victims of the same Google AI traffic siphon. This creates structural alignment
+          of interests between Wired's editorial anti-Google posture and Reddit's business challenges.
+          AI licensing deals (Alphabet + OpenAI, each ~$60-70M/yr) remain a growth vector but negotiations
+          opaque. Barron's: "The potential to expand these licensing deals was the core reason Barron's
+          made Reddit a stock pick earlier this week."
+        - **MARGIN LOAN IN DANGER ZONE**: The 7.8M shares pledged at $145.38-$148.54 offering price are
+          NOW BELOW the offering price floor at $140.67. This creates potential margin call risk for
+          Advance Magazine Publishers Inc. If RDDT does not recover above $145 quickly, Advance may need
+          to post additional collateral or face forced liquidation of pledged shares. The VPF/collar
+          derivative structure may provide some downside protection, but the collateral shortfall is
+          unprecedented since the credit facility was established.
+        - CHTR Q2 (Jul 24): Revenue $13.53B (-1.7% YoY, in-line). EPS $10.66 (beat $9.98 consensus).
+          Internet subs -172K (worse than -130K est). Video subs -21K (better than -62K est). Cox
+          acquisition $21.9B expected mid-to-late Aug close. Stock: $145.20 (Jul 29). Fourth consecutive
+          quarter of revenue decline. Fixed wireless/fiber competition intensifying.
+        - WBD PARAMOUNT MERGER IN DEEP FREEZE: TRO granted Jul 20 by Judge Martínez-Olguín. Jul 24:
+          Paramount agreed to delay merger until trial or Jun 1, 2027. Paramount's lawyers concluded
+          states would likely prevail at preliminary injunction stage (CNN source). Deal "in a deep
+          freeze." Ticking fee kicks in Oct 1 (+$0.25/WBD share/quarter). WBD Q2 earnings Aug 6.
         - REDDIT $1B BUYBACK PROGRAM (announced Feb 5, 2026): Reddit authorized $1B share
           repurchase program for Class A shares ONLY. Since Advance holds almost exclusively
           Class B shares (42.19M of 42.21M total), every Class A share Reddit retires mechanically
@@ -428,21 +454,12 @@ advance_investments:
           float. Combined with the automatic Class B concentration from insider conversions (76.5% →
           83.5% of Class B, 2024→2026), Advance's governance grip on Reddit is tightening through
           purely mechanical effects.
-        - CATALYSTS: PARAMOUNT TRO HEARING Fri Jul 18 (Judge Pitts, 10am PT). CHTR Q2 Jul 24.
-          RDDT Q2 Jul 30. WBD Q2 Aug 6. CHTR CPUC Aug 13.
-        - CHTR ANALYST DOWNGRADE CASCADE (Jul 2-14): Goldman $125 Sell (Jul 2), Zacks Strong Sell
-          (Jul 6), Wells Fargo $160 Underweight (Jul 7), Barclays $130 Underweight (Jul 8),
-          Bernstein $170 Hold (Jul 13), BNP Paribas Exane $120 Underperform (Jul 14 — BELOW 52W
-          low of $124.05, most bearish call). SIX analyst actions in 12 days. Consensus: "Reduce."
-        - WBD: 12-AG antitrust lawsuit (Jul 13) + WGA lawsuit (Jul 14) = TWO active suits to block
-          Paramount merger. TRO hearing Fri Jul 18 could temporarily halt deal. Market unperturbed
-          (WBD +1.44% Jul 14). FCC Chair Brendan Carr questioned antitrust basis for state suit.
-        - RDDT: Closed at $198.03 (Jul 15), -2.58% on day. Then ~$191.16 intraday Jul 16 (-3.47%).
-          Two-day decline of ~6%. Jefferies set $250 target (Jul 10).
-          Q2 earnings Jul 30. RDDT annual TTM revenue $2.2B, net income $530M, P/E ~57. Advance
-          stake concentration risk: a 10% RDDT decline would wipe ~$807M from Advance equity.
-          Reddit AI licensing revenue ($200M+/yr, renewing 2027) remains the fastest-growing stream.
-      This is a potential volatility catalyst for Advance's collateral value.
+        - UPCOMING CATALYSTS: WBD Q2 Aug 6. CHTR CPUC Aug 13. CHTR Cox close mid-to-late Aug.
+          Paramount-WBD trial targeted for Nov (per Delrahim). SRMG Q2 Aug 12.
+      This is no longer a potential volatility catalyst — the RDDT crash has MATERIALIZED the margin
+      loan risk and wiped ~$2B from Advance's public equity in 15 days. Advance's financial sensitivity
+      to Reddit's stock price — and thus to narratives about Meta (Reddit's competitor) — has never
+      been more acute.
     credit_facility_monetization: >
       REDDIT MARGIN LOAN (reported Jun 12, 2026, Bloomberg Law): Advance Magazine Publishers Inc.
       — the specific Advance subsidiary that directly holds the Reddit shares — is establishing
@@ -469,36 +486,33 @@ advance_investments:
       not less — intensifying the undisclosed conflict when Wired covers Meta (Reddit's competitor).
     credit_facility_source_urls:
       - "https://news.bloomberglaw.com/advance-plans-to-borrow-against-1-2-billion-reddit-stake"
-    q1_2026_financials: >
+    q1_q2_2026_financials: >
       Q1 2026: Revenue $663.41M (+69.1% YoY), EPS $1.01 (vs $0.13 YoY, +677%).
-      Beat consensus: revenue +8.03%, EPS +62.9%. Beat consensus all 4 trailing quarters.
+      Beat consensus: revenue +8.03%, EPS +62.9%. Beat consensus all 5 trailing quarters.
+      Q2 2026 (REPORTED Jul 30): Revenue $804.91M (+61.0% YoY), CRUSHED $731M consensus. EPS $1.25
+      (beat $0.95 consensus by $0.30). Ad revenue +64% YoY. Revenue per user $6.18 (record, +36% YoY).
+      Q3 2026 GUIDANCE: $860-870M (above $829M analyst consensus). Implies continued 50%+ YoY growth.
+      DAUq 130.3M (+18% YoY, in-line). US DAUq DECLINED to 53.2M from 53.5M — first QoQ decline.
+      Global DAUq growth: 28% internationally, 6% US (down from 7% prior quarter).
+      CEO Huffman: "Search referrals were choppy in the quarter, and traffic was more volatile later in
+      the quarter." COO Wong: "SEO headwinds" from Google AI algorithm changes "more than offset" user
+      acquisition efforts. Product improvements converting low-engagement search visitors to loyal app
+      users, but pace slower than expected.
+      AI LICENSING: Alphabet and OpenAI each pay est. $60-70M/yr to scrape Reddit conversations for AI
+      training. No updates on renegotiation. Barron's flagged licensing expansion as core bull case.
+      STOCK REACTION: Despite massive earnings/revenue beat + above-consensus guidance, RDDT crashed
+      ~21% on Jul 31 (open $147.70, close ~$140.67, low $135.22). Market punishing user growth
+      deceleration and AI traffic cannibalization fears over financial execution. YTD: -39.1%.
+      Market cap collapsed to ~$18.3B from ~$34.3B at $178.04 close Jul 30.
+      COMPETITIVE CALLOUT: Reuters reported Meta explicitly identified as competitor targeting Reddit's
+      core community model via Threads and new Forum app for Facebook Groups. This is the first time
+      Meta has been named in earnings context as a direct Reddit competitor — making the Advance/Wired
+      conflict even more acute: Wired's parent's $5.9B investment is in a company whose CEO is now
+      publicly framing Meta as an existential competitive threat.
+      PRIOR QUARTER DATA:
       AD REVENUE DETAIL: Q1 2026 ad revenues $625M (+74% YoY), accounting for the vast majority of
       top-line expansion. Active advertiser count +75% YoY. Retail advertiser investment in Reddit grew
       over 8x between 2023-2025 in EMEA alone.
-      FY2026 projected: $3.25B (+47.6%), FY2027: $4.31B (+32.5%).
-      Q2 2026 GUIDANCE: $715M-$725M, representing 43-45% YoY revenue growth (~44% at midpoint).
-      Q2 2026 EARNINGS DATE: July 30 (after market close). Consensus EPS: $0.71 (range $0.45-$0.97,
-      MarketBeat) or $0.99 (Zacks, +120% YoY). Revenue est: $712.9M (MarketBeat) or $746.89M (Zacks).
-      Market cap ~$37.6B at $194.11/share (Jul 10, 2026 intraday).
-      Previous close ~$173.65 (Jun 30). 52-week range $119.27-$282.95. Beta 2.16.
-      YTD PERFORMANCE: Down ~31% from 52-week high ($282.95). Stock volatility elevated (beta 2.16).
-      Forward P/E: 40.28 (trailing P/E: 55.59). Net margin: 28.60%. ROE: 25.48%.
-      TTM (trailing 12 months): Revenue $2.2B, net income $530M (net margin 24.1%), operating income
-      $442M (operating margin 20.1%), gross profit $2.0B (gross margin 91.2%), operating cash flow $690.9M.
-      Current ratio 11.56. Reddit is now PROFITABLE at scale with net income of over $500M TTM.
-      Total outstanding shares as of March 31, 2026: 141,867,916 Class A + 50,543,398 Class B = 192,411,314.
-      CANNES LIONS AD MOMENTUM (Jun 23, 2026): B.Riley maintained Buy rating with $250 price target
-      after Reddit's Cannes Lions events showcased accelerating ad stack maturity. Key findings:
-      (1) ROAS now ABOVE industry averages in key categories — a milestone for Reddit which historically
-          underperformed on conversion metrics vs Meta and Google.
-      (2) Reddit white paper: ~20% of ALL shoppers include Reddit in their product searches — not just
-          tech-savvy users, but mainstream consumer behavior.
-      (3) 50% of US shoppers use Reddit to VERIFY AI-generated recommendations — positioning Reddit as
-          the "trust layer" between AI search and purchase decisions. This is a direct competitive
-          threat to Meta's commerce ecosystem: shoppers trust Reddit communities over Meta's ad-supported
-          product recommendations.
-      (4) Reddit testing AI-powered shopping search (TechCrunch): interactive product carousels with
-          pricing, images, and direct where-to-buy links surfacing products mentioned in community
           discussions. If scaled, this transforms Reddit from a discussion platform into a commerce
           funnel competing directly with Meta Shops and Instagram Shopping.
       (5) Adweek (Jun 2026): marketers acknowledging "Reddit is a huge source" for AI answer engines,
