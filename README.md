@@ -18,7 +18,7 @@ This is not an attack tool. It works equally well pointed at Fox News covering r
 ## What It Does
 
 1. **Ingests articles** from any publication via RSS feeds and web scraping
-2. **Detects entities** mentioned in coverage (companies, executives, products) using 93 clusters with 898 aliases and disambiguation filters (see [docs/ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md))
+2. **Detects entities** mentioned in coverage (companies, executives, products) using 94 clusters with 906 aliases and disambiguation filters (see [docs/ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md))
 3. **Classifies topics** into 29 standardized buckets for apples-to-apples comparison across companies (see [docs/TOPIC_REFERENCE.md](docs/TOPIC_REFERENCE.md))
 4. **Analyzes sentiment** using an 8-dimension scoring framework (not just positive/negative)
 5. **Calculates asymmetry** — is Company X covered more negatively than peers, with statistical significance?
@@ -42,15 +42,15 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 
 | Component | Count | Notes |
 |---|---|---|
-| Entity clusters | 93 | 898 aliases, 68 with custom regex, 25 auto-generated |
+| Entity clusters | 94 | 906 aliases, 69 with custom regex, 25 auto-generated |
 | Framing device types | 111 | 10 core + 94 extended + 7 structural (post-pass) |
 | Framing patterns | 754 | Compiled regex patterns across 104 pattern-based types |
 | Emotional language terms | 1022 | Domain-specific lexicon for editorial EI scoring |
 | Adversarial device types | 32 | Used by sentiment correction pipeline |
 | Sentiment correction paths | 13 | Paths A–N, each addressing a specific VADER failure mode |
-| Annotated articles | 197 | Full manual analysis in `examples/sample_output/` |
-| Journalists tracked | 249 | Career data with source URLs |
-| Career-entry migrations | 964 | Across 433+ publications |
+| Annotated articles | 198 | Full manual analysis in `examples/sample_output/` |
+| Journalists tracked | 251 | Career data with source URLs |
+| Career-entry migrations | 967 | Across 433+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
 | Tests | 3,099 | Across 140 test files |
 
@@ -79,7 +79,7 @@ mediascope careers analyze "Karen Hao"
 mediascope careers leadership wired
 ```
 
-Ships with verified career data for **249 journalists** (60 with structured education records) across 435+ publications (964 career-entry migrations). Notable high-value migrations include:
+Ships with verified career data for **251 journalists** (60 with structured education records) across 435+ publications (967 career-entry migrations). Notable high-value migrations include:
 
 | Journalist | Migration Path | Analytical Value |
 |---|---|---|
@@ -272,7 +272,7 @@ Statistical methodology is documented at academic quality in [docs/METHODOLOGY.m
 | [FRAMING_REFERENCE.md](docs/FRAMING_REFERENCE.md) | **Quick-reference card for all 111 framing device types** — scannable lookup during article analysis |
 | [TOPIC_REFERENCE.md](docs/TOPIC_REFERENCE.md) | **Quick-reference card for all 29 topic buckets** — boundary rules, adjacency warnings, genre detection triggers |
 | [SOURCE_ANALYSIS_REFERENCE.md](docs/SOURCE_ANALYSIS_REFERENCE.md) | **Quick-reference card for source extraction, stance analysis, outsourced intensity, and active-negative agency** — 14 pattern groups, 10 source types, failure modes |
-| [ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md) | **Quick-reference card for all 93 entity clusters (898 aliases)** — disambiguation filters, cluster categories, custom regex patterns, pipeline interactions |
+| [ENTITY_REFERENCE.md](docs/ENTITY_REFERENCE.md) | **Quick-reference card for all 94 entity clusters (906 aliases)** — disambiguation filters, cluster categories, custom regex patterns, pipeline interactions |
 | [SENTIMENT_CORRECTION_REFERENCE.md](docs/SENTIMENT_CORRECTION_REFERENCE.md) | **Quick-reference card for all 13 sentiment correction paths (A–N)** — trigger conditions, blend formulas, validation articles, path selection flowchart |
 | [ACCURACY_GUIDE.md](docs/ACCURACY_GUIDE.md) | **Practical accuracy reference** — when to trust scores, genre-specific accuracy, known failure modes, decision tree for interpreting results, common misinterpretation patterns |
 | [CROSS_PUBLICATION_REFERENCE.md](docs/CROSS_PUBLICATION_REFERENCE.md) | **Quick-reference card for same-event cross-publication comparison** — the most powerful evidence technique; 7-dimension matrix, wire-service baseline method, editorial mode taxonomy, 13 validated comparison clusters |
@@ -376,7 +376,7 @@ The `examples/` directory contains runnable demos that walk through MediaScope's
 | [`framing_correction_demo.py`](examples/framing_correction_demo.py) | How MediaScope corrects VADER's positive bias on investigative journalism using 13 distinct correction paths (A–N), framing device signals, active-negative agency detection, and source stance analysis |
 | [`sarcastic_editorial_demo.py`](examples/sarcastic_editorial_demo.py) | **NEW:** Path H sarcastic editorial detection — how VADER misscores short sarcastic opinion pieces as positive (editorial asides, assumed consensus, reader-address register), with step-by-step trigger diagnostics |
 | [`financial_journalism_demo.py`](examples/financial_journalism_demo.py) | **NEW:** Financial journalism VADER inflation — how investment recommendation boosterism, financial reassurance language, and analyst-debate formats inflate VADER scores by 0.3–0.5 points, with diagnostic flags and interim workarounds (METHODOLOGY §16) |
-| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 249 journalists, 751 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
+| [`careers_demo.py`](examples/careers_demo.py) | Editorial Histories module: career timelines for 251 journalists, 754 auto-detected migrations, DiD natural experiment setup, and notable career pipelines |
 | [`topic_classification_demo.py`](examples/topic_classification_demo.py) | **NEW:** 29-bucket topic classification system — demonstrates single-article classification, multi-topic overlap, genre detection via topic confidence, and the full bucket reference with adjacency warnings for commonly confused pairs |
 | [`agent_integration.py`](examples/agent_integration.py) | Integration patterns for LangChain, CrewAI, and raw function calling |
 

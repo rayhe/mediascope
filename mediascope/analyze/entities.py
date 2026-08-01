@@ -1109,6 +1109,26 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         "aliases": ["BBC", "British Broadcasting Corporation"],
         "regex": r"(?<!\w)(?-i:BBC)(?!\w)",
     },
+    # --- Recording wearable devices (non-glasses) -------------------------
+    # Non-glasses wearable recording devices that appear in the narrative
+    # broadening from "Meta glasses are the problem" to "ALL recording
+    # wearables are the problem."  Distinct from Smart Glasses Competitors
+    # (#48) because these are different form factors (wristbands, clip-ons,
+    # pendants).  Discovered in CNN "AI devices that see, listen and record"
+    # article (Jul 26, 2026).
+    "Recording Wearable Devices": {
+        "aliases": [
+            "Amazon Bee", "Bee Pioneer", "Plaud", "Notepin",
+            "Notepin S", "Humane AI Pin", "Omi", "Compass",
+        ],
+        "regex": (
+            r"(?<!\w)"
+            r"(Amazon\s+Bee|Bee\s+Pioneer|Plaud|Notepin(?:\s+S)?|"
+            r"Humane\s+AI\s+Pin|(?-i:Omi)(?=\s+(?:device|wearable|pendant|recorder))|"
+            r"Compass(?=\s+(?:device|wearable|pendant|recorder)))"
+            r"(?!\w)"
+        ),
+    },
 }
 
 

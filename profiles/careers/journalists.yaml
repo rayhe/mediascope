@@ -17562,3 +17562,64 @@ journalists:
   source_urls:
   - https://muckrack.com/kali-hays/articles
   - https://reporters.io/j/Kali%20Hays
+
+- beats:
+  - tech
+  - ai
+  - wearables
+  - privacy
+  career:
+  - publication: bloomberg
+    role: Reporter
+    start: '2018'
+    end: '2020'
+  - publication: abc-news
+    role: Tech Reporter
+    start: '2020'
+    end: '2022'
+  - publication: cnn
+    role: Tech Reporter
+    start: '2022'
+    end: present
+  multi_publication: true
+  name: Catherine Thorbecke
+  notes: 'CNN tech reporter covering AI, wearable devices, and Big Tech. Based in New York.
+    KEY for MediaScope: author of CNN Jul 26 2026 "AI devices that see, listen and record"
+    article — the first major outlet feature to group Meta glasses, Amazon Bee, and Plaud
+    Notepin S into a single privacy-negative wearable category frame. This article represents
+    a significant narrative escalation: category condemnation (ALL recording wearables are
+    problematic) rather than product-specific criticism (Meta glasses specifically). Uses
+    first-person experiential authority technique — wearing all three devices personally
+    and converting her social discomfort into editorial evidence. Migration path: Bloomberg
+    → ABC News → CNN. CONTROL NOTE: CNN has no institutional connection to Condé Nast /
+    Advance Publications / Vox Media.'
+  source_urls:
+  - https://www.cnn.com/profiles/catherine-thorbecke
+  - https://muckrack.com/catherine-thorbecke/articles
+
+- beats:
+  - tech
+  - ai
+  - social_media
+  - wearables
+  career:
+  - publication: mashable
+    role: Tech Reporter
+    start: '2014'
+    end: '2019'
+  - publication: engadget
+    role: Senior Reporter
+    start: '2019'
+    end: present
+  multi_publication: true
+  name: Karissa Bell
+  notes: 'Engadget senior reporter covering Meta, social media, AI, and wearable tech.
+    KEY for MediaScope: author of Engadget Jul 11 2026 "The Meta Glasses Backlash Is
+    Changing How (Or If) People Use Them" — the first article to document the behavioral
+    impact of the "pervert glasses" backlash on actual users/creators. Interviewed 5
+    creators, photographers, and others who changed their usage habits. Article uses
+    anecdotal evidence from enthusiastic early adopters to demonstrate chilling effect.
+    Migration: Mashable → Engadget (Vox Media → Yahoo). CONTROL NOTE: Engadget (Yahoo)
+    has no Condé Nast / Advance Publications connection.'
+  source_urls:
+  - https://muckrack.com/karissa-bell/articles

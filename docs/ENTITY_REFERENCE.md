@@ -1,6 +1,6 @@
 # Entity Detection & Clustering Quick Reference
 
-> A compact lookup card for all 93 entity clusters (898 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
+> A compact lookup card for all 94 entity clusters (906 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
 
 ---
 
@@ -15,8 +15,8 @@ Entity detection is the **first stage** of the analysis pipeline — every downs
 | **Cluster** | A named group representing a single trackable entity (company, org, person category). Example: `Meta` |
 | **Alias** | A text string that maps to a cluster. Example: `"Facebook"`, `"Zuckerberg"`, `"Instagram"` all → `Meta` |
 | **Canonical Name** | The best alias match for a given text span. `"Andrew Bosworth"` matched in the Meta cluster resolves to canonical name `"Andrew Bosworth"`, not `"Meta"` |
-| **Custom Regex** | A hand-tuned regex for the cluster (68 of 93 clusters). Handles homographs, negative lookaheads, and context-sensitive matching |
-| **Auto Regex** | Word-boundary patterns auto-generated from the alias list (25 of 93 clusters). Simpler but adequate for unambiguous names |
+| **Custom Regex** | A hand-tuned regex for the cluster (69 of 94 clusters). Handles homographs, negative lookaheads, and context-sensitive matching |
+| **Auto Regex** | Word-boundary patterns auto-generated from the alias list (25 of 94 clusters). Simpler but adequate for unambiguous names |
 
 ### Pipeline Position
 
@@ -168,6 +168,7 @@ Cloud providers, AI startups, and infrastructure companies.
 | 91 | **BBC** | 2 | custom | BBC, British Broadcasting Corporation | Major international media organization. Added Jul 15 from TechCentral smart glasses privacy article. |
 | 92 | **Reddit** | 2 | custom | Reddit, RDDT | Social platform; critical for Advance Publications ownership tracking. Added Jul 16 from IBD Wedbush hyperscalers article. |
 | 93 | **eBay** | 2 | custom | eBay, EBAY | E-commerce marketplace. Added Jul 16 from IBD Wedbush hyperscalers article. |
+| 94 | **Recording Wearable Devices** | 8 | custom | Amazon Bee, Bee Pioneer, Plaud, Notepin, Notepin S, Humane AI Pin, Omi, Compass | Non-glasses wearable recording devices (wristbands, clip-on recorders, pendants). Added Aug 1 from CNN "AI devices that see, listen and record" article (Jul 26). These represent the narrative broadening from "Meta glasses are the problem" to "ALL recording wearables are the problem." Tracking this cluster separately from Smart Glasses Competitors (#48) because the form factor and backlash dynamics differ. |
 | 56 | **Australia** | 5 | custom | Australia, Australian government, eSafety Commissioner, Julie Inman Grant, Inman Grant | Extended Jul 14: added eSafety Commissioner Julie Inman Grant by name — previously only the title was matched. |
 | 57 | **Legal/Judicial** | 6 | custom | Delaware courts, Section 230, DSA, MDL numbers, federal courts/judges, Supreme Court | Extended in Jul 2026 to catch federal judges invisible in Reuters $1.4T article |
 
