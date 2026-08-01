@@ -1,0 +1,92 @@
+Title: Meta tightens AI glasses security as questions over bystander privacy persist
+Publication: MediaNama
+Author: MediaNama editorial
+Date: July 8, 2026
+URL: https://www.medianama.com/2026/07/223-meta-tightens-ai-glasses-security-questions-bystander-privacy-persist/
+
+Meta has published a privacy FAQ for its AI glasses, answering common questions about how they work and defending the capture LED. This white light blinks when the glasses record, as its core protection for the people around the wearer. For a photo, that blink gives a bystander their only notice before someone captures their image.
+
+What is Meta doing? Meta's July 7 FAQ sets out the capture LED and the safeguards around it:
+
+- The white capture LED blinks when the glasses record, briefly for a photo and continuously for a video, and has no off switch.
+- On second-generation glasses, covering the LED turns off the camera and prompts the wearer to clear it before capturing any photos.
+- Meta is now updating so the glasses turn off the camera if they detect that the LED has been physically tampered with or destroyed.
+- Meta says it removes ads, posts, and Marketplace listings for LED-tampering services and takes legal action against sellers, on and off its platforms.
+
+The FAQ centers on the wearer, who sees, imports, and shares the photos. It ignores the bystander, who never sees the blink, never consents, and cannot stop someone from recording them.
+
+India is a live market for this. Meta's Ray-Ban glasses launched here in May 2025; the Digital Personal Data Protection (DPDP) Act, 2023 does not require a wearer to tell anyone they are recording in public, and MediaNama found LED-blocking stickers for the glasses on sale on Amazon India, one set marketed for "discreet recording in business meetings."
+
+The blink is easy to miss, by design: The glasses look like ordinary Ray-Bans, so the LED is the only signal that recording is happening. That signal is unreliable:
+
+- The blink of the photo lasts a fraction of a second, too brief for a bystander to notice, interpret, and react before the capture is complete.
+- In daylight, the small light is hard to see at all.
+- Recording can start and stop via a tap on the temple or a "Hey Meta" voice command, with no raised phone or visible gesture that a bystander would recognise.
+- Regulators in Ireland and Italy questioned whether the LED works as a bystander notice when the first Ray-Ban Stories launched in 2021, saying Meta had not shown field testing that the small light effectively gives notice.
+
+Meta says a shutter sound exists but is not practical to make audible at a distance, leaving the blink as the only outward cue. Other countries rejected that trade-off for phone cameras. Japan requires an un-silencable shutter sound through carrier and manufacturer rules, and South Korea mandates one by law at 64 decibels, both to curb covert and upskirt photography.
+
+The update protects the camera, not the bystander: Every safeguard Meta added — the cover-detection feature, the tamper-detection update, and action against sellers who tamper — keeps the light working so the wearer cannot record covertly. None gives the bystander a way to refuse the recording, know how the footage will be used, or have their image excluded.
+
+What happens to the footage is a separate exposure: The bystander problem does not end at capture. Meta's downstream processing can sweep up a person caught in the background:
+
+- Meta says media stays on the wearer's device unless they share it with Meta AI, and that when people do, it "sometimes uses contractors to review this data" to improve the glasses.
+- A February 2026 investigation by Swedish outlets, reported by the BBC, found annotators at Nairobi subcontractor Sama viewed sensitive footage from the glasses. Meta says it blurs faces first, but sources said the blurring sometimes failed. The report prompted the UK Information Commissioner's Office to write to Meta.
+- Two Harvard researchers demonstrated that facial recognition tools could identify strangers within seconds when linked to a Meta glasses feed — a capability Meta is reportedly considering for future models.
+
+The people bearing the fallout are mostly women: The covert recording the LED is meant to flag is already being used against women.
+
+- Influencers and self-styled pickup artists use the discreet recording to film women in public and post the clips as dating content on Instagram and TikTok, where victims face sexualised abuse in the comments.
+- One woman, recorded by a stranger on a night out in Vancouver, found a viral clip of herself days later and described lasting hypervigilance whenever a stranger approaches.
+- In October 2025, the University of San Francisco reportedly warned students after a man wearing Ray-Ban glasses was filming women and posting the footage.
+- In some cases, the footage captured women's names, employers, or that they lived nearby, and victims found police had no clear avenue to act.
+
+More than 70 civil-liberties and advocacy groups have written to Mark Zuckerberg urging Meta to drop plans for facial recognition, warning that pairing always-on cameras with instant identification would "exacerbate abuse, harassment, and stalking," particularly for women, and strip people of anonymity in public.
+
+Meta says it fights LED tampering. The stickers are on Amazon: Meta's July 7 post says it removes ads, posts, and Marketplace listings for LED-tampering services on its own platforms, and takes legal action against sellers "on and off our own platforms." LED-blocking stickers for Ray-Ban Meta glasses are openly on sale on Amazon India:
+
+- A ZORBES 20-piece set of "LED Light Blocking Stickers Compatible with Ray-Ban Meta/Wayfarer/Oakley/Skyler/Headliner Smart Glasses" sells for Rs 844 and is listed as "100+ bought in past month."
+- A 10-piece set is marketed for "Discreet Recording in Business Meetings" and sold for Rs 399, or Rs 379 with a coupon.
+
+Meta says the disable feature applies only to the second generation. First-generation glasses have no such detection, so a blocking sticker on an older pair covers the light and still records, exactly the covert use the sellers advertise. Regarding second-generation glasses, Meta claims that a blocked LED stops the camera, which would mean the same sticker would defeat recording rather than enable it. Meta has not said whether it has tested these stickers against either generation, or whether the stickers defeat the second-generation detection. What is clear is that a market for blocking the capture LED is selling openly.
+
+Meta still needs to answer this gap. As the safeguard only applies going forward, every first-generation pair already sold—part of the more than seven million glasses Meta says it shipped in 2025—still records with no auto-disable, and a sticker can silence it. Meta has not said whether it plans any protection for those devices, or whether it considers them entirely outside the safeguard.
+
+India offers the bystander no clear protection; this is no longer a foreign concern. Ray-Ban Meta glasses are on sale in India, Reliance Jio is showcasing its own wearable glasses, while Sarvam AI is developing India-built Kaze glasses. The DPDP Act does not close the gap the LED leaves open:
+
+- It does not require a wearer to inform others that a recording is happening in public, nor does it require that the LED remain visible.
+- Its exemption for personal or domestic use allows a wearer to treat the footage as personal even when other people appear in it, leaving those people outside the Act's consent and erasure rights.
+- The 2025 draft rules allow a person to access, correct, or erase data only when they have a formal link to the platform, such as an account, which a bystander lacks.
+
+If someone films you, what can you do in India?
+
+- Ask the wearer to stop or delete. They have no legal obligation to comply in a public place, where the law broadly permits recording.
+- A DPDP erasure request likely won't work. Those rights need an account or formal link to the data fiduciary, which a filmed stranger does not have.
+- If the footage is sexual or intimate, criminal law is the stronger route. Section 66E of the IT Act covers capturing or transmitting images of a private area without consent, and Sections 67 and 67A cover obscene and sexually explicit material. Section 77 of the Bharatiya Nyaya Sanhita (BNS), 2023 covers voyeurism, capturing or sharing images of a woman in a private act without consent. Karnataka in 2026 directed police to register an FIR immediately in such cases, even where the person had consented to the original recording.
+- To remove a posted clip, a takedown request to the platform under the IT Rules is usually faster than any privacy claim, and a complaint can be filed on the National Cyber Crime Reporting Portal.
+
+These routes turn on the content being intimate or obscene. For the ordinary covertly filmed clip that is merely humiliating, not sexual, Indian law offers a bystander little.
+
+MediaNama's take: Meta has a defensible case to make. Recording in public is broadly lawful; people have lower expectations of privacy in public; and a hardwired light with no off switch is more than most cameras, including phones, offer. Meta turns off the camera when the light is defeated and bars tampering services on its platforms. On its own terms, the design does what Meta says it does.
+
+Where it breaks is the bystander, and the research shows the breaks are not edge cases:
+
+- Every safeguard is wearer-gated. The camera disabling, the anti-tampering detection, the etiquette guidance and the choice to import or share all sit with the wearer. The person recorded gets a blink, and the Irish DPC said that in 2021, Meta never demonstrated field testing that the blink works as notice. Five years on, the design remains unchanged.
+
+- The audible cue is a choice, not a constraint. Meta says a loud sound is "not practical." Japan and South Korea require an un-silenceable shutter sound on phone cameras to stop covert filming. Meta picked a light a bystander can miss over a sound a bystander cannot, and defends the harder-to-notice option.
+
+- The anti-tampering update solves the wrong problem. It stops a bad actor from defeating the light. It does nothing about compliant, everyday recording, which is where the documented harm sits: women filmed by pickup-artist accounts, footage surfacing days later, victims left with no police recourse.
+
+- The off-platform enforcement claim is untested. Meta says it acts against tampering sellers "on and off our own platforms." LED-blocking stickers for its glasses are on sale on Amazon India right now, one set sold explicitly for "discreet recording," which is exactly the off-platform market Meta says it polices.
+
+- The harm is gendered, and the next feature raises the stakes. More than 70 groups have asked Meta to drop facial recognition, warning it would deepen abuse, harassment and stalking of women. The two Harvard researchers who linked a Meta feed to facial recognition showed why: the glasses can already turn a stranger's face into their name and address.
+
+The pattern is consistent. Meta's tools police extreme misuse while leaving ordinary harm untouched. Meta's own conduct marks the limit of the LED. When Mark Zuckerberg testified at a February 2026 social-media addiction trial in Los Angeles, his team wore Ray-Ban Meta glasses into court, and Judge Carolyn Kuhl warned that she would hold them in contempt if the glasses had recorded anything; she then ordered them removed because facial recognition could identify jurors. The court did not accept the blinking light as sufficient notice. Indian bystanders have no equivalent protection, and under the DPDP Act, no clear recourse.
+
+What MediaNama has asked Meta:
+
+- Can a bystander or non-user find out whether Meta recorded them, or request that Meta delete any footage in which they appear?
+- Do second-generation glasses detect and turn off the camera when an LED-blocking sticker, like the ones sold on Amazon, is applied?
+- Why does Meta consider an un-silenceable audible cue impractical, given phone-camera rules in Japan and South Korea?
+- Has Meta acted against the off-platform sellers of LED-blocking accessories it says it pursues?
+- What safeguards apply to bystanders captured in footage a wearer shares with Meta AI, which contractors then review?

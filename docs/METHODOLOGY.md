@@ -1432,13 +1432,13 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **205 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **206 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
 ### 17.2 Publication Distribution
 
-The corpus spans **49 distinct publications** across 5 editorial modes:
+The corpus spans **50 distinct publications** across 5 editorial modes:
 
 #### Tracked Publications (5 publications, 58 articles)
 

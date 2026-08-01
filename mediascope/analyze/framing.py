@@ -8658,7 +8658,10 @@ _HERITAGE_NOSTALGIA_PATTERNS: list[re.Pattern] = [
     re.compile(
         r"\b(?:first|second|third|fourth|fifth|sixth|seventh|eighth|"
         r"ninth|tenth|[0-9]+(?:st|nd|rd|th))\s+"
-        r"generation\b",
+        r"generation\b"
+        r"(?!\s+(?:of\s+)?(?:glasses|device|smart\s*glasses|headset|phone|"
+        r"chip|processor|sensor|camera|hardware|product|model|wearable|"
+        r"iPad|iPhone|Pixel|Quest|Watch|earbuds|AirPods))",
         re.IGNORECASE,
     ),
     # "iconic buildings/landmarks/institutions" — heritage signalling
@@ -10157,6 +10160,47 @@ _SAFEGUARD_INADEQUACY_PATTERNS: list[re.Pattern] = [
         r"privacy\s+(?:protections?|safeguards?|measures?|controls?|features?))\b",
         re.IGNORECASE | re.DOTALL,
     ),
+    # Pattern 9: "protects/safeguards X, not Y" — safeguard misdirection
+    # Frames the safeguard as protecting the wrong stakeholder.
+    # Discovered in MediaNama Meta glasses bystander article (Jul 8, 2026):
+    # "The update protects the camera, not the bystander"
+    # "Every safeguard ... keeps the light working so the wearer cannot
+    #  record covertly. None gives the bystander a way to refuse"
+    re.compile(
+        r"\b(?:protect(?:s|ed|ing)?|safeguard(?:s|ed|ing)?|"
+        r"updat(?:e|es|ed|ing))\b"
+        r".{0,40}?"
+        r"\b(?:the\s+)?(?:camera|device|product|wearer|user|platform|"
+        r"hardware|light|LED|indicator)\b"
+        r".{0,20}?"
+        r"\bnot\s+(?:the\s+)?"
+        r"(?:bystander|victim|person|people|public|stranger|consumer|"
+        r"individual|citizen|user|subject|target)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Pattern 10: "solves the wrong problem" / "addresses the wrong issue"
+    # Direct declaration that a safeguard is misdirected.
+    # Discovered in MediaNama (Jul 8, 2026):
+    # "The anti-tampering update solves the wrong problem"
+    re.compile(
+        r"\b(?:solves?|address(?:es)?|fix(?:es)?|tackles?|targets?)\s+"
+        r"the\s+wrong\s+"
+        r"(?:problem|issue|concern|threat|risk|question|stakeholder|"
+        r"audience|target|group)\b",
+        re.IGNORECASE,
+    ),
+    # Pattern 11: "None/no safeguard gives [stakeholder] a way to [action]"
+    # Frames collective safeguards as universally insufficient.
+    # Discovered in MediaNama (Jul 8, 2026):
+    # "None gives the bystander a way to refuse the recording"
+    re.compile(
+        r"\b(?:none|no\s+(?:safeguard|protection|measure|feature|update))\s+"
+        r"(?:of\s+(?:them|these|those)\s+)?"
+        r"(?:gives?|provides?|offers?|grants?|allows?)\s+"
+        r"(?:the\s+)?(?:bystander|victim|person|people|public|stranger|"
+        r"consumer|individual|citizen|user|subject)\b",
+        re.IGNORECASE,
+    ),
 ]
 _DEVICE_PATTERNS["safeguard_inadequacy"] = _SAFEGUARD_INADEQUACY_PATTERNS
 
@@ -10503,7 +10547,74 @@ def detect_framing_devices(
                     ):
                         continue
 
-                # --- Pathologizing metaphor: neutral "intervention" filter ----
+                    # --- "like the ones sold on [marketplace]" factual ref ---
+                    # Suppress analogy_metaphor when "like" introduces a
+                    # factual product reference rather than a rhetorical
+                    # comparison.
+                    # Discovered in MediaNama Meta glasses bystander article
+                    # (Jul 8, 2026): "like the ones sold on Amazon" is a
+                    # factual product reference, not a metaphorical simile.
+                    # ----------------------------------------------------------
+                    if re.search(
+                        r"\blike the (?:ones?|stickers?|products?|items?|"
+                        r"accessories|devices?|kits?|sets?)\s+"
+                        r"(?:sold|available|listed|marketed|offered|found|"
+                        r"advertised)\s+"
+                        r"(?:on|at|via|through)\s+"
+                        r"(?:amazon|ebay|alibaba|aliexpress|tiktok\s+shop|"
+                        r"etsy|walmart|target|best buy|marketplace|the\s+market)",
+                        _matched_am,
+                    ):
+                        continue
+
+                # --- heritage_nostalgia: product generation filter ------------
+                # Suppress heritage_nostalgia when "N generation" appears in a
+                # tech/product context — "second-generation glasses", "first
+                # generation. First-generation glasses".  Check ±50 chars for
+                # product terms.
+                #
+                # Discovered in MediaNama Meta glasses bystander article
+                # (Jul 8, 2026): "second generation" (product versioning)
+                # falsely triggers heritage_nostalgia.
+                # ---------------------------------------------------------
+                if device_type == "heritage_nostalgia":
+                    _matched_hn = match.group().lower()
+                    if "generation" in _matched_hn:
+                        _context_hn = text[max(0, start - 50):min(len(text), end + 50)].lower()
+                        _PRODUCT_GEN_TERMS = (
+                            "glasses", "glass", "device", "camera", "led",
+                            "hardware", "product", "model", "wearable",
+                            "headset", "phone", "chip", "sensor", "ipad",
+                            "iphone", "pixel", "quest", "watch", "earbuds",
+                            "airpods", "detection", "safeguard", "update",
+                            "ray-ban", "meta", "samsung", "apple", "google",
+                        )
+                        if any(term in _context_hn for term in _PRODUCT_GEN_TERMS):
+                            continue
+
+                # --- competitive_positioning: regulatory gap filter --------
+                # Suppress competitive_positioning when "close the gap" or
+                # "bridge the gap" appears in a legal/regulatory context —
+                # "[Act/law] does not close the gap" is regulatory analysis,
+                # not corporate rivalry.
+                #
+                # Discovered in MediaNama Meta glasses bystander article
+                # (Jul 8, 2026): "The DPDP Act does not close the gap the LED
+                # leaves open" triggered competitive_positioning.
+                # ---------------------------------------------------------
+                if device_type == "competitive_positioning":
+                    _matched_cp = match.group().lower()
+                    if re.search(r"(?:close|bridge|narrow)\s+the\s+gap", _matched_cp):
+                        _lookback_cp = text[max(0, start - 80):start].lower()
+                        _REG_TERMS_CP = (
+                            "act ", "law ", "regulation", "legislation",
+                            "statute", "directive", "ordinance", "bill ",
+                            "policy", "gdpr", "dpdp", "ccpa", "ftc",
+                            "aia ", "ai act", "does not",
+                        )
+                        if any(t in _lookback_cp for t in _REG_TERMS_CP):
+                            continue
+
                 # Suppress pathologizing_metaphor when "intervention" appears
                 # in neutral technical context: "human intervention", "less
                 # intervention", "without intervention", "no intervention",

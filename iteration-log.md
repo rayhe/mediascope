@@ -25880,3 +25880,32 @@ Gizmodo is owned by Keleops AG (Swiss), with ZERO Condé Nast/Advance financial 
 - `examples/sample_output/wsj_essilorluxottica_q2_smartglasses_boom_2026_07_28_analysis.md`
 - `tests/test_structural_consistency.py` (EXPECTED_TOTAL_PATTERNS 714→718)
 - README.md, ARCHITECTURE.md, METHODOLOGY.md, QUALITY_STANDARDS.md, ACCURACY_GUIDE.md (stats: 204→205 articles, 775→779 patterns, tests 142 files)
+
+## 2026-08-01 13:00 PT — Type A: Article Deep Dive (MediaNama)
+
+**Article:** MediaNama — "Meta tightens AI glasses security as questions over bystander privacy persist" (Jul 8, 2026)
+**URL:** https://www.medianama.com/2026/07/223-meta-tightens-ai-glasses-security-questions-bystander-privacy-persist/
+**Significance:** Article #206, first Indian/Global South publication in corpus. Independent editorial (no Advance Publications connection) — another "editorial escape velocity" control alongside Gizmodo (Swiss-owned).
+
+### Toolkit improvements
+1. **3 new safeguard_inadequacy patterns** (Patterns 9-11):
+   - "protects X, not Y" misdirection pattern
+   - "solves the wrong problem" editorial judgment
+   - "None gives [stakeholder] a way to" absence-as-inadequacy
+2. **heritage_nostalgia FP suppression**: Product generation context filter — "second generation glasses" no longer triggers heritage_nostalgia when ±50 chars contain tech/product terms (glasses, device, camera, LED, etc.)
+3. **analogy_metaphor FP suppression**: Factual marketplace references ("like the ones sold on Amazon") no longer trigger analogy_metaphor
+4. **competitive_positioning FP suppression**: Regulatory gap language ("The DPDP Act does not close the gap") no longer triggers competitive_positioning when preceded by legal/regulatory terms
+5. **Pattern count:** 718→721 (3 new safeguard_inadequacy patterns)
+
+### Wearables narrative finding
+- MediaNama (Indian-owned, independent) produces convergent anti-glasses framing with zero Advance Publications connection
+- Different journalism tradition: policy/regulatory analysis rather than adversarial reporting
+- Editorial voice drives critique (outsourced_ratio=0.234, far below typical interview-driven articles)
+- Confirms "editorial escape velocity" hypothesis: narrative convergence without coordinated mechanism
+
+### Files changed
+- `mediascope/analyze/framing.py` (3 new patterns + 3 post-processing FP filters)
+- `tests/test_structural_consistency.py` (EXPECTED_TOTAL_PATTERNS 718→721, MediaNama pub prefix)
+- `examples/sample_output/medianama_meta_glasses_bystander_privacy_2026_07_08_article.txt`
+- `examples/sample_output/medianama_meta_glasses_bystander_privacy_2026_07_08_analysis.md`
+- README.md, ARCHITECTURE.md, METHODOLOGY.md, QUALITY_STANDARDS.md, ACCURACY_GUIDE.md (stats: 205→206 articles, 49→50 publications, 718→721 patterns)
