@@ -2121,6 +2121,68 @@ litigation_connections:
     evidence: "CNIL enforcement decision Nov 20, 2025"
     source_url: "https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/"
 
+  - type: "wearables_litigation_and_advocacy_pipeline"
+    severity: 4
+    description: >
+      WEARABLES-SPECIFIC LITIGATION & ADVOCACY PIPELINE (Mar–Jul 2026):
+
+      LITIGATION:
+      - Bartone et al. v. Meta Platforms, Inc. (N.D. Cal., filed Mar 4, 2026): Class action by
+        Clarkson Law Firm alleging false advertising ("designed for privacy, controlled by you").
+        Two plaintiffs (NJ + CA). Triggered by Svenska Dagbladet/GP investigation of Kenya-based
+        Sama contractors viewing intimate footage from glasses. Clarkson has filed against Apple,
+        Google, OpenAI — litigation-funded generalist, not anti-Meta specialist.
+      - EUROPEAN EXPANSION (Jul 2026): Clarkson Law Firm actively recruiting European users and
+        working with EU-based lawyers on parallel class action. Source: POLITICO (week of Jul 7).
+      - Texas AG biometric privacy investigation: Opened under state biometric privacy statutes.
+      - Illinois BIPA exposure: Facial recognition in public spaces difficult to square with
+        Biometric Information Privacy Act written consent requirements. Source: Journal of High
+        Technology Law.
+      - UK ICO investigation: Active since Mar 2026 (SVD/GP trigger).
+
+      ADVOCACY ORGANIZATIONS (7 distinct groups cited in Jul 2026 wearables coverage):
+      1. EFF (Electronic Frontier Foundation) — Thorin Klosowski (senior security & privacy activist)
+         quoted in Gizmodo Jun 13 "Can Smart Glasses Ever Be Privacy-Friendly?" piece. EFF member of
+         ACLU "Eyewear Not Spyware!" coalition (75+ orgs, Apr 13). Source: Gizmodo.
+      2. Norwegian Consumer Council — Finn Lützow-Holm Myrstad (Director, Digital Policy) quoted in
+         POLITICO: "In principle, the law is clear. There's no way that people can, in a meaningful
+         way, consent and understand what they consent to if they're being filmed." Source: POLITICO.
+      3. CNIL (France) — Warned May 2026 smart glasses risk normalizing surveillance "almost invisible
+         and omnipresent" with potential to "profoundly transform our societies." Source: POLITICO.
+      4. EPIC (Electronic Privacy Information Center) — Same-day FTC letter after NYT Name Tag leak
+         (Feb 13). Appears in both CFA (64-org) and ACLU (75-org) coalitions + separate FTC filing.
+         Multi-front advocacy, 3+ actions.
+      5. ACLU — Led "Eyewear, Not Spyware!" campaign (Apr 13, 75+ orgs). Public action tool.
+      6. Consumer Federation of America — Led 64-organization letter (early Apr) to Meta,
+         EssilorLuxottica, White House, FTC, DOJ, state AGs.
+      7. Access Now — Member of ACLU coalition. Receives disclosed Google.org funding. Google competes
+         with Meta in smart glasses (Android XR). Real but disclosed connection.
+
+      ACTIVIST AMPLIFICATION (Jul 2026):
+      Everyone Hates Elon (EHE) — UK-based class-politics activist group (Wikipedia: founded ~2025).
+      NOT connected to Condé Nast/Advance/any media chain. Installed guerrilla spoof ads at London
+      bus stops near Meta UK HQ: Kylie Jenner lenticular "We're always watching" + Jeffrey Epstein
+      "Glasses for people who don't do consent." Documented FT→EHE→press amplification chain in
+      wearables_advocacy_coalition_analysis_2026_jul.md. Functions as "narrative laundry" converting
+      technical FT reporting into visceral street-level imagery amplified through art/photo/tech press.
+
+      SMART GLASSES DETECTION APP: Downloaded 120,000+ times since Feb 2026 launch. Public
+      counter-surveillance tool. Source: POLITICO.
+
+      CONFLICT NEXUS: Each advocacy action, litigation filing, and regulatory investigation provides
+      renewable source material for Wired/Condé Nast coverage of Meta glasses. Wired covers these
+      developments without disclosing Advance's $5.9B Reddit stake (at Jul 31 crash price) in a
+      company whose CEO explicitly named Meta as a competitor on the Jul 30 earnings call. The
+      advocacy → coverage → more advocacy citation loop is amplified by this undisclosed financial
+      interest: Wired has incentive to amplify the narrative because it damages Meta, which benefits
+      Reddit, which benefits Advance, which owns Wired.
+    source_urls:
+      - "https://techcrunch.com/2026/03/05/meta-sued-over-ai-smartglasses-privacy-concerns-after-workers-reviewed-nudity-sex-and-other-footage/"
+      - "https://clarksonlawfirm.com/meta-ai-glasses-class-action-lawsuit-filed/"
+      - "https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927"
+      - "https://virtual.reality.news/news/awe-2026-smart-glasses-split-into-three-tiers-as-privacy-concerns-grow/"
+      - "https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5"
+
 # ===================================================================
 # INDUSTRY AI LICENSING REVENUE BENCHMARKS — Q1 2026
 # ===================================================================

@@ -114,6 +114,89 @@ Organizations appearing in BOTH the CFA (64-org) and ACLU (75-org) coalitions:
   disclosed. Google competes with Meta in smart glasses (Android XR). This is a real but
   disclosed connection — not hidden coordination.
 
+### Phase 6: Guerrilla Activism + Regulatory Expansion (Jul 2026)
+
+**Everyone Hates Elon (EHE) — Activist Amplification Chain**
+
+EHE is a UK-based class-politics activist group (Wikipedia: founded ~2025, anti-billionaire focus).
+NOT connected to Condé Nast, Advance Publications, or any media ownership chain. Previous targets
+include Elon Musk ("Swasticar" Tesla parody), Jeff Bezos (NYC subway ads), Prince Andrew.
+
+**Campaign actions (Jul 2026):**
+- Lenticular spoof ad at London bus stop near Meta UK HQ (King's Cross): Kylie Jenner Meta glasses
+  ad → skeletal "We're always watching" reveal. References *They Live* (1988).
+- Jeffrey Epstein spoof ad at Carnegie Street bus stop: "Glasses for people who don't do consent."
+- Separate poster: "The biggest advance in pervert technology since the trenchcoat."
+- Spokesperson "Jane" quoted in The Times: "These glasses will make it easy to record women and
+  children without their knowledge."
+
+**DOCUMENTED AMPLIFICATION CHAIN (chronological):**
+1. **FT's Hannah Murphy** reports "super sensing" always-on prototype (Jul 8)
+2. **EHE cites FT on Bluesky** (Jul 13, 15:57 UTC): "It's just been revealed Meta is planning to
+   make the glasses 'continuously record audio while taking photos every few seconds' without any
+   warning light. *Source: the FT*"
+3. **EHE installs guerrilla ads** in London (mid-Jul)
+4. **Hyperallergic** covers EHE campaign (~Jul 14) — art/culture outlet
+5. **PetaPixel** covers it (Jul 23) — photography outlet
+6. **Engadget** covers it (Jul 16) — mainstream tech
+7. **The Times** covers Epstein ad (Jul 26) — UK newspaper of record
+8. **Fstoppers, DesignTAXI, AfroTech** — diverse non-tech outlets
+9. **YouTube shorts** (8KUzv1arnFo) — viral video coverage
+10. **Victoria Song (The Verge)** opens "holds all the cards" article with EHE campaign imagery
+
+**CONTROL FINDING:** EHE functions as a "narrative laundry" — converting FT's technical report about
+an unreleased feature into visceral street-level imagery ("pervert technology," Epstein association)
+that is photogenic, shareable, and carries emotional weight that a technical report cannot. Each outlet
+in the cascade adds its own institutional credibility to the frame. The end result is that an activist
+group's slogans are now the opening framing device for The Verge's most authoritative wearables journalist.
+
+This is NOT evidence of conspiracy or media coordination. It IS standard memetic amplification through
+shared digital feeds (Bluesky, Techmeme, X). But it demonstrates how the wearables-negative narrative
+propagates across institutional boundaries through activist intermediaries — a mechanism distinct from
+both (a) pure journalism and (b) orchestrated PR campaigns.
+
+- Source: https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5
+- Source: https://www.engadget.com/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/
+- Source: http://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/
+- Source: https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/
+- Source: https://en.wikipedia.org/wiki/Everyone_Hates_Elon
+
+**European Regulatory Expansion (May–Jul 2026):**
+- **CNIL (France)**: Warned May 2026 that smart glasses risk normalizing surveillance described as
+  "almost invisible and omnipresent," with the potential to "profoundly transform our societies."
+  Source: POLITICO (reported week of Jul 7, 2026).
+- **Norwegian Consumer Council**: Director of digital policy Finn Lützow-Holm Myrstad: "In principle,
+  the law is clear. There's no way that people can, in a meaningful way, consent and understand what
+  they consent to if they're being filmed." Source: POLITICO.
+- **ICO (UK)**: Active investigation since Mar 2026 (Svenska Dagbladet trigger).
+- **Smart glasses detection app**: Downloaded 120,000+ times since Feb 2026 launch (POLITICO).
+- **Clarkson Law Firm EU expansion**: Actively recruiting European users and working with EU-based
+  lawyers on a parallel class action to the US filing. Source: POLITICO.
+- **Illinois BIPA exposure**: Biometric Information Privacy Act requires written consent before
+  collecting biometric data — facial recognition in public spaces difficult to square with this standard.
+  Source: Journal of High Technology Law.
+
+**Financial Context (Jul 31 update — RDDT Q2 crash):**
+Reddit stock crashed ~21% on Jul 31 (close $140.67) despite beating Q2 consensus on all metrics
+(EPS $1.25 vs $0.95 est, revenue $805M vs $731M est). Market punished US DAU decline (53.2M from 53.5M)
+and AI traffic cannibalization fears. CEO Huffman flagged "choppy search-engine traffic" and "SEO
+headwinds" from Google AI Overviews. Reuters reported Meta explicitly identified as competitor
+targeting Reddit's community model via Threads and Forum app.
+
+Advance Publications' 42.2M Reddit shares went from ~$8.07B (Jul 16) to ~$5.94B (Jul 31) — a $2.1B
+paper loss in 15 days. The 7.8M shares pledged as margin loan collateral ($145.38-$148.54 offering
+price) are now BELOW the offering floor at $140.67, creating potential margin call risk. Advance's
+financial sensitivity to narratives that benefit Reddit's competitive position (i.e., narratives that
+damage Meta) has never been more acute.
+
+For Barron's context on the AI licensing angle: Alphabet and OpenAI each pay est. $60-70M/yr to
+scrape Reddit conversations for AI training. Reddit's value as an AI training data source is
+threatened by the same AI chatbots that cite it — reducing the need for users to click through to
+Reddit itself.
+
+Source: https://www.barrons.com/articles/reddit-earnings-stock-price-7f961b9f
+Source: https://www.marketbeat.com/stocks/NYSE/RDDT/earnings/
+
 ## Conclusion
 
 The wearables privacy advocacy campaigns show a natural escalation pattern, not

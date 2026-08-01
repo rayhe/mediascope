@@ -25097,3 +25097,90 @@ Wearables narrative: expanded entity clusters for smart glasses ecosystem, added
 **Stats after:** 248 journalists, 963 career entries, 750 auto-detected migrations, 439 publications, 111 framing types, 754 patterns, 197 articles, 3099 tests/140 files. All 158 tests pass.
 
 **Commit:** f27a134 — pushed to GitHub.
+
+## 2026-07-31 23:00 PT — Type C: Ownership & Funding Deep Dive
+
+**Rotation:** C (Ownership & Funding Deep Dive)
+**Focus:** Wearables narrative litigation/advocacy pipeline, Reddit Q2 crash financial implications, EHE activist amplification chain, European regulatory expansion
+
+### Findings
+
+#### 1. Wearables Litigation & Advocacy Pipeline — New Profile Section
+
+Added comprehensive `wearables_litigation_and_advocacy_pipeline` entry (severity 4) to WIRED profile mapping the full litigation and advocacy infrastructure feeding the glasses narrative:
+
+**Litigation:**
+- Bartone v. Meta (N.D. Cal., filed Mar 4, 2026) — Clarkson Law Firm class action, false advertising
+- Clarkson now actively recruiting EU plaintiffs for parallel European action (Source: POLITICO)
+- Texas AG biometric privacy investigation
+- UK ICO investigation (active since Mar 2026)
+- Illinois BIPA exposure for facial recognition in public spaces
+
+**7 Advocacy Organizations Cited in Jul 2026 Wearables Coverage:**
+1. EFF (Thorin Klosowski quoted in Gizmodo)
+2. Norwegian Consumer Council (Finn Lützow-Holm Myrstad quoted in POLITICO)
+3. CNIL (France — May 2026 warning: "almost invisible and omnipresent" surveillance)
+4. EPIC (multi-front: FTC letter + CFA coalition + ACLU coalition)
+5. ACLU ("Eyewear, Not Spyware!" 75-org coalition)
+6. Consumer Federation of America (64-org letter)
+7. Access Now (ACLU coalition; disclosed Google.org funding — Google competes with Meta in glasses via Android XR)
+
+**KEY FINDING:** Access Now receives funding from Google.org (publicly disclosed). Google competes directly with Meta in smart glasses (Android XR). This is a real but disclosed financial connection — not hidden coordination. No equivalent Advance/Condé Nast funding link to any of the 7 advocacy organizations was identified.
+
+#### 2. EHE Activist Amplification Chain — Phase 6 Added to Advocacy Analysis
+
+Updated `wearables_advocacy_coalition_analysis_2026_jul.md` with new Phase 6 documenting the Everyone Hates Elon guerrilla campaign and its documented amplification chain:
+
+FT (Hannah Murphy, Jul 8) → EHE Bluesky post (Jul 13, explicitly cites FT) → London bus stop ads (mid-Jul) → Hyperallergic (~Jul 14) → PetaPixel (Jul 23) → Engadget → The Times (Jul 26) → Victoria Song (The Verge, opens "holds all the cards" article with EHE imagery)
+
+**CONTROL FINDING:** EHE is NOT connected to Condé Nast/Advance/any media ownership chain (UK-based, anti-billionaire focus, previous targets: Musk, Bezos, Prince Andrew). Functions as "narrative laundry" — converting FT's technical report about unreleased super-sensing feature into visceral street-level imagery ("pervert technology," Epstein association) that is photogenic, shareable, and carries emotional weight technical reporting cannot. Standard memetic amplification through social feeds, not orchestrated coordination.
+
+#### 3. Reddit Q2 Earnings Crash — Financial Context for Advocacy Analysis
+
+Added financial context to the advocacy analysis documenting the Advance conflict intensification:
+- RDDT crashed ~21% on Jul 31 ($178.04 → $140.67) despite massive Q2 beat (EPS $1.25 vs $0.95, rev $805M vs $731M)
+- Market punished US DAU decline (53.5M → 53.2M) and AI traffic cannibalization fears
+- Advance's 42.2M shares: ~$8.07B (Jul 16) → ~$5.94B (Jul 31) — $2.1B paper loss in 15 days
+- 7.8M pledged shares NOW BELOW $145.38 offering floor at $140.67 — potential margin call risk
+- Barron's: Alphabet + OpenAI each pay ~$60-70M/yr to scrape Reddit for AI training
+- CEO Huffman flagged "choppy search-engine traffic" from Google AI Overviews
+- Reuters: Meta explicitly identified as competitor targeting Reddit via Threads/Forum
+- Advance's financial sensitivity to narratives that damage Meta has never been more acute
+
+#### 4. Privacy Advocacy Entity Cluster Expansion
+
+Updated Entity Reference `Privacy Advocacy` cluster (#84) from 16 to 24 patterns, adding:
+EPIC, ACLU, Consumer Federation of America, CFA, Norwegian Consumer Council, CNIL, Clarkson Law Firm, Everyone Hates Elon, EHE
+
+#### 5. European Regulatory Expansion Documented
+
+Added to Phase 6 of advocacy analysis:
+- CNIL (France) May 2026 warning re: surveillance normalization
+- Norwegian Consumer Council structural consent critique
+- Smart glasses detection app: 120,000+ downloads since Feb 2026
+- Clarkson Law EU expansion actively in progress
+
+### Verification
+- `count_stats.py --check`: ✅ README stats current (249 journalists, 751 migrations, 3099 tests/140 files)
+- `test_structural_consistency.py`: 137 passed
+- `test_accuracy_guide.py`: 13 passed
+- `test_careers.py`: 8 passed
+- Total verified: 158 tests, 0 failures
+
+### Source URLs
+- Gizmodo (EFF): https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927
+- The Times (EHE): https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5
+- Engadget (EHE): https://www.engadget.com/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/
+- Hyperallergic (EHE): http://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/
+- PetaPixel (EHE): https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/
+- Wikipedia (EHE): https://en.wikipedia.org/wiki/Everyone_Hates_Elon
+- TechCrunch (Clarkson): https://techcrunch.com/2026/03/05/meta-sued-over-ai-smartglasses-privacy-concerns-after-workers-reviewed-nudity-sex-and-other-footage/
+- Clarkson Law: https://clarksonlawfirm.com/meta-ai-glasses-class-action-lawsuit-filed/
+- AWE 2026 (POLITICO/CNIL/Norwegian CC): https://virtual.reality.news/news/awe-2026-smart-glasses-split-into-three-tiers-as-privacy-concerns-grow/
+- Barron's (RDDT): https://www.barrons.com/articles/reddit-earnings-stock-price-7f961b9f
+- MarketBeat (RDDT Q2): https://www.marketbeat.com/stocks/NYSE/RDDT/earnings/
+- Reddit proxy/Advance: https://www.stocktitan.net/sec-filings/RDDT/def-14a-reddit-inc-definitive-proxy-statement-95d70b92f5ff.html
+- The Wrap (WBD sale): https://www.thewrap.com/warner-bros-discovery-stock-sale-newhouse-family/
+- Editor & Publisher (WBD): https://www.editorandpublisher.com/stories/cond-nast-owners-to-sell-11-billion-in-warner-bros-discovery-stock,256554
+
+**Commit:** Pending — will push after log entry.

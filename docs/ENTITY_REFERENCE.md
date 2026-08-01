@@ -181,7 +181,7 @@ Cloud providers, AI startups, and infrastructure companies.
 | 59 | **Surveillance/Biometrics** | 8 | auto | Rank One Computing, Clearview AI, NEC, Cognitec, Idemia | |
 | 60 | **Data/Intelligence Industry** | 12 | auto | ShadowDragon, Babel Street, LexisNexis, Voyager Labs, Dataminr, Cellebrite, NSO Group, Pegasus | |
 | 61 | **Cybersecurity/Research** | 11 | auto | Brian Krebs, Troy Hunt, Bruce Schneier, Mudge, METR, CISA, NIST | |
-| 84 | **Privacy Advocacy** | 16 | auto | Foxglove, Privacy International, EFF, Access Now, Big Brother Watch, noyb, CAIDP | Jul 2026: The Tab Muse Image analysis |
+| 84 | **Privacy Advocacy** | 24 | auto | Foxglove, Privacy International, EFF, Access Now, Big Brother Watch, noyb, CAIDP, EPIC, ACLU, Consumer Federation of America, CFA, Norwegian Consumer Council, CNIL, Clarkson Law Firm, Everyone Hates Elon, EHE | Jul 2026: The Tab Muse Image analysis. Jul 31: Expanded with wearables advocacy orgs (EPIC, ACLU, CFA, Norwegian Consumer Council, CNIL, Clarkson Law, EHE activist group). |
 
 ---
 
