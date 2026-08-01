@@ -39,8 +39,25 @@ infrastructure behind it.
   violence survivor orgs, worker rights advocates, LGBTQ+ communities, immigrant
   rights groups
 - **Public action element**: ACLU website action tool for public to send messages to Meta
-- **Key quote**: "Your glasses should not know my name" (Cody Venzke, ACLU)
+  (aclu.org/eyewear-not-spywear)
+- **Key personnel**:
+  - **Kade Crockford** — Director, Technology & Justice Programs, ACLU of Massachusetts.
+    Primary spokesperson: "Stalkers and scammers would have a field day with this technology.
+    Federal agents could use it to harass and intimidate their critics."
+  - **Cody Venzke** — Senior Staff Attorney, ACLU. Coined the campaign's signature phrase:
+    "Your glasses should not know my name."
+  - **Daniel Schwarz** — Senior Privacy & Technology Strategist, NYCLU. Addressed the scale
+    issue: "Equipping these glasses with facial recognition trained on billions of
+    unsuspecting social media users is not just unconscionable but highly dangerous."
+- **Key framing**: Coalition argued dangers "cannot be resolved through product design
+  changes, opt-out mechanisms, or incremental safeguards" — bystanders cannot consent
+  to being scanned. Also cited leaked internal Meta memo about launching during "dynamic
+  political environment" while critics were distracted, calling it "frankly shameful."
+- **Congressional parallel action**: Senators Edward Markey, Ron Wyden, and Jeff Merkley
+  separately pressed Meta for transparency, warning eyewear risks normalizing mass
+  surveillance.
 - **Source URL**: https://epic.org/epic-joins-aclus-eyewear-not-spyware-campaign-to-fight-metas-surveillance-glasses/
+- **Source URL**: https://www.aclu.org/press-releases/aclu-and-75-organizations-sound-alarm-on-metas-plans-to-add-facial-recognition-technology-to-ray-ban-and-oakley-eyeglasses
 
 ### Phase 4: Legal & Regulatory (Mar–Jul 2026)
 - **Mar 4, 2026**: Bartone et al. v. Meta Platforms, Inc. (N.D. Cal.) — class action
@@ -52,12 +69,38 @@ infrastructure behind it.
 - **Swedish investigation** (Svenska Dagbladet + Göteborgs-Posten): Revealed Sama
   (Kenya-based contractor) workers reviewing intimate footage from glasses
 
-### Phase 5: WIRED NameTag Code Discovery (Jun 2026)
-- **WIRED investigation** (Dell Cameron + Dhruv Mehrotra): Found facial recognition
-  pipeline code already deployed to millions of phones via Meta AI companion app.
-  Three AI models identified: face detection, face cropping, biometric conversion.
-- This finding provides TECHNICAL EVIDENCE supporting the advocacy campaigns' warnings
-- **Source URL**: https://www.techtimes.com/articles/317870/20260605/meta-smart-glasses-facial-recognition-code-already-millions-phones-wired-finds.htm
+### Phase 5: WIRED NameTag Code Discovery → EFF Verification → Meta Code Removal (Jun 4–8, 2026)
+- **Jun 4, 2026**: WIRED investigation (Dell Cameron + Dhruv Mehrotra) reveals dormant
+  facial recognition code ("NameTag") already deployed to millions of phones via Meta AI
+  companion app. Three AI models identified: face detection, face repositioning/cropping,
+  biometric signature conversion. Code stored recognized face "faceprints" on-device and
+  triggered "Person recognized" alerts. Unrecognized faces were cropped, indexed, and saved
+  to a folder marked "pending." WIRED requested and received independent code review from
+  **Cooper Quintin** (EFF Threat Lab, senior public interest technologist), who confirmed
+  the system was "nearly ready to go."
+- **Jun 5, 2026**: EFF's Threat Lab independently verified WIRED's findings through static
+  analysis. Same day, Meta released app update that silently removed all NameTag-related
+  code: face recognition models, "Person recognized" alert triggers, and biometric
+  databases. Less than 48 hours from publication to code removal.
+- **Jun 8, 2026**: EFF published "VICTORY" post claiming credit for the removal, noting:
+  "Just as quietly as Meta embedded this code, the app's June 5th app update appears to
+  have quietly removed all those features." EFF warned that "quiet deletion of code does
+  not equal a permanent change of heart" and noted Meta refused to answer whether NameTag
+  would return or what happened to any data collected during internal testing.
+- **NameTag → "Connections" renaming**: INCYBER NEWS (Jun 8) reported the feature was
+  "initially called 'NameTag' and later renamed 'Connections'" — indicating the project
+  was mature enough to undergo an internal rebranding before discovery.
+- **CONFLICT SIGNIFICANCE**: WIRED (Condé Nast → Advance Publications) broke the story
+  that led directly to advocacy pressure (EFF verification → public outcry) that forced
+  Meta to remove the facial recognition code within 48 hours. This is the most direct
+  example of WIRED's editorial coverage producing a material competitive outcome against
+  Meta — and WIRED never disclosed Advance's ~$5.9B Reddit stake in a company whose CEO
+  identifies Meta as a direct competitor.
+- Source: https://www.techtimes.com/articles/317870/20260605/meta-smart-glasses-facial-recognition-code-already-millions-phones-wired-finds.htm
+- Source: http://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
+- Source: https://www.engadget.com/2190115/meta-quietly-removes-face-recognition-code-from-its-smart-glasses-app/
+- Source: https://petapixel.com/2026/06/09/meta-removes-facial-recognition-code-from-ray-ban-smart-glasses-app/
+- Source: https://incyber.org/en/article/meta-removes-facial-recognition-features-from-its-smart-glasses/
 
 ## Organization Overlap Analysis
 
@@ -121,6 +164,21 @@ Organizations appearing in BOTH the CFA (64-org) and ACLU (75-org) coalitions:
 EHE is a UK-based class-politics activist group (Wikipedia: founded ~2025, anti-billionaire focus).
 NOT connected to Condé Nast, Advance Publications, or any media ownership chain. Previous targets
 include Elon Musk ("Swasticar" Tesla parody), Jeff Bezos (NYC subway ads), Prince Andrew.
+
+**EHE Organization & Funding Structure (verified from Wikipedia, GoFundMe, New Yorker):**
+- Formed early 2025 as a "ranty group chat" among friends (New Yorker, Anna Russell interview)
+- Core team: "just a handful of people" — GoFundMe budget allocates to core team of 3
+- Members anonymous. Spokesperson goes by "Jane" (The Times)
+- **Funding**: Crowdfunded via GoFundMe "Everyone Hates Elon campaign actions" campaign
+  - Target: £50,000
+  - Allocation: 63% core team salaries, 32% production (posters, ads, video), 5% admin
+  - NYC campaign (~1,000 donors, ~£10 average = £14,000, FashionUnited)
+  - Windsor Castle banner: £32,000+ in crowdfunded donations (The Guardian)
+- Collaborated with Greenpeace for Bezos wedding Venice protest (Jun 2025)
+- **NO institutional backing, NO media chain affiliation, NO Meta competitor funding**
+- Source: https://en.wikipedia.org/wiki/Everyone_Hates_Elon
+- Source: https://www.gofundme.com/f/people-vs-elon-campaign
+- Source: https://www.the-londoner.co.uk/whos-behind-the-anti-musk-tube-ads/
 
 **Campaign actions (Jul 2026):**
 - Lenticular spoof ad at London bus stop near Meta UK HQ (King's Cross): Kylie Jenner Meta glasses

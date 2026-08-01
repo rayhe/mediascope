@@ -300,6 +300,15 @@ advance_investments:
       Advance kept ALL its Class B shares. Advance's Class B ownership rose from 76.5% to 83.5%
       without buying a single additional share. This automatic concentration effect means the more
       Reddit insiders sell, the tighter Advance's voting control becomes.
+      2026 PROXY CONFIRMATION (StockTitan, DEF 14A): Advance beneficially owns more than 5% of
+      outstanding capital stock. Governance agreement rights continue until Advance falls below
+      5% of aggregate outstanding shares OR below 50% of its IPO-date share count AND Class B
+      represents less than 7.5% of total. Currently far above all thresholds. Steven Newhouse
+      remains Advance Designee on the board (since March 2024, previously observer 2011-2024).
+      Reddit institutional ownership: 62.27%, insider ownership: 1.48%, retail: 36.26% (WallStreetZen,
+      Jul 31). Top institutional holders: BlackRock 3.98%, Baillie Gifford 3.80%, Vanguard 3.50%.
+      Source: https://www.stocktitan.net/sec-filings/RDDT/def-14a-reddit-inc-definitive-proxy-statement-95d70b92f5ff.html
+      Source: https://www.wallstreetzen.com/stocks/us/nyse/rddt/ownership
       Total outstanding shares as of March 31, 2026: 141,867,916 Class A + 50,543,398 Class B
       = 192,411,314. Combined with Huffman's irrevocable voting proxy over Advance shares and
       Tencent's declining Class B stake, Huffman's proxy-consolidated voting block is ~70%+ —
@@ -392,6 +401,22 @@ advance_investments:
       Reddit beat consensus ALL 4 trailing quarters by significant margins.
       MARGIN LOAN BUFFER: The 7.8M shares pledged as collateral (at $145-148 offering)
       are now worth ~$1.52B at $195.09 — 31-34% above offering price, comfortable cushion.
+      ADVANCE DERIVATIVES STRUCTURE (Bloomberg, Jun 2025): Advance Magazine Publishers Inc.
+      offered 7.8M Reddit shares at $145.38-$148.54 (~$1.2B) to establish a credit facility.
+      Critically, Advance SIMULTANEOUSLY purchased derivatives on those shares, which allow
+      it to maintain its economic ownership stake while monetizing the position. This means
+      Advance raised ~$1.2B in cash WITHOUT reducing its voting power or economic exposure
+      to Reddit — the derivatives reconstitute the full upside/downside after the share sale.
+      This is a Variable Prepaid Forward (VPF) or collar structure: Advance sells shares to
+      create the credit facility but buys call options or enters a prepaid forward to get them
+      back (or their equivalent value). Net effect: CASH + VOTING POWER + ECONOMIC EXPOSURE
+      all preserved. The third generation (Steven O. Newhouse et al.) is demonstrating more
+      sophisticated financial engineering than their predecessors — monetizing the Reddit
+      windfall while losing nothing in governance. This was executed 17 days after Donald
+      Newhouse's death (May 26, 2026), suggesting accelerated financial activity under
+      full third-generation control.
+      Source: https://www.nasdaq.com/articles/advance-offering-78m-reddit-shares-14538-14854-bloomberg-says
+      Source: http://news.bloomberglaw.com/mergers-and-acquisitions/advance-magazine-said-to-seek-1-2-billion-in-reddit-share-sale
       INSIDER SELLING (last 90 days, MarketBeat Jul 7): Reddit insiders sold $36.9M total.
       CEO Steve Huffman sold 18,000 shares at $178.26 ($3.2M, Jun 15, 10b5-1 plan, -4.59%).
       COO Jennifer Wong sold 39,166 shares at $176.94 ($6.9M, Jun 16, 10b5-1 plan, -3.59%).
@@ -2134,6 +2159,10 @@ litigation_connections:
         Google, OpenAI — litigation-funded generalist, not anti-Meta specialist.
       - EUROPEAN EXPANSION (Jul 2026): Clarkson Law Firm actively recruiting European users and
         working with EU-based lawyers on parallel class action. Source: POLITICO (week of Jul 7).
+      - NAMETAG → CONNECTIONS RENAME: INCYBER NEWS (Jun 8) revealed the feature was "initially
+        called 'NameTag' and later renamed 'Connections'" — indicating the project was mature
+        enough to undergo internal rebranding before WIRED's discovery, contradicting Meta
+        executives' characterization of it as "experimental research."
       - Texas AG biometric privacy investigation: Opened under state biometric privacy statutes.
       - Illinois BIPA exposure: Facial recognition in public spaces difficult to square with
         Biometric Information Privacy Act written consent requirements. Source: Journal of High

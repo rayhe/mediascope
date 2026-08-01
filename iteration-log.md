@@ -25184,3 +25184,76 @@ Added to Phase 6 of advocacy analysis:
 - Editor & Publisher (WBD): https://www.editorandpublisher.com/stories/cond-nast-owners-to-sell-11-billion-in-warner-bros-discovery-stock,256554
 
 **Commit:** Pending — will push after log entry.
+
+---
+
+## 2026-08-01 00:00 PT — Type C: Ownership & Funding Deep Dive
+
+**Focus:** Coalition funding verification, WIRED→EFF→Meta code removal pipeline, Advance derivatives structure, EHE organizational funding, NameTag→Connections renaming intelligence.
+
+### What Was Investigated
+
+1. **ACLU "Eyewear, Not Spyware!" Coalition (75+ orgs, Apr 13, 2026):**
+   - Mapped key personnel: Kade Crockford (ACLU-MA Director, Tech & Justice), Cody Venzke (ACLU Senior Staff Attorney, coined "Your glasses should not know my name"), Daniel Schwarz (NYCLU Senior Privacy & Technology Strategist)
+   - Coalition argued dangers "cannot be resolved through product design changes, opt-out mechanisms, or incremental safeguards"
+   - Congressional parallel: Senators Markey, Wyden, Merkley pressed Meta
+   - EPIC filed separate FTC petition same day as NYT NameTag leak (Feb 13)
+
+2. **WIRED→EFF→Meta NameTag Code Removal Pipeline (Jun 4-8, 2026):**
+   - Jun 4: WIRED (Cameron + Mehrotra) discovered dormant NameTag facial recognition code in Meta AI app
+   - Cooper Quintin (EFF Threat Lab) independently verified code was "nearly ready to go"
+   - Jun 5: Meta silently removed all NameTag code in app update — less than 48 hours from publication
+   - Jun 8: EFF published "VICTORY" post; warned "quiet deletion ≠ permanent change of heart"
+   - INCYBER NEWS revealed feature was renamed from "NameTag" to "Connections" internally — indicating mature project, not "experimental research"
+   - **CONFLICT SIGNIFICANCE**: This is the most direct example of WIRED's coverage producing a material competitive outcome against Meta. WIRED never disclosed Advance's ~$5.9B Reddit stake.
+
+3. **Everyone Hates Elon (EHE) — Funding Structure Verified:**
+   - Crowdfunded via GoFundMe: £50K target
+   - Core team of 3 people; anonymous members; "ranty group chat among friends" (New Yorker)
+   - Budget: 63% core team, 32% production, 5% admin
+   - NYC campaign: ~1,000 donors at ~£10 average
+   - Windsor Castle banner: £32K+ crowdfunded (The Guardian)
+   - Collaborated with Greenpeace (Bezos wedding Venice protest)
+   - **CONCLUSION: NO institutional backing, NO media chain affiliation, NO Meta competitor funding**
+
+4. **Clarkson Law Firm — Bartone v. Meta (N.D. Cal., 3:26-cv-01897):**
+   - Filed Mar 4, 2026; contingency-fee model; public interest focus
+   - Previously sued Apple, Google, OpenAI — litigation generalist, not anti-Meta specialist
+   - Based on Svenska Dagbladet/GP investigation of Kenya contractors
+   - UK ICO also investigating on same trigger
+   - **NO evidence of third-party litigation funding connecting to Advance/Condé Nast**
+
+5. **Advance Derivatives Structure (Bloomberg, Jun 2025):**
+   - Advance sold 7.8M Reddit shares at $145.38-$148.54 (~$1.2B)
+   - SIMULTANEOUSLY purchased derivatives to maintain economic ownership + voting power
+   - Variable Prepaid Forward (VPF) / collar structure: cash + voting power + economic exposure all preserved
+   - Executed 17 days after Donald Newhouse's death (May 26, 2026) — accelerated financial engineering under third-generation control
+   - At Jul 31 crash price ($140.67), pledged shares now BELOW offering price floor — potential margin call exposure
+
+### Files Modified
+- `examples/sample_output/wearables_advocacy_coalition_analysis_2026_jul.md` — Expanded Phase 5 (WIRED→EFF→Meta removal chain with Cooper Quintin verification, 48-hour timeline, EFF "VICTORY" post, NameTag→Connections rename). Expanded EHE funding structure with GoFundMe/Wikipedia/New Yorker details. Expanded ACLU Phase 3 with key personnel (Crockford, Venzke, Schwarz) and congressional action.
+- `profiles/wired.yaml` — Added Advance derivatives play (VPF/collar structure preserving voting power while monetizing ~$1.2B). Added NameTag→Connections rename intel. Added 2026 proxy confirmation (StockTitan DEF 14A: Advance >5% beneficial ownership, governance agreement active, institutional ownership breakdown). Added Reddit ownership sources.
+
+### Control Conclusion
+**No evidence of coordinated funding or institutional connections between the press coverage pile-on and Advance/Condé Nast financial interests.** The advocacy ecosystem is genuine:
+- ACLU coalition: 75+ organizations with independent mandates and decades of anti-surveillance work
+- EHE: Crowdfunded by ~1,000 small donors, no institutional backing
+- Clarkson: Contingency-fee generalist, no third-party litigation funding found
+- BBC's Kali Hays: Independently reached similar conclusions (no Condé Nast connection)
+
+**However**, structural conflicts remain acute: Advance's ~$5.9B Reddit stake (now under margin pressure at $140.67), Condé Nast's conspicuous absence from Meta's AI licensing deals (unlike OpenAI, Amazon, Apple, Microsoft partnerships), and WIRED's direct editorial impact (NameTag code removal within 48 hours of publication) create an undisclosed incentive alignment that amplifies the advocacy→coverage→advocacy loop even without coordination.
+
+### Sources
+- ACLU press release: https://www.aclu.org/press-releases/aclu-and-75-organizations-sound-alarm-on-metas-plans-to-add-facial-recognition-technology-to-ray-ban-and-oakley-eyeglasses
+- NYCLU: https://www.nyclu.org/press-releases/nyclu-joins-75-organizations-urging-meta-abandon-plans-facial-recognition-smart-glasses
+- EPIC: https://epic.org/epic-joins-aclus-eyewear-not-spyware-campaign-to-fight-metas-surveillance-glasses/
+- EFF Victory: http://www.eff.org/deeplinks/2026/06/victory-meta-strips-facial-recognition-code-smart-glasses-app-after-public-outcry
+- INCYBER NameTag rename: https://incyber.org/en/article/meta-removes-facial-recognition-features-from-its-smart-glasses/
+- Advance derivatives: https://www.nasdaq.com/articles/advance-offering-78m-reddit-shares-14538-14854-bloomberg-says
+- Reddit proxy DEF 14A: https://www.stocktitan.net/sec-filings/RDDT/def-14a-reddit-inc-definitive-proxy-statement-95d70b92f5ff.html
+- EHE Wikipedia: https://en.wikipedia.org/wiki/Everyone_Hates_Elon
+- EHE GoFundMe: https://www.gofundme.com/f/people-vs-elon-campaign
+
+**Tests:** 158 passed, 0 failed.
+
+**Commit:** Pending.
