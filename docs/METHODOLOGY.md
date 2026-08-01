@@ -1438,7 +1438,7 @@ This section documents the corpus as a quantitative research resource: its compo
 
 ### 17.2 Publication Distribution
 
-The corpus spans **48 distinct publications** across 5 editorial modes:
+The corpus spans **49 distinct publications** across 5 editorial modes:
 
 #### Tracked Publications (5 publications, 58 articles)
 
