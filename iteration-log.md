@@ -1,4 +1,23 @@
 # MediaScope Iteration Log
+## 2026-08-01 01:00 PT — Type A: Article Deep Dive — CNN Wearables Category Condemnation
+
+**Rotation:** A (Article Deep Dive)
+**Focus:** CNN "AI devices that see, listen and record" (Jul 26, 2026) by Catherine Thorbecke — narrative escalation from product-specific to category-wide privacy criticism
+
+**Key finding:** First major outlet to group Meta glasses, Amazon Bee Pioneer, and Plaud Notepin S into a single privacy-negative wearable category frame. Signals a narrative phase shift from "Meta glasses are problematic" to "ALL recording wearables are problematic." Uses first-person experiential authority (author wore all three devices personally) to convert social discomfort into editorial evidence.
+
+**What was improved:**
+- New entity cluster #94: Recording Wearable Devices (8 aliases, custom regex)
+- 2 new journalist profiles: Catherine Thorbecke (Bloomberg → ABC News → CNN), Karissa Bell (Mashable → Engadget)
+- 2 candidate framing patterns: Experiential Authority, Dystopian Scenario Construction
+- Full annotated analysis in `examples/sample_output/cnn_ai_devices_see_listen_record_2026_07_26_analysis.md`
+- Fixed YAML career entry format (start/end vs years) for both new journalists
+- Updated all doc counts: 251 journalists, 198 articles, 94 clusters, 906 aliases, 754 auto-detected migrations, 967 career-entry migrations
+
+**Stats delta:** +2 journalists, +1 annotated article, +1 entity cluster, +8 aliases, +3 auto-detected migrations, +3 career-entry migrations
+**Tests:** 158 passed (test_structural_consistency + test_accuracy_guide + test_careers)
+**Commit:** `000e6c7` — pushed to GitHub
+
 ## 2026-07-31 22:00 PT — Type B: Journalist/Publication Research — EHE Amplification Chain & Kali Hays
 
 **Rotation:** B (Journalist/Publication Research)
@@ -25257,3 +25276,78 @@ Added to Phase 6 of advocacy analysis:
 **Tests:** 158 passed, 0 failed.
 
 **Commit:** Pending.
+
+## 2026-08-01 02:00 PT — Type C: Ownership & Funding Deep Dive — Advocacy Organization Funding Cross-Conflict Resolution
+
+**Rotation:** C (Ownership & Funding Deep Dive)
+**Focus:** Resolving previously flagged "key unknowns" — whether advocacy organizations targeting Meta glasses receive funding from Meta's wearables competitors (Google/Android XR, Apple)
+
+### Key Findings
+
+#### 1. CDT (Center for Democracy & Technology) — CROSS-FUNDED BY META, GOOGLE, AND APPLE
+
+**THE MOST STRUCTURALLY INTERESTING FINDING.**
+
+CDT signed the CFA coalition letter (64 orgs) targeting Meta's glasses. CDT's funding model (per Wikipedia, citing CDT's own disclosures):
+- One-third from foundations (MacArthur Foundation primary)
+- One-third from industry: **Amazon, Meta Platforms, Microsoft, TikTok, and Apple**
+- Remainder from Tech Prom annual fundraiser, Cypress awards, other sources
+
+CDT's 2020 Tech Prom platinum sponsors: **Amazon, Apple, Facebook [Meta], Google, Intel, Mayer Brown, and Microsoft** (CDT 2020 Annual Report).
+
+CDT also partnered with **Google and Apple** directly on Bluetooth tracker detection (joint specification May 2023, IETF standards process with CDT and NNEDV). Source: CDT 2023 Annual Report.
+
+**Conflict geometry:**
+- CDT receives funding FROM Meta → signs advocacy letter targeting Meta's glasses
+- CDT receives funding FROM Google → Google competes with Meta via Android XR
+- Cross-funding is EVIDENCE OF INDEPENDENCE, not manipulation. A puppet doesn't also take money from the target.
+
+#### 2. EFF — NO BIG TECH FOUNDATION FUNDING (VERIFIED)
+
+Publicly listed foundation supporters (eff.org/pages/thank-you-public-foundations):
+Filecoin Foundation, Ford Foundation, Kaphan Foundation, Alfred P. Sloan Foundation, Craig Newmark Philanthropies, Someland Foundation.
+
+**No Google, Apple, Meta, Microsoft, or Amazon** in foundation supporter list. EFF's revenue (~$13M/yr) comes primarily from 32,000+ individual donors. Cooper Quintin's independent verification of WIRED's NameTag code occurred without financial connection to Meta's competitors.
+
+#### 3. EPIC — FOUNDATION-FUNDED, NO BIG TECH (VERIFIED)
+
+Primary funding from foundations. Ford Foundation is key funder (Inside Philanthropy, Feb 2026). Apple is adjacent via Spyware Accountability Initiative (Dignity & Justice Fund, $12M+ grants, targets government spyware not corporate wearables). No Google, Meta, or Amazon funding identified.
+
+#### 4. Access Now — GOOGLE.ORG FUNDED (PREVIOUSLY NOTED, CONFIRMED)
+
+Google.org funding is publicly disclosed on their financials page. Swedish SIDA and Dutch MFA fund the grants program. Real but disclosed connection. Not hidden coordination.
+
+#### 5. Reddit Insider Activity — Post-Crash Status
+
+Most recent Form 4: July 17, 2026 (Huffman via 10b5-1 plan). No Advance Magazine Publishers Form 4 or 13D/A filings found post-Jul 31 crash. Huffman's 10b5-1 plan termination: August 31, 2026. RDDT closed at $140.67 (Jul 31), below $145.38 offering floor.
+
+Insider selling in July: Huffman sold ~8,071 shares at $190-$206 (Jul 15). Wong sold ~34,967 shares at $190-$207 (Jul 15). All via 10b5-1 plans — routine, pre-scheduled.
+
+### Assessment
+
+**The funding coordination hypothesis is NOT supported.** The CDT case is the strongest evidence AGAINST the theory: CDT takes money from both the target (Meta) and its competitor (Google), then acts against the target's product anyway. This is the pattern of genuine organizational independence, not puppet activism.
+
+**What remains:** The structural conflict (Advance's undisclosed ~$5.94B Reddit stake, Condé Nast's absence from Meta AI licensing deals, WIRED's direct editorial impact on Meta product decisions) amplifies the advocacy→coverage→advocacy loop even without coordination. The mechanism is structural incentive alignment, not orchestrated funding pipelines.
+
+### Files Modified
+- `examples/sample_output/wearables_advocacy_coalition_analysis_2026_jul.md` — Replaced "Key unknown for future investigation" section with "Resolved: Advocacy Organization Funding Cross-Conflict Map" (6-org funding table, CDT cross-funding analysis, aggregate assessment). Updated conclusion with funding investigation results.
+- `profiles/wired.yaml` — Added CDT (#8) to ADVOCACY ORGANIZATIONS list with cross-funding data. Added "ADVOCACY FUNDING ASSESSMENT" summary paragraph.
+
+### Verification
+- `count_stats.py --check`: ✅ README stats current (251 journalists, 198 articles, 94 clusters, 3099 tests)
+- `test_structural_consistency.py`: 137 passed
+- `test_accuracy_guide.py`: 13 passed
+- `test_careers.py`: 8 passed
+- Total verified: 158 tests, 0 failures
+
+### Source URLs
+- CDT Wikipedia (funding): https://en.wikipedia.org/wiki/Center_for_Democracy_and_Technology
+- CDT 2020 Annual Report: https://cdt.org/2020-annual-report/
+- CDT 2023 Annual Report: https://cdt.org/2023-annual-report/
+- EFF Foundation Supporters: https://www.eff.org/pages/thank-you-public-foundations
+- Inside Philanthropy (EPIC/Ford): https://www.insidephilanthropy.com/home/five-funders-supporting-privacy-in-the-digital-age
+- Access Now Financials: https://www.accessnow.org/financials/
+- RDDT Insider Sales: https://www.insidermonkey.com/insider-trading/company/reddit+inc/1713445/sales/
+- RDDT SEC Filings: https://www.marketbeat.com/stocks/NYSE/RDDT/sec-filings/
+
+**Commit:** Pending — will push after log entry.
