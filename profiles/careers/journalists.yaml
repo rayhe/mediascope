@@ -17646,3 +17646,57 @@ journalists:
     Publications connection.'
   source_urls:
   - https://www.digitaltrends.com/wearables/a-new-iphone-app-can-sniff-out-meta-smart-glasses-lurking-nearby/
+
+- beats:
+  - tech_business
+  - smartglasses
+  - wearables
+  - tech_culture
+  career:
+  - beat: tech, digital culture, science fiction
+    end: 2019-06
+    notes: 'WSJ technology columnist. "Keywords" weekly tech column. Covered consumer
+      tech, Silicon Valley culture, connected home, AI implications for daily life.
+      Long-running column gave him significant agenda-setting power in how mainstream
+      business readers understood tech trends. WSJ during this period owned by News
+      Corp (Rupert Murdoch family). Known for accessible, opinionated tech analysis
+      aimed at general business audience.'
+    publication: wall-street-journal
+    role: technology_columnist
+    source_url: https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
+    start: '2014'
+  - beat: tech business, wearables, AI, consumer tech
+    notes: 'Continues as WSJ technology columnist. Current column covers smartglasses
+      market dynamics, AI hardware, and tech industry strategy. Jul 2026 piece
+      "Smartglasses Are Inevitable. But What — or Who — Are They For?" is notable
+      for balanced-to-positive framing: acknowledges privacy concerns but frames
+      smartglasses as "technological inevitability" and "new consumer-tech arms race."
+      Quotes multiple industry executives (Qualcomm Ziad Asghar, Meta CTO Bosworth,
+      Google Juston Payne, Snap CEO Spiegel) without adversarial framing. Does NOT
+      cite privacy advocacy groups or civil liberties organizations. Compares to Steve
+      Jobs design philosophy rather than surveillance rhetoric. This is a significant
+      contrast to WIRED/Gizmodo coverage: same topic, same timeframe, fundamentally
+      different framing. WSJ coverage treats smartglasses as business/product story;
+      WIRED treats it as privacy/surveillance story. CONTROL NOTE: WSJ (News Corp)
+      has NO Condé Nast / Advance Publications connection.'
+    publication: wall-street-journal
+    role: technology_columnist
+    source_url: https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
+    start: 2019-06
+  multi_publication: false
+  name: Christopher Mims
+  notes: 'WSJ technology columnist, author of "Arriving Today: From Factory to Front
+    Door — Why Everything Has Changed About How and What We Buy" (2021, Harper
+    Business). One of the most widely-read tech columnists at a mainstream business
+    publication. KEY for MediaScope WEARABLES NARRATIVE: Mims represents the business
+    press framing of smartglasses — treats it as a product/market story rather than a
+    privacy/surveillance story. His Jul 2026 coverage uses competitive market framing
+    (Meta vs Google vs Samsung vs Snap vs Apple) rather than privacy-violation framing.
+    This is important as a CONTROL for the coordination hypothesis: if WIRED/Verge/
+    Gizmodo frame smartglasses as privacy crisis while WSJ/Bloomberg/FT frame it as
+    market opportunity, the divergence maps onto publication type (consumer tech press
+    vs business press) rather than coordinated direction. Email:
+    christopher.mims@wsj.com. MIGRATION: Long-tenured WSJ columnist — no known Condé
+    Nast history.'
+  source_urls:
+  - https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8

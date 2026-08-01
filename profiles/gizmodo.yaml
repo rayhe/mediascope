@@ -1,0 +1,119 @@
+# Gizmodo Publication Profile
+# Ownership: Keleops AG (Switzerland) — acquired June 2024
+# Previous: G/O Media (Great Hill Partners PE) → Univision ($135M, 2016) → Gawker Media (Nick Denton)
+# Revenue model: Affiliate commerce (product reviews), display advertising, lead generation
+
+publication: gizmodo
+display_name: Gizmodo
+url: https://gizmodo.com
+type: consumer_tech_news
+
+ownership_chain:
+  current:
+    owner: Keleops AG
+    parent: null  # independent
+    hq: Zug, Switzerland
+    ceo: Jean-Guillaume Kleis
+    founded: 2014 (as performance marketing firm, pivoted to media)
+    acquired_gizmodo: 2024-06-04
+    portfolio:
+      - gizmodo  # tech news (US, acquired Jun 2024)
+      - kotaku  # gaming (US, acquired Jul 2025)
+      - 01net  # French tech (legacy brand)
+      - presse-citron  # French tech
+      - journal-du-geek  # French tech
+      - iphon-fr  # French Apple/tech
+    monthly_uniques: 40M+ (across all properties)
+    business_model: "lead-generation-based business model for tech industry partners" + affiliate revenue from product reviews
+    source_urls:
+      - https://www.adweek.com/media/gizmodo-acquired-keleops-go-media/
+      - https://www.citybiz.co/article/714135/keleops-acquires-kotaku-from-g-o-media/
+  previous:
+    - owner: G/O Media (Great Hill Partners)
+      period: 2019-2024
+      notes: "PE-owned. Gradually sold off all properties. G/O Media wound down operations after selling Kotaku (last before The Root)."
+    - owner: Univision Communications
+      period: 2016-2019
+      acquisition_price: "$135M (Gawker Media bundle)"
+      notes: "Acquired as part of Gawker Media bankruptcy sale after Hulk Hogan/Peter Thiel lawsuit"
+    - owner: Gawker Media (Nick Denton)
+      period: 2002-2016
+      notes: "Original founding. Part of the Gawker blog network. Filed bankruptcy 2016."
+
+# IMPORTANT FOR MEDIASCOPE COORDINATION ANALYSIS:
+# Keleops AG has NO connection to:
+# - Advance Publications (WIRED/Condé Nast parent)
+# - Reddit (Advance holds ~30% stake)
+# - Warner Bros Discovery
+# - Any Condé Nast entity
+# This means Gizmodo's editorial direction on Meta wearables is NOT driven by
+# Advance financial incentives. If Gizmodo and WIRED produce similar framings,
+# it suggests organic convergence of editorial judgment OR shared sourcing
+# (same PR firms, same advocacy orgs feeding both), NOT corporate coordination.
+
+editorial_posture:
+  meta_coverage: adversarial_to_balanced
+  tone: conversational_critical
+  wearables_beat_reporter: Raymond Wong (Senior Editor, Consumer Tech)
+  notes: |
+    Gizmodo's smart glasses coverage is driven primarily by Raymond Wong,
+    who is a hands-on reviewer. His coverage style is more nuanced than
+    WIRED's structurally adversarial approach: he tests products, acknowledges
+    appeal, and documents privacy issues from personal experience rather
+    than institutional advocacy framing.
+    
+    Key difference from WIRED: Gizmodo under Keleops is a product-review-first
+    publication with affiliate commerce as a primary revenue driver. This means
+    they have a financial incentive to engage positively with products (to
+    drive affiliate clicks) that partially counterbalances adversarial coverage.
+    WIRED under Condé Nast/Advance has shifted toward investigative/adversarial
+    coverage as a prestige differentiator under Katie Drummond.
+
+wearables_coverage_examples:
+  - title: "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up"
+    date: 2026-07-30
+    author: Raymond Wong
+    url: https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+    framing: balanced (reports EssilorLuxottica revenue doubling + privacy incident catalogue)
+    
+  - title: "Can Smart Glasses Ever Be Privacy-Friendly? These Companies Think So"
+    date: 2026-06-14
+    author: Raymond Wong
+    url: https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927
+    framing: solutions-oriented (profiles Even Realities, Brilliant Labs alternatives to Meta)
+    
+  - title: "Dear Meta Smart Glasses Wearers: You're Being Watched, Too"
+    date: 2026-03
+    author: Raymond Wong
+    url: https://gizmodo.com/dear-meta-smart-glasses-wearers-youre-being-watched-too-2000728928
+    framing: adversarial (Svenska Dagbladet contractor footage investigation)
+    
+  - title: "Apple's Smart Glasses Are Stepping Into a Privacy Minefield"
+    date: 2026-04
+    author: Raymond Wong
+    url: https://gizmodo.com/apples-smart-glasses-are-stepping-into-a-privacy-minefield-2000746809
+    framing: category_contamination (Meta stigma affecting Apple's entry)
+    
+  - title: "Meta's Smart Glasses Are Long Ways From Their 'Eureka' Moment"
+    date: 2026-06
+    author: Raymond Wong
+    url: https://gizmodo.com/metas-smart-glasses-are-long-ways-from-their-eureka-moment-2000767574
+    framing: skeptical_but_fair (product critique, not privacy attack)
+    
+  - title: "The Meta Ray-Ban Display's Dumb Smart Glasses AI Is Dumb No More"
+    date: 2026-07-30
+    author: Raymond Wong
+    url: https://gizmodo.com/the-meta-ray-ban-displays-dumb-smart-glasses-ai-is-dumb-no-more-2000791752
+    framing: positive_product (genuine enthusiasm for Muse Spark AI upgrade)
+    
+  - title: "We're Already Barrelling Toward a Smart Glasses Bubble"
+    date: 2025-11
+    author: Raymond Wong
+    url: https://gizmodo.com/were-already-barrelling-towards-a-smart-glasses-bubble-2000679391
+    framing: market_analysis (competitive landscape, not privacy-focused)
+
+  - title: "Samsung Let Me Touch Its Warby Parker x Gentle Monster Smart Glasses, but Not Wear Them"
+    date: 2026-07-22
+    author: Raymond Wong
+    url: https://gizmodo.com/author/raywong
+    framing: hands_on_preview (competitive product coverage)

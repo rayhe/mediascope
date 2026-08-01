@@ -1,4 +1,89 @@
 # MediaScope Iteration Log
+## 2026-08-01 07:00 PT — Type B: Journalist/Publication Research — Raymond Wong (Gizmodo) + Gizmodo/Keleops Ownership + Christopher Mims (WSJ)
+
+**Rotation:** B (Journalist/Publication Research)
+**Focus:** Profiling Raymond Wong (Gizmodo's primary smart glasses beat reporter), Gizmodo ownership chain (Keleops AG), Christopher Mims (WSJ) as business-press control, and Gizmodo publication profile creation
+
+### Key Findings
+
+#### 1. New Journalist Profile: Raymond Wong (Gizmodo Senior Editor, Consumer Tech)
+**Career trajectory:**
+- Hunter College (CUNY) graduate
+- Co-founder & EIC, DapperGuide.com (lifestyle)
+- Deputy Editor, DVICE (NBC Universal tech pub)
+- Senior Tech Correspondent, Mashable (~6 years, ~2014-2020)
+- Founding Editor, Input Magazine (Bustle Digital Group, ~2020-2022)
+- Deputy Editor of Reviews & Guides, Inverse (BDG, ~2022-2024)
+- Freelance (~9 months, mid 2024 - early 2025)
+- Senior Editor Consumer Tech, Gizmodo (Keleops AG, April 2025-present)
+
+**Why he matters for wearables narrative:**
+- De facto smart glasses beat reporter at Gizmodo — primary individual voice shaping their wearables coverage
+- Hands-on reviewer-reporter hybrid: tests every product, shoots own photography (© Raymond Wong / Gizmodo)
+- His coverage is MORE nuanced than WIRED's structurally adversarial approach
+- Jul 30, 2026: "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up" — reports EssilorLuxottica revenue doubling while cataloguing privacy incidents
+- Jul 30, 2026: "The Meta Ray-Ban Display's Dumb Smart Glasses AI Is Dumb No More" — genuinely positive product coverage on same day
+- This duality (privacy criticism + genuine product enthusiasm) makes him a DIFFERENT type of wearables-negative voice than WIRED's Katie Drummond/Zoë Schiffer editorial posture
+
+**KEY MEDIASCOPE INSIGHT — No Condé Nast connection:**
+- Wong has ZERO Condé Nast tenure in his entire career
+- Career chain: NBC Universal → Mashable (Ziff Davis) → BDG (Input/Inverse) → Keleops (Gizmodo)
+- Entirely independent from the Advance Publications/Condé Nast ownership chain
+- His wearables coverage represents organic editorial judgment, not corporate coordination
+
+**Source URLs:**
+- https://talkingbiznews.com/media-news/gizmodo-hires-wong-as-senior-editor-of-consumer-tech/amp/
+- https://muckrack.com/raymond-wong
+- https://nc.inverse.com/input/profile/raymond-wong-18812870
+- https://gizmodo.com/author/raywong
+
+#### 2. New Publication Profile: Gizmodo (Keleops AG)
+Created `profiles/gizmodo.yaml` — first Gizmodo publication profile in MediaScope.
+
+**Ownership chain:**
+- Gawker Media (Nick Denton, 2002-2016)
+- Univision Communications ($135M, 2016-2019)
+- G/O Media / Great Hill Partners PE (2019-2024)
+- **Keleops AG (Switzerland, June 4, 2024-present)**
+
+**Keleops portfolio:** Gizmodo, Kotaku (Jul 2025), 01net, Presse-citron, Journal du Geek, iPhon.fr
+**CEO:** Jean-Guillaume Kleis
+**HQ:** Zug, Switzerland
+**Business model:** Lead generation + affiliate commerce from product reviews + display advertising
+**Monthly uniques:** 40M+ across all properties
+
+**CRITICAL FOR COORDINATION ANALYSIS:**
+Keleops AG has NO connection to Advance Publications, Condé Nast, Reddit, or Warner Bros Discovery. This means Gizmodo's wearables-negative coverage is operating on a completely separate financial orbit from WIRED. If both publications produce similar negative framings of Meta glasses, it's evidence of either:
+1. Organic convergence (genuine privacy concerns driving similar conclusions independently), OR
+2. Shared sourcing (same PR firms, advocacy groups like EFF/ACLU/Fight for the Future feeding both publications), OR
+3. Industry-wide consensus among tech press
+...but NOT evidence of coordinated Advance/Condé Nast corporate direction.
+
+#### 3. New Journalist Profile: Christopher Mims (WSJ Technology Columnist)
+- Long-tenured WSJ tech columnist (2014-present)
+- Author of "Arriving Today" (2021, Harper Business)
+- Jul 2026 piece "Smartglasses Are Inevitable. But What — or Who — Are They For?"
+- **KEY CONTROL:** His coverage frames smartglasses as market/business story, NOT privacy/surveillance story
+- Quotes industry executives (Qualcomm, Meta Boz, Google, Snap) without adversarial framing
+- Does NOT cite privacy advocacy groups
+- WSJ (News Corp) — no Condé Nast connection
+- This framing divergence (business press = market opportunity vs consumer tech press = privacy crisis) maps onto publication type, not coordination
+
+#### 4. Additional Discovery: CJR Meta-Coverage (Amos Barshad)
+Found Columbia Journalism Review piece "Always On" by Amos Barshad — covers how news influencers and MAGA content creators use Meta glasses for surreptitious recording. This represents a THIRD framing type: meta-journalistic concern about glasses as journalism tools vs surveillance tools. Not profiled this cycle but flagged for future Type B research.
+
+#### 5. CNN Wearables Coverage (Jul 26, 2026)
+"AI devices that see, listen and record: Are we ready for the post-smartphone world?" — extensive hands-on review of Meta glasses, Amazon Bee Pioneer, and Plaud Notepin S. Notable: quotes Meta spokesperson **Dina El-Kassaby** (current glasses PR contact — new name for MediaScope contacts). Framing: cautious-experiential (journalist's own discomfort using the devices). Not yet identified byline author — need browser_delegate for CNN dynamic page.
+
+**What was improved:**
+- New journalist profile: Raymond Wong (Gizmodo) — career history, framing analysis, ownership control note
+- New journalist profile: Christopher Mims (WSJ) — business press control
+- New publication profile: `profiles/gizmodo.yaml` — Keleops AG ownership chain, editorial posture, 8 annotated wearables coverage examples
+- Updated journalist count: +2 journalists in `profiles/careers/journalists.yaml`
+
+**Stats delta:** +2 journalist profiles, +1 publication profile, 8 annotated wearables coverage examples
+**Commit:** pending
+
 ## 2026-08-01 06:00 PT — Type A: Article Deep Dive — WebProNews Apple Privacy Reckoning + Category Contamination (#113)
 
 **Rotation:** A (Article Deep Dive)
