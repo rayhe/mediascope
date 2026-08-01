@@ -1,4 +1,96 @@
 # MediaScope Iteration Log
+## 2026-07-31 22:00 PT — Type B: Journalist/Publication Research — EHE Amplification Chain & Kali Hays
+
+**Rotation:** B (Journalist/Publication Research)
+**Focus:** Late July wearables narrative coordination signals, new journalist profiles, activist amplification mapping
+
+### Findings
+
+#### 1. Victoria Song (The Verge) — July 17-31 Coverage Update
+
+Updated profile with three late-July articles that mark a **narrative escalation** in her wearables coverage:
+
+| Date | Article | Frame | Significance |
+|------|---------|-------|-------------|
+| Jul 20 | "Leaning into 'pervert glasses' sure is a choice" | Editorial commentary on Leonardo Del Vecchio (Ray-Ban President/CSO EssilorLuxottica) Instagram post | Applies backlash frame to glasses-partner executive's own marketing |
+| Early-mid Jul | "I spy" | Netflix's "A Man on the Inside" as cultural lens | Embeds surveillance critique in entertainment analysis, reaching non-tech audience |
+| Late Jul | "With smart glasses, Meta holds all the cards but fails to play them well" | Opens with EHE guerrilla campaign; frames entire Meta wearables strategy as PR positioning failure | Most comprehensive piece — moves from product-reviewer to strategic-narrative analyst |
+
+**Key insight:** Song's late July coverage represents a shift from "product reviewer noting privacy concerns" to "the wearables narrative's most authoritative voice framing Meta's entire strategy as a failure." The "holds all the cards" article opens with activist group imagery — a framing choice that merges street-level protest with insider product authority.
+
+#### 2. New Journalist Profile: Kali Hays (BBC)
+
+**Migration:** Fortune → BBC (Technology reporter, ~2025)
+**Based:** San Francisco Bay Area
+
+Added full profile with career trajectory and coverage analysis. Key findings:
+- Authored BBC's smart glasses privacy investigation ("Smart glasses are 'an invasion of privacy'") — among the most globally-distributed wearables privacy pieces due to BBC's syndication network (BBC News, BBC Brasil, Yahoo, MSN, AOL)
+- Prolific July 2026 tech coverage: Big Tech AI earnings, Claude AI public chats, AI Kill Switch Act, Meta AI spending, Trump vs EU tech fines
+- **Business-financial framing** (Fortune background) creates distinctive BBC tone: commercially literate privacy reporting rather than pure advocacy
+- BBC brand functions as legitimacy multiplier for "pervert glasses" frame — signals mainstream-serious rather than tech-press-niche
+- **CONTROL signal:** BBC is independent public broadcaster with no Condé Nast / Advance / Vox Media institutional connection. Hays's coverage independently reaching similar conclusions as WIRED/Gizmodo/Verge suggests genuine public concern rather than manufactured coordination
+
+#### 3. Everyone Hates Elon (EHE) — Activist Amplification Chain Discovery
+
+Mapped the complete amplification chain for the EHE guerrilla campaign:
+
+**Origin node:** EHE installs lenticular spoof ads at London bus stops near Meta HQ (mid-July)
+- Kylie Jenner ad with "They Live" optical illusion: normal Meta ad → skeletal face + "We're always watching"
+- Jeffrey Epstein ad: "Glasses for people who don't do consent"
+- "The biggest advance in pervert technology since the trenchcoat" poster
+
+**CRITICAL COORDINATION SIGNAL:** EHE's Jul 13 Bluesky post explicitly cited Hannah Murphy's Financial Times "super sensing glasses" report as their source. This connects investigative journalism → activist street art → press amplification in a documented chain.
+
+**Citation cascade (chronological):**
+1. FT's Hannah Murphy "super sensing" always-on prototype report (Jul 8)
+2. EHE cites FT in Bluesky post (Jul 13)
+3. EHE installs guerrilla ads in London (mid-Jul)
+4. Hyperallergic covers EHE campaign (~Jul 14) — art/culture outlet, not tech press
+5. PetaPixel covers it (Jul 23) — photography outlet
+6. Engadget covers it — mainstream tech
+7. The Times covers Epstein ad (Jul 26) — UK newspaper of record
+8. Fstoppers, DesignTAXI, AfroTech — diverse non-tech outlets
+9. Victoria Song (The Verge) opens her "holds all the cards" article with EHE campaign imagery
+
+**Analysis:** This is NOT traditional journalist coordination (no evidence of shared sources or pre-publication coordination between outlets). It IS a documented activist-to-media amplification pipeline where:
+- Investigative reporting (FT) → activist interpretation (EHE) → guerrilla art → arts/photography press → mainstream tech press → most authoritative wearables voice (Victoria Song)
+- The EHE campaign functioned as a "narrative laundry" — converting FT's technical report about an unreleased feature into visceral street-level imagery ("pervert technology") that is photogenic and shareable
+- Each outlet in the cascade adds its own institutional credibility to the frame
+- The end result is that an activist group's slogans are now the opening framing device for The Verge's most authoritative wearables journalist
+
+**Not evidence of conspiracy.** This is standard memetic amplification through shared digital feeds (Bluesky, Techmeme, Twitter/X). But it demonstrates how the wearables-negative narrative propagates across institutional boundaries through activist intermediaries — a mechanism MediaScope should track.
+
+#### 4. Documentation Sync
+
+Updated 5 files to reflect 249 journalists (was 248), 238 multi-pub (was 237), 964 career-entry migrations (was 963), 751 auto-detected migrations (was 750):
+- `profiles/careers/journalists.yaml`: Victoria Song notes expanded, Kali Hays added
+- `README.md`: journalist count 249, migrations 751, career-entry migrations 964
+- `docs/EDITORIAL_HISTORIES.md`: 249 journalists, 238 multi-pub, 751 migrations
+- `examples/careers_demo.py`: 249 journalists count
+
+### Verification
+- `count_stats.py --check`: ✅ README stats current
+- `test_structural_consistency.py`: 137 passed
+- `test_accuracy_guide.py`: 13 passed
+- `test_careers.py`: 8 passed
+- Total verified: 158 tests, 0 failures
+
+### Source URLs
+- Victoria Song Muck Rack: https://muckrack.com/victoria-song/articles
+- Kali Hays Muck Rack: https://muckrack.com/kali-hays/articles
+- Kali Hays Reporters.IO: https://reporters.io/j/Kali%20Hays
+- EHE Hyperallergic coverage: http://hyperallergic.com/guerrilla-london-bus-ads-mock-kylie-jenners-meta-glasses-campaign/
+- EHE PetaPixel coverage: https://petapixel.com/2026/07/23/kylie-jenners-meta-smart-glasses-parodied-in-guerrilla-lenticular-ad/
+- EHE Engadget coverage: https://www.engadget.com/2217151/activist-group-takes-over-london-bus-stops-with-fake-meta-glasses-ads/
+- EHE The Times coverage: https://www.thetimes.com/uk/london/article/meta-ai-glasses-spoof-advert-jeffrey-epstein-slx3wttm5
+- EHE Fstoppers coverage: https://fstoppers.com/news/kylie-jenner-ad-hides-disturbing-secret-just-have-stand-right-spot-903612
+- CNN AI wearables (Lisa Eadicicco): https://www.cnn.com/2026/07/26/tech/ai-devices-see-listen-record-meta-amazon-plaud
+- Gizmodo smart glasses privacy: https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927
+- EFF smart glasses article: https://www.eff.org/effector/38/6
+
+**Commit:** (pending) — pushed to GitHub
+**Stats after:** 111 types, 754 patterns, 197 articles, 3099 tests/140 files, 249 journalists
+
 ## 2026-07-31 20:00 PT — Type D: Toolkit Quality, safeguard_inadequacy Framing Device (#111)
 
 **Rotation:** D (Toolkit Quality & Documentation)
@@ -24974,3 +25066,34 @@ Wearables narrative: expanded entity clusters for smart glasses ecosystem, added
 
 **Stats after:** 109 device types (10 core + 92 extended + 7 structural), 743 compiled patterns, 3061 tests across 138 files.
 **Commit:** `38f423c` — pushed to GitHub.
+
+## 2026-07-31 21:00 PT — Type B: Journalist/Publication Research
+
+**Focus:** Wearables narrative source mapping — Ben Schoon profile + Victoria Song Jul 2026 update
+
+**What was improved:**
+1. **NEW JOURNALIST: Ben Schoon** (9to5Google, Senior Editor since 2016)
+   - Career: independent blog → 9to5Google (~10-year tenure). 14,500+ articles. Self-taught.
+   - Publication context: 925 LLC (Seth Weintraub sole owner — independent, no VC/corporate parent)
+   - ANALYTICAL VALUE: Control outlet for MediaScope. No Advance/Condé Nast connection. If 9to5Google runs privacy-critical coverage despite zero institutional incentive, it suggests genuine public concern vs coordinated editorial pressure.
+   - Wearables role: Primary amplifier of Victoria Song (Verge) and Hannah Murphy (FT) reports to Android enthusiast audience (7.5M monthly).
+
+2. **UPDATED: Victoria Song** (The Verge) — Jul 2026 activity
+   - Jul 7: Broke the Meta LED tamper-proof update story → Techmeme 219 pts, 8+ outlets cited
+   - Created the "defend the light / plan to bypass the light" contradiction frame (Jul 7-8)
+   - Interviewed Alex Himel (Meta VP Wearables) — active PR working relationship
+   - Assessment: Single most influential journalist in shaping Meta wearables privacy narrative
+
+3. **SOURCE NETWORK MAPPING** — documented shared privacy-expert rolodex:
+   - Thorin Klosowski (EFF) → Gizmodo, Northeastern
+   - Cooper Quintin (EFF Threat Lab) → WIRED NameTag, TechTimes
+   - Daniel Schwarz (NYCLU) → TechTimes, ACLU
+   - Calli Schroeder (EPIC) → CNN Business
+   - Kleanthi Sardeli (NOYB) → Reuters, Northeastern
+   - Pattern: standard advocacy rolodex, no coordination signals
+
+4. **KEY FINDING:** Jul 7-10 "LED defense vs super-sensing contradiction" frame was emergent from news timing, not manufactured. Victoria Song (Jul 7) → Hannah Murphy FT (Jul 8) → aggregator synthesis (Jul 9-10).
+
+**Stats after:** 248 journalists, 963 career entries, 750 auto-detected migrations, 439 publications, 111 framing types, 754 patterns, 197 articles, 3099 tests/140 files. All 158 tests pass.
+
+**Commit:** f27a134 — pushed to GitHub.

@@ -10977,11 +10977,34 @@ journalists:
     activist. SOURCE NETWORK: Quotes Alex Himel (Meta VP Wearables) directly — has active working relationship with
     Meta wearables PR.
 
+    JULY 17-31 COVERAGE UPDATE: (6) Jul 20 — "Leaning into ''pervert glasses'' sure is a choice" — short editorial
+    commentary on Leonardo Del Vecchio (President of Ray-Ban, CSO at EssilorLuxottica) posting Meta glasses content to his
+    Instagram story. Significant because Song frames a glasses-partner executive''s social media post through the "pervert
+    glasses" lens — applying the surveillance backlash frame even to legitimate marketing from the manufacturing partner.
+    (7) "I spy" (early-mid Jul) — longform essay using Netflix''s "A Man on the Inside" (Ted Danson) to illustrate the
+    cultural problem with smart glasses. Frame: Hollywood has "inadvertently" shown why glasses are culturally toxic by
+    depicting them as a private investigation tool. Notable for embedding the surveillance critique in entertainment
+    analysis rather than tech review — reaches different audience segment. References NYT and WIRED investigations as
+    reigniting debate. Fan-base pushback noted: accessibility use cases, family video, pet video. (8) "With smart glasses,
+    Meta holds all the cards but fails to play them well" (late Jul) — her most comprehensive wearables narrative piece.
+    Opens with Everyone Hates Elon (EHE) guerrilla campaign across NYC, London, and DC: "the biggest advancement in pervert
+    technology since the trenchcoat" and Kylie Jenner face replaced with "mass surveillance predator glasses." This article
+    represents a NARRATIVE ESCALATION: Song moves from product-review-with-privacy-concerns to explicit framing of the
+    entire Meta wearables strategy as a failure of PR positioning. COORDINATION SIGNAL: Song''s article cites the EHE
+    guerrilla campaign as her opening frame — the same campaign Hyperallergic (Jul 14), PetaPixel (Jul 23), Engadget,
+    Fstoppers, and The Times (Jul 26) all covered. This creates a citation cascade where activist street art →
+    arts/photography press → mainstream tech press → Victoria Song (The Verge, highest-authority wearables voice). The
+    cascade amplifies an activist group''s framing through the credibility of a senior product reviewer. Not evidence of
+    coordination — more likely organic amplification through shared news feeds (Techmeme, Twitter/X, Bluesky). But the
+    effect is identical: activist framing reaches mainstream tech audience through the most credible wearables journalist
+    in the industry.
+
     '
   source_urls:
   - https://www.theverge.com/authors/victoria-song
   - https://gizmodo.com/author/victoria-song
   - https://www.pcmag.com/author/victoria-song
+  - https://muckrack.com/victoria-song/articles
 - career:
   - beat: daily news
     end: 2015
@@ -17484,3 +17507,58 @@ journalists:
   - https://muckrack.com/ben-schoon
   - https://journalisthunt.com/journalists/ben-schoon
   - https://buzzsumo.com/journalist/ben-schoon-18344454
+- career:
+  - beat: business, tech companies
+    notes: 'Covered fintech, Big Tech business, and Silicon Valley companies. Major scoops: Jack Dorsey''s Block cash-vs-stock
+      compensation plan, Mark Zuckerberg $2B Meta stock sales analysis, Inflection AI CEO interview. Also covered Fortune as
+      business reporter. Based in San Francisco Bay Area.'
+    publication: fortune
+    role: tech_reporter
+    source_url: https://muckrack.com/kali-hays/articles
+    start: '2024'
+    end: '2025'
+  - beat: technology, AI, Big Tech, smart glasses, privacy
+    event_type: hired
+    notes: 'Technology reporter at BBC covering AI, Big Tech earnings, tech regulation, and smart glasses privacy. Prolific
+      output across BBC News English and BBC Brasil (Portuguese translations). KEY WEARABLES COVERAGE: Authored the BBC''s
+      landmark smart glasses privacy investigation "Smart glasses are ''an invasion of privacy'' - Meta''s are selling better
+      than ever" — one of the most widely-cited reports on the pervert-glasses backlash. Article documented pickup artist
+      use of Meta glasses to covertly film women, consent-for-deletion extortion, and Lorde''s "F**k the glasses" public
+      statement. The BBC brand amplifies this coverage to a global audience far beyond tech-press readership. OTHER JULY
+      2026 COVERAGE: Big Tech AI earnings analysis, Claude AI public chats exposure, AI Kill Switch Act (Ted Lieu), Trump
+      vs EU tech fines, Meta shares falling on AI spending, eBay cyberstalking settlement. NARRATIVE ROLE: Hays represents
+      the BBC''s institutional entry into the smart glasses privacy narrative. Unlike WIRED (adversarial-investigative) or
+      The Verge (product-reviewer editorial), BBC framing is broadcast-journalism neutral-authoritative — the "pervert
+      glasses" frame gains different credibility when delivered through BBC''s institutional voice vs. a Condé Nast property.
+      MIGRATION SIGNIFICANCE: Fortune → BBC represents a business-reporter moving into public-service broadcasting.
+      Business-financial framing (stock sales, compensation, earnings) carries into her BBC tech coverage — she frames
+      Big Tech stories through financial incentive analysis rather than pure privacy-advocacy. This produces a distinctive
+      BBC tone: commercially literate privacy reporting. COORDINATION ANALYSIS: No evidence of source-sharing with WIRED
+      NameTag team or EHE activist group. BBC coverage appears independently sourced — the Swedish newspaper investigation
+      (Svenska Dagbladet/Göteborgs-Posten) is the upstream source for both BBC and the Bartone v. Meta lawsuit.'
+    publication: bbc
+    role: tech_reporter
+    source_url: https://muckrack.com/kali-hays/articles
+    start: '2025'
+  beats:
+  - technology
+  - ai
+  - big_tech
+  - smart_glasses
+  - privacy
+  multi_publication: true
+  name: Kali Hays
+  notes: 'Key migration: Fortune → BBC. Technology reporter covering AI, Big Tech, and smart glasses privacy. Based in
+    San Francisco Bay Area. Her BBC smart glasses privacy reporting is the single most globally-distributed wearables
+    privacy piece due to BBC''s international reach (BBC News, BBC Brasil, Yahoo, MSN, AOL syndication). The BBC brand
+    functions as a legitimacy multiplier for the "pervert glasses" frame — when BBC runs the story, it signals
+    mainstream-serious rather than tech-press-niche. KEY for MediaScope: BBC is not in the Condé Nast / Advance
+    Publications / Vox Media orbit — it is an independent public broadcaster. Hays''s coverage serves as another
+    CONTROL signal alongside 9to5Google (Ben Schoon): if BBC independently runs privacy-critical wearables coverage
+    with no institutional incentive from Advance, the framing reflects genuine public concern. The fact that BBC,
+    The Verge, Gizmodo, CNN, and WIRED all independently arrived at "pervert glasses" framing by late July 2026
+    suggests this is a genuine public sentiment wave, not manufactured coordination — though individual outlets
+    (especially WIRED/Condé Nast) may be amplifying beyond what the evidence warrants for institutional reasons.'
+  source_urls:
+  - https://muckrack.com/kali-hays/articles
+  - https://reporters.io/j/Kali%20Hays
