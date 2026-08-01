@@ -5295,6 +5295,24 @@ _ESCALATION_AMPLIFICATION_PATTERNS: list[re.Pattern] = [
         r"(?:enough|bad\s+enough|concerning\s+enough|worrying\s+enough)\b",
         re.IGNORECASE,
     ),
+    # Pattern 8: "reached (entirely/all) new heights/levels/lows" — peak-
+    # escalation phrase framing the negative trend as hitting unprecedented
+    # intensity.  Covers: "reached entirely new heights", "reached new
+    # levels", "hit all-time highs/lows", "reached a fever pitch".
+    # Discovered in Gizmodo glasses harassment ban article (Jul 23, 2026):
+    #   "backlash has, in the last few months, reached entirely new heights"
+    re.compile(
+        r"\b(?:reach(?:ed|ing)?|hit(?:ting)?|climb(?:ed|ing)?(?:\s+to)?|"
+        r"risen?\s+to|escalat(?:ed|ing)\s+to|soar(?:ed|ing)\s+to)\s+"
+        r"(?:entirely\s+|all[- ])?(?:new|unprecedented|record|all[- ]time"
+        r"|historic)\s+(?:heights?|levels?|highs?|lows?|proportions?)\b",
+        re.IGNORECASE,
+    ),
+    # Pattern 9: "reached a fever pitch" / "at a fever pitch"
+    re.compile(
+        r"\b(?:reach(?:ed|ing)?|hit(?:ting)?|at)\s+(?:a\s+)?fever\s+pitch\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["escalation_amplification"] = _ESCALATION_AMPLIFICATION_PATTERNS
@@ -5833,6 +5851,16 @@ _EDITORIAL_ASIDE_PATTERNS.extend([
     # "Oh, and pop star Lorde doesn't care for smart glasses, either."
     re.compile(
         r"\bOh,\s+and\b",
+        re.IGNORECASE,
+    ),
+    # Parenthetical "meanwhile" contrast: "(X, meanwhile, ...)" — injects
+    # a contrasting fact inside parentheses with "meanwhile", creating
+    # ironic juxtaposition.  Discovered in Gizmodo glasses harassment ban
+    # article (Jul 23, 2026):
+    #   "(Kylie Jenner, meanwhile, is helping Meta rebrand its smart
+    #    glasses as cool.)"
+    re.compile(
+        r"\([^)]{0,20},\s*meanwhile,\s*[^)]{10,120}\)",
         re.IGNORECASE,
     ),
 ])
@@ -9236,6 +9264,42 @@ _NO_COMMENT_IMPLICATION_PATTERNS: list[re.Pattern] = [
     ),
 ]
 _DEVICE_PATTERNS["no_comment_implication"] = _NO_COMMENT_IMPLICATION_PATTERNS
+
+# -----------------------------------------------------------------------
+# Additional recidivism_framing patterns discovered in Gizmodo glasses
+# harassment Instagram ban article (Jul 23, 2026):
+#
+# Sardonic attribution of chronic bad behavior:
+#   "Meta's always been good at pushing products it knows aren't
+#    necessarily good for its consumers."
+# The phrase "[Entity]'s always been good at [negative behavior]" is a
+# sardonic recidivism frame — crediting the entity with expertise at
+# doing harm.  Distinct from the "leads the world in" sardonic
+# competence pattern: this uses "always" + "good at" to imply the
+# behavior is a defining trait, not just a track record.
+# -----------------------------------------------------------------------
+_RECIDIVISM_FRAMING_PATTERNS.extend([
+    # "[Entity]'s always been good at [negative]"
+    re.compile(
+        r"\b(?:Meta|Facebook|Google|Apple|Amazon|Microsoft|"
+        r"the\s+company|Zuckerberg|they)\b"
+        r".{0,10}?"
+        r"(?:always\s+been|always\s+was|has\s+always\s+been)\s+"
+        r"(?:good|great|excellent|adept|skilled|expert)\s+at\b",
+        re.IGNORECASE,
+    ),
+    # "We can expect [more/plenty more] [negative noun]" — predictive
+    # recidivism closing, editorially asserting future misbehavior.
+    # Discovered in Gizmodo glasses harassment ban article (Jul 23, 2026):
+    #   "We can expect plenty more mixed messaging on the matter"
+    re.compile(
+        r"\b[Ww]e\s+can\s+expect\s+(?:plenty\s+)?more\s+"
+        r"(?:mixed\s+messaging|contradictions?|backtracking|"
+        r"flip[- ]flop(?:ping|s)?|double[- ]speak|doublespeak|"
+        r"confusion|obfuscation|reversals?|about[- ]faces?)\b",
+        re.IGNORECASE,
+    ),
+])
 
 
 # --- Competitive guilt transfer ---
