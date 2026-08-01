@@ -9786,6 +9786,78 @@ _SURVEILLANCE_ENUMERATION_PATTERNS: list[re.Pattern] = [
 ]
 _DEVICE_PATTERNS["surveillance_enumeration"] = _SURVEILLANCE_ENUMERATION_PATTERNS
 
+# ---------------------------------------------------------------------------
+# success_paradox — headline or lede acknowledges objectively positive
+# commercial news (revenue growth, market success, unit sales) then
+# immediately pivots via "even as" / "despite" / "but" to a negative
+# narrative that dominates the article's word count.
+#
+# The pattern is structural, not linguistic: positive data is the
+# minority content used to grant credibility to a majority-negative
+# piece.  Distinct from grudging_concession (which uses specific
+# word-level markers like "actually" or "purports") and from
+# editorial_deflation (which punctures ambition): success_paradox
+# uses genuine positive data as a Trojan horse for negative framing.
+#
+# Discovered from Gizmodo "Smart Glasses Are a Hit Even as Privacy
+# Concerns Pile Up" (Jul 30, 2026) and MarketWatch "Big Tech is
+# obsessed with smart glasses. Now it has to convince people to
+# wear them" (Jun 27, 2026).
+# ---------------------------------------------------------------------------
+
+_SUCCESS_PARADOX_PATTERNS: list[re.Pattern] = [
+    # "a hit/success/boom/popular even as/despite/while concerns/backlash"
+    re.compile(
+        r"\b(?:hit|success|boom|popular|growing|doubling|doubled|tripled|"
+        r"soaring|surging|record)\b"
+        r".{0,60}"
+        r"\b(?:even\s+as|despite|while|but|yet)\b"
+        r".{0,60}"
+        r"\b(?:concern|backlash|scrutiny|criticism|pushback|controversy|"
+        r"privacy|debate|outcry|pile\s+up|mount(?:ing)?)\b",
+        re.IGNORECASE,
+    ),
+    # "popular despite an increasingly [negative adj] climate/environment"
+    re.compile(
+        r"\bpopular\s+despite\s+(?:an?\s+)?(?:increasingly\s+)?"
+        r"(?:prickly|hostile|difficult|challenging|contentious|toxic|"
+        r"fraught|charged|tense|heated)\b",
+        re.IGNORECASE,
+    ),
+    # "[positive verb] revenue/sales/growth ... but/yet [negative noun]"
+    re.compile(
+        r"\b(?:nearly\s+doubl|almost\s+doubl|more\s+than\s+doubl|"
+        r"tripl|surpass|outpac|exceed|beat)\w*\b"
+        r".{0,80}"
+        r"\b(?:but|yet|however|still|nonetheless|nevertheless)\b"
+        r".{0,40}"
+        r"\b(?:backlash|scrutiny|concern|criticism|pushback|privacy|"
+        r"controversy|debate)\b",
+        re.IGNORECASE,
+    ),
+    # "growth doesn't mean [negative prediction]"
+    re.compile(
+        r"\bgrowth\s+doesn'?t\s+mean\s+.{0,60}"
+        r"\b(?:tipping\s+point|reckoning|backlash|collapse|crisis|"
+        r"problem|issue|concern|end|doom|demise)\b",
+        re.IGNORECASE,
+    ),
+    # "selling well / commercially successful + despite/even as/but +
+    # [privacy/social negative]"
+    re.compile(
+        r"\b(?:selling\s+well|commercial(?:ly)?\s+success|"
+        r"strong\s+(?:sales|demand|growth)|"
+        r"market\s+(?:success|growth|momentum))\b"
+        r".{0,60}"
+        r"\b(?:despite|even\s+as|but|while|yet|however)\b"
+        r".{0,40}"
+        r"\b(?:backlash|scrutiny|concern|criticism|pushback|privacy|"
+        r"controversy|stigma|glasshole)\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["success_paradox"] = _SUCCESS_PARADOX_PATTERNS
+
 
 def detect_framing_devices(
     text: str,
@@ -9793,15 +9865,15 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 102 pattern-matched device types plus 7 structural
-    post-pass types (109 total).
+    Scans for 103 pattern-matched device types plus 7 structural
+    post-pass types (110 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (101): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (102): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, chilling_effect,
@@ -9843,7 +9915,7 @@ def detect_framing_devices(
     self_referential_investigation,
     silence_as_guilt, slippery_slope, sovereignty_framing,
     strategic_disclosure, strategic_reversal, straw_man,
-    surveillance_creep, surveillance_enumeration,
+    surveillance_creep, surveillance_enumeration, success_paradox,
     glasshole_revival, walking_camera,
     talent_hemorrhage, taxonomy_framing, timeline_implication,
     two_tier_treatment, ultimatum_framing,

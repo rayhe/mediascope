@@ -185,7 +185,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 109 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (92 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 110 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (93 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -301,6 +301,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Glasshole Revival** | Revival of the "glasshole" pejorative from the 2013 Google Glass era to frame current smart glasses products and their users. Invokes historical social stigma as predictive of current social rejection. Distinct from loaded_language (generic pejoratives) and surveillance_creep (ambient recording framing): glasshole_revival specifically invokes the 2013 precedent as a framing device | "glasshole"; "glassholes"; "Google Glass stigma ... Meta"; "nobody wants to be a glasshole" | TechCentral (Jul 14, 2026), Gizmodo (Jul 30, 2026), CNN (Jul 26, 2026) — revival of Google Glass-era "glasshole" pejorative in Meta smart glasses coverage |
 | **Walking Camera** | Framing that reduces smart glasses wearers to ambulatory surveillance devices, dehumanizing the wearer by equating them with the device's camera. Positions every person wearing smart glasses as a threat to bystanders. Distinct from surveillance_creep (ambient data capture) and consent_alarm (notification gaps): walking_camera frames the human wearer as the surveillance apparatus itself | "walking surveillance camera"; "camera on your face"; "turns every wearer into a surveillance device"; "face-mounted camera" | CNN (Jul 26, 2026), Gizmodo (Jul 30, 2026) — framing smart glasses wearers as ambulatory surveillance devices in privacy coverage |
 | **Chilling Effect** | Self-censorship or avoidance behavior by product users/owners due to social stigma. Detects when even advocates modify their behavior — too scared/embarrassed to wear, folding up glasses in public, reconsidering purchase, not appropriate to wear. Distinct from glasshole_revival (pejorative labeling) and walking_camera (dehumanization): chilling_effect captures the internalized behavioral response where stigma becomes self-reinforcing | "too scared to wear them in public"; "fold them up when I'm in a crowd"; "reconsidering whether to wear"; "not a good idea to have those"; "you're basically a predator" | PetaPixel (Jul 14, 2026) — "Meta Smart Glasses Owners Too Scared to Wear Them in Public" documenting self-censorship by smart glasses owners |
+| **Success Paradox** | Headline/lede acknowledges objectively positive commercial news (revenue growth, market success, unit sales) then immediately pivots via "even as"/"despite"/"but" to a negative narrative that dominates the article's word count. Uses genuine positive data as a Trojan horse for negative framing — positive data is the minority content granting credibility to a majority-negative piece. Distinct from grudging_concession (word-level markers) and editorial_deflation (puncturing ambition): success_paradox is a structural imbalance where ~20% positive data enables ~80% negative context | "a hit even as privacy concerns pile up"; "popular despite an increasingly prickly climate"; "nearly doubled... but backlash"; "growth doesn't mean a tipping point isn't coming" | Gizmodo (Jul 30, 2026) — "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up" — EssilorLuxottica Q2 revenue nearly doubled used as setup for privacy violation catalogue. Also: MarketWatch (Jun 27, 2026) — "Big Tech is obsessed with smart glasses. Now it has to convince people to wear them" |
 
 #### Structural Devices (Post-Pass)
 
@@ -875,7 +876,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 109-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 110-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1425,7 +1426,7 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **196 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **197 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1575,7 +1576,7 @@ The EU DSA "Addictive Design" cluster (Jul 10, 2026) is the widest genre-control
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 109 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 110 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|

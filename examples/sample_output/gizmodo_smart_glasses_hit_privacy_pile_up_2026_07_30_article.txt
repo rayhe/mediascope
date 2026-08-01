@@ -1,0 +1,42 @@
+TITLE: Smart Glasses Are a Hit Even as Privacy Concerns Pile Up
+AUTHOR: Raymond Wong
+PUBLICATION: Gizmodo
+DATE: 2026-07-30 (estimated; published between Jul 29-30 based on EssilorLuxottica Q2 release Jul 28)
+URL: https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+
+---
+
+Smart glasses are facing more scrutiny than ever, but the train towards mainstream adoption continues to barrel on. According to the latest earnings report from EssilorLuxottica, the owner of Ray-Ban and co-maker of Ray-Ban Meta AI glasses, revenue from its smart glasses nearly doubled in the second quarter compared to the same period last year.
+
+The company didn't disclose how many units have been sold in the second quarter of this year, but the smart glasses revenue growth is significant, especially considering overall revenue is down over the same period.
+
+[Image: Ray Ban Meta Gen 2 09] © Raymond Wong / Gizmodo
+
+What's most surprising about the uptick isn't that smart glasses are relatively popular—Meta sold 7 million pairs of Ray-Ban-branded AI glasses in 2025—but that they're popular despite an increasingly prickly climate surrounding the category. Meta, in particular, has been the focus of a lot of backlash in the past year, and much of it has been well deserved.
+
+On top of smart glasses generally being misused by people to encroach on people's privacy and cheat—that includes at least one case of extortion, people using smart glasses in court, and someone in South Korea being criminally charged after using a pair to cheat on a state safety exam—Meta has also crossed privacy boundaries of the people using its glasses.
+
+Earlier this year, Swedish newspaper Svenska Dagbladet uncovered that human contractors for Meta were exposed to all kinds of sensitive content captured by the company's AI glasses, including people having sex, using the bathroom, and sensitive banking information. Meta uses some videos and pictures captured by its glasses—specifically those captured with the "Hey Meta" command—to train AI. That practice is baked into its terms of service and hasn't been modified since.
+
+If that wasn't enough, Meta's reported plans to introduce facial recognition technology have caught the attention of both federal lawmakers and privacy groups, and neither is jazzed about the idea. Oh, and pop star Lorde doesn't care for smart glasses, either.
+
+Despite all of the pushback, the category seems to be growing, and with the entrance of Google and Samsung, it may balloon even further this year. That growth doesn't mean a tipping point isn't coming, though, especially as more restrictions and added social pressure kick in. Only time will tell if smart glasses are quietly spiraling towards a glasshole 2.0 moment.
+
+---
+
+OUTLINKS IN ARTICLE (11 total):
+[0] Bloomberg — EssilorLuxottica Q2/H1 2026 earnings report
+[1] Gizmodo — Ray-Ban Meta AI glasses (self-link, product page)
+[2] CNBC — "7 million pairs" figure
+[3] Gizmodo — "case of extortion" (self-link)
+[4] Gizmodo — "smart glasses in court" (self-link)
+[5] Unknown — South Korea criminal charge
+[6] Svenska Dagbladet (svd.se) — Swedish contractor investigation
+[7] Gizmodo — "plans to introduce facial recognition technology" (self-link)
+[8] Gizmodo — "federal lawmakers" (self-link)
+[9] Gizmodo — "Lorde doesn't care for smart glasses" (self-link)
+[10] Gizmodo — "Google and Samsung" entering market (self-link)
+[11] Gizmodo — "glasshole 2.0 moment" (self-link)
+
+SELF-LINKS: 8 of 11 outlinks (73%) point back to Gizmodo's own prior coverage
+EXTERNAL SOURCES: Bloomberg (earnings), CNBC (unit sales), Svenska Dagbladet (investigation)

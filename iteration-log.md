@@ -24877,3 +24877,16 @@ Wearables narrative: expanded entity clusters for smart glasses ecosystem, added
 - 675 regex patterns across 101 pattern-based types (108 total including 7 structural)
 - 3,029 tests across 137 test files (all passing)
 - 196 annotated articles
+
+## 2026-07-31 18:00 PT — Type D: Toolkit Quality & Documentation
+
+**Focus:** Test quality fixes + new wearables-narrative framing device
+
+**Improvements:**
+1. **New framing device: `chilling_effect`** — Self-censorship/avoidance by product users due to social stigma. 7 regex patterns (too-scared-to-wear, fold-up/put-away, reconsidering-purchase, more-mindful-in-public, won't-wear-in-public, social labeling, not-appropriate-to-wear). Discovered from PetaPixel Jul 14, 2026. 32 regression tests.
+2. **Fixed PytestRemovedIn10Warning** in `test_ibd_wedbush_hyperscalers_2026_07_16.py` — 7 class-scoped fixtures converted from `self` to `@classmethod`/`cls`.
+3. **Fixed test suite hang** in `test_cli_doc_consistency.py` — Added `timeout=15` to subprocess.run calls that caused indefinite hang when piped.
+4. **Full documentation sync** — Updated all stat references across README, ARCHITECTURE, METHODOLOGY, FRAMING_REFERENCE, AGENT_GUIDE, cli.py, and structural consistency tests.
+
+**Stats after:** 109 device types (10 core + 92 extended + 7 structural), 743 compiled patterns, 3061 tests across 138 files.
+**Commit:** `38f423c` — pushed to GitHub.
