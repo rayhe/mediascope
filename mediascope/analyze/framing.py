@@ -3256,6 +3256,23 @@ _PRECEDENT_FRAMING_PATTERNS: list[re.Pattern] = [
         r"\bfirst[- ]of[- ]its[- ]kind\b",
         re.IGNORECASE,
     ),
+    # "may/could influence other [institutions/courts/states/facilities]"
+    # Contagion/cascade prediction: implies a ban, rule, or policy will
+    # spread from one jurisdiction to others.
+    #
+    # Gap discovered via TechRepublic NY court smart glasses ban (Jul 10, 2026):
+    # "The statewide policy may influence other courts and public facilities
+    # as smart glasses become more common."
+    re.compile(
+        r"\b(?:may|could|might|will|would|is\s+(?:likely|expected|set)\s+to)\s+"
+        r"(?:influence|inspire|prompt|push|encourage|lead|spur|compel|pressure)\s+"
+        r"(?:other|more|additional|similar|nearby|neighboring)\s+"
+        r"(?:courts?|states?|jurisdictions?|agencies?|institutions?|"
+        r"facilities?|governments?|regulators?|legislators?|"
+        r"cities|counties|districts?|organizations?|bodies|"
+        r"public\s+(?:facilities|spaces?|buildings?|institutions?))\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["precedent_framing"] = _PRECEDENT_FRAMING_PATTERNS
@@ -9982,6 +9999,36 @@ _SAFEGUARD_INADEQUACY_PATTERNS: list[re.Pattern] = [
         r"cosmetic|token|symbolic|illusory|toothless|paper\s+tiger|"
         r"gesture|lip\s+service|window\s+dressing|security\s+theater|"
         r"privacy\s+theater)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Pattern 7: "[safeguard] ... not enough" / "were not enough" / "is not enough"
+    # Catches headings and inline declarations like:
+    #   "Built-in recording lights were not enough" (TechRepublic, Jul 2026)
+    #   "Disabling the camera may not be enough" (TechRepublic, Jul 2026)
+    re.compile(
+        r"\b(?:(?:recording|privacy|indicator|capture|notification|LED)\s+"
+        r"(?:lights?|LEDs?|indicators?|safeguards?|protections?|features?)|"
+        r"(?:built[- ]?in\s+)?(?:recording\s+)?(?:lights?|LEDs?|indicators?)|"
+        r"(?:disabling|turning\s+off|covering)\s+(?:the\s+)?"
+        r"(?:camera|LED|light|recording|feature|indicator))\b"
+        r".{0,60}?"
+        r"\b(?:(?:were?|is|are|was|isn'?t|aren'?t|wasn'?t|weren'?t)\s+)?"
+        r"(?:may\s+)?not\s+(?:be\s+)?enough\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Pattern 8: "[officials/institutions] not relying on / not trusting / rejecting [protections]"
+    # Catches: "Court officials are not relying on those protections" (TechRepublic)
+    re.compile(
+        r"\b(?:officials?|courts?|judges?|regulators?|authorities|"
+        r"law\s*makers?|legislators?|agencies?|governments?|institutions?)\b"
+        r".{0,40}?"
+        r"\b(?:not\s+(?:relying|depending|counting|banking)\s+on|"
+        r"reject(?:s|ed|ing)?|dismiss(?:es|ed|ing)?|"
+        r"don'?t\s+(?:trust|rely\s+on|accept))\b"
+        r".{0,40}?"
+        r"\b(?:those|these|such|the|its|their|Meta'?s?)?\s*"
+        r"(?:protections?|safeguards?|measures?|controls?|"
+        r"privacy\s+(?:protections?|safeguards?|measures?|controls?|features?))\b",
         re.IGNORECASE | re.DOTALL,
     ),
 ]

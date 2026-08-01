@@ -25778,3 +25778,44 @@ Insider selling in July: Huffman sold ~8,071 shares at $190-$206 (Jul 15). Wong 
 - `examples/careers_demo.py` (journalist count)
 
 **Commit:** Pending — will push after log entry.
+
+---
+
+## 2026-08-01 10:00 PT — Type A: Article Deep Dive
+
+### Focus
+TechRepublic article: "New York Bans Smart Glasses Across 1,240 Courts" (Kezia Jungco, Jul 10, 2026). First article in the corpus covering a concrete institutional ban on smart glasses — a narrative → policy crossing point.
+
+### What Was Done
+1. Fetched full article text and saved to `examples/sample_output/techrepublic_ny_court_smartglasses_ban_2026_07_10_article.txt`
+2. Ran toolkit analysis — initially detected 4 framing devices, manual review found 4 more
+3. Added 3 new framing patterns:
+   - **safeguard_inadequacy Pattern 7:** `[safeguard] ... not enough` — catches heading-based safeguard dismissals
+   - **safeguard_inadequacy Pattern 8:** `[officials/institutions] not relying on [protections]` — catches institutional rejection
+   - **precedent_framing new pattern:** `may/could influence other [institutions/courts]` — catches contagion/cascade predictions
+4. Post-improvement: toolkit detects 8 framing devices (doubled from 4)
+5. Wrote full analysis annotation as article #203
+6. Updated all doc counts: 770 patterns (was 767), 203 articles (was 202), 709 guard count (was 706)
+7. All tests pass (2578 passed, 24 xfailed)
+
+### Narrative Significance
+Article represents the narrative crossing from press opinion into institutional/regulatory action. NY state court system banning smart glasses is a direct downstream effect of the WIRED/Gizmodo/consumer privacy narrative cycle. The safeguard_inadequacy patterns are particularly important because TechRepublic systematically dismisses *every* Meta privacy safeguard (LED, tamper detection, camera disable) — creating an "unfalsifiable criticism" arc where nothing Meta does can be adequate.
+
+### Stats After This Cycle
+- Framing patterns: 770 (was 767, +3 new patterns across 2 device types)
+- Annotated articles: 203 (was 202)
+- Device types: 106 pattern-matched / 113 total (unchanged)
+- Tests: 2578 passed, 0 failures, 24 xfailed
+
+### Files Changed
+- `examples/sample_output/techrepublic_ny_court_smartglasses_ban_2026_07_10_article.txt` (existed from prior step)
+- `examples/sample_output/techrepublic_ny_court_smartglasses_ban_2026_07_10_analysis.md` (new)
+- `mediascope/analyze/framing.py` (+3 patterns: 2× safeguard_inadequacy, 1× precedent_framing)
+- `tests/test_structural_consistency.py` (pattern count: 706 → 709)
+- `README.md` (stats: 770 patterns, 203 articles)
+- `docs/ARCHITECTURE.md` (770 patterns, 203 articles, 709 guard count)
+- `docs/ACCURACY_GUIDE.md` (203 articles)
+- `docs/QUALITY_STANDARDS.md` (203 articles)
+- `docs/METHODOLOGY.md` (203 articles)
+
+**Commit:** See below.

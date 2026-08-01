@@ -1,0 +1,45 @@
+SOURCE: TechRepublic
+URL: https://www.techrepublic.com/article/news-new-york-smart-glasses-court-ban/
+DATE: 2026-07-10
+AUTHOR: Kezia Jungco
+TITLE: New York Bans Smart Glasses Across 1,240 Courts
+
+New York courts will require visitors to surrender camera-equipped smart glasses before entering.
+
+New York will ban Meta and other smart glasses from all 1,240 state courts starting July 20 over privacy and recording concerns.
+
+Smart glasses can go almost anywhere, but New York courts are drawing the line at the courthouse door.
+
+Starting July 20, anyone entering one of New York's 1,240 state, county, city, town, and village courts must surrender camera-equipped eyewear or headwear to court security under a new statewide rule. The ban covers Meta Ray-Bans and competing devices, including prescription smart glasses.
+
+Lawyers, court employees, visitors, and other attendees must follow the rule, which is meant to prevent unauthorized recordings of hearings, jurors, court staff, and other sensitive activities.
+
+The New York State Unified Court System said the ban applies to eyewear and headwear containing cameras, microphones, computers, or other recording technology, according to a July 1 memo obtained by Bloomberg Law.
+
+"The reason for this prohibition is to ensure that individuals cannot surreptitiously record court proceedings in violation of the New York State Civil Rights Law and applicable court rules," the memo said.
+
+Engadget noted that people who arrive with smart glasses must hand them to uniformed court officers for safekeeping before entering. Prescription users will need to bring a standard pair if they require corrective lenses inside the building.
+
+New York already prohibits photography, audio recording, filming, broadcasting, and telecasting throughout courthouse facilities, including courtrooms, offices, and hallways. Smart glasses complicate enforcement because users can start recording without raising a phone or holding a visible camera.
+
+## Built-in recording lights were not enough
+
+Many smart glasses include an indicator light that turns on during recording. Meta has also introduced safeguards that disable the camera when someone covers or physically alters the light.
+
+Court officials are not relying on those protections. A small light can be easy to miss in a crowded building, while security staff may have no reliable way to confirm whether a device is recording, streaming, or processing images.
+
+According to Gizmodo, the issue drew wider attention in February when a California judge warned people accompanying Meta CEO Mark Zuckerberg not to use smart glasses to record a social-media-addiction trial. The judge reportedly raised concerns that jurors could be filmed and identified.
+
+## Employers may need updated device policies
+
+New York's ban creates a compliance issue for organizations whose employees regularly visit courthouses. Law firms, media companies, government contractors, and businesses involved in litigation may need to tell workers not to bring smart glasses into court buildings or to arrange secure storage before arriving at court.
+
+Disabling the camera may not be enough because the rule focuses on the hardware itself. Employees who use prescription smart glasses could also face accessibility and logistical challenges if they do not bring a backup pair.
+
+The statewide policy may influence other courts and public facilities as smart glasses become more common. Other courts have adopted similar restrictions, but New York appears to be the first state to impose a blanket ban across its entire court system.
+
+For organizations, the safest guidance is straightforward: if the device can record, do not bring it into a New York courthouse.
+
+Wearable technology companies now face a difficult tradeoff.
+
+More discreet designs may help smart glasses gain wider adoption, yet the same designs make them harder to identify in places where privacy, consent, and confidentiality carry legal consequences.
