@@ -1,4 +1,46 @@
 # MediaScope Iteration Log
+## 2026-08-01 09:00 PT — Type D: Toolkit Quality & Documentation — Fix 4 test failures + platform_self_incrimination precision + new escalation/aside patterns + article #202
+
+**Rotation:** D (Toolkit Quality & Documentation)
+**Focus:** Fix all test failures, tighten false positive detection, add new wearables-relevant patterns, annotate new article.
+
+### Test Fixes (4 failures → 0)
+
+**Starting state:** 3,067 passed, 4 failed, 28 xfailed
+**Ending state:** 3,071 passed, 0 failed, 28 xfailed
+
+1. **Pattern count guards stale (102 → 106):** `test_foxbusiness_meta_1_4t_penalty.py` and `test_nyt_ai_reviews.py` expected 102 pattern-based device types, but 4 new types (`category_contamination`, `platform_self_incrimination`, `safeguard_inadequacy`, `success_paradox`) were added in recent iterations without updating the guards. Updated to 106.
+
+2. **Undocumented types in registry:** `test_nyt_ai_reviews.py::test_all_expected_types_registered` had 4 types missing from the expected set. Added with descriptions.
+
+3. **platform_self_incrimination false positive:** `test_reuters_french_antitrust_jul8.py::test_total_device_count` expected 3 framing devices but got 4 — `platform_self_incrimination` was matching "on Meta's services" in a neutral factual context ("content continuing to be distributed on Meta's services"). **Root cause:** Pattern 1 had `(?:own\s+)?` making "own" optional for generic platform terms like "services" and "platform(s)". **Fix:** Split into Pattern 1a (generic terms REQUIRE "own") and Pattern 1b (specific product names like Threads/Instagram/Marketplace don't require "own"). This eliminates false positives on neutral preposition phrases while preserving true detection on "on Meta's **own** marketplace."
+
+4. **Structural consistency guard:** Updated `EXPECTED_TOTAL_PATTERNS` 703 → 706 (1 from Pattern 1 split + 2 new patterns).
+
+### New Patterns (2)
+
+1. **escalation_amplification — "If that wasn't enough":** Rhetorical escalation marker signaling the list of negatives is about to get worse. Covers: "if that wasn't enough", "if that isn't enough", "as if that weren't enough", "if all that wasn't enough", "if that was not bad enough". Discovered in Gizmodo smart-glasses-hit-despite-backlash article (Jul 30, 2026).
+
+2. **editorial_aside — "Oh, and [X]":** Throwaway sarcastic tangent appending a celebrity, politician, or additional fact as if it barely matters, while actually loading the argument. Discovered in: "Oh, and pop star Lorde doesn't care for smart glasses, either." (Gizmodo, Jul 30, 2026).
+
+### New Article #202
+
+**Gizmodo:** "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up" (Jul 30, 2026)
+- Author: Raymond Wong
+- 12 framing devices detected (up from 10 before pattern additions)
+- Key devices: success_paradox (×2), glasshole_revival, escalation_amplification, editorial_aside
+- **Wearables narrative significance:** Control case — Gizmodo (Keleops AG, Swiss-owned, ZERO Condé Nast connection) produces convergent framing with WIRED, confirming the anti-glasses narrative has achieved editorial escape velocity beyond any single publication's incentive structure.
+
+### Doc & Stats Updates
+- README: patterns 764→767, articles 201→202, migrations 967→968, publications 433→441
+- ARCHITECTURE.md: pattern counts updated, article count updated
+- METHODOLOGY.md: article count 201→202
+- QUALITY_STANDARDS.md: article count 201→202
+
+**Commit:** 342f0af — pushed to GitHub
+
+---
+
 ## 2026-08-01 08:00 PT — Type C: Ownership & Funding Deep Dive — Advocacy Coalition Infrastructure + Advance/Reddit Financial Position + WIRED-Advocacy Nexus
 
 **Rotation:** C (Ownership & Funding Deep Dive)
