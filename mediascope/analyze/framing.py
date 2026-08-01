@@ -9969,14 +9969,109 @@ _SAFEGUARD_INADEQUACY_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["safeguard_inadequacy"] = _SAFEGUARD_INADEQUACY_PATTERNS
 
 
+# -----------------------------------------------------------------------
+# platform_self_incrimination (#112) — editorial framing that highlights
+# a company's own platforms, marketplace, or ecosystem as the venue where
+# violations, circumvention services, or evidence against the company's
+# own policies are found, sold, or promoted.
+#
+# The rhetorical structure is:
+#   1. Identify harmful behavior or product (LED tampering, harassment)
+#   2. Reveal it occurs ON the company's own infrastructure
+#   3. Conclude the company can't even police its own ecosystem
+#
+# Distinct from safeguard_inadequacy (which frames technical mitigations
+# as theater): platform_self_incrimination frames the DISTRIBUTION
+# CHANNEL as ironic — the company's own marketplace/platform enables the
+# very activity it claims to prevent.  Also distinct from
+# surveillance_creep (data capture scope) and consent_alarm (consent
+# gaps).
+#
+# Discovered in multiple Jul 2026 articles:
+#   "modders openly advertising the work on Meta's own marketplace"
+#     (HotHardware, Jul 8)
+#   "Many of these services ... have been advertised on Meta's own
+#     platforms" (Engadget, Jul 11)
+#   "'Meta Glasses' repeatedly trended on Meta's own Threads app last
+#     week, for the wrong reasons" (Engadget)
+#   "users can easily buy a cover from TikTok Shop" (PetaPixel, Jul 8)
+#   "Meta also said it would take legal action against people who
+#     promote LED-tampering services" (Engadget) — implies prior
+#     failure to police own platforms
+# -----------------------------------------------------------------------
+_PLATFORM_SELF_INCRIMINATION_PATTERNS: list[re.Pattern] = [
+    # Pattern 1: "on [company]'s own [platform/marketplace/app/platforms]"
+    re.compile(
+        r"\bon\s+"
+        r"(?:Meta(?:'s)?|Facebook(?:'s)?|Google(?:'s)?|Apple(?:'s)?|"
+        r"Amazon(?:'s)?|Microsoft(?:'s)?|TikTok(?:'s)?|"
+        r"the\s+company(?:'s)?|their)\s+"
+        r"(?:own\s+)?"
+        r"(?:platform(?:s)?|marketplace|app(?:s)?|service(?:s)?|"
+        r"social\s+(?:media|network(?:s)?)|website|store|shop|"
+        r"Threads|Instagram|Facebook|WhatsApp|Marketplace)\b",
+        re.IGNORECASE,
+    ),
+    # Pattern 2: "advertised/sold/promoted on [company]'s [platform]"
+    re.compile(
+        r"\b(?:advertis(?:ed|ing)|sold|promot(?:ed|ing)|"
+        r"list(?:ed|ing)|offer(?:ed|ing)|available|found|"
+        r"hosted|posted|shared)\b"
+        r".{0,40}?"
+        r"\bon\s+"
+        r"(?:Meta(?:'s)?|Facebook(?:'s)?|the\s+company(?:'s)?)\s+"
+        r"(?:own\s+)?"
+        r"(?:platform(?:s)?|marketplace|app(?:s)?|Marketplace)\b",
+        re.IGNORECASE,
+    ),
+    # Pattern 3: "trended on [company]'s own [platform] ... for the wrong reasons"
+    re.compile(
+        r"\b(?:trended|went\s+viral|blew\s+up|spread)\b"
+        r".{0,60}?"
+        r"\b(?:Meta(?:'s)?|the\s+company(?:'s)?)\s+"
+        r"(?:own\s+)?"
+        r"(?:platform(?:s)?|Threads|Instagram|Facebook)\b"
+        r".{0,40}?"
+        r"\b(?:wrong\s+reasons?|embarrass(?:ing|ment)|ironi(?:c|cally)|"
+        r"backfir(?:e|ed|ing)|against\s+(?:them|it|the\s+company))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Pattern 4: "buy [circumvention product] from [platform]" irony
+    re.compile(
+        r"\b(?:buy|purchase|order|get)\s+"
+        r"(?:a\s+)?(?:\w+\s+){0,4}?"
+        r"(?:cover|blocker|mod|kit|hack|tool|service)\b"
+        r".{0,30}?"
+        r"\b(?:from|on|via|through)\s+"
+        r"(?:TikTok\s+Shop|Marketplace|Facebook\s+Marketplace|"
+        r"Instagram|Meta(?:'s)?|the\s+company(?:'s)?)\b",
+        re.IGNORECASE,
+    ),
+    # Pattern 5: company "also" removing/banning from own platform — implies prior neglect
+    re.compile(
+        r"\b(?:Meta|Facebook|the\s+company)\b"
+        r".{0,60}?"
+        r"\b(?:also\s+)?(?:remov(?:e|es|ed|ing)|bann(?:ed|ing)|"
+        r"crack(?:ed|ing)\s+down\s+on|taking?\s+down|purg(?:ed|ing))\s+"
+        r"(?:\w+\s+){0,4}?"
+        r"(?:ads?|posts?|listings?|accounts?|services?|videos?)\b"
+        r".{0,40}?"
+        r"\b(?:that\s+)?(?:promot(?:e|es|ed|ing)|advertis(?:e|es|ed|ing)|"
+        r"offer(?:s|ed|ing)?|sell(?:s|ing)?)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+_DEVICE_PATTERNS["platform_self_incrimination"] = _PLATFORM_SELF_INCRIMINATION_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 104 pattern-matched device types plus 7 structural
-    post-pass types (111 total).
+    Scans for 105 pattern-matched device types plus 7 structural
+    post-pass types (112 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
@@ -10027,6 +10122,7 @@ def detect_framing_devices(
     strategic_disclosure, strategic_reversal, straw_man,
     surveillance_creep, surveillance_enumeration, success_paradox,
     safeguard_inadequacy, glasshole_revival, walking_camera,
+    platform_self_incrimination,
     talent_hemorrhage, taxonomy_framing, timeline_implication,
     two_tier_treatment, ultimatum_framing,
     usage_dismissal_undercut, valuation_comparison,

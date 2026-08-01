@@ -185,7 +185,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 111 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (94 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 112 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (95 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -303,6 +303,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Chilling Effect** | Self-censorship or avoidance behavior by product users/owners due to social stigma. Detects when even advocates modify their behavior — too scared/embarrassed to wear, folding up glasses in public, reconsidering purchase, not appropriate to wear. Distinct from glasshole_revival (pejorative labeling) and walking_camera (dehumanization): chilling_effect captures the internalized behavioral response where stigma becomes self-reinforcing | "too scared to wear them in public"; "fold them up when I'm in a crowd"; "reconsidering whether to wear"; "not a good idea to have those"; "you're basically a predator" | PetaPixel (Jul 14, 2026) — "Meta Smart Glasses Owners Too Scared to Wear Them in Public" documenting self-censorship by smart glasses owners |
 | **Success Paradox** | Headline/lede acknowledges objectively positive commercial news (revenue growth, market success, unit sales) then immediately pivots via "even as"/"despite"/"but" to a negative narrative that dominates the article's word count. Uses genuine positive data as a Trojan horse for negative framing — positive data is the minority content granting credibility to a majority-negative piece. Distinct from grudging_concession (word-level markers) and editorial_deflation (puncturing ambition): success_paradox is a structural imbalance where ~20% positive data enables ~80% negative context | "a hit even as privacy concerns pile up"; "popular despite an increasingly prickly climate"; "nearly doubled... but backlash"; "growth doesn't mean a tipping point isn't coming" | Gizmodo (Jul 30, 2026) — "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up" — EssilorLuxottica Q2 revenue nearly doubled used as setup for privacy violation catalogue. Also: MarketWatch (Jun 27, 2026) — "Big Tech is obsessed with smart glasses. Now it has to convince people to wear them" |
 | **Safeguard Inadequacy** | Introduces a technical or policy safeguard (privacy LED, opt-out toggle, data deletion option, recording indicator) then systematically undermines it as insufficient, easily circumvented, or performative. Frames mitigation as theater, concluding no safeguard can ever be adequate. Distinct from consent_alarm (consent gaps, not safeguard dismissal), surveillance_creep (persistent recording, not mitigation failure), and success_paradox (commercial vs. privacy tension, not safeguard undermining) | "privacy light... but people might not see it or know what it means"; "growing market for disabling these indicators"; "the option to opt out is no longer available"; "offered up services to alter the glasses"; "no real opt-out" | 9to5Google (Jul 7, 2026) — "Meta Ray-Ban glasses now disable the camera if privacy light breaks" — acknowledges safeguard then details circumvention market. Also: Northeastern (Jun 22, 2026), LiveMint (Apr 2025 policy coverage), Laptop Mag — systematic safeguard dismissal across multiple outlets |
+| **Platform Self-Incrimination** | Highlights that violations, circumvention services, or evidence against the company's own policies are found, sold, or promoted on the company's own platforms, marketplace, or ecosystem. Frames the distribution channel as ironic self-undermining: the company can't even police its own infrastructure. Distinct from safeguard_inadequacy (which frames technical mitigations as theater) and surveillance_creep (data capture scope): platform_self_incrimination frames the DISTRIBUTION CHANNEL as ironic evidence of systemic failure | "advertised on Meta's own platforms"; "trended on Meta's own Threads app ... for the wrong reasons"; "buy a cover from TikTok Shop"; "listed on Facebook Marketplace"; "promoted on Meta's Marketplace" | Engadget (Jul 11, 2026) — "Many of these services ... have been advertised on Meta's own platforms." Also: HotHardware (Jul 8, 2026) — "modders openly advertising the work on Meta's own marketplace"; PetaPixel (Jul 8, 2026) — "users can easily buy a cover from TikTok Shop" |
 
 #### Structural Devices (Post-Pass)
 
@@ -877,7 +878,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 111-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 112-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1429,7 +1430,7 @@ A potential correction would segment articles into editorial-prose and block-quo
 
 ### 17.1 Overview
 
-MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **198 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
+MediaScope's analytical methods — framing device taxonomy, sentiment correction paths, source stance analysis, and same-event comparison methodology — are all grounded in a manually annotated corpus of **199 real articles**. Every framing device type was discovered from a real article, every correction path was triggered by a real VADER failure, and every analytical method is validated against real editorial output.
 
 This section documents the corpus as a quantitative research resource: its composition, temporal coverage, publication diversity, genre distribution, and the validation evidence it provides for each analytical subsystem.
 
@@ -1579,7 +1580,7 @@ The EU DSA "Addictive Design" cluster (Jul 10, 2026) is the widest genre-control
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 111 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 112 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|
