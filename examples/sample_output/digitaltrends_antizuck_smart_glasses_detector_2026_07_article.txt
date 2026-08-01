@@ -1,0 +1,27 @@
+A new iPhone app can sniff out Meta smart glasses lurking nearby - Digital Trends
+
+By Vikhyaat Vivek
+
+Android users got an unusual privacy tool earlier this year that could alert them when smart glasses were nearby. Five months later, iPhone owners finally have something similar, and its name makes its feelings about Meta pretty obvious.
+
+AntiZuck is a $2.99 iPhone app that scans for Bluetooth signals associated with smart glasses and alerts you when it thinks one is close. It supports devices including Meta Ray-Bans, Snap Spectacles, Amazon Echo Frames, and RayNeo glasses, while the developer says additional hardware is being added.
+
+The app presents detected devices on a live radar-like screen alongside rough proximity and a confidence rating. It can also remember repeat sightings, send local notifications, and let you mark familiar devices so they stop triggering alerts. There are Home Screen and Lock Screen widgets, a Control Center toggle, and support for assigning scanning controls to the iPhone's Action Button.
+
+How does this work?
+
+There is an important limitation here. AntiZuck can't actually tell whether someone has started filming or taking a photo. What it does is look for a Bluetooth signal broadcast by supported hardware. According to the App Store listing, smart glasses tend to advertise those signals during events such as powering on, pairing, or opening their charging case.
+
+Independent testing also found that Meta glasses could disappear from the scanner once they stopped actively advertising over Bluetooth. The same technology can identify other Meta hardware such as Quest headsets, meaning a detection does not automatically mean somebody nearby is wearing camera-equipped glasses.
+
+Everything happens locally on the iPhone. AntiZuck requires no account, doesn't display any ads, and its App Store privacy disclosure says the developer collects no user data.
+
+Android users got here first
+
+The concept itself isn't new. In February, hobbyist developer Yves Jeanrenaud released Nearby Glasses for Android, which uses Bluetooth Low Energy identifiers to spot compatible smart glasses and send alerts. The free, open-source app has since surpassed 100,000 downloads on Google Play.
+
+That $2.99 probably won't tell you whether the stranger across the room is secretly filming. It can at least give your iPhone another way to tell you that a pair of camera-equipped glasses may be nearby.
+
+---
+Source: https://www.digitaltrends.com/wearables/a-new-iphone-app-can-sniff-out-meta-smart-glasses-lurking-nearby/
+Retrieved: 2026-08-01

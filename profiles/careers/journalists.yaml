@@ -17623,3 +17623,26 @@ journalists:
     has no Condé Nast / Advance Publications connection.'
   source_urls:
   - https://muckrack.com/karissa-bell/articles
+
+- beats:
+  - consumer_tech
+  - wearables
+  - smartphones
+  career:
+  - publication: digital_trends
+    role: Tech Journalist / Reviewer
+    start: '2019'
+    end: present
+  multi_publication: false
+  name: Vikhyaat Vivek
+  notes: 'Digital Trends tech journalist and reviewer with 7+ years covering consumer
+    hardware with focus on wearables, smartphones, and accessories. KEY for MediaScope:
+    author of AntiZuck Smart Glasses Scanner coverage — the article documenting
+    counter-surveillance apps reaching the App Store paid chart. Also authored
+    companion article about the app climbing to #3 on US paid chart. Coverage tone is
+    neutral-to-informational (product news framing) but loaded language in headlines
+    ("lurking nearby," "sniff out") creates negative sentiment. CONTROL NOTE: Digital
+    Trends (Designtechnica Corp, owned by Static Media) has no Condé Nast / Advance
+    Publications connection.'
+  source_urls:
+  - https://www.digitaltrends.com/wearables/a-new-iphone-app-can-sniff-out-meta-smart-glasses-lurking-nearby/

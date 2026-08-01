@@ -1145,6 +1145,19 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             r"(?!\w)"
         ),
     },
+    "Counter-Surveillance Consumer Apps": {
+        "aliases": [
+            "AntiZuck", "AntiZuck Smart Glasses Scanner",
+            "Nearby Glasses", "smart glasses detector",
+            "smart glasses scanner",
+        ],
+        "regex": (
+            r"(?<!\w)"
+            r"(AntiZuck|Nearby\s+Glasses|"
+            r"smart\s+glasses\s+(?:detector|scanner)(?=\s+(?:app|tool|is|has|was|can|climbed|reached)))"
+            r"(?!\w)"
+        ),
+    },
 }
 
 

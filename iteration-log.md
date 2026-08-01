@@ -1,4 +1,61 @@
 # MediaScope Iteration Log
+## 2026-08-01 04:00 PT — Type D: Toolkit Quality & Documentation — platform_self_incrimination (#112) + Engadget Analysis
+
+**Rotation:** D (Toolkit Quality & Documentation)
+**Focus:** New framing device for wearables-specific editorial pattern, full documentation sync, annotated article expansion
+
+### Key Improvements
+
+#### 1. New Framing Device: `platform_self_incrimination` (#112)
+Editorial technique where a company's own platforms, marketplace, or ecosystem provide evidence against itself. The rhetorical move: "The company can't even police its own infrastructure."
+
+**5 regex patterns:**
+- Pattern 1: "on [Company]'s own [platform/marketplace/app]"
+- Pattern 2: "advertised/sold/promoted on [Company]'s [platform]"
+- Pattern 3: "trended on [Company]'s [platform] ... for the wrong reasons"
+- Pattern 4: "buy [circumvention product] from [Platform]" irony
+- Pattern 5: Company removing/banning content that was promoted on own platforms (implies prior neglect)
+
+**Discovered from real articles:**
+- Engadget (Jul 11): "Many of these services ... have been advertised on Meta's own platforms"
+- HotHardware (Jul 8): "modders openly advertising the work on Meta's own marketplace"
+- PetaPixel (Jul 8): "users can easily buy a cover from TikTok Shop"
+- Engadget: "'Meta Glasses' repeatedly trended on Meta's own Threads app last week, for the wrong reasons"
+
+**Distinct from:** safeguard_inadequacy (which frames mitigations as theater) — platform_self_incrimination frames the DISTRIBUTION CHANNEL as ironic self-undermining.
+
+#### 2. New Annotated Article (199th): Engadget "The Meta Glasses Backlash Is Changing How (Or If) People Use Them"
+- Author: Karissa Bell
+- 10 framing devices detected: chilling_effect (5 instances — strongest in corpus), glasshole_revival, platform_self_incrimination (2 instances), safeguard_inadequacy, loaded_language, grudging_concession, outsourced_intensity, editorial_deflation, consent_alarm, walking_camera
+- Narrative phase classification: Phase 3 (Behavioral Consequences) — the article where abstract discourse converts to empirical behavioral evidence
+- Full source analysis: 4/5 named sources adversarial, 1 supportive but structurally subordinated
+
+#### 3. README Stats Sync
+- Entity clusters: 94→95 (India Surveillance/FRT Deployment cluster from Type C)
+- Entity aliases: 906→916 (+10 from India cluster, +8 from CNN Recording Wearables cluster, -2 dedup)
+- Entity regex: 69→70
+- Framing device types: 111→112 (platform_self_incrimination)
+- Compiled framing patterns: 754→759
+- Annotated articles: 198→199
+
+#### 4. Full Documentation Update
+Updated counts across ALL consistency-checked files:
+- README.md (stats table, FRAMING_REFERENCE link, test descriptions)
+- docs/METHODOLOGY.md (intro tier counts, extended device table, taxonomy reference)
+- docs/ARCHITECTURE.md (framing types header, extended device count label, device name list, pattern count, test description)
+- docs/FRAMING_REFERENCE.md (header count, tier legend, counts table, new device row)
+- docs/AGENT_GUIDE.md (framing tier count)
+- docs/ACCURACY_GUIDE.md (annotated article counts)
+- docs/QUALITY_STANDARDS.md (annotated article count)
+- mediascope/cli.py (analyze command docstring)
+- mediascope/analyze/framing.py (docstring count, pattern-matched count)
+- tests/test_structural_consistency.py (EXPECTED_TOTAL, EXPECTED_PATTERN_MATCHED, EXPECTED_TOTAL_PATTERNS)
+
+**Stats delta:** +1 framing device type, +5 patterns, +1 annotated article
+**Tests:** 186 passed (test_structural_consistency + test_accuracy_guide + test_entities + test_careers)
+**Stats check:** ✅ README stats current
+**Commit:** `55273ac` — pushed to GitHub
+
 ## 2026-08-01 03:00 PT — Type C: Ownership & Funding Deep Dive — Delhi Protest Surveillance + RDDT Q2 Crash + Financial Pressure Convergence
 
 **Rotation:** C (Ownership & Funding Deep Dive)
@@ -25395,5 +25452,52 @@ Insider selling in July: Huffman sold ~8,071 shares at $190-$206 (Jul 15). Wong 
 - Access Now Financials: https://www.accessnow.org/financials/
 - RDDT Insider Sales: https://www.insidermonkey.com/insider-trading/company/reddit+inc/1713445/sales/
 - RDDT SEC Filings: https://www.marketbeat.com/stocks/NYSE/RDDT/sec-filings/
+
+**Commit:** Pending — will push after log entry.
+
+---
+
+## Cycle 2026-08-01T05:00 PT — Type A (Article Deep Dive)
+
+### Focus: Digital Trends AntiZuck Smart Glasses Detector (Article #200)
+
+**Article analyzed:** "A new iPhone app can sniff out Meta smart glasses lurking nearby" by Vikhyaat Vivek, Digital Trends
+**URL:** https://www.digitaltrends.com/wearables/a-new-iphone-app-can-sniff-out-meta-smart-glasses-lurking-nearby/
+
+### What Was Improved
+
+1. **Article #200 fully annotated** — 7 framing devices detected (CEO personalization, loaded language ×3, surveillance creep, safeguard inadequacy, editorial aside), corrected sentiment −0.35, zero Meta representation in sources.
+
+2. **New entity cluster #96: Counter-Surveillance Consumer Apps** — 5 aliases (AntiZuck, AntiZuck Smart Glasses Scanner, Nearby Glasses, smart glasses detector, smart glasses scanner) with custom regex. Represents the backlash commercialization phase: third-party products created specifically to counter Meta glasses.
+
+3. **New journalist #252: Vikhyaat Vivek** (Digital Trends) — consumer hardware focus, 7+ years. Static Media / Designtechnica Corp ownership (no Condé Nast connection).
+
+4. **Candidate framing device proposed: backlash_commercialization (#113)** — when negative sentiment matures into commercial counter-products, and their App Store success is cited as market validation of the backlash. NOT yet pattern-matched — needs 2+ more articles from different publications for validation. Supporting evidence:
+   - AntiZuck: $2.99, #3 US paid App Store chart
+   - Nearby Glasses: free, 100K+ downloads on Google Play
+   - DuckDuckGo "zero AI" satirical sunglasses (sidebar, not yet fully analyzed)
+
+5. **Narrative significance:** This is the first Phase 4 article — backlash has commercialized. The self-reinforcing cycle: press covers backlash → developers build counter-tools → counter-tools chart → press covers success → more developers build counter-tools.
+
+6. **Digital Trends added** as 8th tracked publication outlet (was not in the original 7).
+
+### Stats After This Cycle
+- Entity clusters: 96 (was 95), aliases: 921 (was 916), regex: 71 (was 70)
+- Annotated articles: 200 (was 199, milestone)
+- Journalists: 252 (was 251)
+- Framing devices: 112 (unchanged) + 1 candidate
+- Tests: 186 passed, 0 failures
+
+### Files Changed
+- `examples/sample_output/digitaltrends_antizuck_smart_glasses_detector_2026_07_article.txt` (new)
+- `examples/sample_output/digitaltrends_antizuck_smart_glasses_detector_2026_07_analysis.md` (new)
+- `mediascope/analyze/entities.py` (new cluster #96)
+- `profiles/careers/journalists.yaml` (Vikhyaat Vivek)
+- `README.md` (stats: 96 clusters, 200 articles, 252 journalists)
+- `docs/ENTITY_REFERENCE.md` (cluster #96 row, updated counts)
+- `docs/METHODOLOGY.md` (cluster table, article count)
+- `docs/ARCHITECTURE.md` (article count)
+- `docs/ACCURACY_GUIDE.md` (article count)
+- `examples/careers_demo.py` (journalist count)
 
 **Commit:** Pending — will push after log entry.

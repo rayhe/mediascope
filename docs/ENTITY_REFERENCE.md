@@ -1,6 +1,6 @@
 # Entity Detection & Clustering Quick Reference
 
-> A compact lookup card for all 95 entity clusters (916 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
+> A compact lookup card for all 96 entity clusters (921 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
 
 ---
 
@@ -15,8 +15,8 @@ Entity detection is the **first stage** of the analysis pipeline — every downs
 | **Cluster** | A named group representing a single trackable entity (company, org, person category). Example: `Meta` |
 | **Alias** | A text string that maps to a cluster. Example: `"Facebook"`, `"Zuckerberg"`, `"Instagram"` all → `Meta` |
 | **Canonical Name** | The best alias match for a given text span. `"Andrew Bosworth"` matched in the Meta cluster resolves to canonical name `"Andrew Bosworth"`, not `"Meta"` |
-| **Custom Regex** | A hand-tuned regex for the cluster (70 of 95 clusters). Handles homographs, negative lookaheads, and context-sensitive matching |
-| **Auto Regex** | Word-boundary patterns auto-generated from the alias list (25 of 95 clusters). Simpler but adequate for unambiguous names |
+| **Custom Regex** | A hand-tuned regex for the cluster (71 of 96 clusters). Handles homographs, negative lookaheads, and context-sensitive matching |
+| **Auto Regex** | Word-boundary patterns auto-generated from the alias list (25 of 96 clusters). Simpler but adequate for unambiguous names |
 
 ### Pipeline Position
 
@@ -170,6 +170,7 @@ Cloud providers, AI startups, and infrastructure companies.
 | 93 | **eBay** | 2 | custom | eBay, EBAY | E-commerce marketplace. Added Jul 16 from IBD Wedbush hyperscalers article. |
 | 94 | **Recording Wearable Devices** | 8 | custom | Amazon Bee, Bee Pioneer, Plaud, Notepin, Notepin S, Humane AI Pin, Omi, Compass | Non-glasses wearable recording devices (wristbands, clip-on recorders, pendants). Added Aug 1 from CNN "AI devices that see, listen and record" article (Jul 26). These represent the narrative broadening from "Meta glasses are the problem" to "ALL recording wearables are the problem." Tracking this cluster separately from Smart Glasses Competitors (#48) because the form factor and backlash dynamics differ. |
 | 95 | **India Surveillance / FRT Deployment** | 10 | custom | Delhi Police, Jantar Mantar, NCRB, Abhigyan, Internet Freedom Foundation, IFF, Cockroach Janta Party, CJP, Aishe Ghosh, AA Rahim | India state deployment of AI smart glasses + facial recognition at protests (Jul 2026). Supreme Court and Delhi HC PILs filed challenging legality. First confirmed state use of AI smart glasses for protest surveillance — validates advocacy groups' predictions. Added Aug 1. |
+| 96 | **Counter-Surveillance Consumer Apps** | 5 | custom | AntiZuck, AntiZuck Smart Glasses Scanner, Nearby Glasses, smart glasses detector, smart glasses scanner | Counter-surveillance consumer products designed to detect, block, or satirize smart glasses. AntiZuck ($2.99 iOS, #3 US paid chart) and Nearby Glasses (free Android, 100K+ downloads) represent Phase 4 of the wearables backlash: commercialization of anti-Meta sentiment. Added Aug 1. |
 | 56 | **Australia** | 5 | custom | Australia, Australian government, eSafety Commissioner, Julie Inman Grant, Inman Grant | Extended Jul 14: added eSafety Commissioner Julie Inman Grant by name — previously only the title was matched. |
 | 57 | **Legal/Judicial** | 6 | custom | Delaware courts, Section 230, DSA, MDL numbers, federal courts/judges, Supreme Court | Extended in Jul 2026 to catch federal judges invisible in Reuters $1.4T article |
 
