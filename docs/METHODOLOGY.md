@@ -185,7 +185,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 110 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (93 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 111 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (94 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -302,6 +302,7 @@ These were added through systematic analysis of real articles from the five trac
 | **Walking Camera** | Framing that reduces smart glasses wearers to ambulatory surveillance devices, dehumanizing the wearer by equating them with the device's camera. Positions every person wearing smart glasses as a threat to bystanders. Distinct from surveillance_creep (ambient data capture) and consent_alarm (notification gaps): walking_camera frames the human wearer as the surveillance apparatus itself | "walking surveillance camera"; "camera on your face"; "turns every wearer into a surveillance device"; "face-mounted camera" | CNN (Jul 26, 2026), Gizmodo (Jul 30, 2026) — framing smart glasses wearers as ambulatory surveillance devices in privacy coverage |
 | **Chilling Effect** | Self-censorship or avoidance behavior by product users/owners due to social stigma. Detects when even advocates modify their behavior — too scared/embarrassed to wear, folding up glasses in public, reconsidering purchase, not appropriate to wear. Distinct from glasshole_revival (pejorative labeling) and walking_camera (dehumanization): chilling_effect captures the internalized behavioral response where stigma becomes self-reinforcing | "too scared to wear them in public"; "fold them up when I'm in a crowd"; "reconsidering whether to wear"; "not a good idea to have those"; "you're basically a predator" | PetaPixel (Jul 14, 2026) — "Meta Smart Glasses Owners Too Scared to Wear Them in Public" documenting self-censorship by smart glasses owners |
 | **Success Paradox** | Headline/lede acknowledges objectively positive commercial news (revenue growth, market success, unit sales) then immediately pivots via "even as"/"despite"/"but" to a negative narrative that dominates the article's word count. Uses genuine positive data as a Trojan horse for negative framing — positive data is the minority content granting credibility to a majority-negative piece. Distinct from grudging_concession (word-level markers) and editorial_deflation (puncturing ambition): success_paradox is a structural imbalance where ~20% positive data enables ~80% negative context | "a hit even as privacy concerns pile up"; "popular despite an increasingly prickly climate"; "nearly doubled... but backlash"; "growth doesn't mean a tipping point isn't coming" | Gizmodo (Jul 30, 2026) — "Smart Glasses Are a Hit Even as Privacy Concerns Pile Up" — EssilorLuxottica Q2 revenue nearly doubled used as setup for privacy violation catalogue. Also: MarketWatch (Jun 27, 2026) — "Big Tech is obsessed with smart glasses. Now it has to convince people to wear them" |
+| **Safeguard Inadequacy** | Introduces a technical or policy safeguard (privacy LED, opt-out toggle, data deletion option, recording indicator) then systematically undermines it as insufficient, easily circumvented, or performative. Frames mitigation as theater, concluding no safeguard can ever be adequate. Distinct from consent_alarm (consent gaps, not safeguard dismissal), surveillance_creep (persistent recording, not mitigation failure), and success_paradox (commercial vs. privacy tension, not safeguard undermining) | "privacy light... but people might not see it or know what it means"; "growing market for disabling these indicators"; "the option to opt out is no longer available"; "offered up services to alter the glasses"; "no real opt-out" | 9to5Google (Jul 7, 2026) — "Meta Ray-Ban glasses now disable the camera if privacy light breaks" — acknowledges safeguard then details circumvention market. Also: Northeastern (Jun 22, 2026), LiveMint (Apr 2025 policy coverage), Laptop Mag — systematic safeguard dismissal across multiple outlets |
 
 #### Structural Devices (Post-Pass)
 
@@ -876,7 +877,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 110-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 111-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1576,7 +1577,7 @@ The EU DSA "Addictive Design" cluster (Jul 10, 2026) is the widest genre-control
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 110 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 111 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|

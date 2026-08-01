@@ -1,4 +1,88 @@
 # MediaScope Iteration Log
+## 2026-07-31 20:00 PT — Type D: Toolkit Quality, safeguard_inadequacy Framing Device (#111)
+
+**Rotation:** D (Toolkit Quality & Documentation)
+**Focus:** Test suite fix, new wearables-specific framing device, full doc sync
+
+### Findings
+
+#### 1. Test Suite Fix: ACCURACY_GUIDE article count stale
+- `test_accuracy_guide.py::test_annotated_count_matches_corpus` was failing: ACCURACY_GUIDE stated 196 articles but corpus has 197 (after Gizmodo article added in Type A iteration)
+- Fixed 4 occurrences of 196 → 197 in `docs/ACCURACY_GUIDE.md`
+- Fixed README.md: annotated articles 196 → 197, framing patterns 743 → 754
+- `count_stats.py --check` now passes
+
+#### 2. New Framing Device: `safeguard_inadequacy` (#111)
+Added new wearables-specific framing device detecting the editorial pattern where a technical or policy safeguard is introduced and then systematically undermined:
+
+**Six regex patterns:**
+1. `[safeguard] ... but/however/yet ... [inadequacy]` — "privacy light but people might not see it"
+2. `growing/emerging market/industry for defeating/disabling [safeguards]` — "growing market for disabling indicators"
+3. `option/ability to opt-out ... no longer available/removed` — "option to disable voice recordings storage is no longer available"
+4. `offered/sell services/kits to alter/modify/disable` — "offered up services to alter the glasses"
+5. `no real/true/meaningful opt-out` / `cannot opt out` — "no real opt-out option"
+6. `[safeguard] ... security theater/window dressing/fig leaf` — "privacy controls are security theater"
+
+**Discovery sources:**
+- 9to5Google (Jul 7, 2026): Meta Ray-Ban privacy light camera update
+- Northeastern (Jun 22, 2026): Smart glasses privacy regulation
+- LiveMint: Voice recording opt-out removal coverage
+- Laptop Mag: Ray-Ban privacy policy update
+
+**Regression test:** `tests/test_safeguard_inadequacy.py` — 21 tests (17 positive, 4 negative)
+
+#### 3. Full Documentation Sync
+Updated 11 files across 7 doc files + code:
+- `mediascope/analyze/framing.py`: 111 device types, 104 pattern-matched, docstring device list updated
+- `tests/test_structural_consistency.py`: EXPECTED_TOTAL 111, EXPECTED_PATTERN_MATCHED 104, EXPECTED_TOTAL_PATTERNS 693
+- `docs/FRAMING_REFERENCE.md`: Extended tier 94, new row #111
+- `docs/METHODOLOGY.md`: Extended table row added, tier intro 111/10/94/7
+- `docs/ARCHITECTURE.md`: Device name list updated, extended (94), test listing, counts
+- `docs/AGENT_GUIDE.md`: Tier counts 111/10/94/7
+- `docs/ACCURACY_GUIDE.md`: 197 annotated articles
+- `mediascope/cli.py`: 111 types
+- `README.md`: All stat rows current (111 types, 754 patterns, 197 articles, 3099 tests/140 files)
+
+### Verification
+- `count_stats.py --check`: ✅ README stats current
+- `test_structural_consistency.py`: 124 passed
+- `test_accuracy_guide.py`: 13 passed
+- `test_safeguard_inadequacy.py`: 21 passed (17 positive + 4 negative)
+- Total verified: 158 tests, 0 failures
+
+### Stats after
+- 111 types (10+94+7), 754 patterns, 197 articles, 3099 tests/140 files, 247 journalists
+
+## 2026-07-31 19:00 PT — Type A: Gizmodo Smart Glasses EssilorLuxottica Q2 Deep Dive
+
+**Rotation:** A (Article Deep Dive)
+**Focus:** Meta wearables/glasses narrative — success_paradox framing in EssilorLuxottica Q2 coverage
+**Article:** [Smart Glasses Are a Hit Even as Privacy Concerns Pile Up](https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911) — Raymond Wong, Gizmodo, ~Jul 30 2026
+
+### Findings
+- **New framing device: `success_paradox` (#110)** — headline acknowledges positive commercial news (AI glasses revenue nearly doubled), then pivots via "even as" to negative framing dominating ~80% of word count
+- **73% self-citation rate** (8 of 11 outlinks → Gizmodo) — closed narrative loop
+- **Zero named expert sources** — all assertions editorial
+- **VADER sentiment inversion:** predicted ~+0.50 vs manual −0.25 (~0.75 gap) — headline positive data masks article-level negativity
+- 5 regex patterns, 17 regression tests (13 positive, 4 negative)
+
+### Files Changed
+- `mediascope/analyze/framing.py` — `success_paradox` device + docstring update
+- `tests/test_success_paradox.py` — new (17 tests)
+- `tests/test_structural_consistency.py` — count guards updated (EXPECTED_TOTAL 110, EXPECTED_PATTERN_MATCHED 103, EXPECTED_TOTAL_PATTERNS 687)
+- `examples/sample_output/gizmodo_smart_glasses_hit_privacy_pile_up_2026_07_30_article.txt` — new
+- `examples/sample_output/gizmodo_smart_glasses_hit_privacy_pile_up_2026_07_30_analysis.md` — new
+- All 7 doc files + `mediascope/cli.py` — count sync
+
+### Source URLs
+- Article: https://gizmodo.com/smart-glasses-are-a-hit-even-as-privacy-concerns-pile-up-2000792911
+- EssilorLuxottica Q2 press release: https://www.globenewswire.com/news-release/2026/07/28/3334563/0/en/essilorluxottica-q2-h1-2026-results-solid-revenue-trajectory-at-9-7-in-h1-with-q2-at-8-7-increasing-profitability-with-adj-operating-profit-15.html
+- WSJ EssilorLuxottica Q2: https://www.wsj.com/business/retail/ray-ban-maker-essilorluxotticas-sales-growth-slows-despite-smartglasses-boom-44f215f8
+- Reuters EssilorLuxottica Q2: https://www.reuters.com/business/essilorluxottica-profit-beats-forecasts-ai-glasses-myopia-products-drive-revenue-2026-07-28/
+
+**Commit:** `3427afd` — pushed to GitHub
+**Stats after:** 110 types (10+93+7), 687 patterns, 197 articles, 3078 tests/139 files
+
 ## 2026-07-31 16:00 PT — Type C: RDDT Q2 Crash, Advance Margin Loan Danger Zone, Advocacy Coalition Mapping
 
 **Rotation:** C (Ownership & Funding Deep Dive)

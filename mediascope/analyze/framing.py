@@ -9858,6 +9858,116 @@ _SUCCESS_PARADOX_PATTERNS: list[re.Pattern] = [
 ]
 _DEVICE_PATTERNS["success_paradox"] = _SUCCESS_PARADOX_PATTERNS
 
+# -----------------------------------------------------------------------
+# safeguard_inadequacy (#111) — editorial framing that introduces a
+# technical or policy safeguard (privacy LED, opt-out, data deletion,
+# terms of service, recording indicator) and then systematically
+# undermines it as insufficient, easily circumvented, or performative.
+#
+# The rhetorical structure is:
+#   1. Acknowledge safeguard exists (privacy light, opt-out toggle)
+#   2. Introduce undermining evidence (workarounds, market for defeat,
+#      user ignorance, removal of the safeguard, inadequacy)
+#   3. Conclude safeguard is meaningless → product is inherently unsafe
+#
+# Distinct from consent_alarm (consent gaps, not safeguard dismissal),
+# surveillance_creep (persistent recording, not mitigation failure),
+# and success_paradox (commercial vs. privacy tension, not safeguard
+# undermining).  safeguard_inadequacy frames the MITIGATION as theater,
+# making the conclusion that no safeguard can ever be adequate.
+#
+# Discovered in multiple Jul 2026 articles:
+#   "people might not see it or know what it means" (Northeastern, Jun 22)
+#   "there is a growing market for disabling these light indicators"
+#   "there were workarounds to avoid the light being seen" (9to5Google Jul 7)
+#   "The option to disable voice recordings storage is no longer available"
+#     (LiveMint, Apr 2025 policy change coverage)
+#   "Some have even offered up services to alter the glasses" (9to5Google)
+#   "you run the risk of your data being misused" (Laptop Mag)
+# -----------------------------------------------------------------------
+_SAFEGUARD_INADEQUACY_PATTERNS: list[re.Pattern] = [
+    # Pattern 1: "[safeguard] ... but/however/yet ... [inadequacy]"
+    # "privacy light ... but people might not see it"
+    re.compile(
+        r"\b(?:privacy\s+(?:light|LED|indicator|shutter)|"
+        r"recording\s+(?:light|indicator|LED)|"
+        r"capture\s+LED|notification\s+light|"
+        r"opt[- ]?out|data\s+deletion|"
+        r"consent\s+(?:toggle|switch|option|setting))\b"
+        r".{0,120}?"
+        r"\b(?:but|however|yet|though|although|still|nonetheless|"
+        r"unfortunately|problem\s+is|catch\s+is)\b"
+        r".{0,80}?"
+        r"\b(?:inadequate|insufficient|meaningless|useless|ineffective|"
+        r"easily\s+(?:circumvent(?:ed|ing)?|defeat(?:ed|ing)?|bypass(?:ed|ing)?|"
+        r"disabl(?:e|ed|ing)|remov(?:e|ed|ing)|block(?:ed|ing)?|cover(?:ed|ing)?)|"
+        r"workarounds?|might\s+not\s+(?:see|notice|know)|"
+        r"doesn'?t\s+(?:help|matter|work|stop)|"
+        r"too\s+(?:small|dim|subtle|late|little)|"
+        r"no\s+(?:guarantee|assurance|way\s+to\s+know)|"
+        r"tamper(?:ed|ing)?|destroy(?:ed|ing)?|block(?:ed|ing)?|cover(?:ed|ing)?|"
+        r"disabl(?:e|ed|ing)|remov(?:e|ed|al|ing))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Pattern 2: "growing market for disabling/defeating [safeguards]"
+    re.compile(
+        r"\b(?:growing|thriving|booming|emerging|active|lucrative)\s+"
+        r"(?:market|industry|business|demand|trade|service)"
+        r"(?:\s+\w+){0,3}?\s+"
+        r"(?:for|in|around)\s+"
+        r"(?:\w+\s+){0,3}?"
+        r"(?:disabl(?:e|es|ed|ing)|defeat(?:s|ed|ing)?|"
+        r"remov(?:e|es|ed|ing)|bypass(?:es|ed|ing)?|"
+        r"tamper(?:s|ed|ing)?|circumvent(?:s|ed|ing)?|"
+        r"block(?:s|ed|ing)?|cover(?:s|ed|ing)?)\b",
+        re.IGNORECASE,
+    ),
+    # Pattern 3: "[option/ability to] [opt out/disable] ... no longer available/removed"
+    re.compile(
+        r"\b(?:option|ability|setting|toggle|feature|choice)\s+"
+        r"(?:to\s+)?(?:opt[- ]?out|disable|turn\s+off|switch\s+off|"
+        r"decline|refuse|block)\b"
+        r".{0,60}?"
+        r"\b(?:no\s+longer\s+(?:available|exist|offered|supported|present)|"
+        r"has\s+been\s+removed|was\s+removed|been\s+eliminated|"
+        r"been\s+taken\s+away|discontinued|scrapped|dropped|"
+        r"quietly\s+(?:removed|dropped|eliminated))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Pattern 4: "offered up services to alter/modify/disable [the glasses/device/light]"
+    re.compile(
+        r"\b(?:offer(?:s|ed|ing)?|provid(?:e|es|ed|ing)|sell(?:s|ing)?|"
+        r"market(?:s|ed|ing)?)\s+"
+        r"(?:up\s+)?(?:services?|products?|kits?|tools?|tutorials?|guides?)\s+"
+        r"(?:to|for)\s+"
+        r"(?:\w+\s+){0,3}?"
+        r"(?:alter|modify|tamper|defeat|disable|remove|block|cover|"
+        r"bypass|circumvent|hack)\b",
+        re.IGNORECASE,
+    ),
+    # Pattern 5: "no real opt-out" / "cannot opt out" / "no way to opt out"
+    re.compile(
+        r"\b(?:no\s+(?:real|true|meaningful|actual|genuine|effective|practical)\s+"
+        r"(?:opt[- ]?out|way\s+to\s+(?:opt[- ]?out|disable|prevent|stop))|"
+        r"cannot\s+(?:opt[- ]?out|disable|prevent|turn\s+off)|"
+        r"can'?t\s+(?:opt[- ]?out|disable|prevent|turn\s+off)|"
+        r"no\s+way\s+to\s+(?:opt[- ]?out|disable|prevent|stop|block))\b",
+        re.IGNORECASE,
+    ),
+    # Pattern 6: "safeguard is/are/remains ... [performative/theater/fig leaf/window dressing]"
+    re.compile(
+        r"\b(?:safeguards?|protections?|measures?|controls?|indicators?|lights?|"
+        r"privacy\s+(?:settings?|controls?|protections?|features?|measures?))\b"
+        r".{0,60}?"
+        r"\b(?:performative|theater|theatre|fig\s+leaf|window\s+dressing|"
+        r"cosmetic|token|symbolic|illusory|toothless|paper\s+tiger|"
+        r"gesture|lip\s+service|window\s+dressing|security\s+theater|"
+        r"privacy\s+theater)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+]
+_DEVICE_PATTERNS["safeguard_inadequacy"] = _SAFEGUARD_INADEQUACY_PATTERNS
+
 
 def detect_framing_devices(
     text: str,
@@ -9865,8 +9975,8 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 103 pattern-matched device types plus 7 structural
-    post-pass types (110 total).
+    Scans for 104 pattern-matched device types plus 7 structural
+    post-pass types (111 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
@@ -9916,7 +10026,7 @@ def detect_framing_devices(
     silence_as_guilt, slippery_slope, sovereignty_framing,
     strategic_disclosure, strategic_reversal, straw_man,
     surveillance_creep, surveillance_enumeration, success_paradox,
-    glasshole_revival, walking_camera,
+    safeguard_inadequacy, glasshole_revival, walking_camera,
     talent_hemorrhage, taxonomy_framing, timeline_implication,
     two_tier_treatment, ultimatum_framing,
     usage_dismissal_undercut, valuation_comparison,
