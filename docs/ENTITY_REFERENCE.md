@@ -1,6 +1,6 @@
 # Entity Detection & Clustering Quick Reference
 
-> A compact lookup card for all 93 entity clusters (887 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
+> A compact lookup card for all 93 entity clusters (898 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
 
 ---
 
@@ -66,9 +66,9 @@ The primary analysis targets — companies whose coverage is compared for asymme
 | # | Cluster | Aliases | Regex | Key Aliases | Notes |
 |---|---------|---------|-------|-------------|-------|
 | 1 | **Meta** | 89 | custom | Meta, Facebook, Instagram, WhatsApp, Threads, Zuckerberg, Reality Labs, Ray-Ban Meta, Llama, MTIA, Iris, Muse Spark/Image/Video, Fury, Metamate, Virtue AI, LeCun, Mosseri | Largest cluster. Custom regex handles `Meta` vs HTML `<meta>` tag (negative lookahead for `tag`, `data`, `description`, etc.). Codenames (Mango, Watermelon, Creator, Pocket) require trailing context keywords. |
-| 2 | **Google** | 12 | custom | Alphabet, Google, YouTube, DeepMind, Waymo, Sundar Pichai, Gemini, Google Messages, AlphaFold | Excludes `Google Sheet/Doc/Drive/Form/Search/Messages` to avoid tool-usage false positives; `Google Messages` matched explicitly before the exclusion fires |
+| 2 | **Google** | 13 | custom | Alphabet, Google, YouTube, DeepMind, Waymo, Sundar Pichai, Gemini, Google Messages, AlphaFold, Android XR | Excludes `Google Sheet/Doc/Drive/Form/Search/Messages` to avoid tool-usage false positives; `Google Messages` matched explicitly before the exclusion fires. `Android XR` added Jul 31 for smart glasses platform tracking. |
 | 3 | **Apple** | 12 | custom | Apple, iPhone, iPad, Tim Cook, John Ternus, Apple Intelligence, Apple Vision Pro, Siri, iMessage | Excludes `Apple pie/cider/sauce/tree/juice/cinnamon` |
-| 4 | **Amazon** | 13 | custom | Amazon, AWS, Alexa, Jeff Bezos, Andy Jassy, Amazon Web Services, Kindle, Ring, Prime Video, Trainium, Trainium2, Trainium3, Inferentia | Excludes `Amazon rain/forest/river/basin`. Trainium/Inferentia custom chips added Jul 16. |
+| 4 | **Amazon** | 14 | custom | Amazon, AWS, Alexa, Jeff Bezos, Andy Jassy, Amazon Web Services, Kindle, Ring, Prime Video, Trainium, Trainium2, Trainium3, Inferentia, Echo Frames | Excludes `Amazon rain/forest/river/basin`. Trainium/Inferentia custom chips added Jul 16. Echo Frames smart glasses added Jul 31. |
 | 5 | **Microsoft** | 9 | auto | Microsoft, Satya Nadella, Azure, Bing, LinkedIn, GitHub, Copilot, Xbox, Windows | Windows disambiguation via lookbehind filter (see Part 6) |
 | 6 | **OpenAI** | 14 | auto | OpenAI, Sam Altman, ChatGPT, GPT-4/5, DALL-E, Sora, Stargate, Jalapeño (chip codename) | Includes historical (GPT-2) and open-weight (gpt-oss) models |
 | 7 | **Anthropic** | 9 | auto | Anthropic, Dario/Daniela Amodei, Claude, Mythos, Fable, Project Glasswing, Amanda Askell | |
@@ -144,7 +144,7 @@ Cloud providers, AI startups, and infrastructure companies.
 | # | Cluster | Aliases | Regex | Key Aliases | Notes |
 |---|---------|---------|-------|-------------|-------|
 | 47 | **VR/Metaverse** | 10 | custom | Horizon Worlds, Quest, Meta Quest, Quest 3/3S/Pro, VRChat, metaverse, Reality Labs | Quest requires capital Q in source text (case-sensitive inline flag) |
-| 48 | **Smart Glasses Competitors** | 6 | custom | Gentle Monster, XREAL, Even Realities, Halo, Solos, Brilliant Labs | |
+| 48 | **Smart Glasses Competitors** | 15 | custom | Gentle Monster, XREAL, Even Realities, Halo, Solos, Brilliant Labs, Halliday, RayNeo, Rokid, VITURE, INMO, Meizu StarV, HTC VIVE Ego, HTC VIVE Eagle, Lucyd | Expanded Jul 31 from 6 to 15 aliases: added Halliday, RayNeo, Rokid, VITURE, INMO, Meizu StarV, HTC VIVE (Ego/Eagle), Lucyd — AI smart glasses competitors appearing in Jul 2026 coverage. |
 | 49 | **EssilorLuxottica** | 6 | auto | EssilorLuxottica, Essilor, Luxottica, Francesco Milleri, LensCrafters | |
 | 50 | **Garmin** | 1 | auto | Garmin | |
 

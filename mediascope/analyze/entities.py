@@ -158,10 +158,10 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
         "aliases": [
             "Alphabet", "Google", "YouTube", "DeepMind", "Waymo",
             "Sundar Pichai", "Gemini", "Google Cloud", "Android",
-            "AlphaFold", "Google Messages",
+            "AlphaFold", "Google Messages", "Android XR",
             "the search giant",
         ],
-        "regex": r"(?<!\w)(Alphabet|Google Messages|Google(?!\s+(?:Sheet|Doc|Drive|Form|Search|Messages))|YouTube|DeepMind|Waymo|Sundar Pichai|Gemini|Google Cloud|Android|AlphaFold|the search giant)(?!\w)",
+        "regex": r"(?<!\w)(Alphabet|Google Messages|Android XR|Google(?!\s+(?:Sheet|Doc|Drive|Form|Search|Messages))|YouTube|DeepMind|Waymo|Sundar Pichai|Gemini|Google Cloud|Android|AlphaFold|the search giant)(?!\w)",
     },
     "Apple": {
         "aliases": [
@@ -176,8 +176,9 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "Amazon", "AWS", "Alexa", "Jeff Bezos", "Andy Jassy",
             "Amazon Web Services", "Kindle", "Ring", "Prime Video",
             "Trainium", "Trainium2", "Trainium3", "Inferentia",
+            "Echo Frames",
         ],
-        "regex": r"(?<!\w)(Amazon(?!\s+(?:rain|forest|river|basin))|AWS|Alexa|Jeff Bezos|Andy Jassy|Amazon Web Services|Kindle|Ring|Prime Video|(?-i:Trainium\d?)|(?-i:Inferentia))(?!\w)",
+        "regex": r"(?<!\w)(Amazon(?!\s+(?:rain|forest|river|basin))|AWS|Alexa|Jeff Bezos|Andy Jassy|Amazon Web Services|Kindle|Ring|Prime Video|(?-i:Trainium\d?)|(?-i:Inferentia)|Echo Frames)(?!\w)",
     },
     "Microsoft": {
         "aliases": [
@@ -630,8 +631,14 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             "XREAL", "Even Realities",
             "Halo", "Solos",
             "Brilliant Labs",
+            "Halliday",
+            "RayNeo", "Rokid",
+            "VITURE", "INMO",
+            "Meizu StarV",
+            "HTC VIVE Ego", "HTC VIVE Eagle",
+            "Lucyd",
         ],
-        "regex": r"(?<!\w)(Gentle Monster|(?-i:XREAL)|Even Realities|(?-i:Halo)|Solos|Brilliant Labs)(?!\w)",
+        "regex": r"(?<!\w)(Gentle Monster|(?-i:XREAL)|Even Realities|(?-i:Halo)|Solos|Brilliant Labs|Halliday|RayNeo|Rokid|(?-i:VITURE)|(?-i:INMO)|Meizu StarV|(?-i:HTC)\s+(?-i:VIVE)\s+(?:Ego|Eagle)|Lucyd)(?!\w)",
     },
     "VC/Tech Investors": {
         "aliases": [

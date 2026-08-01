@@ -1,4 +1,126 @@
 # MediaScope Iteration Log
+## 2026-07-31 16:00 PT — Type C: RDDT Q2 Crash, Advance Margin Loan Danger Zone, Advocacy Coalition Mapping
+
+**Rotation:** C (Ownership & Funding Deep Dive)
+**Focus:** Reddit Q2 earnings crash impact on Advance portfolio + wearables privacy advocacy coalition structure
+**Commit:** `ee3d0ba`
+
+### What was done
+
+#### 1. Advance Publications Portfolio — CRITICAL Financial Update
+
+**Reddit Q2 2026 earnings (Jul 30 after market close):**
+- Revenue: $804.91M (+61% YoY), crushed $731M consensus
+- EPS: $1.25, beat $0.95 consensus by $0.30
+- Revenue per user: $6.18 (record, +36% YoY)
+- Q3 guidance: $860-870M (above $829M consensus)
+- DAUq: 130.3M (+18% YoY, in-line)
+- **BUT: US DAUq DECLINED to 53.2M from 53.5M — first QoQ decline**
+- CEO Huffman: "Search referrals were choppy in the quarter"
+- COO Wong: "SEO headwinds" from Google AI algorithm changes
+- **Meta explicitly named as competitor** targeting Reddit's core model via Threads/Forum
+
+**Stock reaction (Jul 31):** Despite massive earnings beat, RDDT crashed ~21% (open $147.70, close ~$140.67, low $135.22). Market punishing user growth deceleration and AI traffic cannibalization fears.
+
+**Advance's Reddit stake impact:**
+- Was: ~$8.07B (42.2M shares × ~$191.16 on Jul 16)
+- Now: ~$5.94B (42.2M shares × ~$140.67 on Jul 31)
+- **Loss: ~$2.13B in 15 days**
+
+**MARGIN LOAN CRISIS:** The 7.8M shares pledged at $145.38-$148.54 offering price are NOW BELOW the offering price floor at $140.67. This creates potential margin call risk for Advance Magazine Publishers Inc. The margin loan risk that was identified as "potential" in prior iterations has now MATERIALIZED.
+
+**Charter Q2 (Jul 24):**
+- Revenue: $13.53B (-1.7% YoY, in-line)
+- EPS: $10.66 (beat $9.98 consensus by $0.68)
+- Internet subs: -172K (worse than -130K est)
+- Video subs: -21K (better than -62K est)
+- Cox acquisition $21.9B expected mid-to-late Aug
+- Stock: $145.20 (Jul 29 close)
+
+**WBD/Paramount merger in deep freeze:**
+- TRO granted Jul 20 by Judge Martínez-Olguín (14-day pause)
+- Jul 24: Paramount agreed to delay merger until trial or Jun 1, 2027
+- Paramount's lawyers concluded states would "likely prevail" at preliminary injunction
+- Deal effectively frozen; seeking Nov trial date
+- WBD stock: ~$26.30 (Jul 31 intraday)
+
+**Advance Total Public Equity Snapshot (Jul 31):**
+| Asset | Shares | Price | Value | Change from Jul 16 |
+|-------|--------|-------|-------|---------------------|
+| Reddit (RDDT) | 42.2M | $140.67 | ~$5.94B | -$2.13B (-26.4%) |
+| Charter (CHTR) | 20.6M | $145.20 | ~$2.99B | +$0.24B (+8.7%) |
+| WBD | ~98M | $26.30 | ~$2.58B | -$0.07B (-2.9%) |
+| **Total** | | | **~$11.51B** | **-$1.96B (-14.5%)** |
+
+Reddit concentration dropped from 59.9% to 51.6% of Advance public equity.
+
+#### 2. Wearables Privacy Advocacy Coalition Mapping
+
+Mapped three distinct but overlapping advocacy campaigns targeting Meta smart glasses:
+
+**Campaign 1: EPIC → FTC (Feb 13, 2026)**
+- Same-day response to NYT leak of Meta's "Name Tag" feature
+- Letters to FTC and state AGs in Consortium of Privacy Regulators
+- EFF followed with separate "consent structurally impossible" warning
+
+**Campaign 2: CFA + UltraViolet Action Coalition (Early Apr 2026)**
+- 64 civil society organizations
+- Led by Consumer Federation of America + UltraViolet Action
+- Sent to Meta, EssilorLuxottica, White House, FTC, DOJ, state AGs, Congressional committees
+- Notable signatories: EPIC, Public Citizen, Consumer Reports, AFT, CDT
+- Source: https://consumerfed.org/meta-rayban-letter/
+
+**Campaign 3: ACLU "Eyewear, Not Spyware!" (Apr 13, 2026)**
+- 75+ organizations
+- Led by ACLU, ACLU of Massachusetts, NY Civil Liberties Union
+- Co-signed by EPIC, EFF, Fight for the Future, Access Now
+- Public action tool on ACLU website for constituent messages to Meta
+- Source: https://epic.org/epic-joins-aclus-eyewear-not-spyware-campaign-to-fight-metas-surveillance-glasses/
+
+**Legal/Regulatory actions:**
+- Bartone et al. v. Meta Platforms (N.D. Cal., filed Mar 4, 2026) — class action by Clarkson Law Firm
+- UK ICO investigation (triggered by Swedish investigation)
+- Texas AG investigation (biometric privacy)
+- Sens. Markey, Merkley, Wyden letter to Meta (Feb/Mar 2026)
+
+**Coordination assessment:** Natural advocacy cascade, NOT coordinated manipulation. Sequential escalation triggered by genuine newsbreak (leaked internal memo + real Swedish investigation of privacy violations). Same organizations have opposed facial recognition from Amazon, Google, Clearview AI for years. However, the campaigns provide a renewable citation source for publications whose parent companies have undisclosed financial interests in Meta's competitors.
+
+**Key unknown for future investigation:** Whether EPIC, ACLU tech program, or CFA receive funding from Meta's wearables competitors (Google/Android XR, Apple). Access Now publicly discloses Google.org funding.
+
+#### 3. Cross-domain observation: Google AI Overviews as shared threat
+
+Reddit's search traffic problem (Google AI Overviews cannibalizing referral traffic) is EXACTLY what Condé Nast CEO Roger Lynch has been railing about since Feb 2026. Both Condé Nast and Reddit — both Advance entities — are victims of the same Google AI traffic siphon. This creates:
+- Structural alignment between Wired's editorial anti-Google posture and Reddit's business challenges
+- Both benefit from regulatory action against Google AI Overviews
+- Both benefit from AI licensing deals that replace lost Google referral revenue
+- Lynch's "Google Zero" directive + Reddit's "SEO headwinds" = convergent Advance-wide anti-Google strategic posture
+
+#### 4. Files changed
+
+- `profiles/wired.yaml` (updated Advance portfolio snapshot to Jul 31 post-RDDT crash, updated Reddit financials to Q2 2026, added margin loan danger zone warning, updated Charter Q2 + WBD merger freeze)
+- `examples/sample_output/wearables_advocacy_coalition_analysis_2026_jul.md` (new — full coalition mapping with timeline, organization overlap, coordination assessment)
+
+### Verification
+- YAML validation: ✅ (wired.yaml parses cleanly)
+- Structural + career tests: 145 passed
+- `count_stats.py --check`: ✅ README stats current (196 articles, 3029 tests, 247 journalists)
+- Pushed to GitHub: `3082468..ee3d0ba`
+
+### Source URLs for financial data
+- Reddit Q2: https://www.reuters.com/business/media-telecom/reddit-expects-revenue-above-estimates-ai-tools-attract-advertisers-2026-07-30/
+- Reddit Q2 (WSJ): https://www.wsj.com/business/earnings/reddit-profit-rises-on-growth-in-advertising-revenue-620122cc
+- Reddit Q2 (Barron's): https://www.barrons.com/articles/reddit-earnings-stock-price-7f961b9f
+- RDDT price: Zacks ($140.67 close Jul 31), MarketBeat ($139.95)
+- Charter Q2: https://www.prnewswire.com/news-releases/charter-announces-second-quarter-2026-results-302833892.html
+- Charter Q2 (WSJ): https://www.wsj.com/business/earnings/charter-communications-chtr-q2-earnings-report-stock-2026-4581559c
+- WBD merger delay: https://www.cnn.com/2026/07/24/media/paramount-warner-bros-discovery-merger-delay
+- WBD price: Finnhub ($26.30 intraday Jul 31)
+- ACLU campaign: https://epic.org/epic-joins-aclus-eyewear-not-spyware-campaign-to-fight-metas-surveillance-glasses/
+- CFA coalition: https://consumerfed.org/meta-rayban-letter/
+- 75-org coalition detail: https://idtechwire.com/75-groups-demand-meta-drop-facial-recognition-for-smart-glasses/
+
+---
+
 ## 2026-07-31 15:00 PT — Type B: Wearables Beat Journalist Profiles — Raymond Wong & Lisa Eadicicco
 
 **Rotation:** B (Journalist/Publication Research)
@@ -24722,3 +24844,36 @@ VADER scores article 0.654 (positive) despite neutral-to-negative Meta positioni
 - 666 regex patterns across 99 pattern-based types
 - 2,950 tests across 134 test files
 - 194 annotated articles
+
+---
+
+## 2026-07-31 17:00 PT — Type D: Toolkit Quality & Documentation
+
+### Focus
+Wearables narrative: expanded entity clusters for smart glasses ecosystem, added two new wearables-specific framing patterns, and fixed all cross-document consistency.
+
+### Changes
+
+1. **Fixed ACCURACY_GUIDE.md stale count** — 195→196 annotated articles (two occurrences).
+
+2. **Expanded Smart Glasses Competitors entity cluster** — added 9 aliases (Halliday, RayNeo, Rokid, VITURE, INMO, Meizu StarV, HTC VIVE Ego, HTC VIVE Eagle, Lucyd), growing from 6→15 aliases with updated regex.
+
+3. **Added "Android XR" to Google entity cluster** (12→13 aliases) — Google's smart glasses platform.
+
+4. **Added "Echo Frames" to Amazon entity cluster** (13→14 aliases) — Amazon's smart glasses product.
+
+5. **Added two new wearables-specific framing patterns in `mediascope/analyze/framing.py`:**
+   - `glasshole_revival` — 4 regex patterns detecting revival of 2013 "glasshole" pejorative against current smart glasses
+   - `walking_camera` — 5 regex patterns detecting dehumanizing "ambulatory surveillance device" framing
+   - Registered both in `_DEVICE_PATTERNS` dict and added to docstring device list
+
+6. **Full cross-document consistency sweep:**
+   - Updated all count references across README.md, FRAMING_REFERENCE.md, ARCHITECTURE.md, AGENT_GUIDE.md, METHODOLOGY.md, ENTITY_REFERENCE.md, CROSS_PUBLICATION_REFERENCE.md, cli.py
+   - Updated hardcoded test constants in test_structural_consistency.py, test_foxbusiness_meta_1_4t_penalty.py, test_nyt_ai_reviews.py
+   - Added new device rows to FRAMING_REFERENCE.md table and METHODOLOGY.md extended device table
+
+### Stats after
+- 93 entity clusters, 898 aliases
+- 675 regex patterns across 101 pattern-based types (108 total including 7 structural)
+- 3,029 tests across 137 test files (all passing)
+- 196 annotated articles

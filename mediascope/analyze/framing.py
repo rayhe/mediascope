@@ -9393,6 +9393,105 @@ _SURVEILLANCE_CREEP_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["surveillance_creep"] = _SURVEILLANCE_CREEP_PATTERNS
 
 # -----------------------------------------------------------------------
+# glasshole_revival — explicit revival of the "glasshole" pejorative
+# originally coined for Google Glass wearers (2013-2014) to frame Meta
+# smart glasses users/products.  This is a specific framing device where
+# journalists invoke the historical Google Glass social stigma to tar
+# current smart glasses products by association.  Distinct from
+# loaded_language (generic pejoratives) and surveillance_creep (ambient
+# recording framing): glasshole_revival specifically invokes the 2013
+# precedent as predictive of current social rejection.
+#
+# Discovered in TechCentral Jul 14, 2026 "glassholes" article,
+# Gizmodo Jul 30, 2026 "glasshole" references, CNN Jul 26, 2026
+# "nobody wants to be a glasshole" framing.
+# -----------------------------------------------------------------------
+_GLASSHOLE_REVIVAL_PATTERNS: list[re.Pattern] = [
+    # Direct "glasshole(s)" usage
+    re.compile(
+        r"\bglasshole(?:s|ism)?\b",
+        re.IGNORECASE,
+    ),
+    # "Google Glass ... social stigma/backlash/failure ... Meta/Ray-Ban"
+    # Invoking the Google Glass precedent in Meta context
+    re.compile(
+        r"\bGoogle Glass\b"
+        r".{0,200}?"
+        r"\b(?:stigma|backlash|failure|fate|mistake|lesson|cautionary|"
+        r"déjà\s*vu|deja\s*vu|all over again|repeat(?:ing)?|"
+        r"history\s+repeat|same\s+(?:mistake|problem|issue|backlash))\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # Reverse order: backlash/stigma ... then Google Glass reference
+    re.compile(
+        r"\b(?:stigma|backlash|social\s+rejection|creepy|creepiness)\b"
+        r".{0,200}?"
+        r"\bGoogle Glass\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "nobody wants to be a/the glasshole" or "don't be a glasshole"
+    re.compile(
+        r"\b(?:nobody|no one|don'?t|who)\s+(?:wants?|want)\s+to\s+be\s+"
+        r"(?:a|the)\s+(?:next\s+)?glasshole\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["glasshole_revival"] = _GLASSHOLE_REVIVAL_PATTERNS
+
+# -----------------------------------------------------------------------
+# walking_camera — framing that reduces smart glasses wearers to
+# ambulatory surveillance devices.  The rhetorical move dehumanizes the
+# wearer by equating them with the device's camera, positioning every
+# person wearing smart glasses as a threat to bystanders.  Distinct from
+# surveillance_creep (which focuses on ambient/always-on data capture)
+# and consent_alarm (which focuses on notification gaps): walking_camera
+# frames the human wearer as the surveillance apparatus itself.
+#
+# Discovered in multiple Jul 2026 articles:
+#   "walking surveillance camera" (CNN, Jul 26)
+#   "walking around with a camera on your face" (Gizmodo, Jul 30)
+#   "every person wearing these is a walking camera" (various)
+# -----------------------------------------------------------------------
+_WALKING_CAMERA_PATTERNS: list[re.Pattern] = [
+    # "walking/mobile/roaming surveillance camera/device/apparatus"
+    re.compile(
+        r"\b(?:walking|roaming|mobile|moving|portable|wearable|ambulatory)\s+"
+        r"(?:surveillance\s+)?(?:camera|recording\s+device|spy\s+device|"
+        r"surveillance\s+(?:device|apparatus|tool|system)|"
+        r"recording\s+(?:apparatus|machine))\b",
+        re.IGNORECASE,
+    ),
+    # "camera on your/their/someone's face"
+    re.compile(
+        r"\bcamera\s+(?:on|strapped\s+to|attached\s+to|built\s+into)\s+"
+        r"(?:your|their|someone'?s?|people'?s?|a\s+person'?s?)\s+face\b",
+        re.IGNORECASE,
+    ),
+    # "wearing a camera" / "camera-wearing" / "people with cameras on their faces"
+    re.compile(
+        r"\b(?:wearing\s+(?:a\s+)?camera(?:s)?|camera[- ]wearing|"
+        r"camera(?:s)?\s+on\s+(?:their|your|people'?s?)\s+face(?:s)?)\b",
+        re.IGNORECASE,
+    ),
+    # "turns every wearer into a surveillance/spy [noun]"
+    re.compile(
+        r"\b(?:turns?|transform(?:s|ed|ing)?|makes?|convert(?:s|ed|ing)?)\s+"
+        r"(?:every|each|any|the)?\s*"
+        r"(?:wearer|user|person|owner|customer|consumer)s?\s+"
+        r"(?:into|in to)\s+(?:a\s+)?(?:walking\s+)?"
+        r"(?:surveillance|spy|recording|monitoring)\s+"
+        r"(?:camera|device|agent|apparatus|tool)\b",
+        re.IGNORECASE,
+    ),
+    # "face-mounted camera/surveillance"
+    re.compile(
+        r"\bface[- ]mounted\s+(?:camera|surveillance|recording|sensor)\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["walking_camera"] = _WALKING_CAMERA_PATTERNS
+
+# -----------------------------------------------------------------------
 # market_flooding — editorial framing that casts volume, speed, or scale
 # of product distribution as aggressive or overwhelming.  Uses metaphors
 # of flooding, saturation, inundation, or dumping.  Distinct from
@@ -9609,15 +9708,15 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 99 pattern-matched device types plus 7 structural
-    post-pass types (106 total).
+    Scans for 101 pattern-matched device types plus 7 structural
+    post-pass types (108 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (97): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (101): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
     ceo_personalization, competitive_deficit, competitive_displacement,
@@ -9659,6 +9758,7 @@ def detect_framing_devices(
     silence_as_guilt, slippery_slope, sovereignty_framing,
     strategic_disclosure, strategic_reversal, straw_man,
     surveillance_creep, surveillance_enumeration,
+    glasshole_revival, walking_camera,
     talent_hemorrhage, taxonomy_framing, timeline_implication,
     two_tier_treatment, ultimatum_framing,
     usage_dismissal_undercut, valuation_comparison,

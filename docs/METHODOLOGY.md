@@ -185,7 +185,7 @@ Classification uses keyword matching with TF-IDF weighting. An article can match
 
 ### 4.1 Taxonomy
 
-MediaScope detects 106 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (89 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
+MediaScope detects 108 framing device types, organized into three tiers: core devices (10 pattern-matched types covering fundamental editorial techniques), extended devices (91 added from real-article analysis), and structural devices (7 detected via post-pass heuristics rather than simple pattern matching).
 
 #### Core Devices
 
@@ -298,6 +298,8 @@ These were added through systematic analysis of real articles from the five trac
 | **Market Flooding** | Casts volume, speed, or scale of product distribution as aggressive or overwhelming through metaphors of flooding, saturation, or inundation. Distinct from scale_magnitude (which amplifies numerical values) and competitive_positioning (which elevates competitors). Market flooding targets the distribution strategy framing itself | "flooding the market"; "flood of devices"; "market saturation"; "into the hands of as many people as possible" | WSJ Meta smartglasses privacy (Jul 14, 2026) — headline "Meta Is Flooding the Market With Smartglasses" — uses flooding metaphor to frame distribution ambition as overwhelming force |
 | **Humanization** | Emotionally resonant personal details that create sympathy for affected individuals and implicitly indict the entity responsible. Uses specific narrative elements (timing of harm near life events, personal financial devastation, pregnancy near workplace action, age-specific vulnerability, disability context) to move the reader from policy abstraction to personal identification with the victim. Distinct from emotional_appeal (which uses loaded individual words) and anecdotal_evidence (which uses a personal story to represent a trend). Humanization operates through the strategic placement of intimate biographical detail | "laid off [timeframe] before/after [life event]"; "[entity] lost [financial amount]"; "pregnant when [company action]"; "[age] years old when [harm]"; "despite [disability/condition]" | WSJ Meta AI layoffs article (Jul 14, 2026) — "laid off two days before giving birth" — timing-of-harm detail creates maximum emotional resonance by juxtaposing corporate action with personal vulnerability |
 | **Surveillance Enumeration** | Multi-item comma-separated or semicolon-separated lists of monitoring technologies, data types, or performance metrics that amplify perceived invasiveness through sheer accumulation. The length and specificity of the list itself is the editorial device — even if each item is factually accurate, the enumeration structure frames the subject as comprehensively surveilled. Distinct from surveillance_creep (which targets the framing of the recording act itself) and loaded_language (individual word-level bias) | "track [item], [item], [item], and [item]"; "monitors [metric], [metric], [metric]"; "collecting [data type], [data type], [data type]" | WSJ Meta AI layoffs article (Jul 14, 2026) — enumeration of multiple monitoring technologies and data types in surveillance context creates cumulative impression of pervasive oversight |
+| **Glasshole Revival** | Revival of the "glasshole" pejorative from the 2013 Google Glass era to frame current smart glasses products and their users. Invokes historical social stigma as predictive of current social rejection. Distinct from loaded_language (generic pejoratives) and surveillance_creep (ambient recording framing): glasshole_revival specifically invokes the 2013 precedent as a framing device | "glasshole"; "glassholes"; "Google Glass stigma ... Meta"; "nobody wants to be a glasshole" | TechCentral (Jul 14, 2026), Gizmodo (Jul 30, 2026), CNN (Jul 26, 2026) — revival of Google Glass-era "glasshole" pejorative in Meta smart glasses coverage |
+| **Walking Camera** | Framing that reduces smart glasses wearers to ambulatory surveillance devices, dehumanizing the wearer by equating them with the device's camera. Positions every person wearing smart glasses as a threat to bystanders. Distinct from surveillance_creep (ambient data capture) and consent_alarm (notification gaps): walking_camera frames the human wearer as the surveillance apparatus itself | "walking surveillance camera"; "camera on your face"; "turns every wearer into a surveillance device"; "face-mounted camera" | CNN (Jul 26, 2026), Gizmodo (Jul 30, 2026) — framing smart glasses wearers as ambulatory surveillance devices in privacy coverage |
 
 #### Structural Devices (Post-Pass)
 
@@ -872,7 +874,7 @@ For each same-event pair, MediaScope compares:
 |---|---|---|
 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | **Tone score** | 8-dimension sentiment (§1) | Raw editorial stance toward the entity |
-| **Framing device count** | Total devices from the 106-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
+| **Framing device count** | Total devices from the 108-type taxonomy (§4) | Framing density — how many editorial techniques are deployed |
 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | **Source roster** | Named vs anonymous, count, affiliations | Who the journalist chose to quote |
 | **Source stance balance** | Adversarial vs supportive vs neutral (§6) | Whether sources are deployed one-directionally |
@@ -1052,9 +1054,9 @@ The following table documents all 93 entity clusters shipped with MediaScope, or
 | Cluster | Aliases | Key Members |
 |---|---|---|
 | **Meta** |  85 | Meta, Meta Platforms, Facebook, Instagram, WhatsApp, Threads (+69 more) |
-| **Google** | 12 | Alphabet, Google, YouTube, DeepMind, Waymo, Sundar Pichai, Google Messages (+5 more) |
+| **Google** | 13 | Alphabet, Google, YouTube, DeepMind, Waymo, Sundar Pichai, Google Messages, Android XR (+5 more) |
 | **Apple** | 12 | Apple, iPhone, iPad, Tim Cook, John Ternus, Apple Intelligence, iMessage (+5 more) |
-| **Amazon** | 13 | Amazon, AWS, Alexa, Jeff Bezos, Andy Jassy, Amazon Web Services, Trainium, Trainium2, Trainium3, Inferentia (+3 more) |
+| **Amazon** | 14 | Amazon, AWS, Alexa, Jeff Bezos, Andy Jassy, Amazon Web Services, Trainium, Trainium2, Trainium3, Inferentia, Echo Frames (+3 more) |
 | **Microsoft** | 9 | Microsoft, Satya Nadella, Azure, Bing, LinkedIn, GitHub (+3 more) |
 | **OpenAI** | 14 | OpenAI, Sam Altman, ChatGPT, GPT-4, GPT-5, GPT-2, gpt-oss, DALL-E, Miles Brundage (+5 more) |
 
@@ -1113,7 +1115,7 @@ The following table documents all 93 entity clusters shipped with MediaScope, or
 | Cluster | Aliases | Key Members |
 |---|---|---|
 | **VR/Metaverse** | 10 | Horizon Worlds, Horizon, Quest, Meta Quest, Quest 3S, Quest 3 (+4 more) |
-| **Smart Glasses Competitors** | 6 | Gentle Monster, XREAL, Even Realities, Halo, Solos, Brilliant Labs |
+| **Smart Glasses Competitors** | 15 | Gentle Monster, XREAL, Even Realities, Halo, Solos, Brilliant Labs, Halliday, RayNeo, Rokid, VITURE, INMO, Meizu StarV, HTC VIVE Ego, HTC VIVE Eagle, Lucyd |
 
 #### Defense, Intelligence & Surveillance
 
@@ -1572,7 +1574,7 @@ The EU DSA "Addictive Design" cluster (Jul 10, 2026) is the widest genre-control
 
 ### 17.7 Framing Device Discovery Provenance
 
-Every one of the 106 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
+Every one of the 108 framing device types was discovered from a specific article in the corpus or from the broader analysis pipeline. The METHODOLOGY.md §4 extended device table documents the discovery article for each type. Key discovery clusters:
 
 | Discovery Period | Devices Added | Key Source Articles |
 |---|---|---|
