@@ -1,0 +1,15 @@
+Smart Glasses Are a Hit Even as Privacy Concerns Pile Up
+
+Smart glasses are facing more scrutiny than ever, but the train towards mainstream adoption continues to barrel on. According to the latest earnings report from EssilorLuxottica, the owner of Ray-Ban and co-maker of Ray-Ban Meta AI glasses, revenue from its smart glasses nearly doubled in the second quarter compared to the same period last year.
+
+The company didn't disclose how many units have been sold in the second quarter of this year, but the smart glasses revenue growth is significant, especially considering overall revenue is down over the same period.
+
+What's most surprising about the uptick isn't that smart glasses are relatively popular—Meta sold 7 million pairs of Ray-Ban-branded AI glasses in 2025—but that they're popular despite an increasingly prickly climate surrounding the category. Meta, in particular, has been the focus of a lot of backlash in the past year, and much of it has been well deserved.
+
+On top of smart glasses generally being misused by people to encroach on people's privacy and cheat—that includes at least one case of extortion, people using smart glasses in court, and someone in South Korea being criminally charged after using a pair to cheat on a state safety exam—Meta has also crossed privacy boundaries of the people using its glasses.
+
+Earlier this year, Swedish newspaper Svenska Dagbladet uncovered that human contractors for Meta were exposed to all kinds of sensitive content captured by the company's AI glasses, including people having sex, using the bathroom, and sensitive banking information. Meta uses some videos and pictures captured by its glasses—specifically those captured with the "Hey Meta" command—to train AI. That practice is baked into its terms of service and hasn't been modified since.
+
+If that wasn't enough, Meta's reported plans to introduce facial recognition technology have caught the attention of both federal lawmakers and privacy groups, and neither is jazzed about the idea. Oh, and pop star Lorde doesn't care for smart glasses, either.
+
+Despite all of the pushback, the category seems to be growing, and with the entrance of Google and Samsung, it may balloon even further this year. That growth doesn't mean a tipping point isn't coming, though, especially as more restrictions and added social pressure kick in. Only time will tell if smart glasses are quietly spiraling towards a glasshole 2.0 moment.

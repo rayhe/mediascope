@@ -5268,6 +5268,16 @@ _ESCALATION_AMPLIFICATION_PATTERNS: list[re.Pattern] = [
         r"pile|body|litany|array)\s+(?:of|between|among|involving)\b",
         re.IGNORECASE,
     ),
+    # Pattern 7: "If that wasn't/isn't enough" — rhetorical escalation marker
+    # signaling the list of negatives is about to get worse.
+    # Covers: "if that wasn't enough", "if that isn't enough",
+    #         "as if that weren't enough", "if all that wasn't enough"
+    re.compile(
+        r"\b(?:as\s+)?if\s+(?:all\s+)?that\s+"
+        r"(?:wasn't|isn't|weren't|is\s+not|was\s+not|were\s+not)\s+"
+        r"(?:enough|bad\s+enough|concerning\s+enough|worrying\s+enough)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["escalation_amplification"] = _ESCALATION_AMPLIFICATION_PATTERNS
@@ -5797,6 +5807,15 @@ _EDITORIAL_ASIDE_PATTERNS.extend([
     # Jargon gloss: "X-speak for Y" / "corporate-speak for Y"
     re.compile(
         r"\b\w+[- ]speak\s+for\s+",
+        re.IGNORECASE,
+    ),
+    # Throwaway tangent: "Oh, and [X]" — sarcastic aside appending a
+    # celebrity, politician, or additional fact as if it barely matters,
+    # while actually loading the argument.  Discovered in Gizmodo
+    # smart-glasses-hit-despite-backlash article (Jul 30, 2026):
+    # "Oh, and pop star Lorde doesn't care for smart glasses, either."
+    re.compile(
+        r"\bOh,\s+and\b",
         re.IGNORECASE,
     ),
 ])
@@ -10000,16 +10019,29 @@ _DEVICE_PATTERNS["safeguard_inadequacy"] = _SAFEGUARD_INADEQUACY_PATTERNS
 #     failure to police own platforms
 # -----------------------------------------------------------------------
 _PLATFORM_SELF_INCRIMINATION_PATTERNS: list[re.Pattern] = [
-    # Pattern 1: "on [company]'s own [platform/marketplace/app/platforms]"
+    # Pattern 1a: "on [company]'s own [generic platform term]" — requires "own"
+    # for generic words (platform, services, app) to avoid false positives on
+    # neutral factual statements like "distributed on Meta's services".
+    re.compile(
+        r"\bon\s+"
+        r"(?:Meta(?:'s)?|Facebook(?:'s)?|Google(?:'s)?|Apple(?:'s)?|"
+        r"Amazon(?:'s)?|Microsoft(?:'s)?|TikTok(?:'s)?|"
+        r"the\s+company(?:'s)?|their)\s+"
+        r"own\s+"
+        r"(?:platform(?:s)?|marketplace|app(?:s)?|service(?:s)?|"
+        r"social\s+(?:media|network(?:s)?)|website|store|shop|"
+        r"Threads|Instagram|Facebook|WhatsApp|Marketplace)\b",
+        re.IGNORECASE,
+    ),
+    # Pattern 1b: "on [company]'s [specific product name]" — "own" optional
+    # because the brand name inherently signals platform identity.
     re.compile(
         r"\bon\s+"
         r"(?:Meta(?:'s)?|Facebook(?:'s)?|Google(?:'s)?|Apple(?:'s)?|"
         r"Amazon(?:'s)?|Microsoft(?:'s)?|TikTok(?:'s)?|"
         r"the\s+company(?:'s)?|their)\s+"
         r"(?:own\s+)?"
-        r"(?:platform(?:s)?|marketplace|app(?:s)?|service(?:s)?|"
-        r"social\s+(?:media|network(?:s)?)|website|store|shop|"
-        r"Threads|Instagram|Facebook|WhatsApp|Marketplace)\b",
+        r"(?:Threads|Instagram|Facebook|WhatsApp|Marketplace)\b",
         re.IGNORECASE,
     ),
     # Pattern 2: "advertised/sold/promoted on [company]'s [platform]"

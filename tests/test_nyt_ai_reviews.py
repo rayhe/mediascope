@@ -374,8 +374,8 @@ class TestFramingDeviceRegistry:
 
     def test_pattern_based_device_count(self):
         from mediascope.analyze.framing import _DEVICE_PATTERNS
-        assert len(_DEVICE_PATTERNS) == 102, (
-            f"Expected 102 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
+        assert len(_DEVICE_PATTERNS) == 106, (
+            f"Expected 106 pattern-based device types, got {len(_DEVICE_PATTERNS)}. "
             f"If you added a new type, update METHODOLOGY.md §4.1 and this test. "
             f"Current types: {sorted(_DEVICE_PATTERNS.keys())}"
         )
@@ -554,6 +554,14 @@ class TestFramingDeviceRegistry:
             "walking_camera",
             # Chilling effect — self-censorship/avoidance due to social stigma
             "chilling_effect",
+            # Success paradox (#110) — strong results reframed as dangerous/problematic
+            "success_paradox",
+            # Safeguard inadequacy (#111) — safety measures framed as token/insufficient
+            "safeguard_inadequacy",
+            # Platform self-incrimination (#112) — company's own data/statements used against it
+            "platform_self_incrimination",
+            # Category contamination (#113) — guilt-by-adjacency across product categories
+            "category_contamination",
         }
         actual = set(_DEVICE_PATTERNS.keys())
         missing = expected_pattern_types - actual
