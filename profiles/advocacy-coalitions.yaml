@@ -1,0 +1,316 @@
+# ===================================================================
+# ADVOCACY COALITION MAPPING — Meta Wearables/Smart Glasses
+# Created: 2026-08-01 from primary source review
+# Purpose: Track advocacy organizations, coalition letters, key
+#   individuals, and funding sources that feed wearables-negative
+#   media narratives. Determines whether press pile-on is organic
+#   convergence or coordinated via shared advocacy infrastructure.
+# ===================================================================
+
+# ----- TWO SEPARATE COALITION LETTERS (April 2026) -----
+
+coalition_letters:
+  - id: "aclu_eyewear_not_spywear"
+    name: "Eyewear, Not Spywear!"
+    date: "2026-04-13"
+    leaders:
+      - "American Civil Liberties Union (ACLU)"
+      - "ACLU of Massachusetts"
+      - "New York Civil Liberties Union (NYCLU)"
+    signatory_count: 75
+    target: "Mark Zuckerberg / Meta"
+    feature_targeted: "NameTag facial recognition"
+    key_demand: "Immediately halt and publicly disavow"
+    framing: "A red line society must not cross"
+    campaign_page: "https://www.aclum.org/campaigns-initiatives/eyewear-not-spywear/"
+    full_letter: "https://www.aclum.org/publications/coalition-letter-to-meta-regarding-frt-feature/"
+    notable_co_signatories:
+      - "Electronic Privacy Information Center (EPIC)"
+      - "Electronic Frontier Foundation (EFF)"
+      - "Fight for the Future"
+      - "Access Now"
+      - "Leadership Conference on Civil and Human Rights"
+    sources:
+      - "https://www.aclu.org/press-releases/aclu-and-75-organizations-sound-alarm-on-metas-plans-to-add-facial-recognition-technology-to-ray-ban-and-oakley-eyeglasses"
+      - "https://www.nyclu.org/press-release/aclu-and-75-organizations-sound-alarm-on-metas-plan-to-add-facial-recognition-technology-to-ray-ban-and-oakley-eyegl"
+      - "https://epic.org/epic-joins-aclus-eyewear-not-spyware-campaign-to-fight-metas-surveillance-glasses/"
+
+  - id: "cfa_ultraviolet_coalition"
+    name: "CFA/UltraViolet Meta Glasses Coalition Letter"
+    date: "2026-04-01"  # Exact date not confirmed, prior to ACLU letter
+    leaders:
+      - "Consumer Federation of America (CFA)"
+      - "UltraViolet Action"
+    signatory_count: 64
+    targets:
+      - "Meta"
+      - "EssilorLuxottica"
+      - "The White House"
+      - "Federal Trade Commission (FTC)"
+      - "Department of Justice (DOJ)"
+      - "State Attorneys General"
+      - "Congressional committee leadership"
+    feature_targeted: "NameTag facial recognition"
+    key_demand: "Reverse course"
+    framing: "Creepy and unacceptable escalation of surveillance"
+    full_letter: "https://consumerfed.org/meta-rayban-letter/"
+    press_release: "https://consumerfed.org/press_release/over-60-civil-society-groups-oppose-metas-plan-to-integrate-facial-recognition-into-smart-glasses-warn-of-widespread-surveillance-risks/"
+    notable_co_signatories:
+      - "AFT (American Federation of Teachers)"
+      - "EPIC"
+      - "Fight for the Future"
+      - "Public Citizen"
+      - "Consumer Reports"
+      - "Oakland Privacy"
+      - "MomsRising"
+      - "Center for Digital Democracy"
+      - "Center for Media and Democracy"
+      - "Tech Oversight Project"
+      - "Tech Oversight California"
+      - "The Oversight Lab"
+      - "Fairplay"
+      - "National Organization for Women"
+      - "Black Voters Matter Fund"
+    internal_meta_memo_cited: true
+    internal_memo_quote: >
+      Meta's stated intention to release the feature during a "dynamic political
+      environment where many civil society groups that we would expect to attack
+      us would have their resources focused on other concerns"
+    internal_memo_source: "New York Times, February 2026"
+
+# ----- SHARED SIGNATORIES (both letters) -----
+# These orgs signed BOTH the ACLU and CFA letters:
+shared_signatories:
+  - "EPIC"
+  - "Fight for the Future"
+  - "Access Now"  # Probable — confirmed in ACLU, listed in coverage as anti-Meta
+  notes: >
+    Significant overlap between the two coalition letters indicates shared advocacy
+    infrastructure. EPIC, Fight for the Future, and Access Now appear on both letters,
+    suggesting they function as "hub nodes" connecting different coalition-building efforts.
+
+# ----- KEY INDIVIDUALS -----
+
+key_individuals:
+  - name: "Kade Crockford"
+    org: "ACLU of Massachusetts"
+    title: "Director, Technology and Justice Programs"
+    role_in_campaign: "Lead spokesperson for Eyewear Not Spywear"
+    notable_quote: "Stalkers and scammers would have a field day with this technology."
+    source: "https://www.aclu.org/press-releases/aclu-and-75-organizations-sound-alarm-on-metas-plans-to-add-facial-recognition-technology-to-ray-ban-and-oakley-eyeglasses"
+
+  - name: "Daniel Schwarz"
+    org: "New York Civil Liberties Union (NYCLU)"
+    title: "Senior Privacy and Technology Strategist"
+    notable_quote: "Nobody wants to live in a world where strangers can secretly identify them."
+    source: "https://www.nyclu.org/press-release/aclu-and-75-organizations-sound-alarm-on-metas-plan-to-add-facial-recognition-technology-to-ray-ban-and-oakley-eyegl"
+
+  - name: "Cody Venzke"
+    org: "ACLU"
+    title: "Senior Staff Attorney"
+    notable_quote: "Your glasses should not know my name."
+    source: "https://idtechwire.com/75-groups-demand-meta-drop-facial-recognition-for-smart-glasses/"
+
+  - name: "Thorin Klosowski"
+    org: "Electronic Frontier Foundation (EFF)"
+    title: "Senior Security and Privacy Activist"
+    notable_quote: "[Smart glasses] are specifically designed to be worn all day long, which is just fundamentally different."
+    quoted_in: "Gizmodo (Raymond Wong article)"
+    source: "https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927"
+
+  - name: "Mercy Mutemi"
+    org: "The Oversight Lab"
+    title: "Executive Director"
+    role: "Filed Kenya data protection complaint re: Meta glasses footage processed by Nairobi contractors"
+    notable_quote: "We are deeply concerned by the development of harmful technology through exploitation of vulnerable communities."
+    source: "https://techcabal.com/2026/03/06/kenyan-watchdog-asks-regulator-to-probe-meta-ai-glasses/"
+
+# ----- FUNDING ANALYSIS -----
+
+funding_analysis:
+  ultraviolet_action:
+    legal_status: "501(c)(4)"
+    self_description: "Nation's largest online feminist organization"
+    co_founders:
+      - "Shaunna Thomas (stepped down Feb 2025)"
+      - "Nita Chaudhary (former MoveOn.org campaigns director)"
+    current_leadership:
+      - name: "Arisha Hatch"
+        role: "Board Chair / Interim Executive Director (Feb 2025)"
+        other_role: "Managing Director of Campaigns at Color of Change"
+    financials_2023:
+      revenue: 1591247
+      expenses: 1470989
+      net_assets: 1237060
+    pac_financials_2025_q1_2026:
+      total_receipts: 8989
+      total_disbursements: 23822
+      note: "PAC is financially tiny; main org is the 501(c)(4)"
+    key_grant:
+      funder: "Open Society Action Fund"
+      amount: 300000
+      year: 2022
+      purpose: "To support policy advocacy on platform accountability"
+      significance: >
+        George Soros / Open Society is a known Meta critic. This grant directly
+        funded UltraViolet's "platform accountability" work, which includes the
+        anti-Meta-glasses coalition letter. However, Open Society funds hundreds
+        of advocacy orgs — this alone doesn't prove coordination with Condé Nast/WIRED.
+    total_grants_received:
+      amount: 320736
+      count: 2
+      funders: 2
+    source: "https://www.influencewatch.org/non-profit/ultraviolet-action/"
+
+  epic:
+    role: "Filed FTC complaint over NameTag feature (Feb 2026) — preceded both coalition letters"
+    coalition_participation: "Signed both ACLU and CFA letters"
+    pre_existing_relationship: >
+      EPIC has been a persistent Meta critic for over a decade. Their FTC complaint
+      was filed the day NYT broke the NameTag story in February 2026, suggesting
+      pre-positioned legal infrastructure ready to respond to Meta wearables news.
+
+  the_oversight_lab:
+    registered_in: "Kenya"
+    director: "Mercy Mutemi"
+    action: "Filed complaint with Kenya data protection authority re: Meta glasses footage"
+    connection_to_cfa_letter: "Listed as signatory"
+    significance: >
+      International arm of advocacy — extends the campaign beyond US/EU to African
+      data protection regimes. This represents a sophisticated multi-jurisdiction
+      pressure campaign, not spontaneous local concern.
+
+# ----- LEGISLATIVE PRESSURE (state level) -----
+
+legislative_actions:
+  - state: "Pennsylvania"
+    bill: "HB 2603"
+    date: "2026-06-04"
+    sponsor: "Rep. Joe Ciresi (D)"
+    requirement: "Visible indicator light when recording; prohibit disabling"
+    coverage: "Gizmodo, Android Authority, WebProNews"
+    advocacy_connection: >
+      Bill text echoes advocacy coalition framing about "covert recording" and
+      "bad actors." No direct evidence of advocacy org drafting involvement,
+      but timing follows coalition letters by ~2 months.
+
+  - state: "Louisiana"
+    bill: "HB 410"
+    sponsor: "Rep. Laurie Schlegel (R)"
+    requirement: "Tighten recording-consent rules for smart glasses"
+    advocacy_connection: >
+      Bipartisan support (R sponsor vs PA's D sponsor) suggests organic legislative
+      concern, not partisan coordination. However, the bill's language about
+      "manfluencers" recording women mirrors UltraViolet's gendered framing.
+
+  - state: "New York"
+    action: "Statewide courtroom ban on smart glasses"
+    effective_date: "2026-07-20"
+    note: "First state to cover ALL courtrooms"
+
+# ----- WIRED <-> ADVOCACY RELATIONSHIP -----
+
+wired_advocacy_nexus:
+  pattern: "Investigative amplification loop"
+  description: >
+    WIRED produces original investigative reporting (NameTag code discovery,
+    LED removal reporting), which advocacy groups then cite in coalition letters
+    and FTC complaints. Advocacy groups produce demands and legal pressure,
+    which WIRED then covers as news. This creates a mutual amplification loop
+    where each party's output feeds the other's.
+
+  wired_investigations_cited_by_advocacy:
+    - "NameTag code in Meta AI app (Jun 2026) — cited by EPIC, academic researchers"
+    - "LED removal services investigation — cited in PA HB 2603 framing"
+
+  advocacy_actions_covered_by_wired:
+    - "75-org ACLU coalition letter (Apr 2026)"
+    - "EPIC FTC complaint (Feb 2026)"
+    - "Senate letters (Markey, Wyden, Merkley)"
+
+  key_question: >
+    Is this loop evidence of coordination, or normal journalism-advocacy symbiosis?
+    Both parties benefit: WIRED gets scoops that drive subscriptions, advocacy
+    groups get amplification. The critical test is whether WIRED's editorial
+    decisions (story selection, framing, source emphasis) are influenced by
+    Advance Publications' financial interests (Reddit position, competitive
+    dynamics with Meta) or by genuine editorial judgment about newsworthy privacy issues.
+
+  assessment: >
+    CURRENT EVIDENCE LEANS TOWARD ORGANIC SYMBIOSIS with structural incentive
+    alignment, not directed coordination. Key reasons:
+    1. Gizmodo (Keleops AG, zero Condé Nast connection) produces similar coverage
+    2. WSJ (News Corp) covers same issues with different framing (market, not privacy)
+    3. Advocacy groups pre-date WIRED's specific investigations
+    4. WIRED's NameTag code investigation is genuine technical journalism
+    5. Multiple independent outlets amplify advocacy campaigns identically
+    HOWEVER: The structural conflict (Advance owns both WIRED's parent and
+    Reddit, which competes with Meta for ad dollars) means WIRED has extra
+    incentive to pursue Meta-negative stories even when other equally newsworthy
+    stories exist.
+
+# ----- ADVANCE PUBLICATIONS FINANCIAL POSITION -----
+
+advance_reddit_position:
+  as_of: "2026-08-01"
+  shares_held:
+    class_a: 16182
+    class_b: 42191092
+    note: "Class B shares carry 10x voting power"
+  voting_power: "33.5% of outstanding Class A + Class B"
+  board_representation:
+    director: "Steven O. Newhouse"
+    rights: "Designate 2 directors + 1 non-voting board observer"
+    veto: "Board expansion above 10 members requires Advance written approval"
+  stock_performance:
+    price_20260731: 140.67
+    high_52_week: 282.95
+    low_52_week: 119.27
+    crash_20260731: "-21% (from $178.04)"
+    crash_reason: "Q2 earnings beat, but US DAU flat/declining (53.2M vs 53.5M); AI Overviews cannibalizing traffic"
+  previous_monetization:
+    event: "Advance sold 7.8M shares via variable prepaid forward ($1.2B)"
+    maintained_claim: "Advance has not sold, and does not intend to sell, any shares"
+    note: "Derivative structure allows monetization while maintaining voting control"
+  market_cap_exposure: >
+    At $140.67/share, Advance's 42M Class B shares = ~$5.9B notional value.
+    Down from ~$11.9B at 52-week high. This significant paper loss increases
+    Advance's sensitivity to any platform that competes with Reddit for
+    advertiser spend or user attention — including Meta.
+  sources:
+    - "https://www.sec.gov/Archives/edgar/data/1713445/000162828024010137/reddit-sx1a1.htm"
+    - "https://www.thewrap.com/conde-nast-advance-publications-reddit-ipo/"
+    - "https://www.barrons.com/articles/reddit-earnings-stock-price-7f961b9f"
+    - "https://www.ainvest.com/news/shareholders-plan-to-cash-out-1-2-billion-by-selling-7-8-million-shares-of-reddit-rddt-us-2411101033ab72eac5bc2738/"
+
+# ----- COORDINATION ASSESSMENT -----
+
+coordination_assessment:
+  hypothesis: "Is the anti-Meta-glasses press narrative coordinated?"
+  evidence_for_coordination:
+    - "Two coalition letters within weeks with overlapping signatories suggest organized campaign infrastructure"
+    - "EPIC had FTC complaint ready the same day NYT broke the NameTag story — pre-positioned"
+    - "Multi-jurisdiction pressure (US federal + US state + Kenya) suggests sophisticated campaign planning"
+    - "UltraViolet funded by Open Society for 'platform accountability' — professional opposition"
+    - "WIRED-advocacy amplification loop creates self-reinforcing narrative cycle"
+    - "Advance Publications has ~$5.9B Reddit stake creating structural competitive incentive"
+  evidence_against_coordination:
+    - "Gizmodo (Keleops AG, Swiss-owned) produces similar coverage independently"
+    - "WSJ covers same issues with different framing — proving the story is genuinely newsworthy"
+    - "State-level legislation is bipartisan (R in LA, D in PA) — not partisan coordination"
+    - "Advocacy groups have been anti-facial-recognition for years, pre-dating Meta glasses"
+    - "WIRED's NameTag investigation is genuine technical journalism (code review, security researchers)"
+    - "Meta's own internal memo about timing feature launches during political distraction INVITES this opposition"
+    - "Meta removed NameTag code after WIRED report — suggests the reporting had genuine impact on real plans"
+  verdict: >
+    MIXED. The advocacy campaign against Meta glasses is professionally organized and
+    well-funded, but this is standard advocacy infrastructure — not evidence of
+    coordination with Condé Nast/WIRED. The WIRED-advocacy feedback loop is real
+    but normal in investigative journalism. The structural conflict (Advance/Reddit
+    competitive position) creates incentive alignment but not proven direction.
+    The strongest counter-evidence is Gizmodo's independent convergent coverage:
+    if the narrative were WIRED-specific coordination, Gizmodo (different ownership,
+    different financial orbit) wouldn't produce the same framing independently.
+    ASSESSMENT: Organic advocacy + structural incentive alignment + editorial
+    judgment, not directed corporate coordination.
+  updated: "2026-08-01"

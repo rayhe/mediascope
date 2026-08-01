@@ -1,4 +1,97 @@
 # MediaScope Iteration Log
+## 2026-08-01 08:00 PT — Type C: Ownership & Funding Deep Dive — Advocacy Coalition Infrastructure + Advance/Reddit Financial Position + WIRED-Advocacy Nexus
+
+**Rotation:** C (Ownership & Funding Deep Dive)
+**Focus:** Mapping the advocacy organization infrastructure behind the anti-Meta-glasses narrative, UltraViolet Action funding, Advance Publications' Reddit financial position update, and assessing whether the WIRED-advocacy feedback loop constitutes coordination or organic symbiosis.
+
+### Key Findings
+
+#### 1. TWO SEPARATE COALITION LETTERS — Overlapping Infrastructure
+Identified two distinct coalition campaigns against Meta glasses' NameTag facial recognition feature, both in April 2026:
+
+**CFA/UltraViolet Action letter (64 orgs):**
+- Led by Consumer Federation of America & UltraViolet Action
+- Sent to Meta, EssilorLuxottica, White House, FTC, DOJ, state AGs, Congressional leadership
+- Signatories include AFT, EPIC, Fight for the Future, Public Citizen, Consumer Reports, Tech Oversight Project, The Oversight Lab
+- Full letter at: https://consumerfed.org/meta-rayban-letter/
+
+**ACLU "Eyewear, Not Spywear!" letter (75 orgs):**
+- Led by ACLU, ACLU of Massachusetts, NYCLU
+- Sent to Mark Zuckerberg / Meta
+- Signatories include EPIC, EFF, Fight for the Future, Access Now, Leadership Conference on Civil and Human Rights
+- Campaign page: https://www.aclum.org/campaigns-initiatives/eyewear-not-spywear/
+
+**KEY INSIGHT — Hub Nodes:** EPIC, Fight for the Future, and Access Now signed BOTH letters, functioning as "hub nodes" connecting different coalition-building efforts. This indicates shared advocacy infrastructure rather than independent campaigns.
+
+#### 2. ULTRAVIOLET ACTION FUNDING — Open Society Connection
+- Revenue $1.59M (2023), net assets $1.24M
+- **$300K grant from Open Society Action Fund (2022)** specifically for "policy advocacy on platform accountability"
+- Co-founded by Nita Chaudhary (former MoveOn.org campaigns director)
+- Current interim ED Arisha Hatch also Managing Director at Color of Change
+- PAC is financially tiny ($9K receipts 2025-Q1 2026); main org is the 501(c)(4)
+- Source: https://www.influencewatch.org/non-profit/ultraviolet-action/
+
+#### 3. EPIC — Pre-Positioned Legal Infrastructure
+EPIC filed an FTC complaint about NameTag the SAME DAY the NYT broke the story (February 2026). Both coalition letters came after. This suggests pre-positioned legal infrastructure ready to respond to any Meta wearables news — a hallmark of professional opposition campaigns, not spontaneous concern.
+
+#### 4. The Oversight Lab — International Pressure Arm
+Filed complaint with Kenya's data protection authority about Meta glasses footage being processed by Nairobi contractors. The Oversight Lab ALSO signed the CFA coalition letter. This represents multi-jurisdiction pressure (US federal + US state + Kenya) — a sophisticated campaign architecture.
+
+#### 5. WIRED-Advocacy Amplification Loop
+Identified a clear mutual amplification pattern:
+- WIRED breaks NameTag code story (Jun 2026) → advocacy groups cite it in demands
+- Advocacy groups produce coalition letters (Apr 2026) → WIRED covers them as news
+- WIRED reports LED removal services → state legislators cite in bills (PA HB 2603)
+- Each party's output feeds the other's narrative cycle
+
+#### 6. Advance Publications / Reddit Financial Position Update
+- RDDT closed at $140.67 on Jul 31 (down 21% in one day, from $178.04)
+- 52-week range: $119.27-$282.95
+- Crash reason: Q2 beat on revenue ($805M, +61%) and EPS ($1.25 vs $0.95 est), but US DAU flat/declining (53.2M vs 53.5M prior quarter); AI Overviews cannibalizing Reddit traffic
+- Advance still holds 42,191,092 Class B + 16,182 Class A shares = ~$5.9B notional value (down from ~$11.9B at high)
+- Steven Newhouse remains on Reddit board; Advance maintains 33.5% voting power
+- Advance previously monetized $1.2B via variable prepaid forward while claiming "not sold any shares"
+- Source: https://www.barrons.com/articles/reddit-earnings-stock-price-7f961b9f
+
+#### 7. COORDINATION ASSESSMENT
+**Verdict: Organic advocacy + structural incentive alignment, NOT directed coordination.**
+
+Evidence for: Pre-positioned EPIC legal infrastructure; multi-jurisdiction pressure; Open Society funding; WIRED-advocacy amplification loop; Advance $5.9B Reddit stake creates competitive incentive.
+
+Evidence against: Gizmodo (Keleops AG, Swiss-owned, ZERO Condé Nast connection) produces convergent coverage independently; WSJ covers same issues with different framing; state legislation is bipartisan (R in LA, D in PA); advocacy groups were anti-facial-recognition pre-Meta-glasses; WIRED's code investigation is genuine technical journalism; Meta's own internal memo about timing launches during political distraction INVITES opposition.
+
+The strongest control is Gizmodo: if the narrative were WIRED-specific corporate coordination, Gizmodo (different ownership, different financial orbit) wouldn't produce the same framing independently.
+
+#### 8. New File: profiles/advocacy-coalitions.yaml
+Created comprehensive advocacy coalition mapping with:
+- Both coalition letters with full signatory lists and leadership
+- Key individual profiles (Kade Crockford, Daniel Schwarz, Cody Venzke, Thorin Klosowski, Mercy Mutemi)
+- UltraViolet Action funding analysis (Open Society $300K grant)
+- Legislative actions tracking (PA HB 2603, LA HB 410, NY courtroom ban)
+- WIRED-advocacy nexus analysis
+- Advance/Reddit financial position update
+- Full coordination assessment with evidence for and against
+
+**What was improved:**
+- New file: `profiles/advocacy-coalitions.yaml` — first advocacy infrastructure mapping in MediaScope
+- Updated Advance/Reddit financial data with Jul 31 crash and current position
+- Documented WIRED-advocacy amplification loop pattern
+- Mapped multi-jurisdiction pressure campaign architecture (US federal + state + Kenya)
+- All findings sourced from primary sources (SEC filings, FEC data, advocacy org press releases, coalition letters)
+
+**Source URLs:**
+- https://consumerfed.org/meta-rayban-letter/ (CFA coalition letter, full signatories)
+- https://www.aclu.org/press-releases/aclu-and-75-organizations-sound-alarm-on-metas-plans-to-add-facial-recognition-technology-to-ray-ban-and-oakley-eyeglasses
+- https://epic.org/epic-joins-aclus-eyewear-not-spyware-campaign-to-fight-metas-surveillance-glasses/
+- https://www.influencewatch.org/non-profit/ultraviolet-action/ (UltraViolet funding)
+- https://www.fec.gov/data/committee/C00629477/ (UltraViolet PAC financials)
+- https://www.barrons.com/articles/reddit-earnings-stock-price-7f961b9f (RDDT crash)
+- https://www.sec.gov/Archives/edgar/data/1713445/000162828024010137/reddit-sx1a1.htm (Advance Reddit stake)
+- https://techcabal.com/2026/03/06/kenyan-watchdog-asks-regulator-to-probe-meta-ai-glasses/ (Oversight Lab Kenya)
+- https://gizmodo.com/can-smart-glasses-ever-be-privacy-friendly-these-companies-think-so-2000746927 (EFF/Gizmodo)
+
+---
+
 ## 2026-08-01 07:00 PT — Type B: Journalist/Publication Research — Raymond Wong (Gizmodo) + Gizmodo/Keleops Ownership + Christopher Mims (WSJ)
 
 **Rotation:** B (Journalist/Publication Research)
