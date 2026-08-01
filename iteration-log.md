@@ -1,4 +1,50 @@
 # MediaScope Iteration Log
+## 2026-08-01 03:00 PT — Type C: Ownership & Funding Deep Dive — Delhi Protest Surveillance + RDDT Q2 Crash + Financial Pressure Convergence
+
+**Rotation:** C (Ownership & Funding Deep Dive)
+**Focus:** Three major new developments mapped: (1) Delhi police deployment of AI smart glasses at Jantar Mantar protests validates advocacy groups' predictions, (2) RDDT crashes 21% on Q2 earnings despite beating estimates, creating margin call risk for Advance Publications, (3) Condé Nast planning for zero search traffic as AI disrupts both Reddit and magazine business models simultaneously.
+
+### Key Findings
+
+#### 1. Delhi Jantar Mantar — First State Deployment of AI Smart Glasses at Democratic Protest
+- Delhi Police deployed AI-enabled smart glasses with real-time facial recognition at youth protests (CJP/NEET paper leak, Jun 20–Jul 2026)
+- Scanned faces against 65,000-person criminal database in real-time
+- Also recorded Instagram handles of arriving protesters
+- Continuous surveillance of daily activities (eating, resting, medical care)
+- Two legal challenges filed: Delhi HC PIL (Aishe Ghosh) + Supreme Court PIL (AA Rahim, CPI(M))
+- Internet Freedom Foundation demanded biometric data deletion (Jul 24)
+- Reuters (Jul 27): "Modi faces challenge from activists over surveillance at India youth protest"
+- **This is exactly the scenario the ACLU "Eyewear, Not Spyware!" coalition letter predicted 67 days earlier** — though in a jurisdiction the coalition didn't specifically target
+
+#### 2. RDDT Q2 Crash — Advance Publications' Margin Call Exposure
+- Reddit Q2: Revenue $804.9M (+61% YoY, beat $732.4M est), EPS $1.25 (beat $0.97 est)
+- Stock crashed 21% to $140.67 despite beating all metrics — "choppy search referrals" warning
+- Volume: 29.84M shares (7.2× average) — massive institutional selling
+- **RDDT now BELOW Advance's 7.8M-share margin loan offering floor ($145.38)**
+- Intraday low $135.22 = 7% below collateral offering floor
+- Advance's total Reddit position: ~46.2M shares × $140.67 = ~$6.50B (down ~$6.57B from 52-wk high $282.95)
+- YTD: -41.8%, market cap from $43.56B → $27.51B
+
+#### 3. Condé Nast Zero-Search Planning — Dual Financial Squeeze
+- CEO Roger Lynch told teams to plan for zero organic search traffic
+- Folded Glamour and SELF; ongoing layoffs
+- Digital subscriptions grew 29% but replacing a disappearing discovery channel
+- Advance faces **simultaneous two-front squeeze**: Reddit losing value (AI threatens search referrals) + Condé Nast media operation losing search traffic (same AI disruption)
+- Both problems have the same root cause: AI is cannibalizing discovery-to-content pipeline
+- Ironically, Meta is best positioned to build the AI replacing both models
+
+**What was improved:**
+- New entity cluster #95: India Surveillance / FRT Deployment (10 aliases, custom regex with contextual lookaheads for IFF, CJP abbreviation disambiguation)
+- Updated Privacy Advocacy cluster (#84) notes to cross-reference #77 and #95
+- Updated METHODOLOGY.md §15 cluster count (94→95) and §15.3 table
+- Extended `wearables_advocacy_coalition_analysis_2026_jul.md` with:
+  - Phase 7: Delhi Jantar Mantar state deployment (6 primary sources)
+  - Phase 8: Financial Pressure Convergence (RDDT Q2 crash + Condé Nast zero-search + convergence analysis, 6 primary sources)
+
+**Stats delta:** +1 entity cluster, +10 aliases
+**Tests:** 158 passed (test_structural_consistency + test_accuracy_guide + test_careers)
+**Commit:** (pending)
+
 ## 2026-08-01 01:00 PT — Type A: Article Deep Dive — CNN Wearables Category Condemnation
 
 **Rotation:** A (Article Deep Dive)

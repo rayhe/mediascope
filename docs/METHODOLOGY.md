@@ -1032,7 +1032,7 @@ To our knowledge, **no prior work applies difference-in-differences methodology 
 
 ### 15.1 Overview
 
-Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **94 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
+Entity detection is the first analytical step — every downstream measurement (sentiment, framing, asymmetry) depends on correctly identifying which entities an article discusses. MediaScope maintains **95 entity clusters**, each grouping an organization, product ecosystem, or analytical category with all known aliases, executive names, and subsidiary references.
 
 Clusters use word-boundary regex matching with negative lookahead patterns to avoid false positives (e.g., "Apple pie" ≠ Apple Inc., "Meta tag" ≠ Meta Platforms, "Amazon rainforest" ≠ Amazon). The primary entity for an article is determined by mention count and positional weighting.
 
@@ -1050,7 +1050,7 @@ Entity clusters accept two formats in code and YAML profiles:
 
 ### 15.3 Complete Cluster Reference
 
-The following table documents all 94 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
+The following table documents all 95 entity clusters shipped with MediaScope, organized by analytical category. Alias counts reflect the full matching surface including executive names, product names, and subsidiary references.
 
 #### Big Tech (Primary Analysis Targets)
 
@@ -1170,6 +1170,7 @@ The following table documents all 94 entity clusters shipped with MediaScope, or
 | **Policy Research** | 13 | RAND Corporation, RAND, Brookings Institution, Brookings, Center for Strategic and International Studies, CSIS (+7 more) |
 | **Cybersecurity/Research** | 11 | Brian Krebs, Krebs, Jane Manchun Wong, Troy Hunt, Bruce Schneier, Schneier (+5 more) |
 | **Privacy Advocacy** | 16 | Foxglove, Privacy International, EFF, Electronic Frontier Foundation, Access Now, Big Brother Watch, Open Rights Group, noyb, CAIDP, Fight for the Future (+6 more) |
+| **India Surveillance / FRT Deployment** | 10 | Delhi Police, Jantar Mantar, NCRB, Abhigyan, Internet Freedom Foundation, IFF, Cockroach Janta Party, CJP, Aishe Ghosh, AA Rahim |
 | **Patent/IP Research** | 5 | Patentlyze, PatSnap, Innography, patent application, patent filing |
 | **Entertainment/Talent** | 8 | Creative Artists Agency, CAA, William Morris Endeavor, WME, United Talent Agency, UTA, ICM Partners, Hannah Einbinder |
 

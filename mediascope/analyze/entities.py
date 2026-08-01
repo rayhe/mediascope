@@ -1129,6 +1129,22 @@ DEFAULT_ENTITY_CLUSTERS: ClusterDict = {
             r"(?!\w)"
         ),
     },
+    "India Surveillance / FRT Deployment": {
+        "aliases": [
+            "Delhi Police", "Jantar Mantar", "NCRB", "Abhigyan",
+            "Internet Freedom Foundation", "IFF",
+            "Cockroach Janta Party", "CJP",
+            "Aishe Ghosh", "AA Rahim",
+        ],
+        "regex": (
+            r"(?<!\w)"
+            r"(Delhi\s+Police|Jantar\s+Mantar|(?-i:NCRB)|Abhigyan|"
+            r"Internet\s+Freedom\s+Foundation|(?-i:IFF)(?=\s+(?:India|digital|privacy|wrote|demand))|"
+            r"Cockroach\s+Janta\s+Party|(?-i:CJP)(?=\s+(?:protest|sit-in|demand))|"
+            r"Aishe\s+Ghosh|(?-i:AA)\s+Rahim)"
+            r"(?!\w)"
+        ),
+    },
 }
 
 

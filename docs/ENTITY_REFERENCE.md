@@ -1,6 +1,6 @@
 # Entity Detection & Clustering Quick Reference
 
-> A compact lookup card for all 94 entity clusters (906 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
+> A compact lookup card for all 95 entity clusters (916 aliases) used by MediaScope's entity detection system. For the full code, disambiguation filters, and custom regex patterns, see [`mediascope/analyze/entities.py`](../mediascope/analyze/entities.py). For how entities feed into asymmetry scoring, see [METHODOLOGY.md §2](METHODOLOGY.md#2-asymmetry-scoring-engine).
 
 ---
 
@@ -15,8 +15,8 @@ Entity detection is the **first stage** of the analysis pipeline — every downs
 | **Cluster** | A named group representing a single trackable entity (company, org, person category). Example: `Meta` |
 | **Alias** | A text string that maps to a cluster. Example: `"Facebook"`, `"Zuckerberg"`, `"Instagram"` all → `Meta` |
 | **Canonical Name** | The best alias match for a given text span. `"Andrew Bosworth"` matched in the Meta cluster resolves to canonical name `"Andrew Bosworth"`, not `"Meta"` |
-| **Custom Regex** | A hand-tuned regex for the cluster (69 of 94 clusters). Handles homographs, negative lookaheads, and context-sensitive matching |
-| **Auto Regex** | Word-boundary patterns auto-generated from the alias list (25 of 94 clusters). Simpler but adequate for unambiguous names |
+| **Custom Regex** | A hand-tuned regex for the cluster (70 of 95 clusters). Handles homographs, negative lookaheads, and context-sensitive matching |
+| **Auto Regex** | Word-boundary patterns auto-generated from the alias list (25 of 95 clusters). Simpler but adequate for unambiguous names |
 
 ### Pipeline Position
 
@@ -169,6 +169,7 @@ Cloud providers, AI startups, and infrastructure companies.
 | 92 | **Reddit** | 2 | custom | Reddit, RDDT | Social platform; critical for Advance Publications ownership tracking. Added Jul 16 from IBD Wedbush hyperscalers article. |
 | 93 | **eBay** | 2 | custom | eBay, EBAY | E-commerce marketplace. Added Jul 16 from IBD Wedbush hyperscalers article. |
 | 94 | **Recording Wearable Devices** | 8 | custom | Amazon Bee, Bee Pioneer, Plaud, Notepin, Notepin S, Humane AI Pin, Omi, Compass | Non-glasses wearable recording devices (wristbands, clip-on recorders, pendants). Added Aug 1 from CNN "AI devices that see, listen and record" article (Jul 26). These represent the narrative broadening from "Meta glasses are the problem" to "ALL recording wearables are the problem." Tracking this cluster separately from Smart Glasses Competitors (#48) because the form factor and backlash dynamics differ. |
+| 95 | **India Surveillance / FRT Deployment** | 10 | custom | Delhi Police, Jantar Mantar, NCRB, Abhigyan, Internet Freedom Foundation, IFF, Cockroach Janta Party, CJP, Aishe Ghosh, AA Rahim | India state deployment of AI smart glasses + facial recognition at protests (Jul 2026). Supreme Court and Delhi HC PILs filed challenging legality. First confirmed state use of AI smart glasses for protest surveillance — validates advocacy groups' predictions. Added Aug 1. |
 | 56 | **Australia** | 5 | custom | Australia, Australian government, eSafety Commissioner, Julie Inman Grant, Inman Grant | Extended Jul 14: added eSafety Commissioner Julie Inman Grant by name — previously only the title was matched. |
 | 57 | **Legal/Judicial** | 6 | custom | Delaware courts, Section 230, DSA, MDL numbers, federal courts/judges, Supreme Court | Extended in Jul 2026 to catch federal judges invisible in Reuters $1.4T article |
 
@@ -182,7 +183,7 @@ Cloud providers, AI startups, and infrastructure companies.
 | 59 | **Surveillance/Biometrics** | 8 | auto | Rank One Computing, Clearview AI, NEC, Cognitec, Idemia | |
 | 60 | **Data/Intelligence Industry** | 12 | auto | ShadowDragon, Babel Street, LexisNexis, Voyager Labs, Dataminr, Cellebrite, NSO Group, Pegasus | |
 | 61 | **Cybersecurity/Research** | 11 | auto | Brian Krebs, Troy Hunt, Bruce Schneier, Mudge, METR, CISA, NIST | |
-| 84 | **Privacy Advocacy** | 24 | auto | Foxglove, Privacy International, EFF, Access Now, Big Brother Watch, noyb, CAIDP, EPIC, ACLU, Consumer Federation of America, CFA, Norwegian Consumer Council, CNIL, Clarkson Law Firm, Everyone Hates Elon, EHE | Jul 2026: The Tab Muse Image analysis. Jul 31: Expanded with wearables advocacy orgs (EPIC, ACLU, CFA, Norwegian Consumer Council, CNIL, Clarkson Law, EHE activist group). |
+| 84 | **Privacy Advocacy** | 16 | auto | Foxglove, Privacy International, EFF, Access Now, Big Brother Watch, noyb, CAIDP, Fight for the Future, Digital Rights Foundation, Ranking Digital Rights, AlgorithmWatch | Jul 2026: The Tab Muse Image analysis. Jul 31: Expanded with wearables advocacy orgs. Aug 1: See also #77 (Privacy/Civil Liberties Orgs) for ACLU, EPIC overlap, and #95 (India Surveillance) for IFF. |
 
 ---
 

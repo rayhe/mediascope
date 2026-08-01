@@ -379,3 +379,130 @@ now below $145.38 offering floor with margin call exposure), Condé Nast's consp
 absence from Meta's AI licensing deals, and WIRED's direct editorial impact (NameTag
 code removal within 48 hours of publication) create an undisclosed incentive alignment
 that amplifies the advocacy→coverage→advocacy loop — even without coordination.
+
+### Phase 7: State Deployment Validates Advocacy Fears — Delhi Jantar Mantar (Jun 20–Jul 28, 2026)
+
+**The most significant development in the wearables surveillance debate since the NameTag
+discovery.** Delhi Police deployed AI-enabled smart glasses with real-time facial recognition
+at the Jantar Mantar youth protests (CJP/NEET paper leak protests), beginning June 20, 2026.
+
+**What happened:**
+- Youth-led protests at Jantar Mantar (designated protest site in New Delhi) against Union
+  Education Minister Dharmendra Pradhan over repeated exam paper leaks
+- Delhi Police deployed: facial recognition cameras, AI-enabled smart glasses, fingerprint
+  identification apps (NCRB "Abhigyan"), CCTV, drones, and Mobile Command & Control Vehicle
+- Smart glasses connected to a 65,000-person criminal database, scanning faces in real-time
+- Police also **recorded Instagram handles** of arriving protesters
+- Continuous surveillance extended to daily activities (eating, resting, seeking medical care)
+- **Women protesters photographed in drenched clothes** during rainfall — no privacy shelter
+- Thousands of biometric faceprints collected from protesters, journalists, and bystanders
+
+**Legal challenges (as of Jul 28, 2026):**
+1. **Delhi High Court PIL** (Aishe Ghosh, former JNUSU president) — challenges continuous
+   police surveillance as disproportionate. HC directed petitioner to examine Data Protection
+   Act, SOPs, and consider fresh petition. Listed for Sep 11.
+2. **Supreme Court PIL** (AA Rahim, CPI(M) MP) — challenges deployment of FRT and smart
+   glasses as lacking statutory basis, violating Articles 14, 19, and 21 of Constitution.
+3. **Internet Freedom Foundation** wrote to Delhi Police Commissioner on Jul 24 demanding
+   deletion of all biometric data collected at the protest site.
+
+**Government defense:** Solicitor General Tushar Mehta: "every protest is videographed" as
+routine law-and-order measure; claim of privacy in a public place is "ironical." Delhi
+Police: recording "only for purpose of law and order. There is no snooping."
+
+**Reuters coverage** (Jul 27): "Modi faces challenge from activists over surveillance at
+India youth protest" — framed as government vs. civil liberties, citing Meta glasses specifically.
+
+**MediaScope significance — this case validates the advocacy chain's core prediction:**
+The ACLU coalition letter (Apr 13) warned that glasses with FRT would be used "at protests,
+medical clinics, and businesses" to "identify strangers" and "link that name to digital
+databases." Delhi Police did **exactly** that — scanning faces against a 65,000-person
+database at a democratic protest. The coalition letter's prediction was accurate within 67
+days of publication, though in an international context they didn't specifically anticipate.
+
+**CONTROL finding (India is independent from US advocacy chain):** The Delhi deployment is NOT
+a product of ACLU/EFF/Fight for the Future advocacy. It's a sovereign police action in a
+separate legal jurisdiction with its own digital rights infrastructure (Internet Freedom
+Foundation, not EFF). However, the media coverage of the Delhi case has been immediately
+integrated into the global wearables-negative narrative — Reuters, BBC, Wikipedia all
+reference it in the Meta smart glasses context. This creates a feedback loop: advocacy
+groups predicted state surveillance use → state surveillance use validates advocacy groups →
+advocacy groups cite the Delhi case to demand US regulation → US media covers the Delhi case.
+
+**Source URLs:**
+- Reuters: https://www.reuters.com/world/india/modi-faces-challenge-activists-over-surveillance-india-youth-protest-2026-07-27/
+- Bar & Bench (Supreme Court PIL): https://www.barandbench.com/news/litigation/cpim-mp-moves-supreme-court-against-use-of-facial-recognition-tech-by-police-at-jantar-mantar-protest-site
+- LiveLaw (HC hearing Jul 22): https://www.livelaw.in/high-court/delhi-high-court/neet-protest-jantar-mantar-delhi-police-surveillance-542745
+- LiveLaw (HC hearing Jul 27): https://www.livelaw.in/high-court/delhi-high-court/neet-student-protests-jantar-mantar-delhi-police-surveillance-543072
+- LiveLaw (HC hearing Jul 28): https://www.livelaw.in/high-court/delhi-high-court/delhi-high-court-pil-against-surveillance-of-protesters-at-jantar-mantar-543178
+- MediaNama (Delhi Police statement): https://www.medianama.com/2026/07/223-delhi-police-jantar-mantar-protest-videography-law-order-surveillance/
+- Hindu Business Line (Republic Day deployment): https://www.thehindubusinessline.com/news/national/delhi-police-to-use-ai-enabled-smart-glasses-for-republic-day-2026-security/article70536707.ece
+
+### Phase 8: Financial Pressure Convergence — RDDT Q2 Crash & Condé Nast Zero-Search Planning (Jul 31, 2026)
+
+**Reddit Q2 2026 Earnings (reported Jul 30 after-market):**
+- Revenue: $804.9M (+61% YoY) — BEAT est. $732.4M
+- EPS: $1.25 — BEAT est. $0.97
+- DAU: 130.3M (+18% YoY) — in line with estimates
+
+**Despite beating on all metrics, stock crashed 21% on Jul 31:**
+- Open: $147.70 → Low: $135.22 → Close: $140.67 → After-hours: $139.55
+- Volume: 29.84M shares traded (7.2× average 4.14M) — massive institutional selling
+- YTD: -41.8%
+- From 52-week high: -50.3% (from $282.95)
+
+**Crash catalyst:** CEO Steve Huffman warned "search referrals were choppy in the quarter,
+and traffic was more volatile later in the quarter." Market fear: Google AI Overviews are
+cannibalizing Reddit's organic search traffic — the discovery engine that drives most new
+user acquisition. Huffman's counter-narrative ("We're building a daily destination") failed
+to reassure investors.
+
+**Advance Publications impact:**
+- Advance holds ~24% of Reddit (~46.2M shares based on Sep 30 filing)
+- Value at Jul 31 close: ~$6.50B (down from ~$13.07B at 52-week high)
+- **Paper loss from 52-week high: ~$6.57B**
+- **Critical: 7.8M shares pledged as margin loan collateral at $145.38-$148.54**
+- RDDT closed at $140.67 — **below the $145.38 offering floor**
+- Intraday low $135.22 — 7% below the collateral offering floor
+- **Margin call risk is now REAL**, not theoretical
+- Advance stated "intends to continue as a long-term shareholder" and bought derivatives
+  to maintain voting power, but the margin loan mechanics create forced-sale pressure
+  independent of investment thesis
+
+**Condé Nast's zero-search planning (mid-2026):**
+CEO Roger Lynch told teams to plan for zero search traffic. Key quotes:
+- "I basically have to go to the second page to get an organic result"
+- "If you try to be too broad, too large of an audience, this is not the era for that"
+- Digital subscriptions grew 29% in revenue, but this replaces a disappearing discovery channel
+- Folded Glamour and SELF; 16 unionized employees laid off
+
+**Convergence analysis:**
+Advance Publications faces a simultaneous two-front financial squeeze:
+1. **Reddit** (their largest asset by far) is losing value as AI threatens its traffic model
+2. **Condé Nast** (their media operation) is planning for zero organic search traffic
+
+Both problems have the **same root cause**: AI is cannibalizing the discovery-to-content
+pipeline that drives both Reddit's and Condé Nast's business models. Ironically, the company
+best positioned to build the AI that replaces both models is Meta — whose AI assistant is
+already one of the tools cited as threatening Reddit's search referral traffic.
+
+This creates a structural financial incentive for Advance/Condé Nast publications (especially
+WIRED) to:
+1. Frame AI as threatening (protects Condé Nast search traffic)
+2. Frame Meta AI specifically as dangerous (competitive damage to Condé Nast's biggest
+   revenue competitor)
+3. Frame Meta wearables negatively (damages the hardware platform that distributes Meta AI)
+4. Frame Google AI Overviews negatively (protects Reddit's search referral traffic)
+
+**None of this proves coordination.** It proves that Advance Publications' financial
+incentives are structurally aligned with anti-Meta, anti-AI editorial framing across both
+its media and investment portfolios — and that this alignment has intensified sharply in
+H1 2026 as both Reddit and Condé Nast face existential AI disruption threats simultaneously.
+
+**Source URLs:**
+- Investopedia (RDDT crash): https://www.investopedia.com/market-update-reddit-stock-plunges-on-choppy-search-referrals-warning-rddt-12031742
+- StockAnalysis (RDDT statistics): https://stockanalysis.com/stocks/rddt/statistics/
+- Morningstar (Reddit Q1 results): https://www.morningstar.com/news/business-wire/20260430242740/reddit-reports-first-quarter-2026-results
+- Medium (Condé Nast zero search): https://ronntorossian.medium.com/cond%C3%A9-nast-just-told-its-teams-to-plan-for-zero-search-traffic-2dafd84901bb
+- Status News (Condé Nast layoffs): https://www.status.news/p/cond-nast-layoffs-self-glamour-magazine
+- Ainvest (Advance margin loan): https://www.ainvest.com/news/shareholders-plan-to-cash-out-1-2-billion-by-selling-7-8-million-shares-of-reddit-rddt-us-2411101033ab72eac5bc2738/
