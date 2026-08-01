@@ -1,6 +1,6 @@
 # Framing Device Quick Reference
 
-> A compact lookup card for all 112 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
+> A compact lookup card for all 113 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
 
 ---
 
@@ -9,7 +9,7 @@
 During article analysis, scan the text for trigger keywords and structural patterns listed below. Each device name links to the detailed entry in METHODOLOGY.md. The **tier** column indicates detection method:
 
 - **C** = Core (10 types) — fundamental editorial techniques, pattern-matched
-- **E** = Extended (95 types) — discovered from real article analysis, pattern-matched
+- **E** = Extended (96 types) — discovered from real article analysis, pattern-matched
 - **S** = Structural (7 types) — detected via post-pass heuristics over full article structure
 
 > **Note on device numbering:** Devices are numbered by discovery order (1–102), not by category. When new devices are discovered during article analysis, they receive the next sequential number. The reference organizes them by thematic category for readability, so device numbers within a category are not contiguous.
@@ -256,6 +256,16 @@ Devices that collapse multi-step processes into simplified binary constructions.
 
 ---
 
+## Category 15: Category & Market Framing
+
+Devices that frame entire product categories or market dynamics rather than individual entities.
+
+| # | Device | Tier | One-Line Description | Key Triggers |
+|---|--------|------|----------------------|-------------|
+| 113 | **Category Contamination** | E | One company's reputational damage contaminates an entire product category, forcing competitors to delay, redesign, or explicitly distance themselves — converts company-specific failures into category-level stigma that ANY new entrant must address | "[Company A]'s reputation directly influences [Company B]'s timeline," "don't want to ship a device that invites the same backlash," "poisoned the well," "wants none of it [privacy baggage]," "How do you put cameras on someone's face without sparking outrage?" |
+
+---
+
 ## External Influence Vectors
 
 These are not framing devices in the formal taxonomy but are tracked as editorial influence mechanisms documented in [METHODOLOGY.md §19](METHODOLOGY.md#19-external-editorial-influence-vectors-fellowship-programs):
@@ -282,9 +292,9 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 | Tier | Count | Detection Method |
 |---|---|---|
 | Core | 10 | Pattern matching — fundamental editorial techniques |
-| Extended | 95 | Pattern matching — discovered from real article analysis |
+| Extended | 96 | Pattern matching — discovered from real article analysis |
 | Structural (post-pass) | 7 | Full-article heuristics (position, accumulation, structure) |
-| **Total** | **106** | |
+| **Total** | **113** | |
 
 ---
 

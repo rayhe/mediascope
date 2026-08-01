@@ -10064,27 +10064,116 @@ _PLATFORM_SELF_INCRIMINATION_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["platform_self_incrimination"] = _PLATFORM_SELF_INCRIMINATION_PATTERNS
 
 
+# -----------------------------------------------------------------------
+# category_contamination (#113) — editorial framing where one company's
+# reputational damage contaminates an entire product category, forcing
+# competitors to delay, redesign, or explicitly distance themselves.
+#
+# The rhetorical structure is:
+#   1. Establish target company's failures as settled fact
+#   2. Show competitor studying/absorbing those lessons
+#   3. Frame competitor's delay or design choice as a RESPONSE to
+#      the target's reputation, not mere engineering challenge
+#   4. Position competitor's extra caution as evidence of superior values
+#
+# Distinct from competitive_positioning (#34) which compares products
+# or features directly.  Category contamination frames the ENTIRE PRODUCT
+# CATEGORY as damaged by one company's actions, forcing ANY new entrant
+# to spend time/money on decontamination.  Distinct from
+# competitive_displacement (#36) which fills a vacuum — contamination
+# describes inherited stigma, not opportunity.  Distinct from
+# glasshole_revival (#107) which revives a pejorative — contamination
+# is the structural CONSEQUENCE of that stigma on competitors.
+#
+# Discovered in WebProNews Apple smart glasses delay article (Jul 27,
+# 2026):
+#   "Meta's reputation directly influences Apple's timeline"
+#   "Engineers don't want to ship a device that invites the same
+#     backlash"
+#   "Meta's glasses carry 'privacy baggage.' Apple wants none of it."
+#   "How do you put cameras on someone's face without sparking
+#     outrage?"
+# Also confirmed in:
+#   AppleInsider (Jul 26): "poisoning the well when it comes to
+#     consumers"
+#   TechSpot (Jul 27): "wary of the privacy violations associated
+#     with smart glasses"
+#   Gizmodo (Jun 14): "Meta owns the share of mind... 'Oh, smart
+#     glasses — that's Meta'"
+# -----------------------------------------------------------------------
+_CATEGORY_CONTAMINATION_PATTERNS: list[re.Pattern] = [
+    # Pattern 1: "[Company A]'s reputation/baggage directly influences
+    #   [Company B]'s timeline/strategy/plans"
+    re.compile(
+        r"\b(?:Meta(?:'s)?|Facebook(?:'s)?|Google(?:'s)?|"
+        r"the\s+company(?:'s)?)\s+"
+        r"(?:reputation|privacy\s+baggage|baggage|track\s+record|"
+        r"controversies?|failures?|problems?|scandals?)\s+"
+        r"(?:directly\s+)?(?:influence[sd]?|affect[sd]?|shape[sd]?|"
+        r"impact[sd]?|delay[sd]?|complicate[sd]?)",
+        re.IGNORECASE,
+    ),
+    # Pattern 2: "don't want to ship/launch a device that invites
+    #   the same backlash/criticism/scrutiny"
+    re.compile(
+        r"(?:don(?:'t|'t)|doesn(?:'t|'t)|do\s+not|does\s+not)\s+"
+        r"want\s+to\s+(?:ship|launch|release|introduce|build|create)\s+"
+        r"(?:a\s+)?(?:device|product|glasses|wearable)\s+that\s+"
+        r"(?:invite[sd]?|attract[sd]?|trigger[sd]?|create[sd]?|"
+        r"spark[sd]?|draw[sd]?)\s+"
+        r"(?:the\s+same\s+)?(?:backlash|criticism|scrutiny|outrage|"
+        r"controversy|stigma|concerns?)",
+        re.IGNORECASE,
+    ),
+    # Pattern 3: "poisoned the well" / "poisoning the well" for category
+    re.compile(
+        r"\bpoison(?:ed|ing)?\s+the\s+well\b",
+        re.IGNORECASE,
+    ),
+    # Pattern 4: "[Company] wants none of it" / "wants no part of"
+    #   in context of reputational baggage
+    re.compile(
+        r"\b(?:wants?\s+(?:none\s+of\s+it|no\s+part\s+of\s+(?:it|that|"
+        r"the\s+(?:baggage|controversy|stigma|backlash))))\b",
+        re.IGNORECASE,
+    ),
+    # Pattern 5: "How do you [enter category] without [negative outcome]"
+    #   — frames the category itself as inherently problematic
+    re.compile(
+        r"\bhow\s+(?:do|can|does)\s+you\s+"
+        r"(?:put|sell|launch|ship|release|introduce|make|build)\s+"
+        r"(?:cameras?\s+on\s+someone(?:'s)?\s+face|"
+        r"a\s+(?:camera|recording)\s+(?:device|glasses|wearable))\s+"
+        r"without\s+(?:sparking|causing|creating|inviting|triggering)\s+"
+        r"(?:outrage|backlash|concern|controversy|fear|alarm)",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["category_contamination"] = _CATEGORY_CONTAMINATION_PATTERNS
+
+
 def detect_framing_devices(
     text: str,
     source_publication: str | None = None,
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 105 pattern-matched device types plus 7 structural
-    post-pass types (112 total).
+    Scans for 106 pattern-matched device types plus 7 structural
+    post-pass types (113 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
     source (case-insensitive substring).  Without it, all publication
     authority claims are returned (backward-compatible default).
 
-    Pattern-matched (102): absence_as_evidence, analogy_metaphor,
+    Pattern-matched (106): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
-    ceo_personalization, chilling_effect,
+    category_contamination, ceo_personalization, chilling_effect,
     competitive_deficit, competitive_displacement,
     competitive_guilt_transfer, competitive_positioning,
-    commodification_metaphor, confession_framing,
+    commodification_metaphor, category_contamination,
+    confession_framing,
     consent_alarm, consumer_ownership,
     corporate_reassurance_undercut, cross_publication_import,
     default_burden_privacy, defensive_verb_framing,
