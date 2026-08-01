@@ -9539,6 +9539,91 @@ _MARKET_FLOODING_PATTERNS: list[re.Pattern] = [
 _DEVICE_PATTERNS["market_flooding"] = _MARKET_FLOODING_PATTERNS
 
 # -----------------------------------------------------------------------
+# chilling_effect — self-censorship or avoidance behavior by users/owners
+# of a product due to social stigma, fear of confrontation, or reputational
+# risk.  The rhetorical power comes from showing that even the product's
+# own advocates modify their behavior to avoid negative social consequences,
+# implying the product carries inherent social cost.  Distinct from
+# surveillance_creep (which focuses on data capture by the device),
+# glasshole_revival (which invokes a historical pejorative), and
+# walking_camera (which dehumanizes the wearer): chilling_effect focuses
+# on the user's INTERNALIZED response to social pressure, making the
+# stigma story self-reinforcing.
+#
+# Discovered in PetaPixel "Meta Smart Glasses Owners Too Scared to Wear
+# Them in Public" (Jul 14, 2026):
+#   "fold them up and hang them on my shirt"
+#   "maybe it's not a good idea to have those"
+#   "I didn't really think that through all the way"
+# Also seen in Engadget, CNN Jul 2026 coverage.
+# -----------------------------------------------------------------------
+_CHILLING_EFFECT_PATTERNS: list[re.Pattern] = [
+    # "too scared/afraid/uncomfortable/embarrassed to wear/use"
+    re.compile(
+        r"\b(?:too|so)\s+"
+        r"(?:scared|afraid|nervous|uncomfortable|embarrassed|self-conscious|"
+        r"hesitant|reluctant|anxious|wary|worried)\s+"
+        r"(?:to\s+)?"
+        r"(?:wear|use|put on|take out|bring|sport)\b",
+        re.IGNORECASE,
+    ),
+    # "fold them up / put them away / take them off / hide" in social context
+    re.compile(
+        r"\b(?:fold(?:s|ed|ing)?\s+(?:them|it)\s+up|"
+        r"put(?:s|ting)?\s+(?:them|it)\s+away|"
+        r"take(?:s|n)?\s+(?:them|it)\s+off|"
+        r"hid(?:e|es|ing|den)\s+(?:them|it|the\s+glasses|my\s+glasses))\b"
+        r".{0,80}?"
+        r"\b(?:public|crowd|people|strangers|others|social|uncomfortable)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "reconsidering / second thoughts / thought twice / having doubts" about purchase/wearing
+    re.compile(
+        r"\b(?:reconsidering|second[- ]?thoughts?|thought\s+twice|"
+        r"having\s+doubts?|questioned|regret(?:s|ted|ting)?|"
+        r"not\s+(?:a\s+)?good\s+idea)\b"
+        r".{0,60}?"
+        r"\b(?:buy(?:ing)?|purchas(?:e|ing)|wear(?:ing)?|hav(?:e|ing)|"
+        r"own(?:ing)?|get(?:ting)?|glasses|device)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "more mindful / more careful / more conscious" about wearing in public
+    re.compile(
+        r"\b(?:more\s+)?(?:mindful|careful|conscious|cautious|aware|"
+        r"selective|discreet)\b"
+        r".{0,60}?"
+        r"\b(?:wear(?:ing)?|public|crowd(?:ed)?|in\s+public|around\s+people|"
+        r"outside|social\s+setting|environment)\b",
+        re.IGNORECASE | re.DOTALL,
+    ),
+    # "won't/wouldn't wear them in public / outside / around people"
+    re.compile(
+        r"\b(?:won'?t|wouldn'?t|refuse[sd]?\s+to|stopped|"
+        r"decided\s+(?:not\s+to|against)|avoid)\s+"
+        r"(?:wear(?:ing)?|us(?:e|ing)|bring(?:ing)?|tak(?:e|ing)\s+(?:them|it))\s+"
+        r"(?:them\s+)?(?:in\s+public|outside|around\s+(?:people|others|strangers)|"
+        r"in\s+crowd(?:ed|s)?)\b",
+        re.IGNORECASE,
+    ),
+    # "you're basically a predator/creep/pervert" — social labeling causing avoidance
+    re.compile(
+        r"\b(?:you'?re|they'?re|wearers?\s+(?:are|look)|people\s+(?:think|assume|see))\s+"
+        r"(?:basically\s+|essentially\s+|automatically\s+|just\s+|like\s+)?"
+        r"(?:a\s+)?(?:predators?|creeps?|perverts?|stalkers?|spie?s?|voyeurs?|"
+        r"surveillance\s+(?:device|tool)|weirdos?|threats?)\b",
+        re.IGNORECASE,
+    ),
+    # "not appropriate / inappropriate to wear"
+    re.compile(
+        r"\b(?:not\s+(?:really\s+)?appropriate|inappropriate|"
+        r"not\s+(?:the\s+)?(?:right|best)\s+(?:time|place|setting))\s+"
+        r"(?:to\s+)?(?:wear|use|have|bring|sport)\b",
+        re.IGNORECASE,
+    ),
+]
+_DEVICE_PATTERNS["chilling_effect"] = _CHILLING_EFFECT_PATTERNS
+
+# -----------------------------------------------------------------------
 # humanization — emotionally resonant personal details that create
 # identification between the reader and an affected individual.
 # These are specific biographical facts (pregnancy, age, family status,
@@ -9708,8 +9793,8 @@ def detect_framing_devices(
 ) -> list[FramingDevice]:
     """Detect framing devices in article text.
 
-    Scans for 101 pattern-matched device types plus 7 structural
-    post-pass types (108 total).
+    Scans for 102 pattern-matched device types plus 7 structural
+    post-pass types (109 total).
 
     When *source_publication* is provided, ``self_referential_investigation``
     matches are filtered to only fire when the cited publication matches the
@@ -9719,7 +9804,8 @@ def detect_framing_devices(
     Pattern-matched (101): absence_as_evidence, analogy_metaphor,
     analyst_authority, anonymous_authority,
     anthropomorphization, assumed_consensus, catastrophizing,
-    ceo_personalization, competitive_deficit, competitive_displacement,
+    ceo_personalization, chilling_effect,
+    competitive_deficit, competitive_displacement,
     competitive_guilt_transfer, competitive_positioning,
     commodification_metaphor, confession_framing,
     consent_alarm, consumer_ownership,

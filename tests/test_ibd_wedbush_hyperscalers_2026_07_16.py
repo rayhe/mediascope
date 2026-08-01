@@ -42,16 +42,19 @@ def article_text() -> str:
 class TestEntities:
     """Entity cluster coverage for the IBD Wedbush article."""
 
+    @classmethod
     @pytest.fixture(scope="class")
-    def entities(self, article_text):
+    def entities(cls, article_text):
         return detect_entities(article_text)
 
+    @classmethod
     @pytest.fixture(scope="class")
-    def canonical_names(self, entities):
+    def canonical_names(cls, entities):
         return {e.canonical_name for e in entities}
 
+    @classmethod
     @pytest.fixture(scope="class")
-    def entity_texts(self, entities):
+    def entity_texts(cls, entities):
         return {e.entity for e in entities}
 
     def test_core_companies_detected(self, canonical_names):
@@ -104,8 +107,9 @@ class TestEntities:
 class TestSources:
     """Source attribution correctness for the IBD Wedbush article."""
 
+    @classmethod
     @pytest.fixture(scope="class")
-    def sources(self, article_text):
+    def sources(cls, article_text):
         return extract_sources(article_text)
 
     def test_arounian_named_expert(self, sources):
@@ -146,12 +150,14 @@ class TestSources:
 class TestFraming:
     """Framing device detection for the IBD Wedbush article."""
 
+    @classmethod
     @pytest.fixture(scope="class")
-    def devices(self, article_text):
+    def devices(cls, article_text):
         return detect_framing_devices(article_text)
 
+    @classmethod
     @pytest.fixture(scope="class")
-    def device_types(self, devices):
+    def device_types(cls, devices):
         return [d.device_type for d in devices]
 
     def test_competitive_positioning_detected(self, device_types):
@@ -188,8 +194,9 @@ class TestFraming:
 class TestFullAnalysis:
     """Integration test for analyze_text on the IBD article."""
 
+    @classmethod
     @pytest.fixture(scope="class")
-    def result(self, article_text):
+    def result(cls, article_text):
         return analyze_text(article_text, title=_TITLE, target_entity="Meta")
 
     def test_primary_entity_is_meta(self, result):

@@ -30,6 +30,7 @@ def _get_cli_flags():
         out = subprocess.run(
             [sys.executable, "-m", "mediascope", cmd, "--help"],
             capture_output=True, text=True, cwd=str(REPO_ROOT),
+            timeout=15,
         )
         found = set(re.findall(r"--[\w-]+", out.stdout))
         found.discard("--help")
@@ -42,6 +43,7 @@ def _get_cli_flags():
         out = subprocess.run(
             [sys.executable, "-m", "mediascope", "careers", sub, "--help"],
             capture_output=True, text=True, cwd=str(REPO_ROOT),
+            timeout=15,
         )
         found = set(re.findall(r"--[\w-]+", out.stdout))
         found.discard("--help")

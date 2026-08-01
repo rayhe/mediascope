@@ -391,6 +391,8 @@ Issues that were identified during article analysis and subsequently fixed. Trac
 | Date | Component | Issue | Fix | Test |
 |------|-----------|-------|-----|------|
 | 2026-07-16 | `litigation_framing` (suing pattern) | Colloquial "sue me" / "sued him" / "sue us" triggered as genuine litigation framing. Root cause: `re.IGNORECASE` on `[A-Z]\w+` made the pattern match lowercase pronouns as if they were named entities | Added negative lookahead for 12 personal pronouns (me, him, her, us, them, you, + reflexive forms). Named-entity litigation detection preserved. | `test_litigation_framing_pronoun_guard.py` (21 tests) |
+| 2026-07-31 | `test_ibd_wedbush_hyperscalers_2026_07_16.py` | 7 class-scoped fixtures used `self` instead of `cls` and lacked `@classmethod` decorator, producing PytestRemovedIn10Warning | Converted all 7 fixtures to `@classmethod` with `cls` parameter | 21 tests, 0 warnings |
+| 2026-07-31 | `test_cli_doc_consistency.py` | 14 subprocess calls (~4s each) with no timeout caused suite to hang when piped through `tail` | Added `timeout=15` to both `subprocess.run` loops | 2 tests pass in ~50s |
 
 ---
 

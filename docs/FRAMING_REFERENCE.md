@@ -1,6 +1,6 @@
 # Framing Device Quick Reference
 
-> A compact lookup card for all 108 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
+> A compact lookup card for all 109 framing device types detected by MediaScope. For full descriptions, detection patterns, and discovery provenance, see [METHODOLOGY.md §4](METHODOLOGY.md#4-framing-device-detection).
 
 ---
 
@@ -9,7 +9,7 @@
 During article analysis, scan the text for trigger keywords and structural patterns listed below. Each device name links to the detailed entry in METHODOLOGY.md. The **tier** column indicates detection method:
 
 - **C** = Core (10 types) — fundamental editorial techniques, pattern-matched
-- **E** = Extended (91 types) — discovered from real article analysis, pattern-matched
+- **E** = Extended (92 types) — discovered from real article analysis, pattern-matched
 - **S** = Structural (7 types) — detected via post-pass heuristics over full article structure
 
 > **Note on device numbering:** Devices are numbered by discovery order (1–102), not by category. When new devices are discovered during article analysis, they receive the next sequential number. The reference organizes them by thematic category for readability, so device numbers within a category are not contiguous.
@@ -163,6 +163,7 @@ Devices that shape how regulatory, legal, and government actions are presented.
 | 106 | **Surveillance Enumeration** | E | Multi-item comma-separated lists of monitoring technologies or data types amplifying perceived invasiveness through accumulation | "track [item], [item], [item], and [item]," "monitors [metric], [metric], [metric]" |
 | 107 | **Glasshole Revival** | E | Revival of "glasshole" pejorative from 2013 Google Glass era to frame current smart glasses products and users by invoking historical social stigma | "glasshole," "Google Glass stigma ... Meta," "nobody wants to be a glasshole" |
 | 108 | **Walking Camera** | E | Framing that reduces smart glasses wearers to ambulatory surveillance devices, dehumanizing the wearer by equating them with the device's camera | "walking surveillance camera," "camera on your face," "turns every wearer into a surveillance device" |
+| 109 | **Chilling Effect** | E | Self-censorship or avoidance behavior by product users/owners due to social stigma — even advocates modify their behavior, showing internalized stigma is self-reinforcing | "too scared to wear them in public," "fold them up," "not a good idea to have those," "you're basically a predator" |
 | 67 | **Editorial Cross-Promotion** | E | All-caps interstitial headline blocks importing linked headline framing into otherwise balanced reporting | All-caps blocks 5+ words; "CLICK HERE TO GET THE FOX BUSINESS APP"; imports adversarial linked headlines |
 | 68 | **Emotion Attribution** | E | Editorial attribution of emotional states never expressed by the subject — upgrading factual observations into disappointment, frustration, or alarm | "[Name] is disappointed that"; "leading investors to fret"; "[Name] is alarmed by" |
 | 69 | **Litigation Cascade** | E | Stacking multiple legal proceedings, case counts, plaintiff numbers to create avalanche effect | "N states have banded/sued"; "more than N,NNN cases pending"; "Another N states also brought claims" |
@@ -278,7 +279,7 @@ These are not framing devices in the formal taxonomy but are tracked as editoria
 | Tier | Count | Detection Method |
 |---|---|---|
 | Core | 10 | Pattern matching — fundamental editorial techniques |
-| Extended | 91 | Pattern matching — discovered from real article analysis |
+| Extended | 92 | Pattern matching — discovered from real article analysis |
 | Structural (post-pass) | 7 | Full-article heuristics (position, accumulation, structure) |
 | **Total** | **106** | |
 

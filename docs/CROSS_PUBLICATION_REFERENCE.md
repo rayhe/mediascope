@@ -81,7 +81,7 @@ Every cross-publication comparison must report these seven dimensions. Partial c
 |---|---|---|---|
 | 1 | **Word count** | Total article length | Editorial investment — longer = more resources allocated |
 | 2 | **Tone score** | 8-dimension composite (raw and corrected) | Raw editorial stance; corrected score accounts for genre VADER bias |
-| 3 | **Framing device count** | Total devices from the 108-type taxonomy | Framing density — how many editorial techniques are deployed |
+| 3 | **Framing device count** | Total devices from the 109-type taxonomy | Framing density — how many editorial techniques are deployed |
 | 4 | **Framing device types** | Which specific devices appear | Editorial technique fingerprint — reveals preferred persuasion patterns |
 | 5 | **Source roster** | Named vs. anonymous count + affiliations | Who the journalist chose to quote; who was excluded |
 | 6 | **Source stance balance** | Adversarial vs. supportive vs. neutral ratio | Whether sources are deployed one-directionally or balanced |
