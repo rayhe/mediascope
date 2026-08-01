@@ -81,8 +81,9 @@ Found Columbia Journalism Review piece "Always On" by Amos Barshad — covers ho
 - New publication profile: `profiles/gizmodo.yaml` — Keleops AG ownership chain, editorial posture, 8 annotated wearables coverage examples
 - Updated journalist count: +2 journalists in `profiles/careers/journalists.yaml`
 
-**Stats delta:** +2 journalist profiles, +1 publication profile, 8 annotated wearables coverage examples
-**Commit:** pending
+**Stats delta:** +1 journalist profile (Christopher Mims), +1 publication profile (Gizmodo/Keleops), 8 annotated wearables coverage examples
+**Tests:** 145 passed (test_structural_consistency 124 + test_careers 21)
+**Commit:** `cbed5b8` — pushed to GitHub
 
 ## 2026-08-01 06:00 PT — Type A: Article Deep Dive — WebProNews Apple Privacy Reckoning + Category Contamination (#113)
 
