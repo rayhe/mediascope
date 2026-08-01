@@ -1,4 +1,60 @@
 # MediaScope Iteration Log
+## 2026-08-01 06:00 PT — Type A: Article Deep Dive — WebProNews Apple Privacy Reckoning + Category Contamination (#113)
+
+**Rotation:** A (Article Deep Dive)
+**Focus:** WebProNews "Apple's Privacy Reckoning: Why Smart Glasses Face Another Year in the Lab" (Jul 27, 2026) — narrative phase transition where Meta's privacy failures contaminate the entire smart glasses category, forcing Apple to delay by ~1 year
+
+### Key Findings
+
+#### 1. New Framing Device: `category_contamination` (#113)
+Editorial technique where one company's reputational damage contaminates an entire product category, forcing competitors to delay, redesign, or explicitly distance themselves. Converts company-specific failures into category-level stigma.
+
+**5 regex patterns:**
+- Pattern 1: "[Company]'s reputation/baggage directly influences/affects [competitor]'s timeline"
+- Pattern 2: "don't want to ship/launch a device that invites the same backlash"
+- Pattern 3: "poisoned/poisoning the well"
+- Pattern 4: "wants none of it" / "wants no part of" (in reputation context)
+- Pattern 5: "How do you [put cameras on face/enter category] without [sparking outrage]"
+
+**Discovered from real articles:**
+- WebProNews (Jul 27): "Meta's reputation directly influences Apple's timeline"
+- AppleInsider (Jul 26): "poisoning the well when it comes to consumers"
+- TechSpot (Jul 27): Privacy concerns delaying Apple's product timeline
+
+**Distinct from:** competitive_positioning (company-to-company comparison), competitive_displacement (filling a vacuum), glasshole_revival (reviving a pejorative). Category contamination frames the structural CONSEQUENCE of stigma on competitors' decisions.
+
+#### 2. New Annotated Article (#201): WebProNews Apple Privacy Reckoning
+- First WebProNews article in the MediaScope corpus (new mid-tier tech aggregator)
+- 10 framing device types detected, 18 total instances:
+  - competitive_positioning: 6 instances (highest density in entire wearables corpus)
+  - category_contamination: 4 instances (article is textbook example)
+  - surveillance_creep: 2, regulatory_shadow: 2, safeguard_inadequacy: 1, precedent_analogy: 1, failure_precedent: 1, editorial_deflation: 1, market_flooding: 1, chilling_effect: 1
+- Source analysis: Single-source dependency (Bloomberg's Mark Gurman newsletter) amplified through 6+ relay layers (MacRumors → Slashdot → Digital Trends → Neowin → WebProNews). Zero adversarial sources.
+- **Narrative Phase 4: Category Contamination** — Meta's problems now delay competitors. The privacy stigma has transcended the company and attached to the product category itself.
+
+#### 3. Cross-Publication Signal
+7 outlets covered the same Gurman newsletter (Jul 26-27), ALL framing Apple as privacy-responsible and Meta as cautionary tale:
+1. Bloomberg (primary source)
+2. AppleInsider — "poisoning the well"
+3. TechBriefly — "Apple delays smart glasses over privacy concerns"
+4. Gadgets360 — "Strengthen Privacy"
+5. 91mobiles — "focus on privacy"
+6. TechSpot — "wrestles with privacy concerns"
+7. WebProNews (analyzed) — "Privacy Reckoning"
+
+Zero outlets questioned whether Apple's privacy positioning is genuine vs. marketing strategy. Unanimity from a single source = textbook newsletter-to-aggregator consensus manufacturing.
+
+**What was improved:**
+- New framing device type #113: category_contamination (5 patterns)
+- New annotated article #201: WebProNews Apple privacy reckoning
+- Updated all doc counts across 12 files: README, FRAMING_REFERENCE, METHODOLOGY, ARCHITECTURE, AGENT_GUIDE, ACCURACY_GUIDE, QUALITY_STANDARDS, cli.py, framing.py, test_structural_consistency.py
+- New FRAMING_REFERENCE Category 15: Category & Market Framing
+
+**Stats delta:** +1 framing device type (113), +5 patterns (764), +1 annotated article (201), +1 extended device (96)
+**Tests:** 186 passed (test_structural_consistency 124 + test_accuracy_guide + test_entities + test_careers 62)
+**Stats check:** ✅ All 186 tests pass, README stats current
+**Commit:** `30245b7` — pushed to GitHub
+
 ## 2026-08-01 04:00 PT — Type D: Toolkit Quality & Documentation — platform_self_incrimination (#112) + Engadget Analysis
 
 **Rotation:** D (Toolkit Quality & Documentation)
