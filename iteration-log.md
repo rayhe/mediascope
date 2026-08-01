@@ -25819,3 +25819,64 @@ Article represents the narrative crossing from press opinion into institutional/
 - `docs/METHODOLOGY.md` (203 articles)
 
 **Commit:** See below.
+
+## 2026-08-01 11:00 PT — Type A Article Deep Dive
+
+**Article:** Gizmodo "Meta Toes the Line on Smart Glasses Harassment With New Instagram Ban" (Raymond Wong, Jul 23, 2026)
+**URL:** https://gizmodo.com/meta-toes-the-line-on-smart-glasses-harassment-with-new-instagram-ban-2000789861
+
+### Focus: Control-Case Convergence + 5 New Patterns
+
+Gizmodo is owned by Keleops AG (Swiss), with ZERO Condé Nast/Advance financial connection. Yet this article produces framing devices nearly identical to WIRED coverage of the same topic — supporting the editorial escape velocity hypothesis.
+
+### Improvements
+
+**New patterns (5):**
+1. `escalation_amplification` Pattern 8: "reached entirely new heights/levels" (peak-escalation phrase)
+2. `escalation_amplification` Pattern 9: "reached a fever pitch"
+3. `recidivism_framing`: "[Entity]'s always been good at [negative]" (sardonic chronic behavior)
+4. `recidivism_framing`: "We can expect plenty more [negative]" (predictive recidivism closing)
+5. `editorial_aside`: parenthetical "(X, meanwhile, ...)" contrast aside
+
+**Detection results:** 15 framing devices (7 types) — loaded_language (×7), consent_alarm, safeguard_inadequacy, surveillance_creep, escalation_amplification, editorial_aside, recidivism_framing (×2)
+
+### Stats Change
+- Compiled patterns: 770 → 775
+- Annotated articles: 203 → 204
+- Tests: 3099 → 3114 (141 files)
+- All 3086 passed, 28 xfailed
+
+### Files Changed
+- `mediascope/analyze/framing.py` (5 new regex patterns)
+- `examples/sample_output/gizmodo_meta_glasses_harassment_instagram_ban_2026_07_23_article.txt`
+- `examples/sample_output/gizmodo_meta_glasses_harassment_instagram_ban_2026_07_23_analysis.md`
+- `tests/test_gizmodo_glasses_harassment_ban_jul23.py` (15 tests, 2 classes)
+- `tests/test_structural_consistency.py` (EXPECTED_TOTAL_PATTERNS 709→714)
+- README.md, ARCHITECTURE.md, METHODOLOGY.md, QUALITY_STANDARDS.md, ACCURACY_GUIDE.md (stats)
+
+**Commit:** f1a6d9f — pushed to GitHub
+
+---
+
+### Iteration #204 — Sat 2026-08-01 12:00 PT — Type A: Article Deep Dive
+
+**Article:** WSJ "Ray-Ban Maker EssilorLuxottica's Sales Growth Slows Despite Smartglasses Boom" (Joshua Kirby, July 28 2026)
+- Cross-compared with Reuters coverage of same Q2 earnings
+
+**Source:** https://www.wsj.com/business/retail/ray-ban-maker-essilorluxotticas-sales-growth-slows-despite-smartglasses-boom-44f215f8
+
+**Patterns added (4 new regex, framing.py):**
+1. `success_paradox` P6 (inverted): negative verb + "despite" + positive noun — catches "Slows Despite Smartglasses Boom"
+2. `editorial_deflation` (deceleration): "losing (a little) pace/momentum/steam"
+3. `grudging_concession` (uncertainty injection): "Still/Yet/However, questions/doubts remain/linger/persist"
+4. `grudging_concession` (debate): "the (point of) debate remains/continues/rages"
+
+**Detection improvement:** Article went from 1 device (scale_magnitude only) → 5 devices (success_paradox + editorial_deflation + scale_magnitude + 2× grudging_concession)
+
+**Files changed:**
+- `mediascope/analyze/framing.py` (4 new patterns)
+- `tests/test_wsj_essilorluxottica_q2_smartglasses_boom_2026_07_28.py` (13 tests)
+- `examples/sample_output/wsj_essilorluxottica_q2_smartglasses_boom_2026_07_28_article.txt`
+- `examples/sample_output/wsj_essilorluxottica_q2_smartglasses_boom_2026_07_28_analysis.md`
+- `tests/test_structural_consistency.py` (EXPECTED_TOTAL_PATTERNS 714→718)
+- README.md, ARCHITECTURE.md, METHODOLOGY.md, QUALITY_STANDARDS.md, ACCURACY_GUIDE.md (stats: 204→205 articles, 775→779 patterns, tests 142 files)

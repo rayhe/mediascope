@@ -4836,6 +4836,18 @@ _EDITORIAL_DEFLATION_PATTERNS.extend([
         r"(?:hours?|days?|weeks?)\b",
         re.IGNORECASE,
     ),
+    # --- Added 2026-08-01: WSJ EssilorLuxottica Q2 smartglasses article ---
+    # "losing (a little/some) pace/momentum/steam" — deceleration framing
+    # that deflates objectively strong growth (e.g. 8.7% YoY organic growth)
+    # by foregrounding sequential slowdown from a prior period.  The verb
+    # "losing" implies failure rather than normal moderation.
+    # Discovered in: "booked 8.7% year-on-year organic growth ... losing a
+    # little pace from the 11% growth" (WSJ, Jul 28, 2026).
+    re.compile(
+        r"\blosing\s+(?:a\s+(?:little|bit\s+of)\s+)?"
+        r"(?:pace|momentum|steam|ground|traction|speed)\b",
+        re.IGNORECASE,
+    ),
 ])
 
 
@@ -9025,6 +9037,31 @@ _GRUDGING_CONCESSION_PATTERNS = [
         r"(?:\s+\w+){0,8}\s*[,.]?\s*(?:but|however|yet|though|still)\b",
         re.IGNORECASE,
     ),
+    # --- Added 2026-08-01: WSJ EssilorLuxottica Q2 smartglasses article ---
+    # "Still, questions/doubts/concerns remain" — editorial uncertainty
+    # injection following a positive company statement.  The author
+    # concedes the good news by quoting the company, then immediately
+    # pivots to unattributed doubt with "Still," or "Yet,".
+    #
+    # Discovered in: '"AI glasses confirmed their exponential growth,"
+    # the company said.  Still, questions remain around the company's
+    # growth trajectory' (WSJ, Jul 28, 2026).
+    #
+    # Distinct from editorial_deflation (which uses "anyway" / "that's
+    # the plan" to deflate ambition) — this pattern injects doubt after
+    # a confirmed positive rather than pre-emptively deflating a claim.
+    re.compile(
+        r"\b(?:still|yet|however|nonetheless|nevertheless)\s*,"
+        r"\s+(?:questions?|doubts?|concerns?|uncertaint(?:y|ies)|skepticism)\s+"
+        r"(?:remains?|lingers?|persists?|surrounds?|clouds?|hangs?\s+over|dogs?)\b",
+        re.IGNORECASE,
+    ),
+    # "the point of debate remains" / "debate continues/rages"
+    re.compile(
+        r"\b(?:the\s+)?(?:point\s+of\s+)?debate\s+"
+        r"(?:remains?|continues?|rages?|persists?|lingers?|centers?\s+on)\b",
+        re.IGNORECASE,
+    ),
 ]
 
 _DEVICE_PATTERNS["grudging_concession"] = _GRUDGING_CONCESSION_PATTERNS
@@ -9953,6 +9990,31 @@ _SUCCESS_PARADOX_PATTERNS: list[re.Pattern] = [
         r".{0,40}"
         r"\b(?:backlash|scrutiny|concern|criticism|pushback|privacy|"
         r"controversy|stigma|glasshole)\b",
+        re.IGNORECASE,
+    ),
+    # --- Added 2026-08-01: WSJ EssilorLuxottica Q2 smartglasses article ---
+    # INVERTED success_paradox: headline leads with negative verb, then
+    # "despite" introduces the positive as insufficient.  Common in
+    # financial-press coverage where strong underlying data (e.g. revenue
+    # nearly doubled) is subordinated to deceleration/miss framing.
+    #
+    # "Sales Growth Slows Despite Smartglasses Boom" (WSJ, Jul 28, 2026)
+    # "Revenue misses despite AI glasses boom" (hypothetical)
+    #
+    # Structure: [negative verb] ... despite ... [positive noun]
+    # This is MORE damaging than standard success_paradox because readers
+    # who scan only the headline absorb the negative verb, and "despite"
+    # positions the positive as irrelevant.
+    re.compile(
+        r"\b(?:slow|decline|fall|drop|slip|dip|miss|stumble|disappoint|"
+        r"sag|weaken|stall|wane|ebb|lag|fade|cool|soften|moderate|ease)"
+        r"(?:s|ed|ing)?\b"
+        r".{0,40}"
+        r"\bdespite\b"
+        r".{0,40}"
+        r"\b(?:boom|growth|surge|surging|success|gains?|expansion|momentum|"
+        r"doubl(?:ed|ing)|tripl(?:ed|ing)|soar(?:ed|ing)|"
+        r"record|strong|robust|rapid|exponential)\b",
         re.IGNORECASE,
     ),
 ]
