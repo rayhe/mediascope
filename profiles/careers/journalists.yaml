@@ -10958,6 +10958,24 @@ journalists:
     reviews and privacy/surveillance analysis. Migration from Gizmodo (declining G/O Media) to The Verge (well-resourced Vox/PMC)
     provides natural experiment for institutional framing effects. Not investigative — product reviewer with increasing editorial
     voice on surveillance/privacy. Korean-American cultural context visible in Samsung/Korean tech coverage.
+    JULY 2026 KEY COVERAGE: (1) Jul 7 — broke the Meta LED tamper-proof update story at The Verge, reporting Meta will
+    disable the camera if the privacy LED is physically tampered with or destroyed. Story picked up by Techmeme (219 pts),
+    Gizmodo (citing "as noticed by the Verge''s Victoria Song"), PetaPixel, RoadToVR, 9to5Google, TheStreet, and 8+ other
+    outlets. This is the single most widely-cited original report on the Jul 7 Meta privacy update. (2) Her LED tamper-proof
+    article directly created a same-day juxtaposition narrative when FT''s Hannah Murphy published the "super sensing"
+    always-on prototype report Jul 8, producing a "defend the light / plan to bypass the light" contradiction frame
+    that TheStreet, TechTimes, and others explicitly weaponized. (3) Interviewed Alex Himel (Meta VP Wearables) for
+    RoadToVR''s Jul 7 piece — Himel told Song the privacy update was meant to follow the cheaper Meta Glasses launch.
+    (4) Vergecast guest host covering accessibility + smart glasses (low-vision community episode with Be My Eyes CEO
+    Mike Buckley and visually impaired reader Jason Valley). Also co-hosted Vergecast on Meta Ray-Ban Display with Mia Sato
+    answering "do smart glasses belong in the bedroom?" — a framing that normalizes the surveillance debate through
+    intimate personal scenarios. (5) TWiT appearance with Leo Laporte reviewing Meta Ray-Ban Display glasses after
+    international travel field testing. NARRATIVE ROLE: Victoria Song has become the single most influential journalist
+    in shaping the Meta wearables privacy narrative. Her Jul 7 story is the origin node for the entire "Meta defending
+    privacy while planning to abandon it" frame that dominated the Jul 7-12 news cycle. Not adversarial-investigative
+    — her framing power comes from product authority (13+ years) making privacy concerns land as credible rather than
+    activist. SOURCE NETWORK: Quotes Alex Himel (Meta VP Wearables) directly — has active working relationship with
+    Meta wearables PR.
 
     '
   source_urls:
@@ -17395,3 +17413,74 @@ journalists:
     institution: SUNY Purchase
     year: '2012'
     source_url: https://www.purchase.edu/live/profiles/7925-lisa-eadicicco-12
+- career:
+  - beat: Android, Google, consumer tech
+    end: '2016'
+    event_type: founded
+    notes: 'Co-founded an independent tech publication in 2013. Learned writing, product photography, and videography
+      skills. No formal journalism training — self-taught through independent publishing. Based in Winston-Salem, NC.'
+    publication: independent-tech-blog
+    role: co_founder
+    source_url: https://9to5google.com/ninetofive_staff/ben-schoon/
+    start: '2013'
+  - beat: Android, Google Pixel, Samsung Galaxy, Android TV, Chromecast, smart glasses, wearables
+    event_type: hired
+    notes: 'Senior Editor at 9to5Google (925 LLC, Seth Weintraub''s independently owned network). One of the site''s primary
+      news writers since 2016, now ~10-year tenure. 14,500+ articles. Extremely prolific — average 4-5 articles per day.
+      KEY BEATS: Google Pixel devices, Samsung Galaxy, Android TV/Google TV, Chromecast, and increasingly Meta/Google smart
+      glasses. SCOOPS: First in-person Pixel 4 photo leak (2019), Pixel Recorder/Themes apps leaked months ahead of launch,
+      first to report Pixel foldable and $49 Chromecast with Google TV price point. META WEARABLES COVERAGE (Jul 2026):
+      (1) Jul 7 — "Meta Ray-Ban glasses now disable the camera if privacy light breaks" (aggregated Victoria Song''s Verge
+      report, added original analysis of Gen 1 vs Gen 2 enforcement gap). (2) Jul 9 — "Meta developing always-on glasses
+      with less-active privacy light" (aggregated FT/Hannah Murphy report, original editorial noting the contradiction
+      with Jul 7 LED defense). (3) Jun 1 — "Meta reportedly has several new smart glasses coming" (aggregated The
+      Information report on Modelo/Luna/RBM2 Refresh/Mojito VIP/Artemis/SSG codenames). FRAMING ANALYSIS: Ben''s coverage
+      is aggregation-editorial — he takes original reports from The Verge, FT, The Information and adds his own editorial
+      color plus Android ecosystem context. Not original investigative. His framing tends to be skepticism-forward on
+      privacy but product-enthusiast on features — typical of the 9to5 network house style. The "Needless to say, there
+      are a lot of problems with that idea, including privacy (you cannot and should not be recording all the time)"
+      editorial voice is characteristic. PUBLICATION CONTEXT: 9to5Google is part of Seth Weintraub''s 925 LLC network
+      (9to5Mac, 9to5Google, 9to5Toys, Electrek, DroneDJ, SpaceExplored — all wholly owned by Weintraub). The network
+      is independently owned (no VC, no corporate media parent), funded primarily by affiliate revenue + display ads.
+      This independence means no Condé Nast/Advance Publications/Vox Media institutional pressure, but the affiliate
+      revenue model creates incentive alignment with product adoption rather than adversarial coverage. The network''s
+      house style — "If we review something we don''t like or find interesting, we usually won''t post it" — explicitly
+      optimizes for positive-product framing. WEARABLES NARRATIVE ROLE: Secondary amplifier — takes original reports
+      from prestige outlets (Verge, FT, WSJ) and broadcasts them to the Android enthusiast audience (7.5M monthly
+      uniques). His Jul 7 and Jul 9 articles are the primary vector by which the "LED defense vs always-on contradiction"
+      narrative reached the Android/Google community. He is NOT a narrative originator for Meta wearables privacy coverage
+      but his amplification reach and editorial voice shape how the Android ecosystem interprets these stories.
+      Twitter/X: @nexusben. Email: schoon@9to5mac.com. Encrypted: benschoon@protonmail.com.'
+    publication: 9to5google
+    role: senior_editor
+    source_url: https://9to5google.com/ninetofive_staff/ben-schoon/
+    start: '2016'
+  beats:
+  - android
+  - google_pixel
+  - samsung_galaxy
+  - smart_glasses
+  - wearables
+  - android_tv
+  - chromecast
+  multi_publication: false
+  name: Ben Schoon
+  notes: 'Key career: independent blog → 9to5Google (10-year tenure). Self-taught tech journalist with 14,500+ articles.
+    Based in Winston-Salem, NC. Most prolific smart glasses aggregator in the Android press ecosystem. His coverage is
+    significant not for original reporting but for reach and editorial framing — the 9to5 network (independently owned
+    by Seth Weintraub via 925 LLC) reaches a combined audience larger than many prestige outlets.
+    OWNERSHIP STRUCTURE: 925 LLC (Seth Weintraub sole owner). Not venture-backed, no corporate parent. Revenue:
+    affiliate links + display ads. Sister sites: 9to5Mac, 9to5Toys, Electrek, DroneDJ, SpaceExplored.
+    NO CONDÉ NAST/ADVANCE connection — purely independent. This is analytically valuable as a CONTROL outlet for
+    MediaScope: if 9to5Google runs privacy-critical wearables coverage despite having zero institutional incentive
+    from Advance/Condé Nast, it suggests the framing reflects genuine public concern rather than coordinated editorial
+    pressure. Conversely, if 9to5Google''s coverage is notably more balanced than WIRED/Gizmodo, the delta may indicate
+    institutional amplification at the Condé Nast outlets.
+    COORDINATION SIGNAL: Ben''s Jul 7 and Jul 9 articles cite Victoria Song (Verge) and Hannah Murphy (FT) respectively —
+    standard aggregation pattern, not coordination. No shared sources with WIRED NameTag investigation team (Dell Cameron,
+    Dhruv Mehrotra). No evidence of pre-publication coordination. His coverage follows the news cycle rather than shaping it.'
+  source_urls:
+  - https://9to5google.com/ninetofive_staff/ben-schoon/
+  - https://muckrack.com/ben-schoon
+  - https://journalisthunt.com/journalists/ben-schoon
+  - https://buzzsumo.com/journalist/ben-schoon-18344454
