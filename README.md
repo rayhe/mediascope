@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **3643 tests across 155 test files, each covering a different analytical capability:
+MediaScope has **3673 tests across 156 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -528,6 +528,7 @@ MediaScope has **3643 tests across 155 test files, each covering a different ana
 | `test_wynn_williams_fixes.py` | 18 | Guardian Wynn-Williams lawsuit fixes: source extraction false positives (day names "Wednesday", book titles "Careless People"), litigation framing expansion (complaint, suing, arbitration patterns), power_asymmetry per-violation fines with intervening adjectives |
 | `test_virtue_ai_acquihire.py` | 14 | Virtue AI acqui-hire entity detection (Virtue AI, Bo Li, Dawn Song, Sanmi Koyejo, FAIR, BIS, CAISI, Howard Lutnick), ironic_quotation tech-jargon filter, emotional language additions |
 | `test_victoria_song_cross_entity.py` | 15 | Victoria Song (The Verge) cross-entity wearables coverage analysis: balanced product-reviewer lens across Meta/Apple/Google, data integrity correction (Song's Jul 7 LED piece = Meta response not adversarial investigation), WIRED vs Verge lane assignment comparison, functional vs surveillance criticism distinction |
+| `test_will_knight_cross_entity.py` | 30 | Will Knight (WIRED) cross-entity AI coverage: coverage volume asymmetry (7+ OpenAI / 5+ DeepMind / 3+ Anthropic / ZERO dedicated Meta articles), talent framing asymmetry ("poaches" for OpenAI vs "licensing deal to hire" for Google), executive access gaps (multiple Hassabis Q&As, zero LeCun interviews), three-layer WIRED editorial exclusion (Knight technology + Schiffer business + Goode consumer avoidance), Condé Nast financial incentive correlation |
 | `test_wired_apple_lane_assignment.py` | 41 | WIRED Apple vs Meta wearables lane assignment: Camera Count Paradox (12-camera Apple Vision Pro = zero surveillance framing vs 1-camera Meta Ray-Ban = sustained investigative coverage), editorial desk assignment by manufacturer identity, financial alignment with Apple content negotiations, Snap Spectacles neutral lane |
 | `test_nyt_cade_metz_cross_entity.py` | 41 | Cade Metz (NYT) cross-entity AI coverage: OpenAI/Anthropic technology-progress framing, near-zero standalone Meta AI articles, reporter assignment as structural bias mechanism, lane assignment significance vs WIRED model |
 | `test_mike_isaac_cross_entity.py` | 37 | Mike Isaac (NYT) cross-entity coverage post-beat expansion: consistent framing across Meta/Anthropic/SpaceX/OpenAI, Eli Tan succession analysis, institutional lane assignment pattern, Isaac-Metz comparison, cross-publication mechanisms |

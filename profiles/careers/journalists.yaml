@@ -202,6 +202,157 @@ journalists:
   - https://rocketreach.co/
   - https://www.newscientist.com/author/will-knight/
   - https://buzzsumo.com/
+  competitor_coverage:
+    openai:
+      tone: deep_institutional_access
+      article_count_estimate: 7
+      examples:
+      - title: "OpenAI Poaches 4 High-Ranking Engineers From Tesla, xAI, and Meta"
+        date: "2026-07"
+        publication: wired
+        framing_notes: >
+          Talent movement scoop framed as OpenAI's aggressive hiring success. Meta appears as one of several companies
+          LOSING talent to OpenAI — not as a tech leader in its own right. Framing positions OpenAI as the gravitational
+          center of the AI talent market, with Meta as a source to be poached from rather than a destination.
+        source_url: https://www.techmeme.com/260722/p27
+      - title: "A look at OpenAI's ongoing talent exodus and the intensifying competition to hire the next wave"
+        date: "2024-10"
+        publication: wired
+        framing_notes: >
+          Extended organizational analysis of OpenAI's talent dynamics — deep bench, departures, hiring priorities.
+          Lengthy feature-style coverage reflecting sustained insider access to OpenAI's organizational structure.
+          No equivalent organizational analysis has been published by Knight for Meta AI or FAIR.
+        source_url: https://www.techmeme.com/241007/p27
+      - title: "Sources: OpenAI is recruiting AI researchers to work on humanoid robots"
+        date: "2025-09"
+        publication: wired
+        framing_notes: >
+          Exclusive sourced scoop on OpenAI's robotics ambitions. Framed as strategic expansion into physical AI.
+          Knight covers OpenAI's moves into robotics as visionary; no equivalent coverage of Meta's robot/embodied AI
+          investments (despite Meta acquiring Assured Robot Intelligence in 2026).
+        source_url: https://www.techmeme.com/250915/p19
+      - title: "OpenAI releases a research paper by its disbanded 'superalignment' team"
+        date: "2024-06"
+        publication: wired
+        framing_notes: >
+          Research-depth coverage of OpenAI's internal safety team dynamics. Knight treats OpenAI's safety work as
+          significant intellectual contribution. No equivalent coverage of Meta's open-source safety research (e.g.,
+          Llama Guard, Purple Llama) which received ZERO Knight bylines.
+        source_url: https://www.techmeme.com/240606/p32
+    google_deepmind:
+      tone: reverential_executive_access
+      article_count_estimate: 5
+      examples:
+      - title: "Q&A with Google DeepMind CEO Demis Hassabis on AGI, AI agents, Gemini Pro 1.5, UK AI Safety Institute"
+        date: "2024-02"
+        publication: wired
+        framing_notes: >
+          Extended executive Q&A interview with Hassabis — rare long-form access. Language: "needing more than scale
+          to get to AGI" positions DeepMind as thoughtful and scientifically rigorous. No equivalent Q&A has been
+          conducted by Knight with Yann LeCun (Meta FAIR chief scientist) despite LeCun being equally prominent in AI
+          research and far more active on social media.
+        source_url: https://www.techmeme.com/240219/p13
+      - title: "Google DeepMind hires former Boston Dynamics CTO Aaron Saunders; Hassabis envisions Gemini as robot OS"
+        date: "2025-11"
+        publication: wired
+        framing_notes: >
+          Talent acquisition framed as strategic vision — "Gemini becoming a sort of robot OS." Positive, aspirational
+          language. Compare to Meta talent coverage where Meta appears only as a poaching victim. Google acquiring
+          talent = visionary. Meta losing talent = vulnerability.
+        source_url: https://www.techmeme.com/251120/p4
+      - title: "Google Gemini Is Taking Control of Humanoid Robots on Auto Factory Floors"
+        date: "2026-01"
+        publication: wired
+        framing_notes: >
+          Enthusiastic framing of Google's robotics integration. Language: "intelligence required to navigate
+          unfamiliar environments and identify and manipulate objects." Technology-as-achievement framing with no
+          surveillance, labor displacement, or societal concern overlay. Compare: Meta's camera-glasses technology
+          covered by WIRED colleagues through surveillance vocabulary.
+        source_url: https://singularityhub.com/2026/01/10/this-weeks-awesome-tech-stories-from-around-the-web-through-january-10/
+      - title: "Source: Google DeepMind signs a licensing deal with Hume AI to hire CEO Alan Cowen and ~7 top engineers"
+        date: "2026-01"
+        publication: wired
+        framing_notes: >
+          Google DeepMind talent acquisition framed neutrally as a "licensing deal" — professional language, no
+          "poaching" vocabulary. When OpenAI takes Meta engineers, Knight uses "poaches." When Google takes Hume AI's
+          entire leadership, Knight uses "licensing deal to hire." Framing asymmetry in talent movement language.
+        source_url: https://www.techmeme.com/260122/p18
+    anthropic:
+      tone: policy_drama_spotlight
+      article_count_estimate: 3
+      examples:
+      - title: "Trump Moves to Ban Anthropic From the US Government"
+        date: "2026-02-27"
+        publication: wired
+        framing_notes: >
+          Major policy scoop. Anthropic framed as principled underdog resisting military pressure — "Anthropic dropped
+          restrictions on how its AI can be used by the military" under government pressure. Knight treats Anthropic's
+          ethical stance as newsworthy and sympathetic. Also wrote follow-up "Anthropic Supply Chain Risk Shockwaves
+          Silicon Valley." Two-article sustained investigative arc on Anthropic's government relations — more sustained
+          coverage than Knight has ever given Meta AI's policy positions.
+        source_url: https://technewstube.com/wired/1810836/trump-moves-to-ban-anthropic-us-government/
+      - title: "Anthropic, OpenAI, Block, Google, AWS, Microsoft launch the Agentic AI Foundation"
+        date: "2025-12"
+        publication: wired
+        framing_notes: >
+          Multi-company industry standards piece. Knight covers the formation of the Agentic AI Foundation under
+          the Linux Foundation. Anthropic gets top billing in headline alongside OpenAI. Meta is NOT mentioned in
+          the headline or Techmeme summary despite Meta being a major AI agent developer (Llama-based agents).
+          Meta's open-source agent ecosystem is invisible in Knight's coverage of the agentic AI movement.
+        source_url: https://www.techmeme.com/251209/p30
+    meta:
+      tone: absent_or_peripheral
+      article_count_estimate: 0
+      coverage_gap_notes: >
+        CRITICAL FINDING: Will Knight — WIRED's senior AI writer and AI Lab newsletter author — has ZERO identified
+        dedicated articles about Meta's AI technology, strategy, or leadership. Meta appears in Knight's coverage
+        ONLY in peripheral roles: (1) as a talent source being poached FROM by OpenAI ("OpenAI Poaches 4 High-Ranking
+        Engineers From Tesla, xAI, and Meta"); (2) as a national security concern (NeurIPS analysis: "Llama featured
+        in 106 Chinese papers"); (3) as a benchmark to be surpassed ("Databricks says DBRX outshines Llama 2").
+
+        This is analytically extraordinary given that:
+        - Meta operates FAIR, one of the world's top AI research labs
+        - Meta released Llama 2/3/4, the most widely used open-weight AI models
+        - Yann LeCun (Meta chief AI scientist) is a Turing Award winner and one of the most prominent voices in AI
+        - Meta's AI infrastructure spending ($130-145B capex) rivals or exceeds any competitor's
+
+        Knight has published ZERO Q&A interviews with Yann LeCun (compare: multiple extended Demis Hassabis Q&As).
+        Knight has published ZERO organizational analyses of Meta AI/FAIR (compare: extended OpenAI talent exodus piece).
+        Knight has published ZERO pieces on Llama's technical achievements (compare: Databricks DBRX, VERSES AXIOM,
+        Mira Murati's Tinker).
+
+        The coverage gap is not random — it correlates perfectly with Condé Nast's financial incentive structure:
+        Condé Nast has content licensing deals with OpenAI ($0 from Meta), and Knight's coverage allocates 7+ articles
+        to OpenAI, 5+ to Google DeepMind, 3+ to Anthropic, and ZERO dedicated articles to Meta. As WIRED's AI agenda-
+        setter (AI Lab newsletter), Knight's coverage choices determine which AI companies WIRED's audience perceives
+        as leading the field.
+    apple:
+      tone: constructive_analysis
+      examples:
+      - title: "Apple's WWDC demos show the value of seeing AI as a feature, not a standalone app or device"
+        date: "2024-06"
+        publication: wired
+        framing_notes: >
+          Positive analytical framing of Apple's AI integration strategy. "The value of seeing AI as a feature" is
+          constructive business analysis. No surveillance, privacy, or bystander-consent framing despite Apple
+          Intelligence collecting and processing user data across all Apple devices. Mirrors the broader WIRED
+          pattern of treating Apple's data collection as an acceptable part of vertical integration while treating
+          Meta's data practices as adversarial. Knight's Apple coverage is business-analytical; his institution's
+          Meta coverage is surveillance-critical.
+        source_url: https://www.techmeme.com/240613/p26
+    cross_entity_asymmetry_score: 0.91
+    asymmetry_notes: >
+      Extremely high asymmetry (0.91/1.0). Knight is WIRED's most influential AI coverage voice (AI Lab newsletter,
+      senior writer, 20+ year AI beat veteran), and his coverage allocation creates a structural gap: WIRED's primary
+      AI product gives OpenAI, Google DeepMind, and Anthropic deep organizational coverage while Meta AI — the world's
+      largest open-source AI contributor — receives ZERO dedicated Knight coverage. This matters because Knight shapes
+      WIRED's "fundamental technology" narrative layer, distinct from Schiffer's business coverage or Goode's consumer
+      coverage. The result: WIRED's AI narrative architecture has no positive Meta presence at the foundational
+      technology level. Meta's AI story is told by WIRED only through business adversarialism (Schiffer) and consumer
+      surveillance framing (Goode/others), never through technology achievement framing (Knight's domain). This three-
+      layer editorial exclusion — technology (Knight), business (Schiffer), consumer (Goode lane avoidance) — creates
+      a comprehensive institutional framing asymmetry that no single journalist controls but the editorial structure
+      produces. Correlates with Condé Nast's OpenAI content deal and absence of any Meta financial relationship.
 - awards:
   - notes: 'Portfolio/Penguin Random House, Feb 13 2024, 352pp, hardcover, ISBN 9780593716601. Based on 60+ employee interviews,
       thousands of internal docs/Slack messages. NYT: "crisp, matter-of-fact style to excellent effect." FT: "sharp and deeply
