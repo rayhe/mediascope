@@ -58,7 +58,7 @@ FT is now the 4th publication (after WIRED, NYT, The Verge) where financial rela
 
 ### Tests: 41 passed, 0 failed (+ 173 core regression passed)
 
-**Commit:** pending
+**Commit:** 88c39d8 (pushed to GitHub)
 
 ---
 ## 2026-08-05 05:00 PT — Type D: Beat Assignment Correlation Tests + Statistical Validity

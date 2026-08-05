@@ -84,6 +84,234 @@ key_journalists:
       AI model, Meta agentic tools/OpenClaw-like assistant, Oversight Board tensions over
       Zuckerberg "free speech" overhaul. High-volume, high-impact Meta coverage.
 
+    # ===================================================================
+    # CROSS-ENTITY COVERAGE ANALYSIS — Hannah Murphy
+    # Added 2026-08-05 (Type B: Journalist Cross-Entity Tracking)
+    # Diagnostic finding: same reporter applies different editorial standards
+    # to Meta vs Snap for the same product category (AR glasses)
+    # ===================================================================
+    cross_entity_coverage_analysis:
+      finding: >
+        Hannah Murphy covers multiple social media companies — Meta, Snap, TikTok,
+        X/Twitter, Pinterest — not just Meta. Within her own beat, she applies
+        DIFFERENT editorial standards to Meta versus comparable companies. The most
+        striking diagnostic case is AR glasses: when covering Meta's always-on sensing
+        glasses, Murphy deploys surveillance language ("wiretapping laws," "biometric
+        data laws," "civil liberties," "LED deactivation" as deception). When covering
+        Snap's AR glasses (Spectacles) with similar camera capabilities, she uses
+        business strategy language ("divisive bet," "efforts to revive"). No privacy
+        or surveillance framing appears in her Snap wearables coverage.
+
+      meta_coverage_portfolio:
+        - article: "Meta testing AI glasses that continuously record audio and take photos"
+          date: "2026-07-08"
+          url: "https://www.techmeme.com/260708/p2"
+          framing: "adversarial_surveillance"
+          language: ["continuously collect audio", "wiretapping laws", "biometric data laws",
+                     "civil liberty and privacy risks", "LED deactivation"]
+
+        - article: "Meta's Oversight Board got little notice of Zuckerberg's 'free speech' overhaul"
+          date: "2025-02-21"
+          url: "https://www.techmeme.com/250221/p1"
+          framing: "institutional_conflict"
+          language: ["fueling tensions", "hold Meta accountable"]
+
+        - article: "Meta cuts annual distribution of stock options by ~5%"
+          date: "2026-02-19"
+          url: "https://www.techmeme.com/260219/p43"
+          framing: "morale_damage"
+          language: ["tens of thousands of employees", "second year in a row"]
+
+        - article: "Facebook manager warned revenues it 'should have never made'"
+          date: "2021-02-18"
+          url: "https://www.techmeme.com/210218/p12"
+          framing: "adversarial_legal"
+          language: ["should have never made", "overstating"]
+
+        - article: "Meta building agentic tools, OpenClaw-like assistant, Muse Spark"
+          date: "2026-05-05"
+          url: "https://www.techmeme.com/260505/p42"
+          framing: "neutral_business"
+
+        - article: "Alexandr Wang's efforts to revive Meta's AI edge"
+          date: "2026-06-03"
+          url: "https://www.techmeme.com/260603/p1#a260603p1"
+          framing: "balanced"
+          notes: "Relatively balanced — 'boosts confidence despite lagging rivals in coding'"
+
+        - article: "Vishal Shah metaverse → AI PM move"
+          date: "2025-11"
+          framing: "neutral_business"
+          notes: "Internal reorg, standard business reporting"
+
+      snap_coverage_portfolio:
+        - article: "Evan Spiegel's efforts to revive Snap, divisive AR headset bet, high staff turnover"
+          date: "2024-10-28"
+          url: "http://www.techmeme.com/241028/p32"
+          framing: "constructive_business"
+          language: ["efforts to revive", "divisive bet"]
+          privacy_language: "NONE — zero surveillance/privacy framing despite AR glasses topic"
+
+        - article: "Snap plans to 'substantially reduce' hiring"
+          date: "2022-07-21"
+          url: "https://www.techmeme.com/220721/p33"
+          framing: "neutral_business"
+          language: ["substantially reduce", "stock repurchase"]
+
+        - article: "Snap CFO appointment"
+          date: "2019-05-20"
+          url: "https://www.techmeme.com/190520/p36"
+          framing: "neutral_business"
+
+        - article: "Snap exploring NFT AR filters"
+          date: "2022-07-13"
+          url: "https://www.techmeme.com/220713/p3"
+          framing: "neutral_product"
+
+      other_entity_coverage:
+        tiktok:
+          - article: "Harris and Trump campaigns using TikTok to reach Gen Z"
+            date: "2024-10-24"
+            url: "https://www.techmeme.com/241024/p8"
+            framing: "neutral_political"
+
+        x_twitter:
+          - article: "Linda Yaccarino reflects on first 100 days as X's CEO"
+            date: "2023-09-27"
+            url: "https://www.techmeme.com/230927/p8"
+            framing: "profile_neutral"
+
+          - article: "IBM suspends advertising on X globally"
+            date: "2023-11-16"
+            url: "https://www.techmeme.com/231116/p47"
+            framing: "adversarial"
+            notes: "Adversarial toward X, not Meta — shows Murphy CAN be adversarial to others"
+
+          - article: "Zatko's Senate testimony on Twitter unlikely to impact Musk deal"
+            date: "2022-09-15"
+            url: "https://www.techmeme.com/220915/p13"
+            framing: "neutral_analysis"
+
+        pinterest:
+          - article: "Q&A with Pinterest CEO Bill Ready on vision for less toxic platform"
+            date: "2024-02-01"
+            url: "https://www.techmeme.com/240201/p7"
+            framing: "constructive_interview"
+
+        crypto_vc:
+          - article: "Andreessen Horowitz $4.5B crypto fund"
+            date: "2022-05-25"
+            url: "https://www.techmeme.com/220525/p7"
+            framing: "neutral_business"
+
+        industry:
+          - article: "The flattening: tech companies laying off middle managers"
+            date: "2023-04-24"
+            url: "https://www.techmeme.com/230424/p1"
+            framing: "neutral_trend"
+            notes: "Industry-wide analysis, not company-specific"
+
+      diagnostic_comparison_ar_glasses:
+        finding: >
+          The most important diagnostic comparison. When Murphy covers Meta's
+          always-on sensing glasses, she uses surveillance/legal-threat language
+          (wiretapping laws, biometric data laws, civil liberties, LED deactivation
+          as deception). When she covers Snap's AR glasses — which also have cameras
+          and record the user's environment — she uses exclusively business strategy
+          language (divisive bet, efforts to revive, staff turnover). There is ZERO
+          privacy or surveillance language in her Snap wearables coverage.
+
+          This is significant because:
+          1. Same reporter covering both companies eliminates between-reporter variation
+          2. Same product category (AR glasses with cameras) eliminates technology variation
+          3. Both companies have similar scale of user data concerns
+          4. The ONLY variable is the company name
+
+          Unlike the WIRED pattern (different desks for different entities) or the NYT
+          pattern (different reporters for different entities), the FT pattern shows that
+          a SINGLE reporter applies different editorial standards to the same product
+          category depending on the manufacturer. This is the strongest evidence of
+          company-specific editorial framing in the MediaScope dataset.
+
+        meta_glasses_language: ["continuously collect audio", "taking photos every few seconds",
+                                "LED deactivation", "wiretapping laws", "biometric data laws",
+                                "civil liberty and privacy risks", "surveillance infrastructure"]
+        snap_glasses_language: ["divisive AR headset bet", "efforts to revive", "high staff turnover"]
+        surveillance_term_count_meta: 6
+        surveillance_term_count_snap: 0
+
+      entities_not_covered_by_murphy:
+        description: >
+          Murphy does NOT cover OpenAI, Anthropic, Apple, or Google. Those are
+          handled by different FT reporters: Madhumita Murgia (AI Editor) covers
+          AI industry broadly (OpenAI, Anthropic, DeepSeek); George Hammond covers
+          deals and M&A (OpenAI Jony Ive device); other tech reporters cover Apple
+          and Google. This means the full cross-entity comparison at FT requires
+          combining within-reporter analysis (Murphy: Meta vs Snap) with
+          between-reporter analysis (Murphy: Meta vs Hammond/Murgia: OpenAI).
+
+      overall_classification: >
+        Murphy's coverage is Meta-adversarial, not social-media-adversarial. She
+        covers the full social media landscape but reserves surveillance/legal-threat
+        framing disproportionately for Meta. This cannot be explained by beat
+        assignment alone (she covers multiple companies) or by product category
+        (she covers AR glasses from multiple companies). The variable controlling
+        the editorial frame is company identity.
+
+  - name: "Madhumita Murgia"
+    beat: "AI, emerging technology, science"
+    location: "London"
+    role: "AI Editor (first at FT, since Feb 2023)"
+    known_patterns: >
+      FT's first AI Editor. Author of 'Code Dependent: Living in the Shadow of AI'
+      (shortlisted for 2024 Women's Prize for Non-Fiction). Covers the AI industry
+      broadly — OpenAI, Anthropic, DeepSeek, Google AI, Meta AI. Previously European
+      technology correspondent, tech editor at Daily Telegraph, associate editor at
+      Wired UK. Hosts FT Tech Tonic podcast. Former Stern Fellow at Washington Post.
+
+    cross_entity_meta_coverage:
+      description: >
+        Murgia has covered Meta on occasion — notably the AI.Reverie acquisition
+        (2021, neutral business) and Facebook content moderators PTSD (2020,
+        adversarial toward outsourcing practices). However, her primary coverage
+        targets are OpenAI, Anthropic, and the broader AI safety/ethics landscape.
+        When she does cover Meta, her framing is more neutral/business than Murphy's.
+        Her OpenAI coverage is constructive/aspirational (Jony Ive device as
+        "iPhone of AI," spending framed as "fastest-growing company").
+
+    meta_articles:
+      - article: "Meta acquired AI.Reverie, terminating $950M Air Force contract"
+        date: "2021-12-27"
+        url: "https://www.techmeme.com/211227/p5"
+        framing: "neutral_business"
+
+      - article: "Facebook content moderators required to acknowledge PTSD risk"
+        date: "2020-01-24"
+        url: "https://www.techmeme.com/200124/p14"
+        framing: "adversarial_labor"
+        notes: "Adversarial toward outsourcing practices, not Meta-specific anti-tech"
+
+    openai_articles:
+      - article: "OpenAI Jony Ive device (with George Hammond)"
+        date: "2025-10-05"
+        url: "https://www.techmeme.com/251005/p1"
+        framing: "constructive_neutral"
+
+    comparison_significance: >
+      Murgia's Meta coverage is sporadic and tends toward neutral business or
+      labor-focused adversarial (outsourcing). Her OpenAI coverage is consistently
+      constructive. This supports the FT's publication-level pattern: OpenAI
+      gets aspirational framing from its assigned reporters, while Meta gets
+      adversarial framing from its dedicated beat reporter.
+
+  - name: "George Hammond"
+    beat: "Tech deals, M&A, venture capital"
+    location: "San Francisco"
+    known_patterns: >
+      Covers tech industry deals, M&A, and venture capital. Co-authored the OpenAI
+      Jony Ive device coverage with Murgia. Business-reporting tone, deal-focused
+      framing. Does not appear to have a company-specific adversarial posture.
+
 # Known Conflicts of Interest
 known_conflicts:
   - type: "ownership_structure"
