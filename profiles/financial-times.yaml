@@ -112,6 +112,59 @@ known_conflicts:
     severity: 1
     evidence: "Absence from public AI licensing deal announcements through Jul 2026"
 
+
+# ===================================================================
+# COMPETITOR RELATIONSHIPS — financial ties to Meta's competitors
+# Added 2026-08-04 for cross-entity coverage asymmetry analysis
+# FT is positioned as a CONTROL — Nikkei ownership, no Meta deal,
+# but does have confirmed OpenAI deal (Apr 2024).
+# ===================================================================
+competitor_relationships:
+  openai:
+    financial_tie: "licensing"
+    estimated_value: "$5-10M/yr"
+    direction: "receiving"
+    description: "Content licensing deal signed Apr 2024. FT content appears in ChatGPT with attribution."
+    source_url: "https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/"
+    coverage_prediction: "softer"
+  meta:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No AI licensing deal. Nikkei ownership creates no competitive overlap with Meta."
+    coverage_prediction: "neutral"
+  anthropic:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known financial relationship."
+    coverage_prediction: "neutral"
+  amazon:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known direct financial relationship."
+    coverage_prediction: "neutral"
+  apple:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known direct financial relationship."
+    coverage_prediction: "neutral"
+  google:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known direct financial relationship."
+    coverage_prediction: "neutral"
+  x_twitter:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No financial relationship."
+    coverage_prediction: "neutral"
+
+
 # Litigation Connections
 litigation_connections: []
 

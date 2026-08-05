@@ -2008,6 +2008,60 @@ known_conflicts:
       - "https://thecollegefix.com/lament-for-the-closing-of-mit-libraries/"
     verified_date: "2026-07-08"
 
+
+# ===================================================================
+# COMPETITOR RELATIONSHIPS — financial ties to Meta's competitors
+# Added 2026-08-04 for cross-entity coverage asymmetry analysis
+# NOTE: MIT's corporate partnerships create indirect financial ties
+# to multiple tech companies. MIT Tech Review is editorially independent
+# from MIT but benefits from the institutional relationship.
+# ===================================================================
+competitor_relationships:
+  openai:
+    financial_tie: "indirect"
+    estimated_value: "undisclosed"
+    direction: "receiving"
+    description: "MIT has institutional AI research relationships. MIT Tech Review listed as Prorata AI content partner (Mar 2025, via News/Media Alliance). No direct OpenAI licensing deal confirmed."
+    source_url: "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+    coverage_prediction: "neutral"
+  meta:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No AI licensing deal. Meta has research partnerships with MIT but no direct financial tie to MIT Tech Review."
+    coverage_prediction: "adversarial"
+  anthropic:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known direct financial relationship."
+    coverage_prediction: "neutral"
+  amazon:
+    financial_tie: "indirect"
+    estimated_value: "undisclosed"
+    direction: "mutual"
+    description: "Amazon is an MIT corporate partner. AWS funds MIT research programs. No direct MIT Tech Review licensing deal."
+    coverage_prediction: "softer"
+  apple:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known direct financial relationship."
+    coverage_prediction: "neutral"
+  google:
+    financial_tie: "indirect"
+    estimated_value: "undisclosed"
+    direction: "mutual"
+    description: "Google/DeepMind is an MIT corporate partner. Funds research programs. No direct MIT Tech Review licensing deal."
+    coverage_prediction: "softer"
+  x_twitter:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No financial relationship."
+    coverage_prediction: "adversarial"
+
+
 litigation_connections:
   - type: "federal_agency_lawsuits"
     parties: "MIT (co-plaintiff with American Council on Education) v. NIH, DOE, NSF"

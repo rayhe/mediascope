@@ -1078,6 +1078,61 @@ known_conflicts:
       - "https://pitchbook.com/profiles/company/saudi-research-and-media-group"
       - "https://reuters.com/saudi-wealth-fund-sold-stakes-meta-q2-2025"
 
+
+# ===================================================================
+# COMPETITOR RELATIONSHIPS — financial ties to Meta's competitors
+# Added 2026-08-04 for cross-entity coverage asymmetry analysis
+# NOTE: Vox Media (original Verge parent) signed OpenAI deal May 2024.
+# PMC acquired Vox Media in 2026. PMC itself sued Google Sep 2025.
+# SRMG/PIF invested $200M+ in PMC Feb 2018.
+# ===================================================================
+competitor_relationships:
+  openai:
+    financial_tie: "licensing"
+    estimated_value: "undisclosed"
+    direction: "receiving"
+    description: "Vox Media (then-parent of The Verge) signed content licensing deal with OpenAI, May 2024. Content from The Verge, Vox, Eater, NY Magazine used in ChatGPT. PMC (current parent) acquired Vox Media in 2026."
+    source_url: "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
+    coverage_prediction: "softer"
+  meta:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No AI licensing deal. SRMG/PIF $200M investment in PMC parent creates structural conflict — PIF divested all META shares."
+    coverage_prediction: "adversarial"
+  anthropic:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known financial relationship."
+    coverage_prediction: "neutral"
+  amazon:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known direct licensing deal."
+    coverage_prediction: "neutral"
+  apple:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No direct financial tie. The Verge historically covers Apple product launches favorably."
+    coverage_prediction: "softer"
+  google:
+    financial_tie: "adversarial"
+    estimated_value: "$0"
+    direction: "none"
+    description: "PMC sued Google over AI Overviews, Sep 2025 (first major US publisher to do so). Nilay Patel coined 'Google Zero' concept. Deep adversarial relationship."
+    source_url: "https://www.reuters.com/sustainability/boards-policy-regulation/rolling-stone-billboard-owner-penske-sues-google-over-ai-overviews-2025-09-14/"
+    coverage_prediction: "adversarial"
+  x_twitter:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No financial relationship. Nilay Patel has been vocally critical of Elon Musk's management of X."
+    coverage_prediction: "adversarial"
+
+
 # ===================================================================
 # LITIGATION CONNECTIONS
 # ===================================================================

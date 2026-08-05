@@ -1725,6 +1725,57 @@ known_conflicts:
       - "https://tvbeurope.com/business/why-the-bbc-appointed-a-tech-bro-as-director-general"
       - "https://spurcoalition.org/updates/spur-telemetry-standard-published-for-public-comment-the-spur-coalition"
 
+
+# ===================================================================
+# COMPETITOR RELATIONSHIPS — financial ties to Meta's competitors
+# Added 2026-08-04 for cross-entity coverage asymmetry analysis
+# ===================================================================
+competitor_relationships:
+  openai:
+    financial_tie: "licensing"
+    estimated_value: "undisclosed"
+    direction: "receiving"
+    description: "Content licensing deal announced Feb 2025. Guardian journalism appears in ChatGPT with attribution. Guardian also adopted ChatGPT Enterprise internally. Deal came one day after Guardian joined lawsuit against Cohere."
+    source_url: "http://openai.com/index/openai-and-guardian-media-group-launch-content-partnership/"
+    coverage_prediction: "softer"
+  meta:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No AI licensing deal. Guardian's Scott Trust endowment (£1.245B) and reader-funded model create no direct Meta conflict, but editorial posture is privacy-focused."
+    coverage_prediction: "adversarial"
+  anthropic:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known financial relationship. Guardian joined lawsuit against Cohere (not Anthropic) for unauthorized content use."
+    coverage_prediction: "neutral"
+  amazon:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known direct financial relationship."
+    coverage_prediction: "neutral"
+  apple:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known direct financial relationship."
+    coverage_prediction: "neutral"
+  google:
+    financial_tie: "mixed"
+    estimated_value: "undisclosed"
+    direction: "receiving"
+    description: "Google Digital News Initiative funding recipient. Google AI pilot program participant. Relationship is pragmatic — Guardian takes Google money but covers Google critically."
+    coverage_prediction: "neutral"
+  x_twitter:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No financial relationship."
+    coverage_prediction: "adversarial"
+
+
 ai_crawl_policy:
   blocks_gptbot: "Previously yes; likely updated post-OpenAI deal (Feb 2025)"
   blocks_ccbot: true

@@ -429,6 +429,74 @@ journalists:
     making her coverage evolution a proxy for institutional editorial strategy changes. (5) Her career arc — TV production
     (ESPN/A&E) → video journalism (WSJ) → multimedia editor (Verge) → writer/podcaster (Wired) — is unusually multi-format,
     giving her an instinct for narrative packaging that shapes how her text articles frame complex topics.'
+  competitor_coverage:
+    apple:
+      tone: empathetic_wonder
+      examples:
+      - title: "I Cried Inside the Apple Vision Pro — WIRED Review"
+        date: "2024-02"
+        publication: wired
+        framing_notes: >
+          Deeply personal, first-person emotional narrative. Lead: "From the inside, though, the view is incredible. It really
+          is. I'm just as surprised by this as you are." Describes crying watching Life is Beautiful, tears pooling in the
+          face cushion, texting friends "Honestly, I'm starting to love this thing." ZERO surveillance/privacy framing despite
+          Apple Vision Pro having multiple outward-facing cameras (12 cameras, 5 sensors, 6 microphones). Criticism is framed
+          as personal loss of human connection ("I also missed the people in the darkened space around me... I loved the Apple
+          Vision Pro until I didn't. I started to dread putting it on") — not as surveillance risk, data harvesting, or
+          corporate trust violation. The device's cameras are never mentioned as a privacy concern for bystanders. Source:
+          MacDailyNews reprint (https://macdailynews.com/2024/02/23/dont-cry-inside-your-apple-vision-pro/).
+      - title: "Apple Vision Pro WWDC Hands-On — WIRED Uncanny Valley Podcast"
+        date: "2023-06"
+        publication: wired
+        framing_notes: >
+          Measured technical analysis on WIRED's Uncanny Valley podcast and Gadget Lab. Described the device as "conceptually AR"
+          — nuanced, precise language. No surveillance, privacy, or bystander-consent language despite the headset's camera
+          array. Framing: Apple = impressive engineering feat, potential new platform. Source: Everand podcast listing, Newcomer
+          podcast interview.
+      - title: "Apple Vision Pro Lives Deep in the Uncanny Valley — WIRED Gadget Lab"
+        date: "2024-02"
+        publication: wired
+        framing_notes: >
+          Extended podcast discussion about comfort, ergonomics, the pinch gesture. Physical comfort critique ("I can't
+          comfortably do that... It's very uncomfortable") but NEVER surveillance framing. Even when describing recording
+          capabilities, no "bystander consent" or "creepy" language. The device's name — containing "Vision" — is treated
+          neutrally, not as surveillance metaphor. Source: TechnologyMag.org transcript.
+    snap:
+      tone: playful_positive
+      examples:
+      - title: "Snap Spectacles: Are They the Face Camera We've Been Waiting For? — WIRED YouTube"
+        date: "2018"
+        publication: wired
+        framing_notes: >
+          WIRED YouTube video with Lauren Goode and Arielle Pardes testing Snap Spectacles at California's Great America
+          amusement park. Title uses expectant/positive framing for a literal face camera — "the face camera we've been
+          waiting for" implies desire rather than alarm. Keywords include "first impressions" and "hands on" — no "privacy",
+          "surveillance", "creepy", "consent", or "recording" language. Fun, consumer-friendly framing for a face-mounted
+          camera product from a social media company. Source: YouTube (https://www.youtube.com/watch?v=zHn_otv4qN8).
+    meta:
+      tone: unknown_editorial_avoidance
+      coverage_gap_notes: >
+        ANALYTICALLY SIGNIFICANT: Despite being WIRED's most senior consumer tech correspondent (Senior Correspondent since
+        ~2025) with 15+ years covering wearables specifically, Lauren Goode appears to have NO major individual byline on
+        Meta Ray-Ban smart glasses reviews. Her beat shifted from consumer product reviews to AI chipmakers, coding tools,
+        and Silicon Valley culture interviews (AMD CTO, Anthropic Labs head, Intel analysis) at the same time Meta glasses
+        became WIRED's most surveillance-framed hardware story. This creates a lane assignment asymmetry: Goode personally
+        champions Apple Vision Pro (emotional first-person review) and Snap Spectacles (fun theme park video), but Meta's
+        camera glasses go to other WIRED staffers or get covered through the surveillance/accountability lens rather than the
+        product-delight lens Goode brings to competitor products. Whether this is editorial assignment strategy or personal
+        choice is unknown, but the effect is clear: Apple and Snap camera wearables get Goode's personal stamp of enthusiasm,
+        while Meta camera wearables get WIRED's institutional skepticism without her authoritative consumer-product voice to
+        counterbalance.
+    cross_entity_asymmetry_score: 0.82
+    asymmetry_notes: >
+      High asymmetry (0.82/1.0). Apple Vision Pro has 12 outward-facing cameras and 6 microphones — a far more capable
+      surveillance device than Meta's single 12MP camera — yet receives empathetic emotional framing ("I cried", "the view
+      is incredible") while Meta's camera glasses receive surveillance/privacy framing from WIRED as an institution. Snap
+      Spectacles are literally named "the face camera we've been waiting for" in Goode's video title — language that would
+      be unthinkable applied to Meta's glasses in WIRED's editorial frame. Key differentiator: Apple = personal experience
+      product, Snap = fun social device, Meta = surveillance infrastructure. Same hardware (cameras on face), different
+      narrative frame determined by manufacturer identity. Goode's personal coverage patterns instantiate this at the
+      individual journalist level.
   source_urls:
   - https://clarku.edu/news/lauren-goode-03-stays-wired-to-the-tech-world/
   - https://allthingsd.com/20110824/introducing-lauren-goode/

@@ -1,0 +1,170 @@
+# ===================================================================
+# NEWS CORP PUBLICATION PROFILE — balanced control for MediaScope
+# Created: 2026-08-04
+# Purpose: News Corp is the only major publisher with both OpenAI
+#   AND Meta AI licensing deals, making it the balanced control for
+#   cross-entity coverage asymmetry analysis.
+# ===================================================================
+
+name: "News Corp"
+slug: "news-corp"
+url: "https://www.newscorp.com"
+type: "diversified_news_media"
+publications:
+  - "The Wall Street Journal"
+  - "New York Post"
+  - "Barron's"
+  - "MarketWatch"
+  - "The Times (London)"
+  - "The Sun"
+  - "The Australian"
+  - "HarperCollins"
+
+rss_feeds:
+  - name: wsj_us
+    url: "https://feeds.a.dj.com/rss/RSSWorldNews.xml"
+  - name: nypost
+    url: "https://nypost.com/feed/"
+
+# ===================================================================
+# OWNERSHIP CHAIN
+# ===================================================================
+ownership_chain:
+  - entity: "The Wall Street Journal / New York Post / Barron's"
+    type: "publication"
+    parent: "Dow Jones & Company"
+  - entity: "Dow Jones & Company"
+    type: "subsidiary"
+    parent: "News Corp"
+  - entity: "News Corp"
+    type: "parent_company"
+    ticker: "NWSA / NWS"
+    ceo: "Robert Thomson"
+    chairman: "Lachlan Murdoch"
+    structure: "Dual-class share structure. Murdoch family controls ~40% of voting power via Class B shares."
+    market_cap: "~$17B (2026)"
+
+# ===================================================================
+# REVENUE RELATIONSHIPS — AI licensing deals
+# News Corp is UNIQUE: it has significant deals with BOTH Meta and OpenAI
+# ===================================================================
+revenue_relationships:
+  - partner: "OpenAI"
+    type: "ai_licensing"
+    value: "$250M over 5 years ($50M/yr)"
+    signed: "May 2024"
+    scope: "Content from WSJ, NY Post, Barron's, MarketWatch, The Times, The Sun used for ChatGPT training and retrieval"
+    source_url: "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
+    verified: true
+  - partner: "Meta"
+    type: "ai_licensing"
+    value: "Up to $50M/yr, 3-year deal"
+    signed: "March 2026"
+    scope: "US and UK content for Meta AI training and retrieval. Archives included."
+    source_url: "https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244"
+    verified: true
+  - partner: "Apple"
+    type: "news_distribution"
+    value: "undisclosed"
+    scope: "WSJ available on Apple News+. Revenue sharing arrangement."
+    verified: true
+
+# ===================================================================
+# EDITORIAL LEADERSHIP
+# ===================================================================
+editorial_leadership:
+  - name: "Emma Tucker"
+    title: "Editor-in-Chief, The Wall Street Journal"
+  - name: "Keith Poole"
+    title: "Editor-in-Chief, New York Post"
+
+# ===================================================================
+# KNOWN CONFLICTS OF INTEREST
+# ===================================================================
+known_conflicts:
+  - type: "balanced_commercial"
+    description: "News Corp is the only major publisher with significant AI licensing deals with BOTH OpenAI ($50M/yr) AND Meta (up to $50M/yr). This balanced financial relationship makes it a valuable control for measuring coverage asymmetry."
+    severity: "low"
+  - type: "political_affiliation"
+    description: "Murdoch media properties have well-documented conservative editorial leanings. NY Post is tabloid-style. WSJ editorial page is conservative but news coverage is generally respected for accuracy."
+    severity: "medium"
+  - type: "dual_class_control"
+    description: "Murdoch family controls ~40% of voting power through Class B shares, concentrating editorial influence."
+    severity: "medium"
+
+# ===================================================================
+# COMPETITOR RELATIONSHIPS — financial ties to Meta's competitors
+# Added 2026-08-04 for cross-entity coverage asymmetry analysis
+# NEWS CORP IS THE BALANCED CONTROL: deals with both Meta and OpenAI
+# ===================================================================
+competitor_relationships:
+  openai:
+    financial_tie: "licensing"
+    estimated_value: "$50M/yr ($250M/5yr)"
+    direction: "receiving"
+    description: "Major content licensing deal signed May 2024. WSJ, NY Post, Barron's, MarketWatch, The Times, The Sun content used in ChatGPT."
+    source_url: "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
+    coverage_prediction: "softer"
+  meta:
+    financial_tie: "licensing"
+    estimated_value: "up to $50M/yr"
+    direction: "receiving"
+    description: "3-year AI content licensing deal signed Mar 2026. US and UK content for Meta AI. This is the ONLY major publisher with a Meta AI deal."
+    source_url: "https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244"
+    coverage_prediction: "softer"
+  anthropic:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known financial relationship."
+    coverage_prediction: "neutral"
+  amazon:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known direct AI licensing deal."
+    coverage_prediction: "neutral"
+  apple:
+    financial_tie: "distribution"
+    estimated_value: "undisclosed"
+    direction: "receiving"
+    description: "WSJ available on Apple News+. Revenue sharing arrangement."
+    coverage_prediction: "neutral"
+  google:
+    financial_tie: "mixed"
+    estimated_value: "undisclosed"
+    direction: "mutual"
+    description: "News Corp has historically adversarial relationship with Google (sued in Australia over news snippets). Also has ad revenue relationship."
+    coverage_prediction: "neutral"
+  x_twitter:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No financial relationship. NY Post and WSJ cover Elon Musk/X extensively."
+    coverage_prediction: "neutral"
+
+# ===================================================================
+# LITIGATION
+# ===================================================================
+litigation_connections:
+  - case: "News Corp vs Perplexity AI"
+    type: "copyright"
+    status: "active"
+    description: "Two News Corp subsidiaries sued Perplexity for copyright infringement."
+
+# ===================================================================
+# MEDIA BIAS RATINGS
+# ===================================================================
+bias_ratings:
+  - source: "AllSides"
+    rating: "Center (WSJ news), Right (WSJ editorial)"
+  - source: "Ad Fontes Media"
+    rating: "WSJ: Reliable, center-right editorial"
+
+# ===================================================================
+# MEDIASCOPE CONTROL DESIGNATION
+# ===================================================================
+control_designation:
+  type: "balanced_control"
+  rationale: "News Corp receives comparable payments from both OpenAI ($50M/yr) and Meta (up to $50M/yr). If financial incentives drive coverage tone, News Corp should show balanced coverage of both. Deviation from balance in either direction would suggest editorial bias beyond financial incentive."
+  comparison_baseline: true

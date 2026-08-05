@@ -1,0 +1,89 @@
+# ===================================================================
+# COMPETITOR ENTITY DEFINITIONS — for cross-entity coverage analysis
+# Created: 2026-08-04
+# Purpose: Define regex patterns and aliases for detecting mentions
+#   of Meta's competitors in article text. Used by CompetitorAnalyzer
+#   to score coverage tone across entities.
+# ===================================================================
+
+entities:
+  openai:
+    display_name: "OpenAI"
+    aliases: ["OpenAI", "ChatGPT", "GPT-4", "GPT-4o", "GPT-5", "DALL-E", "Sora", "Sam Altman", "SearchGPT"]
+    regex: "\\b(OpenAI|ChatGPT|GPT-[45o]|DALL[- ]E|Sora|SearchGPT)\\b"
+    category: "ai_lab"
+    market_cap_approx: "$300B (private valuation, 2026)"
+    ceo: "Sam Altman"
+
+  anthropic:
+    display_name: "Anthropic"
+    aliases: ["Anthropic", "Claude", "Dario Amodei", "Daniela Amodei"]
+    regex: "\\b(Anthropic|Claude\\s+(AI|[234]|Sonnet|Opus|Haiku)|Dario\\s+Amodei)\\b"
+    category: "ai_lab"
+    market_cap_approx: "$60B (private valuation, 2025)"
+    ceo: "Dario Amodei"
+
+  amazon:
+    display_name: "Amazon"
+    aliases: ["Amazon", "AWS", "Alexa", "Jeff Bezos", "Andy Jassy", "Kindle", "Ring", "Rufus", "Amazon Web Services"]
+    regex: "\\b(Amazon(?!\\s+(?:rain|jungle|river))|AWS|Alexa(?!\\s+rank)|Bezos|Andy\\s+Jassy|Rufus\\s+AI)\\b"
+    category: "big_tech"
+    market_cap_approx: "$2.3T"
+    ceo: "Andy Jassy"
+
+  apple:
+    display_name: "Apple"
+    aliases: ["Apple", "Tim Cook", "John Ternus", "iPhone", "iPad", "Apple Intelligence", "Vision Pro", "Apple Watch"]
+    regex: "\\b(Apple(?!\\s+(?:sauce|pie|butter|cider|juice|crisp|orchard|tree|blossom))|Tim\\s+Cook|John\\s+Ternus|Apple\\s+Intelligence|Vision\\s+Pro)\\b"
+    category: "big_tech"
+    market_cap_approx: "$3.8T"
+    ceo: "John Ternus (from Sep 2026)"
+
+  google:
+    display_name: "Google / Alphabet"
+    aliases: ["Google", "Alphabet", "Gemini", "DeepMind", "Sundar Pichai", "YouTube", "Google AI", "AI Overviews"]
+    regex: "\\b(Google(?!\\s+(?:Maps|Sheets|Docs|Drive|Calendar|Translate)\\b)|Alphabet\\s+Inc|Gemini\\s+(AI|Ultra|Pro|Nano)|DeepMind|Sundar\\s+Pichai|AI\\s+Overviews)\\b"
+    category: "big_tech"
+    market_cap_approx: "$2.4T"
+    ceo: "Sundar Pichai"
+
+  x_twitter:
+    display_name: "X / Twitter"
+    aliases: ["X", "Twitter", "Elon Musk", "xAI", "Grok"]
+    # NOTE: bare "X" is too ambiguous for regex matching — require context
+    regex: "\\b(Twitter|Elon\\s+Musk|xAI|Grok(?!\\s+(?:monster|puppet)))\\b"
+    category: "social_media"
+    market_cap_approx: "$40B (private estimate)"
+    ceo: "Linda Yaccarino (CEO), Elon Musk (owner)"
+
+  meta:
+    display_name: "Meta"
+    aliases: ["Meta", "Facebook", "Instagram", "WhatsApp", "Mark Zuckerberg", "Threads", "Ray-Ban Meta", "Meta AI", "Llama"]
+    regex: "\\b(Meta(?!data|morphos|phor|physical|bolism|l\\b|verse\\b)|Facebook|Instagram|WhatsApp|Zuckerberg|Threads(?!\\s+(?:of|in|from|that|which))|Ray-Ban\\s+Meta|Meta\\s+AI|Llama\\s+[234])\\b"
+    category: "big_tech"
+    market_cap_approx: "$1.8T"
+    ceo: "Mark Zuckerberg"
+
+# ===================================================================
+# FINANCIAL RELATIONSHIP TYPES
+# Used for categorizing publisher-entity relationships
+# ===================================================================
+relationship_types:
+  licensing: "Publisher receives payment for content licensing"
+  investment: "Entity or entity-adjacent fund invested in publisher parent"
+  advertising: "Significant advertising revenue relationship"
+  litigation: "Active lawsuit between publisher and entity"
+  adversarial: "Explicitly hostile relationship (no deal, active disputes)"
+  indirect: "Financial tie through parent/institutional relationship"
+  mixed: "Multiple types of relationship (some positive, some negative)"
+  none: "No known financial relationship"
+  negotiating: "Deals under discussion but not yet signed"
+
+# ===================================================================
+# COVERAGE PREDICTION DEFINITIONS
+# ===================================================================
+coverage_predictions:
+  softer: "Financial incentive predicts measurably softer coverage tone"
+  neutral: "No financial incentive to bias coverage in either direction"
+  adversarial: "Financial incentive or absence thereof predicts harsher coverage"
+  unknown: "Insufficient data to predict coverage tone"

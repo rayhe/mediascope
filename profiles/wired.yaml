@@ -1850,6 +1850,112 @@ known_conflicts:
       - "https://spacenews.com/hawkeye-360-files-to-go-public/"
       - "https://pitchbook.com/profiles/advance-publications-investments"
 
+
+# ===================================================================
+# COMPETITOR RELATIONSHIPS — financial ties to Meta's competitors
+# Added 2026-08-04 for cross-entity coverage asymmetry analysis
+# ===================================================================
+competitor_relationships:
+  openai:
+    financial_tie: "licensing"
+    estimated_value: "$1-5M/yr (undisclosed)"
+    direction: "receiving"
+    description: "Multi-year content licensing deal via Condé Nast parent, Aug 2024. OpenAI displays WIRED content in ChatGPT and SearchGPT."
+    source_url: "https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/"
+    coverage_prediction: "softer"
+  meta:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No AI licensing deal. No financial relationship. Advance's $6.5B Reddit stake creates indirect competitive tension with Meta's social platforms."
+    coverage_prediction: "adversarial"
+  anthropic:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known financial relationship."
+    coverage_prediction: "neutral"
+  amazon:
+    financial_tie: "licensing"
+    estimated_value: "undisclosed"
+    direction: "receiving"
+    description: "Multi-year Rufus AI shopping assistant licensing deal via Condé Nast, Jul 2025."
+    source_url: "https://digiday.com/media/conde-nast-and-hearst-strike-amazon-ai-licensing-deals-for-rufus/"
+    coverage_prediction: "softer"
+  apple:
+    financial_tie: "negotiating"
+    estimated_value: "potential $50M+ multi-year"
+    direction: "receiving"
+    description: "Apple opened negotiations with Condé Nast for AI content licensing, Dec 2023. Status unclear as of mid-2026."
+    source_url: "https://www.reuters.com/technology/apple-explores-ai-deals-with-news-publishers-new-york-times-2023-12-22/"
+    coverage_prediction: "softer"
+  google:
+    financial_tie: "adversarial"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No deal. CEO Roger Lynch has described Google AI Overviews as existential threat. Condé Nast joined publisher coalition against Google scraping."
+    coverage_prediction: "adversarial"
+  x_twitter:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No financial relationship."
+    coverage_prediction: "adversarial"
+
+cross_entity_wearables_framing:
+  date_analyzed: "2026-08-04"
+  summary: >
+    WIRED's wearable coverage reveals stark framing asymmetry by manufacturer identity. Camera-equipped
+    wearables from Apple and Snap receive empathetic/playful product coverage from WIRED's most senior
+    consumer tech correspondent (Lauren Goode), while Meta's camera glasses receive institutional
+    surveillance/privacy alarm framing from other staffers. Same hardware capability (face-mounted cameras),
+    radically different narrative treatment determined by manufacturer identity.
+  evidence:
+    apple_vision_pro:
+      reviewer: "Lauren Goode (Senior Correspondent)"
+      tone: "empathetic wonder"
+      framing_language: >
+        "The view is incredible. It really is." / "I cried" / "I was starting to love this thing" —
+        deeply personal first-person emotional narrative. Apple Vision Pro has 12 outward-facing cameras,
+        5 sensors, 6 microphones — technically a far more capable surveillance device than Meta's single
+        12MP camera. ZERO surveillance/privacy framing in Goode's review. Criticism = personal isolation
+        and missing human connection, not data harvesting or bystander consent.
+      privacy_concerns_raised: false
+      camera_surveillance_framing: false
+    snap_spectacles:
+      reviewer: "Lauren Goode"
+      tone: "playful positive"
+      framing_language: >
+        WIRED YouTube: "Snap Spectacles: Are They the Face Camera We've Been Waiting For?" —
+        expectant/positive framing for a literal face camera. Tested at California's Great America
+        amusement park. No privacy/surveillance/consent language in title, description, or keywords.
+        Fun consumer framing for a social media company's face-mounted camera.
+      privacy_concerns_raised: false
+      camera_surveillance_framing: false
+    meta_glasses:
+      reviewer: "Not Lauren Goode — editorial lane avoidance"
+      tone: "institutional surveillance alarm"
+      framing_language: >
+        WIRED's Meta glasses coverage emphasizes surveillance, privacy invasion, "glasshole revival,"
+        bystander consent, and data harvesting. The same 12MP camera that is a "face camera we've been
+        waiting for" on Snap Spectacles becomes a surveillance tool on Meta Ray-Bans. Goode — despite
+        being WIRED's most authoritative consumer tech voice with 15+ years of wearables expertise —
+        has no major individual byline on Meta Ray-Ban reviews, leaving coverage to reporters with
+        accountability/investigative orientations rather than consumer-product-delight framing.
+      privacy_concerns_raised: true
+      camera_surveillance_framing: true
+  analytical_significance: >
+    The lane assignment pattern — Goode gets Apple/Snap wearables, other staffers get Meta wearables —
+    produces a systematic framing asymmetry at the publication level. It doesn't require conscious
+    editorial bias; it emerges from which journalist covers which company. The journalist who would
+    naturally write "I cried inside the Meta Ray-Ban Display" never gets assigned that story, while
+    the journalists who do get assigned bring accountability/surveillance framing as their default
+    lens. This structural lane effect may be more analytically important than any individual article's
+    word choices because it operates at the editorial assignment level, before a single word is written.
+    Aligns with WIRED's competitor_relationships: Apple = negotiating licensing deal (softer coverage
+    predicted), Meta = no financial tie (adversarial coverage predicted).
+
+
 litigation_connections:
   - type: "connected_party"
     description: >

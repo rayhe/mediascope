@@ -1824,6 +1824,61 @@ known_conflicts:
       - "https://civicnews.org/team/rebecca-van-dyck/"
       - "https://nytco.com/who-we-are/our-board/board-of-directors/"
 
+
+# ===================================================================
+# COMPETITOR RELATIONSHIPS — financial ties to Meta's competitors
+# Added 2026-08-04 for cross-entity coverage asymmetry analysis
+# KEY PATTERN: NYT is adversarial to OpenAI (suing) but has major
+# Amazon deal ($20-25M/yr). This creates a unique financial split.
+# ===================================================================
+competitor_relationships:
+  openai:
+    financial_tie: "adversarial"
+    estimated_value: "suing for billions"
+    direction: "none"
+    description: "NYT sued OpenAI and Microsoft for copyright infringement, Dec 2023. Claims billions in damages. Highest-profile publisher-vs-AI-company litigation."
+    source_url: "https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html"
+    coverage_prediction: "adversarial"
+  meta:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No AI licensing deal. Carlos Slim (~17% NYT stake) has no known Meta financial interest."
+    coverage_prediction: "adversarial"
+  anthropic:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known financial relationship."
+    coverage_prediction: "neutral"
+  amazon:
+    financial_tie: "licensing"
+    estimated_value: "$20-25M/yr"
+    direction: "receiving"
+    description: "AI content licensing deal. Amazon uses NYT articles, NYT Cooking, and The Athletic content for Rufus AI shopping assistant and other AI products."
+    source_url: "https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244"
+    coverage_prediction: "softer"
+  apple:
+    financial_tie: "mixed"
+    estimated_value: "minimal"
+    direction: "mutual"
+    description: "NYT left Apple News in 2020 (pulled articles). Wirecutter and The Athletic still appear in Apple News. Apple Podcasts subscription partnership. No AI content deal."
+    source_url: "https://www.techadvisor.com/article/739646/the-new-york-times-ends-its-apple-news-partnership.html"
+    coverage_prediction: "neutral"
+  google:
+    financial_tie: "adversarial"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No licensing deal. NYT critical of Google AI Overviews. Part of broader publisher coalition against Google scraping."
+    coverage_prediction: "adversarial"
+  x_twitter:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No financial relationship."
+    coverage_prediction: "adversarial"
+
+
 # ===================================================================
 # LITIGATION CONNECTIONS — expanded 2026-06-22
 # ===================================================================

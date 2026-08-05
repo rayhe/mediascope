@@ -929,6 +929,59 @@ known_conflicts:
     source_urls:
       - "https://nbcpalmsprings.com/2026/07/09/openai-reportedly-in-talks-to-give-trump-administration-5-stake-worth-42-billion/"
 
+
+# ===================================================================
+# COMPETITOR RELATIONSHIPS — financial ties to Meta's competitors
+# Added 2026-08-04 for cross-entity coverage asymmetry analysis
+# KEY CONFLICT: Emerson Collective / LPJ Trust holds ~$17B in AAPL
+# ===================================================================
+competitor_relationships:
+  openai:
+    financial_tie: "licensing"
+    estimated_value: "undisclosed"
+    direction: "receiving"
+    description: "Content licensing deal announced May 2024. The Atlantic articles discoverable in ChatGPT with attribution and links."
+    source_url: "https://venturebeat.com/ai/openai-partners-with-the-atlantic-and-the-verge-publisher-vox-media"
+    coverage_prediction: "softer"
+  meta:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No AI licensing deal. Emerson Collective's ~$17B Apple stake creates massive indirect competitive tension with Meta."
+    coverage_prediction: "adversarial"
+  anthropic:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known financial relationship."
+    coverage_prediction: "neutral"
+  amazon:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known direct financial relationship."
+    coverage_prediction: "neutral"
+  apple:
+    financial_tie: "investment"
+    estimated_value: "~$17B (LPJ Trust AAPL holdings)"
+    direction: "mutual"
+    description: "Laurene Powell Jobs Trust holds ~$17B in Apple stock. LPJ owns The Atlantic via Emerson Collective. This is the single largest ownership-chain financial conflict in the dataset."
+    source_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=laurene+powell+jobs"
+    coverage_prediction: "softer"
+  google:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No known direct financial relationship."
+    coverage_prediction: "neutral"
+  x_twitter:
+    financial_tie: "none"
+    estimated_value: "$0"
+    direction: "none"
+    description: "No financial relationship."
+    coverage_prediction: "adversarial"
+
+
 political_activity:
   owner_political_giving:
     total_fec_records: 1218
