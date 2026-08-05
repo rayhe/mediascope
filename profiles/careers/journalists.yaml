@@ -625,29 +625,99 @@ journalists:
           "surveillance", "creepy", "consent", or "recording" language. Fun, consumer-friendly framing for a face-mounted
           camera product from a social media company. Source: YouTube (https://www.youtube.com/watch?v=zHn_otv4qN8).
     meta:
-      tone: unknown_editorial_avoidance
+      tone: clinical_to_editorial_avoidance
       coverage_gap_notes: >
         ANALYTICALLY SIGNIFICANT: Despite being WIRED's most senior consumer tech correspondent (Senior Correspondent since
-        ~2025) with 15+ years covering wearables specifically, Lauren Goode appears to have NO major individual byline on
-        Meta Ray-Ban smart glasses reviews. Her beat shifted from consumer product reviews to AI chipmakers, coding tools,
-        and Silicon Valley culture interviews (AMD CTO, Anthropic Labs head, Intel analysis) at the same time Meta glasses
-        became WIRED's most surveillance-framed hardware story. This creates a lane assignment asymmetry: Goode personally
-        champions Apple Vision Pro (emotional first-person review) and Snap Spectacles (fun theme park video), but Meta's
-        camera glasses go to other WIRED staffers or get covered through the surveillance/accountability lens rather than the
-        product-delight lens Goode brings to competitor products. Whether this is editorial assignment strategy or personal
-        choice is unknown, but the effect is clear: Apple and Snap camera wearables get Goode's personal stamp of enthusiasm,
-        while Meta camera wearables get WIRED's institutional skepticism without her authoritative consumer-product voice to
-        counterbalance.
-    cross_entity_asymmetry_score: 0.82
+        ~2025) with 15+ years covering wearables specifically, Lauren Goode has NO major standalone Meta Ray-Ban smart glasses
+        product review. Her ONE Meta hardware byline was the Oct 2023 Meta Connect event recap ("Meta's Quest 3 VR Headset
+        and Ray-Ban Smart Glasses Now Serve Up a Bigger Dose of Reality"), which used clinical/skeptical framing: "The
+        face-computing metaverse still hasn't gone mainstream, but that isn't stopping Meta from trying to make it so" and
+        "most of us would rather bury our faces in the glass slabs in our hands than limit our vision in a full-fledged face
+        computer." Compare Apple Vision Pro review (4 months later): "I Cried Inside the Apple Vision Pro" — deeply personal,
+        emotional, tears pooling. Same journalist, same product category (face-mounted cameras), radically different emotional
+        register. Post-2023, her beat shifted to AI semiconductors (Nvidia Jensen Huang 1-on-1 SIGGRAPH 2024, AMD Lisa Su
+        profile Aug 2025, Arm CEO interview Mar 2026, Intel advanced packaging feature Apr 2026) and Silicon Valley culture —
+        precisely as Meta glasses became WIRED's most surveillance-framed hardware story. Meta Ray-Ban coverage went to Dell
+        Cameron and Dhruv Mehrotra (investigative team) for the NameTag exposé. This creates a lane assignment asymmetry:
+        Goode personally champions Apple Vision Pro (emotional first-person review) and Snap Spectacles (fun theme park video),
+        but Meta's camera glasses go to other WIRED staffers through the surveillance/accountability lens rather than the
+        product-delight lens Goode brings to competitor products.
+      meta_connect_2023:
+        title: "Meta's Quest 3 VR Headset and Ray-Ban Smart Glasses Now Serve Up a Bigger Dose of Reality"
+        date: "2023-10"
+        publication: wired
+        framing_notes: >
+          Event recap of Meta Connect keynote. Clinical/skeptical framing: "face-computing metaverse still hasn't
+          gone mainstream," "most of us would rather bury our faces in the glass slabs in our hands," "I'm not
+          sure where to start" on the recording LED ("The new LED light didn't appear that much more obvious to me
+          when I saw it"). Contrast with Apple Vision Pro review 4 months later: personal, emotional, wonderstruck.
+          Same journalist covering face-mounted camera products from two different companies with opposite emotional
+          registers. Source: WIRED article reprinted at sxyngh.com.
+        source_url: "http://www.sxyngh.com/index-216.html"
+    google:
+      tone: team_coverage_playful
+      coverage_notes: >
+        Goode was on-ground at Google I/O 2026 (May 2026) as part of WIRED's five-person team covering Android XR
+        smart glasses, Gemini updates, and Google's AI announcements. The WIRED live blog included the playful
+        observation "Remember, they're not Smart Glasses, they are 'Intelligent Eyewear'" — mild snark about
+        Google's branding that is tonally FRIENDLY, not adversarial. Zero surveillance/privacy language applied
+        to Google's camera-equipped Android XR glasses despite functional similarity to Meta Ray-Ban glasses.
+        Google I/O coverage assigned to a large team including Goode (consumer tech), Ashworth, Chokkattu, Levy,
+        and Rogers — collaborative product-tech coverage rather than the investigative-adversarial lens applied
+        to Meta's functionally similar products.
+      google_io_2026:
+        date: "2026-05-19"
+        publication: wired
+        framing_notes: >
+          Live blog team coverage. Tone: playful, snarky but friendly toward Google. "Intelligent Eyewear" joke
+          about branding — no privacy alarm, no surveillance vocabulary, no bystander consent language despite
+          Google's Android XR glasses having cameras and always-on AI (Gemini). Compare: Meta's camera glasses
+          trigger "wiretapping laws," "biometric data," "dormant surveillance" from WIRED colleagues.
+        source_url: "https://technologytangle.com/2026/05/19/google-io-2026-live-blog-all-the-gemini-and-smart-glasses-updates-as-they-happen"
+    executive_access_asymmetry:
+      description: >
+        Goode has direct 1-on-1 executive interview access to EVERY major AI semiconductor company and a key Meta
+        AI competitor, but ZERO 1-on-1 interviews with Meta leadership despite Meta being her former primary beat:
+      access_map:
+        nvidia: "Jensen Huang — SIGGRAPH 2024 1-on-1 interview, Jan 2026 Vera Rubin coverage"
+        amd: "Lisa Su — Aug 2025 Big Story profile ('Lisa Su Runs AMD'), Dec 2025 WIRED interview on AI bubble"
+        arm: "Rene Haas — Mar 2026 interview ('Arm's CEO Insists the Market Needs His New CPU')"
+        intel: "Intel leadership — Apr 2026 advanced packaging feature (sources: Intel in talks with Google, Amazon)"
+        anthropic: "Mike Krieger (Anthropic Labs head) — Jun 2026 co-interview at Big Technology AI Summit"
+        meta: "ZERO — No Goode 1-on-1 with Zuckerberg, Bosworth, LeCun, or any Meta hardware leadership"
+      source_urls:
+        - "https://www.youtube.com/watch?v=H0WxJ7caZQU"
+        - "https://chipbriefing.substack.com/p/weekly-arm-ceo-on-arms-new-chip"
+        - "https://sciencesprings.wordpress.com/2026/04/07/from-wired-the-ridiculously-nerdy-intel-bet-that-could-rake-in-billions/"
+        - "https://www.itbear.com/tag/amd/"
+        - "https://podtail.nl/podcast/big-technology-podcast/meta-s-cto-on-its-augmented-reality-dreams-with-an/"
+    beat_shift:
+      description: >
+        2024-2026 beat evolution: consumer tech/wearables → AI semiconductors + Silicon Valley culture.
+        Goode's coverage shifted to Nvidia (Jensen Huang SIGGRAPH 2024, Vera Rubin Jan 2026), AMD (Lisa Su
+        profile Aug 2025, AI bubble interview Dec 2025), Intel (advanced chip packaging Apr 2026), Arm (CEO
+        interview Mar 2026). Also moderated HumanX 2026 panel with AMD CTO Mark Papermaster and Micron CBO
+        Sumit Sadana. This shift coincides precisely with Meta Ray-Ban glasses becoming WIRED's primary
+        investigative target (NameTag exposé Jun 2026), creating a de facto editorial lane split: Goode covers
+        the AI chip supply chain while Cameron/Mehrotra cover Meta hardware through surveillance framing.
+    cross_entity_asymmetry_score: 0.87
     asymmetry_notes: >
-      High asymmetry (0.82/1.0). Apple Vision Pro has 12 outward-facing cameras and 6 microphones — a far more capable
-      surveillance device than Meta's single 12MP camera — yet receives empathetic emotional framing ("I cried", "the view
-      is incredible") while Meta's camera glasses receive surveillance/privacy framing from WIRED as an institution. Snap
-      Spectacles are literally named "the face camera we've been waiting for" in Goode's video title — language that would
-      be unthinkable applied to Meta's glasses in WIRED's editorial frame. Key differentiator: Apple = personal experience
-      product, Snap = fun social device, Meta = surveillance infrastructure. Same hardware (cameras on face), different
-      narrative frame determined by manufacturer identity. Goode's personal coverage patterns instantiate this at the
-      individual journalist level.
+      High asymmetry (0.87/1.0, increased from 0.82 with new evidence). Apple Vision Pro has 12 outward-facing
+      cameras and 6 microphones — a far more capable surveillance device than Meta's single 12MP camera — yet
+      receives empathetic emotional framing ("I cried", "the view is incredible") while Meta's camera glasses
+      receive surveillance/privacy framing from WIRED as an institution. Snap Spectacles are literally named
+      "the face camera we've been waiting for" in Goode's video title — language that would be unthinkable
+      applied to Meta's glasses in WIRED's editorial frame. Key differentiator: Apple = personal experience
+      product, Snap = fun social device, Meta = surveillance infrastructure. Same hardware (cameras on face),
+      different narrative frame determined by manufacturer identity. Goode's personal coverage patterns
+      instantiate this at the individual journalist level. NEW EVIDENCE: (1) Meta Connect 2023 article shows
+      clinical/skeptical framing ("face-computing metaverse still hasn't gone mainstream") vs emotional Apple
+      framing 4 months later — within-journalist tone divergence confirmed. (2) Beat shift to AI semiconductors
+      (Nvidia, AMD, Intel, Arm) 2024-2026 coincides with Meta glasses becoming WIRED's investigative target.
+      (3) Executive access asymmetry: Goode has 1-on-1 access to Jensen Huang, Lisa Su, Rene Haas, Mike
+      Krieger (Anthropic), but ZERO with Meta leadership. (4) Google I/O 2026: playful tone toward Google's
+      Android XR glasses (cameras + Gemini AI) with zero surveillance language — further confirms manufacturer-
+      identity-dependent framing.
   source_urls:
   - https://clarku.edu/news/lauren-goode-03-stays-wired-to-the-tech-world/
   - https://allthingsd.com/20110824/introducing-lauren-goode/

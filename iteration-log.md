@@ -1,4 +1,58 @@
 # MediaScope Iteration Log
+## 2026-08-05 15:00 PT — Type A: Competitor Coverage Deep Dive — FT × Google Coverage Asymmetry
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+**Publication × Competitor:** Financial Times × Google
+**Focus:** Wearables privacy double standard, reporter assignment mechanism, regulatory vs coverage split
+
+### KEY FINDING: FT's Smart Glasses Privacy Double Standard
+
+FT treats Google/Samsung Android XR glasses (cameras, Gemini AI, always-on sensing) with product-technology framing but treats Meta's functionally identical single-camera glasses with surveillance/legal-threat framing:
+
+| Feature | Google/Samsung Android XR | Meta Ray-Ban |
+|---------|--------------------------|--------------|
+| Cameras | Yes (photo capture) | Yes (12MP camera) |
+| Always-on AI | Yes (Gemini integration) | Yes (Meta AI) |
+| Audio recording | Yes (microphones) | Yes (microphones) |
+| FT framing | "AI-powered eyewear," "hands-free control," "intelligent eyewear" | "wiretapping laws," "biometric data laws," "LED deactivation" |
+| FT surveillance terms | **0** | **6** |
+| FT reporter | Criddle/Acton/Morris (neutral) | Hannah Murphy (adversarial) |
+| Financial relationship | Google News AI pilot (FT receives) | None ($0) |
+
+### Reporter Assignment Asymmetry
+
+FT assigns different reporters to Google vs Meta, creating structural frame divergence:
+- **Hannah Murphy** (Meta beat, SF): adversarial/surveillance framing
+- **Cristina Criddle** (Google regulatory), **Michael Acton / Stephen Morris** (Google finance), **George Hammond** (Google M&A): neutral business framing
+
+None of the Google reporters apply surveillance language to Google's camera products, AI features, or data practices.
+
+### Regulatory vs Coverage Split (New Pattern)
+
+FT's adversarial Google posture is confined to **regulatory filings** (CMA response demanding granular AI content opt-in/out controls). FT's adversarial Meta posture appears in **published coverage** (surveillance language, privacy alarm, legal threat framing).
+
+This two-channel system may reflect editorial restraint toward a deal partner: keep the business relationship professional in public coverage while pursuing institutional interests through regulatory channels.
+
+### Capex Framing Asymmetry
+
+- Alphabet $4T market cap → "business milestone," positive
+- Alphabet $195-205B capex → "once in a lifetime opportunity," industry analysis
+- Meta capex → "big equity raising" (desperation), "equity cuts" (morale damage), "competitive deficit"
+
+### Tone Delta: Google -0.10 vs Meta -0.55 = **0.45 gap**
+
+### Files Changed
+1. `profiles/financial-times.yaml` — Added `google_coverage_analysis` section (reporters, smart glasses coverage, capex coverage, regulatory posture, asymmetry score, privacy coverage absence)
+2. `profiles/competitor-coverage-research.yaml` — Expanded FT Google coverage summary with smart glasses examples, capex framing, regulatory vs coverage split. Updated asymmetry verdict.
+3. `tests/test_ft_google_coverage_asymmetry.py` (NEW) — 25 tests across 6 classes (GoogleFinancialRelationship, ReporterAssignmentAsymmetry, SmartGlassesDoubleStandard, CapexFramingAsymmetry, RegulatoryVsCoverageSplit, FinancialPredictsTone)
+4. `README.md` — Test counts updated (3758/161), new test file entry
+5. `docs/ARCHITECTURE.md` — Test count updated (3758/161), new test file entry
+
+### Tests: 25 new passed, 0 regressions, 124 structural consistency tests all pass
+
+**Commit:** 82ff2e0 (pushed to GitHub)
+
+---
 ## 2026-08-05 14:00 PT — Type D: Test & Verify — Full Suite Validation + Cross-Publication Disclosure Audit + Narrative Coherence Tests
 
 **Rotation:** D (Test & Verify)
