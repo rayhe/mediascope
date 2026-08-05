@@ -67,8 +67,28 @@ def parse_ownership_chain(profile) -> OwnershipChain:
         else:
             chain_data = []
 
+    # Handle dict-format ownership_chain (e.g. {current: {...}, previous: [...]})
+    # by converting to a flat list of node dicts
+    if isinstance(chain_data, dict):
+        flat = []
+        current = chain_data.get("current")
+        if isinstance(current, dict):
+            if "name" not in current and "owner" in current:
+                current = dict(current, name=current["owner"])
+            flat.append(current)
+        previous = chain_data.get("previous", [])
+        if isinstance(previous, list):
+            for prev in previous:
+                if isinstance(prev, dict):
+                    if "name" not in prev and "owner" in prev:
+                        prev = dict(prev, name=prev["owner"])
+                    flat.append(prev)
+        chain_data = flat
+
     nodes: list[OwnershipNode] = []
     for node_data in chain_data:
+        if not isinstance(node_data, dict):
+            continue  # skip non-dict entries gracefully
         node = OwnershipNode(
             name=node_data.get("name", "Unknown"),
             entity_type=node_data.get("entity_type", "unknown"),

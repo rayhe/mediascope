@@ -308,43 +308,43 @@ insider_transactions:
       Retains 23,873 shares (~$1.79M at current price).
     last_updated: "2026-07-14"
 
-  # INSIDER PATTERN ANALYSIS (2026 YTD)
-  insider_pattern_analysis:
-    period: "2026-01-01 to 2026-07-14"
-    total_transactions: 9
-    total_shares_sold: 111333
-    total_value_sold: "$8,628,003"
-    total_shares_bought: 0
-    total_value_bought: "$0"
-    unique_sellers: 7
-    pattern: "ALL_SELL_ZERO_BUY"
-    description: >
-      ANALYTICAL SIGNIFICANCE: In 2026 YTD, 7 unique insiders (including CEO, Chairman,
-      CFO, General Counsel, CHRO, CAO, and a Director) executed 9 separate sell transactions
-      totaling $8.6M+ in shares sold, with ZERO insider purchases. Over the full 24-month
-      lookback, the pattern is identical: 84,324+ shares sold for $5.7M+ across 6 unique
-      sellers with zero buys (MarketBeat data, which may undercount the Simply Wall St
-      Levien/Brayton transactions).
+# INSIDER PATTERN ANALYSIS (2026 YTD)
+insider_pattern_analysis:
+  period: "2026-01-01 to 2026-07-14"
+  total_transactions: 9
+  total_shares_sold: 111333
+  total_value_sold: "$8,628,003"
+  total_shares_bought: 0
+  total_value_bought: "$0"
+  unique_sellers: 7
+  pattern: "ALL_SELL_ZERO_BUY"
+  description: >
+    ANALYTICAL SIGNIFICANCE: In 2026 YTD, 7 unique insiders (including CEO, Chairman,
+    CFO, General Counsel, CHRO, CAO, and a Director) executed 9 separate sell transactions
+    totaling $8.6M+ in shares sold, with ZERO insider purchases. Over the full 24-month
+    lookback, the pattern is identical: 84,324+ shares sold for $5.7M+ across 6 unique
+    sellers with zero buys (MarketBeat data, which may undercount the Simply Wall St
+    Levien/Brayton transactions).
 
-      This all-sell pattern has specific implications for MediaScope's conflict analysis:
-      (1) If NYT management believed the $28M+ OpenAI litigation would produce a massive
-          settlement or licensing windfall, rational insiders would at minimum HOLD shares.
-          The sell-through suggests management is NOT pricing in a transformative legal
-          outcome. This is consistent with rational expectations: copyright statutory damages
-          are modest per-infringement, and fair use remains a real defense.
-      (2) The Mar 3 coordinated sell window (Levien $4.15M + Sulzberger $1.04M + Bardeen
-          $1.03M = $6.22M in one day) occurred 2 days before the all-time high of $82.74
-          (Mar 5). Either excellent 10b5-1 timing or informed selling near the peak.
-      (3) The May 11-12 cluster (Perpich + Levien + Bardeen = $1.66M in 2 days) came
-          immediately after Q1 earnings beat — selling into good news rather than holding.
-      (4) Brayton (General Counsel) selling Feb 20 is notable given active litigation
-          oversight — she is the executive most directly informed about case prospects.
-      (5) Insiders own only 1.90% of Class A stock, so even collectively, insider
-          transactions are not market-moving. The signal is in the pattern, not the volume.
-    source_urls:
-      - "https://www.marketbeat.com/stocks/NYSE/NYT/insider-trades/"
-      - "https://simplywall.st/stocks/us/media/nyse-nyt/new-york-times/ownership"
-    last_updated: "2026-07-14"
+    This all-sell pattern has specific implications for MediaScope's conflict analysis:
+    (1) If NYT management believed the $28M+ OpenAI litigation would produce a massive
+        settlement or licensing windfall, rational insiders would at minimum HOLD shares.
+        The sell-through suggests management is NOT pricing in a transformative legal
+        outcome. This is consistent with rational expectations: copyright statutory damages
+        are modest per-infringement, and fair use remains a real defense.
+    (2) The Mar 3 coordinated sell window (Levien $4.15M + Sulzberger $1.04M + Bardeen
+        $1.03M = $6.22M in one day) occurred 2 days before the all-time high of $82.74
+        (Mar 5). Either excellent 10b5-1 timing or informed selling near the peak.
+    (3) The May 11-12 cluster (Perpich + Levien + Bardeen = $1.66M in 2 days) came
+        immediately after Q1 earnings beat — selling into good news rather than holding.
+    (4) Brayton (General Counsel) selling Feb 20 is notable given active litigation
+        oversight — she is the executive most directly informed about case prospects.
+    (5) Insiders own only 1.90% of Class A stock, so even collectively, insider
+        transactions are not market-moving. The signal is in the pattern, not the volume.
+  source_urls:
+    - "https://www.marketbeat.com/stocks/NYSE/NYT/insider-trades/"
+    - "https://simplywall.st/stocks/us/media/nyse-nyt/new-york-times/ownership"
+  last_updated: "2026-07-14"
 
 # ===================================================================
 # LEGAL COUNSEL CROSS-REPRESENTATION — new section, 2026-07-10

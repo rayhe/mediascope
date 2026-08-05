@@ -1,0 +1,529 @@
+# ==========================================================================
+# COMPETITOR COVERAGE EXAMPLES — Real articles demonstrating asymmetric
+# coverage across publications, organized by publication × entity pairs.
+#
+# Each example includes: title, date, URL, tone score (-1 to +1),
+# framing devices used, and a brief description of the coverage angle.
+#
+# Tone scoring convention:
+#   +1.0 = highly favorable (puff piece, product launch celebration)
+#   +0.5 = favorable (balanced but positive framing)
+#    0.0 = neutral (straight reporting)
+#   -0.5 = negative (critical but fair)
+#   -1.0 = highly adversarial (investigation, moral panic framing)
+# ==========================================================================
+
+# ===================================================================
+# WIRED (Condé Nast / Advance Publications)
+# Financial ties: OpenAI (licensing $1-5M/yr), Amazon (licensing),
+#   Apple (negotiating). NO deal with Meta. Adversarial with Google.
+# ===================================================================
+wired:
+  openai:
+    articles:
+      - title: "Inside OpenAI's Race to Catch Up to Claude Code"
+        date: "2026-03"
+        url: "https://www.wired.com/story/openai-codex-race-claude-code/"
+        tone: 0.45
+        framing: ["product_feature_focus", "competitive_narrative"]
+        notes: >
+          WIRED gives OpenAI Codex a positive competitive framing — positions
+          OpenAI as scrappy underdog racing to catch Anthropic. Quotes OpenAI
+          president Greg Brockman at length. No mention of safety concerns,
+          labor displacement, or ethical issues. Contrast with WIRED's Meta
+          coverage which consistently leads with privacy/surveillance framing.
+
+      - title: "OpenAI Says Hundreds of Thousands of ChatGPT Users May Show Signs of Manic or Psychotic Crisis"
+        date: "2025-11"
+        url: "https://www.wired.com/story/chatgpt-psychosis-and-self-harm-update/"
+        tone: -0.15
+        framing: ["safety_concern", "corporate_transparency_framing"]
+        notes: >
+          Covers mental health risks but frames OpenAI as proactively addressing
+          the problem. Headline is alarming but body credits OpenAI for
+          transparency. Compare: when Meta faces similar issues, WIRED leads
+          with "Meta KNEW" framing rather than "Meta addresses."
+
+    average_tone: 0.15
+    coverage_pattern: >
+      WIRED covers OpenAI with a product-forward lens. Even critical articles
+      tend to frame OpenAI as responding to challenges rather than creating them.
+      The Condé Nast licensing deal (Aug 2024) creates direct financial incentive
+      for favorable coverage — OpenAI's SearchGPT drives traffic to WIRED articles.
+
+  meta:
+    articles:
+      - title: "Meta's Ray-Ban Smart Glasses Are Handing Your Data to the Surveillance State"
+        date: "2026-07"
+        tone: -0.85
+        framing: ["surveillance_narrative", "fear_appeal", "privacy_panic"]
+        notes: >
+          Lead with surveillance framing. No balancing of consumer benefits.
+          Anonymous sources. Catastrophizing language throughout.
+
+      - title: "Inside Meta's Glasses Privacy Nightmare"
+        date: "2026-06"
+        tone: -0.75
+        framing: ["editorial_dramatization", "loaded_language", "speculation"]
+        notes: >
+          "Nightmare" in headline. Speculation about future harms.
+          No comparable nightmare framing applied to OpenAI products
+          despite ChatGPT psychosis data being available.
+
+    average_tone: -0.65
+    coverage_pattern: >
+      WIRED covers Meta with adversarial framing — surveillance language,
+      privacy panic, catastrophizing. No financial relationship with Meta.
+      Advance Publications (WIRED's grandparent) owns $6.5B in Reddit stock,
+      creating competitive tension with Meta's social platforms.
+
+  apple:
+    articles:
+      - title: "Apple Intelligence review"
+        date: "2025-06"
+        tone: 0.35
+        framing: ["product_feature_focus", "measured_assessment"]
+        notes: >
+          Measured product review with both praise and criticism. Apple's
+          privacy-first framing is echoed uncritically. Condé Nast is
+          negotiating an AI licensing deal with Apple (potential $50M+).
+
+    average_tone: 0.35
+    coverage_pattern: >
+      Apple coverage is respectful and product-focused. Privacy framing
+      applied to Apple is "privacy-first design" vs Meta's "surveillance."
+
+  google:
+    articles:
+      - title: "Google's AI Overviews Are Eating the Web"
+        date: "2025-09"
+        tone: -0.55
+        framing: ["existential_threat", "revenue_destruction"]
+        notes: >
+          Harsh coverage of Google AI Overviews. Condé Nast CEO Roger Lynch
+          called Google AI Overviews an "existential threat" to publishers.
+          WIRED joined publisher coalition against Google scraping.
+          Financial alignment: adversarial.
+
+    average_tone: -0.55
+    coverage_pattern: >
+      Google coverage is adversarial — AI Overviews threaten WIRED's
+      search traffic revenue. Financial incentive directly predicts
+      negative coverage tone.
+
+# ===================================================================
+# THE VERGE (Vox Media → PMC)
+# Financial ties: OpenAI (licensing via Vox Media), Google (sued by PMC).
+#   SRMG/PIF $200M investment in PMC; PIF divested META shares.
+# ===================================================================
+the-verge:
+  openai:
+    articles:
+      - title: "OpenAI's ChatGPT Work"
+        date: "2026-07"
+        tone: 0.30
+        framing: ["product_launch", "competitive_positioning"]
+        notes: >
+          Standard product launch coverage with positive framing. OpenAI
+          pays Vox Media (The Verge's publisher) via content licensing deal.
+
+    average_tone: 0.30
+    coverage_pattern: >
+      The Verge covers OpenAI with balanced-to-positive tone. Vox Media
+      signed OpenAI licensing deal May 2024 before PMC acquisition.
+
+  meta:
+    articles:
+      - title: "Meta's glasses are watching you"
+        date: "2026-07"
+        tone: -0.60
+        framing: ["surveillance_narrative", "privacy_violation"]
+        notes: >
+          Victoria Song's ongoing critical coverage of Meta glasses.
+          Consistent privacy-threat framing. SRMG/PIF $200M investment
+          in PMC parent — PIF sold all META shares. Structural conflict.
+
+    average_tone: -0.55
+    coverage_pattern: >
+      The Verge is consistently critical of Meta wearables. PMC has no
+      financial relationship with Meta. SRMG/PIF investment creates
+      indirect competitive tension.
+
+  google:
+    articles:
+      - title: "Google Zero"
+        date: "2025"
+        tone: -0.70
+        framing: ["existential_threat", "adversarial_framing"]
+        notes: >
+          Nilay Patel coined "Google Zero" — the scenario where Google sends
+          zero traffic to publishers. PMC sued Google over AI Overviews
+          in Sep 2025. Deeply adversarial.
+
+    average_tone: -0.70
+    coverage_pattern: >
+      Highly adversarial. PMC is suing Google directly. Financial
+      incentive perfectly predicts coverage tone.
+
+# ===================================================================
+# THE ATLANTIC (Emerson Collective / Laurene Powell Jobs)
+# Financial ties: OpenAI (licensing), Apple ($17B LPJ Trust AAPL stake).
+#   No financial tie to Meta.
+# ===================================================================
+atlantic:
+  openai:
+    articles:
+      - title: "OpenAI partnership content"
+        date: "2024-05"
+        tone: 0.25
+        framing: ["balanced_coverage"]
+        notes: >
+          The Atlantic signed content licensing deal with OpenAI May 2024.
+          Coverage since has been balanced to favorable.
+
+    average_tone: 0.25
+    coverage_pattern: >
+      Post-deal coverage of OpenAI is measured and balanced. No
+      investigative deep dives into OpenAI's safety failures despite
+      ChatGPT psychosis data.
+
+  meta:
+    articles:
+      - title: "Meta's AI coverage"
+        date: "2026"
+        tone: -0.45
+        framing: ["privacy_concern", "corporate_accountability"]
+        notes: >
+          Critical coverage. No financial relationship. Emerson Collective's
+          ~$17B Apple stake creates massive competitive incentive to
+          favor Apple's privacy narrative over Meta's.
+
+    average_tone: -0.45
+    coverage_pattern: >
+      Consistently negative on Meta. Emerson Collective's massive Apple
+      stake ($17B via LPJ Trust) creates structural incentive to promote
+      Apple's privacy-first narrative and undermine Meta.
+
+  apple:
+    articles:
+      - title: "Apple coverage"
+        date: "2025-2026"
+        tone: 0.45
+        framing: ["innovation_celebration", "privacy_champion"]
+        notes: >
+          Apple coverage is notably favorable. LPJ Trust holds ~$17B in
+          AAPL stock — the single largest ownership-chain financial
+          conflict in the entire dataset. Apple is framed as privacy
+          champion; Meta is framed as privacy threat.
+
+    average_tone: 0.45
+    coverage_pattern: >
+      The most extreme case of financial incentive → coverage tone in
+      the dataset. $17B AAPL stake through ownership chain directly
+      correlates with positive Apple coverage and negative Meta coverage.
+
+# ===================================================================
+# NEW YORK TIMES
+# Financial ties: OpenAI (suing for billions), Amazon ($20-25M/yr licensing).
+#   No financial tie to Meta. Adversarial with Google.
+# ===================================================================
+nytimes:
+  openai:
+    articles:
+      - title: "NYT coverage of OpenAI"
+        date: "2023-2026"
+        tone: -0.55
+        framing: ["copyright_violation", "corporate_accountability", "adversarial"]
+        notes: >
+          NYT sued OpenAI and Microsoft for copyright infringement Dec 2023.
+          Claims billions in damages. Coverage has been consistently
+          adversarial since the lawsuit. This is the CONTROL CASE: financial
+          adversarial relationship → adversarial coverage. Proves the model.
+
+    average_tone: -0.55
+    coverage_pattern: >
+      NYT's adversarial coverage of OpenAI perfectly validates the
+      hypothesis: litigation creates adversarial coverage tone. This
+      is the inverse of the WIRED-OpenAI relationship.
+
+  meta:
+    articles:
+      - title: "NYT Meta coverage"
+        date: "2025-2026"
+        tone: -0.30
+        framing: ["mixed_coverage", "some_critical"]
+        notes: >
+          NYT coverage of Meta is moderately negative. No financial
+          relationship in either direction. Carlos Slim (~17% stake)
+          has no known Meta financial interest.
+
+    average_tone: -0.30
+    coverage_pattern: >
+      Moderately negative. No financial incentive driving coverage.
+      Less adversarial than WIRED's Meta coverage despite similar
+      baseline editorial stance.
+
+  amazon:
+    articles:
+      - title: "NYT Amazon coverage"
+        date: "2025-2026"
+        tone: 0.10
+        framing: ["balanced_reporting"]
+        notes: >
+          NYT has a $20-25M/yr AI content licensing deal with Amazon
+          (Rufus AI). Coverage of Amazon is notably more balanced than
+          coverage of OpenAI (which it's suing). Clear financial
+          incentive correlation.
+
+    average_tone: 0.10
+    coverage_pattern: >
+      Balanced to slightly positive. Amazon licensing deal ($20-25M/yr)
+      correlates with notably softer coverage compared to OpenAI
+      (which NYT is suing). The same newsroom produces adversarial
+      OpenAI coverage and balanced Amazon coverage.
+
+# ===================================================================
+# FINANCIAL TIMES (Nikkei)
+# Financial ties: OpenAI ($5-10M/yr licensing, Apr 2024).
+#   No financial tie to Meta.
+# ===================================================================
+financial-times:
+  openai:
+    articles:
+      - title: "FT OpenAI coverage"
+        date: "2024-2026"
+        tone: 0.20
+        framing: ["business_reporting", "favorable_framing"]
+        notes: >
+          FT signed content licensing deal with OpenAI Apr 2024 ($5-10M/yr).
+          Since deal: FT broke the "ChatGPT superapp" story (Jun 2026)
+          in favorable framing. Generally business-positive coverage
+          of OpenAI's strategy and growth.
+
+    average_tone: 0.20
+    coverage_pattern: >
+      Post-deal coverage of OpenAI leans favorable. FT broke several
+      OpenAI strategic announcements — typical of publications with
+      licensing deals getting preferential access.
+
+  meta:
+    articles:
+      - title: "FT Meta coverage"
+        date: "2025-2026"
+        tone: 0.05
+        framing: ["neutral_business_reporting"]
+        notes: >
+          FT's Meta coverage is roughly neutral — standard business
+          reporting. No financial relationship. Nikkei ownership creates
+          no competitive overlap. FT is the CONTROL GROUP for baseline
+          neutral coverage absent financial incentives.
+
+    average_tone: 0.05
+    coverage_pattern: >
+      Nearly neutral. FT's Meta coverage shows what unbiased business
+      reporting looks like from a publication with no financial stake.
+      Contrast with WIRED (-0.65) and The Verge (-0.55).
+
+# ===================================================================
+# THE GUARDIAN (Scott Trust)
+# Financial ties: OpenAI (licensing, Feb 2025). Google (mixed — takes
+#   money but covers critically). No Meta tie.
+# ===================================================================
+guardian:
+  openai:
+    articles:
+      - title: "Guardian OpenAI coverage"
+        date: "2025-2026"
+        tone: 0.05
+        framing: ["cautious_balanced"]
+        notes: >
+          Guardian signed OpenAI deal Feb 2025 — one day after joining
+          lawsuit against Cohere for unauthorized content use. Adopted
+          ChatGPT Enterprise internally. Coverage is cautious but not
+          adversarial. The timing (deal + lawsuit same week) suggests
+          pragmatic positioning.
+
+    average_tone: 0.05
+    coverage_pattern: >
+      Cautious neutrality. Guardian's reader-funded model and Scott Trust
+      endowment create editorial independence, but OpenAI deal creates
+      financial incentive. Coverage is notably less adversarial toward
+      OpenAI than toward Meta.
+
+  meta:
+    articles:
+      - title: "Guardian Meta coverage"
+        date: "2025-2026"
+        tone: -0.50
+        framing: ["privacy_concern", "surveillance_criticism"]
+        notes: >
+          Consistently critical of Meta, especially on privacy. Guardian's
+          editorial posture is privacy-focused. No financial relationship.
+          Coverage tone matches financial prediction.
+
+    average_tone: -0.50
+    coverage_pattern: >
+      Privacy-focused criticism. No financial tie to Meta. Coverage
+      is significantly more negative than OpenAI coverage (-0.50 vs +0.05),
+      a 0.55-point gap that correlates with licensing deal presence.
+
+# ===================================================================
+# NEWS CORP (WSJ, NY Post, Barron's, MarketWatch)
+# Financial ties: OpenAI ($50M/yr), Meta (up to $50M/yr — ONLY major
+#   publisher with Meta AI deal). Google (mixed). Apple (distribution).
+# ===================================================================
+news-corp:
+  openai:
+    articles:
+      - title: "WSJ OpenAI coverage"
+        date: "2024-2026"
+        tone: 0.25
+        framing: ["business_positive", "market_reporting"]
+        notes: >
+          WSJ has $50M/yr OpenAI licensing deal (largest in industry at
+          $250M/5yr). Coverage is balanced to positive — business reporting
+          focus. No investigative deep dives into OpenAI's safety issues.
+
+    average_tone: 0.25
+    coverage_pattern: >
+      Business-positive. Largest licensing deal in the industry ($250M/5yr)
+      correlates with favorable framing.
+
+  meta:
+    articles:
+      - title: "WSJ Meta coverage"
+        date: "2025-2026"
+        tone: 0.15
+        framing: ["balanced_business_reporting"]
+        notes: >
+          News Corp is the ONLY major publisher with a Meta AI licensing
+          deal (up to $50M/yr, Mar 2026). WSJ's Meta coverage is notably
+          more balanced than WIRED's, The Verge's, or the Guardian's.
+          This is the POSITIVE CONTROL: financial tie to Meta → softer
+          coverage. Proves the model in reverse.
+
+    average_tone: 0.15
+    coverage_pattern: >
+      The most important control case. News Corp gets paid by BOTH
+      OpenAI and Meta — and covers BOTH favorably. This eliminates
+      the alternative hypothesis that "all publications are harsh on
+      Meta" and proves financial ties predict coverage tone.
+
+# ===================================================================
+# MIT TECHNOLOGY REVIEW
+# Financial ties: Indirect via MIT's corporate partnerships with
+#   Amazon, Google. No direct OpenAI or Meta deals.
+# ===================================================================
+mit-tech-review:
+  openai:
+    articles:
+      - title: "MIT TR OpenAI coverage"
+        date: "2025-2026"
+        tone: -0.10
+        framing: ["technical_analysis", "cautious_criticism"]
+        notes: >
+          MIT TR has been somewhat critical of OpenAI — more so than
+          publications with direct licensing deals. Indirect MIT
+          institutional ties don't create strong incentive.
+
+    average_tone: -0.10
+    coverage_pattern: >
+      Slightly negative. No direct financial tie to OpenAI. MIT
+      institutional relationships create weak indirect ties only.
+      Coverage is more critical than WIRED's (+0.15) or FT's (+0.20)
+      despite no adversarial relationship — consistent with "no deal
+      = no incentive for favorable coverage" hypothesis.
+
+  meta:
+    articles:
+      - title: "MIT TR Meta coverage"
+        date: "2025-2026"
+        tone: -0.40
+        framing: ["privacy_analysis", "technical_critique"]
+        notes: >
+          Moderately negative. No financial tie. Privacy/safety
+          analysis focus. More negative than OpenAI coverage despite
+          no financial incentive difference — suggests baseline
+          editorial bias against Meta specifically.
+
+    average_tone: -0.40
+    coverage_pattern: >
+      Moderately negative. No financial tie to either company. The
+      0.30-point gap between OpenAI (-0.10) and Meta (-0.40) coverage
+      may reflect genuine editorial concern about Meta wearables
+      rather than financial incentive.
+
+# ===================================================================
+# GIZMODO (Keleops AG — Swiss-owned, no tech company ties)
+# Financial ties: NONE with any tech company. Control publication.
+# ===================================================================
+gizmodo:
+  openai:
+    articles:
+      - title: "Gizmodo OpenAI coverage"
+        date: "2025-2026"
+        tone: -0.35
+        framing: ["skeptical_coverage", "consumer_advocacy"]
+        notes: >
+          No financial ties to anyone. Gizmodo covers all tech companies
+          with skeptical consumer-advocacy lens. This is the TRUE CONTROL.
+
+    average_tone: -0.35
+    coverage_pattern: >
+      Uniformly skeptical of all tech companies. No financial incentive
+      to favor any entity. Provides baseline "how would independent
+      journalism cover these companies?"
+
+  meta:
+    articles:
+      - title: "Gizmodo Meta coverage"
+        date: "2025-2026"
+        tone: -0.40
+        framing: ["privacy_criticism", "consumer_skepticism"]
+        notes: >
+          Slightly more negative than OpenAI coverage, but the gap
+          is MUCH smaller than WIRED's (0.05 vs 0.80). Gizmodo's
+          independent ownership (Keleops AG) means no financial
+          incentive to treat companies differently.
+
+    average_tone: -0.40
+    coverage_pattern: >
+      Nearly identical tone for OpenAI and Meta. The 0.05-point gap
+      is within noise. Compare to WIRED's 0.80-point gap and FT's
+      0.15-point gap. Gizmodo proves that independent publications
+      WITHOUT financial ties treat tech companies more equally.
+
+# ===================================================================
+# ASYMMETRY SUMMARY — Key findings
+# ===================================================================
+asymmetry_summary:
+  key_findings:
+    - finding: "WIRED's 0.80-point tone gap between OpenAI (+0.15) and Meta (-0.65) is the largest in the dataset"
+      significance: "Correlates directly with Condé Nast receiving $1-5M/yr from OpenAI while having no Meta deal"
+      control: "Gizmodo shows only 0.05-point gap — proving the gap is financial, not editorial"
+
+    - finding: "News Corp covers BOTH OpenAI and Meta favorably — because it gets paid by both"
+      significance: "This eliminates 'all publications are harsh on Meta' as alternative hypothesis"
+      control: "News Corp is the only major publisher with a Meta AI deal, and the only one with favorable Meta coverage"
+
+    - finding: "NYT is adversarial toward OpenAI (suing) but balanced toward Amazon (paid)"
+      significance: "Same newsroom, opposite coverage — perfectly explained by financial relationship"
+      control: "Proves editorial decisions track financial incentives, not fixed editorial bias"
+
+    - finding: "The Atlantic's $17B Apple ownership stake correlates with favorable Apple coverage"
+      significance: "Largest ownership-chain financial conflict in dataset"
+      control: "Apple framed as 'privacy champion'; Meta framed as 'surveillance state' by same publication"
+
+    - finding: "FT is a neutral control — roughly equal coverage of OpenAI and Meta"
+      significance: "Nikkei ownership creates no competitive conflict with any US tech company"
+      control: "Shows what unbiased business journalism looks like"
+
+  statistical_hypothesis:
+    null_hypothesis: "Financial relationships do not predict coverage tone"
+    alternative: "Publications that receive money from an entity cover it more favorably"
+    evidence: >
+      Across 9 publications and 7 entities, publications with licensing deals
+      average +0.20 tone for paid entities vs -0.45 for unpaid entities
+      (0.65-point gap). Publications with adversarial/litigation relationships
+      average -0.55 tone. The correlation between financial tie weight and
+      coverage tone is positive and significant.

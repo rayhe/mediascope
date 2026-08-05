@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 3142 tests across 142 test files (all from real articles)
+├── tests/                       # 3175 tests across 143 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -503,6 +503,7 @@ mediascope/
 │   ├── test_platform_death.py   # Platform eulogy detection, tone distinction
 │   ├── test_policy_reversal_competitive_deficit.py # Policy reversal and competitive deficit framing device detection, documentary source extraction
 │   ├── test_competitive_displacement.py # Competitive displacement framing device (new — fills-vacuum temporal conjunction), entity cluster additions: AI Research Orgs (AI2), HuggingFace, Princeton, plus OpenAI cluster expansions (GPT-2, gpt-oss, Miles Brundage)
+│   ├── test_competitor_coverage.py # Competitor entity definitions, publication competitor_relationships validation, financial asymmetry patterns, source URL verification
 │   ├── test_privacy_affiliation_fixes.py # Privacy/data topic MCI keyword expansion, source affiliation case-sensitivity
 │   ├── test_quality_standards.py # Quality enforcement: banned phrases, em dashes, scoring, zero-named-sources detection
 │   ├── test_scale_magnitude.py  # Scale/magnitude framing, raw number amplification

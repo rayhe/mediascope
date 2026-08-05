@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 3,142 | Across 142 test files |
+| Tests | 3,175 | Across 143 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **3142 tests** across 142 test files, each covering a different analytical capability:
+MediaScope has **3175 tests** across 143 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -485,6 +485,7 @@ MediaScope has **3142 tests** across 142 test files, each covering a different a
 | `test_platform_death.py` | 30 | Platform eulogy detection, melancholic vs hostile tone distinction, community source framing |
 | `test_policy_reversal_competitive_deficit.py` | 26 | Policy reversal and competitive deficit framing device detection, documentary source type extraction |
 | `test_competitive_displacement.py` | 19 | Competitive displacement framing device (fills-vacuum temporal conjunction), entity cluster additions: AI Research Orgs (AI2), HuggingFace, Princeton, OpenAI cluster expansions (GPT-2, gpt-oss, Miles Brundage) |
+| `test_competitor_coverage.py` | 33 | Competitor entity definitions, publication competitor_relationships validation, financial asymmetry pattern tests (licensing→softer, adversarial→adversarial), source URL verification for licensing/investment ties, coverage research file structure |
 | `test_privacy_affiliation_fixes.py` | 14 | Privacy/data topic keyword expansion (MCI/employee-surveillance language: opt-in/out, sensitive data, employee tracking, mouse-tracking, keystroke, screen scraping), source affiliation case-sensitivity fix (capitalized titles: Chief Executive, Chief Technology Officer, Vice President) |
 | `test_quality_standards.py` | 49 | Quality enforcement: banned AI-slop phrase detection (25 phrases, case-sensitive/insensitive), em dash limit enforcement, counterargument/limitations/methodology signal detection, score calculation, pass/fail logic, zero-named-sources detection (attribution pattern coverage, score penalty, organizational attribution exclusion) |
 | `test_citations.py` | 39 | Citation extraction: URL detection, source grading (primary/secondary/tertiary domain lists), domain extraction, attribution patterns ("according to"), formal citations ([1], (Author 2024)), deduplication, citation report statistics |
