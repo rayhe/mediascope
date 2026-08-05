@@ -1,4 +1,74 @@
 # MediaScope Iteration Log
+## 2026-08-05 07:00 PT — Type B: Hannah Murphy (FT) Cross-Entity Coverage Analysis
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Focus:** Hannah Murphy's coverage of Meta vs Snap, TikTok, X/Twitter, Pinterest — does the same reporter apply different editorial standards to different companies for the same product category?
+
+### Key Finding: Within-Reporter Asymmetry — Same Reporter, Different Standards for Same Product Category
+
+Hannah Murphy covers multiple social media companies (Meta, Snap, TikTok, X/Twitter, Pinterest), not just Meta. Within her own coverage portfolio, she applies DIFFERENT editorial standards to Meta versus comparable companies for the SAME product category (AR glasses with cameras).
+
+**Diagnostic Comparison — AR Glasses:**
+| Dimension | Meta Glasses (Murphy, Jul 2026) | Snap Spectacles (Murphy, Oct 2024) |
+|-----------|-------------------------------|-----------------------------------|
+| Framing | adversarial_surveillance | constructive_business |
+| Privacy language | "wiretapping laws," "biometric data laws," "civil liberties," "LED deactivation" | NONE — zero surveillance terms |
+| Business language | minimal | "divisive bet," "efforts to revive" |
+| Surveillance term count | 6 | 0 |
+
+**Murphy's Full Coverage Portfolio Analyzed:**
+| Entity | Article Count | Predominant Framing |
+|--------|--------------|-------------------|
+| Meta | 7 | Adversarial/surveillance (glasses, equity cuts, Oversight Board), with some neutral (Muse Spark, agentic tools) |
+| Snap | 4 | Constructive/neutral business |
+| TikTok | 1 | Neutral political |
+| X/Twitter | 3 | Mixed (IBM adversarial toward X; Yaccarino profile neutral) |
+| Pinterest | 1 | Constructive interview |
+| Industry | 1 | Neutral trend |
+| Crypto/VC | 1 | Neutral business |
+
+**Entities NOT covered by Murphy:** OpenAI, Anthropic, Apple, Google — handled by Murgia (AI Editor) and Hammond (deals/M&A). This means the full FT cross-entity picture combines within-reporter analysis (Murphy: Meta vs Snap) with between-reporter analysis (Murphy vs Murgia/Hammond on OpenAI).
+
+### Three-Publication Lane Assignment Taxonomy (now complete)
+
+| Publication | Mechanism | Level | How It Works |
+|-------------|-----------|-------|-------------|
+| WIRED | Editorial desk assignment | Desk-level | Product desk (Goode) for Apple/Snap; Investigative desk (Cameron, Mehrotra) for Meta |
+| NYT | Reporter assignment | Between-reporter | Adversarial beat (Isaac→Tan) for Meta; Tech-progress (Metz) for OpenAI/Anthropic |
+| FT | Within-reporter asymmetry | Within-reporter | Same reporter (Murphy) applies surveillance framing to Meta, business framing to Snap — for same product category |
+
+**FT is the strongest evidence** because it controls for reporter identity, product category, AND publication simultaneously. The only variable is company identity.
+
+### Additional Journalist Profiles Added
+- **Madhumita Murgia:** FT AI Editor, covers AI broadly (OpenAI, Anthropic, DeepSeek). Meta coverage is neutral/business; OpenAI coverage is constructive. Author of 'Code Dependent.'
+- **George Hammond:** FT deals/M&A reporter. Business-reporting tone, no company-specific adversarial posture.
+
+### Files Changed
+1. `profiles/financial-times.yaml` — Murphy: full cross_entity_coverage_analysis with 7 Meta articles, 4 Snap articles, 6 other-entity articles, diagnostic AR glasses comparison, overall classification. Added Murgia and Hammond journalist profiles.
+2. `tests/test_hannah_murphy_cross_entity.py` (NEW) — 35 tests across 8 classes
+3. `docs/ARCHITECTURE.md` — Added test listing; count 3497/152
+4. `README.md` — Test table entry + count updates (3497/152)
+
+### Sources Used
+- Techmeme: Meta glasses (https://www.techmeme.com/260708/p2)
+- Techmeme: Snap AR bet (http://www.techmeme.com/241028/p32)
+- Techmeme: Snap hiring (https://www.techmeme.com/220721/p33)
+- Techmeme: Meta equity cuts (https://www.techmeme.com/260219/p43)
+- Techmeme: Meta Oversight Board (https://www.techmeme.com/250221/p1)
+- Techmeme: Pinterest CEO Q&A (https://www.techmeme.com/240201/p7)
+- Techmeme: IBM suspends X ads (https://www.techmeme.com/231116/p47)
+- Techmeme: Wang/Muse Spark (https://www.techmeme.com/260603/p1)
+- Techmeme: Meta agentic tools (https://www.techmeme.com/260505/p42)
+- Techmeme: Snap CFO (https://www.techmeme.com/190520/p36)
+- Techmeme: Snap NFT AR (https://www.techmeme.com/220713/p3)
+- Muck Rack: Hannah Murphy (https://muckrack.com/hannah-murphy)
+- Wikipedia: Madhumita Murgia (https://en.wikipedia.org/wiki/Madhumita_Murgia)
+
+### Tests: 35 passed, 0 failed (+ 255 core regression passed)
+
+**Commit:** 8f708e5 (pushed to GitHub)
+
+---
 ## 2026-08-05 06:00 PT — Type A: FT OpenAI vs Meta Always-On Device Dual Standard
 
 **Rotation:** A (Competitor Coverage Deep Dive)
