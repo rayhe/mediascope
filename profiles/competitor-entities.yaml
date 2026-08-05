@@ -91,3 +91,143 @@ coverage_predictions:
   neutral: "No financial incentive to bias coverage in either direction"
   adversarial: "Financial incentive or absence thereof predicts harsher coverage"
   unknown: "Insufficient data to predict coverage tone"
+
+# ===================================================================
+# META AI CONTENT DEAL LANDSCAPE — Complete Reference
+# Last verified: 2026-08-05
+# Sources: Reuters, WSJ, Press Gazette, Digiday, Engadget, Axios
+# ===================================================================
+meta_ai_deals:
+  overview: |
+    Meta entered the AI content licensing market with Reuters (Oct 2024),
+    then signed 8 publishers in Dec 2025, and expanded internationally
+    in Mar 2026 (4 more, including News Corp at $50M/yr). As of Aug 2026,
+    Meta has 13 known AI content partners. CRITICALLY, none of the 7
+    publications profiled in MediaScope (WIRED, The Verge, The Atlantic,
+    NYT, FT, Guardian, MIT Tech Review) have Meta deals. Only News Corp
+    (WSJ, NY Post, Barron's) — profiled as a control — has a Meta deal.
+  partners:
+    - name: "Reuters"
+      parent: "Thomson Reuters"
+      date: "2024-10-25"
+      terms: "multi-year, undisclosed value"
+      scope: "news content for Meta AI chatbot, real-time news responses"
+      source_url: "https://siliconangle.com/2024/10/25/meta-inks-multiyear-ai-content-licensing-deal-reuters/"
+      notes: "Meta's FIRST publisher AI deal. Also fact-checking partner since 2020."
+    - name: "CNN"
+      parent: "Warner Bros. Discovery"
+      date: "2025-12-05"
+      terms: "multi-year, undisclosed"
+      scope: "real-time news for Meta AI"
+      source_url: "https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/"
+    - name: "Fox News"
+      parent: "Fox Corporation"
+      date: "2025-12-05"
+      terms: "multi-year, undisclosed"
+      scope: "real-time news for Meta AI"
+      source_url: "https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/"
+    - name: "Fox Sports"
+      parent: "Fox Corporation"
+      date: "2025-12-05"
+      terms: "multi-year, undisclosed"
+      scope: "sports content for Meta AI"
+      source_url: "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+    - name: "People Inc (Dotdash Meredith)"
+      parent: "IAC"
+      date: "2025-12-05"
+      terms: "multi-year, undisclosed"
+      scope: "entertainment/lifestyle content for Meta AI"
+      source_url: "https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/"
+      notes: "Also has OpenAI and Microsoft PCM deals."
+    - name: "USA Today / USA Today Network"
+      parent: "Gannett / USA Today Co."
+      date: "2025-12-05"
+      terms: "multi-year, undisclosed"
+      scope: "news + 200+ regional publications for Meta AI"
+      source_url: "https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/"
+      notes: "Also has Perplexity, Microsoft PCM deals."
+    - name: "Le Monde Group"
+      parent: "Le Monde Group"
+      date: "2025-12-05"
+      terms: "multi-year, undisclosed"
+      scope: "French-language news for Meta AI"
+      source_url: "https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/"
+    - name: "The Daily Caller"
+      parent: "The Daily Caller"
+      date: "2025-12-05"
+      terms: "multi-year, undisclosed"
+      scope: "news content for Meta AI"
+      source_url: "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+    - name: "Washington Examiner"
+      parent: "MediaDC"
+      date: "2025-12-05"
+      terms: "multi-year, undisclosed"
+      scope: "news content for Meta AI"
+      source_url: "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+      notes: "Also in Google's News AI pilot program."
+    - name: "News Corp"
+      parent: "News Corp"
+      date: "2026-03-04"
+      terms: "3+ years, up to $50M/yr"
+      scope: "WSJ, NY Post, Barron's, MarketWatch, The Times, The Sun — US/UK content for AI training + retrieval"
+      source_url: "https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244"
+      notes: "Largest disclosed Meta AI deal. Also has OpenAI deal ($250M/5yr)."
+    - name: "Le Figaro"
+      parent: "Groupe Dassault"
+      date: "2026-03"
+      terms: "undisclosed"
+      scope: "French-language news for Meta AI"
+      source_url: "https://www.thekeyword.co/news/meta-ai-news-publisher-partnerships"
+    - name: "Prisa"
+      parent: "Prisa Group"
+      date: "2026-03"
+      terms: "undisclosed"
+      scope: "Spanish-language news for Meta AI"
+      source_url: "https://www.thekeyword.co/news/meta-ai-news-publisher-partnerships"
+    - name: "Süddeutsche Zeitung"
+      parent: "Süddeutsche Zeitung GmbH"
+      date: "2026-03"
+      terms: "undisclosed"
+      scope: "German-language news for Meta AI"
+      source_url: "https://www.thekeyword.co/news/meta-ai-news-publisher-partnerships"
+  excluded_publishers:
+    - name: "Condé Nast (WIRED, Vogue, New Yorker, GQ, Vanity Fair, Ars Technica)"
+      deals_with_competitors: ["OpenAI", "Amazon", "Microsoft PCM", "Perplexity", "Apple (negotiating)"]
+      meta_deal: "none"
+    - name: "Vox Media / PMC (The Verge, Eater, SB Nation)"
+      deals_with_competitors: ["OpenAI", "Microsoft PCM"]
+      meta_deal: "none"
+    - name: "Emerson Collective (The Atlantic)"
+      deals_with_competitors: ["OpenAI"]
+      meta_deal: "none"
+    - name: "The New York Times Company"
+      deals_with_competitors: ["Amazon ($20-25M/yr)"]
+      meta_deal: "none"
+      notes: "Suing OpenAI for billions."
+    - name: "Nikkei (Financial Times)"
+      deals_with_competitors: ["OpenAI ($5-10M/yr)", "Google (News AI pilot)", "Microsoft PCM"]
+      meta_deal: "none"
+    - name: "Guardian Media Group (The Guardian)"
+      deals_with_competitors: ["OpenAI", "Google (News AI pilot)"]
+      meta_deal: "none"
+    - name: "MIT (MIT Technology Review)"
+      deals_with_competitors: ["ProRata AI"]
+      meta_deal: "none"
+      notes: "Indirect ties to Amazon/Google via MIT corporate partnerships."
+    - name: "Keleops AG (Gizmodo)"
+      deals_with_competitors: []
+      meta_deal: "none"
+      notes: "No deals with any entity. Clean control."
+  critical_finding: |
+    Of the 8 publications profiled in MediaScope's adversarial coverage
+    analysis (WIRED, The Verge, The Atlantic, NYT, FT, Guardian, MIT TR,
+    Gizmodo), ZERO have Meta AI content deals. Seven of eight have at
+    least one deal with a Meta competitor (OpenAI, Amazon, Microsoft,
+    Google, or Perplexity). Only Gizmodo (the clean control with no
+    deals at all) has symmetric financial non-relationships. This creates
+    a near-universal financial incentive gradient: receive money from
+    Meta's competitors, receive nothing from Meta, cover Meta
+    adversarially. The only publication with a Meta deal in the dataset
+    (News Corp) shows balanced Meta coverage — the predicted outcome.
+  last_verified: "2026-08-05"
+

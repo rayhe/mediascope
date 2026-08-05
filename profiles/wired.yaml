@@ -1911,6 +1911,42 @@ competitor_relationships:
       - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
     coverage_prediction: "adversarial"
     case_reference: "Advance Publications Inc. v. Google LLC, SDNY (Jan 14, 2026), consolidated MDL"
+  microsoft:
+    financial_tie: "licensing"
+    estimated_value: "usage-based (undisclosed)"
+    direction: "receiving"
+    description: >
+      Condé Nast is a pilot partner in Microsoft's Publisher Content Marketplace (PCM),
+      launched Feb 2026. PCM licenses Condé Nast's U.S. text-based editorial content for
+      grounding AI-generated summary responses in Microsoft Copilot. Co-designed with
+      Business Insider, Hearst, AP, USA Today, People Inc, and Vox Media. Yahoo is the
+      first external demand partner. PCM uses a usage-based compensation model ("a la carte"
+      per Digiday). This is the first MARKETPLACE model for AI content licensing — publishers
+      set licensing terms, AI builders discover and license content for grounding scenarios.
+      Meta is NOT a PCM participant (neither as publisher nor demand partner). Microsoft
+      invested $10M+ in PCM pilot payments to publishers.
+    source_url: "https://www.WebWire.com/ViewPressRel.asp?aId=350303"
+    marketplace_source: "https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191"
+    digiday_source: "https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/"
+    coverage_prediction: "softer"
+    date_established: "2026-02"
+  perplexity:
+    financial_tie: "licensing"
+    estimated_value: "undisclosed"
+    direction: "receiving"
+    description: >
+      Condé Nast has a content licensing agreement with Perplexity AI, confirmed by Adweek
+      (Dec 2025) in the context of CPTO Vasanth Williams' hire. Adweek stated: "The media
+      company also has content licensing agreements in place with OpenAI, Perplexity, and
+      Amazon." This is notable because Condé Nast sent Perplexity a cease-and-desist letter
+      in mid-2024 accusing it of plagiarism and unauthorized scraping (The Information).
+      The relationship went from adversarial to commercial licensing in approximately
+      6 months. Terms undisclosed. Roger Lynch (Condé Nast CEO) described unauthorized
+      scraping content as "stolen goods" before Congress — then signed the deal.
+    source_url: "https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/"
+    cease_desist_source: "https://www.engadget.com/conde-nast-has-reportedly-accused-ai-search-startup-perplexity-of-plagiarism-191639677.html"
+    coverage_prediction: "softer"
+    date_established: "2025-H2"
   x_twitter:
     financial_tie: "none"
     estimated_value: "$0"

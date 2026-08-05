@@ -1229,6 +1229,20 @@ competitor_relationships:
     description: "PMC sued Google over AI Overviews, Sep 2025 (first major US publisher to do so). Nilay Patel coined 'Google Zero' concept. Deep adversarial relationship."
     source_url: "https://www.reuters.com/sustainability/boards-policy-regulation/rolling-stone-billboard-owner-penske-sues-google-over-ai-overviews-2025-09-14/"
     coverage_prediction: "adversarial"
+  microsoft:
+    financial_tie: "licensing"
+    estimated_value: "usage-based (undisclosed)"
+    direction: "receiving"
+    description: >
+      Vox Media (The Verge's parent, now PMC) is a co-design partner and pilot
+      publisher in Microsoft's Publisher Content Marketplace (PCM), launched Feb 2026.
+      PCM licenses editorial content for grounding AI summaries in Microsoft Copilot.
+      Meta is NOT a PCM participant. Vox Media is also one of the first-wave publishers
+      that shaped PCM's licensing, pricing, governance, analytics, and onboarding.
+    source_url: "https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191"
+    digiday_source: "https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/"
+    coverage_prediction: "softer"
+    date_established: "2026-02"
   x_twitter:
     financial_tie: "none"
     estimated_value: "$0"

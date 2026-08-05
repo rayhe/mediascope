@@ -809,14 +809,13 @@ aggregate_findings:
         - "https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/"
         - "https://www.reuters.com/technology/apple-explores-ai-deals-with-news-publishers-new-york-times-2023-12-22/"
 
-    - finding: "FT's expanded deal portfolio — OpenAI + Google + Microsoft, no Meta"
+    - finding: "FT's expanded deal portfolio — OpenAI + Google + ProRata, no Meta"
       description: |
-        FT now has financial ties with three major AI companies:
+        FT now has financial ties with three AI companies:
         OpenAI (licensing, $5-10M/yr, Apr 2024), Google (News AI pilot,
-        Feb 2026), and Microsoft (PCM pilot partner). FT is one of the
-        only publications in the dataset with deals across all three
-        major AI search competitors (OpenAI/ChatGPT, Google/Gemini,
-        Microsoft/Copilot) — while having zero Meta deal. Coverage
+        Feb 2026), and ProRata.ai (content licensing). FT is one of the
+        few publications in the dataset with deals across multiple
+        AI search competitors — while having zero Meta deal. Coverage
         pattern matches: Meta (no deal) gets balanced-adversarial
         treatment with sustained investigative reporting; OpenAI (deal)
         gets neutral-to-positive with preferential access for scoops;
@@ -855,15 +854,18 @@ aggregate_findings:
     - "Meta's Dec 2025 / Mar 2026 publisher deals may shift coverage tone at those publications over time — need longitudinal tracking"
     - "Anthropic's $1.5B settlement is a distinct financial relationship type whose coverage effects have not been measured"
 
-  last_updated: "2026-08-05T03:00:00-07:00"
+  last_updated: "2026-08-05T04:00:00-07:00"
   update_notes: |
-    Type C iteration (Financial Incentive Mapping): Added Condé Nast's expanded deal portfolio
-    (5 partners: OpenAI, Amazon, Microsoft PCM, Perplexity, Apple negotiating — 0 Meta). Added
-    Microsoft Publisher Content Marketplace (PCM, Feb 2026) as structural exclusion mechanism —
-    Condé Nast and Vox Media both pilot partners, Meta not participating. Added FT joining
-    Google's News AI pilot (Feb 2026, Press Gazette confirmed) + FT-Microsoft PCM deal —
-    FT now has 3 AI deals (OpenAI, Google, Microsoft) vs 0 Meta. Verified all findings against
-    Press Gazette's comprehensive tracker (pressgazette.co.uk/platforms/news-publisher-ai-deals-
-    lawsuits-openai-google/). Key insight: the marketplace model (PCM) scales Meta's exclusion
-    automatically — every new demand partner adds another revenue stream WIRED/Verge parents
-    receive while Meta pays nothing.
+    Type C iteration (Financial Incentive Mapping — continued): Created comprehensive
+    Meta AI deal landscape reference in competitor-entities.yaml — 13 confirmed partners
+    with dates, terms, source URLs (Reuters Oct 2024 → Süddeutsche Zeitung Mar 2026).
+    Added excluded-publishers registry documenting 8 MediaScope-profiled publications
+    that have competitor deals but no Meta deal. Added Microsoft PCM and Perplexity
+    competitor_relationships to WIRED profile (now 9 entities tracked, 5 with licensing/
+    negotiating ties). Added Microsoft PCM to The Verge profile. Corrected FT aggregate
+    finding (FT has ProRata deal, NOT Microsoft PCM). Created test_meta_deal_landscape.py
+    (40 tests, 9 classes) validating deal landscape structure, partner data completeness,
+    excluded publisher registry, WIRED/Verge Microsoft+Perplexity updates, critical finding
+    assertions, and deal-coverage correlation hypothesis. Key structural insight: the PCM
+    marketplace model scales Meta's exclusion automatically — every new demand partner
+    adds another revenue stream profiled publishers receive while Meta pays nothing.

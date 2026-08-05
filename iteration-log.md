@@ -1,4 +1,68 @@
 # MediaScope Iteration Log
+## 2026-08-05 04:00 PT — Type C: Meta AI Deal Landscape + WIRED/Verge Financial Relationship Expansion
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Build comprehensive Meta AI deal landscape reference; add Microsoft PCM and Perplexity relationships to WIRED and The Verge profiles; validate deal-coverage correlation hypothesis.
+
+### Key Finding: 13 Meta AI Partners, 0 Overlap with Adversarial Publications
+
+Meta has signed AI content licensing deals with 13 publishers (Reuters Oct 2024 → Süddeutsche Zeitung Mar 2026). None of the 8 publications in MediaScope's adversarial coverage analysis have Meta deals. 7 of 8 have at least one deal with a Meta competitor.
+
+#### Meta AI Deal Timeline
+| Wave | Date | Publishers | Notable |
+|------|------|-----------|---------|
+| First deal | Oct 2024 | Reuters | Meta's first publisher AI deal |
+| Dec 2025 batch | Dec 5, 2025 | CNN, Fox News, Fox Sports, People Inc, USA Today, Le Monde, Daily Caller, Washington Examiner | 8 simultaneous deals |
+| Mar 2026 expansion | Mar 2026 | News Corp ($50M/yr), Le Figaro, Prisa, Süddeutsche Zeitung | International expansion, first public dollar figure |
+
+#### Excluded Publishers — Financial Asymmetry
+| Publication | Competitor Deals | Meta Deal |
+|-------------|-----------------|-----------|
+| WIRED/Condé Nast | OpenAI, Amazon, Microsoft PCM, Perplexity, Apple (negotiating) | NONE |
+| The Verge/PMC | OpenAI, Microsoft PCM | NONE |
+| The Atlantic | OpenAI | NONE |
+| NYT | Amazon ($20-25M/yr) | NONE |
+| Financial Times | OpenAI ($5-10M/yr), Google (News AI pilot), ProRata | NONE |
+| Guardian | OpenAI, Google (News AI pilot) | NONE |
+| MIT Tech Review | ProRata | NONE |
+| Gizmodo | NONE (clean control) | NONE |
+
+#### New WIRED Profile Updates
+- Added Microsoft PCM relationship (licensing, Feb 2026): Condé Nast is a co-design partner. PCM licenses editorial content for Copilot grounding. Meta NOT a participant.
+- Added Perplexity relationship (licensing, ~H2 2025): Confirmed by Adweek. Notable adversarial-to-commercial transition (cease-and-desist → deal in ~6 months).
+- WIRED now tracks 9 competitor entities (up from 7): openai, meta, anthropic, amazon, apple, google, x_twitter, microsoft, perplexity.
+- 5 entities have licensing/negotiating ties; Meta remains the only entity with $0 AND adversarial prediction.
+
+#### Corrected FT Finding
+- FT has ProRata deal (not Microsoft PCM — FT is NOT a PCM pilot partner). Corrected aggregate finding from "OpenAI + Google + Microsoft" to "OpenAI + Google + ProRata."
+
+### Files Changed
+1. `profiles/competitor-entities.yaml` — Added comprehensive `meta_ai_deals` section: 13 partners with dates/terms/source URLs, 8 excluded publishers with competitor deal lists, critical finding, last_verified date
+2. `profiles/wired.yaml` — Added `microsoft` (PCM, licensing) and `perplexity` (licensing) to `competitor_relationships` — now 9 entities tracked
+3. `profiles/the-verge.yaml` — Added `microsoft` (PCM, licensing) to `competitor_relationships`
+4. `profiles/competitor-coverage-research.yaml` — Corrected FT aggregate finding (ProRata not Microsoft); updated timestamp and notes
+5. `tests/test_meta_deal_landscape.py` (NEW) — 40 tests across 9 classes
+6. `docs/ARCHITECTURE.md` — Added test_meta_deal_landscape.py listing; count 3389/149
+7. `README.md` — Test table entry + count updates (3389/149)
+
+### Sources Used
+- Reuters: Meta publisher deals Dec 2025 — https://www.reuters.com/business/meta-strikes-multiple-ai-deals-with-news-publishers-axios-reports-2025-12-05/
+- WSJ: News Corp-Meta deal Mar 2026 — https://www.wsj.com/business/media/news-corp-meta-in-ai-content-licensing-deal-worth-up-to-50-million-a-year-d4fbf244
+- SiliconANGLE: Reuters-Meta deal Oct 2024 — https://siliconangle.com/2024/10/25/meta-inks-multiyear-ai-content-licensing-deal-reuters/
+- TheKeyword: Meta international expansion Mar 2026 — https://www.thekeyword.co/news/meta-ai-news-publisher-partnerships
+- Adweek: Condé Nast CPTO + deal list (confirms Perplexity) — https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/
+- WebWire: Condé Nast-Microsoft PCM Feb 2026 — https://www.WebWire.com/ViewPressRel.asp?aId=350303
+- Search Engine Land: Microsoft PCM launch — https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191
+- Digiday: PCM interview with Microsoft VP — https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/
+- Press Gazette: Comprehensive AI deals tracker — https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+- Engadget: Condé Nast-Perplexity cease-and-desist — https://www.engadget.com/conde-nast-has-reportedly-accused-ai-search-startup-perplexity-of-plagiarism-191639677.html
+
+### Tests: 40 passed, 0 failed (+ 40 financial_relationships: 80 total)
+
+**Commit:** [pending]
+
+---
+
 ## 2026-08-05 02:00 PT — Type B: Mike Isaac (NYT) Cross-Entity Coverage + Eli Tan Succession
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
