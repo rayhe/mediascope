@@ -126,17 +126,31 @@ publications:
   the-verge:
     meta_coverage_tone: "adversarial"
     meta_coverage_summary: |
-      Victoria Song runs sustained adversarial coverage of Meta
-      wearables/glasses. LED tamper-proof story (Jul 7) became origin
-      node for 2026 privacy narrative. Nilay Patel editorially positions
-      against Meta on privacy. SRMG/PIF ($200M PMC investment) sold
-      all META shares — structural divestment from Meta upside.
+      The Verge's institutional Meta coverage is adversarial, but this emerges
+      from editorial commentary (Nilay Patel) and business/investigative
+      reporters (Alex Heath), NOT from the dedicated wearables reviewer.
+      Victoria Song, The Verge's primary wearables beat reporter, actually
+      provides some of the most balanced Meta glasses coverage in the industry:
+      "the best glasses I've ever tried," "a turning point for smart glasses,"
+      and explicitly argued Meta's approach may be better than Apple's.
+      The adversarial institutional tone is set by executive editorial decisions
+      and Alex Heath's Meta-focused investigations, not the product desk.
+      SRMG/PIF ($200M PMC investment) sold all META shares — structural
+      divestment from Meta upside. CORRECTION: Original entry incorrectly
+      attributed adversarial coverage to Victoria Song. Her Jul 7 LED tamper-
+      proof piece reported Meta's PROACTIVE response to WSJ's Joanna Stern
+      investigation — not an adversarial exposé.
     meta_examples:
-      - title: "Victoria Song LED tamper-proof glasses coverage"
+      - title: "Victoria Song LED tamper-proof coverage (META RESPONSE piece)"
         date: "2026-07-07"
-        tone: -0.65
-        framing: "privacy crisis, surveillance narrative"
-        notes: "Techmeme 219pts, 8+ outlets picked up. Became narrative origin node."
+        tone: -0.2
+        framing: "Reported Meta's proactive tamper-proof update, NOT adversarial investigation"
+        notes: "Techmeme 219pts. Original investigation was WSJ/Joanna Stern (30 states). Song covered META's positive action."
+      - title: "Victoria Song: Meta's big vision for face computers might be better than Apple's"
+        date: "2024-02-14"
+        tone: +0.4
+        framing: "Explicitly pro-Meta comparative, argued Meta approach superior to Apple Vision Pro"
+        source_url: "https://vuink.com/post/guriretr-d-dpbz/2024/2/14/24070729/ray-ban-meta-smart-glasses-apple-vision-pro-ar-vr"
 
     openai_coverage_tone: "balanced"
     openai_coverage_summary: |

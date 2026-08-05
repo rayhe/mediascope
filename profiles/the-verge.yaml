@@ -785,11 +785,115 @@ key_journalists:
       Senior reporter and author of the "Optimizer" newsletter. 13+ years of experience. Previously
       at Gizmodo (~2019-2022) and PC Magazine (~2013-2019). The Verge's primary wearables reviewer
       and smart glasses beat reporter. Regular Vergecast contributor. Covers Meta Ray-Ban glasses
-      extensively — both product reviews and privacy/surveillance implications. Her July 2026 column
-      on smart glasses surveillance directly intersects with Meta's NameTag facial recognition feature.
-      Known for hands-on, consumer-focused coverage with increasing privacy-critical framing of
-      always-on wearable AI. Tests whether product-reviewer framing modulates differently than
-      investigative-reporter framing (cf. Alex Heath's Meta coverage).
+      extensively with genuinely balanced product-reviewer lens — NOT the adversarial framing that
+      characterizes The Verge's institutional Meta coverage via Alex Heath or editorial commentary.
+    competitor_coverage_analysis:
+      meta_coverage:
+        tone: "balanced_to_positive"
+        key_quotes:
+          - quote: "The best glasses I've ever tried"
+            context: "Meta Ray-Ban Display hands-on, Meta Connect Sep 2025"
+            source: "Dixie Sun News reprint citing Verge review"
+          - quote: "Whatever you think of Meta, these are a turning point for smart glasses"
+            context: "Ray-Ban Meta Gen 2 review"
+            source: "ts2.tech roundup of Verge review"
+          - quote: "The Ray-Ban Meta smart glasses actually make the future look cool"
+            context: "Gen 2 review headline"
+            source: "Pocketcasts Vergecast reading list"
+          - quote: "hasn't reinvented the category, but it's nailed the execution"
+            context: "Ray-Ban Meta review"
+            source: "ts2.tech roundup citing theverge.com"
+        critical_pieces:
+          - title: "Live AI on Meta's smart glasses is a solution looking for a problem"
+            date: "2026-01-26"
+            tone: -0.3
+            framing: >
+              Functional product critique — Live AI feature is unhelpful and obvious.
+              Criticism is about product utility, NOT surveillance or privacy alarm.
+              Uses personal anecdotes (fridge, road trip) not policy language.
+            source_url: "https://45179bb5-2a1f-4bc9-a93f-f86df27a1ff5.atarimworker.io/2025/1/26/24351264/live-ai-ray-ban-meta-smart-glasses-wearables"
+          - title: "Meta says it will update its smart glasses with a new feature that disables the camera when it detects that someone tampered with the device's privacy LED light"
+            date: "2026-07-07"
+            tone: -0.2
+            framing: >
+              IMPORTANT CORRECTION: This piece reports Meta's PROACTIVE tamper-proof
+              update response, NOT an adversarial investigation. The original LED-removal
+              investigation was by Joanna Stern at WSJ (30 states finding). Song reported
+              Meta's positive/responsive action. Techmeme 219pts reach is for the META
+              RESPONSE story, not an attack piece.
+            source_url: "https://www.techmeme.com/260707/p41"
+        accessibility_focus:
+          - title: "How the low-vision community embraced AI smart glasses"
+            format: "Vergecast episode (guest host)"
+            tone: +0.7
+            framing: >
+              Song hosted full Vergecast episode on accessibility benefits of Meta's
+              AI glasses for blind/low-vision users. Interviewed Jason Valley (visually
+              impaired reader) and Be My Eyes CEO Mike Buckley. Framed Meta glasses as
+              genuinely life-improving technology for disabled users.
+            source_url: "https://www.youtube.com/watch?v=pgu0a9QK75E"
+          - title: "The strongest argument for smart glasses is accessibility"
+            format: "Optimizer newsletter"
+            date: "2025-10"
+            tone: +0.5
+            framing: >
+              Newsletter column highlighting Meta glasses helping amputees, hearing-
+              impaired users. Direct quote from British Royal Marine triple amputee
+              praising hands-free design. Acknowledged "eerie" potential of invisible
+              display but prioritized accessibility benefits.
+            source_url: "https://newsatw.com/the-strongest-argument-for-smart-glasses-is-accessibility/"
+      apple_coverage:
+        tone: "balanced_to_positive"
+        key_observations:
+          - title: "Apple Vision Pro hands-on"
+            framing: >
+              Product-focused coverage. Noted VR queasiness, weight issues, clunky
+              keyboard. Described as "higher-resolution version of what Meta is trying
+              to accomplish." Called EyeSight external display "a bit goofy." No privacy/
+              surveillance framing despite Vision Pro having 12 outward-facing cameras,
+              5 sensors, and 6 microphones.
+            source_urls:
+              - "https://appleinsider.com/articles/24/01/16/apple-vision-pro-hands-on-roundup-weighty-with-a-clunky-virtual-keyboard-but-great-overall"
+              - "https://9to5mac.com/2024/01/16/apple-vision-pro-real-world-use/"
+      meta_vs_apple_direct_comparison:
+        title: "Meta's big vision for face computers might be better than Apple's"
+        date: "2024-02-14"
+        tone: +0.4
+        framing: >
+          RARE pro-Meta comparative piece. Song argued Meta's affordable, wearable-first
+          approach (Ray-Ban Meta Smart Glasses) may be strategically superior to Apple's
+          hardware-first approach (Vision Pro). Used personal anecdote of skeptic spouse
+          becoming obsessed with Ray-Ban Metas. "Where Apple threw its formidable resources
+          into building the best possible headset, Meta decided to build cheaper gadgets
+          that people want to use now."
+        source_url: "https://vuink.com/post/guriretr-d-dpbz/2024/2/14/24070729/ray-ban-meta-smart-glasses-apple-vision-pro-ar-vr"
+      google_android_xr_coverage:
+        tone: "positive"
+        key_observation: >
+          "I felt as close to Tony Stark in a controlled demo as I'll ever be" — covering
+          Google/Samsung Android XR and Project Moohan. Enthusiastic, no privacy concerns
+          raised despite camera-equipped device.
+      snap_spectacles_coverage:
+        tone: "not_primary_reviewer"
+        key_observation: >
+          Song is NOT The Verge's primary Snap Spectacles reviewer. Coverage handled by
+          other staff. Limited Song bylines on Snap wearables found. This is notable:
+          unlike WIRED's lane assignment asymmetry (where Goode covers Apple/Snap but NOT
+          Meta), Song covers all major wearables brands through a consistent lens.
+      cross_entity_analytical_significance: >
+        Victoria Song demonstrates what FAIR wearables journalism looks like when the
+        same journalist covers both Meta and Apple products with consistent editorial
+        standards. Her criticism of Meta is functional (product utility, battery life,
+        feature gaps) rather than existential (surveillance, privacy crisis). She has
+        explicitly argued Meta's glasses approach may be BETTER than Apple's. This CONTRASTS
+        sharply with WIRED's lane assignment asymmetry where Lauren Goode covers Apple with
+        product-delight framing but never covers Meta glasses, leaving Meta coverage to
+        investigators. When The Verge is adversarial to Meta, it's through Alex Heath
+        (business investigations) and editorial commentary (Nilay Patel), not through
+        Song's product reviews. Song's coverage is arguably the strongest evidence that
+        individual journalist framing CAN be fair across entities — and that The Verge's
+        institutional adversarial tone toward Meta emerges from editorial assignment and
+        executive commentary, not from its dedicated wearables reviewer.
 
   - name: "Alex Cranz"
     beat: "consumer tech, reviews"
