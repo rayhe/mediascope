@@ -50,8 +50,10 @@ FINANCIAL_TIE_WEIGHTS = {
     "licensing": 0.6,
     "investment": 0.9,
     "advertising": 0.4,
+    "advertising_dependency": 0.8,
     "distribution": 0.3,
     "indirect": 0.2,
+    "adversarial_litigation": -0.5,
     "mixed": 0.4,
     "negotiating": 0.3,
     "none": 0.0,
@@ -318,9 +320,9 @@ class CompetitorAnalyzer:
             if cell.coverage.article_count == 0:
                 continue
 
-            if cell.relationship.financial_tie in ("licensing", "investment", "distribution"):
+            if cell.relationship.financial_tie in ("licensing", "investment", "distribution", "advertising_dependency"):
                 paid_tones.append(cell.coverage.tone_score)
-            elif cell.relationship.financial_tie in ("adversarial", "litigation"):
+            elif cell.relationship.financial_tie in ("adversarial", "litigation", "adversarial_litigation"):
                 adversarial_tones.append(cell.coverage.tone_score)
             else:
                 unpaid_tones.append(cell.coverage.tone_score)

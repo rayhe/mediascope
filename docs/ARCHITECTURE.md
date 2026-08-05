@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 3697 tests across 157 test files (all from real articles)
+├── tests/                       # 3683 tests across 158 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -528,10 +528,12 @@ mediascope/
 │   ├── test_cross_platform_financial_incentives.py # Cross-platform financial incentive matrix: 17 competitor revenue streams (OpenAI, Amazon Rufus/Alexa+, Google News AI pilot, Microsoft PCM, ProRata) across 7/8 MediaScope publications vs 0 Meta deals, aggregate incentive gradient, per-publisher deal breakdowns with source URLs, Google pilot coercive Showcase sunset, Gizmodo clean control
 │   ├── test_aggregate_incentive_matrix.py # Aggregate incentive matrix structural integrity: 8-publication matrix field validation, deal count consistency between matrix and excluded_publishers, platform distribution analysis, control group (News Corp balanced/Gizmodo independent) predictions, excluded_publishers schema migration to structured dict format with source_url verification
 │   ├── test_news_corp_balanced_control.py # News Corp balanced control verification: WSJ Meta coverage tone (-0.15 vs WIRED -0.85), WSJ OpenAI critical coverage despite deal (-0.40), financial disclosure analysis (WSJ only publication disclosing deals), tone delta quantification, aggregate disclosure finding validation
+│   ├── test_google_ad_dependency_paradox.py # Google advertising revenue dependency paradox: publishers' SDNY antitrust filings reveal simultaneous Google litigation AND AdX revenue dependency; advertising_dependency relationship type; Vox Media/Atlantic/Advance Publications AdX admissions; Atlantic dual Apple financial link (ownership + News+ platform revenue); financial vector count validation
 │   ├── test_sarcastic_correction.py # Sarcastic correction framing: concede-then-retract, standalone sarcasm, false-positive exclusion
 │   ├── test_wired_gulag_patterns.py # Wired "gulag" coverage: conscript terms, keystroke surveillance, Scale AI entity, article-context loaded language
 │   ├── test_cannes_contractors.py # Wired "Cannes" contractors: Scale AI/Covalen/Character.AI cluster, catastrophizing "death of" fix, Outlook source exclusion, deception/impersonation patterns
 │   ├── test_type_d_fixes.py      # Compound publication source extraction (Business Insider, Daily Beast, etc.) and bare confession framing patterns
+│   ├── test_type_d_relationship_types.py # New financial relationship types validation: advertising_dependency and adversarial_litigation weights, asymmetry scorer classification, competitor-entities.yaml definitions, Verge/Atlantic Google adversarial_litigation profiles, AdX dependency admissions
 │   ├── test_jul7_regressions.py  # Jul 7 regressions: disclosure+PublicationProfile compat, regex backtracking, investments coercion
 │   ├── test_jul8_regressions.py  # Jul 8 regressions: "mounting" escalation, auxiliary confession verbs, "largest ever" precedent
 │   ├── test_confession_framing.py # Confession framing: "admitted," "conceded," voluntary-to-forced-admission reframing, false-positive exclusion
