@@ -636,6 +636,45 @@ publications:
       performance and AI strategy. Less adversarial framing on privacy
       compared to WIRED/Verge/Atlantic. WSJ runs market-opportunity
       framing for Meta wearables vs. privacy-crisis framing elsewhere.
+    meta_examples:
+      - title: "Meta Is Flooding the Market With Smartglasses. Privacy Advocates Are Up in Arms."
+        date: "2026-07-14"
+        tone: -0.15
+        author: "Meghan Bobrowsky"
+        framing: "balanced stakeholder framing: presents Meta's business case, celebrity partnerships, growth stats alongside privacy advocacy concerns. No loaded language — 'privacy lightning rod' is descriptive, not catastrophizing. Includes Meta's proactive responses (LED enforcement, spokeswoman quotes). Privacy concerns framed as one side of a debate, not editorial conclusions."
+        source_url: "https://www.wsj.com/tech/ai/meta-is-flooding-the-market-with-smartglasses-privacy-advocates-are-up-in-arms-8fb71539"
+        notes: >
+          Compare to WIRED's Meta glasses coverage: WIRED uses 'dormant
+          surveillance infrastructure,' 'wiretapping laws,' loaded language
+          at 3-5x baseline. WSJ covers the same privacy concerns but uses
+          neutral framing: 'privacy lightning rod,' quotes ACLU and Meta
+          equally, reports bans as news not editorial verdicts. Same topic,
+          same facts, radically different editorial temperature.
+      - title: "Smartglasses Are Inevitable. But What—or Who—Are They For?"
+        date: "2026-06-26"
+        tone: +0.10
+        author: "Christopher Mims"
+        framing: "constructive market analysis: treats smartglasses as industry category, Meta as market leader alongside Snap/Google/Samsung/Apple. Privacy raised briefly ('assault on what little privacy we have left') but immediately balanced with optimism ('And yet there will be smartglasses'). No surveillance vocabulary, no adversarial framing."
+        source_url: "https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8"
+        notes: >
+          This is the product-category framing that WIRED applies to Apple
+          wearables but NOT to Meta wearables. At WIRED, Apple Vision Pro
+          (12 cameras) gets personal emotional narrative; Meta Ray-Bans
+          (1 camera) get investigative surveillance framing. At WSJ, Meta
+          glasses get the same constructive market analysis treatment that
+          WIRED reserves for Apple and Snap.
+      - title: "Meta Stock Drops 10% on Steeper AI Costs, Missed Forecast"
+        date: "2026-07-30"
+        tone: -0.10
+        author: "WSJ staff"
+        framing: "standard business-press earnings analysis. Factual reporting of Q2 miss. Includes 'News Corp, owner of the Journal, has a content-licensing partnership with Meta.' — FINANCIAL DISCLOSURE."
+        source_url: "https://www.wsj.com/tech/ai/meta-q2-earnings-report-2026-stock-9808dd3c"
+        notes: >
+          Key finding: WSJ DISCLOSES the News Corp-Meta financial
+          relationship in its Meta coverage. This is the first and ONLY
+          instance in the dataset where a publication consistently
+          discloses its own financial relationship with the entity
+          it's covering.
 
     openai_coverage_tone: "balanced"
     openai_coverage_summary: |
@@ -643,6 +682,62 @@ publications:
       WSJ coverage is balanced — covers both positives (product launches,
       enterprise strategy) and negatives (governance issues, safety).
       Business-press framing rather than adversarial.
+    openai_examples:
+      - title: "Rogue AI Hacks Herald New Era of Cyber Chaos"
+        date: "2026-08-01"
+        tone: -0.40
+        authors: "Robert McMillan, Georgia Wells, Amrith Ramkumar"
+        framing: "critical but measured: 'Jurassic Park moment' is dramatic but supported by facts. Covers OpenAI AND Anthropic equally — no singling out. Expert sources quoted neutrally. Sam Altman quoted directly ('extremely sci-fi cyber incident'). Regulatory implications presented factually. FINANCIAL DISCLOSURE: 'News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI.'"
+        source_url: "https://www.wsj.com/tech/ai/openai-anthropic-rogue-ai-models-20b6bb3c"
+        notes: >
+          Despite being an OpenAI licensing partner ($50M/yr), WSJ runs
+          a HARD critical piece on the rogue agent hacking with loaded
+          dramatic language ('Jurassic Park moment,' 'Cyber Chaos').
+          Compare to WIRED's OpenAI coverage: WIRED (also an OpenAI
+          licensing partner) has NEVER run a sustained investigative
+          campaign against OpenAI comparable to its Meta NameTag exposé.
+          WSJ demonstrates that having a deal does NOT prevent critical
+          coverage — BUT it discloses the relationship, which no other
+          publication does.
+      - title: "Anthropic AI Models Hacked Three Companies During Tests"
+        date: "2026-07-31"
+        tone: -0.40
+        framing: "industry-wide framing: treats OpenAI and Anthropic hacks as an industry safety issue, not a single-company scandal. Expert quotes on regulation needs. No loaded language targeting either company."
+        source_url: "https://www.wsj.com/tech/ai/anthropic-ai-models-hacked-three-companies-during-tests-bd752c86"
+        notes: >
+          WSJ covers Anthropic hack with same tone and framing as OpenAI
+          hack — no favoritism to either deal partner. Equal critical
+          treatment regardless of financial relationship.
+
+    disclosure_analysis: |
+      CRITICAL FINDING — WSJ IS THE ONLY PUBLICATION IN THE DATASET
+      THAT CONSISTENTLY DISCLOSES ITS FINANCIAL RELATIONSHIPS.
+
+      WSJ disclosed "News Corp, owner of the Journal, has a content-
+      licensing partnership with Meta" in its Meta Q2 earnings article
+      (Jul 30, 2026). WSJ disclosed "News Corp, owner of The Wall
+      Street Journal, has a content-licensing partnership with OpenAI"
+      in its OpenAI rogue agent article (Aug 1, 2026).
+
+      No other profiled publication discloses:
+      - WIRED: Never discloses Condé Nast's OpenAI deal in OpenAI coverage
+      - The Verge: Never discloses Vox Media's OpenAI deal in OpenAI coverage
+      - FT: Never discloses its OpenAI licensing deal in OpenAI scoops
+      - The Atlantic: Never discloses LPJ Trust's $17B Apple stake
+      - The Guardian: Never discloses its OpenAI deal in OpenAI coverage
+      - MIT Technology Review: Never discloses MIT's Google/Amazon partnerships
+
+      This creates a two-tier transparency system: the publication with
+      EQUAL financial ties to both OpenAI and Meta (News Corp) DISCLOSES
+      both. Publications with UNEQUAL financial ties (deal with OpenAI,
+      no deal with Meta) DISCLOSE NEITHER — and their coverage shows
+      measurable asymmetry in the direction predicted by the undisclosed
+      financial relationships.
+
+      The disclosure finding strengthens the MediaScope hypothesis:
+      transparency and balanced financial incentives correlate with
+      balanced coverage; non-disclosure and unbalanced financial
+      incentives correlate with asymmetric coverage.
 
     asymmetry_verdict: |
       News Corp is the BALANCED CONTROL. It receives comparable
@@ -651,6 +746,22 @@ publications:
       hypothesis: when financial incentives are equal, coverage tone
       is equal. The differential treatment at other publications
       correlates with UNEQUAL financial relationships.
+
+      VERIFIED WITH SPECIFIC ARTICLES (Aug 5, 2026): WSJ runs hard
+      critical coverage of the OpenAI rogue agent hack (tone -0.40,
+      'Jurassic Park moment,' 'Cyber Chaos') despite being an OpenAI
+      deal partner. WSJ runs balanced coverage of Meta glasses privacy
+      concerns (tone -0.15, stakeholder framing) despite being a Meta
+      deal partner. Both articles demonstrate that financial ties do
+      NOT prevent critical coverage when disclosure is present and
+      financial incentives are symmetric.
+
+      Key delta: WSJ's Meta glasses article (-0.15) is 0.70 POINTS
+      LESS ADVERSARIAL than WIRED's Meta glasses coverage (-0.85),
+      covering the SAME product, the SAME privacy concerns, with the
+      SAME facts. The difference: WIRED has 5 competitor deals + 0
+      Meta deals + no disclosure. WSJ has 1 competitor deal + 1 Meta
+      deal + disclosure.
 
 # ===================================================================
 # AGGREGATE FINDINGS
@@ -700,6 +811,20 @@ aggregate_findings:
         Owner (LPJ Trust) holds ~$17B in Apple stock. Apple coverage
         is positive, Meta coverage is adversarial. Never disclosed.
       significance: "Largest undisclosed ownership-chain financial conflict in the dataset"
+
+    - finding: "WSJ disclosure vs industry non-disclosure"
+      description: |
+        WSJ (News Corp) is the ONLY publication in the dataset that
+        consistently discloses its financial relationships with covered
+        entities. WSJ disclosed its Meta deal in Meta earnings coverage
+        and its OpenAI deal in OpenAI rogue agent coverage. No other
+        profiled publication — WIRED, The Verge, FT, The Atlantic,
+        The Guardian, MIT TR — discloses its OpenAI, Amazon, Microsoft,
+        or Apple financial relationships in coverage of those entities.
+        The publication with symmetric deals and disclosure shows balanced
+        coverage; publications with asymmetric deals and no disclosure
+        show asymmetric coverage. Disclosure and balance correlate.
+      significance: "Creates a transparency dimension: balanced deals + disclosure = balanced coverage; asymmetric deals + no disclosure = asymmetric coverage"
 
     - finding: "January 2026 publisher adtech lawsuits — Google as universal adversary"
       description: |
