@@ -1,4 +1,53 @@
 # MediaScope Iteration Log
+## 2026-08-04 19:00 PT — Type B: Journalist Cross-Entity Tracking — Lauren Goode (WIRED) Wearables Coverage Asymmetry
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Focus:** Lauren Goode's coverage of Apple, Snap, and Meta wearables — testing whether WIRED's most senior consumer tech correspondent applies different editorial standards to different companies' camera wearables.
+
+### Key Finding: Lane Assignment Asymmetry
+
+**The most senior wearable reviewer at WIRED covers Apple and Snap camera wearables with empathetic/playful framing but does not cover Meta camera wearables at all.** This creates a structural framing asymmetry at the editorial assignment level, before a single word is written.
+
+#### Apple Vision Pro Coverage (Feb 2024, WIRED)
+- **Reviewer:** Lauren Goode (Senior Correspondent)
+- **Tone:** Deeply personal, empathetic wonder
+- **Key language:** "The view is incredible. It really is. I'm just as surprised by this as you are." / "I cried" / "I was starting to love this thing"
+- **Camera framing:** Apple Vision Pro has 12 outward-facing cameras, 5 sensors, 6 microphones — technically a far more capable surveillance device than Meta's single 12MP camera. **ZERO surveillance/privacy framing.**
+- **Criticism frame:** Personal isolation and missing human connection ("I also missed the people in the darkened space around me"), NOT surveillance risk, data harvesting, or bystander consent.
+- **Source:** MacDailyNews reprint of WIRED review
+
+#### Snap Spectacles Coverage (2018, WIRED YouTube)
+- **Reviewer:** Lauren Goode + Arielle Pardes
+- **Tone:** Playful, positive, expectant
+- **Key language:** Title = "Are They the Face Camera We've Been Waiting For?" — implies desire, not alarm
+- **Camera framing:** Snap Spectacles = literal face camera. NO privacy/surveillance/consent language in title, description, or keywords.
+- **Setting:** Testing at California's Great America amusement park — fun consumer framing
+- **Source:** YouTube (zHn_otv4qN8)
+
+#### Meta Glasses Coverage — EDITORIAL AVOIDANCE
+- **Reviewer:** NOT Lauren Goode
+- **Gap analysis:** Despite being WIRED's most authoritative consumer tech voice with 15+ years of wearables expertise, Goode has no major individual byline on Meta Ray-Ban smart glasses reviews. Coverage goes to staffers with accountability/investigative orientations.
+- **Institutional tone for Meta glasses:** Surveillance alarm, glasshole revival, bystander consent, data harvesting
+- **Same hardware (cameras on face), radically different narrative frame determined by manufacturer identity**
+
+#### Analytical Significance
+The journalist who would naturally write "I cried inside the Meta Ray-Ban Display" never gets assigned that story. This isn't necessarily conscious editorial bias — it emerges from which journalist covers which company. But the effect is systematic: Apple gets the product-delight lens, Meta gets the surveillance-accountability lens.
+
+**Aligns with financial relationships:**
+- Apple ↔ Condé Nast: Negotiating AI licensing deal (softer coverage predicted)
+- Meta ↔ Condé Nast: No financial relationship (adversarial coverage predicted)
+
+### Files Updated
+- `profiles/careers/journalists.yaml`: Added `competitor_coverage` section to Lauren Goode with Apple (3 examples), Snap (1 example), Meta (editorial avoidance analysis), `cross_entity_asymmetry_score: 0.82`
+- `profiles/wired.yaml`: Added `cross_entity_wearables_framing` section with per-manufacturer evidence and analytical significance
+
+### Doc & Stats Updates
+- N/A (profile updates, no test or pattern changes)
+
+**Commit:** e29a2f4 — pushed to GitHub
+
+---
+
 ## 2026-08-01 09:00 PT — Type D: Toolkit Quality & Documentation — Fix 4 test failures + platform_self_incrimination precision + new escalation/aside patterns + article #202
 
 **Rotation:** D (Toolkit Quality & Documentation)
