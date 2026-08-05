@@ -1,4 +1,79 @@
 # MediaScope Iteration Log
+## 2026-08-05 08:00 PT — Type C: Cross-Platform Financial Incentive Mapping
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Comprehensive cross-platform deal landscape — mapping ALL financial relationships between MediaScope-profiled publications and ALL major AI platforms (OpenAI, Amazon, Google, Microsoft, Perplexity/ProRata), not just the OpenAI deals previously documented.
+
+### Key Finding: Multi-Layered Financial Incentive Gradient — 17:0
+
+The financial incentive gradient is far more pronounced than previously documented. MediaScope publications don't just have ONE deal with a Meta competitor — they have 2-4 SIMULTANEOUS revenue relationships with different Meta competitors, all while receiving $0 from Meta.
+
+**Aggregate Financial Incentive Matrix:**
+| Publication | Competitor Deals | Meta Deals | Platforms |
+|-------------|-----------------|------------|-----------|
+| WIRED (Condé Nast) | 4 | 0 | OpenAI, Amazon (Rufus + Alexa+), Microsoft PCM, Apple (negotiating) |
+| The Verge (Vox Media) | 3 | 0 | OpenAI, Microsoft PCM, Amazon (Alexa+) |
+| Financial Times | 3 | 0 | OpenAI ($5-10M/yr), Google (News AI pilot), Microsoft PCM |
+| The Atlantic | 2 | 0 | OpenAI, ProRata AI |
+| NYT | 2 | 0 | Amazon (Rufus $20-25M/yr + Alexa+) — suing OpenAI |
+| The Guardian | 2 | 0 | OpenAI, Google (News AI pilot) |
+| MIT Technology Review | 1 | 0 | ProRata AI |
+| Gizmodo | 0 | 0 | None (clean control) |
+| **TOTAL** | **17** | **0** | |
+
+### New Platforms Mapped
+
+**1. Google News AI Pilot (Dec 2025)**
+- Replaces Google News Showcase with COERCIVE terms: join or lose existing Showcase annual fees
+- Requires broad AI training rights from publishers
+- Confirmed participants: The Guardian, FT (joined Feb 2026), WaPo, Der Spiegel, El País, Folha, Infobae, Kompas, Times of India, Washington Examiner
+- Sources: TechCrunch (Dec 10, 2025), Press Gazette, Remote Work Europe
+
+**2. Amazon Rufus Deals (2025)**
+- NYT (May 2025, $20-25M/yr), Condé Nast (Jul 2025), Hearst (Jul 2025)
+- Multi-year content licensing for Rufus AI shopping assistant
+- Source: Digiday (Jul 10, 2025)
+
+**3. Amazon Alexa+ (Feb 2025)**
+- 200+ participating outlets including Condé Nast, Vox Media, WaPo, AP, Reuters, Time, Forbes, BI, Politico, USA Today, Hearst
+- Source: MediaPost (Feb 26, 2025)
+
+**4. Microsoft PCM (Feb 2026)**
+- Publisher Content Marketplace — centralized AI licensing hub
+- Pilot partners: Condé Nast, Vox Media, Hearst, AP, USA Today, BI, People Inc
+- Microsoft invested >$10M total in pilot
+- Yahoo = first external demand partner
+- Sources: Microsoft Ads blog, Search Engine Land, WSJ (Jul 2026)
+
+### Controls
+- **News Corp** (WSJ, NY Post): Has BOTH OpenAI ($250M/5yr) AND Meta ($50M/yr) → balanced coverage (predicted)
+- **Gizmodo**: Has ZERO deals with anyone → adversarial coverage anyway → editorial culture contributes independently
+
+### Files Changed
+1. `profiles/competitor-entities.yaml` — Expanded `excluded_publishers` from flat list to structured per-deal data with partner, type, date, scope, value, source_url for each deal. Added `cross_platform_summary` sections for Google News AI pilot, Microsoft PCM, Amazon Rufus, Amazon Alexa+. Added `aggregate_incentive_matrix` with statistical note.
+2. `tests/test_cross_platform_financial_incentives.py` (NEW) — 58 tests across 12 classes
+3. `docs/ARCHITECTURE.md` — Added test listing; count 3555/153
+4. `README.md` — Test table entry + count updates (3555/153)
+
+### Sources Used
+- LLM Pulse complete OpenAI deal map: https://llmpulse.ai/blog/openai-publisher-deals/
+- Press Gazette tracker: https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+- Digiday (Rufus deals): https://digiday.com/media/conde-nast-and-hearst-strike-amazon-ai-licensing-deals-for-rufus/
+- MediaPost (Alexa+): https://www.Mediapost.Com/publications/article/403742/
+- Microsoft Ads blog (PCM): https://about.ads.microsoft.com/en/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web
+- TechCrunch (Google pilot): https://techcrunch.com/2025/12/10/google-is-testing-ai-powered-article-overviews-on-select-publications-google-news-pages/
+- WSJ (Marketplaces): https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+- Search Engine Land (PCM): https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191
+- Remote Work Europe (Google coercion): https://remoteworkeurope.eu/news/2026/google-showcase-ai-training-ultimatum-publishers/
+- NY Post (Google bleed publishers): https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/
+- Reuters (OpenAI Atlantic/Vox): https://www.reuters.com/business/media-telecom/openai-signs-content-deals-with-atlantic-vox-media-2024-05-29/
+- SiliconANGLE (OpenAI Condé Nast): https://siliconangle.com/2024/08/20/openai-agrees-content-licensing-deal-conde-nast-feed-searchgpt-chatgpt/
+
+### Tests: 58 passed, 0 failed (+ 232 core regression passed)
+
+**Commit:** 0474417 (pushed to GitHub)
+
+---
 ## 2026-08-05 07:00 PT — Type B: Hannah Murphy (FT) Cross-Entity Coverage Analysis
 
 **Rotation:** B (Journalist Cross-Entity Tracking)

@@ -217,8 +217,11 @@ class TestOpenAIDealConcentration:
         all_deals = []
         for p in self.excluded:
             for deal in p.get("deals_with_competitors", []):
-                # Normalize: extract company name (remove dollar amounts, parentheticals)
-                company = deal.split("(")[0].strip()
+                # Handle both old string format and new structured dict format
+                if isinstance(deal, dict):
+                    company = deal.get("partner", "").split("(")[0].strip()
+                else:
+                    company = deal.split("(")[0].strip()
                 all_deals.append(company)
         counter = Counter(all_deals)
         if counter:
