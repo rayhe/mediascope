@@ -179,6 +179,174 @@ competitor_relationships:
     coverage_prediction: "neutral"
 
 
+# ===================================================================
+# CROSS-ENTITY COVERAGE ANALYSIS — FT OpenAI vs Meta framing asymmetry
+# Added 2026-08-05 (Type A iteration)
+# Focus: Always-on device coverage dual standard + spending framing
+# ===================================================================
+cross_entity_coverage_analysis:
+  always_on_device_dual_standard:
+    finding: >
+      FT applies a dual editorial standard when covering functionally identical
+      "always-on sensing" technology from OpenAI vs Meta. OpenAI's Jony Ive device
+      (continuous audio/visual sensing, contextual memory) is framed aspirationally
+      as "iPhone of artificial intelligence" with constructive technical challenges.
+      Meta's super-sensing glasses (continuous audio capture, photos every few seconds,
+      contextual recall) receive surveillance/privacy-threat framing with emphasis on
+      deception (LED deactivation), data extraction, and regulatory risk. The variable
+      controlling the editorial frame is manufacturer identity and financial relationship,
+      not the technology itself.
+
+    openai_device_coverage:
+      reporter: "George Hammond, Madhumita Murgia"
+      articles:
+        - title: "OpenAI and Jony Ive have yet to solve key technical and software issues"
+          date: "2025-10-05"
+          url: "https://www.techmeme.com/251005/p1"
+          framing: "constructive_neutral"
+          language:
+            - "iPhone of artificial intelligence"
+            - "palm-sized device without a screen"
+            - "audio and visual cues from the physical environment"
+            - "a friend who's a computer"
+            - "trade-offs (re: privacy)"
+            - "normal parts of the product development process"
+          privacy_treatment: "mentioned as design challenge, not threat"
+          source_quote: >
+            "The concept is that you should have a friend who's a computer who
+            isn't your weird AI girlfriend... like Siri but better"
+          openai_deal_disclosed: false
+
+        - title: "OpenAI and Jony Ive's secretive AI device"
+          date: "2026-06-01"
+          url: "https://www.outlookbusiness.com/artificial-intelligence/openai-jony-ive-face-design-and-engineering-roadblocks-on-secretive-ai-device-project"
+          framing: "constructive_neutral"
+          language:
+            - "continuously aware assistant"
+            - "running contextual memory"
+            - "practical obstacles (not privacy violations)"
+            - "technical and product trade-offs (not surveillance implications)"
+          privacy_treatment: "mentioned as engineering challenge alongside compute capacity"
+          openai_deal_disclosed: false
+
+      framing_pattern: >
+        Always-on sensing is described as innovation and aspiration. Privacy is a
+        design challenge to solve, not a societal threat to prevent. The device is
+        anthropomorphized positively ("friend," "assistant"). Technical difficulties
+        are normalized ("normal parts of product development"). No surveillance
+        language. No mention of wiretapping laws. No civil liberties framing.
+
+    meta_glasses_coverage:
+      reporter: "Hannah Murphy"
+      articles:
+        - title: "Meta testing AI glasses that continuously record audio and take photos every few seconds"
+          date: "2026-07-08"
+          url: "https://www.techmeme.com/260708/p2"
+          framing: "adversarial_surveillance"
+          language:
+            - "continuously collect audio"
+            - "taking photos every few seconds"
+            - "Meta executives don't want to activate the LED"
+            - "data collected through the glasses could be used to train its own AI models"
+            - "civil liberty and privacy risks"
+            - "wiretapping laws"
+            - "biometric data laws"
+          privacy_treatment: "central narrative frame, leading the story"
+          source_quote: >
+            "Privacy experts argue that always-on devices could violate data privacy
+            or biometric data laws. It is also unclear whether the company or the
+            wearer would be liable for potential violations of wiretapping laws."
+          openai_deal_disclosed: false
+
+      framing_pattern: >
+        Always-on sensing is described as surveillance. Privacy is a legal threat
+        and societal risk, not a design challenge. The LED deactivation is framed
+        as deliberate concealment. Data training use is highlighted as extraction.
+        Legal risk language (wiretapping, biometric laws) deployed prominently.
+        Story catalyzed "creepy," "privacy-invasive" secondary coverage cascade.
+
+    comparison:
+      identical_capability: "Both devices employ continuous audio/visual sensing with AI-powered contextual memory"
+      openai_frame: "aspirational innovation, technical challenge, 'iPhone of AI'"
+      meta_frame: "surveillance threat, privacy invasion, regulatory risk, deception"
+      variable: "manufacturer identity and financial relationship, not technology"
+      undisclosed_conflict: >
+        FT did not disclose its OpenAI licensing deal ($5-10M/yr) in any of these
+        articles. When describing OpenAI's always-on device as a "friend" while
+        describing Meta's always-on glasses as surveillance, FT's readers are unaware
+        that FT receives revenue from one company and $0 from the other.
+
+  spending_framing_asymmetry:
+    finding: >
+      When covering comparable AI spending by OpenAI and Meta, FT uses different
+      editorial frames. OpenAI's $34B spend is contextualized as growth ("fastest-
+      growing company in history"). Meta's equivalent spending triggers equity-raising
+      concerns ("weighs big equity raising," stock drops). OpenAI's $1T+ compute
+      deals are positioned as ambitious scale; Meta needing to buy Google's Gemini
+      capacity is framed as dependency and disruption.
+
+    openai_spending_coverage:
+      - title: "OpenAI spending hit $34 billion last year ahead of planned IPO"
+        date: "2026-06-16"
+        url: "https://www.reuters.com/legal/transactional/openai-spending-hit-34-billion-last-year-ahead-planned-ipo-ft-reports-2026-06-16/"
+        framing: "growth_milestone"
+        notes: "Spending contextualized as pre-IPO growth, not recklessness"
+
+      - title: "OpenAI's business model... one of the fastest-growing companies in history"
+        date: "2024-02-15"
+        url: "https://www.techmeme.com/240215/p7"
+        framing: "aspirational"
+        notes: "Revenue challenges framed as 'questions remain' not existential threat"
+
+      - title: "OpenAI's deals topped $1T"
+        date: "2025-10-06"
+        url: "https://www.techmeme.com/251006/p14"
+        framing: "ambitious_scale"
+        notes: "'raising questions about how it can fund them' — mild skepticism only"
+
+    meta_spending_coverage:
+      - title: "Meta weighs big equity raising to finance AI infrastructure"
+        date: "2026-06-05"
+        url: "https://www.reuters.com/technology/meta-weighs-big-equity-raising-finance-ai-infrastructure-ft-reports-2026-06-05/"
+        framing: "desperation"
+        notes: "Stock -6.6% on report. 'Creative ways to raise cash' implies distress, not ambition"
+
+      - title: "Meta cuts annual distribution of stock options by ~5%"
+        date: "2026-02-19"
+        url: "https://www.techmeme.com/260219/p43"
+        framing: "internal_morale_damage"
+        notes: "Hannah Murphy, exclusive. Employee cost-cutting framed as worker harm"
+
+      - title: "Google told Meta it couldn't offer all the Gemini capacity Meta wanted"
+        date: "2026-06-28"
+        url: "https://www.techmeme.com/260628/p1"
+        framing: "dependency_disruption"
+        notes: "'disrupting and delaying' — Meta framed as behind competitors"
+
+      - title: "Metamate lacks the more autonomous, agent-like features of rivals' tools"
+        date: "2024-12-08"
+        url: "https://www.techmeme.com/241208/p4"
+        framing: "competitive_deficit"
+        notes: "Headline explicitly positions Meta as behind rivals"
+
+  non_disclosure_pattern:
+    finding: >
+      Across all examined FT articles covering OpenAI — the 5% government stake
+      proposal, the $34B spending report, the Jony Ive device coverage, the TBPN
+      acquisition reporting, and the ChatGPT ads announcement — FT has not disclosed
+      its financial relationship with OpenAI. This undisclosed conflict is systematic:
+      FT is reporting on its own business partner's growth, spending, and product
+      strategy without informing readers of the financial incentive.
+    articles_checked:
+      - "OpenAI 5% gov't stake (Jul 2026) — no disclosure"
+      - "OpenAI $34B spending (Jun 2026) — no disclosure"
+      - "OpenAI Jony Ive device delays (Oct 2025, Jun 2026) — no disclosure"
+      - "OpenAI TBPN acquisition (Apr 2026) — no disclosure"
+      - "OpenAI ChatGPT ads plan (Jan 2026) — no disclosure"
+    source_urls:
+      - "https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/"
+      - "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+
 # Litigation Connections
 litigation_connections: []
 
