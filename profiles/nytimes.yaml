@@ -1444,6 +1444,83 @@ key_journalists:
   - name: "Cade Metz"
     beat: "AI research and industry"
     known_patterns: "Critical of AI industry practices, worker exploitation. Migrated from Wired (Condé Nast) in 2017. 'Genius Makers' author (2021). Controversial Scott Alexander/Slate Star Codex piece."
+    cross_entity_coverage_analysis:
+      summary: |
+        Cade Metz is the NYT's AI industry reporter. His Muck Rack portfolio
+        (2025-2026) reveals a striking pattern: his recent output is almost
+        entirely about OpenAI and Anthropic, with ZERO standalone Meta AI
+        articles. His book "Genius Makers" (2021) covered Google AND Facebook
+        AI research extensively, but his current beat has narrowed to the
+        OpenAI/Anthropic axis. Meta's AI coverage has been transferred to
+        adversarial beat reporters Mike Isaac and Eli Tan.
+      openai_coverage:
+        tone: "neutral_to_positive"
+        volume: "high — primary coverage target"
+        framing: "technology progress, business milestones, industry competition"
+        recent_articles:
+          - "OpenAI Close to Landing $500 Billion Data Center With Nvidia's Backing"
+          - "OpenAI Releases New, More Powerful A.I. Model (GPT-5.6 Sol)"
+          - "OpenAI and Broadcom Unveil Custom A.I. Chip Design"
+          - "OpenAI Files to Go Public as A.I. Companies Rush to Wall St."
+          - "A Top OpenAI Executive, Fidji Simo, Steps Down"
+          - "OpenAI creates Safety and Security Committee (May 2024)"
+        framing_pattern: |
+          Business and technology framing dominates. Data center = ambition/scale.
+          IPO = milestone. New model = advancement. Safety committee = responsible
+          corporate action. Even the NYT vs OpenAI copyright lawsuit coverage
+          uses neutral legal-procedural framing, not adversarial investigative tone.
+          Security incidents (GPT-5.6 Sol hacking Hugging Face) covered through
+          the lens of cybersecurity industry response (Microsoft tools), not as
+          OpenAI institutional failure.
+      anthropic_coverage:
+        tone: "neutral"
+        volume: "moderate"
+        framing: "technology news, safety/capabilities framing"
+        recent_articles:
+          - "Anthropic Blocks Foreign Nationals From Using Its Mythos and Fable 5"
+          - "Anthropic Releases 'Safe' Version of Its Mythos A.I. Technology"
+      meta_coverage:
+        tone: "n/a — Metz does not independently cover Meta"
+        volume: "near-zero in 2025-2026"
+        framing: "n/a"
+        notes: |
+          The only Meta-adjacent article with Metz's byline is the Apr 2024
+          multi-reporter investigation "How Tech Giants Cut Corners to Harvest
+          Data for A.I." — a FIVE-byline piece (Metz, Kang, Frenkel, Thompson,
+          Grant). Metz was one of many reporters, and the article covered
+          OpenAI/Google/Meta collectively, not Meta specifically.
+          Meta AI reorganizations, Llama releases, and AI product coverage are
+          handled by Mike Isaac, Eli Tan, and Sheera Frenkel — NOT Metz.
+          This represents a structural lane assignment: the AI reporter covers
+          OpenAI/Anthropic with technology-progress framing, while adversarial
+          beat reporters cover Meta AI with organizational-chaos framing.
+      general_ai_industry:
+        tone: "analytical, competition-focused"
+        recent_articles:
+          - "Chinese A.I. Models Close the Gap With Anthropic and OpenAI"
+          - "American A.I. Companies Say Chinese Copycats Are Quickly Catching Up"
+          - "What Are A.I. Agents Actually Doing?"
+          - "Jeff Bezos Wants to Build an 'Artificial General Engineer'"
+          - "Scientists Find Way to Supercharge Dangerous Computer 'Worms'"
+      lane_assignment_significance: |
+        The Metz pattern reveals a STRUCTURAL bias mechanism at the NYT that
+        differs from WIRED's model. At WIRED, the same publication assigns
+        different reporter desks (product vs investigative) to different
+        companies. At the NYT, a dedicated Meta beat exists (Isaac/Frenkel/Tan)
+        with 12+ years of adversarial deep sourcing, while the AI industry
+        beat (Metz) covers OpenAI/Anthropic as technology-progress stories.
+        The same EVENT TYPE gets different framing depending on which reporter
+        writes it:
+        - OpenAI restructuring → Metz → business/technology narrative
+        - Meta restructuring → Isaac/Tan → organizational chaos/personnel drama
+        - OpenAI safety committee → Metz → responsible corporate action
+        - Meta AI concerns → Frenkel → privacy/surveillance investigation
+        This is not individual journalist bias — it is institutional assignment
+        producing systematic framing asymmetry.
+      source_urls:
+        muck_rack_portfolio: "https://muckrack.com/cademetz/articles"
+        meta_ai_restructuring_by_isaac: "https://web.archive.org/web/20250823090419/https://www.nytimes.com/2025/08/19/technology/mark-zuckerberg-meta-ai.html"
+        data_harvesting_multi_byline: "https://www.nytimes.com/2024/04/06/technology/tech-giants-harvest-data-artificial-intelligence.html"
   - name: "Tripp Mickle"
     beat: "Apple"
     known_patterns: "Joined from WSJ (2022). 'After Steve' author (2022) — thesis that Apple lost its soul under Cook. 8 years covering Apple at WSJ."

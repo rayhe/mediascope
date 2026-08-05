@@ -334,6 +334,54 @@ publications:
       Financial relationship predicts coverage tone with near-perfect
       correlation.
 
+    # Reporter-level cross-entity analysis (added 2026-08-05)
+    cross_entity_beat_assignment:
+      finding: |
+        NYT's Meta bias operates through REPORTER ASSIGNMENT, not individual
+        journalist framing. Cade Metz (AI industry reporter, "Genius Makers"
+        author) covers OpenAI and Anthropic with technology-progress framing.
+        Meta's AI coverage is handled by adversarial beat reporters Mike Isaac
+        (12+ years, "Super Pumped"), Eli Tan (new 2026), and Sheera Frenkel
+        ("An Ugly Truth"). The same event type receives different framing
+        depending on which reporter is assigned:
+        - OpenAI restructuring (Metz) → business narrative
+        - Meta AI restructuring (Isaac/Tan, Aug 2025) → "Zuckerberg Shakes Up
+          Meta's A.I. Efforts, Again" — turmoil, internal tensions, departures
+        Metz's 2025-2026 portfolio has ZERO standalone Meta AI articles.
+        His only Meta-adjacent piece was a five-byline data harvesting
+        investigation (Apr 2024) covering Meta, OpenAI, and Google collectively.
+      metz_openai_examples:
+        - title: "OpenAI Close to Landing $500 Billion Data Center"
+          tone: +0.15
+          framing: "ambition, scale, business milestone"
+        - title: "OpenAI Releases New, More Powerful A.I. Model"
+          tone: +0.10
+          framing: "technology advancement, competition"
+        - title: "OpenAI Files to Go Public"
+          tone: +0.05
+          framing: "business milestone, industry maturation"
+      isaac_meta_examples:
+        - title: "Mark Zuckerberg Shakes Up Meta's A.I. Efforts, Again"
+          date: "2025-08-19"
+          tone: -0.35
+          framing: "internal turmoil, personnel churn, executive departures, 'compound internal turmoil'"
+          source_url: "https://web.archive.org/web/20250823090419/https://www.nytimes.com/2025/08/19/technology/mark-zuckerberg-meta-ai.html"
+          notes: >
+            Framing elements: 'shakes up...again', 'compound internal turmoil',
+            'tensions have surfaced', old guard 'chafed', Zhao 'questioned them
+            about their past work while interviewing them for new roles'. Same
+            type of corporate restructuring that Metz covers for OpenAI as a
+            business pivot, Isaac frames as organizational dysfunction.
+      analytical_significance: |
+        This beat-assignment mechanism is distinct from WIRED's model. WIRED
+        assigns different editorial desks (product review vs investigative)
+        to different companies. NYT assigns different REPORTERS with different
+        source networks and narrative instincts. Isaac and Frenkel have 12+
+        years of adversarial Meta sourcing; Metz has technology-progress sourcing
+        in the OpenAI/Anthropic orbit. The reporters' entire career trajectories
+        produce different narrative frames, making the bias structural and
+        nearly invisible — it looks like each reporter is just "doing their beat."
+
   # -----------------------------------------------------------------
   # FINANCIAL TIMES (Nikkei)
   # Financial ties: OpenAI (licensing, $5-10M/yr, Apr 2024).

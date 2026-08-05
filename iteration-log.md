@@ -26232,3 +26232,65 @@ Both `nytimes.yaml` and `gizmodo.yaml` had YAML parse errors that prevented load
 - `docs/ARCHITECTURE.md`: Updated counts (3175/143), added test_competitor_coverage.py to tree
 
 **Commit:** 97074c6 — pushed to GitHub
+
+## 2026-08-05 01:00 PT — Type B: Cade Metz (NYT) Cross-Entity Coverage — Beat Assignment as Bias Mechanism
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Focus:** Cade Metz, NYT's primary AI industry reporter, covering OpenAI/Anthropic vs Meta — documenting how reporter beat assignment produces systematic framing asymmetry at the institutional level.
+
+### Key Finding: Reporter Assignment IS the Bias Mechanism
+
+Cade Metz wrote "Genius Makers" (2021) covering AI at Google AND Facebook. But his 2025-2026 Muck Rack portfolio shows near-ZERO standalone Meta AI articles. His current beat has narrowed exclusively to OpenAI/Anthropic, while Meta's AI coverage was transferred to adversarial beat reporters:
+
+**Metz (AI industry reporter) covers:**
+- OpenAI: $500B data center, GPT-5.6 Sol release, IPO filing, Broadcom chip design, Fidji Simo departure, Safety committee
+- Anthropic: Mythos/Fable releases, foreign national restrictions
+- General: Chinese AI competition, AI agents, cybersecurity
+
+**Isaac/Tan/Frenkel (adversarial beat) cover Meta AI:**
+- "Mark Zuckerberg Shakes Up Meta's A.I. Efforts, Again" (Aug 2025) — turmoil framing, personnel churn, "compound internal turmoil"
+- Meta AI reorganizations, Llama releases, AI product coverage
+
+#### Framing Asymmetry by Event Type
+
+The same event type gets different editorial treatment depending on assigned reporter:
+
+| Event Type | OpenAI (Metz) | Meta (Isaac/Tan) |
+|------------|---------------|-------------------|
+| AI restructuring | Business pivot narrative | Organizational chaos/dysfunction |
+| New model release | Technology advancement | (Not covered by Metz at all) |
+| Safety concerns | Responsible corporate action | Privacy/surveillance investigation |
+| Executive departures | Business news | Internal turmoil indicator |
+
+#### Litigation Paradox
+
+NYT is actively suing OpenAI for billions in copyright damages (Case 1:23-cv-11195), yet Metz's coverage of OpenAI is NOT adversarial. Meanwhile, NYT has NO financial grievance against Meta but assigns adversarial beat reporters. This implies the coverage tone is driven by reporter assignment and institutional history, not by the publication's own financial interests.
+
+#### How This Differs from WIRED
+
+- **WIRED:** Same publication assigns different editorial DESKS (product review for Apple, investigative for Meta)
+- **NYT:** Different REPORTERS with different source networks and career trajectories are assigned to different companies. Isaac/Frenkel have 12+ years of adversarial Meta sourcing; Metz has technology-progress sourcing in the OpenAI/Anthropic orbit.
+
+The bias is structural and nearly invisible — each reporter appears to be "just doing their beat."
+
+### Files Changed
+1. `profiles/nytimes.yaml` — Expanded Cade Metz journalist entry with full `cross_entity_coverage_analysis` section including openai_coverage, anthropic_coverage, meta_coverage, general_ai_industry, lane_assignment_significance, and source_urls
+2. `profiles/competitor-coverage-research.yaml` — Added `cross_entity_beat_assignment` section under NYT with finding, metz_openai_examples (3), isaac_meta_examples (1 with source URL), and analytical_significance contrasting with WIRED
+3. `tests/test_nyt_cade_metz_cross_entity.py` (NEW) — 41 tests across 6 test classes:
+   - TestCadeMetzProfile (14 tests): Profile structure, cross-entity analysis, OpenAI/Meta coverage documented
+   - TestNYTCompetitorResearchBeatAssignment (8 tests): Beat assignment section, examples, significance
+   - TestCrossPublicationLaneComparison (6 tests): NYT vs WIRED mechanism contrast
+   - TestNYTJournalistFleet (8 tests): Dedicated Meta reporters vs general AI reporter
+   - TestNYTLitigationParadox (5 tests): Lawsuit vs coverage tone paradox
+4. `README.md` — Tests 3,255→3,296, files 146→147
+5. `docs/ARCHITECTURE.md` — Tests 3,214→3,296, files 145→147
+
+### Sources Used
+- Muck Rack portfolio: https://muckrack.com/cademetz/articles
+- NYT Meta AI restructuring (Isaac/Tan): https://web.archive.org/web/20250823090419/https://www.nytimes.com/2025/08/19/technology/mark-zuckerberg-meta-ai.html
+- Data harvesting article citation: https://www.nytimes.com/2024/04/06/technology/tech-giants-harvest-data-artificial-intelligence.html
+- Techmeme OpenAI Safety Committee: https://www.techmeme.com/240528/p5
+- Penguin author page: https://www.penguin.co.uk/authors/240499/cade-metz
+
+### Tests: 41 passed, 0 failed. No regressions in related test files (287 passed).
+
