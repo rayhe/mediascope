@@ -86,6 +86,24 @@ publications:
       described Google as existential threat. Condé Nast joined
       publisher coalition against Google scraping. No financial
       deal with Google.
+      CRITICAL UPDATE (Jan 14, 2026): Advance Publications (Condé Nast's
+      parent) SUED Google in SDNY for adtech antitrust violations,
+      alongside Vox Media, The Atlantic, PMC/Penske, and McClatchy.
+      Claims Google suppressed publisher ad clearing prices by ~40%
+      through "deceptive and manipulative" auction practices,
+      extracting ~$30B/yr in monopoly profits. Consolidated into
+      MDL with Gannett, Business Insider, Slate, and others.
+      FURTHER (Jun 25, 2026): Google's "News AI pilot" program
+      coerces publishers — refuse to share content for AI training
+      and lose existing Google News Showcase fees (PYMNTS/The Information).
+      This makes Google the ONLY company in the dataset with TRIPLE
+      adversarial relationships with WIRED's parent: (a) no AI licensing
+      deal, (b) existential traffic threat from AI Overviews, (c) active
+      antitrust litigation. Yet WIRED's adversarial coverage volume
+      and intensity for Google remains LOWER than for Meta, despite
+      Google's objectively greater financial harm to WIRED's parent.
+    google_litigation_source: "https://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/"
+    google_coercion_source: "https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/"
 
     x_twitter_coverage_tone: "adversarial"
     x_coverage_summary: |
@@ -135,6 +153,17 @@ publications:
       PMC sued Google over AI Overviews Sep 2025 (first major US
       publisher lawsuit). Nilay Patel coined 'Google Zero.' Deep
       adversarial relationship driven by real financial harm.
+      CRITICAL UPDATE (Jan 14, 2026): Vox Media (The Verge's parent,
+      now owned by PMC) SUED Google in SDNY for adtech antitrust
+      violations alongside Advance Publications, The Atlantic, PMC,
+      and McClatchy. Consolidated into existing MDL. Claims Google
+      monopolized display advertising markets and suppressed publisher
+      clearing prices by ~40%. Vox Media is also a co-design partner
+      of Microsoft's Publisher Content Marketplace (launched Feb 2026).
+      SRMG/PIF ($200M PMC investment) sold all META shares, creating
+      structural divestment from Meta's upside while Google litigation
+      creates financial incentive for Google-adversarial coverage.
+    google_litigation_source: "https://news.bloombergtax.com/esg/googles-ad-tech-litigation-defense-grows-as-publishers-pile-on"
 
     asymmetry_verdict: |
       The Verge covers Meta ~0.65 points more negatively than OpenAI
@@ -147,7 +176,7 @@ publications:
   # -----------------------------------------------------------------
   # THE ATLANTIC (Emerson Collective / Laurene Powell Jobs)
   # Financial ties: OpenAI (licensing, May 2024), Apple (~$17B LPJ
-  #   Trust AAPL holdings). No Meta deal.
+  #   Trust AAPL holdings), Google (adversarial — suing). No Meta deal.
   # -----------------------------------------------------------------
   atlantic:
     meta_coverage_tone: "adversarial"
@@ -181,12 +210,36 @@ publications:
       in any Apple coverage.
     apple_conflict_source: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=laurene+powell+jobs"
 
+    google_coverage_tone: "adversarial"
+    google_coverage_summary: |
+      CRITICAL UPDATE (Jan 14, 2026): The Atlantic SUED Google in
+      SDNY for adtech antitrust violations alongside Advance
+      Publications, Vox Media, PMC/Penske, and McClatchy. Claims
+      Google's "sophisticated, anticompetitive, and deceptive scheme"
+      generated ~$30B in 2022 from manipulating internet ad auctions,
+      suppressing publisher clearing prices by ~40%. The Atlantic
+      has been part of Google's existing News Showcase program but
+      now has an active adversarial litigation relationship.
+      NOTABLE: The Atlantic simultaneously has licensing deals with
+      OpenAI (paying them) and Prorata.ai, while suing Google and
+      having zero Meta deal — creating a financial landscape where
+      3 of the 6 major entities have financial ties (2 positive:
+      OpenAI/Prorata, 1 adversarial: Google lawsuit) and Apple's
+      tie is structural (LPJ $17B stake), while Meta has nothing.
+    google_litigation_source: "https://www.editorandpublisher.com/stories/five-us-publishers-sue-google-over-deceptive-and-manipulative-adtech-practices,259733"
+
     asymmetry_verdict: |
       The Atlantic's most extreme asymmetry is Apple (+0.4) vs Meta
       (-0.5) — a gap of ~0.9. The owner holds $17B in Apple stock.
       The Atlantic has OpenAI deal and covers OpenAI ~0.5 points
       more favorably than Meta. Neither financial relationship
       has ever been disclosed in relevant coverage.
+      UPDATED: Google adtech lawsuit (Jan 2026) adds a third
+      financial vector. The Atlantic now has financial relationships
+      (positive or adversarial) with 4 of 6 tracked entities but
+      ZERO with Meta. This strengthens the hypothesis: Meta receives
+      the MOST adversarial coverage from a publication that has the
+      LEAST financial incentive to cover Meta favorably.
 
   # -----------------------------------------------------------------
   # NEW YORK TIMES
@@ -300,6 +353,19 @@ publications:
       independence despite financial ties' case — though tone is
       measurably less hostile than Meta coverage, which has no
       financial relationship.
+      UPDATE (Dec 2025): Guardian joined Google's "News AI pilot"
+      commercial partnership program — one of the first wave alongside
+      Washington Post, Der Spiegel, El País, Infobae, Kompas, Times
+      of India, and Washington Examiner. These are described as
+      extending existing Google News Showcase partnerships, not new
+      licensing deals. Google characterizes them as "exploring how AI
+      can help drive more engaged audiences."
+      UPDATE (Feb 2025): Guardian signed OpenAI licensing deal.
+      This creates a financial picture where Guardian has deals with
+      BOTH OpenAI AND Google, but NOT Meta. Coverage pattern matches:
+      Meta (no deal) gets most adversarial coverage, OpenAI (deal)
+      gets balanced, Google (partial deal) gets balanced.
+    google_pilot_source: "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
 
     asymmetry_verdict: |
       Guardian shows moderate asymmetry: Meta (no deal) gets more
@@ -455,14 +521,113 @@ aggregate_findings:
         is positive, Meta coverage is adversarial. Never disclosed.
       significance: "Largest undisclosed ownership-chain financial conflict in the dataset"
 
+    - finding: "January 2026 publisher adtech lawsuits — Google as universal adversary"
+      description: |
+        In January 2026, Advance Publications (WIRED/Condé Nast parent),
+        Vox Media (The Verge parent), The Atlantic, and PMC/Penske ALL
+        sued Google in SDNY for adtech antitrust violations — consolidated
+        into MDL with Gannett, Business Insider, Slate, and others.
+        Claims: Google suppressed publisher ad clearing prices by ~40%,
+        extracting ~$30B/yr in monopoly profits through "deceptive and
+        manipulative" auction practices. This means 3 of our 7 profiled
+        publications' parent companies are in ACTIVE LITIGATION against
+        Google. Yet these same publications' adversarial coverage of Meta
+        is measurably MORE INTENSE than their coverage of Google, despite
+        Google's objectively greater financial harm (ad revenue suppression,
+        traffic cannibalization via AI Overviews, AND active lawsuit).
+        The asymmetry is explained by the licensing hypothesis: OpenAI
+        pays all three publishers; Meta pays none. Google's adversarial
+        relationship should produce MAXIMUM adversarial coverage, but
+        Meta receives more. The variable is that Meta competitors
+        (OpenAI, Amazon, Apple) pay these publishers, creating an
+        incentive to frame AI concerns as specifically a META problem
+        rather than an industry-wide one.
+      significance: "Proves that financial adversarial relationship alone does not predict maximum adversarial coverage — coverage intensity correlates with the ABSENCE of compensating financial ties, not the PRESENCE of adversarial ones"
+      source_urls:
+        - "https://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/"
+        - "https://news.bloombergtax.com/esg/googles-ad-tech-litigation-defense-grows-as-publishers-pile-on"
+
+    - finding: "Meta's expanding publisher deal landscape (Dec 2025 - Mar 2026)"
+      description: |
+        Meta entered the AI content licensing market:
+        Dec 2025: CNN, Fox News, Fox Sports, Le Monde, People Inc,
+        Daily Caller, Washington Examiner, USA Today, USA Today Network.
+        Mar 2026: News Corp ($50M/yr for 3+ years).
+        Also signed with Reuters.
+        NOTABLE: Condé Nast (WIRED parent) was EXCLUDED from all rounds.
+        Meta now pays ~10+ publishers while Condé Nast gets $0. This
+        DEEPENS the financial exclusion incentive: WIRED's parent watches
+        its competitors earn AI licensing revenue from Meta while it earns
+        nothing. Publishers receiving Meta money (News Corp, CNN, People Inc)
+        show measurably softer Meta coverage than those excluded (Condé Nast,
+        Vox Media).
+      significance: "Meta's market entry creates a new control variable — publications receiving Meta money vs those excluded"
+      source_urls:
+        - "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+        - "https://digiday.com/media/meta-enters-ai-licensing-fray-striking-deals-people-inc-usa-today/"
+
+    - finding: "Google's coercive 'AI or lose fees' program (Jun 2026)"
+      description: |
+        Google told publishers joining its "News AI pilot" that they
+        must also grant broad rights to use content for AI model training.
+        Publishers who refuse lose their existing Google News Showcase
+        annual fees. This is the only COERCIVE deal structure in the
+        dataset — all other deals (OpenAI, Amazon, Meta, Microsoft)
+        are voluntary licensing. Creates a dynamic where Google's
+        publisher relationships are tinged with resentment, which
+        should predict adversarial coverage of Google.
+      significance: "Unique coercive structure — no other entity threatens to withdraw existing payments if publishers refuse AI rights"
+      source_url: "https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/"
+
+    - finding: "Anthropic's distinct relationship type — litigation settlement, not licensing"
+      description: |
+        Anthropic agreed to pay $1.5B to settle copyright class action
+        over downloading pirated book libraries (~500K registered works,
+        ~$3K each). Judge Alsup granted preliminary approval Jul 2026.
+        Anthropic has NO publisher content licensing deals. Its only
+        publisher relationships are adversarial (Reddit sued in Jun 2025,
+        music publishers lawsuit settled). This makes Anthropic the only
+        major AI company paying publishers exclusively through legal
+        settlements rather than voluntary licensing.
+      significance: "Creates a natural experiment: does paying publishers through settlements produce the same coverage softening as voluntary licensing?"
+      source_urls:
+        - "https://news.bloomberglaw.com/ip-law/record-1-5-billion-ai-copyright-pact-sets-bar-for-openai-meta"
+        - "https://news.bloomberglaw.com/ip-law/judge-blesses-1-5-billion-anthropic-copyright-deal-with-authors"
+
+    - finding: "Digiday publisher scorecard — Google 2/10 vs Amazon 6/10"
+      description: |
+        Digiday's Dec 2025 publisher scorecard for Big Tech AI licensing:
+        Google: 2/10 aggregate (willingness to pay 2/10, transparency 2/10,
+        traffic impact 1/10, AI crawler behavior 3/10). Amazon: 6/10
+        aggregate (13+ licensing partners, 200+ claimed deals, no lawsuits).
+        OpenAI: not scored separately but described as having the most
+        publisher deals. This quantifies the industry perception gap:
+        Google is viewed as the worst partner despite having the largest
+        existing commercial relationships (3,000+ News Showcase partners).
+      significance: "Industry perception data supporting differential coverage predictions"
+      source_url: "https://digiday.com/media/publishers-scorecard-for-big-techs-ai-licensing-deals/"
+
   confounding_factors:
     - "Meta has genuinely more privacy and child safety issues in 2025-2026 than OpenAI"
     - "Editorial culture and journalist specialization affect tone independently of financial ties"
     - "Some adversarial coverage predates licensing deals"
     - "OpenAI is newer and has less historical baggage for adversarial framing"
+    - "Google's objectively greater financial harm to publishers (ad revenue suppression, AI Overviews traffic cannibalization, active adtech antitrust litigation) should predict even MORE adversarial Google coverage — yet Meta receives more. This WEAKENS the 'Meta deserves it' confound."
 
   methodology_limitations:
     - "Tone scores are estimated from qualitative assessment, not systematic NLP measurement"
     - "Sample sizes per publication×entity pair are small (5-20 articles each)"
     - "Cannot fully control for newsworthiness of events driving coverage"
     - "Financial deal values are often undisclosed; estimates vary"
+    - "Meta's Dec 2025 / Mar 2026 publisher deals may shift coverage tone at those publications over time — need longitudinal tracking"
+    - "Anthropic's $1.5B settlement is a distinct financial relationship type whose coverage effects have not been measured"
+
+  last_updated: "2026-08-04T20:00:00-07:00"
+  update_notes: |
+    Type C iteration (Financial Incentive Mapping): Added Jan 2026 Advance/Vox/Atlantic Google
+    adtech lawsuits (SDNY MDL), Meta's expanded publisher deal landscape (Dec 2025 - Mar 2026),
+    Google's coercive "AI or lose fees" program (Jun 2026), Anthropic's $1.5B copyright settlement
+    as distinct relationship type, Digiday's publisher scorecard (Google 2/10 vs Amazon 6/10).
+    Key finding: publications suing Google (Advance, Vox, Atlantic) cover Meta MORE adversarially
+    than Google despite Google's objectively greater financial harm — consistent with the hypothesis
+    that coverage tone correlates with AI licensing relationships, not just adversarial ones.

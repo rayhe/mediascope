@@ -78,6 +78,9 @@ relationship_types:
   mixed: "Multiple types of relationship (some positive, some negative)"
   none: "No known financial relationship"
   negotiating: "Deals under discussion but not yet signed"
+  settlement: "Payment through legal settlement, not voluntary licensing"
+  coercive: "Publisher pressured to accept terms or lose existing benefits"
+  adversarial_litigation: "Active lawsuit filed by publisher against entity"
 
 # ===================================================================
 # COVERAGE PREDICTION DEFINITIONS

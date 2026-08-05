@@ -1890,11 +1890,27 @@ competitor_relationships:
     source_url: "https://www.reuters.com/technology/apple-explores-ai-deals-with-news-publishers-new-york-times-2023-12-22/"
     coverage_prediction: "softer"
   google:
-    financial_tie: "adversarial"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No deal. CEO Roger Lynch has described Google AI Overviews as existential threat. Condé Nast joined publisher coalition against Google scraping."
+    financial_tie: "adversarial_litigation"
+    estimated_value: "$0 (seeking unspecified damages)"
+    direction: "outward — Advance suing Google"
+    description: >
+      TRIPLE ADVERSARIAL: (1) No AI licensing deal. (2) CEO Roger Lynch has described Google AI
+      Overviews as existential threat to publisher revenue. (3) ADVANCE PUBLICATIONS SUED GOOGLE
+      (Jan 14, 2026) for adtech antitrust violations in SDNY, alongside Vox Media, The Atlantic,
+      PMC/Penske, and McClatchy — consolidated into MDL with Gannett, Business Insider, Slate, and
+      others. Claims Google monopolized display ad markets, used "deceptive and manipulative" auction
+      practices, suppressed publisher clearing prices by ~40%, and extracted ~$30B/yr in monopoly
+      profits. Filed in wake of DOJ's successful Aug 2024 antitrust ruling (Google found to have
+      illegal ad tech monopoly). ADDITIONAL CONFLICT (Jun 25, 2026): Google's "News AI pilot" program
+      — publishers who refuse to share content for AI training lose existing Google News Showcase fees
+      (The Information/PYMNTS). Condé Nast is not known to have joined this pilot.
+      SOURCE URLS:
+      - https://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/
+      - https://news.bloombergtax.com/esg/googles-ad-tech-litigation-defense-grows-as-publishers-pile-on
+      - https://www.editorandpublisher.com/stories/five-us-publishers-sue-google-over-deceptive-and-manipulative-adtech-practices,259733
+      - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
     coverage_prediction: "adversarial"
+    case_reference: "Advance Publications Inc. v. Google LLC, SDNY (Jan 14, 2026), consolidated MDL"
   x_twitter:
     financial_tie: "none"
     estimated_value: "$0"

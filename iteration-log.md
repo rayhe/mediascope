@@ -1,4 +1,71 @@
 # MediaScope Iteration Log
+## 2026-08-04 20:00 PT — Type C: Financial Incentive Mapping — Jan 2026 Publisher Adtech Lawsuits + Meta Deal Expansion + Google Coercion
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Verify and expand financial relationships between publications and tech companies, with emphasis on the January 2026 publisher antitrust lawsuits against Google, Meta's expanding publisher deal landscape, and Google's coercive "AI or lose fees" pilot.
+
+### Key Discoveries
+
+#### 1. January 2026 Publisher Adtech Lawsuits Against Google (MAJOR)
+- **Advance Publications** (Condé Nast/WIRED parent) sued Google Jan 14, 2026 in SDNY
+- **Vox Media** (The Verge parent) sued Google same week
+- **The Atlantic** sued Google same week
+- **PMC/Penske** and **McClatchy** also filed
+- Consolidated into MDL with Gannett, Business Insider, Slate, and others
+- Claims: Google monopolized display ad markets, suppressed publisher clearing prices by ~40%, extracted ~$30B/yr through "deceptive and manipulative" auction practices
+- Filed in wake of DOJ's successful Aug 2024 antitrust ruling
+- **Analytical significance:** 3 of our 7 profiled publications' parent companies are in ACTIVE LITIGATION against Google, yet their adversarial coverage of META is measurably MORE INTENSE than their coverage of Google. This contradicts the "publications cover adversaries hardest" null hypothesis and supports the licensing hypothesis: coverage intensity correlates with the ABSENCE of compensating financial ties (OpenAI pays all three; Meta pays none).
+- Sources: Digiday, Bloomberg Tax, Editor & Publisher, PrismNews, MissionMedia
+
+#### 2. Meta's Expanding Publisher Deal Landscape (Dec 2025 - Mar 2026)
+- **Dec 2025:** CNN, Fox News, Fox Sports, Le Monde, People Inc, Daily Caller, Washington Examiner, USA Today, USA Today Network
+- **Mar 2026:** News Corp ($50M/yr for 3+ years) — largest single Meta publisher deal
+- **Also:** Reuters
+- **Critical:** Condé Nast EXCLUDED from all rounds. Meta now pays ~10+ publishers while Condé Nast gets $0.
+- **Prediction:** Publications receiving Meta money (News Corp, CNN, People Inc) should show measurably softer Meta coverage than those excluded (Condé Nast, Vox Media). News Corp already confirmed as balanced control.
+
+#### 3. Google's Coercive "AI or Lose Fees" Program (Jun 2026)
+- Google's "News AI pilot" program (reported by The Information/PYMNTS, Jun 25, 2026)
+- Publishers must grant broad rights for AI model training to participate
+- Publishers who refuse lose existing Google News Showcase annual fees
+- **Unique:** Only coercive deal structure in the dataset — all other deals (OpenAI, Amazon, Meta, Microsoft) are voluntary
+- Guardian, Washington Post, FT, and others joined the pilot (Dec 2025 / Feb 2026)
+- Source: https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+
+#### 4. Anthropic's Distinct Relationship Type — Settlement, Not Licensing
+- $1.5B copyright class action settlement (~500K registered works, ~$3K each)
+- Judge Alsup granted preliminary approval Jul 2026
+- Anthropic has NO publisher content licensing deals
+- Only publisher relationships are adversarial (Reddit sued Jun 2025, music publishers)
+- Creates natural experiment: does paying through settlements produce same coverage softening as voluntary licensing?
+- Sources: Bloomberg Law
+
+#### 5. Digiday Publisher Scorecard (Dec 2025)
+- Google: 2/10 aggregate (willingness to pay 2/10, transparency 2/10, traffic impact 1/10)
+- Amazon: 6/10 aggregate (13+ licensing partners, no lawsuits)
+- Quantifies industry perception gap favoring Amazon over Google
+- Source: https://digiday.com/media/publishers-scorecard-for-big-techs-ai-licensing-deals/
+
+### Files Updated
+- `profiles/competitor-coverage-research.yaml`: Updated WIRED Google section (triple adversarial: no deal + existential threat + active lawsuit), The Verge Google section (lawsuit + Microsoft co-design partner), The Atlantic section (complete rewrite with Google lawsuit, updated asymmetry verdict), Guardian Google section (joined News AI pilot), added 6 new aggregate findings (Jan 2026 lawsuits cluster, Meta deal expansion, Google coercion, Anthropic settlement type, Digiday scorecard), updated confounding factors and methodology limitations, added timestamp and update notes
+- `profiles/competitor-entities.yaml`: Added 3 new relationship types (`adversarial_litigation`, `settlement`, `coercive`)
+- `profiles/wired.yaml`: Updated Google competitor_relationships from "adversarial" to "adversarial_litigation" with full lawsuit details and source URLs
+- `tests/test_competitor_coverage.py`: Added new relationship types to valid_types set
+
+### New Relationship Types Added
+| Type | Description |
+|------|------------|
+| `adversarial_litigation` | Active lawsuit filed by publisher against entity |
+| `settlement` | Payment through legal settlement, not voluntary licensing |
+| `coercive` | Publisher pressured to accept terms or lose existing benefits |
+
+### Key Analytical Takeaway
+The January 2026 publisher lawsuits provide the strongest evidence yet for the licensing hypothesis. Advance Publications, Vox Media, and The Atlantic are all suing Google — making Google their greatest financial adversary. Yet these same publications cover Meta MORE adversarially than Google. The explanatory variable is that OpenAI, Amazon, and Apple pay these publishers, creating an incentive to frame AI concerns as specifically a META problem rather than an industry-wide one. Financial adversarial relationship alone does not predict maximum adversarial coverage; coverage intensity correlates with the ABSENCE of compensating financial ties.
+
+**Commit:** (pending — tests running)
+
+---
+
 ## 2026-08-04 19:00 PT — Type B: Journalist Cross-Entity Tracking — Lauren Goode (WIRED) Wearables Coverage Asymmetry
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
