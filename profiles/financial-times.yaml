@@ -101,16 +101,21 @@ known_conflicts:
       issue with limited direct impact on FT's US tech/Meta coverage.
     severity: 1
     evidence: "Reuters 2015 acquisition coverage; Japanese media criticism"
-  - type: "no_ai_licensing_conflict"
+  - type: "openai_licensing_conflict"
     description: >
-      NOTABLE ABSENCE: Unlike Condé Nast (Wired parent — OpenAI, Amazon Rufus, Apple
-      deals), The Atlantic (OpenAI deal), and NYT (OpenAI lawsuit), the FT has NOT
-      signed AI content licensing deals with any major Meta AI competitor as of mid-2026.
-      This means FT's Meta coverage lacks the specific competitive revenue conflict
-      that is central to the Wired/Condé Nast analysis. FT's Meta coverage should be
-      evaluated on its merits without the AI-licensing overlay.
-    severity: 1
-    evidence: "Absence from public AI licensing deal announcements through Jul 2026"
+      FT signed content licensing deal with OpenAI in April 2024 (Reuters confirmed).
+      FT content appears in ChatGPT with attribution. FT also became ChatGPT Enterprise
+      customer (all employees). Financial terms undisclosed but Press Gazette estimates
+      OpenAI publisher deals range $1-5M/yr (FT likely higher given business news value).
+      FT also has a deal with Prorata.ai. This creates a competitive revenue conflict:
+      FT receives money from Meta's primary AI competitor (OpenAI) while Meta pays FT $0.
+      FT has NOT disclosed this financial relationship in its OpenAI business coverage,
+      including stories breaking OpenAI's 5% gov't stake proposal and IPO plans — stories
+      that suggest preferential access from a deal partner.
+    severity: 3
+    evidence: >
+      Reuters Apr 2024 coverage; OpenAI partnership announcement; Entrepreneur.com;
+      Press Gazette AI deals tracker; Prorata.ai publisher list
 
 
 # ===================================================================
@@ -173,7 +178,7 @@ ai_crawl_policy:
   blocks_gptbot: true
   blocks_ccbot: true
   blocks_google_extended: false
-  notes: "FT has been aggressive about protecting content from AI training. Has not signed major AI licensing deals."
+  notes: "FT has been aggressive about protecting content from unauthorized AI scraping. Signed OpenAI licensing deal Apr 2024; also has Prorata.ai deal."
 
 # Target Entity Clusters
 target_entities:

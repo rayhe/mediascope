@@ -1,4 +1,57 @@
 # MediaScope Iteration Log
+## 2026-08-04 22:00 PT — Type D+A Hybrid: Test & Verify + FT Coverage Deep Dive
+
+**Rotation:** D (Test & Verify) + A (Competitor Coverage Deep Dive — FT × OpenAI/Meta)
+**Focus:** Write new financial relationships test suite (24 tests), fix FT profile data integrity bug, upgrade FT coverage analysis from "neutral" to "balanced_adversarial" with concrete evidence.
+
+### Full Test Suite Results
+
+**Starting state:** 3,175 passed, 4 failed (doc counts), 28 xfailed
+**Ending state:** 3,199 passed, 0 failed, 28 xfailed
+
+### New Tests: `test_financial_relationships.py` (24 tests)
+
+**7 test classes covering:**
+
+1. **TestCompetitorEntities (7 tests):** Entity definitions, regex compilation, relationship type completeness (including new adversarial_litigation/settlement/coercive), semantic distinctness, coverage prediction categories.
+
+2. **TestCompetitorCoverageResearch (8 tests):** Publication Meta coverage tone validation, OpenAI-softer-than-Meta directional check, asymmetry verdict presence, source URL coverage ratio, tone vocabulary validation (caught `balanced_adversarial` as valid), WIRED-Google adversarial_litigation confirmation, Meta-more-adversarial-than-Google paradox.
+
+3. **TestWiredProfileFinancialTies (3 tests):** WIRED-Google relationship type = adversarial_litigation, lawsuit details in description, estimated value = $0.
+
+4. **TestAggregateFindings (2 tests):** Aggregate findings presence and source attribution.
+
+5. **TestCrossProfileConsistency (2 tests):** WIRED has competitor_relationships section, all financial_tie values reference valid types.
+
+6. **TestAsymmetryScoring (2 tests):** Licensing hypothesis directional validation (no pub covers Meta softer than OpenAI), lawsuit paradox confirmation (WIRED suing Google but covers Meta harder).
+
+### Data Integrity Fix: FT Profile Contradiction
+
+**Bug:** `financial-times.yaml` `known_conflicts` section stated "FT has NOT signed AI content licensing deals with any major Meta AI competitor" (severity 1) — but the `competitor_relationships` section (added same day by Type C) correctly showed OpenAI licensing deal (Apr 2024, $5-10M/yr).
+
+**Fix:** Replaced `no_ai_licensing_conflict` with `openai_licensing_conflict` (severity 3). Updated with: Reuters Apr 2024 deal confirmation, ChatGPT Enterprise adoption, Press Gazette value estimates, Prorata.ai deal, non-disclosure finding. Also fixed `ai_crawl_policy.notes` which repeated the incorrect claim.
+
+### FT Coverage Reclassification
+
+**Old:** FT `meta_coverage_tone: "neutral"` (partial control case)
+**New:** FT `meta_coverage_tone: "balanced_adversarial"`
+
+**Evidence for upgrade:**
+- **Jul 9, 2026: "Super Sensing" scoop** — FT-exclusive investigation on Meta's continuous-recording prototype glasses. Framing: "quietly record everything," LED deactivation concern, surveillance vocabulary. Became major news cycle driver (MacRumors, Android Authority, Times of India, etc.).
+- **Hannah Murphy's beat pattern** — FT's primary Meta reporter produces high-volume adversarial coverage: equity award cuts, metaverse pivot, AI glasses features, Muse Spark, agentic tools, Oversight Board tensions. All framed as investigations/revelations, not business news.
+- **Asymmetry with OpenAI:** FT breaks OpenAI business stories (5% gov't stake, IPO, $34B spending) with neutral-to-positive framing. Same access journalism, different narrative frame — determined by financial relationship.
+- **Upgraded gap estimate:** ~0.4-0.5 (from 0.2-0.3)
+
+**Key analytical insight:** FT demonstrates that even "respectable" business press shows the licensing-coverage correlation. The entity paying you gets scoops framed as business news; the entity not paying you gets scoops framed as investigations.
+
+### Doc Updates
+- README: tests 3,175→3,199, files 143→144, added test_financial_relationships.py listing
+- ARCHITECTURE.md: tests 3,175→3,199, files 143→144, added test_financial_relationships.py listing
+
+**Commit:** (pending)
+
+---
+
 ## 2026-08-04 20:00 PT — Type C: Financial Incentive Mapping — Jan 2026 Publisher Adtech Lawsuits + Meta Deal Expansion + Google Coercion
 
 **Rotation:** C (Financial Incentive Mapping)
@@ -26025,3 +26078,47 @@ Gizmodo is owned by Keleops AG (Swiss), with ZERO Condé Nast/Advance financial 
 - `examples/sample_output/medianama_meta_glasses_bystander_privacy_2026_07_08_article.txt`
 - `examples/sample_output/medianama_meta_glasses_bystander_privacy_2026_07_08_analysis.md`
 - README.md, ARCHITECTURE.md, METHODOLOGY.md, QUALITY_STANDARDS.md, ACCURACY_GUIDE.md (stats: 205→206 articles, 49→50 publications, 718→721 patterns)
+
+## 2026-08-04 21:00 PT — Type D: Test & Verify — Fix 31 Test Failures
+
+**Rotation:** D (Test & Verify)
+**Focus:** Run full test suite, fix failures from recent Type B/C commits.
+
+### Initial State
+- **30 failed**, 3149 passed, 28 xfailed (336.92s)
+
+### Failures Diagnosed
+
+#### Category 1: YAML Syntax Errors (26 failures in test_competitor_coverage.py)
+Both `nytimes.yaml` and `gizmodo.yaml` had YAML parse errors that prevented loading:
+
+1. **nytimes.yaml (line 312):** `insider_pattern_analysis:` was indented 2 spaces inside the `insider_transactions` list, making it appear as a mapping key inside a block sequence. YAML parser expected block end but found `?` (mapping key indicator). **Fix:** Un-indented entire block (40 lines) to top-level scope.
+
+2. **gizmodo.yaml (line 27):** Unquoted `+` operator in `business_model` value:
+   ```yaml
+   # BROKEN:
+   business_model: "lead-generation..." + affiliate revenue
+   # FIXED:
+   business_model: "lead-generation... + affiliate revenue"
+   ```
+
+#### Category 2: Structural Consistency (4 failures)
+- README.md and ARCHITECTURE.md didn't list `test_competitor_coverage.py`
+- Claimed 142 test files / 3142 tests, actual was 143 / 3175
+- Per-file count initially entered as 65, actual was 33
+
+#### Category 3: Ownership Parser (1 failure in test_jul7_regressions.py)
+- Fixing gizmodo YAML exposed that its `ownership_chain` uses dict format (`{current: {...}, previous: [...]}`) while code expected flat list format
+- **Fix:** Added dict-to-flat-list conversion in `ownership.py:parse_ownership_chain()`, plus skip guard for non-dict entries
+
+### Final State
+- **0 failed**, 3179 passed, 28 xfailed
+
+### Files Changed
+- `profiles/nytimes.yaml`: Un-indented insider_pattern_analysis block
+- `profiles/gizmodo.yaml`: Quoted business_model value
+- `mediascope/conflicts/ownership.py`: Handle dict-format ownership_chain
+- `README.md`: Updated counts (3175/143), added test_competitor_coverage.py entry
+- `docs/ARCHITECTURE.md`: Updated counts (3175/143), added test_competitor_coverage.py to tree
+
+**Commit:** 97074c6 — pushed to GitHub

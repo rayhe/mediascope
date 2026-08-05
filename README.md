@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 3,175 | Across 143 test files |
+| Tests | 3,199 | Across 144 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,13 +464,14 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **3175 tests** across 143 test files, each covering a different analytical capability:
+MediaScope has **3199 tests** across 144 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
 | `test_accuracy_guide.py` | 13 | ACCURACY_GUIDE.md documentation consistency: existence and size, cross-references from README/AGENT_GUIDE/ARCHITECTURE, content structure (VADER polarity, genre accuracy, decision tree, correction paths A-L, misinterpretation patterns, validation checklist, known gaps), annotated article count sync with corpus |
 | `test_analyst_quote_attribution.py` | 13 | Analyst/financial coverage: firm-level post-attribution suppression for short/long quotes, wire service cross-citation filtering, genuine scare quote preservation |
 | `test_entities.py` | 28 | Entity detection, regex patterns, false-positive exclusion, cluster formats, Mosseri/Instagram leadership |
+| `test_financial_relationships.py` | 24 | Financial relationship data integrity: competitor entity definitions, relationship types (adversarial_litigation, settlement, coercive), coverage research consistency, cross-profile validation, asymmetry scoring hypothesis (licensing coverage correlation, lawsuit paradox) |
 | `test_sentiment.py` | 46 | 8-dimension scoring, VADER/TextBlob composite, framing correction pipeline, active-negative agency, headline override, security context adjustment, self-referential investigation detection |
 | `test_source_stance.py` | 60 | Source extraction, stance classification, outsourced intensity, power asymmetry, counted anonymous sources, no-comment exclusion, product name stop-filter, kicker framing, isolation/pressure as adversarial devices |
 | `test_source_extraction_fixes.py` | 26 | Pattern 3 case-insensitivity fix, Pattern 5c verb-before-surname, attribution verb expansion (thinks/believes/considers/cautions), "called" naming-context filter, geographic/org false positives |

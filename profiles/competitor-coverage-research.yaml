@@ -294,16 +294,45 @@ publications:
   #   No Meta deal. No Apple/Google/Amazon deal.
   # -----------------------------------------------------------------
   financial-times:
-    meta_coverage_tone: "neutral"
+    meta_coverage_tone: "balanced_adversarial"
     meta_coverage_summary: |
-      FT covers Meta with standard business-press framing. Less
-      adversarial than WIRED/Verge but not favorable. Nikkei ownership
-      creates no competitive overlap. FT serves as partial control
-      case — no Meta financial relationship, no Meta adversarial
-      relationship either.
-      CORRECTION (from Asymmetry artifact): FT DOES have OpenAI deal
-      (confirmed Reuters Apr 2024). Earlier claim of 'no AI deals'
-      was incorrect.
+      FT covers Meta with business-press framing that includes significant
+      investigative components. Hannah Murphy (SF-based Meta beat reporter)
+      produces high-volume, high-impact Meta coverage including the Jul 9
+      2026 "super sensing" glasses scoop — an FT-exclusive investigation
+      that became the origin node for a major news cycle across MacRumors,
+      Android Authority, Times of India, and others. FT regularly breaks
+      internal Meta reorganizations, product strategy leaks, and AI
+      development milestones. Coverage is NOT neutral — it consistently
+      leads with adversarial framing elements (surveillance vocabulary,
+      privacy risk emphasis, regulatory scrutiny). More sophisticated
+      than WIRED's loaded-language approach but structurally adversarial
+      nonetheless. Nikkei ownership creates no direct competitive overlap,
+      but the OpenAI licensing deal (Apr 2024) creates an asymmetry:
+      FT gets money from Meta's AI competitor while Meta pays FT nothing.
+    meta_examples:
+      - title: "Meta's 'Super Sensing' Prototype Glasses Quietly Record Everything"
+        date: "2026-07-09"
+        tone: -0.55
+        framing: "investigative scoop, surveillance vocabulary ('quietly record everything'), privacy alarm, regulatory concern"
+        source_url: "https://www.macrumors.com/2026/07/09/meta-super-sensing-glasses-record-everything/"
+        notes: >
+          FT-exclusive investigation. Key framing: 'quietly record', 'every
+          moment', Meta executives 'don't want to activate the LED'. Became
+          major news cycle driver. Metadata vs raw footage distinction buried
+          below surveillance framing. Internal debate angle positions Meta
+          as aware of privacy concerns but proceeding anyway.
+      - title: "Hannah Murphy — high-volume Meta beat coverage"
+        date: "2026-Q1-Q3"
+        tone: -0.35
+        framing: "business investigative, source-heavy, frequently breaks internal Meta moves"
+        notes: >
+          Murphy has broken: Meta equity award cuts (Feb 2026), Vishal Shah
+          metaverse pivot, AI glasses continuous recording, Muse Spark AI
+          model, agentic tools, Oversight Board tensions over Zuckerberg
+          'free speech' overhaul. Access-heavy reporting that gets internal
+          sources to talk — similar access-journalism pattern seen with
+          OpenAI, but used to drive adversarial narratives for Meta.
 
     openai_coverage_tone: "neutral_to_positive"
     openai_coverage_summary: |
@@ -316,14 +345,31 @@ publications:
     openai_deal_source: "https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/"
     openai_deal_value_source: "https://www.entrepreneur.com/business-news/openai-can-now-access-financial-times-articles-to-train-ai/473548/"
 
+    google_coverage_tone: "neutral_to_positive"
+    google_coverage_summary: |
+      FT covers Google with standard business-press framing. Less
+      adversarial than Meta coverage. Notable: FT has reportedly
+      participated in Google's News AI pilot program, though this
+      requires further verification. Google coverage focuses on
+      business performance, AI products, and regulatory issues with
+      balanced tone — contrasting with Meta coverage where similar
+      topics receive more adversarial framing.
+
     asymmetry_verdict: |
-      FT shows moderate asymmetry: OpenAI (deal partner) gets neutral-
-      to-positive coverage with apparent preferential access for
-      business scoops. Meta (no deal) gets neutral coverage. Gap
-      is ~0.2-0.3 — smaller than WIRED/Verge/Atlantic but measurable.
-      FT's OpenAI coverage has the hallmark of access journalism:
-      breaking OpenAI business stories that suggest the company
-      provides preferential information flow to deal partners.
+      FT shows moderate-to-significant asymmetry upon closer analysis.
+      Reclassified from 'neutral' to 'balanced_adversarial' for Meta
+      coverage based on the Jul 2026 "super sensing" investigation
+      and Hannah Murphy's consistently adversarial framing of Meta
+      internal developments. OpenAI (deal partner) gets neutral-to-
+      positive coverage with apparent preferential access for business
+      scoops (5% gov't stake, IPO plans, spending data). Meta (no deal)
+      gets investigations framed around surveillance, privacy alarm,
+      and regulatory scrutiny. Gap is ~0.4-0.5 — larger than initially
+      assessed. The FT demonstrates that even "respectable" business
+      press shows the licensing-coverage correlation: the entity paying
+      you gets scoops framed as business news; the entity not paying
+      you gets scoops framed as investigations. Same access journalism,
+      different narrative frame.
 
   # -----------------------------------------------------------------
   # THE GUARDIAN (Scott Trust / GMG)

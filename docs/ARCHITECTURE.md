@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 3175 tests across 143 test files (all from real articles)
+├── tests/                       # 3199 tests across 144 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -467,6 +467,7 @@ mediascope/
 │   ├── test_cli_doc_consistency.py # Structural consistency: validates all CLI examples in docs/*.md and README.md use real CLI flags (catches phantom flags) and that documented commands are real
 │   ├── test_claims.py          # Claim-to-source mapping, statistic/quote detection
 │   ├── test_entities.py        # Entity detection, regex, false-positive exclusion
+│   ├── test_financial_relationships.py  # Financial relationship data integrity, asymmetry hypothesis
 │   ├── test_glasses_deep_dive.py # Glasses launch fixes: kicker framing, product-name stop-filter, emotional_appeal exclusion
 │   ├── test_gizmodo_fury_review.py # Gizmodo Meta Fury contradictory review: entity detection, Path F tone correction, emotional terms
 │   ├── test_gizmodo_glasses_harassment_ban_jul23.py # Gizmodo glasses harassment Instagram ban (Jul 23): 15 framing devices (7 types), 5 new patterns: escalation_amplification "reached entirely new heights" (peak-escalation phrase), escalation_amplification "fever pitch", recidivism_framing sardonic "[Entity]'s always been good at" chronic behavior, recidivism_framing predictive "We can expect more mixed messaging", editorial_aside parenthetical "meanwhile" contrast. Control-case convergence: Swiss-owned Gizmodo produces identical framing to WIRED (zero Condé Nast connection)
