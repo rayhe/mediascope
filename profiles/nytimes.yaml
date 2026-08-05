@@ -1427,8 +1427,91 @@ internal_ai_tools:
 # ===================================================================
 key_journalists:
   - name: "Mike Isaac"
-    beat: "Meta/Facebook, Uber, Big Tech"
-    known_patterns: "NYT's primary Meta beat reporter for 12+ years. Deep sourcing inside Meta. Gerald Loeb Award (Uber). 'Super Pumped' author (2019, Showtime adaptation 2022). Career: Wired → AllThingsD/Re/code → NYT (2014). MSNBC tech correspondent. Migrated from Condé Nast orbit."
+    beat: "Silicon Valley correspondent (formerly Meta/Facebook, Uber)"
+    known_patterns: "NYT's primary Meta beat reporter for 12+ years (2014-2026). Gerald Loeb Award (Uber). 'Super Pumped' author (2019, Showtime adaptation 2022). Career: Wired → AllThingsD/Re/code → NYT (2014). MSNBC tech correspondent. In 2026, moved to broader 'Silicon Valley correspondent' role covering all tech companies; Eli Tan replaced him on dedicated Meta beat."
+    beat_change:
+      date: "2026 (announced via NYT internal memo, published on nytco.com)"
+      old_beat: "Meta/Facebook (dedicated, 12+ years)"
+      new_beat: "Silicon Valley correspondent — rapid investigations of tech companies, social media, investors, entrepreneurs, tech leaders and politics"
+      source_url: "https://talkingbiznews.com/media-news/ny-times-taps-tan-to-cover-meta-isaac-to-cover-silicon-valley/"
+      replacement: "Eli Tan (promoted from NYT fellowship)"
+      memo_quote: "After a stellar run covering Meta and Mark Zuckerberg, Mike is taking on a broader beat as Silicon Valley correspondent."
+    cross_entity_coverage_analysis:
+      summary: |
+        Mike Isaac's cross-entity coverage — visible since his 2026 beat expansion —
+        reveals that the SAME journalist applying the SAME standards produces remarkably
+        consistent framing across Meta, Anthropic, SpaceX, and OpenAI. His recent work
+        on the Meta-Anthropic $10B data center deal, Anthropic IPO filing, SpaceX IPO,
+        and Meta prediction markets all use standard business-reporting tone. This
+        confirms the asymmetry finding from the Cade Metz analysis: the NYT's differential
+        Meta framing is an INSTITUTIONAL assignment pattern, not individual reporter bias.
+        When Isaac was assigned exclusively to Meta, his coverage was deeper and more
+        adversarial (the nature of dedicated beat reporting). The NYT's choice to maintain
+        a dedicated adversarial Meta beat while covering OpenAI/Anthropic through a
+        technology-progress lens (Metz) is an editorial structure decision, not a reflection
+        of any individual journalist's bias.
+      meta_coverage_post_beat_change:
+        tone: "neutral_to_positive_business"
+        examples:
+          - title: "Meta in Talks to Lease Computing Power to Anthropic in Potential $10 Billion Deal"
+            date: "2026-07-17"
+            framing: "neutral business reporting — deal size, revenue diversification opportunity"
+            source_url: "https://www.reuters.com/technology/meta-talks-10-billion-anthropic-compute-deal-nyt-reports-2026-07-17/"
+          - title: "Meta Building Prediction Market App (Arena)"
+            date: "2026-06-23"
+            framing: "neutral business reporting — experimental product, Polymarket/Kalshi comparisons"
+            source_url: "https://www.techmeme.com/260626/p27"
+          - title: "Mark Zuckerberg Blasts Centralization of A.I. Power"
+            date: "2026-07-28"
+            framing: "industry-debate framing — open vs closed AI, Zuckerberg's philosophy"
+            source_url: "https://epublications.marquette.edu/zuckerberg_files_transcripts/2266"
+            co_byline: "Eli Tan"
+          - title: "Meta's big bet on 'superintelligence'"
+            date: "2026-02-19"
+            framing: "business news — capital expenditure, strategy shift from VR to AI"
+            source_url: "https://www.marketplace.org/episode/2026/02/19/metas-big-bet-on-super-intelligence"
+          - title: "Meta shifting metaverse investment to AI glasses and wearables"
+            date: "2025-12-04"
+            framing: "neutral business reporting — 'given the momentum', strategy realignment"
+            source_url: "https://www.techmeme.com/251204/p43"
+      anthropic_coverage:
+        tone: "neutral_business"
+        examples:
+          - title: "Anthropic IPO Filing"
+            date: "2026-06-01"
+            framing: "standard business news — IPO filing, joining OpenAI and SpaceX in 2026 public offerings"
+            source_url: "https://www.techmeme.com/260601/p46?ref=biztoc.com"
+          - title: "Meta-Anthropic $10B Compute Deal"
+            date: "2026-07-17"
+            framing: "neutral deal reporting — both companies positioned factually"
+      spacex_coverage:
+        tone: "neutral_business"
+        examples:
+          - title: "SpaceX Is About to Be in Your 401(k) Whether You Like It or Not"
+            date: "2026-06-12"
+            framing: "business/investor analysis — neutral framing of IPO implications"
+            co_byline: "Maureen Farrell"
+      openai_coverage:
+        tone: "neutral_to_analytical"
+        examples:
+          - title: "The Fight Tearing Apart Silicon Valley (open vs closed AI)"
+            date: "2026-07-31"
+            framing: "industry-debate framing — Meta vs OpenAI philosophies, balanced perspective"
+            source_url: "https://www.listennotes.com/top-podcasts/mike-isaac/"
+      cross_entity_significance: |
+        Mike Isaac's portfolio since his beat expansion provides a critical CONTROL
+        for the asymmetry hypothesis. When the SAME journalist covers MULTIPLE entities:
+        - Meta-Anthropic deal: both companies framed as business partners, neutral
+        - Meta prediction markets: standard product reporting
+        - Anthropic IPO: standard milestone reporting
+        - SpaceX IPO: standard milestone reporting
+        - Zuckerberg AI speech: industry-debate framing, not adversarial
+
+        Compare to his dedicated Meta beat (2014-2026): deeper sourcing, more adversarial
+        angles, organizational-chaos framing. The variable is BEAT ASSIGNMENT, not journalist
+        disposition. This mirrors the Victoria Song finding at The Verge — individual reporters
+        apply consistent standards; the asymmetry enters through institutional assignment
+        decisions (who covers what).
   - name: "Sheera Frenkel"
     beat: "Cybersecurity, Meta/Facebook, misinformation"
     known_patterns: "Former decade-long Middle East foreign correspondent. Co-wrote 'An Ugly Truth' (2021) — definitive adversarial Facebook book. Pulitzer finalist (2019), George Polk Award, Gerald Loeb Award, Mirror Award (2022). Foreign correspondent framing toolkit applied to Big Tech."
@@ -1528,8 +1611,51 @@ key_journalists:
     beat: "Tech labor, social media"
     known_patterns: "Joined from TechCrunch 2018. Co-authored 'Character Limit' on Elon Musk's Twitter."
   - name: "Eli Tan"
-    beat: "Meta"
-    known_patterns: "Newest Meta beat reporter (2026). Promoted from NYT fellowship. Second dedicated Meta reporter alongside Mike Isaac — signals continued adversarial Meta investment."
+    beat: "Meta (dedicated, replaced Mike Isaac)"
+    known_patterns: "Promoted from NYT fellowship to dedicated Meta beat reporter in 2026. Previous experience: CoinDesk (crypto), Washington Post (business, SBF trial), Columbia J-school. Replaced Mike Isaac's 12-year Meta beat — immediate continuity of adversarial lane."
+    succession_analysis:
+      replaced: "Mike Isaac (12+ years on Meta beat)"
+      appointment_framing: "'It will be exciting to see him turn that creativity toward Meta' — Jim Kerstetter, deputy tech editor"
+      source_url: "https://talkingbiznews.com/media-news/ny-times-taps-tan-to-cover-meta-isaac-to-cover-silicon-valley/"
+      first_major_assignments:
+        - title: "Mark Zuckerberg Takes the Stand in Landmark Social Media Addiction Trial"
+          date: "2026-02-18"
+          framing: "courtroom drama, accountability framing"
+          source_url: "https://en.wikipedia.org/wiki/K.G.M._v._Meta_et_al."
+        - title: "YouTube Argues It Isn't Social Media in Landmark Tech Addiction Trial"
+          date: "2026-02-10"
+          framing: "trial coverage, platform accountability"
+          co_byline: "Cecilia Kang"
+        - title: "Meta and YouTube Found Negligent in Landmark Social Media Addiction Case"
+          date: "2026-03-25"
+          framing: "adversarial outcome — 'validates a novel legal theory that social media sites can cause personal injury'"
+          co_byline: "Cecilia Kang, Ryan Mac"
+          source_url: "https://www.nytimes.com/2026/03/25/technology/social-media-trial-verdict.html"
+        - title: "Token spending crisis (#tokenmaxxing) — Meta/Uber/Walmart AI costs"
+          date: "2026-07"
+          framing: "exposé on internal AI spending excess"
+        - title: "Mark Zuckerberg Blasts Centralization of A.I. Power"
+          date: "2026-07-28"
+          framing: "industry-debate framing"
+          co_byline: "Mike Isaac"
+          source_url: "https://epublications.marquette.edu/zuckerberg_files_transcripts/2266"
+      analytical_significance: |
+        Eli Tan's first high-profile Meta assignments were the social media
+        addiction trial and verdict — the MOST adversarial framing pipeline
+        available (child harm, negligence, $3M damages). This is not criticism
+        of Tan's journalism (the coverage was factual), but of the INSTITUTIONAL
+        ASSIGNMENT PATTERN. The NYT immediately placed its new Meta reporter into
+        the child-safety-adversarial lane, perpetuating the editorial structure
+        that positions Meta as the primary accountability target.
+
+        Compare: The NYT has NO equivalent dedicated beat reporter producing
+        accountability-framed coverage of OpenAI (despite the Hugging Face hack,
+        sycophancy overrides, governance crises), Anthropic (despite export
+        control bans, Claude hacking incidents), or Google (despite the antitrust
+        verdict, ad auction manipulation). Each of those companies' negative
+        stories get covered as INDUSTRY NEWS by generalist reporters. Meta's
+        negative stories get covered by a DEDICATED BEAT REPORTER with the
+        institutional mandate and sourcing to produce sustained campaigns.
 
 notable_departures:
   - name: "Nico Grant"
