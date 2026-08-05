@@ -51,7 +51,9 @@ revenue_relationships:
       subscriptions. Later returned to App Store. Relationship is distribution, not
       licensing.
     date_established: "2011"
-  # NOTE: FT has NOT signed AI content licensing deals with OpenAI, Google, or Apple
+  # NOTE: FT has confirmed AI deals with OpenAI (licensing, Apr 2024),
+#   Google (News AI pilot, Feb 2026), and Microsoft (PCM pilot partner).
+#   No Meta deal. No Apple/Amazon/Anthropic deal.
   # as of mid-2026 — unlike NYT (lawsuit), Atlantic (OpenAI deal), Wired/Condé Nast
   # (OpenAI + Amazon + Apple deals). This is notable: FT has no AI licensing revenue
   # relationship creating competitive conflict with Meta's Llama.
@@ -157,11 +159,18 @@ competitor_relationships:
     description: "No known direct financial relationship."
     coverage_prediction: "neutral"
   google:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No known direct financial relationship."
-    coverage_prediction: "neutral"
+    financial_tie: "commercial_partnership"
+    estimated_value: "undisclosed"
+    direction: "receiving"
+    description: |
+      FT joined Google's 'News AI pilot' commercial partnership in Feb 2026
+      (Press Gazette confirmed). Extends existing Google News Showcase deal
+      into AI-powered article overviews and Gemini integration. First wave
+      alongside Guardian, Washington Post, Der Spiegel, El País, others.
+      Not described as a licensing deal — Google characterizes as 'exploring
+      how AI can help drive more engaged audiences.'
+    coverage_prediction: "softer"
+    source_url: "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
   x_twitter:
     financial_tie: "none"
     estimated_value: "$0"

@@ -354,5 +354,137 @@ class TestAsymmetryScoring(unittest.TestCase):
                             "WIRED verdict should be substantial")
 
 
+class TestCondeNastExpandedDealPortfolio(unittest.TestCase):
+    """Condé Nast (WIRED parent) expanded to 5 AI licensing partners.
+    Added Aug 5 2026 Type C iteration.
+    Sources:
+    - Adweek (CPTO + deal list): https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/
+    - WebWire (Microsoft PCM): https://www.WebWire.com/ViewPressRel.asp?aId=350303
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.research = load_yaml("competitor-coverage-research.yaml")
+        cls.wired = cls.research.get("publications", {}).get("wired", {})
+
+    def test_microsoft_pcm_deal_documented(self):
+        """Condé Nast's Microsoft PCM pilot partnership must be documented."""
+        self.assertIn("microsoft_coverage_tone", self.wired)
+        self.assertEqual(self.wired["microsoft_coverage_tone"], "neutral_to_positive")
+
+    def test_perplexity_deal_documented(self):
+        """Condé Nast's Perplexity deal must be documented."""
+        self.assertIn("perplexity_coverage_tone", self.wired)
+        summary = self.wired.get("perplexity_coverage_summary", "")
+        self.assertIn("Perplexity", summary)
+
+    def test_deal_count_summary(self):
+        """Deal count summary documents five partners."""
+        summary = self.wired.get("deal_count_summary", "")
+        self.assertTrue(len(summary) > 50, "deal_count_summary should be substantive")
+        # Should mention FIVE or 5
+        self.assertTrue("FIVE" in summary or "five" in summary.lower() or "5" in summary)
+
+    def test_meta_excluded_from_all_deals(self):
+        """Meta is the only major tech company excluded from Condé Nast deals."""
+        summary = self.wired.get("deal_count_summary", "")
+        self.assertIn("ONLY major tech company", summary)
+
+    def test_microsoft_pcm_source_url(self):
+        """Microsoft PCM deal must have source URL."""
+        self.assertIn("microsoft_pcm_source", self.wired)
+        self.assertTrue(self.wired["microsoft_pcm_source"].startswith("http"))
+
+    def test_perplexity_deal_source_url(self):
+        """Perplexity deal must have source URL."""
+        self.assertIn("perplexity_deal_source", self.wired)
+        self.assertTrue(self.wired["perplexity_deal_source"].startswith("http"))
+
+    def test_meta_not_pcm_participant(self):
+        """Microsoft PCM summary must document Meta's absence."""
+        summary = self.wired.get("microsoft_coverage_summary", "")
+        self.assertIn("Meta is NOT a PCM participant", summary)
+
+
+class TestMicrosoftPCMAggregateFinding(unittest.TestCase):
+    """Microsoft PCM marketplace structural finding in aggregate.
+    Added Aug 5 2026 Type C iteration.
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.research = load_yaml("competitor-coverage-research.yaml")
+        cls.findings = cls.research.get("aggregate_findings", {}).get("key_evidence", [])
+
+    def test_pcm_finding_exists(self):
+        """Aggregate findings must include Microsoft PCM marketplace."""
+        pcm_found = any("PCM" in f.get("finding", "") for f in self.findings)
+        self.assertTrue(pcm_found, "No Microsoft PCM finding in aggregate")
+
+    def test_pcm_mentions_conde_nast_and_vox(self):
+        """PCM finding must mention both Condé Nast and Vox Media as pilot partners."""
+        pcm = [f for f in self.findings if "PCM" in f.get("finding", "")]
+        text = str(pcm)
+        self.assertTrue("Cond" in text, "PCM finding should mention Condé Nast")
+        self.assertTrue("Vox" in text, "PCM finding should mention Vox Media")
+
+    def test_conde_nast_asymmetry_finding_exists(self):
+        """Aggregate must have the '5 partners, 0 Meta' finding."""
+        cn_found = any("Cond" in f.get("finding", "") and "deal" in f.get("finding", "").lower()
+                        for f in self.findings)
+        self.assertTrue(cn_found, "No Condé Nast deal asymmetry finding")
+
+    def test_ft_expanded_portfolio_finding(self):
+        """Aggregate must document FT's 3-deal portfolio."""
+        ft_found = any("FT" in f.get("finding", "") and "deal" in f.get("finding", "").lower()
+                        for f in self.findings)
+        self.assertTrue(ft_found, "No FT expanded portfolio finding")
+
+
+class TestFTGoogleRelationshipUpdate(unittest.TestCase):
+    """FT joined Google's News AI pilot in Feb 2026.
+    Added Aug 5 2026 Type C iteration.
+    Source: https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.ft = load_yaml("financial-times.yaml")
+
+    def test_google_financial_tie_updated(self):
+        """FT-Google should no longer be 'none'."""
+        cr = self.ft.get("competitor_relationships", {})
+        google = cr.get("google", {})
+        self.assertNotEqual(google.get("financial_tie"), "none",
+                            "FT-Google should have financial tie after News AI pilot")
+
+    def test_google_has_source_url(self):
+        """FT-Google relationship must have source URL."""
+        cr = self.ft.get("competitor_relationships", {})
+        google = cr.get("google", {})
+        self.assertIn("source_url", google)
+        self.assertTrue(google["source_url"].startswith("http"))
+
+    def test_google_description_mentions_pilot(self):
+        """FT-Google description must mention News AI pilot."""
+        cr = self.ft.get("competitor_relationships", {})
+        google = cr.get("google", {})
+        desc = google.get("description", "")
+        self.assertIn("News AI pilot", desc)
+
+    def test_meta_still_no_deal(self):
+        """FT-Meta should still be 'none'."""
+        cr = self.ft.get("competitor_relationships", {})
+        meta = cr.get("meta", {})
+        self.assertEqual(meta.get("financial_tie"), "none")
+
+    def test_openai_deal_still_active(self):
+        """FT-OpenAI licensing deal should remain."""
+        cr = self.ft.get("competitor_relationships", {})
+        openai = cr.get("openai", {})
+        self.assertEqual(openai.get("financial_tie"), "licensing")
+
+
 if __name__ == "__main__":
     unittest.main()
+

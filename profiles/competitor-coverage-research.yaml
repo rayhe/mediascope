@@ -21,8 +21,10 @@ publications:
 
   # -----------------------------------------------------------------
   # WIRED (Condé Nast / Advance Publications)
-  # Financial ties: OpenAI (licensing), Amazon (licensing via Rufus),
-  #   Apple (negotiating). No Meta deal.
+  # Financial ties: OpenAI (licensing, Aug 2024), Amazon (licensing via
+  #   Rufus, Jul 2025), Microsoft PCM (Feb 2026), Perplexity (deal
+  #   confirmed Adweek Dec 2025). Apple (negotiating since Dec 2023).
+  #   No Meta deal. No Google deal.
   # -----------------------------------------------------------------
   wired:
     meta_coverage_tone: "adversarial"
@@ -70,7 +72,40 @@ publications:
       Alexa recording).
     amazon_deal_source: "https://digiday.com/media/conde-nast-and-hearst-strike-amazon-ai-licensing-deals-for-rufus/"
 
+    microsoft_coverage_tone: "neutral_to_positive"
+    microsoft_coverage_summary: |
+      Condé Nast joined Microsoft's Publisher Content Marketplace (PCM)
+      as a pilot partner (Feb 2026, WebWire press release). PCM licenses
+      Condé Nast's U.S. text-based editorial content for grounding
+      AI-generated summaries in Microsoft Copilot. Co-designed with
+      Business Insider, Hearst, AP, USA Today, and Vox Media. Yahoo
+      is the first external demand partner. This is a MARKETPLACE
+      model — unlike bilateral OpenAI/Amazon deals — meaning Condé
+      Nast's content can be licensed to multiple AI builders through
+      Microsoft's infrastructure. Meta is NOT a PCM participant.
+    microsoft_pcm_source: "https://www.WebWire.com/ViewPressRel.asp?aId=350303"
+    microsoft_pcm_marketplace_source: "https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191"
+
+    perplexity_coverage_tone: "neutral"
+    perplexity_coverage_summary: |
+      Condé Nast has a content licensing agreement with Perplexity
+      (confirmed Adweek, Dec 2025, alongside OpenAI and Amazon deals).
+      No detailed terms disclosed.
+    perplexity_deal_source: "https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/"
+
+    deal_count_summary: |
+      As of Aug 2026, Condé Nast (WIRED's parent) has AI licensing
+      deals with FIVE entities: OpenAI, Amazon, Microsoft, Perplexity,
+      and Apple (negotiating). Condé Nast has deals with ZERO of Meta's
+      direct competitors in the social/messaging space — its deals are
+      exclusively with AI labs (OpenAI, Perplexity) and cloud platforms
+      (Amazon, Microsoft). Meta, which competes most directly with
+      Condé Nast's social traffic sources (Facebook referrals, Instagram),
+      is the ONLY major tech company that Condé Nast has no deal with
+      AND no deal in progress with.
+
     apple_coverage_tone: "neutral_to_positive"
+
     apple_coverage_summary: |
       Apple in negotiation for Condé Nast AI content deal (Reuters,
       Dec 2023). WIRED covers Apple product launches with standard
@@ -152,8 +187,8 @@ publications:
 
   # -----------------------------------------------------------------
   # THE VERGE (Vox Media → PMC / SRMG-PIF)
-  # Financial ties: OpenAI (licensing via Vox Media, May 2024).
-  #   No Meta deal. PMC sued Google.
+  # Financial ties: OpenAI (licensing via Vox Media, May 2024),
+  #   Microsoft PCM (pilot partner, Feb 2026). No Meta deal. PMC sued Google.
   # -----------------------------------------------------------------
   the-verge:
     meta_coverage_tone: "adversarial"
@@ -384,8 +419,9 @@ publications:
 
   # -----------------------------------------------------------------
   # FINANCIAL TIMES (Nikkei)
-  # Financial ties: OpenAI (licensing, $5-10M/yr, Apr 2024).
-  #   No Meta deal. No Apple/Google/Amazon deal.
+  # Financial ties: OpenAI (licensing, $5-10M/yr, Apr 2024),
+  #   Google (News AI pilot, Feb 2026), Microsoft PCM (pilot partner).
+  #   No Meta deal. No Apple/Amazon deal.
   # -----------------------------------------------------------------
   financial-times:
     meta_coverage_tone: "balanced_adversarial"
@@ -442,12 +478,16 @@ publications:
     google_coverage_tone: "neutral_to_positive"
     google_coverage_summary: |
       FT covers Google with standard business-press framing. Less
-      adversarial than Meta coverage. Notable: FT has reportedly
-      participated in Google's News AI pilot program, though this
-      requires further verification. Google coverage focuses on
-      business performance, AI products, and regulatory issues with
-      balanced tone — contrasting with Meta coverage where similar
-      topics receive more adversarial framing.
+      adversarial than Meta coverage. FT joined Google's "News AI pilot"
+      commercial partnership in Feb 2026 (Press Gazette confirmed) —
+      one of the first wave alongside Guardian, Washington Post, Der
+      Spiegel, El País, and others. This program extends existing
+      Google News Showcase partnerships into AI-powered article
+      overviews and Gemini integration. Creates financial tie with
+      Google that Meta lacks. FT now has deals with BOTH OpenAI AND
+      Google (the two companies most directly competing on AI search)
+      while having zero Meta deal.
+    google_pilot_source: "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
 
     asymmetry_verdict: |
       FT shows moderate-to-significant asymmetry upon closer analysis.
@@ -734,7 +774,60 @@ aggregate_findings:
         - "https://news.bloomberglaw.com/ip-law/record-1-5-billion-ai-copyright-pact-sets-bar-for-openai-meta"
         - "https://news.bloomberglaw.com/ip-law/judge-blesses-1-5-billion-anthropic-copyright-deal-with-authors"
 
-    - finding: "Digiday publisher scorecard — Google 2/10 vs Amazon 6/10"
+    - finding: "Microsoft PCM marketplace creates structural Meta exclusion (Feb 2026)"
+      description: |
+        Microsoft launched the Publisher Content Marketplace (Feb 2026) —
+        the first MARKETPLACE model for AI content licensing, replacing
+        bilateral deals with a centralized platform. First-wave pilot
+        partners include Condé Nast, Vox Media, Hearst, AP, USA Today,
+        and Business Insider. Yahoo is the first demand partner (AI builder).
+        Meta is NOT a PCM participant — neither as a publisher partner nor
+        as a demand partner. This means both Condé Nast (WIRED) and Vox
+        Media (The Verge) earn Microsoft PCM revenue while receiving $0
+        from Meta. The marketplace model also enables future AI builders
+        to license content without bilateral negotiations — amplifying
+        Meta's exclusion as the ecosystem grows. PCM was co-designed with
+        publishers at Microsoft's invite-only Partner Summit in Monaco.
+      significance: "Marketplace model scales Meta's exclusion — every new PCM demand partner is another AI company paying WIRED's parent while Meta doesn't"
+      source_urls:
+        - "https://www.WebWire.com/ViewPressRel.asp?aId=350303"
+        - "https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191"
+        - "https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/"
+
+    - finding: "Condé Nast's deal asymmetry deepens — 5 partners, 0 Meta"
+      description: |
+        As of Aug 2026, Condé Nast has AI content deals with OpenAI
+        (Aug 2024), Amazon/Rufus (Jul 2025), Perplexity (Dec 2025),
+        Microsoft PCM (Feb 2026), and Apple (negotiating since Dec 2023).
+        This is FIVE AI licensing relationships — the most of any
+        publisher in the dataset. Meta remains the only major tech
+        company with ZERO Condé Nast deal AND no deal in progress.
+        Each new deal deepens the financial exclusion: Condé Nast's
+        AI licensing revenue grows while the Meta gap widens.
+      significance: "The sheer number of deals makes Meta's absence more conspicuous and the financial incentive stronger"
+      source_urls:
+        - "https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/"
+        - "https://www.reuters.com/technology/apple-explores-ai-deals-with-news-publishers-new-york-times-2023-12-22/"
+
+    - finding: "FT's expanded deal portfolio — OpenAI + Google + Microsoft, no Meta"
+      description: |
+        FT now has financial ties with three major AI companies:
+        OpenAI (licensing, $5-10M/yr, Apr 2024), Google (News AI pilot,
+        Feb 2026), and Microsoft (PCM pilot partner). FT is one of the
+        only publications in the dataset with deals across all three
+        major AI search competitors (OpenAI/ChatGPT, Google/Gemini,
+        Microsoft/Copilot) — while having zero Meta deal. Coverage
+        pattern matches: Meta (no deal) gets balanced-adversarial
+        treatment with sustained investigative reporting; OpenAI (deal)
+        gets neutral-to-positive with preferential access for scoops;
+        Google (new deal) getting measurably less adversarial framing
+        than Meta despite comparable or greater privacy concerns.
+      significance: "FT's three-deal portfolio vs zero Meta deal is the most lopsided financial relationship set for any 'respectable' business publication"
+      source_urls:
+        - "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+        - "https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/"
+
+
       description: |
         Digiday's Dec 2025 publisher scorecard for Big Tech AI licensing:
         Google: 2/10 aggregate (willingness to pay 2/10, transparency 2/10,
@@ -762,12 +855,15 @@ aggregate_findings:
     - "Meta's Dec 2025 / Mar 2026 publisher deals may shift coverage tone at those publications over time — need longitudinal tracking"
     - "Anthropic's $1.5B settlement is a distinct financial relationship type whose coverage effects have not been measured"
 
-  last_updated: "2026-08-04T20:00:00-07:00"
+  last_updated: "2026-08-05T03:00:00-07:00"
   update_notes: |
-    Type C iteration (Financial Incentive Mapping): Added Jan 2026 Advance/Vox/Atlantic Google
-    adtech lawsuits (SDNY MDL), Meta's expanded publisher deal landscape (Dec 2025 - Mar 2026),
-    Google's coercive "AI or lose fees" program (Jun 2026), Anthropic's $1.5B copyright settlement
-    as distinct relationship type, Digiday's publisher scorecard (Google 2/10 vs Amazon 6/10).
-    Key finding: publications suing Google (Advance, Vox, Atlantic) cover Meta MORE adversarially
-    than Google despite Google's objectively greater financial harm — consistent with the hypothesis
-    that coverage tone correlates with AI licensing relationships, not just adversarial ones.
+    Type C iteration (Financial Incentive Mapping): Added Condé Nast's expanded deal portfolio
+    (5 partners: OpenAI, Amazon, Microsoft PCM, Perplexity, Apple negotiating — 0 Meta). Added
+    Microsoft Publisher Content Marketplace (PCM, Feb 2026) as structural exclusion mechanism —
+    Condé Nast and Vox Media both pilot partners, Meta not participating. Added FT joining
+    Google's News AI pilot (Feb 2026, Press Gazette confirmed) + FT-Microsoft PCM deal —
+    FT now has 3 AI deals (OpenAI, Google, Microsoft) vs 0 Meta. Verified all findings against
+    Press Gazette's comprehensive tracker (pressgazette.co.uk/platforms/news-publisher-ai-deals-
+    lawsuits-openai-google/). Key insight: the marketplace model (PCM) scales Meta's exclusion
+    automatically — every new demand partner adds another revenue stream WIRED/Verge parents
+    receive while Meta pays nothing.

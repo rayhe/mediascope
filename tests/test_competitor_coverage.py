@@ -145,7 +145,7 @@ class TestPublicationRelationships:
             "licensing", "investment", "advertising", "distribution",
             "indirect", "mixed", "negotiating", "adversarial", "litigation",
             "adversarial_litigation", "settlement", "coercive",
-            "none"
+            "commercial_partnership", "none"
         }
         data = self._load_profile(pub)
         cr = data["competitor_relationships"]

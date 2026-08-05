@@ -1,4 +1,71 @@
 # MediaScope Iteration Log
+## 2026-08-05 02:00 PT — Type B: Mike Isaac (NYT) Cross-Entity Coverage + Eli Tan Succession
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Focus:** Mike Isaac's cross-entity coverage patterns after his 2026 beat expansion from dedicated Meta reporter to Silicon Valley correspondent, and Eli Tan's succession as the new dedicated Meta beat reporter.
+
+### Key Finding: Beat Assignment Controls Framing, Not Individual Reporter Bias
+
+When the SAME journalist (Isaac) covers MULTIPLE entities after a beat expansion, his framing is remarkably consistent across Meta, Anthropic, SpaceX, and OpenAI — all standard business-reporting tone. This confirms the NYT's Meta coverage asymmetry is an INSTITUTIONAL ASSIGNMENT pattern, not individual reporter bias.
+
+#### Mike Isaac Beat Change (2026)
+- **Old beat:** Meta/Facebook (dedicated, 12+ years, 2014-2026)
+- **New beat:** Silicon Valley correspondent — rapid investigations, social media, investors, tech leaders
+- **Replacement:** Eli Tan (promoted from NYT fellowship)
+- **Source:** NYT internal memo via Talking Biz News + nytco.com
+
+#### Isaac's Post-Expansion Cross-Entity Portfolio
+| Article | Entity | Date | Framing |
+|---------|--------|------|---------|
+| Meta-Anthropic $10B Compute Deal | Meta + Anthropic | Jul 17, 2026 | Neutral business — deal size, revenue diversification |
+| Anthropic IPO Filing | Anthropic | Jun 1, 2026 | Standard milestone — joining OpenAI, SpaceX in 2026 IPOs |
+| SpaceX IPO | SpaceX | Jun 12, 2026 | Neutral business (with Maureen Farrell) |
+| Meta Prediction Markets (Arena) | Meta | Jun 23, 2026 | Neutral product — experimental, Polymarket/Kalshi comparison |
+| Zuckerberg AI Centralization | Meta vs OpenAI | Jul 28, 2026 | Industry-debate — open vs closed AI (with Eli Tan) |
+| Meta Superintelligence Bet | Meta | Feb 19, 2026 | Business news — capex, strategy shift from VR to AI |
+
+**Pattern:** Consistent neutral-to-business framing regardless of entity. When Isaac covers Meta AND Anthropic in the same article (the $10B deal), both companies receive comparable framing.
+
+#### Eli Tan Succession Analysis
+Tan's first high-profile Meta assignments were the social media addiction trial:
+- "Mark Zuckerberg Takes the Stand" (Feb 18, 2026)
+- "YouTube Argues It Isn't Social Media" (Feb 10, with Kang)
+- "Meta and YouTube Found Negligent" (Mar 25, with Kang/Mac) — 'validates novel legal theory'
+- "#tokenmaxxing" — Meta/Uber AI spending exposé (Jul 2026)
+
+**Significance:** Junior replacement immediately placed in the MOST adversarial Meta lane (child harm, negligence, $3M damages). This perpetuates the dedicated adversarial beat structure.
+
+### Three Lane Assignment Mechanisms Now Documented
+
+| Publication | Mechanism | How It Works |
+|-------------|-----------|-------------|
+| WIRED | Editorial desk assignment | Product desk (Goode) for Apple/Snap; Investigative desk (Cameron/Mehrotra) for Meta |
+| NYT | Reporter assignment | Adversarial beat reporters (Isaac→Tan, Frenkel) for Meta; Technology-progress reporter (Metz) for OpenAI/Anthropic |
+| The Verge | Institutional vs product split | Alex Heath (adversarial business/investigative) for Meta; Victoria Song (balanced product reviewer) covers all entities consistently |
+
+### Files Changed
+1. `profiles/nytimes.yaml` — Isaac: beat_change section, cross_entity_coverage_analysis (5 examples: Meta, Anthropic, SpaceX, OpenAI). Tan: succession_analysis (5 first assignments, analytical significance)
+2. `profiles/competitor-coverage-research.yaml` — NYT cross_entity_beat_assignment finding (existing, verified compatible)
+3. `tests/test_mike_isaac_cross_entity.py` (NEW) — 37 tests across 7 classes
+4. `docs/ARCHITECTURE.md` — Added test_wired_apple_lane_assignment.py, test_nyt_cade_metz_cross_entity.py, test_mike_isaac_cross_entity.py listings; count 3333/148
+5. `README.md` — Test table entries + count updates (3333/148)
+
+### Sources Used
+- Talking Biz News: https://talkingbiznews.com/media-news/ny-times-taps-tan-to-cover-meta-isaac-to-cover-silicon-valley/
+- NYT official: https://www.nytco.com/press/staff-news-from-business/
+- Muck Rack: https://muckrack.com/MikeIsaac (4,861 licensed articles)
+- Reuters: Meta-Anthropic deal, Arena prediction markets
+- Techmeme: Article citations (Meta wearables shift, Arena, Anthropic IPO)
+- Marquette Zuckerberg Files: https://epublications.marquette.edu/zuckerberg_files_transcripts/2266
+- Wikipedia: K.G.M. v. Meta et al. trial citations
+- Listen Notes: Podcast portfolio (Isaac July 2026 appearances)
+
+### Tests: 37 passed, 0 failed
+
+**Commit:** 18acc98 (pushed to GitHub)
+
+---
+
 ## 2026-08-05 00:00 PT — Type A: WIRED Apple vs Meta Wearables Lane Assignment (Camera Count Paradox)
 
 **Rotation:** A (Competitor Coverage Deep Dive)
@@ -26294,3 +26361,83 @@ The bias is structural and nearly invisible — each reporter appears to be "jus
 
 ### Tests: 41 passed, 0 failed. No regressions in related test files (287 passed).
 
+
+## 2026-08-05 03:00 PT — Type C: Financial Incentive Mapping — Condé Nast 5-Partner Portfolio, Microsoft PCM, FT Deal Expansion
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Comprehensive verification and expansion of AI content licensing deal landscape across all MediaScope-tracked publications, using Press Gazette's authoritative deal tracker and primary source verification.
+
+### Key Findings
+
+#### 1. Condé Nast (WIRED Parent) Now Has FIVE AI Licensing Partners — Zero Meta
+Updated from 2 known deals to 5:
+- **OpenAI** (Aug 2024) — multiyear licensing, content in ChatGPT/SearchGPT
+- **Amazon/Rufus** (Jul 2025) — content in Amazon shopping AI assistant
+- **Perplexity** (confirmed Adweek Dec 2025) — AI search engine
+- **Microsoft PCM** (Feb 2026) — Publisher Content Marketplace pilot partner
+- **Apple** (negotiating since Dec 2023) — $50M+ multiyear proposals
+
+**Meta remains the ONLY major tech company with no Condé Nast deal AND no deal in progress.**
+
+#### 2. Microsoft Publisher Content Marketplace (PCM) — Structural Meta Exclusion
+Microsoft launched PCM (Feb 3, 2026) — the first MARKETPLACE model for AI content licensing:
+- **Pilot partners:** Condé Nast, Vox Media, Hearst, AP, USA Today, Business Insider
+- **Demand partners (AI builders):** Microsoft Copilot (first), Yahoo (onboarding)
+- **Meta is NOT a PCM participant** — neither publisher partner nor demand partner
+- PCM replaces bilateral deals with centralized marketplace — scales Meta's exclusion as new AI builders join
+- Co-designed with publishers at Microsoft's invite-only Partner Summit in Monaco
+
+**Both Condé Nast (WIRED) and Vox Media (The Verge) earn Microsoft PCM revenue while Meta pays nothing.**
+
+#### 3. FT's Expanded Deal Portfolio — Three AI Companies, Zero Meta
+FT now has financial ties with:
+- **OpenAI** (licensing, $5-10M/yr, Apr 2024)
+- **Google** (News AI pilot, Feb 2026 — Press Gazette confirmed)
+- **Microsoft** (PCM pilot partner)
+
+FT is the only publication in the dataset with deals across ALL THREE major AI search competitors (OpenAI/ChatGPT, Google/Gemini, Microsoft/Copilot) while having zero Meta deal.
+
+#### 4. New Relationship Type: commercial_partnership
+Added to competitor-entities.yaml to distinguish Google's "News AI pilot" deals (cash payments for extended display, not formal licensing) from traditional content licensing agreements.
+
+### Financial Deal Matrix (Updated Aug 5 2026)
+
+| Publisher | OpenAI | Amazon | Microsoft | Perplexity | Google | Apple | Meta | Total |
+|-----------|--------|--------|-----------|-----------|--------|-------|------|-------|
+| Condé Nast (WIRED) | ✅ | ✅ | ✅ PCM | ✅ | ❌ | 🔄 | ❌ | 4-5 |
+| Vox Media (Verge) | ✅ | ❌ | ✅ PCM | ❌ | ❌ | ❌ | ❌ | 2 |
+| FT | ✅ | ❌ | ✅ PCM | ❌ | ✅ pilot | ❌ | ❌ | 3 |
+| Atlantic | ✅ | ❌ | ❌ | ❌ | ❌ | ❌* | ❌ | 1 |
+| NYT | ❌ (suing) | ✅ | ❌ (suing) | ❌ | ❌ | ❌ | ❌ | 1 |
+| Guardian | ✅ | ❌ | ❌ | ❌ | ✅ pilot | ❌ | ❌ | 2 |
+| News Corp | ✅ | ❌ | ✅ | ❌ | ❌ | ❌ | ✅ | 3 |
+| Gizmodo | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | 0 |
+
+*LPJ Trust holds ~$17B Apple stock (undisclosed structural conflict)
+🔄 = Actively negotiating
+
+**Pattern: Every MediaScope-tracked publication with adversarial Meta coverage has ZERO Meta deal. The only tracked publication with a Meta deal (News Corp) shows balanced coverage.**
+
+### Files Changed
+1. `profiles/competitor-coverage-research.yaml` — Updated WIRED financial header (5 deals), added microsoft_coverage_tone/summary, perplexity_coverage_tone/summary, deal_count_summary. Updated Verge header (Microsoft PCM). Updated FT header (Google + Microsoft). Updated FT google_coverage fields with News AI pilot details. Added 3 new aggregate findings (Microsoft PCM, Condé Nast 5-partner asymmetry, FT 3-deal portfolio). Updated last_updated timestamp.
+2. `profiles/financial-times.yaml` — Updated google relationship from "none" to "commercial_partnership" with source URL, description, coverage_prediction. Updated header note.
+3. `profiles/competitor-entities.yaml` — Added "commercial_partnership" relationship type
+4. `tests/test_financial_relationships.py` — Added 16 new tests in 4 new classes: TestCondeNastExpandedDealPortfolio (7), TestMicrosoftPCMAggregateFinding (4), TestFTGoogleRelationshipUpdate (5). Now 40 tests total.
+5. `tests/test_competitor_coverage.py` — Added "commercial_partnership" to valid_types set
+6. `docs/ARCHITECTURE.md` — Updated test count
+7. `README.md` — Updated test count and per-file count for test_financial_relationships.py
+
+### Sources Used
+- Press Gazette comprehensive tracker: https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
+- WebWire (Condé Nast + Microsoft PCM): https://www.WebWire.com/ViewPressRel.asp?aId=350303
+- SearchEngineLand (PCM launch): https://searchengineland.com/microsoft-launches-publisher-content-marketplace-for-ai-licensing-468191
+- Digiday (PCM marketplace expansion): https://digiday.com/media/qa-nikhil-kolar-vp-microsoft-ai-scales-its-click-to-sign-ai-content-marketplace/
+- MediaPost (PCM launch): https://www.mediapost.com/publications/article/412505/microsoft-ai-licensing-content-framework-gives-pub.html
+- Adweek (Condé Nast CPTO + deal list): https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/
+- Reuters (OpenAI-Condé Nast): https://www.reuters.com/technology/openai-signs-deal-with-cond-nast-2024-08-20/
+- Reuters (Apple negotiations): https://www.reuters.com/technology/apple-explores-ai-deals-with-news-publishers-new-york-times-2023-12-22/
+- PYMNTS (Google coercive AI pilot): https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+- NY Post (Google publisher deals): https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/
+- Digiday (publisher scorecard): https://digiday.com/media/publishers-scorecard-for-big-techs-ai-licensing-deals/
+
+### Tests: 40 passed, 0 failed (test_financial_relationships.py); full suite pending

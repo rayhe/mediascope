@@ -80,6 +80,7 @@ relationship_types:
   negotiating: "Deals under discussion but not yet signed"
   settlement: "Payment through legal settlement, not voluntary licensing"
   coercive: "Publisher pressured to accept terms or lose existing benefits"
+  commercial_partnership: "Cash payments for extended content display or AI features, not formal licensing"
   adversarial_litigation: "Active lawsuit filed by publisher against entity"
 
 # ===================================================================
