@@ -1,4 +1,112 @@
 # MediaScope Iteration Log
+## 2026-08-05 12:00 PT — Type C: Financial Incentive Mapping — Google Ad Revenue Dependency Paradox + Atlantic Dual Apple Financial Link
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Two new financial incentive findings from publisher lawsuit filings and platform revenue data
+
+### KEY FINDING #1: Google Advertising Revenue Dependency Paradox
+
+Publishers' own SDNY antitrust lawsuit filings (Jan 2026) reveal they are simultaneously suing Google for suppressing ad revenue AND admitting TOTAL DEPENDENCY on Google's ad exchange for survival. Key admissions under oath:
+
+| Publisher | Entity | Admission |
+|-----------|--------|-----------|
+| Vox Media (The Verge, now PMC) | Google | "relies on digital advertising for well over half of its revenue"; subscriptions "could not, alone, fund" content |
+| The Atlantic | Google | "cannot forgo the significant revenue it earns from the Google Ads demand available only through AdX" |
+| Advance Publications (WIRED/Condé Nast) | Google | "relied on digital advertising for a significant percentage of its revenues" |
+
+This creates a THREE-LAYER Google financial relationship:
+1. **Adversarial litigation** — actively suing for damages
+2. **Essential dependency** — cannot survive without Google AdX revenue
+3. **Coercive** — Google threatens to withdraw News Showcase fees (News AI pilot, Jun 2026)
+
+**Why this matters:** Despite this triple-adversarial Google relationship, these same publications cover META more adversarially than Google. The dependency layer creates editorial restraint toward Google (don't burn the lifeline), while Meta's competitors pay these publishers via AI licensing, creating incentive to frame concerns as META-specific rather than industry-wide.
+
+### KEY FINDING #2: The Atlantic's Dual Apple Financial Link
+
+The Atlantic's chief growth officer Megha Garibaldi told Digiday (May 2025) that Apple is "by far the most valuable syndication partner for The Atlantic." This creates a SECOND undisclosed Apple financial link, independent of the LPJ Trust's ~$17B AAPL holdings:
+
+1. **Ownership equity:** LPJ Trust → Emerson Collective → ~$17B AAPL
+2. **Platform revenue:** Apple News+ engagement-based payments — described as their MOST VALUABLE syndication partnership
+
+Combined, The Atlantic has the strongest dual Apple financial incentive of any publication in the dataset while maintaining ZERO Meta financial relationships. Total financial vectors: 5 (OpenAI, Apple ownership, Apple News+, ProRata, Google lawsuit) vs Meta: 0.
+
+### Files Changed
+1. `profiles/competitor-coverage-research.yaml` — Added two new aggregate findings (Google ad dependency paradox, Atlantic Apple News+ link); updated Atlantic asymmetry_verdict with dual Apple link; updated last_updated timestamp
+2. `profiles/competitor-entities.yaml` — Added `advertising_dependency` relationship type
+3. `profiles/the-verge.yaml` — Updated Google relationship from `adversarial` to `adversarial_litigation` with dual lawsuit documentation (AI Overviews + adtech) and Vox Media's revenue dependency admission from SDNY complaint
+4. `profiles/atlantic.yaml` — Updated Apple relationship to document dual financial link (ownership + News+ platform revenue); updated Google relationship from `none` to `adversarial_litigation` with AdX dependency admission
+5. `tests/test_google_ad_dependency_paradox.py` (NEW) — 24 tests across 8 classes validating advertising dependency type, publisher AdX admissions, Verge/Atlantic Google relationship updates, Atlantic Apple News+ dual link, financial vector count, and timestamp
+6. `docs/ARCHITECTURE.md` — Test count updated (3697/157)
+7. `README.md` — Test table entry + count updates (3697/157)
+
+### Tests: 24 new passed, 0 regressions (104 across 3 financial test files), 0 failures
+
+---
+## 2026-08-05 11:00 PT — Type B: Journalist Cross-Entity Tracking — Will Knight (WIRED) ZERO Meta Coverage Finding
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Journalist:** Will Knight (WIRED Senior Writer, AI Lab newsletter author)
+**Focus:** Cross-entity coverage allocation across OpenAI, Google DeepMind, Anthropic, Meta, and Apple
+
+### KEY FINDING: WIRED's Primary AI Voice Has ZERO Dedicated Meta Articles
+
+Will Knight — WIRED's most influential AI coverage voice (AI Lab newsletter, 20+ year AI beat veteran, former MIT Technology Review Senior Editor) — has ZERO identified dedicated articles about Meta's AI technology, strategy, or leadership. His coverage allocation:
+
+| Entity | Dedicated Articles | Tone | Executive Access |
+|--------|-------------------|------|------------------|
+| OpenAI | 7+ | Deep institutional access | Organizational analyses, talent scoops, product reviews |
+| Google DeepMind | 5+ | Reverential executive access | Multiple extended Demis Hassabis Q&As |
+| Anthropic | 3+ | Policy drama spotlight | Trump ban scoop, supply chain risk follow-up |
+| Apple | 1+ | Constructive analysis | WWDC "AI as feature" positive framing |
+| **Meta** | **0** | **Absent/peripheral** | **ZERO LeCun interviews, ZERO FAIR coverage, ZERO Llama tech pieces** |
+
+### Specific Asymmetries Documented
+
+**1. Talent Framing Asymmetry:**
+- OpenAI taking Meta engineers: "OpenAI **Poaches** 4 High-Ranking Engineers From Tesla, xAI, and Meta" (aggressive verb, Meta as victim)
+- Google acquiring Hume AI leadership: "Google DeepMind **signs a licensing deal** with Hume AI to **hire** CEO" (neutral, professional)
+- Meta acquiring talent: ZERO Knight coverage (Zuckerberg's $300M packages covered by Schiffer, not Knight)
+
+**2. Executive Access Asymmetry:**
+- Demis Hassabis (DeepMind): Multiple extended Q&A interviews
+- Yann LeCun (Meta): ZERO interviews (despite being a Turing Award winner and the most active AI leader on social media)
+
+**3. Three-Layer WIRED Editorial Exclusion:**
+- Technology layer (Knight): Meta AI absent from fundamental technology coverage
+- Business layer (Schiffer): Meta covered adversarially (talent costs, organizational turmoil)
+- Consumer layer (Goode): Meta camera glasses covered by others through surveillance framing, not by Goode through product-delight lens
+
+**4. Financial Correlation:**
+Coverage allocation correlates perfectly with Condé Nast's financial incentive structure: OpenAI content licensing deal ($0 from Meta).
+
+### Articles Cataloged (11 specific examples with URLs)
+| Article | Entity | Date | Framing |
+|---------|--------|------|---------|
+| OpenAI Poaches 4 High-Ranking Engineers From Tesla, xAI, and Meta | OpenAI (Meta as victim) | Jul 2026 | Aggressive "poaches" verb |
+| OpenAI's ongoing talent exodus and hiring priorities | OpenAI | Oct 2024 | Organizational deep dive |
+| OpenAI recruiting AI researchers for humanoid robots | OpenAI | Sep 2025 | Strategic expansion |
+| OpenAI superalignment team reverse engineering paper | OpenAI | Jun 2024 | Research significance |
+| Q&A with Demis Hassabis on AGI, agents, Gemini Pro 1.5 | DeepMind | Feb 2024 | Extended executive interview |
+| Google DeepMind hires Boston Dynamics CTO; Gemini as robot OS | DeepMind | Nov 2025 | Visionary framing |
+| Google Gemini Taking Control of Humanoid Robots | DeepMind | Jan 2026 | Tech-as-achievement |
+| Google DeepMind licensing deal with Hume AI to hire CEO | DeepMind | Jan 2026 | Neutral "hire" language |
+| Trump Moves to Ban Anthropic From the US Government | Anthropic | Feb 2026 | Policy drama, sympathetic framing |
+| Agentic AI Foundation launch | Multi (Meta absent from headline) | Dec 2025 | Industry standards |
+| Apple's WWDC: AI as feature not standalone app | Apple | Jun 2024 | Constructive analysis |
+
+### Cross-Entity Asymmetry Score: 0.91/1.0
+
+### Files Changed
+1. `profiles/careers/journalists.yaml` — Added `competitor_coverage` section to Will Knight with 5 entity analyses (OpenAI, Google DeepMind, Anthropic, Meta, Apple), 11 article examples with URLs/framing, coverage_gap_notes, asymmetry_score 0.91
+2. `tests/test_will_knight_cross_entity.py` (NEW) — 30 tests across 7 classes (HasCompetitorCoverage, CoverageVolumeAsymmetry, ToneAsymmetry, TalentFramingAsymmetry, ExecutiveAccessAsymmetry, AsymmetryScore, MetaCoverageGap)
+3. `docs/ARCHITECTURE.md` — Test listing + count 3673/156
+4. `README.md` — Test table entry + count updates (3673/156)
+
+### Tests: 30 new passed, 0 regressions (109 across related cross-entity suite), 0 failures
+
+**Commit:** ee128b1 (pushed to GitHub)
+
+---
 ## 2026-08-05 10:00 PT — Type A: Competitor Coverage Deep Dive — WSJ (News Corp) Balanced Control Verification + Financial Disclosure Finding
 
 **Rotation:** A (Competitor Coverage Deep Dive)

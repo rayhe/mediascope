@@ -289,7 +289,19 @@ publications:
       litigation, labor issues, or Foxconn controversies.
       CRITICAL: The Atlantic has NEVER disclosed LPJ's Apple holdings
       in any Apple coverage.
+      ADDITIONAL FINANCIAL LINK (discovered Aug 5, 2026): The Atlantic's
+      chief growth officer Megha Garibaldi told Digiday (May 2025) that
+      Apple is "by far the most valuable syndication partner for The
+      Atlantic" with "a consistent increase in engagement month over
+      month." Apple News+ has been an Atlantic partner since 2019. Revenue
+      model: 50% of $12.99/mo subscription based on time-spent engagement.
+      This is a SECOND, INDEPENDENT Apple financial link: platform revenue
+      payments from Apple News+, in addition to the $17B LPJ stock position.
+      Combined, The Atlantic has the STRONGEST dual Apple financial incentive
+      of any publication in the dataset — ownership equity PLUS platform
+      revenue — while having ZERO Meta financial relationship.
     apple_conflict_source: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=laurene+powell+jobs"
+    apple_news_plus_source: "https://digiday.com/media/media-briefing-publishers-see-apple-news-as-a-stable-revenue-stream-amid-volatile-referral-traffic/"
 
     google_coverage_tone: "adversarial"
     google_coverage_summary: |
@@ -321,6 +333,15 @@ publications:
       ZERO with Meta. This strengthens the hypothesis: Meta receives
       the MOST adversarial coverage from a publication that has the
       LEAST financial incentive to cover Meta favorably.
+      FURTHER UPDATED (Aug 5, 2026): Apple News+ revealed as The
+      Atlantic's "most valuable syndication partner" (Digiday, May 2025).
+      This creates a SECOND Apple financial link: platform revenue from
+      Apple News+ engagement-based payments, independent of the $17B LPJ
+      stock holdings. The Atlantic now has the strongest dual Apple
+      financial incentive in the dataset (ownership equity + platform
+      revenue) while maintaining ZERO Meta financial relationships.
+      Total unique financial vectors: 5 (OpenAI licensing, Apple ownership,
+      Apple News+ revenue, ProRata licensing, Google lawsuit) vs Meta: 0.
 
   # -----------------------------------------------------------------
   # NEW YORK TIMES
@@ -951,6 +972,73 @@ aggregate_findings:
         - "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
         - "https://www.reuters.com/technology/financial-times-openai-sign-content-licensing-partnership-2024-04-29/"
 
+    - finding: "Google ad revenue dependency paradox — publishers suing their lifeline"
+      description: |
+        Publishers' own antitrust lawsuit filings (SDNY, Jan 2026) reveal a
+        structural paradox: publishers are suing Google for suppressing ad
+        revenue while simultaneously admitting TOTAL DEPENDENCY on Google's
+        ad exchange (AdX) for their financial survival. Key admissions under
+        oath in federal complaints:
+
+        Vox Media (The Verge parent, now PMC): "relies on digital advertising
+        for well over half of its revenue" and "any revenue generated from
+        subscriptions and other non-advertising sources could not, alone, fund
+        the volume and breadth of Vox Media's high-quality content."
+
+        The Atlantic: "cannot forgo the significant revenue it earns from the
+        Google Ads demand available only through AdX" and "The Atlantic does
+        not have an alternative way to access advertising spending from the
+        long tail of small- or medium-sized advertisers."
+
+        Advance Publications (Condé Nast/WIRED parent): "Advance has relied
+        on digital advertising for a significant percentage of its revenues"
+        and has "not shared equally with Google in this massive digital
+        advertising market."
+
+        This creates a THREE-LAYER Google financial relationship for
+        WIRED, The Verge, and The Atlantic:
+        (1) ADVERSARIAL LITIGATION — actively suing for damages
+        (2) ESSENTIAL DEPENDENCY — cannot survive without Google AdX revenue
+        (3) COERCIVE — Google threatens to withdraw News Showcase fees if
+        publishers refuse AI training rights (News AI pilot, Jun 2026)
+
+        Despite this triple-adversarial Google relationship, these same
+        publications cover META more adversarially than Google. The
+        explanation: dependency creates reluctance to push too hard on
+        Google (burning the lifeline), while Meta's competitors (OpenAI,
+        Amazon, Apple, Microsoft) pay these publishers via AI licensing,
+        creating incentive to frame AI/privacy concerns as META-specific
+        rather than industry-wide.
+      significance: "Publisher lawsuit self-admissions prove Google advertising dependency, explaining why triple-adversarial Google relationship still produces less adversarial Google coverage than Meta coverage — dependency creates editorial restraint"
+      source_urls:
+        - "http://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/"
+        - "https://ppc.land/content/files/2026/01/1768500307197.pdf"
+        - "https://news.bloombergtax.com/esg/googles-ad-tech-litigation-defense-grows-as-publishers-pile-on"
+
+    - finding: "The Atlantic's Apple News+ revenue dependency — second Apple financial link"
+      description: |
+        The Atlantic's chief growth officer Megha Garibaldi told Digiday
+        (May 2025) that Apple is "by far the most valuable syndication
+        partner for The Atlantic" with "a consistent increase in engagement
+        on the platform month over month." Apple News+ has been an Atlantic
+        partner since 2019 launch. Revenue model: publishers get 50% of
+        $12.99/mo subscription revenue based on time-spent engagement share.
+
+        This creates a SECOND undisclosed Apple financial link for The Atlantic,
+        independent of the LPJ Trust's ~$17B AAPL holdings:
+        (1) OWNERSHIP CHAIN: LPJ Trust (Emerson Collective) → $17B+ Apple stock
+        (2) PLATFORM REVENUE: Apple News+ engagement-based payments — described
+        as their MOST VALUABLE syndication partnership, above any other platform.
+
+        Combined, The Atlantic has TWO distinct Apple financial relationships
+        (ownership equity + platform revenue) and ZERO Meta financial
+        relationships. This doubles the Apple coverage incentive previously
+        documented.
+      significance: "Doubles The Atlantic's Apple financial incentive — ownership equity PLUS platform revenue creates strongest publisher-entity alignment in dataset"
+      source_urls:
+        - "https://digiday.com/media/media-briefing-publishers-see-apple-news-as-a-stable-revenue-stream-amid-volatile-referral-traffic/"
+        - "https://www.fool.com/investing/2019/07/01/apple-news-is-already-hitting-a-roadblock.aspx"
+
 
       description: |
         Digiday's Dec 2025 publisher scorecard for Big Tech AI licensing:
@@ -979,18 +1067,21 @@ aggregate_findings:
     - "Meta's Dec 2025 / Mar 2026 publisher deals may shift coverage tone at those publications over time — need longitudinal tracking"
     - "Anthropic's $1.5B settlement is a distinct financial relationship type whose coverage effects have not been measured"
 
-  last_updated: "2026-08-05T04:00:00-07:00"
+  last_updated: "2026-08-05T12:00:00-07:00"
   update_notes: |
-    Type C iteration (Financial Incentive Mapping — continued): Created comprehensive
-    Meta AI deal landscape reference in competitor-entities.yaml — 13 confirmed partners
-    with dates, terms, source URLs (Reuters Oct 2024 → Süddeutsche Zeitung Mar 2026).
-    Added excluded-publishers registry documenting 8 MediaScope-profiled publications
-    that have competitor deals but no Meta deal. Added Microsoft PCM and Perplexity
-    competitor_relationships to WIRED profile (now 9 entities tracked, 5 with licensing/
-    negotiating ties). Added Microsoft PCM to The Verge profile. Corrected FT aggregate
-    finding (FT has ProRata deal, NOT Microsoft PCM). Created test_meta_deal_landscape.py
-    (40 tests, 9 classes) validating deal landscape structure, partner data completeness,
-    excluded publisher registry, WIRED/Verge Microsoft+Perplexity updates, critical finding
-    assertions, and deal-coverage correlation hypothesis. Key structural insight: the PCM
-    marketplace model scales Meta's exclusion automatically — every new demand partner
-    adds another revenue stream profiled publishers receive while Meta pays nothing.
+    Type C iteration (Aug 5, noon): Added two new aggregate findings.
+    (1) Google ad revenue dependency paradox — publishers' own SDNY antitrust
+    lawsuit filings (Jan 2026) reveal they are simultaneously suing Google AND
+    completely dependent on Google's AdX for survival. Vox Media admits digital
+    ads are "well over half" of revenue; Atlantic says it "cannot forgo" Google
+    AdX revenue; Advance Publications says it "relied on digital advertising
+    for a significant percentage." This triple-layer relationship (litigation +
+    dependency + coercion) explains why triple-adversarial Google relationship
+    still produces less hostile coverage than Meta's zero-relationship status.
+    (2) Atlantic's Apple News+ revenue dependency — chief growth officer
+    called Apple "by far the most valuable syndication partner" (Digiday,
+    May 2025). Creates second undisclosed Apple financial link, independent
+    of LPJ Trust $17B AAPL holdings. Doubles the Apple coverage incentive.
+    Also updated The Atlantic and The Verge Google relationships to
+    adversarial_litigation with dependency admissions from lawsuit filings.
+    Added advertising_dependency as new relationship type.

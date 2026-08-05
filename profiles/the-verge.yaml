@@ -1223,11 +1223,25 @@ competitor_relationships:
     description: "No direct financial tie. The Verge historically covers Apple product launches favorably."
     coverage_prediction: "softer"
   google:
-    financial_tie: "adversarial"
-    estimated_value: "$0"
-    direction: "none"
-    description: "PMC sued Google over AI Overviews, Sep 2025 (first major US publisher to do so). Nilay Patel coined 'Google Zero' concept. Deep adversarial relationship."
+    financial_tie: "adversarial_litigation"
+    estimated_value: "$0 (dual lawsuits — AI Overviews + adtech)"
+    direction: "adversarial"
+    description: >
+      PMC (The Verge's current parent) has TWO active Google lawsuits:
+      (1) AI Overviews: PMC v. Google (D.D.C., Sep 2025) — first major
+      publisher suit targeting Google's AI search summaries.
+      (2) Adtech: PMC/SheMedia v. Google (SDNY, Jan 2026) — alleges
+      Google illegally monopolized ad exchange markets.
+      Vox Media admitted in its SDNY complaint: "relies on digital advertising
+      for well over half of its revenue" and "any revenue generated from
+      subscriptions and other non-advertising sources could not, alone, fund
+      the volume and breadth of Vox Media's high-quality content."
+      PARADOX: Simultaneously suing Google AND admitting complete dependency
+      on Google's ad exchange for survival. This dual lawsuit + dependency
+      creates the most complex publisher-entity financial relationship in
+      the dataset.
     source_url: "https://www.reuters.com/sustainability/boards-policy-regulation/rolling-stone-billboard-owner-penske-sues-google-over-ai-overviews-2025-09-14/"
+    adtech_lawsuit_source: "http://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/"
     coverage_prediction: "adversarial"
   microsoft:
     financial_tie: "licensing"

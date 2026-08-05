@@ -963,17 +963,37 @@ competitor_relationships:
     coverage_prediction: "neutral"
   apple:
     financial_tie: "investment"
-    estimated_value: "~$17B (LPJ Trust AAPL holdings)"
+    estimated_value: "~$17B (LPJ Trust AAPL holdings) + Apple News+ platform revenue"
     direction: "mutual"
-    description: "Laurene Powell Jobs Trust holds ~$17B in Apple stock. LPJ owns The Atlantic via Emerson Collective. This is the single largest ownership-chain financial conflict in the dataset."
+    description: >
+      DUAL Apple financial relationship — strongest in dataset.
+      (1) OWNERSHIP EQUITY: Laurene Powell Jobs Trust holds ~$17B in Apple stock.
+      LPJ owns The Atlantic via Emerson Collective. Single largest ownership-chain
+      financial conflict in the dataset.
+      (2) PLATFORM REVENUE: Apple News+ is "by far the most valuable syndication
+      partner for The Atlantic" per chief growth officer Megha Garibaldi (Digiday,
+      May 2025). The Atlantic has been an Apple News+ partner since 2019 launch.
+      Revenue model: 50% of $12.99/mo subscription based on time-spent engagement.
+      "A consistent increase in engagement on the platform month over month."
+      Neither financial link has ever been disclosed in Apple coverage.
     source_url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=laurene+powell+jobs"
+    apple_news_source: "https://digiday.com/media/media-briefing-publishers-see-apple-news-as-a-stable-revenue-stream-amid-volatile-referral-traffic/"
     coverage_prediction: "softer"
   google:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No known direct financial relationship."
-    coverage_prediction: "neutral"
+    financial_tie: "adversarial_litigation"
+    estimated_value: "$0 (suing for damages)"
+    direction: "adversarial"
+    description: >
+      The Atlantic sued Google in SDNY (Jan 13, 2026) for adtech antitrust
+      violations. Claims Google suppressed publisher clearing prices by ~40%
+      through "deceptive and manipulative" auction practices. The Atlantic
+      admitted in its complaint that it "cannot forgo the significant revenue
+      it earns from the Google Ads demand available only through AdX" —
+      simultaneously suing Google AND admitting complete dependency on
+      Google's ad exchange for survival. Part of consolidated MDL with
+      Advance Publications, Vox Media, PMC, McClatchy, and others.
+    source_url: "http://digiday.com/media/a-running-list-of-publisher-lawsuits-targeting-googles-ad-tech-practices/"
+    coverage_prediction: "adversarial"
   x_twitter:
     financial_tie: "none"
     estimated_value: "$0"

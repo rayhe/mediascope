@@ -115,6 +115,8 @@ relationship_types:
   commercial_partnership: Cash payments for extended content display or AI features,
     not formal licensing
   adversarial_litigation: Active lawsuit filed by publisher against entity
+  advertising_dependency: Publisher critically dependent on entity's advertising platform
+    for majority of digital ad revenue — distinct from licensing or investment
 coverage_predictions:
   softer: Financial incentive predicts measurably softer coverage tone
   neutral: No financial incentive to bias coverage in either direction
