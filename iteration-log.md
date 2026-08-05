@@ -26992,3 +26992,59 @@ Added to competitor-entities.yaml to distinguish Google's "News AI pilot" deals 
 - Digiday (publisher scorecard): https://digiday.com/media/publishers-scorecard-for-big-techs-ai-licensing-deals/
 
 ### Tests: 40 passed, 0 failed (test_financial_relationships.py); full suite pending
+
+---
+## 2026-08-05 13:00 PT — Type D: Test & Verify — Structural Consistency Fixes + Relationship Type Integration
+
+**Rotation:** D (Test & Verify)
+**Focus:** Fix all test failures, integrate new relationship types into asymmetry scorer, verify full consistency
+
+### Issues Found & Fixed
+
+**4 Structural Consistency Failures (all in test_structural_consistency.py):**
+1. `test_architecture_lists_all_test_files` — `test_google_ad_dependency_paradox.py` (added in 12:00 Type C) missing from ARCHITECTURE.md tree listing
+2. `test_architecture_test_file_count_header` — stale count (claimed 3697, actual 3683 per test counting method)
+3. `test_readme_lists_all_test_files` — `test_news_corp_balanced_control.py` (added in 10:00 Type A) missing from README.md test table
+4. `test_readme_test_count_header` — README.md header format didn't match expected regex `**N tests** across M test files`
+
+**Scoring Integration Gap:**
+The Type C iteration (12:00) introduced two new relationship types (`advertising_dependency`, `adversarial_litigation`) in profiles and competitor-entities.yaml, but the asymmetry scorer in `mediascope/analyze/competitor.py` didn't recognize them:
+- `FINANCIAL_TIE_WEIGHTS` dict lacked entries for both types
+- Asymmetry scorer's paid/adversarial bucket classification didn't include them
+- Result: relationships scored as 0.0 weight ("none") instead of their proper financial incentive values
+
+### Fixes Applied
+
+1. **ARCHITECTURE.md:** Added `test_google_ad_dependency_paradox.py` entry, updated count to 3683 across 158 test files
+2. **README.md:** Added `test_news_corp_balanced_control.py` entry, fixed count header format to `**3683 tests** across 158 test files`
+3. **mediascope/analyze/competitor.py:** 
+   - Added `advertising_dependency: 0.8` to FINANCIAL_TIE_WEIGHTS (high weight — publisher survival depends on ad platform)
+   - Added `adversarial_litigation: -0.5` to FINANCIAL_TIE_WEIGHTS (negative — active lawsuits predict adversarial coverage)
+   - Added `advertising_dependency` to paid_tones classification bucket
+   - Added `adversarial_litigation` to adversarial_tones classification bucket
+4. **New test file:** `test_type_d_relationship_types.py` (18 tests across 6 classes)
+
+### New Tests (18)
+
+| Class | Tests | Validates |
+|-------|-------|-----------|
+| TestFinancialTieWeights | 7 | Both types in FINANCIAL_TIE_WEIGHTS, weight signs, ordering |
+| TestAsymmetryScorerClassification | 2 | Bucket routing (paid vs adversarial) |
+| TestCompetitorEntitiesYaml | 2 | advertising_dependency defined with correct description |
+| TestVergeGoogleRelationship | 3 | adversarial_litigation type, adversarial direction, SDNY reference |
+| TestAtlanticGoogleRelationship | 2 | adversarial_litigation type, financial vector count >= 3 |
+| TestAdxDependencyAdmissions | 2 | Revenue dependency documentation in both profiles |
+
+### Test Results
+- All 18 new tests: PASSED
+- All 124 structural consistency tests: PASSED (was 120 passed + 4 failed)
+- 0 regressions introduced
+
+### Files Changed
+1. `docs/ARCHITECTURE.md` — Added test_google_ad_dependency_paradox.py + test_type_d_relationship_types.py entries, count 3683/158
+2. `README.md` — Added test_news_corp_balanced_control.py + test_type_d_relationship_types.py entries, count **3683 tests** across 158 test files
+3. `mediascope/analyze/competitor.py` — FINANCIAL_TIE_WEIGHTS + asymmetry scorer bucket classification
+4. `tests/test_type_d_relationship_types.py` (NEW) — 18 tests validating relationship type integration
+
+**Commit:** 4b30e30 (pushed to GitHub)
+

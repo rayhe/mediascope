@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 3,381 | Across 148 test files |
+| Tests | 3,733 | Across 160 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **3683 tests** across 158 test files, each covering a different analytical capability:
+MediaScope has **3733 tests** across 160 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -545,6 +545,8 @@ MediaScope has **3683 tests** across 158 test files, each covering a different a
 | `test_cannes_contractors.py` | 40 | Wired "Cannes" contractors story: Scale AI/Covalen/Character.AI cluster split (AI Infrastructure / AI Chatbot Products / Outsourcing-Contractors), Rumman Chowdhury + Humane Intelligence entity detection, Sama outsourcing context-aware detection, catastrophizing "death of" proper-noun exclusion, Outlook software-product source exclusion, deception/impersonation loaded_language patterns, Business Insider/Daily Beast source fragment leak prevention, headline-aware topic boosting, cross-sentence industry_normalization_undercut detection, tone gap regression (child-safety EI + Path B dynamic blend) |
 | `test_type_d_fixes.py` | 16 | Compound publication source extraction (Business Insider, Daily Beast, Daily Mail as organizational sources), bare confession framing patterns (no "in" prefix) |
 | `test_type_d_relationship_types.py` | 18 | New financial relationship types: advertising_dependency and adversarial_litigation in FINANCIAL_TIE_WEIGHTS, asymmetry scorer classification, competitor-entities.yaml definitions, Verge/Atlantic Google adversarial_litigation profiles, AdX dependency admissions, weight ordering validation |
+| `test_disclosure_audit.py` | 24 | Cross-publication financial disclosure audit: WSJ unique disclosure practice (Meta + OpenAI partnerships in articles), WIRED never-disclosed OpenAI deal, FT non-disclosure pattern, Atlantic dual Apple non-disclosure (ownership + News+), symmetric deals → balanced coverage correlation, 8 excluded publishers with meta_deal=none, 15+ total competitor deals |
+| `test_narrative_coherence.py` | 26 | End-to-end evidentiary chain: financial asymmetry (7+ excluded publishers, 17:0 ratio), coverage asymmetry (4+ adversarial Meta publications), lane assignment mechanisms (WIRED desk, NYT reporter, FT within-reporter), journalist cross-entity (Will Knight zero Meta, Hannah Murphy, Mike Isaac), control groups (News Corp symmetric, Gizmodo independent), camera count paradox (12 vs 1), source documentation, systemic non-disclosure |
 | `test_jul7_regressions.py` | 8 | Regressions for Jul 7 fixes: generate_disclosure() with PublicationProfile objects (not just dicts), catastrophic regex backtracking in competitive_deficit pattern, investments dict→str coercion |
 | `test_jul8_regressions.py` | 16 | Regressions for Jul 8 pattern additions: escalation_amplification "mounting" + legal nouns, confession_framing auxiliary verb constructions ("have admitted to"), precedent_framing "largest ever" without temporal anchor |
 | `test_postpass_activation.py` | 26 | Post-pass device activation: analogy_stacking threshold (3+ markers), speculative_framing threshold (5+ hedges), expanded loaded_language patterns, analogy_stacking false-positive regression (factual "is a" constructions vs qualified metaphors) |
