@@ -79,6 +79,38 @@ publications:
       App Store monopoly litigation and labor issues. Privacy-positive
       framing of Apple's Private Cloud Compute — contrast with
       adversarial framing of Meta's identical on-device AI processing.
+      WEARABLES LANE ASSIGNMENT: Lauren Goode (WIRED's senior consumer
+      tech correspondent) reviews Apple Vision Pro with deeply personal,
+      emotional narrative — "I cried" / "The view is incredible" /
+      "I was starting to love this thing." Apple Vision Pro has 12
+      outward-facing cameras, 5 sensors, 6 microphones — the most
+      surveillance-capable consumer wearable ever sold — yet receives
+      ZERO surveillance/privacy framing in Goode's review. Criticism
+      focuses on isolation and loneliness, not data harvesting or
+      bystander consent. The same journalist also reviews Snap Spectacles
+      with playful positive framing ("Face Camera We've Been Waiting For").
+      Meanwhile, Meta's single-12MP-camera glasses are assigned to
+      investigative reporters (Dell Cameron, Dhruv Mehrotra) who frame
+      them as "dormant surveillance infrastructure."
+    apple_examples:
+      - title: "Lauren Goode Apple Vision Pro review — 'I cried'"
+        date: "2024-02-23"
+        tone: +0.55
+        framing: "personal emotional narrative, empathetic wonder, product delight. ZERO surveillance framing for 12-camera device."
+        source_url: "https://macdailynews.com/2024/02/23/dont-cry-inside-your-apple-vision-pro/"
+        notes: "Apple Vision Pro has 12 cameras vs Meta Ray-Ban's 1 camera. Goode cried in the headset and wrote about it emotionally. No mention of bystander privacy despite 12 outward-facing cameras."
+      - title: "Lauren Goode Snap Spectacles review — 'Face Camera We've Been Waiting For'"
+        date: "2018"
+        tone: +0.45
+        framing: "playful positive, expectant framing, fun consumer product review at amusement park"
+        source_url: "https://www.youtube.com/watch?v=zHn_otv4qN8"
+        notes: "Same Goode who does Apple wearables also covers Snap wearables positively — but NEVER covers Meta wearables."
+      - title: "WIRED Gadget Lab podcast — 'Apple's Uncanny Valley Pro'"
+        date: "2024-02-01"
+        tone: +0.3
+        framing: "product curiosity, no surveillance framing, no privacy alarm for 12-camera headset"
+        source_url: "https://www.everand.com/podcast/702917430/Apple-s-Uncanny-Valley-Pro"
+        notes: "Julian Chokkattu and Lauren Goode discuss Apple Vision Pro. Focus on price, apps, battery — not cameras or surveillance."
 
     google_coverage_tone: "adversarial"
     google_coverage_summary: |

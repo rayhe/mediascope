@@ -1,4 +1,114 @@
 # MediaScope Iteration Log
+## 2026-08-05 00:00 PT — Type A: WIRED Apple vs Meta Wearables Lane Assignment (Camera Count Paradox)
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+**Focus:** WIRED's divergent editorial framing of Apple Vision Pro vs Meta Ray-Ban glasses — documenting the Camera Count Paradox where hardware capability is decoupled from surveillance framing based on manufacturer identity.
+
+### Key Finding: Camera Count Paradox
+
+Apple Vision Pro has 12 cameras, 5 sensors, and 6 microphones. Lauren Goode's review: "I cried." Zero surveillance framing from WIRED.
+
+Meta Ray-Ban has 1 × 12MP camera. WIRED runs sustained investigative surveillance coverage (Dell Cameron, Dhruv Mehrotra — NameTag facial recognition, Ghost Dots privacy concerns).
+
+**The variable controlling WIRED's surveillance framing is manufacturer identity, not hardware capability.**
+
+#### Financial Alignment Layer
+- Apple reportedly negotiating Condé Nast content deal → softer coverage lane
+- Meta has no such deal → adversarial investigative lane
+- This commercial relationship aligns with the editorial lane assignment pattern
+
+#### Lane Mechanism
+WIRED assigns different editorial lanes by manufacturer:
+- **Apple wearables:** Product review desk (Goode) — experiential, emotional, positive
+- **Meta wearables:** Investigative desk (Cameron, Mehrotra) — surveillance, privacy, adversarial
+- **Snap Spectacles:** Product desk (Goode "Face Camera" video) — neutral-to-positive, no surveillance framing despite camera hardware
+
+### Files Changed
+1. `profiles/wired.yaml` — Expanded `cross_entity_wearables_framing` section with source URLs, article dates, hardware specs, podcast references, camera count paradox analysis, editorial lane mechanism, and financial alignment documentation
+2. `profiles/competitor-coverage-research.yaml` — Expanded WIRED's `apple_coverage_summary` and added 3 `apple_examples` with source URLs (Goode "I cried" Vision Pro review, Snap Spectacles "Face Camera" video, WIRED podcast "Apple's Uncanny Valley Pro")
+3. `tests/test_wired_apple_lane_assignment.py` (NEW) — 41 tests across 8 test classes covering cross-entity framing, camera count paradox, financial alignment, editorial lane mechanism
+
+### Sources Used
+- MacDaily News reprint of Goode Vision Pro review: https://macdailynews.com/2024/02/23/dont-cry-inside-your-apple-vision-pro/
+- YouTube: Goode Snap Spectacles "Face Camera" video: https://www.youtube.com/watch?v=zHn_otv4qN8
+- Everand: WIRED podcast "Apple's Uncanny Valley Pro": https://www.everand.com/podcast/702917430/Apple-s-Uncanny-Valley-Pro
+- NameTag investigation coverage: PetaPixel, TechTimes, EFF, Engadget
+- Ghost Dots coverage: Android Authority
+
+### Tests: 41 passed, 0 failed
+
+---
+
+## 2026-08-04 23:00 PT — Type B: Victoria Song (The Verge) Cross-Entity Wearables Coverage
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Focus:** Victoria Song's coverage of Meta vs Apple vs Google wearables — testing whether The Verge's primary wearables reviewer applies different editorial standards to different companies' camera wearables.
+
+### Key Finding: Consistent Cross-Entity Product-Reviewer Lens (DATA INTEGRITY CORRECTION)
+
+**The previous iteration's competitor-coverage-research.yaml entry was WRONG about Victoria Song.** It claimed she "runs sustained adversarial coverage of Meta wearables/glasses" — she does the opposite. Song is arguably the most balanced Meta wearables reviewer in the industry.
+
+#### Meta Coverage (Balanced-to-Positive)
+- **"The best glasses I've ever tried"** (Meta Ray-Ban Display, Sep 2025)
+- **"Whatever you think of Meta, these are a turning point for smart glasses"** (Gen 2 review)
+- **"The Ray-Ban Meta smart glasses actually make the future look cool"** (review headline)
+- **"Meta's big vision for face computers might be better than Apple's"** (Feb 2024 — explicitly pro-Meta comparative)
+- **Accessibility Vergecast:** Full episode on how blind/low-vision users embraced Meta AI glasses — Song hosted, interviewed users and Be My Eyes CEO
+- **"Live AI is a solution looking for a problem"** (Jan 2026) — functional product critique about utility, NOT surveillance framing
+- **LED tamper-proof piece (Jul 7, 2026):** CORRECTED — this reports Meta's PROACTIVE tamper-proof response to WSJ's Joanna Stern investigation (who found LED removal services in 30 states). Tone -0.2, not -0.65. Song covered Meta's positive action, not an adversarial exposé.
+
+#### Apple Vision Pro Coverage (Balanced-to-Positive)
+- "Higher-resolution version of what Meta is trying to accomplish with Quest"
+- Noted weight issues, clunky keyboard, EyeSight "a bit goofy"
+- **ZERO surveillance/privacy framing** despite Vision Pro having 12 outward-facing cameras, 5 sensors, 6 microphones
+- Product-focused throughout
+
+#### Google/Samsung Android XR Coverage (Positive)
+- "I felt as close to Tony Stark in a controlled demo as I'll ever be"
+- No privacy concerns raised despite camera-equipped device
+
+#### Snap Spectacles Coverage
+- Song is NOT The Verge's primary Snap reviewer — coverage handled by other staff (Scott Stein, etc.)
+- Unlike WIRED's Goode (who covers Apple/Snap but never Meta), Song covers all major brands consistently
+
+### Analytical Significance: WIRED vs Verge Lane Assignment Contrast
+
+| Aspect | WIRED (Lauren Goode) | The Verge (Victoria Song) |
+|--------|---------------------|--------------------------|
+| Covers Meta glasses? | NO — delegated to investigators | YES — primary reviewer |
+| Covers Apple wearables? | YES — with product delight | YES — with product delight |
+| Meta criticism type | N/A (doesn't review) | Functional (utility, battery) |
+| Privacy/surveillance alarm | N/A for Apple; institutional for Meta | Consistent standard across entities |
+| Pro-Meta comparative? | Never | Yes ("better than Apple's", Feb 2024) |
+
+**Key insight:** Victoria Song demonstrates what FAIR cross-entity wearables journalism looks like. When the SAME journalist covers both Meta and Apple, the editorial standards are comparable. The Verge's institutional adversarial tone toward Meta emerges from Alex Heath (business/investigative) and Nilay Patel (editorial commentary), not from Song's product reviews.
+
+### Data Integrity Corrections Made
+1. `competitor-coverage-research.yaml`: Replaced incorrect "sustained adversarial" Song attribution; corrected LED piece tone from -0.65 to -0.2; added pro-Meta comparative example
+2. `the-verge.yaml`: Expanded Song profile with full competitor_coverage_analysis including meta_coverage, apple_coverage, meta_vs_apple_direct_comparison, google_android_xr_coverage, snap_spectacles_coverage, and cross_entity_analytical_significance
+3. Both files now correctly attribute The Verge's adversarial Meta tone to Alex Heath and editorial commentary, not Song's product desk
+
+### New Tests: `test_victoria_song_cross_entity.py` (15 tests)
+- **TestVictoriaSongProfile (9 tests):** Profile exists, has competitor analysis, Meta tone not adversarial, positive quotes documented, Live AI critique is functional, LED piece = Meta response, accessibility coverage, Apple no surveillance framing, Meta vs Apple comparison documented
+- **TestVergeCompetitorResearchCorrections (3 tests):** Summary corrected, LED piece relabeled, pro-Meta example exists
+- **TestCrossEntityLaneComparison (3 tests):** WIRED lane asymmetry confirmed, Song covers both entities, institutional vs product split documented
+
+### Sources Used
+- TWiT.TV Victoria Song Meta Ray-Ban Display review (https://twit.tv/posts/tech/are-meta-ray-ban-display-glasses-ready-everyday-use)
+- Dixie Sun News reprint of Verge review (https://dixiesunnews.com/articles/meta-ray-ban-smart-glasses-stun-early-users-a-revolutionary-leap/)
+- ts2.tech Verge quote roundup (https://ts2.tech/en/the-ultimate-smart-glasses-showdown-2025-metas-ray-ban-wayfarer-2-vs-xreal-air-2-ultra-vs-rokid-max-2/)
+- Vuink reprint: "Meta's big vision might be better than Apple's" (https://vuink.com/post/guriretr-d-dpbz/2024/2/14/24070729/ray-ban-meta-smart-glasses-apple-vision-pro-ar-vr)
+- AppleInsider Vision Pro hands-on roundup (https://appleinsider.com/articles/24/01/16/apple-vision-pro-hands-on-roundup-weighty-with-a-clunky-virtual-keyboard-but-great-overall)
+- 9to5Mac Vision Pro pre-review (https://9to5mac.com/2024/01/16/apple-vision-pro-real-world-use/)
+- Techmeme LED tamper-proof piece (https://www.techmeme.com/260707/p41)
+- NewsATW "Strongest argument for smart glasses is accessibility" (https://newsatw.com/the-strongest-argument-for-smart-glasses-is-accessibility/)
+- YouTube: Low-vision community embraced AI smart glasses (https://www.youtube.com/watch?v=pgu0a9QK75E)
+- Live AI "solution looking for a problem" (https://45179bb5-2a1f-4bc9-a93f-f86df27a1ff5.atarimworker.io/2025/1/26/24351264/live-ai-ray-ban-meta-smart-glasses-wearables)
+
+**Commit:** d6d89d7 (pushed to GitHub)
+
+---
+
 ## 2026-08-04 22:00 PT — Type D+A Hybrid: Test & Verify + FT Coverage Deep Dive
 
 **Rotation:** D (Test & Verify) + A (Competitor Coverage Deep Dive — FT × OpenAI/Meta)

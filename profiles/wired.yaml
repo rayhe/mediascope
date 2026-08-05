@@ -1919,57 +1919,122 @@ competitor_relationships:
     coverage_prediction: "adversarial"
 
 cross_entity_wearables_framing:
-  date_analyzed: "2026-08-04"
+  date_analyzed: "2026-08-05"
   summary: >
     WIRED's wearable coverage reveals stark framing asymmetry by manufacturer identity. Camera-equipped
     wearables from Apple and Snap receive empathetic/playful product coverage from WIRED's most senior
     consumer tech correspondent (Lauren Goode), while Meta's camera glasses receive institutional
-    surveillance/privacy alarm framing from other staffers. Same hardware capability (face-mounted cameras),
-    radically different narrative treatment determined by manufacturer identity.
+    surveillance/privacy alarm framing from other staffers (Dell Cameron, Dhruv Mehrotra). Same hardware
+    capability (face-mounted cameras), radically different narrative treatment determined by manufacturer
+    identity. The asymmetry is most visible in the HARDWARE COMPARISON: Apple Vision Pro has 12 outward-
+    facing cameras, 5 sensors, and 6 microphones — technically the most surveillance-capable consumer
+    wearable ever sold — yet receives ZERO surveillance/privacy framing from WIRED. Meta Ray-Ban has a
+    single 12MP camera — and receives sustained investigative surveillance framing.
   evidence:
     apple_vision_pro:
       reviewer: "Lauren Goode (Senior Correspondent)"
       tone: "empathetic wonder"
+      article_title: "I Cried Inside the Apple Vision Pro (review)"
+      article_date: "2024-02-23"
       framing_language: >
-        "The view is incredible. It really is." / "I cried" / "I was starting to love this thing" —
-        deeply personal first-person emotional narrative. Apple Vision Pro has 12 outward-facing cameras,
-        5 sensors, 6 microphones — technically a far more capable surveillance device than Meta's single
-        12MP camera. ZERO surveillance/privacy framing in Goode's review. Criticism = personal isolation
-        and missing human connection, not data harvesting or bystander consent.
+        "The view is incredible. It really is." / "I cried" / "Tears welled up in my goggles, pooling
+        at the soft rim of the face cushion." / "I was starting to love this thing." — deeply personal
+        first-person emotional narrative. Apple Vision Pro has 12 outward-facing cameras, 5 sensors,
+        6 microphones — technically a far more capable surveillance device than Meta's single 12MP
+        camera. ZERO surveillance/privacy framing in Goode's review. No mention of bystander consent
+        despite the device literally having cameras pointed at everyone around the wearer. Criticism =
+        personal isolation and missing human connection ("I also missed the people in the darkened space
+        around me and the person on the couch next to me"), not data harvesting or bystander consent.
+      hardware_specs: "12 cameras, 5 sensors, 6 microphones (more camera hardware than any Meta wearable)"
       privacy_concerns_raised: false
       camera_surveillance_framing: false
+      source_urls:
+        - "https://macdailynews.com/2024/02/23/dont-cry-inside-your-apple-vision-pro/"
+        - "https://techiemag.co.uk/crying-in-apple-vision-pro/"
+      wired_podcast: >
+        WIRED Gadget Lab podcast episode "Apple's Uncanny Valley Pro" (Feb 1, 2024): Julian Chokkattu
+        and Lauren Goode discuss Apple Vision Pro. Tone: excited, product-curious, no surveillance
+        framing despite 12 outward-facing cameras. Pod description focuses on price, battery, apps —
+        NOT privacy or bystander consent.
+      podcast_source_url: "https://www.everand.com/podcast/702917430/Apple-s-Uncanny-Valley-Pro"
     snap_spectacles:
       reviewer: "Lauren Goode"
       tone: "playful positive"
+      article_title: "Snap Spectacles: Are They the Face Camera We've Been Waiting For?"
+      article_date: "2018"
       framing_language: >
-        WIRED YouTube: "Snap Spectacles: Are They the Face Camera We've Been Waiting For?" —
-        expectant/positive framing for a literal face camera. Tested at California's Great America
-        amusement park. No privacy/surveillance/consent language in title, description, or keywords.
-        Fun consumer framing for a social media company's face-mounted camera.
+        WIRED YouTube video: "Snap Spectacles: Are They the Face Camera We've Been Waiting For?" —
+        expectant/positive framing for a literal face camera. The title itself frames the face camera
+        as something AWAITED, not feared. Tested at California's Great America amusement park by Lauren
+        Goode and Arielle Pardes. No privacy/surveillance/consent language in title, description, or
+        keywords. Fun consumer framing for a social media company's face-mounted camera. Video tags:
+        "snap spectacles, face cameras, spectacle review, wired gear reviews, augmented reality,
+        snapchat glasses" — no privacy/surveillance tags.
+      hardware_specs: "Single camera, same form factor as Meta Ray-Ban"
       privacy_concerns_raised: false
       camera_surveillance_framing: false
+      source_url: "https://www.youtube.com/watch?v=zHn_otv4qN8"
     meta_glasses:
-      reviewer: "Not Lauren Goode — editorial lane avoidance"
+      reviewer: "Dell Cameron, Dhruv Mehrotra (investigative) — NOT Lauren Goode"
       tone: "institutional surveillance alarm"
+      key_articles:
+        - title: "Meta Smart Glasses Had Hidden Facial Recognition Code (NameTag)"
+          date: "2026-06-04"
+          authors: "Dell Cameron, Dhruv Mehrotra"
+          framing: "investigative exposé, 'dormant surveillance infrastructure,' biometric faceprints"
+          source_urls:
+            - "https://petapixel.com/2026/06/09/meta-removes-facial-recognition-code-from-ray-ban-smart-glasses-app/"
+            - "https://www.techtimes.com/articles/317870/20260605/meta-smart-glasses-facial-recognition-code-already-millions-phones-wired-finds.htm"
+        - title: "Ghost Dots Investigation (TikTok stickers to block recording LED)"
+          date: "2025-08"
+          framing: "privacy alarm, people trying to circumvent safeguards, surveillance concern"
+          source_url: "https://www.androidauthority.com/ray-ban-meta-hide-recording-light-3584167/"
       framing_language: >
         WIRED's Meta glasses coverage emphasizes surveillance, privacy invasion, "glasshole revival,"
-        bystander consent, and data harvesting. The same 12MP camera that is a "face camera we've been
-        waiting for" on Snap Spectacles becomes a surveillance tool on Meta Ray-Bans. Goode — despite
-        being WIRED's most authoritative consumer tech voice with 15+ years of wearables expertise —
-        has no major individual byline on Meta Ray-Ban reviews, leaving coverage to reporters with
-        accountability/investigative orientations rather than consumer-product-delight framing.
+        bystander consent, and data harvesting. The same single camera that is "the face camera we've
+        been waiting for" on Snap Spectacles becomes "dormant surveillance infrastructure" on Meta
+        Ray-Bans. Goode — despite being WIRED's most authoritative consumer tech voice with 15+ years
+        of wearables expertise — has no major individual byline on Meta Ray-Ban reviews, leaving
+        coverage to investigative reporters (Dell Cameron, Dhruv Mehrotra) whose default lens is
+        surveillance/accountability. Meta's proactive privacy safeguards (tamper-proof LED, recording
+        indicator) are framed as insufficient rather than as positive privacy engineering.
+      hardware_specs: "Single 12MP camera (LESS camera hardware than Apple Vision Pro's 12 cameras)"
       privacy_concerns_raised: true
       camera_surveillance_framing: true
+  camera_count_paradox: >
+    The most damning data point in the lane assignment analysis: Apple Vision Pro has 12 outward-
+    facing cameras, 5 sensors, and 6 microphones — by FAR the most surveillance-capable consumer
+    wearable ever manufactured. Meta Ray-Ban has a single 12MP camera. WIRED runs multi-part
+    investigative campaigns against the device with ONE camera while its senior consumer tech
+    correspondent writes emotionally about "crying inside" the device with TWELVE cameras. The
+    12-camera device gets ZERO surveillance framing. The 1-camera device gets sustained surveillance
+    framing. The variable is NOT the hardware capability — it's the manufacturer identity. This
+    eliminates "Meta glasses are inherently more privacy-risky" as an explanation for the framing
+    differential, because the Apple device is objectively more capable of surveillance.
+  editorial_lane_assignment_mechanism: >
+    The lane assignment doesn't require conscious editorial bias. It works through three structural
+    steps: (1) Product review assignments go to the senior consumer tech correspondent (Goode), who
+    naturally produces empathetic first-person narrative. (2) Meta coverage is assigned to the
+    investigative/accountability team (Cameron, Mehrotra), who naturally produce surveillance-alarm
+    framing. (3) Editorial leadership (Katie Drummond) makes these assignments, determining the
+    narrative before a single word is written. The same journalist who writes "I cried" about Apple's
+    12-camera headset never gets assigned to write about Meta's 1-camera glasses. This structural
+    effect is more analytically important than any individual article's word choices because it
+    operates at the editorial assignment level.
+  financial_alignment: >
+    The lane assignment correlates with financial incentives: Apple is in licensing negotiations with
+    Condé Nast (WIRED's parent) → softer coverage predicted and delivered. Meta has no financial
+    relationship with Condé Nast → adversarial coverage predicted and delivered. The lane assignment
+    mechanism PRODUCES the coverage differential that the financial relationship PREDICTS.
   analytical_significance: >
-    The lane assignment pattern — Goode gets Apple/Snap wearables, other staffers get Meta wearables —
-    produces a systematic framing asymmetry at the publication level. It doesn't require conscious
-    editorial bias; it emerges from which journalist covers which company. The journalist who would
-    naturally write "I cried inside the Meta Ray-Ban Display" never gets assigned that story, while
-    the journalists who do get assigned bring accountability/surveillance framing as their default
-    lens. This structural lane effect may be more analytically important than any individual article's
-    word choices because it operates at the editorial assignment level, before a single word is written.
-    Aligns with WIRED's competitor_relationships: Apple = negotiating licensing deal (softer coverage
-    predicted), Meta = no financial tie (adversarial coverage predicted).
+    The lane assignment pattern — Goode gets Apple/Snap wearables, investigative reporters get Meta
+    wearables — produces a systematic framing asymmetry at the publication level that is
+    STRUCTURALLY UNDETECTABLE in any single article. Each article, read alone, appears editorially
+    legitimate: Goode writes a great product review of Apple Vision Pro; Cameron and Mehrotra write
+    a legitimate investigation of Meta's NameTag code. The asymmetry only becomes visible when you
+    ask: why does the journalist who would naturally write "I cried inside the Meta Ray-Ban Display"
+    never get assigned that story? And why does the journalist who would naturally investigate Apple's
+    12-camera bystander consent implications never get assigned THAT story?
 
 
 litigation_connections:
