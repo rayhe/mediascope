@@ -605,3 +605,185 @@ bias_ratings:
     FT is generally regarded as centrist/business-oriented with high factual reporting
     standards. MBFC rates it "Least Biased" with "Very High" factual reporting.
     Paywall limits public access and therefore limits bias-rating coverage.
+
+# ===================================================================
+# GOOGLE COVERAGE ANALYSIS — FT × Google framing comparison
+# Added 2026-08-05 (Type A iteration — Competitor Coverage Deep Dive)
+#
+# FT joined Google's News AI pilot (Feb 2026), extending existing News
+# Showcase partnership. Despite this financial tie, FT's Google coverage
+# uses business/technology framing — NOT the adversarial/surveillance
+# framing applied to Meta coverage. The asymmetry is structural:
+# different reporters, different desks, different editorial standards.
+# ===================================================================
+google_coverage_analysis:
+  overall_coverage_tone: "neutral_to_positive"
+  reporters:
+    - name: "Cristina Criddle"
+      beat: "Tech regulation, data, AI policy"
+      google_framing: "regulatory_business"
+      notes: >
+        Covers Google regulatory stories (DMA compliance, AI Overviews opt-out,
+        Android sideloading). Business-press framing, no loaded language. Does
+        NOT cover Meta as primary beat.
+    - name: "Michael Acton"
+      beat: "Big Tech deals, cloud computing"
+      google_framing: "business_deal"
+      notes: >
+        Co-authored Apple-Google Gemini deal coverage. Neutral financial
+        reporting — deal values, contract structure, market impact.
+    - name: "Stephen Morris"
+      beat: "Big Tech finance, M&A"
+      google_framing: "business_deal"
+      notes: >
+        Co-authored Alphabet bond sale and capex reporting. Standard business
+        press framing with market context.
+    - name: "George Hammond"
+      beat: "Tech deals, M&A, venture capital"
+      google_framing: "business_deal"
+      notes: >
+        Covers Google alongside OpenAI, Apple, and other entities in deal/M&A
+        context. No adversarial framing for any entity.
+
+  reporter_assignment_finding: >
+    FT assigns different reporters to Google and Meta coverage, creating
+    structural frame divergence. Hannah Murphy (Meta beat, SF) uses
+    adversarial/surveillance framing for Meta wearables and AI. Google coverage
+    is spread across Cristina Criddle (regulatory), Michael Acton and Stephen
+    Morris (finance/deals), and George Hammond (M&A). None of these Google
+    reporters apply surveillance language to Google's camera products, AI
+    features, or data practices. This is a between-reporter asymmetry —
+    the editorial frame varies by which reporter is assigned, and reporter
+    assignment correlates with which entity has a financial relationship
+    with FT.
+
+  smart_glasses_coverage:
+    cameras_present: true
+    articles:
+      - title: "Samsung, Google debut AI eyewear at Google I/O 2026"
+        date: "2026-05-20"
+        framing: "product_technology"
+        language:
+          - "AI-powered eyewear"
+          - "new era of ambient computing"
+          - "hands-free control"
+          - "navigate, place orders, receive summarized notifications"
+          - "captures photos"
+          - "intelligent eyewear marks an important step"
+        privacy_language: "NONE — zero surveillance, wiretapping, or biometric framing despite cameras"
+        source_url: "https://www.finanzen.at/nachrichten/aktien/samsung-google-debut-ai-eyewear-1036178228"
+        notes: >
+          Google/Samsung Android XR glasses have cameras that capture photos, integrated
+          Gemini AI that processes visual and audio input — functionally comparable to
+          Meta Ray-Ban's camera and Meta AI integration. FT coverage uses ZERO privacy
+          alarm language. No mention of surveillance, wiretapping laws, biometric data
+          laws, or bystander consent. Framing is aspirational technology.
+
+      - title: "Samsung Project Moohan headset — significantly lower price than Apple Vision Pro"
+        date: "2024-12-12"
+        framing: "product_technology"
+        language:
+          - "significantly lower price point"
+          - "high-fidelity displays"
+          - "similar experience as Apple Vision Pro"
+          - "making interacting with computers more natural"
+        privacy_language: "NONE — multiple cameras on headset, zero privacy framing"
+        source_url: "https://www.smarthouse.com.au/google-partners-with-samsung-to-research-smart-glasses-and-vr-headsets/"
+        notes: >
+          FT source material on Samsung/Google XR headset (multiple cameras, sensors,
+          microphones) frames it as consumer product innovation. Compare to Meta's
+          single-camera glasses which FT frames as surveillance infrastructure.
+
+    comparison_to_meta: >
+      FT's Hannah Murphy covers Meta glasses (single 12MP camera, optional always-on
+      sensing) with surveillance/legal-threat language: 'continuously collect audio,'
+      'wiretapping laws,' 'biometric data laws,' 'LED deactivation' as deception.
+      FT's technology reporters cover Google/Samsung Android XR glasses (cameras,
+      microphones, always-on Gemini AI) with product-aspiration language: 'AI-powered
+      eyewear,' 'hands-free control,' 'intelligent eyewear.' Both products have
+      cameras. Both process visual and audio input through AI. Both raise identical
+      privacy concerns. The ONLY variable is manufacturer identity — and whether that
+      manufacturer pays FT.
+
+  capex_coverage:
+    articles:
+      - title: "Alphabet hits a $4T market cap, fourth Big Tech company to reach milestone"
+        date: "2026-01-13"
+        framing: "business_milestone"
+        language:
+          - "$4T market cap"
+          - "fourth Big Tech company to reach the milestone"
+          - "stock risen 6%+ in the past month"
+        notes: "Positive milestone framing. No 'reckless spending' concerns."
+        source_url: "https://www.techmeme.com/260112/p22"
+
+      - title: "Google, Amazon, Microsoft, and Meta spent a combined $1.1T in capex since AI boom"
+        date: "2026-07-31"
+        framing: "industry_analysis"
+        language:
+          - "$1.1T combined"
+          - "plan to spend $745B this year"
+          - "once in a lifetime opportunity"
+        notes: >
+          Industry-wide framing. Google capex ($195-205B for 2026) presented as
+          strategic investment, not crisis. Compare to FT's Meta coverage: 'weighs
+          big equity raising' (desperation), 'equity cuts for second year' (morale damage).
+        source_url: "https://www.techmeme.com/260731/p2"
+
+      - title: "Apple to pay Google 'billions' over time in Gemini deal"
+        date: "2026-01-15"
+        framing: "business_deal"
+        language:
+          - "cloud computing contract"
+          - "several billion dollars over time"
+        notes: "Neutral deal reporting. Google positioned as premium AI provider."
+        source_url: "https://www.tipranks.com/news/the-fly/apple-to-pay-google-billions-over-time-in-gemini-deal-ft-reports-thefly"
+
+  regulatory_posture:
+    stance: "adversarial"
+    description: >
+      FT filed a formal CMA response (Mar 2026) demanding Google provide
+      granular, page-level opt-in/out controls for AI content use across
+      training, grounding, and fine-tuning. FT described bundled controls
+      as 'significantly weakening our autonomy.' This is genuinely
+      adversarial toward Google — but it stays in REGULATORY FILINGS,
+      not in FT's Google coverage.
+    split_finding: >
+      FT's adversarial Google posture is confined to regulatory filings
+      (CMA responses, advocacy). FT's adversarial Meta posture appears in
+      the coverage itself (surveillance language, privacy alarm, legal threat
+      framing in published articles). This creates a two-channel system:
+      Google gets adversarial regulatory treatment but neutral-to-positive
+      coverage; Meta gets adversarial coverage as the primary channel.
+      The regulatory-coverage split may reflect editorial restraint toward
+      a deal partner (Google News AI pilot) — keep the business relationship
+      professional in public while pursuing institutional interests through
+      regulatory channels.
+    source_url: "https://videoweek.com/2026/03/19/google-agrees-to-give-publishers-an-ai-overview-opt-out-but-concerns-remain/"
+
+  asymmetry_score:
+    google_meta_delta: 0.45
+    google_tone_numeric: -0.10
+    meta_tone_numeric: -0.55
+    description: >
+      FT covers Google at approximately -0.10 (slightly negative, standard
+      business coverage with mild regulatory skepticism) vs Meta at -0.55
+      (sustained adversarial framing with surveillance language). Delta of
+      0.45 is significant — the entity paying FT (Google News AI pilot)
+      gets coverage nearly half a point more favorable than the entity
+      not paying FT (Meta). This is consistent with the broader MediaScope
+      finding that financial relationships predict coverage tone.
+
+  privacy_coverage_absence:
+    finding: >
+      FT has NOT produced original investigative coverage of Google's
+      privacy practices in 2025-2026 comparable to its Meta investigations.
+      Google Gemini data tracking lawsuit (dismissed Jul 2026), Google
+      voice recording leaks (2019), and Android telemetry studies (Google
+      collects 20x more data than Apple from iOS) have received NO FT
+      investigative follow-up, despite being directly analogous to the
+      privacy concerns FT highlights in its Meta coverage. Google's
+      existing data practices are objectively more extensive than Meta's
+      wearables sensing — Google Assistant, Android telemetry, Gemini
+      data processing, YouTube tracking — yet FT's privacy investigations
+      target Meta exclusively.

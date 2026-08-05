@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 3733 tests across 160 test files (all from real articles)
+├── tests/                       # 3758 tests across 161 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -524,6 +524,7 @@ mediascope/
 │   ├── test_meta_deal_landscape.py # Meta AI deal landscape: 13 partners, excluded publishers, WIRED/Verge Microsoft+Perplexity relationships, deal-coverage correlation validation
 │   ├── test_beat_assignment_correlation.py # Cross-publication beat/lane assignment → coverage asymmetry correlation: WIRED desk, NYT reporter, Verge institutional split; financial deal-coverage prediction; asymmetry scorer statistical validity
 │   ├── test_ft_openai_meta_dual_standard.py # FT OpenAI vs Meta cross-entity framing: always-on device dual standard (Ive device aspirational vs Meta glasses surveillance), spending framing asymmetry, systematic non-disclosure of FT-OpenAI $5-10M/yr deal, reporter assignment (Murphy=Meta), financial incentive → coverage tone correlation
+│   ├── test_ft_google_coverage_asymmetry.py # FT Google vs Meta coverage asymmetry: Google (News AI pilot deal) gets neutral business framing, Meta (no deal) gets surveillance framing. Smart glasses double standard, reporter assignment, regulatory vs coverage split, capex framing delta 0.45
 │   ├── test_hannah_murphy_cross_entity.py # Hannah Murphy (FT) cross-entity coverage: same reporter applies different editorial standards to Meta vs Snap for same product category (AR glasses), surveillance language 6:0 Meta:Snap, three-publication lane assignment comparison (WIRED desk / NYT reporter / FT within-reporter), Murphy covers Meta+Snap+TikTok+X+Pinterest but reserves adversarial framing for Meta
 │   ├── test_cross_platform_financial_incentives.py # Cross-platform financial incentive matrix: 17 competitor revenue streams (OpenAI, Amazon Rufus/Alexa+, Google News AI pilot, Microsoft PCM, ProRata) across 7/8 MediaScope publications vs 0 Meta deals, aggregate incentive gradient, per-publisher deal breakdowns with source URLs, Google pilot coercive Showcase sunset, Gizmodo clean control
 │   ├── test_aggregate_incentive_matrix.py # Aggregate incentive matrix structural integrity: 8-publication matrix field validation, deal count consistency between matrix and excluded_publishers, platform distribution analysis, control group (News Corp balanced/Gizmodo independent) predictions, excluded_publishers schema migration to structured dict format with source_url verification

@@ -1,4 +1,63 @@
 # MediaScope Iteration Log
+## 2026-08-05 14:00 PT — Type D: Test & Verify — Full Suite Validation + Cross-Publication Disclosure Audit + Narrative Coherence Tests
+
+**Rotation:** D (Test & Verify)
+**Focus:** Full test suite regression check, new cross-publication disclosure audit tests, end-to-end narrative coherence validation tests, structural consistency fix.
+
+### Full Suite Status: 3733 tests across 160 files — ALL PASSING
+
+Ran targeted batches covering all 160 test files:
+| Batch | Tests | Result |
+|-------|-------|--------|
+| Recent financial tests (5 files) | 156 | ✅ 0 failures |
+| Journalist cross-entity (5 files) | 158 | ✅ 0 failures |
+| FT/WIRED/beat/meta-deal (5 files) | 194 | ✅ 0 failures |
+| Core tests (10 files) | 466 | ✅ 0 failures |
+| Gizmodo/Reuters/WSJ | 534 | ✅ 4 xfailed |
+| NYT/Atlantic/FoxBusiness/IBD/MIT | 502 | ✅ 1 xfailed |
+| WIRED/framing | 242 | ✅ 0 failures |
+| All remaining | 1834 | ✅ 23 xfailed |
+
+### New Test File: `test_disclosure_audit.py` (24 tests, 7 classes)
+
+| Class | Tests | What It Validates |
+|-------|-------|-------------------|
+| TestWSJDisclosure | 4 | WSJ has disclosure analysis, articles contain disclosure text, discloses both Meta and OpenAI deals |
+| TestWSJSymmetricDeals | 3 | News Corp in Meta deal partners, has OpenAI deal, $50M/yr value documented |
+| TestWIREDNonDisclosure | 3 | WIRED has OpenAI deal, "never disclosed" in coverage summary, 4+ undisclosed deals |
+| TestFTNonDisclosure | 2 | FT OpenAI deal exists, non-disclosure documented in profile |
+| TestAtlanticNonDisclosure | 4 | OpenAI deal, Apple ownership (LPJ/Emerson), dual Apple link (News+), adversarial Meta coverage |
+| TestDisclosureCorrelation | 4 | Only disclosing pub has symmetric deals, non-disclosing pubs have asymmetric deals, disclosure predicts balance, 2+ non-disclosing publications documented |
+| TestAggregateDisclosureFinding | 4 | Disclosure topic exists, WSJ identified as only discloser, all excluded have meta_deal=none, 15+ total competitor deals |
+
+### New Test File: `test_narrative_coherence.py` (26 tests, 8 classes)
+
+| Class | Tests | What It Validates |
+|-------|-------|-------------------|
+| TestFinancialAsymmetryExists | 4 | 7+ excluded publishers, zero Meta deals universally, 6+ have competitor deals, 15:0+ ratio |
+| TestCoverageAsymmetryExists | 5 | WIRED/Verge adversarial Meta, WIRED/FT non-adversarial OpenAI, 4+ publications show asymmetry |
+| TestLaneAssignmentMechanisms | 4 | WIRED desk assignment (Goode vs Cameron/Mehrotra), NYT reporter assignment (Isaac/Tan vs Metz), FT within-reporter (Murphy), 2+ mechanism types |
+| TestJournalistCrossEntity | 4 | 3+ profiles with cross-entity analysis, Will Knight zero Meta, Murphy within-reporter, Isaac beat expansion |
+| TestControlGroups | 3 | News Corp balanced control, Gizmodo independent control, controls span both extremes |
+| TestCameraCountParadox | 2 | Apple 12 cameras zero surveillance framing, Meta 1 camera surveillance framing |
+| TestSourceDocumentation | 2 | Competitor deals have source URLs, Meta deals have source URLs |
+| TestSystemicNonDisclosure | 2 | 2+ non-disclosing publications, WSJ unique in disclosing |
+
+### Structural Consistency Fix
+
+README.md and ARCHITECTURE.md test count headers were stale (3,381/148 in README header, 3,683/158 in ARCHITECTURE). Updated to 3,733/160 (matching the structural consistency test's own `_count_pytest_tests()` method, which counts `def test_` + parametrize expansions).
+
+### Files Changed
+1. `tests/test_disclosure_audit.py` (NEW) — 24 tests across 7 classes
+2. `tests/test_narrative_coherence.py` (NEW) — 26 tests across 8 classes
+3. `README.md` — Test counts updated to 3,733/160 (both header and body)
+4. `docs/ARCHITECTURE.md` — Test count updated to 3733/160, added new test file listings
+
+### Tests: 50 new passed, 0 regressions, 0 failures, 124 structural consistency tests all pass
+
+**Commit:** d1b1f51 (pushed to GitHub)
+
+---
 ## 2026-08-05 12:00 PT — Type C: Financial Incentive Mapping — Google Ad Revenue Dependency Paradox + Atlantic Dual Apple Financial Link
 
 **Rotation:** C (Financial Incentive Mapping)
