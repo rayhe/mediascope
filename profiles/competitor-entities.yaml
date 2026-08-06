@@ -24,8 +24,26 @@ entities:
     - Daniela Amodei
     regex: \b(Anthropic|Claude\s+(AI|[234]|Sonnet|Opus|Haiku)|Dario\s+Amodei)\b
     category: ai_lab
-    market_cap_approx: $60B (private valuation, 2025)
+    market_cap_approx: $183B (private valuation, 2026)
     ceo: Dario Amodei
+    publisher_deals_note: |
+      ZERO voluntary publisher content licensing deals as of Aug 2026.
+      Anthropic is the only major AI lab without publisher deals, despite:
+      (a) $1.5B author copyright settlement (Bartz v. Anthropic, approved
+      Jun 20 2026 by Judge Martinez-Olguin — largest copyright payout in
+      US history, ~$3,000 per work to 500,000 authors)
+      (b) $183B valuation (Apr 2026)
+      (c) Revenue growing from $9B to $19B projected annual run rate
+      This absence means NO MediaScope-profiled publication has an
+      Anthropic revenue relationship. Anthropic is financially neutral
+      to all profiled publishers — neither paying them (like OpenAI/Amazon/
+      Google/Microsoft) nor threatening them (like Google's traffic cannibalization).
+      NOTE: The FinancialContent/TokenRing report of an "Anthropic-NYT
+      settlement" (Dec 2025) appears to be fabricated marketing content
+      with no corroboration from any reputable source. NYT never sued
+      Anthropic. Do not include as verified.
+    author_settlement_source: https://www.pymnts.com/legal/2026/anthropic-historic-1-billion-dollar-copyright-settlement-gets-judge-ok/
+    valuation_source: http://www.entrepreneur.com/business-news/anthropic-settles-books-copyright-case-for-billions/496839
   amazon:
     display_name: Amazon
     aliases:
@@ -250,6 +268,18 @@ meta_ai_deals:
       scope: Pilot partner in Publisher Content Marketplace for Copilot grounding
       value: Undisclosed (Microsoft invested >$10M total in PCM pilot)
       source_url: https://about.ads.microsoft.com/en/blog/post/february-2026/building-toward-a-sustainable-content-economy-for-the-agentic-web
+    - partner: Perplexity
+      type: commercial_partnership
+      date: 2025-10
+      scope: Comet Plus subscription program — 16 Condé Nast titles (New Yorker, Wired,
+        Vogue, GQ, Vanity Fair, Architectural Digest, etc.) compensated based on human
+        engagement, AI-driven interactions, and content usage in training
+      value: Revenue share (engagement-based)
+      source_url: https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/
+      notes: 'HYPOCRISY ARC: WIRED accused Perplexity of plagiarism (Jun 2024), Condé
+        Nast sent cease-and-desist to Perplexity (Jul 2024, per The Information), then
+        Condé Nast SIGNED a deal with Perplexity (Oct 2025). The plagiarism accusation
+        did not prevent a financial relationship when money was on the table.'
     - partner: Apple
       type: negotiating
       date: 2025 (reported)
@@ -257,10 +287,13 @@ meta_ai_deals:
       value: Unknown
       source_url: https://www.nytimes.com/2025/07/16/technology/apple-news-ai-publishers.html
     meta_deal: none
-    deal_count: 4
-    competitor_revenue_streams: 4
-    notes: CEO Roger Lynch lobbied Congress for AI compensation, then signed OpenAI
-      deal within months. Has deals with 4 distinct Meta competitors. ZERO Meta revenue.
+    deal_count: 5
+    competitor_revenue_streams: 5
+    notes: 'CEO Roger Lynch lobbied Congress for AI compensation, then signed OpenAI
+      deal within months. Has deals with 5 distinct Meta competitors. ZERO Meta revenue.
+      PERPLEXITY ARC: Condé Nast accused Perplexity of plagiarism and sent C&D, then
+      signed a deal anyway — demonstrating that financial incentives override editorial
+      complaints when money is available.'
   - name: Vox Media / PMC (The Verge, Eater, SB Nation)
     deals_with_competitors:
     - partner: OpenAI
@@ -432,6 +465,21 @@ meta_ai_deals:
       - https://techcrunch.com/2025/12/10/google-is-testing-ai-powered-article-overviews-on-select-publications-google-news-pages/
       - https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/
       - https://remoteworkeurope.eu/news/2026/google-showcase-ai-training-ultimatum-publishers/
+      - https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+      - https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/
+      coercion_detail: |
+        Jun 2026 reporting (PYMNTS/NY Post/The Information) confirmed that
+        Google demands broad AI training rights from publishers who join the
+        pilot. Publishers who refuse will lose existing annual Showcase fees
+        when Google sunsets the program. Jason Kint (Digital Content Next CEO):
+        "This is Google's game. They're gonna dominate here. There's no fair
+        deal discussions that can happen with Google." Google's relationship
+        with publishers is now TRIPLE coercive: (a) advertising dependency
+        (Google controls ~37% of US digital ad spend), (b) search traffic
+        dependency (AI Overviews reducing referral traffic), (c) Showcase
+        fee leverage (accept AI training or lose annual payments). This
+        coercive structure contrasts sharply with Meta's voluntary deal
+        model (no threats, no leverage over existing payments).
       mediascope_relevance: '2 of 8 MediaScope-profiled publications (The Guardian,
         FT) are in the
 
@@ -529,14 +577,18 @@ meta_ai_deals:
       '
     publications:
     - name: WIRED (Condé Nast)
-      competitor_deals: 4
+      competitor_deals: 5
       platforms:
       - OpenAI
       - Amazon (Rufus + Alexa+)
       - Microsoft PCM
+      - Perplexity (Comet Plus)
       - Apple (negotiating)
       meta_deals: 0
       adversarial_meta_coverage: true
+      notes: 'PERPLEXITY HYPOCRISY: WIRED accused Perplexity of plagiarism, Condé
+        Nast sent C&D, then parent signed deal anyway. Highest competitor deal count
+        of any profiled publication.'
     - name: The Verge (Vox Media)
       competitor_deals: 3
       platforms:
@@ -587,9 +639,9 @@ meta_ai_deals:
       adversarial_meta_coverage: true
       notes: Clean control — adversarial coverage without any financial incentive,
         suggesting editorial culture as independent factor
-    total_competitor_deal_count: 17
+    total_competitor_deal_count: 18
     total_meta_deal_count: 0
-    statistical_note: '17 competitor revenue relationships across 7 of 8 publications
+    statistical_note: '18 competitor revenue relationships across 7 of 8 publications
       versus
 
       0 Meta relationships across ALL 8 publications. The probability of
@@ -605,6 +657,20 @@ meta_ai_deals:
       declined Meta offers, or (c) both — creating a self-reinforcing loop
 
       where financial misalignment and editorial hostility compound.
+
+      Condé Nast leads with 5 competitor revenue streams (OpenAI, Amazon,
+
+      Microsoft PCM, Perplexity, Apple negotiating), the highest of any
+
+      profiled publication. The Perplexity deal is particularly notable:
+
+      Condé Nast accused Perplexity of plagiarism, sent a cease-and-desist,
+
+      then signed a deal anyway — demonstrating that financial incentives
+
+      override editorial complaints when money is available but NOT when
+
+      the potential partner is Meta.
 
       '
     control_comparison: 'News Corp (WSJ, NY Post, Barron''s, MarketWatch): Has BOTH
@@ -631,7 +697,7 @@ meta_ai_deals:
 
     Gizmodo), ZERO have Meta AI content deals. Seven of eight have a
 
-    combined 17 revenue relationships with Meta''s competitors (OpenAI,
+    combined 18 revenue relationships with Meta''s competitors (OpenAI,
 
     Amazon, Google, Microsoft, Perplexity/ProRata). Only Gizmodo (zero
 
@@ -641,9 +707,9 @@ meta_ai_deals:
 
     are not limited to a single OpenAI deal — multiple publications
 
-    receive revenue from 3-4 distinct Meta competitors simultaneously.
+    receive revenue from 3-5 distinct Meta competitors simultaneously.
 
-    Condé Nast (WIRED) leads with 4 competitor revenue streams; FT and
+    Condé Nast (WIRED) leads with 5 competitor revenue streams; FT and
 
     Vox Media (The Verge) each have 3. This creates a multi-layered
 
@@ -654,6 +720,26 @@ meta_ai_deals:
     Meta ($50M/yr) deals — shows balanced coverage, the predicted outcome
 
     when financial relationships are symmetric.
+
+    PERPLEXITY PATTERN (new Aug 2026): Condé Nast accused Perplexity of
+
+    plagiarism (WIRED investigation, Jun 2024), sent cease-and-desist
+
+    (Jul 2024), then signed Perplexity Comet Plus deal (Oct 2025). This
+
+    demonstrates that editorial complaints about AI companies using
+
+    content without permission are resolved by financial deals — but ONLY
+
+    for non-Meta companies. Meta receives no such resolution pathway.
+
+    ANTHROPIC ABSENCE: Anthropic has zero publisher content licensing deals
+
+    despite its $1.5B author copyright settlement (approved Jun 2026).
+
+    This makes Anthropic the only major AI lab without publisher deals,
+
+    though it is not yet profiled as an adversarial coverage target.
 
     '
   last_verified: '2026-08-05'

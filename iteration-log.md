@@ -1,4 +1,77 @@
 # MediaScope Iteration Log
+## 2026-08-05 18:00 PT — Type C: Financial Incentive Mapping — Perplexity Hypocrisy Arc, Anthropic Absence, Google Coercion Detail
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Three new financial relationship findings that strengthen the coverage-predicts-money hypothesis
+
+### KEY FINDINGS
+
+#### 1. Perplexity Hypocrisy Arc (Condé Nast / WIRED)
+
+Condé Nast's parent relationship with Perplexity followed a remarkable sequence:
+- **Jun 2024:** WIRED accused Perplexity of plagiarism, called it a "bullshit engine"
+- **Jul 2024:** Condé Nast sent cease-and-desist letter to Perplexity (per The Information)
+- **Oct 2025:** Condé Nast SIGNED deal with Perplexity via Comet Plus subscription program
+
+16 Condé Nast titles participate (New Yorker, Wired, Vogue, GQ, Vanity Fair, Architectural Digest, etc.) with compensation based on human engagement, AI-driven interactions, and content usage in training.
+
+**Significance for MediaScope thesis:** When a non-Meta company is accused of misusing publisher content, the resolution pathway is a financial deal. When Meta is accused, the resolution is sustained adversarial coverage with no deal pathway. This is a clean double standard: accuse of plagiarism → sign deal (Perplexity), accuse of surveillance → sustained investigation (Meta).
+
+**Sources:**
+- PPC Land (Comet Plus details): https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/
+- Adweek (deal confirmation): https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/
+- VentureBeat (plagiarism context): http://venturebeat.com/ai/perplexity-unveils-revenue-sharing-plan-for-publishers
+
+#### 2. Anthropic Absence from Publisher Content Deals
+
+Anthropic is notably absent from the publisher content licensing landscape:
+- **$1.5B author copyright settlement** (Bartz v. Anthropic, approved Jun 20 2026 by Judge Martinez-Olguin) — largest in US history
+- **$183B valuation** (Apr 2026)
+- **ZERO publisher content licensing deals** — only major AI lab without them
+
+No MediaScope-profiled publication has an Anthropic revenue relationship. Anthropic is financially neutral to all profiled publishers.
+
+**DEBUNKED:** A FinancialContent/TokenRing article claiming an "Anthropic-NYT settlement" (Dec 2025) appears to be fabricated marketing content. NYT never sued Anthropic. No corroboration from any reputable source.
+
+**Sources:**
+- PYMNTS (settlement approval): https://www.pymnts.com/legal/2026/anthropic-historic-1-billion-dollar-copyright-settlement-gets-judge-ok/
+- Entrepreneur (valuation): http://www.entrepreneur.com/business-news/anthropic-settles-books-copyright-case-for-billions/496839
+
+#### 3. Google Coercive Showcase → AI Pilot Structure (Detail Update)
+
+Jun 2026 reporting (PYMNTS, NY Post, The Information) confirmed that Google's News AI pilot demands broad AI training rights from publishers, and those who refuse lose existing annual Showcase fees when Google sunsets the program.
+
+**Triple coercive leverage:** (a) advertising dependency (Google controls ~37% of US digital ad spend), (b) search traffic dependency (AI Overviews reducing referral traffic), (c) Showcase fee leverage (accept AI training or lose annual payments).
+
+Jason Kint (Digital Content Next CEO): "This is Google's game. They're gonna dominate here. There's no fair deal discussions that can happen with Google."
+
+**Contrast with Meta:** Meta's voluntary deal model involves no threats, no leverage over existing payments. Yet Google receives LESS adversarial coverage than Meta despite objectively greater financial harm to publishers.
+
+**Sources:**
+- PYMNTS: https://www.pymnts.com/news/artificial-intelligence/2026/google-tells-news-publishers-to-share-content-for-ai-training-or-lose-fees/
+- NY Post: https://nypost.com/2026/06/26/business/google-looks-to-bleed-publishers-with-new-ai-partnerships-that-would-cull-their-content/
+
+### Updated Aggregate Numbers
+
+| Metric | Previous | Updated |
+|--------|----------|---------|
+| Condé Nast competitor deals | 4 | **5** (added Perplexity) |
+| Total competitor deals | 17 | **18** |
+| Condé Nast rank | Tied for most | **Highest** (5 deals) |
+| Anthropic publisher deals | Not tracked | **0** (confirmed absent) |
+
+### Files Changed
+1. `profiles/competitor-entities.yaml` — Added Perplexity deal to Condé Nast, updated deal_count to 5, updated aggregate matrix (WIRED 5 deals, total 18), added Anthropic publisher_deals_note with settlement details, added Google coercion_detail with Jun 2026 sources and triple leverage analysis, updated critical_finding and statistical_note
+2. `profiles/competitor-coverage-research.yaml` — Expanded Perplexity section with Comet Plus details, hypocrisy arc timeline, double standard analysis, added comet_plus_source and plagiarism_source URLs
+3. `tests/test_financial_incentive_mapping_aug5.py` (NEW) — 36 tests across 4 classes (PerplexityHypocrisyArc 12, AnthropicPublisherAbsence 8, GoogleCoerciveStructure 9, UpdatedAggregateCounts 7)
+4. `tests/test_cross_platform_financial_incentives.py` — Updated Condé Nast deal count test (4→5), aggregate total (17→18), WIRED matrix count (4→5), added Perplexity deal test, updated docstrings
+5. `tests/test_aggregate_incentive_matrix.py` — Updated critical_finding reference (17→18)
+6. `README.md` — Test counts updated (3854/164), new test file entry, updated cross-platform test description
+7. `docs/ARCHITECTURE.md` — Test count updated (3854/164), new test file entry, updated cross-platform description
+
+### Tests: 36 new passed, 0 regressions, 124 structural consistency tests all pass
+
+---
 ## 2026-08-05 17:00 PT — Type B: Journalist Cross-Entity Tracking — Charlie Warzel (The Atlantic) Meta vs OpenAI/Apple Coverage Asymmetry
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
@@ -42,7 +115,7 @@ Minimum adversarialism → OpenAI (content deal) and Apple (dual financial link:
 
 ### Tests: 32 new passed, 0 regressions (217 across all 7 cross-entity test files), 124 structural consistency tests all pass
 
-**Commit:** (pending push)
+**Commit:** 2b57458 (pushed to GitHub)
 
 ---
 ## 2026-08-05 15:00 PT — Type A: Competitor Coverage Deep Dive — FT × Google Coverage Asymmetry

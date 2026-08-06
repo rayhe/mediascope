@@ -89,9 +89,30 @@ publications:
     perplexity_coverage_tone: "neutral"
     perplexity_coverage_summary: |
       Condé Nast has a content licensing agreement with Perplexity
-      (confirmed Adweek, Dec 2025, alongside OpenAI and Amazon deals).
-      No detailed terms disclosed.
+      via the Comet Plus subscription program (launched Oct 1, 2025).
+      16 Condé Nast titles participate including The New Yorker, Wired,
+      Vogue, GQ, Vanity Fair, and Architectural Digest. Compensation
+      is based on human engagement, AI-driven interactions, and content
+      usage in training (PPC Land, Adweek confirmed).
+
+      HYPOCRISY ARC: This deal followed a remarkable sequence:
+      (1) Jun 2024: WIRED accused Perplexity of plagiarism in original
+          investigation, called it a "bullshit engine"
+      (2) Jul 2024: Condé Nast sent cease-and-desist to Perplexity
+          (per The Information)
+      (3) Oct 2025: Condé Nast SIGNED deal with Perplexity via Comet Plus
+
+      This pattern demonstrates that editorial complaints about AI companies
+      using content without permission are resolved by financial deals.
+      WIRED's plagiarism accusation against Perplexity (a non-Meta company)
+      was resolved with a revenue-sharing deal. Meta's identical alleged
+      behavior (using publisher content for AI) has NEVER been resolved
+      with a deal — only with sustained adversarial coverage. The double
+      standard is: accuse of plagiarism → sign deal (Perplexity), accuse
+      of surveillance → sustained investigation (Meta).
     perplexity_deal_source: "https://www.adweek.com/media/conde-nast-vasanth-williams-chief-product-technology-officer-microsoft-ai-licensing-pilot/"
+    perplexity_comet_plus_source: "https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/"
+    perplexity_plagiarism_source: "http://venturebeat.com/ai/perplexity-unveils-revenue-sharing-plan-for-publishers"
 
     deal_count_summary: |
       As of Aug 2026, Condé Nast (WIRED's parent) has AI licensing

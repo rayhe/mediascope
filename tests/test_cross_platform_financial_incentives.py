@@ -71,7 +71,7 @@ class TestExcludedPublisherStructure:
 
 
 class TestCondeNastFinancialRelationships:
-    """Condé Nast (WIRED) should have 4 competitor revenue streams."""
+    """Condé Nast (WIRED) should have 5 competitor revenue streams."""
 
     def _get_conde_nast(self, entities):
         for pub in entities["meta_ai_deals"]["excluded_publishers"]:
@@ -99,9 +99,14 @@ class TestCondeNastFinancialRelationships:
         partners = [d["partner"] for d in pub["deals_with_competitors"]]
         assert any("Microsoft" in p for p in partners), "Missing Microsoft PCM deal"
 
-    def test_conde_nast_deal_count_is_four(self, entities):
+    def test_conde_nast_has_perplexity_deal(self, entities):
         pub = self._get_conde_nast(entities)
-        assert pub["deal_count"] == 4
+        partners = [d["partner"] for d in pub["deals_with_competitors"]]
+        assert any("Perplexity" in p for p in partners), "Missing Perplexity Comet Plus deal"
+
+    def test_conde_nast_deal_count_is_five(self, entities):
+        pub = self._get_conde_nast(entities)
+        assert pub["deal_count"] == 5
 
     def test_conde_nast_zero_meta_deals(self, entities):
         pub = self._get_conde_nast(entities)
@@ -287,9 +292,9 @@ class TestAggregateIncentiveMatrix:
         matrix = entities["meta_ai_deals"]["aggregate_incentive_matrix"]["publications"]
         assert len(matrix) == 8
 
-    def test_total_competitor_deals_is_seventeen(self, entities):
+    def test_total_competitor_deals_is_eighteen(self, entities):
         matrix = entities["meta_ai_deals"]["aggregate_incentive_matrix"]
-        assert matrix["total_competitor_deal_count"] == 17
+        assert matrix["total_competitor_deal_count"] == 18
 
     def test_total_meta_deals_is_zero(self, entities):
         matrix = entities["meta_ai_deals"]["aggregate_incentive_matrix"]
@@ -306,10 +311,10 @@ class TestAggregateIncentiveMatrix:
         for pub in matrix:
             assert pub["meta_deals"] == 0, f"{pub['name']} has non-zero meta_deals"
 
-    def test_wired_leads_with_four_deals(self, entities):
+    def test_wired_leads_with_five_deals(self, entities):
         matrix = entities["meta_ai_deals"]["aggregate_incentive_matrix"]["publications"]
         wired = [p for p in matrix if "WIRED" in p["name"]][0]
-        assert wired["competitor_deals"] == 4
+        assert wired["competitor_deals"] == 5
 
     def test_ft_and_verge_have_three_deals(self, entities):
         matrix = entities["meta_ai_deals"]["aggregate_incentive_matrix"]["publications"]

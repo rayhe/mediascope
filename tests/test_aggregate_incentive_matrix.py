@@ -204,8 +204,8 @@ class TestControlGroupPredictions:
         cls.matrix = cls.entities["meta_ai_deals"]["aggregate_incentive_matrix"]
         cls.ctrl = cls.matrix.get("control_comparison", "")
 
-    def test_finding_mentions_seventeen_deals(self):
-        assert "17" in self.finding, "Critical finding should mention 17 competitor deals"
+    def test_finding_mentions_eighteen_deals(self):
+        assert "18" in self.finding, "Critical finding should mention 18 competitor deals"
 
     def test_finding_mentions_zero_meta_deals(self):
         assert "ZERO" in self.finding or "0" in self.finding
