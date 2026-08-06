@@ -304,6 +304,101 @@ entities:
         directly relevant to Advance's financial health — not just through
         licensing revenue, but through the ad revenue implications of the
         deals WIRED's editorial stance implicitly endorses.
+    network_revenue_decline:
+      description: |
+        Google's Network advertising revenue (AdSense, AdMob, Google Ad
+        Manager) — the share paid to external publishers — has been declining
+        for multiple quarters while Google's total advertising revenue grows.
+        Google now retains over 90% of its advertising revenue for owned
+        properties (Search, YouTube, AI features). Publishers receive an
+        ever-shrinking share of Google's ad ecosystem even as total digital
+        advertising spend grows. This structural shift means Google
+        simultaneously controls publishers' ad revenue AND reduces the
+        traffic that generates it via AI Overviews.
+      q2_2026_network_revenue_b: 7.3
+      q2_2026_network_yoy_pct: -0.7
+      q2_2026_total_google_ad_revenue_b: 81.63
+      q2_2026_total_google_ad_yoy_pct: 14.4
+      q2_2026_network_share_pct: 8.9
+      q2_2026_search_revenue_b: 63.27
+      q1_2026_network_revenue_b: 6.97
+      q1_2026_network_yoy_pct: -4.0
+      alphabet_q2_2026_report_date: '2026-07-22'
+      source_urls:
+      - https://www.zacks.com/stock/news/2958597/heres-what-key-metrics-tell-us-about-alphabet-googl-q2-earnings
+      - https://fifthperson.com/alphabet-q2-2026/
+      - https://almcorp.com/blog/adsense-revenue-plunge-january-2026-causes-solutions-recovery/
+      - https://props.id/google-ad-network-revenue-is-falling-how-publishers-win/
+      trend_summary: |
+        Q1 2026: $6.97B (-4.0% YoY) — first time below $7B
+        Q2 2026: $7.3B (-0.7% YoY) — sequential recovery but still declining YoY
+        Network share of total Google ad revenue: 8.9% (down from ~12% in Q1 2024)
+        Google retains 90%+ of ad revenue for owned properties
+        AI Overviews reduce organic clicks by 34.5% (Ahrefs data)
+        Traffic from Google to major tech pubs dropped from 112M to <50M monthly
+    advertising_dependency_coercion:
+      description: |
+        Google's relationship with publishers operates through a quadruple
+        coercion structure — four simultaneous leverage mechanisms that make
+        publishers dependent on Google even as Google reduces their share of
+        value. This contrasts sharply with Meta's voluntary, no-leverage deal
+        model where Meta has no traffic control, no ad network dependency,
+        and no coercive structure over publishers.
+      layers:
+      - name: advertising_dependency
+        detail: |
+          Google controls approximately 37% of US digital ad spend. Publishers
+          depend on Google Ad Manager, AdSense, and AdMob for programmatic
+          revenue. Even as Network revenue declines ($7.3B Q2 2026, -0.7% YoY),
+          publishers cannot easily exit the ecosystem — Google's ad infrastructure
+          is embedded in their tech stacks. Q1 2026 showed the first sub-$7B
+          Network quarter ($6.97B, -4.0% YoY).
+      - name: search_traffic_dependency
+        detail: |
+          AI Overviews reduce organic publisher clicks by 34.5% (Ahrefs).
+          AI Overviews has 2.5B+ MAU; AI Mode has 1B+ MAU. Traffic from
+          Google to major tech publications dropped from 112M to under 50M
+          monthly visits in roughly two years. Digital Trends lost 97% of
+          Google traffic (8.5M to 264K monthly clicks). Even the NYT
+          acknowledged in Q2 2026 earnings (Aug 5) that "big tech companies
+          whose moves continue to result in less traffic to publishers" are
+          hurting growth. NYT stock fell 13% — worst day since 2012.
+      - name: showcase_fee_leverage
+        detail: |
+          Publishers who decline the News AI pilot lose existing annual
+          Showcase fees when Google sunsets the program. Showcase payments
+          are recurring revenue publishers have come to depend on — removing
+          them is punitive, not neutral.
+      - name: pilot_deal_exclusion
+        detail: |
+          Google reportedly threatens to exclude publishers from pilot AI
+          deals if they opt out of AI Overviews. UK CMA world-first ruling
+          (Jun 3 2026) requires Google to offer opt-out, but Google's
+          retaliatory deal exclusion undermines the remedy. Jason Kint
+          (Digital Content Next CEO): "This is Google's game."
+      meta_contrast: |
+        Meta has ZERO coercive leverage over publishers:
+        (a) No ad network dependency — Meta doesn't run publisher ad tech
+            (no AdSense/Ad Manager equivalent). Publishers earn nothing
+            from Meta's ad infrastructure.
+        (b) No search traffic control — Meta doesn't control web search.
+            Cannot reduce publisher referral traffic the way Google can
+            via AI Overviews.
+        (c) No fee leverage — Meta's AI deals ($50M/yr News Corp, etc.)
+            are voluntary bilateral agreements with no threat of losing
+            existing payments if declined.
+        (d) No coercive opt-out — Meta has never threatened publishers
+            with exclusion for declining AI training permissions.
+        The asymmetry: Google has FOUR leverage mechanisms over publishers
+        while Meta has ZERO. Yet publications most harmed by Google
+        (Condé Nast, NYT) direct their most sustained adversarial
+        coverage at Meta, not at the company that controls their revenue
+        and traffic. This is the Advertising Dependency Paradox.
+      source_urls:
+      - https://www.reuters.com/business/media-telecom/new-york-times-misses-estimates-digital-subscriber-additions-2026-08-05/
+      - https://www.wsj.com/business/earnings/new-york-times-posts-higher-revenue-as-subscriber-growth-slows-545cc6a0
+      - https://www.searchenginejournal.com/conde-nast-ceo-plan-as-if-search-traffic-will-be-zero/574786/
+      - https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/
   x_twitter:
     display_name: X / Twitter
     aliases:

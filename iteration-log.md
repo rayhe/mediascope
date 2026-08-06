@@ -1,4 +1,114 @@
 # MediaScope Iteration Log
+## 2026-08-06 13:00 PT — Type C: Google Advertising Dependency Coercion — Q2 2026 Earnings + The Advertising Dependency Paradox
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Google's quadruple coercion structure over publishers, with fresh Q2 2026 earnings data from Alphabet (Jul 22) and NYT (Aug 5)
+
+### KEY FINDING — THE ADVERTISING DEPENDENCY PARADOX:
+Publications MOST harmed by Google direct their most sustained adversarial coverage at Meta (zero leverage), not at Google (quadruple coercive leverage). This is risk-adjusted self-interest, not editorial courage:
+- Being adversarial toward **Google** is RISKY — could trigger traffic/ad revenue reduction
+- Being adversarial toward **Meta** is COST-FREE — Meta has no leverage over publishers
+- Financial incentives push publishers toward softer Google coverage and harsher Meta coverage, regardless of actual harm
+
+### FRESH EARNINGS DATA:
+
+**Alphabet Q2 2026 (Jul 22, 2026):**
+- Google Network revenue: $7.3B (-0.7% YoY) — publisher share at all-time low (8.9% of total Google ad revenue)
+- Total Google advertising: $81.63B (+14.4% YoY) — Google grows while publishers shrink
+- Google retains 90%+ of ad revenue for owned properties
+- Q1 2026: $6.97B (-4.0% YoY) — first-ever sub-$7B quarter
+- AI Overviews reduce organic clicks by 34.5% (Ahrefs), 2.5B+ MAU
+
+**NYT Q2 2026 (Aug 5, 2026 — YESTERDAY):**
+- Revenue: $762.5M (+11% YoY), beat $752M consensus
+- Stock plunged 13% — worst one-day loss since 2012
+- 280K digital subs added (missed 295K estimate)
+- CEO Levien: "rapidly changing information ecosystem shaped by a small number of big tech companies whose moves continue to result in less traffic to publishers. The Times isn't immune to that impact."
+- AI licensing revenue STILL not broken out separately
+
+**Condé Nast Google Traffic Collapse:**
+- Google traffic declined from MAJORITY to ~25% of total
+- CEO Lynch: "Assume there's no search" — plans for zero search traffic
+- Called AI Overviews "another sort of death blow"
+- Expects Google to settle at single-digit % of traffic
+
+### QUADRUPLE COERCION STRUCTURE (fully documented):
+1. **Advertising dependency**: Google controls ~37% of US digital ad spend; publishers depend on Google Ad Manager/AdSense
+2. **Search traffic dependency**: AI Overviews -34.5% clicks; traffic to tech pubs from 112M to <50M monthly
+3. **Showcase fee leverage**: Refuse News AI pilot → lose existing annual Showcase fees
+4. **Pilot deal exclusion**: Opt out of AI Overviews → excluded from pilot AI deals
+
+**Meta contrast**: ZERO leverage mechanisms — no ad network, no search traffic, no fee leverage, no coercive structure
+
+### Sources
+- Alphabet Q2 2026 key metrics: https://www.zacks.com/stock/news/2958597/heres-what-key-metrics-tell-us-about-alphabet-googl-q2-earnings
+- Alphabet Q2 2026 analysis: https://fifthperson.com/alphabet-q2-2026/
+- Google Ad Network 90% milestone: https://almcorp.com/blog/adsense-revenue-plunge-january-2026-causes-solutions-recovery/
+- Google Ad Network Q1 decline: https://props.id/google-ad-network-revenue-is-falling-how-publishers-win/
+- NYT Q2 stock crash (WSJ): https://www.wsj.com/business/earnings/new-york-times-posts-higher-revenue-as-subscriber-growth-slows-545cc6a0
+- NYT Q2 subscriber miss (Reuters): https://www.reuters.com/business/media-telecom/new-york-times-misses-estimates-digital-subscriber-additions-2026-08-05/
+- Condé Nast zero search (SEJ): https://www.searchenginejournal.com/conde-nast-ceo-plan-as-if-search-traffic-will-be-zero/574786/
+- Condé Nast death blow (PPC Land): https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/
+
+### Changes
+- `profiles/competitor-entities.yaml` — Added: Google `network_revenue_decline` section (Q1+Q2 2026 data, trend summary) + `advertising_dependency_coercion` section (4 layers + Meta contrast)
+- `profiles/competitor-coverage-research.yaml` — Added: WIRED `google_traffic_collapse` (Condé Nast majority→25%→zero planning) + `advertising_dependency_paradox` (structural explanation)
+- `profiles/nytimes.yaml` — Added: Q2 2026 10-Q filing (Aug 5: $762.5M revenue, -13% stock, 280K subs, Levien traffic quote)
+- `tests/test_type_c_google_ad_dependency_aug6.py` — NEW: 41 tests across 8 classes (all passing)
+- `README.md` / `docs/ARCHITECTURE.md` — Test count: 4,530 across 183 test files; new test file listed
+
+### Test Results
+- 41/41 new tests passing
+- 124/124 structural consistency tests passing (0 regressions)
+- 275/275 regression tests across 7 key files (financial_relationships, competitor_coverage, entities, citations, asymmetry, financial_incentive_mapping_aug5, type_c_financial_landscape_aug6)
+
+---
+## 2026-08-06 12:00 PT — Type B: Christopher Mims (WSJ) Cross-Entity — Tone Inversion + Disclosure Practice
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Focus:** Christopher Mims (WSJ Technology Columnist) cross-entity coverage analysis
+
+### KEY FINDING #1 — TONE INVERSION (validates balanced control):
+Mims shows the OPPOSITE asymmetry from WIRED/Verge journalists:
+- **Meta coverage (tone +0.3):** balanced-to-constructive
+  - Yann LeCun profile (Oct 2024): most positive Meta AI framing at any major pub
+  - Smart glasses survey (Jun 2026): praised Meta's design approach
+  - Commoditization piece (Jul 2026): Meta "showed the world it could potentially compete with the two leading AI labs"
+  - Sustainability coverage: Meta noted as ONLY company tallying full water use
+- **OpenAI coverage (tone -0.3):** skeptical-to-critical
+  - Commoditization piece: "Without a competitive moat...serious contraction"
+  - AI capex coverage: compared to dot-com bubble
+  - Bluesky: mocked AI computer control as "holding up a picture of his Bored Ape"
+
+This is a ~0.6 gap in the OPPOSITE direction from WIRED's ~0.95 gap. News Corp's balanced deals ($50M/yr each) produce the most balanced coverage in the dataset.
+
+### KEY FINDING #2 — WSJ SYSTEMATIC DISCLOSURE:
+WSJ is the ONLY publication that discloses financial relationships:
+- Meta articles: "News Corp, owner of The Wall Street Journal, has a content-licensing partnership with Meta."
+- OpenAI articles: equivalent OpenAI disclosure
+- Editorial policy, not individual choice — observed across 7+ reporters (Bobrowsky, Wells, Deighton, Hagey, Eisen, Coletta, Li)
+- NO other profiled publication (WIRED, Verge, Atlantic, FT, NYT, Guardian) discloses its deals
+- THE IRONY: publication with LEAST bias incentive is the ONLY one that discloses
+
+### Sources
+- WSJ smart glasses article (Mims, Jun 2026): https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8
+- WSJ AI commoditization (Mims, Jul 2026): https://www.wsj.com/tech/ai/cheaper-ai-commodity-openai-anthropic-0111da73
+- Techmeme LeCun profile citation: https://www.techmeme.com/241012/p6
+- WSJ disclosure examples: 6 articles verified with disclosure text (Meta coding agent, data center teachers, bio weapons, AG investigation, Simo leave, TBPN acquisition)
+
+### Changes
+- `tests/test_christopher_mims_cross_entity.py` — NEW: 34 tests across 9 classes (all passing)
+- `profiles/news-corp.yaml` — Added journalist_profiles (Mims cross-entity data) + disclosure_practice (systematic disclosure documentation)
+- `profiles/competitor-coverage-research.yaml` — Added mims_cross_entity + wsj_disclosure_practice sections under news-corp
+- `README.md` / `docs/ARCHITECTURE.md` — Test count: 4,489 across 182 test files; new test file listed
+
+### Test Results
+- 34/34 new tests passing
+- 124/124 structural consistency tests passing (0 regressions)
+- 257/257 regression tests across 7 key files (news_corp, financial_relationships, competitor_coverage, asymmetry, entities, citations)
+- Commit: 6ffe946 — pushed to main
+
+---
 ## 2026-08-06 11:00 PT — Type A: Competitor Coverage Deep Dive — MIT Technology Review × Apple Governance Conflict
 
 **Rotation:** A (Competitor Coverage Deep Dive)

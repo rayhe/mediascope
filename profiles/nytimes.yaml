@@ -69,6 +69,26 @@ ownership_chain:
           The Times isn't immune to that impact." Digital affiliate/licensing/other: $45.2M
           (+12.7% YoY) — did NOT specifically attribute growth to AI deals. Digital advertising:
           $93M (+32% YoY), driven by marketer demand and ad supply growth (per CFO Bardeen).
+      - type: "10-Q"
+        period: "Q2 2026"
+        report_date: "2026-08-05"
+        source_url: "https://www.reuters.com/business/media-telecom/new-york-times-misses-estimates-digital-subscriber-additions-2026-08-05/"
+        notes: >
+          Revenue $762.5M (+11% YoY), beat $752M consensus. Net income $93.4M ($0.57/share),
+          up from $82.9M ($0.50/share). Adjusted EPS $0.69 (beat $0.66 consensus).
+          280,000 digital-only subscriber additions (missed 295,300 estimate, smallest
+          sequential increase in a year). 12.8M digital-only subscribers, 13.35M total.
+          Subscription revenue $537.9M (+12%). Advertising revenue $149.1M (+11%).
+          Stock plunged 13% — worst one-day loss since 2012.
+          CEO Levien on Google traffic impact: "We delivered our second-quarter results
+          against the backdrop of a rapidly changing information ecosystem shaped by a
+          small number of big tech companies whose moves continue to result in less
+          traffic to publishers. The Times isn't immune to that impact."
+          Q3 guidance: digital-only subscription revenue +12-15% (mid-point below 14.2%
+          consensus), total subscription +9-11%, ad revenue high-single to low-double digit.
+          MEDIASCOPE NOTE: Even the NYT — the most successful digital subscription publisher —
+          is now explicitly acknowledging Google's traffic reduction. AI licensing revenue
+          STILL not broken out separately (bundled in affiliate/licensing/other).
   - name: "Ochs-Sulzberger Family / 1997 Trust"
     entity_type: "controlling_family"
     description: >
