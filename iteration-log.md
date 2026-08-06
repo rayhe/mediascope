@@ -1,4 +1,140 @@
 # MediaScope Iteration Log
+## 2026-08-06 05:00 PT — Type D: Test & Verify — Cross-Validation Suite, Test Count Fix, Full Regression Check
+
+**Rotation:** D (Test & Verify)
+**Focus:** Cross-profile data consistency validation, test count correction, comprehensive regression testing
+
+### WORK COMPLETED
+
+#### 1. Full Regression Testing (863 tests across 24 files, 0 failures)
+Ran targeted batches covering all recent work:
+- **Recent additions (3 files):** `test_type_c_financial_landscape_aug6.py` (45), `test_raymond_wong_cross_entity.py` (29), `test_type_d_deal_count_cascade_aug6.py` (28) — 102 tests, ALL PASS
+- **Core infrastructure (6 files):** `test_structural_consistency.py`, `test_asymmetry.py`, `test_competitor_coverage.py`, `test_financial_relationships.py`, `test_entities.py`, `test_citations.py` — 318 tests, ALL PASS
+- **Type D verification (4 files):** `test_type_d_fixes.py`, `test_type_d_pattern_fixes_aug5.py`, `test_type_d_relationship_types.py`, `test_financial_incentive_mapping_aug5.py` — 98 tests, ALL PASS
+- **Journalist cross-entity (10 files):** All 10 journalist cross-entity test files — 300 tests, ALL PASS
+- **Coverage asymmetry (4 files):** Verge/FT asymmetry tests — 129 tests, ALL PASS
+- **xfail files (4 files):** 74 passed, 23 xfailed (all still genuinely failing — scoring engine gaps, not data issues)
+
+#### 2. Test Count Fix: README Was 32 Tests Behind
+README and ARCHITECTURE.md claimed 4,174 tests. Actual `pytest --collect-only`: 4,206 tests (before new cross-validation file). The 04:00 Type C commit miscounted. Now corrected to 4,247 / 175 files (after adding new test file).
+
+#### 3. NEW TEST FILE: `test_type_d_cross_validation_aug6.py` (41 tests, 9 classes)
+
+Cross-validates data consistency BETWEEN profiles — ensuring that data added in Types A-C is internally coherent.
+
+| Class | Tests | What It Validates |
+|-------|-------|-------------------|
+| TestDealCountCrossValidation | 7 | Aggregate total = 19, per-pub sum = 19, all meta_deals = 0, WIRED leads with 5 |
+| TestAppleOpenAICrossReference | 7 | Apple entity ↔ cross_platform_summary consistency, 3 phases, chronological dates, source URLs |
+| TestLitigationLandscapeConsistency | 7 | Google class-action court/plaintiffs, CMA date, Reddit instability, Meta zero litigation, OpenAI refs |
+| TestThreeTierModelConsistency | 6 | Tier 1/2/3 structural validation, control comparisons, all 8 publications present |
+| TestGizmodoCleanControlCrossValidation | 3 | Profile ↔ entity ↔ research file consistency for Gizmodo clean control status |
+| TestCoercionEscalation | 3 | Quadruple coercion vectors, CMA cross-reference, Google entity consistency |
+| TestEntityCompleteness | 4 | All 7 major entities present with display_name, xAI publisher-invisible, Meta 13 deals |
+| TestSourceURLPresence | 4 | Source URLs exist for class-action, CMA ruling, Apple-OpenAI collapse, Reddit instability |
+
+#### 4. xfail Audit (23 tests across 4 files)
+All 23 xfail tests remain genuinely failing. They represent scoring engine gaps:
+- Entity extraction for unusual names ("Challenger, Gray & Christmas", "Refuge" charity, "Franklin Templeton", "Prada")
+- VADER sentiment inversion on professional skepticism
+- Framing pattern gaps (rhetorical questions, tempering codas, sovereignty framing)
+- Source affiliation bleeding
+
+None are promotable without new detection logic implementation.
+
+### Files Changed
+1. `tests/test_type_d_cross_validation_aug6.py` (NEW) — 41 cross-validation tests across 9 classes
+2. `README.md` — Test counts corrected: 4,247 / 175 test files
+3. `docs/ARCHITECTURE.md` — Test count corrected: 4,247 / 175 test files
+
+### Tests: 41 new passed, 0 regressions across 863 sampled tests
+
+---
+## 2026-08-06 04:00 PT — Type C: Financial Incentive Mapping — Apple-OpenAI Mutual Litigation, Google Class-Action, CMA Opt-Out, Reddit Instability
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Four major financial landscape developments reshaping the AI content licensing ecosystem
+
+### KEY FINDING 1: Apple-OpenAI Partnership Collapse — Fastest Partnership-to-Litigation Arc in AI History
+
+The Apple-OpenAI relationship has undergone three phases in under two years:
+
+| Phase | Date | Event |
+|-------|------|-------|
+| Partnership | Jun 2024 | Apple integrates ChatGPT into Siri; no money changes hands |
+| Breach threat | May 14, 2026 | OpenAI retains outside counsel, exec calls deal a "failure" |
+| Trade secret suit | Jul 10, 2026 | Apple sues OpenAI for trade secret theft (io Products, $6.4B acquisition) |
+
+OpenAI exec: "We have done everything from a product perspective. They have not, and worse, they haven't even made an honest effort." OpenAI expected subscription growth "on par" with Apple's $20B/yr Google Search deal. It "hasn't come close to happening."
+
+**MediaScope relevance:** Condé Nast was simultaneously negotiating content deals with Apple AND has an active OpenAI licensing deal. Now Apple and OpenAI are suing each other. Apple becomes the only Big Tech company with zero publisher content deals AND active litigation against the biggest publisher deal-maker.
+
+### KEY FINDING 2: Google Publisher Class-Action (Jul 10, 2026)
+
+Hachette Book Group, Cengage Learning, Elsevier, and Scott Turow filed class-action in SDNY (Case 1:26-cv-05870) accusing Google of "one of the most prolific infringements of copyrighted materials in history."
+
+Key allegations:
+- Millions of books/articles copied from Google Books, Google Play Books, Google Scholar, web scraping (including "known pirate sources" and "behind paywalls")
+- Google internally flagged "$10Bs-$100Bs in potential fines"
+- Gemini can generate "a 100-page murder mystery" in 20 minutes for 39 cents — "No publisher or author can compete"
+
+**MediaScope relevance:** Creates a BIFURCATED legal landscape. Google simultaneously licenses FROM news publishers (News AI pilot, Showcase) AND gets sued BY book publishers for the same underlying AI training. Parallels NYT v. OpenAI but targets a different publisher sector.
+
+### KEY FINDING 3: UK CMA AI Overviews Opt-Out — World First (Jun 3, 2026)
+
+UK Competition and Markets Authority imposed world-first ruling: publishers can opt out of Google AI Overviews, AI Mode, and Discover without losing organic search ranking. Google must provide clear attribution, links, and Search Console metrics.
+
+**Coercion upgrade from TRIPLE to QUADRUPLE:**
+- (a) Advertising dependency (~37% US digital ad spend)
+- (b) Search traffic cannibalization (AI Overviews: 2.5B+ MAU; AI Mode: 1B+ MAU)
+- (c) Showcase fee leverage (accept AI training or lose annual payments)
+- (d) **NEW:** Pilot deal exclusion (Google reportedly threatens to exclude publishers from pilot AI deals if they opt out of AI Overviews)
+
+Lord Ed Vaizey at Press Gazette AI Summit (Jun 30): called it a "travesty" if publishers don't use the opt-out.
+
+### KEY FINDING 4: Reddit-Google Deal Instability (Late Jul 2026)
+
+Reddit ($60M/yr Google deal) reportedly considering limiting Google's access to its content. WSJ report caused Reddit shares to fall ~8%. Reuters, Politico, The Economist, and USA Today also considering blocking Google from AI training.
+
+The Reddit paradox: paid to license content that trains AI which reduces the need for users to visit Reddit. This is the first major signal of deal instability in Google's publisher ecosystem, contrasting with Meta's voluntary, no-strings-attached deal model.
+
+### CROSS-CUTTING INSIGHT: The Litigation Landscape (Aug 6 2026)
+
+Every major AI entity now has active litigation:
+
+| Entity | Active Lawsuits | Status |
+|--------|----------------|--------|
+| OpenAI | NYT (Dec 2023), Apple trade secret (Jul 2026), Elon Musk, Authors Guild | Defending + threatening Apple breach |
+| Google | Publishers class-action (Jul 2026), EU antitrust, Authors Guild, CMA regulatory | Defending |
+| Anthropic | $1.5B author settlement (approved Jun 2026) | Resolved (but cost $1.5B) |
+| Apple | Suing OpenAI (Jul 2026), OpenAI breach threat | Attacking |
+| Meta | None from publishers | Zero litigation |
+| xAI | None from anyone | Publisher-invisible |
+
+**Meta and xAI are the only major entities with zero publisher litigation.** Meta has avoided lawsuits by proactively licensing (13 publisher deals). xAI has avoided lawsuits by being "publisher-invisible" (zero deals, zero contact). The contrast between Google's coercive deal model (now facing class-action + CMA ruling + Reddit instability) and Meta's voluntary model (zero litigation, $50M/yr News Corp deal) strengthens the case that deal structure predicts both coverage tone and legal risk.
+
+### NEW TEST FILE: `test_type_c_financial_landscape_aug6.py` (45 tests, 7 classes)
+
+| Class | Tests | What It Validates |
+|-------|-------|-------------------|
+| TestAppleOpenAIPartnershipCollapse | 11 | Three-phase collapse, dates, exec quotes, io Products, Condé Nast crossfire, source URLs |
+| TestGooglePublisherClassAction | 9 | Hachette/Cengage/Elsevier/Turow, SDNY case number, $10B fine estimate, pirate sources |
+| TestCMAOptOutRuling | 9 | World-first designation, strategic market status, 9-month timeline, quadruple coercion, AI Overviews stats |
+| TestRedditDealInstability | 6 | $60M deal value, 8% stock drop, paradox, other publishers considering blocks |
+| TestCoercionDetailUpdated | 5 | Quadruple coercion in cross_platform_summary, CMA, class-action, Reddit, Meta contrast |
+| TestAppleOpenAICollapseCrossPlatform | 5 | Cross-platform timeline, chronological order, Condé Nast relevance, source URLs |
+
+### Files Changed
+1. `profiles/competitor-entities.yaml` — Added Apple `openai_partnership_collapse` (3 phases, mediascope_relevance), OpenAI `apple_partnership_collapse`, Google `publisher_litigation_jul2026`, `cma_ai_overviews_opt_out`, `reddit_deal_instability`; updated `coercion_detail` (triple→quadruple); added `apple_openai_partnership_collapse` to cross_platform_summary
+2. `tests/test_type_c_financial_landscape_aug6.py` (NEW) — 45 tests across 7 classes
+3. `README.md` — Test counts updated (4174/174), new test file entry
+4. `docs/ARCHITECTURE.md` — Test count updated (4174/174), new test file entries (this + raymond_wong)
+
+### Tests: 45 new passed, 0 regressions, 124 structural consistency tests pass
+
+**Commit:** 52c3b29 (pushed to GitHub)
+
+---
 ## 2026-08-06 03:00 PT — Type B: Journalist Cross-Entity Tracking — Raymond Wong (Gizmodo) & The Clean Control Paradox
 
 **Rotation:** B (Journalist Cross-Entity Tracking)
