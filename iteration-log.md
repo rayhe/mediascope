@@ -1,4 +1,60 @@
 # MediaScope Iteration Log
+## 2026-08-06 07:00 PT — Type B: Alex Heath Cross-Entity — The Access Paradox
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Focus:** Alex Heath (The Verge Deputy Editor) cross-entity coverage analysis
+
+**Key Discovery — The Access Paradox (Mechanism #5):**
+Alex Heath occupies a unique dual role as both Deputy Editor AND primary Meta/platforms beat reporter. He conducts the SAME deep-access Decoder CEO interview format for both Meta (multiple Zuckerberg episodes) and OpenAI (Nick Turley, Bret Taylor) — but applies an adversarial investigative layer ONLY to Meta. This is a distinct asymmetry mechanism:
+- **Meta**: Access interviews + adversarial internal reporting (Reality Labs layoffs, leaker crackdowns, "buckle up" internal meetings, metaverse strategy doubt) = net adversarial institutional framing
+- **OpenAI**: Access interviews + NO adversarial investigation (beat handled by Hayden Field with neutral framing) = net positive/neutral framing
+- **Snap**: Product coverage (Spectacles hands-on, WaveOptics acquisition) + no investigation + ZERO surveillance language despite cameras = constructive framing
+
+**Beat Separation Asymmetry:**
+- Meta beat: Alex Heath (Deputy Editor — institutional weight)
+- OpenAI beat: Hayden Field (reporter — neutral news framing)
+- Deputy Editor role means Heath's adversarial Meta coverage sets editorial direction, not just individual perspective
+
+**Cross-Mechanism Taxonomy Updated:**
+1. WIRED: desk assignment (investigative reporters → Meta, product reviewers → Apple)
+2. NYT: between-reporter assignment patterns
+3. FT: within-reporter framing asymmetry
+4. Verge institutional: four-lane system (product reviews + features + regulatory + business)
+5. **NEW — Access Paradox**: same access format, asymmetric adversarial layer (Heath)
+
+**Changes:**
+- `tests/test_alex_heath_cross_entity.py` — NEW: 31 tests across 9 classes (all passing)
+- `profiles/the-verge.yaml` — Alex Heath editorial_stance expanded with Access Paradox documentation, cross-entity examples, Command Line newsletter analysis
+- `profiles/competitor-coverage-research.yaml` — Asymmetry verdict updated with mechanism #5
+- `README.md` / `docs/ARCHITECTURE.md` — Test count corrected to 4,283 across 177 files; new test file added to listings
+
+**Regression:** 301 tests re-run (structural consistency + cross-entity files), 0 failures after fixes
+
+## 2026-08-06 06:00 PT — Type A: Guardian Cross-Entity Deep Dive — Partial Independence Model
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+**Focus:** Guardian OpenAI coverage reclassification, cross-entity asymmetry analysis
+
+**Key Discovery:**
+- Guardian is the ONLY publication with an OpenAI deal that has conducted genuine adversarial investigative journalism against OpenAI (Stargate UK FOI investigation, Jul 4 2026)
+- Reclassified Guardian OpenAI coverage tone: `balanced` → `balanced_to_adversarial`
+- Guardian classified as "partial independence" model — asymmetry gap ~0.25-0.35, narrower than WIRED (~0.95), Atlantic (~0.90), Verge (~0.65), FT (~0.45)
+
+**Evidence Documented:**
+- Stargate UK FOI investigation: OpenAI failed to visit key site (computing.co.uk source)
+- "Going rogue" adversarial framing for OpenAI agent hack (Reuters meta-analysis source)
+- Brittin revolving door: Google's European President secured for Guardian board (green-park.co.uk source)
+- ProRata/Meta Llama paradox: AI licensing deal while maintaining adversarial Meta coverage
+
+**Changes:**
+- `profiles/competitor-coverage-research.yaml` — Guardian section expanded with OpenAI examples, tone reclassification, three-tier assessment, cross-publication comparison
+- `tests/test_guardian_cross_entity_aug6.py` — NEW: 37 tests across 9 classes (all passing)
+- `tests/test_financial_relationships.py` — Added `balanced_to_adversarial` to valid tone vocabulary
+- `README.md` / `docs/ARCHITECTURE.md` — Test count corrected to 4,252 across 176 files; both new test files (guardian_cross_entity, type_d_cross_validation) added to listings
+
+**Regression:** 304 tests re-run, 0 failures (5 failures fixed: 4 structural consistency + 1 tone validation)
+**Commit:** fae881f — pushed to main
+
 ## 2026-08-06 05:00 PT — Type D: Test & Verify — Cross-Validation Suite, Test Count Fix, Full Regression Check
 
 **Rotation:** D (Test & Verify)

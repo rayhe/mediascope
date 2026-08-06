@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 4,252 | Across 176 test files |
+| Tests | 4,283 | Across 177 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **4252 tests** across 176 test files, each covering a different analytical capability:
+MediaScope has **4283 tests** across 177 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -575,6 +575,7 @@ MediaScope has **4252 tests** across 176 test files, each covering a different a
 | `test_government_oversight_topic.py` | 15 | government_oversight topic bucket (national security, export controls, AI regulation, military AI, beats product_launch on regulation articles, MIT TR Anthropic feud article), group_expert source detection (cybersecurity experts open letter, AI researchers joint statement, petition signed by experts, not anonymous) |
 | `test_guardian_cohere_correction.py` | 8 | Guardian Cohere lawsuit correction: `triple_path_ai_strategy` replacing incorrect `strategic_licensing_over_litigation`, case *Advance Local Media v. Cohere Inc.* (SDNY 1:25-cv-01305), MTD denied 2025-11-13, 14 co-plaintiffs, legal counsel, analytical note corrections (NYT not sole enforcer), cross-reference to NYT v OpenAI sanctions motion |
 | `test_guardian_cross_entity_aug6.py` | 37 | Guardian cross-entity deep dive (Aug 6): Stargate UK FOI investigation (only publisher with adversarial OpenAI investigation despite deal), rogue agent "going rogue" framing, Brittin revolving door (Google→Guardian board), ProRata/Meta Llama paradox, partial independence model classification, OpenAI coverage tone reclassification (balanced→balanced_to_adversarial), cross-publication asymmetry comparison |
+| `test_alex_heath_cross_entity.py` | 31 | Alex Heath (The Verge Deputy Editor) cross-entity coverage analysis — The Access Paradox: same journalist does deep-access Decoder CEO interviews with BOTH Meta (Zuckerberg) and OpenAI (Nick Turley, Bret Taylor) but applies adversarial investigative lens ONLY to Meta. Deputy Editor role amplifies asymmetry (institutional weight). Beat separation (Hayden Field handles OpenAI beat, Heath handles Meta beat). Four-lane system Meta-specific. Financial correlation (PMC-OpenAI deal, no Meta deal). io device paradox. Snap Spectacles constructive framing (cameras, no surveillance language). Selective disclosure pattern. Command Line newsletter comparison. Mechanism #5 after WIRED desk, NYT between-reporter, FT within-reporter, Verge four-lane |
 | `test_grudging_concession.py` | 10 | Grudging concession framing device (#95): positive action editorially minimized via "finally," "only after backlash," "it's about time" — framing legitimate progress as reluctant, forced, or insufficient; discovered from Gizmodo LED tamper article (Jul 8, 2026); negative guards for neutral reporting |
 | `test_ultimatum_framing.py` | 25 | Ultimatum framing device (#96): multi-stage regulatory/legal proceeding compressed into binary "do X or face Y" construction; em-dash-or, must-or-face, comply-or, deadline, either-or variants; discovered from NY Post EU DSA headline (Jul 10, 2026); cross-publication comparison (Reuters softer variant, CNN/WSJ non-matches); 6 negative guards |
 | `test_recidivism_framing.py` | 25 | Recidivism framing device (#98): entity framed as serial offender through temporal recurrence markers — "once again caught," "has a long history of violations," "serial violator," "pattern of," "track record of failures," "continues to violate" — distinct from repeated_disruption (organizational instability); 20 positive tests, 5 negative guards including positive-context filtering |
