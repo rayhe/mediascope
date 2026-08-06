@@ -1,4 +1,125 @@
 # MediaScope Iteration Log
+## 2026-08-05 23:00 PT — Type C: Financial Incentive Mapping — NYT "Project Giraffe," xAI Publisher Absence, Snowflake Cortex Marketplace
+
+**Rotation:** C (Financial Incentive Mapping)
+**Focus:** Three new financial landscape findings: NYT-OpenAI discovery obstruction escalation, xAI as publisher-invisible entity, Snowflake Cortex as emerging AI content marketplace
+
+### KEY FINDING 1: NYT-OpenAI "Project Giraffe" Discovery Obstruction (Jul 2026)
+
+NYT filed sanctions motion on Jul 9, 2026 after Apr 2026 deposition of OpenAI engineer Vinnie Monaco revealed:
+
+| Revelation | Significance |
+|-----------|-------------|
+| 78M de-identified ChatGPT conversations maintained BEFORE lawsuit | OpenAI was internally measuring infringement levels |
+| "Project Giraffe" — Bloom filter detecting regurgitation | Implemented shortly after Dec 2023 lawsuit, recorded copyright output |
+| Training corpus searches already conducted | Directly contradicts 2 years of "technically infeasible" court claims |
+| Billions of conversations deleted or made unsearchable | Evidence destruction allegation |
+
+NYT counsel Ian Crosby: "For over two years, OpenAI lied to The Times, The Daily News Plaintiffs, the public, and the court."
+
+Sources: TechCrunch (Jul 9, 2026), Reuters (Jul 9, 2026), PYMNTS (Jul 9, 2026)
+
+### KEY FINDING 2: xAI Publisher Absence — "Publisher-Invisible"
+
+xAI ($50B+ valuation) has ZERO publisher content licensing deals AND zero publisher lawsuits as of Aug 2026. Instead relies on:
+- X/Twitter public posts (platform owned by Musk)
+- Grokipedia (Wikipedia-derived, some near-verbatim CC BY-SA)
+- Telegram integration ($300M deal, May 2025) — 1B+ MAU user data
+- Government contracts (GSA OneGov, $0.42/agency)
+
+This makes xAI "publisher-invisible" — no financial relationship in either direction. Publishers have no incentive to cover xAI softly OR harshly based on money.
+
+Added xAI as new entity in competitor-entities.yaml with full publisher_deals_note, sources, and analysis.
+
+### KEY FINDING 3: Snowflake Cortex — New AI Licensing Marketplace Layer
+
+Snowflake Cortex Knowledge Extensions has 17 publishers including:
+- The Washington Post, AP, People Inc., USA Today Network, NYT
+
+This deepens the NYT "Litigation Paradox" — suing OpenAI for billions while quietly building AI licensing revenue through Amazon ($20-25M/yr), Snowflake Cortex (six-figure RAG), and Alexa+. NYT now has 3 distinct AI revenue channels.
+
+Also documented emerging Amazon marketplace (reported WSJ Jul 2026) for publishers to license content to AI companies.
+
+### Updated Aggregate Matrix
+
+| Metric | Previous | Updated |
+|--------|----------|---------|
+| Total competitor deals across profiled pubs | 18 | 19 |
+| NYT competitor deals | 2 | 3 (added Snowflake) |
+| Entities tracked | 7 | 8 (added xAI) |
+| Cross-platform marketplaces | 3 | 5 (added Snowflake Cortex, Amazon emerging) |
+
+### Files Changed
+1. `profiles/competitor-entities.yaml` — Added xAI entity, NYT Snowflake deal, Project Giraffe litigation escalation, Snowflake Cortex + Amazon marketplace, updated aggregates (19 deals)
+2. `tests/test_nyt_project_giraffe_xai_absence.py` (NEW) — 44 tests across 6 classes: ProjectGiraffe (10), NYTLitigationParadox (7), XAIPublisherAbsence (10), SnowflakeCortex (8), AmazonMarketplaceEmerging (2), UpdatedAggregates (7)
+3. `tests/test_competitor_coverage.py` — Updated entity set to include xAI
+4. `tests/test_aggregate_incentive_matrix.py` — Updated critical finding deal count from 18 to 19
+5. `README.md` — Test counts updated (4011/169), new test file entry
+6. `docs/ARCHITECTURE.md` — Test counts updated (4011/169), new test file entry
+
+### Tests: 44 new passed, 0 regressions (6 cascading updates fixed), 54 targeted tests all pass
+
+---
+## 2026-08-05 22:00 PT — Type B: Journalist Cross-Entity Tracking — Chokkattu & Ashworth "The Creep Paradox"
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Journalists:** Julian Chokkattu (Reviews Editor, Gear) & Boone Ashworth (Staff Writer)
+**Publication:** WIRED (Condé Nast / Advance Publications)
+**Focus:** How WIRED's product review team applies different framing standards to Meta vs Snap vs Google smart glasses, despite identical camera hardware concerns
+
+### KEY FINDING: The Creep Paradox
+
+WIRED's Gear desk applies 'creep' and 'mass surveillance' framing exclusively to Meta's smart glasses (1 camera) while covering Snap Spectacles (4 cameras) and Google Android XR glasses (cameras + Gemini AI) without pejorative language. The asymmetry appears through a podcast channel (Business Wars, Jun 2026) rather than written reviews, creating plausible deniability.
+
+### KEY EVIDENCE: Business Wars Podcast (Jun 2026)
+
+Chokkattu and Ashworth appeared as WIRED expert guests on a 3-episode Business Wars series:
+
+| Episode | Title | Subject | Surveillance Terms | Tone |
+|---------|-------|---------|-------------------|------|
+| 1 (Jun 3) | "Prize on the Eyes" | Meta | 1 ("mass surveillance") | Adversarial |
+| 2 (Jun 10) | "I'm a Creep" | Meta | 3 (data-sharing, exploitation, illegally) | Pejorative |
+| 3 (Jun 11) | "Google's Return" | Google | 0 | Neutral/aspirational |
+
+Meta: 2 episodes, titled with pejorative/surveillance language. Google: 1 episode, neutral competitive framing. Despite Google's Android XR glasses also having cameras.
+
+### KEY EVIDENCE: Subscription Article (Jul 2, 2026)
+
+Chokkattu's WIRED article "Meta Is Charging a Subscription for Smart Glasses Features. Welcome to the New Era of Consumer Tech":
+- Expert quote frames Meta as "extracting value" and "monetizing customers"
+- Subtitle uses scare quotes: "'expanded access'"
+- Meta charges $299 base + $20/mo optional
+- Snap charges $2,195 + $99/mo required (6.3x Meta's Y1 cost)
+- No "extraction" framing applied to Snap's much higher pricing
+
+### KEY FINDING: Dual-Channel Influence
+
+Chokkattu occupies a unique position:
+1. **Product reviews** (WIRED.com): relatively balanced, product-focused
+2. **Podcast/narrative** (Business Wars): adversarial-institutional framing
+
+This creates credibility amplification: his product-review expertise lends authority to the adversarial podcast framing. The 'creep' label comes through the podcast channel while bylined reviews maintain neutrality.
+
+### Financial Correlation
+
+| Entity | Cameras | Pays Condé Nast? | Surveillance Framing from Gear Desk |
+|--------|---------|------------------|-------------------------------------|
+| Meta | 1 | No ($0) | "creep", "mass surveillance", "illegal" |
+| Google | Yes | Yes (ad revenue) | None |
+| Snap | 4 | Indirectly (OpenAI→Condé Nast deal) | None |
+
+Camera concern direction matches financial absence perfectly.
+
+### Files Changed
+1. `tests/test_chokkattu_ashworth_cross_entity.py` (NEW) — 28 tests across 7 classes: BusinessWarsPodcastFraming (7), CreepParadox (5), SubscriptionArticleFraming (4), DualChannelInfluence (4), CompetitorPricingAsymmetry (2), CondeNastFinancialCorrelation (4), GearDeskVsInvestigativeDesk (2)
+2. `profiles/wired.yaml` — Added `gear_desk_cross_entity_analysis` section with full Creep Paradox documentation
+3. `profiles/competitor-coverage-research.yaml` — Added `wired_gear_desk_cross_entity` section
+4. `README.md` — Test counts updated (3967/168), new test file entry
+5. `docs/ARCHITECTURE.md` — Test counts updated (3967/168), new test file entry
+
+### Tests: 28 new passed, 0 regressions, 124 structural consistency tests all pass
+
+---
 ## 2026-08-05 20:00 PT — Type A: Competitor Coverage Deep Dive — The Verge (PMC) × OpenAI io Device Paradox & Four-Lane Reporter System
 
 **Rotation:** A (Competitor Coverage Deep Dive)

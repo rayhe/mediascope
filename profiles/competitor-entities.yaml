@@ -118,6 +118,33 @@ entities:
     category: big_tech
     market_cap_approx: $1.8T
     ceo: Mark Zuckerberg
+  xai:
+    display_name: xAI
+    aliases:
+    - xAI
+    - Grok
+    - Grokipedia
+    regex: \b(xAI|Grok(?!\s+(?:monster|puppet)))\b
+    category: ai_lab
+    market_cap_approx: $50B+ (private valuation, 2026)
+    ceo: Elon Musk
+    publisher_deals_note: |
+      ZERO publisher content licensing deals as of Aug 2026.
+      xAI is the only major AI lab alongside Anthropic with no publisher deals.
+      Instead of licensing, xAI relies on:
+      (a) X/Twitter public posts for training data (platform owned by Musk)
+      (b) Grokipedia — AI-generated encyclopedia, many articles near-verbatim
+          from Wikipedia under CC BY-SA, others rewritten by Grok
+      (c) Telegram integration ($300M deal, May 2025) — user interactions
+          at scale (1B+ MAU) for refining AI models
+      (d) Government contracts (GSA OneGov, Sep 2025) — $0.42/agency
+      No publisher has sued xAI for copyright infringement either.
+      This makes xAI "publisher-invisible" — neither paying publishers
+      nor being sued by them. Publishers have no financial relationship
+      with xAI in either direction, which theoretically makes xAI
+      coverage editorially neutral (no incentive to be soft OR hard).
+    telegram_deal_source: https://www.livemint.com/technology/tech-news/telegram-partners-with-xai-grok-chatbot-to-be-integrated-in-300-million-deal/amp-11748452711863.html
+    gsa_contract_source: https://www.nextgov.com/acquisition/2025/09/gsa-inks-onegov-deal-grok-ai/408334/
 relationship_types:
   licensing: Publisher receives payment for content licensing
   investment: Entity or entity-adjacent fund invested in publisher parent
@@ -360,11 +387,54 @@ meta_ai_deals:
         ChatGPT logs ordered produced
       value: Seeking billions in damages
       source_url: https://www.nytimes.com/2023/12/27/business/media/new-york-times-open-ai-microsoft-lawsuit.html
+    - partner: Snowflake (Cortex Knowledge Extensions)
+      type: commercial_partnership
+      date: 2026-05
+      scope: Licensed content for enterprise RAG via Snowflake Cortex; paywalled NYT
+        content queryable by enterprise AI tools without raw feed exposure
+      value: Six-figure range (reported)
+      source_url: https://digiday.com/media/publishers-quietly-cut-six-figure-deals-via-snowflakes-ai-licensing-platform/
+      notes: Among 17 publishers on Snowflake Cortex. Deepens the litigation paradox —
+        NYT is now monetizing content through MULTIPLE AI licensing channels while
+        simultaneously suing OpenAI.
     meta_deal: none
-    deal_count: 2
-    competitor_revenue_streams: 2
-    notes: 'Paradox: suing OpenAI for billions while paying Amazon for AI licensing.
-      Playing ''offense and defense with AI'' (Prohaska Consulting). ZERO Meta revenue.'
+    deal_count: 3
+    competitor_revenue_streams: 3
+    litigation_escalation_jul2026:
+      event: Discovery obstruction sanctions motion
+      date: '2026-07-09'
+      detail: |
+        NYT and NY Daily News filed sanctions motion in SDNY alleging OpenAI
+        systematically lied to the court about its ability to search ChatGPT
+        outputs and training data for copyrighted journalism.
+        KEY REVELATIONS from Apr 2026 deposition of OpenAI engineer Vinnie Monaco:
+        (a) OpenAI maintained 78M de-identified ChatGPT conversations BEFORE
+            the lawsuit was filed, used internally to measure infringement levels
+        (b) "Project Giraffe" — Bloom filter system implemented shortly after
+            the Dec 2023 lawsuit to detect and record regurgitation in outputs
+        (c) OpenAI had already searched its training corpus for copyrighted
+            journalism — contradicting two years of court representations that
+            such searches were technically infeasible
+        (d) OpenAI allegedly deleted billions of relevant ChatGPT conversations
+            or made them unsearchable
+        NYT seeks: attorneys fees, prohibition on OpenAI using output logs,
+        jury instruction that output logs show "substantial and systematic
+        grounding on and regurgitation" of copyrighted material.
+      nyt_counsel_quote: "For over two years, OpenAI lied to The Times, The Daily
+        News Plaintiffs, the public, and the court."
+      openai_response: "As the Times' case weakens and they've been forced to drop
+        claims against us, they're persisting with their efforts to invade the
+        privacy of people who have nothing to do with this case."
+      source_urls:
+      - https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/
+      - https://www.reuters.com/legal/litigation/new-york-times-led-group-asks-court-sanction-openai-us-copyright-dispute-2026-07-09/
+      - https://www.pymnts.com/legal/2026/openai-accused-of-lying-to-court-in-newspaper-lawsuit/
+    notes: 'LITIGATION PARADOX DEEPENS (Aug 2026): NYT is suing OpenAI for billions
+      while licensing to Amazon ($20-25M/yr via Rufus + Alexa+) AND Snowflake Cortex
+      (six-figure enterprise RAG). Now monetizing through 3 distinct AI channels while
+      maintaining adversarial stance against only OpenAI. "Project Giraffe" revelation
+      (Jul 2026) dramatically strengthens NYT case — OpenAI had internal tools measuring
+      its own infringement before lawsuit. ZERO Meta revenue.'
   - name: Nikkei (Financial Times)
     deals_with_competitors:
     - partner: OpenAI
@@ -522,6 +592,39 @@ meta_ai_deals:
         revenue while covering Meta adversarially.
 
         '
+    snowflake_cortex:
+      announced: 2025-06 (launched), 2026-05 (publisher adoption reported)
+      description: |
+        Snowflake Cortex Knowledge Extensions — enterprise RAG licensing
+        platform where publishers make paywalled content queryable by
+        enterprise AI tools without exposing raw feeds. Publishers control
+        access, receive six-figure recurring revenue. Content cannot be
+        scraped or used for model training. 17 publishers signed as of
+        May 2026. Represents a new layer of AI licensing revenue beyond
+        direct LLM deals.
+      confirmed_partners:
+      - The Washington Post
+      - Associated Press
+      - People Inc. (Dotdash Meredith)
+      - USA Today Network
+      - The New York Times (via separate agreement)
+      - 12+ additional publishers
+      source_urls:
+      - https://digiday.com/media/publishers-quietly-cut-six-figure-deals-via-snowflakes-ai-licensing-platform/
+      mediascope_relevance: |
+        NYT on Snowflake deepens the "Litigation Paradox" — suing OpenAI
+        while quietly building multiple AI licensing revenue streams.
+        Shows NYT's anti-AI stance is selective: commercial AI licensing
+        is fine when money flows to NYT, hostile when money doesn't.
+    amazon_marketplace_emerging:
+      announced: 2026 (reported Jul 2026)
+      description: |
+        Amazon building a new marketplace for publishers to license content
+        to companies with AI products, separate from Rufus/Alexa+ bilateral
+        deals. Details still emerging.
+      source_url: https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+      notes: Could add another layer of AI revenue for publishers already
+        receiving Amazon Rufus/Alexa+ payments.
     amazon_rufus_deals:
       description: 'Multi-year content licensing for Rufus AI shopping assistant.
 
@@ -605,12 +708,16 @@ meta_ai_deals:
       meta_deals: 0
       adversarial_meta_coverage: true
     - name: NYT
-      competitor_deals: 2
+      competitor_deals: 3
       platforms:
       - Amazon (Rufus, $20-25M/yr + Alexa+)
       - OpenAI (suing)
+      - Snowflake Cortex (six-figure RAG licensing)
       meta_deals: 0
       adversarial_meta_coverage: true
+      notes: 'LITIGATION PARADOX: Suing OpenAI for billions while monetizing through
+        3 distinct AI channels (Amazon, Snowflake, others). Project Giraffe revelation
+        (Jul 2026) strengthens NYT case dramatically.'
     - name: Financial Times (Nikkei)
       competitor_deals: 3
       platforms:
@@ -639,9 +746,9 @@ meta_ai_deals:
       adversarial_meta_coverage: true
       notes: Clean control — adversarial coverage without any financial incentive,
         suggesting editorial culture as independent factor
-    total_competitor_deal_count: 18
+    total_competitor_deal_count: 19
     total_meta_deal_count: 0
-    statistical_note: '18 competitor revenue relationships across 7 of 8 publications
+    statistical_note: '19 competitor revenue relationships across 7 of 8 publications
       versus
 
       0 Meta relationships across ALL 8 publications. The probability of
@@ -672,6 +779,20 @@ meta_ai_deals:
 
       the potential partner is Meta.
 
+      NYT LITIGATION PARADOX (updated Aug 2026): NYT now has 3 distinct
+
+      AI revenue channels (Amazon Rufus $20-25M/yr, Amazon Alexa+,
+
+      Snowflake Cortex six-figure RAG) while suing OpenAI for billions.
+
+      Project Giraffe revelation (Jul 2026) strengthens case but anti-AI
+
+      stance remains selective.
+
+      xAI ABSENCE: xAI has zero publisher deals AND zero publisher
+
+      litigation — "publisher-invisible" despite $50B+ valuation.
+
       '
     control_comparison: 'News Corp (WSJ, NY Post, Barron''s, MarketWatch): Has BOTH
       OpenAI
@@ -697,11 +818,11 @@ meta_ai_deals:
 
     Gizmodo), ZERO have Meta AI content deals. Seven of eight have a
 
-    combined 18 revenue relationships with Meta''s competitors (OpenAI,
+    combined 19 revenue relationships with Meta''s competitors (OpenAI,
 
-    Amazon, Google, Microsoft, Perplexity/ProRata). Only Gizmodo (zero
+    Amazon, Google, Microsoft, Perplexity/ProRata, Snowflake). Only Gizmodo
 
-    deals with anyone) has symmetric financial non-relationships. The
+    (zero deals with anyone) has symmetric financial non-relationships. The
 
     comprehensive cross-platform mapping reveals that financial incentives
 
@@ -709,9 +830,9 @@ meta_ai_deals:
 
     receive revenue from 3-5 distinct Meta competitors simultaneously.
 
-    Condé Nast (WIRED) leads with 5 competitor revenue streams; FT and
+    Condé Nast (WIRED) leads with 5 competitor revenue streams; NYT, FT,
 
-    Vox Media (The Verge) each have 3. This creates a multi-layered
+    and Vox Media (The Verge) each have 3. This creates a multi-layered
 
     financial incentive gradient far stronger than any single deal.
 
@@ -740,6 +861,34 @@ meta_ai_deals:
     This makes Anthropic the only major AI lab without publisher deals,
 
     though it is not yet profiled as an adversarial coverage target.
+
+    xAI ABSENCE: xAI ($50B+ valuation) has zero publisher deals AND zero
+
+    publisher lawsuits — "publisher-invisible." Relies on X/Twitter data,
+
+    Grokipedia (Wikipedia-derived), and Telegram user interactions instead.
+
+    NYT PROJECT GIRAFFE (Jul 2026): OpenAI deposition revealed internal
+
+    tools (78M conversations + Bloom filter) measuring its own infringement
+
+    BEFORE and shortly after the Dec 2023 lawsuit, while claiming search
+
+    was infeasible. NYT seeking sanctions. Meanwhile NYT quietly builds
+
+    AI licensing revenue through Amazon ($20-25M/yr), Snowflake Cortex
+
+    (six-figure RAG), and Alexa+ — the "Litigation Paradox."
+
+    MARKETPLACE LAYER (new Aug 2026): Snowflake Cortex (17 publishers),
+
+    Microsoft PCM (7 publishers), Amazon (building new marketplace),
+
+    and Factiva (8,100+ news sources) create an emerging AI content
+
+    marketplace layer. NYT, WashPost, AP, USA Today on Snowflake. This
+
+    adds a 4th-5th revenue channel beyond bilateral deals.
 
     '
   last_verified: '2026-08-05'

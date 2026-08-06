@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 3967 tests across 168 test files (all from real articles)
+├── tests/                       # 4011 tests across 169 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -500,6 +500,7 @@ mediascope/
 │   ├── test_marketwatch_cloud_pivot.py # MarketWatch Meta cloud pivot: financial-defeat EL terms, ironic_quotation attribution suppression (wrote/believes), simple competitive_deficit pattern
 │   ├── test_nyt_ai_reviews.py   # Isolation framing, pressure language, VADER correction
 │   ├── test_nyt_article_improvements.py  # NYT-specific: agency, coercion, juxtaposition
+│   ├── test_nyt_project_giraffe_xai_absence.py # NYT-OpenAI Project Giraffe discovery obstruction, xAI publisher absence, Snowflake Cortex marketplace
 │   ├── test_nyt_school_targeting.py  # NYT school targeting: education topic, National PTA entity, safety team overrule hypocrisy, role-based adversarial stance
 │   ├── test_nypost_muse_image_yanks_jul13.py  # NY Post Muse Image: capitulation verbs, Path C forced-retreat override, policy_reversal adversarial
 │   ├── test_platform_death.py   # Platform eulogy detection, tone distinction

@@ -205,7 +205,7 @@ class TestControlGroupPredictions:
         cls.ctrl = cls.matrix.get("control_comparison", "")
 
     def test_finding_mentions_eighteen_deals(self):
-        assert "18" in self.finding, "Critical finding should mention 18 competitor deals"
+        assert "19" in self.finding, "Critical finding should mention 19 competitor deals"
 
     def test_finding_mentions_zero_meta_deals(self):
         assert "ZERO" in self.finding or "0" in self.finding

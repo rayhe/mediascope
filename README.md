@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 3,967 | Across 168 test files |
+| Tests | 4,011 | Across 169 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **3967 tests** across 168 test files, each covering a different analytical capability:
+MediaScope has **4011 tests** across 169 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -481,6 +481,7 @@ MediaScope has **3967 tests** across 168 test files, each covering a different a
 | `test_careers.py` | 21 | Career data loading, migration detection, DiD analysis, leadership change analysis, bias decomposition |
 | `test_chilling_effect.py` | 32 | Chilling effect / social stigma internalization framing: self-censorship patterns (too scared/afraid/embarrassed to wear/use), avoidance behavior (fold up, put away, more mindful in crowds), reconsidering purchase/wearing, social labeling causing avoidance (you're a predator/creep), inappropriate-to-wear framing, refusal to wear in public. Full-text PetaPixel "Meta Smart Glasses Owners Too Scared to Wear Them in Public" (Jul 14, 2026) integration test with cross-device validation (surveillance_creep, loaded_language, walking_camera, ironic_quotation) |
 | `test_nyt_article_improvements.py` | 28 | NYT-specific article analysis fixes: active-negative agency, workplace coercion language, investment-near-layoffs juxtaposition, source stop-word filter |
+| `test_nyt_project_giraffe_xai_absence.py` | 44 | NYT-OpenAI Project Giraffe discovery obstruction (Jul 2026), xAI publisher absence mapping, Snowflake Cortex marketplace, NYT Litigation Paradox deepening |
 | `test_nyt_ai_reviews.py` | 33 | NYT AI voluntary review article: isolation framing, pressure language, regulatory passive framing, VADER positive-bias correction, regulatory favoritism, escalation amplification, entity euphemisms |
 | `test_nyt_school_targeting.py` | 29 | NYT school targeting article: education topic, National PTA/Cornell entity detection, safety team overrule hypocrisy frame, role-based adversarial stance for plaintiff attorneys, ironic quotation, scale/magnitude |
 | `test_nypost_muse_image_yanks_jul13.py` | 21 | NY Post Muse Image forced-retreat article: new loaded_language terms (slop, diabolical, heated backlash, harvesting identity), capitulation verbs in ACTIVE_NEGATIVE_FRAMING, Path C forced-retreat sentiment correction override, policy_reversal reclassified as adversarial |
