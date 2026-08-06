@@ -430,6 +430,68 @@ publications:
       - "https://www.wsj.com/tech/ai/ai-just-went-rogue-again-this-time-it-turned-to-deception-ae68de09"
       - "https://www.reuters.com/legal/litigation/anthropic-says-claude-ai-models-accessed-three-companies-during-tests-2026-07-30/"
 
+    apple_recusal_gap: |
+      THE APPLE RECUSAL ASYMMETRY (Aug 6, 2026 analysis):
+
+      Sean Hollister — The Verge's primary consumer advocacy reporter —
+      cannot cover Apple products or Apple as a company (wife employed by
+      Apple as video producer; recusal effective June 2023). This creates
+      a structural gap in consumer protection coverage:
+
+      PRE-RECUSAL (before Jun 2023): Hollister applied EQUAL consumer
+      advocacy scrutiny to all companies:
+      - Apple Self-Repair Program (May 2022): adversarial investigation,
+        79 pounds of tools for 1.1oz battery, $1,200 credit card hold,
+        widely cited as damning consumer advocacy journalism
+      - Google: Epic v. Google antitrust (2023-2024), Pixel update
+        promise skepticism (Oct 2023)
+      - Meta: consumer harm coverage as assigned
+
+      POST-RECUSAL (after Jun 2023): structural gap emerges:
+
+      | Entity | Consumer Advocacy Reporter | Coverage Lane |
+      |--------|--------------------------|---------------|
+      | Meta   | Hollister (active)       | Consumer harm, adversarial |
+      | Google | Hollister (active)       | Moderate advocacy |
+      | Apple  | Hollister (RECUSED)      | No replacement assigned |
+
+      EVIDENCE OF NO REPLACEMENT:
+      - Apple Vision Pro launch (Feb 2024): camera-equipped AR headset
+        that 3D-maps surroundings, 12+ external sensors. Received product
+        review treatment (Patel, Pierce) — ZERO consumer harm framing
+      - Apple Vision Pro cameras are arguably MORE invasive than Meta's
+        single glasses camera (full 3D spatial mapping vs. single photo/
+        video), yet received no "predator technology" or "surveillance"
+        language from any Verge reporter
+      - Apple's subscription paywalls (iCloud+ Private Relay, Apple One)
+        restrict features behind payments without the "accessibility
+        paywall" framing Meta's Conversation Focus received from Hollister
+
+      KEY DISTINCTION: This is a STRUCTURAL finding, not a personal
+      ethics finding. Hollister's recusal is transparent and commendable —
+      it demonstrates higher personal ethical standards than most tech
+      journalists. The institutional failure is The Verge's decision not
+      to assign another consumer advocacy voice to cover Apple's consumer
+      practices, creating a systematic coverage gap where Apple's
+      competing products escape the scrutiny Meta's products receive.
+
+      LANE COUNT ASYMMETRY (post-recusal):
+      - Meta: 4 reporter lanes (Heath/investigations, Hollister/consumer
+        harm, Davis+Weatherbed/regulatory, Song/product reviews)
+      - Apple: 1 lane (Patel+Pierce/product reviews), ZERO adversarial
+      - Google: 2 lanes (Hollister/consumer advocacy, various/product)
+
+      This extends the three-tier model: Apple isn't just ABSENT from the
+      financial correlation analysis (no deal, but also no competitive
+      threat to Vox Media social traffic) — it's STRUCTURALLY PROTECTED
+      from consumer advocacy coverage by the recusal gap.
+
+    apple_recusal_gap_sources:
+      - "https://www.theverge.com/authors/sean-hollister"
+      - "https://theorg.com/org/the-verge/org-chart/sean-hollister"
+      - "https://talkingbiznews.com/media-news/hollister-returns-to-the-verge-as-senior-news-editor/"
+      - "https://intelligentrelations.com/journalist/sean-hollister/"
+
     asymmetry_verdict: |
       The Verge covers Meta ~0.65 points more negatively than OpenAI
       on a -1 to +1 scale. OpenAI pays The Verge (via Vox/PMC);
