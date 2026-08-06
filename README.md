@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 4,530 | Across 183 test files |
+| Tests | 4,580 | Across 184 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **4530 tests** across 183 test files, each covering a different analytical capability:
+MediaScope has **4580 tests** across 184 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -557,6 +557,7 @@ MediaScope has **4530 tests** across 183 test files, each covering a different a
 | `test_type_d_deal_count_cascade_aug6.py` | 28 | Post-Snowflake/xAI cascade validation: deal count consistency (19 total), xAI publisher-invisible entity integration, Snowflake Cortex marketplace documentation, stale count guards, Project Giraffe documentation, advertising_dependency type |
 | `test_type_d_cross_validation_aug6.py` | 41 | Type D cross-validation suite (Aug 6): structural consistency across profiles, entity definitions, financial relationship data, citation URL reachability, cross-profile score validation |
 | `test_type_d_10am_cross_validation_aug6.py` | 40 | Type D cross-validation (Aug 6, 10 AM): Guardian partial independence model, Alex Heath Access Paradox (mechanism #5), Advance-Reddit-Perplexity triangle, asymmetry gap ordering, five-mechanism taxonomy, statistical direction consistency |
+| `test_type_d_2pm_cross_validation_aug6.py` | 50 | Type D cross-validation (Aug 6, 2 PM): sensor-count paradox cross-pub consistency, WSJ balanced control ↔ aggregate findings, Google coercion ↔ Condé Nast traffic, NYT Q2 2026 earnings ↔ profile, Mims tone inversion direction, WSJ disclosure uniqueness, Google revenue-coercion link, MIT TR governance ↔ Apple entity, source URL presence |
 | `test_type_d_aug6_cross_validation.py` | 48 | Type D cross-validation (Aug 6, 09:00): asymmetry gap ordering, five-mechanism taxonomy, Guardian partial independence, Advance-Reddit-Perplexity triangle, control groups, statistical direction consistency |
 | `test_type_c_financial_landscape_aug6.py` | 45 | Apple-OpenAI partnership collapse (3 phases: partnership→breach threat→trade secret suit), Google publisher class-action (Hachette/Cengage/Elsevier/Turow v. Google SDNY), UK CMA AI Overviews opt-out ruling (quadruple coercion), Reddit $60M/yr deal instability, cross-platform summary updates |
 | `test_type_c_advance_reddit_perplexity_triangle_aug6.py` | 40 | Advance-Reddit-Perplexity Triangle conflict (Advance sues Perplexity via Reddit while profiting from Perplexity via Condé Nast deal), Reddit AI deal renewal projections ($550M/yr Wells Fargo forecast), Reddit v. Perplexity DMCA ruling (Jul 31 2026 Engelmayer SDNY), Reddit ad cannibalization debate (Digiday), Amazon vs Microsoft marketplace evolution, Sam Altman 8.7% Reddit stake conflict |

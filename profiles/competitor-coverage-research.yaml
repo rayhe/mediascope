@@ -1649,6 +1649,13 @@ publications:
         - Social media: Mocked AI computer control as comparable to
           'holding up a picture of his Bored Ape' (Bluesky)
         - AI capex: Documented record spending with skeptical framing
+      source_urls:
+        - title: "WSJ smart glasses survey (Mims, Jun 2026)"
+          url: "https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8"
+        - title: "WSJ AI commoditization (Mims, Jul 2026)"
+          url: "https://www.wsj.com/tech/ai/cheaper-ai-commodity-openai-anthropic-0111da73"
+        - title: "Techmeme LeCun profile citation (Oct 2024)"
+          url: "https://www.techmeme.com/241012/p6"
 
     # WSJ DISCLOSURE PRACTICE (added Aug 6 2026)
     wsj_disclosure_practice:

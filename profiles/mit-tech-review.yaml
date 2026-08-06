@@ -2043,11 +2043,27 @@ competitor_relationships:
     description: "Amazon is an MIT corporate partner. AWS funds MIT research programs. No direct MIT Tech Review licensing deal."
     coverage_prediction: "softer"
   apple:
-    financial_tie: "none"
-    estimated_value: "$0"
-    direction: "none"
-    description: "No known direct financial relationship."
-    coverage_prediction: "neutral"
+    financial_tie: "indirect"
+    estimated_value: "$0 direct, governance-level influence"
+    direction: "apple_to_mit"
+    description: >
+      No direct financial licensing deal, but GOVERNANCE-LEVEL conflict:
+      Kate A. Bergeron ('93, MBA '13), Apple VP of Hardware Engineering,
+      was elected MIT Corporation TERM MEMBER effective Jul 1, 2026.
+      The MIT Corporation is MIT's highest governing body (board of trustees).
+      Additionally, Apple is a CSAIL Alliance member (cap.csail.mit.edu).
+      Three-tier influence hierarchy: governance (board seat) > research funding
+      (CSAIL Alliance) > no relationship (Meta). MIT TR has NEVER disclosed
+      any Apple governance or funding connections in its coverage.
+      Source: MIT News (Bergeron election), cap.csail.mit.edu (CSAIL Alliance).
+    coverage_prediction: "softer"
+    governance_conflict:
+      person: "Kate A. Bergeron"
+      apple_role: "VP of Hardware Engineering (since 2014, at Apple since 2002)"
+      mit_role: "MIT Corporation term member (effective Jul 1, 2026)"
+      mit_connection: "MIT alumna ('93, MBA '13), co-developed MIT D-Lab (2013-2017)"
+      csail_alliance: true
+      disclosure_in_coverage: false
   google:
     financial_tie: "indirect"
     estimated_value: "undisclosed"
