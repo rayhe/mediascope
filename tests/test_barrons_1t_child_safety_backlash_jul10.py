@@ -82,7 +82,6 @@ class TestScaleMagnitude:
         text = "plaintiffs asking for $1 trillion-plus in damages"
         assert "scale_magnitude" in _types(text)
 
-    @pytest.mark.xfail(reason="$NNN million not yet detected as scale_magnitude")
     def test_375_million(self):
         text = "New Mexico recently won a $375 million judgment against Meta"
         assert "scale_magnitude" in _types(text)
@@ -121,7 +120,6 @@ class TestLoadedLanguageRipeTarget:
         text = "social media companies have become an easy target for regulators"
         assert "loaded_language" in _types(text)
 
-    @pytest.mark.xfail(reason="plural 'soft targets' not matched by singular pattern")
     def test_soft_target(self):
         text = "tech firms are seen as soft targets"
         assert "loaded_language" in _types(text)
@@ -149,7 +147,6 @@ class TestInvestorAdvisory:
         text = "Investors Ignore the Threat at Their Peril"
         assert "investor_advisory" in _types(text)
 
-    @pytest.mark.xfail(reason="long parenthetical clause between 'Investors' and 'should' breaks pattern")
     def test_investors_should_pay_attention(self):
         text = "Investors, who tend to overlook fines, should start paying attention"
         assert "investor_advisory" in _types(text)
@@ -204,7 +201,6 @@ class TestRefusalAmplification:
         types = _types(text)
         assert "refusal_amplification" in types or "no_comment_implication" in types
 
-    @pytest.mark.xfail(reason="'didn't respond to a request for comment' not detected — pattern expects 'declined/refused'")
     def test_didnt_respond(self):
         text = "the attorneys general of California and Kentucky didn't respond to a request for comment"
         types = _types(text)

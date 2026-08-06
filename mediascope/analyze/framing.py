@@ -751,7 +751,7 @@ _LOADED_LANGUAGE_PATTERNS: list[re.Pattern] = [
     # went undetected.
     re.compile(
         r"\b(?:ripe|easy|soft|prime|obvious|clear|natural|tempting|attractive)"
-        r"\s+target\b",
+        r"\s+targets?\b",
         re.IGNORECASE,
     ),
     # Legal silencing / corporate censorship language — terms that frame
@@ -2962,7 +2962,7 @@ _SCALE_MAGNITUDE_PATTERNS: list[re.Pattern] = [
     # existing patterns required contextual verbs or prepositional phrases.
     # ---------------------------------------------------------------------------
     re.compile(
-        r"\$\d[\d,.]*\s*(?:trillion|billion)\b",
+        r"\$\d[\d,.]*\s*(?:trillion|billion|million)\b",
         re.IGNORECASE,
     ),
     # ---------------------------------------------------------------------------
@@ -8772,7 +8772,8 @@ _INVESTOR_ADVISORY_PATTERNS: list[re.Pattern] = [
     ),
     # "Investors should [start] [paying attention / take note / be worried]"
     re.compile(
-        r"\binvestors?\s+"
+        r"\binvestors?"
+        r"(?:\s*,\s*[^,]{0,60},\s*|\s+)"
         r"(?:should|ought to|need to|would be (?:wise|smart|prudent) to)"
         r"\s+(?:start\s+)?"
         r"(?:pay(?:ing)?\s+(?:attention|closer attention|heed|more attention)|"
@@ -9296,10 +9297,10 @@ _RECIDIVISM_FRAMING_PATTERNS.extend([
 # Discovered via NY Post Muse Image opt-out article (Jul 10, 2026).
 _NO_COMMENT_IMPLICATION_PATTERNS: list[re.Pattern] = [
     re.compile(
-        r"\b(?:did not (?:immediately )?respond|declined to comment|"
-        r"did not (?:return|reply to)|refused to comment|"
+        r"\b(?:did(?:n'?t| not) (?:immediately )?respond|declined to comment|"
+        r"did(?:n'?t| not) (?:return|reply to)|refused to comment|"
         r"could not be reached for comment|"
-        r"would not comment|has not responded)\b",
+        r"would not comment|has(?:n'?t| not) responded)\b",
         re.IGNORECASE,
     ),
 ]
