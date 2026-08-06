@@ -114,6 +114,38 @@ publications:
     perplexity_comet_plus_source: "https://ppc.land/conde-nast-ceo-calls-google-ai-a-death-blow-as-search-traffic-collapses/"
     perplexity_plagiarism_source: "http://venturebeat.com/ai/perplexity-unveils-revenue-sharing-plan-for-publishers"
 
+    advance_reddit_perplexity_triangle:
+      discovery_date: 2026-08-06
+      description: |
+        THE ADVANCE-REDDIT-PERPLEXITY TRIANGLE — most acute undisclosed
+        conflict-of-interest in AI content licensing:
+        (1) Reddit (Advance's largest asset, ~$5.9B, ~62% voting control)
+            is SUING Perplexity for DMCA violations. Jul 31 2026: Judge
+            Engelmayer (SDNY) rejected most of Perplexity's dismissal bid.
+            Reddit also suing Anthropic separately in CA state court.
+        (2) Condé Nast (Advance's wholly-owned subsidiary, WIRED's parent)
+            has an ACTIVE licensing deal with Perplexity via Comet Plus
+            (Oct 2025). 16 Condé Nast titles participate.
+        (3) Same ultimate owner (Advance Publications / Newhouse family)
+            simultaneously PROFITS from Perplexity (Condé Nast deal) and
+            SUES it (Reddit, seeking $150M+ damages).
+        ADDITIONAL WRINKLE: Sam Altman owns 8.7% of Reddit AND is CEO of
+        OpenAI, which has deals with BOTH Reddit ($60-70M/yr) and Condé
+        Nast. Altman has personal financial interest in Reddit's success,
+        which aligns with Advance's interest.
+      reddit_deal_renewal_forecast: |
+        Wells Fargo analyst Alec Brondolo (Jun 2026): Reddit's renewed
+        Google + OpenAI deals could reach COMBINED $550M/yr — 4x+ the
+        current ~$120-140M/yr level. At 23.3% economic stake, Advance
+        would capture ~$128M/yr in proportional equity value accretion.
+        This makes WIRED's editorial narrative about "AI must pay for
+        content" financially worth hundreds of millions to Advance via
+        Reddit — completely undisclosed.
+      source_urls:
+      - https://www.reuters.com/legal/litigation/perplexity-ai-loses-bid-toss-reddit-lawsuit-over-data-scraping-2026-07-31/
+      - https://www.barrons.com/articles/buy-reddit-stock-price-pick-eef67fe8
+      - https://digiday.com/marketing/reddit-questions-if-ai-data-deals-could-hurt-its-ad-business/
+
     deal_count_summary: |
       As of Aug 2026, Condé Nast (WIRED's parent) has AI licensing
       deals with FIVE entities: OpenAI, Amazon, Microsoft, Perplexity,

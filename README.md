@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **4283 tests** across 177 test files, each covering a different analytical capability:
+MediaScope has **4323 tests** across 178 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -556,6 +556,7 @@ MediaScope has **4283 tests** across 177 test files, each covering a different a
 | `test_type_d_deal_count_cascade_aug6.py` | 28 | Post-Snowflake/xAI cascade validation: deal count consistency (19 total), xAI publisher-invisible entity integration, Snowflake Cortex marketplace documentation, stale count guards, Project Giraffe documentation, advertising_dependency type |
 | `test_type_d_cross_validation_aug6.py` | 41 | Type D cross-validation suite (Aug 6): structural consistency across profiles, entity definitions, financial relationship data, citation URL reachability, cross-profile score validation |
 | `test_type_c_financial_landscape_aug6.py` | 45 | Apple-OpenAI partnership collapse (3 phases: partnership→breach threat→trade secret suit), Google publisher class-action (Hachette/Cengage/Elsevier/Turow v. Google SDNY), UK CMA AI Overviews opt-out ruling (quadruple coercion), Reddit $60M/yr deal instability, cross-platform summary updates |
+| `test_type_c_advance_reddit_perplexity_triangle_aug6.py` | 40 | Advance-Reddit-Perplexity Triangle conflict (Advance sues Perplexity via Reddit while profiting from Perplexity via Condé Nast deal), Reddit AI deal renewal projections ($550M/yr Wells Fargo forecast), Reddit v. Perplexity DMCA ruling (Jul 31 2026 Engelmayer SDNY), Reddit ad cannibalization debate (Digiday), Amazon vs Microsoft marketplace evolution, Sam Altman 8.7% Reddit stake conflict |
 | `test_verge_anthropic_rogue_ai_comparison.py` | 35 | The Verge × Anthropic coverage analysis, "Accidentally" Paradox (Jul 2026 rogue AI incidents vs Meta glasses framing), three-tier model (pay→soft, neutral→factual, threaten→adversarial), reporter lane assignment extension, asymmetry verdict update |
 | `test_raymond_wong_cross_entity.py` | 29 | Raymond Wong (Gizmodo) cross-entity analysis: "Clean Control Paradox" — Gizmodo (zero financial ties) applies equal-opportunity criticism to Meta/OpenAI/Apple/Google/Snap, contrasting with WIRED's deal-driven asymmetry. Maxwell Zeff journalist migration (Gizmodo→TechCrunch→WIRED). Three-tier publication model validation. |
 | `test_verge_openai_coverage_asymmetry.py` | 28 | The Verge × OpenAI institutional coverage asymmetry: four-lane reporter system, io device paradox (camera-equipped AI wearable gets zero surveillance framing from OpenAI, 4+ terms for Meta), financial correlation, selective disclosure, reporter assignment taxonomy |

@@ -234,6 +234,76 @@ entities:
         (the largest non-news content partner) rethinks its deal, Google's
         coercive leverage model may be unsustainable. This contrasts with
         Meta's voluntary, no-strings-attached deal model.
+    reddit_deal_renewal_projections:
+      date: 2026-08 (Barron's Aug 1 analysis)
+      detail: |
+        Wells Fargo analyst Alec Brondolo forecast (Jun 2026) that Reddit's
+        renewed AI licensing agreements with Google and OpenAI could reach
+        a COMBINED $550M/yr — more than quadruple the current ~$120-140M/yr
+        combined level ($60M Google + est. $60-70M OpenAI). Content licensing
+        comprised ~6% of Reddit's 2025 revenue ($2.2B TTM) but could jump
+        sharply as deals come up for renewal.
+        ADVANCE PUBLICATIONS IMPACT: At $550M/yr, Reddit AI licensing revenue
+        alone would be worth ~$4-6B in market cap at Reddit's current revenue
+        multiples (~8-10x). Advance Publications (23.3% economic stake, ~62%
+        voting power) would benefit from ~$1-1.4B in equity value creation
+        from AI licensing growth ALONE. This makes Advance — the parent of
+        Condé Nast/WIRED — a direct financial beneficiary of the AI content
+        licensing ecosystem that WIRED's editorial coverage shapes.
+      source_urls:
+      - https://www.barrons.com/articles/buy-reddit-stock-price-pick-eef67fe8
+      mediascope_relevance: |
+        The $550M/yr renewal projection transforms Advance's conflict: WIRED's
+        adversarial coverage of AI companies that DON'T license content
+        (principally Meta) reinforces the narrative that AI companies MUST
+        pay for content — which directly benefits Reddit's negotiating
+        position with Google and OpenAI. Every WIRED article about "AI
+        stealing content" strengthens Advance's $550M/yr licensing endgame.
+    reddit_perplexity_litigation:
+      date: 2026-07-31
+      ruling: |
+        U.S. District Judge Paul Engelmayer (SDNY) rejected most of Perplexity
+        AI's bid to dismiss Reddit's DMCA lawsuit. Reddit can proceed with
+        core claims that Perplexity and SerpApi violated the Digital Millennium
+        Copyright Act by using automated scraping to bypass Google's anti-bot
+        protections and obtain Reddit content at scale. Reddit also has a
+        separate data-scraping lawsuit against Anthropic in California state
+        court (filed 2025, ongoing).
+      source_urls:
+      - https://www.reuters.com/legal/litigation/perplexity-ai-loses-bid-toss-reddit-lawsuit-over-data-scraping-2026-07-31/
+      - https://www.law.com/newyorklawjournal/2026/07/31/reddits-dmca-claims-against-perplexity-serpapi-survive-ai-scraping-challenge/
+      advance_conde_nast_perplexity_triangle: |
+        CRITICAL CONFLICT: Reddit (Advance subsidiary, ~62% voting control)
+        is actively SUING Perplexity for data scraping, while Condé Nast
+        (Advance's wholly-owned subsidiary, parent of WIRED) has an active
+        LICENSING DEAL with Perplexity via Comet Plus (Oct 2025). Same parent
+        company, opposite commercial postures toward the same AI company.
+        Advance simultaneously PROFITS from Perplexity (via Condé Nast deal)
+        and SUES it (via Reddit, seeking $150M damages). This is the most
+        acute internal conflict-of-interest in the AI content licensing
+        ecosystem — undisclosed in any WIRED or Condé Nast publication.
+    reddit_ad_cannibalization_debate:
+      date: 2026-07-15
+      detail: |
+        Digiday reported a Reddit executive conceded the company is STILL
+        INTERNALLY DEBATING whether its AI data licensing deals could
+        undermine its own advertising business. The question: "does the
+        data we're selling to train AI models undercut the data moat our
+        own ad product depends on?" This is distinct from the traffic
+        cannibalization concern (AI search reducing Reddit visits) — it's
+        about whether the training data itself helps competitors replicate
+        Reddit's advertising value.
+        Huffman has publicly described a related "paradox": Reddit's content
+        fuels external AI systems even as Reddit deploys AI internally.
+      source_urls:
+      - https://digiday.com/marketing/reddit-questions-if-ai-data-deals-could-hurt-its-ad-business/
+      mediascope_relevance: |
+        If Reddit's AI deals ultimately cannibalize its ad business, this
+        would pressure Advance's $5.9B Reddit stake. This creates a scenario
+        where WIRED's editorial coverage of AI content licensing becomes
+        directly relevant to Advance's financial health — not just through
+        licensing revenue, but through the ad revenue implications of the
+        deals WIRED's editorial stance implicitly endorses.
   x_twitter:
     display_name: X / Twitter
     aliases:
@@ -778,14 +848,44 @@ meta_ai_deals:
         Shows NYT's anti-AI stance is selective: commercial AI licensing
         is fine when money flows to NYT, hostile when money doesn't.
     amazon_marketplace_emerging:
-      announced: 2026 (reported Jul 2026)
+      announced: 2026-02-10 (slides circulated ahead of AWS conference)
       description: |
         Amazon building a new marketplace for publishers to license content
         to companies with AI products, separate from Rufus/Alexa+ bilateral
-        deals. Details still emerging.
-      source_url: https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
-      notes: Could add another layer of AI revenue for publishers already
-        receiving Amazon Rufus/Alexa+ payments.
+        deals. AWS circulated slides grouping the marketplace alongside
+        Bedrock and Quick Suite. No formal launch as of Aug 2026. Amazon
+        spokesperson: "nothing specific to share on this subject at this time."
+        Publishers pushing for usage-based compensation models that scale
+        with AI content consumption. Amazon already paying NYT $20-25M/yr
+        directly AND building this marketplace — dual bilateral+marketplace
+        strategy. Would put Amazon in direct competition with Microsoft PCM.
+      source_urls:
+      - https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
+      - https://techcrunch.com/2026/02/10/amazon-may-launch-a-marketplace-where-media-sites-can-sell-their-content-to-ai-companies/
+      - https://www.reuters.com/business/retail-consumer/amazon-discusses-ai-content-marketplace-with-publishers-information-reports-2026-02-10/
+      - https://www.pymnts.com/artificial-intelligence-2/2026/amazon-considers-ai-content-marketplace-for-publishers/
+      notes: |
+        MARKETPLACE EVOLUTION ANALYSIS (Aug 2026): The AI content licensing
+        landscape is bifurcating into two models:
+        (1) BILATERAL DEALS: OpenAI model — direct publisher-to-AI company
+            agreements (OpenAI→Condé Nast $??M, OpenAI→News Corp $250M/5yr,
+            Meta→News Corp $50M/yr, etc.). High-value, opaque, favor large publishers.
+        (2) MARKETPLACE DEALS: Microsoft PCM + Amazon AWS marketplace — centralized
+            platforms where multiple publishers license to multiple AI buyers.
+            Usage-based, transparent pricing, accessible to smaller publishers.
+        Condé Nast is a PILOT PARTNER in Microsoft PCM (Feb 2026) alongside
+        Business Insider, Hearst, AP, USA TODAY, and Vox Media. Microsoft
+        invested >$10M in the pilot. Yahoo is first external demand partner.
+        META IS NOT A PARTICIPANT IN EITHER MARKETPLACE. Meta's 13 bilateral
+        deals (with Reuters, CNN, News Corp, etc.) bypass marketplace models
+        entirely. This means marketplace publishers (including Condé Nast via
+        PCM) have a financial incentive to push AI companies toward marketplace
+        participation — but Meta's bilateral-only approach resists this.
+        MEDIASCOPE RELEVANCE: Condé Nast/WIRED's editorial stance that "AI
+        companies must pay for content" aligns with their marketplace
+        participation, which generates revenue only when AI companies JOIN
+        the marketplace. Coverage of Meta's absence from marketplaces serves
+        Condé Nast's financial interest in marketplace adoption.
     apple_openai_partnership_collapse:
       timeline:
       - date: 2024-06

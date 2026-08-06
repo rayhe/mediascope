@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 4283 tests across 177 test files (all from real articles)
+├── tests/                       # 4323 tests across 178 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -547,6 +547,7 @@ mediascope/
 │   ├── test_type_d_deal_count_cascade_aug6.py # Post-Snowflake/xAI cascade validation: deal count consistency (19), xAI entity integration, Snowflake Cortex, Project Giraffe, stale count guards
 │   ├── test_type_d_cross_validation_aug6.py # Type D cross-validation suite Aug 6: structural consistency across profiles, entity definitions, financial relationship data, citation URL reachability, cross-profile score validation
 │   ├── test_type_c_financial_landscape_aug6.py # Apple-OpenAI partnership collapse (3 phases), Google publisher class-action, UK CMA AI Overviews opt-out, Reddit deal instability, cross-platform coercion updates
+│   ├── test_type_c_advance_reddit_perplexity_triangle_aug6.py # Advance-Reddit-Perplexity Triangle conflict, $550M/yr deal renewal projections, Jul 31 DMCA ruling, Reddit ad cannibalization, Amazon vs Microsoft marketplace evolution
 │   ├── test_verge_openai_coverage_asymmetry.py # Verge × OpenAI: four-lane reporter system, io device paradox, bilateral financial flow, selective disclosure
 │   ├── test_type_d_relationship_types.py # New financial relationship types validation: advertising_dependency and adversarial_litigation weights, asymmetry scorer classification, competitor-entities.yaml definitions, Verge/Atlantic Google adversarial_litigation profiles, AdX dependency admissions
 │   ├── test_disclosure_audit.py # Cross-publication financial disclosure audit: WSJ unique disclosure practice (Meta + OpenAI partnerships), WIRED/FT/Atlantic non-disclosure patterns, symmetric vs asymmetric deal correlation with coverage tone, aggregate 17:0 competitor-to-Meta deal ratio validation
