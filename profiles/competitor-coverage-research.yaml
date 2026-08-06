@@ -1553,6 +1553,60 @@ publications:
       Meta deals + no disclosure. WSJ has 1 competitor deal + 1 Meta
       deal + disclosure.
 
+    # JOURNALIST CROSS-ENTITY: Christopher Mims (added Aug 6 2026)
+    mims_cross_entity:
+      discovery_date: "2026-08-06"
+      journalist: "Christopher Mims"
+      role: "WSJ Technology Columnist (since 2014)"
+      description: |
+        Mims is the ideal test case for the balanced control hypothesis.
+        His coverage shows a TONE INVERSION compared to WIRED/Verge:
+        he is softer on Meta (tone ~+0.3) and more skeptical of OpenAI
+        (tone ~-0.3), the exact opposite of journalists at publications
+        with one-sided financial relationships.
+        
+        META COVERAGE (balanced_to_constructive):
+        - Yann LeCun profile (Oct 2024): Most positive framing of
+          Meta AI vision at any major publication
+        - Smart glasses survey (Jun 2026): Praised Meta for keeping
+          glasses 'normal-looking,' quoted Boz constructively
+        - Commoditization piece (Jul 2026): Framed Meta as rising
+          competitive force that 'showed the world it could potentially
+          compete with the two leading AI labs'
+        - Sustainability: Noted Meta as ONLY company tallying full
+          water use at power stations + on-site
+        
+        OPENAI COVERAGE (skeptical_to_critical):
+        - Commoditization piece: Directly questioned OpenAI's competitive
+          moat, compared AI boom to dot-com bubble, warned of 'serious
+          contraction'
+        - Social media: Mocked AI computer control as comparable to
+          'holding up a picture of his Bored Ape' (Bluesky)
+        - AI capex: Documented record spending with skeptical framing
+
+    # WSJ DISCLOSURE PRACTICE (added Aug 6 2026)
+    wsj_disclosure_practice:
+      discovery_date: "2026-08-06"
+      description: |
+        WSJ is the ONLY publication in the dataset with systematic
+        financial relationship disclosure. Articles about Meta include:
+        'News Corp, owner of The Wall Street Journal, has a content-
+        licensing partnership with Meta.' Articles about OpenAI include
+        the equivalent OpenAI disclosure. This is editorial policy (7+
+        reporters observed), not individual choice.
+        
+        THE IRONY: The publication with the LEAST incentive to be
+        biased (balanced deals on both sides) is the ONLY one that
+        discloses. Publications with one-sided financial incentives
+        (WIRED, Verge, Atlantic, FT — all have OpenAI deals, no Meta
+        deals) NEVER reveal those relationships to readers.
+        
+        This suggests disclosure and balance are correlated: the same
+        editorial culture that produces balanced coverage also produces
+        transparency. Conversely, the editorial cultures that produce
+        adversarial asymmetry also suppress transparency about the
+        financial relationships driving that asymmetry.
+
 # ===================================================================
 # AGGREGATE FINDINGS
 # ===================================================================

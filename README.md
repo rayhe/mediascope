@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 4,411 | Across 180 test files |
+| Tests | 4,489 | Across 182 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **4455 tests** across 181 test files, each covering a different analytical capability:
+MediaScope has **4489 tests** across 182 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -535,6 +535,7 @@ MediaScope has **4455 tests** across 181 test files, each covering a different a
 | `test_sean_hollister_cross_entity.py` | 26 | Sean Hollister (The Verge, senior editor/founding member) cross-entity coverage: Apple recusal asymmetry (wife at Apple, recusal effective June 2023), pre-recusal adversarial Apple coverage (self-repair program 2022), continued adversarial Meta coverage (Conversation Focus paywall, accessibility harm framing), moderate Google advocacy (Epic v. Google trial, Pixel update promise), structural gap analysis (no consumer advocacy replacement for Apple post-recusal), lane count asymmetry (4 Meta lanes vs 1 Apple lane), Vision Pro camera comparison (more sensors than Meta glasses, zero consumer harm framing), structural vs personal ethics distinction |
 | `test_charlie_warzel_cross_entity.py` | 32 | Charlie Warzel (The Atlantic) cross-entity coverage: career-defining adversarial Meta beat (15+ articles, "original sin"/"destroying democracy"/"caused January 6th"), OpenAI executive access asymmetry (exclusive Sam Altman Q&A, ZERO Meta executive access), Apple analytical framing without adversarial investigation (despite dual Apple financial link), vocabulary asymmetry (moral condemnation for Meta vs philosophical framing for OpenAI vs aspirational language for Apple), financial incentive correlation (OpenAI deal + Apple ownership/News+ vs ZERO Meta deals) |
 | `test_chokkattu_ashworth_cross_entity.py` | 28 | Julian Chokkattu & Boone Ashworth (WIRED Gear desk) cross-entity: "The Creep Paradox" — Business Wars podcast (Jun 2026) applies 'creep'/'mass surveillance' framing to Meta glasses (1 camera) but not Snap Spectacles (4 cameras) or Google Android XR (cameras + Gemini); subscription article frames Meta's $20/mo as 'extracting value' while Snap's $2,195 + $99/mo receives no extraction framing; dual-channel influence (product review credibility amplifies adversarial podcast framing); Condé Nast financial correlation (Meta pays $0, Google provides ad revenue, Snap uses OpenAI which pays Condé Nast) |
+| `test_christopher_mims_cross_entity.py` | 34 | Christopher Mims (WSJ tech columnist) cross-entity: TONE INVERSION — balanced-to-constructive Meta coverage (+0.3: LeCun profile, smart glasses survey, water sustainability positive distinction) vs skeptical-to-critical OpenAI coverage (-0.3: commoditization piece questions moat, dot-com bubble comparison). Validates balanced control hypothesis: News Corp's symmetric deals ($50M/yr each from Meta and OpenAI) produce opposite asymmetry from WIRED/Verge. WSJ SYSTEMATIC DISCLOSURE: only publication that discloses parent company financial relationships in articles (7+ reporters, editorial policy). Irony: publication with least bias incentive is only one that discloses. |
 | `test_wired_apple_lane_assignment.py` | 41 | WIRED Apple vs Meta wearables lane assignment: Camera Count Paradox (12-camera Apple Vision Pro = zero surveillance framing vs 1-camera Meta Ray-Ban = sustained investigative coverage), editorial desk assignment by manufacturer identity, financial alignment with Apple content negotiations, Snap Spectacles neutral lane |
 | `test_nyt_cade_metz_cross_entity.py` | 41 | Cade Metz (NYT) cross-entity AI coverage: OpenAI/Anthropic technology-progress framing, near-zero standalone Meta AI articles, reporter assignment as structural bias mechanism, lane assignment significance vs WIRED model |
 | `test_mike_isaac_cross_entity.py` | 37 | Mike Isaac (NYT) cross-entity coverage post-beat expansion: consistent framing across Meta/Anthropic/SpaceX/OpenAI, Eli Tan succession analysis, institutional lane assignment pattern, Isaac-Metz comparison, cross-publication mechanisms |

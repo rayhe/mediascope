@@ -168,3 +168,205 @@ control_designation:
   type: "balanced_control"
   rationale: "News Corp receives comparable payments from both OpenAI ($50M/yr) and Meta (up to $50M/yr). If financial incentives drive coverage tone, News Corp should show balanced coverage of both. Deviation from balance in either direction would suggest editorial bias beyond financial incentive."
   comparison_baseline: true
+
+# ===================================================================
+# DISCLOSURE PRACTICE — WSJ is the ONLY publication that discloses
+# Added: 2026-08-06 for cross-entity analysis
+# ===================================================================
+disclosure_practice:
+  policy_type: "editorial_policy"
+  description: |
+    WSJ is the ONLY publication in the MediaScope dataset that
+    systematically discloses its parent company's financial relationships
+    with the subjects of its articles. This is an editorial policy, not
+    individual journalist choice — the same disclosure language appears
+    across articles by different reporters on different beats.
+    
+    The disclosure appears as a standalone sentence, typically near the end
+    of articles, in the format: "News Corp, owner of The Wall Street Journal,
+    has a content-licensing partnership with [Entity]."
+    
+    KEY CONTRAST: WIRED (OpenAI deal), The Verge (OpenAI deal via Vox Media),
+    The Atlantic (OpenAI deal), FT (OpenAI deal), NYT (Amazon/Bezos ownership),
+    and Guardian (OpenAI deal via ProRata) NEVER disclose their financial
+    relationships in their coverage. WSJ — the only publication with deals
+    on BOTH sides — is also the only one that discloses. The publications
+    with one-sided financial incentives (and thus the most bias potential)
+    never reveal those incentives to readers.
+  unique_in_dataset: true
+  meta_disclosure_text: "News Corp, owner of The Wall Street Journal, has a content-licensing partnership with Meta."
+  openai_disclosure_text: "News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI."
+  observed_reporters:
+    - "Meghan Bobrowsky"
+    - "Georgia Wells"
+    - "Katie Deighton"
+    - "Keach Hagey"
+    - "Ben Eisen"
+    - "Amanda Coletta"
+    - "Tina Li"
+  example_articles:
+    - title: "Meta Releases Coding Agent to Compete With OpenAI and Anthropic"
+      date: "2026-08-05"
+      disclosure_entity: "Meta"
+      reporters: "Meghan Bobrowsky, Tina Li"
+      source_url: "https://www.wsj.com/tech/ai/meta-releases-coding-agent-to-compete-with-openai-and-anthropic-af87b517"
+    - title: "The Teachers Getting $50,000 Bonuses Thanks to a Massive Meta Data Center"
+      date: "2026-06-12"
+      disclosure_entity: "Meta"
+      reporters: "Meghan Bobrowsky, Ben Eisen"
+      source_url: "https://www.wsj.com/us-news/education/the-teachers-getting-50-000-bonuses-thanks-to-a-massive-meta-data-center-b4631d05"
+    - title: "AI Chatbots Know How to Make Deadly Biological Weapons"
+      date: "2026-07-26"
+      disclosure_entity: "OpenAI"
+      source_url: "https://www.wsj.com/tech/ai/openai-chatbot-biological-weapons-poison-3d808e6c"
+    - title: "OpenAI Investigated by Coalition of State Attorneys General"
+      date: "2026-06-13"
+      disclosure_entity: "OpenAI"
+      reporters: "Keach Hagey, Georgia Wells"
+      source_url: "https://www.wsj.com/tech/openai-investigated-by-coalition-of-state-attorneys-general-088a3928"
+    - title: "OpenAI's Top Executive Fidji Simo to Take Medical Leave"
+      date: "2026-06-03"
+      disclosure_entity: "OpenAI"
+      source_url: "https://www.wsj.com/tech/openais-top-executive-fidji-simo-to-take-medical-leave-from-company-d6fab97c"
+    - title: "OpenAI Buys Tech-Industry Talk Show TBPN"
+      date: "2026-04-02"
+      disclosure_entity: "OpenAI"
+      reporters: "Katie Deighton"
+      source_url: "https://www.wsj.com/cmo-today/openai-buys-tech-industry-talk-show-tbpn-484c01c5"
+
+# ===================================================================
+# JOURNALIST PROFILES — Cross-Entity Coverage Analysis
+# Added: 2026-08-06
+# ===================================================================
+journalist_profiles:
+  - name: "Christopher Mims"
+    current_role: "technology_columnist"
+    publication: "The Wall Street Journal"
+    wsj_start: "2014"
+    background: |
+      Neuroscience degree from Emory University. Prior stints at Quartz
+      (lead tech reporter/editor), freelance for MIT Technology Review,
+      Wired, The Atlantic, Scientific American, Smithsonian, Slate.
+      Author of "How to AI" (2026) and "Arriving Today" (2021).
+      Co-hosts "Bold Names" podcast with Tim Higgins.
+    output_format: "weekly column, podcast co-host"
+    source_urls:
+      - "https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8"
+      - "https://www.wsj.com/tech/ai/cheaper-ai-commodity-openai-anthropic-0111da73"
+      - "https://www.techmeme.com/241012/p6"
+      - "https://intelligentrelations.com/journalist/christopher-mims/"
+    cross_entity_coverage:
+      meta:
+        tone: "balanced_to_constructive"
+        tone_value: 0.3
+        summary: |
+          Mims covers Meta with technology-respect framing. His Oct 2024
+          Yann LeCun profile was the most positive framing of Meta's AI
+          vision at any major publication, giving LeCun a platform to call
+          AI existential risk 'complete BS.' His Jun 2026 smart glasses
+          survey praised Meta for keeping glasses 'as normal-looking as
+          possible' and quoted Boz on Meta's design philosophy. In his
+          sustainability coverage, Mims specifically noted Meta as the
+          ONLY company that tallies water used at power stations in
+          addition to on-site — a positive distinction. No surveillance
+          vocabulary applied to Meta products. The Jun 2026 commoditization
+          piece framed Meta positively as a company that 'showed the world
+          it could potentially compete with the two leading AI labs.'
+        examples:
+          - title: "This AI Pioneer Thinks AI Is Dumber Than a Cat (LeCun profile)"
+            date: "2024-10-12"
+            tone: 0.45
+            framing_notes: |
+              Constructive platform for Meta's AI chief scientist.
+              LeCun's skepticism of LLMs framed as intellectually rigorous,
+              not contrarian. No institutional criticism of Meta embedded.
+            source_url: "https://www.techmeme.com/241012/p6"
+          - title: "Smartglasses Are Inevitable. But What—or Who—Are They For?"
+            date: "2026-06-26"
+            tone: 0.25
+            framing_notes: |
+              Balanced industry survey. Meta praised for partnership with
+              EssilorLuxottica, 'done a good job keeping its smartglasses
+              as normal-looking as possible.' Boz quoted constructively.
+              No surveillance framing for camera-equipped glasses.
+            source_url: "https://www.wsj.com/tech/ai/smart-glasses-market-meta-ai-8e6510b8"
+          - title: "AI's Wider Availability Is Good for China, Not Great for OpenAI (Meta as competitor)"
+            date: "2026-07-17"
+            tone: 0.3
+            framing_notes: |
+              'Meta Platforms showed the world it could potentially compete
+              with the two leading AI labs, OpenAI and Anthropic, on their
+              own turf.' Meta framed as rising competitive force, not
+              surveillance company. Open-source strategy treated as
+              legitimate market advantage.
+            source_url: "https://www.wsj.com/tech/ai/cheaper-ai-commodity-openai-anthropic-0111da73"
+          - title: "Water and sustainability coverage (Meta positive distinction)"
+            date: "2025"
+            tone: 0.2
+            framing_notes: |
+              Specifically noted Meta as the ONLY tech company that
+              tallies water used at power stations feeding its data centers,
+              not just on-site water. Positive framing that distinguishes
+              Meta from Google, Microsoft, Amazon on transparency.
+
+      openai:
+        tone: "skeptical_to_critical"
+        tone_value: -0.3
+        summary: |
+          Mims is notably skeptical of OpenAI's business model
+          sustainability. His Jul 2026 commoditization column directly
+          questioned OpenAI's competitive moat: 'Without a competitive
+          moat, the darlings of today's AI boom could be headed for a
+          serious contraction.' He compared AI investment to dot-com
+          bubble. On Bluesky, mockingly compared AI computer control
+          to 'holding up a picture of his Bored Ape.' His coverage
+          treats OpenAI as vulnerable to commodity disruption, not as
+          a technology leader. This is the OPPOSITE of WIRED/Verge
+          coverage, where OpenAI receives neutral-to-positive treatment.
+        examples:
+          - title: "AI's Wider Availability Is Good for China, Not Great for OpenAI and Anthropic"
+            date: "2026-07-17"
+            tone: -0.35
+            framing_notes: |
+              Headline alone frames OpenAI negatively. Column questions
+              OpenAI's competitive moat, compares AI boom to 'bigger than
+              any nonwartime boom including railroads and dot-com bubble.'
+              Directly questions whether OpenAI can justify investment.
+            source_url: "https://www.wsj.com/tech/ai/cheaper-ai-commodity-openai-anthropic-0111da73"
+          - title: "AI capex coverage (AI investment scale)"
+            date: "2025"
+            tone: -0.2
+            framing_notes: |
+              Documented record AI capex spending in skeptical frame.
+              Cited Paul Kedrosky: AI infrastructure spending already
+              exceeds dot-com telecom peak as % of GDP. Neutral on
+              Meta's share, but used data to question sustainability
+              of the AI spending boom overall.
+
+      apple:
+        tone: "neutral"
+        tone_value: 0.0
+        summary: |
+          Standard tech coverage. No surveillance framing for Apple
+          Vision Pro's 12 cameras. No preferential treatment.
+
+      google:
+        tone: "neutral_to_critical"
+        tone_value: -0.1
+        summary: |
+          Included Google in sustainability criticism (not tallying
+          full water use). Generally neutral on Google AI products.
+
+    asymmetry_verdict: |
+      Mims exhibits a TONE INVERSION compared to WIRED and Verge
+      journalists: he is balanced-to-constructive on Meta (+0.3) and
+      skeptical-to-critical on OpenAI (-0.3), producing a gap of ~0.6
+      in the OPPOSITE direction from WIRED's gap (~0.95 favoring OpenAI
+      over Meta). This validates the balanced control hypothesis:
+      News Corp's balanced financial relationships ($50M/yr from both
+      OpenAI and Meta) produce the most balanced — and even inverted —
+      coverage in the dataset. Combined with WSJ's unique systematic
+      disclosure practice, News Corp/Mims represents the strongest
+      evidence that financial relationships predict coverage tone.
+      The irony: the publication with the least financial incentive to
+      be biased is also the only one that discloses its relationships.
