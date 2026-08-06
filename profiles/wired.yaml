@@ -3060,3 +3060,133 @@ journalist_cross_entity_coverage:
       (adversarial corporate culture exposé) appears transferred to Meta coverage but NOT to
       OpenAI coverage, despite OpenAI having comparable organizational dysfunction (board crisis,
       safety team departures, $14B projected losses, ad-model pivot).
+
+  # ================================================================
+  # GEAR DESK CROSS-ENTITY: CHOKKATTU & ASHWORTH (Aug 2026)
+  # ================================================================
+  gear_desk_cross_entity_analysis:
+    analysts:
+      - name: Julian Chokkattu
+        role: Reviews Editor (Senior Editor for Gear)
+        beat: mobile, wearables, smart glasses hardware
+        at_wired_since: 2018
+        primary_meta_beat: "Meta glasses product reviews, Quest hardware"
+      - name: Boone Ashworth
+        role: Staff Writer
+        beat: gear, smart glasses, wearables
+        primary_meta_beat: "Smart glasses category coverage"
+
+    key_finding: "The Creep Paradox"
+    finding_summary: |
+      WIRED's Gear desk — normally the balanced product-review channel —
+      applies 'creep' and 'mass surveillance' framing exclusively to Meta's
+      smart glasses while covering Snap Spectacles (4 cameras) and Google
+      Android XR glasses (cameras + Gemini AI) without pejorative language.
+      The asymmetry is expressed through a podcast channel (Business Wars,
+      Jun 2026) rather than written reviews, creating plausible deniability:
+      'our reviews are balanced.'
+
+    business_wars_podcast:
+      series_title: "Meta and the Battle for Smart Glasses"
+      air_dates: "2026-06-03 to 2026-06-11"
+      format: "3-episode narrative podcast series (Wondery/Business Wars)"
+      wired_participants:
+        - Julian Chokkattu (credited as 'WIRED senior gear editor')
+        - Boone Ashworth (credited as 'WIRED staff writer')
+      episodes:
+        - title: "Prize on the Eyes"
+          number: 1
+          date: "2026-06-03"
+          subject: Meta
+          key_framing: "Meta has created something else: a tool for mass surveillance"
+          tone: adversarial
+          surveillance_terms: 1
+          source_url: "https://www.podcasts-online.org/pt/business-wars-1335814741"
+        - title: "I'm a Creep"
+          number: 2
+          date: "2026-06-10"
+          subject: Meta
+          key_framing: "mandatory data-sharing, worker exploitation, and federal agents using the glasses illegally"
+          tone: pejorative
+          surveillance_terms: 3
+          source_url: "https://ivy.fm/tag/business-wars"
+        - title: "Google's Return"
+          number: 3
+          date: "2026-06-11"
+          subject: Google
+          key_framing: "whether Google's new Android XR platform can give Meta a run for its money"
+          tone: neutral_to_aspirational
+          surveillance_terms: 0
+          source_url: "https://ivy.fm/tag/business-wars"
+      asymmetry_finding: |
+        Meta episodes (2 of 3): titled 'I'm a Creep' and 'Prize on the Eyes',
+        using 'mass surveillance', 'worker exploitation', 'illegally'.
+        Google episode (1 of 3): titled 'Google's Return', neutral/aspirational,
+        zero pejorative terms. Google's Android XR glasses ALSO have cameras.
+        Snap Spectacles have FOUR cameras. Neither competitor receives 'creep'
+        or 'surveillance' framing from the same WIRED journalists.
+
+    subscription_article:
+      title: "Meta Is Charging a Subscription for Smart Glasses Features. Welcome to the New Era of Consumer Tech"
+      date: "2026-07-02"
+      author: Julian Chokkattu
+      subtitle: "You bought the hardware. Now you'll need to subscribe for 'expanded access' to the most advanced features."
+      key_language:
+        - "extracting value"
+        - "monetizing customers"
+        - scare_quotes_on_expanded_access: "'expanded access'"
+      framing: "Consumer-hostile extraction narrative"
+      source_url_proxy: "https://news.slashdot.org/story/26/07/02/182227/meta-is-charging-a-subscription-for-smart-glasses-features"
+      competitor_comparison: |
+        Snap charges $2,195 + $99/mo ($3,383 year 1, 6.3x Meta's $539 year 1).
+        Snap receives no 'extraction' or 'monetizing customers' framing from
+        WIRED's product desk.
+
+    dual_channel_effect: |
+      Chokkattu occupies a unique dual-channel position:
+      1. PRODUCT REVIEWS (written, WIRED.com) — relatively balanced, product-focused
+      2. PODCAST/NARRATIVE (Business Wars, Vergecast guest, Gadget Lab) —
+         adversarial-institutional framing
+      This creates a credibility amplification loop: his product-review expertise
+      lends authority to adversarial narrative framing. The 'creep' label comes
+      through the podcast channel while bylined reviews maintain neutrality.
+
+    camera_hardware_comparison:
+      meta_ray_ban:
+        cameras: 1
+        resolution: "12MP ultra-wide"
+        price_base: 299
+        subscription: "$20/mo (optional)"
+        surveillance_terms_from_wired_gear_desk: 4  # mass surveillance, creep, illegal, exploitation
+      snap_spectacles:
+        cameras: 4
+        resolution: "dual front + dual tracking"
+        price_base: 2195
+        subscription: "$99/mo (required)"
+        surveillance_terms_from_wired_gear_desk: 0
+        openai_partnership: true
+      google_android_xr:
+        cameras: "yes (unspecified count)"
+        price_base: "TBD (fall 2026)"
+        gemini_integration: true
+        surveillance_terms_from_wired_gear_desk: 0
+
+    financial_correlation: |
+      Pattern consistent with other WIRED desks:
+      - Meta (no Condé Nast licensing deal): receives 'creep'/'mass surveillance' framing
+      - Google (advertising revenue to Condé Nast): receives neutral framing
+      - Snap (OpenAI partnership; OpenAI pays Condé Nast): receives no surveillance framing
+      Camera capability is identical or greater for competitors. The only variable
+      that predicts which entity gets 'surveillance' framing is the financial
+      relationship with Condé Nast.
+
+    test_file: "tests/test_chokkattu_ashworth_cross_entity.py"
+    test_count: 28
+    test_classes:
+      - TestBusinessWarsPodcastFraming (7 tests)
+      - TestCreepParadox (5 tests)
+      - TestSubscriptionArticleFraming (4 tests)
+      - TestDualChannelInfluence (4 tests)
+      - TestCompetitorPricingAsymmetry (2 tests)
+      - TestCondeNastFinancialCorrelation (4 tests)
+      - TestGearDeskVsInvestigativeDesk (2 tests)

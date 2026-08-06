@@ -1235,3 +1235,43 @@ aggregate_findings:
     Also updated The Atlantic and The Verge Google relationships to
     adversarial_litigation with dependency admissions from lawsuit filings.
     Added advertising_dependency as new relationship type.
+
+  # -----------------------------------------------------------------
+  # WIRED GEAR DESK: THE CREEP PARADOX (Aug 2026)
+  # Cross-entity analysis of Julian Chokkattu & Boone Ashworth
+  # -----------------------------------------------------------------
+  wired_gear_desk_cross_entity:
+    finding_name: "The Creep Paradox"
+    date_analyzed: "2026-08-05"
+    analysts:
+      - name: Julian Chokkattu
+        role: Reviews Editor (Senior Editor for Gear)
+        key_article: "Meta Is Charging a Subscription for Smart Glasses Features"
+        key_podcast: "Business Wars: Meta and the Battle for Smart Glasses (Jun 2026)"
+      - name: Boone Ashworth
+        role: Staff Writer
+        key_podcast: "Business Wars: Meta and the Battle for Smart Glasses (Jun 2026)"
+
+    finding_summary: |
+      WIRED's Gear desk applies 'creep' and 'mass surveillance' framing exclusively
+      to Meta's smart glasses (1 camera) while covering Snap Spectacles (4 cameras)
+      and Google Android XR glasses (cameras + Gemini AI) without pejorative language.
+      The asymmetry is expressed through a Business Wars podcast (Jun 2026) where
+      Chokkattu and Ashworth appear as WIRED experts. Meta episodes titled 'I'm a Creep'
+      and 'a tool for mass surveillance'; Google episode titled 'Google's Return'
+      (neutral/aspirational). Snap has more cameras, higher price, mandatory subscription —
+      receives zero surveillance framing.
+
+    asymmetry_evidence:
+      meta_surveillance_terms: 4
+      snap_surveillance_terms: 0
+      google_surveillance_terms: 0
+      meta_price: "$299 base + $20/mo optional"
+      snap_price: "$2,195 + $99/mo required"
+      google_price: "TBD"
+      snap_cameras: 4
+      meta_cameras: 1
+      financial_correlation: "Meta pays Condé Nast $0. Google provides ad revenue. Snap uses OpenAI (which pays Condé Nast)."
+
+    test_file: "tests/test_chokkattu_ashworth_cross_entity.py"
+    test_count: 28

@@ -27479,3 +27479,58 @@ Goode was on-ground at Google I/O 2026 as part of WIRED's five-person team cover
 ### Tests: 27 new passed, 0 regressions, 124 structural consistency tests all pass
 
 **Commit:** 54c9bd5 (pushed to GitHub)
+
+## 2026-08-05 21:00 PT — Type B: Journalist Cross-Entity Tracking — Zoë Schiffer (WIRED Director) × Meta vs OpenAI
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Journalist:** Zoë Schiffer — WIRED Director of Business & Industry
+**Focus:** How Schiffer applies opposite editorial frames to the same event (AI talent war) depending on whether she covers Meta or OpenAI
+
+### KEY FINDING: Same-Event Framing Asymmetry
+
+The AI talent war (Jun-Aug 2025) is the clearest same-event comparison in the MediaScope dataset for this journalist:
+
+| Dimension | OpenAI Coverage | Meta Coverage |
+|-----------|----------------|---------------|
+| Source access | Insider: leaked Altman memo, Mark Chen memo, Fidji Simo Q&A | External: public announcements, employee complaints |
+| Talent war role | Victim: "someone has broken into our home" | Aggressor: "poaching," "$300M packages" |
+| Moral frame | "Missionaries will beat mercenaries" | Corporate excess, destabilizing spending |
+| Executive profiles | Empathetic Q&A (Simo: chronic illness humanized) | ZERO equivalent humanizing profiles |
+| Departures | Principled (safety concerns, ethical resistance) | "Brain Drain," institutional dysfunction |
+| Aggregate tone | Insider access, constructive | External, adversarial, crisis |
+
+### KEY FINDING: Four Dimensions of Coverage Divergence
+
+1. **Source Access Asymmetry:** Deep OpenAI insider access (4+ leaked memos/internal comms: Altman "missionaries" Jul 2025, Chen "broken into our home" Jun 2025, Altman board rejects Musk Feb 2025, Fidji Simo exclusive Q&A Nov 2025). Meta coverage relies on external/public sources — no insider documents, no executive access.
+
+2. **Talent War Framing:** Meta recruits → corporate aggression ("poaching," hyperbolic spending). OpenAI responds → emotional victimhood and moral superiority. Same activity (competing for talent), opposite editorial frames based on company identity.
+
+3. **Executive Profile Gap:** Fidji Simo (OpenAI) gets empathetic, humanizing Q&A — chronic illness treated sensitively, praised for dedication. No equivalent humanizing Meta executive profile by Schiffer. Zuckerberg appears only as corporate aggressor.
+
+4. **Departure Framing:** Meta researcher exits → "Brain Drain," institutional failure, "crisis." OpenAI researcher exits → principled safety concerns, ethical integrity. Same phenomenon, opposite narrative frames.
+
+### KEY FINDING: "Extremely Hardcore" Template Transfer
+
+Schiffer's career-defining work (Extremely Hardcore: Musk/Twitter adversarial corporate exposé) established a template: insider docs, culture dysfunction, corporate pathology. This template is applied to Meta but NOT to OpenAI, despite OpenAI having comparable organizational dysfunction:
+- OpenAI: board crisis, safety team departed, mission alignment team dissolved, CTO revolving door, $14B projected losses, ad-model pivot
+- Meta: layoffs, talent competition, keystroke monitoring
+- Only Meta receives the "Extremely Hardcore" adversarial template
+
+### Financial Correlation
+
+| Entity | Financial Flow → Condé Nast | Coverage Tone |
+|--------|---------------------------|---------------|
+| OpenAI | Content licensing deal ($$) | Insider access, constructive |
+| Meta | $0 | External, adversarial |
+
+Cross-entity asymmetry score: 0.82/1.0
+
+### Files Changed
+1. `profiles/wired.yaml` — Added `journalist_cross_entity_coverage.zoe_schiffer` section: 5 OpenAI articles, 4 Meta articles, talent war asymmetry analysis, departure framing divergence, financial correlation, score 0.82
+2. `tests/test_zoe_schiffer_cross_entity.py` (NEW) — 29 tests across 8 classes (EditorialPosition 4, OpenAICoverage 6, MetaCoverage 4, TalentWarAsymmetry 4, ExecutiveProfileAsymmetry 3, DepartureFraming 2, FinancialCorrelation 3, OverallAsymmetryScore 3)
+3. `README.md` — Test counts updated (3939/167), new test file entry
+4. `docs/ARCHITECTURE.md` — Test counts updated (3939/167), new test file entry
+
+### Tests: 29 new passed, 0 regressions, 8 structural consistency tests all pass
+
+---

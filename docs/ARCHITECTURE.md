@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 3939 tests across 167 test files (all from real articles)
+├── tests/                       # 3967 tests across 168 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -521,6 +521,7 @@ mediascope/
 │   ├── test_will_knight_cross_entity.py # Will Knight (WIRED) cross-entity AI coverage: 7+ OpenAI / 5+ DeepMind / 3+ Anthropic / ZERO Meta articles, talent framing asymmetry, executive access gaps, three-layer WIRED exclusion
 │   ├── test_zoe_schiffer_cross_entity.py # Zoë Schiffer (WIRED Director) cross-entity: talent war framing asymmetry, OpenAI insider access, Meta adversarial framing, executive profile gap, departure framing divergence
 │   ├── test_charlie_warzel_cross_entity.py # Charlie Warzel (Atlantic) cross-entity: career-defining adversarial Meta beat, OpenAI executive access asymmetry, Apple coverage absence, vocabulary/investigation/financial incentive correlation
+│   ├── test_chokkattu_ashworth_cross_entity.py # Chokkattu & Ashworth (WIRED Gear desk) cross-entity: "Creep Paradox" — Meta glasses get 'creep'/'surveillance' framing, Snap (4 cameras) and Google (cameras + Gemini) get none; dual-channel influence via Business Wars podcast; Condé Nast financial correlation
 │   ├── test_wired_apple_lane_assignment.py # WIRED Apple vs Meta wearables lane assignment: Camera Count Paradox, editorial desk assignment by manufacturer identity, financial alignment
 │   ├── test_nyt_cade_metz_cross_entity.py # Cade Metz (NYT) cross-entity AI coverage: OpenAI/Anthropic technology-progress framing vs Meta adversarial beat reporter assignment
 │   ├── test_mike_isaac_cross_entity.py # Mike Isaac (NYT) cross-entity coverage post-beat expansion: consistent framing across Meta/Anthropic/SpaceX, Eli Tan succession, institutional lane assignment
