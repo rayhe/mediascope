@@ -1,4 +1,65 @@
 # MediaScope Iteration Log
+## 2026-08-05 19:00 PT — Type D: Test & Verify — 4 xfail Promotions, Pattern Fixes
+
+**Rotation:** D (Test & Verify)
+**Focus:** Fix known toolkit gaps documented as xfail markers, validate full test suite integrity
+
+### FULL SUITE VERIFICATION
+
+Ran all 165 test files (3882 tests) across 4 batches with zero failures:
+- Batch 1 (40 files): 1029 passed, 15 xfailed in 204s
+- Batch 2 (40 files): 759 passed in 62s
+- Batch 3 (42 files): 987 passed, 9 xfailed in 106s
+- Batch 4 (42 files): 1083 passed, 4 xfailed in 141s
+- **Total: 3858 passed, 28 xfailed, 0 failures** (pre-fixes)
+
+### PATTERN FIXES (4 xfails promoted)
+
+Reviewed all 28 xfail markers across 5 test files. Fixed the 4 most tractable gaps:
+
+#### 1. scale_magnitude: $NNN million detection
+- **Gap:** Pattern `\$\d[\d,.]*\s*(?:trillion|billion)\b` missed `million`
+- **Fix:** Added `million` to alternation: `(?:trillion|billion|million)`
+- **Impact:** `$375 million judgment`, `$500 million in fines`, etc. now detected
+- **xfail removed:** `test_barrons_1t_child_safety_backlash_jul10.py::TestScaleMagnitude::test_375_million`
+
+#### 2. loaded_language: plural predatory targeting
+- **Gap:** Pattern `\s+target\b` only matched singular "target"
+- **Fix:** Changed to `\s+targets?\b`
+- **Impact:** "soft targets", "easy targets", "prime targets" now detected
+- **xfail removed:** `test_barrons...::TestLoadedLanguage::test_soft_target`
+
+#### 3. investor_advisory: parenthetical clause tolerance
+- **Gap:** `\binvestors?\s+(?:should|...)` failed when comma-delimited clause intervened
+- **Fix:** Changed to `\binvestors?(?:\s*,\s*[^,]{0,60},\s*|\s+)(?:should|...)`
+- **Impact:** "Investors, who tend to overlook fines, should start paying attention" now matches
+- **xfail removed:** `test_barrons...::TestInvestorAdvisory::test_investors_should_pay_attention`
+
+#### 4. no_comment_implication: contraction forms
+- **Gap:** Patterns only matched `did not`/`has not`, not `didn't`/`hasn't`
+- **Fix:** Changed `did not` to `did(?:n'?t| not)` and `has not` to `has(?:n'?t| not)`
+- **Impact:** Informal journalistic voice ("didn't respond to a request for comment") now detected
+- **xfail removed:** `test_barrons...::TestRefusalAmplification::test_didnt_respond`
+
+### REMAINING XFAILS (24)
+
+Reviewed but not fixed this iteration — require deeper changes:
+- Barron's: `$NNN million` variant patterns need expanded financial regex (0 remaining after fix)
+- BuzzFeed: 11 xfails across emotion detection, source extraction in personal narrative format
+- MarketWatch: 8 xfails — VADER polarity inversion on professional skepticism, research firm entity gaps, rhetorical question detection
+- NY Post: 1 xfail — ampersand in entity names ("Challenger, Gray & Christmas")
+- WSJ: 4 xfails — executive threat detection, cross-entity sentiment comparison
+
+### Files Changed
+1. `mediascope/analyze/framing.py` — 4 pattern fixes: scale_magnitude +million, loaded_language plural targets?, investor_advisory parenthetical tolerance, no_comment contraction forms
+2. `tests/test_barrons_1t_child_safety_backlash_jul10.py` — 4 xfail decorators removed
+3. `tests/test_type_d_pattern_fixes_aug5.py` (NEW) — 28 tests: 7 scale_magnitude million, 6 plural targets, 6 investor_advisory parenthetical, 6 no_comment contraction, 3 cross-pattern regression
+4. `README.md` — Test counts updated (3882/165), new test file entry
+5. `docs/ARCHITECTURE.md` — Test counts updated (3882/165), new test file entry
+
+### Tests: 28 new passed, 4 xfails promoted to pass, 0 regressions, 124 structural consistency tests pass
+
+---
 ## 2026-08-05 18:00 PT — Type C: Financial Incentive Mapping — Perplexity Hypocrisy Arc, Anthropic Absence, Google Coercion Detail
 
 **Rotation:** C (Financial Incentive Mapping)
