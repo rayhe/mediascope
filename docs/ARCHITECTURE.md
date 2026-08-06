@@ -455,11 +455,12 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 4580 tests across 184 test files (all from real articles)
+├── tests/                       # 4620 tests across 185 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
 │   ├── test_atlantic_analysis.py # Atlantic-specific: Emerson Collective conflicts, AI coverage
+│   ├── test_atlantic_apple_openai_silence_aug6.py # Atlantic × Apple v. OpenAI: 27-day editorial silence, five-way financial conflict, omission bias
 │   ├── test_avclub_sardonic_framing.py # AV Club sardonic framing: sarcastic_correction sub-patterns, loaded_language ad hominem/industry-as-vice, ironic denial regex
 │   ├── test_bofa_capex_watermelon.py # BofA capex/Watermelon model: comma-after-entity lookahead fix, Barron's + Memeburn entity/framing detection, scale_magnitude "nearly double"
 │   ├── test_careers.py          # Career loading, migration detection, DiD, leadership ITS

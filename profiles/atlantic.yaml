@@ -173,17 +173,19 @@ ownership_chain:
           could affect the Atlantic's licensing deal value (fewer users seeing Atlantic content
           through ChatGPT on Apple devices).
 
-          EDITORIAL COVERAGE GAP: As of Jul 12, 2026 (48+ hours post-filing), The Atlantic has
+          EDITORIAL COVERAGE GAP: As of Aug 6, 2026 (27 DAYS post-filing), The Atlantic has
           published ZERO articles about Apple v. OpenAI despite having the densest financial
-          conflict of any publication in the tracked set. Additionally, a site-specific search
-          (site:theatlantic.com) returns ZERO results for any OpenAI-related coverage in all of
-          July 2026. NYT, CNN, Reuters, WSJ, Fox Business, MarketWatch, USA Today, Daily Caller,
-          Washington Examiner, Outlook Business, and MacRumors all covered the filing within hours.
-          Legal scholars Mark Lemley (Stanford Law) and Camilla Hrdy (Rutgers Law) both provided
-          analysis to Reuters: Lemley called it "a potential very big case," Hrdy noted complexity
-          because most prior AI trade secret cases involved software, not hardware. Even trade press
-          (DevDiscourse, TechLusive, Inshorts) covered it. The Atlantic's silence is now the longest
-          editorial absence on this story in the tracked publication set.
+          conflict of any publication in the tracked set. The silence now spans THREE major
+          case escalations: (1) Jul 10 filing, (2) Aug 4 Apple seeks preliminary injunction
+          + expedited discovery, (3) Aug 6 OpenAI files motion to dismiss calling lawsuit
+          "careless, aggressive and oddly personal." NYT, CNN, Reuters, WSJ, Fox Business,
+          TechCrunch, Barron's, Android Authority, NY Post, and LiveMint all covered each
+          escalation within hours. Legal scholars Mark Lemley (Stanford Law) and Camilla
+          Hrdy (Rutgers Law) both provided analysis. Even trade press covered it.
+          The Atlantic's 27-day silence through filing→injunction→dismissal is the LONGEST
+          editorial absence on any major AI lawsuit by ANY publication in the tracked set.
+          This extends the bias analysis from TONE to OMISSION — the most extreme form of
+          editorial bias, removing the story from reader awareness entirely.
         competitive_with: ["Meta", "Apple"]
         source_urls:
           - "https://pitchbook.com/news/articles/openai-jony-ive-io-products-acquisition"

@@ -1,4 +1,42 @@
 # MediaScope Iteration Log
+## 2026-08-06 15:00 PT — Type A: Competitor Coverage Deep Dive — The Atlantic × Apple v. OpenAI Editorial Silence
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+**Focus:** The Atlantic's 27-day editorial silence on Apple v. OpenAI trade secret lawsuit — the densest financial conflict in MediaScope's coverage universe
+
+### Finding: Zero Atlantic Coverage Across Three Major Escalations
+
+Apple filed a trade secret misappropriation suit against OpenAI on July 10, 2026. In the 27 days since:
+
+1. **Jul 10 — Filing:** Apple sues OpenAI alleging misappropriation of trade secrets ([Reuters](https://www.reuters.com/legal/litigation/apple-sues-openai-alleging-misappropriation-trade-secrets-court-records-show-2026-07-10/))
+2. **Aug 4 — Preliminary injunction:** Apple seeks preliminary injunction ([Reuters](https://www.reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04/))
+3. **Aug 6 — Motion to dismiss:** OpenAI files motion calling suit "careless, aggressive and oddly personal" ([Reuters](https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/), [WSJ](https://www.wsj.com/tech/openai-calls-apples-trade-secret-suit-careless-and-oddly-personal-a1d290a1))
+
+**The Atlantic published zero articles on any of these developments.**
+
+### Five-Way Financial Conflict
+
+The silence is significant because The Atlantic has the densest financial conflict web in this case:
+- **Laurene Powell Jobs** (~$17B Apple stock) owns The Atlantic — Apple is the plaintiff
+- **Emerson Collective** backed io Products — OpenAI (defendant) acquired io Products for $6.5B
+- **The Atlantic** has an OpenAI content licensing deal — OpenAI is the primary defendant
+- **Emerson Collective** profited from the io Products acquisition by the defendant
+- **Atlantic Labs** co-develops AI products with OpenAI technology
+
+This is the most financially conflicted editorial position MediaScope has documented for any publication on any story.
+
+### Profile Updates
+- `profiles/competitor-coverage-research.yaml`: Added `apple_v_openai_editorial_silence` section under `atlantic` with full escalation timeline, five-way conflict documentation, source URLs, coverage tracking
+- `profiles/atlantic.yaml`: Updated io Products investment editorial coverage gap from "48+ hours" to "27 DAYS" with three escalation phases
+
+### Test Coverage
+- New: `tests/test_atlantic_apple_openai_silence_aug6.py` — 40 tests across 9 classes (all passing)
+  - TestAtlanticAppleOpenAISilenceDuration, TestAtlanticFiveWayConflict, TestEscalationSourceURLs, TestPublicationsCoveredVsNotCovered, TestAtlanticProfileEditorialGap, TestSilenceAsOmissionBias, TestAsymmetryVerdictUpdated, TestOpenAIDismissalLanguage, TestCrossEntityConsistency
+- Docs updated: 4,620 tests across 185 test files (was 4,580/184)
+
+### Significance
+This represents a shift from detecting *framing* bias to detecting *omission* bias — a publication's most powerful editorial tool. When every major outlet covers a story and one doesn't, the silence itself becomes the signal, especially when that publication has five independent financial reasons to avoid the topic.
+
 ## 2026-08-06 14:00 PT — Type D: Cross-Validation Suite — Afternoon Iteration Integrity Check
 
 **Rotation:** D (Test & Verify)

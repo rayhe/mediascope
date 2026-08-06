@@ -676,6 +676,71 @@ publications:
     apple_conflict_source: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=laurene+powell+jobs"
     apple_news_plus_source: "https://digiday.com/media/media-briefing-publishers-see-apple-news-as-a-stable-revenue-stream-amid-volatile-referral-traffic/"
 
+    apple_v_openai_editorial_silence:
+      discovery_date: 2026-08-06
+      description: |
+        THE DENSEST FINANCIAL CONFLICT PRODUCES THE LONGEST EDITORIAL SILENCE.
+        The Atlantic has published ZERO articles on the Apple v. OpenAI trade
+        secret lawsuit despite it being the most significant AI-hardware legal
+        battle of 2026 and involving entities on BOTH SIDES of The Atlantic's
+        financial web. As of Aug 6, 2026, the silence spans 27 days (Jul 10
+        filing → Aug 6), through THREE major case escalations:
+
+        ESCALATION TIMELINE:
+        (1) Jul 10, 2026: Apple files lawsuit in N.D. Cal. against OpenAI,
+            io Products (EC portfolio company), and former employees Tang Tan
+            and Chang Liu. Covered within hours by Reuters, CNN, WSJ, TechCrunch,
+            Fox Business, The Hill, Bloomberg, Android Authority, NY Post,
+            LiveMint, and dozens of trade outlets.
+        (2) Aug 4, 2026: Apple seeks PRELIMINARY INJUNCTION barring OpenAI
+            from using alleged trade secrets + expedited discovery. Depositions
+            sought for Tang Tan, Chang Liu, io Products corporate representative.
+            Apple reveals ADDITIONAL former employees may be involved. Covered
+            by Reuters, WSJ within hours.
+        (3) Aug 6, 2026: OpenAI files MOTION TO DISMISS, calling lawsuit
+            "careless, aggressive and oddly personal." Claims Apple failed to
+            identify protectable trade secrets. OpenAI blog post says Apple has
+            "common issue" of failing to lock up files when employees depart.
+            Covered by Reuters, WSJ within hours.
+
+        FIVE-WAY CONFLICT (still undisclosed):
+        - LPJ holds ~$17B in Apple stock (PLAINTIFF)
+        - EC backed io Products via LoveFrom (DEFENDANT)
+        - Atlantic has OpenAI licensing deal (PRIMARY DEFENDANT)
+        - EC profited from io Products' $6.5B acquisition by OpenAI
+        - Atlantic co-develops products with OpenAI via Atlantic Labs
+
+        EDITORIAL SILENCE CONTEXT:
+        - 27 days is the longest silence on any major AI lawsuit by ANY
+          publication in the tracked dataset
+        - The lawsuit is about AI HARDWARE — the exact category where The
+          Atlantic's owner has the largest financial conflict ($17B Apple stock
+          vs OpenAI portfolio exit)
+        - OpenAI's motion to dismiss was filed on the SAME DAY as this analysis
+          (Aug 6, 2026), making the silence span the full arc from filing
+          through preliminary injunction to dismissal motion
+        - No other publication with financial ties to either Apple or OpenAI
+          has maintained comparable silence (WSJ, FT, Reuters all provided
+          ongoing coverage)
+      escalation_sources:
+        filing: "https://www.reuters.com/legal/litigation/apple-sues-openai-alleging-misappropriation-trade-secrets-court-records-show-2026-07-10/"
+        preliminary_injunction: "https://www.reuters.com/legal/litigation/apple-seeks-preliminary-injunction-against-openai-trade-secrets-case-2026-08-04/"
+        motion_to_dismiss: "https://www.reuters.com/world/openai-asks-us-judge-dismiss-apples-trade-secrets-case-2026-08-06/"
+        openai_blog_response: "https://www.wsj.com/tech/openai-calls-apples-trade-secret-suit-careless-and-oddly-personal-a1d290a1"
+      publications_that_covered:
+        within_hours: ["Reuters", "CNN", "WSJ", "TechCrunch", "Fox Business", "The Hill", "Bloomberg", "Android Authority", "NY Post", "LiveMint", "Barron's"]
+        within_days: ["Gizmodo", "The Verge", "WIRED", "MIT Technology Review"]
+        not_covered: ["The Atlantic"]
+      mediascope_significance: |
+        This is the strongest single piece of evidence that financial conflicts
+        predict EDITORIAL OMISSION, not just editorial tone. It is not merely
+        that The Atlantic covers Apple positively or OpenAI neutrally — it is
+        that The Atlantic does not cover the most significant legal battle
+        BETWEEN its two financial partners AT ALL. Silence is the most extreme
+        form of editorial bias: it removes the story from the reader's
+        awareness entirely. No disclosure failure is possible when coverage
+        doesn't exist.
+
     google_coverage_tone: "adversarial"
     google_coverage_summary: |
       CRITICAL UPDATE (Jan 14, 2026): The Atlantic SUED Google in
@@ -715,6 +780,14 @@ publications:
       revenue) while maintaining ZERO Meta financial relationships.
       Total unique financial vectors: 5 (OpenAI licensing, Apple ownership,
       Apple News+ revenue, ProRata licensing, Google lawsuit) vs Meta: 0.
+      CRITICAL UPDATE (Aug 6, 2026): The Apple v. OpenAI trade secret
+      lawsuit (filed Jul 10) has now escalated through three phases —
+      filing, preliminary injunction (Aug 4), and motion to dismiss
+      (Aug 6) — with The Atlantic maintaining ZERO coverage across all
+      27 days. This extends the asymmetry analysis from TONE to OMISSION:
+      The Atlantic's densest financial conflict produces complete editorial
+      silence, the most extreme form of bias. No other profiled publication
+      has maintained comparable silence on this case.
 
   # -----------------------------------------------------------------
   # NEW YORK TIMES

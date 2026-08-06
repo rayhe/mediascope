@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 4,580 | Across 184 test files |
+| Tests | 4,620 | Across 185 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **4580 tests** across 184 test files, each covering a different analytical capability:
+MediaScope has **4620 tests** across 185 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -496,6 +496,7 @@ MediaScope has **4580 tests** across 184 test files, each covering a different a
 | `test_topics.py` | 44 | Topic classification: all 29 standardized topic buckets, confidence scoring (keyword coverage + density), length-aware density normalization (short-text dampening, proportional scaling, full-length no-dampening), top-N filtering, custom topic injection, multi-topic articles, child_safety addiction/harm framing, design-feature addiction terms (infinite scroll, body dysmorphia, cosmetic filters), bellwether/Section 230 litigation terms, ai_ethics_safety alignment/philosopher, edge cases |
 | `test_claims.py` | 28 | Claim-evidence mapping: statistic detection (percentages, dollar amounts, multipliers), quote detection, citation signal detection, assertion detection, source attribution, claim mapping, unsupported claims ratio, confidence scoring |
 | `test_atlantic_analysis.py` | 31 | Atlantic-specific coverage analysis: Emerson Collective ownership conflicts, Apple/OpenAI financial interest detection, AI coverage framing patterns, data center environmental articles |
+| `test_atlantic_apple_openai_silence_aug6.py` | 40 | Atlantic × Apple v. OpenAI editorial silence: 27-day zero-coverage gap on densest five-way financial conflict (LPJ Apple stock, EC io Products backing, OpenAI licensing deal), three escalation phases (filing, preliminary injunction, motion to dismiss), omission bias detection, cross-entity consistency |
 | `test_loaded_language_uproar.py` | 13 | Loaded language detection edge cases: workplace coercion terms, revolt vocabulary, "uproar" word variants, false-positive exclusion for neutral contexts |
 | `test_marketwatch_cloud_pivot.py` | 8 | MarketWatch Meta cloud pivot: financial-defeat emotional language terms, ironic_quotation false-positive suppression for analyst-attributed quotes ("rational", "to fund more, not less, capex."), "wrote" as attribution verb, simple competitive_deficit pattern for "lagged behind [Company] and [Company]" without "competitors including" preamble |
 | `test_scale_magnitude.py` | 16 | Scale/magnitude framing: raw number amplification, calculated maximums, cumulative totals, scale analogies, victim roster detection, comparison amplifiers |
