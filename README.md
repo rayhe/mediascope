@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 4,247 | Across 175 test files |
+| Tests | 4,252 | Across 176 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **4247 tests** across 175 test files, each covering a different analytical capability:
+MediaScope has **4252 tests** across 176 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -554,6 +554,7 @@ MediaScope has **4247 tests** across 175 test files, each covering a different a
 | `test_type_d_fixes.py` | 16 | Compound publication source extraction (Business Insider, Daily Beast, Daily Mail as organizational sources), bare confession framing patterns (no "in" prefix) |
 | `test_type_d_pattern_fixes_aug5.py` | 28 | Pattern fixes promoting 4 xfails: scale_magnitude $NNN million detection, loaded_language plural targets, investor_advisory parenthetical clause tolerance, no_comment_implication contraction forms (didn't/hasn't), cross-pattern regression guards |
 | `test_type_d_deal_count_cascade_aug6.py` | 28 | Post-Snowflake/xAI cascade validation: deal count consistency (19 total), xAI publisher-invisible entity integration, Snowflake Cortex marketplace documentation, stale count guards, Project Giraffe documentation, advertising_dependency type |
+| `test_type_d_cross_validation_aug6.py` | 41 | Type D cross-validation suite (Aug 6): structural consistency across profiles, entity definitions, financial relationship data, citation URL reachability, cross-profile score validation |
 | `test_type_c_financial_landscape_aug6.py` | 45 | Apple-OpenAI partnership collapse (3 phases: partnership→breach threat→trade secret suit), Google publisher class-action (Hachette/Cengage/Elsevier/Turow v. Google SDNY), UK CMA AI Overviews opt-out ruling (quadruple coercion), Reddit $60M/yr deal instability, cross-platform summary updates |
 | `test_verge_anthropic_rogue_ai_comparison.py` | 35 | The Verge × Anthropic coverage analysis, "Accidentally" Paradox (Jul 2026 rogue AI incidents vs Meta glasses framing), three-tier model (pay→soft, neutral→factual, threaten→adversarial), reporter lane assignment extension, asymmetry verdict update |
 | `test_raymond_wong_cross_entity.py` | 29 | Raymond Wong (Gizmodo) cross-entity analysis: "Clean Control Paradox" — Gizmodo (zero financial ties) applies equal-opportunity criticism to Meta/OpenAI/Apple/Google/Snap, contrasting with WIRED's deal-driven asymmetry. Maxwell Zeff journalist migration (Gizmodo→TechCrunch→WIRED). Three-tier publication model validation. |
@@ -573,6 +574,7 @@ MediaScope has **4247 tests** across 175 test files, each covering a different a
 | `test_mittr_openai_open_weight_meta_pivot.py` | 15 | MIT TR "OpenAI has finally released open-weight language models" deep dive: entity clusters (OpenAI ≥15, Meta ≥3, Academic/Research ≥4 incl. Princeton + Percy Liang, Chinese AI ≥3, HuggingFace, AI Research Orgs/AI2), competitive_displacement framing ("previously dominated...reorienting"), ironic_quotation ("gpt-oss"), analogy_metaphor false-positive regression guard ("like the possibility that" exemplification suppression) |
 | `test_government_oversight_topic.py` | 15 | government_oversight topic bucket (national security, export controls, AI regulation, military AI, beats product_launch on regulation articles, MIT TR Anthropic feud article), group_expert source detection (cybersecurity experts open letter, AI researchers joint statement, petition signed by experts, not anonymous) |
 | `test_guardian_cohere_correction.py` | 8 | Guardian Cohere lawsuit correction: `triple_path_ai_strategy` replacing incorrect `strategic_licensing_over_litigation`, case *Advance Local Media v. Cohere Inc.* (SDNY 1:25-cv-01305), MTD denied 2025-11-13, 14 co-plaintiffs, legal counsel, analytical note corrections (NYT not sole enforcer), cross-reference to NYT v OpenAI sanctions motion |
+| `test_guardian_cross_entity_aug6.py` | 37 | Guardian cross-entity deep dive (Aug 6): Stargate UK FOI investigation (only publisher with adversarial OpenAI investigation despite deal), rogue agent "going rogue" framing, Brittin revolving door (Google→Guardian board), ProRata/Meta Llama paradox, partial independence model classification, OpenAI coverage tone reclassification (balanced→balanced_to_adversarial), cross-publication asymmetry comparison |
 | `test_grudging_concession.py` | 10 | Grudging concession framing device (#95): positive action editorially minimized via "finally," "only after backlash," "it's about time" — framing legitimate progress as reluctant, forced, or insufficient; discovered from Gizmodo LED tamper article (Jul 8, 2026); negative guards for neutral reporting |
 | `test_ultimatum_framing.py` | 25 | Ultimatum framing device (#96): multi-stage regulatory/legal proceeding compressed into binary "do X or face Y" construction; em-dash-or, must-or-face, comply-or, deadline, either-or variants; discovered from NY Post EU DSA headline (Jul 10, 2026); cross-publication comparison (Reuters softer variant, CNN/WSJ non-matches); 6 negative guards |
 | `test_recidivism_framing.py` | 25 | Recidivism framing device (#98): entity framed as serial offender through temporal recurrence markers — "once again caught," "has a long history of violations," "serial violator," "pattern of," "track record of failures," "continues to violate" — distinct from repeated_disruption (organizational instability); 20 positive tests, 5 negative guards including positive-context filtering |

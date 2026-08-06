@@ -863,44 +863,222 @@ publications:
       Guardian covers Meta with sustained adversarial framing,
       particularly on privacy, political speech, and wearables.
       Editorial posture is privacy-focused. No Meta financial tie.
+      The Guardian's Meta wearables coverage echoes industry-wide
+      surveillance and privacy framing: Kenyan contractors reviewing
+      intimate Smart Glasses footage (Swedish newspaper investigation
+      amplified by Guardian), NameTag facial recognition concerns
+      (relaying WIRED investigation), Cambridge Analytica legacy
+      framing (Carole Cadwalladr). Meta coverage benefits from the
+      Guardian's deep institutional memory of Cambridge Analytica —
+      reporter Cadwalladr won the Orwell Prize for her CA work,
+      creating a permanent adversarial editorial anchor for Facebook/
+      Meta coverage that no other entity in the dataset has.
 
-    openai_coverage_tone: "balanced"
+    openai_coverage_tone: "balanced_to_adversarial"
     openai_coverage_summary: |
       Guardian signed OpenAI deal Feb 2025 — notably one day AFTER
       joining lawsuit against Cohere for unauthorized content use.
       This timing reveals the strategy: sue unauthorized scrapers,
       deal with authorized licensors. Guardian also adopted ChatGPT
-      Enterprise internally. Coverage has remained somewhat critical
-      post-deal but measurably less hostile than Meta coverage.
+      Enterprise internally.
 
-    google_coverage_tone: "balanced"
+      CRITICAL COUNTEREXAMPLE — STARGATE UK FOI INVESTIGATION (Jul 4, 2026):
+      The Guardian conducted an original FOI-based investigation into
+      OpenAI's Stargate UK project that is genuinely adversarial:
+      - Filed Freedom of Information requests with North Tyneside authorities
+      - Revealed neither OpenAI nor partner Nscale had recorded meetings
+        with local authorities before the project announcement
+      - Only Nvidia visited the North East Combined Authority, and that
+        was 5 months AFTER the announcement
+      - Exposed that £20bn of the government's claimed £30bn investment
+        was hypothetical ("the amount needed to build a data center,"
+        not pledged money)
+      - Source quoted calling it "effectively just a government PR stunt"
+      - Computing.co.uk and Sifted corroborated key findings
+      This investigation demonstrates genuine editorial independence:
+      the Guardian used FOI tools — its institutional specialty — to
+      investigate its own deal partner's most high-profile UK project.
+      This is MORE adversarial toward OpenAI than WIRED, The Verge, or
+      FT have ever been.
+
+      ROGUE AGENT COVERAGE (Jul 2026): The Guardian used "going rogue"
+      framing for the OpenAI agent hacking story, confirmed by Reuters'
+      media meta-analysis (Aug 5, 2026) which listed "Reuters, Wired,
+      the Wall Street Journal, the Guardian, National Public Radio" as
+      all using the "rogue" description. This is adversarial language
+      applied to a deal partner's product — consistent with editorial
+      independence on safety issues.
+
+      RECLASSIFICATION: Based on the Stargate UK FOI investigation and
+      the "going rogue" agent coverage, the Guardian's OpenAI coverage
+      tone is reclassified from "balanced" to "balanced_to_adversarial."
+      The Guardian is the ONLY publication in the dataset whose OpenAI
+      coverage has included original investigative journalism against
+      OpenAI that is comparable in rigor (FOI requests, source quotes,
+      document analysis) to its Meta investigations. WIRED, The Verge,
+      FT, and The Atlantic have NEVER conducted comparable original
+      investigations of their deal partner OpenAI.
+    openai_stargate_uk_sources:
+      - "https://www.computing.co.uk/news/2026/datacentre/openai-failed-to-visit-key-stargate-uk-site"
+      - "https://letsdatascience.com/news/guardian-investigation-challenges-openai-stargate-uk-investm-0494862b"
+      - "https://www.resultsense.com/news/2026-07-06-openai-stargate-uk-site-questions/"
+    rogue_agent_framing_source: "https://www.reuters.com/technology/artificial-intelligence/going-rogue-draws-critics-amid-widening-ai-hacks-2026-08-05/"
+
+    openai_examples:
+      - title: "Guardian Stargate UK FOI Investigation — OpenAI never visited key site"
+        date: "2026-07-04"
+        tone: -0.45
+        framing: "original FOI investigation, source quotes ('government PR stunt'), exposed phantom £20bn claim, challenged deal partner's flagship UK project"
+        notes: >
+          This is the STRONGEST evidence of editorial independence from
+          a deal partner in the dataset. No other publication with an
+          OpenAI deal has conducted comparable adversarial investigation
+          of OpenAI. The FOI methodology is the Guardian's institutional
+          signature — applying the same investigative tools used against
+          government and corporate targets to its own deal partner.
+          COMPARE to WIRED: Condé Nast has 5 competitor revenue streams
+          including OpenAI, and WIRED has never conducted an FOI or
+          equivalent document-based investigation of OpenAI. WIRED's
+          OpenAI coverage relays other outlets' reporting (VentureBeat
+          on sycophancy) rather than originating adversarial investigations.
+      - title: "Guardian coverage of OpenAI rogue agent hacking"
+        date: "2026-07"
+        tone: -0.35
+        framing: "'going rogue' language — adversarial framing matching industry consensus (Reuters, WSJ, NPR all used same language)"
+        notes: >
+          Guardian treated the OpenAI agent hack with the same alarm
+          language as other outlets. No evidence of softening coverage
+          due to deal relationship. However, the Guardian did not break
+          the story (Reuters/Hugging Face did) and appears to have
+          followed the news cycle rather than conducting original
+          investigation, unlike its Stargate UK FOI work.
+
+    google_coverage_tone: "balanced_adversarial"
     google_coverage_summary: |
       Guardian takes Google money (DNI funding, News AI pilot, ProRata)
-      but continues critical coverage of Google. This is the 'editorial
-      independence despite financial ties' case — though tone is
-      measurably less hostile than Meta coverage, which has no
-      financial relationship.
+      but continues critical coverage of Google. However, the most
+      adversarial Google coverage stays in REGULATORY FILINGS, similar
+      to FT's pattern: the Guardian filed an adversarial CMA response
+      demanding granular AI content opt-in/out controls from Google,
+      while published coverage remains more measured.
+
       UPDATE (Dec 2025): Guardian joined Google's "News AI pilot"
       commercial partnership program — one of the first wave alongside
       Washington Post, Der Spiegel, El País, Infobae, Kompas, Times
-      of India, and Washington Examiner. These are described as
-      extending existing Google News Showcase partnerships, not new
-      licensing deals. Google characterizes them as "exploring how AI
-      can help drive more engaged audiences."
+      of India, and Washington Examiner.
       UPDATE (Feb 2025): Guardian signed OpenAI licensing deal.
-      This creates a financial picture where Guardian has deals with
-      BOTH OpenAI AND Google, but NOT Meta. Coverage pattern matches:
-      Meta (no deal) gets most adversarial coverage, OpenAI (deal)
-      gets balanced, Google (partial deal) gets balanced.
+      UPDATE (Jun 2026): Google escalated coercive terms — publishers
+      must grant AI training rights or lose Showcase fees.
+      UPDATE (Mar 2026): Matt Brittin — Google EMEA president for 18
+      years, then Guardian Media Group Senior Independent Director for
+      ~1 year — departed GMG to become BBC Director-General. As SID,
+      Brittin was the board member responsible for ensuring governance
+      independence while simultaneously being the former head of
+      Google's European operations. His SID tenure overlapped with the
+      Guardian's Google News AI pilot launch (Dec 2025) and SPUR
+      coalition founding (Feb 2026). Google→Guardian→BBC is the most
+      significant tech-media revolving door in the dataset.
     google_pilot_source: "https://pressgazette.co.uk/platforms/news-publisher-ai-deals-lawsuits-openai-google/"
+    brittin_revolving_door_source: "https://green-park.co.uk/case-studies/how-the-guardian-media-group-secured-googles-european-president-for-its-board/"
+
+    prorata_meta_paradox: |
+      STRUCTURAL IRONY: The Guardian is a founding partner of ProRata AI,
+      which runs on Meta's open-source Llama as its foundational LLM.
+      The Guardian earns revenue from a platform POWERED BY Meta's AI
+      infrastructure while covering Meta adversarially. This is a unique
+      structural relationship: Meta provides the engine (Llama, open-source),
+      ProRata monetizes it for publishers, and those publishers use the
+      revenue to fund journalism critical of Meta. The open-source model
+      means Meta receives no revenue from this chain — it's a one-way
+      value transfer from Meta (via Llama) to the Guardian (via ProRata).
+
+    financial_deal_count: |
+      As of Aug 2026, the Guardian has FOUR AI-related financial relationships:
+      (1) OpenAI licensing (Feb 2025) — content in ChatGPT + ChatGPT Enterprise
+      (2) ProRata AI licensing (~2025) — 50% revenue share, founding partner
+      (3) Google News AI pilot (Dec 2025) — direct payments from Google
+      (4) SPUR coalition (Feb 2026) — collective standards-setting body
+      Total competitor deals: 3 (OpenAI, ProRata, Google)
+      Meta deals: 0
+      Unlike most profiled publications, the Guardian proactively DROPPED
+      Apple News (Apr 2017) and Facebook Instant Articles simultaneously,
+      choosing direct reader relationships over platform distribution.
+      This makes the Guardian's financial posture unique: it REJECTED
+      both Apple and Meta platform revenue voluntarily, then signed
+      deals with OpenAI and Google, creating a deliberate financial
+      asymmetry with Meta that reflects editorial choice, not market
+      exclusion.
+
+    three_tier_assessment: |
+      THE GUARDIAN'S PARTIAL INDEPENDENCE MODEL:
+
+      The Guardian's coverage presents a MORE NUANCED picture than
+      other profiled publications. It cannot be cleanly placed into
+      the three-tier model (pay→soft, neutral→neutral, threaten→hard)
+      that describes WIRED, The Verge, and FT.
+
+      EVIDENCE OF INDEPENDENCE (from deal partners):
+      - Stargate UK FOI investigation of OpenAI (Jul 4, 2026) —
+        genuine adversarial journalism using institutional tools
+      - "Going rogue" framing for OpenAI agent hacking — no softening
+      - Adversarial CMA filing against Google despite News AI pilot deal
+      - Continued critical Google coverage despite financial ties
+
+      EVIDENCE OF ASYMMETRY (still present):
+      - Meta coverage VOLUME and INTENSITY still exceeds OpenAI/Google
+        coverage — Cambridge Analytica legacy creates permanent editorial
+        anchor not present for other entities
+      - Guardian has NEVER conducted an FOI-equivalent investigation of
+        Google's AI Overviews or News AI pilot terms, despite Google's
+        coercive deal structure being objectively more harmful to
+        publisher economics
+      - Guardian proactively DROPPED Meta platform revenue (2017) while
+        signing competitor deals — creating a deliberate financial gap
+      - No disclosure of OpenAI or Google financial ties in coverage
+
+      ASSESSMENT: The Guardian demonstrates MORE editorial independence
+      from deal partners than any other profiled publication except
+      WSJ/News Corp. The Stargate UK FOI investigation is the single
+      strongest example of deal-partner adversarial journalism in the
+      dataset. However, the overall coverage PATTERN still shows
+      measurable asymmetry: Meta (no deal, Cambridge Analytica legacy)
+      gets sustained adversarial framing, while OpenAI (deal) gets
+      intermittent adversarial pieces amid generally balanced coverage.
+      The gap is NARROWER than at WIRED (~0.95) or The Atlantic (~0.90)
+      but still present (~0.25-0.35).
+
+      ANALYTICAL SIGNIFICANCE: The Guardian is the BEST CASE for the
+      "editorial independence despite financial ties" claim. If a
+      publication CAN investigate its deal partners, this is what it
+      looks like: isolated, high-quality investigations on specific
+      topics, while the baseline coverage pattern still correlates
+      with financial relationships. The Guardian proves independence
+      is possible but NOT automatic — it requires institutional culture
+      (FOI traditions, Cadwalladr precedent) strong enough to override
+      financial incentives on a case-by-case basis.
 
     asymmetry_verdict: |
-      Guardian shows moderate asymmetry: Meta (no deal) gets more
-      adversarial coverage than OpenAI (deal) or Google (mixed
-      financial ties). Gap is ~0.3-0.4. Guardian's editorial
-      independence claim is partially supported by continued Google
-      criticism despite taking Google money, but the volume and
-      intensity differ from Meta coverage.
+      Guardian shows MODERATE asymmetry with NOTABLE COUNTEREXAMPLES.
+      Meta (no deal) gets more adversarial coverage than OpenAI (deal)
+      or Google (mixed financial ties). Gap is ~0.25-0.35, NARROWER
+      than WIRED (~0.95), The Verge (~0.65), FT (~0.45), or The
+      Atlantic (~0.90).
+
+      The Stargate UK FOI investigation PREVENTS classifying the
+      Guardian as a simple "financial capture" case. Instead, the
+      Guardian represents a "partial independence" model: financial
+      ties create measurable asymmetry in baseline coverage, but
+      institutional investigative culture can and does override this
+      on specific stories. This makes the Guardian the most interesting
+      analytical case in the dataset — it demonstrates both the pull
+      of financial incentives AND the power of editorial culture.
+
+      UPDATED RECLASSIFICATION (Aug 6, 2026): OpenAI tone upgraded
+      from "balanced" to "balanced_to_adversarial" based on Stargate
+      UK investigation and rogue agent framing. This is the only
+      reclassification TOWARD adversarial for a deal partner's coverage
+      in the entire MediaScope dataset — every other reclassification
+      has been toward softer coverage as financial ties were discovered.
 
   # -----------------------------------------------------------------
   # MIT TECHNOLOGY REVIEW
