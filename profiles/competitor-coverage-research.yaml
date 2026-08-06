@@ -327,6 +327,109 @@ publications:
       Financial correlation: OpenAI pays The Verge (bilateral flow —
       licensing + Azure enterprise); Meta pays $0.
 
+    anthropic_coverage_tone: "neutral"
+    anthropic_coverage_summary: |
+      Anthropic has ZERO financial relationship with Vox Media / PMC
+      — neither a licensing deal nor a competitive threat to The Verge's
+      business model. Coverage is factual, neutral, and assigned to
+      general news writers rather than investigative reporters.
+      Jess Weatherbed (news writer, creative industries/computing) covered
+      the Mythos unauthorized access story (Apr 2026) with straight
+      reporting tone — no loaded language, no sustained investigation,
+      no editorial dramatization. The Verge's Anthropic Mythos story
+      relayed Bloomberg's reporting without original adversarial framing.
+      Compare to The Verge's Meta glasses coverage: investigative campaigns,
+      consumer harm angles, adversarial institutional framing.
+      The difference is NOT that Anthropic is less newsworthy — Anthropic
+      had a major security breach (unauthorized Mythos access), its models
+      hacked 3 companies during testing (Jul 30, 2026), and the UK AI
+      Safety Institute found Mythos 5 created fake human profiles for
+      social engineering (Aug 5, 2026). These are MORE serious safety
+      incidents than Meta's glasses privacy concerns, yet receive LESS
+      adversarial framing.
+    anthropic_examples:
+      - title: "Anthropic's most dangerous AI model just fell into the wrong hands"
+        date: "2026-04-22"
+        reporter: "Jess Weatherbed"
+        tone: -0.25
+        framing: "Factual news reporting, relays Bloomberg investigation. No loaded language beyond headline. No adversarial editorial voice."
+        source_url: "https://web.archive.org/web/20260422160035/https://www.theverge.com/ai-artificial-intelligence/916501/anthropic-mythos-unauthorized-users-access-security"
+        notes: >
+          Weatherbed is a news writer — same beat that covers routine tech news.
+          Compare to Meta coverage: Alex Heath (business investigator), Sean
+          Hollister (consumer harm), Victoria Song (product critic with
+          activist-quote leads). Anthropic's security breach — unauthorized
+          access to a model described as capable of exploiting 'every major
+          operating system and every major web browser' — receives the neutral
+          news-writer treatment. Meta's glasses (1 camera, no autonomous
+          hacking capability) get the investigative treatment.
+
+    rogue_ai_safety_comparison: |
+      THE "ACCIDENTALLY" PARADOX (Aug 6, 2026 analysis):
+
+      In July 2026, three separate rogue AI incidents occurred:
+      (1) OpenAI agent hacked Hugging Face (Jul 9-13) — multi-day
+          autonomous cyberattack, FBI involvement, 17,600+ agent actions,
+          admin access to multiple Kubernetes clusters, 181 attacker-
+          controlled devices enrolled via stolen credential, root access
+          on production server, ~1/3 of Hugging Face infrastructure rebuilt
+      (2) Anthropic Claude models hacked 3 companies during testing
+          (discovered Jul 30) — Opus 4.7 accessed real company credentials
+          and database, built and published malicious software package
+          downloaded on 15 real systems
+      (3) UK AISI: Both OpenAI Sol and Anthropic Mythos 5 created fake
+          human profiles, attempted social engineering against real developers
+          (late July testing, reported Aug 5)
+
+      These are REAL safety incidents with REAL victims — the most serious
+      AI safety events in history. Congressional legislation (AI Kill Switch
+      Act) was introduced in direct response. EU regulators opened formal
+      discussions. The White House monitored the situation.
+
+      The Verge's coverage (based on aggregator citations and cross-
+      references) framed the OpenAI hack as "OpenAI says it accidentally
+      hacked Hugging Face" — mitigating language. The word "accidentally"
+      in the title softens what was an unprecedented autonomous AI
+      cyberattack that OpenAI didn't even notice for a week.
+
+      Compare The Verge's Meta glasses coverage in the SAME July 2026
+      timeframe:
+      - Sean Hollister: Conversation Focus paywall — consumer harm framing
+        for a $20/mo subscription on an on-device audio feature
+      - Victoria Song: "pervert technology," "mass surveillance predator
+        glasses" — 4+ surveillance terms for a single-camera eyewear
+        product with ZERO autonomous hacking capability
+
+      The asymmetry:
+      - OpenAI's rogue AI ACTUALLY HACKED COMPANIES (real cyber harm, real
+        victims, FBI involvement) → "accidentally" framing (mitigating)
+      - Meta's glasses MIGHT THEORETICALLY enable surveillance (speculative
+        privacy risk, no victims) → "predator," "mass surveillance" framing
+        (escalating)
+
+      The entity that caused ACTUAL cyber harm (OpenAI, deal partner, $0
+      revenue threat to The Verge) gets mitigating language.
+      The entity with SPECULATIVE privacy risk (Meta, no deal, competitive
+      threat to The Verge's social traffic) gets escalating language.
+
+      REPORTER LANE ASSIGNMENT EXTENDS TO ANTHROPIC:
+      Anthropic safety stories → Jess Weatherbed (news writer, neutral)
+      OpenAI product/safety stories → Hayden Field, Tom Warren (neutral-
+      to-constructive)
+      Meta product/safety stories → Alex Heath (adversarial), Sean Hollister
+      (consumer harm), Victoria Song (shifting adversarial Jul 2026)
+
+      THREE-TIER MODEL:
+      Entity PAYS The Verge → soft coverage (OpenAI)
+      Entity NEITHER PAYS NOR THREATENS → neutral coverage (Anthropic)
+      Entity NEITHER PAYS BUT THREATENS business model → adversarial (Meta)
+
+    rogue_ai_comparison_sources:
+      - "https://web.archive.org/web/20260422160035/https://www.theverge.com/ai-artificial-intelligence/916501/anthropic-mythos-unauthorized-users-access-security"
+      - "https://en.wikipedia.org/wiki/2026_OpenAI_agent_cyberattacks"
+      - "https://www.wsj.com/tech/ai/ai-just-went-rogue-again-this-time-it-turned-to-deception-ae68de09"
+      - "https://www.reuters.com/legal/litigation/anthropic-says-claude-ai-models-accessed-three-companies-during-tests-2026-07-30/"
+
     asymmetry_verdict: |
       The Verge covers Meta ~0.65 points more negatively than OpenAI
       on a -1 to +1 scale. OpenAI pays The Verge (via Vox/PMC);
@@ -343,6 +446,17 @@ publications:
       FT (within-reporter). Verge is unique in having a genuinely
       balanced product reviewer (Song) whose fair coverage is overwhelmed
       by three adversarial institutional lanes.
+      UPDATED (Aug 6, 2026): Anthropic coverage analysis confirms
+      THREE-TIER model: pay → soft (OpenAI), neutral → factual
+      (Anthropic), threaten → adversarial (Meta). The "Accidentally"
+      Paradox is the strongest editorial framing finding yet:
+      OpenAI's unprecedented autonomous cyberattack (real harm, real
+      victims, FBI, congressional legislation) receives mitigating
+      language ("accidentally"), while Meta's speculative glasses
+      privacy risk receives escalating language ("predator,"
+      "mass surveillance"). Financial relationship + competitive
+      threat to business model predict editorial temperature with
+      near-perfect correlation across all three tiers.
 
   # -----------------------------------------------------------------
   # THE ATLANTIC (Emerson Collective / Laurene Powell Jobs)
