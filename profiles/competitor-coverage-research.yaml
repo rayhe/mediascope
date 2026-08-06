@@ -267,6 +267,66 @@ publications:
       creates financial incentive for Google-adversarial coverage.
     google_litigation_source: "https://news.bloombergtax.com/esg/googles-ad-tech-litigation-defense-grows-as-publishers-pile-on"
 
+    lane_assignment_mechanism: |
+      Multi-beat lane assignment. Four reporter lanes produce systematic
+      framing divergence: OpenAI gets the enterprise scoop team (Hayden
+      Field, Tom Warren — neutral-to-constructive), Meta gets three
+      adversarial lanes (Heath: business investigations, Hollister:
+      consumer harm, Davis/Weatherbed: regulatory). Victoria Song
+      (wearables product reviews) is the sole balanced lane.
+
+    openai_article_examples:
+      - title: "ChatGPT Atlas agent mode for web-based tasks"
+        date: "2025-10"
+        reporter: "Hayden Field"
+        tone: -0.05
+        framing: "Product launch, feature announcement. Browser tracks user data via 'memories' — framed as feature, not surveillance."
+        surveillance_terms: 0
+        source_url: "https://www.techmeme.com/251021/p33"
+      - title: "OpenAI closes $6.5B acquisition of Jony Ive's io Products"
+        date: "2025-07"
+        reporter: "Hayden Field"
+        tone: +0.15
+        framing: "Innovation narrative. Camera-equipped AI wearable — ZERO pre-emptive privacy alarm."
+        surveillance_terms: 0
+        source_url: "https://www.techmeme.com/250709/p35"
+      - title: "GPT-5 launch plans"
+        date: "2025-07"
+        reporter: "Tom Warren"
+        tone: +0.10
+        framing: "Insider access scoop, competitive landscape."
+        surveillance_terms: 0
+        source_url: "https://www.techmeme.com/250724/p36"
+
+    meta_institutional_examples:
+      - title: "With smart glasses, Meta holds all the cards but fails to play them well"
+        date: "2026-07"
+        reporter: "Victoria Song"
+        tone: -0.40
+        framing: "Opens with activist guerrilla ads: 'pervert technology,' 'mass surveillance predator glasses.' Significant framing shift from Song's earlier balanced reviews."
+        surveillance_terms: 4
+        source_url: "https://www.aivanet.com/2026/07/with-smart-glasses-meta-holds-all-the-cards-but-fails-to-play-them-well/"
+      - title: "Conversation Focus rate limited to 3 hours/month"
+        date: "2026-07"
+        reporter: "Sean Hollister"
+        tone: -0.50
+        framing: "Consumer harm, accessibility paywall for on-device feature."
+      - title: "EU tells Meta 'pay or consent' may violate consumer law"
+        date: "2024-07"
+        reporter: "Wes Davis"
+        tone: -0.35
+        framing: "Regulatory pressure on Meta data practices."
+        source_url: "https://www.techmeme.com/240722/p12"
+
+    io_device_paradox: |
+      OpenAI's io device (camera-equipped AI wearable, $6.5B acquisition)
+      received ZERO surveillance framing from The Verge. Meta's single-camera
+      glasses got 4+ surveillance terms in Song's Jul 2026 piece alone.
+      Both products have cameras, always-on AI, and continuous sensing.
+      Only Meta gets 'pervert technology' and 'predator glasses' framing.
+      Financial correlation: OpenAI pays The Verge (bilateral flow —
+      licensing + Azure enterprise); Meta pays $0.
+
     asymmetry_verdict: |
       The Verge covers Meta ~0.65 points more negatively than OpenAI
       on a -1 to +1 scale. OpenAI pays The Verge (via Vox/PMC);
@@ -274,6 +334,15 @@ publications:
       Kelsey Piper's NDA exposé showed editorial independence on
       specific stories — but the overall volume and intensity of
       adversarial framing differs substantially between the two entities.
+      VERIFIED (Aug 5, 2026): The io device paradox provides the
+      strongest single evidence of asymmetry — functionally identical
+      camera-equipped AI wearable devices from OpenAI (deal partner)
+      vs Meta (non-partner) receive opposite editorial frames.
+      The four-lane reporter system is the FOURTH publication-level
+      mechanism documented, after WIRED (desk), NYT (between-reporter),
+      FT (within-reporter). Verge is unique in having a genuinely
+      balanced product reviewer (Song) whose fair coverage is overwhelmed
+      by three adversarial institutional lanes.
 
   # -----------------------------------------------------------------
   # THE ATLANTIC (Emerson Collective / Laurene Powell Jobs)

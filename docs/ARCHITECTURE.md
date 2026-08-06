@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 3882 tests across 165 test files (all from real articles)
+├── tests/                       # 3910 tests across 166 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -538,6 +538,7 @@ mediascope/
 │   ├── test_cannes_contractors.py # Wired "Cannes" contractors: Scale AI/Covalen/Character.AI cluster, catastrophizing "death of" fix, Outlook source exclusion, deception/impersonation patterns
 │   ├── test_type_d_fixes.py      # Compound publication source extraction (Business Insider, Daily Beast, etc.) and bare confession framing patterns
 │   ├── test_type_d_pattern_fixes_aug5.py # 4 promoted xfails: scale_magnitude $NNN million, plural loaded_language targets, investor_advisory parenthetical tolerance, no_comment_implication contractions, cross-pattern regression
+│   ├── test_verge_openai_coverage_asymmetry.py # Verge × OpenAI: four-lane reporter system, io device paradox, bilateral financial flow, selective disclosure
 │   ├── test_type_d_relationship_types.py # New financial relationship types validation: advertising_dependency and adversarial_litigation weights, asymmetry scorer classification, competitor-entities.yaml definitions, Verge/Atlantic Google adversarial_litigation profiles, AdX dependency admissions
 │   ├── test_disclosure_audit.py # Cross-publication financial disclosure audit: WSJ unique disclosure practice (Meta + OpenAI partnerships), WIRED/FT/Atlantic non-disclosure patterns, symmetric vs asymmetric deal correlation with coverage tone, aggregate 17:0 competitor-to-Meta deal ratio validation
 │   ├── test_narrative_coherence.py # End-to-end evidentiary chain validation: financial asymmetry (17:0 ratio), coverage asymmetry (4+ publications), lane assignment mechanisms (3 types), journalist cross-entity patterns (4+ reporters), control groups (News Corp balanced, Gizmodo independent), camera count paradox, source documentation, systemic non-disclosure

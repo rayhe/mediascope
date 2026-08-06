@@ -1,4 +1,73 @@
 # MediaScope Iteration Log
+## 2026-08-05 20:00 PT — Type A: Competitor Coverage Deep Dive — The Verge (PMC) × OpenAI io Device Paradox & Four-Lane Reporter System
+
+**Rotation:** A (Competitor Coverage Deep Dive)
+**Publication × Competitor:** The Verge (PMC) × OpenAI
+**Focus:** How The Verge's four-lane reporter system produces institutional coverage asymmetry between OpenAI (deal partner) and Meta (non-partner), and the io device paradox — functionally identical camera-equipped AI wearable devices receiving opposite editorial frames.
+
+### KEY FINDING: The io Device Paradox
+
+OpenAI's $6.5B Jony Ive acquisition (io Products) will produce a camera-equipped AI wearable device with always-on sensing — functionally identical to Meta's smart glasses. The Verge's coverage:
+
+| Dimension | OpenAI io Device (pays Verge via licensing) | Meta Glasses (pays Verge $0) |
+|-----------|----------------------------------------------|------------------------------|
+| Primary reporter | Hayden Field (AI enterprise) | Victoria Song (wearables), Sean Hollister, Wes Davis |
+| Framing | Innovation narrative, business milestone | "pervert technology," "mass surveillance predator glasses" |
+| Surveillance terms | **0** | **4+** |
+| Privacy alarm | NONE — despite cameras + always-on AI | Central narrative ("would *you* trust Meta?") |
+| Tone | +0.15 (aspirational) | -0.40 (adversarial-institutional) |
+| Source vocabulary | "coolest piece of technology" (Altman quote) | Activist guerrilla poster quotes foregrounded |
+
+### KEY FINDING: Four-Lane Reporter System
+
+The Verge distributes Meta and OpenAI coverage across FOUR distinct editorial lanes:
+
+| Lane | Reporters | Entities | Framing | Tone |
+|------|-----------|----------|---------|------|
+| 1. Enterprise scoops | Hayden Field, Tom Warren, Kylie Robison | OpenAI | Product launches, competitive landscape | Neutral-to-constructive |
+| 2. Product reviews | Victoria Song | Meta (glasses), Apple, Google, Samsung | Balanced product criticism | Balanced (sometimes pro-Meta) |
+| 3. Regulatory/policy | Wes Davis, Jess Weatherbed, Adi Robertson | Meta | EU regulatory, content moderation, privacy | Critical |
+| 4. Business/consumer | Alex Heath, Sean Hollister | Meta | Internal dynamics, subscription paywall, consumer harm | Adversarial |
+
+The result: OpenAI aggregates as constructive enterprise journalism via Lane 1. Meta aggregates as adversarial-institutional via Lanes 3+4, overwhelming Song's balanced Lane 2 product reviews. Song is the ONLY balanced voice; three adversarial lanes set the institutional tone.
+
+### KEY FINDING: Selective Disclosure Pattern
+
+The Verge discloses adversarial financial relationships (Google lawsuit — "Disclosure is our brand") but does NOT disclose aligned ones:
+- ❌ OpenAI content licensing deal (Vox Media/PMC receives fees)
+- ❌ Azure OpenAI enterprise agreement (PMC pays for editorial AI)
+- ❌ PIF/SRMG ownership chain that divested META shares
+- ✅ Google lawsuit (adversarial — Nilay Patel, Vergecast)
+
+This selective pattern — disclose adversarial, conceal aligned — is consistent with the disclosure findings across all profiled publications (WSJ is the only discloser of aligned relationships).
+
+### KEY FINDING: Victoria Song Framing Shift
+
+Song's coverage arc shows measurable evolution:
+- 2023–early 2026: Balanced, sometimes pro-Meta ("best glasses I've ever tried," "Meta's approach may be better than Apple's")
+- Jul 2026: "Meta holds all the cards but fails to play them well" — opens with activist backlash language ("pervert technology," "mass surveillance predator glasses")
+
+This shift may reflect institutional editorial pressure (PMC transition completed Jun 2026, post-WIRED NameTag investigation wave), not Song's personal editorial standards.
+
+### Four-Publication Lane Assignment Taxonomy (Complete)
+
+| Publication | Mechanism | Level | How It Works |
+|-------------|-----------|-------|-------------|
+| WIRED | Editorial desk assignment | Desk-level | Product desk (Goode) for Apple/Snap; Investigative desk (Cameron, Mehrotra) for Meta |
+| NYT | Reporter assignment | Between-reporter | Adversarial beat (Isaac→Tan) for Meta; Tech-progress (Metz) for OpenAI/Anthropic |
+| FT | Within-reporter asymmetry | Within-reporter | Same reporter (Murphy) applies surveillance framing to Meta, business framing to Snap |
+| **The Verge** | **Multi-beat lane assignment** | **Institutional** | **Balanced product reviewer (Song) overwhelmed by 3 adversarial lanes (Heath, Hollister, Davis/Weatherbed)** |
+
+### Files Changed
+1. `profiles/the-verge.yaml` — Added `cross_entity_coverage_analysis` section: four-lane mechanism, OpenAI coverage (4 articles with reporters/tone/surveillance terms), Meta institutional coverage (4 articles), io device paradox (cameras, financial correlation), selective disclosure pattern, asymmetry score 0.65
+2. `profiles/competitor-coverage-research.yaml` — Expanded Verge section with lane_assignment_mechanism, 6 article examples (3 OpenAI, 3 Meta), io_device_paradox, updated asymmetry_verdict with VERIFIED evidence
+3. `tests/test_verge_openai_coverage_asymmetry.py` (NEW) — 28 tests across 7 classes (FourLaneReporterSystem 5, OpenAICoverageArticles 4, MetaInstitutionalCoverage 4, IoDeviceParadox 5, FinancialPredictsTone 4, ReporterAssignmentTaxonomy 2, DisclosureGaps 4)
+4. `README.md` — Test counts updated (3910/166), new test file entry
+5. `docs/ARCHITECTURE.md` — Test count updated (3910/166), new test file entry
+
+### Tests: 28 new passed, 0 regressions, 124 structural consistency tests all pass
+
+---
 ## 2026-08-05 19:00 PT — Type D: Test & Verify — 4 xfail Promotions, Pattern Fixes
 
 **Rotation:** D (Test & Verify)
