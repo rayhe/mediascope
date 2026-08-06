@@ -52,7 +52,7 @@ Verify these counts against the codebase at any time: `python3 scripts/count_sta
 | Journalists tracked | 253 | Career data with source URLs |
 | Career-entry migrations | 968 | Across 441+ publications |
 | Topic buckets | 29 | Standardized for cross-entity comparison |
-| Tests | 4,161 | Across 173 test files |
+| Tests | 4,174 | Across 174 test files |
 
 ## ✨ Novel: Editorial Histories
 
@@ -464,7 +464,7 @@ Each article pair (`*_article.txt` + `*_analysis.md`) shows the full pipeline: r
 
 ## Testing
 
-MediaScope has **4161 tests** across 173 test files, each covering a different analytical capability:
+MediaScope has **4174 tests** across 174 test files, each covering a different analytical capability:
 
 | Test File | Tests | What It Covers |
 |---|---|---|
@@ -554,6 +554,7 @@ MediaScope has **4161 tests** across 173 test files, each covering a different a
 | `test_type_d_fixes.py` | 16 | Compound publication source extraction (Business Insider, Daily Beast, Daily Mail as organizational sources), bare confession framing patterns (no "in" prefix) |
 | `test_type_d_pattern_fixes_aug5.py` | 28 | Pattern fixes promoting 4 xfails: scale_magnitude $NNN million detection, loaded_language plural targets, investor_advisory parenthetical clause tolerance, no_comment_implication contraction forms (didn't/hasn't), cross-pattern regression guards |
 | `test_type_d_deal_count_cascade_aug6.py` | 28 | Post-Snowflake/xAI cascade validation: deal count consistency (19 total), xAI publisher-invisible entity integration, Snowflake Cortex marketplace documentation, stale count guards, Project Giraffe documentation, advertising_dependency type |
+| `test_type_c_financial_landscape_aug6.py` | 45 | Apple-OpenAI partnership collapse (3 phases: partnership→breach threat→trade secret suit), Google publisher class-action (Hachette/Cengage/Elsevier/Turow v. Google SDNY), UK CMA AI Overviews opt-out ruling (quadruple coercion), Reddit $60M/yr deal instability, cross-platform summary updates |
 | `test_verge_anthropic_rogue_ai_comparison.py` | 35 | The Verge × Anthropic coverage analysis, "Accidentally" Paradox (Jul 2026 rogue AI incidents vs Meta glasses framing), three-tier model (pay→soft, neutral→factual, threaten→adversarial), reporter lane assignment extension, asymmetry verdict update |
 | `test_raymond_wong_cross_entity.py` | 29 | Raymond Wong (Gizmodo) cross-entity analysis: "Clean Control Paradox" — Gizmodo (zero financial ties) applies equal-opportunity criticism to Meta/OpenAI/Apple/Google/Snap, contrasting with WIRED's deal-driven asymmetry. Maxwell Zeff journalist migration (Gizmodo→TechCrunch→WIRED). Three-tier publication model validation. |
 | `test_verge_openai_coverage_asymmetry.py` | 28 | The Verge × OpenAI institutional coverage asymmetry: four-lane reporter system, io device paradox (camera-equipped AI wearable gets zero surveillance framing from OpenAI, 4+ terms for Meta), financial correlation, selective disclosure, reporter assignment taxonomy |

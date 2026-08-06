@@ -15,6 +15,18 @@ entities:
     category: ai_lab
     market_cap_approx: $300B (private valuation, 2026)
     ceo: Sam Altman
+    apple_partnership_collapse:
+      overview: |
+        OpenAI's Apple partnership (Jun 2024) has collapsed into mutual
+        litigation by mid-2026. OpenAI preparing breach-of-contract action
+        (May 2026) while Apple sued OpenAI for trade secret theft (Jul 2026).
+        An OpenAI exec called the deal a "failure." Apple testing Claude
+        and Gemini as ChatGPT replacements in Siri.
+      breach_threat_date: 2026-05-14
+      apple_trade_secret_suit_date: 2026-07-10
+      source_urls:
+      - https://www.reuters.com/business/openai-explores-legal-options-against-apple-bloomberg-news-reports-2026-05-14/
+      - https://www.macrumors.com/2026/07/10/apple-sues-openai/
   anthropic:
     display_name: Anthropic
     aliases:
@@ -75,6 +87,64 @@ entities:
     category: big_tech
     market_cap_approx: $3.8T
     ceo: John Ternus (from Sep 2026)
+    openai_partnership_collapse:
+      overview: |
+        The Apple-OpenAI partnership has undergone a dramatic reversal from
+        strategic alliance to mutual litigation in under two years. This
+        represents the fastest partnership-to-litigation arc in AI industry
+        history and has significant implications for MediaScope's financial
+        incentive analysis.
+      phase_1_partnership:
+        date: 2024-06
+        event: Apple integrates ChatGPT into Siri and Apple Intelligence
+        terms: No money changed hands at signing. Each side believed it gave
+          the other the more valuable asset. OpenAI expected subscription
+          growth "on par" with Apple's $20B/yr Google Search deal.
+        source_url: https://www.reuters.com/business/openai-explores-legal-options-against-apple-bloomberg-news-reports-2026-05-14/
+      phase_2_openai_breach_threat:
+        date: 2026-05-14
+        event: OpenAI prepares breach-of-contract notice against Apple
+        detail: |
+          OpenAI retained outside counsel to explore legal options. Exec
+          called the deal a "failure" — Apple didn't sufficiently promote
+          ChatGPT integration, hid implementation details, and subscription
+          growth "hasn't come close to happening." Renegotiation stalled.
+          Apple testing Claude and Gemini as alternatives to ChatGPT in Siri.
+        openai_exec_quote: "We have done everything from a product perspective.
+          They have not, and worse, they haven't even made an honest effort."
+        source_urls:
+        - https://www.reuters.com/business/openai-explores-legal-options-against-apple-bloomberg-news-reports-2026-05-14/
+        - https://www.macrumors.com/2026/05/14/openai-considering-legal-action-against-apple/
+        - https://www.pymnts.com/partnerships/2026/openai-weighs-lawsuit-as-apple-ai-partnership-sours/
+      phase_3_apple_sues_openai:
+        date: 2026-07-10
+        event: Apple files trade secret misappropriation lawsuit against OpenAI
+        detail: |
+          Apple sued OpenAI for stealing trade secrets to build AI hardware.
+          Lawsuit targets io Products (Jony Ive's startup OpenAI acquired for
+          $6.4B). Over 400 former Apple employees now work at OpenAI. Apple
+          seeks injunction + damages. The Siri partnership is specifically
+          excluded from the lawsuit claims, but the relationship is now
+          adversarial on multiple fronts.
+        source_url: https://www.macrumors.com/2026/07/10/apple-sues-openai/
+      mediascope_relevance: |
+        The Apple-OpenAI collapse has THREE implications for financial
+        incentive analysis:
+        (1) CONDÉ NAST DOUBLE DEALING: Condé Nast was simultaneously
+            negotiating content deals with Apple (reported 2025) while having
+            an active OpenAI licensing deal. Now Apple and OpenAI are in
+            mutual litigation. Does Condé Nast's OpenAI deal create friction
+            with Apple? Or does Apple's own fight with OpenAI make Apple MORE
+            sympathetic to publishers that were already licensing to OpenAI?
+        (2) APPLE AS NEUTRAL ENTITY: Apple has no publisher content deals
+            (only negotiations) and is now SUING the company (OpenAI) that
+            has the most publisher deals. This makes Apple the only Big Tech
+            company with zero publisher deals AND active litigation against
+            the biggest publisher deal-maker.
+        (3) SIRI AI PROVIDER DIVERSIFICATION: Apple testing Claude (Anthropic)
+            and Gemini (Google) alongside ChatGPT means publishers' content
+            licensed to OpenAI may flow through Apple devices via multiple
+            AI models — raising questions about content licensing scope.
   google:
     display_name: Google / Alphabet
     aliases:
@@ -90,6 +160,80 @@ entities:
     category: big_tech
     market_cap_approx: $2.4T
     ceo: Sundar Pichai
+    publisher_litigation_jul2026:
+      event: Hachette/Cengage/Elsevier/Turow class-action copyright suit
+      date: 2026-07-10
+      court: SDNY, Case No. 1:26-cv-05870
+      plaintiffs:
+      - Hachette Book Group
+      - Cengage Learning
+      - Elsevier
+      - Scott Turow (via S.C.R.I.B.E. Inc.)
+      detail: |
+        Class-action alleging Google committed "one of the most prolific
+        infringements of copyrighted materials in history" by copying
+        millions of books and journal articles to train Gemini. Google
+        obtained works through Google Books, Google Play Books, Google
+        Scholar, and web scraping (including "known pirate sources" and
+        "behind paywalls"). Google internally flagged "$10Bs-$100Bs in
+        potential fines" for using publisher-provided content.
+        Gemini can generate "a 100-page murder mystery" in 20 minutes
+        for 39 cents — "No publisher or author can compete with that."
+      source_urls:
+      - https://www.hachettebookgroup.com/hachette-book-group-news/publishers-and-authors-file-class-action-lawsuit-against-google-for-willful-copyright-infringement-to-develop-gemini-ai-models/
+      - https://publishers.org/news/publishers-and-authors-file-class-action-lawsuit-against-google-for-willful-copyright-infringement-to-develop-gemini-ai-models/
+      - https://www.medianama.com/2026/07/223-google-accused-copying-millions-books-train-gemini/
+      mediascope_relevance: |
+        Google now faces the SAME type of copyright litigation as OpenAI
+        (NYT lawsuit Dec 2023) — both accused of large-scale unauthorized
+        training. But Google's litigation targets book publishers (Hachette,
+        Elsevier, Cengage), not news publishers. Google's news publisher
+        relationships (News AI pilot, Showcase) remain intact despite the
+        book publisher lawsuit. This creates a bifurcated legal landscape
+        where Google simultaneously licenses FROM news publishers AND gets
+        sued BY book publishers for the same underlying AI training.
+    cma_ai_overviews_opt_out:
+      date: 2026-06-03
+      regulator: UK Competition and Markets Authority
+      designation: Strategic Market Status (Oct 2025)
+      ruling: |
+        World-first ruling: UK publishers can opt out of content appearing
+        in Google AI Overviews, AI Mode, and Discover AI features. Google
+        must implement opt-out toggle in Search Console, provide clear
+        attribution with links in AI responses, and let publishers opt out
+        of content used for AI model fine-tuning. 9-month implementation
+        window with compliance reports every 6 months.
+      coercion_escalation: |
+        Google reportedly threatened to exclude publishers from its pilot
+        AI deals if they opt out of AI Overviews. This QUADRUPLES the
+        coercion structure: (a) advertising dependency (~37% US digital ad
+        spend), (b) search traffic dependency (AI Overviews reducing
+        referrals), (c) Showcase fee leverage (accept AI training or lose
+        annual payments), (d) pilot deal exclusion (opt out of AI Overviews
+        → lose access to new AI licensing revenue).
+        Lord Ed Vaizey at Press Gazette AI Summit (Jun 30): called it a
+        "travesty" if publishers don't use the opt-out.
+      source_urls:
+      - https://techcrunch.com/2026/06/03/publishers-will-be-able-to-opt-out-of-ai-search-thanks-to-new-regulation/
+      - https://www.reuters.com/legal/litigation/uk-regulator-enforces-new-competition-requirements-google-search-2026-06-03/
+      - https://pressgazette.co.uk/press-gazette-events/travesty-if-publishers-dont-take-up-chance-to-opt-out-of-google-ai-overviews/
+      stat: Google AI Overviews has 2.5B+ monthly active users; AI Mode has 1B+ monthly users
+    reddit_deal_instability:
+      date: 2026-07 (late)
+      detail: |
+        Reddit ($60M/yr Google deal) reportedly considering limiting Google's
+        access to its content or renegotiating AI licensing terms. WSJ report
+        caused Reddit shares to fall ~8%. Reddit faces a paradox: paid to
+        license content that trains AI which reduces the need for users to
+        visit Reddit. Reuters, Politico, The Economist, USA Today also
+        considering blocking Google from AI training.
+      source_urls:
+      - https://www.techrepublic.com/article/news-reddit-google-ai-partnership-ai-search-publishers-2026/
+      mediascope_relevance: |
+        Shows deal instability in Google's publisher ecosystem. If Reddit
+        (the largest non-news content partner) rethinks its deal, Google's
+        coercive leverage model may be unsustainable. This contrasts with
+        Meta's voluntary, no-strings-attached deal model.
   x_twitter:
     display_name: X / Twitter
     aliases:
@@ -544,12 +688,29 @@ meta_ai_deals:
         when Google sunsets the program. Jason Kint (Digital Content Next CEO):
         "This is Google's game. They're gonna dominate here. There's no fair
         deal discussions that can happen with Google." Google's relationship
-        with publishers is now TRIPLE coercive: (a) advertising dependency
-        (Google controls ~37% of US digital ad spend), (b) search traffic
-        dependency (AI Overviews reducing referral traffic), (c) Showcase
-        fee leverage (accept AI training or lose annual payments). This
-        coercive structure contrasts sharply with Meta's voluntary deal
+        with publishers is now QUADRUPLE coercive (updated Aug 2026):
+        (a) advertising dependency (Google controls ~37% of US digital ad
+        spend), (b) search traffic dependency (AI Overviews reducing referral
+        traffic — 2.5B+ MAU on AI Overviews, 1B+ on AI Mode), (c) Showcase
+        fee leverage (accept AI training or lose annual payments),
+        (d) pilot deal exclusion (CMA UK opt-out ruling Jun 3 2026 —
+        Google reportedly threatens to exclude publishers from pilot AI
+        deals if they opt out of AI Overviews). UK CMA designated Google
+        "strategic market status" and imposed world-first opt-out requirement,
+        but Google's retaliatory deal exclusion threat undermines the remedy.
+        This coercive structure contrasts sharply with Meta's voluntary deal
         model (no threats, no leverage over existing payments).
+        REGULATORY RESPONSE: UK CMA world-first ruling (Jun 3 2026) requires
+        Google to let publishers opt out of AI Overviews/AI Mode/Discover
+        without losing organic search ranking. 9-month implementation window.
+        Google must provide clear attribution + links + Search Console metrics.
+        COPYRIGHT LITIGATION: Jul 10 2026 Hachette/Cengage/Elsevier/Turow
+        class-action in SDNY (Case 1:26-cv-05870) accuses Google of copying
+        millions of books to train Gemini, including from "known pirate
+        sources." Google internally flagged "$10Bs-$100Bs in potential fines."
+        DEAL INSTABILITY: Reddit ($60M/yr deal) reportedly reconsidering
+        limiting Google access (late Jul 2026, WSJ). Reddit shares fell ~8%.
+        Reuters, Politico, The Economist, USA Today also weighing blocks.
       mediascope_relevance: '2 of 8 MediaScope-profiled publications (The Guardian,
         FT) are in the
 
@@ -625,6 +786,30 @@ meta_ai_deals:
       source_url: https://www.wsj.com/business/media/marketplaces-are-the-next-frontier-in-publisher-deals-with-ai-companies-11515b00
       notes: Could add another layer of AI revenue for publishers already
         receiving Amazon Rufus/Alexa+ payments.
+    apple_openai_partnership_collapse:
+      timeline:
+      - date: 2024-06
+        event: Apple integrates ChatGPT into Siri; no money changes hands
+      - date: 2026-05-14
+        event: OpenAI prepares breach-of-contract notice against Apple
+      - date: 2026-07-10
+        event: Apple sues OpenAI for trade secret misappropriation (io Products)
+      mediascope_relevance: |
+        The fastest partnership-to-mutual-litigation arc in AI history
+        reshapes the financial incentive landscape:
+        (1) CONDÉ NAST CROSSFIRE: Has active OpenAI licensing deal AND was
+            in Apple content licensing negotiations. Apple and OpenAI are now
+            suing each other. Does CN need to pick sides?
+        (2) APPLE'S UNIQUE POSITION: Only Big Tech company with zero
+            publisher content deals AND active litigation against the biggest
+            publisher deal-maker (OpenAI). Makes Apple editorially neutral
+            to publishers — no financial incentive to be soft or hard.
+        (3) SIRI DIVERSIFICATION: Apple testing Claude + Gemini alongside
+            ChatGPT means publisher content licensed to OpenAI may flow
+            through Apple devices via multiple AI backends.
+      source_urls:
+      - https://www.reuters.com/business/openai-explores-legal-options-against-apple-bloomberg-news-reports-2026-05-14/
+      - https://www.macrumors.com/2026/07/10/apple-sues-openai/
     amazon_rufus_deals:
       description: 'Multi-year content licensing for Rufus AI shopping assistant.
 

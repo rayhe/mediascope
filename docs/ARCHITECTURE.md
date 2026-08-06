@@ -455,7 +455,7 @@ mediascope/
 │   ├── topic_classification_demo.py
 │   ├── agent_integration.py
 │   └── sample_output/       # 206 annotated real-article analyses (see METHODOLOGY.md §17)
-├── tests/                       # 4161 tests across 173 test files (all from real articles)
+├── tests/                       # 4174 tests across 174 test files (all from real articles)
 │   ├── test_accuracy_guide.py   # ACCURACY_GUIDE.md consistency: existence, cross-references, content structure, correction path table, annotated article count sync
 │   ├── test_analyst_quote_attribution.py # Analyst/financial quote attribution: firm-level post-attribution suppression, wire cross-citation filtering, genuine scare quote preservation
 │   ├── test_asymmetry.py        # Asymmetry score, Welch's t, Cohen's d, bootstrap CI
@@ -523,6 +523,7 @@ mediascope/
 │   ├── test_zoe_schiffer_cross_entity.py # Zoë Schiffer (WIRED Director) cross-entity: talent war framing asymmetry, OpenAI insider access, Meta adversarial framing, executive profile gap, departure framing divergence
 │   ├── test_sean_hollister_cross_entity.py # Sean Hollister (Verge senior editor) cross-entity: Apple recusal asymmetry, pre/post-recusal coverage shift, consumer harm lane gap, 3-entity coverage pattern, structural vs personal ethics
 │   ├── test_verge_anthropic_rogue_ai_comparison.py # The Verge Anthropic/OpenAI/Meta three-tier coverage: "Accidentally" Paradox, rogue AI safety comparison, pay→soft/neutral→factual/threaten→adversarial, reporter lane extension to Anthropic
+│   ├── test_raymond_wong_cross_entity.py # Gizmodo Raymond Wong cross-entity: Clean Control Paradox (no-deals publication balanced), Maxwell Zeff migration (Gizmodo→WIRED), three-tier model validation, aggregate control evidence
 │   ├── test_charlie_warzel_cross_entity.py # Charlie Warzel (Atlantic) cross-entity: career-defining adversarial Meta beat, OpenAI executive access asymmetry, Apple coverage absence, vocabulary/investigation/financial incentive correlation
 │   ├── test_chokkattu_ashworth_cross_entity.py # Chokkattu & Ashworth (WIRED Gear desk) cross-entity: "Creep Paradox" — Meta glasses get 'creep'/'surveillance' framing, Snap (4 cameras) and Google (cameras + Gemini) get none; dual-channel influence via Business Wars podcast; Condé Nast financial correlation
 │   ├── test_wired_apple_lane_assignment.py # WIRED Apple vs Meta wearables lane assignment: Camera Count Paradox, editorial desk assignment by manufacturer identity, financial alignment
@@ -544,6 +545,7 @@ mediascope/
 │   ├── test_type_d_fixes.py      # Compound publication source extraction (Business Insider, Daily Beast, etc.) and bare confession framing patterns
 │   ├── test_type_d_pattern_fixes_aug5.py # 4 promoted xfails: scale_magnitude $NNN million, plural loaded_language targets, investor_advisory parenthetical tolerance, no_comment_implication contractions, cross-pattern regression
 │   ├── test_type_d_deal_count_cascade_aug6.py # Post-Snowflake/xAI cascade validation: deal count consistency (19), xAI entity integration, Snowflake Cortex, Project Giraffe, stale count guards
+│   ├── test_type_c_financial_landscape_aug6.py # Apple-OpenAI partnership collapse (3 phases), Google publisher class-action, UK CMA AI Overviews opt-out, Reddit deal instability, cross-platform coercion updates
 │   ├── test_verge_openai_coverage_asymmetry.py # Verge × OpenAI: four-lane reporter system, io device paradox, bilateral financial flow, selective disclosure
 │   ├── test_type_d_relationship_types.py # New financial relationship types validation: advertising_dependency and adversarial_litigation weights, asymmetry scorer classification, competitor-entities.yaml definitions, Verge/Atlantic Google adversarial_litigation profiles, AdX dependency admissions
 │   ├── test_disclosure_audit.py # Cross-publication financial disclosure audit: WSJ unique disclosure practice (Meta + OpenAI partnerships), WIRED/FT/Atlantic non-disclosure patterns, symmetric vs asymmetric deal correlation with coverage tone, aggregate 17:0 competitor-to-Meta deal ratio validation
