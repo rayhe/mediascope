@@ -2870,3 +2870,193 @@ editorial_history:
       to: "unknown"
       date: "2023-09"
       notes: "Replaced by Katie Drummond as editorial director."
+
+
+# Zoë Schiffer cross-entity coverage analysis (added 2026-08-05)
+journalist_cross_entity_coverage:
+  zoe_schiffer:
+    date_analyzed: "2026-08-05"
+    role: "Director of Business & Industry"
+    editorial_authority: >
+      Schiffer directs WIRED's entire business desk (US and UK), meaning her framing choices
+      are institutionally amplified beyond her personal bylines. She also co-hosts Uncanny Valley
+      podcast, WIRED's flagship tech/politics show, giving her a second amplification channel.
+      Her team includes Louise Matsakis, Sophie Kleeman, Natasha Tiku, and Maxwell Zeff.
+
+    openai:
+      aggregate_tone: "insider_access_constructive"
+      article_count: 5
+      articles:
+        - title: "OpenAI's Fidji Simo Plans to Make ChatGPT Way More Useful—and Have You Pay For It"
+          subject: "Fidji Simo"
+          date: "2025-11-17"
+          article_type: "q_and_a"
+          framing_notes: >
+            Deep empathetic executive profile/Q&A. Simo's chronic illness (POTS) treated sensitively
+            and humanizingly — not as corporate liability but as a sign of her dedication. Praised
+            for Slack responsiveness (employees confirm). Language: "she's heading up ChatGPT and
+            basically every function that might make OpenAI money" — constructive, capability-focused.
+            No adversarial framing despite OpenAI's governance chaos, $14B projected losses, or
+            ad-model pivot controversy. Tone: +0.35 (warm, admiring).
+          source_url: "https://www.techmeme.com/251117/p11"
+        - title: "Sam Altman's 'Missionaries Will Beat Mercenaries' Memo"
+          subject: "Sam Altman"
+          date: "2025-07-01"
+          article_type: "leaked_memo"
+          framing_notes: >
+            Leaked internal Altman memo attacking Meta's talent strategy. Altman: "I believe there is
+            much, much more upside to OpenAI stock than Meta stock" and "What Meta is doing will,
+            in my opinion, lead to very deep cultural problems." Schiffer publishes Altman's anti-Meta
+            rhetoric without challenge or counterbalance. The memo is framed as strategic vision, not
+            as corporate trash-talk. OpenAI positioned as mission-driven ("missionaries") vs Meta as
+            money-driven ("mercenaries"). Source access: leaked memo = deep OpenAI insider access.
+          source_url: "https://www.techmeme.com/250701/p19"
+        - title: "OpenAI's Mark Chen: 'Someone Has Broken Into Our Home and Stolen Something'"
+          subject: "Mark Chen"
+          date: "2025-06-29"
+          article_type: "leaked_memo"
+          framing_notes: >
+            Leaked internal memo from OpenAI CTO. Emotional victimhood language: "someone has broken
+            into our home and stolen something" — positions OpenAI as the victim of Meta's recruiting,
+            not as a participant in a two-way talent market. OpenAI also poaches from Meta, Google,
+            Anthropic — but that direction is not framed as "breaking into homes." Schiffer describes
+            OpenAI "recalibrating comp" — measured, professional language for the same activity
+            (competing for talent) that Meta receives adversarial framing for. Sympathy = OpenAI.
+          source_url: "https://www.techmeme.com/250629/p19"
+        - title: "Altman Tells Staff Board Will Reject Musk Offer"
+          subject: "Sam Altman"
+          date: "2025-02-11"
+          article_type: "leaked_internal"
+          framing_notes: >
+            Another leaked internal communication from Altman to OpenAI staff. Demonstrates sustained
+            insider source access at OpenAI leadership level. Framing positions Altman as principled
+            defender of OpenAI's mission against Musk's hostile takeover attempt.
+          source_url: "https://www.techmeme.com/250211/p33"
+        - title: "Meta AI Researchers Leave for OpenAI (Uncanny Valley coverage)"
+          subject: "Meta Superintelligence Labs departures"
+          date: "2025-09"
+          article_type: "podcast"
+          framing_notes: >
+            Uncanny Valley podcast frames Meta researcher departures (Avi Verma, Ethan Knight
+            returning to OpenAI after < 1 month) as evidence of Meta's institutional dysfunction.
+            Title: "Meta's AI Brain Drain." When researchers leave META → Brain Drain, crisis.
+            When researchers leave OpenAI → principled safety concerns, ethical departures. Same
+            phenomenon, opposite narrative frames.
+          source_url: "https://medial.app/news/wired-roundup-metas-ai-brain-drain-f148f93815613"
+
+    meta:
+      aggregate_tone: "external_adversarial_crisis"
+      article_count: 4
+      articles:
+        - title: "Zuckerberg Offering AI Talent Up to $300M Packages"
+          subject: "Zuckerberg talent recruitment"
+          date: "2025-07"
+          article_type: "scoop"
+          framing_notes: >
+            Meta's competitive recruiting framed as corporate aggression — "poaching,"
+            "offering up to $300M per head." Zuckerberg positioned as personally driving a
+            disruptive spending spree. Language emphasizes scale of spending (hyperbolic) rather
+            than strategic rationale. No equivalent framing applied to OpenAI when it counter-
+            recruits or when Google spends $2.7B to reacquire Noam Shazeer. The same activity
+            (competing for talent) receives adversarial framing only when Meta is the actor.
+          source_url: "https://www.techmeme.com/250701/p19"
+        - title: "Meta Is in Crisis (Uncanny Valley)"
+          subject: "Meta layoffs and culture"
+          date: "2026"
+          article_type: "podcast"
+          framing_notes: >
+            Uncanny Valley podcast episode. Meta's layoffs described as "needlessly chaotic."
+            Barrett introduces Meta's keystroke monitoring as "spyware on your laptops training AI
+            to probably take your job." Schiffer asks the sardonic "could you opt out?" follow-up.
+            Treatment: Orwellian corporate surveillance. No equivalent Orwellian framing applied
+            to OpenAI's internal monitoring, ChatGPT data collection, or Google's employee
+            productivity tracking.
+          source_url: "https://wdcnews6.com/meta-is-in-crisis-google-searchs-makeover-and-ai-gets-booed-by-graduates/"
+        - title: "Meta's AI Brain Drain"
+          subject: "Meta researcher departures"
+          date: "2025-09"
+          article_type: "podcast"
+          framing_notes: >
+            Researchers leaving Meta Superintelligence Labs framed as existential institutional
+            failure — "Brain Drain." Some returned to OpenAI within weeks. Framing: Meta can't
+            retain talent despite billions in spending. Dysfunction narrative. No equivalent
+            "Brain Drain" framing for OpenAI's equal or greater departures (safety team, mission
+            alignment team, multiple VP-level exits). OpenAI departures = principled; Meta
+            departures = organizational failure.
+          source_url: "https://medial.app/news/wired-roundup-metas-ai-brain-drain-f148f93815613"
+        - title: "Meta Threads Rivals Musk's X"
+          subject: "Threads platform growth"
+          date: "2026"
+          article_type: "podcast"
+          framing_notes: >
+            Competitive framing. Meta's Threads positioned in rivalry narrative with X.
+            Relatively neutral compared to other Meta coverage, but still external analysis
+            rather than insider access framing.
+          source_url: "https://muckrack.com/zoe-schiffer/articles"
+
+    talent_war_framing_asymmetry:
+      description: >
+        The AI talent war (Jun-Aug 2025) is the clearest same-event comparison. Both Meta and
+        OpenAI are aggressively competing for the same AI researchers. Schiffer covers both
+        sides but applies opposite frames depending on the actor.
+      meta_framing: >
+        Corporate aggression: "poaching," "$300M packages," Zuckerberg as personally disruptive.
+        Meta spending is hyperbolic and destabilizing. The talent war is ABOUT Meta's aggressive
+        behavior, not about industry-wide competition.
+      openai_framing: >
+        Emotional victimhood and moral superiority: "someone has broken into our home and stolen
+        something" (Chen memo), "missionaries will beat mercenaries" (Altman memo). OpenAI is
+        the principled defender of mission-driven culture. The same activity (competing for talent)
+        is reframed as violation when Meta does it and righteous defense when OpenAI responds.
+      framing_delta: 0.75
+      delta_notes: >
+        0.75/1.0 — very high. The SAME event (talent competition) receives adversarial framing
+        for Meta and sympathetic framing for OpenAI. Schiffer's access to OpenAI leaked memos
+        means she inherits OpenAI's narrative framing and reproduces it; Meta has no equivalent
+        sympathetic voice in her coverage.
+
+    departure_framing_asymmetry:
+      meta_departures: >
+        Framed as institutional dysfunction and "Brain Drain." When researchers leave Meta after
+        weeks → Meta can't retain talent, culture of fear, organizational chaos. Crisis narrative.
+        Departures are evidence of Meta's failure as an institution.
+      openai_departures: >
+        Framed as principled safety concerns and ethical resistance. When OpenAI's safety team
+        disbands, mission alignment team is dissolved, or researchers quit citing safety fears →
+        these are acts of conscience, not organizational dysfunction. OpenAI's departures are
+        treated as evidence of individual integrity, not corporate failure.
+      delta_notes: >
+        Same phenomenon (researcher departures from AI labs), opposite narrative frames. Company
+        identity determines whether the departure is read as dysfunction (Meta) or integrity
+        (OpenAI).
+
+    financial_correlation:
+      conde_nast_openai_deal: true
+      conde_nast_openai_deal_details: >
+        Condé Nast (WIRED's parent) has a content licensing agreement with OpenAI, receiving
+        fees for content used in ChatGPT training. Financial relationship: OpenAI → Condé Nast.
+      conde_nast_meta_deal: false
+      conde_nast_meta_deal_details: >
+        No documented financial relationship between Condé Nast and Meta. Meta does not license
+        content from Condé Nast publications for AI training. Financial relationship: $0.
+      financial_predicts_tone: >
+        Coverage direction perfectly aligns with financial flow. OpenAI (pays Condé Nast) receives
+        insider access journalism with constructive framing. Meta (pays Condé Nast $0) receives
+        external adversarial journalism with crisis framing. The direction of editorial sympathy
+        correlates with the direction of money flow.
+
+    cross_entity_asymmetry_score: 0.82
+    asymmetry_notes: >
+      High asymmetry (0.82/1.0). Schiffer's cross-entity coverage reveals four distinct dimensions
+      of framing divergence: (1) SOURCE ACCESS — deep OpenAI insider access (leaked memos from
+      Altman, Chen; exclusive Fidji Simo Q&A) vs external Meta coverage (no equivalent insider
+      documents or executive profiles); (2) TALENT WAR — same event receives opposite frames
+      depending on actor (Meta = aggressor, OpenAI = victim); (3) EXECUTIVE PROFILES — OpenAI
+      gets empathetic long-form Q&A (Fidji Simo's chronic illness humanized), Meta gets no
+      equivalent humanizing executive profile; (4) DEPARTURE FRAMING — Meta departures = "Brain
+      Drain" institutional failure, OpenAI departures = principled ethical resistance. The pattern
+      is analytically significant because Schiffer directs WIRED's business desk, making these
+      framing choices institutionally amplified. The career template from "Extremely Hardcore"
+      (adversarial corporate culture exposé) appears transferred to Meta coverage but NOT to
+      OpenAI coverage, despite OpenAI having comparable organizational dysfunction (board crisis,
+      safety team departures, $14B projected losses, ad-model pivot).
