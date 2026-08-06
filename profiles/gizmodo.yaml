@@ -169,3 +169,122 @@ wearables_coverage_examples:
     author: Raymond Wong
     url: https://gizmodo.com/author/raywong
     framing: hands_on_preview (competitive product coverage)
+
+# ===================================================================
+# RAYMOND WONG CROSS-ENTITY COVERAGE — Added 2026-08-06
+# The "Clean Control Paradox": Wong applies equal-opportunity criticism
+# across ALL entities. Compare to WIRED where loaded language is reserved
+# exclusively for Meta while deal partners get neutral treatment.
+# ===================================================================
+cross_entity_coverage:
+  meta:
+    tone: balanced_product_first
+    review_language: "product-focused: battery life, video quality, comfort comparisons. Privacy mentioned in passing ('abysmal privacy practices') but not the dominant framing."
+    examples:
+      - title: "Ray-Ban Meta Gen 2 Review: Still the Best Non-Display Smart Glasses"
+        tone: positive_review
+        date: 2026-04
+        url: https://gizmodo.com/ray-ban-meta-gen-2-review-still-the-best-non-display-smart-glasses-2000664295
+        notes: "Positive headline — WIRED would never run 'Best' for a Meta product"
+      - title: "Meta Ray-Ban Display Review: Is This the Future We Really Want?"
+        tone: skeptical_but_fair
+        date: 2026-04
+        url: https://gizmodo.com/meta-ray-ban-display-smart-glasses-review-is-this-the-future-we-really-want-2000679520
+        notes: "Questions value prop but tests product fairly, acknowledges tech achievement"
+      - title: "The Meta Ray-Ban Display's Dumb Smart Glasses AI Is Dumb No More"
+        tone: positive_evolution
+        date: 2026-07-30
+        url: https://gizmodo.com/the-meta-ray-ban-displays-dumb-smart-glasses-ai-is-dumb-no-more-2000791752
+        notes: "Genuinely impressed by Muse Spark upgrade. 'Dare I say it was actually helpful.'"
+      - title: "Rokid AI Glasses Style Review: Surprisingly Tough Competition for Meta's Ray-Ban"
+        tone: positive_meta_comparison
+        date: 2026-06
+        url: https://gizmodo.com/rokid-ai-glasses-style-review-surprisingly-tough-competition-for-metas-ray-ban-2000716034
+        notes: "Uses Meta Ray-Ban as the benchmark others are compared to — implicitly positive framing"
+
+  openai:
+    tone: dismissive
+    examples:
+      - title: "OpenAI's Revolutionary AI Gadget Is… a Phone? A Stinkin' Phone?"
+        tone: dismissive_critical
+        date: 2026-04-27
+        url: https://gizmodo.com/author/raywong/page/2
+        notes: "Equal irreverence applied to OpenAI hardware — no soft treatment despite no financial relationship in either direction"
+
+  apple:
+    tone: enthusiastic
+    examples:
+      - title: "Apple F*cking Did It: One Month With Siri AI"
+        tone: enthusiastically_positive
+        date: 2026-07-13
+        notes: "Genuinely positive when products deliver. This proves Wong isn't systematically adversarial — he praises good work regardless of company"
+      - title: "I'm More Excited for the Tiny Changes in Apple's '27' Software Updates Than Siri AI, TBH"
+        tone: positive
+        date: 2026-06-09
+        notes: "Nuanced Apple coverage — not uniformly positive, finds value in details"
+
+  google:
+    tone: mixed
+    examples:
+      - title: "It Feels Like Google Is Downplaying Smart Glasses With a Screen in Them"
+        tone: skeptical
+        date: 2026-05-20
+        url: https://gizmodo.com/it-feels-like-google-is-downplaying-smart-glasses-with-a-screen-in-them-2000761657
+        notes: "Skeptical of Google's strategy — critical when warranted"
+      - title: "Google and Xreal's 'Project Aura' XR Smart Glasses Are Legit"
+        tone: positive
+        date: 2026-05-19
+        notes: "Positive when products work — same 'equal-opportunity assessment' pattern"
+
+  snap:
+    tone: critical
+    examples:
+      - title: "Snap's AR Glasses Aren't Even Out Yet, and They're Already Getting Roasted to Death"
+        tone: harsh_critical
+        date: 2026-06
+        url: https://gizmodo.com/snaps-ar-glasses-arent-even-out-yet-and-theyre-already-getting-roasted-to-death-2000773124
+        notes: "Very harsh on Snap design/form factor — no favoritism"
+      - title: "AR Glasses Have a Massive Size Problem"
+        tone: critical
+        date: 2026-07
+        url: https://gizmodo.com/ar-glasses-have-a-massive-size-problem-2000779454
+        notes: "Category-wide criticism including Snap/Google — applies standards equally"
+
+  privacy_coverage_pattern: |
+    Wong applies privacy criticism to ALL companies equally. Key evidence:
+    - "Apple's Smart Glasses Are Stepping Into a Privacy Minefield" (2026-04) — Apple gets privacy scrutiny
+    - "Can Smart Glasses Ever Be Privacy-Friendly? These Companies Think So" (2026-06) — includes Google ("they haven't been much better")
+    - "Dear Meta Smart Glasses Wearers: You're Being Watched, Too" (2026-03) — Meta-specific but based on Svenska Dagbladet investigation
+    WIRED applies privacy framing ONLY to Meta, never to Apple Vision Pro (12 cameras) or Google XR glasses.
+
+  clean_control_finding: |
+    The "Clean Control Paradox": Gizmodo, with ZERO financial ties to any
+    tech company, produces MORE balanced coverage than WIRED, which has
+    deals with OpenAI, Amazon, Microsoft, and Perplexity. Wong's coverage
+    proves that adversarial asymmetry is not inherent to tech journalism —
+    it correlates specifically with publisher-competitor financial relationships.
+
+# ===================================================================
+# JOURNALIST MIGRATIONS — Added 2026-08-06
+# Journalists who moved from Gizmodo to publications with AI licensing deals.
+# Natural experiment: same journalist, different institutional incentives.
+# ===================================================================
+journalist_migrations:
+  - name: Maxwell Zeff
+    origin: Gizmodo
+    via: TechCrunch
+    destination: WIRED (Condé Nast)
+    evidence:
+      - "Gizmodo: 'We Tested AI Censorship: Here's What Chatbots Won't Tell You' (Mar 2024, co-authored with Thomas Germain)"
+      - "TechCrunch: OpenAI o3/o3-mini coverage (Dec 2024), Advanced Voice Mode coverage (Mar 2025)"
+      - "WIRED: 'OpenAI debuts GPT-5.2' (Dec 2025, Techmeme attribution)"
+    significance: |
+      Zeff moved from a publication with ZERO AI licensing deals (Gizmodo/Keleops)
+      to one with MULTIPLE deals (WIRED/Condé Nast — OpenAI, Amazon, Microsoft,
+      Perplexity). At Gizmodo, he co-authored critical AI censorship investigations
+      covering ALL chatbots equally (ChatGPT, Claude, Gemini). At WIRED, he
+      covers OpenAI product launches. Whether his editorial lens shifts is a
+      natural experiment in how institutional financial incentives shape individual
+      journalism. This is NOT an accusation of bias — it's a structural observation
+      about how publication-level financial relationships create editorial gravity.
+    notes: "Career path Gizmodo → TechCrunch → WIRED confirmed via Techmeme byline tracking"

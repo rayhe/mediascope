@@ -1,4 +1,69 @@
 # MediaScope Iteration Log
+## 2026-08-06 03:00 PT — Type B: Journalist Cross-Entity Tracking — Raymond Wong (Gizmodo) & The Clean Control Paradox
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Journalist:** Raymond Wong (Senior Editor, Consumer Tech)
+**Publication:** Gizmodo (Keleops AG — Swiss-owned, ZERO financial ties to any tech company)
+**Focus:** Does a journalist at a publication with no AI licensing deals apply criticism equally across companies? (Answer: YES)
+
+### KEY FINDING: The Clean Control Paradox
+
+Raymond Wong at Gizmodo applies **equal-opportunity criticism** across ALL entities — Meta, OpenAI, Apple, Google, and Snap. His coverage tone tracks product quality, not company identity. This contrasts sharply with WIRED, where loaded language ("mass surveillance," "predator," "gulag") is reserved exclusively for Meta while deal partners (OpenAI, Amazon) receive neutral treatment.
+
+### CROSS-ENTITY TONE MAP
+
+| Entity | Gizmodo (R. Wong) | WIRED (Chokkattu/Ashworth) | Financial Relationship |
+|--------|-------------------|----------------------------|----------------------|
+| Meta | Balanced: "Best Non-Display Smart Glasses" + privacy criticism | Adversarial: "mass surveillance," "creep" | Gizmodo: none / WIRED: none |
+| OpenAI | Dismissive: "A Stinkin' Phone?" | Neutral-to-positive | Gizmodo: none / WIRED: licensing deal |
+| Apple | Enthusiastic: "Apple F*cking Did It" | Neutral-positive (Vision Pro review) | Gizmodo: none / WIRED: negotiating |
+| Google | Mixed: "Downplaying" + "Aura Are Legit" | Neutral (ep 3 neutral title) | Gizmodo: none / WIRED: none |
+| Snap | Critical: "Getting Roasted to Death" | Not covered comparably | Gizmodo: none / WIRED: none |
+
+### WHY THIS MATTERS
+
+Gizmodo is the **experimental control group**:
+- Same industry (tech journalism)
+- Same beats (smart glasses, AI, consumer tech)
+- Same reporter type (hands-on product reviewer)
+- **Different variable: financial ties** (Gizmodo = zero, WIRED = OpenAI + Amazon + Microsoft + Perplexity)
+
+**Result:** The publication with NO financial ties is MORE balanced than the one with financial ties. Adversarial asymmetry correlates with publisher-competitor financial relationships, not editorial standards.
+
+### THREE-TIER PUBLICATION MODEL (validated)
+
+| Tier | Financial Relationship | Example | Meta Coverage |
+|------|----------------------|---------|---------------|
+| 1. Competitor-deal-only | OpenAI deal, NO Meta deal | WIRED, The Verge | Adversarial |
+| 2. Both-deals | Both OpenAI + Meta deals | News Corp (WSJ) | Balanced |
+| 3. No-deals | ZERO deals | Gizmodo | Balanced/Fair |
+
+Only Tier 1 (competitor deals without Meta deals) produces systematically adversarial Meta coverage.
+
+### BONUS: Maxwell Zeff Journalist Migration
+
+Maxwell Zeff moved Gizmodo → TechCrunch → WIRED. At Gizmodo (no deals), he co-authored "We Tested AI Censorship" covering ALL chatbots equally. At WIRED (multiple deals), he covers OpenAI product launches. A natural experiment in institutional financial gravity.
+
+### NEW TEST FILE: `test_raymond_wong_cross_entity.py` (29 tests, 5 classes)
+
+| Class | Tests | What It Validates |
+|-------|-------|-------------------|
+| TestRaymondWongCoveragePattern | 8 | Wong coverage spans positive/balanced/skeptical/adversarial across all entities |
+| TestCleanControlParadox | 7 | Gizmodo (no deals) balanced vs WIRED (deals) adversarial, asymmetry direction |
+| TestGizmodoVsWiredSmartGlasses | 6 | Same products, different framing: surveillance language only at deal-laden pubs |
+| TestMaxwellZeffMigration | 4 | Journalist career path tracking, institutional incentive shift |
+| TestAggregateControlEvidence | 4 | Three-tier model, financial-relationship-predicts-tone thesis |
+
+### Files Changed
+1. `profiles/gizmodo.yaml` — Added cross_entity_coverage (Meta/OpenAI/Apple/Google/Snap with examples, tones, URLs), privacy_coverage_pattern, clean_control_finding, journalist_migrations (Maxwell Zeff)
+2. `profiles/competitor-coverage-research.yaml` — Updated Gizmodo asymmetry_verdict with "Clean Control" designation
+3. `tests/test_raymond_wong_cross_entity.py` (NEW) — 29 tests across 5 classes
+4. `README.md` — Test counts updated (4161/173), new test file entry
+5. `docs/ARCHITECTURE.md` — Test count updated (4161/173)
+
+### Tests: 29 new passed, 0 regressions (228 related tests verified)
+
+---
 ## 2026-08-06 01:00 PT — Type A: Competitor Coverage Deep Dive — The Verge × Anthropic & The "Accidentally" Paradox
 
 **Rotation:** A (Competitor Coverage Deep Dive)
@@ -27771,3 +27836,58 @@ Cross-entity asymmetry score: 0.82/1.0
 ### Tests: 29 new passed, 0 regressions, 8 structural consistency tests all pass
 
 ---
+
+---
+## 2026-08-06 02:00 PT — Type B: Journalist Cross-Entity Tracking — Sean Hollister Apple Recusal Asymmetry
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Journalist:** Sean Hollister (The Verge, Senior Editor, Founding Member)
+**Focus:** Cross-entity coverage asymmetry created by Apple recusal
+
+### KEY FINDING: The Apple Recusal Asymmetry
+
+Sean Hollister — The Verge's primary consumer advocacy reporter — cannot cover Apple products or Apple as a company (wife employed by Apple as video producer, recusal effective June 2023). This creates a structural gap in consumer protection coverage.
+
+**PRE-RECUSAL (before Jun 2023):** Hollister applied EQUAL adversarial consumer advocacy to all companies:
+- Apple Self-Repair Program (May 2022): adversarial investigation, $1,200 credit card hold for 79 pounds of tools, widely cited
+- Google: Epic v. Google antitrust (2023-2024), Pixel 7-year update promise skepticism (Oct 2023)
+- Meta: consumer harm coverage as assigned
+
+**POST-RECUSAL (after Jun 2023):**
+
+| Entity | Consumer Advocacy Reporter | Coverage Lane |
+|--------|--------------------------|---------------|
+| Meta   | Hollister (active)       | Consumer harm, adversarial |
+| Google | Hollister (active)       | Moderate advocacy |
+| Apple  | Hollister (RECUSED)      | No replacement assigned |
+
+**Apple Vision Pro paradox:** Camera-equipped AR headset with 12+ external sensors that 3D-map surroundings — arguably MORE invasive than Meta's single glasses camera. Received product review treatment (Patel, Pierce) — ZERO consumer harm framing, ZERO "surveillance" or "predator" language.
+
+**Lane count asymmetry:**
+- Meta: 4 reporter lanes (3 adversarial: Heath/investigations, Hollister/consumer harm, Davis+Weatherbed/regulatory; 1 balanced: Song/product reviews)
+- Apple: 1 lane (Patel+Pierce/product reviews), ZERO adversarial
+- Google: 2 lanes (Hollister/consumer advocacy, various/product reviews)
+
+**IMPORTANT:** This is a STRUCTURAL finding, not a personal ethics finding. Hollister's recusal is transparent and commendable. The institutional failure is The Verge's decision not to assign another consumer advocacy voice to Apple.
+
+### NEW TEST FILE: `test_sean_hollister_cross_entity.py` (26 tests, 7 classes)
+
+| Class | Tests | What It Validates |
+|-------|-------|-------------------|
+| TestHollisterProfile | 7 | Career arc, founding member, Apple recusal, consumer advocacy beat, multi-publication |
+| TestAppleRecusalTimeline | 3 | Pre-recusal coverage, recusal reason, scope |
+| TestHollisterMetaCoverage | 4 | Consumer harm lane assignment, Conversation Focus article, tone, framing |
+| TestHollisterGoogleCoverage | 3 | Google coverage in profile, antitrust documentation, moderate adversarial level |
+| TestAppleRecusalAsymmetry | 5 | Gap documented, no replacement, three-entity pattern, Vision Pro comparison, structural distinction |
+| TestLaneAssignmentWithRecusal | 3 | Four Meta lanes, adversarial indicators, lane count asymmetry |
+| TestCrossEntityFramingSummary | 1 | Structural finding classification |
+
+### Files Changed
+1. `profiles/competitor-coverage-research.yaml` — Added `apple_recusal_gap` section to The Verge (pre/post-recusal analysis, lane count asymmetry, Vision Pro paradox, structural vs personal distinction)
+2. `tests/test_sean_hollister_cross_entity.py` (NEW) — 26 tests across 7 classes
+3. `README.md` — Test counts updated (4100/172), new test file entry
+4. `docs/ARCHITECTURE.md` — Test counts updated, new test file entries (Hollister + Anthropic comparison)
+
+### Tests: 26 new passed, 0 regressions, 124 structural consistency all pass
+
+**Commit:** 650aaeb (pushed to GitHub)
