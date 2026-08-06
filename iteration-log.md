@@ -1,4 +1,50 @@
 # MediaScope Iteration Log
+## 2026-08-05 17:00 PT — Type B: Journalist Cross-Entity Tracking — Charlie Warzel (The Atlantic) Meta vs OpenAI/Apple Coverage Asymmetry
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Journalist:** Charlie Warzel (The Atlantic, Staff Writer, Galaxy Brain author)
+**Focus:** Cross-entity coverage patterns across Meta, OpenAI, Apple, Google, and Elon Musk/X — with emphasis on how The Atlantic's dual Apple financial link and OpenAI deal correlate with Warzel's coverage tone
+
+### KEY FINDING: Atlantic's Primary Tech Voice Has Career-Defining Meta Adversarialism + OpenAI Executive Access + Apple Investigation Absence
+
+Charlie Warzel — The Atlantic's most influential technology journalist, author of the Galaxy Brain newsletter/podcast, and a 10+ year Meta/Facebook beat reporter — applies fundamentally different editorial standards to different companies:
+
+| Entity | Tone | Article Count | Executive Access | Vocabulary | Financial Relationship |
+|--------|------|---------------|-----------------|------------|----------------------|
+| Meta/Facebook | Career-defining adversarial | 15+ | ZERO cooperative interviews | "original sin," "destroying democracy," "caused January 6th" | $0 (ZERO deals) |
+| OpenAI | Analytical with executive access | 3 | Exclusive Sam Altman Q&A | "technology of faith" | OpenAI content deal |
+| Apple | Analytical ecosystem critique | 2 | N/A | "central technological force" | Dual link: $17B ownership + Apple News+ |
+| Google | Narrative-analytical | 2 | N/A | "benevolent kings" (via interviewee) | Adversarial litigation + ad dependency |
+| Elon Musk/X | Investigative-critical | 5 | N/A | Power analysis | N/A |
+
+### Four Asymmetry Dimensions
+
+**1. Vocabulary Asymmetry:**
+Meta gets existential moral condemnation ("original sin," "destroying democracy," "caused January 6th"). OpenAI gets philosophical framing ("technology of faith"). Apple gets aspirational positioning ("central technological force mediating overscheduled lives"). The moral weight of language decreases as financial relationships increase.
+
+**2. Access Asymmetry:**
+Warzel was GIVEN exclusive interview access to Sam Altman (OpenAI CEO) and published it as a cooperative Q&A. He has NEVER published an equivalent cooperative interview with Mark Zuckerberg or any senior Meta leader despite covering Meta for 10+ years. Meta is covered FROM THE OUTSIDE; OpenAI is covered FROM THE INSIDE.
+
+**3. Investigation Asymmetry:**
+10+ years investigating Facebook/Meta. ZERO equivalent investigative effort on OpenAI (despite board coup, safety team departures, copyright lawsuits), Apple (despite data collection, App Store monopoly, labor conditions), or Google (despite DOJ antitrust, surveillance advertising, YouTube radicalization).
+
+**4. Financial Correlation:**
+Maximum adversarialism → Meta ($0 Atlantic deals)
+Minimum adversarialism → OpenAI (content deal) and Apple (dual financial link: LPJ Trust ~$17B AAPL + Apple News+ "most valuable syndication partner")
+
+### Cross-Entity Asymmetry Score: 0.82/1.0
+
+### Files Changed
+1. `profiles/careers/journalists.yaml` — Added `competitor_coverage` section to Charlie Warzel with 5 entity analyses (Meta, OpenAI, Apple, Google, Elon Musk/X), 10+ article examples with URLs/framing, coverage_gap_notes, asymmetry_score 0.82, added `multi_publication: true` flag
+2. `tests/test_charlie_warzel_cross_entity.py` (NEW) — 32 tests across 8 classes (HasCompetitorCoverage, MetaAdversarialBeat, OpenAIAccessAsymmetry, AppleCoverageAbsence, VocabularyAsymmetry, FinancialCorrelation, AsymmetryScore, CareerArc)
+3. `README.md` — Test counts updated (3817/163), new test file entry
+4. `docs/ARCHITECTURE.md` — Test count updated (3817/163), new test file entry
+
+### Tests: 32 new passed, 0 regressions (217 across all 7 cross-entity test files), 124 structural consistency tests all pass
+
+**Commit:** (pending push)
+
+---
 ## 2026-08-05 15:00 PT — Type A: Competitor Coverage Deep Dive — FT × Google Coverage Asymmetry
 
 **Rotation:** A (Competitor Coverage Deep Dive)
@@ -27161,3 +27207,72 @@ The Type C iteration (12:00) introduced two new relationship types (`advertising
 
 **Commit:** 4b30e30 (pushed to GitHub)
 
+
+## 2026-08-05 16:00 PT — Type B: Journalist Cross-Entity Tracking — Lauren Goode (WIRED) Beat Shift + Executive Access Asymmetry
+
+**Rotation:** B (Journalist Cross-Entity Tracking)
+**Journalist:** Lauren Goode (WIRED Senior Correspondent)
+**Focus:** Cross-entity coverage allocation across Apple, Snap, Meta, Google, and AI semiconductor companies (Nvidia, AMD, Intel, Arm)
+
+### KEY FINDING: WIRED's Consumer Tech Voice Shows Manufacturer-Identity-Dependent Framing
+
+Lauren Goode — WIRED's most senior consumer tech correspondent (Senior Correspondent since ~2025) with 15+ years covering wearables — demonstrates systematic framing divergence when covering the same product category (face-mounted cameras) from different manufacturers:
+
+| Entity | Product | Cameras | Goode's Framing | Surveillance Language |
+|--------|---------|---------|-----------------|----------------------|
+| Apple | Vision Pro | 12 cameras, 5 sensors, 6 mics | Emotional empathy ("I Cried Inside") | **0** |
+| Snap | Spectacles | Camera on face | Playful positive ("face camera we've been waiting for") | **0** |
+| Google | Android XR | Cameras + Gemini AI | Team coverage, playful ("Intelligent Eyewear" snark) | **0** |
+| **Meta** | **Ray-Ban** | **1 camera (12MP)** | **Clinical/skeptical (2023) → editorial avoidance (2024+)** | **N/A — coverage routed to investigative team** |
+
+### Within-Journalist Tone Divergence Confirmed
+
+**Meta Connect Oct 2023:** "The face-computing metaverse still hasn't gone mainstream, but that isn't stopping Meta from trying to make it so" — clinical, skeptical.
+
+**Apple Vision Pro Feb 2024 (4 months later):** "From the inside, though, the view is incredible. It really is. I'm just as surprised by this as you are. I cried." — deeply personal, emotional, wonderstruck.
+
+Same journalist. Same product category (face-mounted cameras). Radically different emotional registers.
+
+### Beat Shift to AI Semiconductors (2024-2026)
+
+Post-2023, Goode's beat shifted dramatically from consumer wearables to AI silicon infrastructure, coinciding precisely with Meta glasses becoming WIRED's most surveillance-framed product:
+
+| Date | Article/Event | Entity | Topic |
+|------|--------------|--------|-------|
+| Jul 2024 | SIGGRAPH 1-on-1 | Nvidia | Jensen Huang interview on AI/computing |
+| Aug 2025 | Big Story profile | AMD | "Lisa Su Runs AMD" |
+| Dec 2025 | WIRED interview | AMD | Lisa Su on AI bubble |
+| Jan 2026 | Feature | Nvidia | Vera Rubin chips "full production" |
+| Mar 2026 | Interview | Arm | Rene Haas CEO on new CPU |
+| Apr 2026 | Feature | Intel | Advanced chip packaging + Google/Amazon talks |
+| May 2026 | Google I/O 2026 | Google | Android XR glasses team coverage |
+| Jun 2026 | Co-interview | Anthropic | Mike Krieger at Big Technology AI Summit |
+
+### Executive Access Asymmetry
+
+Goode has 1-on-1 executive interview access to EVERY major AI chip CEO and a key Meta competitor, but ZERO with Meta leadership:
+
+| Entity | Executive | Access Type |
+|--------|-----------|------------|
+| Nvidia | Jensen Huang | SIGGRAPH 2024 1-on-1 interview |
+| AMD | Lisa Su | Multiple (profile Aug 2025, interview Dec 2025) |
+| Arm | Rene Haas | Mar 2026 interview |
+| Intel | Leadership | Apr 2026 feature with sourced scoops |
+| Anthropic | Mike Krieger | Jun 2026 co-interview |
+| **Meta** | **Zuckerberg/Bosworth/LeCun** | **ZERO** |
+
+### Google I/O 2026 (NEW)
+
+Goode was on-ground at Google I/O 2026 as part of WIRED's five-person team covering Android XR smart glasses. The live blog tone was playful — "Remember, they're not Smart Glasses, they are 'Intelligent Eyewear'" — mild branding snark that's FRIENDLY, not adversarial. Zero surveillance/privacy language for Google's camera-equipped glasses with always-on Gemini AI. Compare: WIRED applies "wiretapping laws," "biometric data," "dormant surveillance" to Meta's functionally similar product.
+
+### Cross-Entity Asymmetry Score: 0.87/1.0 (up from 0.82)
+
+### Files Changed
+1. `profiles/careers/journalists.yaml` — Updated Lauren Goode profile: added Meta Connect 2023 article framing analysis, Google I/O 2026 coverage (team coverage with playful tone), `google` section, `executive_access_asymmetry` section with entity-by-entity map, `beat_shift` section documenting consumer→semiconductor transition, updated `coverage_gap_notes` with Meta Connect 2023 clinical framing evidence, updated asymmetry score from 0.82 to 0.87 with expanded notes
+2. `tests/test_lauren_goode_cross_entity.py` (NEW) — 27 tests across 9 classes (GoodeHasCompetitorCoverage, GoodeAppleFraming, GoodeSnapFraming, GoodeMetaCoverageGap, GoodeBeatShift, GoodeExecutiveAccessAsymmetry, GoodeFramingDivergence, GoodeMetaConnect2023Framing, GoodeGoogleIO2026)
+3. `README.md` — Test counts updated (3785/162), new test file entry
+4. `docs/ARCHITECTURE.md` — Test count updated (3785/162), new test file listing
+
+### Tests: 27 new passed, 0 regressions, 124 structural consistency tests all pass
+
+**Commit:** 54c9bd5 (pushed to GitHub)

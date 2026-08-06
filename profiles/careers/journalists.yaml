@@ -854,6 +854,223 @@ journalists:
     institution: Hamilton College
     year: '2010'
     source_url: https://muckrack.com/charlie-warzel
+  multi_publication: true
+  competitor_coverage:
+    meta:
+      tone: career_defining_adversarial
+      article_count_estimate: 15
+      coverage_type: sustained_adversarial_beat
+      examples:
+      - title: "Facebook's Original Sin (Offline podcast)"
+        date: "2021-12"
+        publication: atlantic
+        framing_notes: >
+          Frames Facebook's problems as architectural and fundamental —
+          "original sin" language treats the platform's design as inherently
+          harmful. Warzel has covered Facebook for 10+ years, "long before it was
+          cool to point out that Facebook is destroying our democracy" (Jon Favreau
+          intro). This is not analytical criticism; it is existential condemnation.
+        source_url: https://podscripts.co/podcasts/offline-with-jon-favreau/charlie-warzel-on-facebooks-original-sin
+      - title: "Zuck Sucks-Up to Trump (Bulwark Podcast)"
+        date: "2025-01"
+        publication: atlantic
+        framing_notes: >
+          Adversarial framing of Zuckerberg's political positioning. Title
+          language ("sucks-up") is mocking/contemptuous, not analytical.
+          Warzel discussed Facebook's content moderation changes, fact-checker
+          removal, and trust-and-safety team moves as capitulation. Compare
+          to his Sam Altman interview, which used analytical framing.
+        source_url: https://podscripts.co/podcasts/the-bulwark-podcast/charlie-warzel-zuck-sucks-up-to-trump
+      - title: "How Facebook caused January 6th (Panic World podcast)"
+        date: "2025-01"
+        publication: atlantic
+        framing_notes: >
+          Frames Facebook as a CAUSAL FACTOR in the Capitol insurrection.
+          Extreme adversarial framing — assigning blame for political
+          violence to a specific platform. No equivalent causal-blame framing
+          has been applied by Warzel to any other tech company.
+        source_url: https://podbay.fm/p/panic-world/e/1736323800
+      - title: "Q&A with Second Life journalist on Meta metaverse"
+        date: "2022-03"
+        publication: atlantic
+        framing_notes: >
+          Covers Meta's metaverse struggles through a critical lens —
+          "companies such as Meta struggling to foster healthy metaverse
+          communities." Framing focuses on Meta's failures rather than
+          the technology's potential.
+        source_url: https://www.techmeme.com/220320/p4
+      coverage_gap_notes: >
+        Warzel's Meta coverage is exclusively adversarial. Every identified
+        Meta-specific article, interview, or podcast appearance frames Meta
+        as harmful, failing, or politically compromised. ZERO identified
+        pieces cover Meta's AI achievements (Llama, FAIR research), Meta's
+        wearables success (Ray-Ban Meta glasses as breakout product), or
+        Meta's open-source contributions to AI. This is analytically
+        significant because Warzel's Galaxy Brain covers AI extensively —
+        he discusses AI's impact on the workforce, AI data centers, AI's
+        economic implications, and AI's battlefield applications — but
+        Meta's AI story is ABSENT from this coverage despite Meta being
+        the world's largest open-source AI contributor. The entity-specific
+        adversarialism does not extend to his general AI coverage.
+    openai:
+      tone: analytical_with_executive_access
+      article_count_estimate: 3
+      examples:
+      - title: "Interview with Sam Altman and Arianna Huffington on Thrive AI Health"
+        date: "2024-07"
+        publication: atlantic
+        framing_notes: >
+          EXCLUSIVE Q&A interview with OpenAI CEO Sam Altman. Analytical framing:
+          "why AI has become a technology of faith." Warzel was GIVEN ACCESS to
+          Altman — this is cooperative journalism, not adversarial investigation.
+          No equivalent executive access has been granted to any Meta leader
+          by Warzel. The framing is philosophical/analytical ("technology of
+          faith") rather than the moral condemnation applied to Meta ("original
+          sin," "destroying democracy," "caused January 6th").
+        source_url: https://www.techmeme.com/240714/p8
+      - title: "Too Much Is Happening Too Fast"
+        date: "2026"
+        publication: atlantic
+        framing_notes: >
+          Mentions Nat Friedman using OpenClaw (autonomous AI agent) in a positive,
+          wonder-tinged context — the AI agent ordering him to drink water is
+          framed as amusing and noteworthy, not surveillance or overreach.
+          When Meta's AI does similar things (tracking behavior, making
+          suggestions), Warzel's colleagues frame it as privacy invasion.
+        source_url: https://muckrack.com/cwarzel/articles
+      coverage_gap_notes: >
+        Despite OpenAI's data practices, training on copyrighted content,
+        governance crises (board coup, safety team departures), and mass
+        layoffs, Warzel has published ZERO sustained adversarial coverage
+        of OpenAI comparable to his decade-long Meta beat. His OpenAI
+        coverage is analytical or features executive access. This is notable
+        because The Atlantic has an OpenAI content licensing deal, creating
+        a financial incentive for non-adversarial coverage.
+    apple:
+      tone: analytical_ecosystem_critique
+      article_count_estimate: 2
+      examples:
+      - title: "Apple Intelligence and Siri integration analysis (with Matteo Wong)"
+        date: "2024-06"
+        publication: atlantic
+        framing_notes: >
+          Analytical coverage of Apple Intelligence. Language: Apple "sees itself
+          as the central technological force mediating the overscheduled lives
+          of upwardly mobile achievers." This frames Apple as ASPIRATIONAL and
+          AMBITIOUS. The criticism is about ecosystem lock-in, not about privacy
+          violation, surveillance, or democratic harm. Compare: Meta's AI is
+          framed as causing democratic collapse and political violence.
+        source_url: https://www.holo.mg/stream/the-atlantic-charlie-warzel-matteo-wong-chatgpt-siri-openai-apple-integration/
+      - title: "Flipping Off Phones / Month Offline"
+        date: "2026"
+        publication: atlantic
+        framing_notes: >
+          Anti-smartphone piece where colleague swaps iPhone for flip phone.
+          Frames smartphone addiction as a human/cultural problem, NOT as
+          Apple's moral failing. No "Apple's Original Sin" framing. No
+          causal-blame language. The phone is harmful because of what it does
+          to attention, not because Apple designed it to be addictive (contrast
+          with Meta's platform architecture being labeled an "original sin").
+        source_url: https://muckrack.com/cwarzel/articles
+      coverage_gap_notes: >
+        Despite Apple's extensive data collection (App Tracking Transparency
+        data, Siri recordings, Apple Intelligence processing), Warzel has
+        published ZERO adversarial investigations of Apple's privacy claims.
+        Apple collects biometric data (Face ID), location data, health data,
+        and processes user messages through Apple Intelligence — practices
+        that, if performed by Meta, would trigger Warzel's "privacy struggles"
+        coverage. The absence correlates with The Atlantic's dual Apple
+        financial link: LPJ Trust ownership (~$17B AAPL) and Apple News+
+        ("most valuable syndication partner" per CGO Megha Garibaldi).
+    google:
+      tone: narrative_analytical
+      article_count_estimate: 2
+      examples:
+      - title: "Behind the Curtain at Google (Galaxy Brain podcast)"
+        date: "2026"
+        publication: atlantic
+        framing_notes: >
+          Former Google employee interview. Claire Stapleton describes
+          executives as "benevolent kings" early on, with culture deteriorating
+          over time. Critical but through PERSONAL NARRATIVE framing — a human
+          story about disillusionment, not an investigative expose. No loaded
+          language ("original sin," "destroying democracy"). No causal-blame
+          framing. Warzel lets the interviewee tell her story rather than
+          imposing an adversarial frame.
+        source_url: https://muckrack.com/cwarzel/articles
+      - title: "Ask Jeeves co-creator on chatbots Microsoft and Google are building"
+        date: "2023-03"
+        publication: atlantic
+        framing_notes: >
+          Historical/analytical framing. Compares Ask Jeeves to modern
+          Google/Microsoft AI chatbots. Technology-as-evolution narrative,
+          not technology-as-threat narrative. No surveillance vocabulary,
+          no democracy-harm vocabulary.
+        source_url: https://www.techmeme.com/230305/p7
+      coverage_gap_notes: >
+        Despite Google's massive data collection, antitrust violations
+        (DOJ case, EU fines), and AI safety concerns, Warzel has published
+        ZERO adversarial investigations of Google comparable to his Meta
+        coverage. His Google coverage uses narrative and analytical framing
+        rather than investigative-adversarial framing.
+    elon_musk_x:
+      tone: investigative_critical
+      article_count_estimate: 5
+      examples:
+      - title: "How Elon Musk Became More Powerful Than Ever"
+        date: "2026"
+        publication: atlantic
+        framing_notes: >
+          Investigative and critical. Explores Musk's power across multiple
+          companies and political influence. More adversarial than Apple/Google
+          coverage but LESS sustained than Meta coverage. Warzel treats Musk
+          as a subject of power analysis, while treating Meta/Facebook as a
+          subject of moral condemnation.
+        source_url: https://muckrack.com/cwarzel/articles
+      - title: "What Is Twitter's Legacy, 20 Years Later?"
+        date: "2026-03"
+        publication: atlantic
+        framing_notes: >
+          Historical analysis with former Twitter executive Jason Goldman.
+          Critical of what Twitter/X has become but through historical/cultural
+          lens rather than the causal-blame lens applied to Facebook/Meta.
+        source_url: https://muckrack.com/cwarzel/articles
+    cross_entity_asymmetry_score: 0.82
+    asymmetry_notes: >
+      High asymmetry (0.82/1.0). Warzel's career is DEFINED by adversarial
+      Facebook/Meta coverage — his Mirror Award, his NYT Privacy Project tenure,
+      and his Galaxy Brain beat all center on treating Meta as fundamentally
+      harmful. In contrast, OpenAI gets executive access and analytical framing,
+      Apple gets ecosystem critique without moral condemnation, and Google gets
+      narrative-analytical treatment. The asymmetry is particularly notable because
+      of these financial correlation patterns:
+
+      1. VOCABULARY ASYMMETRY: Meta gets "original sin," "destroying democracy,"
+         "caused January 6th." OpenAI gets "technology of faith." Apple gets
+         "central technological force." Google gets "benevolent kings" (via
+         interviewee). The moral weight of language decreases dramatically as
+         financial relationships increase.
+
+      2. ACCESS ASYMMETRY: Warzel was GIVEN exclusive interview access to Sam
+         Altman (OpenAI CEO) and published it as a cooperative Q&A. He has NEVER
+         published an equivalent cooperative interview with Mark Zuckerberg or
+         any senior Meta leader. Meta is covered FROM THE OUTSIDE; OpenAI is
+         covered FROM THE INSIDE.
+
+      3. INVESTIGATION ASYMMETRY: Warzel has spent 10+ years investigating
+         Facebook/Meta. He has spent ZERO equivalent investigative effort on
+         OpenAI (despite board coup, safety team departures, copyright lawsuits),
+         Apple (despite data collection, App Store monopoly, labor conditions),
+         or Google (despite DOJ antitrust, surveillance advertising, YouTube
+         radicalization).
+
+      4. FINANCIAL INCENTIVE CORRELATION: The Atlantic has an OpenAI content deal,
+         dual Apple financial link (LPJ Trust ownership ~$17B AAPL + Apple News+
+         "most valuable syndication partner"), and ZERO Meta financial
+         relationships. Warzel's adversarial energy allocates perfectly with
+         this incentive structure: maximum adversarialism toward the company
+         that pays The Atlantic nothing, minimum adversarialism toward the
+         companies that provide revenue.
 - career:
   - beat: state politics, local government
     end: 2010-11
